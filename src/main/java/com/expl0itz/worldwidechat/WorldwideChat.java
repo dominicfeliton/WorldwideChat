@@ -11,6 +11,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
+import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.configuration.WWCConfigurationHandler;
 import com.expl0itz.worldwidechat.listeners.WWCChatListener;
@@ -29,7 +30,7 @@ public class WorldwideChat extends JavaPlugin
 	private WWCConfigurationHandler configurationManager;
 	
 	/* Vars */
-	private double pluginVersion = 0.1;
+	private double pluginVersion = 0.5;
 	
 	private String pluginPrefixString = "WWC";
 	private String pluginLang = "en";
@@ -69,7 +70,7 @@ public class WorldwideChat extends JavaPlugin
 	@Override
 	public void onDisable()
 	{
-		//Cleanly cancel all background tasks (runnables, timers, etc.)
+		//Cleanly cancel/reset all background tasks (runnables, timers, vars, etc.)
 		cancelBackgroundTasks();
 		
 		//Null static vars
@@ -81,6 +82,9 @@ public class WorldwideChat extends JavaPlugin
 	
 	public void cancelBackgroundTasks()
 	{
+		//Clear all active translators
+		activeTranslators.clear();
+		
 		for (BukkitTask task : backgroundTasks)
 		{
 			//ask active tasks if they are active; let them finish + cancel?
@@ -97,31 +101,28 @@ public class WorldwideChat extends JavaPlugin
 			//Me fucking with adventure for the first time, cool
 			final TextComponent versionNotice = Component.text()
 			  .append(pluginPrefix.asComponent())
-			  .append(Component.text().content(" WorldwideChat, version ").color(NamedTextColor.RED))
-			  .append(Component.text().content(pluginVersion + "").color(TextColor.color(0x5757c4)))
+			  .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcVersion")).color(NamedTextColor.RED))
+			  .append(Component.text().content(pluginVersion + "").color(NamedTextColor.LIGHT_PURPLE))
 			.build();
   
 			sender.sendMessage((versionNotice));
 		}
 		else if (command.getName().equalsIgnoreCase("wwcg"))
 		{
-			//Globally translate chat; our first test
-			//translatorIsActive = !translatorIsActive;
-			//sender.sendMessage(Component.text().content("Translator is " + translatorIsActive));
-			//if (translatorIsActive)
-			//{
-				//TODO
-			//}
-				
-			return true;
+		    //TODO: Global Translation
+			if (checkSenderIdentity(sender))
+			{
+			    WWCGlobal wwcg = new WWCGlobal(sender, command, label, args, this);
+			    return wwcg.processCommand();
+			}
 		}
 		else if (command.getName().equalsIgnoreCase("wwct"))
 		{
-			//Translate to a specific lang
+			//Translate to a specific language for one player
 			if (checkSenderIdentity(sender))
 			{
 				WWCTranslate wwct = new WWCTranslate(sender, command, label, args, this);
-				return wwct.processCommand();
+				return wwct.processCommand(false);
 			}
 		}
 		return true;
@@ -135,14 +136,6 @@ public class WorldwideChat extends JavaPlugin
 	
 	public void removeActiveTranslator(WWCActiveTranslator i)
 	{
-		/*for (WWCActiveTranslator eaTranslator : activeTranslators)
-		{
-			if (eaTranslator == i)
-			{
-				activeTranslators.remove(eaTranslator);
-			}
-		}*/
-		//^^ Causes a ConcurrentModificationException
 		for (Iterator<WWCActiveTranslator> aList = activeTranslators.iterator(); aList.hasNext(); )
 		{
 			WWCActiveTranslator activeTranslators = aList.next();
@@ -154,7 +147,7 @@ public class WorldwideChat extends JavaPlugin
 	}
 	
 	/* Getters */
-	public WWCActiveTranslator isActiveTranslator(String uuid)
+	public WWCActiveTranslator getActiveTranslator(String uuid)
 	{
 		if (activeTranslators.size() > 0) //just return false if there are no active translators, less code to run
 		{

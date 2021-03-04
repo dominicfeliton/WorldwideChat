@@ -1,22 +1,20 @@
 package com.expl0itz.worldwidechat.misc;
 
-import com.expl0itz.worldwidechat.WorldwideChat;
-
 public class WWCActiveTranslator {
 
-    private WorldwideChat main;
     private String playerUUID = "";
     private String inLangCode = "";
     private String outLangCode = "";
     private String translatorName = "";
+    private boolean hasBeenShownColorCodeWarning = false;
     
-	public WWCActiveTranslator(WorldwideChat mainInstance, String uuid, String langIn,String langOut, String translator)
+	public WWCActiveTranslator(String uuid, String langIn,String langOut, String translator, boolean h)
 	{
-		main = mainInstance;
 		playerUUID = uuid;
 		inLangCode = langIn;
 		outLangCode = langOut;
 		translatorName = translator;
+		hasBeenShownColorCodeWarning = h;
 	}
 	
 	/* Setters */
@@ -40,6 +38,11 @@ public class WWCActiveTranslator {
 		translatorName = i;
 	}
 	
+	public void setCCWarning(boolean i)
+	{
+		hasBeenShownColorCodeWarning = i;
+	}
+	
 	/* Getters */
 	public String getUUID() 
 	{
@@ -59,5 +62,10 @@ public class WWCActiveTranslator {
 	public String getTranslator()
 	{
 		return translatorName;
+	}
+	
+	public boolean getCCWarning()
+	{
+		return hasBeenShownColorCodeWarning;
 	}
 }

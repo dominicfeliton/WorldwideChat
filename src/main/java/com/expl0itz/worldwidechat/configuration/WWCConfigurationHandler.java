@@ -35,7 +35,6 @@ public class WWCConfigurationHandler {
 		
 		/* Load config files */
 		messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
-		
 	}
 	
 	/* Getters */

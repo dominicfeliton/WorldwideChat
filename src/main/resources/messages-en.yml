@@ -1,9 +1,17 @@
 Messages:
   #------------------- Main Messages -------------------
   wwcNoConsole: ' This command can only be ran by a player.'
+  wwcVersion: ' WorldwideChat, version '
   #------------------- /wwct Messages -------------------
   wwctTranslationStopped: ' Chat translation has been stopped.'
   wwctInvalidArgs: ' Invalid arguments provided!'
   wwctAutoTranslateStart: ' Now translating all of your chat to %o.'
-  wwctLangToLangStart: ' Now translating all of your chat in %i to %o.'
+  wwctLangToLangStart: ' Now translating all of your chat from %i to %o.'
   wwctInvalidLangCode: ' Invalid language code(s) provided! Valid lang codes: %o'
+  #------------------- /wwcg Messages -------------------
+  wwcgTranslationStopped: ' Global chat translation has been stopped.'
+  wwcgAutoTranslateStart: ' Now translating global chat to %o.'
+  wwcgLangToLangStart: ' Now translating global chat from %i to %o.'
+  #------------------- Watson Translator Messages -------------------
+  watsonNotFoundExceptionNotification: ' Unable to translate your input any further.'
+  watsonColorCodeWarning: ' Using color codes may give you unpredictable results.'
