@@ -61,12 +61,6 @@ public class WWCWatson {
 
         /* Process final output */
         TranslationResult translationResult = translatorService.translate(options).execute().getResult();
-        JsonParser jsonParser = new JsonParser();
-        JsonElement jsonTree = jsonParser.parse(translationResult.toString());
-        JsonObject jsonObject = jsonTree.getAsJsonObject();
-        JsonElement translationSection = jsonObject.getAsJsonArray("translations").get(0).getAsJsonObject().get("translation");
-
-        translationSection.toString().substring(1, translationSection.toString().length() - 1);
     }
 
     public String translate() {
