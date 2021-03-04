@@ -2,7 +2,14 @@ package com.expl0itz.worldwidechat.misc;
 
 public class WWCDefinitions {
 
-	private String[] supportedWatsonLangCodes = {
+	/* Important vars */
+	private String[] supportedPluginLangCodes =
+		{
+				"en"
+		};
+	
+	private String[] supportedWatsonLangCodes = 
+		{
 			"en",
 			"es",
 			"ar",
@@ -38,14 +45,15 @@ public class WWCDefinitions {
 			
 	};
 	
-	public WWCDefinitions()
-	{
-		//hi
-	}
-	
+	/* Getters */
 	public String[] getSupportedWatsonLangCodes()
 	{
 		return supportedWatsonLangCodes;
+	}
+	
+	public String[] getSupportedPluginLangCodes()
+	{
+		return supportedPluginLangCodes;
 	}
 	
 }

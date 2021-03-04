@@ -1,0 +1,41 @@
+# WorldwideChat Configuration
+#       _    _            _     _          _     _      _____ _           _   
+#      | |  | |          | |   | |        (_)   | |    /  __ \ |         | |  
+#      | |  | | ___  _ __| | __| |_      ___  __| | ___| /  \/ |__   __ _| |_ 
+#      | |/\| |/ _ \| '__| |/ _` \ \ /\ / / |/ _` |/ _ \ |   | '_ \ / _` | __|    - by 3xpl0itz
+#      \  /\  / (_) | |  | | (_| |\ V  V /| | (_| |  __/ \__/\ | | | (_| | |_ 
+#       \/  \/ \___/|_|  |_|\__,_| \_/\_/ |_|\__,_|\___|\____/_| |_|\__,_|\__|
+
+General:
+  
+  # Change the prefix that appears next to messages sent by this plugin.
+  # Default is "Default" to use the built-in prefix.
+  prefixName: Default
+  
+  # Enable or disable bStats.
+  # Default is "true" for enable.
+  # Change this value to "false" to disable bStats :(.
+  enablebStats: true
+  
+  # Change plugin language.
+  # Default is "en" for English.
+  # Currently supported languages: en
+  pluginLang: en
+  
+Translator:
+
+  # Please Note: YOU CAN ONLY HAVE ONE TRANSLATOR ENABLED AT A TIME.
+
+  # Watson Configuration: Change to true to enable, and fill out the required information below.
+  # Because Watson has the best free plan, it is used by default.
+  # useWatsonTranslate is default "true," meaning it is used. Set to "false" to not use it.
+  useWatsonTranslate: true
+  watsonAPIKey: 
+  watsonURL:
+  
+  # Coming Soon: Google Translate API support :) Ignore the text below for now.
+  # Watson Configuration: Change to true to enable, and fill out the required information below.
+  # Has a more restrictive "free" plan compared to Watson, but may be more accurate.
+  # useGoogleTranslate is default "false," meaning it is not used. Set to "true" to use it, but make sure Watson is false.
+  
+  # The End! For now...:)

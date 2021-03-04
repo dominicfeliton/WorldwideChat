@@ -1,15 +1,21 @@
 name: WorldwideChat
-version: 0.5
+version: 1.0
 description: Translate incoming chat to any language!
 api-version: 1.16
 author: 3xpl0itz
 main: com.expl0itz.worldwidechat.WorldwideChat
 commands:
     wwc:
-        description: Directs the user to a list of WorldwideChat's commands.
+        description: Prints WorldwideChat version.
         aliases: [worldwidechat]
         usage: §4/wwc
         permission: worldwidechat.wwc
+        permission-message: §4You do not have permission to run this command.
+    wwcr:
+        description: Reloads WorldwideChat.
+        aliases: [worldwidechatreload]
+        usage: §4/wwcr
+        permission: worldwidechat.wwcr
         permission-message: §4You do not have permission to run this command.
     wwcg:
         description: Enables chat translation to another language globally.
@@ -28,16 +34,20 @@ permissions:
         description: Gives access to all WorldwideChat commands.
         children:
             worldwidechat.wwc: true
+            worldwidechat.wwcr: true
             worldwidechat.wwcg: true
             worldwidechat.wwct: true
         default: op
     worldwidechat.wwc:
-        description: Directs the user to a list of WorldwideChat's commands.
+        description: Prints WorldwideChat version.
         default: true
+    worldwidechat.wwcr:
+        description: Reloads WorldwideChat.
+        default: op
     worldwidechat.wwcg:
         description: Enables chat translation to a particular language globally.
         default: op
     worldwidechat.wwct:
         description: Enables chat translation to a certain language for a specific player.
-        default: op
+        default: true
     

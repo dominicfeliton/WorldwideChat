@@ -52,8 +52,8 @@ public class WWCChatListener implements Listener {
 			       WWCWatson watsonInstance = new WWCWatson(event.getMessage(), 
 			           currPlayer.getInLangCode(), 
 			    	   currPlayer.getOutLangCode(), 
-			    	   "B8z5o9LApcXCItcC90Yh8w2M7__eVwrnRx-zYHVFRGft", 
-			    	   "https://api.us-south.language-translator.watson.cloud.ibm.com", 
+			    	   main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"),
+			    	   main.getConfigManager().getMainConfig().getString("Translator.watsonURL"), 
 			    	   event.getPlayer(),
 			    	   main);
 			       //Get username + pass from config

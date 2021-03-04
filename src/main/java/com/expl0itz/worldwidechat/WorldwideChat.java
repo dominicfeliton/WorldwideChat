@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -12,6 +13,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
+import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.configuration.WWCConfigurationHandler;
 import com.expl0itz.worldwidechat.listeners.WWCChatListener;
@@ -30,10 +32,13 @@ public class WorldwideChat extends JavaPlugin
 	private WWCConfigurationHandler configurationManager;
 	
 	/* Vars */
-	private double pluginVersion = 0.5;
+	private double pluginVersion = 1.0;
+	
+	private boolean enablebStats = true;
 	
 	private String pluginPrefixString = "WWC";
 	private String pluginLang = "en";
+	private String translatorName = "Watson";
 	
 	private ArrayList<WWCActiveTranslator> activeTranslators = new ArrayList<WWCActiveTranslator>();
 	
@@ -43,7 +48,7 @@ public class WorldwideChat extends JavaPlugin
 	 * this. Even though it's more of a good alternative solution now, keep this in mind if
 	 * this is still not patched + you start with a hex color.
 	 * */
-	private final TextComponent pluginPrefix = Component.text()
+	private TextComponent pluginPrefix = Component.text()
 	 .content("[").color(NamedTextColor.DARK_RED).decoration(TextDecoration.BOLD, true)
 	 .append(Component.text().content(pluginPrefixString).color(TextColor.color(0x5757c4)))
 	 .append(Component.text().content("]").color(NamedTextColor.DARK_RED).decoration(TextDecoration.BOLD, true))
@@ -53,18 +58,31 @@ public class WorldwideChat extends JavaPlugin
 	@Override
     public void onEnable()
     {
-        //Load config + vals
-		configurationManager = new WWCConfigurationHandler(this, pluginLang);
-		configurationManager.initConfigs();
-		
+		try 
+		{
+			//Load main config + other configs
+			configurationManager = new WWCConfigurationHandler(this);
+			configurationManager.initMainConfig(); //this loads our language; load messages.yml immediately after this
+			configurationManager.initMessagesConfig(); //messages.yml, other configs
+			configurationManager.loadMainSettings(); //main config.yml settings
+		    getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", "Watson"));
+		}
+		catch (Exception exception)
+		{
+			//Probably bad credentials
+			getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionFailed").replace("%o", "Watson"));
+			getServer().getPluginManager().disablePlugin(this);
+			return;
+		} 
 		//EventHandlers
 		getServer().getPluginManager().registerEvents(new WWCChatListener(this), this);
+		getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
 		
 		//Check for Updates
 		//TODO
 		
 		//We made it!
-		getLogger().info("Enabled WorldwideChat version " + pluginVersion + ".");
+		getLogger().info(ChatColor.GREEN + "Enabled WorldwideChat version " + pluginVersion + ".");
     }
 	
 	@Override
@@ -74,10 +92,37 @@ public class WorldwideChat extends JavaPlugin
 		cancelBackgroundTasks();
 		
 		//Null static vars
-
 		
 		//All done.
 		getLogger().info("Disabled WorldwideChat version " + pluginVersion + ".");
+	}
+	
+	public boolean reloadWWC()
+	{
+		//Cancel all background tasks
+		cancelBackgroundTasks();
+		
+		//Reload main config + other configs
+		try 
+		{
+			configurationManager = new WWCConfigurationHandler(this);
+			configurationManager.initMainConfig(); 
+			configurationManager.initMessagesConfig(); 
+			configurationManager.loadMainSettings();
+		    getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", "Watson"));
+		}
+		catch (Exception exception)
+		{
+			getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionFailed").replace("%o", "Watson"));
+			getServer().getPluginManager().disablePlugin(this);
+			return false;
+		} 
+		
+		//Check for Updates
+		//TODO
+		
+		//Done
+		return true;
 	}
 	
 	public void cancelBackgroundTasks()
@@ -106,6 +151,12 @@ public class WorldwideChat extends JavaPlugin
 			.build();
   
 			sender.sendMessage((versionNotice));
+		}
+		else if (command.getName().equalsIgnoreCase("wwcr"))
+		{
+			//Reload command
+			WWCReload wwcr = new WWCReload(sender, command, label, args, this);
+			return wwcr.processCommand();
 		}
 		else if (command.getName().equalsIgnoreCase("wwcg"))
 		{
@@ -146,6 +197,26 @@ public class WorldwideChat extends JavaPlugin
 		}
 	}
 	
+	public void setPrefixName(String i)
+	{
+		pluginPrefixString = i;
+	}
+	
+	public void setPluginLang(String i)
+	{
+		pluginLang = i;
+	}
+	
+	public void setbStats(boolean i)
+	{
+		enablebStats = i;
+	}
+	
+	public void setTranslatorName(String i)
+	{
+		translatorName = i;
+	}
+	
 	/* Getters */
 	public WWCActiveTranslator getActiveTranslator(String uuid)
 	{
@@ -175,6 +246,21 @@ public class WorldwideChat extends JavaPlugin
 	public String getPluginLang()
 	{
 		return pluginLang;
+	}
+	
+	public String getPrefixName()
+	{
+		return pluginPrefixString;
+	}
+	
+	public String getTranslatorName()
+	{
+		return translatorName;
+	}
+	
+	public boolean getbStats()
+	{
+		return enablebStats;
 	}
 	
 	public WWCConfigurationHandler getConfigManager()

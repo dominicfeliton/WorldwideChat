@@ -1,8 +1,5 @@
 package com.expl0itz.worldwidechat.watson;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 
@@ -42,6 +39,37 @@ public class WWCWatson {
 		this.serviceUrl = serviceUrl;
 		this.sender = sender;
 		this.main = main;
+	}
+	
+	public WWCWatson(String apikey, String serviceUrl, WorldwideChat main)
+	{
+		this.apikey = apikey;
+		this.serviceUrl = serviceUrl;
+		this.main = main;
+	}
+	
+	public void testConnection()
+	{
+		/* Init credentials */
+		IamAuthenticator authenticator = new IamAuthenticator(apikey);
+		LanguageTranslator translatorService = new LanguageTranslator("2018-05-01", authenticator);
+		translatorService.setServiceUrl(serviceUrl);
+		
+		/* Actual translation */
+		TranslateOptions options = new TranslateOptions.Builder()
+			.addText("la manzana")
+			.source("es")
+			.target("en")
+			.build();
+		
+         /* Process final output */
+         TranslationResult translationResult = translatorService.translate(options).execute().getResult();
+	     JsonParser jsonParser = new JsonParser();
+		 JsonElement jsonTree = jsonParser.parse(translationResult.toString());
+		 JsonObject jsonObject = jsonTree.getAsJsonObject();
+		 JsonElement translationSection = jsonObject.getAsJsonArray("translations").get(0).getAsJsonObject().get("translation");
+			 
+		 translationSection.toString().substring(1, translationSection.toString().length() - 1);
 	}
 	
 	public String translate()

@@ -74,98 +74,102 @@ public class WWCTranslate extends BasicCommand {
 		}
 		
 		/* Process input */
+		WWCDefinitions defs = new WWCDefinitions();
 		if (args[0] instanceof String && args.length == 1)
 		{
 			//actually determine which translator (watson, g translate, bing) we are using (TODO)
 			//Check if args[0] is a supported code by us + watson, defined in WWCDefinitions
-			WWCDefinitions defs = new WWCDefinitions();
-			for (int i = 0; i < defs.getSupportedWatsonLangCodes().length; i++)
+			if (main.getTranslatorName().equals("Watson"))
 			{
-				if (defs.getSupportedWatsonLangCodes()[i].equals(args[0]))
-				{
-					//We got a valid lang code, continue and add player to ArrayList
-					if (!isGlobal) //Not global
-					{
-					    main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(), 
-							    "None",
-							    args[0], 
-							    "Watson",
-							    false));
-					    final TextComponent autoTranslate = Component.text()
-							    .append(main.getPluginPrefix().asComponent())
-							    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStart").replace("%o", args[0])).color(NamedTextColor.LIGHT_PURPLE))
-							    .build();
-					    sender.sendMessage(autoTranslate);
-					    return true;
-					}
-					else //Is global
-					{
-						main.addActiveTranslator(new WWCActiveTranslator("GLOBAL-TRANSLATE-ENABLED", 
-							    "None",
-							    args[0], 
-							    "Watson",
-							    false));
-					    final TextComponent autoTranslate = Component.text()
-							    .append(main.getPluginPrefix().asComponent())
-							    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgAutoTranslateStart").replace("%o", args[0])).color(NamedTextColor.LIGHT_PURPLE))
-							    .build();
-					    for (Player eaPlayer : Bukkit.getOnlinePlayers())
-						{
-							eaPlayer.sendMessage(autoTranslate);
-						}
-					    return true;
-					}
-				}
+			    for (int i = 0; i < defs.getSupportedWatsonLangCodes().length; i++)
+			    {
+			 	    if (defs.getSupportedWatsonLangCodes()[i].equals(args[0]))
+				    {
+					    //We got a valid lang code, continue and add player to ArrayList
+					    if (!isGlobal) //Not global
+					    {
+					    	main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(), 
+					    			"None",
+					    			args[0], 
+					    			"Watson",
+					    			false));
+					    	final TextComponent autoTranslate = Component.text()
+					    			.append(main.getPluginPrefix().asComponent())
+					    			.append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStart").replace("%o", args[0])).color(NamedTextColor.LIGHT_PURPLE))
+					    			.build();
+					    	sender.sendMessage(autoTranslate);
+					    	return true;
+					    }
+					    else //Is global
+					    {
+					    	main.addActiveTranslator(new WWCActiveTranslator("GLOBAL-TRANSLATE-ENABLED", 
+					    			"None",
+					    			args[0], 
+					    			"Watson",
+					    			false));
+					    	final TextComponent autoTranslate = Component.text()
+					    			.append(main.getPluginPrefix().asComponent())
+					    			.append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgAutoTranslateStart").replace("%o", args[0])).color(NamedTextColor.LIGHT_PURPLE))
+					    			.build();
+					    	for (Player eaPlayer : Bukkit.getOnlinePlayers())
+					    	{
+					    		eaPlayer.sendMessage(autoTranslate);
+					    	}
+					    	return true;
+					    }	
+				    }
+			    }
 			}
-		}
+		} 
 		else if (args[0] instanceof String && args[1] instanceof String && args.length == 2)
 		{
-			WWCDefinitions defs = new WWCDefinitions();
-			for (int i = 0; i < defs.getSupportedWatsonLangCodes().length; i++)
+			if (main.getTranslatorName().equals("Watson"))
 			{
-				if (defs.getSupportedWatsonLangCodes()[i].equalsIgnoreCase(args[0]))
+				for (int i = 0; i < defs.getSupportedWatsonLangCodes().length; i++)
 				{
-					for (int j = 0; j < defs.getSupportedWatsonLangCodes().length; j++)
+					if (defs.getSupportedWatsonLangCodes()[i].equalsIgnoreCase(args[0]))
 					{
-						if (defs.getSupportedWatsonLangCodes()[j].equalsIgnoreCase(args[1]))
+						for (int j = 0; j < defs.getSupportedWatsonLangCodes().length; j++)
 						{
-							//We got a valid lang code 2x, continue and add player to ArrayList
-							if (!isGlobal) //Not global
+							if (defs.getSupportedWatsonLangCodes()[j].equalsIgnoreCase(args[1]))
 							{
-							    main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(), 
-								    	args[0],
-									    args[1], 
-									    "Watson",
-									    false));
-							    final TextComponent langToLang = Component.text()
-								    	.append(main.getPluginPrefix().asComponent())
-									    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctLangToLangStart").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
-									    .build();
-							    sender.sendMessage(langToLang); 
-							}
-							else
-							{
-								main.addActiveTranslator(new WWCActiveTranslator("GLOBAL-TRANSLATE-ENABLED", 
-								    	args[0],
-									    args[1], 
-									    "Watson",
-									    false));
-							    final TextComponent langToLang = Component.text()
-								    	.append(main.getPluginPrefix().asComponent())
-									    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgLangToLangStart").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
-									    .build();
-							    for (Player eaPlayer : Bukkit.getOnlinePlayers())
+								//We got a valid lang code 2x, continue and add player to ArrayList
+								if (!isGlobal) //Not global
 								{
-									eaPlayer.sendMessage(langToLang);
-								} 
+									main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(), 
+											args[0],
+											args[1], 
+											"Watson",
+											false));
+									final TextComponent langToLang = Component.text()
+											.append(main.getPluginPrefix().asComponent())
+											.append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctLangToLangStart").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
+											.build();
+									sender.sendMessage(langToLang); 
+								}
+								else
+								{
+									main.addActiveTranslator(new WWCActiveTranslator("GLOBAL-TRANSLATE-ENABLED", 
+											args[0],
+											args[1], 
+											"Watson",
+											false));
+									final TextComponent langToLang = Component.text()
+											.append(main.getPluginPrefix().asComponent())
+											.append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgLangToLangStart").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
+											.build();
+									for (Player eaPlayer : Bukkit.getOnlinePlayers())
+									{
+										eaPlayer.sendMessage(langToLang);
+									} 
+								}
+								return true;
 							}
-							return true;
-						}
-					}			
+						}			
+					}
 				}
 			}
 		}
-		WWCDefinitions defs = new WWCDefinitions();
 		String validLangCodes = "\n";
 		for (int i = 0; i < defs.getSupportedWatsonLangCodes().length; i++)
 		{
