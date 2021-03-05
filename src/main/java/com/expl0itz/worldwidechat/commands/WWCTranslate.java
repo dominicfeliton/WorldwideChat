@@ -30,7 +30,6 @@ public class WWCTranslate extends BasicCommand {
         WWCActiveTranslator currTarget = main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
         if (currTarget instanceof WWCActiveTranslator) {
             main.removeActiveTranslator(currTarget);
-            //TODO: remember previous lang code so another /wwct call will just use previous lang code
             final TextComponent chatTranslationStopped = Component.text()
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStopped")).color(NamedTextColor.LIGHT_PURPLE))
@@ -69,7 +68,6 @@ public class WWCTranslate extends BasicCommand {
         Player testPlayer = Bukkit.getServer().getPlayer(args[0]);
         if (testPlayer != null && main.getActiveTranslator(testPlayer.getUniqueId().toString()) instanceof WWCActiveTranslator && args.length == 1) {
             main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
-            //TODO: remember previous lang code so another /wwct call will just use previous lang code
             final TextComponent chatTranslationStopped = Component.text()
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStoppedOtherPlayer").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
@@ -80,8 +78,6 @@ public class WWCTranslate extends BasicCommand {
         /* Process input */
         WWCDefinitions defs = new WWCDefinitions();
         if (args[0] instanceof String && args.length == 1) {
-            //actually determine which translator (watson, g translate, bing) we are using (TODO)
-            //Check if args[0] is a supported code by us + watson, defined in WWCDefinitions
             if (main.getTranslatorName().equals("Watson")) {
                 for (int i = 0; i < defs.getSupportedWatsonLangCodes().length; i++) {
                     if (defs.getSupportedWatsonLangCodes()[i].equals(args[0])) {

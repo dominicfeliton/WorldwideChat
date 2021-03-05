@@ -60,7 +60,7 @@ public class WWCWatson {
             .build();
 
         /* Process final output */
-        TranslationResult translationResult = translatorService.translate(options).execute().getResult();
+        translatorService.translate(options).execute().getResult();
     }
 
     public String translate() {

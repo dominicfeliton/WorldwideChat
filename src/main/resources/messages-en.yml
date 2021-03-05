@@ -10,6 +10,7 @@ Messages:
   #------------------- Configuration Messages -------------------
   wwcConfigConnectionSuccess: 'Successfully connected to %o!'
   wwcConfigConnectionFailed: 'Failed to connect to %o. Make sure your credentials and firewall are configured correctly!'
+  wwcConfigInvalidTranslatorSettings: 'Invalid translator settings! Please enable at least one translator in your config.yml. Disabling...'
   #------------------- /wwcr Messages -------------------
   wwcrSuccess: ' Successfully reloaded WorldwideChat.'
   wwcrFail: ' Failed to reload WorldwideChat.'

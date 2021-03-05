@@ -64,7 +64,7 @@ public class WWCConfigurationHandler {
     }
 
     /* Load Main Settings Method */
-    public void loadMainSettings() {
+    public boolean loadMainSettings() {
         /* Get rest of General Settings */
         if (!getMainConfig().getString("General.prefixName").equalsIgnoreCase("Default")); {
             main.setPrefixName(getMainConfig().getString("General.prefixName"));
@@ -76,12 +76,15 @@ public class WWCConfigurationHandler {
             testWatson();
             main.setTranslatorName("Watson");
         } else if (getMainConfig().getBoolean("Translator.useGoogleTranslate")) {
-            //sendmsg under construction, use watson
+            //under construction, use watson
             main.getServer().getPluginManager().disablePlugin(main);
+            return false;
         } else {
-            //sendmsg invalid translator settings! disabling...
+            main.getLogger().severe(getMessagesConfig().getString("Messages.wwcConfigInvalidTranslatorSettings"));
             main.getServer().getPluginManager().disablePlugin(main);
+            return false;
         }
+        return true; //everything set successfully
     }
 
     /* Other Functions */

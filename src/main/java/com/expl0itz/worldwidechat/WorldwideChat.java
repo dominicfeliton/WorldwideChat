@@ -56,28 +56,32 @@ public class WorldwideChat extends JavaPlugin {
     /* Methods */
     @Override
     public void onEnable() {
+        boolean settingsSetSuccessfully;
         try {
             //Load main config + other configs
             configurationManager = new WWCConfigurationHandler(this);
             configurationManager.initMainConfig(); //this loads our language; load messages.yml immediately after this
             configurationManager.initMessagesConfig(); //messages.yml, other configs
-            configurationManager.loadMainSettings(); //main config.yml settings
-            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", "Watson"));
+            settingsSetSuccessfully = configurationManager.loadMainSettings(); //main config.yml settings
         } catch (Exception exception) {
             //Probably bad credentials
-            getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionFailed").replace("%o", "Watson"));
+            getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionFailed").replace("%o", translatorName));
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
-        //EventHandlers
-        getServer().getPluginManager().registerEvents(new WWCChatListener(this), this);
-        getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
+        if (settingsSetSuccessfully) { //If all settings don't error out
+            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", translatorName));
+            
+            //EventHandlers
+            getServer().getPluginManager().registerEvents(new WWCChatListener(this), this);
+            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
 
-        //Check for Updates
-        //TODO
+            //Check for Updates
+            //TODO
 
-        //We made it!
-        getLogger().info(ChatColor.GREEN + "Enabled WorldwideChat version " + pluginVersion + ".");
+            //We made it!
+             getLogger().info(ChatColor.GREEN + "Enabled WorldwideChat version " + pluginVersion + ".");
+        }
     }
 
     @Override
@@ -96,23 +100,27 @@ public class WorldwideChat extends JavaPlugin {
         cancelBackgroundTasks();
 
         //Reload main config + other configs
+        boolean settingsSetSuccessfully;
         try {
             configurationManager = new WWCConfigurationHandler(this);
             configurationManager.initMainConfig();
             configurationManager.initMessagesConfig();
-            configurationManager.loadMainSettings();
-            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", "Watson"));
-        } catch (Exception exception) {
-            getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionFailed").replace("%o", "Watson"));
+            settingsSetSuccessfully = configurationManager.loadMainSettings();
+        } catch (Exception exception) { //Connection failed, probably; specify this if config gets more complex
+            getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionFailed").replace("%o", translatorName));
             getServer().getPluginManager().disablePlugin(this);
             return false;
         }
+        if (settingsSetSuccessfully) { //If all settings don't error out
+            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", translatorName));
+            
+            //Check for Updates
+            //TODO
 
-        //Check for Updates
-        //TODO
-
-        //Done
-        return true;
+            //Done
+            return true;
+        }
+        return false;
     }
 
     public void cancelBackgroundTasks() {
