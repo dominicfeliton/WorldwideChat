@@ -13,6 +13,7 @@ import com.ibm.watson.language_translator.v3.LanguageTranslator;
 import com.ibm.watson.language_translator.v3.model.TranslateOptions;
 import com.ibm.watson.language_translator.v3.model.TranslationResult;
 
+import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -69,6 +70,8 @@ public class WWCWatson {
         //EssentialsX chat and maybe others replace "&4Test" with " 4Test"
         //Therefore, we find the " #" regex or the "&" char, and warn the user about it
         boolean essentialsColorCodeWarning = false;
+        Audience adventureSender = main.adventure().sender(sender);
+        
         for (int i = 0; i < textToTranslate.toCharArray().length; i++) {
             if (textToTranslate.toCharArray()[i] >= '0' && textToTranslate.toCharArray()[i] <= '9') {
                 if (!(textToTranslate.toCharArray()[i - 1] >= '0' && textToTranslate.toCharArray()[i - 1] <= '~')) {
@@ -87,7 +90,7 @@ public class WWCWatson {
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.watsonColorCodeWarning")).color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
                 .build();
-            sender.sendMessage(watsonCCWarning);
+            adventureSender.sendMessage(watsonCCWarning);
             //Set got CC warning of current translator to true, so that they don't get spammed by it if they keep using CCs
             main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString()).setCCWarning(true);
             //we're still gonna translate it but it won't look pretty

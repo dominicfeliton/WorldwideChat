@@ -64,7 +64,7 @@ public class WWCChatListener implements Listener {
                     .append(main.getPluginPrefix().asComponent())
                     .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.watsonNotFoundExceptionNotification")).color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
                     .build();
-                event.getPlayer().sendMessage(lowConfidence);
+                main.adventure().sender(event.getPlayer()).sendMessage(lowConfidence);
             }
         }
     }

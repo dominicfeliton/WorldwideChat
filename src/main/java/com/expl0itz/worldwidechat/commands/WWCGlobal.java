@@ -5,6 +5,7 @@ import org.bukkit.command.CommandSender;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 
+import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -26,7 +27,8 @@ public class WWCGlobal extends BasicCommand {
             .append(main.getPluginPrefix().asComponent())
             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidArgs")).color(NamedTextColor.RED))
             .build();
-        sender.sendMessage(invalidArgs);
+        Audience adventureSender = main.adventure().sender(sender);
+        adventureSender.sendMessage(invalidArgs);
         return false;
     }
 

@@ -57,9 +57,18 @@
               <include>org.bstats:bstats-base</include>
               <include>org.bstats:bstats-bukkit</include>
               <include>net.kyori:adventure-api</include>
+              <include>net.kyori:adventure-key</include>
+              <include>net.kyori:adventure-nbt</include>
+              <include>net.kyori:adventure-text-serializer-legacy</include>
               <include>net.kyori:adventure-text-serializer-gson</include>
+              <include>net.kyori:adventure-text-serializer-gson-legacy-impl</include>
+              <include>net.kyori:adventure-text-serializer-craftbukkit</include>
               <include>net.kyori:adventure-platform-bukkit</include>
               <include>net.kyori:adventure-platform-api</include>
+              <include>net.kyori:adventure-platform-common</include>
+              <include>net.kyori:adventure-platform-facet</include>
+              <include>net.kyori:examination-api</include>
+              <include>net.kyori:examination-string</include>
               <include>org.apache.commons:commons-lang3</include>
               <include>org.jetbrains.kotlin:kotlin-stdlib</include>
               <include>com.squareup.okio:okio</include>
@@ -71,6 +80,10 @@
   </build>
   <repositories>
     <repository>
+      <id>spigot-repo</id>
+      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+    </repository>
+    <repository>
       <id>papermc</id>
       <url>https://papermc.io/repo/repository/maven-public</url>
     </repository>
@@ -81,8 +94,8 @@
   </repositories>
   <dependencies>
     <dependency>
-      <groupId>com.destroystokyo.paper</groupId>
-      <artifactId>paper-api</artifactId>
+      <groupId>org.spigotmc</groupId>
+      <artifactId>spigot-api</artifactId>
       <version>1.16.5-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
@@ -90,30 +103,6 @@
       <groupId>com.ibm.watson</groupId>
       <artifactId>ibm-watson</artifactId>
       <version>9.0.2</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>net.kyori</groupId>
-      <artifactId>adventure-nbt</artifactId>
-      <version>4.5.1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>net.kyori</groupId>
-      <artifactId>adventure-key</artifactId>
-      <version>4.5.1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>net.kyori</groupId>
-      <artifactId>adventure-text-serializer-gson-legacy-impl</artifactId>
-      <version>4.5.1</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>net.kyori</groupId>
-      <artifactId>adventure-platform-common</artifactId>
-      <version>4.0.0-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>

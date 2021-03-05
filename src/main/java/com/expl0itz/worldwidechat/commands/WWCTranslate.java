@@ -9,6 +9,7 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.misc.WWCActiveTranslator;
 import com.expl0itz.worldwidechat.misc.WWCDefinitions;
 
+import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -27,6 +28,7 @@ public class WWCTranslate extends BasicCommand {
 
     public boolean processCommand(boolean isGlobal) {
         /* Sanity checks */
+        Audience adventureSender = main.adventure().sender(sender);
         WWCActiveTranslator currTarget = main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
         if (currTarget instanceof WWCActiveTranslator) {
             main.removeActiveTranslator(currTarget);
@@ -34,7 +36,7 @@ public class WWCTranslate extends BasicCommand {
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStopped")).color(NamedTextColor.LIGHT_PURPLE))
                 .build();
-            sender.sendMessage(chatTranslationStopped);
+            adventureSender.sendMessage(chatTranslationStopped);
             if (args.length == 0 || args[0].equalsIgnoreCase("Stop")) {
                 return true;
             }
@@ -46,7 +48,7 @@ public class WWCTranslate extends BasicCommand {
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgTranslationStopped")).color(NamedTextColor.LIGHT_PURPLE))
                 .build();
             for (Player eaPlayer: Bukkit.getOnlinePlayers()) {
-                eaPlayer.sendMessage(chatTranslationStopped);
+                main.adventure().sender(eaPlayer).sendMessage(chatTranslationStopped);
             }
             if (args.length == 0 || args[0].equalsIgnoreCase("Stop")) {
                 return true;
@@ -60,7 +62,7 @@ public class WWCTranslate extends BasicCommand {
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidArgs")).color(NamedTextColor.RED))
                 .build();
-            sender.sendMessage(invalidArgs);
+            adventureSender.sendMessage(invalidArgs);
             return false;
         }
         
@@ -72,7 +74,7 @@ public class WWCTranslate extends BasicCommand {
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStoppedOtherPlayer").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                 .build();
-            sender.sendMessage(chatTranslationStopped);
+            adventureSender.sendMessage(chatTranslationStopped);
         }
 
         /* Process input */
@@ -92,7 +94,7 @@ public class WWCTranslate extends BasicCommand {
                                 .append(main.getPluginPrefix().asComponent())
                                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStart").replace("%o", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                                 .build();
-                            sender.sendMessage(autoTranslate);
+                            adventureSender.sendMessage(autoTranslate);
                             return true;
                         } else { //Is global
                             main.addActiveTranslator(new WWCActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
@@ -104,7 +106,7 @@ public class WWCTranslate extends BasicCommand {
                                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgAutoTranslateStart").replace("%o", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                                 .build();
                             for (Player eaPlayer: Bukkit.getOnlinePlayers()) {
-                                eaPlayer.sendMessage(autoTranslate);
+                                main.adventure().sender(eaPlayer).sendMessage(autoTranslate);
                             }
                             return true;
                         }
@@ -124,7 +126,7 @@ public class WWCTranslate extends BasicCommand {
                                         .append(main.getPluginPrefix().asComponent())
                                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctSameLangError")).color(NamedTextColor.RED))
                                         .build();
-                                    sender.sendMessage(sameLangError);
+                                    adventureSender.sendMessage(sameLangError);
                                     return false;
                                 }
                                 if (!isGlobal) //Not global
@@ -137,7 +139,7 @@ public class WWCTranslate extends BasicCommand {
                                         .append(main.getPluginPrefix().asComponent())
                                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctLangToLangStart").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
                                         .build();
-                                    sender.sendMessage(langToLang);
+                                    adventureSender.sendMessage(langToLang);
                                 } else {
                                     main.addActiveTranslator(new WWCActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
                                         args[0],
@@ -148,7 +150,8 @@ public class WWCTranslate extends BasicCommand {
                                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgLangToLangStart").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
                                         .build();
                                     for (Player eaPlayer: Bukkit.getOnlinePlayers()) {
-                                        eaPlayer.sendMessage(langToLang);
+                                        Audience eaAudience = main.adventure().sender(eaPlayer);
+                                        eaAudience.sendMessage(langToLang);
                                     }
                                 }
                                 return true;
@@ -166,8 +169,8 @@ public class WWCTranslate extends BasicCommand {
                                         .append(main.getPluginPrefix().asComponent())
                                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStartOtherPlayer").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
                                         .build();
-                                    sender.sendMessage(autoTranslateOtherPlayer);
-                                    Bukkit.getServer().getPlayer(args[0]).sendMessage(autoTranslateOtherPlayer);
+                                    adventureSender.sendMessage(autoTranslateOtherPlayer);
+                                    main.adventure().sender(main.getServer().getPlayer(args[0])).sendMessage(autoTranslateOtherPlayer);
                                     return true;
                                 }
                             }
@@ -177,7 +180,7 @@ public class WWCTranslate extends BasicCommand {
                                     .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBadPerms")).color(NamedTextColor.RED))
                                     .append(Component.text().content(" (" + "worldwidechat.wwctotherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
                                     .build();
-                                sender.sendMessage(badPerms);
+                                adventureSender.sendMessage(badPerms);
                             return true;
                         }
                     }
@@ -199,7 +202,7 @@ public class WWCTranslate extends BasicCommand {
                                                 .append(main.getPluginPrefix().asComponent())
                                                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctSameLangError")).color(NamedTextColor.RED))
                                                 .build();
-                                            sender.sendMessage(sameLangError);
+                                            adventureSender.sendMessage(sameLangError);
                                             return false;
                                         }
                                         main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
@@ -210,8 +213,8 @@ public class WWCTranslate extends BasicCommand {
                                             .append(main.getPluginPrefix().asComponent())
                                             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctLangToLangStartOtherPlayer").replace("%o", args[0]).replace("%i", args[1]).replace("%e", args[2])).color(NamedTextColor.LIGHT_PURPLE))
                                             .build();
-                                        sender.sendMessage(langToLangOtherPlayer);
-                                        Bukkit.getServer().getPlayer(args[0]).sendMessage(langToLangOtherPlayer);
+                                        adventureSender.sendMessage(langToLangOtherPlayer);
+                                        main.adventure().sender(main.getServer().getPlayer(args[0])).sendMessage(langToLangOtherPlayer);
                                         return true;
                                     }
                                 }
@@ -223,7 +226,7 @@ public class WWCTranslate extends BasicCommand {
                             .append(main.getPluginPrefix().asComponent())
                             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcPlayerNotFound").replace("%i", args[0])).color(NamedTextColor.RED))
                             .build();
-                        sender.sendMessage(playerNotFound);
+                        adventureSender.sendMessage(playerNotFound);
                         return true;
                 }
             } else {
@@ -232,7 +235,7 @@ public class WWCTranslate extends BasicCommand {
                     .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBadPerms")).color(NamedTextColor.RED))
                     .append(Component.text().content(" (" + "worldwidechat.wwctotherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
                     .build();
-                sender.sendMessage(badPerms);
+                adventureSender.sendMessage(badPerms);
                 return true;
             }
         }
@@ -247,7 +250,7 @@ public class WWCTranslate extends BasicCommand {
             .append(main.getPluginPrefix().asComponent())
             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidLangCode").replace("%o", validLangCodes)).color(NamedTextColor.RED))
             .build();
-        sender.sendMessage(invalidLangCode);
+        adventureSender.sendMessage(invalidLangCode);
         return false;
     }
 

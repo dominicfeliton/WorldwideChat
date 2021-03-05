@@ -19,6 +19,9 @@ import com.expl0itz.worldwidechat.configuration.WWCConfigurationHandler;
 import com.expl0itz.worldwidechat.listeners.WWCChatListener;
 import com.expl0itz.worldwidechat.misc.WWCActiveTranslator;
 
+import io.reactivex.annotations.NonNull;
+import net.kyori.adventure.audience.Audience;
+import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -29,6 +32,7 @@ public class WorldwideChat extends JavaPlugin {
     /* Managers */
     private Set < BukkitTask > backgroundTasks = new HashSet < BukkitTask > ();
     private WWCConfigurationHandler configurationManager;
+    private BukkitAudiences adventure;
 
     /* Vars */
     private double pluginVersion = 1.0;
@@ -56,6 +60,9 @@ public class WorldwideChat extends JavaPlugin {
     /* Methods */
     @Override
     public void onEnable() {
+        // Initialize an audiences instance for the plugin
+        this.adventure = BukkitAudiences.create(this);
+        
         boolean settingsSetSuccessfully;
         try {
             //Load main config + other configs
@@ -89,6 +96,12 @@ public class WorldwideChat extends JavaPlugin {
         //Cleanly cancel/reset all background tasks (runnables, timers, vars, etc.)
         cancelBackgroundTasks();
 
+        //Kill adventure
+        if(this.adventure != null) {
+            this.adventure.close();
+            this.adventure = null;
+        }
+        
         //All done.
         getLogger().info("Disabled WorldwideChat version " + pluginVersion + ".");
     }
@@ -140,7 +153,8 @@ public class WorldwideChat extends JavaPlugin {
                 .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcVersion")).color(NamedTextColor.RED))
                 .append(Component.text().content(pluginVersion + "").color(NamedTextColor.LIGHT_PURPLE))
                 .build();
-            sender.sendMessage((versionNotice));
+            Audience adventureSender = adventure.sender(sender);
+            adventureSender.sendMessage(versionNotice);
         } else if (command.getName().equalsIgnoreCase("wwcr")) {
             //Reload command
             WWCReload wwcr = new WWCReload(sender, command, label, args, this);
@@ -160,6 +174,13 @@ public class WorldwideChat extends JavaPlugin {
         }
         return true;
     }
+    
+    public @NonNull BukkitAudiences adventure() {
+        if(this.adventure == null) {
+          throw new IllegalStateException("Tried to access Adventure when the plugin was disabled!");
+        }
+        return this.adventure;
+      }
     
     /* Setters */
     public void addActiveTranslator(WWCActiveTranslator i) {
@@ -240,7 +261,8 @@ public class WorldwideChat extends JavaPlugin {
                 .append(pluginPrefix.asComponent())
                 .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcNoConsole")).color(NamedTextColor.RED))
                 .build();
-            sender.sendMessage(consoleNotice);
+            Audience adventureSender = adventure.sender(sender);
+            adventureSender.sendMessage(consoleNotice);
             return false;
         }
         return true;
