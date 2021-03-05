@@ -54,7 +54,12 @@
               <include>com.ibm.watson:natural-language-understanding</include>
               <include>org.apache.tomcat:tomcat-jdbc</include>
               <include>org.apache.tomcat:tomcat-juli</include>
+              <include>org.bstats:bstats-base</include>
               <include>org.bstats:bstats-bukkit</include>
+              <include>net.kyori:adventure-api</include>
+              <include>net.kyori:adventure-text-serializer-gson</include>
+              <include>net.kyori:adventure-platform-bukkit</include>
+              <include>net.kyori:adventure-platform-api</include>
               <include>org.apache.commons:commons-lang3</include>
               <include>org.jetbrains.kotlin:kotlin-stdlib</include>
               <include>com.squareup.okio:okio</include>
@@ -85,6 +90,30 @@
       <groupId>com.ibm.watson</groupId>
       <artifactId>ibm-watson</artifactId>
       <version>9.0.2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.kyori</groupId>
+      <artifactId>adventure-nbt</artifactId>
+      <version>4.5.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.kyori</groupId>
+      <artifactId>adventure-key</artifactId>
+      <version>4.5.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.kyori</groupId>
+      <artifactId>adventure-text-serializer-gson-legacy-impl</artifactId>
+      <version>4.5.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.kyori</groupId>
+      <artifactId>adventure-platform-common</artifactId>
+      <version>4.0.0-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>

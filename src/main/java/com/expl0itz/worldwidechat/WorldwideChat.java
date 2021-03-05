@@ -89,8 +89,6 @@ public class WorldwideChat extends JavaPlugin {
         //Cleanly cancel/reset all background tasks (runnables, timers, vars, etc.)
         cancelBackgroundTasks();
 
-        //Null static vars
-
         //All done.
         getLogger().info("Disabled WorldwideChat version " + pluginVersion + ".");
     }
@@ -117,7 +115,6 @@ public class WorldwideChat extends JavaPlugin {
             //Check for Updates
             //TODO
 
-            //Done
             return true;
         }
         return false;
@@ -163,7 +160,7 @@ public class WorldwideChat extends JavaPlugin {
         }
         return true;
     }
-
+    
     /* Setters */
     public void addActiveTranslator(WWCActiveTranslator i) {
         activeTranslators.add(i);
