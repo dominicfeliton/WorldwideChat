@@ -55,7 +55,7 @@ public class WWCTranslate extends BasicCommand {
         }
 
         /* Sanitize args */
-        if (args.length == 0 || args.length > 2) {
+        if (args.length == 0 || args.length > 3) {
             //Not enough/too many args
             final TextComponent invalidArgs = Component.text()
                 .append(main.getPluginPrefix().asComponent())
@@ -63,6 +63,18 @@ public class WWCTranslate extends BasicCommand {
                 .build();
             sender.sendMessage(invalidArgs);
             return false;
+        }
+        
+        /* Check if already running on another player; Sanity Checks P2 */
+        Player testPlayer = Bukkit.getServer().getPlayer(args[0]);
+        if (testPlayer != null && main.getActiveTranslator(testPlayer.getUniqueId().toString()) instanceof WWCActiveTranslator && args.length == 1) {
+            main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
+            //TODO: remember previous lang code so another /wwct call will just use previous lang code
+            final TextComponent chatTranslationStopped = Component.text()
+                .append(main.getPluginPrefix().asComponent())
+                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStoppedOtherPlayer").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
+                .build();
+            sender.sendMessage(chatTranslationStopped);
         }
 
         /* Process input */
@@ -79,7 +91,6 @@ public class WWCTranslate extends BasicCommand {
                             main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
                                 "None",
                                 args[0],
-                                "Watson",
                                 false));
                             final TextComponent autoTranslate = Component.text()
                                 .append(main.getPluginPrefix().asComponent())
@@ -87,12 +98,10 @@ public class WWCTranslate extends BasicCommand {
                                 .build();
                             sender.sendMessage(autoTranslate);
                             return true;
-                        } else //Is global
-                        {
+                        } else { //Is global
                             main.addActiveTranslator(new WWCActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
                                 "None",
                                 args[0],
-                                "Watson",
                                 false));
                             final TextComponent autoTranslate = Component.text()
                                 .append(main.getPluginPrefix().asComponent())
@@ -113,12 +122,20 @@ public class WWCTranslate extends BasicCommand {
                         for (int j = 0; j < defs.getSupportedWatsonLangCodes().length; j++) {
                             if (defs.getSupportedWatsonLangCodes()[j].equalsIgnoreCase(args[1])) {
                                 //We got a valid lang code 2x, continue and add player to ArrayList
+                                if (args[0].equalsIgnoreCase(args[1])) //input lang cannot be equal to output lang
+                                {
+                                    final TextComponent sameLangError = Component.text()
+                                        .append(main.getPluginPrefix().asComponent())
+                                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctSameLangError")).color(NamedTextColor.RED))
+                                        .build();
+                                    sender.sendMessage(sameLangError);
+                                    return false;
+                                }
                                 if (!isGlobal) //Not global
                                 {
                                     main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
                                         args[0],
                                         args[1],
-                                        "Watson",
                                         false));
                                     final TextComponent langToLang = Component.text()
                                         .append(main.getPluginPrefix().asComponent())
@@ -129,7 +146,6 @@ public class WWCTranslate extends BasicCommand {
                                     main.addActiveTranslator(new WWCActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
                                         args[0],
                                         args[1],
-                                        "Watson",
                                         false));
                                     final TextComponent langToLang = Component.text()
                                         .append(main.getPluginPrefix().asComponent())
@@ -142,16 +158,95 @@ public class WWCTranslate extends BasicCommand {
                                 return true;
                             }
                         }
+                    } else if (Bukkit.getServer().getPlayer(args[0]) != null && (!(args[0].equals(sender.getName())))) { /* First arg is another player who is not ourselves...*/
+                        if (sender.hasPermission("worldwidechat.wwctotherplayers")) {
+                            for (int j = 0; j < defs.getSupportedWatsonLangCodes().length; j++) {
+                                if (defs.getSupportedWatsonLangCodes()[j].equalsIgnoreCase(args[1])) {
+                                    main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
+                                            args[1],
+                                            "None",
+                                            false));
+                                    final TextComponent autoTranslateOtherPlayer = Component.text()
+                                        .append(main.getPluginPrefix().asComponent())
+                                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStartOtherPlayer").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
+                                        .build();
+                                    sender.sendMessage(autoTranslateOtherPlayer);
+                                    Bukkit.getServer().getPlayer(args[0]).sendMessage(autoTranslateOtherPlayer);
+                                    return true;
+                                }
+                            }
+                        } else { //Bad Perms
+                            final TextComponent badPerms = Component.text()
+                                    .append(main.getPluginPrefix().asComponent())
+                                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBadPerms")).color(NamedTextColor.RED))
+                                    .append(Component.text().content(" (" + "worldwidechat.wwctotherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
+                                    .build();
+                                sender.sendMessage(badPerms);
+                            return true;
+                        }
                     }
                 }
             }
+        } else if (args[0] instanceof String && args[1] instanceof String && args[2] instanceof String && args.length == 3) {
+            //If args[0] == a player, see if sender has perms to change player translation preferences
+            if (sender.hasPermission("worldwidechat.wwctotherplayers")) {
+                if (Bukkit.getServer().getPlayer(args[0]) != null && (!(args[0].equals(sender.getName())))) {
+                    if (main.getTranslatorName().equals("Watson")) {
+                        for (int i = 0; i < defs.getSupportedWatsonLangCodes().length; i++) {
+                            if (defs.getSupportedWatsonLangCodes()[i].equalsIgnoreCase(args[1])) {
+                                for (int j = 0; j < defs.getSupportedWatsonLangCodes().length; j++) {
+                                    if (defs.getSupportedWatsonLangCodes()[j].equalsIgnoreCase(args[2])) {
+                                        //We got a valid lang code 2x, continue and add player to ArrayList
+                                        if (args[1].equalsIgnoreCase(args[2])) //input lang cannot be equal to output lang
+                                        {
+                                            final TextComponent sameLangError = Component.text()
+                                                .append(main.getPluginPrefix().asComponent())
+                                                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctSameLangError")).color(NamedTextColor.RED))
+                                                .build();
+                                            sender.sendMessage(sameLangError);
+                                            return false;
+                                        }
+                                        main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
+                                            args[1],
+                                            args[2],
+                                            false));
+                                        final TextComponent langToLangOtherPlayer = Component.text()
+                                            .append(main.getPluginPrefix().asComponent())
+                                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctLangToLangStartOtherPlayer").replace("%o", args[0]).replace("%i", args[1]).replace("%e", args[2])).color(NamedTextColor.LIGHT_PURPLE))
+                                            .build();
+                                        sender.sendMessage(langToLangOtherPlayer);
+                                        Bukkit.getServer().getPlayer(args[0]).sendMessage(langToLangOtherPlayer);
+                                        return true;
+                                    }
+                                }
+                            }
+                        }    
+                    }
+                } else {
+                    final TextComponent playerNotFound = Component.text() //Player not found
+                            .append(main.getPluginPrefix().asComponent())
+                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcPlayerNotFound").replace("%i", args[0])).color(NamedTextColor.RED))
+                            .build();
+                        sender.sendMessage(playerNotFound);
+                        return true;
+                }
+            } else {
+                final TextComponent badPerms = Component.text() //Bad perms
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBadPerms")).color(NamedTextColor.RED))
+                    .append(Component.text().content(" (" + "worldwidechat.wwctotherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
+                    .build();
+                sender.sendMessage(badPerms);
+                return true;
+            }
         }
+        
+        /* If we got here, invalid lang code */
         String validLangCodes = "\n";
         for (int i = 0; i < defs.getSupportedWatsonLangCodes().length; i++) {
             validLangCodes += " (" + defs.getSupportedWatsonLangCodes()[i] + ")";
         }
-
-        /* Invalid Lang Code response */
+        
         final TextComponent invalidLangCode = Component.text()
             .append(main.getPluginPrefix().asComponent())
             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidLangCode").replace("%o", validLangCodes)).color(NamedTextColor.RED))

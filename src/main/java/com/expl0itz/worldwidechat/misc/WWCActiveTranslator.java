@@ -5,14 +5,12 @@ public class WWCActiveTranslator {
     private String playerUUID = "";
     private String inLangCode = "";
     private String outLangCode = "";
-    private String translatorName = "";
     private boolean hasBeenShownColorCodeWarning = false;
 
-    public WWCActiveTranslator(String uuid, String langIn, String langOut, String translator, boolean h) {
+    public WWCActiveTranslator(String uuid, String langIn, String langOut, boolean h) {
         playerUUID = uuid;
         inLangCode = langIn;
         outLangCode = langOut;
-        translatorName = translator;
         hasBeenShownColorCodeWarning = h;
     }
 
@@ -28,11 +26,7 @@ public class WWCActiveTranslator {
     public void setOutLangCode(String i) {
         outLangCode = i;
     }
-
-    public void setTranslatorName(String i) {
-        translatorName = i;
-    }
-
+    
     public void setCCWarning(boolean i) {
         hasBeenShownColorCodeWarning = i;
     }
@@ -48,10 +42,6 @@ public class WWCActiveTranslator {
 
     public String getOutLangCode() {
         return outLangCode;
-    }
-
-    public String getTranslator() {
-        return translatorName;
     }
 
     public boolean getCCWarning() {

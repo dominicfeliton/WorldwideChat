@@ -5,6 +5,8 @@ Messages:
   wwcLangDetected: 'Detected language %o.'
   wwcInvalidLang: 'Invalid language in your config.yml. Defaulting to en...'
   wwcListenersInitialized: 'Initialized listeners.'
+  wwcBadPerms: ' You do not have the required permissions to execute this command!'
+  wwcPlayerNotFound: ' Player %i not found.'
   #------------------- Configuration Messages -------------------
   wwcConfigConnectionSuccess: 'Successfully connected to %o!'
   wwcConfigConnectionFailed: 'Failed to connect to %o. Make sure your credentials and firewall are configured correctly!'
@@ -13,10 +15,15 @@ Messages:
   wwcrFail: ' Failed to reload WorldwideChat.'
   #------------------- /wwct Messages -------------------
   wwctTranslationStopped: ' Chat translation has been stopped.'
+  wwctTranslationStoppedOtherPlayer: ' Chat translation for %i has been stopped.'
   wwctInvalidArgs: ' Invalid arguments provided!'
   wwctAutoTranslateStart: ' Now translating all of your chat to %o.'
   wwctLangToLangStart: ' Now translating all of your chat from %i to %o.'
   wwctInvalidLangCode: ' Invalid language code(s) provided! Valid lang codes: %o'
+  wwctAutoTranslateStartOtherPlayer: ' Now translating the chat of %i to %o.'
+  wwctLangToLangStartOtherPlayer: ' Now translating the chat of %o from %i to %e.'
+  wwctPlayerNotFound: ' Player %i not found.'
+  wwctSameLangError: ' You cannot translate to the same language!'
   #------------------- /wwcg Messages -------------------
   wwcgTranslationStopped: ' Global chat translation has been stopped.'
   wwcgAutoTranslateStart: ' Now translating global chat to %o.'

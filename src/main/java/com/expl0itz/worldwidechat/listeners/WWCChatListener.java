@@ -40,7 +40,7 @@ public class WWCChatListener implements Listener {
             //if watson, if google translate, if bing, etc (TODO)
             //if global (TODO)
             try {
-                if (currPlayer.getTranslator().equals("Watson")) {
+                if (main.getTranslatorName().equals("Watson")) {
                     WWCWatson watsonInstance = new WWCWatson(event.getMessage(),
                         currPlayer.getInLangCode(),
                         currPlayer.getOutLangCode(),

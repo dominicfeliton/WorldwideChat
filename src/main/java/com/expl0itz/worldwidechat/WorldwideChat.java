@@ -135,7 +135,6 @@ public class WorldwideChat extends JavaPlugin {
                 .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcVersion")).color(NamedTextColor.RED))
                 .append(Component.text().content(pluginVersion + "").color(NamedTextColor.LIGHT_PURPLE))
                 .build();
-
             sender.sendMessage((versionNotice));
         } else if (command.getName().equalsIgnoreCase("wwcr")) {
             //Reload command

@@ -26,7 +26,7 @@ commands:
     wwct:
         description: Enables chat translation to a certain language for a specific player.
         aliases: [worldwidechattranslate, translate]
-        usage: §4/wwct (language-in) <language-out>
+        usage: §4/wwct (playerName) (language-in) <language-out>
         permission: worldwidechat.wwct
         permission-message: §4You do not have permission to run this command.
 permissions:
@@ -37,6 +37,7 @@ permissions:
             worldwidechat.wwcr: true
             worldwidechat.wwcg: true
             worldwidechat.wwct: true
+            worldwidechat.wwctotherplayers: true
         default: op
     worldwidechat.wwc:
         description: Prints WorldwideChat version.
