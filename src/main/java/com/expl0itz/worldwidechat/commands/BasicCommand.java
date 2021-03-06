@@ -11,14 +11,12 @@ public class BasicCommand {
     public Command command;
     public String label;
     public String[] args;
-    public WorldwideChat main;
 
-    public BasicCommand(CommandSender sender, Command command, String label, String[] args, WorldwideChat main) {
+    public BasicCommand(CommandSender sender, Command command, String label, String[] args) {
         this.sender = sender;
         this.command = command;
         this.label = label;
         this.args = args;
-        this.main = main;
     }
 
 }

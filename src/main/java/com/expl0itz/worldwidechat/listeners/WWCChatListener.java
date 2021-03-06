@@ -18,11 +18,7 @@ import net.kyori.adventure.text.format.TextDecoration;
 
 public class WWCChatListener implements Listener {
 
-    private WorldwideChat main;
-
-    public WWCChatListener(WorldwideChat mainInstance) {
-        main = mainInstance;
-    }
+    private WorldwideChat main = WorldwideChat.getInstance();
 
     //TODO: Add a new command to turn off lowConfidenceInAnswer message, as it may begin to get annoying.
     //Also add to config, maybe
@@ -46,8 +42,7 @@ public class WWCChatListener implements Listener {
                         currPlayer.getOutLangCode(),
                         main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"),
                         main.getConfigManager().getMainConfig().getString("Translator.watsonURL"),
-                        event.getPlayer(),
-                        main);
+                        event.getPlayer());
                     //Get username + pass from config
                     event.setMessage(watsonInstance.translate());
                 }

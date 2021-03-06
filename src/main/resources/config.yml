@@ -28,7 +28,8 @@ Translator:
 
   # Watson Configuration: Change to true to enable, and fill out the required information below.
   # Because Watson has the best free plan, it is used by default.
-  # useWatsonTranslate is default "true," meaning it is used. Set to "false" to not use it.
+  # Set to "false" to not use it.
+  # The default is true.
   useWatsonTranslate: true
   watsonAPIKey: 
   watsonURL:
@@ -37,5 +38,14 @@ Translator:
   # Watson Configuration: Change to true to enable, and fill out the required information below.
   # Has a more restrictive "free" plan compared to Watson, but may be more accurate.
   # useGoogleTranslate is default "false," meaning it is not used. Set to "true" to use it, but make sure Watson is false.
+  useGoogleTranslate: false
+  
+  # Set the number of phrases to be stored in the "translation cache."
+  # This cache will store your X most translated phrases. This might be faster if:
+  # Your ping times to a translation server are trash OR you have a fast machine with plenty of resources + RAM.
+  # Set to 0 to disable this feature, in case you think it is negatively affecting your performance.
+  # I would not recommend setting this above a couple hundred, especially if you have less performant hardware.
+  # The default is 10.
+  translatorCacheSize: 10
   
   # The End! For now...:)

@@ -16,8 +16,10 @@ import net.kyori.adventure.text.format.NamedTextColor;
 
 public class WWCTranslate extends BasicCommand {
 
-    public WWCTranslate(CommandSender sender, Command command, String label, String[] args, WorldwideChat main) {
-        super(sender, command, label, args, main);
+    private WorldwideChat main = WorldwideChat.getInstance();
+    
+    public WWCTranslate(CommandSender sender, Command command, String label, String[] args) {
+        super(sender, command, label, args);
     }
 
     /*

@@ -2,26 +2,24 @@ package com.expl0itz.worldwidechat.configuration;
 
 import java.io.File;
 
+import org.bstats.bukkit.Metrics;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.misc.WWCCachedTranslation;
 import com.expl0itz.worldwidechat.misc.WWCDefinitions;
 import com.expl0itz.worldwidechat.watson.WWCWatson;
 
 public class WWCConfigurationHandler {
 
-    private WorldwideChat main;
+    private WorldwideChat main = WorldwideChat.getInstance();
 
     private File messagesFile;
     private File configFile;
     private FileConfiguration messagesConfig;
     private FileConfiguration mainConfig;
-
-    public WWCConfigurationHandler(WorldwideChat main) {
-        this.main = main;
-    }
 
     /* Init Main Config Method */
     public void initMainConfig() {
@@ -66,16 +64,32 @@ public class WWCConfigurationHandler {
     /* Load Main Settings Method */
     public boolean loadMainSettings() {
         /* Get rest of General Settings */
-        if (!getMainConfig().getString("General.prefixName").equalsIgnoreCase("Default")); {
-            main.setPrefixName(getMainConfig().getString("General.prefixName"));
+        //Prefix
+        try {
+            if (!getMainConfig().getString("General.prefixName").equalsIgnoreCase("Default")) {
+                main.setPrefixName(getMainConfig().getString("General.prefixName"));
+            }
+        } catch (Exception e) {
+            main.getLogger().warning((getMessagesConfig().getString("Messages.wwcConfigInvalidPrefixSettings")));
         }
+        //bStats
         main.setbStats(getMainConfig().getBoolean("General.enablebStats"));
+        if (getMainConfig().getBoolean("General.enablebStats")) {
+            Metrics metrics = new Metrics(WorldwideChat.getInstance(), WorldwideChat.getInstance().getbStatsID());
+            main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigEnabledbStats"));
+        } else {
+            main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigDisabledbStats"));
+        }
 
         /* Translator Settings */
-        if (getMainConfig().getBoolean("Translator.useWatsonTranslate")) {
-            testWatson();
+        if (getMainConfig().getBoolean("Translator.useWatsonTranslate") && !(getMainConfig().getBoolean("Translator.useGoogleTranslate"))) {
+            WWCWatson test = new WWCWatson(
+                    getMainConfig().getString("Translator.watsonAPIKey"),
+                    getMainConfig().getString("Translator.watsonURL"),
+                    main);
+                test.testConnection();
             main.setTranslatorName("Watson");
-        } else if (getMainConfig().getBoolean("Translator.useGoogleTranslate")) {
+        } else if (getMainConfig().getBoolean("Translator.useGoogleTranslate") && !(getMainConfig().getBoolean("Translator.useWatsonTranslate"))) {
             //under construction, use watson
             main.getServer().getPluginManager().disablePlugin(main);
             return false;
@@ -84,18 +98,16 @@ public class WWCConfigurationHandler {
             main.getServer().getPluginManager().disablePlugin(main);
             return false;
         }
-        return true; //everything set successfully
+        
+          //Cache Settings
+        if (getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
+            main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigCacheEnabled").replace("%i", "" + getMainConfig().getInt("Translator.translatorCacheSize")));
+        } else {
+            main.getLogger().warning(ChatColor.YELLOW + getMessagesConfig().getString("Messages.wwcConfigCacheDisabled"));
+        }
+        return true; // We made it, everything set successfully; return false == fatal error, plugin should disable after
     }
-
-    /* Other Functions */
-    public void testWatson() {
-        WWCWatson test = new WWCWatson(
-            getMainConfig().getString("Translator.watsonAPIKey"),
-            getMainConfig().getString("Translator.watsonURL"),
-            main);
-        test.testConnection();
-    }
-
+    
     /* Getters */
     public FileConfiguration getMainConfig() {
         return mainConfig;

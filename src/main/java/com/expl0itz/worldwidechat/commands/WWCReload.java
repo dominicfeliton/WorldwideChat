@@ -12,8 +12,10 @@ import net.kyori.adventure.text.format.NamedTextColor;
 
 public class WWCReload extends BasicCommand {
 
-    public WWCReload(CommandSender sender, Command command, String label, String[] args, WorldwideChat main) {
-        super(sender, command, label, args, main);
+    private WorldwideChat main = WorldwideChat.getInstance();
+    
+    public WWCReload(CommandSender sender, Command command, String label, String[] args) {
+        super(sender, command, label, args);
     }
 
     public boolean processCommand() {

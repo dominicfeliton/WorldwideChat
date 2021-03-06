@@ -7,10 +7,16 @@ Messages:
   wwcListenersInitialized: 'Initialized listeners.'
   wwcBadPerms: ' You do not have the required permissions to execute this command!'
   wwcPlayerNotFound: ' Player %i not found.'
+  wwcUnsupportedVersion: 'You are running an unsupported version of Bukkit, Spigot, or Paper. Supported versions: %i'
   #------------------- Configuration Messages -------------------
   wwcConfigConnectionSuccess: 'Successfully connected to %o!'
   wwcConfigConnectionFailed: 'Failed to connect to %o. Make sure your credentials and firewall are configured correctly!'
-  wwcConfigInvalidTranslatorSettings: 'Invalid translator settings! Please enable at least one translator in your config.yml. Disabling...'
+  wwcConfigInvalidTranslatorSettings: 'Invalid translator settings! Please enable only one translator in your config.yml. Disabling...'
+  wwcConfigInvalidPrefixSettings: 'Failed to read your prefix. Using the default...'
+  wwcConfigEnabledbStats: 'Enabled bStats.'
+  wwcConfigDisabledbStats: 'Disabled bStats.'
+  wwcConfigCacheEnabled: 'Translator cache enabled and set to a limit of %i.'
+  wwcConfigCacheDisabled: 'Translator cache disabled.'
   #------------------- /wwcr Messages -------------------
   wwcrSuccess: ' Successfully reloaded WorldwideChat.'
   wwcrFail: ' Failed to reload WorldwideChat.'

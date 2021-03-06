@@ -3,6 +3,10 @@ package com.expl0itz.worldwidechat.misc;
 public class WWCDefinitions {
 
     /* Important vars */
+    private String[] supportedMCVersions = {
+            "1.16"
+    };
+    
     private String[] supportedPluginLangCodes = {
         "en"
     };
@@ -52,4 +56,7 @@ public class WWCDefinitions {
         return supportedPluginLangCodes;
     }
 
+    public String[] getSupportedMCVersions() {
+        return supportedMCVersions;
+    }
 }

@@ -74,6 +74,12 @@
               <include>com.squareup.okio:okio</include>
             </includes>
           </artifactSet>
+          <relocations>
+            <relocation>
+              <pattern>org.bstats</pattern>
+              <shadedPattern>com.expl0itz.worldwidechat.misc</shadedPattern>
+            </relocation>
+          </relocations>
         </configuration>
       </plugin>
     </plugins>

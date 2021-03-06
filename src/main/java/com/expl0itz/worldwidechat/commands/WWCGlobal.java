@@ -12,14 +12,16 @@ import net.kyori.adventure.text.format.NamedTextColor;
 
 public class WWCGlobal extends BasicCommand {
 
-    public WWCGlobal(CommandSender sender, Command command, String label, String[] args, WorldwideChat main) {
-        super(sender, command, label, args, main);
+    private WorldwideChat main = WorldwideChat.getInstance();
+    
+    public WWCGlobal(CommandSender sender, Command command, String label, String[] args) {
+        super(sender, command, label, args);
     }
 
     public boolean processCommand() {
         if (!(args.length > 2))
         {
-            WWCTranslate initGlobal = new WWCTranslate(sender, command, label, args, main);
+            WWCTranslate initGlobal = new WWCTranslate(sender, command, label, args);
             return initGlobal.processCommand(true); //lets WWCTranslate know that we want a global user
         }
       //Too many args
