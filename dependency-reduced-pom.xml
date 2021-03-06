@@ -42,6 +42,7 @@
           <artifactSet>
             <includes>
               <include>commons-logging:commons-logging</include>
+              <include>commons-io:commons-io</include>
               <include>com.ibm.watson:common</include>
               <include>com.ibm.cloud:sdk-core</include>
               <include>com.ibm.watson:compare-comply</include>
@@ -54,6 +55,7 @@
               <include>com.ibm.watson:natural-language-understanding</include>
               <include>org.apache.tomcat:tomcat-jdbc</include>
               <include>org.apache.tomcat:tomcat-juli</include>
+              <include>org.apache.commons:commons-lang3</include>
               <include>org.bstats:bstats-base</include>
               <include>org.bstats:bstats-bukkit</include>
               <include>net.kyori:adventure-api</include>
@@ -69,7 +71,6 @@
               <include>net.kyori:adventure-platform-facet</include>
               <include>net.kyori:examination-api</include>
               <include>net.kyori:examination-string</include>
-              <include>org.apache.commons:commons-lang3</include>
               <include>org.jetbrains.kotlin:kotlin-stdlib</include>
               <include>com.squareup.okio:okio</include>
             </includes>

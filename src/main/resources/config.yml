@@ -22,6 +22,11 @@ General:
   # Currently supported languages: en
   pluginLang: en
   
+  # The delay between each check for updates from the plugin's github repo.
+  # Must be a minimum of 10 seconds so that you don't kill your server with update requests.
+  # Default is 86400 (seconds), or 1 day.
+  updateCheckerDelay: 86400
+  
 Translator:
 
   # Please Note: YOU CAN ONLY HAVE ONE TRANSLATOR ENABLED AT A TIME.

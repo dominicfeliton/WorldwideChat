@@ -80,7 +80,15 @@ public class ConfigurationHandler {
         } else {
             main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigDisabledbStats"));
         }
-
+        //Update Checker Delay
+        try {
+            if (!(getMainConfig().getInt("General.updateCheckerDelay") > 10)) {
+                main.setUpdateCheckerDelay(getMainConfig().getInt("General.updateCheckerDelay"));
+            }
+        } catch (Exception e) {
+            main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigBadUpdateDelay"));
+        }
+        
         /* Translator Settings */
         if (getMainConfig().getBoolean("Translator.useWatsonTranslate") && !(getMainConfig().getBoolean("Translator.useGoogleTranslate"))) {
             WatsonTranslation test = new WatsonTranslation(

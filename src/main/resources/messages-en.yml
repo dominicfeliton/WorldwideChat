@@ -9,10 +9,11 @@ Messages:
   wwcPlayerNotFound: ' Player %i not found.'
   wwcUnsupportedVersion: 'You are running an unsupported version of Bukkit, Spigot, or Paper. Supported versions: %i'
   #------------------- Updater Messages -------------------
-  wwcUpdaterConnectionFailed: ' Unable to check for latest updates on Github.'
-  wwcUpdaterParserFailed: ' Failed to parse update data from Github.'
-  wwcUpdaterUpToDate: ' WorldwideChat is up to date!'
-  wwcUpdaterOutOfDate: ' WorldwideChat is out of date. Please update to the latest version, %i.'
+  wwcUpdaterConnectionFailed: 'Unable to check for latest updates on Github.'
+  wwcUpdaterParserFailed: 'Failed to parse update data from Github.'
+  wwcUpdaterUpToDate:  'WorldwideChat is up to date!'
+  wwcUpdaterOutOfDate: 'WorldwideChat is out of date. Please update to the latest version, %i.'
+  wwcUpdaterFailedGeneric: 'Unable to check for WorldwideChat updates.'
   #------------------- Configuration Messages -------------------
   wwcConfigConnectionSuccess: 'Successfully connected to %o!'
   wwcConfigConnectionFailed: 'Failed to connect to %o. Make sure your credentials and firewall are configured correctly!'
@@ -22,6 +23,7 @@ Messages:
   wwcConfigDisabledbStats: 'Disabled bStats.'
   wwcConfigCacheEnabled: 'Translator cache enabled and set to a limit of %i.'
   wwcConfigCacheDisabled: 'Translator cache disabled.'
+  wwcConfigBadUpdateDelay: 'Invalid updater delay set in config.yml.'
   #------------------- /wwcr Messages -------------------
   wwcrSuccess: ' Successfully reloaded WorldwideChat.'
   wwcrFail: ' Failed to reload WorldwideChat.'

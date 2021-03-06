@@ -46,7 +46,8 @@ public class WorldwideChat extends JavaPlugin {
     
     private double pluginVersion = 1.0;
     
-    private int bStatsID =  10562;
+    private int bStatsID = 10562;
+    private int updateCheckerDelay = 86400;
 
     private boolean enablebStats = true;
 
@@ -97,7 +98,6 @@ public class WorldwideChat extends JavaPlugin {
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
 
             //Check for Updates
-            int updateCheckerDelay = 86400; //TODO: Configurable
             Bukkit.getScheduler().runTaskAsynchronously(instance, new WWCUpdateChecker()); //Run update checker now
             BukkitTask updateChecker = Bukkit.getScheduler().runTaskLaterAsynchronously(instance, new WWCUpdateChecker(), updateCheckerDelay*20); //Schedule another update in updateCheckerDelay
             backgroundTasks.add(updateChecker);
@@ -147,7 +147,6 @@ public class WorldwideChat extends JavaPlugin {
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", translatorName));
             
             //Check for Updates
-            int updateCheckerDelay = 86400; //TODO: Configurable
             Bukkit.getScheduler().runTaskAsynchronously(instance, new WWCUpdateChecker()); //Run update checker now
             BukkitTask updateChecker = Bukkit.getScheduler().runTaskLaterAsynchronously(instance, new WWCUpdateChecker(), updateCheckerDelay*20); //Schedule another update in updateCheckerDelay
             backgroundTasks.add(updateChecker);
@@ -284,16 +283,20 @@ public class WorldwideChat extends JavaPlugin {
         pluginPrefixString = i;
     }
 
+    public void setUpdateCheckerDelay(int i) {
+        updateCheckerDelay = i;
+    }
+    
     public void setPluginLang(String i) {
         pluginLang = i;
     }
 
-    public void setbStats(boolean i) {
-        enablebStats = i;
-    }
-
     public void setTranslatorName(String i) {
         translatorName = i;
+    }
+    
+    public void setbStats(boolean i) {
+        enablebStats = i;
     }
     
     /* Getters */
@@ -340,6 +343,10 @@ public class WorldwideChat extends JavaPlugin {
     
     public int getbStatsID() {
         return bStatsID;
+    }
+    
+    public int getUpdateCheckerDelay() {
+        return updateCheckerDelay;
     }
     
     public ConfigurationHandler getConfigManager() {

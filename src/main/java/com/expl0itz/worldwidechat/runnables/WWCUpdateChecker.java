@@ -38,11 +38,15 @@ public class WWCUpdateChecker implements Runnable{
             IOUtils.closeQuietly(in);
         }
 
-        upToDate = (main.getPluginVersion() == Double.parseDouble(latest));
-        if (upToDate) {
-            main.getLogger().info(ChatColor.LIGHT_PURPLE + main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterUpToDate"));
-        } else {
-            main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterOutOfDate"));
+        try {
+            upToDate = (main.getPluginVersion() == Double.parseDouble(latest));
+            if (upToDate) {
+                main.getLogger().info(ChatColor.LIGHT_PURPLE + main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterUpToDate"));
+            } else {
+                main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterOutOfDate").replace("%i", "" + Double.parseDouble(latest)));
+            }
+        } catch (Exception e) {
+            main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterFailedGeneric"));           
         }
     }
 
