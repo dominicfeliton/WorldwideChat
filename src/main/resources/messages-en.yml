@@ -23,7 +23,7 @@ Messages:
   wwcConfigDisabledbStats: 'Disabled bStats.'
   wwcConfigCacheEnabled: 'Translator cache enabled and set to a limit of %i.'
   wwcConfigCacheDisabled: 'Translator cache disabled.'
-  wwcConfigBadUpdateDelay: 'Invalid updater delay set in config.yml.'
+  wwcConfigBadUpdateDelay: 'Invalid updater delay set in config.yml. Defaulting to 86400 seconds...'
   #------------------- /wwcr Messages -------------------
   wwcrSuccess: ' Successfully reloaded WorldwideChat.'
   wwcrFail: ' Failed to reload WorldwideChat.'

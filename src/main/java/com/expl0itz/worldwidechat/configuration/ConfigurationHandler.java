@@ -82,8 +82,10 @@ public class ConfigurationHandler {
         }
         //Update Checker Delay
         try {
-            if (!(getMainConfig().getInt("General.updateCheckerDelay") > 10)) {
+            if ((getMainConfig().getInt("General.updateCheckerDelay") > 10)) {
                 main.setUpdateCheckerDelay(getMainConfig().getInt("General.updateCheckerDelay"));
+            } else {
+                main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigBadUpdateDelay"));
             }
         } catch (Exception e) {
             main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigBadUpdateDelay"));
