@@ -11,6 +11,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
@@ -21,6 +22,7 @@ import com.expl0itz.worldwidechat.listeners.ChatListener;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CachedTranslation;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
+import com.expl0itz.worldwidechat.runnables.WWCUpdateChecker;
 
 import io.reactivex.annotations.NonNull;
 import net.kyori.adventure.audience.Audience;
@@ -95,7 +97,10 @@ public class WorldwideChat extends JavaPlugin {
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
 
             //Check for Updates
-            //TODO
+            int updateCheckerDelay = 86400; //TODO: Configurable
+            Bukkit.getScheduler().runTaskAsynchronously(instance, new WWCUpdateChecker()); //Run update checker now
+            BukkitTask updateChecker = Bukkit.getScheduler().runTaskLaterAsynchronously(instance, new WWCUpdateChecker(), updateCheckerDelay*20); //Schedule another update in updateCheckerDelay
+            backgroundTasks.add(updateChecker);
 
             //We made it!
              getLogger().info(ChatColor.GREEN + "Enabled WorldwideChat version " + pluginVersion + ".");
@@ -142,8 +147,11 @@ public class WorldwideChat extends JavaPlugin {
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", translatorName));
             
             //Check for Updates
-            //TODO
-
+            int updateCheckerDelay = 86400; //TODO: Configurable
+            Bukkit.getScheduler().runTaskAsynchronously(instance, new WWCUpdateChecker()); //Run update checker now
+            BukkitTask updateChecker = Bukkit.getScheduler().runTaskLaterAsynchronously(instance, new WWCUpdateChecker(), updateCheckerDelay*20); //Schedule another update in updateCheckerDelay
+            backgroundTasks.add(updateChecker);
+            
             return true;
         }
         return false;
@@ -155,10 +163,7 @@ public class WorldwideChat extends JavaPlugin {
         cache.clear();
 
         for (BukkitTask task: backgroundTasks) {
-            //TODO: BukkitRunnable that clears cache every 30 minutes
-            //ask active tasks if they are active; let them finish + cancel?
-            //TODO
-            //task.cancel();
+            task.cancel();
         }
     }
 
@@ -329,6 +334,10 @@ public class WorldwideChat extends JavaPlugin {
         return enablebStats;
     }
 
+    public double getPluginVersion() {
+        return pluginVersion;
+    }
+    
     public int getbStatsID() {
         return bStatsID;
     }
