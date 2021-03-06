@@ -4,8 +4,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.WWCActiveTranslator;
-import com.expl0itz.worldwidechat.misc.WWCCachedTranslation;
+import com.expl0itz.worldwidechat.misc.ActiveTranslator;
+import com.expl0itz.worldwidechat.misc.CachedTranslation;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -20,7 +20,7 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
-public class WWCWatson {
+public class WatsonTranslation {
 
     //TODO: Color codes get completely removed...this is a must, but maybe we can add them back (unlikely)
 
@@ -33,7 +33,7 @@ public class WWCWatson {
     private String serviceUrl = "";
     private CommandSender sender;
 
-    public WWCWatson(String textToTranslate, String inputLang, String outputLang, String apikey, String serviceUrl, CommandSender sender) {
+    public WatsonTranslation(String textToTranslate, String inputLang, String outputLang, String apikey, String serviceUrl, CommandSender sender) {
         this.textToTranslate = textToTranslate;
         this.inputLang = inputLang;
         this.outputLang = outputLang;
@@ -42,7 +42,7 @@ public class WWCWatson {
         this.sender = sender;
     }
 
-    public WWCWatson(String apikey, String serviceUrl, WorldwideChat main) {
+    public WatsonTranslation(String apikey, String serviceUrl, WorldwideChat main) {
         this.apikey = apikey;
         this.serviceUrl = serviceUrl;
         this.main = main;
@@ -81,7 +81,7 @@ public class WWCWatson {
                 }
             }
         }
-        if (!(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof WWCActiveTranslator) //don't do any of this if /wwcg is enabled; players may not be in ArrayList and this will throw an exception
+        if (!(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) //don't do any of this if /wwcg is enabled; players may not be in ArrayList and this will throw an exception
             &&
             (essentialsColorCodeWarning || textToTranslate.indexOf("&") != -1) //check sent chat to make sure it includes a CC
             &&
@@ -101,7 +101,7 @@ public class WWCWatson {
         if (main.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
             //Check cache for inputs, since config says we should
             for (int c = 0; c < main.getCache().size(); c++) {
-                WWCCachedTranslation currentTerm = main.getCache().get(c);
+                CachedTranslation currentTerm = main.getCache().get(c);
                 if (currentTerm.getInputLang().equalsIgnoreCase(inputLang)
                         && (currentTerm.getOutputLang().equalsIgnoreCase(outputLang))
                         && (currentTerm.getInputPhrase().equalsIgnoreCase(textToTranslate))
@@ -135,7 +135,7 @@ public class WWCWatson {
         
         /* Add to cache */
         if (main.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize") > 0 && !(inputLang.equals("None"))) {
-            WWCCachedTranslation newTerm = new WWCCachedTranslation(inputLang, outputLang, textToTranslate, finalOut);   
+            CachedTranslation newTerm = new CachedTranslation(inputLang, outputLang, textToTranslate, finalOut);   
             main.addCacheTerm(newTerm);
         }
         

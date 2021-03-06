@@ -6,8 +6,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.WWCActiveTranslator;
-import com.expl0itz.worldwidechat.misc.WWCDefinitions;
+import com.expl0itz.worldwidechat.misc.ActiveTranslator;
+import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
@@ -31,8 +31,8 @@ public class WWCTranslate extends BasicCommand {
     public boolean processCommand(boolean isGlobal) {
         /* Sanity checks */
         Audience adventureSender = main.adventure().sender(sender);
-        WWCActiveTranslator currTarget = main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
-        if (currTarget instanceof WWCActiveTranslator) {
+        ActiveTranslator currTarget = main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
+        if (currTarget instanceof ActiveTranslator) {
             main.removeActiveTranslator(currTarget);
             final TextComponent chatTranslationStopped = Component.text()
                 .append(main.getPluginPrefix().asComponent())
@@ -42,7 +42,7 @@ public class WWCTranslate extends BasicCommand {
             if (args.length == 0 || args[0].equalsIgnoreCase("Stop")) {
                 return true;
             }
-        } else if (isGlobal && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof WWCActiveTranslator) //If /wwcg is called
+        } else if (isGlobal && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) //If /wwcg is called
         {
             main.removeActiveTranslator(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
             final TextComponent chatTranslationStopped = Component.text()
@@ -70,7 +70,7 @@ public class WWCTranslate extends BasicCommand {
         
         /* Check if already running on another player; Sanity Checks P2 */
         Player testPlayer = Bukkit.getServer().getPlayer(args[0]);
-        if (testPlayer != null && main.getActiveTranslator(testPlayer.getUniqueId().toString()) instanceof WWCActiveTranslator && args.length == 1) {
+        if (testPlayer != null && main.getActiveTranslator(testPlayer.getUniqueId().toString()) instanceof ActiveTranslator && args.length == 1) {
             main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
             final TextComponent chatTranslationStopped = Component.text()
                 .append(main.getPluginPrefix().asComponent())
@@ -80,7 +80,7 @@ public class WWCTranslate extends BasicCommand {
         }
 
         /* Process input */
-        WWCDefinitions defs = new WWCDefinitions();
+        CommonDefinitions defs = new CommonDefinitions();
         if (args[0] instanceof String && args.length == 1) {
             if (main.getTranslatorName().equals("Watson")) {
                 for (int i = 0; i < defs.getSupportedWatsonLangCodes().length; i++) {
@@ -88,7 +88,7 @@ public class WWCTranslate extends BasicCommand {
                         //We got a valid lang code, continue and add player to ArrayList
                         if (!isGlobal) //Not global
                         {
-                            main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
+                            main.addActiveTranslator(new ActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
                                 "None",
                                 args[0],
                                 false));
@@ -99,7 +99,7 @@ public class WWCTranslate extends BasicCommand {
                             adventureSender.sendMessage(autoTranslate);
                             return true;
                         } else { //Is global
-                            main.addActiveTranslator(new WWCActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
+                            main.addActiveTranslator(new ActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
                                 "None",
                                 args[0],
                                 false));
@@ -133,7 +133,7 @@ public class WWCTranslate extends BasicCommand {
                                 }
                                 if (!isGlobal) //Not global
                                 {
-                                    main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
+                                    main.addActiveTranslator(new ActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
                                         args[0],
                                         args[1],
                                         false));
@@ -143,7 +143,7 @@ public class WWCTranslate extends BasicCommand {
                                         .build();
                                     adventureSender.sendMessage(langToLang);
                                 } else {
-                                    main.addActiveTranslator(new WWCActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
+                                    main.addActiveTranslator(new ActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
                                         args[0],
                                         args[1],
                                         false));
@@ -163,7 +163,7 @@ public class WWCTranslate extends BasicCommand {
                         if (sender.hasPermission("worldwidechat.wwctotherplayers")) {
                             for (int j = 0; j < defs.getSupportedWatsonLangCodes().length; j++) {
                                 if (defs.getSupportedWatsonLangCodes()[j].equalsIgnoreCase(args[1])) {
-                                    main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
+                                    main.addActiveTranslator(new ActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
                                             args[1],
                                             "None",
                                             false));
@@ -207,7 +207,7 @@ public class WWCTranslate extends BasicCommand {
                                             adventureSender.sendMessage(sameLangError);
                                             return false;
                                         }
-                                        main.addActiveTranslator(new WWCActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
+                                        main.addActiveTranslator(new ActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
                                             args[1],
                                             args[2],
                                             false));

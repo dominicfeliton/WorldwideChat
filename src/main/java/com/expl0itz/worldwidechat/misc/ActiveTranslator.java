@@ -1,13 +1,13 @@
 package com.expl0itz.worldwidechat.misc;
 
-public class WWCActiveTranslator {
+public class ActiveTranslator {
 
     private String playerUUID = "";
     private String inLangCode = "";
     private String outLangCode = "";
     private boolean hasBeenShownColorCodeWarning = false;
 
-    public WWCActiveTranslator(String uuid, String langIn, String langOut, boolean h) {
+    public ActiveTranslator(String uuid, String langIn, String langOut, boolean h) {
         playerUUID = uuid;
         inLangCode = langIn;
         outLangCode = langOut;

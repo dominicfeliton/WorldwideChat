@@ -8,11 +8,11 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.WWCCachedTranslation;
-import com.expl0itz.worldwidechat.misc.WWCDefinitions;
-import com.expl0itz.worldwidechat.watson.WWCWatson;
+import com.expl0itz.worldwidechat.misc.CachedTranslation;
+import com.expl0itz.worldwidechat.misc.CommonDefinitions;
+import com.expl0itz.worldwidechat.watson.WatsonTranslation;
 
-public class WWCConfigurationHandler {
+public class ConfigurationHandler {
 
     private WorldwideChat main = WorldwideChat.getInstance();
 
@@ -36,7 +36,7 @@ public class WWCConfigurationHandler {
 
         /* Get plugin lang */
         String pluginLang = "en";
-        WWCDefinitions defs = new WWCDefinitions();
+        CommonDefinitions defs = new CommonDefinitions();
         for (int i = 0; i < defs.getSupportedPluginLangCodes().length; i++) {
             if (defs.getSupportedPluginLangCodes()[i].equalsIgnoreCase(getMainConfig().getString("General.pluginLang"))) {
                 main.setPluginLang(getMainConfig().getString("General.pluginLang"));
@@ -83,7 +83,7 @@ public class WWCConfigurationHandler {
 
         /* Translator Settings */
         if (getMainConfig().getBoolean("Translator.useWatsonTranslate") && !(getMainConfig().getBoolean("Translator.useGoogleTranslate"))) {
-            WWCWatson test = new WWCWatson(
+            WatsonTranslation test = new WatsonTranslation(
                     getMainConfig().getString("Translator.watsonAPIKey"),
                     getMainConfig().getString("Translator.watsonURL"),
                     main);

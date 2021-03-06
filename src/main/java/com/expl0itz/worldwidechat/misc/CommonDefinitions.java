@@ -1,6 +1,6 @@
 package com.expl0itz.worldwidechat.misc;
 
-public class WWCDefinitions {
+public class CommonDefinitions {
 
     /* Important vars */
     private String[] supportedMCVersions = {

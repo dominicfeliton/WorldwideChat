@@ -8,15 +8,15 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import com.ibm.cloud.sdk.core.service.exception.NotFoundException;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.WWCActiveTranslator;
-import com.expl0itz.worldwidechat.watson.WWCWatson;
+import com.expl0itz.worldwidechat.misc.ActiveTranslator;
+import com.expl0itz.worldwidechat.watson.WatsonTranslation;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
-public class WWCChatListener implements Listener {
+public class ChatListener implements Listener {
 
     private WorldwideChat main = WorldwideChat.getInstance();
 
@@ -25,9 +25,9 @@ public class WWCChatListener implements Listener {
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerChat(AsyncPlayerChatEvent event) {
-        if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) instanceof WWCActiveTranslator || main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof WWCActiveTranslator) {
-            WWCActiveTranslator currPlayer;
-            if (!(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof WWCActiveTranslator)) {
+        if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) instanceof ActiveTranslator || main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) {
+            ActiveTranslator currPlayer;
+            if (!(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator)) {
                 //This UDID is never valid, but we can use it as a less elegant way to check if global translate (/wwcg) is enabled.
                 currPlayer = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
             } else {
@@ -37,7 +37,7 @@ public class WWCChatListener implements Listener {
             //if global (TODO)
             try {
                 if (main.getTranslatorName().equals("Watson")) {
-                    WWCWatson watsonInstance = new WWCWatson(event.getMessage(),
+                    WatsonTranslation watsonInstance = new WatsonTranslation(event.getMessage(),
                         currPlayer.getInLangCode(),
                         currPlayer.getOutLangCode(),
                         main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"),

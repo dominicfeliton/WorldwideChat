@@ -16,11 +16,11 @@ import org.bukkit.scheduler.BukkitTask;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
-import com.expl0itz.worldwidechat.configuration.WWCConfigurationHandler;
-import com.expl0itz.worldwidechat.listeners.WWCChatListener;
-import com.expl0itz.worldwidechat.misc.WWCActiveTranslator;
-import com.expl0itz.worldwidechat.misc.WWCCachedTranslation;
-import com.expl0itz.worldwidechat.misc.WWCDefinitions;
+import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
+import com.expl0itz.worldwidechat.listeners.ChatListener;
+import com.expl0itz.worldwidechat.misc.ActiveTranslator;
+import com.expl0itz.worldwidechat.misc.CachedTranslation;
+import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 
 import io.reactivex.annotations.NonNull;
 import net.kyori.adventure.audience.Audience;
@@ -33,14 +33,14 @@ import net.kyori.adventure.text.format.TextDecoration;
 
 public class WorldwideChat extends JavaPlugin {
     /* Managers */
-    private ArrayList < WWCActiveTranslator > activeTranslators = new ArrayList < WWCActiveTranslator > ();
+    private ArrayList < ActiveTranslator > activeTranslators = new ArrayList < ActiveTranslator > ();
     private Set < BukkitTask > backgroundTasks = new HashSet < BukkitTask > ();
-    private ArrayList < WWCCachedTranslation > cache = new ArrayList < WWCCachedTranslation > ();
+    private ArrayList < CachedTranslation > cache = new ArrayList < CachedTranslation > ();
 
     /* Vars */
     private static WorldwideChat instance;
     private BukkitAudiences adventure;
-    private WWCConfigurationHandler configurationManager;
+    private ConfigurationHandler configurationManager;
     
     private double pluginVersion = 1.0;
     
@@ -74,7 +74,7 @@ public class WorldwideChat extends JavaPlugin {
         boolean settingsSetSuccessfully;
         try {
             //Load main config + other configs
-            configurationManager = new WWCConfigurationHandler();
+            configurationManager = new ConfigurationHandler();
             configurationManager.initMainConfig(); //this loads our language; load messages.yml immediately after this
             configurationManager.initMessagesConfig(); //messages.yml, other configs
             settingsSetSuccessfully = configurationManager.loadMainSettings(); //main config.yml settings
@@ -91,7 +91,7 @@ public class WorldwideChat extends JavaPlugin {
             checkMCVersion();
             
             //EventHandlers
-            getServer().getPluginManager().registerEvents(new WWCChatListener(), this);
+            getServer().getPluginManager().registerEvents(new ChatListener(), this);
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
 
             //Check for Updates
@@ -129,7 +129,7 @@ public class WorldwideChat extends JavaPlugin {
         //Reload main config + other configs
         boolean settingsSetSuccessfully;
         try {
-            configurationManager = new WWCConfigurationHandler();
+            configurationManager = new ConfigurationHandler();
             configurationManager.initMainConfig();
             configurationManager.initMessagesConfig();
             settingsSetSuccessfully = configurationManager.loadMainSettings();
@@ -163,7 +163,7 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public void checkMCVersion() {
-        WWCDefinitions defs = new WWCDefinitions();
+        CommonDefinitions defs = new CommonDefinitions();
         String supportedVersions = "";
         for (int i = 0; i < defs.getSupportedMCVersions().length; i++) {
             supportedVersions += "(" + defs.getSupportedMCVersions()[i] + ") ";
@@ -228,26 +228,26 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     /* Setters */
-    public void addActiveTranslator(WWCActiveTranslator i) {
+    public void addActiveTranslator(ActiveTranslator i) {
         activeTranslators.add(i);
     }
     
-    public void removeActiveTranslator(WWCActiveTranslator i) {
-        for (Iterator < WWCActiveTranslator > aList = activeTranslators.iterator(); aList.hasNext();) {
-            WWCActiveTranslator activeTranslators = aList.next();
+    public void removeActiveTranslator(ActiveTranslator i) {
+        for (Iterator < ActiveTranslator > aList = activeTranslators.iterator(); aList.hasNext();) {
+            ActiveTranslator activeTranslators = aList.next();
             if (activeTranslators == i) {
                 aList.remove();
             }
         }
     }
     
-    public void addCacheTerm(WWCCachedTranslation input) {
+    public void addCacheTerm(CachedTranslation input) {
         if (cache.size() < getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize")) {
             //DEBUG: getLogger().info("Added new term to cache.");
             cache.add(input);
         } else { //cache size is greater than X; let's remove the least used thing
             //DEBUG: getLogger().info("Removing extra term!");
-            WWCCachedTranslation leastAmountOfTimes = new WWCCachedTranslation("","","","");
+            CachedTranslation leastAmountOfTimes = new CachedTranslation("","","","");
             leastAmountOfTimes.setNumberOfTimes(Integer.MAX_VALUE);
             for (int i = 0; i < cache.size(); i++) {
                 if (cache.get(i).getNumberOfTimes() < leastAmountOfTimes.getNumberOfTimes())
@@ -261,9 +261,9 @@ public class WorldwideChat extends JavaPlugin {
         }
     }
 
-    public void removeCacheTerm(WWCCachedTranslation i) {
-        for (Iterator < WWCCachedTranslation > aList = cache.iterator(); aList.hasNext();) {
-            WWCCachedTranslation cachedTranslation = aList.next();
+    public void removeCacheTerm(CachedTranslation i) {
+        for (Iterator < CachedTranslation > aList = cache.iterator(); aList.hasNext();) {
+            CachedTranslation cachedTranslation = aList.next();
             if (cachedTranslation == i) {
                 aList.remove();
             }
@@ -292,10 +292,10 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     /* Getters */
-    public WWCActiveTranslator getActiveTranslator(String uuid) {
+    public ActiveTranslator getActiveTranslator(String uuid) {
         if (activeTranslators.size() > 0) //just return false if there are no active translators, less code to run
         {
-            for (WWCActiveTranslator eaTranslator: activeTranslators) {
+            for (ActiveTranslator eaTranslator: activeTranslators) {
                 if (eaTranslator.getUUID().equals(uuid)) //if uuid matches up with one in ArrayList, we chillin'
                 {
                     return eaTranslator;
@@ -305,7 +305,7 @@ public class WorldwideChat extends JavaPlugin {
         return null;
     }
 
-    public ArrayList < WWCActiveTranslator > getActiveTranslators() {
+    public ArrayList < ActiveTranslator > getActiveTranslators() {
         return activeTranslators;
     }
 
@@ -333,11 +333,11 @@ public class WorldwideChat extends JavaPlugin {
         return bStatsID;
     }
     
-    public WWCConfigurationHandler getConfigManager() {
+    public ConfigurationHandler getConfigManager() {
         return configurationManager;
     }
     
-    public ArrayList <WWCCachedTranslation> getCache() {
+    public ArrayList <CachedTranslation> getCache() {
         return cache;
     }
 }

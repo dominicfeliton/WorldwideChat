@@ -1,6 +1,6 @@
 package com.expl0itz.worldwidechat.misc;
 
-public class WWCCachedTranslation {
+public class CachedTranslation {
 
     private String inputLang;
     private String outputLang;
@@ -8,7 +8,7 @@ public class WWCCachedTranslation {
     private String outputPhrase;
     private int numberOfTimes;
     
-    public WWCCachedTranslation(String inputLang, String outputLang, String inputPhrase, String outputPhrase)
+    public CachedTranslation(String inputLang, String outputLang, String inputPhrase, String outputPhrase)
     {
         this.inputLang = inputLang;
         this.outputLang = outputLang;
