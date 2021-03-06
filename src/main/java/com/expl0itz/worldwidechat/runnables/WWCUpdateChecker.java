@@ -44,6 +44,7 @@ public class WWCUpdateChecker implements Runnable{
                 main.getLogger().info(ChatColor.LIGHT_PURPLE + main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterUpToDate"));
             } else {
                 main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterOutOfDate").replace("%i", "" + Double.parseDouble(latest)));
+                main.getLogger().warning("https://github.com/3xpl0itz/WorldwideChat/releases");
             }
         } catch (Exception e) {
             main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterFailedGeneric"));           
