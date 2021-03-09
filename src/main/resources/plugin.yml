@@ -38,6 +38,7 @@ permissions:
             worldwidechat.wwcg: true
             worldwidechat.wwct: true
             worldwidechat.wwctotherplayers: true
+            worldwidechat.chatupdate: true
         default: op
     worldwidechat.wwc:
         description: Prints WorldwideChat version.
@@ -51,4 +52,10 @@ permissions:
     worldwidechat.wwct:
         description: Enables chat translation to a certain language for a specific player.
         default: true
+    worldwidechat.wwctotherplayers:
+        description: Enables chat translation to a certain language for other players.
+        default: op
+    worldwidechat.chatupdate:
+        description: Enables receiving of plugin update notification in chat on login.
+        default: op
     
