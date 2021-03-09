@@ -9,6 +9,9 @@ Some of its notable features include:
 
 And much more to come! 
 
+## How to Setup
+Read the [Wiki](https://github.com/3xpl0itz/WorldwideChat/wiki). File an issue if you don't think something is working right!
+
 ## Installation
 Download WorldwideChat from the Releases tab, or from its [SpigotMC](https://www.spigotmc.org/resources/worldwidechat.89910/) page.
 
