@@ -20,9 +20,6 @@ public class ChatListener implements Listener {
 
     private WorldwideChat main = WorldwideChat.getInstance();
 
-    //TODO: Add a new command to turn off lowConfidenceInAnswer message, as it may begin to get annoying.
-    //Also add to config, maybe
-
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerChat(AsyncPlayerChatEvent event) {
         if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) instanceof ActiveTranslator || main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) {
@@ -33,8 +30,6 @@ public class ChatListener implements Listener {
             } else {
                 currPlayer = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
             }
-            //if watson, if google translate, if bing, etc (TODO)
-            //if global (TODO)
             try {
                 if (main.getTranslatorName().equals("Watson")) {
                     WatsonTranslation watsonInstance = new WatsonTranslation(event.getMessage(),

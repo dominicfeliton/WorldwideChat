@@ -6,6 +6,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.apache.commons.io.IOUtils;
+import org.bukkit.Bukkit;
 import org.bukkit.scheduler.BukkitTask;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
@@ -13,10 +14,11 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import net.md_5.bungee.api.ChatColor;
 
 
-public class WWCUpdateChecker implements Runnable{
+public class UpdateChecker implements Runnable{
 
     private boolean upToDate = false;
     private String latest = "";
+    private BukkitTask updaterTask;
     private WorldwideChat main = WorldwideChat.getInstance();
     
     @Override
@@ -45,10 +47,16 @@ public class WWCUpdateChecker implements Runnable{
             } else {
                 main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterOutOfDate").replace("%i", "" + Double.parseDouble(latest)));
                 main.getLogger().warning("https://github.com/3xpl0itz/WorldwideChat/releases");
+                main.setOutOfDate(true);
             }
         } catch (Exception e) {
             main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterFailedGeneric"));           
         }
+        //Schedule the next update check here
+        //DEBUG: main.getLogger().info(main.getBackgroundTasks().size() + "");
+        main.removeBackgroundTask("updateChecker"); //mem leaks bad; remove all previous tasks of WWCUpdateChecker
+        updaterTask = Bukkit.getScheduler().runTaskLaterAsynchronously(main, new UpdateChecker(), main.getUpdateCheckerDelay()*20);
+        main.addBackgroundTask("updateChecker", updaterTask);
     }
 
     public boolean upToDate() {

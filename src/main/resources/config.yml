@@ -27,6 +27,20 @@ General:
   # Default is 86400 (seconds), or 1 day.
   updateCheckerDelay: 86400
   
+Chat:
+
+  # Send chat notification on user login if they are still translating.
+  # Set to true to enable, and false to disable.
+  # Default is "true" for enable.
+  sendTranslationChat: true
+  
+  # Send chat notification if there is an update available to the plugin.
+  # If the user is not OP or doesn't have the "worldwidechat.chatupdate" permission,
+  # this message won't send whether this option is enabled or disabled.
+  # Set to true to enable, and false to disable.
+  # Default is "true" for enable.
+  sendPluginUpdateChat: true
+  
 Translator:
 
   # Please Note: YOU CAN ONLY HAVE ONE TRANSLATOR ENABLED AT A TIME.
@@ -39,10 +53,11 @@ Translator:
   watsonAPIKey: 
   watsonURL:
   
-  # Coming Soon: Google Translate API support :) Ignore the text below for now.
+  # Coming Soon: Google Translate API support :) THIS OPTION IS NOT YET FUNCTIONAL.
   # Watson Configuration: Change to true to enable, and fill out the required information below.
   # Has a more restrictive "free" plan compared to Watson, but may be more accurate.
-  # useGoogleTranslate is default "false," meaning it is not used. Set to "true" to use it, but make sure Watson is false.
+  # useGoogleTranslate is default "false," meaning it is not used. 
+  # Set to "true" to use it, but make sure Watson is false.
   useGoogleTranslate: false
   
   # Set the number of phrases to be stored in the "translation cache."

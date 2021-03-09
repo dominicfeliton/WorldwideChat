@@ -1,6 +1,7 @@
 package com.expl0itz.worldwidechat.configuration;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.bstats.bukkit.Metrics;
 import org.bukkit.ChatColor;
@@ -8,9 +9,10 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.CachedTranslation;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.watson.WatsonTranslation;
+
+import net.kyori.adventure.text.format.NamedTextColor;
 
 public class ConfigurationHandler {
 
@@ -47,20 +49,18 @@ public class ConfigurationHandler {
         }
     }
 
-    /* Init Other Configs Method */
+    /* Init Messages Method */
     public void initMessagesConfig() {
-        /* Init config files */
+        /* Init config file */
         messagesFile = new File(main.getDataFolder(), "messages-" + main.getPluginLang() + ".yml");
 
-        /* Generate config files, if they do not exist */
-        if (!messagesFile.exists()) {
-            main.saveResource("messages-" + main.getPluginLang() + ".yml", true);
-        }
+        /* Always save new lang files */
+        main.saveResource("messages-" + main.getPluginLang() + ".yml", true);
 
-        /* Load configs */
+        /* Load config */
         messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
     }
-
+    
     /* Load Main Settings Method */
     public boolean loadMainSettings() {
         /* Get rest of General Settings */
@@ -117,6 +117,31 @@ public class ConfigurationHandler {
         }
         return true; // We made it, everything set successfully; return false == fatal error, plugin should disable after
     }
+ 
+    public void createUserDataConfig(String uuid, String inLang, String outLang) {
+        /* Per User Settings Saver */
+        File userSettingsFile;
+        FileConfiguration userSettingsConfig;
+        userSettingsFile = new File(main.getDataFolder() + File.separator + "data" + File.separator, uuid + ".yml");
+
+        /* Load config */
+        userSettingsConfig = YamlConfiguration.loadConfiguration(userSettingsFile);
+        
+        //If file has never been made:
+        if (!userSettingsFile.exists()) {
+            try {
+                userSettingsConfig.createSection("inLang");
+                userSettingsConfig.set("inLang", inLang);
+                
+                userSettingsConfig.createSection("outLang");
+                userSettingsConfig.set("outLang", outLang);
+                
+                userSettingsConfig.save(userSettingsFile);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
     
     /* Getters */
     public FileConfiguration getMainConfig() {
@@ -126,7 +151,11 @@ public class ConfigurationHandler {
     public FileConfiguration getMessagesConfig() {
         return messagesConfig;
     }
-
+    
+    public File getUserSettingsFile(String uuid) {
+        return new File(main.getDataFolder() + File.separator + "data" + File.separator, uuid + ".yml");
+    }
+    
     public File getConfigFile() {
         return configFile;
     }

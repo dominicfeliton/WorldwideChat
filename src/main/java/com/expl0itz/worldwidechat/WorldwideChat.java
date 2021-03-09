@@ -1,9 +1,8 @@
 package com.expl0itz.worldwidechat;
 
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Set;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -11,7 +10,6 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
@@ -19,10 +17,12 @@ import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
+import com.expl0itz.worldwidechat.listeners.OnPlayerJoinListener;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CachedTranslation;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
-import com.expl0itz.worldwidechat.runnables.WWCUpdateChecker;
+import com.expl0itz.worldwidechat.runnables.LoadUserData;
+import com.expl0itz.worldwidechat.runnables.UpdateChecker;
 
 import io.reactivex.annotations.NonNull;
 import net.kyori.adventure.audience.Audience;
@@ -36,7 +36,7 @@ import net.kyori.adventure.text.format.TextDecoration;
 public class WorldwideChat extends JavaPlugin {
     /* Managers */
     private ArrayList < ActiveTranslator > activeTranslators = new ArrayList < ActiveTranslator > ();
-    private Set < BukkitTask > backgroundTasks = new HashSet < BukkitTask > ();
+    private HashMap < String,BukkitTask > backgroundTasks = new HashMap < String, BukkitTask > ();
     private ArrayList < CachedTranslation > cache = new ArrayList < CachedTranslation > ();
 
     /* Vars */
@@ -50,6 +50,7 @@ public class WorldwideChat extends JavaPlugin {
     private int updateCheckerDelay = 86400;
 
     private boolean enablebStats = true;
+    private boolean outOfDate = false;
 
     private String pluginPrefixString = "WWC";
     private String pluginLang = "en";
@@ -68,6 +69,10 @@ public class WorldwideChat extends JavaPlugin {
         .build();
 
     /* Methods */
+    public static WorldwideChat getInstance() {
+        return instance;
+    }
+    
     @Override
     public void onEnable() {
         // Initialize critical instances
@@ -79,11 +84,11 @@ public class WorldwideChat extends JavaPlugin {
             //Load main config + other configs
             configurationManager = new ConfigurationHandler();
             configurationManager.initMainConfig(); //this loads our language; load messages.yml immediately after this
-            configurationManager.initMessagesConfig(); //messages.yml, other configs
+            configurationManager.initMessagesConfig(); //messages.yml
             settingsSetSuccessfully = configurationManager.loadMainSettings(); //main config.yml settings
         } catch (Exception exception) {
-            //Probably bad credentials
-            getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionFailed").replace("%o", translatorName));
+            //Config init failed
+            getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcInitializationFail").replace("%o", translatorName));
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
@@ -95,15 +100,19 @@ public class WorldwideChat extends JavaPlugin {
             
             //EventHandlers
             getServer().getPluginManager().registerEvents(new ChatListener(), this);
+            getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
 
             //Check for Updates
-            Bukkit.getScheduler().runTaskAsynchronously(instance, new WWCUpdateChecker()); //Run update checker now
-            BukkitTask updateChecker = Bukkit.getScheduler().runTaskLaterAsynchronously(instance, new WWCUpdateChecker(), updateCheckerDelay*20); //Schedule another update in updateCheckerDelay
-            backgroundTasks.add(updateChecker);
+            BukkitTask updateChecker = Bukkit.getScheduler().runTaskAsynchronously(this, new UpdateChecker()); //Run update checker now
+            backgroundTasks.put("updateChecker", updateChecker);
 
+            //Load saved user data
+            Bukkit.getScheduler().runTaskAsynchronously(this, new LoadUserData());
+            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
+            
             //We made it!
-             getLogger().info(ChatColor.GREEN + "Enabled WorldwideChat version " + pluginVersion + ".");
+            getLogger().info(ChatColor.GREEN + "Enabled WorldwideChat version " + pluginVersion + ".");
         }
     }
 
@@ -123,10 +132,6 @@ public class WorldwideChat extends JavaPlugin {
         getLogger().info("Disabled WorldwideChat version " + pluginVersion + ".");
     }
 
-    public static WorldwideChat getInstance() {
-        return instance;
-    }
-    
     public boolean reloadWWC() {
         //Cancel all background tasks
         cancelBackgroundTasks();
@@ -135,11 +140,11 @@ public class WorldwideChat extends JavaPlugin {
         boolean settingsSetSuccessfully;
         try {
             configurationManager = new ConfigurationHandler();
-            configurationManager.initMainConfig();
-            configurationManager.initMessagesConfig();
+            configurationManager.initMainConfig(); //this loads our language; load messages.yml immediately after this
+            configurationManager.initMessagesConfig(); //messages.yml
             settingsSetSuccessfully = configurationManager.loadMainSettings();
-        } catch (Exception exception) { //Connection failed, probably; specify this if config gets more complex
-            getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionFailed").replace("%o", translatorName));
+        } catch (Exception exception) { //Config init failed
+            getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcInitializationFail").replace("%o", translatorName));
             getServer().getPluginManager().disablePlugin(this);
             return false;
         }
@@ -147,9 +152,12 @@ public class WorldwideChat extends JavaPlugin {
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", translatorName));
             
             //Check for Updates
-            Bukkit.getScheduler().runTaskAsynchronously(instance, new WWCUpdateChecker()); //Run update checker now
-            BukkitTask updateChecker = Bukkit.getScheduler().runTaskLaterAsynchronously(instance, new WWCUpdateChecker(), updateCheckerDelay*20); //Schedule another update in updateCheckerDelay
-            backgroundTasks.add(updateChecker);
+            BukkitTask updateChecker = Bukkit.getScheduler().runTaskAsynchronously(this, new UpdateChecker()); //Run update checker now
+            backgroundTasks.put("updateChecker", updateChecker);
+            
+            //Load saved user data
+            Bukkit.getScheduler().runTaskAsynchronously(this, new LoadUserData());
+            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
             
             return true;
         }
@@ -157,13 +165,16 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public void cancelBackgroundTasks() {
-        //Clear all active translators
+        //Clear all active translating users
         activeTranslators.clear();
         cache.clear();
 
-        for (BukkitTask task: backgroundTasks) {
-            task.cancel();
+        //Cancel + remove all tasks
+        for (String eachTask : backgroundTasks.keySet()) {
+            backgroundTasks.get(eachTask).cancel();
+            backgroundTasks.remove(eachTask);
         }
+
     }
 
     public void checkMCVersion() {
@@ -179,7 +190,7 @@ public class WorldwideChat extends JavaPlugin {
         getLogger().warning(getConfigManager().getMessagesConfig().getString("Messages.wwcUnsupportedVersion").replace("%i", supportedVersions));
     }
     
-    //Init all commands
+    /* Init all commands */
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("wwc")) {
             //Me fucking with adventure for the first time, cool
@@ -215,7 +226,7 @@ public class WorldwideChat extends JavaPlugin {
           throw new IllegalStateException("Tried to access Adventure when the plugin was disabled!");
         }
         return this.adventure;
-      }
+    }
     
     /* Common Methods */
     public boolean checkSenderIdentity(CommandSender sender) {
@@ -232,6 +243,16 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     /* Setters */
+    public void addBackgroundTask (String name, BukkitTask i) {
+        backgroundTasks.put(name, i);
+    }
+    
+    public void removeBackgroundTask (String name) {
+        while (backgroundTasks.get(name) != null) {
+            backgroundTasks.remove(name);
+        }
+    }
+    
     public void addActiveTranslator(ActiveTranslator i) {
         activeTranslators.add(i);
     }
@@ -299,7 +320,15 @@ public class WorldwideChat extends JavaPlugin {
         enablebStats = i;
     }
     
+    public void setOutOfDate(boolean i) {
+        outOfDate = i;
+    }
+    
     /* Getters */
+    public HashMap < String, BukkitTask > getBackgroundTasks() {
+        return backgroundTasks;
+    }
+    
     public ActiveTranslator getActiveTranslator(String uuid) {
         if (activeTranslators.size() > 0) //just return false if there are no active translators, less code to run
         {
@@ -335,6 +364,10 @@ public class WorldwideChat extends JavaPlugin {
 
     public boolean getbStats() {
         return enablebStats;
+    }
+    
+    public boolean getOutOfDate() {
+        return outOfDate;
     }
 
     public double getPluginVersion() {

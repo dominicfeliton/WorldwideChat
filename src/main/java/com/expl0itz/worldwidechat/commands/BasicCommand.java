@@ -3,8 +3,6 @@ package com.expl0itz.worldwidechat.commands;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 
-import com.expl0itz.worldwidechat.WorldwideChat;
-
 public class BasicCommand {
 
     public CommandSender sender;

@@ -8,12 +8,20 @@ Messages:
   wwcBadPerms: ' You do not have the required permissions to execute this command!'
   wwcPlayerNotFound: ' Player %i not found.'
   wwcUnsupportedVersion: 'You are running an unsupported version of Bukkit, Spigot, or Paper. Supported versions: %i'
+  wwcInitializationFail: 'Failed to initialize WorldwideChat.'
+  wwcUserDataReloaded: 'Loaded all saved user data.'
+  #------------------- Listener Messages -------------------
+  wwcOnJoinTranslationNotificationSourceLang: ' Your chat is being translated from %i to %o.'
+  wwcOnJoinTranslationNotificationNoSourceLang: ' Your chat is being translated to %o.'
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Global chat is being translated from %i to %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Global chat is being translated to %o.'
   #------------------- Updater Messages -------------------
   wwcUpdaterConnectionFailed: 'Unable to check for latest updates on Github.'
   wwcUpdaterParserFailed: 'Failed to parse update data from Github.'
   wwcUpdaterUpToDate:  'WorldwideChat is up to date!'
   wwcUpdaterOutOfDate: 'WorldwideChat is out of date. Please update to the latest version, %i.'
   wwcUpdaterFailedGeneric: 'Unable to check for WorldwideChat updates.'
+  wwcUpdaterOutOfDateChat: ' WorldwideChat is out of date. Please update to the latest version.'
   #------------------- Configuration Messages -------------------
   wwcConfigConnectionSuccess: 'Successfully connected to %o!'
   wwcConfigConnectionFailed: 'Failed to connect to %o. Make sure your credentials and firewall are configured correctly!'

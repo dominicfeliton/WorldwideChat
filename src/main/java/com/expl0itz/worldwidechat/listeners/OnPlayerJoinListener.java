@@ -1,0 +1,77 @@
+package com.expl0itz.worldwidechat.listeners;
+
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+
+import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.misc.ActiveTranslator;
+
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.TextComponent;
+import net.kyori.adventure.text.event.ClickEvent;
+import net.kyori.adventure.text.format.NamedTextColor;
+import net.kyori.adventure.text.format.TextDecoration;
+
+public class OnPlayerJoinListener implements Listener {
+
+    private WorldwideChat main = WorldwideChat.getInstance();
+
+    @EventHandler(priority = EventPriority.NORMAL) 
+    public void onPlayerJoinListener(PlayerJoinEvent event){
+        //Check if plugin has updates
+        if ((main.getConfigManager().getMainConfig().getString("Chat.sendPluginUpdateChat").equals("true")) && 
+                (main.getOutOfDate()) && (event.getPlayer().isOp() 
+                || event.getPlayer().hasPermission("worldwidechat.chatupdate"))) {
+            final TextComponent outOfDate = Component.text()
+                .append(main.getPluginPrefix().asComponent())
+                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterOutOfDateChat")).color(NamedTextColor.YELLOW))
+                .append(Component.text().content(" (").color(NamedTextColor.GOLD))
+                .append(Component.text().content("https://github.com/3xpl0itz/WorldwideChat/releases").color(NamedTextColor.GOLD).clickEvent(ClickEvent.openUrl("https://github.com/3xpl0itz/WorldwideChat/releases")).decoration(TextDecoration.UNDERLINED, true))
+                .append(Component.text().content(")").color(NamedTextColor.GOLD))
+                .build();
+            main.adventure().sender(event.getPlayer()).sendMessage(outOfDate);
+            main.setOutOfDate(true);
+        }
+        
+        if ((main.getConfigManager().getMainConfig().getString("Chat.sendTranslationChat").equals("true")) 
+                && (!(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator)) 
+                && main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()) != null) { //if they have a config
+            FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()));
+            if (!currFileConfig.getString("inLang").equalsIgnoreCase("None")) {
+                final TextComponent langToLang = Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcOnJoinTranslationNotificationSourceLang").replace("%i", currFileConfig.getString("inLang")).replace("%o", currFileConfig.getString("outLang"))).color(NamedTextColor.LIGHT_PURPLE))
+                    .build();
+                main.adventure().sender(event.getPlayer()).sendMessage(langToLang);
+            } else {
+                final TextComponent noSource = Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcOnJoinTranslationNotificationNoSourceLang").replace("%o", currFileConfig.getString("outLang"))).color(NamedTextColor.LIGHT_PURPLE))
+                    .build();
+                main.adventure().sender(event.getPlayer()).sendMessage(noSource);
+            }
+        } else if ((main.getConfigManager().getMainConfig().getString("Chat.sendTranslationChat").equals("true")) 
+                && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) { //If global translate is enabled...
+            FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED"));
+            if (!currFileConfig.getString("inLang").equalsIgnoreCase("None")) {
+                final TextComponent langToLang = Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcGlobalOnJoinTranslationNotificationSourceLang").replace("%i", currFileConfig.getString("inLang")).replace("%o", currFileConfig.getString("outLang"))).color(NamedTextColor.LIGHT_PURPLE))
+                    .build();
+                main.adventure().sender(event.getPlayer()).sendMessage(langToLang);
+            } else {
+                final TextComponent noSource = Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcGlobalOnJoinTranslationNotificationNoSourceLang").replace("%o", currFileConfig.getString("outLang"))).color(NamedTextColor.LIGHT_PURPLE))
+                    .build();
+                main.adventure().sender(event.getPlayer()).sendMessage(noSource);
+            }
+        }
+        
+    }
+    
+}
