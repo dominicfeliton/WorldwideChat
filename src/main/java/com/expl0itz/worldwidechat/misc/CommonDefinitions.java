@@ -12,6 +12,8 @@ public class CommonDefinitions {
     };
 
     private String[] supportedWatsonLangCodes = {
+            //eu, ca are not completely translatable by watson
+            //TODO: Fetch all supported langs from Watson, get translatable languages in json, check if they can be used as input/output
         "en",
         "es",
         "ar",
@@ -23,11 +25,9 @@ public class CommonDefinitions {
         "pt-br",
         "zh",
         "zh-tw",
-        "eu",
         "bn",
         "bs",
         "bg",
-        "ca",
         "hr",
         "cs",
         "da",
@@ -43,7 +43,34 @@ public class CommonDefinitions {
         "hu",
         "ga",
         "id",
-        "it"
+        "it",
+        "ja",
+        "ko",
+        "lv",
+        "lt",
+        "ms",
+        "ml",
+        "mt",
+        "cnr",
+        "ne",
+        "nb",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sr",
+        "si",
+        "sk",
+        "sl",
+        "sv",
+        "ta",
+        "te",
+        "th",
+        "tr",
+        "uk",
+        "ur",
+        "vi",
+        "cy"
 
     };
 

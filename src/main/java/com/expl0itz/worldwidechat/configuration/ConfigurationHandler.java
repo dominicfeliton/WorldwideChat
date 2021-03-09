@@ -153,7 +153,11 @@ public class ConfigurationHandler {
     }
     
     public File getUserSettingsFile(String uuid) {
-        return new File(main.getDataFolder() + File.separator + "data" + File.separator, uuid + ".yml");
+        File outFile = new File(main.getDataFolder() + File.separator + "data" + File.separator, uuid + ".yml");
+        if (outFile.exists()) {
+            return outFile;
+        }
+        return null;
     }
     
     public File getConfigFile() {
