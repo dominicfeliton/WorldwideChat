@@ -24,7 +24,7 @@ commands:
         permission: worldwidechat.wwcg
         permission-message: §4You do not have permission to run this command.
     wwct:
-        description: Enables chat translation to a certain language for a specific player.
+        description: Enables chat translation to a certain language, either for you or a specific player.
         aliases: [worldwidechattranslate, translate]
         usage: §4/wwct (playerName) (language-in) <language-out>
         permission: worldwidechat.wwct

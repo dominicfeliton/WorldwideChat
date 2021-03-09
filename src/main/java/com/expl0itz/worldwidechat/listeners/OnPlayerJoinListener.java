@@ -24,8 +24,7 @@ public class OnPlayerJoinListener implements Listener {
     public void onPlayerJoinListener(PlayerJoinEvent event){
         //Check if plugin has updates
         if ((main.getConfigManager().getMainConfig().getString("Chat.sendPluginUpdateChat").equals("true")) && 
-                (main.getOutOfDate()) && (event.getPlayer().isOp() 
-                || event.getPlayer().hasPermission("worldwidechat.chatupdate"))) {
+                (main.getOutOfDate()) && (event.getPlayer().hasPermission("worldwidechat.chatupdate"))) {
             final TextComponent outOfDate = Component.text()
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterOutOfDateChat")).color(NamedTextColor.YELLOW))
