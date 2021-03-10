@@ -1,10 +1,7 @@
 package com.expl0itz.worldwidechat.runnables;
 
 import java.io.File;
-import java.util.Arrays;
-import java.util.List;
 
-import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -24,20 +21,25 @@ public class LoadUserData implements Runnable{
         File[] listOfFiles = userDataFolder.listFiles();
         
         /* Add each to Translator Array in main class */
+        CommonDefinitions defs = new CommonDefinitions();
+        int invalidConfigs = 0;
         if (main.getTranslatorName().equalsIgnoreCase("Watson")) {
-            List<String> list = Arrays.asList(new CommonDefinitions().getSupportedWatsonLangCodes());
             for (File eaFile : listOfFiles) {
-                if (eaFile.isFile()) {
-                    /* Make sure file is valid */
-                    FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
-                    if ((currFileConfig.getString("inLang").equalsIgnoreCase("None") || list.contains(currFileConfig.getString("inLang"))
-                            && (list.contains(currFileConfig.getString("outLang"))))) { //If file has proper entries
-                        main.addActiveTranslator(new ActiveTranslator(eaFile.getName().substring(0, eaFile.getName().indexOf(".")), //add active translator to arraylist
-                                currFileConfig.getString("inLang"),
-                                currFileConfig.getString("outLang"),
-                                false));    
-                    }
+                /* Make sure file is valid */
+                FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
+                if ((currFileConfig.getString("inLang").equalsIgnoreCase("None") || defs.isSupportedWatsonLangForSource(currFileConfig.getString("inLang"))
+                        && (defs.isSupportedWatsonLangForTarget(currFileConfig.getString("outLang"))))) { //If file has proper entries
+                    main.addActiveTranslator(new ActiveTranslator(eaFile.getName().substring(0, eaFile.getName().indexOf(".")), //add active translator to arraylist
+                            currFileConfig.getString("inLang"),
+                            currFileConfig.getString("outLang"),
+                            false));    
+                } else { //Invalid file; delete it
+                    eaFile.delete();
+                    invalidConfigs++;
                 }
+            }
+            if (invalidConfigs > 0) {
+                main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataCorrupted").replace("%i", invalidConfigs + ""));
             }
         }
     }

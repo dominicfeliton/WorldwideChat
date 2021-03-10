@@ -1,7 +1,22 @@
 package com.expl0itz.worldwidechat.misc;
 
+import java.util.ArrayList;
+
+import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.watson.WatsonSupportedLanguageObject;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.ibm.cloud.sdk.core.security.IamAuthenticator;
+import com.ibm.watson.language_translator.v3.LanguageTranslator;
+import com.ibm.watson.language_translator.v3.model.Languages;
+
 public class CommonDefinitions {
 
+    private WorldwideChat main = WorldwideChat.getInstance();
+    private ArrayList<WatsonSupportedLanguageObject> supportedWatsonLanguages = main.getSupportedWatsonLanguages();
+    
     /* Important vars */
     private String[] supportedMCVersions = {
         "1.16"
@@ -11,74 +26,49 @@ public class CommonDefinitions {
         "en"
     };
 
-    private String[] supportedWatsonLangCodes = {
-            //eu, ca are not completely translatable by watson
-            //TODO: Fetch all supported langs from Watson, get translatable languages in json, check if they can be used as input/output
-        "en",
-        "es",
-        "ar",
-        "de",
-        "fr",
-        "it",
-        "ja",
-        "ko",
-        "pt-br",
-        "zh",
-        "zh-tw",
-        "bn",
-        "bs",
-        "bg",
-        "hr",
-        "cs",
-        "da",
-        "nl",
-        "et",
-        "fi",
-        "fr-CA",
-        "de",
-        "el",
-        "gu",
-        "he",
-        "hi",
-        "hu",
-        "ga",
-        "id",
-        "it",
-        "ja",
-        "ko",
-        "lv",
-        "lt",
-        "ms",
-        "ml",
-        "mt",
-        "cnr",
-        "ne",
-        "nb",
-        "pl",
-        "pt",
-        "ro",
-        "ru",
-        "sr",
-        "si",
-        "sk",
-        "sl",
-        "sv",
-        "ta",
-        "te",
-        "th",
-        "tr",
-        "uk",
-        "ur",
-        "vi",
-        "cy"
-
-    };
-
     /* Getters */
-    public String[] getSupportedWatsonLangCodes() {
-        return supportedWatsonLangCodes;
+    public boolean isSupportedWatsonLangForSource(String in) {
+        for (WatsonSupportedLanguageObject eaLang : supportedWatsonLanguages) {
+            if ((eaLang.getLangCode().equalsIgnoreCase(in)
+                || eaLang.getLangName().equalsIgnoreCase(in)) 
+                && eaLang.getSupportedAsSource()) {
+                return true;
+            }
+        }
+        return false;
     }
 
+    public boolean isSupportedWatsonLangForTarget(String in) {
+        for (WatsonSupportedLanguageObject eaLang : supportedWatsonLanguages) {
+            if ((eaLang.getLangCode().equalsIgnoreCase(in)
+                || eaLang.getLangName().equalsIgnoreCase(in))
+                && eaLang.getSupportedAsTarget()) { //Add native language support?
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public WatsonSupportedLanguageObject getSupportedWatsonLang(String in) {
+        for (WatsonSupportedLanguageObject eaLang : supportedWatsonLanguages) {
+            if ((eaLang.getLangCode().equalsIgnoreCase(in)
+                || eaLang.getLangName().equalsIgnoreCase(in))
+                && eaLang.getSupportedAsTarget()) { //Add native language support?
+                return eaLang;
+            }
+        }
+        return null;
+    }
+    
+    public String getValidLangCodes() {
+        String out = "\n";
+        for (WatsonSupportedLanguageObject eaLang : supportedWatsonLanguages) {
+            out += "(" + eaLang.getLangCode() + " - " + ((main.getPluginLang().equalsIgnoreCase("en") ? eaLang.getLangName() : eaLang.getNativeLangName()) + "), "); 
+        }
+        out = out.substring(0, out.lastIndexOf(","));
+        return out;
+    }
+    
     public String[] getSupportedPluginLangCodes() {
         return supportedPluginLangCodes;
     }

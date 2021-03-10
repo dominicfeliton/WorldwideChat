@@ -23,6 +23,7 @@ import com.expl0itz.worldwidechat.misc.CachedTranslation;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.runnables.LoadUserData;
 import com.expl0itz.worldwidechat.runnables.UpdateChecker;
+import com.expl0itz.worldwidechat.watson.WatsonSupportedLanguageObject;
 
 import io.reactivex.annotations.NonNull;
 import net.kyori.adventure.audience.Audience;
@@ -43,6 +44,7 @@ public class WorldwideChat extends JavaPlugin {
     private static WorldwideChat instance;
     private BukkitAudiences adventure;
     private ConfigurationHandler configurationManager;
+    private ArrayList < WatsonSupportedLanguageObject > supportedWatsonLanguages;
     
     private double pluginVersion = 1.0;
     
@@ -72,7 +74,7 @@ public class WorldwideChat extends JavaPlugin {
     public static WorldwideChat getInstance() {
         return instance;
     }
-    
+
     @Override
     public void onEnable() {
         // Initialize critical instances
@@ -106,7 +108,7 @@ public class WorldwideChat extends JavaPlugin {
             //Check for Updates
             BukkitTask updateChecker = Bukkit.getScheduler().runTaskAsynchronously(this, new UpdateChecker()); //Run update checker now
             backgroundTasks.put("updateChecker", updateChecker);
-
+            
             //Load saved user data
             Bukkit.getScheduler().runTaskAsynchronously(this, new LoadUserData());
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
@@ -130,38 +132,6 @@ public class WorldwideChat extends JavaPlugin {
         
         //All done.
         getLogger().info("Disabled WorldwideChat version " + pluginVersion + ".");
-    }
-
-    public boolean reloadWWC() {
-        //Cancel all background tasks
-        cancelBackgroundTasks();
-
-        //Reload main config + other configs
-        boolean settingsSetSuccessfully;
-        try {
-            configurationManager = new ConfigurationHandler();
-            configurationManager.initMainConfig(); //this loads our language; load messages.yml immediately after this
-            configurationManager.initMessagesConfig(); //messages.yml
-            settingsSetSuccessfully = configurationManager.loadMainSettings();
-        } catch (Exception exception) { //Config init failed
-            getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcInitializationFail").replace("%o", translatorName));
-            getServer().getPluginManager().disablePlugin(this);
-            return false;
-        }
-        if (settingsSetSuccessfully) { //If all settings don't error out
-            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", translatorName));
-            
-            //Check for Updates
-            BukkitTask updateChecker = Bukkit.getScheduler().runTaskAsynchronously(this, new UpdateChecker()); //Run update checker now
-            backgroundTasks.put("updateChecker", updateChecker);
-            
-            //Load saved user data
-            Bukkit.getScheduler().runTaskAsynchronously(this, new LoadUserData());
-            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
-            
-            return true;
-        }
-        return false;
     }
 
     public void cancelBackgroundTasks() {
@@ -243,12 +213,17 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     /* Setters */
+    public void setConfigManager(ConfigurationHandler i) {
+        configurationManager = i;
+    }
+    
     public void addBackgroundTask (String name, BukkitTask i) {
         backgroundTasks.put(name, i);
     }
     
     public void removeBackgroundTask (String name) {
         while (backgroundTasks.get(name) != null) {
+            backgroundTasks.get(name).cancel();
             backgroundTasks.remove(name);
         }
     }
@@ -304,6 +279,10 @@ public class WorldwideChat extends JavaPlugin {
         pluginPrefixString = i;
     }
 
+    public void setSupportedWatsonLanguages(ArrayList < WatsonSupportedLanguageObject > in) {
+        supportedWatsonLanguages = in;
+    }
+    
     public void setUpdateCheckerDelay(int i) {
         updateCheckerDelay = i;
     }
@@ -346,6 +325,10 @@ public class WorldwideChat extends JavaPlugin {
         return activeTranslators;
     }
 
+    public ArrayList < WatsonSupportedLanguageObject > getSupportedWatsonLanguages() {
+        return supportedWatsonLanguages;
+    }
+    
     public TextComponent getPluginPrefix() {
         return pluginPrefix;
     }

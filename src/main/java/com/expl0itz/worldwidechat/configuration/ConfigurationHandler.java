@@ -68,6 +68,8 @@ public class ConfigurationHandler {
         try {
             if (!getMainConfig().getString("General.prefixName").equalsIgnoreCase("Default")) {
                 main.setPrefixName(getMainConfig().getString("General.prefixName"));
+            } else {
+                main.setPrefixName("WWC"); //if we don't do this, old prefixes will not revert until a server restart/reload
             }
         } catch (Exception e) {
             main.getLogger().warning((getMessagesConfig().getString("Messages.wwcConfigInvalidPrefixSettings")));
@@ -86,18 +88,19 @@ public class ConfigurationHandler {
                 main.setUpdateCheckerDelay(getMainConfig().getInt("General.updateCheckerDelay"));
             } else {
                 main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigBadUpdateDelay"));
+                main.setUpdateCheckerDelay(86400);
             }
         } catch (Exception e) {
             main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigBadUpdateDelay"));
+            main.setUpdateCheckerDelay(86400);
         }
         
         /* Translator Settings */
         if (getMainConfig().getBoolean("Translator.useWatsonTranslate") && !(getMainConfig().getBoolean("Translator.useGoogleTranslate"))) {
             WatsonTranslation test = new WatsonTranslation(
                     getMainConfig().getString("Translator.watsonAPIKey"),
-                    getMainConfig().getString("Translator.watsonURL"),
-                    main);
-                test.testConnection();
+                    getMainConfig().getString("Translator.watsonURL"));
+                test.initializeConnection();
             main.setTranslatorName("Watson");
         } else if (getMainConfig().getBoolean("Translator.useGoogleTranslate") && !(getMainConfig().getBoolean("Translator.useWatsonTranslate"))) {
             //under construction, use watson
@@ -108,18 +111,18 @@ public class ConfigurationHandler {
             main.getServer().getPluginManager().disablePlugin(main);
             return false;
         }
-        
-          //Cache Settings
+        //Cache Settings
         if (getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
             main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigCacheEnabled").replace("%i", "" + getMainConfig().getInt("Translator.translatorCacheSize")));
         } else {
+            main.getCache().clear();
             main.getLogger().warning(ChatColor.YELLOW + getMessagesConfig().getString("Messages.wwcConfigCacheDisabled"));
         }
         return true; // We made it, everything set successfully; return false == fatal error, plugin should disable after
     }
  
+    /* Per User Settings Saver */
     public void createUserDataConfig(String uuid, String inLang, String outLang) {
-        /* Per User Settings Saver */
         File userSettingsFile;
         FileConfiguration userSettingsConfig;
         userSettingsFile = new File(main.getDataFolder() + File.separator + "data" + File.separator, uuid + ".yml");

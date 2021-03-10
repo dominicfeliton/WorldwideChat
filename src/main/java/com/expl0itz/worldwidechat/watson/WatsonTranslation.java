@@ -1,16 +1,20 @@
 package com.expl0itz.worldwidechat.watson;
 
+import java.util.ArrayList;
+
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CachedTranslation;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.ibm.cloud.sdk.core.security.IamAuthenticator;
 import com.ibm.watson.language_translator.v3.LanguageTranslator;
+import com.ibm.watson.language_translator.v3.model.Languages;
 import com.ibm.watson.language_translator.v3.model.TranslateOptions;
 import com.ibm.watson.language_translator.v3.model.TranslationResult;
 
@@ -33,6 +37,7 @@ public class WatsonTranslation {
     private String serviceUrl = "";
     private CommandSender sender;
 
+    //for normal translation operation
     public WatsonTranslation(String textToTranslate, String inputLang, String outputLang, String apikey, String serviceUrl, CommandSender sender) {
         this.textToTranslate = textToTranslate;
         this.inputLang = inputLang;
@@ -42,27 +47,36 @@ public class WatsonTranslation {
         this.sender = sender;
     }
 
-    public WatsonTranslation(String apikey, String serviceUrl, WorldwideChat main) {
+    public WatsonTranslation(String apikey, String serviceUrl) { //for initializeConnection
         this.apikey = apikey;
         this.serviceUrl = serviceUrl;
-        this.main = main;
     }
 
-    public void testConnection() {
+    public void initializeConnection() {
         /* Init credentials */
         IamAuthenticator authenticator = new IamAuthenticator(apikey);
         LanguageTranslator translatorService = new LanguageTranslator("2018-05-01", authenticator);
         translatorService.setServiceUrl(serviceUrl);
 
-        /* Actual translation */
-        TranslateOptions options = new TranslateOptions.Builder()
-            .addText("la manzana")
-            .source("es")
-            .target("en")
-            .build();
-
-        /* Process final output */
-        translatorService.translate(options).execute().getResult();
+        /* Get languages */
+        Languages allLanguages = translatorService.listLanguages().execute().getResult();
+        JsonParser jsonParser = new JsonParser();
+        JsonElement jsonTree = jsonParser.parse(allLanguages.toString());
+        JsonObject jsonObject = jsonTree.getAsJsonObject();
+        
+        /* Parse json */
+        final JsonArray dataJson = jsonObject.getAsJsonArray("languages");
+        ArrayList < WatsonSupportedLanguageObject > outList = new ArrayList < WatsonSupportedLanguageObject >();
+        for (JsonElement element : dataJson) {
+            outList.add(new WatsonSupportedLanguageObject(
+                ((JsonObject) element).get("language").getAsString(),
+                ((JsonObject) element).get("language_name").getAsString(),
+                ((JsonObject) element).get("native_language_name").getAsString(),
+                ((JsonObject) element).get("supported_as_source").getAsBoolean(),
+                ((JsonObject) element).get("supported_as_target").getAsBoolean()));
+        }
+        /* Set supported watson languages */
+        main.setSupportedWatsonLanguages(outList);
     }
 
     public String translate() {

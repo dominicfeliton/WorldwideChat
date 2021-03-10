@@ -10,6 +10,7 @@ Messages:
   wwcUnsupportedVersion: 'You are running an unsupported version of Bukkit, Spigot, or Paper. Supported versions: %i'
   wwcInitializationFail: 'Failed to initialize WorldwideChat.'
   wwcUserDataReloaded: 'Loaded all saved user data.'
+  wwcUserDataCorrupted: 'Found and deleted %i corrupted user data files.'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: ' Your chat is being translated from %i to %o.'
   wwcOnJoinTranslationNotificationNoSourceLang: ' Your chat is being translated to %o.'
