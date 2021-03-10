@@ -46,7 +46,7 @@ public class WorldwideChat extends JavaPlugin {
     private ConfigurationHandler configurationManager;
     private ArrayList < WatsonSupportedLanguageObject > supportedWatsonLanguages;
     
-    private double pluginVersion = 1.0;
+    private double pluginVersion = 1.01;
     
     private int bStatsID = 10562;
     private int updateCheckerDelay = 86400;
