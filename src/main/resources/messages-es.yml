@@ -1,0 +1,56 @@
+Messages:
+  # ------------------- Mensajes principales -------------------
+  wwcNoConsole: ' Este comando solo puede ser ejecutado por un jugador.'
+  wwcVersion: ' WorldwideChat, versión'
+  wwcLangDetected: ' Idioma detectado %o.'
+  wwcInvalidLang: ' Idioma no válido en su config.yml. Defaulting to en...'
+  wwcListenersInitialized: ' Oyentes inicializados'.
+  wwcBadPerms: ' ¡No tiene los permisos necesarios para ejecutar este comando!'
+  wwcPlayerNotFound: ' Jugador %i no encontrado'.
+  wwcUnsupportedVersion: 'Está ejecutando una versión no compatible de Bukkit, Spigot o Paper. Versiones compatibles: %i'
+  wwcInitializationFail: 'No se pudo inicializar WorldwideChat'.
+  wwcUserDataReloaded: 'Cargó todos los datos de usuario guardados.'
+  wwcUserDataCorrupted: 'Se encontraron y eliminé %i archivos de datos de usuario corruptos.'
+  # ------------------- Mensajes de escucha -------------------
+  wwcOnJoinTranslationNotificationSourceLang: ' Su chat se está traduciendo de %i a %o.'
+  wwcOnJoinTranslationNotificationNoSourceLang: ' Su chat se está traduciendo a %o.'
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' El chat global se está traduciendo de %i a %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' El chat global se está traduciendo a %o.'
+  # ------------------- Mensajes de actualización -------------------
+  wwcUpdaterConnectionFailed: 'No se puede buscar las últimas actualizaciones en Github.'
+  wwcUpdaterParserFailed: 'No se pudieron analizar los datos de actualización de Github.'
+  wwcUpdaterUpToDate: '¡WorldwideChat está actualizado!'
+  wwcUpdaterOutOfDate: 'WorldwideChat no está actualizado. Actualice a la última versión, %i.'
+  wwcUpdaterFailedGeneric: 'No se puede buscar actualizaciones de WorldwideChat.'
+  wwcUpdaterOutOfDateChat: 'WorldwideChat no está actualizado. Actualice a la última versión.'
+  # ------------------- Mensajes de configuración -------------------
+  wwcConfigConnectionSuccess: '¡Conectado con éxito a %o!'
+  wwcConfigConnectionFailed: 'No se pudo conectar a %o. ¡Asegúrese de que sus credenciales y firewall estén configurados correctamente!'
+  wwcConfigInvalidTranslatorSettings: '¡Configuración de traductor no válida! Habilite solo un traductor en su config.yml. Inhabilitando...'
+  wwcConfigInvalidPrefixSettings: 'No se pudo leer su prefijo. Usando el predeterminado...'
+  wwcConfigEnabledbStats: 'bStats habilitados.'
+  wwcConfigDisabledbStats: 'bStats deshabilitados.'
+  wwcConfigCacheEnabled: 'Caché del traductor habilitado y establecido en un límite de %i.'
+  wwcConfigCacheDisabled: 'Caché del traductor deshabilitado.'
+  wwcConfigBadUpdateDelay: 'Retardo de actualización no válido establecido en config.yml. Por defecto a 86400 segundos...'
+  # ------------------- / wwcr Mensajes -------------------
+  wwcrSuccess: ' Recargado con éxito WorldwideChat.'
+  wwcrFail: ' No se pudo volver a cargar WorldwideChat.'
+  # ------------------- / wwct Mensajes -------------------
+  wwctTranslationStopped: ' Se detuvo la traducción del chat.'
+  wwctTranslationStoppedOtherPlayer: ' Se detuvo la traducción de chat para %i.'
+  wwctInvalidArgs: ' ¡Se proporcionaron argumentos no válidos!'
+  wwctAutoTranslateStart: ' Ahora traduciendo todo tu chat a %o.'
+  wwctLangToLangStart: ' Ahora traduciendo todo su chat de %i a %o.'
+  wwctInvalidLangCode: ' ¡Se proporcionaron códigos de idioma no válidos! Códigos de idioma válidos: %o'
+  wwctAutoTranslateStartOtherPlayer: ' Ahora traduciendo el chat de %i a %o.'
+  wwctLangToLangStartOtherPlayer: ' Ahora traduciendo el chat de% o de %i a %e.'
+  wwctPlayerNotFound: ' Jugador% no encontrado'.
+  wwctSameLangError: '¡No se puede traducir al mismo idioma!'
+  # ------------------- / wwcg Mensajes -------------------
+  wwcgTranslationStopped: ' Se detuvo la traducción de chat global.'
+  wwcgAutoTranslateStart: ' Ahora traduciendo chat global a %o.'
+  wwcgLangToLangStart: ' Ahora traduciendo chat global de %i a %o.'
+  # ------------------- Mensajes de Watson Translator -------------------
+  watsonNotFoundExceptionNotification: ' No se puede traducir su entrada más.'
+  watsonColorCodeWarning: " El uso de códigos de color puede brindarle resultados impredecibles."
