@@ -161,7 +161,8 @@ public class WorldwideChat extends JavaPlugin {
             }
         }
         //Not running a supported version of Bukkit, Spigot, or Paper
-        getLogger().warning(getConfigManager().getMessagesConfig().getString("Messages.wwcUnsupportedVersion").replace("%i", supportedVersions));
+        getLogger().warning(getConfigManager().getMessagesConfig().getString("Messages.wwcUnsupportedVersion"));
+        getLogger().warning(supportedVersions);
     }
     
     /* Init all commands */
