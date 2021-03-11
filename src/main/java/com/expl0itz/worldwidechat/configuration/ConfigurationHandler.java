@@ -38,16 +38,15 @@ public class ConfigurationHandler {
         mainConfig = YamlConfiguration.loadConfiguration(configFile);
 
         /* Get plugin lang */
-        String pluginLang = "en";
         CommonDefinitions defs = new CommonDefinitions();
         for (int i = 0; i < defs.getSupportedPluginLangCodes().length; i++) {
             if (defs.getSupportedPluginLangCodes()[i].equalsIgnoreCase(getMainConfig().getString("General.pluginLang"))) {
                 main.setPluginLang(getMainConfig().getString("General.pluginLang"));
-                main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + pluginLang + ".");
-            } else {
-                main.getLogger().warning(ChatColor.RED + "Unable to detect a valid language in your config.yml. Defaulting to en...");
+                main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + main.getPluginLang() + ".");
+                return;
             }
         }
+        main.getLogger().warning(ChatColor.RED + "Unable to detect a valid language in your config.yml. Defaulting to en...");
     }
 
     /* Init Messages Method */

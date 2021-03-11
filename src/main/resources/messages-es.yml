@@ -1,9 +1,10 @@
 Messages:
   # ------------------- Mensajes principales -------------------
+  wwcEnabled: 'Habilitada la versión %i de WorldwideChat.'
   wwcNoConsole: ' Este comando solo puede ser ejecutado por un jugador.'
   wwcVersion: ' WorldwideChat, versión'
   wwcLangDetected: ' Idioma detectado %o.'
-  wwcInvalidLang: ' Idioma no válido en su config.yml. Defaulting to en...'
+  wwcInvalidLang: ' Idioma no válido en su config.yml. Por defecto en...'
   wwcListenersInitialized: ' Oyentes inicializados.'
   wwcBadPerms: ' ¡No tiene los permisos necesarios para ejecutar este comando!'
   wwcPlayerNotFound: ' Jugador %i no encontrado.'

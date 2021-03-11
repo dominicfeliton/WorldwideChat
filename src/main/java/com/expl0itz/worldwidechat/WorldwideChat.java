@@ -118,7 +118,7 @@ public class WorldwideChat extends JavaPlugin {
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
             
             //We made it!
-            getLogger().info(ChatColor.GREEN + "Enabled WorldwideChat version " + pluginVersion + ".");
+            getLogger().info(ChatColor.GREEN + getConfigManager().getMessagesConfig().getString("Messages.wwcEnabled").replace("%i", pluginVersion + ""));
         }
     }
 
