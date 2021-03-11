@@ -9,6 +9,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateTranslation;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.watson.WatsonTranslation;
 
@@ -98,14 +99,15 @@ public class ConfigurationHandler {
         /* Translator Settings */
         if (getMainConfig().getBoolean("Translator.useWatsonTranslate") && !(getMainConfig().getBoolean("Translator.useGoogleTranslate"))) {
             WatsonTranslation test = new WatsonTranslation(
-                    getMainConfig().getString("Translator.watsonAPIKey"),
-                    getMainConfig().getString("Translator.watsonURL"));
-                test.initializeConnection();
+                getMainConfig().getString("Translator.watsonAPIKey"),
+                getMainConfig().getString("Translator.watsonURL"));
+            test.initializeConnection();
             main.setTranslatorName("Watson");
         } else if (getMainConfig().getBoolean("Translator.useGoogleTranslate") && !(getMainConfig().getBoolean("Translator.useWatsonTranslate"))) {
-            //under construction, use watson
-            main.getServer().getPluginManager().disablePlugin(main);
-            return false;
+            GoogleTranslateTranslation test = new GoogleTranslateTranslation(
+                getMainConfig().getString("Translator.googleTranslateAPIKey"));
+            test.initializeConnection();
+            main.setTranslatorName("Google Translate");
         } else {
             main.getLogger().severe(getMessagesConfig().getString("Messages.wwcConfigInvalidTranslatorSettings"));
             main.getServer().getPluginManager().disablePlugin(main);

@@ -16,6 +16,7 @@ import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
+import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateSupportedLanguageObject;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
 import com.expl0itz.worldwidechat.listeners.OnPlayerJoinListener;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
@@ -42,11 +43,14 @@ public class WorldwideChat extends JavaPlugin {
 
     /* Vars */
     private static WorldwideChat instance;
+    
     private BukkitAudiences adventure;
     private ConfigurationHandler configurationManager;
-    private ArrayList < WatsonSupportedLanguageObject > supportedWatsonLanguages;
     
-    private double pluginVersion = 1.01;
+    private ArrayList < WatsonSupportedLanguageObject > supportedWatsonLanguages;
+    private ArrayList < GoogleTranslateSupportedLanguageObject > supportedGoogleTranslateLanguages;
+    
+    private double pluginVersion = 1.1;
     
     private int bStatsID = 10562;
     private int updateCheckerDelay = 86400;
@@ -283,6 +287,10 @@ public class WorldwideChat extends JavaPlugin {
         supportedWatsonLanguages = in;
     }
     
+    public void setSupportedGoogleTranslateLanguages(ArrayList < GoogleTranslateSupportedLanguageObject > in) {
+        supportedGoogleTranslateLanguages = in;
+    }
+    
     public void setUpdateCheckerDelay(int i) {
         updateCheckerDelay = i;
     }
@@ -329,6 +337,10 @@ public class WorldwideChat extends JavaPlugin {
         return supportedWatsonLanguages;
     }
     
+    public ArrayList < GoogleTranslateSupportedLanguageObject > getSupportedGoogleTranslateLanguages() {
+        return supportedGoogleTranslateLanguages;
+    }
+    
     public TextComponent getPluginPrefix() {
         return pluginPrefix;
     }
@@ -340,7 +352,7 @@ public class WorldwideChat extends JavaPlugin {
     public String getPrefixName() {
         return pluginPrefixString;
     }
-
+    
     public String getTranslatorName() {
         return translatorName;
     }

@@ -53,12 +53,12 @@ Translator:
   watsonAPIKey: 
   watsonURL:
   
-  # Coming Soon: Google Translate API support :) THIS OPTION IS NOT YET FUNCTIONAL.
-  # Watson Configuration: Change to true to enable, and fill out the required information below.
+  # Google Translate Configuration: Change to true to enable, and fill out the required information below.
   # Has a more restrictive "free" plan compared to Watson, but may be more accurate.
   # useGoogleTranslate is default "false," meaning it is not used. 
   # Set to "true" to use it, but make sure Watson is false.
   useGoogleTranslate: false
+  googleTranslateAPIKey:
   
   # Set the number of phrases to be stored in the "translation cache."
   # This cache will store your X most translated phrases. This might be faster if:
