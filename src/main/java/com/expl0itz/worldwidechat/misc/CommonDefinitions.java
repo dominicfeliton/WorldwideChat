@@ -5,13 +5,6 @@ import java.util.ArrayList;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateSupportedLanguageObject;
 import com.expl0itz.worldwidechat.watson.WatsonSupportedLanguageObject;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.ibm.cloud.sdk.core.security.IamAuthenticator;
-import com.ibm.watson.language_translator.v3.LanguageTranslator;
-import com.ibm.watson.language_translator.v3.model.Languages;
 
 public class CommonDefinitions {
 
@@ -28,7 +21,8 @@ public class CommonDefinitions {
     };
     
     private String[] supportedPluginLangCodes = {
-        "en"
+        "en",
+        "es"
     };
 
     /* Getters */

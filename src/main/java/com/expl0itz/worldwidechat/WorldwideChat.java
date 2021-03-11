@@ -148,7 +148,6 @@ public class WorldwideChat extends JavaPlugin {
             backgroundTasks.get(eachTask).cancel();
             backgroundTasks.remove(eachTask);
         }
-
     }
 
     public void checkMCVersion() {
