@@ -36,19 +36,18 @@ import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
 public class WorldwideChat extends JavaPlugin {
-    /* Managers */
-    private ArrayList < ActiveTranslator > activeTranslators = new ArrayList < ActiveTranslator > ();
-    private HashMap < String,BukkitTask > backgroundTasks = new HashMap < String, BukkitTask > ();
-    private ArrayList < CachedTranslation > cache = new ArrayList < CachedTranslation > ();
-
     /* Vars */
     private static WorldwideChat instance;
     
     private BukkitAudiences adventure;
     private ConfigurationHandler configurationManager;
     
+    private HashMap < String,BukkitTask > backgroundTasks = new HashMap < String, BukkitTask > ();
+    
     private ArrayList < WatsonSupportedLanguageObject > supportedWatsonLanguages;
     private ArrayList < GoogleTranslateSupportedLanguageObject > supportedGoogleTranslateLanguages;
+    private ArrayList < ActiveTranslator > activeTranslators = new ArrayList < ActiveTranslator > ();
+    private ArrayList < CachedTranslation > cache = new ArrayList < CachedTranslation > ();
     
     private double pluginVersion = 1.1;
     
@@ -137,32 +136,6 @@ public class WorldwideChat extends JavaPlugin {
         //All done.
         getLogger().info("Disabled WorldwideChat version " + pluginVersion + ".");
     }
-
-    public void cancelBackgroundTasks() {
-        //Clear all active translating users
-        activeTranslators.clear();
-        cache.clear();
-
-        //Cancel + remove all tasks
-        for (String eachTask : backgroundTasks.keySet()) {
-            backgroundTasks.get(eachTask).cancel();
-            backgroundTasks.remove(eachTask);
-        }
-    }
-
-    public void checkMCVersion() {
-        CommonDefinitions defs = new CommonDefinitions();
-        String supportedVersions = "";
-        for (int i = 0; i < defs.getSupportedMCVersions().length; i++) {
-            supportedVersions += "(" + defs.getSupportedMCVersions()[i] + ") ";
-            if (Bukkit.getVersion().contains(defs.getSupportedMCVersions()[i])) {
-                return;
-            }
-        }
-        //Not running a supported version of Bukkit, Spigot, or Paper
-        getLogger().warning(getConfigManager().getMessagesConfig().getString("Messages.wwcUnsupportedVersion"));
-        getLogger().warning(supportedVersions);
-    }
     
     /* Init all commands */
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -193,6 +166,32 @@ public class WorldwideChat extends JavaPlugin {
             }
         }
         return true;
+    }
+    
+    public void cancelBackgroundTasks() {
+        //Clear all active translating users
+        activeTranslators.clear();
+        cache.clear();
+
+        //Cancel + remove all tasks
+        for (String eachTask : backgroundTasks.keySet()) {
+            backgroundTasks.get(eachTask).cancel();
+            backgroundTasks.remove(eachTask);
+        }
+    }
+
+    public void checkMCVersion() {
+        CommonDefinitions defs = new CommonDefinitions();
+        String supportedVersions = "";
+        for (int i = 0; i < defs.getSupportedMCVersions().length; i++) {
+            supportedVersions += "(" + defs.getSupportedMCVersions()[i] + ") ";
+            if (Bukkit.getVersion().contains(defs.getSupportedMCVersions()[i])) {
+                return;
+            }
+        }
+        //Not running a supported version of Bukkit, Spigot, or Paper
+        getLogger().warning(getConfigManager().getMessagesConfig().getString("Messages.wwcUnsupportedVersion"));
+        getLogger().warning(supportedVersions);
     }
     
     public @NonNull BukkitAudiences adventure() {

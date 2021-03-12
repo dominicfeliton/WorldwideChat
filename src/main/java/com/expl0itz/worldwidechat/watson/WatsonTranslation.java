@@ -54,12 +54,13 @@ public class WatsonTranslation {
 
     public void initializeConnection() {
         /* Init credentials */
-        IamAuthenticator authenticator = new IamAuthenticator(apikey);
+        IamAuthenticator authenticator = new IamAuthenticator.Builder().apikey(apikey).build();
         LanguageTranslator translatorService = new LanguageTranslator("2018-05-01", authenticator);
         translatorService.setServiceUrl(serviceUrl);
 
         /* Get languages */
         Languages allLanguages = translatorService.listLanguages().execute().getResult();
+        //we have to use deprecated methods here; trying to reference JsonParser statically results in a class not found error?? :(
         JsonParser jsonParser = new JsonParser();
         JsonElement jsonTree = jsonParser.parse(allLanguages.toString());
         JsonObject jsonObject = jsonTree.getAsJsonObject();
@@ -127,7 +128,7 @@ public class WatsonTranslation {
         }
         
         /* Init credentials */
-        IamAuthenticator authenticator = new IamAuthenticator(apikey);
+        IamAuthenticator authenticator = new IamAuthenticator.Builder().apikey(apikey).build();
         LanguageTranslator translatorService = new LanguageTranslator("2018-05-01", authenticator);
         translatorService.setServiceUrl(serviceUrl);
         

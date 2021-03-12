@@ -13,8 +13,6 @@ import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateTranslation;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.watson.WatsonTranslation;
 
-import net.kyori.adventure.text.format.NamedTextColor;
-
 public class ConfigurationHandler {
 
     private WorldwideChat main = WorldwideChat.getInstance();
@@ -77,6 +75,7 @@ public class ConfigurationHandler {
         //bStats
         main.setbStats(getMainConfig().getBoolean("General.enablebStats"));
         if (getMainConfig().getBoolean("General.enablebStats")) {
+            @SuppressWarnings("unused")
             Metrics metrics = new Metrics(WorldwideChat.getInstance(), WorldwideChat.getInstance().getbStatsID());
             main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigEnabledbStats"));
         } else {

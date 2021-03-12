@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.IOUtils;
 import org.bukkit.Bukkit;
@@ -23,21 +24,14 @@ public class UpdateChecker implements Runnable{
     
     @Override
     public void run() {
-        InputStream in = null;
-        try {
-            in = new URL("https://raw.githubusercontent.com/3xpl0itz/WorldwideChat/master/latestVersion.txt").openStream();
+        try (InputStream in = new URL("https://raw.githubusercontent.com/3xpl0itz/WorldwideChat/master/latestVersion.txt").openStream()) {
+            latest = IOUtils.readLines(in, StandardCharsets.UTF_8).get(0);
         } catch (MalformedURLException e) {
+            latest = main.getPluginVersion() + ""; //Just set latest to the current plugin version, since we can't find a newer one
             main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterConnectionFailed"));
         } catch (IOException e) {
-            main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterConnectionFailed"));
-        }
-        
-        try {
-            latest = IOUtils.readLines(in).get(0);
-        } catch (IOException e) {
+            latest = main.getPluginVersion() + "";
             main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterParserFailed"));
-        } finally {
-            IOUtils.closeQuietly(in);
         }
 
         try {
