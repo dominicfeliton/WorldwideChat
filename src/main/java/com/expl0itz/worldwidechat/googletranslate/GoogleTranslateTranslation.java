@@ -1,6 +1,7 @@
-package com.expl0itz.worldwidechat.watson;
+package com.expl0itz.worldwidechat.googletranslate;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
@@ -8,15 +9,13 @@ import org.bukkit.command.CommandSender;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CachedTranslation;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.ibm.cloud.sdk.core.security.IamAuthenticator;
-import com.ibm.watson.language_translator.v3.LanguageTranslator;
-import com.ibm.watson.language_translator.v3.model.Languages;
-import com.ibm.watson.language_translator.v3.model.TranslateOptions;
-import com.ibm.watson.language_translator.v3.model.TranslationResult;
+import com.expl0itz.worldwidechat.misc.CommonDefinitions;
+import com.google.cloud.translate.Detection;
+import com.google.cloud.translate.Language;
+import com.google.cloud.translate.Translate;
+import com.google.cloud.translate.Translate.TranslateOption;
+import com.google.cloud.translate.Translation;
+import com.google.cloud.translate.TranslateOptions;
 
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
@@ -24,61 +23,44 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
-public class WatsonTranslation {
+public class GoogleTranslateTranslation {
 
-    //TODO: Color codes get completely removed...this is a must, but maybe we can add them back (unlikely)
-
-    private WorldwideChat main = WorldwideChat.getInstance();
-    
+    private String apiKey = "";
     private String textToTranslate = "";
     private String inputLang = "";
     private String outputLang = "";
-    private String apikey = "";
-    private String serviceUrl = "";
     private CommandSender sender;
-
-    //for normal translation operation
-    public WatsonTranslation(String textToTranslate, String inputLang, String outputLang, String apikey, String serviceUrl, CommandSender sender) {
+    private WorldwideChat main = WorldwideChat.getInstance();
+    
+    public GoogleTranslateTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
         this.textToTranslate = textToTranslate;
         this.inputLang = inputLang;
         this.outputLang = outputLang;
-        this.apikey = apikey;
-        this.serviceUrl = serviceUrl;
         this.sender = sender;
     }
-
-    public WatsonTranslation(String apikey, String serviceUrl) { //for initializeConnection
-        this.apikey = apikey;
-        this.serviceUrl = serviceUrl;
+    
+    public GoogleTranslateTranslation(String apikey) {
+        this.apiKey = apikey;
+        System.setProperty("GOOGLE_API_KEY", apiKey); //we do this because .setApi() spams console :(
     }
-
+    
     public void initializeConnection() {
-        /* Init credentials */
-        IamAuthenticator authenticator = new IamAuthenticator(apikey);
-        LanguageTranslator translatorService = new LanguageTranslator("2018-05-01", authenticator);
-        translatorService.setServiceUrl(serviceUrl);
-
-        /* Get languages */
-        Languages allLanguages = translatorService.listLanguages().execute().getResult();
-        JsonParser jsonParser = new JsonParser();
-        JsonElement jsonTree = jsonParser.parse(allLanguages.toString());
-        JsonObject jsonObject = jsonTree.getAsJsonObject();
+        Translate translate = TranslateOptions.getDefaultInstance().getService(); //we can do this because API key was already set by initializeConnection()
         
-        /* Parse json */
-        final JsonArray dataJson = jsonObject.getAsJsonArray("languages");
-        ArrayList < WatsonSupportedLanguageObject > outList = new ArrayList < WatsonSupportedLanguageObject >();
-        for (JsonElement element : dataJson) {
-            outList.add(new WatsonSupportedLanguageObject(
-                ((JsonObject) element).get("language").getAsString(),
-                ((JsonObject) element).get("language_name").getAsString(),
-                ((JsonObject) element).get("native_language_name").getAsString(),
-                ((JsonObject) element).get("supported_as_source").getAsBoolean(),
-                ((JsonObject) element).get("supported_as_target").getAsBoolean()));
+        /* Get languages */
+        List<Language> allLanguages = translate.listSupportedLanguages();
+        
+        /* Parse languages */
+        ArrayList < GoogleTranslateSupportedLanguageObject > outList = new ArrayList < GoogleTranslateSupportedLanguageObject >();
+        for (Language eaLang : allLanguages) {
+            outList.add(new GoogleTranslateSupportedLanguageObject(
+                eaLang.getCode(),
+                eaLang.getName()));
         }
-        /* Set supported watson languages */
-        main.setSupportedWatsonLanguages(outList);
+        /* Set langList in Main */
+        main.setSupportedGoogleTranslateLanguages(outList);
     }
-
+    
     public String translate() {
         /* Sanitize Inputs */
         //Warn user about color codes
@@ -86,6 +68,7 @@ public class WatsonTranslation {
         //Therefore, we find the " #" regex or the "&" char, and warn the user about it
         boolean essentialsColorCodeWarning = false;
         Audience adventureSender = main.adventure().sender(sender);
+        
         for (int i = 0; i < textToTranslate.toCharArray().length; i++) {
             if (textToTranslate.toCharArray()[i] >= '0' && textToTranslate.toCharArray()[i] <= '9') {
                 if (!(textToTranslate.toCharArray()[i - 1] >= '0' && textToTranslate.toCharArray()[i - 1] <= '~')) {
@@ -100,14 +83,23 @@ public class WatsonTranslation {
             &&
             !(main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString()).getCCWarning())) //check if user has already been sent CC warning
         {
-            final TextComponent watsonCCWarning = Component.text()
+            final TextComponent googleTranslateCCWarning = Component.text()
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.watsonColorCodeWarning")).color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
                 .build();
-            adventureSender.sendMessage(watsonCCWarning);
+            adventureSender.sendMessage(googleTranslateCCWarning);
             //Set got CC warning of current translator to true, so that they don't get spammed by it if they keep using CCs
             main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString()).setCCWarning(true);
             //we're still gonna translate it but it won't look pretty
+        }
+
+        /* Convert input + output lang to lang code because this API is funky, man */
+        CommonDefinitions defs = new CommonDefinitions();
+        if (!(inputLang.equals("None")) && !defs.getSupportedGoogleTranslateLang(inputLang).getLangCode().equals(inputLang)) {
+            inputLang = defs.getSupportedGoogleTranslateLang(inputLang).getLangCode();
+        }
+        if (!defs.getSupportedGoogleTranslateLang(outputLang).getLangCode().equals(outputLang)) {
+            outputLang = defs.getSupportedGoogleTranslateLang(outputLang).getLangCode();
         }
         
         /* Check cache */
@@ -126,28 +118,28 @@ public class WatsonTranslation {
             }
         }
         
-        /* Init credentials */
-        IamAuthenticator authenticator = new IamAuthenticator(apikey);
-        LanguageTranslator translatorService = new LanguageTranslator("2018-05-01", authenticator);
-        translatorService.setServiceUrl(serviceUrl);
+        /* Initialize translation object */
+        Translate translate = TranslateOptions.getDefaultInstance().getService();
         
         /* Actual translation */
-        TranslateOptions options = new TranslateOptions.Builder()
-            .addText(textToTranslate)
-            .source(inputLang.equals("None") ? "" : inputLang)
-            .target(outputLang)
-            .build();
+        boolean badInput = false;
+        if (inputLang.equals("None")) { //if we do not know the input
+            badInput = true;
+            Detection detection = translate.detect(textToTranslate);
+            inputLang = detection.getLanguage();
+        }
+        
+        Translation translation = translate.translate(
+            textToTranslate,
+            TranslateOption.sourceLanguage(inputLang),
+            TranslateOption.targetLanguage(outputLang),
+            TranslateOption.format("text"));
         
         /* Process final output */
-        TranslationResult translationResult = translatorService.translate(options).execute().getResult();
-        JsonParser jsonParser = new JsonParser();
-        JsonElement jsonTree = jsonParser.parse(translationResult.toString());
-        JsonObject jsonObject = jsonTree.getAsJsonObject();
-        JsonElement translationSection = jsonObject.getAsJsonArray("translations").get(0).getAsJsonObject().get("translation");
-        String finalOut = translationSection.toString().substring(1, translationSection.toString().length() - 1);
+        String finalOut = translation.getTranslatedText();
         
         /* Add to cache */
-        if (main.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize") > 0 && !(inputLang.equals("None"))) {
+        if (main.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize") > 0 && !badInput) {
             CachedTranslation newTerm = new CachedTranslation(inputLang, outputLang, textToTranslate, finalOut);   
             main.addCacheTerm(newTerm);
         }
@@ -155,5 +147,5 @@ public class WatsonTranslation {
         /* Return final result */
         return finalOut;
     }
-
+    
 }

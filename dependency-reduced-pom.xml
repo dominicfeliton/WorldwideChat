@@ -4,7 +4,7 @@
   <groupId>com.expl0itz.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
   <name>WorldwideChat</name>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.01-SNAPSHOT</version>
   <description>Translate incoming chat to any language!</description>
   <build>
     <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
@@ -52,6 +52,16 @@
               <include>com.ibm.watson:language-translator</include>
               <include>com.squareup.okhttp3:*</include>
               <include>com.google.code.gson:*</include>
+              <include>com.google.cloud:google-cloud-core</include>
+              <include>com.google.cloud:google-cloud-core-http</include>
+              <include>com.google.http-client:*</include>
+              <include>com.google.api*</include>
+              <include>com.google.auth:*</include>
+              <include>com.google.cloud:google-cloud-translate</include>
+              <include>org.threeten:threetenbp</include>
+              <include>io.opencensus:opencensus*</include>
+              <include>io.grpc:*</include>
+              <include>com.fasterxml.jackson.core:jackson-core</include>
               <include>com.ibm.watson:natural-language-classifier</include>
               <include>com.ibm.watson:natural-language-understanding</include>
               <include>org.apache.tomcat:tomcat-jdbc</include>

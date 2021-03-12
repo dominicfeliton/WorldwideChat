@@ -16,6 +16,7 @@ import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
+import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateSupportedLanguageObject;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
 import com.expl0itz.worldwidechat.listeners.OnPlayerJoinListener;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
@@ -42,11 +43,14 @@ public class WorldwideChat extends JavaPlugin {
 
     /* Vars */
     private static WorldwideChat instance;
+    
     private BukkitAudiences adventure;
     private ConfigurationHandler configurationManager;
-    private ArrayList < WatsonSupportedLanguageObject > supportedWatsonLanguages;
     
-    private double pluginVersion = 1.01;
+    private ArrayList < WatsonSupportedLanguageObject > supportedWatsonLanguages;
+    private ArrayList < GoogleTranslateSupportedLanguageObject > supportedGoogleTranslateLanguages;
+    
+    private double pluginVersion = 1.1;
     
     private int bStatsID = 10562;
     private int updateCheckerDelay = 86400;
@@ -114,7 +118,7 @@ public class WorldwideChat extends JavaPlugin {
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
             
             //We made it!
-            getLogger().info(ChatColor.GREEN + "Enabled WorldwideChat version " + pluginVersion + ".");
+            getLogger().info(ChatColor.GREEN + getConfigManager().getMessagesConfig().getString("Messages.wwcEnabled").replace("%i", pluginVersion + ""));
         }
     }
 
@@ -144,7 +148,6 @@ public class WorldwideChat extends JavaPlugin {
             backgroundTasks.get(eachTask).cancel();
             backgroundTasks.remove(eachTask);
         }
-
     }
 
     public void checkMCVersion() {
@@ -157,7 +160,8 @@ public class WorldwideChat extends JavaPlugin {
             }
         }
         //Not running a supported version of Bukkit, Spigot, or Paper
-        getLogger().warning(getConfigManager().getMessagesConfig().getString("Messages.wwcUnsupportedVersion").replace("%i", supportedVersions));
+        getLogger().warning(getConfigManager().getMessagesConfig().getString("Messages.wwcUnsupportedVersion"));
+        getLogger().warning(supportedVersions);
     }
     
     /* Init all commands */
@@ -283,6 +287,10 @@ public class WorldwideChat extends JavaPlugin {
         supportedWatsonLanguages = in;
     }
     
+    public void setSupportedGoogleTranslateLanguages(ArrayList < GoogleTranslateSupportedLanguageObject > in) {
+        supportedGoogleTranslateLanguages = in;
+    }
+    
     public void setUpdateCheckerDelay(int i) {
         updateCheckerDelay = i;
     }
@@ -329,6 +337,10 @@ public class WorldwideChat extends JavaPlugin {
         return supportedWatsonLanguages;
     }
     
+    public ArrayList < GoogleTranslateSupportedLanguageObject > getSupportedGoogleTranslateLanguages() {
+        return supportedGoogleTranslateLanguages;
+    }
+    
     public TextComponent getPluginPrefix() {
         return pluginPrefix;
     }
@@ -340,7 +352,7 @@ public class WorldwideChat extends JavaPlugin {
     public String getPrefixName() {
         return pluginPrefixString;
     }
-
+    
     public String getTranslatorName() {
         return translatorName;
     }

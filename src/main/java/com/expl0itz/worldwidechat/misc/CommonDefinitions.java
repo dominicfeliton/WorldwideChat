@@ -3,47 +3,83 @@ package com.expl0itz.worldwidechat.misc;
 import java.util.ArrayList;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateSupportedLanguageObject;
 import com.expl0itz.worldwidechat.watson.WatsonSupportedLanguageObject;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.ibm.cloud.sdk.core.security.IamAuthenticator;
-import com.ibm.watson.language_translator.v3.LanguageTranslator;
-import com.ibm.watson.language_translator.v3.model.Languages;
 
 public class CommonDefinitions {
 
     private WorldwideChat main = WorldwideChat.getInstance();
-    private ArrayList<WatsonSupportedLanguageObject> supportedWatsonLanguages = main.getSupportedWatsonLanguages();
+    private ArrayList < WatsonSupportedLanguageObject > supportedWatsonLanguages = main.getSupportedWatsonLanguages();
+    private ArrayList < GoogleTranslateSupportedLanguageObject > supportedGoogleTranslateLanguages = main.getSupportedGoogleTranslateLanguages();
     
     /* Important vars */
     private String[] supportedMCVersions = {
-        "1.16"
+        "1.16",
+        "1.15",
+        "1.14",
+        "1.13"
     };
     
     private String[] supportedPluginLangCodes = {
-        "en"
+        "en",
+        "es"
     };
 
     /* Getters */
-    public boolean isSupportedWatsonLangForSource(String in) {
-        for (WatsonSupportedLanguageObject eaLang : supportedWatsonLanguages) {
-            if ((eaLang.getLangCode().equalsIgnoreCase(in)
-                || eaLang.getLangName().equalsIgnoreCase(in)) 
-                && eaLang.getSupportedAsSource()) {
-                return true;
+    public boolean isSupportedLangForSource(String in, String translator) {
+        if (translator.equalsIgnoreCase("Watson")) {
+            for (WatsonSupportedLanguageObject eaLang : supportedWatsonLanguages) {
+                if ((eaLang.getLangCode().equalsIgnoreCase(in)
+                    || eaLang.getLangName().equalsIgnoreCase(in)) 
+                    && eaLang.getSupportedAsSource()) {
+                    return true;
+                }
+            }
+        } else if (translator.equalsIgnoreCase("Google Translate")) {
+            for (GoogleTranslateSupportedLanguageObject eaLang : supportedGoogleTranslateLanguages) {
+                if ((eaLang.getLangCode().equalsIgnoreCase(in)
+                    || eaLang.getLangName().equalsIgnoreCase(in))) {
+                    return true;
+                }
             }
         }
         return false;
     }
 
-    public boolean isSupportedWatsonLangForTarget(String in) {
-        for (WatsonSupportedLanguageObject eaLang : supportedWatsonLanguages) {
-            if ((eaLang.getLangCode().equalsIgnoreCase(in)
-                || eaLang.getLangName().equalsIgnoreCase(in))
-                && eaLang.getSupportedAsTarget()) { //Add native language support?
-                return true;
+    public boolean isSupportedLangForTarget(String in, String translator) {
+        if (translator.equalsIgnoreCase("Watson")) {
+            for (WatsonSupportedLanguageObject eaLang : supportedWatsonLanguages) {
+                if ((eaLang.getLangCode().equalsIgnoreCase(in)
+                    || eaLang.getLangName().equalsIgnoreCase(in)) 
+                    && eaLang.getSupportedAsTarget()) {
+                    return true;
+                }
+            }
+        } else if (translator.equalsIgnoreCase("Google Translate")) {
+            for (GoogleTranslateSupportedLanguageObject eaLang : supportedGoogleTranslateLanguages) {
+                if ((eaLang.getLangCode().equalsIgnoreCase(in)
+                    || eaLang.getLangName().equalsIgnoreCase(in))) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    
+    public boolean isSameLang(String first, String second, String translator) {
+        if (translator.equalsIgnoreCase("Watson") ) {
+            for (WatsonSupportedLanguageObject eaLang : supportedWatsonLanguages) {
+                if ((eaLang.getLangName().equals(getSupportedWatsonLang(first).getLangName()) 
+                        && eaLang.getLangName().equals(getSupportedWatsonLang(second).getLangName()))) {
+                        return true;
+                    }
+            }
+        } else if (translator.equalsIgnoreCase("Google Translate")) {
+            for (GoogleTranslateSupportedLanguageObject eaLang : supportedGoogleTranslateLanguages) {
+                if ((eaLang.getLangName().equals(getSupportedGoogleTranslateLang(first).getLangName()) 
+                    && eaLang.getLangName().equals(getSupportedGoogleTranslateLang(second).getLangName()))) {
+                    return true;
+                }
             }
         }
         return false;
@@ -52,8 +88,17 @@ public class CommonDefinitions {
     public WatsonSupportedLanguageObject getSupportedWatsonLang(String in) {
         for (WatsonSupportedLanguageObject eaLang : supportedWatsonLanguages) {
             if ((eaLang.getLangCode().equalsIgnoreCase(in)
-                || eaLang.getLangName().equalsIgnoreCase(in))
-                && eaLang.getSupportedAsTarget()) { //Add native language support?
+                || eaLang.getLangName().equalsIgnoreCase(in))) {
+                return eaLang;
+            }
+        }
+        return null;
+    }
+    
+    public GoogleTranslateSupportedLanguageObject getSupportedGoogleTranslateLang(String in) {
+        for (GoogleTranslateSupportedLanguageObject eaLang : supportedGoogleTranslateLanguages) {
+            if ((eaLang.getLangCode().equalsIgnoreCase(in)
+                || eaLang.getLangName().equalsIgnoreCase(in))) {
                 return eaLang;
             }
         }

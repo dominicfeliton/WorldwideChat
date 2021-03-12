@@ -1,5 +1,6 @@
 Messages:
   #------------------- Main Messages -------------------
+  wwcEnabled: 'Enabled WorlwideChat version %i.'
   wwcNoConsole: ' This command can only be ran by a player.'
   wwcVersion: ' WorldwideChat, version '
   wwcLangDetected: 'Detected language %o.'
@@ -7,7 +8,7 @@ Messages:
   wwcListenersInitialized: 'Initialized listeners.'
   wwcBadPerms: ' You do not have the required permissions to execute this command!'
   wwcPlayerNotFound: ' Player %i not found.'
-  wwcUnsupportedVersion: 'You are running an unsupported version of Bukkit, Spigot, or Paper. Supported versions: %i'
+  wwcUnsupportedVersion: 'You are running an unsupported version of Bukkit, Spigot, or Paper. Supported versions:'
   wwcInitializationFail: 'Failed to initialize WorldwideChat.'
   wwcUserDataReloaded: 'Loaded all saved user data.'
   wwcUserDataCorrupted: 'Found and deleted %i corrupted user data files.'

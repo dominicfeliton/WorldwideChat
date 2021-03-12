@@ -1,14 +1,15 @@
 Messages:
   # ------------------- Mensajes principales -------------------
+  wwcEnabled: 'Habilitada la versión %i de WorldwideChat.'
   wwcNoConsole: ' Este comando solo puede ser ejecutado por un jugador.'
   wwcVersion: ' WorldwideChat, versión'
   wwcLangDetected: ' Idioma detectado %o.'
-  wwcInvalidLang: ' Idioma no válido en su config.yml. Defaulting to en...'
-  wwcListenersInitialized: ' Oyentes inicializados'.
+  wwcInvalidLang: ' Idioma no válido en su config.yml. Por defecto en...'
+  wwcListenersInitialized: ' Oyentes inicializados.'
   wwcBadPerms: ' ¡No tiene los permisos necesarios para ejecutar este comando!'
-  wwcPlayerNotFound: ' Jugador %i no encontrado'.
+  wwcPlayerNotFound: ' Jugador %i no encontrado.'
   wwcUnsupportedVersion: 'Está ejecutando una versión no compatible de Bukkit, Spigot o Paper. Versiones compatibles: %i'
-  wwcInitializationFail: 'No se pudo inicializar WorldwideChat'.
+  wwcInitializationFail: 'No se pudo inicializar WorldwideChat.'
   wwcUserDataReloaded: 'Cargó todos los datos de usuario guardados.'
   wwcUserDataCorrupted: 'Se encontraron y eliminé %i archivos de datos de usuario corruptos.'
   # ------------------- Mensajes de escucha -------------------
@@ -45,7 +46,7 @@ Messages:
   wwctInvalidLangCode: ' ¡Se proporcionaron códigos de idioma no válidos! Códigos de idioma válidos: %o'
   wwctAutoTranslateStartOtherPlayer: ' Ahora traduciendo el chat de %i a %o.'
   wwctLangToLangStartOtherPlayer: ' Ahora traduciendo el chat de% o de %i a %e.'
-  wwctPlayerNotFound: ' Jugador% no encontrado'.
+  wwctPlayerNotFound: ' Jugador% no encontrado.'
   wwctSameLangError: '¡No se puede traducir al mismo idioma!'
   # ------------------- / wwcg Mensajes -------------------
   wwcgTranslationStopped: ' Se detuvo la traducción de chat global.'
