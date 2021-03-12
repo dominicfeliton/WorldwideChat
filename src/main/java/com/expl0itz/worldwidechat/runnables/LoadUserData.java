@@ -18,6 +18,7 @@ public class LoadUserData implements Runnable{
     {
         /* Load all saved user data */
         File userDataFolder = new File(main.getDataFolder() + File.separator + "data" + File.separator);
+		userDataFolder.mkdir();
         File[] listOfFiles = userDataFolder.listFiles();
         
         /* Add each to Translator Array in main class */
