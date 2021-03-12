@@ -36,8 +36,10 @@ public class OnPlayerJoinListener implements Listener {
             main.setOutOfDate(true);
         }
         
+        /* If send translation chat is true */
+        /* Global translate is disabled, and user has a translation config. */
         if ((main.getConfigManager().getMainConfig().getString("Chat.sendTranslationChat").equals("true")) 
-                && (!(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator)) 
+                && (main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED") == null)
                 && main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()) != null) { //if they have a config
             FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()));
             if (!currFileConfig.getString("inLang").equalsIgnoreCase("None")) {
@@ -53,8 +55,10 @@ public class OnPlayerJoinListener implements Listener {
                     .build();
                 main.adventure().sender(event.getPlayer()).sendMessage(noSource);
             }
+        /* Global translate is enabled, and user does not have a translation config. */
         } else if ((main.getConfigManager().getMainConfig().getString("Chat.sendTranslationChat").equals("true")) 
-                && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) { //If global translate is enabled...
+                && main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED") != null
+                && main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()) == null) { //If global translate is enabled...
             FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED"));
             if (!currFileConfig.getString("inLang").equalsIgnoreCase("None")) {
                 final TextComponent langToLang = Component.text()
@@ -69,8 +73,24 @@ public class OnPlayerJoinListener implements Listener {
                     .build();
                 main.adventure().sender(event.getPlayer()).sendMessage(noSource);
             }
+        /* Global translate is enabled, but user has a translation config. */
+        } else if ((main.getConfigManager().getMainConfig().getString("Chat.sendTranslationChat").equals("true")) 
+                && main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED") != null
+                && main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()) != null) { //If global translate is enabled...
+            FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()));
+            if (!currFileConfig.getString("inLang").equalsIgnoreCase("None")) {
+                final TextComponent langToLang = Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcOverrideGlobalOnJoinTranslationNotificationSourceLang").replace("%i", currFileConfig.getString("inLang")).replace("%o", currFileConfig.getString("outLang"))).color(NamedTextColor.LIGHT_PURPLE))
+                    .build();
+                main.adventure().sender(event.getPlayer()).sendMessage(langToLang);
+            } else {
+                final TextComponent noSource = Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang").replace("%o", currFileConfig.getString("outLang"))).color(NamedTextColor.LIGHT_PURPLE))
+                    .build();
+                main.adventure().sender(event.getPlayer()).sendMessage(noSource);
+            }
         }
-        
-    }
-    
+    }  
 }

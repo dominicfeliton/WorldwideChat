@@ -17,6 +17,8 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: ' Your chat is being translated to %o.'
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Global chat is being translated from %i to %o.'
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Global chat is being translated to %o.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Global chat is being translated, but your chat is being translated from %i to %o.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Global chat is being translated, but your chat is being translated to %o.'
   #------------------- Updater Messages -------------------
   wwcUpdaterConnectionFailed: 'Unable to check for latest updates on Github.'
   wwcUpdaterParserFailed: 'Failed to parse update data from Github.'
@@ -38,7 +40,7 @@ Messages:
   wwcrSuccess: ' Successfully reloaded WorldwideChat.'
   wwcrFail: ' Failed to reload WorldwideChat.'
   #------------------- /wwct Messages -------------------
-  wwctTranslationStopped: ' Chat translation has been stopped.'
+  wwctTranslationStopped: ' Your chat translation has been stopped.'
   wwctTranslationStoppedOtherPlayer: ' Chat translation for %i has been stopped.'
   wwctInvalidArgs: ' Invalid arguments provided!'
   wwctAutoTranslateStart: ' Now translating all of your chat to %o.'

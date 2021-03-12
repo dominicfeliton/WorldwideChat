@@ -26,9 +26,12 @@ public class ChatListener implements Listener {
     public void onPlayerChat(AsyncPlayerChatEvent event) {
         if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) instanceof ActiveTranslator || main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) {
             ActiveTranslator currPlayer;
-            if (!(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator)) {
+            if (!(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) && (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null)) {
                 //This UDID is never valid, but we can use it as a less elegant way to check if global translate (/wwcg) is enabled.
                 currPlayer = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
+            } else if ((main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) && (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null)){
+                //global translation won't override per person
+                currPlayer = main.getActiveTranslator(event.getPlayer().getUniqueId().toString()); 
             } else {
                 currPlayer = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
             }
