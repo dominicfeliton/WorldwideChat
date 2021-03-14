@@ -107,10 +107,19 @@ public class CommonDefinitions {
     
     public String getValidLangCodes() {
         String out = "\n";
-        for (WatsonSupportedLanguageObject eaLang : supportedWatsonLanguages) {
-            out += "(" + eaLang.getLangCode() + " - " + ((main.getPluginLang().equalsIgnoreCase("en") ? eaLang.getLangName() : eaLang.getNativeLangName()) + "), "); 
+        if (main.getTranslatorName().equals("Watson")) {
+            for (WatsonSupportedLanguageObject eaLang : supportedWatsonLanguages) {
+                out += "(" + eaLang.getLangCode() + " - " + eaLang.getLangName() + "), "; 
+            }
         }
-        out = out.substring(0, out.lastIndexOf(","));
+        else if (main.getTranslatorName().equals("Google Translate")) {
+            for (GoogleTranslateSupportedLanguageObject eaLang : supportedGoogleTranslateLanguages) {
+                out += "(" + eaLang.getLangCode() + " - " + eaLang.getLangName() + "), ";  
+            }
+        }
+        if (out.indexOf(",") != -1) {
+            out = out.substring(0, out.lastIndexOf(","));
+        }
         return out;
     }
     
