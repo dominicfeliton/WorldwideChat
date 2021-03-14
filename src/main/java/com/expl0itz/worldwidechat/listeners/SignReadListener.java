@@ -40,10 +40,11 @@ public class SignReadListener implements Listener {
     
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent event) {
-       try {
-            if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null) {
-                for (Material eaMaterial : signList) {
-                    if (event.getClickedBlock().getType() == eaMaterial && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
+        if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null && event.getClickedBlock() != null) {
+            for (Material eaMaterial : signList) {
+                if (event.getClickedBlock().getType() == eaMaterial && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
+                    try {
+                        main.getLogger().info(eaMaterial.name());
                         Sign currentSign = (Sign) event.getClickedBlock().getState();
                         TaskChain<?> chain = WorldwideChat.newSharedChain("signTranslate");
                         chain
@@ -58,15 +59,15 @@ public class SignReadListener implements Listener {
                             })
                             .sync(TaskChain::abort)
                             .execute();
+                    } catch (Exception e) {
+                        final TextComponent translationFailMsg = Component.text()
+                                .append(main.getPluginPrefix().asComponent())
+                                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcSignTranslationFail").replace("%i", main.getTranslatorName())).color(NamedTextColor.RED).decoration(TextDecoration.ITALIC, true))
+                                .build();
+                            main.adventure().sender(event.getPlayer()).sendMessage(translationFailMsg);
                     }
                 }
             }
-        } catch (Exception e) {
-            final TextComponent translationFailMsg = Component.text()
-                .append(main.getPluginPrefix().asComponent())
-                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcSignTranslationFail").replace("%i", main.getTranslatorName())).color(NamedTextColor.RED).decoration(TextDecoration.ITALIC, true))
-                .build();
-            main.adventure().sender(event.getPlayer()).sendMessage(translationFailMsg);
         }
     }
 }
