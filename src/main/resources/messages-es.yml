@@ -19,6 +19,10 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' El chat global se está traduciendo a %o.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' El chat global se está traduciendo, pero su chat se está traduciendo de %i a %o.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' El chat global se está traduciendo, pero su chat se está traduciendo a %o.'
+  wwcSignTranslateStart: ' Traduciendo el signo de destino...'
+  wwcSignDone: ' Firmar traducido correctamente.'
+  wwcSignDeletedOrTooLong: ' El signo de destino se eliminó o la traducción era demasiado larga. Traducción:'
+  wwcSignTranslationFail: ' No se puede obtener una traducción válida de su signo de destino de %i.'
   # ------------------- Mensajes de actualización -------------------
   wwcUpdaterConnectionFailed: 'No se puede buscar las últimas actualizaciones en Github.'
   wwcUpdaterParserFailed: 'No se pudieron analizar los datos de actualización de Github.'

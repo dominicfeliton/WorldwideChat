@@ -19,6 +19,10 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Global chat is being translated to %o.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Global chat is being translated, but your chat is being translated from %i to %o.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Global chat is being translated, but your chat is being translated to %o.'
+  wwcSignTranslateStart: ' Translating target sign...'
+  wwcSignDone: ' Sign translated successfully.'
+  wwcSignDeletedOrTooLong: ' Target sign was either deleted or the translation was too long. Translation:'
+  wwcSignTranslationFail: ' Unable to get a valid translation of your target sign from %i.'
   #------------------- Updater Messages -------------------
   wwcUpdaterConnectionFailed: 'Unable to check for latest updates on Github.'
   wwcUpdaterParserFailed: 'Failed to parse update data from Github.'

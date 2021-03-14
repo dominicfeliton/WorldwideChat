@@ -19,6 +19,7 @@ import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
 import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateSupportedLanguageObject;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
 import com.expl0itz.worldwidechat.listeners.OnPlayerJoinListener;
+import com.expl0itz.worldwidechat.listeners.SignReadListener;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CachedTranslation;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
@@ -26,6 +27,9 @@ import com.expl0itz.worldwidechat.runnables.LoadUserData;
 import com.expl0itz.worldwidechat.runnables.UpdateChecker;
 import com.expl0itz.worldwidechat.watson.WatsonSupportedLanguageObject;
 
+import co.aikar.taskchain.BukkitTaskChainFactory;
+import co.aikar.taskchain.TaskChain;
+import co.aikar.taskchain.TaskChainFactory;
 import io.reactivex.annotations.NonNull;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
@@ -38,6 +42,7 @@ import net.kyori.adventure.text.format.TextDecoration;
 public class WorldwideChat extends JavaPlugin {
     /* Vars */
     private static WorldwideChat instance;
+    private static TaskChainFactory taskChainFactory;
     
     private BukkitAudiences adventure;
     private ConfigurationHandler configurationManager;
@@ -77,11 +82,20 @@ public class WorldwideChat extends JavaPlugin {
     public static WorldwideChat getInstance() {
         return instance;
     }
-
+    
+    public static <T> TaskChain<T> newChain() {
+        return taskChainFactory.newChain();
+    }
+    
+    public static <T> TaskChain<T> newSharedChain(String name) {
+        return taskChainFactory.newSharedChain(name);
+    }
+    
     @Override
     public void onEnable() {
         // Initialize critical instances
         this.adventure = BukkitAudiences.create(this);
+        taskChainFactory = BukkitTaskChainFactory.create(this);
         instance = this;
         
         boolean settingsSetSuccessfully;
@@ -106,6 +120,7 @@ public class WorldwideChat extends JavaPlugin {
             //EventHandlers
             getServer().getPluginManager().registerEvents(new ChatListener(), this);
             getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
+            getServer().getPluginManager().registerEvents(new SignReadListener(), this);
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
 
             //Check for Updates
@@ -132,6 +147,7 @@ public class WorldwideChat extends JavaPlugin {
             this.adventure = null;
         }
         instance = null;
+        taskChainFactory = null;
         
         //All done.
         getLogger().info("Disabled WorldwideChat version " + pluginVersion + ".");
@@ -140,7 +156,7 @@ public class WorldwideChat extends JavaPlugin {
     /* Init all commands */
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("wwc")) {
-            //Me fucking with adventure for the first time, cool
+            //WWC version report
             final TextComponent versionNotice = Component.text()
                 .append(pluginPrefix.asComponent())
                 .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcVersion")).color(NamedTextColor.RED))
@@ -153,13 +169,13 @@ public class WorldwideChat extends JavaPlugin {
             WWCReload wwcr = new WWCReload(sender, command, label, args);
             return wwcr.processCommand();
         } else if (command.getName().equalsIgnoreCase("wwcg")) {
-            //TODO: Global Translation
+            //Global translation
             if (checkSenderIdentity(sender)) {
                 WWCGlobal wwcg = new WWCGlobal(sender, command, label, args);
                 return wwcg.processCommand();
             }
         } else if (command.getName().equalsIgnoreCase("wwct")) {
-            //Translate to a specific language for one player
+            //Per player translation
             if (checkSenderIdentity(sender)) {
                 WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
                 return wwct.processCommand(false);

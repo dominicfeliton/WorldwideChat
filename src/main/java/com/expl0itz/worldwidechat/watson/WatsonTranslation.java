@@ -37,7 +37,7 @@ public class WatsonTranslation {
     private String serviceUrl = "";
     private CommandSender sender;
 
-    //for normal translation operation
+    //For normal translation operation
     public WatsonTranslation(String textToTranslate, String inputLang, String outputLang, String apikey, String serviceUrl, CommandSender sender) {
         this.textToTranslate = textToTranslate;
         this.inputLang = inputLang;
@@ -47,7 +47,8 @@ public class WatsonTranslation {
         this.sender = sender;
     }
 
-    public WatsonTranslation(String apikey, String serviceUrl) { //for initializeConnection
+    //For initializeConnection
+    public WatsonTranslation(String apikey, String serviceUrl) {
         this.apikey = apikey;
         this.serviceUrl = serviceUrl;
     }

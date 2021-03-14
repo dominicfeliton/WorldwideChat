@@ -4,7 +4,7 @@
   <groupId>com.expl0itz.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
   <name>WorldwideChat</name>
-  <version>1.01-SNAPSHOT</version>
+  <version>1.1-SNAPSHOT</version>
   <description>Translate incoming chat to any language!</description>
   <build>
     <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
@@ -84,11 +84,16 @@
               <include>net.kyori:examination-string</include>
               <include>org.jetbrains.kotlin:kotlin-stdlib</include>
               <include>com.squareup.okio:okio</include>
+              <include>co.aikar:taskchain*</include>
             </includes>
           </artifactSet>
           <relocations>
             <relocation>
               <pattern>org.bstats</pattern>
+              <shadedPattern>com.expl0itz.worldwidechat.misc</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>co.aikar.taskchain</pattern>
               <shadedPattern>com.expl0itz.worldwidechat.misc</shadedPattern>
             </relocation>
           </relocations>
@@ -108,6 +113,14 @@
     <repository>
       <id>CodeMC</id>
       <url>https://repo.codemc.org/repository/maven-public</url>
+    </repository>
+    <repository>
+      <id>aikar</id>
+      <url>https://repo.aikar.co/content/groups/aikar/</url>
+    </repository>
+    <repository>
+      <id>spigot</id>
+      <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
     </repository>
   </repositories>
   <dependencies>
