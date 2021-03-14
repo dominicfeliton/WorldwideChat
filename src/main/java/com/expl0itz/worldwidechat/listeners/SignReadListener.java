@@ -44,7 +44,6 @@ public class SignReadListener implements Listener {
             for (Material eaMaterial : signList) {
                 if (event.getClickedBlock().getType() == eaMaterial && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
                     try {
-                        main.getLogger().info(eaMaterial.name());
                         Sign currentSign = (Sign) event.getClickedBlock().getState();
                         TaskChain<?> chain = WorldwideChat.newSharedChain("signTranslate");
                         chain
