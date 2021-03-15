@@ -6,7 +6,7 @@ import org.bukkit.block.Sign;
 import org.bukkit.event.player.PlayerInteractEvent;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateTranslation;
+import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.watson.WatsonTranslation;
 import com.google.cloud.translate.TranslateException;
@@ -67,7 +67,7 @@ public class SignTranslation implements Task{
                 }
             } else if (main.getTranslatorName().equals("Google Translate") && eaLine.length() > 0) {
                 try {
-                    GoogleTranslateTranslation googleTranslateInstance = new GoogleTranslateTranslation(eaLine,
+                    GoogleTranslation googleTranslateInstance = new GoogleTranslation(eaLine,
                         currPlayer.getInLangCode(),
                         currPlayer.getOutLangCode(),
                         event.getPlayer());

@@ -22,8 +22,9 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
+import net.md_5.bungee.api.ChatColor;
 
-public class GoogleTranslateTranslation {
+public class GoogleTranslation {
 
     private String apiKey = "";
     private String textToTranslate = "";
@@ -32,14 +33,14 @@ public class GoogleTranslateTranslation {
     private CommandSender sender;
     private WorldwideChat main = WorldwideChat.getInstance();
     
-    public GoogleTranslateTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
+    public GoogleTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
         this.textToTranslate = textToTranslate;
         this.inputLang = inputLang;
         this.outputLang = outputLang;
         this.sender = sender;
     }
     
-    public GoogleTranslateTranslation(String apikey) {
+    public GoogleTranslation(String apikey) {
         this.apiKey = apikey;
         System.setProperty("GOOGLE_API_KEY", apiKey); //we do this because .setApi() spams console :(
     }
@@ -145,7 +146,7 @@ public class GoogleTranslateTranslation {
         }
         
         /* Return final result */
-        return finalOut;
+        return ChatColor.translateAlternateColorCodes('&', finalOut);
     }
     
 }

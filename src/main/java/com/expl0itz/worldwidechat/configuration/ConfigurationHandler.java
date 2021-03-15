@@ -9,7 +9,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateTranslation;
+import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.watson.WatsonTranslation;
 
@@ -102,7 +102,7 @@ public class ConfigurationHandler {
             test.initializeConnection();
             main.setTranslatorName("Watson");
         } else if (getMainConfig().getBoolean("Translator.useGoogleTranslate") && !(getMainConfig().getBoolean("Translator.useWatsonTranslate"))) {
-            GoogleTranslateTranslation test = new GoogleTranslateTranslation(
+            GoogleTranslation test = new GoogleTranslation(
                 getMainConfig().getString("Translator.googleTranslateAPIKey"));
             test.initializeConnection();
             main.setTranslatorName("Google Translate");

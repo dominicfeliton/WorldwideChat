@@ -23,10 +23,9 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
+import net.md_5.bungee.api.ChatColor;
 
 public class WatsonTranslation {
-
-    //TODO: Color codes get completely removed...this is a must, but maybe we can add them back (unlikely)
 
     private WorldwideChat main = WorldwideChat.getInstance();
     
@@ -155,7 +154,7 @@ public class WatsonTranslation {
         }
         
         /* Return final result */
-        return finalOut;
+        return ChatColor.translateAlternateColorCodes('&', finalOut);
     }
 
 }
