@@ -2,6 +2,7 @@ package com.expl0itz.worldwidechat.watson;
 
 import java.util.ArrayList;
 
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 
@@ -122,7 +123,7 @@ public class WatsonTranslation {
                         ) {
                     currentTerm.setNumberOfTimes(currentTerm.getNumberOfTimes()+1);
                     //DEBUG: main.getLogger().info("Term was already cached: How many times = " + currentTerm.getNumberOfTimes() + " List size: " + main.getCache().size());
-                    return currentTerm.getOutputPhrase(); //done :)
+                    return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase())); //done :)
                 }
             }
         }
@@ -154,7 +155,7 @@ public class WatsonTranslation {
         }
         
         /* Return final result */
-        return ChatColor.translateAlternateColorCodes('&', finalOut);
+        return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', finalOut));
     }
 
 }

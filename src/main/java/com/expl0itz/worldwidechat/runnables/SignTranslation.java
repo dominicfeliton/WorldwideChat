@@ -8,6 +8,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
+import com.expl0itz.worldwidechat.misc.PlayerRecord;
 import com.expl0itz.worldwidechat.watson.WatsonTranslation;
 import com.google.cloud.translate.TranslateException;
 import com.ibm.cloud.sdk.core.service.exception.NotFoundException;
@@ -31,9 +32,10 @@ public class SignTranslation implements Task{
     public Object run(Object input) {
         /* Get valid sign */
         Sign currentSign = (Sign) input;
-        ActiveTranslator currPlayer = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
         
         /* Init vars */
+        ActiveTranslator currPlayer = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
+        PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString());
         String[] signText = currentSign.getLines();
         String[] changedSignText = new String[signText.length];
         boolean textLimit = false;
@@ -90,6 +92,9 @@ public class SignTranslation implements Task{
             sameResult = Arrays.equals(signText, changedSignText);
             if (!textLimit && !sameResult && currentSign.getLocation() != null) {
                 /* Set completed message */
+                currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);
+                currPlayerRecord.setLastTranslationTime();
+                currPlayerRecord.writeToConfig();
                 getCurrentChain().setTaskData("translatedSign", changedSignText);
                 final TextComponent signDone = Component.text()
                     .append(main.getPluginPrefix().asComponent())
@@ -107,7 +112,7 @@ public class SignTranslation implements Task{
                     getCurrentChain().setTaskData("translatedSign", null);
             }
             else if (textLimit) {
-                /* Format Sign for Chat, if translation exceeds 15 chars or sign was already deleted */
+                /* Format sign for chat, if translation exceeds 15 chars or sign was already deleted */
                 String out = "\n";
                 for (String eaLine : changedSignText) {
                     if (eaLine.length() > 1)

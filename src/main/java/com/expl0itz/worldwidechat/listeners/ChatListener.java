@@ -1,5 +1,9 @@
 package com.expl0itz.worldwidechat.listeners;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -10,6 +14,7 @@ import com.ibm.cloud.sdk.core.service.exception.NotFoundException;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
+import com.expl0itz.worldwidechat.misc.PlayerRecord;
 import com.expl0itz.worldwidechat.watson.WatsonTranslation;
 import com.google.cloud.translate.TranslateException;
 
@@ -25,6 +30,7 @@ public class ChatListener implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerChat(AsyncPlayerChatEvent event) {
         if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) instanceof ActiveTranslator || main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) {
+            /* Initialize current ActiveTranslator, sanity checks */
             ActiveTranslator currPlayer;
             if (!(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) && (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null)) {
                 //This UDID is never valid, but we can use it as a less elegant way to check if global translate (/wwcg) is enabled.
@@ -35,6 +41,13 @@ public class ChatListener implements Listener {
             } else {
                 currPlayer = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
             }
+            
+            /* Modify or create new player record*/
+            PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString());
+            currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);
+            currPlayerRecord.writeToConfig();
+            
+            /* Begin actual translation, set message to output */
             if (main.getTranslatorName().equals("Watson")) {
                 try {
                 WatsonTranslation watsonInstance = new WatsonTranslation(event.getMessage(),
@@ -59,6 +72,7 @@ public class ChatListener implements Listener {
                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.watsonNotFoundExceptionNotification")).color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
                         .build();
                     main.adventure().sender(event.getPlayer()).sendMessage(lowConfidence);
+                    return;
                 }
             } else if (main.getTranslatorName().equals("Google Translate")) {
                 try {
@@ -78,8 +92,14 @@ public class ChatListener implements Listener {
                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.watsonNotFoundExceptionNotification")).color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
                         .build();
                     main.adventure().sender(event.getPlayer()).sendMessage(lowConfidence);
+                    return;
                 }
             }
+            
+            /* Set rest of record */
+            currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);    
+            currPlayerRecord.setLastTranslationTime();
+            currPlayerRecord.writeToConfig();
         }
     }
 

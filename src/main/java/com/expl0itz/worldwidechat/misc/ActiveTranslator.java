@@ -1,17 +1,40 @@
 package com.expl0itz.worldwidechat.misc;
 
+import org.bukkit.Bukkit;
+
+import com.expl0itz.worldwidechat.WorldwideChat;
+
 public class ActiveTranslator {
 
+    private WorldwideChat main = WorldwideChat.getInstance();
+    
     private String playerUUID = "";
     private String inLangCode = "";
     private String outLangCode = "";
+    
     private boolean hasBeenShownColorCodeWarning = false;
+    private boolean translatingBook = false;
+    private boolean translatingSign = false;
 
-    public ActiveTranslator(String uuid, String langIn, String langOut, boolean h) {
+    public ActiveTranslator(String uuid, String langIn, String langOut, boolean hasBeenShownColorCodeWarning) {
         playerUUID = uuid;
         inLangCode = langIn;
         outLangCode = langOut;
-        hasBeenShownColorCodeWarning = h;
+        this.hasBeenShownColorCodeWarning = hasBeenShownColorCodeWarning;
+        
+        /* Add player to records if they do not exist */
+        boolean hasExistingRecord = false;
+        for (PlayerRecord eaRecord : main.getPlayerRecords()) {
+            if (eaRecord.getUUID().equals(playerUUID)) {
+                hasExistingRecord = true;
+                break;
+            }
+        }
+        if (!hasExistingRecord) {
+            PlayerRecord newRecord = new PlayerRecord("--------", playerUUID, 0, 0);
+            main.addPlayerRecord(newRecord);
+            main.getConfigManager().createStatsConfig("--------", playerUUID, 0, 0);
+        }
     }
 
     /* Setters */
@@ -31,6 +54,14 @@ public class ActiveTranslator {
         hasBeenShownColorCodeWarning = i;
     }
 
+    public void setTranslatingBook(boolean i) {
+        translatingBook = i;
+    }
+    
+    public void setTranslatingSign(boolean i) {
+        translatingSign = i;
+    }
+    
     /* Getters */
     public String getUUID() {
         return playerUUID;
@@ -46,5 +77,13 @@ public class ActiveTranslator {
 
     public boolean getCCWarning() {
         return hasBeenShownColorCodeWarning;
+    }
+    
+    public boolean getTranslatingBook() {
+        return translatingBook;
+    }
+    
+    public boolean getTranslatingSign() {
+        return translatingSign;
     }
 }

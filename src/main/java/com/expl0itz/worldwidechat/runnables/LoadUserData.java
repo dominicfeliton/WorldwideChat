@@ -1,6 +1,7 @@
 package com.expl0itz.worldwidechat.runnables;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -8,6 +9,8 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
+import com.expl0itz.worldwidechat.misc.PlayerRecord;
+import com.google.common.io.Files;
 
 public class LoadUserData implements Runnable{
 
@@ -18,22 +21,66 @@ public class LoadUserData implements Runnable{
     {
         /* Load all saved user data */
         File userDataFolder = new File(main.getDataFolder() + File.separator + "data" + File.separator);
+        File statsFolder = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
+        File badDataFolder = new File(main.getDataFolder() + File.separator + "corrupted" + File.separator);
+        badDataFolder.mkdir();
 		userDataFolder.mkdir();
-        File[] listOfFiles = userDataFolder.listFiles();
+		statsFolder.mkdir();
+        
         /* Add each to Translator Array in main class */
         CommonDefinitions defs = new CommonDefinitions();
         int invalidConfigs = 0;
-        for (File eaFile : listOfFiles) {
-            /* Make sure file is valid */
+        
+        /* Delete old corrupted files */
+        for (File eaCorrupt: badDataFolder.listFiles()) {
+            eaCorrupt.delete();
+        }
+        
+        /* Load user records */
+        for (File eaFile : statsFolder.listFiles()) {
+            FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
+            if (currFileConfig.contains("attemptedTranslations")
+                    && currFileConfig.contains("successfulTranslations")
+                    && currFileConfig.contains("lastTranslationTime")
+                    && currFileConfig.contains("playerUUID")) {
+                PlayerRecord currRecord = new PlayerRecord(currFileConfig.getString("lastTranslationTime"), 
+                        currFileConfig.getString("playerUUID"),
+                        currFileConfig.getInt("attemptedTranslations"),
+                        currFileConfig.getInt("successfulTranslations"));
+                main.addPlayerRecord(currRecord);
+                main.getConfigManager().createStatsConfig(currFileConfig.getString("lastTranslationTime"), currFileConfig.getString("playerUUID"), currFileConfig.getInt("attemptedTranslations"), currFileConfig.getInt("successfulTranslations"));
+            } else { //move corrupted files to corrupted dir; they will be deleted on next run
+                try {
+                    File badDataFile = new File(badDataFolder.toString() + File.separator + eaFile.getName().toString());
+                    Files.move(eaFile, badDataFile);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                invalidConfigs++;
+            }
+        }
+        
+        /* Load user files */
+        for (File eaFile : userDataFolder.listFiles()) {
             FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
             if ((currFileConfig.getString("inLang").equalsIgnoreCase("None") || defs.isSupportedLangForSource(currFileConfig.getString("inLang"), main.getTranslatorName())
-                    && (defs.isSupportedLangForTarget(currFileConfig.getString("outLang"), main.getTranslatorName())))) { //If file has proper entries
+                    && (defs.isSupportedLangForTarget(currFileConfig.getString("outLang"), main.getTranslatorName())))
+                    && currFileConfig.contains("signTranslation")
+                    && currFileConfig.contains("bookTranslation")) { //If file has proper entries
                 main.addActiveTranslator(new ActiveTranslator(eaFile.getName().substring(0, eaFile.getName().indexOf(".")), //add active translator to arraylist
                         currFileConfig.getString("inLang"),
                         currFileConfig.getString("outLang"),
-                        false));    
-            } else { //Invalid file; delete it
-                eaFile.delete();
+                        false)); 
+                ActiveTranslator currentTranslator = main.getActiveTranslator(eaFile.getName().substring(0, eaFile.getName().indexOf(".")));
+                currentTranslator.setTranslatingSign(currFileConfig.getBoolean("signTranslation"));
+                currentTranslator.setTranslatingBook(currFileConfig.getBoolean("bookTranslation"));
+            } else { //move corrupted files to corrupted dir; they will be deleted on next run
+                try {
+                    File badDataFile = new File(badDataFolder.toString() + File.separator + eaFile.getName().toString());
+                    Files.move(eaFile, badDataFile);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 invalidConfigs++;
             }
         }

@@ -14,15 +14,20 @@ import org.bukkit.scheduler.BukkitTask;
 
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCReload;
+import com.expl0itz.worldwidechat.commands.WWCStats;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
+import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
+import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
 import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateSupportedLanguageObject;
+import com.expl0itz.worldwidechat.listeners.BookReadListener;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
 import com.expl0itz.worldwidechat.listeners.OnPlayerJoinListener;
 import com.expl0itz.worldwidechat.listeners.SignReadListener;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CachedTranslation;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
+import com.expl0itz.worldwidechat.misc.PlayerRecord;
 import com.expl0itz.worldwidechat.runnables.LoadUserData;
 import com.expl0itz.worldwidechat.runnables.UpdateChecker;
 import com.expl0itz.worldwidechat.watson.WatsonSupportedLanguageObject;
@@ -52,6 +57,7 @@ public class WorldwideChat extends JavaPlugin {
     private ArrayList < WatsonSupportedLanguageObject > supportedWatsonLanguages;
     private ArrayList < GoogleTranslateSupportedLanguageObject > supportedGoogleTranslateLanguages;
     private ArrayList < ActiveTranslator > activeTranslators = new ArrayList < ActiveTranslator > ();
+    private ArrayList < PlayerRecord > playerRecords = new ArrayList < PlayerRecord > ();
     private ArrayList < CachedTranslation > cache = new ArrayList < CachedTranslation > ();
     
     private double pluginVersion = 1.1;
@@ -121,6 +127,7 @@ public class WorldwideChat extends JavaPlugin {
             getServer().getPluginManager().registerEvents(new ChatListener(), this);
             getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
             getServer().getPluginManager().registerEvents(new SignReadListener(), this);
+            getServer().getPluginManager().registerEvents(new BookReadListener(), this);
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
 
             //Check for Updates
@@ -180,6 +187,19 @@ public class WorldwideChat extends JavaPlugin {
                 WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
                 return wwct.processCommand(false);
             }
+        } else if (command.getName().equalsIgnoreCase("wwctb")) {
+            if (checkSenderIdentity(sender)) {
+                WWCTranslateBook wwctb = new WWCTranslateBook(sender, command, label, args);
+                return wwctb.processCommand();
+            }
+        } else if (command.getName().equalsIgnoreCase("wwcts")) {
+            if (checkSenderIdentity(sender)) {
+                WWCTranslateSign wwcts = new WWCTranslateSign(sender, command, label, args);
+                return wwcts.processCommand();
+            }
+        } else if (command.getName().equalsIgnoreCase("wwcs")) {
+            WWCStats wwcs = new WWCStats(sender, command, label, args);
+            return wwcs.processCommand();
         }
         return true;
     }
@@ -255,6 +275,19 @@ public class WorldwideChat extends JavaPlugin {
         for (Iterator < ActiveTranslator > aList = activeTranslators.iterator(); aList.hasNext();) {
             ActiveTranslator activeTranslators = aList.next();
             if (activeTranslators == i) {
+                aList.remove();
+            }
+        }
+    }
+    
+    public void addPlayerRecord(PlayerRecord i) {
+        playerRecords.add(i);
+    }
+    
+    public void removePlayerRecord(PlayerRecord i) {
+        for (Iterator < PlayerRecord > aList = playerRecords.iterator(); aList.hasNext();) {
+            PlayerRecord playerRecords = aList.next();
+            if (playerRecords == i) {
                 aList.remove();
             }
         }
@@ -348,6 +381,23 @@ public class WorldwideChat extends JavaPlugin {
         return activeTranslators;
     }
 
+    public PlayerRecord getPlayerRecord(String UUID) {
+        if (playerRecords.size() > 0) 
+        {
+            for (PlayerRecord eaRecord: playerRecords) {
+                if (eaRecord.getUUID().equals(UUID)) 
+                {
+                    return eaRecord;
+                }
+            }
+        }
+        return null;
+    }
+    
+    public ArrayList < PlayerRecord > getPlayerRecords() {
+        return playerRecords;
+    }
+    
     public ArrayList < WatsonSupportedLanguageObject > getSupportedWatsonLanguages() {
         return supportedWatsonLanguages;
     }

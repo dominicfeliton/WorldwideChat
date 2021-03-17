@@ -35,7 +35,6 @@ public class OnPlayerJoinListener implements Listener {
             main.setOutOfDate(true);
         }
         
-        /* If send translation chat is true */
         /* Global translate is disabled, and user has a translation config. */
         if ((main.getConfigManager().getMainConfig().getString("Chat.sendTranslationChat").equals("true")) 
                 && (main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED") == null)

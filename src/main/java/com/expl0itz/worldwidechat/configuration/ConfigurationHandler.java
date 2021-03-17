@@ -112,10 +112,10 @@ public class ConfigurationHandler {
             return false;
         }
         //Cache Settings
+        main.getCache().clear();
         if (getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
             main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigCacheEnabled").replace("%i", "" + getMainConfig().getInt("Translator.translatorCacheSize")));
         } else {
-            main.getCache().clear();
             main.getLogger().warning(ChatColor.YELLOW + getMessagesConfig().getString("Messages.wwcConfigCacheDisabled"));
         }
         return true; // We made it, everything set successfully; return false == fatal error, plugin should disable after
@@ -139,7 +139,44 @@ public class ConfigurationHandler {
                 userSettingsConfig.createSection("outLang");
                 userSettingsConfig.set("outLang", outLang);
                 
+                userSettingsConfig.createSection("bookTranslation");
+                userSettingsConfig.set("bookTranslation", false);
+                
+                userSettingsConfig.createSection("signTranslation");
+                userSettingsConfig.set("signTranslation", false);
+                
                 userSettingsConfig.save(userSettingsFile);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    
+    /* Stats File Creator */
+    public void createStatsConfig(String lastTranslationTime, String playerUUID, int attemptedTranslations, int successfulTranslations) {
+        File userStatsFile;
+        FileConfiguration userStatsConfig;
+        userStatsFile = new File(main.getDataFolder() + File.separator + "stats" + File.separator, playerUUID + ".yml");
+        
+        /* Load config */
+        userStatsConfig = YamlConfiguration.loadConfiguration(userStatsFile);
+        
+        //If file has never been made:
+        if (!userStatsFile.exists()) {
+            try {
+                userStatsConfig.createSection("lastTranslationTime");
+                userStatsConfig.set("lastTranslationTime", lastTranslationTime);
+                
+                userStatsConfig.createSection("playerUUID");
+                userStatsConfig.set("playerUUID", playerUUID);
+                
+                userStatsConfig.createSection("attemptedTranslations");
+                userStatsConfig.set("attemptedTranslations", attemptedTranslations);
+                
+                userStatsConfig.createSection("successfulTranslations");
+                userStatsConfig.set("successfulTranslations", successfulTranslations);
+                
+                userStatsConfig.save(userStatsFile);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -157,6 +194,14 @@ public class ConfigurationHandler {
     
     public File getUserSettingsFile(String uuid) {
         File outFile = new File(main.getDataFolder() + File.separator + "data" + File.separator, uuid + ".yml");
+        if (outFile.exists()) {
+            return outFile;
+        }
+        return null;
+    }
+    
+    public File getStatsFile(String uuid) {
+        File outFile = new File(main.getDataFolder() + File.separator + "stats" + File.separator, uuid + ".yml");
         if (outFile.exists()) {
             return outFile;
         }

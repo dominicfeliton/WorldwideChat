@@ -114,7 +114,7 @@ public class GoogleTranslation {
                         ) {
                     currentTerm.setNumberOfTimes(currentTerm.getNumberOfTimes()+1);
                     //DEBUG: main.getLogger().info("Term was already cached: How many times = " + currentTerm.getNumberOfTimes() + " List size: " + main.getCache().size());
-                    return currentTerm.getOutputPhrase(); //done :)
+                    return ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase()); //done :)
                 }
             }
         }

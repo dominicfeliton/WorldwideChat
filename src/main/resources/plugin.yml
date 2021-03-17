@@ -1,6 +1,6 @@
 name: WorldwideChat
 version: 1.1
-description: Translate incoming chat to any language!
+description: Break the blocky language barrier!
 api-version: 1.13
 author: 3xpl0itz
 main: com.expl0itz.worldwidechat.WorldwideChat
@@ -29,6 +29,24 @@ commands:
         usage: §4/wwct (playerName) (language-in) <language-out>
         permission: worldwidechat.wwct
         permission-message: §4You do not have permission to run this command.
+    wwctb:
+        description: Enables book translation to a certain language.
+        aliases: [worldwidechattranslatebook, translatebook]
+        usage: §4/wwctb (playerName)
+        permission: worldwidechat.wwctb
+        permission-message: §4You do not have permission to run this command.
+    wwcts:
+        description: Enables sign translation to a certain language.
+        aliases: [worldwidechattranslatesign, translatesign]
+        usage: §4/wwcts (playerName)
+        permission: worldwidechat.wwcts
+        permission-message: §4You do not have permission to run this command.
+    wwcs:
+        description: Gets translation stats for a specified user.
+        aliases: [worldwidechatstats, translatestats]
+        usage: §4/wwcs <playerName>
+        permission: worldwidechat.wwcs
+        permission-message: §4You do not have permission to run this command.
 permissions:
     worldwidechat.*:
         description: Gives access to all WorldwideChat commands.
@@ -39,6 +57,11 @@ permissions:
             worldwidechat.wwct: true
             worldwidechat.wwctotherplayers: true
             worldwidechat.chatupdate: true
+            worldwidechat.wwctb: true
+            worldwidechat.wwctb.otherplayers: true
+            worldwidechat.wwcts: true
+            worldwidechat.wwcts.otherplayers: true
+            worldwidechat.wwcs: true
         default: op
     worldwidechat.wwc:
         description: Prints WorldwideChat version.
@@ -58,4 +81,20 @@ permissions:
     worldwidechat.chatupdate:
         description: Enables receiving of plugin update notification in chat on login.
         default: op
+    worldwidechat.wwctb:
+        description: Enables book translation to a certain language.
+        default: true
+    worldwidechat.wwctb.otherplayers:
+        description: Enables book translation to a certain language on target players.
+        default: op
+    worldwidechat.wwcts:
+        description: Enables sign translation to a certain language.
+        default: true
+    worldwidechat.wwcts.otherplayers:
+        description: Enables sign translation to a certain language on target players.
+        default: op
+    worldwidechat.wwcs:
+        description: Gets translation stats for a specified user.
+        default: op
+    
     

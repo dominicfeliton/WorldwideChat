@@ -24,7 +24,7 @@ public class WWCGlobal extends BasicCommand {
             WWCTranslate initGlobal = new WWCTranslate(sender, command, label, args);
             return initGlobal.processCommand(true); //lets WWCTranslate know that we want a global user
         }
-      //Too many args
+        //Too many args
         final TextComponent invalidArgs = Component.text()
             .append(main.getPluginPrefix().asComponent())
             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidArgs")).color(NamedTextColor.RED))

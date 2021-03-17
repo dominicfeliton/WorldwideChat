@@ -11,7 +11,7 @@ Messages:
   wwcUnsupportedVersion: 'Está ejecutando una versión no compatible de Bukkit, Spigot o Paper. Versiones compatibles: %i'
   wwcInitializationFail: 'No se pudo inicializar WorldwideChat.'
   wwcUserDataReloaded: 'Cargó todos los datos de usuario guardados.'
-  wwcUserDataCorrupted: 'Se encontraron y eliminé %i archivos de datos de usuario corruptos.'
+  wwcUserDataCorrupted: 'Se encontraron y movieron %i archivos de datos de usuario antiguos o dañados. Se eliminarán en la próxima recarga.'
   # ------------------- Mensajes de escucha -------------------
   wwcOnJoinTranslationNotificationSourceLang: ' Su chat se está traduciendo de %i a %o.'
   wwcOnJoinTranslationNotificationNoSourceLang: ' Su chat se está traduciendo a %o.'
@@ -23,6 +23,9 @@ Messages:
   wwcSignDone: ' Firmar traducido correctamente.'
   wwcSignDeletedOrTooLong: ' El signo de destino se eliminó o la traducción era demasiado larga. Traducción:'
   wwcSignTranslationFail: ' No se puede obtener una traducción válida de su signo de destino de %i.'
+  wwcBookTranslateStart: ' Traduciendo libro de destino...'
+  wwcBookDone: ' Libro traducido correctamente.'
+  wwcBookTranslationFail: ' No se puede obtener una traducción válida de una o más páginas de su libro de destino de %i.'
   # ------------------- Mensajes de actualización -------------------
   wwcUpdaterConnectionFailed: 'No se puede buscar las últimas actualizaciones en Github.'
   wwcUpdaterParserFailed: 'No se pudieron analizar los datos de actualización de Github.'
@@ -43,6 +46,13 @@ Messages:
   # ------------------- / wwcr Mensajes -------------------
   wwcrSuccess: ' Recargado con éxito WorldwideChat.'
   wwcrFail: ' No se pudo volver a cargar WorldwideChat.'
+  #------------------- /wwcs Messages -------------------
+  wwcsName: ' Nombre del Jugador: %i'
+  wwcsIsActiveTranslator: ' Es Traductora Activa: %i'
+  wwcsAttemptedTranslations: ' Traducciones Intentadas: %i'
+  wwcsSuccessfulTranslations: ' Traducciones Exitosas: %i'
+  wwcsLastTranslationTime: ' Última (Exitosa) Tiempo de Traducción: %i'
+  wwcsNotATranslator: ' Aún no hay registros disponibles para %i.'
   # ------------------- / wwct Mensajes -------------------
   wwctTranslationStopped: ' La traducción de tu chat se ha detenido.'
   wwctTranslationStoppedOtherPlayer: ' Se detuvo la traducción de chat para %i.'
@@ -54,6 +64,21 @@ Messages:
   wwctLangToLangStartOtherPlayer: ' Ahora traduciendo el chat de% o de %i a %e.'
   wwctPlayerNotFound: ' Jugador% no encontrado.'
   wwctSameLangError: '¡No se puede traducir al mismo idioma!'
+  #------------------- /wwctb Messages ------------------
+  wwctbPlayerNotFound: ' El jugador %i no se encuentra o no es un traductor activo.'
+  wwctbNotATranslator: ' ¡No eres un traductor activo! Asegúrese de haber configurado esto con /wwct.'
+  wwctbOnSender: ' Traducción de libros habilitada. ¡Haz clic derecho mientras sostienes un libro para traducirlo!'
+  wwctbTranslatePageFail: '(No se pudo traducir esta página) %i'
+  wwctbOffSender: ' Traducción de libros deshabilitada.'
+  wwctbOnTarget: ' Traducción de libros habilitada para %i.'
+  wwctbOffTarget: ' Traducción de libros inhabilitada para %i.'
+  #------------------- /wwcts Messages ------------------
+  wwctsPlayerNotFound: ' Player %i is either not found, or is not an active translator.'
+  wwctsNotATranslator: ' You are not an active translator! Make sure you have set this with /wwct.'
+  wwctsOnSender: ' Traducción de firmas habilitada. ¡Haz clic derecho en un letrero para traducirlo!'
+  wwctsOffSender: ' Traducción de signos deshabilitada.'
+  wwctsOnTarget: ' Traducción de firmas habilitada para %i.'
+  wwctsOffTarget: ' Traducción de signos inhabilitada para %i.'
   # ------------------- / wwcg Mensajes -------------------
   wwcgTranslationStopped: ' Se detuvo la traducción de chat global.'
   wwcgAutoTranslateStart: ' Ahora traduciendo chat global a %o.'

@@ -11,7 +11,7 @@ Messages:
   wwcUnsupportedVersion: 'You are running an unsupported version of Bukkit, Spigot, or Paper. Supported versions:'
   wwcInitializationFail: 'Failed to initialize WorldwideChat.'
   wwcUserDataReloaded: 'Loaded all saved user data.'
-  wwcUserDataCorrupted: 'Found and deleted %i corrupted user data files.'
+  wwcUserDataCorrupted: 'Found and moved %i corrupted or old user data files. They will be deleted on the next reload.'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: ' Your chat is being translated from %i to %o.'
   wwcOnJoinTranslationNotificationNoSourceLang: ' Your chat is being translated to %o.'
@@ -23,6 +23,9 @@ Messages:
   wwcSignDone: ' Sign translated successfully.'
   wwcSignDeletedOrTooLong: ' Target sign was either deleted or the translation was too long. Translation:'
   wwcSignTranslationFail: ' Unable to get a valid translation of your target sign from %i.'
+  wwcBookTranslateStart: ' Translating target book...'
+  wwcBookDone: ' Book translated successfully.'
+  wwcBookTranslationFail: ' Unable to get a valid translation of one or more pages of your target book from %i.'
   #------------------- Updater Messages -------------------
   wwcUpdaterConnectionFailed: 'Unable to check for latest updates on Github.'
   wwcUpdaterParserFailed: 'Failed to parse update data from Github.'
@@ -43,6 +46,13 @@ Messages:
   #------------------- /wwcr Messages -------------------
   wwcrSuccess: ' Successfully reloaded WorldwideChat.'
   wwcrFail: ' Failed to reload WorldwideChat.'
+  #------------------- /wwcs Messages -------------------
+  wwcsName: ' Player Name: %i'
+  wwcsIsActiveTranslator: ' Is Active Translator: %i'
+  wwcsAttemptedTranslations: ' Attempted Translations: %i'
+  wwcsSuccessfulTranslations: ' Successful Translations: %i'
+  wwcsLastTranslationTime: ' Last (Successful) Translation Time: %i'
+  wwcsNotATranslator: ' There are no records yet available for %i.'
   #------------------- /wwct Messages -------------------
   wwctTranslationStopped: ' Your chat translation has been stopped.'
   wwctTranslationStoppedOtherPlayer: ' Chat translation for %i has been stopped.'
@@ -54,6 +64,21 @@ Messages:
   wwctLangToLangStartOtherPlayer: ' Now translating the chat of %o from %i to %e.'
   wwctPlayerNotFound: ' Player %i not found.'
   wwctSameLangError: ' You cannot translate to the same language!'
+  #------------------- /wwctb Messages ------------------
+  wwctbPlayerNotFound: ' Player %i is either not found, or is not an active translator.'
+  wwctbNotATranslator: ' You are not an active translator! Make sure you have set this with /wwct.'
+  wwctbOnSender: ' Book translation enabled. Right-click while holding a book to translate it!'
+  wwctbTranslatePageFail: ' (Failed to translate this page) %i'
+  wwctbOffSender: ' Book translation disabled.'
+  wwctbOnTarget: ' Book translation enabled for %i.'
+  wwctbOffTarget: ' Book translation disabled for %i.'
+  #------------------- /wwcts Messages ------------------
+  wwctsPlayerNotFound: ' Player %i is either not found, or is not an active translator.'
+  wwctsNotATranslator: ' You are not an active translator! Make sure you have set this with /wwct.'
+  wwctsOnSender: ' Sign translation enabled. Right-click on a sign to translate it!'
+  wwctsOffSender: ' Sign translation disabled.'
+  wwctsOnTarget: ' Sign translation enabled for %i.'
+  wwctsOffTarget: ' Sign translation disabled for %i.'
   #------------------- /wwcg Messages -------------------
   wwcgTranslationStopped: ' Global chat translation has been stopped.'
   wwcgAutoTranslateStart: ' Now translating global chat to %o.'
