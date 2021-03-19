@@ -16,8 +16,7 @@ public class CommonDefinitions {
     private String[] supportedMCVersions = {
         "1.16",
         "1.15",
-        "1.14",
-        "1.13"
+        "1.14"
     };
     
     private String[] supportedPluginLangCodes = {
