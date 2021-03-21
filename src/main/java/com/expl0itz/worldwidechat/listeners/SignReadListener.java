@@ -1,8 +1,6 @@
 package com.expl0itz.worldwidechat.listeners;
 
-import org.bukkit.Material;
 import org.bukkit.block.Sign;
-import org.bukkit.block.data.type.WallSign;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;

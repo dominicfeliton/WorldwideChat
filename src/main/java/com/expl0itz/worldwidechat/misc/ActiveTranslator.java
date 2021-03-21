@@ -1,7 +1,5 @@
 package com.expl0itz.worldwidechat.misc;
 
-import org.bukkit.Bukkit;
-
 import com.expl0itz.worldwidechat.WorldwideChat;
 
 public class ActiveTranslator {

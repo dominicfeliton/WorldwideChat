@@ -7,7 +7,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.scheduler.BukkitTask;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
 import com.expl0itz.worldwidechat.runnables.LoadUserData;
 import com.expl0itz.worldwidechat.runnables.UpdateChecker;
 
@@ -32,23 +31,7 @@ public class WWCReload extends BasicCommand {
         main.cancelBackgroundTasks();
 
         //Reload main config + other configs
-        boolean settingsSetSuccessfully;
-        try {
-            main.setConfigManager(new ConfigurationHandler());
-            main.getConfigManager().initMainConfig(); //this loads our language; load messages.yml immediately after this
-            main.getConfigManager().initMessagesConfig(); //messages.yml
-            settingsSetSuccessfully = main.getConfigManager().loadMainSettings();
-        } catch (Exception exception) { //Config init failed
-            final TextComponent wwcrFail = Component.text()
-                    .append(main.getPluginPrefix().asComponent())
-                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrFail")).color(NamedTextColor.RED))
-                    .build();
-                adventureSender.sendMessage(wwcrFail);
-            main.getLogger().severe(ChatColor.RED + main.getConfigManager().getMessagesConfig().getString("Messages.wwcInitializationFail").replace("%o", main.getTranslatorName()));
-            main.getServer().getPluginManager().disablePlugin(main);
-            return false;
-        }
-        if (settingsSetSuccessfully) { //If all settings don't error out
+        if (main.loadPluginConfigs()) { //If config loading succeeded
             main.getLogger().info(ChatColor.LIGHT_PURPLE + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", main.getTranslatorName()));
             
             //Check for Updates
@@ -59,18 +42,22 @@ public class WWCReload extends BasicCommand {
             Bukkit.getScheduler().runTaskAsynchronously(main, new LoadUserData());
             main.getLogger().info(ChatColor.LIGHT_PURPLE + main.getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
             
+            //We made it!
             final TextComponent wwcrSuccess = Component.text()
                     .append(main.getPluginPrefix().asComponent())
                     .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrSuccess")).color(NamedTextColor.GREEN))
                     .build();
                 adventureSender.sendMessage(wwcrSuccess);
-            return true;
+            main.getLogger().info(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcEnabled").replace("%i", main.getPluginVersion() + ""));
+        } else { //If config loading failed
+            final TextComponent wwcrFail = Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrFail")).color(NamedTextColor.RED))
+                    .build();
+                adventureSender.sendMessage(wwcrFail);
+            main.getLogger().severe(ChatColor.RED + main.getConfigManager().getMessagesConfig().getString("Messages.wwcInitializationFail").replace("%o", main.getTranslatorName()));
+            main.getServer().getPluginManager().disablePlugin(main);
         }
-        final TextComponent wwcrFail = Component.text()
-                .append(main.getPluginPrefix().asComponent())
-                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrFail")).color(NamedTextColor.RED))
-                .build();
-            adventureSender.sendMessage(wwcrFail);
-        return false;
+        return true;
     }
 }

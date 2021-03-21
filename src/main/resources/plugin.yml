@@ -13,7 +13,7 @@ commands:
         permission-message: §4You do not have permission to run this command.
     wwcr:
         description: Reloads WorldwideChat.
-        aliases: [worldwidechatreload]
+        aliases: [worldwidechatreload, translatereload]
         usage: §4/wwcr
         permission: worldwidechat.wwcr
         permission-message: §4You do not have permission to run this command.

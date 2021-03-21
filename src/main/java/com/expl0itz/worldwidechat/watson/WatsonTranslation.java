@@ -80,7 +80,7 @@ public class WatsonTranslation {
         /* Set supported watson languages */
         main.setSupportedWatsonLanguages(outList);
     }
-
+    
     public String translate() {
         /* Sanitize Inputs */
         //Warn user about color codes

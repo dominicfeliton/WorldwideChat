@@ -104,20 +104,7 @@ public class WorldwideChat extends JavaPlugin {
         taskChainFactory = BukkitTaskChainFactory.create(this);
         instance = this;
         
-        boolean settingsSetSuccessfully;
-        try {
-            //Load main config + other configs
-            configurationManager = new ConfigurationHandler();
-            configurationManager.initMainConfig(); //this loads our language; load messages.yml immediately after this
-            configurationManager.initMessagesConfig(); //messages.yml
-            settingsSetSuccessfully = configurationManager.loadMainSettings(); //main config.yml settings
-        } catch (Exception exception) {
-            //Config init failed
-            getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcInitializationFail").replace("%o", translatorName));
-            getServer().getPluginManager().disablePlugin(this);
-            return;
-        }
-        if (settingsSetSuccessfully) { //If all settings don't error out
+        if (loadPluginConfigs()) {
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", translatorName));
             
             //Check current Server Version
@@ -140,6 +127,9 @@ public class WorldwideChat extends JavaPlugin {
             
             //We made it!
             getLogger().info(ChatColor.GREEN + getConfigManager().getMessagesConfig().getString("Messages.wwcEnabled").replace("%i", pluginVersion + ""));
+        } else { //Config init failed
+            getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcInitializationFail").replace("%o", translatorName));
+            getServer().getPluginManager().disablePlugin(this);
         }
     }
 
@@ -158,6 +148,18 @@ public class WorldwideChat extends JavaPlugin {
         
         //All done.
         getLogger().info("Disabled WorldwideChat version " + pluginVersion + ".");
+    }
+    
+    /* (Re)load Plugin Method */
+    public boolean loadPluginConfigs() {
+        setConfigManager(new ConfigurationHandler());
+        //init main config, then init messages config, then load main settings
+        getConfigManager().initMainConfig();
+        getConfigManager().initMessagesConfig();
+        if (getConfigManager().loadMainSettings()) { //now load settings
+            return true;
+        }
+        return false;
     }
     
     /* Init all commands */

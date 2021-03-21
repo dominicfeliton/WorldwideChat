@@ -23,7 +23,7 @@ public class ConfigurationHandler {
     private FileConfiguration mainConfig;
 
     /* Init Main Config Method */
-    public void initMainConfig() {
+    public boolean initMainConfig() {
         /* Init config file */
         configFile = new File(main.getDataFolder(), "config.yml");
 
@@ -34,21 +34,23 @@ public class ConfigurationHandler {
 
         /* Load main config */
         mainConfig = YamlConfiguration.loadConfiguration(configFile);
-
+        
         /* Get plugin lang */
         CommonDefinitions defs = new CommonDefinitions();
         for (int i = 0; i < defs.getSupportedPluginLangCodes().length; i++) {
             if (defs.getSupportedPluginLangCodes()[i].equalsIgnoreCase(getMainConfig().getString("General.pluginLang"))) {
                 main.setPluginLang(getMainConfig().getString("General.pluginLang"));
                 main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + main.getPluginLang() + ".");
-                return;
+                return true;
             }
         }
+        
         main.getLogger().warning(ChatColor.RED + "Unable to detect a valid language in your config.yml. Defaulting to en...");
+        return false;
     }
 
     /* Init Messages Method */
-    public void initMessagesConfig() {
+    public boolean initMessagesConfig() {
         /* Init config file */
         messagesFile = new File(main.getDataFolder(), "messages-" + main.getPluginLang() + ".yml");
 
@@ -57,6 +59,7 @@ public class ConfigurationHandler {
 
         /* Load config */
         messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
+        return true;
     }
     
     /* Load Main Settings Method */
@@ -108,9 +111,9 @@ public class ConfigurationHandler {
             main.setTranslatorName("Google Translate");
         } else {
             main.getLogger().severe(getMessagesConfig().getString("Messages.wwcConfigInvalidTranslatorSettings"));
-            main.getServer().getPluginManager().disablePlugin(main);
             return false;
         }
+        
         //Cache Settings
         main.getCache().clear();
         if (getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
