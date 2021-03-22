@@ -23,7 +23,7 @@ public class ConfigurationHandler {
     private FileConfiguration mainConfig;
 
     /* Init Main Config Method */
-    public boolean initMainConfig() {
+    public void initMainConfig() {
         /* Init config file */
         configFile = new File(main.getDataFolder(), "config.yml");
 
@@ -41,16 +41,15 @@ public class ConfigurationHandler {
             if (defs.getSupportedPluginLangCodes()[i].equalsIgnoreCase(getMainConfig().getString("General.pluginLang"))) {
                 main.setPluginLang(getMainConfig().getString("General.pluginLang"));
                 main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + main.getPluginLang() + ".");
-                return true;
+                return;
             }
         }
         
         main.getLogger().warning(ChatColor.RED + "Unable to detect a valid language in your config.yml. Defaulting to en...");
-        return false;
     }
 
     /* Init Messages Method */
-    public boolean initMessagesConfig() {
+    public void initMessagesConfig() {
         /* Init config file */
         messagesFile = new File(main.getDataFolder(), "messages-" + main.getPluginLang() + ".yml");
 
@@ -59,7 +58,6 @@ public class ConfigurationHandler {
 
         /* Load config */
         messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
-        return true;
     }
     
     /* Load Main Settings Method */
