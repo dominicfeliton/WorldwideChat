@@ -22,6 +22,7 @@ import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
 import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateSupportedLanguageObject;
 import com.expl0itz.worldwidechat.listeners.BookReadListener;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
+import com.expl0itz.worldwidechat.listeners.DeluxeChatListener;
 import com.expl0itz.worldwidechat.listeners.OnPlayerJoinListener;
 import com.expl0itz.worldwidechat.listeners.SignReadListener;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
@@ -60,7 +61,7 @@ public class WorldwideChat extends JavaPlugin {
     private ArrayList < PlayerRecord > playerRecords = new ArrayList < PlayerRecord > ();
     private ArrayList < CachedTranslation > cache = new ArrayList < CachedTranslation > ();
     
-    private double pluginVersion = 1.1;
+    private double pluginVersion = 1.15;
     
     private int bStatsID = 10562;
     private int updateCheckerDelay = 86400;
@@ -110,8 +111,14 @@ public class WorldwideChat extends JavaPlugin {
             //Check current Server Version
             checkMCVersion();
             
-            //EventHandlers
-            getServer().getPluginManager().registerEvents(new ChatListener(), this);
+            //EventHandlers - Check for plugins
+            if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) {
+                //DeluxeChat is active on our server. Register the event handler.
+                getServer().getPluginManager().registerEvents(new DeluxeChatListener(), this);
+            } else {
+                //No chat plugins on our server. Register the event handler.
+                getServer().getPluginManager().registerEvents(new ChatListener(), this); 
+            }
             getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
             getServer().getPluginManager().registerEvents(new SignReadListener(), this);
             getServer().getPluginManager().registerEvents(new BookReadListener(), this);

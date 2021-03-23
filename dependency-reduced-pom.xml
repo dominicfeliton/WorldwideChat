@@ -4,7 +4,7 @@
   <groupId>com.expl0itz.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
   <name>WorldwideChat</name>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.15-SNAPSHOT</version>
   <description>Translate incoming chat to any language!</description>
   <build>
     <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
@@ -85,6 +85,7 @@
               <include>org.jetbrains.kotlin:kotlin-stdlib</include>
               <include>com.squareup.okio:okio</include>
               <include>co.aikar:taskchain*</include>
+              <include>me.clip:deluxechat</include>
             </includes>
           </artifactSet>
           <relocations>
@@ -135,6 +136,13 @@
       <artifactId>ibm-watson</artifactId>
       <version>9.0.2</version>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>me.clip</groupId>
+      <artifactId>deluxechat</artifactId>
+      <version>1.0.0</version>
+      <scope>system</scope>
+      <systemPath>C:/Users/Dominic/Desktop/WorldwideChat/WorldwideChat/privatedependencies/DeluxeChat.jar</systemPath>
     </dependency>
   </dependencies>
 </project>
