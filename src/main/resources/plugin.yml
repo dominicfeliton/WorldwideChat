@@ -13,37 +13,37 @@ commands:
         permission-message: §4You do not have permission to run this command.
     wwcr:
         description: Reloads WorldwideChat.
-        aliases: [worldwidechatreload, translatereload]
+        aliases: [wwcreload, translatereload]
         usage: §4/wwcr
         permission: worldwidechat.wwcr
         permission-message: §4You do not have permission to run this command.
     wwcg:
         description: Enables chat translation to another language globally.
-        aliases: [worldwidechatglobal, gtranslate]
+        aliases: [wwcglobal, gtranslate]
         usage: §4/wwcg (language-in) <language-out>
         permission: worldwidechat.wwcg
         permission-message: §4You do not have permission to run this command.
     wwct:
         description: Enables chat translation to a certain language, either for you or a specific player.
-        aliases: [worldwidechattranslate, translate]
+        aliases: [wwctranslate, translate]
         usage: §4/wwct (playerName) (language-in) <language-out>
         permission: worldwidechat.wwct
         permission-message: §4You do not have permission to run this command.
     wwctb:
         description: Enables book translation to a certain language.
-        aliases: [worldwidechattranslatebook, translatebook]
+        aliases: [wwctranslatebook, translatebook]
         usage: §4/wwctb (playerName)
         permission: worldwidechat.wwctb
         permission-message: §4You do not have permission to run this command.
     wwcts:
         description: Enables sign translation to a certain language.
-        aliases: [worldwidechattranslatesign, translatesign]
+        aliases: [wwctranslatesign, translatesign]
         usage: §4/wwcts (playerName)
         permission: worldwidechat.wwcts
         permission-message: §4You do not have permission to run this command.
     wwcs:
         description: Gets translation stats for a specified user.
-        aliases: [worldwidechatstats, translatestats]
+        aliases: [wwctranslatestats, translatestats]
         usage: §4/wwcs <playerName>
         permission: worldwidechat.wwcs
         permission-message: §4You do not have permission to run this command.
@@ -55,7 +55,7 @@ permissions:
             worldwidechat.wwcr: true
             worldwidechat.wwcg: true
             worldwidechat.wwct: true
-            worldwidechat.wwctotherplayers: true
+            worldwidechat.wwct.otherplayers: true
             worldwidechat.chatupdate: true
             worldwidechat.wwctb: true
             worldwidechat.wwctb.otherplayers: true
@@ -75,7 +75,7 @@ permissions:
     worldwidechat.wwct:
         description: Enables chat translation to a certain language for a specific player.
         default: true
-    worldwidechat.wwctotherplayers:
+    worldwidechat.wwct.otherplayers:
         description: Enables chat translation to a certain language for other players.
         default: op
     worldwidechat.chatupdate:

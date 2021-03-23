@@ -163,7 +163,7 @@ public class WWCTranslate extends BasicCommand {
                     }
                     return true;
                 } else if (Bukkit.getServer().getPlayer(args[0]) != null && (!(args[0].equals(sender.getName())))) { /* First arg is another player who is not ourselves...*/
-                    if (sender.hasPermission("worldwidechat.wwctotherplayers")) {
+                    if (sender.hasPermission("worldwidechat.wwct.otherplayers")) {
                         if (defs.isSupportedLangForTarget(args[1], main.getTranslatorName())) {
                         //Add target player to ArrayList
                         main.addActiveTranslator(new ActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
@@ -183,7 +183,7 @@ public class WWCTranslate extends BasicCommand {
                         final TextComponent badPerms = Component.text()
                                 .append(main.getPluginPrefix().asComponent())
                                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBadPerms")).color(NamedTextColor.RED))
-                                .append(Component.text().content(" (" + "worldwidechat.wwctotherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
+                                .append(Component.text().content(" (" + "worldwidechat.wwct.otherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
                                 .build();
                             adventureSender.sendMessage(badPerms);
                         return true;
@@ -192,7 +192,7 @@ public class WWCTranslate extends BasicCommand {
             }
         } else if (args[0] instanceof String && args[1] instanceof String && args[2] instanceof String && args.length == 3) {
             //If args[0] == a player, see if sender has perms to change player translation preferences
-            if (sender.hasPermission("worldwidechat.wwctotherplayers")) {
+            if (sender.hasPermission("worldwidechat.wwct.otherplayers")) {
                 if (Bukkit.getServer().getPlayer(args[0]) != null && (!(args[0].equals(sender.getName())))) {
                     if (defs.isSupportedLangForSource(args[1], main.getTranslatorName())) {
                         if (defs.isSupportedLangForTarget(args[2], main.getTranslatorName())) {
@@ -233,7 +233,7 @@ public class WWCTranslate extends BasicCommand {
                 final TextComponent badPerms = Component.text() //Bad perms
                     .append(main.getPluginPrefix().asComponent())
                     .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBadPerms")).color(NamedTextColor.RED))
-                    .append(Component.text().content(" (" + "worldwidechat.wwctotherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
+                    .append(Component.text().content(" (" + "worldwidechat.wwct.otherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
                     .build();
                 adventureSender.sendMessage(badPerms);
                 return true;
