@@ -112,13 +112,10 @@ public class WorldwideChat extends JavaPlugin {
             checkMCVersion();
             
             //EventHandlers - Check for plugins
-            if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) {
-                //DeluxeChat is active on our server. Register the event handler.
+            if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) { //DeluxeChat
                 getServer().getPluginManager().registerEvents(new DeluxeChatListener(), this);
-            } else {
-                //No chat plugins on our server. Register the event handler.
-                getServer().getPluginManager().registerEvents(new ChatListener(), this); 
             }
+            getServer().getPluginManager().registerEvents(new ChatListener(), this); 
             getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
             getServer().getPluginManager().registerEvents(new SignReadListener(), this);
             getServer().getPluginManager().registerEvents(new BookReadListener(), this);
