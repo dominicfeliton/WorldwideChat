@@ -36,7 +36,7 @@ public class BookTranslation implements Task{
         /* Init vars */
         ItemStack currentBook = event.getItem();
         ActiveTranslator currPlayer = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
-        PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString());
+        PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
         BookMeta meta = (BookMeta) currentBook.getItemMeta();
         List<String> pages = meta.getPages();
         List<String> translatedPages = new ArrayList<String>();

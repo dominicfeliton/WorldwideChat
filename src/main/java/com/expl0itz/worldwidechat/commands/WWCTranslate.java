@@ -32,7 +32,7 @@ public class WWCTranslate extends BasicCommand {
         /* Sanity checks */
         Audience adventureSender = main.adventure().sender(sender);
         ActiveTranslator currTarget = main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
-        if (currTarget instanceof ActiveTranslator) { //Don't let a person be multiple ActiveTranslator objs
+        if (!isGlobal && currTarget instanceof ActiveTranslator) { //Don't let a person be multiple ActiveTranslator objs
             main.removeActiveTranslator(currTarget);
             final TextComponent chatTranslationStopped = Component.text()
                 .append(main.getPluginPrefix().asComponent())

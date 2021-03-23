@@ -387,7 +387,7 @@ public class WorldwideChat extends JavaPlugin {
         return activeTranslators;
     }
 
-    public PlayerRecord getPlayerRecord(String UUID) {
+    public PlayerRecord getPlayerRecord(String UUID, boolean createNewIfNotExisting) {
         if (playerRecords.size() > 0) 
         {
             for (PlayerRecord eaRecord: playerRecords) {
@@ -396,6 +396,11 @@ public class WorldwideChat extends JavaPlugin {
                     return eaRecord;
                 }
             }
+        }
+        if (createNewIfNotExisting) {
+            PlayerRecord newRecord = new PlayerRecord("--------", UUID, 0, 0);
+            addPlayerRecord(newRecord);
+            getConfigManager().createStatsConfig("--------", UUID, 0, 0);
         }
         return null;
     }

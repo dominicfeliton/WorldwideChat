@@ -28,7 +28,7 @@ public class SignReadListener implements Listener {
             if ((event.getClickedBlock().getType().name().contains("SIGN") && event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
                 try {
                     /* Modify or create new player record*/
-                    PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString());
+                    PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
                     currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);
                     currPlayerRecord.writeToConfig();
                     

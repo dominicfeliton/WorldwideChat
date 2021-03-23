@@ -39,9 +39,9 @@ public class WWCStats extends BasicCommand{
         
         if (args[0] instanceof String && Bukkit.getServer().getPlayer(args[0]) != null) {
             //Get stats
-            if (main.getPlayerRecord(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString()) != null) {
+            if (main.getPlayerRecord(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(), false) != null) {
                 //Is on record; continue
-                PlayerRecord record = main.getPlayerRecord(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString());
+                PlayerRecord record = main.getPlayerRecord(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(), false);
                 if (main.getActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString()) != null) { //is currently active
                     isActiveTranslator = true;
                 }

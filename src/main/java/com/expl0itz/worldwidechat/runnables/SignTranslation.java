@@ -35,7 +35,7 @@ public class SignTranslation implements Task{
         
         /* Init vars */
         ActiveTranslator currPlayer = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
-        PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString());
+        PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
         String[] signText = currentSign.getLines();
         String[] changedSignText = new String[signText.length];
         boolean textLimit = false;

@@ -21,18 +21,7 @@ public class ActiveTranslator {
         this.hasBeenShownColorCodeWarning = hasBeenShownColorCodeWarning;
         
         /* Add player to records if they do not exist */
-        boolean hasExistingRecord = false;
-        for (PlayerRecord eaRecord : main.getPlayerRecords()) {
-            if (eaRecord.getUUID().equals(playerUUID)) {
-                hasExistingRecord = true;
-                break;
-            }
-        }
-        if (!hasExistingRecord) {
-            PlayerRecord newRecord = new PlayerRecord("--------", playerUUID, 0, 0);
-            main.addPlayerRecord(newRecord);
-            main.getConfigManager().createStatsConfig("--------", playerUUID, 0, 0);
-        }
+        main.getPlayerRecord(uuid, true);
     }
 
     /* Setters */

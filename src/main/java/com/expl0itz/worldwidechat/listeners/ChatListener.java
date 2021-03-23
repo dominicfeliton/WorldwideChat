@@ -46,7 +46,7 @@ public class ChatListener implements Listener {
         }
         
         /* Modify or create new player record*/
-        PlayerRecord currPlayerRecord = main.getPlayerRecord(inPlayer.getUniqueId().toString());
+        PlayerRecord currPlayerRecord = main.getPlayerRecord(inPlayer.getUniqueId().toString(), true);
         currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);
         currPlayerRecord.writeToConfig();
         
