@@ -74,7 +74,7 @@ public class WWCTranslate extends BasicCommand {
         
         /* Check if already running on another player; Sanity Checks P2 */
         Player testPlayer = Bukkit.getServer().getPlayer(args[0]);
-        if (testPlayer != null && main.getActiveTranslator(testPlayer.getUniqueId().toString()) instanceof ActiveTranslator && args.length == 1) {
+        if (testPlayer != null && main.getActiveTranslator(testPlayer.getUniqueId().toString()) instanceof ActiveTranslator) {
             main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
             //Delete target player's existing config file
             main.getConfigManager().getUserSettingsFile(testPlayer.getUniqueId().toString()).delete();
@@ -83,6 +83,9 @@ public class WWCTranslate extends BasicCommand {
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStoppedOtherPlayer").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                 .build();
             adventureSender.sendMessage(chatTranslationStopped);
+            if (args.length == 1 || args[1].equalsIgnoreCase("Stop")) {
+                return true;
+            }
         }
         
         /* Process input */
@@ -162,32 +165,32 @@ public class WWCTranslate extends BasicCommand {
                         }
                     }
                     return true;
-                } else if (Bukkit.getServer().getPlayer(args[0]) != null && (!(args[0].equals(sender.getName())))) { /* First arg is another player who is not ourselves...*/
-                    if (sender.hasPermission("worldwidechat.wwct.otherplayers")) {
-                        if (defs.isSupportedLangForTarget(args[1], main.getTranslatorName())) {
-                        //Add target player to ArrayList
-                        main.addActiveTranslator(new ActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
-                            args[1],
-                            "None",
-                            false));
-                        main.getConfigManager().createUserDataConfig(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(), "None", args[1]);
-                        final TextComponent autoTranslateOtherPlayer = Component.text()
-                            .append(main.getPluginPrefix().asComponent())
-                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStartOtherPlayer").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
-                            .build();
-                        adventureSender.sendMessage(autoTranslateOtherPlayer);
-                        main.adventure().sender(main.getServer().getPlayer(args[0])).sendMessage(autoTranslateOtherPlayer);
-                        return true;
-                        }
-                    } else { //Bad Perms
-                        final TextComponent badPerms = Component.text()
-                                .append(main.getPluginPrefix().asComponent())
-                                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBadPerms")).color(NamedTextColor.RED))
-                                .append(Component.text().content(" (" + "worldwidechat.wwct.otherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
-                                .build();
-                            adventureSender.sendMessage(badPerms);
-                        return true;
+                }
+            } else if (Bukkit.getServer().getPlayer(args[0]) != null && (!(args[0].equals(sender.getName())))) { /* First arg is another player who is not ourselves...*/
+                if (sender.hasPermission("worldwidechat.wwct.otherplayers")) {
+                    if (defs.isSupportedLangForTarget(args[1], main.getTranslatorName())) {
+                    //Add target player to ArrayList
+                    main.addActiveTranslator(new ActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
+                        "None",
+                        args[1],
+                        false));
+                    main.getConfigManager().createUserDataConfig(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(), "None", args[1]);
+                    final TextComponent autoTranslateOtherPlayer = Component.text()
+                        .append(main.getPluginPrefix().asComponent())
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStartOtherPlayer").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
+                        .build();
+                    adventureSender.sendMessage(autoTranslateOtherPlayer);
+                    main.adventure().sender(main.getServer().getPlayer(args[0])).sendMessage(autoTranslateOtherPlayer);
+                    return true;
                     }
+                } else { //Bad Perms
+                    final TextComponent badPerms = Component.text()
+                            .append(main.getPluginPrefix().asComponent())
+                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBadPerms")).color(NamedTextColor.RED))
+                            .append(Component.text().content(" (" + "worldwidechat.wwct.otherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
+                            .build();
+                        adventureSender.sendMessage(badPerms);
+                    return true;
                 }
             }
         } else if (args[0] instanceof String && args[1] instanceof String && args[2] instanceof String && args.length == 3) {
