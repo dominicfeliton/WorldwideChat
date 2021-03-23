@@ -75,14 +75,20 @@ public class WWCTranslate extends BasicCommand {
         /* Check if already running on another player; Sanity Checks P2 */
         Player testPlayer = Bukkit.getServer().getPlayer(args[0]);
         if (testPlayer != null && main.getActiveTranslator(testPlayer.getUniqueId().toString()) instanceof ActiveTranslator) {
+            Audience targetSender = main.adventure().sender(testPlayer);
             main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
             //Delete target player's existing config file
             main.getConfigManager().getUserSettingsFile(testPlayer.getUniqueId().toString()).delete();
             final TextComponent chatTranslationStopped = Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStopped")).color(NamedTextColor.LIGHT_PURPLE))
+                    .build();
+            targetSender.sendMessage(chatTranslationStopped);
+            final TextComponent chatTranslationStoppedOtherPlayer = Component.text()
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStoppedOtherPlayer").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                 .build();
-            adventureSender.sendMessage(chatTranslationStopped);
+            adventureSender.sendMessage(chatTranslationStoppedOtherPlayer);
             if (args.length == 1 || args[1].equalsIgnoreCase("Stop")) {
                 return true;
             }
@@ -180,7 +186,11 @@ public class WWCTranslate extends BasicCommand {
                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStartOtherPlayer").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
                         .build();
                     adventureSender.sendMessage(autoTranslateOtherPlayer);
-                    main.adventure().sender(main.getServer().getPlayer(args[0])).sendMessage(autoTranslateOtherPlayer);
+                    final TextComponent autoTranslate = Component.text()
+                            .append(main.getPluginPrefix().asComponent())
+                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStart").replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
+                            .build();
+                    main.adventure().sender(main.getServer().getPlayer(args[0])).sendMessage(autoTranslate);
                     return true;
                     }
                 } else { //Bad Perms
@@ -220,7 +230,11 @@ public class WWCTranslate extends BasicCommand {
                                  .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctLangToLangStartOtherPlayer").replace("%o", args[0]).replace("%i", args[1]).replace("%e", args[2])).color(NamedTextColor.LIGHT_PURPLE))
                                  .build();
                              adventureSender.sendMessage(langToLangOtherPlayer);
-                             main.adventure().sender(main.getServer().getPlayer(args[0])).sendMessage(langToLangOtherPlayer);
+                             final TextComponent langToLang = Component.text()
+                                     .append(main.getPluginPrefix().asComponent())
+                                     .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctLangToLangStart").replace("%i", args[1]).replace("%o", args[2])).color(NamedTextColor.LIGHT_PURPLE))
+                                     .build();
+                             main.adventure().sender(main.getServer().getPlayer(args[0])).sendMessage(langToLang);
                              return true;
                         }
                     }

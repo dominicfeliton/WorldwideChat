@@ -85,10 +85,11 @@ public class WWCTranslateBook extends BasicCommand{
         
         /* If there is an argument (another player)*/
         if (args.length == 1) {
-            if (args[0] instanceof String && main.getActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString()) != null && !(args[0].equals(sender.getName()))) {
-                if (sender.hasPermission("worldwidechat.wwctb.otherplayers")) {
+            if (sender.hasPermission("worldwidechat.wwctb.otherplayers")) {
+                if (args[0] != sender.getName() && args[0] instanceof String && Bukkit.getServer().getPlayer(args[0]) != null && main.getActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString()) != null &&!(args[0].equals(sender.getName()))) {
                     /* Enable book translation for target! */
                     ActiveTranslator currentTranslator = main.getActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString());
+                    currentTranslator.setTranslatingBook(!currentTranslator.getTranslatingBook());
                     Audience targetSender = main.adventure().player(Bukkit.getServer().getPlayer(args[0]));
                     File currentConfigFile = main.getConfigManager().getUserSettingsFile(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString());
                     YamlConfiguration currentConfig = YamlConfiguration.loadConfiguration(currentConfigFile);
@@ -128,22 +129,22 @@ public class WWCTranslateBook extends BasicCommand{
                             targetSender.sendMessage(toggleTranslationTarget);
                     }
                 } else {
-                    final TextComponent badPerms = Component.text() //Bad perms
+                    // If target is not a string, active translator, or is themselves:
+                    final TextComponent notAPlayer = Component.text()
                             .append(main.getPluginPrefix().asComponent())
-                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBadPerms")).color(NamedTextColor.RED))
-                            .append(Component.text().content(" (" + "worldwidechat.wwctb.otherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
+                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctbPlayerNotFound").replace("%i", args[0])).color(NamedTextColor.RED))
                             .build();
-                        adventureSender.sendMessage(badPerms);
-                        return true;
+                        adventureSender.sendMessage(notAPlayer);
+                    return false;
                 }
             } else {
-                // If target is not a string, active translator, or is themselves:
-                final TextComponent notAPlayer = Component.text()
+                final TextComponent badPerms = Component.text() //Bad perms
                         .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctbPlayerNotFound").replace("&i", args[0])).color(NamedTextColor.RED))
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBadPerms")).color(NamedTextColor.RED))
+                        .append(Component.text().content(" (" + "worldwidechat.wwctb.otherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
                         .build();
-                    adventureSender.sendMessage(notAPlayer);
-                return false;
+                    adventureSender.sendMessage(badPerms);
+                    return true;
             }
         }
         return true;
