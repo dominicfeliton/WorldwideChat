@@ -125,9 +125,11 @@ public class BookTranslation implements Task{
         */
         if (!sameResult && currentBook != null) {
             /* Set completed message */
-            currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);
-            currPlayerRecord.setLastTranslationTime();
-            currPlayerRecord.writeToConfig();
+            if (currPlayerRecord != null) {
+                currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);
+                currPlayerRecord.setLastTranslationTime();
+                currPlayerRecord.writeToConfig();
+            }
             final TextComponent bookDone = Component.text()
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBookDone")).color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))

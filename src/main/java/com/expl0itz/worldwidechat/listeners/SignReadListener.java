@@ -29,8 +29,10 @@ public class SignReadListener implements Listener {
                 try {
                     /* Modify or create new player record*/
                     PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
-                    currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);
-                    currPlayerRecord.writeToConfig();
+                    if (currPlayerRecord != null) {
+                        currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);
+                        currPlayerRecord.writeToConfig();
+                    }
                     
                     /* Start sign translation */
                     Sign currentSign = (Sign) event.getClickedBlock().getState();

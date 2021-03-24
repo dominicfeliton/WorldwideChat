@@ -47,8 +47,10 @@ public class ChatListener implements Listener {
         
         /* Modify or create new player record*/
         PlayerRecord currPlayerRecord = main.getPlayerRecord(inPlayer.getUniqueId().toString(), true);
-        currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);
-        currPlayerRecord.writeToConfig();
+        if (currPlayerRecord != null) { //check if null
+            currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);
+            currPlayerRecord.writeToConfig();
+        }
         
         /* Begin actual translation, set message to output */
         if (main.getTranslatorName().equals("Watson")) {
@@ -100,9 +102,11 @@ public class ChatListener implements Listener {
         }
         
         /* Set rest of record */
-        currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);    
-        currPlayerRecord.setLastTranslationTime();
-        currPlayerRecord.writeToConfig();
+        if (currPlayerRecord != null) {
+            currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);    
+            currPlayerRecord.setLastTranslationTime();
+            currPlayerRecord.writeToConfig();
+        }
         return out;
     }
 

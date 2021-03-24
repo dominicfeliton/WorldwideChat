@@ -391,7 +391,7 @@ public class WorldwideChat extends JavaPlugin {
         if (playerRecords.size() > 0) 
         {
             for (PlayerRecord eaRecord: playerRecords) {
-                if (eaRecord.getUUID().equals(UUID)) 
+                if (eaRecord.getUUID().toString().equals(UUID)) 
                 {
                     return eaRecord;
                 }
@@ -401,6 +401,7 @@ public class WorldwideChat extends JavaPlugin {
             PlayerRecord newRecord = new PlayerRecord("--------", UUID, 0, 0);
             addPlayerRecord(newRecord);
             getConfigManager().createStatsConfig("--------", UUID, 0, 0);
+            return newRecord;
         }
         return null;
     }

@@ -92,9 +92,11 @@ public class SignTranslation implements Task{
             sameResult = Arrays.equals(signText, changedSignText);
             if (!textLimit && !sameResult && currentSign.getLocation() != null) {
                 /* Set completed message */
-                currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);
-                currPlayerRecord.setLastTranslationTime();
-                currPlayerRecord.writeToConfig();
+                if (currPlayerRecord != null) {
+                    currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);
+                    currPlayerRecord.setLastTranslationTime();
+                    currPlayerRecord.writeToConfig();
+                }
                 getCurrentChain().setTaskData("translatedSign", changedSignText);
                 final TextComponent signDone = Component.text()
                     .append(main.getPluginPrefix().asComponent())
