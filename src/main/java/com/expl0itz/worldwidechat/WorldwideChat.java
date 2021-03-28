@@ -53,7 +53,7 @@ public class WorldwideChat extends JavaPlugin {
     private BukkitAudiences adventure;
     private ConfigurationHandler configurationManager;
     
-    private HashMap < String,BukkitTask > backgroundTasks = new HashMap < String, BukkitTask > ();
+    private HashMap < String, BukkitTask > backgroundTasks = new HashMap < String, BukkitTask > ();
     
     private ArrayList < WatsonSupportedLanguageObject > supportedWatsonLanguages;
     private ArrayList < GoogleTranslateSupportedLanguageObject > supportedGoogleTranslateLanguages;
@@ -100,11 +100,12 @@ public class WorldwideChat extends JavaPlugin {
     
     @Override
     public void onEnable() {
-        // Initialize critical instances
+        //Initialize critical instances
         this.adventure = BukkitAudiences.create(this);
         taskChainFactory = BukkitTaskChainFactory.create(this);
         instance = this;
         
+        //Load plugin configs, check if they successfully initialized
         if (loadPluginConfigs()) {
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", translatorName));
             
@@ -139,7 +140,7 @@ public class WorldwideChat extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        //Cleanly cancel/reset all background tasks (runnables, timers, vars, etc.)
+        //Cleanly cancel/reset all background tasks (com.expl0itz.worldwidechat.runnables, timers, vars, etc.)
         cancelBackgroundTasks();
         
         //Set static vars to null
@@ -169,7 +170,7 @@ public class WorldwideChat extends JavaPlugin {
     /* Init all commands */
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("wwc")) {
-            //WWC version report
+            //WWC version
             final TextComponent versionNotice = Component.text()
                 .append(pluginPrefix.asComponent())
                 .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcVersion")).color(NamedTextColor.RED))
@@ -194,16 +195,19 @@ public class WorldwideChat extends JavaPlugin {
                 return wwct.processCommand(false);
             }
         } else if (command.getName().equalsIgnoreCase("wwctb")) {
+            //Book translation
             if (checkSenderIdentity(sender)) {
                 WWCTranslateBook wwctb = new WWCTranslateBook(sender, command, label, args);
                 return wwctb.processCommand();
             }
         } else if (command.getName().equalsIgnoreCase("wwcts")) {
+            //Sign translation
             if (checkSenderIdentity(sender)) {
                 WWCTranslateSign wwcts = new WWCTranslateSign(sender, command, label, args);
                 return wwcts.processCommand();
             }
         } else if (command.getName().equalsIgnoreCase("wwcs")) {
+            //Stats for translator
             WWCStats wwcs = new WWCStats(sender, command, label, args);
             return wwcs.processCommand();
         }

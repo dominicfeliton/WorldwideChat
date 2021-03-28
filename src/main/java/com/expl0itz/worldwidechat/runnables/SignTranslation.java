@@ -19,7 +19,7 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
-public class SignTranslation implements Task{
+public class SignTranslation implements Task<Sign, Sign>{
 
     private PlayerInteractEvent event;
     private WorldwideChat main = WorldwideChat.getInstance();
@@ -29,7 +29,7 @@ public class SignTranslation implements Task{
     }
 
     @Override
-    public Object run(Object input) {
+    public Sign run(Sign input) {
         /* Get valid sign */
         Sign currentSign = (Sign) input;
         

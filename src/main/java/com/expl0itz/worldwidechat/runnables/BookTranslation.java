@@ -22,7 +22,7 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
-public class BookTranslation implements Task{
+public class BookTranslation implements Task<ItemStack, ItemStack>{
 
     private PlayerInteractEvent event;
     private WorldwideChat main = WorldwideChat.getInstance();
@@ -32,7 +32,7 @@ public class BookTranslation implements Task{
     }
 
     @Override
-    public Object run(Object input) {
+    public ItemStack run(ItemStack overrideBook) {
         /* Init vars */
         ItemStack currentBook = event.getItem();
         ActiveTranslator currPlayer = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
@@ -154,7 +154,7 @@ public class BookTranslation implements Task{
             newMeta.setPages(translatedPages);
             newBook.setItemMeta(newMeta);
         getCurrentChain().setTaskData("translatedBook", newBook);
-        return null;
+        return newBook;
     }
 
 }

@@ -46,7 +46,9 @@ public class BookReadListener implements Listener{
                     })
                     .sync(() -> {
                         ItemStack newBook = chain.getTaskData("translatedBook");
-                        event.getPlayer().openBook(newBook);
+                        if (newBook != null) {
+                            event.getPlayer().openBook(newBook);
+                        }
                     })
                     .sync(TaskChain::abort)
                     .execute();
