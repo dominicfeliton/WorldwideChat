@@ -395,13 +395,25 @@ public class WorldwideChat extends JavaPlugin {
         if (playerRecords.size() > 0) 
         {
             for (PlayerRecord eaRecord: playerRecords) {
-                if (eaRecord.getUUID().toString().equals(UUID)) 
+                //If the player is both in the ArrayList and has a file
+                if (eaRecord.getUUID().toString().equals(UUID) && getConfigManager().getStatsFile(UUID) != null) 
                 {
                     return eaRecord;
                 }
             }
         }
         if (createNewIfNotExisting) {
+            //Remove all existing records of current player if the file is null or is not in the list
+            PlayerRecord recordToRemove = null;
+            for (PlayerRecord eaRecord : playerRecords) {
+                if (eaRecord.getUUID().equals(UUID)) {
+                    recordToRemove = eaRecord;
+                }
+            }
+            if (recordToRemove != null) {
+                removePlayerRecord(recordToRemove);
+            }
+            //Old record removed; create + add new one
             PlayerRecord newRecord = new PlayerRecord("--------", UUID, 0, 0);
             addPlayerRecord(newRecord);
             getConfigManager().createStatsConfig("--------", UUID, 0, 0);

@@ -45,7 +45,7 @@ public class ChatListener implements Listener {
             currPlayer = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
         }
         
-        /* Modify or create new player record*/
+        /* Modify or create new player record */
         PlayerRecord currPlayerRecord = main.getPlayerRecord(inPlayer.getUniqueId().toString(), true);
         if (currPlayerRecord != null) { //check if null
             currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);

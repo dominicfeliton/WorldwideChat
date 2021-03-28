@@ -11,7 +11,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import com.expl0itz.worldwidechat.WorldwideChat;
 
 public class PlayerRecord {
-
+    
     private int attemptedTranslations = 0;
     private int successfulTranslations = 0;
     
