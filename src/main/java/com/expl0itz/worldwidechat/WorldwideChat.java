@@ -140,7 +140,7 @@ public class WorldwideChat extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        //Cleanly cancel/reset all background tasks (com.expl0itz.worldwidechat.runnables, timers, vars, etc.)
+        //Cleanly cancel/reset all background tasks (runnables, timers, vars, etc.)
         cancelBackgroundTasks();
         
         //Set static vars to null

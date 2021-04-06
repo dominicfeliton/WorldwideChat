@@ -27,7 +27,7 @@ public class WWCTranslate extends BasicCommand {
     /*
      * Correct Syntax: /wwct <id-in> <id-out>
      * EX for id: en, ar, cs, nl, etc.
-     * id MUST be valid, is checked by Definitions class
+     * id MUST be valid, we will check with CommonDefinitions class
      */
 
     public boolean processCommand(boolean isGlobal) {
@@ -61,7 +61,6 @@ public class WWCTranslate extends BasicCommand {
             if (fileToBeDeleted != null) {
                 fileToBeDeleted.delete();
             }
-            main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED").delete();
             for (Player eaPlayer: Bukkit.getOnlinePlayers()) {
                 main.adventure().sender(eaPlayer).sendMessage(chatTranslationStopped);
             }

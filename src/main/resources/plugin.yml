@@ -19,7 +19,7 @@ commands:
         permission: worldwidechat.wwcr
         permission-message: §4You do not have permission to run this command.
     wwcg:
-        description: Enables chat translation to another language globally.
+        description: Enables chat translation to a certain language globally.
         aliases: [wwcglobal, gtranslate]
         usage: §4/wwcg (language-in) <language-out>
         permission: worldwidechat.wwcg
@@ -71,7 +71,7 @@ permissions:
         description: Reloads WorldwideChat.
         default: op
     worldwidechat.wwcg:
-        description: Enables chat translation to a particular language globally.
+        description: Enables chat translation to a certain language globally.
         default: op
     worldwidechat.wwct:
         description: Enables chat translation to a certain language for a specific player.

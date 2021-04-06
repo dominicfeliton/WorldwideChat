@@ -30,7 +30,7 @@ public class BookReadListener implements Listener{
                 && event.getItem() != null
                 && Material.WRITTEN_BOOK == event.getItem().getType()
                 && (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
-            /* Modify or create new player record*/
+            /* Modify or create new player record */
             PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
             if (currPlayerRecord != null) {
                 currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);
