@@ -37,6 +37,7 @@ public class WWCStats extends BasicCommand{
             return false;
         }
         
+        /* Send stats message */
         if (args[0] instanceof String && Bukkit.getServer().getPlayer(args[0]) != null) {
             //Get stats
             if (main.getPlayerRecord(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(), false) != null) {

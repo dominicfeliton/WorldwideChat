@@ -14,7 +14,6 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 
 import net.md_5.bungee.api.ChatColor;
 
-
 public class UpdateChecker implements Runnable{
 
     private boolean upToDate = false;
@@ -35,9 +34,10 @@ public class UpdateChecker implements Runnable{
         }
 
         try {
-            upToDate = (main.getPluginVersion() == Double.parseDouble(latest));
-            if (upToDate) {
+            if (main.getPluginVersion() == Double.parseDouble(latest)) {
                 main.getLogger().info(ChatColor.LIGHT_PURPLE + main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterUpToDate"));
+            } else if (main.getPluginVersion() > Double.parseDouble(latest)) {
+            	 main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterFutureDate").replace("%i", "" + Double.parseDouble(latest)));
             } else {
                 main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterOutOfDate").replace("%i", "" + Double.parseDouble(latest)));
                 main.getLogger().warning("https://github.com/3xpl0itz/WorldwideChat/releases");

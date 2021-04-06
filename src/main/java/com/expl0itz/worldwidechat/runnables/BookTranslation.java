@@ -83,46 +83,6 @@ public class BookTranslation implements Task<ItemStack, ItemStack>{
             translatedPages.add(out);
         }
         
-        /* Translate title - User never sees the title yet so for now we comment this out */
-        String title = meta.getTitle();
-        /*
-        String newTitle = "";
-        if (main.getTranslatorName().equals("Watson") && title.length() > 0) {
-            try {
-                WatsonTranslation watsonInstance = new WatsonTranslation(title,
-                    currPlayer.getInLangCode(),
-                    currPlayer.getOutLangCode(),
-                    main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"),
-                    main.getConfigManager().getMainConfig().getString("Translator.watsonURL"),
-                    event.getPlayer());
-                newTitle = watsonInstance.translate();
-            } catch (NotFoundException lowConfidenceInAnswer) {
-                final TextComponent lowConfidence = Component.text()
-                    .append(main.getPluginPrefix().asComponent())
-                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.watsonNotFoundExceptionNotification")).color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
-                    .build();
-                main.adventure().sender(event.getPlayer()).sendMessage(lowConfidence);
-            }
-        } else if (main.getTranslatorName().equals("Google Translate") && title.length() > 0) {
-            try {
-                GoogleTranslation googleTranslateInstance = new GoogleTranslation(title,
-                    currPlayer.getInLangCode(),
-                    currPlayer.getOutLangCode(),
-                   event.getPlayer());
-                newTitle = googleTranslateInstance.translate();
-            } catch (TranslateException e) {
-                final TextComponent lowConfidence = Component.text()
-                    .append(main.getPluginPrefix().asComponent())
-                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.watsonNotFoundExceptionNotification")).color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
-                    .build();
-                main.adventure().sender(event.getPlayer()).sendMessage(lowConfidence);
-            }
-        }
-        if (newTitle.equals("") || newTitle.equalsIgnoreCase(title)) {
-            sameResult = true;
-            title = "?";
-        }
-        */
         if (!sameResult && currentBook != null) {
             /* Set completed message */
             if (currPlayerRecord != null) {
@@ -150,7 +110,7 @@ public class BookTranslation implements Task<ItemStack, ItemStack>{
         BookMeta newMeta = (BookMeta) newBook.getItemMeta();
             newMeta.setAuthor(meta.getAuthor());
             newMeta.setGeneration(meta.getGeneration());
-            newMeta.setTitle(title);
+            newMeta.setTitle(meta.getTitle());
             newMeta.setPages(translatedPages);
             newBook.setItemMeta(newMeta);
         getCurrentChain().setTaskData("translatedBook", newBook);

@@ -3,6 +3,7 @@ version: 1.15
 description: Break the blocky language barrier!
 api-version: 1.14
 author: 3xpl0itz
+softdepend: [DeluxeChat]
 main: com.expl0itz.worldwidechat.WorldwideChat
 commands:
     wwc:

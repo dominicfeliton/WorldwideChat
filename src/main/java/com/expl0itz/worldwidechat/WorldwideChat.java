@@ -112,7 +112,7 @@ public class WorldwideChat extends JavaPlugin {
             //Check current Server Version
             checkMCVersion();
             
-            //EventHandlers - Check for plugins
+            //EventHandlers + Check for plugins
             if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) { //DeluxeChat
                 getServer().getPluginManager().registerEvents(new DeluxeChatListener(), this);
             }

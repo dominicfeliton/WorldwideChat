@@ -64,6 +64,7 @@ public class PlayerRecord {
             e.printStackTrace();
         }
     }
+    
     /* Getters */
     public int getAttemptedTranslations() {
         return attemptedTranslations;
