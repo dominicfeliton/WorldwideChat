@@ -6,12 +6,7 @@ import org.bukkit.block.Sign;
 import org.bukkit.event.player.PlayerInteractEvent;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
-import com.expl0itz.worldwidechat.misc.ActiveTranslator;
-import com.expl0itz.worldwidechat.misc.PlayerRecord;
-import com.expl0itz.worldwidechat.watson.WatsonTranslation;
-import com.google.cloud.translate.TranslateException;
-import com.ibm.cloud.sdk.core.service.exception.NotFoundException;
+import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 
 import co.aikar.taskchain.TaskChainTasks.Task;
 import net.kyori.adventure.text.Component;
@@ -34,8 +29,6 @@ public class SignTranslation implements Task<Sign, Sign>{
         Sign currentSign = (Sign) input;
         
         /* Init vars */
-        ActiveTranslator currPlayer = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
-        PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
         String[] signText = currentSign.getLines();
         String[] changedSignText = new String[signText.length];
         boolean textLimit = false;
@@ -50,38 +43,7 @@ public class SignTranslation implements Task<Sign, Sign>{
         
         /* Translate each line of sign */
         for (int i = 0; i < changedSignText.length; i++) {
-            String eaLine = signText[i];
-            if (main.getTranslatorName().equals("Watson") && eaLine.length() > 0) {
-                try {
-                    WatsonTranslation watsonInstance = new WatsonTranslation(eaLine,
-                        currPlayer.getInLangCode(),
-                        currPlayer.getOutLangCode(),
-                        main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"),
-                        main.getConfigManager().getMainConfig().getString("Translator.watsonURL"),
-                        event.getPlayer());
-                    eaLine = watsonInstance.translate();
-                } catch (NotFoundException lowConfidenceInAnswer) {
-                    final TextComponent lowConfidence = Component.text()
-                        .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.watsonNotFoundExceptionNotification")).color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
-                        .build();
-                    main.adventure().sender(event.getPlayer()).sendMessage(lowConfidence);
-                }
-            } else if (main.getTranslatorName().equals("Google Translate") && eaLine.length() > 0) {
-                try {
-                    GoogleTranslation googleTranslateInstance = new GoogleTranslation(eaLine,
-                        currPlayer.getInLangCode(),
-                        currPlayer.getOutLangCode(),
-                        event.getPlayer());
-                    eaLine = googleTranslateInstance.translate();
-                } catch (TranslateException e) {
-                    final TextComponent lowConfidence = Component.text()
-                        .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.watsonNotFoundExceptionNotification")).color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
-                        .build();
-                    main.adventure().sender(event.getPlayer()).sendMessage(lowConfidence);
-                }
-            }
+            String eaLine = CommonDefinitions.translateText(signText[i], event.getPlayer());
             /* Save translated line */
             if (eaLine.length() > 15) {
                 textLimit = true;
@@ -92,11 +54,6 @@ public class SignTranslation implements Task<Sign, Sign>{
             sameResult = Arrays.equals(signText, changedSignText);
             if (!textLimit && !sameResult && currentSign.getLocation() != null) {
                 /* Set completed message */
-                if (currPlayerRecord != null) {
-                    currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);
-                    currPlayerRecord.setLastTranslationTime();
-                    currPlayerRecord.writeToConfig();
-                }
                 getCurrentChain().setTaskData("translatedSign", changedSignText);
                 final TextComponent signDone = Component.text()
                     .append(main.getPluginPrefix().asComponent())

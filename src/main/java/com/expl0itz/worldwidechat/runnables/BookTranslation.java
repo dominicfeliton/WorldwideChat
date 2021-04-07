@@ -9,12 +9,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
-import com.expl0itz.worldwidechat.misc.ActiveTranslator;
-import com.expl0itz.worldwidechat.misc.PlayerRecord;
-import com.expl0itz.worldwidechat.watson.WatsonTranslation;
-import com.google.cloud.translate.TranslateException;
-import com.ibm.cloud.sdk.core.service.exception.NotFoundException;
+import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 
 import co.aikar.taskchain.TaskChainTasks.Task;
 import net.kyori.adventure.text.Component;
@@ -35,8 +30,6 @@ public class BookTranslation implements Task<ItemStack, ItemStack>{
     public ItemStack run(ItemStack overrideBook) {
         /* Init vars */
         ItemStack currentBook = event.getItem();
-        ActiveTranslator currPlayer = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
-        PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
         BookMeta meta = (BookMeta) currentBook.getItemMeta();
         List<String> pages = meta.getPages();
         List<String> translatedPages = new ArrayList<String>();
@@ -44,38 +37,7 @@ public class BookTranslation implements Task<ItemStack, ItemStack>{
         
         /* Translate pages */
         for (String eaPage : pages) {
-            String out = "";
-            if (main.getTranslatorName().equals("Watson") && eaPage.length() > 0) {
-                try {
-                    WatsonTranslation watsonInstance = new WatsonTranslation(eaPage,
-                        currPlayer.getInLangCode(),
-                        currPlayer.getOutLangCode(),
-                        main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"),
-                        main.getConfigManager().getMainConfig().getString("Translator.watsonURL"),
-                        event.getPlayer());
-                    out = watsonInstance.translate(); //lets \n be properly recognized
-                } catch (NotFoundException lowConfidenceInAnswer) {
-                    final TextComponent lowConfidence = Component.text()
-                        .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.watsonNotFoundExceptionNotification")).color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
-                        .build();
-                    main.adventure().sender(event.getPlayer()).sendMessage(lowConfidence);
-                }
-            } else if (main.getTranslatorName().equals("Google Translate") && eaPage.length() > 0) {
-                try {
-                    GoogleTranslation googleTranslateInstance = new GoogleTranslation(eaPage,
-                        currPlayer.getInLangCode(),
-                        currPlayer.getOutLangCode(),
-                        event.getPlayer());
-                    out = googleTranslateInstance.translate();
-                } catch (TranslateException e) {
-                    final TextComponent lowConfidence = Component.text()
-                        .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.watsonNotFoundExceptionNotification")).color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
-                        .build();
-                    main.adventure().sender(event.getPlayer()).sendMessage(lowConfidence);
-                }
-            }
+            String out = CommonDefinitions.translateText(eaPage, event.getPlayer());
             if (out.equals("") || out.equalsIgnoreCase(eaPage)) {
                 sameResult = true;
                 out = main.getConfigManager().getMessagesConfig().getString("Messages.wwctbTranslatePageFail").replace("%i", eaPage);
@@ -85,11 +47,6 @@ public class BookTranslation implements Task<ItemStack, ItemStack>{
         
         if (!sameResult && currentBook != null) {
             /* Set completed message */
-            if (currPlayerRecord != null) {
-                currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);
-                currPlayerRecord.setLastTranslationTime();
-                currPlayerRecord.writeToConfig();
-            }
             final TextComponent bookDone = Component.text()
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBookDone")).color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))

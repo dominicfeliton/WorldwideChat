@@ -25,6 +25,23 @@ public class PlayerRecord {
         this.playerUUID = playerUUID;
     }
     
+    /* Getters */
+    public int getAttemptedTranslations() {
+        return attemptedTranslations;
+    }
+    
+    public int getSuccessfulTranslations() {
+        return successfulTranslations;
+    }
+    
+    public String getLastTranslationTime() {
+        return lastTranslationTime;
+    }
+    
+    public String getUUID() {
+        return playerUUID;
+    }
+    
     /* Setters */
     public void setAttemptedTranslations(int i) {
         attemptedTranslations = i;
@@ -63,22 +80,5 @@ public class PlayerRecord {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-    
-    /* Getters */
-    public int getAttemptedTranslations() {
-        return attemptedTranslations;
-    }
-    
-    public int getSuccessfulTranslations() {
-        return successfulTranslations;
-    }
-    
-    public String getLastTranslationTime() {
-        return lastTranslationTime;
-    }
-    
-    public String getUUID() {
-        return playerUUID;
     }
 }

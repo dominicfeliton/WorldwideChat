@@ -7,7 +7,6 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.PlayerRecord;
 import com.expl0itz.worldwidechat.runnables.SignTranslation;
 
 import co.aikar.taskchain.TaskChain;
@@ -27,13 +26,6 @@ public class SignReadListener implements Listener {
                 && event.getClickedBlock() != null) {
             if ((event.getClickedBlock().getType().name().contains("SIGN") && event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
                 try {
-                    /* Modify or create new player record*/
-                    PlayerRecord currPlayerRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
-                    if (currPlayerRecord != null) {
-                        currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);
-                        currPlayerRecord.writeToConfig();
-                    }
-                    
                     /* Start sign translation */
                     Sign currentSign = (Sign) event.getClickedBlock().getState();
                     TaskChain<?> chain = WorldwideChat.newSharedChain("signTranslate");
