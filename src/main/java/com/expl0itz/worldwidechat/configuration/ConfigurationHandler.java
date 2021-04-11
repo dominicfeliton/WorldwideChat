@@ -96,20 +96,25 @@ public class ConfigurationHandler {
         }
         
         /* Translator Settings */
-        if (getMainConfig().getBoolean("Translator.useWatsonTranslate") && !(getMainConfig().getBoolean("Translator.useGoogleTranslate"))) {
-            WatsonTranslation test = new WatsonTranslation(
-                getMainConfig().getString("Translator.watsonAPIKey"),
-                getMainConfig().getString("Translator.watsonURL"));
-            test.initializeConnection();
-            main.setTranslatorName("Watson");
-        } else if (getMainConfig().getBoolean("Translator.useGoogleTranslate") && !(getMainConfig().getBoolean("Translator.useWatsonTranslate"))) {
-            GoogleTranslation test = new GoogleTranslation(
-                getMainConfig().getString("Translator.googleTranslateAPIKey"));
-            test.initializeConnection();
-            main.setTranslatorName("Google Translate");
-        } else {
-            main.getLogger().severe(getMessagesConfig().getString("Messages.wwcConfigInvalidTranslatorSettings"));
-            return false;
+        try {
+        	if (getMainConfig().getBoolean("Translator.useWatsonTranslate") && !(getMainConfig().getBoolean("Translator.useGoogleTranslate"))) {
+        		main.setTranslatorName("Watson");
+        		WatsonTranslation test = new WatsonTranslation(
+                    getMainConfig().getString("Translator.watsonAPIKey"),
+                    getMainConfig().getString("Translator.watsonURL"));
+                test.initializeConnection();
+            } else if (getMainConfig().getBoolean("Translator.useGoogleTranslate") && !(getMainConfig().getBoolean("Translator.useWatsonTranslate"))) {
+            	main.setTranslatorName("Google Translate");
+            	GoogleTranslation test = new GoogleTranslation(
+                    getMainConfig().getString("Translator.googleTranslateAPIKey"));
+                test.initializeConnection();
+            } else {
+                main.getLogger().severe(getMessagesConfig().getString("Messages.wwcConfigInvalidTranslatorSettings"));
+                return false;
+            }
+        } catch (Exception e) {
+        	main.getLogger().severe("(" + main.getTranslatorName() + ") " + e.getMessage());
+        	return false;
         }
         
         //Cache Settings
