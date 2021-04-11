@@ -2,9 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.expl0itz.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
-  <version>1.15-SNAPSHOT</version>
+  <version>1.2-SNAPSHOT</version>
   <name>WorldwideChat</name>
-  <description>Translate incoming chat to any language!</description>
+  <description>Break the blocky language barrier!</description>
   <build>
     <finalName>${project.artifactId}</finalName>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>

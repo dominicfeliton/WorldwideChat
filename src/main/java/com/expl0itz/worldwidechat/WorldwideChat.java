@@ -61,7 +61,7 @@ public class WorldwideChat extends JavaPlugin {
     private ArrayList < PlayerRecord > playerRecords = new ArrayList < PlayerRecord > ();
     private ArrayList < CachedTranslation > cache = new ArrayList < CachedTranslation > ();
     
-    private double pluginVersion = 1.15;
+    private double pluginVersion = Double.parseDouble(this.getDescription().getVersion());
     
     private int bStatsID = 10562;
     private int updateCheckerDelay = 86400;
@@ -174,7 +174,7 @@ public class WorldwideChat extends JavaPlugin {
             final TextComponent versionNotice = Component.text()
                 .append(pluginPrefix.asComponent())
                 .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcVersion")).color(NamedTextColor.RED))
-                .append(Component.text().content(pluginVersion + "").color(NamedTextColor.LIGHT_PURPLE))
+                .append(Component.text().content("" + pluginVersion).color(NamedTextColor.LIGHT_PURPLE))
                 .build();
             Audience adventureSender = adventure.sender(sender);
             adventureSender.sendMessage(versionNotice);
