@@ -70,7 +70,7 @@ Translator:
   amazonRegion: 
   # For amazonRegion, choose the region closest to your server and type the corresponding code.
   # https://docs.aws.amazon.com/general/latest/gr/rande.html
-  # EX: If you are closes to US East (Ohio), you would type (us-east-2) withou the parenthesis after amazonRegion.
+  # EX: If you are closes to US East (Ohio), you would type (us-east-2) without the parenthesis after amazonRegion.
   
   # Set the number of phrases to be stored in the "translation cache."
   # This cache will store your X most translated phrases. This might be faster if:
