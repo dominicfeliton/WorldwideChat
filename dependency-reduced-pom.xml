@@ -86,6 +86,12 @@
               <include>com.squareup.okio:okio</include>
               <include>co.aikar:taskchain*</include>
               <include>me.clip:deluxechat</include>
+              <include>com.amazonaws:*</include>
+              <include>org.jsoup:*</include>
+              <include>com.fasterxml.jackson.core:*</include>
+              <include>com.fasterxml.jackson.dataformat:*</include>
+              <include>org.apache.httpcomponents:*</include>
+              <include>joda-time:*</include>
             </includes>
           </artifactSet>
           <relocations>

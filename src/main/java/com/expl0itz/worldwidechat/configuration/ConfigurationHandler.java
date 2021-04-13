@@ -9,6 +9,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.amazontranslate.AmazonTranslation;
 import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.watson.WatsonTranslation;
@@ -97,23 +98,31 @@ public class ConfigurationHandler {
         
         /* Translator Settings */
         try {
-        	if (getMainConfig().getBoolean("Translator.useWatsonTranslate") && !(getMainConfig().getBoolean("Translator.useGoogleTranslate"))) {
+        	if (getMainConfig().getBoolean("Translator.useWatsonTranslate") && (!(getMainConfig().getBoolean("Translator.useGoogleTranslate")) && (!(getMainConfig().getBoolean("Translator.useAmazonTranslate"))))) {
         		main.setTranslatorName("Watson");
         		WatsonTranslation test = new WatsonTranslation(
                     getMainConfig().getString("Translator.watsonAPIKey"),
                     getMainConfig().getString("Translator.watsonURL"));
                 test.initializeConnection();
-            } else if (getMainConfig().getBoolean("Translator.useGoogleTranslate") && !(getMainConfig().getBoolean("Translator.useWatsonTranslate"))) {
+            } else if (getMainConfig().getBoolean("Translator.useGoogleTranslate") && (!(getMainConfig().getBoolean("Translator.useWatsonTranslate")) && (!(getMainConfig().getBoolean("Translator.useAmazonTranslate"))))) {
             	main.setTranslatorName("Google Translate");
             	GoogleTranslation test = new GoogleTranslation(
                     getMainConfig().getString("Translator.googleTranslateAPIKey"));
                 test.initializeConnection();
+            } else if (getMainConfig().getBoolean("Translator.useAmazonTranslate") && (!(getMainConfig().getBoolean("Translator.useGoogleTranslate")) && (!(getMainConfig().getBoolean("Translator.useWatsonTranslate"))))) {
+            	main.setTranslatorName("Amazon Translate");
+            	AmazonTranslation test = new AmazonTranslation(
+            			getMainConfig().getString("Translator.amazonAccessKey"),
+            			getMainConfig().getString("Translator.amazonSecretKey"),
+            			getMainConfig().getString("Translator.amazonRegion"));
+            	test.initializeConnection();
             } else {
                 main.getLogger().severe(getMessagesConfig().getString("Messages.wwcConfigInvalidTranslatorSettings"));
                 return false;
             }
         } catch (Exception e) {
         	main.getLogger().severe("(" + main.getTranslatorName() + ") " + e.getMessage());
+        	e.printStackTrace();
         	return false;
         }
         

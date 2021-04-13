@@ -56,9 +56,21 @@ Translator:
   # Google Translate Configuration: Change to true to enable, and fill out the required information below.
   # Has a more restrictive "free" plan compared to Watson, but may be more accurate.
   # useGoogleTranslate is default "false," meaning it is not used. 
-  # Set to "true" to use it, but make sure Watson is false.
+  # Set to "true" to use it, but make sure every other translator is set to false.
   useGoogleTranslate: false
   googleTranslateAPIKey:
+  
+  # Amazon Translate Configuration: Change to true to enable, and fill out the required information below.
+  # An alternative to both IBM Watson and Google Translate.
+  # useAmazonTranslate is default "false," meaning it is not used.
+  # Set to "true" to use it, but make sure every other translator is set to false.
+  useAmazonTranslate: false
+  amazonAccessKey:
+  amazonSecretKey:
+  amazonRegion: 
+  # For amazonRegion, choose the region closest to your server and type the corresponding code.
+  # https://docs.aws.amazon.com/general/latest/gr/rande.html
+  # EX: If you are closes to US East (Ohio), you would type (us-east-2) withou the parenthesis after amazonRegion.
   
   # Set the number of phrases to be stored in the "translation cache."
   # This cache will store your X most translated phrases. This might be faster if:

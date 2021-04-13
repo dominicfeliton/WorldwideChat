@@ -78,6 +78,12 @@
                             <include>com.squareup.okio:okio</include>
                             <include>co.aikar:taskchain*</include>
                             <include>me.clip:deluxechat</include>
+                            <include>com.amazonaws:*</include>
+                            <include>org.jsoup:*</include>
+                            <include>com.fasterxml.jackson.core:*</include>
+                            <include>com.fasterxml.jackson.dataformat:*</include>
+                            <include>org.apache.httpcomponents:*</include>
+                            <include>joda-time:*</include>
                         </includes>
                     </artifactSet>
                     <relocations>
@@ -216,6 +222,17 @@
             <groupId>com.google.cloud</groupId>
             <artifactId>google-cloud-translate</artifactId>
             <version>1.95.10</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-translate -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-translate</artifactId>
+            <version>1.11.997</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.13.1</version>
         </dependency>
         <!-- Locally stored dependencies; change systemPath to your appropriate dir... -->
         <dependency>

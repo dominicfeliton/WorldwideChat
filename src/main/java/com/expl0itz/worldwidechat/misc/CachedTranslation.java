@@ -8,8 +8,7 @@ public class CachedTranslation {
     private String outputPhrase;
     private int numberOfTimes;
     
-    public CachedTranslation(String inputLang, String outputLang, String inputPhrase, String outputPhrase)
-    {
+    public CachedTranslation(String inputLang, String outputLang, String inputPhrase, String outputPhrase) {
         this.inputLang = inputLang;
         this.outputLang = outputLang;
         this.inputPhrase = inputPhrase;
@@ -18,54 +17,44 @@ public class CachedTranslation {
     }
     
     /* Getters */
-    public String getInputLang()
-    {
+    public String getInputLang() {
         return inputLang;
     }
     
-    public String getOutputLang()
-    {
+    public String getOutputLang() {
         return outputLang;
     }
     
-    public String getInputPhrase()
-    {
+    public String getInputPhrase() {
         return inputPhrase;
     }
     
-    public String getOutputPhrase()
-    {
+    public String getOutputPhrase() {
         return outputPhrase;
     }
     
-    public int getNumberOfTimes()
-    {
+    public int getNumberOfTimes() {
         return numberOfTimes;
     }
     
     /* Setters */
-    public void setInputLang(String i)
-    {
+    public void setInputLang(String i) {
         inputLang = i;
     }
    
-    public void setOutputLang(String i)
-    {
+    public void setOutputLang(String i) {
         outputLang = i;
     }
     
-    public void setInputPhrase(String i)
-    {
+    public void setInputPhrase(String i) {
         inputPhrase = i;
     }
     
-    public void setOutputPhrase(String i)
-    {
+    public void setOutputPhrase(String i) {
         outputPhrase = i;
     }
     
-    public void setNumberOfTimes(int i)
-    {
+    public void setNumberOfTimes(int i) {
         numberOfTimes = i;
     }
 }

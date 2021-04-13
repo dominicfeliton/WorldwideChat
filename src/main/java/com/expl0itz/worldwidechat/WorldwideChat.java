@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
+import com.expl0itz.worldwidechat.amazontranslate.AmazonTranslateSupportedLanguageObject;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCStats;
@@ -57,6 +58,7 @@ public class WorldwideChat extends JavaPlugin {
     
     private ArrayList < WatsonSupportedLanguageObject > supportedWatsonLanguages;
     private ArrayList < GoogleTranslateSupportedLanguageObject > supportedGoogleTranslateLanguages;
+    private ArrayList < AmazonTranslateSupportedLanguageObject > supportedAmazonTranslateLanguages;
     private ArrayList < ActiveTranslator > activeTranslators = new ArrayList < ActiveTranslator > ();
     private ArrayList < PlayerRecord > playerRecords = new ArrayList < PlayerRecord > ();
     private ArrayList < CachedTranslation > cache = new ArrayList < CachedTranslation > ();
@@ -305,10 +307,10 @@ public class WorldwideChat extends JavaPlugin {
     
     public void addCacheTerm(CachedTranslation input) {
         if (cache.size() < getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize")) {
-            //DEBUG: getLogger().info("Added new term to cache.");
+            //getLogger().info("Added new term to cache.");
             cache.add(input);
         } else { //cache size is greater than X; let's remove the least used thing
-            //DEBUG: getLogger().info("Removing extra term!");
+            //getLogger().info("Removing extra term!");
             CachedTranslation leastAmountOfTimes = new CachedTranslation("","","","");
             leastAmountOfTimes.setNumberOfTimes(Integer.MAX_VALUE);
             for (int i = 0; i < cache.size(); i++) {
@@ -318,7 +320,7 @@ public class WorldwideChat extends JavaPlugin {
                 }
             }
             removeCacheTerm(leastAmountOfTimes);
-            //DEBUG: getLogger().info("Removed.");
+            //getLogger().info("Removed.");
             cache.add(input);
         }
     }
@@ -347,6 +349,10 @@ public class WorldwideChat extends JavaPlugin {
     
     public void setSupportedGoogleTranslateLanguages(ArrayList < GoogleTranslateSupportedLanguageObject > in) {
         supportedGoogleTranslateLanguages = in;
+    }
+    
+    public void setSupportedAmazonTranslateLanguages(ArrayList < AmazonTranslateSupportedLanguageObject > in) {
+    	supportedAmazonTranslateLanguages = in;
     }
     
     public void setUpdateCheckerDelay(int i) {
@@ -432,6 +438,10 @@ public class WorldwideChat extends JavaPlugin {
     
     public ArrayList < GoogleTranslateSupportedLanguageObject > getSupportedGoogleTranslateLanguages() {
         return supportedGoogleTranslateLanguages;
+    }
+    
+    public ArrayList < AmazonTranslateSupportedLanguageObject > getSupportedAmazonTranslateLanguages() {
+    	return supportedAmazonTranslateLanguages;
     }
     
     public TextComponent getPluginPrefix() {
