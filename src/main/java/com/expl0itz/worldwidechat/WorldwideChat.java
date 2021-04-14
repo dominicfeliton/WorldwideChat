@@ -64,6 +64,7 @@ public class WorldwideChat extends JavaPlugin {
     private ArrayList < CachedTranslation > cache = new ArrayList < CachedTranslation > ();
     
     private double pluginVersion = Double.parseDouble(this.getDescription().getVersion());
+    private int rateLimit = 0;
     
     private int bStatsID = 10562;
     private int updateCheckerDelay = 86400;
@@ -359,6 +360,10 @@ public class WorldwideChat extends JavaPlugin {
         updateCheckerDelay = i;
     }
     
+    public void setRateLimit(int i) {
+    	rateLimit = i;
+    }
+    
     public void setPluginLang(String i) {
         pluginLang = i;
     }
@@ -478,6 +483,10 @@ public class WorldwideChat extends JavaPlugin {
     
     public int getUpdateCheckerDelay() {
         return updateCheckerDelay;
+    }
+    
+    public int getRateLimit() {
+    	return rateLimit;
     }
     
     public ConfigurationHandler getConfigManager() {

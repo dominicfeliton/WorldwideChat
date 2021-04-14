@@ -2,7 +2,6 @@ package com.expl0itz.worldwidechat.watson;
 
 import java.util.ArrayList;
 
-import org.apache.commons.lang3.StringEscapeUtils;
 import org.bukkit.command.CommandSender;
 
 import com.expl0itz.worldwidechat.WorldwideChat;

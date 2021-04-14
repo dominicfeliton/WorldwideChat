@@ -12,6 +12,7 @@ Messages:
   wwcInitializationFail: 'No se pudo inicializar WorldwideChat.'
   wwcUserDataReloaded: 'Cargó todos los datos de usuario guardados.'
   wwcUserDataCorrupted: 'Se encontraron y movieron %i archivos de datos de usuario antiguos o dañados. Se eliminarán en la próxima recarga.'
+  wwcRateLimit: ' Sus traducciones tienen una tarifa limitada. Espere otros %i segundos.'
   # ------------------- Mensajes de escucha -------------------
   wwcOnJoinTranslationNotificationSourceLang: ' Su chat se está traduciendo de %i a %o.'
   wwcOnJoinTranslationNotificationNoSourceLang: ' Su chat se está traduciendo a %o.'
@@ -44,6 +45,8 @@ Messages:
   wwcConfigCacheEnabled: 'Caché del traductor habilitado y establecido en un límite de %i.'
   wwcConfigCacheDisabled: 'Caché del traductor deshabilitado.'
   wwcConfigBadUpdateDelay: 'Retardo de actualización no válido establecido en config.yml. Por defecto a 86400 segundos...'
+  wwcConfigRateLimitEnabled: 'Límite de frecuencia global habilitado y establecido en %i segundos.'
+  wwcConfigRateLimitInvalid: 'Límite de tasa incorrecto establecido en config.yml. Por defecto a 0 segundos...'
   # ------------------- / wwcr Mensajes -------------------
   wwcrSuccess: ' Recargado con éxito WorldwideChat.'
   wwcrFail: ' No se pudo volver a cargar WorldwideChat.'

@@ -1,5 +1,12 @@
 package com.expl0itz.worldwidechat.misc;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
+import org.threeten.bp.Instant;
+
 import com.expl0itz.worldwidechat.WorldwideChat;
 
 public class ActiveTranslator {
@@ -9,13 +16,14 @@ public class ActiveTranslator {
     private String playerUUID = "";
     private String inLangCode = "";
     private String outLangCode = "";
+    private String rateLimitPreviousTime = "None";
     
     private boolean hasBeenShownColorCodeWarning = false;
     private boolean translatingBook = false;
     private boolean translatingSign = false;
 
     public ActiveTranslator(String uuid, String langIn, String langOut, boolean hasBeenShownColorCodeWarning) {
-        playerUUID = uuid;
+    	playerUUID = uuid;
         inLangCode = langIn;
         outLangCode = langOut;
         this.hasBeenShownColorCodeWarning = hasBeenShownColorCodeWarning;
@@ -49,6 +57,20 @@ public class ActiveTranslator {
         translatingSign = i;
     }
     
+    public void setRateLimitPreviousTime(Instant i) {
+    	rateLimitPreviousTime = i.toString();
+    	File userFile = main.getConfigManager().getUserSettingsFile(playerUUID);
+    	if (userFile != null) {
+    		FileConfiguration userConfig = YamlConfiguration.loadConfiguration(userFile);
+    		userConfig.set("rateLimitPreviousRecordedTime", i.toString());
+    		try {
+				userConfig.save(userFile);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+    	}
+    }
+    
     /* Getters */
     public String getUUID() {
         return playerUUID;
@@ -62,6 +84,10 @@ public class ActiveTranslator {
         return outLangCode;
     }
 
+    public String getRateLimitPreviousTime() {
+    	return rateLimitPreviousTime;
+    }
+    
     public boolean getCCWarning() {
         return hasBeenShownColorCodeWarning;
     }

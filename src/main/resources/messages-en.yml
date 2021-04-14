@@ -12,6 +12,7 @@ Messages:
   wwcInitializationFail: 'Failed to initialize WorldwideChat.'
   wwcUserDataReloaded: 'Loaded all saved user data.'
   wwcUserDataCorrupted: 'Found and moved %i corrupted or old user data files. They will be deleted on the next reload.'
+  wwcRateLimit: ' Your translations are rate limited. Please wait another %i seconds.'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: ' Your chat is being translated from %i to %o.'
   wwcOnJoinTranslationNotificationNoSourceLang: ' Your chat is being translated to %o.'
@@ -44,6 +45,8 @@ Messages:
   wwcConfigCacheEnabled: 'Translator cache enabled and set to a limit of %i.'
   wwcConfigCacheDisabled: 'Translator cache disabled.'
   wwcConfigBadUpdateDelay: 'Invalid updater delay set in config.yml. Defaulting to 86400 seconds...'
+  wwcConfigRateLimitEnabled: 'Global rate limit enabled and set to %i seconds.'
+  wwcConfigRateLimitInvalid: 'Bad rate limit set in config.yml. Defaulting to 0 seconds...'
   #------------------- /wwcr Messages -------------------
   wwcrSuccess: ' Successfully reloaded WorldwideChat.'
   wwcrFail: ' Failed to reload WorldwideChat.'

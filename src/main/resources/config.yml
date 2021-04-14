@@ -80,4 +80,10 @@ Translator:
   # The default is 10.
   translatorCacheSize: 10
   
+  # Rate limit the translator, in seconds (no decimals.) 
+  # Unlike the "worldwidechat.ratelimit.####" permission per player, this will apply serverwide.
+  # To whitelist people from all rate-limits including this one, give them the permission "worldwidechat.ratelimit.exempt"
+  # The default is 0, or disabled.
+  rateLimit: 0
+  
   # The End! For now...:)

@@ -63,39 +63,42 @@ permissions:
             worldwidechat.wwcts: true
             worldwidechat.wwcts.otherplayers: true
             worldwidechat.wwcs: true
+            worldwidechat.ratelimit.exempt: true
         default: op
     worldwidechat.wwc:
-        description: Prints WorldwideChat version.
+        description: Gives access to /wwc.
         default: true
     worldwidechat.wwcr:
-        description: Reloads WorldwideChat.
+        description: Gives access to /wwcr.
         default: op
     worldwidechat.wwcg:
-        description: Enables chat translation to a certain language globally.
+        description: Gives access to /wwcg.
         default: op
     worldwidechat.wwct:
-        description: Enables chat translation to a certain language for a specific player.
+        description: Gives access to /wwct.
         default: true
     worldwidechat.wwct.otherplayers:
-        description: Enables chat translation to a certain language for other players.
+        description: Gives access to /wwct to a certain language for other players.
         default: op
     worldwidechat.chatupdate:
-        description: Enables receiving of plugin update notification in chat on login.
+        description: Gives access to receiving of plugin update notification in chat on login.
         default: op
     worldwidechat.wwctb:
-        description: Enables book translation to a certain language.
+        description: Gives access to /wwctb.
         default: true
     worldwidechat.wwctb.otherplayers:
-        description: Enables book translation to a certain language on target players.
+        description: Gives access to /wwctb to a certain language on target players.
         default: op
     worldwidechat.wwcts:
-        description: Enables sign translation to a certain language.
+        description: Gives access to /wwcts.
         default: true
     worldwidechat.wwcts.otherplayers:
-        description: Enables sign translation to a certain language on target players.
+        description: Gives access to /wwcts to a certain language on target players.
         default: op
     worldwidechat.wwcs:
-        description: Gets translation stats for a specified user.
+        description: Gives access to /wwcs.
         default: op
-    
+    worldwidechat.ratelimit.exempt:
+        description: Exempts a user from rate limits, both personally and globally.
+        default: op
     

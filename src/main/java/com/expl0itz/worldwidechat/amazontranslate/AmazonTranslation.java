@@ -3,16 +3,13 @@ package com.expl0itz.worldwidechat.amazontranslate;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
-import com.amazonaws.regions.Regions;
 import com.amazonaws.services.translate.AmazonTranslate;
 import com.amazonaws.services.translate.AmazonTranslateClient;
 import com.amazonaws.services.translate.model.TranslateTextRequest;
@@ -53,7 +50,7 @@ public class AmazonTranslation {
     			.withText("Hi, how are you?")
     			.withSourceLanguageCode("en")
     			.withTargetLanguageCode("es");
-    	TranslateTextResult result = translate.translateText(request);
+    	translate.translateText(request);
     	
     	/* Get supported languages from aws docs */
     	ArrayList < AmazonTranslateSupportedLanguageObject > supportedLangs = new ArrayList < AmazonTranslateSupportedLanguageObject >();

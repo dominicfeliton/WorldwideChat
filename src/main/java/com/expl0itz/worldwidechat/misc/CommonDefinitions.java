@@ -1,10 +1,15 @@
 package com.expl0itz.worldwidechat.misc;
 
+import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Set;
 
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
+import org.bukkit.permissions.PermissionAttachmentInfo;
+import org.threeten.bp.Instant;
+import org.threeten.bp.temporal.ChronoUnit;
 
 import com.amazonaws.services.translate.model.InvalidRequestException;
 import com.expl0itz.worldwidechat.WorldwideChat;
@@ -15,6 +20,7 @@ import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
 import com.expl0itz.worldwidechat.watson.WatsonSupportedLanguageObject;
 import com.expl0itz.worldwidechat.watson.WatsonTranslation;
 import com.google.cloud.translate.TranslateException;
+import com.google.common.base.CharMatcher;
 import com.ibm.cloud.sdk.core.service.exception.NotFoundException;
 
 import net.kyori.adventure.audience.Audience;
@@ -211,7 +217,6 @@ public class CommonDefinitions {
             //we're still gonna translate it but it won't look pretty
         }
     	
-    	/* Any other checks beforehand */
     	if (!(inMessage.length() > 0)) {
     		return "";
     	}
@@ -255,6 +260,61 @@ public class CommonDefinitions {
                     return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase())); //done :)
                 }
             }
+        }
+        
+        /* Rate limit check */
+        boolean isExempt = false;
+        int personalRateLimit = 0;
+        Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
+        for (PermissionAttachmentInfo perm : perms) {
+        	if (perm.getPermission().startsWith("worldwidechat.ratelimit.")) {
+        		if (perm.getPermission().indexOf("exempt") != -1) {
+        			isExempt = true;
+        			break;
+        		} else {
+        			String delayStr = CharMatcher.inRange('0', '9').retainFrom(perm.getPermission());
+        			if (!delayStr.isEmpty()) {
+        				personalRateLimit = Integer.parseInt(delayStr);
+        			}
+        		}
+        	}
+        } if (!isExempt && personalRateLimit > 0) { // Personal Limits (Override Global)
+        	if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
+        		Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
+        		Instant currTime = Instant.now();
+        		if (currTime.compareTo(previous.plus(personalRateLimit, ChronoUnit.SECONDS)) < 0) {
+        			        final TextComponent rateLimit = Component.text()
+                                .append(WorldwideChat.getInstance().getPluginPrefix().asComponent())
+                                .append(Component.text().content(WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages.wwcRateLimit")
+                                		.replace("%i", "" + ChronoUnit.SECONDS.between(currTime, previous.plus(personalRateLimit, ChronoUnit.SECONDS)))).color(NamedTextColor.YELLOW))
+                                .build();
+                            WorldwideChat.getInstance().adventure().sender(currPlayer).sendMessage(rateLimit);
+                            return inMessage;  	
+        				} else {
+        					currActiveTranslator.setRateLimitPreviousTime(Instant.now());
+        				}
+        	} else {
+        		currActiveTranslator.setRateLimitPreviousTime(Instant.now());
+        	}	
+        } else if (!isExempt && WorldwideChat.getInstance().getRateLimit() > 0) { // Global Limits
+           if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
+        		Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
+        		Instant currTime = Instant.now();
+        		int globalLimit = WorldwideChat.getInstance().getRateLimit();
+        		if (currTime.compareTo(previous.plus(globalLimit, ChronoUnit.SECONDS)) < 0) {
+        			        final TextComponent rateLimit = Component.text()
+                                .append(WorldwideChat.getInstance().getPluginPrefix().asComponent())
+                                .append(Component.text().content(WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages.wwcRateLimit")
+                                		.replace("%i", "" + ChronoUnit.SECONDS.between(currTime, previous.plus(globalLimit, ChronoUnit.SECONDS)))).color(NamedTextColor.YELLOW))
+                                .build();
+                            WorldwideChat.getInstance().adventure().sender(currPlayer).sendMessage(rateLimit);
+                            return inMessage;  	
+        				} else {
+        					currActiveTranslator.setRateLimitPreviousTime(Instant.now());
+        				}
+        	} else {
+        		currActiveTranslator.setRateLimitPreviousTime(Instant.now());
+        	}	
         }
         
     	/* Begin actual translation, set message to output */

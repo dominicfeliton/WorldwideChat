@@ -74,6 +74,15 @@ public class ConfigurationHandler {
         } catch (Exception e) {
             main.getLogger().warning((getMessagesConfig().getString("Messages.wwcConfigInvalidPrefixSettings")));
         }
+        //Rate-limit Settings
+        try {
+        	if (getMainConfig().getInt("Translator.rateLimit") > 0) {
+        		main.setRateLimit(getMainConfig().getInt("Translator.rateLimit"));
+        		main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigRateLimitEnabled").replace("%i", "" + getMainConfig().getInt("Translator.rateLimit")));
+        	}
+        } catch (Exception e) {
+        	main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigRateLimitInvalid"));
+        }
         //bStats
         main.setbStats(getMainConfig().getBoolean("General.enablebStats"));
         if (getMainConfig().getBoolean("General.enablebStats")) {
@@ -131,9 +140,9 @@ public class ConfigurationHandler {
         if (getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
             main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigCacheEnabled").replace("%i", "" + getMainConfig().getInt("Translator.translatorCacheSize")));
         } else {
-            main.getLogger().warning(ChatColor.YELLOW + getMessagesConfig().getString("Messages.wwcConfigCacheDisabled"));
+            main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigCacheDisabled"));
         }
-        return true; // We made it, everything set successfully; return false == fatal error, plugin should disable after
+        return true; // We made it, everything set successfully; return false == fatal error and plugin disables itself
     }
  
     /* Per User Settings Saver */
@@ -159,6 +168,9 @@ public class ConfigurationHandler {
                 
                 userSettingsConfig.createSection("signTranslation");
                 userSettingsConfig.set("signTranslation", false);
+               
+                userSettingsConfig.createSection("rateLimitPreviousRecordedTime");
+                userSettingsConfig.set("rateLimitPreviousRecordedTime", "None");
                 
                 userSettingsConfig.save(userSettingsFile);
             } catch (IOException e) {

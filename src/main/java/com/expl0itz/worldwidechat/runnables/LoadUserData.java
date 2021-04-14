@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.threeten.bp.Instant;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
@@ -36,7 +37,7 @@ public class LoadUserData implements Runnable{
             eaCorrupt.delete();
         }
         
-        /* Load user records */
+        /* Load user records (/wwcs) */
         for (File eaFile : statsFolder.listFiles()) {
             FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
             if (currFileConfig.contains("attemptedTranslations")
@@ -60,13 +61,14 @@ public class LoadUserData implements Runnable{
             }
         }
         
-        /* Load user files */
+        /* Load user files (last translation session, etc.)*/
         for (File eaFile : userDataFolder.listFiles()) {
             FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
             if ((currFileConfig.getString("inLang").equalsIgnoreCase("None") || defs.isSupportedLangForSource(currFileConfig.getString("inLang"), main.getTranslatorName())
                     && (defs.isSupportedLangForTarget(currFileConfig.getString("outLang"), main.getTranslatorName())))
                     && currFileConfig.contains("signTranslation")
-                    && currFileConfig.contains("bookTranslation")) { //If file has proper entries
+                    && currFileConfig.contains("bookTranslation")
+                    && currFileConfig.isString("rateLimitPreviousRecordedTime")) { //If file has proper entries
                 main.addActiveTranslator(new ActiveTranslator(eaFile.getName().substring(0, eaFile.getName().indexOf(".")), //add active translator to arraylist
                         currFileConfig.getString("inLang"),
                         currFileConfig.getString("outLang"),
@@ -74,7 +76,10 @@ public class LoadUserData implements Runnable{
                 ActiveTranslator currentTranslator = main.getActiveTranslator(eaFile.getName().substring(0, eaFile.getName().indexOf(".")));
                 currentTranslator.setTranslatingSign(currFileConfig.getBoolean("signTranslation"));
                 currentTranslator.setTranslatingBook(currFileConfig.getBoolean("bookTranslation"));
-            } else { //move corrupted files to corrupted dir; they will be deleted on next run
+                if (!currFileConfig.getString("rateLimitPreviousRecordedTime").equals("None")) {
+                	currentTranslator.setRateLimitPreviousTime(Instant.parse(currFileConfig.getString("rateLimitPreviousRecordedTime")));
+                }
+            } else { //move corrupted or old files to corrupted dir; they will be deleted on next run
                 try {
                     File badDataFile = new File(badDataFolder.toString() + File.separator + eaFile.getName().toString());
                     Files.move(eaFile, badDataFile);
@@ -83,8 +88,7 @@ public class LoadUserData implements Runnable{
                 }
                 invalidConfigs++;
             }
-        }
-        if (invalidConfigs > 0) {
+        } if (invalidConfigs > 0) {
             main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataCorrupted").replace("%i", invalidConfigs + ""));
         }
     }
