@@ -35,7 +35,7 @@ public class OnPlayerJoinListener implements Listener {
             main.setOutOfDate(true);
         }
         
-        /* Global translate is disabled, and user has a translation config. */
+        /* Global translate is disabled, and user has a translation config */
         if ((main.getConfigManager().getMainConfig().getString("Chat.sendTranslationChat").equals("true")) 
                 && (main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED") == null)
                 && main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()) != null) { //if they have a config
@@ -53,7 +53,7 @@ public class OnPlayerJoinListener implements Listener {
                     .build();
                 main.adventure().sender(event.getPlayer()).sendMessage(noSource);
             }
-        /* Global translate is enabled, and user does not have a translation config. */
+        /* Global translate is enabled, and user does not have a translation config */
         } else if ((main.getConfigManager().getMainConfig().getString("Chat.sendTranslationChat").equals("true")) 
                 && main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED") != null
                 && main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()) == null) { //If global translate is enabled...
@@ -71,7 +71,7 @@ public class OnPlayerJoinListener implements Listener {
                     .build();
                 main.adventure().sender(event.getPlayer()).sendMessage(noSource);
             }
-        /* Global translate is enabled, but user has a translation config. */
+        /* Global translate is enabled, but user has a translation config */
         } else if ((main.getConfigManager().getMainConfig().getString("Chat.sendTranslationChat").equals("true")) 
                 && main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED") != null
                 && main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()) != null) { //If global translate is enabled...

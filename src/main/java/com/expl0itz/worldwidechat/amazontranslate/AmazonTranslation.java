@@ -52,7 +52,7 @@ public class AmazonTranslation {
     			.withTargetLanguageCode("es");
     	translate.translateText(request);
     	
-    	/* Get supported languages from aws docs */
+    	/* Get supported languages from AWS docs */
     	ArrayList < AmazonTranslateSupportedLanguageObject > supportedLangs = new ArrayList < AmazonTranslateSupportedLanguageObject >();
 		Document doc = Jsoup.connect("https://docs.aws.amazon.com/translate/latest/dg/what-is.html#what-is-languages").get();
 		Elements tr = doc.select("tr");
@@ -86,17 +86,14 @@ public class AmazonTranslation {
     			.withRegion(System.getProperty("AMAZON_REGION"))
     			.build();
     	
-    	/* Test translation, will throw exception if it fails */
+    	/* Actual translation */
     	TranslateTextRequest request = new TranslateTextRequest()
     			.withText(textToTranslate)
     			.withSourceLanguageCode(inputLang.equals("None") ? "auto" : inputLang)
     			.withTargetLanguageCode(outputLang);
     	TranslateTextResult result = translate.translateText(request);
         
-        /* Process final output */
-        String finalOut = result.getTranslatedText();
-        
-        /* Return final result */
-        return finalOut;
+        /* Process + Return final result */
+        return result.getTranslatedText();
     }
 }

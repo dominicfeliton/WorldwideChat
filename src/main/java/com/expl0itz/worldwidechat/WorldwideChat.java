@@ -64,8 +64,8 @@ public class WorldwideChat extends JavaPlugin {
     private ArrayList < CachedTranslation > cache = new ArrayList < CachedTranslation > ();
     
     private double pluginVersion = Double.parseDouble(this.getDescription().getVersion());
-    private int rateLimit = 0;
     
+    private int rateLimit = 0;
     private int bStatsID = 10562;
     private int updateCheckerDelay = 86400;
 
@@ -250,7 +250,6 @@ public class WorldwideChat extends JavaPlugin {
         return this.adventure;
     }
     
-    /* Common Methods */
     public boolean checkSenderIdentity(CommandSender sender) {
         if (!(sender instanceof Player)) {
             final TextComponent consoleNotice = Component.text()
