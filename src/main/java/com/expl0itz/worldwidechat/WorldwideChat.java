@@ -225,8 +225,8 @@ public class WorldwideChat extends JavaPlugin {
         //Cancel + remove all tasks
         for (String eachTask : backgroundTasks.keySet()) {
             backgroundTasks.get(eachTask).cancel();
-            backgroundTasks.remove(eachTask);
         }
+        backgroundTasks.clear();
     }
 
     public void checkMCVersion() {
