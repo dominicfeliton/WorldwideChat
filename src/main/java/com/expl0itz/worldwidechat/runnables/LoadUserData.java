@@ -28,7 +28,7 @@ public class LoadUserData implements Runnable{
 		userDataFolder.mkdir();
 		statsFolder.mkdir();
         
-        /* Add each to Translator Array in main class */
+        /* Prepare add each file to Translator Array in main class */
         CommonDefinitions defs = new CommonDefinitions();
         int invalidConfigs = 0;
         
@@ -60,6 +60,11 @@ public class LoadUserData implements Runnable{
                 invalidConfigs++;
             }
         }
+        
+        /* If translator settings are invalid, do not do anything else... */
+    	if (main.getTranslatorName().equals("Invalid")) {
+    		return;
+    	}
         
         /* Load user files (last translation session, etc.)*/
         for (File eaFile : userDataFolder.listFiles()) {

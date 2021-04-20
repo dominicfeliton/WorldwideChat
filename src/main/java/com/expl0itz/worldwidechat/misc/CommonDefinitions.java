@@ -181,6 +181,11 @@ public class CommonDefinitions {
     }
     
     public static String translateText(String inMessage, Player currPlayer) {
+    	/* If translator settings are invalid, do not do this... */
+    	if (WorldwideChat.getInstance().getTranslatorName().equals("Invalid")) {
+    		return "";
+    	}
+    	
     	 /* Sanitize Inputs */
         //Warn user about color codes
         //EssentialsX chat and maybe others replace "&4Test" with " 4Test"

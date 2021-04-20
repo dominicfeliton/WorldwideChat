@@ -22,7 +22,7 @@ public class OnPlayerJoinListener implements Listener {
     @EventHandler(priority = EventPriority.NORMAL) 
     public void onPlayerJoinListener(PlayerJoinEvent event){
         //Check if plugin has updates
-        if ((main.getConfigManager().getMainConfig().getString("Chat.sendPluginUpdateChat").equals("true")) && 
+        if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) && 
                 (main.getOutOfDate()) && (event.getPlayer().hasPermission("worldwidechat.chatupdate"))) {
             final TextComponent outOfDate = Component.text()
                 .append(main.getPluginPrefix().asComponent())
@@ -36,7 +36,7 @@ public class OnPlayerJoinListener implements Listener {
         }
         
         /* Global translate is disabled, and user has a translation config */
-        if ((main.getConfigManager().getMainConfig().getString("Chat.sendTranslationChat").equals("true")) 
+        if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat")) 
                 && (main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED") == null)
                 && main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()) != null) { //if they have a config
             FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()));
@@ -54,7 +54,7 @@ public class OnPlayerJoinListener implements Listener {
                 main.adventure().sender(event.getPlayer()).sendMessage(noSource);
             }
         /* Global translate is enabled, and user does not have a translation config */
-        } else if ((main.getConfigManager().getMainConfig().getString("Chat.sendTranslationChat").equals("true")) 
+        } else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat")) 
                 && main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED") != null
                 && main.getConfigManager().getUserSettingsFile(event.getPlayer().getUniqueId().toString()) == null) { //If global translate is enabled...
             FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED"));

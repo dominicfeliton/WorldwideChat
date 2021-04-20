@@ -84,6 +84,7 @@
                             <include>com.fasterxml.jackson.dataformat:*</include>
                             <include>org.apache.httpcomponents:*</include>
                             <include>joda-time:*</include>
+                            <include>fr.minuskube.inv:smart-invs</include>
                         </includes>
                     </artifactSet>
                     <relocations>
@@ -241,6 +242,11 @@
             <version>1.0.0</version>
             <scope>system</scope>
             <systemPath>C:/Users/Dominic/Desktop/WorldwideChat/WorldwideChat/privatedependencies/DeluxeChat.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>fr.minuskube.inv</groupId>
+            <artifactId>smart-invs</artifactId>
+            <version>1.2.7</version>
         </dependency>
     </dependencies>
 </project>

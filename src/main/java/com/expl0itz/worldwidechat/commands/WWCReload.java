@@ -1,14 +1,10 @@
 package com.expl0itz.worldwidechat.commands;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.scheduler.BukkitTask;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.runnables.LoadUserData;
-import com.expl0itz.worldwidechat.runnables.UpdateChecker;
 
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
@@ -32,16 +28,6 @@ public class WWCReload extends BasicCommand {
 
         //Reload main config + other configs
         if (main.loadPluginConfigs()) { //If config loading succeeded
-            main.getLogger().info(ChatColor.LIGHT_PURPLE + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", main.getTranslatorName()));
-            
-            //Check for Updates
-            BukkitTask updateChecker = Bukkit.getScheduler().runTaskAsynchronously(main, new UpdateChecker()); //Run update checker now
-            main.addBackgroundTask("updateChecker", updateChecker);
-            
-            //Load saved user data
-            Bukkit.getScheduler().runTaskAsynchronously(main, new LoadUserData());
-            main.getLogger().info(ChatColor.LIGHT_PURPLE + main.getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
-            
             //We made it!
             final TextComponent wwcrSuccess = Component.text()
                     .append(main.getPluginPrefix().asComponent())

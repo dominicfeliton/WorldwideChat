@@ -12,6 +12,7 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
+import net.md_5.bungee.api.ChatColor;
 
 public class WWCStats extends BasicCommand{
 
@@ -24,7 +25,7 @@ public class WWCStats extends BasicCommand{
     public boolean processCommand() {
         /* Init vars */
         Audience adventureSender = main.adventure().sender(sender);
-        boolean isActiveTranslator = false;
+        String isActiveTranslator = ChatColor.RED + "\u2717";
         
         /* Sanitze args */
         if (args.length == 0 || args.length > 1) {
@@ -44,12 +45,12 @@ public class WWCStats extends BasicCommand{
                 //Is on record; continue
                 PlayerRecord record = main.getPlayerRecord(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(), false);
                 if (main.getActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString()) != null) { //is currently active
-                    isActiveTranslator = true;
+                    isActiveTranslator = ChatColor.GREEN + "\u2713";
                 }
                 final TextComponent stats = Component.text()
                         .append(main.getPluginPrefix().asComponent())
                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcsName").replace("%i", args[0])).color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
-                        .append(Component.text().content("\n- " + main.getConfigManager().getMessagesConfig().getString("Messages.wwcsIsActiveTranslator").replace("%i", isActiveTranslator + "")).color(NamedTextColor.AQUA))
+                        .append(Component.text().content("\n- " + main.getConfigManager().getMessagesConfig().getString("Messages.wwcsIsActiveTranslator").replace("%i", isActiveTranslator)).color(NamedTextColor.AQUA))
                         .append(Component.text().content("\n- " + main.getConfigManager().getMessagesConfig().getString("Messages.wwcsAttemptedTranslations").replace("%i", record.getAttemptedTranslations() + "")).color(NamedTextColor.AQUA))
                         .append(Component.text().content("\n- " + main.getConfigManager().getMessagesConfig().getString("Messages.wwcsSuccessfulTranslations").replace("%i", record.getSuccessfulTranslations() + "")).color(NamedTextColor.AQUA))
                         .append(Component.text().content("\n- " + main.getConfigManager().getMessagesConfig().getString("Messages.wwcsLastTranslationTime").replace("%i", record.getLastTranslationTime())).color(NamedTextColor.AQUA))

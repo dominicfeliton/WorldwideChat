@@ -69,7 +69,7 @@ public class ConfigurationHandler {
             if (!getMainConfig().getString("General.prefixName").equalsIgnoreCase("Default")) {
                 main.setPrefixName(getMainConfig().getString("General.prefixName"));
             } else {
-                main.setPrefixName("WWC"); //if we don't do this, old prefixes will not revert until a server restart/reload
+                main.setPrefixName("WWC"); //If default the entry for prefix, interpret as WWC
             }
         } catch (Exception e) {
             main.getLogger().warning((getMessagesConfig().getString("Messages.wwcConfigInvalidPrefixSettings")));
@@ -127,12 +127,18 @@ public class ConfigurationHandler {
             	test.initializeConnection();
             } else {
                 main.getLogger().severe(getMessagesConfig().getString("Messages.wwcConfigInvalidTranslatorSettings"));
-                return false;
+                getMainConfig().set("Translator.useWatsonTranslate", false);
+                getMainConfig().set("Translator.useGoogleTranslate", false);
+                getMainConfig().set("Translator.useAmazonTranslate", false);
+                getMainConfig().save(configFile);
+                main.setTranslatorName("Invalid");
+                //return false;
             }
         } catch (Exception e) {
         	main.getLogger().severe("(" + main.getTranslatorName() + ") " + e.getMessage());
         	e.printStackTrace();
-        	return false;
+        	main.setTranslatorName("Invalid");
+        	//return false;
         }
         
         //Cache Settings

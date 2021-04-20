@@ -48,6 +48,12 @@ commands:
         usage: §4/wwcs <playerName>
         permission: worldwidechat.wwcs
         permission-message: §4You do not have permission to run this command.
+    wwcc:
+        description: Opens the Configuration GUI for the command sender.
+        aliases: [wwcconfiguration, translateconfiguration]
+        usage: §4/wwcc
+        permission: worldwidechat.wwcc
+        permission-message: §4You do not have permission to run this command.
 permissions:
     worldwidechat.*:
         description: Gives access to all WorldwideChat commands.
@@ -64,6 +70,7 @@ permissions:
             worldwidechat.wwcts.otherplayers: true
             worldwidechat.wwcs: true
             worldwidechat.ratelimit.exempt: true
+            worldwidechat.wwcc: true
         default: op
     worldwidechat.wwc:
         description: Gives access to /wwc.
@@ -100,5 +107,8 @@ permissions:
         default: op
     worldwidechat.ratelimit.exempt:
         description: Exempts a user from rate limits, both personally and globally.
+        default: op
+    worldwidechat.wwcc:
+        description: Gives access to /wwcc.
         default: op
     
