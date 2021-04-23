@@ -59,7 +59,7 @@ public class WWCTranslate extends BasicCommand {
                 fileToBeDeleted.delete();
             }
             adventureSender.sendMessage(chatTranslationStopped);
-            if (args.length == 0 || args[0].equalsIgnoreCase("Stop")) {
+            if (args[0].equalsIgnoreCase("Stop")) {
                 return true;
             }
         } else if (isGlobal && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) //If /wwcg is called
@@ -77,7 +77,7 @@ public class WWCTranslate extends BasicCommand {
             for (Player eaPlayer: Bukkit.getOnlinePlayers()) {
                 main.adventure().sender(eaPlayer).sendMessage(chatTranslationStopped);
             }
-            if (args.length == 0 || args[0].equalsIgnoreCase("Stop")) {
+            if (args[0].equalsIgnoreCase("Stop")) {
                 return true;
             }
         }
@@ -113,7 +113,7 @@ public class WWCTranslate extends BasicCommand {
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStoppedOtherPlayer").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                 .build();
             adventureSender.sendMessage(chatTranslationStoppedOtherPlayer);
-            if (args.length == 1 || args[1].equalsIgnoreCase("Stop")) {
+            if (args[1].equalsIgnoreCase("Stop")) {
                 return true;
             }
         }

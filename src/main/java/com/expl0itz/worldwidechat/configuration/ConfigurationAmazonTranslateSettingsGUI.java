@@ -15,6 +15,7 @@ import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettings
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsAmazonTranslateRegionConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsAmazonTranslateSecretKeyConversation;
 
+import co.aikar.taskchain.TaskChain;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
@@ -127,10 +128,13 @@ public class ConfigurationAmazonTranslateSettingsGUI implements InventoryProvide
 		contents.set(1, 1, ClickableItem.of(translatorStatusButton, 
 				e -> {
 					    if (!main.getConfigManager().getMainConfig().getBoolean("Translator.useAmazonTranslate")) {
-					    	Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
-								@Override
-								public void run() {
-									try {
+					    	TaskChain<?> chain = WorldwideChat.newSharedChain("enableAmazonTranslate");
+					    	chain
+					    	    .sync(() -> {
+					    	        player.closeInventory();
+					    	    })
+					    	    .async(() -> {
+					    	    	try {
 									    AmazonTranslation testConnection = new AmazonTranslation(main.getConfigManager().getMainConfig().getString("Translator.amazonAccessKey"), 
 									    		main.getConfigManager().getMainConfig().getString("Translator.amazonSecretKey"), 
 									    		main.getConfigManager().getMainConfig().getString("Translator.amazonRegion"));
@@ -155,8 +159,12 @@ public class ConfigurationAmazonTranslateSettingsGUI implements InventoryProvide
 									        Audience adventureSender = main.adventure().sender(player);
 									    adventureSender.sendMessage(badResult);
 									}
-								}
-						});
+					    	    })
+					    	    .sync(() -> {
+					    	    	amazonTranslateSettings.open(player);
+					    	    })
+					    	    .sync(TaskChain::abort)
+					    	    .execute();
 					}
 		    }));
 	}

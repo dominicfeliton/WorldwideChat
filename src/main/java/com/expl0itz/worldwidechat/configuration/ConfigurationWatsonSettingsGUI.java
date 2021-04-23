@@ -12,8 +12,10 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsWatsonApiKeyConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsWatsonServiceUrlConversation;
+import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
 import com.expl0itz.worldwidechat.watson.WatsonTranslation;
 
+import co.aikar.taskchain.TaskChain;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
@@ -115,10 +117,13 @@ public class ConfigurationWatsonSettingsGUI implements InventoryProvider {
 		contents.set(1, 1, ClickableItem.of(translatorStatusButton, 
 				e -> {
 					    if (!main.getConfigManager().getMainConfig().getBoolean("Translator.useWatsonTranslate")) {
-					    	Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
-								@Override
-								public void run() {
-									try {
+					    	TaskChain<?> chain = WorldwideChat.newSharedChain("enableWatson");
+					    	chain
+					    	    .sync(() -> {
+					    	        player.closeInventory();
+					    	    })
+					    	    .async(() -> {
+					    	    	try {
 									    WatsonTranslation testConnection = new WatsonTranslation(main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"), main.getConfigManager().getMainConfig().getString("Translator.watsonURL"));
 									    testConnection.initializeConnection();
 									    main.addPlayerUsingConfigurationGUI(player);
@@ -141,8 +146,12 @@ public class ConfigurationWatsonSettingsGUI implements InventoryProvider {
 									        Audience adventureSender = main.adventure().sender(player);
 									    adventureSender.sendMessage(badResult);
 									}
-								}
-						});
+					    	    })
+					    	    .sync(() -> {
+					    	    	watsonSettings.open(player);
+					    	    })
+					    	    .sync(TaskChain::abort)
+					    	    .execute();
 					}
 		    }));
 	}

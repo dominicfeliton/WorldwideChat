@@ -9,10 +9,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.amazontranslate.AmazonTranslation;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsGoogleTranslateApiKeyConversation;
 import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
 
+import co.aikar.taskchain.TaskChain;
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
@@ -103,10 +105,13 @@ public class ConfigurationGoogleTranslateSettingsGUI implements InventoryProvide
 		contents.set(1, 1, ClickableItem.of(translatorStatusButton, 
 				e -> {
 					    if (!main.getConfigManager().getMainConfig().getBoolean("Translator.useGoogleTranslate")) {
-					    	Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
-								@Override
-								public void run() {
-									try {
+					    	TaskChain<?> chain = WorldwideChat.newSharedChain("enableGoogleTranslate");
+					    	chain
+					    	    .sync(() -> {
+					    	        player.closeInventory();
+					    	    })
+					    	    .async(() -> {
+					    	    	try {
 									    GoogleTranslation testConnection = new GoogleTranslation(main.getConfigManager().getMainConfig().getString("Translator.googleTranslateAPIKey"));
 									    testConnection.initializeConnection();
 									    main.addPlayerUsingConfigurationGUI(player);
@@ -129,8 +134,12 @@ public class ConfigurationGoogleTranslateSettingsGUI implements InventoryProvide
 									        Audience adventureSender = main.adventure().sender(player);
 									    adventureSender.sendMessage(badResult);
 									}
-								}
-						});
+					    	    })
+					    	    .sync(() -> {
+					    	    	googleTranslateSettings.open(player);
+					    	    })
+					    	    .sync(TaskChain::abort)
+					    	    .execute();
 					}
 		    }));
 	}
