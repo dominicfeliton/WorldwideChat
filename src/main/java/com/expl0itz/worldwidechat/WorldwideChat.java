@@ -1,19 +1,22 @@
 package com.expl0itz.worldwidechat;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.NamespacedKey;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
 import com.expl0itz.worldwidechat.amazontranslate.AmazonTranslateSupportedLanguageObject;
-import com.expl0itz.worldwidechat.commands.WWCConfigurationGUI;
+import com.expl0itz.worldwidechat.commands.WWCConfiguration;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCStats;
@@ -22,6 +25,7 @@ import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
 import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateSupportedLanguageObject;
+import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.listeners.BookReadListener;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
@@ -119,6 +123,7 @@ public class WorldwideChat extends JavaPlugin {
         inventoryManager = new WWCInventoryManager(this); //InventoryManager for SmartInvs API
         inventoryManager.init(); //Init InventoryManager
         instance = this; //Static instance of this class
+        registerGlowEffect(); //Register inventory glow effect
         
         //Load plugin configs, check if they successfully initialized
         if (loadPluginConfigs()) {
@@ -233,7 +238,7 @@ public class WorldwideChat extends JavaPlugin {
         } else if (command.getName().equalsIgnoreCase("wwcc")) {
         	//Configuration GUI
         	if (checkSenderIdentity(sender)) {
-        		WWCConfigurationGUI wwcc = new WWCConfigurationGUI(sender, command, label, args);
+        		WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
         		return wwcc.processCommand();
         	}
         }
@@ -298,6 +303,26 @@ public class WorldwideChat extends JavaPlugin {
     		return false;
     	}
     	return true;
+    }
+    
+    public void registerGlowEffect() {
+        try {
+            Field f = Enchantment.class.getDeclaredField("acceptingNew");
+            f.setAccessible(true);
+            f.set(null, true);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(this, "wwc_glow"));
+            Enchantment.registerEnchantment(glow);
+        }
+        catch (IllegalArgumentException e){
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
     }
     
     /* Setters */

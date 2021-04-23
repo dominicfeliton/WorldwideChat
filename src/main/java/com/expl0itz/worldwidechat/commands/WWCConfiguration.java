@@ -7,9 +7,9 @@ import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.configuration.ConfigurationGeneralSettingsGUI;
 
-public class WWCConfigurationGUI extends BasicCommand {
+public class WWCConfiguration extends BasicCommand {
 
-	public WWCConfigurationGUI(CommandSender sender, Command command, String label, String[] args) {
+	public WWCConfiguration(CommandSender sender, Command command, String label, String[] args) {
 		super(sender, command, label, args);
 	}
 	

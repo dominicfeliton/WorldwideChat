@@ -31,7 +31,20 @@ public class WWCTranslate extends BasicCommand {
      */
 
     public boolean processCommand(boolean isGlobal) {
-        /* Sanity checks */
+    	/* GUI Checks */
+    	if (args.length == 0 && !isGlobal) { /* User wants to see their own translation session */
+    		WWCTranslateGUIMainMenu.getTranslateMainMenu(null).open((Player)sender);
+    		return true;
+    	} else if (args.length == 0 && isGlobal) { /* Global translate */
+    		//wwcg GUI
+    		return true;
+    	} else if (args.length == 1 && !isGlobal && !args[0].equalsIgnoreCase(sender.getName()) && main.getServer().getPlayer(args[0]) != null) { /* User wants to see another translation session */
+    		//add 2nd constructor that takes 2nd arg, which would be the target player
+    		WWCTranslateGUIMainMenu.getTranslateMainMenu(main.getServer().getPlayer(args[0])).open((Player)sender);
+    		return true;
+    	}
+    	
+        /* Existing translator checks */
         Audience adventureSender = main.adventure().sender(sender);
         ActiveTranslator currTarget = main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
         if (!isGlobal && currTarget instanceof ActiveTranslator) { //Don't let a person be multiple ActiveTranslator objs
@@ -70,7 +83,7 @@ public class WWCTranslate extends BasicCommand {
         }
 
         /* Sanitize args */
-        if (args.length == 0 || args.length > 3) {
+        if (args.length > 3) {
             //Not enough/too many args
             final TextComponent invalidArgs = Component.text()
                 .append(main.getPluginPrefix().asComponent())
