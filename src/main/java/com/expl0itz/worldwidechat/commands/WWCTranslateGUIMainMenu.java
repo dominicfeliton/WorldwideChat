@@ -154,9 +154,6 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 							getTranslateMainMenu(targetPlayerUUID).open(player);
 						}));
 			}
-		} else if (targetPlayerUUID != null) { /* Target player exists */
-			
-			
 		} else if (main.getActiveTranslator(player.getUniqueId().toString()) != null) { /* Current player is active translator */
 			ActiveTranslator currTranslator = main.getActiveTranslator(player.getUniqueId().toString());
 			
@@ -218,9 +215,8 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 						translateSign.processCommand();
 						getTranslateMainMenu(targetPlayerUUID).open(player);
 					}));
-			
 		} else { /* Current player exists */
-			
+			return;
 		}
 	}
 

@@ -126,7 +126,6 @@ public class ConfigurationHandler {
             			getMainConfig().getString("Translator.amazonRegion"));
             	test.initializeConnection();
             } else {
-                main.getLogger().severe(getMessagesConfig().getString("Messages.wwcConfigInvalidTranslatorSettings"));
                 getMainConfig().set("Translator.useWatsonTranslate", false);
                 getMainConfig().set("Translator.useGoogleTranslate", false);
                 getMainConfig().set("Translator.useAmazonTranslate", false);
