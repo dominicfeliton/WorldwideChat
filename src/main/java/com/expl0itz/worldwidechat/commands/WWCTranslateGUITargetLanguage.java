@@ -1,6 +1,7 @@
 package com.expl0itz.worldwidechat.commands;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -25,18 +26,17 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 	private WorldwideChat main = WorldwideChat.getInstance();
 	
 	private String selectedSourceLanguage = "";
+	private String targetPlayerUUID = null;
 	
-	private Player targetPlayer = null;
-	
-	public WWCTranslateGUITargetLanguage(String source, Player p) {
+	public WWCTranslateGUITargetLanguage(String source, String targetPlayerUUID) {
 		selectedSourceLanguage = source;
-		targetPlayer = p;
+		this.targetPlayerUUID = targetPlayerUUID;
 	}
 	
-	public static SmartInventory getTargetLanguageInventory(String source, Player player) {
+	public static SmartInventory getTargetLanguageInventory(String source, String targetPlayerUUID) {
 		return SmartInventory.builder()
 				.id("translateTargetLanguage")
-				.provider(new WWCTranslateGUITargetLanguage(source, player))
+				.provider(new WWCTranslateGUITargetLanguage(source, targetPlayerUUID))
 				.size(6, 9)
 				.manager(WorldwideChat.getInstance().getInventoryManager())
 				.title(ChatColor.BLUE + WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages.wwctGUINewTranslationTarget"))
@@ -56,8 +56,8 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 				ItemStack currentLang = new ItemStack(Material.TARGET);
 				ItemMeta currentLangMeta = currentLang.getItemMeta();
 				/* Add Glow Effect */
-				if (targetPlayer != null && main.getActiveTranslator(targetPlayer.getUniqueId().toString()) != null) { //If target player is active translator
-					if ((main.getActiveTranslator(targetPlayer.getUniqueId().toString()).getOutLangCode().equals(main.getSupportedWatsonLanguages().get(i).getLangCode()))) {
+				if (targetPlayerUUID != null && main.getActiveTranslator(targetPlayerUUID) != null) { //If target player is active translator
+					if ((main.getActiveTranslator(targetPlayerUUID).getOutLangCode().equals(main.getSupportedWatsonLanguages().get(i).getLangCode()))) {
 						EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
 						currentLangMeta.addEnchant(glow, 1, true);
 					}
@@ -77,15 +77,28 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 				listOfAvailableLangs[i] = ClickableItem.of(currentLang, 
 						e -> {
 							/* Send to /wwct */
+							if (targetPlayerUUID != null && targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+								String[] args;
+								if (selectedSourceLanguage.equals("None")) {
+									args = new String[]{outLang};
+								} else {
+									args = new String[]{selectedSourceLanguage, outLang};
+								}
+								WWCGlobal globalTranslation = new WWCGlobal((CommandSender)player, null, null, args);
+								player.closeInventory();
+								globalTranslation.processCommand();
+								return;
+							}
+							
 							String[] args;
-							if (targetPlayer == null && selectedSourceLanguage.equals("None")) { //If no target, no input lang
+							if (targetPlayerUUID == null && selectedSourceLanguage.equals("None")) { //If no target, no input lang
 								args = new String[]{outLang};
-							} else if (targetPlayer == null) { //No target, yes input lang
+							} else if (targetPlayerUUID == null) { //No target, yes input lang
 								args = new String[]{selectedSourceLanguage, outLang};
-							} else if (targetPlayer != null && selectedSourceLanguage.equals("None")) { //Yes target, no input lang
-								args = new String[] {targetPlayer.getName(), outLang};
+							} else if (targetPlayerUUID != null && selectedSourceLanguage.equals("None")) { //Yes target, no input lang
+								args = new String[] {main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName(), outLang};
 							} else { //Yes target, yes input lang
-								args = new String[]{targetPlayer.getName(), selectedSourceLanguage, outLang};
+								args = new String[]{main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName(), selectedSourceLanguage, outLang};
 							}
 							
 							WWCTranslate newTranslation = new WWCTranslate((CommandSender)player, null, null, args);
@@ -101,8 +114,8 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 				currentLangMeta.setDisplayName(main.getSupportedGoogleTranslateLanguages().get(i).getLangName());
 				ArrayList<String> lore = new ArrayList<>();
 				/* Add Glow Effect */
-				if (targetPlayer != null && main.getActiveTranslator(targetPlayer.getUniqueId().toString()) != null) { //If target player is active translator
-					if ((main.getActiveTranslator(targetPlayer.getUniqueId().toString()).getInLangCode().equals(main.getSupportedGoogleTranslateLanguages().get(i).getLangCode()))) {
+				if (targetPlayerUUID != null && main.getActiveTranslator(targetPlayerUUID) != null) { //If target player is active translator
+					if ((main.getActiveTranslator(targetPlayerUUID).getInLangCode().equals(main.getSupportedGoogleTranslateLanguages().get(i).getLangCode()))) {
 						EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
 						currentLangMeta.addEnchant(glow, 1, true);
 					}
@@ -120,15 +133,28 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 				listOfAvailableLangs[i] = ClickableItem.of(currentLang, 
 						e -> {
 							/* Send to /wwct */
+							if (targetPlayerUUID != null && targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+								String[] args;
+								if (selectedSourceLanguage.equals("None")) {
+									args = new String[]{outLang};
+								} else {
+									args = new String[]{selectedSourceLanguage, outLang};
+								}
+								WWCGlobal globalTranslation = new WWCGlobal((CommandSender)player, null, null, args);
+								player.closeInventory();
+								globalTranslation.processCommand();
+								return;
+							}
+							
 							String[] args;
-							if (targetPlayer == null && selectedSourceLanguage.equals("None")) { //If no target, no input lang
+							if (targetPlayerUUID == null && selectedSourceLanguage.equals("None")) { //If no target, no input lang
 								args = new String[]{outLang};
-							} else if (targetPlayer == null) { //No target, yes input lang
+							} else if (targetPlayerUUID == null) { //No target, yes input lang
 								args = new String[]{selectedSourceLanguage, outLang};
-							} else if (targetPlayer != null && selectedSourceLanguage.equals("None")) { //Yes target, no input lang
-								args = new String[] {targetPlayer.getName(), outLang};
+							} else if (targetPlayerUUID != null && selectedSourceLanguage.equals("None")) { //Yes target, no input lang
+								args = new String[] {main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName(), outLang};
 							} else { //Yes target, yes input lang
-								args = new String[]{targetPlayer.getName(), selectedSourceLanguage, outLang};
+								args = new String[]{main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName(), selectedSourceLanguage, outLang};
 							}
 							
 							WWCTranslate newTranslation = new WWCTranslate((CommandSender)player, null, null, args);
@@ -144,8 +170,8 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 				currentLangMeta.setDisplayName(main.getSupportedAmazonTranslateLanguages().get(i).getLangName());
 				ArrayList<String> lore = new ArrayList<>();
 				/* Add Glow Effect */
-				if (targetPlayer != null && main.getActiveTranslator(targetPlayer.getUniqueId().toString()) != null) { //If target player is active translator
-					if ((main.getActiveTranslator(targetPlayer.getUniqueId().toString()).getInLangCode().equals(main.getSupportedAmazonTranslateLanguages().get(i).getLangCode()))) {
+				if (targetPlayerUUID != null && main.getActiveTranslator(targetPlayerUUID) != null) { //If target player is active translator
+					if ((main.getActiveTranslator(targetPlayerUUID).getInLangCode().equals(main.getSupportedAmazonTranslateLanguages().get(i).getLangCode()))) {
 						EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
 						currentLangMeta.addEnchant(glow, 1, true);
 					}
@@ -163,15 +189,28 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 				listOfAvailableLangs[i] = ClickableItem.of(currentLang, 
 						e -> {
 							/* Send to /wwct */
+							if (targetPlayerUUID != null && targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+								String[] args;
+								if (selectedSourceLanguage.equals("None")) {
+									args = new String[]{outLang};
+								} else {
+									args = new String[]{selectedSourceLanguage, outLang};
+								}
+								WWCGlobal globalTranslation = new WWCGlobal((CommandSender)player, null, null, args);
+								player.closeInventory();
+								globalTranslation.processCommand();
+								return;
+							}
+							
 							String[] args;
-							if (targetPlayer == null && selectedSourceLanguage.equals("None")) { //If no target, no input lang
+							if (targetPlayerUUID == null && selectedSourceLanguage.equals("None")) { //If no target, no input lang
 								args = new String[]{outLang};
-							} else if (targetPlayer == null) { //No target, yes input lang
+							} else if (targetPlayerUUID == null) { //No target, yes input lang
 								args = new String[]{selectedSourceLanguage, outLang};
-							} else if (targetPlayer != null && selectedSourceLanguage.equals("None")) { //Yes target, no input lang
-								args = new String[] {targetPlayer.getName(), outLang};
+							} else if (targetPlayerUUID != null && selectedSourceLanguage.equals("None")) { //Yes target, no input lang
+								args = new String[] {main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName(), outLang};
 							} else { //Yes target, yes input lang
-								args = new String[]{targetPlayer.getName(), selectedSourceLanguage, outLang};
+								args = new String[]{main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName(), selectedSourceLanguage, outLang};
 							}
 							
 							WWCTranslate newTranslation = new WWCTranslate((CommandSender)player, null, null, args);
@@ -196,7 +235,7 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 		stopButton.setItemMeta(stopMeta);
 		contents.set(5, 0, ClickableItem.of(stopButton,
 			e -> {
-				WWCTranslateGUISourceLanguage.getSourceLanguageInventory(selectedSourceLanguage, targetPlayer).open(player);
+				WWCTranslateGUISourceLanguage.getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player);
 			}));
 		
 		/* Bottom Left Option: Previous Page */
@@ -205,7 +244,7 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 		previousPageMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIPreviousPageButton"));
 	    previousPageButton.setItemMeta(previousPageMeta);
 	    contents.set(5, 2, ClickableItem.of(previousPageButton, 
-				e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayer).open(player, pagination.previous().getPage())));
+				e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.previous().getPage())));
 	    
 	    /* Bottom Right Option: Next Page */
 		ItemStack nextPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
@@ -213,7 +252,7 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 		nextPageMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUINextPageButton"));
 	    nextPageButton.setItemMeta(nextPageMeta);
 	    contents.set(5, 6, ClickableItem.of(nextPageButton,
-                e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayer).open(player, pagination.next().getPage())));
+                e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.next().getPage())));
 	}
 
 	@Override

@@ -36,11 +36,19 @@ public class WWCTranslate extends BasicCommand {
     		WWCTranslateGUIMainMenu.getTranslateMainMenu(null).open((Player)sender);
     		return true;
     	} else if (args.length == 0 && isGlobal) { /* Global translate */
-    		//wwcg GUI
+    		WWCTranslateGUIMainMenu.getTranslateMainMenu("GLOBAL-TRANSLATE-ENABLED").open((Player)sender);
     		return true;
     	} else if (args.length == 1 && !isGlobal && !args[0].equalsIgnoreCase(sender.getName()) && main.getServer().getPlayer(args[0]) != null) { /* User wants to see another translation session */
-    		//add 2nd constructor that takes 2nd arg, which would be the target player
-    		WWCTranslateGUIMainMenu.getTranslateMainMenu(main.getServer().getPlayer(args[0])).open((Player)sender);
+    		if (sender.hasPermission("worldwidechat.wwct.otherplayers")) {
+    			WWCTranslateGUIMainMenu.getTranslateMainMenu(main.getServer().getPlayer(args[0]).getUniqueId().toString()).open((Player)sender);
+    		} else {
+    			final TextComponent badPerms = Component.text() //Bad perms
+                        .append(main.getPluginPrefix().asComponent())
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBadPerms")).color(NamedTextColor.RED))
+                        .append(Component.text().content(" (" + "worldwidechat.wwct.otherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
+                        .build();
+                    main.adventure().sender(sender).sendMessage(badPerms);
+    		}
     		return true;
     	}
     	

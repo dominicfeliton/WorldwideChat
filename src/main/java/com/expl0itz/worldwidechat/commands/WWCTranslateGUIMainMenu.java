@@ -1,5 +1,7 @@
 package com.expl0itz.worldwidechat.commands;
 
+import java.util.UUID;
+
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -22,15 +24,15 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
 	
-	private Player targetPlayer = null;
+	private String targetPlayerUUID = null;
 	
-	public WWCTranslateGUIMainMenu(Player player) {
-		targetPlayer = player;
+	public WWCTranslateGUIMainMenu(String targetPlayerUUID) {
+		this.targetPlayerUUID = targetPlayerUUID;
 	}
 	
 	/* Get translation info */
-	public static SmartInventory getTranslateMainMenu(Player targetPlayer) { 
-		if (targetPlayer == null) {
+	public static SmartInventory getTranslateMainMenu(String targetPlayerUUID) { 
+		if (targetPlayerUUID == null) {
 			return SmartInventory.builder()
 				    .id("translateMainMenu")
 				    .provider(new WWCTranslateGUIMainMenu(null))
@@ -39,12 +41,18 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				    .title(ChatColor.BLUE + WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages.wwctGUIMainMenu"))
 				    .build();
 		}
+		String playerTitle = "";
+		if (targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+			playerTitle = ChatColor.BLUE + WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages.wwctGUIMainMenuGlobal");
+		} else {
+			playerTitle = ChatColor.BLUE + WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages.wwctGUIMainMenuPlayer").replace("%i", WorldwideChat.getInstance().getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName());
+		}
 		return SmartInventory.builder()
 		    .id("translateMainMenu")
-		    .provider(new WWCTranslateGUIMainMenu(targetPlayer))
+		    .provider(new WWCTranslateGUIMainMenu(targetPlayerUUID))
 		    .size(6, 9)
 		    .manager(WorldwideChat.getInstance().getInventoryManager())
-		    .title(ChatColor.BLUE + WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages.wwctGUIMainMenuPlayer").replace("%i", targetPlayer.getName()))
+		    .title(playerTitle)
 		    .build();	
 	}
 	
@@ -64,16 +72,16 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 		translationButton.setItemMeta(translationMeta);
 		contents.set(3, 4, ClickableItem.of(translationButton, 
 				e -> {
-					if (targetPlayer == null) {
+					if (targetPlayerUUID == null) {
 						WWCTranslateGUISourceLanguage.getSourceLanguageInventory("", null).open(player);
 					} else {
-						WWCTranslateGUISourceLanguage.getSourceLanguageInventory("", targetPlayer).open(player);
+						WWCTranslateGUISourceLanguage.getSourceLanguageInventory("", targetPlayerUUID).open(player);
 					}
 				}));
 		
 		/* If target player exists, is active player */
-		if (targetPlayer != null && main.getActiveTranslator(targetPlayer.getUniqueId().toString()) != null) {
-			ActiveTranslator targetTranslator = main.getActiveTranslator(targetPlayer.getUniqueId().toString());
+		if (targetPlayerUUID != null && main.getActiveTranslator(targetPlayerUUID) != null) {
+			ActiveTranslator targetTranslator = main.getActiveTranslator(targetPlayerUUID);
 			
 			/* Make compass enchanted */
 			EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
@@ -96,45 +104,57 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 			stopButton.setItemMeta(stopMeta);
 			contents.set(2, 4, ClickableItem.of(stopButton,
 				e -> {
-					String[] args = {targetPlayer.getName(), "stop"};
+					String[] args;
+					if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+						args = new String[]{main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName(), "stop"};
+					} else {
+						args = new String[]{"stop"};
+					}
 					WWCTranslate translate = new WWCTranslate((CommandSender)player, null, null, args);
-					translate.processCommand(false);
-					getTranslateMainMenu(targetPlayer).open(player);
+					if (targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+						translate.processCommand(true);
+				    } else {
+				    	translate.processCommand(false);
+				    }
+					getTranslateMainMenu(targetPlayerUUID).open(player);
 				}));
 			
 			/* Book Translation Button */
-			ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
-			ItemMeta bookMeta = bookButton.getItemMeta();
-			bookMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIBookButton"));
-			if (targetTranslator.getTranslatingBook()) {				
-				bookMeta.addEnchant(glow, 1, true);
+			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+				ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
+				ItemMeta bookMeta = bookButton.getItemMeta();
+				bookMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIBookButton"));
+				if (targetTranslator.getTranslatingBook()) {				
+					bookMeta.addEnchant(glow, 1, true);
+				}
+				bookButton.setItemMeta(bookMeta);
+				contents.set(3, 1, ClickableItem.of(bookButton, 
+						e -> {
+							String[] args = {main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName()};
+							WWCTranslateBook translateBook = new WWCTranslateBook((CommandSender)player, null, null, args);
+							translateBook.processCommand();
+							getTranslateMainMenu(targetPlayerUUID).open(player);
+						}));
 			}
-			bookButton.setItemMeta(bookMeta);
-			contents.set(3, 1, ClickableItem.of(bookButton, 
-					e -> {
-						String[] args = {targetPlayer.getName()};
-						WWCTranslateBook translateBook = new WWCTranslateBook((CommandSender)player, null, null, args);
-						translateBook.processCommand();
-						getTranslateMainMenu(targetPlayer).open(player);
-					}));
 			
 			/* Sign Translation Button */
-			ItemStack signButton = new ItemStack(Material.OAK_SIGN);
-			ItemMeta signMeta = signButton.getItemMeta();
-			signMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUISignButton"));
-			if (targetTranslator.getTranslatingSign()) {				
-				signMeta.addEnchant(glow, 1, true);
+			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+				ItemStack signButton = new ItemStack(Material.OAK_SIGN);
+				ItemMeta signMeta = signButton.getItemMeta();
+				signMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUISignButton"));
+				if (targetTranslator.getTranslatingSign()) {				
+					signMeta.addEnchant(glow, 1, true);
+				}
+				signButton.setItemMeta(signMeta);
+				contents.set(3, 7, ClickableItem.of(signButton, 
+						e -> {
+							String[] args = {main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName()};
+							WWCTranslateSign translateSign = new WWCTranslateSign((CommandSender)player, null, null, args);
+							translateSign.processCommand();
+							getTranslateMainMenu(targetPlayerUUID).open(player);
+						}));
 			}
-			signButton.setItemMeta(signMeta);
-			contents.set(3, 7, ClickableItem.of(signButton, 
-					e -> {
-						String[] args = {targetPlayer.getName()};
-						WWCTranslateSign translateSign = new WWCTranslateSign((CommandSender)player, null, null, args);
-						translateSign.processCommand();
-						getTranslateMainMenu(targetPlayer).open(player);
-					}));
-			
-		} else if (targetPlayer != null) { /* Target player exists */
+		} else if (targetPlayerUUID != null) { /* Target player exists */
 			
 			
 		} else if (main.getActiveTranslator(player.getUniqueId().toString()) != null) { /* Current player is active translator */
@@ -164,7 +184,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 					String[] args = {"stop"};
 					WWCTranslate translate = new WWCTranslate((CommandSender)player, null, null, args);
 					translate.processCommand(false);
-					getTranslateMainMenu(targetPlayer).open(player);
+					getTranslateMainMenu(targetPlayerUUID).open(player);
 				}));
 			
 			/* Book Translation Button */
@@ -180,7 +200,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 						String[] args = {};
 						WWCTranslateBook translateBook = new WWCTranslateBook((CommandSender)player, null, null, args);
 						translateBook.processCommand();
-						getTranslateMainMenu(targetPlayer).open(player);
+						getTranslateMainMenu(targetPlayerUUID).open(player);
 					}));
 			
 			/* Sign Translation Button */
@@ -196,7 +216,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 						String[] args = {};
 						WWCTranslateSign translateSign = new WWCTranslateSign((CommandSender)player, null, null, args);
 						translateSign.processCommand();
-						getTranslateMainMenu(targetPlayer).open(player);
+						getTranslateMainMenu(targetPlayerUUID).open(player);
 					}));
 			
 		} else { /* Current player exists */
