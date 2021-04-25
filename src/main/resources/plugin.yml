@@ -21,13 +21,13 @@ commands:
     wwcg:
         description: Enables chat translation to a certain language globally.
         aliases: [wwcglobal, gtranslate]
-        usage: §4/wwcg (language-in) <language-out>
+        usage: §4/wwcg (language-in) (language-out)
         permission: worldwidechat.wwcg
         permission-message: §4You do not have permission to run this command.
     wwct:
         description: Enables chat translation to a certain language, either for you or a specific player.
         aliases: [wwctranslate, translate]
-        usage: §4/wwct (playerName) (language-in) <language-out>
+        usage: §4/wwct (playerName) (language-in) (language-out)
         permission: worldwidechat.wwct
         permission-message: §4You do not have permission to run this command.
     wwctb:
