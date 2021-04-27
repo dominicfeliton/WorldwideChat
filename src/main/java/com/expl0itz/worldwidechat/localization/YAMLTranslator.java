@@ -27,7 +27,7 @@ public class YAMLTranslator {
 		//Creds
 		String amazonAccessKey = "";
 		String amazonSecretKey = "";
-		String amazonRegion = "us-east-2";
+		String amazonRegion = "";
 	
 		//Other vars
 		String inputLang = "";
@@ -98,21 +98,26 @@ public class YAMLTranslator {
 			
 			//Remove any extra spaces added to the end of the line by translator
 			if (translatedLine.indexOf(" ") != -1 && translatedLine.substring(translatedLine.lastIndexOf(" "), translatedLine.length()).length() < 3 && translatedLine.substring(translatedLine.lastIndexOf(" "), translatedLine.length()).length() < untranslated.get(i).substring(untranslated.get(i).lastIndexOf(" "), untranslated.get(i).length()).length()) {
-				translatedLine =  translatedLine.substring(0, translatedLine.lastIndexOf(" ")) + translatedLine.substring(translatedLine.lastIndexOf(" ") +1, translatedLine.length());
+				translatedLine = translatedLine.substring(0, translatedLine.lastIndexOf(" ")) + translatedLine.substring(translatedLine.lastIndexOf(" ") +1, translatedLine.length());
 			}
 			
 			//Replace weird "»" with a '
 			translatedLine = translatedLine.replaceAll("»", "'");
 			
+			//Replace any capital vars with lowercase ones
+			translatedLine = translatedLine.replaceAll("%I", "%i");
+			translatedLine = translatedLine.replaceAll("%O", "%o");
+			translatedLine = translatedLine.replaceAll("%E", "%e");
+			
 			//Ensure there is an ending '
-			if (!(translatedLine.lastIndexOf("'") > translatedLine.length() - 3)) {
+			if ((!(translatedLine.lastIndexOf("'") > translatedLine.length() - 3)) && translatedLine.indexOf("#") == -1) {
 				translatedLine = translatedLine += "'";
 			}
 			
 			//Add a space before every %
 			ArrayList<Character> sortChars = new ArrayList<Character>(translatedLine.chars().mapToObj(c -> (char) c).collect(Collectors.toList()));
 			for (int j = 0; j < sortChars.size(); j++) {
-				if ((sortChars.get(j) == '%') && j-1 > -1) {
+				if ((sortChars.get(j) == '%') && j-1 > -1 && sortChars.get(j-1) != ' ') {
 					sortChars.add(j, ' ');
 					j++;
 				}
