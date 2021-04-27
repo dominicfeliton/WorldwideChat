@@ -199,7 +199,7 @@ public class WorldwideChat extends JavaPlugin {
             final TextComponent versionNotice = Component.text()
                 .append(pluginPrefix.asComponent())
                 .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcVersion")).color(NamedTextColor.RED))
-                .append(Component.text().content("" + pluginVersion).color(NamedTextColor.LIGHT_PURPLE))
+                .append(Component.text().content(" " + pluginVersion).color(NamedTextColor.LIGHT_PURPLE))
                 .build();
             Audience adventureSender = adventure.sender(sender);
             adventureSender.sendMessage(versionNotice);

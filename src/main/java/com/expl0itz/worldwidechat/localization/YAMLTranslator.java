@@ -70,12 +70,12 @@ public class YAMLTranslator {
 		for (int i = 0; i < untranslated.size(); i++) {
 			String translatedLine = "";
 			System.out.println("(Original) " + untranslated.get(i));
-			if (untranslated.get(i).indexOf(":") != -1) {
-				translatedLine = untranslated.get(i).substring(0, untranslated.get(i).indexOf(":")+1);
-				if ((untranslated.get(i).substring(untranslated.get(i).indexOf(":"), untranslated.get(i).length() - 1).length() > 0)) {
+			if (untranslated.get(i).indexOf("'") != -1) {
+				translatedLine = untranslated.get(i).substring(0, untranslated.get(i).indexOf("'")+1);
+				if ((untranslated.get(i).substring(untranslated.get(i).indexOf("'"), untranslated.get(i).length() - 1).length() > 0)) {
 					/* Actual translation */
 			    	TranslateTextRequest request = new TranslateTextRequest()
-			    			.withText(untranslated.get(i).substring(untranslated.get(i).indexOf(":") + 1, untranslated.get(i).length()))
+			    			.withText(untranslated.get(i).substring(untranslated.get(i).indexOf("'") + 1, untranslated.get(i).length()))
 			    			.withSourceLanguageCode(inputLang)
 			    			.withTargetLanguageCode(outputLang);
 			    	TranslateTextResult result = translate.translateText(request);
@@ -93,10 +93,25 @@ public class YAMLTranslator {
 				}
 			}
 			
-			//Add a space before every %, as Amazon Translate deletes them...
+			//Replace WorldWideChat with WorldwideChat
+			translatedLine = translatedLine.replaceAll("WorldWideChat", "WorldwideChat");
+			
+			//Remove any extra spaces added to the end of the line by translator
+			if (translatedLine.indexOf(" ") != -1 && translatedLine.substring(translatedLine.lastIndexOf(" "), translatedLine.length()).length() < 3 && translatedLine.substring(translatedLine.lastIndexOf(" "), translatedLine.length()).length() < untranslated.get(i).substring(untranslated.get(i).lastIndexOf(" "), untranslated.get(i).length()).length()) {
+				translatedLine =  translatedLine.substring(0, translatedLine.lastIndexOf(" ")) + translatedLine.substring(translatedLine.lastIndexOf(" ") +1, translatedLine.length());
+			}
+			
+			//Replace weird "»" with a '
+			translatedLine = translatedLine.replaceAll("»", "'");
+			
+			//Ensure there is an ending '
+			if (!(translatedLine.lastIndexOf("'") > translatedLine.length() - 3)) {
+				translatedLine = translatedLine += "'";
+			}
+			
+			//Add a space before every %
 			ArrayList<Character> sortChars = new ArrayList<Character>(translatedLine.chars().mapToObj(c -> (char) c).collect(Collectors.toList()));
 			for (int j = 0; j < sortChars.size(); j++) {
-				//System.out.println(j);
 				if ((sortChars.get(j) == '%') && j-1 > -1) {
 					sortChars.add(j, ' ');
 					j++;
@@ -127,7 +142,7 @@ public class YAMLTranslator {
 		}
 		
 		//Done!
-		System.out.println("Wrote translation to " + outputYAML + " successfully! Exiting...");
+		System.out.println("Wrote translation to " + outputYAML + " successfully! \nExiting...");
 		scanner.close();
 	}
 	
