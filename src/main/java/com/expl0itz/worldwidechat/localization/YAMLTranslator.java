@@ -5,9 +5,11 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
@@ -25,7 +27,7 @@ public class YAMLTranslator {
 		//Creds
 		String amazonAccessKey = "";
 		String amazonSecretKey = "";
-		String amazonRegion = "";
+		String amazonRegion = "us-east-2";
 	
 		//Other vars
 		String inputLang = "";
@@ -60,34 +62,56 @@ public class YAMLTranslator {
     	BasicAWSCredentials awsCreds = new BasicAWSCredentials(amazonAccessKey, amazonSecretKey);
     	AmazonTranslate translate = AmazonTranslateClient.builder()
     			.withCredentials(new AWSStaticCredentialsProvider(awsCreds))
-    			.withRegion(System.getProperty(amazonRegion))
+    			.withRegion(amazonRegion)
     			.build();
        
 		//Successfully piped; begin translation
-    	List<String> translatedLines = Collections.emptyList();
+    	ArrayList<String> translatedLines = new ArrayList<String>();
 		for (int i = 0; i < untranslated.size(); i++) {
 			String translatedLine = "";
+			System.out.println("(Original) " + untranslated.get(i));
 			if (untranslated.get(i).indexOf(":") != -1) {
-				translatedLine = untranslated.get(i).substring(0, untranslated.get(i).indexOf(":"));
-				
-				/* Actual translation */
-		    	TranslateTextRequest request = new TranslateTextRequest()
-		    			.withText(untranslated.get(i).substring(untranslated.get(i).indexOf(":"), untranslated.size() - 1))
-		    			.withSourceLanguageCode(inputLang)
-		    			.withTargetLanguageCode(outputLang);
-		    	TranslateTextResult result = translate.translateText(request);
-		    	translatedLine += result.toString();
+				translatedLine = untranslated.get(i).substring(0, untranslated.get(i).indexOf(":")+1);
+				if ((untranslated.get(i).substring(untranslated.get(i).indexOf(":"), untranslated.get(i).length() - 1).length() > 0)) {
+					/* Actual translation */
+			    	TranslateTextRequest request = new TranslateTextRequest()
+			    			.withText(untranslated.get(i).substring(untranslated.get(i).indexOf(":") + 1, untranslated.get(i).length()))
+			    			.withSourceLanguageCode(inputLang)
+			    			.withTargetLanguageCode(outputLang);
+			    	TranslateTextResult result = translate.translateText(request);
+			    	translatedLine += result.getTranslatedText();
+				}
 			} else {
 				/* Actual translation */
-		    	TranslateTextRequest request = new TranslateTextRequest()
-		    			.withText(untranslated.get(i).substring(0, untranslated.size() - 1))
-		    			.withSourceLanguageCode(inputLang)
-		    			.withTargetLanguageCode(outputLang);
-		    	TranslateTextResult result = translate.translateText(request);
-		    	translatedLine += result.toString();
+				if (untranslated.get(i).length() > 0) {
+					TranslateTextRequest request = new TranslateTextRequest()
+			    			.withText(untranslated.get(i).substring(0, untranslated.get(i).length()))
+			    			.withSourceLanguageCode(inputLang)
+			    			.withTargetLanguageCode(outputLang);
+			    	TranslateTextResult result = translate.translateText(request);
+			    	translatedLine += result.getTranslatedText();
+				}
 			}
+			
+			//Add a space before every %, as Amazon Translate deletes them...
+			ArrayList<Character> sortChars = new ArrayList<Character>(translatedLine.chars().mapToObj(c -> (char) c).collect(Collectors.toList()));
+			for (int j = 0; j < sortChars.size(); j++) {
+				//System.out.println(j);
+				if ((sortChars.get(j) == '%') && j-1 > -1) {
+					sortChars.add(j, ' ');
+					j++;
+				}
+			}
+			
+			//Save final translatedLine
+			StringBuilder builder = new StringBuilder(sortChars.size());
+			for (Character ch : sortChars) {
+				builder.append(ch);
+			}
+			translatedLine = builder.toString();
+			System.out.println("(Translated) " + translatedLine);
+			
 	    	translatedLines.add(translatedLine);
-	    	System.out.println("Translated line " + (i+1));
 		}
 		
 		//Translation done, put into new file
