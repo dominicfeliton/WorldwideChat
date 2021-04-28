@@ -1,15 +1,14 @@
 package com.expl0itz.worldwidechat.localization;
 
-import java.io.FileWriter;
+import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
+
+import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
@@ -49,13 +48,26 @@ public class YAMLTranslator {
 		System.out.println("New language: ");
 		outputLang = scanner.nextLine().toString();
 		
-		//Parse YAML into local ArrayList
-		List<String> untranslated = Collections.emptyList(); 
+		//Parse YAML into local HashMap
+		HashMap<String, String> untranslated = new HashMap<String, String>();
+		YamlConfiguration messagesConfig = YamlConfiguration.loadConfiguration(new File(originalYAML));
+		YamlConfiguration newConfig = YamlConfiguration.loadConfiguration(new File(outputYAML));
 		try { 
-			untranslated = Files.readAllLines(Paths.get(originalYAML), StandardCharsets.UTF_8); 
-		} catch (IOException e) { // TODO Auto-generated catch block
+			for (String eaKey : messagesConfig.getConfigurationSection("Messages").getKeys(true)) {
+				untranslated.put(eaKey, messagesConfig.getString("Messages." + eaKey));
+			}
+		} catch (Exception e) { // TODO Auto-generated catch block
 			e.printStackTrace();
 	        System.exit(0);
+		}
+		
+		/* Create new config */
+		newConfig.createSection("Messages");
+		try {
+			newConfig.save(new File(outputYAML));
+		} catch (IOException e1) {
+			e1.printStackTrace();
+			System.exit(0);
 		}
 
 		/* Initialize AWS Creds + Translation Object */
@@ -66,53 +78,29 @@ public class YAMLTranslator {
     			.build();
        
 		//Successfully piped; begin translation
-    	ArrayList<String> translatedLines = new ArrayList<String>();
-		for (int i = 0; i < untranslated.size(); i++) {
+    	//ArrayList<String> translatedLines = new ArrayList<String>();
+		for (Map.Entry<String, String> entry : untranslated.entrySet()) {
+			String translatedLineName = entry.getKey();
 			String translatedLine = "";
-			System.out.println("(Original) " + untranslated.get(i));
-			if (untranslated.get(i).indexOf("'") != -1) {
-				translatedLine = untranslated.get(i).substring(0, untranslated.get(i).indexOf("'")+1);
-				if ((untranslated.get(i).substring(untranslated.get(i).indexOf("'"), untranslated.get(i).length() - 1).length() > 0)) {
-					/* Actual translation */
-			    	TranslateTextRequest request = new TranslateTextRequest()
-			    			.withText(untranslated.get(i).substring(untranslated.get(i).indexOf("'") + 1, untranslated.get(i).length()))
-			    			.withSourceLanguageCode(inputLang)
-			    			.withTargetLanguageCode(outputLang);
-			    	TranslateTextResult result = translate.translateText(request);
-			    	translatedLine += result.getTranslatedText();
-				}
-			} else {
-				/* Actual translation */
-				if (untranslated.get(i).length() > 0) {
-					TranslateTextRequest request = new TranslateTextRequest()
-			    			.withText(untranslated.get(i).substring(0, untranslated.get(i).length()))
-			    			.withSourceLanguageCode(inputLang)
-			    			.withTargetLanguageCode(outputLang);
-			    	TranslateTextResult result = translate.translateText(request);
-			    	translatedLine += result.getTranslatedText();
-				}
+			System.out.println("(Original) " + entry.getValue());
+			
+			/* Actual translation */
+			if (entry.getValue().length() > 0) {
+				TranslateTextRequest request = new TranslateTextRequest()
+		    			.withText(entry.getValue())
+		    			.withSourceLanguageCode(inputLang)
+		    			.withTargetLanguageCode(outputLang);
+		    	TranslateTextResult result = translate.translateText(request);
+		    	translatedLine += result.getTranslatedText();
 			}
 			
 			//Replace WorldWideChat with WorldwideChat
 			translatedLine = translatedLine.replaceAll("WorldWideChat", "WorldwideChat");
 			
-			//Remove any extra spaces added to the end of the line by translator
-			if (translatedLine.indexOf(" ") != -1 && translatedLine.substring(translatedLine.lastIndexOf(" "), translatedLine.length()).length() < 3 && translatedLine.substring(translatedLine.lastIndexOf(" "), translatedLine.length()).length() < untranslated.get(i).substring(untranslated.get(i).lastIndexOf(" "), untranslated.get(i).length()).length()) {
-				translatedLine = translatedLine.substring(0, translatedLine.lastIndexOf(" ")) + translatedLine.substring(translatedLine.lastIndexOf(" ") +1, translatedLine.length());
-			}
-			
-			//Replace weird "»" with a '
-			translatedLine = translatedLine.replaceAll("»", "'");
-			
 			//Replace any capital vars with lowercase ones
 			translatedLine = translatedLine.replaceAll("%I", "%i");
 			translatedLine = translatedLine.replaceAll("%O", "%o");
 			translatedLine = translatedLine.replaceAll("%E", "%e");
-			
-			//Ensure there is an ending '
-			if ((!(translatedLine.lastIndexOf("'") > translatedLine.length() - 2)) && translatedLine.indexOf("#") == -1) {
-				translatedLine = translatedLine += "'";
-			}
 			
 			//Add a space before every %, escape all apostrophes
 			ArrayList<Character> sortChars = new ArrayList<Character>(translatedLine.chars().mapToObj(c -> (char) c).collect(Collectors.toList()));
@@ -135,19 +123,14 @@ public class YAMLTranslator {
 			translatedLine = builder.toString();
 			System.out.println("(Translated) " + translatedLine);
 			
-	    	translatedLines.add(translatedLine);
-		}
-		
-		//Translation done, put into new file
-		try {
-			FileWriter writer = new FileWriter(outputYAML); 
-			for(String str: translatedLines) {
-				writer.write(str + System.lineSeparator());
+			//Translation done, write to new config file
+			newConfig.set("Messages." + translatedLineName, translatedLine);
+            try {
+				newConfig.save(new File(outputYAML));
+			} catch (IOException e) {
+				e.printStackTrace();
+				System.exit(0);
 			}
-			writer.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-			System.exit(0);
 		}
 		
 		//Done!
