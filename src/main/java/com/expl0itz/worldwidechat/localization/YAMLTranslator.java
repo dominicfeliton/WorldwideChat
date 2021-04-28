@@ -27,7 +27,7 @@ public class YAMLTranslator {
 		//Creds
 		String amazonAccessKey = "";
 		String amazonSecretKey = "";
-		String amazonRegion = "";
+		String amazonRegion = "us-east-2";
 	
 		//Other vars
 		String inputLang = "";
@@ -110,15 +110,19 @@ public class YAMLTranslator {
 			translatedLine = translatedLine.replaceAll("%E", "%e");
 			
 			//Ensure there is an ending '
-			if ((!(translatedLine.lastIndexOf("'") > translatedLine.length() - 3)) && translatedLine.indexOf("#") == -1) {
+			if ((!(translatedLine.lastIndexOf("'") > translatedLine.length() - 2)) && translatedLine.indexOf("#") == -1) {
 				translatedLine = translatedLine += "'";
 			}
 			
-			//Add a space before every %
+			//Add a space before every %, escape all apostrophes
 			ArrayList<Character> sortChars = new ArrayList<Character>(translatedLine.chars().mapToObj(c -> (char) c).collect(Collectors.toList()));
 			for (int j = 0; j < sortChars.size(); j++) {
 				if ((sortChars.get(j) == '%') && j-1 > -1 && sortChars.get(j-1) != ' ') {
 					sortChars.add(j, ' ');
+					j++;
+				}
+				if (sortChars.get(j) == '\'' && j < translatedLine.length() - 2 && j > translatedLine.indexOf("'")) {
+					sortChars.add(j, '\\');
 					j++;
 				}
 			}
