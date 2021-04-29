@@ -1,0 +1,209 @@
+Messages:
+  wwcgAutoTranslateStart: ' Sekarang menterjemahkan sembang global ke %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Sembang global sedang diterjemahkan
+    ke %o.'
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Tukar Kekunci Akses Amazon
+  wwcrFail: ' Gagal memuatkan semula WorldwideChat.'
+  wwcConfigGUIUpdateCheckerButton: Ubah Periksa Kelewatan Kemas Kini
+  wwcSignTranslationFail: ' Tidak boleh dapatkan terjemahan sah bagi tanda sasaran
+    anda dari %i.'
+  wwcConfigConversationGoogleTranslateFail: ' Gagal mendayakan Google Translate.'
+  wwcUpdaterFailedGeneric: Tidak dapat menyemak kemaskini WorldwideChat.
+  wwcConfigConversationUpdateCheckerInput: Kelewatan semasa pada pemeriksa kemaskini
+    ialah %i saat. Taip apa-apa yang lebih besar daripada 10 untuk menetapkan nilai
+    baru, atau apa-apa kurang daripada 10 untuk kembali.
+  wwctGUIMainMenuGlobal: Menu Terjemahan Global
+  wwcConfigGUIWatsonButton: Watson menterjemah
+  wwcConfigConversationPluginUpdateChatSuccess: ' Peringatan sembang kemaskini pemalam
+    berjaya ditogolkan.'
+  wwctbOnTarget: ' Terjemahan buku dibenarkan untuk %i.'
+  wwcsNotATranslator: ' Tiada rekod lagi tersedia untuk %i.'
+  wwcConfigGUIbStatsButton: Togol bStats
+  wwctGUINewTranslationSource: Pilih Bahasa Sumber
+  wwcConfigConnectionFailed: Gagal menyambung ke %o. Pastikan kelayakan dan firewall
+    anda dikonfigur dengan betul!
+  wwcConfigEnabledbStats: Dibenarkan bStats.
+  wwctGUIMainMenuPlayer: Menu Terjemahan %i
+  wwctGUIBookButton: Togol Terjemahan Buku
+  wwcLangDetected: Bahasa %o dikesan.
+  wwcBookTranslateStart: ' Menterjemahkan buku sasaran...'
+  wwcConfigDisabledbStats: bStats dilumpuhkan.
+  wwctsOffSender: ' Daftar terjemahan dilumpuhkan.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Sembang global sedang
+    diterjemahkan, tetapi sembang anda sedang diterjemahkan dari %i ke %o.'
+  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate berjaya didayakan.'
+  wwcUpdaterParserFailed: Gagal menghurai data kemaskini dari Github.
+  wwctAutoTranslateStart: ' Sekarang menterjemahkan semua sembang anda ke %o.'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Kunci rahsia semasa ialah %i.
+    Sila masukkan kunci rahsia untuk Amazon, atau taip 0 untuk kembali.
+  wwctbOffSender: ' Terjemahan buku dilumpuhkan.'
+  wwcConfigGUIAmazonTranslateButton: Amazon menterjemah
+  wwcConfigConversationLangSuccess: ' Bahasa pemalam berjaya diubah.'
+  wwcsSuccessfulTranslations: ' Terjemahan berjaya: %i'
+  wwctTranslationStoppedOtherPlayer: ' Terjemahan sembang untuk %i telah dihentikan.'
+  wwcConfigConversationTranslationCacheInput: Had cache terjemahan semasa ialah %i
+    frasa. Taip apa-apa yang lebih besar daripada 0 untuk menetapkan nilai baru, atau
+    taip 0 untuk melumpuhkan cache terjemahan. Taip apa-apa kurang daripada 0 untuk
+    kembali.
+  wwctbOffTarget: ' Terjemahan buku dilumpuhkan untuk %i.'
+  wwcConfigGUIGeneralSettings: Konfigurasi Am
+  wwcInvalidLang: Bahasa tidak sah dalam config.yml anda. Defaulting to en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ' Rantau Amazon berjaya ditetapkan.'
+  wwcConfigRateLimitEnabled: Had kadar global dibenarkan dan ditetapkan ke %i saat.
+  wwcBadPerms: ' Anda tidak mempunyai keizinan yang diperlukan untuk melaksanakan
+    arahan ini!'
+  wwcConfigGUILangButton: Ubah Bahasa Pemalam
+  wwctGUISignButton: Togol Terjemahan Tanda
+  wwcUpdaterOutOfDate: WorldWidChat sudah lapuk. Sila kemaskini ke versi terkini,
+    %i.
+  wwcConfigGUIChangesNotSaved: ' Perubahan Anda mungkin tidak berlaku sampai Anda
+    menjalankan /wwcr, atau klik pada penghalang merah di /wwcc.'
+  wwcConfigGUINextPageButton: Halaman Seterusnya
+  wwctbTranslatePageFail: (Gagal menterjemahkan halaman ini) %i
+  wwcConfigInvalidTranslatorSettings: Tetapan penterjemah tidak sah! Sila aktifkan
+    hanya satu penterjemah dalam config.yml anda.
+  wwcConfigGUIQuitButton: Keluar & Simpan Perubahan
+  wwctPlayerNotFound: ' Pemain %i tidak ditemui.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Sembang global sedang
+    diterjemahkan, tetapi sembang anda sedang diterjemahkan ke %o.'
+  wwcConfigGUIGoogleTranslateSettings: Konfigurasi Terjemah Google
+  wwcConfigGUIGlobalRateLimit: Ubah Had Kadar Global
+  wwctGUIBackToSourceLanguageButton: Kembali ke Menu Bahasa Sumber
+  wwcConfigGUIAmazonTranslateRegionButton: Ubah Wilayah Amazon
+  wwcConfigConversationLangInput: 'Bahasa pemalam semasa ialah %i. Sila masukkan kod
+    bahasa yang sah, atau taip 0 untuk dibatalkan. Kod bahasa yang sah: %o'
+  wwcConfigConversationLangInvalid: ' Kod bahasa tidak sah!'
+  wwctTranslationStopped: ' Terjemahan sembang anda telah dihentikan.'
+  wwcConfigGUIWatsonSettings: Konfigurasi Watson
+  wwctsPlayerNotFound: ' Pemain %i sama ada tidak ditemui, atau bukan penterjemah
+    aktif.'
+  wwcConfigGUIWatsonAPIKeyButton: Ubah Kunci API Watson
+  wwcEnabled: Dibenarkan WorldwideChat versi %i.
+  wwcgLangToLangStart: ' Sekarang menterjemahkan sembang global dari %i ke %o.'
+  wwctbOnSender: ' Terjemahan buku dibenarkan. Klik kanan sambil memegang buku untuk
+    menterjemahkannya!'
+  wwcListenersInitialized: Pendengar yang dimulakan.
+  wwcUserDataCorrupted: Ditemui dan dipindah %i rosak atau fail data pengguna lama.
+    Mereka akan dipadamkan pada muat semula seterusnya.
+  wwcConfigGUIPluginUpdateChatButton: Hantar Peringatan Sembang untuk Kemas Kini Plugin
+  wwcConfigConversationSendTranslationChatSuccess: ' Peringatan sembang penterjemah
+    aktif berjaya ditogolkan.'
+  wwctsOffTarget: ' Daftar terjemahan dilumpuhkan untuk %i.'
+  wwcUpdaterConnectionFailed: Tidak dapat menyemak kemaskini terkini di Github.
+  watsonNotFoundExceptionNotification: ' Tidak dapat menterjemahkan input anda lagi.'
+  wwcConfigConversationWatsonAPIKeyInput: Kekunci API semasa ialah %i. Sila masukkan
+    kunci API untuk Watson, atau taip 0 untuk kembali.
+  wwctGUIStopButton: Henti Menterjemah
+  wwcgTranslationStopped: ' Terjemahan sembang global telah dihentikan.'
+  wwctAutoTranslateStartOtherPlayer: ' Sekarang menterjemahkan sembang bagi %i ke
+    %o.'
+  wwcUpdaterFutureDate: Contoh WorldwideChat ini mempunyai versi yang lebih besar
+    daripada versi awam terkini.
+  wwcConfigConversationPrefixSuccess: ' Awalan berjaya diubah.'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Tukar Kunci Google Terjemah API
+  wwcSignDeletedOrTooLong: ' Tanda sasaran sama ada dipadam atau terjemahan terlalu
+    panjang. Terjemahan:'
+  wwcConfigGUIAmazonTranslateStatusButton: Togol Amazon Terjemah
+  wwctsOnTarget: ' Daftar terjemahan dibenarkan untuk %i.'
+  wwcConfigCacheDisabled: Cache penterjemah dilumpuhkan.
+  wwcConfigConversationWatsonURLInput: URL semasa ialah %i. Sila masukkan URL perkhidmatan
+    untuk Watson, atau ketik 0 untuk kembali.
+  wwcOnJoinTranslationNotificationSourceLang: ' Sembang anda sedang diterjemahkan
+    dari %i ke %o.'
+  wwcBookDone: ' Buku berjaya diterjemahkan.'
+  wwctsOnSender: ' Daftar terjemahan dibenarkan. Klik kanan pada tanda untuk menterjemahkannya!'
+  watsonColorCodeWarning: ' Menggunakan kod warna boleh memberi anda hasil yang tidak
+    menentu.'
+  wwctGUITranslationButton: Mula Menterjemah
+  wwctGUIAutoDetectButton: Pengesan Auto-Bahasa Sumber
+  wwcUpdaterUpToDate: WorldWidChat up to date!
+  wwcConfigConversationAmazonTranslateRegionInput: Rantau semasa ialah %i. Sila masukkan
+    kawasan untuk Amazon, atau taip 0 untuk kembali.
+  wwcConfigConversationWatsonFail: ' Gagal membolehkan IBM Watson.'
+  wwcNoConsole: ' Perintah ini hanya boleh dijalankan oleh pemain.'
+  wwcConfigConversationAmazonTranslateSuccess: ' Berjaya mendayakan Amazon Terjemah.'
+  wwcConfigConversationAmazonTranslateFail: ' Gagal membolehkan Amazon Translate.'
+  wwcInitializationFail: Gagal awalkan WorldwideChat.
+  wwcrSuccess: ' Berjaya dimuat semula WorldwideChat.'
+  wwcPlayerNotFound: ' Pemain %i tidak ditemui.'
+  wwcUpdaterOutOfDateChat: ' WorldWidChat sudah lapuk. Sila kemas kini kepada versi
+    terkini.'
+  wwcConfigConversationRateLimitSuccess: ' Had kadar berjaya ditetapkan.'
+  wwcConfigConversationWatsonURLSuccess: ' URL Watson berjaya ditetapkan.'
+  wwctbPlayerNotFound: ' Pemain %i sama ada tidak ditemui, atau bukan penterjemah
+    aktif.'
+  wwcConfigConversationTranslationCacheSuccess: ' Had cache terjemahan berjaya ditetapkan.'
+  wwctInvalidArgs: ' Argumen tidak sah disediakan!'
+  wwcConfigGUIPrefixButton: Ubah Awalan Pemalam
+  wwctSameLangError: ' Anda tidak boleh menterjemahkan ke bahasa yang sama!'
+  wwctGUINewTranslationTarget: Pilih Bahasa Sasaran
+  wwctLangToLangStartOtherPlayer: ' Sekarang menterjemahkan sembang dari %o dari %i
+    ke %e.'
+  wwcConfigGUIAmazonTranslateSettings: Amazon Terjemah Konfigurasi
+  wwcConfigConnectionSuccess: Berjaya disambungkan ke %o!
+  wwcConfigGUIGoogleTranslateButton: Google Terjemah
+  wwcsIsActiveTranslator: ' Adalah Penterjemah Aktif: %i'
+  wwctLangToLangStart: ' Sekarang menterjemahkan semua sembang anda dari %i ke %o.'
+  wwcConfigConversationPrefixInput: Awalan semasa ialah %i. Sila taip yang baru, atau
+    taip 0 untuk kembali.
+  wwcConfigGUIPreviousPageButton: Halaman Sebelumnya
+  wwcConfigGUITranslatorCacheButton: Ubah Had Cache Terjemahan
+  wwcConfigConversationbStatsSuccess: ' Berjaya togol bStats.'
+  wwcSignDone: ' Tandatangan berjaya diterjemahkan.'
+  wwcConfigInvalidPrefixSettings: Gagal membaca awalan anda. Menggunakan lalai...
+  wwcConfigRateLimitInvalid: Had kadar teruk ditetapkan dalam config.yml. Lalai ke
+    0 saat...
+  wwcConfigConversationWatsonSuccess: ' Berjaya membolehkan IBM Watson.'
+  wwcSignTranslateStart: ' Menterjemah tanda sasaran...'
+  wwcConfigGUIChatSettings: Konfigurasi Sembang
+  wwcConfigGUIWatsonURLButton: Ubah URL Layanan Watson
+  wwctInvalidLangCode: ' Kod bahasa tidak sah disediakan! Kod lang sah: %o'
+  wwcConfigConversationUpdateCheckerSuccess: ' Kemaskini penangguhan pemeriksa berjaya
+    ditetapkan.'
+  wwcUnsupportedVersion: 'Anda menjalankan versi Bukkit, Spigot, atau Paper yang tidak
+    disokong. Versi yang disokong:'
+  wwctGUIBackToMainMenuButton: Kembali ke Menu Terjemahan Utama
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Sembang global sedang diterjemahkan
+    dari %i ke %o.'
+  wwcBookTranslationFail: ' Tidak boleh mendapatkan terjemahan sah bagi satu atau
+    lebih halaman buku sasaran anda dari %i.'
+  wwcConfigGUITranslatorSettings: Konfigurasi Penterjemah
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Kekunci API semasa ialah %i. Sila
+    masukkan kunci API untuk Google Translate, atau taip 0 untuk kembali.
+  wwcConfigConversationRateLimitInput: Had kadar global semasa setiap terjemahan adalah
+    %i saat. Ketik sesuatu yang lebih besar daripada 0 untuk menetapkan nilai baru,
+    atau ketik 0 untuk menonaktifkan batas. Taip apa-apa kurang daripada 0 untuk kembali.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Tetapkan kekunci Google Translate
+    API berjaya.'
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Ubah Kunci Rahsia Amazon
+  wwcVersion: ' WorldwideChat, versi'
+  wwcsName: ' Nama Pemain: %i'
+  wwcInvalidTranslator: Tetapan penterjemah tidak sah. Sila betulkan ini dalam config.yml
+    anda atau dengan /wwcc untuk guna pemalam ini.
+  wwcsAttemptedTranslations: ' Percubaan Terjemahan: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Kunci rahsia Amazon berjaya
+    ditetapkan.'
+  wwcConfigConversationWatsonAPIKeySuccess: ' Kekunci API Watson berjaya ditetapkan.'
+  wwctGUIMainMenu: Menu Terjemahan Anda
+  wwctsNotATranslator: ' Anda bukan penterjemah aktif! Pastikan anda telah menetapkan
+    ini dengan /wwct.'
+  wwcRateLimit: ' Terjemahan anda adalah kadar terhad. Sila tunggu yang lain %i saat.'
+  wwcConfigCacheEnabled: Cache penterjemah dibenarkan dan tetapkan kepada had bagi
+    %i.
+  wwctGUIExistingTranslationButton: Tulis ganti Sesi Terjemahan Semasa
+  wwcOnJoinTranslationNotificationNoSourceLang: ' Sembang anda sedang diterjemahkan
+    ke %o.'
+  wwcConfigGUIGoogleTranslateStatusButton: Togol Google Terjemah
+  wwcConfigGUIWatsonStatusButton: Togol Watson
+  wwcUserDataReloaded: Dimuatkan semua data pengguna yang disimpan.
+  wwcConfigGUISendTranslationChatButton: Hantar Peringatan Sembang kepada Penterjemah
+    Aktif semasa Log Masuk
+  wwcsLastTranslationTime: ' Masa Terjemahan Terakhir (Berjaya): %i'
+  wwctbNotATranslator: ' Anda bukan penterjemah aktif! Pastikan anda telah menetapkan
+    ini dengan /wwct.'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Kekunci capaian semasa ialah
+    %i. Sila masukkan kekunci capaian untuk Amazon, atau taip 0 untuk kembali.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Kekunci akses Amazon berjaya
+    ditetapkan.'
+  wwcConfigBadUpdateDelay: Kelewatan kemas kini tidak sah ditetapkan dalam config.yml.
+    Lalai kepada 86400 saat...

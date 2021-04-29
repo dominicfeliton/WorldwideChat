@@ -1,0 +1,223 @@
+Messages:
+  wwcgAutoTranslateStart: ' Μεταφράζω τώρα την παγκόσμια συνομιλία σε %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Η καθολική συνομιλία μεταφράζεται
+    σε %o.'
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Αλλαγή κλειδιού πρόσβασης Amazon
+  wwcrFail: ' Η επαναφόρτωση του WorldwideChat'
+  wwcConfigGUIUpdateCheckerButton: Αλλαγή ελέγχου για καθυστέρηση ενημερώσεων
+  wwcSignTranslationFail: ' Δεν είναι δυνατή η λήψη έγκυρης μετάφρασης του σημείου
+    προορισμού σας από %i.'
+  wwcConfigConversationGoogleTranslateFail: ' Αποτυχία ενεργοποίησης της μετάφρασης
+    Google.'
+  wwcUpdaterFailedGeneric: Δεν είναι δυνατός ο έλεγχος για ενημερώσεις WorldwideChat
+  wwcConfigConversationUpdateCheckerInput: Η τρέχουσα καθυστέρηση στον έλεγχο ενημέρωσης
+    είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 10 για να ορίσετε
+    μια νέα τιμή ή οτιδήποτε λιγότερο από 10 για να επιστρέψετε.
+  wwctGUIMainMenuGlobal: Μενού καθολικής μετάφρασης
+  wwcConfigGUIWatsonButton: Μετάφραση Watson
+  wwcConfigConversationPluginUpdateChatSuccess: ' Ενημέρωση plugin υπενθύμιση συνομιλίας
+    εναλλαγή με επιτυχία.'
+  wwctbOnTarget: ' Η μετάφραση του βιβλίου είναι ενεργοποιημένη για %i.'
+  wwcsNotATranslator: ' Δεν υπάρχουν ακόμα διαθέσιμες εγγραφές για %i.'
+  wwcConfigGUIbStatsButton: Εναλλαγή bStats
+  wwctGUINewTranslationSource: Επιλέξτε μια γλώσσα προέλευσης
+  wwcConfigConnectionFailed: Αποτυχία σύνδεσης στο %o. Βεβαιωθείτε ότι τα διαπιστευτήριά
+    σας και το τείχος προστασίας έχουν ρυθμιστεί σωστά!
+  wwcConfigEnabledbStats: Ενεργοποιημένα bStats.
+  wwctGUIMainMenuPlayer: Μενού μετάφρασης του %i
+  wwctGUIBookButton: Εναλλαγή μετάφρασης βιβλίου
+  wwcLangDetected: Εντοπίστηκε γλώσσα %o.
+  wwcBookTranslateStart: ' Μεταφράζω το βιβλίο στόχου...'
+  wwcConfigDisabledbStats: Απενεργοποιημένη bStats.
+  wwctsOffSender: ' Η μετάφραση υπογραφής απενεργοποιήθηκε.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Η παγκόσμια συνομιλία
+    μεταφράζεται, αλλά η συνομιλία σας μεταφράζεται από %i σε %o.'
+  wwcConfigConversationGoogleTranslateSuccess: ' Η μετάφραση Google ενεργοποιήθηκε
+    με επιτυχία.'
+  wwcUpdaterParserFailed: Αποτυχία ανάλυσης δεδομένων ενημέρωσης από το Github.
+  wwctAutoTranslateStart: ' Μεταφράζω τώρα όλη τη συνομιλία σας στο %o.'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Το τρέχον μυστικό κλειδί είναι
+    %i. Εισαγάγετε ένα μυστικό κλειδί για το Amazon ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwctbOffSender: ' Η μετάφραση του βιβλίου απενεργοποιημένη.'
+  wwcConfigGUIAmazonTranslateButton: Amazon μετάφραση
+  wwcConfigConversationLangSuccess: ' Η γλώσσα του προσθέτου άλλαξε με επιτυχία.'
+  wwcsSuccessfulTranslations: ' Επιτυχημένες μεταφράσεις: %i'
+  wwctTranslationStoppedOtherPlayer: ' Η μετάφραση συνομιλίας για %i έχει διακοπεί.'
+  wwcConfigConversationTranslationCacheInput: Το τρέχον όριο προσωρινής μνήμης μετάφρασης
+    είναι %i φράσεις. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια
+    νέα τιμή ή πληκτρολογήστε 0 για να απενεργοποιήσετε τη μνήμη cache μετάφρασης.
+    Πληκτρολογήστε οτιδήποτε λιγότερο από 0 για να πάει πίσω.
+  wwctbOffTarget: ' Η μετάφραση του βιβλίου απενεργοποιημένη για %i.'
+  wwcConfigGUIGeneralSettings: Γενικές ρυθμίσεις
+  wwcInvalidLang: Μη έγκυρη γλώσσα στο config.yml. Προεπιλογές σε en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ' Περιοχή Amazon έχει οριστεί
+    με επιτυχία.'
+  wwcConfigRateLimitEnabled: Το καθολικό όριο ρυθμού ενεργοποιήθηκε και ρυθμίστηκε
+    σε %i δευτερόλεπτα.
+  wwcBadPerms: ' Δεν έχετε τα απαιτούμενα δικαιώματα για να εκτελέσετε αυτήν την εντολή!'
+  wwcConfigGUILangButton: Αλλαγή γλώσσας προσθέτου
+  wwctGUISignButton: Εναλλαγή Μετάφρασης Υπογραφών
+  wwcUpdaterOutOfDate: Το WorldwideChat είναι ξεπερμένο. Ενημερώστε την τελευταία
+    έκδοση, %i.
+  wwcConfigGUIChangesNotSaved: ' Οι αλλαγές σας ενδέχεται να μην τεθούν σε ισχύ μέχρι
+    να εκτελέσετε /wwcr, ή να κάνετε κλικ στο κόκκινο φράγμα στο /wwcc.'
+  wwcConfigGUINextPageButton: Επόμενη Σελίδα
+  wwctbTranslatePageFail: (Αποτυχία μετάφρασης αυτής της σελίδας) %i
+  wwcConfigInvalidTranslatorSettings: Μη έγκυρες ρυθμίσεις μεταφραστή! Παρακαλώ ενεργοποιήστε
+    μόνο έναν μεταφραστή στο config.yml σας.
+  wwcConfigGUIQuitButton: Έξοδος & αποθήκευση αλλαγών
+  wwctPlayerNotFound: ' Παίχτης %Δεν βρέθηκε.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Η παγκόσμια συνομιλία
+    μεταφράζεται, αλλά η συνομιλία σας μεταφράζεται σε %o.'
+  wwcConfigGUIGoogleTranslateSettings: Ρύθμιση παραμέτρων μετάφρασης Google
+  wwcConfigGUIGlobalRateLimit: Αλλαγή ορίου καθολικού ρυθμού
+  wwctGUIBackToSourceLanguageButton: Επιστροφή στο μενού γλώσσας προέλευσης
+  wwcConfigGUIAmazonTranslateRegionButton: Αλλαγή περιοχής του Αμαζονίου
+  wwcConfigConversationLangInput: 'Η τρέχουσα γλώσσα πρόσθετου είναι %i. Εισαγάγετε
+    έναν έγκυρο κωδικό γλώσσας ή πληκτρολογήστε 0 για ακύρωση. Κωδικοί έγκυρης γλώσσας:
+    %o'
+  wwcConfigConversationLangInvalid: ' Μη έγκυρος κωδικός γλώσσας!'
+  wwctTranslationStopped: ' Η μετάφραση της συνομιλίας σας έχει διακοπεί.'
+  wwcConfigGUIWatsonSettings: Ρύθμιση παραμέτρων Watson
+  wwctsPlayerNotFound: ' Ο αναπαραγωγής %i είτε δεν βρέθηκε είτε δεν είναι ενεργός
+    μεταφραστής.'
+  wwcConfigGUIWatsonAPIKeyButton: Αλλαγή κλειδιού API Watson
+  wwcEnabled: Ενεργοποιημένη έκδοση %i WorldwideChat
+  wwcgLangToLangStart: ' Τώρα μεταφράζεται η παγκόσμια συνομιλία από %i σε %o.'
+  wwctbOnSender: ' Η μετάφραση του βιβλίου είναι ενεργοποιημένη. Κάντε δεξί κλικ κρατώντας
+    ένα βιβλίο για να το μεταφράσετε!'
+  wwcListenersInitialized: Αρχικοποιημένοι ακροατές.
+  wwcUserDataCorrupted: Βρέθηκαν και κινήθηκε %i κατεστραμμένα ή παλιά αρχεία δεδομένων
+    χρήστη. Θα διαγραφούν στην επόμενη επαναφόρτωση.
+  wwcConfigGUIPluginUpdateChatButton: Αποστολή υπενθύμισης συνομιλίας για ενημερώσεις
+    plugin
+  wwcConfigConversationSendTranslationChatSuccess: ' Ενεργή υπενθύμιση συνομιλίας
+    μεταφραστή μεταβλήθηκε με επιτυχία.'
+  wwctsOffTarget: ' Η μετάφραση υπογραφής απενεργοποιημένη για %i.'
+  wwcUpdaterConnectionFailed: Δεν είναι δυνατός ο έλεγχος για τις τελευταίες ενημερώσεις
+    στο Github.
+  watsonNotFoundExceptionNotification: ' Δεν είναι δυνατή η περαιτέρω μετάφραση της
+    εισόδου σας.'
+  wwcConfigConversationWatsonAPIKeyInput: Το τρέχον κλειδί API είναι %i. Εισαγάγετε
+    ένα κλειδί API για το Watson ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwctGUIStopButton: Σταματήστε τη μετάφραση
+  wwcgTranslationStopped: ' Η μετάφραση της παγκόσμιας συνομιλίας έχει διακοπεί.'
+  wwctAutoTranslateStartOtherPlayer: ' Τώρα μεταφράζω τη συνομιλία του %i σε %o.'
+  wwcUpdaterFutureDate: Αυτή η παρουσία του WorldwideChat έχει μια μεγαλύτερη έκδοση
+    από την πιο πρόσφατη δημόσια.
+  wwcConfigConversationPrefixSuccess: ' Το πρόθεμα άλλαξε με επιτυχία.'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Αλλαγή του κλειδιού API μετάφρασης Google
+  wwcSignDeletedOrTooLong: ' Το σύμβολο προορισμού είτε διαγράφηκε είτε η μετάφραση
+    ήταν πολύ μεγάλη. Μετάφραση:'
+  wwcConfigGUIAmazonTranslateStatusButton: Εναλλαγή Μετάφραση Amazon
+  wwctsOnTarget: ' Ενεργοποίηση μετάφρασης υπογραφής για %i.'
+  wwcConfigCacheDisabled: Η μνήμη cache του μεταφραστή απενεργοποιήθηκε.
+  wwcConfigConversationWatsonURLInput: Η τρέχουσα διεύθυνση URL είναι %i. Εισαγάγετε
+    μια διεύθυνση URL υπηρεσίας για το Watson ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcOnJoinTranslationNotificationSourceLang: ' Η συνομιλία σας μεταφράζεται από %i
+    σε %o.'
+  wwcBookDone: ' Το βιβλίο μεταφράστηκε με επιτυχία.'
+  wwctsOnSender: ' Ενεργοποίηση μετάφρασης υπογραφής. Κάντε δεξί κλικ σε μια πινακίδα
+    για να τη μεταφράσετε!'
+  watsonColorCodeWarning: ' Η χρήση κωδικών χρωμάτων μπορεί να σας δώσει απρόβλεπτα
+    αποτελέσματα.'
+  wwctGUITranslationButton: Έναρξη μετάφρασης
+  wwctGUIAutoDetectButton: Αυτόματος εντοπισμός γλώσσας προέλευσης
+  wwcUpdaterUpToDate: Το WorldwideChat είναι ενημερωμένο!
+  wwcConfigConversationAmazonTranslateRegionInput: Η τρέχουσα περιοχή είναι %i. Εισαγάγετε
+    μια περιοχή για το Amazon ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationWatsonFail: ' Αποτυχία ενεργοποίησης της IBM Watson.'
+  wwcNoConsole: ' Αυτή η εντολή μπορεί να τρέξει μόνο από έναν παίκτη.'
+  wwcConfigConversationAmazonTranslateSuccess: ' Ενεργοποιήθηκε επιτυχώς η μετάφραση
+    του Amazon'
+  wwcConfigConversationAmazonTranslateFail: ' Η ενεργοποίηση της μετάφρασης Amazon
+    απέτυχε.'
+  wwcInitializationFail: Η προετοιμασία του WorldwideChat απέτυχε.
+  wwcrSuccess: ' Επαναφόρτωση με επιτυχία WorldWide'
+  wwcPlayerNotFound: ' Παίχτης %Δεν βρέθηκε.'
+  wwcUpdaterOutOfDateChat: ' Το WorldwideChat είναι ξεπερμένο. Ενημερώστε την τελευταία
+    έκδοση.'
+  wwcConfigConversationRateLimitSuccess: ' Το όριο βαθμολογίας ορίστηκε με επιτυχία.'
+  wwcConfigConversationWatsonURLSuccess: ' Η διεύθυνση URL Watson ορίστηκε με επιτυχία.'
+  wwctbPlayerNotFound: ' Ο αναπαραγωγής %i είτε δεν βρέθηκε είτε δεν είναι ενεργός
+    μεταφραστής.'
+  wwcConfigConversationTranslationCacheSuccess: ' Το όριο cache μετάφρασης ορίστηκε
+    με επιτυχία.'
+  wwctInvalidArgs: ' Μη έγκυρα ορίσματα!'
+  wwcConfigGUIPrefixButton: Αλλαγή προθέματος πρόσθετου
+  wwctSameLangError: ' Δεν μπορείτε να μεταφράσετε στην ίδια γλώσσα!'
+  wwctGUINewTranslationTarget: Επιλογή γλώσσας προορισμού
+  wwctLangToLangStartOtherPlayer: ' Τώρα μεταφράζεται η συνομιλία του %o από %i σε
+    %e.'
+  wwcConfigGUIAmazonTranslateSettings: Μετάφραση Amazon
+  wwcConfigConnectionSuccess: Επιτυχής σύνδεση στο %o!
+  wwcConfigGUIGoogleTranslateButton: Μετάφραση Google
+  wwcsIsActiveTranslator: ' Είναι ενεργός μεταφραστής: %i'
+  wwctLangToLangStart: ' Τώρα μεταφράζετε όλη τη συνομιλία σας από %i σε %o.'
+  wwcConfigConversationPrefixInput: Το τρέχον πρόθεμα είναι %i. Πληκτρολογήστε ένα
+    νέο ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUIPreviousPageButton: Προηγούμενη σελίδα
+  wwcConfigGUITranslatorCacheButton: Αλλαγή του ορίου προσωρινής μνήμης μετάφρασης
+  wwcConfigConversationbStatsSuccess: ' Επιτυχής εναλλαγή bStats.'
+  wwcSignDone: ' Υπογραφή μεταφράστηκε με επιτυχία.'
+  wwcConfigInvalidPrefixSettings: Αποτυχία ανάγνωσης του πρόθεματός σας. Χρήση της
+    προεπιλεγμένης...
+  wwcConfigRateLimitInvalid: Το κακό όριο ρυθμού ορίζεται στο config.yml. Προεπιλογές
+    σε 0 δευτερόλεπτα...
+  wwcConfigConversationWatsonSuccess: ' Ενεργοποιήθηκε με επιτυχία η IBM Watson.'
+  wwcSignTranslateStart: ' Μεταφράζω το σημάδι στόχου...'
+  wwcConfigGUIChatSettings: Ρύθμιση παραμέτρων συνομιλίας
+  wwcConfigGUIWatsonURLButton: Αλλαγή URL υπηρεσίας Watson
+  wwctInvalidLangCode: ' Παρέχονται μη έγκυροι κωδικοί γλώσσας! Έγκυροι κωδικοί lang:
+    %o'
+  wwcConfigConversationUpdateCheckerSuccess: ' Η καθυστέρηση ελέγχου ενημέρωσης ορίστηκε
+    με επιτυχία.'
+  wwcUnsupportedVersion: 'Εκτελείτε μια μη υποστηριζόμενη έκδοση του Bukkit, Spigot
+    ή Paper. Υποστηριζόμενες εκδόσεις:'
+  wwctGUIBackToMainMenuButton: Επιστροφή στο Κύριο Μενού Μετάφρασης
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Η καθολική συνομιλία μεταφράζεται
+    από %i σε %o.'
+  wwcBookTranslationFail: ' Δεν είναι δυνατή η λήψη έγκυρης μετάφρασης μιας ή περισσοτέρων
+    σελίδων του βιβλίου προορισμού σας από %i.'
+  wwcConfigGUITranslatorSettings: Διαμόρφωση μεταφραστή
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Το τρέχον κλειδί API είναι %i.
+    Εισαγάγετε ένα κλειδί API για το Google Translate ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationRateLimitInput: Το τρέχον όριο καθολικού ρυθμού ανά μετάφραση
+    είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε
+    μια νέα τιμή ή πληκτρολογήστε 0 για να απενεργοποιήσετε το όριο. Πληκτρολογήστε
+    οτιδήποτε λιγότερο από 0 για να πάει πίσω.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Το κλειδί API Μετάφραση Google
+    έχει οριστεί με επιτυχία.'
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Αλλαγή μυστικού κλειδιού Amazon
+  wwcVersion: ' Παγκόσμια συνομιλία, έκδοση'
+  wwcsName: ' Όνομα παίκτη: %i'
+  wwcInvalidTranslator: Μη έγκυρες ρυθμίσεις μεταφραστή. Διορθώστε το στο config.yml
+    ή στο /wwcc για να χρησιμοποιήσετε αυτό το πρόσθετο.
+  wwcsAttemptedTranslations: ' Απόπειρα μεταφράσεων: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Το μυστικό κλειδί Amazon
+    που με επιτυχία.'
+  wwcConfigConversationWatsonAPIKeySuccess: ' Το κλειδί Watson API ορίστηκε με επιτυχία.'
+  wwctGUIMainMenu: Το μενού μετάφρασης σας
+  wwctsNotATranslator: ' Δεν είσαι ενεργός μεταφραστής! Βεβαιωθείτε ότι έχετε ρυθμίσει
+    αυτό με /wwct.'
+  wwcRateLimit: ' Οι μεταφράσεις σας είναι περιορισμένες. Παρακαλώ περιμένετε άλλο
+    %i δευτερόλεπτα.'
+  wwcConfigCacheEnabled: Η μνήμη cache του μεταφραστή είναι ενεργοποιημένη και έχει
+    οριστεί σε ένα όριο του %i.
+  wwctGUIExistingTranslationButton: Αντικατάσταση τρέχουσας συνεδρίας μετάφρασης
+  wwcOnJoinTranslationNotificationNoSourceLang: ' Η συνομιλία σας μεταφράζεται σε
+    %o.'
+  wwcConfigGUIGoogleTranslateStatusButton: Εναλλαγή μετάφρασης Google
+  wwcConfigGUIWatsonStatusButton: Εναλλαγή Watson
+  wwcUserDataReloaded: Φόρτωσε όλα τα αποθηκευμένα δεδομένα χρήστη.
+  wwcConfigGUISendTranslationChatButton: Αποστολή υπενθύμισης συνομιλίας στον ενεργό
+    μεταφραστή κατά τη σύνδεση
+  wwcsLastTranslationTime: ' Τελευταία (επιτυχής) Χρόνος μετάφρασης: %i'
+  wwctbNotATranslator: ' Δεν είσαι ενεργός μεταφραστής! Βεβαιωθείτε ότι έχετε ρυθμίσει
+    αυτό με /wwct.'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Το τρέχον κλειδί πρόσβασης είναι
+    %i. Εισαγάγετε ένα κλειδί πρόσβασης για το Amazon ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Κλειδί πρόσβασης Amazon
+    που με επιτυχία.'
+  wwcConfigBadUpdateDelay: Η μη έγκυρη καθυστέρηση του προγράμματος ενημέρωσης έχει
+    οριστεί στο config.yml. Προεπιλογές σε 86400 δευτερόλεπτα...

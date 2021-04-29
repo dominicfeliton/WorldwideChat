@@ -1,0 +1,213 @@
+Messages:
+  wwcgAutoTranslateStart: ' Acum traducem chatul global la %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Chatul global este tradus
+    la %o.'
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Modificarea cheii de acces Amazon
+  wwcrFail: ' Nu a reușit să reîncărcați WorldwideChat.'
+  wwcConfigGUIUpdateCheckerButton: Modificare verificare pentru întârzierea actualizărilor
+  wwcSignTranslationFail: ' Nu am putut obține o traducere validă a semnului țintă
+    din %i.'
+  wwcConfigConversationGoogleTranslateFail: ' Imposibilitatea de a activa Google Translate.'
+  wwcUpdaterFailedGeneric: Imposibil de verificat pentru actualizări WorldwideChat.
+  wwcConfigConversationUpdateCheckerInput: Întârzierea curentă a verificatorului de
+    actualizare este %i secunde. Tastați ceva mai mare de 10 pentru a seta o valoare
+    nouă sau ceva mai mic de 10 pentru a reveni.
+  wwctGUIMainMenuGlobal: Meniu global de traducere
+  wwcConfigGUIWatsonButton: Watson Traduce
+  wwcConfigConversationPluginUpdateChatSuccess: ' Memento-ul de actualizare a plugin-ului
+    a fost comitat cu succes.'
+  wwctbOnTarget: ' Traducerea cărții este activată pentru %i.'
+  wwcsNotATranslator: ' Nu există încă înregistrări disponibile pentru %i.'
+  wwcConfigGUIbStatsButton: Comutare bStats
+  wwctGUINewTranslationSource: Alegeți o limbă sursă
+  wwcConfigConnectionFailed: Nu a reușit conectarea la %o. Asigurați-vă că acreditările
+    și paravanul de protecție sunt configurate corect!
+  wwcConfigEnabledbStats: bStats activate.
+  wwctGUIMainMenuPlayer: Meniu de traducere la %i
+  wwctGUIBookButton: Comută traducerea cărții
+  wwcLangDetected: Limba detectat %o.
+  wwcBookTranslateStart: ' Traduc cartea ţintă...'
+  wwcConfigDisabledbStats: BSTAT-uri dezactivate.
+  wwctsOffSender: ' Semnează traducerea dezactivată.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Chatul global este tradus,
+    dar chat-ul dvs. este tradus din %i la %o.'
+  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate activat cu succes.'
+  wwcUpdaterParserFailed: Nu a reușit să analizeze datele de actualizare de la Github.
+  wwctAutoTranslateStart: ' Acum traduceți întregul chat la %o.'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Cheia secretă curentă este %i.
+    Introduceți o cheie secretă pentru Amazon sau tastați 0 pentru a reveni.
+  wwctbOffSender: ' Traducere carte dezactivat.'
+  wwcConfigGUIAmazonTranslateButton: Amazon Traduce
+  wwcConfigConversationLangSuccess: ' Limba plugin-ului s-a schimbat cu succes.'
+  wwcsSuccessfulTranslations: ' Traduceri reușite: %i'
+  wwctTranslationStoppedOtherPlayer: ' Traducerea chat-ului pentru %i a fost oprită.'
+  wwcConfigConversationTranslationCacheInput: Limita cache de traducere curentă este
+    %i fraze. Tastați ceva mai mare decât 0 pentru a seta o valoare nouă sau tastați
+    0 pentru a dezactiva memoria cache de traducere. Tastați ceva mai puțin de 0 pentru
+    a merge înapoi.
+  wwctbOffTarget: ' Traducerea cărții dezactivată pentru %i.'
+  wwcConfigGUIGeneralSettings: Configurare generală
+  wwcInvalidLang: Limbă nevalidă în config.yml. Inîndeplinire a obligațiilor de plată
+    la ro...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ' Regiunea Amazon a stabilit
+    cu succes.'
+  wwcConfigRateLimitEnabled: Limita globală a ratei activată și setată la %i secunde.
+  wwcBadPerms: ' Nu aveți permisiunile necesare pentru a executa această comandă!'
+  wwcConfigGUILangButton: Schimbă limba pluginului
+  wwctGUISignButton: Comută traducerea semnelor
+  wwcUpdaterOutOfDate: WorldwideChat este expirat. Vă rugăm să actualizați la cea
+    mai recentă versiune, %i.
+  wwcConfigGUIChangesNotSaved: ' Este posibil ca modificările să nu aibă efect până
+    când fie rulați /wwcr, fie faceți clic pe bariera roșie în /wwcc.'
+  wwcConfigGUINextPageButton: Pagina următoare
+  wwctbTranslatePageFail: (Eșec la traducerea acestei pagini) %i
+  wwcConfigInvalidTranslatorSettings: Setări de traducător nevalide! Vă rugăm să activați
+    un singur traducător în config.yml.
+  wwcConfigGUIQuitButton: Ieșire și salvare modificări
+  wwctPlayerNotFound: ' Jucătorul %nu am găsit.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Chatul global este
+    tradus, dar chatul dvs. este tradus la %o.'
+  wwcConfigGUIGoogleTranslateSettings: Configurare Traducere Google
+  wwcConfigGUIGlobalRateLimit: Modificarea limitei globale a ratei
+  wwctGUIBackToSourceLanguageButton: Înapoi la meniul Limbă sursă
+  wwcConfigGUIAmazonTranslateRegionButton: Schimbă regiunea Amazon
+  wwcConfigConversationLangInput: 'Limba curentă a pluginului este %i. Introduceți
+    un cod de limbă valid sau tastați 0 pentru a anula. Coduri de limbă valide: %o'
+  wwcConfigConversationLangInvalid: ' Cod de limbă nevalid!'
+  wwctTranslationStopped: ' Traducerea chat-ului a fost oprită.'
+  wwcConfigGUIWatsonSettings: Configurare Watson
+  wwctsPlayerNotFound: ' Jucătorul %i fie nu este găsit, fie nu este un traducător
+    activ.'
+  wwcConfigGUIWatsonAPIKeyButton: Modificare cheie API Watson
+  wwcEnabled: Versiune WorldwideChat activată.
+  wwcgLangToLangStart: ' Acum traducem chatul global de la %i la %o.'
+  wwctbOnSender: ' Traducerea cărţii activată. Faceți clic dreapta în timp ce țineți
+    o carte pentru ao traduce!'
+  wwcListenersInitialized: Ascultători iniţializaţi.
+  wwcUserDataCorrupted: S-au găsit și s-au mutat %i fișiere corupte sau vechi de date
+    ale utilizatorilor. Acestea vor fi șterse la următoarea reîncărcare.
+  wwcConfigGUIPluginUpdateChatButton: Trimiteți Memento Chat pentru actualizări plugin-uri
+  wwcConfigConversationSendTranslationChatSuccess: ' Memento-ul de chat al traducătorului
+    activ a fost activat cu succes.'
+  wwctsOffTarget: ' Semnează traducerea dezactivată pentru %i.'
+  wwcUpdaterConnectionFailed: Imposibil de verificat pentru cele mai recente actualizări
+    pe Github.
+  watsonNotFoundExceptionNotification: ' Imposibil de tradus intrările dvs. mai departe.'
+  wwcConfigConversationWatsonAPIKeyInput: Tasta API curentă este %i. Introduceți o
+    cheie API pentru Watson sau tastați 0 pentru a reveni.
+  wwctGUIStopButton: Opriți traducerea
+  wwcgTranslationStopped: ' Traducerea globală a chat-ului a fost oprită.'
+  wwctAutoTranslateStartOtherPlayer: ' Acum traducem chat-ul de %i la %o.'
+  wwcUpdaterFutureDate: Această instanță a WorldwideChat are o versiune mai mare decât
+    cea mai recentă publică.
+  wwcConfigConversationPrefixSuccess: ' Prefixul s-a schimbat cu succes.'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Schimbarea Google Translate API cheie
+  wwcSignDeletedOrTooLong: ' Semnul țintă a fost fie șters, fie traducerea a fost
+    prea lungă. Traducere:'
+  wwcConfigGUIAmazonTranslateStatusButton: Comută Amazon Translate
+  wwctsOnTarget: ' Semnează traducerea activată pentru %i.'
+  wwcConfigCacheDisabled: Cache traducător dezactivat.
+  wwcConfigConversationWatsonURLInput: Adresa URL curentă este %i. Introduceți un
+    URL de serviciu pentru Watson sau tastați 0 pentru a reveni.
+  wwcOnJoinTranslationNotificationSourceLang: ' Chat-ul dvs. este tradus din %i la
+    %o.'
+  wwcBookDone: ' Cartea tradusă cu succes.'
+  wwctsOnSender: ' Traducerea semnelor activată. Faceți clic dreapta pe un semn pentru
+    ao traduce!'
+  watsonColorCodeWarning: ' Utilizarea codurilor de culoare vă poate oferi rezultate
+    imprevizibile.'
+  wwctGUITranslationButton: Începeți traducerea
+  wwctGUIAutoDetectButton: Detectare automată limbă sursă
+  wwcUpdaterUpToDate: WorldwideChat este la zi!
+  wwcConfigConversationAmazonTranslateRegionInput: Regiunea curentă este %i. Introduceți
+    o regiune pentru Amazon sau tastați 0 pentru a reveni.
+  wwcConfigConversationWatsonFail: ' Imposibilitatea de a activa IBM Watson.'
+  wwcNoConsole: ' Această comandă poate fi rulată numai de un jucător.'
+  wwcConfigConversationAmazonTranslateSuccess: ' Activat cu succes Amazon Translate.'
+  wwcConfigConversationAmazonTranslateFail: ' Imposibilitatea de a activa Amazon Translate.'
+  wwcInitializationFail: Nu a reușit să inițializeze WorldwideChat.
+  wwcrSuccess: ' Reîncărcat cu succes WorldwideChat.'
+  wwcPlayerNotFound: ' Jucătorul %nu am găsit.'
+  wwcUpdaterOutOfDateChat: ' WorldwideChat este expirat. Vă rugăm să actualizați la
+    cea mai recentă versiune.'
+  wwcConfigConversationRateLimitSuccess: ' Limita de rată stabilită cu succes.'
+  wwcConfigConversationWatsonURLSuccess: ' Watson URL setat cu succes.'
+  wwctbPlayerNotFound: ' Jucătorul %i fie nu este găsit, fie nu este un traducător
+    activ.'
+  wwcConfigConversationTranslationCacheSuccess: ' Limita cache de traducere setată
+    cu succes.'
+  wwctInvalidArgs: ' Argumente nevalide furnizate!'
+  wwcConfigGUIPrefixButton: Schimbare prefixul plugin-ului
+  wwctSameLangError: ' Nu puteți traduce în aceeași limbă!'
+  wwctGUINewTranslationTarget: Alegeți o limbă țintă
+  wwctLangToLangStartOtherPlayer: ' Acum traducem chat-ul de %o de la %i la %e.'
+  wwcConfigGUIAmazonTranslateSettings: Amazon Traducere configurare
+  wwcConfigConnectionSuccess: Conectat cu succes la %o!
+  wwcConfigGUIGoogleTranslateButton: Traducere în Google
+  wwcsIsActiveTranslator: ' Este un translator activ: %i'
+  wwctLangToLangStart: ' Acum traduceți toată conversația de la %i la %o.'
+  wwcConfigConversationPrefixInput: Prefixul curent este %i. Introduceți unul nou
+    sau tastați 0 pentru a reveni.
+  wwcConfigGUIPreviousPageButton: Pagina precedentă
+  wwcConfigGUITranslatorCacheButton: Modificare limită cache traducere
+  wwcConfigConversationbStatsSuccess: ' bStats comutate cu succes.'
+  wwcSignDone: ' Semnul tradus cu succes.'
+  wwcConfigInvalidPrefixSettings: Nu ţi-am citit prefixul. Utilizarea implicită...
+  wwcConfigRateLimitInvalid: Limita de rată proastă stabilită în config.yml. Inimplicită
+    la 0 secunde...
+  wwcConfigConversationWatsonSuccess: ' Activat cu succes IBM Watson.'
+  wwcSignTranslateStart: ' Traduc semnul ţintă...'
+  wwcConfigGUIChatSettings: Configurare chat
+  wwcConfigGUIWatsonURLButton: Schimbare URL serviciu Watson
+  wwctInvalidLangCode: ' Codul (codurile) de limbă nevalidă furnizat! Coduri valide
+    lang: %o'
+  wwcConfigConversationUpdateCheckerSuccess: ' Actualizare verificare întârziere setată
+    cu succes.'
+  wwcUnsupportedVersion: 'Executați o versiune neacceptată de Bukkit, Spigot sau hârtie.
+    Versiuni acceptate:'
+  wwctGUIBackToMainMenuButton: Înapoi la meniul principal de traducere
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Chatul global este tradus din
+    %i la %o.'
+  wwcBookTranslationFail: ' Nu am putut obține o traducere validă a uneia sau mai
+    multor pagini ale cărții țintă din %i.'
+  wwcConfigGUITranslatorSettings: Configurare traducător
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Tasta API curentă este %i. Introduceți
+    o cheie API pentru Google Translate sau tastați 0 pentru a reveni.
+  wwcConfigConversationRateLimitInput: Limita actuală globală a ratei per traducere
+    este %i secunde. Tastați ceva mai mare decât 0 pentru a seta o valoare nouă sau
+    tastați 0 pentru a dezactiva limita. Tastați ceva mai puțin de 0 pentru a merge
+    înapoi.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Google Translate cheie API
+    set cu succes.'
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Schimbă cheia secretă Amazon
+  wwcVersion: ' WorldwideChat, versiune'
+  wwcsName: ' Numele jucătorului: %i'
+  wwcInvalidTranslator: Setări de traducător nevalide. Vă rugăm să remediați acest
+    lucru în config.yml sau cu /wwcc pentru a utiliza acest plugin.
+  wwcsAttemptedTranslations: ' Tentative de traduceri: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Cheia secretă Amazon a fost
+    stabilită cu succes.'
+  wwcConfigConversationWatsonAPIKeySuccess: ' Watson API a fost setată cu succes.'
+  wwctGUIMainMenu: Meniul dvs. de traducere
+  wwctsNotATranslator: ' Nu eşti un traducător activ! Asigurați-vă că ați setat acest
+    lucru cu /wwct.'
+  wwcRateLimit: ' Traducerile dvs. sunt limitate la tarife. Vă rugăm să așteptați
+    un alt %i secunde.'
+  wwcConfigCacheEnabled: Memoria cache a traducătorului este activată și setată la
+    o limită de %i.
+  wwctGUIExistingTranslationButton: Suprascriere sesiune de traducere curentă
+  wwcOnJoinTranslationNotificationNoSourceLang: ' Chatul dvs. este tradus la %o.'
+  wwcConfigGUIGoogleTranslateStatusButton: Comută Google Translate
+  wwcConfigGUIWatsonStatusButton: Comută Watson
+  wwcUserDataReloaded: Încărcat toate datele de utilizator salvate.
+  wwcConfigGUISendTranslationChatButton: Trimiteți Memento Chat către Translatorul
+    Activ la conectare
+  wwcsLastTranslationTime: ' Ultima (reușită) Timp de traducere: %i'
+  wwctbNotATranslator: ' Nu eşti un traducător activ! Asigurați-vă că ați setat acest
+    lucru cu /wwct.'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Cheia de acces curentă este
+    %i. Introduceți o cheie de acces pentru Amazon sau tastați 0 pentru a reveni.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Cheia de acces Amazon setată
+    cu succes.'
+  wwcConfigBadUpdateDelay: Invalid update întârziere setată în config.yml. Inimplicită
+    la 86400 de secunde...

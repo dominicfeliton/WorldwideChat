@@ -1,0 +1,167 @@
+Messages:
+  wwcgAutoTranslateStart: ' 現在將全球聊天翻譯為 %o。'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' 全球聊天正在翻譯為 %o。'
+  wwcConfigGUIAmazonTranslateAccessKeyButton: 變更亞馬遜存取金鑰
+  wwcrFail: ' 無法重新載入「全球聊天」。'
+  wwcConfigGUIUpdateCheckerButton: 變更檢查更新延遲
+  wwcSignTranslationFail: ' 無法從 %i 取得目標符號的有效轉譯。'
+  wwcConfigConversationGoogleTranslateFail: ' 無法啟用 Google 翻譯。'
+  wwcUpdaterFailedGeneric: 無法檢查全球聊天的更新。
+  wwcConfigConversationUpdateCheckerInput: 更新檢查程式的目前延遲為 %i 秒。輸入大於 10 的任何內容以設置一個新值，或者任何小於
+    10 的東西返回。
+  wwctGUIMainMenuGlobal: 全球翻譯選單
+  wwcConfigGUIWatsonButton: 華生翻譯
+  wwcConfigConversationPluginUpdateChatSuccess: ' 外掛程式更新聊天提醒切換成功。'
+  wwctbOnTarget: ' %i 已啟用書冊翻譯。'
+  wwcsNotATranslator: ' 沒有可用於 %i 的記錄。'
+  wwcConfigGUIbStatsButton: 切換 bStats
+  wwctGUINewTranslationSource: 選擇來源語言
+  wwcConfigConnectionFailed: 無法連線到 %o。請確定您的憑證和防火牆設定正確！
+  wwcConfigEnabledbStats: 已啟用 bStats。
+  wwctGUIMainMenuPlayer: '%i 的翻譯功能表'
+  wwctGUIBookButton: 切換報表簿翻譯
+  wwcLangDetected: 偵測到的語言 %o。
+  wwcBookTranslateStart: ' 正在正在翻譯目標報表簿...'
+  wwcConfigDisabledbStats: 停用的 bStats。
+  wwctsOffSender: ' 已停用簽署轉譯。'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' 全球聊天正在翻譯，但您的聊天將從 %i
+    翻譯成 %o。'
+  wwcConfigConversationGoogleTranslateSuccess: ' Google 翻譯成功啟用。'
+  wwcUpdaterParserFailed: 無法從 Github 剖析更新資料。
+  wwctAutoTranslateStart: ' 現在將您所有的聊天翻譯為 %o。'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: 目前的秘密金鑰是 %i。請輸入 Amazon 的秘密金鑰，或輸入
+    0 返回。
+  wwctbOffSender: ' 書籍翻譯已停用。'
+  wwcConfigGUIAmazonTranslateButton: 亞馬遜翻譯
+  wwcConfigConversationLangSuccess: ' 外掛程式語言變更成功。'
+  wwcsSuccessfulTranslations: ' 成功翻譯: %i'
+  wwctTranslationStoppedOtherPlayer: ' %i 的聊天翻譯已停止。'
+  wwcConfigConversationTranslationCacheInput: 目前的轉譯快取限制為 %i 片語。輸入大於 0 的任何值以設定新值，或鍵入
+    0 以停用轉譯快取。輸入小於 0 的任何內容以返回。
+  wwctbOffTarget: ' %i 已停用書冊翻譯。'
+  wwcConfigGUIGeneralSettings: 一般組態
+  wwcInvalidLang: 您的配置.yml 中的語言無效。預設為連接...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ' 亞馬遜地區設置成功。'
+  wwcConfigRateLimitEnabled: 啟用全域匯率限制並設定為 %i 秒。
+  wwcBadPerms: ' 您沒有執行此命令所需的權限！'
+  wwcConfigGUILangButton: 變更外掛程式語言
+  wwctGUISignButton: 切換簽名轉換
+  wwcUpdaterOutOfDate: 「全球聊天」已過時。請更新至最新版本 %i。
+  wwcConfigGUIChangesNotSaved: ' 您的變更可能不會生效，直到您執行 /wwcr 中的紅色屏障，或按一下 /wwcct 中的紅色屏障。'
+  wwcConfigGUINextPageButton: 下一頁
+  wwctbTranslatePageFail: (無法翻譯此頁面) %i
+  wwcConfigInvalidTranslatorSettings: 無效的翻譯器設定！請在您的配置.yml 中只啟用一個翻譯器。
+  wwcConfigGUIQuitButton: 退出並儲存變更
+  wwctPlayerNotFound: ' 玩家 % 我找不到。'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' 全球聊天正在翻譯，但您的聊天翻譯成
+    %o。'
+  wwcConfigGUIGoogleTranslateSettings: 谷歌翻譯配置
+  wwcConfigGUIGlobalRateLimit: 變更全域匯率限制
+  wwctGUIBackToSourceLanguageButton: 返回來源語言選單
+  wwcConfigGUIAmazonTranslateRegionButton: 變更亞馬遜區域
+  wwcConfigConversationLangInput: '目前的外掛程式語言為 %i。請輸入有效的語言代碼，或輸入 0 以取消。有效的語言代碼: %o'
+  wwcConfigConversationLangInvalid: ' 語言代碼無效！'
+  wwctTranslationStopped: ' 您的聊天翻譯已停止。'
+  wwcConfigGUIWatsonSettings: Watson 組態
+  wwctsPlayerNotFound: ' 玩家 %i 不是找不到，或者不是活躍的翻譯者。'
+  wwcConfigGUIWatsonAPIKeyButton: 變更沃森 API 金鑰
+  wwcEnabled: 已啟用全球聊天版本 %i。
+  wwcgLangToLangStart: ' 現在將全球聊天從 %i 翻譯到 %o。'
+  wwctbOnSender: ' 已啟用書冊翻譯。在拿著書的同時按一下滑鼠右鍵即可翻譯它！'
+  wwcListenersInitialized: 初始化監聽程式。
+  wwcUserDataCorrupted: 找到並移動 %i 損毀或舊的使用者資料檔案。它們將在下次重新載入時刪除。
+  wwcConfigGUIPluginUpdateChatButton: 傳送外掛程式更新的聊天提示
+  wwcConfigConversationSendTranslationChatSuccess: ' 作用中的翻譯聊天提醒切換成功。'
+  wwctsOffTarget: ' %i 已停用簽署轉譯。'
+  wwcUpdaterConnectionFailed: 無法在 Github 上檢查最新的更新。
+  watsonNotFoundExceptionNotification: ' 無法進一步翻譯您的輸入。'
+  wwcConfigConversationWatsonAPIKeyInput: 目前的 API 金鑰是 %i。請輸入 Watson 的 API 金鑰，或輸入 0
+    返回。
+  wwctGUIStopButton: 停止翻譯
+  wwcgTranslationStopped: ' 全球聊天翻譯已停止。'
+  wwctAutoTranslateStartOtherPlayer: ' 現在將 ％i 的聊天翻譯到 ％o。'
+  wwcUpdaterFutureDate: 這個 WorldwideChat 的執行個體比最新的公開版本還要大。
+  wwcConfigConversationPrefixSuccess: ' 字首已成功變更。'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: 更改谷歌翻譯 API 密鑰
+  wwcSignDeletedOrTooLong: ' 目標符號已刪除或翻譯過長。翻譯：'
+  wwcConfigGUIAmazonTranslateStatusButton: 切換亞馬遜翻譯
+  wwctsOnTarget: ' 已啟用 %i 的簽署轉譯。'
+  wwcConfigCacheDisabled: 翻譯器快取已停用。
+  wwcConfigConversationWatsonURLInput: 目前的 URL 是 %i。請輸入 Watson 的服務 URL，或輸入 0 返回。
+  wwcOnJoinTranslationNotificationSourceLang: ' 您的聊天室正在從 %i 翻譯成 %o。'
+  wwcBookDone: ' 書籍翻譯成功。'
+  wwctsOnSender: ' 已啟用簽署翻譯。在標誌上按一下滑鼠右鍵即可翻譯它！'
+  watsonColorCodeWarning: ' 使用顏色代碼可能會給您無法預期的結果。'
+  wwctGUITranslationButton: 開始翻譯
+  wwctGUIAutoDetectButton: 自動偵測來源語言
+  wwcUpdaterUpToDate: 全球聊天是最新的！
+  wwcConfigConversationAmazonTranslateRegionInput: 目前的區域是 %i。請輸入 Amazon 的區域，或輸入 0
+    返回。
+  wwcConfigConversationWatsonFail: ' 無法啟用 IBM 華生。'
+  wwcNoConsole: ' 此指令只能由玩家執行。'
+  wwcConfigConversationAmazonTranslateSuccess: ' 成功啟用亞馬遜翻譯。'
+  wwcConfigConversationAmazonTranslateFail: ' 無法啟用亞馬遜翻譯。'
+  wwcInitializationFail: 無法初始化「全球聊天」。
+  wwcrSuccess: ' 已成功重新載入「全球聊天」。'
+  wwcPlayerNotFound: ' 玩家 % 我找不到。'
+  wwcUpdaterOutOfDateChat: ' 「全球聊天」已過時。請更新至最新版本。'
+  wwcConfigConversationRateLimitSuccess: ' 成功設定匯率限制。'
+  wwcConfigConversationWatsonURLSuccess: ' Watson 網址設定成功。'
+  wwctbPlayerNotFound: ' 玩家 %i 不是找不到，或者不是活躍的翻譯者。'
+  wwcConfigConversationTranslationCacheSuccess: ' 翻譯快取限制設定成功。'
+  wwctInvalidArgs: ' 提供的引數無效！'
+  wwcConfigGUIPrefixButton: 變更外掛程式前置
+  wwctSameLangError: ' 您無法翻譯成相同的語言！'
+  wwctGUINewTranslationTarget: 選擇目標語言
+  wwctLangToLangStartOtherPlayer: ' 現在將 ％o 的聊天從 ％i 翻譯到 ％e。'
+  wwcConfigGUIAmazonTranslateSettings: 亞馬遜翻譯配置
+  wwcConfigConnectionSuccess: 成功連線到 %o!
+  wwcConfigGUIGoogleTranslateButton: 谷歌翻譯
+  wwcsIsActiveTranslator: ' 為作用中的轉換器: %i'
+  wwctLangToLangStart: ' 現在將您所有的聊天從 %i 翻譯到 %o。'
+  wwcConfigConversationPrefixInput: 目前的前置碼是 %i。請輸入新字首，或輸入 0 返回。
+  wwcConfigGUIPreviousPageButton: 上一頁
+  wwcConfigGUITranslatorCacheButton: 變更翻譯快取限制
+  wwcConfigConversationbStatsSuccess: ' 成功切換 bStats。'
+  wwcSignDone: ' 簽署翻譯成功。'
+  wwcConfigInvalidPrefixSettings: 無法讀取您的前置字元。使用預設值...
+  wwcConfigRateLimitInvalid: 在配置.yml 中設置錯誤率限制。預設為 0 秒...
+  wwcConfigConversationWatsonSuccess: ' 成功啟用 IBM 華生。'
+  wwcSignTranslateStart: ' 正在翻譯目標符號...'
+  wwcConfigGUIChatSettings: 聊天設定
+  wwcConfigGUIWatsonURLButton: 變更屈臣氏服務 URL
+  wwctInvalidLangCode: ' 提供的語言代碼無效!有效的語言代碼： %o'
+  wwcConfigConversationUpdateCheckerSuccess: ' 更新檢查程式延遲設定成功。'
+  wwcUnsupportedVersion: 您執行的是不支援的 Bukkit、Spigot 或紙張版本。支援的版本：
+  wwctGUIBackToMainMenuButton: 返回主翻譯選單
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' 全球聊天正在從 %i 翻譯到 %o。'
+  wwcBookTranslationFail: ' 無法從 %i 取得目標書冊的一或多頁的有效翻譯。'
+  wwcConfigGUITranslatorSettings: 轉換器組態
+  wwcConfigConversationGoogleTranslateAPIKeyInput: 目前的 API 金鑰是 %i。請輸入 Google 翻譯的 API
+    金鑰，或輸入 0 返回。
+  wwcConfigConversationRateLimitInput: 每個轉譯目前的全域速率限制為 %i 秒。輸入大於 0 的任何值以設定新值，或鍵入 0
+    以停用限制。輸入小於 0 的任何內容以返回。
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' 谷歌翻譯 API 密鑰集成功。'
+  wwcConfigGUIAmazonTranslateSecretKeyButton: 變更亞馬遜密鑰
+  wwcVersion: ' 全球聊天室，版本'
+  wwcsName: ' 玩家名稱： %i'
+  wwcInvalidTranslator: 無效的轉換器設定。請在您的配置.yml 或 /wwcc 中修復此問題以使用此插件。
+  wwcsAttemptedTranslations: ' 嘗試翻譯： %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' 亞馬遜密鑰設置成功。'
+  wwcConfigConversationWatsonAPIKeySuccess: ' 華生 API 金鑰集成功。'
+  wwctGUIMainMenu: 您的翻譯菜單
+  wwctsNotATranslator: ' 你不是一個積極的翻譯者！確保你已經用 /wwcti 設置了這個。'
+  wwcRateLimit: ' 您的翻譯費率有限。請稍候其他 %i 秒。'
+  wwcConfigCacheEnabled: 已啟用翻譯器快取並設定為 %i 的限制。
+  wwctGUIExistingTranslationButton: 覆寫目前翻譯作業階段
+  wwcOnJoinTranslationNotificationNoSourceLang: ' 您的聊天正在翻譯成 %o。'
+  wwcConfigGUIGoogleTranslateStatusButton: 切換谷歌翻譯
+  wwcConfigGUIWatsonStatusButton: 切換華生
+  wwcUserDataReloaded: 載入所有已儲存的使用者資料。
+  wwcConfigGUISendTranslationChatButton: 登入時傳送聊天提醒給現行翻譯人員
+  wwcsLastTranslationTime: ' 上次 (成功) 轉譯時間： %i'
+  wwctbNotATranslator: ' 你不是一個積極的翻譯者！確保你已經用 /wwcti 設置了這個。'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: 目前的存取金鑰是 %i。請輸入 Amazon 的存取金鑰，或輸入
+    0 以返回。
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' 亞馬遜訪問密鑰集成功。'
+  wwcConfigBadUpdateDelay: 在 config.yml 中設定的更新程式延遲無效。預設值為八億四千四百秒...

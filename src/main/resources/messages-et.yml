@@ -1,0 +1,199 @@
+Messages:
+  wwcgAutoTranslateStart: ' Nüüd tõlkides globaalset vestlust %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Globaalne vestlus on tõlgitud
+    %o.'
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Muuda Amazon Access Key
+  wwcrFail: ' WorldwideChat\''i taaslaadimine nurjus.'
+  wwcConfigGUIUpdateCheckerButton: Muuda värskenduste otsimise viivitus
+  wwcSignTranslationFail: ' Ei saa saada oma sihtmärgi märgi kehtivat tõlget alates
+    %i.'
+  wwcConfigConversationGoogleTranslateFail: ' Google Translate lubamine nurjus.'
+  wwcUpdaterFailedGeneric: WorldwideChat värskendusi ei saa kontrollida.
+  wwcConfigConversationUpdateCheckerInput: Värskenduskontrolli praegune viivitus on
+    %i sekundit. Tippige midagi suuremat kui 10 uue väärtuse määramiseks või midagi
+    vähem kui 10, et minna tagasi.
+  wwctGUIMainMenuGlobal: Globaalne tõlke menüü
+  wwcConfigGUIWatsonButton: Watson tõlkida
+  wwcConfigConversationPluginUpdateChatSuccess: ' Plugin uuendus chat meeldetuletus
+    lülitatakse edukalt.'
+  wwctbOnTarget: ' Raamatu tõlge lubatud %i.'
+  wwcsNotATranslator: ' %i jaoks pole veel ühtegi kirjet.'
+  wwcConfigGUIbStatsButton: Lülita bStats
+  wwctGUINewTranslationSource: Vali lähtekeel
+  wwcConfigConnectionFailed: Ühendumine %o nurjus. Veenduge, et teie mandaat ja tulemüür
+    oleksid õigesti konfigureeritud!
+  wwcConfigEnabledbStats: Lubatud bStats.
+  wwctGUIMainMenuPlayer: Tõlge menüü %i
+  wwctGUIBookButton: Lülita raamatu tõlge
+  wwcLangDetected: Tuvastatud keele %o.
+  wwcBookTranslateStart: ' Tõlkimine sihtraamat...'
+  wwcConfigDisabledbStats: Keelatud bStats.
+  wwctsOffSender: ' Allkirjastamine keelatud.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Globaalne vestlus on
+    tõlgitud, kuid sinu vestlus on tõlgitud alates %i kuni %o.'
+  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate lubatud edukalt.'
+  wwcUpdaterParserFailed: Andmete sõelumine Githubist nurjus.
+  wwctAutoTranslateStart: ' Nüüd tõlkides kõik oma vestlus %o.'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Praegune salajane võti on %i.
+    Palun sisestage Amazoni salajane võti või tippige 0, et minna tagasi.
+  wwctbOffSender: ' Broneeri tõlge keelatud.'
+  wwcConfigGUIAmazonTranslateButton: Amazon tõlkida
+  wwcConfigConversationLangSuccess: ' Plugin keel muutunud edukalt.'
+  wwcsSuccessfulTranslations: ' Edukad tõlked: %i'
+  wwctTranslationStoppedOtherPlayer: ' Vestlus tõlke %i on peatunud.'
+  wwcConfigConversationTranslationCacheInput: Praegune tõlkevahemälu limiit on %i
+    laused. Uue väärtuse määramiseks tippige midagi suuremat kui 0 või tippige tõlkevahemälu
+    keelamiseks 0. Tippige midagi vähem kui 0 tagasi minna.
+  wwctbOffTarget: ' Broneeri tõlge keelatud jaoks %i.'
+  wwcConfigGUIGeneralSettings: Üldine konfiguratsioon
+  wwcInvalidLang: Kehtetu keel oma config.yml. Defaulting en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ' Amazonase piirkonnas seatud
+    edukalt.'
+  wwcConfigRateLimitEnabled: Globaalne piirmäär lubatud ja seadistada %i sekundit.
+  wwcBadPerms: ' Teil pole selle käsu käivitamiseks vajalikke õigusi!'
+  wwcConfigGUILangButton: Muuda plugina keelt
+  wwctGUISignButton: Lülita viipetõlge
+  wwcUpdaterOutOfDate: WorldwideChat on aegunud. Palun uuenda uusimale versioonile,
+    %i.
+  wwcConfigGUIChangesNotSaved: ' Muudatused ei pruugi jõustuda enne, kui käivitate
+    /wwcr või klõpsate punasel tõkkel /wwcc.'
+  wwcConfigGUINextPageButton: Järgmine lehekülg
+  wwctbTranslatePageFail: (Selle lehe tõlkimine nurjus) %i
+  wwcConfigInvalidTranslatorSettings: Kehtetu tõlkija seaded! Palun lubage ainult
+    üks tõlkija oma config.yml.
+  wwcConfigGUIQuitButton: Välju ja salvesta muudatused
+  wwctPlayerNotFound: ' Mängija %ma ei leidnud.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Globaalset vestlust
+    tõlgitakse, kuid sinu vestlus on tõlgitud %o.'
+  wwcConfigGUIGoogleTranslateSettings: Google Translate konfiguratsioon
+  wwcConfigGUIGlobalRateLimit: Muuda globaalse määra limiiti
+  wwctGUIBackToSourceLanguageButton: Tagasi lähtekeele menüüsse
+  wwcConfigGUIAmazonTranslateRegionButton: Muuda Amazonase regiooni
+  wwcConfigConversationLangInput: 'Praegune plugina keel on %i. Palun sisestage kehtiv
+    keelekood või tühjendamiseks tippige 0. Kehtivad keelekoodid: %o'
+  wwcConfigConversationLangInvalid: ' Kehtetu keelekood!'
+  wwctTranslationStopped: ' Teie vestluse tõlge on peatatud.'
+  wwcConfigGUIWatsonSettings: Watsoni konfiguratsioon
+  wwctsPlayerNotFound: ' Mängija %Ma kas ei leitud, või ei ole aktiivne tõlkija.'
+  wwcConfigGUIWatsonAPIKeyButton: Muuda Watsoni API võtit
+  wwcEnabled: Lubatud WorldwideChat versioon %i.
+  wwcgLangToLangStart: ' Nüüd tõlkides globaalse vestluse alates %i kuni %o.'
+  wwctbOnSender: ' Raamatu tõlkimine on lubatud. Paremklõpsake hoides raamatut tõlkida!'
+  wwcListenersInitialized: Algastatud kuulajad.
+  wwcUserDataCorrupted: Leiti ja liigutatud %i rikutud või vanad kasutaja andmefailid.
+    Need kustutatakse järgmisel reload.
+  wwcConfigGUIPluginUpdateChatButton: Saada vestluse meeldetuletus Plugin värskenduste
+    jaoks
+  wwcConfigConversationSendTranslationChatSuccess: ' Aktiivne tõlkija vestlus meeldetuletus
+    lülitatud edukalt.'
+  wwctsOffTarget: ' Allkirjasta tõlge keelatud jaoks %i.'
+  wwcUpdaterConnectionFailed: Githubi uusimaid värskendusi ei saa otsida.
+  watsonNotFoundExceptionNotification: ' Ei saa tõlkida oma sisendit kaugemale.'
+  wwcConfigConversationWatsonAPIKeyInput: Praegune API võti on %i. Palun sisestage
+    Watsoni API võti või tippige 0, et minna tagasi.
+  wwctGUIStopButton: Lõpeta tõlkimine
+  wwcgTranslationStopped: ' Global chat tõlge on peatunud.'
+  wwctAutoTranslateStartOtherPlayer: ' Nüüd tõlkides vestlust %i kuni %o.'
+  wwcUpdaterFutureDate: Sellel WorldwideChati eksemplaril on suurem versioon kui viimane
+    avalik versioon.
+  wwcConfigConversationPrefixSuccess: ' Eesliide on edukalt muudetud.'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Muuda Google Translate API võti
+  wwcSignDeletedOrTooLong: ' Sihtmärk kustutati või tõlge oli liiga pikk. Tõlge:'
+  wwcConfigGUIAmazonTranslateStatusButton: Lülita Amazon tõlkimine
+  wwctsOnTarget: ' Logi tõlge lubatud %i.'
+  wwcConfigCacheDisabled: Tõlkija vahemälu on keelatud.
+  wwcConfigConversationWatsonURLInput: Praegune URL on %i. Palun sisestage Watsoni
+    teenuse URL või tippige tagasi minemiseks 0.
+  wwcOnJoinTranslationNotificationSourceLang: ' Sinu vestlus on tõlgitud alates %i
+    kuni %o.'
+  wwcBookDone: ' Raamat tõlgitud edukalt.'
+  wwctsOnSender: ' Logi tõlkimine lubatud. Paremklõpsake märk tõlkida!'
+  watsonColorCodeWarning: ' Värvikoodide kasutamine võib anda teile ettearvamatuid
+    tulemusi.'
+  wwctGUITranslationButton: Alusta tõlkimist
+  wwctGUIAutoDetectButton: Lähtekeele automaatne tuvastamine
+  wwcUpdaterUpToDate: WorldwideChat on ajakohane!
+  wwcConfigConversationAmazonTranslateRegionInput: Praegune piirkond on %i. Palun
+    sisestage Amazonase piirkond või tippige 0, et minna tagasi.
+  wwcConfigConversationWatsonFail: ' IBM Watsoni lubamine nurjus.'
+  wwcNoConsole: ' Seda käsku saab käivitada ainult mängija.'
+  wwcConfigConversationAmazonTranslateSuccess: ' Edukalt lubatud Amazon Translate.'
+  wwcConfigConversationAmazonTranslateFail: ' Amazon Translate lubamine nurjus.'
+  wwcInitializationFail: WorldwideChat\'i lähtestamine nurjus.
+  wwcrSuccess: ' Edukalt laaditud WorldwideChat.'
+  wwcPlayerNotFound: ' Mängija %ma ei leidnud.'
+  wwcUpdaterOutOfDateChat: ' WorldwideChat on aegunud. Palun uuendage uusimale versioonile.'
+  wwcConfigConversationRateLimitSuccess: ' Määra piirmäär on edukalt seatud.'
+  wwcConfigConversationWatsonURLSuccess: ' Watsoni URL seatud edukalt.'
+  wwctbPlayerNotFound: ' Mängija %Ma kas ei leitud, või ei ole aktiivne tõlkija.'
+  wwcConfigConversationTranslationCacheSuccess: ' Tõlge vahemälu piirang seatud edukalt'
+  wwctInvalidArgs: ' Kehtetu argumendid esitatud!'
+  wwcConfigGUIPrefixButton: Muuda plugina eesliide
+  wwctSameLangError: ' Sa ei saa tõlkida samasse keelde!'
+  wwctGUINewTranslationTarget: Vali sihtkeel
+  wwctLangToLangStartOtherPlayer: ' Nüüd tõlkides vestlust %o alates %i kuni %e.'
+  wwcConfigGUIAmazonTranslateSettings: Amazon tõlkida konfiguratsioon
+  wwcConfigConnectionSuccess: Edukalt ühendatud %o!
+  wwcConfigGUIGoogleTranslateButton: Google Tõlgi
+  wwcsIsActiveTranslator: ' Kas aktiivne tõlkija: %i'
+  wwctLangToLangStart: ' Nüüd tõlkides kogu oma vestluse alates %i kuni %o.'
+  wwcConfigConversationPrefixInput: Praegune eesliide on %i. Palun tippige uus või
+    tippige tagasi minemiseks 0.
+  wwcConfigGUIPreviousPageButton: Eelmine lehekülg
+  wwcConfigGUITranslatorCacheButton: Muuda tõlke vahemälu piirang
+  wwcConfigConversationbStatsSuccess: ' Edukalt lülitatud bStats.'
+  wwcSignDone: ' Logi tõlgitud edukalt.'
+  wwcConfigInvalidPrefixSettings: Eesliite lugemine nurjus. Vaikimisi kasutades...
+  wwcConfigRateLimitInvalid: Bad määr piirmäära seatud config.yml. Defaulting kuni
+    0 sekundit...
+  wwcConfigConversationWatsonSuccess: ' Edukalt lubatud IBM Watson.'
+  wwcSignTranslateStart: ' Sihtmärgi tõlkimine...'
+  wwcConfigGUIChatSettings: vestluse konfiguratsioon
+  wwcConfigGUIWatsonURLButton: Muuda Watsoni teenuse URL-i
+  wwctInvalidLangCode: ' Kehtetu keelekood (id) esitatud! Kehtivad lang koodid: %o'
+  wwcConfigConversationUpdateCheckerSuccess: ' Värskenduse kontrollija viivitus seatud
+    edukalt.'
+  wwcUnsupportedVersion: 'Teil on Bukkit, Spigot või Paper toetamata versioon. Toetatud
+    versioonid:'
+  wwctGUIBackToMainMenuButton: Tagasi Peamise tõlke menüüsse
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Globaalne vestlus on tõlgitud
+    %i kuni %o.'
+  wwcBookTranslationFail: ' Ei ole võimalik saada oma sihtraamatu ühe või mitme lehekülje
+    kehtivat tõlget alates %i.'
+  wwcConfigGUITranslatorSettings: Tõlkija seadistus
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Praegune API võti on %i. Palun
+    sisestage Google Translate API võti või tippige 0, et minna tagasi.
+  wwcConfigConversationRateLimitInput: Praegune globaalne piirmäär tõlke kohta on
+    %i sekundit. Tippige uue väärtuse määramiseks midagi suuremat kui 0 või tippige
+    piirangu keelamiseks 0. Tippige midagi vähem kui 0 tagasi minna.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Google Translate API võti edukalt.'
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Muuda Amazon salavõti
+  wwcVersion: ' WorldwideChat, versioon'
+  wwcsName: ' Mängija nimi: %i'
+  wwcInvalidTranslator: Kehtetu tõlkija sätted. Palun parandage see oma config.yml
+    või /wwcc kasutada seda pluginat.
+  wwcsAttemptedTranslations: ' Üritanud tõlked: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon salajane võti seatud
+    edukalt.'
+  wwcConfigConversationWatsonAPIKeySuccess: ' Watson API võti edukalt.'
+  wwctGUIMainMenu: Teie Tõlkemenüü
+  wwctsNotATranslator: ' Sa ei ole aktiivne tõlkija! Veenduge, et olete seadnud selle
+    /wwct.'
+  wwcRateLimit: ' Teie tõlked on piiratud. Palun oodake teise %i sekundit.'
+  wwcConfigCacheEnabled: Tõlkija vahemälu lubatud ja seatud piir %i.
+  wwctGUIExistingTranslationButton: Praeguse tõlke seansi üle
+  wwcOnJoinTranslationNotificationNoSourceLang: ' Sinu vestlus on tõlgitud %o.'
+  wwcConfigGUIGoogleTranslateStatusButton: Lülita Google Translate
+  wwcConfigGUIWatsonStatusButton: Lülita Watson
+  wwcUserDataReloaded: Laadisid kõik salvestatud kasutaja andmed.
+  wwcConfigGUISendTranslationChatButton: Saada vestluse meeldetuletus aktiivsele tõlkijale
+    sisselogimisel
+  wwcsLastTranslationTime: ' Viimane (Edukas) Tõlkeaeg: %i'
+  wwctbNotATranslator: ' Sa ei ole aktiivne tõlkija! Veenduge, et olete seadnud selle
+    /wwct.'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Praegune juurdepääsuvõti on
+    %i. Palun sisestage Amazoni jaoks juurdepääsuvõti või tippige 0, et minna tagasi.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Amazon juurdepääsu võti
+    seatud edukalt.'
+  wwcConfigBadUpdateDelay: Kehtetu ajakohastaja viivitus seatud config.yml. Defaulting
+    kuni 86400 sekundit...

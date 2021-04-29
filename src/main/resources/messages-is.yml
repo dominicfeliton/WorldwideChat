@@ -1,0 +1,209 @@
+Messages:
+  wwcgAutoTranslateStart: ' Nú þýða alþjóðlegt spjall til %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Alþjóðlegt spjall er þýtt
+    í %o.'
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Breyta Amazon Aðgangur Key
+  wwcrFail: ' Mistókst að endurhlaða WorldwideChat.'
+  wwcConfigGUIUpdateCheckerButton: Breyta Athuga fyrir seinkun uppfærslna
+  wwcSignTranslationFail: ' Ekki er hægt að fá gilda þýðingu á markmerkinu þínu frá
+    %i.'
+  wwcConfigConversationGoogleTranslateFail: ' Mistókst að virkja Google Translate.'
+  wwcUpdaterFailedGeneric: Ekki er hægt að athuga WorldwideChat uppfærslur.
+  wwcConfigConversationUpdateCheckerInput: Núverandi töf á uppfærslu afgreiðslumaður
+    er %i sekúndur. Sláðu inn neitt stærra en 10 til að setja nýtt gildi, eða eitthvað
+    minna en 10 til að fara aftur.
+  wwctGUIMainMenuGlobal: Global Translation Valmynd
+  wwcConfigGUIWatsonButton: Watson Þýða
+  wwcConfigConversationPluginUpdateChatSuccess: ' Plugin uppfærsla spjall áminning
+    skipta með góðum árangri.'
+  wwctbOnTarget: ' Bók þýðing virkt fyrir %i.'
+  wwcsNotATranslator: ' Það eru engar færslur enn tiltækar fyrir %i.'
+  wwcConfigGUIbStatsButton: Skipta bStats
+  wwctGUINewTranslationSource: Veldu Heimild Tungumál
+  wwcConfigConnectionFailed: Mistókst að tengjast við %o. Gakktu úr skugga um að persónuskilríki
+    og eldveggur séu stilltir rétt!
+  wwcConfigEnabledbStats: Virkt bStats.
+  wwctGUIMainMenuPlayer: Þýðing Valmynd af %i
+  wwctGUIBookButton: Skipta Book Þýðing
+  wwcLangDetected: Grein tungumál %o.
+  wwcBookTranslateStart: ' Þýða miða bók...'
+  wwcConfigDisabledbStats: Fatlaðir bStats.
+  wwctsOffSender: ' Sign þýðing óvirk.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Alþjóðlegt spjall er
+    þýtt, en spjall þitt er þýtt frá %i til %o.'
+  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate virkt með góðum
+    árangri.'
+  wwcUpdaterParserFailed: Mistókst að flokka uppfærslugögn frá Github.
+  wwctAutoTranslateStart: ' Nú þýða allt spjall þitt %o.'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Núverandi leyndarmál lykill
+    er %i. Vinsamlegast sláðu inn leyndarmál lykill fyrir Amazon, eða tegund 0 til
+    að fara aftur.
+  wwctbOffSender: ' Bókaþýðing óvirk.'
+  wwcConfigGUIAmazonTranslateButton: Amazon Þýða
+  wwcConfigConversationLangSuccess: ' Plugin tungumál breytt með góðum árangri.'
+  wwcsSuccessfulTranslations: ' Árangursrík þýðingar: %i'
+  wwctTranslationStoppedOtherPlayer: ' Spjall þýðing fyrir %i hefur verið hætt.'
+  wwcConfigConversationTranslationCacheInput: Núverandi þýðing skyndiminni takmörk
+    er %i setningar. Sláðu inn neitt stærra en 0 til að setja nýtt gildi, eða tegund
+    0 til að slökkva á þýðingarskyndiminni. Sláðu eitthvað minna en 0 til að fara
+    aftur.
+  wwctbOffTarget: ' Bók þýðing óvirk fyrir %i.'
+  wwcConfigGUIGeneralSettings: Almennar stillingar
+  wwcInvalidLang: Ógilt tungumál í config.yml. Vanskil til en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ' Amazon svæðinu sett með góðum
+    árangri.'
+  wwcConfigRateLimitEnabled: Global hlutfall takmörk virkt og stillt á %i sekúndur.
+  wwcBadPerms: ' Þú hefur ekki nauðsynlegar heimildir til að framkvæma þessa skipun!'
+  wwcConfigGUILangButton: Breyta Plugin Tungumál
+  wwctGUISignButton: Skipta Sign Þýðing
+  wwcUpdaterOutOfDate: WorldwideChat er úrelt. Vinsamlegast uppfærðu í nýjustu útgáfuna,
+    %i.
+  wwcConfigGUIChangesNotSaved: ' Breytingarnar þínar mega ekki taka gildi fyrr en
+    þú keyrir annað hvort /wwcr, eða smelltu á rauða hindrunina í/wwcc.'
+  wwcConfigGUINextPageButton: Næsta síða
+  wwctbTranslatePageFail: (Mistókst að þýða þessa síðu) %i
+  wwcConfigInvalidTranslatorSettings: Ógildar stillingar þýðanda! Vinsamlegast virkjaðu
+    aðeins einn þýðanda í config.yml þínum.
+  wwcConfigGUIQuitButton: Hætta og vista breytingar
+  wwctPlayerNotFound: ' Leikmaður %Ég fann ekki.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Alþjóðlegt spjall
+    er þýtt, en spjallið þitt er þýtt í %o.'
+  wwcConfigGUIGoogleTranslateSettings: Google Translate Stillingar
+  wwcConfigGUIGlobalRateLimit: Breyta Global Rate Limit
+  wwctGUIBackToSourceLanguageButton: Til baka í Valmynd um tungumál
+  wwcConfigGUIAmazonTranslateRegionButton: Breyta Amazon svæðinu
+  wwcConfigConversationLangInput: 'Núverandi tappi tungumál er %i. Vinsamlegast sláðu
+    inn gilt tungumál kóða, eða tegund 0 til að hætta við. Gildir tungumálakóðar:
+    %o'
+  wwcConfigConversationLangInvalid: ' Ógildur tungumálakóði!'
+  wwctTranslationStopped: ' Spjall þýðing þín hefur verið hætt.'
+  wwcConfigGUIWatsonSettings: Watson stillingar
+  wwctsPlayerNotFound: ' Leikmaður %Ég er annað hvort ekki að finna, eða er ekki virkur
+    þýðandi.'
+  wwcConfigGUIWatsonAPIKeyButton: Breyta Watson API Lykill
+  wwcEnabled: Virkja WorldwideChat útgáfa %i.
+  wwcgLangToLangStart: ' Nú þýða alþjóðlegt spjall frá %i til %o.'
+  wwctbOnSender: ' Bók þýðing virkt. Hægrismelltu á meðan þú heldur bók til að þýða
+    það!'
+  wwcListenersInitialized: Frumstilla hlustendur.
+  wwcUserDataCorrupted: Fann og hreyfð % ég skemmd eða gamla notendagagnaskrár. Þeir
+    verða eytt á næstu endurhlaða.
+  wwcConfigGUIPluginUpdateChatButton: Senda spjall áminning fyrir Plugin uppfærslur
+  wwcConfigConversationSendTranslationChatSuccess: ' Virk þýðandi spjall áminning
+    skipta með góðum árangri.'
+  wwctsOffTarget: ' Sign þýðing óvirk fyrir %i.'
+  wwcUpdaterConnectionFailed: Ekki er hægt að athuga nýjustu uppfærslur á Github.
+  watsonNotFoundExceptionNotification: ' Ekki er hægt að þýða inntakið þitt lengra.'
+  wwcConfigConversationWatsonAPIKeyInput: Núverandi API lykill er %i. Vinsamlegast
+    sláðu inn API lykil fyrir Watson, eða tegund 0 til að fara aftur.
+  wwctGUIStopButton: Hættu að þýða
+  wwcgTranslationStopped: ' Global spjall þýðing hefur verið hætt.'
+  wwctAutoTranslateStartOtherPlayer: ' Nú þýða spjallið af %i til %o.'
+  wwcUpdaterFutureDate: Þetta dæmi af WorldwideChat hefur meiri útgáfu en nýjasta
+    almenningi.
+  wwcConfigConversationPrefixSuccess: ' Forskeyti breytt með góðum árangri.'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Breyta Google Þýða API lykill
+  wwcSignDeletedOrTooLong: ' Markmerki var annað hvort eytt eða þýðingin var of löng.
+    Þýðing:'
+  wwcConfigGUIAmazonTranslateStatusButton: Skipta Amazon Þýða
+  wwctsOnTarget: ' Sign þýðing virkt fyrir %i.'
+  wwcConfigCacheDisabled: Þýðandi skyndiminni óvirk.
+  wwcConfigConversationWatsonURLInput: Núverandi vefslóð er %i. Vinsamlegast sláðu
+    inn þjónustuslóð fyrir Watson, eða tegund 0 til að fara aftur.
+  wwcOnJoinTranslationNotificationSourceLang: ' Spjallið þitt er þýtt frá %i til %o.'
+  wwcBookDone: ' Bókin þýdd með góðum árangri.'
+  wwctsOnSender: ' Skilti þýðing virkt. Hægrismelltu á skilti til að þýða það!'
+  watsonColorCodeWarning: ' Notkun litakóða getur gefið þér ófyrirsjáanlegar niðurstöður.'
+  wwctGUITranslationButton: Byrja að þýða
+  wwctGUIAutoDetectButton: Auto-uppgötva Heimild Tungumál
+  wwcUpdaterUpToDate: WorldwideChat er upp til dagsetning!
+  wwcConfigConversationAmazonTranslateRegionInput: Núverandi svæði er %i. Vinsamlegast
+    sláðu inn svæði fyrir Amazon, eða tegund 0 til að fara aftur.
+  wwcConfigConversationWatsonFail: ' Mistókst að virkja IBM Watson.'
+  wwcNoConsole: ' Þessi skipun er aðeins hægt að hlaupa af leikmanni.'
+  wwcConfigConversationAmazonTranslateSuccess: ' Tókst virkt Amazon Translate.'
+  wwcConfigConversationAmazonTranslateFail: ' Mistókst að virkja Amazon Translate.'
+  wwcInitializationFail: Mistókst að frumstilla WorldwideChat.
+  wwcrSuccess: ' Tókst endurhlaðinn WorldwideChat.'
+  wwcPlayerNotFound: ' Leikmaður %Ég fann ekki.'
+  wwcUpdaterOutOfDateChat: ' WorldwideChat er úrelt. Vinsamlegast uppfærðu í nýjustu
+    útgáfuna.'
+  wwcConfigConversationRateLimitSuccess: ' Hlutfall mörk sett með góðum árangri.'
+  wwcConfigConversationWatsonURLSuccess: ' Watson URL sett með góðum árangri.'
+  wwctbPlayerNotFound: ' Leikmaður %Ég er annað hvort ekki að finna, eða er ekki virkur
+    þýðandi.'
+  wwcConfigConversationTranslationCacheSuccess: ' Þýðing skyndiminni mörk sett með
+    góðum árangri.'
+  wwctInvalidArgs: ' Ógild rök veitt!'
+  wwcConfigGUIPrefixButton: Breyta Plugin forskeyti
+  wwctSameLangError: ' Þú getur ekki þýtt á sama tungumál!'
+  wwctGUINewTranslationTarget: Veldu markmál
+  wwctLangToLangStartOtherPlayer: ' Nú þýða spjallið af %o frá %i til %e.'
+  wwcConfigGUIAmazonTranslateSettings: Amazon Þýða Stillingar
+  wwcConfigConnectionSuccess: Tókst tengdur til %o!
+  wwcConfigGUIGoogleTranslateButton: Google Þýða
+  wwcsIsActiveTranslator: ' Er virkur þýðandi: %i'
+  wwctLangToLangStart: ' Nú þýða allt spjall frá %i til %o.'
+  wwcConfigConversationPrefixInput: Núverandi forskeyti er %i. Sláðu inn nýjan, eða
+    sláðu inn 0 til að fara aftur.
+  wwcConfigGUIPreviousPageButton: fyrri síða
+  wwcConfigGUITranslatorCacheButton: Breyta Þýðing skyndiminni Tak
+  wwcConfigConversationbStatsSuccess: ' Tókst skipta BSTAT.'
+  wwcSignDone: ' Sign þýtt með góðum árangri.'
+  wwcConfigInvalidPrefixSettings: Mistókst að lesa forskeyti þitt. Notkun sjálfgefna...
+  wwcConfigRateLimitInvalid: Slæmt hlutfall takmörk sett í config.yml. Vanskil til
+    0 sekúndna...
+  wwcConfigConversationWatsonSuccess: ' Tókst virkjað IBM Watson.'
+  wwcSignTranslateStart: ' Þýða miða merki...'
+  wwcConfigGUIChatSettings: Spjall Stillingar
+  wwcConfigGUIWatsonURLButton: Breyta Watson Service URL
+  wwctInvalidLangCode: ' Ógildur tungumálakóði (s) veitt! Gildir langur kóða: %o'
+  wwcConfigConversationUpdateCheckerSuccess: ' Uppfæra afgreiðslumaður töf sett með
+    góðum árangri.'
+  wwcUnsupportedVersion: 'Þú ert að keyra óstudda útgáfu af Bukkit, Spigot eða Pappír.
+    Styður útgáfur:'
+  wwctGUIBackToMainMenuButton: Aftur í Main Translation Valmynd
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Global spjall er þýtt frá %i
+    til %o.'
+  wwcBookTranslationFail: ' Ekki er hægt að fá gilda þýðingu á einni eða fleiri síðum
+    miða bók frá %i.'
+  wwcConfigGUITranslatorSettings: Þýðandi Stillingar
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Núverandi API lykill er %i. Vinsamlegast
+    inntak API lykill fyrir Google Translate, eða tegund 0 til að fara aftur.
+  wwcConfigConversationRateLimitInput: Núverandi alþjóðlegt hlutfall takmörk á þýðingu
+    er %i sekúndur. Sláðu inn eitthvað sem er stærra en 0 til að setja nýtt gildi,
+    eða tegund 0 til að slökkva á takmörkunum. Sláðu eitthvað minna en 0 til að fara
+    aftur.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Google Translate API lykill
+    sett með góðum árangri.'
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Breyting Amazon Secret Key
+  wwcVersion: ' WorldwideChat, útgáfa'
+  wwcsName: ' Nafn spilara: %i'
+  wwcInvalidTranslator: Ógildar stillingar þýðanda. Vinsamlegast lagaðu þetta í config.yml
+    eða með/wwcc til að nota þessa tappi.
+  wwcsAttemptedTranslations: ' Tilraun Þýðingar: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon leyndarmál lykill
+    sett með góðum árangri.'
+  wwcConfigConversationWatsonAPIKeySuccess: ' Watson API lykill sett með góðum árangri.'
+  wwctGUIMainMenu: Þýðing Valmynd
+  wwctsNotATranslator: ' Þú ert ekki virkur þýðandi! Gakktu úr skugga um að þú hafir
+    sett þetta með/wwct.'
+  wwcRateLimit: ' Þýðingar þínar eru hlutfall takmörkuð. Vinsamlegast bíðið annað
+    %i sekúndur.'
+  wwcConfigCacheEnabled: Þýðandi skyndiminni virkt og stillt á takmörk af %i.
+  wwctGUIExistingTranslationButton: Yfirskrifa núverandi Þýðing Session
+  wwcOnJoinTranslationNotificationNoSourceLang: ' Spjallið þitt er þýtt í %o.'
+  wwcConfigGUIGoogleTranslateStatusButton: Skipta Google Þýða
+  wwcConfigGUIWatsonStatusButton: Skipta Watson
+  wwcUserDataReloaded: Hlaðinn öllum vistaðar notendagögnum
+  wwcConfigGUISendTranslationChatButton: Senda spjall áminning til Active Translator
+    á Innskráning
+  wwcsLastTranslationTime: ' Síðasta (Árangursrík) Þýðing Tími: %i'
+  wwctbNotATranslator: ' Þú ert ekki virkur þýðandi! Gakktu úr skugga um að þú hafir
+    sett þetta með/wwct.'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Núverandi aðgangslykill er %i.
+    Vinsamlegast sláðu inn aðgangslykil fyrir Amazon, eða tegund 0 til að fara aftur.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Amazon aðgang lykill sett
+    með góðum árangri.'
+  wwcConfigBadUpdateDelay: Ógild uppfærsla töf sett í config.yml. Vanskil til 86400
+    sekúndur...

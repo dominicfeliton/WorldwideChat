@@ -1,0 +1,204 @@
+Messages:
+  wwcgAutoTranslateStart: ' Одоо дэлхийн чатыг орчуулж байна %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Глобал чат %o руу орчуулагдаж
+    байна.'
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Амазоны хандалтын түлхүүр өөрчлөх
+  wwcrFail: ' WorldWedeChat дахин ачаалж чадаагүй.'
+  wwcConfigGUIUpdateCheckerButton: Шинэчлэлтүүдийг хойшлуулах шалгах
+  wwcSignTranslationFail: ' Таны зорилтот тэмдгийн зөв орчуулгыг авах боломжгүй байна
+    %i.'
+  wwcConfigConversationGoogleTranslateFail: ' Google Translate идэвхжүүлэх чадаагүй.'
+  wwcUpdaterFailedGeneric: WorldWwidechat шинэчлэлтүүдийг шалгах боломжгүй.
+  wwcConfigConversationUpdateCheckerInput: Шинэчлэх шалгагч дээрх одоогийн саатал
+    нь %i секунд байна. 10-ээс их зүйлийг шинэ утгыг тохируулах эсвэл 10-аас бага
+    зүйлийг буцааж өгнө үү.
+  wwctGUIMainMenuGlobal: Олон улсын орчуулгын цэс
+  wwcConfigGUIWatsonButton: Ватсон орчуулга
+  wwcConfigConversationPluginUpdateChatSuccess: ' Plugin шинэчлэх чат сануулах амжилттай
+    сольсон.'
+  wwctbOnTarget: ' ОУХДНС орчуулга идэвхжсэн.'
+  wwcsNotATranslator: ' %i -д хараахан бүртгэл байхгүй байна.'
+  wwcConfigGUIbStatsButton: Toggle bStats
+  wwctGUINewTranslationSource: Эх сурвалж хэл сонгоно уу
+  wwcConfigConnectionFailed: Таны итгэмжлэлүүд болон галт хана зөв тохируулагдсан
+    эсэхийг шалгаарай!
+  wwcConfigEnabledbStats: Идэвхжүүлсэн bStats.
+  wwctGUIMainMenuPlayer: '%i орчуулгын цэс'
+  wwctGUIBookButton: Toggle Номын орчуулга
+  wwcLangDetected: Илэрсэн хэл %o.
+  wwcBookTranslateStart: ' Зорилтот номыг орчуулах...'
+  wwcConfigDisabledbStats: Хөгжлийн бэрхшээлтэй bStats.
+  wwctsOffSender: ' Дансаа ашиглах орчуулга идэвхгүй.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Глобал чат орчуулагдаж
+    байгаа боловч таны чатыг %i -аас орчуулж байна.'
+  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate амжилттай идэвхжүүлсэн.'
+  wwcUpdaterParserFailed: Github-аас шинэчлэх өгөгдлийг задлан ялгалт хийж чадаагүй.
+  wwctAutoTranslateStart: ' Одоо таны чатыг бүгдийг нь орчуулж байна %o.'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Одоогийн нууц түлхүүр %i байна.
+    оруулах уу Амазон нь нууц түлхүүр, эсвэл төрөл 0 буцаж явах.
+  wwctbOffSender: ' Ном орчуулга тахир дутуу.'
+  wwcConfigGUIAmazonTranslateButton: Амазоны орчуулга
+  wwcConfigConversationLangSuccess: ' Залгаасын хэл амжилттай өөрчлөгдсөн.'
+  wwcsSuccessfulTranslations: ' Амжилттай Орчуулга: %i'
+  wwctTranslationStoppedOtherPlayer: ' %i нь чат орчуулга зогссон байна.'
+  wwcConfigConversationTranslationCacheInput: Одоогийн орчуулгын кэш хязгаар %i хэлц
+    байна. Шинэ утгыг тохируулахын тулд 0-ээс их зүйлийг бичээрэй, эсвэл орчуулгын
+    кэшийг идэвхгүй болгохын тулд 0 бичнэ үү. 0-ээс бага зүйлийг бичнэ үү.
+  wwctbOffTarget: ' ОУХДНС орчуулга нь идэвхгүй.'
+  wwcConfigGUIGeneralSettings: Ерөнхий тохиргоо
+  wwcInvalidLang: Таны config.yml буруу хэл. EN нь анхдагч...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ' Амазоны бүс амжилттай тогтоосон.'
+  wwcConfigRateLimitEnabled: Глобал үнийн хязгаар идэвхжсэн болон %i секунд тохируулагдсан
+  wwcBadPerms: ' Та энэ тушаалыг ажиллуулах шаардлагатай зөвшөөрөл байхгүй байна!'
+  wwcConfigGUILangButton: Өөрчлөлт залгаас хэл
+  wwctGUISignButton: Түлхүүр гарын үсэг зурах орчуулга
+  wwcUpdaterOutOfDate: Дэлхий даяарWedeChat хуучирсан байна. Хамгийн сүүлийн үеийн
+    хувилбар руу шинэчлэнэ үү, %i.
+  wwcConfigGUIChangesNotSaved: ' Таны өөрчлөлтүүд /wwcr ажиллуулах эсвэл /wwcc дахь
+    улаан саад тотгорыг дарах хүртэл хүчин төгөлдөр болохгүй байж болох юм.'
+  wwcConfigGUINextPageButton: Дараагийн хуудас
+  wwctbTranslatePageFail: (Энэ хуудсыг орчуулж чадаагүй) %i
+  wwcConfigInvalidTranslatorSettings: Буруу орчуулагч тохиргоо! Өөрийн config.yml-д
+    зөвхөн нэг орчуулагчийг идэвхжүүлнэ үү.
+  wwcConfigGUIQuitButton: Гарах & Save өөрчлөлтүүд
+  wwctPlayerNotFound: ' Тоглогч % Би олж чадаагүй.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Глобал чат орчуулагдаж
+    байгаа боловч таны чатыг %o руу орчуулж байна.'
+  wwcConfigGUIGoogleTranslateSettings: Google орчуулах тохиргоо
+  wwcConfigGUIGlobalRateLimit: Глобал ханшийн хязгаарыг өөрчлөх
+  wwctGUIBackToSourceLanguageButton: Эх сурвалж хэлний цэс рүү
+  wwcConfigGUIAmazonTranslateRegionButton: Амазоны бүсийг өөрчлөх
+  wwcConfigConversationLangInput: 'Одоогийн залгаас хэл %i байна. хүчинтэй хэлний
+    кодыг оруулна уу, эсвэл төрөл 0 цуцлах. Хүчинтэй хэлний код: %o'
+  wwcConfigConversationLangInvalid: ' Хэлний код буруу байна!'
+  wwctTranslationStopped: ' Таны чат орчуулга зогссон байна.'
+  wwcConfigGUIWatsonSettings: Ватсон тохиргоо
+  wwctsPlayerNotFound: ' Тоглогч % би бас олж чадаагүй байна, эсвэл идэвхтэй орчуулагч
+    биш юм.'
+  wwcConfigGUIWatsonAPIKeyButton: Ватсон API Түлхүүр өөрчлөлт
+  wwcEnabled: Идэвхтэй WorldWedeChat хувилбар %i.
+  wwcgLangToLangStart: ' Одоо дэлхийн чатыг %i нь %o руу орчуулж байна.'
+  wwctbOnSender: ' Ном орчуулга идэвхжүүлсэн. Үүнийг орчуулахын тулд ном барьж байхдаа
+    баруун товшино уу!'
+  wwcListenersInitialized: Эхэлж сонсогчид.
+  wwcUserDataCorrupted: Олдсон болон % би гэмтсэн, эсвэл хуучин хэрэглэгчийн өгөгдлийн
+    файлуудыг хөдөлгөдөг. Тэд дараагийн дахин ачаалах дээр устгагдах болно.
+  wwcConfigGUIPluginUpdateChatButton: Plugin Шинэчлэлтүүдийн хувьд чат сануулах илгээх
+  wwcConfigConversationSendTranslationChatSuccess: ' Идэвхтэй орчуулагч чат сануулах
+    амжилттай сольсон.'
+  wwctsOffTarget: ' %i нь идэвхгүй орчуулга гарын үсэг зурах.'
+  wwcUpdaterConnectionFailed: Github дээр хамгийн сүүлийн үеийн шинэчлэлтүүдийг шалгах
+    боломжгүй.
+  watsonNotFoundExceptionNotification: ' Таны оролтыг ямар ч цаашид орчуулах боломжгүй.'
+  wwcConfigConversationWatsonAPIKeyInput: Одоогийн API түлхүүр %i байна. оролтын Ватсон
+    нь API түлхүүр уу, эсвэл төрөл 0 буцаж явах.
+  wwctGUIStopButton: Орчуулгыг зогсоох
+  wwcgTranslationStopped: ' Глобал чат орчуулга зогссон байна.'
+  wwctAutoTranslateStartOtherPlayer: ' Одоо чатыг %i руу орчуулж байна.'
+  wwcUpdaterFutureDate: WorldWichat энэ жишээ нь хамгийн сүүлийн үеийн олон нийтэд
+    илүү хувилбар байдаг.
+  wwcConfigConversationPrefixSuccess: ' Угтвар амжилттай өөрчлөгдсөн.'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Google-ийн өөрчлөлт API түлхүүр орчуулах
+  wwcSignDeletedOrTooLong: ' Зорилтот тэмдэг устгагдсан эсвэл орчуулга хэтэрхий урт
+    байсан юм. Орчуулга:'
+  wwcConfigGUIAmazonTranslateStatusButton: Toggle Амазоны орчуулга
+  wwctsOnTarget: ' Дансаа ашиглах орчуулга идэвхжсэн %i.'
+  wwcConfigCacheDisabled: Орчуулагч кэш идэвхгүй.
+  wwcConfigConversationWatsonURLInput: Одоогийн URL байна %i. оролтын Ватсон нь үйлчилгээний
+    URL уу, эсвэл төрөл 0 буцаж явах.
+  wwcOnJoinTranslationNotificationSourceLang: ' Таны чатыг %i -аас орчуулж байна.'
+  wwcBookDone: ' Ном амжилттай орчуулсан.'
+  wwctsOnSender: ' Дансаа ашиглах орчуулга идэвхтэй. Үүнийг орчуулах тэмдэг дээр хулганы
+    баруун товчийг дараад!'
+  watsonColorCodeWarning: ' Өнгөний кодыг ашиглах нь танд урьдчилан таамаглах боломжгүй
+    үр дүнг өгч болно.'
+  wwctGUITranslationButton: Орчуулгыг эхлүүлэх
+  wwctGUIAutoDetectButton: Авто илрүүлэх эх сурвалж хэл
+  wwcUpdaterUpToDate: ДэлхийдWedeChat шинэчлэгдэж байна!
+  wwcConfigConversationAmazonTranslateRegionInput: Одоогийн бүс %i байна. оруулах
+    уу Амазон нь бүс нутаг, эсвэл төрөл 0 буцаж явах.
+  wwcConfigConversationWatsonFail: ' IBM Ватсон идэвхжүүлэх чадаагүй.'
+  wwcNoConsole: ' Энэ тушаалыг зөвхөн тоглогч ажиллуулж болно.'
+  wwcConfigConversationAmazonTranslateSuccess: ' Амжилттай Amazon Translate идэвхжүүлсэн.'
+  wwcConfigConversationAmazonTranslateFail: ' Амазоны Translate идэвхжүүлэх чадаагүй.'
+  wwcInitializationFail: WorldWwidechat эхлүүлж чадаагүй.
+  wwcrSuccess: ' Амжилттай WorldWedeChat дахин ачаалах.'
+  wwcPlayerNotFound: ' Тоглогч % Би олж чадаагүй.'
+  wwcUpdaterOutOfDateChat: ' Дэлхий даяарWedeChat хуучирсан байна. Хамгийн сүүлийн
+    хувилбар руу шинэчлэнэ үү.'
+  wwcConfigConversationRateLimitSuccess: ' Rate хязгаар амжилттай тогтоосон.'
+  wwcConfigConversationWatsonURLSuccess: ' Ватсон URL амжилттай тогтоосон.'
+  wwctbPlayerNotFound: ' Тоглогч % би бас олж чадаагүй байна, эсвэл идэвхтэй орчуулагч
+    биш юм.'
+  wwcConfigConversationTranslationCacheSuccess: ' Орчуулга кэш хязгаар амжилттай тогтоосон.'
+  wwctInvalidArgs: ' Буруу нэмэлт өгөгдлүүд өгсөн!'
+  wwcConfigGUIPrefixButton: Өөрчлөлт залгаас угтвар
+  wwctSameLangError: ' Та ижил хэл рүү орчуулж чадахгүй!'
+  wwctGUINewTranslationTarget: Зорилтот хэл сонгоно уу
+  wwctLangToLangStartOtherPlayer: ' Одоо %o нь чатыг орчуулж байна %i нь %e.'
+  wwcConfigGUIAmazonTranslateSettings: Амазон орчуулах тохиргоо
+  wwcConfigConnectionSuccess: Амжилттай холбогдсон %o!
+  wwcConfigGUIGoogleTranslateButton: Google-ийн орчуулга
+  wwcsIsActiveTranslator: ' Идэвхтэй Орчуулагч байна: %i'
+  wwctLangToLangStart: ' Одоо таны бүх чатыг %i нь %o руу орчуулж байна.'
+  wwcConfigConversationPrefixInput: Одоогийн угтвар нь %i байна. шинийг бичнэ үү,
+    эсвэл 0 бичнэ үү.
+  wwcConfigGUIPreviousPageButton: өмнөх хуудас
+  wwcConfigGUITranslatorCacheButton: Орчуулга Cache хязгаарыг өөрчлөх
+  wwcConfigConversationbStatsSuccess: ' bStats амжилттай сольсон.'
+  wwcSignDone: ' Дансаа ашиглах амжилттай орчуулсан.'
+  wwcConfigInvalidPrefixSettings: Таны угтварыг уншиж чадаагүй. Анхдагч ашиглах...
+  wwcConfigRateLimitInvalid: Муу ханшийн хязгаар config.yml-д заасан. 0 секунд хүртэл
+    анхдагч...
+  wwcConfigConversationWatsonSuccess: ' Амжилттай IBM Ватсон идэвхжүүлсэн.'
+  wwcSignTranslateStart: ' Зорилтот тэмдгийг орчуулах...'
+  wwcConfigGUIChatSettings: Чат тохиргоо
+  wwcConfigGUIWatsonURLButton: Ватсон үйлчилгээний URL-г өөрчлөх
+  wwctInvalidLangCode: ' Буруу хэлний код (ууд) өгсөн! Хүчинтэй урт кодууд: %o'
+  wwcConfigConversationUpdateCheckerSuccess: ' Шинэчлэх шалгагч саатал амжилттай тогтоосон.'
+  wwcUnsupportedVersion: 'Та Bukkit нь дэмжигдээгүй хувилбарыг ажиллуулж байна, хийн
+    хоолой, эсвэл баримт бичиг. Дэмждэг хувилбарууд:'
+  wwctGUIBackToMainMenuButton: Үндсэн орчуулгын цэс рүү буцах
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Глобал чат %i нь %o руу орчуулагдаж
+    байна.'
+  wwcBookTranslationFail: ' %i нь таны зорилтот номын нэг буюу хэд хэдэн хуудасны
+    хүчинтэй орчуулгыг авах боломжгүй.'
+  wwcConfigGUITranslatorSettings: Орчуулагчийн тохиргоо
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Одоогийн API түлхүүр % би байна.
+    оруулах уу Google Translate нь API түлхүүр, эсвэл төрөл 0 буцаж явах.
+  wwcConfigConversationRateLimitInput: Орчуулгын өнөөгийн дэлхийн ханшийн хязгаар
+    %i секунд байна. Шинэ утгыг тохируулахын тулд 0-ээс их зүйлийг бичнэ үү, эсвэл
+    хязгаарыг идэвхгүй болгохын тулд 0 бичнэ үү. 0-ээс бага зүйлийг бичнэ үү.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Google-ийн амжилттай API гол
+    багц Translate.'
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Амазоны нууц түлхүүр өөрчлөх
+  wwcVersion: ' Дэлхий даяарWichat, хувилбар'
+  wwcsName: ' Тоглогчийн нэр: %i'
+  wwcInvalidTranslator: Буруу орчуулагч тохиргоо. Үүнийг өөрийн config.yml эсвэл /wwcc
+    ашиглан энэ залгаасыг ашиглана уу.
+  wwcsAttemptedTranslations: ' Оролдсон Орчуулгууд: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Амазоны нууц түлхүүр амжилттай
+    тогтоосон.'
+  wwcConfigConversationWatsonAPIKeySuccess: ' Ватсон API гол амжилттай тогтоосон.'
+  wwctGUIMainMenu: Таны орчуулгын цэс
+  wwctsNotATranslator: ' Та бол идэвхитэй орчуулагч биш! Үүнийг /wwct-ээр тохируулсан
+    эсэхээ шалгаарай.'
+  wwcRateLimit: ' Таны орчуулга үнэ хязгаарлагдмал байна. өөр нэг түр хүлээнэ үү %i
+    секунд.'
+  wwcConfigCacheEnabled: Орчуулагч кэш идэвхжүүлж, %i нь хязгаар тогтоосон.
+  wwctGUIExistingTranslationButton: Одоогийн орчуулга хуралдааныг дарж бичих
+  wwcOnJoinTranslationNotificationNoSourceLang: ' Таны чат %o руу орчуулагдаж байна.'
+  wwcConfigGUIGoogleTranslateStatusButton: Toggle Google орчуулга
+  wwcConfigGUIWatsonStatusButton: Toggle Ватсон
+  wwcUserDataReloaded: Бүх хадгалсан хэрэглэгчийн өгөгдлийг ачаалагдсан.
+  wwcConfigGUISendTranslationChatButton: Нэвтрэх дээр Идэвхтэй Орчуулагч руу чат сануулах
+    илгээх
+  wwcsLastTranslationTime: ' Сүүлийн (Амжилттай) Орчуулгын цаг: %i'
+  wwctbNotATranslator: ' Та бол идэвхитэй орчуулагч биш! Үүнийг /wwct-ээр тохируулсан
+    эсэхээ шалгаарай.'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Одоогийн хандалтын түлхүүр %i
+    байна. оролтын Амазон нь хандалтын түлхүүр уу, эсвэл төрөл 0 буцах.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Амазоны хандалтын түлхүүр
+    амжилттай тогтоосон.'
+  wwcConfigBadUpdateDelay: Буруу Updater саатал config.yml заасан. 86400 секунд хүртэл
+    анхдагч...

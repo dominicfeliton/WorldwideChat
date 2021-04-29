@@ -1,0 +1,171 @@
+Messages:
+  wwcgAutoTranslateStart: ' 이제 글로벌 채팅을 %o로 번역합니다.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' 글로벌 채팅이 %o (으) 로 번역되고 있습니다.'
+  wwcConfigGUIAmazonTranslateAccessKeyButton: 아마존 액세스 키 변경
+  wwcrFail: ' 월드와이드채팅을 다시 로드하지 못했습니다.'
+  wwcConfigGUIUpdateCheckerButton: 업데이트 지연에 대한 변경 확인
+  wwcSignTranslationFail: ' %i에서 대상 기호의 유효한 번역을 가져올 수 없습니다.'
+  wwcConfigConversationGoogleTranslateFail: ' Google 번역을 활성화하지 못했습니다.'
+  wwcUpdaterFailedGeneric: 월드와이드채팅 업데이트를 확인할 수 없습니다.
+  wwcConfigConversationUpdateCheckerInput: 업데이트 검사기의 현재 지연은 %i 초입니다.10보다 큰 값을 입력하여
+    새 값을 설정하거나 10보다 작은 값을 입력하여 되돌립니다.
+  wwctGUIMainMenuGlobal: 글로벌 번역 메뉴
+  wwcConfigGUIWatsonButton: 왓슨 번역
+  wwcConfigConversationPluginUpdateChatSuccess: ' 플러그인 업데이트 채팅 미리 알림이 성공적으로 전환되었습니다.'
+  wwctbOnTarget: ' %i에 대해 도서 번역이 활성화되었습니다.'
+  wwcsNotATranslator: ' %i에 사용할 수 있는 레코드가 아직 없습니다.'
+  wwcConfigGUIbStatsButton: bStats 전환
+  wwctGUINewTranslationSource: 소스 언어 선택
+  wwcConfigConnectionFailed: '%o에 연결하지 못했습니다. 자격 증명과 방화벽이 올바르게 구성되었는지 확인하십시오!'
+  wwcConfigEnabledbStats: bStats 사용.
+  wwctGUIMainMenuPlayer: '%i 번역 메뉴'
+  wwctGUIBookButton: 장부 번역 토글
+  wwcLangDetected: 감지된 언어 %o입니다.
+  wwcBookTranslateStart: ' 대상 장부를 번역하는 중...'
+  wwcConfigDisabledbStats: bStats 비활성화.
+  wwctsOffSender: ' 서명 번역이 비활성화되었습니다.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' 글로벌 채팅이 번역되고 있지만 %i에서
+    %o (으) 로 채팅이 번역되고 있습니다.'
+  wwcConfigConversationGoogleTranslateSuccess: ' Google 번역이 성공적으로 활성화되었습니다.'
+  wwcUpdaterParserFailed: Github에서 업데이트 데이터를 구문 분석하지 못했습니다.
+  wwctAutoTranslateStart: ' 이제 모든 채팅을 %o로 번역합니다.'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: 현재 비밀 키는 %i입니다. Amazon의 보안 키를
+    입력하거나 0을 입력하여 돌아가십시오.
+  wwctbOffSender: ' 도서 번역이 비활성화되었습니다.'
+  wwcConfigGUIAmazonTranslateButton: 아마존 번역
+  wwcConfigConversationLangSuccess: ' 플러그인 언어가 성공적으로 변경되었습니다.'
+  wwcsSuccessfulTranslations: ' 성공적인 번역: %i'
+  wwctTranslationStoppedOtherPlayer: ' %i에 대한 채팅 번역이 중지되었습니다.'
+  wwcConfigConversationTranslationCacheInput: 현재 번역 캐시 제한은 %i 구문입니다.0보다 큰 값을 입력하여
+    새 값을 설정하거나 0을 입력하여 변환 캐시를 비활성화합니다.돌아가려면 0보다 작은 값을 입력하십시오.
+  wwctbOffTarget: ' %i에 대해 도서 번역이 비활성화되었습니다.'
+  wwcConfigGUIGeneralSettings: 일반 구성
+  wwcInvalidLang: 설정.yml의 언어가 잘못되었습니다.기본값으로 설정 중...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ' 아마존 리전을 성공적으로 설정했습니다.'
+  wwcConfigRateLimitEnabled: 글로벌 속도 제한을 활성화하고 %i 초로 설정합니다.
+  wwcBadPerms: ' 이 명령을 실행하는 데 필요한 권한이 없습니다!'
+  wwcConfigGUILangButton: 플러그인 언어 변경
+  wwctGUISignButton: 기호 변환 토글
+  wwcUpdaterOutOfDate: 월드와이드채팅이 오래되었습니다.최신 버전 %i (으) 로 업데이트하십시오.
+  wwcConfigGUIChangesNotSaved: ' /wwcr을 실행하거나 /wwcc.에서 빨간색 장벽을 클릭하기 전까지는 변경 사항이 적용되지
+    않을 수 있습니다.'
+  wwcConfigGUINextPageButton: 다음 페이지
+  wwctbTranslatePageFail: (이 페이지를 번역하지 못했습니다) %i
+  wwcConfigInvalidTranslatorSettings: 잘못된 번역기 설정!config.yml에서 하나의 번역기만 활성화하십시오.
+  wwcConfigGUIQuitButton: 종료 및 변경 사항 저장
+  wwctPlayerNotFound: ' 플레이어 %을 (를) 찾을 수 없습니다.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' 글로벌 채팅이 번역되고 있지만 채팅이
+    %o (으) 로 번역되고 있습니다.'
+  wwcConfigGUIGoogleTranslateSettings: 구글 번역 구성
+  wwcConfigGUIGlobalRateLimit: 글로벌 속도 제한 변경
+  wwctGUIBackToSourceLanguageButton: 소스 언어 메뉴로 돌아가기
+  wwcConfigGUIAmazonTranslateRegionButton: 아마존 리전 변경
+  wwcConfigConversationLangInput: '현재 플러그인 언어는 %i입니다. 유효한 언어 코드를 입력하거나 0을 입력하여 취소하십시오.유효한
+    언어 코드: %o'
+  wwcConfigConversationLangInvalid: ' 언어 코드가 잘못되었습니다.'
+  wwctTranslationStopped: ' 채팅 번역이 중지되었습니다.'
+  wwcConfigGUIWatsonSettings: 왓슨 구성
+  wwctsPlayerNotFound: ' %i 플레이어를 찾을 수 없거나 활성 번역자가 아닙니다.'
+  wwcConfigGUIWatsonAPIKeyButton: 왓슨 API 키 변경
+  wwcEnabled: 월드와이드 채팅 버전 %i을 (를) 활성화했습니다.
+  wwcgLangToLangStart: ' 이제 글로벌 채팅을 %i에서 %o로 번역합니다.'
+  wwctbOnSender: ' 도서 번역이 활성화되었습니다.책을 누른 상태에서 마우스 오른쪽 버튼을 클릭하여 번역하세요!'
+  wwcListenersInitialized: 초기화된 리스너입니다.
+  wwcUserDataCorrupted: 손상되었거나 오래된 사용자 데이터 파일을 찾아서 이동했습니다.다음 재로드 시 삭제됩니다.
+  wwcConfigGUIPluginUpdateChatButton: 플러그인 업데이트를 위한 채팅 알림 보내기
+  wwcConfigConversationSendTranslationChatSuccess: ' 활성 번역기 채팅 미리 알림이 성공적으로 전환되었습니다.'
+  wwctsOffTarget: ' %i에 대해 기호 번역이 비활성화되었습니다.'
+  wwcUpdaterConnectionFailed: Github에서 최신 업데이트를 확인할 수 없습니다.
+  watsonNotFoundExceptionNotification: ' 입력을 더 이상 번역 할 수 없습니다.'
+  wwcConfigConversationWatsonAPIKeyInput: 현재 API 키는 %i입니다. 왓슨의 API 키를 입력하거나 0을 입력하여
+    돌아가십시오.
+  wwctGUIStopButton: 번역 중지
+  wwcgTranslationStopped: ' 글로벌 채팅 번역이 중지되었습니다.'
+  wwctAutoTranslateStartOtherPlayer: ' 이제 %i의 채팅을 %o로 번역합니다.'
+  wwcUpdaterFutureDate: 이 WorldwideChat 인스턴스는 최신 공개 버전보다 더 큰 버전을 가지고 있습니다.
+  wwcConfigConversationPrefixSuccess: ' 접두어가 변경되었습니다.'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: 구글 번역 API 키 변경
+  wwcSignDeletedOrTooLong: ' 대상 기호가 삭제되었거나 번역이 너무 깁니다.번역:'
+  wwcConfigGUIAmazonTranslateStatusButton: 아마존 번역 전환
+  wwctsOnTarget: ' %i에 대해 서명 번역이 활성화되었습니다.'
+  wwcConfigCacheDisabled: 번역기 캐시를 사용할 수 없습니다.
+  wwcConfigConversationWatsonURLInput: 현재 URL은 %i입니다. Watson의 서비스 URL을 입력하거나 0을 입력하여
+    돌아가십시오.
+  wwcOnJoinTranslationNotificationSourceLang: ' 채팅이 %i에서 %o (으) 로 번역되고 있습니다.'
+  wwcBookDone: ' 책이 성공적으로 번역되었습니다.'
+  wwctsOnSender: ' 서명 번역이 활성화되었습니다.기호를 마우스 오른쪽 버튼으로 클릭하여 번역하십시오!'
+  watsonColorCodeWarning: ' 색상 코드를 사용하면 예기치 않은 결과가 발생할 수 있습니다.'
+  wwctGUITranslationButton: 번역 시작
+  wwctGUIAutoDetectButton: 소스 언어 자동 검색
+  wwcUpdaterUpToDate: 월드와이드채팅이 최신 버전입니다!
+  wwcConfigConversationAmazonTranslateRegionInput: 현재 지역은 %i입니다. Amazon에 대한 지역을 입력하거나
+    0을 입력하여 되돌아 가십시오.
+  wwcConfigConversationWatsonFail: ' IBM 왓슨을 활성화하지 못했습니다.'
+  wwcNoConsole: ' 이 명령은 플레이어만 실행할 수 있습니다.'
+  wwcConfigConversationAmazonTranslateSuccess: ' 아마존 번역을 활성화했습니다.'
+  wwcConfigConversationAmazonTranslateFail: ' 아마존 번역을 활성화하지 못했습니다.'
+  wwcInitializationFail: 월드와이드 채팅을 초기화하지 못했습니다.
+  wwcrSuccess: ' 월드와이드채팅을 성공적으로 다시 로드했습니다.'
+  wwcPlayerNotFound: ' 플레이어 %을 (를) 찾을 수 없습니다.'
+  wwcUpdaterOutOfDateChat: ' 월드와이드채팅이 오래되었습니다.최신 버전으로 업데이트하십시오.'
+  wwcConfigConversationRateLimitSuccess: ' 속도 제한이 설정되었습니다.'
+  wwcConfigConversationWatsonURLSuccess: ' 왓슨 URL이 성공적으로 설정되었습니다.'
+  wwctbPlayerNotFound: ' %i 플레이어를 찾을 수 없거나 활성 번역자가 아닙니다.'
+  wwcConfigConversationTranslationCacheSuccess: ' 번역 캐시 한도가 성공적으로 설정되었습니다.'
+  wwctInvalidArgs: ' 잘못된 인수가 제공되었습니다.'
+  wwcConfigGUIPrefixButton: 플러그인 접두어 변경
+  wwctSameLangError: ' 같은 언어로 번역할 수 없습니다!'
+  wwctGUINewTranslationTarget: 대상 언어 선택
+  wwctLangToLangStartOtherPlayer: ' 이제 %i에서 %e로 대화를 %o로 번역합니다.'
+  wwcConfigGUIAmazonTranslateSettings: 아마존 번역 구성
+  wwcConfigConnectionSuccess: '%o에 성공적으로 연결되었습니다!'
+  wwcConfigGUIGoogleTranslateButton: 구글 번역
+  wwcsIsActiveTranslator: ' 활성 번역기: %i'
+  wwctLangToLangStart: ' 이제 %i에서 %o (으) 로 모든 채팅을 번역합니다.'
+  wwcConfigConversationPrefixInput: 현재 접두어는 %i입니다. 새 접두어를 입력하거나 0을 입력하여 돌아가십시오.
+  wwcConfigGUIPreviousPageButton: 이전 페이지
+  wwcConfigGUITranslatorCacheButton: 변환 캐시 제한 변경
+  wwcConfigConversationbStatsSuccess: ' BSTAT를 성공적으로 토글했습니다.'
+  wwcSignDone: ' 로그인이 성공적으로 번역되었습니다.'
+  wwcConfigInvalidPrefixSettings: 접두사를 읽지 못했습니다.기본값 사용 중...
+  wwcConfigRateLimitInvalid: 설정.yml에 잘못된 속도 제한이 설정되었습니다.기본값 0 초로 설정 중...
+  wwcConfigConversationWatsonSuccess: ' IBM 왓슨을 성공적으로 활성화했습니다.'
+  wwcSignTranslateStart: ' 대상 기호 번역 중...'
+  wwcConfigGUIChatSettings: 채팅 구성
+  wwcConfigGUIWatsonURLButton: 왓슨 서비스 URL 변경
+  wwctInvalidLangCode: ' 잘못된 언어 코드를 제공했습니다!유효한 랭 코드: %o'
+  wwcConfigConversationUpdateCheckerSuccess: ' 업데이트 검사기 지연이 성공적으로 설정되었습니다.'
+  wwcUnsupportedVersion: '지원되지 않는 버전의 Bukkit, 스피고트 또는 페이퍼를 사용하고 있습니다.지원되는 버전:'
+  wwctGUIBackToMainMenuButton: 메인 번역 메뉴로 돌아가기
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' 글로벌 채팅이 %i에서 %o (으) 로 번역되고 있습니다.'
+  wwcBookTranslationFail: ' %i에서 대상 책의 하나 이상의 페이지에 대한 유효한 번역을 가져올 수 없습니다.'
+  wwcConfigGUITranslatorSettings: 번역기 구성
+  wwcConfigConversationGoogleTranslateAPIKeyInput: 현재 API 키는 %i입니다. Google 번역을 위한
+    API 키를 입력하거나 0을 입력하여 돌아가십시오.
+  wwcConfigConversationRateLimitInput: 번역당 현재 글로벌 속도 제한은 %i 초입니다.0보다 큰 값을 입력하여 새 값을
+    설정하거나 0을 입력하여 제한을 사용하지 않도록 설정합니다.돌아가려면 0보다 작은 값을 입력하십시오.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Google 번역 API 키가 성공적으로 설정되었습니다.'
+  wwcConfigGUIAmazonTranslateSecretKeyButton: 아마존 보안 키 변경
+  wwcVersion: ' 월드와이드 채팅, 버전'
+  wwcsName: ' 플레이어 이름: %i'
+  wwcInvalidTranslator: 잘못된 번역기 설정입니다.이 플러그인을 사용하려면 config.yml 또는/wwcc를 사용하여이 문제를
+    해결하십시오.
+  wwcsAttemptedTranslations: ' 번역 시도: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon 보안 키를 성공적으로 설정했습니다.'
+  wwcConfigConversationWatsonAPIKeySuccess: ' 왓슨 API 키가 성공적으로 설정되었습니다.'
+  wwctGUIMainMenu: 번역 메뉴
+  wwctsNotATranslator: ' 당신은 능동적 인 번역가가 아닙니다!/wwct로 설정했는지 확인하십시오.'
+  wwcRateLimit: ' 번역은 속도가 제한되어 있습니다.다른 %i 초 정도 기다리십시오.'
+  wwcConfigCacheEnabled: 번역기 캐시가 활성화되고 %i 제한으로 설정되었습니다.
+  wwctGUIExistingTranslationButton: 현재 번역 세션 덮어쓰기
+  wwcOnJoinTranslationNotificationNoSourceLang: ' 채팅이 %o (으) 로 번역되고 있습니다.'
+  wwcConfigGUIGoogleTranslateStatusButton: 구글 번역 전환
+  wwcConfigGUIWatsonStatusButton: 왓슨 토글
+  wwcUserDataReloaded: 저장된 모든 사용자 데이터를 로드했습니다.
+  wwcConfigGUISendTranslationChatButton: 로그인 시 활성 번역기에 채팅 알림 보내기
+  wwcsLastTranslationTime: ' 마지막 (성공) 번역 시간: %i'
+  wwctbNotATranslator: ' 당신은 능동적 인 번역가가 아닙니다!/wwct로 설정했는지 확인하십시오.'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: 현재 액세스 키는 %i입니다. Amazon의 액세스
+    키를 입력하거나 0을 입력하여 돌아가십시오.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Amazon 액세스 키를 성공적으로 설정했습니다.'
+  wwcConfigBadUpdateDelay: config.yml에서 잘못된 업데이트 프로그램 지연이 설정되었습니다.기본값 86400초로 설정 중...

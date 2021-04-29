@@ -1,0 +1,215 @@
+Messages:
+  wwcgAutoTranslateStart: ' Ara la traducció del xat global a %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' El xat global s\''està traduint
+    a %o.'
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Canviar la clau d\'accés d\'Amazon
+  wwcrFail: ' No s\''ha pogut recarregar WorldwideChat.'
+  wwcConfigGUIUpdateCheckerButton: Canviar la comprovació de les actualitzacions Retard
+  wwcSignTranslationFail: ' No es pot obtenir una traducció vàlida del signe de destinació
+    de %i.'
+  wwcConfigConversationGoogleTranslateFail: ' No s\''ha pogut activar el Traductor
+    de Google.'
+  wwcUpdaterFailedGeneric: No es pot comprovar si hi ha actualitzacions WorldwideChat.
+  wwcConfigConversationUpdateCheckerInput: El retard actual del corrector d\'actualització
+    és %i segons. Escriviu qualsevol cosa més gran que 10 per establir un valor nou,
+    o qualsevol cosa menys de 10 per tornar enrere.
+  wwctGUIMainMenuGlobal: Menú de traducció global
+  wwcConfigGUIWatsonButton: Watson Traduir
+  wwcConfigConversationPluginUpdateChatSuccess: ' Recordatori de xat d\''actualització
+    del plugin es va activar correctament.'
+  wwctbOnTarget: ' S\''ha habilitat la traducció de llibres per %i.'
+  wwcsNotATranslator: ' Encara no hi ha registres disponibles per a %i.'
+  wwcConfigGUIbStatsButton: Commuta els bStats
+  wwctGUINewTranslationSource: Escull una llengua d\'origen
+  wwcConfigConnectionFailed: No s\'ha pogut connectar a %o Assegura\'t que les teves
+    credencials i tallafocs estiguin configurades correctament!
+  wwcConfigEnabledbStats: bStats activat.
+  wwctGUIMainMenuPlayer: Menú de traducció de %i
+  wwctGUIBookButton: Commuta la traducció del llibre
+  wwcLangDetected: Idioma detectat %o.
+  wwcBookTranslateStart: ' Traduir el llibre de destinació...'
+  wwcConfigDisabledbStats: bStats discapacitats.
+  wwctsOffSender: ' Traducció de signes desactivada.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' El xat global s\''està
+    traduint, però el xat s\''està traduint de %i a %o.'
+  wwcConfigConversationGoogleTranslateSuccess: ' Traductor de Google activat amb èxit.'
+  wwcUpdaterParserFailed: No s\'ha pogut analitzar les dades d\'actualització de Github.
+  wwctAutoTranslateStart: ' Ara la traducció de tot el seu xat a %o.'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: La clau secreta actual és %i.
+    si us plau introdueixi una clau secreta per Amazon, o escrigui 0 per tornar enrere.
+  wwctbOffSender: ' Traducció de llibres desactivats.'
+  wwcConfigGUIAmazonTranslateButton: Amazon Traduir
+  wwcConfigConversationLangSuccess: ' Idioma del plugin ha canviat correctament.'
+  wwcsSuccessfulTranslations: ' Traduccions reeixides: %i'
+  wwctTranslationStoppedOtherPlayer: ' Traducció de xat de %i s\''ha aturat.'
+  wwcConfigConversationTranslationCacheInput: El límit actual de la memòria cau de
+    traducció és %i frases. Escriviu res més gran que 0 per establir un nou valor,
+    o escriviu 0 per desactivar la memòria cau de traducció. Escriviu res menys que
+    0 per tornar enrere.
+  wwctbOffTarget: ' Traducció de llibres desactivada per a %i.'
+  wwcConfigGUIGeneralSettings: Configuració general
+  wwcInvalidLang: Llenguatge no vàlid a la vostra config.yml. Per defecte a en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ' regió d\''Amazon s\''ha establert
+    amb èxit.'
+  wwcConfigRateLimitEnabled: Límit de tarifa global activat i establert a %i segons.
+  wwcBadPerms: ' No teniu els permisos necessaris per executar aquesta comanda!'
+  wwcConfigGUILangButton: Canviar l\'idioma del connector
+  wwctGUISignButton: Commuta la traducció de signes
+  wwcUpdaterOutOfDate: WorldwideChat està fora de data. Si us plau, actualitzeu a
+    l\'última versió, %i.
+  wwcConfigGUIChangesNotSaved: ' És possible que els vostres canvis no tinguin efecte
+    fins que executeu /wwcr, o feu clic a la barrera vermella de /wwcc.'
+  wwcConfigGUINextPageButton: Pàgina següent
+  wwctbTranslatePageFail: (No s\'ha pogut traduir aquesta pàgina) %i
+  wwcConfigInvalidTranslatorSettings: Configuració del traductor no vàlid! Si us plau,
+    habiliteu només un traductor a la vostra config.yml.
+  wwcConfigGUIQuitButton: Sortir i desar els canvis
+  wwctPlayerNotFound: ' Jugador %No he trobat.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' El xat global s\''està
+    traduint, però el xat s\''està traduint a %o.'
+  wwcConfigGUIGoogleTranslateSettings: Configuració del Traductor de Google
+  wwcConfigGUIGlobalRateLimit: Canvi Límit de Tarifa Global
+  wwctGUIBackToSourceLanguageButton: Torna al menú Idioma d\'origen
+  wwcConfigGUIAmazonTranslateRegionButton: Canviar la regió d\'Amazon
+  wwcConfigConversationLangInput: 'L\''idioma actual del connector és %i Si us plau,
+    introduïu un codi d\''idioma vàlid, o escriviu 0 per cancel·lar. Codis d\''idioma
+    vàlids: %o'
+  wwcConfigConversationLangInvalid: ' Codi d\''idioma no vàlid!'
+  wwctTranslationStopped: ' La seva traducció de xat s\''ha aturat.'
+  wwcConfigGUIWatsonSettings: Configuració de Watson
+  wwctsPlayerNotFound: ' Jugador %i o bé no es troba, o no és un traductor actiu.'
+  wwcConfigGUIWatsonAPIKeyButton: Canviar la clau de l\'API de Watson
+  wwcEnabled: Habilitada la versió WorldwideChat %i.
+  wwcgLangToLangStart: ' Ara la traducció del xat global de %i a %o.'
+  wwctbOnSender: ' S\''ha habilitat la traducció de llibres. Feu clic amb el botó
+    dret mentre manteniu un llibre per traduir-lo!'
+  wwcListenersInitialized: Els oients inicialitzats.
+  wwcUserDataCorrupted: Trobat i moure %i arxius de dades d\'usuari danyats o vells.
+    S\'eliminaran en la propera recàrrega.
+  wwcConfigGUIPluginUpdateChatButton: Enviar recordatori de xat per a actualitzacions
+    de Plugin
+  wwcConfigConversationSendTranslationChatSuccess: ' Recordatori de xat de traductor
+    actiu es va activar correctament.'
+  wwctsOffTarget: ' Traducció de signes desactivada per %i.'
+  wwcUpdaterConnectionFailed: No s\'ha pogut comprovar si hi ha actualitzacions més
+    recents a Github.
+  watsonNotFoundExceptionNotification: ' No es pot traduir la vostra entrada més.'
+  wwcConfigConversationWatsonAPIKeyInput: La clau de l\'API actual és %i. introduïu
+    una clau d\'API per a Watson, o escriviu 0 per tornar enrere.
+  wwctGUIStopButton: Deixar de traduir
+  wwcgTranslationStopped: ' La traducció global de xat s\''ha aturat.'
+  wwctAutoTranslateStartOtherPlayer: ' Ara traduint el xat de %i a %o.'
+  wwcUpdaterFutureDate: Aquesta instància de WorldwideChat té una versió més gran
+    que l\'última pública.
+  wwcConfigConversationPrefixSuccess: ' Prefix ha canviat correctament.'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Canviar la clau de l\'API del Traductor
+  wwcSignDeletedOrTooLong: ' El signe de destinació s\''ha suprimit o la traducció
+    ha estat massa llarga. Traducció:'
+  wwcConfigGUIAmazonTranslateStatusButton: Toggle Amazon Traduir
+  wwctsOnTarget: ' Signar la traducció activada per %i.'
+  wwcConfigCacheDisabled: Traductor cau desactivat.
+  wwcConfigConversationWatsonURLInput: L\'URL actual és %i. introduïu un URL de servei
+    per a Watson, o escriviu 0 per tornar enrere.
+  wwcOnJoinTranslationNotificationSourceLang: ' El vostre xat s\''està traduint de
+    %i a %o.'
+  wwcBookDone: ' Llibre traduït amb èxit.'
+  wwctsOnSender: ' S\''ha habilitat la traducció de signes. Feu clic amb el botó dret
+    sobre un signe per traduir-lo!'
+  watsonColorCodeWarning: ' L\''ús de codis de color pot donar resultats imprevisibles.'
+  wwctGUITranslationButton: Començar a traduir
+  wwctGUIAutoDetectButton: Detecta automàticament l\'idioma d\'origen
+  wwcUpdaterUpToDate: WorldwideChat està al dia!
+  wwcConfigConversationAmazonTranslateRegionInput: La regió actual és %i. si us plau,
+    introduïu una regió per a Amazon, o escriviu 0 per tornar enrere.
+  wwcConfigConversationWatsonFail: ' No s\''ha pogut habilitar IBM Watson.'
+  wwcNoConsole: ' Aquesta ordre només pot ser executada per un jugador.'
+  wwcConfigConversationAmazonTranslateSuccess: ' S\''ha habilitat amb èxit Amazon
+    Traduir.'
+  wwcConfigConversationAmazonTranslateFail: ' No s\''ha pogut activar Amazon Translate.'
+  wwcInitializationFail: No s\'ha pogut inicialitzar WorldwideChat.
+  wwcrSuccess: ' S\''ha recarregat amb èxit WorldwideChat.'
+  wwcPlayerNotFound: ' Jugador %No he trobat.'
+  wwcUpdaterOutOfDateChat: ' WorldwideChat està fora de data. Si us plau, actualitzi
+    a l\''última versió.'
+  wwcConfigConversationRateLimitSuccess: ' Límit de tarifa establert amb èxit.'
+  wwcConfigConversationWatsonURLSuccess: ' Watson URL establert correctament.'
+  wwctbPlayerNotFound: ' Jugador %i o bé no es troba, o no és un traductor actiu.'
+  wwcConfigConversationTranslationCacheSuccess: ' Límit de memòria cau de traducció
+    establert correctament.'
+  wwctInvalidArgs: ' Arguments no vàlids proporcionats!'
+  wwcConfigGUIPrefixButton: Canviar el prefix del connector
+  wwctSameLangError: ' No es pot traduir a la mateixa llengua!'
+  wwctGUINewTranslationTarget: Trieu una llengua de destinació
+  wwctLangToLangStartOtherPlayer: ' Ara la traducció del xat de %o de %i a %e.'
+  wwcConfigGUIAmazonTranslateSettings: Configuració de traducció d\'Amazon
+  wwcConfigConnectionSuccess: Connectat amb èxit a %o!
+  wwcConfigGUIGoogleTranslateButton: Traduir per Google
+  wwcsIsActiveTranslator: ' És traductor actiu: %i'
+  wwctLangToLangStart: ' Ara la traducció de tot el seu xat de %i a %o.'
+  wwcConfigConversationPrefixInput: El prefix actual és %i Si us plau, escriviu un
+    de nou, o escriviu 0 per tornar enrere.
+  wwcConfigGUIPreviousPageButton: Pàgina anterior
+  wwcConfigGUITranslatorCacheButton: Canviar el límit de la memòria cau
+  wwcConfigConversationbStatsSuccess: ' S\''ha modificat correctament bStats.'
+  wwcSignDone: ' Signar traduït correctament.'
+  wwcConfigInvalidPrefixSettings: No s\'ha pogut llegir el vostre prefix. Utilitzant
+    el valor per defecte...
+  wwcConfigRateLimitInvalid: Límit de taxa incorrecte establert a config.yml. Per
+    defecte a 0 segons...
+  wwcConfigConversationWatsonSuccess: ' Habilitada amb èxit IBM Watson.'
+  wwcSignTranslateStart: ' Traduint el signe objectiu...'
+  wwcConfigGUIChatSettings: Configuració del xat
+  wwcConfigGUIWatsonURLButton: Canviar l\'URL del servei Watson
+  wwctInvalidLangCode: ' Codi (s) d\''idioma no vàlid proporcionat! Codis vàlids:
+    %o'
+  wwcConfigConversationUpdateCheckerSuccess: ' Actualitza el retard corrector establert
+    correctament.'
+  wwcUnsupportedVersion: 'Esteu executant una versió no admesa de Bukkit, Spigot o
+    Paper. Versions suportades:'
+  wwctGUIBackToMainMenuButton: Torna al menú principal de traducció
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' El xat global s\''està traduint
+    de %i a %o.'
+  wwcBookTranslationFail: ' No es pot obtenir una traducció vàlida d\''una o més pàgines
+    del llibre de destinació de %i.'
+  wwcConfigGUITranslatorSettings: Configuració del traductor
+  wwcConfigConversationGoogleTranslateAPIKeyInput: La clau de l\'API actual és %i.
+    introduïu una clau d\'API per a Google Translate, o escriviu 0 per tornar enrere.
+  wwcConfigConversationRateLimitInput: El límit de tarifa global actual per traducció
+    és %i segons. Escriviu qualsevol cosa més gran que 0 per establir un valor nou,
+    o escriviu 0 per inhabilitar el límit. Escriviu res menys que 0 per tornar enrere.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Configuració de claus API de
+    Google Translate amb èxit.'
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Canviar la clau secreta Amazon
+  wwcVersion: ' WorldwideChat, versió'
+  wwcsName: ' Nom del jugador: %i'
+  wwcInvalidTranslator: Configuració del traductor no vàlid. Si us plau, corregiu
+    això a la vostra config.yml o amb /wwcc per utilitzar aquest connector.
+  wwcsAttemptedTranslations: ' Intent de traduccions: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon conjunt de claus
+    secretes amb èxit.'
+  wwcConfigConversationWatsonAPIKeySuccess: ' Watson API conjunt de claus amb èxit.'
+  wwctGUIMainMenu: El teu menú de traducció
+  wwctsNotATranslator: ' No ets un traductor actiu! Assegureu-vos que heu configurat
+    això amb /wwct.'
+  wwcRateLimit: ' Les vostres traduccions són limitades a la tarifa. Espereu un altre
+    %i segons.'
+  wwcConfigCacheEnabled: La memòria cau del traductor activat i s\'estableix com a
+    límit de %i.
+  wwctGUIExistingTranslationButton: Sobreescriu la sessió de traducció actual
+  wwcOnJoinTranslationNotificationNoSourceLang: ' El vostre xat s\''està traduint
+    a %o.'
+  wwcConfigGUIGoogleTranslateStatusButton: Commuta el Traductor de Google
+  wwcConfigGUIWatsonStatusButton: Commuta Watson
+  wwcUserDataReloaded: Carregat totes les dades d\'usuari desades.
+  wwcConfigGUISendTranslationChatButton: Enviar recordatori de xat a traductor actiu
+    en iniciar sessió
+  wwcsLastTranslationTime: ' Últim temps de traducció (reeixit): %i'
+  wwctbNotATranslator: ' No ets un traductor actiu! Assegureu-vos que heu configurat
+    això amb /wwct.'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: La clau d\'accés actual és %i.
+    si us plau introdueixi una clau d\'accés per a Amazon, o escrigui 0 per tornar
+    enrere.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Tecla d\''accés d\''Amazon
+    conjunt amb èxit.'
+  wwcConfigBadUpdateDelay: Retard d\'actualització no vàlid establert a config.yml.
+    Per defecte a 86400 segons...

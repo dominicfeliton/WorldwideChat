@@ -1,0 +1,206 @@
+Messages:
+  wwcgAutoTranslateStart: ' Teraz tłumaczy globalny czat do %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Czat globalny jest tłumaczony
+    na %o.'
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Zmień klucz dostępu Amazon
+  wwcrFail: ' Nie można ponownie załadować WorldwideChat.'
+  wwcConfigGUIUpdateCheckerButton: Zmień Sprawdzanie opóźnienia aktualizacji
+  wwcSignTranslationFail: ' Nie można uzyskać poprawnego tłumaczenia znaku celu z
+    %i.'
+  wwcConfigConversationGoogleTranslateFail: ' Nie udało się włączyć Tłumacza Google.'
+  wwcUpdaterFailedGeneric: Nie można sprawdzić aktualizacji WorldwideChat.
+  wwcConfigConversationUpdateCheckerInput: Bieżące opóźnienie w sprawdzaniu aktualizacji
+    to %i sekund. Wpisz wartość większą niż 10, aby ustawić nową wartość lub wartość
+    mniejszą niż 10, aby wrócić.
+  wwctGUIMainMenuGlobal: Globalne menu tłumaczenia
+  wwcConfigGUIWatsonButton: Watson Tłumacz
+  wwcConfigConversationPluginUpdateChatSuccess: ' Przypomnienie o aktualizacji wtyczki
+    czatu przełączono pomyślnie.'
+  wwctbOnTarget: ' Tłumaczenie książki włączone dla %i.'
+  wwcsNotATranslator: ' Nie ma jeszcze żadnych rekordów dla %i.'
+  wwcConfigGUIbStatsButton: Przełącz bStats
+  wwctGUINewTranslationSource: Wybierz język źródłowy
+  wwcConfigConnectionFailed: Nie udało się połączyć z %o. Upewnij się, że poświadczenia
+    i zapora sieciowa są poprawnie skonfigurowane!
+  wwcConfigEnabledbStats: Włączone bStats.
+  wwctGUIMainMenuPlayer: Menu tłumaczenia %i
+  wwctGUIBookButton: Przełącz tłumaczenie książki
+  wwcLangDetected: Wykryto język %o.
+  wwcBookTranslateStart: ' Tłumaczenie książki docelowej...'
+  wwcConfigDisabledbStats: Wyłączone bStats.
+  wwctsOffSender: ' Tłumaczenie podpisu wyłączone.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Czat globalny jest tłumaczony,
+    ale twój czat jest tłumaczony z %i do %o.'
+  wwcConfigConversationGoogleTranslateSuccess: ' Tłumacz Google pomyślnie włączony.'
+  wwcUpdaterParserFailed: Nie można przeanalizować danych aktualizacji z Githuba.
+  wwctAutoTranslateStart: ' Teraz tłumaczy cały swój czat do %o.'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Bieżący klucz tajny to %i. Wprowadź
+    tajny klucz dla Amazon lub wpisz 0, aby wrócić.
+  wwctbOffSender: ' Tłumaczenie książki wyłączone.'
+  wwcConfigGUIAmazonTranslateButton: Amazon Tłumacz
+  wwcConfigConversationLangSuccess: ' Język wtyczki został pomyślnie zmieniony.'
+  wwcsSuccessfulTranslations: ' Udane tłumaczenia: %i'
+  wwctTranslationStoppedOtherPlayer: ' Tłumaczenie czatu dla %i zostało zatrzymane.'
+  wwcConfigConversationTranslationCacheInput: Bieżący limit pamięci podręcznej tłumaczenia
+    %i frazy. Wpisz wartość większą niż 0, aby ustawić nową wartość, lub wpisz 0,
+    aby wyłączyć pamięć podręczną tłumaczenia. Wpisz mniej niż 0, aby wrócić.
+  wwctbOffTarget: ' Tłumaczenie książki wyłączone dla %i.'
+  wwcConfigGUIGeneralSettings: Ogólna konfiguracja
+  wwcInvalidLang: Nieprawidłowy język w pliku config.yml. Domyślnie na en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ' Region Amazon ustawiony pomyślnie.'
+  wwcConfigRateLimitEnabled: Globalny limit szybkości włączony i ustawiony na %i sekund.
+  wwcBadPerms: ' Nie masz wymaganych uprawnień do wykonania tego polecenia!'
+  wwcConfigGUILangButton: Zmień język wtyczki
+  wwctGUISignButton: Przełącz tłumaczenie podpisu
+  wwcUpdaterOutOfDate: WorldwideChat jest nieaktualne. Zaktualizuj do najnowszej wersji,
+    %i.
+  wwcConfigGUIChangesNotSaved: ' Zmiany mogą nie zostać wprowadzone do momentu uruchomienia
+    /wwcr lub kliknięcia czerwonej bariery w /wwcc.'
+  wwcConfigGUINextPageButton: Następna strona
+  wwctbTranslatePageFail: (Przetłumaczenie tej strony nie powiodło się) %i
+  wwcConfigInvalidTranslatorSettings: Nieprawidłowe ustawienia tłumacza! Proszę włączyć
+    tylko jednego tłumacza w config.yml.
+  wwcConfigGUIQuitButton: Zakończ i zapisz zmiany
+  wwctPlayerNotFound: ' Gracza %Nie znaleziono.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Czat globalny jest
+    tłumaczony, ale twój czat jest tłumaczony na %o.'
+  wwcConfigGUIGoogleTranslateSettings: Konfiguracja tłumaczy
+  wwcConfigGUIGlobalRateLimit: Zmień globalny limit stawki
+  wwctGUIBackToSourceLanguageButton: Powrót do menu języka źródłowego
+  wwcConfigGUIAmazonTranslateRegionButton: Zmień region Amazon
+  wwcConfigConversationLangInput: 'Bieżący język wtyczki to %i. Wprowadź prawidłowy
+    kod języka lub wpisz 0, aby anulować. Prawidłowe kody językowe: %o'
+  wwcConfigConversationLangInvalid: ' Nieprawidłowy kod języka!'
+  wwctTranslationStopped: ' Twoje tłumaczenie czatu zostało zatrzymane.'
+  wwcConfigGUIWatsonSettings: Konfiguracja Watson
+  wwctsPlayerNotFound: ' Gracz %i nie został znaleziony lub nie jest aktywnym tłumaczeniem.'
+  wwcConfigGUIWatsonAPIKeyButton: Zmień klucz API Watson
+  wwcEnabled: Włączona wersja WorldwideChat %i.
+  wwcgLangToLangStart: ' Teraz tłumaczy globalny czat z %i do %o.'
+  wwctbOnSender: ' Tłumaczenie książki włączone. Kliknij prawym przyciskiem myszy
+    trzymając książkę, aby ją przetłumaczyć!'
+  wwcListenersInitialized: Zainicjowane słuchacze.
+  wwcUserDataCorrupted: Znaleziono i przenieś %i uszkodzone lub stare pliki danych
+    użytkownika. Zostaną one usunięte przy następnym przeładowaniu.
+  wwcConfigGUIPluginUpdateChatButton: Wyślij przypomnienie o czacie dla aktualizacji
+    wtyczek
+  wwcConfigConversationSendTranslationChatSuccess: ' Aktywny tłumacz przypomnienie
+    czatu przełączyło się pomyślnie.'
+  wwctsOffTarget: ' Tłumaczenie podpisów wyłączone dla %i.'
+  wwcUpdaterConnectionFailed: Nie można sprawdzić najnowszych aktualizacji na Github.
+  watsonNotFoundExceptionNotification: ' Nie można dalej przetłumaczyć danych wejściowych.'
+  wwcConfigConversationWatsonAPIKeyInput: Bieżący klucz API to %i. Wprowadź klucz
+    API dla Watson lub wpisz 0, aby wrócić.
+  wwctGUIStopButton: Zatrzymaj tłumaczenie
+  wwcgTranslationStopped: ' Globalne tłumaczenie czatu zostało zatrzymane.'
+  wwctAutoTranslateStartOtherPlayer: ' Teraz tłumaczy czat %i do %o.'
+  wwcUpdaterFutureDate: Ta instancja WorldwideChat ma większą wersję niż najnowsza
+    publiczna.
+  wwcConfigConversationPrefixSuccess: ' Przedrostek zmieniono pomyślnie.'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Zmień klucz API Tłumacza Google
+  wwcSignDeletedOrTooLong: ' Znak celu został usunięty lub tłumaczenie było zbyt długie.
+    Tłumaczenie:'
+  wwcConfigGUIAmazonTranslateStatusButton: Przełącz tłumaczenie Amazon
+  wwctsOnTarget: ' Tłumaczenie podpisów włączone dla %i.'
+  wwcConfigCacheDisabled: Pamięć podręczna translatora
+  wwcConfigConversationWatsonURLInput: Bieżący adres URL to %i. Wprowadź adres URL
+    usługi dla Watson lub wpisz 0, aby wrócić.
+  wwcOnJoinTranslationNotificationSourceLang: ' Twój czat jest tłumaczony z %i do
+    %o.'
+  wwcBookDone: ' Książka przetłumaczona pomyślnie'
+  wwctsOnSender: ' Tłumaczenie podpisów włączone. Kliknij prawym przyciskiem myszy
+    znak, aby go przetłumaczyć!'
+  watsonColorCodeWarning: ' Korzystanie z kodów kolorów może dać nieprzewidywalne
+    rezultaty.'
+  wwctGUITranslationButton: Rozpocznij tłumaczenie
+  wwctGUIAutoDetectButton: Automatyczne wykrywanie języka źródłowego
+  wwcUpdaterUpToDate: WorldwideChat jest na bieżąco!
+  wwcConfigConversationAmazonTranslateRegionInput: Bieżący region to %i. Wprowadź
+    region dla Amazon lub wpisz 0, aby wrócić.
+  wwcConfigConversationWatsonFail: ' Włączenie IBM Watson nie powiodło się.'
+  wwcNoConsole: ' Polecenie to może być uruchamiane tylko przez gracza.'
+  wwcConfigConversationAmazonTranslateSuccess: ' Pomyślnie włączono Amazon Translate.'
+  wwcConfigConversationAmazonTranslateFail: ' Nie udało się włączyć Amazon Translate.'
+  wwcInitializationFail: Nie można zainicjować WorldwideChat.
+  wwcrSuccess: ' Pomyślnie ponownie wczytano WorldWide'
+  wwcPlayerNotFound: ' Gracza %Nie znaleziono.'
+  wwcUpdaterOutOfDateChat: ' WorldwideChat jest nieaktualne. Zaktualizuj do najnowszej
+    wersji.'
+  wwcConfigConversationRateLimitSuccess: ' Ustawiono limit szybkości.'
+  wwcConfigConversationWatsonURLSuccess: ' Ustawiony adres URL Watson pomyślnie.'
+  wwctbPlayerNotFound: ' Gracz %i nie został znaleziony lub nie jest aktywnym tłumaczeniem.'
+  wwcConfigConversationTranslationCacheSuccess: ' Ustawiono limit pamięci podręcznej
+    tłumaczenia.'
+  wwctInvalidArgs: ' Podano nieprawidłowe argumenty!'
+  wwcConfigGUIPrefixButton: Zmień prefiks wtyczki
+  wwctSameLangError: ' Nie możesz tłumaczyć na ten sam język!'
+  wwctGUINewTranslationTarget: Wybierz język docelowy
+  wwctLangToLangStartOtherPlayer: ' Teraz tłumaczy czat z %o z %i do %e.'
+  wwcConfigGUIAmazonTranslateSettings: Konfiguracja tłumaczenia Amazon
+  wwcConfigConnectionSuccess: Pomyślnie nawiązano połączenie z %o!
+  wwcConfigGUIGoogleTranslateButton: Tłumacz Google
+  wwcsIsActiveTranslator: ' Jest aktywnym translatorem: %i'
+  wwctLangToLangStart: ' Teraz tłumaczy cały czat z %i do %o.'
+  wwcConfigConversationPrefixInput: Bieżący przedrostek to %i. Wpisz nowy lub wpisz
+    0, aby wrócić.
+  wwcConfigGUIPreviousPageButton: Poprzednia strona
+  wwcConfigGUITranslatorCacheButton: Zmień limit pamięci podręcznej tłumaczeń
+  wwcConfigConversationbStatsSuccess: ' Pomyślnie przełączono bStats.'
+  wwcSignDone: ' Znak przetłumaczony pomyślnie'
+  wwcConfigInvalidPrefixSettings: Nie udało się odczytać prefiksu. Używanie domyślnego...
+  wwcConfigRateLimitInvalid: Zły limit stawki ustawiony w config.yml. Domyślnie na
+    0 sekund...
+  wwcConfigConversationWatsonSuccess: ' Pomyślnie włączono IBM Watson.'
+  wwcSignTranslateStart: ' Tłumaczenie znaku celu...'
+  wwcConfigGUIChatSettings: Konfiguracja rozmowy
+  wwcConfigGUIWatsonURLButton: Zmień adres URL usługi Watson
+  wwctInvalidLangCode: ' Podano nieprawidłowy kod (y) języka! Prawidłowe kody lang:
+    %o'
+  wwcConfigConversationUpdateCheckerSuccess: ' Ustawione opóźnienie sprawdzania aktualizacji
+    pomyślnie.'
+  wwcUnsupportedVersion: 'Uruchamiasz nieobsługiwaną wersję Bukkit, Spigot lub Paper.
+    Obsługiwane wersje:'
+  wwctGUIBackToMainMenuButton: Powrót do głównego menu tłumaczeń
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Czat globalny jest tłumaczony
+    z %i do %o.'
+  wwcBookTranslationFail: ' Nie można uzyskać poprawnego tłumaczenia jednej lub więcej
+    stron książki docelowej z %i.'
+  wwcConfigGUITranslatorSettings: Konfiguracja usługi
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Bieżący klucz API to %i. Wprowadź
+    klucz API dla Google Translate lub wpisz 0, aby wrócić.
+  wwcConfigConversationRateLimitInput: Bieżący globalny limit szybkości na tłumaczenie
+    wynosi %i sekund. Wpisz wartość większą niż 0, aby ustawić nową wartość, lub wpisz
+    0, aby wyłączyć limit. Wpisz mniej niż 0, aby wrócić.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Zestaw kluczy API Google Translate
+    pomyślnie.'
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Zmień klucz tajny Amazon
+  wwcVersion: ' WorldWidechat, wersja'
+  wwcsName: ' Nazwa gracza: %i'
+  wwcInvalidTranslator: Nieprawidłowe ustawienia tłumacza. Proszę to naprawić w swoim
+    config.yml lub z /wwcc, aby użyć tej wtyczki.
+  wwcsAttemptedTranslations: ' Próba tłumaczenia: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon tajny zestaw kluczy
+    pomyślnie.'
+  wwcConfigConversationWatsonAPIKeySuccess: ' Zestaw kluczy API Watson pomyślnie.'
+  wwctGUIMainMenu: Twoje menu tłumaczeń
+  wwctsNotATranslator: ' Nie jesteś aktywnym tłumaczem! Upewnij się, że ustawiłeś
+    to za pomocą /wwct.'
+  wwcRateLimit: ' Twoje tłumaczenia są ograniczone. Proszę poczekać inny %i sekund.'
+  wwcConfigCacheEnabled: Pamięć podręczna translatora włączona i ustawiona na ograniczenie
+    %i.
+  wwctGUIExistingTranslationButton: Zastąp bieżącą sesję tłumaczenia
+  wwcOnJoinTranslationNotificationNoSourceLang: ' Twój czat jest tłumaczony na %o.'
+  wwcConfigGUIGoogleTranslateStatusButton: Przełącz tłumaczenie Google
+  wwcConfigGUIWatsonStatusButton: Przełącz Watson
+  wwcUserDataReloaded: Wczytano wszystkie zapisane dane użytkownika.
+  wwcConfigGUISendTranslationChatButton: Wyślij przypomnienie o czacie do Active Translator
+    przy logowaniu
+  wwcsLastTranslationTime: ' Ostatni (udany) Czas tłumaczenia: %i'
+  wwctbNotATranslator: ' Nie jesteś aktywnym tłumaczem! Upewnij się, że ustawiłeś
+    to za pomocą /wwct.'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Bieżący klucz dostępu to %i.
+    Wprowadź klucz dostępu dla Amazon lub wpisz 0, aby wrócić.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Zestaw kluczy dostępu Amazon
+    pomyślnie.'
+  wwcConfigBadUpdateDelay: Nieprawidłowe opóźnienie aktualizacji ustawione w config.yml.
+    Domyślnie 86400 sekund...

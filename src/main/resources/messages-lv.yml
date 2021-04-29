@@ -1,0 +1,204 @@
+Messages:
+  wwcgAutoTranslateStart: ' Tagad tulkojot globālo tērzēšanu uz %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Globālā tērzēšana tiek tulkota
+    uz %o.'
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Mainīt Amazon piekļuves atslēgu
+  wwcrFail: ' Neizdevās pārlādēt WorldwideChat.'
+  wwcConfigGUIUpdateCheckerButton: Mainīt pārbaudi par atjauninājumu kavēšanos
+  wwcSignTranslationFail: ' Neizdevās iegūt derīgu jūsu mērķa zīmes tulkojumu no %i.'
+  wwcConfigConversationGoogleTranslateFail: ' Neizdevās iespējot Google Translate.'
+  wwcUpdaterFailedGeneric: Nespēj pārbaudīt WorldwideChat atjauninājumus.
+  wwcConfigConversationUpdateCheckerInput: Pašreizējā kavēšanās atjaunināšanas pārbaudītājā
+    ir %i sekundes. Ierakstiet kaut ko lielāku par 10, lai iestatītu jaunu vērtību,
+    vai jebko, kas ir mazāks par 10, lai atgrieztos.
+  wwctGUIMainMenuGlobal: Globālā tulkošanas
+  wwcConfigGUIWatsonButton: Watson tulkot
+  wwcConfigConversationPluginUpdateChatSuccess: ' Plugin atjauninājums tērzēšanas
+    atgādinājums veiksmīgi pārslēgts.'
+  wwctbOnTarget: ' Grāmatu tulkošana iespējota uz %i.'
+  wwcsNotATranslator: ' Par %i vēl nav pieejami ieraksti.'
+  wwcConfigGUIbStatsButton: Pārslēgt bStats
+  wwctGUINewTranslationSource: Izvēlēties avota valodu
+  wwcConfigConnectionFailed: Neizdevās izveidot savienojumu ar %o. Pārliecinieties,
+    vai jūsu akreditācijas dati un ugunsmūris ir pareizi konfigurēti!
+  wwcConfigEnabledbStats: Iespējots bStats.
+  wwctGUIMainMenuPlayer: '%i tulkošanas izvēlne'
+  wwctGUIBookButton: Pārslēgt grāmatu tulkošanu
+  wwcLangDetected: Atklāta valoda %o.
+  wwcBookTranslateStart: ' Mērķa grāmatas tulkošana...'
+  wwcConfigDisabledbStats: Atspējots bStats.
+  wwctsOffSender: ' Zīmes tulkojums ir atspēj'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Globālā tērzēšana tiek
+    tulkota, bet jūsu tērzēšana tiek tulkota no %i uz %o.'
+  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate ir veiksmīgi iespējota.'
+  wwcUpdaterParserFailed: Neizdevās parsēt atjaunināšanas datus no Github.
+  wwctAutoTranslateStart: ' Tagad tulkojot visu savu tērzēšanu uz %o.'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Pašreizējā slepenā atslēga ir
+    %i. Lūdzu, ievadiet Amazon slepeno atslēgu vai ierakstiet 0, lai atgrieztos.
+  wwctbOffSender: ' Grāmatu tulkojums atspējots'
+  wwcConfigGUIAmazonTranslateButton: Amazon tulkot
+  wwcConfigConversationLangSuccess: ' Spraudņa valoda veiksmīgi mainīta.'
+  wwcsSuccessfulTranslations: ' Veiksmīgi tulkojumi: %i'
+  wwctTranslationStoppedOtherPlayer: ' Tērzēšanas tulkošana par %i ir apturēta.'
+  wwcConfigConversationTranslationCacheInput: Pašreizējais tulkošanas kešatmiņas ierobežojums
+    ir %i frāzes. Ierakstiet vairāk nekā 0, lai iestatītu jaunu vērtību, vai ierakstiet
+    0, lai atspējotu tulkošanas kešatmiņu Ierakstiet kaut ko mazāk par 0, lai atgrieztos.
+  wwctbOffTarget: ' Grāmatu tulkošana atspējota uz %i'
+  wwcConfigGUIGeneralSettings: Vispārējā konfigurācija
+  wwcInvalidLang: Nederīga valoda jūsu config.yml. Noklusējuma izpilde en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ' Amazon reģions noteikti veiksmīgi.'
+  wwcConfigRateLimitEnabled: Globālais likmes ierobežojums ir iespējots un iestatīts
+    uz %i sekundes.
+  wwcBadPerms: ' Jums nav nepieciešamo atļauju, lai izpildītu šo komandu!'
+  wwcConfigGUILangButton: Mainīt spraudņa valodu
+  wwctGUISignButton: Pārslēgt zīmju tulkošanu
+  wwcUpdaterOutOfDate: WorldwideChat ir novecojis. Lūdzu, atjauniniet uz jaunāko versiju,
+    %i.
+  wwcConfigGUIChangesNotSaved: ' Jūsu izmaiņas var nestāties spēkā, kamēr jūs vai
+    nu palaist /wwcr, vai noklikšķiniet uz sarkanās barjeras /wwcc.'
+  wwcConfigGUINextPageButton: Nākamā lapa
+  wwctbTranslatePageFail: (Neizdevās tulkot šo lapu) %i
+  wwcConfigInvalidTranslatorSettings: Nederīgi tulkotāja iestatījumi! Lūdzu, iespējojiet
+    tikai vienu tulkotāju savā config.yml.
+  wwcConfigGUIQuitButton: Iziet no & Saglabāt izmaiņas
+  wwctPlayerNotFound: ' Spēlētājs %es neesmu atrasts.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Globālā tērzēšana
+    tiek tulkota, bet jūsu tērzēšana tiek tulkota uz %o.'
+  wwcConfigGUIGoogleTranslateSettings: Google tulkošanas konfigurācija
+  wwcConfigGUIGlobalRateLimit: Mainīt globālo likmes ierobežojumu
+  wwctGUIBackToSourceLanguageButton: Atpakaļ uz avota valodas izvēlni
+  wwcConfigGUIAmazonTranslateRegionButton: Mainīt Amazones reģionu
+  wwcConfigConversationLangInput: 'Pašreizējā spraudņa valoda ir %i. Lūdzu ievadiet
+    derīgu valodas kodu vai ierakstiet 0, lai atceltu. Derīgi valodas kodi: %o'
+  wwcConfigConversationLangInvalid: ' Nederīgs valodas kods!'
+  wwctTranslationStopped: ' Jūsu tērzēšanas tulkošana ir apturēta.'
+  wwcConfigGUIWatsonSettings: Watson konfigurācija
+  wwctsPlayerNotFound: ' Spēlētājs %i vai nu nav atrasts, vai nav aktīvs tulkotājs.'
+  wwcConfigGUIWatsonAPIKeyButton: Mainīt Watson API atslēgu
+  wwcEnabled: Iespējota WorldwideChat versija %i.
+  wwcgLangToLangStart: ' Tagad tulkojot globālo tērzēšanu no %i uz %o.'
+  wwctbOnSender: ' Iespējota grāmatu tulkošana. Ar peles labo pogu noklikšķiniet,
+    turot grāmatu, lai to tulkotu!'
+  wwcListenersInitialized: Inicializēti klausītāji.
+  wwcUserDataCorrupted: Atrasti un pārvietot %i bojāti vai veci lietotāja datu faili.
+    Tie tiks dzēsti nākamajā pārlādēšanas reizē.
+  wwcConfigGUIPluginUpdateChatButton: Sūtīt tērzēšanas atgādinājumu par spraudņu
+  wwcConfigConversationSendTranslationChatSuccess: ' Aktīvā tulkotāja tērzēšanas atgādinājums
+    veiksmīgi pārslēgts.'
+  wwctsOffTarget: ' Parakstīt tulkojumu atspējots %i.'
+  wwcUpdaterConnectionFailed: Nespēj pārbaudīt jaunākos atjauninājumus GitHub.
+  watsonNotFoundExceptionNotification: ' Nevar tulkot savu ievadi tālāk.'
+  wwcConfigConversationWatsonAPIKeyInput: Pašreizējā API atslēga ir %i. Lūdzu, ievadiet
+    API atslēgu Watson vai ierakstiet 0, lai atgrieztos.
+  wwctGUIStopButton: Pārtraukt tulkošanu
+  wwcgTranslationStopped: ' Global tērzēšanas tulkošana ir apturēta.'
+  wwctAutoTranslateStartOtherPlayer: ' Tagad tulkojot tērzēšanu %i uz %o.'
+  wwcUpdaterFutureDate: Šim WorldwideChat gadījumam ir lielāka versija nekā jaunākā
+    publiskā versija.
+  wwcConfigConversationPrefixSuccess: ' Prefikss veiksmīgi mainīts.'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Mainīt Google tulkot API atslēgu
+  wwcSignDeletedOrTooLong: ' Mērķa zīme tika vai nu dzēsta, vai tulkojums bija pārāk
+    garš. Tulkojums:'
+  wwcConfigGUIAmazonTranslateStatusButton: Pārslēgt Amazon tulkot
+  wwctsOnTarget: ' Pierakstīšanās tulkojums iespējots uz %i.'
+  wwcConfigCacheDisabled: Tulkotāja kešatmiņa ir at
+  wwcConfigConversationWatsonURLInput: Pašreizējais URL ir %i. Lūdzu, ievadiet pakalpojuma
+    URL Watson vai ierakstiet 0, lai atgrieztos.
+  wwcOnJoinTranslationNotificationSourceLang: ' Jūsu tērzēšana tiek tulkota no %i
+    uz %o.'
+  wwcBookDone: ' Grāmata tulkota veiksmīgi.'
+  wwctsOnSender: ' Iespējots paraksta tulkojums. Ar peles labo pogu noklikšķiniet
+    uz zīmes, lai to tulkotu!'
+  watsonColorCodeWarning: ' Izmantojot krāsu kodus, jūs varat sniegt neparedzamus
+    rezultātus.'
+  wwctGUITranslationButton: Sākt tulkošanu
+  wwctGUIAutoDetectButton: Automātiski noteikt avota valodu
+  wwcUpdaterUpToDate: WorldwideChat ir atjaunināta!
+  wwcConfigConversationAmazonTranslateRegionInput: Pašreizējais reģions ir %i. Lūdzu,
+    ievadiet reģionu Amazon vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationWatsonFail: ' Neizdevās iespējot IBM Watson.'
+  wwcNoConsole: ' Šo komandu var palaist tikai spēlētājs.'
+  wwcConfigConversationAmazonTranslateSuccess: ' Veiksmīgi iespējots Amazon Translate.'
+  wwcConfigConversationAmazonTranslateFail: ' Neizdevās iespējot Amazon Translate.'
+  wwcInitializationFail: Neizdevās inicializēt WorldwideChat.
+  wwcrSuccess: ' Veiksmīgi pārlādēts WorldwideChat.'
+  wwcPlayerNotFound: ' Spēlētājs %es neesmu atrasts.'
+  wwcUpdaterOutOfDateChat: ' WorldwideChat ir novecojis. Lūdzu, atjauniniet līdz jaunākajai
+    versijai.'
+  wwcConfigConversationRateLimitSuccess: ' Likmju ierobežojums veiksmīgi iestatīts.'
+  wwcConfigConversationWatsonURLSuccess: ' Watson URL iestatīts veiksmīgi.'
+  wwctbPlayerNotFound: ' Spēlētājs %i vai nu nav atrasts, vai nav aktīvs tulkotājs.'
+  wwcConfigConversationTranslationCacheSuccess: ' Tulkošanas kešatmiņas ierobežojums
+    veiksmīgi'
+  wwctInvalidArgs: ' Nederīgi argumenti sniegti!'
+  wwcConfigGUIPrefixButton: Mainīt spraudņa prefiksu
+  wwctSameLangError: ' Jūs nevarat tulkot tajā pašā valodā!'
+  wwctGUINewTranslationTarget: Izvēlēties mērķa valodu
+  wwctLangToLangStartOtherPlayer: ' Tagad tulkojot tērzēšanu %o no %i uz %e.'
+  wwcConfigGUIAmazonTranslateSettings: Amazon tulkot konfigurācija
+  wwcConfigConnectionSuccess: Veiksmīgi savienots ar %o!
+  wwcConfigGUIGoogleTranslateButton: Google tulkot
+  wwcsIsActiveTranslator: ' Ir aktīvs tulkotājs: %i'
+  wwctLangToLangStart: ' Tagad tulkojot visu savu tērzēšanu no %i uz %o.'
+  wwcConfigConversationPrefixInput: Pašreizējais prefikss ir %i. Lūdzu ierakstiet
+    jaunu vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIPreviousPageButton: Iepriekšējā lapa
+  wwcConfigGUITranslatorCacheButton: Mainīt tulkošanas kešatmiņas
+  wwcConfigConversationbStatsSuccess: ' Veiksmīgi pārslēgti bStats.'
+  wwcSignDone: ' Paraksts tulkots veiksmīgi.'
+  wwcConfigInvalidPrefixSettings: Neizdevās izlasīt prefiksu. Noklusējuma izmantošana...
+  wwcConfigRateLimitInvalid: Slikta likme limits noteikts config.yml. Noklusējuma
+    izpilde līdz 0 sekundēm...
+  wwcConfigConversationWatsonSuccess: ' Veiksmīgi iespējots IBM Watson.'
+  wwcSignTranslateStart: ' Mērķa zīmes tulkošana...'
+  wwcConfigGUIChatSettings: tērzēšanas konfigurācija
+  wwcConfigGUIWatsonURLButton: Mainīt Watson pakalpojuma URL
+  wwctInvalidLangCode: ' Norādīts nederīgs valodas kods (-i)! Derīgi lang kodi: %o'
+  wwcConfigConversationUpdateCheckerSuccess: ' Atjaunināšanas pārbaudītāja kavēšanās
+    iestatīta veiksmīgi.'
+  wwcUnsupportedVersion: 'Jūs izmantojat neatbalstītu Bukkit, Spigot vai Paper versiju.
+    Atbalstītās versijas:'
+  wwctGUIBackToMainMenuButton: Atpakaļ uz galveno tulkojumu izvēlni
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Globālā tērzēšana tiek tulkota
+    no %i uz %o.'
+  wwcBookTranslationFail: ' Neizdevās iegūt derīgu vienas vai vairāku jūsu mērķa grāmatas
+    lappušu tulkojumu no %i.'
+  wwcConfigGUITranslatorSettings: Tulkotāja konfigurācija
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Pašreizējā API atslēga ir %i. Lūdzu
+    ievadiet API atslēgu pakalpojumam Google Translate vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationRateLimitInput: Pašreizējais globālais kursa ierobežojums uz
+    tulkojumu ir %i sekundes. Ierakstiet visu, kas lielāks par 0, lai iestatītu jaunu
+    vērtību, vai ierakstiet 0, lai atspējotu ierobežojumu. Ierakstiet kaut ko mazāk
+    par 0, lai atgrieztos.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Google Translate API atslēgas
+    kopa veiksmīgi.'
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Mainīt Amazon slepeno atslēgu
+  wwcVersion: ' WorldwideChat, versija'
+  wwcsName: ' Spēlētāja vārds: %i'
+  wwcInvalidTranslator: Nederīgi tulkotāja iestatījumi. Lūdzu, salabojiet to savā
+    config.yml vai ar /wwcc, lai izmantotu šo spraudni.
+  wwcsAttemptedTranslations: ' Tulkojumu mēģinājums: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon slepeno atslēgu komplekts
+    veiksmīgi.'
+  wwcConfigConversationWatsonAPIKeySuccess: ' Watson API atslēgu komplekts veiksmīgi.'
+  wwctGUIMainMenu: Tulkošanas izvēlne
+  wwctsNotATranslator: ' Jūs neesat aktīvs tulkotājs! Pārliecinieties, ka esat iestatījis
+    šo ar /wwct.'
+  wwcRateLimit: ' Jūsu tulkojumi ir ierobežoti. Lūdzu, uzgaidiet citu %i sekundes.'
+  wwcConfigCacheEnabled: Tulkotāja kešatmiņa ir iespējota un iestatīta uz robežu %i.
+  wwctGUIExistingTranslationButton: Pārrakstīt pašreizējo tulkošanas sesiju
+  wwcOnJoinTranslationNotificationNoSourceLang: ' Jūsu tērzēšana tiek tulkota uz %o.'
+  wwcConfigGUIGoogleTranslateStatusButton: Pārslēgt Google tulkojumu
+  wwcConfigGUIWatsonStatusButton: Pārslēgt Watson
+  wwcUserDataReloaded: Ielādēti visi saglabātie lietotāja dati.
+  wwcConfigGUISendTranslationChatButton: Nosūtīt tērzēšanas atgādinājumu aktīvajam
+    tulkotājam pēc pieteikšanās
+  wwcsLastTranslationTime: ' Pēdējais (veiksmīgais) tulkošanas laiks: %i'
+  wwctbNotATranslator: ' Jūs neesat aktīvs tulkotājs! Pārliecinieties, ka esat iestatījis
+    šo ar /wwct.'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Pašreizējā piekļuves atslēga
+    ir %i. Lūdzu, ievadiet Amazon piekļuves atslēgu vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Amazon piekļuves atslēgu
+    komplekts veiksmīgi.'
+  wwcConfigBadUpdateDelay: Nederīgs atjauninātāja kavēšanās iestatīts config.yml.
+    Noklusējuma izpilde līdz 86400 sekundēm...

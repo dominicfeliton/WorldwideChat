@@ -1,0 +1,207 @@
+Messages:
+  wwcgAutoTranslateStart: ' Теперь перевод глобального чата на %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Глобальный чат переводится
+    на %o.'
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Изменение ключа доступа Amazon
+  wwcrFail: ' Не удалось перезагрузить WorldWidechat.'
+  wwcConfigGUIUpdateCheckerButton: Задержка проверки изменений на наличие обновлений
+  wwcSignTranslationFail: ' Не удается получить допустимый перевод целевого знака
+    из %i.'
+  wwcConfigConversationGoogleTranslateFail: ' Не удалось включить Google Translate.'
+  wwcUpdaterFailedGeneric: Не удается проверить наличие обновлений WorldwideChat.
+  wwcConfigConversationUpdateCheckerInput: Текущая задержка в средстве проверки обновлений
+    составляет %i секунд. Введите что-либо больше 10, чтобы установить новое значение,
+    или что-нибудь меньше 10, чтобы вернуться назад.
+  wwctGUIMainMenuGlobal: Глобальное меню перевода
+  wwcConfigGUIWatsonButton: Уотсон Перевести
+  wwcConfigConversationPluginUpdateChatSuccess: ' Напоминание чата обновления плагина
+    успешно переключено.'
+  wwctbOnTarget: ' Перевод книг включен для %i.'
+  wwcsNotATranslator: ' Пока нет доступных записей для %i.'
+  wwcConfigGUIbStatsButton: Переключить bStats
+  wwctGUINewTranslationSource: Выберите исходный язык
+  wwcConfigConnectionFailed: Не удалось подключиться к %o. Убедитесь, что учетные
+    данные и брандмауэр настроены правильно!
+  wwcConfigEnabledbStats: Включены bStats.
+  wwctGUIMainMenuPlayer: Меню перевода %i
+  wwctGUIBookButton: Переключить перевод книг
+  wwcLangDetected: Обнаружен язык %o.
+  wwcBookTranslateStart: ' Перевод целевой книги...'
+  wwcConfigDisabledbStats: Отключен bStats.
+  wwctsOffSender: ' Перевод подписи отключен.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Глобальный чат переводится,
+    но ваш чат переводится с %i на %o.'
+  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate успешно включен.'
+  wwcUpdaterParserFailed: Не удалось разобрать данные обновления из Github.
+  wwctAutoTranslateStart: ' Теперь переводите весь ваш чат на %o.'
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Текущий секретный ключ- %i.
+    Введите секретный ключ для Amazon или введите 0, чтобы вернуться.
+  wwctbOffSender: ' Перевод книг отключен.'
+  wwcConfigGUIAmazonTranslateButton: Amazon Перевести
+  wwcConfigConversationLangSuccess: ' Язык плагина успешно изменен.'
+  wwcsSuccessfulTranslations: ' Успешные переводы: %i'
+  wwctTranslationStoppedOtherPlayer: ' Перевод чата для %i остановлен.'
+  wwcConfigConversationTranslationCacheInput: 'Текущее ограничение кэша переводов:
+    %i фраз. Введите значение больше 0, чтобы установить новое значение, или введите
+    0, чтобы отключить кэш переводов. Введите что-нибудь меньше 0, чтобы вернуться.'
+  wwctbOffTarget: ' Перевод книги отключен для %i.'
+  wwcConfigGUIGeneralSettings: Общая конфигурация
+  wwcInvalidLang: Недопустимый язык в файле config.yml. По умолчанию en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: ' Регион Amazon успешно установлен.'
+  wwcConfigRateLimitEnabled: Глобальный лимит скорости включен и установлен на %i
+    секунд.
+  wwcBadPerms: ' У вас нет необходимых разрешений для выполнения этой команды!'
+  wwcConfigGUILangButton: Изменить язык плагина
+  wwctGUISignButton: Переключить перевод знака
+  wwcUpdaterOutOfDate: WorldWidechat устарел. Обновите до последней версии %i.
+  wwcConfigGUIChangesNotSaved: ' Изменения могут не вступить в силу до тех пор, пока
+    вы не запустите /wwcr или не нажмете на красный барьер в /wwcc.'
+  wwcConfigGUINextPageButton: Следующая страница
+  wwctbTranslatePageFail: (Не удалось перевести эту страницу) %i
+  wwcConfigInvalidTranslatorSettings: Недопустимые настройки переводчика! Пожалуйста,
+    включите только один переводчик в вашем config.yml.
+  wwcConfigGUIQuitButton: Выход и сохранение изменений
+  wwctPlayerNotFound: ' Игрок %Я не найден.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Глобальный чат переводится,
+    но ваш чат переводится на %o.'
+  wwcConfigGUIGoogleTranslateSettings: Конфигурация Google Translate
+  wwcConfigGUIGlobalRateLimit: Изменить глобальный лимит ставок
+  wwctGUIBackToSourceLanguageButton: Вернуться в меню «Исходный язык»
+  wwcConfigGUIAmazonTranslateRegionButton: Изменить регион Amazon
+  wwcConfigConversationLangInput: 'Текущий язык плагина %i. Введите допустимый код
+    языка или введите 0 для отмены. Допустимые коды языков: %o'
+  wwcConfigConversationLangInvalid: ' Недопустимый код языка!'
+  wwctTranslationStopped: ' Ваш перевод чата остановлен.'
+  wwcConfigGUIWatsonSettings: Конфигурация Watson
+  wwctsPlayerNotFound: ' Игрок %i либо не найден, либо не является активным переводчиком.'
+  wwcConfigGUIWatsonAPIKeyButton: Изменение ключа API Watson
+  wwcEnabled: 'Включена версия WorldWidechat: %i.'
+  wwcgLangToLangStart: ' Теперь перевод глобального чата из %i на %o.'
+  wwctbOnSender: ' Перевод книг включен. Щелкните правой кнопкой мыши, удерживая книгу,
+    чтобы перевести ее!'
+  wwcListenersInitialized: Инициализированные слушатели.
+  wwcUserDataCorrupted: Обнаружены и перемещены %i поврежденные или старые файлы пользовательских
+    данных. Они будут удалены при следующей перезагрузке.
+  wwcConfigGUIPluginUpdateChatButton: Отправка напоминания чата для обновлений плагинов
+  wwcConfigConversationSendTranslationChatSuccess: ' Напоминание чата активного переводчика
+    успешно переключено.'
+  wwctsOffTarget: ' Перевод подписи отключен для %i.'
+  wwcUpdaterConnectionFailed: Не удается проверить наличие последних обновлений на
+    Github.
+  watsonNotFoundExceptionNotification: ' Не удается перевести ваши входные данные
+    дальше.'
+  wwcConfigConversationWatsonAPIKeyInput: 'Текущий ключ API: %i. Введите ключ API
+    для Watson или введите 0, чтобы вернуться.'
+  wwctGUIStopButton: Остановить перевод
+  wwcgTranslationStopped: ' Перевод глобального чата остановлен.'
+  wwctAutoTranslateStartOtherPlayer: ' Теперь переводим чат %i на %o.'
+  wwcUpdaterFutureDate: Этот экземпляр WorldWidechat имеет более высокую версию, чем
+    последняя публичная.
+  wwcConfigConversationPrefixSuccess: ' Префикс успешно изменен.'
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Изменение ключа API Google Translate
+  wwcSignDeletedOrTooLong: ' Целевой знак был либо удален, либо перевод был слишком
+    длинным. Перевод:'
+  wwcConfigGUIAmazonTranslateStatusButton: Переключить перевод Amazon
+  wwctsOnTarget: ' Перевод подписей включен для %i.'
+  wwcConfigCacheDisabled: Кэш переводчика отключен.
+  wwcConfigConversationWatsonURLInput: Текущий URL-адрес %i. Введите URL-адрес службы
+    для Watson или введите 0, чтобы вернуться назад.
+  wwcOnJoinTranslationNotificationSourceLang: ' Ваш чат переводится с %i на %o.'
+  wwcBookDone: ' Книга успешно переведена.'
+  wwctsOnSender: ' Перевод подписей включен. Щелкните правой кнопкой мыши на знаке,
+    чтобы перевести его!'
+  watsonColorCodeWarning: ' Использование цветовых кодов может дать вам непредсказуемые
+    результаты.'
+  wwctGUITranslationButton: Начать перевод
+  wwctGUIAutoDetectButton: Автоматическое определение исходного языка
+  wwcUpdaterUpToDate: WorldWidechat в актуальном состоянии!
+  wwcConfigConversationAmazonTranslateRegionInput: Текущий регион %i. Введите регион
+    для Amazon или введите 0, чтобы вернуться назад.
+  wwcConfigConversationWatsonFail: ' Не удалось включить IBM Watson.'
+  wwcNoConsole: ' Эта команда может быть запущена только игроком.'
+  wwcConfigConversationAmazonTranslateSuccess: ' Amazon Translate успешно включен.'
+  wwcConfigConversationAmazonTranslateFail: ' Не удалось включить Amazon Translate.'
+  wwcInitializationFail: Не удалось инициализировать WorldWidechat.
+  wwcrSuccess: ' Успешно перезагружен WorldWidechat.'
+  wwcPlayerNotFound: ' Игрок %Я не найден.'
+  wwcUpdaterOutOfDateChat: ' WorldWidechat устарел. Пожалуйста, обновите до последней
+    версии.'
+  wwcConfigConversationRateLimitSuccess: ' Ограничение скорости успешно установлено.'
+  wwcConfigConversationWatsonURLSuccess: ' URL-адрес Watson успешно установлен.'
+  wwctbPlayerNotFound: ' Игрок %i либо не найден, либо не является активным переводчиком.'
+  wwcConfigConversationTranslationCacheSuccess: ' Ограничение кэша перевода успешно
+    установлено.'
+  wwctInvalidArgs: ' Указаны недопустимые аргументы!'
+  wwcConfigGUIPrefixButton: Изменить префикс плагина
+  wwctSameLangError: ' Вы не можете перевести на один и тот же язык!'
+  wwctGUINewTranslationTarget: Выберите целевой язык
+  wwctLangToLangStartOtherPlayer: ' Теперь переводим чат %o из %i на %e.'
+  wwcConfigGUIAmazonTranslateSettings: Конфигурация перевода Amazon
+  wwcConfigConnectionSuccess: Успешно подключено к %o!
+  wwcConfigGUIGoogleTranslateButton: Google Перевести
+  wwcsIsActiveTranslator: ' Активный переводчик: %i'
+  wwctLangToLangStart: ' Теперь переводите весь ваш чат из %i на %o.'
+  wwcConfigConversationPrefixInput: 'Текущий префикс: %i. Введите новый или введите
+    0, чтобы вернуться.'
+  wwcConfigGUIPreviousPageButton: Предыдущая страница
+  wwcConfigGUITranslatorCacheButton: Изменить ограничение кэша перевода
+  wwcConfigConversationbStatsSuccess: ' bStats успешно переключен.'
+  wwcSignDone: ' Подписать успешно переведен.'
+  wwcConfigInvalidPrefixSettings: Не удалось прочитать префикс. Использование значения
+    по умолчанию...
+  wwcConfigRateLimitInvalid: Неверный предел скорости, установленный в config.yml.
+    По умолчанию 0 секунд...
+  wwcConfigConversationWatsonSuccess: ' IBM Watson успешно включен.'
+  wwcSignTranslateStart: ' Перевод целевого знака...'
+  wwcConfigGUIChatSettings: Конфигурация чата
+  wwcConfigGUIWatsonURLButton: Изменить URL-адрес службы Watson
+  wwctInvalidLangCode: ' Предоставлен недопустимый код (ы) языка! Допустимые коды
+    lang: %o'
+  wwcConfigConversationUpdateCheckerSuccess: ' Задержка проверки обновления успешно
+    установлена.'
+  wwcUnsupportedVersion: 'Вы используете неподдерживаемую версию Bukkit, Spigot или
+    Paper. Поддерживаемые версии:'
+  wwctGUIBackToMainMenuButton: Вернуться к главному меню перевода
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Глобальный чат переводится с
+    %i на %o.'
+  wwcBookTranslationFail: ' Не удается получить допустимый перевод одной или нескольких
+    страниц целевой книги из %i.'
+  wwcConfigGUITranslatorSettings: Конфигурация переводчика
+  wwcConfigConversationGoogleTranslateAPIKeyInput: 'Текущий ключ API: %i. Введите
+    ключ API для Google Translate или введите 0, чтобы вернуться.'
+  wwcConfigConversationRateLimitInput: Текущее глобальное ограничение скорости на
+    преобразование составляет %i секунд. Введите значение больше 0, чтобы установить
+    новое значение, или введите 0, чтобы отключить ограничение. Введите что-нибудь
+    меньше 0, чтобы вернуться.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Ключ API Google Translate успешно
+    установлен.'
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Изменение секретного ключа Amazon
+  wwcVersion: ' WorldWidechat, версия'
+  wwcsName: ' Имя игрока: %i'
+  wwcInvalidTranslator: Недопустимые настройки переводчика. Исправьте это в файле
+    config.yml или с помощью /wwcc, чтобы использовать этот плагин.
+  wwcsAttemptedTranslations: ' Попытка перевода: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Секретный ключ Amazon успешно
+    установлен.'
+  wwcConfigConversationWatsonAPIKeySuccess: ' Ключ API Watson успешно установлен.'
+  wwctGUIMainMenu: Ваше меню перевода
+  wwctsNotATranslator: ' Вы не активный переводчик! Убедитесь, что вы установили это
+    с помощью /wwct.'
+  wwcRateLimit: ' Ваши переводы ограничены по тарифу. Подождите другое %i секунд.'
+  wwcConfigCacheEnabled: Кэш транслятора включен и установлен предел %i.
+  wwctGUIExistingTranslationButton: Перезаписать текущий сеанс перевода
+  wwcOnJoinTranslationNotificationNoSourceLang: ' Ваш чат переводится на %o.'
+  wwcConfigGUIGoogleTranslateStatusButton: Переключить Google Translate
+  wwcConfigGUIWatsonStatusButton: Переключить Ватсон
+  wwcUserDataReloaded: Загружены все сохраненные пользовательские данные.
+  wwcConfigGUISendTranslationChatButton: Отправить напоминание о чате активному переводчику
+    при входе
+  wwcsLastTranslationTime: ' Время последнего (успешного) перевода: %i'
+  wwctbNotATranslator: ' Вы не активный переводчик! Убедитесь, что вы установили это
+    с помощью /wwct.'
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Текущий ключ доступо %i. Введите
+    ключ доступа для Amazon или введите 0, чтобы вернуться.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Ключ доступа Amazon успешно
+    установлен.'
+  wwcConfigBadUpdateDelay: Недопустимая задержка обновления установлена в config.yml.
+    По умолчанию 86400 секунд...
