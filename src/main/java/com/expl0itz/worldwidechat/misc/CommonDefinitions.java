@@ -45,7 +45,12 @@ public class CommonDefinitions {
     
     private String[] supportedPluginLangCodes = {
         "en",
-        "es"
+        "es",
+        "fr",
+        "de",
+        "it",
+        "zh",
+        "fi"
     };
 
     /* Getters */

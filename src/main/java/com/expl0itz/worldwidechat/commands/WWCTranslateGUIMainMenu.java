@@ -154,7 +154,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 							getTranslateMainMenu(targetPlayerUUID).open(player);
 						}));
 			}
-		} else if (main.getActiveTranslator(player.getUniqueId().toString()) != null) { /* Current player is active translator */
+		} else if (targetPlayerUUID == null && main.getActiveTranslator(player.getUniqueId().toString()) != null) { /* Current player is active translator */
 			ActiveTranslator currTranslator = main.getActiveTranslator(player.getUniqueId().toString());
 			
 			/* Make compass enchanted */

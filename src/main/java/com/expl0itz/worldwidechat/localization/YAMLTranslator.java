@@ -52,22 +52,33 @@ public class YAMLTranslator {
 		HashMap<String, String> untranslated = new HashMap<String, String>();
 		YamlConfiguration messagesConfig = YamlConfiguration.loadConfiguration(new File(originalYAML));
 		YamlConfiguration newConfig = YamlConfiguration.loadConfiguration(new File(outputYAML));
+		
 		try { 
-			for (String eaKey : messagesConfig.getConfigurationSection("Messages").getKeys(true)) {
-				untranslated.put(eaKey, messagesConfig.getString("Messages." + eaKey));
+			//Don't translate existing values
+			if (new File(outputYAML).exists()) {
+				System.out.println("Found existing file at output YAML path. \nParsing...");
+				for (String eaKey : messagesConfig.getConfigurationSection("Messages").getKeys(true)) {
+					if (!newConfig.contains("Messages." + eaKey)) {
+						untranslated.put(eaKey, messagesConfig.getString("Messages." + eaKey));
+					}
+				}
+			} else {
+				/* Create new config */
+				System.out.println("Creating new YAML...");
+				newConfig.createSection("Messages");
+				try {
+					newConfig.save(new File(outputYAML));
+				} catch (IOException e1) {
+					e1.printStackTrace();
+					System.exit(0);
+				}
+				for (String eaKey : messagesConfig.getConfigurationSection("Messages").getKeys(true)) {
+					untranslated.put(eaKey, messagesConfig.getString("Messages." + eaKey));
+				}
 			}
 		} catch (Exception e) { // TODO Auto-generated catch block
 			e.printStackTrace();
 	        System.exit(0);
-		}
-		
-		/* Create new config */
-		newConfig.createSection("Messages");
-		try {
-			newConfig.save(new File(outputYAML));
-		} catch (IOException e1) {
-			e1.printStackTrace();
-			System.exit(0);
 		}
 
 		/* Initialize AWS Creds + Translation Object */
@@ -94,24 +105,38 @@ public class YAMLTranslator {
 		    	translatedLine += result.getTranslatedText();
 			}
 			
+			//Replace BStats with bStats
+			translatedLine = translatedLine.replaceAll("(?i)BStats", "bStats");
+			
 			//Replace WorldWideChat with WorldwideChat
 			translatedLine = translatedLine.replaceAll("WorldWideChat", "WorldwideChat");
 			
-			//Replace any capital vars with lowercase ones
+			//Replace any weird vars
 			translatedLine = translatedLine.replaceAll("%I", "%i");
 			translatedLine = translatedLine.replaceAll("%O", "%o");
 			translatedLine = translatedLine.replaceAll("%E", "%e");
+			translatedLine = translatedLine.replaceAll("(?i)% o", "%o");
+			translatedLine = translatedLine.replaceAll("(?i)% e", "%e");
+			translatedLine = translatedLine.replaceAll("(?i)% i", "%i");
 			
 			//Add a space before every %, escape all apostrophes
 			ArrayList<Character> sortChars = new ArrayList<Character>(translatedLine.chars().mapToObj(c -> (char) c).collect(Collectors.toList()));
-			for (int j = 0; j < sortChars.size(); j++) {
-				if ((sortChars.get(j) == '%') && j-1 > -1 && sortChars.get(j-1) != ' ') {
+			for (int j = sortChars.size() - 1; j >= 0; j--) {
+				//% check; no space before %
+				if ((sortChars.get(j) == '%') && j-1 > -1 && !(Character.isSpaceChar(sortChars.get(j-1)) || Character.isWhitespace(sortChars.get(j-1)))) {
 					sortChars.add(j, ' ');
-					j++;
+					j--;
 				}
-				if (sortChars.get(j) == '\'' && j < translatedLine.length() - 2 && j > translatedLine.indexOf("'")) {
+				
+				//Apostrophe check
+				if (sortChars.get(j) == '\'') {
 					sortChars.add(j, '\\');
-					j++;
+					j--;
+				}
+				//Punctuation check
+				if ((sortChars.get(j) == '!' || sortChars.get(j) == '.' || sortChars.get(j) == '?' || sortChars.get(j) == ':') && (sortChars.get(j-1) == ' ' || sortChars.get(j-1) == ' ')) {
+					sortChars.remove(j-1);
+					j--;
 				}
 			}
 			
@@ -134,7 +159,7 @@ public class YAMLTranslator {
 		}
 		
 		//Done!
-		System.out.println("Wrote translation to " + outputYAML + " successfully! \nExiting...");
+		System.out.println("Wrote translation(s) to " + outputYAML + " successfully! \nExiting...");
 		scanner.close();
 	}
 	

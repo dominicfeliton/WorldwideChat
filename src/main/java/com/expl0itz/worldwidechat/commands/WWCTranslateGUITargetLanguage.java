@@ -61,7 +61,7 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 						EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
 						currentLangMeta.addEnchant(glow, 1, true);
 					}
-				} else if (main.getActiveTranslator(player.getUniqueId().toString()) != null) { //If this player is an active translator
+				} else if (targetPlayerUUID == null && main.getActiveTranslator(player.getUniqueId().toString()) != null) { //If this player is an active translator
 					if ((main.getActiveTranslator(player.getUniqueId().toString()).getOutLangCode().equals(main.getSupportedWatsonLanguages().get(i).getLangCode()))) {
 						EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
 						currentLangMeta.addEnchant(glow, 1, true);
@@ -115,12 +115,12 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 				ArrayList<String> lore = new ArrayList<>();
 				/* Add Glow Effect */
 				if (targetPlayerUUID != null && main.getActiveTranslator(targetPlayerUUID) != null) { //If target player is active translator
-					if ((main.getActiveTranslator(targetPlayerUUID).getInLangCode().equals(main.getSupportedGoogleTranslateLanguages().get(i).getLangCode()))) {
+					if ((main.getActiveTranslator(targetPlayerUUID).getOutLangCode().equals(main.getSupportedGoogleTranslateLanguages().get(i).getLangCode()))) {
 						EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
 						currentLangMeta.addEnchant(glow, 1, true);
 					}
-				} else if (main.getActiveTranslator(player.getUniqueId().toString()) != null) { //If this player is an active translator
-					if ((main.getActiveTranslator(player.getUniqueId().toString()).getInLangCode().equals(main.getSupportedGoogleTranslateLanguages().get(i).getLangCode()))) {
+				} else if (targetPlayerUUID == null && main.getActiveTranslator(player.getUniqueId().toString()) != null) { //If this player is an active translator
+					if ((main.getActiveTranslator(player.getUniqueId().toString()).getOutLangCode().equals(main.getSupportedGoogleTranslateLanguages().get(i).getLangCode()))) {
 						EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
 						currentLangMeta.addEnchant(glow, 1, true);
 					}
@@ -171,12 +171,12 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 				ArrayList<String> lore = new ArrayList<>();
 				/* Add Glow Effect */
 				if (targetPlayerUUID != null && main.getActiveTranslator(targetPlayerUUID) != null) { //If target player is active translator
-					if ((main.getActiveTranslator(targetPlayerUUID).getInLangCode().equals(main.getSupportedAmazonTranslateLanguages().get(i).getLangCode()))) {
+					if ((main.getActiveTranslator(targetPlayerUUID).getOutLangCode().equals(main.getSupportedAmazonTranslateLanguages().get(i).getLangCode()))) {
 						EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
 						currentLangMeta.addEnchant(glow, 1, true);
 					}
-				} else if (main.getActiveTranslator(player.getUniqueId().toString()) != null) { //If this player is an active translator
-					if ((main.getActiveTranslator(player.getUniqueId().toString()).getInLangCode().equals(main.getSupportedAmazonTranslateLanguages().get(i).getLangCode()))) {
+				} else if (targetPlayerUUID == null && main.getActiveTranslator(player.getUniqueId().toString()) != null) { //If this player is an active translator
+					if ((main.getActiveTranslator(player.getUniqueId().toString()).getOutLangCode().equals(main.getSupportedAmazonTranslateLanguages().get(i).getLangCode()))) {
 						EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
 						currentLangMeta.addEnchant(glow, 1, true);
 					}
