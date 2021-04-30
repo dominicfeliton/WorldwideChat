@@ -55,12 +55,14 @@ public class WatsonTranslation {
         final JsonArray dataJson = jsonObject.getAsJsonArray("languages");
         ArrayList < WatsonSupportedLanguageObject > outList = new ArrayList < WatsonSupportedLanguageObject >();
         for (JsonElement element : dataJson) {
-            outList.add(new WatsonSupportedLanguageObject(
-                ((JsonObject) element).get("language").getAsString(),
-                ((JsonObject) element).get("language_name").getAsString(),
-                ((JsonObject) element).get("native_language_name").getAsString(),
-                ((JsonObject) element).get("supported_as_source").getAsBoolean(),
-                ((JsonObject) element).get("supported_as_target").getAsBoolean()));
+        	if (((JsonObject) element).get("supported_as_source").getAsBoolean() && ((JsonObject) element).get("supported_as_target").getAsBoolean()) {
+        		outList.add(new WatsonSupportedLanguageObject(
+                        ((JsonObject) element).get("language").getAsString(),
+                        ((JsonObject) element).get("language_name").getAsString(),
+                        ((JsonObject) element).get("native_language_name").getAsString(),
+                        ((JsonObject) element).get("supported_as_source").getAsBoolean(),
+                        ((JsonObject) element).get("supported_as_target").getAsBoolean()));
+        	}
         }
         /* Set supported watson languages */
         main.setSupportedWatsonLanguages(outList);
