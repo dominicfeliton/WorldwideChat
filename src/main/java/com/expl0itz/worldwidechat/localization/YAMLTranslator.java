@@ -138,8 +138,10 @@ public class YAMLTranslator {
 					//Replace BStats with bStats
 					translatedLine = translatedLine.replaceAll("(?i)BStats", "bStats");
 					
-					//Replace WorldWideChat with WorldwideChat
+					//Fix WorldwideChat Typos
 					translatedLine = translatedLine.replaceAll("(?i)WorldWideChat", "WorldwideChat");
+					translatedLine = translatedLine.replaceAll("(?i)WorldVideChat", "WorldwideChat");
+					translatedLine = translatedLine.replaceAll("(?i)WorldwideCat", "WorldwideChat");
 					
 					//Replace any weird vars
 					translatedLine = translatedLine.replaceAll("%I", "%i");

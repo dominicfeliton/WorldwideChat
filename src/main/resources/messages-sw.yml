@@ -3,12 +3,12 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Soga ya kimataifa inatafsiriwa
     kwa %o.'
   wwcConfigGUIAmazonTranslateAccessKeyButton: Badilisha ufunguo wa Amazon
-  wwcrFail: ' Imeshindwa kurejesha WorldWideCat.'
+  wwcrFail: ' Imeshindwa kurejesha WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Badilisha Angalia kwa Sasisho Kuchelewa
   wwcSignTranslationFail: ' Haiwezi kupata tafsiri halali ya ishara yako ya lengo
     kutoka %i.'
   wwcConfigConversationGoogleTranslateFail: ' Imeshindwa kuwezesha Tafsiri ya Google.'
-  wwcUpdaterFailedGeneric: Haiwezi kuangalia sasisho za WorldWideCat.
+  wwcUpdaterFailedGeneric: Haiwezi kuangalia sasisho za WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Ucheleweshaji wa sasa kwenye checker ya
     sasisho ni %i seconds. Andika kitu chochote zaidi ya 10 ili kuweka thamani mpya,
     au kitu chochote chini ya 10 kurudi nyuma.
@@ -53,7 +53,7 @@ Messages:
   wwcBadPerms: ' Huna ruhusa zinazohitajika kutekeleza amri hii!'
   wwcConfigGUILangButton: Badilisha lugha ya Plugin
   wwctGUISignButton: Badilisha Tafsiri ya Ishara
-  wwcUpdaterOutOfDate: WorldWideCat ni nje ya tarehe. Tafadhali sasisha toleo jipya,
+  wwcUpdaterOutOfDate: WorldwideChat ni nje ya tarehe. Tafadhali sasisha toleo jipya,
     %i.
   wwcConfigGUIChangesNotSaved: ' Mabadiliko yako hayawezi kuchukua athari mpaka uendeshe
     /wwcr, au bonyeza kizuizi nyekundu katika/wwcc.'
@@ -76,7 +76,7 @@ Messages:
   wwcConfigGUIWatsonSettings: Usanidi wa Watson
   wwctsPlayerNotFound: ' Mchezaji %i haipatikani, au si translator hai.'
   wwcConfigGUIWatsonAPIKeyButton: Badilisha ufunguo wa API wa Watson
-  wwcEnabled: Imewezeshwa toleo la WorldWideCat %i.
+  wwcEnabled: Imewezeshwa toleo la WorldwideChat %i.
   wwcgLangToLangStart: ' Sasa kutafsiri mazungumzo ya kimataifa kutoka %i hadi %o.'
   wwctbOnSender: ' Tafsiri ya kitabu imewezeshwa. Bonyeza-click wakati ameshika kitabu
     cha kutafsiri!'
@@ -94,7 +94,7 @@ Messages:
   wwctGUIStopButton: Acha kutafsiri
   wwcgTranslationStopped: ' Tafsiri ya mazungumzo ya kimataifa imesimamishwa.'
   wwctAutoTranslateStartOtherPlayer: ' Sasa kutafsiri soga ya %i kwa %o.'
-  wwcUpdaterFutureDate: Mfano huu wa WorldWideCat una toleo kubwa zaidi kuliko moja
+  wwcUpdaterFutureDate: Mfano huu wa WorldwideChat una toleo kubwa zaidi kuliko moja
     ya hivi karibuni ya umma.
   wwcConfigConversationPrefixSuccess: ' Kiambishi awali kilibadilika kwa mafanikio.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: Badilisha Google Tafsiri ufunguo wa API
@@ -112,17 +112,17 @@ Messages:
   watsonColorCodeWarning: ' Kutumia codes rangi inaweza kukupa matokeo haitabiriki.'
   wwctGUITranslationButton: Anza Kutafsiri
   wwctGUIAutoDetectButton: Kuchunguza kiotomatiki lugha
-  wwcUpdaterUpToDate: WorldWideCat ni hadi sasa!
+  wwcUpdaterUpToDate: WorldwideChat ni hadi sasa!
   wwcConfigConversationAmazonTranslateRegionInput: Eneo la sasa ni %i. Tafadhali ingiza
     eneo la Amazon, au funga 0 kurudi nyuma.
   wwcConfigConversationWatsonFail: ' Imeshindwa kuwawezesha IBM Watson.'
   wwcNoConsole: ' Amri hii inaweza tu kukimbia na mchezaji.'
   wwcConfigConversationAmazonTranslateSuccess: ' Imewezeshwa kwa ufanisi Amazon'
   wwcConfigConversationAmazonTranslateFail: ' Imeshindwa kuwezesha Amazon Tafsiri.'
-  wwcInitializationFail: Imeshindwa kuanzisha WorldWideCat.
-  wwcrSuccess: ' Mafanikio ya kupakia WorldWideCat.'
+  wwcInitializationFail: Imeshindwa kuanzisha WorldwideChat.
+  wwcrSuccess: ' Mafanikio ya kupakia WorldwideChat.'
   wwcPlayerNotFound: ' Mchezaji %sijaipata.'
-  wwcUpdaterOutOfDateChat: ' WorldWideCat ni nje ya tarehe. Tafadhali sasisha toleo
+  wwcUpdaterOutOfDateChat: ' WorldwideChat ni nje ya tarehe. Tafadhali sasisha toleo
     la karibuni.'
   wwcConfigConversationRateLimitSuccess: ' Kiwango cha kikomo kuweka mafanikio.'
   wwcConfigConversationWatsonURLSuccess: ' Watson URL imewekwa kwa mafanikio.'
@@ -171,7 +171,7 @@ Messages:
   wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Google Tafsiri API muhimu kuweka
     mafanikio.'
   wwcConfigGUIAmazonTranslateSecretKeyButton: mabadiliko ya siri Amazon
-  wwcVersion: ' WorldWideCat, toleo'
+  wwcVersion: ' WorldwideChat, toleo'
   wwcsName: ' Jina la Mchezaji: %i'
   wwcInvalidTranslator: Mipangilio ya msanii batili. Tafadhali tengeneza hii katika
     config.yml yako au na/wwcc kutumia Plugin hii.
