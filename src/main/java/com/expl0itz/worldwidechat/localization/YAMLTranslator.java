@@ -57,6 +57,7 @@ public class YAMLTranslator {
 			}
 		} catch (IOException e2) {
 			e2.printStackTrace();
+			System.exit(0);
 		}
 		String[] supportedLangs = new String[temp.size()];
 		for (int i = 0; i < temp.size(); i++) {
@@ -159,7 +160,6 @@ public class YAMLTranslator {
 							sortChars.add(j, ' ');
 							j--;
 						}
-						
 						//Apostrophe check
 						if (sortChars.get(j) == '\'') {
 							sortChars.add(j, '\\');
