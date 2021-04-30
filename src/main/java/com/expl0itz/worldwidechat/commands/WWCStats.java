@@ -25,7 +25,7 @@ public class WWCStats extends BasicCommand{
     public boolean processCommand() {
         /* Init vars */
         Audience adventureSender = main.adventure().sender(sender);
-        String isActiveTranslator = ChatColor.RED + "\u2717";
+        String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
         
         /* Sanitze args */
         if (args.length == 0 || args.length > 1) {
@@ -45,7 +45,7 @@ public class WWCStats extends BasicCommand{
                 //Is on record; continue
                 PlayerRecord record = main.getPlayerRecord(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(), false);
                 if (main.getActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString()) != null) { //is currently active
-                    isActiveTranslator = ChatColor.GREEN + "\u2713";
+                    isActiveTranslator =  ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713" ;
                 }
                 final TextComponent stats = Component.text()
                         .append(main.getPluginPrefix().asComponent())
