@@ -139,7 +139,7 @@ public class YAMLTranslator {
 					translatedLine = translatedLine.replaceAll("(?i)BStats", "bStats");
 					
 					//Replace WorldWideChat with WorldwideChat
-					translatedLine = translatedLine.replaceAll("WorldWideChat", "WorldwideChat");
+					translatedLine = translatedLine.replaceAll("(?i)WorldWideChat", "WorldwideChat");
 					
 					//Replace any weird vars
 					translatedLine = translatedLine.replaceAll("%I", "%i");
@@ -164,7 +164,7 @@ public class YAMLTranslator {
 							j--;
 						}
 						//Punctuation check
-						if ((sortChars.get(j) == '!' || sortChars.get(j) == '.' || sortChars.get(j) == '?' || sortChars.get(j) == ':') && j-1 > -1 && (sortChars.get(j-1) == ' ' || sortChars.get(j-1) == ' ')) {
+						if ((sortChars.get(j) == '!' || sortChars.get(j) == '.' || sortChars.get(j) == '?' || sortChars.get(j) == ':') && j-1 > -1 && (Character.isSpaceChar(sortChars.get(j-1)) || Character.isWhitespace(sortChars.get(j-1)))) {
 							sortChars.remove(j-1);
 							j--;
 						}

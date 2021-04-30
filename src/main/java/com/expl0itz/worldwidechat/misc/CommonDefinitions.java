@@ -113,7 +113,6 @@ public class CommonDefinitions {
         "uz",
         "vi",
         "cy"
-        
     };
 
     /* Getters */
