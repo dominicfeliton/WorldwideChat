@@ -197,3 +197,12 @@ Messages:
     seatud edukalt.'
   wwcConfigBadUpdateDelay: Kehtetu ajakohastaja viivitus seatud config.yml. Defaulting
     kuni 86400 sekundit...
+  wwcrlRateLimitOffSender: ' Lülitab oma määrapiirangu välja.'
+  wwcrlRateLimitAlreadyOffTarget: ' Määrapiir %i on juba keelatud.'
+  wwcrlPlayerNotFound: ' Mängija %Ma kas ei leitud, või ei ole aktiivne tõlkija.'
+  wwcrlRateLimitSetSender: ' Määrake oma määra piirmäärangu %i sekundiks.'
+  wwcrlRateLimitOffTarget: ' Lülitatud %i määra piirmäära välja lülitatud.'
+  wwcrlRateLimitSetTarget: ' Määrake kiiruspiirangu %i kuni %o sekundit.'
+  wwcrlNotATranslator: ' Sa ei ole aktiivne tõlkija! Veenduge, et olete seadnud selle
+    /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Hinnapiirang on juba keelatud.'

@@ -205,3 +205,12 @@ Messages:
     установлен.'
   wwcConfigBadUpdateDelay: Недопустимая задержка обновления установлена в config.yml.
     По умолчанию 86400 секунд...
+  wwcrlRateLimitOffSender: ' Отключен лимит тарифа.'
+  wwcrlRateLimitAlreadyOffTarget: ' Ограничение тарив %i уже отключено.'
+  wwcrlPlayerNotFound: ' Игрок %i либо не найден, либо не является активным переводчиком.'
+  wwcrlRateLimitSetSender: ' Установите ограничение скорости на %i секунд.'
+  wwcrlRateLimitOffTarget: ' Отключен лимит тарифа %i.'
+  wwcrlRateLimitSetTarget: ' Установите ограничение скорости в %i до %o секунд.'
+  wwcrlNotATranslator: ' Вы не активный переводчик! Убедитесь, что вы установили это
+    с помощью /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Ваш лимит тарифов уже отключен.'

@@ -211,3 +211,13 @@ Messages:
     cu succes.'
   wwcConfigBadUpdateDelay: Invalid update întârziere setată în config.yml. Inimplicită
     la 86400 de secunde...
+  wwcrlRateLimitOffSender: ' Dezactivat limita tarifului.'
+  wwcrlRateLimitAlreadyOffTarget: ' Limita de tarifă %i este deja dezactivată.'
+  wwcrlPlayerNotFound: ' Jucătorul %i fie nu este găsit, fie nu este un traducător
+    activ.'
+  wwcrlRateLimitSetSender: ' Setați limita ratei la %i secunde.'
+  wwcrlRateLimitOffTarget: ' Dezactivat limita ratei de %i.'
+  wwcrlRateLimitSetTarget: ' Setați limita de rată de %i la %o secunde.'
+  wwcrlNotATranslator: ' Nu eşti un traducător activ! Asigurați-vă că ați setat acest
+    lucru cu /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Limita tarifului dvs. este deja dezactivată.'

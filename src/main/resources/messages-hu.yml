@@ -212,3 +212,11 @@ Messages:
     beállítása sikeresen megtörtént.'
   wwcConfigBadUpdateDelay: 'Érvénytelen frissítő késleltetés beállítása config.yml.
     Alapértelmezés: 86400 másodperc...'
+  wwcrlRateLimitOffSender: ' Kikapcsolta a díjkorlát.'
+  wwcrlRateLimitAlreadyOffTarget: ' A (z) %i sebességkorlát már le van tiltva.'
+  wwcrlPlayerNotFound: ' A (z) %i játékos nem található, vagy nem aktív fordító.'
+  wwcrlRateLimitSetSender: ' Állítsa be a sebességkorlátot a %i másodpercre.'
+  wwcrlRateLimitOffTarget: ' Kikapcsolta a (z) %i sebességhatárt.'
+  wwcrlRateLimitSetTarget: ' Állítsa be a (z) %i értékhatárt a %o másodpercre.'
+  wwcrlNotATranslator: ' Ön nem aktív fordító! Győződjön meg róla, hogy ezt a /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' A díjkorlát már le van tiltva.'

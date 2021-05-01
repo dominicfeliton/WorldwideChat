@@ -45,7 +45,7 @@ commands:
     wwcs:
         description: Gets translation stats for a specified user.
         aliases: [wwctranslatestats, translatestats]
-        usage: §4/wwcs <playerName>
+        usage: §4/wwcs (playerName)
         permission: worldwidechat.wwcs
         permission-message: §4You do not have permission to run this command.
     wwcc:
@@ -53,6 +53,12 @@ commands:
         aliases: [wwcconfiguration, translateconfiguration]
         usage: §4/wwcc
         permission: worldwidechat.wwcc
+        permission-message: §4You do not have permission to run this command.
+    wwcrl:
+        description: Sets a rate limit for the specified user.
+        aliases: [wwcratelimit, translateratelimit]
+        usage: §4/wwcrl (delay) or /wwcrl (playerName) (delay)
+        permission: worldwidechat.wwcrl
         permission-message: §4You do not have permission to run this command.
 permissions:
     worldwidechat.*:
@@ -71,6 +77,7 @@ permissions:
             worldwidechat.wwcs: true
             worldwidechat.ratelimit.exempt: true
             worldwidechat.wwcc: true
+            worldwidechat.wwcrl: true
         default: op
     worldwidechat.wwc:
         description: Gives access to /wwc.
@@ -111,4 +118,6 @@ permissions:
     worldwidechat.wwcc:
         description: Gives access to /wwcc.
         default: op
-    
+    worldwidechat.wwcrl:
+        description: Gives access to /wwcrl.
+        default: op

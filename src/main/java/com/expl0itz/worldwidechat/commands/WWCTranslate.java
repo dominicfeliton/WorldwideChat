@@ -55,7 +55,8 @@ public class WWCTranslate extends BasicCommand {
         /* Existing translator checks */
         Audience adventureSender = main.adventure().sender(sender);
         ActiveTranslator currTarget = main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
-        if (!isGlobal && currTarget instanceof ActiveTranslator) { //Don't let a person be multiple ActiveTranslator objs
+        Player testPlayer = Bukkit.getServer().getPlayer(args[0]);
+        if (testPlayer == null && !isGlobal && currTarget instanceof ActiveTranslator) { //Don't let a person be multiple ActiveTranslator objs
             main.removeActiveTranslator(currTarget);
             final TextComponent chatTranslationStopped = Component.text()
                 .append(main.getPluginPrefix().asComponent())
@@ -102,7 +103,6 @@ public class WWCTranslate extends BasicCommand {
         }
         
         /* Check if already running on another player; Sanity Checks P2 */
-        Player testPlayer = Bukkit.getServer().getPlayer(args[0]);
         if (testPlayer != null && main.getActiveTranslator(testPlayer.getUniqueId().toString()) instanceof ActiveTranslator) {
             Audience targetSender = main.adventure().sender(testPlayer);
             main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
@@ -133,27 +133,29 @@ public class WWCTranslate extends BasicCommand {
                 //We got a valid lang code, continue and add player to ArrayList
                 if (!isGlobal) //Not global
                 {
-                    main.addActiveTranslator(new ActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
-                        "None",
-                        args[0],
-                        false));
+                	ActiveTranslator currTranslator = new ActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
+                            "None",
+                            args[0],
+                            false);
+                    main.addActiveTranslator(currTranslator);
+                    main.getConfigManager().createUserDataConfig(currTranslator);
                     final TextComponent autoTranslate = Component.text()
                         .append(main.getPluginPrefix().asComponent())
                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStart").replace("%o", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                         .build();
-                    main.getConfigManager().createUserDataConfig(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(), "None", args[0]);
                     adventureSender.sendMessage(autoTranslate);
                     return true;
                 } else { //Is global
-                    main.addActiveTranslator(new ActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
-                        "None",
-                        args[0],
-                        false));
+                	ActiveTranslator currTranslator = new ActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
+                            "None",
+                            args[0],
+                            false);
+                    main.addActiveTranslator(currTranslator);
+                    main.getConfigManager().createUserDataConfig(currTranslator);
                     final TextComponent autoTranslate = Component.text()
                         .append(main.getPluginPrefix().asComponent())
                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgAutoTranslateStart").replace("%o", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                         .build();
-                    main.getConfigManager().createUserDataConfig("GLOBAL-TRANSLATE-ENABLED", "None", args[0]);
                     for (Player eaPlayer: Bukkit.getOnlinePlayers()) {
                         main.adventure().sender(eaPlayer).sendMessage(autoTranslate);
                     }
@@ -174,29 +176,29 @@ public class WWCTranslate extends BasicCommand {
                     }
                     if (!isGlobal) //Not global
                     {
-                        //Add Player to ArrayList
-                        main.addActiveTranslator(new ActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
-                            args[0],
-                            args[1],
-                            false));
-                        //Add player's data to their own config in /data
-                        main.getConfigManager().createUserDataConfig(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(), args[0], args[1]);
+                        ActiveTranslator currTranslator = new ActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
+                                args[0],
+                                args[1],
+                                false);
+                        main.addActiveTranslator(currTranslator);
+                        main.getConfigManager().createUserDataConfig(currTranslator);
                         final TextComponent langToLang = Component.text()
                             .append(main.getPluginPrefix().asComponent())
                             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctLangToLangStart").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
                             .build();
                         adventureSender.sendMessage(langToLang);
                     } else {
-                        main.addActiveTranslator(new ActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
-                            args[0],
-                            args[1],
-                            false));
+                    	ActiveTranslator currTranslator = new ActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
+                                args[0],
+                                args[1],
+                                false);
+                        main.addActiveTranslator(currTranslator);
+                        main.getConfigManager().createUserDataConfig(currTranslator);
                         final TextComponent langToLang = Component.text()
                             .append(main.getPluginPrefix().asComponent())
                             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgLangToLangStart").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
                             .build();
                         //Add global data to its own config in /data
-                        main.getConfigManager().createUserDataConfig("GLOBAL-TRANSLATE-ENABLED", args[0], args[1]);
                         for (Player eaPlayer: Bukkit.getOnlinePlayers()) {
                             Audience eaAudience = main.adventure().sender(eaPlayer);
                             eaAudience.sendMessage(langToLang);
@@ -207,12 +209,12 @@ public class WWCTranslate extends BasicCommand {
             } else if (Bukkit.getServer().getPlayer(args[0]) != null && (!(args[0].equals(sender.getName())))) { /* First arg is another player who is not ourselves...*/
                 if (sender.hasPermission("worldwidechat.wwct.otherplayers")) {
                     if (defs.isSupportedLangForTarget(args[1], main.getTranslatorName())) {
-                    //Add target player to ArrayList
-                    main.addActiveTranslator(new ActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
-                        "None",
-                        args[1],
-                        false));
-                    main.getConfigManager().createUserDataConfig(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(), "None", args[1]);
+                    ActiveTranslator currTranslator = new ActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
+                            "None",
+                            args[1],
+                            false);
+                    main.addActiveTranslator(currTranslator);
+                    main.getConfigManager().createUserDataConfig(currTranslator);
                     final TextComponent autoTranslateOtherPlayer = Component.text()
                         .append(main.getPluginPrefix().asComponent())
                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStartOtherPlayer").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
@@ -251,12 +253,12 @@ public class WWCTranslate extends BasicCommand {
                                 return false;
                             }
                              //Add target user to ArrayList with input + output lang
-                             main.addActiveTranslator(new ActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
-                                 args[1],
-                                 args[2],
-                                 false));
-                             //Add target user to config
-                             main.getConfigManager().createUserDataConfig(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(), args[1], args[2]);
+                            ActiveTranslator currTranslator = new ActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(),
+                                    args[1],
+                                    args[2],
+                                    false);
+                             main.addActiveTranslator(currTranslator);
+                             main.getConfigManager().createUserDataConfig(currTranslator);
                              final TextComponent langToLangOtherPlayer = Component.text()
                                  .append(main.getPluginPrefix().asComponent())
                                  .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctLangToLangStartOtherPlayer").replace("%o", args[0]).replace("%i", args[1]).replace("%e", args[2])).color(NamedTextColor.LIGHT_PURPLE))

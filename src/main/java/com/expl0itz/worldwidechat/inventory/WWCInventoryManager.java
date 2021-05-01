@@ -9,6 +9,5 @@ public class WWCInventoryManager extends InventoryManager {
 	public WWCInventoryManager(JavaPlugin plugin) {
 		super(plugin);
 	}
-
 	
 }

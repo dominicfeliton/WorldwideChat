@@ -206,3 +206,13 @@ Messages:
     framgångsrikt.'
   wwcConfigBadUpdateDelay: Ogiltig uppdateringsfördröjning inställd i config.yml.
     Defaulerar till 86400 sekunder...
+  wwcrlRateLimitOffSender: ' Stängde av din prisgräns.'
+  wwcrlRateLimitAlreadyOffTarget: ' Hastighetsbegränsning %i är redan inaktiverad.'
+  wwcrlPlayerNotFound: ' Spelaren %i hittas antingen inte, eller är inte en aktiv
+    översättare.'
+  wwcrlRateLimitSetSender: ' Ställ in din hastighetsgräns till %i sekunder.'
+  wwcrlRateLimitOffTarget: ' Inaktiverade hastighetsbegränsning %i.'
+  wwcrlRateLimitSetTarget: ' Ställ in hastighetsbegränsning %i till %o sekunder.'
+  wwcrlNotATranslator: ' Du är inte en aktiv översättare! Se till att du har ställt
+    in detta med /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Din prisgräns är redan inaktiverad.'

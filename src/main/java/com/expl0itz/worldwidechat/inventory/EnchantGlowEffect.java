@@ -50,5 +50,4 @@ public class EnchantGlowEffect extends Enchantment {
 	public boolean isCursed() {
 		return false;
 	}
-
-	}
+}

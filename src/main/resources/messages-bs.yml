@@ -202,3 +202,12 @@ Messages:
     postavljen.'
   wwcConfigBadUpdateDelay: Nevažeće kašnjenje updatera postavljeno u config.yml. Defaulting
     na 86400 sekundi...
+  wwcrlRateLimitOffSender: ' Isključio ograničenje stope.'
+  wwcrlRateLimitAlreadyOffTarget: ' Ograničenje stope od %i je već onemogućeno.'
+  wwcrlPlayerNotFound: ' Player %i nije pronađen ili nije aktivan prevoditelj.'
+  wwcrlRateLimitSetSender: ' Postavite ograničenje brzine na %i sekundi.'
+  wwcrlRateLimitOffTarget: ' Isključio ograničenje stope od %i.'
+  wwcrlRateLimitSetTarget: ' Postavite ograničenje brzine od %i na %o sekundi.'
+  wwcrlNotATranslator: ' Niste aktivni prevoditelj! Provjerite jeste li to postavili
+    s /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Ograničenje stope već je onemogućeno.'

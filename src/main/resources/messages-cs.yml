@@ -202,3 +202,12 @@ Messages:
     klíč Amazon.'
   wwcConfigBadUpdateDelay: Neplatné zpoždění aktualizačního programu nastaveno v config.yml.
     Výchozí hodnota 86400 sekund...
+  wwcrlRateLimitOffSender: ' Vypnul jste limit sazeb.'
+  wwcrlRateLimitAlreadyOffTarget: ' Limit sazby %i je již zakázán.'
+  wwcrlPlayerNotFound: ' Hráč %i není buď nalezen, nebo není aktivní překladatel.'
+  wwcrlRateLimitSetSender: ' Nastavte limit rychlosti na %i sekund.'
+  wwcrlRateLimitOffTarget: ' Vypnuto omezení sazby %i.'
+  wwcrlRateLimitSetTarget: ' Nastavte limit sazby %i na %o sekund.'
+  wwcrlNotATranslator: ' Nejste aktivní překladatel! Ujistěte se, že jste to nastavili
+    pomocí /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Váš limit sazeb je již zakázán.'

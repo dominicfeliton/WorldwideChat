@@ -183,3 +183,11 @@ Messages:
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ' מפתח גישה אמזון מוגדר בהצלחה.'
   wwcConfigBadUpdateDelay: השהיה לא חוקי של עדכון מוגדר ב- config.yml. ברירת מחדל
     ל-86400 שניות...
+  wwcrlRateLimitOffSender: ' כיבית את מגבלת התעריף.'
+  wwcrlRateLimitAlreadyOffTarget: ' מגבלת התעריף של %i כבר מושבתת.'
+  wwcrlPlayerNotFound: ' השחקן %i הוא גם לא נמצא, או אינו מתרגם פעיל.'
+  wwcrlRateLimitSetSender: ' הגדר את מגבלת התעריף %i שניות.'
+  wwcrlRateLimitOffTarget: ' ביטל את מגבלת התעריף של %i.'
+  wwcrlRateLimitSetTarget: ' הגדר את מגבלת התעריף של %i אל %o שניות.'
+  wwcrlNotATranslator: ' אתה לא מתרגם פעיל! ודא שהגדרת את זה עם /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' מגבלת התעריף שלך כבר מושבתת.'

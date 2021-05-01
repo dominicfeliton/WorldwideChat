@@ -209,3 +209,12 @@ Messages:
     собата успешно.'
   wwcConfigBadUpdateDelay: Невалидно доцнување на ажурирачот поставено во config.yml.
     Стандардно да 86400 секунди...
+  wwcrlRateLimitOffSender: ' Исклучен вашиот лимит стапка.'
+  wwcrlRateLimitAlreadyOffTarget: ' Ограничувањето на стапката на %i е веќе оневозможено.'
+  wwcrlPlayerNotFound: ' Играч %i или не е пронајден, или не е активен преведувач.'
+  wwcrlRateLimitSetSender: ' Поставете го лимитот на стапката на %i секунди.'
+  wwcrlRateLimitOffTarget: ' Исклучи го ограничувањето на стапката на %i.'
+  wwcrlRateLimitSetTarget: ' Поставете го ограничувањето на стапката од %i до %o секунди.'
+  wwcrlNotATranslator: ' Вие не сте активен преведувач! Бидете сигурни дека сте го
+    поставиле ова со/wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Вашиот лимит на стапка е веќе оневозможен.'

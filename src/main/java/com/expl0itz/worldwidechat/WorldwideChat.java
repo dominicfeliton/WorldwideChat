@@ -18,6 +18,7 @@ import org.bukkit.scheduler.BukkitTask;
 import com.expl0itz.worldwidechat.amazontranslate.AmazonTranslateSupportedLanguageObject;
 import com.expl0itz.worldwidechat.commands.WWCConfiguration;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
+import com.expl0itz.worldwidechat.commands.WWCRateLimit;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCStats;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
@@ -240,6 +241,12 @@ public class WorldwideChat extends JavaPlugin {
         	if (checkSenderIdentity(sender)) {
         		WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
         		return wwcc.processCommand();
+        	}
+        } else if (command.getName().equalsIgnoreCase("wwcrl")) {
+        	//Rate Limit Command
+        	if (checkSenderIdentity(sender)) {
+        		WWCRateLimit wwcrl = new WWCRateLimit(sender, command, label, args);
+        		return wwcrl.processCommand();
         	}
         }
         return true;
@@ -486,7 +493,7 @@ public class WorldwideChat extends JavaPlugin {
         {
             for (PlayerRecord eaRecord: playerRecords) {
                 //If the player is both in the ArrayList and has a file
-                if (eaRecord.getUUID().toString().equals(UUID) && getConfigManager().getStatsFile(UUID) != null) 
+                if (eaRecord.getUUID().toString().equals(UUID)) 
                 {
                     return eaRecord;
                 }
@@ -506,7 +513,7 @@ public class WorldwideChat extends JavaPlugin {
             //Old record removed; create + add new one
             PlayerRecord newRecord = new PlayerRecord("--------", UUID, 0, 0);
             addPlayerRecord(newRecord);
-            getConfigManager().createStatsConfig("--------", UUID, 0, 0);
+            getConfigManager().createStatsConfig(newRecord);
             return newRecord;
         }
         return null;

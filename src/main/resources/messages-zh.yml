@@ -163,3 +163,11 @@ Messages:
     0 返回。
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ' 亚马逊访问密钥设置成功。'
   wwcConfigBadUpdateDelay: config.yml 中设置的更新程序延迟无效。默认为 86400 秒...
+  wwcrlRateLimitOffSender: ' 关闭了你的费率限制。'
+  wwcrlRateLimitAlreadyOffTarget: ' %i 的速率限制已被禁用。'
+  wwcrlPlayerNotFound: ' 玩家 %i 要么找不到，要么不是活跃的翻译者。'
+  wwcrlRateLimitSetSender: ' 将您的费率限制设置为 %i 秒。'
+  wwcrlRateLimitOffTarget: ' 关闭了 %i 的速率限制。'
+  wwcrlRateLimitSetTarget: ' 将 %i 的速率限制设置为 %o 秒。'
+  wwcrlNotATranslator: ' 你不是活跃的翻译人员！确保你已经使用 /wwct对此进行了设置。'
+  wwcrlRateLimitAlreadyOffSender: ' 您的费率限制已被禁用。'

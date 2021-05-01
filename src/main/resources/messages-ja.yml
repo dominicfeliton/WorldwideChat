@@ -166,3 +166,11 @@ Messages:
     を入力して戻ってください。
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Amazon アクセスキーが正常に設定されました。'
   wwcConfigBadUpdateDelay: config.yml に設定されているアップデータ遅延が無効です。デフォルトは86400秒です...
+  wwcrlRateLimitOffSender: ' レート制限をオフにしました。'
+  wwcrlRateLimitAlreadyOffTarget: ' %i のレート制限は既に無効になっています。'
+  wwcrlPlayerNotFound: ' Player %i が見つからないか、アクティブなトランスレータではありません。'
+  wwcrlRateLimitSetSender: ' レート制限を %i 秒に設定します。'
+  wwcrlRateLimitOffTarget: ' %i のレート制限をオフにしました。'
+  wwcrlRateLimitSetTarget: ' %i のレート制限を %o 秒に設定します。'
+  wwcrlNotATranslator: ' あなたはアクティブな翻訳者ではありません！/wwctでこれを設定していることを確認してください。'
+  wwcrlRateLimitAlreadyOffSender: ' レート制限は既に無効になっています。'

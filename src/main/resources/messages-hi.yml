@@ -203,3 +203,12 @@ Messages:
     सेट।'
   wwcConfigBadUpdateDelay: config.yml में अमान्य अद्यतनकर्ता विलंब सेट। 86400 सेकेंड
     से डिफॉल्ट कर रहा है...
+  wwcrlRateLimitOffSender: ' अपनी दर सीमा बंद कर दिया।'
+  wwcrlRateLimitAlreadyOffTarget: ' %i की दर सीमा पहले से ही अक्षम है।'
+  wwcrlPlayerNotFound: ' खिलाड़ी %i या तो नहीं मिला है, या सक्रिय अनुवादक नहीं है।'
+  wwcrlRateLimitSetSender: ' अपनी दर सीमा से %i सेकेंड पर सेट करें।'
+  wwcrlRateLimitOffTarget: ' %i की दर सीमा को बंद कर दिया।'
+  wwcrlRateLimitSetTarget: ' %i की दर सीमा से %o सेकेंड सेट करें।'
+  wwcrlNotATranslator: ' आप एक सक्रिय अनुवादक नहीं हैं! सुनिश्चित करें कि आपने इसे/wwct
+    के साथ सेट किया है।'
+  wwcrlRateLimitAlreadyOffSender: ' आपकी दर सीमा पहले से ही अक्षम है।'

@@ -11,7 +11,9 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.amazontranslate.AmazonTranslation;
 import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
+import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
+import com.expl0itz.worldwidechat.misc.PlayerRecord;
 import com.expl0itz.worldwidechat.watson.WatsonTranslation;
 
 public class ConfigurationHandler {
@@ -151,67 +153,63 @@ public class ConfigurationHandler {
     }
  
     /* Per User Settings Saver */
-    public void createUserDataConfig(String uuid, String inLang, String outLang) {
+    public void createUserDataConfig(ActiveTranslator inTranslator) {
         File userSettingsFile;
         FileConfiguration userSettingsConfig;
-        userSettingsFile = new File(main.getDataFolder() + File.separator + "data" + File.separator, uuid + ".yml");
+        userSettingsFile = new File(main.getDataFolder() + File.separator + "data" + File.separator, inTranslator.getUUID() + ".yml");
 
         /* Load config */
         userSettingsConfig = YamlConfiguration.loadConfiguration(userSettingsFile);
         
-        //If file has never been made:
-        if (!userSettingsFile.exists()) {
-            try {
-                userSettingsConfig.createSection("inLang");
-                userSettingsConfig.set("inLang", inLang);
-                
-                userSettingsConfig.createSection("outLang");
-                userSettingsConfig.set("outLang", outLang);
-                
-                userSettingsConfig.createSection("bookTranslation");
-                userSettingsConfig.set("bookTranslation", false);
-                
-                userSettingsConfig.createSection("signTranslation");
-                userSettingsConfig.set("signTranslation", false);
-               
-                userSettingsConfig.createSection("rateLimitPreviousRecordedTime");
-                userSettingsConfig.set("rateLimitPreviousRecordedTime", "None");
-                
-                userSettingsConfig.save(userSettingsFile);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        /* Set data */
+        try {
+            userSettingsConfig.createSection("inLang");
+            userSettingsConfig.set("inLang", inTranslator.getInLangCode());
+            
+            userSettingsConfig.createSection("outLang");
+            userSettingsConfig.set("outLang", inTranslator.getOutLangCode());
+            
+            userSettingsConfig.createSection("bookTranslation");
+            userSettingsConfig.set("bookTranslation", inTranslator.getTranslatingBook());
+            
+            userSettingsConfig.createSection("signTranslation");
+            userSettingsConfig.set("signTranslation", inTranslator.getTranslatingBook());
+           
+            userSettingsConfig.createSection("rateLimit");
+            userSettingsConfig.set("rateLimit", inTranslator.getRateLimit());
+            
+            userSettingsConfig.createSection("rateLimitPreviousRecordedTime");
+            userSettingsConfig.set("rateLimitPreviousRecordedTime", inTranslator.getRateLimitPreviousTime());
+            
+            userSettingsConfig.save(userSettingsFile);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
     
     /* Stats File Creator */
-    public void createStatsConfig(String lastTranslationTime, String playerUUID, int attemptedTranslations, int successfulTranslations) {
+    public void createStatsConfig(PlayerRecord inRecord) {
         File userStatsFile;
         FileConfiguration userStatsConfig;
-        userStatsFile = new File(main.getDataFolder() + File.separator + "stats" + File.separator, playerUUID + ".yml");
+        userStatsFile = new File(main.getDataFolder() + File.separator + "stats" + File.separator, inRecord.getUUID() + ".yml");
         
         /* Load config */
         userStatsConfig = YamlConfiguration.loadConfiguration(userStatsFile);
         
-        //If file has never been made:
-        if (!userStatsFile.exists()) {
-            try {
-                userStatsConfig.createSection("lastTranslationTime");
-                userStatsConfig.set("lastTranslationTime", lastTranslationTime);
-                
-                userStatsConfig.createSection("playerUUID");
-                userStatsConfig.set("playerUUID", playerUUID);
-                
-                userStatsConfig.createSection("attemptedTranslations");
-                userStatsConfig.set("attemptedTranslations", attemptedTranslations);
-                
-                userStatsConfig.createSection("successfulTranslations");
-                userStatsConfig.set("successfulTranslations", successfulTranslations);
-                
-                userStatsConfig.save(userStatsFile);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        /* Set data */
+        try {
+            userStatsConfig.createSection("lastTranslationTime");
+            userStatsConfig.set("lastTranslationTime", inRecord.getLastTranslationTime());
+            
+            userStatsConfig.createSection("attemptedTranslations");
+            userStatsConfig.set("attemptedTranslations", inRecord.getAttemptedTranslations());
+            
+            userStatsConfig.createSection("successfulTranslations");
+            userStatsConfig.set("successfulTranslations", inRecord.getSuccessfulTranslations());
+            
+            userStatsConfig.save(userStatsFile);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
     

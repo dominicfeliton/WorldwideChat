@@ -206,3 +206,12 @@ Messages:
     succes ingesteld.'
   wwcConfigBadUpdateDelay: Ongeldige updater-vertraging ingesteld in config.yml. Standaardstandaard
     86400 seconden...
+  wwcrlRateLimitOffSender: ' Je tarieflimiet uitgeschakeld.'
+  wwcrlRateLimitAlreadyOffTarget: ' De snelheidslimiet van %i is al uitgeschakeld.'
+  wwcrlPlayerNotFound: ' Speler %i is niet gevonden of is geen actieve vertaler.'
+  wwcrlRateLimitSetSender: ' Stel uw limiet in op %i seconden.'
+  wwcrlRateLimitOffTarget: ' De snelheidslimiet van %i is uitgeschakeld.'
+  wwcrlRateLimitSetTarget: ' Stel de snelheidslimiet van %i in op %o seconden.'
+  wwcrlNotATranslator: ' U bent geen actieve vertaler! Zorg ervoor dat je dit hebt
+    ingesteld met /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Uw tarieflimiet is al uitgeschakeld.'

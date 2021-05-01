@@ -206,3 +206,12 @@ Messages:
     onnistuneesti.'
   wwcConfigBadUpdateDelay: Virheellinen päivitysviive asetettu config.yml. Defaulting
     86400 sekuntiin...
+  wwcrlRateLimitOffSender: ' Sammutti korkorajoituksesi.'
+  wwcrlRateLimitAlreadyOffTarget: ' %i: n nopeusraja on jo poistettu käytöstä.'
+  wwcrlPlayerNotFound: ' Pelaaja %i ei joko löydy tai se ei ole aktiivinen kääntäjä.'
+  wwcrlRateLimitSetSender: ' Aseta nopeusrajasi arvoon %i sekuntia.'
+  wwcrlRateLimitOffTarget: ' Kytkettiin %i: n nopeusraja pois päältä.'
+  wwcrlRateLimitSetTarget: ' Aseta nopeusraja %i arvoon %o sekuntia.'
+  wwcrlNotATranslator: ' Et ole aktiivinen kääntäjä! Varmista, että olet asettanut
+    tämän käyttämällä /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Sinun hintaraja on jo poistettu käytöstä.'

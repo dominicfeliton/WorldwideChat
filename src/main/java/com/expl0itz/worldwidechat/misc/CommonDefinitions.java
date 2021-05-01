@@ -296,7 +296,7 @@ public class CommonDefinitions {
         PlayerRecord currPlayerRecord = WorldwideChat.getInstance().getPlayerRecord(currPlayer.getUniqueId().toString(), true);
         if (currPlayerRecord != null) { //check if null
             currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);
-            currPlayerRecord.writeToConfig();
+            WorldwideChat.getInstance().getConfigManager().createStatsConfig(currPlayerRecord);
         }
     	
     	/* Initialize current ActiveTranslator, sanity checks */
@@ -326,7 +326,7 @@ public class CommonDefinitions {
                     if (currPlayerRecord != null) {
                         currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);    
                         currPlayerRecord.setLastTranslationTime();
-                        currPlayerRecord.writeToConfig();
+                        WorldwideChat.getInstance().getConfigManager().createStatsConfig(currPlayerRecord);
                     }
                     return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase())); //done :)
                 }
@@ -338,6 +338,7 @@ public class CommonDefinitions {
         int personalRateLimit = 0;
         Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
         for (PermissionAttachmentInfo perm : perms) {
+        	//Any set permission overrides a personal ratelimit.
         	if (perm.getPermission().startsWith("worldwidechat.ratelimit.")) {
         		if (perm.getPermission().indexOf("exempt") != -1) {
         			isExempt = true;
@@ -347,9 +348,14 @@ public class CommonDefinitions {
         			if (!delayStr.isEmpty()) {
         				personalRateLimit = Integer.parseInt(delayStr);
         			}
+        			break;
         		}
         	}
-        } if (!isExempt && personalRateLimit > 0) { // Personal Limits (Override Global)
+        } 
+        //Get user's personal rate limit.
+	    personalRateLimit = WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString()).getRateLimit();
+        
+        if (!isExempt && personalRateLimit > 0) { // Personal Limits (Override Global)
         	if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
         		Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
         		Instant currTime = Instant.now();
@@ -456,7 +462,7 @@ public class CommonDefinitions {
         if (currPlayerRecord != null) {
             currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);    
             currPlayerRecord.setLastTranslationTime();
-            currPlayerRecord.writeToConfig();
+            WorldwideChat.getInstance().getConfigManager().createStatsConfig(currPlayerRecord);
         }
         
         /* Add to cache */

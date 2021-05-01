@@ -183,3 +183,12 @@ Messages:
     Amazon เรียบร้อยแล้ว'
   wwcConfigBadUpdateDelay: การหน่วงเวลาของการปรับปรุงไม่ถูกต้องที่กำหนดไว้ใน config.ymlค่าเริ่มต้นที่
     86400 วินาที...
+  wwcrlRateLimitOffSender: ' ปิดขีดจำกัดราคา'
+  wwcrlRateLimitAlreadyOffTarget: ' ขีดจำกัดอัตราของ %i ถูกปิดการใช้งานแล้ว'
+  wwcrlPlayerNotFound: ' ไม่พบผู้เล่น %i หรือไม่พบหรือไม่ใช่ตัวแปลที่ใช้งานอยู่'
+  wwcrlRateLimitSetSender: ' ตั้งค่าขีดจำกัดอัตราเป็น %i วินาที'
+  wwcrlRateLimitOffTarget: ' ปิดขีดจำกัดอัตราของ %i'
+  wwcrlRateLimitSetTarget: ' ตั้งค่าขีด จำกัด อัตราของ %i เพื่อ %o วินาที'
+  wwcrlNotATranslator: ' คุณไม่ใช่นักแปลที่ใช้งานอยู่!ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่านี้ด้วย
+    /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' วงเงินอัตราของคุณถูกปิดใช้งานแล้ว'

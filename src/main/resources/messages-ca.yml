@@ -213,3 +213,12 @@ Messages:
     conjunt amb èxit.'
   wwcConfigBadUpdateDelay: Retard d\'actualització no vàlid establert a config.yml.
     Per defecte a 86400 segons...
+  wwcrlRateLimitOffSender: ' Desactiveu el vostre límit de tarifa.'
+  wwcrlRateLimitAlreadyOffTarget: ' El límit de tarifa de %i ja està desactivat.'
+  wwcrlPlayerNotFound: ' Jugador %i o bé no es troba, o no és un traductor actiu.'
+  wwcrlRateLimitSetSender: ' Establiu el vostre límit de tarifa a %i segons.'
+  wwcrlRateLimitOffTarget: ' Desactiveu el límit de taxa de %i.'
+  wwcrlRateLimitSetTarget: ' Estableix el límit de velocitat de %i a %o segons.'
+  wwcrlNotATranslator: ' No ets un traductor actiu! Assegureu-vos que heu configurat
+    això amb /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' El seu límit de tarifa ja està desactivat.'

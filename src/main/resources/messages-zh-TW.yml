@@ -165,3 +165,11 @@ Messages:
     0 以返回。
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ' 亞馬遜訪問密鑰集成功。'
   wwcConfigBadUpdateDelay: 在 config.yml 中設定的更新程式延遲無效。預設值為八億四千四百秒...
+  wwcrlRateLimitOffSender: ' 關閉您的費率限制。'
+  wwcrlRateLimitAlreadyOffTarget: ' %i 的速率限制已停用。'
+  wwcrlPlayerNotFound: ' 玩家 %i 不是找不到，或者不是活躍的翻譯者。'
+  wwcrlRateLimitSetSender: ' 將匯率限制設定為 %i 秒。'
+  wwcrlRateLimitOffTarget: ' 關閉 %i 的速率限制。'
+  wwcrlRateLimitSetTarget: ' 將 %i 的速率限制設定為 %o 秒。'
+  wwcrlNotATranslator: ' 你不是一個積極的翻譯者！確保你已經用 /wwcti 設置了這個。'
+  wwcrlRateLimitAlreadyOffSender: ' 你的費率限制已停用。'

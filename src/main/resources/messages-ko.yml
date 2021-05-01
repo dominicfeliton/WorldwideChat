@@ -169,3 +169,11 @@ Messages:
     키를 입력하거나 0을 입력하여 돌아가십시오.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Amazon 액세스 키를 성공적으로 설정했습니다.'
   wwcConfigBadUpdateDelay: config.yml에서 잘못된 업데이트 프로그램 지연이 설정되었습니다.기본값 86400초로 설정 중...
+  wwcrlRateLimitOffSender: ' 속도 제한을 해제했습니다.'
+  wwcrlRateLimitAlreadyOffTarget: ' 비율 제한 %i이 (가) 이미 비활성화되어 있습니다.'
+  wwcrlPlayerNotFound: ' %i 플레이어를 찾을 수 없거나 활성 번역자가 아닙니다.'
+  wwcrlRateLimitSetSender: ' 속도 제한을 %i 초로 설정합니다.'
+  wwcrlRateLimitOffTarget: ' 비율 제한 %i을 (를) 해제했습니다.'
+  wwcrlRateLimitSetTarget: ' 비율 제한 %i (으) 로 %o 초로 설정합니다.'
+  wwcrlNotATranslator: ' 당신은 능동적 인 번역가가 아닙니다!/wwct로 설정했는지 확인하십시오.'
+  wwcrlRateLimitAlreadyOffSender: ' 속도 제한은 이미 비활성화되어 있습니다.'

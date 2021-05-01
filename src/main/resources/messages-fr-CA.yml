@@ -216,3 +216,13 @@ Messages:
     avec succès.'
   wwcConfigBadUpdateDelay: Délai de mise à jour non valide défini dans config.yml.
     Par défaut à 86400 secondes...
+  wwcrlRateLimitOffSender: ' Éteignez votre limite de taux.'
+  wwcrlRateLimitAlreadyOffTarget: ' La limite de taux de %i est déjà désactivée.'
+  wwcrlPlayerNotFound: ' Le joueur %i n\''est pas trouvé, ou n\''est pas un traducteur
+    actif.'
+  wwcrlRateLimitSetSender: ' Définissez votre limite de taux à %i secondes.'
+  wwcrlRateLimitOffTarget: ' Désactivez la limite de taux de %i.'
+  wwcrlRateLimitSetTarget: ' Définissez la limite de débit de %i à %o secondes.'
+  wwcrlNotATranslator: ' Vous n\''êtes pas un traducteur actif! Assurez-vous que vous
+    avez défini ce paramètre avec /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Votre limite tarifaire est déjà désactivée.'

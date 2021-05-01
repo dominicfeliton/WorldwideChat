@@ -197,3 +197,12 @@ Messages:
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ' আমাজন অ্যাক্সেস কী সেট সফলভাবে'
   wwcConfigBadUpdateDelay: config.yml এ অবৈধ আপডেটার বিলম্ব সেট। ৮৬৪০০ সেকেন্ডে ডিফল্ট
     হচ্ছে...
+  wwcrlRateLimitOffSender: ' আপনার রেট লিমিট বন্ধ করে দিয়েছে।'
+  wwcrlRateLimitAlreadyOffTarget: ' %i হার সীমা ইতোমধ্যে নিষ্ক্রিয় করা হয়েছে।'
+  wwcrlPlayerNotFound: ' প্লেয়ার %i পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।'
+  wwcrlRateLimitSetSender: ' আপনার রেট সীমিত %i সেকেন্ডে সেট করুন।'
+  wwcrlRateLimitOffTarget: ' %i হার সীমা বন্ধ করে দিয়েছে।'
+  wwcrlRateLimitSetTarget: ' %i থেকে %o সেকেন্ডের রেটের সীমা নির্ধারণ করুন।'
+  wwcrlNotATranslator: ' আপনি একজন সক্রিয় অনুবাদক নন! নিশ্চিত করুন যে আপনি এটি /wwct
+    দিয়ে সেট করেছেন।'
+  wwcrlRateLimitAlreadyOffSender: ' আপনার রেট সীমা ইতোমধ্যে নিষ্ক্রিয় করা হয়েছে।'

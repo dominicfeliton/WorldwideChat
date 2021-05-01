@@ -205,3 +205,12 @@ Messages:
     nastavljen.'
   wwcConfigBadUpdateDelay: Neveljavna zakasnitev posodabljanja nastavljena v config.yml.
     Privzetje na 86400 sekund...
+  wwcrlRateLimitOffSender: ' Izklopil omejitev stopnje.'
+  wwcrlRateLimitAlreadyOffTarget: ' Omejitev stopnje od %i je že onemogočena.'
+  wwcrlPlayerNotFound: ' Predvajalnik %i ni mogoče najti ali ni aktiven prevajalec.'
+  wwcrlRateLimitSetSender: ' Nastavite omejitev hitrosti na %i sekunde.'
+  wwcrlRateLimitOffTarget: ' Izklopil omejitev hitrosti od %i.'
+  wwcrlRateLimitSetTarget: ' Nastavite omejitev hitrosti od %i na %o sekund.'
+  wwcrlNotATranslator: ' Niste aktivni prevajalec! Prepričajte se, da ste to nastavili
+    z /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Omejitev stopnje je že onemogočena.'

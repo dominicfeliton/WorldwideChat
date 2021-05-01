@@ -204,3 +204,12 @@ Messages:
     успешно.'
   wwcConfigBadUpdateDelay: Невалидно закъснение за обновяване, зададено в config.yml.
     Провал е 86400 секунди...
+  wwcrlRateLimitOffSender: ' Изключих лимита на скоростта.'
+  wwcrlRateLimitAlreadyOffTarget: ' Ограничението на скоростта на %i вече е деактивирано.'
+  wwcrlPlayerNotFound: ' Играчът %i или не е намерен, или не е активен преводач.'
+  wwcrlRateLimitSetSender: ' Задайте лимита на скоростта на %i секунди.'
+  wwcrlRateLimitOffTarget: ' Изключено е ограничението на скоростта на %i.'
+  wwcrlRateLimitSetTarget: ' Задайте ограничението на скоростта на %i на %o секунди.'
+  wwcrlNotATranslator: ' Ти не си активен преводач! Уверете се, че сте настроили това
+    с /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Вашият лимит вече е деактивиран.'

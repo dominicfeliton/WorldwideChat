@@ -199,3 +199,12 @@ Messages:
     vellykket.'
   wwcConfigBadUpdateDelay: Ugyldig oppdateringforsinkelse satt i config.yml. Defaulting
     til 86400 sekunder...
+  wwcrlRateLimitOffSender: ' Slått av prisgrensen.'
+  wwcrlRateLimitAlreadyOffTarget: ' Satsgrensen på %i er allerede deaktivert.'
+  wwcrlPlayerNotFound: ' Spiller %i er enten ikke funnet, eller er ikke en aktiv oversetter.'
+  wwcrlRateLimitSetSender: ' Angi hastighetsgrensen til %i sekunder.'
+  wwcrlRateLimitOffTarget: ' Slått av satsgrensen på %i.'
+  wwcrlRateLimitSetTarget: ' Angi hastighetsgrensen på %i til %o sekunder.'
+  wwcrlNotATranslator: ' Du er ikke en aktiv oversetter! Sørg for, at du har angivet
+    dette med /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Din satsgrense er allerede deaktivert.'

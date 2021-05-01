@@ -221,3 +221,13 @@ Messages:
     που με επιτυχία.'
   wwcConfigBadUpdateDelay: Η μη έγκυρη καθυστέρηση του προγράμματος ενημέρωσης έχει
     οριστεί στο config.yml. Προεπιλογές σε 86400 δευτερόλεπτα...
+  wwcrlRateLimitOffSender: ' Απενεργοποίησε το όριο τιμών.'
+  wwcrlRateLimitAlreadyOffTarget: ' Το όριο ποσοστού του %i είναι ήδη απενεργοποιημένο.'
+  wwcrlPlayerNotFound: ' Ο αναπαραγωγής %i είτε δεν βρέθηκε είτε δεν είναι ενεργός
+    μεταφραστής.'
+  wwcrlRateLimitSetSender: ' Ορίστε το όριο ταχύτητας σε %i δευτερόλεπτα.'
+  wwcrlRateLimitOffTarget: ' Απενεργοποίησε το όριο ρυθμού του %i.'
+  wwcrlRateLimitSetTarget: ' Ορίστε το όριο ταχύτητας του %i σε %o δευτερόλεπτα.'
+  wwcrlNotATranslator: ' Δεν είσαι ενεργός μεταφραστής! Βεβαιωθείτε ότι έχετε ρυθμίσει
+    αυτό με /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Το όριο τιμών σας είναι ήδη απενεργοποιημένο.'

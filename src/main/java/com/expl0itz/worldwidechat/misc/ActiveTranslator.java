@@ -1,17 +1,12 @@
 package com.expl0itz.worldwidechat.misc;
 
-import java.io.File;
-import java.io.IOException;
-
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
 import org.threeten.bp.Instant;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 
 public class ActiveTranslator {
-
-    private WorldwideChat main = WorldwideChat.getInstance();
+	
+    private int rateLimit = 0;
     
     private String playerUUID = "";
     private String inLangCode = "";
@@ -22,17 +17,21 @@ public class ActiveTranslator {
     private boolean translatingBook = false;
     private boolean translatingSign = false;
 
+    private WorldwideChat main = WorldwideChat.getInstance();
+    
     public ActiveTranslator(String uuid, String langIn, String langOut, boolean hasBeenShownColorCodeWarning) {
     	playerUUID = uuid;
         inLangCode = langIn;
         outLangCode = langOut;
         this.hasBeenShownColorCodeWarning = hasBeenShownColorCodeWarning;
-        
-        /* Add player to records if they do not exist */
-        main.getPlayerRecord(uuid, true);
     }
 
     /* Setters */
+    public void setRateLimit(int i) {
+    	rateLimit = i;
+    	main.getConfigManager().createUserDataConfig(this);
+    }
+    
     public void setUUID(String i) {
         playerUUID = i;
     }
@@ -59,19 +58,14 @@ public class ActiveTranslator {
     
     public void setRateLimitPreviousTime(Instant i) {
     	rateLimitPreviousTime = i.toString();
-    	File userFile = main.getConfigManager().getUserSettingsFile(playerUUID);
-    	if (userFile != null) {
-    		FileConfiguration userConfig = YamlConfiguration.loadConfiguration(userFile);
-    		userConfig.set("rateLimitPreviousRecordedTime", i.toString());
-    		try {
-				userConfig.save(userFile);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-    	}
+    	main.getConfigManager().createUserDataConfig(this);
     }
     
     /* Getters */
+    public int getRateLimit() {
+    	return rateLimit;
+    }
+    
     public String getUUID() {
         return playerUUID;
     }

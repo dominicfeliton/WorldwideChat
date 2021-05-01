@@ -208,3 +208,12 @@ Messages:
     da Amazon com sucesso.'
   wwcConfigBadUpdateDelay: Atraso do atualizador inválido definido em config.yml.
     Padrão para 86400 segundos...
+  wwcrlRateLimitOffSender: ' Desativou seu limite de tarifa.'
+  wwcrlRateLimitAlreadyOffTarget: ' O limite de taxa de %i já está desativado.'
+  wwcrlPlayerNotFound: ' O jogador %i não foi encontrado ou não é um tradutor ativo.'
+  wwcrlRateLimitSetSender: ' Defina o limite de taxa para %i segundos.'
+  wwcrlRateLimitOffTarget: ' Desativou o limite de taxa de %i.'
+  wwcrlRateLimitSetTarget: ' Defina o limite de taxa de %i para %o segundos.'
+  wwcrlNotATranslator: ' Você não é um tradutor ativo! Certifique-se de que você definiu
+    isso com /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Seu limite de taxa já está desativado.'

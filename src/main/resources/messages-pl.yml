@@ -204,3 +204,12 @@ Messages:
     pomyślnie.'
   wwcConfigBadUpdateDelay: Nieprawidłowe opóźnienie aktualizacji ustawione w config.yml.
     Domyślnie 86400 sekund...
+  wwcrlRateLimitOffSender: ' Wyłączono limit stawki.'
+  wwcrlRateLimitAlreadyOffTarget: ' Limit szybkości z %i jest już wyłączony.'
+  wwcrlPlayerNotFound: ' Gracz %i nie został znaleziony lub nie jest aktywnym tłumaczeniem.'
+  wwcrlRateLimitSetSender: ' Ustaw limit szybkości na %i sekund.'
+  wwcrlRateLimitOffTarget: ' Wyłączono limit szybkości z %i.'
+  wwcrlRateLimitSetTarget: ' Ustaw limit szybkości na %i do %o sekund.'
+  wwcrlNotATranslator: ' Nie jesteś aktywnym tłumaczem! Upewnij się, że ustawiłeś
+    to za pomocą /wwct.'
+  wwcrlRateLimitAlreadyOffSender: ' Twój limit stawki jest już wyłączony.'
