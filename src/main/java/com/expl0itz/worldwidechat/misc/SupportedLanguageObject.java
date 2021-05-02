@@ -1,14 +1,13 @@
-package com.expl0itz.worldwidechat.watson;
+package com.expl0itz.worldwidechat.misc;
 
-public class WatsonSupportedLanguageObject {
-
-    private String langCode = "";
+public class SupportedLanguageObject {
+	private String langCode = "";
     private String langName = "";
     private String nativeLangName = "";
     boolean supportedAsSource = true;
     boolean supportedAsTarget = true;
     
-    public WatsonSupportedLanguageObject(String langCode, String langName, String nativeLangName, boolean supportedAsSource, boolean supportedAsTarget) {
+    public SupportedLanguageObject(String langCode, String langName, String nativeLangName, boolean supportedAsSource, boolean supportedAsTarget) {
         this.langCode = langCode;
         this.langName = langName;
         this.nativeLangName = nativeLangName;

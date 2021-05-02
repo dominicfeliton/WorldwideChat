@@ -15,7 +15,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
-import com.expl0itz.worldwidechat.amazontranslate.AmazonTranslateSupportedLanguageObject;
 import com.expl0itz.worldwidechat.commands.WWCConfiguration;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCRateLimit;
@@ -25,7 +24,6 @@ import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
-import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateSupportedLanguageObject;
 import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.listeners.BookReadListener;
@@ -38,9 +36,9 @@ import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CachedTranslation;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.misc.PlayerRecord;
+import com.expl0itz.worldwidechat.misc.SupportedLanguageObject;
 import com.expl0itz.worldwidechat.runnables.LoadUserData;
 import com.expl0itz.worldwidechat.runnables.UpdateChecker;
-import com.expl0itz.worldwidechat.watson.WatsonSupportedLanguageObject;
 
 import co.aikar.taskchain.BukkitTaskChainFactory;
 import co.aikar.taskchain.TaskChain;
@@ -66,9 +64,7 @@ public class WorldwideChat extends JavaPlugin {
     
     private HashMap < String, BukkitTask > backgroundTasks = new HashMap < String, BukkitTask > ();
     
-    private ArrayList < WatsonSupportedLanguageObject > supportedWatsonLanguages;
-    private ArrayList < GoogleTranslateSupportedLanguageObject > supportedGoogleTranslateLanguages;
-    private ArrayList < AmazonTranslateSupportedLanguageObject > supportedAmazonTranslateLanguages;
+    private ArrayList < SupportedLanguageObject > supportedLanguages = new ArrayList < SupportedLanguageObject > ();
     private ArrayList < ActiveTranslator > activeTranslators = new ArrayList < ActiveTranslator > ();
     private ArrayList < PlayerRecord > playerRecords = new ArrayList < PlayerRecord > ();
     private ArrayList < CachedTranslation > cache = new ArrayList < CachedTranslation > ();
@@ -426,16 +422,8 @@ public class WorldwideChat extends JavaPlugin {
         pluginPrefixString = i;
     }
 
-    public void setSupportedWatsonLanguages(ArrayList < WatsonSupportedLanguageObject > in) {
-        supportedWatsonLanguages = in;
-    }
-    
-    public void setSupportedGoogleTranslateLanguages(ArrayList < GoogleTranslateSupportedLanguageObject > in) {
-        supportedGoogleTranslateLanguages = in;
-    }
-    
-    public void setSupportedAmazonTranslateLanguages(ArrayList < AmazonTranslateSupportedLanguageObject > in) {
-    	supportedAmazonTranslateLanguages = in;
+    public void setSupportedTranslatorLanguages(ArrayList < SupportedLanguageObject > in) {
+    	supportedLanguages = in;
     }
     
     public void setUpdateCheckerDelay(int i) {
@@ -523,16 +511,8 @@ public class WorldwideChat extends JavaPlugin {
         return playerRecords;
     }
     
-    public ArrayList < WatsonSupportedLanguageObject > getSupportedWatsonLanguages() {
-        return supportedWatsonLanguages;
-    }
-    
-    public ArrayList < GoogleTranslateSupportedLanguageObject > getSupportedGoogleTranslateLanguages() {
-        return supportedGoogleTranslateLanguages;
-    }
-    
-    public ArrayList < AmazonTranslateSupportedLanguageObject > getSupportedAmazonTranslateLanguages() {
-    	return supportedAmazonTranslateLanguages;
+    public ArrayList < SupportedLanguageObject > getSupportedTranslatorLanguages() {
+    	return supportedLanguages;
     }
     
     public TextComponent getPluginPrefix() {

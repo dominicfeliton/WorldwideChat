@@ -7,6 +7,7 @@ import org.bukkit.command.CommandSender;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
+import com.expl0itz.worldwidechat.misc.SupportedLanguageObject;
 import com.google.cloud.translate.Detection;
 import com.google.cloud.translate.Language;
 import com.google.cloud.translate.Translate;
@@ -40,25 +41,28 @@ public class GoogleTranslation {
         List<Language> allLanguages = translate.listSupportedLanguages();
         
         /* Parse languages */
-        ArrayList < GoogleTranslateSupportedLanguageObject > outList = new ArrayList < GoogleTranslateSupportedLanguageObject >();
+        ArrayList < SupportedLanguageObject > outList = new ArrayList < SupportedLanguageObject >();
         for (Language eaLang : allLanguages) {
-            outList.add(new GoogleTranslateSupportedLanguageObject(
+            outList.add(new SupportedLanguageObject(
                 eaLang.getCode(),
-                eaLang.getName()));
+                eaLang.getName(),
+                "",
+                true,
+                true));
         }
         
         /* Set langList in Main */
-        main.setSupportedGoogleTranslateLanguages(outList);
+        main.setSupportedTranslatorLanguages(outList);
     }
     
     public String translate() {
         /* Convert input + output lang to lang code because this API is funky, man */
         CommonDefinitions defs = new CommonDefinitions();
-        if (!(inputLang.equals("None")) && !defs.getSupportedGoogleTranslateLang(inputLang).getLangCode().equals(inputLang)) {
-            inputLang = defs.getSupportedGoogleTranslateLang(inputLang).getLangCode();
+        if (!(inputLang.equals("None")) && !defs.getSupportedTranslatorLang(inputLang).getLangCode().equals(inputLang)) {
+            inputLang = defs.getSupportedTranslatorLang(inputLang).getLangCode();
         }
-        if (!defs.getSupportedGoogleTranslateLang(outputLang).getLangCode().equals(outputLang)) {
-            outputLang = defs.getSupportedGoogleTranslateLang(outputLang).getLangCode();
+        if (!defs.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
+            outputLang = defs.getSupportedTranslatorLang(outputLang).getLangCode();
         }
         
         /* Initialize translation object */

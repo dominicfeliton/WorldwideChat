@@ -31,6 +31,21 @@ public class WWCTranslate extends BasicCommand {
      */
 
     public boolean processCommand(boolean isGlobal) {
+    	/* Basic var initialization */
+    	Audience adventureSender = main.adventure().sender(sender);
+    	ActiveTranslator currTarget = main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
+    	
+    	/* Sanitize args */
+        if (args.length > 3) {
+            //Not enough/too many args
+            final TextComponent invalidArgs = Component.text()
+                .append(main.getPluginPrefix().asComponent())
+                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidArgs")).color(NamedTextColor.RED))
+                .build();
+            adventureSender.sendMessage(invalidArgs);
+            return false;
+        }
+    	
     	/* GUI Checks */
     	if (args.length == 0 && !isGlobal) { /* User wants to see their own translation session */
     		WWCTranslateGUIMainMenu.getTranslateMainMenu(null).open((Player)sender);
@@ -52,10 +67,9 @@ public class WWCTranslate extends BasicCommand {
     		return true;
     	}
     	
+    	Player testPlayer = Bukkit.getServer().getPlayer(args[0]);
         /* Existing translator checks */
-        Audience adventureSender = main.adventure().sender(sender);
-        ActiveTranslator currTarget = main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
-        Player testPlayer = Bukkit.getServer().getPlayer(args[0]);
+        //If sender wants to overwrite their own existing translation session
         if (testPlayer == null && !isGlobal && currTarget instanceof ActiveTranslator) { //Don't let a person be multiple ActiveTranslator objs
             main.removeActiveTranslator(currTarget);
             final TextComponent chatTranslationStopped = Component.text()
@@ -71,39 +85,8 @@ public class WWCTranslate extends BasicCommand {
             if (args[0].equalsIgnoreCase("Stop")) {
                 return true;
             }
-        } else if (isGlobal && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) //If /wwcg is called
-        {
-            main.removeActiveTranslator(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
-            final TextComponent chatTranslationStopped = Component.text()
-                .append(main.getPluginPrefix().asComponent())
-                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgTranslationStopped")).color(NamedTextColor.LIGHT_PURPLE))
-                .build();
-            //Delete global data file
-            File fileToBeDeleted = main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED");
-            if (fileToBeDeleted != null) {
-                fileToBeDeleted.delete();
-            }
-            for (Player eaPlayer: Bukkit.getOnlinePlayers()) {
-                main.adventure().sender(eaPlayer).sendMessage(chatTranslationStopped);
-            }
-            if (args[0].equalsIgnoreCase("Stop")) {
-                return true;
-            }
-        }
-
-        /* Sanitize args */
-        if (args.length > 3) {
-            //Not enough/too many args
-            final TextComponent invalidArgs = Component.text()
-                .append(main.getPluginPrefix().asComponent())
-                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidArgs")).color(NamedTextColor.RED))
-                .build();
-            adventureSender.sendMessage(invalidArgs);
-            return false;
-        }
-        
-        /* Check if already running on another player; Sanity Checks P2 */
-        if (testPlayer != null && main.getActiveTranslator(testPlayer.getUniqueId().toString()) instanceof ActiveTranslator) {
+        //If sender wants to overwrite a target player's existing translation session
+        } else if (testPlayer != null && !isGlobal && main.getActiveTranslator(testPlayer.getUniqueId().toString()) instanceof ActiveTranslator) {
             Audience targetSender = main.adventure().sender(testPlayer);
             main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
             //Delete target player's existing config file
@@ -124,15 +107,31 @@ public class WWCTranslate extends BasicCommand {
             if (args[1].equalsIgnoreCase("Stop")) {
                 return true;
             }
+        } 
+        //If sender wants to overwrite /wwcg's existing translation session
+        else if (isGlobal && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) {
+            main.removeActiveTranslator(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
+            final TextComponent chatTranslationStopped = Component.text()
+                .append(main.getPluginPrefix().asComponent())
+                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgTranslationStopped")).color(NamedTextColor.LIGHT_PURPLE))
+                .build();
+            //Delete global data file
+            File fileToBeDeleted = main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED");
+            if (fileToBeDeleted != null) {
+                fileToBeDeleted.delete();
+            } for (Player eaPlayer: Bukkit.getOnlinePlayers()) {
+                main.adventure().sender(eaPlayer).sendMessage(chatTranslationStopped);
+            } if (args[0].equalsIgnoreCase("Stop")) {
+                return true;
+            }
         }
-        
+            
         /* Process input */
         CommonDefinitions defs = new CommonDefinitions();
-        if (args[0] instanceof String && args.length == 1) {
+        if (args[0] instanceof String && args.length == 1) { //Player has given us one argument
             if (defs.isSupportedLangForTarget(args[0], main.getTranslatorName())) {
                 //We got a valid lang code, continue and add player to ArrayList
-                if (!isGlobal) //Not global
-                {
+                if (!isGlobal) {
                 	ActiveTranslator currTranslator = new ActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
                             "None",
                             args[0],
@@ -145,7 +144,7 @@ public class WWCTranslate extends BasicCommand {
                         .build();
                     adventureSender.sendMessage(autoTranslate);
                     return true;
-                } else { //Is global
+                } else {
                 	ActiveTranslator currTranslator = new ActiveTranslator("GLOBAL-TRANSLATE-ENABLED",
                             "None",
                             args[0],
@@ -162,7 +161,7 @@ public class WWCTranslate extends BasicCommand {
                     return true;
                 }
             }
-        } else if (args[0] instanceof String && args[1] instanceof String && args.length == 2) {
+        } else if (args[0] instanceof String && args[1] instanceof String && args.length == 2) { //Player has given us two arguments
             if (defs.isSupportedLangForSource(args[0], main.getTranslatorName())) {
                 if (defs.isSupportedLangForTarget(args[1], main.getTranslatorName())) {
                     //We got a valid lang code 2x, continue and add player to ArrayList
@@ -173,9 +172,7 @@ public class WWCTranslate extends BasicCommand {
                             .build();
                         adventureSender.sendMessage(sameLangError);
                         return false;
-                    }
-                    if (!isGlobal) //Not global
-                    {
+                    } if (!isGlobal) {
                         ActiveTranslator currTranslator = new ActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
                                 args[0],
                                 args[1],
@@ -237,7 +234,7 @@ public class WWCTranslate extends BasicCommand {
                     return true;
                 }
             }
-        } else if (args[0] instanceof String && args[1] instanceof String && args[2] instanceof String && args.length == 3) {
+        } else if (args[0] instanceof String && args[1] instanceof String && args[2] instanceof String && args.length == 3) { //Player has given us three arguments
             //If args[0] == a player, see if sender has perms to change player translation preferences
             if (sender.hasPermission("worldwidechat.wwct.otherplayers")) {
                 if (Bukkit.getServer().getPlayer(args[0]) != null && (!(args[0].equals(sender.getName())))) {

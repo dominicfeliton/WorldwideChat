@@ -11,11 +11,8 @@ import org.threeten.bp.temporal.ChronoUnit;
 
 import com.amazonaws.services.translate.model.InvalidRequestException;
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.amazontranslate.AmazonTranslateSupportedLanguageObject;
 import com.expl0itz.worldwidechat.amazontranslate.AmazonTranslation;
-import com.expl0itz.worldwidechat.googletranslate.GoogleTranslateSupportedLanguageObject;
 import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
-import com.expl0itz.worldwidechat.watson.WatsonSupportedLanguageObject;
 import com.expl0itz.worldwidechat.watson.WatsonTranslation;
 import com.google.cloud.translate.TranslateException;
 import com.google.common.base.CharMatcher;
@@ -117,130 +114,70 @@ public class CommonDefinitions {
 
     /* Getters */
     public boolean isSupportedLangForSource(String in, String translator) {
-        if (translator.equalsIgnoreCase("Watson")) {
-            for (WatsonSupportedLanguageObject eaLang : main.getSupportedWatsonLanguages()) {
+        if (translator.equalsIgnoreCase("Watson")) { //If we are working with Watson
+            for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
                 if ((eaLang.getLangCode().equalsIgnoreCase(in)
                     || eaLang.getLangName().equalsIgnoreCase(in)) 
                     && eaLang.getSupportedAsSource()) {
                     return true;
                 }
             }
-        } else if (translator.equalsIgnoreCase("Google Translate")) {
-            for (GoogleTranslateSupportedLanguageObject eaLang : main.getSupportedGoogleTranslateLanguages()) {
+        } else { //If we are working with any other translator
+            for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
                 if ((eaLang.getLangCode().equalsIgnoreCase(in)
                     || eaLang.getLangName().equalsIgnoreCase(in))) {
                     return true;
                 }
             }
-        } else if (translator.equalsIgnoreCase("Amazon Translate")) {
-        	for (AmazonTranslateSupportedLanguageObject eaLang : main.getSupportedAmazonTranslateLanguages()) {
-        		if ((eaLang.getLangCode().equalsIgnoreCase(in)
-        			|| eaLang.getLangName().equalsIgnoreCase(in))) {
-        			return true;
-        		}
-        	}
         }
         return false;
     }
 
     public boolean isSupportedLangForTarget(String in, String translator) {
         if (translator.equalsIgnoreCase("Watson")) {
-            for (WatsonSupportedLanguageObject eaLang : main.getSupportedWatsonLanguages()) {
+            for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
                 if ((eaLang.getLangCode().equalsIgnoreCase(in)
                     || eaLang.getLangName().equalsIgnoreCase(in)) 
                     && eaLang.getSupportedAsTarget()) {
                     return true;
                 }
             }
-        } else if (translator.equalsIgnoreCase("Google Translate")) {
-            for (GoogleTranslateSupportedLanguageObject eaLang : main.getSupportedGoogleTranslateLanguages()) {
+        } else {
+            for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
                 if ((eaLang.getLangCode().equalsIgnoreCase(in)
                     || eaLang.getLangName().equalsIgnoreCase(in))) {
                     return true;
                 }
             }
-        } else if (translator.equalsIgnoreCase("Amazon Translate")) {
-        	for (AmazonTranslateSupportedLanguageObject eaLang : main.getSupportedAmazonTranslateLanguages()) {
-        		if ((eaLang.getLangCode().equalsIgnoreCase(in)
-        			|| eaLang.getLangName().equalsIgnoreCase(in))) {
-        			return true;
-        		}
-        	}
         }
         return false;
     }
     
     public boolean isSameLang(String first, String second, String translator) {
-        if (translator.equalsIgnoreCase("Watson") ) {
-            for (WatsonSupportedLanguageObject eaLang : main.getSupportedWatsonLanguages()) {
-                if ((eaLang.getLangName().equals(getSupportedWatsonLang(first).getLangName()) 
-                    && eaLang.getLangName().equals(getSupportedWatsonLang(second).getLangName()))) {
-                    return true;
-                }
+    	for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
+            if ((eaLang.getLangName().equals(getSupportedTranslatorLang(first).getLangName()) 
+                && eaLang.getLangName().equals(getSupportedTranslatorLang(second).getLangName()))) {
+                return true;
             }
-        } else if (translator.equalsIgnoreCase("Google Translate")) {
-            for (GoogleTranslateSupportedLanguageObject eaLang : main.getSupportedGoogleTranslateLanguages()) {
-                if ((eaLang.getLangName().equals(getSupportedGoogleTranslateLang(first).getLangName()) 
-                    && eaLang.getLangName().equals(getSupportedGoogleTranslateLang(second).getLangName()))) {
-                    return true;
-                }
-            }
-        } else if (translator.equalsIgnoreCase("Amazon Translate")) {
-        	for (AmazonTranslateSupportedLanguageObject eaLang : main.getSupportedAmazonTranslateLanguages()) {
-        		if ((eaLang.getLangName().equals(getSupportedAmazonTranslateLang(first).getLangName())
-        			&& eaLang.getLangName().equals(getSupportedAmazonTranslateLang(second).getLangName()))) {
-        			return true;
-        		}
-        	}
         }
         return false;
     }
     
-    public WatsonSupportedLanguageObject getSupportedWatsonLang(String in) {
-        for (WatsonSupportedLanguageObject eaLang : main.getSupportedWatsonLanguages()) {
+    public SupportedLanguageObject getSupportedTranslatorLang(String in) {
+        for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
             if ((eaLang.getLangCode().equalsIgnoreCase(in)
                 || eaLang.getLangName().equalsIgnoreCase(in))) {
                 return eaLang;
             }
         }
         return null;
-    }
-    
-    public GoogleTranslateSupportedLanguageObject getSupportedGoogleTranslateLang(String in) {
-        for (GoogleTranslateSupportedLanguageObject eaLang : main.getSupportedGoogleTranslateLanguages()) {
-            if ((eaLang.getLangCode().equalsIgnoreCase(in)
-                || eaLang.getLangName().equalsIgnoreCase(in))) {
-                return eaLang;
-            }
-        }
-        return null;
-    }
-    
-    public AmazonTranslateSupportedLanguageObject getSupportedAmazonTranslateLang(String in) {
-    	for (AmazonTranslateSupportedLanguageObject eaLang : main.getSupportedAmazonTranslateLanguages()) {
-    		if ((eaLang.getLangCode().equalsIgnoreCase(in)
-    		    || eaLang.getLangName().equalsIgnoreCase(in))) {
-    			return eaLang;
-    		}
-    	}
-    	return null;
     }
     
     public String getValidLangCodes() {
         String out = "\n";
-        if (main.getTranslatorName().equals("Watson")) {
-            for (WatsonSupportedLanguageObject eaLang : main.getSupportedWatsonLanguages()) {
-                out += "(" + eaLang.getLangCode() + " - " + eaLang.getLangName() + "), "; 
-            }
-        } else if (main.getTranslatorName().equals("Google Translate")) {
-            for (GoogleTranslateSupportedLanguageObject eaLang : main.getSupportedGoogleTranslateLanguages()) {
-                out += "(" + eaLang.getLangCode() + " - " + eaLang.getLangName() + "), ";  
-            }
-        } else if (main.getTranslatorName().equals("Amazon Translate")) {
-        	for (AmazonTranslateSupportedLanguageObject eaLang : main.getSupportedAmazonTranslateLanguages()) {
-        		out += "(" + eaLang.getLangCode() + " - " + eaLang.getLangName() + "), ";
-        	}
-        }
+        for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
+    		out += "(" + eaLang.getLangCode() + " - " + eaLang.getLangName() + "), ";
+    	}
         if (out.indexOf(",") != -1) {
             out = out.substring(0, out.lastIndexOf(","));
         }

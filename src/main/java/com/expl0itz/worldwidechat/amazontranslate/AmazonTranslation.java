@@ -16,6 +16,7 @@ import com.amazonaws.services.translate.model.TranslateTextRequest;
 import com.amazonaws.services.translate.model.TranslateTextResult;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
+import com.expl0itz.worldwidechat.misc.SupportedLanguageObject;
 
 public class AmazonTranslation {
     private String textToTranslate = "";
@@ -53,7 +54,7 @@ public class AmazonTranslation {
     	translate.translateText(request);
     	
     	/* Get supported languages from AWS docs */
-    	ArrayList < AmazonTranslateSupportedLanguageObject > supportedLangs = new ArrayList < AmazonTranslateSupportedLanguageObject >();
+    	ArrayList < SupportedLanguageObject > supportedLangs = new ArrayList < SupportedLanguageObject >();
 		Document doc = Jsoup.connect("https://docs.aws.amazon.com/translate/latest/dg/what-is.html#what-is-languages").get();
 		Elements tr = doc.select("tr");
 		for (int i = 1; i < tr.size(); i++) {
@@ -61,22 +62,22 @@ public class AmazonTranslation {
 			if (td.size() > 0) {
 				//langCode, langName == AmazonLangObj constructor
 				//HTML page starts with langName, then langCode
-				AmazonTranslateSupportedLanguageObject newObj = new AmazonTranslateSupportedLanguageObject(td.get(1).html(),
-						td.get(0).html());
+				SupportedLanguageObject newObj = new SupportedLanguageObject(td.get(1).html(),
+						td.get(0).html(), "", true, true);
 				supportedLangs.add(newObj);
 			}
 		}
-		main.setSupportedAmazonTranslateLanguages(supportedLangs);
+		main.setSupportedTranslatorLanguages(supportedLangs);
     }
     
     public String translate() {
         /* Convert input + output lang to lang code because this API is funky, man */
         CommonDefinitions defs = new CommonDefinitions();
-        if (!(inputLang.equals("None")) && !defs.getSupportedAmazonTranslateLang(inputLang).getLangCode().equals(inputLang)) {
-            inputLang = defs.getSupportedAmazonTranslateLang(inputLang).getLangCode();
+        if (!(inputLang.equals("None")) && !defs.getSupportedTranslatorLang(inputLang).getLangCode().equals(inputLang)) {
+            inputLang = defs.getSupportedTranslatorLang(inputLang).getLangCode();
         }
-        if (!defs.getSupportedAmazonTranslateLang(outputLang).getLangCode().equals(outputLang)) {
-            outputLang = defs.getSupportedAmazonTranslateLang(outputLang).getLangCode();
+        if (!defs.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
+            outputLang = defs.getSupportedTranslatorLang(outputLang).getLangCode();
         }
         
         /* Initialize AWS Creds + Translation Object */

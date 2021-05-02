@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.bukkit.command.CommandSender;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.misc.SupportedLanguageObject;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -53,10 +54,10 @@ public class WatsonTranslation {
         
         /* Parse json */
         final JsonArray dataJson = jsonObject.getAsJsonArray("languages");
-        ArrayList < WatsonSupportedLanguageObject > outList = new ArrayList < WatsonSupportedLanguageObject >();
+        ArrayList < SupportedLanguageObject > outList = new ArrayList <SupportedLanguageObject >();
         for (JsonElement element : dataJson) {
         	if (((JsonObject) element).get("supported_as_source").getAsBoolean() && ((JsonObject) element).get("supported_as_target").getAsBoolean()) {
-        		outList.add(new WatsonSupportedLanguageObject(
+        		outList.add(new SupportedLanguageObject(
                         ((JsonObject) element).get("language").getAsString(),
                         ((JsonObject) element).get("language_name").getAsString(),
                         ((JsonObject) element).get("native_language_name").getAsString(),
@@ -65,7 +66,7 @@ public class WatsonTranslation {
         	}
         }
         /* Set supported watson languages */
-        main.setSupportedWatsonLanguages(outList);
+        main.setSupportedTranslatorLanguages(outList);
     }
     
     public String translate() {

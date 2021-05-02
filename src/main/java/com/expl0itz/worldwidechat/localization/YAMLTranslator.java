@@ -107,7 +107,7 @@ public class YAMLTranslator {
 							untranslated.put(eaKey, messagesConfig.getString("Messages." + eaKey));
 						}
 					}
-				} catch (Exception e) { // TODO Auto-generated catch block
+				} catch (Exception e) {
 					e.printStackTrace();
 			        System.exit(0);
 				}
