@@ -1,5 +1,7 @@
 package com.expl0itz.worldwidechat.conversations.wwctranslategui;
 
+import java.util.UUID;
+
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.conversations.ConversationContext;
@@ -35,26 +37,22 @@ public class RateLimitConversation extends NumericPrompt {
 	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 		if (input.intValue() > 0) { //Enable rate limit
 			//Sender
+			String[] args = {};
 			if (((Player)context.getForWhom()).getUniqueId().toString().equals(currTranslator.getUUID())) {
-				String[] args = {input.intValue() + ""};
-				WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)context.getForWhom()), null, null, args);
-				rateCommand.processCommand();
+				args = new String[]{input.intValue() + ""};
 			} else { //Target Player
-				String[] args = {Bukkit.getPlayer(currTranslator.getUUID()).getName(), input.intValue() + ""};
-				WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)Bukkit.getPlayer(currTranslator.getUUID())), null, null, args);
-				rateCommand.processCommand();
+				args = new String[]{Bukkit.getPlayer(UUID.fromString(currTranslator.getUUID())).getName(), input.intValue() + ""};
 			}
+			WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)context.getForWhom()), null, null, args);
+			rateCommand.processCommand();
 		} else { //Disable rate limit
 			//Sender
-			if (((Player)context.getForWhom()).getUniqueId().toString().equals(currTranslator.getUUID())) {
-				String[] args = {""};
-				WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)context.getForWhom()), null, null, args);
-				rateCommand.processCommand();
-			} else { //Target Player
-				String[] args = {Bukkit.getPlayer(currTranslator.getUUID()).getName()};
-				WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)Bukkit.getPlayer(currTranslator.getUUID())), null, null, args);
-				rateCommand.processCommand();
+			String[] args = {};
+			if (!((Player)context.getForWhom()).getUniqueId().toString().equals(currTranslator.getUUID())) { //Target Player
+				args = new String[]{Bukkit.getPlayer(UUID.fromString(currTranslator.getUUID())).getName()};
 			}
+			WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)context.getForWhom()), null, null, args);
+			rateCommand.processCommand();
 		}
 		if (((Player)context.getForWhom()).getUniqueId().toString().equals(currTranslator.getUUID())) {
 			WWCTranslateGUIMainMenu.getTranslateMainMenu(null).open((Player)context.getForWhom());

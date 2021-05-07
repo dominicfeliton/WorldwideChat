@@ -272,10 +272,12 @@ public class CommonDefinitions {
         
         /* Rate limit check */
         boolean isExempt = false;
+        boolean hasPermission = false;
         int personalRateLimit = 0;
         Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
         for (PermissionAttachmentInfo perm : perms) {
-        	//Any set permission overrides a personal ratelimit.
+        	//Any set permission overrides a personal rate limit.
+        	WorldwideChat.getInstance().getLogger().info(perm.getPermission());
         	if (perm.getPermission().startsWith("worldwidechat.ratelimit.")) {
         		if (perm.getPermission().indexOf("exempt") != -1) {
         			isExempt = true;
@@ -284,13 +286,16 @@ public class CommonDefinitions {
         			String delayStr = CharMatcher.inRange('0', '9').retainFrom(perm.getPermission());
         			if (!delayStr.isEmpty()) {
         				personalRateLimit = Integer.parseInt(delayStr);
+        				hasPermission = true;
         			}
         			break;
         		}
         	}
         } 
-        //Get user's personal rate limit.
-	    personalRateLimit = WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString()).getRateLimit();
+        //Get user's personal rate limit, if permission is not set.
+        if (!hasPermission) {
+        	personalRateLimit = WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString()).getRateLimit();
+        }
         
         if (!isExempt && personalRateLimit > 0) { // Personal Limits (Override Global)
         	if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {

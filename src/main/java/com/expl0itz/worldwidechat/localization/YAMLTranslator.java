@@ -88,9 +88,18 @@ public class YAMLTranslator {
 					//Don't translate existing values
 					if (new File(outputYAML).exists()) {
 						System.out.println("Found existing file at output YAML path. \nParsing...");
+						//Find new keys from original config
 						for (String eaKey : messagesConfig.getConfigurationSection("Messages").getKeys(true)) {
 							if (!newConfig.contains("Messages." + eaKey)) {
 								untranslated.put(eaKey, messagesConfig.getString("Messages." + eaKey));
+							}
+						}
+						//Find old unneeded keys from new config and delete them
+						for (String eaKey : newConfig.getConfigurationSection("Messages").getKeys(true)) {
+							if (!messagesConfig.contains("Messages." + eaKey)) {
+								newConfig.set("Messages." + eaKey, null);
+								newConfig.save(outputYAML);
+								System.out.println("Deleted old key: " + eaKey);
 							}
 						}
 					} else {
