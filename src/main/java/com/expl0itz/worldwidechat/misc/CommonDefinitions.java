@@ -277,7 +277,6 @@ public class CommonDefinitions {
         Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
         for (PermissionAttachmentInfo perm : perms) {
         	//Any set permission overrides a personal rate limit.
-        	WorldwideChat.getInstance().getLogger().info(perm.getPermission());
         	if (perm.getPermission().startsWith("worldwidechat.ratelimit.")) {
         		if (perm.getPermission().indexOf("exempt") != -1) {
         			isExempt = true;
