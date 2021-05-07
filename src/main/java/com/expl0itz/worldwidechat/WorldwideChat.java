@@ -451,10 +451,6 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     /* Getters */
-    public HashMap < String, BukkitTask > getBackgroundTasks() {
-        return backgroundTasks;
-    }
-    
     public ActiveTranslator getActiveTranslator(String uuid) {
         if (activeTranslators.size() > 0) //just return false if there are no active translators, less code to run
         {
@@ -466,14 +462,6 @@ public class WorldwideChat extends JavaPlugin {
             }
         }
         return null;
-    }
-
-    public ArrayList < ActiveTranslator > getActiveTranslators() {
-        return activeTranslators;
-    }
-
-    public ArrayList < Player > getPlayersUsingGUI() {
-    	return playersUsingConfigurationGUI;
     }
     
     public PlayerRecord getPlayerRecord(String UUID, boolean createNewIfNotExisting) {
@@ -507,8 +495,24 @@ public class WorldwideChat extends JavaPlugin {
         return null;
     }
     
+    public HashMap < String, BukkitTask > getBackgroundTasks() {
+        return backgroundTasks;
+    }
+
+    public ArrayList < ActiveTranslator > getActiveTranslators() {
+        return activeTranslators;
+    }
+
+    public ArrayList < Player > getPlayersUsingGUI() {
+    	return playersUsingConfigurationGUI;
+    }
+    
     public ArrayList < PlayerRecord > getPlayerRecords() {
         return playerRecords;
+    }
+    
+    public ArrayList <CachedTranslation> getCache() {
+        return cache;
     }
     
     public ArrayList < SupportedLanguageObject > getSupportedTranslatorLanguages() {
@@ -557,9 +561,5 @@ public class WorldwideChat extends JavaPlugin {
     
     public ConfigurationHandler getConfigManager() {
         return configurationManager;
-    }
-    
-    public ArrayList <CachedTranslation> getCache() {
-        return cache;
     }
 }
