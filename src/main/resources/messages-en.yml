@@ -144,6 +144,7 @@ Messages:
   wwctGUIAutoDetectButton: 'Auto-detect Source Language'
   wwctGUINewTranslationTarget: 'Choose a Target Language'
   wwctGUIBackToSourceLanguageButton: 'Back to Source Language Menu'
+  wwctGUIConversationRateLimit: 'The rate limit is currently %i seconds. Type anything greater than 0 to set a new limit, or anything less than or equal to 0 to remove a limit.'
   #------------------- /wwctb Messages ------------------
   wwctbPlayerNotFound: ' Player %i is either not found, or is not an active translator.'
   wwctbNotATranslator: ' You are not an active translator! Make sure you have set this with /wwct.'

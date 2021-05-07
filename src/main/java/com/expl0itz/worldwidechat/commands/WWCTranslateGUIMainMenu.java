@@ -6,12 +6,14 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.command.CommandSender;
+import org.bukkit.conversations.ConversationFactory;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.conversations.wwctranslategui.RateLimitConversation;
 import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 
@@ -119,6 +121,23 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 					getTranslateMainMenu(targetPlayerUUID).open(player);
 				}));
 			
+			/* Rate Limit Button: Set a rate limit for the current translator */
+			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+				ConversationFactory rateConvo = new ConversationFactory(main)
+						.withModality(true)
+						.withFirstPrompt(new RateLimitConversation(main.getActiveTranslator(targetPlayerUUID)));
+				ItemStack rateButton = new ItemStack(Material.SLIME_BLOCK);
+				ItemMeta rateMeta = rateButton.getItemMeta();
+				rateMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIRateButton"));
+				if (targetTranslator.getRateLimit() > 0) {				
+					rateMeta.addEnchant(glow, 1, true);
+				}
+				rateButton.setItemMeta(rateMeta);
+				contents.set(3, 2, ClickableItem.of(rateButton, 
+						e -> {
+							rateConvo.buildConversation(player).begin();}));
+			} 
+			
 			/* Book Translation Button */
 			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
 				ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
@@ -183,6 +202,21 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 					translate.processCommand(false);
 					getTranslateMainMenu(targetPlayerUUID).open(player);
 				}));
+			
+			/* Rate Limit Button */
+			ConversationFactory rateConvo = new ConversationFactory(main)
+					.withModality(true)
+					.withFirstPrompt(new RateLimitConversation(currTranslator));
+			ItemStack rateButton = new ItemStack(Material.SLIME_BLOCK);
+			ItemMeta rateMeta = rateButton.getItemMeta();
+			rateMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIRateButton"));
+			if (currTranslator.getRateLimit() > 0) {				
+				rateMeta.addEnchant(glow, 1, true);
+			}
+			rateButton.setItemMeta(rateMeta);
+			contents.set(3, 2, ClickableItem.of(rateButton, 
+					e -> {
+						rateConvo.buildConversation(player).begin();}));
 			
 			/* Book Translation Button */
 			ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);

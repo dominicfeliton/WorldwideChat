@@ -219,3 +219,6 @@ Messages:
   wwcrlNotATranslator: ' ¡No eres un traductor activo! Asegúrese de haber configurado
     esto con /wwct.'
   wwcrlRateLimitAlreadyOffSender: ' El límite de tarifa ya está deshabilitado.'
+  wwctGUIConversationRateLimit: El límite de velocidad es actualmente %i segundos.
+    Escriba algo mayor que 0 para establecer un nuevo límite, o cualquier cosa menor
+    o igual que 0 para eliminar un límite.

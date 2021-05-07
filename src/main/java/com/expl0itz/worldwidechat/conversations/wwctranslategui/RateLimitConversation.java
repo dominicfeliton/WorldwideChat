@@ -1,0 +1,67 @@
+package com.expl0itz.worldwidechat.conversations.wwctranslategui;
+
+import org.bukkit.Bukkit;
+import org.bukkit.command.CommandSender;
+import org.bukkit.conversations.ConversationContext;
+import org.bukkit.conversations.NumericPrompt;
+import org.bukkit.conversations.Prompt;
+import org.bukkit.entity.Player;
+
+import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.commands.WWCRateLimit;
+import com.expl0itz.worldwidechat.commands.WWCTranslateGUIMainMenu;
+import com.expl0itz.worldwidechat.misc.ActiveTranslator;
+
+import net.md_5.bungee.api.ChatColor;
+
+public class RateLimitConversation extends NumericPrompt {
+
+	private WorldwideChat main = WorldwideChat.getInstance();
+	
+	private ActiveTranslator currTranslator;
+	
+	public RateLimitConversation(ActiveTranslator inTranslator) {
+		currTranslator = inTranslator;
+	}
+	
+	@Override
+	public String getPromptText(ConversationContext context) {
+		/* Close any open inventories */
+		((Player)context.getForWhom()).closeInventory();
+		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIConversationRateLimit").replace("%i", currTranslator.getRateLimit() + "");
+	}
+
+	@Override
+	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
+		if (input.intValue() > 0) { //Enable rate limit
+			//Sender
+			if (((Player)context.getForWhom()).getUniqueId().toString().equals(currTranslator.getUUID())) {
+				String[] args = {input.intValue() + ""};
+				WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)context.getForWhom()), null, null, args);
+				rateCommand.processCommand();
+			} else { //Target Player
+				String[] args = {Bukkit.getPlayer(currTranslator.getUUID()).getName(), input.intValue() + ""};
+				WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)Bukkit.getPlayer(currTranslator.getUUID())), null, null, args);
+				rateCommand.processCommand();
+			}
+		} else { //Disable rate limit
+			//Sender
+			if (((Player)context.getForWhom()).getUniqueId().toString().equals(currTranslator.getUUID())) {
+				String[] args = {""};
+				WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)context.getForWhom()), null, null, args);
+				rateCommand.processCommand();
+			} else { //Target Player
+				String[] args = {Bukkit.getPlayer(currTranslator.getUUID()).getName()};
+				WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)Bukkit.getPlayer(currTranslator.getUUID())), null, null, args);
+				rateCommand.processCommand();
+			}
+		}
+		if (((Player)context.getForWhom()).getUniqueId().toString().equals(currTranslator.getUUID())) {
+			WWCTranslateGUIMainMenu.getTranslateMainMenu(null).open((Player)context.getForWhom());
+		} else {
+			WWCTranslateGUIMainMenu.getTranslateMainMenu(currTranslator.getUUID()).open((Player)context.getForWhom());
+		}
+		return END_OF_CONVERSATION;
+	}
+
+}
