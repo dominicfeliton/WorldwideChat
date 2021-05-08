@@ -2,8 +2,12 @@ package com.expl0itz.worldwidechat;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -62,13 +66,13 @@ public class WorldwideChat extends JavaPlugin {
     private BukkitAudiences adventure;
     private ConfigurationHandler configurationManager;
     
-    private HashMap < String, BukkitTask > backgroundTasks = new HashMap < String, BukkitTask > ();
+    private Map < String, BukkitTask > backgroundTasks = new ConcurrentHashMap < String, BukkitTask > ();
     
-    private ArrayList < SupportedLanguageObject > supportedLanguages = new ArrayList < SupportedLanguageObject > ();
-    private ArrayList < ActiveTranslator > activeTranslators = new ArrayList < ActiveTranslator > ();
-    private ArrayList < PlayerRecord > playerRecords = new ArrayList < PlayerRecord > ();
-    private ArrayList < CachedTranslation > cache = new ArrayList < CachedTranslation > ();
-    private ArrayList < Player > playersUsingConfigurationGUI = new ArrayList < Player > ();
+    private List < SupportedLanguageObject > supportedLanguages = new CopyOnWriteArrayList < SupportedLanguageObject > (); //Way more reads, every reload write
+    private List < PlayerRecord > playerRecords = new CopyOnWriteArrayList < PlayerRecord > (); //Way more reads, occasional write
+    private List < ActiveTranslator > activeTranslators = Collections.synchronizedList(new ArrayList < ActiveTranslator > ()); //Many writes
+    private List < CachedTranslation > cache = Collections.synchronizedList(new ArrayList < CachedTranslation > ()); //Many writes
+    private List < Player > playersUsingConfigurationGUI = Collections.synchronizedList(new ArrayList < Player > ()); //Many writes
     
     private double pluginVersion = Double.parseDouble(this.getDescription().getVersion());
     
@@ -249,15 +253,28 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     public void cancelBackgroundTasks() {
-        //Clear all active translating users
-        activeTranslators.clear();
-        cache.clear();
-
-        //Cancel + remove all tasks
+    	//Cancel + remove all tasks
         for (String eachTask : backgroundTasks.keySet()) {
             backgroundTasks.get(eachTask).cancel();
         }
         backgroundTasks.clear();
+        
+        //Synchronized tasks
+    	synchronized(this) {
+            //Save all activeTranslators
+            for (ActiveTranslator eaTranslator : activeTranslators) {
+            	getConfigManager().createUserDataConfig(eaTranslator);
+            }
+            
+            //Clear all active translating users, cache
+            activeTranslators.clear();
+            cache.clear();
+    	}
+    	
+        //Save all playerRecords
+        for (PlayerRecord eaRecord : playerRecords) {
+        	getConfigManager().createStatsConfig(eaRecord);
+        }
     }
 
     public void checkMCVersion() {
@@ -344,11 +361,11 @@ public class WorldwideChat extends JavaPlugin {
         }
     }
     
-    public void addActiveTranslator(ActiveTranslator i) {
+    public synchronized void addActiveTranslator(ActiveTranslator i) {
         activeTranslators.add(i);
     }
     
-    public void removeActiveTranslator(ActiveTranslator i) {
+    public synchronized void removeActiveTranslator(ActiveTranslator i) {
         for (Iterator < ActiveTranslator > aList = activeTranslators.iterator(); aList.hasNext();) {
             ActiveTranslator activeTranslators = aList.next();
             if (activeTranslators == i) {
@@ -357,13 +374,13 @@ public class WorldwideChat extends JavaPlugin {
         }
     }
     
-    public void addPlayerUsingConfigurationGUI(Player p) {
+    public synchronized void addPlayerUsingConfigurationGUI(Player p) {
     	if (!playersUsingConfigurationGUI.contains(p)) {
     		playersUsingConfigurationGUI.add(p);
     	}
     }
     
-    public void removePlayerUsingGUI(Player p) {
+    public synchronized void removePlayerUsingGUI(Player p) {
     	for (Iterator < Player > aList = playersUsingConfigurationGUI.iterator(); aList.hasNext();) {
             Player player = aList.next();
             if (player == p) {
@@ -372,20 +389,7 @@ public class WorldwideChat extends JavaPlugin {
         }
     }
     
-    public void addPlayerRecord(PlayerRecord i) {
-        playerRecords.add(i);
-    }
-    
-    public void removePlayerRecord(PlayerRecord i) {
-        for (Iterator < PlayerRecord > aList = playerRecords.iterator(); aList.hasNext();) {
-            PlayerRecord playerRecords = aList.next();
-            if (playerRecords == i) {
-                aList.remove();
-            }
-        }
-    }
-    
-    public void addCacheTerm(CachedTranslation input) {
+    public synchronized void addCacheTerm(CachedTranslation input) {
         if (cache.size() < getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize")) {
             //getLogger().info("Added new term to cache.");
             cache.add(input);
@@ -404,10 +408,23 @@ public class WorldwideChat extends JavaPlugin {
         }
     }
 
-    public void removeCacheTerm(CachedTranslation i) {
+    public synchronized void removeCacheTerm(CachedTranslation i) {
         for (Iterator < CachedTranslation > aList = cache.iterator(); aList.hasNext();) {
             CachedTranslation cachedTranslation = aList.next();
             if (cachedTranslation == i) {
+                aList.remove();
+            }
+        }
+    }
+    
+    public void addPlayerRecord(PlayerRecord i) {
+        playerRecords.add(i);
+    }
+    
+    public void removePlayerRecord(PlayerRecord i) {
+        for (Iterator < PlayerRecord > aList = playerRecords.iterator(); aList.hasNext();) {
+            PlayerRecord playerRecords = aList.next();
+            if (playerRecords == i) {
                 aList.remove();
             }
         }
@@ -422,8 +439,8 @@ public class WorldwideChat extends JavaPlugin {
         pluginPrefixString = i;
     }
 
-    public void setSupportedTranslatorLanguages(ArrayList < SupportedLanguageObject > in) {
-    	supportedLanguages = in;
+    public void setSupportedTranslatorLanguages(List < SupportedLanguageObject > in) {
+    	supportedLanguages.addAll(in);
     }
     
     public void setUpdateCheckerDelay(int i) {
@@ -451,7 +468,7 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     /* Getters */
-    public ActiveTranslator getActiveTranslator(String uuid) {
+    public synchronized ActiveTranslator getActiveTranslator(String uuid) {
         if (activeTranslators.size() > 0) //just return false if there are no active translators, less code to run
         {
             for (ActiveTranslator eaTranslator: activeTranslators) {
@@ -489,33 +506,32 @@ public class WorldwideChat extends JavaPlugin {
             //Old record removed; create + add new one
             PlayerRecord newRecord = new PlayerRecord("--------", UUID, 0, 0);
             addPlayerRecord(newRecord);
-            getConfigManager().createStatsConfig(newRecord);
             return newRecord;
         }
         return null;
     }
     
-    public HashMap < String, BukkitTask > getBackgroundTasks() {
+    public Map < String, BukkitTask > getBackgroundTasks() {
         return backgroundTasks;
     }
 
-    public ArrayList < ActiveTranslator > getActiveTranslators() {
+    public synchronized List < ActiveTranslator > getActiveTranslators() {
         return activeTranslators;
     }
 
-    public ArrayList < Player > getPlayersUsingGUI() {
+    public synchronized List < Player > getPlayersUsingGUI() {
     	return playersUsingConfigurationGUI;
     }
     
-    public ArrayList < PlayerRecord > getPlayerRecords() {
-        return playerRecords;
-    }
-    
-    public ArrayList <CachedTranslation> getCache() {
+    public synchronized List <CachedTranslation> getCache() {
         return cache;
     }
     
-    public ArrayList < SupportedLanguageObject > getSupportedTranslatorLanguages() {
+    public List < PlayerRecord > getPlayerRecords() {
+        return playerRecords;
+    }
+    
+    public List < SupportedLanguageObject > getSupportedTranslatorLanguages() {
     	return supportedLanguages;
     }
     

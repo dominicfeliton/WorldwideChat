@@ -38,10 +38,10 @@ public class GoogleTranslation {
         Translate translate = TranslateOptions.getDefaultInstance().getService(); //we can do this because API key was already set by initializeConnection()
         
         /* Get languages */
-        List<Language> allLanguages = translate.listSupportedLanguages();
+        List <Language> allLanguages = translate.listSupportedLanguages();
         
         /* Parse languages */
-        ArrayList < SupportedLanguageObject > outList = new ArrayList < SupportedLanguageObject >();
+        List < SupportedLanguageObject > outList = new ArrayList < SupportedLanguageObject >();
         for (Language eaLang : allLanguages) {
             outList.add(new SupportedLanguageObject(
                 eaLang.getCode(),

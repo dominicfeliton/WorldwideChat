@@ -1,6 +1,7 @@
 package com.expl0itz.worldwidechat.watson;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.bukkit.command.CommandSender;
 
@@ -54,7 +55,7 @@ public class WatsonTranslation {
         
         /* Parse json */
         final JsonArray dataJson = jsonObject.getAsJsonArray("languages");
-        ArrayList < SupportedLanguageObject > outList = new ArrayList <SupportedLanguageObject >();
+        List < SupportedLanguageObject > outList = new ArrayList <SupportedLanguageObject >();
         for (JsonElement element : dataJson) {
         	if (((JsonObject) element).get("supported_as_source").getAsBoolean() && ((JsonObject) element).get("supported_as_target").getAsBoolean()) {
         		outList.add(new SupportedLanguageObject(

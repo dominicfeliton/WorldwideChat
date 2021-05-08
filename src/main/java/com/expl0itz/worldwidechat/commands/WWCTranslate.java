@@ -71,7 +71,7 @@ public class WWCTranslate extends BasicCommand {
         /* Existing translator checks */
         //If sender wants to overwrite their own existing translation session
         if (testPlayer == null && !isGlobal && currTarget instanceof ActiveTranslator) { //Don't let a person be multiple ActiveTranslator objs
-            main.removeActiveTranslator(currTarget);
+        	main.removeActiveTranslator(currTarget);
             final TextComponent chatTranslationStopped = Component.text()
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStopped")).color(NamedTextColor.LIGHT_PURPLE))
@@ -137,7 +137,6 @@ public class WWCTranslate extends BasicCommand {
                             args[0],
                             false);
                     main.addActiveTranslator(currTranslator);
-                    main.getConfigManager().createUserDataConfig(currTranslator);
                     final TextComponent autoTranslate = Component.text()
                         .append(main.getPluginPrefix().asComponent())
                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStart").replace("%o", args[0])).color(NamedTextColor.LIGHT_PURPLE))
@@ -150,7 +149,6 @@ public class WWCTranslate extends BasicCommand {
                             args[0],
                             false);
                     main.addActiveTranslator(currTranslator);
-                    main.getConfigManager().createUserDataConfig(currTranslator);
                     final TextComponent autoTranslate = Component.text()
                         .append(main.getPluginPrefix().asComponent())
                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgAutoTranslateStart").replace("%o", args[0])).color(NamedTextColor.LIGHT_PURPLE))
@@ -178,7 +176,6 @@ public class WWCTranslate extends BasicCommand {
                                 args[1],
                                 false);
                         main.addActiveTranslator(currTranslator);
-                        main.getConfigManager().createUserDataConfig(currTranslator);
                         final TextComponent langToLang = Component.text()
                             .append(main.getPluginPrefix().asComponent())
                             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctLangToLangStart").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
@@ -190,7 +187,6 @@ public class WWCTranslate extends BasicCommand {
                                 args[1],
                                 false);
                         main.addActiveTranslator(currTranslator);
-                        main.getConfigManager().createUserDataConfig(currTranslator);
                         final TextComponent langToLang = Component.text()
                             .append(main.getPluginPrefix().asComponent())
                             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgLangToLangStart").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
@@ -211,7 +207,6 @@ public class WWCTranslate extends BasicCommand {
                             args[1],
                             false);
                     main.addActiveTranslator(currTranslator);
-                    main.getConfigManager().createUserDataConfig(currTranslator);
                     final TextComponent autoTranslateOtherPlayer = Component.text()
                         .append(main.getPluginPrefix().asComponent())
                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctAutoTranslateStartOtherPlayer").replace("%i", args[0]).replace("%o", args[1])).color(NamedTextColor.LIGHT_PURPLE))
@@ -255,7 +250,6 @@ public class WWCTranslate extends BasicCommand {
                                     args[2],
                                     false);
                              main.addActiveTranslator(currTranslator);
-                             main.getConfigManager().createUserDataConfig(currTranslator);
                              final TextComponent langToLangOtherPlayer = Component.text()
                                  .append(main.getPluginPrefix().asComponent())
                                  .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctLangToLangStartOtherPlayer").replace("%o", args[0]).replace("%i", args[1]).replace("%e", args[2])).color(NamedTextColor.LIGHT_PURPLE))

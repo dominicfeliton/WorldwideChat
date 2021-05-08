@@ -2,6 +2,7 @@ package com.expl0itz.worldwidechat.amazontranslate;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.bukkit.command.CommandSender;
 import org.jsoup.Jsoup;
@@ -54,7 +55,7 @@ public class AmazonTranslation {
     	translate.translateText(request);
     	
     	/* Get supported languages from AWS docs */
-    	ArrayList < SupportedLanguageObject > supportedLangs = new ArrayList < SupportedLanguageObject >();
+    	List < SupportedLanguageObject > supportedLangs = new ArrayList < SupportedLanguageObject >();
 		Document doc = Jsoup.connect("https://docs.aws.amazon.com/translate/latest/dg/what-is.html#what-is-languages").get();
 		Elements tr = doc.select("tr");
 		for (int i = 1; i < tr.size(); i++) {

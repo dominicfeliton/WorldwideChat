@@ -231,10 +231,7 @@ public class CommonDefinitions {
     	
     	/* Modify or create new player record */
         PlayerRecord currPlayerRecord = WorldwideChat.getInstance().getPlayerRecord(currPlayer.getUniqueId().toString(), true);
-        if (currPlayerRecord != null) { //check if null
-            currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);
-            WorldwideChat.getInstance().getConfigManager().createStatsConfig(currPlayerRecord);
-        }
+        currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations()+1);
     	
     	/* Initialize current ActiveTranslator, sanity checks */
         ActiveTranslator currActiveTranslator;
@@ -400,11 +397,8 @@ public class CommonDefinitions {
         }
         
         /* Update stats */
-        if (currPlayerRecord != null) {
-            currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);    
-            currPlayerRecord.setLastTranslationTime();
-            WorldwideChat.getInstance().getConfigManager().createStatsConfig(currPlayerRecord);
-        }
+        currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);    
+        currPlayerRecord.setLastTranslationTime();
         
         /* Add to cache */
         if (WorldwideChat.getInstance().getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize") > 0 && !(currActiveTranslator.getInLangCode().equals("None"))) {
