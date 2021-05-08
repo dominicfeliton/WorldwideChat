@@ -288,8 +288,8 @@ public class CommonDefinitions {
         		}
         	}
         } 
-        //Get user's personal rate limit, if permission is not set.
-        if (!hasPermission) {
+        //Get user's personal rate limit, if permission is not set and they are an active translator.
+        if (!hasPermission && WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString()) != null) {
         	personalRateLimit = WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString()).getRateLimit();
         }
         

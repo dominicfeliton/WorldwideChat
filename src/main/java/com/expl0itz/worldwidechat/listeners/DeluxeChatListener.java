@@ -21,11 +21,9 @@ public class DeluxeChatListener implements Listener {
             
             //Normally, since DeluxeChat has its own weird chat thread, this method is called twice,
             //and a player is given two attempted/successful translations. Let's subtract one.
-            PlayerRecord currRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), false);
-            if (currRecord != null) {
-                currRecord.setAttemptedTranslations(currRecord.getAttemptedTranslations()-1);
-                currRecord.setSuccessfulTranslations(currRecord.getSuccessfulTranslations()-1);
-            }
+            PlayerRecord currRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
+            currRecord.setAttemptedTranslations(currRecord.getAttemptedTranslations()-1);
+            currRecord.setSuccessfulTranslations(currRecord.getSuccessfulTranslations()-1);
             
             event.setChatMessage(out);
         }
