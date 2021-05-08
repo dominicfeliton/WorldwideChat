@@ -1,12 +1,8 @@
 package com.expl0itz.worldwidechat.commands;
 
-import java.io.File;
-import java.io.IOException;
-
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
