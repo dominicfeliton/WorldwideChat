@@ -173,7 +173,7 @@ public class ConfigurationHandler {
             userSettingsConfig.set("bookTranslation", inTranslator.getTranslatingBook());
             
             userSettingsConfig.createSection("signTranslation");
-            userSettingsConfig.set("signTranslation", inTranslator.getTranslatingBook());
+            userSettingsConfig.set("signTranslation", inTranslator.getTranslatingSign());
            
             userSettingsConfig.createSection("rateLimit");
             userSettingsConfig.set("rateLimit", inTranslator.getRateLimit());

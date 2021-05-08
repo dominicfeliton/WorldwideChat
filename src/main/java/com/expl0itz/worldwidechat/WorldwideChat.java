@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -82,6 +83,7 @@ public class WorldwideChat extends JavaPlugin {
 
     private boolean enablebStats = true;
     private boolean outOfDate = false;
+    private AtomicBoolean isReloading = new AtomicBoolean(false);
 
     private String pluginPrefixString = "WWC";
     private String pluginLang = "en";
@@ -169,60 +171,62 @@ public class WorldwideChat extends JavaPlugin {
     
     /* Init all commands */
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-    	if (command.getName().equalsIgnoreCase("wwc")) {
-            //WWC version
-            final TextComponent versionNotice = Component.text()
-                .append(pluginPrefix.asComponent())
-                .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcVersion")).color(NamedTextColor.RED))
-                .append(Component.text().content(" " + pluginVersion).color(NamedTextColor.LIGHT_PURPLE))
-                .build();
-            Audience adventureSender = adventure.sender(sender);
-            adventureSender.sendMessage(versionNotice);
-        } else if (command.getName().equalsIgnoreCase("wwcr")) {
-            //Reload command
-            WWCReload wwcr = new WWCReload(sender, command, label, args);
-            return wwcr.processCommand();
-        } else if (command.getName().equalsIgnoreCase("wwcg") && hasValidTranslatorSettings(sender)) {
-            //Global translation
-            if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-                WWCGlobal wwcg = new WWCGlobal(sender, command, label, args);
-                return wwcg.processCommand();
+    	if (!isReloading.get()) {
+    		if (command.getName().equalsIgnoreCase("wwc")) {
+                //WWC version
+                final TextComponent versionNotice = Component.text()
+                    .append(pluginPrefix.asComponent())
+                    .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcVersion")).color(NamedTextColor.RED))
+                    .append(Component.text().content(" " + pluginVersion).color(NamedTextColor.LIGHT_PURPLE))
+                    .build();
+                Audience adventureSender = adventure.sender(sender);
+                adventureSender.sendMessage(versionNotice);
+            } else if (command.getName().equalsIgnoreCase("wwcr")) {
+                //Reload command
+                WWCReload wwcr = new WWCReload(sender, command, label, args);
+                return wwcr.processCommand();
+            } else if (command.getName().equalsIgnoreCase("wwcg") && hasValidTranslatorSettings(sender)) {
+                //Global translation
+                if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
+                    WWCGlobal wwcg = new WWCGlobal(sender, command, label, args);
+                    return wwcg.processCommand();
+                }
+            } else if (command.getName().equalsIgnoreCase("wwct") && hasValidTranslatorSettings(sender)) {
+                //Per player translation
+                if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
+                    WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
+                    return wwct.processCommand(false);
+                }
+            } else if (command.getName().equalsIgnoreCase("wwctb") && hasValidTranslatorSettings(sender)) {
+                //Book translation
+                if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
+                    WWCTranslateBook wwctb = new WWCTranslateBook(sender, command, label, args);
+                    return wwctb.processCommand();
+                }
+            } else if (command.getName().equalsIgnoreCase("wwcts") && hasValidTranslatorSettings(sender)) {
+                //Sign translation
+                if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
+                    WWCTranslateSign wwcts = new WWCTranslateSign(sender, command, label, args);
+                    return wwcts.processCommand();
+                }
+            } else if (command.getName().equalsIgnoreCase("wwcs")) {
+                //Stats for translator
+                WWCStats wwcs = new WWCStats(sender, command, label, args);
+                return wwcs.processCommand();
+            } else if (command.getName().equalsIgnoreCase("wwcc")) {
+            	//Configuration GUI
+            	if (checkSenderIdentity(sender)) {
+            		WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
+            		return wwcc.processCommand();
+            	}
+            } else if (command.getName().equalsIgnoreCase("wwcrl")) {
+            	//Rate Limit Command
+            	if (checkSenderIdentity(sender)) {
+            		WWCRateLimit wwcrl = new WWCRateLimit(sender, command, label, args);
+            		return wwcrl.processCommand();
+            	}
             }
-        } else if (command.getName().equalsIgnoreCase("wwct") && hasValidTranslatorSettings(sender)) {
-            //Per player translation
-            if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-                WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
-                return wwct.processCommand(false);
-            }
-        } else if (command.getName().equalsIgnoreCase("wwctb") && hasValidTranslatorSettings(sender)) {
-            //Book translation
-            if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-                WWCTranslateBook wwctb = new WWCTranslateBook(sender, command, label, args);
-                return wwctb.processCommand();
-            }
-        } else if (command.getName().equalsIgnoreCase("wwcts") && hasValidTranslatorSettings(sender)) {
-            //Sign translation
-            if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-                WWCTranslateSign wwcts = new WWCTranslateSign(sender, command, label, args);
-                return wwcts.processCommand();
-            }
-        } else if (command.getName().equalsIgnoreCase("wwcs")) {
-            //Stats for translator
-            WWCStats wwcs = new WWCStats(sender, command, label, args);
-            return wwcs.processCommand();
-        } else if (command.getName().equalsIgnoreCase("wwcc")) {
-        	//Configuration GUI
-        	if (checkSenderIdentity(sender)) {
-        		WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
-        		return wwcc.processCommand();
-        	}
-        } else if (command.getName().equalsIgnoreCase("wwcrl")) {
-        	//Rate Limit Command
-        	if (checkSenderIdentity(sender)) {
-        		WWCRateLimit wwcrl = new WWCRateLimit(sender, command, label, args);
-        		return wwcrl.processCommand();
-        	}
-        }
+    	}
         return true;
     }
     
@@ -277,7 +281,8 @@ public class WorldwideChat extends JavaPlugin {
             	getConfigManager().createUserDataConfig(eaTranslator);
             }        
             
-            //Clear all active translating users, cache
+            //Clear all active translating users, cache, playersUsingConfigGUI
+            playersUsingConfigurationGUI.clear();
             activeTranslators.clear();
             cache.clear();
     	}
@@ -477,6 +482,10 @@ public class WorldwideChat extends JavaPlugin {
         outOfDate = i;
     }
     
+    public void setReloading(boolean i) {
+    	isReloading.set(i);
+    }
+    
     /* Getters */
     public synchronized ActiveTranslator getActiveTranslator(String uuid) {
         if (activeTranslators.size() > 0) //just return false if there are no active translators, less code to run
@@ -567,6 +576,10 @@ public class WorldwideChat extends JavaPlugin {
     
     public boolean getOutOfDate() {
         return outOfDate;
+    }
+    
+    public AtomicBoolean isReloading() {
+    	return isReloading;
     }
     
     public double getPluginVersion() {

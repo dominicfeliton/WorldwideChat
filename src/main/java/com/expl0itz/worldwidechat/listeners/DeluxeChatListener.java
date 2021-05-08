@@ -16,7 +16,7 @@ public class DeluxeChatListener implements Listener {
     
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onDeluxeChat(DeluxeChatEvent event) { 
-        if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) instanceof ActiveTranslator || main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) {
+        if (!main.isReloading().get() && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) instanceof ActiveTranslator || main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) {
             String out = new ChatListener().processPlayerChat(event.getPlayer(), event.getChatMessage());
             
             //Normally, since DeluxeChat has its own weird chat thread, this method is called twice,

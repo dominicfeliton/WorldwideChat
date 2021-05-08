@@ -111,9 +111,8 @@ public class ConfigurationGoogleTranslateSettingsGUI implements InventoryProvide
 					    	    })
 					    	    .async(() -> {
 					    	    	try {
-									    GoogleTranslation testConnection = new GoogleTranslation(main.getConfigManager().getMainConfig().getString("Translator.googleTranslateAPIKey"));
+					    	    		GoogleTranslation testConnection = new GoogleTranslation(main.getConfigManager().getMainConfig().getString("Translator.googleTranslateAPIKey"));
 									    testConnection.initializeConnection();
-									    main.addPlayerUsingConfigurationGUI(player);
 									    main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", false);
 									    main.getConfigManager().getMainConfig().set("Translator.useAmazonTranslate", false);
 									    main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate", true);
@@ -124,6 +123,13 @@ public class ConfigurationGoogleTranslateSettingsGUI implements InventoryProvide
 								                .build();
 								            Audience adventureSender = main.adventure().sender(player);
 								        adventureSender.sendMessage(successfulChange);
+								        WWCReload rel = new WWCReload(player, null, null, null);
+								        Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
+					                		@Override
+					                		public void run() {
+					                			rel.processCommand();
+					                		}
+					                });
 									} catch (Exception bad) {
 										bad.printStackTrace();
 										final TextComponent badResult = Component.text()

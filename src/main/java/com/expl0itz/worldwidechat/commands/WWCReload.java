@@ -21,6 +21,8 @@ public class WWCReload extends BasicCommand {
     }
 
     public boolean processCommand() {
+    	main.setReloading(true);
+    	
     	//Convert sender to Adventure Audience
         Audience adventureSender = main.adventure().sender(sender);
         
@@ -51,6 +53,8 @@ public class WWCReload extends BasicCommand {
     	        }
     		}
     	});
+    	
+    	main.setReloading(false);
         return true;
     }
 }

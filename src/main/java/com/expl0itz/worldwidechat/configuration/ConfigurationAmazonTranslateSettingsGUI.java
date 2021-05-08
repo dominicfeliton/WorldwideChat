@@ -139,7 +139,6 @@ public class ConfigurationAmazonTranslateSettingsGUI implements InventoryProvide
 									    		main.getConfigManager().getMainConfig().getString("Translator.amazonSecretKey"), 
 									    		main.getConfigManager().getMainConfig().getString("Translator.amazonRegion"));
 									    testConnection.initializeConnection();
-									    main.addPlayerUsingConfigurationGUI(player);
 									    main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", false);
 									    main.getConfigManager().getMainConfig().set("Translator.useAmazonTranslate", true);
 									    main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate", false);
@@ -150,6 +149,13 @@ public class ConfigurationAmazonTranslateSettingsGUI implements InventoryProvide
 								                .build();
 								            Audience adventureSender = main.adventure().sender(player);
 								        adventureSender.sendMessage(successfulChange);
+								        WWCReload rel = new WWCReload(player, null, null, null);
+								        Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
+					                		@Override
+					                		public void run() {
+					                			rel.processCommand();
+					                		}
+					                });
 									} catch (Exception bad) {
 										bad.printStackTrace();
 										final TextComponent badResult = Component.text()

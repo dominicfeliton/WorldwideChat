@@ -125,7 +125,6 @@ public class ConfigurationWatsonSettingsGUI implements InventoryProvider {
 					    	    	try {
 									    WatsonTranslation testConnection = new WatsonTranslation(main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"), main.getConfigManager().getMainConfig().getString("Translator.watsonURL"));
 									    testConnection.initializeConnection();
-									    main.addPlayerUsingConfigurationGUI(player);
 									    main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", true);
 									    main.getConfigManager().getMainConfig().set("Translator.useAmazonTranslate", false);
 									    main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate", false);
@@ -136,6 +135,13 @@ public class ConfigurationWatsonSettingsGUI implements InventoryProvider {
 								                .build();
 								            Audience adventureSender = main.adventure().sender(player);
 								        adventureSender.sendMessage(successfulChange);
+								        WWCReload rel = new WWCReload(player, null, null, null);
+								        Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
+					                		@Override
+					                		public void run() {
+					                			rel.processCommand();
+					                		}
+					                });
 									} catch (Exception bad) {
 										bad.printStackTrace();
 										final TextComponent badResult = Component.text()

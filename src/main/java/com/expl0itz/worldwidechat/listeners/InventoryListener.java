@@ -22,23 +22,22 @@ public class InventoryListener implements Listener {
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInventoryCloseEvent(InventoryCloseEvent e) {
 		/* Send the user a message if they quit a config GUI without saving properly */
-		for (Player eaPlayer : main.getPlayersUsingGUI()) {
-			if (eaPlayer.equals(e.getPlayer())) {
+		synchronized (this) {
+			if (!main.isReloading().get() && main.getPlayersUsingGUI().contains(e.getPlayer())) {
 				Bukkit.getScheduler().runTaskLaterAsynchronously(main, new Runnable() {
 					@Override
 					public void run() {
-						if (eaPlayer.getOpenInventory().getType() != InventoryType.CHEST && !eaPlayer.isConversing()) {
+						if (e.getPlayer().getOpenInventory().getType() != InventoryType.CHEST && !((Player)e.getPlayer()).isConversing()) {
 							final TextComponent reloadPlease = Component.text()
 					                .append(main.getPluginPrefix().asComponent())
 					                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIChangesNotSaved")).color(NamedTextColor.YELLOW))
 					                .build();
 					            Audience adventureSender = main.adventure().sender(e.getPlayer());
 					        adventureSender.sendMessage(reloadPlease);
-					        main.removePlayerUsingGUI(eaPlayer);
+					        main.removePlayerUsingGUI((Player)e.getPlayer());
 						}
 					}
-				}, 20);
-		        break;
+				}, 10);
 			}
 		}
 	}
