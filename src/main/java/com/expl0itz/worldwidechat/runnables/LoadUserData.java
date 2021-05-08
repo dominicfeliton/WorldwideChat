@@ -96,5 +96,7 @@ public class LoadUserData implements Runnable{
         } if (invalidConfigs > 0) {
             main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataCorrupted").replace("%i", invalidConfigs + ""));
         }
+        
+        main.removeBackgroundTask("loadUserData");
     }
 }

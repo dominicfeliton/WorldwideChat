@@ -132,14 +132,14 @@ public class WorldwideChat extends JavaPlugin {
             checkMCVersion();
             
             //EventHandlers + check for plugins
-            if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) { //DeluxeChat
+        	if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) { //DeluxeChat
                 getServer().getPluginManager().registerEvents(new DeluxeChatListener(), this);
             }
-            getServer().getPluginManager().registerEvents(new ChatListener(), this); 
-            getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
-            getServer().getPluginManager().registerEvents(new SignReadListener(), this);
-            getServer().getPluginManager().registerEvents(new BookReadListener(), this);
-            getServer().getPluginManager().registerEvents(new InventoryListener(), this);
+			getServer().getPluginManager().registerEvents(new ChatListener(), this); 
+			getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
+			getServer().getPluginManager().registerEvents(new SignReadListener(), this);
+			getServer().getPluginManager().registerEvents(new BookReadListener(), this);
+			getServer().getPluginManager().registerEvents(new InventoryListener(), this);
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
             
             //We made it!
@@ -167,35 +167,9 @@ public class WorldwideChat extends JavaPlugin {
         getLogger().info("Disabled WorldwideChat version " + pluginVersion + ".");
     }
     
-    /* (Re)load Plugin Method */
-    public boolean loadPluginConfigs() {
-        setConfigManager(new ConfigurationHandler());
-        //init main config, then init messages config, then load main settings
-        getConfigManager().initMainConfig();
-        getConfigManager().initMessagesConfig();
-        if (getConfigManager().loadMainSettings()) { //now load settings
-        	//If translator is invalid
-        	if (getTranslatorName().equals("Invalid")) {
-        		getLogger().severe(getConfigManager().getMessagesConfig().getString("Messages.wwcInvalidTranslator"));
-        	} else {
-        		getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", translatorName));
-        	}
-        	
-        	//Check for updates
-            BukkitTask updateChecker = Bukkit.getScheduler().runTaskAsynchronously(this, new UpdateChecker()); //Run update checker now
-            backgroundTasks.put("updateChecker", updateChecker);
-            
-            //Load saved user data
-            Bukkit.getScheduler().runTaskAsynchronously(this, new LoadUserData());
-            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
-            return true;
-        }
-        return false;
-    }
-    
     /* Init all commands */
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (command.getName().equalsIgnoreCase("wwc")) {
+    	if (command.getName().equalsIgnoreCase("wwc")) {
             //WWC version
             final TextComponent versionNotice = Component.text()
                 .append(pluginPrefix.asComponent())
@@ -252,6 +226,34 @@ public class WorldwideChat extends JavaPlugin {
         return true;
     }
     
+    /* (Re)load Plugin Method */
+    public boolean loadPluginConfigs() {
+        setConfigManager(new ConfigurationHandler());
+        //init main config, then init messages config, then load main settings
+        getConfigManager().initMainConfig();
+        getConfigManager().initMessagesConfig();
+        if (getConfigManager().loadMainSettings()) { //now load settings
+        	//If translator is invalid
+        	if (getTranslatorName().equals("Invalid")) {
+        		getLogger().severe(getConfigManager().getMessagesConfig().getString("Messages.wwcInvalidTranslator"));
+        	} else {
+        		getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", translatorName));
+        	}
+        	
+        	//Check for updates
+            BukkitTask updateChecker = Bukkit.getScheduler().runTaskTimerAsynchronously(this, new UpdateChecker(), 0, getUpdateCheckerDelay()*20); //Run update checker now
+            backgroundTasks.put("updateChecker", updateChecker);
+            
+            //Load saved user data
+            BukkitTask loadUserData = Bukkit.getScheduler().runTaskAsynchronously(this, new LoadUserData());
+            backgroundTasks.put("loadUserData", loadUserData);
+            
+            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
+            return true;
+        }
+        return false;
+    }
+    
     public void cancelBackgroundTasks() {
     	//Cancel + remove all tasks
         for (String eachTask : backgroundTasks.keySet()) {
@@ -259,22 +261,23 @@ public class WorldwideChat extends JavaPlugin {
         }
         backgroundTasks.clear();
         
+        //Save all playerRecords
+        for (PlayerRecord eaRecord : playerRecords) {
+        	getConfigManager().createStatsConfig(eaRecord);
+        }
+        playerRecords.clear();
+        
         //Synchronized tasks
     	synchronized(this) {
-            //Save all activeTranslators
+            //Save all new activeTranslators
             for (ActiveTranslator eaTranslator : activeTranslators) {
             	getConfigManager().createUserDataConfig(eaTranslator);
-            }
+            }        
             
             //Clear all active translating users, cache
             activeTranslators.clear();
             cache.clear();
     	}
-    	
-        //Save all playerRecords
-        for (PlayerRecord eaRecord : playerRecords) {
-        	getConfigManager().createStatsConfig(eaRecord);
-        }
     }
 
     public void checkMCVersion() {
@@ -362,7 +365,9 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     public synchronized void addActiveTranslator(ActiveTranslator i) {
-        activeTranslators.add(i);
+    	if (!activeTranslators.contains(i)) {
+    		activeTranslators.add(i);
+    	}
     }
     
     public synchronized void removeActiveTranslator(ActiveTranslator i) {
@@ -418,7 +423,9 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     public void addPlayerRecord(PlayerRecord i) {
-        playerRecords.add(i);
+    	if (!playerRecords.contains(i)) {
+    		playerRecords.add(i);
+    	}
     }
     
     public void removePlayerRecord(PlayerRecord i) {
@@ -472,7 +479,7 @@ public class WorldwideChat extends JavaPlugin {
         if (activeTranslators.size() > 0) //just return false if there are no active translators, less code to run
         {
             for (ActiveTranslator eaTranslator: activeTranslators) {
-                if (eaTranslator.getUUID().equals(uuid)) //if uuid matches up with one in ArrayList, we chillin'
+                if (eaTranslator.getUUID().equals(uuid)) //if uuid matches up with one in ArrayList
                 {
                     return eaTranslator;
                 }
@@ -558,7 +565,7 @@ public class WorldwideChat extends JavaPlugin {
     public boolean getOutOfDate() {
         return outOfDate;
     }
-
+    
     public double getPluginVersion() {
         return pluginVersion;
     }

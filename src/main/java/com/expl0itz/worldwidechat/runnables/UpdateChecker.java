@@ -7,9 +7,6 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.IOUtils;
-import org.bukkit.Bukkit;
-import org.bukkit.scheduler.BukkitTask;
-
 import com.expl0itz.worldwidechat.WorldwideChat;
 
 import net.md_5.bungee.api.ChatColor;
@@ -18,7 +15,6 @@ public class UpdateChecker implements Runnable{
 
     private boolean upToDate = false;
     private String latest = "";
-    private BukkitTask updaterTask;
     private WorldwideChat main = WorldwideChat.getInstance();
     
     @Override
@@ -46,11 +42,6 @@ public class UpdateChecker implements Runnable{
         } catch (Exception e) {
             main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterFailedGeneric"));           
         }
-        //Schedule the next update check here
-        //DEBUG: main.getLogger().info(main.getBackgroundTasks().size() + "");
-        main.removeBackgroundTask("updateChecker"); //mem leaks bad; remove all previous tasks of WWCUpdateChecker
-        updaterTask = Bukkit.getScheduler().runTaskLaterAsynchronously(main, new UpdateChecker(), main.getUpdateCheckerDelay()*20);
-        main.addBackgroundTask("updateChecker", updaterTask);
     }
 
     public boolean upToDate() {
