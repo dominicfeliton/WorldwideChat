@@ -267,6 +267,9 @@ public class WorldwideChat extends JavaPlugin {
         }
         playerRecords.clear();
         
+        //Clear all supported langs
+        supportedLanguages.clear();
+        
         //Synchronized tasks
     	synchronized(this) {
             //Save all new activeTranslators

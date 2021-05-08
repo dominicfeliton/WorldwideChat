@@ -187,7 +187,7 @@ public class CommonDefinitions {
     public static String translateText(String inMessage, Player currPlayer) {
     	/* If translator settings are invalid, do not do this... */
     	if (WorldwideChat.getInstance().getTranslatorName().equals("Invalid")) {
-    		return "";
+    		return inMessage;
     	}
     	
     	 /* Sanitize Inputs */
@@ -226,7 +226,7 @@ public class CommonDefinitions {
         }
     	
     	if (!(inMessage.length() > 0)) {
-    		return "";
+    		return inMessage;
     	}
     	
     	/* Modify or create new player record */
