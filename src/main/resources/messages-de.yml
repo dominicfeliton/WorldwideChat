@@ -233,7 +233,7 @@ Messages:
   wwcrlNotATranslator: ' Du bist kein aktiver Übersetzer! Stellen Sie sicher, dass
     Sie dies mit /wwc eingestellt haben.'
   wwcrlRateLimitAlreadyOffSender: ' Ihr Tarifinlimit ist bereits deaktiviert.'
-  wwctGUIConversationRateLimit: Das Ratenlimit beträgt aktuell %i Sekunden. Geben
-    Sie alles ein, was größer als 0 ist, um ein neues Limit oder etwas kleineres oder
-    gleiches 0 festzulegen, um ein Limit zu entfernen.
   wwctGUIRateButton: Satzlimit festlegen
+  wwctGUIConversationRateLimit: Das Ratenlimit pro Übersetzung beträgt aktuell %i
+    Sekunden. Geben Sie etwas größer als 0 ein, um einen neuen Wert festzulegen, oder
+    geben Sie 0 ein, um das Limit zu deaktivieren. Tippe alles weniger als 0, um zurückzukehren.

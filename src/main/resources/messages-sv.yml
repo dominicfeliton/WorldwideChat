@@ -216,7 +216,7 @@ Messages:
   wwcrlNotATranslator: ' Du är inte en aktiv översättare! Se till att du har ställt
     in detta med /wwct.'
   wwcrlRateLimitAlreadyOffSender: ' Din prisgräns är redan inaktiverad.'
-  wwctGUIConversationRateLimit: Hastighetsgränsen är för närvarande %i sekunder. Skriv
-    något större än 0 om du vill ange en ny gräns, eller något mindre än eller lika
-    med 0 om du vill ta bort en gräns.
   wwctGUIRateButton: Ange hastighetsgräns
+  wwctGUIConversationRateLimit: Hastighetsgränsen per översättning är för närvarande
+    %i sekunder. Skriv något större än 0 om du vill ange ett nytt värde, eller skriv
+    0 om du vill inaktivera gränsen. Skriv något mindre än 0 för att gå tillbaka.

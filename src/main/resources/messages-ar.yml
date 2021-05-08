@@ -197,6 +197,7 @@ Messages:
   wwcrlRateLimitSetTarget: ' اضبط حد المعدّل %i إلى %o ثانية.'
   wwcrlNotATranslator: ' أنت لست مترجم نشط! تأكد من تعيين هذا مع/wwct.'
   wwcrlRateLimitAlreadyOffSender: ' حد السعر الخاص بك معطل بالفعل.'
-  wwctGUIConversationRateLimit: الحد الأقصى للمعدل هو حاليا %i ثانية. اكتب أي شيء
-    أكبر من 0 لتعيين حد جديد، أو أي شيء أقل من أو يساوي 0 لإزالة حد.
   wwctGUIRateButton: تعيين حد السعر
+  wwctGUIConversationRateLimit: الحد الأقصى للمعدل لكل ترجمة هو حاليا %i ثانية. اكتب
+    أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب 0 لتعطيل الحد. اكتب أي شيء أقل من
+    0 للعودة.

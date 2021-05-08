@@ -213,7 +213,7 @@ Messages:
   wwcrlNotATranslator: ' Nie jesteś aktywnym tłumaczem! Upewnij się, że ustawiłeś
     to za pomocą /wwct.'
   wwcrlRateLimitAlreadyOffSender: ' Twój limit stawki jest już wyłączony.'
-  wwctGUIConversationRateLimit: Limit szybkości wynosi obecnie %i sekund. Wpisz wartość
-    większą niż 0, aby ustawić nowy limit, lub cokolwiek mniejszą lub równą 0, aby
-    usunąć limit.
   wwctGUIRateButton: Ustaw limit szybkości
+  wwctGUIConversationRateLimit: Limit szybkości na tłumaczenie wynosi obecnie %i sekund.
+    Wpisz wartość większą niż 0, aby ustawić nową wartość, lub wpisz 0, aby wyłączyć
+    limit. Wpisz mniej niż 0, aby wrócić.

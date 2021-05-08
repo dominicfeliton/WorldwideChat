@@ -205,7 +205,7 @@ Messages:
   wwcrlNotATranslator: ' Sen aktif bir çevirmen değilsin! Bunu /wwct ile ayarladığınızdan
     emin olun.'
   wwcrlRateLimitAlreadyOffSender: ' Fiyat limitiniz zaten devre dışı bırakıldı.'
-  wwctGUIConversationRateLimit: Hız sınırı şu anda %i saniye. Yeni bir sınır ayarlamak
-    için 0\'dan büyük bir şey veya bir sınırı kaldırmak için 0\'dan küçük veya eşit
-    bir şey yazın.
   wwctGUIRateButton: Hız Sınırını Ayarla
+  wwctGUIConversationRateLimit: Çeviri başına oran sınırı şu anda %i saniye. Yeni
+    bir değer ayarlamak için 0\'dan büyük bir şey yazın veya sınırı devre dışı bırakmak
+    için 0 yazın. Geri dönmek için 0\'dan az bir şey yazın.

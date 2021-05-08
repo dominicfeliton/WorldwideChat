@@ -218,7 +218,8 @@ Messages:
   wwcrlNotATranslator: ' Non sei un traduttore attivo! Assicurati di aver impostato
     questo con /wwct.'
   wwcrlRateLimitAlreadyOffSender: ' Il limite tariffario è già disabilitato.'
-  wwctGUIConversationRateLimit: Il limite di velocità è corrente %i secondi. Digitare
-    un valore maggiore di 0 per impostare un nuovo limite o qualsiasi valore minore
-    o uguale a 0 per rimuovere un limite.
   wwctGUIRateButton: Imposta limite di velocità
+  wwctGUIConversationRateLimit: Il limite di velocità per traduzione è corrente %i
+    secondi. Digitare un valore maggiore di 0 per impostare un nuovo valore oppure
+    digitare 0 per disabilitare il limite. Digitare qualcosa di minore di 0 per tornare
+    indietro.

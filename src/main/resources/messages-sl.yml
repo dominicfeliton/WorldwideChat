@@ -214,7 +214,7 @@ Messages:
   wwcrlNotATranslator: ' Niste aktivni prevajalec! Prepričajte se, da ste to nastavili
     z /wwct.'
   wwcrlRateLimitAlreadyOffSender: ' Omejitev stopnje je že onemogočena.'
-  wwctGUIConversationRateLimit: Omejitev hitrosti je trenutno %i sekund. Vnesite karkoli,
-    ki je večje od 0, če želite nastaviti novo omejitev, ali kar je manjše ali enako
-    0, če želite odstraniti omejitev.
   wwctGUIRateButton: Nastavitev omejitve hitrosti
+  wwctGUIConversationRateLimit: Omejitev hitrosti na prevod je trenutno %i sekund.
+    Vnesite karkoli večje od 0, če želite nastaviti novo vrednost, ali pa vnesite
+    0, da onemogočite omejitev. Vnesite karkoli manj kot 0, da se vrnete nazaj.

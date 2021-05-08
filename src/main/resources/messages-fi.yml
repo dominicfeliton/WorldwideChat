@@ -215,7 +215,7 @@ Messages:
   wwcrlNotATranslator: ' Et ole aktiivinen kääntäjä! Varmista, että olet asettanut
     tämän käyttämällä /wwct.'
   wwcrlRateLimitAlreadyOffSender: ' Sinun hintaraja on jo poistettu käytöstä.'
-  wwctGUIConversationRateLimit: Nopeusraja on nykyisesti %i sekuntia. Kirjoita mikä
-    tahansa suurempi kuin 0 asettaaksesi uuden rajan tai mikä tahansa pienempi tai
-    yhtä suuri kuin 0 poistaaksesi rajan.
   wwctGUIRateButton: Aseta nopeusraja
+  wwctGUIConversationRateLimit: Nopeusraja per käännös on nykyisesti %i sekuntia.
+    Määritä uusi arvo kirjoittamalla jokin suurempi kuin 0 tai poista raja käytöstä
+    kirjoittamalla 0. Kirjoita mitään alle 0, jotta voit palata takaisin.

@@ -220,7 +220,7 @@ Messages:
   wwcrlRateLimitSetTarget: ' Állítsa be a (z) %i értékhatárt a %o másodpercre.'
   wwcrlNotATranslator: ' Ön nem aktív fordító! Győződjön meg róla, hogy ezt a /wwct.'
   wwcrlRateLimitAlreadyOffSender: ' A díjkorlát már le van tiltva.'
-  wwctGUIConversationRateLimit: A sebességkorlát aktual %i másodperc. Írja be a 0-nál
-    nagyobb értéket az új korlát beállításához, vagy bármi kisebb vagy egyenlő nullával
-    a korlát eltávolításához.
   wwctGUIRateButton: Korlát beállítása
+  wwctGUIConversationRateLimit: A fordításonkénti sebességhatár aktual %i másodperc.
+    Írja be a 0-nál nagyobb értéket az új érték beállításához, vagy írja be a 0 értéket
+    a korlát letiltásához. Írja be a 0-nál kevesebbet, hogy visszamenjen.

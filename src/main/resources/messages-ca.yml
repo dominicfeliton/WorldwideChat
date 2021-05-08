@@ -222,7 +222,7 @@ Messages:
   wwcrlNotATranslator: ' No ets un traductor actiu! Assegureu-vos que heu configurat
     això amb /wwct.'
   wwcrlRateLimitAlreadyOffSender: ' El seu límit de tarifa ja està desactivat.'
-  wwctGUIConversationRateLimit: El límit de taxa és actualment %i segons. Escriviu
-    qualsevol cosa més gran que 0 per establir un límit nou, o qualsevol cosa inferior
-    o igual a 0 per eliminar un límit.
   wwctGUIRateButton: Estableix límit de velocitat
+  wwctGUIConversationRateLimit: El límit de tarifa per traducció és actualment %i
+    segons. Escriviu qualsevol cosa més gran que 0 per establir un valor nou, o escriviu
+    0 per inhabilitar el límit. Escriviu res menys que 0 per tornar enrere.

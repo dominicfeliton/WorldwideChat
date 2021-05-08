@@ -191,6 +191,7 @@ Messages:
   wwcrlRateLimitSetTarget: ' הגדר את מגבלת התעריף של %i אל %o שניות.'
   wwcrlNotATranslator: ' אתה לא מתרגם פעיל! ודא שהגדרת את זה עם /wwct.'
   wwcrlRateLimitAlreadyOffSender: ' מגבלת התעריף שלך כבר מושבתת.'
-  wwctGUIConversationRateLimit: מגבלת התעריף היא נוכחי %i שניות. הקלד כל דבר גדול
-    מ- 0 כדי להגדיר מגבלה חדשה, או כל דבר קטן מ- 0 או שווה ל- 0 כדי להסיר מגבלה.
   wwctGUIRateButton: הגדרת מגבלת קצב
+  wwctGUIConversationRateLimit: מגבלת התעריף לתרגום היא נוכחי %i שניות. הקלד דבר גדול
+    מ- 0 כדי להגדיר ערך חדש, או הקלד 0 כדי לבטל את המגבלה. הקלד כל דבר פחות מ-0 כדי
+    לחזור.

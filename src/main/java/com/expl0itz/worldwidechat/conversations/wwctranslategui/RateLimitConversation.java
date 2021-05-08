@@ -45,7 +45,7 @@ public class RateLimitConversation extends NumericPrompt {
 			}
 			WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)context.getForWhom()), null, null, args);
 			rateCommand.processCommand();
-		} else { //Disable rate limit
+		} else if (input.intValue() == 0){ //Disable rate limit
 			//Sender
 			String[] args = {};
 			if (!((Player)context.getForWhom()).getUniqueId().toString().equals(currTranslator.getUUID())) { //Target Player
@@ -53,7 +53,7 @@ public class RateLimitConversation extends NumericPrompt {
 			}
 			WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)context.getForWhom()), null, null, args);
 			rateCommand.processCommand();
-		}
+		} //Go back
 		if (((Player)context.getForWhom()).getUniqueId().toString().equals(currTranslator.getUUID())) {
 			WWCTranslateGUIMainMenu.getTranslateMainMenu(null).open((Player)context.getForWhom());
 		} else {

@@ -171,5 +171,6 @@ Messages:
   wwcrlRateLimitSetTarget: ' 将 %i 的速率限制设置为 %o 秒。'
   wwcrlNotATranslator: ' 你不是活跃的翻译人员！确保你已经使用 /wwct对此进行了设置。'
   wwcrlRateLimitAlreadyOffSender: ' 您的费率限制已被禁用。'
-  wwctGUIConversationRateLimit: 速率限制目前为 %i 秒。键入大于 0 的任何值以设置新限制，或者键入小于或等于 0 的任何值以删除限制。
   wwctGUIRateButton: 设置费率限制
+  wwctGUIConversationRateLimit: 每次翻译的速率限制目前为 %i 秒。键入大于 0 的任何值以设置新值，或者键入 0 以禁用限制。键入小于
+    0 的任何内容以返回。
