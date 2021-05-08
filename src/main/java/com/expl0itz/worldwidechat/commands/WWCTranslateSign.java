@@ -44,27 +44,13 @@ public class WWCTranslateSign extends BasicCommand{
                 /* Enable book translation for sender! */
                 ActiveTranslator currentTranslator = main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
                 currentTranslator.setTranslatingSign(!currentTranslator.getTranslatingSign());
-                File currentConfigFile = main.getConfigManager().getUserSettingsFile(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
-                YamlConfiguration currentConfig = YamlConfiguration.loadConfiguration(currentConfigFile);
                 if (currentTranslator.getTranslatingSign()) {
-                    currentConfig.set("signTranslation", true);
-                    try {
-                        currentConfig.save(currentConfigFile);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                     final TextComponent toggleTranslation = Component.text()
                             .append(main.getPluginPrefix().asComponent())
                             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctsOnSender")).color(NamedTextColor.LIGHT_PURPLE))
                             .build();
                         adventureSender.sendMessage(toggleTranslation);
                 } else {
-                    currentConfig.set("signTranslation", false);
-                    try {
-                        currentConfig.save(currentConfigFile);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                     final TextComponent toggleTranslation = Component.text()
                             .append(main.getPluginPrefix().asComponent())
                             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctsOffSender")).color(NamedTextColor.LIGHT_PURPLE))
@@ -91,15 +77,7 @@ public class WWCTranslateSign extends BasicCommand{
                     ActiveTranslator currentTranslator = main.getActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString());
                     currentTranslator.setTranslatingSign(!currentTranslator.getTranslatingSign());
                     Audience targetSender = main.adventure().player(Bukkit.getServer().getPlayer(args[0]));
-                    File currentConfigFile = main.getConfigManager().getUserSettingsFile(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString());
-                    YamlConfiguration currentConfig = YamlConfiguration.loadConfiguration(currentConfigFile);
                     if (currentTranslator.getTranslatingSign()) {
-                        currentConfig.set("signTranslation", true);
-                        try {
-                            currentConfig.save(currentConfigFile);
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
                         final TextComponent toggleTranslation = Component.text()
                                 .append(main.getPluginPrefix().asComponent())
                                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctsOnTarget").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
@@ -111,12 +89,6 @@ public class WWCTranslateSign extends BasicCommand{
                                 .build();
                             targetSender.sendMessage(toggleTranslationTarget);     
                     } else {
-                        currentConfig.set("signTranslation", false);
-                        try {
-                            currentConfig.save(currentConfigFile);
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
                         final TextComponent toggleTranslation = Component.text()
                                 .append(main.getPluginPrefix().asComponent())
                                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctsOffTarget").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))

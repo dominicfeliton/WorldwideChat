@@ -29,7 +29,6 @@ public class ActiveTranslator {
     /* Setters */
     public void setRateLimit(int i) {
     	rateLimit = i;
-    	main.getConfigManager().createUserDataConfig(this);
     }
     
     public void setUUID(String i) {
@@ -58,7 +57,6 @@ public class ActiveTranslator {
     
     public void setRateLimitPreviousTime(Instant i) {
     	rateLimitPreviousTime = i.toString();
-    	main.getConfigManager().createUserDataConfig(this);
     }
     
     /* Getters */
