@@ -2,8 +2,6 @@ package com.expl0itz.worldwidechat.misc;
 
 import org.threeten.bp.Instant;
 
-import com.expl0itz.worldwidechat.WorldwideChat;
-
 public class ActiveTranslator {
 	
     private int rateLimit = 0;
@@ -17,8 +15,6 @@ public class ActiveTranslator {
     private boolean translatingBook = false;
     private boolean translatingSign = false;
 
-    private WorldwideChat main = WorldwideChat.getInstance();
-    
     public ActiveTranslator(String uuid, String langIn, String langOut, boolean hasBeenShownColorCodeWarning) {
     	playerUUID = uuid;
         inLangCode = langIn;
