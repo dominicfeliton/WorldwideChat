@@ -5,84 +5,26 @@
 #      | |/\| |/ _ \| '__| |/ _` \ \ /\ / / |/ _` |/ _ \ |   | '_ \ / _` | __|    - by 3xpl0itz
 #      \  /\  / (_) | |  | | (_| |\ V  V /| | (_| |  __/ \__/\ | | | (_| | |_ 
 #       \/  \/ \___/|_|  |_|\__,_| \_/\_/ |_|\__,_|\___|\____/_| |_|\__,_|\__|
+#
+# HOW TO SETUP: https://github.com/3xpl0itz/WorldwideChat/wiki/Default-Explained-config.yml
 
 General:
-  
-  # Change the prefix that appears next to messages sent by this plugin.
-  # Default is "WWC" or "Default" to use the built-in prefix.
   prefixName: WWC
-  
-  # Enable or disable bStats.
-  # Default is "true" for enable.
-  # Change this value to "false" to disable bStats :(.
   enablebStats: true
-  
-  # Change plugin language.
-  # Default is "en" for English.
   pluginLang: en
-  
-  # The delay between each check for updates from the plugin's github repo.
-  # Must be a minimum of 10 seconds so that you don't kill your server with update requests.
-  # Default is 86400 (seconds), or 1 day.
   updateCheckerDelay: 86400
-  
 Chat:
-
-  # Send chat notification on user login if they are still translating.
-  # Set to true to enable, and false to disable.
-  # Default is "true" for enable.
   sendTranslationChat: true
-  
-  # Send chat notification if there is an update available to the plugin.
-  # If the user is not OP or doesn't have the "worldwidechat.chatupdate" permission,
-  # this message won't send whether this option is enabled or disabled.
-  # Set to true to enable, and false to disable.
-  # Default is "true" for enable.
   sendPluginUpdateChat: true
-  
 Translator:
-
-  # Please Note: YOU CAN ONLY HAVE ONE TRANSLATOR ENABLED AT A TIME.
-
-  # Watson Configuration: Change to true to enable, and fill out the required information below.
-  # Because Watson has the best free plan, it is used by default.
-  # Set to "false" to not use it.
-  # The default is true.
   useWatsonTranslate: true
   watsonAPIKey: 
   watsonURL:
-  
-  # Google Translate Configuration: Change to true to enable, and fill out the required information below.
-  # Has a more restrictive "free" plan compared to Watson, but may be more accurate.
-  # useGoogleTranslate is default "false," meaning it is not used. 
-  # Set to "true" to use it, but make sure every other translator is set to false.
   useGoogleTranslate: false
   googleTranslateAPIKey:
-  
-  # Amazon Translate Configuration: Change to true to enable, and fill out the required information below.
-  # An alternative to both IBM Watson and Google Translate.
-  # useAmazonTranslate is default "false," meaning it is not used.
-  # Set to "true" to use it, but make sure every other translator is set to false.
   useAmazonTranslate: false
   amazonAccessKey:
   amazonSecretKey:
   amazonRegion: 
-  # For amazonRegion, choose the region closest to your server and type the corresponding code.
-  # https://docs.aws.amazon.com/general/latest/gr/rande.html
-  # EX: If you are closest to US East (Ohio), you would type (us-east-2) without the parenthesis after amazonRegion.
-  
-  # Set the number of phrases to be stored in the "translation cache."
-  # This cache will store your X most translated phrases. This might be faster if:
-  # Your ping times to a translation server are trash OR you have a fast machine with plenty of resources + RAM.
-  # Set to 0 to disable this feature, in case you think it is negatively affecting your performance.
-  # I would not recommend setting this above a couple hundred, especially if you have less performant hardware.
-  # The default is 10.
   translatorCacheSize: 10
-  
-  # Global rate limit the translator, in seconds (no decimals.) 
-  # Unlike the "worldwidechat.ratelimit.####" permission per player, this will apply serverwide.
-  # To whitelist people from all rate limits including this one, give them the permission "worldwidechat.ratelimit.exempt"
-  # The default is 0, or disabled.
   rateLimit: 0
-  
-  # The End! For now...:)
