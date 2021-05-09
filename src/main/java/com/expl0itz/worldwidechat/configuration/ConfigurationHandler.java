@@ -143,7 +143,6 @@ public class ConfigurationHandler {
         }
         
         //Cache Settings
-        main.getCache().clear();
         if (getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
             main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigCacheEnabled").replace("%i", "" + getMainConfig().getInt("Translator.translatorCacheSize")));
         } else {

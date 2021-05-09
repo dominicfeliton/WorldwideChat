@@ -89,12 +89,6 @@ public class WorldwideChat extends JavaPlugin {
     private String pluginLang = "en";
     private String translatorName = "Watson";
 
-    /*Little bug about text components as of adventure 4.5.1:
-     * If you do not use a NamedTextColor as your first color (ex: hex), the output will
-     * be garbled with some annoying variables. We used the MC dark red to "get around"
-     * this. Even though it's more of a good alternative solution now, keep this in mind if
-     * this is still not patched + you start with a hex color.
-     * */
     private TextComponent pluginPrefix = Component.text()
         .content("[").color(NamedTextColor.DARK_RED).decoration(TextDecoration.BOLD, true)
         .append(Component.text().content(pluginPrefixString).color(TextColor.color(0x5757c4)))

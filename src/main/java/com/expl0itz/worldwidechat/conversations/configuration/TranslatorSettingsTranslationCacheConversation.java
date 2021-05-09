@@ -31,7 +31,6 @@ public class TranslatorSettingsTranslationCacheConversation extends NumericPromp
 	@Override
 	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 		if (input.intValue() > -1) {
-			main.getCache().clear();
 			main.getConfigManager().getMainConfig().set("Translator.translatorCacheSize", input.intValue());
 			try {
 				main.addPlayerUsingConfigurationGUI((Player)context.getForWhom());
