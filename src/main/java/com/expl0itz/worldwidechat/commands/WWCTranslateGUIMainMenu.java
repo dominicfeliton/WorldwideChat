@@ -122,7 +122,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				}));
 			
 			/* Rate Limit Button: Set a rate limit for the current translator */
-			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcrl")) {
 				ConversationFactory rateConvo = new ConversationFactory(main)
 						.withModality(true)
 						.withFirstPrompt(new RateLimitConversation(main.getActiveTranslator(targetPlayerUUID)));
@@ -139,7 +139,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 			} 
 			
 			/* Book Translation Button */
-			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwctb")) {
 				ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
 				ItemMeta bookMeta = bookButton.getItemMeta();
 				bookMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIBookButton"));
@@ -157,7 +157,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 			}
 			
 			/* Sign Translation Button */
-			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcts")) {
 				ItemStack signButton = new ItemStack(Material.OAK_SIGN);
 				ItemMeta signMeta = signButton.getItemMeta();
 				signMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUISignButton"));
@@ -204,51 +204,57 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				}));
 			
 			/* Rate Limit Button */
-			ConversationFactory rateConvo = new ConversationFactory(main)
-					.withModality(true)
-					.withFirstPrompt(new RateLimitConversation(currTranslator));
-			ItemStack rateButton = new ItemStack(Material.SLIME_BLOCK);
-			ItemMeta rateMeta = rateButton.getItemMeta();
-			rateMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIRateButton"));
-			if (currTranslator.getRateLimit() > 0) {				
-				rateMeta.addEnchant(glow, 1, true);
+			if (player.hasPermission("worldwidechat.wwcrl")) {
+				ConversationFactory rateConvo = new ConversationFactory(main)
+						.withModality(true)
+						.withFirstPrompt(new RateLimitConversation(currTranslator));
+				ItemStack rateButton = new ItemStack(Material.SLIME_BLOCK);
+				ItemMeta rateMeta = rateButton.getItemMeta();
+				rateMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIRateButton"));
+				if (currTranslator.getRateLimit() > 0) {				
+					rateMeta.addEnchant(glow, 1, true);
+				}
+				rateButton.setItemMeta(rateMeta);
+				contents.set(3, 2, ClickableItem.of(rateButton, 
+						e -> {
+							rateConvo.buildConversation(player).begin();}));
 			}
-			rateButton.setItemMeta(rateMeta);
-			contents.set(3, 2, ClickableItem.of(rateButton, 
-					e -> {
-						rateConvo.buildConversation(player).begin();}));
 			
 			/* Book Translation Button */
-			ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
-			ItemMeta bookMeta = bookButton.getItemMeta();
-			bookMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIBookButton"));
-			if (currTranslator.getTranslatingBook()) {				
-				bookMeta.addEnchant(glow, 1, true);
+			if (player.hasPermission("worldwidechat.wwctb")) {
+				ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
+				ItemMeta bookMeta = bookButton.getItemMeta();
+				bookMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIBookButton"));
+				if (currTranslator.getTranslatingBook()) {				
+					bookMeta.addEnchant(glow, 1, true);
+				}
+				bookButton.setItemMeta(bookMeta);
+				contents.set(3, 1, ClickableItem.of(bookButton, 
+						e -> {
+							String[] args = {};
+							WWCTranslateBook translateBook = new WWCTranslateBook((CommandSender)player, null, null, args);
+							translateBook.processCommand();
+							getTranslateMainMenu(targetPlayerUUID).open(player);
+						}));
 			}
-			bookButton.setItemMeta(bookMeta);
-			contents.set(3, 1, ClickableItem.of(bookButton, 
-					e -> {
-						String[] args = {};
-						WWCTranslateBook translateBook = new WWCTranslateBook((CommandSender)player, null, null, args);
-						translateBook.processCommand();
-						getTranslateMainMenu(targetPlayerUUID).open(player);
-					}));
 			
 			/* Sign Translation Button */
-			ItemStack signButton = new ItemStack(Material.OAK_SIGN);
-			ItemMeta signMeta = signButton.getItemMeta();
-			signMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUISignButton"));
-			if (currTranslator.getTranslatingSign()) {				
-				signMeta.addEnchant(glow, 1, true);
+			if (player.hasPermission("worldwidechat.wwcts")) {
+				ItemStack signButton = new ItemStack(Material.OAK_SIGN);
+				ItemMeta signMeta = signButton.getItemMeta();
+				signMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUISignButton"));
+				if (currTranslator.getTranslatingSign()) {				
+					signMeta.addEnchant(glow, 1, true);
+				}
+				signButton.setItemMeta(signMeta);
+				contents.set(3, 7, ClickableItem.of(signButton, 
+						e -> {
+							String[] args = {};
+							WWCTranslateSign translateSign = new WWCTranslateSign((CommandSender)player, null, null, args);
+							translateSign.processCommand();
+							getTranslateMainMenu(targetPlayerUUID).open(player);
+						}));
 			}
-			signButton.setItemMeta(signMeta);
-			contents.set(3, 7, ClickableItem.of(signButton, 
-					e -> {
-						String[] args = {};
-						WWCTranslateSign translateSign = new WWCTranslateSign((CommandSender)player, null, null, args);
-						translateSign.processCommand();
-						getTranslateMainMenu(targetPlayerUUID).open(player);
-					}));
 		} else { /* Current player exists */
 			return;
 		}
