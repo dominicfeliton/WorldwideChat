@@ -133,13 +133,11 @@ public class ConfigurationHandler {
                 getMainConfig().set("Translator.useAmazonTranslate", false);
                 getMainConfig().save(configFile);
                 main.setTranslatorName("Invalid");
-                //return false;
             }
         } catch (Exception e) {
         	main.getLogger().severe("(" + main.getTranslatorName() + ") " + e.getMessage());
         	e.printStackTrace();
         	main.setTranslatorName("Invalid");
-        	//return false;
         }
         
         //Cache Settings
