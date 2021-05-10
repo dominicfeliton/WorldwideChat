@@ -87,7 +87,7 @@ public class WorldwideChat extends JavaPlugin {
 
     private String pluginPrefixString = "WWC";
     private String pluginLang = "en";
-    private String translatorName = "Watson";
+    private String translatorName = "Invalid";
 
     private TextComponent pluginPrefix = Component.text()
         .content("[").color(NamedTextColor.DARK_RED).decoration(TextDecoration.BOLD, true)
