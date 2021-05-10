@@ -1,13 +1,17 @@
 # WorldwideChat
 ![](https://github.com/3xpl0itz/WorldwideChat/blob/main/resources/Banner.png)
 WorldwideChat is a plugin for Bukkit, Spigot, and PaperMC 1.14+.
-It allows you to translate Minecraft live using either the IBM Watson or Google Translate API (and eventually more as it gets updated).
+It allows you to translate Minecraft live using several Translation APIs.
 Some of its notable features include:
-- Live translation globally, for other players or just you.
-- Translate chat, signs, and written books
+- IBM Watson, Google Translate, and Amazon Translate support.
+- An interactive configuration GUI.
+- Translate chat, signs, and written books with an interactive GUI.
+- Translation globally, for other players, or just you.
+- The plugin itself has been translated into more than 30 languages.
 - A cache that stores the most used phrases by players on your server, so that you don't have to ping the API constantly.
+- Rate limits so your players don't fill up a quota too quickly.
 - Persistent translation options saved per player across server reboots and reloads.
-- Stat tracker for all of your active translators
+- Stat tracker to keep track of how your players use this plugin.
 
 And much more to come! 
 
