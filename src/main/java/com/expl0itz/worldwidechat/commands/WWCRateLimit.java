@@ -66,7 +66,7 @@ public class WWCRateLimit extends BasicCommand {
             }
         } 
         
-        /* Set rate limit for user */
+        /* Set personal rate limit */
         if (args.length == 1 && args[0].matches("[0-9]+")) {
             if (main.getActiveTranslator(((Player)sender).getUniqueId().toString()) != null) {
             	ActiveTranslator currTranslator = main.getActiveTranslator(((Player)sender).getUniqueId().toString());
