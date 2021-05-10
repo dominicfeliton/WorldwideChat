@@ -122,7 +122,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				}));
 			
 			/* Rate Limit Button: Set a rate limit for the current translator */
-			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcrl")) {
+			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcrl") && player.hasPermission("worldwidechat.wwcrl.otherplayers")) {
 				ConversationFactory rateConvo = new ConversationFactory(main)
 						.withModality(true)
 						.withFirstPrompt(new RateLimitConversation(main.getActiveTranslator(targetPlayerUUID)));
@@ -139,7 +139,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 			} 
 			
 			/* Book Translation Button */
-			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwctb")) {
+			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwctb") && player.hasPermission("worldwidechat.wwctb.otherplayers")) {
 				ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
 				ItemMeta bookMeta = bookButton.getItemMeta();
 				bookMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIBookButton"));
@@ -157,7 +157,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 			}
 			
 			/* Sign Translation Button */
-			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcts")) {
+			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcts") && player.hasPermission("worldwidechat.wwcts.otherplayers")) {
 				ItemStack signButton = new ItemStack(Material.OAK_SIGN);
 				ItemMeta signMeta = signButton.getItemMeta();
 				signMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUISignButton"));
