@@ -32,7 +32,6 @@ public class OnPlayerJoinListener implements Listener {
                     .append(Component.text().content(")").color(NamedTextColor.GOLD))
                     .build();
                 main.adventure().sender(event.getPlayer()).sendMessage(outOfDate);
-                main.setOutOfDate(true);
             }
             
             /* Global translate is disabled, and user has a translation config */

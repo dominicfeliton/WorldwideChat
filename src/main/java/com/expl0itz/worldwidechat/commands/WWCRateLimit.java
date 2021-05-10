@@ -89,7 +89,7 @@ public class WWCRateLimit extends BasicCommand {
         
         /* Disable another user's existing rate limit */
         if (args.length == 1 && args[0] instanceof String) {
-            if (Bukkit.getPlayer(args[0]) != null && main.getActiveTranslator((Bukkit.getPlayer(args[0])).getUniqueId().toString()) != null) {
+            if (Bukkit.getPlayer(args[0]) != null && main.getActiveTranslator((Bukkit.getPlayer(args[0])).getUniqueId().toString()) != null && !args[0].equalsIgnoreCase(sender.getName())) {
             	ActiveTranslator currTranslator = main.getActiveTranslator((Bukkit.getPlayer(args[0])).getUniqueId().toString());
             	if (currTranslator.getRateLimit() == 0) {
         			final TextComponent rateLimitAlreadyOff = Component.text()

@@ -215,7 +215,7 @@ public class WorldwideChat extends JavaPlugin {
             	}
             } else if (command.getName().equalsIgnoreCase("wwcrl")) {
             	//Rate Limit Command
-            	if (checkSenderIdentity(sender)) {
+            	if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
             		WWCRateLimit wwcrl = new WWCRateLimit(sender, command, label, args);
             		return wwcrl.processCommand();
             	}
@@ -495,12 +495,10 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     public PlayerRecord getPlayerRecord(String UUID, boolean createNewIfNotExisting) {
-        if (playerRecords.size() > 0) 
-        {
+        if (playerRecords.size() > 0) {
             for (PlayerRecord eaRecord: playerRecords) {
                 //If the player is both in the ArrayList and has a file
-                if (eaRecord.getUUID().toString().equals(UUID)) 
-                {
+                if (eaRecord.getUUID().toString().equals(UUID))  {
                     return eaRecord;
                 }
             }

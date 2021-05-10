@@ -27,9 +27,8 @@ public class BookTranslation implements Task<ItemStack, ItemStack>{
     }
 
     @Override
-    public ItemStack run(ItemStack overrideBook) {
+    public ItemStack run(ItemStack currentBook) {
         /* Init vars */
-        ItemStack currentBook = event.getItem();
         BookMeta meta = (BookMeta) currentBook.getItemMeta();
         List<String> pages = meta.getPages();
         List<String> translatedPages = new ArrayList<String>();

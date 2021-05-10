@@ -1,6 +1,5 @@
 package com.expl0itz.worldwidechat.listeners;
 
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -17,11 +16,7 @@ public class ChatListener implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerChat(AsyncPlayerChatEvent event) {
         if (!main.isReloading().get() && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) instanceof ActiveTranslator || main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) {
-            event.setMessage(processPlayerChat(event.getPlayer(), event.getMessage())); 
+        	event.setMessage(CommonDefinitions.translateText(event.getMessage(), event.getPlayer())); 
         }
-    }
-    
-    public String processPlayerChat(Player inPlayer, String inMessage) {
-    	return CommonDefinitions.translateText(inMessage, inPlayer);
     }
 }

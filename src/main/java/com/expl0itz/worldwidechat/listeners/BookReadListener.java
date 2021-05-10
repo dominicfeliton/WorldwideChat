@@ -32,9 +32,10 @@ public class BookReadListener implements Listener{
             /* Get vars, start book translation */
             try {
                 TaskChain<?> chain = WorldwideChat.newSharedChain("bookTranslate");
+                ItemStack currentBook = event.getItem();
                 chain
                     .async(() -> {
-                        new BookTranslation(event).run(null);
+                        new BookTranslation(event).run(currentBook);
                     })
                     .sync(() -> {
                         ItemStack newBook = chain.getTaskData("translatedBook");

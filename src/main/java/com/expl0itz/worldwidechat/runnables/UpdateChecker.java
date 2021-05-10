@@ -45,10 +45,10 @@ public class UpdateChecker implements Runnable{
     }
 
     public boolean upToDate() {
-     return upToDate;
+        return upToDate;
     }
     
     public String getLatestVersion() {
-     return latest;
+        return latest;
     }
 }
