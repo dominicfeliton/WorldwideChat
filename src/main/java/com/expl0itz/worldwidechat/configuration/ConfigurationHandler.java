@@ -38,6 +38,34 @@ public class ConfigurationHandler {
         /* Load main config */
         mainConfig = YamlConfiguration.loadConfiguration(configFile);
         
+        /* Add default options, if they do not exist */
+    	mainConfig.addDefault("General.prefixName", "WWC");
+    	mainConfig.addDefault("General.enablebStats", true);
+    	mainConfig.addDefault("General.pluginLang", "en");
+    	mainConfig.addDefault("General.updateCheckerDelay", 86400);
+    	
+    	mainConfig.addDefault("Chat.sendTranslationChat", true);
+    	mainConfig.addDefault("Chat.sendPluginUpdateChat", true);
+    	
+    	mainConfig.addDefault("Translator.useWatsonTranslate", true);
+    	mainConfig.addDefault("Translator.watsonAPIKey", "");
+    	mainConfig.addDefault("Translator.watsonURL", "");
+    	mainConfig.addDefault("Translator.useGoogleTranslate", false);
+    	mainConfig.addDefault("Translator.googleTranslateAPIKey", "");
+    	mainConfig.addDefault("Translator.useAmazonTranslate", false);
+    	mainConfig.addDefault("Translator.amazonAccessKey", "");
+    	mainConfig.addDefault("Translator.amazonSecretKey", "");
+    	mainConfig.addDefault("Translator.amazonRegion", "");
+    	mainConfig.addDefault("Translator.translatorCacheSize", 10);
+    	mainConfig.addDefault("Translator.rateLimit", 0);
+        
+    	mainConfig.options().copyDefaults(true);
+    	try {
+			mainConfig.save(configFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    	
         /* Get plugin lang */
         CommonDefinitions defs = new CommonDefinitions();
         for (int i = 0; i < defs.getSupportedPluginLangCodes().length; i++) {
