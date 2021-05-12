@@ -82,11 +82,11 @@ public class WWCTranslate extends BasicCommand {
                 fileToBeDeleted.delete();
             }
             adventureSender.sendMessage(chatTranslationStopped);
-            if (args[0].equalsIgnoreCase("Stop")) {
+            if (args[0] != null && args[0].equalsIgnoreCase("Stop")) {
                 return true;
             }
         //If sender wants to overwrite a target player's existing translation session
-        } else if (testPlayer != null && !isGlobal && main.getActiveTranslator(testPlayer.getUniqueId().toString()) instanceof ActiveTranslator) {
+        } else if (testPlayer != null && !testPlayer.getName().equals(sender.getName())  && !isGlobal && main.getActiveTranslator(testPlayer.getUniqueId().toString()) instanceof ActiveTranslator) {
             Audience targetSender = main.adventure().sender(testPlayer);
             main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
             //Delete target player's existing config file
@@ -104,7 +104,7 @@ public class WWCTranslate extends BasicCommand {
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStoppedOtherPlayer").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                 .build();
             adventureSender.sendMessage(chatTranslationStoppedOtherPlayer);
-            if (args[1].equalsIgnoreCase("Stop")) {
+            if (args[1] != null && args[1].equalsIgnoreCase("Stop")) {
                 return true;
             }
         } 
@@ -121,7 +121,7 @@ public class WWCTranslate extends BasicCommand {
                 fileToBeDeleted.delete();
             } for (Player eaPlayer: Bukkit.getOnlinePlayers()) {
                 main.adventure().sender(eaPlayer).sendMessage(chatTranslationStopped);
-            } if (args[0].equalsIgnoreCase("Stop")) {
+            } if (args[0] != null && args[0].equalsIgnoreCase("Stop")) {
                 return true;
             }
         }

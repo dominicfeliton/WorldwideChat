@@ -2,6 +2,7 @@ package com.expl0itz.worldwidechat.listeners;
 
 import org.bukkit.block.Sign;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
@@ -19,7 +20,7 @@ public class SignReadListener implements Listener {
     
     private WorldwideChat main = WorldwideChat.getInstance();
     
-    @EventHandler
+    @EventHandler(priority = EventPriority.HIGHEST) 
     public void onPlayerInteract(PlayerInteractEvent event) {
         if (!main.isReloading().get() && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null 
                 && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingSign() 

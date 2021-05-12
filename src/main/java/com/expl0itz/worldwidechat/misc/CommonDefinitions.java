@@ -1,5 +1,6 @@
 package com.expl0itz.worldwidechat.misc;
 
+import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.lang3.StringEscapeUtils;
@@ -186,7 +187,7 @@ public class CommonDefinitions {
     
     public static String translateText(String inMessage, Player currPlayer) {
     	/* If translator settings are invalid, do not do this... */
-    	if (WorldwideChat.getInstance().getTranslatorName().equals("Invalid")) {
+    	if (WorldwideChat.getInstance().getTranslatorName().equals("Invalid") || !(inMessage.length() > 0)) {
     		return inMessage;
     	}
     	
@@ -196,19 +197,10 @@ public class CommonDefinitions {
         //Therefore, we find the " #" regex or the "&" char, and warn the user about it
         boolean essentialsColorCodeWarning = false;
         Audience adventureSender = WorldwideChat.getInstance().adventure().sender(currPlayer);
-        for (int i = 0; i < inMessage.toCharArray().length; i++) {
-        	try {
-                if (inMessage.toCharArray()[i] >= '0' && inMessage.toCharArray()[i] <= '9') {
-                    if (!(inMessage.toCharArray()[i - 1] >= '0' && inMessage.toCharArray()[i - 1] <= '~')) {
-                        essentialsColorCodeWarning = true;
-                        break; //don't waste time on this
-                    }
-                }
-        	} catch (Exception e) {
-        		//Usually an ArrayIndexOutOfBoundsException; literally just ignore this, this check is purely optional anyways
-        		//DEBUG: main.getLogger().info("caught exception :(");
-        	}
+        if (inMessage.matches(".*[0-9].*")) {
+        	essentialsColorCodeWarning = true;
         }
+        
         if (!(WorldwideChat.getInstance().getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) //don't do any of this if /wwcg is enabled; players may not be in ArrayList and this will throw an exception
             &&
             (essentialsColorCodeWarning || inMessage.indexOf("&") != -1) //check sent chat to make sure it includes a CC
@@ -224,10 +216,6 @@ public class CommonDefinitions {
             WorldwideChat.getInstance().getActiveTranslator(Bukkit.getServer().getPlayer(currPlayer.getName()).getUniqueId().toString()).setCCWarning(true);
             //we're still gonna translate it but it won't look pretty
         }
-    	
-    	if (!(inMessage.length() > 0)) {
-    		return inMessage;
-    	}
     	
     	/* Modify or create new player record */
         PlayerRecord currPlayerRecord = WorldwideChat.getInstance().getPlayerRecord(currPlayer.getUniqueId().toString(), true);
@@ -248,23 +236,21 @@ public class CommonDefinitions {
         /* Check cache */
         if (WorldwideChat.getInstance().getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
             //Check cache for inputs, since config says we should
-            for (int c = 0; c < WorldwideChat.getInstance().getCache().size(); c++) {
-                CachedTranslation currentTerm = WorldwideChat.getInstance().getCache().get(c);
-                if (currentTerm.getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
-                        && (currentTerm.getOutputLang().equalsIgnoreCase(currActiveTranslator.getOutLangCode()))
-                        && (currentTerm.getInputPhrase().equalsIgnoreCase(inMessage))
-                        ) {
-                    currentTerm.setNumberOfTimes(currentTerm.getNumberOfTimes()+1);
-                    //DEBUG: main.getLogger().info("Term was already cached: How many times = " + currentTerm.getNumberOfTimes() + " List size: " + main.getCache().size());
-                    // Update stats, return output
-                    if (currPlayerRecord != null) {
+        	List<CachedTranslation> currCache = WorldwideChat.getInstance().getCache();
+        	synchronized (currCache) {
+        		for (CachedTranslation currentTerm : currCache) {
+        			if (currentTerm.getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
+                            && (currentTerm.getOutputLang().equalsIgnoreCase(currActiveTranslator.getOutLangCode()))
+                            && (currentTerm.getInputPhrase().equalsIgnoreCase(inMessage))
+                            ) {
+                        currentTerm.setNumberOfTimes(currentTerm.getNumberOfTimes()+1);
+                        // Update stats, return output
                         currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations()+1);    
                         currPlayerRecord.setLastTranslationTime();
-                        WorldwideChat.getInstance().getConfigManager().createStatsConfig(currPlayerRecord);
+                        return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase())); //done :)
                     }
-                    return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase())); //done :)
-                }
-            }
+        		}
+        	}
         }
         
         /* Rate limit check */
