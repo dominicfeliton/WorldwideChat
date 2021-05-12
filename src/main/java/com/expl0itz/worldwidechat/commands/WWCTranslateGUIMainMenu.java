@@ -2,6 +2,7 @@ package com.expl0itz.worldwidechat.commands;
 
 import java.util.UUID;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -21,6 +22,10 @@ import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.TextComponent;
+import net.kyori.adventure.text.format.NamedTextColor;
+import net.kyori.adventure.text.format.TextDecoration;
 
 public class WWCTranslateGUIMainMenu implements InventoryProvider {
 
@@ -260,9 +265,19 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 		}
 	}
 
+
 	@Override
 	public void update(Player player, InventoryContents contents) {
-		
+	    if (targetPlayerUUID != null) {
+	    	if (Bukkit.getPlayer(UUID.fromString(targetPlayerUUID)) == null) {
+	    		//Target player no longer online
+				player.closeInventory();
+				final TextComponent targetPlayerDC = Component.text()
+	                    .append(main.getPluginPrefix().asComponent())
+	                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUITargetPlayerNull")).color(NamedTextColor.RED).decorate(TextDecoration.ITALIC))
+	                    .build();
+	                main.adventure().sender(player).sendMessage(targetPlayerDC);
+	    	}
+	    }
 	}
-
 }
