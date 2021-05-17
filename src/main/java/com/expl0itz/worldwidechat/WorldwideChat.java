@@ -36,6 +36,7 @@ import com.expl0itz.worldwidechat.listeners.DeluxeChatListener;
 import com.expl0itz.worldwidechat.listeners.InventoryListener;
 import com.expl0itz.worldwidechat.listeners.OnPlayerJoinListener;
 import com.expl0itz.worldwidechat.listeners.SignReadListener;
+import com.expl0itz.worldwidechat.listeners.WWCTabCompleter;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CachedTranslation;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
@@ -245,6 +246,14 @@ public class WorldwideChat extends JavaPlugin {
             BukkitTask loadUserData = Bukkit.getScheduler().runTaskAsynchronously(this, new LoadUserData());
             backgroundTasks.put("loadUserData", loadUserData);
             
+            //Register tab completer
+            getCommand("wwcg").setTabCompleter(new WWCTabCompleter());
+            getCommand("wwct").setTabCompleter(new WWCTabCompleter());
+            getCommand("wwctb").setTabCompleter(new WWCTabCompleter());
+            getCommand("wwcts").setTabCompleter(new WWCTabCompleter());
+            getCommand("wwcs").setTabCompleter(new WWCTabCompleter());
+            getCommand("wwcrl").setTabCompleter(new WWCTabCompleter());
+            
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
             return true;
         }
@@ -333,15 +342,11 @@ public class WorldwideChat extends JavaPlugin {
             Field f = Enchantment.class.getDeclaredField("acceptingNew");
             f.setAccessible(true);
             f.set(null, true);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        }
-        try {
+        } try {
             EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(this, "wwc_glow"));
             Enchantment.registerEnchantment(glow);
-        }
-        catch (IllegalArgumentException e){
         }
         catch(Exception e){
             e.printStackTrace();
