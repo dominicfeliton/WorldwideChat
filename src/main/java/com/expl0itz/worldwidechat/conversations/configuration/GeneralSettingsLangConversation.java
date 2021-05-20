@@ -27,12 +27,12 @@ public class GeneralSettingsLangConversation extends StringPrompt {
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		((Player)context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationLangInput").replace("%i", main.getPluginLang()).replace("%o", Arrays.toString(new CommonDefinitions().getSupportedPluginLangCodes()));
+		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationLangInput").replace("%i", main.getPluginLang()).replace("%o", Arrays.toString(CommonDefinitions.supportedPluginLangCodes));
 	}
 
 	@Override
 	public Prompt acceptInput(ConversationContext context, String input) {
-		for (String eaStr : new CommonDefinitions().getSupportedPluginLangCodes()) {
+		for (String eaStr : CommonDefinitions.supportedPluginLangCodes) {
 			if (!input.equals("0")) {
 				if (eaStr.equals(input)) {
 					main.setPluginLang(input);

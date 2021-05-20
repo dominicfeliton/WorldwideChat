@@ -67,9 +67,8 @@ public class ConfigurationHandler {
 		}
     	
         /* Get plugin lang */
-        CommonDefinitions defs = new CommonDefinitions();
-        for (int i = 0; i < defs.getSupportedPluginLangCodes().length; i++) {
-            if (defs.getSupportedPluginLangCodes()[i].equalsIgnoreCase(getMainConfig().getString("General.pluginLang"))) {
+        for (int i = 0; i < CommonDefinitions.supportedPluginLangCodes.length; i++) {
+            if (CommonDefinitions.supportedPluginLangCodes[i].equalsIgnoreCase(getMainConfig().getString("General.pluginLang"))) {
                 main.setPluginLang(getMainConfig().getString("General.pluginLang"));
                 main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + main.getPluginLang() + ".");
                 return;

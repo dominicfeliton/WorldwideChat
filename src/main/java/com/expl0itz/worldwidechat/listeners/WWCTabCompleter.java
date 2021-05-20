@@ -12,6 +12,7 @@ import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
+import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.misc.SupportedLanguageObject;
 
 public class WWCTabCompleter implements TabCompleter {
@@ -39,7 +40,7 @@ public class WWCTabCompleter implements TabCompleter {
 					if (args.length == 2 && Bukkit.getPlayer(args[0]) != null && !args[0].equalsIgnoreCase(sender.getName()) && main.getActiveTranslator(Bukkit.getPlayer(args[0]).getUniqueId().toString()) != null) {
 						out.add("stop");
 					}
-					if (args.length < 3 && !args[0].equalsIgnoreCase(sender.getName()) || args.length == 3 && Bukkit.getPlayer(args[0]) != null && !args[0].equalsIgnoreCase(sender.getName())) {
+					if (args.length == 1 || (args.length == 2 && !args[0].equalsIgnoreCase(sender.getName()) && (CommonDefinitions.getSupportedTranslatorLang(args[0]) != null || Bukkit.getPlayer(args[0]) != null)) || (args.length == 3 && CommonDefinitions.getSupportedTranslatorLang(args[1]) != null && !args[0].equalsIgnoreCase(sender.getName()) && Bukkit.getPlayer(args[0]) != null)) {
 						for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
 							out.add(eaObj.getLangName());
 							out.add(eaObj.getLangCode());
@@ -58,12 +59,15 @@ public class WWCTabCompleter implements TabCompleter {
 							}
 						}
 					}
-					if (args.length == 2 && Bukkit.getPlayer(args[0]) != null && !args[0].equalsIgnoreCase(sender.getName()) && main.getActiveTranslator(Bukkit.getPlayer(args[0]).getUniqueId().toString()) != null) {
-						if ("stop".startsWith(args[args.length - 1].toLowerCase())) {
-							out.add("stop");
+					if (args.length == 2) {
+						if (Bukkit.getPlayer(args[0]) != null && !args[0].equalsIgnoreCase(sender.getName()) && main.getActiveTranslator(Bukkit.getPlayer(args[0]).getUniqueId().toString()) != null) {
+							if ("stop".startsWith(args[args.length - 1].toLowerCase())) {
+								out.add("stop");
+							}
 						}
+						
 					}
-					if (args.length < 3 && !args[0].equalsIgnoreCase(sender.getName()) || args.length == 3 && Bukkit.getPlayer(args[0]) != null && !args[0].equalsIgnoreCase(sender.getName())) {
+					if (args.length == 1 || (args.length == 2 && !args[0].equalsIgnoreCase(sender.getName()) && (CommonDefinitions.getSupportedTranslatorLang(args[0]) != null || Bukkit.getPlayer(args[0]) != null)) || (args.length == 3 && CommonDefinitions.getSupportedTranslatorLang(args[1]) != null && !args[0].equalsIgnoreCase(sender.getName()) && Bukkit.getPlayer(args[0]) != null)) {
 						for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
 							if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
 								out.add(eaObj.getLangName());
@@ -83,9 +87,11 @@ public class WWCTabCompleter implements TabCompleter {
 							out.add("stop");
 						}
 					}
-					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
-						out.add(eaObj.getLangName());
-						out.add(eaObj.getLangCode());
+					if (args.length == 1 || (args.length == 2 && CommonDefinitions.getSupportedTranslatorLang(args[0]) != null)) {
+						for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
+							out.add(eaObj.getLangName());
+							out.add(eaObj.getLangCode());
+					    }
 					}
 				} else {
 					if (args.length == 1) {
@@ -93,12 +99,14 @@ public class WWCTabCompleter implements TabCompleter {
 							out.add("stop");
 						}
 					}
-					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
-						if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
-							out.add(eaObj.getLangName());
-						}
-						if (eaObj.getLangCode().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
-							out.add(eaObj.getLangCode());
+					if (args.length == 1 || (args.length == 2 && CommonDefinitions.getSupportedTranslatorLang(args[0]) != null)) {
+						for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
+							if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
+								out.add(eaObj.getLangName());
+							}
+							if (eaObj.getLangCode().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
+								out.add(eaObj.getLangCode());
+							}
 						}
 					}
 				}
@@ -160,7 +168,7 @@ public class WWCTabCompleter implements TabCompleter {
 						}
 					}
 				}
-				if (!args[0].matches("[0-9]+") || args.length == 1) {
+				if (args.length == 1 || (args.length == 2 && !args[0].matches("[0-9]+") && Bukkit.getPlayer(args[0]) != null && main.getActiveTranslator(Bukkit.getPlayer(args[0]).getUniqueId().toString()) != null)) {
 					out.add("0");
 					out.add("3");
 					out.add("5");

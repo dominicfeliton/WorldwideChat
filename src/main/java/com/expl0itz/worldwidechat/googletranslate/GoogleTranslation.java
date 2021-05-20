@@ -57,12 +57,11 @@ public class GoogleTranslation {
     
     public String translate() {
         /* Convert input + output lang to lang code because this API is funky, man */
-        CommonDefinitions defs = new CommonDefinitions();
-        if (!(inputLang.equals("None")) && !defs.getSupportedTranslatorLang(inputLang).getLangCode().equals(inputLang)) {
-            inputLang = defs.getSupportedTranslatorLang(inputLang).getLangCode();
+        if (!(inputLang.equals("None")) && !CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode().equals(inputLang)) {
+            inputLang = CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode();
         }
-        if (!defs.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
-            outputLang = defs.getSupportedTranslatorLang(outputLang).getLangCode();
+        if (!CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
+            outputLang = CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode();
         }
         
         /* Initialize translation object */

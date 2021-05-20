@@ -27,17 +27,15 @@ import net.kyori.adventure.text.format.TextDecoration;
 import net.md_5.bungee.api.ChatColor;
 
 public class CommonDefinitions {
-
-    private WorldwideChat main = WorldwideChat.getInstance();
     
     /* Important vars */
-    private String[] supportedMCVersions = {
+    public static String[] supportedMCVersions = {
         "1.16",
         "1.15",
         "1.14"
     };
     
-    private String[] supportedPluginLangCodes = {
+    public static String[] supportedPluginLangCodes = {
         "af",
         "sq",
         "am",
@@ -114,8 +112,8 @@ public class CommonDefinitions {
     };
 
     /* Getters */ 
-    public boolean isSameLang(String first, String second) {
-    	for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
+    public static boolean isSameLang(String first, String second) {
+    	for (SupportedLanguageObject eaLang : WorldwideChat.getInstance().getSupportedTranslatorLanguages()) {
             if ((eaLang.getLangName().equals(getSupportedTranslatorLang(first).getLangName()) 
                 && eaLang.getLangName().equals(getSupportedTranslatorLang(second).getLangName()))) {
                 return true;
@@ -124,8 +122,8 @@ public class CommonDefinitions {
         return false;
     }
     
-    public SupportedLanguageObject getSupportedTranslatorLang(String in) {
-        for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
+    public static SupportedLanguageObject getSupportedTranslatorLang(String in) {
+        for (SupportedLanguageObject eaLang : WorldwideChat.getInstance().getSupportedTranslatorLanguages()) {
             if ((eaLang.getLangCode().equalsIgnoreCase(in)
                 || eaLang.getLangName().equalsIgnoreCase(in))) {
                 return eaLang;
@@ -134,9 +132,9 @@ public class CommonDefinitions {
         return null;
     }
     
-    public String getValidLangCodes() {
+    public static String getValidLangCodes() {
         String out = "\n";
-        for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
+        for (SupportedLanguageObject eaLang : WorldwideChat.getInstance().getSupportedTranslatorLanguages()) {
     		out += "(" + eaLang.getLangCode() + " - " + eaLang.getLangName() + "), ";
     	}
         if (out.indexOf(",") != -1) {
@@ -352,13 +350,5 @@ public class CommonDefinitions {
             WorldwideChat.getInstance().addCacheTerm(newTerm);
         }
         return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', out));
-    }
-    
-    public String[] getSupportedPluginLangCodes() {
-        return supportedPluginLangCodes;
-    }
-
-    public String[] getSupportedMCVersions() {
-        return supportedMCVersions;
     }
 }

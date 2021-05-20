@@ -158,6 +158,8 @@ public class WorldwideChat extends JavaPlugin {
         }
         instance = null;
         taskChainFactory = null;
+        CommonDefinitions.supportedMCVersions = null;
+        CommonDefinitions.supportedPluginLangCodes = null;
         
         //All done.
         getLogger().info("Disabled WorldwideChat version " + pluginVersion + ".");
@@ -293,11 +295,10 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public void checkMCVersion() {
-        CommonDefinitions defs = new CommonDefinitions();
         String supportedVersions = "";
-        for (int i = 0; i < defs.getSupportedMCVersions().length; i++) {
-            supportedVersions += "(" + defs.getSupportedMCVersions()[i] + ") ";
-            if (Bukkit.getVersion().contains(defs.getSupportedMCVersions()[i])) {
+        for (int i = 0; i < CommonDefinitions.supportedMCVersions.length; i++) {
+            supportedVersions += "(" + CommonDefinitions.supportedMCVersions[i] + ") ";
+            if (Bukkit.getVersion().contains(CommonDefinitions.supportedMCVersions[i])) {
                 return;
             }
         }

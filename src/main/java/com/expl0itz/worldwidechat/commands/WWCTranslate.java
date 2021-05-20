@@ -127,9 +127,8 @@ public class WWCTranslate extends BasicCommand {
         }
             
         /* Process input */
-        CommonDefinitions defs = new CommonDefinitions();
         //Player has given us one argument
-        if (args.length == 1 && args[0] instanceof String && defs.getSupportedTranslatorLang(args[0]) != null) {
+        if (args.length == 1 && args[0] instanceof String && CommonDefinitions.getSupportedTranslatorLang(args[0]) != null) {
         	//We got a valid lang code, continue and add player to ArrayList
             if (!isGlobal) {
             	ActiveTranslator currTranslator = new ActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString(),
@@ -158,9 +157,9 @@ public class WWCTranslate extends BasicCommand {
             }
             return true;
         //Player has given us two arguments
-        } else if (args.length == 2 && args[0] instanceof String && args[1] instanceof String && defs.getSupportedTranslatorLang(args[0]) != null && defs.getSupportedTranslatorLang(args[1]) != null) {
+        } else if (args.length == 2 && args[0] instanceof String && args[1] instanceof String && CommonDefinitions.getSupportedTranslatorLang(args[0]) != null && CommonDefinitions.getSupportedTranslatorLang(args[1]) != null) {
         	//We got a valid lang code 2x, continue and add player to ArrayList
-            if (args[0].equalsIgnoreCase(args[1]) || (defs.isSameLang(args[0], args[1]))) {
+            if (args[0].equalsIgnoreCase(args[1]) || (CommonDefinitions.isSameLang(args[0], args[1]))) {
                 final TextComponent sameLangError = Component.text()
                     .append(main.getPluginPrefix().asComponent())
                     .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctSameLangError")).color(NamedTextColor.RED))
@@ -197,7 +196,7 @@ public class WWCTranslate extends BasicCommand {
             } 
             return true;
         // Player has given us two arguments: Case 2 (First arg is another player who is not ourselves...)
-        } else if (args.length == 2 && args[0] instanceof String && args[1] instanceof String && (!(args[0].equals(sender.getName())) && defs.getSupportedTranslatorLang(args[1]) != null)) {
+        } else if (args.length == 2 && args[0] instanceof String && args[1] instanceof String && (!(args[0].equals(sender.getName())) && CommonDefinitions.getSupportedTranslatorLang(args[1]) != null)) {
         	if (sender.hasPermission("worldwidechat.wwct.otherplayers")) {
         		if (Bukkit.getServer().getPlayer(args[0]) != null && (!(args[0].equals(sender.getName())))) {
         			if (!isGlobal) {
@@ -234,12 +233,12 @@ public class WWCTranslate extends BasicCommand {
             }
         	return true;
         //Player has given us three arguments
-        } else if (args.length == 3 && args[0] instanceof String && args[1] instanceof String && args[2] instanceof String && defs.getSupportedTranslatorLang(args[1]) != null && defs.getSupportedTranslatorLang(args[2]) != null) {
+        } else if (args.length == 3 && args[0] instanceof String && args[1] instanceof String && args[2] instanceof String && CommonDefinitions.getSupportedTranslatorLang(args[1]) != null && CommonDefinitions.getSupportedTranslatorLang(args[2]) != null) {
             //If args[0] == a player, see if sender has perms to change player translation preferences
             if (sender.hasPermission("worldwidechat.wwct.otherplayers")) {
                 if (Bukkit.getServer().getPlayer(args[0]) != null && (!(args[0].equals(sender.getName())))) {
                 	//We got a valid lang code 2x, continue and add player to ArrayList
-                    if (args[1].equalsIgnoreCase(args[2]) || (defs.isSameLang(args[1], args[2]))) {
+                    if (args[1].equalsIgnoreCase(args[2]) || (CommonDefinitions.isSameLang(args[1], args[2]))) {
                         final TextComponent sameLangError = Component.text()
                             .append(main.getPluginPrefix().asComponent())
                             .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctSameLangError")).color(NamedTextColor.RED))
@@ -284,7 +283,7 @@ public class WWCTranslate extends BasicCommand {
         /* If we got here, invalid lang code */
         final TextComponent invalidLangCode = Component.text()
             .append(main.getPluginPrefix().asComponent())
-            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidLangCode").replace("%o", defs.getValidLangCodes())).color(NamedTextColor.RED))
+            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidLangCode").replace("%o", CommonDefinitions.getValidLangCodes())).color(NamedTextColor.RED))
             .build();
         adventureSender.sendMessage(invalidLangCode);
         return false;

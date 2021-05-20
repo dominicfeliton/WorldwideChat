@@ -29,7 +29,6 @@ public class LoadUserData implements Runnable{
 		statsFolder.mkdir();
         
         /* Prepare add each file to Translator Array in main class */
-        CommonDefinitions defs = new CommonDefinitions();
         int invalidConfigs = 0;
         
         /* Delete old corrupted files */
@@ -67,8 +66,8 @@ public class LoadUserData implements Runnable{
         /* Load user files (last translation session, etc.)*/
         for (File eaFile : userDataFolder.listFiles()) {
             FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
-            if ((currFileConfig.getString("inLang").equalsIgnoreCase("None") || defs.getSupportedTranslatorLang(currFileConfig.getString("inLang")) != null
-                    && (defs.getSupportedTranslatorLang(currFileConfig.getString("outLang")) != null))
+            if ((currFileConfig.getString("inLang").equalsIgnoreCase("None") || CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("inLang")) != null
+                    && (CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("outLang")) != null))
                     && currFileConfig.contains("signTranslation")
                     && currFileConfig.contains("bookTranslation")
                     && currFileConfig.contains("rateLimit")
