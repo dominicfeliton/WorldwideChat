@@ -113,48 +113,8 @@ public class CommonDefinitions {
         "cy"
     };
 
-    /* Getters */
-    public boolean isSupportedLangForSource(String in, String translator) {
-        if (translator.equalsIgnoreCase("Watson")) { //If we are working with Watson
-            for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
-                if ((eaLang.getLangCode().equalsIgnoreCase(in)
-                    || eaLang.getLangName().equalsIgnoreCase(in)) 
-                    && eaLang.getSupportedAsSource()) {
-                    return true;
-                }
-            }
-        } else { //If we are working with any other translator
-            for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
-                if ((eaLang.getLangCode().equalsIgnoreCase(in)
-                    || eaLang.getLangName().equalsIgnoreCase(in))) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    public boolean isSupportedLangForTarget(String in, String translator) {
-        if (translator.equalsIgnoreCase("Watson")) {
-            for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
-                if ((eaLang.getLangCode().equalsIgnoreCase(in)
-                    || eaLang.getLangName().equalsIgnoreCase(in)) 
-                    && eaLang.getSupportedAsTarget()) {
-                    return true;
-                }
-            }
-        } else {
-            for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
-                if ((eaLang.getLangCode().equalsIgnoreCase(in)
-                    || eaLang.getLangName().equalsIgnoreCase(in))) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-    
-    public boolean isSameLang(String first, String second, String translator) {
+    /* Getters */ 
+    public boolean isSameLang(String first, String second) {
     	for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
             if ((eaLang.getLangName().equals(getSupportedTranslatorLang(first).getLangName()) 
                 && eaLang.getLangName().equals(getSupportedTranslatorLang(second).getLangName()))) {

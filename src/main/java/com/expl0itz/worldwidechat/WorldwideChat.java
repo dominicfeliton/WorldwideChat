@@ -253,6 +253,9 @@ public class WorldwideChat extends JavaPlugin {
             getCommand("wwcts").setTabCompleter(new WWCTabCompleter());
             getCommand("wwcs").setTabCompleter(new WWCTabCompleter());
             getCommand("wwcrl").setTabCompleter(new WWCTabCompleter());
+            getCommand("wwc").setTabCompleter(new WWCTabCompleter());
+            getCommand("wwcr").setTabCompleter(new WWCTabCompleter());
+            getCommand("wwcc").setTabCompleter(new WWCTabCompleter());
             
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
             return true;
@@ -347,6 +350,7 @@ public class WorldwideChat extends JavaPlugin {
         } try {
             EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(this, "wwc_glow"));
             Enchantment.registerEnchantment(glow);
+        } catch (IllegalArgumentException e) {
         }
         catch(Exception e){
             e.printStackTrace();

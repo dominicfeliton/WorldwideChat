@@ -67,8 +67,8 @@ public class LoadUserData implements Runnable{
         /* Load user files (last translation session, etc.)*/
         for (File eaFile : userDataFolder.listFiles()) {
             FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
-            if ((currFileConfig.getString("inLang").equalsIgnoreCase("None") || defs.isSupportedLangForSource(currFileConfig.getString("inLang"), main.getTranslatorName())
-                    && (defs.isSupportedLangForTarget(currFileConfig.getString("outLang"), main.getTranslatorName())))
+            if ((currFileConfig.getString("inLang").equalsIgnoreCase("None") || defs.getSupportedTranslatorLang(currFileConfig.getString("inLang")) != null
+                    && (defs.getSupportedTranslatorLang(currFileConfig.getString("outLang")) != null))
                     && currFileConfig.contains("signTranslation")
                     && currFileConfig.contains("bookTranslation")
                     && currFileConfig.contains("rateLimit")

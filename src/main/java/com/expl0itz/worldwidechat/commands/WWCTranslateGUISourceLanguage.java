@@ -154,7 +154,7 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 
 	@Override
 	public void update(Player player, InventoryContents contents) {
-		if (targetPlayerUUID != null) {
+		if (targetPlayerUUID != null && !targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
 	    	if (Bukkit.getPlayer(UUID.fromString(targetPlayerUUID)) == null) {
 	    		//Target player no longer online
 				player.closeInventory();
