@@ -75,11 +75,6 @@ public class WWCTranslate extends BasicCommand {
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStopped")).color(NamedTextColor.LIGHT_PURPLE))
                 .build();
-            //Delete their userData file
-            File fileToBeDeleted = main.getConfigManager().getUserSettingsFile(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
-            if (fileToBeDeleted != null) {
-                fileToBeDeleted.delete();
-            }
             adventureSender.sendMessage(chatTranslationStopped);
             if (args[0] instanceof String && args[0].equalsIgnoreCase("Stop")) {
                 return true;
@@ -89,11 +84,6 @@ public class WWCTranslate extends BasicCommand {
         	Player testPlayer = Bukkit.getServer().getPlayer(args[0]);
         	Audience targetSender = main.adventure().sender(testPlayer);
             main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
-            //Delete target player's existing config file
-            File fileToBeDeleted = main.getConfigManager().getUserSettingsFile(testPlayer.getUniqueId().toString());
-            if (fileToBeDeleted != null) {
-                fileToBeDeleted.delete();
-            }
             final TextComponent chatTranslationStopped = Component.text()
                     .append(main.getPluginPrefix().asComponent())
                     .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctTranslationStopped")).color(NamedTextColor.LIGHT_PURPLE))
@@ -115,11 +105,7 @@ public class WWCTranslate extends BasicCommand {
                 .append(main.getPluginPrefix().asComponent())
                 .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcgTranslationStopped")).color(NamedTextColor.LIGHT_PURPLE))
                 .build();
-            //Delete global data file
-            File fileToBeDeleted = main.getConfigManager().getUserSettingsFile("GLOBAL-TRANSLATE-ENABLED");
-            if (fileToBeDeleted != null) {
-                fileToBeDeleted.delete();
-            } for (Player eaPlayer: Bukkit.getOnlinePlayers()) {
+            for (Player eaPlayer: Bukkit.getOnlinePlayers()) {
                 main.adventure().sender(eaPlayer).sendMessage(chatTranslationStopped);
             } if (args[0] instanceof String && args[0].equalsIgnoreCase("Stop")) {
                 return true;

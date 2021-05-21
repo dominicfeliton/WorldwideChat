@@ -1,5 +1,6 @@
 package com.expl0itz.worldwidechat;
 
+import java.io.File;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -248,7 +249,7 @@ public class WorldwideChat extends JavaPlugin {
             BukkitTask loadUserData = Bukkit.getScheduler().runTaskAsynchronously(this, new LoadUserData());
             backgroundTasks.put("loadUserData", loadUserData);
             
-            //Register tab completer
+            //Register tab completers
             getCommand("wwcg").setTabCompleter(new WWCTabCompleter());
             getCommand("wwct").setTabCompleter(new WWCTabCompleter());
             getCommand("wwctb").setTabCompleter(new WWCTabCompleter());
@@ -281,11 +282,20 @@ public class WorldwideChat extends JavaPlugin {
         //Clear all supported langs
         supportedLanguages.clear();
         
-        //Save all new activeTranslators
+        //Sync activeTranslators to disk
         synchronized (activeTranslators) {
+        	//Save all new activeTranslators
             for (ActiveTranslator eaTranslator : activeTranslators) {
                 getConfigManager().createUserDataConfig(eaTranslator);
-            }   
+            }
+            //Delete any old activeTranslators
+            File userSettingsDir = new File(getDataFolder() + File.separator + "data" + File.separator);
+            for (String eaName : userSettingsDir.list()) {
+            	File currFile = new File(userSettingsDir, eaName);
+            	if (getActiveTranslator(currFile.getName().substring(0, currFile.getName().indexOf("."))) == null) {
+            		currFile.delete();
+            	}
+            }
         }     
             
         //Clear all active translating users, cache, playersUsingConfigGUI
