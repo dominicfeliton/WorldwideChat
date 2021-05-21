@@ -195,3 +195,13 @@ Messages:
     ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ገደቡን ለማሰናከል 0 ይተይቡ። ወደ ኋላ ለመመለስ ከ 0 በታች የሆነ ነገር
     ይተይቡ።
   wwctGUITargetPlayerNull: ' ዒላማው አጫዋች ከአገልጋዩ ተለያይቷል።'
+  wwcConfigConversationSyncUserDataDelayInput: የአሁኑ መዘግየት የተጠቃሚ ውሂብ ማመሳሰል የ %i ሰከንዶች
+    ነው። አዲስ እሴት ለማዘጋጀት ከ 10 በላይ የሆነ ነገር ይተይቡ, ወይም ከ 10 ያነሰ ማንኛውም ነገር ወደ ኋላ ለመመለስ።
+  wwcConfigGUISyncUserDataButton: የተጠቃሚ ውሂብ ማመሳሰል መዘግየት ለውጥ
+  wwcConfigSyncTime: አውቶማቲክ የተጠቃሚ ውሂብ ማመሳሰል በ %i ናኖሰከንዶች ተጠናቋል።
+  wwcConfigSyncDelayEnabled: በአንድ የተጠቃሚ ውሂብ ማመሳሰል መዘግየት ወደ %i ሰከንዶች።
+  wwcConfigConversationSyncUserDataDelaySuccess: ' የተጠቃሚ ውሂብ ማመሳሰል መዘግየት በተሳካ ሁኔታ
+    ማዘጋጀት'
+  wwcConfigSyncDelayInvalid: ልክ ያልሆነ የተጠቃሚ ውሂብ ማመሳሰል መዘግየት config.yml ውስጥ ተዘጋጅቷል።
+    ወደ 7200 ሰከንዶች ነባር በመሆን ላይ...
+  wwcConfigCacheInvalid: ተርጓሚ መሸጎጫ መጠን ልክ ያልሆነ። ወደ ነባር 10...

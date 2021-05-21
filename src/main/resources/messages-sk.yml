@@ -222,3 +222,17 @@ Messages:
     hodnotu 0 na vypnutie limitu. Zadajte čokoľvek menej ako 0, aby ste sa vrátili
     späť.
   wwctGUITargetPlayerNull: ' Cieľový prehrávač sa odpojil od servera.'
+  wwcConfigConversationSyncUserDataDelayInput: Aktuálne oneskorenie na synchronizáciu
+    údajov používateľa je %i sekúnd. Zadajte čokoľvek väčšie ako 10, ak chcete nastaviť
+    novú hodnotu, alebo čokoľvek menej ako 10, aby ste sa vrátili späť.
+  wwcConfigGUISyncUserDataButton: Zmeniť oneskorenie synchronizácie údajov používateľa
+  wwcConfigSyncTime: Automatická synchronizácia údajov používateľa bola dokončená
+    v %i nanosekúnd.
+  wwcConfigSyncDelayEnabled: Oneskorenie synchronizácie údajov používateľa nastavené
+    na %i sekúnd.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Oneskorenie synchronizácie používateľských
+    dát úspešne nastaviť.'
+  wwcConfigSyncDelayInvalid: Neplatné oneskorenie synchronizácie údajov používateľa
+    nastavené v config.yml. Predvolené na 7200 sekúnd...
+  wwcConfigCacheInvalid: Translator veľkosť vyrovnávacej pamäte je neplatná. Predvolené
+    na 10...

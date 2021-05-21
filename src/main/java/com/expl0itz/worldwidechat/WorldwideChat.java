@@ -1,6 +1,5 @@
 package com.expl0itz.worldwidechat;
 
-import java.io.File;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -44,6 +43,7 @@ import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.misc.PlayerRecord;
 import com.expl0itz.worldwidechat.misc.SupportedLanguageObject;
 import com.expl0itz.worldwidechat.runnables.LoadUserData;
+import com.expl0itz.worldwidechat.runnables.SyncUserData;
 import com.expl0itz.worldwidechat.runnables.UpdateChecker;
 
 import co.aikar.taskchain.BukkitTaskChainFactory;
@@ -81,6 +81,7 @@ public class WorldwideChat extends JavaPlugin {
     private int rateLimit = 0;
     private int bStatsID = 10562;
     private int updateCheckerDelay = 86400;
+    private int syncUserDataDelay = 7200;
 
     private boolean enablebStats = true;
     private boolean outOfDate = false;
@@ -249,6 +250,10 @@ public class WorldwideChat extends JavaPlugin {
             BukkitTask loadUserData = Bukkit.getScheduler().runTaskAsynchronously(this, new LoadUserData());
             backgroundTasks.put("loadUserData", loadUserData);
             
+            //Schedule automatic user data sync
+            BukkitTask syncUserData = Bukkit.getScheduler().runTaskTimerAsynchronously(this, new SyncUserData(), syncUserDataDelay*20, syncUserDataDelay*20);
+            backgroundTasks.put("syncUserData", syncUserData);
+            
             //Register tab completers
             getCommand("wwcg").setTabCompleter(new WWCTabCompleter());
             getCommand("wwct").setTabCompleter(new WWCTabCompleter());
@@ -283,20 +288,7 @@ public class WorldwideChat extends JavaPlugin {
         supportedLanguages.clear();
         
         //Sync activeTranslators to disk
-        synchronized (activeTranslators) {
-        	//Save all new activeTranslators
-            for (ActiveTranslator eaTranslator : activeTranslators) {
-                getConfigManager().createUserDataConfig(eaTranslator);
-            }
-            //Delete any old activeTranslators
-            File userSettingsDir = new File(getDataFolder() + File.separator + "data" + File.separator);
-            for (String eaName : userSettingsDir.list()) {
-            	File currFile = new File(userSettingsDir, eaName);
-            	if (getActiveTranslator(currFile.getName().substring(0, currFile.getName().indexOf("."))) == null) {
-            		currFile.delete();
-            	}
-            }
-        }     
+        getConfigManager().syncData();
             
         //Clear all active translating users, cache, playersUsingConfigGUI
         playersUsingConfigurationGUI.clear();
@@ -459,6 +451,10 @@ public class WorldwideChat extends JavaPlugin {
     	rateLimit = i;
     }
     
+    public void setSyncUserDataDelay(int i) {
+    	syncUserDataDelay = i;
+    }
+    
     public void setPluginLang(String i) {
         pluginLang = i;
     }
@@ -581,6 +577,10 @@ public class WorldwideChat extends JavaPlugin {
     
     public int getRateLimit() {
     	return rateLimit;
+    }
+    
+    public int getSyncUserDataDelay() {
+    	return syncUserDataDelay;
     }
     
     public ConfigurationHandler getConfigManager() {

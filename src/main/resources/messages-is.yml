@@ -222,3 +222,14 @@ Messages:
     Sláðu inn eitthvað sem er stærra en 0 til að setja nýtt gildi, eða tegund 0 til
     að slökkva á takmörkunum. Sláðu eitthvað minna en 0 til að fara aftur.
   wwctGUITargetPlayerNull: ' Markspilarinn ótengdur frá þjóninum.'
+  wwcConfigConversationSyncUserDataDelayInput: Núverandi seinkun á samstillingu notendagagna
+    er %i sekúndur. Sláðu inn neitt stærra en 10 til að setja nýtt gildi, eða eitthvað
+    minna en 10 til að fara aftur.
+  wwcConfigGUISyncUserDataButton: Breyta notendagögnum Sync Delay
+  wwcConfigSyncTime: Sjálfvirk notendagögn samstilling lokið í %i nanoseconds.
+  wwcConfigSyncDelayEnabled: Töf á notanda gögn samstillingu stillt á %i sekúndur.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Notandagögn samstilla seinkun stillt
+    með góðum árangri.'
+  wwcConfigSyncDelayInvalid: Ógild notendagögn samstilla töf sett í config.yml. Vanskil
+    til 7200 sekúndna...
+  wwcConfigCacheInvalid: Þýðandi skyndiminni stærð ógild. Vanskil til 10...

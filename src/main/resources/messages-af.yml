@@ -215,3 +215,15 @@ Messages:
     Tik enigiets groter as 0 om \'n nuwe waarde in te stel, of tik 0 om die limiet
     uit te skakel. Tik enigiets minder as 0 om terug te gaan.
   wwctGUITargetPlayerNull: ' Die teikenspeler ontkoppel van die bediener.'
+  wwcConfigConversationSyncUserDataDelayInput: Die huidige vertraging per sinkronisasie
+    van gebruikersdata is %i sekondes. Tik enigiets groter as 10 om \'n nuwe waarde
+    te stel, of enigiets minder as 10 om terug te gaan.
+  wwcConfigGUISyncUserDataButton: Verander Gebruiker Data Sync Vertraging
+  wwcConfigSyncTime: Outomatiese gebruiker data sinkronisasie voltooi in %i nano sekondes.
+  wwcConfigSyncDelayEnabled: Vertraging per gebruiker data sinkronisasie stel na %i
+    sekondes.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Gebruiker data sync vertraging
+    stel suksesvol.'
+  wwcConfigSyncDelayInvalid: Ongeldige gebruiker data sync vertraging stel in config.yml.
+    Verstek na 7200 sekondes...
+  wwcConfigCacheInvalid: Vertaler kas grootte ongeldig. Verstek na 10...

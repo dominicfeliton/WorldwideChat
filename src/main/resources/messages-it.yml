@@ -224,3 +224,17 @@ Messages:
     digitare 0 per disabilitare il limite. Digitare qualcosa di minore di 0 per tornare
     indietro.
   wwctGUITargetPlayerNull: ' Il lettore di destinazione si è disconnesso dal server.'
+  wwcConfigConversationSyncUserDataDelayInput: Il ritardo corrente per sincronizzazione
+    dei dati utente è %i secondi. Digitare un valore maggiore di 10 per impostare
+    un nuovo valore o qualsiasi elemento inferiore a 10 per tornare indietro.
+  wwcConfigGUISyncUserDataButton: Modifica ritardo sincronizzazione dati utente
+  wwcConfigSyncTime: Sincronizzazione automatica dei dati utente completata in %i
+    nanosecondi.
+  wwcConfigSyncDelayEnabled: Ritardo di sincronizzazione dati per utente impostato
+    a %i secondi.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Ritardo sincronizzazione dati utente
+    impostato correttamente.'
+  wwcConfigSyncDelayInvalid: Impostazione di ritardo di sincronizzazione dati utente
+    non valido in config.yml. Impostazione predefinita di 7200 secondi...
+  wwcConfigCacheInvalid: Dimensione cache del traduttore non valida. Impostazione
+    predefinita su 10...

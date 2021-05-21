@@ -211,3 +211,15 @@ Messages:
     برای تنظیم مقدار جدید، هر چیزی بیشتر از 0 تایپ کنید، یا نوع 0 را برای غیرفعال
     کردن محدودیت تایپ کنید. هر چیزی کمتر از 0 تایپ کنید تا به عقب برگردید.
   wwctGUITargetPlayerNull: ' بازیکن هدف از سرور قطع شد.'
+  wwcConfigConversationSyncUserDataDelayInput: تأخیر فعلی در هر همگام‌سازی داده‌های
+    کاربر %i ثانیه است. هر چیزی بزرگتر از ۱۰ را تایپ کنید تا مقدار جدید تعیین شود،
+    یا هر چیزی کمتر از ۱۰ برای بازگشت به عقب.
+  wwcConfigGUISyncUserDataButton: تغییر تأخیر همگام سازی داده کاربر
+  wwcConfigSyncTime: همگام‌سازی خودکار داده کاربر در %i نانو ثانیه تکمیل شد.
+  wwcConfigSyncDelayEnabled: تاخیر در همگام‌سازی داده کاربر به %i ثانیه تنظیم شده
+    است.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' تاخیر همگام سازی داده های کاربر
+    با موفقیت تنظیم شده است.'
+  wwcConfigSyncDelayInvalid: تاخیر همگام سازی داده کاربر نامعتبر تنظیم شده در config.yml.
+    تا 7200 ثانيه...
+  wwcConfigCacheInvalid: اندازه کش مترجم نامعتبر است. قصور به 10...

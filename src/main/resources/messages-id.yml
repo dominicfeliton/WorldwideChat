@@ -221,3 +221,15 @@ Messages:
     apa pun yang lebih besar dari 0 untuk menetapkan nilai baru, atau ketik 0 untuk
     menonaktifkan batas. Ketik apa pun kurang dari 0 untuk kembali.
   wwctGUITargetPlayerNull: ' Pemain target terputus dari server.'
+  wwcConfigConversationSyncUserDataDelayInput: Penundaan saat ini per sinkronisasi
+    data pengguna adalah %i detik. Ketik apa pun yang lebih besar dari 10 untuk menetapkan
+    nilai baru, atau apa pun kurang dari 10 untuk kembali.
+  wwcConfigGUISyncUserDataButton: Ubah Keterlambatan Sinkronisasi Data Pengguna
+  wwcConfigSyncTime: Sinkronisasi data pengguna otomatis selesai dalam %i nanodetik.
+  wwcConfigSyncDelayEnabled: Keterlambatan per sinkronisasi data pengguna diset ke
+    %i detik.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Penundaan sinkronisasi data pengguna
+    berhasil diatur.'
+  wwcConfigSyncDelayInvalid: Penundaan sinkronisasi data pengguna tidak valid diatur
+    dalam config.ymL. Defaulting ke 7200 detik...
+  wwcConfigCacheInvalid: Ukuran tembolok penerjemah tidak valid. Defaulting ke 10...

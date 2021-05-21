@@ -196,3 +196,13 @@ Messages:
   wwctGUIConversationRateLimit: ขีด จำกัด ของอัตราต่อการแปลเป็นปัจจุบัน %i วินาทีพิมพ์อะไรที่มากกว่า
     0 เพื่อตั้งค่าใหม่ หรือพิมพ์ 0 เพื่อปิดใช้งานขีดจำกัดพิมพ์อะไรที่น้อยกว่า 0 เพื่อย้อนกลับ
   wwctGUITargetPlayerNull: ' ผู้เล่นเป้าหมายตัดการเชื่อมต่อจากเซิร์ฟเวอร์'
+  wwcConfigConversationSyncUserDataDelayInput: ความล่าช้าปัจจุบันต่อซิงค์ข้อมูลผู้ใช้คือ
+    %i วินาทีพิมพ์อะไรที่มากกว่า 10 เพื่อตั้งค่าใหม่หรืออะไรที่น้อยกว่า 10 เพื่อย้อนกลับ
+  wwcConfigGUISyncUserDataButton: เปลี่ยนการหน่วงเวลาการซิงค์ข้อมูลผู้ใช้
+  wwcConfigSyncTime: การซิงค์ข้อมูลผู้ใช้อัตโนมัติเสร็จสมบูรณ์ใน %i nanoseconds
+  wwcConfigSyncDelayEnabled: การหน่วงเวลาการซิงค์ข้อมูลของผู้ใช้ต่อหนึ่งตั้งค่าเป็น
+    %i วินาที
+  wwcConfigConversationSyncUserDataDelaySuccess: ' ตั้งค่าการหน่วงเวลาการซิงค์ข้อมูลผู้ใช้เรียบร้อยแล้ว'
+  wwcConfigSyncDelayInvalid: การหน่วงเวลาการซิงค์ข้อมูลผู้ใช้ไม่ถูกต้องที่กำหนดไว้ใน
+    config.ymlเริ่มต้นที่ 7200 วินาที...
+  wwcConfigCacheInvalid: ขนาดแคชของนักแปลไม่ถูกต้องผิดนัดที่ 10...

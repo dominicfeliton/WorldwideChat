@@ -14,6 +14,7 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsLangConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsPrefixConversation;
+import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsSyncUserDataConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsUpdateCheckerConversation;
 
 import fr.minuskube.inv.ClickableItem;
@@ -81,6 +82,17 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 		updateCheckerButton.setItemMeta(updateCheckerMeta);
 		contents.set(1, 4, ClickableItem.of(updateCheckerButton, 
 				e -> {updateCheckerConvo.buildConversation(player).begin();}));
+		
+		/* Option Five: Sync User Data Delay */
+		ConversationFactory syncUserDataConvo = new ConversationFactory(main)
+				.withModality(true)
+				.withFirstPrompt(new GeneralSettingsSyncUserDataConversation());
+		ItemStack syncUserDataButton = new ItemStack(Material.NAME_TAG);
+		ItemMeta syncUserDataMeta = syncUserDataButton.getItemMeta();
+		syncUserDataMeta.setDisplayName(ChatColor.GOLD + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUISyncUserDataButton"));
+		syncUserDataButton.setItemMeta(syncUserDataMeta);
+		contents.set(1, 5, ClickableItem.of(syncUserDataButton, 
+				e -> {syncUserDataConvo.buildConversation(player).begin();}));
 		
 		/* Bottom Middle Option: Quit */
 		ItemStack quitButton = new ItemStack(Material.BARRIER);

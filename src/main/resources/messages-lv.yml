@@ -217,3 +217,16 @@ Messages:
     ierakstiet 0, lai atspējotu ierobežojumu. Ierakstiet kaut ko mazāk par 0, lai
     atgrieztos.
   wwctGUITargetPlayerNull: ' Mērķa spēlētājs atvienots no servera.'
+  wwcConfigConversationSyncUserDataDelayInput: Pašreizējā lietotāja datu sinhronizācijas
+    kavēšanās ir %i sekundes. Ierakstiet kaut ko lielāku par 10, lai iestatītu jaunu
+    vērtību, vai jebko, kas ir mazāks par 10, lai atgrieztos.
+  wwcConfigGUISyncUserDataButton: Mainīt lietotāja datu sinhronizācijas aizkavēšanos
+  wwcConfigSyncTime: Automātiska lietotāja datu sinhronizācija pabeigta %i nanoseconds.
+  wwcConfigSyncDelayEnabled: Kavēšanās katram lietotāja datu sinhronizācijai iestatīta
+    uz %i sekundes.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Lietotāja datu sinhronizācijas
+    kavēšanās iestatīta veiksmīgi.'
+  wwcConfigSyncDelayInvalid: Nederīga lietotāja datu sinhronizācijas kavēšanās iestatīta
+    config.yml. Noklusējuma izpilde līdz 7200 sekundēm...
+  wwcConfigCacheInvalid: Tulkotāja kešatmiņas izmērs nederīgs. Noklusējuma neizpilde
+    līdz 10...

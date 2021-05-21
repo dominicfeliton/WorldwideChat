@@ -221,3 +221,17 @@ Messages:
     qiymatni belgilash uchun 0 dan katta narsani kiriting yoki cheklovni o\'chirish
     uchun 0 yozing. Orqaga qaytish uchun 0 dan kamroq narsa yozing.
   wwctGUITargetPlayerNull: ' Nishon o\''yinchi serverdan uzilgan.'
+  wwcConfigConversationSyncUserDataDelayInput: Foydalanuvchi maʼlumotlarini sinxronlash
+    uchun joriy kechikish %i sekunddir. Yangi qiymatni belgilash uchun 10 dan katta
+    narsani yoki orqaga qaytish uchun 10 dan kam narsani kiriting.
+  wwcConfigGUISyncUserDataButton: Foydalanuvchi ma\'lumotlarini sinxronlashni kechiktirishni
+    o\'zgartirish
+  wwcConfigSyncTime: '%i nanosaniyalarida foydalanuvchi maʼlumotlarini avtomatik sinxronlash
+    yakunlandi.'
+  wwcConfigSyncDelayEnabled: Foydalanuvchi maʼlumotlarini sinxronlash uchun kechiktirish
+    %i sekundiga oʻrnatilgan.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Foydalanuvchi ma\''lumotlarini
+    sinxronlashni kechiktirish muvaffaqiyatli o\''rnatildi.'
+  wwcConfigSyncDelayInvalid: Konfig.yml-da o\'rnatilgan foydalanuvchi ma\'lumotlarini
+    sinxronlash kechiktirilishi noto\'g\'ri. 7200 soniyagacha defaulting...
+  wwcConfigCacheInvalid: Tarjimon kesh hajmi yaroqsiz. 10 uchun standart...

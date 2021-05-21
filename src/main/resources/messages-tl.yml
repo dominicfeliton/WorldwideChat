@@ -236,3 +236,15 @@ Messages:
     halaga, o i-type ang 0 upang huwag paganahin ang limitasyon. I-type ang anumang
     mas mababa sa 0 upang bumalik.
   wwctGUITargetPlayerNull: ' Ang target player ay naka-disconnect mula sa server.'
+  wwcConfigConversationSyncUserDataDelayInput: Ang kasalukuyang pagkaantala sa bawat
+    pag-sync ng data ng user ay %i segundo. I-type ang anumang mas malaki kaysa sa
+    10 upang magtakda ng bagong halaga, o anumang mas mababa sa 10 upang bumalik.
+  wwcConfigGUISyncUserDataButton: Baguhin ang Pag-sync ng Data ng User
+  wwcConfigSyncTime: Nakumpleto ang awtomatikong pag-sync ng data ng user sa %i nanoseconds.
+  wwcConfigSyncDelayEnabled: Nakatakda ang pagkaantala sa bawat pag-sync ng data ng
+    user sa %i segundo.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Matagumpay na naitakda ang pag-sync
+    ng data ng user.'
+  wwcConfigSyncDelayInvalid: Itinatakda ang hindi wastong pagkaantala sa pag-sync
+    ng data ng user sa config.yml. Default sa 7200 segundo...
+  wwcConfigCacheInvalid: Hindi wasto ang laki ng cache ng tagasalin. Default sa 10...

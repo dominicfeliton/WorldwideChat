@@ -214,3 +214,16 @@ Messages:
     Upišite nešto veće od 0 da biste postavili novu vrijednost ili unesite 0 da biste
     onemogućili ograničenje. Upišite ništa manje od 0 da biste se vratili.
   wwctGUITargetPlayerNull: ' Ciljni igrač je prekinuo vezu sa serverom.'
+  wwcConfigConversationSyncUserDataDelayInput: Trenutačno kašnjenje po sinkronizaciji
+    korisničkih podataka je %i sekundi. Upišite nešto veće od 10 da biste postavili
+    novu vrijednost ili bilo što manje od 10 da biste se vratili.
+  wwcConfigGUISyncUserDataButton: Promjena kašnjenja sinkronizacije korisničkih podataka
+  wwcConfigSyncTime: Automatska sinkronizacija korisničkih podataka završena je u
+    %i nanosekundama.
+  wwcConfigSyncDelayEnabled: Kašnjenje po korisničkom sinkronizaciji podataka na %i
+    sekundi.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Odgoda sinkronizacije korisničkih
+    podataka uspješno postavljena.'
+  wwcConfigSyncDelayInvalid: Nevažeća kašnjenje sinkronizacije korisničkih podataka
+    postavljeno u config.yml. Zadano na 7200 sekundi...
+  wwcConfigCacheInvalid: Prevoditelj cache veličina nevažeća. Zadano na 10...

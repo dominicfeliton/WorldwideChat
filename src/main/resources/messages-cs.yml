@@ -216,3 +216,17 @@ Messages:
     Zadejte hodnotu větší než 0, chcete-li nastavit novou hodnotu, nebo zadejte 0,
     chcete-li limit zakázat. Napište něco méně než 0, abyste se vrátili.
   wwctGUITargetPlayerNull: ' Cílový hráč odpojen od serveru.'
+  wwcConfigConversationSyncUserDataDelayInput: Aktuální zpoždění při synchronizaci
+    uživatelských dat je %i sekund. Zadejte něco většího než 10 pro nastavení nové
+    hodnoty nebo něco méně než 10, abyste se vrátili zpět.
+  wwcConfigGUISyncUserDataButton: Změnit zpoždění synchronizace uživatelských dat
+  wwcConfigSyncTime: Automatická synchronizace uživatelských dat byla dokončena v
+    %i nanosekund.
+  wwcConfigSyncDelayEnabled: Zpoždění synchronizace dat uživatele nastavena na %i
+    sekund.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Zpoždění synchronizace uživatelských
+    dat úspěšně nastaveno.'
+  wwcConfigSyncDelayInvalid: Neplatné zpoždění synchronizace dat uživatele nastaveno
+    v config.yml. Výchozí hodnota 7200 sekund...
+  wwcConfigCacheInvalid: Velikost mezipaměti Translator je neplatná. Výchozí hodnota
+    na 10...

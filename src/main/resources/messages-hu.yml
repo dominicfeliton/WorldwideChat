@@ -225,3 +225,17 @@ Messages:
     Írja be a 0-nál nagyobb értéket az új érték beállításához, vagy írja be a 0 értéket
     a korlát letiltásához. Írja be a 0-nál kevesebbet, hogy visszamenjen.
   wwctGUITargetPlayerNull: ' A céljátékos lekapcsolódott a kiszolgálóról.'
+  wwcConfigConversationSyncUserDataDelayInput: A felhasználói adatok szinkronizálásonkénti
+    aktuális késleltetése %i másodperc. Írja be a 10-nél nagyobb értéket az új érték
+    beállításához, vagy 10-nél kevesebbet a visszatéréshez.
+  wwcConfigGUISyncUserDataButton: Felhasználói adatok szinkronizálásának késleltetése
+  wwcConfigSyncTime: A felhasználói adatok automatikus szinkronizálása a %i nanoszekundumban
+    fejeződött be.
+  wwcConfigSyncDelayEnabled: 'A felhasználói adatok szinkronizálásának késleltetése:
+    %i másodperc.'
+  wwcConfigConversationSyncUserDataDelaySuccess: ' A felhasználói adatok szinkronizálási
+    késleltetése sikeresen beállítva.'
+  wwcConfigSyncDelayInvalid: 'Érvénytelen felhasználói adatok szinkronizálási késleltetése
+    beállítása config.yml. Alapértelmezés: 7200 másodperc...'
+  wwcConfigCacheInvalid: Érvénytelen a fordítói gyorsítótár mérete. Alapértelmezés
+    10...

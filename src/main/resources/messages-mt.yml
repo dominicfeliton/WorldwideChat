@@ -220,3 +220,15 @@ Messages:
     sekondi. Tip xi ħaġa akbar minn 0 biex tistabbilixxi valur ġdid, jew tip 0 biex
     jiskonnettja l-limitu. Tip xejn inqas minn 0 biex tmur lura.
   wwctGUITargetPlayerNull: ' Il-plejer fil-mira skonnettjat mis-server.'
+  wwcConfigConversationSyncUserDataDelayInput: Id-dewmien kurrenti għal kull sinkronizzazzjoni
+    ta \'data utent huwa %i sekondi. Tip xi ħaġa akbar minn 10 biex tistabbilixxi
+    valur ġdid, jew xi ħaġa inqas minn 10 biex tmur lura.
+  wwcConfigGUISyncUserDataButton: Bidla Utent Data sync Dewmien
+  wwcConfigSyncTime: sync data utent awtomatiku tlesta f\' % nanoseconds.
+  wwcConfigSyncDelayEnabled: Dewmien għal kull utent sett sync data għal %i sekondi.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Utent data sync dewmien stabbiliti
+    b\''suċċess.'
+  wwcConfigSyncDelayInvalid: Dewmien invalidu tas-sinkronizzazzjoni tad-dejta tal-utent
+    stabbilit f\'konfig.yml. Inadempjenti għal 7200 sekonda...
+  wwcConfigCacheInvalid: Id-daqs tal-cache tat-traduttur invalidu. Inadempjenti sa
+    10...

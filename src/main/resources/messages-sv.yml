@@ -221,3 +221,15 @@ Messages:
     %i sekunder. Skriv något större än 0 om du vill ange ett nytt värde, eller skriv
     0 om du vill inaktivera gränsen. Skriv något mindre än 0 för att gå tillbaka.
   wwctGUITargetPlayerNull: ' Målspelaren frånkopplad från servern.'
+  wwcConfigConversationSyncUserDataDelayInput: Den aktuella fördröjningen per synkronisering
+    av användardata är %i sekunder. Skriv något större än 10 för att ställa in ett
+    nytt värde, eller något mindre än 10 för att gå tillbaka.
+  wwcConfigGUISyncUserDataButton: Ändra synkroniseringsfördröjning för användardata
+  wwcConfigSyncTime: Automatisk synkronisering av användardata slutfördes i %i nanosekunder.
+  wwcConfigSyncDelayEnabled: Fördröjning per användarsynkronisering av data inställd
+    till %i sekunder.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Fördröjning för synkronisering
+    av användardata.'
+  wwcConfigSyncDelayInvalid: Ogiltig synkroniseringsfördröjning för användardata som
+    angetts i config.yml. Defaulerar till 7200 sekunder...
+  wwcConfigCacheInvalid: Översättarens cachestorlek ogiltig. Fallande till 10...

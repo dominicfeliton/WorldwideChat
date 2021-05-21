@@ -219,3 +219,17 @@ Messages:
     Vnesite karkoli večje od 0, če želite nastaviti novo vrednost, ali pa vnesite
     0, da onemogočite omejitev. Vnesite karkoli manj kot 0, da se vrnete nazaj.
   wwctGUITargetPlayerNull: ' Ciljni predvajalnik je prekinil povezavo s strežnikom.'
+  wwcConfigConversationSyncUserDataDelayInput: Trenutna zakasnitev na sinhronizacijo
+    uporabniških podatkov je %i sekunde. Vnesite karkoli, ki je večje od 10, če želite
+    nastaviti novo vrednost ali karkoli manj kot 10, da se vrnete nazaj.
+  wwcConfigGUISyncUserDataButton: Spremeni zamudo sinhronizacije uporabniških podatkov
+  wwcConfigSyncTime: Samodejna sinhronizacija uporabniških podatkov je končana v %i
+    nanosekundah.
+  wwcConfigSyncDelayEnabled: Zakasnitev sinhronizacije podatkov uporabnika nastavljena
+    na %i sekund.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Zakasnitev sinhronizacije uporabniških
+    podatkov uspešno nastavljena'
+  wwcConfigSyncDelayInvalid: Neveljavna zakasnitev sinhronizacije uporabniških podatkov
+    je nastavljena v config.yml. Privzetje do 7200 sekund...
+  wwcConfigCacheInvalid: Velikost predpomnilnika prevajalca neveljavna. V neplačilu
+    do 10...

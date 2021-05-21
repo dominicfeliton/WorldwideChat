@@ -224,3 +224,16 @@ Messages:
     %i segundos. Escriba algo mayor que 0 para establecer un nuevo valor, o escriba
     0 para deshabilitar el límite. Escriba cualquier cosa inferior a 0 para volver.
   wwctGUITargetPlayerNull: ' El jugador objetivo se desconectó del servidor.'
+  wwcConfigConversationSyncUserDataDelayInput: El retraso actual por sincronización
+    de datos de usuario es %i segundos. Escriba algo mayor que 10 para establecer
+    un nuevo valor, o cualquier cosa inferior a 10 para volver atrás.
+  wwcConfigGUISyncUserDataButton: Cambiar retraso de sincronización de datos de usuario
+  wwcConfigSyncTime: Sincronización automática de datos de usuario completada en %i
+    nanosegundos.
+  wwcConfigSyncDelayEnabled: Retraso por sincronización de datos de usuario establecido
+    a %i segundos.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Retraso de sincronización de datos
+    de usuario establecido correctamente'
+  wwcConfigSyncDelayInvalid: Retraso de sincronización de datos de usuario no válido
+    establecido en config.yml. El valor predeterminado es 7200 segundos...
+  wwcConfigCacheInvalid: Tamaño de caché del traductor no válido. Por defecto a 10...

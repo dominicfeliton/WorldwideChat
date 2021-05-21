@@ -218,3 +218,17 @@ Messages:
     Wpisz wartość większą niż 0, aby ustawić nową wartość, lub wpisz 0, aby wyłączyć
     limit. Wpisz mniej niż 0, aby wrócić.
   wwctGUITargetPlayerNull: ' Gracz docelowy odłączony od serwera.'
+  wwcConfigConversationSyncUserDataDelayInput: Bieżące opóźnienie synchronizacji danych
+    użytkownika wynosi %i sekund. Wpisz wartość większą niż 10, aby ustawić nową wartość
+    lub wartość mniejszą niż 10, aby wrócić.
+  wwcConfigGUISyncUserDataButton: Zmień opóźnienie synchronizacji danych użytkownika
+  wwcConfigSyncTime: Automatyczna synchronizacja danych użytkownika zakończona w %i
+    nanosekund.
+  wwcConfigSyncDelayEnabled: Opóźnienie synchronizacji danych użytkownika ustawione
+    na %i sekund.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Ustawiono opóźnienie synchronizacji
+    danych użytkownika.'
+  wwcConfigSyncDelayInvalid: Nieprawidłowe opóźnienie synchronizacji danych użytkownika
+    ustawione w config.yml. Domyślnie 7200 sekund...
+  wwcConfigCacheInvalid: Nieprawidłowy rozmiar pamięci podręcznej tłumacza Domyślnie
+    na 10...

@@ -226,3 +226,17 @@ Messages:
     Tastați ceva mai mare decât 0 pentru a seta o valoare nouă sau tastați 0 pentru
     a dezactiva limita. Tastați ceva mai puțin de 0 pentru a merge înapoi.
   wwctGUITargetPlayerNull: ' Jucătorul țintă deconectat de la server.'
+  wwcConfigConversationSyncUserDataDelayInput: Întârzierea curentă per sincronizare
+    a datelor utilizatorului este %i secunde. Tastați ceva mai mare de 10 pentru a
+    seta o valoare nouă sau ceva mai mic de 10 pentru a reveni.
+  wwcConfigGUISyncUserDataButton: Modificarea întârzierii sincronizării datelor utilizatorului
+  wwcConfigSyncTime: Sincronizarea automată a datelor de utilizator finalizată în
+    %i nanosecunde.
+  wwcConfigSyncDelayEnabled: Întârziere pentru sincronizarea datelor utilizatorului
+    setată la %i secunde.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Întârziere sincronizare date utilizator
+    setat cu succes.'
+  wwcConfigSyncDelayInvalid: Întârziere de sincronizare date utilizator nevalidă setată
+    în config.yml. Inimplicită la 7200 de secunde...
+  wwcConfigCacheInvalid: Dimensiunea memoriei cache traducător nevalidă. Inîndeplinire
+    a obligațiilor de plată la 10...

@@ -220,3 +220,17 @@ Messages:
     Typ iets groter dan 0 om een nieuwe waarde in te stellen of typ 0 om de limiet
     uit te schakelen. Typ iets minder dan 0 om terug te gaan.
   wwctGUITargetPlayerNull: ' De doelspeler heeft de verbinding met de server verbroken.'
+  wwcConfigConversationSyncUserDataDelayInput: De huidige vertraging per synchronisatie
+    van gebruikersgegevens is %i seconden. Typ iets groter dan 10 om een nieuwe waarde
+    in te stellen, of iets minder dan 10 om terug te gaan.
+  wwcConfigGUISyncUserDataButton: Vertraging synchronisatie gebruikersgegevens wijzigen
+  wwcConfigSyncTime: Automatische synchronisatie van gebruikersgegevens voltooid in
+    %i nanoseconden.
+  wwcConfigSyncDelayEnabled: Vertraging per synchronisatie van gebruikersgegevens
+    ingesteld op %i seconden.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Vertraging voor synchronisatie
+    van gebruikersgegevens is ingesteld'
+  wwcConfigSyncDelayInvalid: Ongeldige vertraging voor synchronisatie van gebruikersgegevens
+    ingesteld in config.yml. Standaardstandaard 7200 seconden...
+  wwcConfigCacheInvalid: Cache grootte van de vertaler ongeldig. Standaardstandaard
+    tot 10...

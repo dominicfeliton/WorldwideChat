@@ -202,3 +202,13 @@ Messages:
     أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب 0 لتعطيل الحد. اكتب أي شيء أقل من
     0 للعودة.
   wwctGUITargetPlayerNull: ' لاعب الهدف قطع الاتصال من الخادم.'
+  wwcConfigConversationSyncUserDataDelayInput: التأخير الحالي لكل مزامنة لبيانات المستخدم
+    هو %i ثانية. اكتب أي شيء أكبر من 10 لتعيين قيمة جديدة، أو أي شيء أقل من 10 للعودة.
+  wwcConfigGUISyncUserDataButton: تغيير تأخير مزامنة بيانات المستخدم
+  wwcConfigSyncTime: تمت مزامنة بيانات المستخدم التلقائية في %i nanoseconds.
+  wwcConfigSyncDelayEnabled: تم تعيين تأخير مزامنة بيانات المستخدم إلى %i ثانية.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' تعيين تأخير مزامنة بيانات المستخدم
+    بنجاح.'
+  wwcConfigSyncDelayInvalid: تم تعيين تأخير مزامنة بيانات المستخدم غير صالح في config.yml.
+    التخلف عن 7200 ثانية...
+  wwcConfigCacheInvalid: حجم مخبأ المترجم غير صالح. التخلف عن السداد إلى 10...

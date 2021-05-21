@@ -217,3 +217,15 @@ Messages:
     नया मान सेट करने के लिए 0 से अधिक कुछ टाइप करें, या सीमा को अक्षम करने के लिए
     0 टाइप करें। वापस जाने के लिए 0 से कम कुछ भी टाइप करें।
   wwctGUITargetPlayerNull: ' लक्ष्य खिलाड़ी सर्वर से डिस्कनेक्ट किया गया।'
+  wwcConfigConversationSyncUserDataDelayInput: उपयोगकर्ता डेटा के सिंक प्रति वर्तमान
+    विलंब है %i सेकंड। एक नया मान सेट करने के लिए 10 से अधिक कुछ भी टाइप करें, या
+    वापस जाने के लिए 10 से कम कुछ भी टाइप करें।
+  wwcConfigGUISyncUserDataButton: उपयोगकर्ता डेटा सिंक विलंब बदलें
+  wwcConfigSyncTime: स्वचालित उपयोक्ता डाटा समन्वयन को %i नैनोसेकंड में पूरा हुआ।
+  wwcConfigSyncDelayEnabled: प्रति उपयोगकर्ता डेटा सिंक विलंब से %i सेकेंड पर सेट
+    करें।
+  wwcConfigConversationSyncUserDataDelaySuccess: ' उपयोगकर्ता डेटा सिंक विलंब सेट
+    सफलतापूर्वक।'
+  wwcConfigSyncDelayInvalid: config.yml में अमान्य उपयोगकर्ता डेटा सिंक विलंब सेट
+    करें। 7200 सेकेंड में डिफॉल्ट कर रहा है...
+  wwcConfigCacheInvalid: अनुवादक कैश आकार अवैध। डिफॉल्ट से १०...

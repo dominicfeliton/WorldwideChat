@@ -220,3 +220,16 @@ Messages:
     Määritä uusi arvo kirjoittamalla jokin suurempi kuin 0 tai poista raja käytöstä
     kirjoittamalla 0. Kirjoita mitään alle 0, jotta voit palata takaisin.
   wwctGUITargetPlayerNull: ' Kohdepelaaja irrottautunut palvelimesta.'
+  wwcConfigConversationSyncUserDataDelayInput: Käyttäjätietojen synkronoinnin nykyinen
+    viive on %i sekuntia. Kirjoita mitä tahansa suurempi kuin 10, jos haluat asettaa
+    uuden arvon, tai jotain alle 10 palata takaisin.
+  wwcConfigGUISyncUserDataButton: Käyttäjän tietojen synkronoinnin viiveen muuttaminen
+  wwcConfigSyncTime: Automaattinen käyttäjän tietojen synkronointi suoritetaan %i
+    nanosekunneissa.
+  wwcConfigSyncDelayEnabled: Viive käyttäjän tietojen synkronoinnin asetukseksi %i
+    sekuntia.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Käyttäjän tietojen synkronoinnin
+    viive on asetettu onnistuneesti.'
+  wwcConfigSyncDelayInvalid: Virheellinen käyttäjän tietojen synkronoinnin viive asetettu
+    config.yml. Defaulting 7200 sekuntiin...
+  wwcConfigCacheInvalid: Kääntäjän välimuistin koko ei kelpaa. Defaulting kymmeneen...

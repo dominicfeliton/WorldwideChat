@@ -238,3 +238,16 @@ Messages:
     Sekunden. Geben Sie etwas größer als 0 ein, um einen neuen Wert festzulegen, oder
     geben Sie 0 ein, um das Limit zu deaktivieren. Tippe alles weniger als 0, um zurückzukehren.
   wwctGUITargetPlayerNull: ' Der Zielspieler hat die Verbindung zum Server getrennt.'
+  wwcConfigConversationSyncUserDataDelayInput: Die aktuelle Verzögerung pro Synchronisierung
+    von Benutzerdaten beträgt %i Sekunden. Geben Sie etwas größer als 10 ein, um einen
+    neuen Wert festzulegen, oder etwas weniger als 10, um zurückzukehren.
+  wwcConfigGUISyncUserDataButton: Verzögerung der Benutzerdatensynchronisierung ändern
+  wwcConfigSyncTime: Die automatische Synchronisierung der Benutzerdaten wurde in
+    %i Nanosekunden abgeschlossen.
+  wwcConfigSyncDelayEnabled: Verzögerung pro Benutzerdatensynchronisierung ist auf
+    %i Sekunden eingestellt.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Die Verzögerung der Synchronisierung
+    von Benutzerdaten wurde erfolgreich'
+  wwcConfigSyncDelayInvalid: Ungültige Verzögerung für die Synchronisierung von Benutzerdaten
+    wurde in config.yml festgelegt. Standardmäßig 7200 Sekunden...
+  wwcConfigCacheInvalid: Die Cachegröße des Übersetzers ist ungül Vorgegeben auf 10...

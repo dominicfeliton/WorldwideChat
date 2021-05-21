@@ -217,3 +217,13 @@ Messages:
     seconds. Rubuta wani abu mafi girma fiye da 0 don saita sabon darajar, ko rubuta
     0 don musaki iyaka. Rubuta wani abu kasa da 0 don komawa.
   wwctGUITargetPlayerNull: ' Mai kunnawa ya katse daga uwar garke.'
+  wwcConfigConversationSyncUserDataDelayInput: Jinkiri na yanzu ta hanyar sync na
+    bayanan mai amfani shine %i seconds. Rubuta wani abu mafi girma fiye da 10 don
+    saita sabon darajar, ko wani abu kasa da 10 don komawa.
+  wwcConfigGUISyncUserDataButton: Canja Sync Bayanan Mai amfani
+  wwcConfigSyncTime: Sync bayanan mai amfani na atomatik ya kammala cikin %i nanosconds
+  wwcConfigSyncDelayEnabled: Jinkirta sync bayanan mai amfani zuwa %i seconds.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Sync data sync jinkirta saita nasara.'
+  wwcConfigSyncDelayInvalid: Sync mai amfani da bayanai mara amfani da aka saita a
+    daidaita.yml. Cefaulting zuwa 7200 seconds...
+  wwcConfigCacheInvalid: Girman cache mara inganci. Cefaulting zuwa 10...

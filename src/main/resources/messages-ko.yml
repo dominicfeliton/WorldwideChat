@@ -181,3 +181,12 @@ Messages:
   wwctGUIConversationRateLimit: 번역당 속도 제한은 현재 %i 초입니다.0보다 큰 값을 입력하여 새 값을 설정하거나 0을
     입력하여 제한을 사용하지 않도록 설정합니다.돌아가려면 0보다 작은 값을 입력하십시오.
   wwctGUITargetPlayerNull: ' 대상 플레이어가 서버에서 연결이 끊겼습니다.'
+  wwcConfigConversationSyncUserDataDelayInput: 사용자 데이터 동기화당 현재 지연은 %i 초입니다.10보다 큰
+    값을 입력하여 새 값을 설정하거나 10보다 작은 값을 입력하여 되돌립니다.
+  wwcConfigGUISyncUserDataButton: 사용자 데이터 동기화 지연 변경
+  wwcConfigSyncTime: 자동 사용자 데이터 동기화가 %i 나노초 내에 완료되었습니다.
+  wwcConfigSyncDelayEnabled: '%i 초로 설정된 사용자 데이터 동기화 당 지연입니다.'
+  wwcConfigConversationSyncUserDataDelaySuccess: ' 사용자 데이터 동기화 지연이 성공적으로 설정되었습니다.'
+  wwcConfigSyncDelayInvalid: config.yml에서 잘못된 사용자 데이터 동기화 지연이 설정되었습니다.기본값 7200초로 설정
+    중...
+  wwcConfigCacheInvalid: 변환기 캐시 크기가 잘못되었습니다.기본값 10으로 설정 중...

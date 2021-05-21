@@ -217,3 +217,15 @@ Messages:
     Skriv noget større end 0 for at angive en ny værdi, eller skriv 0 for at deaktivere
     grænsen. Skriv noget mindre end 0 for at gå tilbage.
   wwctGUITargetPlayerNull: ' Målspilleren blev afbrudt fra serveren.'
+  wwcConfigConversationSyncUserDataDelayInput: Den aktuelle forsinkelse pr. synkronisering
+    af brugerdata er %i sekunder. Skriv noget større end 10 for at indstille en ny
+    værdi, eller noget mindre end 10 for at gå tilbage.
+  wwcConfigGUISyncUserDataButton: Skift forsinkelse af synkronisering af brugerdata
+  wwcConfigSyncTime: Automatisk synkronisering af brugerdata fuldført i %i nanosekunder.
+  wwcConfigSyncDelayEnabled: Forsinkelse pr. brugerdatasynkronisering indstillet til
+    %i sekunder.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Forsinkelse af brugerdata indstillet
+    med succes.'
+  wwcConfigSyncDelayInvalid: Ugyldig synkroniseringsforsinkelse for brugerdata angivet
+    i config.yml. Defaulerer til 7200 sekunder...
+  wwcConfigCacheInvalid: Oversætter cache størrelse ugyldig. Default til 10...

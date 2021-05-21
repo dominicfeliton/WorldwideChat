@@ -222,3 +222,15 @@ Messages:
     ini. Ketik sesuatu yang lebih besar daripada 0 untuk menetapkan nilai baru, atau
     ketik 0 untuk menonaktifkan batas. Taip apa-apa kurang daripada 0 untuk kembali.
   wwctGUITargetPlayerNull: ' Pemain sasaran terputus dari pelayan.'
+  wwcConfigConversationSyncUserDataDelayInput: Kelewatan semasa setiap penyegerakan
+    data pengguna adalah %i saat. Taip apa-apa yang lebih besar daripada 10 untuk
+    menetapkan nilai baru, atau apa-apa kurang daripada 10 untuk kembali.
+  wwcConfigGUISyncUserDataButton: Ubah Keterlambatan Sinkronisasi Data Pengguna
+  wwcConfigSyncTime: Penyegerakan data pengguna automatik selesai dalam %i nanosaat.
+  wwcConfigSyncDelayEnabled: Kelewatan bagi setiap penyelarasan data pengguna ditetapkan
+    ke %i saat.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Kelewatan penyegerakan data pengguna
+    berjaya ditetapkan.'
+  wwcConfigSyncDelayInvalid: Set kelewatan penyegerakan data pengguna tidak sah dalam
+    config.yml. Lalai kepada 7200 saat...
+  wwcConfigCacheInvalid: Saiz cache penterjemah tidak sah. Defaulting kepada 10...

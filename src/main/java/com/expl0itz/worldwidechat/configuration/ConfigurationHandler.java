@@ -43,6 +43,7 @@ public class ConfigurationHandler {
     	mainConfig.addDefault("General.enablebStats", true);
     	mainConfig.addDefault("General.pluginLang", "en");
     	mainConfig.addDefault("General.updateCheckerDelay", 86400);
+    	mainConfig.addDefault("General.syncUserDataDelay", 7200);
     	
     	mainConfig.addDefault("Chat.sendTranslationChat", true);
     	mainConfig.addDefault("Chat.sendPluginUpdateChat", true);
@@ -103,15 +104,6 @@ public class ConfigurationHandler {
         } catch (Exception e) {
             main.getLogger().warning((getMessagesConfig().getString("Messages.wwcConfigInvalidPrefixSettings")));
         }
-        //Rate-limit Settings
-        try {
-        	if (getMainConfig().getInt("Translator.rateLimit") > 0) {
-        		main.setRateLimit(getMainConfig().getInt("Translator.rateLimit"));
-        		main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigRateLimitEnabled").replace("%i", "" + getMainConfig().getInt("Translator.rateLimit")));
-        	}
-        } catch (Exception e) {
-        	main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigRateLimitInvalid"));
-        }
         //bStats
         main.setbStats(getMainConfig().getBoolean("General.enablebStats"));
         if (getMainConfig().getBoolean("General.enablebStats")) {
@@ -132,6 +124,19 @@ public class ConfigurationHandler {
         } catch (Exception e) {
             main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigBadUpdateDelay"));
             main.setUpdateCheckerDelay(86400);
+        }
+        //Sync User Data Delay
+        try {
+            if ((getMainConfig().getInt("General.syncUserDataDelay") > 10)) {
+                main.setSyncUserDataDelay(getMainConfig().getInt("General.syncUserDataDelay"));
+                main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigSyncDelayEnabled").replace("%i", main.getSyncUserDataDelay() + ""));
+            } else {
+            	main.setSyncUserDataDelay(7200);
+                main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigSyncDelayInvalid"));
+            }
+        } catch (Exception e) {
+        	main.setSyncUserDataDelay(7200);
+            main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigSyncDelayInvalid"));
         }
         
         /* Translator Settings */
@@ -166,12 +171,37 @@ public class ConfigurationHandler {
         	e.printStackTrace();
         	main.setTranslatorName("Invalid");
         }
-        
+        //Rate-limit Settings
+        try {
+        	if (getMainConfig().getInt("Translator.rateLimit") > 0) {
+        		main.setRateLimit(getMainConfig().getInt("Translator.rateLimit"));
+        		main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigRateLimitEnabled").replace("%i", "" + main.getRateLimit()));
+        	}
+        } catch (Exception e) {
+        	main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigRateLimitInvalid"));
+        	main.setRateLimit(0);
+        }
         //Cache Settings
-        if (getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
-            main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigCacheEnabled").replace("%i", "" + getMainConfig().getInt("Translator.translatorCacheSize")));
-        } else {
-            main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigCacheDisabled"));
+        try {
+        	if (getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
+                main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigCacheEnabled").replace("%i", "" + getMainConfig().getInt("Translator.translatorCacheSize")));
+            } else {
+                main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigCacheDisabled"));
+                getMainConfig().set("Translator.translatorCacheSize", 10);
+                try {
+    				getMainConfig().save(configFile);
+    			} catch (IOException e1) {
+    				e1.printStackTrace();
+    			}
+            }
+        } catch (Exception e) {
+        	main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigCacheInvalid"));
+        	getMainConfig().set("Translator.translatorCacheSize", 10);
+            try {
+				getMainConfig().save(configFile);
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
         }
         return true; // We made it, everything set successfully; return false == fatal error and plugin disables itself
     }
@@ -235,6 +265,24 @@ public class ConfigurationHandler {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    
+    public void syncData() {
+    	//Sync activeTranslators to disk
+        synchronized (main.getActiveTranslators()) {
+        	//Save all new activeTranslators
+            for (ActiveTranslator eaTranslator : main.getActiveTranslators()) {
+                createUserDataConfig(eaTranslator);
+            }
+            //Delete any old activeTranslators
+            File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
+            for (String eaName : userSettingsDir.list()) {
+            	File currFile = new File(userSettingsDir, eaName);
+            	if (main.getActiveTranslator(currFile.getName().substring(0, currFile.getName().indexOf("."))) == null) {
+            		currFile.delete();
+            	}
+            }
+        }  
     }
     
     /* Getters */

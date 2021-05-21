@@ -211,3 +211,15 @@ Messages:
     Tippige uue väärtuse määramiseks midagi suuremat kui 0 või tippige piirangu keelamiseks
     0. Tippige midagi vähem kui 0 tagasi minna.
   wwctGUITargetPlayerNull: ' Sihtmängija lahti serverist.'
+  wwcConfigConversationSyncUserDataDelayInput: Praegune viivitus kasutaja andmete
+    sünkroonimise kohta on %i sekundit. Tippige midagi suuremat kui 10 uue väärtuse
+    määramiseks või midagi vähem kui 10, et minna tagasi.
+  wwcConfigGUISyncUserDataButton: Kasutaja andmete sünkroonimise viivituse
+  wwcConfigSyncTime: Automaatne kasutaja andmete sünkroonimine on lõpetatud %i nanosekundit.
+  wwcConfigSyncDelayEnabled: Viivitus kasutaja andmete sünkroonimise kohta määratud
+    %i sekundit.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Kasutaja andmete sünkroonimise
+    viivitus seatud edukalt'
+  wwcConfigSyncDelayInvalid: Kehtetu kasutaja andmete sünkroonimise viivitus seatud
+    config.yml. Defaulting kuni 7200 sekundit...
+  wwcConfigCacheInvalid: Tõlkija vahemälu suurus kehtetu. Defaulting kuni 10...

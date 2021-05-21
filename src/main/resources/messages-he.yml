@@ -196,3 +196,14 @@ Messages:
     מ- 0 כדי להגדיר ערך חדש, או הקלד 0 כדי לבטל את המגבלה. הקלד כל דבר פחות מ-0 כדי
     לחזור.
   wwctGUITargetPlayerNull: ' שחקן היעד מנותק מהשרת.'
+  wwcConfigConversationSyncUserDataDelayInput: ההשהיה הנוכחית לכל סינכרון של נתוני
+    המשתמש הוא %i שניות. הקלד כל דבר גדול מ- 10 כדי להגדיר ערך חדש, או כל דבר פחות
+    מ- 10 כדי לחזור אחורה.
+  wwcConfigGUISyncUserDataButton: שינוי שיהוי סינכרון נתוני משתמש
+  wwcConfigSyncTime: סנכרון נתוני משתמש אוטומטי הושלם ב %i ננו-שניות.
+  wwcConfigSyncDelayEnabled: השהיה לכל סינכרון נתוני המשתמש מוגדר אל %i שניות.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' עיכוב סינכרון נתוני המשתמש הוגדר
+    בהצלחה.'
+  wwcConfigSyncDelayInvalid: עיכוב סינכרון נתוני משתמש לא חוקי מוגדר ב- config.yml.
+    ברירת מחדל ל-7200 שניות...
+  wwcConfigCacheInvalid: גודל המטמון מתרגם לא חוקי. ברירת מחדל ל- 10...

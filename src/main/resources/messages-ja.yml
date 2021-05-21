@@ -178,3 +178,11 @@ Messages:
   wwctGUIConversationRateLimit: 変換ごとのレート制限は現在 %i 秒です。0より大きい値を入力して新しい値を設定するか、0を入力して制限を無効にします。戻るには、0
     より小さい値を入力してください。
   wwctGUITargetPlayerNull: ' ターゲットプレーヤーがサーバーから切断されました。'
+  wwcConfigConversationSyncUserDataDelayInput: ユーザーデータの同期ごとの現在の遅延は %i 秒です。10 より大きい値を入力して新しい値を設定するか、10
+    より小さい値を入力して戻ります。
+  wwcConfigGUISyncUserDataButton: ユーザーデータ同期遅延の変更
+  wwcConfigSyncTime: ユーザーデータの自動同期は %i ナノ秒で完了しました。
+  wwcConfigSyncDelayEnabled: ユーザーごとのデータ同期遅延を %i 秒に設定します。
+  wwcConfigConversationSyncUserDataDelaySuccess: ' ユーザーデータの同期遅延が正常に設定されました。'
+  wwcConfigSyncDelayInvalid: config.yml に設定されているユーザーデータ同期遅延が無効です。デフォルトは 7200 秒です...
+  wwcConfigCacheInvalid: トランスレータキャッシュサイズが無効です。デフォルトは10に設定しています...

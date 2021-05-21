@@ -221,3 +221,14 @@ Messages:
     eiliad. Teipiwch unrhyw beth sy\'n fwy na 0 i osod gwerth newydd, neu deipio 0
     i analluoga \'r terfyn. Teipiwch unrhyw beth llai na 0 i fynd yn ôl.
   wwctGUITargetPlayerNull: ' Mae\''r chwaraewr targed ddatgysylltu oddi wrth y gweinydd.'
+  wwcConfigConversationSyncUserDataDelayInput: Yr oedi cyfredol fesul cydamseru data
+    defnyddiwr yw %i eiliad. Teipiwch unrhyw beth sy\'n fwy na 10 i osod gwerth newydd,
+    neu unrhyw beth llai na 10 i fynd yn ôl.
+  wwcConfigGUISyncUserDataButton: Newid defnyddiwr Data Sync Oedi
+  wwcConfigSyncTime: Cydamseru data defnyddiwr awtomatig wedi\'i gwblhau yn %i nanoseconds.
+  wwcConfigSyncDelayEnabled: Oedi fesul set cysoni data defnyddiwr i %i eiliad.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Data defnyddiwr oedi cysoni gosod
+    yn llwyddiannus.'
+  wwcConfigSyncDelayInvalid: Gohirio cysoni data defnyddiwr annilys a osodwyd yn config.yml.
+    Defaulting i 7200 eiliad...
+  wwcConfigCacheInvalid: Maint cache Cyfieithydd annilys. Defaulting i 10...

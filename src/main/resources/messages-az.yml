@@ -214,3 +214,16 @@ Messages:
     bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın və ya limiti aradan
     qaldırmaq üçün 0 yazın. Geri dönmək üçün 0\'dan az bir şey yazın.
   wwctGUITargetPlayerNull: ' Hədəf oyunçu serverdən uzaqlaşır.'
+  wwcConfigConversationSyncUserDataDelayInput: İstifadəçi məlumatlarının sinxronlaşdırılmasına
+    görə cari gecikmə %i saniyədir. Yeni bir dəyər təyin etmək üçün 10-dan daha böyük
+    bir şey yazın və ya 10-dan az bir şey geri qayıtmaq üçün.
+  wwcConfigGUISyncUserDataButton: İstifadəçi Məlumatlarının Sinxronlaşdırılmasının
+  wwcConfigSyncTime: Avtomatik istifadəçi məlumatlarının sinxronizasiyası %i nanosaniyədə
+    başa çatdı.
+  wwcConfigSyncDelayEnabled: İstifadəçi məlumatlarının sinxronizasiya başına gecikmə
+    %i saniyəyə təyin olunur.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' İstifadəçi data sync gecikmə uğurla
+    müəyyən.'
+  wwcConfigSyncDelayInvalid: Config.yml müəyyən etibarsız istifadəçi data sync gecikmə.
+    7200 saniyəyə qədər defaulting...
+  wwcConfigCacheInvalid: Tərcüməçi önbellek ölçüsü etibarsız. 10 üçün defaulting...

@@ -223,3 +223,16 @@ Messages:
     Nhập bất cứ điều gì lớn hơn 0 để đặt một giá trị mới, hoặc nhập 0 để vô hiệu hóa
     giới hạn. Nhập bất cứ điều gì nhỏ hơn 0 để quay trở lại.
   wwctGUITargetPlayerNull: ' Người chơi mục tiêu bị ngắt kết nối khỏi máy chủ.'
+  wwcConfigConversationSyncUserDataDelayInput: Sự chậm trễ hiện tại cho mỗi đồng bộ
+    hóa dữ liệu người dùng là %i giây. Nhập bất cứ điều gì lớn hơn 10 để đặt một giá
+    trị mới, hoặc bất cứ điều gì nhỏ hơn 10 để quay lại.
+  wwcConfigGUISyncUserDataButton: Thay đổi độ trễ đồng bộ hóa dữ liệu người dùng
+  wwcConfigSyncTime: Tự động đồng bộ dữ liệu người dùng hoàn tất trong %i nanogiây.
+  wwcConfigSyncDelayEnabled: Trì hoãn cho mỗi người dùng đồng bộ hóa dữ liệu đặt thành
+    %i giây.
+  wwcConfigConversationSyncUserDataDelaySuccess: ' Thiết lập chậm trễ đồng bộ hóa
+    dữ liệu người dùng thành công.'
+  wwcConfigSyncDelayInvalid: Sự chậm trễ đồng bộ hóa dữ liệu người dùng không hợp
+    lệ đặt trong config.yml. Mặc định đến 7200 giây...
+  wwcConfigCacheInvalid: Kích thước bộ nhớ cache của trình dịch không hợp lệ. Mặc
+    định là 10...

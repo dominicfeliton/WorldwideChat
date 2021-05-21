@@ -13,7 +13,7 @@ import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.misc.PlayerRecord;
 import com.google.common.io.Files;
 
-public class LoadUserData implements Runnable{
+public class LoadUserData implements Runnable {
 
     private WorldwideChat main = WorldwideChat.getInstance();
     

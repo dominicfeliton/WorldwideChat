@@ -175,3 +175,11 @@ Messages:
   wwctGUIConversationRateLimit: 每次翻译的速率限制目前为 %i 秒。键入大于 0 的任何值以设置新值，或者键入 0 以禁用限制。键入小于
     0 的任何内容以返回。
   wwctGUITargetPlayerNull: ' 目标玩家已断开与服务器的连接。'
+  wwcConfigConversationSyncUserDataDelayInput: 每次同步用户数据的当前延迟为 %i 秒。键入大于 10 的任何值以设置新值，或者键入小于
+    10 的任何值以返回。
+  wwcConfigGUISyncUserDataButton: 更改用户数据同步延迟
+  wwcConfigSyncTime: 用户数据自动同步在 %i 纳秒内完成。
+  wwcConfigSyncDelayEnabled: 每个用户数据同步的延迟设置为 %i 秒。
+  wwcConfigConversationSyncUserDataDelaySuccess: ' 成功设置用户数据同步延迟。'
+  wwcConfigSyncDelayInvalid: config.yml 中设置的用户数据同步延迟无效。默认为 7200 秒...
+  wwcConfigCacheInvalid: 转换器缓存大小无效。默认为 10...
