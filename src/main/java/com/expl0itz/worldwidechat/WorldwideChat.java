@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -85,7 +84,7 @@ public class WorldwideChat extends JavaPlugin {
 
     private boolean enablebStats = true;
     private boolean outOfDate = false;
-    private AtomicBoolean isReloading = new AtomicBoolean(false);
+    private boolean isReloading = false;
 
     private String pluginPrefixString = "WWC";
     private String pluginLang = "en";
@@ -169,7 +168,7 @@ public class WorldwideChat extends JavaPlugin {
     
     /* Init all commands */
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-    	if (!isReloading.get()) {
+    	if (!isReloading) {
     		if (command.getName().equalsIgnoreCase("wwc")) {
                 //WWC version
                 final TextComponent versionNotice = Component.text()
@@ -472,7 +471,7 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     public void setReloading(boolean i) {
-    	isReloading.set(i);
+    	isReloading = i;
     }
     
     /* Getters */
@@ -559,7 +558,7 @@ public class WorldwideChat extends JavaPlugin {
         return outOfDate;
     }
     
-    public AtomicBoolean isReloading() {
+    public boolean isReloading() {
     	return isReloading;
     }
     

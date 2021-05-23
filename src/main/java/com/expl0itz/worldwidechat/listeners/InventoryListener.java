@@ -22,7 +22,7 @@ public class InventoryListener implements Listener {
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInventoryCloseEvent(InventoryCloseEvent e) {
 		/* Send the user a message if they quit a config GUI without saving properly */
-		if (!main.isReloading().get() && main.getPlayersUsingGUI().contains(e.getPlayer())) {
+		if (!main.isReloading() && main.getPlayersUsingGUI().contains(e.getPlayer())) {
 			Bukkit.getScheduler().runTaskLaterAsynchronously(main, new Runnable() {
 				@Override
 				public void run() {

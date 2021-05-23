@@ -23,7 +23,7 @@ public class BookReadListener implements Listener{
     
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onBookRead(PlayerInteractEvent event) {
-        if (!main.isReloading().get() && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null 
+        if (!main.isReloading() && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null 
                 && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingBook() 
                 && event.getHand() != null 
                 && event.getItem() != null

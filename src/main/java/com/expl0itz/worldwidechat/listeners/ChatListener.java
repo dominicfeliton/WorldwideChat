@@ -15,7 +15,7 @@ public class ChatListener implements Listener {
     
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerChat(AsyncPlayerChatEvent event) {
-        if (!main.isReloading().get() && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) instanceof ActiveTranslator || main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) {
+        if (!main.isReloading() && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) instanceof ActiveTranslator || main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) {
         	event.setMessage(CommonDefinitions.translateText(event.getMessage(), event.getPlayer())); 
         }
     }

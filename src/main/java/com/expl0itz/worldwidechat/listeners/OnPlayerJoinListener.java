@@ -20,7 +20,7 @@ public class OnPlayerJoinListener implements Listener {
 
     @EventHandler(priority = EventPriority.NORMAL) 
     public void onPlayerJoinListener(PlayerJoinEvent event){
-    	if (!main.isReloading().get()) {
+    	if (!main.isReloading()) {
     		//Check if plugin has updates
             if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) && 
                     (main.getOutOfDate()) && (event.getPlayer().hasPermission("worldwidechat.chatupdate"))) {

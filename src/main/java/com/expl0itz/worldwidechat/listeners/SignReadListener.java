@@ -22,7 +22,7 @@ public class SignReadListener implements Listener {
     
     @EventHandler(priority = EventPriority.HIGHEST) 
     public void onPlayerInteract(PlayerInteractEvent event) {
-        if (!main.isReloading().get() && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null 
+        if (!main.isReloading() && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null 
                 && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingSign() 
                 && event.getClickedBlock() != null) {
             if ((event.getClickedBlock().getType().name().contains("SIGN") && event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
