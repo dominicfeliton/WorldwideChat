@@ -59,7 +59,7 @@ public class ConfigurationHandler {
     	mainConfig.addDefault("Translator.amazonRegion", "");
     	mainConfig.addDefault("Translator.translatorCacheSize", 10);
     	mainConfig.addDefault("Translator.rateLimit", 0);
-        
+    	
     	mainConfig.options().copyDefaults(true);
     	try {
 			mainConfig.save(configFile);
@@ -268,7 +268,7 @@ public class ConfigurationHandler {
     }
     
     public void syncData() {
-    	//Sync activeTranslators to disk
+    	/* Sync activeTranslators to disk */
         synchronized (main.getActiveTranslators()) {
         	//Save all new activeTranslators
             for (ActiveTranslator eaTranslator : main.getActiveTranslators()) {
@@ -282,7 +282,20 @@ public class ConfigurationHandler {
             		currFile.delete();
             	}
             }
-        }  
+        }
+        
+        /* Sync playerRecords to disk */
+        for (PlayerRecord eaRecord : main.getPlayerRecords()) {
+        	createStatsConfig(eaRecord);
+        }
+        //Delete old playerRecords (just in case)
+        File playerRecordsDir = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
+        for (String eaName : playerRecordsDir.list()) {
+        	File currFile = new File(playerRecordsDir, eaName);
+        	if (main.getPlayerRecord(currFile.getName().substring(0, currFile.getName().indexOf(".")), false) == null) {
+        		currFile.delete();
+        	}
+        }
     }
     
     /* Getters */

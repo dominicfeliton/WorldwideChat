@@ -1,7 +1,5 @@
 package com.expl0itz.worldwidechat.commands;
 
-import java.io.File;
-
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -269,7 +267,7 @@ public class WWCTranslate extends BasicCommand {
         /* If we got here, invalid lang code */
         final TextComponent invalidLangCode = Component.text()
             .append(main.getPluginPrefix().asComponent())
-            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidLangCode").replace("%o", CommonDefinitions.getValidLangCodes())).color(NamedTextColor.RED))
+            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidLangCode").replace("%o", CommonDefinitions.getFormattedValidLangCodes())).color(NamedTextColor.RED))
             .build();
         adventureSender.sendMessage(invalidLangCode);
         return false;

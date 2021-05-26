@@ -277,20 +277,15 @@ public class WorldwideChat extends JavaPlugin {
         }
         backgroundTasks.clear();
         
-        //Save all playerRecords
-        for (PlayerRecord eaRecord : playerRecords) {
-        	getConfigManager().createStatsConfig(eaRecord);
-        }
-        playerRecords.clear();
-        
         //Clear all supported langs
         supportedLanguages.clear();
         
-        //Sync activeTranslators to disk
+        //Sync activeTranslators, playerRecords to disk
         getConfigManager().syncData();
             
         //Clear all active translating users, cache, playersUsingConfigGUI
         playersUsingConfigurationGUI.clear();
+        playerRecords.clear();
         activeTranslators.clear();
         cache.clear();
     }

@@ -103,11 +103,7 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 		stopButton.setItemMeta(stopMeta);
 		contents.set(5, 0, ClickableItem.of(stopButton,
 			e -> {
-				if (targetPlayerUUID == null) {
-					WWCTranslateGUIMainMenu.getTranslateMainMenu(null).open(player);
-				} else {
-					WWCTranslateGUIMainMenu.getTranslateMainMenu(targetPlayerUUID).open(player);
-				}
+				WWCTranslateGUIMainMenu.getTranslateMainMenu(targetPlayerUUID).open(player);
 			}));
 		
 		/* Bottom Left Option: Previous Page */
@@ -117,18 +113,15 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 	    previousPageButton.setItemMeta(previousPageMeta);
 	    contents.set(5, 2, ClickableItem.of(previousPageButton, 
 				e -> {
-					if (targetPlayerUUID == null) {
-						getSourceLanguageInventory(selectedSourceLanguage, null).open(player, pagination.previous().getPage());
-					} else {
-						getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.previous().getPage());
-					}
+					getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.previous().getPage());
 				}));
 		
 	    /* Bottom Middle Option: Auto-detect Source Language */
 	    ItemStack skipSourceButton = new ItemStack(Material.BOOKSHELF);
 	    ItemMeta skipSourceMeta = skipSourceButton.getItemMeta();
 	    skipSourceMeta.setDisplayName(ChatColor.YELLOW + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIAutoDetectButton"));
-        if (main.getActiveTranslator(player.getUniqueId().toString()) != null && main.getActiveTranslator(player.getUniqueId().toString()).getInLangCode().equals("None")
+        if ((targetPlayerUUID != null && Bukkit.getPlayer(UUID.fromString(targetPlayerUUID)) != null && main.getActiveTranslator(Bukkit.getPlayer(UUID.fromString(targetPlayerUUID)).getUniqueId().toString()) != null && main.getActiveTranslator(Bukkit.getPlayer(UUID.fromString(targetPlayerUUID)).getUniqueId().toString()).getInLangCode().equals("None"))
+        	|| (targetPlayerUUID == null && main.getActiveTranslator(player.getUniqueId().toString()) != null && main.getActiveTranslator(player.getUniqueId().toString()).getInLangCode().equals("None"))
         		|| selectedSourceLanguage.equals("None")) {
         	EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
 			skipSourceMeta.addEnchant(glow, 1, true);
@@ -144,11 +137,7 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 	    nextPageButton.setItemMeta(nextPageMeta);
 	    contents.set(5, 6, ClickableItem.of(nextPageButton,
 	    		e -> {
-					if (targetPlayerUUID == null) {
-						getSourceLanguageInventory(selectedSourceLanguage, null).open(player, pagination.next().getPage());
-					} else {
-						getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.next().getPage());
-					}
+					getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.next().getPage());
 				}));;
 	}
 

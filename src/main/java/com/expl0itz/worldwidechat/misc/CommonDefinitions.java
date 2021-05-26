@@ -132,7 +132,7 @@ public class CommonDefinitions {
         return null;
     }
     
-    public static String getValidLangCodes() {
+    public static String getFormattedValidLangCodes() {
         String out = "\n";
         for (SupportedLanguageObject eaLang : WorldwideChat.getInstance().getSupportedTranslatorLanguages()) {
     		out += "(" + eaLang.getLangCode() + " - " + eaLang.getLangName() + "), ";
