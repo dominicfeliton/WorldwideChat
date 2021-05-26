@@ -28,17 +28,17 @@ public class EnchantGlowEffect extends Enchantment {
 
 	  @Override
 	  public int getMaxLevel() {
-	      return 0;
+	      return 2;
 	  }
 
 	  @Override
 	  public String getName() {
-	      return null;
+	      return "wwc_glow";
 	  }
-
+	  
 	  @Override
 	  public int getStartLevel() {
-	      return 0;
+	      return 1;
 	  }
 
 	@Override
