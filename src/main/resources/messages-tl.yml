@@ -248,3 +248,7 @@ Messages:
   wwcConfigSyncDelayInvalid: Itinatakda ang hindi wastong pagkaantala sa pag-sync
     ng data ng user sa config.yml. Default sa 7200 segundo...
   wwcConfigCacheInvalid: Hindi wasto ang laki ng cache ng tagasalin. Default sa 10...
+  wwcInventoryErrorPlayer: ' Nakita ang error sa iyong GUI. Ang isang log ay naipadala
+    sa console.'
+  wwcInventoryError: Error na nakita sa GUI ng tagagamit na %i. Pakiulat ang isyung
+    ito sa developer.

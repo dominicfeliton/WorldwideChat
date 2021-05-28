@@ -65,204 +65,214 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 	
 	@Override
 	public void init(Player player, InventoryContents contents) {
-		/* Default white stained glass borders for inactive */
-		ItemStack customDefaultBorders = new ItemStack(Material.WHITE_STAINED_GLASS_PANE);
-		ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
-		defaultBorderMeta.setDisplayName(" ");
-		customDefaultBorders.setItemMeta(defaultBorderMeta);
-		contents.fillBorders(ClickableItem.empty(customDefaultBorders));
-		
-		/* New translation button */
-		ItemStack translationButton = new ItemStack(Material.COMPASS);
-		ItemMeta translationMeta = translationButton.getItemMeta();
-		translationMeta.setDisplayName(main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUITranslationButton"));
-		translationButton.setItemMeta(translationMeta);
-		contents.set(3, 4, ClickableItem.of(translationButton, 
-				e -> {
-					if (targetPlayerUUID == null) {
-						WWCTranslateGUISourceLanguage.getSourceLanguageInventory("", null).open(player);
-					} else {
-						WWCTranslateGUISourceLanguage.getSourceLanguageInventory("", targetPlayerUUID).open(player);
-					}
-				}));
-		
-		/* If target player exists, is active player */
-		if (targetPlayerUUID != null && main.getActiveTranslator(targetPlayerUUID) != null) {
-			ActiveTranslator targetTranslator = main.getActiveTranslator(targetPlayerUUID);
+		try {
+			/* Default white stained glass borders for inactive */
+			ItemStack customDefaultBorders = new ItemStack(Material.WHITE_STAINED_GLASS_PANE);
+			ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
+			defaultBorderMeta.setDisplayName(" ");
+			customDefaultBorders.setItemMeta(defaultBorderMeta);
+			contents.fillBorders(ClickableItem.empty(customDefaultBorders));
 			
-			/* Make compass enchanted */
-			EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
-			translationMeta.addEnchant(glow, 1, true);
-			translationMeta.setDisplayName(main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIExistingTranslationButton"));
-			translationMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+			/* New translation button */
+			ItemStack translationButton = new ItemStack(Material.COMPASS);
+			ItemMeta translationMeta = translationButton.getItemMeta();
+			translationMeta.setDisplayName(main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUITranslationButton"));
 			translationButton.setItemMeta(translationMeta);
+			contents.set(3, 4, ClickableItem.of(translationButton, 
+					e -> {
+						if (targetPlayerUUID == null) {
+							WWCTranslateGUISourceLanguage.getSourceLanguageInventory("", null).open(player);
+						} else {
+							WWCTranslateGUISourceLanguage.getSourceLanguageInventory("", targetPlayerUUID).open(player);
+						}
+					}));
 			
-			/* Green stained glass borders for active */
-			ItemStack customBorders = new ItemStack(Material.GREEN_STAINED_GLASS_PANE);
-			ItemMeta borderMeta = customBorders.getItemMeta();
-			borderMeta.setDisplayName(" ");
-			customBorders.setItemMeta(borderMeta);
-			contents.fillBorders(ClickableItem.empty(customBorders));
-			
-			/* Stop Button: Stop translation if active */
-			ItemStack stopButton = new ItemStack(Material.BARRIER);
-			ItemMeta stopMeta = stopButton.getItemMeta();
-			stopMeta.setDisplayName(ChatColor.RED + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIStopButton"));
-			stopButton.setItemMeta(stopMeta);
-			contents.set(2, 4, ClickableItem.of(stopButton,
-				e -> {
-					String[] args;
-					if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
-						args = new String[]{main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName(), "stop"};
-					} else {
-						args = new String[]{"stop"};
+			/* If target player exists, is active player */
+			if (targetPlayerUUID != null && main.getActiveTranslator(targetPlayerUUID) != null) {
+				ActiveTranslator targetTranslator = main.getActiveTranslator(targetPlayerUUID);
+				
+				/* Make compass enchanted */
+				EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
+				translationMeta.addEnchant(glow, 1, true);
+				translationMeta.setDisplayName(main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIExistingTranslationButton"));
+				translationMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+				translationButton.setItemMeta(translationMeta);
+				
+				/* Green stained glass borders for active */
+				ItemStack customBorders = new ItemStack(Material.GREEN_STAINED_GLASS_PANE);
+				ItemMeta borderMeta = customBorders.getItemMeta();
+				borderMeta.setDisplayName(" ");
+				customBorders.setItemMeta(borderMeta);
+				contents.fillBorders(ClickableItem.empty(customBorders));
+				
+				/* Stop Button: Stop translation if active */
+				ItemStack stopButton = new ItemStack(Material.BARRIER);
+				ItemMeta stopMeta = stopButton.getItemMeta();
+				stopMeta.setDisplayName(ChatColor.RED + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIStopButton"));
+				stopButton.setItemMeta(stopMeta);
+				contents.set(2, 4, ClickableItem.of(stopButton,
+					e -> {
+						String[] args;
+						if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+							args = new String[]{main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName(), "stop"};
+						} else {
+							args = new String[]{"stop"};
+						}
+						WWCTranslate translate = new WWCTranslate((CommandSender)player, null, null, args);
+						if (targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
+							translate.processCommand(true);
+					    } else {
+					    	translate.processCommand(false);
+					    }
+						getTranslateMainMenu(targetPlayerUUID).open(player);
+					}));
+				
+				/* Rate Limit Button: Set a rate limit for the current translator */
+				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcrl") && player.hasPermission("worldwidechat.wwcrl.otherplayers")) {
+					ConversationFactory rateConvo = new ConversationFactory(main)
+							.withModality(true)
+							.withFirstPrompt(new RateLimitConversation(main.getActiveTranslator(targetPlayerUUID)));
+					ItemStack rateButton = new ItemStack(Material.SLIME_BLOCK);
+					ItemMeta rateMeta = rateButton.getItemMeta();
+					rateMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIRateButton"));
+					if (targetTranslator.getRateLimit() > 0) {				
+						rateMeta.addEnchant(glow, 1, true);
 					}
-					WWCTranslate translate = new WWCTranslate((CommandSender)player, null, null, args);
-					if (targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
-						translate.processCommand(true);
-				    } else {
-				    	translate.processCommand(false);
-				    }
-					getTranslateMainMenu(targetPlayerUUID).open(player);
-				}));
-			
-			/* Rate Limit Button: Set a rate limit for the current translator */
-			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcrl") && player.hasPermission("worldwidechat.wwcrl.otherplayers")) {
-				ConversationFactory rateConvo = new ConversationFactory(main)
-						.withModality(true)
-						.withFirstPrompt(new RateLimitConversation(main.getActiveTranslator(targetPlayerUUID)));
-				ItemStack rateButton = new ItemStack(Material.SLIME_BLOCK);
-				ItemMeta rateMeta = rateButton.getItemMeta();
-				rateMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIRateButton"));
-				if (targetTranslator.getRateLimit() > 0) {				
-					rateMeta.addEnchant(glow, 1, true);
+					rateButton.setItemMeta(rateMeta);
+					contents.set(3, 2, ClickableItem.of(rateButton, 
+							e -> {
+								rateConvo.buildConversation(player).begin();}));
+				} 
+				
+				/* Book Translation Button */
+				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwctb") && player.hasPermission("worldwidechat.wwctb.otherplayers")) {
+					ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
+					ItemMeta bookMeta = bookButton.getItemMeta();
+					bookMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIBookButton"));
+					if (targetTranslator.getTranslatingBook()) {				
+						bookMeta.addEnchant(glow, 1, true);
+					}
+					bookButton.setItemMeta(bookMeta);
+					contents.set(3, 1, ClickableItem.of(bookButton, 
+							e -> {
+								String[] args = {main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName()};
+								WWCTranslateBook translateBook = new WWCTranslateBook((CommandSender)player, null, null, args);
+								translateBook.processCommand();
+								getTranslateMainMenu(targetPlayerUUID).open(player);
+							}));
 				}
-				rateButton.setItemMeta(rateMeta);
-				contents.set(3, 2, ClickableItem.of(rateButton, 
-						e -> {
-							rateConvo.buildConversation(player).begin();}));
-			} 
-			
-			/* Book Translation Button */
-			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwctb") && player.hasPermission("worldwidechat.wwctb.otherplayers")) {
-				ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
-				ItemMeta bookMeta = bookButton.getItemMeta();
-				bookMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIBookButton"));
-				if (targetTranslator.getTranslatingBook()) {				
-					bookMeta.addEnchant(glow, 1, true);
+				
+				/* Sign Translation Button */
+				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcts") && player.hasPermission("worldwidechat.wwcts.otherplayers")) {
+					ItemStack signButton = new ItemStack(Material.OAK_SIGN);
+					ItemMeta signMeta = signButton.getItemMeta();
+					signMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUISignButton"));
+					if (targetTranslator.getTranslatingSign()) {				
+						signMeta.addEnchant(glow, 1, true);
+					}
+					signButton.setItemMeta(signMeta);
+					contents.set(3, 7, ClickableItem.of(signButton, 
+							e -> {
+								String[] args = {main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName()};
+								WWCTranslateSign translateSign = new WWCTranslateSign((CommandSender)player, null, null, args);
+								translateSign.processCommand();
+								getTranslateMainMenu(targetPlayerUUID).open(player);
+							}));
 				}
-				bookButton.setItemMeta(bookMeta);
-				contents.set(3, 1, ClickableItem.of(bookButton, 
-						e -> {
-							String[] args = {main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName()};
-							WWCTranslateBook translateBook = new WWCTranslateBook((CommandSender)player, null, null, args);
-							translateBook.processCommand();
-							getTranslateMainMenu(targetPlayerUUID).open(player);
-						}));
+			} else if (targetPlayerUUID == null && main.getActiveTranslator(player.getUniqueId().toString()) != null) { /* Current player is active translator */
+				ActiveTranslator currTranslator = main.getActiveTranslator(player.getUniqueId().toString());
+				
+				/* Make compass enchanted */
+				EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
+				translationMeta.addEnchant(glow, 1, true);
+				translationMeta.setDisplayName(main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIExistingTranslationButton"));
+				translationMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+				translationButton.setItemMeta(translationMeta);
+				
+				/* Green stained glass borders for active */
+				ItemStack customBorders = new ItemStack(Material.GREEN_STAINED_GLASS_PANE);
+				ItemMeta borderMeta = customBorders.getItemMeta();
+				borderMeta.setDisplayName(" ");
+				customBorders.setItemMeta(borderMeta);
+				contents.fillBorders(ClickableItem.empty(customBorders));
+				
+				/* Stop Button: Stop translation if active */
+				ItemStack stopButton = new ItemStack(Material.BARRIER);
+				ItemMeta stopMeta = stopButton.getItemMeta();
+				stopMeta.setDisplayName(ChatColor.RED + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIStopButton"));
+				stopButton.setItemMeta(stopMeta);
+				contents.set(2, 4, ClickableItem.of(stopButton,
+					e -> {
+						String[] args = {"stop"};
+						WWCTranslate translate = new WWCTranslate((CommandSender)player, null, null, args);
+						translate.processCommand(false);
+						getTranslateMainMenu(targetPlayerUUID).open(player);
+					}));
+				
+				/* Rate Limit Button */
+				if (player.hasPermission("worldwidechat.wwcrl")) {
+					ConversationFactory rateConvo = new ConversationFactory(main)
+							.withModality(true)
+							.withFirstPrompt(new RateLimitConversation(currTranslator));
+					ItemStack rateButton = new ItemStack(Material.SLIME_BLOCK);
+					ItemMeta rateMeta = rateButton.getItemMeta();
+					rateMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIRateButton"));
+					if (currTranslator.getRateLimit() > 0) {				
+						rateMeta.addEnchant(glow, 1, true);
+					}
+					rateButton.setItemMeta(rateMeta);
+					contents.set(3, 2, ClickableItem.of(rateButton, 
+							e -> {
+								rateConvo.buildConversation(player).begin();}));
+				}
+				
+				/* Book Translation Button */
+				if (player.hasPermission("worldwidechat.wwctb")) {
+					ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
+					ItemMeta bookMeta = bookButton.getItemMeta();
+					bookMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIBookButton"));
+					if (currTranslator.getTranslatingBook()) {				
+						bookMeta.addEnchant(glow, 1, true);
+					}
+					bookButton.setItemMeta(bookMeta);
+					contents.set(3, 1, ClickableItem.of(bookButton, 
+							e -> {
+								String[] args = {};
+								WWCTranslateBook translateBook = new WWCTranslateBook((CommandSender)player, null, null, args);
+								translateBook.processCommand();
+								getTranslateMainMenu(targetPlayerUUID).open(player);
+							}));
+				}
+				
+				/* Sign Translation Button */
+				if (player.hasPermission("worldwidechat.wwcts")) {
+					ItemStack signButton = new ItemStack(Material.OAK_SIGN);
+					ItemMeta signMeta = signButton.getItemMeta();
+					signMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUISignButton"));
+					if (currTranslator.getTranslatingSign()) {				
+						signMeta.addEnchant(glow, 1, true);
+					}
+					signButton.setItemMeta(signMeta);
+					contents.set(3, 7, ClickableItem.of(signButton, 
+							e -> {
+								String[] args = {};
+								WWCTranslateSign translateSign = new WWCTranslateSign((CommandSender)player, null, null, args);
+								translateSign.processCommand();
+								getTranslateMainMenu(targetPlayerUUID).open(player);
+							}));
+				}
+			} else { /* Current player exists */
+				return;
 			}
-			
-			/* Sign Translation Button */
-			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcts") && player.hasPermission("worldwidechat.wwcts.otherplayers")) {
-				ItemStack signButton = new ItemStack(Material.OAK_SIGN);
-				ItemMeta signMeta = signButton.getItemMeta();
-				signMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUISignButton"));
-				if (targetTranslator.getTranslatingSign()) {				
-					signMeta.addEnchant(glow, 1, true);
-				}
-				signButton.setItemMeta(signMeta);
-				contents.set(3, 7, ClickableItem.of(signButton, 
-						e -> {
-							String[] args = {main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName()};
-							WWCTranslateSign translateSign = new WWCTranslateSign((CommandSender)player, null, null, args);
-							translateSign.processCommand();
-							getTranslateMainMenu(targetPlayerUUID).open(player);
-						}));
-			}
-		} else if (targetPlayerUUID == null && main.getActiveTranslator(player.getUniqueId().toString()) != null) { /* Current player is active translator */
-			ActiveTranslator currTranslator = main.getActiveTranslator(player.getUniqueId().toString());
-			
-			/* Make compass enchanted */
-			EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
-			translationMeta.addEnchant(glow, 1, true);
-			translationMeta.setDisplayName(main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIExistingTranslationButton"));
-			translationMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-			translationButton.setItemMeta(translationMeta);
-			
-			/* Green stained glass borders for active */
-			ItemStack customBorders = new ItemStack(Material.GREEN_STAINED_GLASS_PANE);
-			ItemMeta borderMeta = customBorders.getItemMeta();
-			borderMeta.setDisplayName(" ");
-			customBorders.setItemMeta(borderMeta);
-			contents.fillBorders(ClickableItem.empty(customBorders));
-			
-			/* Stop Button: Stop translation if active */
-			ItemStack stopButton = new ItemStack(Material.BARRIER);
-			ItemMeta stopMeta = stopButton.getItemMeta();
-			stopMeta.setDisplayName(ChatColor.RED + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIStopButton"));
-			stopButton.setItemMeta(stopMeta);
-			contents.set(2, 4, ClickableItem.of(stopButton,
-				e -> {
-					String[] args = {"stop"};
-					WWCTranslate translate = new WWCTranslate((CommandSender)player, null, null, args);
-					translate.processCommand(false);
-					getTranslateMainMenu(targetPlayerUUID).open(player);
-				}));
-			
-			/* Rate Limit Button */
-			if (player.hasPermission("worldwidechat.wwcrl")) {
-				ConversationFactory rateConvo = new ConversationFactory(main)
-						.withModality(true)
-						.withFirstPrompt(new RateLimitConversation(currTranslator));
-				ItemStack rateButton = new ItemStack(Material.SLIME_BLOCK);
-				ItemMeta rateMeta = rateButton.getItemMeta();
-				rateMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIRateButton"));
-				if (currTranslator.getRateLimit() > 0) {				
-					rateMeta.addEnchant(glow, 1, true);
-				}
-				rateButton.setItemMeta(rateMeta);
-				contents.set(3, 2, ClickableItem.of(rateButton, 
-						e -> {
-							rateConvo.buildConversation(player).begin();}));
-			}
-			
-			/* Book Translation Button */
-			if (player.hasPermission("worldwidechat.wwctb")) {
-				ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
-				ItemMeta bookMeta = bookButton.getItemMeta();
-				bookMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIBookButton"));
-				if (currTranslator.getTranslatingBook()) {				
-					bookMeta.addEnchant(glow, 1, true);
-				}
-				bookButton.setItemMeta(bookMeta);
-				contents.set(3, 1, ClickableItem.of(bookButton, 
-						e -> {
-							String[] args = {};
-							WWCTranslateBook translateBook = new WWCTranslateBook((CommandSender)player, null, null, args);
-							translateBook.processCommand();
-							getTranslateMainMenu(targetPlayerUUID).open(player);
-						}));
-			}
-			
-			/* Sign Translation Button */
-			if (player.hasPermission("worldwidechat.wwcts")) {
-				ItemStack signButton = new ItemStack(Material.OAK_SIGN);
-				ItemMeta signMeta = signButton.getItemMeta();
-				signMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUISignButton"));
-				if (currTranslator.getTranslatingSign()) {				
-					signMeta.addEnchant(glow, 1, true);
-				}
-				signButton.setItemMeta(signMeta);
-				contents.set(3, 7, ClickableItem.of(signButton, 
-						e -> {
-							String[] args = {};
-							WWCTranslateSign translateSign = new WWCTranslateSign((CommandSender)player, null, null, args);
-							translateSign.processCommand();
-							getTranslateMainMenu(targetPlayerUUID).open(player);
-						}));
-			}
-		} else { /* Current player exists */
-			return;
-		}
+		} catch (Exception e) {
+	    	final TextComponent inventoryError = Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcInventoryErrorPlayer")).color(NamedTextColor.RED))
+                    .build();
+                main.adventure().sender(player).sendMessage(inventoryError);
+	    	main.getLogger().severe(main.getConfigManager().getMessagesConfig().getString("Messages.wwcInventoryError").replace("%i", player.getName()));
+	    	e.printStackTrace();
+	    }
 	}
 
 

@@ -247,3 +247,7 @@ Messages:
   wwcConfigSyncDelayInvalid: Délai de synchronisation des données utilisateur non
     valide défini dans config.yml. Par défaut à 7200 secondes...
   wwcConfigCacheInvalid: Taille du cache du traducteur non valide. Par défaut à 10...
+  wwcInventoryErrorPlayer: ' Erreur détectée avec votre interface graphique. Un journal
+    a été envoyé à la console.'
+  wwcInventoryError: Erreur détectée avec l\'interface graphique de l\'utilisateur
+    %i. Veuillez signaler ce problème au développeur.

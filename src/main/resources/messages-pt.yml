@@ -235,3 +235,7 @@ Messages:
   wwcConfigSyncDelayInvalid: Atraso de sincronização de dados do usuário inválido
     definido em config.yml. Padrão para 7200 segundos...
   wwcConfigCacheInvalid: Tamanho do cache do tradutor inválido. Padrão para 10...
+  wwcInventoryErrorPlayer: ' Erro detectado com sua GUI. Um log foi enviado para o
+    console.'
+  wwcInventoryError: Erro detectado com a GUI do usuário %i. Informe esse problema
+    ao desenvolvedor.

@@ -229,3 +229,7 @@ Messages:
   wwcConfigSyncDelayInvalid: Nevažeće kašnjenje sinkronizacije korisničkih podataka
     postavljeno u config.yml. Defaulting na 7200 sekundi...
   wwcConfigCacheInvalid: Prevoditelj keš veličina nevažeći. Defaulting do 10...
+  wwcInventoryErrorPlayer: ' Greška otkrivena sa vašim GUI. Zapisnik je poslan na
+    konzolu.'
+  wwcInventoryError: Greška otkrivena pomoću GUI korisnika %i. Molimo prijavite ovaj
+    problem razvojnom programeru.

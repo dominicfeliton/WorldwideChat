@@ -240,3 +240,7 @@ Messages:
   wwcConfigSyncDelayInvalid: Retard de sincronització de dades d\'usuari no vàlid
     establert a config.yml. Per defecte a 7200 segons...
   wwcConfigCacheInvalid: Mida de la memòria cau traductor no vàlid. Per defecte 10...
+  wwcInventoryErrorPlayer: ' S\''ha detectat un error amb la IGU. S\''ha enviat un
+    registre a la consola.'
+  wwcInventoryError: S\'ha detectat un error amb la IGU de l\'usuari %i, si us plau,
+    informeu d\'aquest problema al desenvolupador

@@ -233,3 +233,7 @@ Messages:
   wwcConfigSyncDelayInvalid: Virheellinen käyttäjän tietojen synkronoinnin viive asetettu
     config.yml. Defaulting 7200 sekuntiin...
   wwcConfigCacheInvalid: Kääntäjän välimuistin koko ei kelpaa. Defaulting kymmeneen...
+  wwcInventoryErrorPlayer: ' Virhe havaittu käyttöliittymäsi yhteydessä. Konsoliin
+    on lähetetty loki.'
+  wwcInventoryError: 'Virhe havaittu käyttäjä %i: n käyttöliittymän yhteydessä. Ilmoita
+    tästä ongelmasta kehittäjälle.'

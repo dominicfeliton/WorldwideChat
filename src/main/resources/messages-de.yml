@@ -251,3 +251,7 @@ Messages:
   wwcConfigSyncDelayInvalid: Ungültige Verzögerung für die Synchronisierung von Benutzerdaten
     wurde in config.yml festgelegt. Standardmäßig 7200 Sekunden...
   wwcConfigCacheInvalid: Die Cachegröße des Übersetzers ist ungül Vorgegeben auf 10...
+  wwcInventoryErrorPlayer: ' Bei Ihrer GUI wurde ein Fehler festgestellt. Ein Protokoll
+    wurde an die Konsole gesendet.'
+  wwcInventoryError: Fehler bei der GUI von Benutzer %i festgestellt. Bitte melden
+    Sie dieses Problem dem Entwickler.

@@ -237,3 +237,7 @@ Messages:
   wwcConfigSyncDelayInvalid: Retraso de sincronización de datos de usuario no válido
     establecido en config.yml. El valor predeterminado es 7200 segundos...
   wwcConfigCacheInvalid: Tamaño de caché del traductor no válido. Por defecto a 10...
+  wwcInventoryErrorPlayer: ' Se ha detectado un error con la GUI. Se ha enviado un
+    registro a la consola.'
+  wwcInventoryError: Error detectado con la GUI del usuario %i. Informe de este problema
+    al desarrollador.

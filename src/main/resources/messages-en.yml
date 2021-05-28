@@ -14,6 +14,8 @@ Messages:
   wwcUserDataCorrupted: 'Found and moved %i corrupted or old user data files. They will be deleted on the next reload.'
   wwcRateLimit: ' Your translations are rate limited. Please wait another %i seconds.'
   wwcInvalidTranslator: 'Invalid translator settings. Please fix this in your config.yml or with /wwcc to use this plugin.'
+  wwcInventoryError: 'Error detected with GUI of user %i. Please report this issue to the developer.'
+  wwcInventoryErrorPlayer: ' Error detected with your GUI. A log has been sent to the console.'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: ' Your chat is being translated from %i to %o.'
   wwcOnJoinTranslationNotificationNoSourceLang: ' Your chat is being translated to %o.'

@@ -239,3 +239,6 @@ Messages:
     beállítása config.yml. Alapértelmezés: 7200 másodperc...'
   wwcConfigCacheInvalid: Érvénytelen a fordítói gyorsítótár mérete. Alapértelmezés
     10...
+  wwcInventoryErrorPlayer: ' Hiba észlelt a GUI. A rendszer egy naplót küldött a konzolnak.'
+  wwcInventoryError: Hiba történt a (z) %i felhasználó GUI-jával. Jelentse ezt a problémát
+    a fejlesztőnek.

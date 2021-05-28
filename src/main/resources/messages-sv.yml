@@ -233,3 +233,7 @@ Messages:
   wwcConfigSyncDelayInvalid: Ogiltig synkroniseringsfördröjning för användardata som
     angetts i config.yml. Defaulerar till 7200 sekunder...
   wwcConfigCacheInvalid: Översättarens cachestorlek ogiltig. Fallande till 10...
+  wwcInventoryErrorPlayer: ' Fel upptäcktes med det grafiska användargränssnittet.
+    En logg har skickats till konsolen.'
+  wwcInventoryError: Fel som upptäcktes med användaranvändargränssnittet för användaren
+    %i. Rapportera problemet till utvecklaren.

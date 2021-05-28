@@ -223,3 +223,7 @@ Messages:
   wwcConfigSyncDelayInvalid: Kehtetu kasutaja andmete sünkroonimise viivitus seatud
     config.yml. Defaulting kuni 7200 sekundit...
   wwcConfigCacheInvalid: Tõlkija vahemälu suurus kehtetu. Defaulting kuni 10...
+  wwcInventoryErrorPlayer: ' Teie GUI-ga tuvastatud tõrge. Konsoolile on saadetud
+    logi.'
+  wwcInventoryError: Kasutaja GUI-ga tuvastatud tõrge. Palun teatage sellest probleemist
+    arendajale.

@@ -229,3 +229,7 @@ Messages:
   wwcConfigSyncDelayInvalid: Ugyldig synkroniseringsforsinkelse for brugerdata angivet
     i config.yml. Defaulerer til 7200 sekunder...
   wwcConfigCacheInvalid: Oversætter cache størrelse ugyldig. Default til 10...
+  wwcInventoryErrorPlayer: ' Fejl registreret med din GUI. Der er sendt en log til
+    konsollen.'
+  wwcInventoryError: Fejl registreret med brugerflade %i GUI. Rapportér dette problem
+    til udvikleren.

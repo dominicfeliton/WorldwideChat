@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.NoSuchElementException;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -49,6 +50,7 @@ import co.aikar.taskchain.BukkitTaskChainFactory;
 import co.aikar.taskchain.TaskChain;
 import co.aikar.taskchain.TaskChainFactory;
 import fr.minuskube.inv.InventoryManager;
+import fr.minuskube.inv.SmartInventory;
 import io.reactivex.annotations.NonNull;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
@@ -277,6 +279,18 @@ public class WorldwideChat extends JavaPlugin {
         }
         backgroundTasks.clear();
         
+        //Close all active GUIs
+        playersUsingConfigurationGUI.clear();
+        for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
+        	try {
+        		if (inventoryManager.getInventory(eaPlayer).get() instanceof SmartInventory && inventoryManager.getInventory(eaPlayer).get().getManager().equals(inventoryManager)) {
+            		eaPlayer.closeInventory();
+            	}
+        	} catch (NoSuchElementException e) {
+        		continue;
+        	}
+        }
+
         //Clear all supported langs
         supportedLanguages.clear();
         
@@ -284,7 +298,6 @@ public class WorldwideChat extends JavaPlugin {
         getConfigManager().syncData();
             
         //Clear all active translating users, cache, playersUsingConfigGUI
-        playersUsingConfigurationGUI.clear();
         playerRecords.clear();
         activeTranslators.clear();
         cache.clear();
