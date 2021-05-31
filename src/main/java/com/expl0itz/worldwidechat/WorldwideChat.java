@@ -97,7 +97,7 @@ public class WorldwideChat extends JavaPlugin {
         .append(Component.text().content(pluginPrefixString).color(TextColor.color(0x5757c4)))
         .append(Component.text().content("]").color(NamedTextColor.DARK_RED).decoration(TextDecoration.BOLD, true))
         .build();
-
+    
     /* Methods */
     public static WorldwideChat getInstance() {
         return instance;
@@ -112,7 +112,7 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     public static <T> TaskChain<T> newSharedChain(String name) {
-        return taskChainFactory.newSharedChain(name);
+    	return taskChainFactory.newSharedChain(name);
     }
     
     @Override
