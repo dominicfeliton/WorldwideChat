@@ -30,6 +30,7 @@ public class CommonDefinitions {
     
     /* Important vars */
     public static String[] supportedMCVersions = {
+    	"1.17",
         "1.16",
         "1.15",
         "1.14"

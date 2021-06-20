@@ -305,6 +305,11 @@ public class WorldwideChat extends JavaPlugin {
 
     public void checkMCVersion() {
         String supportedVersions = "";
+        if (Bukkit.getVersion().contains("1.17")) {
+        	// Watson does not work properly on 1.17. Remove this once the IBM devs fix it
+        	getLogger().warning(getConfigManager().getMessagesConfig().getString("Messages.wwcWatson117Warning"));
+        	return;
+        }
         for (int i = 0; i < CommonDefinitions.supportedMCVersions.length; i++) {
             supportedVersions += "(" + CommonDefinitions.supportedMCVersions[i] + ") ";
             if (Bukkit.getVersion().contains(CommonDefinitions.supportedMCVersions[i])) {

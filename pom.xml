@@ -18,18 +18,18 @@
         <dependency>
            <groupId>org.spigotmc</groupId>
            <artifactId>spigot-api</artifactId>
-           <version>1.16.5-R0.1-SNAPSHOT</version>
+           <version>1.17-R0.1-SNAPSHOT</version>
            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.ibm.watson</groupId>
             <artifactId>ibm-watson</artifactId>
-            <version>9.1.1</version>
+            <version>9.2.0</version>
         </dependency>
         <dependency>
             <groupId>com.ibm.cloud</groupId>
             <artifactId>sdk-core</artifactId>
-            <version>9.10.1</version>
+            <version>9.10.3</version>
         </dependency>
         <dependency>
             <groupId>org.bstats</groupId>
@@ -45,27 +45,27 @@
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-text-serializer-gson</artifactId>
-            <version>4.7.0</version>
+            <version>4.8.1</version>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-api</artifactId>
-            <version>4.7.0</version>
+            <version>4.8.1</version>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-nbt</artifactId>
-            <version>4.7.0</version>
+            <version>4.8.1</version>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-key</artifactId>
-            <version>4.7.0</version>
+            <version>4.8.1</version>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-text-serializer-gson-legacy-impl</artifactId>
-            <version>4.7.0</version>
+            <version>4.8.1</version>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
@@ -97,13 +97,13 @@
         <dependency>
             <groupId>com.google.cloud</groupId>
             <artifactId>google-cloud-translate</artifactId>
-            <version>1.97.3</version>
+            <version>1.98.4</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-translate -->
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-translate</artifactId>
-            <version>1.11.1030</version>
+            <version>1.12.9</version>
         </dependency>
         <dependency>
             <groupId>org.jsoup</groupId>
