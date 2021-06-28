@@ -7,8 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Αλλαγή ελέγχου για καθυστέρηση ενημερώσεων
   wwcSignTranslationFail: ' Δεν είναι δυνατή η λήψη έγκυρης μετάφρασης του σημείου
     προορισμού σας από %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Αποτυχία ενεργοποίησης της μετάφρασης
-    Google.'
   wwcUpdaterFailedGeneric: Δεν είναι δυνατός ο έλεγχος για ενημερώσεις WorldwideChat
   wwcConfigConversationUpdateCheckerInput: Η τρέχουσα καθυστέρηση στον έλεγχο ενημέρωσης
     είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 10 για να ορίσετε
@@ -32,8 +30,6 @@ Messages:
   wwctsOffSender: ' Η μετάφραση υπογραφής απενεργοποιήθηκε.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Η παγκόσμια συνομιλία
     μεταφράζεται, αλλά η συνομιλία σας μεταφράζεται από %i σε %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Η μετάφραση Google ενεργοποιήθηκε
-    με επιτυχία.'
   wwcUpdaterParserFailed: Αποτυχία ανάλυσης δεδομένων ενημέρωσης από το Github.
   wwctAutoTranslateStart: ' Μεταφράζω τώρα όλη τη συνομιλία σας στο %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Το τρέχον μυστικό κλειδί είναι
@@ -126,12 +122,7 @@ Messages:
   wwcUpdaterUpToDate: Το WorldwideChat είναι ενημερωμένο!
   wwcConfigConversationAmazonTranslateRegionInput: Η τρέχουσα περιοχή είναι %i. Εισαγάγετε
     μια περιοχή για το Amazon ή πληκτρολογήστε 0 για να επιστρέψετε.
-  wwcConfigConversationWatsonFail: ' Αποτυχία ενεργοποίησης της IBM Watson.'
   wwcNoConsole: ' Αυτή η εντολή μπορεί να τρέξει μόνο από έναν παίκτη.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Ενεργοποιήθηκε επιτυχώς η μετάφραση
-    του Amazon'
-  wwcConfigConversationAmazonTranslateFail: ' Η ενεργοποίηση της μετάφρασης Amazon
-    απέτυχε.'
   wwcInitializationFail: Η προετοιμασία του WorldwideChat απέτυχε.
   wwcrSuccess: ' Επαναφόρτωση με επιτυχία WorldWide'
   wwcPlayerNotFound: ' Παίχτης %Δεν βρέθηκε.'
@@ -164,7 +155,6 @@ Messages:
     προεπιλεγμένης...
   wwcConfigRateLimitInvalid: Το κακό όριο ρυθμού ορίζεται στο config.yml. Προεπιλογές
     σε 0 δευτερόλεπτα...
-  wwcConfigConversationWatsonSuccess: ' Ενεργοποιήθηκε με επιτυχία η IBM Watson.'
   wwcSignTranslateStart: ' Μεταφράζω το σημάδι στόχου...'
   wwcConfigGUIChatSettings: Ρύθμιση παραμέτρων συνομιλίας
   wwcConfigGUIWatsonURLButton: Αλλαγή URL υπηρεσίας Watson
@@ -258,3 +248,8 @@ Messages:
   wwcWatson117Warning: 'ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Το Watson πιθανότατα δεν θα λειτουργήσει σωστά
     στο 1.17, ή πιο συγκεκριμένα JDK 16 λόγω σφάλματος στο IBM SDK. Αυτό θα διορθωθεί
     σε μια μελλοντική ενημέρωση.'
+  wwcConfigConversationTranslatorFail: ' Αποτυχία κατά την απεργία του %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Ο χρήστης %i απεργοποίησα επιτυχής
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' Επιτυχής %i.'
+  wwcConfigConversationConsoleTranslatorFail: Ο χρήστης %o απέτυχε να en %o.

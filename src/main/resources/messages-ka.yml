@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: შეცვლა შეამოწმეთ განახლებების დაგვიანებით
   wwcSignTranslationFail: ' შეუძლებელია თქვენი სამიზნე ნიშნის მართებული თარგმანის
     მიღება %i -დანდანდანდან %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Google Translate ვერ მოხერხდა.'
   wwcUpdaterFailedGeneric: შეუძლებელია WorldWidecHat- ის განახლებების შემოწმება.
   wwcConfigConversationUpdateCheckerInput: განახლების შემოწმების მიმდინარე შეფერხება
     არის %i წამი. აკრიფეთ 10-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' შესვლა თარგმანი გამორთულია.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' გლობალური ჩეთი თარგმნილია,
     მაგრამ თქვენი სტატისტიკა თარგმნა %i-დან %o- დან.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google თარგმნა წარმატებით ჩართულია.'
   wwcUpdaterParserFailed: Github- ის განახლების მონაცემების გარჩევა ვერ მოხერხდა.
   wwctAutoTranslateStart: ' ახლა თარგმნეთ ყველა თქვენი სტატისტიკა %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: მიმდინარე საიდუმლო გასაღები
@@ -116,10 +114,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat არის დღემდე!
   wwcConfigConversationAmazonTranslateRegionInput: მიმდინარე რეგიონი არის %i. გთხოვთ,
     შეიყვანოთ რეგიონი ამაზონისთვის, ან ტიპის 0 დასაბრუნებლად.
-  wwcConfigConversationWatsonFail: ' ვერ მოხერხდა IBM Watson-ის ჩართვა.'
   wwcNoConsole: ' ეს ბრძანება შეიძლება მხოლოდ გაიქცა მოთამაშე.'
-  wwcConfigConversationAmazonTranslateSuccess: ' წარმატებით ჩართულია Amazon თარგმნა.'
-  wwcConfigConversationAmazonTranslateFail: ' ვერ მოხერხდა Amazon Translate'
   wwcInitializationFail: ვერ მოხერხდა WorldWideCHAT ინიციალიზაცია
   wwcrSuccess: ' წარმატებით გადატვირთულია WorldWideCHAT.'
   wwcPlayerNotFound: ' მოთამაშე %i ვერ მოიძებნა.'
@@ -150,7 +145,6 @@ Messages:
     გამოყენება...
   wwcConfigRateLimitInvalid: ცუდი განაკვეთი ლიმიტი მითითებული config.yml. უპირობოდ
     0 წამი...
-  wwcConfigConversationWatsonSuccess: ' წარმატებით ჩართულია IBM Watson.'
   wwcSignTranslateStart: ' სამიზნე ნიშნის თარგმნა...'
   wwcConfigGUIChatSettings: ჩატის კონფიგურაცია
   wwcConfigGUIWatsonURLButton: შეცვალეთ Watson სერვისის URL
@@ -233,3 +227,8 @@ Messages:
     ამ საკითხს დეველოპერს.'
   wwcWatson117Warning: 'გაფრთხილება: Watson სავარაუდოდ ვერ სწორად ფუნქციონირებს 1.17,
     ან უფრო კონკრეტულად JDK 16 გამო შეცდომა IBM SDK. ეს იქნება მომავალში განახლება.'
+  wwcConfigConversationTranslatorFail: ' ვერ მოხერხდა %i ჩართვა %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: მომხმარებელი %i წარმატებით ჩართვა
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' წარმატებით ჩართვა %i.'
+  wwcConfigConversationConsoleTranslatorFail: მომხმარებელი %i ვერ ჩართვა %o.

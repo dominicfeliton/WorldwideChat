@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Ubah Periksa Kelewatan Kemas Kini
   wwcSignTranslationFail: ' Tidak boleh dapatkan terjemahan sah bagi tanda sasaran
     anda dari %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Gagal mendayakan Google Translate.'
   wwcUpdaterFailedGeneric: Tidak dapat menyemak kemaskini WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Kelewatan semasa pada pemeriksa kemaskini
     ialah %i saat. Taip apa-apa yang lebih besar daripada 10 untuk menetapkan nilai
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Daftar terjemahan dilumpuhkan.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Sembang global sedang
     diterjemahkan, tetapi sembang anda sedang diterjemahkan dari %i ke %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate berjaya didayakan.'
   wwcUpdaterParserFailed: Gagal menghurai data kemaskini dari Github.
   wwctAutoTranslateStart: ' Sekarang menterjemahkan semua sembang anda ke %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Kunci rahsia semasa ialah %i.
@@ -119,10 +117,7 @@ Messages:
   wwcUpdaterUpToDate: WorldWidChat up to date!
   wwcConfigConversationAmazonTranslateRegionInput: Rantau semasa ialah %i. Sila masukkan
     kawasan untuk Amazon, atau taip 0 untuk kembali.
-  wwcConfigConversationWatsonFail: ' Gagal membolehkan IBM Watson.'
   wwcNoConsole: ' Perintah ini hanya boleh dijalankan oleh pemain.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Berjaya mendayakan Amazon Terjemah.'
-  wwcConfigConversationAmazonTranslateFail: ' Gagal membolehkan Amazon Translate.'
   wwcInitializationFail: Gagal awalkan WorldwideChat.
   wwcrSuccess: ' Berjaya dimuat semula WorldwideChat.'
   wwcPlayerNotFound: ' Pemain %i tidak ditemui.'
@@ -153,7 +148,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Gagal membaca awalan anda. Menggunakan lalai...
   wwcConfigRateLimitInvalid: Had kadar teruk ditetapkan dalam config.yml. Lalai ke
     0 saat...
-  wwcConfigConversationWatsonSuccess: ' Berjaya membolehkan IBM Watson.'
   wwcSignTranslateStart: ' Menterjemah tanda sasaran...'
   wwcConfigGUIChatSettings: Konfigurasi Sembang
   wwcConfigGUIWatsonURLButton: Ubah URL Layanan Watson
@@ -241,3 +235,7 @@ Messages:
   wwcWatson117Warning: 'AMARAN: Watson kemungkinan besar gagal berfungsi dengan betul
     pada 1.17, atau lebih khusus JDK 16 disebabkan pepijat dalam SDK IBM. Ini akan
     ditetapkan dalam kemas kini masa depan.'
+  wwcConfigConversationTranslatorFail: ' Gagal membolehkan %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Pengguna %i berjaya membenarkan %o.
+  wwcConfigConversationTranslatorSuccess: ' Berjaya membenarkan %i.'
+  wwcConfigConversationConsoleTranslatorFail: Pengguna %i gagal membolehkan %o.

@@ -6,7 +6,6 @@ Messages:
   wwcrFail: ' Neizdevās pārlādēt WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Mainīt pārbaudi par atjauninājumu kavēšanos
   wwcSignTranslationFail: ' Neizdevās iegūt derīgu jūsu mērķa zīmes tulkojumu no %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Neizdevās iespējot Google Translate.'
   wwcUpdaterFailedGeneric: Nespēj pārbaudīt WorldwideChat atjauninājumus.
   wwcConfigConversationUpdateCheckerInput: Pašreizējā kavēšanās atjaunināšanas pārbaudītājā
     ir %i sekundes. Ierakstiet kaut ko lielāku par 10, lai iestatītu jaunu vērtību,
@@ -30,7 +29,6 @@ Messages:
   wwctsOffSender: ' Zīmes tulkojums ir atspēj'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Globālā tērzēšana tiek
     tulkota, bet jūsu tērzēšana tiek tulkota no %i uz %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate ir veiksmīgi iespējota.'
   wwcUpdaterParserFailed: Neizdevās parsēt atjaunināšanas datus no Github.
   wwctAutoTranslateStart: ' Tagad tulkojot visu savu tērzēšanu uz %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Pašreizējā slepenā atslēga ir
@@ -116,10 +114,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat ir atjaunināta!
   wwcConfigConversationAmazonTranslateRegionInput: Pašreizējais reģions ir %i. Lūdzu,
     ievadiet reģionu Amazon vai ierakstiet 0, lai atgrieztos.
-  wwcConfigConversationWatsonFail: ' Neizdevās iespējot IBM Watson.'
   wwcNoConsole: ' Šo komandu var palaist tikai spēlētājs.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Veiksmīgi iespējots Amazon Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Neizdevās iespējot Amazon Translate.'
   wwcInitializationFail: Neizdevās inicializēt WorldwideChat.
   wwcrSuccess: ' Veiksmīgi pārlādēts WorldwideChat.'
   wwcPlayerNotFound: ' Spēlētājs %es neesmu atrasts.'
@@ -149,7 +144,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Neizdevās izlasīt prefiksu. Noklusējuma izmantošana...
   wwcConfigRateLimitInvalid: Slikta likme limits noteikts config.yml. Noklusējuma
     izpilde līdz 0 sekundēm...
-  wwcConfigConversationWatsonSuccess: ' Veiksmīgi iespējots IBM Watson.'
   wwcSignTranslateStart: ' Mērķa zīmes tulkošana...'
   wwcConfigGUIChatSettings: tērzēšanas konfigurācija
   wwcConfigGUIWatsonURLButton: Mainīt Watson pakalpojuma URL
@@ -236,3 +230,8 @@ Messages:
     problēmu izstrādātājam.
   wwcWatson117Warning: 'BRĪDINĀJUMS: Watson, visticamāk, nedarbosies pareizi 1.17,
     vai konkrētāk JDK 16 sakarā ar kļūdu IBM SDK. Tas tiks fiksēts nākamajā atjauninājumā.'
+  wwcConfigConversationTranslatorFail: ' Neizdevās iespējot %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Lietotājs %es veiksmīgi iespējoja
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' Veiksmīgi iespējots %i.'
+  wwcConfigConversationConsoleTranslatorFail: Lietotājs % man neizdevās iespējot %o.

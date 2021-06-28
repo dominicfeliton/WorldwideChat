@@ -6,7 +6,6 @@ Messages:
   wwcrFail: ' ওয়ার্ল্ডউইডচ্যাট পুনরায় লোড করতে ব্যর্থ।'
   wwcConfigGUIUpdateCheckerButton: আপডেট বিলম্বের জন্য চেক পরিবর্তন করুন
   wwcSignTranslationFail: ' %i থেকে আপনার টার্গেট সাইনের বৈধ অনুবাদ পাওয়া যায়নি।'
-  wwcConfigConversationGoogleTranslateFail: ' গুগল অনুবাদ সক্ষম করতে ব্যর্থ।'
   wwcUpdaterFailedGeneric: ওয়ার্ল্ডউইডচ্যাট আপডেটের জন্য পরীক্ষা করা যায়নি।
   wwcConfigConversationUpdateCheckerInput: আপডেট পরীক্ষকের বর্তমান বিলম্ব হল %i সেকেন্ড।
     একটি নতুন মান সেট করার জন্য 10 এর চেয়ে বড় কিছু টাইপ করুন, অথবা 10 এর কম কিছু
@@ -30,7 +29,6 @@ Messages:
   wwctsOffSender: ' অনুবাদ নিষ্ক্রিয় স্বাক্ষর করুন।'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' গ্লোবাল চ্যাট অনুবাদ
     করা হচ্ছে, কিন্তু আপনার চ্যাট %i থেকে %o তে অনুবাদ করা হচ্ছে।'
-  wwcConfigConversationGoogleTranslateSuccess: ' গুগল অনুবাদ সফলভাবে সক্ষম হয়েছে।'
   wwcUpdaterParserFailed: Github থেকে আপডেট ডেটা পার্স করতে ব্যর্থ।
   wwctAutoTranslateStart: ' এখন আপনার সমস্ত চ্যাট %o এ অনুবাদ করা হচ্ছে।'
   wwcConfigConversationAmazonTranslateSecretKeyInput: বর্তমান গোপন কী %i। অনুগ্রহ
@@ -114,10 +112,7 @@ Messages:
   wwcUpdaterUpToDate: ওয়ার্ল্ডউইডচ্যাট আপ টু ডেট!
   wwcConfigConversationAmazonTranslateRegionInput: বর্তমান অঞ্চল %i। অনুগ্রহ করে আমাজনের
     জন্য একটি অঞ্চল ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
-  wwcConfigConversationWatsonFail: ' আইবিএম ওয়াটসন সক্রিয় করতে ব্যর্থ।'
   wwcNoConsole: ' এই কমান্ডটি শুধুমাত্র একটি প্লেয়ার দ্বারা চালানো যাবে।'
-  wwcConfigConversationAmazonTranslateSuccess: ' সফলভাবে সক্রিয় আমাজন অনুবাদ।'
-  wwcConfigConversationAmazonTranslateFail: ' সক্ষম করতে ব্যর্থ আমাজন অনুবাদ।'
   wwcInitializationFail: ওয়ার্ল্ডউইডচ্যাট আরম্ভ করতে ব্যর্থ।
   wwcrSuccess: ' ওয়ার্ল্ডউইডচ্যাট সফলভাবে পুনরায় লোড করা হয়েছে।'
   wwcPlayerNotFound: ' খেলোয়াড় %i পাওয়া যায়নি।'
@@ -149,7 +144,6 @@ Messages:
     হচ্ছে...
   wwcConfigRateLimitInvalid: config.yml এ সেট করা খারাপ রেট সীমা ০ সেকেন্ডে ডিফল্ট
     হচ্ছে...
-  wwcConfigConversationWatsonSuccess: ' সফলভাবে আইবিএম ওয়াটসন সক্রিয় করা হয়েছে।'
   wwcSignTranslateStart: ' টার্গেট সাইন অনুবাদ করা হচ্ছে...'
   wwcConfigGUIChatSettings: চ্যাট কনফিগারেশন
   wwcConfigGUIWatsonURLButton: ওয়াটসন সার্ভিস URL পরিবর্তন করুন
@@ -229,3 +223,8 @@ Messages:
   wwcWatson117Warning: 'সতর্কতা: আইবিএম এসডিকে একটি বাগ কারণে ওয়াটসন সম্ভবত 1.17,
     বা আরো বিশেষভাবে JDK 16 এ সঠিকভাবে কাজ করতে ব্যর্থ হবে। এটি একটি ভবিষ্যতের আপডেটে
     সংশোধন করা হবে।'
+  wwcConfigConversationTranslatorFail: ' %1$i সক্রিয় করতে ব্যর্থ।'
+  wwcConfigConversationConsoleTranslatorSuccess: ব্যবহারকারী %2 %o সফলভাবে সক্রিয়
+    করা হয়েছে।
+  wwcConfigConversationTranslatorSuccess: ' %i সফলভাবে সক্রিয় করা হয়েছে।'
+  wwcConfigConversationConsoleTranslatorFail: ব্যবহারকারী %2 %o সক্রিয় করতে ব্যর্থ।

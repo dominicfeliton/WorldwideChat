@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Промяна на проверка за забавяне на актуализациите
   wwcSignTranslationFail: ' Невъзможно е да се получи валиден превод на целевия знак
     от %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Неуспешно активиране на Google Translate.'
   wwcUpdaterFailedGeneric: Не можете да проверите за актуализации на WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Текущото забавяне на проверката за актуализиране
     е %i секунди. Въведете нещо по-голямо от 10, за да зададете нова стойност, или
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Преводът е изключен.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Глобалният чат се превежда,
     но вашият чат се превежда от %i към %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate активиран успешно.'
   wwcUpdaterParserFailed: Неуспешно анализиране на данни за актуализация от GitHub.
   wwctAutoTranslateStart: ' Сега превеждате целия си чат на %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Настоящият таен ключ е %i. Моля,
@@ -118,10 +116,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat е актуален!
   wwcConfigConversationAmazonTranslateRegionInput: Настоящият регион е %i. Моля, въведете
     регион за Amazon или въведете 0, за да се върнете.
-  wwcConfigConversationWatsonFail: ' Неуспешно активиране на IBM Уотсън.'
   wwcNoConsole: ' Тази команда може да бъде управлявана само от играч.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Успешно активиран Amazon Превод'
-  wwcConfigConversationAmazonTranslateFail: ' Неуспешно активиране на Amazon Превод.'
   wwcInitializationFail: Не успя да инициализира WorldwideChat.
   wwcrSuccess: ' Успешно презареди WorldwideChat'
   wwcPlayerNotFound: ' Играч % Не съм намерил.'
@@ -152,7 +147,6 @@ Messages:
     на стандартния...
   wwcConfigRateLimitInvalid: Лош лимит на лихвения процент, определен в config.yml.
     Пропускате 0 секунди...
-  wwcConfigConversationWatsonSuccess: ' Успешно активиран IBM Уотсън.'
   wwcSignTranslateStart: ' Превеждане на знак за целта...'
   wwcConfigGUIChatSettings: Конфигурация на чат
   wwcConfigGUIWatsonURLButton: Промяна на URL адреса на услугата Уотсън
@@ -239,3 +233,9 @@ Messages:
   wwcWatson117Warning: 'ВНИМАНИЕ: Уотсън най-вероятно няма да успее да функционира
     правилно на 1.17, или по-конкретно JDK 16 поради бъг в SDK на IBM. Това ще бъде
     коригирано в бъдеща актуализация.'
+  wwcConfigConversationTranslatorFail: ' Грешка при стартиране %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Потребителът %i успешно е стартирана
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' Успешно е стартирана %i.'
+  wwcConfigConversationConsoleTranslatorFail: Потребителът %i не успя да бъде стартирана
+    %o.

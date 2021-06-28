@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Modificare verificare pentru întârzierea actualizărilor
   wwcSignTranslationFail: ' Nu am putut obține o traducere validă a semnului țintă
     din %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Imposibilitatea de a activa Google Translate.'
   wwcUpdaterFailedGeneric: Imposibil de verificat pentru actualizări WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Întârzierea curentă a verificatorului de
     actualizare este %i secunde. Tastați ceva mai mare de 10 pentru a seta o valoare
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Semnează traducerea dezactivată.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Chatul global este tradus,
     dar chat-ul dvs. este tradus din %i la %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate activat cu succes.'
   wwcUpdaterParserFailed: Nu a reușit să analizeze datele de actualizare de la Github.
   wwctAutoTranslateStart: ' Acum traduceți întregul chat la %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Cheia secretă curentă este %i.
@@ -121,10 +119,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat este la zi!
   wwcConfigConversationAmazonTranslateRegionInput: Regiunea curentă este %i. Introduceți
     o regiune pentru Amazon sau tastați 0 pentru a reveni.
-  wwcConfigConversationWatsonFail: ' Imposibilitatea de a activa IBM Watson.'
   wwcNoConsole: ' Această comandă poate fi rulată numai de un jucător.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Activat cu succes Amazon Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Imposibilitatea de a activa Amazon Translate.'
   wwcInitializationFail: Nu a reușit să inițializeze WorldwideChat.
   wwcrSuccess: ' Reîncărcat cu succes WorldwideChat.'
   wwcPlayerNotFound: ' Jucătorul %nu am găsit.'
@@ -155,7 +150,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Nu ţi-am citit prefixul. Utilizarea implicită...
   wwcConfigRateLimitInvalid: Limita de rată proastă stabilită în config.yml. Inimplicită
     la 0 secunde...
-  wwcConfigConversationWatsonSuccess: ' Activat cu succes IBM Watson.'
   wwcSignTranslateStart: ' Traduc semnul ţintă...'
   wwcConfigGUIChatSettings: Configurare chat
   wwcConfigGUIWatsonURLButton: Schimbare URL serviciu Watson
@@ -246,3 +240,9 @@ Messages:
   wwcWatson117Warning: 'ATENȚIE: Watson va eșua cel mai probabil să funcționeze corect
     pe 1.17 sau, mai precis, JDK 16 din cauza unei erori din IBM SDK. Acest lucru
     va fi remediat într-o actualizare viitoare.'
+  wwcConfigConversationTranslatorFail: ' Eșec de a se declanșa %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Utilizatorul %Am activat cu succes.
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' A fost activat cu succes. %i.'
+  wwcConfigConversationConsoleTranslatorFail: Utilizatorul %Am eșuat să se ACTIVA
+    %o.

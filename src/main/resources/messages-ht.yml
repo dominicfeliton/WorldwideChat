@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Chanje Tcheke pou Updates Reta
   wwcSignTranslationFail: ' Kapab jwenn yon tradiksyon ki valab nan siy sib ou soti
     nan % mwen.'
-  wwcConfigConversationGoogleTranslateFail: ' Echwe pou pou pèmèt Google Translate.'
   wwcUpdaterFailedGeneric: Kapab tcheke pou dènye WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Reta aktyèl la sou korektè a aktyalizasyon
     se % mwen segonn. Tape anyen ki pi konsekan pase 10 yo mete yon nouvo valè, oswa
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Siyen tradiksyon andikape.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Global chat ke yo te
     tradui, men se chat ou ke yo te tradui soti nan % mwen nan %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate pèmèt avèk siksè.'
   wwcUpdaterParserFailed: Echwe pou pou analizan done aktyalizasyon ki sòti nan Github.
   wwctAutoTranslateStart: ' Koulye a, tradui tout nan chat ou nan %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Kle a sekrè aktyèl se % mwen
@@ -114,10 +112,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat se jiska dat!
   wwcConfigConversationAmazonTranslateRegionInput: Rejyon aktyèl la se % mwen % Tanpri
     opinyon yon yon rejyon pou Amazon, oswa kalite 0 ale tounen.
-  wwcConfigConversationWatsonFail: ' Echwe pou pou pèmèt IBM Watson.'
   wwcNoConsole: ' Ka lòd sa a sèlman dwe kouri pa yon jwè.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Siksè pèmèt Amazon Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Echwe pou pou pèmèt Amazon Translate.'
   wwcInitializationFail: Echwe pou pou inisyalize WorldwideChat.
   wwcrSuccess: ' Siksè rechargé WorldwideChat.'
   wwcPlayerNotFound: ' Jwè mwen pa jwenn.'
@@ -148,7 +143,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Echwe pou pou li prefiks ou. Sèvi ak default la...
   wwcConfigRateLimitInvalid: Move limit pousantaj mete nan config.yml. Défauting pou
     segonn 0...
-  wwcConfigConversationWatsonSuccess: ' Siksè pèmèt IBM Watson.'
   wwcSignTranslateStart: ' Tradwi siy sib...'
   wwcConfigGUIChatSettings: Chat konfigirasyon
   wwcConfigGUIWatsonURLButton: Chanje Watson Sèvis URL
@@ -227,3 +221,9 @@ Messages:
   wwcWatson117Warning: 'AVÈTISMAN: Watson pral gen plis chans fail byen fonksyone
     sou 1.17, oswa plis espesyalman JDK 16 akòz yon ensèk nan SDK a IBM. Sa a pral
     fiks nan yon aktyalizasyon nan lavni.'
+  wwcConfigConversationTranslatorFail: ' Echwe pou pou pèmèt % mwen.'
+  wwcConfigConversationConsoleTranslatorSuccess: Itilizatè % mwen avèk siksè pèmèt
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' Avèk siksè pèmèt % mwen.'
+  wwcConfigConversationConsoleTranslatorFail: Itilizatè % mwen echwe pou pou pèmèt
+    %o.

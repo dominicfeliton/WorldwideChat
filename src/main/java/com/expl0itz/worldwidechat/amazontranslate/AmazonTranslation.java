@@ -52,7 +52,7 @@ public class AmazonTranslation {
     			.withText("Hi, how are you?")
     			.withSourceLanguageCode("en")
     			.withTargetLanguageCode("es");
-    	translate.translateText(request);
+    	TranslateTextResult result = translate.translateText(request);
     	
     	/* Get supported languages from AWS docs */
     	List < SupportedLanguageObject > supportedLangs = new ArrayList < SupportedLanguageObject >();

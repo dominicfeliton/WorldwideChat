@@ -7,8 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Isbeddel Hubi Cusbooneysiinta Dib
   wwcSignTranslationFail: ' Aan awoodin in la helo turjumaad sax ah oo ku saabsan
     calaamada bartilmaameedkaaga laga bilaabo %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Ku guuldareystay in ay awood Google
-    Translate.'
   wwcUpdaterFailedGeneric: Awoodin in la hubiyo cusbooneysiinta WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Dib u dhaca imika ee hubiyaha cusbooneysiinta
     waa %i ilbiriqsi. Ku qor wax ka weyn 10 si aad u dejiso qiimo cusub, ama wax ka
@@ -32,7 +30,6 @@ Messages:
   wwctsOffSender: ' Turjumaad Sign naafo.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Sheeko caalami ah ayaa
     la tarjumayaa, laakiin sheekeysigaaga waxaa laga turjumay %i ilaa %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate si guul leh karti.'
   wwcUpdaterParserFailed: Ku guuldareysatay in ay khaladaad cusbooneysiiso xogta ka
     timid Github.
   wwctAutoTranslateStart: ' Hadda tarjumaadda dhammaan sheekeysigaaga si %o.'
@@ -122,10 +119,7 @@ Messages:
   wwcUpdaterUpToDate: WorldWideCat waa ilaa taariikhda!
   wwcConfigConversationAmazonTranslateRegionInput: Gobolka imika waa %i. Fadlan gali
     gobolka Amazon, ama nooca 0 si aad dib ugu noqoto.
-  wwcConfigConversationWatsonFail: ' Ku guuldareystay in ay awood IBM Watson.'
   wwcNoConsole: ' Amarkani waxa kaliya oo lagu ordi karaa by ciyaaryahan.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Si guul leh awood Amazon Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Guuldareystay in ay awood Amazon Translate.'
   wwcInitializationFail: Ku guuldareysatay in ay initialize WorldwideChat.
   wwcrSuccess: ' Si guul leh u reloaded WorldwideChat.'
   wwcPlayerNotFound: ' Ciyaartoy %Anigu lama helin.'
@@ -155,7 +149,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Ku guuldareystay inuu akhriyo horgalahaaga. Isticmaalka
     default...
   wwcConfigRateLimitInvalid: xadka heerka Bad dhigay config.yml. Default ilaa 0 ilbiriqsi...
-  wwcConfigConversationWatsonSuccess: ' Si guul leh karti IBM Watson.'
   wwcSignTranslateStart: ' Tarjumidda calaamad bartilmaameedka...'
   wwcConfigGUIChatSettings: Chat haggaajin
   wwcConfigGUIWatsonURLButton: Beddel URL Adeega Watson
@@ -242,3 +235,9 @@ Messages:
   wwcWatson117Warning: 'DIGNIIN: Watson waxay u badan tahay inuu ku guuldareysto inuu
     si habboon u shaqeeyo 1.17, ama si gaar ah JDK 16 sababtoo ah cayayaanka IBM SDK.
     Tan waxaa lagu hagaajin doonaa in update mustaqbalka.'
+  wwcConfigConversationTranslatorFail: ' Ku guuldareystay in la suurtogeliyo %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Isticmaalaha %waxaan si guul leh
+    u awoodiay %o.
+  wwcConfigConversationTranslatorSuccess: ' Si guul leh loo karto %i.'
+  wwcConfigConversationConsoleTranslatorFail: Isticmaalaha %waxaan ku guuldareystay
+    inuu awoodo %o.

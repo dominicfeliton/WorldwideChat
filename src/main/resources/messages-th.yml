@@ -6,7 +6,6 @@ Messages:
   wwcrFail: ' ล้มเหลวในการโหลด WorldwideChat'
   wwcConfigGUIUpdateCheckerButton: เปลี่ยนการตรวจสอบการหน่วงเวลาการปรับปรุง
   wwcSignTranslationFail: ' ไม่สามารถแปลเครื่องหมายเป้าหมายของคุณจาก %i ได้'
-  wwcConfigConversationGoogleTranslateFail: ' ไม่สามารถเปิดใช้งาน Google แปลภาษา'
   wwcUpdaterFailedGeneric: ไม่สามารถตรวจสอบการอัปเดต WorldwideChat ได้
   wwcConfigConversationUpdateCheckerInput: ความล่าช้าในปัจจุบันในการตรวจสอบการปรับปรุงเป็น
     %i วินาทีพิมพ์อะไรที่มากกว่า 10 เพื่อตั้งค่าใหม่หรืออะไรที่น้อยกว่า 10 เพื่อย้อนกลับ
@@ -27,7 +26,6 @@ Messages:
   wwctsOffSender: ' ปิดการแปลลงลายมือชื่อ'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' แชททั่วโลกกำลังถูกแปล
     แต่แชทของคุณกำลังถูกแปลจาก %i เป็น %o'
-  wwcConfigConversationGoogleTranslateSuccess: ' เปิดใช้ Google แปลภาษาเรียบร้อยแล้ว'
   wwcUpdaterParserFailed: ไม่สามารถแยกวิเคราะห์ข้อมูลการปรับปรุงจาก Github
   wwctAutoTranslateStart: ' ตอนนี้แปลทั้งหมดของการสนทนาของคุณไปยัง %o'
   wwcConfigConversationAmazonTranslateSecretKeyInput: รหัสลับปัจจุบันคือ %i โปรดป้อนรหัสลับสำหรับ
@@ -103,10 +101,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat เป็นวันที่แล้ว!
   wwcConfigConversationAmazonTranslateRegionInput: ภูมิภาคปัจจุบันคือ %i โปรดป้อนภูมิภาคสำหรับ
     Amazon หรือพิมพ์ 0 เพื่อย้อนกลับ
-  wwcConfigConversationWatsonFail: ' ล้มเหลวในการเปิดใช้งาน IBM Watson'
   wwcNoConsole: ' คำสั่งนี้สามารถดำเนินการโดยผู้เล่นเท่านั้น'
-  wwcConfigConversationAmazonTranslateSuccess: ' เปิดใช้งาน Amazon Translate เรียบร้อยแล้ว'
-  wwcConfigConversationAmazonTranslateFail: ' ไม่สามารถเปิดใช้งานการแปลภาษาอเมซอน'
   wwcInitializationFail: ล้มเหลวในการเริ่มต้นการสนทนา WorldwideChat
   wwcrSuccess: ' โหลดใหม่สำเร็จใน WorldwideChat'
   wwcPlayerNotFound: ' ไม่พบผู้เล่น %ฉันไม่พบ'
@@ -134,7 +129,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: ล้มเหลวในการอ่านคำนำหน้าของคุณโดยใช้ค่าเริ่มต้น...
   wwcConfigRateLimitInvalid: ขีด จำกัด ของอัตราไม่ดีที่กำหนดไว้ใน config.ymlค่าเริ่มต้นเป็น
     0 วินาที...
-  wwcConfigConversationWatsonSuccess: ' เปิดใช้งาน IBM Watson เรียบร้อยแล้ว'
   wwcSignTranslateStart: ' แปลป้ายเป้าหมาย...'
   wwcConfigGUIChatSettings: การกำหนดค่าการแชท
   wwcConfigGUIWatsonURLButton: เปลี่ยน URL ของบริการวัตสัน
@@ -210,3 +204,7 @@ Messages:
   wwcInventoryError: ข้อผิดพลาดที่ตรวจพบกับ GUI ของผู้ใช้ %i โปรดรายงานปัญหานี้ไปยังผู้พัฒนา
   wwcWatson117Warning: 'คำเตือน: วัตสันมักจะล้มเหลวในการทำงานอย่างถูกต้องบน 1.17 หรือมากกว่าโดยเฉพาะ
     JDK 16 เนื่องจากข้อผิดพลาดใน IBM SDKนี้จะได้รับการแก้ไขในการปรับปรุงในอนาคต.'
+  wwcConfigConversationTranslatorFail: ' ล้มเหลวในการเปิด %i'
+  wwcConfigConversationConsoleTranslatorSuccess: ผู้ใช้ %ฉันเปิด %o เรียบร้อยแล้ว
+  wwcConfigConversationTranslatorSuccess: ' เปิดใช้งาน %i สำเร็จแล้ว'
+  wwcConfigConversationConsoleTranslatorFail: ผู้ใช้ %i ไม่สามารถเปิด %o ได้

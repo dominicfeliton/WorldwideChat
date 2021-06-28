@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Ndrysho Kontrolloni për përditësime V
   wwcSignTranslationFail: ' Nuk mund të merrni një përkthim të vlefshëm të shenjës
     suaj të synuar nga %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Dështoi në mundësimin e Google Translate.'
   wwcUpdaterFailedGeneric: E pamundur për të kontrolluar përditësimet WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Vonesa aktuale në kontrolluesin e përditësimit
     është %i sekonda. Lloji ndonjë gjë më të madhe se 10 për të vendosur një vlerë
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Përkthimi i shenjave të paaf'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Biseda globale po përkthehet,
     por biseda juaj po përkthehet nga %i në %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate aktivizuar me sukses.'
   wwcUpdaterParserFailed: Dështoi në analizimin e të dhënave të përditësimit nga Github.
   wwctAutoTranslateStart: ' Tani duke përkthyer krejt bisedën tënde në %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Kyçi i tanishëm sekret është
@@ -122,10 +120,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat është i përditësuar!
   wwcConfigConversationAmazonTranslateRegionInput: Rajoni i tanishëm është %i. Ju
     lutemi, futni një rajon për Amazon, ose shkruani 0 për t\'u kthyer prapa.
-  wwcConfigConversationWatsonFail: ' Dështoi në mundësimin e IBM Watson.'
   wwcNoConsole: ' Ky komandë mund të drejtohet vetëm nga një lojtar.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Aktivizuar me sukses Amazon Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Dështoi në mundësimin e Amazon Translate.'
   wwcInitializationFail: Dështoi për të inicializuar WorldwideChat.
   wwcrSuccess: ' Rifreskuar me sukses WorldwideChat.'
   wwcPlayerNotFound: ' Lojtar %Nuk u gjet.'
@@ -156,7 +151,6 @@ Messages:
     parazgjedhjes...
   wwcConfigRateLimitInvalid: Kufiri i keq i normës së vendosur në config.yml. Defaulting
     në 0 sekonda...
-  wwcConfigConversationWatsonSuccess: ' Aktivizuar me sukses IBM Watson.'
   wwcSignTranslateStart: ' Përkthimi i shenjës së synuar...'
   wwcConfigGUIChatSettings: Konfigurimi i bisedës
   wwcConfigGUIWatsonURLButton: Ndrysho URL e Shërbimit Watson
@@ -246,3 +240,8 @@ Messages:
   wwcWatson117Warning: 'KUJDES: Watson ka shumë të ngjarë të dështojë të funksionojë
     siç duhet në 1.17, ose më konkretisht JDK 16 për shkak të një bug në IBM SDK.
     Kjo do të fiksohet në një përditësim të ardhshëm.'
+  wwcConfigConversationTranslatorFail: ' Dështoi në mundësuar %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Përdoruesi %i aktivizuar me sukses
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' U aktivizua me sukses %i.'
+  wwcConfigConversationConsoleTranslatorFail: Përdoruesi %i dështoi të mundësuar %o.

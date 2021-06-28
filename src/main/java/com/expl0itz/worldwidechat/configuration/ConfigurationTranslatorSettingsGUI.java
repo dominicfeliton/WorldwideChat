@@ -108,7 +108,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 	public void watsonInventory(Player player, InventoryContents contents) {
 		/* Option One: Watson */
 		ItemStack translatorButton;
-		if (main.getConfigManager().getMainConfig().getBoolean("Translator.useWatsonTranslate")) {
+		if (main.getTranslatorName().equals("Watson")) {
 			translatorButton = new ItemStack(Material.EMERALD_BLOCK);
 		} else {
 			translatorButton = new ItemStack(Material.REDSTONE_BLOCK);
@@ -125,7 +125,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 	public void googleTranslateInventory(Player player, InventoryContents contents) {
 		/* Option Two: Google Translate */
 		ItemStack translatorButton;
-		if (main.getConfigManager().getMainConfig().getBoolean("Translator.useGoogleTranslate")) {
+		if (main.getTranslatorName().equals("Google Translate")) {
 			translatorButton = new ItemStack(Material.EMERALD_BLOCK);
 		} else {
 			translatorButton = new ItemStack(Material.REDSTONE_BLOCK);
@@ -142,7 +142,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 	public void amazonTranslateInventory(Player player, InventoryContents contents) {
 		/* Option Three: Amazon Translate */
 		ItemStack translatorButton;
-		if (main.getConfigManager().getMainConfig().getBoolean("Translator.useAmazonTranslate")) {
+		if (main.getTranslatorName().equals("Amazon Translate")) {
 			translatorButton = new ItemStack(Material.EMERALD_BLOCK);
 		} else {
 			translatorButton = new ItemStack(Material.REDSTONE_BLOCK);

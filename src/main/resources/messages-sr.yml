@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Promena Proverite za ispravke kašnjenja
   wwcSignTranslationFail: ' Ne mogu da dobijete valjan prevod na znak vašeg ciljnog
     od %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Nije uspelo omogućiti Google Translate.'
   wwcUpdaterFailedGeneric: Nije moguće proveriti WorldwideChat ažuriranja.
   wwcConfigConversationUpdateCheckerInput: Trenutni kašnjenje na kontroleru ažuriranja
     je %i sekundi. Ukucajte nešto veće od 10 da biste postavili novu vrednost, ili
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Prevod potpisa onemogućen.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Globalno ćaskanje se
     prevodi, ali vaš ćaskanje se prevodi od %i na %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate je uspešno omogućen.'
   wwcUpdaterParserFailed: Nije uspjelo analizirati podatke o ažuriranju iz Gituba.
   wwctAutoTranslateStart: ' Sada prevodi sve vaše ćaskanje na %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Trenutni tajni ključ je %i.
@@ -114,10 +112,7 @@ Messages:
   wwcUpdaterUpToDate: VorldVideChat je ažuriran!
   wwcConfigConversationAmazonTranslateRegionInput: Trenutni region je %i. Unesite
     region za Amazon ili upišite 0 da biste se vratili.
-  wwcConfigConversationWatsonFail: ' Nije uspelo omogućiti IBM Votson.'
   wwcNoConsole: ' Ovu komandu može voditi samo igrač.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Uspešno omogućen Amazon Prevod.'
-  wwcConfigConversationAmazonTranslateFail: ' Nije uspelo da omogućite Amazon Translate.'
   wwcInitializationFail: Nije uspelo da inicijalizuje WorldwideChat
   wwcrSuccess: ' Uspešno reloaded VorldVideChat'
   wwcPlayerNotFound: ' Player %Nisam pronađen.'
@@ -146,7 +141,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Nije uspelo da pročita prefiks. Korišćenje podrazumevane...
   wwcConfigRateLimitInvalid: Loša granica stopa postavljena u config.iml. Defaulting
     do 0 sekundi...
-  wwcConfigConversationWatsonSuccess: ' Uspešno omogućen IBM Votson.'
   wwcSignTranslateStart: ' Prevođenje ciljnog znaka...'
   wwcConfigGUIChatSettings: Konfiguracija chat
   wwcConfigGUIWatsonURLButton: Promenite URL usluge Vatson
@@ -231,3 +225,7 @@ Messages:
   wwcWatson117Warning: 'UPOZORENjE: Vatson će najverovatnije uspjeti da pravilno funkcioniše
     na 1.17, ili konkretnije JDK 16 zbog greške u IBM SDK. Ovo će biti fiksirano u
     budućem ažuriranju.'
+  wwcConfigConversationTranslatorFail: ' Nije uspelo da omogućite %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Korisnik %i uspešno omogućio %o.
+  wwcConfigConversationTranslatorSuccess: ' Uspešno omogućeno %i.'
+  wwcConfigConversationConsoleTranslatorFail: Korisnik %ja nije uspeo da omogući %o.

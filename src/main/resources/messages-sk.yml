@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Zmeniť kontrolu aktualizácií oneskorenie
   wwcSignTranslationFail: ' Nepodarilo sa získať platný preklad cieľového znamienka
     z %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Nepodarilo sa povoliť prekladač Google.'
   wwcUpdaterFailedGeneric: Nie je možné skontrolovať aktualizácie WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Aktuálne oneskorenie kontroly aktualizácií
     je %i sekúnd. Zadajte čokoľvek väčšie ako 10, ak chcete nastaviť novú hodnotu,
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Preklad podpísať vypnutý.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Globálny chat je prekladaný,
     ale váš chat je prekladaný z %i do %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Prekladač Google bol úspešne povolený.'
   wwcUpdaterParserFailed: Nepodarilo sa analyzovať aktualizačné údaje z Githubu.
   wwctAutoTranslateStart: ' Teraz prekladám všetok váš chat na %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Aktuálny tajný kľúč je %i. Prosím,
@@ -118,10 +116,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat je aktuálny!
   wwcConfigConversationAmazonTranslateRegionInput: Aktuálny región je %i. Prosím,
     zadajte región pre Amazon, alebo zadajte 0, aby ste sa vrátili späť.
-  wwcConfigConversationWatsonFail: ' Nepodarilo sa povoliť IBM Watson.'
   wwcNoConsole: ' Tento príkaz môže spustiť iba hráč.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Úspešne zapnuté Amazon Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Nepodarilo sa povoliť Amazon Translate.'
   wwcInitializationFail: Nepodarilo sa inicializovať WorldwideChat.
   wwcrSuccess: ' Úspešne načítané WorldwideChat'
   wwcPlayerNotFound: ' Hráč %Nenašiel som.'
@@ -151,7 +146,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Nepodarilo sa prečítať predponu. Používanie predvoleného...
   wwcConfigRateLimitInvalid: Zlý limit rýchlosti nastavený v config.yml. Predvolené
     na 0 sekúnd...
-  wwcConfigConversationWatsonSuccess: ' Úspešne zapnuté IBM Watson.'
   wwcSignTranslateStart: ' Preklad cieľového znaku...'
   wwcConfigGUIChatSettings: Konfigurácia chatu
   wwcConfigGUIWatsonURLButton: Zmena adresy URL služby Watson
@@ -243,3 +237,8 @@ Messages:
   wwcWatson117Warning: 'UPOZORNENIE: Watson pravdepodobne zlyhá správne fungovať na
     1.17, alebo konkrétnejšie JDK 16 kvôli chybe v IBM SDK. To bude opravené v budúcej
     aktualizácii.'
+  wwcConfigConversationTranslatorFail: ' Nepodarilo sa povoliť %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Užívateľ %som úspešne zapnutý %o.
+  wwcConfigConversationTranslatorSuccess: ' Úspešne zapnuté %i.'
+  wwcConfigConversationConsoleTranslatorFail: Používateľa %nepodarilo sa mi povoliť
+    %o.

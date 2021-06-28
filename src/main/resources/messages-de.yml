@@ -7,8 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Änderung Auf Aktualisierungsverzögerung prüfen
   wwcSignTranslationFail: ' Es konnte keine gültige Übersetzung Ihres Zielzeichens
     von %i abgerufen werden.'
-  wwcConfigConversationGoogleTranslateFail: ' Google Translate konnte nicht aktiviert
-    werden.'
   wwcUpdaterFailedGeneric: Es konnte nicht nach WorldwideChat-Updates gesucht werden.
   wwcConfigConversationUpdateCheckerInput: Die aktuelle Verzögerung bei der Update-Prüfung
     beträgt %i Sekunden. Geben Sie etwas größer als 10 ein, um einen neuen Wert festzulegen,
@@ -33,8 +31,6 @@ Messages:
   wwctsOffSender: ' Übersetzung signieren ist deaktiviert.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Der globale Chat wird
     übersetzt, aber Ihr Chat wird von %i nach %o übersetzt.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate wurde erfolgreich
-    aktiviert.'
   wwcUpdaterParserFailed: Fehler beim Analysieren von Aktualisierungsdaten von Github.
   wwctAutoTranslateStart: ' Übersetzen Sie jetzt Ihren gesamten Chat nach %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Der aktuelle geheime Schlüssel
@@ -127,12 +123,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat ist auf dem neuesten Stand!
   wwcConfigConversationAmazonTranslateRegionInput: Die aktuelle Region ist %i. Geben
     Sie eine Region für Amazon ein, oder geben Sie 0 ein, um zurückzukehren.
-  wwcConfigConversationWatsonFail: ' IBM Watson konnte nicht aktiviert werden.'
   wwcNoConsole: ' Dieser Befehl kann nur von einem Spieler ausgeführt werden.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Amazon Translate wurde erfolgreich
-    aktiviert.'
-  wwcConfigConversationAmazonTranslateFail: ' Amazon Translate konnte nicht aktiviert
-    werden.'
   wwcInitializationFail: WorldwideChat konnte nicht initialisiert werden.
   wwcrSuccess: ' WorldwideChat wurde erfolgreich neu geladen.'
   wwcPlayerNotFound: ' Spieler %ich habe nicht gefunden.'
@@ -165,7 +156,6 @@ Messages:
     wird verwendet...
   wwcConfigRateLimitInvalid: In config.yml festgelegte Grenze für schlechte Rate.
     Vorgegeben auf 0 Sekunden...
-  wwcConfigConversationWatsonSuccess: ' IBM Watson wurde erfolgreich aktiviert.'
   wwcSignTranslateStart: ' Zielzeichen übersetzen...'
   wwcConfigGUIChatSettings: Chat-Konfiguration
   wwcConfigGUIWatsonURLButton: Ändern der Watson-Dienst-URL
@@ -258,3 +248,8 @@ Messages:
   wwcWatson117Warning: 'WARNUNG: Watson wird höchstwahrscheinlich auf 1.17 oder genauer
     gesagt JDK 16 aufgrund eines Fehlers im IBM SDK nicht ordnungsgemäß funktionieren.
     Dies wird in einem zukünftigen Update behoben.'
+  wwcConfigConversationTranslatorFail: ' %i konnte nicht aktiviert werden.'
+  wwcConfigConversationConsoleTranslatorSuccess: Benutzer %ich habe erfolgreich %o
+    aktiviert.
+  wwcConfigConversationTranslatorSuccess: ' %i wurde erfolgreich aktiviert.'
+  wwcConfigConversationConsoleTranslatorFail: Benutzer %ich konnte %o nicht aktivieren.

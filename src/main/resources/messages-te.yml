@@ -6,7 +6,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: నవీకరణలు ఆలస్యం కోసం తనిఖీ మార్చండి
   wwcSignTranslationFail: ' %i నుండి మీ లక్ష్య సంకేతం యొక్క చెల్లుబాటు అయ్యే అనువాదాన్ని
     పొందలేకపోయింది.'
-  wwcConfigConversationGoogleTranslateFail: ' Google అనువదించు ఎనేబుల్ విఫలమైంది.'
   wwcUpdaterFailedGeneric: వరల్డ్చాట్ నవీకరణల కోసం తనిఖీ చేయడం సాధ్యం.
   wwcConfigConversationUpdateCheckerInput: నవీకరణ చెకర్ పై ప్రస్తుత ఆలస్యం %i సెకన్లు.
     ఒక కొత్త విలువ సెట్ 10 కంటే ఎక్కువ ఏదైనా టైప్, లేదా 10 కంటే తక్కువ ఏదైనా తిరిగి
@@ -30,7 +29,6 @@ Messages:
   wwctsOffSender: ' సైన్ అనువాదం నిలిపివేయబడింది.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' గ్లోబల్ చాట్ అనువదించబడుతోంది,
     కానీ మీ చాట్ %i నుండి %o కు అనువదించబడుతోంది.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google అనువదించు విజయవంతంగా ప్రారంభించబడింది.'
   wwcUpdaterParserFailed: Github నుండి నవీకరణ డేటా అన్వయించడం విఫలమైంది.
   wwctAutoTranslateStart: ' ఇప్పుడు మీ చాట్లన్ని %o కు అనువదిస్తోంది.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: ప్రస్తుత రహస్య కీ %i. దయచేసి
@@ -117,10 +115,7 @@ Messages:
   wwcUpdaterUpToDate: ప్రపంచవ్యాప్తచాట్ తాజాగా ఉంది!
   wwcConfigConversationAmazonTranslateRegionInput: ప్రస్తుత ప్రాంతం %i. దయచేసి అమెజాన్
     కోసం ఒక ప్రాంతాన్ని ఇన్పుట్ చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
-  wwcConfigConversationWatsonFail: ' IBM వాట్సన్ ఎనేబుల్ విఫలమైంది.'
   wwcNoConsole: ' ఈ ఆదేశాన్ని క్రీడాకారుడు మాత్రమే నడుపుతారు.'
-  wwcConfigConversationAmazonTranslateSuccess: ' విజయవంతంగా అమెజాన్ అనువదించు ఎనేబుల్.'
-  wwcConfigConversationAmazonTranslateFail: ' అమెజాన్ అనువదించు ఎనేబుల్ విఫలమైంది.'
   wwcInitializationFail: ప్రారంభించడంలో విఫలమైంది ప్రపంచచాట్.
   wwcrSuccess: ' విజయవంతంగా రీలోడ్ చేయబడింది ప్రపంచవ్యాప్తంగా చాట్.'
   wwcPlayerNotFound: ' ప్లేయర్ % నేను కనుగొనబడలేదు.'
@@ -148,7 +143,6 @@ Messages:
   wwcSignDone: ' సైన్ విజయవంతంగా అనువదించబడింది.'
   wwcConfigInvalidPrefixSettings: మీ ఉపసర్గ చదవడానికి విఫలమైంది. డిఫాల్ట్ ఉపయోగించి...
   wwcConfigRateLimitInvalid: చెడు రేటు పరిమితి config.yml లో సెట్. 0 సెకన్లు డిఫాల్టింగ్...
-  wwcConfigConversationWatsonSuccess: ' విజయవంతంగా IBM వాట్సన్ ఎనేబుల్.'
   wwcSignTranslateStart: ' లక్ష్య చిహ్నాన్ని అనువదించడం...'
   wwcConfigGUIChatSettings: చాట్ ఆకృతీకరణ
   wwcConfigGUIWatsonURLButton: వాట్సన్ సర్వీస్ URL ను మార్చండి
@@ -232,3 +226,8 @@ Messages:
     నివేదించండి.
   wwcWatson117Warning: 'హెచ్చరిక: వాట్సన్ ఎక్కువగా కారణంగా IBM SDK లో ఒక బగ్ 1.17,
     లేదా మరింత ప్రత్యేకంగా JDK 16 న సరిగా పని విఫలమౌతుంది. ఇది భవిష్యత్ నవీకరణలో పరిష్కరించబడుతుంది.'
+  wwcConfigConversationTranslatorFail: ' %i ను ఎనేబుల్ చేయడంలో విఫలమైంది.'
+  wwcConfigConversationConsoleTranslatorSuccess: వాడుకరి %i విజయవంతంగా %o ను ఎనేబుల్
+    చేస్తుంది.
+  wwcConfigConversationTranslatorSuccess: ' విజయవంతంగా %i ను ఎనేబుల్ చేయండి.'
+  wwcConfigConversationConsoleTranslatorFail: వాడుకరి %o ను ఎనేబుల్ చేయడంలో నేను విఫలమయ్యాను.

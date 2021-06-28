@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Промена Проверете за одложување на ажурирања
   wwcSignTranslationFail: ' Не можам да добијам валиден превод на вашиот целен знак
     од %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Не успеа да се овозможи Google Translate.'
   wwcUpdaterFailedGeneric: Не може да се провери за WorldwideChat ажурирања
   wwcConfigConversationUpdateCheckerInput: Тековното одложување на проверката за ажурирање
     е %i секунди. Внесете нешто поголемо од 10 за да поставите нова вредност, или
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Пријавете превод оневозможено.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Глобалниот разговор
     се преведува, но вашиот разговор се преведува од %i до %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate овозможено успешно.'
   wwcUpdaterParserFailed: Не успеа да ги анализираат податоците за ажурирање од Github.
   wwctAutoTranslateStart: ' Сега преведување на сите на вашиот разговор на %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Тековниот таен клуч е %i. Ве
@@ -118,10 +116,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat е ажуриран!
   wwcConfigConversationAmazonTranslateRegionInput: Тековниот регион е %i Ве молиме
     внесете регион за Амазон, или напишете 0 за да се вратите назад.
-  wwcConfigConversationWatsonFail: ' Не успеа да го овозможи IBM Вотсон.'
   wwcNoConsole: ' Оваа команда може да ја извршува само играч.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Успешно овозможено Амазон Преведете.'
-  wwcConfigConversationAmazonTranslateFail: ' Не успеа да се овозможи Амазон Преведете.'
   wwcInitializationFail: Не успеа да иницијализира WorldwideChat
   wwcrSuccess: ' Успешно превчита WorldwideChat'
   wwcPlayerNotFound: ' Играч % не сум пронајден.'
@@ -152,7 +147,6 @@ Messages:
     на стандардно...
   wwcConfigRateLimitInvalid: Лоша стапка граница поставена во config.yml. Стандардно
     до 0 секунди...
-  wwcConfigConversationWatsonSuccess: ' Успешно овозможено IBM Вотсон.'
   wwcSignTranslateStart: ' Преведување на целниот знак...'
   wwcConfigGUIChatSettings: Конфигурација на разговор
   wwcConfigGUIWatsonURLButton: Промена на URL-то на услугата Вотсон
@@ -245,3 +239,7 @@ Messages:
   wwcWatson117Warning: 'ПРЕДУПРЕДУВАЊЕ: Вотсон, најверојатно, нема да успее правилно
     да функционира на 1.17, или поточно JDK 16 поради бубачка во IBM SDK. Ова ќе биде
     фиксирано во идно ажурирање.'
+  wwcConfigConversationTranslatorFail: ' Не успеа да се овозможи %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Корисникот %i успешно овозможи %o.
+  wwcConfigConversationTranslatorSuccess: ' Успешно овозможена %i.'
+  wwcConfigConversationConsoleTranslatorFail: Корисникот % Јас не успеа %o.

@@ -6,7 +6,6 @@ Messages:
   wwcrFail: ' WorldWiDeChat بیا پورته کولو کې پاتې راغلی.'
   wwcConfigGUIUpdateCheckerButton: د اوسمهالونو ځنډ لپاره چیک
   wwcSignTranslationFail: . %i څخه د خپل هدف نښان معتبر ژباړه نه شي ترلاسه کولی
-  wwcConfigConversationGoogleTranslateFail: ' د ګوګل ژباړنې فعالولو کې پاتې راغلی.'
   wwcUpdaterFailedGeneric: د WorldWieChat تازه معلوماتو لپاره د کتلو توان نلري.
   wwcConfigConversationUpdateCheckerInput: په اوسمهالول چیکر کې اوسنی ځنډ %i ثانیې
     دی. د نوي ارزښت ټاکلو لپاره د 10 څخه ډیر څه ولیکئ، یا د 10 څخه لږ څه چې بیرته
@@ -30,8 +29,6 @@ Messages:
   wwctsOffSender: ' د ژباړې معلول لاسليک کړئ.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' ګلوبل چیٹ ژباړل کیږي،
     مګر ستاسو چیٹ د %i څخه تر %o پورې ژباړل کیږي.'
-  wwcConfigConversationGoogleTranslateSuccess: ' ګوګل ژباړه په بریالیتوب سره فعال
-    شو.'
   wwcUpdaterParserFailed: له Github څخه د تازه معلوماتو د تجزولو کې پاتې راغلی.
   wwctAutoTranslateStart: ' اوس ستاسو ټول چیٹ ژباړئ %o ته.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: اوسنی پټ کیل %i دی. مهرباني
@@ -115,10 +112,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat تر اوسه پورې دی!
   wwcConfigConversationAmazonTranslateRegionInput: اوسنی سیمه %i ده. مهرباني وکړئ
     د ایمیزون لپاره سیمه ولیکئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
-  wwcConfigConversationWatsonFail: ' IBM واټسن په توانولو کې پاتې راغی.'
   wwcNoConsole: ' دا کمانډ یوازې د یو لوبغاړي لخوا پرمخ وړل کیدی شي.'
-  wwcConfigConversationAmazonTranslateSuccess: ' په بریالیتوب سره د ایمیزون ژباړ'
-  wwcConfigConversationAmazonTranslateFail: ' د ایمیزون ژباړلو فعالولو کې پاتې'
   wwcInitializationFail: WorldWiDeChat پیل کولو کې پاتې راغلل.
   wwcrSuccess: ' په بریالیتوب سره د WorldWiDeChat بیاځل'
   wwcPlayerNotFound: . لوبغاړي ونه موندل شو
@@ -147,7 +141,6 @@ Messages:
   wwcSignDone: ' په بریالیتوب سره ژباړل شوی لاسلیک'
   wwcConfigInvalidPrefixSettings: ستاسو مختاړی په لوستلو کې پاتې راغی.... تلواله کارول
   wwcConfigRateLimitInvalid: د خراب نرخ حد په config.yml کې ټاکل شوی. 0 ثانیو ته تلل...
-  wwcConfigConversationWatsonSuccess: ' په بریالیتوب سره فعال شوی IBM واټسن.'
   wwcSignTranslateStart: ' د نښه نښه ژباړل...'
   wwcConfigGUIChatSettings: چیٹ سازونه
   wwcConfigGUIWatsonURLButton: د واټسن خدمت URL بدل کړئ
@@ -230,3 +223,8 @@ Messages:
   wwcWatson117Warning: 'خبرداری: واټسن به په 1.17 کې په سمه توګه فعالیت کولو کې پاتې
     راشي، یا په ځانګړې توګه JDK 16 په IBM SDK کې د بوګ له امله. دا به په راتلونکي
     تازه معلوماتو کې وټاکل شي.'
+  wwcConfigConversationTranslatorFail: .i توانولو کې پاتې راغی
+  wwcConfigConversationConsoleTranslatorSuccess: .کاروون %o په بریالیتوب سره توانول
+    %o
+  wwcConfigConversationTranslatorSuccess: . په برياليتوب سره توانول شو %i
+  wwcConfigConversationConsoleTranslatorFail: .کاروون %o په توانولو کې پاتې راغم %o

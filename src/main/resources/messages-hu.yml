@@ -6,8 +6,6 @@ Messages:
   wwcrFail: ' Nem sikerült újratölteni a WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Frissítések ellenőrzésének módosítása késleltetés
   wwcSignTranslationFail: ' Nem sikerült érvényes fordítást kapni a céljelről: %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Nem sikerült engedélyezni a Google Translate
-    szolgáltatást.'
   wwcUpdaterFailedGeneric: Nem sikerült ellenőrizni a WorldwideChat frissítéseket.
   wwcConfigConversationUpdateCheckerInput: A frissítésellenőrző aktuális késése %i
     másodperc. Írja be a 10-nél nagyobb értéket az új érték beállításához, vagy 10-nél
@@ -31,8 +29,6 @@ Messages:
   wwctsOffSender: ' Aláírás fordítás letiltva.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' A globális csevegés
     lefordítása folyamatban van, de a csevegés lefordítása a %i -ról a %o címre történik.'
-  wwcConfigConversationGoogleTranslateSuccess: ' A Google Translate sikeresen engedélyezve
-    van.'
   wwcUpdaterParserFailed: Nem sikerült elemezni a Github adatainak frissítését.
   wwctAutoTranslateStart: ' Most lefordítod az összes csevegésedet erre: %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: 'Az aktuális titkos kulcs: %i.
@@ -120,12 +116,7 @@ Messages:
   wwcUpdaterUpToDate: A WorldwideChat naprakész!
   wwcConfigConversationAmazonTranslateRegionInput: Az aktuális régió %i. Adjon meg
     egy régiót az Amazonhoz, vagy írja be a 0 értéket a visszatéréshez.
-  wwcConfigConversationWatsonFail: ' Nem sikerült engedélyezni az IBM Watson programot.'
   wwcNoConsole: ' Ezt a parancsot csak egy játékos futtathatja.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Sikeresen engedélyezte az Amazon
-    Translate szolgáltatást'
-  wwcConfigConversationAmazonTranslateFail: ' Nem sikerült engedélyezni az Amazon
-    Translate szolgáltatást.'
   wwcInitializationFail: Nem sikerült inicializálni a WorldwideChat.
   wwcrSuccess: ' Sikeresen újratöltött WorldwideChat.'
   wwcPlayerNotFound: ' A (z) %i játékos nem található.'
@@ -157,7 +148,6 @@ Messages:
     beállítás használata...
   wwcConfigRateLimitInvalid: A config.yml-ben beállított rossz sebesség korlát. Alapértelmezés
     0 másodperc...
-  wwcConfigConversationWatsonSuccess: ' Sikeresen engedélyezte az IBM Watson alkalmazást.'
   wwcSignTranslateStart: ' A céltábla lefordítása...'
   wwcConfigGUIChatSettings: Csevegés beállítása
   wwcConfigGUIWatsonURLButton: Watson szolgáltatás URL-jének módosítása
@@ -245,3 +235,8 @@ Messages:
   wwcWatson117Warning: 'FIGYELMEZTETÉS: Watson valószínűleg nem fog megfelelően működni
     az 1.17-en, pontosabban a JDK 16-on az IBM SDK hibája miatt. Ezt egy későbbi frissítés
     rögzíti.'
+  wwcConfigConversationTranslatorFail: ' Nem sikerült a (z) %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: '%i felhasználó sikeresen engedélyezett
+    %o.'
+  wwcConfigConversationTranslatorSuccess: ' Sikeresen engedélyezve: %i.'
+  wwcConfigConversationConsoleTranslatorFail: A (z) %i felhasználót nem sikerült beengedni.

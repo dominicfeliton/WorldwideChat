@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Yangilanishlarni kechiktirishni tekshiring
   wwcSignTranslationFail: ' %i dan maqsadli belgingizning haqiqiy tarjimasini olib
     boʻlmadi.'
-  wwcConfigConversationGoogleTranslateFail: ' Google Tarjima xizmatini yoqmadi.'
   wwcUpdaterFailedGeneric: WorldwideChat yangilanishlarini tekshirib bo\'lmadi.
   wwcConfigConversationUpdateCheckerInput: Yangilanish tekshirgichidagi joriy kechikish
     %i sekunddir. Yangi qiymatni belgilash uchun 10 dan katta narsani yoki orqaga
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Imzo tarjimasi o\''chirilgan.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Global chat tarjima
     qilinmoqda, ammo sizning suhbatingiz %i dan %o ga tarjima qilinmoqda.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Tarjima muvaffaqiyatli yoqilgan.'
   wwcUpdaterParserFailed: Github ma\'lumotlarni yangilash ajralish bo\'lmadi.
   wwctAutoTranslateStart: ' Endi barcha suhbatingizni %o ga tarjima qiling.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Joriy maxfiy kalit %i. Iltimos,
@@ -119,10 +117,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat dolzarb!
   wwcConfigConversationAmazonTranslateRegionInput: Joriy mintaqa %i. Iltimos, Amazon
     uchun mintaqani kiriting yoki orqaga qaytish uchun 0 yozing.
-  wwcConfigConversationWatsonFail: ' IBM Watson faollashtirish bo\''lmadi.'
   wwcNoConsole: ' Ushbu buyruq faqat o\''yinchi tomonidan boshqarilishi mumkin.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Muvaffaqiyatli Amazon Tarjima yoqilgan.'
-  wwcConfigConversationAmazonTranslateFail: ' Amazon Tarjima faollashtirish bo\''lmadi.'
   wwcInitializationFail: WorldwideChat-ni ishga tushirib bo\'lmadi.
   wwcrSuccess: ' Muvaffaqiyatli WorldWidechat qayta yuklandi.'
   wwcPlayerNotFound: ' O\''yinchi % Men topilmadi.'
@@ -152,7 +147,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Prefiksingizni o\'qib bo\'lmadi. Standart foydalanish...
   wwcConfigRateLimitInvalid: config.yml o\'rnatilgan yomon darajasi chegarasi. 0 soniyagacha
     sukut qilish...
-  wwcConfigConversationWatsonSuccess: ' Muvaffaqiyatli IBM Watson yoqilgan.'
   wwcSignTranslateStart: ' Tarjima maqsad belgisi...'
   wwcConfigGUIChatSettings: Chat konfiguratsiyasi
   wwcConfigGUIWatsonURLButton: Watson xizmati URL manzilini o\'zgartirish
@@ -241,3 +235,7 @@ Messages:
   wwcWatson117Warning: 'OGOHLANTIRISH: Watson, ehtimol, IBM SDK bir xato tufayli 1.17
     yoki ko\''proq maxsus JDK 16 ustida to\''g\''ri ishlashi uchun muvaffaqiyatsiz
     bo\''ladi. Bu kelajakda yangilanishda aniqlanadi.'
+  wwcConfigConversationTranslatorFail: ' %i yoqmadi.'
+  wwcConfigConversationConsoleTranslatorSuccess: Foydalanuvchi %i muvaffaqiyatli faollashtirdim.
+  wwcConfigConversationTranslatorSuccess: ' %i muvaffaqiyatli faollashtirildi.'
+  wwcConfigConversationConsoleTranslatorFail: Foydalanuvchi %i faollashtira olmadi.

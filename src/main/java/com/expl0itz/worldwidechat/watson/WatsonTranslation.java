@@ -66,6 +66,14 @@ public class WatsonTranslation {
                         ((JsonObject) element).get("supported_as_target").getAsBoolean()));
         	}
         }
+        
+        /* Test translation */
+        TranslateOptions options = new TranslateOptions.Builder()
+                .addText("Hello, how are you?")
+                .source("en")
+                .target("es")
+                .build();
+        
         /* Set supported watson languages */
         main.setSupportedTranslatorLanguages(outList);
     }

@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Thay đổi Kiểm tra Cập Nhật chậm trễ
   wwcSignTranslationFail: ' Không thể nhận được bản dịch hợp lệ của dấu hiệu mục tiêu
     của bạn từ %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Không thể bật Google Translate.'
   wwcUpdaterFailedGeneric: Không thể kiểm tra bản cập nhật WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Sự chậm trễ hiện tại trên trình kiểm tra
     cập nhật là %i giây. Nhập bất cứ điều gì lớn hơn 10 để đặt một giá trị mới, hoặc
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Đã vô hiệu hóa bản dịch ký.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Trò chuyện toàn cầu
     đang được dịch, nhưng trò chuyện của bạn đang được dịch từ %i đến %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate đã bật thành công.'
   wwcUpdaterParserFailed: Không thể phân tích dữ liệu cập nhật từ Github.
   wwctAutoTranslateStart: ' Bây giờ dịch tất cả các cuộc trò chuyện của bạn vào %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Khóa bí mật hiện tại là %i.
@@ -117,10 +115,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat được cập nhật!
   wwcConfigConversationAmazonTranslateRegionInput: Vùng hiện tại là %i. Vui lòng nhập
     một vùng cho Amazon, hoặc nhập 0 để quay lại.
-  wwcConfigConversationWatsonFail: ' Thất bại trong việc kích hoạt IBM Watson.'
   wwcNoConsole: ' Lệnh này chỉ có thể được chạy bởi một người chơi.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Đã bật thành công Amazon Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Không thể bật Amazon Translate.'
   wwcInitializationFail: Thất bại trong việc khởi tạo WorldwideChat.
   wwcrSuccess: ' Nạp lại thành công WorldwideChat.'
   wwcPlayerNotFound: ' Người chơi %Tôi không tìm thấy.'
@@ -152,7 +147,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Không đọc tiền tố của bạn. Sử dụng mặc định...
   wwcConfigRateLimitInvalid: Giới hạn tỷ lệ xấu đặt trong config.yml. Mặc định là
     0 giây...
-  wwcConfigConversationWatsonSuccess: ' Đã kích hoạt thành công IBM Watson.'
   wwcSignTranslateStart: ' Đang dịch dấu hiệu mục tiêu...'
   wwcConfigGUIChatSettings: Cấu hình trò chuyện
   wwcConfigGUIWatsonURLButton: Thay đổi URL dịch vụ Watson
@@ -243,3 +237,7 @@ Messages:
   wwcWatson117Warning: 'CẢNH BÁO: Watson rất có thể sẽ không hoạt động đúng trên 1.17,
     hoặc cụ thể hơn JDK 16 do lỗi trong IBM SDK. Điều này sẽ được khắc phục trong
     bản cập nhật trong tương lai.'
+  wwcConfigConversationTranslatorFail: ' Không thể bật %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Người dùng %i đã bật thành công %o.
+  wwcConfigConversationTranslatorSuccess: ' Đã bật thành công %i.'
+  wwcConfigConversationConsoleTranslatorFail: Người dùng %tôi không thể bật %o.

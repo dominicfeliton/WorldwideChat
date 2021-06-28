@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Badilisha Angalia kwa Sasisho Kuchelewa
   wwcSignTranslationFail: ' Haiwezi kupata tafsiri halali ya ishara yako ya lengo
     kutoka %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Imeshindwa kuwezesha Tafsiri ya Google.'
   wwcUpdaterFailedGeneric: Haiwezi kuangalia sasisho za WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Ucheleweshaji wa sasa kwenye checker ya
     sasisho ni %i seconds. Andika kitu chochote zaidi ya 10 ili kuweka thamani mpya,
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Tafsiri ya ishara walemavu.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Soga ya kimataifa inatafsiriwa,
     lakini soga yako inatafsiriwa kutoka %i hadi %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Tafsiri imewezeshwa kwa ufanisi.'
   wwcUpdaterParserFailed: Imeshindwa kupitisha data ya sasisho kutoka Github.
   wwctAutoTranslateStart: ' Sasa kutafsiri soga yako yote kwa %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Funguo la siri la sasa ni %i.
@@ -115,10 +113,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat ni hadi sasa!
   wwcConfigConversationAmazonTranslateRegionInput: Eneo la sasa ni %i. Tafadhali ingiza
     eneo la Amazon, au funga 0 kurudi nyuma.
-  wwcConfigConversationWatsonFail: ' Imeshindwa kuwawezesha IBM Watson.'
   wwcNoConsole: ' Amri hii inaweza tu kukimbia na mchezaji.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Imewezeshwa kwa ufanisi Amazon'
-  wwcConfigConversationAmazonTranslateFail: ' Imeshindwa kuwezesha Amazon Tafsiri.'
   wwcInitializationFail: Imeshindwa kuanzisha WorldwideChat.
   wwcrSuccess: ' Mafanikio ya kupakia WorldwideChat.'
   wwcPlayerNotFound: ' Mchezaji %sijaipata.'
@@ -148,7 +143,6 @@ Messages:
     default...
   wwcConfigRateLimitInvalid: Bad kiwango kikomo kuweka katika config.yml. Defaulting
     kwa sekunde 0...
-  wwcConfigConversationWatsonSuccess: ' IBM Watson imefanikiwa kwa ufanisi.'
   wwcSignTranslateStart: ' Kutafsiri ishara ya lengo...'
   wwcConfigGUIChatSettings: Soga Usanidi
   wwcConfigGUIWatsonURLButton: Badilisha URL ya Huduma ya Watson
@@ -231,3 +225,7 @@ Messages:
   wwcWatson117Warning: 'WARNING: Watson uwezekano mkubwa kushindwa kufanya kazi vizuri
     kwenye 1.17, au zaidi hasa JDK 16 kutokana na mdudu katika IBM SDK. Hii itawekwa
     katika sasisho la baadaye.'
+  wwcConfigConversationTranslatorFail: ' Imeshindwa kuwezesha %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Mtumiaji %nimewezesha %o kwa mafanikio.
+  wwcConfigConversationTranslatorSuccess: ' Imewezeshwa kwa mafanikio ya %i.'
+  wwcConfigConversationConsoleTranslatorFail: Mtumiaji %nimeshindwa kuwawezesha %o.

@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Skift Søg efter opdateringsforsinkelse
   wwcSignTranslationFail: ' Kunne ikke hente en gyldig oversættelse af dit måltegn
     fra %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Kunne ikke aktivere Google Translate.'
   wwcUpdaterFailedGeneric: Kunne ikke søge efter WorldwideChat-opdateringer.
   wwcConfigConversationUpdateCheckerInput: Den aktuelle forsinkelse på opdateringscheckeren
     er %i sekunder. Skriv noget større end 10 for at indstille en ny værdi, eller
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Signer oversættelse deaktiveret.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Global chat bliver oversat,
     men din chat bliver oversat fra %i til %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate aktiveret.'
   wwcUpdaterParserFailed: Det lykkedes ikke at fortolke opdateringsdata fra Github.
   wwctAutoTranslateStart: ' Oversætter nu al din chat til %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Den nuværende hemmelige nøgle
@@ -116,11 +114,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat er opdateret!
   wwcConfigConversationAmazonTranslateRegionInput: Det aktuelle område er %i. Indtast
     venligst et område for Amazon, eller skriv 0 for at gå tilbage.
-  wwcConfigConversationWatsonFail: ' Det lykkedes ikke at aktivere IBM Watson.'
   wwcNoConsole: ' Denne kommando kan kun køres af en spiller.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Vellykket aktiveret Amazon Oversæt.'
-  wwcConfigConversationAmazonTranslateFail: ' Det lykkedes ikke at aktivere Amazon
-    Translate.'
   wwcInitializationFail: Det lykkedes ikke at initialisere WorldwideChat.
   wwcrSuccess: ' Genindlæst WorldwideChat.'
   wwcPlayerNotFound: ' Spilleren % jeg blev ikke fundet.'
@@ -150,7 +144,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Kunne ikke læse dit præfiks. Brug af standard...
   wwcConfigRateLimitInvalid: Dårlig hastighedsgrænse sat i config.yml. Defaulerer
     til 0 sekunder...
-  wwcConfigConversationWatsonSuccess: ' IBM Watson blev aktiveret.'
   wwcSignTranslateStart: ' Oversætter målskilt...'
   wwcConfigGUIChatSettings: Chat konfiguration
   wwcConfigGUIWatsonURLButton: Skift URL-adresse til Watson
@@ -236,3 +229,7 @@ Messages:
   wwcWatson117Warning: 'ADVARSEL: Watson vil sandsynligvis ikke fungere korrekt på
     1.17 eller mere specifikt JDK 16 på grund af en fejl i IBM SDK. Dette vil blive
     rettet i en fremtidig opdatering.'
+  wwcConfigConversationTranslatorFail: ' Det lykkedes ikke at aktivere %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Brugeren %jeg aktiveret %o.
+  wwcConfigConversationTranslatorSuccess: ' Aktiveret %i.'
+  wwcConfigConversationConsoleTranslatorFail: Brugeren %jeg kunne ikke aktivere %o.

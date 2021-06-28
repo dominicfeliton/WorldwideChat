@@ -6,7 +6,6 @@ Messages:
   wwcrFail: ' WorldWireChat yenidən yüklənə bilmədi.'
   wwcConfigGUIUpdateCheckerButton: Yeniləmələri gecikdirmək üçün yoxlayın
   wwcSignTranslationFail: ' Hədəf işarənizin düzgün tərcüməsini %i -dən əldə edə bilmir.'
-  wwcConfigConversationGoogleTranslateFail: ' Google Translate aktivləşdirə bilmədi.'
   wwcUpdaterFailedGeneric: WorldWieChat yeniləmələrini yoxlamaq mümkün deyil.
   wwcConfigConversationUpdateCheckerInput: Yeniləmə yoxlayıcısı cari gecikməsi %i
     saniyədir. Yeni bir dəyər təyin etmək üçün 10-dan daha böyük bir şey yazın və
@@ -30,7 +29,6 @@ Messages:
   wwctsOffSender: ' Sign tərcümə əlil.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Qlobal söhbət tərcümə
     olunur, ancaq söhbətiniz %i -ə tərcümə olunur.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate uğurla aktivləşdirildi.'
   wwcUpdaterParserFailed: Github-dan yeniləmə məlumatlarını təhlil edə bilmədi.
   wwctAutoTranslateStart: ' İndi bütün söhbətiniz %o dilinə tərcümə edir.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Mövcud gizli açar %i. Amazon
@@ -115,10 +113,7 @@ Messages:
   wwcUpdaterUpToDate: WorldWieChat bu günə qədər!
   wwcConfigConversationAmazonTranslateRegionInput: Hazırkı bölgə %i. Amazon üçün bir
     bölgəni daxil edin və ya geri qayıtmaq üçün 0 yazın.
-  wwcConfigConversationWatsonFail: ' IBM Watson\''u aktivləşdirə bilmədi.'
   wwcNoConsole: ' Bu komanda yalnız bir oyunçu tərəfindən qaça bilər.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Amazon Translate uğurla aktivləşdirildi.'
-  wwcConfigConversationAmazonTranslateFail: ' Amazon Translate imkan bilmədi.'
   wwcInitializationFail: WorldwideChat-ı başlatmaq mümkün olmadı.
   wwcrSuccess: ' WorldWireChat uğurla yenidən yükləndi.'
   wwcPlayerNotFound: ' Oyunçu %tapılmadı.'
@@ -147,7 +142,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Prefiksinizi oxumaq uğursuz oldu. Varsayılan istifadə...
   wwcConfigRateLimitInvalid: Config.yml müəyyən pis dərəcəsi limit. 0 saniyəyə qədər
     öncül...
-  wwcConfigConversationWatsonSuccess: ' IBM Watson\''ı uğurla aktivləşdirdi.'
   wwcSignTranslateStart: ' Hədəf işarəsinin tərcüməsi...'
   wwcConfigGUIChatSettings: Konfiqurasiya söhbət
   wwcConfigGUIWatsonURLButton: Watson Service URL\'sini dəyişdirin
@@ -232,3 +226,7 @@ Messages:
   wwcWatson117Warning: 'XƏBƏRDARLIQ: Watson, çox güman ki, IBM SDK-da bir səhv səbəbiylə
     1.17 və ya daha çox xüsusi olaraq JDK 16-da düzgün işləməyəcəkdir. Bu gələcək
     yeniləmə ilə müəyyən olunacaq.'
+  wwcConfigConversationTranslatorFail: ' %i aktivləşdirə bilmədi.'
+  wwcConfigConversationConsoleTranslatorSuccess: İstifadəçi %o uğurla aktivləşdirdi.
+  wwcConfigConversationTranslatorSuccess: ' Uğurla aktivləşdirilmişdir %i.'
+  wwcConfigConversationConsoleTranslatorFail: İstifadəçi %o aktivləşdirə bilmədi.

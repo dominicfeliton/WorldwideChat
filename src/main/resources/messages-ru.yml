@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Задержка проверки изменений на наличие обновлений
   wwcSignTranslationFail: ' Не удается получить допустимый перевод целевого знака
     из %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Не удалось включить Google Translate.'
   wwcUpdaterFailedGeneric: Не удается проверить наличие обновлений WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Текущая задержка в средстве проверки обновлений
     составляет %i секунд. Введите что-либо больше 10, чтобы установить новое значение,
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Перевод подписи отключен.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Глобальный чат переводится,
     но ваш чат переводится с %i на %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate успешно включен.'
   wwcUpdaterParserFailed: Не удалось разобрать данные обновления из Github.
   wwctAutoTranslateStart: ' Теперь переводите весь ваш чат на %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Текущий секретный ключ- %i.
@@ -117,10 +115,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat в актуальном состоянии!
   wwcConfigConversationAmazonTranslateRegionInput: Текущий регион %i. Введите регион
     для Amazon или введите 0, чтобы вернуться назад.
-  wwcConfigConversationWatsonFail: ' Не удалось включить IBM Watson.'
   wwcNoConsole: ' Эта команда может быть запущена только игроком.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Amazon Translate успешно включен.'
-  wwcConfigConversationAmazonTranslateFail: ' Не удалось включить Amazon Translate.'
   wwcInitializationFail: Не удалось инициализировать WorldwideChat.
   wwcrSuccess: ' Успешно перезагружен WorldwideChat.'
   wwcPlayerNotFound: ' Игрок %Я не найден.'
@@ -151,7 +146,6 @@ Messages:
     по умолчанию...
   wwcConfigRateLimitInvalid: Неверный предел скорости, установленный в config.yml.
     По умолчанию 0 секунд...
-  wwcConfigConversationWatsonSuccess: ' IBM Watson успешно включен.'
   wwcSignTranslateStart: ' Перевод целевого знака...'
   wwcConfigGUIChatSettings: Конфигурация чата
   wwcConfigGUIWatsonURLButton: Изменить URL-адрес службы Watson
@@ -241,3 +235,9 @@ Messages:
   wwcWatson117Warning: ВНИМАНИЕ! Скорее всего, Watson не сможет нормально работать
     в версии 1.17 или, точнее, JDK 16 из-за ошибки в IBM SDK. Это будет исправлено
     в следующем обновлении.
+  wwcConfigConversationTranslatorFail: ' Не удалось включить %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Пользователь %я успешно включить
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' Успешно включено %i.'
+  wwcConfigConversationConsoleTranslatorFail: Пользователю %Мне не удалось включить
+    %o.

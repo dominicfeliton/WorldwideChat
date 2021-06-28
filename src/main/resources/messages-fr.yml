@@ -8,7 +8,6 @@ Messages:
     mises
   wwcSignTranslationFail: ' Impossible d\''obtenir une traduction valide de votre
     signe cible de %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Échec de l\''activation de Google Translate.'
   wwcUpdaterFailedGeneric: Impossible de vérifier les mises à jour WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Le délai actuel sur le vérificateur de
     mise à jour est %i secondes. Tapez toute chose supérieure à 10 pour définir une
@@ -32,7 +31,6 @@ Messages:
   wwctsOffSender: ' Traduction de signe désactivée.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Le chat global est traduit,
     mais votre chat est traduit de %i à %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate activé avec succès.'
   wwcUpdaterParserFailed: Échec de l\'analyse des données de mise à jour de Github.
   wwctAutoTranslateStart: ' Maintenant, traduisez tout votre chat dans %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: La clé secrète actuelle est
@@ -123,10 +121,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat est à jour!
   wwcConfigConversationAmazonTranslateRegionInput: La région actuelle est %i. Entrez
     une région pour Amazon ou tapez 0 pour revenir en arrière.
-  wwcConfigConversationWatsonFail: ' Impossible d\''activer IBM Watson.'
   wwcNoConsole: ' Cette commande ne peut être exécutée que par un joueur.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Activé avec succès Amazon Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Échec de l\''activation d\''Amazon Translate.'
   wwcInitializationFail: Échec de l\'initialisation de WorldwideChat.
   wwcrSuccess: ' Rechargé avec succès WorldwideChat.'
   wwcPlayerNotFound: ' Joueur %i introuvable.'
@@ -158,7 +153,6 @@ Messages:
     de la valeur par défaut...
   wwcConfigRateLimitInvalid: Mauvaise limite de taux définie dans config.yml. Par
     défaut à 0 secondes...
-  wwcConfigConversationWatsonSuccess: ' Activé avec succès IBM Watson.'
   wwcSignTranslateStart: ' Traduction du signe cible...'
   wwcConfigGUIChatSettings: Configuration du chat
   wwcConfigGUIWatsonURLButton: Modifier l\'URL du service Watson
@@ -250,3 +244,9 @@ Messages:
   wwcWatson117Warning: 'AVERTISSEMENT: Watson ne fonctionnera probablement pas correctement
     sur la version 1.17, ou plus particulièrement JDK 16 en raison d\''un bogue dans
     le SDK IBM. Ce problème sera corrigé dans une future mise à jour.'
+  wwcConfigConversationTranslatorFail: ' Impossible d\''activer %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: L\'utilisateur %i a correctement
+    activé %o.
+  wwcConfigConversationTranslatorSuccess: ' L\''activation réussie de %i.'
+  wwcConfigConversationConsoleTranslatorFail: L\'utilisateur %i n\'a pas réussi à
+    activer %o.

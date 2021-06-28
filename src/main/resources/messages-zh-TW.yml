@@ -5,7 +5,6 @@ Messages:
   wwcrFail: ' 無法重新載入「全球聊天」。'
   wwcConfigGUIUpdateCheckerButton: 變更檢查更新延遲
   wwcSignTranslationFail: ' 無法從 %i 取得目標符號的有效轉譯。'
-  wwcConfigConversationGoogleTranslateFail: ' 無法啟用 Google 翻譯。'
   wwcUpdaterFailedGeneric: 無法檢查全球聊天的更新。
   wwcConfigConversationUpdateCheckerInput: 更新檢查程式的目前延遲為 %i 秒。輸入大於 10 的任何內容以設置一個新值，或者任何小於
     10 的東西返回。
@@ -26,7 +25,6 @@ Messages:
   wwctsOffSender: ' 已停用簽署轉譯。'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' 全球聊天正在翻譯，但您的聊天將從 %i
     翻譯成 %o。'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google 翻譯成功啟用。'
   wwcUpdaterParserFailed: 無法從 Github 剖析更新資料。
   wwctAutoTranslateStart: ' 現在將您所有的聊天翻譯為 %o。'
   wwcConfigConversationAmazonTranslateSecretKeyInput: 目前的秘密金鑰是 %i。請輸入 Amazon 的秘密金鑰，或輸入
@@ -97,10 +95,7 @@ Messages:
   wwcUpdaterUpToDate: 全球聊天是最新的！
   wwcConfigConversationAmazonTranslateRegionInput: 目前的區域是 %i。請輸入 Amazon 的區域，或輸入 0
     返回。
-  wwcConfigConversationWatsonFail: ' 無法啟用 IBM 華生。'
   wwcNoConsole: ' 此指令只能由玩家執行。'
-  wwcConfigConversationAmazonTranslateSuccess: ' 成功啟用亞馬遜翻譯。'
-  wwcConfigConversationAmazonTranslateFail: ' 無法啟用亞馬遜翻譯。'
   wwcInitializationFail: 無法初始化「全球聊天」。
   wwcrSuccess: ' 已成功重新載入「全球聊天」。'
   wwcPlayerNotFound: ' 玩家 % 我找不到。'
@@ -126,7 +121,6 @@ Messages:
   wwcSignDone: ' 簽署翻譯成功。'
   wwcConfigInvalidPrefixSettings: 無法讀取您的前置字元。使用預設值...
   wwcConfigRateLimitInvalid: 在配置.yml 中設置錯誤率限制。預設為 0 秒...
-  wwcConfigConversationWatsonSuccess: ' 成功啟用 IBM 華生。'
   wwcSignTranslateStart: ' 正在翻譯目標符號...'
   wwcConfigGUIChatSettings: 聊天設定
   wwcConfigGUIWatsonURLButton: 變更屈臣氏服務 URL
@@ -188,3 +182,7 @@ Messages:
   wwcInventoryErrorPlayer: ' 使用您的 GUI 偵測到錯誤。記錄檔已傳送至主控台。'
   wwcInventoryError: 使用者 %i 的 GUI 偵測到錯誤。請向開發人員回報此問題。
   wwcWatson117Warning: 警告：由於 IBM SDK 中的錯誤，Watson 很可能無法在 1.17 上正常運行，或更具體地說是 JDK 16。這將在未來的更新中修復。
+  wwcConfigConversationTranslatorFail: ' 無法啟用 %i。'
+  wwcConfigConversationConsoleTranslatorSuccess: 使用者 %i 成功啟用 %o。
+  wwcConfigConversationTranslatorSuccess: ' 已成功啟用 %i。'
+  wwcConfigConversationConsoleTranslatorFail: 使用者 %i 無法啟用 %o。

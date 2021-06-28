@@ -7,8 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: അപ്ഡേറ്റുകൾ കാലതാമസം പരിശോധിക്കുക മാറ്റുക
   wwcSignTranslationFail: ' %i ൽ നിന്ന് നിങ്ങളുടെ ടാർഗെറ്റ് ചിഹ്നത്തിന്റെ സാധുവായ
     വിവർത്തനം ലഭിക്കാനായില്ല.'
-  wwcConfigConversationGoogleTranslateFail: ' Google വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കുന്നതിൽ
-    പരാജയപ്പെട്ടു.'
   wwcUpdaterFailedGeneric: ഛത് അപ്ഡേറ്റുകൾ പരിശോധിക്കാൻ കഴിയുന്നില്ല.
   wwcConfigConversationUpdateCheckerInput: അപ്ഡേറ്റ് ചെക്കറിലെ നിലവിലെ കാലതാമസം %i
     സെക്കൻഡ് ആണ്. ഒരു പുതിയ മൂല്യം സജ്ജമാക്കാൻ 10 ൽ കൂടുതൽ ഒന്നും ടൈപ്പുചെയ്യുക, അല്ലെങ്കിൽ
@@ -32,7 +30,6 @@ Messages:
   wwctsOffSender: ' സൈൻ വിവർത്തനം അപ്രാപ്തമാക്കി.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' ആഗോള ചാറ്റ് വിവർത്തനം
     ചെയ്യപ്പെടുന്നു, പക്ഷേ നിങ്ങളുടെ ചാറ്റിൽ %i മുതൽ %o ലേക്ക് വിവർത്തനം ചെയ്യപ്പെടുന്നു.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google വിവർത്തനം വിജയകരമായി പ്രവർത്തനക്ഷമമാക്കി.'
   wwcUpdaterParserFailed: സാമൂഹികം നിന്ന് അപ്ഡേറ്റ് ഡാറ്റ പാഴ്സ് പരാജയപ്പെട്ടു.
   wwctAutoTranslateStart: ' ഇപ്പോൾ നിങ്ങളുടെ ചാറ്റിന്റെ %o ലേക്ക് വിവർത്തനം ചെയ്യുന്നു.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: നിലവിലെ രഹസ്യ കീ %i ആണ് ആമസോണിനായി
@@ -120,11 +117,7 @@ Messages:
   wwcUpdaterUpToDate: ചാറ്റ് കാലികമാണ്!
   wwcConfigConversationAmazonTranslateRegionInput: നിലവിലെ പ്രദേശം %i ആണ് ആമസോണിനായി
     ഒരു പ്രദേശം ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
-  wwcConfigConversationWatsonFail: ' ഐബിഎം വാട്സൺ പ്രാപ്തമാക്കുന്നതിൽ പരാജയപ്പെട്ടു.'
   wwcNoConsole: ' ഈ കമാൻഡ് ഒരു കളിക്കാരന് മാത്രമേ പ്രവർത്തിപ്പിക്കാനാകൂ.'
-  wwcConfigConversationAmazonTranslateSuccess: ' ആമസോൺ വിവർത്തനം വിജയകരമായി പ്രാപ്തമാക്കി.'
-  wwcConfigConversationAmazonTranslateFail: ' ആമസോൺ വിവർത്തനം പ്രാപ്തമാക്കുന്നതിൽ
-    പരാജയപ്പെട്ടു.'
   wwcInitializationFail: ഛത് ആരംഭിക്കുന്നതിന് പരാജയപ്പെട്ടു.
   wwcrSuccess: ' വിജയകരമായി റീലോഡ് ഛത്.'
   wwcPlayerNotFound: ' കളിക്കാരന് % ഞാൻ കണ്ടെത്തിയില്ല.'
@@ -156,7 +149,6 @@ Messages:
     ഉപയോഗിക്കുന്നു...
   wwcConfigRateLimitInvalid: മോശം നിരക്ക് പരിധി ചൊന്ഫിഗ്. യ്മ്ല് വെച്ചു. 0 സെക്കൻഡ്
     വരെ സ്ഥിരസ്ഥിതിയായി...
-  wwcConfigConversationWatsonSuccess: ' ഐബിഎം വാട്സൺ വിജയകരമായി പ്രാപ്തമാക്കി.'
   wwcSignTranslateStart: ' ടാർഗെറ്റ് ചിഹ്നം വിവർത്തനം ചെയ്യുന്നു...'
   wwcConfigGUIChatSettings: ചാറ്റ് കോൺഫിഗറേഷൻ
   wwcConfigGUIWatsonURLButton: വാട്സൺ സേവന URL മാറ്റുക
@@ -243,3 +235,8 @@ Messages:
   wwcWatson117Warning: 'മുന്നറിയിപ്പ്: ഐബിഎം SDK ലെ ഒരു ബഗ് കാരണം വാട്സൺ 1.17, അല്ലെങ്കിൽ
     കൂടുതൽ വ്യക്തമായി JDK 16 ൽ ശരിയായി പ്രവർത്തിക്കുന്നതിൽ പരാജയപ്പെടും. ഭാവിയിലെ
     അപ്ഡേറ്റിൽ ഇത് പരിഹരിക്കപ്പെടും.'
+  wwcConfigConversationTranslatorFail: ' %i പ്രവർത്തനക്ഷമമാക്കുന്നതിൽ പരാജയപ്പെട്ടു.'
+  wwcConfigConversationConsoleTranslatorSuccess: ഉപയോക്താവ് % ഞാന് %o വിജയകരമായി പ്രാപ്തമാക്കി.
+  wwcConfigConversationTranslatorSuccess: ' വിജയകരമായി പ്രാപ്തമാക്കുക %i.'
+  wwcConfigConversationConsoleTranslatorFail: ഉപയോക്താവ് %o പ്രവർത്തനക്ഷമമാക്കുന്നതിൽ
+    ഞാൻ പരാജയപ്പെട്ടു.

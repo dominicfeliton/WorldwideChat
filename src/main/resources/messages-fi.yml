@@ -8,8 +8,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Päivitysten tarkistamisen viive
   wwcSignTranslationFail: ' Kohdemerkistä ei voi saada kelvollista käännettyä kohteesta
     %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Google Translaten ottaminen käyttöön
-    epäonnistui.'
   wwcUpdaterFailedGeneric: WorldwideChat-päivityksiä ei voi tarkistaa.
   wwcConfigConversationUpdateCheckerInput: Päivityksen tarkistuksen nykyinen viive
     on %i sekuntia. Kirjoita mitä tahansa suurempi kuin 10, jos haluat asettaa uuden
@@ -33,8 +31,6 @@ Messages:
   wwctsOffSender: ' Allekirjoita käännös käytöstä'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Maailmanlaajuista keskustelua
     käännetään, mutta keskusteluasi käännetään osoitteesta %i kohteeseen %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate on otettu käyttöön
-    onnistuneesti.'
   wwcUpdaterParserFailed: Päivitystietojen jäsentäminen Githubista epäonnistui.
   wwctAutoTranslateStart: ' Käännä nyt kaikki keskustelusi kohteeseen %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Nykyinen salainen avain on %i.
@@ -120,11 +116,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat on ajan tasalla!
   wwcConfigConversationAmazonTranslateRegionInput: Nykyinen alue on %i. Kirjoita alue
     Amazonille tai kirjoita 0 palaaksesi takaisin.
-  wwcConfigConversationWatsonFail: ' IBM Watsonin ottaminen käyttöön epäonnistui.'
   wwcNoConsole: ' Tätä komentoa voi suorittaa vain pelaaja.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Onnistuneesti käytössä Amazon Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Amazon Translate -toiminnon ottaminen
-    käyttöön epäonnistui.'
   wwcInitializationFail: WorldwideChatin alustus epäonnistui.
   wwcrSuccess: ' WorldwideChat ladattu onnistuneesti uudelleen.'
   wwcPlayerNotFound: ' Pelaaja %en löytänyt.'
@@ -153,7 +145,6 @@ Messages:
   wwcSignDone: ' Sign käännetty onnistuneesti.'
   wwcConfigInvalidPrefixSettings: Etuliitteen lukeminen epäonnistui. Käyttämällä oletusarvoa...
   wwcConfigRateLimitInvalid: Huono nopeus raja asetettu config.yml. Defaulting 0 sekuntia...
-  wwcConfigConversationWatsonSuccess: ' Onnistuneesti käytössä IBM Watson.'
   wwcSignTranslateStart: ' Käännetään kohdemerkki...'
   wwcConfigGUIChatSettings: Chat-määritykset
   wwcConfigGUIWatsonURLButton: Watson-palvelun URL-osoitteen muuttaminen
@@ -240,3 +231,8 @@ Messages:
   wwcWatson117Warning: 'VAROITUS: Watson ei todennäköisesti toimi oikein 1.17: ssä
     tai tarkemmin JDK 16: ssä IBM SDK: n virheen vuoksi. Tämä korjataan tulevassa
     päivityksessä.'
+  wwcConfigConversationTranslatorFail: ' %i: n ottaminen käytöstä epäonnistui.'
+  wwcConfigConversationConsoleTranslatorSuccess: Käyttäjä %i onnistuneesti otettiin
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' Onnistuneesti otettu %i.'
+  wwcConfigConversationConsoleTranslatorFail: Käyttäjä %i epäonnistui ota %o.

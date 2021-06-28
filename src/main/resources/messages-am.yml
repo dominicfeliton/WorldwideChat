@@ -5,7 +5,6 @@ Messages:
   wwcrFail: ' WorldWidechat ን ዳግም መጫን አልተሳካም።'
   wwcConfigGUIUpdateCheckerButton: የዝማኔ መዘግየት ቼክ ይቀይሩ
   wwcSignTranslationFail: ' የዒላማ ምልክትዎን ትክክለኛ ትርጉም ማግኘት አልተቻለም ከ %i።'
-  wwcConfigConversationGoogleTranslateFail: ' Google ተርጉምን ማንቃት አልተቻለም።'
   wwcUpdaterFailedGeneric: የዓለም WideChat ዝማኔዎችን ማረጋገጥ አልተቻለም።
   wwcConfigConversationUpdateCheckerInput: የዝማኔ ቼከር ላይ ያለው የአሁኑ መዘግየት %i ሰከንዶች ነው።
     አዲስ እሴት ለማዘጋጀት ከ 10 በላይ የሆነ ነገር ይተይቡ, ወይም ከ 10 ያነሰ ማንኛውም ነገር ወደ ኋላ ለመመለስ።
@@ -27,7 +26,6 @@ Messages:
   wwctsOffSender: ' የትርጉም ምልክት ተሰናክሏል።'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' ዓለም አቀፍ ውይይት እየተተረጎመ
     ነው, ነገር ግን የእርስዎ ውይይት ከ %i ወደ %o እየተተረጎመ ነው።'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google ተርጉም በተሳካ ሁኔታ ነቅቷል።'
   wwcUpdaterParserFailed: የዘመነ ውሂብ ከ Github መተንተን አልተሳካም።
   wwctAutoTranslateStart: ' አሁን ሁሉንም የውይይትዎን መተርጎም ወደ %o።'
   wwcConfigConversationAmazonTranslateSecretKeyInput: የአሁኑ ሚስጥራዊ ቁልፍ ነው %i. እባክዎን
@@ -104,10 +102,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat ወቅታዊ ነው!
   wwcConfigConversationAmazonTranslateRegionInput: አሁን ያለው ክልል %i ነው። እባክዎን አንድ ክልል
     ለ አማዞን ግቤት፣ ወይም ተይብ 0 ወደ ኋላ ለመመለስ።
-  wwcConfigConversationWatsonFail: ' IBM ዋትሰን ማንቃት አልተሳካም።'
   wwcNoConsole: ' ይህ ትዕዛዝ በአንድ ተጫዋች ብቻ ሊሮጥ ይችላል።'
-  wwcConfigConversationAmazonTranslateSuccess: ' በተሳካ ሁኔታ አማዞን ተርጉም ነቅቷል።'
-  wwcConfigConversationAmazonTranslateFail: ' አማዞን ተርጉምን ማንቃት አልተሳካም።'
   wwcInitializationFail: WorldwideChat ማስጀመር አልተሳካም።
   wwcrSuccess: ' በተሳካ ሁኔታ WorldwideChat ዳግም ተጭኗል።'
   wwcPlayerNotFound: ' ተጫዋች %እኔ አልተገኘም።'
@@ -135,7 +130,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: የእርስዎን ቅድመ ቅጥያ ማንበብ አልተሳካም። ነባሪውን በመጠቀም...
   wwcConfigRateLimitInvalid: የተመጣጠነ መጠን ገደብ config.yml ውስጥ ተዘጋጅቷል። ወደ 0 ሰከንዶች ነባር
     በመሆን ላይ...
-  wwcConfigConversationWatsonSuccess: ' በተሳካ ሁኔታ IBM ዋትሰን ነቅቷል።'
   wwcSignTranslateStart: ' የዒላማ ምልክትን በመተርጎም...'
   wwcConfigGUIChatSettings: የውይይት ውቅር
   wwcConfigGUIWatsonURLButton: ዋትሰን አገልግሎት ዩአርኤል ይቀይሩ
@@ -209,3 +203,7 @@ Messages:
   wwcInventoryError: በተጠቃሚ %i GUI ላይ ስህተት ተገኝቷል። እባክዎ ይህን ችግር ለገንቢው ሪፖርት ያድርጉ።
   wwcWatson117Warning: 'ማስጠንቀቂያ: ዋትሰን እድላቸው በአግባቡ ላይ እንዲሰራ አይሳካም 1.17, ወይም ከዚያ በላይ
     በተለይ JDK 16 ምክንያት IBM SDK ውስጥ አንድ ሳንካ ወደ። ይህ ወደፊት ዝማኔ ላይ ተስተካክሏል።'
+  wwcConfigConversationTranslatorFail: ' ማንቃቱ አልተቻለም %i።'
+  wwcConfigConversationConsoleTranslatorSuccess: ተጠቃሚ %o በተሳካ ሁኔታ ማንቃት %o።
+  wwcConfigConversationTranslatorSuccess: ' በተሳካ ሁኔታ ማንቃት %i።'
+  wwcConfigConversationConsoleTranslatorFail: ተጠቃሚ %o ን ማንቃቴ አልቻልኩም %o።

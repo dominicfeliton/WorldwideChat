@@ -5,7 +5,6 @@ Messages:
   wwcrFail: ' WorldwideChat のリロードに失敗しました。'
   wwcConfigGUIUpdateCheckerButton: 更新のチェックの変更の遅延
   wwcSignTranslationFail: ' %i からターゲット記号の有効な翻訳を取得できません。'
-  wwcConfigConversationGoogleTranslateFail: ' Google 翻訳を有効にできませんでした。'
   wwcUpdaterFailedGeneric: WorldwideChat の更新をチェックできません。
   wwcConfigConversationUpdateCheckerInput: 更新チェッカーの現在の遅延は %i 秒です。10 より大きい値を入力して新しい値を設定するか、10
     より小さい値を入力して戻ります。
@@ -26,7 +25,6 @@ Messages:
   wwctsOffSender: ' 署名翻訳が無効になりました。'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' グローバルチャットは翻訳されていますが、チャットは
     %i から %o に翻訳されています。'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google翻訳が正常に有効になりました。'
   wwcUpdaterParserFailed: GitHub からの更新データの解析に失敗しました。
   wwctAutoTranslateStart: ' これで、すべてのチャットを %oに翻訳します。'
   wwcConfigConversationAmazonTranslateSecretKeyInput: 現在の秘密鍵は %iです。Amazonの秘密鍵を入力するか、0を入力して戻ってください。
@@ -98,10 +96,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat は最新です！
   wwcConfigConversationAmazonTranslateRegionInput: 現在のリージョンは %i です。Amazon のリージョンを入力するか、0
     を入力して戻ってください。
-  wwcConfigConversationWatsonFail: ' IBM ワトソンを有効にできませんでした。'
   wwcNoConsole: ' このコマンドは、プレイヤーのみが実行できます。'
-  wwcConfigConversationAmazonTranslateSuccess: ' Amazon翻訳が正常に有効になりました。'
-  wwcConfigConversationAmazonTranslateFail: ' Amazon翻訳を有効にできませんでした。'
   wwcInitializationFail: WorldwideChat の初期化に失敗しました。
   wwcrSuccess: ' WorldwideChat を正常にリロードしました。'
   wwcPlayerNotFound: ' プレイヤー %i が見つかりません。'
@@ -127,7 +122,6 @@ Messages:
   wwcSignDone: ' 署名が正常に変換されました。'
   wwcConfigInvalidPrefixSettings: プレフィックスを読み込めませんでした。デフォルトの使用...
   wwcConfigRateLimitInvalid: config.yml に設定されているレート制限が正しくありません。デフォルトは0秒です...
-  wwcConfigConversationWatsonSuccess: ' IBM ワトソンが正常に有効になりました。'
   wwcSignTranslateStart: ' ターゲット記号を翻訳しています...'
   wwcConfigGUIChatSettings: チャットの設定
   wwcConfigGUIWatsonURLButton: ワトソンサービスの URL の変更
@@ -189,3 +183,7 @@ Messages:
   wwcInventoryErrorPlayer: ' GUI でエラーが検出されました。ログがコンソールに送信されました。'
   wwcInventoryError: ユーザー %i の GUI でエラーが検出されました。この問題を開発者に報告してください。
   wwcWatson117Warning: 警告:Watson は、IBM SDK のバグが原因で 1.17、またはより具体的には JDK 16 で正常に機能しない可能性があります。これは将来のアップデートで修正される予定です。
+  wwcConfigConversationTranslatorFail: ' %i を有効にできませんでした。'
+  wwcConfigConversationConsoleTranslatorSuccess: ユーザー %i は %o を正常に有効化しました。
+  wwcConfigConversationTranslatorSuccess: ' %i を正常に有効化しました。'
+  wwcConfigConversationConsoleTranslatorFail: ユーザー %i は %o を有効にできませんでした。

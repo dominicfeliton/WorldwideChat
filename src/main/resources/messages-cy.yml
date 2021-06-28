@@ -6,7 +6,6 @@ Messages:
   wwcrFail: ' Methwyd ail-lwytho WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Newid Gwirio am Oedi Diweddariadau
   wwcSignTranslationFail: ' Methu cael cyfieithiad dilys o\''ch arwydd targed o %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Methwyd galluogi Google Translate.'
   wwcUpdaterFailedGeneric: Methu gwirio am ddiweddariadau WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Yr oedi presennol ar y gwiriwr diweddaru
     yw %i eiliad. Teipiwch unrhyw beth sy\'n fwy na 10 i osod gwerth newydd, neu unrhyw
@@ -30,7 +29,6 @@ Messages:
   wwctsOffSender: ' Cyfieithu arwyddion wedi\''i analluogi.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Mae sgwrs fyd-eang yn
     cael ei gyfieithu, ond mae eich sgwrs yn cael ei chyfieithu o %i i %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate galluogi yn llwyddiannus.'
   wwcUpdaterParserFailed: Methwyd gramadegu data diweddaru o Github.
   wwctAutoTranslateStart: ' Nawr cyfieithu eich holl sgwrs i %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Yr allwedd gyfrinach ar hyn
@@ -118,10 +116,7 @@ Messages:
   wwcUpdaterUpToDate: Mae WorldwideChat yn gyfredol!
   wwcConfigConversationAmazonTranslateRegionInput: Y rhanbarth presennol yw %i mewnbynnu
     rhanbarth ar gyfer Amazon, neu deipio 0 i fynd yn ôl.
-  wwcConfigConversationWatsonFail: ' Methwyd galluogi IBM Watson.'
   wwcNoConsole: ' Gall y gorchymyn hwn yn unig yn cael ei redeg gan chwaraewr.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Galluogi Cyfieithu Amazon yn llwyddiannus.'
-  wwcConfigConversationAmazonTranslateFail: ' Methu galluogi Amazon Cyfieithu.'
   wwcInitializationFail: Methwyd ymgychwyn WorldwideChat.
   wwcrSuccess: ' Ail-lwytho WorldwideChat yn llwyddiannus.'
   wwcPlayerNotFound: ' Chwaraewr %i ddim dod o hyd.'
@@ -151,7 +146,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Methu darllen eich rhagddodiad. Defnyddio\'r diofyn...
   wwcConfigRateLimitInvalid: Terfyn cyfradd drwg a osodwyd yn config.yml. Defaulting
     i 0 eiliad...
-  wwcConfigConversationWatsonSuccess: ' Galluogodd IBM Watson yn llwyddiannus.'
   wwcSignTranslateStart: ' Cyfieithu arwydd targed...'
   wwcConfigGUIChatSettings: Configuration Sgwrs
   wwcConfigGUIWatsonURLButton: Newid URL Gwasanaeth Watson
@@ -237,3 +231,7 @@ Messages:
   wwcWatson117Warning: 'RHYBUDD: Bydd Watson fwyaf tebygol o fethu â gweithredu\''n
     iawn ar 1.17, neu fwy penodol JDK 16 oherwydd nam yn y SDK IBM. Bydd hyn yn cael
     ei osod mewn diweddariad yn y dyfodol.'
+  wwcConfigConversationTranslatorFail: ' Methwyd galluog %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Defnyddiwr %o wedi galluo %o yn llwyddiannus.
+  wwcConfigConversationTranslatorSuccess: ' Llwyddo galluo %i.'
+  wwcConfigConversationConsoleTranslatorFail: Methais defnyddiwr %o.

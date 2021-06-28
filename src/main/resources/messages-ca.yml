@@ -7,8 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Canviar la comprovació de les actualitzacions Retard
   wwcSignTranslationFail: ' No es pot obtenir una traducció vàlida del signe de destinació
     de %i.'
-  wwcConfigConversationGoogleTranslateFail: ' No s\''ha pogut activar el Traductor
-    de Google.'
   wwcUpdaterFailedGeneric: No es pot comprovar si hi ha actualitzacions WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: El retard actual del corrector d\'actualització
     és %i segons. Escriviu qualsevol cosa més gran que 10 per establir un valor nou,
@@ -32,7 +30,6 @@ Messages:
   wwctsOffSender: ' Traducció de signes desactivada.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' El xat global s\''està
     traduint, però el xat s\''està traduint de %i a %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Traductor de Google activat amb èxit.'
   wwcUpdaterParserFailed: No s\'ha pogut analitzar les dades d\'actualització de Github.
   wwctAutoTranslateStart: ' Ara la traducció de tot el seu xat a %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: La clau secreta actual és %i.
@@ -121,11 +118,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat està al dia!
   wwcConfigConversationAmazonTranslateRegionInput: La regió actual és %i. si us plau,
     introduïu una regió per a Amazon, o escriviu 0 per tornar enrere.
-  wwcConfigConversationWatsonFail: ' No s\''ha pogut habilitar IBM Watson.'
   wwcNoConsole: ' Aquesta ordre només pot ser executada per un jugador.'
-  wwcConfigConversationAmazonTranslateSuccess: ' S\''ha habilitat amb èxit Amazon
-    Traduir.'
-  wwcConfigConversationAmazonTranslateFail: ' No s\''ha pogut activar Amazon Translate.'
   wwcInitializationFail: No s\'ha pogut inicialitzar WorldwideChat.
   wwcrSuccess: ' S\''ha recarregat amb èxit WorldwideChat.'
   wwcPlayerNotFound: ' Jugador %No he trobat.'
@@ -156,7 +149,6 @@ Messages:
     el valor per defecte...
   wwcConfigRateLimitInvalid: Límit de taxa incorrecte establert a config.yml. Per
     defecte a 0 segons...
-  wwcConfigConversationWatsonSuccess: ' Habilitada amb èxit IBM Watson.'
   wwcSignTranslateStart: ' Traduint el signe objectiu...'
   wwcConfigGUIChatSettings: Configuració del xat
   wwcConfigGUIWatsonURLButton: Canviar l\'URL del servei Watson
@@ -247,3 +239,7 @@ Messages:
   wwcWatson117Warning: 'ADVERTÈNCIA: El més probable és que Watson falli correctament
     en 1.17, o més específicament JDK 16 a causa d\''un error en l\''IBM SDK. Això
     es solucionarà en una futura actualització.'
+  wwcConfigConversationTranslatorFail: ' No s\''ha pogut activar %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Usuari %i habilita amb èxit %o.
+  wwcConfigConversationTranslatorSuccess: ' Activa %i amb èxit.'
+  wwcConfigConversationConsoleTranslatorFail: Usuari %No he pogut activar %o.

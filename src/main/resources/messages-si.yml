@@ -7,8 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: යාවත්කාලීන ප්රමාදය සඳහා පිරික්සුම් වෙනස් කරන්න
   wwcSignTranslationFail: ' %i වෙතින් ඔබගේ ඉලක්කගත ලකුණෙහි වලංගු පරිවර්තනයක් ලබා ගත
     නොහැක.'
-  wwcConfigConversationGoogleTranslateFail: ' ගූගල් පරිවර්තනය සක්රීය කිරීමට අසමත්
-    විය.'
   wwcUpdaterFailedGeneric: වර්ල්ඩ්වයිඩ්හාට් යාවත්කාලීන කිරීම් සඳහා පරීක්ෂා කළ නොහැක.
   wwcConfigConversationUpdateCheckerInput: යාවත්කාල කිරීමේ පරීක්ෂකයේ වත්මන් ප්රමාදය
     තත්පර වේ. නව වටිනාකමක් සැකසීමට 10 ට වඩා වැඩි යමක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට
@@ -32,8 +30,6 @@ Messages:
   wwctsOffSender: ' සංඥා පරිවර්තනය අක්රීය.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' ගෝලීය කතාබස් පරිවර්ථනය
     වෙමින් පවතී, නමුත් ඔබගේ කතාබස් පරිවර්ථනය කරනු ලබන්නේ %i වෙත %o වෙතටයි.'
-  wwcConfigConversationGoogleTranslateSuccess: ' ගූගල් පරිවර්තනය සාර්ථකව සක්රීය කර
-    ඇත.'
   wwcUpdaterParserFailed: Github වෙතින් යාවත්කාලීන දත්ත විග්රහ කිරීමට අපොහොසත් විය.
   wwctAutoTranslateStart: ' දැන් ඔබගේ කතාබස් සියල්ලම %o වෙත පරිවර්තනය කරන්න.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: වත්මන් රහස් යතුර %i වේ. කරුණාකර
@@ -120,12 +116,7 @@ Messages:
   wwcUpdaterUpToDate: වර්ල්ඩ්වයිඩ්හාට් යාවත්කාලීනව පවතී!
   wwcConfigConversationAmazonTranslateRegionInput: වත්මන් කලාපය %i වේ. කරුණාකර ඇමේසන්
     සඳහා කලාපයක් ආදානය කරන්න, නැතහොත් නැවත යන්න 0 ටයිප් කරන්න.
-  wwcConfigConversationWatsonFail: ' IBM වොට්සන් සක්රීය කිරීමට අසමත් විය.'
   wwcNoConsole: ' මෙම විධානය ධාවනය කළ හැක්කේ ක්රීඩකයෙකුට පමණි.'
-  wwcConfigConversationAmazonTranslateSuccess: ' ඇමේසන් පරිවර්තනය සාර්ථකව සක්රීය කර
-    ඇත.'
-  wwcConfigConversationAmazonTranslateFail: ' ඇමේසන් පරිවර්තනය සක්රීය කිරීමට අසමත්
-    විය.'
   wwcInitializationFail: වර්ල්ඩ්වයිඩ්හාට් ආරම්භ කිරීමට අසමත් විය.
   wwcrSuccess: ' සාර්ථකව වර්ල්ඩ්වයිඩ්හාට් නැවත පටවා ඇත'
   wwcPlayerNotFound: ' ක්රීඩකයා සොයාගත්තේ නැත.'
@@ -157,7 +148,6 @@ Messages:
     කරමින්...
   wwcConfigRateLimitInvalid: වින්යාස කර ඇති නරක අනුපාත සීමාව. තත්පර 0 ක් දක්වා පැහැර
     හැරීම...
-  wwcConfigConversationWatsonSuccess: ' IBM වොට්සන් සාර්ථකව සක්රීය කර ඇත.'
   wwcSignTranslateStart: ' ඉලක්කගත ලකුණ පරිවර්තනය කිරීම...'
   wwcConfigGUIChatSettings: චැට් වින්යාසය
   wwcConfigGUIWatsonURLButton: වොට්සන් සේවා URL එක වෙනස් කරන්න
@@ -243,3 +233,9 @@ Messages:
   wwcWatson117Warning: 'අවවාදයයි: IBM SDK හි දෝෂයක් හේතුවෙන් වොට්සන් 1.17 හෝ වඩාත්
     විශේෂයෙන් JDK 16 හි නිසි ලෙස ක්රියා කිරීමට අසමත් වනු ඇත. මෙය අනාගත යාවත්කාලීනයක
     දී සවි කරනු ලැබේ.'
+  wwcConfigConversationTranslatorFail: ' %i සක්‍රීය කිරීමට අසමත් විය.'
+  wwcConfigConversationConsoleTranslatorSuccess: '% මම පරිශීලක %o සාර්ථකව සක්‍රීය
+    කරමි.'
+  wwcConfigConversationTranslatorSuccess: ' %i සාර්ථකව සක්‍රීය කරන්න.'
+  wwcConfigConversationConsoleTranslatorFail: '%o සක්‍රීය කිරීමට පරිශීලක % මම අසමත්
+    විය.'

@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Baguhin ang Suriin para sa Mga Update
   wwcSignTranslationFail: ' Hindi makuha ang wastong pagsasalin ng iyong target sign
     mula sa %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Nabigong paganahin ang Google Translate.'
   wwcUpdaterFailedGeneric: Hindi masuri ang mga update sa WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Ang kasalukuyang pagkaantala sa update
     checker ay %i segundo. I-type ang anumang mas malaki kaysa sa 10 upang magtakda
@@ -31,8 +30,6 @@ Messages:
   wwctsOffSender: ' Hindi pinagana ang pagsasalin ng pag-sign.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Ang global chat ay isinalin,
     ngunit ang iyong chat ay isinalin mula sa %i sa %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Matagumpay na pinagana ang Google
-    Translate.'
   wwcUpdaterParserFailed: Nabigong i-parse ang data ng pag-update mula sa Github.
   wwctAutoTranslateStart: ' Ngayon ay isinasalin ang lahat ng iyong chat sa %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Ang kasalukuyang sikretong susi
@@ -125,11 +122,7 @@ Messages:
   wwcUpdaterUpToDate: Ang WorldwideChat ay napapanahon!
   wwcConfigConversationAmazonTranslateRegionInput: Ang kasalukuyang rehiyon ay %i.
     Pakipasok ang isang rehiyon para sa Amazon, o i-type ang 0 upang bumalik.
-  wwcConfigConversationWatsonFail: ' Nabigong paganahin ang IBM Watson.'
   wwcNoConsole: ' Ang utos na ito ay maaari lamang patakbuhin ng isang manlalaro.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Matagumpay na pinagana ang Amazon
-    Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Nabigong paganahin ang Amazon Translate.'
   wwcInitializationFail: Nabigong magpasimula ng WorldwideChat.
   wwcrSuccess: ' Matagumpay na na-reload ang WorldwideChat.'
   wwcPlayerNotFound: ' Ang manlalaro ng %hindi ko natagpuan.'
@@ -163,7 +156,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Nabigong basahin ang iyong prefix. Gamit ang default...
   wwcConfigRateLimitInvalid: Ang limitasyon ng masamang rate ay itinakda sa config.yml.
     Default sa 0 segundo...
-  wwcConfigConversationWatsonSuccess: ' Matagumpay na pinagana ang IBM Watson.'
   wwcSignTranslateStart: ' Pagsasalin ng target sign...'
   wwcConfigGUIChatSettings: Pagsasaayos ng Chat
   wwcConfigGUIWatsonURLButton: Baguhin ang URL ng Serbisyo ng Watson
@@ -255,3 +247,9 @@ Messages:
   wwcWatson117Warning: 'BABALA: Ang Watson ay malamang na mabibigo upang gumana nang
     maayos sa 1.17, o mas partikular na JDK 16 dahil sa isang bug sa IBM SDK. Ito
     ay maayos sa isang pag-update sa hinaharap.'
+  wwcConfigConversationTranslatorFail: ' Nabigong paganahin ang %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Matagumpay na pinagana ng tagagamit
+    ang %o.
+  wwcConfigConversationTranslatorSuccess: ' Matagumpay na pinagana ang %i.'
+  wwcConfigConversationConsoleTranslatorFail: Nabigo ang gumagamit %i na paganahin
+    ang %o.

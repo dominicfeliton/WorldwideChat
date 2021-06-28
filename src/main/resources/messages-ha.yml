@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Canja Duba Duba don Ɗaukaka Dakatarwar
   wwcSignTranslationFail: ' An kasa samun fassara mai inganci na alamar manufarka
     daga %i.'
-  wwcConfigConversationGoogleTranslateFail: ' An kasa taimakawa Google Translate.'
   wwcUpdaterFailedGeneric: Ba a iya duba sabuntawar WorldwideChat ba.
   wwcConfigConversationUpdateCheckerInput: Jinkirin yanzu akan mai duba sabuntawa
     shine %i seconds. Rubuta wani abu mafi girma fiye da 10 don saita sabon darajar,
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' An kashe fassarar hannu.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Ana fassara hirar duniya,
     amma ana fassara hirar ku daga %i zuwa %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate kunna nasara.'
   wwcUpdaterParserFailed: An kasa yin amfani da bayanan sabuntawa daga Github.
   wwctAutoTranslateStart: ' Yanzu fassara duk hirar ku zuwa %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Maɓallin asiri na yanzu shine
@@ -116,10 +114,7 @@ Messages:
   wwcUpdaterUpToDate: WideChat har zuwa yau!
   wwcConfigConversationAmazonTranslateRegionInput: Yankin yanzu shi ne %i. Da fatan
     za a shigar da wani yanki don Amazon, ko rubuta 0 don komawa.
-  wwcConfigConversationWatsonFail: ' An kasa taimakawa IBM Watson.'
   wwcNoConsole: ' Wannan umurnin zai iya gudu ne kawai ta hanyar mai kunnawa.'
-  wwcConfigConversationAmazonTranslateSuccess: ' An samu nasarar yin fassarar Amazon.'
-  wwcConfigConversationAmazonTranslateFail: ' An kasa taimakawa Fassarar Amazon.'
   wwcInitializationFail: An kasa farfadowa da duniya WideChat.
   wwcrSuccess: ' An samu nasarar sake sauke WorldwideChat.'
   wwcPlayerNotFound: ' Mai wasa %Ban samu ba.'
@@ -149,7 +144,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: An kasa karanta prefix naka. Amfani da tsoho...
   wwcConfigRateLimitInvalid: Bad rate iyaka saita a configur.yml. Defaulting zuwa
     0 seconds...
-  wwcConfigConversationWatsonSuccess: ' An samu nasarar damke IBM Watson.'
   wwcSignTranslateStart: ' Fassara alamar manufa...'
   wwcConfigGUIChatSettings: Taɗi sanyi
   wwcConfigGUIWatsonURLButton: Canja URL ɗin Sabis na Watson
@@ -234,3 +228,8 @@ Messages:
   wwcWatson117Warning: 'GARGADI: Watson zai fi dacewa da aiki a kan 1.17, ko fiye
     musamman JDK 16 saboda bug a cikin IBM SDK. Za a gyara wannan a cikin sabuntawa
     na gaba.'
+  wwcConfigConversationTranslatorFail: ' An kasa kunna %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Mai amfani %i ya samu nasarar kunna
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' An samu nasarar kunna %i.'
+  wwcConfigConversationConsoleTranslatorFail: Mai amfani %i ya kasa kunna %o.

@@ -93,7 +93,7 @@ public class ConfigurationGoogleTranslateSettingsGUI implements InventoryProvide
 	
 	public void googleTranslateStatusButton(Player player, InventoryContents contents) {
 		ItemStack translatorStatusButton;
-		if (main.getConfigManager().getMainConfig().getBoolean("Translator.useGoogleTranslate")) {
+		if (main.getTranslatorName().equals("Google Translate")) {
 			translatorStatusButton = new ItemStack(Material.EMERALD_BLOCK);
 		} else {
 			translatorStatusButton = new ItemStack(Material.REDSTONE_BLOCK);
@@ -103,7 +103,7 @@ public class ConfigurationGoogleTranslateSettingsGUI implements InventoryProvide
 		translatorStatusButton.setItemMeta(translatorStatusButtonMeta);
 		contents.set(1, 1, ClickableItem.of(translatorStatusButton, 
 				e -> {
-					    if (!main.getConfigManager().getMainConfig().getBoolean("Translator.useGoogleTranslate")) {
+					    if (!main.getTranslatorName().equals("Google Translate")) {
 					    	TaskChain<?> chain = WorldwideChat.newSharedChain("enableGoogleTranslate");
 					    	chain
 					    	    .sync(() -> {
@@ -119,10 +119,11 @@ public class ConfigurationGoogleTranslateSettingsGUI implements InventoryProvide
 									    main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
 									    final TextComponent successfulChange = Component.text()
 								                .append(main.getPluginPrefix().asComponent())
-								                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationGoogleTranslateSuccess")).color(NamedTextColor.GREEN))
+								                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationTranslatorSuccess").replace("%i", "Google Translate")).color(NamedTextColor.GREEN))
 								                .build();
 								            Audience adventureSender = main.adventure().sender(player);
 								        adventureSender.sendMessage(successfulChange);
+								        main.getLogger().info(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationConsoleTranslatorSuccess").replace("%i", player.getName()).replace("%o", "Google Translate"));
 								        WWCReload rel = new WWCReload(player, null, null, null);
 								        Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
 					                		@Override
@@ -131,13 +132,14 @@ public class ConfigurationGoogleTranslateSettingsGUI implements InventoryProvide
 					                		}
 					                });
 									} catch (Exception bad) {
-										bad.printStackTrace();
 										final TextComponent badResult = Component.text()
 									            .append(main.getPluginPrefix().asComponent())
-									            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationGoogleTranslateFail")).color(NamedTextColor.RED))
+									            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationTranslatorFail").replace("%i", "Google Translate")).color(NamedTextColor.RED))
 									            .build();
 									        Audience adventureSender = main.adventure().sender(player);
 									    adventureSender.sendMessage(badResult);
+									    main.getLogger().severe(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationConsoleTranslatorFail").replace("%i", player.getName()).replace("%o", "Google Translate"));
+									    bad.printStackTrace();
 									}
 					    	    })
 					    	    .sync(() -> {

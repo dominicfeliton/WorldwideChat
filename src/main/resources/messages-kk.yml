@@ -5,7 +5,6 @@ Messages:
   wwcrFail: ' WorldWidechat қайта жүктеу сәтсіз аяқталды.'
   wwcConfigGUIUpdateCheckerButton: Жаңартулардың кешігуін тексеріңіз
   wwcSignTranslationFail: ' Сіздің мақсатты белгіңіздің жарамды аудармасын ала алмайсыз.'
-  wwcConfigConversationGoogleTranslateFail: ' Google аудармасын қосу сәтсіз аяқталды.'
   wwcUpdaterFailedGeneric: WorldWidechat жаңартуларын тексеру мүмкін емес.
   wwcConfigConversationUpdateCheckerInput: Жаңартуды тексергіштегі ағымдағы кідіріс
     %i секунд болып табылады. Жаңа мәнді орнату үшін 10-нан асатын нәрсені немесе
@@ -29,7 +28,6 @@ Messages:
   wwctsOffSender: ' Суретті аударма өшірілген.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Ғаламдық чат аударылып
     жатыр, бірақ сіздің чатыңыз %i үшін %o дейін аударылады.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Аудару сәтті қосылған.'
   wwcUpdaterParserFailed: Github бағдарламасынан жаңарту деректерін парс сәтсіз аяқталды.
   wwctAutoTranslateStart: ' Енді чаттың барлығын аударыңыз %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Ағымдағы құпия кілт %i болып
@@ -114,10 +112,7 @@ Messages:
   wwcUpdaterUpToDate: WorldWidechat бүгінгі күнге дейін!
   wwcConfigConversationAmazonTranslateRegionInput: Ағымдағы аймақ %i болып табылады,
     Amazon үшін аймақты енгізіңіз немесе кері оралу үшін 0 теріңіз.
-  wwcConfigConversationWatsonFail: ' IBM Watson қосу сәтсіз аяқталды.'
   wwcNoConsole: ' Бұл пәрменді тек ойыншы ғана іске қосуға болады.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Табысты Amazon Аудару қосылған.'
-  wwcConfigConversationAmazonTranslateFail: ' Amazon Аудару қосу алмады.'
   wwcInitializationFail: WorldWidechat баптандыру сәтсіз аяқталды.
   wwcrSuccess: ' Табысты WorldWidechat қайта жүктелді.'
   wwcPlayerNotFound: ' Ойыншы %i табылған жоқ.'
@@ -145,7 +140,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Сіздің префиксіңізді оқи алмады. Әдепкі пайдалану...
   wwcConfigRateLimitInvalid: config.yml орнатылған Bad жылдамдығы шегі. 0 секундқа
     дефолт...
-  wwcConfigConversationWatsonSuccess: ' IBM Watson сәтті қосылған.'
   wwcSignTranslateStart: ' Мақсатты белгіні аудару...'
   wwcConfigGUIChatSettings: Чат конфигурациясы
   wwcConfigGUIWatsonURLButton: Watson қызмет URL мекенжайын өзгерту
@@ -227,3 +221,7 @@ Messages:
     әзірлеушіге хабарлаңыз.'
   wwcWatson117Warning: 'ЕСКЕРТУ: Уотсон IBM SDK-дегі қатеге байланысты 1.17-те немесе
     JDK 16-да дұрыс жұмыс істемеуі мүмкін. Бұл болашақ жаңартуда бекітіледі.'
+  wwcConfigConversationTranslatorFail: ' %i қосу сәтсіз аяқталды.'
+  wwcConfigConversationConsoleTranslatorSuccess: Пайдаланушы %o сәтті қостым.
+  wwcConfigConversationTranslatorSuccess: ' Табысты түрде %i қосу.'
+  wwcConfigConversationConsoleTranslatorFail: Пайдаланушы %o қосу сәтсіз аяқталды.

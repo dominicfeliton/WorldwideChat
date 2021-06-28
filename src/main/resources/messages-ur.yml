@@ -6,7 +6,6 @@ Messages:
   wwcrFail: ' WorldwideChat دوبارہ لوڈ کرنے میں ناکام رہی۔'
   wwcConfigGUIUpdateCheckerButton: اپ ڈیٹس کی تاخیر کے لئے چیک کریں
   wwcSignTranslationFail: ' %i سے آپ کے ہدف کے نشان کا درست ترجمہ حاصل کرنے میں ناکام'
-  wwcConfigConversationGoogleTranslateFail: ' Google ترجمہ کو فعال کرنے میں ناکام.'
   wwcUpdaterFailedGeneric: WorldwideChat اپ ڈیٹس کی جانچ پڑتال سے قاصر
   wwcConfigConversationUpdateCheckerInput: اپ ڈیٹ چیکر پر موجودہ تاخیر %i سیکنڈ ہے.
     ایک نئی قیمت مقرر کرنے کے لئے 10 سے زیادہ کچھ بھی ٹائپ کریں، یا واپس جانے کے لئے
@@ -30,7 +29,6 @@ Messages:
   wwctsOffSender: ' معذور سائن ترجمہ.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' گلوبل چیٹ کا ترجمہ کیا
     جا رہا ہے، لیکن آپ کی بات کا ترجمہ %i سے %o تک کیا جا رہا ہے۔'
-  wwcConfigConversationGoogleTranslateSuccess: ' گوگل ترجمہ کامیابی سے فعال.'
   wwcUpdaterParserFailed: Github سے اپ ڈیٹ ڈیٹا کا تجزیہ کرنے میں ناکام.
   wwctAutoTranslateStart: ' اب آپ کی تمام چیٹ کو %o میں ترجمہ کرنا۔'
   wwcConfigConversationAmazonTranslateSecretKeyInput: موجودہ خفیہ کلید %i ہے، برائے
@@ -115,10 +113,7 @@ Messages:
   wwcUpdaterUpToDate: ورلڈ وائڈ شاٹ اپ ڈیٹ ہے!
   wwcConfigConversationAmazonTranslateRegionInput: موجودہ علاقہ %i ہے، برائے مہربانی
     ایمیزون کے لیے ایک علاقہ ان پٹ کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
-  wwcConfigConversationWatsonFail: ' آئی بی ایم واٹسن کو فعال کرنے میں ناکام رہا۔'
   wwcNoConsole: ' یہ کمانڈ صرف ایک کھلاڑی کی طرف سے چلایا جا سکتا ہے.'
-  wwcConfigConversationAmazonTranslateSuccess: ' کامیابی سے ایمیزون ترجمہ فعال.'
-  wwcConfigConversationAmazonTranslateFail: ' ایمیزون ترجمہ فعال کرنے میں ناکام.'
   wwcInitializationFail: WorldwideChat کو شروع کرنے میں ناکام رہی۔
   wwcrSuccess: ' WorldwideChat کو کامیابی سے دوبارہ لوڈ کیا گیا۔'
   wwcPlayerNotFound: ' کھلاڑی میں %مجھے نہیں ملا'
@@ -147,7 +142,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: آپ کا سابقہ پڑھنے میں ناکام رہا۔ ڈیفالٹ استعمال
     کرتے ہوئے...
   wwcConfigRateLimitInvalid: خراب شرح کی حد config.yml میں مقرر. 0 سیکنڈ پر ڈیفالٹنگ...
-  wwcConfigConversationWatsonSuccess: ' آئی بی ایم واٹسن کو کامیابی سے فعال کیا۔'
   wwcSignTranslateStart: ' ہدف کی علامت کا ترجمہ...'
   wwcConfigGUIChatSettings: چیٹ ترتیب
   wwcConfigGUIWatsonURLButton: واٹسن سروس یو آر ایل تبدیل کریں
@@ -230,3 +224,8 @@ Messages:
   wwcWatson117Warning: 'انتباہ: IBM SDK میں ایک بگ کی وجہ سے واٹسن 1.17، یا اس سے
     زیادہ خاص طور پر JDK 16 پر مناسب طریقے سے کام کرنے میں ناکام ہو جائے گا. یہ مستقبل
     میں اپ ڈیٹ میں طے کیا جائے گا.'
+  wwcConfigConversationTranslatorFail: ' %i کو چالو کرنے میں ناکام رہا۔'
+  wwcConfigConversationConsoleTranslatorSuccess: صارف میں %o کو کامیابی کے ساتھ قابل
+    بنایا۔
+  wwcConfigConversationTranslatorSuccess: ' کامیابی کے قابل ہے %i.'
+  wwcConfigConversationConsoleTranslatorFail: صارف میں %o کو چالو کرنے میں ناکام رہا۔

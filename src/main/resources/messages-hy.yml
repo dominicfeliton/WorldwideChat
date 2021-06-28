@@ -7,8 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Փոփոխություն Ստուգել թարմացումները
   wwcSignTranslationFail: ' Անհնար է ստանալ ձեր թիրախային նշանի վավեր թարգմանություն
     %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Չհաջողվեց հնարավորություն տալ Google
-    Translate.'
   wwcUpdaterFailedGeneric: Հնարավոր չէ ստուգել WorldwideChat թարմացումները.
   wwcConfigConversationUpdateCheckerInput: 'Թարմացման ստուգիչի ընթացիկ ուշացումը %i
     վայրկյան է: Մուտքագրեք ավելի մեծ բան, քան 10- ը նոր արժեք սահմանելու համար, կամ
@@ -32,8 +30,6 @@ Messages:
   wwctsOffSender: ' Sign թարգմանությունը հաշմանդամ.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Գլոբալ զրույցը թարգմանվում
     է, բայց ձեր զրուցարանում թարգմանվում է %i to %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Թարգմանել հնարավորություն
-    հաջողությամբ.'
   wwcUpdaterParserFailed: 'Չհաջողվեց վերլուծել տվյալների թարմացման Github- ից:'
   wwctAutoTranslateStart: ' Այժմ թարգմանելով ձեր բոլոր զրուցարանում է %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: 'Ընթացիկ գաղտնի բանալին է %i:
@@ -121,11 +117,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat է մինչեւ օրս!
   wwcConfigConversationAmazonTranslateRegionInput: 'Ընթացիկ տարածաշրջանը է %i: Խնդրում
     ենք մուտքագրել տարածաշրջան Amazon- ի համար կամ մուտքագրեք 0 ետ վերադառնալու համար:'
-  wwcConfigConversationWatsonFail: ' Չհաջողվեց հնարավորություն տալ IBM Watson.'
   wwcNoConsole: ' Այս հրամանը կարող է միայն վազում է խաղացողի.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Հաջողությամբ միացված Amazon թարգմանել.'
-  wwcConfigConversationAmazonTranslateFail: ' Չհաջողվեց հնարավորություն տալ Amazon
-    Թարգմանել.'
   wwcInitializationFail: Չհաջողվեց նախապատրաստել WorldwideChat.
   wwcrSuccess: ' Հաջողությամբ վերբեռնել WorldwideChat'
   wwcPlayerNotFound: ' Խաղացող %Ես չեմ գտել:'
@@ -154,7 +146,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Չհաջողվեց կարդալ ձեր նախածանցը. Օգտագործելով լռելյայն...
   wwcConfigRateLimitInvalid: Վատ տոկոսադրույքը սահմանաչափը սահմանված է config.yml.
     Նախնականը 0 վայրկյան...
-  wwcConfigConversationWatsonSuccess: ' Հաջողությամբ միացված IBM Watson.'
   wwcSignTranslateStart: ' Թարգմանելով թիրախային նշանը...'
   wwcConfigGUIChatSettings: Զրուցարան կոնֆիգուրացիա
   wwcConfigGUIWatsonURLButton: Փոխել Watson ծառայության URL- ը
@@ -242,3 +233,7 @@ Messages:
   wwcWatson117Warning: 'Ուշադրություն դարձրեք: Watson, ամենայն հավանականությամբ, չի
     հաջողվի պատշաճ գործել 1.17, կամ ավելի կոնկրետ JDK 16- ի պատճառով սխալ է IBM SDK-
     ի. Սա կլինի ամրագրված է ապագա թարմացման.'
+  wwcConfigConversationTranslatorFail: ' Չհաջողվեց միացնել %i:'
+  wwcConfigConversationConsoleTranslatorSuccess: 'Օգտվող %i հաջողությամբ միացնել %o:'
+  wwcConfigConversationTranslatorSuccess: ' Հաջողությամբ միացնել %i.'
+  wwcConfigConversationConsoleTranslatorFail: 'Օգտվող %Ես չկարողացա միացնել %o:'

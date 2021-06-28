@@ -51,6 +51,13 @@ public class GoogleTranslation {
                 true));
         }
         
+        /* Test translation */
+        Translation translation = translate.translate(
+        		"Hello, how are you?", 
+        		TranslateOption.sourceLanguage("en"),
+        		TranslateOption.targetLanguage("es"),
+        		TranslateOption.format("text"));
+        
         /* Set langList in Main */
         main.setSupportedTranslatorLanguages(outList);
     }

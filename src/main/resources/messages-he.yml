@@ -5,7 +5,6 @@ Messages:
   wwcrFail: ' טעינת WorldwideChat נכשלה.'
   wwcConfigGUIUpdateCheckerButton: שינוי בדוק אם קיימים עיכוב עדכונים
   wwcSignTranslationFail: ' אין אפשרות לקבל תרגום חוקי של סימן היעד שלך מ- %i.'
-  wwcConfigConversationGoogleTranslateFail: ' הפעלת Google Translate נכשל.'
   wwcUpdaterFailedGeneric: אין אפשרות לחפש עדכונים של WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: ההשהיה הנוכחית על בודק העדכון היא %i שניות.
     הקלד כל דבר גדול מ- 10 כדי להגדיר ערך חדש, או כל דבר פחות מ- 10 כדי לחזור אחורה.
@@ -27,7 +26,6 @@ Messages:
   wwctsOffSender: ' תרגום הסימנים מושבת.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' הצ\''אט הגלובלי מתורגם,
     אך הצ\''אט שלך מתורגם מ- %i ל %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate מופעל בהצלחה'
   wwcUpdaterParserFailed: ניתוח נתוני עדכון מ- Github נכשלה.
   wwctAutoTranslateStart: ' עכשיו מתרגם את כל הצ\''אט שלך ל %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: המפתח הסודי הנוכחי הוא %i. הזן
@@ -106,10 +104,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat מעודכן!
   wwcConfigConversationAmazonTranslateRegionInput: האזור הנוכחי הוא %i. אנא הכנס אזור
     עבור אמזון, או הקלד 0 כדי לחזור אחורה.
-  wwcConfigConversationWatsonFail: ' הפעלת יבמ ווטסון נכשלה.'
   wwcNoConsole: ' פקודה זו יכולה להיות מופעלת רק על ידי שחקן.'
-  wwcConfigConversationAmazonTranslateSuccess: ' מופעל בהצלחה אמזון תרגם.'
-  wwcConfigConversationAmazonTranslateFail: ' הפעלת אמזון תרגום נכשלה.'
   wwcInitializationFail: אתחול WorldwideChat נכשל.
   wwcrSuccess: ' נטען מחדש בהצלחה WorldwideChat'
   wwcPlayerNotFound: ' שחקן %לא מצאתי.'
@@ -136,7 +131,6 @@ Messages:
   wwcSignDone: ' סימן תורגם בהצלחה.'
   wwcConfigInvalidPrefixSettings: קריאת הקידומת שלך נכשלה. שימוש בברירת המחדל...
   wwcConfigRateLimitInvalid: מגבלת שיעור רע להגדיר config.yml. ברירת מחדל ל- 0 שניות...
-  wwcConfigConversationWatsonSuccess: ' איפשר בהצלחה את יבמ ווטסון.'
   wwcSignTranslateStart: ' תרגום סימן יעד...'
   wwcConfigGUIChatSettings: הגדרת צ\'אט
   wwcConfigGUIWatsonURLButton: שינוי כתובת URL של השירות של
@@ -211,3 +205,7 @@ Messages:
   wwcInventoryError: אירעה שגיאה עם GUI של המשתמש %i. אנא דווח על בעיה זו למפתח.
   wwcWatson117Warning: 'אזהרה: ווטסון כנראה לא יתפקד כראוי על 1.17, או ליתר דיוק JDK
     16 עקב באג ב- IBM SDK. פעולה זו תוקן בעדכון עתידי.'
+  wwcConfigConversationTranslatorFail: ' נכשלה בהפעלת %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: המשתמש %i אפשור %o בהצלחה.
+  wwcConfigConversationTranslatorSuccess: ' אפשור %i בהצלחה.'
+  wwcConfigConversationConsoleTranslatorFail: המשתמש % נכשלתי בהפעלת את %o.

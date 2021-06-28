@@ -6,7 +6,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Güncelleştirmeleri Denetimi Gecikmesi Değiştir
   wwcSignTranslationFail: ' Hedef işaretinizin %i adresinden geçerli bir çevirisi
     alınamıyor.'
-  wwcConfigConversationGoogleTranslateFail: ' Google Translate etkinleştirilemedi.'
   wwcUpdaterFailedGeneric: WorldwideChat güncelleştirmeleri denetlenemiyor.
   wwcConfigConversationUpdateCheckerInput: Güncelleme denetleyicisi üzerindeki geçerli
     gecikme %i saniye. Yeni bir değer ayarlamak için 10\'dan büyük bir şey yazın veya
@@ -30,7 +29,6 @@ Messages:
   wwctsOffSender: ' İmza çevirisi devre dışı'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Küresel sohbet çevriliyor,
     ancak sohbetiniz %i konumundan %o\''ya çevriliyor.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate başarıyla etkinleştirildi.'
   wwcUpdaterParserFailed: Github\'dan güncelleme verileri ayrıştırılamadı.
   wwctAutoTranslateStart: ' Şimdi tüm sohbetinizi %o\''ya çevriliyor.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Geçerli gizli anahtar %i. Lütfen
@@ -111,10 +109,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat güncel!
   wwcConfigConversationAmazonTranslateRegionInput: Mevcut bölge %i. Lütfen Amazon
     için bir bölge girin veya geri dönmek için 0 yazın.
-  wwcConfigConversationWatsonFail: ' IBM Watson etkinleştirilemedi.'
   wwcNoConsole: ' Bu komut sadece bir oyuncu tarafından çalıştırılabilir.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Amazon Translate başarıyla etkinleştirildi.'
-  wwcConfigConversationAmazonTranslateFail: ' Amazon Translate etkinleştirilemedi.'
   wwcInitializationFail: WorldwideChat başlatılamadı.
   wwcrSuccess: ' WorldwideChat başarıyla yeniden yüklendi.'
   wwcPlayerNotFound: ' Oyuncu %i bulunamadı.'
@@ -143,7 +138,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Önek okunamadı. Varsayılanı kullanma...
   wwcConfigRateLimitInvalid: Config.yml cinsinden ayarlanan kötü oran sınırı. 0 saniyeye
     varsayılan—
-  wwcConfigConversationWatsonSuccess: ' IBM Watson başarılı bir şekilde etkinleştirildi.'
   wwcSignTranslateStart: ' Hedef işareti çevriliyor...'
   wwcConfigGUIChatSettings: Sohbet Yapılandırması
   wwcConfigGUIWatsonURLButton: Watson Hizmeti URL\'sini Değiştir
@@ -228,3 +222,7 @@ Messages:
   wwcWatson117Warning: 'UYARI: Watson büyük olasılıkla IBM SDK\''daki bir hata nedeniyle
     1.17 veya daha spesifik olarak JDK 16\''da düzgün çalışmayacaktır. Bu, gelecekteki
     bir güncellemede giderilecektir.'
+  wwcConfigConversationTranslatorFail: ' %i etkinleştirilemedi.'
+  wwcConfigConversationConsoleTranslatorSuccess: '%i kullanıcısı %o başarıyla etkinleştirdi.'
+  wwcConfigConversationTranslatorSuccess: ' %i başarıyla etkinleştirildi.'
+  wwcConfigConversationConsoleTranslatorFail: Kullanıcı %i, %o etkinleştiremedi.

@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Змінення перевірки наявності затримки оновлень
   wwcSignTranslationFail: ' Не вдалося отримати коректний переклад вашого знака призначення
     з %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Не вдалося ввімкнути Google Translate.'
   wwcUpdaterFailedGeneric: Не вдалося перевірити наявність оновлень WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Поточна затримка на засобі перевірки оновлень
     становить %i секунд. Введіть щось більше 10, щоб встановити нове значення, або
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Підписати переклад вимкнено.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Глобальний чат наразі
     перекладається, але ваш чат наразі перекладається з %i на %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate успішно увімкнено.'
   wwcUpdaterParserFailed: Не вдалося проаналізувати оновлення даних з Github.
   wwctAutoTranslateStart: ' Тепер перекладаємо всі ваші чати на %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Поточним секретним ключем є
@@ -118,10 +116,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat є актуальним!
   wwcConfigConversationAmazonTranslateRegionInput: Поточною областю є %i. Будь ласка,
     введіть область для Amazon або введіть 0, щоб повернутися назад.
-  wwcConfigConversationWatsonFail: ' Не вдалося ввімкнути IBM Watson.'
   wwcNoConsole: ' Цю команду може виконувати лише гравець.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Успішно включений Амазонський переклад'
-  wwcConfigConversationAmazonTranslateFail: ' Не вдалося ввімкнути Amazon Translate.'
   wwcInitializationFail: Не вдалося ініціалізувати WorldwideChat.
   wwcrSuccess: ' Успішно перезавантажено WorldwideChat.'
   wwcPlayerNotFound: ' Гравець %я не знайдено.'
@@ -151,7 +146,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Не вдалося прочитати префікс. Використання типового...
   wwcConfigRateLimitInvalid: Обмеження поганої швидкості встановлено у config.yml.
     Значення за замовленням до 0 секунд...
-  wwcConfigConversationWatsonSuccess: ' Успішно включена IBM Watson.'
   wwcSignTranslateStart: ' Переклад знака призначення...'
   wwcConfigGUIChatSettings: Налаштування чату
   wwcConfigGUIWatsonURLButton: Змінити URL-адресу служби Watson
@@ -235,3 +229,8 @@ Messages:
   wwcWatson117Warning: 'УВАГА: Watson, швидше за все, не зможе належним чином функціонувати
     на 1.17, або більш конкретно JDK 16 через помилку в SDK IBM. Це буде виправлено
     в майбутньому оновленні.'
+  wwcConfigConversationTranslatorFail: ' Не вдалося вбути %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Користувач %i успішно в\' язував
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' Успішно вняє %i.'
+  wwcConfigConversationConsoleTranslatorFail: Користувач %i не вдалося вмикання %o.

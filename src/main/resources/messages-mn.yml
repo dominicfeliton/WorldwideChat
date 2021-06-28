@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Шинэчлэлтүүдийг хойшлуулах шалгах
   wwcSignTranslationFail: ' Таны зорилтот тэмдгийн зөв орчуулгыг авах боломжгүй байна
     %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Google Translate идэвхжүүлэх чадаагүй.'
   wwcUpdaterFailedGeneric: WorldWwidechat шинэчлэлтүүдийг шалгах боломжгүй.
   wwcConfigConversationUpdateCheckerInput: Шинэчлэх шалгагч дээрх одоогийн саатал
     нь %i секунд байна. 10-ээс их зүйлийг шинэ утгыг тохируулах эсвэл 10-аас бага
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Дансаа ашиглах орчуулга идэвхгүй.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Глобал чат орчуулагдаж
     байгаа боловч таны чатыг %i -аас орчуулж байна.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate амжилттай идэвхжүүлсэн.'
   wwcUpdaterParserFailed: Github-аас шинэчлэх өгөгдлийг задлан ялгалт хийж чадаагүй.
   wwctAutoTranslateStart: ' Одоо таны чатыг бүгдийг нь орчуулж байна %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Одоогийн нууц түлхүүр %i байна.
@@ -117,10 +115,7 @@ Messages:
   wwcUpdaterUpToDate: ДэлхийдWedeChat шинэчлэгдэж байна!
   wwcConfigConversationAmazonTranslateRegionInput: Одоогийн бүс %i байна. оруулах
     уу Амазон нь бүс нутаг, эсвэл төрөл 0 буцаж явах.
-  wwcConfigConversationWatsonFail: ' IBM Ватсон идэвхжүүлэх чадаагүй.'
   wwcNoConsole: ' Энэ тушаалыг зөвхөн тоглогч ажиллуулж болно.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Амжилттай Amazon Translate идэвхжүүлсэн.'
-  wwcConfigConversationAmazonTranslateFail: ' Амазоны Translate идэвхжүүлэх чадаагүй.'
   wwcInitializationFail: WorldWwidechat эхлүүлж чадаагүй.
   wwcrSuccess: ' Амжилттай WorldWedeChat дахин ачаалах.'
   wwcPlayerNotFound: ' Тоглогч % Би олж чадаагүй.'
@@ -150,7 +145,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Таны угтварыг уншиж чадаагүй. Анхдагч ашиглах...
   wwcConfigRateLimitInvalid: Муу ханшийн хязгаар config.yml-д заасан. 0 секунд хүртэл
     анхдагч...
-  wwcConfigConversationWatsonSuccess: ' Амжилттай IBM Ватсон идэвхжүүлсэн.'
   wwcSignTranslateStart: ' Зорилтот тэмдгийг орчуулах...'
   wwcConfigGUIChatSettings: Чат тохиргоо
   wwcConfigGUIWatsonURLButton: Ватсон үйлчилгээний URL-г өөрчлөх
@@ -237,3 +231,7 @@ Messages:
   wwcWatson117Warning: 'АНХААРУУЛГА: Ватсон хамгийн их магадлалтай дээр зөв ажиллахын
     тулд амжилтгүй болох болно 1.17, эсвэл илүү тусгайлан JDK 16 улмаас IBM SDK нь
     алдаа. Энэ нь ирээдүйн шинэчлэлтээр тогтмол байх болно.'
+  wwcConfigConversationTranslatorFail: ' %i идэвхжүүлж чадаагүй.'
+  wwcConfigConversationConsoleTranslatorSuccess: Хэрэглэгч % би %o амжилттай идэвхжүүлсэн.
+  wwcConfigConversationTranslatorSuccess: ' %i амжилттай идэвхжүүлсэн.'
+  wwcConfigConversationConsoleTranslatorFail: Хэрэглэгч % би %o идэвхжүүлж чадаагүй.

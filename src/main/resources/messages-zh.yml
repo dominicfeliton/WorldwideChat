@@ -5,7 +5,6 @@ Messages:
   wwcrFail: ' 无法重新加载 WorldwideChat。'
   wwcConfigGUIUpdateCheckerButton: 更改检查更新延迟
   wwcSignTranslationFail: ' 无法从 %i 获得目标符号的有效翻译。'
-  wwcConfigConversationGoogleTranslateFail: ' 无法启用谷歌翻译。'
   wwcUpdaterFailedGeneric: 无法检查 WorldwideChat 的更新。
   wwcConfigConversationUpdateCheckerInput: 更新检查器上的当前延迟为 %i 秒。键入大于 10 的任何值以设置新值，或者键入小于
     10 的任何值以返回。
@@ -26,7 +25,6 @@ Messages:
   wwctsOffSender: ' 已禁用签名翻译。'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' 全球聊天正在翻译，但是您的聊天正在从 %i
     翻译为 %o。'
-  wwcConfigConversationGoogleTranslateSuccess: ' 谷歌翻译已成功启用。'
   wwcUpdaterParserFailed: 无法解析来自 Github 的更新数据。
   wwctAutoTranslateStart: ' 现在将你的所有聊天都翻译成 %o。'
   wwcConfigConversationAmazonTranslateSecretKeyInput: 当前密钥为 %i。请输入亚马逊的私有密钥，或键入 0 返回。
@@ -95,10 +93,7 @@ Messages:
   wwctGUIAutoDetectButton: 自动检测源语言
   wwcUpdaterUpToDate: WorldwideChat 是最新的！
   wwcConfigConversationAmazonTranslateRegionInput: 当前区域为 %i。请输入亚马逊的区域，或键入 0 返回。
-  wwcConfigConversationWatsonFail: ' 无法启用 IBM Watson。'
   wwcNoConsole: ' 此命令只能由玩家运行。'
-  wwcConfigConversationAmazonTranslateSuccess: ' 已成功启用亚马逊翻译。'
-  wwcConfigConversationAmazonTranslateFail: ' 无法启用亚马逊翻译。'
   wwcInitializationFail: 无法初始化 WorldwideChat。
   wwcrSuccess: ' 已成功重新加载 WorldwideChat。'
   wwcPlayerNotFound: ' 玩家 %我没找到。'
@@ -124,7 +119,6 @@ Messages:
   wwcSignDone: ' 已成功翻译签名。'
   wwcConfigInvalidPrefixSettings: 无法读取您的前缀。使用默认值...
   wwcConfigRateLimitInvalid: config.yml 中设置的费率限制错误。默认为 0 秒...
-  wwcConfigConversationWatsonSuccess: ' 已成功启用 IBM Watson。'
   wwcSignTranslateStart: ' 正在翻译目标标志...'
   wwcConfigGUIChatSettings: 聊天配置
   wwcConfigGUIWatsonURLButton: 更改 Watson 服务 URL
@@ -186,3 +180,7 @@ Messages:
   wwcInventoryErrorPlayer: ' 使用 GUI 检测到错误。日志已发送到控制台。'
   wwcInventoryError: 用户 %i 的 GUI 检测到错误。请向开发者报告此问题。
   wwcWatson117Warning: 警告：由于 IBM SDK 中的错误，沃森很可能无法在 1.17 上正常运行，更具体地说是 JDK 16。这将在以后的更新中修复。
+  wwcConfigConversationTranslatorFail: ' 无法启用 %i。'
+  wwcConfigConversationConsoleTranslatorSuccess: 用户 %i 成功启用了 %o。
+  wwcConfigConversationTranslatorSuccess: ' 已成功启用 %i。'
+  wwcConfigConversationConsoleTranslatorFail: 用户 %i 无法启用 %o。

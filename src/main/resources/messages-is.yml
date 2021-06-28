@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Breyta Athuga fyrir seinkun uppfærslna
   wwcSignTranslationFail: ' Ekki er hægt að fá gilda þýðingu á markmerkinu þínu frá
     %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Mistókst að virkja Google Translate.'
   wwcUpdaterFailedGeneric: Ekki er hægt að athuga WorldwideChat uppfærslur.
   wwcConfigConversationUpdateCheckerInput: Núverandi töf á uppfærslu afgreiðslumaður
     er %i sekúndur. Sláðu inn neitt stærra en 10 til að setja nýtt gildi, eða eitthvað
@@ -31,8 +30,6 @@ Messages:
   wwctsOffSender: ' Sign þýðing óvirk.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Alþjóðlegt spjall er
     þýtt, en spjall þitt er þýtt frá %i til %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate virkt með góðum
-    árangri.'
   wwcUpdaterParserFailed: Mistókst að flokka uppfærslugögn frá Github.
   wwctAutoTranslateStart: ' Nú þýða allt spjall þitt %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Núverandi leyndarmál lykill
@@ -119,10 +116,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat er upp til dagsetning!
   wwcConfigConversationAmazonTranslateRegionInput: Núverandi svæði er %i. Vinsamlegast
     sláðu inn svæði fyrir Amazon, eða tegund 0 til að fara aftur.
-  wwcConfigConversationWatsonFail: ' Mistókst að virkja IBM Watson.'
   wwcNoConsole: ' Þessi skipun er aðeins hægt að hlaupa af leikmanni.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Tókst virkt Amazon Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Mistókst að virkja Amazon Translate.'
   wwcInitializationFail: Mistókst að frumstilla WorldwideChat.
   wwcrSuccess: ' Tókst endurhlaðinn WorldwideChat.'
   wwcPlayerNotFound: ' Leikmaður %Ég fann ekki.'
@@ -153,7 +147,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Mistókst að lesa forskeyti þitt. Notkun sjálfgefna...
   wwcConfigRateLimitInvalid: Slæmt hlutfall takmörk sett í config.yml. Vanskil til
     0 sekúndna...
-  wwcConfigConversationWatsonSuccess: ' Tókst virkjað IBM Watson.'
   wwcSignTranslateStart: ' Þýða miða merki...'
   wwcConfigGUIChatSettings: Spjall Stillingar
   wwcConfigGUIWatsonURLButton: Breyta Watson Service URL
@@ -240,3 +233,7 @@ Messages:
   wwcWatson117Warning: 'VIÐVÖRUN: Watson mun líklega mistakast til almennilega virka
     á 1.17, eða nánar tiltekið JDK 16 vegna galla í IBM SDK. Þetta verður fastur í
     framtíðaruppfærslu.'
+  wwcConfigConversationTranslatorFail: ' Mistókst að gera %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Notanda %Ég tókst að virkja %o.
+  wwcConfigConversationTranslatorSuccess: ' Tókst að virkja %i.'
+  wwcConfigConversationConsoleTranslatorFail: Notanda %Ég mistókst að gera %o.

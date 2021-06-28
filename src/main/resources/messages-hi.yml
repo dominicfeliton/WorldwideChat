@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: अपडेट विलंब के लिए चेक बदलें
   wwcSignTranslationFail: ' %i से आपके लक्ष्य चिन्ह का वैध अनुवाद प्राप्त करने में
     असमर्थ।'
-  wwcConfigConversationGoogleTranslateFail: ' Google अनुवाद सक्षम करने में विफल।'
   wwcUpdaterFailedGeneric: WorldwideChat अद्यतन के लिए जाँच करने में असमर्थ।
   wwcConfigConversationUpdateCheckerInput: अद्यतन परीक्षक पर वर्तमान विलंब है %i सेकंड।
     एक नया मान सेट करने के लिए 10 से अधिक कुछ भी टाइप करें, या वापस जाने के लिए 10
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' हस्ताक्षर अनुवाद अक्षम।'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' ग्लोबल चैट का अनुवाद
     किया जा रहा है, लेकिन आपकी गपश %i से %o में किया जा रहा है।'
-  wwcConfigConversationGoogleTranslateSuccess: ' गूगल अनुवाद सफलतापूर्वक सक्षम।'
   wwcUpdaterParserFailed: Github से अद्यतन डेटा पार्स करने में विफल।
   wwctAutoTranslateStart: ' अब अपनी सारी गपश %o में अनुवाद कर रहा है।'
   wwcConfigConversationAmazonTranslateSecretKeyInput: वर्तमान गुप्त कुंजी %i है. कृपया
@@ -117,10 +115,7 @@ Messages:
   wwcUpdaterUpToDate: वर्ल्डवाइडचैट अद्यतित है!
   wwcConfigConversationAmazonTranslateRegionInput: वर्तमान क्षेत्र %i है. कृपया अमेज़ॅन
     के लिए एक क्षेत्र इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
-  wwcConfigConversationWatsonFail: ' आईबीएम वाटसन को सक्षम करने में विफल।'
   wwcNoConsole: ' यह आदेश केवल एक खिलाड़ी द्वारा चलाया जा सकता है।'
-  wwcConfigConversationAmazonTranslateSuccess: ' सफलतापूर्वक सक्षम अमेज़न अनुवाद।'
-  wwcConfigConversationAmazonTranslateFail: ' अमेज़ॅन अनुवाद सक्षम करने में विफल।'
   wwcInitializationFail: WorldwideChat को प्रारंभ करने में विफल
   wwcrSuccess: ' वर्ल्डवाइडचैट को सफलतापूर्वक पुनः लोड किया गया'
   wwcPlayerNotFound: ' खिलाड़ी %मैं नहीं मिला।'
@@ -151,7 +146,6 @@ Messages:
     करना...
   wwcConfigRateLimitInvalid: खराब दर सीमा config.yml में सेट। 0 सेकंड से डिफॉल्ट कर
     रहा है...
-  wwcConfigConversationWatsonSuccess: ' आईबीएम वाटसन को सफलतापूर्वक सक्षम किया गया'
   wwcSignTranslateStart: ' लक्ष्य चिन्ह का अनुवाद कर रहा है...'
   wwcConfigGUIChatSettings: गपशप कॉन्फ़िगरेशन
   wwcConfigGUIWatsonURLButton: वाटसन सेवा यूआरएल बदलें
@@ -236,3 +230,9 @@ Messages:
   wwcWatson117Warning: 'चेतावनी: वाटसन सबसे अधिक संभावना है कि आईबीएम एसडीके में एक
     बग के कारण 1.17, या अधिक विशेष रूप से जेडीके 16 पर ठीक से काम करने में विफल हो
     जाएगा। यह भविष्य के अपडेट में तय किया जाएगा।'
+  wwcConfigConversationTranslatorFail: ' %i को सक्षम करने में विफल।'
+  wwcConfigConversationConsoleTranslatorSuccess: उपयोगकर्ता %i सक्षम %o को सक्षमता
+    %o सक्षम किया है।
+  wwcConfigConversationTranslatorSuccess: ' सफलतापूर्वक सक्षम %i।'
+  wwcConfigConversationConsoleTranslatorFail: उपयोगकर्ता %i %o को सक्षम करने में विफल
+    रहा।

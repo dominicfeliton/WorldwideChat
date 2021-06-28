@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: અપડેટ્સ વિલંબ માટે તપાસો બદલો
   wwcSignTranslationFail: ' %i માંથી તમારા લક્ષ્ય ચિહ્નનું માન્ય અનુવાદ મેળવવામાં
     અસમર્થ.'
-  wwcConfigConversationGoogleTranslateFail: ' Google અનુવાદને સક્ષમ કરવામાં નિષ્ફળ.'
   wwcUpdaterFailedGeneric: વર્લ્ડવાઇડચેટ અપડેટ્સ માટે તપાસ કરવામાં અસમર્થ.
   wwcConfigConversationUpdateCheckerInput: અપડેટ તપાસનાર પર વર્તમાન વિલંબ %i સેકંડ
     છે. નવું મૂલ્ય સેટ કરવા માટે 10 કરતા વધારે કંઈપણ લખો, અથવા પાછા જવા માટે 10 કરતા
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' અનુવાદ સાઇન ઇન કરો અક્ષમ.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' વૈશ્વિક ચેટનું ભાષાંતર
     થઈ રહ્યું છે, પરંતુ તમારી ચેટનું ભાષાંતર %i થી %o માંથી થઈ રહ્યું છે.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google અનુવાદ સફળતાપૂર્વક સક્ષમ.'
   wwcUpdaterParserFailed: ગિથબથી અપડેટ ડેટા પાર્સ કરવામાં નિષ્ફળ.
   wwctAutoTranslateStart: ' હવે તમારી બધી ચેટનો અનુવાદ %o પર કરો.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: વર્તમાન ગુપ્ત કી %i છે કૃપા
@@ -115,11 +113,7 @@ Messages:
   wwcUpdaterUpToDate: વર્લ્ડવાઇડચેટ અપ ટુ ડેટ છે!
   wwcConfigConversationAmazonTranslateRegionInput: વર્તમાન પ્રદેશ %i છે કૃપા કરીને
     એમેઝોન માટે કોઈ ક્ષેત્રને ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
-  wwcConfigConversationWatsonFail: ' આઇબીએમ વોટસનને સક્ષમ કરવામાં નિષ્ફળ.'
   wwcNoConsole: ' આ આદેશ ફક્ત એક ખેલાડી દ્વારા જ ચલાવી શકાય છે.'
-  wwcConfigConversationAmazonTranslateSuccess: ' એમેઝોન અનુવાદને સફળતાપૂર્વક સક્ષમ
-    કર્યું.'
-  wwcConfigConversationAmazonTranslateFail: ' એમેઝોન અનુવાદને સક્ષમ કરવામાં નિષ્ફળ.'
   wwcInitializationFail: વર્લ્ડવાઇડચેટને પ્રારંભ કરવામાં નિષ્ફળ.
   wwcrSuccess: ' વર્લ્ડવાઇડચેટને સફળતાપૂર્વક ફરીથી લોડ કર્યું.'
   wwcPlayerNotFound: ' ખેલાડી % મને મળ્યું નથી.'
@@ -147,7 +141,6 @@ Messages:
   wwcSignDone: ' સાઇન સફળતાપૂર્વક અનુવાદિત.'
   wwcConfigInvalidPrefixSettings: તમારો ઉપસર્ગ વાંચવામાં નિષ્ફળ ગયો. ડિફોલ્ટ મદદથી...
   wwcConfigRateLimitInvalid: ખરાબ દર મર્યાદા config.yml માં સુયોજિત. 0 સેકંડમાં ડિફોલ્ટિંગ...
-  wwcConfigConversationWatsonSuccess: ' આઇબીએમ વોટસનને સફળતાપૂર્વક સક્ષમ કર્યું.'
   wwcSignTranslateStart: ' લક્ષ્ય સંકેતને અનુવાદિત કરી રહ્યું છે...'
   wwcConfigGUIChatSettings: ચેટ રૂપરેખાંકન
   wwcConfigGUIWatsonURLButton: વૉટ્સન સેવા URL બદલો
@@ -234,3 +227,9 @@ Messages:
   wwcWatson117Warning: 'ચેતવણી: વોટસન મોટા ભાગે યોગ્ય રીતે કાર્ય કરવામાં નિષ્ફળ જશે
     1.17, અથવા વધુ ખાસ કરીને JDK 16 આઇબીએમ એસડીકેમાં બગને કારણે. આ ભવિષ્યના અપડેટમાં
     સુધારાઈ જશે.'
+  wwcConfigConversationTranslatorFail: ' %i ને સક્ષમ કરવામાં નિષ્ફળ.'
+  wwcConfigConversationConsoleTranslatorSuccess: વપરાશકર્તા %o મેં સફળતાપૂર્વક સક્ષમ
+    કર્યું.
+  wwcConfigConversationTranslatorSuccess: ' સફળતાપૂર્વક સક્ષમ કરો %i.'
+  wwcConfigConversationConsoleTranslatorFail: વપરાશકર્તા %o ને સક્ષમ કરવામાં હું નિષ્ફળ
+    ગયો.

@@ -6,7 +6,6 @@ Messages:
   wwcrFail: ' Nepodařilo se znovu načíst WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Změnit kontrolu zpoždění aktualizací
   wwcSignTranslationFail: ' Nelze získat platný překlad cílového znaku z %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Nepodařilo se povolit překladač Google.'
   wwcUpdaterFailedGeneric: Nelze zkontrolovat aktualizace WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Aktuální zpoždění kontroly aktualizace
     je %i sekund. Zadejte něco většího než 10 pro nastavení nové hodnoty nebo něco
@@ -30,7 +29,6 @@ Messages:
   wwctsOffSender: ' Překlad podepsat zakázán.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Globální chat je překládán,
     ale váš chat je překládán z %i do %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Překladač Google byl úspěšně povolen.'
   wwcUpdaterParserFailed: Nepodařilo se analyzovat data aktualizace z Githubu.
   wwctAutoTranslateStart: ' Nyní překládáte celý váš chat na %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Aktuální tajný klíč je %i. Zadejte
@@ -114,11 +112,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat je aktuální!
   wwcConfigConversationAmazonTranslateRegionInput: Aktuální oblast je %i. Zadejte
     prosím oblast pro Amazon, nebo zadejte 0 pro návrat.
-  wwcConfigConversationWatsonFail: ' Nepodařilo se povolit IBM Watson.'
   wwcNoConsole: ' Tento příkaz může spustit pouze hráč.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Úspěšně povoleno Amazon Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Povolení služby Amazon Translate se
-    nepodařilo.'
   wwcInitializationFail: Nepodařilo se inicializovat WorldwideChat.
   wwcrSuccess: ' WorldwideChat byl úspěšně znovu načten.'
   wwcPlayerNotFound: ' Hráč %Nenalezen.'
@@ -149,7 +143,6 @@ Messages:
     nastavení...
   wwcConfigRateLimitInvalid: Špatný limit rychlosti nastavený v config.yml. Výchozí
     hodnota na 0 sekund...
-  wwcConfigConversationWatsonSuccess: ' Úspěšně povoleno IBM Watson.'
   wwcSignTranslateStart: ' Překládání cílového znaku...'
   wwcConfigGUIChatSettings: Konfigurace chatu
   wwcConfigGUIWatsonURLButton: Změna adresy URL služby Watson
@@ -237,3 +230,7 @@ Messages:
   wwcWatson117Warning: 'VAROVÁNÍ: Watson pravděpodobně selže správně fungovat na 1.17,
     nebo konkrétněji JDK 16 kvůli chybě v sadě IBM SDK. To bude opraveno v budoucí
     aktualizaci.'
+  wwcConfigConversationTranslatorFail: ' Nepodařilo se zapnout %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Uživatel %úspěšně povolen %o.
+  wwcConfigConversationTranslatorSuccess: ' Úspěšně povoleno %i.'
+  wwcConfigConversationConsoleTranslatorFail: Uživatel %Nepodařilo se mi zapnout %o.

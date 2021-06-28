@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Promjena odgode provjere ažuriranja
   wwcSignTranslationFail: ' Nije moguće dobiti valjan prijevod vašeg ciljnog znaka
     od %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Nije uspjelo omogućiti Google Translate.'
   wwcUpdaterFailedGeneric: Nije moguće provjeriti ažuriranja WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Trenutačno kašnjenje na kontroleru ažuriranja
     je %i sekundi. Upišite sve veće od 10 da biste postavili novu vrijednost ili nešto
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Prevođenje potpisa onemogućeno.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Globalni chat se prevodi,
     ali vaš chat se prevodi iz %i na %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate je uspješno omogućen.'
   wwcUpdaterParserFailed: Nije uspjelo analizirati podatke o ažuriranju iz Github-a.
   wwctAutoTranslateStart: ' Sada prevođenje svih vaših čavrljanja na %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Trenutni tajni ključ je %i.
@@ -116,10 +114,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat je ažuriran!
   wwcConfigConversationAmazonTranslateRegionInput: Trenutna regija je %i. Molimo unesite
     regiju za Amazon ili upišite 0 da biste se vratili.
-  wwcConfigConversationWatsonFail: ' Nije uspjelo omogućiti IBM Watson.'
   wwcNoConsole: ' Ovu naredbu može pokrenuti samo igrač.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Uspješno omogućen Amazon Translate'
-  wwcConfigConversationAmazonTranslateFail: ' Nije uspjelo omogućiti Amazon Translate.'
   wwcInitializationFail: Nije uspjelo inicijalizirati WorldwideChat.
   wwcrSuccess: ' Uspješno ponovno učitava WorldwideChat.'
   wwcPlayerNotFound: ' Player %nisam pronađen.'
@@ -148,7 +143,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Nije uspjelo pročitati vaš prefiks. Upotreba zadanog...
   wwcConfigRateLimitInvalid: Loše ograničenje stopa postavljena u config.yml. Defaulting
     na 0 sekundi...
-  wwcConfigConversationWatsonSuccess: ' Uspješno omogućen IBM Watson.'
   wwcSignTranslateStart: ' Prevođenje ciljnog znaka...'
   wwcConfigGUIChatSettings: Konfiguracija chat
   wwcConfigGUIWatsonURLButton: Promijenite URL usluge Watson
@@ -236,3 +230,8 @@ Messages:
   wwcWatson117Warning: 'UPOZORENJE: Watson će najvjerojatnije uspjeti ispravno funkcionirati
     na 1.17, ili točnije JDK 16 zbog greške u IBM SDK. Ovo će biti fiksirano u budućem
     ažuriranju.'
+  wwcConfigConversationTranslatorFail: ' Nije uspjelo omogućiti %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Korisnik %i je uspješno omogućio
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' Uspješno omogućeno %i.'
+  wwcConfigConversationConsoleTranslatorFail: Korisnik %i nije uspio omogućiti %o.

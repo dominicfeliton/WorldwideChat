@@ -5,7 +5,6 @@ Messages:
   wwcrFail: ' بارگذاری مجدد WorldwideChat شکست خورد.'
   wwcConfigGUIUpdateCheckerButton: تغییر چک برای به روز رسانی تاخیر
   wwcSignTranslationFail: ' قادر به دریافت ترجمه معتبر علامت هدف شما از %i نیست.'
-  wwcConfigConversationGoogleTranslateFail: ' فعال کردن Google Translate شکست خورد.'
   wwcUpdaterFailedGeneric: قادر به بررسی برای به روز رسانی WorldwideChat نیست.
   wwcConfigConversationUpdateCheckerInput: تاخیر فعلی در جستجوگر بروزرسانی %i ثانیه
     است. هر چیزی بزرگتر از 10 را تایپ کنید تا یک مقدار جدید یا هر چیزی کمتر از 10
@@ -29,7 +28,6 @@ Messages:
   wwctsOffSender: ' ترجمه امضا غیر فعال.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' چت سراسری در حال ترجمه
     است، اما چت شما از %i به %o ترجمه می شود.'
-  wwcConfigConversationGoogleTranslateSuccess: ' ترجمه Google با موفقیت فعال شد.'
   wwcUpdaterParserFailed: تجزیه اطلاعات بروزرسانی از Github شکست خورد.
   wwctAutoTranslateStart: ' اکنون همه چت خود را به %o ترجمه کنید.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: کلید مخفی کنار %i است. لطفا
@@ -113,10 +111,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat به روز است!
   wwcConfigConversationAmazonTranslateRegionInput: منطقه فعلی %i است. لطفا یک منطقه
     را برای آمازون وارد کنید، یا 0 را برای بازگشت تایپ کنید.
-  wwcConfigConversationWatsonFail: ' فعال کردن آی بی ام واتسون شکست خورد'
   wwcNoConsole: ' این دستور تنها می تواند توسط یک بازیکن اجرا.'
-  wwcConfigConversationAmazonTranslateSuccess: ' با موفقیت فعال آمازون ترجمه.'
-  wwcConfigConversationAmazonTranslateFail: ' فعال کردن ترجمه آمازون شکست خورد.'
   wwcInitializationFail: در مقداردهی اولیه WorldwideChat شکست خورد.
   wwcrSuccess: ' با موفقیت بارگذاری مجدد WorldwideChat.'
   wwcPlayerNotFound: ' بازیکن %i یافت نشد.'
@@ -145,7 +140,6 @@ Messages:
   wwcSignDone: ' امضا با موفقیت ترجمه شد.'
   wwcConfigInvalidPrefixSettings: خواندن پیشوند شما شکست خورد. با استفاده از پیش فرض...
   wwcConfigRateLimitInvalid: حد مجاز نرخ بد مجموعه ای در config.yml. قصور به 0 ثانیه...
-  wwcConfigConversationWatsonSuccess: ' با موفقیت فعال آی بی ام واتسون.'
   wwcSignTranslateStart: ' ترجمه علامت هدف...'
   wwcConfigGUIChatSettings: پیکربندی گپ
   wwcConfigGUIWatsonURLButton: تغییر نشانی وب سرویس واتسون
@@ -229,3 +223,8 @@ Messages:
   wwcWatson117Warning: 'هشدار: واتسون به احتمال زیاد در عملکرد 1.17 یا به طور خاص
     JDK 16 به دلیل اشکال در IBM SDK شکست خواهد خورد. این خواهد شد در به روز رسانی
     آینده ثابت.'
+  wwcConfigConversationTranslatorFail: ' در توان %i شکست خورد.'
+  wwcConfigConversationConsoleTranslatorSuccess: کاربر %i با موفقیت توان %o را در
+    اختیار شما قرار داد.
+  wwcConfigConversationTranslatorSuccess: ' با موفقیت توانای %i را در بر گرفت.'
+  wwcConfigConversationConsoleTranslatorFail: کاربر %i نتوانست %o را توانسته %o.

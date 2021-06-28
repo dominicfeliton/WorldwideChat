@@ -7,8 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Check op updates vertraging wijzigen
   wwcSignTranslationFail: ' Kan geen geldige vertaling van uw doelteken ophalen van
     %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Inschakelen van Google Translate is
-    mislukt.'
   wwcUpdaterFailedGeneric: Kan niet controleren op WorldwideChat updates.
   wwcConfigConversationUpdateCheckerInput: De huidige vertraging op de updatecontrole
     is %i seconden. Typ iets groter dan 10 om een nieuwe waarde in te stellen, of
@@ -32,7 +30,6 @@ Messages:
   wwctsOffSender: ' Vertaling ondertekenen uitgeschakeld.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Globale chat wordt vertaald,
     maar uw chat wordt vertaald van %i naar %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate is ingeschakeld.'
   wwcUpdaterParserFailed: Ontleden van updategegevens van Github is mislukt.
   wwctAutoTranslateStart: ' Vertaal nu al je chat naar %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: De huidige geheime sleutel is
@@ -119,11 +116,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat is up to date!
   wwcConfigConversationAmazonTranslateRegionInput: De huidige regio is %i. Voer een
     regio in voor Amazon of typ 0 om terug te gaan.
-  wwcConfigConversationWatsonFail: ' Inschakelen van IBM Watson is mislukt.'
   wwcNoConsole: ' Deze opdracht kan alleen door een speler worden uitgevoerd.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Amazon Translate is ingeschakeld.'
-  wwcConfigConversationAmazonTranslateFail: ' Inschakelen van Amazon Translate is
-    mislukt.'
   wwcInitializationFail: Initialiseren van WorldwideChat mislukt.
   wwcrSuccess: ' WorldwideChat is opnieuw geladen.'
   wwcPlayerNotFound: ' Speler %ik heb niet gevonden.'
@@ -153,7 +146,6 @@ Messages:
     gebruiken...
   wwcConfigRateLimitInvalid: Limiet voor slechte snelheid ingesteld in config.yml.
     Standaardwaarde 0 seconden...
-  wwcConfigConversationWatsonSuccess: ' IBM Watson is ingeschakeld.'
   wwcSignTranslateStart: ' Doelteken vertalen...'
   wwcConfigGUIChatSettings: Chat-configuratie
   wwcConfigGUIWatsonURLButton: Watson-service-URL wijzigen
@@ -241,3 +233,8 @@ Messages:
   wwcWatson117Warning: 'WAARSCHUWING: Watson werkt waarschijnlijk niet goed op 1.17,
     of meer specifiek JDK 16 vanwege een bug in de IBM SDK. Dit wordt opgelost in
     een toekomstige update.'
+  wwcConfigConversationTranslatorFail: ' Kon %i niet inschakelen.'
+  wwcConfigConversationConsoleTranslatorSuccess: Gebruiker %i heeft %o succesvol ingeschakeld
+    %o.
+  wwcConfigConversationTranslatorSuccess: ' %i is succesvol ingeschakeld %i.'
+  wwcConfigConversationConsoleTranslatorFail: Gebruiker %i kon %o niet inschakelen.

@@ -6,7 +6,6 @@ Messages:
   wwcrFail: ' فشل في إعادة تحميل وورلدويدتشات.'
   wwcConfigGUIUpdateCheckerButton: تغيير التحقق من تأخر التحديثات
   wwcSignTranslationFail: ' تعذر الحصول على ترجمة صالحة لعلامة الهدف من %i.'
-  wwcConfigConversationGoogleTranslateFail: ' فشل تمكين ترجمة Google.'
   wwcUpdaterFailedGeneric: غير قادر على التحقق من وجود تحديثات وورلدويدتشات.
   wwcConfigConversationUpdateCheckerInput: التأخير الحالي على مدقق التحديث هو %i ثانية.
     اكتب أي شيء أكبر من 10 لتعيين قيمة جديدة، أو أي شيء أقل من 10 للعودة.
@@ -29,7 +28,6 @@ Messages:
   wwctsOffSender: ' تسجيل الترجمة تعطيل.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' تتم ترجمة الدردشة العامة،
     ولكن تتم ترجمة الدردشة من %i إلى %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' تم تمكين ترجمة جوجل بنجاح.'
   wwcUpdaterParserFailed: فشل تحليل بيانات التحديث من جيثب.
   wwctAutoTranslateStart: ' الآن ترجمة كل من الدردشة إلى %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: المفتاح السري الحالي هو %i.
@@ -108,10 +106,7 @@ Messages:
   wwcUpdaterUpToDate: وورلدويدتشات هو ما يصل إلى الآن!
   wwcConfigConversationAmazonTranslateRegionInput: المنطقة الحالية هو %i. الرجاء إدخال
     منطقة لـ Amazon، أو اكتب 0 للعودة.
-  wwcConfigConversationWatsonFail: ' فشل تمكين IBM واتسون.'
   wwcNoConsole: ' لا يمكن تشغيل هذا الأمر إلا من قبل لاعب.'
-  wwcConfigConversationAmazonTranslateSuccess: ' تمكين الأمازون ترجمة بنجاح.'
-  wwcConfigConversationAmazonTranslateFail: ' فشل تمكين الأمازون ترجمة.'
   wwcInitializationFail: فشل في تهيئة ورلدويدتشات.
   wwcrSuccess: ' إعادة تحميل وورلدويدتشات بنجاح.'
   wwcPlayerNotFound: ' لم يتم العثور على اللاعب %.'
@@ -140,7 +135,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: فشل قراءة البادئة الخاصة بك. باستخدام الافتراضي...
   wwcConfigRateLimitInvalid: الحد المعدل السيئ المحدد في config.yml. التخلف عن السداد
     إلى 0 ثانية...
-  wwcConfigConversationWatsonSuccess: ' تمكين IBM واتسون بنجاح.'
   wwcSignTranslateStart: ' ترجمة علامة الهدف...'
   wwcConfigGUIChatSettings: تكوين الدردشة
   wwcConfigGUIWatsonURLButton: تغيير عنوان URL لخدمة واتسون
@@ -219,3 +213,7 @@ Messages:
   wwcWatson117Warning: 'تحذير: من المرجح أن تفشل واتسون في العمل بشكل صحيح على 1.17،
     أو بشكل أكثر تحديدًا JDK 16 بسبب وجود خلل في IBM SDK. سيتم إصلاح هذا في تحديث
     مستقبلي.'
+  wwcConfigConversationTranslatorFail: ' فشل في تمكين %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: لقد مكّن %o المستخدم %o بنجاح.
+  wwcConfigConversationTranslatorSuccess: ' تم تمكين %i بنجاح.'
+  wwcConfigConversationConsoleTranslatorFail: فشل المستخدم %i في تمكين %o.

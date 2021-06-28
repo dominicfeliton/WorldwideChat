@@ -6,7 +6,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: மேம்படுத்தல்கள் தாமதத்திற்கான சரிபார்க்கவும்
   wwcSignTranslationFail: ' %i இலிருந்தே உங்கள் இலக்கு அடையாளத்தின் சரியான மொழிபெயர்ப்பைப்
     பெற முடியவில்லை.'
-  wwcConfigConversationGoogleTranslateFail: ' Google Translate இயக்கத் தவறியது.'
   wwcUpdaterFailedGeneric: WorldWideSat மேம்படுத்தல்கள் சரிபார்க்க முடியவில்லை.
   wwcConfigConversationUpdateCheckerInput: புதுப்பிப்பு சரிபார்ப்பு தற்போதைய தாமதம்
     %i விநாடிகள் ஆகும். ஒரு புதிய மதிப்பு அமைக்க 10 விட அதிகமாக எதையும் தட்டச்சு,
@@ -30,7 +29,6 @@ Messages:
   wwctsOffSender: ' கையெழுத்திட மொழிபெயர்ப்பு முட'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' உலகளாவிய அரட்டை மொழிபெயர்க்கப்பட்டுள்ளது,
     ஆனால் உங்கள் அரட்டை %i இலிருந்து %o க்கு மொழிபெயர்க்கப்பட்டுள்ளது.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate வெற்றிகரமாக இயக்கப்பட்டது.'
   wwcUpdaterParserFailed: கிட்ஹப் இருந்து புதுப்பிப்பு தரவை பாகுபடுத்தத் தவறியது.
   wwctAutoTranslateStart: ' இப்போது உங்கள் அரட்டை அனைத்தையும் %o க்கு மொழிபெயர்க்கிறது.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: தற்போதைய இரகசிய விசை %i ஆகும்.
@@ -122,11 +120,7 @@ Messages:
   wwcUpdaterUpToDate: WorldWideSat தேதி வரை உள்ளது!
   wwcConfigConversationAmazonTranslateRegionInput: தற்போதைய பிராந்தியம் %i ஆகும்.
     அமேசான் ஒரு பிராந்தியத்தை உள்ளிடவும் அல்லது திரும்பி செல்ல 0 தட்டச்சு செய்யவும்.
-  wwcConfigConversationWatsonFail: ' ஐபிஎம் வாட்சனை இயக்கத் தவறிவிட்டார்.'
   wwcNoConsole: ' இந்த கட்டளை ஒரு வீரர் மட்டுமே ஓட முடியும்.'
-  wwcConfigConversationAmazonTranslateSuccess: ' வெற்றிகரமாக அமேசான் மொழிபெயர்ப்பு
-    இயக்கப்பட்டது.'
-  wwcConfigConversationAmazonTranslateFail: ' அமேசான் மொழிமாற்றத்தை இயக்கத் தவறியது'
   wwcInitializationFail: WorldWideSaட்டை துவக்கத் தவறியது.
   wwcrSuccess: ' வெற்றிகரமாக WorldWideSat ஏற்றப்பட்டது.'
   wwcPlayerNotFound: ' வீரர் % நான் காணப்படவில்லை.'
@@ -158,7 +152,6 @@ Messages:
     பயன்படுத்தி...
   wwcConfigRateLimitInvalid: மோசமான விகிதம் எல்லை config.yml அமைக்க. 0 விநாடிகளுக்கு
     இயல்புநிலைக்கு...
-  wwcConfigConversationWatsonSuccess: ' ஐபிஎம் வாட்சனை வெற்றிகரமாக இயக்கினார்.'
   wwcSignTranslateStart: ' இலக்கு அடையாளம் மொழிபெயர்ப்பது...'
   wwcConfigGUIChatSettings: அரட்டை கட்டமைப்பு
   wwcConfigGUIWatsonURLButton: வாட்சன் சேவை URL ஐ மாற்றவும்
@@ -249,3 +242,7 @@ Messages:
   wwcWatson117Warning: 'எச்சரிக்கை: வாட்சன் பெரும்பாலும் IBM SDK இல் ஒரு பிழை காரணமாக
     1.17, அல்லது அதற்கு மேற்பட்ட குறிப்பாக JDK 16 இல் சரியாக செயல்படத் தவறுவார். இது
     எதிர்கால மேம்படுத்தலில் சரி செய்யப்படும்.'
+  wwcConfigConversationTranslatorFail: ' %i ஐ செயல்படுத்தத் தவறிவிட்டது.'
+  wwcConfigConversationConsoleTranslatorSuccess: பயனர் %i வெற்றிகரமாக %o ஐ செயல்படுத்துகிறது.
+  wwcConfigConversationTranslatorSuccess: ' %i ஐ வெற்றிகரமாகச் செயல்படுத்துகிறது.'
+  wwcConfigConversationConsoleTranslatorFail: பயனர் %o ஐ செயல்படுத்தத் தவறிவிட்டது.

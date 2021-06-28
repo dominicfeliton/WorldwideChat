@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Iċċekkja Bidla għal Dewmien Aġġornamenti
   wwcSignTranslationFail: ' Kapaċi tikseb traduzzjoni valida tas-sinjal fil-mira tiegħek
     minn %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Naqas milli jippermetti Google Ittraduċi.'
   wwcUpdaterFailedGeneric: Mhux possibbli li tiċċekkja għal aġġornamenti WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Id-dewmien kurrenti fuq il-kontrollur aġġornament
     huwa %i sekondi. Tip xi ħaġa akbar minn 10 biex tistabbilixxi valur ġdid, jew
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Sinjal traduzzjoni b\''diżabilità.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Iċ-chat globali qed
     jiġi tradott, iżda ċ-chat tiegħek qed jiġi tradott minn %i sa %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Google Translate ppermettiet b\''suċċess.'
   wwcUpdaterParserFailed: Naqas milli parse data aġġornament minn Github.
   wwctAutoTranslateStart: ' Issa traduzzjoni kollha ta \''chat tiegħek għal %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Jekk jogħġbok input ċavetta
@@ -118,10 +116,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat huwa aġġornat!
   wwcConfigConversationAmazonTranslateRegionInput: Jekk jogħġbok input reġjun għall
     Amazon, jew tip 0 li jmorru lura.
-  wwcConfigConversationWatsonFail: ' Naqas milli jippermetti IBM Watson.'
   wwcNoConsole: ' Dan il-kmand jista \''jitmexxa biss minn plejer.'
-  wwcConfigConversationAmazonTranslateSuccess: ' B\''suċċess attivat Amazon Ittraduċi.'
-  wwcConfigConversationAmazonTranslateFail: ' Naqas milli jippermettu Amazon Ittraduċi.'
   wwcInitializationFail: Naqas milli jinizjalizza WorldwideChat.
   wwcrSuccess: ' B\''suċċess mgħobbija WorldwideChat.'
   wwcPlayerNotFound: ' Player %i ma nstabx.'
@@ -151,7 +146,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Naqas milli taqra l-prefiss tiegħek. Uża l-inadempjenza...
   wwcConfigRateLimitInvalid: Limitu ta \'rata ħażina stabbilit f\'konfig.yml. Inadempjenti
     għal 0 sekondi...
-  wwcConfigConversationWatsonSuccess: ' B\''suċċess ippermettiet IBM Watson.'
   wwcSignTranslateStart: ' Traduzzjoni tas-sinjal fil-mira...'
   wwcConfigGUIChatSettings: Konfigurazzjoni Chat
   wwcConfigGUIWatsonURLButton: Bidla Watson Servizz URL
@@ -238,3 +232,7 @@ Messages:
   wwcWatson117Warning: 'TWISSIJA: Watson x\''aktarx ma jirnexxilux jiffunzjona sew
     fuq 1.17, jew b\''mod aktar speċifiku JDK 16 minħabba bug fl-IBM SDK. Dan se jiġi
     ffissat f\''aġġornament futur.'
+  wwcConfigConversationTranslatorFail: ' Naqas milli jippermettu %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Utent %i b\'suċċess ppermettiet %o.
+  wwcConfigConversationTranslatorSuccess: ' B\''suċċess jippermettu %i.'
+  wwcConfigConversationConsoleTranslatorFail: Utent %i naqas milli jippermettu %o.

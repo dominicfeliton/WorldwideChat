@@ -7,7 +7,6 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Zmień Sprawdzanie opóźnienia aktualizacji
   wwcSignTranslationFail: ' Nie można uzyskać poprawnego tłumaczenia znaku celu z
     %i.'
-  wwcConfigConversationGoogleTranslateFail: ' Nie udało się włączyć Tłumacza Google.'
   wwcUpdaterFailedGeneric: Nie można sprawdzić aktualizacji WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Bieżące opóźnienie w sprawdzaniu aktualizacji
     to %i sekund. Wpisz wartość większą niż 10, aby ustawić nową wartość lub wartość
@@ -31,7 +30,6 @@ Messages:
   wwctsOffSender: ' Tłumaczenie podpisu wyłączone.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Czat globalny jest tłumaczony,
     ale twój czat jest tłumaczony z %i do %o.'
-  wwcConfigConversationGoogleTranslateSuccess: ' Tłumacz Google pomyślnie włączony.'
   wwcUpdaterParserFailed: Nie można przeanalizować danych aktualizacji z Githuba.
   wwctAutoTranslateStart: ' Teraz tłumaczy cały swój czat do %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Bieżący klucz tajny to %i. Wprowadź
@@ -117,10 +115,7 @@ Messages:
   wwcUpdaterUpToDate: WorldwideChat jest na bieżąco!
   wwcConfigConversationAmazonTranslateRegionInput: Bieżący region to %i. Wprowadź
     region dla Amazon lub wpisz 0, aby wrócić.
-  wwcConfigConversationWatsonFail: ' Włączenie IBM Watson nie powiodło się.'
   wwcNoConsole: ' Polecenie to może być uruchamiane tylko przez gracza.'
-  wwcConfigConversationAmazonTranslateSuccess: ' Pomyślnie włączono Amazon Translate.'
-  wwcConfigConversationAmazonTranslateFail: ' Nie udało się włączyć Amazon Translate.'
   wwcInitializationFail: Nie można zainicjować WorldwideChat.
   wwcrSuccess: ' Pomyślnie ponownie wczytano WorldWide'
   wwcPlayerNotFound: ' Gracza %Nie znaleziono.'
@@ -150,7 +145,6 @@ Messages:
   wwcConfigInvalidPrefixSettings: Nie udało się odczytać prefiksu. Używanie domyślnego...
   wwcConfigRateLimitInvalid: Zły limit stawki ustawiony w config.yml. Domyślnie na
     0 sekund...
-  wwcConfigConversationWatsonSuccess: ' Pomyślnie włączono IBM Watson.'
   wwcSignTranslateStart: ' Tłumaczenie znaku celu...'
   wwcConfigGUIChatSettings: Konfiguracja rozmowy
   wwcConfigGUIWatsonURLButton: Zmień adres URL usługi Watson
@@ -238,3 +232,7 @@ Messages:
   wwcWatson117Warning: 'OSTRZEŻENIE: Watson najprawdopodobniej nie będzie działać
     poprawnie na 1.17, a dokładniej JDK 16 z powodu błędu w pakiecie SDK IBM. Zostanie
     to naprawione w przyszłej aktualizacji.'
+  wwcConfigConversationTranslatorFail: ' Nie udało się włączyć %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Uzytkownik %i pomyślnie włączył %o.
+  wwcConfigConversationTranslatorSuccess: ' Pomyślnie włączona %i.'
+  wwcConfigConversationConsoleTranslatorFail: User %i nie udało się włączyć %o.
