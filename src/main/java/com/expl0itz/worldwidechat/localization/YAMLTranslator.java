@@ -27,8 +27,8 @@ public class YAMLTranslator {
 	
 	public static void main(String[] args) {
 		//Creds
-		String amazonAccessKey = "AKIAUFYVBXQAUKG6CMMV";
-		String amazonSecretKey = "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";
+		String amazonAccessKey = "";
+		String amazonSecretKey = "";
 		String amazonRegion = "us-east-2";
 	
 		//Other vars
