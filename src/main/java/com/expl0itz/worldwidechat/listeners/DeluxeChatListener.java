@@ -9,10 +9,10 @@ import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.misc.PlayerRecord;
 
-import me.clip.deluxechat.events.DeluxeChatEvent;
+//import me.clip.deluxechat.events.DeluxeChatEvent;
 
 public class DeluxeChatListener implements Listener {
-
+    /*
     private WorldwideChat main = WorldwideChat.getInstance();
     
     @EventHandler(priority = EventPriority.HIGHEST)
@@ -29,4 +29,5 @@ public class DeluxeChatListener implements Listener {
             event.setChatMessage(out);
         }
     }
+    */
 }

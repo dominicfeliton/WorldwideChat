@@ -32,7 +32,6 @@ import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.listeners.BookReadListener;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
-import com.expl0itz.worldwidechat.listeners.DeluxeChatListener;
 import com.expl0itz.worldwidechat.listeners.InventoryListener;
 import com.expl0itz.worldwidechat.listeners.OnPlayerJoinListener;
 import com.expl0itz.worldwidechat.listeners.SignReadListener;
@@ -132,7 +131,8 @@ public class WorldwideChat extends JavaPlugin {
             
             //EventHandlers + check for plugins
         	if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) { //DeluxeChat
-                getServer().getPluginManager().registerEvents(new DeluxeChatListener(), this);
+                //getServer().getPluginManager().registerEvents(new DeluxeChatListener(), this);
+        		//sendmsg deluxechat is currently broken
             }
 			getServer().getPluginManager().registerEvents(new ChatListener(), this); 
 			getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);

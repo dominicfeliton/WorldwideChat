@@ -112,13 +112,6 @@
         </dependency>
         <!-- Locally stored dependencies; change systemPath to your appropriate dir... -->
         <dependency>
-            <groupId>me.clip</groupId>
-            <artifactId>deluxechat</artifactId>
-            <version>1.16.2</version>
-            <scope>system</scope>
-            <systemPath>C:/Users/Dominic/Desktop/WorldwideChat/WorldwideChat/privatedependencies/DeluxeChat.jar</systemPath>
-        </dependency>
-        <dependency>
             <groupId>fr.minuskube.inv</groupId>
             <artifactId>smart-invs</artifactId>
             <version>1.2.7</version>
@@ -217,7 +210,6 @@
                             <include>org.jetbrains.kotlin:kotlin-stdlib</include>
                             <include>com.squareup.okio:okio</include>
                             <include>co.aikar:taskchain*</include>
-                            <include>me.clip:deluxechat</include>
                             <include>com.amazonaws:*</include>
                             <include>org.jsoup:*</include>
                             <include>com.fasterxml.jackson.core:*</include>

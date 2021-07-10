@@ -85,7 +85,6 @@
               <include>org.jetbrains.kotlin:kotlin-stdlib</include>
               <include>com.squareup.okio:okio</include>
               <include>co.aikar:taskchain*</include>
-              <include>me.clip:deluxechat</include>
               <include>com.amazonaws:*</include>
               <include>org.jsoup:*</include>
               <include>com.fasterxml.jackson.core:*</include>
@@ -144,13 +143,6 @@
       <artifactId>ibm-watson</artifactId>
       <version>9.2.0</version>
       <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>me.clip</groupId>
-      <artifactId>deluxechat</artifactId>
-      <version>1.16.2</version>
-      <scope>system</scope>
-      <systemPath>C:/Users/Dominic/Desktop/WorldwideChat/WorldwideChat/privatedependencies/DeluxeChat.jar</systemPath>
     </dependency>
   </dependencies>
 </project>
