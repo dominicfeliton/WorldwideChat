@@ -1,10 +1,17 @@
 # Eclipse Files
 .settings/
 bin/
-target/
 .metadata/
-privatedependencies/
 .classpath
 .project
 .DS_Store
 
+# IDEA Files
+.idea/
+*.iml
+privatedependencies/
+
+# Other Files
+.DS_Store
+target/
+bin/

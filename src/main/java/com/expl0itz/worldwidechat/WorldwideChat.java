@@ -133,6 +133,7 @@ public class WorldwideChat extends JavaPlugin {
         	if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) { //DeluxeChat
                 //getServer().getPluginManager().registerEvents(new DeluxeChatListener(), this);
         		//sendmsg deluxechat is currently broken
+                getLogger().warning("");
             }
 			getServer().getPluginManager().registerEvents(new ChatListener(), this); 
 			getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
