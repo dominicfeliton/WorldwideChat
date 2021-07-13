@@ -130,10 +130,9 @@ public class WorldwideChat extends JavaPlugin {
             checkMCVersion();
             
             //EventHandlers + check for plugins
-        	if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) { //DeluxeChat
+        	if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) { //DeluxeChat is incompatible as of v1.3
                 //getServer().getPluginManager().registerEvents(new DeluxeChatListener(), this);
-        		//sendmsg deluxechat is currently broken
-                getLogger().warning("");
+                getLogger().warning(getConfigManager().getMessagesConfig().getString("Messages.wwcDeluxeChatIncompatible"));
             }
 			getServer().getPluginManager().registerEvents(new ChatListener(), this); 
 			getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
