@@ -232,5 +232,5 @@ Messages:
     %o.
   wwcConfigConversationTranslatorSuccess: ' Uspješno omogućeno %i.'
   wwcConfigConversationConsoleTranslatorFail: Korisnik %i nije uspio omogućiti %o.
-  wwcWatson117Warning: ' Watson nije uspio inicijalizirati zbog inacessibleObjecTexception.
-    Za sada dodajte —illegal-access=dozvolu postojećim argumentima poslužitelja.'
+  wwcWatson117Warning: Watson nije uspio inicijalizirati zbog nepristupačnoObjecTexception.
+    Za sada dodajte —illegal-access=dozvolu postojećim argumentima poslužitelja.

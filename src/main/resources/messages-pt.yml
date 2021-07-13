@@ -237,5 +237,5 @@ Messages:
   wwcConfigConversationConsoleTranslatorSuccess: O usuário %i habilitou %o com êxito.
   wwcConfigConversationTranslatorSuccess: ' Ativado com êxito %i.'
   wwcConfigConversationConsoleTranslatorFail: O usuário %i falhou ao ativar %o.
-  wwcWatson117Warning: ' O Watson não conseguiu inicializar devido a um InacessibleObjectException.
-    Por enquanto, adicione —illegal-access=permit aos argumentos jar do servidor existentes.'
+  wwcWatson117Warning: O Watson não conseguiu inicializar devido a um InAccessibleObjectException.
+    Por enquanto, adicione —illegal-access=permit aos argumentos jar do servidor existentes.

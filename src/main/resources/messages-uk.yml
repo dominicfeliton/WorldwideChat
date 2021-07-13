@@ -231,6 +231,6 @@ Messages:
     %o.
   wwcConfigConversationTranslatorSuccess: ' Успішно вняє %i.'
   wwcConfigConversationConsoleTranslatorFail: Користувач %i не вдалося вмикання %o.
-  wwcWatson117Warning: ' Уотсон не вдалося ініціалізувати через inacesSibleObjectException.
+  wwcWatson117Warning: Уотсон не вдалося ініціалізувати через неAccessibleObjectException.
     Зараз, будь ласка, додайте —illegal-access=Дозволити до наявних аргументів сервера
-    jar.'
+    jar.

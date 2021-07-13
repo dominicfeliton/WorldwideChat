@@ -236,6 +236,6 @@ Messages:
     %o.
   wwcConfigConversationTranslatorSuccess: ' Berhasil mengaktifkan %i.'
   wwcConfigConversationConsoleTranslatorFail: Pengguna %i gagal mengaktifkan %o.
-  wwcWatson117Warning: ' Watson telah gagal untuk menginisialisasi karena InacessibleObjectException.
+  wwcWatson117Warning: Watson telah gagal untuk menginisialisasi karena InaccessibleObjectException.
     Untuk saat ini, silakan tambahkan —illegal-access=permit ke argumen jar server
-    yang ada.'
+    yang ada.

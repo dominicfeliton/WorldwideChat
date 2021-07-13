@@ -235,6 +235,6 @@ Messages:
   wwcConfigConversationConsoleTranslatorSuccess: Användaren %i aktiverad %o.
   wwcConfigConversationTranslatorSuccess: ' Aktiverad %i.'
   wwcConfigConversationConsoleTranslatorFail: Användaren %i kunde inte aktivera %o.
-  wwcWatson117Warning: ' Watson har misslyckats med att initiera på grund av ett InacessibleObjectException.
+  wwcWatson117Warning: Watson har misslyckats med att initiera på grund av ett InAccessibleObjectException.
     För tillfället, lägg till —illegal-access=permit till dina befintliga server jar
-    argument.'
+    argument.

@@ -186,5 +186,5 @@ Messages:
   wwcConfigConversationConsoleTranslatorSuccess: ユーザー %i は %o を正常に有効化しました。
   wwcConfigConversationTranslatorSuccess: ' %i を正常に有効化しました。'
   wwcConfigConversationConsoleTranslatorFail: ユーザー %i は %o を有効にできませんでした。
-  wwcWatson117Warning: ' InacessibleObjectException が原因で、ワトソンが初期化できませんでした。今のところ、既存のサーバー
-    jar 引数に —illegal-access=permit を追加してください。'
+  wwcWatson117Warning: アクセス不能ObjectExceptionが原因で、ワトソンが初期化できませんでした。今のところ、既存のサーバー jar
+    引数に —illegal-access=permit を追加してください。

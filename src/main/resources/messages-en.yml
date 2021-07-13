@@ -185,4 +185,4 @@ Messages:
   #------------------- Watson Translator Messages -------------------
   watsonNotFoundExceptionNotification: ' Unable to translate your input any further.'
   watsonColorCodeWarning: ' Using color codes may give you unpredictable results.'
-  wwcWatson117Warning: ' Watson has failed to initialize due to an InacessibleObjectException. For now, please add --illegal-access=permit to your existing server jar arguments.'
+  wwcWatson117Warning: 'Watson has failed to initialize due to an InaccessibleObjectException. For now, please add --illegal-access=permit to your existing server jar arguments.'

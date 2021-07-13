@@ -190,5 +190,5 @@ Messages:
   wwcConfigConversationConsoleTranslatorSuccess: '%o 사용자가 %o을 (를) 성공적으로 활성화했습니다.'
   wwcConfigConversationTranslatorSuccess: ' %i 을 (를) 성공적으로 활성화했습니다.'
   wwcConfigConversationConsoleTranslatorFail: '%i 사용자가 %o을 (를) 활성화하지 못했습니다.'
-  wwcWatson117Warning: ' IacessibleObjectException으로 인해 Watson이 초기화하지 못했습니다.지금은 기존
-    서버 jar 인수에 —illegal-access=허용을 추가하십시오.'
+  wwcWatson117Warning: Watson이 (가) 액세스 할 수 없는 객체예외로 인해 초기화하지 못했습니다.지금은 기존 서버 jar 인수에
+    —illegal-access=허용을 추가하십시오.

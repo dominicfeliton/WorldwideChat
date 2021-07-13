@@ -225,6 +225,6 @@ Messages:
     اختیار شما قرار داد.
   wwcConfigConversationTranslatorSuccess: ' با موفقیت توانای %i را در بر گرفت.'
   wwcConfigConversationConsoleTranslatorFail: کاربر %i نتوانست %o را توانسته %o.
-  wwcWatson117Warning: ' واتسون در مقداردهی اولیه به دلیل عدم استفاده از Exception
-    شکست خورده است. در حال حاضر، لطفا —illegal-access=اجازه را به آرگومان های موجود
-    خود اضافه کنید.'
+  wwcWatson117Warning: واتسون به دلیل عدم دسترسی به ObjectException موفق به مقداردهی
+    اولیه نشد. در حال حاضر، لطفا —illegal-access=اجازه را به آرگومان های موجود خود
+    اضافه کنید.

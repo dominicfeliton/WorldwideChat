@@ -236,6 +236,6 @@ Messages:
   wwcConfigConversationConsoleTranslatorSuccess: Pengguna %i berjaya membenarkan %o.
   wwcConfigConversationTranslatorSuccess: ' Berjaya membenarkan %i.'
   wwcConfigConversationConsoleTranslatorFail: Pengguna %i gagal membolehkan %o.
-  wwcWatson117Warning: ' Watson telah gagal dimulakan kerana InacessibleObjectException.
+  wwcWatson117Warning: Watson telah gagal dimulakan kerana tidak AccessibleObjectException.
     Buat masa ini, sila tambah —illegal-access=permit ke argumen jar pelayan sedia
-    ada anda.'
+    ada anda.

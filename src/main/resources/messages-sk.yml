@@ -239,6 +239,6 @@ Messages:
   wwcConfigConversationTranslatorSuccess: ' Úspešne zapnuté %i.'
   wwcConfigConversationConsoleTranslatorFail: Používateľa %nepodarilo sa mi povoliť
     %o.
-  wwcWatson117Warning: ' Watson sa nepodarilo inicializovať kvôli inacessibleObjectException.
+  wwcWatson117Warning: Watson sa nepodarilo inicializovať kvôli InaccessibleObjectException.
     Pre túto chvíľu pridajte —illegal-access=povoliť k existujúcim argumentom servera
-    jar.'
+    jar.
