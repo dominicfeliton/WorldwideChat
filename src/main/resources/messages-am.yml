@@ -201,9 +201,9 @@ Messages:
   wwcConfigCacheInvalid: ተርጓሚ መሸጎጫ መጠን ልክ ያልሆነ። ወደ ነባር 10...
   wwcInventoryErrorPlayer: ' ስህተት በእርስዎ GUI ጋር ተገኝቷል። አንድ ምዝግብ ወደ መሥሪያው ተልኳል።'
   wwcInventoryError: በተጠቃሚ %i GUI ላይ ስህተት ተገኝቷል። እባክዎ ይህን ችግር ለገንቢው ሪፖርት ያድርጉ።
-  wwcWatson117Warning: 'ማስጠንቀቂያ: ዋትሰን እድላቸው በአግባቡ ላይ እንዲሰራ አይሳካም 1.17, ወይም ከዚያ በላይ
-    በተለይ JDK 16 ምክንያት IBM SDK ውስጥ አንድ ሳንካ ወደ። ይህ ወደፊት ዝማኔ ላይ ተስተካክሏል።'
   wwcConfigConversationTranslatorFail: ' ማንቃቱ አልተቻለም %i።'
   wwcConfigConversationConsoleTranslatorSuccess: ተጠቃሚ %o በተሳካ ሁኔታ ማንቃት %o።
   wwcConfigConversationTranslatorSuccess: ' በተሳካ ሁኔታ ማንቃት %i።'
   wwcConfigConversationConsoleTranslatorFail: ተጠቃሚ %o ን ማንቃቴ አልቻልኩም %o።
+  wwcWatson117Warning: ' ዋትሰን በ InacessibleObjecTexception ምክንያት ማስጀመር አልተሳካም። ለአሁኑ
+    እባክዎ ወደ ነባር የአገልጋይ ማሰሪያ ክርክሮችዎ —ሕጋዊ-መዳረሻ=ፈቃድ ያክሉ'

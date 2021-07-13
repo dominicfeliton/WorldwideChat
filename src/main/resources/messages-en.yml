@@ -185,4 +185,4 @@ Messages:
   #------------------- Watson Translator Messages -------------------
   watsonNotFoundExceptionNotification: ' Unable to translate your input any further.'
   watsonColorCodeWarning: ' Using color codes may give you unpredictable results.'
-  wwcWatson117Warning: 'WARNING: Watson will most likely fail to properly function on 1.17, or more specifically JDK 16 due to a bug in the IBM SDK. This will be fixed in a future update.' 
+  wwcWatson117Warning: ' Watson has failed to initialize due to an InacessibleObjectException. For now, please add --illegal-access=permit to your existing server jar arguments.'

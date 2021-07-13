@@ -222,10 +222,10 @@ Messages:
   wwcInventoryErrorPlayer: ' Kosa wanaona na GUI yako. Logi imetumwa kwenye console.'
   wwcInventoryError: Hitilafu imegunduliwa na GUI ya mtumiaji %i. Tafadhali ripoti
     suala hili kwa
-  wwcWatson117Warning: 'WARNING: Watson uwezekano mkubwa kushindwa kufanya kazi vizuri
-    kwenye 1.17, au zaidi hasa JDK 16 kutokana na mdudu katika IBM SDK. Hii itawekwa
-    katika sasisho la baadaye.'
   wwcConfigConversationTranslatorFail: ' Imeshindwa kuwezesha %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Mtumiaji %nimewezesha %o kwa mafanikio.
   wwcConfigConversationTranslatorSuccess: ' Imewezeshwa kwa mafanikio ya %i.'
   wwcConfigConversationConsoleTranslatorFail: Mtumiaji %nimeshindwa kuwawezesha %o.
+  wwcWatson117Warning: ' Watson imeshindwa kuanzisha kutokana na inacessibleObjectException.
+    Kwa sasa, tafadhali ongeza - upatikanaji wa kisheria = kibali kwenye hoja zako
+    zilizopo za jar za seva.'

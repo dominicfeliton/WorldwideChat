@@ -228,10 +228,10 @@ Messages:
     байна.'
   wwcInventoryError: Алдаа хэрэглэгч %i нь GUI нь илэрсэн байна. хөгжүүлэгчид энэ
     асуудлыг тайлагнах уу.
-  wwcWatson117Warning: 'АНХААРУУЛГА: Ватсон хамгийн их магадлалтай дээр зөв ажиллахын
-    тулд амжилтгүй болох болно 1.17, эсвэл илүү тусгайлан JDK 16 улмаас IBM SDK нь
-    алдаа. Энэ нь ирээдүйн шинэчлэлтээр тогтмол байх болно.'
   wwcConfigConversationTranslatorFail: ' %i идэвхжүүлж чадаагүй.'
   wwcConfigConversationConsoleTranslatorSuccess: Хэрэглэгч % би %o амжилттай идэвхжүүлсэн.
   wwcConfigConversationTranslatorSuccess: ' %i амжилттай идэвхжүүлсэн.'
   wwcConfigConversationConsoleTranslatorFail: Хэрэглэгч % би %o идэвхжүүлж чадаагүй.
+  wwcWatson117Warning: ' Ватсон нь InacessibleObjecececption улмаас эхлүүлж чадаагүй
+    байна. Одоо байгаа серверийн чичиргээн аргументуудад —illegal-access=зөвшөөрлийг
+    нэмнэ үү.'

@@ -227,12 +227,12 @@ Messages:
     गया है।'
   wwcInventoryError: उपयोक्ता %i के GUI के साथ त्रुटि मिली. कृपया इस समस्या को डेवलपर
     को रिपोर्ट करें।
-  wwcWatson117Warning: 'चेतावनी: वाटसन सबसे अधिक संभावना है कि आईबीएम एसडीके में एक
-    बग के कारण 1.17, या अधिक विशेष रूप से जेडीके 16 पर ठीक से काम करने में विफल हो
-    जाएगा। यह भविष्य के अपडेट में तय किया जाएगा।'
   wwcConfigConversationTranslatorFail: ' %i को सक्षम करने में विफल।'
   wwcConfigConversationConsoleTranslatorSuccess: उपयोगकर्ता %i सक्षम %o को सक्षमता
     %o सक्षम किया है।
   wwcConfigConversationTranslatorSuccess: ' सफलतापूर्वक सक्षम %i।'
   wwcConfigConversationConsoleTranslatorFail: उपयोगकर्ता %i %o को सक्षम करने में विफल
     रहा।
+  wwcWatson117Warning: ' वाटसन एक inacessibleObjectException के कारण प्रारंभ करने
+    में विफल रहा है। अभी के लिए, कृपया अपने मौजूदा सर्वर जार तर्कों में —illegal-access=permit
+    जोड़ें।'

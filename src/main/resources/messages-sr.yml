@@ -222,10 +222,9 @@ Messages:
   wwcInventoryErrorPlayer: ' Greška otkrivena sa GUI. Dnevnik je poslat na konzolu.'
   wwcInventoryError: Greška otkrivena sa GUI korisnika %i. Molimo prijavite ovaj problem
     programeru.
-  wwcWatson117Warning: 'UPOZORENjE: Vatson će najverovatnije uspjeti da pravilno funkcioniše
-    na 1.17, ili konkretnije JDK 16 zbog greške u IBM SDK. Ovo će biti fiksirano u
-    budućem ažuriranju.'
   wwcConfigConversationTranslatorFail: ' Nije uspelo da omogućite %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Korisnik %i uspešno omogućio %o.
   wwcConfigConversationTranslatorSuccess: ' Uspešno omogućeno %i.'
   wwcConfigConversationConsoleTranslatorFail: Korisnik %ja nije uspeo da omogući %o.
+  wwcWatson117Warning: ' Votson nije uspeo da inicijalizuje zbog InacessibleObjecTekception.
+    Za sada dodajte —illegal-access=dozvolu postojećim argumentima servera jar.'

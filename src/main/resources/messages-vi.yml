@@ -234,10 +234,10 @@ Messages:
     đến giao diện điều khiển.'
   wwcInventoryError: Phát hiện lỗi với GUI của người dùng %i. Vui lòng báo cáo vấn
     đề này cho nhà phát triển.
-  wwcWatson117Warning: 'CẢNH BÁO: Watson rất có thể sẽ không hoạt động đúng trên 1.17,
-    hoặc cụ thể hơn JDK 16 do lỗi trong IBM SDK. Điều này sẽ được khắc phục trong
-    bản cập nhật trong tương lai.'
   wwcConfigConversationTranslatorFail: ' Không thể bật %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Người dùng %i đã bật thành công %o.
   wwcConfigConversationTranslatorSuccess: ' Đã bật thành công %i.'
   wwcConfigConversationConsoleTranslatorFail: Người dùng %tôi không thể bật %o.
+  wwcWatson117Warning: ' Watson đã thất bại trong việc khởi tạo do một InacessibleObjectException.
+    Bây giờ, xin vui lòng thêm —illegal-access=giấy phép cho các đối số jar máy chủ
+    hiện có của bạn.'

@@ -221,9 +221,9 @@ Messages:
     logi.'
   wwcInventoryError: Kasutaja GUI-ga tuvastatud tõrge. Palun teatage sellest probleemist
     arendajale.
-  wwcWatson117Warning: 'HOIATUS: Watson ei suuda tõenäoliselt korralikult töötada
-    1.17 või täpsemalt JDK 16 IBM SDK vea tõttu. See fikseeritakse tulevases värskenduses.'
   wwcConfigConversationTranslatorFail: ' %i lubamine nurjus.'
   wwcConfigConversationConsoleTranslatorSuccess: Kasutaja %i edukalt luba %o.
   wwcConfigConversationTranslatorSuccess: ' Edukalt lubatud %i.'
   wwcConfigConversationConsoleTranslatorFail: Kasutaja %i ei õnnestunud lubada %o.
+  wwcWatson117Warning: ' Watson ei initsialiseerida tõttu inacessibleObjectException.
+    Nüüd lisage —illegaal-access=luba oma olemasolevatele serveri purgi argumentidele.'

@@ -225,10 +225,11 @@ Messages:
   wwcInventoryErrorPlayer: ' შეცდომა გამოვლინდა თქვენი GUI. ჟურნალი გაიგზავნა კონსოლში.'
   wwcInventoryError: '%i მომხმარებლის GUI- სთან აღმოჩენილი შეცდომა. გთხოვთ შეატყობინოთ
     ამ საკითხს დეველოპერს.'
-  wwcWatson117Warning: 'გაფრთხილება: Watson სავარაუდოდ ვერ სწორად ფუნქციონირებს 1.17,
-    ან უფრო კონკრეტულად JDK 16 გამო შეცდომა IBM SDK. ეს იქნება მომავალში განახლება.'
   wwcConfigConversationTranslatorFail: ' ვერ მოხერხდა %i ჩართვა %i.'
   wwcConfigConversationConsoleTranslatorSuccess: მომხმარებელი %i წარმატებით ჩართვა
     %o.
   wwcConfigConversationTranslatorSuccess: ' წარმატებით ჩართვა %i.'
   wwcConfigConversationConsoleTranslatorFail: მომხმარებელი %i ვერ ჩართვა %o.
+  wwcWatson117Warning: ' უოტსონმა ვერ შეძლო ინიციალიზაცია InacessibleObjecception
+    გამო. ახლა, გთხოვთ დაამატოთ - არალეგალური ხელმისაწვდომობა=ნებართვა თქვენს არსებულ
+    სერვერზე jar არგუმენტები.'

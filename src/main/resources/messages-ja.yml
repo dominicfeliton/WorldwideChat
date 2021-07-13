@@ -182,8 +182,9 @@ Messages:
   wwcConfigCacheInvalid: トランスレータキャッシュサイズが無効です。デフォルトは10に設定しています...
   wwcInventoryErrorPlayer: ' GUI でエラーが検出されました。ログがコンソールに送信されました。'
   wwcInventoryError: ユーザー %i の GUI でエラーが検出されました。この問題を開発者に報告してください。
-  wwcWatson117Warning: 警告:Watson は、IBM SDK のバグが原因で 1.17、またはより具体的には JDK 16 で正常に機能しない可能性があります。これは将来のアップデートで修正される予定です。
   wwcConfigConversationTranslatorFail: ' %i を有効にできませんでした。'
   wwcConfigConversationConsoleTranslatorSuccess: ユーザー %i は %o を正常に有効化しました。
   wwcConfigConversationTranslatorSuccess: ' %i を正常に有効化しました。'
   wwcConfigConversationConsoleTranslatorFail: ユーザー %i は %o を有効にできませんでした。
+  wwcWatson117Warning: ' InacessibleObjectException が原因で、ワトソンが初期化できませんでした。今のところ、既存のサーバー
+    jar 引数に —illegal-access=permit を追加してください。'

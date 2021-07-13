@@ -239,10 +239,10 @@ Messages:
     அனுப்பப்பட்டுள்ளது.'
   wwcInventoryError: பயனர் %i இன் GUI உடன் கண்டறியப்பட்ட பிழை. இந்த சிக்கலை உருவாக்குநருக்கு
     தெரிவிக்கவும்.
-  wwcWatson117Warning: 'எச்சரிக்கை: வாட்சன் பெரும்பாலும் IBM SDK இல் ஒரு பிழை காரணமாக
-    1.17, அல்லது அதற்கு மேற்பட்ட குறிப்பாக JDK 16 இல் சரியாக செயல்படத் தவறுவார். இது
-    எதிர்கால மேம்படுத்தலில் சரி செய்யப்படும்.'
   wwcConfigConversationTranslatorFail: ' %i ஐ செயல்படுத்தத் தவறிவிட்டது.'
   wwcConfigConversationConsoleTranslatorSuccess: பயனர் %i வெற்றிகரமாக %o ஐ செயல்படுத்துகிறது.
   wwcConfigConversationTranslatorSuccess: ' %i ஐ வெற்றிகரமாகச் செயல்படுத்துகிறது.'
   wwcConfigConversationConsoleTranslatorFail: பயனர் %o ஐ செயல்படுத்தத் தவறிவிட்டது.
+  wwcWatson117Warning: ' வாட்சன் ஒரு INacessibleObjecTexception காரணமாக துவக்கத் தவறிவிட்டது.
+    இப்போது, தயவுசெய்து -illegal-access=உங்கள் இருக்கும் சர்வர் ஜாடி வாதங்கள் அனுமதி
+    சேர்க்கவும்.'

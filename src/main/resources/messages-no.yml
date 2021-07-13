@@ -222,10 +222,10 @@ Messages:
   wwcInventoryErrorPlayer: ' Feil oppdaget med GUI. En logg er sendt til konsollen.'
   wwcInventoryError: Feil oppdaget med brukerbrukerbrukeren %i. Rapporter dette problemet
     til utvikleren.
-  wwcWatson117Warning: 'ADVARSEL: Watson vil sannsynligvis ikke fungere riktig på
-    1.17, eller mer spesifikt JDK 16 på grunn av en feil i IBM SDK. Dette vil bli
-    løst i en fremtidig oppdatering.'
   wwcConfigConversationTranslatorFail: ' Kan ikke aktivere %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Brukeren %i aktiveret %o.
   wwcConfigConversationTranslatorSuccess: ' Aktivert %i.'
   wwcConfigConversationConsoleTranslatorFail: Brukeren %i kunne ikke aktivere %o.
+  wwcWatson117Warning: ' Watson har ikke initialisert på grunn av en InacessibleObjectException.
+    For nå, vennligst legg til —illegal-access=tilladelse til dine eksisterende server
+    jar argumenter.'

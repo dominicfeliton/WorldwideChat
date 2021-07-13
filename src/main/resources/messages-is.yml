@@ -230,10 +230,10 @@ Messages:
     stjórnborðsins.'
   wwcInventoryError: Villa greind með GUI notanda %i. Vinsamlegast tilkynna þetta
     mál til framkvæmdaraðila.
-  wwcWatson117Warning: 'VIÐVÖRUN: Watson mun líklega mistakast til almennilega virka
-    á 1.17, eða nánar tiltekið JDK 16 vegna galla í IBM SDK. Þetta verður fastur í
-    framtíðaruppfærslu.'
   wwcConfigConversationTranslatorFail: ' Mistókst að gera %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Notanda %Ég tókst að virkja %o.
   wwcConfigConversationTranslatorSuccess: ' Tókst að virkja %i.'
   wwcConfigConversationConsoleTranslatorFail: Notanda %Ég mistókst að gera %o.
+  wwcWatson117Warning: ' Watson hefur mistekist að frumstilla vegna inacessibleObjectexception.
+    Fyrir nú, vinsamlegast bæta -ólöglegal-access=leyfa til núverandi miðlara jar
+    rök þín.'

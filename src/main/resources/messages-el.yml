@@ -245,11 +245,11 @@ Messages:
     έχει σταλεί στην κονσόλα.'
   wwcInventoryError: Εντοπίστηκε σφάλμα με το GUI του χρήστη %i. Παρακαλώ αναφέρετε
     αυτό το ζήτημα στον προγραμματιστή.
-  wwcWatson117Warning: 'ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Το Watson πιθανότατα δεν θα λειτουργήσει σωστά
-    στο 1.17, ή πιο συγκεκριμένα JDK 16 λόγω σφάλματος στο IBM SDK. Αυτό θα διορθωθεί
-    σε μια μελλοντική ενημέρωση.'
   wwcConfigConversationTranslatorFail: ' Αποτυχία κατά την απεργία του %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Ο χρήστης %i απεργοποίησα επιτυχής
     %o.
   wwcConfigConversationTranslatorSuccess: ' Επιτυχής %i.'
   wwcConfigConversationConsoleTranslatorFail: Ο χρήστης %o απέτυχε να en %o.
+  wwcWatson117Warning: ' Το Watson απέτυχε να προετοιμαστεί εξαιτίας ενός InacessibleObjectException.
+    Προς το παρόν, παρακαλώ προσθέστε —inlegal-access=άδεια στα υπάρχοντα ορίσματα
+    του βάζου του διακομιστή σας.'

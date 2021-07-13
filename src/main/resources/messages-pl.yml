@@ -229,10 +229,9 @@ Messages:
   wwcInventoryErrorPlayer: ' Wykryto błąd w graficznym interfejsie użytkownika. Dziennik
     został wysłany do konsoli.'
   wwcInventoryError: Wykryto błąd w GUI użytkownika %i. Zgłoś ten problem programiście.
-  wwcWatson117Warning: 'OSTRZEŻENIE: Watson najprawdopodobniej nie będzie działać
-    poprawnie na 1.17, a dokładniej JDK 16 z powodu błędu w pakiecie SDK IBM. Zostanie
-    to naprawione w przyszłej aktualizacji.'
   wwcConfigConversationTranslatorFail: ' Nie udało się włączyć %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Uzytkownik %i pomyślnie włączył %o.
   wwcConfigConversationTranslatorSuccess: ' Pomyślnie włączona %i.'
   wwcConfigConversationConsoleTranslatorFail: User %i nie udało się włączyć %o.
+  wwcWatson117Warning: ' Watson nie udało się zainicjować z powodu InacessibleObjectException.
+    Na razie proszę dodać —illegal-access=permit do istniejących argumentów jar serwera.'

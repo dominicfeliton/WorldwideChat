@@ -219,9 +219,9 @@ Messages:
   wwcInventoryErrorPlayer: ' GUI-мен анықталған қате. Консольге журнал жіберілді.'
   wwcInventoryError: '%i пайдаланушысының GUI көмегімен анықталған қате, бұл мәселені
     әзірлеушіге хабарлаңыз.'
-  wwcWatson117Warning: 'ЕСКЕРТУ: Уотсон IBM SDK-дегі қатеге байланысты 1.17-те немесе
-    JDK 16-да дұрыс жұмыс істемеуі мүмкін. Бұл болашақ жаңартуда бекітіледі.'
   wwcConfigConversationTranslatorFail: ' %i қосу сәтсіз аяқталды.'
   wwcConfigConversationConsoleTranslatorSuccess: Пайдаланушы %o сәтті қостым.
   wwcConfigConversationTranslatorSuccess: ' Табысты түрде %i қосу.'
   wwcConfigConversationConsoleTranslatorFail: Пайдаланушы %o қосу сәтсіз аяқталды.
+  wwcWatson117Warning: ' Уотсон InacesSibleObjectException себебінен баптандыра алмады.
+    Қазір қолданыстағы сервер JAR дәлелдеріне —illegal-access=рұқсат қосыңыз.'

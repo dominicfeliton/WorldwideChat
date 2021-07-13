@@ -228,10 +228,10 @@ Messages:
     žurnāls.'
   wwcInventoryError: Kļūda konstatēta ar lietotāja GUI ( %i). Lūdzu ziņojiet par šo
     problēmu izstrādātājam.
-  wwcWatson117Warning: 'BRĪDINĀJUMS: Watson, visticamāk, nedarbosies pareizi 1.17,
-    vai konkrētāk JDK 16 sakarā ar kļūdu IBM SDK. Tas tiks fiksēts nākamajā atjauninājumā.'
   wwcConfigConversationTranslatorFail: ' Neizdevās iespējot %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Lietotājs %es veiksmīgi iespējoja
     %o.
   wwcConfigConversationTranslatorSuccess: ' Veiksmīgi iespējots %i.'
   wwcConfigConversationConsoleTranslatorFail: Lietotājs % man neizdevās iespējot %o.
+  wwcWatson117Warning: ' Watson neizdevās inicializēt, jo InacessibleObjectException.
+    Tagad, lūdzu, pievienojiet -illegal-access=atļaut esošajiem servera jar argumentiem.'

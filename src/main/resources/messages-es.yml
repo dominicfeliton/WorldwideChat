@@ -235,12 +235,12 @@ Messages:
     registro a la consola.'
   wwcInventoryError: Error detectado con la GUI del usuario %i. Informe de este problema
     al desarrollador.
-  wwcWatson117Warning: 'ADVERTENCIA: Lo más probable es que Watson no funcione correctamente
-    en 1.17, o más específicamente en JDK 16 debido a un error en el SDK de IBM. Esto
-    se solucionará en una actualización futura.'
   wwcConfigConversationTranslatorFail: ' Error al activar %i.'
   wwcConfigConversationConsoleTranslatorSuccess: El usuario %i ha habilitado satisfactoriamente
     %o.
   wwcConfigConversationTranslatorSuccess: ' Se ha habilitado satisfactoriamente %i.'
   wwcConfigConversationConsoleTranslatorFail: El usuario %i no ha podido habilitar
     %o.
+  wwcWatson117Warning: ' Watson no ha podido inicializarse debido a una excepción
+    InacessibleObjectException. Por ahora, agregue —illegal-access=permit a los argumentos
+    jar del servidor existentes.'

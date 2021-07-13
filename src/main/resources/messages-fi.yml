@@ -228,11 +228,11 @@ Messages:
     on lähetetty loki.'
   wwcInventoryError: 'Virhe havaittu käyttäjä %i: n käyttöliittymän yhteydessä. Ilmoita
     tästä ongelmasta kehittäjälle.'
-  wwcWatson117Warning: 'VAROITUS: Watson ei todennäköisesti toimi oikein 1.17: ssä
-    tai tarkemmin JDK 16: ssä IBM SDK: n virheen vuoksi. Tämä korjataan tulevassa
-    päivityksessä.'
   wwcConfigConversationTranslatorFail: ' %i: n ottaminen käytöstä epäonnistui.'
   wwcConfigConversationConsoleTranslatorSuccess: Käyttäjä %i onnistuneesti otettiin
     %o.
   wwcConfigConversationTranslatorSuccess: ' Onnistuneesti otettu %i.'
   wwcConfigConversationConsoleTranslatorFail: Käyttäjä %i epäonnistui ota %o.
+  wwcWatson117Warning: ' Watson ei ole alustanut InacessibleObjectExceptionin vuoksi.
+    Toistaiseksi, ole hyvä ja lisää —laiton-access=lupa olemassa oleviin palvelimen
+    purkki argumentteja.'

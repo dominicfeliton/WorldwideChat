@@ -228,10 +228,10 @@ Messages:
     į konsolę.'
   wwcInventoryError: Klaida aptikta naudotojo %i GUI. Prašome pranešti apie šią problemą
     kūrėjui.
-  wwcWatson117Warning: 'ĮSPĖJIMAS: Watson greičiausiai nesugebės tinkamai veikti 1.17
-    arba konkrečiau JDK 16 dėl klaidos IBM SDK. Tai bus nustatyta ateityje atnaujinti.'
   wwcConfigConversationTranslatorFail: ' Nepavyko įgalinti %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Vartotojas %Aš sėkmingai įgalino
     %o.
   wwcConfigConversationTranslatorSuccess: ' Sėkmingai įgalinta %i.'
   wwcConfigConversationConsoleTranslatorFail: Vartotojo %i nepavyko įgalinti %o.
+  wwcWatson117Warning: ' Watson nepavyko inicijuoti dėl inacessibleObjectException.
+    Dabar pridėkite —neteisėta prieiga = leidimą prie esamų serverio jar argumentų.'

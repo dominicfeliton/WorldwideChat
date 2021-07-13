@@ -236,10 +236,10 @@ Messages:
     конзолата.'
   wwcInventoryError: Грешка откриена со GUI на корисник %i. Ве молиме пријавете го
     ова прашање на програмерот.
-  wwcWatson117Warning: 'ПРЕДУПРЕДУВАЊЕ: Вотсон, најверојатно, нема да успее правилно
-    да функционира на 1.17, или поточно JDK 16 поради бубачка во IBM SDK. Ова ќе биде
-    фиксирано во идно ажурирање.'
   wwcConfigConversationTranslatorFail: ' Не успеа да се овозможи %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Корисникот %i успешно овозможи %o.
   wwcConfigConversationTranslatorSuccess: ' Успешно овозможена %i.'
   wwcConfigConversationConsoleTranslatorFail: Корисникот % Јас не успеа %o.
+  wwcWatson117Warning: ' Вотсон не успеа да се иницијализира поради inacesSibleObjecEctException.
+    За сега, ве молиме додадете -незаконски пристап = дозвола на вашиот постоечки
+    сервер тегла аргументи.'

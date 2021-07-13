@@ -236,10 +236,10 @@ Messages:
     registre a la consola.'
   wwcInventoryError: S\'ha detectat un error amb la IGU de l\'usuari %i, si us plau,
     informeu d\'aquest problema al desenvolupador
-  wwcWatson117Warning: 'ADVERTÈNCIA: El més probable és que Watson falli correctament
-    en 1.17, o més específicament JDK 16 a causa d\''un error en l\''IBM SDK. Això
-    es solucionarà en una futura actualització.'
   wwcConfigConversationTranslatorFail: ' No s\''ha pogut activar %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Usuari %i habilita amb èxit %o.
   wwcConfigConversationTranslatorSuccess: ' Activa %i amb èxit.'
   wwcConfigConversationConsoleTranslatorFail: Usuari %No he pogut activar %o.
+  wwcWatson117Warning: ' Watson no s\''ha pogut inicialitzar a causa d\''una inacessibleObjectException.
+    Per ara, si us plau, afegiu —illegal-access=permit als arguments del vostre servidor
+    existent.'

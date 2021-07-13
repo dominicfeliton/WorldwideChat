@@ -221,10 +221,10 @@ Messages:
     به سیستم به کنسول ارسال شده است.'
   wwcInventoryError: خطای تشخیص داده شده با رابط کاربری گرافیکی کاربر %i. لطفا این
     مشکل را به توسعه دهنده گزارش دهید.
-  wwcWatson117Warning: 'هشدار: به احتمال زیاد واتسون به درستی عملکرد 1.17 یا به طور
-    خاص JDK 16 به دلیل اشکال در IBM SDK شکست خواهد خورد. این خواهد شد در یک به روز
-    رسانی آینده ثابت.'
   wwcConfigConversationTranslatorFail: ' قادر به کارکردن %i شکست خورد.'
   wwcConfigConversationConsoleTranslatorSuccess: کاربر %i با موفقیت توان %o.
   wwcConfigConversationTranslatorSuccess: ' با موفقیت کار %i را ممکن کرد.'
   wwcConfigConversationConsoleTranslatorFail: کاربری %o موفق به کارمندی %o نشدم.
+  wwcWatson117Warning: ' واتسون به دلیل InacessibleObjectexCeption نتوانست مقداردهی
+    اولیه شود. در حال حاضر، لطفا —illegal-access=اجازه را به استدلال جار سرور موجود
+    خود اضافه کنید.'

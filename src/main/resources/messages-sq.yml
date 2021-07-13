@@ -237,11 +237,11 @@ Messages:
     në tastierë.'
   wwcInventoryError: Gabim u zbulua me GUI të përdoruesit %i. Ju lutemi, raportoni
     këtë problem te zhvilluesi.
-  wwcWatson117Warning: 'KUJDES: Watson ka shumë të ngjarë të dështojë të funksionojë
-    siç duhet në 1.17, ose më konkretisht JDK 16 për shkak të një bug në IBM SDK.
-    Kjo do të fiksohet në një përditësim të ardhshëm.'
   wwcConfigConversationTranslatorFail: ' Dështoi në mundësuar %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Përdoruesi %i aktivizuar me sukses
     %o.
   wwcConfigConversationTranslatorSuccess: ' U aktivizua me sukses %i.'
   wwcConfigConversationConsoleTranslatorFail: Përdoruesi %i dështoi të mundësuar %o.
+  wwcWatson117Warning: ' Watson ka dështuar të inicializojë për shkak të një InacesSibleObjectException.
+    Tani për tani, ju lutemi shtoni —illegal-access=leje për argumentet ekzistuese
+    të serverit tuaj jar.'

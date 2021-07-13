@@ -226,11 +226,11 @@ Messages:
     було відправлено в консоль.'
   wwcInventoryError: Виявлено помилку з графічним інтерфейсом користувача %i. Будь
     ласка, повідомте про цю проблему розробнику.
-  wwcWatson117Warning: 'УВАГА: Watson, швидше за все, не зможе належним чином функціонувати
-    на 1.17, або більш конкретно JDK 16 через помилку в SDK IBM. Це буде виправлено
-    в майбутньому оновленні.'
   wwcConfigConversationTranslatorFail: ' Не вдалося вбути %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Користувач %i успішно в\' язував
     %o.
   wwcConfigConversationTranslatorSuccess: ' Успішно вняє %i.'
   wwcConfigConversationConsoleTranslatorFail: Користувач %i не вдалося вмикання %o.
+  wwcWatson117Warning: ' Уотсон не вдалося ініціалізувати через inacesSibleObjectException.
+    Зараз, будь ласка, додайте —illegal-access=Дозволити до наявних аргументів сервера
+    jar.'

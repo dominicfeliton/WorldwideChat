@@ -202,9 +202,9 @@ Messages:
   wwcConfigCacheInvalid: ขนาดแคชของนักแปลไม่ถูกต้องผิดนัดที่ 10...
   wwcInventoryErrorPlayer: ' ข้อผิดพลาดที่ตรวจพบกับ GUI ของคุณบันทึกถูกส่งไปยังคอนโซล'
   wwcInventoryError: ข้อผิดพลาดที่ตรวจพบกับ GUI ของผู้ใช้ %i โปรดรายงานปัญหานี้ไปยังผู้พัฒนา
-  wwcWatson117Warning: 'คำเตือน: วัตสันมักจะล้มเหลวในการทำงานอย่างถูกต้องบน 1.17 หรือมากกว่าโดยเฉพาะ
-    JDK 16 เนื่องจากข้อผิดพลาดใน IBM SDKนี้จะได้รับการแก้ไขในการปรับปรุงในอนาคต.'
   wwcConfigConversationTranslatorFail: ' ล้มเหลวในการเปิด %i'
   wwcConfigConversationConsoleTranslatorSuccess: ผู้ใช้ %ฉันเปิด %o เรียบร้อยแล้ว
   wwcConfigConversationTranslatorSuccess: ' เปิดใช้งาน %i สำเร็จแล้ว'
   wwcConfigConversationConsoleTranslatorFail: ผู้ใช้ %i ไม่สามารถเปิด %o ได้
+  wwcWatson117Warning: ' วัตสันล้มเหลวในการเตรียมใช้งานเนื่องจาก InacessibleObjectExceptionสำหรับตอนนี้โปรดเพิ่ม
+    —ผิดกฏหมายเข้าถึง = อนุญาตให้มีอาร์กิวเมนต์ขวดเซิร์ฟเวอร์ที่มีอยู่'

@@ -2,8 +2,10 @@ package com.expl0itz.worldwidechat.configuration;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.InaccessibleObjectException;
 
 import org.bstats.bukkit.Metrics;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -167,8 +169,13 @@ public class ConfigurationHandler {
                 main.setTranslatorName("Invalid");
             }
         } catch (Exception e) {
-        	main.getLogger().severe("(" + main.getTranslatorName() + ") " + e.getMessage());
-        	e.printStackTrace();
+        	if (e instanceof InaccessibleObjectException) {
+                // Watson does not work properly on 1.17 without --illegal-access=permit. Remove this once the IBM devs fix it
+                main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcWatson117Warning"));
+        	} else {
+        		main.getLogger().severe("(" + main.getTranslatorName() + ") " + e.getMessage());
+            	e.printStackTrace();
+        	}
         	main.setTranslatorName("Invalid");
         }
         //Rate-limit Settings

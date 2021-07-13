@@ -231,11 +231,11 @@ Messages:
     ke konsol.'
   wwcInventoryError: Galat terdeteksi dengan GUI pengguna %i. Harap laporkan masalah
     ini ke pengembang.
-  wwcWatson117Warning: 'PERINGATAN: Watson kemungkinan besar gagal berfungsi dengan
-    benar pada 1.17, atau lebih khusus JDK 16 karena bug di IBM SDK. Ini akan diperbaiki
-    di masa mendatang update.'
   wwcConfigConversationTranslatorFail: ' Gagal mengaktifkan %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Pengguna %i berhasil mengaktifkan
     %o.
   wwcConfigConversationTranslatorSuccess: ' Berhasil mengaktifkan %i.'
   wwcConfigConversationConsoleTranslatorFail: Pengguna %i gagal mengaktifkan %o.
+  wwcWatson117Warning: ' Watson telah gagal untuk menginisialisasi karena InacessibleObjectException.
+    Untuk saat ini, silakan tambahkan —illegal-access=permit ke argumen jar server
+    yang ada.'

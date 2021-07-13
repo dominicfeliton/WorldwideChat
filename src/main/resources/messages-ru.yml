@@ -232,12 +232,12 @@ Messages:
     отправлен журнал.'
   wwcInventoryError: Обнаружена ошибка с графическим интерфейсом пользователя %i.
     Сообщите об этой проблеме разработчику.
-  wwcWatson117Warning: ВНИМАНИЕ! Скорее всего, Watson не сможет нормально работать
-    в версии 1.17 или, точнее, JDK 16 из-за ошибки в IBM SDK. Это будет исправлено
-    в следующем обновлении.
   wwcConfigConversationTranslatorFail: ' Не удалось включить %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Пользователь %я успешно включить
     %o.
   wwcConfigConversationTranslatorSuccess: ' Успешно включено %i.'
   wwcConfigConversationConsoleTranslatorFail: Пользователю %Мне не удалось включить
     %o.
+  wwcWatson117Warning: ' Watson не удалось инициализировать из-за InacessibleObjectException.
+    На данный момент добавьте —illegal-access=permit к существующим аргументам серверной
+    jar.'

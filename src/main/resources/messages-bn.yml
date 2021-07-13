@@ -220,11 +220,11 @@ Messages:
     লগ পাঠানো হয়েছে।'
   wwcInventoryError: ব্যবহারকারী %i এর GUI এর সাথে ত্রুটি সনাক্ত করা হয়েছে। অনুগ্রহ
     করে ডেভেলপারের কাছে এই সমস্যা রিপোর্ট করুন।
-  wwcWatson117Warning: 'সতর্কতা: আইবিএম এসডিকে একটি বাগ কারণে ওয়াটসন সম্ভবত 1.17,
-    বা আরো বিশেষভাবে JDK 16 এ সঠিকভাবে কাজ করতে ব্যর্থ হবে। এটি একটি ভবিষ্যতের আপডেটে
-    সংশোধন করা হবে।'
   wwcConfigConversationTranslatorFail: ' %1$i সক্রিয় করতে ব্যর্থ।'
   wwcConfigConversationConsoleTranslatorSuccess: ব্যবহারকারী %2 %o সফলভাবে সক্রিয়
     করা হয়েছে।
   wwcConfigConversationTranslatorSuccess: ' %i সফলভাবে সক্রিয় করা হয়েছে।'
   wwcConfigConversationConsoleTranslatorFail: ব্যবহারকারী %2 %o সক্রিয় করতে ব্যর্থ।
+  wwcWatson117Warning: ' একটি InacessibleObjectException কারণে ওয়াটসন আরম্ভ করতে
+    ব্যর্থ হয়েছে। এখন জন্য, দয়া করে —illegal-access=আপনার বিদ্যমান সার্ভার জার আর্গুমেন্টগুলিতে
+    পারমিট যোগ করুন।'

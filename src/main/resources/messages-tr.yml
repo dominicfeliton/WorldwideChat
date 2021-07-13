@@ -219,10 +219,10 @@ Messages:
   wwcInventoryErrorPlayer: ' GUI\''niz ile hata algılandı. Konsola bir günlük gönderildi.'
   wwcInventoryError: '%i kullanıcısının GUI ile hata tespit edildi. Lütfen bu sorunu
     geliştiriciye bildirin.'
-  wwcWatson117Warning: 'UYARI: Watson büyük olasılıkla IBM SDK\''daki bir hata nedeniyle
-    1.17 veya daha spesifik olarak JDK 16\''da düzgün çalışmayacaktır. Bu, gelecekteki
-    bir güncellemede giderilecektir.'
   wwcConfigConversationTranslatorFail: ' %i etkinleştirilemedi.'
   wwcConfigConversationConsoleTranslatorSuccess: '%i kullanıcısı %o başarıyla etkinleştirdi.'
   wwcConfigConversationTranslatorSuccess: ' %i başarıyla etkinleştirildi.'
   wwcConfigConversationConsoleTranslatorFail: Kullanıcı %i, %o etkinleştiremedi.
+  wwcWatson117Warning: ' Watson bir InacessibleObjectException nedeniyle başlatılamadı.
+    Şimdilik, lütfen mevcut sunucu kavanozu bağımsız değişkenlerinize —illegal-access=izin
+    ekleyin.'

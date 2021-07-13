@@ -231,10 +231,10 @@ Messages:
     En logg har skickats till konsolen.'
   wwcInventoryError: Fel som upptäcktes med användaranvändargränssnittet för användaren
     %i. Rapportera problemet till utvecklaren.
-  wwcWatson117Warning: 'VARNING: Watson kommer sannolikt inte att fungera korrekt
-    på 1.17, eller mer specifikt JDK 16 på grund av ett fel i IBM SDK. Detta kommer
-    att rättas i en framtida uppdatering.'
   wwcConfigConversationTranslatorFail: ' Det gick inte att aktivera %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Användaren %i aktiverad %o.
   wwcConfigConversationTranslatorSuccess: ' Aktiverad %i.'
   wwcConfigConversationConsoleTranslatorFail: Användaren %i kunde inte aktivera %o.
+  wwcWatson117Warning: ' Watson har misslyckats med att initiera på grund av ett InacessibleObjectException.
+    För tillfället, lägg till —illegal-access=permit till dina befintliga server jar
+    argument.'

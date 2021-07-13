@@ -244,12 +244,12 @@ Messages:
     sa console.'
   wwcInventoryError: Error na nakita sa GUI ng tagagamit na %i. Pakiulat ang isyung
     ito sa developer.
-  wwcWatson117Warning: 'BABALA: Ang Watson ay malamang na mabibigo upang gumana nang
-    maayos sa 1.17, o mas partikular na JDK 16 dahil sa isang bug sa IBM SDK. Ito
-    ay maayos sa isang pag-update sa hinaharap.'
   wwcConfigConversationTranslatorFail: ' Nabigong paganahin ang %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Matagumpay na pinagana ng tagagamit
     ang %o.
   wwcConfigConversationTranslatorSuccess: ' Matagumpay na pinagana ang %i.'
   wwcConfigConversationConsoleTranslatorFail: Nabigo ang gumagamit %i na paganahin
     ang %o.
+  wwcWatson117Warning: ' Nabigo si Watson na magpasimula dahil sa isang InacesSibleObjection.
+    Sa ngayon, mangyaring idagdag —ilegal-access=permit sa iyong umiiral na mga argumento
+    ng server jar.'

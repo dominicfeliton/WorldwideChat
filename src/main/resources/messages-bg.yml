@@ -230,12 +230,12 @@ Messages:
     дневник.'
   wwcInventoryError: Грешка при GUI на потребител %i. Моля, съобщете за този проблем
     на разработчика.
-  wwcWatson117Warning: 'ВНИМАНИЕ: Уотсън най-вероятно няма да успее да функционира
-    правилно на 1.17, или по-конкретно JDK 16 поради бъг в SDK на IBM. Това ще бъде
-    коригирано в бъдеща актуализация.'
   wwcConfigConversationTranslatorFail: ' Грешка при стартиране %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Потребителът %i успешно е стартирана
     %o.
   wwcConfigConversationTranslatorSuccess: ' Успешно е стартирана %i.'
   wwcConfigConversationConsoleTranslatorFail: Потребителът %i не успя да бъде стартирана
     %o.
+  wwcWatson117Warning: ' Уотсън не успя да инициализира поради неосъщестSibleObjecEctException.
+    За сега, моля, добавете — незаконен достъп = разрешение към съществуващите аргументи
+    на сървърния буркан.'

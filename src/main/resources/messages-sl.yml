@@ -230,10 +230,9 @@ Messages:
   wwcInventoryErrorPlayer: ' Napaka, odkrita z vašim GUI. V konzolo je bil poslan
     dnevnik.'
   wwcInventoryError: Napaka, odkrita z GUI uporabnika %i, to težavo sporočite razvijalcu.
-  wwcWatson117Warning: 'OPOZORILO: Watson najverjetneje ne bo pravilno deloval na
-    1.17 ali natančneje JDK 16 zaradi napake v IBM SDK. To bo odpravljeno v prihodnji
-    posodobitvi.'
   wwcConfigConversationTranslatorFail: ' Ni uspelo omogočiti %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Uporabnik %sem uspešno omogočil %o.
   wwcConfigConversationTranslatorSuccess: ' Uspešno omogočeno %i.'
   wwcConfigConversationConsoleTranslatorFail: Uporabnik %mi ni uspelo omogočiti %o.
+  wwcWatson117Warning: ' Watson ni uspelo inicializirati zaradi InacessibleObjectExcepsible.
+    Za zdaj dodajte —ilegalni acces=dovolite svojim obstoječim argumentom jar strežnika.'

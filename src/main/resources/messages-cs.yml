@@ -227,10 +227,10 @@ Messages:
     Do konzoly byl odeslán protokol.'
   wwcInventoryError: Chyba zjištěna pomocí grafického uživatelského rozhraní uživatele
     %i. Ohlaste tento problém vývojáři.
-  wwcWatson117Warning: 'VAROVÁNÍ: Watson pravděpodobně selže správně fungovat na 1.17,
-    nebo konkrétněji JDK 16 kvůli chybě v sadě IBM SDK. To bude opraveno v budoucí
-    aktualizaci.'
   wwcConfigConversationTranslatorFail: ' Nepodařilo se zapnout %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Uživatel %úspěšně povolen %o.
   wwcConfigConversationTranslatorSuccess: ' Úspěšně povoleno %i.'
   wwcConfigConversationConsoleTranslatorFail: Uživatel %Nepodařilo se mi zapnout %o.
+  wwcWatson117Warning: ' Watson se nepodařilo inicializovat z důvodu InacessibleObjectException.
+    Prozatím prosím přidejte —illegal-access=povolit ke stávajícím argumentům serveru
+    jar.'

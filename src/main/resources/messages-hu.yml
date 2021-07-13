@@ -232,11 +232,10 @@ Messages:
   wwcInventoryErrorPlayer: ' Hiba észlelt a GUI. A rendszer egy naplót küldött a konzolnak.'
   wwcInventoryError: Hiba történt a (z) %i felhasználó GUI-jával. Jelentse ezt a problémát
     a fejlesztőnek.
-  wwcWatson117Warning: 'FIGYELMEZTETÉS: Watson valószínűleg nem fog megfelelően működni
-    az 1.17-en, pontosabban a JDK 16-on az IBM SDK hibája miatt. Ezt egy későbbi frissítés
-    rögzíti.'
   wwcConfigConversationTranslatorFail: ' Nem sikerült a (z) %i.'
   wwcConfigConversationConsoleTranslatorSuccess: '%i felhasználó sikeresen engedélyezett
     %o.'
   wwcConfigConversationTranslatorSuccess: ' Sikeresen engedélyezve: %i.'
   wwcConfigConversationConsoleTranslatorFail: A (z) %i felhasználót nem sikerült beengedni.
+  wwcWatson117Warning: ' A Watson nem sikerült inicializálni egy InacessibleObjectException
+    miatt. Most add hozzá —illegal-access=engedély a meglévő szerver jar argumentumokat.'

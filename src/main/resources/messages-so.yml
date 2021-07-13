@@ -232,12 +232,12 @@ Messages:
   wwcInventoryErrorPlayer: ' Error ogaado aad gui. log A ayaa loo diray Console ah.'
   wwcInventoryError: Khalad la ogaaday GUI ee isticmaalaha %i. Fadlan u sheeg arintan
     horumariyaha.
-  wwcWatson117Warning: 'DIGNIIN: Watson waxay u badan tahay inuu ku guuldareysto inuu
-    si habboon u shaqeeyo 1.17, ama si gaar ah JDK 16 sababtoo ah cayayaanka IBM SDK.
-    Tan waxaa lagu hagaajin doonaa in update mustaqbalka.'
   wwcConfigConversationTranslatorFail: ' Ku guuldareystay in la suurtogeliyo %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Isticmaalaha %waxaan si guul leh
     u awoodiay %o.
   wwcConfigConversationTranslatorSuccess: ' Si guul leh loo karto %i.'
   wwcConfigConversationConsoleTranslatorFail: Isticmaalaha %waxaan ku guuldareystay
     inuu awoodo %o.
+  wwcWatson117Warning: ' Watson ayaa ku guuldareysatay in ay bilowdo sababtoo ah inacessibleObjectexception.
+    Hadda, fadlan ku dar —illegal-access=ogolaanshaha doodahaaga server-ka ee hadda
+    jira.'
