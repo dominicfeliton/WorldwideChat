@@ -138,16 +138,20 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
 			previousPageMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIPreviousPageButton"));
 		    previousPageButton.setItemMeta(previousPageMeta);
-		    contents.set(5, 2, ClickableItem.of(previousPageButton, 
-					e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.previous().getPage())));
+		    if (!pagination.isFirst()) {
+		    	contents.set(5, 2, ClickableItem.of(previousPageButton, 
+						e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.previous().getPage())));
+		    }
 		    
 		    /* Bottom Right Option: Next Page */
 			ItemStack nextPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
 			ItemMeta nextPageMeta = nextPageButton.getItemMeta();
 			nextPageMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUINextPageButton"));
 		    nextPageButton.setItemMeta(nextPageMeta);
-		    contents.set(5, 6, ClickableItem.of(nextPageButton,
-	                e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.next().getPage())));
+		    if (!pagination.isLast()) {
+		    	contents.set(5, 6, ClickableItem.of(nextPageButton,
+		                e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.next().getPage())));
+		    }
 		} catch (Exception e) {
 	    	final TextComponent inventoryError = Component.text()
                     .append(main.getPluginPrefix().asComponent())

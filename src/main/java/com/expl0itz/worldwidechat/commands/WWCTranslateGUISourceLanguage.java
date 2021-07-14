@@ -112,10 +112,12 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
 			previousPageMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIPreviousPageButton"));
 		    previousPageButton.setItemMeta(previousPageMeta);
-		    contents.set(5, 2, ClickableItem.of(previousPageButton, 
-					e -> {
-						getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.previous().getPage());
-					}));
+		    if (!pagination.isFirst()) {
+		    	contents.set(5, 2, ClickableItem.of(previousPageButton, 
+						e -> {
+							getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.previous().getPage());
+						}));
+		    }
 			
 		    /* Bottom Middle Option: Auto-detect Source Language */
 		    ItemStack skipSourceButton = new ItemStack(Material.BOOKSHELF);
@@ -142,10 +144,12 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 			ItemMeta nextPageMeta = nextPageButton.getItemMeta();
 			nextPageMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUINextPageButton"));
 		    nextPageButton.setItemMeta(nextPageMeta);
-		    contents.set(5, 6, ClickableItem.of(nextPageButton,
-		    		e -> {
-						getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.next().getPage());
-					}));;
+		    if (!pagination.isLast()) {
+		    	contents.set(5, 6, ClickableItem.of(nextPageButton,
+			    		e -> {
+							getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player, pagination.next().getPage());
+						}));;
+		    }
 	    } catch (Exception e) {
 	    	final TextComponent inventoryError = Component.text()
                     .append(main.getPluginPrefix().asComponent())
