@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Endre Amazon-tilgangsnøkkel
   wwcrFail: ' Kan ikke laste WorldwideChat på nytt.'
   wwcConfigGUIUpdateCheckerButton: Endre Se etter oppdateringer forsinkelse
-  wwcSignTranslationFail: ' Kan ikke hente en gyldig oversettelse av måltegnet fra
-    %i.'
   wwcUpdaterFailedGeneric: Kan ikke se etter WorldwideChat-oppdateringer.
   wwcConfigConversationUpdateCheckerInput: Gjeldende forsinkelse på oppdateringskontrollen
     er %i sekunder. Skriv inn noe som er større enn 10 for å angi en ny verdi, eller
@@ -153,8 +151,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Tilbake til hovedoversettingsmeny
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Global chat blir oversatt fra
     %i til %o.'
-  wwcBookTranslationFail: ' Kan ikke få en gyldig oversettelse av én eller flere sider
-    i målboken fra %i.'
   wwcConfigGUITranslatorSettings: Konfigurasjon av oversettelse
   wwcConfigConversationGoogleTranslateAPIKeyInput: Gjeldende API-nøkkel er %i. Skriv
     inn en API-nøkkel for Google Translate, eller skriv 0 for å gå tilbake.
@@ -230,3 +226,27 @@ Messages:
     For nå, vennligst legg til —illegal-access=tilladelse til dine eksisterende server
     jar argumenter.
   wwcDeluxeChatIncompatible: Dette plugin fungerer muligvis ikke korrekt med DeluxeChat.
+  wwcSignTranslationFail: ' Kan ikke oversette én eller flere linjer på måltegnet.'
+  wwcBookTranslationFail: ' Kan ikke oversette én eller flere sider i målboken.'
+  wwctiOffTarget: ' Vareoversettelse deaktivert for %i.'
+  wwctiPlayerNotFound: ' Spiller %i er enten ikke funnet, eller er ikke en aktiv oversetter.'
+  wwctiOffSender: ' Vareoversettelse deaktivert.'
+  wwcItemTranslateTitleStock: ' Kan ikke oversette standard varenavn.'
+  wwcItemTranslateLoreFail: ' Kan ikke oversette varelore.'
+  wwcItemTranslateTitleFail: ' Kan ikke oversette elementnavn.'
+  wwctiNotATranslator: ' Du er ikke en aktiv oversetter! Sørg for, at du har angivet
+    dette med /wwct.'
+  wwctGUIItemButton: Veksle elementoversettelse
+  wwcItemTranslateTitleDone: ' Oversatt element tittelen vellykket.'
+  wwcGUITempItem: Vare Visning
+  wwcItemTranslateStart: ' Oversette målet element...'
+  wwcSignTranslationFailCatastrophic: ' Kan ikke oversette måltegn.'
+  wwcItemTranslationFailCatastrophic: ' Kan ikke oversette målobjekt.'
+  wwcBookTranslateTitleSuccess: ' Oversatt boktittel: %i'
+  wwctiOnSender: ' Vareoversettelse aktivert. Høyreklikk med et element i hovedhånden
+    for å oversette det!'
+  wwcItemTranslateLoreStart: ' Oversette lore av målet element...'
+  wwcItemTranslateLoreDone: ' Oversatt element lore vellykket.'
+  wwctiOnTarget: ' Vareoversettelse aktivert for %i.'
+  wwcBookTranslationFailCatastrophic: ' Kan ikke oversette målboken.'
+  wwcBookTranslateTitleFail: ' Kan ikke oversette boktittel.'

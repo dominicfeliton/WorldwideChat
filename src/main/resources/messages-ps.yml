@@ -5,7 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: د ایمیزون لاسرسی کلیدي بدل کړئ
   wwcrFail: ' WorldWiDeChat بیا پورته کولو کې پاتې راغلی.'
   wwcConfigGUIUpdateCheckerButton: د اوسمهالونو ځنډ لپاره چیک
-  wwcSignTranslationFail: . %i څخه د خپل هدف نښان معتبر ژباړه نه شي ترلاسه کولی
   wwcUpdaterFailedGeneric: د WorldWieChat تازه معلوماتو لپاره د کتلو توان نلري.
   wwcConfigConversationUpdateCheckerInput: په اوسمهالول چیکر کې اوسنی ځنډ %i ثانیې
     دی. د نوي ارزښت ټاکلو لپاره د 10 څخه ډیر څه ولیکئ، یا د 10 څخه لږ څه چې بیرته
@@ -152,8 +151,6 @@ Messages:
   wwctGUIBackToMainMenuButton: بېرته اصلي ژباړې غورنۍ ته
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' ګلوبل چیٹ د %i څخه تر %o پورې
     ژباړل کیږي.'
-  wwcBookTranslationFail: ' د خپل هدف کتاب د یو یا ډیرو مخونو معتبر ژباړه نه شي ترلاسه
-    کولی.'
   wwcConfigGUITranslatorSettings: ژباړونکي سازونه
   wwcConfigConversationGoogleTranslateAPIKeyInput: د اوسني API کیلي دی %i. مهرباني
     وکړئ د ګوګل ژباړنې لپاره د API کیلي ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
@@ -229,3 +226,27 @@ Messages:
     اوس لپاره، مهرباني وکړئ د خپل موجوده سرور جال مباحثو ته اجازه ورکړئ -غیرقانوني
     لاسرسی = اجازه ورکړئ.
   wwcDeluxeChatIncompatible: دا فلپین ممکن د ډیلیکسټ سره سم کار ونه کړي.
+  wwcSignTranslationFail: ' ستاسو په نښه نښه کې د یو یا ډیرو لینونو ژباړلو توان نلري.'
+  wwcBookTranslationFail: ' د خپل هدف کتاب کې د یو یا ډیرو مخونو ژباړلو توان نلري.'
+  wwctiOffTarget: .توکی ژباړه د %i لپاره ناتوانول شو
+  wwctiPlayerNotFound: ' لوبغاړي %i یا نه موندل شوی، یا فعال ژباړونکی نه دی.'
+  wwctiOffSender: ' د توکو ژباړه معلول.'
+  wwcItemTranslateTitleStock: . د تلواله توکي نومونه نه شي ژباړل
+  wwcItemTranslateLoreFail: ' د توکو لیور ژباړلو کې پاتې راغی.'
+  wwcItemTranslateTitleFail: . د توکو نوم ژباړلو کې پاتې راغی
+  wwctiNotATranslator: ' تاسو فعال ژباړن نه یاست! ډاډ ترلاسه کړئ چې تاسو دا د /wwct
+    سره ترتیب کړی دی.'
+  wwctGUIItemButton: د توکو ژباړه توګول
+  wwcItemTranslateTitleDone: ' ژباړل شوی توکی عنوان په بریالیتوب سره'
+  wwcGUITempItem: توکي ښودنه
+  wwcItemTranslateStart: ' د هدف توکي ژباړل...'
+  wwcSignTranslationFailCatastrophic: ' د نښه نښه ژباړلو کې پاتې راغله.'
+  wwcItemTranslationFailCatastrophic: ' د هدف توکي ژباړلو کې پاتې راغی.'
+  wwcBookTranslateTitleSuccess: ' د ژباړل شوي کتاب سرليک: %i'
+  wwctiOnSender: ' د توکو ژباړه فعاله شوه. په خپل اصلي لاس کې د یو توکي سره ښی کلیک
+    وکړئ ترڅو دا ژباړئ!'
+  wwcItemTranslateLoreStart: ' د هدف توکي د لور ژباړه...'
+  wwcItemTranslateLoreDone: ' ژباړل شوي توکي په بریالیتوب سره.'
+  wwctiOnTarget: .توکی ژباړل د %i لپاره فعال شو
+  wwcBookTranslationFailCatastrophic: ' د هدف کتاب ژباړلو کې پاتې راغی.'
+  wwcBookTranslateTitleFail: ' د کتاب سرلیک ژباړلو کې پاتې راغی.'

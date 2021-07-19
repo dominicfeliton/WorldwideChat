@@ -4,8 +4,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Amazon Erişim Anahtarını Değiştir
   wwcrFail: ' WorldwideChat yeniden yüklenemedi.'
   wwcConfigGUIUpdateCheckerButton: Güncelleştirmeleri Denetimi Gecikmesi Değiştir
-  wwcSignTranslationFail: ' Hedef işaretinizin %i adresinden geçerli bir çevirisi
-    alınamıyor.'
   wwcUpdaterFailedGeneric: WorldwideChat güncelleştirmeleri denetlenemiyor.
   wwcConfigConversationUpdateCheckerInput: Güncelleme denetleyicisi üzerindeki geçerli
     gecikme %i saniye. Yeni bir değer ayarlamak için 10\'dan büyük bir şey yazın veya
@@ -150,8 +148,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Ana Çeviri Menüsüne Geri Dön
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Genel sohbet %i ile %i konumundan
     %o\''ya çevriliyor.'
-  wwcBookTranslationFail: ' Hedef kitabınızın bir veya daha fazla sayfasını %i adresinden
-    geçerli bir çevirisi alınamıyor.'
   wwcConfigGUITranslatorSettings: Çevirmen Yapılandırması
   wwcConfigConversationGoogleTranslateAPIKeyInput: Geçerli API anahtarı %i. Lütfen
     Google Translate için bir API anahtarı girin veya geri dönmek için 0 yazın.
@@ -227,3 +223,27 @@ Messages:
     Şimdilik, lütfen mevcut sunucu kavanozu bağımsız değişkenlerinize —illegal-access=izin
     ekleyin.
   wwcDeluxeChatIncompatible: Bu eklenti DeluxeChat ile düzgün çalışmayabilir.
+  wwcSignTranslationFail: ' Hedef işaretinizde bir veya daha fazla satır çevrilemiyor.'
+  wwcBookTranslationFail: ' Hedef kitabınızda bir veya daha fazla sayfa çevirilemiyor.'
+  wwctiOffTarget: ' Öğe çevirisi devre dışı bırakıldı.'
+  wwctiPlayerNotFound: ' %i oyuncuya bulunamadı ya da etkin bir çevirmen değil.'
+  wwctiOffSender: ' Ürün çevirisi devre dışı.'
+  wwcItemTranslateTitleStock: ' Varsayılan öğe adları çevrilemiyor.'
+  wwcItemTranslateLoreFail: ' Öğe ilmi çevrilemedi.'
+  wwcItemTranslateTitleFail: ' Öğe adı çevrilemedi.'
+  wwctiNotATranslator: ' Sen aktif bir çevirmen değilsin! Bunu /wwct ile ayarladığınızdan
+    emin olun.'
+  wwctGUIItemButton: Öğe Çevirisi Değiştir
+  wwcItemTranslateTitleDone: ' Öğe başlığı başarıyla çevrildi.'
+  wwcGUITempItem: Öğe Göstergesi
+  wwcItemTranslateStart: ' Hedef öğe çevriliyor...'
+  wwcSignTranslationFailCatastrophic: ' Hedef işareti çevrilemedi.'
+  wwcItemTranslationFailCatastrophic: ' Hedef öğe çevrilemedi.'
+  wwcBookTranslateTitleSuccess: ' Çevrilen Kitap Başlığı: %i'
+  wwctiOnSender: ' Öğe çevirisi etkin. Çevirmek için ana elinizdeki bir öğeyle sağ
+    tıklayın!'
+  wwcItemTranslateLoreStart: ' Hedef öğenin ilmi çevriliyor...'
+  wwcItemTranslateLoreDone: ' Öğe irfan başarıyla tercüme edildi.'
+  wwctiOnTarget: ' %i için öğe çevirisi etkinleştirildi.'
+  wwcBookTranslationFailCatastrophic: ' Hedef kitabın çevrilemedi.'
+  wwcBookTranslateTitleFail: ' Kitap başlığı çevrilemedi.'

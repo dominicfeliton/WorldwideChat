@@ -5,7 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Mainīt Amazon piekļuves atslēgu
   wwcrFail: ' Neizdevās pārlādēt WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Mainīt pārbaudi par atjauninājumu kavēšanos
-  wwcSignTranslationFail: ' Neizdevās iegūt derīgu jūsu mērķa zīmes tulkojumu no %i.'
   wwcUpdaterFailedGeneric: Nespēj pārbaudīt WorldwideChat atjauninājumus.
   wwcConfigConversationUpdateCheckerInput: Pašreizējā kavēšanās atjaunināšanas pārbaudītājā
     ir %i sekundes. Ierakstiet kaut ko lielāku par 10, lai iestatītu jaunu vērtību,
@@ -155,8 +154,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Atpakaļ uz galveno tulkojumu izvēlni
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Globālā tērzēšana tiek tulkota
     no %i uz %o.'
-  wwcBookTranslationFail: ' Neizdevās iegūt derīgu vienas vai vairāku jūsu mērķa grāmatas
-    lappušu tulkojumu no %i.'
   wwcConfigGUITranslatorSettings: Tulkotāja konfigurācija
   wwcConfigConversationGoogleTranslateAPIKeyInput: Pašreizējā API atslēga ir %i. Lūdzu
     ievadiet API atslēgu pakalpojumam Google Translate vai ierakstiet 0, lai atgrieztos.
@@ -236,3 +233,27 @@ Messages:
   wwcWatson117Warning: Watson neizdevās inicializēt InAccesssibleObjectException dēļ.
     Tagad, lūdzu, pievienojiet -illegal-access=atļaut esošajiem servera jar argumentiem.
   wwcDeluxeChatIncompatible: Šis spraudnis var nedarboties pareizi ar DeluxeChat.
+  wwcSignTranslationFail: ' Nespēj tulkot vienu vai vairākas rindiņas jūsu mērķa zīmi.'
+  wwcBookTranslationFail: ' Nespēj tulkot vienu vai vairākas lappuses mērķa grāmatā.'
+  wwctiOffTarget: ' Vienuma tulkošana atspējota uz %i.'
+  wwctiPlayerNotFound: ' Spēlētājs %i vai nu nav atrasts, vai nav aktīvs tulkotājs.'
+  wwctiOffSender: ' Vienuma tulkojums atspējots.'
+  wwcItemTranslateTitleStock: ' Nespēj tulkot noklusējuma vienumu nosaukumus.'
+  wwcItemTranslateLoreFail: ' Neizdevās tulkot vienumu mācība.'
+  wwcItemTranslateTitleFail: ' Neizdevās tulkot vienuma nosaukumu.'
+  wwctiNotATranslator: ' Jūs neesat aktīvs tulkotājs! Pārliecinieties, ka esat iestatījis
+    šo ar /wwct.'
+  wwctGUIItemButton: Pārslēgt vienuma tulkošanu
+  wwcItemTranslateTitleDone: ' Tulkots vienuma nosaukums veiksmīgi.'
+  wwcGUITempItem: Vienuma displejs
+  wwcItemTranslateStart: ' Mērķa vienuma tulkošana...'
+  wwcSignTranslationFailCatastrophic: ' Neizdevās tulkot mērķa zīmi.'
+  wwcItemTranslationFailCatastrophic: ' Neizdevās tulkot mērķa vienumu.'
+  wwcBookTranslateTitleSuccess: ' Tulkots grāmatas nosaukums: %i'
+  wwctiOnSender: ' Iespējots vienuma tulkojums. Ar peles labo pogu noklikšķiniet ar
+    vienumu galvenajā rokā, lai to tulkotu!'
+  wwcItemTranslateLoreStart: ' Tulkojot mācība mērķa posteni...'
+  wwcItemTranslateLoreDone: ' Tulkots vienums mācījās veiksmīgi.'
+  wwctiOnTarget: ' Vienuma tulkošana iespējota uz %i.'
+  wwcBookTranslationFailCatastrophic: ' Neizdevās tulkot mērķa grāmatu.'
+  wwcBookTranslateTitleFail: ' Neizdevās tulkot grāmatas nosaukumu.'

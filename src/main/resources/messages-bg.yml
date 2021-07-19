@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Промяна на Amazon ключ за
   wwcrFail: ' Неуспешно зареждане на WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Промяна на проверка за забавяне на актуализациите
-  wwcSignTranslationFail: ' Невъзможно е да се получи валиден превод на целевия знак
-    от %i.'
   wwcUpdaterFailedGeneric: Не можете да проверите за актуализации на WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Текущото забавяне на проверката за актуализиране
     е %i секунди. Въведете нещо по-голямо от 10, за да зададете нова стойност, или
@@ -159,8 +157,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Обратно към Главното меню за преводи
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Глобалният чат се превежда от
     %i към %o.'
-  wwcBookTranslationFail: ' Невъзможно е да се получи валиден превод на една или повече
-    страници от целевата ви книга от %i.'
   wwcConfigGUITranslatorSettings: Конфигурация на преводач
   wwcConfigConversationGoogleTranslateAPIKeyInput: Настоящият API ключ е %i. Моля,
     въведете API ключ за Google Translate или въведете 0, за да се върнете.
@@ -240,3 +236,29 @@ Messages:
     За сега, моля, добавете — незаконен достъп = разрешение към съществуващите аргументи
     на сървърния буркан.
   wwcDeluxeChatIncompatible: Този плъгин може да не работи правилно с DeluxeChat.
+  wwcSignTranslationFail: ' Не можете да преведете един или повече редове на целевия
+    знак.'
+  wwcBookTranslationFail: ' Не можете да преведете една или повече страници във вашата
+    целева книга.'
+  wwctiOffTarget: ' Преводът на елемент е забранен за %i.'
+  wwctiPlayerNotFound: ' Играчът %i или не е намерен, или не е активен преводач.'
+  wwctiOffSender: ' Преводът на елемента е забранен'
+  wwcItemTranslateTitleStock: ' Не може да се преведат имена на елементи по подразбиране.'
+  wwcItemTranslateLoreFail: ' Неуспешно превеждане на елемент ерудиция.'
+  wwcItemTranslateTitleFail: ' Неуспешно превеждане на името на елемент.'
+  wwctiNotATranslator: ' Ти не си активен преводач! Уверете се, че сте настроили това
+    с /wwct.'
+  wwctGUIItemButton: Превключване на превода на артикули
+  wwcItemTranslateTitleDone: ' Преведено заглавие на артикул успешно.'
+  wwcGUITempItem: Показване на артикул
+  wwcItemTranslateStart: ' Превеждане на целеви елемент...'
+  wwcSignTranslationFailCatastrophic: ' Неуспешно превеждане на целевия знак.'
+  wwcItemTranslationFailCatastrophic: ' Неуспешно превеждане на целевия елемент.'
+  wwcBookTranslateTitleSuccess: ' Преведено заглавие на книгата: %i'
+  wwctiOnSender: ' Активиран превод на елемент. Щракнете с десния бутон с елемент
+    в основната си ръка, за да го преведете!'
+  wwcItemTranslateLoreStart: ' Превеждане на легендата за целта...'
+  wwcItemTranslateLoreDone: ' Преведен елемент ерудиция успешно'
+  wwctiOnTarget: ' Преводът на елемент е разрешен за %i.'
+  wwcBookTranslationFailCatastrophic: ' Неуспешно превеждане на целевата книга.'
+  wwcBookTranslateTitleFail: ' Неуспешно превеждане на заглавието на книгата.'

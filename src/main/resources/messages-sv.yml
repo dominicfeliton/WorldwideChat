@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Ändra Amazon-åtkomstnyckel
   wwcrFail: ' Det gick inte att ladda om WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Fördröjning av Ändra Sök efter uppdateringar
-  wwcSignTranslationFail: ' Det gick inte att hämta en giltig översättning av måltecknet
-    från %i.'
   wwcUpdaterFailedGeneric: Det gick inte att söka efter WorldwideChat-uppdateringar.
   wwcConfigConversationUpdateCheckerInput: Den aktuella fördröjningen på uppdateringskontrollen
     är %i sekunder. Skriv något större än 10 för att ställa in ett nytt värde, eller
@@ -159,8 +157,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Tillbaka till huvudmenyn för översättning
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Global chat översätts från %i
     till %o.'
-  wwcBookTranslationFail: ' Det gick inte att hämta en giltig översättning av en eller
-    flera sidor i målboken från %i.'
   wwcConfigGUITranslatorSettings: Översättarens konfiguration
   wwcConfigConversationGoogleTranslateAPIKeyInput: Den aktuella API-nyckeln är %i.
     Ange en API-nyckel för Google Translate, eller skriv 0 för att gå tillbaka.
@@ -240,3 +236,28 @@ Messages:
     argument.
   wwcDeluxeChatIncompatible: Det här insticksprogrammet kanske inte fungerar korrekt
     med DeluxeChat.
+  wwcSignTranslationFail: ' Det gick inte att översätta en eller flera rader på måltecknet.'
+  wwcBookTranslationFail: ' Det går inte att översätta en eller flera sidor i målboken.'
+  wwctiOffTarget: ' Objektöversättning inaktiverad för %i.'
+  wwctiPlayerNotFound: ' Spelaren %i hittas antingen inte, eller är inte en aktiv
+    översättare.'
+  wwctiOffSender: ' Översättning av objekt inaktiverad'
+  wwcItemTranslateTitleStock: ' Det gick inte att översätta standardobjektnamn.'
+  wwcItemTranslateLoreFail: ' Det gick inte att översätta objektet lore.'
+  wwcItemTranslateTitleFail: ' Det gick inte att översätta objektnamn'
+  wwctiNotATranslator: ' Du är inte en aktiv översättare! Se till att du har ställt
+    in detta med /wwct.'
+  wwctGUIItemButton: Växla översättning av objekt
+  wwcItemTranslateTitleDone: ' Översatt objektets titel framgångsrikt.'
+  wwcGUITempItem: Visning av objekt
+  wwcItemTranslateStart: ' Översätter målobjekt...'
+  wwcSignTranslationFailCatastrophic: ' Det gick inte att översätta måltecknet.'
+  wwcItemTranslationFailCatastrophic: ' Det gick inte att översätta målobjektet.'
+  wwcBookTranslateTitleSuccess: ' Titel på översatt bok: %i'
+  wwctiOnSender: ' Översättning av objekt aktiverad. Högerklicka med ett objekt i
+    huvudhanden för att översätta det!'
+  wwcItemTranslateLoreStart: ' Översätta lore av målobjekt...'
+  wwcItemTranslateLoreDone: ' Översatt objekt lore framgångsrikt.'
+  wwctiOnTarget: ' Objektöversättning aktiverad för %i.'
+  wwcBookTranslationFailCatastrophic: ' Det gick inte att översätta målboken.'
+  wwcBookTranslateTitleFail: ' Misslyckades översätta bokens titel.'

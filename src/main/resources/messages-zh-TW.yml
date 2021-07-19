@@ -4,7 +4,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: 變更亞馬遜存取金鑰
   wwcrFail: ' 無法重新載入「全球聊天」。'
   wwcConfigGUIUpdateCheckerButton: 變更檢查更新延遲
-  wwcSignTranslationFail: ' 無法從 %i 取得目標符號的有效轉譯。'
   wwcUpdaterFailedGeneric: 無法檢查全球聊天的更新。
   wwcConfigConversationUpdateCheckerInput: 更新檢查程式的目前延遲為 %i 秒。輸入大於 10 的任何內容以設置一個新值，或者任何小於
     10 的東西返回。
@@ -129,7 +128,6 @@ Messages:
   wwcUnsupportedVersion: 您執行的是不支援的 Bukkit、Spigot 或紙張版本。支援的版本：
   wwctGUIBackToMainMenuButton: 返回主翻譯選單
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' 全球聊天正在從 %i 翻譯到 %o。'
-  wwcBookTranslationFail: ' 無法從 %i 取得目標書冊的一或多頁的有效翻譯。'
   wwcConfigGUITranslatorSettings: 轉換器組態
   wwcConfigConversationGoogleTranslateAPIKeyInput: 目前的 API 金鑰是 %i。請輸入 Google 翻譯的 API
     金鑰，或輸入 0 返回。
@@ -187,3 +185,25 @@ Messages:
   wwcConfigConversationConsoleTranslatorFail: 使用者 %i 無法啟用 %o。
   wwcWatson117Warning: Watson 無法初始化，因為無法使用的物件文字。現在，請將 —非法訪問 = 允許添加到您現有的服務器 jar 參數中。
   wwcDeluxeChatIncompatible: 這個外掛程式可能無法正常運作。
+  wwcSignTranslationFail: ' 無法翻譯目標符號上的一或多行。'
+  wwcBookTranslationFail: ' 無法翻譯目標書冊中的一或多個頁面。'
+  wwctiOffTarget: ' %i 已停用項目轉譯。'
+  wwctiPlayerNotFound: ' 玩家 %i 不是找不到，或者不是活躍的翻譯者。'
+  wwctiOffSender: ' 已停用料號轉譯。'
+  wwcItemTranslateTitleStock: ' 無法轉譯預設項目名稱。'
+  wwcItemTranslateLoreFail: ' 翻譯物品傳說失敗。'
+  wwcItemTranslateTitleFail: ' 無法轉譯項目名稱。'
+  wwctiNotATranslator: ' 你不是一個積極的翻譯者！確保你已經用 /wwcti 設置了這個。'
+  wwctGUIItemButton: 切換項目轉換
+  wwcItemTranslateTitleDone: ' 已成功翻譯物品標題。'
+  wwcGUITempItem: 料號顯示
+  wwcItemTranslateStart: ' 正在正在轉譯目標項目...'
+  wwcSignTranslationFailCatastrophic: ' 無法轉譯目標符號。'
+  wwcItemTranslationFailCatastrophic: ' 無法轉譯目標項目。'
+  wwcBookTranslateTitleSuccess: ' 翻譯書名: %i'
+  wwctiOnSender: ' 已啟用料號轉譯。右鍵點擊主手中的項目即可翻譯它！'
+  wwcItemTranslateLoreStart: ' 正在翻譯目標項目的傳說...'
+  wwcItemTranslateLoreDone: ' 已翻譯的項目傳說成功。'
+  wwctiOnTarget: ' 已啟用 %i 的項目轉譯。'
+  wwcBookTranslationFailCatastrophic: ' 無法翻譯目標書冊。'
+  wwcBookTranslateTitleFail: ' 無法翻譯書籍標題。'

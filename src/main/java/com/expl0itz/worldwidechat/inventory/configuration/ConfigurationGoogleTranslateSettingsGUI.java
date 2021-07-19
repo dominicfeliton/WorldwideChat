@@ -1,4 +1,4 @@
-package com.expl0itz.worldwidechat.configuration;
+package com.expl0itz.worldwidechat.inventory.configuration;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -10,9 +10,8 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCReload;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsWatsonApiKeyConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsWatsonServiceUrlConversation;
-import com.expl0itz.worldwidechat.watson.WatsonTranslation;
+import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsGoogleTranslateApiKeyConversation;
+import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
 
 import co.aikar.taskchain.TaskChain;
 import fr.minuskube.inv.ClickableItem;
@@ -24,52 +23,41 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
-public class ConfigurationWatsonSettingsGUI implements InventoryProvider {
+public class ConfigurationGoogleTranslateSettingsGUI implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
 	
-	public static final SmartInventory watsonSettings = SmartInventory.builder()
-			.id("watsonSettingsMenu")
-			.provider(new ConfigurationWatsonSettingsGUI())
+	public static final SmartInventory googleTranslateSettings = SmartInventory.builder()
+			.id("googleTranslateSettingsMenu")
+			.provider(new ConfigurationGoogleTranslateSettingsGUI())
 			.parent(ConfigurationTranslatorSettingsGUI.translatorSettings)
 			.size(3, 9)
 			.manager(WorldwideChat.getInstance().getInventoryManager())
-			.title(ChatColor.BLUE + WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIWatsonSettings"))
+			.title(ChatColor.BLUE + WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIGoogleTranslateSettings"))
 			.build();
 	
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		/* White stained glass borders */
-		ItemStack customBorders = new ItemStack(Material.BLUE_STAINED_GLASS_PANE);
+		ItemStack customBorders = new ItemStack(Material.RED_STAINED_GLASS_PANE);
 		ItemMeta borderMeta = customBorders.getItemMeta();
 		borderMeta.setDisplayName(" ");
 		customBorders.setItemMeta(borderMeta);
 		contents.fillBorders(ClickableItem.empty(customBorders));
 		
-		/* First Option: Watson Status Button */
-		watsonStatusButton(player, contents);
+		/* First Option: Google Translate is Enabled */
+		googleTranslateStatusButton(player, contents);
 		
-		/* Second Option: Watson API Key */
+		/* Second Option: Google Translate API Key */
 		ConversationFactory apiConvo = new ConversationFactory(main)
 				.withModality(true)
-				.withFirstPrompt(new TranslatorSettingsWatsonApiKeyConversation());
+				.withFirstPrompt(new TranslatorSettingsGoogleTranslateApiKeyConversation());
 		ItemStack apiKeyButton = new ItemStack(Material.NAME_TAG);
 		ItemMeta apiKeyMeta = apiKeyButton.getItemMeta();
-		apiKeyMeta.setDisplayName(ChatColor.GOLD + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIWatsonAPIKeyButton"));
+		apiKeyMeta.setDisplayName(ChatColor.GOLD + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIGoogleTranslateAPIKeyButton"));
 		apiKeyButton.setItemMeta(apiKeyMeta);
 		contents.set(1, 2, ClickableItem.of(apiKeyButton, 
 				e -> {apiConvo.buildConversation(player).begin();}));
-		
-		/* Third Option: Watson Service URL */
-		ConversationFactory urlConvo = new ConversationFactory(main)
-				.withModality(true)
-				.withFirstPrompt(new TranslatorSettingsWatsonServiceUrlConversation());
-		ItemStack urlButton = new ItemStack(Material.NAME_TAG);
-		ItemMeta urlMeta = urlButton.getItemMeta();
-		urlMeta.setDisplayName(ChatColor.GOLD + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIWatsonURLButton"));
-		urlButton.setItemMeta(urlMeta);
-		contents.set(1, 3, ClickableItem.of(urlButton, 
-				e -> {urlConvo.buildConversation(player).begin();}));
 		
 		/* Bottom Right Option: Previous Page */
 		ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
@@ -100,42 +88,42 @@ public class ConfigurationWatsonSettingsGUI implements InventoryProvider {
 
 	@Override
 	public void update(Player player, InventoryContents contents) {
-		watsonStatusButton(player, contents);
+		googleTranslateStatusButton(player, contents);
 	}
 	
-	public void watsonStatusButton(Player player, InventoryContents contents) {
+	public void googleTranslateStatusButton(Player player, InventoryContents contents) {
 		ItemStack translatorStatusButton;
-		if (main.getTranslatorName().equals("Watson")) {
+		if (main.getTranslatorName().equals("Google Translate")) {
 			translatorStatusButton = new ItemStack(Material.EMERALD_BLOCK);
 		} else {
 			translatorStatusButton = new ItemStack(Material.REDSTONE_BLOCK);
 		}
 		ItemMeta translatorStatusButtonMeta = translatorStatusButton.getItemMeta();
-		translatorStatusButtonMeta.setDisplayName(ChatColor.GOLD + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIWatsonStatusButton"));
+		translatorStatusButtonMeta.setDisplayName(ChatColor.GOLD + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIGoogleTranslateStatusButton"));
 		translatorStatusButton.setItemMeta(translatorStatusButtonMeta);
 		contents.set(1, 1, ClickableItem.of(translatorStatusButton, 
 				e -> {
-					    if (!main.getTranslatorName().equals("Watson")) {
-					    	TaskChain<?> chain = WorldwideChat.newSharedChain("enableWatson");
+					    if (!main.getTranslatorName().equals("Google Translate")) {
+					    	TaskChain<?> chain = WorldwideChat.newSharedChain("enableGoogleTranslate");
 					    	chain
 					    	    .sync(() -> {
 					    	        player.closeInventory();
 					    	    })
 					    	    .async(() -> {
 					    	    	try {
-									    WatsonTranslation testConnection = new WatsonTranslation(main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"), main.getConfigManager().getMainConfig().getString("Translator.watsonURL"));
+					    	    		GoogleTranslation testConnection = new GoogleTranslation(main.getConfigManager().getMainConfig().getString("Translator.googleTranslateAPIKey"));
 									    testConnection.initializeConnection();
-									    main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", true);
+									    main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", false);
 									    main.getConfigManager().getMainConfig().set("Translator.useAmazonTranslate", false);
-									    main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate", false);
+									    main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate", true);
 									    main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
 									    final TextComponent successfulChange = Component.text()
 								                .append(main.getPluginPrefix().asComponent())
-								                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationTranslatorSuccess").replace("%i", "IBM Watson")).color(NamedTextColor.GREEN))
+								                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationTranslatorSuccess").replace("%i", "Google Translate")).color(NamedTextColor.GREEN))
 								                .build();
 								            Audience adventureSender = main.adventure().sender(player);
 								        adventureSender.sendMessage(successfulChange);
-								        main.getLogger().info(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationConsoleTranslatorSuccess").replace("%i", player.getName()).replace("%o", "IBM Watson"));
+								        main.getLogger().info(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationConsoleTranslatorSuccess").replace("%i", player.getName()).replace("%o", "Google Translate"));
 								        WWCReload rel = new WWCReload(player, null, null, null);
 								        Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
 					                		@Override
@@ -146,16 +134,16 @@ public class ConfigurationWatsonSettingsGUI implements InventoryProvider {
 									} catch (Exception bad) {
 										final TextComponent badResult = Component.text()
 									            .append(main.getPluginPrefix().asComponent())
-									            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationTranslatorFail").replace("%i", "IBM Watson")).color(NamedTextColor.RED))
+									            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationTranslatorFail").replace("%i", "Google Translate")).color(NamedTextColor.RED))
 									            .build();
 									        Audience adventureSender = main.adventure().sender(player);
 									    adventureSender.sendMessage(badResult);
-									    main.getLogger().severe(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationConsoleTranslatorFail").replace("%i", player.getName()).replace("%o", "IBM Watson"));
+									    main.getLogger().severe(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationConsoleTranslatorFail").replace("%i", player.getName()).replace("%o", "Google Translate"));
 									    bad.printStackTrace();
 									}
 					    	    })
 					    	    .sync(() -> {
-					    	    	watsonSettings.open(player);
+					    	    	googleTranslateSettings.open(player);
 					    	    })
 					    	    .sync(TaskChain::abort)
 					    	    .execute();

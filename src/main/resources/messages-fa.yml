@@ -5,7 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: تغییر کلید دسترسی آمازون
   wwcrFail: ' بارگیری مجدد WorldWidechat شکست خورد.'
   wwcConfigGUIUpdateCheckerButton: بررسی تغییر برای تاخیر به روز رسانی
-  wwcSignTranslationFail: ' قادر به دریافت ترجمه معتبر علامت هدف از %i نیست.'
   wwcUpdaterFailedGeneric: قادر به بررسی به روز رسانی WorldWidechat نیست.
   wwcConfigConversationUpdateCheckerInput: تاخیر فعلی در جستجوگر به روز رسانی %i ثانیه
     است. هر چیزی بزرگتر از ۱۰ را تایپ کنید تا مقدار جدید تعیین شود، یا هر چیزی کمتر
@@ -152,8 +151,6 @@ Messages:
   wwctGUIBackToMainMenuButton: بازگشت به منوی اصلی ترجمه
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' گپ جهانی از %i به %o در حال
     ترجمه است.'
-  wwcBookTranslationFail: ' قادر به دریافت یک ترجمه معتبر از یک یا چند صفحه از کتاب
-    هدف از %i نیست.'
   wwcConfigGUITranslatorSettings: پیکربندی مترجم
   wwcConfigConversationGoogleTranslateAPIKeyInput: کلید API فعلی %i است. لطفا کلید
     API را برای Google Translate وارد کنید، یا برای بازگشت به آن تایپ 0 کنید.
@@ -229,3 +226,27 @@ Messages:
     اولیه شود. در حال حاضر، لطفا —illegal-access=اجازه را به استدلال جار سرور موجود
     خود اضافه کنید.
   wwcDeluxeChatIncompatible: این افزونه ممکن است به درستی با DeluxeChat کار نکند.
+  wwcSignTranslationFail: ' قادر به ترجمه یک یا چند خط در تابلوی هدف شما نیست.'
+  wwcBookTranslationFail: ' قادر به ترجمه یک یا چند صفحه در کتاب هدف شما نیست.'
+  wwctiOffTarget: ' ترجمه مورد برای %i غیرفعال شد.'
+  wwctiPlayerNotFound: ' بازیکن %i یا یافت نشد، یا مترجم فعال نیست.'
+  wwctiOffSender: ' ترجمه مورد غیرفعال شد.'
+  wwcItemTranslateTitleStock: ' قادر به ترجمه نام موارد پیش فرض نیست.'
+  wwcItemTranslateLoreFail: ' ترجمه افسانه هاو روایات قومی شکست خورد.'
+  wwcItemTranslateTitleFail: ' ترجمه نام مورد ناموفق بود.'
+  wwctiNotATranslator: ' تو يه مترجم فعال نيستي اطمینان حاصل کنید که این را با /wwct
+    تنظیم کرده اید.'
+  wwctGUIItemButton: زدن ضامن ترجمه مورد
+  wwcItemTranslateTitleDone: ' عنوان آیتم ترجمه شده با موفقیت.'
+  wwcGUITempItem: نمایش آیتم
+  wwcItemTranslateStart: ' در حال ترجمه مورد هدف...'
+  wwcSignTranslationFailCatastrophic: ' ترجمه علامت هدف ناموفق بود.'
+  wwcItemTranslationFailCatastrophic: ' ترجمه مورد هدف شکست خورد.'
+  wwcBookTranslateTitleSuccess: ' عنوان کتاب ترجمه شده: %i'
+  wwctiOnSender: ' ترجمه مورد فعال شد. با یک آیتم در دست اصلی خود راست کلیک کنید تا
+    آن را ترجمه کنید!'
+  wwcItemTranslateLoreStart: ' ترجمه افسانه مورد هدف...'
+  wwcItemTranslateLoreDone: ' ترجمه افسانه هاو روایات قومی با موفقیت'
+  wwctiOnTarget: ' ترجمه مورد برای %i فعال شد.'
+  wwcBookTranslationFailCatastrophic: ' ترجمه کتاب هدف ناموفق بود.'
+  wwcBookTranslateTitleFail: ' ترجمه عنوان کتاب شکست خورد.'

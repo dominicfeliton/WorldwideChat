@@ -1,4 +1,4 @@
-package com.expl0itz.worldwidechat.commands;
+package com.expl0itz.worldwidechat.inventory.wwctranslategui;
 
 import java.util.UUID;
 
@@ -14,6 +14,10 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.commands.WWCTranslate;
+import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
+import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
+import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.conversations.wwctranslategui.RateLimitConversation;
 import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
@@ -159,6 +163,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 								WWCTranslateBook translateBook = new WWCTranslateBook((CommandSender)player, null, null, args);
 								translateBook.processCommand();
 								getTranslateMainMenu(targetPlayerUUID).open(player);
+								//TODO: check if we need to open the menu again? (last line)
 							}));
 				}
 				
@@ -179,7 +184,26 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 								getTranslateMainMenu(targetPlayerUUID).open(player);
 							}));
 				}
-			} else if (targetPlayerUUID == null && main.getActiveTranslator(player.getUniqueId().toString()) != null) { /* Current player is active translator */
+			    
+				/* Item Translation Button */
+				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcti") && player.hasPermission("worldwidechat.wwcti.otherplayers")) {
+					ItemStack itemButton = new ItemStack(Material.NAME_TAG);
+					ItemMeta itemMeta = itemButton.getItemMeta();
+					itemMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIItemButton"));
+					if (targetTranslator.getTranslatingItem()) {				
+						itemMeta.addEnchant(glow, 1, true);
+					}
+					itemButton.setItemMeta(itemMeta);
+					contents.set(3, 6, ClickableItem.of(itemButton, 
+							e -> {
+								String[] args = {main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName()};
+								WWCTranslateItem translateItem = new WWCTranslateItem((CommandSender)player, null, null, args);
+								translateItem.processCommand();
+								getTranslateMainMenu(targetPlayerUUID).open(player);
+							}));
+				}
+			/* Current player is active translator + target */
+			} else if (targetPlayerUUID == null && main.getActiveTranslator(player.getUniqueId().toString()) != null) {
 				ActiveTranslator currTranslator = main.getActiveTranslator(player.getUniqueId().toString());
 				
 				/* Make compass enchanted */
@@ -258,6 +282,24 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 								String[] args = {};
 								WWCTranslateSign translateSign = new WWCTranslateSign((CommandSender)player, null, null, args);
 								translateSign.processCommand();
+								getTranslateMainMenu(targetPlayerUUID).open(player);
+							}));
+				}
+				
+				/* Item Translation Button */
+				if (player.hasPermission("worldwidechat.wwcti")) {
+					ItemStack itemButton = new ItemStack(Material.NAME_TAG);
+					ItemMeta itemMeta = itemButton.getItemMeta();
+					itemMeta.setDisplayName(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwctGUIItemButton"));
+					if (currTranslator.getTranslatingItem()) {				
+						itemMeta.addEnchant(glow, 1, true);
+					}
+					itemButton.setItemMeta(itemMeta);
+					contents.set(3, 6, ClickableItem.of(itemButton, 
+							e -> {
+								String[] args = {};
+								WWCTranslateItem translateItem = new WWCTranslateItem((CommandSender)player, null, null, args);
+								translateItem.processCommand();
 								getTranslateMainMenu(targetPlayerUUID).open(player);
 							}));
 				}

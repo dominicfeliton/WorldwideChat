@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Canviar la clau d\'accés d\'Amazon
   wwcrFail: ' No s\''ha pogut recarregar WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Canviar la comprovació de les actualitzacions Retard
-  wwcSignTranslationFail: ' No es pot obtenir una traducció vàlida del signe de destinació
-    de %i.'
   wwcUpdaterFailedGeneric: No es pot comprovar si hi ha actualitzacions WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: El retard actual del corrector d\'actualització
     és %i segons. Escriviu qualsevol cosa més gran que 10 per establir un valor nou,
@@ -161,8 +159,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Torna al menú principal de traducció
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' El xat global s\''està traduint
     de %i a %o.'
-  wwcBookTranslationFail: ' No es pot obtenir una traducció vàlida d\''una o més pàgines
-    del llibre de destinació de %i.'
   wwcConfigGUITranslatorSettings: Configuració del traductor
   wwcConfigConversationGoogleTranslateAPIKeyInput: La clau de l\'API actual és %i.
     introduïu una clau d\'API per a Google Translate, o escriviu 0 per tornar enrere.
@@ -245,3 +241,27 @@ Messages:
     existent.
   wwcDeluxeChatIncompatible: És possible que aquest plugin no funcioni correctament
     amb DeluxChat.
+  wwcSignTranslationFail: ' No es pot traduir una o més línies al signe de destinació.'
+  wwcBookTranslationFail: ' No es pot traduir una o més pàgines al llibre de destinació.'
+  wwctiOffTarget: ' Traducció d\''elements desactivats per %i.'
+  wwctiPlayerNotFound: ' Jugador %i o bé no es troba, o no és un traductor actiu.'
+  wwctiOffSender: ' Traducció d\''elements desactivats.'
+  wwcItemTranslateTitleStock: ' No es pot traduir els noms d\''element predeterminats.'
+  wwcItemTranslateLoreFail: ' No s\''ha pogut traduir l\''element lore.'
+  wwcItemTranslateTitleFail: ' No s\''ha pogut traduir el nom de l\''element.'
+  wwctiNotATranslator: ' No ets un traductor actiu! Assegureu-vos que heu configurat
+    això amb /wwct.'
+  wwctGUIItemButton: Commuta la traducció de l\'element
+  wwcItemTranslateTitleDone: ' Títol de l\''article traduït amb èxit.'
+  wwcGUITempItem: Pantalla de l\'article
+  wwcItemTranslateStart: ' La traducció de l\''element objectiu...'
+  wwcSignTranslationFailCatastrophic: ' No s\''ha pogut traduir el signe de destinació.'
+  wwcItemTranslationFailCatastrophic: ' No s\''ha pogut traduir l\''element de destinació.'
+  wwcBookTranslateTitleSuccess: ' Títol del llibre traduït: %i'
+  wwctiOnSender: ' S\''ha habilitat la traducció d\''elements. Feu clic amb el botó
+    dret del ratolí amb un element a la vostra mà principal per traduir-lo!'
+  wwcItemTranslateLoreStart: ' Traduint la tradició de l\''objecte objectiu...'
+  wwcItemTranslateLoreDone: ' Lore article traduït amb èxit.'
+  wwctiOnTarget: ' La traducció d\''elements activada per a %i.'
+  wwcBookTranslationFailCatastrophic: ' No s\''ha pogut traduir el llibre de destinació.'
+  wwcBookTranslateTitleFail: ' No s\''ha pogut traduir el títol del llibre.'

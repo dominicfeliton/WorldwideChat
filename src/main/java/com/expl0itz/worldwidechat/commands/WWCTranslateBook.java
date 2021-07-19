@@ -12,7 +12,7 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
-public class WWCTranslateBook extends BasicCommand{
+public class WWCTranslateBook extends BasicCommand {
 
     private WorldwideChat main = WorldwideChat.getInstance();
     

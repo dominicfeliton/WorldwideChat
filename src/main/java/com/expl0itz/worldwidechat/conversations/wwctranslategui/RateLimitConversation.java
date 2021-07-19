@@ -11,7 +11,7 @@ import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCRateLimit;
-import com.expl0itz.worldwidechat.commands.WWCTranslateGUIMainMenu;
+import com.expl0itz.worldwidechat.inventory.wwctranslategui.WWCTranslateGUIMainMenu;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 
 import net.md_5.bungee.api.ChatColor;

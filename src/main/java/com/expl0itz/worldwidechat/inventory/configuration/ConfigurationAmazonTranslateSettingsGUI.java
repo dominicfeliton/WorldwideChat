@@ -1,4 +1,4 @@
-package com.expl0itz.worldwidechat.configuration;
+package com.expl0itz.worldwidechat.inventory.configuration;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Փոխել Amazon մուտքի բանալին
   wwcrFail: ' Չհաջողվեց վերբեռնել WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Փոփոխություն Ստուգել թարմացումները
-  wwcSignTranslationFail: ' Անհնար է ստանալ ձեր թիրախային նշանի վավեր թարգմանություն
-    %i.'
   wwcUpdaterFailedGeneric: Հնարավոր չէ ստուգել WorldwideChat թարմացումները.
   wwcConfigConversationUpdateCheckerInput: 'Թարմացման ստուգիչի ընթացիկ ուշացումը %i
     վայրկյան է: Մուտքագրեք ավելի մեծ բան, քան 10- ը նոր արժեք սահմանելու համար, կամ
@@ -157,8 +155,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Վերադառնալ հիմնական թարգմանության մենյու
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Գլոբալ զրույցը թարգմանվում է
     %i to %o.'
-  wwcBookTranslationFail: ' Անհնար է ստանալ ձեր թիրախային գրքի մեկ կամ մի քանի էջերի
-    վավեր թարգմանություն %i.'
   wwcConfigGUITranslatorSettings: Թարգմանչի կոնֆիգուրացիա
   wwcConfigConversationGoogleTranslateAPIKeyInput: 'Ընթացիկ API- ի ստեղնը %i է: Խնդրում
     ենք մուտքագրել API- ի ստեղնը Google Translate կամ մուտքագրեք 0 ետ վերադառնալու
@@ -238,3 +234,27 @@ Messages:
     Համար հիմա, խնդրում ենք ավելացնել —ապօրինի access=թույլտվություն Ձեր առկա սերվերի
     բանկա փաստարկների.
   wwcDeluxeChatIncompatible: Այս plugin չի կարող աշխատել պատշաճ կերպով հետ DeluxeChat.
+  wwcSignTranslationFail: ' Անհնար է թարգմանել մեկ կամ ավելի գծեր ձեր թիրախային նշանի.'
+  wwcBookTranslationFail: ' Անհնար է թարգմանել մեկ կամ ավելի էջեր ձեր թիրախային գրքում.'
+  wwctiOffTarget: ' Նյութի թարգմանությունը անջատված է համար %i.'
+  wwctiPlayerNotFound: ' Նվագարկիչ %i կամ չի հայտնաբերվել, կամ ակտիվ թարգմանիչ չէ:'
+  wwctiOffSender: ' Նյութի թարգմանությունը անջատված.'
+  wwcItemTranslateTitleStock: ' Անհնար է թարգմանել լռելյայն տարրերի'
+  wwcItemTranslateLoreFail: ' Չհաջողվեց թարգմանել նյութը Lore.'
+  wwcItemTranslateTitleFail: ' Չհաջողվեց թարգմանել տարրի անունը:'
+  wwctiNotATranslator: ' Դուք ակտիվ թարգմանիչ չեք: Համոզվեք, որ դուք պետք է սահմանել
+    այս /wwct.'
+  wwctGUIItemButton: Toggle Նյութի թարգմանություն
+  wwcItemTranslateTitleDone: ' Թարգմանված նյութի վերնագիրը հաջողությամբ'
+  wwcGUITempItem: Նյութի Ցուցադրել
+  wwcItemTranslateStart: ' Թարգմանելով թիրախային նյութը...'
+  wwcSignTranslationFailCatastrophic: ' Չհաջողվեց թարգմանել թիրախային նշանը.'
+  wwcItemTranslationFailCatastrophic: ' Չհաջողվեց թարգմանել թիրախային տարրը:'
+  wwcBookTranslateTitleSuccess: ' Թարգմանված գրքի վերնագիր: %i'
+  wwctiOnSender: ' Նյութի թարգմանությունը միացված. Աջ սեղմեք մի տարրի ձեր հիմնական
+    ձեռքը թարգմանել այն!'
+  wwcItemTranslateLoreStart: ' Թարգմանություն թիրախային կետի...'
+  wwcItemTranslateLoreDone: ' Թարգմանված նյութը Lore հաջողությամբ.'
+  wwctiOnTarget: ' Նյութի թարգմանությունը միացված է %i համար։'
+  wwcBookTranslationFailCatastrophic: ' Չհաջողվեց թարգմանել թիրախային գիրքը:'
+  wwcBookTranslateTitleFail: ' Չհաջողվեց թարգմանել գրքի կոչումը.'

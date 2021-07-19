@@ -39,9 +39,9 @@ public class LoadUserData implements Runnable {
         /* Load user records (/wwcs) */
         for (File eaFile : statsFolder.listFiles()) {
             FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
-            if (currFileConfig.contains("attemptedTranslations")
-                    && currFileConfig.contains("successfulTranslations")
-                    && currFileConfig.contains("lastTranslationTime")) {
+            if (currFileConfig.isInt("attemptedTranslations")
+                    && currFileConfig.isInt("successfulTranslations")
+                    && currFileConfig.isString("lastTranslationTime")) {
                 PlayerRecord currRecord = new PlayerRecord(currFileConfig.getString("lastTranslationTime"), 
                         eaFile.getName().substring(0, eaFile.getName().indexOf(".")),
                         currFileConfig.getInt("attemptedTranslations"),
@@ -68,9 +68,10 @@ public class LoadUserData implements Runnable {
             FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
             if ((currFileConfig.getString("inLang").equalsIgnoreCase("None") || CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("inLang")) != null
                     && (CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("outLang")) != null))
-                    && currFileConfig.contains("signTranslation")
-                    && currFileConfig.contains("bookTranslation")
-                    && currFileConfig.contains("rateLimit")
+                    && currFileConfig.isBoolean("signTranslation")
+                    && currFileConfig.isBoolean("bookTranslation")
+                    && currFileConfig.isBoolean("itemTranslation")
+                    && currFileConfig.isInt("rateLimit")
                     && currFileConfig.isString("rateLimitPreviousRecordedTime")) { //If file has proper entries
                 ActiveTranslator currentTranslator = new ActiveTranslator(eaFile.getName().substring(0, eaFile.getName().indexOf(".")), //add active translator to arraylist
                         currFileConfig.getString("inLang"),
@@ -78,6 +79,7 @@ public class LoadUserData implements Runnable {
                         false);
                 currentTranslator.setTranslatingSign(currFileConfig.getBoolean("signTranslation"));
                 currentTranslator.setTranslatingBook(currFileConfig.getBoolean("bookTranslation"));
+                currentTranslator.setTranslatingItem(currFileConfig.getBoolean("itemTranslation"));
                 currentTranslator.setRateLimit(currFileConfig.getInt("rateLimit"));
                 if (!currFileConfig.getString("rateLimitPreviousRecordedTime").equals("None")) {
                 	currentTranslator.setRateLimitPreviousTime(Instant.parse(currFileConfig.getString("rateLimitPreviousRecordedTime")));

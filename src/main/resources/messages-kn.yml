@@ -4,7 +4,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: ಅಮೆಜಾನ್ ಪ್ರವೇಶ ಕೀ ಬದಲಿಸಿ
   wwcrFail: ' ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ.'
   wwcConfigGUIUpdateCheckerButton: ಅಪ್ಡೇಟ್ಗಳು ವಿಳಂಬ ಪರಿಶೀಲಿಸಿ ಬದಲಾಯಿಸಿ
-  wwcSignTranslationFail: ' %i ನಿಂದ ನಿಮ್ಮ ಗುರಿ ಚಿಹ್ನೆಯ ಮಾನ್ಯ ಅನುವಾದವನ್ನು ಪಡೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.'
   wwcUpdaterFailedGeneric: WorldWidechat ನವೀಕರಣಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.
   wwcConfigConversationUpdateCheckerInput: ಅಪ್ಡೇಟ್ ಪರೀಕ್ಷಕದಲ್ಲಿನ ಪ್ರಸ್ತುತ ವಿಳಂಬ %i
     ಸೆಕೆಂಡುಗಳು. ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 10 ಗಿಂತ ಹೆಚ್ಚಿನದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ 10 ಗಿಂತ
@@ -160,8 +159,6 @@ Messages:
   wwctGUIBackToMainMenuButton: ಮುಖ್ಯ ಅನುವಾದ ಮೆನುಗೆ ಹಿಂತಿರುಗಿ
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು %i ನಿಂದ %o
     ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.'
-  wwcBookTranslationFail: ' %i ನಿಂದ ನಿಮ್ಮ ಗುರಿ ಪುಸ್ತಕದ ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ಪುಟಗಳ ಮಾನ್ಯ
-    ಅನುವಾದವನ್ನು ಪಡೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.'
   wwcConfigGUITranslatorSettings: ಅನುವಾದಕ ಸಂರಚನೆ
   wwcConfigConversationGoogleTranslateAPIKeyInput: ಪ್ರಸ್ತುತ API ಕೀಲಿಯು %i ಆಗಿದೆ. ದಯವಿಟ್ಟು
     Google Translate ಗಾಗಿ ಒಂದು API ಕೀಲಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವ ಹಿಂದಕ್ಕೆ ಹೋಗಲು 0 ಎಂದು
@@ -240,3 +237,29 @@ Messages:
     ವಿಫಲವಾಗಿದೆ. ಸದ್ಯಕ್ಕೆ, ದಯವಿಟ್ಟು ನಿಮ್ಮ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಸರ್ವರ್ ಜಾರ್ ಆರ್ಗ್ಯುಮೆಂಟ್ಗಳಿಗೆ
     —illegal-access=ಪರವಾನಿಗೆ ಸೇರಿಸಿ.
   wwcDeluxeChatIncompatible: ಈ ಪ್ಲಗಿನ್ DeluxeChat ಸರಿಯಾಗಿ ಕೆಲಸ ಇರಬಹುದು.
+  wwcSignTranslationFail: ' ನಿಮ್ಮ ಗುರಿ ಸೈನ್ ಮೇಲೆ ಒಂದು ಅಥವಾ ಹೆಚ್ಚು ಸಾಲುಗಳನ್ನು ಭಾಷಾಂತರಿಸಲು
+    ಸಾಧ್ಯವಿಲ್ಲ.'
+  wwcBookTranslationFail: ' ನಿಮ್ಮ ಗುರಿ ಪುಸ್ತಕದಲ್ಲಿ ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ಪುಟಗಳನ್ನು ಭಾಷಾಂತರಿಸಲು
+    ಸಾಧ್ಯವಿಲ್ಲ.'
+  wwctiOffTarget: ' ಐಟಂ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.'
+  wwctiPlayerNotFound: ' ಪ್ಲೇಯರ್ %i ಕಂಡುಬಂದಿಲ್ಲ, ಅಥವ ಸಕ್ರಿಯ ಅನುವಾದಕವಲ್ಲ.'
+  wwctiOffSender: ' ಐಟಂ ಅನುವಾದ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.'
+  wwcItemTranslateTitleStock: ' ಡೀಫಾಲ್ಟ್ ಐಟಂ ಹೆಸರುಗಳನ್ನು ಭಾಷಾಂತರಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.'
+  wwcItemTranslateLoreFail: ' ಐಟಂ ಅನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.'
+  wwcItemTranslateTitleFail: ' ಐಟಂ ಹೆಸರನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.'
+  wwctiNotATranslator: ' ನೀವು ಸಕ್ರಿಯ ಅನುವಾದಕರಲ್ಲ! ನೀವು ಇದನ್ನು /wwctನೊಂದಿಗೆ ಹೊಂದಿಸಿದ್ದೀರಿ
+    ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.'
+  wwctGUIItemButton: ಟಾಗಲ್ ಐಟಂ ಅನುವಾದ
+  wwcItemTranslateTitleDone: ' ಐಟಂ ಶೀರ್ಷಿಕೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅನುವಾದಿಸಲಾಗಿದೆ.'
+  wwcGUITempItem: ಐಟಂ ಪ್ರದರ್ಶನ
+  wwcItemTranslateStart: ' ಗುರಿ ಐಟಂ ಭಾಷಾಂತರಿಸಲಾಗುತ್ತಿದೆ...'
+  wwcSignTranslationFailCatastrophic: ' ಗುರಿ ಚಿಹ್ನೆಯನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.'
+  wwcItemTranslationFailCatastrophic: ' ಗುರಿ ಐಟಂ ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.'
+  wwcBookTranslateTitleSuccess: ' ಅನುವಾದಿಸಿದ ಪುಸ್ತಕ ಶೀರ್ಷಿಕೆ: %i'
+  wwctiOnSender: ' ಐಟಂ ಅನುವಾದ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ಅದನ್ನು ಭಾಷಾಂತರಿಸಲು ನಿಮ್ಮ ಮುಖ್ಯ ಕೈಯಲ್ಲಿರುವ
+    ಐಟಮ್ನೊಂದಿಗೆ ಬಲ ಕ್ಲಿಕ್ ಮಾಡಿ!'
+  wwcItemTranslateLoreStart: ' ಗುರಿ ಐಟಂನ ಉದ್ದವನ್ನು ಭಾಷಾಂತರಿಸಲಾಗುತ್ತಿದೆ...'
+  wwcItemTranslateLoreDone: ' ಅನುವಾದಿಸಿದ ಐಟಂ ಯಶಸ್ವಿಯಾಗಿ.'
+  wwctiOnTarget: ' ಐಟಂ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.'
+  wwcBookTranslationFailCatastrophic: ' ಗುರಿ ಪುಸ್ತಕವನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.'
+  wwcBookTranslateTitleFail: ' ಪುಸ್ತಕದ ಶೀರ್ಷಿಕೆಯನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.'

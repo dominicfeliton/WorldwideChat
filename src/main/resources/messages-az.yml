@@ -5,7 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Amazon Access Key Change
   wwcrFail: ' WorldWireChat yenidən yüklənə bilmədi.'
   wwcConfigGUIUpdateCheckerButton: Yeniləmələri gecikdirmək üçün yoxlayın
-  wwcSignTranslationFail: ' Hədəf işarənizin düzgün tərcüməsini %i -dən əldə edə bilmir.'
   wwcUpdaterFailedGeneric: WorldWieChat yeniləmələrini yoxlamaq mümkün deyil.
   wwcConfigConversationUpdateCheckerInput: Yeniləmə yoxlayıcısı cari gecikməsi %i
     saniyədir. Yeni bir dəyər təyin etmək üçün 10-dan daha böyük bir şey yazın və
@@ -153,8 +152,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Əsas Tərcümə Menyusuna Geri qayıt
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Qlobal söhbət %i %o dilinə tərcümə
     olunur.'
-  wwcBookTranslationFail: ' Hədəf kitabınızın bir və ya bir neçə səhifəsinin etibarlı
-    tərcüməsini %i -dən əldə edə bilmir.'
   wwcConfigGUITranslatorSettings: Translator Konfiqurasiyası
   wwcConfigConversationGoogleTranslateAPIKeyInput: Mövcud API açarı %i. Google Translate
     üçün bir API düyməsini daxil edin və ya geri qayıtmaq üçün 0 yazın.
@@ -230,3 +227,29 @@ Messages:
   wwcWatson117Warning: Watson bir InaccessibleObjectException səbəbiylə başlaya bilmədi.
     Hal-hazırda, mövcud server jar arqumentləri -illegal-access=icazə əlavə edin.
   wwcDeluxeChatIncompatible: Bu plugin DeluXeChat ilə düzgün işləməyəcək.
+  wwcSignTranslationFail: ' Hədəf işarənizdə bir və ya daha çox xətt tərcümə etmək
+    mümkün deyil.'
+  wwcBookTranslationFail: ' Hədəf kitabınızdakı bir və ya daha çox səhifəni tərcümə
+    edə bilmir.'
+  wwctiOffTarget: ' Item tərcümə %i üçün əlil.'
+  wwctiPlayerNotFound: ' Oyunçu %i ya tapılmadı, ya da aktiv tərcüməçi deyil.'
+  wwctiOffSender: ' Item tərcümə əlil.'
+  wwcItemTranslateTitleStock: ' Varsayılan maddə adlarını tərcümə etmək mümkün deyil.'
+  wwcItemTranslateLoreFail: ' Maddə irfan tərcümə edə bilmədi.'
+  wwcItemTranslateTitleFail: ' Maddə adını tərcümə edə bilmədi.'
+  wwctiNotATranslator: ' Siz fəal tərcüməçi deyilsiniz! Bunu /wwct ilə təyin etdiyinizə
+    əmin olun.'
+  wwctGUIItemButton: Maddə tərcüməsi keçid
+  wwcItemTranslateTitleDone: ' Müvəffəqiyyətlə tərcümə maddə adı.'
+  wwcGUITempItem: Item Display
+  wwcItemTranslateStart: ' Hədəf maddəsinin tərcüməsi...'
+  wwcSignTranslationFailCatastrophic: ' Hədəf işarəsini tərcümə edə bilmədi.'
+  wwcItemTranslationFailCatastrophic: ' Hədəf maddəsini tərcümə edə bilmədi.'
+  wwcBookTranslateTitleSuccess: ' Tərcümə olunan kitabın adı: %i'
+  wwctiOnSender: ' Item tərcümə effektiv. Tərcümə etmək üçün əsas əlinizdə bir maddə
+    ilə sağ basın!'
+  wwcItemTranslateLoreStart: ' Hədəf maddənin irfan tərcümə...'
+  wwcItemTranslateLoreDone: ' Tərcümə maddə irfan uğurla.'
+  wwctiOnTarget: ' Item tərcümə %i üçün effektiv.'
+  wwcBookTranslationFailCatastrophic: ' Hədəf kitabını tərcümə edə bilmədi.'
+  wwcBookTranslateTitleFail: ' Kitabın adını tərcümə edə bilmədi.'

@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Изменение ключа доступа Amazon
   wwcrFail: ' Не удалось перезагрузить WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Задержка проверки изменений на наличие обновлений
-  wwcSignTranslationFail: ' Не удается получить допустимый перевод целевого знака
-    из %i.'
   wwcUpdaterFailedGeneric: Не удается проверить наличие обновлений WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Текущая задержка в средстве проверки обновлений
     составляет %i секунд. Введите что-либо больше 10, чтобы установить новое значение,
@@ -158,8 +156,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Вернуться к главному меню перевода
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Глобальный чат переводится с
     %i на %o.'
-  wwcBookTranslationFail: ' Не удается получить допустимый перевод одной или нескольких
-    страниц целевой книги из %i.'
   wwcConfigGUITranslatorSettings: Конфигурация переводчика
   wwcConfigConversationGoogleTranslateAPIKeyInput: 'Текущий ключ API: %i. Введите
     ключ API для Google Translate или введите 0, чтобы вернуться.'
@@ -242,3 +238,29 @@ Messages:
     На данный момент добавьте —illegal-access=permit к существующим аргументам серверной
     jar.
   wwcDeluxeChatIncompatible: Этот плагин может неправильно работать с DeluxeChat.
+  wwcSignTranslationFail: ' Невозможно перевести одну или несколько строк на целевом
+    знаке.'
+  wwcBookTranslationFail: ' Невозможно перевести одну или несколько страниц целевой
+    книги.'
+  wwctiOffTarget: ' Перевод элементов отключен для %i.'
+  wwctiPlayerNotFound: ' Игрок %i либо не найден, либо не является активным переводчиком.'
+  wwctiOffSender: ' Перевод элементов отключен.'
+  wwcItemTranslateTitleStock: ' Невозможно перевести имена элементов по умолчанию.'
+  wwcItemTranslateLoreFail: ' Не удалось перевести предметы.'
+  wwcItemTranslateTitleFail: ' Не удалось перевести имя элемента.'
+  wwctiNotATranslator: ' Вы не активный переводчик! Убедитесь, что вы установили этот
+    параметр с помощью /wwct.'
+  wwctGUIItemButton: Перевод элементов
+  wwcItemTranslateTitleDone: ' Заголовок переведенного элемента успешно.'
+  wwcGUITempItem: Отображение товара
+  wwcItemTranslateStart: ' Перевод целевого элемента...'
+  wwcSignTranslationFailCatastrophic: ' Не удалось перевести знак целевого знака.'
+  wwcItemTranslationFailCatastrophic: ' Не удалось перевести целевой элемент.'
+  wwcBookTranslateTitleSuccess: ' Название переведенной книги: %i'
+  wwctiOnSender: ' Перевод элементов включен. Щелкните правой кнопкой мыши элемент
+    в главной руке, чтобы перевести его!'
+  wwcItemTranslateLoreStart: ' Перевод краеведения целевого предмета...'
+  wwcItemTranslateLoreDone: ' Переведенный предмет успешно завершен.'
+  wwctiOnTarget: ' Перевод элементов включен для %i.'
+  wwcBookTranslationFailCatastrophic: ' Не удалось перевести целевую книгу.'
+  wwcBookTranslateTitleFail: ' Не удалось перевести название книги.'

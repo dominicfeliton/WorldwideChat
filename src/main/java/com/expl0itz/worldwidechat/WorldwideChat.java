@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.TimeUnit;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -26,15 +27,15 @@ import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCStats;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
+import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
 import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
-import com.expl0itz.worldwidechat.listeners.BookReadListener;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
 import com.expl0itz.worldwidechat.listeners.InventoryListener;
 import com.expl0itz.worldwidechat.listeners.OnPlayerJoinListener;
-import com.expl0itz.worldwidechat.listeners.SignReadListener;
+import com.expl0itz.worldwidechat.listeners.TranslateInGameListener;
 import com.expl0itz.worldwidechat.listeners.WWCTabCompleter;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CachedTranslation;
@@ -136,8 +137,7 @@ public class WorldwideChat extends JavaPlugin {
             }
 			getServer().getPluginManager().registerEvents(new ChatListener(), this); 
 			getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
-			getServer().getPluginManager().registerEvents(new SignReadListener(), this);
-			getServer().getPluginManager().registerEvents(new BookReadListener(), this);
+			getServer().getPluginManager().registerEvents(new TranslateInGameListener(), this);
 			getServer().getPluginManager().registerEvents(new InventoryListener(), this);
             getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
             
@@ -155,6 +155,7 @@ public class WorldwideChat extends JavaPlugin {
         cancelBackgroundTasks();
         
         //Set static vars to null
+        taskChainFactory.shutdown(0, TimeUnit.SECONDS);
         if(this.adventure != null) {
             this.adventure.close();
             this.adventure = null;
@@ -207,6 +208,12 @@ public class WorldwideChat extends JavaPlugin {
                 if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
                     WWCTranslateSign wwcts = new WWCTranslateSign(sender, command, label, args);
                     return wwcts.processCommand();
+                }
+            } else if (command.getName().equalsIgnoreCase("wwcti") && hasValidTranslatorSettings(sender)) {
+                //Item translation
+                if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
+                    WWCTranslateItem wwcti = new WWCTranslateItem(sender, command, label, args);
+                    return wwcti.processCommand();
                 }
             } else if (command.getName().equalsIgnoreCase("wwcs")) {
                 //Stats for translator

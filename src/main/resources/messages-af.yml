@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Verander Amazon Toegang Sleutel
   wwcrFail: ' Misluk om WorldwideChat te herlaai.'
   wwcConfigGUIUpdateCheckerButton: Verander tjek vir updates vertraging
-  wwcSignTranslationFail: ' Kon nie \''n geldige vertaling van jou teikenteken van
-    %i kry nie.'
   wwcUpdaterFailedGeneric: Nie in staat om te kyk vir WorldwideChat updates.
   wwcConfigConversationUpdateCheckerInput: Die huidige vertraging op die opdateringstoetser
     is %i sekondes. Tik enigiets groter as 10 om \'n nuwe waarde te stel, of enigiets
@@ -154,8 +152,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Terug na Main Vertaling Menu
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Globale chat word vertaal van
     %i na %o.'
-  wwcBookTranslationFail: ' Kon nie \''n geldige vertaling van een of meer bladsye
-    van jou teikenboek van %i kry nie.'
   wwcConfigGUITranslatorSettings: Vertaler Opstelling
   wwcConfigConversationGoogleTranslateAPIKeyInput: Die huidige API-sleutel is %i.
     Voer asseblief \'n API-sleutel in vir Google Translate, of tik 0 om terug te gaan.
@@ -234,3 +230,30 @@ Messages:
     Vir nou, voeg asseblief —illegal-access=permit by jou bestaande bedienerjar argumente.
   wwcDeluxeChatIncompatible: Hierdie inprop werk dalk nie behoorlik met DeluxeChat
     nie.
+  wwcSignTranslationFail: ' Nie moontlik na vertaal een of meer lyne op jou teiken
+    teken.'
+  wwcBookTranslationFail: ' Kan nie een of meer bladsye in jou teikenboek vertaal
+    nie.'
+  wwctiOffTarget: ' Item vertaling gedeaktiveer vir %i.'
+  wwctiPlayerNotFound: ' Speler %i is nie gevind nie, of is nie \''n aktiewe vertaler
+    nie.'
+  wwctiOffSender: ' Item vertaling gedeaktiveer.'
+  wwcItemTranslateTitleStock: ' Nie moontlik na vertaal verstek item name.'
+  wwcItemTranslateLoreFail: ' Misluk om item leersaamhede te vertaal.'
+  wwcItemTranslateTitleFail: ' Misluk om item naam te vertaal.'
+  wwctiNotATranslator: ' Jy is nie \''n aktiewe vertaler nie! Maak seker dat jy hierdie
+    stel met/wwct.'
+  wwctGUIItemButton: Wissel Item Vertaling
+  wwcItemTranslateTitleDone: ' Vertaal item titel suksesvol.'
+  wwcGUITempItem: Item Vertoon
+  wwcItemTranslateStart: ' Vertaal teiken item...'
+  wwcSignTranslationFailCatastrophic: ' Misluk om teiken teken te vertaal.'
+  wwcItemTranslationFailCatastrophic: ' Misluk om teiken item te vertaal.'
+  wwcBookTranslateTitleSuccess: ' Vertaalde Boek Titel: %i'
+  wwctiOnSender: ' Item vertaling geaktiveer. Regs-kliek met \''n item in jou hoof
+    hand om dit te vertaal!'
+  wwcItemTranslateLoreStart: ' Vertaling van leersaamhede van teiken item...'
+  wwcItemTranslateLoreDone: ' Vertaal item leersaamhede suksesvol.'
+  wwctiOnTarget: ' Item vertaling geaktiveer vir %i.'
+  wwcBookTranslationFailCatastrophic: ' Misluk om teiken boek te vertaal.'
+  wwcBookTranslateTitleFail: ' Misluk om boektitel te vertaal.'

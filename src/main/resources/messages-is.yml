@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Breyta Amazon Aðgangur Key
   wwcrFail: ' Mistókst að endurhlaða WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Breyta Athuga fyrir seinkun uppfærslna
-  wwcSignTranslationFail: ' Ekki er hægt að fá gilda þýðingu á markmerkinu þínu frá
-    %i.'
   wwcUpdaterFailedGeneric: Ekki er hægt að athuga WorldwideChat uppfærslur.
   wwcConfigConversationUpdateCheckerInput: Núverandi töf á uppfærslu afgreiðslumaður
     er %i sekúndur. Sláðu inn neitt stærra en 10 til að setja nýtt gildi, eða eitthvað
@@ -158,8 +156,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Aftur í Main Translation Valmynd
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Global spjall er þýtt frá %i
     til %o.'
-  wwcBookTranslationFail: ' Ekki er hægt að fá gilda þýðingu á einni eða fleiri síðum
-    miða bók frá %i.'
   wwcConfigGUITranslatorSettings: Þýðandi Stillingar
   wwcConfigConversationGoogleTranslateAPIKeyInput: Núverandi API lykill er %i. Vinsamlegast
     inntak API lykill fyrir Google Translate, eða tegund 0 til að fara aftur.
@@ -238,3 +234,30 @@ Messages:
     Fyrir nú, vinsamlegast bæta -ólöglegal-access=leyfa til núverandi miðlara jar
     rök þín.
   wwcDeluxeChatIncompatible: Þessi tappi mega ekki virka almennilega með DeluxeChat.
+  wwcSignTranslationFail: ' Ekki er hægt að þýða eina eða fleiri línur á markmerkinu
+    þínu.'
+  wwcBookTranslationFail: ' Ekki er hægt að þýða eina eða fleiri síður í markbókinni
+    þinni.'
+  wwctiOffTarget: ' Item þýðing óvirk fyrir %i.'
+  wwctiPlayerNotFound: ' Leikmaður %Ég er annað hvort ekki að finna, eða er ekki virkur
+    þýðandi.'
+  wwctiOffSender: ' Item þýðingar óvirk.'
+  wwcItemTranslateTitleStock: ' Ekki er hægt að þýða sjálfgefin atriði nöfn.'
+  wwcItemTranslateLoreFail: ' Mistókst að þýða atriði lore.'
+  wwcItemTranslateTitleFail: ' Mistókst að þýða heiti hlutarins.'
+  wwctiNotATranslator: ' Þú ert ekki virkur þýðandi! Gakktu úr skugga um að þú hafir
+    sett þetta með/wwct.'
+  wwctGUIItemButton: Skipta Item Þýðing
+  wwcItemTranslateTitleDone: ' Þýtt atriði titil með góðum árangri.'
+  wwcGUITempItem: Item Sýna
+  wwcItemTranslateStart: ' Þýða miða atriði...'
+  wwcSignTranslationFailCatastrophic: ' Mistókst að þýða miða merki.'
+  wwcItemTranslationFailCatastrophic: ' Mistókst að þýða miða atriði.'
+  wwcBookTranslateTitleSuccess: ' Þýtt Book Titill: %i'
+  wwctiOnSender: ' Item þýðing virkt. Hægrismelltu með hlut í aðalhendinni til að
+    þýða það!'
+  wwcItemTranslateLoreStart: ' Þýða lore af miða atriði...'
+  wwcItemTranslateLoreDone: ' Þýtt atriði lore með góðum árangri.'
+  wwctiOnTarget: ' Item þýðing virkt fyrir %i.'
+  wwcBookTranslationFailCatastrophic: ' Mistókst að þýða miða bók.'
+  wwcBookTranslateTitleFail: ' Mistókst að þýða bók titil.'

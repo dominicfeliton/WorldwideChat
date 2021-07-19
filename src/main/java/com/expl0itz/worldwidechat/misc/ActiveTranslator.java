@@ -14,6 +14,7 @@ public class ActiveTranslator {
     private boolean hasBeenShownColorCodeWarning = false;
     private boolean translatingBook = false;
     private boolean translatingSign = false;
+    private boolean translatingItem = false;
 
     public ActiveTranslator(String uuid, String langIn, String langOut, boolean hasBeenShownColorCodeWarning) {
     	playerUUID = uuid;
@@ -51,6 +52,10 @@ public class ActiveTranslator {
         translatingSign = i;
     }
     
+    public void setTranslatingItem(boolean i) {
+    	translatingItem = i;
+    }
+    
     public void setRateLimitPreviousTime(Instant i) {
     	rateLimitPreviousTime = i.toString();
     }
@@ -71,10 +76,6 @@ public class ActiveTranslator {
     public String getOutLangCode() {
         return outLangCode;
     }
-
-    public String getRateLimitPreviousTime() {
-    	return rateLimitPreviousTime;
-    }
     
     public boolean getCCWarning() {
         return hasBeenShownColorCodeWarning;
@@ -86,5 +87,13 @@ public class ActiveTranslator {
     
     public boolean getTranslatingSign() {
         return translatingSign;
+    }
+    
+    public boolean getTranslatingItem() {
+    	return translatingItem;
+    }
+    
+    public String getRateLimitPreviousTime() {
+    	return rateLimitPreviousTime;
     }
 }

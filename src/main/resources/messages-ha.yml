@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Canja maɓallin Samun Amazon
   wwcrFail: ' An kasa sake sauke WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Canja Duba Duba don Ɗaukaka Dakatarwar
-  wwcSignTranslationFail: ' An kasa samun fassara mai inganci na alamar manufarka
-    daga %i.'
   wwcUpdaterFailedGeneric: Ba a iya duba sabuntawar WorldwideChat ba.
   wwcConfigConversationUpdateCheckerInput: Jinkirin yanzu akan mai duba sabuntawa
     shine %i seconds. Rubuta wani abu mafi girma fiye da 10 don saita sabon darajar,
@@ -156,8 +154,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Komawa zuwa menu na Fassara
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Ana fassara tattaunawar duniya
     daga %i zuwa %o.'
-  wwcBookTranslationFail: ' An kasa samun fassara mai inganci na shafuka ɗaya ko fiye
-    na littafinka mai manufa daga %i.'
   wwcConfigGUITranslatorSettings: Configuration
   wwcConfigConversationGoogleTranslateAPIKeyInput: Maballin API na yanzu shine %i.
     Da fatan za a shigar da maɓallin API na Google Translate, ko rubuta 0 don komawa.
@@ -234,3 +230,30 @@ Messages:
     Allah ƙara —illegal-access=izini ga garken gilashin gilashin ku na yanzu.
   wwcDeluxeChatIncompatible: Wannan plugin bazai yi aiki yadda ya kamata tare da eChat
     ba.
+  wwcSignTranslationFail: ' Ba za a iya fassara ɗaya ko fiye da layi a kan alamar
+    manufa ba.'
+  wwcBookTranslationFail: ' Ba za a iya fassara ɗaya ko fiye da shafuka a cikin littafinku
+    mai mahimmanci ba.'
+  wwctiOffTarget: ' Fassarar abu an kashe da %i.'
+  wwctiPlayerNotFound: ' Mai wasan %i dai ba a samu shi ba, ko kuma ba mai fassara
+    mai aiki ba ne.'
+  wwctiOffSender: ' Fassarar abu ya nakasa.'
+  wwcItemTranslateTitleStock: ' Ba a iya fassara sunayen abubuwa na asali ba.'
+  wwcItemTranslateLoreFail: ' An kasa fassara abu lore.'
+  wwcItemTranslateTitleFail: ' An kasa fassara sunan abu.'
+  wwctiNotATranslator: ' Kai ba mai fassara ne mai aiki ba! Tabbatar cewa kun saita
+    wannan tare da /wwct.'
+  wwctGUIItemButton: Fassarar Abu
+  wwcItemTranslateTitleDone: ' An fassara taken abu cikin nasara.'
+  wwcGUITempItem: Nunin abu
+  wwcItemTranslateStart: ' Fassara abu mai mahimmanci...'
+  wwcSignTranslationFailCatastrophic: ' An kasa fassara alamar manufa.'
+  wwcItemTranslationFailCatastrophic: ' Kasa fassara abu mai manufa.'
+  wwcBookTranslateTitleSuccess: ' Rubutun Littafin da aka fassara: %i'
+  wwctiOnSender: ' An kunna fassarar abu. Danna-dama tare da abu a cikin babban hannunka
+    don fassara shi!'
+  wwcItemTranslateLoreStart: ' Fassara lore na abu mai manufa...'
+  wwcItemTranslateLoreDone: ' An fassara abu lore nasara.'
+  wwctiOnTarget: ' An kunna fassarar abu da %i.'
+  wwcBookTranslationFailCatastrophic: ' Kasa fassara littafin manufa.'
+  wwcBookTranslateTitleFail: ' An kasa fassara taken littafin.'

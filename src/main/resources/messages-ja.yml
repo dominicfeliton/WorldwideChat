@@ -4,7 +4,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Amazon アクセスキーの変更
   wwcrFail: ' WorldwideChat のリロードに失敗しました。'
   wwcConfigGUIUpdateCheckerButton: 更新のチェックの変更の遅延
-  wwcSignTranslationFail: ' %i からターゲット記号の有効な翻訳を取得できません。'
   wwcUpdaterFailedGeneric: WorldwideChat の更新をチェックできません。
   wwcConfigConversationUpdateCheckerInput: 更新チェッカーの現在の遅延は %i 秒です。10 より大きい値を入力して新しい値を設定するか、10
     より小さい値を入力して戻ります。
@@ -130,7 +129,6 @@ Messages:
   wwcUnsupportedVersion: 'サポートされていないバージョンの Bukkit、Spigot、または Paper を実行しています。サポートされているバージョン:'
   wwctGUIBackToMainMenuButton: メイン翻訳メニューに戻る
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' グローバルチャットは %i から %o に翻訳されています。'
-  wwcBookTranslationFail: ' %i からターゲットブックの 1 ページ以上の有効な翻訳を取得できません。'
   wwcConfigGUITranslatorSettings: トランスレータの構成
   wwcConfigConversationGoogleTranslateAPIKeyInput: 現在の API キーは %i です。Google 翻訳の API
     キーを入力するか、0 を入力して戻ってください。
@@ -189,3 +187,25 @@ Messages:
   wwcWatson117Warning: アクセス不能ObjectExceptionが原因で、ワトソンが初期化できませんでした。今のところ、既存のサーバー jar
     引数に —illegal-access=permit を追加してください。
   wwcDeluxeChatIncompatible: このプラグインは DeluxeChat では正常に動作しない可能性があります。
+  wwcSignTranslationFail: ' ターゲット記号の 1 つ以上の行を翻訳できません。'
+  wwcBookTranslationFail: ' ターゲットブックの 1 つ以上のページを翻訳できません。'
+  wwctiOffTarget: ' %i のアイテムの翻訳が無効です。'
+  wwctiPlayerNotFound: ' プレイヤー %i が見つからないか、アクティブなトランスレータではありません。'
+  wwctiOffSender: ' アイテムの翻訳は無効です。'
+  wwcItemTranslateTitleStock: ' 既定のアイテム名を翻訳できません。'
+  wwcItemTranslateLoreFail: ' アイテム伝承の翻訳に失敗しました。'
+  wwcItemTranslateTitleFail: ' アイテム名の翻訳に失敗しました。'
+  wwctiNotATranslator: ' あなたはアクティブな翻訳者ではありません！/wwctでこれを設定していることを確認してください。'
+  wwctGUIItemButton: アイテム翻訳の切り替え
+  wwcItemTranslateTitleDone: ' アイテムのタイトルが正常に翻訳されました。'
+  wwcGUITempItem: アイテム表示
+  wwcItemTranslateStart: ' ターゲットアイテムを翻訳中...'
+  wwcSignTranslationFailCatastrophic: ' ターゲット記号の翻訳に失敗しました。'
+  wwcItemTranslationFailCatastrophic: ' ターゲットアイテムの翻訳に失敗しました。'
+  wwcBookTranslateTitleSuccess: ' 翻訳された本のタイトル: %i'
+  wwctiOnSender: ' アイテムの翻訳が有効です。メインハンドのアイテムを右クリックして翻訳してください！'
+  wwcItemTranslateLoreStart: ' ターゲットアイテムの伝承を翻訳しています...'
+  wwcItemTranslateLoreDone: ' アイテムの伝承は正常に翻訳されました。'
+  wwctiOnTarget: ' %i のアイテム翻訳が有効になりました。'
+  wwcBookTranslationFailCatastrophic: ' ターゲットブックの翻訳に失敗しました。'
+  wwcBookTranslateTitleFail: ' 本のタイトルの翻訳に失敗しました。'

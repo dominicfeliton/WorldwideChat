@@ -1,4 +1,4 @@
-package com.expl0itz.worldwidechat.commands;
+package com.expl0itz.worldwidechat.inventory.wwctranslategui;
 
 import java.util.ArrayList;
 import java.util.UUID;
@@ -13,6 +13,8 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.commands.WWCGlobal;
+import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
 
 import fr.minuskube.inv.ClickableItem;

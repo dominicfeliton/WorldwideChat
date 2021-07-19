@@ -5,7 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: আমাজন অ্যাক্সেস কী পরিবর্তন করুন
   wwcrFail: ' ওয়ার্ল্ডউইডচ্যাট পুনরায় লোড করতে ব্যর্থ।'
   wwcConfigGUIUpdateCheckerButton: আপডেট বিলম্বের জন্য চেক পরিবর্তন করুন
-  wwcSignTranslationFail: ' %i থেকে আপনার টার্গেট সাইনের বৈধ অনুবাদ পাওয়া যায়নি।'
   wwcUpdaterFailedGeneric: ওয়ার্ল্ডউইডচ্যাট আপডেটের জন্য পরীক্ষা করা যায়নি।
   wwcConfigConversationUpdateCheckerInput: আপডেট পরীক্ষকের বর্তমান বিলম্ব হল %i সেকেন্ড।
     একটি নতুন মান সেট করার জন্য 10 এর চেয়ে বড় কিছু টাইপ করুন, অথবা 10 এর কম কিছু
@@ -154,8 +153,6 @@ Messages:
   wwctGUIBackToMainMenuButton: প্রধান অনুবাদ মেনুতে ফিরে যান
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' গ্লোবাল চ্যাট %i থেকে %o তে
     অনুবাদ করা হচ্ছে।'
-  wwcBookTranslationFail: ' %i থেকে আপনার টার্গেট বইয়ের এক বা একাধিক পৃষ্ঠার বৈধ অনুবাদ
-    পাওয়া যায়নি।'
   wwcConfigGUITranslatorSettings: অনুবাদক কনফিগার
   wwcConfigConversationGoogleTranslateAPIKeyInput: বর্তমান API কী %i। অনুগ্রহ করে
     Google অনুবাদের জন্য একটি API কী ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
@@ -230,3 +227,27 @@ Messages:
     পারমিট যোগ করুন।
   wwcDeluxeChatIncompatible: এই প্লাগইনটি ডিলাক্সচ্যাটের সাথে সঠিকভাবে কাজ করতে পারে
     না।
+  wwcSignTranslationFail: ' আপনার টার্গেট সাইন এ এক বা একাধিক লাইন অনুবাদ করতে অক্ষম।'
+  wwcBookTranslationFail: ' আপনার টার্গেট বইয়ের এক বা একাধিক পৃষ্ঠা অনুবাদ করতে ব্যর্থ।'
+  wwctiOffTarget: ' %i এর জন্য আইটেমের অনুবাদ নিষ্ক্রিয় করা হয়েছে।'
+  wwctiPlayerNotFound: ' প্লেয়ার %i পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।'
+  wwctiOffSender: ' আইটেম অনুবাদ নিষ্ক্রিয় করা হয়েছে।'
+  wwcItemTranslateTitleStock: ' ডিফল্ট আইটেমের নাম অনুবাদ করতে ব্যর্থ।'
+  wwcItemTranslateLoreFail: ' আইটেম কাহিনী অনুবাদ করতে ব্যর্থ।'
+  wwcItemTranslateTitleFail: ' আইটেমের নাম অনুবাদ করতে ব্যর্থ।'
+  wwctiNotATranslator: ' আপনি একজন সক্রিয় অনুবাদক নন! নিশ্চিত করুন যে আপনি এটি /wwct
+    দিয়ে সেট করেছেন।'
+  wwctGUIItemButton: আইটেম অনুবাদ টগল করুন
+  wwcItemTranslateTitleDone: ' অনুবাদ করা আইটেমের শিরোনাম সফলভাবে।'
+  wwcGUITempItem: আইটেম ডিসপ্লে
+  wwcItemTranslateStart: ' টার্গেট আইটেম অনুবাদ করা হচ্ছে...'
+  wwcSignTranslationFailCatastrophic: ' টার্গেট সাইন অনুবাদ করতে ব্যর্থ।'
+  wwcItemTranslationFailCatastrophic: ' টার্গেট আইটেম অনুবাদ করতে ব্যর্থ।'
+  wwcBookTranslateTitleSuccess: ' অনূদিত বইয়ের শিরোনাম: %i'
+  wwctiOnSender: ' আইটেমের অনুবাদ সক্রিয় করা হয়েছে। এটি অনুবাদ করার জন্য আপনার প্রধান
+    হাতে একটি আইটেম দিয়ে ডান-ক্লিক করুন!'
+  wwcItemTranslateLoreStart: ' টার্গেট আইটেমের কাহিনী অনুবাদ করা হচ্ছে...'
+  wwcItemTranslateLoreDone: ' অনুবাদ করা আইটেমটি সফলভাবে।'
+  wwctiOnTarget: ' আইটেমের অনুবাদ %i জন্য সক্রিয় করা হয়েছে।'
+  wwcBookTranslationFailCatastrophic: ' টার্গেট বই অনুবাদ করতে ব্যর্থ।'
+  wwcBookTranslateTitleFail: ' বইয়ের শিরোনাম অনুবাদ করতে ব্যর্থ।'

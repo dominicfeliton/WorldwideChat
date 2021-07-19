@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: એમેઝોન ઍક્સેસ કી બદલો
   wwcrFail: ' વર્લ્ડવાઇડચેટને ફરીથી લોડ કરવામાં નિષ્ફળ.'
   wwcConfigGUIUpdateCheckerButton: અપડેટ્સ વિલંબ માટે તપાસો બદલો
-  wwcSignTranslationFail: ' %i માંથી તમારા લક્ષ્ય ચિહ્નનું માન્ય અનુવાદ મેળવવામાં
-    અસમર્થ.'
   wwcUpdaterFailedGeneric: વર્લ્ડવાઇડચેટ અપડેટ્સ માટે તપાસ કરવામાં અસમર્થ.
   wwcConfigConversationUpdateCheckerInput: અપડેટ તપાસનાર પર વર્તમાન વિલંબ %i સેકંડ
     છે. નવું મૂલ્ય સેટ કરવા માટે 10 કરતા વધારે કંઈપણ લખો, અથવા પાછા જવા માટે 10 કરતા
@@ -153,8 +151,6 @@ Messages:
   wwctGUIBackToMainMenuButton: મુખ્ય અનુવાદ મેનુ પર પાછા
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' વૈશ્વિક ચેટ %i થી અનુવાદિત થઈ
     રહી છે.'
-  wwcBookTranslationFail: ' %i માંથી તમારા લક્ષ્ય પુસ્તકના એક અથવા વધુ પૃષ્ઠોનું માન્ય
-    અનુવાદ મેળવવામાં અસમર્થ.'
   wwcConfigGUITranslatorSettings: અનુવાદક રૂપરેખાંકન
   wwcConfigConversationGoogleTranslateAPIKeyInput: વર્તમાન API કી %i છે કૃપા કરીને
     Google અનુવાદ માટે API કી ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
@@ -233,3 +229,29 @@ Messages:
   wwcWatson117Warning: વોટસન એક અપ્રાપ્યતાના કારણે પ્રારંભ કરવામાં નિષ્ફળ ગયો છે ઑબ્જેક્ટેક્શન.
     હમણાં માટે, કૃપા કરીને તમારી હાલની સર્વર જાર દલીલોમાં —illegal-access=પરમિટ ઉમેરો.
   wwcDeluxeChatIncompatible: આ પલ્ગઇનની ડિલક્સચેટ સાથે યોગ્ય રીતે કામ કરી શકશે નહીં.
+  wwcSignTranslationFail: ' તમારા લક્ષ્ય ચિહ્ન પર એક અથવા વધુ લીટીઓનું અનુવાદ કરવામાં
+    અસમર્થ.'
+  wwcBookTranslationFail: ' તમારા લક્ષ્ય પુસ્તકમાં એક અથવા વધુ પૃષ્ઠોનું અનુવાદ કરવામાં
+    અસમર્થ.'
+  wwctiOffTarget: ' આઇટમ અનુવાદ %i માટે અક્ષમ છે.'
+  wwctiPlayerNotFound: ' ખેલાડી %i ક્યાં તો મળી નથી, અથવા સક્રિય અનુવાદક નથી.'
+  wwctiOffSender: ' આઇટમ અનુવાદ અક્ષમ.'
+  wwcItemTranslateTitleStock: ' ડિફૉલ્ટ આઇટમ નામોનું ભાષાંતર કરવામાં અસમર્થ.'
+  wwcItemTranslateLoreFail: ' આઇટમ લૉર અનુવાદિત કરવામાં નિષ્ફળ.'
+  wwcItemTranslateTitleFail: ' આઇટમનું નામ અનુવાદિત કરવામાં નિષ્ફળ થયું.'
+  wwctiNotATranslator: ' તમે સક્રિય અનુવાદક નથી! ખાતરી કરો કે તમે આને /wwct સાથે સેટ
+    કર્યું છે.'
+  wwctGUIItemButton: ટૉગલ આઇટમ અનુવાદ
+  wwcItemTranslateTitleDone: ' અનુવાદિત આઇટમ શીર્ષક સફળતાપૂર્વક.'
+  wwcGUITempItem: આઇટમ દર્શાવો
+  wwcItemTranslateStart: ' લક્ષ્ય આઇટમનું ભાષાંતર કરી રહ્યું છે...'
+  wwcSignTranslationFailCatastrophic: ' લક્ષ્ય ચિહ્નનું ભાષાંતર કરવામાં નિષ્ફળ થયું.'
+  wwcItemTranslationFailCatastrophic: ' લક્ષ્ય આઇટમનું ભાષાંતર કરવામાં નિષ્ફળ થયું.'
+  wwcBookTranslateTitleSuccess: ' અનુવાદિત પુસ્તક શીર્ષક: %i'
+  wwctiOnSender: ' આઇટમ અનુવાદ સક્ષમ. તેને અનુવાદિત કરવા માટે તમારા મુખ્ય હાથમાં આઇટમ
+    સાથે જમણું-ક્લિક કરો!'
+  wwcItemTranslateLoreStart: ' લક્ષ્ય આઇટમની ભાષાંતરની...'
+  wwcItemTranslateLoreDone: ' અનુવાદિત આઇટમ સફળતાપૂર્વક.'
+  wwctiOnTarget: ' આઇટમ અનુવાદ %i માટે સક્ષમ.'
+  wwcBookTranslationFailCatastrophic: ' લક્ષ્ય પુસ્તકનું ભાષાંતર કરવામાં નિષ્ફળ થયું.'
+  wwcBookTranslateTitleFail: ' પુસ્તક શીર્ષકનું ભાષાંતર કરવામાં નિષ્ફળ થયું.'

@@ -5,7 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Az Amazon hozzáférési kulcs módosítása
   wwcrFail: ' Nem sikerült újratölteni a WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Frissítések ellenőrzésének módosítása késleltetés
-  wwcSignTranslationFail: ' Nem sikerült érvényes fordítást kapni a céljelről: %i.'
   wwcUpdaterFailedGeneric: Nem sikerült ellenőrizni a WorldwideChat frissítéseket.
   wwcConfigConversationUpdateCheckerInput: A frissítésellenőrző aktuális késése %i
     másodperc. Írja be a 10-nél nagyobb értéket az új érték beállításához, vagy 10-nél
@@ -160,8 +159,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Vissza a Főfordítás menühöz
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' A globális csevegés lefordítása
     a %i -ról a %o címre történik.'
-  wwcBookTranslationFail: ' Nem sikerült érvényes fordítást leolvasni a célkönyv egy
-    vagy több oldaláról: %i.'
   wwcConfigGUITranslatorSettings: Fordító konfigurálása
   wwcConfigConversationGoogleTranslateAPIKeyInput: 'Az aktuális API-kulcs: %i. Adjon
     meg egy API-kulcsot a Google Translate szolgáltatáshoz, vagy írja be a 0 értéket
@@ -241,3 +238,26 @@ Messages:
     miatt. Most add hozzá —illegal-access=engedély a meglévő szerver jar argumentumokat.
   wwcDeluxeChatIncompatible: Előfordulhat, hogy ez a plugin nem működik megfelelően
     a DeluxeChat programmal.
+  wwcSignTranslationFail: ' Nem lehet lefordítani egy vagy több sort a céltáblán.'
+  wwcBookTranslationFail: ' Nem lehet lefordítani egy vagy több oldalt a célkönyvben.'
+  wwctiOffTarget: ' Elem fordítása le van tiltva: %i'
+  wwctiPlayerNotFound: ' A (z) %i játékos nem található, vagy nem aktív fordító.'
+  wwctiOffSender: ' Elem fordítása letiltva.'
+  wwcItemTranslateTitleStock: ' Nem lehet lefordítani az alapértelmezett elemneveket.'
+  wwcItemTranslateLoreFail: ' Nem sikerült lefordítani az elem lore.'
+  wwcItemTranslateTitleFail: ' Nem sikerült lefordítani az elem nevét.'
+  wwctiNotATranslator: ' Ön nem aktív fordító! Győződjön meg róla, hogy ezt a /wwct.'
+  wwctGUIItemButton: Elemfordítás be-
+  wwcItemTranslateTitleDone: ' A lefordított tétel címe sikeresen.'
+  wwcGUITempItem: Elem megjelenítése
+  wwcItemTranslateStart: ' Célelem lefordítása...'
+  wwcSignTranslationFailCatastrophic: ' Nem sikerült lefordítani a céltáblát.'
+  wwcItemTranslationFailCatastrophic: ' Nem sikerült lefordítani a célelemet.'
+  wwcBookTranslateTitleSuccess: ' Fordított könyv címe: %i'
+  wwctiOnSender: ' Elem fordítás engedélyezve. Kattintson a jobb gombbal egy tételre
+    a fő kezében, hogy lefordítsa!'
+  wwcItemTranslateLoreStart: ' A céltárgy lefordítása...'
+  wwcItemTranslateLoreDone: ' Fordított tétel Lore sikeresen.'
+  wwctiOnTarget: ' Elemfordítás engedélyezve a %i számára.'
+  wwcBookTranslationFailCatastrophic: ' Nem sikerült lefordítani a célkönyvet.'
+  wwcBookTranslateTitleFail: ' Nem sikerült lefordítani a könyv címét.'

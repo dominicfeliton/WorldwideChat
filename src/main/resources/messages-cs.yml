@@ -5,7 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Změna přístupového klíče Amazon
   wwcrFail: ' Nepodařilo se znovu načíst WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Změnit kontrolu zpoždění aktualizací
-  wwcSignTranslationFail: ' Nelze získat platný překlad cílového znaku z %i.'
   wwcUpdaterFailedGeneric: Nelze zkontrolovat aktualizace WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Aktuální zpoždění kontroly aktualizace
     je %i sekund. Zadejte něco většího než 10 pro nastavení nové hodnoty nebo něco
@@ -155,8 +154,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Zpět na hlavní překladatelské menu
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Globální chat je překládán z
     %i do %o.'
-  wwcBookTranslationFail: ' Nelze získat platný překlad jedné nebo více stránek vaší
-    cílové knihy z %i.'
   wwcConfigGUITranslatorSettings: Konfigurace překladače
   wwcConfigConversationGoogleTranslateAPIKeyInput: Aktuální klíč API je %i. Zadejte
     prosím klíč API pro Google Translate nebo zadejte 0 pro návrat.
@@ -235,3 +232,27 @@ Messages:
     Prozatím prosím přidejte —illegal-access=povolit ke stávajícím argumentům serveru
     jar.
   wwcDeluxeChatIncompatible: Tento plugin nemusí pracovat správně s DeluxeChat.
+  wwcSignTranslationFail: ' Nelze přeložit jeden nebo více řádků na cílové znaménko.'
+  wwcBookTranslationFail: ' Nelze přeložit jednu nebo více stránek v cílové knize.'
+  wwctiOffTarget: ' Překlad položek zakázán pro %i.'
+  wwctiPlayerNotFound: ' Hráč %i není buď nalezen, nebo není aktivní překladatel.'
+  wwctiOffSender: ' Překlad položek zakázán.'
+  wwcItemTranslateTitleStock: ' Nelze převést výchozí názvy položek.'
+  wwcItemTranslateLoreFail: ' Nepodařilo se přeložit tradici položek.'
+  wwcItemTranslateTitleFail: ' Nepodařilo se přeložit název položky.'
+  wwctiNotATranslator: ' Nejste aktivní překladatel! Ujistěte se, že jste to nastavili
+    pomocí /wwct.'
+  wwctGUIItemButton: Přepnout překlad položek
+  wwcItemTranslateTitleDone: ' Název položky byl úspěšně přeložen.'
+  wwcGUITempItem: Zobrazení položky
+  wwcItemTranslateStart: ' Překlad cílové položky...'
+  wwcSignTranslationFailCatastrophic: ' Nepodařilo se převést cílové znaménko.'
+  wwcItemTranslationFailCatastrophic: ' Nepodařilo se převést cílovou položku.'
+  wwcBookTranslateTitleSuccess: ' Překlad názvu knihy: %i'
+  wwctiOnSender: ' Překlad položek povolen. Klikněte pravým tlačítkem myši na položku
+    v hlavní ruce, abyste ji přeložili!'
+  wwcItemTranslateLoreStart: ' Překlad tradice cílové položky...'
+  wwcItemTranslateLoreDone: ' Přeložený předmět tradice úspěšně.'
+  wwctiOnTarget: ' Překlad položek povolen pro %i.'
+  wwcBookTranslationFailCatastrophic: ' Nepodařilo se přeložit cílovou knihu.'
+  wwcBookTranslateTitleFail: ' Nepodařilo se přeložit název knihy.'

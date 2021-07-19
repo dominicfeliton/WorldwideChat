@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Промена Амазон пристап Клучни
   wwcrFail: ' Не успеа да ја превчита WorldWideC'
   wwcConfigGUIUpdateCheckerButton: Промена Проверете за одложување на ажурирања
-  wwcSignTranslationFail: ' Не можам да добијам валиден превод на вашиот целен знак
-    од %i.'
   wwcUpdaterFailedGeneric: Не може да се провери за WorldwideChat ажурирања
   wwcConfigConversationUpdateCheckerInput: Тековното одложување на проверката за ажурирање
     е %i секунди. Внесете нешто поголемо од 10 за да поставите нова вредност, или
@@ -159,8 +157,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Назад кон Главното мени за превод
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Глобалниот разговор се преведува
     од %i до %o.'
-  wwcBookTranslationFail: ' Не можам да добијам валиден превод на една или повеќе
-    страници од вашата целна книга од %i.'
   wwcConfigGUITranslatorSettings: Конфигурација преведувач
   wwcConfigConversationGoogleTranslateAPIKeyInput: Тековниот API клуч е %i Ве молиме
     внесете API клуч за Google Translate или напишете 0 за да се вратите назад.
@@ -244,3 +240,29 @@ Messages:
     За сега, ве молиме додадете -незаконски пристап = дозвола на вашиот постоечки
     сервер тегла аргументи.
   wwcDeluxeChatIncompatible: Овој приклучок може да не работи правилно со DeluxeChat.
+  wwcSignTranslationFail: ' Не можам да преведам една или повеќе линии на вашиот целен
+    знак.'
+  wwcBookTranslationFail: ' Не можам да преведам една или повеќе страници во вашата
+    целна книга.'
+  wwctiOffTarget: ' Точка превод оневозможени за %i.'
+  wwctiPlayerNotFound: ' Играч %i или не е пронајден, или не е активен преведувач.'
+  wwctiOffSender: ' Точка превод оневозможено.'
+  wwcItemTranslateTitleStock: ' Не можам да преведам стандардните имиња на ставки.'
+  wwcItemTranslateLoreFail: ' Не успеа да се преведе ставка ученост.'
+  wwcItemTranslateTitleFail: ' Не успеа да го преведе името на предметот.'
+  wwctiNotATranslator: ' Вие не сте активен преведувач! Бидете сигурни дека сте го
+    поставиле ова со/wwct.'
+  wwctGUIItemButton: Префрли Точка Превод
+  wwcItemTranslateTitleDone: ' Преведено насловот на предметот успешно.'
+  wwcGUITempItem: точка Покажи
+  wwcItemTranslateStart: ' Преведување на целната ставка...'
+  wwcSignTranslationFailCatastrophic: ' Не успеа да го преведе целниот знак.'
+  wwcItemTranslationFailCatastrophic: ' Не успеа да преведе целната ставка.'
+  wwcBookTranslateTitleSuccess: ' Преведен наслов на книгата: %i'
+  wwctiOnSender: ' Точка превод е овозможено. Десен-клик со ставка во вашата главна
+    рака за да ја преведете!'
+  wwcItemTranslateLoreStart: ' Преведување на знанија на целната ставка...'
+  wwcItemTranslateLoreDone: ' Преведено точка ученост успешно.'
+  wwctiOnTarget: ' Точка превод овозможено за %i.'
+  wwcBookTranslationFailCatastrophic: ' Не успеа да преведе целна книга.'
+  wwcBookTranslateTitleFail: ' Не успеа да преведе насловот на книгата.'

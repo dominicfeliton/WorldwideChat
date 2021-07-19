@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Badalka Furaha Amazon
   wwcrFail: ' Ku guuldareystay in ay dib u cusbooneysiiso WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Isbeddel Hubi Cusbooneysiinta Dib
-  wwcSignTranslationFail: ' Aan awoodin in la helo turjumaad sax ah oo ku saabsan
-    calaamada bartilmaameedkaaga laga bilaabo %i.'
   wwcUpdaterFailedGeneric: Awoodin in la hubiyo cusbooneysiinta WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Dib u dhaca imika ee hubiyaha cusbooneysiinta
     waa %i ilbiriqsi. Ku qor wax ka weyn 10 si aad u dejiso qiimo cusub, ama wax ka
@@ -161,8 +159,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Ku noqoshada Muujinta Tarjumaadda
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Wadahadal caalami ah ayaa laga
     turjumay %i ilaa %o.'
-  wwcBookTranslationFail: ' Aan awoodin inaad hesho turjumaad sax ah oo ah mid ama
-    ka badan bog ee buugga bartilmaameedkaaga laga bilaabo %i.'
   wwcConfigGUITranslatorSettings: Hagaajinta turjumaanka
   wwcConfigConversationGoogleTranslateAPIKeyInput: Furaha API ee imika waa %i. Fadlan
     gali furaha API ee Google Translate, ama nooca 0 si aad dib ugu noqoto.
@@ -243,3 +239,30 @@ Messages:
     jira.
   wwcDeluxeChatIncompatible: plugin Tani waxaa laga yaabaa in aan si fiican u shaqeeyaan
     DeluxeChat.
+  wwcSignTranslationFail: ' Aan awoodin in uu turjumo hal ama ka badan khadadka calaamadaada
+    bartilmaameedka.'
+  wwcBookTranslationFail: ' Awoodi kari waayay in uu turjumo hal ama ka badan bog
+    buuggaaga bartilmaameedka.'
+  wwctiOffTarget: ' Turjumaadda Item naafo waayo, %i.'
+  wwctiPlayerNotFound: ' Ciyaartoy %i midkood lama helin, ama ma aha turjumaan firfircoon.'
+  wwctiOffSender: ' turjumaad Item naafo.'
+  wwcItemTranslateTitleStock: ' Aan awoodin in ay turjumaan magacyada shayga caadiga
+    ah.'
+  wwcItemTranslateLoreFail: ' Guuldareystay in ay turjumaan aamminsan item.'
+  wwcItemTranslateTitleFail: ' Ku guuldareystay in ay turjumaan magaca item.'
+  wwctiNotATranslator: ' Adiguna ma waxaad tahay turjumaan firfircoon! Hubi in aad
+    this dhigay la /wwct.'
+  wwctGUIItemButton: Turjubaan Shayga Toggle
+  wwcItemTranslateTitleDone: ' Horyaalka item turjumay si guul leh.'
+  wwcGUITempItem: Muujinta shayga
+  wwcItemTranslateStart: ' Tarjumidda shayga bartilmaameedka...'
+  wwcSignTranslationFailCatastrophic: ' Guuldareystay in ay turjumaan calaamad bartilmaameedka.'
+  wwcItemTranslationFailCatastrophic: ' Guuldareystay in ay turjumaan item bartilmaameedka.'
+  wwcBookTranslateTitleSuccess: ' Cinwaanka buugga la turjumay: %i'
+  wwctiOnSender: ' turjumaad Item karti. Xuquuqda-riix la shay in aad gacanta ugu
+    weyn si ay u turjumaan!'
+  wwcItemTranslateLoreStart: ' Tarjumidda aamminsan ee shayga bartilmaameedka...'
+  wwcItemTranslateLoreDone: ' aamminsan item turjumay si guul leh.'
+  wwctiOnTarget: ' Turjumaad shayga awood u yeelo %i.'
+  wwcBookTranslationFailCatastrophic: ' Ku guuldareystay in ay turjumaan buugga diirada'
+  wwcBookTranslateTitleFail: ' Ku guuldareystay in ay turjumaan horyaalka buugga.'

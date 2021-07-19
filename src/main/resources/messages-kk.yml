@@ -4,7 +4,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Amazon кіру кілтін өзгерту
   wwcrFail: ' WorldWidechat қайта жүктеу сәтсіз аяқталды.'
   wwcConfigGUIUpdateCheckerButton: Жаңартулардың кешігуін тексеріңіз
-  wwcSignTranslationFail: ' Сіздің мақсатты белгіңіздің жарамды аудармасын ала алмайсыз.'
   wwcUpdaterFailedGeneric: WorldWidechat жаңартуларын тексеру мүмкін емес.
   wwcConfigConversationUpdateCheckerInput: Жаңартуды тексергіштегі ағымдағы кідіріс
     %i секунд болып табылады. Жаңа мәнді орнату үшін 10-нан асатын нәрсені немесе
@@ -150,8 +149,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Негізгі аударма мәзіріне оралу
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Ғаламдық чат %i дегенмен %o
     дейін аударылады.'
-  wwcBookTranslationFail: ' Сіздің мақсатты кітабыңыздың бір немесе бірнеше беттерінің
-    жарамды аудармасын ала алмайсыз.'
   wwcConfigGUITranslatorSettings: аудармашы Конфигурация
   wwcConfigConversationGoogleTranslateAPIKeyInput: Ағымдағы API кілті %i болып табылады,
     Google Translate үшін API кілтін енгізіңіз немесе кері оралу үшін 0 теріңіз.
@@ -226,3 +223,29 @@ Messages:
   wwcWatson117Warning: Уотсон InAccesssibleObjectException себебінен баптандыра алмады.
     Қазір қолданыстағы сервер JAR дәлелдеріне —illegal-access=рұқсат қосыңыз.
   wwcDeluxeChatIncompatible: Бұл плагин DeluxeChat дұрыс жұмыс істемеуі мүмкін.
+  wwcSignTranslationFail: ' Мақсатты белгіңізде бір немесе бірнеше жолдарды аудару
+    мүмкін емес.'
+  wwcBookTranslationFail: ' Сіздің мақсатты кітабында бір немесе бірнеше беттерді
+    аудару мүмкін емес.'
+  wwctiOffTarget: ' Элемент аудармасы %i өшірілген.'
+  wwctiPlayerNotFound: ' Ойнатушы табылмады немесе белсенді аудармашы емес.'
+  wwctiOffSender: ' Элемент аударма өшірілген.'
+  wwcItemTranslateTitleStock: ' Әдепкі элемент атауларын аудару мүмкін емес.'
+  wwcItemTranslateLoreFail: ' Элемент тану аудару алмады.'
+  wwcItemTranslateTitleFail: ' Элемент атауын аудара алмады.'
+  wwctiNotATranslator: ' Сіз белсенді аудармашы емессіз! Мұны /wwct арқылы орнатқаныңызға
+    көз жеткізіңіз.'
+  wwctGUIItemButton: Toggle тармақ Аударма
+  wwcItemTranslateTitleDone: ' сәтті аударылған элемент атауы.'
+  wwcGUITempItem: Дисплей элемент
+  wwcItemTranslateStart: ' Мақсатты элементті аудару...'
+  wwcSignTranslationFailCatastrophic: ' Мақсатты белгіні аудару сәтсіз аяқталды.'
+  wwcItemTranslationFailCatastrophic: ' Мақсатты элементті аудару сәтсіз аяқталды.'
+  wwcBookTranslateTitleSuccess: ' Аударылған кітап атауы: %i'
+  wwctiOnSender: ' Элемент аудармасы қосылған. Оны аудару үшін басты қолыңыздағы элементпен
+    тінтуірдің оң жақ түймешігімен нұқыңыз!'
+  wwcItemTranslateLoreStart: ' Мақсатты элементтің аудармасы...'
+  wwcItemTranslateLoreDone: ' Аударылған тармақ сәтті.'
+  wwctiOnTarget: ' Элемент аудармасы %i үшін қосылған.'
+  wwcBookTranslationFailCatastrophic: ' мақсатты кітапты аудару алмады.'
+  wwcBookTranslateTitleFail: ' Кітап атауын аудара алмады.'

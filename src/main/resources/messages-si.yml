@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: ඇමේසන් ප්රවේශ යතුර වෙනස්
   wwcrFail: ' වර්ල්ඩ්වයිඩ්හාට් රීලෝඩ් කිරීමට අසමත් විය.'
   wwcConfigGUIUpdateCheckerButton: යාවත්කාලීන ප්රමාදය සඳහා පිරික්සුම් වෙනස් කරන්න
-  wwcSignTranslationFail: ' %i වෙතින් ඔබගේ ඉලක්කගත ලකුණෙහි වලංගු පරිවර්තනයක් ලබා ගත
-    නොහැක.'
   wwcUpdaterFailedGeneric: වර්ල්ඩ්වයිඩ්හාට් යාවත්කාලීන කිරීම් සඳහා පරීක්ෂා කළ නොහැක.
   wwcConfigConversationUpdateCheckerInput: යාවත්කාල කිරීමේ පරීක්ෂකයේ වත්මන් ප්රමාදය
     තත්පර වේ. නව වටිනාකමක් සැකසීමට 10 ට වඩා වැඩි යමක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට
@@ -159,8 +157,6 @@ Messages:
   wwctGUIBackToMainMenuButton: ප්රධාන පරිවර්තන මෙනුව වෙත ආපසු යන්න
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' ගෝලීය කතාබස් %i සිට %o වෙත පරිවර්තනය
     වෙමින් පවතී.'
-  wwcBookTranslationFail: ' ඔබගේ ඉලක්කගත පොතේ පිටු එකක් හෝ වැඩි ගණනක වලංගු පරිවර්තනයක්
-    ලබා ගැනීමට නොහැකි විය.'
   wwcConfigGUITranslatorSettings: පරිවර්තක වින්යාසය
   wwcConfigConversationGoogleTranslateAPIKeyInput: වත්මන් API යතුර %i වේ. කරුණාකර
     Google පරිවර්තනය සඳහා API යතුරක් ආදානය කරන්න, නැතහොත් නැවත යන්න 0 ටයිප් කරන්න.
@@ -241,3 +237,30 @@ Messages:
     එක් කරන්න.
   wwcDeluxeChatIncompatible: මෙම ප්ලගිනය ඉතා සුවපහසු Chat සමඟ නිසි ලෙස ක්රියා නොකරනු
     ඇත.
+  wwcSignTranslationFail: ' ඔබගේ ඉලක්කගත ලකුණෙහි රේඛා එකක් හෝ කිහිපයක් පරිවර්තනය කිරීමට
+    නොහැකි විය.'
+  wwcBookTranslationFail: ' ඔබගේ ඉලක්කගත පොතේ පිටු එකක් හෝ කිහිපයක් පරිවර්තනය කිරීමට
+    නොහැකි විය.'
+  wwctiOffTarget: ' අයිතම පරිවර්තනය %i සඳහා අක්රීය කර ඇත.'
+  wwctiPlayerNotFound: ' % ප්ලේයර් % මම එක්කෝ සොයාගත නොහැක, නැතහොත් ක්රියාකාරී පරිවර්තකයෙකු
+    නොවේ.'
+  wwctiOffSender: ' අයිතම පරිවර්තනය ආබාධිත.'
+  wwcItemTranslateTitleStock: ' පෙරනිමි අයිතම නාම පරිවර්තනය කිරීමට නොහැකි විය.'
+  wwcItemTranslateLoreFail: ' අයිතම ලෝරි පරිවර්තනය කිරීමට අසමත් විය.'
+  wwcItemTranslateTitleFail: ' අයිතමයේ නම පරිවර්තනය කිරීමට අසමත් විය.'
+  wwctiNotATranslator: ' ඔබ ක්රියාකාරී පරිවර්තකයෙකු නොවේ! ඔබ/wwct සමඟ මෙය සකසා ඇති
+    බවට වග බලා ගන්න.'
+  wwctGUIItemButton: ටොගල් කරන්න අයිතමය පරිවර්තනය
+  wwcItemTranslateTitleDone: ' පරිවර්තනය කරන ලද අයිතම මාතෘකාව සාර්ථකව.'
+  wwcGUITempItem: අයිතමය පෙන්වන්න
+  wwcItemTranslateStart: ' ඉලක්කගත අයිතමය පරිවර්තනය කිරීම...'
+  wwcSignTranslationFailCatastrophic: ' ඉලක්කගත ලකුණ පරිවර්තනය කිරීමට අසමත් විය.'
+  wwcItemTranslationFailCatastrophic: ' ඉලක්කගත අයිතමය පරිවර්තනය කිරීමට අසමත් විය.'
+  wwcBookTranslateTitleSuccess: ' පරිවර්තනය කළ පොත් මාතෘකාව: %i'
+  wwctiOnSender: ' අයිතම පරිවර්තනය සක්රීය කර ඇත. එය පරිවර්තනය කිරීම සඳහා ඔබේ ප්රධාන
+    අතේ ඇති අයිතමයක් සමඟ දකුණු-ක්ලික් කරන්න!'
+  wwcItemTranslateLoreStart: ' ඉලක්කය අයිතමය ක lore පරිවර්තනය...'
+  wwcItemTranslateLoreDone: ' පරිවර්ථනය කරන ලද අයිතමය සාර්ථකව.'
+  wwctiOnTarget: ' අයිතම පරිවර්තනය %i සඳහා සබල කර ඇත.'
+  wwcBookTranslationFailCatastrophic: ' ඉලක්කගත පොත පරිවර්තනය කිරීමට අසමත් විය.'
+  wwcBookTranslateTitleFail: ' පොත් මාතෘකාව පරිවර්තනය කිරීමට අසමත් විය.'

@@ -6,8 +6,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Muuta Amazon Access -
   wwcrFail: ' WorldwideChatin lataaminen uudelleen epäonnistui.'
   wwcConfigGUIUpdateCheckerButton: Päivitysten tarkistamisen viive
-  wwcSignTranslationFail: ' Kohdemerkistä ei voi saada kelvollista käännettyä kohteesta
-    %i.'
   wwcUpdaterFailedGeneric: WorldwideChat-päivityksiä ei voi tarkistaa.
   wwcConfigConversationUpdateCheckerInput: Päivityksen tarkistuksen nykyinen viive
     on %i sekuntia. Kirjoita mitä tahansa suurempi kuin 10, jos haluat asettaa uuden
@@ -156,8 +154,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Takaisin Pääkäännösvalikko
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Globaali keskustelu käännetään
     osoitteesta %i kohteeseen %o.'
-  wwcBookTranslationFail: ' Yhtä tai useampaa sivua kohdelehdosta %i ei voi saada
-    kelvollista käännöstä.'
   wwcConfigGUITranslatorSettings: Kääntäjän kokoonpano
   wwcConfigConversationGoogleTranslateAPIKeyInput: Nykyinen API-avain on %i. Kirjoita
     API-avain Google Translatea varten tai kirjoita 0 palaaksesi takaisin.
@@ -238,3 +234,27 @@ Messages:
     purkki argumentteja.
   wwcDeluxeChatIncompatible: Tämä liitännäinen ei välttämättä toimi oikein DeluxeChatin
     kanssa.
+  wwcSignTranslationFail: ' Yhtä tai useampaa riviä ei voi kääntää kohdemerkissä.'
+  wwcBookTranslationFail: ' Yhtä tai useampaa sivua ei voi kääntää kohderyhmässä.'
+  wwctiOffTarget: ' Kohteen käännös käytöstä kohteella %i.'
+  wwctiPlayerNotFound: ' Pelaaja %i ei joko löydy tai se ei ole aktiivinen kääntäjä.'
+  wwctiOffSender: ' Kohteen käännös käytöstä.'
+  wwcItemTranslateTitleStock: ' Oletusnimien nimiä ei voi kääntää.'
+  wwcItemTranslateLoreFail: ' Kohteen lore kääntäminen epäonnistui.'
+  wwcItemTranslateTitleFail: ' Nimikkeen nimen kääntäminen epäonnistui.'
+  wwctiNotATranslator: ' Et ole aktiivinen kääntäjä! Varmista, että olet asettanut
+    tämän käyttämällä /wwct.'
+  wwctGUIItemButton: Vaihda kohteen käännös
+  wwcItemTranslateTitleDone: ' Käännetty kohteen otsikko onnistuneesti.'
+  wwcGUITempItem: Kohteen näyttö
+  wwcItemTranslateStart: ' Kohdekohteen kääntäminen...'
+  wwcSignTranslationFailCatastrophic: ' Kohdemerkin kääntäminen epäonnistui.'
+  wwcItemTranslationFailCatastrophic: ' Kohdekohteen kääntäminen epäonnistui.'
+  wwcBookTranslateTitleSuccess: ' Käännetyn kirjan nimi: %i'
+  wwctiOnSender: ' Kohteen käännös käytössä. Napsauta hiiren kakkospainikkeella pääkädessäsi
+    olevaa kohdetta kääntääksesi sen!'
+  wwcItemTranslateLoreStart: ' Kääntäminen Lore kohdekohteen...'
+  wwcItemTranslateLoreDone: ' Käännetty kohde Lore onnistuneesti.'
+  wwctiOnTarget: ' Kohteen käännös käytössä kohteella %i.'
+  wwcBookTranslationFailCatastrophic: ' Kohdekirjan kääntäminen epäonnistui.'
+  wwcBookTranslateTitleFail: ' Kirjan nimen kääntäminen epäonnistui.'

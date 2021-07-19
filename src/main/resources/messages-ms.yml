@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Tukar Kekunci Akses Amazon
   wwcrFail: ' Gagal memuatkan semula WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Ubah Periksa Kelewatan Kemas Kini
-  wwcSignTranslationFail: ' Tidak boleh dapatkan terjemahan sah bagi tanda sasaran
-    anda dari %i.'
   wwcUpdaterFailedGeneric: Tidak dapat menyemak kemaskini WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Kelewatan semasa pada pemeriksa kemaskini
     ialah %i saat. Taip apa-apa yang lebih besar daripada 10 untuk menetapkan nilai
@@ -159,8 +157,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Kembali ke Menu Terjemahan Utama
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Sembang global sedang diterjemahkan
     dari %i ke %o.'
-  wwcBookTranslationFail: ' Tidak boleh mendapatkan terjemahan sah bagi satu atau
-    lebih halaman buku sasaran anda dari %i.'
   wwcConfigGUITranslatorSettings: Konfigurasi Penterjemah
   wwcConfigConversationGoogleTranslateAPIKeyInput: Kekunci API semasa ialah %i. Sila
     masukkan kunci API untuk Google Translate, atau taip 0 untuk kembali.
@@ -241,3 +237,30 @@ Messages:
     ada anda.
   wwcDeluxeChatIncompatible: Plugin ini mungkin tidak berfungsi dengan baik dengan
     DeluxeChat.
+  wwcSignTranslationFail: ' Tidak dapat menterjemahkan satu atau lebih baris pada
+    tanda sasaran anda.'
+  wwcBookTranslationFail: ' Tidak dapat menterjemahkan satu atau lebih halaman dalam
+    buku sasaran anda.'
+  wwctiOffTarget: ' Terjemahan item dilumpuhkan untuk %i.'
+  wwctiPlayerNotFound: ' Pemain %i sama ada tidak ditemui, atau bukan penterjemah
+    aktif.'
+  wwctiOffSender: ' Terjemahan item dilumpuhkan.'
+  wwcItemTranslateTitleStock: ' Tidak boleh menterjemahkan nama item lalai.'
+  wwcItemTranslateLoreFail: ' Gagal menterjemahkan item pengetahuan.'
+  wwcItemTranslateTitleFail: ' Gagal menterjemah nama item.'
+  wwctiNotATranslator: ' Anda bukan penterjemah aktif! Pastikan anda telah menetapkan
+    ini dengan /wwct.'
+  wwctGUIItemButton: Togol Terjemahan Item
+  wwcItemTranslateTitleDone: ' Tajuk item yang diterjemahkan berjaya.'
+  wwcGUITempItem: Paparan Item
+  wwcItemTranslateStart: ' Menterjemahkan item sasaran...'
+  wwcSignTranslationFailCatastrophic: ' Gagal menterjemahkan tanda sasaran.'
+  wwcItemTranslationFailCatastrophic: ' Gagal menterjemahkan item sasaran.'
+  wwcBookTranslateTitleSuccess: ' Tajuk Buku Diterjemahkan: %i'
+  wwctiOnSender: ' Terjemahan item dibenarkan. Klik kanan dengan item di tangan utama
+    Anda untuk menerjemahkannya!'
+  wwcItemTranslateLoreStart: ' Menterjemahkan pengetahuan item sasaran...'
+  wwcItemTranslateLoreDone: ' Maklumat item yang diterjemahkan berjaya.'
+  wwctiOnTarget: ' Terjemahan item dibenarkan untuk %i.'
+  wwcBookTranslationFailCatastrophic: ' Gagal menterjemahkan buku sasaran.'
+  wwcBookTranslateTitleFail: ' Gagal menterjemahkan tajuk buku.'

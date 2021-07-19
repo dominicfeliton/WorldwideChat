@@ -178,7 +178,7 @@ public class ConfigurationHandler {
         	}
         	main.setTranslatorName("Invalid");
         }
-        //Rate-limit Settings
+        //Rate limit Settings
         try {
         	if (getMainConfig().getInt("Translator.rateLimit") > 0) {
         		main.setRateLimit(getMainConfig().getInt("Translator.rateLimit"));
@@ -236,6 +236,9 @@ public class ConfigurationHandler {
             userSettingsConfig.createSection("signTranslation");
             userSettingsConfig.set("signTranslation", inTranslator.getTranslatingSign());
            
+            userSettingsConfig.createSection("itemTranslation");
+            userSettingsConfig.set("itemTranslation", inTranslator.getTranslatingItem());
+            
             userSettingsConfig.createSection("rateLimit");
             userSettingsConfig.set("rateLimit", inTranslator.getRateLimit());
             

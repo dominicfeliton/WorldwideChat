@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Muuda Amazon Access Key
   wwcrFail: ' WorldwideChat\''i taaslaadimine nurjus.'
   wwcConfigGUIUpdateCheckerButton: Muuda värskenduste otsimise viivitus
-  wwcSignTranslationFail: ' Ei saa saada oma sihtmärgi märgi kehtivat tõlget alates
-    %i.'
   wwcUpdaterFailedGeneric: WorldwideChat värskendusi ei saa kontrollida.
   wwcConfigConversationUpdateCheckerInput: Värskenduskontrolli praegune viivitus on
     %i sekundit. Tippige midagi suuremat kui 10 uue väärtuse määramiseks või midagi
@@ -152,8 +150,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Tagasi Peamise tõlke menüüsse
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Globaalne vestlus on tõlgitud
     %i kuni %o.'
-  wwcBookTranslationFail: ' Ei ole võimalik saada oma sihtraamatu ühe või mitme lehekülje
-    kehtivat tõlget alates %i.'
   wwcConfigGUITranslatorSettings: Tõlkija seadistus
   wwcConfigConversationGoogleTranslateAPIKeyInput: Praegune API võti on %i. Palun
     sisestage Google Translate API võti või tippige 0, et minna tagasi.
@@ -228,3 +224,27 @@ Messages:
   wwcWatson117Warning: Watson on inAccebleObjectException tõttu lähtestamine nurjus.
     Nüüd lisage —illegaal-access=luba oma olemasolevatele serveri purgi argumentidele.
   wwcDeluxeChatIncompatible: See plugin ei pruugi töötada korralikult DeluxeChat.
+  wwcSignTranslationFail: ' Ei saa tõlkida ühte või mitut rida oma sihtmärk.'
+  wwcBookTranslationFail: ' Ei saa tõlkida ühte või mitut lehekülge oma sihtraamatus.'
+  wwctiOffTarget: ' Üksuse tõlge keelatud %i.'
+  wwctiPlayerNotFound: ' Mängija %Ma kas ei leitud, või ei ole aktiivne tõlkija.'
+  wwctiOffSender: ' Üksuse tõlkimine keelatud.'
+  wwcItemTranslateTitleStock: ' Vaikeüksuste nimesid ei saa tõlkida.'
+  wwcItemTranslateLoreFail: ' Üksuse pärimuse tõlkimine nurjus.'
+  wwcItemTranslateTitleFail: ' Üksuse nime tõlkimine nurjus.'
+  wwctiNotATranslator: ' Sa ei ole aktiivne tõlkija! Veenduge, et olete seadnud selle
+    /wwct.'
+  wwctGUIItemButton: Lülita üksuse tõlge
+  wwcItemTranslateTitleDone: ' Tõlgitud objekti pealkiri edukalt.'
+  wwcGUITempItem: Üksuse ekraan
+  wwcItemTranslateStart: ' Sihtpunkti tõlkimine...'
+  wwcSignTranslationFailCatastrophic: ' Sihtmärgi tõlkimine nurjus.'
+  wwcItemTranslationFailCatastrophic: ' Sihtobjekti tõlkimine nurjus.'
+  wwcBookTranslateTitleSuccess: ' Tõlkinud raamatu pealkiri: %i'
+  wwctiOnSender: ' Objekti tõlkimine lubatud. Paremklõpsake oma põhikäes oleval üksusel,
+    et seda tõlkida!'
+  wwcItemTranslateLoreStart: ' Sihtpunkti pärimuse tõlkimine...'
+  wwcItemTranslateLoreDone: ' Tõlgitud kirje pärimuse edukalt.'
+  wwctiOnTarget: ' Objekti tõlkimine lubatud %i.'
+  wwcBookTranslationFailCatastrophic: ' Sihtraamatu tõlkimine nurjus'
+  wwcBookTranslateTitleFail: ' Raamatu pealkirja tõlkimine nurjus.'

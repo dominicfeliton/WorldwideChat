@@ -1,4 +1,4 @@
-package com.expl0itz.worldwidechat.commands;
+package com.expl0itz.worldwidechat.inventory.wwctranslategui;
 
 import java.util.ArrayList;
 import java.util.UUID;

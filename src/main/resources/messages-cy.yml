@@ -5,7 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Newid Allwedd Mynediad Amazon
   wwcrFail: ' Methwyd ail-lwytho WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Newid Gwirio am Oedi Diweddariadau
-  wwcSignTranslationFail: ' Methu cael cyfieithiad dilys o\''ch arwydd targed o %i.'
   wwcUpdaterFailedGeneric: Methu gwirio am ddiweddariadau WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Yr oedi presennol ar y gwiriwr diweddaru
     yw %i eiliad. Teipiwch unrhyw beth sy\'n fwy na 10 i osod gwerth newydd, neu unrhyw
@@ -156,8 +155,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Nôl i Prif Ddewislen Cyfieithu
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Mae sgwrs fyd-eang yn cael ei
     gyfieithu o %i i %o.'
-  wwcBookTranslationFail: ' Methu cael cyfieithiad dilys o un neu fwy o dudalennau
-    o\''ch llyfr targed o %i.'
   wwcConfigGUITranslatorSettings: Cyfluniad Cyfieithydd
   wwcConfigConversationGoogleTranslateAPIKeyInput: Yr allwedd API cyfredol yw %i mewnbynnu
     allwedd API ar gyfer Google Translate, neu deipio 0 i fynd yn ôl.
@@ -237,3 +234,29 @@ Messages:
     presennol.
   wwcDeluxeChatIncompatible: Efallai na fydd hyn yn ategyn yn gweithio\'n iawn gyda
     xeChat.
+  wwcSignTranslationFail: ' Methu cyfieithu un neu fwy o linellau ar eich arwydd targed.'
+  wwcBookTranslationFail: ' Methu cyfieithu un neu fwy o dudalennau yn eich llyfr
+    targed.'
+  wwctiOffTarget: ' Cyfieithu eitem wedi\''i analluogi am %i.'
+  wwctiPlayerNotFound: ' Chwaraewr %i naill ai heb ei ganfod, neu nid yw\''n gyfieithydd
+    gweithredol.'
+  wwctiOffSender: ' Cyfieithu eitem wedi\''i analluogi.'
+  wwcItemTranslateTitleStock: ' Methu cyfieithu enwau eitemau diofyn.'
+  wwcItemTranslateLoreFail: ' Methu cyfieithu eitem lore.'
+  wwcItemTranslateTitleFail: ' Methu cyfieithu enw\''r eitem.'
+  wwctiNotATranslator: ' Nid ydych yn gyfieithydd gweithredol! Gwnewch yn siŵr eich
+    bod wedi gosod hyn gyda/wwct.'
+  wwctGUIItemButton: Toggle Cyfieithu Eitem
+  wwcItemTranslateTitleDone: ' Teitl eitem wedi\''i gyfieithu yn llwyddiannus.'
+  wwcGUITempItem: Arddangos Eitem
+  wwcItemTranslateStart: ' Cyfieithu eitem darged...'
+  wwcSignTranslationFailCatastrophic: ' Methu cyfieithu arwydd targed.'
+  wwcItemTranslationFailCatastrophic: ' Methu cyfieithu eitem darged.'
+  wwcBookTranslateTitleSuccess: ' Teitl Llyfr Cyfieithiedig: %i'
+  wwctiOnSender: ' Alluogwyd cyfieithiad eitem. Cliciwch y botwm dde gydag eitem yn
+    eich prif law i\''w gyfieithu!'
+  wwcItemTranslateLoreStart: ' Cyfieithu llên o eitem darged...'
+  wwcItemTranslateLoreDone: ' Lore eitem Cyfieithwyd yn llwyddiannus.'
+  wwctiOnTarget: ' Cyfieithiad eitem wedi\''i alluogi ar gyfer %i.'
+  wwcBookTranslationFailCatastrophic: ' Methu cyfieithu\''r llyfr targed.'
+  wwcBookTranslateTitleFail: ' Methu cyfieithu teitl llyfr.'

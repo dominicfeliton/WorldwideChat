@@ -30,9 +30,33 @@ public class BookTranslation implements Task<ItemStack, ItemStack>{
     public ItemStack run(ItemStack currentBook) {
         /* Init vars */
         BookMeta meta = (BookMeta) currentBook.getItemMeta();
+        String outTitle = meta.getTitle();
         List<String> pages = meta.getPages();
         List<String> translatedPages = new ArrayList<String>();
         boolean sameResult = false;
+        
+        /* Send message */
+        final TextComponent bookStart = Component.text()
+            .append(main.getPluginPrefix().asComponent())
+            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBookTranslateStart")).color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
+            .build();
+        main.adventure().sender(event.getPlayer()).sendMessage(bookStart);
+        
+        /* Translate title */
+        outTitle = CommonDefinitions.translateText(meta.getTitle(), event.getPlayer());
+        if (!outTitle.equals(meta.getTitle())) {
+        	final TextComponent bookTitleSuccess = Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBookTranslateTitleSuccess").replace("%i", meta.getTitle())).color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
+                    .build();
+                main.adventure().sender(event.getPlayer()).sendMessage(bookTitleSuccess);
+        } else {
+        	final TextComponent bookTitleFail = Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBookTranslateTitleFail")).color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
+                    .build();
+                main.adventure().sender(event.getPlayer()).sendMessage(bookTitleFail);
+        }
         
         /* Translate pages */
         for (String eaPage : pages) {
@@ -56,7 +80,7 @@ public class BookTranslation implements Task<ItemStack, ItemStack>{
             /* If we are here, one or more translations was unsuccessful */
             final TextComponent translationNoticeMsg = Component.text()
                     .append(main.getPluginPrefix().asComponent())
-                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBookTranslationFail").replace("%i", main.getTranslatorName())).color(NamedTextColor.RED).decoration(TextDecoration.ITALIC, true))
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBookTranslationFail")).color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
                     .build();
                 main.adventure().sender(event.getPlayer()).sendMessage(translationNoticeMsg);
         }
@@ -66,7 +90,7 @@ public class BookTranslation implements Task<ItemStack, ItemStack>{
         BookMeta newMeta = (BookMeta) newBook.getItemMeta();
             newMeta.setAuthor(meta.getAuthor());
             newMeta.setGeneration(meta.getGeneration());
-            newMeta.setTitle(meta.getTitle());
+            newMeta.setTitle(outTitle);
             newMeta.setPages(translatedPages);
             newBook.setItemMeta(newMeta);
         getCurrentChain().setTaskData("translatedBook", newBook);

@@ -5,7 +5,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.expl0itz.worldwidechat.configuration.ConfigurationGeneralSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationGeneralSettingsGUI;
 
 public class WWCConfiguration extends BasicCommand {
 

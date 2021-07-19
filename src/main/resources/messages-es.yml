@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Cambiar clave de acceso de Amazon
   wwcrFail: ' Error al volver a cargar WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Retraso de comprobación de cambios en actualizaciones
-  wwcSignTranslationFail: ' No se puede obtener una traducción válida de su signo
-    de destino de %i.'
   wwcUpdaterFailedGeneric: No se puede comprobar si hay actualizaciones de WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: El retraso actual en el comprobador de
     actualización es %i segundos. Escriba algo mayor que 10 para establecer un nuevo
@@ -161,8 +159,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Volver al menú de traducción principal
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' El chat global se está traduciendo
     de %i a %o.'
-  wwcBookTranslationFail: ' No se puede obtener una traducción válida de una o más
-    páginas del libro de destino de %i.'
   wwcConfigGUITranslatorSettings: Configuración del traductor
   wwcConfigConversationGoogleTranslateAPIKeyInput: La clave de API actual es %i. Introduzca
     una clave API para Google Translate o escriba 0 para volver atrás.
@@ -245,3 +241,27 @@ Messages:
     Por ahora, agregue —illegal-access=permit a los argumentos jar del servidor existentes.
   wwcDeluxeChatIncompatible: Es posible que este complemento no funcione correctamente
     con DeluxeChat.
+  wwcSignTranslationFail: ' No se puede traducir una o más líneas en el signo de destino.'
+  wwcBookTranslationFail: ' No se puede traducir una o más páginas del libro de destino.'
+  wwctiOffTarget: ' Traducción de artículos deshabilitada para %i.'
+  wwctiPlayerNotFound: ' El reproductor %i no se encuentra o no es un traductor activo.'
+  wwctiOffSender: ' Traducción de artículos desactivada.'
+  wwcItemTranslateTitleStock: ' No se pueden traducir los nombres de elementos predeterminados.'
+  wwcItemTranslateLoreFail: ' No se ha podido traducir la historia del artículo.'
+  wwcItemTranslateTitleFail: ' No se pudo traducir el nombre del artículo.'
+  wwctiNotATranslator: ' ¡No eres un traductor activo! Asegúrate de haberlo configurado
+    con /wwct.'
+  wwctGUIItemButton: Alternar traducción de elementos
+  wwcItemTranslateTitleDone: ' Título del artículo traducido correctamente.'
+  wwcGUITempItem: Visualización del artículo
+  wwcItemTranslateStart: ' Traduciendo elemento objetivo...'
+  wwcSignTranslationFailCatastrophic: ' No se pudo traducir el signo de destino.'
+  wwcItemTranslationFailCatastrophic: ' No se pudo traducir el artículo de destino.'
+  wwcBookTranslateTitleSuccess: ' Título del libro traducido: %i'
+  wwctiOnSender: ' Traducción de artículos habilitada. Haz clic derecho con un elemento
+    en tu mano principal para traducirlo.'
+  wwcItemTranslateLoreStart: ' Traduciendo la historia del elemento objetivo...'
+  wwcItemTranslateLoreDone: ' Traducido correctamente la historia del artículo.'
+  wwctiOnTarget: ' Traducción de artículos habilitada para %i.'
+  wwcBookTranslationFailCatastrophic: ' No se pudo traducir el libro de destino.'
+  wwcBookTranslateTitleFail: ' No se pudo traducir el título del libro.'

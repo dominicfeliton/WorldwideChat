@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Baguhin ang Key ng Access sa Amazon
   wwcrFail: ' Nabigong i-reload ang WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Baguhin ang Suriin para sa Mga Update
-  wwcSignTranslationFail: ' Hindi makuha ang wastong pagsasalin ng iyong target sign
-    mula sa %i.'
   wwcUpdaterFailedGeneric: Hindi masuri ang mga update sa WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Ang kasalukuyang pagkaantala sa update
     checker ay %i segundo. I-type ang anumang mas malaki kaysa sa 10 upang magtakda
@@ -168,8 +166,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Bumalik sa Main Translation Menu
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Ang pandaigdigang chat ay isinalin
     mula sa %i sa %o.'
-  wwcBookTranslationFail: ' Hindi makuha ang wastong pagsasalin ng isa o higit pang
-    mga pahina ng iyong target na aklat mula sa %i.'
   wwcConfigGUITranslatorSettings: Pagsasaayos ng Tagasalin
   wwcConfigConversationGoogleTranslateAPIKeyInput: Ang kasalukuyang API key ay %i.
     Pakipasok ang API key para sa Google Translate, o i-type ang 0 upang bumalik.
@@ -255,3 +251,32 @@ Messages:
     ng server jar.
   wwcDeluxeChatIncompatible: Ang plugin na ito ay maaaring hindi gumana ng maayos
     sa DelluxeChat.
+  wwcSignTranslationFail: ' Hindi ma-translate ang isa o higit pang mga linya sa iyong
+    target sign.'
+  wwcBookTranslationFail: ' Hindi ma-translate ang isa o higit pang mga pahina sa
+    iyong target na aklat.'
+  wwctiOffTarget: ' Hindi pinagana ang pagsasalin ng item para sa %i.'
+  wwctiPlayerNotFound: ' Ang manlalarong %i ay alinman sa hindi natagpuan, o hindi
+    isang aktibong tagasalin.'
+  wwctiOffSender: ' Hindi pinagana ang pagsasalin ng item.'
+  wwcItemTranslateTitleStock: ' Hindi ma-translate ang mga default na pangalan ng
+    item.'
+  wwcItemTranslateLoreFail: ' Nabigong i-translate ang tradisyon ng item.'
+  wwcItemTranslateTitleFail: ' Nabigong i-translate ang pangalan ng item.'
+  wwctiNotATranslator: ' Ikaw ay hindi isang aktibong tagasalin! Tiyaking itinakda
+    mo ito sa /wwct.'
+  wwctGUIItemButton: I-toggle ang Pagsasalin ng Item
+  wwcItemTranslateTitleDone: ' Matagumpay na isinalin item pamagat.'
+  wwcGUITempItem: Item Display
+  wwcItemTranslateStart: ' Pagsasalin ng target na item...'
+  wwcSignTranslationFailCatastrophic: ' Nabigong i-translate ang target sign.'
+  wwcItemTranslationFailCatastrophic: ' Nabigong i-translate ang target na item.'
+  wwcBookTranslateTitleSuccess: ' Isinalin Pamagat ng Aklat: %i'
+  wwctiOnSender: ' Pinagana ang pagsasalin ng item. Mag-right-click sa isang item
+    sa iyong pangunahing kamay upang isalin ito!'
+  wwcItemTranslateLoreStart: ' Pagsasalin ng tradisyonal na kaalaman ng target na
+    item...'
+  wwcItemTranslateLoreDone: ' Matagumpay na isinalin item tradisyonal na kaalaman'
+  wwctiOnTarget: ' Pinagana ang pagsasalin ng item para sa %i.'
+  wwcBookTranslationFailCatastrophic: ' Nabigong i-translate ang target na aklat.'
+  wwcBookTranslateTitleFail: ' Nabigong i-translate ang pamagat ng libro.'

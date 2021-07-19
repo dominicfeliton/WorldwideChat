@@ -4,7 +4,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: 更改亚马逊访问密钥
   wwcrFail: ' 无法重新加载 WorldwideChat。'
   wwcConfigGUIUpdateCheckerButton: 更改检查更新延迟
-  wwcSignTranslationFail: ' 无法从 %i 获得目标符号的有效翻译。'
   wwcUpdaterFailedGeneric: 无法检查 WorldwideChat 的更新。
   wwcConfigConversationUpdateCheckerInput: 更新检查器上的当前延迟为 %i 秒。键入大于 10 的任何值以设置新值，或者键入小于
     10 的任何值以返回。
@@ -127,7 +126,6 @@ Messages:
   wwcUnsupportedVersion: 您运行的是不受支持的 Bukkit、Spigot 或 Paper 版本。支持的版本：
   wwctGUIBackToMainMenuButton: 返回主翻译菜单
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' 全球聊天正在从 %i 翻译为 %o。'
-  wwcBookTranslationFail: ' 无法从 %i 获得目标电子书的一页或多页的有效翻译。'
   wwcConfigGUITranslatorSettings: 翻译器配置
   wwcConfigConversationGoogleTranslateAPIKeyInput: 当前 API 密钥为 %i。请为谷歌翻译输入 API 密钥，或键入
     0 返回。
@@ -185,3 +183,25 @@ Messages:
   wwcConfigConversationConsoleTranslatorFail: 用户 %i 无法启用 %o。
   wwcWatson117Warning: 由于无法访问的对象异常，沃森未能初始化。目前，请在现有的服务器 jar 参数中添加 —illegal-access=permit。
   wwcDeluxeChatIncompatible: 这个插件可能无法正常使用 DeluxeChat。
+  wwcSignTranslationFail: ' 无法翻译目标符号上的一行或多行。'
+  wwcBookTranslationFail: ' 无法翻译目标图书中的一页或多页。'
+  wwctiOffTarget: ' %i 的商品翻译被禁用。'
+  wwctiPlayerNotFound: ' 玩家 %i 要么找不到，要么不是活跃的翻译者。'
+  wwctiOffSender: ' 已禁用物品翻译。'
+  wwcItemTranslateTitleStock: ' 无法翻译默认商品名称。'
+  wwcItemTranslateLoreFail: ' 无法翻译商品传说。'
+  wwcItemTranslateTitleFail: ' 无法翻译商品名称。'
+  wwctiNotATranslator: ' 你不是活跃的翻译者！确保你已经用 /wwct 进行了设置。'
+  wwctGUIItemButton: 切换项目翻译
+  wwcItemTranslateTitleDone: ' 已成功翻译商品标题。'
+  wwcGUITempItem: 物品展示
+  wwcItemTranslateStart: ' 正在翻译目标物品...'
+  wwcSignTranslationFailCatastrophic: ' 无法翻译目标标志。'
+  wwcItemTranslationFailCatastrophic: ' 无法翻译目标商品。'
+  wwcBookTranslateTitleSuccess: ' 翻译的图书标题： %i'
+  wwctiOnSender: ' 已启用商品翻译。用主手中的物品右键单击以翻译它！'
+  wwcItemTranslateLoreStart: ' 翻译目标物品的更多知识...'
+  wwcItemTranslateLoreDone: ' 已成功翻译商品传说。'
+  wwctiOnTarget: ' 为 %i 启用了商品翻译。'
+  wwcBookTranslationFailCatastrophic: ' 无法翻译目标图书。'
+  wwcBookTranslateTitleFail: ' 无法翻译图书标题。'

@@ -34,8 +34,8 @@ public class YAMLTranslator {
 		//Other vars
 		//String supportedLangs[] = new CommonDefinitions().getSupportedPluginLangCodes();
 		String inputLang = "en";
-		String originalYAMLDir = "";
-		String outputYAMLDir = "";
+		String originalYAMLDir = "C:\\Users\\Dominic\\Desktop\\WorldwideChat\\WorldwideChat\\src\\main\\resources\\";
+		String outputYAMLDir = "C:\\Users\\Dominic\\Desktop\\WorldwideChat\\WorldwideChat\\src\\main\\resources\\";
 		String originalYAML = "";
 		String outputYAML = "";
 		
@@ -64,11 +64,15 @@ public class YAMLTranslator {
 			supportedLangs[i] = temp.get(i);
 		}
 		
-		System.out.println("Enter parent directory of original YAML: (include ending /)");
-		originalYAMLDir = scanner.nextLine().toString();
+		if (originalYAMLDir.equals("")) {
+			System.out.println("Enter parent directory of original YAML: (include ending /)");
+			originalYAMLDir = scanner.nextLine().toString();
+		}
 		
-		System.out.println("Enter parent directory of output YAML (include ending /): ");
-		outputYAMLDir = scanner.nextLine().toString();
+		if (outputYAMLDir.equals("")) {
+			System.out.println("Enter parent directory of output YAML (include ending /): ");
+			outputYAMLDir = scanner.nextLine().toString();
+		}
 		
 		for (String eaSupportedLang : supportedLangs) {
 			if (!eaSupportedLang.equals(inputLang)) {

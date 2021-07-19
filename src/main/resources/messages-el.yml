@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Αλλαγή κλειδιού πρόσβασης Amazon
   wwcrFail: ' Η επαναφόρτωση του WorldwideChat'
   wwcConfigGUIUpdateCheckerButton: Αλλαγή ελέγχου για καθυστέρηση ενημερώσεων
-  wwcSignTranslationFail: ' Δεν είναι δυνατή η λήψη έγκυρης μετάφρασης του σημείου
-    προορισμού σας από %i.'
   wwcUpdaterFailedGeneric: Δεν είναι δυνατός ο έλεγχος για ενημερώσεις WorldwideChat
   wwcConfigConversationUpdateCheckerInput: Η τρέχουσα καθυστέρηση στον έλεγχο ενημέρωσης
     είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 10 για να ορίσετε
@@ -167,8 +165,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Επιστροφή στο Κύριο Μενού Μετάφρασης
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Η καθολική συνομιλία μεταφράζεται
     από %i σε %o.'
-  wwcBookTranslationFail: ' Δεν είναι δυνατή η λήψη έγκυρης μετάφρασης μιας ή περισσοτέρων
-    σελίδων του βιβλίου προορισμού σας από %i.'
   wwcConfigGUITranslatorSettings: Διαμόρφωση μεταφραστή
   wwcConfigConversationGoogleTranslateAPIKeyInput: Το τρέχον κλειδί API είναι %i.
     Εισαγάγετε ένα κλειδί API για το Google Translate ή πληκτρολογήστε 0 για να επιστρέψετε.
@@ -255,3 +251,31 @@ Messages:
     του βάζου του διακομιστή σας.
   wwcDeluxeChatIncompatible: Αυτό το πρόσθετο ενδέχεται να μην λειτουργεί σωστά με
     το DeluxeChat.
+  wwcSignTranslationFail: ' Δεν είναι δυνατή η μετάφραση μιας ή περισσοτέρων γραμμών
+    στο σύμβολο προορισμού.'
+  wwcBookTranslationFail: ' Δεν είναι δυνατή η μετάφραση μιας ή περισσοτέρων σελίδων
+    στο βιβλίο προορισμού σας.'
+  wwctiOffTarget: ' Η μετάφραση αντικειμένου απενεργοποιημένη για %i.'
+  wwctiPlayerNotFound: ' Ο αναπαραγωγής %i είτε δεν βρέθηκε είτε δεν είναι ενεργός
+    μεταφραστής.'
+  wwctiOffSender: ' Η μετάφραση αντικειμένου απενεργοποιήθηκε.'
+  wwcItemTranslateTitleStock: ' Δεν είναι δυνατή η μετάφραση προεπιλεγμένων ονομάτων
+    στοιχείων.'
+  wwcItemTranslateLoreFail: ' Αποτυχία μετάφρασης αντικειμένων.'
+  wwcItemTranslateTitleFail: ' Αποτυχία μετάφρασης ονόματος αντικειμένου.'
+  wwctiNotATranslator: ' Δεν είσαι ενεργός μεταφραστής! Βεβαιωθείτε ότι έχετε ρυθμίσει
+    αυτό με /wwct.'
+  wwctGUIItemButton: Εναλλαγή μετάφρασης αντικειμένου
+  wwcItemTranslateTitleDone: ' Μετάφραση τίτλου αντικειμένου με επιτυχία.'
+  wwcGUITempItem: Οθόνη Στοιχείου
+  wwcItemTranslateStart: ' Μετάφραση στοχευόμενου αντικειμένου...'
+  wwcSignTranslationFailCatastrophic: ' Αποτυχία μετάφρασης του σημείου προορισμού.'
+  wwcItemTranslationFailCatastrophic: ' Αποτυχία μετάφρασης αντικειμένου προορισμού.'
+  wwcBookTranslateTitleSuccess: ' Τίτλος μεταφρασμένου βιβλίου: %i'
+  wwctiOnSender: ' Ενεργοποίηση μετάφρασης αντικειμένου. Κάντε δεξί κλικ με ένα στοιχείο
+    στο κύριο χέρι σας για να το μεταφράσετε!'
+  wwcItemTranslateLoreStart: ' Μεταφράζοντας την παράδοση του στοχευόμενου αντικειμένου...'
+  wwcItemTranslateLoreDone: ' Μετάφραση αντικειμένων με επιτυχία.'
+  wwctiOnTarget: ' Η μετάφραση αντικειμένου ενεργοποιήθηκε για %i.'
+  wwcBookTranslationFailCatastrophic: ' Αποτυχία μετάφρασης βιβλίου προορισμού.'
+  wwcBookTranslateTitleFail: ' Αποτυχία μετάφρασης τίτλου βιβλίου.'

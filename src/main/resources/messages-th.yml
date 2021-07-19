@@ -5,7 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: เปลี่ยนคีย์การเข้าถึงอเมซอน
   wwcrFail: ' ล้มเหลวในการโหลด WorldwideChat'
   wwcConfigGUIUpdateCheckerButton: เปลี่ยนการตรวจสอบการหน่วงเวลาการปรับปรุง
-  wwcSignTranslationFail: ' ไม่สามารถแปลเครื่องหมายเป้าหมายของคุณจาก %i ได้'
   wwcUpdaterFailedGeneric: ไม่สามารถตรวจสอบการอัปเดต WorldwideChat ได้
   wwcConfigConversationUpdateCheckerInput: ความล่าช้าในปัจจุบันในการตรวจสอบการปรับปรุงเป็น
     %i วินาทีพิมพ์อะไรที่มากกว่า 10 เพื่อตั้งค่าใหม่หรืออะไรที่น้อยกว่า 10 เพื่อย้อนกลับ
@@ -139,8 +138,6 @@ Messages:
   wwctGUIBackToMainMenuButton: กลับไปที่เมนูการแปลหลัก
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' การสนทนาทั่วโลกกำลังถูกแปลจาก
     %i เป็น %o'
-  wwcBookTranslationFail: ' ไม่สามารถรับคำแปลที่ถูกต้องของหนังสือเป้าหมายของคุณจาก
-    %i อย่างน้อยหนึ่งหน้าได้'
   wwcConfigGUITranslatorSettings: การกำหนดค่าตัวแปล
   wwcConfigConversationGoogleTranslateAPIKeyInput: คีย์ API ปัจจุบันคือ %i โปรดป้อนคีย์
     API สำหรับ Google แปลภาษา หรือพิมพ์ 0 เพื่อย้อนกลับ
@@ -209,3 +206,26 @@ Messages:
   wwcWatson117Warning: วัตสันล้มเหลวในการเริ่มต้นเนื่องจากการ InaccessibleObjectExceptionสำหรับตอนนี้โปรดเพิ่ม
     —ผิดกฏหมายเข้าถึง = อนุญาตให้มีอาร์กิวเมนต์ขวดเซิร์ฟเวอร์ที่มีอยู่
   wwcDeluxeChatIncompatible: ปลั๊กอินนี้อาจทำงานไม่ถูกต้องกับ DeluxeChat
+  wwcSignTranslationFail: ' ไม่สามารถแปลหนึ่งบรรทัดหรือมากกว่าบนเครื่องหมายเป้าหมายของคุณ'
+  wwcBookTranslationFail: ' ไม่สามารถแปลหนึ่งหน้าหรือมากกว่าในหนังสือเป้าหมายของคุณ'
+  wwctiOffTarget: ' ปิดการแปลรายการสำหรับ %i'
+  wwctiPlayerNotFound: ' ไม่พบผู้เล่น %i หรือไม่พบหรือไม่ใช่ตัวแปลที่ใช้งานอยู่'
+  wwctiOffSender: ' ปิดการแปลรายการ'
+  wwcItemTranslateTitleStock: ' ไม่สามารถแปลชื่อรายการเริ่มต้น'
+  wwcItemTranslateLoreFail: ' ล้มเหลวในการแปลตำนานรายการ'
+  wwcItemTranslateTitleFail: ' ล้มเหลวในการแปลชื่อรายการ'
+  wwctiNotATranslator: ' คุณไม่ใช่นักแปลที่ใช้งานอยู่!ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่านี้ด้วย
+    /wwct.'
+  wwctGUIItemButton: สลับการแปลรายการ
+  wwcItemTranslateTitleDone: ' ชื่อรายการที่แปลเรียบร้อยแล้ว'
+  wwcGUITempItem: แสดงรายการ
+  wwcItemTranslateStart: ' แปลรายการเป้าหมาย...'
+  wwcSignTranslationFailCatastrophic: ' ล้มเหลวในการแปลเครื่องหมายเป้าหมาย'
+  wwcItemTranslationFailCatastrophic: ' ล้มเหลวในการแปลรายการเป้าหมาย'
+  wwcBookTranslateTitleSuccess: ' ชื่อหนังสือที่แปลแล้ว: %i'
+  wwctiOnSender: ' เปิดใช้งานการแปลรายการคลิกขวาด้วยรายการในมือหลักของคุณเพื่อแปลมัน!'
+  wwcItemTranslateLoreStart: ' แปลตำนานของรายการเป้าหมาย...'
+  wwcItemTranslateLoreDone: ' แปลตำนานรายการประสบความสำเร็จ.'
+  wwctiOnTarget: ' เปิดใช้งานการแปลรายการสำหรับ %i'
+  wwcBookTranslationFailCatastrophic: ' ล้มเหลวในการแปลหนังสือเป้าหมาย'
+  wwcBookTranslateTitleFail: ' ล้มเหลวในการแปลชื่อหนังสือ'

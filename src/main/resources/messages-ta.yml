@@ -4,8 +4,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: அமேசான் அணுகல் விசையை மாற்றவும்
   wwcrFail: ' WorldWideSaat மீண்டும் ஏற்றத் தவறியது.'
   wwcConfigGUIUpdateCheckerButton: மேம்படுத்தல்கள் தாமதத்திற்கான சரிபார்க்கவும்
-  wwcSignTranslationFail: ' %i இலிருந்தே உங்கள் இலக்கு அடையாளத்தின் சரியான மொழிபெயர்ப்பைப்
-    பெற முடியவில்லை.'
   wwcUpdaterFailedGeneric: WorldWideSat மேம்படுத்தல்கள் சரிபார்க்க முடியவில்லை.
   wwcConfigConversationUpdateCheckerInput: புதுப்பிப்பு சரிபார்ப்பு தற்போதைய தாமதம்
     %i விநாடிகள் ஆகும். ஒரு புதிய மதிப்பு அமைக்க 10 விட அதிகமாக எதையும் தட்டச்சு,
@@ -164,8 +162,6 @@ Messages:
   wwctGUIBackToMainMenuButton: முதன்மை மொழிபெயர்ப்பு பட்டிக்கு திரும்பவும்
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' குளோபல் அரட்டை %i இலிருந்து
     %o க்கு மொழிபெயர்க்கப்பட்டுள்ளது.'
-  wwcBookTranslationFail: ' %i இலிருந்தே உங்கள் இலக்குப் புத்தகத்தின் ஒன்று அல்லது
-    அதற்கு மேற்பட்ட பக்கங்களின் செல்லுபடியாகும் மொழிபெயர்ப்பைப் பெற முடியவில்லை.'
   wwcConfigGUITranslatorSettings: மொழிபெயர்ப்பாளர் கட்டமைப்பு
   wwcConfigConversationGoogleTranslateAPIKeyInput: தற்போதைய API விசை %i ஆகும். Google
     Translate க்கான API விசையை உள்ளிடவும், அல்லது மீண்டும் செல்ல 0 ஐ தட்டச்சு செய்யவும்.
@@ -247,3 +243,30 @@ Messages:
     இப்போது, தயவுசெய்து -illegal-access=உங்கள் இருக்கும் சர்வர் ஜாடி வாதங்கள் அனுமதி
     சேர்க்கவும்.
   wwcDeluxeChatIncompatible: இந்த சொருகி DeLuxeChat சரியாக வேலை செய்யாமல் போகலாம்.
+  wwcSignTranslationFail: ' உங்கள் இலக்கு அடையாளம் ஒன்று அல்லது அதற்கு மேற்பட்ட வரிகளை
+    மொழிபெயர்க்க முடியவில்லை.'
+  wwcBookTranslationFail: ' உங்கள் இலக்கு புத்தகத்தில் ஒன்று அல்லது அதற்கு மேற்பட்ட
+    பக்கங்களை மொழிபெயர்க்க முடியவில்லை.'
+  wwctiOffTarget: ' பொருள் மொழிபெயர்ப்பு %i க்கு முடக்கப்பட்டது.'
+  wwctiPlayerNotFound: ' ஆட்டக்காரர் %i ஒன்று காணப்படவில்லை, அல்லது செயலூக்க மொழிபெயர்ப்பாளர்
+    அல்ல.'
+  wwctiOffSender: ' பொருள் மொழிபெயர்ப்பு முடக்கப்பட்டுள்ளது'
+  wwcItemTranslateTitleStock: ' இயல்புநிலை உருப்படியின் பெயர்களை மொழிபெயர்க்க முடியவில்லை.'
+  wwcItemTranslateLoreFail: ' உருப்படியை லோர் மொழிபெயர்க்க முடியவில்லை.'
+  wwcItemTranslateTitleFail: ' உருப்படிப் பெயரை மொழிபெயர்க்கத் தவறியது'
+  wwctiNotATranslator: ' நீங்கள் ஒரு செயலில் மொழிபெயர்ப்பாளர் இல்லை! உறுதி/wwct/உடன்
+    இந்த அமைக்க வேண்டும்.'
+  wwctGUIItemButton: உருப்படி மொழிபெயர்ப்பு
+  wwcItemTranslateTitleDone: ' மொழிபெயர்க்கப்பட்ட உருப்படியை தலைப்பு வெற்றிகரமாக.'
+  wwcGUITempItem: உருப்படிக் காட்சி
+  wwcItemTranslateStart: ' இலக்கு உருப்படியை மொழிபெயர்த்தல்...'
+  wwcSignTranslationFailCatastrophic: ' இலக்கு அடையாளம் மொழிபெயர்க்கத் தவறியது.'
+  wwcItemTranslationFailCatastrophic: ' இலக்கு உருப்படியை மொழிபெயர்க்க தவறிவிட்டது.'
+  wwcBookTranslateTitleSuccess: ' மொழிபெயர்க்கப்பட்ட புத்தகத் தலைப்பு: %i'
+  wwctiOnSender: ' பொருள் மொழிபெயர்ப்பு இயக்கப்பட்டது. அதை மொழிபெயர்க்க உங்கள் முக்கிய
+    கையில் ஒரு உருப்படியை வலது கிளிக் செய்யவும்!'
+  wwcItemTranslateLoreStart: ' இலக்கு உருப்படியை லோர் மொழிபெயர்ப்பது...'
+  wwcItemTranslateLoreDone: ' மொழிபெயர்க்கப்பட்ட உருப்படியை லோ'
+  wwctiOnTarget: ' %i க்கு உருப்படி மொழிபெயர்ப்பு இயக்கப்பட்டது.'
+  wwcBookTranslationFailCatastrophic: ' இலக்கு நூலை மொழிபெயர்த்துத் தோல்வியடைந்தார்.'
+  wwcBookTranslateTitleFail: ' புத்தகத் தலைப்பை மொழிபெயர்க்கத் தவறினார்'

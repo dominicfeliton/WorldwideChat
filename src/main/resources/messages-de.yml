@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Amazon Access Key ändern
   wwcrFail: ' Fehler beim erneuten Laden von WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Änderung Auf Aktualisierungsverzögerung prüfen
-  wwcSignTranslationFail: ' Es konnte keine gültige Übersetzung Ihres Zielzeichens
-    von %i abgerufen werden.'
   wwcUpdaterFailedGeneric: Es konnte nicht nach WorldwideChat-Updates gesucht werden.
   wwcConfigConversationUpdateCheckerInput: Die aktuelle Verzögerung bei der Update-Prüfung
     beträgt %i Sekunden. Geben Sie etwas größer als 10 ein, um einen neuen Wert festzulegen,
@@ -167,8 +165,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Zurück zum Hauptübersetzungsmenü
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Der globale Chat wird von %i
     nach %o übersetzt.'
-  wwcBookTranslationFail: ' Es konnte keine gültige Übersetzung einer oder mehrerer
-    Seiten Ihres Zielbuchs ab %i abgerufen werden.'
   wwcConfigGUITranslatorSettings: Konfiguration des Übersetzers
   wwcConfigConversationGoogleTranslateAPIKeyInput: Der aktuelle API-Schlüssel %i.
     Geben Sie einen API-Schlüssel für Google Translate ein oder geben Sie 0 ein, um
@@ -255,3 +251,30 @@ Messages:
     vorhandenen Server-Jar-Argumenten hinzu.
   wwcDeluxeChatIncompatible: Dieses Plugin funktioniert möglicherweise nicht ordnungsgemäß
     mit DeluxeChat.
+  wwcSignTranslationFail: ' Eine oder mehrere Zeilen auf Ihrem Zielzeichen kann nicht
+    übersetzt werden.'
+  wwcBookTranslationFail: ' Eine oder mehrere Seiten in Ihrem Zielbuch können nicht
+    übersetzt werden.'
+  wwctiOffTarget: ' Die Artikelübersetzung für %i ist deaktiviert.'
+  wwctiPlayerNotFound: ' Der Spieler %i wurde entweder nicht gefunden oder ist kein
+    aktiver Übersetzer.'
+  wwctiOffSender: ' Die Artikelübersetzung ist deaktiviert.'
+  wwcItemTranslateTitleStock: ' Standardelemennamen können nicht übersetzt werden.'
+  wwcItemTranslateLoreFail: ' Item Lore konnte nicht übersetzt werden.'
+  wwcItemTranslateTitleFail: ' Der Elementname konnte nicht übersetzt werden.'
+  wwctiNotATranslator: ' Sie sind kein aktiver Übersetzer! Stellen Sie sicher, dass
+    Sie dies mit /wwct eingestellt haben.'
+  wwctGUIItemButton: Artikelübersetzung umschalten
+  wwcItemTranslateTitleDone: ' Der Titel des Artikels wurde erfolgreich übersetzt.'
+  wwcGUITempItem: Artikel-Display
+  wwcItemTranslateStart: ' Zielelement wird übersetzt...'
+  wwcSignTranslationFailCatastrophic: ' Das Zielzeichen konnte nicht übersetzt werden.'
+  wwcItemTranslationFailCatastrophic: ' Das Zielelement konnte nicht übersetzt werden.'
+  wwcBookTranslateTitleSuccess: ' Titel des übersetzten Buches: %i'
+  wwctiOnSender: ' Artikelübersetzung aktiviert. Klicken Sie mit der rechten Maustaste
+    mit einem Element in Ihrer Haupthand, um es zu übersetzen!'
+  wwcItemTranslateLoreStart: ' Überlieferung des Zielgegenstandes wird übersetzt...'
+  wwcItemTranslateLoreDone: ' Übersetzte Item-Überlieferung erfolgreich.'
+  wwctiOnTarget: ' Artikelübersetzung für %i aktiviert.'
+  wwcBookTranslationFailCatastrophic: ' Das Zielbuch konnte nicht übersetzt werden.'
+  wwcBookTranslateTitleFail: ' Der Buchtitel konnte nicht übersetzt werden.'

@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Modificarea cheii de acces Amazon
   wwcrFail: ' Nu a reușit să reîncărcați WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Modificare verificare pentru întârzierea actualizărilor
-  wwcSignTranslationFail: ' Nu am putut obține o traducere validă a semnului țintă
-    din %i.'
   wwcUpdaterFailedGeneric: Imposibil de verificat pentru actualizări WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Întârzierea curentă a verificatorului de
     actualizare este %i secunde. Tastați ceva mai mare de 10 pentru a seta o valoare
@@ -162,8 +160,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Înapoi la meniul principal de traducere
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Chatul global este tradus din
     %i la %o.'
-  wwcBookTranslationFail: ' Nu am putut obține o traducere validă a uneia sau mai
-    multor pagini ale cărții țintă din %i.'
   wwcConfigGUITranslatorSettings: Configurare traducător
   wwcConfigConversationGoogleTranslateAPIKeyInput: Tasta API curentă este %i. Introduceți
     o cheie API pentru Google Translate sau tastați 0 pentru a reveni.
@@ -248,3 +244,30 @@ Messages:
     server existente.
   wwcDeluxeChatIncompatible: Este posibil ca acest plugin să nu funcționeze corect
     cu DeLuxeChat.
+  wwcSignTranslationFail: ' Imposibil de tradus una sau mai multe linii de pe semnul
+    țintă.'
+  wwcBookTranslationFail: ' Imposibil de tradus una sau mai multe pagini în cartea
+    țintă.'
+  wwctiOffTarget: ' Traducere articol dezactivat pentru %i.'
+  wwctiPlayerNotFound: ' Jucătorul %i fie nu este găsit, fie nu este un traducător
+    activ.'
+  wwctiOffSender: ' Traducere articol dezactivat.'
+  wwcItemTranslateTitleStock: ' Imposibil de tradus numele de elemente implicite.'
+  wwcItemTranslateLoreFail: ' Nu a reușit să traducă articolul lore.'
+  wwcItemTranslateTitleFail: ' Nu a reușit să traducă numele elementului.'
+  wwctiNotATranslator: ' Nu eşti un traducător activ! Asigurați-vă că ați setat acest
+    lucru cu /wwct.'
+  wwctGUIItemButton: Comută traducerea elementului
+  wwcItemTranslateTitleDone: ' Titlul articolului tradus cu succes.'
+  wwcGUITempItem: Afișaj element
+  wwcItemTranslateStart: ' Traducerea obiectului țintă...'
+  wwcSignTranslationFailCatastrophic: ' Nu a reușit să traducă semnul țintă.'
+  wwcItemTranslationFailCatastrophic: ' Nu a reușit să traducă elementul țintă.'
+  wwcBookTranslateTitleSuccess: ' Titlul cărții traduse: %i'
+  wwctiOnSender: ' Traducerea elementului activată. Faceți clic dreapta cu un element
+    în mâna principală pentru a-l traduce!'
+  wwcItemTranslateLoreStart: ' Traducerea lore a obiectului țintă...'
+  wwcItemTranslateLoreDone: ' Lore articol tradus cu succes.'
+  wwctiOnTarget: ' Traducerea elementului este activată pentru %i.'
+  wwcBookTranslationFailCatastrophic: ' Nu a reușit să traducă cartea țintă.'
+  wwcBookTranslateTitleFail: ' Nu a reușit să traducă titlul cărții.'

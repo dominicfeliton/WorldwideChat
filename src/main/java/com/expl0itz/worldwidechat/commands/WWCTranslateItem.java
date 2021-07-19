@@ -12,15 +12,15 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
-public class WWCTranslateSign extends BasicCommand {
+public class WWCTranslateItem extends BasicCommand {
 
     private WorldwideChat main = WorldwideChat.getInstance();
     
-    public WWCTranslateSign(CommandSender sender, Command command, String label, String[] args) {
+    public WWCTranslateItem(CommandSender sender, Command command, String label, String[] args) {
         super(sender, command, label, args);
     }
     
-    //Permission: worldwidechat.wwcts, worldwidechat.wwcts.otherplayers
+    //Permission: worldwidechat.wwcti, worldwidechat.wwcti.otherplayers
     
     public boolean processCommand() {
         /* Check args */
@@ -37,19 +37,19 @@ public class WWCTranslateSign extends BasicCommand {
         /* If no args are provided */
         if (args.length == 0) {
             if (main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString()) != null) {
-                /* Enable book translation for sender! */
+                /* Enable item translation for sender! */
                 ActiveTranslator currentTranslator = main.getActiveTranslator(Bukkit.getServer().getPlayer(sender.getName()).getUniqueId().toString());
-                currentTranslator.setTranslatingSign(!currentTranslator.getTranslatingSign());
-                if (currentTranslator.getTranslatingSign()) {
+                currentTranslator.setTranslatingItem(!currentTranslator.getTranslatingItem());
+                if (currentTranslator.getTranslatingItem()) {
                     final TextComponent toggleTranslation = Component.text()
                             .append(main.getPluginPrefix().asComponent())
-                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctsOnSender")).color(NamedTextColor.LIGHT_PURPLE))
+                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctiOnSender")).color(NamedTextColor.LIGHT_PURPLE))
                             .build();
                         adventureSender.sendMessage(toggleTranslation);
                 } else {
                     final TextComponent toggleTranslation = Component.text()
                             .append(main.getPluginPrefix().asComponent())
-                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctsOffSender")).color(NamedTextColor.LIGHT_PURPLE))
+                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctiOffSender")).color(NamedTextColor.LIGHT_PURPLE))
                             .build();
                         adventureSender.sendMessage(toggleTranslation);
                 }
@@ -58,7 +58,7 @@ public class WWCTranslateSign extends BasicCommand {
                 // Player is not an active translator
                 final TextComponent notATranslator = Component.text()
                         .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctsNotATranslator")).color(NamedTextColor.RED))
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctiNotATranslator")).color(NamedTextColor.RED))
                         .build();
                     adventureSender.sendMessage(notATranslator);
                 return true;
@@ -67,32 +67,32 @@ public class WWCTranslateSign extends BasicCommand {
         
         /* If there is an argument (another player)*/
         if (args.length == 1) {
-            if (sender.hasPermission("worldwidechat.wwcts.otherplayers")) {
-                if (args[0] != sender.getName() && args[0] instanceof String && Bukkit.getServer().getPlayer(args[0]) != null && main.getActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString()) != null && !(args[0].equals(sender.getName()))) {
-                    /* Enable book translation for target! */
+            if (sender.hasPermission("worldwidechat.wwcti.otherplayers")) {
+                if (args[0] != sender.getName() && args[0] instanceof String && Bukkit.getServer().getPlayer(args[0]) != null && main.getActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString()) != null &&!(args[0].equals(sender.getName()))) {
+                    /* Enable item translation for target! */
                     ActiveTranslator currentTranslator = main.getActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString());
-                    currentTranslator.setTranslatingSign(!currentTranslator.getTranslatingSign());
+                    currentTranslator.setTranslatingItem(!currentTranslator.getTranslatingItem());
                     Audience targetSender = main.adventure().player(Bukkit.getServer().getPlayer(args[0]));
-                    if (currentTranslator.getTranslatingSign()) {
+                    if (currentTranslator.getTranslatingItem()) {
                         final TextComponent toggleTranslation = Component.text()
                                 .append(main.getPluginPrefix().asComponent())
-                                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctsOnTarget").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
+                                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctiOnTarget").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                                 .build();
                             adventureSender.sendMessage(toggleTranslation);
                         final TextComponent toggleTranslationTarget = Component.text()
                                 .append(main.getPluginPrefix().asComponent())
-                                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctsOnSender")).color(NamedTextColor.LIGHT_PURPLE))
+                                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctiOnSender")).color(NamedTextColor.LIGHT_PURPLE))
                                 .build();
                             targetSender.sendMessage(toggleTranslationTarget);     
                     } else {
                         final TextComponent toggleTranslation = Component.text()
                                 .append(main.getPluginPrefix().asComponent())
-                                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctsOffTarget").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
+                                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctiOffTarget").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                                 .build();
                             adventureSender.sendMessage(toggleTranslation);
                         final TextComponent toggleTranslationTarget = Component.text()
                                 .append(main.getPluginPrefix().asComponent())
-                                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctsOffSender")).color(NamedTextColor.LIGHT_PURPLE))
+                                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctiOffSender")).color(NamedTextColor.LIGHT_PURPLE))
                                 .build();
                             targetSender.sendMessage(toggleTranslationTarget);
                     }
@@ -100,7 +100,7 @@ public class WWCTranslateSign extends BasicCommand {
                     // If target is not a string, active translator, or is themselves:
                     final TextComponent notAPlayer = Component.text()
                             .append(main.getPluginPrefix().asComponent())
-                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctsPlayerNotFound").replace("%i", args[0])).color(NamedTextColor.RED))
+                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctiPlayerNotFound").replace("%i", args[0])).color(NamedTextColor.RED))
                             .build();
                         adventureSender.sendMessage(notAPlayer);
                     return false;
@@ -109,7 +109,7 @@ public class WWCTranslateSign extends BasicCommand {
                 final TextComponent badPerms = Component.text() //Bad perms
                         .append(main.getPluginPrefix().asComponent())
                         .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcBadPerms")).color(NamedTextColor.RED))
-                        .append(Component.text().content(" (" + "worldwidechat.wwcts.otherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
+                        .append(Component.text().content(" (" + "worldwidechat.wwcti.otherplayers" + ")").color(NamedTextColor.LIGHT_PURPLE))
                         .build();
                     adventureSender.sendMessage(badPerms);
                     return true;

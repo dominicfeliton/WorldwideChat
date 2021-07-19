@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: अमेज़ॅन एक्सेस कुंजी बदलें
   wwcrFail: ' WorldwideChat पुनः लोड करने में विफल।'
   wwcConfigGUIUpdateCheckerButton: अपडेट विलंब के लिए चेक बदलें
-  wwcSignTranslationFail: ' %i से आपके लक्ष्य चिन्ह का वैध अनुवाद प्राप्त करने में
-    असमर्थ।'
   wwcUpdaterFailedGeneric: WorldwideChat अद्यतन के लिए जाँच करने में असमर्थ।
   wwcConfigConversationUpdateCheckerInput: अद्यतन परीक्षक पर वर्तमान विलंब है %i सेकंड।
     एक नया मान सेट करने के लिए 10 से अधिक कुछ भी टाइप करें, या वापस जाने के लिए 10
@@ -156,8 +154,6 @@ Messages:
   wwctGUIBackToMainMenuButton: मुख्य अनुवाद मेनू पर वापस जाएं
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' वैश्विक गपश %i से %o में अनुवादित
     किया जा रहा है।'
-  wwcBookTranslationFail: ' %i से अपनी लक्ष्य पुस्तक के एक या अधिक पृष्ठों का वैध
-    अनुवाद प्राप्त करने में असमर्थ।'
   wwcConfigGUITranslatorSettings: अनुवादक कॉन्फ़िगरेशन
   wwcConfigConversationGoogleTranslateAPIKeyInput: वर्तमान एपीआई कुंजी %i है कृपया
     Google अनुवाद के लिए एक एपीआई कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
@@ -237,3 +233,29 @@ Messages:
     है। अभी के लिए, कृपया अपने मौजूदा सर्वर जार तर्कों में —illegal-access=permit
     जोड़ें।
   wwcDeluxeChatIncompatible: यह प्लगइन DeluxeChat के साथ ठीक से काम नहीं कर सकता है।
+  wwcSignTranslationFail: ' अपने लक्ष्य चिह्न पर एक या अधिक लाइनों का अनुवाद करने
+    में असमर्थ।'
+  wwcBookTranslationFail: ' अपनी लक्ष्य पुस्तक में एक या अधिक पृष्ठों का अनुवाद करने
+    में असमर्थ।'
+  wwctiOffTarget: ' आइटम अनुवाद %i के लिए अक्षम है।'
+  wwctiPlayerNotFound: ' Player %i या तो नहीं मिला है, या एक सक्रिय अनुवादक नहीं है।'
+  wwctiOffSender: ' आइटम अनुवाद अक्षम है।'
+  wwcItemTranslateTitleStock: ' डिफ़ॉल्ट आइटम नामों का अनुवाद करने में असमर्थ।'
+  wwcItemTranslateLoreFail: ' आइटम विद्या का अनुवाद करने में विफल।'
+  wwcItemTranslateTitleFail: ' आइटम नाम का अनुवाद करने में विफल।'
+  wwctiNotATranslator: ' आप एक सक्रिय अनुवादक नहीं हैं! सुनिश्चित करें कि आपने इसको
+    /wwcts के साथ सेट किया है।'
+  wwctGUIItemButton: आइटम अनुवाद टॉगल करें
+  wwcItemTranslateTitleDone: ' अनुवादित आइटम शीर्षक सफलतापूर्वक।'
+  wwcGUITempItem: आइटम डिस्प्ले
+  wwcItemTranslateStart: ' लक्ष्य आइटम का अनुवाद करना...'
+  wwcSignTranslationFailCatastrophic: ' लक्ष्य चिह्न का अनुवाद करने में विफल।'
+  wwcItemTranslationFailCatastrophic: ' target item का अनुवाद करने में विफल।'
+  wwcBookTranslateTitleSuccess: ' अनुवादित पुस्तक शीर्षक: %i'
+  wwctiOnSender: ' आइटम अनुवाद सक्षम है। अनुवाद करने के लिए अपने मुख्य हाथ में एक
+    आइटम के साथ राइट-क्लिक करें!'
+  wwcItemTranslateLoreStart: ' लक्ष्य आइटम की विद्या का अनुवाद करना...'
+  wwcItemTranslateLoreDone: ' अनुवादित आइटम विद्या सफलतापूर्वक।'
+  wwctiOnTarget: ' आइटम अनुवाद %i के लिए सक्षम है।'
+  wwcBookTranslationFailCatastrophic: ' लक्ष्य पुस्तक का अनुवाद करने में विफल।'
+  wwcBookTranslateTitleFail: ' पुस्तक शीर्षक का अनुवाद करने में विफल।'

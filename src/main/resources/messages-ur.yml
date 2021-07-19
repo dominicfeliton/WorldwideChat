@@ -5,7 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: ایمیزون رسائی کلید تبدیل
   wwcrFail: ' WorldwideChat دوبارہ لوڈ کرنے میں ناکام رہی۔'
   wwcConfigGUIUpdateCheckerButton: اپ ڈیٹس کی تاخیر کے لئے چیک کریں
-  wwcSignTranslationFail: ' %i سے آپ کے ہدف کے نشان کا درست ترجمہ حاصل کرنے میں ناکام'
   wwcUpdaterFailedGeneric: WorldwideChat اپ ڈیٹس کی جانچ پڑتال سے قاصر
   wwcConfigConversationUpdateCheckerInput: اپ ڈیٹ چیکر پر موجودہ تاخیر %i سیکنڈ ہے.
     ایک نئی قیمت مقرر کرنے کے لئے 10 سے زیادہ کچھ بھی ٹائپ کریں، یا واپس جانے کے لئے
@@ -152,8 +151,6 @@ Messages:
   wwctGUIBackToMainMenuButton: واپس مرکزی ترجمہ مینو پر
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' گلوبل چیٹ کا ترجمہ %i سے %o
     تک کیا جا رہا ہے۔'
-  wwcBookTranslationFail: ' %i سے آپ کے ہدف کتاب کے ایک یا ایک سے زیادہ صفحات کا درست
-    ترجمہ حاصل کرنے میں ناکام'
   wwcConfigGUITranslatorSettings: مترجم ترتیب
   wwcConfigConversationGoogleTranslateAPIKeyInput: موجودہ API کلید %i ہے گوگل ترجمہ
     کے لئے ایک API کلید ان پٹ براہ مہربانی، یا 0 ٹائپ واپس جانے کے لئے.
@@ -231,3 +228,29 @@ Messages:
     جار دلائل پر پرمٹ.
   wwcDeluxeChatIncompatible: یہ پلگ ان DeluxeChat کے ساتھ مناسب طریقے سے کام نہیں
     کر سکتا.
+  wwcSignTranslationFail: ' آپ کے ہدف کے نشان پر ایک یا زیادہ لائنوں کا ترجمہ کرنے
+    کے قابل نہیں.'
+  wwcBookTranslationFail: ' آپ کے ہدف کتاب میں ایک یا ایک سے زیادہ صفحات کا ترجمہ
+    کرنے میں قاصر.'
+  wwctiOffTarget: ' آئٹم ترجمہ %i کے لئے غیر فعال.'
+  wwctiPlayerNotFound: ' کھلاڑی %i یا تو نہیں ملا ہے، یا ایک فعال مترجم نہیں ہے.'
+  wwctiOffSender: ' آئٹم ترجمہ غیر فعال.'
+  wwcItemTranslateTitleStock: ' ڈیفالٹ آئٹم کے ناموں کا ترجمہ کرنے'
+  wwcItemTranslateLoreFail: ' آئٹم لور کا ترجمہ کرنے میں ناکام رہا۔'
+  wwcItemTranslateTitleFail: ' آئٹم کے نام کا ترجمہ کرنے میں ناکام'
+  wwctiNotATranslator: ' آپ ایک فعال مترجم نہیں ہیں! اس بات کو یقینی بنائیں کہ آپ
+    نے اسے /wwct کے ساتھ مقرر کیا ہے'
+  wwctGUIItemButton: آئٹم ترجمہ ٹوگل کریں
+  wwcItemTranslateTitleDone: ' ترجمہ کردہ آئٹم عنوان کامیابی سے.'
+  wwcGUITempItem: آئٹم نمائش
+  wwcItemTranslateStart: ' ہدف شے کا ترجمہ...'
+  wwcSignTranslationFailCatastrophic: ' ہدف کے نشان کا ترجمہ کرنے میں ناکام.'
+  wwcItemTranslationFailCatastrophic: ' ہدف آئٹم کا ترجمہ کرنے میں ناکام'
+  wwcBookTranslateTitleSuccess: ' ترجمہ شدہ کتاب کا عنوان: %i'
+  wwctiOnSender: ' آئٹم ترجمہ فعال. ترجمہ کرنے کے لئے اپنے اہم ہاتھ میں ایک آئٹم کے
+    ساتھ دائیں کلک کریں!'
+  wwcItemTranslateLoreStart: ' ہدف شے کی تکرار کا ترجمہ...'
+  wwcItemTranslateLoreDone: ' ترجمہ شدہ آئٹم کامیابی سے بھی۔'
+  wwctiOnTarget: ' آئٹم ترجمہ %i کے لئے فعال.'
+  wwcBookTranslationFailCatastrophic: ' ہدف کتاب کا ترجمہ کرنے میں ناکام رہا۔'
+  wwcBookTranslateTitleFail: ' کتاب کے عنوان کا ترجمہ کرنے میں ناکام رہے۔'

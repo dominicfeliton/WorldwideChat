@@ -4,7 +4,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: የአማዞን መዳረሻ ቁልፍ ይቀይሩ
   wwcrFail: ' WorldWidechat ን ዳግም መጫን አልተሳካም።'
   wwcConfigGUIUpdateCheckerButton: የዝማኔ መዘግየት ቼክ ይቀይሩ
-  wwcSignTranslationFail: ' የዒላማ ምልክትዎን ትክክለኛ ትርጉም ማግኘት አልተቻለም ከ %i።'
   wwcUpdaterFailedGeneric: የዓለም WideChat ዝማኔዎችን ማረጋገጥ አልተቻለም።
   wwcConfigConversationUpdateCheckerInput: የዝማኔ ቼከር ላይ ያለው የአሁኑ መዘግየት %i ሰከንዶች ነው።
     አዲስ እሴት ለማዘጋጀት ከ 10 በላይ የሆነ ነገር ይተይቡ, ወይም ከ 10 ያነሰ ማንኛውም ነገር ወደ ኋላ ለመመለስ።
@@ -139,8 +138,6 @@ Messages:
   wwctGUIBackToMainMenuButton: ወደ ዋናው የትርጉም ምናሌ ተመለስ
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' ግሎባል ውይይት ከ %i ወደ %o እየተተረጎመ
     ነው።'
-  wwcBookTranslationFail: ' የዒላማ መጽሐፍዎ አንድ ወይም ከዚያ በላይ ገጾች ትክክለኛ ትርጉም ማግኘት አልተቻለም
-    ከ %i።'
   wwcConfigGUITranslatorSettings: ተርጓሚ ውቅር
   wwcConfigConversationGoogleTranslateAPIKeyInput: የአሁኑ ኤፒአይ ቁልፍ %i ነው። እባክዎ የኤ ፒ
     አይ ቁልፍ ለGoogle ተርጉም፣ ወይም ተይብ 0 ተመልሰው ይሂዱ።
@@ -208,3 +205,25 @@ Messages:
   wwcWatson117Warning: ዋትሰን በ InaccessibleObjectexception ምክንያት ማስጀመር አልተሳካም። ለአሁኑ
     እባክዎ ወደ ነባር የአገልጋይ ማሰሪያ ክርክሮችዎ —ሕጋዊ-መዳረሻ=ፈቃድ ያክሉ
   wwcDeluxeChatIncompatible: ይህ ተሰኪ ከ DeluxChat ጋር በአግባቡ ላይሰራ ይችላል።
+  wwcSignTranslationFail: ' በዒላማ ምልክትዎ ላይ አንድ ወይም ከዚያ በላይ መስመሮችን መተርጎም አልተቻለም።'
+  wwcBookTranslationFail: ' በዒላማ መጽሐፍዎ ውስጥ አንድ ወይም ከዚያ በላይ ገጾች መተርጎም አልተቻለም።'
+  wwctiOffTarget: ' ንጥል ትርጉም ተሰናክሏል ለ %i።'
+  wwctiPlayerNotFound: ' ተጫዋች %i ወይ አልተገኘም ነው, ወይም ንቁ ተርጓሚ አይደለም።'
+  wwctiOffSender: ' ንጥል ትርጉም ተሰናክሏል።'
+  wwcItemTranslateTitleStock: ' ነባሪ ንጥል ስሞችን መተርጎም አልተቻለም'
+  wwcItemTranslateLoreFail: ' ንጥል በርዝዴው መተርጎም አልተሳካም።'
+  wwcItemTranslateTitleFail: ' የንጥል ስም መተርጎም አልተቻለም'
+  wwctiNotATranslator: ' ንቁ ተርጓሚ አይደለህም! ይህንን በ /wwctላይ ማዋቀሩን ያረጋግጡ።'
+  wwctGUIItemButton: የንጥል ትርጉም መቀያየሪያ
+  wwcItemTranslateTitleDone: ' የተተረጎመው ንጥል ርዕስ በተሳካ ሁኔታ'
+  wwcGUITempItem: ንጥል ማሳያ
+  wwcItemTranslateStart: ' ዒላማ ንጥል መተርጎም...'
+  wwcSignTranslationFailCatastrophic: ' የዒላማ ምልክት መተርጎም አልተቻለም'
+  wwcItemTranslationFailCatastrophic: ' ዒላማ ንጥል መተርጎም አልተሳካም።'
+  wwcBookTranslateTitleSuccess: ' የተተረጎመ መጽሐፍ ርዕስ: %i'
+  wwctiOnSender: ' ንጥል ትርጉም ነቅቷል። ለመተርጎም በዋናው እጅዎ ውስጥ አንድ ንጥል በቀኝ-ጠቅ ያድርጉ!'
+  wwcItemTranslateLoreStart: ' የዒላማ ንጥል መተርጎም በርዝዴዎች...'
+  wwcItemTranslateLoreDone: ' የተተረጎመው ንጥል በርዝዴይስ በተ'
+  wwctiOnTarget: ' ንጥል ትርጉም ነቅቷል ለ %i።'
+  wwcBookTranslationFailCatastrophic: ' የዒላማ መጽሐፍ መተርጎም አልተቻለም'
+  wwcBookTranslateTitleFail: ' የመጽሐፍ ርዕስ መተርጎም አልተሳካም'

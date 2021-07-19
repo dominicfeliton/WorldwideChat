@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Амазоны хандалтын түлхүүр өөрчлөх
   wwcrFail: ' WorldWedeChat дахин ачаалж чадаагүй.'
   wwcConfigGUIUpdateCheckerButton: Шинэчлэлтүүдийг хойшлуулах шалгах
-  wwcSignTranslationFail: ' Таны зорилтот тэмдгийн зөв орчуулгыг авах боломжгүй байна
-    %i.'
   wwcUpdaterFailedGeneric: WorldWwidechat шинэчлэлтүүдийг шалгах боломжгүй.
   wwcConfigConversationUpdateCheckerInput: Шинэчлэх шалгагч дээрх одоогийн саатал
     нь %i секунд байна. 10-ээс их зүйлийг шинэ утгыг тохируулах эсвэл 10-аас бага
@@ -155,8 +153,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Үндсэн орчуулгын цэс рүү буцах
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Глобал чат %i нь %o руу орчуулагдаж
     байна.'
-  wwcBookTranslationFail: ' %i нь таны зорилтот номын нэг буюу хэд хэдэн хуудасны
-    хүчинтэй орчуулгыг авах боломжгүй.'
   wwcConfigGUITranslatorSettings: Орчуулагчийн тохиргоо
   wwcConfigConversationGoogleTranslateAPIKeyInput: Одоогийн API түлхүүр % би байна.
     оруулах уу Google Translate нь API түлхүүр, эсвэл төрөл 0 буцаж явах.
@@ -236,3 +232,30 @@ Messages:
     байна. Одоо байгаа серверийн чичиргээн аргументуудад —illegal-access=зөвшөөрлийг
     нэмнэ үү.
   wwcDeluxeChatIncompatible: Энэ залгаас нь зөв ажиллахгүй байж болно DelluxeChat.
+  wwcSignTranslationFail: ' Таны зорилтот тэмдэг дээр нэг буюу хэд хэдэн мөрийг орчуулах
+    боломжгүй.'
+  wwcBookTranslationFail: ' Таны зорилтот номонд нэг буюу хэд хэдэн хуудсыг орчуулах
+    боломжгүй.'
+  wwctiOffTarget: ' Барааны орчуулга %i нь идэвхгүй.'
+  wwctiPlayerNotFound: ' Тоглогч % би бас олж чадаагүй байна, эсвэл идэвхтэй орчуулагч
+    биш юм.'
+  wwctiOffSender: ' Барааны орчуулга идэвхгүй.'
+  wwcItemTranslateTitleStock: ' Анхдагч зүйл нь нэрийг орчуулах боломжгүй.'
+  wwcItemTranslateLoreFail: ' зүйл lore орчуулж чадаагүй.'
+  wwcItemTranslateTitleFail: ' Зүйлийн нэрийг орчуулж чадаагүй.'
+  wwctiNotATranslator: ' Та бол идэвхитэй орчуулагч биш! Үүнийг /wwct-ээр тохируулсан
+    эсэхээ шалгаарай.'
+  wwctGUIItemButton: Түлхүүр зүйл Орчуулга
+  wwcItemTranslateTitleDone: ' Орчуулсан зүйл нэр амжилттай.'
+  wwcGUITempItem: Дэлгэц зүйл
+  wwcItemTranslateStart: ' Зорилтот зүйлийг орчуулах...'
+  wwcSignTranslationFailCatastrophic: ' зорилтот тэмдэг орчуулж чадаагүй.'
+  wwcItemTranslationFailCatastrophic: ' зорилтот зүйлийг орчуулж чадаагүй.'
+  wwcBookTranslateTitleSuccess: ' Орчуулсан Номын гарчиг: %i'
+  wwctiOnSender: ' Барааны орчуулга идэвхжүүлсэн. Үүнийг орчуулахын тулд таны гол
+    гарт байгаа зүйл нь баруун товшино уу!'
+  wwcItemTranslateLoreStart: ' Зорилтот зүйлийн Lore орчуулах...'
+  wwcItemTranslateLoreDone: ' Орчуулсан зүйл lore амжилттай.'
+  wwctiOnTarget: ' Барааны орчуулга %i идэвхжүүлсэн.'
+  wwcBookTranslationFailCatastrophic: ' зорилтот номыг орчуулж чадаагүй.'
+  wwcBookTranslateTitleFail: ' Номын нэрийг орчуулж чадаагүй.'

@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Ubah Kunci Akses Amazon
   wwcrFail: ' Gagal memuat ulang WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Perubahan Periksa pembaruan keterlambatan
-  wwcSignTranslationFail: ' Tak bisa mendapatkan terjemahan valid dari tanda target
-    anda dari %i.'
   wwcUpdaterFailedGeneric: Tidak dapat memeriksa pembaruan WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Penundaan saat ini pada pemeriksa pembaruan
     adalah %i detik. Ketik apa pun yang lebih besar dari 10 untuk menetapkan nilai
@@ -159,8 +157,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Kembali ke Menu Terjemahan Utama
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Obrolan global sedang diterjemahkan
     dari %i ke %o.'
-  wwcBookTranslationFail: ' Tidak dapat mendapatkan terjemahan yang valid dari satu
-    atau lebih halaman buku target Anda dari %i.'
   wwcConfigGUITranslatorSettings: Konfigurasi Penerjemah
   wwcConfigConversationGoogleTranslateAPIKeyInput: Kunci API saat ini adalah %i. Harap
     masukan kunci API untuk Google Translate, atau ketik 0 untuk kembali.
@@ -240,3 +236,29 @@ Messages:
     Untuk saat ini, silakan tambahkan —illegal-access=permit ke argumen jar server
     yang ada.
   wwcDeluxeChatIncompatible: Plugin ini mungkin tidak bekerja dengan baik dengan DeluxeChat.
+  wwcSignTranslationFail: ' Tidak dapat menerjemahkan satu atau lebih baris pada tanda
+    target Anda.'
+  wwcBookTranslationFail: ' Tidak dapat menerjemahkan satu atau lebih halaman di buku
+    target Anda.'
+  wwctiOffTarget: ' Terjemahan butir dinonaktifkan untuk %i.'
+  wwctiPlayerNotFound: ' Pemain %i tidak ditemukan, atau bukan penerjemah aktif.'
+  wwctiOffSender: ' Terjemahan butir dinonaktifkan.'
+  wwcItemTranslateTitleStock: ' Tak dapat menerjemahkan nama butir baku.'
+  wwcItemTranslateLoreFail: ' Gagal menerjemahkan butir pengetahuan.'
+  wwcItemTranslateTitleFail: ' Gagal menerjemahkan nama butir.'
+  wwctiNotATranslator: ' Anda bukan penerjemah aktif! Pastikan Anda telah mengatur
+    ini dengan/wwct.'
+  wwctGUIItemButton: Toggle Terjemahan Item
+  wwcItemTranslateTitleDone: ' Judul butir yang diterjemahkan berhasil.'
+  wwcGUITempItem: Tampilan Butir
+  wwcItemTranslateStart: ' Menerjemahkan butir target...'
+  wwcSignTranslationFailCatastrophic: ' Gagal menerjemahkan tanda target.'
+  wwcItemTranslationFailCatastrophic: ' Gagal menerjemahkan butir target.'
+  wwcBookTranslateTitleSuccess: ' Judul Buku Diterjemahkan: %i'
+  wwctiOnSender: ' Terjemahan butir diaktifkan. Klik kanan dengan item di tangan utama
+    Anda untuk menerjemahkannya!'
+  wwcItemTranslateLoreStart: ' Menerjemahkan pengetahuan dari item target...'
+  wwcItemTranslateLoreDone: ' Diterjemahkan item pengetahuan berhasil.'
+  wwctiOnTarget: ' Terjemahan butir diaktifkan untuk %i.'
+  wwcBookTranslationFailCatastrophic: ' Gagal menerjemahkan buku target.'
+  wwcBookTranslateTitleFail: ' Gagal menerjemahkan judul buku.'

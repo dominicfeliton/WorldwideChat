@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Promenite Amazon Access Kei
   wwcrFail: ' Nije uspelo ponovo učitati WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Promena Proverite za ispravke kašnjenja
-  wwcSignTranslationFail: ' Ne mogu da dobijete valjan prevod na znak vašeg ciljnog
-    od %i.'
   wwcUpdaterFailedGeneric: Nije moguće proveriti WorldwideChat ažuriranja.
   wwcConfigConversationUpdateCheckerInput: Trenutni kašnjenje na kontroleru ažuriranja
     je %i sekundi. Ukucajte nešto veće od 10 da biste postavili novu vrednost, ili
@@ -153,8 +151,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Nazad na glavni meni za prevod
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Globalno ćaskanje se prevodi
     iz %i na %o.'
-  wwcBookTranslationFail: ' Nije moguće dobiti važeći prevod jedne ili više stranica
-    vaše ciljne knjige iz %i.'
   wwcConfigGUITranslatorSettings: Konfiguracija prevoditelja
   wwcConfigConversationGoogleTranslateAPIKeyInput: Trenutni API ključ je %i. Unesite
     API ključ za Google Translate ili upišite 0 da biste se vratili.
@@ -229,3 +225,29 @@ Messages:
   wwcWatson117Warning: Votson nije uspeo da inicijalizuje zbog nepristupačnosti ObjecTekception.
     Za sada dodajte —illegal-access=dozvolu postojećim argumentima servera jar.
   wwcDeluxeChatIncompatible: Tozi plugin može da ne raboti pravilno s DelekeChat.
+  wwcSignTranslationFail: ' Nije moguće prevesti jednu ili više linija na vašem ciljnom
+    znaku.'
+  wwcBookTranslationFail: ' Nije moguće prevesti jednu ili više stranica u vašoj ciljnoj
+    knjizi.'
+  wwctiOffTarget: ' Prevod stavke onemogućen za %i.'
+  wwctiPlayerNotFound: ' Player %i ili nije pronađen, ili nije aktivan prevodilac.'
+  wwctiOffSender: ' Stavka prevod onemogućen.'
+  wwcItemTranslateTitleStock: ' Nije moguće prevesti podrazumevane imena stavki.'
+  wwcItemTranslateLoreFail: ' Nije uspelo da prevede stavku Lore.'
+  wwcItemTranslateTitleFail: ' Nije uspelo prevesti ime stavke.'
+  wwctiNotATranslator: ' Vie ne ste aktivni prevodilac! Uverite se da ste postavili
+    ovo sa /vvct.'
+  wwctGUIItemButton: Prevod stavke Prevod
+  wwcItemTranslateTitleDone: ' Prevedena stavka naslov uspešno.'
+  wwcGUITempItem: Prikaz stavke
+  wwcItemTranslateStart: ' Prevođenje ciljne stavke...'
+  wwcSignTranslationFailCatastrophic: ' Nije uspelo da prevede znak cilja.'
+  wwcItemTranslationFailCatastrophic: ' Nije uspelo prevesti ciljnu stavku.'
+  wwcBookTranslateTitleSuccess: ' Prevedeni naslov knjige: %i'
+  wwctiOnSender: ' Prevod stavke omogućen. Kliknite desnim tasterom miša sa stavkom
+    u glavnoj ruci da ga prevedete!'
+  wwcItemTranslateLoreStart: ' Prevođenje predavanja ciljne stavke...'
+  wwcItemTranslateLoreDone: ' Prevedena stavka Lore uspešno.'
+  wwctiOnTarget: ' Prevod stavke omogućen za %i.'
+  wwcBookTranslationFailCatastrophic: ' Nije uspelo prevesti ciljnu knjigu.'
+  wwcBookTranslateTitleFail: ' Nije uspelo prevesti naslov knjige.'

@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Chanje Amazon Aksè kle
   wwcrFail: ' Echwe pou pou Reload WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Chanje Tcheke pou Updates Reta
-  wwcSignTranslationFail: ' Kapab jwenn yon tradiksyon ki valab nan siy sib ou soti
-    nan % mwen.'
   wwcUpdaterFailedGeneric: Kapab tcheke pou dènye WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Reta aktyèl la sou korektè a aktyalizasyon
     se % mwen segonn. Tape anyen ki pi konsekan pase 10 yo mete yon nouvo valè, oswa
@@ -153,8 +151,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Retounen nan meni tradiksyon prensipal
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Global chat se ke yo te tradui
     soti nan % mwen nan %o.'
-  wwcBookTranslationFail: ' Kapab jwenn yon tradiksyon valab nan youn oswa plis paj
-    nan liv sib ou soti nan % mwen.'
   wwcConfigGUITranslatorSettings: Konfigirasyon tradiktè
   wwcConfigConversationGoogleTranslateAPIKeyInput: Kle API aktyèl la se % mwen % Tanpri
     D \'yon kle API pou Google Translate, oswa kalite 0 ale tounen.
@@ -228,3 +224,26 @@ Messages:
     Pou kounye a, tanpri ajoute - ilegal-aksè = pèmi nan agiman ki deja egziste bokal
     sèvè ou.
   wwcDeluxeChatIncompatible: Plugin sa a pa ka travay byen ak DeluxeChat.
+  wwcSignTranslationFail: ' Kapab tradui youn oswa plis liy sou siy sib ou.'
+  wwcBookTranslationFail: ' Kapab tradui youn oswa plis paj nan liv sib ou.'
+  wwctiOffTarget: ' Tradiksyon atik andikape pou % mwen.'
+  wwctiPlayerNotFound: ' Jwè mwen swa pa jwenn, oswa se pa yon tradiktè aktif.'
+  wwctiOffSender: ' Tradiksyon atik andikape.'
+  wwcItemTranslateTitleStock: ' Kapab tradui non atik default.'
+  wwcItemTranslateLoreFail: ' Echwe pou pou tradwi atik lore.'
+  wwcItemTranslateTitleFail: ' Echwe pou pou tradwi non atik.'
+  wwctiNotATranslator: ' Ou pa yon tradiktè aktif! Asire ou ke ou te mete sa a ak/wwct.'
+  wwctGUIItemButton: Tradiksyon atik activer
+  wwcItemTranslateTitleDone: ' Tradwi atik tit avèk siksè.'
+  wwcGUITempItem: atik ekspozisyon
+  wwcItemTranslateStart: ' Tradwi atik sib...'
+  wwcSignTranslationFailCatastrophic: ' Echwe pou pou tradui siy sib.'
+  wwcItemTranslationFailCatastrophic: ' Echwe pou pou tradui atik sib.'
+  wwcBookTranslateTitleSuccess: ' Tradwi Tit Liv: %i'
+  wwctiOnSender: ' Tradiksyon atik pèmèt. Dwa-klike sou ak yon atik nan men prensipal
+    ou a tradui li!'
+  wwcItemTranslateLoreStart: ' Tradwi lore nan atik sib...'
+  wwcItemTranslateLoreDone: ' Tradui atik fè lò avèk siksè.'
+  wwctiOnTarget: ' Tradiksyon atik pèmèt pou % mwen.'
+  wwcBookTranslationFailCatastrophic: ' Echwe pou pou tradwi liv sib.'
+  wwcBookTranslateTitleFail: ' Echwe pou pou tradwi tit liv.'

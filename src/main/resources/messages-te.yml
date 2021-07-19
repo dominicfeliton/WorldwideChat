@@ -4,8 +4,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: అమెజాన్ యాక్సెస్ కీ మార్చండి
   wwcrFail: ' వరల్డ్చాట్ను రీలోడ్ చేయడంలో విఫలమైంది.'
   wwcConfigGUIUpdateCheckerButton: నవీకరణలు ఆలస్యం కోసం తనిఖీ మార్చండి
-  wwcSignTranslationFail: ' %i నుండి మీ లక్ష్య సంకేతం యొక్క చెల్లుబాటు అయ్యే అనువాదాన్ని
-    పొందలేకపోయింది.'
   wwcUpdaterFailedGeneric: వరల్డ్చాట్ నవీకరణల కోసం తనిఖీ చేయడం సాధ్యం.
   wwcConfigConversationUpdateCheckerInput: నవీకరణ చెకర్ పై ప్రస్తుత ఆలస్యం %i సెకన్లు.
     ఒక కొత్త విలువ సెట్ 10 కంటే ఎక్కువ ఏదైనా టైప్, లేదా 10 కంటే తక్కువ ఏదైనా తిరిగి
@@ -154,8 +152,6 @@ Messages:
   wwctGUIBackToMainMenuButton: ప్రధాన అనువాద మెనూకు తిరిగి
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' గ్లోబల్ చాట్ %i నుండి %o కు
     అనువదించబడుతోంది.'
-  wwcBookTranslationFail: ' %i నుండి మీ లక్ష్య పుస్తకంలోని ఒకటి లేదా అంతకంటే ఎక్కువ
-    పేజీల యొక్క చెల్లుబాటు అయ్యే అనువాదాన్ని పొందలేకపోయింది.'
   wwcConfigGUITranslatorSettings: అనువాదకుడు ఆకృతీకరణ
   wwcConfigConversationGoogleTranslateAPIKeyInput: ప్రస్తుత API కీ %i. దయచేసి Google
     Translate కోసం ఒక API కీని ఇన్పుట్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
@@ -233,3 +229,29 @@ Messages:
     విఫలమైంది. ఇప్పుడు కోసం, దయచేసి మీ ప్రస్తుత సర్వర్ కూజా వాదనలు —illegal-access=అనుమతి
     జోడించండి.
   wwcDeluxeChatIncompatible: ఈ ప్లగ్ఇన్ డీలక్స్ చాట్ తో సరిగా పని చేయకపోవచ్చు.
+  wwcSignTranslationFail: ' మీ లక్ష్య చిహ్నంపై ఒకటి లేదా అంతకంటే ఎక్కువ పంక్తులను
+    అనువదించడం సాధ్యం కాదు.'
+  wwcBookTranslationFail: ' మీ లక్ష్య పుస్తకంలో ఒకటి లేదా అంతకంటే ఎక్కువ పేజీలను అనువదించడం
+    సాధ్యం కాదు.'
+  wwctiOffTarget: ' అంశం అనువాదం %i కొరకు నిలిపివేయబడింది.'
+  wwctiPlayerNotFound: ' ప్లేయర్ % నేను కనుగొనబడలేదు, లేదా చురుకైన అనువాదకుడు కాదు.'
+  wwctiOffSender: ' అంశం అనువాదం డిసేబుల్.'
+  wwcItemTranslateTitleStock: ' డిఫాల్ట్ అంశం పేర్లు అనువదించడానికి సాధ్యం.'
+  wwcItemTranslateLoreFail: ' అంశం లోర్ అనువదించడానికి విఫలమైంది.'
+  wwcItemTranslateTitleFail: ' అంశం పేరు అనువదించడానికి విఫలమైంది.'
+  wwctiNotATranslator: ' మీరు చురుకైన అనువాదకుడు కాదు! మీరు దీన్ని /wwctతో సెట్ చేశారని
+    నిర్ధారించుకోండి.'
+  wwctGUIItemButton: టోగుల్ అంశం అనువాదం
+  wwcItemTranslateTitleDone: ' అంశం శీర్షిక విజయవంతంగా అనువదించబడింది.'
+  wwcGUITempItem: అంశం డిస్ప్లే
+  wwcItemTranslateStart: ' లక్ష్యం అంశం అనువదించడం...'
+  wwcSignTranslationFailCatastrophic: ' లక్ష్యం సైన్ అనువదించడానికి విఫలమైంది.'
+  wwcItemTranslationFailCatastrophic: ' లక్ష్యం అంశం అనువదించడానికి విఫలమైంది.'
+  wwcBookTranslateTitleSuccess: ' అనువదించబడిన పుస్తక శీర్షిక: %i'
+  wwctiOnSender: ' అంశం అనువాదం ప్రారంభించబడింది. అనువదించడానికి మీ ప్రధాన చేతిలో
+    ఒక వస్తువుతో కుడి-క్లిక్ చేయండి!'
+  wwcItemTranslateLoreStart: ' లక్ష్యం అంశం యొక్క లోర్ అనువదించడం...'
+  wwcItemTranslateLoreDone: ' అనువాదం అంశం విజయవంతంగా.'
+  wwctiOnTarget: ' అంశం అనువాదం %i కొరకు ప్రారంభించబడింది.'
+  wwcBookTranslationFailCatastrophic: ' లక్ష్యం పుస్తకం అనువదించడానికి విఫలమైంది.'
+  wwcBookTranslateTitleFail: ' పుస్తక శీర్షికను అనువదించడంలో విఫలమైంది.'

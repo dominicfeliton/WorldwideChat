@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Змінити ключ доступу Amazon
   wwcrFail: ' Не вдалося перезавантажити програму WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Змінення перевірки наявності затримки оновлень
-  wwcSignTranslationFail: ' Не вдалося отримати коректний переклад вашого знака призначення
-    з %i.'
   wwcUpdaterFailedGeneric: Не вдалося перевірити наявність оновлень WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Поточна затримка на засобі перевірки оновлень
     становить %i секунд. Введіть щось більше 10, щоб встановити нове значення, або
@@ -157,8 +155,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Повернутися до головного меню перекладу
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Глобальний чат наразі перекладається
     з %i на %o.'
-  wwcBookTranslationFail: ' Не вдалося отримати коректний переклад однієї або декількох
-    сторінок вашої цільової книги з %i.'
   wwcConfigGUITranslatorSettings: Налаштування перекладача
   wwcConfigConversationGoogleTranslateAPIKeyInput: Поточний ключ API — %i. Будь ласка,
     введіть ключ API для Google Translate або введіть 0, щоб повернутися назад.
@@ -235,3 +231,29 @@ Messages:
     Зараз, будь ласка, додайте —illegal-access=Дозволити до наявних аргументів сервера
     jar.
   wwcDeluxeChatIncompatible: Цей плагін може не працювати належним чином з DeluxeChat.
+  wwcSignTranslationFail: ' Не вдається перекласти один або кілька рядків на цільовому
+    знаку.'
+  wwcBookTranslationFail: ' Не вдається перекласти одну або декілька сторінок у вашій
+    цільовій книзі.'
+  wwctiOffTarget: ' Переклад елементів вимкнено для %i.'
+  wwctiPlayerNotFound: ' Гравець %i або не знайдено, або не є активним перекладачем.'
+  wwctiOffSender: ' Переклад елементів вимкнено.'
+  wwcItemTranslateTitleStock: ' Не вдається перекласти типові назви елементів.'
+  wwcItemTranslateLoreFail: ' Не вдалося перекласти елемент lore.'
+  wwcItemTranslateTitleFail: ' Не вдалося перекласти назву елемента.'
+  wwctiNotATranslator: ' Ви не активний перекладач! Переконайтеся, що ви встановили
+    це за допомогою /wwct.'
+  wwctGUIItemButton: Увімкнути або вимкнути переклад елементів
+  wwcItemTranslateTitleDone: ' Успішно перекладений заголовок елемента.'
+  wwcGUITempItem: Відображення елемента
+  wwcItemTranslateStart: ' Переклад елемента призначення...'
+  wwcSignTranslationFailCatastrophic: ' Не вдалося перекласти знак призначення.'
+  wwcItemTranslationFailCatastrophic: ' Не вдалося перекласти цільовий елемент.'
+  wwcBookTranslateTitleSuccess: ' Назва перекладеної книги: %i'
+  wwctiOnSender: ' Увімкнено переклад елементів. Клацніть правою кнопкою миші елемент
+    у вашій головній руці, щоб перекласти його!'
+  wwcItemTranslateLoreStart: ' Переклад предмета призначення...'
+  wwcItemTranslateLoreDone: ' Перекладений елемент успішно освоєний.'
+  wwctiOnTarget: ' Увімкнено переклад елементу для %i.'
+  wwcBookTranslationFailCatastrophic: ' Не вдалося перекласти цільову книгу.'
+  wwcBookTranslateTitleFail: ' Не вдалося перекласти назву книги.'

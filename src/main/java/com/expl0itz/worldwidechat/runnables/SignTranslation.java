@@ -1,7 +1,5 @@
 package com.expl0itz.worldwidechat.runnables;
 
-import java.util.Arrays;
-
 import org.bukkit.block.Sign;
 import org.bukkit.event.player.PlayerInteractEvent;
 
@@ -32,7 +30,7 @@ public class SignTranslation implements Task<Sign, Sign>{
         String[] signText = currentSign.getLines();
         String[] changedSignText = new String[signText.length];
         boolean textLimit = false;
-        boolean sameResult = false;
+        boolean oneOrMoreLinesFailed = false;
         
         /* Send message */
         final TextComponent signStart = Component.text()
@@ -48,11 +46,13 @@ public class SignTranslation implements Task<Sign, Sign>{
             if (eaLine.length() > 15) {
                 textLimit = true;
             }
+            if (eaLine.equals(signText[i]) && !signText[i].equals("")) {
+            	oneOrMoreLinesFailed = true;
+            }
             changedSignText[i] = eaLine;
         }
             /* Change sign for this user only, if translationNotTooLong and sign still exists*/
-            sameResult = Arrays.equals(signText, changedSignText);
-            if (!textLimit && !sameResult && currentSign.getLocation() != null) {
+            if (!textLimit && !oneOrMoreLinesFailed && currentSign.getLocation() != null) {
                 /* Set completed message */
                 getCurrentChain().setTaskData("translatedSign", changedSignText);
                 final TextComponent signDone = Component.text()
@@ -60,17 +60,16 @@ public class SignTranslation implements Task<Sign, Sign>{
                     .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcSignDone")).color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
                     .build();
                 main.adventure().sender(event.getPlayer()).sendMessage(signDone);
-            }
-            else if (sameResult) {
-                /* If we are here, translation was unsuccessful */
-                final TextComponent translationNoticeMsg = Component.text()
-                        .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcSignTranslationFail").replace("%i", main.getTranslatorName())).color(NamedTextColor.RED).decoration(TextDecoration.ITALIC, true))
-                        .build();
-                    main.adventure().sender(event.getPlayer()).sendMessage(translationNoticeMsg);
-                    getCurrentChain().setTaskData("translatedSign", null);
-            }
-            else if (textLimit) {
+            } 
+            else if (oneOrMoreLinesFailed && currentSign.getLocation() != null) {
+            	/* Even though one or more lines failed, set completed message */
+                getCurrentChain().setTaskData("translatedSign", changedSignText);
+                final TextComponent signDone = Component.text()
+                    .append(main.getPluginPrefix().asComponent())
+                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcSignTranslationFail")).color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
+                    .build();
+                main.adventure().sender(event.getPlayer()).sendMessage(signDone);
+            } else if (textLimit) {
                 /* Format sign for chat, if translation exceeds 15 chars or sign was already deleted */
                 String out = "\n";
                 for (String eaLine : changedSignText) {

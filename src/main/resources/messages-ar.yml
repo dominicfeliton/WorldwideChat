@@ -5,7 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: تغيير مفتاح الوصول الأمازون
   wwcrFail: ' فشل في إعادة تحميل وورلدويدتشات.'
   wwcConfigGUIUpdateCheckerButton: تغيير التحقق من تأخر التحديثات
-  wwcSignTranslationFail: ' تعذر الحصول على ترجمة صالحة لعلامة الهدف من %i.'
   wwcUpdaterFailedGeneric: غير قادر على التحقق من وجود تحديثات وورلدويدتشات.
   wwcConfigConversationUpdateCheckerInput: التأخير الحالي على مدقق التحديث هو %i ثانية.
     اكتب أي شيء أكبر من 10 لتعيين قيمة جديدة، أو أي شيء أقل من 10 للعودة.
@@ -145,8 +144,6 @@ Messages:
   wwctGUIBackToMainMenuButton: العودة إلى قائمة الترجمة الرئيسية
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' تتم ترجمة الدردشة العامة من
     %i إلى %o.'
-  wwcBookTranslationFail: ' تعذر الحصول على ترجمة صالحة لصفحة واحدة أو أكثر من الكتاب
-    المستهدف من %i.'
   wwcConfigGUITranslatorSettings: تكوين المترجم
   wwcConfigConversationGoogleTranslateAPIKeyInput: مفتاح واجهة برمجة التطبيقات الحالي
     هو %i. الرجاء إدخال مفتاح API لترجمة Google، أو اكتب 0 للعودة.
@@ -218,3 +215,26 @@ Messages:
     في الوقت الحالي، يرجى إضافة —illegal-access=permit إلى وسيطات جرة الخادم الموجودة
     لديك.
   wwcDeluxeChatIncompatible: قد لا يعمل هذا المكون الإضافي بشكل صحيح مع DeluxeChat.
+  wwcSignTranslationFail: ' غير قادر على ترجمة سطر واحد أو أكثر على علامة الهدف.'
+  wwcBookTranslationFail: ' غير قادر على ترجمة صفحة واحدة أو أكثر في كتابك المستهدف.'
+  wwctiOffTarget: ' تم تعطيل ترجمة العنصر لـ %i.'
+  wwctiPlayerNotFound: ' لم يتم العثور على اللاعب %i، أو أنه ليس مترجمًا نشطًا.'
+  wwctiOffSender: ' تم تعطيل ترجمة العنصر.'
+  wwcItemTranslateTitleStock: ' غير قادر على ترجمة أسماء العناصر الافتراضية.'
+  wwcItemTranslateLoreFail: ' فشل في ترجمة تقاليد العنصر.'
+  wwcItemTranslateTitleFail: ' فشل ترجمة اسم العنصر.'
+  wwctiNotATranslator: ' أنت لست مترجمًا نشطًا! تأكد من تعيين هذا مع/wwct.'
+  wwctGUIItemButton: تبديل ترجمة العنصر
+  wwcItemTranslateTitleDone: ' عنوان العنصر المترجم بنجاح.'
+  wwcGUITempItem: عرض السلعة
+  wwcItemTranslateStart: ' ترجمة العنصر المستهدف...'
+  wwcSignTranslationFailCatastrophic: ' فشل ترجمة علامة الهدف.'
+  wwcItemTranslationFailCatastrophic: ' فشل ترجمة العنصر المستهدف.'
+  wwcBookTranslateTitleSuccess: ' عنوان الكتاب المترجمة: %i'
+  wwctiOnSender: ' تم تمكين ترجمة العنصر. انقر بزر الماوس الأيمن مع عنصر في يدك الرئيسية
+    لترجمته!'
+  wwcItemTranslateLoreStart: ' ترجمة تقاليد العنصر المستهدف...'
+  wwcItemTranslateLoreDone: ' تقاليد العنصر المترجم بنجاح.'
+  wwctiOnTarget: ' تم تمكين ترجمة العنصر لـ %i.'
+  wwcBookTranslationFailCatastrophic: ' فشل ترجمة الكتاب المستهدف.'
+  wwcBookTranslateTitleFail: ' فشل ترجمة عنوان الكتاب.'

@@ -4,7 +4,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: שינוי מפתח גישה לאמזון
   wwcrFail: ' טעינת WorldwideChat נכשלה.'
   wwcConfigGUIUpdateCheckerButton: שינוי בדוק אם קיימים עיכוב עדכונים
-  wwcSignTranslationFail: ' אין אפשרות לקבל תרגום חוקי של סימן היעד שלך מ- %i.'
   wwcUpdaterFailedGeneric: אין אפשרות לחפש עדכונים של WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: ההשהיה הנוכחית על בודק העדכון היא %i שניות.
     הקלד כל דבר גדול מ- 10 כדי להגדיר ערך חדש, או כל דבר פחות מ- 10 כדי לחזור אחורה.
@@ -141,8 +140,6 @@ Messages:
   wwctGUIBackToMainMenuButton: חזרה לתפריט התרגום הראשי
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' צ\''אט גלובלי מתורגם מ %i אל
     %o.'
-  wwcBookTranslationFail: ' אין אפשרות לקבל תרגום חוקי של דף אחד או יותר של ספר היעד
-    שלך מ- %i.'
   wwcConfigGUITranslatorSettings: תצורת המתרגם
   wwcConfigConversationGoogleTranslateAPIKeyInput: מפתח ה-API הנוכחי הוא %i. הזן מפתח
     API עבור Google Translate, או הקלד 0 כדי לחזור אחורה.
@@ -210,3 +207,26 @@ Messages:
   wwcWatson117Warning: ווטסון לא הצליחה לאתחל עקב אי-נגישות Objectexception. לעת עתה,
     הוסף —גישה בלתי חוקית = היתר לארגומנטים קיימים של צנצנת השרת.
   wwcDeluxeChatIncompatible: תוסף זה עשוי שלא לפעול כראוי עם eChat.
+  wwcSignTranslationFail: ' אין אפשרות לתרגם שורה אחת או יותר על סימן היעד שלך.'
+  wwcBookTranslationFail: ' לא ניתן לתרגם דף אחד או יותר בספר היעד שלך.'
+  wwctiOffTarget: ' תרגום פריט מושבת עבור %i.'
+  wwctiPlayerNotFound: ' השחקן %i הוא גם לא נמצא, או אינו מתרגם פעיל.'
+  wwctiOffSender: ' תרגום פריט מושבת.'
+  wwcItemTranslateTitleStock: ' אין אפשרות לתרגם שמות פריטי ברירת מחדל.'
+  wwcItemTranslateLoreFail: ' לא הצליח לתרגם את תורת הפריט.'
+  wwcItemTranslateTitleFail: ' תרגום שם הפריט נכשל.'
+  wwctiNotATranslator: ' אתה לא מתרגם פעיל! ודא שהגדרת את זה עם /wwct.'
+  wwctGUIItemButton: החלף תרגום פריט
+  wwcItemTranslateTitleDone: ' כותרת פריט מתורגמת בהצלחה.'
+  wwcGUITempItem: תצוגת פריט
+  wwcItemTranslateStart: ' מתרגם פריט יעד...'
+  wwcSignTranslationFailCatastrophic: ' לא הצליח לתרגם סימן יעד.'
+  wwcItemTranslationFailCatastrophic: ' לא הצליח לתרגם פריט יעד.'
+  wwcBookTranslateTitleSuccess: ' כותרת הספר מתורגמת: %i'
+  wwctiOnSender: ' תרגום פריט מופעל. לחץ לחיצה ימנית עם פריט ביד הראשית שלך כדי לתרגם
+    אותו!'
+  wwcItemTranslateLoreStart: ' תרגום הפולקלור של פריט היעד...'
+  wwcItemTranslateLoreDone: ' תורגם פריט תורגם בהצלחה.'
+  wwctiOnTarget: ' תרגום פריט מופעל עבור %i.'
+  wwcBookTranslationFailCatastrophic: ' לא הצליח לתרגם את ספר היעד.'
+  wwcBookTranslateTitleFail: ' לא הצליח לתרגם את כותרת הספר.'

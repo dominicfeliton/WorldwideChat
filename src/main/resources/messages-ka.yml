@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: შეცვალეთ Amazon წვდომის გასაღები
   wwcrFail: ' ვერ მოხერხდა WorldWidecHat- ის განახლება.'
   wwcConfigGUIUpdateCheckerButton: შეცვლა შეამოწმეთ განახლებების დაგვიანებით
-  wwcSignTranslationFail: ' შეუძლებელია თქვენი სამიზნე ნიშნის მართებული თარგმანის
-    მიღება %i -დანდანდანდან %i.'
   wwcUpdaterFailedGeneric: შეუძლებელია WorldWidecHat- ის განახლებების შემოწმება.
   wwcConfigConversationUpdateCheckerInput: განახლების შემოწმების მიმდინარე შეფერხება
     არის %i წამი. აკრიფეთ 10-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან
@@ -156,8 +154,6 @@ Messages:
   wwctGUIBackToMainMenuButton: დაბრუნება მთავარ თარგმანში მენიუში
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' გლობალური ჩეთი თარგმნილია %i
     დან %o.'
-  wwcBookTranslationFail: ' შეუძლებელია თქვენი სამიზნე წიგნის ერთი ან მეტი გვერდის
-    სწორი თარგმანის მიღება.'
   wwcConfigGUITranslatorSettings: მთარგმნელთა კონფიგურაცია
   wwcConfigConversationGoogleTranslateAPIKeyInput: მიმდინარე API გასაღები არის %i.
     გთხოვთ, შეიყვანოთ API გასაღები Google Translate- ისთვის, ან ტიპის 0 დასაბრუნებლად.
@@ -234,3 +230,28 @@ Messages:
     გთხოვთ დაამატოთ - არალეგალური ხელმისაწვდომობა=ნებართვა თქვენს არსებულ სერვერზე
     jar არგუმენტები.
   wwcDeluxeChatIncompatible: ეს მოდული შეიძლება არ იმუშაოს სათანადოდ DeLuxeChat.
+  wwcSignTranslationFail: ' შეუძლებელია თქვენი სამიზნე ნიშანზე ერთი ან მეტი ხაზის
+    თარგმნა.'
+  wwcBookTranslationFail: ' შეუძლებელია ერთი ან მეტი გვერდის თარგმნა სამიზნე წიგნში.'
+  wwctiOffTarget: ' საქონელი თარგმანი გამორთულია %i.'
+  wwctiPlayerNotFound: ' მოთამაშე %i ან არ არის ნაპოვნი, ან არ არის აქტიური თარჯიმანი.'
+  wwctiOffSender: ' საქონელი თარგმანი გამორთულია.'
+  wwcItemTranslateTitleStock: ' შეუძლებელია ნაგულისხმევი პუნქტის სახელების თარგმნა.'
+  wwcItemTranslateLoreFail: ' ვერ თარგმნა საქონელი მხარეთმცოდნეობის.'
+  wwcItemTranslateTitleFail: ' ვერ მოხერხდა ნივთის სახელის თარგმნა.'
+  wwctiNotATranslator: ' თქვენ არ ხართ აქტიური თარჯიმანი! დარწმუნდით, რომ თქვენ მითითებული
+    ეს /wwct.'
+  wwctGUIItemButton: ნივთის თარგმანის გადართვა
+  wwcItemTranslateTitleDone: ' თარგმნილი პუნქტის სათაური წარმატებით.'
+  wwcGUITempItem: ნივთის ჩვენება
+  wwcItemTranslateStart: ' სამიზნე ნივთის თარგმნა...'
+  wwcSignTranslationFailCatastrophic: ' სამიზნე ნიშნის თარგმნა ვერ მოხერხდა.'
+  wwcItemTranslationFailCatastrophic: ' სამიზნე ნივთის თარგმნა ვერ მოხერხდა.'
+  wwcBookTranslateTitleSuccess: ' თარგმნილი წიგნის სათაური: %i'
+  wwctiOnSender: ' საქონელი თარგმანი ჩართულია. მარჯვენა ღილაკით თქვენი მთავარი ხელით
+    თარგმნა!'
+  wwcItemTranslateLoreStart: ' თარგმნა მხარეთმცოდნეობის სამიზნე ნივთი...'
+  wwcItemTranslateLoreDone: ' თარგმნა საქონელი მხარეთმცოდნეობის წარმატებით.'
+  wwctiOnTarget: ' ელემენტის თარგმანი ჩართულია %i.'
+  wwcBookTranslationFailCatastrophic: ' სამიზნე წიგნის თარგმნა ვერ მოხერხდა.'
+  wwcBookTranslateTitleFail: ' წიგნის სათაურის თარგმნა ვერ მოხერხდა.'

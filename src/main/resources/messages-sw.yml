@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Badilisha ufunguo wa Amazon
   wwcrFail: ' Imeshindwa kurejesha WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Badilisha Angalia kwa Sasisho Kuchelewa
-  wwcSignTranslationFail: ' Haiwezi kupata tafsiri halali ya ishara yako ya lengo
-    kutoka %i.'
   wwcUpdaterFailedGeneric: Haiwezi kuangalia sasisho za WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Ucheleweshaji wa sasa kwenye checker ya
     sasisho ni %i seconds. Andika kitu chochote zaidi ya 10 ili kuweka thamani mpya,
@@ -154,8 +152,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Rudi kwenye orodha kuu ya Tafsiri
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Soga ya kimataifa inatafsiriwa
     kutoka %i hadi %o.'
-  wwcBookTranslationFail: ' Haiwezi kupata tafsiri halali ya kurasa moja au zaidi
-    za kitabu chako cha lengo kutoka %i.'
   wwcConfigGUITranslatorSettings: Usanidi wa Mtafsiri
   wwcConfigConversationGoogleTranslateAPIKeyInput: Funguo la sasa la API ni %i. Tafadhali
     ingiza ufunguo wa API kwa Google Tafsiri, au funga 0 ili urejee.
@@ -230,3 +226,28 @@ Messages:
     Kwa sasa, tafadhali ongeza - upatikanaji wa kisheria = kibali kwenye hoja zako
     zilizopo za jar za seva.
   wwcDeluxeChatIncompatible: Plugin hii inaweza kufanya kazi vizuri na DeluxeChat.
+  wwcSignTranslationFail: ' Haiwezi kutafsiri mistari moja au zaidi kwenye ishara
+    yako ya lengo.'
+  wwcBookTranslationFail: ' Haiwezi kutafsiri kurasa moja au zaidi katika kitabu chako
+    cha lengo.'
+  wwctiOffTarget: ' Item tafsiri walemavu kwa %i.'
+  wwctiPlayerNotFound: ' Mchezaji %i haipatikani, au si translator hai.'
+  wwctiOffSender: ' Bidhaa tafsiri walemavu.'
+  wwcItemTranslateTitleStock: ' Haiwezi kutafsiri majina ya bidhaa default.'
+  wwcItemTranslateLoreFail: ' Imeshindwa kutafsiri bidhaa lore.'
+  wwcItemTranslateTitleFail: ' Imeshindwa kutafsiri jina la bidhaa.'
+  wwctiNotATranslator: ' Wewe si translator kazi! Hakikisha umeweka hii na/wwct.'
+  wwctGUIItemButton: Badilisha tafsiri ya kipengee
+  wwcItemTranslateTitleDone: ' Kutafsiriwa jina bidhaa mafanikio.'
+  wwcGUITempItem: Onyesha kipengee
+  wwcItemTranslateStart: ' Kutafsiri kipengee cha lengo...'
+  wwcSignTranslationFailCatastrophic: ' Imeshindwa kutafsiri ishara ya lengo.'
+  wwcItemTranslationFailCatastrophic: ' Imeshindwa kutafsiri kipengee cha lengo.'
+  wwcBookTranslateTitleSuccess: ' Title ya Kitabu kilichotafsiriwa'
+  wwctiOnSender: ' Bidhaa tafsiri kuwezeshwa. Bonyeza-click na kipengee katika mkono
+    wako kuu ili kutafsiri!'
+  wwcItemTranslateLoreStart: ' Kutafsiri lore ya bidhaa lengo...'
+  wwcItemTranslateLoreDone: ' Tafsiri bidhaa lore mafanikio.'
+  wwctiOnTarget: ' Tafsiri ya kipengee imewezeshwa kwa %i.'
+  wwcBookTranslationFailCatastrophic: ' Imeshindwa kutafsiri lengo kitabu.'
+  wwcBookTranslateTitleFail: ' Imeshindwa kutafsiri kichwa cha kitabu.'

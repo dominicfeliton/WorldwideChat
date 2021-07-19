@@ -4,7 +4,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: 아마존 액세스 키 변경
   wwcrFail: ' 월드와이드채팅을 다시 로드하지 못했습니다.'
   wwcConfigGUIUpdateCheckerButton: 업데이트 지연에 대한 변경 확인
-  wwcSignTranslationFail: ' %i에서 대상 기호의 유효한 번역을 가져올 수 없습니다.'
   wwcUpdaterFailedGeneric: 월드와이드채팅 업데이트를 확인할 수 없습니다.
   wwcConfigConversationUpdateCheckerInput: 업데이트 검사기의 현재 지연은 %i 초입니다.10보다 큰 값을 입력하여
     새 값을 설정하거나 10보다 작은 값을 입력하여 되돌립니다.
@@ -132,7 +131,6 @@ Messages:
   wwcUnsupportedVersion: '지원되지 않는 버전의 Bukkit, 스피고트 또는 페이퍼를 사용하고 있습니다.지원되는 버전:'
   wwctGUIBackToMainMenuButton: 메인 번역 메뉴로 돌아가기
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' 글로벌 채팅이 %i에서 %o (으) 로 번역되고 있습니다.'
-  wwcBookTranslationFail: ' %i에서 대상 책의 하나 이상의 페이지에 대한 유효한 번역을 가져올 수 없습니다.'
   wwcConfigGUITranslatorSettings: 번역기 구성
   wwcConfigConversationGoogleTranslateAPIKeyInput: 현재 API 키는 %i입니다. Google 번역을 위한
     API 키를 입력하거나 0을 입력하여 돌아가십시오.
@@ -193,3 +191,25 @@ Messages:
   wwcWatson117Warning: Watson이 (가) 액세스 할 수 없는 객체예외로 인해 초기화하지 못했습니다.지금은 기존 서버 jar 인수에
     —illegal-access=허용을 추가하십시오.
   wwcDeluxeChatIncompatible: 이 플러그인은 DeluxeChat 에서 제대로 작동하지 않을 수 있습니다.
+  wwcSignTranslationFail: ' 대상 기호에서 하나 이상의 줄을 번역할 수 없습니다.'
+  wwcBookTranslationFail: ' 대상 책에서 하나 이상의 페이지를 번역할 수 없습니다.'
+  wwctiOffTarget: ' %i에 대해 항목 번역이 비활성화되었습니다.'
+  wwctiPlayerNotFound: ' 플레이어 %i 을 (를) 찾을 수 없거나 활성 번역기가 아닙니다.'
+  wwctiOffSender: ' 항목 번역이 비활성화되었습니다.'
+  wwcItemTranslateTitleStock: ' 기본 항목 이름을 번역할 수 없습니다.'
+  wwcItemTranslateLoreFail: ' 항목 로어를 번역하지 못했습니다.'
+  wwcItemTranslateTitleFail: ' 항목 이름을 번역하지 못했습니다.'
+  wwctiNotATranslator: ' 당신은 능동적 인 번역가가 아닙니다!/wwct로 설정했는지 확인하십시오.'
+  wwctGUIItemButton: 항목 번역 토글
+  wwcItemTranslateTitleDone: ' 번역된 항목 제목입니다.'
+  wwcGUITempItem: 항목 표시
+  wwcItemTranslateStart: ' 대상 항목 번역 중...'
+  wwcSignTranslationFailCatastrophic: ' 대상 기호를 변환하지 못했습니다.'
+  wwcItemTranslationFailCatastrophic: ' 대상 항목을 번역하지 못했습니다.'
+  wwcBookTranslateTitleSuccess: ' 번역된 책 제목: %i'
+  wwctiOnSender: ' 항목 번역이 활성화되었습니다.메인 핸드에서 항목을 마우스 오른쪽 버튼으로 클릭하여 번역하십시오!'
+  wwcItemTranslateLoreStart: ' 대상 항목의 로어 번역 중...'
+  wwcItemTranslateLoreDone: ' 번역된 항목 로어가 성공했습니다.'
+  wwctiOnTarget: ' %i에 대해 항목 변환이 활성화되었습니다.'
+  wwcBookTranslationFailCatastrophic: ' 대상 장부를 번역하지 못했습니다.'
+  wwcBookTranslateTitleFail: ' 책 제목을 번역하지 못했습니다.'

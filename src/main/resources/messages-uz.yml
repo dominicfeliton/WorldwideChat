@@ -5,8 +5,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Amazon kirish kalitini o\'zgartirish
   wwcrFail: ' WorldwideChat-ni qayta yuklab bo\''lmadi.'
   wwcConfigGUIUpdateCheckerButton: Yangilanishlarni kechiktirishni tekshiring
-  wwcSignTranslationFail: ' %i dan maqsadli belgingizning haqiqiy tarjimasini olib
-    boʻlmadi.'
   wwcUpdaterFailedGeneric: WorldwideChat yangilanishlarini tekshirib bo\'lmadi.
   wwcConfigConversationUpdateCheckerInput: Yangilanish tekshirgichidagi joriy kechikish
     %i sekunddir. Yangi qiymatni belgilash uchun 10 dan katta narsani yoki orqaga
@@ -159,8 +157,6 @@ Messages:
   wwctGUIBackToMainMenuButton: Asosiy tarjima menyusiga qaytish
   wwcGlobalOnJoinTranslationNotificationSourceLang: ' Global chat %i dan %o ga tarjima
     qilinmoqda.'
-  wwcBookTranslationFail: ' Maqsadli kitobingizning bir yoki bir nechta sahifasini
-    “ %i” dan tarjima qilib boʻlmadi.'
   wwcConfigGUITranslatorSettings: Translator konfiguratsiyasi
   wwcConfigConversationGoogleTranslateAPIKeyInput: Joriy API kaliti %i. Iltimos, Google
     Translate uchun API kalitini kiriting yoki orqaga qaytish uchun 0 yozing.
@@ -240,3 +236,29 @@ Messages:
     Hozircha, iltimos, mavjud server jar argumentlariga —illegal-access=ruxsat qo\'shing.
   wwcDeluxeChatIncompatible: Ushbu plagin Deluxechat bilan to\'g\'ri ishlamasligi
     mumkin.
+  wwcSignTranslationFail: ' Nishon belgisida bir yoki bir nechta satrlarni tarjima
+    qilib bo\''lmadi.'
+  wwcBookTranslationFail: ' Maqsadli kitobingizda bir yoki bir nechta sahifani tarjima
+    qilib bo\''lmadi.'
+  wwctiOffTarget: ' %i uchun oʻchirilgan element tarjimasi.'
+  wwctiPlayerNotFound: ' %i o\''yinchi topilmadi yoki faol tarjimon emas.'
+  wwctiOffSender: ' Ob\''ektni tarjima qilish o\''chirib qo\''yilgan.'
+  wwcItemTranslateTitleStock: ' Standart element nomlarini tarjima qilib bo\''lmadi.'
+  wwcItemTranslateLoreFail: ' Elementni tarjima qilish muvaffaqiyatsiz tugadi.'
+  wwcItemTranslateTitleFail: ' Element nomini tarjima qilib bo\''lmadi.'
+  wwctiNotATranslator: ' Siz faol tarjimon emassiz! Buni /wwct bilan o\''rnatganingizga
+    ishonch hosil qiling.'
+  wwctGUIItemButton: Toggle Mahsulot Tarjima
+  wwcItemTranslateTitleDone: ' Tarjima element nomi muvaffaqiyatli.'
+  wwcGUITempItem: Item ko\'rsatish
+  wwcItemTranslateStart: ' Maqsadli elementni tarjima qilish...'
+  wwcSignTranslationFailCatastrophic: ' maqsad belgisini tarjima bo\''lmadi.'
+  wwcItemTranslationFailCatastrophic: ' Maqsadli elementni tarjima qilib bo\''lmadi.'
+  wwcBookTranslateTitleSuccess: ' Tarjima qilingan kitob nomi: %i'
+  wwctiOnSender: ' Elementni tarjima qilish yoqilgan. Uni tarjima qilish uchun asosiy
+    qo\''lingizdagi element bilan o\''ng tugmasini bosing!'
+  wwcItemTranslateLoreStart: ' Maqsadli elementni tarjima qilish...'
+  wwcItemTranslateLoreDone: ' Tarjima element muvaffaqiyatli.'
+  wwctiOnTarget: ' %i uchun mahsulot tarjimasi yoqilgan.'
+  wwcBookTranslationFailCatastrophic: ' Maqsadli kitobni tarjima qilib bo\''lmadi.'
+  wwcBookTranslateTitleFail: ' Kitob nomini tarjima bo\''lmadi.'
