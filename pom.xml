@@ -36,12 +36,6 @@
             <version>9.10.4</version>
         </dependency>
         <dependency>
-            <groupId>org.bstats</groupId>
-            <artifactId>bstats-bukkit</artifactId>
-            <version>1.8</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.8.7</version>
@@ -114,11 +108,22 @@
             <artifactId>jsoup</artifactId>
             <version>1.14.1</version>
         </dependency>
-        <!-- Locally stored dependencies; change systemPath to your appropriate dir... -->
         <dependency>
             <groupId>fr.minuskube.inv</groupId>
             <artifactId>smart-invs</artifactId>
             <version>1.2.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.seeseemelk</groupId>
+            <artifactId>MockBukkit-v1.16</artifactId>
+            <version>1.0.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -163,6 +168,10 @@
             <source>1.8</source>
             <target>1.8</target>
         </configuration>
+      </plugin>
+      <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.0</version>
       </plugin>
       <plugin>
           <groupId>org.apache.maven.plugins</groupId>

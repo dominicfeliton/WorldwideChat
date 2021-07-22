@@ -1,4 +1,4 @@
-package com.expl0itz.worldwidechat.googletranslate;
+package com.expl0itz.worldwidechat.translators;
 
 import java.util.ArrayList;
 import java.util.List;

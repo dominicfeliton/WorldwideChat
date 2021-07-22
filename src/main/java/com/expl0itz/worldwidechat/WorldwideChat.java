@@ -1,5 +1,6 @@
 package com.expl0itz.worldwidechat;
 
+import java.io.File;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,7 +18,9 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.java.JavaPluginLoader;
 import org.bukkit.scheduler.BukkitTask;
 
 import com.expl0itz.worldwidechat.commands.WWCConfiguration;
@@ -92,6 +95,11 @@ public class WorldwideChat extends JavaPlugin {
     private String pluginLang = "en";
     private String translatorName = "Invalid";
 
+    /* MockBukkit required constructor */
+    protected WorldwideChat(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
+    	super(loader, description, dataFolder, file);
+    }
+    
     private TextComponent pluginPrefix = Component.text()
         .content("[").color(NamedTextColor.DARK_RED).decoration(TextDecoration.BOLD, true)
         .append(Component.text().content(pluginPrefixString).color(TextColor.color(0x5757c4)))

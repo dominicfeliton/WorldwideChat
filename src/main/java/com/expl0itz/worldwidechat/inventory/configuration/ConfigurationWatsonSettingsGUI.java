@@ -12,7 +12,7 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsWatsonApiKeyConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsWatsonServiceUrlConversation;
-import com.expl0itz.worldwidechat.watson.WatsonTranslation;
+import com.expl0itz.worldwidechat.translators.WatsonTranslation;
 
 import co.aikar.taskchain.TaskChain;
 import fr.minuskube.inv.ClickableItem;

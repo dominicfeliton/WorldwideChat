@@ -1,4 +1,4 @@
-package com.expl0itz.worldwidechat.amazontranslate;
+package com.expl0itz.worldwidechat.translators;
 
 import java.io.IOException;
 import java.util.ArrayList;

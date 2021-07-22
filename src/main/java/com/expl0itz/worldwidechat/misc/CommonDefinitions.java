@@ -12,9 +12,9 @@ import org.threeten.bp.temporal.ChronoUnit;
 
 import com.amazonaws.services.translate.model.InvalidRequestException;
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.amazontranslate.AmazonTranslation;
-import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
-import com.expl0itz.worldwidechat.watson.WatsonTranslation;
+import com.expl0itz.worldwidechat.translators.AmazonTranslation;
+import com.expl0itz.worldwidechat.translators.GoogleTranslation;
+import com.expl0itz.worldwidechat.translators.WatsonTranslation;
 import com.google.cloud.translate.TranslateException;
 import com.google.common.base.CharMatcher;
 import com.ibm.cloud.sdk.core.service.exception.NotFoundException;

@@ -4,19 +4,18 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.InaccessibleObjectException;
 
-import org.bstats.bukkit.Metrics;
-import org.bukkit.Bukkit;
+import com.expl0itz.worldwidechat.misc.Metrics;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.amazontranslate.AmazonTranslation;
-import com.expl0itz.worldwidechat.googletranslate.GoogleTranslation;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.misc.PlayerRecord;
-import com.expl0itz.worldwidechat.watson.WatsonTranslation;
+import com.expl0itz.worldwidechat.translators.AmazonTranslation;
+import com.expl0itz.worldwidechat.translators.GoogleTranslation;
+import com.expl0itz.worldwidechat.translators.WatsonTranslation;
 
 public class ConfigurationHandler {
 
