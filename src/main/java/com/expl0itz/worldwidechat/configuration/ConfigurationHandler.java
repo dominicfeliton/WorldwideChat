@@ -162,7 +162,7 @@ public class ConfigurationHandler {
             			getMainConfig().getString("Translator.amazonRegion"));
             	test.initializeConnection();
             } else if (getMainConfig().getBoolean("Translator.testModeTranslator")) {
-            	main.setTranslatorName("JUnit Testing Translator");
+            	main.setTranslatorName("JUnit/MockBukkit Testing Translator");
             	TestTranslation test = new TestTranslation("TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu");
             	test.initializeConnection();
             } else {
