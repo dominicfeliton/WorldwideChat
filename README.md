@@ -1,6 +1,6 @@
 # WorldwideChat 
-## ![Github Workflow Status](https://img.shields.io/github/workflow/status/3xpl0itz/WorldwideChat/Build%20Latest%20WorldwideChat%20Commit%20on%20Main%20Branch?style=for-the-badge)
 ![](https://github.com/3xpl0itz/WorldwideChat/blob/main/resources/Banner.png)
+## ![Github Workflow Status](https://img.shields.io/github/workflow/status/3xpl0itz/WorldwideChat/Build%20Latest%20WorldwideChat%20Commit%20on%20Main%20Branch?style=for-the-badge)
 ### WorldwideChat is a plugin for Bukkit, Spigot, and PaperMC 1.14+.
 It allows you to translate Minecraft live using several Translation APIs.
 Some of its notable features include:
