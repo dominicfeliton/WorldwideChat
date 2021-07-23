@@ -187,15 +187,15 @@ Messages:
     seatud edukalt.'
   wwcConfigBadUpdateDelay: Kehtetu ajakohastaja viivitus seatud config.yml. Defaulting
     kuni 86400 sekundit...
-  wwcrlRateLimitOffSender: ' Lülitab oma määrapiirangu välja.'
-  wwcrlRateLimitAlreadyOffTarget: ' Määrapiir %i on juba keelatud.'
-  wwcrlPlayerNotFound: ' Mängija %Ma kas ei leitud, või ei ole aktiivne tõlkija.'
-  wwcrlRateLimitSetSender: ' Määrake oma määra piirmäärangu %i sekundiks.'
-  wwcrlRateLimitOffTarget: ' Lülitatud %i määra piirmäära välja lülitatud.'
-  wwcrlRateLimitSetTarget: ' Määrake kiiruspiirangu %i kuni %o sekundit.'
-  wwcrlNotATranslator: ' Sa ei ole aktiivne tõlkija! Veenduge, et olete seadnud selle
+  wwctrlRateLimitOffSender: ' Lülitab oma määrapiirangu välja.'
+  wwctrlRateLimitAlreadyOffTarget: ' Määrapiir %i on juba keelatud.'
+  wwctrlPlayerNotFound: ' Mängija %Ma kas ei leitud, või ei ole aktiivne tõlkija.'
+  wwctrlRateLimitSetSender: ' Määrake oma määra piirmäärangu %i sekundiks.'
+  wwctrlRateLimitOffTarget: ' Lülitatud %i määra piirmäära välja lülitatud.'
+  wwctrlRateLimitSetTarget: ' Määrake kiiruspiirangu %i kuni %o sekundit.'
+  wwctrlNotATranslator: ' Sa ei ole aktiivne tõlkija! Veenduge, et olete seadnud selle
     /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Hinnapiirang on juba keelatud.'
+  wwctrlRateLimitAlreadyOffSender: ' Hinnapiirang on juba keelatud.'
   wwctGUIRateButton: Määra piirmäär
   wwctGUIConversationRateLimit: Hinnapiirang tõlke kohta on praeguse %i sekundit.
     Tippige uue väärtuse määramiseks midagi suuremat kui 0 või tippige piirangu keelamiseks

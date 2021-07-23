@@ -132,7 +132,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 					}));
 				
 				/* Rate Limit Button: Set a rate limit for the current translator */
-				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcrl") && player.hasPermission("worldwidechat.wwcrl.otherplayers")) {
+				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwctrl") && player.hasPermission("worldwidechat.wwctrl.otherplayers")) {
 					ConversationFactory rateConvo = new ConversationFactory(main)
 							.withModality(true)
 							.withFirstPrompt(new RateLimitConversation(main.getActiveTranslator(targetPlayerUUID)));
@@ -234,7 +234,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 					}));
 				
 				/* Rate Limit Button */
-				if (player.hasPermission("worldwidechat.wwcrl")) {
+				if (player.hasPermission("worldwidechat.wwctrl")) {
 					ConversationFactory rateConvo = new ConversationFactory(main)
 							.withModality(true)
 							.withFirstPrompt(new RateLimitConversation(currTranslator));

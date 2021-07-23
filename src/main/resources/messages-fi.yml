@@ -193,15 +193,15 @@ Messages:
     onnistuneesti.'
   wwcConfigBadUpdateDelay: Virheellinen päivitysviive asetettu config.yml. Defaulting
     86400 sekuntiin...
-  wwcrlRateLimitOffSender: ' Sammutti korkorajoituksesi.'
-  wwcrlRateLimitAlreadyOffTarget: ' %i: n nopeusraja on jo poistettu käytöstä.'
-  wwcrlPlayerNotFound: ' Pelaaja %i ei joko löydy tai se ei ole aktiivinen kääntäjä.'
-  wwcrlRateLimitSetSender: ' Aseta nopeusrajasi arvoon %i sekuntia.'
-  wwcrlRateLimitOffTarget: ' Kytkettiin %i: n nopeusraja pois päältä.'
-  wwcrlRateLimitSetTarget: ' Aseta nopeusraja %i arvoon %o sekuntia.'
-  wwcrlNotATranslator: ' Et ole aktiivinen kääntäjä! Varmista, että olet asettanut
+  wwctrlRateLimitOffSender: ' Sammutti korkorajoituksesi.'
+  wwctrlRateLimitAlreadyOffTarget: ' %i: n nopeusraja on jo poistettu käytöstä.'
+  wwctrlPlayerNotFound: ' Pelaaja %i ei joko löydy tai se ei ole aktiivinen kääntäjä.'
+  wwctrlRateLimitSetSender: ' Aseta nopeusrajasi arvoon %i sekuntia.'
+  wwctrlRateLimitOffTarget: ' Kytkettiin %i: n nopeusraja pois päältä.'
+  wwctrlRateLimitSetTarget: ' Aseta nopeusraja %i arvoon %o sekuntia.'
+  wwctrlNotATranslator: ' Et ole aktiivinen kääntäjä! Varmista, että olet asettanut
     tämän käyttämällä /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Sinun hintaraja on jo poistettu käytöstä.'
+  wwctrlRateLimitAlreadyOffSender: ' Sinun hintaraja on jo poistettu käytöstä.'
   wwctGUIRateButton: Aseta nopeusraja
   wwctGUIConversationRateLimit: Nopeusraja per käännös on nykyisesti %i sekuntia.
     Määritä uusi arvo kirjoittamalla jokin suurempi kuin 0 tai poista raja käytöstä

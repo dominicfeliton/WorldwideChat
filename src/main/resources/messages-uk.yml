@@ -193,15 +193,15 @@ Messages:
     встановлено.'
   wwcConfigBadUpdateDelay: У config.yml встановлено некоректну затримку оновлення.
     За дефолт до 86400 секунд...
-  wwcrlRateLimitOffSender: ' Вимкнув ліміт ставки.'
-  wwcrlRateLimitAlreadyOffTarget: ' Обмеження швидкості з %i вже вимкнено.'
-  wwcrlPlayerNotFound: ' Гравець %i або не знайдено, або не є активним перекладачем.'
-  wwcrlRateLimitSetSender: ' Встановіть обмеження швидкості на %i секунд.'
-  wwcrlRateLimitOffTarget: ' Вимкнено обмеження швидкості з %i.'
-  wwcrlRateLimitSetTarget: ' Встановіть обмеження швидкості з %i на %o секунд.'
-  wwcrlNotATranslator: ' Ви не активний перекладач! Переконайтеся, що ви встановили
+  wwctrlRateLimitOffSender: ' Вимкнув ліміт ставки.'
+  wwctrlRateLimitAlreadyOffTarget: ' Обмеження швидкості з %i вже вимкнено.'
+  wwctrlPlayerNotFound: ' Гравець %i або не знайдено, або не є активним перекладачем.'
+  wwctrlRateLimitSetSender: ' Встановіть обмеження швидкості на %i секунд.'
+  wwctrlRateLimitOffTarget: ' Вимкнено обмеження швидкості з %i.'
+  wwctrlRateLimitSetTarget: ' Встановіть обмеження швидкості з %i на %o секунд.'
+  wwctrlNotATranslator: ' Ви не активний перекладач! Переконайтеся, що ви встановили
     це за допомогою /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Обмеження ставки вже вимкнено.'
+  wwctrlRateLimitAlreadyOffSender: ' Обмеження ставки вже вимкнено.'
   wwctGUIRateButton: Встановити ліміт швидкості
   wwctGUIConversationRateLimit: Обмеження швидкості на переклад поточно %i секунд.
     Введіть щось більше 0, щоб встановити нове значення, або введіть 0, щоб вимкнути

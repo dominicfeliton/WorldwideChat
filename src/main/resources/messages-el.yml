@@ -207,16 +207,16 @@ Messages:
     που με επιτυχία.'
   wwcConfigBadUpdateDelay: Η μη έγκυρη καθυστέρηση του προγράμματος ενημέρωσης έχει
     οριστεί στο config.yml. Προεπιλογές σε 86400 δευτερόλεπτα...
-  wwcrlRateLimitOffSender: ' Απενεργοποίησε το όριο τιμών.'
-  wwcrlRateLimitAlreadyOffTarget: ' Το όριο ποσοστού του %i είναι ήδη απενεργοποιημένο.'
-  wwcrlPlayerNotFound: ' Ο αναπαραγωγής %i είτε δεν βρέθηκε είτε δεν είναι ενεργός
+  wwctrlRateLimitOffSender: ' Απενεργοποίησε το όριο τιμών.'
+  wwctrlRateLimitAlreadyOffTarget: ' Το όριο ποσοστού του %i είναι ήδη απενεργοποιημένο.'
+  wwctrlPlayerNotFound: ' Ο αναπαραγωγής %i είτε δεν βρέθηκε είτε δεν είναι ενεργός
     μεταφραστής.'
-  wwcrlRateLimitSetSender: ' Ορίστε το όριο ταχύτητας σε %i δευτερόλεπτα.'
-  wwcrlRateLimitOffTarget: ' Απενεργοποίησε το όριο ρυθμού του %i.'
-  wwcrlRateLimitSetTarget: ' Ορίστε το όριο ταχύτητας του %i σε %o δευτερόλεπτα.'
-  wwcrlNotATranslator: ' Δεν είσαι ενεργός μεταφραστής! Βεβαιωθείτε ότι έχετε ρυθμίσει
+  wwctrlRateLimitSetSender: ' Ορίστε το όριο ταχύτητας σε %i δευτερόλεπτα.'
+  wwctrlRateLimitOffTarget: ' Απενεργοποίησε το όριο ρυθμού του %i.'
+  wwctrlRateLimitSetTarget: ' Ορίστε το όριο ταχύτητας του %i σε %o δευτερόλεπτα.'
+  wwctrlNotATranslator: ' Δεν είσαι ενεργός μεταφραστής! Βεβαιωθείτε ότι έχετε ρυθμίσει
     αυτό με /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Το όριο τιμών σας είναι ήδη απενεργοποιημένο.'
+  wwctrlRateLimitAlreadyOffSender: ' Το όριο τιμών σας είναι ήδη απενεργοποιημένο.'
   wwctGUIRateButton: Ορισμός ορίου ρυθμού
   wwctGUIConversationRateLimit: Το όριο ταχύτητας ανά μετάφραση είναι επί του παρόντος
     %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια

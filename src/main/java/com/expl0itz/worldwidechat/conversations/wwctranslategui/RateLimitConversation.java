@@ -10,7 +10,7 @@ import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.commands.WWCRateLimit;
+import com.expl0itz.worldwidechat.commands.WWCTranslateRateLimit;
 import com.expl0itz.worldwidechat.inventory.wwctranslategui.WWCTranslateGUIMainMenu;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 
@@ -43,7 +43,7 @@ public class RateLimitConversation extends NumericPrompt {
 			} else { //Target Player
 				args = new String[]{Bukkit.getPlayer(UUID.fromString(currTranslator.getUUID())).getName(), input.intValue() + ""};
 			}
-			WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)context.getForWhom()), null, null, args);
+			WWCTranslateRateLimit rateCommand = new WWCTranslateRateLimit(((CommandSender)context.getForWhom()), null, null, args);
 			rateCommand.processCommand();
 		} else if (input.intValue() == 0){ //Disable rate limit
 			//Sender
@@ -51,7 +51,7 @@ public class RateLimitConversation extends NumericPrompt {
 			if (!((Player)context.getForWhom()).getUniqueId().toString().equals(currTranslator.getUUID())) { //Target Player
 				args = new String[]{Bukkit.getPlayer(UUID.fromString(currTranslator.getUUID())).getName()};
 			}
-			WWCRateLimit rateCommand = new WWCRateLimit(((CommandSender)context.getForWhom()), null, null, args);
+			WWCTranslateRateLimit rateCommand = new WWCTranslateRateLimit(((CommandSender)context.getForWhom()), null, null, args);
 			rateCommand.processCommand();
 		} //Go back
 		if (((Player)context.getForWhom()).getUniqueId().toString().equals(currTranslator.getUUID())) {

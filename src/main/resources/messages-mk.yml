@@ -199,15 +199,15 @@ Messages:
     собата успешно.'
   wwcConfigBadUpdateDelay: Невалидно доцнување на ажурирачот поставено во config.yml.
     Стандардно да 86400 секунди...
-  wwcrlRateLimitOffSender: ' Исклучен вашиот лимит стапка.'
-  wwcrlRateLimitAlreadyOffTarget: ' Ограничувањето на стапката на %i е веќе оневозможено.'
-  wwcrlPlayerNotFound: ' Играч %i или не е пронајден, или не е активен преведувач.'
-  wwcrlRateLimitSetSender: ' Поставете го лимитот на стапката на %i секунди.'
-  wwcrlRateLimitOffTarget: ' Исклучи го ограничувањето на стапката на %i.'
-  wwcrlRateLimitSetTarget: ' Поставете го ограничувањето на стапката од %i до %o секунди.'
-  wwcrlNotATranslator: ' Вие не сте активен преведувач! Бидете сигурни дека сте го
+  wwctrlRateLimitOffSender: ' Исклучен вашиот лимит стапка.'
+  wwctrlRateLimitAlreadyOffTarget: ' Ограничувањето на стапката на %i е веќе оневозможено.'
+  wwctrlPlayerNotFound: ' Играч %i или не е пронајден, или не е активен преведувач.'
+  wwctrlRateLimitSetSender: ' Поставете го лимитот на стапката на %i секунди.'
+  wwctrlRateLimitOffTarget: ' Исклучи го ограничувањето на стапката на %i.'
+  wwctrlRateLimitSetTarget: ' Поставете го ограничувањето на стапката од %i до %o секунди.'
+  wwctrlNotATranslator: ' Вие не сте активен преведувач! Бидете сигурни дека сте го
     поставиле ова со/wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Вашиот лимит на стапка е веќе оневозможен.'
+  wwctrlRateLimitAlreadyOffSender: ' Вашиот лимит на стапка е веќе оневозможен.'
   wwctGUIRateButton: Постави ограничување на стапката
   wwctGUIConversationRateLimit: Ограничувањето на стапката по превод е тековно %i
     секунди. Внесете нешто поголемо од 0 за да поставите нова вредност или напишете

@@ -189,15 +189,15 @@ Messages:
     vellykket.'
   wwcConfigBadUpdateDelay: Ugyldig oppdateringforsinkelse satt i config.yml. Defaulting
     til 86400 sekunder...
-  wwcrlRateLimitOffSender: ' Slått av prisgrensen.'
-  wwcrlRateLimitAlreadyOffTarget: ' Satsgrensen på %i er allerede deaktivert.'
-  wwcrlPlayerNotFound: ' Spiller %i er enten ikke funnet, eller er ikke en aktiv oversetter.'
-  wwcrlRateLimitSetSender: ' Angi hastighetsgrensen til %i sekunder.'
-  wwcrlRateLimitOffTarget: ' Slått av satsgrensen på %i.'
-  wwcrlRateLimitSetTarget: ' Angi hastighetsgrensen på %i til %o sekunder.'
-  wwcrlNotATranslator: ' Du er ikke en aktiv oversetter! Sørg for, at du har angivet
+  wwctrlRateLimitOffSender: ' Slått av prisgrensen.'
+  wwctrlRateLimitAlreadyOffTarget: ' Satsgrensen på %i er allerede deaktivert.'
+  wwctrlPlayerNotFound: ' Spiller %i er enten ikke funnet, eller er ikke en aktiv oversetter.'
+  wwctrlRateLimitSetSender: ' Angi hastighetsgrensen til %i sekunder.'
+  wwctrlRateLimitOffTarget: ' Slått av satsgrensen på %i.'
+  wwctrlRateLimitSetTarget: ' Angi hastighetsgrensen på %i til %o sekunder.'
+  wwctrlNotATranslator: ' Du er ikke en aktiv oversetter! Sørg for, at du har angivet
     dette med /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Din satsgrense er allerede deaktivert.'
+  wwctrlRateLimitAlreadyOffSender: ' Din satsgrense er allerede deaktivert.'
   wwctGUIRateButton: Angi satsgrense
   wwctGUIConversationRateLimit: Satsgrensen per oversettelse er for nåtid %i sekunder.
     Skriv inn noe større enn 0 for å angi en ny verdi, eller skriv 0 for å deaktivere

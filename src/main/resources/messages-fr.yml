@@ -202,16 +202,16 @@ Messages:
     réussi.'
   wwcConfigBadUpdateDelay: Délai de mise à jour non valide défini dans config.yml.
     Par défaut, 86400 secondes...
-  wwcrlRateLimitOffSender: ' Désactivé votre limite tarifaire.'
-  wwcrlRateLimitAlreadyOffTarget: ' La limite de débit de %i est déjà désactivée.'
-  wwcrlPlayerNotFound: ' Le joueur %i n\''est pas trouvé ou n\''est pas un traducteur
+  wwctrlRateLimitOffSender: ' Désactivé votre limite tarifaire.'
+  wwctrlRateLimitAlreadyOffTarget: ' La limite de débit de %i est déjà désactivée.'
+  wwctrlPlayerNotFound: ' Le joueur %i n\''est pas trouvé ou n\''est pas un traducteur
     actif.'
-  wwcrlRateLimitSetSender: ' Définissez votre limite de taux à %i secondes.'
-  wwcrlRateLimitOffTarget: ' Désactivez la limite de débit de %i.'
-  wwcrlRateLimitSetTarget: ' Définissez la limite de débit de %i à %o secondes.'
-  wwcrlNotATranslator: ' Vous n\''êtes pas un traducteur actif! Assurez-vous d\''avoir
+  wwctrlRateLimitSetSender: ' Définissez votre limite de taux à %i secondes.'
+  wwctrlRateLimitOffTarget: ' Désactivez la limite de débit de %i.'
+  wwctrlRateLimitSetTarget: ' Définissez la limite de débit de %i à %o secondes.'
+  wwctrlNotATranslator: ' Vous n\''êtes pas un traducteur actif! Assurez-vous d\''avoir
     défini ceci avec /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Votre limite tarifaire est déjà désactivée.'
+  wwctrlRateLimitAlreadyOffSender: ' Votre limite tarifaire est déjà désactivée.'
   wwctGUIRateButton: Définir la limite de débit
   wwctGUIConversationRateLimit: La limite de débit par traduction est actuellement
     de %i secondes. Tapez tout élément supérieur à 0 pour définir une nouvelle valeur

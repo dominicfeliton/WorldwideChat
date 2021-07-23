@@ -200,15 +200,15 @@ Messages:
     configurada correctamente.'
   wwcConfigBadUpdateDelay: Retraso del actualizador no válido establecido en config.yml.
     El valor predeterminado es 86400 segundos...
-  wwcrlRateLimitOffSender: ' Desactivó el límite de tarifa.'
-  wwcrlRateLimitAlreadyOffTarget: ' El límite de velocidad de %i ya está deshabilitado.'
-  wwcrlPlayerNotFound: ' El reproductor %i no se encuentra o no es un traductor activo.'
-  wwcrlRateLimitSetSender: ' Establezca el límite de velocidad a %i segundos.'
-  wwcrlRateLimitOffTarget: ' Desactivó el límite de velocidad de %i.'
-  wwcrlRateLimitSetTarget: ' Establezca el límite de velocidad de %i a %o segundos.'
-  wwcrlNotATranslator: ' ¡No eres un traductor activo! Asegúrese de haber configurado
+  wwctrlRateLimitOffSender: ' Desactivó el límite de tarifa.'
+  wwctrlRateLimitAlreadyOffTarget: ' El límite de velocidad de %i ya está deshabilitado.'
+  wwctrlPlayerNotFound: ' El reproductor %i no se encuentra o no es un traductor activo.'
+  wwctrlRateLimitSetSender: ' Establezca el límite de velocidad a %i segundos.'
+  wwctrlRateLimitOffTarget: ' Desactivó el límite de velocidad de %i.'
+  wwctrlRateLimitSetTarget: ' Establezca el límite de velocidad de %i a %o segundos.'
+  wwctrlNotATranslator: ' ¡No eres un traductor activo! Asegúrese de haber configurado
     esto con /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' El límite de tarifa ya está deshabilitado.'
+  wwctrlRateLimitAlreadyOffSender: ' El límite de tarifa ya está deshabilitado.'
   wwctGUIRateButton: Establecer límite de velocidad
   wwctGUIConversationRateLimit: El límite de velocidad por traducción es actualmente
     %i segundos. Escriba algo mayor que 0 para establecer un nuevo valor, o escriba

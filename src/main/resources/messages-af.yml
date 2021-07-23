@@ -190,16 +190,16 @@ Messages:
     suksesvol.'
   wwcConfigBadUpdateDelay: Ongeldige updater vertraging stel in config.yml. Verstek
     na 86400 sekondes...
-  wwcrlRateLimitOffSender: ' Skakel jou koers limiet af.'
-  wwcrlRateLimitAlreadyOffTarget: ' Die koersbeperking van %i is alreeds gedeaktiveer.'
-  wwcrlPlayerNotFound: ' Speler %i is nie gevind nie, of is nie \''n aktiewe vertaler
+  wwctrlRateLimitOffSender: ' Skakel jou koers limiet af.'
+  wwctrlRateLimitAlreadyOffTarget: ' Die koersbeperking van %i is alreeds gedeaktiveer.'
+  wwctrlPlayerNotFound: ' Speler %i is nie gevind nie, of is nie \''n aktiewe vertaler
     nie.'
-  wwcrlRateLimitSetSender: ' Stel jou koersbeperking na %i sekondes.'
-  wwcrlRateLimitOffTarget: ' Skakel die koersbeperking van %i af.'
-  wwcrlRateLimitSetTarget: ' Stel die tempogrens van %i na %o sekondes.'
-  wwcrlNotATranslator: ' Jy is nie \''n aktiewe vertaler nie! Maak seker dat jy hierdie
+  wwctrlRateLimitSetSender: ' Stel jou koersbeperking na %i sekondes.'
+  wwctrlRateLimitOffTarget: ' Skakel die koersbeperking van %i af.'
+  wwctrlRateLimitSetTarget: ' Stel die tempogrens van %i na %o sekondes.'
+  wwctrlNotATranslator: ' Jy is nie \''n aktiewe vertaler nie! Maak seker dat jy hierdie
     stel met/wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Jou tarieflimiet is reeds gedeaktiveer.'
+  wwctrlRateLimitAlreadyOffSender: ' Jou tarieflimiet is reeds gedeaktiveer.'
   wwctGUIRateButton: Stel Koers Limiet
   wwctGUIConversationRateLimit: Die koersbeperking per vertaling is huidig %i sekondes.
     Tik enigiets groter as 0 om \'n nuwe waarde in te stel, of tik 0 om die limiet

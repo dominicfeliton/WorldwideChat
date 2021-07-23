@@ -174,15 +174,15 @@ Messages:
     Amazon เรียบร้อยแล้ว'
   wwcConfigBadUpdateDelay: การหน่วงเวลาของการปรับปรุงไม่ถูกต้องที่กำหนดไว้ใน config.ymlค่าเริ่มต้นที่
     86400 วินาที...
-  wwcrlRateLimitOffSender: ' ปิดขีดจำกัดราคา'
-  wwcrlRateLimitAlreadyOffTarget: ' ขีดจำกัดอัตราของ %i ถูกปิดการใช้งานแล้ว'
-  wwcrlPlayerNotFound: ' ไม่พบผู้เล่น %i หรือไม่พบหรือไม่ใช่ตัวแปลที่ใช้งานอยู่'
-  wwcrlRateLimitSetSender: ' ตั้งค่าขีดจำกัดอัตราเป็น %i วินาที'
-  wwcrlRateLimitOffTarget: ' ปิดขีดจำกัดอัตราของ %i'
-  wwcrlRateLimitSetTarget: ' ตั้งค่าขีด จำกัด อัตราของ %i เพื่อ %o วินาที'
-  wwcrlNotATranslator: ' คุณไม่ใช่นักแปลที่ใช้งานอยู่!ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่านี้ด้วย
+  wwctrlRateLimitOffSender: ' ปิดขีดจำกัดราคา'
+  wwctrlRateLimitAlreadyOffTarget: ' ขีดจำกัดอัตราของ %i ถูกปิดการใช้งานแล้ว'
+  wwctrlPlayerNotFound: ' ไม่พบผู้เล่น %i หรือไม่พบหรือไม่ใช่ตัวแปลที่ใช้งานอยู่'
+  wwctrlRateLimitSetSender: ' ตั้งค่าขีดจำกัดอัตราเป็น %i วินาที'
+  wwctrlRateLimitOffTarget: ' ปิดขีดจำกัดอัตราของ %i'
+  wwctrlRateLimitSetTarget: ' ตั้งค่าขีด จำกัด อัตราของ %i เพื่อ %o วินาที'
+  wwctrlNotATranslator: ' คุณไม่ใช่นักแปลที่ใช้งานอยู่!ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่านี้ด้วย
     /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' วงเงินอัตราของคุณถูกปิดใช้งานแล้ว'
+  wwctrlRateLimitAlreadyOffSender: ' วงเงินอัตราของคุณถูกปิดใช้งานแล้ว'
   wwctGUIRateButton: กำหนดขีด จำกัด ของอัตรา
   wwctGUIConversationRateLimit: ขีด จำกัด ของอัตราต่อการแปลเป็นปัจจุบัน %i วินาทีพิมพ์อะไรที่มากกว่า
     0 เพื่อตั้งค่าใหม่ หรือพิมพ์ 0 เพื่อปิดใช้งานขีดจำกัดพิมพ์อะไรที่น้อยกว่า 0 เพื่อย้อนกลับ

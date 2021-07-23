@@ -208,16 +208,16 @@ Messages:
     key ng pag-access ng Amazon.'
   wwcConfigBadUpdateDelay: Hindi wastong pag-antala ng pag-updater na itinakda sa
     config.yml. Default sa 86400 segundo...
-  wwcrlRateLimitOffSender: ' Naka-off ang iyong limitasyon sa rate.'
-  wwcrlRateLimitAlreadyOffTarget: ' Ang limitasyon ng rate ng %i ay naka-disable na.'
-  wwcrlPlayerNotFound: ' Ang manlalarong %i ay alinman sa hindi natagpuan, o hindi
+  wwctrlRateLimitOffSender: ' Naka-off ang iyong limitasyon sa rate.'
+  wwctrlRateLimitAlreadyOffTarget: ' Ang limitasyon ng rate ng %i ay naka-disable na.'
+  wwctrlPlayerNotFound: ' Ang manlalarong %i ay alinman sa hindi natagpuan, o hindi
     isang aktibong tagasalin.'
-  wwcrlRateLimitSetSender: ' Itakda ang limitasyon ng iyong rate sa %i segundo.'
-  wwcrlRateLimitOffTarget: ' Naka-off ang limitasyon ng rate ng %i.'
-  wwcrlRateLimitSetTarget: ' Itakda ang limitasyon ng rate ng %i sa %o segundo.'
-  wwcrlNotATranslator: ' Ikaw ay hindi isang aktibong tagasalin! Tiyaking itinakda
+  wwctrlRateLimitSetSender: ' Itakda ang limitasyon ng iyong rate sa %i segundo.'
+  wwctrlRateLimitOffTarget: ' Naka-off ang limitasyon ng rate ng %i.'
+  wwctrlRateLimitSetTarget: ' Itakda ang limitasyon ng rate ng %i sa %o segundo.'
+  wwctrlNotATranslator: ' Ikaw ay hindi isang aktibong tagasalin! Tiyaking itinakda
     mo ito sa /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Ang iyong limitasyon sa rate ay naka-disable na.'
+  wwctrlRateLimitAlreadyOffSender: ' Ang iyong limitasyon sa rate ay naka-disable na.'
   wwctGUIRateButton: Itakda ang limitasyon ng Rate
   wwctGUIConversationRateLimit: Ang limitasyon ng rate sa bawat pagsasalin ay kasalukuyang
     %i segundo. I-type ang anumang mas malaki kaysa sa 0 upang magtakda ng bagong

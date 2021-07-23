@@ -197,15 +197,15 @@ Messages:
     kľúč Amazon.'
   wwcConfigBadUpdateDelay: Neplatné oneskorenie aktualizovača nastavené v config.yml.
     Predvolené na 86400 sekúnd...
-  wwcrlRateLimitOffSender: ' Vypnutý limit sadzby.'
-  wwcrlRateLimitAlreadyOffTarget: ' Limit sadzby %i je už zakázaný.'
-  wwcrlPlayerNotFound: ' Prehrávač %i sa buď nenašiel, alebo nie je aktívny prekladateľ.'
-  wwcrlRateLimitSetSender: ' Nastavte svoj limit sadzby na %i sekúnd.'
-  wwcrlRateLimitOffTarget: ' Vypnutý limit sadzby %i.'
-  wwcrlRateLimitSetTarget: ' Nastavte limit sadzby %i na %o sekúnd.'
-  wwcrlNotATranslator: ' Nie ste aktívny prekladateľ! Uistite sa, že ste to nastavili
+  wwctrlRateLimitOffSender: ' Vypnutý limit sadzby.'
+  wwctrlRateLimitAlreadyOffTarget: ' Limit sadzby %i je už zakázaný.'
+  wwctrlPlayerNotFound: ' Prehrávač %i sa buď nenašiel, alebo nie je aktívny prekladateľ.'
+  wwctrlRateLimitSetSender: ' Nastavte svoj limit sadzby na %i sekúnd.'
+  wwctrlRateLimitOffTarget: ' Vypnutý limit sadzby %i.'
+  wwctrlRateLimitSetTarget: ' Nastavte limit sadzby %i na %o sekúnd.'
+  wwctrlNotATranslator: ' Nie ste aktívny prekladateľ! Uistite sa, že ste to nastavili
     pomocou /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Váš limit sadzby je už vypnutý.'
+  wwctrlRateLimitAlreadyOffSender: ' Váš limit sadzby je už vypnutý.'
   wwctGUIRateButton: Nastaviť sadzobný limit
   wwctGUIConversationRateLimit: Limit rýchlosti na preklad je aktuálne %i sekúnd.
     Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu, alebo zadajte

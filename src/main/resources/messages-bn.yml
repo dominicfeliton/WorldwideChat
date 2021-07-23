@@ -188,15 +188,15 @@ Messages:
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ' আমাজন অ্যাক্সেস কী সেট সফলভাবে'
   wwcConfigBadUpdateDelay: config.yml এ অবৈধ আপডেটার বিলম্ব সেট। ৮৬৪০০ সেকেন্ডে ডিফল্ট
     হচ্ছে...
-  wwcrlRateLimitOffSender: ' আপনার রেট লিমিট বন্ধ করে দিয়েছে।'
-  wwcrlRateLimitAlreadyOffTarget: ' %i হার সীমা ইতোমধ্যে নিষ্ক্রিয় করা হয়েছে।'
-  wwcrlPlayerNotFound: ' প্লেয়ার %i পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।'
-  wwcrlRateLimitSetSender: ' আপনার রেট সীমিত %i সেকেন্ডে সেট করুন।'
-  wwcrlRateLimitOffTarget: ' %i হার সীমা বন্ধ করে দিয়েছে।'
-  wwcrlRateLimitSetTarget: ' %i থেকে %o সেকেন্ডের রেটের সীমা নির্ধারণ করুন।'
-  wwcrlNotATranslator: ' আপনি একজন সক্রিয় অনুবাদক নন! নিশ্চিত করুন যে আপনি এটি /wwct
+  wwctrlRateLimitOffSender: ' আপনার রেট লিমিট বন্ধ করে দিয়েছে।'
+  wwctrlRateLimitAlreadyOffTarget: ' %i হার সীমা ইতোমধ্যে নিষ্ক্রিয় করা হয়েছে।'
+  wwctrlPlayerNotFound: ' প্লেয়ার %i পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।'
+  wwctrlRateLimitSetSender: ' আপনার রেট সীমিত %i সেকেন্ডে সেট করুন।'
+  wwctrlRateLimitOffTarget: ' %i হার সীমা বন্ধ করে দিয়েছে।'
+  wwctrlRateLimitSetTarget: ' %i থেকে %o সেকেন্ডের রেটের সীমা নির্ধারণ করুন।'
+  wwctrlNotATranslator: ' আপনি একজন সক্রিয় অনুবাদক নন! নিশ্চিত করুন যে আপনি এটি /wwct
     দিয়ে সেট করেছেন।'
-  wwcrlRateLimitAlreadyOffSender: ' আপনার রেট সীমা ইতোমধ্যে নিষ্ক্রিয় করা হয়েছে।'
+  wwctrlRateLimitAlreadyOffSender: ' আপনার রেট সীমা ইতোমধ্যে নিষ্ক্রিয় করা হয়েছে।'
   wwctGUIRateButton: রেট সীমা নির্ধারণ করো
   wwctGUIConversationRateLimit: প্রতি অনুবাদের হার সীমা বর্তমান %i সেকেন্ড। একটি নতুন
     মান নির্ধারণ করতে 0 এর চেয়ে বড় কিছু টাইপ করুন, অথবা সীমা নিষ্ক্রিয় করতে 0 টাইপ

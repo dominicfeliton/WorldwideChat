@@ -187,15 +187,15 @@ Messages:
     تنظیم شد.'
   wwcConfigBadUpdateDelay: تاخیر به روز رسانی نامعتبر در config.yml. قرار دادن به
     86400 ثانیه...
-  wwcrlRateLimitOffSender: ' حد مجاز نرخ خود را خاموش کنید.'
-  wwcrlRateLimitAlreadyOffTarget: ' حد مجاز نرخی از %i از قبل غیرفعال شده است.'
-  wwcrlPlayerNotFound: ' بازیکن %i یا یافت نشد، یا مترجم فعال نیست.'
-  wwcrlRateLimitSetSender: ' محدودیت نرخ خود را روی %i ثانیه تنظیم کنید.'
-  wwcrlRateLimitOffTarget: ' محدودیت نرخ از %i را خاموش کرد.'
-  wwcrlRateLimitSetTarget: ' محدودیت نرخ از %i به %o ثانیه را تنظیم کنید.'
-  wwcrlNotATranslator: ' شما یک مترجم فعال نیستید! اطمینان حاصل کنید که شما این را
+  wwctrlRateLimitOffSender: ' حد مجاز نرخ خود را خاموش کنید.'
+  wwctrlRateLimitAlreadyOffTarget: ' حد مجاز نرخی از %i از قبل غیرفعال شده است.'
+  wwctrlPlayerNotFound: ' بازیکن %i یا یافت نشد، یا مترجم فعال نیست.'
+  wwctrlRateLimitSetSender: ' محدودیت نرخ خود را روی %i ثانیه تنظیم کنید.'
+  wwctrlRateLimitOffTarget: ' محدودیت نرخ از %i را خاموش کرد.'
+  wwctrlRateLimitSetTarget: ' محدودیت نرخ از %i به %o ثانیه را تنظیم کنید.'
+  wwctrlNotATranslator: ' شما یک مترجم فعال نیستید! اطمینان حاصل کنید که شما این را
     با تنظیم کرده اند /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' حد مجاز نرخ شما در حال حاضر غیر فعال است.'
+  wwctrlRateLimitAlreadyOffSender: ' حد مجاز نرخ شما در حال حاضر غیر فعال است.'
   wwctGUIRateButton: تعیین حد نرخ
   wwctGUIConversationRateLimit: حد مجاز برای هر ترجمه در جریان %i ثانیه است. هر چیزی
     بزرگتر از 0 را تایپ کنید تا مقدار جدید تنظیم شود، یا 0 را برای غیر فعال کردن حد

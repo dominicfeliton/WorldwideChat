@@ -192,15 +192,15 @@ Messages:
     med succes.'
   wwcConfigBadUpdateDelay: Ugyldig opdateringsforsinkelse indstillet i config.yml.
     Default til 86400 sekunder...
-  wwcrlRateLimitOffSender: ' Slåede din takst fra.'
-  wwcrlRateLimitAlreadyOffTarget: ' Satgrænsen på %i er allerede deaktiveret.'
-  wwcrlPlayerNotFound: ' Spilleren %i findes enten ikke, eller er ikke en aktiv oversætter.'
-  wwcrlRateLimitSetSender: ' Indstil din hastighedsgrænse til %i sekunder.'
-  wwcrlRateLimitOffTarget: ' Slåede hastighedsgrænsen på %i fra.'
-  wwcrlRateLimitSetTarget: ' Indstil hastighedsgrænsen på %i til %o sekunder.'
-  wwcrlNotATranslator: ' Du er ikke en aktiv oversætter! Sørg for at du har indstillet
+  wwctrlRateLimitOffSender: ' Slåede din takst fra.'
+  wwctrlRateLimitAlreadyOffTarget: ' Satgrænsen på %i er allerede deaktiveret.'
+  wwctrlPlayerNotFound: ' Spilleren %i findes enten ikke, eller er ikke en aktiv oversætter.'
+  wwctrlRateLimitSetSender: ' Indstil din hastighedsgrænse til %i sekunder.'
+  wwctrlRateLimitOffTarget: ' Slåede hastighedsgrænsen på %i fra.'
+  wwctrlRateLimitSetTarget: ' Indstil hastighedsgrænsen på %i til %o sekunder.'
+  wwctrlNotATranslator: ' Du er ikke en aktiv oversætter! Sørg for at du har indstillet
     denne med /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Din takst grænse er allerede deaktiveret.'
+  wwctrlRateLimitAlreadyOffSender: ' Din takst grænse er allerede deaktiveret.'
   wwctGUIRateButton: Indstil hastighedsgrænse
   wwctGUIConversationRateLimit: Hastighedsgrænsen pr. oversættelse er aktuelt %i sekunder.
     Skriv noget større end 0 for at angive en ny værdi, eller skriv 0 for at deaktivere

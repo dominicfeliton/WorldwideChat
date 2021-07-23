@@ -59,11 +59,11 @@ commands:
         usage: §4/wwcc
         permission: worldwidechat.wwcc
         permission-message: §4You do not have permission to run this command.
-    wwcrl:
+    wwctrl:
         description: Sets a rate limit for the specified user.
-        aliases: [wwcratelimit, translateratelimit]
-        usage: §4/wwcrl (delay) or /wwcrl (playerName) (delay)
-        permission: worldwidechat.wwcrl
+        aliases: [wwctranslateratelimit, translateratelimit]
+        usage: §4/wwctrl (delay) or /wwctrl (playerName) (delay)
+        permission: worldwidechat.wwctrl
         permission-message: §4You do not have permission to run this command.
 permissions:
     worldwidechat.*:
@@ -84,7 +84,7 @@ permissions:
             worldwidechat.wwcs: true
             worldwidechat.ratelimit.exempt: true
             worldwidechat.wwcc: true
-            worldwidechat.wwcrl: true
+            worldwidechat.wwctrl: true
         default: op
     worldwidechat.wwc:
         description: Gives access to /wwc.
@@ -131,6 +131,6 @@ permissions:
     worldwidechat.wwcc:
         description: Gives access to /wwcc.
         default: op
-    worldwidechat.wwcrl:
-        description: Gives access to /wwcrl.
+    worldwidechat.wwctrl:
+        description: Gives access to /wwctrl.
         default: op

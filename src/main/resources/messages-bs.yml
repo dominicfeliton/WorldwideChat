@@ -192,15 +192,15 @@ Messages:
     postavljen.'
   wwcConfigBadUpdateDelay: Nevažeće kašnjenje updatera postavljeno u config.yml. Defaulting
     na 86400 sekundi...
-  wwcrlRateLimitOffSender: ' Isključio ograničenje stope.'
-  wwcrlRateLimitAlreadyOffTarget: ' Ograničenje stope od %i je već onemogućeno.'
-  wwcrlPlayerNotFound: ' Player %i nije pronađen ili nije aktivan prevoditelj.'
-  wwcrlRateLimitSetSender: ' Postavite ograničenje brzine na %i sekundi.'
-  wwcrlRateLimitOffTarget: ' Isključio ograničenje stope od %i.'
-  wwcrlRateLimitSetTarget: ' Postavite ograničenje brzine od %i na %o sekundi.'
-  wwcrlNotATranslator: ' Niste aktivni prevoditelj! Provjerite jeste li to postavili
+  wwctrlRateLimitOffSender: ' Isključio ograničenje stope.'
+  wwctrlRateLimitAlreadyOffTarget: ' Ograničenje stope od %i je već onemogućeno.'
+  wwctrlPlayerNotFound: ' Player %i nije pronađen ili nije aktivan prevoditelj.'
+  wwctrlRateLimitSetSender: ' Postavite ograničenje brzine na %i sekundi.'
+  wwctrlRateLimitOffTarget: ' Isključio ograničenje stope od %i.'
+  wwctrlRateLimitSetTarget: ' Postavite ograničenje brzine od %i na %o sekundi.'
+  wwctrlNotATranslator: ' Niste aktivni prevoditelj! Provjerite jeste li to postavili
     s /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Ograničenje stope već je onemogućeno.'
+  wwctrlRateLimitAlreadyOffSender: ' Ograničenje stope već je onemogućeno.'
   wwctGUIRateButton: Postavite ograničenje brzine
   wwctGUIConversationRateLimit: Ograničenje brzine po prijevodu je trenutno %i sekundi.
     Upišite sve veće od 0 da biste postavili novu vrijednost ili upišite 0 da biste

@@ -192,15 +192,15 @@ Messages:
     klíč Amazon.'
   wwcConfigBadUpdateDelay: Neplatné zpoždění aktualizačního programu nastaveno v config.yml.
     Výchozí hodnota 86400 sekund...
-  wwcrlRateLimitOffSender: ' Vypnul jste limit sazeb.'
-  wwcrlRateLimitAlreadyOffTarget: ' Limit sazby %i je již zakázán.'
-  wwcrlPlayerNotFound: ' Hráč %i není buď nalezen, nebo není aktivní překladatel.'
-  wwcrlRateLimitSetSender: ' Nastavte limit rychlosti na %i sekund.'
-  wwcrlRateLimitOffTarget: ' Vypnuto omezení sazby %i.'
-  wwcrlRateLimitSetTarget: ' Nastavte limit sazby %i na %o sekund.'
-  wwcrlNotATranslator: ' Nejste aktivní překladatel! Ujistěte se, že jste to nastavili
+  wwctrlRateLimitOffSender: ' Vypnul jste limit sazeb.'
+  wwctrlRateLimitAlreadyOffTarget: ' Limit sazby %i je již zakázán.'
+  wwctrlPlayerNotFound: ' Hráč %i není buď nalezen, nebo není aktivní překladatel.'
+  wwctrlRateLimitSetSender: ' Nastavte limit rychlosti na %i sekund.'
+  wwctrlRateLimitOffTarget: ' Vypnuto omezení sazby %i.'
+  wwctrlRateLimitSetTarget: ' Nastavte limit sazby %i na %o sekund.'
+  wwctrlNotATranslator: ' Nejste aktivní překladatel! Ujistěte se, že jste to nastavili
     pomocí /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Váš limit sazeb je již zakázán.'
+  wwctrlRateLimitAlreadyOffSender: ' Váš limit sazeb je již zakázán.'
   wwctGUIRateButton: Nastavit limit rychlosti
   wwctGUIConversationRateLimit: Limit rychlosti na překlad je aktuálně %i sekund.
     Zadejte hodnotu větší než 0, chcete-li nastavit novou hodnotu, nebo zadejte 0,

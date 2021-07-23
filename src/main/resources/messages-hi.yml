@@ -193,15 +193,15 @@ Messages:
     सेट।'
   wwcConfigBadUpdateDelay: config.yml में अमान्य अद्यतनकर्ता विलंब सेट। 86400 सेकेंड
     से डिफॉल्ट कर रहा है...
-  wwcrlRateLimitOffSender: ' अपनी दर सीमा बंद कर दिया।'
-  wwcrlRateLimitAlreadyOffTarget: ' %i की दर सीमा पहले से ही अक्षम है।'
-  wwcrlPlayerNotFound: ' खिलाड़ी %i या तो नहीं मिला है, या सक्रिय अनुवादक नहीं है।'
-  wwcrlRateLimitSetSender: ' अपनी दर सीमा से %i सेकेंड पर सेट करें।'
-  wwcrlRateLimitOffTarget: ' %i की दर सीमा को बंद कर दिया।'
-  wwcrlRateLimitSetTarget: ' %i की दर सीमा से %o सेकेंड सेट करें।'
-  wwcrlNotATranslator: ' आप एक सक्रिय अनुवादक नहीं हैं! सुनिश्चित करें कि आपने इसे/wwct
+  wwctrlRateLimitOffSender: ' अपनी दर सीमा बंद कर दिया।'
+  wwctrlRateLimitAlreadyOffTarget: ' %i की दर सीमा पहले से ही अक्षम है।'
+  wwctrlPlayerNotFound: ' खिलाड़ी %i या तो नहीं मिला है, या सक्रिय अनुवादक नहीं है।'
+  wwctrlRateLimitSetSender: ' अपनी दर सीमा से %i सेकेंड पर सेट करें।'
+  wwctrlRateLimitOffTarget: ' %i की दर सीमा को बंद कर दिया।'
+  wwctrlRateLimitSetTarget: ' %i की दर सीमा से %o सेकेंड सेट करें।'
+  wwctrlNotATranslator: ' आप एक सक्रिय अनुवादक नहीं हैं! सुनिश्चित करें कि आपने इसे/wwct
     के साथ सेट किया है।'
-  wwcrlRateLimitAlreadyOffSender: ' आपकी दर सीमा पहले से ही अक्षम है।'
+  wwctrlRateLimitAlreadyOffSender: ' आपकी दर सीमा पहले से ही अक्षम है।'
   wwctGUIRateButton: दर सीमा निर्धारित करें
   wwctGUIConversationRateLimit: प्रति अनुवाद दर सीमा वर्तमान में %i सेकंड है। कोई
     नया मान सेट करने के लिए 0 से अधिक कुछ टाइप करें, या सीमा को अक्षम करने के लिए

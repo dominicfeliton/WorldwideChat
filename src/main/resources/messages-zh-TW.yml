@@ -157,14 +157,14 @@ Messages:
     0 以返回。
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ' 亞馬遜訪問密鑰集成功。'
   wwcConfigBadUpdateDelay: 在 config.yml 中設定的更新程式延遲無效。預設值為八億四千四百秒...
-  wwcrlRateLimitOffSender: ' 關閉您的費率限制。'
-  wwcrlRateLimitAlreadyOffTarget: ' %i 的速率限制已停用。'
-  wwcrlPlayerNotFound: ' 玩家 %i 不是找不到，或者不是活躍的翻譯者。'
-  wwcrlRateLimitSetSender: ' 將匯率限制設定為 %i 秒。'
-  wwcrlRateLimitOffTarget: ' 關閉 %i 的速率限制。'
-  wwcrlRateLimitSetTarget: ' 將 %i 的速率限制設定為 %o 秒。'
-  wwcrlNotATranslator: ' 你不是一個積極的翻譯者！確保你已經用 /wwcti 設置了這個。'
-  wwcrlRateLimitAlreadyOffSender: ' 你的費率限制已停用。'
+  wwctrlRateLimitOffSender: ' 關閉您的費率限制。'
+  wwctrlRateLimitAlreadyOffTarget: ' %i 的速率限制已停用。'
+  wwctrlPlayerNotFound: ' 玩家 %i 不是找不到，或者不是活躍的翻譯者。'
+  wwctrlRateLimitSetSender: ' 將匯率限制設定為 %i 秒。'
+  wwctrlRateLimitOffTarget: ' 關閉 %i 的速率限制。'
+  wwctrlRateLimitSetTarget: ' 將 %i 的速率限制設定為 %o 秒。'
+  wwctrlNotATranslator: ' 你不是一個積極的翻譯者！確保你已經用 /wwcti 設置了這個。'
+  wwctrlRateLimitAlreadyOffSender: ' 你的費率限制已停用。'
   wwctGUIRateButton: 設定速率限制
   wwctGUIConversationRateLimit: 每個轉換的速率限制目前為 %i 秒。輸入大於 0 的任何值以設定新值，或鍵入 0 以停用限制。輸入小於
     0 的任何內容以返回。

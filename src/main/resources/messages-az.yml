@@ -191,15 +191,15 @@ Messages:
     təyin edildi.'
   wwcConfigBadUpdateDelay: Config.yml müəyyən etibarsız updater gecikmə. 86400 saniyəyə
     qədər defaulting...
-  wwcrlRateLimitOffSender: ' Dərəcəsi limitinizi söndürür.'
-  wwcrlRateLimitAlreadyOffTarget: ' %i dərəcəsi həddi artıq aradan qaldırılmışdır.'
-  wwcrlPlayerNotFound: ' Oyunçu %i ya tapılmadı, ya da aktiv tərcüməçi deyil.'
-  wwcrlRateLimitSetSender: ' Dərəcəsi limitinizi %i saniyəyə təyin edin.'
-  wwcrlRateLimitOffTarget: ' %i dərəcəsi limitini söndürüldü.'
-  wwcrlRateLimitSetTarget: ' %i nisbəti limitini %o saniyəyə təyin edin.'
-  wwcrlNotATranslator: ' Siz fəal tərcüməçi deyilsiniz! Bunu /wwct ilə təyin etdiyinizə
+  wwctrlRateLimitOffSender: ' Dərəcəsi limitinizi söndürür.'
+  wwctrlRateLimitAlreadyOffTarget: ' %i dərəcəsi həddi artıq aradan qaldırılmışdır.'
+  wwctrlPlayerNotFound: ' Oyunçu %i ya tapılmadı, ya da aktiv tərcüməçi deyil.'
+  wwctrlRateLimitSetSender: ' Dərəcəsi limitinizi %i saniyəyə təyin edin.'
+  wwctrlRateLimitOffTarget: ' %i dərəcəsi limitini söndürüldü.'
+  wwctrlRateLimitSetTarget: ' %i nisbəti limitini %o saniyəyə təyin edin.'
+  wwctrlNotATranslator: ' Siz fəal tərcüməçi deyilsiniz! Bunu /wwct ilə təyin etdiyinizə
     əmin olun.'
-  wwcrlRateLimitAlreadyOffSender: ' Sizin dərəcəsi limitiniz artıq aradan qaldırılıb.'
+  wwctrlRateLimitAlreadyOffSender: ' Sizin dərəcəsi limitiniz artıq aradan qaldırılıb.'
   wwctGUIRateButton: Set Rate Limitini
   wwctGUIConversationRateLimit: Tərcümə başına nisbət həddi halda %i saniyədir. Yeni
     bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın və ya limiti aradan

@@ -13,11 +13,11 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
-public class WWCRateLimit extends BasicCommand {
+public class WWCTranslateRateLimit extends BasicCommand {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
 	
-	public WWCRateLimit(CommandSender sender, Command command, String label, String[] args) {
+	public WWCTranslateRateLimit(CommandSender sender, Command command, String label, String[] args) {
 		super(sender, command, label, args);
 	}
 	
@@ -43,7 +43,7 @@ public class WWCRateLimit extends BasicCommand {
         		if (currTranslator.getRateLimit() == 0) {
         			final TextComponent rateLimitAlreadyOff = Component.text()
                             .append(main.getPluginPrefix().asComponent())
-                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrlRateLimitAlreadyOffSender")).color(NamedTextColor.YELLOW))
+                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctrlRateLimitAlreadyOffSender")).color(NamedTextColor.YELLOW))
                             .build();
                         adventureSender.sendMessage(rateLimitAlreadyOff);
         			return false;
@@ -51,7 +51,7 @@ public class WWCRateLimit extends BasicCommand {
         		currTranslator.setRateLimit(0);
         		final TextComponent rateLimitOff = Component.text()
                         .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrlRateLimitOffSender")).color(NamedTextColor.LIGHT_PURPLE))
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctrlRateLimitOffSender")).color(NamedTextColor.LIGHT_PURPLE))
                         .build();
                     adventureSender.sendMessage(rateLimitOff);
                 return true;
@@ -59,7 +59,7 @@ public class WWCRateLimit extends BasicCommand {
             	// If player is not translating:
             	final TextComponent notAPlayer = Component.text()
                         .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrlNotATranslator")).color(NamedTextColor.RED))
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctrlNotATranslator")).color(NamedTextColor.RED))
                         .build();
                     adventureSender.sendMessage(notAPlayer);
                 return true;
@@ -73,14 +73,14 @@ public class WWCRateLimit extends BasicCommand {
             	currTranslator.setRateLimit(Integer.parseInt(args[0]));
             	final TextComponent rateLimitSet = Component.text()
                         .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrlRateLimitSetSender").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctrlRateLimitSetSender").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                         .build();
                     adventureSender.sendMessage(rateLimitSet);
                 return true;
             } else {
                 final TextComponent notAPlayer = Component.text()
                         .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrlNotATranslator")).color(NamedTextColor.RED))
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctrlNotATranslator")).color(NamedTextColor.RED))
                         .build();
                     adventureSender.sendMessage(notAPlayer);
                 return true;
@@ -94,7 +94,7 @@ public class WWCRateLimit extends BasicCommand {
             	if (currTranslator.getRateLimit() == 0) {
         			final TextComponent rateLimitAlreadyOff = Component.text()
                             .append(main.getPluginPrefix().asComponent())
-                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrlRateLimitAlreadyOffTarget").replace("%i", args[0])).color(NamedTextColor.YELLOW))
+                            .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctrlRateLimitAlreadyOffTarget").replace("%i", args[0])).color(NamedTextColor.YELLOW))
                             .build();
                         adventureSender.sendMessage(rateLimitAlreadyOff);
         			return false;
@@ -102,19 +102,19 @@ public class WWCRateLimit extends BasicCommand {
             	currTranslator.setRateLimit(0);
                 final TextComponent rateLimitOff = Component.text()
                         .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrlRateLimitOffTarget").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctrlRateLimitOffTarget").replace("%i", args[0])).color(NamedTextColor.LIGHT_PURPLE))
                         .build();
                     adventureSender.sendMessage(rateLimitOff);
                 final TextComponent rateLimitOffReceiver = Component.text()
                         .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrlRateLimitOffSender")).color(NamedTextColor.LIGHT_PURPLE))
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctrlRateLimitOffSender")).color(NamedTextColor.LIGHT_PURPLE))
                         .build();
                     main.adventure().player(Bukkit.getPlayer(args[0])).sendMessage(rateLimitOffReceiver);
                 return true;
             } else {
                 final TextComponent notAPlayer = Component.text()
                         .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrlPlayerNotFound").replace("%i", args[0])).color(NamedTextColor.RED))
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctrlPlayerNotFound").replace("%i", args[0])).color(NamedTextColor.RED))
                         .build();
                     adventureSender.sendMessage(notAPlayer);
                 return true;
@@ -128,12 +128,12 @@ public class WWCRateLimit extends BasicCommand {
                 currTranslator.setRateLimit(Integer.parseInt(args[1]));
                 final TextComponent rateLimitSet = Component.text()
                         .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrlRateLimitSetTarget").replace("%i", args[0]).replace("%o", args[1] + "")).color(NamedTextColor.LIGHT_PURPLE))
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctrlRateLimitSetTarget").replace("%i", args[0]).replace("%o", args[1] + "")).color(NamedTextColor.LIGHT_PURPLE))
                         .build();
                     adventureSender.sendMessage(rateLimitSet);
                 final TextComponent rateLimitSetReceiver = Component.text()
                         .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrlRateLimitSetSender").replace("%i", args[1])).color(NamedTextColor.LIGHT_PURPLE))
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctrlRateLimitSetSender").replace("%i", args[1])).color(NamedTextColor.LIGHT_PURPLE))
                         .build();
                     main.adventure().player(Bukkit.getPlayer(args[0])).sendMessage(rateLimitSetReceiver);
                 return true;
@@ -141,7 +141,7 @@ public class WWCRateLimit extends BasicCommand {
             	// If target is not a string, active translator, or is themselves:
                 final TextComponent notAPlayer = Component.text()
                         .append(main.getPluginPrefix().asComponent())
-                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrlPlayerNotFound").replace("%i", args[0])).color(NamedTextColor.RED))
+                        .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctrlPlayerNotFound").replace("%i", args[0])).color(NamedTextColor.RED))
                         .build();
                     adventureSender.sendMessage(notAPlayer);
                 return true;

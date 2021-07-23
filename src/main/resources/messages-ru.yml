@@ -195,15 +195,15 @@ Messages:
     установлен.'
   wwcConfigBadUpdateDelay: Недопустимая задержка обновления установлена в config.yml.
     По умолчанию 86400 секунд...
-  wwcrlRateLimitOffSender: ' Отключен лимит тарифа.'
-  wwcrlRateLimitAlreadyOffTarget: ' Ограничение тарив %i уже отключено.'
-  wwcrlPlayerNotFound: ' Игрок %i либо не найден, либо не является активным переводчиком.'
-  wwcrlRateLimitSetSender: ' Установите ограничение скорости на %i секунд.'
-  wwcrlRateLimitOffTarget: ' Отключен лимит тарифа %i.'
-  wwcrlRateLimitSetTarget: ' Установите ограничение скорости в %i до %o секунд.'
-  wwcrlNotATranslator: ' Вы не активный переводчик! Убедитесь, что вы установили это
+  wwctrlRateLimitOffSender: ' Отключен лимит тарифа.'
+  wwctrlRateLimitAlreadyOffTarget: ' Ограничение тарив %i уже отключено.'
+  wwctrlPlayerNotFound: ' Игрок %i либо не найден, либо не является активным переводчиком.'
+  wwctrlRateLimitSetSender: ' Установите ограничение скорости на %i секунд.'
+  wwctrlRateLimitOffTarget: ' Отключен лимит тарифа %i.'
+  wwctrlRateLimitSetTarget: ' Установите ограничение скорости в %i до %o секунд.'
+  wwctrlNotATranslator: ' Вы не активный переводчик! Убедитесь, что вы установили это
     с помощью /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Ваш лимит тарифов уже отключен.'
+  wwctrlRateLimitAlreadyOffSender: ' Ваш лимит тарифов уже отключен.'
   wwctGUIRateButton: Установить ограничение скорости
   wwctGUIConversationRateLimit: Ограничение скорости на перевод в настоящее время
     составляет %i секунд. Введите значение больше 0, чтобы установить новое значение,

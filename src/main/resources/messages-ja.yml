@@ -158,14 +158,14 @@ Messages:
     を入力して戻ってください。
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Amazon アクセスキーが正常に設定されました。'
   wwcConfigBadUpdateDelay: config.yml に設定されているアップデータ遅延が無効です。デフォルトは86400秒です...
-  wwcrlRateLimitOffSender: ' レート制限をオフにしました。'
-  wwcrlRateLimitAlreadyOffTarget: ' %i のレート制限は既に無効になっています。'
-  wwcrlPlayerNotFound: ' Player %i が見つからないか、アクティブなトランスレータではありません。'
-  wwcrlRateLimitSetSender: ' レート制限を %i 秒に設定します。'
-  wwcrlRateLimitOffTarget: ' %i のレート制限をオフにしました。'
-  wwcrlRateLimitSetTarget: ' %i のレート制限を %o 秒に設定します。'
-  wwcrlNotATranslator: ' あなたはアクティブな翻訳者ではありません！/wwctでこれを設定していることを確認してください。'
-  wwcrlRateLimitAlreadyOffSender: ' レート制限は既に無効になっています。'
+  wwctrlRateLimitOffSender: ' レート制限をオフにしました。'
+  wwctrlRateLimitAlreadyOffTarget: ' %i のレート制限は既に無効になっています。'
+  wwctrlPlayerNotFound: ' Player %i が見つからないか、アクティブなトランスレータではありません。'
+  wwctrlRateLimitSetSender: ' レート制限を %i 秒に設定します。'
+  wwctrlRateLimitOffTarget: ' %i のレート制限をオフにしました。'
+  wwctrlRateLimitSetTarget: ' %i のレート制限を %o 秒に設定します。'
+  wwctrlNotATranslator: ' あなたはアクティブな翻訳者ではありません！/wwctでこれを設定していることを確認してください。'
+  wwctrlRateLimitAlreadyOffSender: ' レート制限は既に無効になっています。'
   wwctGUIRateButton: レート制限の設定
   wwctGUIConversationRateLimit: 変換ごとのレート制限は現在 %i 秒です。0より大きい値を入力して新しい値を設定するか、0を入力して制限を無効にします。戻るには、0
     より小さい値を入力してください。

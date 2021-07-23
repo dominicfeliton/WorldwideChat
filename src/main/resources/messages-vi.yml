@@ -198,16 +198,16 @@ Messages:
     truy cập Amazon.'
   wwcConfigBadUpdateDelay: Độ trễ cập nhật không hợp lệ đặt trong config.yml. Mặc
     định đến 86400 giây...
-  wwcrlRateLimitOffSender: ' Tắt giới hạn mức giá của bạn.'
-  wwcrlRateLimitAlreadyOffTarget: ' Giới hạn tỷ lệ của %i đã bị vô hiệu hóa.'
-  wwcrlPlayerNotFound: ' Người chơi %i hoặc là không tìm thấy, hoặc không phải là
+  wwctrlRateLimitOffSender: ' Tắt giới hạn mức giá của bạn.'
+  wwctrlRateLimitAlreadyOffTarget: ' Giới hạn tỷ lệ của %i đã bị vô hiệu hóa.'
+  wwctrlPlayerNotFound: ' Người chơi %i hoặc là không tìm thấy, hoặc không phải là
     một dịch giả đang hoạt động.'
-  wwcrlRateLimitSetSender: ' Đặt giới hạn tỷ lệ của bạn thành %i giây.'
-  wwcrlRateLimitOffTarget: ' Tắt giới hạn tỷ lệ của %i.'
-  wwcrlRateLimitSetTarget: ' Đặt giới hạn tỷ lệ của %i đến %o giây.'
-  wwcrlNotATranslator: ' Bạn không phải là một dịch giả tích cực! Hãy chắc chắn rằng
+  wwctrlRateLimitSetSender: ' Đặt giới hạn tỷ lệ của bạn thành %i giây.'
+  wwctrlRateLimitOffTarget: ' Tắt giới hạn tỷ lệ của %i.'
+  wwctrlRateLimitSetTarget: ' Đặt giới hạn tỷ lệ của %i đến %o giây.'
+  wwctrlNotATranslator: ' Bạn không phải là một dịch giả tích cực! Hãy chắc chắn rằng
     bạn đã thiết lập này với /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Giới hạn lãi suất của bạn đã bị vô hiệu hóa.'
+  wwctrlRateLimitAlreadyOffSender: ' Giới hạn lãi suất của bạn đã bị vô hiệu hóa.'
   wwctGUIRateButton: Đặt giới hạn tỷ lệ
   wwctGUIConversationRateLimit: Giới hạn tốc độ cho mỗi bản dịch hiện tại %i giây.
     Nhập bất cứ điều gì lớn hơn 0 để đặt một giá trị mới, hoặc nhập 0 để vô hiệu hóa

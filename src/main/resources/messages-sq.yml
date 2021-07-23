@@ -202,15 +202,15 @@ Messages:
     me sukses.'
   wwcConfigBadUpdateDelay: Vonesa e pavlefshme e përditësimit të vendosur në config.yml.
     Defaulting në 86400 sekonda...
-  wwcrlRateLimitOffSender: ' Fikur kufirin tuaj të normës.'
-  wwcrlRateLimitAlreadyOffTarget: ' Kufiri i normës prej %i tashmë është i çaktivizuar.'
-  wwcrlPlayerNotFound: ' Lojtar %i ose nuk gjendet, ose nuk është përkthyes aktiv.'
-  wwcrlRateLimitSetSender: ' Vendosni limitin tuaj të normës në %i sekonda.'
-  wwcrlRateLimitOffTarget: ' Çaktivizuar kufirin e normës prej %i.'
-  wwcrlRateLimitSetTarget: ' Vendosni limitin e normës prej %i në %o sekonda.'
-  wwcrlNotATranslator: ' Ju nuk jeni një përkthyes aktiv! Sigurohuni që keni vendosur
+  wwctrlRateLimitOffSender: ' Fikur kufirin tuaj të normës.'
+  wwctrlRateLimitAlreadyOffTarget: ' Kufiri i normës prej %i tashmë është i çaktivizuar.'
+  wwctrlPlayerNotFound: ' Lojtar %i ose nuk gjendet, ose nuk është përkthyes aktiv.'
+  wwctrlRateLimitSetSender: ' Vendosni limitin tuaj të normës në %i sekonda.'
+  wwctrlRateLimitOffTarget: ' Çaktivizuar kufirin e normës prej %i.'
+  wwctrlRateLimitSetTarget: ' Vendosni limitin e normës prej %i në %o sekonda.'
+  wwctrlNotATranslator: ' Ju nuk jeni një përkthyes aktiv! Sigurohuni që keni vendosur
     këtë me /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Kufiri juaj i normës tashmë është i paaftë.'
+  wwctrlRateLimitAlreadyOffSender: ' Kufiri juaj i normës tashmë është i paaftë.'
   wwctGUIRateButton: Cakto Limiti Vlerës
   wwctGUIConversationRateLimit: Kufiri i normës për përkthim është aktual %i sekonda.
     Shkruani ndonjë gjë më të madhe se 0 për të vendosur një vlerë të re, ose shkruani

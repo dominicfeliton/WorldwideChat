@@ -199,15 +199,15 @@ Messages:
     correttamente.'
   wwcConfigBadUpdateDelay: Impostazione di ritardo del programma di aggiornamento
     non valido in config.yml. Impostazione predefinita di 86400 secondi...
-  wwcrlRateLimitOffSender: ' Disattivato il limite di tasso.'
-  wwcrlRateLimitAlreadyOffTarget: ' Il limite di frequenza di %i è già disabilitato.'
-  wwcrlPlayerNotFound: ' Il player %i non è stato trovato o non è un traduttore attivo.'
-  wwcrlRateLimitSetSender: ' Imposta il limite di frequenza a %i secondi.'
-  wwcrlRateLimitOffTarget: ' Disattivato il limite di velocità di %i.'
-  wwcrlRateLimitSetTarget: ' Impostare il limite di velocità di %i a %o secondi.'
-  wwcrlNotATranslator: ' Non sei un traduttore attivo! Assicurati di aver impostato
+  wwctrlRateLimitOffSender: ' Disattivato il limite di tasso.'
+  wwctrlRateLimitAlreadyOffTarget: ' Il limite di frequenza di %i è già disabilitato.'
+  wwctrlPlayerNotFound: ' Il player %i non è stato trovato o non è un traduttore attivo.'
+  wwctrlRateLimitSetSender: ' Imposta il limite di frequenza a %i secondi.'
+  wwctrlRateLimitOffTarget: ' Disattivato il limite di velocità di %i.'
+  wwctrlRateLimitSetTarget: ' Impostare il limite di velocità di %i a %o secondi.'
+  wwctrlNotATranslator: ' Non sei un traduttore attivo! Assicurati di aver impostato
     questo con /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Il limite tariffario è già disabilitato.'
+  wwctrlRateLimitAlreadyOffSender: ' Il limite tariffario è già disabilitato.'
   wwctGUIRateButton: Imposta limite di velocità
   wwctGUIConversationRateLimit: Il limite di velocità per traduzione è corrente %i
     secondi. Digitare un valore maggiore di 0 per impostare un nuovo valore oppure

@@ -196,16 +196,16 @@ Messages:
     með góðum árangri.'
   wwcConfigBadUpdateDelay: Ógild uppfærsla töf sett í config.yml. Vanskil til 86400
     sekúndur...
-  wwcrlRateLimitOffSender: ' Slökktu á takmörk hlutfall þitt.'
-  wwcrlRateLimitAlreadyOffTarget: ' The hlutfall takmörk af %i er nú þegar óvirk.'
-  wwcrlPlayerNotFound: ' Leikmaður %Ég er annað hvort ekki að finna, eða er ekki virkur
+  wwctrlRateLimitOffSender: ' Slökktu á takmörk hlutfall þitt.'
+  wwctrlRateLimitAlreadyOffTarget: ' The hlutfall takmörk af %i er nú þegar óvirk.'
+  wwctrlPlayerNotFound: ' Leikmaður %Ég er annað hvort ekki að finna, eða er ekki virkur
     þýðandi.'
-  wwcrlRateLimitSetSender: ' Stilltu hlutfall takmörk til %i sekúndur.'
-  wwcrlRateLimitOffTarget: ' Slökktu á hlutfall takmörk af %i.'
-  wwcrlRateLimitSetTarget: ' Stilltu hlutfall takmörk af %i til %o sekúndur.'
-  wwcrlNotATranslator: ' Þú ert ekki virkur þýðandi! Gakktu úr skugga um að þú hafir
+  wwctrlRateLimitSetSender: ' Stilltu hlutfall takmörk til %i sekúndur.'
+  wwctrlRateLimitOffTarget: ' Slökktu á hlutfall takmörk af %i.'
+  wwctrlRateLimitSetTarget: ' Stilltu hlutfall takmörk af %i til %o sekúndur.'
+  wwctrlNotATranslator: ' Þú ert ekki virkur þýðandi! Gakktu úr skugga um að þú hafir
     sett þetta með/wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Hlutfall þitt er nú þegar óvirkt.'
+  wwctrlRateLimitAlreadyOffSender: ' Hlutfall þitt er nú þegar óvirkt.'
   wwctGUIRateButton: Setja Rate Limit
   wwctGUIConversationRateLimit: Hlutfall takmörk á þýðingu er núverand %i sekúndur.
     Sláðu inn eitthvað sem er stærra en 0 til að setja nýtt gildi, eða tegund 0 til

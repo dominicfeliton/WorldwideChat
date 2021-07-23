@@ -188,15 +188,15 @@ Messages:
     بریالیتوب سره.'
   wwcConfigBadUpdateDelay: ناسم تازه کونکي ځنډ په config.yml کې ټاکل شوی. 86400 ثانیو
     ته تلل...
-  wwcrlRateLimitOffSender: ' ستاسو د نرخ حد بند کړ.'
-  wwcrlRateLimitAlreadyOffTarget: .د شرح حد د مخکې نه غیر فعاله ده %i
-  wwcrlPlayerNotFound: ' لوبغاړي %i یا نه موندل شوی، یا فعال ژباړونکی نه دی.'
-  wwcrlRateLimitSetSender: ' د خپل نرخ حد وټا %i ثانیو ته.'
-  wwcrlRateLimitOffTarget: .د نرخ حد بندول د %i.
-  wwcrlRateLimitSetTarget: . %i د نرخ حد وټا %o ثانیو ته.
-  wwcrlNotATranslator: ' تاسو فعال ژباړن نه یاست! ډاډ ترلاسه کړئ چې تاسو دا د /wwct
+  wwctrlRateLimitOffSender: ' ستاسو د نرخ حد بند کړ.'
+  wwctrlRateLimitAlreadyOffTarget: .د شرح حد د مخکې نه غیر فعاله ده %i
+  wwctrlPlayerNotFound: ' لوبغاړي %i یا نه موندل شوی، یا فعال ژباړونکی نه دی.'
+  wwctrlRateLimitSetSender: ' د خپل نرخ حد وټا %i ثانیو ته.'
+  wwctrlRateLimitOffTarget: .د نرخ حد بندول د %i.
+  wwctrlRateLimitSetTarget: . %i د نرخ حد وټا %o ثانیو ته.
+  wwctrlNotATranslator: ' تاسو فعال ژباړن نه یاست! ډاډ ترلاسه کړئ چې تاسو دا د /wwct
     سره ترتیب کړی دی.'
-  wwcrlRateLimitAlreadyOffSender: ' ستاسو د نرخ حد لا دمخه معلول دی.'
+  wwctrlRateLimitAlreadyOffSender: ' ستاسو د نرخ حد لا دمخه معلول دی.'
   wwctGUIRateButton: د نرخ حد ټاکل
   wwctGUIConversationRateLimit: د ژباړې د نرخ حد په ټولې %i ثانیو کې دی. د نوي ارزښت
     ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د حد غیر فعالولو لپاره 0 ټایپ کړئ. د 0 څخه

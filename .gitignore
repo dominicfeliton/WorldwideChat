@@ -9,7 +9,9 @@ bin/
 # IDEA Files
 .idea/
 *.iml
-privatedependencies/
+
+# Sensitive Files
+src/test/resources/*.yml
 
 # Other Files
 .DS_Store

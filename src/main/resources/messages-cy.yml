@@ -197,16 +197,16 @@ Messages:
     yn llwyddiannus.'
   wwcConfigBadUpdateDelay: Oedi updater annilys a osodwyd yn config.yml. Defaulting
     i 86400 eiliad...
-  wwcrlRateLimitOffSender: ' Diffodd eich terfyn cyfradd.'
-  wwcrlRateLimitAlreadyOffTarget: ' Mae terfyn cyfradd %i eisoes wedi ei analluogi.'
-  wwcrlPlayerNotFound: ' Chwaraewr %i naill ai heb ei ganfod, neu nid yw\''n gyfieithydd
+  wwctrlRateLimitOffSender: ' Diffodd eich terfyn cyfradd.'
+  wwctrlRateLimitAlreadyOffTarget: ' Mae terfyn cyfradd %i eisoes wedi ei analluogi.'
+  wwctrlPlayerNotFound: ' Chwaraewr %i naill ai heb ei ganfod, neu nid yw\''n gyfieithydd
     gweithredol.'
-  wwcrlRateLimitSetSender: ' Gosodwch eich terfyn cyfradd i %i eiliad.'
-  wwcrlRateLimitOffTarget: ' Diffodd terfyn cyfradd %i.'
-  wwcrlRateLimitSetTarget: ' Gosodwch derfyn y gyfradd o %i i %o eiliad.'
-  wwcrlNotATranslator: ' Nid ydych yn gyfieithydd gweithredol! Gwnewch yn siŵr eich
+  wwctrlRateLimitSetSender: ' Gosodwch eich terfyn cyfradd i %i eiliad.'
+  wwctrlRateLimitOffTarget: ' Diffodd terfyn cyfradd %i.'
+  wwctrlRateLimitSetTarget: ' Gosodwch derfyn y gyfradd o %i i %o eiliad.'
+  wwctrlNotATranslator: ' Nid ydych yn gyfieithydd gweithredol! Gwnewch yn siŵr eich
     bod wedi gosod hyn gyda/wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Mae eich terfyn cyfradd eisoes wedi\''i analluogi.'
+  wwctrlRateLimitAlreadyOffSender: ' Mae eich terfyn cyfradd eisoes wedi\''i analluogi.'
   wwctGUIRateButton: Gosod Terfyn Cyfradd
   wwctGUIConversationRateLimit: Y terfyn cyfradd fesul cyfieithiad ar hyn o bryd %i
     eiliad. Teipiwch unrhyw beth sy\'n fwy na 0 i osod gwerth newydd, neu deipio 0

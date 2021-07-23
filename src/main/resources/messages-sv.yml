@@ -196,16 +196,16 @@ Messages:
     framgångsrikt.'
   wwcConfigBadUpdateDelay: Ogiltig uppdateringsfördröjning inställd i config.yml.
     Defaulerar till 86400 sekunder...
-  wwcrlRateLimitOffSender: ' Stängde av din prisgräns.'
-  wwcrlRateLimitAlreadyOffTarget: ' Hastighetsbegränsning %i är redan inaktiverad.'
-  wwcrlPlayerNotFound: ' Spelaren %i hittas antingen inte, eller är inte en aktiv
+  wwctrlRateLimitOffSender: ' Stängde av din prisgräns.'
+  wwctrlRateLimitAlreadyOffTarget: ' Hastighetsbegränsning %i är redan inaktiverad.'
+  wwctrlPlayerNotFound: ' Spelaren %i hittas antingen inte, eller är inte en aktiv
     översättare.'
-  wwcrlRateLimitSetSender: ' Ställ in din hastighetsgräns till %i sekunder.'
-  wwcrlRateLimitOffTarget: ' Inaktiverade hastighetsbegränsning %i.'
-  wwcrlRateLimitSetTarget: ' Ställ in hastighetsbegränsning %i till %o sekunder.'
-  wwcrlNotATranslator: ' Du är inte en aktiv översättare! Se till att du har ställt
+  wwctrlRateLimitSetSender: ' Ställ in din hastighetsgräns till %i sekunder.'
+  wwctrlRateLimitOffTarget: ' Inaktiverade hastighetsbegränsning %i.'
+  wwctrlRateLimitSetTarget: ' Ställ in hastighetsbegränsning %i till %o sekunder.'
+  wwctrlNotATranslator: ' Du är inte en aktiv översättare! Se till att du har ställt
     in detta med /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' Din prisgräns är redan inaktiverad.'
+  wwctrlRateLimitAlreadyOffSender: ' Din prisgräns är redan inaktiverad.'
   wwctGUIRateButton: Ange hastighetsgräns
   wwctGUIConversationRateLimit: Hastighetsgränsen per översättning är för närvarande
     %i sekunder. Skriv något större än 0 om du vill ange ett nytt värde, eller skriv

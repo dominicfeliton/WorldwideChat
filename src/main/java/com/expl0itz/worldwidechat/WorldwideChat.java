@@ -25,7 +25,7 @@ import org.bukkit.scheduler.BukkitTask;
 
 import com.expl0itz.worldwidechat.commands.WWCConfiguration;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
-import com.expl0itz.worldwidechat.commands.WWCRateLimit;
+import com.expl0itz.worldwidechat.commands.WWCTranslateRateLimit;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCStats;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
@@ -233,11 +233,11 @@ public class WorldwideChat extends JavaPlugin {
             		WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
             		return wwcc.processCommand();
             	}
-            } else if (command.getName().equalsIgnoreCase("wwcrl")) {
+            } else if (command.getName().equalsIgnoreCase("wwctrl")) {
             	//Rate Limit Command
             	if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-            		WWCRateLimit wwcrl = new WWCRateLimit(sender, command, label, args);
-            		return wwcrl.processCommand();
+            		WWCTranslateRateLimit wwctrl = new WWCTranslateRateLimit(sender, command, label, args);
+            		return wwctrl.processCommand();
             	}
             }
     	}
@@ -273,10 +273,11 @@ public class WorldwideChat extends JavaPlugin {
             //Register tab completers
             getCommand("wwcg").setTabCompleter(new WWCTabCompleter());
             getCommand("wwct").setTabCompleter(new WWCTabCompleter());
+            getCommand("wwcti").setTabCompleter(new WWCTabCompleter());
             getCommand("wwctb").setTabCompleter(new WWCTabCompleter());
             getCommand("wwcts").setTabCompleter(new WWCTabCompleter());
             getCommand("wwcs").setTabCompleter(new WWCTabCompleter());
-            getCommand("wwcrl").setTabCompleter(new WWCTabCompleter());
+            getCommand("wwctrl").setTabCompleter(new WWCTabCompleter());
             getCommand("wwc").setTabCompleter(new WWCTabCompleter());
             getCommand("wwcr").setTabCompleter(new WWCTabCompleter());
             getCommand("wwcc").setTabCompleter(new WWCTabCompleter());

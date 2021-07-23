@@ -209,16 +209,16 @@ Messages:
     wurde erfolgreich festgelegt.'
   wwcConfigBadUpdateDelay: Ungültige Updater-Verzögerung in config.yml festgelegt.
     Vorgegeben auf 86400 Sekunden...
-  wwcrlRateLimitOffSender: ' Deaktiviere dein Zinslimit.'
-  wwcrlRateLimitAlreadyOffTarget: ' Das Ratenlimit von %i ist bereits deaktiviert.'
-  wwcrlPlayerNotFound: ' Der Spieler %i wurde entweder nicht gefunden oder ist kein
+  wwctrlRateLimitOffSender: ' Deaktiviere dein Zinslimit.'
+  wwctrlRateLimitAlreadyOffTarget: ' Das Ratenlimit von %i ist bereits deaktiviert.'
+  wwctrlPlayerNotFound: ' Der Spieler %i wurde entweder nicht gefunden oder ist kein
     aktiver Übersetzer.'
-  wwcrlRateLimitSetSender: ' Stellen Sie Ihr Ratenlimit auf %i Sekunden ein.'
-  wwcrlRateLimitOffTarget: ' Das Ratenlimit von %i wurde deaktiviert.'
-  wwcrlRateLimitSetTarget: ' Stellen Sie das Ratenlimit von %i auf %o Sekunden ein.'
-  wwcrlNotATranslator: ' Du bist kein aktiver Übersetzer! Stellen Sie sicher, dass
+  wwctrlRateLimitSetSender: ' Stellen Sie Ihr Ratenlimit auf %i Sekunden ein.'
+  wwctrlRateLimitOffTarget: ' Das Ratenlimit von %i wurde deaktiviert.'
+  wwctrlRateLimitSetTarget: ' Stellen Sie das Ratenlimit von %i auf %o Sekunden ein.'
+  wwctrlNotATranslator: ' Du bist kein aktiver Übersetzer! Stellen Sie sicher, dass
     Sie dies mit /wwc eingestellt haben.'
-  wwcrlRateLimitAlreadyOffSender: ' Ihr Tarifinlimit ist bereits deaktiviert.'
+  wwctrlRateLimitAlreadyOffSender: ' Ihr Tarifinlimit ist bereits deaktiviert.'
   wwctGUIRateButton: Satzlimit festlegen
   wwctGUIConversationRateLimit: Das Ratenlimit pro Übersetzung beträgt aktuell %i
     Sekunden. Geben Sie etwas größer als 0 ein, um einen neuen Wert festzulegen, oder

@@ -200,15 +200,15 @@ Messages:
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ' ಅಮೆಜಾನ್ ಪ್ರವೇಶ ಕೀಲಿ ಯಶಸ್ವಿಯಾಗಿ
     ಸೆಟ್.'
   wwcConfigBadUpdateDelay: ಅಮಾನ್ಯ ನವೀಕರಣ ವಿಳಂಬ config.yml ಸೆಟ್. 86400 ಸೆಕೆಂಡುಗಳ ಡಿಫಾಲ್ಟಿಂಗ್...
-  wwcrlRateLimitOffSender: ' ನಿಮ್ಮ ದರ ಮಿತಿಯನ್ನು ಆಫ್ ಮಾಡಲಾಗಿದೆ.'
-  wwcrlRateLimitAlreadyOffTarget: ' %i ನ ದರ ಮಿತಿಯನ್ನು ಈಗಾಗಲೇ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.'
-  wwcrlPlayerNotFound: ' ಪ್ಲೇಯರ್ %i ಕಂಡುಬಂದಿಲ್ಲ, ಅಥವ ಸಕ್ರಿಯ ಅನುವಾದಕವಲ್ಲ.'
-  wwcrlRateLimitSetSender: ' ನಿಮ್ಮ ದರ ಮಿತಿಯನ್ನು %i ಸೆಕೆಂಡುಗಳಿಗೆ ಹೊಂದಿಸಿ.'
-  wwcrlRateLimitOffTarget: ' %i ನ ದರ ಮಿತಿಯನ್ನು ಆಫ್ ಮಾಡಲಾಗಿದೆ.'
-  wwcrlRateLimitSetTarget: ' %i ನ ದರ ಮಿತಿಯನ್ನು %o ಸೆಕೆಂಡುಗಳವರೆಗೆ ಹೊಂದಿಸಿ.'
-  wwcrlNotATranslator: ' ನೀವು ಸಕ್ರಿಯ ಅನುವಾದಕರಲ್ಲ! ನೀವು ಇದನ್ನು /wwctನೊಂದಿಗೆ ಹೊಂದಿಸಿದ್ದೀರಿ
+  wwctrlRateLimitOffSender: ' ನಿಮ್ಮ ದರ ಮಿತಿಯನ್ನು ಆಫ್ ಮಾಡಲಾಗಿದೆ.'
+  wwctrlRateLimitAlreadyOffTarget: ' %i ನ ದರ ಮಿತಿಯನ್ನು ಈಗಾಗಲೇ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.'
+  wwctrlPlayerNotFound: ' ಪ್ಲೇಯರ್ %i ಕಂಡುಬಂದಿಲ್ಲ, ಅಥವ ಸಕ್ರಿಯ ಅನುವಾದಕವಲ್ಲ.'
+  wwctrlRateLimitSetSender: ' ನಿಮ್ಮ ದರ ಮಿತಿಯನ್ನು %i ಸೆಕೆಂಡುಗಳಿಗೆ ಹೊಂದಿಸಿ.'
+  wwctrlRateLimitOffTarget: ' %i ನ ದರ ಮಿತಿಯನ್ನು ಆಫ್ ಮಾಡಲಾಗಿದೆ.'
+  wwctrlRateLimitSetTarget: ' %i ನ ದರ ಮಿತಿಯನ್ನು %o ಸೆಕೆಂಡುಗಳವರೆಗೆ ಹೊಂದಿಸಿ.'
+  wwctrlNotATranslator: ' ನೀವು ಸಕ್ರಿಯ ಅನುವಾದಕರಲ್ಲ! ನೀವು ಇದನ್ನು /wwctನೊಂದಿಗೆ ಹೊಂದಿಸಿದ್ದೀರಿ
     ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.'
-  wwcrlRateLimitAlreadyOffSender: ' ನಿಮ್ಮ ದರ ಮಿತಿಯನ್ನು ಈಗಾಗಲೇ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.'
+  wwctrlRateLimitAlreadyOffSender: ' ನಿಮ್ಮ ದರ ಮಿತಿಯನ್ನು ಈಗಾಗಲೇ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.'
   wwctGUIRateButton: ದರ ಮಿತಿ ಹೊಂದಿಸಿ
   wwctGUIConversationRateLimit: ಪ್ರತಿ ಅನುವಾದದ ದರ ಮಿತಿಯು ಪ್ರಸಕ್ತವಾಗಿ %i ಸೆಕೆಂಡುಗಳು.
     ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 0 ಗಿಂತ ಹೆಚ್ಚಿನದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಮಿತಿಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲು

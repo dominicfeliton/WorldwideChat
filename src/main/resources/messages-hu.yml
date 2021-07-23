@@ -199,14 +199,14 @@ Messages:
     beállítása sikeresen megtörtént.'
   wwcConfigBadUpdateDelay: 'Érvénytelen frissítő késleltetés beállítása config.yml.
     Alapértelmezés: 86400 másodperc...'
-  wwcrlRateLimitOffSender: ' Kikapcsolta a díjkorlát.'
-  wwcrlRateLimitAlreadyOffTarget: ' A (z) %i sebességkorlát már le van tiltva.'
-  wwcrlPlayerNotFound: ' A (z) %i játékos nem található, vagy nem aktív fordító.'
-  wwcrlRateLimitSetSender: ' Állítsa be a sebességkorlátot a %i másodpercre.'
-  wwcrlRateLimitOffTarget: ' Kikapcsolta a (z) %i sebességhatárt.'
-  wwcrlRateLimitSetTarget: ' Állítsa be a (z) %i értékhatárt a %o másodpercre.'
-  wwcrlNotATranslator: ' Ön nem aktív fordító! Győződjön meg róla, hogy ezt a /wwct.'
-  wwcrlRateLimitAlreadyOffSender: ' A díjkorlát már le van tiltva.'
+  wwctrlRateLimitOffSender: ' Kikapcsolta a díjkorlát.'
+  wwctrlRateLimitAlreadyOffTarget: ' A (z) %i sebességkorlát már le van tiltva.'
+  wwctrlPlayerNotFound: ' A (z) %i játékos nem található, vagy nem aktív fordító.'
+  wwctrlRateLimitSetSender: ' Állítsa be a sebességkorlátot a %i másodpercre.'
+  wwctrlRateLimitOffTarget: ' Kikapcsolta a (z) %i sebességhatárt.'
+  wwctrlRateLimitSetTarget: ' Állítsa be a (z) %i értékhatárt a %o másodpercre.'
+  wwctrlNotATranslator: ' Ön nem aktív fordító! Győződjön meg róla, hogy ezt a /wwct.'
+  wwctrlRateLimitAlreadyOffSender: ' A díjkorlát már le van tiltva.'
   wwctGUIRateButton: Korlát beállítása
   wwctGUIConversationRateLimit: A fordításonkénti sebességhatár aktual %i másodperc.
     Írja be a 0-nál nagyobb értéket az új érték beállításához, vagy írja be a 0 értéket
