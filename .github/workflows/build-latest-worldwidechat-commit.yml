@@ -24,8 +24,8 @@ jobs:
     - name: Build with Maven
       run: mvn -B clean package test --file pom.xml
     - name: Upload final artifact
-      run: mkdir staging && cp target/WorldwideChat.jar staging/WorldwideChat-$GITHUB_SHA.jar
+      run: mkdir staging && cp target/WorldwideChat.jar staging/WorldwideChat.jar
     - uses: actions/upload-artifact@v2
       with:
-        name: WorldwideChat-$GITHUB_SHA
+        name: "WorldwideChat-$GITHUB_SHA"
         path: staging
