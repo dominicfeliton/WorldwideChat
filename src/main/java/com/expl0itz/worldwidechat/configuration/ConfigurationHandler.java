@@ -15,6 +15,7 @@ import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.misc.PlayerRecord;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
+import com.expl0itz.worldwidechat.translators.TestTranslation;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
 
 public class ConfigurationHandler {
@@ -159,6 +160,10 @@ public class ConfigurationHandler {
             			getMainConfig().getString("Translator.amazonAccessKey"),
             			getMainConfig().getString("Translator.amazonSecretKey"),
             			getMainConfig().getString("Translator.amazonRegion"));
+            	test.initializeConnection();
+            } else if (getMainConfig().getBoolean("Translator.testModeTranslator")) {
+            	main.setTranslatorName("JUnit Testing Translator");
+            	TestTranslation test = new TestTranslation("TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu");
             	test.initializeConnection();
             } else {
                 getMainConfig().set("Translator.useWatsonTranslate", false);

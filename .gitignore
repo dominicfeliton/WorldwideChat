@@ -10,9 +10,6 @@ bin/
 .idea/
 *.iml
 
-# Sensitive Files
-src/test/resources/*.yml
-
 # Other Files
 .DS_Store
 target/
