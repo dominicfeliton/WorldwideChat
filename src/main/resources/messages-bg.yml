@@ -200,8 +200,8 @@ Messages:
   wwctrlRateLimitSetSender: ' Задайте лимита на скоростта на %i секунди.'
   wwctrlRateLimitOffTarget: ' Изключено е ограничението на скоростта на %i.'
   wwctrlRateLimitSetTarget: ' Задайте ограничението на скоростта на %i на %o секунди.'
-  wwctrlNotATranslator: ' Ти не си активен преводач! Уверете се, че сте настроили това
-    с /wwct.'
+  wwctrlNotATranslator: ' Ти не си активен преводач! Уверете се, че сте настроили
+    това с /wwct.'
   wwctrlRateLimitAlreadyOffSender: ' Вашият лимит вече е деактивиран.'
   wwctGUIRateButton: Задаване на лимит
   wwctGUIConversationRateLimit: Ограничението на скоростта за превод е текущо %i секунди.
@@ -262,3 +262,4 @@ Messages:
   wwctiOnTarget: ' Преводът на елемент е разрешен за %i.'
   wwcBookTranslationFailCatastrophic: ' Неуспешно превеждане на целевата книга.'
   wwcBookTranslateTitleFail: ' Неуспешно превеждане на заглавието на книгата.'
+  wwcChatTranslationFail: ' Неуспешно превеждане на съобщението.'

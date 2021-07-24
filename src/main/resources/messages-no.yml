@@ -191,7 +191,8 @@ Messages:
     til 86400 sekunder...
   wwctrlRateLimitOffSender: ' Slått av prisgrensen.'
   wwctrlRateLimitAlreadyOffTarget: ' Satsgrensen på %i er allerede deaktivert.'
-  wwctrlPlayerNotFound: ' Spiller %i er enten ikke funnet, eller er ikke en aktiv oversetter.'
+  wwctrlPlayerNotFound: ' Spiller %i er enten ikke funnet, eller er ikke en aktiv
+    oversetter.'
   wwctrlRateLimitSetSender: ' Angi hastighetsgrensen til %i sekunder.'
   wwctrlRateLimitOffTarget: ' Slått av satsgrensen på %i.'
   wwctrlRateLimitSetTarget: ' Angi hastighetsgrensen på %i til %o sekunder.'
@@ -250,3 +251,4 @@ Messages:
   wwctiOnTarget: ' Vareoversettelse aktivert for %i.'
   wwcBookTranslationFailCatastrophic: ' Kan ikke oversette målboken.'
   wwcBookTranslateTitleFail: ' Kan ikke oversette boktittel.'
+  wwcChatTranslationFail: ' Kan ikke oversette meldingen.'

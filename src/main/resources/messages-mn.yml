@@ -193,8 +193,8 @@ Messages:
   wwcConfigBadUpdateDelay: Буруу Updater саатал config.yml заасан. 86400 секунд хүртэл
     анхдагч...
   wwctrlRateLimitOffSender: ' Таны ханшийн хязгаарыг унтраасан.'
-  wwctrlRateLimitAlreadyOffTarget: ' %i ханшийн хязгаар нь аль хэдийн тахир дутуу болсон
-    байна.'
+  wwctrlRateLimitAlreadyOffTarget: ' %i ханшийн хязгаар нь аль хэдийн тахир дутуу
+    болсон байна.'
   wwctrlPlayerNotFound: ' Тоглогч % би бас олж чадаагүй байна, эсвэл идэвхтэй орчуулагч
     биш юм.'
   wwctrlRateLimitSetSender: ' %i секунд нь таны ханшийн хязгаарыг тохируулна.'
@@ -259,3 +259,4 @@ Messages:
   wwctiOnTarget: ' Барааны орчуулга %i идэвхжүүлсэн.'
   wwcBookTranslationFailCatastrophic: ' зорилтот номыг орчуулж чадаагүй.'
   wwcBookTranslateTitleFail: ' Номын нэрийг орчуулж чадаагүй.'
+  wwcChatTranslationFail: ' Таны захиасыг орчуулж чадаагүй.'

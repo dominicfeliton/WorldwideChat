@@ -183,7 +183,6 @@ public class CommonDefinitions {
     	/* Initialize current ActiveTranslator, sanity checks */
         ActiveTranslator currActiveTranslator;
         if (!(WorldwideChat.getInstance().getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) && (WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString()) != null)) {
-            //This UDID is never valid, but we can use it as a less elegant way to check if global translate (/wwcg) is enabled.
             currActiveTranslator = WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString());
         } else if ((WorldwideChat.getInstance().getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) && (WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString()) != null)){
             //global translation won't override per person

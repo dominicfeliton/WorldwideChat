@@ -178,6 +178,7 @@
           <artifactId>maven-shade-plugin</artifactId>
           <version>3.2.4</version>
           <configuration>
+               <createDependencyReducedPom>false</createDependencyReducedPom>
                     <artifactSet>
                         <includes>
                             <include>commons-logging:commons-logging</include>

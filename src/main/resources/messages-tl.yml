@@ -209,7 +209,8 @@ Messages:
   wwcConfigBadUpdateDelay: Hindi wastong pag-antala ng pag-updater na itinakda sa
     config.yml. Default sa 86400 segundo...
   wwctrlRateLimitOffSender: ' Naka-off ang iyong limitasyon sa rate.'
-  wwctrlRateLimitAlreadyOffTarget: ' Ang limitasyon ng rate ng %i ay naka-disable na.'
+  wwctrlRateLimitAlreadyOffTarget: ' Ang limitasyon ng rate ng %i ay naka-disable
+    na.'
   wwctrlPlayerNotFound: ' Ang manlalarong %i ay alinman sa hindi natagpuan, o hindi
     isang aktibong tagasalin.'
   wwctrlRateLimitSetSender: ' Itakda ang limitasyon ng iyong rate sa %i segundo.'
@@ -217,7 +218,8 @@ Messages:
   wwctrlRateLimitSetTarget: ' Itakda ang limitasyon ng rate ng %i sa %o segundo.'
   wwctrlNotATranslator: ' Ikaw ay hindi isang aktibong tagasalin! Tiyaking itinakda
     mo ito sa /wwct.'
-  wwctrlRateLimitAlreadyOffSender: ' Ang iyong limitasyon sa rate ay naka-disable na.'
+  wwctrlRateLimitAlreadyOffSender: ' Ang iyong limitasyon sa rate ay naka-disable
+    na.'
   wwctGUIRateButton: Itakda ang limitasyon ng Rate
   wwctGUIConversationRateLimit: Ang limitasyon ng rate sa bawat pagsasalin ay kasalukuyang
     %i segundo. I-type ang anumang mas malaki kaysa sa 0 upang magtakda ng bagong
@@ -280,3 +282,4 @@ Messages:
   wwctiOnTarget: ' Pinagana ang pagsasalin ng item para sa %i.'
   wwcBookTranslationFailCatastrophic: ' Nabigong i-translate ang target na aklat.'
   wwcBookTranslateTitleFail: ' Nabigong i-translate ang pamagat ng libro.'
+  wwcChatTranslationFail: ' Nabigong i-translate ang iyong mensahe.'

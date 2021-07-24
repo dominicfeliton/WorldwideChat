@@ -204,7 +204,8 @@ Messages:
   wwctrlPlayerNotFound: ' Играч %i или не е пронајден, или не е активен преведувач.'
   wwctrlRateLimitSetSender: ' Поставете го лимитот на стапката на %i секунди.'
   wwctrlRateLimitOffTarget: ' Исклучи го ограничувањето на стапката на %i.'
-  wwctrlRateLimitSetTarget: ' Поставете го ограничувањето на стапката од %i до %o секунди.'
+  wwctrlRateLimitSetTarget: ' Поставете го ограничувањето на стапката од %i до %o
+    секунди.'
   wwctrlNotATranslator: ' Вие не сте активен преведувач! Бидете сигурни дека сте го
     поставиле ова со/wwct.'
   wwctrlRateLimitAlreadyOffSender: ' Вашиот лимит на стапка е веќе оневозможен.'
@@ -266,3 +267,4 @@ Messages:
   wwctiOnTarget: ' Точка превод овозможено за %i.'
   wwcBookTranslationFailCatastrophic: ' Не успеа да преведе целна книга.'
   wwcBookTranslateTitleFail: ' Не успеа да преведе насловот на книгата.'
+  wwcChatTranslationFail: ' Не успеа да ја преведе вашата порака.'

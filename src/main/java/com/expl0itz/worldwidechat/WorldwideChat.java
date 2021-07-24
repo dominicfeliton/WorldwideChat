@@ -95,6 +95,11 @@ public class WorldwideChat extends JavaPlugin {
     private String pluginLang = "en";
     private String translatorName = "Invalid";
 
+    /* Default constructor */
+    public WorldwideChat() {
+    	super();
+    }
+    
     /* MockBukkit required constructor */
     protected WorldwideChat(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
     	super(loader, description, dataFolder, file);

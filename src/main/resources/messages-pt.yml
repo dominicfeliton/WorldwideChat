@@ -204,8 +204,8 @@ Messages:
   wwctrlRateLimitSetSender: ' Defina o limite de taxa para %i segundos.'
   wwctrlRateLimitOffTarget: ' Desativou o limite de taxa de %i.'
   wwctrlRateLimitSetTarget: ' Defina o limite de taxa de %i para %o segundos.'
-  wwctrlNotATranslator: ' Você não é um tradutor ativo! Certifique-se de que você definiu
-    isso com /wwct.'
+  wwctrlNotATranslator: ' Você não é um tradutor ativo! Certifique-se de que você
+    definiu isso com /wwct.'
   wwctrlRateLimitAlreadyOffSender: ' Seu limite de taxa já está desativado.'
   wwctGUIRateButton: Definir limite de taxa
   wwctGUIConversationRateLimit: O limite de taxa por tradução é atualmente %i segundos.
@@ -262,3 +262,4 @@ Messages:
   wwctiOnTarget: ' Tradução de itens ativada para %i.'
   wwcBookTranslationFailCatastrophic: ' Falha ao traduzir o livro de destino.'
   wwcBookTranslateTitleFail: ' Falha ao traduzir o título do livro.'
+  wwcChatTranslationFail: ' Falha ao traduzir sua mensagem.'

@@ -213,8 +213,8 @@ Messages:
   wwctrlRateLimitSetSender: ' Définissez votre limite de taux à %i secondes.'
   wwctrlRateLimitOffTarget: ' Désactivez la limite de taux de %i.'
   wwctrlRateLimitSetTarget: ' Définissez la limite de débit de %i à %o secondes.'
-  wwctrlNotATranslator: ' Vous n\''êtes pas un traducteur actif! Assurez-vous que vous
-    avez défini ce paramètre avec /wwct.'
+  wwctrlNotATranslator: ' Vous n\''êtes pas un traducteur actif! Assurez-vous que
+    vous avez défini ce paramètre avec /wwct.'
   wwctrlRateLimitAlreadyOffSender: ' Votre limite tarifaire est déjà désactivée.'
   wwctGUIRateButton: Définir la limite de taux
   wwctGUIConversationRateLimit: La limite de débit par traduction est actuellement
@@ -278,3 +278,4 @@ Messages:
   wwctiOnTarget: ' Traduction d\''élément activée pour %i.'
   wwcBookTranslationFailCatastrophic: ' Impossible de traduire le livre cible.'
   wwcBookTranslateTitleFail: ' Impossible de traduire le titre du livre.'
+  wwcChatTranslationFail: ' Impossible de traduire votre message.'
