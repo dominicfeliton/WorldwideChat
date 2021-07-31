@@ -81,9 +81,6 @@ public class WorldwideChatTests {
 	@Order(1)
 	@Test
 	public void testPlayerCommands() {
-		/* Reset Translators */
-		resetWWC();
-		
 		/* Run tests */
 		testPlayerCommands.testTranslateCommandPlayerSourceTarget();
 		testPlayerCommands.testTranslateCommandPlayerSourceTargetOther();
