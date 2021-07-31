@@ -111,5 +111,7 @@ public class WorldwideChatTests {
 		testPlayerGUI.testTranslateCommandPlayerGUIActive();
 		testPlayerGUI.testTranslateCommandPlayerGUIOther();
 		testPlayerGUI.testTranslateCommandPlayerGUIOtherActive();
+		testPlayerGUI.testGlobalTranslateCommandPlayerGUI();
+		testPlayerGUI.testGlobalTranslateCommandPlayerGUIActive();
 	}
 }
