@@ -62,7 +62,6 @@ public class WorldwideChatTests {
 
 	@AfterAll
 	public static void tearDown() {
-		plugin.onDisable();
 		MockBukkit.unmock();
 	}
 	
