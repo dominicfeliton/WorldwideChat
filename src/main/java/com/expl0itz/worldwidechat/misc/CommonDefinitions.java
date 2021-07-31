@@ -2,6 +2,8 @@ package com.expl0itz.worldwidechat.misc;
 
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.bukkit.Bukkit;
@@ -215,25 +217,51 @@ public class CommonDefinitions {
         boolean isExempt = false;
         boolean hasPermission = false;
         int personalRateLimit = 0;
-        Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
-        for (PermissionAttachmentInfo perm : perms) {
-        	//Any set permission overrides a personal rate limit.
-        	if (perm.getPermission().startsWith("worldwidechat.ratelimit.")) {
-        		if (perm.getPermission().indexOf("exempt") != -1) {
-        			isExempt = true;
-        			break;
-        		} else {
-        			String delayStr = CharMatcher.inRange('0', '9').retainFrom(perm.getPermission());
-        			if (!delayStr.isEmpty()) {
-        				personalRateLimit = Integer.parseInt(delayStr);
-        				hasPermission = true;
-        			}
-        			break;
-        		}
+        
+        // Get vals from Bukkit API; run this synchronously
+        CompletableFuture<Boolean> exemptFuture = new CompletableFuture<>();
+        CompletableFuture<Boolean> hasPermFuture = new CompletableFuture<>();
+        CompletableFuture<Integer> personalFuture = new CompletableFuture<>();
+        Bukkit.getScheduler().runTask(WorldwideChat.getInstance(), new Runnable() {
+        	@Override
+        	public void run() {
+        		boolean exemptPermCheck = false;
+        		boolean hasPermission = false;
+        		int personalRateLimit = 0;
+            	if (currPlayer.hasPermission("worldwidechat.ratelimit.exempt")) {
+                	exemptPermCheck = true;
+                } else {
+                	Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
+                	for (PermissionAttachmentInfo perm : perms) {
+                    	//Any set permission overrides a personal rate limit.
+                    	if (perm.getPermission().startsWith("worldwidechat.ratelimit.")) {
+                    		String delayStr = CharMatcher.inRange('0', '9').retainFrom(perm.getPermission());
+                			if (!delayStr.isEmpty()) {
+                				personalRateLimit = Integer.parseInt(delayStr);
+                				hasPermission = true;
+                			}
+                			break;
+                    	}
+                	}
+                }
+        		exemptFuture.complete(exemptPermCheck);
+        		hasPermFuture.complete(hasPermission);
+        		personalFuture.complete(personalRateLimit);
         	}
-        } 
-        //Get user's personal rate limit, if permission is not set and they are an active translator.
-        if (!hasPermission && WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString()) != null) {
+        });
+        
+        // Add values returned from Bukkit API
+		try {
+			isExempt = exemptFuture.get();
+			hasPermission = hasPermFuture.get();
+			personalRateLimit = personalFuture.get();
+		} catch (InterruptedException | ExecutionException e1) {
+			e1.printStackTrace();
+			return inMessage;
+		}
+        
+        // Get user's personal rate limit, if permission is not set and they are an active translator.
+        if (!isExempt && !hasPermission && WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString()) != null) {
         	personalRateLimit = WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString()).getRateLimit();
         }
         
