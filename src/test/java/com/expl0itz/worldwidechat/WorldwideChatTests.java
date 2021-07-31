@@ -62,6 +62,7 @@ public class WorldwideChatTests {
 
 	@AfterAll
 	public static void tearDown() {
+		plugin.onDisable();
 		MockBukkit.unmock();
 	}
 	
@@ -104,7 +105,7 @@ public class WorldwideChatTests {
 	@Test
 	public void testPlayerGUI() {
 		/* Reset Translators */
-		resetWWC();
+	    resetWWC();
 		
 		/* Run tests */
 		testPlayerGUI.testTranslateCommandPlayerGUI();
