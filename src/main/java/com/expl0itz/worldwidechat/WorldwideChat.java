@@ -296,7 +296,9 @@ public class WorldwideChat extends JavaPlugin {
     public void cancelBackgroundTasks() {
     	//Cancel + remove all tasks
         for (String eachTask : backgroundTasks.keySet()) {
-            backgroundTasks.get(eachTask).cancel();
+            if (backgroundTasks.get(eachTask) != null && !backgroundTasks.get(eachTask).isCancelled()) {
+            	backgroundTasks.get(eachTask).cancel();
+            }
         }
         backgroundTasks.clear();
         
