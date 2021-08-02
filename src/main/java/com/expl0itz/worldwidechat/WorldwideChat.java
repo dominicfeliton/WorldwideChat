@@ -5,9 +5,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 import java.util.NoSuchElementException;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
 
@@ -21,7 +19,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.JavaPluginLoader;
-import org.bukkit.scheduler.BukkitTask;
 
 import com.expl0itz.worldwidechat.commands.WWCConfiguration;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
@@ -71,8 +68,6 @@ public class WorldwideChat extends JavaPlugin {
     private InventoryManager inventoryManager;
     private BukkitAudiences adventure;
     private ConfigurationHandler configurationManager;
-    
-    private Map < String, BukkitTask > backgroundTasks = new ConcurrentHashMap < String, BukkitTask > ();
     
     private List < SupportedLanguageObject > supportedLanguages = new CopyOnWriteArrayList < SupportedLanguageObject > (); //Way more reads, every reload write
     private List < PlayerRecord > playerRecords = new CopyOnWriteArrayList < PlayerRecord > (); //Way more reads, occasional write
@@ -264,16 +259,13 @@ public class WorldwideChat extends JavaPlugin {
         	}
         	
         	//Check for updates
-            BukkitTask updateChecker = Bukkit.getScheduler().runTaskTimerAsynchronously(this, new UpdateChecker(), 0, getUpdateCheckerDelay()*20); //Run update checker now
-            backgroundTasks.put("updateChecker", updateChecker);
+            Bukkit.getScheduler().runTaskTimerAsynchronously(this, new UpdateChecker(), 0, getUpdateCheckerDelay()*20); //Run update checker now
             
             //Load saved user data
-            BukkitTask loadUserData = Bukkit.getScheduler().runTaskAsynchronously(this, new LoadUserData());
-            backgroundTasks.put("loadUserData", loadUserData);
+            Bukkit.getScheduler().runTaskAsynchronously(this, new LoadUserData());
             
             //Schedule automatic user data sync
-            BukkitTask syncUserData = Bukkit.getScheduler().runTaskTimerAsynchronously(this, new SyncUserData(), syncUserDataDelay*20, syncUserDataDelay*20);
-            backgroundTasks.put("syncUserData", syncUserData);
+            Bukkit.getScheduler().runTaskTimerAsynchronously(this, new SyncUserData(), syncUserDataDelay*20, syncUserDataDelay*20);
             
             //Register tab completers
             getCommand("wwcg").setTabCompleter(new WWCTabCompleter());
@@ -295,17 +287,7 @@ public class WorldwideChat extends JavaPlugin {
     
     public void cancelBackgroundTasks() {
     	//Cancel + remove all tasks
-    	if (!backgroundTasks.isEmpty()) {
-    		for (String eachTask : backgroundTasks.keySet()) {
-            	try {
-                backgroundTasks.get(eachTask).cancel();
-            	} catch (NullPointerException e) {
-                	continue;
-                }
-            }
-    	}
-        
-        backgroundTasks.clear();
+    	this.getServer().getScheduler().cancelTasks(this);
         
         //Close all active GUIs
         playersUsingConfigurationGUI.clear();
@@ -398,15 +380,6 @@ public class WorldwideChat extends JavaPlugin {
     /* Setters */
     public void setConfigManager(ConfigurationHandler i) {
         configurationManager = i;
-    }
-    
-    public void addBackgroundTask (String name, BukkitTask i) {
-        backgroundTasks.put(name, i);
-    }
-    
-    public void removeBackgroundTask (String name) {
-        backgroundTasks.get(name).cancel();
-        backgroundTasks.remove(name);
     }
     
     public void addActiveTranslator(ActiveTranslator i) {
@@ -543,10 +516,6 @@ public class WorldwideChat extends JavaPlugin {
             return newRecord;
         }
         return null;
-    }
-    
-    public Map < String, BukkitTask > getBackgroundTasks() {
-        return backgroundTasks;
     }
 
     public List < ActiveTranslator > getActiveTranslators() {
