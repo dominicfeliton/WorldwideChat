@@ -168,8 +168,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon maxfiy kalitini o\'zgartiring
   wwcVersion: ' WorldWidechat, versiya'
   wwcsName: ' Aktyor nomi: %i'
-  wwcInvalidTranslator: Tarjimon sozlamalari noto\'g\'ri. Iltimos, ushbu plaginni
-    ishlatish uchun config.yml yoki /wwcc bilan tuzating.
   wwcsAttemptedTranslations: ' Tarjimalar: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon maxfiy kaliti muvaffaqiyatli
     o\''rnatildi.'
@@ -263,3 +261,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Maqsadli kitobni tarjima qilib bo\''lmadi.'
   wwcBookTranslateTitleFail: ' Kitob nomini tarjima bo\''lmadi.'
   wwcChatTranslationFail: ' Xabaringizni tarjima qilib bo\''lmadi.'
+  wwcInvalidTranslator: ' Tarjimon sozlamalari noto\''g\''ri. Iltimos, ushbu plaginni
+    ishlatish uchun config.yml yoki /wwcc bilan tuzating.'
+  wwcNotDoneLoading: ' WorldwideChat hali ham ishga tushirilmoqda. Iltimos, tezda
+    qayta urinib ko\''ring.'

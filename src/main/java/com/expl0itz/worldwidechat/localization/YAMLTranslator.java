@@ -156,6 +156,7 @@ public class YAMLTranslator {
 					translatedLine = translatedLine.replaceAll("(?i)WorldWideChat", "WorldwideChat");
 					translatedLine = translatedLine.replaceAll("(?i)WorldVideChat", "WorldwideChat");
 					translatedLine = translatedLine.replaceAll("(?i)WorldwideCat", "WorldwideChat");
+					translatedLine = translatedLine.replaceAll("(?i)WorldWide Chat", "WorldwideChat");
 					
 					//Replace any weird vars
 					translatedLine = translatedLine.replaceAll("%I", "%i");

@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.InaccessibleObjectException;
 
+import org.bukkit.Bukkit;
+
 import com.expl0itz.worldwidechat.misc.Metrics;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -13,10 +15,15 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.misc.ActiveTranslator;
 import com.expl0itz.worldwidechat.misc.CommonDefinitions;
 import com.expl0itz.worldwidechat.misc.PlayerRecord;
+import com.expl0itz.worldwidechat.runnables.LoadUserData;
+import com.expl0itz.worldwidechat.runnables.SyncUserData;
+import com.expl0itz.worldwidechat.runnables.UpdateChecker;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
 import com.expl0itz.worldwidechat.translators.TestTranslation;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
+
+import co.aikar.taskchain.TaskChain;
 
 public class ConfigurationHandler {
 
@@ -94,10 +101,10 @@ public class ConfigurationHandler {
     }
     
     /* Load Main Settings Method */
-    public boolean loadMainSettings() {
+    public void loadMainSettings() {
         /* Get rest of General Settings */
         //Prefix
-        try {
+    	try {
             if (!getMainConfig().getString("General.prefixName").equalsIgnoreCase("Default")) {
                 main.setPrefixName(getMainConfig().getString("General.prefixName"));
             } else {
@@ -140,48 +147,6 @@ public class ConfigurationHandler {
         	main.setSyncUserDataDelay(7200);
             main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigSyncDelayInvalid"));
         }
-        
-        /* Translator Settings */
-        try {
-        	if (getMainConfig().getBoolean("Translator.useWatsonTranslate") && (!(getMainConfig().getBoolean("Translator.useGoogleTranslate")) && (!(getMainConfig().getBoolean("Translator.useAmazonTranslate"))))) {
-        		main.setTranslatorName("Watson");
-        		WatsonTranslation test = new WatsonTranslation(
-                    getMainConfig().getString("Translator.watsonAPIKey"),
-                    getMainConfig().getString("Translator.watsonURL"));
-                test.initializeConnection();
-            } else if (getMainConfig().getBoolean("Translator.useGoogleTranslate") && (!(getMainConfig().getBoolean("Translator.useWatsonTranslate")) && (!(getMainConfig().getBoolean("Translator.useAmazonTranslate"))))) {
-            	main.setTranslatorName("Google Translate");
-            	GoogleTranslation test = new GoogleTranslation(
-                    getMainConfig().getString("Translator.googleTranslateAPIKey"));
-                test.initializeConnection();
-            } else if (getMainConfig().getBoolean("Translator.useAmazonTranslate") && (!(getMainConfig().getBoolean("Translator.useGoogleTranslate")) && (!(getMainConfig().getBoolean("Translator.useWatsonTranslate"))))) {
-            	main.setTranslatorName("Amazon Translate");
-            	AmazonTranslation test = new AmazonTranslation(
-            			getMainConfig().getString("Translator.amazonAccessKey"),
-            			getMainConfig().getString("Translator.amazonSecretKey"),
-            			getMainConfig().getString("Translator.amazonRegion"));
-            	test.initializeConnection();
-            } else if (getMainConfig().getBoolean("Translator.testModeTranslator")) {
-            	main.setTranslatorName("JUnit/MockBukkit Testing Translator");
-            	TestTranslation test = new TestTranslation("TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu");
-            	test.initializeConnection();
-            } else {
-                getMainConfig().set("Translator.useWatsonTranslate", false);
-                getMainConfig().set("Translator.useGoogleTranslate", false);
-                getMainConfig().set("Translator.useAmazonTranslate", false);
-                getMainConfig().save(configFile);
-                main.setTranslatorName("Invalid");
-            }
-        } catch (Exception e) {
-        	if (e instanceof InaccessibleObjectException) {
-                // Watson does not work properly on 1.17 without --illegal-access=permit. Remove this once the IBM devs fix it
-                main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcWatson117Warning"));
-        	} else {
-        		main.getLogger().severe("(" + main.getTranslatorName() + ") " + e.getMessage());
-            	e.printStackTrace();
-        	}
-        	main.setTranslatorName("Invalid");
-        }
         //Rate limit Settings
         try {
         	if (getMainConfig().getInt("Translator.rateLimit") > 0) {
@@ -214,7 +179,57 @@ public class ConfigurationHandler {
 				e1.printStackTrace();
 			}
         }
-        return true; // We made it, everything set successfully; return false == fatal error and plugin disables itself
+    }
+    
+    public void loadTranslatorSettings() {
+    	/* Translator Settings */
+    	String outName = "Invalid";
+        try {
+        	if (getMainConfig().getBoolean("Translator.useWatsonTranslate") && (!(getMainConfig().getBoolean("Translator.useGoogleTranslate")) && (!(getMainConfig().getBoolean("Translator.useAmazonTranslate"))))) {
+        		outName = "Watson";
+        		WatsonTranslation test = new WatsonTranslation(
+                    getMainConfig().getString("Translator.watsonAPIKey"),
+                    getMainConfig().getString("Translator.watsonURL"));
+                test.initializeConnection();
+            } else if (getMainConfig().getBoolean("Translator.useGoogleTranslate") && (!(getMainConfig().getBoolean("Translator.useWatsonTranslate")) && (!(getMainConfig().getBoolean("Translator.useAmazonTranslate"))))) {
+            	outName = "Google Translate";
+            	GoogleTranslation test = new GoogleTranslation(
+                    getMainConfig().getString("Translator.googleTranslateAPIKey"));
+                test.initializeConnection();
+            } else if (getMainConfig().getBoolean("Translator.useAmazonTranslate") && (!(getMainConfig().getBoolean("Translator.useGoogleTranslate")) && (!(getMainConfig().getBoolean("Translator.useWatsonTranslate"))))) {
+            	outName = "Amazon Translate";
+            	AmazonTranslation test = new AmazonTranslation(
+            			getMainConfig().getString("Translator.amazonAccessKey"),
+            			getMainConfig().getString("Translator.amazonSecretKey"),
+            			getMainConfig().getString("Translator.amazonRegion"));
+            	test.initializeConnection();
+            } else if (getMainConfig().getBoolean("Translator.testModeTranslator")) {
+            	outName = "JUnit/MockBukkit Testing Translator";
+            	TestTranslation test = new TestTranslation("TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu");
+            	test.initializeConnection();
+            } else {
+                getMainConfig().set("Translator.useWatsonTranslate", false);
+                getMainConfig().set("Translator.useGoogleTranslate", false);
+                getMainConfig().set("Translator.useAmazonTranslate", false);
+                getMainConfig().save(configFile);
+                outName = "Invalid";
+            }
+        } catch (Exception e) {
+        	if (e instanceof InaccessibleObjectException) {
+                // Watson does not work properly on 1.17 without --illegal-access=permit. Remove this once the IBM devs fix it
+                main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcWatson117Warning"));
+        	} else {
+        		main.getLogger().severe("(" + main.getTranslatorName() + ") " + e.getMessage());
+            	e.printStackTrace();
+        	}
+        	outName = "Invalid";
+        }
+        if (outName.equals("Invalid")) {
+    		main.getLogger().severe(getMessagesConfig().getString("Messages.wwcInvalidTranslator"));
+    	} else {
+    		main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", outName));
+    	}
+        main.setTranslatorName(outName);
     }
  
     /* Per User Settings Saver */

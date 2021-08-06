@@ -162,8 +162,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: એમેઝોન સિક્રેટ કી બદલો
   wwcVersion: ' વર્લ્ડવાઇડચેટ, સંસ્કરણ'
   wwcsName: ' પ્લેયર નામ: %i'
-  wwcInvalidTranslator: અમાન્ય અનુવાદક સેટિંગ્સ. કૃપા કરીને આ પલ્ગઇનની વાપરવા માટે
-    તમારા config.yml અથવા સાથે/wwcc માં ઠીક કરો.
   wwcsAttemptedTranslations: ' અનુવાદો પ્રયાસ કર્યો: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' એમેઝોન ગુપ્ત કી સફળતાપૂર્વક
     સેટ.'
@@ -256,3 +254,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' લક્ષ્ય પુસ્તકનું ભાષાંતર કરવામાં નિષ્ફળ થયું.'
   wwcBookTranslateTitleFail: ' પુસ્તક શીર્ષકનું ભાષાંતર કરવામાં નિષ્ફળ થયું.'
   wwcChatTranslationFail: ' તમારા સંદેશનું ભાષાંતર કરવામાં નિષ્ફળ થયું.'
+  wwcInvalidTranslator: ' અમાન્ય અનુવાદક સેટિંગ્સ. કૃપા કરીને આ પલ્ગઇનની વાપરવા માટે
+    તમારા config.yml અથવા સાથે/wwcc માં ઠીક કરો.'
+  wwcNotDoneLoading: ' વર્લ્ડવાઇડચેટ હજી પણ પ્રારંભ કરી રહ્યું છે. કૃપા કરીને ટૂંક
+    સમયમાં ફરી પ્રયાસ કરો.'

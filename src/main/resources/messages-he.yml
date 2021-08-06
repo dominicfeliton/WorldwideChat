@@ -151,8 +151,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: שינוי המפתח הסודי של אמזון
   wwcVersion: ' העולם WideChat, גרסה'
   wwcsName: ' שם השחקן: %i'
-  wwcInvalidTranslator: הגדרות מתרגם לא חוקיות. אנא תקן זאת ב- config.yml שלך או עם
-    /wwcc כדי להשתמש בתוסף זה.
   wwcsAttemptedTranslations: ' ניסיון תרגומים: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' המפתח הסודי של אמזון הוגדר
     בהצלחה.'
@@ -231,3 +229,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' לא הצליח לתרגם את ספר היעד.'
   wwcBookTranslateTitleFail: ' לא הצליח לתרגם את כותרת הספר.'
   wwcChatTranslationFail: ' לא הצליח לתרגם את ההודעה שלך.'
+  wwcInvalidTranslator: ' הגדרות מתרגם לא חוקיות. אנא תקן זאת ב- config.yml שלך או
+    עם /wwcc כדי להשתמש בתוסף זה.'
+  wwcNotDoneLoading: ' WorldwideChat עדיין מאתחל. אנא נסה שוב בקרוב.'

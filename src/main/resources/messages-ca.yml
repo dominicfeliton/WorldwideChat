@@ -170,8 +170,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Canviar la clau secreta Amazon
   wwcVersion: ' WorldwideChat, versió'
   wwcsName: ' Nom del jugador: %i'
-  wwcInvalidTranslator: Configuració del traductor no vàlid. Si us plau, corregiu
-    això a la vostra config.yml o amb /wwcc per utilitzar aquest connector.
   wwcsAttemptedTranslations: ' Intent de traduccions: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon conjunt de claus
     secretes amb èxit.'
@@ -266,3 +264,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' No s\''ha pogut traduir el llibre de destinació.'
   wwcBookTranslateTitleFail: ' No s\''ha pogut traduir el títol del llibre.'
   wwcChatTranslationFail: ' No s\''ha pogut traduir el missatge.'
+  wwcInvalidTranslator: ' Configuració del traductor no vàlid. Si us plau, corregiu
+    això a la vostra config.yml o amb /wwcc per utilitzar aquest connector.'
+  wwcNotDoneLoading: ' WorldwideChat encara s\''està inicialitzant. Torneu-ho a provar
+    en breu.'

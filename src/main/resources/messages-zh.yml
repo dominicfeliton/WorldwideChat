@@ -135,7 +135,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: 更改亚马逊密钥
   wwcVersion: ' WorldwideChat，版本'
   wwcsName: ' 玩家姓名： %i'
-  wwcInvalidTranslator: 翻译者设置无效。请在 config.yml 或使用 /wwcc 中修复此问题以使用此插件。
   wwcsAttemptedTranslations: ' 尝试翻译： %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' 亚马逊密钥设置成功。'
   wwcConfigConversationWatsonAPIKeySuccess: ' Watson API 密钥设置成功。'
@@ -206,3 +205,5 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' 无法翻译目标图书。'
   wwcBookTranslateTitleFail: ' 无法翻译图书标题。'
   wwcChatTranslationFail: ' 无法翻译你的消息。'
+  wwcInvalidTranslator: ' 翻译器设置无效。请在 config.yml 或使用 /wwcc 中修复此问题以使用此插件。'
+  wwcNotDoneLoading: ' WorldwideChat 仍在初始化。请稍后重试。'

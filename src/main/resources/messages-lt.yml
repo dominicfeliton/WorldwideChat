@@ -167,8 +167,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Keisti Amazon slaptą raktą
   wwcVersion: ' WorldwideChat, versija'
   wwcsName: ' Žaidėjo vardas: %i'
-  wwcInvalidTranslator: Neteisingas vertėjo nustatymai. Prašome išspręsti šią problemą
-    savo config.yml arba su /wwcc naudoti šį įskiepiai.
   wwcsAttemptedTranslations: ' Bandė vertimai: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' “Amazon” slaptas raktas
     rinkinys sėkmingai.'
@@ -257,3 +255,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Nepavyko išversti tikslinės knygos.'
   wwcBookTranslateTitleFail: ' Nepavyko išversti knygos pavadinimo.'
   wwcChatTranslationFail: ' Nepavyko išversti jūsų žinutės.'
+  wwcInvalidTranslator: ' Neteisingas vertėjo nustatymai. Prašome išspręsti šią problemą
+    savo config.yml arba su /wwcc naudoti šį įskiepiai.'
+  wwcNotDoneLoading: ' WorldwideChat vis dar inicijuoja. Bandykite dar kartą netrukus.'

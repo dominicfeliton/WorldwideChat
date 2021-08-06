@@ -178,8 +178,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon Secret Key ändern
   wwcVersion: ' WorldwideChat, Fassung'
   wwcsName: ' Spielername: %i'
-  wwcInvalidTranslator: Ungültige Einstellungen für Übersetzer. Bitte korrigieren
-    Sie dies in Ihrer config.yml oder mit /wwcc, um dieses Plugin zu verwenden.
   wwcsAttemptedTranslations: ' Versuchte Übersetzungen: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Der geheime Amazon-Schlüssel
     wurde erfolgreich festgelegt.'
@@ -279,3 +277,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Das Zielbuch konnte nicht übersetzt werden.'
   wwcBookTranslateTitleFail: ' Der Buchtitel konnte nicht übersetzt werden.'
   wwcChatTranslationFail: ' Ihre Nachricht konnte nicht übersetzt werden.'
+  wwcInvalidTranslator: ' Ungültige Übersetzereinstellungen. Bitte repariere das in
+    deiner config.yml oder mit /wwcc um dieses Plugin zu verwenden.'
+  wwcNotDoneLoading: ' WorldwideChat initialisiert immer noch. Bitte versuchen Sie
+    es in Kürze erneut.'

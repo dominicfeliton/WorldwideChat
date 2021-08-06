@@ -169,8 +169,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Амазон промена Тајната Клучни
   wwcVersion: ' WorldwideChat, верзија'
   wwcsName: ' Име на плеер: %i'
-  wwcInvalidTranslator: Неважечки поставки за преведувач. Ве молиме поправете го ова
-    во вашиот config.yml или со /wwcc да го користите овој приклучок.
   wwcsAttemptedTranslations: ' Обид за преводи: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Амазон таен клуч во собата
     успешно.'
@@ -268,3 +266,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Не успеа да преведе целна книга.'
   wwcBookTranslateTitleFail: ' Не успеа да преведе насловот на книгата.'
   wwcChatTranslationFail: ' Не успеа да ја преведе вашата порака.'
+  wwcInvalidTranslator: ' Неважечки поставки за преведувач. Ве молиме поправете го
+    ова во вашиот config.yml или со /wwcc да го користите овој приклучок.'
+  wwcNotDoneLoading: ' WorldwideChat сè уште иницијализира. Ве молиме обидете се повторно
+    наскоро.'

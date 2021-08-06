@@ -160,8 +160,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Muuda Amazon salavõti
   wwcVersion: ' WorldwideChat, versioon'
   wwcsName: ' Mängija nimi: %i'
-  wwcInvalidTranslator: Kehtetu tõlkija sätted. Palun parandage see oma config.yml
-    või /wwcc kasutada seda pluginat.
   wwcsAttemptedTranslations: ' Üritanud tõlked: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon salajane võti seatud
     edukalt.'
@@ -249,3 +247,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Sihtraamatu tõlkimine nurjus'
   wwcBookTranslateTitleFail: ' Raamatu pealkirja tõlkimine nurjus.'
   wwcChatTranslationFail: ' Sõnumi tõlkimine nurjus.'
+  wwcInvalidTranslator: ' Kehtetu tõlkija sätted. Palun parandage see oma config.yml
+    või /wwcc kasutada seda pluginat.'
+  wwcNotDoneLoading: ' WorldwideChat on endiselt initsialiseeriv. Palun proovige varsti
+    uuesti.'

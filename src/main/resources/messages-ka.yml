@@ -165,8 +165,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: შეცვალეთ Amazon საიდუმლო გასაღები
   wwcVersion: ' WorldWidecHat, ვერსია'
   wwcsName: ' მოთამაშის სახელი: %i'
-  wwcInvalidTranslator: არასწორი თარჯიმანი პარამეტრები. გთხოვთ, დააფიქსიროთ ეს თქვენი
-    config.yml ან /wwcc გამოიყენოთ ეს მოდული.
   wwcsAttemptedTranslations: ' თარგმანების მცდელობა: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon საიდუმლო გასაღები
     კომპლექტი წარმატებით.'
@@ -256,3 +254,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' სამიზნე წიგნის თარგმნა ვერ მოხერხდა.'
   wwcBookTranslateTitleFail: ' წიგნის სათაურის თარგმნა ვერ მოხერხდა.'
   wwcChatTranslationFail: ' ვერ მოხერხდა თქვენი წერილის თარგმნა.'
+  wwcInvalidTranslator: ' არასწორი თარჯიმანი პარამეტრები. გთხოვთ, დააფიქსიროთ ეს თქვენი
+    config.yml ან /wwcc გამოიყენოთ ეს მოდული.'
+  wwcNotDoneLoading: ' WorldwideChat კვლავ ინიციალიზაციაა. გთხოვთ, სცადოთ ცოტა ხნის
+    წინ.'

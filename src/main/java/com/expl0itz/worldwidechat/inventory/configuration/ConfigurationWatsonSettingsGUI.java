@@ -1,5 +1,7 @@
 package com.expl0itz.worldwidechat.inventory.configuration;
 
+import java.io.IOException;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -87,14 +89,9 @@ public class ConfigurationWatsonSettingsGUI implements InventoryProvider {
 		WWCReload rel = new WWCReload(player, null, null, null);
 		contents.set(2, 4, ClickableItem.of(quitButton,
                 e -> {
-                	main.removePlayerUsingGUI(player);
+                	main.removePlayerUsingConfigurationGUI(player);
                 	player.closeInventory(); 
-                	Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
-                		@Override
-                		public void run() {
-                			rel.processCommand();
-                		}
-                });
+                	rel.processCommand();
         }));
 	}
 
@@ -119,30 +116,15 @@ public class ConfigurationWatsonSettingsGUI implements InventoryProvider {
 					    	TaskChain<?> chain = WorldwideChat.newSharedChain("enableWatson");
 					    	chain
 					    	    .sync(() -> {
+					    	    	main.removePlayerUsingConfigurationGUI(player);
 					    	        player.closeInventory();
 					    	    })
-					    	    .async(() -> {
+					    	    .asyncFirst(() -> {
+					    	    	boolean translatorStatus = false;
 					    	    	try {
 									    WatsonTranslation testConnection = new WatsonTranslation(main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"), main.getConfigManager().getMainConfig().getString("Translator.watsonURL"));
 									    testConnection.initializeConnection();
-									    main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", true);
-									    main.getConfigManager().getMainConfig().set("Translator.useAmazonTranslate", false);
-									    main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate", false);
-									    main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-									    final TextComponent successfulChange = Component.text()
-								                .append(main.getPluginPrefix().asComponent())
-								                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationTranslatorSuccess").replace("%i", "IBM Watson")).color(NamedTextColor.GREEN))
-								                .build();
-								            Audience adventureSender = main.adventure().sender(player);
-								        adventureSender.sendMessage(successfulChange);
-								        main.getLogger().info(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationConsoleTranslatorSuccess").replace("%i", player.getName()).replace("%o", "IBM Watson"));
-								        WWCReload rel = new WWCReload(player, null, null, null);
-								        Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
-					                		@Override
-					                		public void run() {
-					                			rel.processCommand();
-					                		}
-					                });
+									    translatorStatus = true;
 									} catch (Exception bad) {
 										final TextComponent badResult = Component.text()
 									            .append(main.getPluginPrefix().asComponent())
@@ -153,9 +135,39 @@ public class ConfigurationWatsonSettingsGUI implements InventoryProvider {
 									    main.getLogger().severe(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationConsoleTranslatorFail").replace("%i", player.getName()).replace("%o", "IBM Watson"));
 									    bad.printStackTrace();
 									}
+					    	    	return translatorStatus;
+					    	    })
+					    	    .storeAsData("connectionStatus")
+					    	    .<Boolean>returnData("connectionStatus")
+					    	    .syncLast((connectionStatus) -> {
+					    	    	if (!connectionStatus) {
+					    	    		watsonSettings.open(player);
+					    	    		main.addPlayerUsingConfigurationGUI(player);
+					    	    		chain.abortChain();
+					    	    	}
 					    	    })
 					    	    .sync(() -> {
-					    	    	watsonSettings.open(player);
+					    	    	main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", true);
+								    main.getConfigManager().getMainConfig().set("Translator.useAmazonTranslate", false);
+								    main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate", false);
+								    try {
+										main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
+									} catch (IOException e1) {
+										e1.printStackTrace();
+									}
+					    	    })
+					    	    .async(() -> {
+					    	    	final TextComponent successfulChange = Component.text()
+							                .append(main.getPluginPrefix().asComponent())
+							                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationTranslatorSuccess").replace("%i", "IBM Watson")).color(NamedTextColor.GREEN))
+							                .build();
+							            Audience adventureSender = main.adventure().sender(player);
+							        adventureSender.sendMessage(successfulChange);
+							        main.getLogger().info(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationConsoleTranslatorSuccess").replace("%i", player.getName()).replace("%o", "IBM Watson"));
+					    	    })
+					    	    .sync(() -> {
+					    	    	WWCReload rel = new WWCReload(player, null, null, null);
+							        rel.processCommand();
 					    	    })
 					    	    .sync(TaskChain::abort)
 					    	    .execute();

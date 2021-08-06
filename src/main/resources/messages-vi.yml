@@ -168,8 +168,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Thay đổi khóa bí mật Amazon
   wwcVersion: ' WorldwideChat, phiên bản'
   wwcsName: ' Tên người chơi: %i'
-  wwcInvalidTranslator: Cài đặt dịch không hợp lệ. Vui lòng sửa lỗi này trong config.yml
-    của bạn hoặc với /wwccc để sử dụng plugin này.
   wwcsAttemptedTranslations: ' Bản dịch đã cố gắng: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon khóa bí mật thiết
     lập thành công.'
@@ -266,3 +264,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Không thể dịch sổ mục tiêu.'
   wwcBookTranslateTitleFail: ' Thất bại trong việc dịch tiêu đề sách.'
   wwcChatTranslationFail: ' Không dịch được thư của bạn.'
+  wwcInvalidTranslator: ' Cài đặt dịch không hợp lệ. Vui lòng sửa lỗi này trong config.yml
+    của bạn hoặc với /wwccc để sử dụng plugin này.'
+  wwcNotDoneLoading: ' WorldwideChat vẫn đang khởi tạo. Vui lòng thử lại ngay.'

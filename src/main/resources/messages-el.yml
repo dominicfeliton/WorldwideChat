@@ -177,8 +177,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Αλλαγή μυστικού κλειδιού Amazon
   wwcVersion: ' Παγκόσμια συνομιλία, έκδοση'
   wwcsName: ' Όνομα παίκτη: %i'
-  wwcInvalidTranslator: Μη έγκυρες ρυθμίσεις μεταφραστή. Διορθώστε το στο config.yml
-    ή στο /wwcc για να χρησιμοποιήσετε αυτό το πρόσθετο.
   wwcsAttemptedTranslations: ' Απόπειρα μεταφράσεων: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Το μυστικό κλειδί Amazon
     που με επιτυχία.'
@@ -280,3 +278,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Αποτυχία μετάφρασης βιβλίου προορισμού.'
   wwcBookTranslateTitleFail: ' Αποτυχία μετάφρασης τίτλου βιβλίου.'
   wwcChatTranslationFail: ' Απέτυχε η μετάφραση του μηνύματός σας.'
+  wwcInvalidTranslator: ' Μη έγκυρες ρυθμίσεις μεταφραστή. Διορθώστε το στο config.yml
+    ή στο /wwcc για να χρησιμοποιήσετε αυτό το πρόσθετο.'
+  wwcNotDoneLoading: ' Το WorldwideChat προετοιμάζεται ακόμα. Παρακαλώ προσπαθήστε
+    ξανά σύντομα.'

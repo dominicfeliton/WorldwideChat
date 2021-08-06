@@ -166,8 +166,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Mainīt Amazon slepeno atslēgu
   wwcVersion: ' WorldwideChat, versija'
   wwcsName: ' Spēlētāja vārds: %i'
-  wwcInvalidTranslator: Nederīgi tulkotāja iestatījumi. Lūdzu, salabojiet to savā
-    config.yml vai ar /wwcc, lai izmantotu šo spraudni.
   wwcsAttemptedTranslations: ' Tulkojumu mēģinājums: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon slepeno atslēgu komplekts
     veiksmīgi.'
@@ -258,3 +256,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Neizdevās tulkot mērķa grāmatu.'
   wwcBookTranslateTitleFail: ' Neizdevās tulkot grāmatas nosaukumu.'
   wwcChatTranslationFail: ' Neizdevās tulkot savu ziņojumu.'
+  wwcInvalidTranslator: ' Nederīgi tulkotāja iestatījumi. Lūdzu, salabojiet to savā
+    config.yml vai ar /wwcc, lai izmantotu šo spraudni.'
+  wwcNotDoneLoading: ' WorldwideChat joprojām inicializē. Lūdzu, mēģiniet vēlreiz
+    drīz.'

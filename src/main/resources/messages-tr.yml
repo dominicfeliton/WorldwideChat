@@ -159,8 +159,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon Gizli Anahtarını Değiştir
   wwcVersion: ' WorldwideChat, sürüm'
   wwcsName: ' Oyuncu Adı: %i'
-  wwcInvalidTranslator: Geçersiz çevirmen ayarları. Lütfen bu eklentiyi kullanmak
-    için config.yml veya /wwcc ile düzeltin.
   wwcsAttemptedTranslations: ' Deneme Çevirileri: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon gizli anahtar seti
     başarıyla.'
@@ -248,3 +246,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Hedef kitabın çevrilemedi.'
   wwcBookTranslateTitleFail: ' Kitap başlığı çevrilemedi.'
   wwcChatTranslationFail: ' Mesajınız çevrilemedi.'
+  wwcInvalidTranslator: ' Geçersiz çevirmen ayarları. Lütfen bu eklentiyi kullanmak
+    için config.yml veya /wwcc ile düzeltin.'
+  wwcNotDoneLoading: ' WorldwideChat hala başlatılıyor. Lütfen kısa bir süre sonra
+    tekrar deneyin.'

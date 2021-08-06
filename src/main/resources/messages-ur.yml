@@ -162,8 +162,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: ایمیزون خفیہ کلید تبدیل
   wwcVersion: ' ورلڈ وائڈ شاٹ، ورژن'
   wwcsName: ' کھلاڑی کا نام: %i'
-  wwcInvalidTranslator: غلط مترجم کی ترتیبات. براہ کرم اس پلگ ان کو استعمال کرنے کے
-    لئے اپنے config.yml میں یا /wwcc کے ساتھ ٹھیک کریں.
   wwcsAttemptedTranslations: ' تراجم کی کوشش کی گئی: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' ایمیزون خفیہ کلیدی سیٹ کامیابی
     سے.'
@@ -255,3 +253,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' ہدف کتاب کا ترجمہ کرنے میں ناکام رہا۔'
   wwcBookTranslateTitleFail: ' کتاب کے عنوان کا ترجمہ کرنے میں ناکام رہے۔'
   wwcChatTranslationFail: ' آپ کے پیغام کا ترجمہ کرنے میں ناکام رہا۔'
+  wwcInvalidTranslator: ' غلط مترجم کی ترتیبات. براہ کرم اس پلگ ان کو استعمال کرنے
+    کے لئے اپنے config.yml میں یا /wwcc کے ساتھ ٹھیک کریں.'
+  wwcNotDoneLoading: ' WorldwideChat اب بھی شروع کر رہا ہے. برائے مہربانی جلد ہی دوبارہ
+    کوشش کریں۔'

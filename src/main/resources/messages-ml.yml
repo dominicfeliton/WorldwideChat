@@ -170,8 +170,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: ആമസോൺ സീക്രട്ട് കീ മാറ്റുക
   wwcVersion: ' ചാറ്റ്, പതിപ്പ്'
   wwcsName: ' കളിക്കാരന്റെ പേര്: %i'
-  wwcInvalidTranslator: അസാധുവായ വിവർത്തകൻ ക്രമീകരണങ്ങൾ. ഈ പ്ലഗിൻ ഉപയോഗിക്കുന്നതിന്
-    നിങ്ങളുടെ കോൺഫിഗറേഷനിൽ അല്ലെങ്കിൽ /wwcc ഉപയോഗിച്ച് ഇത് പരിഹരിക്കുക.
   wwcsAttemptedTranslations: ' പരിഭാഷകൾ ശ്രമിച്ചു: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' ആമസോൺ രഹസ്യ കീ വിജയകരമായി
     വെച്ചു.'
@@ -264,3 +262,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' ലക്ഷ്യം പുസ്തകം വിവർത്തനം പരാജയപ്പെട്ടു.'
   wwcBookTranslateTitleFail: ' പുസ്തക തലക്കെട്ട് വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.'
   wwcChatTranslationFail: ' നിങ്ങളുടെ സന്ദേശം വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.'
+  wwcInvalidTranslator: ' അസാധുവായ വിവർത്തകൻ ക്രമീകരണങ്ങൾ. ഈ പ്ലഗിൻ ഉപയോഗിക്കുന്നതിന്
+    നിങ്ങളുടെ കോൺഫിഗറേഷനിൽ അല്ലെങ്കിൽ /wwcc ഉപയോഗിച്ച് ഇത് പരിഹരിക്കുക.'
+  wwcNotDoneLoading: ' ചാറ്റ് ഇപ്പോഴും സമാരംഭിച്ചു ആണ്. ദയവായി ഉടൻ വീണ്ടും ശ്രമിക്കുക.'

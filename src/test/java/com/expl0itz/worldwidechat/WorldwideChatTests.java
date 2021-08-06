@@ -70,11 +70,25 @@ public class WorldwideChatTests {
 		plugin.getPlayerRecords().clear();
 		plugin.getCache().clear();
 		reloadWWC();
+		try {
+			// Give the async thread a little bit to load before running more tests.
+			// Normally, in game the user would just be given a message saying that the plugin is not done loading.
+			// But since these tests don't like that output, we need this artificial delay on the server.
+			// A race condition could occur where the 100 ms delay isn't enough for the async translator load process to finish,
+			// But if the host CPU/Storage/RAM/whatever is so dogshit that it takes more than 100 ms to access a local, fake translator class,
+			// We should get a better computer. Or raise the wait time if you want to deal with that kind of pain and misery.
+			// Also synchronized block because we need to get the lock of the obj,
+			// Otherwise IllegalMonitorStateException: current thread is not owner :(
+			synchronized (server) {
+				server.wait(100);
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void reloadWWC() {
-		plugin.cancelBackgroundTasks();
-		plugin.loadPluginConfigs();
+		plugin.reload();
 	}
 	
 	/* Command Tests */

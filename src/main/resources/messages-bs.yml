@@ -164,8 +164,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Promijeni Amazon tajni ključ
   wwcVersion: ' WorldwideChat, verzija'
   wwcsName: ' Ime igrača: %i'
-  wwcInvalidTranslator: Nevažeća podešavanja prevoditelja. Molimo vas da to popravite
-    u svoj config.yml ili s /wwcc koristiti ovaj dodatak.
   wwcsAttemptedTranslations: ' Pokušaj prijevoda: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon tajni ključ postavljen
     uspješno.'
@@ -258,3 +256,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Nije uspjelo prevesti ciljnu knjigu.'
   wwcBookTranslateTitleFail: ' Nije uspjelo prevesti naslov knjige.'
   wwcChatTranslationFail: ' Nije uspjelo prevesti poruku.'
+  wwcInvalidTranslator: ' Nevažeća podešavanja prevoditelja. Molimo vas da to popravite
+    u svoj config.yml ili s /wwcc koristiti ovaj dodatak.'
+  wwcNotDoneLoading: ' WorldwideChat još uvijek inicijalizira. Pokušajte ponovo uskoro.'

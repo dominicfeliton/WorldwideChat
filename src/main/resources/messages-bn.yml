@@ -163,8 +163,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: আমাজন গোপন কী পরিবর্তন করুন
   wwcVersion: ' ওয়ার্ল্ডউইডচ্যাট, সংস্করণ'
   wwcsName: ' খেলোয়াড়ের নাম: %i'
-  wwcInvalidTranslator: অনুবাদক সেটিংস অবৈধ। এই প্লাগইনটি ব্যবহার করার জন্য অনুগ্রহ
-    করে আপনার config.yml অথবা /wwcc এর সাথে এটি ঠিক করুন।
   wwcsAttemptedTranslations: ' অনুবাদের চেষ্টা করা হয়েছে: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' ইসলাম গোপন কী সেট সফলভাবে'
   wwcConfigConversationWatsonAPIKeySuccess: ' ওয়াটসন API কী সেট সফলভাবে'
@@ -252,3 +250,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' টার্গেট বই অনুবাদ করতে ব্যর্থ।'
   wwcBookTranslateTitleFail: ' বইয়ের শিরোনাম অনুবাদ করতে ব্যর্থ।'
   wwcChatTranslationFail: ' আপনার বার্তা অনুবাদ করতে ব্যর্থ।'
+  wwcInvalidTranslator: ' অনুবাদক সেটিংস অবৈধ। এই প্লাগইনটি ব্যবহার করার জন্য অনুগ্রহ
+    করে আপনার config.yml অথবা /wwcc এর সাথে এটি ঠিক করুন।'
+  wwcNotDoneLoading: ' ওয়ার্ল্ডউইডচ্যাট এখনও শুরু হচ্ছে। দয়া করে খুব শীঘ্রই আবার
+    চেষ্টা করুন।'

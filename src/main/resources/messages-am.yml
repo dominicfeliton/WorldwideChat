@@ -149,8 +149,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: የአማዞን ሚስጥራዊ ቁልፍ ይቀይሩ
   wwcVersion: ' የዓለም አቀፍ ዊዲቻት፣ ስሪት'
   wwcsName: ' የተጫዋች ስም: %i'
-  wwcInvalidTranslator: ልክ ያልሆነ ተርጓሚ ቅንብሮች። እባክዎ ይህን ፕለጊን ለመጠቀም በ config.yml ወይም በ
-    /wwcc ውስጥ ያስተካክሉት።
   wwcsAttemptedTranslations: ' የተሞክሩ ትርጉሞች: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' የአማዞን ሚስጥር ቁልፍ በተሳካ ሁኔታ
     ተዘጋጅቷል'
@@ -228,3 +226,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' የዒላማ መጽሐፍ መተርጎም አልተቻለም'
   wwcBookTranslateTitleFail: ' የመጽሐፍ ርዕስ መተርጎም አልተሳካም'
   wwcChatTranslationFail: ' መልዕክትዎን መተርጎም አልተሳካም።'
+  wwcInvalidTranslator: ' ልክ ያልሆነ ተርጓሚ ቅንብሮች። እባክዎ ይህን ፕለጊን ለመጠቀም በ config.yml ወይም
+    በ /wwcc ውስጥ ያስተካክሉት።'
+  wwcNotDoneLoading: ' WorldwideChat አሁንም እየተነቃነቀ ነው። እባክዎ በአጭር ጊዜ እንደገና ይሞክሩ።'

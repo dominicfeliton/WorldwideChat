@@ -163,8 +163,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: mabadiliko ya siri Amazon
   wwcVersion: ' WorldwideChat, toleo'
   wwcsName: ' Jina la Mchezaji: %i'
-  wwcInvalidTranslator: Mipangilio ya msanii batili. Tafadhali tengeneza hii katika
-    config.yml yako au na/wwcc kutumia Plugin hii.
   wwcsAttemptedTranslations: ' Tafsiri zilizojaribiwa: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon siri muhimu kuweka
     mafanikio.'
@@ -252,3 +250,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Imeshindwa kutafsiri lengo kitabu.'
   wwcBookTranslateTitleFail: ' Imeshindwa kutafsiri kichwa cha kitabu.'
   wwcChatTranslationFail: ' Imeshindwa kutafsiri ujumbe wako.'
+  wwcInvalidTranslator: ' Mipangilio ya msanii batili. Tafadhali tengeneza hii katika
+    config.yml yako au na/wwcc kutumia Plugin hii.'
+  wwcNotDoneLoading: ' WorldwideChat bado inaanzisha. Tafadhali jaribu tena muda mfupi.'

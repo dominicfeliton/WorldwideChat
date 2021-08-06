@@ -155,8 +155,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: تغيير مفتاح الأمازون السري
   wwcVersion: ' وورلدويدتشات، الإصدار'
   wwcsName: ' اسم اللاعب: %i'
-  wwcInvalidTranslator: إعدادات المترجم غير صالحة. يرجى إصلاح هذا في config.yml الخاص
-    بك أو مع/wwcc لاستخدام هذا البرنامج المساعد.
   wwcsAttemptedTranslations: ' محاولات الترجمات: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' الأمازون مجموعة المفاتيح
     السرية بنجاح.'
@@ -239,3 +237,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' فشل ترجمة الكتاب المستهدف.'
   wwcBookTranslateTitleFail: ' فشل ترجمة عنوان الكتاب.'
   wwcChatTranslationFail: ' فشلت ترجمة رسالتك.'
+  wwcInvalidTranslator: ' إعدادات المترجم غير صالحة. يرجى إصلاح هذا في config.yml
+    الخاص بك أو مع/wwcc لاستخدام هذا البرنامج المساعد.'
+  wwcNotDoneLoading: ' لا تزال WorldwideChat في مرحلة التهيئة. يرجى المحاولة مرة
+    أخرى قريبًا.'

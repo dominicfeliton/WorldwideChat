@@ -167,8 +167,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Промяна на таен ключ на Ама
   wwcVersion: ' WorldwideChat, версия'
   wwcsName: ' Име на играча: %i'
-  wwcInvalidTranslator: Невалидни настройки на преводача. Моля, поправете това във
-    вашия config.yml или с /wwcc, за да използвате този плъгин.
   wwcsAttemptedTranslations: ' Опит за превод: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Амазонка таен ключ набор
     успешно.'
@@ -263,3 +261,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Неуспешно превеждане на целевата книга.'
   wwcBookTranslateTitleFail: ' Неуспешно превеждане на заглавието на книгата.'
   wwcChatTranslationFail: ' Неуспешно превеждане на съобщението.'
+  wwcInvalidTranslator: ' Невалидни настройки на преводача. Моля, поправете това във
+    вашия config.yml или с /wwcc, за да използвате този плъгин.'
+  wwcNotDoneLoading: ' WorldwideChat все още инициализира. Моля, опитайте отново скоро.'

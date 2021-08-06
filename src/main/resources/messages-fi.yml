@@ -165,8 +165,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Vaihda Amazonin salainen avain
   wwcVersion: ' WorldwideChat, versio'
   wwcsName: ' Pelaajan nimi: %i'
-  wwcInvalidTranslator: Kääntäjän asetukset eivät kelpaa. Korjaa tämä config.yml tai
-    /wwcc käyttää tätä plugin.
   wwcsAttemptedTranslations: ' Käännösyritykset: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazonin salainen avain
     asetettu onnistuneesti.'
@@ -259,3 +257,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Kohdekirjan kääntäminen epäonnistui.'
   wwcBookTranslateTitleFail: ' Kirjan nimen kääntäminen epäonnistui.'
   wwcChatTranslationFail: ' Viestin kääntäminen epäonnistui.'
+  wwcInvalidTranslator: ' Kääntäjän asetukset eivät kelpaa. Korjaa tämä config.yml
+    tai /wwcc käyttää tätä plugin.'
+  wwcNotDoneLoading: ' WorldwideChat alustaa edelleen. Yritä pian uudelleen.'

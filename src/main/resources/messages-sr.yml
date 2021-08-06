@@ -162,8 +162,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Promena Amazon Secret Kei
   wwcVersion: ' VorldVideChat, verzija'
   wwcsName: ' Ime plejera: %i'
-  wwcInvalidTranslator: Nevažeća podešavanja prevodioca. Molimo vas da popravite ovo
-    u konfiguraciju.iml ili sa /vvcc da koristite ovaj dodatak.
   wwcsAttemptedTranslations: ' Pokušaj prevoda: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon tajni ključ set uspešno.'
   wwcConfigConversationWatsonAPIKeySuccess: ' Vatson API ključ set uspešno.'
@@ -252,3 +250,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Nije uspelo prevesti ciljnu knjigu.'
   wwcBookTranslateTitleFail: ' Nije uspelo prevesti naslov knjige.'
   wwcChatTranslationFail: ' Nije uspjelo prevesti poruku.'
+  wwcInvalidTranslator: ' Nevažeća podešavanja prevodioca. Molimo vas da popravite
+    ovo u konfiguraciju.iml ili sa /vvcc da koristite ovaj dodatak.'
+  wwcNotDoneLoading: ' VorldVideChat još uvek inicijalizuje. Pokušajte ponovo uskoro.'

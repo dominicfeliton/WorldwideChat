@@ -163,8 +163,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: అమెజాన్ సీక్రెట్ కీ మార్చండి
   wwcVersion: ' ప్రపంచవ్యాప్తచాట్, వెర్షన్'
   wwcsName: ' ప్లేయర్ పేరు: %i'
-  wwcInvalidTranslator: చెల్లని అనువాదకుడు సెట్టింగులు. ఈ ప్లగ్ఇన్ ఉపయోగించడానికి
-    మీ config.yml లేదా /wwcc తో ఈ పరిష్కరించడానికి దయచేసి.
   wwcsAttemptedTranslations: ' ప్రయత్నించిన అనువాదాలు: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' అమెజాన్ రహస్య కీ విజయవంతంగా
     సెట్.'
@@ -256,3 +254,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' లక్ష్యం పుస్తకం అనువదించడానికి విఫలమైంది.'
   wwcBookTranslateTitleFail: ' పుస్తక శీర్షికను అనువదించడంలో విఫలమైంది.'
   wwcChatTranslationFail: ' మీ సందేశాన్ని అనువదించడానికి విఫలమైంది.'
+  wwcInvalidTranslator: ' చెల్లని అనువాదకుడు సెట్టింగులు. ఈ ప్లగ్ఇన్ ఉపయోగించడానికి
+    మీ config.yml లేదా /wwcc తో ఈ పరిష్కరించడానికి దయచేసి.'
+  wwcNotDoneLoading: ' ప్రపంచవ్యాప్తం చాట్ ఇప్పటికీ ప్రారంభిస్తోంది. దయచేసి త్వరలో
+    మళ్ళీ ప్రయత్నించండి.'

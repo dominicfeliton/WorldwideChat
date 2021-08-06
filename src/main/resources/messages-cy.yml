@@ -167,8 +167,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Newid Amazon Secret Allweddol
   wwcVersion: ' WorldwideChat, fersiwn'
   wwcsName: ' Chwaraewr Enw: %i'
-  wwcInvalidTranslator: Gosodiadau cyfieithydd annilys. Os gwelwch yn dda atgyweiria
-    hon yn eich config.yml neu gyda/wwcc i ddefnyddio\'r ategyn hwn.
   wwcsAttemptedTranslations: ' Cyfieithiadau Ceisio: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon set allweddol gyfrinach
     yn llwyddiannus.'
@@ -261,3 +259,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Methu cyfieithu\''r llyfr targed.'
   wwcBookTranslateTitleFail: ' Methu cyfieithu teitl llyfr.'
   wwcChatTranslationFail: ' Methwyd â chyfieithu eich neges.'
+  wwcInvalidTranslator: ' Gosodiadau cyfieithydd annilys. Os gwelwch yn dda atgyweiria
+    hon yn eich config.yml neu gyda/wwcc i ddefnyddio\''r ategyn hwn.'
+  wwcNotDoneLoading: ' Mae WorldwideChat yn dal i ymgychwyn. Ceisiwch eto cyn bo hir.'

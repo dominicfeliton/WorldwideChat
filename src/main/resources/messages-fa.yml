@@ -162,8 +162,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: تغییر کلید راز آمازون
   wwcVersion: ' ورلد ویچت، نسخه'
   wwcsName: ' نام بازیکن: %i'
-  wwcInvalidTranslator: تنظیمات مترجم نامعتبر. لطفا این را در config.yml خود یا با
-    /wwcc برای استفاده از این افزونه رفع کنید.
   wwcsAttemptedTranslations: ' اقدام به ترجمه: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' آمازون کلید مخفی مجموعه
     با موفقیت.'
@@ -251,3 +249,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' ترجمه کتاب هدف ناموفق بود.'
   wwcBookTranslateTitleFail: ' ترجمه عنوان کتاب شکست خورد.'
   wwcChatTranslationFail: ' در ترجمه پیام شما ناموفق بود.'
+  wwcInvalidTranslator: ' تنظیمات مترجم نامعتبر. لطفا این را در config.yml خود یا
+    با /wwcc برای استفاده از این افزونه رفع کنید.'
+  wwcNotDoneLoading: ' WorldwideChat هنوز در حال مقداردهی اولیه است. لطفا به زودی
+    دوباره امتحان کنید.'

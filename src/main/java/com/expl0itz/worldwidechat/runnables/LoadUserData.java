@@ -3,6 +3,7 @@ package com.expl0itz.worldwidechat.runnables;
 import java.io.File;
 import java.io.IOException;
 
+import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.threeten.bp.Instant;
@@ -97,5 +98,6 @@ public class LoadUserData implements Runnable {
         } if (invalidConfigs > 0) {
             main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataCorrupted").replace("%i", invalidConfigs + ""));
         }
+        main.getLogger().info(ChatColor.LIGHT_PURPLE + main.getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
     }
 }

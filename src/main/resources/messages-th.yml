@@ -149,8 +149,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: เปลี่ยนคีย์ลับอเมซอน
   wwcVersion: ' เวิลด์ไวด์แชท, เวอร์ชั่น'
   wwcsName: ' ชื่อผู้เล่น: %i'
-  wwcInvalidTranslator: การตั้งค่าตัวแปลไม่ถูกต้องโปรดแก้ไขปัญหานี้ใน config.yml ของคุณหรือกับ
-    /wwcc เพื่อใช้ปลั๊กอินนี้
   wwcsAttemptedTranslations: ' พยายามแปล: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' ชุดคีย์ลับ Amazon เรียบร้อยแล้ว'
   wwcConfigConversationWatsonAPIKeySuccess: ' ชุดคีย์ Watson API เรียบร้อยแล้ว'
@@ -230,3 +228,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' ล้มเหลวในการแปลหนังสือเป้าหมาย'
   wwcBookTranslateTitleFail: ' ล้มเหลวในการแปลชื่อหนังสือ'
   wwcChatTranslationFail: ' ล้มเหลวในการแปลข้อความของคุณ'
+  wwcInvalidTranslator: ' การตั้งค่าตัวแปลไม่ถูกต้องโปรดแก้ไขปัญหานี้ใน config.yml
+    ของคุณหรือกับ /wwcc เพื่อใช้ปลั๊กอินนี้'
+  wwcNotDoneLoading: ' WorldwideChat ยังคงเริ่มต้นอยู่โปรดลองใหม่อีกครั้งในไม่ช้า'

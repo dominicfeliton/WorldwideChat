@@ -16,9 +16,12 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
+import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.JavaPluginLoader;
+import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scheduler.BukkitTask;
 
 import com.expl0itz.worldwidechat.commands.WWCConfiguration;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
@@ -84,11 +87,10 @@ public class WorldwideChat extends JavaPlugin {
 
     private boolean enablebStats = true;
     private boolean outOfDate = false;
-    private boolean isReloading = false;
 
     private String pluginPrefixString = "WWC";
     private String pluginLang = "en";
-    private String translatorName = "Invalid";
+    private String translatorName = "Starting";
 
     /* Default constructor */
     public WorldwideChat() {
@@ -134,27 +136,24 @@ public class WorldwideChat extends JavaPlugin {
         registerGlowEffect(); //Register inventory glow effect
         
         //Load plugin configs, check if they successfully initialized
-        if (loadPluginConfigs()) {
-            //Check current server version
-            checkMCVersion();
-            
-            //EventHandlers + check for plugins
-        	if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) { //DeluxeChat is incompatible as of v1.3
-                //getServer().getPluginManager().registerEvents(new DeluxeChatListener(), this);
-                getLogger().warning(getConfigManager().getMessagesConfig().getString("Messages.wwcDeluxeChatIncompatible"));
-            }
-			getServer().getPluginManager().registerEvents(new ChatListener(), this); 
-			getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
-			getServer().getPluginManager().registerEvents(new TranslateInGameListener(), this);
-			getServer().getPluginManager().registerEvents(new InventoryListener(), this);
-            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
-            
-            //We made it!
-            getLogger().info(ChatColor.GREEN + getConfigManager().getMessagesConfig().getString("Messages.wwcEnabled").replace("%i", pluginVersion + ""));
-        } else { //Config init failed
-            getLogger().severe(ChatColor.RED + getConfigManager().getMessagesConfig().getString("Messages.wwcInitializationFail").replace("%o", translatorName));
-            getServer().getPluginManager().disablePlugin(this);
+        loadPluginConfigs();
+        
+        //Check current server version
+        checkMCVersion();
+        
+        //EventHandlers + check for plugins
+    	if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) { //DeluxeChat is incompatible as of v1.3
+            //getServer().getPluginManager().registerEvents(new DeluxeChatListener(), this);
+            getLogger().warning(getConfigManager().getMessagesConfig().getString("Messages.wwcDeluxeChatIncompatible"));
         }
+		getServer().getPluginManager().registerEvents(new ChatListener(), this); 
+		getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
+		getServer().getPluginManager().registerEvents(new TranslateInGameListener(), this);
+		getServer().getPluginManager().registerEvents(new InventoryListener(), this);
+        getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcListenersInitialized"));
+        
+        //We made it!
+        getLogger().info(ChatColor.GREEN + getConfigManager().getMessagesConfig().getString("Messages.wwcEnabled").replace("%i", pluginVersion + ""));
     }
 
     @Override
@@ -162,8 +161,10 @@ public class WorldwideChat extends JavaPlugin {
         //Cleanly cancel/reset all background tasks (runnables, timers, vars, etc.)
         cancelBackgroundTasks();
         
+        //Unregister listeners
+        HandlerList.unregisterAll(this);
+        
         //Set static vars to null
-        taskChainFactory.shutdown(0, TimeUnit.SECONDS);
         if(this.adventure != null) {
             this.adventure.close();
             this.adventure = null;
@@ -179,116 +180,119 @@ public class WorldwideChat extends JavaPlugin {
     
     /* Init all commands */
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-    	if (!isReloading) {
-    		if (command.getName().equalsIgnoreCase("wwc")) {
-                //WWC version
-                final TextComponent versionNotice = Component.text()
-                    .append(pluginPrefix.asComponent())
-                    .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcVersion")).color(NamedTextColor.RED))
-                    .append(Component.text().content(" " + pluginVersion).color(NamedTextColor.LIGHT_PURPLE))
-                    .build();
-                Audience adventureSender = adventure.sender(sender);
-                adventureSender.sendMessage(versionNotice);
-            } else if (command.getName().equalsIgnoreCase("wwcr")) {
-                //Reload command
-                WWCReload wwcr = new WWCReload(sender, command, label, args);
-                return wwcr.processCommand();
-            } else if (command.getName().equalsIgnoreCase("wwcg") && hasValidTranslatorSettings(sender)) {
-                //Global translation
-                if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-                    WWCGlobal wwcg = new WWCGlobal(sender, command, label, args);
-                    return wwcg.processCommand();
-                }
-            } else if (command.getName().equalsIgnoreCase("wwct") && hasValidTranslatorSettings(sender)) {
-                //Per player translation
-                if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-                    WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
-                    return wwct.processCommand(false);
-                }
-            } else if (command.getName().equalsIgnoreCase("wwctb") && hasValidTranslatorSettings(sender)) {
-                //Book translation
-                if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-                    WWCTranslateBook wwctb = new WWCTranslateBook(sender, command, label, args);
-                    return wwctb.processCommand();
-                }
-            } else if (command.getName().equalsIgnoreCase("wwcts") && hasValidTranslatorSettings(sender)) {
-                //Sign translation
-                if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-                    WWCTranslateSign wwcts = new WWCTranslateSign(sender, command, label, args);
-                    return wwcts.processCommand();
-                }
-            } else if (command.getName().equalsIgnoreCase("wwcti") && hasValidTranslatorSettings(sender)) {
-                //Item translation
-                if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-                    WWCTranslateItem wwcti = new WWCTranslateItem(sender, command, label, args);
-                    return wwcti.processCommand();
-                }
-            } else if (command.getName().equalsIgnoreCase("wwcs")) {
-                //Stats for translator
-                WWCStats wwcs = new WWCStats(sender, command, label, args);
-                return wwcs.processCommand();
-            } else if (command.getName().equalsIgnoreCase("wwcc")) {
-            	//Configuration GUI
-            	if (checkSenderIdentity(sender)) {
-            		WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
-            		return wwcc.processCommand();
-            	}
-            } else if (command.getName().equalsIgnoreCase("wwctrl")) {
-            	//Rate Limit Command
-            	if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-            		WWCTranslateRateLimit wwctrl = new WWCTranslateRateLimit(sender, command, label, args);
-            		return wwctrl.processCommand();
-            	}
+    	if (command.getName().equalsIgnoreCase("wwc")) {
+            //WWC version
+            final TextComponent versionNotice = Component.text()
+                .append(pluginPrefix.asComponent())
+                .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcVersion")).color(NamedTextColor.RED))
+                .append(Component.text().content(" " + pluginVersion).color(NamedTextColor.LIGHT_PURPLE))
+                .build();
+            Audience adventureSender = adventure.sender(sender);
+            adventureSender.sendMessage(versionNotice);
+        //TODO: DONT RUN /WWCR UNTIL PLUGIN IS COMPLETELY LOADED.
+        } else if (command.getName().equalsIgnoreCase("wwcr") && !translatorName.equals("Starting")) {
+            //Reload command
+            WWCReload wwcr = new WWCReload(sender, command, label, args);
+            return wwcr.processCommand();
+        } else if (command.getName().equalsIgnoreCase("wwcg") && hasValidTranslatorSettings(sender)) {
+            //Global translation
+            if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
+                WWCGlobal wwcg = new WWCGlobal(sender, command, label, args);
+                return wwcg.processCommand();
             }
-    	}
+        } else if (command.getName().equalsIgnoreCase("wwct") && hasValidTranslatorSettings(sender)) {
+            //Per player translation
+            if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
+                WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
+                return wwct.processCommand(false);
+            }
+        } else if (command.getName().equalsIgnoreCase("wwctb") && hasValidTranslatorSettings(sender)) {
+            //Book translation
+            if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
+                WWCTranslateBook wwctb = new WWCTranslateBook(sender, command, label, args);
+                return wwctb.processCommand();
+            }
+        } else if (command.getName().equalsIgnoreCase("wwcts") && hasValidTranslatorSettings(sender)) {
+            //Sign translation
+            if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
+                WWCTranslateSign wwcts = new WWCTranslateSign(sender, command, label, args);
+                return wwcts.processCommand();
+            }
+        } else if (command.getName().equalsIgnoreCase("wwcti") && hasValidTranslatorSettings(sender)) {
+            //Item translation
+            if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
+                WWCTranslateItem wwcti = new WWCTranslateItem(sender, command, label, args);
+                return wwcti.processCommand();
+            }
+        } else if (command.getName().equalsIgnoreCase("wwcs")) {
+            //Stats for translator
+            WWCStats wwcs = new WWCStats(sender, command, label, args);
+            return wwcs.processCommand();
+        } else if (command.getName().equalsIgnoreCase("wwcc")) {
+        	//Configuration GUI
+        	if (checkSenderIdentity(sender)) {
+        		WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
+        		return wwcc.processCommand();
+        	}
+        } else if (command.getName().equalsIgnoreCase("wwctrl")) {
+        	//Rate Limit Command
+        	if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
+        		WWCTranslateRateLimit wwctrl = new WWCTranslateRateLimit(sender, command, label, args);
+        		return wwctrl.processCommand();
+        	}
+        }
         return true;
     }
     
-    /* (Re)load Plugin Method */
-    public boolean loadPluginConfigs() {
-        setConfigManager(new ConfigurationHandler());
-        //init main config, then init messages config, then load main settings
+    /* Easy Reload Method */
+    public void reload() {
+    	translatorName = "Starting";
+    	cancelBackgroundTasks();
+    	loadPluginConfigs();
+    }
+    
+    /* Load Plugin Configs */
+    public void loadPluginConfigs() {
+    	setConfigManager(new ConfigurationHandler());
+    	
+    	//init main config, then init messages config, then load main settings
         getConfigManager().initMainConfig();
         getConfigManager().initMessagesConfig();
-        if (getConfigManager().loadMainSettings()) { //now load settings
-        	//If translator is invalid
-        	if (getTranslatorName().equals("Invalid")) {
-        		getLogger().severe(getConfigManager().getMessagesConfig().getString("Messages.wwcInvalidTranslator"));
-        	} else {
-        		getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConnectionSuccess").replace("%o", translatorName));
+        getConfigManager().loadMainSettings();
+        new BukkitRunnable() {
+        	@Override
+        	public void run() {
+        		getConfigManager().loadTranslatorSettings();
+        		/* Run tasks after translator loaded */
+                //Check for updates
+                Bukkit.getScheduler().runTaskTimerAsynchronously(instance, new UpdateChecker(), 0, getUpdateCheckerDelay()*20); //Run update checker now
+                
+                //Load saved user data
+                Bukkit.getScheduler().runTaskAsynchronously(instance, new LoadUserData());
+                
+                //Schedule automatic user data sync
+                Bukkit.getScheduler().runTaskTimerAsynchronously(instance, new SyncUserData(), getSyncUserDataDelay()*20, getSyncUserDataDelay()*20);
         	}
-        	
-        	//Check for updates
-            Bukkit.getScheduler().runTaskTimerAsynchronously(this, new UpdateChecker(), 0, getUpdateCheckerDelay()*20); //Run update checker now
-            
-            //Load saved user data
-            Bukkit.getScheduler().runTaskAsynchronously(this, new LoadUserData());
-            
-            //Schedule automatic user data sync
-            Bukkit.getScheduler().runTaskTimerAsynchronously(this, new SyncUserData(), syncUserDataDelay*20, syncUserDataDelay*20);
-            
-            //Register tab completers
-            getCommand("wwcg").setTabCompleter(new WWCTabCompleter());
-            getCommand("wwct").setTabCompleter(new WWCTabCompleter());
-            getCommand("wwcti").setTabCompleter(new WWCTabCompleter());
-            getCommand("wwctb").setTabCompleter(new WWCTabCompleter());
-            getCommand("wwcts").setTabCompleter(new WWCTabCompleter());
-            getCommand("wwcs").setTabCompleter(new WWCTabCompleter());
-            getCommand("wwctrl").setTabCompleter(new WWCTabCompleter());
-            getCommand("wwc").setTabCompleter(new WWCTabCompleter());
-            getCommand("wwcr").setTabCompleter(new WWCTabCompleter());
-            getCommand("wwcc").setTabCompleter(new WWCTabCompleter());
-            
-            getLogger().info(ChatColor.LIGHT_PURPLE + getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
-            return true;
-        }
-        return false;
+        }.runTaskAsynchronously(this);
+        
+    	//Register tab completers
+        getCommand("wwcg").setTabCompleter(new WWCTabCompleter());
+        getCommand("wwct").setTabCompleter(new WWCTabCompleter());
+        getCommand("wwcti").setTabCompleter(new WWCTabCompleter());
+        getCommand("wwctb").setTabCompleter(new WWCTabCompleter());
+        getCommand("wwcts").setTabCompleter(new WWCTabCompleter());
+        getCommand("wwcs").setTabCompleter(new WWCTabCompleter());
+        getCommand("wwctrl").setTabCompleter(new WWCTabCompleter());
+        getCommand("wwc").setTabCompleter(new WWCTabCompleter());
+        getCommand("wwcr").setTabCompleter(new WWCTabCompleter());
+        getCommand("wwcc").setTabCompleter(new WWCTabCompleter());
     }
     
     public void cancelBackgroundTasks() {
-    	//Cancel + remove all tasks
+    	//Cancel + remove all tasks, chains
     	this.getServer().getScheduler().cancelTasks(this);
-        
+    	taskChainFactory.shutdown(5, TimeUnit.SECONDS);
+    	
         //Close all active GUIs
         playersUsingConfigurationGUI.clear();
         for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
@@ -347,10 +351,17 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     public boolean hasValidTranslatorSettings(CommandSender sender) {
-    	if (getTranslatorName().equals("Invalid")) {
+    	if (getTranslatorName().equals("Starting")) {
+    		final TextComponent notDone = Component.text()
+                    .append(pluginPrefix.asComponent())
+                    .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcNotDoneLoading")).color(NamedTextColor.YELLOW))
+                    .build();
+                Audience adventureSender = adventure.sender(sender);
+                adventureSender.sendMessage(notDone);
+    		return false;
+    	} else if (getTranslatorName().equals("Invalid")) {
     		final TextComponent invalid = Component.text()
                     .append(pluginPrefix.asComponent())
-                    .append(Component.text().content(" "))
                     .append(Component.text().content(getConfigManager().getMessagesConfig().getString("Messages.wwcInvalidTranslator")).color(NamedTextColor.RED))
                     .build();
                 Audience adventureSender = adventure.sender(sender);
@@ -398,7 +409,7 @@ public class WorldwideChat extends JavaPlugin {
     	}
     }
     
-    public void removePlayerUsingGUI(Player p) {
+    public void removePlayerUsingConfigurationGUI(Player p) {
     	playersUsingConfigurationGUI.remove(p);
     }
     
@@ -467,7 +478,7 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public void setTranslatorName(String i) {
-        translatorName = i;
+		translatorName = i;
     }
     
     public void setbStats(boolean i) {
@@ -476,10 +487,6 @@ public class WorldwideChat extends JavaPlugin {
     
     public void setOutOfDate(boolean i) {
         outOfDate = i;
-    }
-    
-    public void setReloading(boolean i) {
-    	isReloading = i;
     }
     
     /* Getters */
@@ -551,7 +558,7 @@ public class WorldwideChat extends JavaPlugin {
     }
     
     public String getTranslatorName() {
-        return translatorName;
+    	return translatorName;
     }
 
     public boolean getbStats() {
@@ -560,10 +567,6 @@ public class WorldwideChat extends JavaPlugin {
     
     public boolean getOutOfDate() {
         return outOfDate;
-    }
-    
-    public boolean isReloading() {
-    	return isReloading;
     }
     
     public double getPluginVersion() {

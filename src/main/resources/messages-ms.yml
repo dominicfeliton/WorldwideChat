@@ -168,8 +168,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Ubah Kunci Rahsia Amazon
   wwcVersion: ' WorldwideChat, versi'
   wwcsName: ' Nama Pemain: %i'
-  wwcInvalidTranslator: Tetapan penterjemah tidak sah. Sila betulkan ini dalam config.yml
-    anda atau dengan /wwcc untuk guna pemalam ini.
   wwcsAttemptedTranslations: ' Percubaan Terjemahan: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Kunci rahsia Amazon berjaya
     ditetapkan.'
@@ -265,3 +263,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Gagal menterjemahkan buku sasaran.'
   wwcBookTranslateTitleFail: ' Gagal menterjemahkan tajuk buku.'
   wwcChatTranslationFail: ' Gagal menterjemahkan mesej anda.'
+  wwcInvalidTranslator: ' Tetapan penterjemah tidak sah. Sila betulkan ini dalam config.yml
+    anda atau dengan /wwcc untuk guna pemalam ini.'
+  wwcNotDoneLoading: ' WorldWidChat masih memulakan. Sila cuba lagi tidak lama lagi.'

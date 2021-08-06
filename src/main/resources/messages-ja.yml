@@ -138,7 +138,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon シークレットキーの変更
   wwcVersion: ' WorldwideChat、バージョン'
   wwcsName: ' プレイヤー名: %i'
-  wwcInvalidTranslator: トランスレータの設定が無効です。このプラグインを使用するには、config.ymlまたは/wwccでこれを修正してください。
   wwcsAttemptedTranslations: ' 試行された翻訳: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon シークレットキーが正常に設定されました。'
   wwcConfigConversationWatsonAPIKeySuccess: ' ワトソン API キーが正常に設定されました。'
@@ -210,3 +209,5 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' ターゲットブックの翻訳に失敗しました。'
   wwcBookTranslateTitleFail: ' 本のタイトルの翻訳に失敗しました。'
   wwcChatTranslationFail: ' メッセージの翻訳に失敗しました。'
+  wwcInvalidTranslator: ' トランスレータ設定が無効です。このプラグインを使用するには、config.yml または /wwcc でこれを修正してください。'
+  wwcNotDoneLoading: ' WorldwideChat はまだ初期化中です。しばらくしてからもう一度お試しください。'

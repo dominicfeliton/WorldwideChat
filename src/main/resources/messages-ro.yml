@@ -172,8 +172,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Schimbă cheia secretă Amazon
   wwcVersion: ' WorldwideChat, versiune'
   wwcsName: ' Numele jucătorului: %i'
-  wwcInvalidTranslator: Setări de traducător nevalide. Vă rugăm să remediați acest
-    lucru în config.yml sau cu /wwcc pentru a utiliza acest plugin.
   wwcsAttemptedTranslations: ' Tentative de traduceri: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Cheia secretă Amazon a fost
     stabilită cu succes.'
@@ -272,3 +270,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Nu a reușit să traducă cartea țintă.'
   wwcBookTranslateTitleFail: ' Nu a reușit să traducă titlul cărții.'
   wwcChatTranslationFail: ' Nu a reușit să traducă mesajul.'
+  wwcInvalidTranslator: ' Setări de traducător nevalide. Vă rugăm să remediați acest
+    lucru în config.yml sau cu /wwcc pentru a utiliza acest plugin.'
+  wwcNotDoneLoading: ' WorldwideChat este încă inițializarea. Vă rugăm să încercați
+    din nou în curând'

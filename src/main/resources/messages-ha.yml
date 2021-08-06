@@ -165,8 +165,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Canja Maɓallin Asirin Amazon
   wwcVersion: ' WorldwideChat, version'
   wwcsName: ' Sunan Dan wasa: %i'
-  wwcInvalidTranslator: Saitunan fassara mara inganci. Da fatan a gyara wannan a cikin
-    daidaitawa.yml ko tare da /wwcc don amfani da wannan plugin.
   wwcsAttemptedTranslations: ' Yunkurin Fassara: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Maɓallin asiri na Amazon
     ya kafa nasara.'
@@ -258,3 +256,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Kasa fassara littafin manufa.'
   wwcBookTranslateTitleFail: ' An kasa fassara taken littafin.'
   wwcChatTranslationFail: ' Kasa fassara sakonka.'
+  wwcInvalidTranslator: ' Saitunan fassara mara inganci. Da fatan a gyara wannan a
+    cikin daidaitawa.yml ko tare da /wwcc don amfani da wannan plugin.'
+  wwcNotDoneLoading: ' WideChat har yanzu yana farawa. Da fatan za a sake gwadawa
+    nan ba'

@@ -162,8 +162,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Chanje Amazon sekrè kle
   wwcVersion: ' WorldwideChat, vèsyon'
   wwcsName: ' Non jwè: % mwen'
-  wwcInvalidTranslator: Anviwònman tradiktè envalid. Tanpri ranje sa a nan config.yml
-    ou oswa ak/wwcc yo sèvi ak sa a Plugin.
   wwcsAttemptedTranslations: ' Tradiksyon eseye: % mwen'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon sekrè kle mete avèk
     siksè.'
@@ -248,3 +246,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Echwe pou pou tradwi liv sib.'
   wwcBookTranslateTitleFail: ' Echwe pou pou tradwi tit liv.'
   wwcChatTranslationFail: ' Echwe pou pou tradwi mesaj ou a.'
+  wwcInvalidTranslator: ' Anviwònman tradiktè envalid. Tanpri ranje sa a nan config.yml
+    ou oswa ak/wwcc yo sèvi ak sa a Plugin.'
+  wwcNotDoneLoading: ' WorldwideChat se toujou inisyalizin. Tanpri eseye ankò yon
+    ti tan.'

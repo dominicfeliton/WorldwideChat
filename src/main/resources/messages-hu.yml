@@ -171,8 +171,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon titkos kulcs megváltoztatása
   wwcVersion: ' WorldwideChat, változat'
   wwcsName: ' Játékos neve: %i'
-  wwcInvalidTranslator: Érvénytelen fordítói beállítások. Kérjük, javítsa ki ezt a
-    config.yml vagy /wwcc segítségével a plugin használatához.
   wwcsAttemptedTranslations: ' Fordítási kísérlet: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Az Amazon titkos kulcskészlet
     sikeresen.'
@@ -262,3 +260,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Nem sikerült lefordítani a célkönyvet.'
   wwcBookTranslateTitleFail: ' Nem sikerült lefordítani a könyv címét.'
   wwcChatTranslationFail: ' Nem sikerült lefordítani az üzenetet.'
+  wwcInvalidTranslator: ' Érvénytelen fordítói beállítások. Kérjük, javítsa ki ezt
+    a config.yml vagy /wwcc segítségével a plugin használatához.'
+  wwcNotDoneLoading: ' A WorldwideChat még mindig inicializálódik. Kérjük, próbálja
+    meg újra hamarosan.'

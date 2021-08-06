@@ -174,8 +174,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: அமேசான் இரகசிய சாவி மாற்ற
   wwcVersion: ' WorldWideSat, பதிப்பு'
   wwcsName: ' ஆட்டக்காரரின் பெயர்: %i'
-  wwcInvalidTranslator: தவறான மொழிபெயர்ப்பாளர் அமைப்புகள். இந்த சொருகி பயன்படுத்த
-    உங்கள் config.yml அல்லது wwcc உடன் இதை சரிசெய்யவும்.
   wwcsAttemptedTranslations: ' முயற்சித்த மொழிபெயர்ப்புகள்: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' வெற்றிகரமாக அமேசான் இரகசிய
     முக்கிய தொகுப்பு.'
@@ -271,3 +269,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' இலக்கு நூலை மொழிபெயர்த்துத் தோல்வியடைந்தார்.'
   wwcBookTranslateTitleFail: ' புத்தகத் தலைப்பை மொழிபெயர்க்கத் தவறினார்'
   wwcChatTranslationFail: ' உங்கள் செய்தியை மொழிபெயர்க்க தவறிவிட்டது.'
+  wwcInvalidTranslator: ' தவறான மொழிபெயர்ப்பாளர் அமைப்புகள். இந்த சொருகி பயன்படுத்த
+    உங்கள் config.yml அல்லது wwcc உடன் இதை சரிசெய்யவும்.'
+  wwcNotDoneLoading: ' WorldWideSaat இன்னும் துவக்குகிறது. விரைவில் மீண்டும் முயற்சிக்கவும்.'

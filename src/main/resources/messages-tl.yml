@@ -178,8 +178,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Baguhin ang Amazon Secret Key
   wwcVersion: ' WorldwideChat, bersyon'
   wwcsName: ' Pangalan ng Manlalaro: %i'
-  wwcInvalidTranslator: Di-wastong mga setting ng tagasalin. Mangyaring ayusin ito
-    sa iyong config.yml o sa /wwcc upang magamit ang plugin na ito.
   wwcsAttemptedTranslations: ' Tinangkang Pagsasalin: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Matagumpay na naka-set ang
     lihim na key ng Amazon.'
@@ -283,3 +281,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Nabigong i-translate ang target na aklat.'
   wwcBookTranslateTitleFail: ' Nabigong i-translate ang pamagat ng libro.'
   wwcChatTranslationFail: ' Nabigong i-translate ang iyong mensahe.'
+  wwcInvalidTranslator: ' Di-wastong mga setting ng tagasalin. Mangyaring ayusin ito
+    sa iyong config.yml o sa /wwcc upang magamit ang plugin na ito.'
+  wwcNotDoneLoading: ' Nagsisimula pa rin ang WorldwideChat. Mangyaring subukan muli
+    sa ilang sandali.'

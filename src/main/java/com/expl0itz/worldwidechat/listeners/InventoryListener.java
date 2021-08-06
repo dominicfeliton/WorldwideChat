@@ -22,7 +22,7 @@ public class InventoryListener implements Listener {
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInventoryCloseEvent(InventoryCloseEvent e) {
 		/* Send the user a message if they quit a config GUI without saving properly */
-		if (!main.isReloading() && main.getPlayersUsingGUI().contains(e.getPlayer())) {
+		if (main.getPlayersUsingGUI().contains(e.getPlayer())) {
 			Bukkit.getScheduler().runTaskLaterAsynchronously(main, new Runnable() {
 				@Override
 				public void run() {
@@ -33,7 +33,7 @@ public class InventoryListener implements Listener {
 				                .build();
 				            Audience adventureSender = main.adventure().sender(e.getPlayer());
 				        adventureSender.sendMessage(reloadPlease);
-				        main.removePlayerUsingGUI((Player)e.getPlayer());
+				        main.removePlayerUsingConfigurationGUI((Player)e.getPlayer());
 					}
 				}
 			}, 10);

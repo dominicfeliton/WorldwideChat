@@ -28,7 +28,7 @@ public class TranslateInGameListener implements Listener {
     /* Book Translation */
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onBookTranslate(PlayerInteractEvent event) {
-        if (!main.isReloading() && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null 
+        if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null 
                 && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingBook() 
                 && event.getHand() != null 
                 && event.getItem() != null
@@ -61,7 +61,7 @@ public class TranslateInGameListener implements Listener {
     /* Sign Translation */
     @EventHandler(priority = EventPriority.HIGHEST) 
     public void onSignTranslate(PlayerInteractEvent event) {
-        if (!main.isReloading() && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null 
+        if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null 
                 && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingSign() 
                 && event.getClickedBlock() != null) {
             if ((event.getClickedBlock().getType().name().contains("SIGN") && event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
@@ -95,7 +95,7 @@ public class TranslateInGameListener implements Listener {
     /* Item Name + Lore Translation */
     @EventHandler(priority = EventPriority.HIGHEST)
 	public void onItemTranslateRequest(PlayerInteractEvent event) {
-		if (!main.isReloading() && main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null 
+		if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null 
 				&& main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingItem() 
 				&& event.getPlayer().getInventory() != null && event.getPlayer().getInventory().getItemInMainHand() != null 
 				&& event.getPlayer().getInventory().getItemInMainHand().getType() != Material.AIR

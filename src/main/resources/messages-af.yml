@@ -163,8 +163,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Verander Amazon geheime sleutel
   wwcVersion: ' WorldwideChat, weergawe'
   wwcsName: ' Speler Naam: %i'
-  wwcInvalidTranslator: Ongeldige vertaler instellings. Los dit asseblief in jou config.yml
-    of met/wwcc om hierdie inprop te gebruik.
   wwcsAttemptedTranslations: ' Poging tot vertalings: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon geheime sleutel suksesvol
     te stel.'
@@ -258,3 +256,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Misluk om teiken boek te vertaal.'
   wwcBookTranslateTitleFail: ' Misluk om boektitel te vertaal.'
   wwcChatTranslationFail: ' Misluk om jou boodskap te vertaal.'
+  wwcInvalidTranslator: ' Ongeldige vertaler instellings. Los dit asseblief in jou
+    config.yml of met/wwcc om hierdie inprop te gebruik.'
+  wwcNotDoneLoading: ' WorldwideChat is nog steeds inisialiseer. Probeer asseblief
+    weer binnekort.'

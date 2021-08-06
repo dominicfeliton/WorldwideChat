@@ -162,8 +162,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Endre Amazon hemmelig nøkkel
   wwcVersion: ' WorldwideChat, versjon'
   wwcsName: ' Spillernavn: %i'
-  wwcInvalidTranslator: Ugyldige innstillinger for oversetteren. Vennligst reparer
-    dette i din config.yml eller med /wwcc for å bruke denne plugin.
   wwcsAttemptedTranslations: ' Forsøk på oversettelser: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon hemmelig nøkkel satt
     vellykket.'
@@ -252,3 +250,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Kan ikke oversette målboken.'
   wwcBookTranslateTitleFail: ' Kan ikke oversette boktittel.'
   wwcChatTranslationFail: ' Kan ikke oversette meldingen.'
+  wwcInvalidTranslator: ' Ugyldige innstillinger for oversetteren. Vennligst reparer
+    dette i din config.yml eller med /wwcc for å bruke denne plugin.'
+  wwcNotDoneLoading: ' WorldwideChat initialiserer fortsatt. Prøv igjen om kort tid.'

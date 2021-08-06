@@ -172,8 +172,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: ಅಮೆಜಾನ್ ಸೀಕ್ರೆಟ್ ಕೀ ಬದಲಾಯಿಸಿ
   wwcVersion: ' ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್, ಆವೃತ್ತಿ'
   wwcsName: ' ಆಟಗಾರನ ಹೆಸರು: %i'
-  wwcInvalidTranslator: ಅಮಾನ್ಯ ಅನುವಾದಕ ಸೆಟ್ಟಿಂಗ್ಗಳು. ಈ ಪ್ಲಗ್ಇನ್ ಅನ್ನು ಬಳಸಲು ದಯವಿಟ್ಟು
-    ನಿಮ್ಮ config.yml ಅಥವಾ/wwcc ನೊಂದಿಗೆ ಇದನ್ನು ಸರಿಪಡಿಸಿ.
   wwcsAttemptedTranslations: ' ಪ್ರಯತ್ನಿಸಿದ ಅನುವಾದಗಳು: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' ಅಮೆಜಾನ್ ರಹಸ್ಯ ಪ್ರಮುಖ ಯಶಸ್ವಿಯಾಗಿ
     ಸೆಟ್.'
@@ -264,3 +262,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' ಗುರಿ ಪುಸ್ತಕವನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.'
   wwcBookTranslateTitleFail: ' ಪುಸ್ತಕದ ಶೀರ್ಷಿಕೆಯನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.'
   wwcChatTranslationFail: ' ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.'
+  wwcInvalidTranslator: ' ಅಮಾನ್ಯ ಅನುವಾದಕ ಸೆಟ್ಟಿಂಗ್ಗಳು. ಈ ಪ್ಲಗ್ಇನ್ ಅನ್ನು ಬಳಸಲು ದಯವಿಟ್ಟು
+    ನಿಮ್ಮ config.yml ಅಥವಾ/wwcc ನೊಂದಿಗೆ ಇದನ್ನು ಸರಿಪಡಿಸಿ.'
+  wwcNotDoneLoading: ' ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ಇನ್ನೂ ಪ್ರಾರಂಭಿಸುತ್ತಿದೆ. ದಯವಿಟ್ಟು ಶೀಘ್ರದಲ್ಲೇ
+    ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.'

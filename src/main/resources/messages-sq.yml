@@ -173,8 +173,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Ndrysho Amazon Secret Key
   wwcVersion: ' WorldwideChat, version'
   wwcsName: ' Emri i lojtarit: %i'
-  wwcInvalidTranslator: Cilësimet e pavlefshme të përkthyesit Ju lutemi rregulloni
-    këtë në config.yml ose me /wwcc për të përdorur këtë shtojcë.
   wwcsAttemptedTranslations: ' Përkthime në tentativë: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon sekret vendosur me
     sukses.'
@@ -269,3 +267,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Dështoi për të përkthyer librin objektiv.'
   wwcBookTranslateTitleFail: ' Dështoi të përkthehet titulli i librit'
   wwcChatTranslationFail: ' Dështoi në përkthimin e mesazhit tuaj.'
+  wwcInvalidTranslator: ' Cilësimet e pavlefshme të përkthyesit Ju lutemi rregulloni
+    këtë në config.yml ose me /wwcc për të përdorur këtë shtojcë.'
+  wwcNotDoneLoading: ' WorldwideChat është ende inicializuar. Ju lutem provoni përsëri
+    së shpejti.'

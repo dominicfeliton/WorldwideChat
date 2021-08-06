@@ -167,8 +167,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Փոխել Amazon գաղտնի բանալի
   wwcVersion: ' WorldwideChat, տարբերակ'
   wwcsName: ' Խաղացողի անունը: %i'
-  wwcInvalidTranslator: 'Անվավեր թարգմանիչ պարամետրերը: Խնդրում ենք ամրագրել այս ձեր
-    config.yml կամ /wwcc օգտագործել այս plugin.'
   wwcsAttemptedTranslations: ' Փորձված թարգմանություններ: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon գաղտնի բանալին սահմանված
     հաջողությամբ.'
@@ -260,3 +258,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Չհաջողվեց թարգմանել թիրախային գիրքը:'
   wwcBookTranslateTitleFail: ' Չհաջողվեց թարգմանել գրքի կոչումը.'
   wwcChatTranslationFail: ' Չհաջողվեց թարգմանել ձեր հաղորդագրությունը:'
+  wwcInvalidTranslator: ' Անվավեր թարգմանիչ պարամետրերը: Խնդրում ենք ամրագրել այս
+    ձեր config.yml կամ /wwcc օգտագործել այս plugin.'
+  wwcNotDoneLoading: ' WorldwideChat դեռ սկզբնականացումը. Խնդրում ենք կրկին փորձեք
+    շուտով.'

@@ -137,7 +137,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: 變更亞馬遜密鑰
   wwcVersion: ' 全球聊天室，版本'
   wwcsName: ' 玩家名稱： %i'
-  wwcInvalidTranslator: 無效的轉換器設定。請在您的配置.yml 或 /wwcc 中修復此問題以使用此插件。
   wwcsAttemptedTranslations: ' 嘗試翻譯： %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' 亞馬遜密鑰設置成功。'
   wwcConfigConversationWatsonAPIKeySuccess: ' 華生 API 金鑰集成功。'
@@ -208,3 +207,5 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' 無法翻譯目標書冊。'
   wwcBookTranslateTitleFail: ' 無法翻譯書籍標題。'
   wwcChatTranslationFail: ' 無法翻譯您的訊息。'
+  wwcInvalidTranslator: ' 無效的轉換器設定。請在您的配置.yml 或 /wwcc 中修復此問題以使用此插件。'
+  wwcNotDoneLoading: ' 全球聊天仍在初始化。請稍後再試一次。'

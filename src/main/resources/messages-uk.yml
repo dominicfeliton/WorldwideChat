@@ -166,8 +166,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Змінити секретний ключ Amazon
   wwcVersion: ' Всесвітній чат, версія'
   wwcsName: ' Назва гравця: %i'
-  wwcInvalidTranslator: Некоректні параметри перекладача. Будь ласка, виправте це
-    у вашому config.yml або за допомогою /wwcc, щоб використовувати цей плагін.
   wwcsAttemptedTranslations: ' Спроба перекладу: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Секретний ключ Amazon успішно
     встановлено.'
@@ -258,3 +256,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Не вдалося перекласти цільову книгу.'
   wwcBookTranslateTitleFail: ' Не вдалося перекласти назву книги.'
   wwcChatTranslationFail: ' Не вдалося перекласти ваше повідомлення.'
+  wwcInvalidTranslator: ' Некоректні параметри перекладача. Будь ласка, виправте це
+    у вашому config.yml або за допомогою /wwcc, щоб використовувати цей плагін.'
+  wwcNotDoneLoading: ' WorldwideChat все ще ініціалізується. Будь ласка, спробуйте
+    ще раз.'

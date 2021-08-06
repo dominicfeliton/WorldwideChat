@@ -160,8 +160,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon құпия кілтін өзгерту
   wwcVersion: ' WorldWidechat, нұсқасы'
   wwcsName: ' Ойыншының аты: %i'
-  wwcInvalidTranslator: Жарамсыз аудармашы параметрлері. Бұл плагинді пайдалану үшін
-    config.yml немесе /wwcc көмегімен түзетіңіз.
   wwcsAttemptedTranslations: ' Әрекет еткен аудармалар: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon құпия негізгі сәтті
     жиынтығы.'
@@ -250,3 +248,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' мақсатты кітапты аудару алмады.'
   wwcBookTranslateTitleFail: ' Кітап атауын аудара алмады.'
   wwcChatTranslationFail: ' Хабарламаңызды аудару сәтсіз болды.'
+  wwcInvalidTranslator: ' Жарамсыз аудармашы параметрлері. Бұл плагинді пайдалану
+    үшін config.yml немесе /wwcc көмегімен түзетіңіз.'
+  wwcNotDoneLoading: ' WorldwideChat әлі де баптандырады. Көп ұзамай қайталап көріңіз.'

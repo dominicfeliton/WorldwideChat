@@ -165,8 +165,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: अमेज़ॅन गुप्त कुंजी बदलें
   wwcVersion: ' वर्ल्डवाइडचैट, संस्करण'
   wwcsName: ' खिलाड़ी नाम: %i'
-  wwcInvalidTranslator: अवैध अनुवादक सेटिंग। कृपया इस प्लगइन का उपयोग करने के लिए
-    इसे अपने config.yml में या/wwcc के साथ ठीक करें।
   wwcsAttemptedTranslations: ' कोशिश की गई अनुवाद: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' अमेज़ॅन गुप्त कुंजी सफलतापूर्वक
     सेट।'
@@ -260,3 +258,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' लक्ष्य पुस्तक का अनुवाद करने में विफल।'
   wwcBookTranslateTitleFail: ' पुस्तक शीर्षक का अनुवाद करने में विफल।'
   wwcChatTranslationFail: ' आपके संदेश का अनुवाद करने में विफल।'
+  wwcInvalidTranslator: ' अमान्य अनुवादक सेटिंग्स। कृपया इस प्लगइन का उपयोग करने के
+    लिए इसे अपने config.yml में या /wwcc के साथ ठीक करें।'
+  wwcNotDoneLoading: ' वर्ल्डवाइड चैट अभी भी शुरू कर रहा है। कृपया शीघ्र ही फिर से
+    कोशिश करें।'

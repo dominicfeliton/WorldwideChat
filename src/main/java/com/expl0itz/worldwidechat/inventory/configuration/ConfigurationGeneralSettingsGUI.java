@@ -102,7 +102,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 		WWCReload rel = new WWCReload(player, null, null, null);
 		contents.set(2, 4, ClickableItem.of(quitButton,
                 e -> {
-                	main.removePlayerUsingGUI(player);
+                	main.removePlayerUsingConfigurationGUI(player);
                 	player.closeInventory(); 
                 	Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
                 		@Override

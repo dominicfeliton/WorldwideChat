@@ -169,8 +169,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Ändra Amazon hemlig nyckel
   wwcVersion: ' WorldwideChat, version'
   wwcsName: ' Spelarens namn: %i'
-  wwcInvalidTranslator: Ogiltiga översättarinställningar. Rätta detta i din config.yml
-    eller med /wwcc för att använda detta insticksprogram.
   wwcsAttemptedTranslations: ' Försök till översättningar: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazons hemliga nyckeluppsättning
     med lyckat resultat.'
@@ -262,3 +260,6 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Det gick inte att översätta målboken.'
   wwcBookTranslateTitleFail: ' Misslyckades översätta bokens titel.'
   wwcChatTranslationFail: ' Det gick inte att översätta ditt meddelande.'
+  wwcInvalidTranslator: ' Ogiltiga översättarinställningar. Rätta detta i din config.yml
+    eller med /wwcc för att använda detta insticksprogram.'
+  wwcNotDoneLoading: ' WorldwideChat initierar fortfarande. Försök igen inom kort.'

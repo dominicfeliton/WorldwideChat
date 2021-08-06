@@ -140,8 +140,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: 아마존 보안 키 변경
   wwcVersion: ' 월드와이드 채팅, 버전'
   wwcsName: ' 플레이어 이름: %i'
-  wwcInvalidTranslator: 잘못된 번역기 설정입니다.이 플러그인을 사용하려면 config.yml 또는/wwcc를 사용하여이 문제를
-    해결하십시오.
   wwcsAttemptedTranslations: ' 번역 시도: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon 보안 키를 성공적으로 설정했습니다.'
   wwcConfigConversationWatsonAPIKeySuccess: ' 왓슨 API 키가 성공적으로 설정되었습니다.'
@@ -214,3 +212,5 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' 대상 장부를 번역하지 못했습니다.'
   wwcBookTranslateTitleFail: ' 책 제목을 번역하지 못했습니다.'
   wwcChatTranslationFail: ' 메시지를 번역하지 못했습니다.'
+  wwcInvalidTranslator: ' 번역기 설정이 잘못되었습니다.이 플러그인을 사용하려면 config.yml 또는 /wwcc에서 수정하십시오.'
+  wwcNotDoneLoading: ' 월드와이드채팅은 여전히 초기화되고 있습니다.곧 다시 시도하십시오.'

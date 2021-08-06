@@ -163,8 +163,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon Secret Key Change
   wwcVersion: ' WorldWieChat, versiya'
   wwcsName: ' Oyunçunun adı: %i'
-  wwcInvalidTranslator: Yanlış tərcüməçi parametrləri. Bu plugin istifadə etmək üçün
-    config.yml və ya /wwcc ilə düzeltmek edin.
   wwcsAttemptedTranslations: ' Təqdim edilən tərcümələr: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon gizli açarı uğurla
     təyin edildi.'
@@ -254,3 +252,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Hədəf kitabını tərcümə edə bilmədi.'
   wwcBookTranslateTitleFail: ' Kitabın adını tərcümə edə bilmədi.'
   wwcChatTranslationFail: ' Mesajınızı tərcümə edə bilmədi.'
+  wwcInvalidTranslator: ' Yanlış tərcüməçi parametrləri. Bu plugin istifadə etmək
+    üçün config.yml və ya /wwcc ilə düzeltmek edin.'
+  wwcNotDoneLoading: ' WorldwideChat hələ də başlanğıcdır. Xahiş edirik qısa bir müddət
+    yenidən cəhd edin.'

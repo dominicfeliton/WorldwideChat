@@ -170,8 +170,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Badalka Furaha Qarsoodiga Amazon
   wwcVersion: ' WorldwideChat, version'
   wwcsName: ' Magaca Ciyaaryahanka: %i'
-  wwcInvalidTranslator: Goobaha turjumaan aan sax ahayn. Fadlan hagaajin this in aad
-    config.yml ama /wwcc si aad u isticmaasho plugin this.
   wwcsAttemptedTranslations: ' Tarjumidda la isku dayay: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon set muhiimka ah si
     guul leh.'
@@ -267,3 +265,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Ku guuldareystay in ay turjumaan buugga diirada'
   wwcBookTranslateTitleFail: ' Ku guuldareystay in ay turjumaan horyaalka buugga.'
   wwcChatTranslationFail: ' Ku guuldareystay in ay turjumaan aad fariin.'
+  wwcInvalidTranslator: ' Goobaha turjumaan aan sax ahayn. Fadlan hagaajin this in
+    aad config.yml ama /wwcc si aad u isticmaasho plugin this.'
+  wwcNotDoneLoading: ' WorldwideChat ayaa weli bilaabaysa. Fadlan isku day mar kale
+    wax yar.'

@@ -168,8 +168,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: ඇමේසන් රහස් යතුර වෙනස් කරන්න
   wwcVersion: ' වර්ල්ඩ්වයිඩ්හාට්, අනුවාදය'
   wwcsName: ' ක්‍රීඩකයාගේ නම: %i'
-  wwcInvalidTranslator: වලංගු නොවන පරිවර්තක සැකසුම්. කරුණාකර මෙම ප්ලගිනය භාවිතා කිරීමට
-    ඔබගේ config.yml හෝ /wwcc සමඟ මෙය නිවැරදි කරන්න.
   wwcsAttemptedTranslations: ' පරිවර්තන සඳහා උත්සාහ කරන ලදී: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' ඇමේසන් රහස් යතුර සාර්ථකව
     සකසා ඇත.'
@@ -265,3 +263,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' ඉලක්කගත පොත පරිවර්තනය කිරීමට අසමත් විය.'
   wwcBookTranslateTitleFail: ' පොත් මාතෘකාව පරිවර්තනය කිරීමට අසමත් විය.'
   wwcChatTranslationFail: ' ඔබගේ පණිවිඩය පරිවර්තනය කිරීමට අසමත් විය.'
+  wwcInvalidTranslator: ' වලංගු නොවන පරිවර්තක සැකසුම්. කරුණාකර මෙම ප්ලගිනය භාවිතා
+    කිරීමට ඔබගේ config.yml හෝ /wwcc සමඟ මෙය නිවැරදි කරන්න.'
+  wwcNotDoneLoading: ' වර්ල්ඩ්වයිඩ්හාට් තවමත් ආරම්භ වෙමින් පවතී. කරුණාකර කෙටි කලකින්
+    නැවත උත්සාහ කරන්න.'

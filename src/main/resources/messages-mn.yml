@@ -164,8 +164,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Амазоны нууц түлхүүр өөрчлөх
   wwcVersion: ' Дэлхий даяарWichat, хувилбар'
   wwcsName: ' Тоглогчийн нэр: %i'
-  wwcInvalidTranslator: Буруу орчуулагч тохиргоо. Үүнийг өөрийн config.yml эсвэл /wwcc
-    ашиглан энэ залгаасыг ашиглана уу.
   wwcsAttemptedTranslations: ' Оролдсон Орчуулгууд: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Амазоны нууц түлхүүр амжилттай
     тогтоосон.'
@@ -260,3 +258,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' зорилтот номыг орчуулж чадаагүй.'
   wwcBookTranslateTitleFail: ' Номын нэрийг орчуулж чадаагүй.'
   wwcChatTranslationFail: ' Таны захиасыг орчуулж чадаагүй.'
+  wwcInvalidTranslator: ' Буруу орчуулагч тохиргоо. Үүнийг өөрийн config.yml эсвэл
+    /wwcc ашиглан энэ залгаасыг ашиглана уу.'
+  wwcNotDoneLoading: ' WorldWwidechat одоо ч гэсэн эхлүүлж байна. Удахгүй дахин оролдоно
+    уу.'

@@ -168,8 +168,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Breyting Amazon Secret Key
   wwcVersion: ' WorldwideChat, útgáfa'
   wwcsName: ' Nafn spilara: %i'
-  wwcInvalidTranslator: Ógildar stillingar þýðanda. Vinsamlegast lagaðu þetta í config.yml
-    eða með/wwcc til að nota þessa tappi.
   wwcsAttemptedTranslations: ' Tilraun Þýðingar: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon leyndarmál lykill
     sett með góðum árangri.'
@@ -262,3 +260,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Mistókst að þýða miða bók.'
   wwcBookTranslateTitleFail: ' Mistókst að þýða bók titil.'
   wwcChatTranslationFail: ' Mistókst að þýða skilaboðin þín.'
+  wwcInvalidTranslator: ' Ógildar stillingar þýðanda. Vinsamlegast lagaðu þetta í
+    config.yml eða með/wwcc til að nota þessa tappi.'
+  wwcNotDoneLoading: ' WorldwideChat er enn að frumstilla. Vinsamlegast reyndu aftur
+    fljótlega.'

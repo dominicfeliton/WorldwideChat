@@ -164,8 +164,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Skift Amazon Secret Key
   wwcVersion: ' WorldwideChat, version'
   wwcsName: ' Spillerens navn: %i'
-  wwcInvalidTranslator: Ugyldige indstillinger for oversætter. Løs venligst dette
-    i din config.yml eller med /wwcc for at bruge dette plugin.
   wwcsAttemptedTranslations: ' Forsøg på oversættelser: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon hemmelige nøgle sæt
     med succes.'
@@ -255,3 +253,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Kunne ikke oversætte målbogen.'
   wwcBookTranslateTitleFail: ' Kunne ikke oversætte bogens titel.'
   wwcChatTranslationFail: ' Kunne ikke oversætte din besked.'
+  wwcInvalidTranslator: ' Ugyldige indstillinger for oversætter. Løs venligst dette
+    i din config.yml eller med /wwcc for at bruge dette plugin.'
+  wwcNotDoneLoading: ' WorldwideChat initialiserer stadig. Prøv venligst igen om kort
+    tid.'

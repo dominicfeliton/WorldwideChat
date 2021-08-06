@@ -1,6 +1,7 @@
 package com.expl0itz.worldwidechat.inventory.configuration;
 
-import org.bukkit.Bukkit;
+import java.io.IOException;
+
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.conversations.ConversationFactory;
@@ -99,14 +100,9 @@ public class ConfigurationAmazonTranslateSettingsGUI implements InventoryProvide
 		WWCReload rel = new WWCReload(player, null, null, null);
 		contents.set(2, 4, ClickableItem.of(quitButton,
                 e -> {
-                	main.removePlayerUsingGUI(player);
-                	player.closeInventory(); 
-                	Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
-                		@Override
-                		public void run() {
-                			rel.processCommand();
-                		}
-                });
+                	main.removePlayerUsingConfigurationGUI(player);
+                	player.closeInventory();
+                	rel.processCommand();
         }));
 	}
 
@@ -131,32 +127,17 @@ public class ConfigurationAmazonTranslateSettingsGUI implements InventoryProvide
 					    	TaskChain<?> chain = WorldwideChat.newSharedChain("enableAmazonTranslate");
 					    	chain
 					    	    .sync(() -> {
+					    	    	main.removePlayerUsingConfigurationGUI(player);
 					    	        player.closeInventory();
 					    	    })
-					    	    .async(() -> {
+					    	    .asyncFirst(() -> {
+					    	    	boolean translatorStatus = false;
 					    	    	try {
 									    AmazonTranslation testConnection = new AmazonTranslation(main.getConfigManager().getMainConfig().getString("Translator.amazonAccessKey"), 
 									    		main.getConfigManager().getMainConfig().getString("Translator.amazonSecretKey"), 
 									    		main.getConfigManager().getMainConfig().getString("Translator.amazonRegion"));
 									    testConnection.initializeConnection();
-									    main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", false);
-									    main.getConfigManager().getMainConfig().set("Translator.useAmazonTranslate", true);
-									    main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate", false);
-									    main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-									    final TextComponent successfulChange = Component.text()
-								                .append(main.getPluginPrefix().asComponent())
-								                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationTranslatorSuccess").replace("%i", "Amazon Translate")).color(NamedTextColor.GREEN))
-								                .build();
-								            Audience adventureSender = main.adventure().sender(player);
-								        adventureSender.sendMessage(successfulChange);
-								        main.getLogger().info(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationConsoleTranslatorSuccess").replace("%i", player.getName()).replace("%o", "Amazon Translate"));
-								        WWCReload rel = new WWCReload(player, null, null, null);
-								        Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
-					                		@Override
-					                		public void run() {
-					                			rel.processCommand();
-					                		}
-					                });
+									    translatorStatus = true;
 									} catch (Exception bad) {
 										final TextComponent badResult = Component.text()
 									            .append(main.getPluginPrefix().asComponent())
@@ -167,9 +148,39 @@ public class ConfigurationAmazonTranslateSettingsGUI implements InventoryProvide
 									    main.getLogger().severe(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationConsoleTranslatorFail").replace("%i", player.getName()).replace("%o", "Amazon Translate"));
 									    bad.printStackTrace();
 									}
+					    	    	return translatorStatus;
+					    	    })
+					    	    .storeAsData("connectionStatus")
+					    	    .<Boolean>returnData("connectionStatus")
+					    	    .syncLast((connectionStatus) -> {
+					    	    	if (!connectionStatus) {
+					    	    		amazonTranslateSettings.open(player);
+					    	    		main.addPlayerUsingConfigurationGUI(player);
+					    	    		chain.abortChain();
+					    	    	}
 					    	    })
 					    	    .sync(() -> {
-					    	    	amazonTranslateSettings.open(player);
+					    	    	main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", false);
+								    main.getConfigManager().getMainConfig().set("Translator.useAmazonTranslate", true);
+								    main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate", false);
+								    try {
+										main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
+									} catch (IOException e1) {
+										e1.printStackTrace();
+									}
+					    	    })
+					    	    .async(() -> {
+					    	    	final TextComponent successfulChange = Component.text()
+							                .append(main.getPluginPrefix().asComponent())
+							                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationTranslatorSuccess").replace("%i", "Amazon Translate")).color(NamedTextColor.GREEN))
+							                .build();
+							            Audience adventureSender = main.adventure().sender(player);
+							        adventureSender.sendMessage(successfulChange);
+							        main.getLogger().info(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationConsoleTranslatorSuccess").replace("%i", player.getName()).replace("%o", "Amazon Translate"));
+					    	    })
+					    	    .sync(() -> {
+					    	    	WWCReload rel = new WWCReload(player, null, null, null);
+							        rel.processCommand();
 					    	    })
 					    	    .sync(TaskChain::abort)
 					    	    .execute();

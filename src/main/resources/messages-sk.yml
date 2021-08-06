@@ -168,8 +168,6 @@ Messages:
   wwcConfigGUIAmazonTranslateSecretKeyButton: Zmena tajného kľúča Amazon
   wwcVersion: ' WorldwideChat, verzia'
   wwcsName: ' Meno hráča: %i'
-  wwcInvalidTranslator: Neplatné nastavenia prekladateľa. Opravte to vo vašom config.yml
-    alebo /wwcc použiť tento plugin.
   wwcsAttemptedTranslations: ' Pokus o preklady: %i'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon tajný kľúč nastavený
     úspešne.'
@@ -266,3 +264,7 @@ Messages:
   wwcBookTranslationFailCatastrophic: ' Nepodarilo sa preložiť cieľovú knihu.'
   wwcBookTranslateTitleFail: ' Nepodarilo sa preložiť názov knihy.'
   wwcChatTranslationFail: ' Nepodarilo sa preložiť správu.'
+  wwcInvalidTranslator: ' Neplatné nastavenia prekladateľa. Opravte to vo vašom config.yml
+    alebo /wwcc použiť tento plugin.'
+  wwcNotDoneLoading: ' WorldwideChat sa stále inicializuje. Prosím, skúste to znova
+    krátko.'
