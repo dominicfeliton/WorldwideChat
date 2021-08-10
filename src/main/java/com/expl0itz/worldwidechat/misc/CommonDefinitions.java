@@ -9,6 +9,7 @@ import org.apache.commons.lang3.StringEscapeUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionAttachmentInfo;
+import org.bukkit.scheduler.BukkitRunnable;
 import org.threeten.bp.Instant;
 import org.threeten.bp.temporal.ChronoUnit;
 
@@ -222,7 +223,7 @@ public class CommonDefinitions {
         CompletableFuture<Boolean> exemptFuture = new CompletableFuture<>();
         CompletableFuture<Boolean> hasPermFuture = new CompletableFuture<>();
         CompletableFuture<Integer> personalFuture = new CompletableFuture<>();
-        Bukkit.getScheduler().runTask(WorldwideChat.getInstance(), new Runnable() {
+        new BukkitRunnable() {
         	@Override
         	public void run() {
         		boolean exemptPermCheck = false;
@@ -248,7 +249,7 @@ public class CommonDefinitions {
         		hasPermFuture.complete(hasPermission);
         		personalFuture.complete(personalRateLimit);
         	}
-        });
+        }.runTask(WorldwideChat.getInstance());
         
         // Add values returned from Bukkit API
 		try {
