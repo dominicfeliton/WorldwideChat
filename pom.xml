@@ -14,11 +14,6 @@
     </properties>
 
   <dependencies>
-      <dependency>
-           <groupId>co.aikar</groupId>
-           <artifactId>taskchain-bukkit</artifactId>
-           <version>3.7.2</version>
-        </dependency>
         <dependency>
            <groupId>org.spigotmc</groupId>
            <artifactId>spigot-api</artifactId>
@@ -223,7 +218,6 @@
                             <include>net.kyori:examination-string</include>
                             <include>org.jetbrains.kotlin:kotlin-stdlib</include>
                             <include>com.squareup.okio:okio</include>
-                            <include>co.aikar:taskchain*</include>
                             <include>com.amazonaws:*</include>
                             <include>org.jsoup:*</include>
                             <include>com.fasterxml.jackson.core:*</include>

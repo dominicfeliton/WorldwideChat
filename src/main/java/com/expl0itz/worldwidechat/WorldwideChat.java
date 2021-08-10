@@ -7,7 +7,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.TimeUnit;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -48,9 +47,6 @@ import com.expl0itz.worldwidechat.runnables.LoadUserData;
 import com.expl0itz.worldwidechat.runnables.SyncUserData;
 import com.expl0itz.worldwidechat.runnables.UpdateChecker;
 
-import co.aikar.taskchain.BukkitTaskChainFactory;
-import co.aikar.taskchain.TaskChain;
-import co.aikar.taskchain.TaskChainFactory;
 import fr.minuskube.inv.InventoryManager;
 import fr.minuskube.inv.SmartInventory;
 import io.reactivex.annotations.NonNull;
@@ -65,7 +61,6 @@ import net.kyori.adventure.text.format.TextDecoration;
 public class WorldwideChat extends JavaPlugin {
     /* Vars */
     private static WorldwideChat instance;
-    private static TaskChainFactory taskChainFactory;
     
     private InventoryManager inventoryManager;
     private BukkitAudiences adventure;
@@ -116,19 +111,10 @@ public class WorldwideChat extends JavaPlugin {
     	return inventoryManager;
     }
     
-    public static <T> TaskChain<T> newChain() {
-        return taskChainFactory.newChain();
-    }
-    
-    public static <T> TaskChain<T> newSharedChain(String name) {
-    	return taskChainFactory.newSharedChain(name);
-    }
-    
     @Override
     public void onEnable() {
         //Initialize critical instances
         this.adventure = BukkitAudiences.create(this); //Adventure
-        taskChainFactory = BukkitTaskChainFactory.create(this); //Task Chain
         inventoryManager = new WWCInventoryManager(this); //InventoryManager for SmartInvs API
         inventoryManager.init(); //Init InventoryManager
         instance = this; //Static instance of this class
@@ -169,7 +155,6 @@ public class WorldwideChat extends JavaPlugin {
             this.adventure = null;
         }
         instance = null;
-        taskChainFactory = null;
         CommonDefinitions.supportedMCVersions = null;
         CommonDefinitions.supportedPluginLangCodes = null;
         
@@ -290,7 +275,6 @@ public class WorldwideChat extends JavaPlugin {
     public void cancelBackgroundTasks() {
     	//Cancel + remove all tasks, chains
     	this.getServer().getScheduler().cancelTasks(this);
-    	taskChainFactory.shutdown(5, TimeUnit.SECONDS);
     	
         //Close all active GUIs
         playersUsingConfigurationGUI.clear();
