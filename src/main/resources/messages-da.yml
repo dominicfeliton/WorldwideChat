@@ -10,7 +10,6 @@ Messages:
     er %i sekunder. Skriv noget større end 10 for at indstille en ny værdi, eller
     noget mindre end 10 for at gå tilbage.
   wwctGUIMainMenuGlobal: Global Oversættelsesmenu
-  wwcConfigGUIWatsonButton: Watson oversætte
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin opdatering chat påmindelse
     skiftede med succes.'
   wwctbOnTarget: ' Bogoversættelse aktiveret for %i.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' Spilleren % jeg blev ikke fundet.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Global chat bliver
     oversat, men din chat bliver oversat til %o.'
-  wwcConfigGUIGoogleTranslateSettings: Konfigurationen af Google
   wwcConfigGUIGlobalRateLimit: Ændre global kursgrænse
   wwctGUIBackToSourceLanguageButton: Tilbage til menuen Kildesprog
   wwcConfigGUIAmazonTranslateRegionButton: Ændre Amazon-regionen
@@ -70,7 +68,6 @@ Messages:
     gyldig sprogkode, eller skriv 0 for at annullere. Gyldige sprogkoder: %o'
   wwcConfigConversationLangInvalid: ' Ugyldig sprogkode!'
   wwctTranslationStopped: ' Din chatoversættelse er blevet stoppet.'
-  wwcConfigGUIWatsonSettings: Watson-konfiguration
   wwctsPlayerNotFound: ' Spilleren %i findes enten ikke, eller er ikke en aktiv oversætter.'
   wwcConfigGUIWatsonAPIKeyButton: Skift Watson API-nøgle
   wwcEnabled: Aktiveret WorldwideChat version %i.
@@ -97,7 +94,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Skift Google Translate API Key
   wwcSignDeletedOrTooLong: ' Måltegnet blev enten slettet, eller oversættelsen var
     for lang. Oversættelse:'
-  wwcConfigGUIAmazonTranslateStatusButton: Slå Amazon oversæt
   wwctsOnTarget: ' Signer oversættelse aktiveret for %i.'
   wwcConfigCacheDisabled: Oversætter cache deaktiveret.
   wwcConfigConversationWatsonURLInput: Den nuværende URL er %i. Indtast venligst en
@@ -128,7 +124,6 @@ Messages:
   wwctSameLangError: ' Du kan ikke oversætte til det samme sprog!'
   wwctGUINewTranslationTarget: Vælg et målsprog
   wwctLangToLangStartOtherPlayer: ' Nu oversætter chatten på %o fra %i til %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Oversæt konfiguration
   wwcConfigConnectionSuccess: Succesfuld forbindelse til %o!
   wwcConfigGUIGoogleTranslateButton: Google Oversæt
   wwcsIsActiveTranslator: ' Er aktiv oversætter: %i'
@@ -176,8 +171,6 @@ Messages:
   wwctGUIExistingTranslationButton: Overskriv nuværende oversættelsessession
   wwcOnJoinTranslationNotificationNoSourceLang: ' Din chat er ved at blive oversat
     til %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Slå Google Oversæt
-  wwcConfigGUIWatsonStatusButton: Slå Watson til/
   wwcUserDataReloaded: Indlæst alle gemte brugerdata.
   wwcConfigGUISendTranslationChatButton: Send Chat påmindelse til aktiv oversætter
     ved login
@@ -257,3 +250,6 @@ Messages:
     i din config.yml eller med /wwcc for at bruge dette plugin.'
   wwcNotDoneLoading: ' WorldwideChat initialiserer stadig. Prøv venligst igen om kort
     tid.'
+  wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'
+  wwcConfigGUIToggleButton: Skift til %i
+  wwcConfigGUIWatsonButton: Watson

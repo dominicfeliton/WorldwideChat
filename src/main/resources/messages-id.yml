@@ -10,7 +10,6 @@ Messages:
     adalah %i detik. Ketik apa pun yang lebih besar dari 10 untuk menetapkan nilai
     baru, atau apa pun kurang dari 10 untuk kembali.
   wwctGUIMainMenuGlobal: Menu Terjemahan Global
-  wwcConfigGUIWatsonButton: Watson Terjemahkan
   wwcConfigConversationPluginUpdateChatSuccess: ' Pengingat obrolan pembaruan plugin
     berhasil diubah.'
   wwctbOnTarget: ' Terjemahan buku diaktifkan untuk %i.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' Pemain %i tidak ditemukan.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Global chat sedang
     diterjemahkan, tetapi chat Anda sedang diterjemahkan ke %o.'
-  wwcConfigGUIGoogleTranslateSettings: Konfigurasi Google Translate
   wwcConfigGUIGlobalRateLimit: Ubah Batas Tingkat Global
   wwctGUIBackToSourceLanguageButton: Kembali ke Menu Bahasa Sumber
   wwcConfigGUIAmazonTranslateRegionButton: Ubah Wilayah Amazon
@@ -71,7 +69,6 @@ Messages:
     %o'
   wwcConfigConversationLangInvalid: ' Kode bahasa tidak valid!'
   wwctTranslationStopped: ' Terjemahan chat Anda telah dihentikan.'
-  wwcConfigGUIWatsonSettings: Konfigurasi Watson
   wwctsPlayerNotFound: ' Pemain %i tidak ditemukan, atau bukan penerjemah aktif.'
   wwcConfigGUIWatsonAPIKeyButton: Ubah Kunci API Watson
   wwcEnabled: Diaktifkan WorldwideChat versi %i.
@@ -99,7 +96,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Ubah Kunci Google Translate API
   wwcSignDeletedOrTooLong: ' Tanda target dihapus atau terjemahannya terlalu panjang.
     Terjemahan:'
-  wwcConfigGUIAmazonTranslateStatusButton: Alihkan Amazon Terjemahkan
   wwctsOnTarget: ' Penerjemahan tanda diaktifkan untuk %i.'
   wwcConfigCacheDisabled: Cache penerjemah dinonaktifkan.
   wwcConfigConversationWatsonURLInput: URL saat ini adalah %i. Harap masukan URL layanan
@@ -133,7 +129,6 @@ Messages:
   wwctGUINewTranslationTarget: Pilih Bahasa Target
   wwctLangToLangStartOtherPlayer: ' Sekarang menerjemahkan obrolan dari %o dari %i
     ke %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Terjemahkan Konfigurasi
   wwcConfigConnectionSuccess: Berhasil terhubung ke %o!
   wwcConfigGUIGoogleTranslateButton: Google Terjemahkan
   wwcsIsActiveTranslator: ' Adalah Penerjemah Aktif: %i'
@@ -182,8 +177,6 @@ Messages:
   wwctGUIExistingTranslationButton: Timpa Sesi Terjemahan Saat Ini
   wwcOnJoinTranslationNotificationNoSourceLang: ' Obrolan Anda sedang diterjemahkan
     ke %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Alihkan Google Terjemahkan
-  wwcConfigGUIWatsonStatusButton: Toggle Watson
   wwcUserDataReloaded: Dimuatkan semua data pengguna yang disimpan.
   wwcConfigGUISendTranslationChatButton: Kirim Pengingat Chat ke Penerjemah Aktif
     saat Masuk
@@ -265,3 +258,6 @@ Messages:
     di config.ymlmu atau dengan/wwcc untuk menggunakan plugin ini.'
   wwcNotDoneLoading: ' WorldWidChat masih menginisialisasi. Silakan coba lagi sebentar
     lagi.'
+  wwcConfigGUIEachTranslatorSettings: '%i Konfigurasi'
+  wwcConfigGUIToggleButton: Toggle %i
+  wwcConfigGUIWatsonButton: Watson

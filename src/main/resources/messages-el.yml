@@ -10,7 +10,6 @@ Messages:
     είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 10 για να ορίσετε
     μια νέα τιμή ή οτιδήποτε λιγότερο από 10 για να επιστρέψετε.
   wwctGUIMainMenuGlobal: Μενού καθολικής μετάφρασης
-  wwcConfigGUIWatsonButton: Μετάφραση Watson
   wwcConfigConversationPluginUpdateChatSuccess: ' Ενημέρωση plugin υπενθύμιση συνομιλίας
     εναλλαγή με επιτυχία.'
   wwctbOnTarget: ' Η μετάφραση του βιβλίου είναι ενεργοποιημένη για %i.'
@@ -63,7 +62,6 @@ Messages:
   wwctPlayerNotFound: ' Παίχτης %Δεν βρέθηκε.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Η παγκόσμια συνομιλία
     μεταφράζεται, αλλά η συνομιλία σας μεταφράζεται σε %o.'
-  wwcConfigGUIGoogleTranslateSettings: Ρύθμιση παραμέτρων μετάφρασης Google
   wwcConfigGUIGlobalRateLimit: Αλλαγή ορίου καθολικού ρυθμού
   wwctGUIBackToSourceLanguageButton: Επιστροφή στο μενού γλώσσας προέλευσης
   wwcConfigGUIAmazonTranslateRegionButton: Αλλαγή περιοχής του Αμαζονίου
@@ -72,7 +70,6 @@ Messages:
     %o'
   wwcConfigConversationLangInvalid: ' Μη έγκυρος κωδικός γλώσσας!'
   wwctTranslationStopped: ' Η μετάφραση της συνομιλίας σας έχει διακοπεί.'
-  wwcConfigGUIWatsonSettings: Ρύθμιση παραμέτρων Watson
   wwctsPlayerNotFound: ' Ο αναπαραγωγής %i είτε δεν βρέθηκε είτε δεν είναι ενεργός
     μεταφραστής.'
   wwcConfigGUIWatsonAPIKeyButton: Αλλαγή κλειδιού API Watson
@@ -103,7 +100,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Αλλαγή του κλειδιού API μετάφρασης Google
   wwcSignDeletedOrTooLong: ' Το σύμβολο προορισμού είτε διαγράφηκε είτε η μετάφραση
     ήταν πολύ μεγάλη. Μετάφραση:'
-  wwcConfigGUIAmazonTranslateStatusButton: Εναλλαγή Μετάφραση Amazon
   wwctsOnTarget: ' Ενεργοποίηση μετάφρασης υπογραφής για %i.'
   wwcConfigCacheDisabled: Η μνήμη cache του μεταφραστή απενεργοποιήθηκε.
   wwcConfigConversationWatsonURLInput: Η τρέχουσα διεύθυνση URL είναι %i. Εισαγάγετε
@@ -138,7 +134,6 @@ Messages:
   wwctGUINewTranslationTarget: Επιλογή γλώσσας προορισμού
   wwctLangToLangStartOtherPlayer: ' Τώρα μεταφράζεται η συνομιλία του %o από %i σε
     %e.'
-  wwcConfigGUIAmazonTranslateSettings: Μετάφραση Amazon
   wwcConfigConnectionSuccess: Επιτυχής σύνδεση στο %o!
   wwcConfigGUIGoogleTranslateButton: Μετάφραση Google
   wwcsIsActiveTranslator: ' Είναι ενεργός μεταφραστής: %i'
@@ -191,8 +186,6 @@ Messages:
   wwctGUIExistingTranslationButton: Αντικατάσταση τρέχουσας συνεδρίας μετάφρασης
   wwcOnJoinTranslationNotificationNoSourceLang: ' Η συνομιλία σας μεταφράζεται σε
     %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Εναλλαγή μετάφρασης Google
-  wwcConfigGUIWatsonStatusButton: Εναλλαγή Watson
   wwcUserDataReloaded: Φόρτωσε όλα τα αποθηκευμένα δεδομένα χρήστη.
   wwcConfigGUISendTranslationChatButton: Αποστολή υπενθύμισης συνομιλίας στον ενεργό
     μεταφραστή κατά τη σύνδεση
@@ -282,3 +275,6 @@ Messages:
     ή στο /wwcc για να χρησιμοποιήσετε αυτό το πρόσθετο.'
   wwcNotDoneLoading: ' Το WorldwideChat προετοιμάζεται ακόμα. Παρακαλώ προσπαθήστε
     ξανά σύντομα.'
+  wwcConfigGUIEachTranslatorSettings: '%i Ρύθμιση παραμέτρων'
+  wwcConfigGUIToggleButton: Εναλλαγή του %i
+  wwcConfigGUIWatsonButton: Γουάτσον

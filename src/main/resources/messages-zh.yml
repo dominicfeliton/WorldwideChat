@@ -8,7 +8,6 @@ Messages:
   wwcConfigConversationUpdateCheckerInput: 更新检查器上的当前延迟为 %i 秒。键入大于 10 的任何值以设置新值，或者键入小于
     10 的任何值以返回。
   wwctGUIMainMenuGlobal: 全球翻译菜单
-  wwcConfigGUIWatsonButton: 沃森翻译
   wwcConfigConversationPluginUpdateChatSuccess: ' 插件更新聊天提醒已成功切换。'
   wwctbOnTarget: ' 已为 %i 启用图书翻译。'
   wwcsNotATranslator: ' 目前还没有可用于 %i 的记录。'
@@ -51,14 +50,12 @@ Messages:
   wwctPlayerNotFound: ' 玩家 %我没找到。'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' 全球聊天正在翻译，但是您的聊天正在被翻译为
     %o。'
-  wwcConfigGUIGoogleTranslateSettings: 谷歌翻译配置
   wwcConfigGUIGlobalRateLimit: 更改全球费率限制
   wwctGUIBackToSourceLanguageButton: 返回源语言菜单
   wwcConfigGUIAmazonTranslateRegionButton: 更改亚马逊地区
   wwcConfigConversationLangInput: 当前插件语言为 %i。请输入有效的语言代码，或键入 0 以取消。有效的语言代码： %o
   wwcConfigConversationLangInvalid: ' 语言代码无效！'
   wwctTranslationStopped: ' 你的聊天翻译已停止。'
-  wwcConfigGUIWatsonSettings: Watson 配置
   wwctsPlayerNotFound: ' 玩家 %i 要么找不到，要么不是活跃的翻译者。'
   wwcConfigGUIWatsonAPIKeyButton: 更改沃森 API 密钥
   wwcEnabled: 已启用 WorldwideChat 版本 %i。
@@ -80,7 +77,6 @@ Messages:
   wwcConfigConversationPrefixSuccess: ' 前缀已成功更改。'
   wwcConfigGUIGoogleTranslateAPIKeyButton: 更改谷歌翻译 API 密钥
   wwcSignDeletedOrTooLong: ' 目标标志要么被删除，要么翻译过长。翻译：'
-  wwcConfigGUIAmazonTranslateStatusButton: 切换亚马逊翻译
   wwctsOnTarget: ' 已为 %i 启用签名翻译。'
   wwcConfigCacheDisabled: 翻译器缓存已禁用。
   wwcConfigConversationWatsonURLInput: 当前 URL 为 %i。请输入 Watson 的服务 URL，或键入 0 返回。
@@ -106,7 +102,6 @@ Messages:
   wwctSameLangError: ' 你不能翻译成同一种语言！'
   wwctGUINewTranslationTarget: 选择目标语言
   wwctLangToLangStartOtherPlayer: ' 现在将 %o 的聊天从 %i 转换为 %e。'
-  wwcConfigGUIAmazonTranslateSettings: 亚马逊翻译配置
   wwcConfigConnectionSuccess: 已成功连接到 %o!
   wwcConfigGUIGoogleTranslateButton: 谷歌翻译
   wwcsIsActiveTranslator: ' 是否活跃翻译： %i'
@@ -144,8 +139,6 @@ Messages:
   wwcConfigCacheEnabled: 已启用翻译者缓存并设置为 %i 的限制。
   wwctGUIExistingTranslationButton: 覆盖当前翻译会话
   wwcOnJoinTranslationNotificationNoSourceLang: ' 你的聊天正在被翻译为 %o。'
-  wwcConfigGUIGoogleTranslateStatusButton: 切换谷歌翻译
-  wwcConfigGUIWatsonStatusButton: 切换沃森
   wwcUserDataReloaded: 加载所有保存的用户数据。
   wwcConfigGUISendTranslationChatButton: 登录时向活跃翻译员发送聊天提醒
   wwcsLastTranslationTime: ' 上次（成功）翻译时间： %i'
@@ -207,3 +200,6 @@ Messages:
   wwcChatTranslationFail: ' 无法翻译你的消息。'
   wwcInvalidTranslator: ' 翻译器设置无效。请在 config.yml 或使用 /wwcc 中修复此问题以使用此插件。'
   wwcNotDoneLoading: ' WorldwideChat 仍在初始化。请稍后重试。'
+  wwcConfigGUIEachTranslatorSettings: '%i 配置'
+  wwcConfigGUIToggleButton: 切换 %i
+  wwcConfigGUIWatsonButton: 沃森

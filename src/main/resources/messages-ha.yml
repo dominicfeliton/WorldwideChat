@@ -10,7 +10,6 @@ Messages:
     shine %i seconds. Rubuta wani abu mafi girma fiye da 10 don saita sabon darajar,
     ko wani abu kasa da 10 don komawa.
   wwctGUIMainMenuGlobal: Tsarin Fassara na Duniya
-  wwcConfigGUIWatsonButton: Watson Translate
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin sabuntawa tunatarwa taɗi
     ta yi nasara.'
   wwctbOnTarget: ' Fassarar littafi ta kunna da %i.'
@@ -60,7 +59,6 @@ Messages:
   wwctPlayerNotFound: ' Mai wasa %Ban samu ba.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Ana fassara hira ta
     duniya, amma ana fassara hira zuwa %o.'
-  wwcConfigGUIGoogleTranslateSettings: Gudanarwar Fassara ta Google
   wwcConfigGUIGlobalRateLimit: Canja Iyakar Ƙimar Duniya
   wwctGUIBackToSourceLanguageButton: Komawa zuwa Menu na Harshe
   wwcConfigGUIAmazonTranslateRegionButton: Canja Yankin Amazon
@@ -69,7 +67,6 @@ Messages:
     inganci: %o'
   wwcConfigConversationLangInvalid: ' Lambar harshe mara inganci!'
   wwctTranslationStopped: ' An dakatar da fassarar hirar ku.'
-  wwcConfigGUIWatsonSettings: Watson Configuration
   wwctsPlayerNotFound: ' Mai wasan %i dai ba a samu shi ba, ko kuma ba mai fassara
     mai aiki ba ne.'
   wwcConfigGUIWatsonAPIKeyButton: Canja Maɓallin Watson API
@@ -96,7 +93,6 @@ Messages:
   wwcConfigConversationPrefixSuccess: ' Prefix ya canza nasara.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: Canja Google Translate API Key
   wwcSignDeletedOrTooLong: ' An dai share alamar Target ko fassarar ta yi tsawo. Fassara:'
-  wwcConfigGUIAmazonTranslateStatusButton: Fassarar Amazon
   wwctsOnTarget: ' An kunna fassarar shiga da %i.'
   wwcConfigCacheDisabled: An kashe cache mai fassara.
   wwcConfigConversationWatsonURLInput: URL na yanzu shine %i. Da fatan za a shigar
@@ -128,7 +124,6 @@ Messages:
   wwctSameLangError: ' Ba za ku iya fassara zuwa wannan harshe ba!'
   wwctGUINewTranslationTarget: Zabi Harshen Target
   wwctLangToLangStartOtherPlayer: ' Yanzu ana fassara hirar na %o daga %i zuwa %e.'
-  wwcConfigGUIAmazonTranslateSettings: Tsarin Fassara na Amazon
   wwcConfigConnectionSuccess: An haɗa nasarar zuwa %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: ' Shin Mai Aiki Mai Fassara: %i'
@@ -176,8 +171,6 @@ Messages:
   wwcConfigCacheEnabled: An kunna cache mai fassara kuma an saita zuwa iyaka na %i.
   wwctGUIExistingTranslationButton: Coverwrite Translation Session
   wwcOnJoinTranslationNotificationNoSourceLang: ' Ana fassara hirar ku zuwa %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Tgle Google Translate
-  wwcConfigGUIWatsonStatusButton: toggle Watson
   wwcUserDataReloaded: An ɗora duk bayanan mai amfani da aka ajiye.
   wwcConfigGUISendTranslationChatButton: Aika Tunatarwa Taɗi ga Mai fassara mai aiki
     a kan Shiga
@@ -260,3 +253,6 @@ Messages:
     cikin daidaitawa.yml ko tare da /wwcc don amfani da wannan plugin.'
   wwcNotDoneLoading: ' WideChat har yanzu yana farawa. Da fatan za a sake gwadawa
     nan ba'
+  wwcConfigGUIEachTranslatorSettings: '%i Configuration'
+  wwcConfigGUIToggleButton: toggle %i
+  wwcConfigGUIWatsonButton: Watson

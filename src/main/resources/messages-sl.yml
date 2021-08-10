@@ -10,7 +10,6 @@ Messages:
     je %i sekunde. Vnesite karkoli, ki je večje od 10, če želite nastaviti novo vrednost
     ali karkoli manj kot 10, da se vrnete nazaj.
   wwctGUIMainMenuGlobal: Globalni meni prevajanja
-  wwcConfigGUIWatsonButton: Watson prevajanje
   wwcConfigConversationPluginUpdateChatSuccess: ' Vtičnik posodobitev klepet opomnik
     uspešno preklopi.'
   wwctbOnTarget: ' Prevajanje knjige je omogočeno za %i.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' Igralca %Nisem našel.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Globalni klepet se
     prevaja, vendar je vaš klepet preveden v %o.'
-  wwcConfigGUIGoogleTranslateSettings: Konfiguracija Google prevajanja
   wwcConfigGUIGlobalRateLimit: Spremeni omejitev globalne stopnje
   wwctGUIBackToSourceLanguageButton: Nazaj na izvorni jezik
   wwcConfigGUIAmazonTranslateRegionButton: Spremeni regijo Amazon
@@ -70,7 +68,6 @@ Messages:
     jezikovno kodo ali vnesite 0 za preklic. Veljavne jezikovne kode: %o'
   wwcConfigConversationLangInvalid: ' Neveljavna jezikovna koda!'
   wwctTranslationStopped: ' Vaš prevod klepeta je bil ustavljen.'
-  wwcConfigGUIWatsonSettings: Watsonova konfiguracija
   wwctsPlayerNotFound: ' Predvajalnik %i ni mogoče najti ali ni aktiven prevajalec.'
   wwcConfigGUIWatsonAPIKeyButton: Spremeni ključ API Watson
   wwcEnabled: Omogočena različica WorldwideChat %i.
@@ -98,7 +95,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Spremeni ključ API za Google Translate
   wwcSignDeletedOrTooLong: ' Ciljni znak je bil izbrisan ali pa je bil prevod predolg.
     Prevod:'
-  wwcConfigGUIAmazonTranslateStatusButton: Preklop Amazon prevajanje
   wwctsOnTarget: ' Prevod podpisa omogočen za %i.'
   wwcConfigCacheDisabled: Predpomnilnik prevajalnika onemogočen.
   wwcConfigConversationWatsonURLInput: Trenutni URL je %i. Vnesite URL storitve za
@@ -129,7 +125,6 @@ Messages:
   wwctSameLangError: ' Ne morete prevajati v isti jezik!'
   wwctGUINewTranslationTarget: Izberite ciljni jezik
   wwctLangToLangStartOtherPlayer: ' Zdaj prevajanje klepeta %o od %i do %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon prevajanje konfiguracijo
   wwcConfigConnectionSuccess: Uspešno povezan z %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: ' Je aktiven prevajalec: %i'
@@ -179,8 +174,6 @@ Messages:
     %i.
   wwctGUIExistingTranslationButton: Prepiši trenutno prevajalsko sejo
   wwcOnJoinTranslationNotificationNoSourceLang: ' Vaš klepet je preveden v %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Preklop Google Translate
-  wwcConfigGUIWatsonStatusButton: Preklop Watson
   wwcUserDataReloaded: Naložen vse shranjene uporabniške podatke.
   wwcConfigGUISendTranslationChatButton: Pošlji opomnik klepeta aktivnemu prevajalcu
     ob prijavi
@@ -260,3 +253,6 @@ Messages:
     v vašem config.yml ali z /wwcc za uporabo tega vtičnika.'
   wwcNotDoneLoading: ' WorldwideChat še vedno inicializira. Prosimo, poskusite znova
     kmalu.'
+  wwcConfigGUIEachTranslatorSettings: '%i Konfiguracija'
+  wwcConfigGUIToggleButton: Preklap %i
+  wwcConfigGUIWatsonButton: Watson

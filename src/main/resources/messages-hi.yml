@@ -10,7 +10,6 @@ Messages:
     एक नया मान सेट करने के लिए 10 से अधिक कुछ भी टाइप करें, या वापस जाने के लिए 10
     से कम कुछ भी टाइप करें।
   wwctGUIMainMenuGlobal: वैश्विक अनुवाद मेनू
-  wwcConfigGUIWatsonButton: वाटसन में अनुवाद
   wwcConfigConversationPluginUpdateChatSuccess: ' प्लगइन अद्यतन चैट अनुस्मारक सफलतापूर्वक
     टॉगल किया गया।'
   wwctbOnTarget: ' पुस्तक अनुवाद %i के लिए सक्षम।'
@@ -61,7 +60,6 @@ Messages:
   wwctPlayerNotFound: ' खिलाड़ी %मैं नहीं मिला।'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' ग्लोबल चैट का अनुवाद
     किया जा रहा है, लेकिन आपकी गपश %o में किया जा रहा है।'
-  wwcConfigGUIGoogleTranslateSettings: Google अनुवाद कॉन्फ़िगरेशन
   wwcConfigGUIGlobalRateLimit: वैश्विक दर सीमा बदलें
   wwctGUIBackToSourceLanguageButton: स्रोत भाषा मेनू पर वापस जाएं
   wwcConfigGUIAmazonTranslateRegionButton: अमेज़ॅन क्षेत्र बदलें
@@ -69,7 +67,6 @@ Messages:
     या रद्द करने के लिए 0 टाइप करें। वैध भाषा कोड: %o'
   wwcConfigConversationLangInvalid: ' अवैध भाषा कोड!'
   wwctTranslationStopped: ' आपका चैट अनुवाद बंद कर दिया गया है।'
-  wwcConfigGUIWatsonSettings: वाटसन कॉन्फ़िगरेशन
   wwctsPlayerNotFound: ' खिलाड़ी %i या तो नहीं मिला है, या सक्रिय अनुवादक नहीं है।'
   wwcConfigGUIWatsonAPIKeyButton: वाटसन एपीआई कुंजी बदलें
   wwcEnabled: वर्ल्डवाइडचैट संस्करण %i सक्षम किया गया
@@ -96,7 +93,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google अनुवाद एपीआई कुंजी बदलें
   wwcSignDeletedOrTooLong: ' लक्ष्य चिह्न या तो हटा दिया गया था या अनुवाद बहुत लंबा
     था। अनुवाद:'
-  wwcConfigGUIAmazonTranslateStatusButton: अमेज़ॅन अनुवाद टॉगल करें
   wwctsOnTarget: ' साइन-अनुवाद सक्षम है %i के लिए।'
   wwcConfigCacheDisabled: अनुवादक कैश अक्षम।
   wwcConfigConversationWatsonURLInput: वर्तमान यूआरएल है %i. कृपया वाटसन के लिए एक
@@ -129,7 +125,6 @@ Messages:
   wwctSameLangError: ' आप एक ही भाषा में अनुवाद नहीं कर सकते हैं!'
   wwctGUINewTranslationTarget: एक लक्ष्य भाषा चुनें
   wwctLangToLangStartOtherPlayer: ' अब %o की गपश %i से %e तक अनुवाद कर रहा है।'
-  wwcConfigGUIAmazonTranslateSettings: अमेज़ॅन अनुवाद कॉन्फ़िगरेशन
   wwcConfigConnectionSuccess: '%o से सफलतापूर्वक जुड़ा हुआ है!'
   wwcConfigGUIGoogleTranslateButton: गूगल अनुवाद
   wwcsIsActiveTranslator: ' सक्रिय अनुवादक है: %i'
@@ -177,8 +172,6 @@ Messages:
   wwctGUIExistingTranslationButton: वर्तमान अनुवाद सत्र को मिटाकर लिखें
   wwcOnJoinTranslationNotificationNoSourceLang: ' आपकी गपश %o में अनुवादित की जा रही
     है।'
-  wwcConfigGUIGoogleTranslateStatusButton: गूगल अनुवाद टॉगल करें
-  wwcConfigGUIWatsonStatusButton: वाटसन टॉगल करें
   wwcUserDataReloaded: सभी सहेजे गए उपयोगकर्ता डेटा को लोड किया गया।
   wwcConfigGUISendTranslationChatButton: लॉगिन पर सक्रिय अनुवादक को चैट अनुस्मारक
     भेजें
@@ -262,3 +255,6 @@ Messages:
     लिए इसे अपने config.yml में या /wwcc के साथ ठीक करें।'
   wwcNotDoneLoading: ' वर्ल्डवाइड चैट अभी भी शुरू कर रहा है। कृपया शीघ्र ही फिर से
     कोशिश करें।'
+  wwcConfigGUIEachTranslatorSettings: '%i कॉन्फ़िगरेशन'
+  wwcConfigGUIToggleButton: टॉगल %i
+  wwcConfigGUIWatsonButton: वाटसन

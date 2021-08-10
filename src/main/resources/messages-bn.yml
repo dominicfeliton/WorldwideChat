@@ -10,7 +10,6 @@ Messages:
     একটি নতুন মান সেট করার জন্য 10 এর চেয়ে বড় কিছু টাইপ করুন, অথবা 10 এর কম কিছু
     ফিরে যেতে।
   wwctGUIMainMenuGlobal: গ্লোবাল অনুবাদ মেনু
-  wwcConfigGUIWatsonButton: ওয়াটসন অনুবাদ
   wwcConfigConversationPluginUpdateChatSuccess: ' প্লাগইন আপডেট চ্যাটের অনুস্মারক
     সফলভাবে টগল হয়েছে।'
   wwctbOnTarget: ' %i এর জন্য বইয়ের অনুবাদ সক্রিয় করা হয়েছে।'
@@ -60,7 +59,6 @@ Messages:
   wwctPlayerNotFound: ' খেলোয়াড় %i পাওয়া যায়নি।'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' গ্লোবাল চ্যাট অনুবাদ
     করা হচ্ছে, কিন্তু আপনার চ্যাট %o এ অনুবাদ করা হচ্ছে।'
-  wwcConfigGUIGoogleTranslateSettings: গুগল অনুবাদ কনফিগারেশন
   wwcConfigGUIGlobalRateLimit: গ্লোবাল রেট লিমিট পরিবর্তন করুন
   wwctGUIBackToSourceLanguageButton: সোর্স ল্যাঙ্গুয়েজ মেনুতে ফিরে যান
   wwcConfigGUIAmazonTranslateRegionButton: আমাজন অঞ্চল পরিবর্তন করুন
@@ -68,7 +66,6 @@ Messages:
     কোড লিখুন, অথবা বাতিল করার জন্য 0 টাইপ করুন। বৈধ ভাষা কোড: %o'
   wwcConfigConversationLangInvalid: ' ভাষা কোড অবৈধ!'
   wwctTranslationStopped: ' আপনার চ্যাটের অনুবাদ বন্ধ করা হয়েছে।'
-  wwcConfigGUIWatsonSettings: ওয়াটসন কনফিগারেশন
   wwctsPlayerNotFound: ' প্লেয়ার %i পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।'
   wwcConfigGUIWatsonAPIKeyButton: ওয়াটসন এপিআই কী পরিবর্তন করুন
   wwcEnabled: ওয়ার্ল্ডউইডচ্যাট সংস্করণ %i সক্রিয় করা হয়েছে।
@@ -95,7 +92,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: গুগল অনুবাদ API কী পরিবর্তন করুন
   wwcSignDeletedOrTooLong: ' টার্গেট সাইন হয় মুছে ফেলা হয় বা অনুবাদ খুব দীর্ঘ ছিল।
     অনুবাদ:'
-  wwcConfigGUIAmazonTranslateStatusButton: আমাজন অনুবাদ টগল
   wwctsOnTarget: ' %i এর জন্য সাইন অনুবাদ সক্রিয় করা হয়েছে।'
   wwcConfigCacheDisabled: অনুবাদক ক্যাশে নিষ্ক্রিয়
   wwcConfigConversationWatsonURLInput: বর্তমান URL %i। অনুগ্রহ করে ওয়াটসনের জন্য একটি
@@ -128,7 +124,6 @@ Messages:
   wwctGUINewTranslationTarget: একটি লক্ষ্যবস্তু ভাষা বেছে নিন
   wwctLangToLangStartOtherPlayer: ' এবার %o থেকে %i থেকে %e পর্যন্ত চ্যাট অনুবাদ করা
     হচ্ছে।'
-  wwcConfigGUIAmazonTranslateSettings: আমাজন অনুবাদ কনফিগারেশন
   wwcConfigConnectionSuccess: '%o এর সাথে সফলভাবে সংযুক্ত হয়েছে!'
   wwcConfigGUIGoogleTranslateButton: গুগল অনুবাদ
   wwcsIsActiveTranslator: ' সক্রিয় অনুবাদক: %i'
@@ -174,8 +169,6 @@ Messages:
   wwcConfigCacheEnabled: অনুবাদক ক্যাশে সক্রিয় এবং %i এর সীমা নির্ধারণ করা হয়েছে।
   wwctGUIExistingTranslationButton: বর্তমান অনুবাদের অধিবেশন মুছে দিন
   wwcOnJoinTranslationNotificationNoSourceLang: ' আপনার চ্যাট %o এ অনুবাদ করা হচ্ছে।'
-  wwcConfigGUIGoogleTranslateStatusButton: গুগল অনুবাদ টগল
-  wwcConfigGUIWatsonStatusButton: ওয়াটসন টগল করুন
   wwcUserDataReloaded: সমস্ত সংরক্ষিত ব্যবহারকারী ডেটা লোড করা হয়েছে।
   wwcConfigGUISendTranslationChatButton: লগইন এ সক্রিয় অনুবাদক চ্যাট অনুস্মারক
   wwcsLastTranslationTime: ' সর্বশেষ (সফল) অনুবাদের সময়: %i'
@@ -254,3 +247,6 @@ Messages:
     করে আপনার config.yml অথবা /wwcc এর সাথে এটি ঠিক করুন।'
   wwcNotDoneLoading: ' ওয়ার্ল্ডউইডচ্যাট এখনও শুরু হচ্ছে। দয়া করে খুব শীঘ্রই আবার
     চেষ্টা করুন।'
+  wwcConfigGUIEachTranslatorSettings: '%i কনফিগারেশন'
+  wwcConfigGUIToggleButton: '%i টগল করুন'
+  wwcConfigGUIWatsonButton: ওয়াটসন

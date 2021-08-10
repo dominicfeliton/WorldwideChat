@@ -10,7 +10,6 @@ Messages:
     ialah %i saat. Taip apa-apa yang lebih besar daripada 10 untuk menetapkan nilai
     baru, atau apa-apa kurang daripada 10 untuk kembali.
   wwctGUIMainMenuGlobal: Menu Terjemahan Global
-  wwcConfigGUIWatsonButton: Watson menterjemah
   wwcConfigConversationPluginUpdateChatSuccess: ' Peringatan sembang kemaskini pemalam
     berjaya ditogolkan.'
   wwctbOnTarget: ' Terjemahan buku dibenarkan untuk %i.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' Pemain %i tidak ditemui.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Sembang global sedang
     diterjemahkan, tetapi sembang anda sedang diterjemahkan ke %o.'
-  wwcConfigGUIGoogleTranslateSettings: Konfigurasi Terjemah Google
   wwcConfigGUIGlobalRateLimit: Ubah Had Kadar Global
   wwctGUIBackToSourceLanguageButton: Kembali ke Menu Bahasa Sumber
   wwcConfigGUIAmazonTranslateRegionButton: Ubah Wilayah Amazon
@@ -70,7 +68,6 @@ Messages:
     bahasa yang sah, atau taip 0 untuk dibatalkan. Kod bahasa yang sah: %o'
   wwcConfigConversationLangInvalid: ' Kod bahasa tidak sah!'
   wwctTranslationStopped: ' Terjemahan sembang anda telah dihentikan.'
-  wwcConfigGUIWatsonSettings: Konfigurasi Watson
   wwctsPlayerNotFound: ' Pemain %i sama ada tidak ditemui, atau bukan penterjemah
     aktif.'
   wwcConfigGUIWatsonAPIKeyButton: Ubah Kunci API Watson
@@ -99,7 +96,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Tukar Kunci Google Terjemah API
   wwcSignDeletedOrTooLong: ' Tanda sasaran sama ada dipadam atau terjemahan terlalu
     panjang. Terjemahan:'
-  wwcConfigGUIAmazonTranslateStatusButton: Togol Amazon Terjemah
   wwctsOnTarget: ' Daftar terjemahan dibenarkan untuk %i.'
   wwcConfigCacheDisabled: Cache penterjemah dilumpuhkan.
   wwcConfigConversationWatsonURLInput: URL semasa ialah %i. Sila masukkan URL perkhidmatan
@@ -132,7 +128,6 @@ Messages:
   wwctGUINewTranslationTarget: Pilih Bahasa Sasaran
   wwctLangToLangStartOtherPlayer: ' Sekarang menterjemahkan sembang dari %o dari %i
     ke %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Terjemah Konfigurasi
   wwcConfigConnectionSuccess: Berjaya disambungkan ke %o!
   wwcConfigGUIGoogleTranslateButton: Google Terjemah
   wwcsIsActiveTranslator: ' Adalah Penterjemah Aktif: %i'
@@ -181,8 +176,6 @@ Messages:
   wwctGUIExistingTranslationButton: Tulis ganti Sesi Terjemahan Semasa
   wwcOnJoinTranslationNotificationNoSourceLang: ' Sembang anda sedang diterjemahkan
     ke %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Togol Google Terjemah
-  wwcConfigGUIWatsonStatusButton: Togol Watson
   wwcUserDataReloaded: Dimuatkan semua data pengguna yang disimpan.
   wwcConfigGUISendTranslationChatButton: Hantar Peringatan Sembang kepada Penterjemah
     Aktif semasa Log Masuk
@@ -266,3 +259,6 @@ Messages:
   wwcInvalidTranslator: ' Tetapan penterjemah tidak sah. Sila betulkan ini dalam config.yml
     anda atau dengan /wwcc untuk guna pemalam ini.'
   wwcNotDoneLoading: ' WorldWidChat masih memulakan. Sila cuba lagi tidak lama lagi.'
+  wwcConfigGUIEachTranslatorSettings: '%i Konfigurasi'
+  wwcConfigGUIToggleButton: Togol
+  wwcConfigGUIWatsonButton: Watson

@@ -10,7 +10,6 @@ Messages:
     je %i sekund. Zadejte něco většího než 10 pro nastavení nové hodnoty nebo něco
     méně než 10, abyste se vrátili zpět.
   wwctGUIMainMenuGlobal: Globální nabídka překladu
-  wwcConfigGUIWatsonButton: Watson Translate
   wwcConfigConversationPluginUpdateChatSuccess: ' Připomenutí konverzace aktualizace
     modulu plugin úspěšně přepnul.'
   wwctbOnTarget: ' Překlad knihy povolen pro %i.'
@@ -61,7 +60,6 @@ Messages:
   wwctPlayerNotFound: ' Hráč %Nenalezen.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Globální chat je překládán,
     ale váš chat je překládán do %o.'
-  wwcConfigGUIGoogleTranslateSettings: Konfigurace Překladače Google
   wwcConfigGUIGlobalRateLimit: Změna globálního limitu sazeb
   wwctGUIBackToSourceLanguageButton: Zpět na nabídku zdrojového jazyka
   wwcConfigGUIAmazonTranslateRegionButton: Změnit oblast Amazon
@@ -69,7 +67,6 @@ Messages:
     jazyka nebo zadejte 0 pro zrušení. Platné kódy jazyků: %o'
   wwcConfigConversationLangInvalid: ' Neplatný kód jazyka!'
   wwctTranslationStopped: ' Váš překlad chatu byl zastaven.'
-  wwcConfigGUIWatsonSettings: Konfigurace Watson
   wwctsPlayerNotFound: ' Hráč %i není buď nalezen, nebo není aktivní překladatel.'
   wwcConfigGUIWatsonAPIKeyButton: Změna klíče API Watson
   wwcEnabled: Povolená verze %i WorldwideChat.
@@ -96,7 +93,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Změna klíče rozhraní API Překladač Google
   wwcSignDeletedOrTooLong: ' Cílový znak byl buď odstraněn, nebo překlad byl příliš
     dlouhý. Překlad:'
-  wwcConfigGUIAmazonTranslateStatusButton: Přepnout Amazon Translate
   wwctsOnTarget: ' Podepsat překlad povolen pro %i.'
   wwcConfigCacheDisabled: Cache překladatele zakázána.
   wwcConfigConversationWatsonURLInput: Aktuální URL je %i. Zadejte prosím adresu URL
@@ -127,7 +123,6 @@ Messages:
   wwctSameLangError: ' Nemůžete přeložit do stejného jazyka!'
   wwctGUINewTranslationTarget: Zvolte cílový jazyk
   wwctLangToLangStartOtherPlayer: ' Nyní překládám chatu %o od %i do %e.'
-  wwcConfigGUIAmazonTranslateSettings: Konfigurace Amazon Translate
   wwcConfigConnectionSuccess: Úspěšně připojeno k %o!
   wwcConfigGUIGoogleTranslateButton: Překladač Google
   wwcsIsActiveTranslator: ' Je aktivní Překladatel: %i'
@@ -176,8 +171,6 @@ Messages:
   wwcConfigCacheEnabled: Mezipaměť překladatele povolena a nastavena na limit %i.
   wwctGUIExistingTranslationButton: Přepsat aktuální relaci překladu
   wwcOnJoinTranslationNotificationNoSourceLang: ' Váš chat je překládán do %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Přepnout Překladač Google
-  wwcConfigGUIWatsonStatusButton: Přepnout Watson
   wwcUserDataReloaded: Načtena všechna uložená uživatelská data.
   wwcConfigGUISendTranslationChatButton: Odeslat připomenutí chatu aktivnímu překladateli
     při přihlášení
@@ -259,3 +252,6 @@ Messages:
     config.yml nebo /wwcc pro použití tohoto pluginu.'
   wwcNotDoneLoading: ' WorldwideChat se stále inicializuje. Zkuste to prosím brzy
     znovu.'
+  wwcConfigGUIEachTranslatorSettings: '%i Konfigurace'
+  wwcConfigGUIToggleButton: Přepnout %i
+  wwcConfigGUIWatsonButton: Watsona

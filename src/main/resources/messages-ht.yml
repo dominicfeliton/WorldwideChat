@@ -10,7 +10,6 @@ Messages:
     se % mwen segonn. Tape anyen ki pi konsekan pase 10 yo mete yon nouvo valè, oswa
     anyen mwens pase 10 ale tounen.
   wwctGUIMainMenuGlobal: Meni tradiksyon mondyal
-  wwcConfigGUIWatsonButton: Watson Translate
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin aktyalizasyon chat rapèl
     baskile avèk siksè.'
   wwctbOnTarget: ' Tradiksyon liv pèmèt pou % mwen.'
@@ -60,7 +59,6 @@ Messages:
   wwctPlayerNotFound: ' Jwè mwen pa jwenn.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Global chat ke yo
     te tradui, men se chat ou ke yo te tradui nan %o.'
-  wwcConfigGUIGoogleTranslateSettings: Google Translate konfigirasyon
   wwcConfigGUIGlobalRateLimit: Chanje limit pousantaj mondyal
   wwctGUIBackToSourceLanguageButton: Retounen nan Menu Lang Sous
   wwcConfigGUIAmazonTranslateRegionButton: Chanje Amazon Rejyon
@@ -68,7 +66,6 @@ Messages:
     yon kòd lang ki valab, oswa tape 0 anile. kòd lang valab: %o'
   wwcConfigConversationLangInvalid: ' Envalid kòd lang!'
   wwctTranslationStopped: ' Tradiksyon chat ou te sispann.'
-  wwcConfigGUIWatsonSettings: Watson konfigirasyon
   wwctsPlayerNotFound: ' Jwè mwen swa pa jwenn, oswa se pa yon tradiktè aktif.'
   wwcConfigGUIWatsonAPIKeyButton: Chanje Watson API kle
   wwcEnabled: Pèmèt WorldwideChat vèsyon % mwen.
@@ -95,7 +92,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Chanje Google Translate API kle
   wwcSignDeletedOrTooLong: ' Siy sib te swa efase oswa tradiksyon an te twò lontan.
     Tradiksyon:'
-  wwcConfigGUIAmazonTranslateStatusButton: Baskile Amazon Translate
   wwctsOnTarget: ' Siyen tradiksyon pèmèt pou % mwen.'
   wwcConfigCacheDisabled: Kachèt tradiktè enfim.
   wwcConfigConversationWatsonURLInput: URL aktyèl la se % mwen % Tanpri opinyon yon
@@ -127,7 +123,6 @@ Messages:
   wwctGUINewTranslationTarget: Chwazi yon lang sib
   wwctLangToLangStartOtherPlayer: ' Koulye a, tradui chat la nan %o soti nan % mwen
     nan %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Translate konfigirasyon
   wwcConfigConnectionSuccess: Siksè konekte nan %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: ' Èske tradiktè aktif: % mwen'
@@ -173,8 +168,6 @@ Messages:
   wwcConfigCacheEnabled: Cachèt tradiktè pèmèt, li mete nan yon limit nan % mwen.
   wwctGUIExistingTranslationButton: Replase sesyon tradiksyon aktyèl la
   wwcOnJoinTranslationNotificationNoSourceLang: ' Se chat ou ke yo te tradui nan %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Baskile Google Translate
-  wwcConfigGUIWatsonStatusButton: Baskile Watson
   wwcUserDataReloaded: Chaje tout done itilizatè sove.
   wwcConfigGUISendTranslationChatButton: Voye Chat Rapèl tradiktè aktif sou Login
   wwcsLastTranslationTime: ' Dènye (Siksè) Tan Tradiksyon: % mwen'
@@ -250,3 +243,6 @@ Messages:
     ou oswa ak/wwcc yo sèvi ak sa a Plugin.'
   wwcNotDoneLoading: ' WorldwideChat se toujou inisyalizin. Tanpri eseye ankò yon
     ti tan.'
+  wwcConfigGUIEachTranslatorSettings: '% mwen konfigirasyon'
+  wwcConfigGUIToggleButton: baskèl % mwen
+  wwcConfigGUIWatsonButton: Watson

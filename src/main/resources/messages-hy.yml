@@ -10,7 +10,6 @@ Messages:
     վայրկյան է: Մուտքագրեք ավելի մեծ բան, քան 10- ը նոր արժեք սահմանելու համար, կամ
     10- ից պակաս բան վերադառնալու համար:'
   wwctGUIMainMenuGlobal: Գլոբալ թարգմանության մենյու
-  wwcConfigGUIWatsonButton: Watson Թարգմանել
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin թարմացումը զրուցարան հիշեցում
     toggled հաջողությամբ.'
   wwctbOnTarget: ' Գիրք թարգմանությունը միացված է %i համար։'
@@ -63,7 +62,6 @@ Messages:
   wwctPlayerNotFound: ' Խաղացող %Ես չեմ գտել:'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Գլոբալ Վիճակագրություն
     թարգմանվում է, բայց ձեր զրուցարանում թարգմանվում է %o.'
-  wwcConfigGUIGoogleTranslateSettings: Google թարգմանել կոնֆիգուրացիա
   wwcConfigGUIGlobalRateLimit: Փոխել Գլոբալ Տոկոսադրույքը
   wwctGUIBackToSourceLanguageButton: Վերադառնալ Աղբյուրի լեզվով
   wwcConfigGUIAmazonTranslateRegionButton: Փոխել Amazon Տարածաշրջան
@@ -71,7 +69,6 @@ Messages:
     վավեր լեզվի կոդը կամ մուտքագրեք 0 չեղյալ համարելու համար: Լեզվի վավեր կոդեր: %o'
   wwcConfigConversationLangInvalid: ' Անվավեր լեզվի կոդը!'
   wwctTranslationStopped: ' Ձեր զրուցարանում թարգմանությունը դադարեցվել է.'
-  wwcConfigGUIWatsonSettings: Watson կոնֆիգուրացիա
   wwctsPlayerNotFound: ' Նվագարկիչ %i կամ չի հայտնաբերվել, կամ ակտիվ թարգմանիչ չէ:'
   wwcConfigGUIWatsonAPIKeyButton: Փոխել Watson API բանալին
   wwcEnabled: Միացված WorldwideChat տարբերակը %i.
@@ -99,7 +96,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Փոխել Google Թարգմանել API բանալի
   wwcSignDeletedOrTooLong: ' Թիրախային նշանը կամ ջնջվել է կամ թարգմանությունը չափազանց
     երկար է. Թարգմանություն՝'
-  wwcConfigGUIAmazonTranslateStatusButton: Toggle Amazon Թարգմանել
   wwctsOnTarget: ' Նշեք թարգմանությունը միացված է %i համար։'
   wwcConfigCacheDisabled: Թարգմանիչ քեշը անջատված.
   wwcConfigConversationWatsonURLInput: 'Ընթացիկ URL %i է: Խնդրում ենք մուտքագրել ծառայության
@@ -130,7 +126,6 @@ Messages:
   wwctSameLangError: ' Դուք չեք կարող թարգմանել նույն լեզվով!'
   wwctGUINewTranslationTarget: Ընտրեք թիրախային լեզու
   wwctLangToLangStartOtherPlayer: ' Այժմ թարգմանելով զրույցը %o ից %i %e:'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Թարգմանել Կազմ
   wwcConfigConnectionSuccess: Հաջողությամբ կապված է %o!
   wwcConfigGUIGoogleTranslateButton: Google Թարգմանել
   wwcsIsActiveTranslator: ' Ակտիվ թարգմանիչ է: %i'
@@ -179,8 +174,6 @@ Messages:
   wwcConfigCacheEnabled: Թարգմանչի քեշը միացված է եւ սահմանվում է սահմանաչափի %i.
   wwctGUIExistingTranslationButton: Վերագրանցել ընթացիկ թարգմանության նիստը
   wwcOnJoinTranslationNotificationNoSourceLang: ' Ձեր զրույցը թարգմանվում է %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Փոխարկել Google Թարգմանել
-  wwcConfigGUIWatsonStatusButton: Անջատել Watson
   wwcUserDataReloaded: Բեռնված բոլոր պահպանված օգտվողի տվյալները.
   wwcConfigGUISendTranslationChatButton: Ուղարկել Զրուցարան Հիշեցում ակտիվ թարգմանիչ
     է Մուտք
@@ -262,3 +255,6 @@ Messages:
     ձեր config.yml կամ /wwcc օգտագործել այս plugin.'
   wwcNotDoneLoading: ' WorldwideChat դեռ սկզբնականացումը. Խնդրում ենք կրկին փորձեք
     շուտով.'
+  wwcConfigGUIEachTranslatorSettings: '%i կոնֆիգուրացիա'
+  wwcConfigGUIToggleButton: Անջատել %i
+  wwcConfigGUIWatsonButton: Վոտսոն

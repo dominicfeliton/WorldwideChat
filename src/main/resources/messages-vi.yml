@@ -10,7 +10,6 @@ Messages:
     cập nhật là %i giây. Nhập bất cứ điều gì lớn hơn 10 để đặt một giá trị mới, hoặc
     bất cứ điều gì nhỏ hơn 10 để quay lại.
   wwctGUIMainMenuGlobal: Menu dịch toàn cầu
-  wwcConfigGUIWatsonButton: Watson Dịch
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin cập nhật trò chuyện nhắc
     nhở bật thành công.'
   wwctbOnTarget: ' Đã bật dịch sách cho %i.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' Người chơi %Tôi không tìm thấy.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Trò chuyện toàn cầu
     đang được dịch, nhưng trò chuyện của bạn đang được dịch vào %o.'
-  wwcConfigGUIGoogleTranslateSettings: Cấu hình Google Translate
   wwcConfigGUIGlobalRateLimit: Thay đổi giới hạn mức giá toàn cầu
   wwctGUIBackToSourceLanguageButton: Quay lại trình đơn ngôn ngữ nguồn
   wwcConfigGUIAmazonTranslateRegionButton: Thay đổi Vùng Amazon
@@ -70,7 +68,6 @@ Messages:
     ngôn ngữ hợp lệ, hoặc nhập 0 để hủy. Mã ngôn ngữ hợp lệ: %o'
   wwcConfigConversationLangInvalid: ' Mã ngôn ngữ không hợp lệ!'
   wwctTranslationStopped: ' Bản dịch trò chuyện của bạn đã bị dừng lại.'
-  wwcConfigGUIWatsonSettings: Cấu hình Watson
   wwctsPlayerNotFound: ' Người chơi %i hoặc là không tìm thấy, hoặc không phải là
     một dịch giả đang hoạt động.'
   wwcConfigGUIWatsonAPIKeyButton: Thay đổi khóa API Watson
@@ -98,7 +95,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Thay đổi khóa API Google Translate
   wwcSignDeletedOrTooLong: ' Dấu hiệu mục tiêu đã bị xóa hoặc bản dịch quá dài. Bản
     dịch:'
-  wwcConfigGUIAmazonTranslateStatusButton: Chuyển đổi Amazon Translate
   wwctsOnTarget: ' Đăng dịch được bật cho %i.'
   wwcConfigCacheDisabled: Bộ nhớ cache của trình dịch bị tắt.
   wwcConfigConversationWatsonURLInput: URL hiện tại là %i. Vui lòng nhập URL dịch
@@ -131,7 +127,6 @@ Messages:
   wwctGUINewTranslationTarget: Chọn một ngôn ngữ mục tiêu
   wwctLangToLangStartOtherPlayer: ' Bây giờ dịch cuộc trò chuyện của %o từ %i đến
     %e.'
-  wwcConfigGUIAmazonTranslateSettings: Cấu hình Amazon Translate
   wwcConfigConnectionSuccess: Kết nối thành công vào %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: ' Đang hoạt động Translator: %i'
@@ -182,8 +177,6 @@ Messages:
   wwctGUIExistingTranslationButton: Ghi đè phiên dịch hiện tại
   wwcOnJoinTranslationNotificationNoSourceLang: ' Trò chuyện của bạn đang được dịch
     tới %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Chuyển đổi Google Translate
-  wwcConfigGUIWatsonStatusButton: Chuyển đổi Watson
   wwcUserDataReloaded: Đã nạp tất cả dữ liệu người dùng đã lưu.
   wwcConfigGUISendTranslationChatButton: Gửi lời nhắc trò chuyện cho Active Translator
     khi đăng nhập
@@ -267,3 +260,6 @@ Messages:
   wwcInvalidTranslator: ' Cài đặt dịch không hợp lệ. Vui lòng sửa lỗi này trong config.yml
     của bạn hoặc với /wwccc để sử dụng plugin này.'
   wwcNotDoneLoading: ' WorldwideChat vẫn đang khởi tạo. Vui lòng thử lại ngay.'
+  wwcConfigGUIEachTranslatorSettings: '%i Cấu hình'
+  wwcConfigGUIToggleButton: Tật %i
+  wwcConfigGUIWatsonButton: Watson

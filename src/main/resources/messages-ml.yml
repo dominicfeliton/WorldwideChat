@@ -10,7 +10,6 @@ Messages:
     സെക്കൻഡ് ആണ്. ഒരു പുതിയ മൂല്യം സജ്ജമാക്കാൻ 10 ൽ കൂടുതൽ ഒന്നും ടൈപ്പുചെയ്യുക, അല്ലെങ്കിൽ
     തിരികെ പോകാൻ 10 ൽ കുറയാത്ത ഒന്നും.
   wwctGUIMainMenuGlobal: ആഗോള പരിഭാഷ മെനു
-  wwcConfigGUIWatsonButton: വാട്സൺ വിവർത്തനം
   wwcConfigConversationPluginUpdateChatSuccess: ' പ്ലഗിൻ അപ്ഡേറ്റ് ചാറ്റ് ഓർമ്മപ്പെടുത്തൽ
     വിജയകരമായി ടോഗിൾ.'
   wwctbOnTarget: ' പുസ്തക വിവർത്തനം %i എന്നതിന് പ്രാപ്തമാക്കി.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' കളിക്കാരന് % ഞാൻ കണ്ടെത്തിയില്ല.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' ആഗോള ചാറ്റ് വിവർത്തനം
     ചെയ്യുകയാണ്, പക്ഷേ നിങ്ങളുടെ ചാറ്റിൽ %o ലേക്ക് വിവർത്തനം ചെയ്യപ്പെടുന്നു.'
-  wwcConfigGUIGoogleTranslateSettings: Google കോൺഫിഗറേഷൻ വിവർത്തനം ചെയ്യുക
   wwcConfigGUIGlobalRateLimit: ആഗോള നിരക്ക് പരിധി മാറ്റുക
   wwctGUIBackToSourceLanguageButton: ഉറവിട ഭാഷാ മെനുവിലേക്ക് തിരികെ
   wwcConfigGUIAmazonTranslateRegionButton: ആമസോൺ റീജിയൺ മാറ്റുക
@@ -70,7 +68,6 @@ Messages:
     കോഡ് നൽകുക, അല്ലെങ്കിൽ റദ്ദാക്കാൻ 0 ടൈപ്പ് ചെയ്യുക. സാധുവായ ഭാഷാ കോഡുകൾ: %o'
   wwcConfigConversationLangInvalid: ' അസാധുവായ ഭാഷാ കോഡ്!'
   wwctTranslationStopped: ' നിങ്ങളുടെ ചാറ്റ് വിവർത്തനം നിർത്തി.'
-  wwcConfigGUIWatsonSettings: വാട്സൺ ക്രമീകരണം
   wwctsPlayerNotFound: ' കളിക്കാരന് %i കണ്ടെത്തിയില്ല, അല്ലെങ്കിൽ ഒരു സജീവ പരിഭാഷകനല്ല.'
   wwcConfigGUIWatsonAPIKeyButton: വാട്സൺ എപിഐ കീ മാറ്റുക
   wwcEnabled: പ്രാപ്തമാക്കി ചാറ്റ് പതിപ്പ് %i.
@@ -98,7 +95,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: ഗൂഗിൾ മാറ്റുക എപിഐ കീ വിവർത്തനം
   wwcSignDeletedOrTooLong: ' ടാർഗെറ്റ് ചിഹ്നം ഒന്നുകിൽ ഇല്ലാതാക്കി അല്ലെങ്കിൽ വിവർത്തനം
     ദൈർഘ്യമേറിയതാണ്. പരിഭാഷ:'
-  wwcConfigGUIAmazonTranslateStatusButton: ആമസോൺ വിവർത്തനം ടോഗിൾ
   wwctsOnTarget: ' സൈൻ വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി %i.'
   wwcConfigCacheDisabled: പരിഭാഷകൻ കാഷെ അപ്രാപ്തമാക്കി.
   wwcConfigConversationWatsonURLInput: നിലവിലെ URL %i ആണ് വാട്സണിലെ ഒരു സേവന URL ഇൻപുട്ട്
@@ -131,7 +127,6 @@ Messages:
   wwctGUINewTranslationTarget: ഒരു ടാർഗെറ്റ് ഭാഷ തിരഞ്ഞെടുക്കുക
   wwctLangToLangStartOtherPlayer: ' ഇപ്പോൾ %o എന്ന ചാറ്റ് വിവർത്തനം ചെയ്യുക %i മുതൽ
     %e മുതൽ %e.'
-  wwcConfigGUIAmazonTranslateSettings: ആമസോൺ കോൺഫിഗറേഷൻ വിവർത്തനം ചെയ്യുക
   wwcConfigConnectionSuccess: '%o ലേക്ക് വിജയകരമായി കണക്റ്റുചെയ്തു!'
   wwcConfigGUIGoogleTranslateButton: Google വിവർത്തനം
   wwcsIsActiveTranslator: ' സജീവ പരിഭാഷകൻ: %i'
@@ -183,8 +178,6 @@ Messages:
   wwctGUIExistingTranslationButton: ഇപ്പോഴത്തെ പരിഭാഷാ സെഷൻ
   wwcOnJoinTranslationNotificationNoSourceLang: ' നിങ്ങളുടെ ചാറ്റിൽ %o ലേക്ക് വിവർത്തനം
     ചെയ്യപ്പെടുന്നു.'
-  wwcConfigGUIGoogleTranslateStatusButton: Google വിവർത്തനം ടോഗിൾ
-  wwcConfigGUIWatsonStatusButton: ടോഗിൾ വാട്സൺ
   wwcUserDataReloaded: സംരക്ഷിച്ച എല്ലാ ഉപയോക്തൃ ഡാറ്റയും ലോഡുചെയ്തു.
   wwcConfigGUISendTranslationChatButton: ലോഗിൻ സജീവ പരിഭാഷകൻ ചാറ്റ് ഓർമ്മപ്പെടുത്തൽ
     അയയ്ക്കുക
@@ -265,3 +258,6 @@ Messages:
   wwcInvalidTranslator: ' അസാധുവായ വിവർത്തകൻ ക്രമീകരണങ്ങൾ. ഈ പ്ലഗിൻ ഉപയോഗിക്കുന്നതിന്
     നിങ്ങളുടെ കോൺഫിഗറേഷനിൽ അല്ലെങ്കിൽ /wwcc ഉപയോഗിച്ച് ഇത് പരിഹരിക്കുക.'
   wwcNotDoneLoading: ' ചാറ്റ് ഇപ്പോഴും സമാരംഭിച്ചു ആണ്. ദയവായി ഉടൻ വീണ്ടും ശ്രമിക്കുക.'
+  wwcConfigGUIEachTranslatorSettings: '%i കോൺഫിഗറേഷൻ'
+  wwcConfigGUIToggleButton: ടോഗിൾ % 1
+  wwcConfigGUIWatsonButton: വാട്സൺ

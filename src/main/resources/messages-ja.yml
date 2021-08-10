@@ -8,7 +8,6 @@ Messages:
   wwcConfigConversationUpdateCheckerInput: 更新チェッカーの現在の遅延は %i 秒です。10 より大きい値を入力して新しい値を設定するか、10
     より小さい値を入力して戻ります。
   wwctGUIMainMenuGlobal: グローバル翻訳メニュー
-  wwcConfigGUIWatsonButton: ワトソン翻訳
   wwcConfigConversationPluginUpdateChatSuccess: ' プラグイン更新チャットのリマインダーが正常に切り替えられました。'
   wwctbOnTarget: ' %i で本の翻訳が有効になりました。'
   wwcsNotATranslator: ' %i で利用可能なレコードはまだありません。'
@@ -51,7 +50,6 @@ Messages:
   wwctPlayerNotFound: ' プレイヤー %i が見つかりません。'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' グローバルチャットは翻訳されていますが、チャットは
     %oに翻訳されています。'
-  wwcConfigGUIGoogleTranslateSettings: グーグル翻訳の設定
   wwcConfigGUIGlobalRateLimit: グローバルレート制限の変更
   wwctGUIBackToSourceLanguageButton: ソース言語メニューに戻る
   wwcConfigGUIAmazonTranslateRegionButton: Amazonリージョンの変更
@@ -59,7 +57,6 @@ Messages:
     %o'
   wwcConfigConversationLangInvalid: ' 言語コードが無効です！'
   wwctTranslationStopped: ' チャットの翻訳が停止されました。'
-  wwcConfigGUIWatsonSettings: ワトソンの構成
   wwctsPlayerNotFound: ' Player %i が見つからないか、アクティブなトランスレータではありません。'
   wwcConfigGUIWatsonAPIKeyButton: ワトソン API キーの変更
   wwcEnabled: WorldwideChat バージョン %i を有効にしました。
@@ -81,7 +78,6 @@ Messages:
   wwcConfigConversationPrefixSuccess: ' プレフィックスが正常に変更されました。'
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google翻訳APIキーを変更する
   wwcSignDeletedOrTooLong: ' ターゲット記号が削除されたか、翻訳が長すぎます。翻訳:'
-  wwcConfigGUIAmazonTranslateStatusButton: Amazon翻訳をトグルする
   wwctsOnTarget: ' 署名翻訳は %i に対して有効になっています。'
   wwcConfigCacheDisabled: トランスレータキャッシュが無効になりました。
   wwcConfigConversationWatsonURLInput: 現在の URL は %i です。Watson のサービスの URL を入力するか、0
@@ -109,7 +105,6 @@ Messages:
   wwctSameLangError: ' 同じ言語に翻訳することはできません！'
   wwctGUINewTranslationTarget: ターゲット言語の選択
   wwctLangToLangStartOtherPlayer: ' 今、 %oのチャットを %iから %eに翻訳します。'
-  wwcConfigGUIAmazonTranslateSettings: Amazon翻訳の設定
   wwcConfigConnectionSuccess: '%oに正常に接続されました！'
   wwcConfigGUIGoogleTranslateButton: グーグル翻訳
   wwcsIsActiveTranslator: ' アクティブなトランスレータか: %i'
@@ -147,8 +142,6 @@ Messages:
   wwcConfigCacheEnabled: トランスレータキャッシュを有効にし、上限 %iに設定しました。
   wwctGUIExistingTranslationButton: 現在の変換セッションを上書き
   wwcOnJoinTranslationNotificationNoSourceLang: ' チャットは %oに翻訳されています。'
-  wwcConfigGUIGoogleTranslateStatusButton: グーグル翻訳を切り替える
-  wwcConfigGUIWatsonStatusButton: ワトソンを切り替え
   wwcUserDataReloaded: 保存されたユーザーデータをすべてロードしました。
   wwcConfigGUISendTranslationChatButton: ログイン時にチャットリマインダーをアクティブな翻訳者に送信する
   wwcsLastTranslationTime: ' 最後 (成功した) 変換時間: %i'
@@ -211,3 +204,6 @@ Messages:
   wwcChatTranslationFail: ' メッセージの翻訳に失敗しました。'
   wwcInvalidTranslator: ' トランスレータ設定が無効です。このプラグインを使用するには、config.yml または /wwcc でこれを修正してください。'
   wwcNotDoneLoading: ' WorldwideChat はまだ初期化中です。しばらくしてからもう一度お試しください。'
+  wwcConfigGUIEachTranslatorSettings: '%i 構成'
+  wwcConfigGUIToggleButton: '%i を切り替える'
+  wwcConfigGUIWatsonButton: ワトソン

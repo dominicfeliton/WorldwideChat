@@ -10,7 +10,6 @@ Messages:
     is %i sekondes. Tik enigiets groter as 10 om \'n nuwe waarde te stel, of enigiets
     minder as 10 om terug te gaan.
   wwctGUIMainMenuGlobal: Globale Vertaling Menu
-  wwcConfigGUIWatsonButton: Watson vertaal
   wwcConfigConversationPluginUpdateChatSuccess: ' Inprop update chat herinnering geskakel
     suksesvol.'
   wwctbOnTarget: ' Boekvertaling geaktiveer vir %i.'
@@ -61,7 +60,6 @@ Messages:
   wwctPlayerNotFound: ' Speler %ek nie gevind nie.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Global chat word vertaal,
     maar jou chat word vertaal na %o.'
-  wwcConfigGUIGoogleTranslateSettings: Google Translate Opstelling
   wwcConfigGUIGlobalRateLimit: Verander Globale Koersbeperking
   wwctGUIBackToSourceLanguageButton: Terug na Bron Taal Menu
   wwcConfigGUIAmazonTranslateRegionButton: Verander Amazon Streek
@@ -69,7 +67,6 @@ Messages:
     geldige taalkode in, of tik 0 om te kanselleer. Geldige taalkodes: %o'
   wwcConfigConversationLangInvalid: ' Ongeldige taal kode!'
   wwctTranslationStopped: ' Jou chat vertaling is gestop.'
-  wwcConfigGUIWatsonSettings: Watson Opstelling
   wwctsPlayerNotFound: ' Speler %i is nie gevind nie, of is nie \''n aktiewe vertaler
     nie.'
   wwcConfigGUIWatsonAPIKeyButton: Verander Watson API Sleutel
@@ -97,7 +94,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Verander Google Translate API-sleutel
   wwcSignDeletedOrTooLong: ' Teiken teken is verwyder of die vertaling was te lank.
     Vertaling:'
-  wwcConfigGUIAmazonTranslateStatusButton: Wissel Amazon Vertaal
   wwctsOnTarget: ' Teken vertaling geaktiveer vir %i.'
   wwcConfigCacheDisabled: Vertaler kas gedeaktiveer.
   wwcConfigConversationWatsonURLInput: Die huidige URL is %i. Voer asseblief \'n diens-URL
@@ -128,7 +124,6 @@ Messages:
   wwctSameLangError: ' Jy kan nie na dieselfde taal vertaal nie!'
   wwctGUINewTranslationTarget: Kies \'n teikentaal
   wwctLangToLangStartOtherPlayer: ' Vertaal nou die klets van %o van %i na %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Translate Opstelling
   wwcConfigConnectionSuccess: Suksesvol verbind na %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: ' Is Aktief Vertaler: %i'
@@ -174,8 +169,6 @@ Messages:
   wwcConfigCacheEnabled: Vertaler kas geaktiveer en stel op \'n limiet van %i.
   wwctGUIExistingTranslationButton: Oorskryf Huidige Vertaling Sessie
   wwcOnJoinTranslationNotificationNoSourceLang: ' Jou geselsie word na %o vertaal.'
-  wwcConfigGUIGoogleTranslateStatusButton: Wissel Google Vertaal
-  wwcConfigGUIWatsonStatusButton: Skakel Watson
   wwcUserDataReloaded: Gelaai alle gestoor gebruiker data.
   wwcConfigGUISendTranslationChatButton: Stuur Chat Herinnering aan Active Translator
     op Login
@@ -260,3 +253,6 @@ Messages:
     config.yml of met/wwcc om hierdie inprop te gebruik.'
   wwcNotDoneLoading: ' WorldwideChat is nog steeds inisialiseer. Probeer asseblief
     weer binnekort.'
+  wwcConfigGUIEachTranslatorSettings: '%i Opstelling'
+  wwcConfigGUIToggleButton: Wissel
+  wwcConfigGUIWatsonButton: Watson

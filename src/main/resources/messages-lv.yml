@@ -10,7 +10,6 @@ Messages:
     ir %i sekundes. Ierakstiet kaut ko lielāku par 10, lai iestatītu jaunu vērtību,
     vai jebko, kas ir mazāks par 10, lai atgrieztos.
   wwctGUIMainMenuGlobal: Globālā tulkošanas
-  wwcConfigGUIWatsonButton: Watson tulkot
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin atjauninājums tērzēšanas
     atgādinājums veiksmīgi pārslēgts.'
   wwctbOnTarget: ' Grāmatu tulkošana iespējota uz %i.'
@@ -61,7 +60,6 @@ Messages:
   wwctPlayerNotFound: ' Spēlētājs %es neesmu atrasts.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Globālā tērzēšana
     tiek tulkota, bet jūsu tērzēšana tiek tulkota uz %o.'
-  wwcConfigGUIGoogleTranslateSettings: Google tulkošanas konfigurācija
   wwcConfigGUIGlobalRateLimit: Mainīt globālo likmes ierobežojumu
   wwctGUIBackToSourceLanguageButton: Atpakaļ uz avota valodas izvēlni
   wwcConfigGUIAmazonTranslateRegionButton: Mainīt Amazones reģionu
@@ -69,7 +67,6 @@ Messages:
     derīgu valodas kodu vai ierakstiet 0, lai atceltu. Derīgi valodas kodi: %o'
   wwcConfigConversationLangInvalid: ' Nederīgs valodas kods!'
   wwctTranslationStopped: ' Jūsu tērzēšanas tulkošana ir apturēta.'
-  wwcConfigGUIWatsonSettings: Watson konfigurācija
   wwctsPlayerNotFound: ' Spēlētājs %i vai nu nav atrasts, vai nav aktīvs tulkotājs.'
   wwcConfigGUIWatsonAPIKeyButton: Mainīt Watson API atslēgu
   wwcEnabled: Iespējota WorldwideChat versija %i.
@@ -96,7 +93,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Mainīt Google tulkot API atslēgu
   wwcSignDeletedOrTooLong: ' Mērķa zīme tika vai nu dzēsta, vai tulkojums bija pārāk
     garš. Tulkojums:'
-  wwcConfigGUIAmazonTranslateStatusButton: Pārslēgt Amazon tulkot
   wwctsOnTarget: ' Pierakstīšanās tulkojums iespējots uz %i.'
   wwcConfigCacheDisabled: Tulkotāja kešatmiņa ir at
   wwcConfigConversationWatsonURLInput: Pašreizējais URL ir %i. Lūdzu, ievadiet pakalpojuma
@@ -129,7 +125,6 @@ Messages:
   wwctSameLangError: ' Jūs nevarat tulkot tajā pašā valodā!'
   wwctGUINewTranslationTarget: Izvēlēties mērķa valodu
   wwctLangToLangStartOtherPlayer: ' Tagad tulkojot tērzēšanu %o no %i uz %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon tulkot konfigurācija
   wwcConfigConnectionSuccess: Veiksmīgi savienots ar %o!
   wwcConfigGUIGoogleTranslateButton: Google tulkot
   wwcsIsActiveTranslator: ' Ir aktīvs tulkotājs: %i'
@@ -177,8 +172,6 @@ Messages:
   wwcConfigCacheEnabled: Tulkotāja kešatmiņa ir iespējota un iestatīta uz robežu %i.
   wwctGUIExistingTranslationButton: Pārrakstīt pašreizējo tulkošanas sesiju
   wwcOnJoinTranslationNotificationNoSourceLang: ' Jūsu tērzēšana tiek tulkota uz %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Pārslēgt Google tulkojumu
-  wwcConfigGUIWatsonStatusButton: Pārslēgt Watson
   wwcUserDataReloaded: Ielādēti visi saglabātie lietotāja dati.
   wwcConfigGUISendTranslationChatButton: Nosūtīt tērzēšanas atgādinājumu aktīvajam
     tulkotājam pēc pieteikšanās
@@ -260,3 +253,6 @@ Messages:
     config.yml vai ar /wwcc, lai izmantotu šo spraudni.'
   wwcNotDoneLoading: ' WorldwideChat joprojām inicializē. Lūdzu, mēģiniet vēlreiz
     drīz.'
+  wwcConfigGUIEachTranslatorSettings: '%i konfigurācija'
+  wwcConfigGUIToggleButton: Pārslēgt %i
+  wwcConfigGUIWatsonButton: Vatsons

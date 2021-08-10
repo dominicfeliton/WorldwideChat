@@ -10,7 +10,6 @@ Messages:
     yw %i eiliad. Teipiwch unrhyw beth sy\'n fwy na 10 i osod gwerth newydd, neu unrhyw
     beth llai na 10 i fynd yn ôl.
   wwctGUIMainMenuGlobal: Bwydlen Gyfieithu Fyd-eang
-  wwcConfigGUIWatsonButton: Watson Cyfieithu
   wwcConfigConversationPluginUpdateChatSuccess: ' Ategyn atgoffa sgwrs diweddariad
     toggled yn llwyddiannus.'
   wwctbOnTarget: ' Cyfieithu llyfr wedi\''i alluogi am %i.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' Chwaraewr %i ddim dod o hyd.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Mae sgwrs fyd-eang
     yn cael ei gyfieithu, ond mae eich sgwrs yn cael ei gyfieithu i %o.'
-  wwcConfigGUIGoogleTranslateSettings: Google Cyfieithu Configuration
   wwcConfigGUIGlobalRateLimit: Newid Terfyn Cyfradd Fyd-eang
   wwctGUIBackToSourceLanguageButton: Nôl i Dewislen Iaith Ffynhonnell
   wwcConfigGUIAmazonTranslateRegionButton: Newid Rhanbarth Amazon
@@ -70,7 +68,6 @@ Messages:
     ddilys, neu deipio 0 i ganslo. Codau iaith dilys: %o'
   wwcConfigConversationLangInvalid: ' Cod iaith annilys!'
   wwctTranslationStopped: ' Mae eich cyfieithiad sgwrsio wedi cael ei atal.'
-  wwcConfigGUIWatsonSettings: Watson Ffurfweddiad
   wwctsPlayerNotFound: ' Chwaraewr %i naill ai heb ei ganfod, neu nid yw\''n gyfieithydd
     gweithredol.'
   wwcConfigGUIWatsonAPIKeyButton: Newid Watson API Allweddol
@@ -98,7 +95,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Newid Google Translate API Allweddol
   wwcSignDeletedOrTooLong: ' Arwydd targed naill ai ei ddileu neu y cyfieithiad yn
     rhy hir. Cyfieithu:'
-  wwcConfigGUIAmazonTranslateStatusButton: Toggle Amazon Cyfieithu
   wwctsOnTarget: ' Mewngofnodi cyfieithu galluogi am %i.'
   wwcConfigCacheDisabled: Cache cyfieithydd wedi\'i analluogi.
   wwcConfigConversationWatsonURLInput: Yr URL cyfredol yw %i mewnbynnu URL gwasanaeth
@@ -131,7 +127,6 @@ Messages:
   wwctSameLangError: ' Ni allwch gyfieithu i\''r un iaith!'
   wwctGUINewTranslationTarget: Dewiswch Iaith Darged
   wwctLangToLangStartOtherPlayer: ' Nawr cyfieithu\''r sgwrs o %o o %i i %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Cyfieithu Configuration
   wwcConfigConnectionSuccess: Wedi cysylltu yn llwyddiannus i %o!
   wwcConfigGUIGoogleTranslateButton: Google Cyfieithu
   wwcsIsActiveTranslator: ' A yw Cyfieithydd Actif: %i'
@@ -180,8 +175,6 @@ Messages:
   wwctGUIExistingTranslationButton: Trosysgrifo Sesiwn Cyfieithu Cyfredol
   wwcOnJoinTranslationNotificationNoSourceLang: ' Mae eich sgwrs yn cael ei gyfieithu
     i %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Toggle Google Cyfieithu
-  wwcConfigGUIWatsonStatusButton: Toggle Watson
   wwcUserDataReloaded: Llwytho\'r holl ddata defnyddiwr a gadwyd.
   wwcConfigGUISendTranslationChatButton: Anfon Sgwrs Atgoffa i Gyfieithydd Actif ar
     Mewngofnodi
@@ -262,3 +255,6 @@ Messages:
   wwcInvalidTranslator: ' Gosodiadau cyfieithydd annilys. Os gwelwch yn dda atgyweiria
     hon yn eich config.yml neu gyda/wwcc i ddefnyddio\''r ategyn hwn.'
   wwcNotDoneLoading: ' Mae WorldwideChat yn dal i ymgychwyn. Ceisiwch eto cyn bo hir.'
+  wwcConfigGUIEachTranslatorSettings: '%i Ffurfweddiad'
+  wwcConfigGUIToggleButton: Toggle %i
+  wwcConfigGUIWatsonButton: Watson

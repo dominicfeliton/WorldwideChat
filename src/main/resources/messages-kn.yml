@@ -9,7 +9,6 @@ Messages:
     ಸೆಕೆಂಡುಗಳು. ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 10 ಗಿಂತ ಹೆಚ್ಚಿನದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ 10 ಗಿಂತ
     ಕಡಿಮೆ ಏನು ಹಿಂತಿರುಗಿ.
   wwctGUIMainMenuGlobal: ಜಾಗತಿಕ ಅನುವಾದ ಮೆನು
-  wwcConfigGUIWatsonButton: ವ್ಯಾಟ್ಸನ್ ಭಾಷಾಂತರಿಸಿ
   wwcConfigConversationPluginUpdateChatSuccess: ' ಪ್ಲಗಿನ್ ಅಪ್ಡೇಟ್ ಚಾಟ್ ಜ್ಞಾಪನೆ ಯಶಸ್ವಿಯಾಗಿ
     togled.'
   wwctbOnTarget: ' ಪುಸ್ತಕ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.'
@@ -63,7 +62,6 @@ Messages:
   wwctPlayerNotFound: ' ಆಟಗಾರ % ನಾನು ಕಂಡುಬಂದಿಲ್ಲ.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು
     ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ, ಆದರೆ ನಿಮ್ಮ ಚಾಟ್ ಅನ್ನು %o ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.'
-  wwcConfigGUIGoogleTranslateSettings: ಗೂಗಲ್ ಸಂರಚನೆ ಭಾಷಾಂತರಿಸಿ
   wwcConfigGUIGlobalRateLimit: ಜಾಗತಿಕ ದರ ಮಿತಿಯನ್ನು ಬದಲಾಯಿಸಿ
   wwctGUIBackToSourceLanguageButton: ಮೂಲ ಭಾಷಾ ಮೆನುಗೆ ಹಿಂತಿರುಗಿ
   wwcConfigGUIAmazonTranslateRegionButton: ಅಮೆಜಾನ್ ಪ್ರದೇಶವನ್ನು ಬದಲಿಸಿ
@@ -72,7 +70,6 @@ Messages:
     %o'
   wwcConfigConversationLangInvalid: ' ಅಮಾನ್ಯ ಭಾಷಾ ಕೋಡ್!'
   wwctTranslationStopped: ' ನಿಮ್ಮ ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ.'
-  wwcConfigGUIWatsonSettings: ವ್ಯಾಟ್ಸನ್ ಸಂರಚನೆ
   wwctsPlayerNotFound: ' ಪ್ಲೇಯರ್ %i ಕಂಡುಬಂದಿಲ್ಲ, ಅಥವ ಸಕ್ರಿಯ ಅನುವಾದಕವಲ್ಲ.'
   wwcConfigGUIWatsonAPIKeyButton: ವ್ಯಾಟ್ಸನ್ ಎಪಿಐ ಕೀ ಬದಲಾಯಿಸಿ
   wwcEnabled: ಸಕ್ರಿಯಗೊಳಿಸಿದ ವಿಶ್ವವೈಡೆಚಾಟ್ ಆವೃತ್ತಿ %i.
@@ -100,7 +97,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: ಗೂಗಲ್ ಭಾಷಾಂತರಿಸಿ API ಕೀ ಬದಲಾಯಿಸಿ
   wwcSignDeletedOrTooLong: ' ಟಾರ್ಗೆಟ್ ಸೈನ್ ಎರಡೂ ಅಳಿಸಲಾಗಿದೆ ಅಥವಾ ಅನುವಾದ ತುಂಬಾ ಉದ್ದವಾಗಿದೆ.
     ಅನುವಾದ:'
-  wwcConfigGUIAmazonTranslateStatusButton: ಟಾಗಲ್ ಅಮೆಜಾನ್ ಭಾಷಾಂತರಿಸಿ
   wwctsOnTarget: ' ಸೈನ್ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.'
   wwcConfigCacheDisabled: ಅನುವಾದಕ ಸಂಗ್ರಹ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwcConfigConversationWatsonURLInput: ಪ್ರಸ್ತುತ URL %i ಆಗಿದೆ. ದಯವಿಟ್ಟು ವ್ಯಾಟ್ಸನ್ಗಾಗಿ
@@ -132,7 +128,6 @@ Messages:
   wwctSameLangError: ' ನೀವು ಒಂದೇ ಭಾಷೆಗೆ ಭಾಷಾಂತರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ!'
   wwctGUINewTranslationTarget: ಟಾರ್ಗೆಟ್ ಭಾಷೆಯನ್ನು ಆರಿಸಿ
   wwctLangToLangStartOtherPlayer: ' ಈಗ %o ನ ಚಾಟ್ ಅನ್ನು %i ನಿಂದ %e ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.'
-  wwcConfigGUIAmazonTranslateSettings: ಅಮೆಜಾನ್ ಸಂರಚನೆ ಭಾಷಾಂತರಿಸಿ
   wwcConfigConnectionSuccess: '%o ಗೆ ಯಶಸ್ವಿಯಾಗಿ ಸಂಪರ್ಕಗೊಂಡಿದೆ!'
   wwcConfigGUIGoogleTranslateButton: ಗೂಗಲ್ ಭಾಷಾಂತರಿಸಿ
   wwcsIsActiveTranslator: ' ಸಕ್ರಿಯ ಅನುವಾದಕ: %i'
@@ -184,8 +179,6 @@ Messages:
   wwcConfigCacheEnabled: ಅನುವಾದಕ ಸಂಗ್ರಹವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದ್ದು, %i ನ ಮಿತಿಗೆ ಹೊಂದಿಸಲಾಗಿದೆ.
   wwctGUIExistingTranslationButton: ಪ್ರಸ್ತುತ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ತಿದ್ದಿ ಬರೆಯಿರಿ
   wwcOnJoinTranslationNotificationNoSourceLang: ' ನಿಮ್ಮ ಚಾಟ್ ಅನ್ನು %o ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.'
-  wwcConfigGUIGoogleTranslateStatusButton: ಗೂಗಲ್ ಭಾಷಾಂತರಿಸಿ ಟಾಗಲ್
-  wwcConfigGUIWatsonStatusButton: ಟಾಗಲ್ ವ್ಯಾಟ್ಸನ್
   wwcUserDataReloaded: ಎಲ್ಲಾ ಉಳಿಸಿದ ಬಳಕೆದಾರ ಡೇಟಾವನ್ನು ಲೋಡ್ ಮಾಡಲಾಗಿದೆ.
   wwcConfigGUISendTranslationChatButton: ಲಾಗಿನ್ ನಲ್ಲಿ ಸಕ್ರಿಯ ಅನುವಾದಕರಿಗೆ ಚಾಟ್ ಜ್ಞಾಪನೆ
     ಕಳುಹಿಸಿ
@@ -266,3 +259,6 @@ Messages:
     ನಿಮ್ಮ config.yml ಅಥವಾ/wwcc ನೊಂದಿಗೆ ಇದನ್ನು ಸರಿಪಡಿಸಿ.'
   wwcNotDoneLoading: ' ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ಇನ್ನೂ ಪ್ರಾರಂಭಿಸುತ್ತಿದೆ. ದಯವಿಟ್ಟು ಶೀಘ್ರದಲ್ಲೇ
     ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.'
+  wwcConfigGUIEachTranslatorSettings: '%i ಸಂರಚನೆ'
+  wwcConfigGUIToggleButton: ಟಾಗಲ್ %i
+  wwcConfigGUIWatsonButton: ವ್ಯಾಟ್ಸನ್

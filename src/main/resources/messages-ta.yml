@@ -9,7 +9,6 @@ Messages:
     %i விநாடிகள் ஆகும். ஒரு புதிய மதிப்பு அமைக்க 10 விட அதிகமாக எதையும் தட்டச்சு,
     அல்லது மீண்டும் செல்ல 10 குறைவாக எதையும்.
   wwctGUIMainMenuGlobal: உலகளாவிய மொழிபெயர்ப்பு பட்டி
-  wwcConfigGUIWatsonButton: வாட்சன் மொழிபெயர்ப்பு
   wwcConfigConversationPluginUpdateChatSuccess: ' செருகுநிரல் மேம்படுத்தல் அரட்டை
     நினைவூட்டல் வெற்றிகரமாக மாற்றப்பட்டது.'
   wwctbOnTarget: ' %i க்கு புத்தக மொழிபெயர்ப்பு இயக்கப்பட்டது.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' வீரர் % நான் காணப்படவில்லை.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' உலகளாவிய அரட்டை மொழிபெயர்க்கப்பட்டுள்ளது,
     ஆனால் உங்கள் அரட்டை %o க்கு மொழிபெயர்க்கப்பட்டுள்ளது.'
-  wwcConfigGUIGoogleTranslateSettings: கூகிள் மொழிபெயர்ப்பு கட்டமைப்பு
   wwcConfigGUIGlobalRateLimit: உலகளாவிய வீத வரம்பை மாற்றவும்
   wwctGUIBackToSourceLanguageButton: மூல மொழி பட்டிக்கு திரும்பவும்
   wwcConfigGUIAmazonTranslateRegionButton: அமேசான் பிராந்தியம் மாற்ற
@@ -71,7 +69,6 @@ Messages:
     %o'
   wwcConfigConversationLangInvalid: ' செல்லுபடியாகாத மொழி குறியீடு!'
   wwctTranslationStopped: ' உங்கள் அரட்டை மொழிபெயர்ப்பு நிறுத்தப்பட்டுள்ளது.'
-  wwcConfigGUIWatsonSettings: வாட்சன் கட்டமைப்பு
   wwctsPlayerNotFound: ' ஆட்டக்காரர் %i ஒன்று காணப்படவில்லை, அல்லது செயலூக்க மொழிபெயர்ப்பாளர்
     அல்ல.'
   wwcConfigGUIWatsonAPIKeyButton: மாற்றம் வாட்சன் ஏபிஐ சாவி
@@ -101,7 +98,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google மொழிபெயர்க்க API விசையை மாற்ற
   wwcSignDeletedOrTooLong: ' இலக்கு அடையாளம் ஒன்று நீக்கப்பட்டது அல்லது மொழிபெயர்ப்பு
     நீண்ட இருந்தது. மொழிபெயர்ப்பு:'
-  wwcConfigGUIAmazonTranslateStatusButton: அமேசான் மொழிபெயர்க்கவும்
   wwctsOnTarget: ' %i க்கு உள்நுழை மொழிபெயர்ப்பு இயக்கப்பட்டது.'
   wwcConfigCacheDisabled: மொழிபெயர்ப்பாளர் கேச் முடக்கப்பட்டுள்ளது.
   wwcConfigConversationWatsonURLInput: தற்போதைய URL %i ஆகும். வாட்சனுக்கு ஒரு சேவை
@@ -135,7 +131,6 @@ Messages:
   wwctGUINewTranslationTarget: இலக்கு மொழியைத் தேர்வுசெய்க
   wwctLangToLangStartOtherPlayer: ' இப்பொழுது %i இலிருந்து %e இலிருந்து %e க்கு அரட்டை
     மொழிபெயர்க்கிறது.'
-  wwcConfigGUIAmazonTranslateSettings: அமேசான் மொழிபெயர்ப்பு கட்டமைப்பு
   wwcConfigConnectionSuccess: வெற்றிகரமாக இணைக்கப்பட்டது %o!
   wwcConfigGUIGoogleTranslateButton: கூகிள் மொழிபெயர்ப்பு
   wwcsIsActiveTranslator: ' இயல் மொழிபெயர்ப்பாளர்: %i'
@@ -186,8 +181,6 @@ Messages:
   wwcConfigCacheEnabled: மொழிபெயர்ப்பாளர் கேச் செயல்படுத்தப்பட்டு, %i வரம்புக்கு அமைக்கப்பட்டது.
   wwctGUIExistingTranslationButton: தற்போதைய மொழிபெயர்ப்புக் கூட்டத்தை மேலெழுத
   wwcOnJoinTranslationNotificationNoSourceLang: ' உங்கள் அரட்டை %o க்கு மொழிபெயர்க்கப்பட்டுள்ளது.'
-  wwcConfigGUIGoogleTranslateStatusButton: Google Translate மாற்றவும்
-  wwcConfigGUIWatsonStatusButton: மாற்று வாட்சன்
   wwcUserDataReloaded: அனைத்து சேமிக்கப்பட்ட பயனர் தரவு ஏற்றப்பட்டது.
   wwcConfigGUISendTranslationChatButton: உள்நுழைவில் செயலில் மொழிபெயர்ப்பாளருக்கு
     அரட்டை நினைவூட்டல் அனுப்பவும்
@@ -272,3 +265,6 @@ Messages:
   wwcInvalidTranslator: ' தவறான மொழிபெயர்ப்பாளர் அமைப்புகள். இந்த சொருகி பயன்படுத்த
     உங்கள் config.yml அல்லது wwcc உடன் இதை சரிசெய்யவும்.'
   wwcNotDoneLoading: ' WorldWideSaat இன்னும் துவக்குகிறது. விரைவில் மீண்டும் முயற்சிக்கவும்.'
+  wwcConfigGUIEachTranslatorSettings: '%i உள்ளமைவு'
+  wwcConfigGUIToggleButton: மாற்று %i
+  wwcConfigGUIWatsonButton: வாட்சன்

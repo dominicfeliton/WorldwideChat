@@ -9,7 +9,7 @@ import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationWatsonSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationEachTranslatorSettingsGUI;
 
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
@@ -46,7 +46,7 @@ public class TranslatorSettingsWatsonServiceUrlConversation extends StringPrompt
 				e.printStackTrace();
 			}
 		}
-		ConfigurationWatsonSettingsGUI.watsonSettings.open((Player)context.getForWhom());
+		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson").open((Player)context.getForWhom());
 		return END_OF_CONVERSATION;
 	}
 

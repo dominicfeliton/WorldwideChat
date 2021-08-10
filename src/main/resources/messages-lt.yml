@@ -10,7 +10,6 @@ Messages:
     yra %i sekundes. Įveskite viską, kas didesnė nei 10, kad nustatytumėte naują vertę,
     arba nieko mažiau nei 10, kad grįžtumėte atgal.
   wwctGUIMainMenuGlobal: Pasaulinis vertimo meniu
-  wwcConfigGUIWatsonButton: Watson Išversti
   wwcConfigConversationPluginUpdateChatSuccess: ' Įskiepis atnaujinimas pokalbiai
     priminimas perjungtas sėkmingai.'
   wwctbOnTarget: ' Įgalintas knygos vertimas %i.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' Žaidėjas %neradau.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Pasaulinis pokalbis
     yra išverstas, bet jūsų pokalbis yra išverstas į %o.'
-  wwcConfigGUIGoogleTranslateSettings: “Google Translate
   wwcConfigGUIGlobalRateLimit: Keisti pasaulinę normos ribą
   wwctGUIBackToSourceLanguageButton: Atgal į Šaltinio kalbos meniu
   wwcConfigGUIAmazonTranslateRegionButton: Keisti Amazon regioną
@@ -70,7 +68,6 @@ Messages:
     kalbos kodą arba įveskite 0, kad atšauktumėte. Galiojantys kalbos kodai: %o'
   wwcConfigConversationLangInvalid: ' Neteisingas kalbos kodas!'
   wwctTranslationStopped: ' Jūsų pokalbių vertimas buvo sustabdytas.'
-  wwcConfigGUIWatsonSettings: Watson konfigūracija
   wwctsPlayerNotFound: ' Žaidėjas % aš nerastas arba nėra aktyvus vertėjas.'
   wwcConfigGUIWatsonAPIKeyButton: Pakeisti Watson API raktas
   wwcEnabled: Įgalinta WorldwideChat versija %i.
@@ -97,7 +94,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Pakeisti “Google Translate API raktą
   wwcSignDeletedOrTooLong: ' Tikslinė ženklas buvo arba ištrintas, arba vertimas buvo
     per ilgas. Vertimas:'
-  wwcConfigGUIAmazonTranslateStatusButton: Perjungti Amazon Versti
   wwctsOnTarget: ' Įgalinta pasirašyti vertimą %i.'
   wwcConfigCacheDisabled: Vertėjas talpyklos išjungtas.
   wwcConfigConversationWatsonURLInput: Dabartinis URL yra %i. Prašome įvesti “Watson”
@@ -129,7 +125,6 @@ Messages:
   wwctSameLangError: ' Jūs negalite išversti į tą pačią kalbą!'
   wwctGUINewTranslationTarget: Pasirinkti tikslinę kalbą
   wwctLangToLangStartOtherPlayer: ' Dabar verčiate pokalbį %o iš %i į %e.'
-  wwcConfigGUIAmazonTranslateSettings: “Amazon” versti konfigūraciją
   wwcConfigConnectionSuccess: Sėkmingai prijungtas su %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: ' Ar aktyvus vertėjas: %i'
@@ -178,8 +173,6 @@ Messages:
   wwcConfigCacheEnabled: Vertėjo talpykla įjungta ir nustatyti %i ribą.
   wwctGUIExistingTranslationButton: Perrašyti dabartinę vertimo sesiją
   wwcOnJoinTranslationNotificationNoSourceLang: ' Jūsų pokalbis yra išverstas į %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Perjungti Google Translate
-  wwcConfigGUIWatsonStatusButton: Perjungti Watson
   wwcUserDataReloaded: Įkelti visus išsaugotus naudotojo duomenis.
   wwcConfigGUISendTranslationChatButton: Siųsti Pokalbių priminimą Active Translator
     on Login
@@ -258,3 +251,6 @@ Messages:
   wwcInvalidTranslator: ' Neteisingas vertėjo nustatymai. Prašome išspręsti šią problemą
     savo config.yml arba su /wwcc naudoti šį įskiepiai.'
   wwcNotDoneLoading: ' WorldwideChat vis dar inicijuoja. Bandykite dar kartą netrukus.'
+  wwcConfigGUIEachTranslatorSettings: '%i konfigūracija'
+  wwcConfigGUIToggleButton: Toggle %i
+  wwcConfigGUIWatsonButton: Watsonas

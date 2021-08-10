@@ -9,7 +9,6 @@ Messages:
     ఒక కొత్త విలువ సెట్ 10 కంటే ఎక్కువ ఏదైనా టైప్, లేదా 10 కంటే తక్కువ ఏదైనా తిరిగి
     వెళ్ళడానికి.
   wwctGUIMainMenuGlobal: గ్లోబల్ అనువాద మెనూ
-  wwcConfigGUIWatsonButton: వాట్సన్ అనువదించు
   wwcConfigConversationPluginUpdateChatSuccess: ' ప్లగిన్ నవీకరణ చాట్ రిమైండర్ విజయవంతంగా
     toggled.'
   wwctbOnTarget: ' పుస్తక అనువాదం %i కొరకు ప్రారంభించబడింది.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' ప్లేయర్ % నేను కనుగొనబడలేదు.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' గ్లోబల్ చాట్ అనువదించబడింది,
     కానీ మీ చాట్ %o కు అనువదించబడింది.'
-  wwcConfigGUIGoogleTranslateSettings: Google అనువదిస్తుంది ఆకృతీకరణ
   wwcConfigGUIGlobalRateLimit: గ్లోబల్ రేట్ పరిమితిని మార్చండి
   wwctGUIBackToSourceLanguageButton: మూల భాషా మెనూకు తిరిగి
   wwcConfigGUIAmazonTranslateRegionButton: అమెజాన్ ప్రాంతం మార్చండి
@@ -71,7 +69,6 @@ Messages:
     భాషా సంకేతాలు: %o'
   wwcConfigConversationLangInvalid: ' చెల్లని భాష కోడ్!'
   wwctTranslationStopped: ' మీ చాట్ అనువాదం నిలిపివేయబడింది.'
-  wwcConfigGUIWatsonSettings: వాట్సన్ ఆకృతీకరణ
   wwctsPlayerNotFound: ' ప్లేయర్ % నేను కనుగొనబడలేదు, లేదా చురుకైన అనువాదకుడు కాదు.'
   wwcConfigGUIWatsonAPIKeyButton: వాట్సన్ API కీ మార్చండి
   wwcEnabled: ప్రారంభించబడింది ప్రపంచవ్యాప్తం చాట్ వెర్షన్ %i.
@@ -98,7 +95,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google ట్రాన్స్లేట్ API కీ మార్చండి
   wwcSignDeletedOrTooLong: ' టార్గెట్ సైన్ గాని తొలగించబడింది లేదా అనువాదం చాలా పొడవుగా
     ఉంది. అనువాదం:'
-  wwcConfigGUIAmazonTranslateStatusButton: అమెజాన్ అనువదించు టోగుల్
   wwctsOnTarget: ' సంకేత అనువాదం %i కోసం ప్రారంభించబడింది.'
   wwcConfigCacheDisabled: అనువాదకుడు కాష్ డిసేబుల్.
   wwcConfigConversationWatsonURLInput: ప్రస్తుత URL %i. దయచేసి వాట్సన్ కోసం ఒక సేవా
@@ -128,7 +124,6 @@ Messages:
   wwctSameLangError: ' మీరు అదే భాషకు అనువదించలేరు!'
   wwctGUINewTranslationTarget: లక్ష్య భాషను ఎంచుకోండి
   wwctLangToLangStartOtherPlayer: ' ఇప్పుడు చాట్ను %o నుండి %i నుండి %e కు అనువదిస్తోంది.'
-  wwcConfigGUIAmazonTranslateSettings: అమెజాన్ అనువదిస్తుంది ఆకృతీకరణ
   wwcConfigConnectionSuccess: విజయవంతంగా కనెక్ట్ చేయబడి %o!
   wwcConfigGUIGoogleTranslateButton: Google అనువదించు
   wwcsIsActiveTranslator: ' క్రియాశీల అనువాదకుడు: %i'
@@ -175,8 +170,6 @@ Messages:
     చేయబడింది.
   wwctGUIExistingTranslationButton: ప్రస్తుత అనువాదం సెషన్ తిరిగి రాస్తుంది
   wwcOnJoinTranslationNotificationNoSourceLang: ' మీ చాట్ %o కు అనువదించబడింది.'
-  wwcConfigGUIGoogleTranslateStatusButton: Google అనువదించు టోగుల్
-  wwcConfigGUIWatsonStatusButton: వాట్సన్ టోగుల్
   wwcUserDataReloaded: అన్ని సేవ్ యూజర్ డేటా లోడ్.
   wwcConfigGUISendTranslationChatButton: లాగిన్ లో క్రియాశీల అనువాదకుడికి చాట్ రిమైండర్
     పంపండి
@@ -258,3 +251,6 @@ Messages:
     మీ config.yml లేదా /wwcc తో ఈ పరిష్కరించడానికి దయచేసి.'
   wwcNotDoneLoading: ' ప్రపంచవ్యాప్తం చాట్ ఇప్పటికీ ప్రారంభిస్తోంది. దయచేసి త్వరలో
     మళ్ళీ ప్రయత్నించండి.'
+  wwcConfigGUIEachTranslatorSettings: '%i ఆకృతీకరణ'
+  wwcConfigGUIToggleButton: టోగుల్ %i
+  wwcConfigGUIWatsonButton: వాట్సన్

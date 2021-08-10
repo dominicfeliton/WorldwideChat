@@ -10,7 +10,6 @@ Messages:
     actualizare este %i secunde. Tastați ceva mai mare de 10 pentru a seta o valoare
     nouă sau ceva mai mic de 10 pentru a reveni.
   wwctGUIMainMenuGlobal: Meniu global de traducere
-  wwcConfigGUIWatsonButton: Watson Traduce
   wwcConfigConversationPluginUpdateChatSuccess: ' Memento-ul de actualizare a plugin-ului
     a fost comitat cu succes.'
   wwctbOnTarget: ' Traducerea cărții este activată pentru %i.'
@@ -63,7 +62,6 @@ Messages:
   wwctPlayerNotFound: ' Jucătorul %nu am găsit.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Chatul global este
     tradus, dar chatul dvs. este tradus la %o.'
-  wwcConfigGUIGoogleTranslateSettings: Configurare Traducere Google
   wwcConfigGUIGlobalRateLimit: Modificarea limitei globale a ratei
   wwctGUIBackToSourceLanguageButton: Înapoi la meniul Limbă sursă
   wwcConfigGUIAmazonTranslateRegionButton: Schimbă regiunea Amazon
@@ -71,7 +69,6 @@ Messages:
     un cod de limbă valid sau tastați 0 pentru a anula. Coduri de limbă valide: %o'
   wwcConfigConversationLangInvalid: ' Cod de limbă nevalid!'
   wwctTranslationStopped: ' Traducerea chat-ului a fost oprită.'
-  wwcConfigGUIWatsonSettings: Configurare Watson
   wwctsPlayerNotFound: ' Jucătorul %i fie nu este găsit, fie nu este un traducător
     activ.'
   wwcConfigGUIWatsonAPIKeyButton: Modificare cheie API Watson
@@ -100,7 +97,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Schimbarea Google Translate API cheie
   wwcSignDeletedOrTooLong: ' Semnul țintă a fost fie șters, fie traducerea a fost
     prea lungă. Traducere:'
-  wwcConfigGUIAmazonTranslateStatusButton: Comută Amazon Translate
   wwctsOnTarget: ' Semnează traducerea activată pentru %i.'
   wwcConfigCacheDisabled: Cache traducător dezactivat.
   wwcConfigConversationWatsonURLInput: Adresa URL curentă este %i. Introduceți un
@@ -134,7 +130,6 @@ Messages:
   wwctSameLangError: ' Nu puteți traduce în aceeași limbă!'
   wwctGUINewTranslationTarget: Alegeți o limbă țintă
   wwctLangToLangStartOtherPlayer: ' Acum traducem chat-ul de %o de la %i la %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Traducere configurare
   wwcConfigConnectionSuccess: Conectat cu succes la %o!
   wwcConfigGUIGoogleTranslateButton: Traducere în Google
   wwcsIsActiveTranslator: ' Este un translator activ: %i'
@@ -185,8 +180,6 @@ Messages:
     o limită de %i.
   wwctGUIExistingTranslationButton: Suprascriere sesiune de traducere curentă
   wwcOnJoinTranslationNotificationNoSourceLang: ' Chatul dvs. este tradus la %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Comută Google Translate
-  wwcConfigGUIWatsonStatusButton: Comută Watson
   wwcUserDataReloaded: Încărcat toate datele de utilizator salvate.
   wwcConfigGUISendTranslationChatButton: Trimiteți Memento Chat către Translatorul
     Activ la conectare
@@ -274,3 +267,6 @@ Messages:
     lucru în config.yml sau cu /wwcc pentru a utiliza acest plugin.'
   wwcNotDoneLoading: ' WorldwideChat este încă inițializarea. Vă rugăm să încercați
     din nou în curând'
+  wwcConfigGUIEachTranslatorSettings: Configurare %i
+  wwcConfigGUIToggleButton: Comută %i
+  wwcConfigGUIWatsonButton: Watson

@@ -10,7 +10,6 @@ Messages:
     másodperc. Írja be a 10-nél nagyobb értéket az új érték beállításához, vagy 10-nél
     kevesebbet a visszatéréshez.
   wwctGUIMainMenuGlobal: Globális fordítás
-  wwcConfigGUIWatsonButton: Watson fordítás
   wwcConfigConversationPluginUpdateChatSuccess: ' A beépülő modul frissítési csevegési
     emlékeztető sikeresen váltott.'
   wwctbOnTarget: ' Könyvfordítás engedélyezve a %i számára.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' A (z) %i játékos nem található.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' A globális csevegés
     lefordítása folyamatban van, de a csevegésedet lefordítjuk erre: %o.'
-  wwcConfigGUIGoogleTranslateSettings: Google Fordító konfigurációja
   wwcConfigGUIGlobalRateLimit: Globális díjkorlát módosítása
   wwctGUIBackToSourceLanguageButton: Vissza a Forrásnyelv menübe
   wwcConfigGUIAmazonTranslateRegionButton: Az Amazon régió megváltoztatása
@@ -71,7 +69,6 @@ Messages:
     %o'
   wwcConfigConversationLangInvalid: ' Érvénytelen nyelvkód!'
   wwctTranslationStopped: ' A csevegés fordítása le lett állítva.'
-  wwcConfigGUIWatsonSettings: Watson konfiguráció
   wwctsPlayerNotFound: ' A (z) %i játékos nem található, vagy nem aktív fordító.'
   wwcConfigGUIWatsonAPIKeyButton: Watson API-kulcs módosítása
   wwcEnabled: 'Engedélyezett WorldwideChat verzió: %i.'
@@ -99,7 +96,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: A Google Translate API-kulcs módosítása
   wwcSignDeletedOrTooLong: ' A céltáblát törölték, vagy a fordítás túl hosszú volt.
     Fordítás:'
-  wwcConfigGUIAmazonTranslateStatusButton: Az Amazon fordítás be- kapcsolása
   wwctsOnTarget: ' Aláírás fordítás engedélyezve a %i.'
   wwcConfigCacheDisabled: A fordítói gyorsítótár letiltva.
   wwcConfigConversationWatsonURLInput: 'Az aktuális URL: %i. Adjon meg egy szolgáltatás
@@ -132,7 +128,6 @@ Messages:
   wwctGUINewTranslationTarget: Válasszon célnyelvet
   wwctLangToLangStartOtherPlayer: ' Most lefordítja a (z) %o csevegését a %i -ról
     a %e-ra.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Translate konfiguráció
   wwcConfigConnectionSuccess: 'Sikeresen csatlakozott ehhez: %o!'
   wwcConfigGUIGoogleTranslateButton: Google Fordító
   wwcsIsActiveTranslator: ' Aktív fordító: %i'
@@ -184,8 +179,6 @@ Messages:
   wwctGUIExistingTranslationButton: Aktuális fordítási munkamenet felülbír
   wwcOnJoinTranslationNotificationNoSourceLang: ' A csevegésedet lefordítjuk erre:
     %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: A Google Fordító be- és bekapcsolása
-  wwcConfigGUIWatsonStatusButton: Watson be- és bekapcsolása
   wwcUserDataReloaded: Betöltötte az összes mentett felhasználói adatot.
   wwcConfigGUISendTranslationChatButton: Emlékeztető küldése az aktív fordítónak bejelentkezéskor
   wwcsLastTranslationTime: ' Utolsó (sikeres) fordítási idő: %i'
@@ -264,3 +257,6 @@ Messages:
     a config.yml vagy /wwcc segítségével a plugin használatához.'
   wwcNotDoneLoading: ' A WorldwideChat még mindig inicializálódik. Kérjük, próbálja
     meg újra hamarosan.'
+  wwcConfigGUIEachTranslatorSettings: '%i konfiguráció'
+  wwcConfigGUIToggleButton: '%i be-'
+  wwcConfigGUIWatsonButton: Watson

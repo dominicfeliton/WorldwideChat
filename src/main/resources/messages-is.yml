@@ -10,7 +10,6 @@ Messages:
     er %i sekúndur. Sláðu inn neitt stærra en 10 til að setja nýtt gildi, eða eitthvað
     minna en 10 til að fara aftur.
   wwctGUIMainMenuGlobal: Global Translation Valmynd
-  wwcConfigGUIWatsonButton: Watson Þýða
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin uppfærsla spjall áminning
     skipta með góðum árangri.'
   wwctbOnTarget: ' Bók þýðing virkt fyrir %i.'
@@ -63,7 +62,6 @@ Messages:
   wwctPlayerNotFound: ' Leikmaður %Ég fann ekki.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Alþjóðlegt spjall
     er þýtt, en spjallið þitt er þýtt í %o.'
-  wwcConfigGUIGoogleTranslateSettings: Google Translate Stillingar
   wwcConfigGUIGlobalRateLimit: Breyta Global Rate Limit
   wwctGUIBackToSourceLanguageButton: Til baka í Valmynd um tungumál
   wwcConfigGUIAmazonTranslateRegionButton: Breyta Amazon svæðinu
@@ -72,7 +70,6 @@ Messages:
     %o'
   wwcConfigConversationLangInvalid: ' Ógildur tungumálakóði!'
   wwctTranslationStopped: ' Spjall þýðing þín hefur verið hætt.'
-  wwcConfigGUIWatsonSettings: Watson stillingar
   wwctsPlayerNotFound: ' Leikmaður %Ég er annað hvort ekki að finna, eða er ekki virkur
     þýðandi.'
   wwcConfigGUIWatsonAPIKeyButton: Breyta Watson API Lykill
@@ -100,7 +97,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Breyta Google Þýða API lykill
   wwcSignDeletedOrTooLong: ' Markmerki var annað hvort eytt eða þýðingin var of löng.
     Þýðing:'
-  wwcConfigGUIAmazonTranslateStatusButton: Skipta Amazon Þýða
   wwctsOnTarget: ' Sign þýðing virkt fyrir %i.'
   wwcConfigCacheDisabled: Þýðandi skyndiminni óvirk.
   wwcConfigConversationWatsonURLInput: Núverandi vefslóð er %i. Vinsamlegast sláðu
@@ -131,7 +127,6 @@ Messages:
   wwctSameLangError: ' Þú getur ekki þýtt á sama tungumál!'
   wwctGUINewTranslationTarget: Veldu markmál
   wwctLangToLangStartOtherPlayer: ' Nú þýða spjallið af %o frá %i til %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Þýða Stillingar
   wwcConfigConnectionSuccess: Tókst tengdur til %o!
   wwcConfigGUIGoogleTranslateButton: Google Þýða
   wwcsIsActiveTranslator: ' Er virkur þýðandi: %i'
@@ -180,8 +175,6 @@ Messages:
   wwcConfigCacheEnabled: Þýðandi skyndiminni virkt og stillt á takmörk af %i.
   wwctGUIExistingTranslationButton: Yfirskrifa núverandi Þýðing Session
   wwcOnJoinTranslationNotificationNoSourceLang: ' Spjallið þitt er þýtt í %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Skipta Google Þýða
-  wwcConfigGUIWatsonStatusButton: Skipta Watson
   wwcUserDataReloaded: Hlaðinn öllum vistaðar notendagögnum
   wwcConfigGUISendTranslationChatButton: Senda spjall áminning til Active Translator
     á Innskráning
@@ -264,3 +257,6 @@ Messages:
     config.yml eða með/wwcc til að nota þessa tappi.'
   wwcNotDoneLoading: ' WorldwideChat er enn að frumstilla. Vinsamlegast reyndu aftur
     fljótlega.'
+  wwcConfigGUIEachTranslatorSettings: '%i Stillingar'
+  wwcConfigGUIToggleButton: Skipti %i
+  wwcConfigGUIWatsonButton: Watson

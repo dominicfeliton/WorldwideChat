@@ -9,7 +9,7 @@ import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationGoogleTranslateSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationEachTranslatorSettingsGUI;
 
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
@@ -48,7 +48,7 @@ public class TranslatorSettingsGoogleTranslateApiKeyConversation extends StringP
 			}
 		}
 		/* Re-open GoogleTranslateInventoryGUI */
-		ConfigurationGoogleTranslateSettingsGUI.googleTranslateSettings.open((Player)context.getForWhom());
+		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Google Translate").open((Player)context.getForWhom());
 		return END_OF_CONVERSATION;
 	}
 

@@ -10,7 +10,6 @@ Messages:
     checker ay %i segundo. I-type ang anumang mas malaki kaysa sa 10 upang magtakda
     ng bagong halaga, o anumang mas mababa sa 10 upang bumalik.
   wwctGUIMainMenuGlobal: Pandaigdigang menu ng pagsasalin
-  wwcConfigGUIWatsonButton: Isalin
   wwcConfigConversationPluginUpdateChatSuccess: ' Ang paalala ng pag-update ng plugin
     ng chat ay matagumpay na na-toggled.'
   wwctbOnTarget: ' Pinagana ang pagsasalin ng libro para sa %i.'
@@ -65,7 +64,6 @@ Messages:
   wwctPlayerNotFound: ' Ang manlalaro ng %hindi ko natagpuan.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Ang pandaigdigang
     chat ay isinalin, ngunit ang iyong chat ay isinalin sa %o.'
-  wwcConfigGUIGoogleTranslateSettings: Pagsasaayos ng Google Translate
   wwcConfigGUIGlobalRateLimit: Baguhin ang Global Rate Limitasyon
   wwctGUIBackToSourceLanguageButton: Bumalik sa Source Language Menu
   wwcConfigGUIAmazonTranslateRegionButton: Baguhin ang rehiyon ng Amazon
@@ -74,7 +72,6 @@ Messages:
     ng wika: %o'
   wwcConfigConversationLangInvalid: ' Di-wastong code ng wika!'
   wwctTranslationStopped: ' Ang iyong chat translation ay tumigil.'
-  wwcConfigGUIWatsonSettings: Pagsasaayos ng Watson
   wwctsPlayerNotFound: ' Ang manlalarong %i ay alinman sa hindi natagpuan, o hindi
     isang aktibong tagasalin.'
   wwcConfigGUIWatsonAPIKeyButton: Baguhin ang Watson API Key
@@ -103,7 +100,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Baguhin ang Google Translate API Key
   wwcSignDeletedOrTooLong: ' Target sign ay alinman sa tinanggal o ang pagsasalin
     ay masyadong mahaba. Pagsasalin:'
-  wwcConfigGUIAmazonTranslateStatusButton: I-toggle ang Amazon Translate
   wwctsOnTarget: ' Pinagana ang pagsasalin ng pag-sign para sa %i.'
   wwcConfigCacheDisabled: Hindi pinagana ang cache ng tagasalin.
   wwcConfigConversationWatsonURLInput: Ang kasalukuyang URL ay %i. Pakipasok ang URL
@@ -139,7 +135,6 @@ Messages:
   wwctGUINewTranslationTarget: Pumili ng isang Target na Wika
   wwctLangToLangStartOtherPlayer: ' Ngayon isinasalin ang chat ng %o mula sa %i sa
     %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Translate Configuration
   wwcConfigConnectionSuccess: Matagumpay na nakakonekta sa %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: ' Ay Aktibong Tagasalin: %i'
@@ -192,8 +187,6 @@ Messages:
     ng %i.
   wwctGUIExistingTranslationButton: Patungan ang Kasalukuyang Session ng pagsasalin
   wwcOnJoinTranslationNotificationNoSourceLang: ' Ang iyong chat ay isinalin sa %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: I-toggle ang Google Translate
-  wwcConfigGUIWatsonStatusButton: I-toggle ang Watson
   wwcUserDataReloaded: Na-load ang lahat ng naka-save na data ng user.
   wwcConfigGUISendTranslationChatButton: Magpadala ng Paalala sa Chat sa Aktibong
     Tagasalin sa Pag-login
@@ -285,3 +278,6 @@ Messages:
     sa iyong config.yml o sa /wwcc upang magamit ang plugin na ito.'
   wwcNotDoneLoading: ' Nagsisimula pa rin ang WorldwideChat. Mangyaring subukan muli
     sa ilang sandali.'
+  wwcConfigGUIEachTranslatorSettings: '%i Pagsasaayos'
+  wwcConfigGUIToggleButton: Iba-toggle %i
+  wwcConfigGUIWatsonButton: Watson

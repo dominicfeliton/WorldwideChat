@@ -9,7 +9,6 @@ Messages:
     است. هر چیزی بزرگتر از 10 را تایپ کنید تا یک مقدار جدید یا هر چیزی کمتر از 10
     را تنظیم کنید تا به عقب برگردید.
   wwctGUIMainMenuGlobal: منوی ترجمه سراسری
-  wwcConfigGUIWatsonButton: واتسون ترجمه
   wwcConfigConversationPluginUpdateChatSuccess: ' یادآوری چت به روز رسانی پلاگین با
     موفقیت تغییر کرد.'
   wwctbOnTarget: ' ترجمه کتاب برای %i فعال شد.'
@@ -60,7 +59,6 @@ Messages:
   wwctPlayerNotFound: ' بازیکن %i یافت نشد.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' چت سراسری در حال ترجمه
     است، اما چت شما به %o ترجمه شده است.'
-  wwcConfigGUIGoogleTranslateSettings: پیکربندی ترجمه گوگل
   wwcConfigGUIGlobalRateLimit: تغییر حد نرخ جهانی
   wwctGUIBackToSourceLanguageButton: بازگشت به منوی زبان منبع
   wwcConfigGUIAmazonTranslateRegionButton: تغییر منطقه آمازون
@@ -68,7 +66,6 @@ Messages:
     کنید، یا برای لغو تایپ کنید. کدهای زبان معتبر: %o'
   wwcConfigConversationLangInvalid: ' کد زبان نامعتبر!'
   wwctTranslationStopped: ' ترجمه چت شما متوقف شده است.'
-  wwcConfigGUIWatsonSettings: پیکربندی واتسون
   wwctsPlayerNotFound: ' بازیکن %i یا یافت نشد، یا مترجم فعال نیست.'
   wwcConfigGUIWatsonAPIKeyButton: تغییر کلید API واتسون
   wwcEnabled: نسخه WorldwideChat را فعال کنید %i.
@@ -95,7 +92,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: تغییر گوگل ترجمه کلید API
   wwcSignDeletedOrTooLong: ' علامت هدف یا حذف شد و یا ترجمه بیش از حد طولانی بود.
     ترجمه:'
-  wwcConfigGUIAmazonTranslateStatusButton: زدن ضامن ترجمه آمازون
   wwctsOnTarget: ' امضای ترجمه برای %i فعال شد.'
   wwcConfigCacheDisabled: حافظه پنهان مترجم غیرفعال شد.
   wwcConfigConversationWatsonURLInput: URL فعلی %i است. لطفا یک نشانی وب سرویس برای
@@ -126,7 +122,6 @@ Messages:
   wwctSameLangError: ' شما نمی توانید به یک زبان ترجمه کنید!'
   wwctGUINewTranslationTarget: انتخاب زبان هدف
   wwctLangToLangStartOtherPlayer: ' اکنون ترجمه چت از %o از %i به %e.'
-  wwcConfigGUIAmazonTranslateSettings: آمازون ترجمه پیکربندی
   wwcConfigConnectionSuccess: با موفقیت به %o وصل شد!
   wwcConfigGUIGoogleTranslateButton: گوگل ترجمه
   wwcsIsActiveTranslator: ' مترجم فعال است: %i'
@@ -172,8 +167,6 @@ Messages:
   wwcConfigCacheEnabled: کش مترجم فعال شده و روی محدود %i تنظیم شده است.
   wwctGUIExistingTranslationButton: بازنویسی نشست فعلی ترجمه
   wwcOnJoinTranslationNotificationNoSourceLang: ' چت شما به %o ترجمه شده است.'
-  wwcConfigGUIGoogleTranslateStatusButton: زدن ضامن ترجمه گوگل
-  wwcConfigGUIWatsonStatusButton: ضامن واتسون
   wwcUserDataReloaded: بارگذاری تمام داده های کاربر ذخیره شده.
   wwcConfigGUISendTranslationChatButton: ارسال یادآور چت به مترجم فعال هنگام ورود
   wwcsLastTranslationTime: ' آخرین زمان (موفق) ترجمه: %i'
@@ -253,3 +246,6 @@ Messages:
     خود برای استفاده از این افزونه تعمیر کنید.'
   wwcNotDoneLoading: ' WorldwideChat هنوز مقداردهی اولیه دارد. لطفا به زودی دوباره
     تلاش کنید.'
+  wwcConfigGUIEachTranslatorSettings: '%i پیکربندی'
+  wwcConfigGUIToggleButton: درز %i
+  wwcConfigGUIWatsonButton: واتسون

@@ -10,7 +10,6 @@ Messages:
     saniyədir. Yeni bir dəyər təyin etmək üçün 10-dan daha böyük bir şey yazın və
     ya 10-dan az bir şey geri qayıtmaq üçün.
   wwctGUIMainMenuGlobal: Qlobal Tərcümə Menyusu
-  wwcConfigGUIWatsonButton: Watson Tərcümə
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin yeniləmə chat xatırlatma
     uğurla keçdi.'
   wwctbOnTarget: ' Kitabın tərcüməsi %i üçün aktivdir.'
@@ -60,7 +59,6 @@ Messages:
   wwctPlayerNotFound: ' Oyunçu %tapılmadı.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Qlobal söhbət tərcümə
     olunur, ancaq söhbətiniz %o tərcümə olunur.'
-  wwcConfigGUIGoogleTranslateSettings: Google Translate Konfiqurasiya
   wwcConfigGUIGlobalRateLimit: Global Rate Limitini dəyişdirin
   wwctGUIBackToSourceLanguageButton: Mənbə dili menyusuna qayıt
   wwcConfigGUIAmazonTranslateRegionButton: Amazon Regionunu dəyişdirin
@@ -68,7 +66,6 @@ Messages:
     daxil edin və ya ləğv etmək üçün 0 yazın. Dil kodları: %o'
   wwcConfigConversationLangInvalid: ' Yanlış dil kodu!'
   wwctTranslationStopped: ' Sizin chat tərcüməsi dayandırılıb.'
-  wwcConfigGUIWatsonSettings: Watson Konfiqurasiyası
   wwctsPlayerNotFound: ' Oyunçu %i ya tapılmadı, ya da aktiv tərcüməçi deyil.'
   wwcConfigGUIWatsonAPIKeyButton: Watson API Açarını dəyişdirin
   wwcEnabled: WorldWieChat versiyası %i aktivləşdirildi.
@@ -96,7 +93,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google Translate API Açarını dəyişdirin
   wwcSignDeletedOrTooLong: ' Hədəf işarəsi ya silindi, ya da tərcümə çox uzun idi.
     Tərcümə:'
-  wwcConfigGUIAmazonTranslateStatusButton: Amazon Tərcümə keçid
   wwctsOnTarget: ' Sign tərcümə %i üçün effektiv.'
   wwcConfigCacheDisabled: Tərcüməçi önbellek aradan qaldırıldı.
   wwcConfigConversationWatsonURLInput: Mövcud URL %i. Watson üçün xidmət URL\'sini
@@ -127,7 +123,6 @@ Messages:
   wwctSameLangError: ' Eyni dilə tərcümə edə bilməzsiniz!'
   wwctGUINewTranslationTarget: Hədəf Dil Seçin
   wwctLangToLangStartOtherPlayer: ' İndi %o söhbətini tərcümə edir %i -dən %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Konfiqurasiya Tərcümə
   wwcConfigConnectionSuccess: Uğurla bağlıdır %o!
   wwcConfigGUIGoogleTranslateButton: Google Tərcümə
   wwcsIsActiveTranslator: ' Aktiv Tərcüməçi: %i'
@@ -175,8 +170,6 @@ Messages:
   wwcConfigCacheEnabled: Tərcüməçi önbelleğini aktivləşdirdi və %i həddinə təyin etdi.
   wwctGUIExistingTranslationButton: Cari Tərcümə Sessiyasının yazılması
   wwcOnJoinTranslationNotificationNoSourceLang: ' Sizin söhbətiniz %o tərcümə olunur.'
-  wwcConfigGUIGoogleTranslateStatusButton: Google Translate keçid
-  wwcConfigGUIWatsonStatusButton: Watson keçid
   wwcUserDataReloaded: Bütün saxlanılan istifadəçi məlumatlarını yüklədi.
   wwcConfigGUISendTranslationChatButton: Girişdə Aktiv Tərcüməçiyə Chat Xatırlatma
     göndər
@@ -256,3 +249,6 @@ Messages:
     üçün config.yml və ya /wwcc ilə düzeltmek edin.'
   wwcNotDoneLoading: ' WorldwideChat hələ də başlanğıcdır. Xahiş edirik qısa bir müddət
     yenidən cəhd edin.'
+  wwcConfigGUIEachTranslatorSettings: '%i Konfiqurasiya'
+  wwcConfigGUIToggleButton: '%i keçin'
+  wwcConfigGUIWatsonButton: Watson

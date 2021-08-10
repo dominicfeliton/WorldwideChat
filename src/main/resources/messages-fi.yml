@@ -11,7 +11,6 @@ Messages:
     on %i sekuntia. Kirjoita mitä tahansa suurempi kuin 10, jos haluat asettaa uuden
     arvon, tai jotain alle 10 palata takaisin.
   wwctGUIMainMenuGlobal: Maailmanlaajuinen käännös
-  wwcConfigGUIWatsonButton: Watson kääntää
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin päivitys chat muistutus vaihdettu
     onnistuneesti.'
   wwctbOnTarget: ' Kirjan käännös käytössä kohteella %i.'
@@ -61,7 +60,6 @@ Messages:
   wwctPlayerNotFound: ' Pelaaja %en löytänyt.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Maailmanlaajuista
     keskustelua käännetään, mutta keskusteluasi käännetään kohteeseen %o.'
-  wwcConfigGUIGoogleTranslateSettings: Google Translate -määritykset
   wwcConfigGUIGlobalRateLimit: Muuta maailmanlaajuista hintarajaa
   wwctGUIBackToSourceLanguageButton: Takaisin Lähdekieli -valikkoon
   wwcConfigGUIAmazonTranslateRegionButton: Vaihda Amazonin alue
@@ -69,7 +67,6 @@ Messages:
     kielikoodi tai kirjoita 0 peruuttaaksesi sen. Kelvolliset kielikoodit: %'
   wwcConfigConversationLangInvalid: ' Virheellinen kielikoodi!'
   wwctTranslationStopped: ' Keskustelukäännös on lopetettu.'
-  wwcConfigGUIWatsonSettings: Watson-kokoonpano
   wwctsPlayerNotFound: ' Pelaaja %i ei joko löydy tai se ei ole aktiivinen kääntäjä.'
   wwcConfigGUIWatsonAPIKeyButton: Watsonin API-avaimen muuttaminen
   wwcEnabled: Käytössä WorldwideChat-versio %i.
@@ -97,7 +94,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Vaihda Google Translate API -näppäintä
   wwcSignDeletedOrTooLong: ' Kohdemerkki joko poistettiin tai käännös oli liian pitkä.
     Käännös:'
-  wwcConfigGUIAmazonTranslateStatusButton: Vaihda Amazon kääntää
   wwctsOnTarget: ' Allekirjoita käännös käytössä kohteella %i'
   wwcConfigCacheDisabled: Kääntäjän välimuisti poistettu käytöstä.
   wwcConfigConversationWatsonURLInput: Nykyinen URL-osoite on %i. Kirjoita Watsonille
@@ -130,7 +126,6 @@ Messages:
   wwctGUINewTranslationTarget: Valitse kohdekieli
   wwctLangToLangStartOtherPlayer: ' Käännetään nyt keskustelua %o osoitteesta %i kohteeseen
     %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon kääntää kokoonpano
   wwcConfigConnectionSuccess: Yhteys onnistui kohteeseen %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: ' Onko aktiivinen kääntäjä: %i'
@@ -177,8 +172,6 @@ Messages:
   wwctGUIExistingTranslationButton: Korvaa nykyinen käännösistunto
   wwcOnJoinTranslationNotificationNoSourceLang: ' Keskusteluasi käännetään kohteeseen
     %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Vaihda Google Translate
-  wwcConfigGUIWatsonStatusButton: Vaihda Watson
   wwcUserDataReloaded: Ladattu kaikki tallennetut käyttäjätiedot.
   wwcConfigGUISendTranslationChatButton: Lähetä Chat-muistutus Active Translatorille
     kirjautumisen yhteydessä
@@ -260,3 +253,6 @@ Messages:
   wwcInvalidTranslator: ' Kääntäjän asetukset eivät kelpaa. Korjaa tämä config.yml
     tai /wwcc käyttää tätä plugin.'
   wwcNotDoneLoading: ' WorldwideChat alustaa edelleen. Yritä pian uudelleen.'
+  wwcConfigGUIEachTranslatorSettings: '%i määritykset'
+  wwcConfigGUIToggleButton: Vaihda %i
+  wwcConfigGUIWatsonButton: Watson

@@ -10,7 +10,6 @@ Messages:
     sasisho ni %i seconds. Andika kitu chochote zaidi ya 10 ili kuweka thamani mpya,
     au kitu chochote chini ya 10 kurudi nyuma.
   wwctGUIMainMenuGlobal: Orodha ya Tafsiri ya Kimataifa
-  wwcConfigGUIWatsonButton: Watson Kutafsiri
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin update chat ukumbusho ilibadilishwa
     kwa mafanikio'
   wwctbOnTarget: ' Tafsiri ya kitabu imewezeshwa kwa %i.'
@@ -61,7 +60,6 @@ Messages:
   wwctPlayerNotFound: ' Mchezaji %sijaipata.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Soga ya kimataifa
     inatafsiriwa, lakini soga yako inatafsiriwa kwa %o.'
-  wwcConfigGUIGoogleTranslateSettings: Usanidi wa Utafsiri
   wwcConfigGUIGlobalRateLimit: Badilisha kikomo cha Kiwango cha Global
   wwctGUIBackToSourceLanguageButton: Rudi kwenye Menyu ya Lugha ya
   wwcConfigGUIAmazonTranslateRegionButton: Badilisha Mkoa wa Amazon
@@ -69,7 +67,6 @@ Messages:
     msimbo halali wa lugha, au weka 0 ili kughairi. Misimbo halali ya lugha: %o'
   wwcConfigConversationLangInvalid: ' Msimbo wa lugha batili!'
   wwctTranslationStopped: ' Tafsiri yako ya mazungumzo imesimamishwa.'
-  wwcConfigGUIWatsonSettings: Usanidi wa Watson
   wwctsPlayerNotFound: ' Mchezaji %i haipatikani, au si translator hai.'
   wwcConfigGUIWatsonAPIKeyButton: Badilisha ufunguo wa API wa Watson
   wwcEnabled: Imewezeshwa toleo la WorldwideChat %i.
@@ -96,7 +93,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Badilisha Google Tafsiri ufunguo wa API
   wwcSignDeletedOrTooLong: ' Ishara ya Target ilikuwa ama ilifutwa au tafsiri ilikuwa
     ndefu sana. Tafsiri:'
-  wwcConfigGUIAmazonTranslateStatusButton: Kubadilisha Amazon Kutafsiri
   wwctsOnTarget: ' Tafsiri ya ishara imewezeshwa kwa %i.'
   wwcConfigCacheDisabled: Cache ya Translator imezimwa
   wwcConfigConversationWatsonURLInput: URL ya sasa ni %i. Tafadhali ingiza URL ya
@@ -126,7 +122,6 @@ Messages:
   wwctSameLangError: ' Huwezi kutafsiri kwa lugha moja!'
   wwctGUINewTranslationTarget: Chagua Lugha ya Target
   wwctLangToLangStartOtherPlayer: ' Sasa kutafsiri soga ya %o kutoka %i hadi %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Kutafsiri U
   wwcConfigConnectionSuccess: Imeunganishwa kwa ufanisi na %o!
   wwcConfigGUIGoogleTranslateButton: Google Tafsiri
   wwcsIsActiveTranslator: ' Ni Mtafsiri wa Active: %i'
@@ -174,8 +169,6 @@ Messages:
   wwcConfigCacheEnabled: Cache ya Translator imewezeshwa na kuweka kikomo cha %i.
   wwctGUIExistingTranslationButton: Andika tena Tafsiri Kikao
   wwcOnJoinTranslationNotificationNoSourceLang: ' Soga yako inatafsiriwa kwa %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Badilisha Tafsiri ya Google
-  wwcConfigGUIWatsonStatusButton: Kugeuza Watson
   wwcUserDataReloaded: Imebeba data zote za mtumiaji zilizohifadhiwa.
   wwcConfigGUISendTranslationChatButton: Tuma Makumbusho ya Ongea kwa Mtafsiri wa
     Kazi
@@ -253,3 +246,6 @@ Messages:
   wwcInvalidTranslator: ' Mipangilio ya msanii batili. Tafadhali tengeneza hii katika
     config.yml yako au na/wwcc kutumia Plugin hii.'
   wwcNotDoneLoading: ' WorldwideChat bado inaanzisha. Tafadhali jaribu tena muda mfupi.'
+  wwcConfigGUIEachTranslatorSettings: '%i Usanidi'
+  wwcConfigGUIToggleButton: Toggle %i
+  wwcConfigGUIWatsonButton: Watson

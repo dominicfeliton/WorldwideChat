@@ -10,7 +10,6 @@ Messages:
     دی. د نوي ارزښت ټاکلو لپاره د 10 څخه ډیر څه ولیکئ، یا د 10 څخه لږ څه چې بیرته
     لاړ شئ.
   wwctGUIMainMenuGlobal: د ژباړې نړيوال غورنۍ
-  wwcConfigGUIWatsonButton: واټسن ژباړل
   wwcConfigConversationPluginUpdateChatSuccess: ' د پلگ ان تازه چیٹ یادونه په بریالیتوب
     سره په ټګ شوی.'
   wwctbOnTarget: .د کتاب ژباړه توانې %i لپاره
@@ -61,7 +60,6 @@ Messages:
   wwctPlayerNotFound: . لوبغاړي ونه موندل شو
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' ګلوبل چیٹ ژباړل کیږي،
     مګر ستاسو چیٹ د %o لپاره ژباړل کیږي.'
-  wwcConfigGUIGoogleTranslateSettings: د ګوګل ژباړونکي سازونه
   wwcConfigGUIGlobalRateLimit: د نړیوال نرخ محدودیت بدل کړئ
   wwctGUIBackToSourceLanguageButton: بېرته د سرچينې ژبې غورنۍ ته
   wwcConfigGUIAmazonTranslateRegionButton: د ایمیزون سیمه بدل کړئ
@@ -69,7 +67,6 @@ Messages:
     ژبې کوډ داخل کړئ، یا د فسخه کولو لپاره 0 ډول کړئ. د اعتبار وړ ژبې کوډونه: %o'
   wwcConfigConversationLangInvalid: ' ناسم ژبه کوډ!'
   wwctTranslationStopped: ' ستاسو د چیٹ ژباړه ودرول شوې ده.'
-  wwcConfigGUIWatsonSettings: واټسن سازونه
   wwctsPlayerNotFound: ' لوبغاړي %i یا نه موندل شوی، یا فعال ژباړونکی نه دی.'
   wwcConfigGUIWatsonAPIKeyButton: د واټسن API کیلي بدل کړئ
   wwcEnabled: فعال شوی WorldWieChat نسخه %i.
@@ -96,7 +93,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: د ګوګل ژباړن API کلیدي بدل کړئ
   wwcSignDeletedOrTooLong: ' د هدف نښه یا له منځه تللې وه یا ژباړه ډیره اوږده وه.
     ژباړه:'
-  wwcConfigGUIAmazonTranslateStatusButton: د ایمیزون ژباړل
   wwctsOnTarget: .د ژباړې لاسليک کړﺉ
   wwcConfigCacheDisabled: ژباړونکي کیچ معلول شو.
   wwcConfigConversationWatsonURLInput: اوسنی URL دی %i. مهرباني وکړئ د واټسن لپاره
@@ -127,7 +123,6 @@ Messages:
   wwctSameLangError: ' تاسې همغه ژبې ته ژباړئ نه شئ!'
   wwctGUINewTranslationTarget: موخه ژبه غوره کړئ
   wwctLangToLangStartOtherPlayer: ' اوس د خبرو ژباړه %o له %i څخه %e ته.'
-  wwcConfigGUIAmazonTranslateSettings: د ایمیزون ژباړل
   wwcConfigConnectionSuccess: په برياليتوب سره نښلول شو %o!
   wwcConfigGUIGoogleTranslateButton: ګوګل ژباړل
   wwcsIsActiveTranslator: ': %i فعاله ژباړونکی دی'
@@ -173,8 +168,6 @@ Messages:
   wwcConfigCacheEnabled: ژباړونکي کیچ فعال او د %i حد ته یې وټاکه.
   wwctGUIExistingTranslationButton: د ژباړې اوسنۍ ناسته بیا لیکل
   wwcOnJoinTranslationNotificationNoSourceLang: ' ستاسو چیٹ ژباړل کیږي %o ته.'
-  wwcConfigGUIGoogleTranslateStatusButton: د ګوګل ژباړن توګول
-  wwcConfigGUIWatsonStatusButton: واټسن ټکول
   wwcUserDataReloaded: ټول خوندي شوي کارن ډاټا لوډ کړئ.
   wwcConfigGUISendTranslationChatButton: په ننوت کې فعال ژباړونکي ته د چیٹ یادښت واستوئ
   wwcsLastTranslationTime: ' وروستی (بریالۍ) د ژباړې وخت: %i'
@@ -253,3 +246,6 @@ Messages:
     یا/wwcc سره د دې فلګین کارولو لپاره حل کړئ.'
   wwcNotDoneLoading: ' WorldwideChat لا تر اوسه پیل کیږي. مهرباني وکړئ لږ تر لږه بیا
     هڅه وکړئ.'
+  wwcConfigGUIEachTranslatorSettings: '%i سازونه'
+  wwcConfigGUIToggleButton: ټولي %i
+  wwcConfigGUIWatsonButton: واټسن

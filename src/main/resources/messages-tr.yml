@@ -9,7 +9,6 @@ Messages:
     gecikme %i saniye. Yeni bir değer ayarlamak için 10\'dan büyük bir şey yazın veya
     geri dönmek için 10\'dan küçük bir şey yazın.
   wwctGUIMainMenuGlobal: Küresel Çeviri Menüsü
-  wwcConfigGUIWatsonButton: Watson Tercüme
   wwcConfigConversationPluginUpdateChatSuccess: ' Eklenti güncelleme sohbet anımsatıcısı
     başarıyla güncellendi.'
   wwctbOnTarget: ' %i için kitap çevirisi etkinleştirildi.'
@@ -59,7 +58,6 @@ Messages:
   wwctPlayerNotFound: ' Oyuncu %i bulunamadı.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Küresel sohbet çevriliyor,
     ancak sohbetiniz %o\''ya çevriliyor.'
-  wwcConfigGUIGoogleTranslateSettings: Google Translate Yapılandırması
   wwcConfigGUIGlobalRateLimit: Küresel Fiyat Limitini Değiştir
   wwctGUIBackToSourceLanguageButton: Kaynak Dil Menüsüne Geri Dön
   wwcConfigGUIAmazonTranslateRegionButton: Amazon Bölgesini Değiştir
@@ -67,7 +65,6 @@ Messages:
     kodu girin veya iptal etmek için 0 yazın. Geçerli dil kodları: %o'
   wwcConfigConversationLangInvalid: ' Geçersiz dil kodu!'
   wwctTranslationStopped: ' Sohbet çeviriniz durduruldu.'
-  wwcConfigGUIWatsonSettings: Watson Yapılandırması
   wwctsPlayerNotFound: ' %i oyuncuya bulunamadı ya da etkin bir çevirmen değil.'
   wwcConfigGUIWatsonAPIKeyButton: Watson API Anahtarını Değiştir
   wwcEnabled: WorldwideChat sürümün %i etkinleştirildi.
@@ -93,7 +90,6 @@ Messages:
   wwcConfigConversationPrefixSuccess: ' Önek başarıyla değiştirildi.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google Translate API Anahtarını Değiştir
   wwcSignDeletedOrTooLong: ' Hedef işareti silindi veya çeviri çok uzundu. Çeviri:'
-  wwcConfigGUIAmazonTranslateStatusButton: Amazon Çevirisini Aç/Kapat
   wwctsOnTarget: ' %i için imzalama çevirisi etkinleştirildi.'
   wwcConfigCacheDisabled: Çevirmen önbelleği devre dışı.
   wwcConfigConversationWatsonURLInput: Geçerli URL %i. Lütfen Watson için bir hizmet
@@ -122,7 +118,6 @@ Messages:
   wwctSameLangError: ' Aynı dile tercüme edemezsin!'
   wwctGUINewTranslationTarget: Hedef Dil Seçin
   wwctLangToLangStartOtherPlayer: ' Şimdi %o sohbeti %i ile %e çevriliyor.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Translate Yapılandırması
   wwcConfigConnectionSuccess: '%o!'
   wwcConfigGUIGoogleTranslateButton: Google Çevir
   wwcsIsActiveTranslator: ' Etkin Çevirmen: %i'
@@ -170,8 +165,6 @@ Messages:
   wwcConfigCacheEnabled: Çevirmen önbelleği etkinleştirildi ve %i sınırına ayarlandı.
   wwctGUIExistingTranslationButton: Geçerli Çeviri Oturumunun Üzerine Yaz
   wwcOnJoinTranslationNotificationNoSourceLang: ' Sohbetin %o\''ya çevriliyor.'
-  wwcConfigGUIGoogleTranslateStatusButton: Google Translace\'ı aç/kapat
-  wwcConfigGUIWatsonStatusButton: Watson\'ı aç/kapat
   wwcUserDataReloaded: Kaydedilen tüm kullanıcı verilerini yüklendi.
   wwcConfigGUISendTranslationChatButton: Oturum Açan Aktif Çevirmen\'e Sohbet Hatırlatıcısı
     Gönder
@@ -250,3 +243,6 @@ Messages:
     için config.yml veya /wwcc ile düzeltin.'
   wwcNotDoneLoading: ' WorldwideChat hala başlatılıyor. Lütfen kısa bir süre sonra
     tekrar deneyin.'
+  wwcConfigGUIEachTranslatorSettings: '%i Yapılandırma'
+  wwcConfigGUIToggleButton: '%i'
+  wwcConfigGUIWatsonButton: Watson

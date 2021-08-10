@@ -10,7 +10,6 @@ Messages:
     ایک نئی قیمت مقرر کرنے کے لئے 10 سے زیادہ کچھ بھی ٹائپ کریں، یا واپس جانے کے لئے
     10 سے کم کچھ بھی.
   wwctGUIMainMenuGlobal: عالمی ترجمہ مینو
-  wwcConfigGUIWatsonButton: واٹسن ترجمہ
   wwcConfigConversationPluginUpdateChatSuccess: ' پلگ ان اپ ڈیٹ چیٹ یاد دہانی کامیابی
     سے ٹوگل'
   wwctbOnTarget: ' %i کے لئے کتاب ترجمے کو فعال کیا گیا ہے۔'
@@ -60,7 +59,6 @@ Messages:
   wwctPlayerNotFound: ' کھلاڑی میں %مجھے نہیں ملا'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' گلوبل چیٹ کا ترجمہ
     کیا جا رہا ہے، لیکن آپ کی بات کا ترجمہ %o میں کیا جا رہا ہے۔'
-  wwcConfigGUIGoogleTranslateSettings: گوگل ترجمہ ترتیب
   wwcConfigGUIGlobalRateLimit: عالمی شرح کی حد تبدیل کریں
   wwctGUIBackToSourceLanguageButton: ماخذ زبان مینو پر واپس جائیں
   wwcConfigGUIAmazonTranslateRegionButton: ایمیزون علاقہ تبدیل کریں
@@ -68,7 +66,6 @@ Messages:
     زبان کوڈ درج کریں، یا منسوخ کرنے کیلئے 0 ٹائپ کریں۔ درست زبان کوڈ: %o'
   wwcConfigConversationLangInvalid: ' غلط زبان کا کوڈ!'
   wwctTranslationStopped: ' آپ کی گفتگو کا ترجمہ روک دیا گیا ہے۔'
-  wwcConfigGUIWatsonSettings: واٹسن ترتیب
   wwctsPlayerNotFound: ' کھلاڑی %i یا تو نہیں ملا ہے، یا ایک فعال مترجم نہیں ہے.'
   wwcConfigGUIWatsonAPIKeyButton: واٹسن API کی کلید تبدیل کریں
   wwcEnabled: فعال ورلڈ وائڈ ہاٹ ورژن %i.
@@ -96,7 +93,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: گوگل ترجمہ API کلید تبدیل کریں
   wwcSignDeletedOrTooLong: ' ہدف نشان یا تو حذف کر دیا گیا تھا یا ترجمہ بہت طویل تھا.
     ترجمہ:'
-  wwcConfigGUIAmazonTranslateStatusButton: ٹوگل ایمیزون ترجمہ کریں
   wwctsOnTarget: ' %i کے لئے فعال سائن ترجمہ.'
   wwcConfigCacheDisabled: مترجم کی کیش غیر فعال
   wwcConfigConversationWatsonURLInput: موجودہ URL %i ہے، برائے مہربانی واٹسن کے لئے
@@ -127,7 +123,6 @@ Messages:
   wwctSameLangError: ' آپ ایک ہی زبان میں ترجمہ نہیں کر سکتے!'
   wwctGUINewTranslationTarget: ہدف کی زبان کا انتخاب کریں
   wwctLangToLangStartOtherPlayer: ' اب %o سے %i سے %e کے چیٹ کا ترجمہ کر رہا ہے۔'
-  wwcConfigGUIAmazonTranslateSettings: ایمیزون ترجمہ ترتیب
   wwcConfigConnectionSuccess: کامیابی کے ساتھ %o سے جڑا ہوا!
   wwcConfigGUIGoogleTranslateButton: گوگل ترجمہ
   wwcsIsActiveTranslator: ' فعال مترجم ہے: %i'
@@ -175,8 +170,6 @@ Messages:
   wwctGUIExistingTranslationButton: موجودہ ترجمہ کا اجلاس اوور لکھنا
   wwcOnJoinTranslationNotificationNoSourceLang: ' آپ کی بات کا ترجمہ %o پر کیا جا
     رہا ہے۔'
-  wwcConfigGUIGoogleTranslateStatusButton: گوگل ترجمہ ٹوگل کریں
-  wwcConfigGUIWatsonStatusButton: واٹسن ٹوگل کریں
   wwcUserDataReloaded: تمام محفوظ کردہ صارف کے ڈیٹا کو لوڈ کیا گیا.
   wwcConfigGUISendTranslationChatButton: لاگ ان پر فعال مترجم کو چیٹ یاد دہانی
   wwcsLastTranslationTime: ' آخری (کامیاب) ترجمہ کا وقت: %i'
@@ -257,3 +250,6 @@ Messages:
     کے لئے اپنے config.yml میں یا /wwcc کے ساتھ ٹھیک کریں.'
   wwcNotDoneLoading: ' WorldwideChat اب بھی شروع کر رہا ہے. برائے مہربانی جلد ہی دوبارہ
     کوشش کریں۔'
+  wwcConfigGUIEachTranslatorSettings: '%i ترتیب'
+  wwcConfigGUIToggleButton: '%i ٹوگل کریں'
+  wwcConfigGUIWatsonButton: واٹسن

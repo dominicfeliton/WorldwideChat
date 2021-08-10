@@ -10,7 +10,6 @@ Messages:
     mise à jour est %i secondes. Tapez quelque chose de supérieur à 10 pour définir
     une nouvelle valeur, ou tout autre de moins de 10 pour revenir en arrière.
   wwctGUIMainMenuGlobal: Menu de traduction globale
-  wwcConfigGUIWatsonButton: Watson Traduire
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin mise à jour chat rappel basculé
     avec succès.'
   wwctbOnTarget: ' Traduction de livre activée pour %i.'
@@ -64,7 +63,6 @@ Messages:
   wwctPlayerNotFound: ' Joueur %je n\''ai pas trouvé.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Le chat global est
     en cours de traduction, mais votre chat est traduit à %o.'
-  wwcConfigGUIGoogleTranslateSettings: Configuration de Google Translate
   wwcConfigGUIGlobalRateLimit: Modifier la limite de taux global
   wwctGUIBackToSourceLanguageButton: Retour au menu Langue Source
   wwcConfigGUIAmazonTranslateRegionButton: Modifier la région Amazon
@@ -72,7 +70,6 @@ Messages:
     code de langue valide ou tapez 0 pour annuler. Codes de langue valides: %o'
   wwcConfigConversationLangInvalid: ' Code de langue non valide!'
   wwctTranslationStopped: ' Votre traduction de chat a été arrêtée.'
-  wwcConfigGUIWatsonSettings: Configuration Watson
   wwctsPlayerNotFound: ' Le joueur %i n\''est pas trouvé, ou n\''est pas un traducteur
     actif.'
   wwcConfigGUIWatsonAPIKeyButton: Modifier la clé API Watson
@@ -103,7 +100,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Modifier la clé API Google Translate
   wwcSignDeletedOrTooLong: ' Le signe cible a été supprimé ou la traduction a été
     trop longue. Traduction:'
-  wwcConfigGUIAmazonTranslateStatusButton: Basculer Amazon Translate
   wwctsOnTarget: ' Traduction des signes activée pour %i.'
   wwcConfigCacheDisabled: Le cache du traducteur est désactivé.
   wwcConfigConversationWatsonURLInput: L\'URL actuelle est %i. Entrez une URL de service
@@ -137,7 +133,6 @@ Messages:
   wwctSameLangError: ' Vous ne pouvez pas traduire dans la même langue!'
   wwctGUINewTranslationTarget: Choisir une langue cible
   wwctLangToLangStartOtherPlayer: ' Traduire maintenant le chat de %o de %i à %e.'
-  wwcConfigGUIAmazonTranslateSettings: Configuration d\'Amazon Translate
   wwcConfigConnectionSuccess: Connexion réussie à %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: ' Est le traducteur actif: %i'
@@ -190,8 +185,6 @@ Messages:
   wwctGUIExistingTranslationButton: Remplacer la session de traduction actuelle
   wwcOnJoinTranslationNotificationNoSourceLang: ' Votre chat est en cours de traduction
     à %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Basculer Google Translate
-  wwcConfigGUIWatsonStatusButton: Basculer Watson
   wwcUserDataReloaded: Chargé toutes les données utilisateur enregistrées.
   wwcConfigGUISendTranslationChatButton: Envoyer un rappel de chat à Active Translator
     lors de la connexion
@@ -281,3 +274,6 @@ Messages:
     corriger cela dans votre config.yml ou avec /wwcc pour utiliser ce plugin.'
   wwcNotDoneLoading: ' WorldwideChat est toujours en cours d\''initialisation. Veuillez
     réessayer sous peu.'
+  wwcConfigGUIEachTranslatorSettings: '%i Configuration'
+  wwcConfigGUIToggleButton: Activer %i
+  wwcConfigGUIWatsonButton: Watson au Canada

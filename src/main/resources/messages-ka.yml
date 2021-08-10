@@ -10,7 +10,6 @@ Messages:
     არის %i წამი. აკრიფეთ 10-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან
     არაფერი ნაკლებია, ვიდრე 10 დაბრუნდეს.
   wwctGUIMainMenuGlobal: გლობალური თარგმანის მენიუ
-  wwcConfigGUIWatsonButton: უოტსონის თარგმნა
   wwcConfigConversationPluginUpdateChatSuccess: ' მოდული განახლება სტატისტიკა შეხსენება
     toggled წარმატებით.'
   wwctbOnTarget: ' წიგნის თარგმანი ჩართულია %i.'
@@ -61,7 +60,6 @@ Messages:
   wwctPlayerNotFound: ' მოთამაშე %i ვერ მოიძებნა.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' გლობალური სტატისტიკა
     თარგმნილია, მაგრამ თქვენი სტატისტიკა თარგმნა %o.'
-  wwcConfigGUIGoogleTranslateSettings: Google თარგმანის კონფიგურაცია
   wwcConfigGUIGlobalRateLimit: გლობალური განაკვეთის ლიმიტის შეცვლა
   wwctGUIBackToSourceLanguageButton: დაბრუნება წყარო ენის მენიუ
   wwcConfigGUIAmazonTranslateRegionButton: ამაზონის რეგიონის შეცვლა
@@ -69,7 +67,6 @@ Messages:
     ენის კოდი ან ტიპის 0 გასაუქმებლად. სწორი ენის კოდები: %o'
   wwcConfigConversationLangInvalid: ' არასწორი ენის კოდი!'
   wwctTranslationStopped: ' თქვენი სტატისტიკა თარგმანი შეწყდა.'
-  wwcConfigGUIWatsonSettings: უოტსონის კონფიგურაცია
   wwctsPlayerNotFound: ' მოთამაშე %i ან არ არის ნაპოვნი, ან არ არის აქტიური თარჯიმანი.'
   wwcConfigGUIWatsonAPIKeyButton: შეცვალეთ Watson API გასაღები
   wwcEnabled: ჩართულია WorldWidecHat ვერსია %i.
@@ -96,7 +93,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google Translate API
   wwcSignDeletedOrTooLong: ' სამიზნე ნიშანი ან წაიშალა ან თარგმანი ძალიან გრძელი იყო.
     თარგმანი:'
-  wwcConfigGUIAmazonTranslateStatusButton: გადართვა Amazon Translate
   wwctsOnTarget: ' ხელმოწერის თარგმანი ჩართულია %i.'
   wwcConfigCacheDisabled: თარჯიმანი ქეში გამორთულია.
   wwcConfigConversationWatsonURLInput: მიმდინარე URL არის %i. გთხოვთ, შეიყვანოთ სერვისის
@@ -128,7 +124,6 @@ Messages:
   wwctSameLangError: ' თქვენ არ შეგიძლიათ თარგმნოთ იმავე ენაზე!'
   wwctGUINewTranslationTarget: აირჩიეთ სამიზნე ენა
   wwctLangToLangStartOtherPlayer: ' ახლა თარგმნა სტატისტიკა %o დან %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon თარგმანის კონფიგურაცია
   wwcConfigConnectionSuccess: წარმატებით დაკავშირებულია %o!
   wwcConfigGUIGoogleTranslateButton: Google თარგმნა
   wwcsIsActiveTranslator: ' არის აქტიური მთარგმნელი: %i'
@@ -176,8 +171,6 @@ Messages:
   wwcConfigCacheEnabled: თარჯიმანი ქეში ჩართულია და დაყენებულია ლიმიტი %i.
   wwctGUIExistingTranslationButton: მთარგმნელობითი მიმდინარე სესიის გადაწერა
   wwcOnJoinTranslationNotificationNoSourceLang: ' თქვენი სტატისტიკა თარგმნა %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Google Translate გადართვა
-  wwcConfigGUIWatsonStatusButton: უოტსონის გადართვა
   wwcUserDataReloaded: დატვირთული ყველა შენახული მომხმარებლის მონაცემები.
   wwcConfigGUISendTranslationChatButton: ჩაწერეთ შეხსენება აქტიურ მთარგმნელთან შესვლაზე
   wwcsLastTranslationTime: ' ბოლო (წარმატებული) თარგმანის დრო: %i'
@@ -258,3 +251,6 @@ Messages:
     config.yml ან /wwcc გამოიყენოთ ეს მოდული.'
   wwcNotDoneLoading: ' WorldwideChat კვლავ ინიციალიზაციაა. გთხოვთ, სცადოთ ცოტა ხნის
     წინ.'
+  wwcConfigGUIEachTranslatorSettings: '%i კონფიგურაცია'
+  wwcConfigGUIToggleButton: დან %i
+  wwcConfigGUIWatsonButton: უოტსონი

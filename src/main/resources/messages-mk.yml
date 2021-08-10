@@ -10,7 +10,6 @@ Messages:
     е %i секунди. Внесете нешто поголемо од 10 за да поставите нова вредност, или
     нешто помалку од 10 за да се вратите назад.
   wwctGUIMainMenuGlobal: Глобално мени за превод
-  wwcConfigGUIWatsonButton: Вотсон Преведи
   wwcConfigConversationPluginUpdateChatSuccess: ' Потсетник за разговор за ажурирање
     на приклучокот успешно се префрли.'
   wwctbOnTarget: ' Преводот на книги е овозможен за %i.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' Играч % не сум пронајден.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Глобалниот разговор
     се преведува, но вашиот разговор се преведува на %o.'
-  wwcConfigGUIGoogleTranslateSettings: Конфигурација на Google превод
   wwcConfigGUIGlobalRateLimit: Промена на глобалната стапка граница
   wwctGUIBackToSourceLanguageButton: Назад кон менито за изворен јазик
   wwcConfigGUIAmazonTranslateRegionButton: Промена на регионот Амазон
@@ -71,7 +69,6 @@ Messages:
     кодови: %o'
   wwcConfigConversationLangInvalid: ' Неважечки јазичен код!'
   wwctTranslationStopped: ' Вашиот разговор превод е запрен.'
-  wwcConfigGUIWatsonSettings: Вотсон Конфигурација
   wwctsPlayerNotFound: ' Играч %i или не е пронајден, или не е активен преведувач.'
   wwcConfigGUIWatsonAPIKeyButton: Промена Вотсон API Клучни
   wwcEnabled: Овозможена верзија %i.
@@ -98,7 +95,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Промена на Google Преведете API клуч
   wwcSignDeletedOrTooLong: ' Целниот знак беше или избришан или преводот беше премногу
     долг. Превод:'
-  wwcConfigGUIAmazonTranslateStatusButton: Префрли Амазон Преведете
   wwctsOnTarget: ' Пријавете превод е овозможено за %i.'
   wwcConfigCacheDisabled: Кешот на преведувачот оневозможен
   wwcConfigConversationWatsonURLInput: Тековната URL адреса е %i. Ве молиме внесете
@@ -130,7 +126,6 @@ Messages:
   wwctGUINewTranslationTarget: Изберете целен јазик
   wwctLangToLangStartOtherPlayer: ' Сега преведување на разговорот на %o од %i до
     %e.'
-  wwcConfigGUIAmazonTranslateSettings: Амазон Преведете конфигурација
   wwcConfigConnectionSuccess: Успешно поврзан со %o!
   wwcConfigGUIGoogleTranslateButton: Преведи на Google
   wwcsIsActiveTranslator: ' Дали е активен преведувач: %i'
@@ -182,8 +177,6 @@ Messages:
     од %i.
   wwctGUIExistingTranslationButton: Пребриши тековната сесија за превод
   wwcOnJoinTranslationNotificationNoSourceLang: ' Вашиот разговор е преведен на %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Префрли Google Translate
-  wwcConfigGUIWatsonStatusButton: Вклучи Вотсон
   wwcUserDataReloaded: Вчитани сите зачувани кориснички податоци.
   wwcConfigGUISendTranslationChatButton: Испрати потсетник за разговор на активен
     преведувач на најава
@@ -270,3 +263,6 @@ Messages:
     ова во вашиот config.yml или со /wwcc да го користите овој приклучок.'
   wwcNotDoneLoading: ' WorldwideChat сè уште иницијализира. Ве молиме обидете се повторно
     наскоро.'
+  wwcConfigGUIEachTranslatorSettings: '%i Конфигурација'
+  wwcConfigGUIToggleButton: Вклучување %i
+  wwcConfigGUIWatsonButton: Вотсон

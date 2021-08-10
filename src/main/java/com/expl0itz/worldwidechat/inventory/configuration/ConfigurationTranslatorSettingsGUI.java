@@ -118,7 +118,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		translatorButton.setItemMeta(translatorButtonMeta);
 		contents.set(1, 1, ClickableItem.of(translatorButton, 
 				e -> {
-					ConfigurationWatsonSettingsGUI.watsonSettings.open(player);
+					ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson").open(player);
 		    }));
 	}
 	
@@ -135,7 +135,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		translatorButton.setItemMeta(translatorButtonMeta);
 		contents.set(1, 2, ClickableItem.of(translatorButton, 
 				e -> {
-				    ConfigurationGoogleTranslateSettingsGUI.googleTranslateSettings.open(player);
+					ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Google Translate").open(player);
 		    }));
 	}
 	
@@ -152,7 +152,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		translatorButton.setItemMeta(translatorButtonMeta);
 		contents.set(1, 3, ClickableItem.of(translatorButton, 
 				e -> {
-					ConfigurationAmazonTranslateSettingsGUI.amazonTranslateSettings.open(player);
+					ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Amazon Translate").open(player);
 		    }));
 	}
 	

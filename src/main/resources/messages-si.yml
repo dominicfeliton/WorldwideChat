@@ -10,7 +10,6 @@ Messages:
     තත්පර වේ. නව වටිනාකමක් සැකසීමට 10 ට වඩා වැඩි යමක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට
     10 ට වඩා අඩු දෙයක්.
   wwctGUIMainMenuGlobal: ගෝලීය පරිවර්තන මෙනුව
-  wwcConfigGUIWatsonButton: වොට්සන් පරිවර්තනය
   wwcConfigConversationPluginUpdateChatSuccess: ' ප්ලගිනය යාවත්කාලීන චැට් මතක් සාර්ථකව
     ටොගල.'
   wwctbOnTarget: ' %i සඳහා පොත් පරිවර්තනය සක්රීය කර ඇත.'
@@ -60,7 +59,6 @@ Messages:
   wwctPlayerNotFound: ' ක්රීඩකයා සොයාගත්තේ නැත.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' ගෝලීය කතාබස් පරිවර්තනය
     වෙමින් පවතී, නමුත් ඔබගේ කතාබස් %o වෙත පරිවර්තනය වෙමින් පවතී.'
-  wwcConfigGUIGoogleTranslateSettings: ගූගල් පරිවර්තනය වින්යාසය
   wwcConfigGUIGlobalRateLimit: ගෝලීය අනුපාත සීමාව වෙනස් කිරීම
   wwctGUIBackToSourceLanguageButton: මූලාශ්ර භාෂා මෙනුව වෙත ආපසු යන්න
   wwcConfigGUIAmazonTranslateRegionButton: ඇමසන් කලාපය වෙනස් කරන්න
@@ -68,7 +66,6 @@ Messages:
     ඇතුලත් කරන්න, නැතහොත් අවලංගු කිරීමට 0 ටයිප් කරන්න. වලංගු භාෂා කේත: %o'
   wwcConfigConversationLangInvalid: ' වලංගු නොවන භාෂා කේතය!'
   wwctTranslationStopped: ' ඔබේ චැට් පරිවර්තනය නතර කර ඇත.'
-  wwcConfigGUIWatsonSettings: වොට්සන් වින්යාසය
   wwctsPlayerNotFound: ' % ප්ලේයර් % මම එක්කෝ සොයාගත නොහැක, නැතහොත් ක්රියාකාරී පරිවර්තකයෙකු
     නොවේ.'
   wwcConfigGUIWatsonAPIKeyButton: වොට්සන් API කී වෙනස්
@@ -97,7 +94,6 @@ Messages:
   wwcConfigConversationPrefixSuccess: ' උපසර්ගය සාර්ථකව වෙනස් විය.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: ගූගල් වෙනස් API යතුර පරිවර්තනය කරන්න
   wwcSignDeletedOrTooLong: ' ඉලක්ක ලකුණ එක්කෝ මකා දමන ලදී හෝ පරිවර්තනය දිගු විය. පරිවර්තනය:'
-  wwcConfigGUIAmazonTranslateStatusButton: ටොගල් කරන්න ඇමේසන් පරිවර්තනය
   wwctsOnTarget: ' %i සඳහා සංඥා පරිවර්තනය සක්රීය කර ඇත.'
   wwcConfigCacheDisabled: පරිවර්තක හැඹිලි අක්රීය කර ඇත.
   wwcConfigConversationWatsonURLInput: වත්මන් URL එක %i වේ. කරුණාකර වොට්සන් සඳහා සේවා
@@ -131,7 +127,6 @@ Messages:
   wwctSameLangError: ' ඔබට එකම භාෂාවට පරිවර්තනය කළ නොහැක!'
   wwctGUINewTranslationTarget: ඉලක්කගත භාෂාවක් තෝරන්න
   wwctLangToLangStartOtherPlayer: ' දැන් %o සිට කතාබස් පරිවර්තනය කිරීම %i සිට %e.'
-  wwcConfigGUIAmazonTranslateSettings: ඇමේසන් පරිවර්තනය වින්යාසය
   wwcConfigConnectionSuccess: '%o වෙත සාර්ථකව සම්බන්ධ විය!'
   wwcConfigGUIGoogleTranslateButton: ගූගල් පරිවර්තනය
   wwcsIsActiveTranslator: ' ක්රියාකාරී පරිවර්තක වේ: %i'
@@ -180,8 +175,6 @@ Messages:
   wwctGUIExistingTranslationButton: වත්මන් පරිවර්තන සැසිය ලියන්න
   wwcOnJoinTranslationNotificationNoSourceLang: ' ඔබගේ චැට් එක %o වෙත පරිවර්තනය කරනු
     ලැබේ.'
-  wwcConfigGUIGoogleTranslateStatusButton: ගූගල් පරිවර්තනය ටොගල් කරන්න
-  wwcConfigGUIWatsonStatusButton: ටොගල් කරන්න වොට්සන්
   wwcUserDataReloaded: සියලු සුරකින ලද පරිශීලක දත්ත පටවා.
   wwcConfigGUISendTranslationChatButton: ලොගින් වන්න මත ක්රියාකාරී පරිවර්තකයාට චැට්
     මතක් කිරීම යවන්න
@@ -267,3 +260,6 @@ Messages:
     කිරීමට ඔබගේ config.yml හෝ /wwcc සමඟ මෙය නිවැරදි කරන්න.'
   wwcNotDoneLoading: ' වර්ල්ඩ්වයිඩ්හාට් තවමත් ආරම්භ වෙමින් පවතී. කරුණාකර කෙටි කලකින්
     නැවත උත්සාහ කරන්න.'
+  wwcConfigGUIEachTranslatorSettings: '%i වින්යාසය'
+  wwcConfigGUIToggleButton: '%i ටොගල් කරන්න'
+  wwcConfigGUIWatsonButton: වොට්සන්

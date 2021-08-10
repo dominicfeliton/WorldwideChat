@@ -10,7 +10,6 @@ Messages:
     છે. નવું મૂલ્ય સેટ કરવા માટે 10 કરતા વધારે કંઈપણ લખો, અથવા પાછા જવા માટે 10 કરતા
     ઓછું કંઈપણ.
   wwctGUIMainMenuGlobal: વૈશ્વિક અનુવાદ મેનુ
-  wwcConfigGUIWatsonButton: વાટ્સન અનુવાદ
   wwcConfigConversationPluginUpdateChatSuccess: ' પ્લગઇન અપડેટ ચેટ રીમાઇન્ડર સફળતાપૂર્વક
     toggled.'
   wwctbOnTarget: ' પુસ્તક અનુવાદ %i માટે સક્ષમ છે.'
@@ -60,7 +59,6 @@ Messages:
   wwctPlayerNotFound: ' ખેલાડી % મને મળ્યું નથી.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' વૈશ્વિક ચેટનો અનુવાદ
     થઈ રહ્યો છે, પરંતુ તમારી ચેટનો અનુવાદ %o માં થઈ રહ્યો છે.'
-  wwcConfigGUIGoogleTranslateSettings: Google અનુવાદ રૂપરેખાંકન
   wwcConfigGUIGlobalRateLimit: વૈશ્વિક દર મર્યાદા બદલો
   wwctGUIBackToSourceLanguageButton: સ્રોત ભાષા મેનુ પર પાછા
   wwcConfigGUIAmazonTranslateRegionButton: એમેઝોન પ્રદેશ બદલો
@@ -68,7 +66,6 @@ Messages:
     કોડ દાખલ કરો, અથવા રદ કરવા માટે 0 લખો. માન્ય ભાષા કોડ: %o'
   wwcConfigConversationLangInvalid: ' અમાન્ય ભાષા કોડ!'
   wwctTranslationStopped: ' તમારી વાટનો અનુવાદ બંધ કરી દેવામાં આવ્યો છે.'
-  wwcConfigGUIWatsonSettings: વોટસન રૂપરેખાંકન
   wwctsPlayerNotFound: ' ખેલાડી %i ક્યાં તો મળી નથી, અથવા સક્રિય અનુવાદક નથી.'
   wwcConfigGUIWatsonAPIKeyButton: Watson API કી બદલો
   wwcEnabled: સક્ષમ વિશ્વવ્યાપી ચેટ સંસ્કરણ %i.
@@ -95,7 +92,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google અનુવાદ API કી બદલો
   wwcSignDeletedOrTooLong: ' લક્ષ્ય ચિહ્ન કાં તો કાઢી નાખવામાં આવ્યું હતું અથવા અનુવાદ
     ખૂબ લાંબુ હતું. અનુવાદ:'
-  wwcConfigGUIAmazonTranslateStatusButton: એમેઝોન અનુવાદ ટૉગલ
   wwctsOnTarget: ' %i માટે અનુવાદ સક્રિય કરેલ સાઇન ઇન કરો.'
   wwcConfigCacheDisabled: અનુવાદક કેશ અક્ષમ.
   wwcConfigConversationWatsonURLInput: વર્તમાન URL %i છે કૃપા કરીને વોટસન માટે સેવા
@@ -126,7 +122,6 @@ Messages:
   wwctSameLangError: ' તમે સમાન ભાષામાં અનુવાદ કરી શકતા નથી!'
   wwctGUINewTranslationTarget: લક્ષ્ય ભાષા પસંદ કરો
   wwctLangToLangStartOtherPlayer: ' હવે %o ની ચેટનું અનુવાદ કરો %i થી %e સુધી કરો.'
-  wwcConfigGUIAmazonTranslateSettings: એમેઝોન રૂપરેખાંકન અનુવાદ
   wwcConfigConnectionSuccess: સફળતાપૂર્વક %o સાથે જોડાયેલ!
   wwcConfigGUIGoogleTranslateButton: ગૂગલ ટ્રાન્સલેટ
   wwcsIsActiveTranslator: ' સક્રિય અનુવાદક છે: %i'
@@ -174,8 +169,6 @@ Messages:
   wwctGUIExistingTranslationButton: વર્તમાન અનુવાદ સત્ર પર ફરીથી લખો
   wwcOnJoinTranslationNotificationNoSourceLang: ' તમારી ચેટનો અનુવાદ %o માં થઈ રહ્યો
     છે.'
-  wwcConfigGUIGoogleTranslateStatusButton: ગૂગલ ટ્રાન્સલેટ ટૉગલ કરો
-  wwcConfigGUIWatsonStatusButton: ટૉગલ વૉટ્સન
   wwcUserDataReloaded: બધા સાચવેલા વપરાશકર્તા ડેટાને લોડ કર્યો.
   wwcConfigGUISendTranslationChatButton: લ Loginગિન પર સક્રિય અનુવાદકને ચેટ રીમાઇન્ડર
     મોકલો
@@ -258,3 +251,6 @@ Messages:
     તમારા config.yml અથવા સાથે/wwcc માં ઠીક કરો.'
   wwcNotDoneLoading: ' વર્લ્ડવાઇડચેટ હજી પણ પ્રારંભ કરી રહ્યું છે. કૃપા કરીને ટૂંક
     સમયમાં ફરી પ્રયાસ કરો.'
+  wwcConfigGUIEachTranslatorSettings: '%i રૂપરેખાંકન'
+  wwcConfigGUIToggleButton: ટૉગલ %i
+  wwcConfigGUIWatsonButton: વોટસન

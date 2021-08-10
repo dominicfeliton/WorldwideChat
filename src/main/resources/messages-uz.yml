@@ -10,7 +10,6 @@ Messages:
     %i sekunddir. Yangi qiymatni belgilash uchun 10 dan katta narsani yoki orqaga
     qaytish uchun 10 dan kam narsani kiriting.
   wwctGUIMainMenuGlobal: Global tarjima menyusi
-  wwcConfigGUIWatsonButton: Watson Tarjima
   wwcConfigConversationPluginUpdateChatSuccess: ' Plaginni yangilash chat eslatmasi
     muvaffaqiyatli yakunlandi.'
   wwctbOnTarget: ' %i uchun kitob tarjimasi yoqilgan.'
@@ -61,7 +60,6 @@ Messages:
   wwctPlayerNotFound: ' O\''yinchi % Men topilmadi.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Global chat tarjima
     qilinmoqda, ammo sizning suhbatingiz %o ga tarjima qilinmoqda.'
-  wwcConfigGUIGoogleTranslateSettings: Google Configuration tarjima
   wwcConfigGUIGlobalRateLimit: Global stavka limitini o\'zgartirish
   wwctGUIBackToSourceLanguageButton: Manba tili menyusiga qaytish
   wwcConfigGUIAmazonTranslateRegionButton: Amazon mintaqasini o\'zgartirish
@@ -69,7 +67,6 @@ Messages:
     kiriting yoki bekor qilish uchun 0 yozing. Haqiqiy til kodlari: %o'
   wwcConfigConversationLangInvalid: ' Noto\''g\''ri til kodi!'
   wwctTranslationStopped: ' Sizning chat tarjimasi to\''xtatildi.'
-  wwcConfigGUIWatsonSettings: Watson Konfiguratsiya
   wwctsPlayerNotFound: ' %i o\''yinchi topilmadi yoki faol tarjimon emas.'
   wwcConfigGUIWatsonAPIKeyButton: Watson API kalitini o\'zgartirish
   wwcEnabled: '%i WorldWidechat versiyasini yoqing.'
@@ -98,7 +95,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google API kalitini tarjima qilish
   wwcSignDeletedOrTooLong: ' Nishon belgisi o\''chirildi yoki tarjima juda uzun edi.
     Tarjima:'
-  wwcConfigGUIAmazonTranslateStatusButton: Toggle Amazon Tarjima
   wwctsOnTarget: ' %i uchun imzo tarjimasi yoqilgan.'
   wwcConfigCacheDisabled: Tarjimon keshi o\'chirilgan.
   wwcConfigConversationWatsonURLInput: Joriy URL manzili %i. Iltimos Watson uchun
@@ -131,7 +127,6 @@ Messages:
   wwctSameLangError: ' Siz bir xil tilga tarjima qila olmaysiz!'
   wwctGUINewTranslationTarget: Maqsadli tilni tanlang
   wwctLangToLangStartOtherPlayer: ' Endi %o chatini %i dan %e ga tarjima qilish.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Configuration tarjima
   wwcConfigConnectionSuccess: '%o ga muvaffaqiyatli ulandi!'
   wwcConfigGUIGoogleTranslateButton: Google Tarjima
   wwcsIsActiveTranslator: ' Faol tarjimon: %i'
@@ -181,8 +176,6 @@ Messages:
   wwctGUIExistingTranslationButton: Joriy tarjima sessiyasi ustiga yozish
   wwcOnJoinTranslationNotificationNoSourceLang: ' Sizning suhbatingiz %o ga tarjima
     qilinmoqda.'
-  wwcConfigGUIGoogleTranslateStatusButton: Google Tarjima Toggle
-  wwcConfigGUIWatsonStatusButton: Toggle Watson
   wwcUserDataReloaded: Barcha saqlangan foydalanuvchi ma\'lumotlarini yukladi.
   wwcConfigGUISendTranslationChatButton: Kirish bo\'yicha faol tarjimonga suhbat eslatmasini
     yuboring
@@ -265,3 +258,6 @@ Messages:
     ishlatish uchun config.yml yoki /wwcc bilan tuzating.'
   wwcNotDoneLoading: ' WorldwideChat hali ham ishga tushirilmoqda. Iltimos, tezda
     qayta urinib ko\''ring.'
+  wwcConfigGUIEachTranslatorSettings: '%i Konfiguratsiya'
+  wwcConfigGUIToggleButton: Toggle %i
+  wwcConfigGUIWatsonButton: Uotson

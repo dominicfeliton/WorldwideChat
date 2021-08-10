@@ -8,7 +8,6 @@ Messages:
   wwcConfigConversationUpdateCheckerInput: ההשהיה הנוכחית על בודק העדכון היא %i שניות.
     הקלד כל דבר גדול מ- 10 כדי להגדיר ערך חדש, או כל דבר פחות מ- 10 כדי לחזור אחורה.
   wwctGUIMainMenuGlobal: תפריט תרגום גלובלי
-  wwcConfigGUIWatsonButton: ווטסון לתרגם
   wwcConfigConversationPluginUpdateChatSuccess: ' עדכון תוסף צ\''אט תזכורת חצה בהצלחה.'
   wwctbOnTarget: ' תרגום ספרים מופעל עבור %i.'
   wwcsNotATranslator: ' עדיין אין רשומות זמינות עבור %i.'
@@ -57,7 +56,6 @@ Messages:
   wwctPlayerNotFound: ' שחקן %לא מצאתי.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' צ\''אט גלובלי מתורגם,
     אבל הצ\''אט שלך מתורגם אל %o.'
-  wwcConfigGUIGoogleTranslateSettings: גוגל לתרגם תצורה
   wwcConfigGUIGlobalRateLimit: שינוי מגבלת קצב גלובלי
   wwctGUIBackToSourceLanguageButton: חזרה לתפריט שפת המקור
   wwcConfigGUIAmazonTranslateRegionButton: שינוי אזור אמזון
@@ -65,7 +63,6 @@ Messages:
     הקלד 0 כדי לבטל. קודי שפה תקפים: %o'
   wwcConfigConversationLangInvalid: ' קוד שפה לא חוקי!'
   wwctTranslationStopped: ' תרגום הצ\''אט שלך הופסק.'
-  wwcConfigGUIWatsonSettings: תצורת ווטסון
   wwctsPlayerNotFound: ' השחקן %i הוא גם לא נמצא, או אינו מתרגם פעיל.'
   wwcConfigGUIWatsonAPIKeyButton: שינוי מפתח API של ווטסון
   wwcEnabled: גרסת WorldwideChat מופעלת. i.
@@ -89,7 +86,6 @@ Messages:
   wwcConfigConversationPrefixSuccess: ' הקידומת השתנתה בהצלחה.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: שינוי מפתח API לתרגם גוגל
   wwcSignDeletedOrTooLong: ' סימן היעד נמחק או שהתרגום היה ארוך מדי. תרגום:'
-  wwcConfigGUIAmazonTranslateStatusButton: לעבור אמזון תרגם
   wwctsOnTarget: ' תרגום החתימה מופעל עבור %i.'
   wwcConfigCacheDisabled: מטמון מתרגם מנוטרל.
   wwcConfigConversationWatsonURLInput: כתובת האתר הנוכחית היא %i. הזן כתובת URL של
@@ -117,7 +113,6 @@ Messages:
   wwctSameLangError: ' אתה לא יכול לתרגם לאותה שפה!'
   wwctGUINewTranslationTarget: בחר שפת יעד
   wwctLangToLangStartOtherPlayer: ' עכשיו מתרגם את הצ\''אט של %o מ %i אל %e.'
-  wwcConfigGUIAmazonTranslateSettings: אמזון לתרגם תצורה
   wwcConfigConnectionSuccess: מחובר בהצלחה אל %o!
   wwcConfigGUIGoogleTranslateButton: גוגל תרגום
   wwcsIsActiveTranslator: ' הוא מתרגם פעיל: %i'
@@ -161,8 +156,6 @@ Messages:
   wwcConfigCacheEnabled: מטמון המתרגם מופעל והוגדר למגבלה של %i.
   wwctGUIExistingTranslationButton: החלף את הפעלת התרגום הנוכחית
   wwcOnJoinTranslationNotificationNoSourceLang: ' הצ\''אט שלך מתורגם אל %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: החלף גוגל לתרגם
-  wwcConfigGUIWatsonStatusButton: החלף את ווטסון
   wwcUserDataReloaded: טען את כל נתוני המשתמש השמורים.
   wwcConfigGUISendTranslationChatButton: שליחת תזכורת צ\'אט למתרגם פעיל בהתחברות
   wwcsLastTranslationTime: ' זמן התרגום האחרון (מוצלח): %i'
@@ -232,3 +225,6 @@ Messages:
   wwcInvalidTranslator: ' הגדרות מתרגם לא חוקיות. אנא תקן זאת ב- config.yml שלך או
     עם /wwcc כדי להשתמש בתוסף זה.'
   wwcNotDoneLoading: ' WorldwideChat עדיין מאתחל. אנא נסה שוב בקרוב.'
+  wwcConfigGUIEachTranslatorSettings: '%i תצורה'
+  wwcConfigGUIToggleButton: Toggle %i
+  wwcConfigGUIWatsonButton: ווטסון

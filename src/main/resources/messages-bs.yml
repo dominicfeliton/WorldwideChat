@@ -10,7 +10,6 @@ Messages:
     je %i sekundi. Upišite sve veće od 10 da biste postavili novu vrijednost ili nešto
     manje od 10 da biste se vratili.
   wwctGUIMainMenuGlobal: Globalni meni prevođenja
-  wwcConfigGUIWatsonButton: Watson Prijevod
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin update chat podsjetnik se
     uspješno uključio.'
   wwctbOnTarget: ' Prevođenje knjige omogućeno za %i.'
@@ -62,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ' Player %nisam pronađen.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Globalni chat se prevodi,
     ali vaš chat se prevodi na %o.'
-  wwcConfigGUIGoogleTranslateSettings: Google Translate konfiguracija
   wwcConfigGUIGlobalRateLimit: Promijenite ograničenje globalne stope
   wwctGUIBackToSourceLanguageButton: Natrag na Izvor Jezik Meni
   wwcConfigGUIAmazonTranslateRegionButton: Promijeni Amazon Region
@@ -70,7 +68,6 @@ Messages:
     jezični kod ili upišite 0 da biste otkazali. Važeći jezički kodovi: %o'
   wwcConfigConversationLangInvalid: ' Nevažeći jezični kod!'
   wwctTranslationStopped: ' Vaš chat prevod je zaustavljen.'
-  wwcConfigGUIWatsonSettings: Watson konfiguracija
   wwctsPlayerNotFound: ' Player %i nije pronađen ili nije aktivan prevoditelj.'
   wwcConfigGUIWatsonAPIKeyButton: Promijenite Watson API ključ
   wwcEnabled: Omogućeno WorldwideChat verzija %i.
@@ -97,7 +94,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Promjena ključa API-ja Google prevoditelja
   wwcSignDeletedOrTooLong: ' Ciljni znak je ili izbrisan ili je prevod bio predugačak.
     Prijevod:'
-  wwcConfigGUIAmazonTranslateStatusButton: Prebaci Amazon Prijevod
   wwctsOnTarget: ' Potpisni prijevod omogućen za %i.'
   wwcConfigCacheDisabled: Prevodilac keš onemogućen.
   wwcConfigConversationWatsonURLInput: Trenutni URL je %i. Unesite URL servisa za
@@ -127,7 +123,6 @@ Messages:
   wwctSameLangError: ' Ne možete prevesti na isti jezik!'
   wwctGUINewTranslationTarget: Odabir ciljnog jezika
   wwctLangToLangStartOtherPlayer: ' Sada prevođenje ćaska %o od %i do %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Translate Configuration
   wwcConfigConnectionSuccess: Uspješno povezan na %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: ' Je li aktivan prevoditelj: %i'
@@ -176,8 +171,6 @@ Messages:
     %i.
   wwctGUIExistingTranslationButton: Prebrisati trenutnu sesiju prevođenja
   wwcOnJoinTranslationNotificationNoSourceLang: ' Vaš chat se prevodi na %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Prebaci Google Translate
-  wwcConfigGUIWatsonStatusButton: Prebaci Watson
   wwcUserDataReloaded: Učitao sve spremljene korisničke podatke.
   wwcConfigGUISendTranslationChatButton: Pošalji podsjetnik za chat aktivnom prevoditelju
     na prijavi
@@ -259,3 +252,6 @@ Messages:
   wwcInvalidTranslator: ' Nevažeća podešavanja prevoditelja. Molimo vas da to popravite
     u svoj config.yml ili s /wwcc koristiti ovaj dodatak.'
   wwcNotDoneLoading: ' WorldwideChat još uvijek inicijalizira. Pokušajte ponovo uskoro.'
+  wwcConfigGUIEachTranslatorSettings: '%i Konfiguracija'
+  wwcConfigGUIToggleButton: Prebaci %i
+  wwcConfigGUIWatsonButton: Votsone

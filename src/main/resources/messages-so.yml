@@ -10,7 +10,6 @@ Messages:
     waa %i ilbiriqsi. Ku qor wax ka weyn 10 si aad u dejiso qiimo cusub, ama wax ka
     yar 10 si aad dib ugu noqoto.
   wwctGUIMainMenuGlobal: Menu-ka Turjumaadda Adduunka
-  wwcConfigGUIWatsonButton: Watson Translate
   wwcConfigConversationPluginUpdateChatSuccess: ' Plugin update xasuusin chat casriyeeyay
     si guul leh.'
   wwctbOnTarget: ' Tarjumaadda buugga ayaa awood u yeelatay %i.'
@@ -64,7 +63,6 @@ Messages:
   wwctPlayerNotFound: ' Ciyaartoy %Anigu lama helin.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Sheeko caalami ah
     ayaa loo turjumay, laakiin sheekeysigaaga waxaa loo turjumay %o.'
-  wwcConfigGUIGoogleTranslateSettings: Google Translate Hagaajinta
   wwcConfigGUIGlobalRateLimit: Bedelka Heerka Caalamiga ah
   wwctGUIBackToSourceLanguageButton: Ku noqoshada Menuga Luqadda
   wwcConfigGUIAmazonTranslateRegionButton: Beddel Gobolka Amazon
@@ -73,7 +71,6 @@ Messages:
     %o'
   wwcConfigConversationLangInvalid: ' Koodhka luqadda oo aan sax ahayn!'
   wwctTranslationStopped: ' Your turjumaad chat ayaa la joojiyay.'
-  wwcConfigGUIWatsonSettings: Hagaajinta Watson
   wwctsPlayerNotFound: ' Ciyaartoy %i midkood lama helin, ama ma aha turjumaan firfircoon.'
   wwcConfigGUIWatsonAPIKeyButton: Badalka Furaha Watson API
   wwcEnabled: Noocyada WorldWideCat ee la kartiday %i.
@@ -101,7 +98,6 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Beddel Google Translate API Furaha
   wwcSignDeletedOrTooLong: ' Calaamadda bartilmaameedka ayaa la tirtiray ama turjumaaddu
     aad u dheer tahay. Turjumaad:'
-  wwcConfigGUIAmazonTranslateStatusButton: Toggle Amazon Translate
   wwctsOnTarget: ' Saxiix turjumaad awood u yeelo %i.'
   wwcConfigCacheDisabled: kayd Translator naafo.
   wwcConfigConversationWatsonURLInput: URL hadda waa %i. Fadlan geli URL adeeg ee
@@ -133,7 +129,6 @@ Messages:
   wwctSameLangError: ' Ma turjumi kartid luqad isku mid ah!'
   wwctGUINewTranslationTarget: Dooro Luqad Bartilmaameed
   wwctLangToLangStartOtherPlayer: ' Hadda tarjumidda sheekeysiga %o ka %i ilaa %e.'
-  wwcConfigGUIAmazonTranslateSettings: Amazon Translate Qaabeynta
   wwcConfigConnectionSuccess: Si guul leh ugu xiran %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: ' Turjumaan firfircoon: %i'
@@ -183,8 +178,6 @@ Messages:
   wwctGUIExistingTranslationButton: Overwrite Kalfadhiga Turjumaadda ee hadda
   wwcOnJoinTranslationNotificationNoSourceLang: ' Sheekeysigaaga waxaa loo turjumay
     %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: Toggle Google Translate
-  wwcConfigGUIWatsonStatusButton: Toggle Watson
   wwcUserDataReloaded: Ku raran yihiin oo dhan xogta user badbaadiyey.
   wwcConfigGUISendTranslationChatButton: U dir xasuusinta sheekeysiga si aad u turjumaan
     firfircoon
@@ -269,3 +262,6 @@ Messages:
     aad config.yml ama /wwcc si aad u isticmaasho plugin this.'
   wwcNotDoneLoading: ' WorldwideChat ayaa weli bilaabaysa. Fadlan isku day mar kale
     wax yar.'
+  wwcConfigGUIEachTranslatorSettings: '%i Hagaajinta'
+  wwcConfigGUIToggleButton: Toggle %i
+  wwcConfigGUIWatsonButton: Watson

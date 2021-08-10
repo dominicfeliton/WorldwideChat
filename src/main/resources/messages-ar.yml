@@ -9,7 +9,6 @@ Messages:
   wwcConfigConversationUpdateCheckerInput: التأخير الحالي على مدقق التحديث هو %i ثانية.
     اكتب أي شيء أكبر من 10 لتعيين قيمة جديدة، أو أي شيء أقل من 10 للعودة.
   wwctGUIMainMenuGlobal: قائمة الترجمة العالمية
-  wwcConfigGUIWatsonButton: واتسون ترجمة
   wwcConfigConversationPluginUpdateChatSuccess: ' البرنامج المساعد تحديث الدردشة تذكير
     مثبت بنجاح.'
   wwctbOnTarget: ' تم تمكين ترجمة الكتاب لـ %i.'
@@ -58,7 +57,6 @@ Messages:
   wwctPlayerNotFound: ' لم يتم العثور على اللاعب %.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' تتم ترجمة الدردشة
     العامة، ولكن تتم ترجمة الدردشة إلى %o.'
-  wwcConfigGUIGoogleTranslateSettings: جوجل ترجمة التكوين
   wwcConfigGUIGlobalRateLimit: تغيير حد السعر العالمي
   wwctGUIBackToSourceLanguageButton: العودة إلى قائمة لغة المصدر
   wwcConfigGUIAmazonTranslateRegionButton: تغيير منطقة الأمازون
@@ -66,7 +64,6 @@ Messages:
     رمز لغة صالح، أو اكتب 0 للإلغاء. رموز لغة صالحة: %o'
   wwcConfigConversationLangInvalid: ' رمز لغة غير صالح!'
   wwctTranslationStopped: ' تم إيقاف ترجمة الدردشة الخاصة بك.'
-  wwcConfigGUIWatsonSettings: تكوين واتسون
   wwctsPlayerNotFound: ' لم يتم العثور على اللاعب %i، أو أنه ليس مترجماً نشطاً.'
   wwcConfigGUIWatsonAPIKeyButton: تغيير مفتاح واجهة برمجة التطبيقات واتسون
   wwcEnabled: تمكين نسخة ورلدويدشة %i.
@@ -91,7 +88,6 @@ Messages:
   wwcConfigConversationPrefixSuccess: ' تغيرت البادئة بنجاح.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: تغيير جوجل ترجمة أبي مفتاح
   wwcSignDeletedOrTooLong: ' تم حذف علامة الهدف أو كانت الترجمة طويلة جدًا. الترجمة:'
-  wwcConfigGUIAmazonTranslateStatusButton: تبديل الأمازون ترجمة
   wwctsOnTarget: ' تم تمكين ترجمة التوقيع لـ %i.'
   wwcConfigCacheDisabled: تعطيل ذاكرة التخزين المؤقت المترجم.
   wwcConfigConversationWatsonURLInput: عنوان URL الحالي هو %i. الرجاء إدخال عنوان
@@ -120,7 +116,6 @@ Messages:
   wwctSameLangError: ' لا يمكنك الترجمة إلى نفس اللغة!'
   wwctGUINewTranslationTarget: اختر لغة الهدف
   wwctLangToLangStartOtherPlayer: ' الآن ترجمة دردشة %o من %i إلى %e.'
-  wwcConfigGUIAmazonTranslateSettings: الأمازون ترجمة التكوين
   wwcConfigConnectionSuccess: تم الاتصال بنجاح بـ %o!
   wwcConfigGUIGoogleTranslateButton: ترجمة جوجل
   wwcsIsActiveTranslator: ' مترجم نشط: %i'
@@ -165,8 +160,6 @@ Messages:
   wwcConfigCacheEnabled: تم تمكين ذاكرة التخزين المؤقت للمترجم وتعيينها إلى حد %i.
   wwctGUIExistingTranslationButton: الكتابة فوق جلسة الترجمة الحالية
   wwcOnJoinTranslationNotificationNoSourceLang: ' تتم ترجمة الدردشة إلى %o.'
-  wwcConfigGUIGoogleTranslateStatusButton: تبديل ترجمة جوجل
-  wwcConfigGUIWatsonStatusButton: تبديل واتسون
   wwcUserDataReloaded: تحميل جميع بيانات المستخدم المحفوظة.
   wwcConfigGUISendTranslationChatButton: إرسال تذكير الدردشة إلى المترجم النشط عند
     تسجيل الدخول
@@ -239,5 +232,8 @@ Messages:
   wwcChatTranslationFail: ' فشلت ترجمة رسالتك.'
   wwcInvalidTranslator: ' إعدادات المترجم غير صالحة. يرجى إصلاح هذا في config.yml
     الخاص بك أو مع/wwcc لاستخدام هذا البرنامج المساعد.'
-  wwcNotDoneLoading: ' لا تزال WorldwideChat في مرحلة التهيئة. يرجى المحاولة مرة
-    أخرى قريبًا.'
+  wwcNotDoneLoading: ' لا تزال WorldwideChat في مرحلة التهيئة. يرجى المحاولة مرة أخرى
+    قريبًا.'
+  wwcConfigGUIEachTranslatorSettings: تكوين %i
+  wwcConfigGUIToggleButton: تبديل إلى %i
+  wwcConfigGUIWatsonButton: واتسون

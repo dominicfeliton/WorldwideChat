@@ -9,7 +9,6 @@ Messages:
   wwcConfigConversationUpdateCheckerInput: ความล่าช้าในปัจจุบันในการตรวจสอบการปรับปรุงเป็น
     %i วินาทีพิมพ์อะไรที่มากกว่า 10 เพื่อตั้งค่าใหม่หรืออะไรที่น้อยกว่า 10 เพื่อย้อนกลับ
   wwctGUIMainMenuGlobal: เมนูแปลทั่วโลก
-  wwcConfigGUIWatsonButton: วัตสัน แปลภาษา
   wwcConfigConversationPluginUpdateChatSuccess: ' การแจ้งเตือนการอัปเดตปลั๊กอินแชทสลับเรียบร้อยแล้ว'
   wwctbOnTarget: ' เปิดใช้งานการแปลหนังสือสำหรับ %i'
   wwcsNotATranslator: ' ยังไม่มีระเบียนที่พร้อมใช้งานสำหรับ %i'
@@ -55,7 +54,6 @@ Messages:
   wwctPlayerNotFound: ' ไม่พบผู้เล่น %ฉันไม่พบ'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' แชททั่วโลกกำลังถูกแปล
     แต่แชทของคุณกำลังถูกแปลเป็น %o'
-  wwcConfigGUIGoogleTranslateSettings: การกำหนดค่าของ Google แปลภาษา
   wwcConfigGUIGlobalRateLimit: เปลี่ยนวงเงินอัตราทั่วโลก
   wwctGUIBackToSourceLanguageButton: กลับไปที่เมนูภาษาต้นทาง
   wwcConfigGUIAmazonTranslateRegionButton: เปลี่ยนภูมิภาคอเมซอน
@@ -63,7 +61,6 @@ Messages:
     หรือพิมพ์ 0 เพื่อยกเลิกรหัสภาษาที่ถูกต้อง: %o'
   wwcConfigConversationLangInvalid: ' รหัสภาษาไม่ถูกต้อง!'
   wwctTranslationStopped: ' การแปลการแชทของคุณถูกหยุดลงแล้ว'
-  wwcConfigGUIWatsonSettings: การกำหนดค่าวัตสัน
   wwctsPlayerNotFound: ' ไม่พบผู้เล่น %i หรือไม่พบหรือไม่ใช่ตัวแปลที่ใช้งานอยู่'
   wwcConfigGUIWatsonAPIKeyButton: เปลี่ยนคีย์ API วัตสัน
   wwcEnabled: เปิดใช้งานเวอร์ชันของ WorldwideChat %i
@@ -85,7 +82,6 @@ Messages:
   wwcConfigConversationPrefixSuccess: ' เปลี่ยนคำนำหน้าเรียบร้อยแล้ว'
   wwcConfigGUIGoogleTranslateAPIKeyButton: เปลี่ยนคีย์ API ของ Google แปลภาษา
   wwcSignDeletedOrTooLong: ' เครื่องหมายเป้าหมายถูกลบ หรือคำแปลยาวเกินไปการแปล:'
-  wwcConfigGUIAmazonTranslateStatusButton: สลับแปล Amazon
   wwctsOnTarget: ' เปิดใช้งานการแปลเครื่องหมายสำหรับ %i'
   wwcConfigCacheDisabled: ปิดการใช้งานแคชนักแปล
   wwcConfigConversationWatsonURLInput: URL ปัจจุบันคือ %i โปรดป้อน URL บริการสำหรับวัตสัน
@@ -114,7 +110,6 @@ Messages:
   wwctSameLangError: ' คุณไม่สามารถแปลเป็นภาษาเดียวกันได้!'
   wwctGUINewTranslationTarget: เลือกภาษาเป้าหมาย
   wwctLangToLangStartOtherPlayer: ' ตอนนี้แปลการแชทของ %oจาก % ฉันไปยัง %e'
-  wwcConfigGUIAmazonTranslateSettings: Amazon แปลการกำหนดค่า
   wwcConfigConnectionSuccess: เชื่อมต่อกับ %o สำเร็จแล้ว!
   wwcConfigGUIGoogleTranslateButton: กูเกิล แปลภาษา
   wwcsIsActiveTranslator: ' คือตัวแปลที่ใช้งานอยู่: %i'
@@ -159,8 +154,6 @@ Messages:
   wwcConfigCacheEnabled: แคช Translator เปิดใช้งานและตั้งค่าเป็นขีด จำกัด ของ %i
   wwctGUIExistingTranslationButton: เขียนทับเซสชันการแปลปัจจุบัน
   wwcOnJoinTranslationNotificationNoSourceLang: ' แชทของคุณกำลังถูกแปลเป็น %o'
-  wwcConfigGUIGoogleTranslateStatusButton: สลับ Google แปลภาษา
-  wwcConfigGUIWatsonStatusButton: สลับวัตสัน
   wwcUserDataReloaded: โหลดข้อมูลผู้ใช้ที่บันทึกไว้ทั้งหมด
   wwcConfigGUISendTranslationChatButton: ส่งการแจ้งเตือนการแชทไปยังนักแปลที่ใช้งานอยู่เมื่อเข้าสู่ระบบ
   wwcsLastTranslationTime: ' เวลาแปลล่าสุด (สำเร็จ): %i'
@@ -231,3 +224,6 @@ Messages:
   wwcInvalidTranslator: ' การตั้งค่าตัวแปลไม่ถูกต้องโปรดแก้ไขปัญหานี้ใน config.yml
     ของคุณหรือกับ /wwcc เพื่อใช้ปลั๊กอินนี้'
   wwcNotDoneLoading: ' WorldwideChat ยังคงเริ่มต้นอยู่โปรดลองใหม่อีกครั้งในไม่ช้า'
+  wwcConfigGUIEachTranslatorSettings: การตั้งค่าคอนฟิก %i
+  wwcConfigGUIToggleButton: เลื่อน %i
+  wwcConfigGUIWatsonButton: วัตสัน
