@@ -3,9 +3,12 @@ package com.expl0itz.worldwidechat.inventory;
 import static org.junit.Assert.assertTrue;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.commands.WWCConfiguration;
+import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationGeneralSettingsGUI;
 
 import be.seeseemelk.mockbukkit.ServerMock;
 import be.seeseemelk.mockbukkit.entity.PlayerMock;
+import fr.minuskube.inv.SmartInventory;
 
 public class TestPlayerGUI {
 	private ServerMock server;
@@ -57,5 +60,11 @@ public class TestPlayerGUI {
 		playerMock.performCommand("worldwidechat:wwcg en es");
 		playerMock.performCommand("worldwidechat:wwcg");
 		assertTrue(playerMock.getOpenInventory().getItem(0).getType().name().equals("GREEN_STAINED_GLASS_PANE"));
+	}
+	
+	public void testConfigurationCommandPlayerGUI() {
+		/* User runs /wwcc */
+		playerMock.performCommand("worldwidechat:wwcc");
+		assertTrue(plugin.getInventoryManager().getInventory(playerMock).get() instanceof SmartInventory);
 	}
 }

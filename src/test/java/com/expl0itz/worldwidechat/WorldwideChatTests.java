@@ -20,11 +20,9 @@ public class WorldwideChatTests {
 	private static WorldwideChat plugin;
 	private static PlayerMock playerMock;
 	private static PlayerMock secondPlayerMock;
-	private static PlayerMock thirdPlayerMock;
-	private static PlayerMock fourthPlayerMock;
 
 	/* Init all test classes */
-	TestPlayerCommands testPlayerCommands = new TestPlayerCommands(server, plugin, playerMock, secondPlayerMock, thirdPlayerMock, fourthPlayerMock);
+	TestPlayerCommands testPlayerCommands = new TestPlayerCommands(server, plugin, playerMock, secondPlayerMock);
 	TestPlayerGUI testPlayerGUI = new TestPlayerGUI(server, plugin, playerMock, secondPlayerMock);
 	
 	@BeforeAll
@@ -35,10 +33,6 @@ public class WorldwideChatTests {
 		playerMock.setName("player1");
 		secondPlayerMock = server.addPlayer();
 		secondPlayerMock.setName("player2");
-		thirdPlayerMock = server.addPlayer();
-		thirdPlayerMock.setName("player3");
-		fourthPlayerMock = server.addPlayer();
-		fourthPlayerMock.setName("player4");
 		
 		/* Add perms */
 		playerMock.addAttachment(plugin, "worldwidechat.wwct", true);
@@ -54,10 +48,6 @@ public class WorldwideChatTests {
 		playerMock.addAttachment(plugin, "worldwidechat.wwcs", true);
 		secondPlayerMock.addAttachment(plugin, "worldwidechat.wwct", true);
 		secondPlayerMock.addAttachment(plugin, "worldwidechat.wwct.otherplayers", true);
-		thirdPlayerMock.addAttachment(plugin, "worldwidechat.wwct", true);
-		thirdPlayerMock.addAttachment(plugin, "worldwidechat.wwct.otherplayers", true);
-		fourthPlayerMock.addAttachment(plugin, "worldwidechat.wwct", true);
-		fourthPlayerMock.addAttachment(plugin, "worldwidechat.wwct.otherplayers", true);
 	}
 
 	@AfterAll
@@ -69,7 +59,7 @@ public class WorldwideChatTests {
 		plugin.getActiveTranslators().clear();
 		plugin.getPlayerRecords().clear();
 		plugin.getCache().clear();
-		reloadWWC();
+		plugin.reload(); 
 		try {
 			// Give the async thread a little bit to load before running more tests.
 			// Normally, in game the user would just be given a message saying that the plugin is not done loading.
@@ -87,10 +77,6 @@ public class WorldwideChatTests {
 		}
 	}
 	
-	public void reloadWWC() {
-		plugin.reload();
-	}
-	
 	/* Command Tests */
 	@Order(1)
 	@Test
@@ -100,17 +86,24 @@ public class WorldwideChatTests {
 		testPlayerCommands.testTranslateCommandPlayerSourceTargetOther();
 	    testPlayerCommands.testTranslateCommandPlayerTarget();
 	    testPlayerCommands.testTranslateCommandPlayerTargetOther();
-	    testPlayerCommands.testGlobalTranslateCommandPlayer();
-	    testPlayerCommands.testBookTranslateCommandPlayer();
-	    testPlayerCommands.testBookTranslateCommandPlayerOther();
-	    testPlayerCommands.testSignTranslateCommandPlayer();
-	    testPlayerCommands.testSignTranslateCommandPlayerOther();
-	    testPlayerCommands.testItemTranslateCommandPlayer();
-	    testPlayerCommands.testItemTranslateCommandPlayerOther();
-	    testPlayerCommands.testRateLimitTranslateCommandPlayer();
-	    testPlayerCommands.testRateLimitTranslateCommandPlayerOther();
-	    testPlayerCommands.testStatsCommandPlayer();
-	    testPlayerCommands.testStatsCommandPlayerOther();
+	    testPlayerCommands.testGlobalTranslateCommandPlayerSourceTarget();
+	    testPlayerCommands.testGlobalTranslateCommandPlayerTarget();
+	    testPlayerCommands.testBookTranslateCommandPlayer(true);
+	    testPlayerCommands.testBookTranslateCommandPlayer(false);
+	    testPlayerCommands.testBookTranslateCommandPlayerOther(true);
+	    testPlayerCommands.testBookTranslateCommandPlayerOther(false);
+	    testPlayerCommands.testSignTranslateCommandPlayer(true);
+	    testPlayerCommands.testSignTranslateCommandPlayer(false);
+	    testPlayerCommands.testSignTranslateCommandPlayerOther(true);
+	    testPlayerCommands.testSignTranslateCommandPlayerOther(false);
+	    testPlayerCommands.testItemTranslateCommandPlayer(true);
+	    testPlayerCommands.testItemTranslateCommandPlayer(false);
+	    testPlayerCommands.testItemTranslateCommandPlayerOther(true);
+	    testPlayerCommands.testItemTranslateCommandPlayerOther(false);
+	    testPlayerCommands.testRateLimitTranslateCommandPlayer(true);
+	    testPlayerCommands.testRateLimitTranslateCommandPlayer(false);
+	    testPlayerCommands.testRateLimitTranslateCommandPlayerOther(true);
+	    testPlayerCommands.testRateLimitTranslateCommandPlayerOther(false);
 	}
 	
 	/* GUI Tests */
@@ -127,5 +120,6 @@ public class WorldwideChatTests {
 		testPlayerGUI.testTranslateCommandPlayerGUIOtherActive();
 		testPlayerGUI.testGlobalTranslateCommandPlayerGUI();
 		testPlayerGUI.testGlobalTranslateCommandPlayerGUIActive();
+		testPlayerGUI.testConfigurationCommandPlayerGUI();
 	}
 }
