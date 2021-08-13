@@ -27,7 +27,6 @@ public class TestPlayerCommands {
 		playerMock.performCommand("worldwidechat:wwct en es");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
 		assertTrue(currTranslator.getInLangCode().equals("en") && currTranslator.getOutLangCode().equals("es"));
-		//playerMock.assertSaid("§4§l[§x§5§7§5§7§c§4§lWWC§4§l]§d Now translating all of your chat from en to es.");
 	}
 	
 	public void testTranslateCommandPlayerSourceTargetOther() {
@@ -35,7 +34,6 @@ public class TestPlayerCommands {
 		playerMock.performCommand("worldwidechat:wwct player2 en es");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(secondPlayerMock.getUniqueId().toString());
 		assertTrue(currTranslator.getInLangCode().equals("en") && currTranslator.getOutLangCode().equals("es"));
-		//playerMock.assertSaid("§4§l[§x§5§7§5§7§c§4§lWWC§4§l]§d Now translating the chat of player2 from en to es.");
 	}
 	
 	public void testTranslateCommandPlayerTarget() {
