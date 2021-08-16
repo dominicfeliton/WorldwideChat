@@ -7,7 +7,7 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.PlayerRecord;
+import com.expl0itz.worldwidechat.util.PlayerRecord;
 
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;

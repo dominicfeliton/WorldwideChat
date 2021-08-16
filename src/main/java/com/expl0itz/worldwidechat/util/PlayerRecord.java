@@ -1,4 +1,4 @@
-package com.expl0itz.worldwidechat.misc;
+package com.expl0itz.worldwidechat.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

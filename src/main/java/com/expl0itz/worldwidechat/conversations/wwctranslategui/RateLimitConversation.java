@@ -12,7 +12,7 @@ import org.bukkit.entity.Player;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCTranslateRateLimit;
 import com.expl0itz.worldwidechat.inventory.wwctranslategui.WWCTranslateGUIMainMenu;
-import com.expl0itz.worldwidechat.misc.ActiveTranslator;
+import com.expl0itz.worldwidechat.util.ActiveTranslator;
 
 import net.md_5.bungee.api.ChatColor;
 

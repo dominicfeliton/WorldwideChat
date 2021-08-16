@@ -3,14 +3,13 @@ package com.expl0itz.worldwidechat.inventory;
 import static org.junit.Assert.assertTrue;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.commands.WWCConfiguration;
-import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationGeneralSettingsGUI;
 
 import be.seeseemelk.mockbukkit.ServerMock;
 import be.seeseemelk.mockbukkit.entity.PlayerMock;
 import fr.minuskube.inv.SmartInventory;
 
 public class TestPlayerGUI {
+	
 	private ServerMock server;
 	private WorldwideChat plugin;
 	private PlayerMock playerMock;

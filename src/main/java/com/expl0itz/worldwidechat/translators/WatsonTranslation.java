@@ -6,7 +6,7 @@ import java.util.List;
 import org.bukkit.command.CommandSender;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.SupportedLanguageObject;
+import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;

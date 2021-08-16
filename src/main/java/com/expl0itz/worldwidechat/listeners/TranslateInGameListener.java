@@ -17,7 +17,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.TempItemInventory;
-import com.expl0itz.worldwidechat.misc.CommonDefinitions;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;

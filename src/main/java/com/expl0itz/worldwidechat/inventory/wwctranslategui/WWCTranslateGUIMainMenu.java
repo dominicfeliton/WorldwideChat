@@ -20,7 +20,7 @@ import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.conversations.wwctranslategui.RateLimitConversation;
 import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
-import com.expl0itz.worldwidechat.misc.ActiveTranslator;
+import com.expl0itz.worldwidechat.util.ActiveTranslator;
 
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;

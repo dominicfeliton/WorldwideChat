@@ -9,6 +9,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 
 import com.expl0itz.worldwidechat.commands.TestPlayerCommands;
 import com.expl0itz.worldwidechat.inventory.TestPlayerGUI;
+import com.expl0itz.worldwidechat.util.TestTranslationUtils;
 
 import be.seeseemelk.mockbukkit.MockBukkit;
 import be.seeseemelk.mockbukkit.ServerMock;
@@ -24,6 +25,7 @@ public class WorldwideChatTests {
 	/* Init all test classes */
 	TestPlayerCommands testPlayerCommands = new TestPlayerCommands(server, plugin, playerMock, secondPlayerMock);
 	TestPlayerGUI testPlayerGUI = new TestPlayerGUI(server, plugin, playerMock, secondPlayerMock);
+	TestTranslationUtils testTranslationUtils = new TestTranslationUtils(server, plugin, playerMock, secondPlayerMock);
 	
 	@BeforeAll
 	public static void setUp() {
@@ -121,5 +123,16 @@ public class WorldwideChatTests {
 		testPlayerGUI.testGlobalTranslateCommandPlayerGUI();
 		testPlayerGUI.testGlobalTranslateCommandPlayerGUIActive();
 		testPlayerGUI.testConfigurationCommandPlayerGUI();
+	}
+	
+	/* Util Tests */
+	@Order(3)
+	@Test
+	public void testUtils() {
+		/* Reset Translators */
+		resetWWC();
+		
+		/* Run tests */
+		testTranslationUtils.testTranslationFunctionSourceTarget();
 	}
 }

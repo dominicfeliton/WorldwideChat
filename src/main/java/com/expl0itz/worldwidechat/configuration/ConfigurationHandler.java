@@ -4,19 +4,19 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.InaccessibleObjectException;
 
-import com.expl0itz.worldwidechat.misc.Metrics;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.ActiveTranslator;
-import com.expl0itz.worldwidechat.misc.CommonDefinitions;
-import com.expl0itz.worldwidechat.misc.PlayerRecord;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
 import com.expl0itz.worldwidechat.translators.TestTranslation;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
+import com.expl0itz.worldwidechat.util.ActiveTranslator;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
+import com.expl0itz.worldwidechat.util.Metrics;
+import com.expl0itz.worldwidechat.util.PlayerRecord;
 
 public class ConfigurationHandler {
 
@@ -174,8 +174,8 @@ public class ConfigurationHandler {
         }
     }
     
+    /* Translator Settings */
     public void loadTranslatorSettings() {
-    	/* Translator Settings */
     	String outName = "Invalid";
         try {
         	if (getMainConfig().getBoolean("Translator.useWatsonTranslate") && (!(getMainConfig().getBoolean("Translator.useGoogleTranslate")) && (!(getMainConfig().getBoolean("Translator.useAmazonTranslate"))))) {
@@ -212,7 +212,7 @@ public class ConfigurationHandler {
                 // Watson does not work properly on 1.17 without --illegal-access=permit. Remove this once the IBM devs fix it
                 main.getLogger().warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcWatson117Warning"));
         	} else {
-        		main.getLogger().severe("(" + main.getTranslatorName() + ") " + e.getMessage());
+        		main.getLogger().severe("(" + outName + ") " + e.getMessage());
             	e.printStackTrace();
         	}
         	outName = "Invalid";
@@ -289,6 +289,7 @@ public class ConfigurationHandler {
         }
     }
     
+    /* Sync user data to disk */
     public void syncData() {
     	/* Sync activeTranslators to disk */
         synchronized (main.getActiveTranslators()) {

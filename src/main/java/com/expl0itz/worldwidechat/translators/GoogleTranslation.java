@@ -6,8 +6,8 @@ import java.util.List;
 import org.bukkit.command.CommandSender;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.CommonDefinitions;
-import com.expl0itz.worldwidechat.misc.SupportedLanguageObject;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
+import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 import com.google.cloud.translate.Detection;
 import com.google.cloud.translate.Language;
 import com.google.cloud.translate.Translate;

@@ -6,7 +6,7 @@ import java.util.List;
 import org.bukkit.command.CommandSender;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.SupportedLanguageObject;
+import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 
 public class TestTranslation {
 
@@ -39,11 +39,10 @@ public class TestTranslation {
     }
     
     public String translate() {
-    	/* If MockBukkit support for async operations gets better or I wake up tomorrow and realize that I'm an idiot,
-    	 * this method will actually have a list of test cases.
-    	 * Until then...
-    	 *  */
-    	return "urMomHaha";
+    	if (inputLang.equals("en") && outputLang.equals("es") && textToTranslate.equals("Hello, how are you?")) {
+    		return "Hola, como estas?";
+    	}
+    	return "bad test result";
     }
 	
 }

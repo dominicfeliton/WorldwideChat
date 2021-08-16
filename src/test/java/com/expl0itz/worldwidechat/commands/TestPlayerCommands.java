@@ -3,7 +3,7 @@ package com.expl0itz.worldwidechat.commands;
 import static org.junit.Assert.assertTrue;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.ActiveTranslator;
+import com.expl0itz.worldwidechat.util.ActiveTranslator;
 
 import be.seeseemelk.mockbukkit.ServerMock;
 import be.seeseemelk.mockbukkit.entity.PlayerMock;

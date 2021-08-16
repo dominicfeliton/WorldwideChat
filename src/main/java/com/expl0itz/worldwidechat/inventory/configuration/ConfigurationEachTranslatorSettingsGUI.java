@@ -266,6 +266,8 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 														main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
 													} catch (IOException e1) {
 														e1.printStackTrace();
+														this.cancel();
+														return;
 													}
 												    
 												    //Send successful change message

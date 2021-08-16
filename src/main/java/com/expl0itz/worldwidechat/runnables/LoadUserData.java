@@ -9,9 +9,9 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.threeten.bp.Instant;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.ActiveTranslator;
-import com.expl0itz.worldwidechat.misc.CommonDefinitions;
-import com.expl0itz.worldwidechat.misc.PlayerRecord;
+import com.expl0itz.worldwidechat.util.ActiveTranslator;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
+import com.expl0itz.worldwidechat.util.PlayerRecord;
 import com.google.common.io.Files;
 
 public class LoadUserData implements Runnable {

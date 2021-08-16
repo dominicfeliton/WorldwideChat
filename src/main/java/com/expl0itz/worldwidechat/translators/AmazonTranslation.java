@@ -16,8 +16,8 @@ import com.amazonaws.services.translate.AmazonTranslateClient;
 import com.amazonaws.services.translate.model.TranslateTextRequest;
 import com.amazonaws.services.translate.model.TranslateTextResult;
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.misc.CommonDefinitions;
-import com.expl0itz.worldwidechat.misc.SupportedLanguageObject;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
+import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 
 public class AmazonTranslation {
     private String textToTranslate = "";

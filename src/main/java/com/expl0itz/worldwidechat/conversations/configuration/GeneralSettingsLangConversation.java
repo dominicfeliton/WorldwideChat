@@ -11,7 +11,7 @@ import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationGeneralSettingsGUI;
-import com.expl0itz.worldwidechat.misc.CommonDefinitions;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
