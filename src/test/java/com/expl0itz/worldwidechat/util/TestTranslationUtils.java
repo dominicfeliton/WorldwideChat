@@ -25,4 +25,13 @@ public class TestTranslationUtils {
 		playerMock.performCommand("worldwidechat:wwct en es");
 		assertTrue(CommonDefinitions.translateText("Hello, how are you?", playerMock).equals("Hola, como estas?"));
 	}
+	
+	public void testTranslationFunctionTarget() {
+		playerMock.performCommand("worldwidechat:wwct es");
+		assertTrue(CommonDefinitions.translateText("How many diamonds do you have?", playerMock).equals("Cuantos diamantes tienes?"));
+	}
+	
+	public void testTranslationFunctionSourceTargetOther() {
+		
+	}
 }

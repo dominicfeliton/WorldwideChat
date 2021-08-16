@@ -301,8 +301,8 @@ public class WorldwideChat extends JavaPlugin {
         	    	// This will only occur when a user runs /reload confirm extremely quickly after server initialization,
         			// or /wwcr and then /reload confirm in rapid succession.
         			// Therefore, since these are technically unsupported cases that do not have any long term effects,
-        			// catch this error silently.
-        			// TODO: Investigate this further, should our async check in onDisable() prevent this?
+        			// catch this error and warn about using /reload.
+        			getLogger().severe(getConfigManager().getMessagesConfig().getString("Messages.wwcServerReloadWarning"));
         	    }
         	}
         }.runTaskAsynchronously(this);
