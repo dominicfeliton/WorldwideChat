@@ -59,6 +59,7 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.format.TextDecoration;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 
 public class WorldwideChat extends JavaPlugin {
     /* Vars */
@@ -85,7 +86,6 @@ public class WorldwideChat extends JavaPlugin {
     private boolean enablebStats = true;
     private boolean outOfDate = false;
 
-    private String pluginPrefixString = "WWC";
     private String pluginLang = "en";
     private String translatorName = "Starting";
 
@@ -96,12 +96,13 @@ public class WorldwideChat extends JavaPlugin {
     
     /* MockBukkit required constructor */
     protected WorldwideChat(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
+    	
     	super(loader, description, dataFolder, file);
     }
     
     private TextComponent pluginPrefix = Component.text()
         .content("[").color(NamedTextColor.DARK_RED).decoration(TextDecoration.BOLD, true)
-        .append(Component.text().content(pluginPrefixString).color(TextColor.color(0x5757c4)))
+        .append(Component.text().content("WWC").color(TextColor.color(0x5757c4)))
         .append(Component.text().content("]").color(NamedTextColor.DARK_RED).decoration(TextDecoration.BOLD, true))
         .build();
     
@@ -480,12 +481,15 @@ public class WorldwideChat extends JavaPlugin {
     }
 
     public void setPrefixName(String i) {
-        pluginPrefix = Component.text()
-                .content("[").color(NamedTextColor.DARK_RED).decoration(TextDecoration.BOLD, true)
-                .append(Component.text().content(i).color(TextColor.color(0x5757c4)))
-                .append(Component.text().content("]").color(NamedTextColor.DARK_RED).decoration(TextDecoration.BOLD, true))
-                .build();
-        pluginPrefixString = i;
+    	if (!i.equals("WWC")) {
+    		pluginPrefix = LegacyComponentSerializer.legacyAmpersand().deserialize(i);
+    	} else {
+    		pluginPrefix = Component.text()
+                    .content("[").color(NamedTextColor.DARK_RED).decoration(TextDecoration.BOLD, true)
+                    .append(Component.text().content("WWC").color(TextColor.color(0x5757c4)))
+                    .append(Component.text().content("]").color(NamedTextColor.DARK_RED).decoration(TextDecoration.BOLD, true))
+                    .build();
+    	}
     }
 
     public void setSupportedTranslatorLanguages(List < SupportedLanguageObject > in) {
@@ -582,10 +586,6 @@ public class WorldwideChat extends JavaPlugin {
 
     public String getPluginLang() {
         return pluginLang;
-    }
-
-    public String getPrefixName() {
-        return pluginPrefixString;
     }
     
     public String getTranslatorName() {

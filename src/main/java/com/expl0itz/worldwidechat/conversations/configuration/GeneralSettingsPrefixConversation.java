@@ -15,6 +15,7 @@ import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
 
 public class GeneralSettingsPrefixConversation extends StringPrompt {
@@ -25,7 +26,7 @@ public class GeneralSettingsPrefixConversation extends StringPrompt {
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		((Player)context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationPrefixInput").replace("%i", main.getPrefixName());
+		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationPrefixInput").replace("%i", LegacyComponentSerializer.legacyAmpersand().serialize(main.getPluginPrefix()));
 	}
 
 	@Override

@@ -98,7 +98,7 @@ public class ConfigurationHandler {
         /* Get rest of General Settings */
         //Prefix
     	try {
-            if (!getMainConfig().getString("General.prefixName").equalsIgnoreCase("Default")) {
+            if (!getMainConfig().getString("General.prefixName").equalsIgnoreCase("Default") && !getMainConfig().getString("General.prefixName").equalsIgnoreCase("WWC")) {
                 main.setPrefixName(getMainConfig().getString("General.prefixName"));
             } else {
                 main.setPrefixName("WWC"); //If default the entry for prefix, interpret as WWC
