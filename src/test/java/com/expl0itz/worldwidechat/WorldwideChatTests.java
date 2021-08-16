@@ -21,6 +21,8 @@ public class WorldwideChatTests {
 	private static WorldwideChat plugin;
 	private static PlayerMock playerMock;
 	private static PlayerMock secondPlayerMock;
+	
+	private static int testCount = 0;
 
 	/* Init all test classes */
 	TestPlayerCommands testPlayerCommands = new TestPlayerCommands(server, plugin, playerMock, secondPlayerMock);
@@ -79,10 +81,18 @@ public class WorldwideChatTests {
 		}
 	}
 	
+	public void sendCompletedMessage() {
+		testCount++;
+		plugin.getLogger().info("=== (Test " + testCount + ") Completed Successfully ===");
+	}
+	
 	/* Command Tests */
 	@Order(1)
 	@Test
 	public void testPlayerCommands() {
+		/* Print start message */
+		plugin.getLogger().info("=== Test Player Commands ===");
+		
 		/* Run tests */
 		testPlayerCommands.testTranslateCommandPlayerSourceTarget();
 		testPlayerCommands.testTranslateCommandPlayerSourceTargetOther();
@@ -106,6 +116,9 @@ public class WorldwideChatTests {
 	    testPlayerCommands.testRateLimitTranslateCommandPlayer(false);
 	    testPlayerCommands.testRateLimitTranslateCommandPlayerOther(true);
 	    testPlayerCommands.testRateLimitTranslateCommandPlayerOther(false);
+	    
+	    /* Print finished message */
+		sendCompletedMessage();
 	}
 	
 	/* GUI Tests */
@@ -114,6 +127,9 @@ public class WorldwideChatTests {
 	public void testPlayerGUI() {
 		/* Reset Translators */
 	    resetWWC();
+	    
+	    /* Print start message */
+		plugin.getLogger().info("=== Test Player GUIs ===");
 		
 		/* Run tests */
 		testPlayerGUI.testTranslateCommandPlayerGUI();
@@ -123,6 +139,9 @@ public class WorldwideChatTests {
 		testPlayerGUI.testGlobalTranslateCommandPlayerGUI();
 		testPlayerGUI.testGlobalTranslateCommandPlayerGUIActive();
 		testPlayerGUI.testConfigurationCommandPlayerGUI();
+		
+		/* Print finished message */
+		sendCompletedMessage();
 	}
 	
 	/* Util Tests */
@@ -132,7 +151,13 @@ public class WorldwideChatTests {
 		/* Reset Translators */
 		resetWWC();
 		
+		/* Print start message */
+		plugin.getLogger().info("=== Test Internal Utilities ===");
+		
 		/* Run tests */
 		testTranslationUtils.testTranslationFunctionSourceTarget();
+		
+		/* Print finished message */
+		sendCompletedMessage();
 	}
 }
