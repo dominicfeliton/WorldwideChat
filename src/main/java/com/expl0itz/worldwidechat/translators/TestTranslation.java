@@ -39,10 +39,14 @@ public class TestTranslation {
     }
     
     public String translate() {
+    	/* Test cases */
+    	if (outputLang.equals("es") && textToTranslate.equals("How many diamonds do you have?")) {
+    		return "Cuantos diamantes tienes?";
+    	}
     	if (inputLang.equals("en") && outputLang.equals("es") && textToTranslate.equals("Hello, how are you?")) {
     		return "Hola, como estas?";
     	}
-    	return "bad test result";
+    	return "Invalid test case!";
     }
 	
 }

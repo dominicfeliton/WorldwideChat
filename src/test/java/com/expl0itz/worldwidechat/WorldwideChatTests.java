@@ -156,6 +156,9 @@ public class WorldwideChatTests {
 		
 		/* Run tests */
 		testTranslationUtils.testTranslationFunctionSourceTarget();
+		testTranslationUtils.testTranslationFunctionSourceTargetOther();
+		testTranslationUtils.testTranslationFunctionTarget();
+		testTranslationUtils.testTranslationFunctionTargetOther();
 		
 		/* Print finished message */
 		sendCompletedMessage();
