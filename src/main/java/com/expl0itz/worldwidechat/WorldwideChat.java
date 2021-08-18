@@ -85,6 +85,7 @@ public class WorldwideChat extends JavaPlugin {
 
     private boolean enablebStats = true;
     private boolean outOfDate = false;
+    private boolean debugMode = false;
 
     private String pluginLang = "en";
     private String translatorName = "Starting";
@@ -151,6 +152,8 @@ public class WorldwideChat extends JavaPlugin {
         cancelBackgroundTasks();
         
         // Wait for background async tasks to finish
+        // Thanks to:
+        // https://gist.github.com/blablubbabc/e884c114484f34cae316c48290b21d8e#file-someplugin-java-L37
         if (!translatorName.equals("JUnit/MockBukkit Testing Translator")) {
         	final long asyncTasksTimeoutMillis = (long)asyncTasksTimeoutSeconds * 1000;
             final long asyncTasksStart = System.currentTimeMillis();
@@ -165,15 +168,13 @@ public class WorldwideChat extends JavaPlugin {
             	// Disable once we reach timeout
             	if (System.currentTimeMillis() - asyncTasksStart > asyncTasksTimeoutMillis) {
             		asyncTasksTimeout = true;
-            		//TODO for DEBUG
-            		//sendmsg waited X seconds for X tasks to complete. Disabling regardless...
+            		sendDebugMessage("Waited " + asyncTasksTimeoutSeconds + " seconds for " + this.getActiveAsyncTasks() + " remaining async tasks to complete. Disabling regardless...");
             		break;
             	}
             }
             final long asyncTasksTimeWaited = System.currentTimeMillis() - asyncTasksStart;
             if (!asyncTasksTimeout && asyncTasksTimeWaited > 1) {
-            	//TODO
-            	//sendsmg DEBUG: waited X ms for async tasks to finish,
+            	sendDebugMessage("Waited " + asyncTasksTimeWaited + " ms for async tasks to finish.");
             }
         }
         
@@ -319,6 +320,12 @@ public class WorldwideChat extends JavaPlugin {
         getCommand("wwc").setTabCompleter(new WWCTabCompleter());
         getCommand("wwcr").setTabCompleter(new WWCTabCompleter());
         getCommand("wwcc").setTabCompleter(new WWCTabCompleter());
+    }
+    
+    public void sendDebugMessage(String inMessage) {
+    	if (debugMode) {
+    		getLogger().warning("DEBUG: " + inMessage);
+    	}
     }
     
     public void cancelBackgroundTasks() {
@@ -524,6 +531,10 @@ public class WorldwideChat extends JavaPlugin {
         outOfDate = i;
     }
     
+    public void setDebugMode(boolean i) {
+    	debugMode = i;
+    }
+    
     /* Getters */
     public ActiveTranslator getActiveTranslator(String uuid) {
         if (activeTranslators.size() > 0) //just return false if there are no active translators, less code to run
@@ -598,6 +609,10 @@ public class WorldwideChat extends JavaPlugin {
     
     public boolean getOutOfDate() {
         return outOfDate;
+    }
+    
+    public boolean getDebugMode() {
+    	return debugMode;
     }
     
     public double getPluginVersion() {

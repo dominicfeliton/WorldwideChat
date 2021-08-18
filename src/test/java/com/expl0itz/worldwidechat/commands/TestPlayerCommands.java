@@ -153,21 +153,4 @@ public class TestPlayerCommands {
 			assertTrue(currTranslator.getRateLimit() == 0);
 		}
 	}
-	
-	/* User runs /wwcs */
-	/*
-	public void testStatsCommandPlayer() {
-		playerMock.performCommand("worldwidechat:wwcs");
-		playerMock.assertSaid("§4§l[§x§5§7§5§7§c§4§lWWC§4§l]§r There are no records yet available for player1.");
-	}
-	*/
-	
-    /* User runs /wwcs player2 */
-	/*
-	public void testStatsCommandPlayerOther() {
-		playerMock.performCommand("worldwidechat:wwcs player2");
-		playerMock.assertSaid("§4§l[§x§5§7§5§7§c§4§lWWC§4§l]§r There are no records yet available for player2.");
-	}
-	*/
-	
 }

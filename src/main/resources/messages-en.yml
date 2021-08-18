@@ -60,6 +60,7 @@ Messages:
   wwcConfigConnectionSuccess: 'Successfully connected to %o!'
   wwcConfigConnectionFailed: 'Failed to connect to %o. Make sure your credentials and firewall are configured correctly!'
   wwcConfigInvalidTranslatorSettings: 'Invalid translator settings! Please enable only one translator in your config.yml.'
+  wwcConfigEnabledDebugMode: 'Enabled DEBUG mode. If you are not a developer or troubleshooter, you should turn this off.'
   wwcConfigInvalidPrefixSettings: 'Failed to read your prefix. Using the default...'
   wwcConfigEnabledbStats: 'Enabled bStats.'
   wwcConfigDisabledbStats: 'Disabled bStats.'

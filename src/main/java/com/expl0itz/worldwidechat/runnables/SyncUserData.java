@@ -10,10 +10,10 @@ public class SyncUserData implements Runnable {
 	public void run() {
 		final long startTime = System.nanoTime();
 		try {
+			main.sendDebugMessage("Starting SyncUserData!!!");
 			main.getConfigManager().syncData();
 			final long duration = System.nanoTime() - startTime;
-			//TODO: Make this a debug mode message.
-			main.getLogger().info(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigSyncTime").replace("%i", duration + ""));
+			main.sendDebugMessage(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigSyncTime").replace("%i", duration + ""));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

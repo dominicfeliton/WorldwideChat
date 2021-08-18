@@ -159,6 +159,7 @@ public class WorldwideChatTests {
 		testTranslationUtils.testTranslationFunctionSourceTargetOther();
 		testTranslationUtils.testTranslationFunctionTarget();
 		testTranslationUtils.testTranslationFunctionTargetOther();
+		testTranslationUtils.testPluginDataRetention();
 		
 		/* Print finished message */
 		sendCompletedMessage();

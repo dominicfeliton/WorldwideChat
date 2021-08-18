@@ -41,15 +41,19 @@ public class ConfigurationHandler {
         mainConfig = YamlConfiguration.loadConfiguration(configFile);
         
         /* Add default options, if they do not exist */
+        // General
     	mainConfig.addDefault("General.prefixName", "WWC");
     	mainConfig.addDefault("General.enablebStats", true);
     	mainConfig.addDefault("General.pluginLang", "en");
     	mainConfig.addDefault("General.updateCheckerDelay", 86400);
     	mainConfig.addDefault("General.syncUserDataDelay", 7200);
+    	mainConfig.addDefault("General.enableDebugMode", false);
     	
+    	// Chat
     	mainConfig.addDefault("Chat.sendTranslationChat", true);
     	mainConfig.addDefault("Chat.sendPluginUpdateChat", true);
     	
+    	// Translator
     	mainConfig.addDefault("Translator.useWatsonTranslate", true);
     	mainConfig.addDefault("Translator.watsonAPIKey", "");
     	mainConfig.addDefault("Translator.watsonURL", "");
@@ -59,7 +63,7 @@ public class ConfigurationHandler {
     	mainConfig.addDefault("Translator.amazonAccessKey", "");
     	mainConfig.addDefault("Translator.amazonSecretKey", "");
     	mainConfig.addDefault("Translator.amazonRegion", "");
-    	mainConfig.addDefault("Translator.translatorCacheSize", 10);
+    	mainConfig.addDefault("Translator.translatorCacheSize", 100);
     	mainConfig.addDefault("Translator.rateLimit", 0);
     	
     	mainConfig.options().copyDefaults(true);
@@ -96,7 +100,12 @@ public class ConfigurationHandler {
     /* Load Main Settings Method */
     public void loadMainSettings() {
         /* Get rest of General Settings */
-        //Prefix
+    	// Debug Mode
+    	if (getMainConfig().getBoolean("General.enableDebugMode")) {
+    		main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigEnabledDebugMode"));
+			main.setDebugMode(true);
+		}
+        // Prefix
     	try {
             if (!getMainConfig().getString("General.prefixName").equalsIgnoreCase("Default") && !getMainConfig().getString("General.prefixName").equalsIgnoreCase("WWC")) {
                 main.setPrefixName(getMainConfig().getString("General.prefixName"));
@@ -106,7 +115,7 @@ public class ConfigurationHandler {
         } catch (Exception e) {
             main.getLogger().warning((getMessagesConfig().getString("Messages.wwcConfigInvalidPrefixSettings")));
         }
-        //bStats
+        // bStats
         main.setbStats(getMainConfig().getBoolean("General.enablebStats"));
         if (getMainConfig().getBoolean("General.enablebStats")) {
             @SuppressWarnings("unused")
@@ -115,7 +124,7 @@ public class ConfigurationHandler {
         } else {
             main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigDisabledbStats"));
         }
-        //Update Checker Delay
+        // Update Checker Delay
         try {
             if ((getMainConfig().getInt("General.updateCheckerDelay") > 10)) {
                 main.setUpdateCheckerDelay(getMainConfig().getInt("General.updateCheckerDelay"));
@@ -127,7 +136,7 @@ public class ConfigurationHandler {
             main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigBadUpdateDelay"));
             main.setUpdateCheckerDelay(86400);
         }
-        //Sync User Data Delay
+        // Sync User Data Delay
         try {
             if ((getMainConfig().getInt("General.syncUserDataDelay") > 10)) {
                 main.setSyncUserDataDelay(getMainConfig().getInt("General.syncUserDataDelay"));
@@ -140,7 +149,7 @@ public class ConfigurationHandler {
         	main.setSyncUserDataDelay(7200);
             main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigSyncDelayInvalid"));
         }
-        //Rate limit Settings
+        // Rate limit Settings
         try {
         	if (getMainConfig().getInt("Translator.rateLimit") > 0) {
         		main.setRateLimit(getMainConfig().getInt("Translator.rateLimit"));
@@ -150,7 +159,7 @@ public class ConfigurationHandler {
         	main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigRateLimitInvalid"));
         	main.setRateLimit(0);
         }
-        //Cache Settings
+        // Cache Settings
         try {
         	if (getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
                 main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigCacheEnabled").replace("%i", "" + getMainConfig().getInt("Translator.translatorCacheSize")));

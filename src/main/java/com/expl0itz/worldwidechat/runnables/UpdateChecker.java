@@ -19,6 +19,7 @@ public class UpdateChecker implements Runnable{
     
     @Override
     public void run() {
+    	main.sendDebugMessage("Starting UpdateChecker!!!");
         try (InputStream in = new URL("https://raw.githubusercontent.com/3xpl0itz/WorldwideChat/master/latestVersion.txt").openStream()) {
             latest = IOUtils.readLines(in, StandardCharsets.UTF_8).get(0);
         } catch (MalformedURLException e) {

@@ -22,6 +22,7 @@ public class LoadUserData implements Runnable {
     public void run() 
     {
         /* Load all saved user data */
+    	main.sendDebugMessage("Starting LoadUserData!!!");
         File userDataFolder = new File(main.getDataFolder() + File.separator + "data" + File.separator);
         File statsFolder = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
         File badDataFolder = new File(main.getDataFolder() + File.separator + "corrupted" + File.separator);
