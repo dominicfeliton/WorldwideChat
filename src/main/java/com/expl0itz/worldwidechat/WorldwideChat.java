@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.bukkit.Bukkit;
@@ -435,25 +436,30 @@ public class WorldwideChat extends JavaPlugin {
     public void addActiveTranslator(ActiveTranslator i) {
     	if (!activeTranslators.contains(i)) {
     		activeTranslators.add(i);
+    		sendDebugMessage(i.getUUID() + " has been added to the internal active translator list.");
     	}
     }
     
     public void removeActiveTranslator(ActiveTranslator i) {
     	activeTranslators.remove(i);
+    	sendDebugMessage(i.getUUID() + " has been removed from the internal active translator list.");
     }
     
     public void addPlayerUsingConfigurationGUI(Player p) {
     	if (!playersUsingConfigurationGUI.contains(p)) {
     		playersUsingConfigurationGUI.add(p);
+    		sendDebugMessage("Player " + p.getName() + " has been added to the internal list of people that are using the configuration GUI.");
     	}
     }
     
     public void removePlayerUsingConfigurationGUI(Player p) {
     	playersUsingConfigurationGUI.remove(p);
+    	sendDebugMessage("Player " + p.getName() + " has been removed to the internal list of people that are using the configuration GUI.");
     }
     
     public void addCacheTerm(CachedTranslation input) {
         if (cache.size() < getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize")) {
+        	sendDebugMessage("Added new phrase into cache!");
             cache.add(input);
         } else { //cache size is greater than X; let's remove the least used thing
             CachedTranslation leastAmountOfTimes = new CachedTranslation("","","","");
@@ -467,9 +473,8 @@ public class WorldwideChat extends JavaPlugin {
             }
             
             removeCacheTerm(leastAmountOfTimes);
-            if (cache.size() < getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize")) {
-                cache.add(input);
-            }
+            sendDebugMessage("Removed least used phrase in cache, since we are now at the hard limit.");
+            addCacheTerm(input);
         }
     }
 
