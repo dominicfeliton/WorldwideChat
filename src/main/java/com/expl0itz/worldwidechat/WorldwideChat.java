@@ -454,7 +454,7 @@ public class WorldwideChat extends JavaPlugin {
     
     public void removePlayerUsingConfigurationGUI(Player p) {
     	playersUsingConfigurationGUI.remove(p);
-    	sendDebugMessage("Player " + p.getName() + " has been removed to the internal list of people that are using the configuration GUI.");
+    	sendDebugMessage("Player " + p.getName() + " has been removed from the internal list of people that are using the configuration GUI.");
     }
     
     public void addCacheTerm(CachedTranslation input) {
