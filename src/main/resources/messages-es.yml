@@ -268,3 +268,14 @@ Messages:
     con precaución.
   wwcConfigEnabledDebugMode: Modo DEBUG habilitado. Si no eres desarrollador o solucionador
     de problemas, debes desactivarlo.
+  wwcTranslatorErrorThresholdReached: Se ha alcanzado el umbral de error. Este complemento
+    se recargará y deshabilitará a todos los traductores.
+  wwcConfigErrorLimitEnabled: Límite de errores del traductor establecido en %i.
+  wwcTranslatorError: ' Se ha producido un problema al intentar traducir. Inténtalo
+    de nuevo.'
+  wwcTranslatorErrorConsole: Se ha producido un problema mientras el usuario %i intentaba
+    traducir. Ahora imprimiendo el stacktrace.
+  wwcConfigErrorLimitInvalid: Límite de errores de traductor no válido establecido
+    en config.yml. Por defecto es 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Consulte errorLog.txt en la carpeta
+    de complementos de WorldwideChat para obtener más información.

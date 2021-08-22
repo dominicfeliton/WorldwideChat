@@ -262,3 +262,14 @@ Messages:
     ենք շարունակել զգուշությամբ.'
   wwcConfigEnabledDebugMode: Միացված Debug ռեժիմ. Եթե դուք ոչ մի ծրագրավորող կամ troubleshooter,
     դուք պետք է անջատեք այս.
+  wwcTranslatorErrorThresholdReached: Սխալ շեմը հասել. Այս plugin այժմ վերաբեռնել,
+    եւ անջատել բոլոր թարգմանիչների.
+  wwcConfigErrorLimitEnabled: Թարգմանիչ սխալի սահմանաչափը սահմանված է %i.
+  wwcTranslatorError: ' Խնդիրն առաջացել է, երբ փորձում է ձեր թարգմանությունը. Խնդրում
+    ենք կրկին փորձեք:'
+  wwcTranslatorErrorConsole: Խնդիրն առաջացել է, իսկ օգտվողը %i փորձում էր իրենց թարգմանությունը.
+    Այժմ տպագրություն stacktrace.
+  wwcConfigErrorLimitInvalid: Անվավեր թարգմանիչ սխալ սահմանաչափը սահմանվել է config.yml.
+    Նախնականը 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Խնդրում ենք ստուգել errorLog.txt է
+    WorldwideChat plugin թղթապանակում լրացուցիչ տեղեկությունների համար.

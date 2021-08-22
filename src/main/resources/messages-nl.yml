@@ -261,3 +261,14 @@ Messages:
     voorzichtig.
   wwcConfigEnabledDebugMode: Ingeschakelde DEBUG-modus. Als u geen ontwikkelaar of
     probleemoplosser bent, moet u dit uitschakelen.
+  wwcTranslatorErrorThresholdReached: Foutdrempel bereikt. Deze plugin zal nu alle
+    vertalers opnieuw laden en uitschakelen.
+  wwcConfigErrorLimitEnabled: Foutlimiet voor vertaler ingesteld op %i.
+  wwcTranslatorError: ' Er is een probleem opgetreden tijdens het proberen van uw
+    vertaling. Probeer het opnieuw.'
+  wwcTranslatorErrorConsole: Er is een probleem opgetreden tijdens de vertaling van
+    gebruiker %i. Nu de stacktrace afdrukken.
+  wwcConfigErrorLimitInvalid: Foutlimiet voor ongeldige vertaler ingesteld in config.yml.
+    Standaard 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Raadpleeg errorLog.txt in de map WorldwideChat-plug-in
+    voor meer informatie.

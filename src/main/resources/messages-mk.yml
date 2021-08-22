@@ -270,3 +270,15 @@ Messages:
     молиме продолжете со претпазливост.
   wwcConfigEnabledDebugMode: Овозможено дебагирање режим. Ако не сте развивач или
     смена на проблеми, треба да го исклучите ова.
+  wwcTranslatorErrorThresholdReached: Достигнат праг на грешка. Овој приклучок сега
+    ќе се вчита и ќе ги оневозможи сите преведувачи.
+  wwcConfigErrorLimitEnabled: Ограничувањето за грешка во преведувачот поставено на
+    %i.
+  wwcTranslatorError: ' Проблем се случи при обидот за вашиот превод. Ве молиме обидете
+    се повторно.'
+  wwcTranslatorErrorConsole: Проблем се појави додека корисник %i се обидуваше нивниот
+    превод. Сега печатење на stacktrace.
+  wwcConfigErrorLimitInvalid: Невалиден преведувач граница грешка поставена во config.yml.
+    Стандардно да 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Ве молиме проверете errorLog.txt во
+    папката WorldwideChat приклучок за повеќе информации.

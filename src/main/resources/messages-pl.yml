@@ -260,3 +260,14 @@ Messages:
     ostrożnie.
   wwcConfigEnabledDebugMode: Włączony tryb DEBUG Jeśli nie jesteś programistą lub
     narzędziem do rozwiązywania problemów, powinieneś to wyłączyć.
+  wwcTranslatorErrorThresholdReached: Próg błędu został osiągnięty. Ta wtyczka będzie
+    teraz przeładować i wyłączyć wszystkich tłumaczy.
+  wwcConfigErrorLimitEnabled: Limit błędu translatora ustawiony na %i.
+  wwcTranslatorError: ' Wystąpił problem podczas próby tłumaczenia. Proszę spróbować
+    jeszcze raz.'
+  wwcTranslatorErrorConsole: Wystąpił problem podczas próby tłumaczenia przez użytkownik
+    %i. Teraz drukuje ślad stosu.
+  wwcConfigErrorLimitInvalid: Nieprawidłowy limit błędu tłumacza ustawiony w config.yml.
+    Domyślnie do 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Sprawdź errorLog.txt w folderze wtyczki
+    WorldwideChat, aby uzyskać więcej informacji.

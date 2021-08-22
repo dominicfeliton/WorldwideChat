@@ -250,3 +250,13 @@ Messages:
     dikkatli bir şekilde devam edin.
   wwcConfigEnabledDebugMode: Hata AÇIKLAMA modu etkinleştirildi. Geliştirici veya
     sorun giderici değilseniz, bunu kapatmalısınız.
+  wwcTranslatorErrorThresholdReached: Hata eşiğine ulaşıldı. Bu eklenti şimdi yeniden
+    yükleyecek ve tüm çevirmenleri devre dışı bırakacaktır.
+  wwcConfigErrorLimitEnabled: Çevirmen hata sınırı %i olarak ayarlandı.
+  wwcTranslatorError: ' Çevirinizi denerken bir sorun oluştu. Lütfen tekrar deneyin.'
+  wwcTranslatorErrorConsole: '%i kullanıcısı çevirisini denerken bir sorun oluştu.
+    Şimdi yığın izini yazdırıyorum.'
+  wwcConfigErrorLimitInvalid: Config.yml içinde ayarlanmış geçersiz çevirmen hata
+    sınırı. Varsayılan olarak 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Daha fazla bilgi için lütfen WorldwideChat
+    eklentisi klasöründeki errorLog.txt dosyasını kontrol edin.

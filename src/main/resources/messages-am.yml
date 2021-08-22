@@ -227,3 +227,12 @@ Messages:
   wwcConfigGUIWatsonButton: ዋትሰን
   wwcServerReloadWarning: WorldwideChat የ /ዳግም ጫን አጠቃቀም ኮንዶም አይደለም። እባክዎ በጥንቃቄ ይቀጥሉ።
   wwcConfigEnabledDebugMode: ነቅቷል የማረም ሁነታ ገንቢ ወይም መላ መፈለጊያ ካልሆኑ ይህን ማጥፋት አለብዎት።
+  wwcTranslatorErrorThresholdReached: የስህተት ጣራ ደርሷል። ይህ ተሰኪ አሁን እንደገና ይጫናል, እና ሁሉንም
+    ተርጓሚዎች ያሰናክላል።
+  wwcConfigErrorLimitEnabled: የተርጓሚ ስህተት ገደብ ተዘጋጅቷል ለ %i።
+  wwcTranslatorError: ' የእርስዎን ትርጉም በመሞከር ላይ ሳለ አንድ ችግር ተፈጠረ። እባክዎ እንደገና ይሞክሩ።'
+  wwcTranslatorErrorConsole: ተጠቃሚው %i ትርጉማቸውን እየሞከረ ሳለ ችግር ተፈጥሯል። አሁን ቁልል ማተም።
+  wwcConfigErrorLimitInvalid: ልክ ያልሆነ ተርጓሚ ስህተት ገደብ config.yml ውስጥ ተዘጋጅቷል። ወደ 5 ነባር
+    በመሆን ላይ...
+  wwcTranslatorErrorThresholdReachedCheckLogs: ተጨማሪ መረጃ ለማግኘት WorldwideChat ተሰኪ አቃፊ
+    ውስጥ errorLog.txt ይመልከቱ።

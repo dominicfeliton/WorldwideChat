@@ -264,3 +264,14 @@ Messages:
     óvatosan járjanak el.
   wwcConfigEnabledDebugMode: Engedélyezett DEBUG mód. Ha Ön nem fejlesztő vagy hibaelhárító,
     akkor ezt ki kell kapcsolnia.
+  wwcTranslatorErrorThresholdReached: Hibaküszöb elérve. Ez a plugin most újratölti,
+    és letiltja az összes fordítót.
+  wwcConfigErrorLimitEnabled: A fordítói hibahatárt a %i értékre állítjuk be.
+  wwcTranslatorError: ' Probléma merült fel a fordítás kísérlete közben. Kérem, próbálja
+    meg újra.'
+  wwcTranslatorErrorConsole: Probléma merült fel, amikor a (z) %i felhasználó megpróbálta
+    a fordítást. Most nyomtassa ki a nyomkövetést.
+  wwcConfigErrorLimitInvalid: 'Érvénytelen fordítási hiba korlát beállítása config.yml.
+    Alapértelmezés: 5...'
+  wwcTranslatorErrorThresholdReachedCheckLogs: Kérjük, ellenőrizze a errorLog.txt
+    fájlt a WorldwideChat bővítmény mappájában további információért.

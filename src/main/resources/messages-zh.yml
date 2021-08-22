@@ -205,3 +205,10 @@ Messages:
   wwcConfigGUIWatsonButton: 沃森
   wwcServerReloadWarning: WorldwideChat 不宽恕 /reload 的使用。请谨慎行事。
   wwcConfigEnabledDebugMode: 已启用调试模式。如果你不是开发人员或疑难解答者，你应该关闭此功能。
+  wwcTranslatorErrorThresholdReached: 已达到错误阈值。此插件现在将重新加载，并禁用所有翻译人员。
+  wwcConfigErrorLimitEnabled: 翻译器错误限制设置为 %i。
+  wwcTranslatorError: ' 尝试翻译时出现问题。请再试一次。'
+  wwcTranslatorErrorConsole: 用户 %i 正在尝试翻译时出现问题。现在打印堆栈跟踪。
+  wwcConfigErrorLimitInvalid: config.yml 中设置的转换器错误限制无效。默认为 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: 请查看 WorldwideChat 插件文件夹中的 errorLog.txt
+    以了解更多信息。

@@ -8,10 +8,11 @@ import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.IOUtils;
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import net.md_5.bungee.api.ChatColor;
 
-public class UpdateChecker implements Runnable{
+public class UpdateChecker implements Runnable {
 
     private boolean upToDate = false;
     private String latest = "";
@@ -19,7 +20,7 @@ public class UpdateChecker implements Runnable{
     
     @Override
     public void run() {
-    	main.sendDebugMessage("Starting UpdateChecker!!!");
+    	CommonDefinitions.sendDebugMessage("Starting UpdateChecker!!!");
         try (InputStream in = new URL("https://raw.githubusercontent.com/3xpl0itz/WorldwideChat/master/latestVersion.txt").openStream()) {
             latest = IOUtils.readLines(in, StandardCharsets.UTF_8).get(0);
         } catch (MalformedURLException e) {

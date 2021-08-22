@@ -241,3 +241,13 @@ Messages:
     بحذر.
   wwcConfigEnabledDebugMode: وضع تصحيح الأخطاء الممكّن. إذا لم تكن مطور أو مستكشف
     الأخطاء ومصلحها، فيجب إيقاف تشغيل هذا.
+  wwcTranslatorErrorThresholdReached: تم الوصول إلى عتبة الخطأ. سيتم الآن إعادة تحميل
+    هذا المكون الإضافي وتعطيل جميع المترجمين.
+  wwcConfigErrorLimitEnabled: تعيين حد خطأ المترجم إلى %i.
+  wwcTranslatorError: ' حدثت مشكلة أثناء محاولة الترجمة. يرجى المحاولة مرة أخرى.'
+  wwcTranslatorErrorConsole: حدثت مشكلة أثناء محاولة المستخدم %i ترجمته. الآن طباعة
+    stacktrace.
+  wwcConfigErrorLimitInvalid: تعيين حد خطأ مترجم غير صالح في config.yml. التخلف عن
+    العمل إلى 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: يرجى التحقق من errorLog.txt في مجلد
+    البرنامج المساعد WorldwideChat لمزيد من المعلومات.

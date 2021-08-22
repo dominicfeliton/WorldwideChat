@@ -262,3 +262,14 @@ Messages:
     Ewch ymlaen yn ofalus.
   wwcConfigEnabledDebugMode: Modd DEBUG Galluogi. Os nad ydych yn ddatblygwr neu troubleshooter,
     dylech droi hyn i ffwrdd.
+  wwcTranslatorErrorThresholdReached: Cyrhaeddodd trothwy gwall. Bydd yr ategyn hwn
+    yn awr yn ail-lwytho, ac analluoga holl gyfieithwyr.
+  wwcConfigErrorLimitEnabled: Cyfyngiad gwall Cyfieithydd a osodwyd i %i.
+  wwcTranslatorError: ' Digwyddodd problem wrth geisio eich cyfieithiad. Ceisiwch
+    eto os gwelwch yn dda.'
+  wwcTranslatorErrorConsole: Digwyddodd problem tra defnyddiwr %i yn ceisio eu cyfieithiad.
+    Nawr argraffu\'r stacktrace.
+  wwcConfigErrorLimitInvalid: Cyfyngiad gwall cyfieithydd annilys a osodwyd yn config.yml.
+    Defaulting i 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Gwiriwch errorLog.txt yn y ffolder
+    ategyn WorldwideChat am fwy o wybodaeth.

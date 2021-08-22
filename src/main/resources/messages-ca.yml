@@ -268,3 +268,14 @@ Messages:
     amb precaució.
   wwcConfigEnabledDebugMode: Mode DEBUG activat. Si no sou un desenvolupador o un
     solucionador de problemes, haureu d\'desactivar-ho.
+  wwcTranslatorErrorThresholdReached: S\'ha arribat el llindar d\'error. Aquest connector
+    ara es tornarà a carregar, i desactivar tots els traductors.
+  wwcConfigErrorLimitEnabled: Límit d\'error del traductor establert a %i.
+  wwcTranslatorError: ' S\''ha produït un problema en intentar la traducció. Torneu-ho
+    a provar.'
+  wwcTranslatorErrorConsole: Es va produir un problema mentre l\'usuari %i estava
+    intentant la seva traducció. Ara la impressió de la stacktrace.
+  wwcConfigErrorLimitInvalid: Límit d\'error del traductor no vàlid establert a config.yml.
+    Per defecte 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Si us plau, comproveu errorLog.txt
+    al WorldwideChat plugin carpeta per a més informació.

@@ -168,9 +168,9 @@ public class YAMLTranslator {
 					
 					//Add a space before every %, escape all apostrophes
 					ArrayList<Character> sortChars = new ArrayList<Character>(translatedLine.chars().mapToObj(c -> (char) c).collect(Collectors.toList()));
-					for (int j = sortChars.size() - 1; j >= 0; j--) {
+					for (int j = sortChars.size() - 1; j > 0; j--) {
 						//% check; no space before %
-						if ((sortChars.get(j) == '%') && j-1 > -1 && !(Character.isSpaceChar(sortChars.get(j-1)) || Character.isWhitespace(sortChars.get(j-1)))) {
+						if ((j-1 > -1) && ((sortChars.get(j) == '%') && !(Character.isSpaceChar(sortChars.get(j-1)) || Character.isWhitespace(sortChars.get(j-1))))) {
 							sortChars.add(j, ' ');
 							j--;
 						}

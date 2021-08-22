@@ -232,3 +232,13 @@ Messages:
     בזהירות.
   wwcConfigEnabledDebugMode: מצב איתור באגים מופעל. אם אינך מפתח או פותר בעיות, עליך
     לכבות את האפשרות הזו.
+  wwcTranslatorErrorThresholdReached: הגיע לסף השגיאות. תוסף זה יהיה עכשיו לטעון מחדש,
+    ולהשבית את כל המתרגמים.
+  wwcConfigErrorLimitEnabled: מגבלת שגיאת המתרגם מוגדרת אל %i
+  wwcTranslatorError: ' אירעה בעיה בעת ניסיון התרגום שלך. אנא נסה שוב.'
+  wwcTranslatorErrorConsole: אירעה בעיה בזמן שהמשתמש %i ניסה את התרגום שלהם. עכשיו
+    מדפיס את הערימה.
+  wwcConfigErrorLimitInvalid: מגבלת שגיאת מתרגם לא חוקית מוגדרת ב- config.yml. ברירת
+    מחדל ל 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: לקבלת מידע נוסף, בדוק את errorLog.txt
+    בתיקיית התוספים WorldwideChat.

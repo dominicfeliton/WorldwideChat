@@ -260,3 +260,13 @@ Messages:
     piesardzīgi.
   wwcConfigEnabledDebugMode: Iespējots atkļūdošanas režīms. Ja neesat izstrādātājs
     vai problēmu risinātājs, tas jāizslēdz.
+  wwcTranslatorErrorThresholdReached: Sasniegts kļūdu slieksnis. Šis spraudnis tagad
+    pārlādēsies un atspējos visus tulkotājus.
+  wwcConfigErrorLimitEnabled: Tulkotāja kļūdu ierobežojums iestatīts uz %i.
+  wwcTranslatorError: ' Problēma radās mēģinot tulkojumu. Lūdzu, mēģiniet vēlreiz.'
+  wwcTranslatorErrorConsole: Problēma radās, kamēr lietotājs %i mēģināja tulkot. Tagad
+    drukājot kaudzēm.
+  wwcConfigErrorLimitInvalid: Nederīgs tulkotājs kļūdu ierobežojums iestatīts config.yml.
+    Noklusējuma izpilde līdz 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Lūdzu, pārbaudiet errorLog.txt WorldwideChat
+    spraudnis mapē, lai iegūtu vairāk informācijas.

@@ -260,3 +260,14 @@ Messages:
     Gaan asseblief met omsigtigheid voort
   wwcConfigEnabledDebugMode: Ontfout modus geaktiveer. As jy nie \'n ontwikkelaar
     of probleemoplossing is nie, moet jy dit afskakel.
+  wwcTranslatorErrorThresholdReached: Fout drumpel bereik. Hierdie inprop sal nou
+    herlaai en alle vertalers deaktiveer.
+  wwcConfigErrorLimitEnabled: Vertaler fout limiet stel na %i.
+  wwcTranslatorError: ' \''N Probleem ondervind terwyl \''n poging om jou vertaling.
+    Probeer asseblief weer.'
+  wwcTranslatorErrorConsole: '''n Probleem het ondervind terwyl gebruiker %i hul vertaling
+    probeer het. Nou druk die stacktrace.'
+  wwcConfigErrorLimitInvalid: Ongeldige vertaler fout limiet gestel in config.yml.
+    Verstek na 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Gaan asseblief errorLog.txt in die
+    gids WorldwideChat plugin vir meer inligting.

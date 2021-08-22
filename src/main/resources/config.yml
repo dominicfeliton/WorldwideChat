@@ -28,5 +28,6 @@ Translator:
   amazonAccessKey:
   amazonSecretKey:
   amazonRegion: 
-  translatorCacheSize: 10
+  translatorCacheSize: 100
   rateLimit: 0
+  errorLimit: 5

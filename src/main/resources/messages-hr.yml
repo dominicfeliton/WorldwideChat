@@ -258,3 +258,14 @@ Messages:
     nastavite s oprezom.
   wwcConfigEnabledDebugMode: Omogućen način DEBUG. Ako niste programer ili alat za
     otklanjanje poteškoća, trebali biste to isključiti.
+  wwcTranslatorErrorThresholdReached: Prag pogreške postignut. Ovaj dodatak će se
+    sada ponovo učitati i onemogućiti sve prevoditelje.
+  wwcConfigErrorLimitEnabled: Ograničenje pogreške prevoditelja postavljeno na %i.
+  wwcTranslatorError: ' Problem je nastao prilikom pokušaja prijevoda. Molim te, pokušaj
+    ponovo.'
+  wwcTranslatorErrorConsole: Došlo je do problema dok je korisnik %i pokušavao njihovo
+    prevođenje. Sada ispis stacktrace.
+  wwcConfigErrorLimitInvalid: Nevažeća granica pogreške prevoditelja postavljena u
+    config.yml. Zadano na 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Provjerite errorLog.txt u mapi WorldwideChat
+    plugin za više informacija.

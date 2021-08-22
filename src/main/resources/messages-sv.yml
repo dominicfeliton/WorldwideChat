@@ -263,3 +263,14 @@ Messages:
     snäll och fortsätt med försiktighet.
   wwcConfigEnabledDebugMode: Aktiverat DEBUG-läge. Om du inte är en utvecklare eller
     felsökare bör du stänga av detta.
+  wwcTranslatorErrorThresholdReached: Feltröskeln har uppnåtts. Insticksprogrammet
+    kommer nu att ladda om, och inaktivera alla översättare.
+  wwcConfigErrorLimitEnabled: Översättare felgräns satt till %i.
+  wwcTranslatorError: ' Ett problem uppstod när du försökte översätta. Var snäll och
+    försök igen.'
+  wwcTranslatorErrorConsole: Ett problem uppstod när användare %i försökte översätta
+    dem. Nu skriver du ut stapelspårningen.
+  wwcConfigErrorLimitInvalid: Ogiltig översättare felgräns angiven i config.yml. Fallande
+    till 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Kontrollera errorLog.txt i mappen WorldwideChat
+    plugin för mer information.

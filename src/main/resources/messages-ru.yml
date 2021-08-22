@@ -267,3 +267,13 @@ Messages:
     действуйте с осторожностью.
   wwcConfigEnabledDebugMode: Включен режим ОТЛАДКИ. Если вы не являетесь разработчиком
     или не устранением неполадок, отключите эту функцию.
+  wwcTranslatorErrorThresholdReached: Достигнут порог ошибки. Этот плагин теперь перезагрузится
+    и отключит всех переводчиков.
+  wwcConfigErrorLimitEnabled: Предел ошибок транслятора установлен в %i.
+  wwcTranslatorError: ' При попытке перевода возникла проблема. Повторите попытку.'
+  wwcTranslatorErrorConsole: Проблема возникла при попытке пользователя %i перевода.
+    Теперь печатаем стектрассировку.
+  wwcConfigErrorLimitInvalid: Недопустимый предел ошибок переводчика установлен в
+    config.yml. При дефолте 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Пожалуйста, обратитесь к errorLog.txt
+    в папке плагинов WorldwideChat для получения дополнительной информации.

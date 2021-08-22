@@ -230,3 +230,11 @@ Messages:
   wwcServerReloadWarning: WorldwideChat ไม่ให้อำนาจการใช้งาน/โหลดซ้ำโปรดดำเนินการด้วยความระมัดระวัง
   wwcConfigEnabledDebugMode: เปิดใช้งานโหมดดีบักหากคุณไม่ใช่นักพัฒนาซอฟต์แวร์หรือตัวแก้ไขปัญหา
     คุณควรปิดตัวเลือกนี้
+  wwcTranslatorErrorThresholdReached: ถึงขีดจำกัดข้อผิดพลาดแล้วปลั๊กอินนี้จะโหลดใหม่และปิดใช้งานตัวแปลทั้งหมด
+  wwcConfigErrorLimitEnabled: ขีดจำกัดข้อผิดพลาดในการแปลถูกตั้งค่าเป็น %i
+  wwcTranslatorError: ' ปัญหาที่เกิดขึ้นขณะพยายามแปลของคุณ.โปรดลองใหม่อีกครั้ง'
+  wwcTranslatorErrorConsole: เกิดปัญหาขึ้นขณะผู้ใช้ %i กำลังพยายามแปลตอนนี้พิมพ์รอยสแต็คแล้ว
+  wwcConfigErrorLimitInvalid: ขีดจำกัดข้อผิดพลาดในการแปลที่ไม่ถูกต้องที่กำหนดไว้ใน
+    config.ymlผิดนัดที่ 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: กรุณาตรวจสอบ errorLog.txt ในโฟลเดอร์ปลั๊กอิน
+    WorldwideChat สำหรับข้อมูลเพิ่มเติม.

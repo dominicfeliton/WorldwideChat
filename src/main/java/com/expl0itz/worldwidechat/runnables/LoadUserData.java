@@ -19,10 +19,9 @@ public class LoadUserData implements Runnable {
     private WorldwideChat main = WorldwideChat.getInstance();
     
     @Override
-    public void run() 
-    {
+    public void run() {
         /* Load all saved user data */
-    	main.sendDebugMessage("Starting LoadUserData!!!");
+    	CommonDefinitions.sendDebugMessage("Starting LoadUserData!!!");
         File userDataFolder = new File(main.getDataFolder() + File.separator + "data" + File.separator);
         File statsFolder = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
         File badDataFolder = new File(main.getDataFolder() + File.separator + "corrupted" + File.separator);

@@ -272,3 +272,14 @@ Messages:
     con cautela.
   wwcConfigEnabledDebugMode: Modo de depuración activado. Si no eres desarrollador
     o Solutor de problemas, deberías desactivarlo.
+  wwcTranslatorErrorThresholdReached: Se alcanzó el umbral de error. Este plugin ahora
+    se volverá a cargar, y deshabilitará a todos los traductores.
+  wwcConfigErrorLimitEnabled: Límite de error del traductor establecido a %i.
+  wwcTranslatorError: ' Ocuparon un problema al intentar tu traducción. Por favor
+    inténtalo de nuevo.'
+  wwcTranslatorErrorConsole: Ocupa un problema mientras el usuario %i intentaba su
+    traducción. Ahora imprimiendo el stacktrace.
+  wwcConfigErrorLimitInvalid: Límite de error de traductor no válido establecido en
+    config.yml. Incumpliendo a 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Por favor, consulte errorLog.txt en
+    la carpeta del plugin WorldwideChat para obtener más información.

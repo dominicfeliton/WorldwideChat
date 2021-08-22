@@ -253,3 +253,14 @@ Messages:
     وکړئ د احتیاط سره مخ شئ.
   wwcConfigEnabledDebugMode: فعالول ډيباګ اکر. که تاسو یو پرمخ وړونکی یا ستونزه نه
     یاست، نو تاسو باید دا بند کړئ.
+  wwcTranslatorErrorThresholdReached: . تېروتنه حد ته ورسېده دا فلګن به اوس بیا پورته
+    کړي، او ټول ژباړونکي غیر فعال کړي.
+  wwcConfigErrorLimitEnabled: .ژباړونکي تېروتنه حد وټا %i ته.
+  wwcTranslatorError: ' ستاسو د ژباړې د هڅه کولو پر مهال ستونزه رامنځته شوه. مهرباني
+    وکړئ بیا هڅه وکړئ.'
+  wwcTranslatorErrorConsole: کومه ستونزه رامنځته شوه کله چې کارن- %i د خپلې ژباړې
+    هڅه کوله. اوس د سټیکټریس چاپ کول.
+  wwcConfigErrorLimitInvalid: ناسم ژباړونکي تېروتنه حد په config.yml کې ټاکل شوی.
+    5 ته تلل...
+  wwcTranslatorErrorThresholdReachedCheckLogs: مهرباني وکړئ د نورو معلوماتو لپاره
+    د WorldwideChat پلگ ان فولډر کې errorLog.txt وګورئ.

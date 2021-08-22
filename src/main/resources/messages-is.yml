@@ -264,3 +264,14 @@ Messages:
     haltu áfram með varúð.
   wwcConfigEnabledDebugMode: Virkja kembiforrit ham. Ef þú ert ekki verktaki eða bilanaleit,
     ættir þú að slökkva á þessu.
+  wwcTranslatorErrorThresholdReached: Villa þröskuldur náð. Þessi tappi mun nú endurhlaða,
+    og slökkva á öllum þýðendum.
+  wwcConfigErrorLimitEnabled: Þýðandi villa takmörk sett á %i.
+  wwcTranslatorError: ' A vandamál occured á meðan að reyna þýðingu þína. Vinsamlegast
+    reyndu aftur.'
+  wwcTranslatorErrorConsole: Vandamál kom fram á meðan notandi %ég var að reyna þýðingu
+    þeirra. Nú prentun Stacktrace.
+  wwcConfigErrorLimitInvalid: Ógild þýðandi villa takmörk sett í config.yml. Vanskil
+    til 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Vinsamlegast athugaðu errorLog.txt
+    í WorldwideChat tappi möppunni fyrir frekari upplýsingar.

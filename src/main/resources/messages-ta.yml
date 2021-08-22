@@ -272,3 +272,14 @@ Messages:
     தொடரவும்.
   wwcConfigEnabledDebugMode: பிழைதிருப்பு முறையில் இயக்கப்பட்டது. நீங்கள் ஒரு டெவலப்பர்
     அல்லது சரிசெய்தல் இல்லை என்றால், நீங்கள் இந்த அணைக்க வேண்டும்.
+  wwcTranslatorErrorThresholdReached: பிழை வாசல் அடைந்தது. இந்த சொருகி இப்போது மீண்டும்
+    ஏற்று, அனைத்து மொழிபெயர்ப்பாளர்களையும் முடக்கும்.
+  wwcConfigErrorLimitEnabled: மொழிபெயர்ப்பாளர் பிழை வரம்பு %i க்கு அமைக்கப்பட்டது.
+  wwcTranslatorError: ' உங்கள் மொழிபெயர்ப்பு முயற்சிக்கும் போது ஒரு பிரச்சனை ஏற்பட்டது.
+    மீண்டும் முயற்சிக்கவும்.'
+  wwcTranslatorErrorConsole: பயனர் %i அவர்களின் மொழிபெயர்ப்பை முயற்சிக்கும் போது ஒரு
+    சிக்கல் ஏற்பட்டது. இப்போது stacktrace அச்சிடும்.
+  wwcConfigErrorLimitInvalid: தவறான மொழிபெயர்ப்பாளர் பிழை எல்லை config.yml அமைக்க.
+    5 க்கு இயல்புநிலைக்கு...
+  wwcTranslatorErrorThresholdReachedCheckLogs: மேலும் தகவலுக்கு WorldWideSat சொருகி
+    கோப்புறையில் errorLog.txt சரிபார்க்கவும்.

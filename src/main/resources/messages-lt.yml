@@ -258,3 +258,13 @@ Messages:
     elgtis atsargiai.
   wwcConfigEnabledDebugMode: Įjungtas DEBUG režimas. Jei nesate kūrėjas ar trikčių
     šalinimo priemonė, turėtumėte tai išjungti.
+  wwcTranslatorErrorThresholdReached: Pasiekta klaidos riba. Šis įskiepis dabar iš
+    naujo įkels ir išjungs visus vertėjus.
+  wwcConfigErrorLimitEnabled: Vertėjo klaidos limitas nustatytas į %i.
+  wwcTranslatorError: ' Problema kilo bandant vertimą. Bandykite dar kartą.'
+  wwcTranslatorErrorConsole: Problema kilo, kai vartotojas %i bandė jų vertimą. Dabar
+    spausdinkite kamino pėdsaką.
+  wwcConfigErrorLimitInvalid: Neteisingas vertėjo klaidos limitas nustatytas config.yml.
+    Numatytinas iki 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Prašome patikrinti errorLog.txt WorldwideChat
+    įskiepiai aplanke daugiau informacijos.

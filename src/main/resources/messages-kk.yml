@@ -251,3 +251,13 @@ Messages:
     жалғастырыңыз.
   wwcConfigEnabledDebugMode: DEBUG режимі қосылған. Егер сіз әзірлеуші немесе ақаулықтарды
     жоюшы болмасаңыз, оны өшіруіңіз керек.
+  wwcTranslatorErrorThresholdReached: Қате шегі жетті. Бұл плагин енді қайта жүктеледі
+    және барлық аудармашыларды өшіреді.
+  wwcConfigErrorLimitEnabled: Аудармашының қате шегі %i мәніне орнатылады.
+  wwcTranslatorError: ' Аудармаға әрекет ету кезінде проблема туындады. Қайтадан көріңіз.'
+  wwcTranslatorErrorConsole: '%i қолдануда олардың аудармасын жасау кезінде проблема
+    туындады. Енді стэктресті басып шығару.'
+  wwcConfigErrorLimitInvalid: config.yml орнатылған жарамсыз аудармашы қате шегі.
+    5 дефолт...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Қосымша ақпарат алу үшін WorldwideChat
+    плагин қалтасында errorLog.txt тексеріңіз.

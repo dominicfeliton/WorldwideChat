@@ -266,3 +266,13 @@ Messages:
     teruskan dengan berhati-hati.
   wwcConfigEnabledDebugMode: Mod DEBUG diaktifkan. Jika Anda bukan pengembang atau
     pemecah masalah, Anda harus mematikannya.
+  wwcTranslatorErrorThresholdReached: Ambang ralat dicapai. Pemalam ini kini akan
+    memuatkan semula, dan melumpuhkan semua penterjemah.
+  wwcConfigErrorLimitEnabled: Had ralat penterjemah ditetapkan ke %i.
+  wwcTranslatorError: ' Masalah berlaku semasa cuba terjemahan anda. Sila cuba lagi.'
+  wwcTranslatorErrorConsole: Masalah berlaku semasa pengguna %i cuba terjemahannya.
+    Sekarang mencetak stacktrace.
+  wwcConfigErrorLimitInvalid: Had ralat penterjemah tidak sah ditetapkan dalam config.yml.
+    Defaulting kepada 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Sila semak errorLog.txt dalam folder
+    plugin WorldwideChat untuk maklumat lanjut.

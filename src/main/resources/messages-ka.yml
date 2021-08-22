@@ -258,3 +258,14 @@ Messages:
     გამოყენებას. გთხოვთ გააგრძელოთ სიფრთხილით.
   wwcConfigEnabledDebugMode: ჩართულია გამართვის რეჟიმი. თუ თქვენ არ ხართ დეველოპერი
     ან პრობლემების მოგვარება, უნდა გამორთოთ ეს.
+  wwcTranslatorErrorThresholdReached: შეცდომა ბარიერი მიაღწია. ეს მოდული ახლა განაახლებს
+    და ყველა მთარგმნელს გამორთავს.
+  wwcConfigErrorLimitEnabled: თარჯიმანი შეცდომის ლიმიტი დაყენებულია %i.
+  wwcTranslatorError: ' პრობლემა ოკუპირებული, ხოლო ცდილობს თქვენი თარგმანი. გთხოვთ
+    კვლავ სცადოთ.'
+  wwcTranslatorErrorConsole: პრობლემა იმართებოდა მომხმარებელი %i მათი თარგმანის მცდელობისას.
+    ახლა დაბეჭდვის stacktrace.
+  wwcConfigErrorLimitInvalid: არასწორი თარჯიმანი შეცდომის ლიმიტი მითითებული config.yml.
+    უპირობოდ 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: გთხოვთ შეამოწმოთ errorLog.txt WorldwideChat
+    მოდულის საქაღალდეში დამატებითი ინფორმაციისთვის.

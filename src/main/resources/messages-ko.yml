@@ -212,3 +212,10 @@ Messages:
   wwcConfigGUIWatsonButton: 왓슨
   wwcServerReloadWarning: WorldwideChat 은 /다시로드 사용을 용납하지 않습니다.주의해서 진행하십시오.
   wwcConfigEnabledDebugMode: 디버그 모드를 활성화했습니다.개발자 또는 문제 해결사가 아닌 경우 이 기능을 해제해야 합니다.
+  wwcTranslatorErrorThresholdReached: 오류 임계값에 도달했습니다.이 플러그인은 이제 다시 로드되고 모든 번역자를 비활성화합니다.
+  wwcConfigErrorLimitEnabled: 번역기 오류 제한을 %i로 설정했습니다.
+  wwcTranslatorError: ' 번역을 시도하는 동안 문제가 발생했습니다.다시 시도해 주세요.'
+  wwcTranslatorErrorConsole: '%i 사용자가 번역을 시도하는 동안 문제가 발생했습니다.이제 스택 트레이스를 인쇄합니다.'
+  wwcConfigErrorLimitInvalid: config.yml에 잘못된 번역기 오류 제한이 설정되어 있습니다.기본값 5로 설정 중...
+  wwcTranslatorErrorThresholdReachedCheckLogs: 자세한 내용은 WorldwideChat 플러그인 폴더에서 errorLog.txt
+    를 확인하십시오.

@@ -264,3 +264,13 @@ Messages:
     продължете с повишено внимание.
   wwcConfigEnabledDebugMode: Активиран режим за отстраняване на грешки. Ако не сте
     разработчик или отстраняване на неизправности, трябва да изключите това.
+  wwcTranslatorErrorThresholdReached: Достигнат е прага за грешка. Този плъгин сега
+    ще се презареди и ще деактивира всички преводачи.
+  wwcConfigErrorLimitEnabled: Ограничението за грешка на преводача е зададено на %i.
+  wwcTranslatorError: ' Появи се проблем при опит за превод. Моля те, опитай отново.'
+  wwcTranslatorErrorConsole: Проблем възникна при опит за превод на потребител %i.
+    Сега отпечатване на стек следа.
+  wwcConfigErrorLimitInvalid: Невалиден преводач ограничение за грешка, зададено в
+    config.yml. Протичане на 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Моля, проверете errorLog.txt в папката
+    WorldwideChat плъгин за повече информация.

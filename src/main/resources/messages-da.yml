@@ -257,3 +257,14 @@ Messages:
     venligst med forsigtighed.
   wwcConfigEnabledDebugMode: Aktiveret fejlsøgningstilstand. Hvis du ikke er udvikler
     eller fejlfindingsværktøj, skal du slå dette fra.
+  wwcTranslatorErrorThresholdReached: Fejltærsklen nået. Dette plugin vil nu genindlæse,
+    og deaktivere alle oversættere.
+  wwcConfigErrorLimitEnabled: Oversætter fejlgrænse indstillet til %i.
+  wwcTranslatorError: ' Der opstod et problem under forsøget på din oversættelse.
+    Prøv venligst igen.'
+  wwcTranslatorErrorConsole: Der opstod et problem, mens bruger %i forsøgte at oversætte
+    deres. Udskriver nu stacktrace.
+  wwcConfigErrorLimitInvalid: Ugyldig oversætterfejlgrænse angivet i config.yml. Defaulerer
+    til 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Tjek errorLog.txt i mappen WorldwideChat
+    plugin for mere information.

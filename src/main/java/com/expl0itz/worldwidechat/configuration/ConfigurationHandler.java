@@ -65,6 +65,7 @@ public class ConfigurationHandler {
     	mainConfig.addDefault("Translator.amazonRegion", "");
     	mainConfig.addDefault("Translator.translatorCacheSize", 100);
     	mainConfig.addDefault("Translator.rateLimit", 0);
+    	mainConfig.addDefault("Translator.errorLimit", 5);
     	
     	mainConfig.options().copyDefaults(true);
     	try {
@@ -82,7 +83,7 @@ public class ConfigurationHandler {
             }
         }
         
-        main.getLogger().warning(ChatColor.RED + "Unable to detect a valid language in your config.yml. Defaulting to en...");
+        main.getLogger().warning("Unable to detect a valid language in your config.yml. Defaulting to en...");
     }
 
     /* Init Messages Method */
@@ -163,23 +164,27 @@ public class ConfigurationHandler {
         try {
         	if (getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
                 main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigCacheEnabled").replace("%i", "" + getMainConfig().getInt("Translator.translatorCacheSize")));
+                main.setTranslatorCacheLimit(getMainConfig().getInt("Translator.translatorCacheSize"));
             } else {
                 main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigCacheDisabled"));
-                getMainConfig().set("Translator.translatorCacheSize", 10);
-                try {
-    				getMainConfig().save(configFile);
-    			} catch (IOException e1) {
-    				e1.printStackTrace();
-    			}
+                main.setTranslatorCacheLimit(0);
             }
         } catch (Exception e) {
         	main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigCacheInvalid"));
-        	getMainConfig().set("Translator.translatorCacheSize", 10);
-            try {
-				getMainConfig().save(configFile);
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
+            main.setTranslatorCacheLimit(100);
+        }
+        // Error Limit Settings
+        try {
+        	if (getMainConfig().getInt("Translator.errorLimit") > 0) {
+        		main.getLogger().info(ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigErrorLimitEnabled").replace("%i", getMainConfig().getInt("Translator.errorLimit") + ""));
+        		main.setErrorLimit(getMainConfig().getInt("Translator.errorLimit"));
+        	} else {
+        		main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigErrorLimitInvalid"));
+        		main.setErrorLimit(5);
+        	}
+        } catch (Exception e) {
+        	main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigErrorLimitInvalid"));
+    		main.setErrorLimit(5);
         }
     }
     
@@ -302,11 +307,11 @@ public class ConfigurationHandler {
     public void syncData() {
     	/* Sync activeTranslators to disk */
         synchronized (main.getActiveTranslators()) {
-        	//Save all new activeTranslators
+        	// Save all new activeTranslators
             for (ActiveTranslator eaTranslator : main.getActiveTranslators()) {
-                createUserDataConfig(eaTranslator);
+            	createUserDataConfig(eaTranslator);
             }
-            //Delete any old activeTranslators
+            // Delete any old activeTranslators
             File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
             for (String eaName : userSettingsDir.list()) {
             	File currFile = new File(userSettingsDir, eaName);
@@ -320,7 +325,7 @@ public class ConfigurationHandler {
         for (PlayerRecord eaRecord : main.getPlayerRecords()) {
         	createStatsConfig(eaRecord);
         }
-        //Delete old playerRecords (just in case)
+        // Delete old playerRecords (just in case)
         File playerRecordsDir = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
         for (String eaName : playerRecordsDir.list()) {
         	File currFile = new File(playerRecordsDir, eaName);

@@ -258,3 +258,14 @@ Messages:
     કરીને સાવધાની સાથે આગળ વધો.
   wwcConfigEnabledDebugMode: સક્ષમ ડીબગ મોડ. જો તમે વિકાસકર્તા અથવા મુશ્કેલીનિવારણ
     નથી, તો તમારે આને બંધ કરવું જોઈએ.
+  wwcTranslatorErrorThresholdReached: ભૂલ થ્રેશોલ્ડ પહોંચી. આ પલ્ગઇનની હવે ફરીથી લોડ
+    થશે, અને બધા અનુવાદકોને અક્ષમ કરશે.
+  wwcConfigErrorLimitEnabled: અનુવાદક ભૂલ મર્યાદા %i પર સેટ કરો.
+  wwcTranslatorError: ' તમારા અનુવાદનો પ્રયાસ કરતી વખતે એક સમસ્યા આવી. કૃપા કરીને
+    ફરીથી પ્રયાસ કરો.'
+  wwcTranslatorErrorConsole: વપરાશકર્તા %i તેમના અનુવાદનો પ્રયાસ કરી રહ્યો હતો ત્યારે
+    એક સમસ્યા આવી. હવે સ્ટેકટ્રેસ છાપવા.
+  wwcConfigErrorLimitInvalid: અમાન્ય અનુવાદક ભૂલ મર્યાદા config.yml માં સુયોજિત. 5
+    માટે ડિફોલ્ટિંગ...
+  wwcTranslatorErrorThresholdReachedCheckLogs: કૃપા કરીને વધુ માહિતી માટે WorldWidChat
+    પ્લગઇન ફોલ્ડરમાં errorLog.txt તપાસો.

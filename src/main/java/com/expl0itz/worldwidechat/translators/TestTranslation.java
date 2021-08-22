@@ -3,6 +3,8 @@ package com.expl0itz.worldwidechat.translators;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.management.BadStringOperationException;
+
 import org.bukkit.command.CommandSender;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
@@ -38,7 +40,7 @@ public class TestTranslation {
     	main.setSupportedTranslatorLanguages(outList);
     }
     
-    public String translate() {
+    public String translate() throws BadStringOperationException {
     	/* Test cases */
     	if (outputLang.equals("es") && textToTranslate.equals("How many diamonds do you have?")) {
     		return "Cuantos diamantes tienes?";
@@ -46,7 +48,7 @@ public class TestTranslation {
     	if (inputLang.equals("en") && outputLang.equals("es") && textToTranslate.equals("Hello, how are you?")) {
     		return "Hola, como estas?";
     	}
-    	return "Invalid test case!";
+    	throw new BadStringOperationException("Invalid test case!");
     }
 	
 }

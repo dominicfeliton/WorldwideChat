@@ -271,3 +271,14 @@ Messages:
     vazhdoni me kujdes.
   wwcConfigEnabledDebugMode: Mënyra e aktivizuar DEBUG. Nëse nuk jeni zhvillues ose
     zgjidhës i problemeve, duhet ta fikni këtë.
+  wwcTranslatorErrorThresholdReached: Pragu i gabimit arriti. Ky shtojcë tani do të
+    rifreskojë dhe do të çaktivizojë të gjithë përkthyesit.
+  wwcConfigErrorLimitEnabled: Kufiri i gabimit të përkthyesit caktohet në %i.
+  wwcTranslatorError: ' Ndodhi një problem gjatë përpjekjes për përkthimin tuaj. Ju
+    lutem provoni përsëri.'
+  wwcTranslatorErrorConsole: Ndodhi një problem përderisa përdoruesi %i po tentonte
+    përkthimin e tyre. Tani shtypjen e stacktrace.
+  wwcConfigErrorLimitInvalid: Kufiri i gabimit të përkthyesit të pavlefshëm të vendosur
+    në config.yml. Defaulting në 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Ju lutem kontrolloni errorLog.txt në
+    dosjen e plugin WorldwideChat për më shumë informacion.

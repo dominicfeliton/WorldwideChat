@@ -265,3 +265,14 @@ Messages:
     Iltimos, ehtiyotkorlik bilan davom eting.
   wwcConfigEnabledDebugMode: DEBUG rejimi yoqilgan. Agar siz ishlab chiquvchi yoki
     muammo bartaraf etuvchi bo\'lmasangiz, buni o\'chirib qo\'yishingiz kerak.
+  wwcTranslatorErrorThresholdReached: Xato ostona yetdi. Ushbu plagin endi qayta yuklanadi
+    va barcha tarjimonlarni o\'chirib qo\'yadi.
+  wwcConfigErrorLimitEnabled: Tarjimon xatosi limiti %i ga o\'rnatildi.
+  wwcTranslatorError: ' Tarjima qilishda muammo yuzaga keldi. Iltimos, qayta urinib
+    ko\''ring.'
+  wwcTranslatorErrorConsole: '%i foydalanuvchisi ularning tarjimasiga urinayotganda
+    muammo yuzaga keldi. Endi stacktrace chop.'
+  wwcConfigErrorLimitInvalid: Config.yml da o\'rnatilgan noto\'g\'ri tarjimon xatosi
+    chegarasi. 5ga standart...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Qo\'shimcha ma\'lumot olish uchun WorldwideChat
+    plagin papkasida errorLog.txt tekshiring.

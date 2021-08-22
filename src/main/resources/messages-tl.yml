@@ -285,3 +285,15 @@ Messages:
     Mangyaring magpatuloy nang may pag-iingat.
   wwcConfigEnabledDebugMode: Pinagana ang DEBUG mode. Kung ikaw ay hindi isang developer
     o troubleshooter, dapat mong i-off ito.
+  wwcTranslatorErrorThresholdReached: Naabot ang threshold ng error. Ang plugin na
+    ito ay i-reload na ngayon, at huwag paganahin ang lahat ng mga tagasalin.
+  wwcConfigErrorLimitEnabled: Ang limitasyon ng error sa tagasalin ay nakatakda sa
+    %i.
+  wwcTranslatorError: ' Isang problema ang nagkaroon habang sinusubukan ang iyong
+    pagsasalin. Mangyaring subukan muli.'
+  wwcTranslatorErrorConsole: Nagkaroon ng problema habang tinatangka ng gumagamit
+    %i ang kanilang pagsasalin. Ngayon i-print ang stacktrace.
+  wwcConfigErrorLimitInvalid: Hindi wastong limitasyon ng error sa tagasalin na itinakda
+    sa config.yml. Default sa 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Mangyaring suriin ang errorLog.txt
+    sa folder ng WorldwideChat plugin para sa karagdagang impormasyon.

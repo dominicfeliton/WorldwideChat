@@ -267,3 +267,14 @@ Messages:
     කරුණාකර පරෙස්සමින් ඉදිරියට යන්න.
   wwcConfigEnabledDebugMode: සක්රීය DEBUG මාදිලිය. ඔබ සංවර්ධකයෙකු හෝ දෝශ නිරාකරණකරුවෙකු
     නොවේ නම්, ඔබ මෙය අක්රිය කළ යුතුය.
+  wwcTranslatorErrorThresholdReached: දෝෂ සීමාව ළඟා විය. මෙම ප්ලගිනය දැන් නැවත පූරණය
+    කරනු ඇත, සහ සියලු පරිවර්තකයන් අක්රීය.
+  wwcConfigErrorLimitEnabled: පරිවර්තක දෝෂ සීමාව %i ලෙස සකසා ඇත.
+  wwcTranslatorError: ' ඔබේ පරිවර්තනයට උත්සාහ කරන අතරතුර ගැටළුවක් ඇති විය. කරුණාකර
+    නැවත උත්සාහ කරන්න.'
+  wwcTranslatorErrorConsole: පරිශීලක % මම ඔවුන්ගේ පරිවර්තනයට උත්සාහ කරමින් සිටියදී
+    ගැටළුවක් ඇති විය. දැන් stacktrace මුද්රණය.
+  wwcConfigErrorLimitInvalid: වලංගු නොවන පරිවර්තක දෝෂ සීමාව config.yml හි දක්වා ඇත.
+    5 වෙත ගෙවීම පැහැර හැරීම...
+  wwcTranslatorErrorThresholdReachedCheckLogs: වැඩි විස්තර සඳහා කරුණාකර WorldwideChat
+    ප්ලගින ෆෝල්ඩරයේ errorLog.txt පරීක්ෂා කරන්න.

@@ -260,3 +260,13 @@ Messages:
     hyvä ja jatka varoen.
   wwcConfigEnabledDebugMode: Käytössä DEBUG-tila. Jos et ole kehittäjä tai vianmääritys,
     sinun on poistettava tämä käytöstä.
+  wwcTranslatorErrorThresholdReached: Virhekynnys saavutettu Tämä plugin lataa nyt
+    uudelleen ja poistaa kaikki kääntäjät käytöstä.
+  wwcConfigErrorLimitEnabled: Kääntäjän virheraja %i.
+  wwcTranslatorError: ' Ongelmana oli yritettäessä käännös. Yritä uudelleen.'
+  wwcTranslatorErrorConsole: Ongelma ilmeni, kun käyttäjä %i yritti käännöstä. Nyt
+    tulostetaan pinonjälki.
+  wwcConfigErrorLimitInvalid: Virheellinen kääntäjän virheraja asetettu config.yml.
+    Defaulting 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Lisätietoja on WorldwideChat plugin
+    -kansiossa errorLog.txt.

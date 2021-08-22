@@ -253,3 +253,14 @@ Messages:
     endelea kwa tahadhari.
   wwcConfigEnabledDebugMode: Hali ya DEBUG imewezesha. Ikiwa wewe si msanidi programu
     au shida ya matatizo, unapaswa kuzima hii.
+  wwcTranslatorErrorThresholdReached: Kizingiti cha hitilafu Plugin hii sasa upya,
+    na afya watafsiri wote.
+  wwcConfigErrorLimitEnabled: Kikomo cha hitilafu ya Mtafsiri imewekwa kwa %i.
+  wwcTranslatorError: ' Tatizo limetokea wakati wa kujaribu tafsiri yako. Tafadhali
+    jaribu tena.'
+  wwcTranslatorErrorConsole: Tatizo lilitokea wakati mtumiaji %i alikuwa akijaribu
+    tafsiri yao. Sasa uchapishaji stacktrace.
+  wwcConfigErrorLimitInvalid: batili translator makosa kikomo kuweka katika config.yml.
+    Defaulting kwa 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Tafadhali angalia errorLog.txt katika
+    folda ya Plugin ya WorldwideChat kwa maelezo zaidi.

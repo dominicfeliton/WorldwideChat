@@ -259,3 +259,13 @@ Messages:
     opatrně.
   wwcConfigEnabledDebugMode: Povolený režim DEBUG. Pokud nejste vývojář nebo poradce
     při potížích, měli byste to vypnout.
+  wwcTranslatorErrorThresholdReached: Došlo k chybovému prahu. Tento plugin se nyní
+    znovu načte a zakáže všechny překladatele.
+  wwcConfigErrorLimitEnabled: Omezení chyby překladače nastaveno na %i.
+  wwcTranslatorError: ' Při pokusu o překlad došlo k problému. Zkuste to prosím znovu.'
+  wwcTranslatorErrorConsole: Vyskytl se problém, když se uživatele %i pokoušel o jejich
+    překlad. Teď vytiskněte stacktrace.
+  wwcConfigErrorLimitInvalid: Neplatný limit chyby překladače nastaven v config.yml.
+    Výchozí hodnota 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Další informace zkontrolujte errorLog.txt
+    ve složce plugin WorldwideChat.

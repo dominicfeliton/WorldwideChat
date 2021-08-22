@@ -251,3 +251,13 @@ Messages:
     jätkake ettevaatusega.
   wwcConfigEnabledDebugMode: Lubatud silumisrežiim. Kui te pole arendaja või tõrkeotsija,
     peaksite selle välja lülitama.
+  wwcTranslatorErrorThresholdReached: Saavutatud tõrkeläve. See plugin on nüüd uuesti
+    laadida ja keelata kõik tõlkijad.
+  wwcConfigErrorLimitEnabled: Tõlkija veapiirang seatud %i.
+  wwcTranslatorError: ' Probleem ilmnes, kui püüate oma tõlke. Proovige uuesti.'
+  wwcTranslatorErrorConsole: Probleem ilmnes, kui kasutaja %i üritas oma tõlkimist.
+    Nüüd printimine stacktrace.
+  wwcConfigErrorLimitInvalid: Kehtetu tõlkija tõrkepiirang seatud config.yml. Defaulting
+    kuni 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Palun kontrollige errorLog.txt WorldwideChat
+    plugin kaustas rohkem teavet.

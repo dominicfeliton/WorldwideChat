@@ -253,3 +253,14 @@ Messages:
     لطفا با احتياط ادامه بديد
   wwcConfigEnabledDebugMode: حالت اشکال زدایی را فعال کنید. اگر شما یک توسعه دهنده
     یا عیب یابی نیستید، باید این را خاموش کنید.
+  wwcTranslatorErrorThresholdReached: آستانه خطا رسید. این پلاگین در حال حاضر بارگذاری
+    مجدد و غیر فعال کردن تمام مترجمان.
+  wwcConfigErrorLimitEnabled: حد خطای مترجم روی %i تنظیم شده است.
+  wwcTranslatorError: ' یک مشکل در هنگام تلاش برای ترجمه شما رخ داده است. لطفا دوباره
+    امتحان کنید'
+  wwcTranslatorErrorConsole: یک مشکل زمانی رخ داد که کاربر %i در حال تلاش برای ترجمه
+    آنها بود. حالا انبرک رو چاپ کن
+  wwcConfigErrorLimitInvalid: حد خطای مترجم نامعتبر تنظیم شده در config.yml. قصور
+    به 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: لطفا errorLog.txt را در پوشه پلاگین
+    WorldwideChat برای اطلاعات بیشتر بررسی کنید.

@@ -257,3 +257,14 @@ Messages:
     مہربانی احتیاط کے ساتھ آگے بڑھیں۔
   wwcConfigEnabledDebugMode: فعال ڈیبگ موڈ. اگر آپ ڈویلپر یا ڈویلپر نہیں ہیں تو، آپ
     کو اسے بند کرنا چاہئے.
+  wwcTranslatorErrorThresholdReached: غلطی کی حد پہنچ گئی. یہ پلگ ان اب دوبارہ لوڈ
+    کریں گے، اور تمام مترجمین کو غیر فعال کریں گے.
+  wwcConfigErrorLimitEnabled: مترجم کی خرابی کی حد %i پر سیٹ ہے۔
+  wwcTranslatorError: ' آپ کے ترجمہ کی کوشش کرتے ہوئے ایک مسئلہ پیش آیا۔ براہ مہربانی
+    دوبارہ کوشش کریں۔'
+  wwcTranslatorErrorConsole: ایک مسئلہ پیش آیا جبکہ صارف %i ان کے ترجمہ کی کوشش کر
+    رہا تھا. اب stacktrace پرنٹنگ.
+  wwcConfigErrorLimitInvalid: config.yml میں مقرر کردہ غلط مترجم غلطی کی حد. 5 کے
+    لئے ناقص...
+  wwcTranslatorErrorThresholdReachedCheckLogs: مزید معلومات کے لئے براہ کرم WorldwideChat
+    پلگ ان فولڈر میں errorLog.txt چیک کریں.

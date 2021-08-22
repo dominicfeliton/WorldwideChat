@@ -253,3 +253,14 @@ Messages:
     da nastavite sa oprezom.
   wwcConfigEnabledDebugMode: Omogućeno DEBUG režim. Ako niste programer ili rešavanje
     problema, trebalo bi da isključite ovo.
+  wwcTranslatorErrorThresholdReached: Greška prag dostignut. Ovaj dodatak će se sada
+    ponovo učitati i onemogućiti sve prevodioce.
+  wwcConfigErrorLimitEnabled: Prevodilac greška granica postavljena na %i.
+  wwcTranslatorError: ' Problem se pojavio prilikom pokušaja prevoda. Molim vas pokušajte
+    ponovo.'
+  wwcTranslatorErrorConsole: Problem se pojavio dok je korisnik %i pokušavao njihov
+    prevod. Sada štampanje stacktrace.
+  wwcConfigErrorLimitInvalid: Nevažeći prevodilac greška granica postavljena u config.iml.
+    Defaulting do 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Molimo vas da proverite errorLog.txt
+    u WorldwideChat plugin folderu za više informacija.

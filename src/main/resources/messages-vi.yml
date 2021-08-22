@@ -267,3 +267,14 @@ Messages:
     cẩn thận.
   wwcConfigEnabledDebugMode: Đã bật chế độ DEBUG. Nếu bạn không phải là nhà phát triển
     hoặc trình khắc phục sự cố, bạn nên tắt tính năng này.
+  wwcTranslatorErrorThresholdReached: Đã đạt ngưỡng lỗi. Plugin này bây giờ sẽ tải
+    lại và vô hiệu hóa tất cả các dịch giả.
+  wwcConfigErrorLimitEnabled: Giới hạn lỗi dịch được đặt thành %i.
+  wwcTranslatorError: ' Một vấn đề xảy ra trong khi cố gắng dịch thuật của bạn. Vui
+    lòng thử lại.'
+  wwcTranslatorErrorConsole: Một vấn đề xảy ra trong khi người dùng %i đang cố gắng
+    dịch thuật của họ. Bây giờ in stacktrace.
+  wwcConfigErrorLimitInvalid: Giới hạn lỗi dịch không hợp lệ được đặt trong config.yml.
+    Mặc định đến 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Vui lòng kiểm tra errorLog.txt trong
+    thư mục plugin WorldwideChat để biết thêm thông tin.
