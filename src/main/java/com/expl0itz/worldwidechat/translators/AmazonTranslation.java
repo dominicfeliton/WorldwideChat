@@ -56,7 +56,7 @@ public class AmazonTranslation {
 		String finalOut = "";
 		try {
 			/* Get test translation */
-			finalOut = process.get(7, TimeUnit.SECONDS);
+			finalOut = process.get(main.getMaxResponseTime(), TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			CommonDefinitions.sendDebugMessage("Amazon Translate Timeout!!");
 			process.cancel(true);

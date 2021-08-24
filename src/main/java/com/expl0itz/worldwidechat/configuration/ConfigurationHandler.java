@@ -66,6 +66,7 @@ public class ConfigurationHandler {
 		mainConfig.addDefault("Translator.translatorCacheSize", 100);
 		mainConfig.addDefault("Translator.rateLimit", 0);
 		mainConfig.addDefault("Translator.errorLimit", 5);
+		mainConfig.addDefault("Translator.maxResponseTime", 7);
 
 		mainConfig.options().copyDefaults(true);
 		try {
@@ -195,6 +196,21 @@ public class ConfigurationHandler {
 		} catch (Exception e) {
 			main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigErrorLimitInvalid"));
 			main.setErrorLimit(5);
+		}
+		// Max Response Time Settings
+		try {
+			if (getMainConfig().getInt("Translator.maxResponseTime") > 0) {
+				main.getLogger().info(
+						ChatColor.LIGHT_PURPLE + getMessagesConfig().getString("Messages.wwcConfigMaxResponseTimeEnabled")
+								.replace("%i", getMainConfig().getInt("Translator.maxResponseTime") + ""));
+				main.setMaxResponseTime(getMainConfig().getInt("Translator.maxResponseTime"));
+			} else {
+				main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigMaxResponseTimeInvalid"));
+				main.setMaxResponseTime(7);
+			}
+		} catch (Exception e) {
+			main.getLogger().warning(getMessagesConfig().getString("Messages.wwcConfigMaxResponseTimeInvalid"));
+			main.setMaxResponseTime(7);
 		}
 	}
 

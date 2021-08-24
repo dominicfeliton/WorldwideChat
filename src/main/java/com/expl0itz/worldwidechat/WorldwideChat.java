@@ -67,20 +67,11 @@ public class WorldwideChat extends JavaPlugin {
 	private BukkitAudiences adventure;
 	private ConfigurationHandler configurationManager;
 
-	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>(); // Way
-																													// more
-																													// reads,
-																													// every
-																													// reload
-																													// write
-	private List<PlayerRecord> playerRecords = new CopyOnWriteArrayList<PlayerRecord>(); // Way more reads, occasional
-																							// write
-	private List<ActiveTranslator> activeTranslators = Collections.synchronizedList(new ArrayList<ActiveTranslator>()); // Many
-																														// writes
-	private List<CachedTranslation> cache = Collections.synchronizedList(new ArrayList<CachedTranslation>()); // Many
-																												// writes
-	private List<Player> playersUsingConfigurationGUI = Collections.synchronizedList(new ArrayList<Player>()); // Many
-																												// writes
+	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>(); // Way																												// write
+	private List<PlayerRecord> playerRecords = new CopyOnWriteArrayList<PlayerRecord>(); // Way more reads, occasional																			// write
+	private List<ActiveTranslator> activeTranslators = Collections.synchronizedList(new ArrayList<ActiveTranslator>()); // Many																					// writes
+	private List<CachedTranslation> cache = Collections.synchronizedList(new ArrayList<CachedTranslation>()); // Many																				// writes
+	private List<Player> playersUsingConfigurationGUI = Collections.synchronizedList(new ArrayList<Player>()); // Many																				// writes
 
 	private double pluginVersion = Double.parseDouble(this.getDescription().getVersion());
 
@@ -92,10 +83,12 @@ public class WorldwideChat extends JavaPlugin {
 	private int errorCount = 0;
 	private int errorLimit = 5;
 	private int translatorCacheLimit = 100;
+	private int maxResponseTime = 7;
 
 	private boolean enablebStats = true;
 	private boolean outOfDate = false;
 	private boolean debugMode = false;
+	
 	private String pluginLang = "en";
 	private String translatorName = "Starting";
 
@@ -562,6 +555,10 @@ public class WorldwideChat extends JavaPlugin {
 		translatorCacheLimit = i;
 	}
 
+	public void setMaxResponseTime(int i) {
+		maxResponseTime = i;
+	}
+	
 	public void setPluginLang(String i) {
 		pluginLang = i;
 	}
@@ -692,6 +689,10 @@ public class WorldwideChat extends JavaPlugin {
 
 	public int getTranslatorCacheLimit() {
 		return translatorCacheLimit;
+	}
+	
+	public int getMaxResponseTime() {
+		return maxResponseTime;
 	}
 
 	public ConfigurationHandler getConfigManager() {

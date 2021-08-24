@@ -278,3 +278,6 @@ Messages:
     Mặc định đến 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Vui lòng kiểm tra errorLog.txt trong
     thư mục plugin WorldwideChat để biết thêm thông tin.
+  wwcConfigMaxResponseTimeInvalid: Thời gian phản hồi tối đa không hợp lệ được đặt
+    trong config.yml. Mặc định đến 7 giây...
+  wwcConfigMaxResponseTimeEnabled: Thời gian phản hồi tối đa được đặt thành %i giây.

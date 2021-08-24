@@ -297,3 +297,7 @@ Messages:
     sa config.yml. Default sa 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Mangyaring suriin ang errorLog.txt
     sa folder ng WorldwideChat plugin para sa karagdagang impormasyon.
+  wwcConfigMaxResponseTimeInvalid: Di-wastong max na oras ng pagtugon na itinakda
+    sa config.yml. Default sa 7 segundo...
+  wwcConfigMaxResponseTimeEnabled: Ang maximum na oras ng pagtugon ay nakatakda sa
+    %i segundo.

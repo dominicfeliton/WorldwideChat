@@ -277,3 +277,7 @@ Messages:
     config.yml. При дефолте 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Пожалуйста, обратитесь к errorLog.txt
     в папке плагинов WorldwideChat для получения дополнительной информации.
+  wwcConfigMaxResponseTimeInvalid: Недопустимое максимальное время отклика, установленное
+    в config.yml. При дефолте 7 секунд...
+  wwcConfigMaxResponseTimeEnabled: Максимальное время отклика, установленное в %i
+    секунд.

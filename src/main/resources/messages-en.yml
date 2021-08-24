@@ -78,6 +78,8 @@ Messages:
   wwcConfigSyncDelayInvalid: 'Invalid user data sync delay set in config.yml. Defaulting to 7200 seconds...'
   wwcConfigErrorLimitEnabled: 'Translator error limit set to %i.'
   wwcConfigErrorLimitInvalid: 'Invalid translator error limit set in config.yml. Defaulting to 5...'
+  wwcConfigMaxResponseTimeEnabled: 'Max response time set to %i seconds.'
+  wwcConfigMaxResponseTimeInvalid: 'Invalid max response time set in config.yml. Defaulting to 7 seconds...'
   wwcConfigSyncTime: 'Automatic user data sync completed in %i nanoseconds.'
   wwcConfigGUIGeneralSettings: 'General Configuration'
   wwcConfigGUIChatSettings: 'Chat Configuration'
