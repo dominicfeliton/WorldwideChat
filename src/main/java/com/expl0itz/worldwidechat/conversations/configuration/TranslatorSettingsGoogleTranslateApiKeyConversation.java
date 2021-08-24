@@ -20,35 +20,41 @@ import net.md_5.bungee.api.ChatColor;
 public class TranslatorSettingsGoogleTranslateApiKeyConversation extends StringPrompt {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
-	
+
 	@Override
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
-		((Player)context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + "" + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationGoogleTranslateAPIKeyInput").replace("%i", main.getConfigManager().getMainConfig().getString("Translator.googleTranslateAPIKey"));
+		((Player) context.getForWhom()).closeInventory();
+		return ChatColor.AQUA + ""
+				+ main.getConfigManager().getMessagesConfig()
+						.getString("Messages.wwcConfigConversationGoogleTranslateAPIKeyInput").replace("%i",
+								main.getConfigManager().getMainConfig().getString("Translator.googleTranslateAPIKey"));
 	}
 
 	@Override
 	public Prompt acceptInput(ConversationContext context, String input) {
 		if (!input.equals("0")) {
 			main.getConfigManager().getMainConfig().set("Translator.googleTranslateAPIKey", input);
-			//Disable google translate so the user manually enables
+			// Disable google translate so the user manually enables
 			main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate", false);
 			try {
-				main.addPlayerUsingConfigurationGUI((Player)context.getForWhom());
-				final TextComponent successfulChange = Component.text()
-		                .append(main.getPluginPrefix().asComponent())
-		                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationGoogleTranslateAPIKeySuccess")).color(NamedTextColor.GREEN))
-		                .build();
-		            Audience adventureSender = main.adventure().sender((CommandSender)context.getForWhom());
-		        adventureSender.sendMessage(successfulChange);
+				main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
+				final TextComponent successfulChange = Component.text().append(main.getPluginPrefix().asComponent())
+						.append(Component.text()
+								.content(main.getConfigManager().getMessagesConfig()
+										.getString("Messages.wwcConfigConversationGoogleTranslateAPIKeySuccess"))
+								.color(NamedTextColor.GREEN))
+						.build();
+				Audience adventureSender = main.adventure().sender((CommandSender) context.getForWhom());
+				adventureSender.sendMessage(successfulChange);
 				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
 		/* Re-open GoogleTranslateInventoryGUI */
-		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Google Translate").open((Player)context.getForWhom());
+		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Google Translate")
+				.open((Player) context.getForWhom());
 		return END_OF_CONVERSATION;
 	}
 

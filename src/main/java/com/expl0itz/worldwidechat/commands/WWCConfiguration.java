@@ -12,7 +12,7 @@ public class WWCConfiguration extends BasicCommand {
 	public WWCConfiguration(CommandSender sender, Command command, String label, String[] args) {
 		super(sender, command, label, args);
 	}
-	
+
 	public boolean processCommand() {
 		Player currPlayer = Bukkit.getServer().getPlayer(sender.getName());
 		ConfigurationGeneralSettingsGUI.generalSettings.open(currPlayer);

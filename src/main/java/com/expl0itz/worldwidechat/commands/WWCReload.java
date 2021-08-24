@@ -13,32 +13,35 @@ import net.kyori.adventure.text.format.NamedTextColor;
 
 public class WWCReload extends BasicCommand {
 
-    private WorldwideChat main = WorldwideChat.getInstance();
-    
-    public WWCReload(CommandSender sender, Command command, String label, String[] args) {
-        super(sender, command, label, args);
-    }
+	private WorldwideChat main = WorldwideChat.getInstance();
 
-    public boolean processCommand() {
-    	//Convert sender to Adventure Audience
-        Audience adventureSender = main.adventure().sender(sender);
-        
-        //Reload!
-        try {
-        	main.reload();
-            final TextComponent wwcrSuccess = Component.text()
-                    .append(main.getPluginPrefix().asComponent())
-                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrSuccess")).color(NamedTextColor.GREEN))
-                    .build();
-                adventureSender.sendMessage(wwcrSuccess);
-            main.getLogger().info(ChatColor.GREEN + main.getConfigManager().getMessagesConfig().getString("Messages.wwcEnabled").replace("%i", main.getPluginVersion() + ""));
-        } catch (Exception e) {
-        	final TextComponent wwcrFail = Component.text()
-                    .append(main.getPluginPrefix().asComponent())
-                    .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrFail")).color(NamedTextColor.RED))
-                    .build();
-                adventureSender.sendMessage(wwcrFail);
-        }
-        return true;
-    }
+	public WWCReload(CommandSender sender, Command command, String label, String[] args) {
+		super(sender, command, label, args);
+	}
+
+	public boolean processCommand() {
+		// Convert sender to Adventure Audience
+		Audience adventureSender = main.adventure().sender(sender);
+
+		// Reload!
+		try {
+			main.reload();
+			final TextComponent wwcrSuccess = Component.text().append(main.getPluginPrefix().asComponent())
+					.append(Component.text()
+							.content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrSuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			adventureSender.sendMessage(wwcrSuccess);
+			main.getLogger().info(ChatColor.GREEN + main.getConfigManager().getMessagesConfig()
+					.getString("Messages.wwcEnabled").replace("%i", main.getPluginVersion() + ""));
+		} catch (Exception e) {
+			final TextComponent wwcrFail = Component.text().append(main.getPluginPrefix().asComponent())
+					.append(Component.text()
+							.content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrFail"))
+							.color(NamedTextColor.RED))
+					.build();
+			adventureSender.sendMessage(wwcrFail);
+		}
+		return true;
+	}
 }

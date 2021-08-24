@@ -20,12 +20,15 @@ import net.md_5.bungee.api.ChatColor;
 public class TranslatorSettingsWatsonApiKeyConversation extends StringPrompt {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
-	
+
 	@Override
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
-		((Player)context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + "" + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationWatsonAPIKeyInput").replace("%i", main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"));
+		((Player) context.getForWhom()).closeInventory();
+		return ChatColor.AQUA + ""
+				+ main.getConfigManager().getMessagesConfig()
+						.getString("Messages.wwcConfigConversationWatsonAPIKeyInput")
+						.replace("%i", main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"));
 	}
 
 	@Override
@@ -35,18 +38,21 @@ public class TranslatorSettingsWatsonApiKeyConversation extends StringPrompt {
 			main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", false);
 			try {
 				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-				main.addPlayerUsingConfigurationGUI((Player)context.getForWhom());
-				final TextComponent successfulChange = Component.text()
-		                .append(main.getPluginPrefix().asComponent())
-		                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationWatsonAPIKeySuccess")).color(NamedTextColor.GREEN))
-		                .build();
-		            Audience adventureSender = main.adventure().sender((CommandSender)context.getForWhom());
-		        adventureSender.sendMessage(successfulChange);
+				main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
+				final TextComponent successfulChange = Component.text().append(main.getPluginPrefix().asComponent())
+						.append(Component.text()
+								.content(main.getConfigManager().getMessagesConfig()
+										.getString("Messages.wwcConfigConversationWatsonAPIKeySuccess"))
+								.color(NamedTextColor.GREEN))
+						.build();
+				Audience adventureSender = main.adventure().sender((CommandSender) context.getForWhom());
+				adventureSender.sendMessage(successfulChange);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
-		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson").open((Player)context.getForWhom());
+		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson")
+				.open((Player) context.getForWhom());
 		return END_OF_CONVERSATION;
 	}
 

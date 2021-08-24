@@ -20,12 +20,13 @@ import net.md_5.bungee.api.ChatColor;
 public class TranslatorSettingsGlobalRateConversation extends NumericPrompt {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
-	
+
 	@Override
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
-		((Player)context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationRateLimitInput").replace("%i", "" + main.getRateLimit());
+		((Player) context.getForWhom()).closeInventory();
+		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig()
+				.getString("Messages.wwcConfigConversationRateLimitInput").replace("%i", "" + main.getRateLimit());
 	}
 
 	@Override
@@ -34,19 +35,21 @@ public class TranslatorSettingsGlobalRateConversation extends NumericPrompt {
 			main.setRateLimit(input.intValue());
 			main.getConfigManager().getMainConfig().set("Translator.rateLimit", input.intValue());
 			try {
-				main.addPlayerUsingConfigurationGUI((Player)context.getForWhom());
-				final TextComponent successfulChange = Component.text()
-		                .append(main.getPluginPrefix().asComponent())
-		                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationRateLimitSuccess")).color(NamedTextColor.GREEN))
-		                .build();
-		            Audience adventureSender = main.adventure().sender((CommandSender)context.getForWhom());
-		        adventureSender.sendMessage(successfulChange);
+				main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
+				final TextComponent successfulChange = Component.text().append(main.getPluginPrefix().asComponent())
+						.append(Component.text()
+								.content(main.getConfigManager().getMessagesConfig()
+										.getString("Messages.wwcConfigConversationRateLimitSuccess"))
+								.color(NamedTextColor.GREEN))
+						.build();
+				Audience adventureSender = main.adventure().sender((CommandSender) context.getForWhom());
+				adventureSender.sendMessage(successfulChange);
 				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
-		ConfigurationTranslatorSettingsGUI.translatorSettings.open((Player)context.getForWhom());
+		ConfigurationTranslatorSettingsGUI.translatorSettings.open((Player) context.getForWhom());
 		return END_OF_CONVERSATION;
 	}
 

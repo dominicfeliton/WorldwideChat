@@ -7,39 +7,39 @@ import org.bukkit.inventory.ItemStack;
 
 public class EnchantGlowEffect extends Enchantment {
 
-	  public EnchantGlowEffect(NamespacedKey id) {
-	      super(id);
-	  }
+	public EnchantGlowEffect(NamespacedKey id) {
+		super(id);
+	}
 
-	  @Override
-	  public boolean canEnchantItem(ItemStack arg0) {
-	      return false;
-	  }
+	@Override
+	public boolean canEnchantItem(ItemStack arg0) {
+		return false;
+	}
 
-	  @Override
-	  public boolean conflictsWith(Enchantment arg0) {
-	      return false;
-	  }
+	@Override
+	public boolean conflictsWith(Enchantment arg0) {
+		return false;
+	}
 
-	  @Override
-	  public EnchantmentTarget getItemTarget() {
-	      return null;
-	  }
+	@Override
+	public EnchantmentTarget getItemTarget() {
+		return null;
+	}
 
-	  @Override
-	  public int getMaxLevel() {
-	      return 2;
-	  }
+	@Override
+	public int getMaxLevel() {
+		return 2;
+	}
 
-	  @Override
-	  public String getName() {
-	      return "wwc_glow";
-	  }
-	  
-	  @Override
-	  public int getStartLevel() {
-	      return 1;
-	  }
+	@Override
+	public String getName() {
+		return "wwc_glow";
+	}
+
+	@Override
+	public int getStartLevel() {
+		return 1;
+	}
 
 	@Override
 	public boolean isTreasure() {

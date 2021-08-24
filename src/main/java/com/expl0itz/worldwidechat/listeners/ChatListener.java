@@ -17,22 +17,25 @@ import net.kyori.adventure.text.format.TextDecoration;
 
 public class ChatListener implements Listener {
 
-    private WorldwideChat main = WorldwideChat.getInstance();
-   
-    @EventHandler(priority = EventPriority.HIGHEST)
-    public void onPlayerChat(AsyncPlayerChatEvent event) {
-        if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) instanceof ActiveTranslator || main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) {
-        	String outMsg = CommonDefinitions.translateText(event.getMessage(), event.getPlayer());
-        	if (!event.getMessage().equals(outMsg)) {
-        		event.setMessage(outMsg); 
-        	} else {
-        		final TextComponent chatTranslationFail = Component.text()
-		                .append(main.getPluginPrefix().asComponent())
-		                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcChatTranslationFail")).color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
-		                .build();
-		            Audience adventureSender = main.adventure().sender(event.getPlayer());
-		            adventureSender.sendMessage(chatTranslationFail);
-        	}
-        }
-    }
+	private WorldwideChat main = WorldwideChat.getInstance();
+
+	@EventHandler(priority = EventPriority.HIGHEST)
+	public void onPlayerChat(AsyncPlayerChatEvent event) {
+		if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) instanceof ActiveTranslator
+				|| main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED") instanceof ActiveTranslator) {
+			String outMsg = CommonDefinitions.translateText(event.getMessage(), event.getPlayer());
+			if (!event.getMessage().equals(outMsg)) {
+				event.setMessage(outMsg);
+			} else {
+				final TextComponent chatTranslationFail = Component.text().append(main.getPluginPrefix().asComponent())
+						.append(Component.text()
+								.content(main.getConfigManager().getMessagesConfig()
+										.getString("Messages.wwcChatTranslationFail"))
+								.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
+						.build();
+				Audience adventureSender = main.adventure().sender(event.getPlayer());
+				adventureSender.sendMessage(chatTranslationFail);
+			}
+		}
+	}
 }

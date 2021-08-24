@@ -2,6 +2,13 @@ package com.expl0itz.worldwidechat.translators;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 import org.bukkit.command.CommandSender;
 
@@ -13,84 +20,93 @@ import com.google.cloud.translate.Language;
 import com.google.cloud.translate.Translate;
 import com.google.cloud.translate.Translate.TranslateOption;
 import com.google.cloud.translate.Translation;
+
 import com.google.cloud.translate.TranslateOptions;
 
 public class GoogleTranslation {
 
-    private String textToTranslate = "";
-    private String inputLang = "";
-    private String outputLang = "";
-    private CommandSender sender;
-    private WorldwideChat main = WorldwideChat.getInstance();
-    
-    public GoogleTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
-        this.textToTranslate = textToTranslate;
-        this.inputLang = inputLang;
-        this.outputLang = outputLang;
-        this.sender = sender;
-    }
-    
-    public GoogleTranslation(String apikey) {
-        System.setProperty("GOOGLE_API_KEY", apikey); //we do this because .setApi() spams console :(
-    }
-    
-    public void initializeConnection() {
-        Translate translate = TranslateOptions.getDefaultInstance().getService(); //we can do this because API key was already set by initializeConnection()
-        
-        /* Get languages */
-        List <Language> allLanguages = translate.listSupportedLanguages();
-        
-        /* Parse languages */
-        List < SupportedLanguageObject > outList = new ArrayList < SupportedLanguageObject >();
-        for (Language eaLang : allLanguages) {
-            outList.add(new SupportedLanguageObject(
-                eaLang.getCode(),
-                eaLang.getName(),
-                "",
-                true,
-                true));
-        }
-        
-        /* Test translation */
-        Translation translation = translate.translate(
-        		"Hello, how are you?", 
-        		TranslateOption.sourceLanguage("en"),
-        		TranslateOption.targetLanguage("es"),
-        		TranslateOption.format("text"));
-        
-        /* Set langList in Main */
-        main.setSupportedTranslatorLanguages(outList);
-    }
-    
-    public String translate() {
-        /* Convert input + output lang to lang code because this API is funky, man */
-        if (!(inputLang.equals("None")) && !CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode().equals(inputLang)) {
-            inputLang = CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode();
-        }
-        if (!CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
-            outputLang = CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode();
-        }
-        
-        /* Initialize translation object */
-        Translate translate = TranslateOptions.getDefaultInstance().getService();
-        
-        /* Actual translation */
-        if (inputLang.equals("None")) { //if we do not know the input
-            Detection detection = translate.detect(textToTranslate);
-            inputLang = detection.getLanguage();
-        }
-        
-        Translation translation = translate.translate(
-            textToTranslate,
-            TranslateOption.sourceLanguage(inputLang),
-            TranslateOption.targetLanguage(outputLang),
-            TranslateOption.format("text"));
-        
-        /* Process final output */
-        String finalOut = translation.getTranslatedText();
-        
-        /* Return final result */
-        return finalOut;
-    }
-    
+	private String textToTranslate = "";
+	private String inputLang = "";
+	private String outputLang = "";
+
+	private CommandSender sender;
+
+	private boolean isInitializing = false;
+
+	private WorldwideChat main = WorldwideChat.getInstance();
+
+	public GoogleTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
+		this.textToTranslate = textToTranslate;
+		this.inputLang = inputLang;
+		this.outputLang = outputLang;
+		this.sender = sender;
+	}
+
+	public GoogleTranslation(String apikey) {
+		System.setProperty("GOOGLE_API_KEY", apikey); // we do this because .setApi() spams console :(
+		isInitializing = true;
+	}
+
+	public String useTranslator() throws TranslatorTimeoutException {
+		ExecutorService executor = Executors.newSingleThreadExecutor();
+		Future<String> process = executor.submit(new translationTask());
+		String finalOut = "";
+		try {
+			/* Get translation */
+			finalOut = process.get(7, TimeUnit.SECONDS);
+		} catch (TimeoutException | ExecutionException | InterruptedException e) {
+			CommonDefinitions.sendDebugMessage("Google Translate Timeout!!");
+			process.cancel(true);
+			throw new TranslatorTimeoutException("Timed out while waiting for Google Translate response.", e);
+		}
+		executor.shutdownNow();
+		return finalOut;
+	}
+
+	private class translationTask implements Callable<String> {
+		@Override
+		public String call() throws Exception {
+			/* Initialize translation object again */
+			Translate translate = TranslateOptions.getDefaultInstance().getService();
+
+			if (isInitializing) {
+				/* Get languages */
+				List<Language> allLanguages = translate.listSupportedLanguages();
+
+				/* Parse languages */
+				List<SupportedLanguageObject> outList = new ArrayList<SupportedLanguageObject>();
+				for (Language eaLang : allLanguages) {
+					outList.add(new SupportedLanguageObject(eaLang.getCode(), eaLang.getName(), "", true, true));
+				}
+
+				/* Set languages list */
+				main.setSupportedTranslatorLanguages(outList);
+
+				/* Setup test translation */
+				inputLang = "en";
+				outputLang = "es";
+				textToTranslate = "How are you?";
+			}
+			/* Convert input + output lang to lang code because this API is funky, man */
+			if (!(inputLang.equals("None"))
+					&& !CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode().equals(inputLang)) {
+				inputLang = CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode();
+			}
+			if (!CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
+				outputLang = CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode();
+			}
+
+			/* Detect inputLang */
+			if (inputLang.equals("None")) { // if we do not know the input
+				Detection detection = translate.detect(textToTranslate);
+				inputLang = detection.getLanguage();
+			}
+
+			/* Actual translation */
+			Translation translation = translate.translate(textToTranslate, TranslateOption.sourceLanguage(inputLang),
+					TranslateOption.targetLanguage(outputLang), TranslateOption.format("text"));
+			return translation.getTranslatedText();
+		}
+	}
+
 }

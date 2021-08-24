@@ -20,12 +20,14 @@ import net.md_5.bungee.api.ChatColor;
 public class GeneralSettingsSyncUserDataConversation extends NumericPrompt {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
-	
+
 	@Override
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
-		((Player)context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationSyncUserDataDelayInput").replace("%i", "" + main.getSyncUserDataDelay());
+		((Player) context.getForWhom()).closeInventory();
+		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig()
+				.getString("Messages.wwcConfigConversationSyncUserDataDelayInput")
+				.replace("%i", "" + main.getSyncUserDataDelay());
 	}
 
 	@Override
@@ -34,20 +36,22 @@ public class GeneralSettingsSyncUserDataConversation extends NumericPrompt {
 			main.setSyncUserDataDelay(input.intValue());
 			main.getConfigManager().getMainConfig().set("General.syncUserDataDelay", input.intValue());
 			try {
-				main.addPlayerUsingConfigurationGUI((Player)context.getForWhom());
-				final TextComponent successfulChange = Component.text()
-		                .append(main.getPluginPrefix().asComponent())
-		                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationSyncUserDataDelaySuccess")).color(NamedTextColor.GREEN))
-		                .build();
-		            Audience adventureSender = main.adventure().sender((CommandSender)context.getForWhom());
-		        adventureSender.sendMessage(successfulChange);
+				main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
+				final TextComponent successfulChange = Component.text().append(main.getPluginPrefix().asComponent())
+						.append(Component.text()
+								.content(main.getConfigManager().getMessagesConfig()
+										.getString("Messages.wwcConfigConversationSyncUserDataDelaySuccess"))
+								.color(NamedTextColor.GREEN))
+						.build();
+				Audience adventureSender = main.adventure().sender((CommandSender) context.getForWhom());
+				adventureSender.sendMessage(successfulChange);
 				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
 		/* Re-open ConfigurationInventoryGUI */
-		ConfigurationGeneralSettingsGUI.generalSettings.open((Player)context.getForWhom());
+		ConfigurationGeneralSettingsGUI.generalSettings.open((Player) context.getForWhom());
 		return END_OF_CONVERSATION;
 	}
 

@@ -28,42 +28,42 @@ public class TestPlayerCommands {
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
 		assertTrue(currTranslator.getInLangCode().equals("en") && currTranslator.getOutLangCode().equals("es"));
 	}
-	
+
 	public void testTranslateCommandPlayerSourceTargetOther() {
 		/* User runs /wwct player2 en es */
 		playerMock.performCommand("worldwidechat:wwct player2 en es");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(secondPlayerMock.getUniqueId().toString());
 		assertTrue(currTranslator.getInLangCode().equals("en") && currTranslator.getOutLangCode().equals("es"));
 	}
-	
+
 	public void testTranslateCommandPlayerTarget() {
 		/* User runs /wwct es */
 		playerMock.performCommand("worldwidechat:wwct es");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
 		assertTrue(currTranslator.getOutLangCode().equals("es"));
 	}
-	
+
 	public void testTranslateCommandPlayerTargetOther() {
 		/* User runs /wwct player4 fr */
 		playerMock.performCommand("worldwidechat:wwct player2 fr");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(secondPlayerMock.getUniqueId().toString());
 		assertTrue(currTranslator.getOutLangCode().equals("fr"));
 	}
-	
+
 	public void testGlobalTranslateCommandPlayerSourceTarget() {
 		/* User runs /wwcg en es */
 		playerMock.performCommand("worldwidechat:wwcg en es");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 		assertTrue(currTranslator.getInLangCode().equals("en") && currTranslator.getOutLangCode().equals("es"));
 	}
-	
+
 	public void testGlobalTranslateCommandPlayerTarget() {
 		/* User runs /wwcg es */
 		playerMock.performCommand("worldwidechat:wwcg es");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 		assertTrue(currTranslator.getOutLangCode().equals("es"));
 	}
-	
+
 	public void testBookTranslateCommandPlayer(boolean toggleStatus) {
 		/* User runs /wwctb */
 		playerMock.performCommand("worldwidechat:wwctb");
@@ -74,7 +74,7 @@ public class TestPlayerCommands {
 			assertTrue(!currTranslator.getTranslatingBook());
 		}
 	}
-	
+
 	public void testBookTranslateCommandPlayerOther(boolean toggleStatus) {
 		/* User runs /wwctb player2 */
 		playerMock.performCommand("worldwidechat:wwctb player2");
@@ -85,7 +85,7 @@ public class TestPlayerCommands {
 			assertTrue(!currTranslator.getTranslatingBook());
 		}
 	}
-	
+
 	public void testSignTranslateCommandPlayer(boolean toggleStatus) {
 		/* User runs /wwcts */
 		playerMock.performCommand("worldwidechat:wwcts");
@@ -96,7 +96,7 @@ public class TestPlayerCommands {
 			assertTrue(!currTranslator.getTranslatingSign());
 		}
 	}
-	
+
 	public void testSignTranslateCommandPlayerOther(boolean toggleStatus) {
 		/* User runs /wwcts player2 */
 		playerMock.performCommand("worldwidechat:wwcts player2");
@@ -107,7 +107,7 @@ public class TestPlayerCommands {
 			assertTrue(!currTranslator.getTranslatingSign());
 		}
 	}
-	
+
 	public void testItemTranslateCommandPlayer(boolean toggleStatus) {
 		/* User runs /wwcti */
 		playerMock.performCommand("worldwidechat:wwcti");
@@ -118,7 +118,7 @@ public class TestPlayerCommands {
 			assertTrue(!currTranslator.getTranslatingItem());
 		}
 	}
-	
+
 	public void testItemTranslateCommandPlayerOther(boolean toggleStatus) {
 		/* User runs /wwcti player2 */
 		playerMock.performCommand("worldwidechat:wwcti player2");
@@ -129,7 +129,7 @@ public class TestPlayerCommands {
 			assertTrue(!currTranslator.getTranslatingItem());
 		}
 	}
-	
+
 	public void testRateLimitTranslateCommandPlayer(boolean isEnabled) {
 		/* User runs /wwctrl */
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
@@ -141,7 +141,7 @@ public class TestPlayerCommands {
 			assertTrue(currTranslator.getRateLimit() == 0);
 		}
 	}
-	
+
 	public void testRateLimitTranslateCommandPlayerOther(boolean isEnabled) {
 		/* User runs /wwctrl player2 */
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(secondPlayerMock.getUniqueId().toString());

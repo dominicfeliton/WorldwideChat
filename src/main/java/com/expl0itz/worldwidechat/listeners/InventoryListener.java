@@ -18,22 +18,25 @@ import net.kyori.adventure.text.format.NamedTextColor;
 public class InventoryListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
-	
+
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInventoryCloseEvent(InventoryCloseEvent e) {
 		/* Send the user a message if they quit a config GUI without saving properly */
 		if (main.getPlayersUsingGUI().contains(e.getPlayer())) {
-			Bukkit.getScheduler().runTaskLaterAsynchronously(main, new Runnable() {
+			Bukkit.getScheduler().runTaskLater(main, new Runnable() {
 				@Override
 				public void run() {
-					if (e.getPlayer().getOpenInventory().getType() != InventoryType.CHEST && !((Player)e.getPlayer()).isConversing()) {
-						final TextComponent reloadPlease = Component.text()
-				                .append(main.getPluginPrefix().asComponent())
-				                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIChangesNotSaved")).color(NamedTextColor.YELLOW))
-				                .build();
-				            Audience adventureSender = main.adventure().sender(e.getPlayer());
-				        adventureSender.sendMessage(reloadPlease);
-				        main.removePlayerUsingConfigurationGUI((Player)e.getPlayer());
+					if (e.getPlayer().getOpenInventory().getType() != InventoryType.CHEST
+							&& !((Player) e.getPlayer()).isConversing()) {
+						final TextComponent reloadPlease = Component.text().append(main.getPluginPrefix().asComponent())
+								.append(Component.text()
+										.content(main.getConfigManager().getMessagesConfig()
+												.getString("Messages.wwcConfigGUIChangesNotSaved"))
+										.color(NamedTextColor.YELLOW))
+								.build();
+						Audience adventureSender = main.adventure().sender(e.getPlayer());
+						adventureSender.sendMessage(reloadPlease);
+						main.removePlayerUsingConfigurationGUI((Player) e.getPlayer());
 					}
 				}
 			}, 10);

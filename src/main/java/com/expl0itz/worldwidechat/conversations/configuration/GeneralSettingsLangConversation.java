@@ -22,12 +22,14 @@ import net.md_5.bungee.api.ChatColor;
 public class GeneralSettingsLangConversation extends StringPrompt {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
-	
+
 	@Override
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
-		((Player)context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationLangInput").replace("%i", main.getPluginLang()).replace("%o", Arrays.toString(CommonDefinitions.supportedPluginLangCodes));
+		((Player) context.getForWhom()).closeInventory();
+		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig()
+				.getString("Messages.wwcConfigConversationLangInput").replace("%i", main.getPluginLang())
+				.replace("%o", Arrays.toString(CommonDefinitions.supportedPluginLangCodes));
 	}
 
 	@Override
@@ -38,33 +40,38 @@ public class GeneralSettingsLangConversation extends StringPrompt {
 					main.setPluginLang(input);
 					main.getConfigManager().getMainConfig().set("General.pluginLang", input);
 					try {
-						main.addPlayerUsingConfigurationGUI((Player)context.getForWhom());
+						main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
 						final TextComponent successfulChange = Component.text()
-				                .append(main.getPluginPrefix().asComponent())
-				                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationLangSuccess")).color(NamedTextColor.GREEN))
-				                .build();
-				            Audience adventureSender = main.adventure().sender((CommandSender)context.getForWhom());
-				        adventureSender.sendMessage(successfulChange);
+								.append(main.getPluginPrefix().asComponent())
+								.append(Component.text()
+										.content(main.getConfigManager().getMessagesConfig()
+												.getString("Messages.wwcConfigConversationLangSuccess"))
+										.color(NamedTextColor.GREEN))
+								.build();
+						Audience adventureSender = main.adventure().sender((CommandSender) context.getForWhom());
+						adventureSender.sendMessage(successfulChange);
 						main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
-			        /* Re-open ConfigurationInventoryGUI */
-					ConfigurationGeneralSettingsGUI.generalSettings.open((Player)context.getForWhom());
+					/* Re-open ConfigurationInventoryGUI */
+					ConfigurationGeneralSettingsGUI.generalSettings.open((Player) context.getForWhom());
 					return END_OF_CONVERSATION;
 				}
 			} else {
 				/* Re-open ConfigurationInventoryGUI */
-				ConfigurationGeneralSettingsGUI.generalSettings.open((Player)context.getForWhom());
+				ConfigurationGeneralSettingsGUI.generalSettings.open((Player) context.getForWhom());
 				return END_OF_CONVERSATION;
 			}
 		}
-		final TextComponent badChange = Component.text()
-                .append(main.getPluginPrefix().asComponent())
-                .append(Component.text().content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationLangInvalid")).color(NamedTextColor.RED))
-                .build();
-            Audience adventureSender = main.adventure().sender((CommandSender)context.getForWhom());
-        adventureSender.sendMessage(badChange);
+		final TextComponent badChange = Component.text().append(main.getPluginPrefix().asComponent())
+				.append(Component.text()
+						.content(main.getConfigManager().getMessagesConfig()
+								.getString("Messages.wwcConfigConversationLangInvalid"))
+						.color(NamedTextColor.RED))
+				.build();
+		Audience adventureSender = main.adventure().sender((CommandSender) context.getForWhom());
+		adventureSender.sendMessage(badChange);
 		return this;
 	}
 

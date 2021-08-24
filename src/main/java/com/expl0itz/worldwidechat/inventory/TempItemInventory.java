@@ -16,21 +16,18 @@ import net.md_5.bungee.api.ChatColor;
 public class TempItemInventory implements InventoryProvider {
 
 	private ItemStack displayedItem;
-	
+
 	public TempItemInventory(ItemStack displayedItem) {
 		this.displayedItem = displayedItem;
 	}
-	
+
 	public static SmartInventory getTempItemInventory(ItemStack displayedItem) {
-		return SmartInventory.builder()
-				.id("tempItemMenu")
-				.provider(new TempItemInventory(displayedItem))
-				.size(6, 9)
-				.manager(WorldwideChat.getInstance().getInventoryManager())
-				.title(ChatColor.DARK_GREEN + WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages.wwcGUITempItem"))
+		return SmartInventory.builder().id("tempItemMenu").provider(new TempItemInventory(displayedItem)).size(6, 9)
+				.manager(WorldwideChat.getInstance().getInventoryManager()).title(ChatColor.DARK_GREEN + WorldwideChat
+						.getInstance().getConfigManager().getMessagesConfig().getString("Messages.wwcGUITempItem"))
 				.build();
 	}
-	
+
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		/* Set borders to purple */
@@ -39,12 +36,13 @@ public class TempItemInventory implements InventoryProvider {
 		defaultBorderMeta.setDisplayName(" ");
 		customDefaultBorders.setItemMeta(defaultBorderMeta);
 		contents.fillBorders(ClickableItem.empty(customDefaultBorders));
-		
+
 		/* Display item in center */
 		contents.set(3, 4, ClickableItem.empty(displayedItem));
 	}
 
 	@Override
-	public void update(Player player, InventoryContents contents) {}
+	public void update(Player player, InventoryContents contents) {
+	}
 
 }
