@@ -90,18 +90,26 @@ public class WorldwideChatTests {
 		testPlayerCommands.testBookTranslateCommandPlayer(false);
 		testPlayerCommands.testBookTranslateCommandPlayerOther(true);
 		testPlayerCommands.testBookTranslateCommandPlayerOther(false);
+		testPlayerCommands.testBookTranslateCommandPlayerOtherButSamePlayer(true);
+		testPlayerCommands.testBookTranslateCommandPlayerOtherButSamePlayer(false);
 		testPlayerCommands.testSignTranslateCommandPlayer(true);
 		testPlayerCommands.testSignTranslateCommandPlayer(false);
 		testPlayerCommands.testSignTranslateCommandPlayerOther(true);
 		testPlayerCommands.testSignTranslateCommandPlayerOther(false);
+		testPlayerCommands.testSignTranslateCommandPlayerOtherButSamePlayer(true);
+		testPlayerCommands.testSignTranslateCommandPlayerOtherButSamePlayer(false);
 		testPlayerCommands.testItemTranslateCommandPlayer(true);
 		testPlayerCommands.testItemTranslateCommandPlayer(false);
 		testPlayerCommands.testItemTranslateCommandPlayerOther(true);
 		testPlayerCommands.testItemTranslateCommandPlayerOther(false);
+		testPlayerCommands.testItemTranslateCommandPlayerOtherButSamePlayer(true);
+		testPlayerCommands.testItemTranslateCommandPlayerOtherButSamePlayer(false);
 		testPlayerCommands.testRateLimitTranslateCommandPlayer(true);
 		testPlayerCommands.testRateLimitTranslateCommandPlayer(false);
 		testPlayerCommands.testRateLimitTranslateCommandPlayerOther(true);
 		testPlayerCommands.testRateLimitTranslateCommandPlayerOther(false);
+		testPlayerCommands.testRateLimitTranslateCommandOtherButSamePlayer(true);
+		testPlayerCommands.testRateLimitTranslateCommandOtherButSamePlayer(false);
 
 		/* Print finished message */
 		sendCompletedMessage();

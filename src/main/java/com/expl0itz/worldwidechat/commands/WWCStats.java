@@ -8,8 +8,8 @@ import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -25,139 +25,86 @@ public class WWCStats extends BasicCommand {
 	}
 
 	public boolean processCommand() {
-		/* Init vars */
-		Audience adventureSender = main.adventure().sender(sender);
-		String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
-
 		/* Sanitize args */
 		if (args.length > 1) {
 			// Not enough/too many args
-			final TextComponent invalidArgs = Component.text().append(main.getPluginPrefix().asComponent())
+			final TextComponent invalidArgs = Component.text()
 					.append(Component.text()
-							.content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidArgs"))
+							.content(CommonDefinitions.getMessage("wwctInvalidArgs", new String[0]))
 							.color(NamedTextColor.RED))
 					.build();
-			adventureSender.sendMessage(invalidArgs);
-			return false;
+			CommonDefinitions.sendMessage(sender, invalidArgs);
 		}
 
 		/* Get Sender Stats */
 		if (args.length == 0) {
-			// Get stats
-			if ((sender instanceof ConsoleCommandSender)) {
-				final TextComponent notATranslator = Component
-						.text().append(main.getPluginPrefix().asComponent()).append(
-								Component.text()
-										.content(main.getConfigManager().getMessagesConfig()
-												.getString("Messages.wwcsNotATranslator").replace("%i", "console")))
-						.build();
-				adventureSender.sendMessage(notATranslator);
-				return true;
+			if (sender instanceof ConsoleCommandSender) {
+				return noRecordsMessage("Console");
 			}
-			if (main.getPlayerRecord(((Player) sender).getUniqueId().toString(), false) != null) {
-				// Is on record; continue
-				PlayerRecord record = main.getPlayerRecord(((Player) sender).getUniqueId().toString(), false);
-				if (main.getActiveTranslator(((Player) sender).getUniqueId().toString()) != null) { // is currently
-																									// active
-					isActiveTranslator = ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713";
-				}
-				final TextComponent stats = Component.text().append(main.getPluginPrefix().asComponent())
-						.append(Component.text()
-								.content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcsName")
-										.replace("%i", sender.getName()))
-								.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
-						.append(Component.text()
-								.content("\n- " + main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcsIsActiveTranslator").replace("%i", isActiveTranslator))
-								.color(NamedTextColor.AQUA))
-						.append(Component.text()
-								.content("\n- " + main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcsAttemptedTranslations")
-										.replace("%i", record.getAttemptedTranslations() + ""))
-								.color(NamedTextColor.AQUA))
-						.append(Component.text()
-								.content("\n- " + main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcsSuccessfulTranslations")
-										.replace("%i", record.getSuccessfulTranslations() + ""))
-								.color(NamedTextColor.AQUA))
-						.append(Component.text()
-								.content("\n- " + main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcsLastTranslationTime")
-										.replace("%i", record.getLastTranslationTime()))
-								.color(NamedTextColor.AQUA))
-						.build();
-				adventureSender.sendMessage(stats);
-				return true;
-			} else {
-				final TextComponent notATranslator = Component.text().append(main.getPluginPrefix().asComponent())
-						.append(Component.text()
-								.content(main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcsNotATranslator").replace("%i", sender.getName())))
-						.build();
-				adventureSender.sendMessage(notATranslator);
-				return true;
-			}
+			return translatorMessage((Player)sender);
 		}
 
 		/* Get Target Stats */
-		if (args[0] instanceof String && Bukkit.getServer().getPlayer(args[0]) != null) {
-			if (main.getPlayerRecord(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(), false) != null) {
-				// Is on record; continue
-				PlayerRecord record = main
-						.getPlayerRecord(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString(), false);
-				if (main.getActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString()) != null) { // is
-																														// currently
-																														// active
-					isActiveTranslator = ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713";
-				}
-				final TextComponent stats = Component.text().append(main.getPluginPrefix().asComponent())
-						.append(Component.text()
-								.content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcsName")
-										.replace("%i", args[0]))
-								.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
-						.append(Component.text()
-								.content("\n- " + main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcsIsActiveTranslator").replace("%i", isActiveTranslator))
-								.color(NamedTextColor.AQUA))
-						.append(Component.text()
-								.content("\n- " + main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcsAttemptedTranslations")
-										.replace("%i", record.getAttemptedTranslations() + ""))
-								.color(NamedTextColor.AQUA))
-						.append(Component.text()
-								.content("\n- " + main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcsSuccessfulTranslations")
-										.replace("%i", record.getSuccessfulTranslations() + ""))
-								.color(NamedTextColor.AQUA))
-						.append(Component.text()
-								.content("\n- " + main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcsLastTranslationTime")
-										.replace("%i", record.getLastTranslationTime()))
-								.color(NamedTextColor.AQUA))
-						.build();
-				adventureSender.sendMessage(stats);
-				return true;
+		if (args[0] instanceof String && args.length == 1) {
+			if (Bukkit.getServer().getPlayer(args[0]) != null) {
+				return translatorMessage(Bukkit.getServer().getPlayer(args[0]));
 			} else {
-				final TextComponent notATranslator = Component
-						.text().append(main.getPluginPrefix().asComponent()).append(
-								Component.text()
-										.content(main.getConfigManager().getMessagesConfig()
-												.getString("Messages.wwcsNotATranslator").replace("%i", args[0])))
+				// Target player not found
+				final TextComponent playerNotFound = Component.text()
+						.append(Component
+								.text().content(CommonDefinitions.getMessage("wwcPlayerNotFound", new String[] {args[0]}))
+								.color(NamedTextColor.RED))
 						.build();
-				adventureSender.sendMessage(notATranslator);
-				return true;
+				CommonDefinitions.sendMessage(sender, playerNotFound);
 			}
-		} else {
-			final TextComponent playerNotFound = Component.text() // Target player not found
-					.append(main.getPluginPrefix().asComponent())
-					.append(Component
-							.text().content(main.getConfigManager().getMessagesConfig()
-									.getString("Messages.wwcPlayerNotFound").replace("%i", args[0]))
-							.color(NamedTextColor.RED))
-					.build();
-			adventureSender.sendMessage(playerNotFound);
-			return true;
 		}
+		return false;
+	}
+	
+	private boolean translatorMessage(Player inPlayer) {
+		/* Init vars */
+		String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
+		
+		if (main.getPlayerRecord(inPlayer.getUniqueId().toString(), false) != null) {
+			// Is on record; continue
+			PlayerRecord record = main
+					.getPlayerRecord(inPlayer.getUniqueId().toString(), false);
+			if (main.getActiveTranslator(inPlayer.getUniqueId().toString()) != null) {
+				// Is currently an active translator
+				isActiveTranslator = ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713";
+			}
+			final TextComponent stats = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcsName", new String[] {inPlayer.getName()}))
+							.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
+					.append(Component.text()
+							.content("\n- " + CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {isActiveTranslator}))
+							.color(NamedTextColor.AQUA))
+					.append(Component.text()
+							.content("\n- " + CommonDefinitions.getMessage("wwcsAttemptedTranslations", new String[] {record.getAttemptedTranslations() + ""}))
+							.color(NamedTextColor.AQUA))
+					.append(Component.text()
+							.content("\n- " + CommonDefinitions.getMessage("wwcsSuccessfulTranslations", new String[] {record.getSuccessfulTranslations() + ""}))
+							.color(NamedTextColor.AQUA))
+					.append(Component.text()
+							.content("\n- " + CommonDefinitions.getMessage("wwcsLastTranslationTime", new String[] {record.getLastTranslationTime()}))
+							.color(NamedTextColor.AQUA))
+					.build();
+			CommonDefinitions.sendMessage(sender, stats);
+			return true;
+		} else {
+			return noRecordsMessage(inPlayer.getName());
+		}
+	}
+	
+	private boolean noRecordsMessage(String name) {
+		final TextComponent playerNotFound = Component.text() // No records found
+				.append(Component
+						.text().content(CommonDefinitions.getMessage("wwcsNotATranslator", new String[] {name}))
+						.color(NamedTextColor.RED))
+				.build();
+		CommonDefinitions.sendMessage(sender, playerNotFound);
+		return true;
 	}
 
 }

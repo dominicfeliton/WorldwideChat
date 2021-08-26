@@ -1,1 +1,6 @@
-1.4
+1.45
+1.5.0
+
+
+# The first line is for older versions of the plugin that parse the version as a Double, and will likely not be updated any further.
+# The second line is for newer versions of the plugin that parse the version as a String. We switched to this format for better clarity.

@@ -1,12 +1,11 @@
 package com.expl0itz.worldwidechat.commands;
 
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -20,27 +19,22 @@ public class WWCReload extends BasicCommand {
 	}
 
 	public boolean processCommand() {
-		// Convert sender to Adventure Audience
-		Audience adventureSender = main.adventure().sender(sender);
-
 		// Reload!
 		try {
 			main.reload();
-			final TextComponent wwcrSuccess = Component.text().append(main.getPluginPrefix().asComponent())
+			final TextComponent wwcrSuccess = Component.text()
 					.append(Component.text()
-							.content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrSuccess"))
+							.content(CommonDefinitions.getMessage("wwcrSuccess", new String[0]))
 							.color(NamedTextColor.GREEN))
 					.build();
-			adventureSender.sendMessage(wwcrSuccess);
-			main.getLogger().info(ChatColor.GREEN + main.getConfigManager().getMessagesConfig()
-					.getString("Messages.wwcEnabled").replace("%i", main.getPluginVersion() + ""));
+			CommonDefinitions.sendMessage(sender, wwcrSuccess);
 		} catch (Exception e) {
-			final TextComponent wwcrFail = Component.text().append(main.getPluginPrefix().asComponent())
+			final TextComponent wwcrFail = Component.text()
 					.append(Component.text()
-							.content(main.getConfigManager().getMessagesConfig().getString("Messages.wwcrFail"))
+							.content(CommonDefinitions.getMessage("wwcrFail", new String[0]))
 							.color(NamedTextColor.RED))
 					.build();
-			adventureSender.sendMessage(wwcrFail);
+			CommonDefinitions.sendMessage(sender, wwcrFail);
 		}
 		return true;
 	}

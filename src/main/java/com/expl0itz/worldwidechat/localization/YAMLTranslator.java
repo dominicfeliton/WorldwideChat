@@ -27,16 +27,16 @@ public class YAMLTranslator {
 
 	public static void main(String[] args) {
 		// Creds
-		String amazonAccessKey = "";
-		String amazonSecretKey = "";
+		String amazonAccessKey = "AKIAUFYVBXQAWXB2K4EX";
+		String amazonSecretKey = "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";
 		String amazonRegion = "us-east-2";
 
 		// Other vars
 		// String supportedLangs[] = new
 		// CommonDefinitions().getSupportedPluginLangCodes();
 		String inputLang = "en";
-		String originalYAMLDir = "C:\\Users\\Dominic\\Desktop\\WorldwideChat\\WorldwideChat\\src\\main\\resources\\";
-		String outputYAMLDir = "C:\\Users\\Dominic\\Desktop\\WorldwideChat\\WorldwideChat\\src\\main\\resources\\";
+		String originalYAMLDir = "C:\\Users\\Dominic\\Desktop\\Test\\";
+		String outputYAMLDir = "C:\\Users\\Dominic\\Desktop\\Test\\";
 		String originalYAML = "";
 		String outputYAML = "";
 

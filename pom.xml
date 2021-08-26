@@ -4,7 +4,7 @@
 
   <groupId>com.expl0itz.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
-  <version>1.45-SNAPSHOT</version>
+  <version>1.5.0-SNAPSHOT</version>
 
   <name>WorldwideChat</name>
   <description>Break the blocky language barrier!</description>
@@ -120,6 +120,11 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-artifact</artifactId>
+            <version>3.6.3</version>
+        </dependency>
     </dependencies>
 
   <repositories>
@@ -225,6 +230,7 @@
                             <include>org.apache.httpcomponents:*</include>
                             <include>joda-time:*</include>
                             <include>fr.minuskube.inv:smart-invs</include>
+                            <include>org.apache.maven:maven-artifact</include>
                         </includes>
                     </artifactSet>
                     <relocations>

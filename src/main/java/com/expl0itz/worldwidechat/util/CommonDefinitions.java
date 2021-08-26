@@ -4,14 +4,18 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bukkit.Bukkit;
+import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionAttachmentInfo;
+import org.jetbrains.annotations.NotNull;
 import org.threeten.bp.Instant;
 import org.threeten.bp.LocalDate;
 import org.threeten.bp.LocalTime;
@@ -34,6 +38,7 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
 
 public class CommonDefinitions {
@@ -100,7 +105,51 @@ public class CommonDefinitions {
 			WorldwideChat.getInstance().getLogger().warning("DEBUG: " + inMessage);
 		}
 	}
-
+	
+	public static String getMessage(String messageName, String[] replacements) {
+		/* Get message from messages.yml */
+		String convertedOriginalMessage = WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages." + ChatColor.stripColor(messageName));
+		if (convertedOriginalMessage == null) {
+			WorldwideChat.getInstance().getLogger().severe("Bad message! Please fix your messages.yml.");
+			return ChatColor.RED + "Bad message! Please fix your messages.yml.";
+		}
+		
+		/* Replace any and all %i, %e, %o, etc. */
+		/* This code will only go as far as replacements[] goes. */
+		StringBuilder fixedMessage = new StringBuilder();
+		int replacementsPos = 0;
+		for (int c = 0; c < convertedOriginalMessage.toCharArray().length; c++) {
+			if (replacements != null && replacements.length > 0 && convertedOriginalMessage.toCharArray()[c] == '%' && replacementsPos < replacements.length) {
+				fixedMessage.append(replacements[replacementsPos]);
+				replacementsPos++;
+				c++;
+			} else {
+				fixedMessage.append(convertedOriginalMessage.toCharArray()[c]);
+			}
+		}
+		
+		/* Return fixedMessage */
+		return fixedMessage.toString();
+	}
+	
+	public static void sendMessage(CommandSender sender, TextComponent originalMessage) {
+		try {
+			Audience adventureSender = WorldwideChat.getInstance().adventure().sender(sender);
+			final TextComponent outMessage = Component.text().append(WorldwideChat.getInstance().getPluginPrefix().asComponent())
+					.append(Component.text().content(" "))
+					.append(originalMessage.asComponent())
+					.build();
+			if (sender instanceof ConsoleCommandSender) {
+				WorldwideChat.getInstance().getServer().getConsoleSender().sendMessage((ChatColor.translateAlternateColorCodes('&', LegacyComponentSerializer.legacyAmpersand().serialize(outMessage))));
+			} else {
+				adventureSender.sendMessage(outMessage);
+			}
+		} catch (IllegalStateException e) {
+			// This only happens when the plugin/adventure is disabled.
+			// If the plugin/adventure is disabled, no messages should be sent anyways so silently catch this.
+		}
+	}
+	
 	public static String translateText(String inMessage, Player currPlayer) {
 		try {
 			/* If translator settings are invalid, do not do this... */

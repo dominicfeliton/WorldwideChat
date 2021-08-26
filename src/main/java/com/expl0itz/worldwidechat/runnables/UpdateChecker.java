@@ -7,6 +7,8 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.maven.artifact.versioning.ComparableVersion;
+
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
@@ -23,7 +25,7 @@ public class UpdateChecker implements Runnable {
 		CommonDefinitions.sendDebugMessage("Starting UpdateChecker!!!");
 		try (InputStream in = new URL(
 				"https://raw.githubusercontent.com/3xpl0itz/WorldwideChat/master/latestVersion.txt").openStream()) {
-			latest = IOUtils.readLines(in, StandardCharsets.UTF_8).get(0);
+			latest = IOUtils.readLines(in, StandardCharsets.UTF_8).get(1);
 		} catch (MalformedURLException e) {
 			latest = main.getPluginVersion() + ""; // Just set latest to the current plugin version, since we can't find
 													// a newer one
@@ -36,10 +38,10 @@ public class UpdateChecker implements Runnable {
 		}
 
 		try {
-			if (main.getPluginVersion() == Double.parseDouble(latest)) {
+			if (main.getPluginVersion().equals(latest)) {
 				main.getLogger().info(ChatColor.LIGHT_PURPLE
 						+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterUpToDate"));
-			} else if (main.getPluginVersion() > Double.parseDouble(latest)) {
+			} else if (new ComparableVersion(main.getPluginVersion()).compareTo(new ComparableVersion(latest)) > 0) {
 				main.getLogger().warning(main.getConfigManager().getMessagesConfig()
 						.getString("Messages.wwcUpdaterFutureDate").replace("%i", "" + Double.parseDouble(latest)));
 			} else {

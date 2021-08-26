@@ -85,6 +85,17 @@ public class TestPlayerCommands {
 			assertTrue(!currTranslator.getTranslatingBook());
 		}
 	}
+	
+	public void testBookTranslateCommandPlayerOtherButSamePlayer(boolean toggleStatus) {
+		/* User runs /wwctb player */
+		playerMock.performCommand("worldwidechat:wwctb player");
+		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
+		if (toggleStatus) {
+			assertTrue(currTranslator.getTranslatingBook());
+		} else {
+			assertTrue(!currTranslator.getTranslatingBook());
+		}
+	}
 
 	public void testSignTranslateCommandPlayer(boolean toggleStatus) {
 		/* User runs /wwcts */
@@ -101,6 +112,17 @@ public class TestPlayerCommands {
 		/* User runs /wwcts player2 */
 		playerMock.performCommand("worldwidechat:wwcts player2");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(secondPlayerMock.getUniqueId().toString());
+		if (toggleStatus) {
+			assertTrue(currTranslator.getTranslatingSign());
+		} else {
+			assertTrue(!currTranslator.getTranslatingSign());
+		}
+	}
+	
+	public void testSignTranslateCommandPlayerOtherButSamePlayer(boolean toggleStatus) {
+		/* User runs /wwcts player */
+		playerMock.performCommand("worldwidechat:wwcts player");
+		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
 		if (toggleStatus) {
 			assertTrue(currTranslator.getTranslatingSign());
 		} else {
@@ -129,6 +151,17 @@ public class TestPlayerCommands {
 			assertTrue(!currTranslator.getTranslatingItem());
 		}
 	}
+	
+	public void testItemTranslateCommandPlayerOtherButSamePlayer(boolean toggleStatus) {
+		/* User runs /wwcti player */
+		playerMock.performCommand("worldwidechat:wwcti player");
+		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
+		if (toggleStatus) {
+			assertTrue(currTranslator.getTranslatingItem());
+		} else {
+			assertTrue(!currTranslator.getTranslatingItem());
+		}
+	}
 
 	public void testRateLimitTranslateCommandPlayer(boolean isEnabled) {
 		/* User runs /wwctrl */
@@ -150,6 +183,18 @@ public class TestPlayerCommands {
 			assertTrue(currTranslator.getRateLimit() == 5);
 		} else {
 			playerMock.performCommand("worldwidechat:wwctrl player2");
+			assertTrue(currTranslator.getRateLimit() == 0);
+		}
+	}
+	
+	public void testRateLimitTranslateCommandOtherButSamePlayer(boolean isEnabled) {
+		/* User runs /wwctrl player */
+		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
+		if (isEnabled) {
+			playerMock.performCommand("worldwidechat:wwctrl player 5");
+			assertTrue(currTranslator.getRateLimit() == 5);
+		} else {
+			playerMock.performCommand("worldwidechat:wwctrl player");
 			assertTrue(currTranslator.getRateLimit() == 0);
 		}
 	}

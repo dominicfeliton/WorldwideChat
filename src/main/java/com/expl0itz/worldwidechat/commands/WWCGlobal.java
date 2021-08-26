@@ -3,16 +3,13 @@ package com.expl0itz.worldwidechat.commands;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 
-import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
 public class WWCGlobal extends BasicCommand {
-
-	private WorldwideChat main = WorldwideChat.getInstance();
 
 	public WWCGlobal(CommandSender sender, Command command, String label, String[] args) {
 		super(sender, command, label, args);
@@ -24,13 +21,12 @@ public class WWCGlobal extends BasicCommand {
 			return initGlobal.processCommand(true); // lets WWCTranslate know that we want a global user
 		}
 		// Too many args
-		final TextComponent invalidArgs = Component.text().append(main.getPluginPrefix().asComponent())
+		final TextComponent invalidArgs = Component.text()
 				.append(Component.text()
-						.content(main.getConfigManager().getMessagesConfig().getString("Messages.wwctInvalidArgs"))
+						.content(CommonDefinitions.getMessage("wwctInvalidArgs", new String[0]))
 						.color(NamedTextColor.RED))
 				.build();
-		Audience adventureSender = main.adventure().sender(sender);
-		adventureSender.sendMessage(invalidArgs);
+		CommonDefinitions.sendMessage(sender, invalidArgs);
 		return false;
 	}
 
