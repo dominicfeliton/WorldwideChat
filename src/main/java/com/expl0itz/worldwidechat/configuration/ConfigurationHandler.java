@@ -3,10 +3,8 @@ package com.expl0itz.worldwidechat.configuration;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.InaccessibleObjectException;
-import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
-import java.util.List;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -152,7 +150,7 @@ public class ConfigurationHandler {
 			messagesConfig.set("DoNotTouchThis.Version", main.getCurrentMessagesConfigVersion());
 			
 			/* Paste overrides section */
-			if (messagesConfig.getConfigurationSection("Overrides") != null) {
+			if (!oldOverrides.isEmpty()) {
 				for (Map.Entry<String, String> entry : oldOverrides.entrySet()) {
 				    messagesConfig.set("Overrides." + entry.getKey(), entry.getValue());
 				}
