@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
+import com.expl0itz.worldwidechat.inventory.wwcstatsgui.WWCStatsGUIMainMenu;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
@@ -62,35 +63,37 @@ public class WWCStats extends BasicCommand {
 	}
 	
 	private boolean translatorMessage(Player inPlayer) {
-		/* Init vars */
-		String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
-		
 		if (!main.getPlayerRecord(inPlayer.getUniqueId().toString(), false).getUUID().equals("")) {
 			// Is on record; continue
-			PlayerRecord record = main
-					.getPlayerRecord(inPlayer.getUniqueId().toString(), false);
-			if (!main.getActiveTranslator(inPlayer.getUniqueId().toString()).getUUID().equals("")) {
-				// Is currently an active translator
-				isActiveTranslator = ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713";
+			if (sender instanceof Player) {
+				WWCStatsGUIMainMenu.getStatsMainMenu(inPlayer.getUniqueId().toString()).open(inPlayer);
+			} else {
+				String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
+				PlayerRecord record = main
+						.getPlayerRecord(inPlayer.getUniqueId().toString(), false);
+				if (!main.getActiveTranslator(inPlayer.getUniqueId().toString()).getUUID().equals("")) {
+					// Is currently an active translator
+					isActiveTranslator = ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713";
+				}
+				final TextComponent stats = Component.text()
+						.append(Component.text()
+								.content(CommonDefinitions.getMessage("wwcsName", new String[] {inPlayer.getName()}))
+								.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
+						.append(Component.text()
+								.content("\n- " + CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {isActiveTranslator}))
+								.color(NamedTextColor.AQUA))
+						.append(Component.text()
+								.content("\n- " + CommonDefinitions.getMessage("wwcsAttemptedTranslations", new String[] {record.getAttemptedTranslations() + ""}))
+								.color(NamedTextColor.AQUA))
+						.append(Component.text()
+								.content("\n- " + CommonDefinitions.getMessage("wwcsSuccessfulTranslations", new String[] {record.getSuccessfulTranslations() + ""}))
+								.color(NamedTextColor.AQUA))
+						.append(Component.text()
+								.content("\n- " + CommonDefinitions.getMessage("wwcsLastTranslationTime", new String[] {record.getLastTranslationTime()}))
+								.color(NamedTextColor.AQUA))
+						.build();
+				CommonDefinitions.sendMessage(sender, stats);
 			}
-			final TextComponent stats = Component.text()
-					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcsName", new String[] {inPlayer.getName()}))
-							.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
-					.append(Component.text()
-							.content("\n- " + CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {isActiveTranslator}))
-							.color(NamedTextColor.AQUA))
-					.append(Component.text()
-							.content("\n- " + CommonDefinitions.getMessage("wwcsAttemptedTranslations", new String[] {record.getAttemptedTranslations() + ""}))
-							.color(NamedTextColor.AQUA))
-					.append(Component.text()
-							.content("\n- " + CommonDefinitions.getMessage("wwcsSuccessfulTranslations", new String[] {record.getSuccessfulTranslations() + ""}))
-							.color(NamedTextColor.AQUA))
-					.append(Component.text()
-							.content("\n- " + CommonDefinitions.getMessage("wwcsLastTranslationTime", new String[] {record.getLastTranslationTime()}))
-							.color(NamedTextColor.AQUA))
-					.build();
-			CommonDefinitions.sendMessage(sender, stats);
 			return true;
 		} else {
 			return noRecordsMessage(inPlayer.getName());

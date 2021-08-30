@@ -319,6 +319,7 @@ public class CommonDefinitions {
 
 			/* Begin actual translation, set message to output */
 			String out = "";
+			CommonDefinitions.sendDebugMessage("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
 			if (WorldwideChat.getInstance().getTranslatorName().equals("Watson")) {
 				try {
 					WatsonTranslation watsonInstance = new WatsonTranslation(inMessage,

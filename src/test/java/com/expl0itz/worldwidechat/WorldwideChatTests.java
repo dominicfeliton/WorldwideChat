@@ -59,10 +59,14 @@ public class WorldwideChatTests {
 		MockBukkit.unmock();
 	}
 
-	public void resetWWC() {
+	public static void resetWWC() {
 		plugin.getActiveTranslators().clear();
 		plugin.getPlayerRecords().clear();
 		plugin.getCache().clear();
+		reloadWWC();
+	}
+	
+	public static void reloadWWC() {
 		plugin.cancelBackgroundTasks();
 		plugin.onEnable();
 	}
@@ -84,6 +88,8 @@ public class WorldwideChatTests {
 		testPlayerCommands.testTranslateCommandPlayerSourceTargetOther();
 		testPlayerCommands.testTranslateCommandPlayerTarget();
 		testPlayerCommands.testTranslateCommandPlayerTargetOther();
+		testPlayerCommands.testTranslateCommandSamePlayerTarget();
+		testPlayerCommands.testTranslateCommandSamePlayerSourceTarget();
 		testPlayerCommands.testGlobalTranslateCommandPlayerSourceTarget();
 		testPlayerCommands.testGlobalTranslateCommandPlayerTarget();
 		testPlayerCommands.testBookTranslateCommandPlayer(true);

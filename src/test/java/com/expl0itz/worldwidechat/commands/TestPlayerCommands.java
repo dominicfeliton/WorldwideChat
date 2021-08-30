@@ -50,6 +50,20 @@ public class TestPlayerCommands {
 		assertTrue(currTranslator.getOutLangCode().equals("fr"));
 	}
 
+	public void testTranslateCommandSamePlayerTarget() {
+		/* User runs /wwct player1 fr */
+		playerMock.performCommand("worldwidechat:wwct player1 fr");
+		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
+		assertTrue(currTranslator.getOutLangCode().equals("fr"));
+	}
+	
+	public void testTranslateCommandSamePlayerSourceTarget() {
+		/* User runs /wwct player1 fr es */
+		playerMock.performCommand("worldwidechat:wwct player1 fr es");
+		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
+		assertTrue(currTranslator.getInLangCode().equals("fr") && currTranslator.getOutLangCode().equals("es"));
+	}
+	
 	public void testGlobalTranslateCommandPlayerSourceTarget() {
 		/* User runs /wwcg en es */
 		playerMock.performCommand("worldwidechat:wwcg en es");

@@ -23,8 +23,8 @@ public class TempItemInventory implements InventoryProvider {
 	}
 
 	public static SmartInventory getTempItemInventory(ItemStack displayedItem) {
-		return SmartInventory.builder().id("tempItemMenu").provider(new TempItemInventory(displayedItem)).size(6, 9)
-				.manager(WorldwideChat.getInstance().getInventoryManager()).title(ChatColor.DARK_GREEN + CommonDefinitions.getMessage("wwcGUITempItem"))
+		return SmartInventory.builder().id("tempItemMenu").provider(new TempItemInventory(displayedItem)).size(5, 9)
+				.manager(WorldwideChat.getInstance().getInventoryManager()).title(ChatColor.RED + CommonDefinitions.getMessage("wwcGUITempItem"))
 				.build();
 	}
 
@@ -38,7 +38,7 @@ public class TempItemInventory implements InventoryProvider {
 		contents.fillBorders(ClickableItem.empty(customDefaultBorders));
 
 		/* Display item in center */
-		contents.set(3, 4, ClickableItem.empty(displayedItem));
+		contents.set(2, 4, ClickableItem.empty(displayedItem));
 	}
 
 	@Override

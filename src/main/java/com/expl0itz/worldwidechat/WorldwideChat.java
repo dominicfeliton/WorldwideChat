@@ -76,7 +76,7 @@ public class WorldwideChat extends JavaPlugin {
 
 	private int rateLimit = 0;
 	private int bStatsID = 10562;
-	private int currentMessagesConfigVersion = 8302021; //This is just MM-DD-YYYY
+	private String currentMessagesConfigVersion = "8302021-1"; //This is just MM-DD-YYYY-whatever
 	private int updateCheckerDelay = 86400;
 	private int syncUserDataDelay = 7200;
 	private int asyncTasksTimeoutSeconds = 7;
@@ -639,7 +639,7 @@ public class WorldwideChat extends JavaPlugin {
 		return translatorName;
 	}
 	
-	public int getCurrentMessagesConfigVersion() {
+	public String getCurrentMessagesConfigVersion() {
 		return currentMessagesConfigVersion;
 	}
 

@@ -3,6 +3,7 @@ package com.expl0itz.worldwidechat.util;
 import static org.junit.Assert.assertTrue;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.WorldwideChatTests;
 
 import be.seeseemelk.mockbukkit.ServerMock;
 import be.seeseemelk.mockbukkit.entity.PlayerMock;
@@ -52,6 +53,7 @@ public class TestTranslationUtils {
 						.getAttemptedTranslations() > 0);
 		playerMock.performCommand("worldwidechat:wwct en fr");
 		secondPlayerMock.performCommand("worldwidechat:wwct es en");
+		WorldwideChatTests.reloadWWC();
 		assertTrue(plugin.getActiveTranslator(playerMock.getUniqueId().toString()).getInLangCode().equals("en")
 				&& plugin.getActiveTranslator(playerMock.getUniqueId().toString()).getOutLangCode().equals("fr"));
 		assertTrue(plugin.getActiveTranslator(secondPlayerMock.getUniqueId().toString()).getInLangCode().equals("es")

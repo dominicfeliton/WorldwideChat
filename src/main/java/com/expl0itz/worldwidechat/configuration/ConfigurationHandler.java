@@ -128,10 +128,10 @@ public class ConfigurationHandler {
 		}
 		
 		/* Check if version value is out of date...*/
-		int currentMessagesConfigVersion = main.getCurrentMessagesConfigVersion();
+		String currentMessagesConfigVersion = main.getCurrentMessagesConfigVersion();
 		
 		HashMap<String, String> oldOverrides = new HashMap<String, String>();
-		if (messagesConfig.getInt("DoNotTouchThis.Version") != currentMessagesConfigVersion) {
+		if (!messagesConfig.getString("DoNotTouchThis.Version").equals(currentMessagesConfigVersion)) {
 			main.getLogger().warning("Upgrading out-of-date messages config!");
 			
 			/* Copy overrides section */
