@@ -100,7 +100,7 @@ public class ConfigurationHandler {
 		/* Init config file */
 		messagesFile = new File(main.getDataFolder(), "messages-" + main.getPluginLang() + ".yml");
 
-		/* Always save new lang files */
+		/* Save default messages file if it does not exist */
 		if (!messagesFile.exists()) {
 			main.saveResource("messages-" + main.getPluginLang() + ".yml", true);
 			
