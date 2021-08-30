@@ -27,8 +27,8 @@ public class YAMLTranslator {
 
 	public static void main(String[] args) {
 		// Creds
-		String amazonAccessKey = "AKIAUFYVBXQAWXB2K4EX";
-		String amazonSecretKey = "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";
+		String amazonAccessKey = "";
+		String amazonSecretKey = "";
 		String amazonRegion = "us-east-2";
 
 		// Other vars
@@ -65,6 +65,13 @@ public class YAMLTranslator {
 			supportedLangs[i] = temp.get(i);
 		}
 
+		/* Enter amazon creds */
+		System.out.println("Enter Amazon Access Key: ");
+		amazonAccessKey = scanner.nextLine().toString();
+		
+		System.out.println("Enter Amazon Secret Key");
+		amazonSecretKey = scanner.nextLine().toString();
+		
 		if (originalYAMLDir.equals("")) {
 			System.out.println("Enter parent directory of original YAML: (include ending /)");
 			originalYAMLDir = scanner.nextLine().toString();

@@ -134,17 +134,17 @@ public class WorldwideChat extends JavaPlugin {
 		if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) { // DeluxeChat is incompatible as of v1.3
 			// getServer().getPluginManager().registerEvents(new DeluxeChatListener(),
 			// this);
-			getLogger().warning(CommonDefinitions.getMessage("wwcDeluxeChatIncompatible", new String[0]));
+			getLogger().warning(CommonDefinitions.getMessage("wwcDeluxeChatIncompatible"));
 		}
 		getServer().getPluginManager().registerEvents(new ChatListener(), this);
 		getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
 		getServer().getPluginManager().registerEvents(new TranslateInGameListener(), this);
 		getServer().getPluginManager().registerEvents(new InventoryListener(), this);
 		getLogger().info(ChatColor.LIGHT_PURPLE
-				+ CommonDefinitions.getMessage("wwcListenersInitialized", new String[0]));
+				+ CommonDefinitions.getMessage("wwcListenersInitialized"));
 
 		// We made it!
-		getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcEnabled", new String[0])
+		getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcEnabled")
 				.replace("%i", pluginVersion));
 	}
 
@@ -216,7 +216,7 @@ public class WorldwideChat extends JavaPlugin {
 		if (command.getName().equalsIgnoreCase("wwc")) {
 			// WWC version
 			final TextComponent versionNotice = Component.text()
-					.append((Component.text().content(CommonDefinitions.getMessage("wwcVersion", new String[0])).color(NamedTextColor.RED))
+					.append((Component.text().content(CommonDefinitions.getMessage("wwcVersion")).color(NamedTextColor.RED))
 					.append((Component.text().content(" " + pluginVersion)).color(NamedTextColor.LIGHT_PURPLE))).build();
 			CommonDefinitions.sendMessage(sender, versionNotice);
 		} else if (command.getName().equalsIgnoreCase("wwcr") && !translatorName.equals("Starting")
@@ -227,14 +227,14 @@ public class WorldwideChat extends JavaPlugin {
 		} else if (command.getName().equalsIgnoreCase("wwcg") && hasValidTranslatorSettings(sender)) {
 			// Global translation
 			if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-				WWCGlobal wwcg = new WWCGlobal(sender, command, label, args);
+				WWCTranslate wwcg = new WWCGlobal(sender, command, label, args);
 				return wwcg.processCommand();
 			}
 		} else if (command.getName().equalsIgnoreCase("wwct") && hasValidTranslatorSettings(sender)) {
 			// Per player translation
 			if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
 				WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
-				return wwct.processCommand(false);
+				return wwct.processCommand();
 			}
 		} else if (command.getName().equalsIgnoreCase("wwctb") && hasValidTranslatorSettings(sender)) {
 			// Book translation
@@ -362,7 +362,7 @@ public class WorldwideChat extends JavaPlugin {
 			}
 		}
 		// Not running a supported version of Bukkit, Spigot, or Paper
-		getLogger().warning(CommonDefinitions.getMessage("wwcUnsupportedVersion", new String[0]));
+		getLogger().warning(CommonDefinitions.getMessage("wwcUnsupportedVersion"));
 		getLogger().warning(supportedVersions);
 	}
 
@@ -377,7 +377,7 @@ public class WorldwideChat extends JavaPlugin {
 		if (!(sender instanceof Player)) {
 			final TextComponent consoleNotice = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcNoConsole", new String[0]))
+							.content(CommonDefinitions.getMessage("wwcNoConsole"))
 							.color(NamedTextColor.RED))
 					.build();
 			CommonDefinitions.sendMessage(sender, consoleNotice);
@@ -390,7 +390,7 @@ public class WorldwideChat extends JavaPlugin {
 		if (getTranslatorName().equals("Starting")) {
 			final TextComponent notDone = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcNotDoneLoading", new String[0]))
+							.content(CommonDefinitions.getMessage("wwcNotDoneLoading"))
 							.color(NamedTextColor.YELLOW))
 					.build();
 			CommonDefinitions.sendMessage(sender, notDone);
@@ -398,7 +398,7 @@ public class WorldwideChat extends JavaPlugin {
 		} else if (getTranslatorName().equals("Invalid")) {
 			final TextComponent invalid = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcInvalidTranslator", new String[0]))
+							.content(CommonDefinitions.getMessage("wwcInvalidTranslator"))
 							.color(NamedTextColor.RED))
 					.build();
 			CommonDefinitions.sendMessage(sender, invalid);
@@ -508,7 +508,7 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public void setPrefixName(String i) {
-		if (!i.equals("WWC")) {
+		if (!i.equalsIgnoreCase("WWC")) {
 			pluginPrefix = LegacyComponentSerializer.legacyAmpersand().deserialize(i);
 		} else {
 			pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
@@ -583,7 +583,7 @@ public class WorldwideChat extends JavaPlugin {
 				}
 			}
 		}
-		return null;
+		return new ActiveTranslator("", "", "");
 	}
 
 	public PlayerRecord getPlayerRecord(String UUID, boolean createNewIfNotExisting) {
@@ -603,7 +603,7 @@ public class WorldwideChat extends JavaPlugin {
 			addPlayerRecord(newRecord);
 			return newRecord;
 		}
-		return null;
+		return new PlayerRecord("", "", -1, -1);
 	}
 
 	public List<ActiveTranslator> getActiveTranslators() {

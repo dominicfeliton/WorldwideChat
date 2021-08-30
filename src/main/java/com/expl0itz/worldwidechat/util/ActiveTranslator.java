@@ -16,11 +16,10 @@ public class ActiveTranslator {
 	private boolean translatingSign = false;
 	private boolean translatingItem = false;
 
-	public ActiveTranslator(String uuid, String langIn, String langOut, boolean hasBeenShownColorCodeWarning) {
+	public ActiveTranslator(String uuid, String langIn, String langOut) {
 		playerUUID = uuid;
 		inLangCode = langIn;
 		outLangCode = langOut;
-		this.hasBeenShownColorCodeWarning = hasBeenShownColorCodeWarning;
 	}
 
 	/* Setters */

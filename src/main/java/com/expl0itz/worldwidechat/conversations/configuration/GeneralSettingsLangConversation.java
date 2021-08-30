@@ -3,7 +3,6 @@ package com.expl0itz.worldwidechat.conversations.configuration;
 import java.io.IOException;
 import java.util.Arrays;
 
-import org.bukkit.command.CommandSender;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -13,7 +12,6 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationGeneralSettingsGUI;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -27,9 +25,7 @@ public class GeneralSettingsLangConversation extends StringPrompt {
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		((Player) context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig()
-				.getString("Messages.wwcConfigConversationLangInput").replace("%i", main.getPluginLang())
-				.replace("%o", Arrays.toString(CommonDefinitions.supportedPluginLangCodes));
+		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationLangInput", new String[] {main.getPluginLang(), Arrays.toString(CommonDefinitions.supportedPluginLangCodes)});
 	}
 
 	@Override
@@ -42,14 +38,11 @@ public class GeneralSettingsLangConversation extends StringPrompt {
 					try {
 						main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
 						final TextComponent successfulChange = Component.text()
-								.append(main.getPluginPrefix().asComponent())
 								.append(Component.text()
-										.content(main.getConfigManager().getMessagesConfig()
-												.getString("Messages.wwcConfigConversationLangSuccess"))
+										.content(CommonDefinitions.getMessage("wwcConfigConversationLangSuccess"))
 										.color(NamedTextColor.GREEN))
 								.build();
-						Audience adventureSender = main.adventure().sender((CommandSender) context.getForWhom());
-						adventureSender.sendMessage(successfulChange);
+						CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
 						main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
 					} catch (IOException e) {
 						e.printStackTrace();
@@ -66,12 +59,10 @@ public class GeneralSettingsLangConversation extends StringPrompt {
 		}
 		final TextComponent badChange = Component.text().append(main.getPluginPrefix().asComponent())
 				.append(Component.text()
-						.content(main.getConfigManager().getMessagesConfig()
-								.getString("Messages.wwcConfigConversationLangInvalid"))
+						.content(CommonDefinitions.getMessage("wwcConfigConversationLangInvalid"))
 						.color(NamedTextColor.RED))
 				.build();
-		Audience adventureSender = main.adventure().sender((CommandSender) context.getForWhom());
-		adventureSender.sendMessage(badChange);
+		CommonDefinitions.sendMessage((Player)context.getForWhom(), badChange);
 		return this;
 	}
 

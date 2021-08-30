@@ -2,7 +2,6 @@ package com.expl0itz.worldwidechat.conversations.configuration;
 
 import java.io.IOException;
 
-import org.bukkit.command.CommandSender;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.NumericPrompt;
 import org.bukkit.conversations.Prompt;
@@ -10,8 +9,8 @@ import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationGeneralSettingsGUI;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -25,9 +24,7 @@ public class GeneralSettingsUpdateCheckerConversation extends NumericPrompt {
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		((Player) context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + main.getConfigManager().getMessagesConfig()
-				.getString("Messages.wwcConfigConversationUpdateCheckerInput")
-				.replace("%i", "" + main.getUpdateCheckerDelay());
+		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationUpdateCheckerInput", new String[] {main.getUpdateCheckerDelay() + ""});
 	}
 
 	@Override
@@ -37,14 +34,12 @@ public class GeneralSettingsUpdateCheckerConversation extends NumericPrompt {
 			main.getConfigManager().getMainConfig().set("General.updateCheckerDelay", input.intValue());
 			try {
 				main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-				final TextComponent successfulChange = Component.text().append(main.getPluginPrefix().asComponent())
+				final TextComponent successfulChange = Component.text()
 						.append(Component.text()
-								.content(main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcConfigConversationUpdateCheckerSuccess"))
+								.content(CommonDefinitions.getMessage("wwcConfigConversationUpdateCheckerSuccess"))
 								.color(NamedTextColor.GREEN))
 						.build();
-				Audience adventureSender = main.adventure().sender((CommandSender) context.getForWhom());
-				adventureSender.sendMessage(successfulChange);
+				CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
 				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
 			} catch (IOException e) {
 				e.printStackTrace();

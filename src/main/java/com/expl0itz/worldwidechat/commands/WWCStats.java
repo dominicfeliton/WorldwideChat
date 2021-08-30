@@ -30,7 +30,7 @@ public class WWCStats extends BasicCommand {
 			// Not enough/too many args
 			final TextComponent invalidArgs = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwctInvalidArgs", new String[0]))
+							.content(CommonDefinitions.getMessage("wwctInvalidArgs"))
 							.color(NamedTextColor.RED))
 					.build();
 			CommonDefinitions.sendMessage(sender, invalidArgs);
@@ -45,9 +45,9 @@ public class WWCStats extends BasicCommand {
 		}
 
 		/* Get Target Stats */
-		if (args[0] instanceof String && args.length == 1) {
-			if (Bukkit.getServer().getPlayer(args[0]) != null) {
-				return translatorMessage(Bukkit.getServer().getPlayer(args[0]));
+		if (args.length == 1) {
+			if (Bukkit.getServer().getPlayerExact(args[0]) != null) {
+				return translatorMessage(Bukkit.getServer().getPlayerExact(args[0]));
 			} else {
 				// Target player not found
 				final TextComponent playerNotFound = Component.text()
@@ -65,11 +65,11 @@ public class WWCStats extends BasicCommand {
 		/* Init vars */
 		String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
 		
-		if (main.getPlayerRecord(inPlayer.getUniqueId().toString(), false) != null) {
+		if (!main.getPlayerRecord(inPlayer.getUniqueId().toString(), false).getUUID().equals("")) {
 			// Is on record; continue
 			PlayerRecord record = main
 					.getPlayerRecord(inPlayer.getUniqueId().toString(), false);
-			if (main.getActiveTranslator(inPlayer.getUniqueId().toString()) != null) {
+			if (!main.getActiveTranslator(inPlayer.getUniqueId().toString()).getUUID().equals("")) {
 				// Is currently an active translator
 				isActiveTranslator = ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713";
 			}

@@ -19,19 +19,20 @@ public class WWCReload extends BasicCommand {
 	}
 
 	public boolean processCommand() {
+		//TODO: Make the reload message actually indicative of when the reload finishes (add a new method with adifferent param in main)
 		// Reload!
 		try {
 			main.reload();
 			final TextComponent wwcrSuccess = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcrSuccess", new String[0]))
+							.content(CommonDefinitions.getMessage("wwcrSuccess"))
 							.color(NamedTextColor.GREEN))
 					.build();
 			CommonDefinitions.sendMessage(sender, wwcrSuccess);
 		} catch (Exception e) {
 			final TextComponent wwcrFail = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcrFail", new String[0]))
+							.content(CommonDefinitions.getMessage("wwcrFail"))
 							.color(NamedTextColor.RED))
 					.build();
 			CommonDefinitions.sendMessage(sender, wwcrFail);

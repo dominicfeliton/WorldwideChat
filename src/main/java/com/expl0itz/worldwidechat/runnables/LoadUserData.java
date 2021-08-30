@@ -69,16 +69,15 @@ public class LoadUserData implements Runnable {
 		CommonDefinitions.sendDebugMessage("Loading user data or /wwct...");
 		for (File eaFile : userDataFolder.listFiles()) {
 			FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
-			if ((currFileConfig.getString("inLang").equalsIgnoreCase("None") || CommonDefinitions
-					.getSupportedTranslatorLang(currFileConfig.getString("inLang")) != null
-					&& (CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("outLang")) != null))
+			if ((currFileConfig.getString("inLang").equalsIgnoreCase("None") || !CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("inLang")).getLangCode().equals("")
+					&& (!CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("outLang")).getLangCode().equals("")))
 					&& currFileConfig.isBoolean("signTranslation") && currFileConfig.isBoolean("bookTranslation")
 					&& currFileConfig.isBoolean("itemTranslation") && currFileConfig.isInt("rateLimit")
 					&& currFileConfig.isString("rateLimitPreviousRecordedTime")) { // If file has proper entries
 				ActiveTranslator currentTranslator = new ActiveTranslator(
 						eaFile.getName().substring(0, eaFile.getName().indexOf(".")), // add active translator to
 																						// arraylist
-						currFileConfig.getString("inLang"), currFileConfig.getString("outLang"), false);
+						currFileConfig.getString("inLang"), currFileConfig.getString("outLang"));
 				currentTranslator.setTranslatingSign(currFileConfig.getBoolean("signTranslation"));
 				currentTranslator.setTranslatingBook(currFileConfig.getBoolean("bookTranslation"));
 				currentTranslator.setTranslatingItem(currFileConfig.getBoolean("itemTranslation"));
@@ -101,10 +100,9 @@ public class LoadUserData implements Runnable {
 			}
 		}
 		if (invalidConfigs > 0) {
-			main.getLogger().warning(main.getConfigManager().getMessagesConfig()
-					.getString("Messages.wwcUserDataCorrupted").replace("%i", invalidConfigs + ""));
+			main.getLogger().warning(CommonDefinitions.getMessage("wwcUserDataCorrupted", new String[] {invalidConfigs + ""}));
 		}
 		main.getLogger().info(ChatColor.LIGHT_PURPLE
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcUserDataReloaded"));
+				+ CommonDefinitions.getMessage("wwcUserDataReloaded"));
 	}
 }

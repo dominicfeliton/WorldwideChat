@@ -14,8 +14,7 @@ public class SyncUserData implements Runnable {
 			CommonDefinitions.sendDebugMessage("Starting SyncUserData!!!");
 			main.getConfigManager().syncData();
 			final long duration = System.nanoTime() - startTime;
-			CommonDefinitions.sendDebugMessage(main.getConfigManager().getMessagesConfig()
-					.getString("Messages.wwcConfigSyncTime").replace("%i", duration + ""));
+			CommonDefinitions.sendDebugMessage(CommonDefinitions.getMessage("wwcConfigSyncTime", new String[] {duration + ""}));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

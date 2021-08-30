@@ -9,7 +9,6 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -27,14 +26,12 @@ public class ChatListener implements Listener {
 			if (!event.getMessage().equals(outMsg)) {
 				event.setMessage(outMsg);
 			} else {
-				final TextComponent chatTranslationFail = Component.text().append(main.getPluginPrefix().asComponent())
+				final TextComponent chatTranslationFail = Component.text()
 						.append(Component.text()
-								.content(main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcChatTranslationFail"))
+								.content(CommonDefinitions.getMessage("wwcChatTranslationFail"))
 								.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
 						.build();
-				Audience adventureSender = main.adventure().sender(event.getPlayer());
-				adventureSender.sendMessage(chatTranslationFail);
+				CommonDefinitions.sendMessage(event.getPlayer(), chatTranslationFail);
 			}
 		}
 	}

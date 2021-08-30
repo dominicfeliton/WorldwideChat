@@ -9,8 +9,8 @@ import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryType;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -28,14 +28,12 @@ public class InventoryListener implements Listener {
 				public void run() {
 					if (e.getPlayer().getOpenInventory().getType() != InventoryType.CHEST
 							&& !((Player) e.getPlayer()).isConversing()) {
-						final TextComponent reloadPlease = Component.text().append(main.getPluginPrefix().asComponent())
+						final TextComponent reloadPlease = Component.text()
 								.append(Component.text()
-										.content(main.getConfigManager().getMessagesConfig()
-												.getString("Messages.wwcConfigGUIChangesNotSaved"))
+										.content(CommonDefinitions.getMessage("wwcConfigGUIChangesNotSaved"))
 										.color(NamedTextColor.YELLOW))
 								.build();
-						Audience adventureSender = main.adventure().sender(e.getPlayer());
-						adventureSender.sendMessage(reloadPlease);
+						CommonDefinitions.sendMessage(e.getPlayer(), reloadPlease);
 						main.removePlayerUsingConfigurationGUI((Player) e.getPlayer());
 					}
 				}

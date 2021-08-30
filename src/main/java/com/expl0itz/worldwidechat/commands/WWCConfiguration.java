@@ -14,7 +14,7 @@ public class WWCConfiguration extends BasicCommand {
 	}
 
 	public boolean processCommand() {
-		Player currPlayer = Bukkit.getServer().getPlayer(sender.getName());
+		Player currPlayer = Bukkit.getServer().getPlayerExact(sender.getName());
 		ConfigurationGeneralSettingsGUI.generalSettings.open(currPlayer);
 		return true;
 	}

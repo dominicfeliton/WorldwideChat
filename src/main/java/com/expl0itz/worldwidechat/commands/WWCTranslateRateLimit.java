@@ -27,70 +27,68 @@ public class WWCTranslateRateLimit extends BasicCommand {
 			// Not enough/too many args
 			final TextComponent invalidArgs = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwctInvalidArgs", new String[0]))
+							.content(CommonDefinitions.getMessage("wwctInvalidArgs"))
 							.color(NamedTextColor.RED))
 					.build();
 			CommonDefinitions.sendMessage(sender, invalidArgs);
+			return false;
 		}
 
-		/* Disable existing rate limit */
-		if (args.length == 0 || (args.length == 1 && args[0].equals(sender.getName()))) {
-			if (main.getActiveTranslator(((Player) sender).getUniqueId().toString()) != null) {
-				return changeRateLimit((Player) sender, 0);
-			} else {
-				// If player is not translating:
-				notATranslatorMessage((Player)sender);
-			}
+		/* Disable existing personal rate limit */
+		if (args.length == 0 || (args.length == 1 && args[0].equalsIgnoreCase(sender.getName()))) {
+			return changeRateLimit(sender.getName(), 0);
 		}
 
 		/* Set personal rate limit */
 		if (args.length == 1 && args[0].matches("[0-9]+")) {
-			if (main.getActiveTranslator(((Player) sender).getUniqueId().toString()) != null) {
-				if (Integer.parseInt(args[0]) > 0) {
-				    return changeRateLimit((Player)sender, Integer.parseInt(args[0]));
-				} else {
-					/* If rate limit is not valid/user wants to disable it */
-					return changeRateLimit((Player)sender, 0);
-				}
+			if (Integer.parseInt(args[0]) > 0) {
+			    return changeRateLimit(sender.getName(), Integer.parseInt(args[0]));
 			} else {
-				// If player is not translating:
-				notATranslatorMessage((Player)sender);
+				/* If rate limit is not valid/user wants to disable it */
+				return changeRateLimit(sender.getName(), 0);
 			}
 		}
 
 		/* Disable another user's existing rate limit */
 		if (args.length == 1 && args[0] instanceof String) {
-			if (Bukkit.getPlayer(args[0]) != null
-					&& main.getActiveTranslator((Bukkit.getPlayer(args[0])).getUniqueId().toString()) != null) {
-				return changeRateLimit(Bukkit.getPlayer(args[0]), 0);
-			} else {
-				// Player not found
-				notAPlayerMessage((Player)sender, args[0]);
-			}
+			return changeRateLimit(args[0], 0);
 		}
 
 		/* Set rate limit for another user */
 		if (args.length == 2 && args[0] instanceof String && args[1].matches("[0-9]+")) {
-			if (Bukkit.getServer().getPlayer(args[0]) != null
-					&& main.getActiveTranslator(Bukkit.getPlayer(args[0]).getUniqueId().toString()) != null) {
-				if (Integer.parseInt(args[1]) > 0) {
-					/* If rate limit is valid */
-					return changeRateLimit(Bukkit.getPlayer(args[0]), Integer.parseInt(args[1]));
-				} else {
-					/* If rate limit is not valid/user wants to disable it */
-					return changeRateLimit(Bukkit.getPlayer(args[0]), 0);
-				}
+			if (Integer.parseInt(args[1]) > 0) {
+				/* If rate limit is valid */
+				return changeRateLimit(args[0], Integer.parseInt(args[1]));
 			} else {
-				// If target is not a string, active translator, or is themselves:
-				notAPlayerMessage((Player)sender, args[0]);
+				/* If rate limit is not valid/user wants to disable it */
+				return changeRateLimit(args[0], 0);
 			}
 		}
 		return false;
 	}
 	
-	private boolean changeRateLimit(Player inPlayer, int newLimit) {
+	private boolean changeRateLimit(String inName, int newLimit) {
+		Player inPlayer = Bukkit.getPlayerExact(inName);
+		if (inPlayer == null) {
+			final TextComponent notAPlayer = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwctrlPlayerNotFound", new String[] {inName}))
+							.color(NamedTextColor.RED))
+					.build();
+			CommonDefinitions.sendMessage(inPlayer, notAPlayer);
+			return false;
+		}
 		ActiveTranslator currTranslator = main.getActiveTranslator((inPlayer).getUniqueId().toString());
-		if (inPlayer.getName().equals(sender.getName())) {
+		if (currTranslator.getUUID().equals("")) {
+			final TextComponent notAPlayer = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwctrlNotATranslator"))
+							.color(NamedTextColor.RED))
+					.build();
+			CommonDefinitions.sendMessage(inPlayer, notAPlayer);
+			return false;
+		}
+		if (inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 			/* If we are changing our own rate limit */
 			if (newLimit > 0) {
 				/* Enable rate limit */
@@ -102,7 +100,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 					/* Rate limit already disabled */
 					final TextComponent rateLimitAlreadyOff = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctrlRateLimitAlreadyOffSender", new String[0]))
+									.content(CommonDefinitions.getMessage("wwctrlRateLimitAlreadyOffSender"))
 									.color(NamedTextColor.YELLOW))
 							.build();
 					CommonDefinitions.sendMessage(inPlayer, rateLimitAlreadyOff);
@@ -151,14 +149,14 @@ public class WWCTranslateRateLimit extends BasicCommand {
 	private boolean disableRateLimitMessage(Player inPlayer) {
 		final TextComponent rateLimitOffReceiver = Component.text()
 				.append(Component.text()
-						.content(CommonDefinitions.getMessage("wwctrlRateLimitOffSender", new String[0]))
+						.content(CommonDefinitions.getMessage("wwctrlRateLimitOffSender"))
 						.color(NamedTextColor.LIGHT_PURPLE))
 				.build();
 		CommonDefinitions.sendMessage(inPlayer, rateLimitOffReceiver);
 		return true;
 	}
 	
-	public boolean enableRateLimitMessage(Player inPlayer, int limit) {
+	private boolean enableRateLimitMessage(Player inPlayer, int limit) {
 		final TextComponent rateLimitSet = Component.text()
 				.append(Component.text()
 						.content(CommonDefinitions.getMessage("wwctrlRateLimitSetSender", new String[] {limit + ""}))
@@ -166,24 +164,6 @@ public class WWCTranslateRateLimit extends BasicCommand {
 				.build();
 		CommonDefinitions.sendMessage(inPlayer, rateLimitSet);
 		return true;
-	}
-	
-	public void notATranslatorMessage(Player inPlayer) {
-		final TextComponent notAPlayer = Component.text()
-				.append(Component.text()
-						.content(CommonDefinitions.getMessage("wwctrlNotATranslator", new String[0]))
-						.color(NamedTextColor.RED))
-				.build();
-		CommonDefinitions.sendMessage(inPlayer, notAPlayer);
-	}
-	
-	public void notAPlayerMessage(Player inPlayer, String inName) {
-		final TextComponent notAPlayer = Component.text()
-				.append(Component.text()
-						.content(CommonDefinitions.getMessage("wwctrlPlayerNotFound", new String[] {inName}))
-						.color(NamedTextColor.RED))
-				.build();
-		CommonDefinitions.sendMessage(inPlayer, notAPlayer);
 	}
 	
 }

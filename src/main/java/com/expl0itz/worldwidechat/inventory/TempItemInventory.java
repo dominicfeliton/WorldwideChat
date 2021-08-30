@@ -6,6 +6,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
@@ -23,8 +24,7 @@ public class TempItemInventory implements InventoryProvider {
 
 	public static SmartInventory getTempItemInventory(ItemStack displayedItem) {
 		return SmartInventory.builder().id("tempItemMenu").provider(new TempItemInventory(displayedItem)).size(6, 9)
-				.manager(WorldwideChat.getInstance().getInventoryManager()).title(ChatColor.DARK_GREEN + WorldwideChat
-						.getInstance().getConfigManager().getMessagesConfig().getString("Messages.wwcGUITempItem"))
+				.manager(WorldwideChat.getInstance().getInventoryManager()).title(ChatColor.DARK_GREEN + CommonDefinitions.getMessage("wwcGUITempItem"))
 				.build();
 	}
 

@@ -88,8 +88,9 @@ public class TestPlayerCommands {
 	
 	public void testBookTranslateCommandPlayerOtherButSamePlayer(boolean toggleStatus) {
 		/* User runs /wwctb player */
-		playerMock.performCommand("worldwidechat:wwctb player");
+		playerMock.performCommand("worldwidechat:wwctb player1");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
+		plugin.getLogger().info("" + currTranslator.getTranslatingBook());
 		if (toggleStatus) {
 			assertTrue(currTranslator.getTranslatingBook());
 		} else {
@@ -121,7 +122,7 @@ public class TestPlayerCommands {
 	
 	public void testSignTranslateCommandPlayerOtherButSamePlayer(boolean toggleStatus) {
 		/* User runs /wwcts player */
-		playerMock.performCommand("worldwidechat:wwcts player");
+		playerMock.performCommand("worldwidechat:wwcts player1");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
 		if (toggleStatus) {
 			assertTrue(currTranslator.getTranslatingSign());
@@ -154,7 +155,7 @@ public class TestPlayerCommands {
 	
 	public void testItemTranslateCommandPlayerOtherButSamePlayer(boolean toggleStatus) {
 		/* User runs /wwcti player */
-		playerMock.performCommand("worldwidechat:wwcti player");
+		playerMock.performCommand("worldwidechat:wwcti player1");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
 		if (toggleStatus) {
 			assertTrue(currTranslator.getTranslatingItem());
@@ -191,10 +192,10 @@ public class TestPlayerCommands {
 		/* User runs /wwctrl player */
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
 		if (isEnabled) {
-			playerMock.performCommand("worldwidechat:wwctrl player 5");
+			playerMock.performCommand("worldwidechat:wwctrl player1 5");
 			assertTrue(currTranslator.getRateLimit() == 5);
 		} else {
-			playerMock.performCommand("worldwidechat:wwctrl player");
+			playerMock.performCommand("worldwidechat:wwctrl player1");
 			assertTrue(currTranslator.getRateLimit() == 0);
 		}
 	}

@@ -2,7 +2,6 @@ package com.expl0itz.worldwidechat.inventory.configuration;
 
 import java.io.IOException;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.conversations.ConversationFactory;
@@ -16,12 +15,12 @@ import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsLan
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsPrefixConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsSyncUserDataConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsUpdateCheckerConversation;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -33,8 +32,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 	public static final SmartInventory generalSettings = SmartInventory.builder().id("generalSettingsMenu")
 			.provider(new ConfigurationGeneralSettingsGUI()).size(3, 9)
 			.manager(WorldwideChat.getInstance().getInventoryManager())
-			.title(ChatColor.BLUE + WorldwideChat.getInstance().getConfigManager().getMessagesConfig()
-					.getString("Messages.wwcConfigGUIGeneralSettings"))
+			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIGeneralSettings"))
 			.build();
 
 	@Override
@@ -52,7 +50,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 		ItemStack prefixButton = new ItemStack(Material.NAME_TAG);
 		ItemMeta prefixMeta = prefixButton.getItemMeta();
 		prefixMeta.setDisplayName(ChatColor.GOLD
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIPrefixButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUIPrefixButton"));
 		prefixButton.setItemMeta(prefixMeta);
 		contents.set(1, 1, ClickableItem.of(prefixButton, e -> {
 			prefixConvo.buildConversation(player).begin();
@@ -67,7 +65,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 		ItemStack langButton = new ItemStack(Material.NAME_TAG);
 		ItemMeta langMeta = langButton.getItemMeta();
 		langMeta.setDisplayName(ChatColor.GOLD
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUILangButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUILangButton"));
 		langButton.setItemMeta(langMeta);
 		contents.set(1, 3, ClickableItem.of(langButton, e -> {
 			langConvo.buildConversation(player).begin();
@@ -79,7 +77,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 		ItemStack updateCheckerButton = new ItemStack(Material.NAME_TAG);
 		ItemMeta updateCheckerMeta = updateCheckerButton.getItemMeta();
 		updateCheckerMeta.setDisplayName(ChatColor.GOLD
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIUpdateCheckerButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUIUpdateCheckerButton"));
 		updateCheckerButton.setItemMeta(updateCheckerMeta);
 		contents.set(1, 4, ClickableItem.of(updateCheckerButton, e -> {
 			updateCheckerConvo.buildConversation(player).begin();
@@ -91,7 +89,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 		ItemStack syncUserDataButton = new ItemStack(Material.NAME_TAG);
 		ItemMeta syncUserDataMeta = syncUserDataButton.getItemMeta();
 		syncUserDataMeta.setDisplayName(ChatColor.GOLD
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUISyncUserDataButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUISyncUserDataButton"));
 		syncUserDataButton.setItemMeta(syncUserDataMeta);
 		contents.set(1, 5, ClickableItem.of(syncUserDataButton, e -> {
 			syncUserDataConvo.buildConversation(player).begin();
@@ -101,25 +99,20 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 		ItemStack quitButton = new ItemStack(Material.BARRIER);
 		ItemMeta quitMeta = quitButton.getItemMeta();
 		quitMeta.setDisplayName(ChatColor.RED
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIQuitButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
 		quitButton.setItemMeta(quitMeta);
 		WWCReload rel = new WWCReload(player, null, null, null);
 		contents.set(2, 4, ClickableItem.of(quitButton, e -> {
 			main.removePlayerUsingConfigurationGUI(player);
 			player.closeInventory();
-			Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
-				@Override
-				public void run() {
-					rel.processCommand();
-				}
-			});
+			rel.processCommand();
 		}));
 
 		/* Bottom Right Option: Next Page */
 		ItemStack nextPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
 		ItemMeta nextPageMeta = nextPageButton.getItemMeta();
 		nextPageMeta.setDisplayName(ChatColor.GREEN
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUINextPageButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));
 		nextPageButton.setItemMeta(nextPageMeta);
 		contents.set(2, 7,
 				ClickableItem.of(nextPageButton, e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
@@ -139,7 +132,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 		}
 		ItemMeta bStatsMeta = bStatsButton.getItemMeta();
 		bStatsMeta.setDisplayName(ChatColor.GOLD
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIbStatsButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUIbStatsButton"));
 		bStatsButton.setItemMeta(bStatsMeta);
 		contents.set(1, 2, ClickableItem.of(bStatsButton, e -> {
 			main.addPlayerUsingConfigurationGUI(player);
@@ -148,14 +141,12 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			main.setbStats(!main.getbStats());
 			try {
 				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-				final TextComponent successfulChange = Component.text().append(main.getPluginPrefix().asComponent())
+				final TextComponent successfulChange = Component.text()
 						.append(Component.text()
-								.content(main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcConfigConversationbStatsSuccess"))
+								.content(CommonDefinitions.getMessage("wwcConfigConversationbStatsSuccess"))
 								.color(NamedTextColor.GREEN))
 						.build();
-				Audience adventureSender = main.adventure().sender(player);
-				adventureSender.sendMessage(successfulChange);
+				CommonDefinitions.sendMessage(player, successfulChange);
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}

@@ -2,7 +2,6 @@ package com.expl0itz.worldwidechat.conversations.configuration;
 
 import java.io.IOException;
 
-import org.bukkit.command.CommandSender;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -10,8 +9,8 @@ import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationGeneralSettingsGUI;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -27,8 +26,7 @@ public class GeneralSettingsPrefixConversation extends StringPrompt {
 		/* Close any open inventories */
 		((Player) context.getForWhom()).closeInventory();
 		return ChatColor.AQUA
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigConversationPrefixInput")
-						.replace("%i", LegacyComponentSerializer.legacyAmpersand().serialize(main.getPluginPrefix()));
+				+ CommonDefinitions.getMessage("wwcConfigConversationPrefixInput", new String[] {LegacyComponentSerializer.legacyAmpersand().serialize(main.getPluginPrefix())});
 	}
 
 	@Override
@@ -39,14 +37,12 @@ public class GeneralSettingsPrefixConversation extends StringPrompt {
 			try {
 				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
 				main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-				final TextComponent successfulChange = Component.text().append(main.getPluginPrefix().asComponent())
+				final TextComponent successfulChange = Component.text()
 						.append(Component.text()
-								.content(main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcConfigConversationPrefixSuccess"))
+								.content(CommonDefinitions.getMessage("wwcConfigConversationPrefixSuccess"))
 								.color(NamedTextColor.GREEN))
 						.build();
-				Audience adventureSender = main.adventure().sender((CommandSender) context.getForWhom());
-				adventureSender.sendMessage(successfulChange);
+				CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

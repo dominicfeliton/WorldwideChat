@@ -30,29 +30,27 @@ public class UpdateChecker implements Runnable {
 			latest = main.getPluginVersion() + ""; // Just set latest to the current plugin version, since we can't find
 													// a newer one
 			main.getLogger().warning(
-					main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterConnectionFailed"));
+					CommonDefinitions.getMessage("wwcUpdaterConnectionFailed"));
 		} catch (IOException e) {
 			latest = main.getPluginVersion() + "";
 			main.getLogger()
-					.warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterParserFailed"));
+					.warning(CommonDefinitions.getMessage("wwcUpdaterParserFailed"));
 		}
 
 		try {
 			if (main.getPluginVersion().equals(latest)) {
 				main.getLogger().info(ChatColor.LIGHT_PURPLE
-						+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterUpToDate"));
+						+ CommonDefinitions.getMessage("wwcUpdaterUpToDate"));
 			} else if (new ComparableVersion(main.getPluginVersion()).compareTo(new ComparableVersion(latest)) > 0) {
-				main.getLogger().warning(main.getConfigManager().getMessagesConfig()
-						.getString("Messages.wwcUpdaterFutureDate").replace("%i", "" + Double.parseDouble(latest)));
+				main.getLogger().warning(CommonDefinitions.getMessage("wwcUpdaterFutureDate", new String[] {latest}));
 			} else {
-				main.getLogger().warning(main.getConfigManager().getMessagesConfig()
-						.getString("Messages.wwcUpdaterOutOfDate").replace("%i", "" + Double.parseDouble(latest)));
+				main.getLogger().warning(CommonDefinitions.getMessage("wwcUpdaterOutOfDate", new String[] {latest}));
 				main.getLogger().warning("https://github.com/3xpl0itz/WorldwideChat/releases");
 				main.setOutOfDate(true);
 			}
 		} catch (Exception e) {
 			main.getLogger()
-					.warning(main.getConfigManager().getMessagesConfig().getString("Messages.wwcUpdaterFailedGeneric"));
+					.warning(CommonDefinitions.getMessage("wwcUpdaterFailedGeneric"));
 		}
 	}
 

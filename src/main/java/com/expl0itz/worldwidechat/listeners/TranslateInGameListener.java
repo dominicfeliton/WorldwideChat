@@ -31,7 +31,7 @@ public class TranslateInGameListener implements Listener {
 	/* Book Translation */
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onBookTranslate(PlayerInteractEvent event) {
-		if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null
+		if (!main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("")
 				&& main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingBook()
 				&& event.getHand() != null && event.getItem() != null
 				&& Material.WRITTEN_BOOK == event.getItem().getType()
@@ -50,35 +50,29 @@ public class TranslateInGameListener implements Listener {
 						boolean sameResult = false;
 
 						/* Send message */
-						final TextComponent bookStart = Component.text().append(main.getPluginPrefix().asComponent())
+						final TextComponent bookStart = Component.text()
 								.append(Component.text()
-										.content(main.getConfigManager().getMessagesConfig()
-												.getString("Messages.wwcBookTranslateStart"))
+										.content(CommonDefinitions.getMessage("wwcBookTranslateStart"))
 										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
 								.build();
-						main.adventure().sender(event.getPlayer()).sendMessage(bookStart);
+						CommonDefinitions.sendMessage(event.getPlayer(), bookStart);
 
 						/* Translate title */
 						outTitle = CommonDefinitions.translateText(meta.getTitle(), event.getPlayer());
 						if (!outTitle.equals(meta.getTitle())) {
 							final TextComponent bookTitleSuccess = Component.text()
-									.append(main.getPluginPrefix().asComponent())
 									.append(Component.text()
-											.content(main.getConfigManager().getMessagesConfig()
-													.getString("Messages.wwcBookTranslateTitleSuccess")
-													.replace("%i", meta.getTitle()))
+											.content(CommonDefinitions.getMessage("wwcBookTranslateTitleSuccess", new String[] {meta.getTitle()}))
 											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
 									.build();
-							main.adventure().sender(event.getPlayer()).sendMessage(bookTitleSuccess);
+							CommonDefinitions.sendMessage(event.getPlayer(), bookTitleSuccess);
 						} else {
 							final TextComponent bookTitleFail = Component.text()
-									.append(main.getPluginPrefix().asComponent())
 									.append(Component.text()
-											.content(main.getConfigManager().getMessagesConfig()
-													.getString("Messages.wwcBookTranslateTitleFail"))
+											.content(CommonDefinitions.getMessage("wwcBookTranslateTitleFail"))
 											.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
 									.build();
-							main.adventure().sender(event.getPlayer()).sendMessage(bookTitleFail);
+							CommonDefinitions.sendMessage(event.getPlayer(), bookTitleFail);
 						}
 
 						/* Translate pages */
@@ -86,31 +80,27 @@ public class TranslateInGameListener implements Listener {
 							String out = CommonDefinitions.translateText(eaPage, event.getPlayer());
 							if (out.equals("") || out.equalsIgnoreCase(eaPage)) {
 								sameResult = true;
-								out = main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwctbTranslatePageFail").replace("%i", eaPage);
+								out = CommonDefinitions.getMessage("Messages.wwctbTranslatePageFail", new String[] {eaPage});
 							}
 							translatedPages.add(out);
 						}
 
 						if (!sameResult && currentBook != null) {
 							/* Set completed message */
-							final TextComponent bookDone = Component.text().append(main.getPluginPrefix().asComponent())
+							final TextComponent bookDone = Component.text()
 									.append(Component.text()
-											.content(main.getConfigManager().getMessagesConfig()
-													.getString("Messages.wwcBookDone"))
+											.content(CommonDefinitions.getMessage("wwcBookDone"))
 											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
 									.build();
-							main.adventure().sender(event.getPlayer()).sendMessage(bookDone);
+							CommonDefinitions.sendMessage(event.getPlayer(), bookDone);
 						} else if (sameResult) {
 							/* If we are here, one or more translations was unsuccessful */
 							final TextComponent translationNoticeMsg = Component.text()
-									.append(main.getPluginPrefix().asComponent())
 									.append(Component.text()
-											.content(main.getConfigManager().getMessagesConfig()
-													.getString("Messages.wwcBookTranslationFail"))
+											.content(CommonDefinitions.getMessage("wwcBookTranslationFail"))
 											.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
 									.build();
-							main.adventure().sender(event.getPlayer()).sendMessage(translationNoticeMsg);
+							CommonDefinitions.sendMessage(event.getPlayer(), translationNoticeMsg);
 						}
 
 						/* Create the modified book */
@@ -131,13 +121,12 @@ public class TranslateInGameListener implements Listener {
 					}
 				}.runTaskAsynchronously(main);
 			} catch (Exception e) {
-				final TextComponent translationFailMsg = Component.text().append(main.getPluginPrefix().asComponent())
+				final TextComponent translationFailMsg = Component.text()
 						.append(Component.text()
-								.content(main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcBookTranslationFailCatastrophic"))
+								.content(CommonDefinitions.getMessage("wwcBookTranslationFailCatastrophic"))
 								.color(NamedTextColor.RED).decoration(TextDecoration.ITALIC, true))
 						.build();
-				main.adventure().sender(event.getPlayer()).sendMessage(translationFailMsg);
+				CommonDefinitions.sendMessage(event.getPlayer(), translationFailMsg);
 			}
 		}
 	}
@@ -145,7 +134,7 @@ public class TranslateInGameListener implements Listener {
 	/* Sign Translation */
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onSignTranslate(PlayerInteractEvent event) {
-		if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null
+		if (!main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("")
 				&& main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingSign()
 				&& event.getClickedBlock() != null) {
 			if ((event.getClickedBlock().getType().name().contains("SIGN")
@@ -165,13 +154,11 @@ public class TranslateInGameListener implements Listener {
 
 							/* Send message */
 							final TextComponent signStart = Component.text()
-									.append(main.getPluginPrefix().asComponent())
 									.append(Component.text()
-											.content(main.getConfigManager().getMessagesConfig()
-													.getString("Messages.wwcSignTranslateStart"))
+											.content(CommonDefinitions.getMessage("wwcSignTranslateStart"))
 											.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
 									.build();
-							main.adventure().sender(event.getPlayer()).sendMessage(signStart);
+							CommonDefinitions.sendMessage(event.getPlayer(), signStart);
 
 							/* Translate each line of sign */
 							for (int i = 0; i < changedSignText.length; i++) {
@@ -192,23 +179,19 @@ public class TranslateInGameListener implements Listener {
 							if (!textLimit && !oneOrMoreLinesFailed && currentSign.getLocation() != null) {
 								/* Set completed message */
 								final TextComponent signDone = Component.text()
-										.append(main.getPluginPrefix().asComponent())
 										.append(Component.text()
-												.content(main.getConfigManager().getMessagesConfig()
-														.getString("Messages.wwcSignDone"))
+												.content(CommonDefinitions.getMessage("wwcSignDone"))
 												.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
 										.build();
-								main.adventure().sender(event.getPlayer()).sendMessage(signDone);
+								CommonDefinitions.sendMessage(event.getPlayer(), signDone);
 							} else if (oneOrMoreLinesFailed && !textLimit && currentSign.getLocation() != null) {
 								/* Even though one or more lines failed, set completed message */
 								final TextComponent signDone = Component.text()
-										.append(main.getPluginPrefix().asComponent())
 										.append(Component.text()
-												.content(main.getConfigManager().getMessagesConfig()
-														.getString("Messages.wwcSignTranslationFail"))
+												.content(CommonDefinitions.getMessage("wwcSignTranslationFail"))
 												.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
 										.build();
-								main.adventure().sender(event.getPlayer()).sendMessage(signDone);
+								CommonDefinitions.sendMessage(event.getPlayer(), signDone);
 							} else {
 								/*
 								 * Format sign for chat, if translation exceeds 15 chars or sign was already
@@ -222,10 +205,8 @@ public class TranslateInGameListener implements Listener {
 
 								/* If we are here, sign is too long or deleted msg */
 								final TextComponent translationNoticeMsg = Component.text()
-										.append(main.getPluginPrefix().asComponent())
 										.append(Component.text()
-												.content(main.getConfigManager().getMessagesConfig()
-														.getString("Messages.wwcSignDeletedOrTooLong"))
+												.content(CommonDefinitions.getMessage("wwcSignDeletedOrTooLong"))
 												.color(NamedTextColor.LIGHT_PURPLE)
 												.decoration(TextDecoration.ITALIC, true))
 										.append(Component.text().content("\n" + "---------------")
@@ -235,7 +216,7 @@ public class TranslateInGameListener implements Listener {
 														.color(NamedTextColor.GOLD)))
 										.build();
 
-								main.adventure().sender(event.getPlayer()).sendMessage(translationNoticeMsg);
+								CommonDefinitions.sendMessage(event.getPlayer(), translationNoticeMsg);
 								this.cancel();
 								return;
 							}
@@ -249,13 +230,11 @@ public class TranslateInGameListener implements Listener {
 					}.runTaskAsynchronously(main);
 				} catch (Exception e) {
 					final TextComponent translationFailMsg = Component.text()
-							.append(main.getPluginPrefix().asComponent())
 							.append(Component.text()
-									.content(main.getConfigManager().getMessagesConfig()
-											.getString("Messages.wwcSignTranslationFailCatastrophic"))
+									.content(CommonDefinitions.getMessage("wwcSignTranslationFailCatastrophic"))
 									.color(NamedTextColor.RED).decoration(TextDecoration.ITALIC, true))
 							.build();
-					main.adventure().sender(event.getPlayer()).sendMessage(translationFailMsg);
+					CommonDefinitions.sendMessage(event.getPlayer(), translationFailMsg);
 				}
 			}
 		}
@@ -264,7 +243,7 @@ public class TranslateInGameListener implements Listener {
 	/* Item Name + Lore Translation */
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onItemTranslateRequest(PlayerInteractEvent event) {
-		if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()) != null
+		if (!main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("")
 				&& main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingItem()
 				&& event.getPlayer().getInventory() != null
 				&& event.getPlayer().getInventory().getItemInMainHand() != null
@@ -286,13 +265,12 @@ public class TranslateInGameListener implements Listener {
 						boolean sameResult = false;
 
 						/* Send message */
-						final TextComponent itemStart = Component.text().append(main.getPluginPrefix().asComponent())
+						final TextComponent itemStart = Component.text()
 								.append(Component.text()
-										.content(main.getConfigManager().getMessagesConfig()
-												.getString("Messages.wwcItemTranslateStart"))
+										.content(CommonDefinitions.getMessage("wwcItemTranslateStart"))
 										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
 								.build();
-						main.adventure().sender(event.getPlayer()).sendMessage(itemStart);
+						CommonDefinitions.sendMessage(event.getPlayer(), itemStart);
 
 						/* Translate item title */
 						if (meta.hasDisplayName()) {
@@ -300,33 +278,27 @@ public class TranslateInGameListener implements Listener {
 							if (!translatedName.equalsIgnoreCase(meta.getDisplayName())) {
 								/* Set completed message */
 								final TextComponent itemTitleDone = Component.text()
-										.append(main.getPluginPrefix().asComponent())
 										.append(Component.text()
-												.content(main.getConfigManager().getMessagesConfig()
-														.getString("Messages.wwcItemTranslateTitleDone"))
+												.content(CommonDefinitions.getMessage("wwcItemTranslateTitleDone"))
 												.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
 										.build();
-								main.adventure().sender(event.getPlayer()).sendMessage(itemTitleDone);
+								CommonDefinitions.sendMessage(event.getPlayer(), itemTitleDone);
 							} else {
 								translatedName = "";
 								final TextComponent itemTitleFail = Component.text()
-										.append(main.getPluginPrefix().asComponent())
 										.append(Component.text()
-												.content(main.getConfigManager().getMessagesConfig()
-														.getString("Messages.wwcItemTranslateTitleFail"))
+												.content(CommonDefinitions.getMessage("wwcItemTranslateTitleFail"))
 												.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
 										.build();
-								main.adventure().sender(event.getPlayer()).sendMessage(itemTitleFail);
+								CommonDefinitions.sendMessage(event.getPlayer(), itemTitleFail);
 							}
 						} else {
 							final TextComponent itemStockTitleFail = Component.text()
-									.append(main.getPluginPrefix().asComponent())
 									.append(Component.text()
-											.content(main.getConfigManager().getMessagesConfig()
-													.getString("Messages.wwcItemTranslateTitleStock"))
+											.content(CommonDefinitions.getMessage("wwcItemTranslateTitleStock"))
 											.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
 									.build();
-							main.adventure().sender(event.getPlayer()).sendMessage(itemStockTitleFail);
+							CommonDefinitions.sendMessage(event.getPlayer(), itemStockTitleFail);
 							// We cannot translate stock items to a custom name, as all item enums are in
 							// English.
 							// If the user is using another language in their respective Minecraft client,
@@ -338,13 +310,11 @@ public class TranslateInGameListener implements Listener {
 						/* Translate item lore */
 						if (meta.hasLore()) {
 							final TextComponent itemLoreStart = Component.text()
-									.append(main.getPluginPrefix().asComponent())
 									.append(Component.text()
-											.content(main.getConfigManager().getMessagesConfig()
-													.getString("Messages.wwcItemTranslateLoreStart"))
+											.content(CommonDefinitions.getMessage("wwcItemTranslateLoreStart"))
 											.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
 									.build();
-							main.adventure().sender(event.getPlayer()).sendMessage(itemLoreStart);
+							CommonDefinitions.sendMessage(event.getPlayer(), itemLoreStart);
 							outLore = new ArrayList<String>();
 							for (String eaLine : itemLore) {
 								String translatedLine = CommonDefinitions.translateText(eaLine, event.getPlayer());
@@ -356,22 +326,18 @@ public class TranslateInGameListener implements Listener {
 							if (!sameResult) {
 								/* Set completed message */
 								final TextComponent itemLoreDone = Component.text()
-										.append(main.getPluginPrefix().asComponent())
 										.append(Component.text()
-												.content(main.getConfigManager().getMessagesConfig()
-														.getString("Messages.wwcItemTranslateLoreDone"))
+												.content(CommonDefinitions.getMessage("wwcItemTranslateLoreDone"))
 												.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
 										.build();
-								main.adventure().sender(event.getPlayer()).sendMessage(itemLoreDone);
+								CommonDefinitions.sendMessage(event.getPlayer(), itemLoreDone);
 							} else {
 								final TextComponent itemLoreFail = Component.text()
-										.append(main.getPluginPrefix().asComponent())
 										.append(Component.text()
-												.content(main.getConfigManager().getMessagesConfig()
-														.getString("Messages.wwcItemTranslateLoreFail"))
+												.content(CommonDefinitions.getMessage("wwcItemTranslateLoreFail"))
 												.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
 										.build();
-								main.adventure().sender(event.getPlayer()).sendMessage(itemLoreFail);
+								CommonDefinitions.sendMessage(event.getPlayer(), itemLoreFail);
 							}
 						}
 
@@ -394,14 +360,12 @@ public class TranslateInGameListener implements Listener {
 					}
 				}.runTaskAsynchronously(main);
 			} catch (Exception e) {
-				final TextComponent translationFailMsg = Component.text().append(main.getPluginPrefix().asComponent())
+				final TextComponent translationFailMsg = Component.text()
 						.append(Component.text()
-								.content(main.getConfigManager().getMessagesConfig()
-										.getString("Messages.wwcItemTranslationFailCatastrophic")
-										.replace("%i", main.getTranslatorName()))
+								.content(CommonDefinitions.getMessage("wwcItemTranslationFailCatastrophic", new String[] {main.getTranslatorName()}))
 								.color(NamedTextColor.RED).decoration(TextDecoration.ITALIC, true))
 						.build();
-				main.adventure().sender(event.getPlayer()).sendMessage(translationFailMsg);
+				CommonDefinitions.sendMessage(event.getPlayer(), translationFailMsg);
 			}
 		}
 	}

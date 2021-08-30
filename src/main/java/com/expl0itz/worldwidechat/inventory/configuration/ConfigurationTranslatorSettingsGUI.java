@@ -1,6 +1,5 @@
 package com.expl0itz.worldwidechat.inventory.configuration;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.conversations.ConversationFactory;
@@ -12,6 +11,7 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsGlobalRateConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsTranslationCacheConversation;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
@@ -25,8 +25,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 	public static final SmartInventory translatorSettings = SmartInventory.builder().id("translatorSettingsMenu")
 			.provider(new ConfigurationTranslatorSettingsGUI()).size(3, 9)
 			.manager(WorldwideChat.getInstance().getInventoryManager())
-			.title(ChatColor.BLUE + WorldwideChat.getInstance().getConfigManager().getMessagesConfig()
-					.getString("Messages.wwcConfigGUITranslatorSettings"))
+			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUITranslatorSettings"))
 			.build();
 
 	@Override
@@ -53,7 +52,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		ItemStack translatorCacheButton = new ItemStack(Material.NAME_TAG);
 		ItemMeta translatorCacheMeta = translatorCacheButton.getItemMeta();
 		translatorCacheMeta.setDisplayName(ChatColor.GOLD
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUITranslatorCacheButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUITranslatorCacheButton"));
 		translatorCacheButton.setItemMeta(translatorCacheMeta);
 		contents.set(1, 4, ClickableItem.of(translatorCacheButton, e -> {
 			cacheConvo.buildConversation(player).begin();
@@ -65,7 +64,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		ItemStack rateLimitButton = new ItemStack(Material.NAME_TAG);
 		ItemMeta rateLimitMeta = rateLimitButton.getItemMeta();
 		rateLimitMeta.setDisplayName(ChatColor.GOLD
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIGlobalRateLimit"));
+				+ CommonDefinitions.getMessage("wwcConfigGUIGlobalRateLimit"));
 		rateLimitButton.setItemMeta(rateLimitMeta);
 		contents.set(1, 5, ClickableItem.of(rateLimitButton, e -> {
 			rateConvo.buildConversation(player).begin();
@@ -75,7 +74,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
 		ItemMeta previousPageMeta = previousPageButton.getItemMeta();
 		previousPageMeta.setDisplayName(ChatColor.GREEN
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIPreviousPageButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
 		previousPageButton.setItemMeta(previousPageMeta);
 		contents.set(2, 1,
 				ClickableItem.of(previousPageButton, e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
@@ -84,18 +83,13 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		ItemStack quitButton = new ItemStack(Material.BARRIER);
 		ItemMeta quitMeta = quitButton.getItemMeta();
 		quitMeta.setDisplayName(ChatColor.RED
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIQuitButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
 		quitButton.setItemMeta(quitMeta);
 		WWCReload rel = new WWCReload(player, null, null, null);
 		contents.set(2, 4, ClickableItem.of(quitButton, e -> {
 			main.removePlayerUsingConfigurationGUI(player);
 			player.closeInventory();
-			Bukkit.getScheduler().runTaskAsynchronously(main, new Runnable() {
-				@Override
-				public void run() {
-					rel.processCommand();
-				}
-			});
+			rel.processCommand();
 		}));
 	}
 
@@ -116,7 +110,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		}
 		ItemMeta translatorButtonMeta = translatorButton.getItemMeta();
 		translatorButtonMeta.setDisplayName(ChatColor.GOLD
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIWatsonButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUIWatsonButton"));
 		translatorButton.setItemMeta(translatorButtonMeta);
 		contents.set(1, 1, ClickableItem.of(translatorButton, e -> {
 			ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson").open(player);
@@ -133,7 +127,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		}
 		ItemMeta translatorButtonMeta = translatorButton.getItemMeta();
 		translatorButtonMeta.setDisplayName(ChatColor.GOLD
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIGoogleTranslateButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUIGoogleTranslateButton"));
 		translatorButton.setItemMeta(translatorButtonMeta);
 		contents.set(1, 2, ClickableItem.of(translatorButton, e -> {
 			ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Google Translate").open(player);
@@ -150,7 +144,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		}
 		ItemMeta translatorButtonMeta = translatorButton.getItemMeta();
 		translatorButtonMeta.setDisplayName(ChatColor.GOLD
-				+ main.getConfigManager().getMessagesConfig().getString("Messages.wwcConfigGUIAmazonTranslateButton"));
+				+ CommonDefinitions.getMessage("wwcConfigGUIAmazonTranslateButton"));
 		translatorButton.setItemMeta(translatorButtonMeta);
 		contents.set(1, 3, ClickableItem.of(translatorButton, e -> {
 			ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Amazon Translate").open(player);
