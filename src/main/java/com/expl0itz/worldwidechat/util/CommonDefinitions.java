@@ -110,10 +110,15 @@ public class CommonDefinitions {
 	
 	public static String getMessage(String messageName, String[] replacements) {
 		/* Get message from messages.yml */
-		String convertedOriginalMessage = WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages." + ChatColor.stripColor(messageName));
-		if (convertedOriginalMessage == null) {
-			WorldwideChat.getInstance().getLogger().severe("Bad message! Please fix your messages-XX.yml.");
-			return ChatColor.RED + "Bad message! Please fix your messages-XX.yml.";
+		String convertedOriginalMessage = "";
+		if (WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
+			convertedOriginalMessage = WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName));
+		} else {
+			convertedOriginalMessage = WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages." + ChatColor.stripColor(messageName));
+			if (convertedOriginalMessage == null) {
+				WorldwideChat.getInstance().getLogger().severe("Bad message! Please fix your messages-XX.yml.");
+				return ChatColor.RED + "Bad message! Please fix your messages-XX.yml.";
+			}
 		}
 		
 		/* Replace any and all %i, %e, %o, etc. */

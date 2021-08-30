@@ -1,3 +1,7 @@
+# DO NOT TOUCH THE VERSION ENTRY!
+Overrides:
+  wwcExampleMessage: 'Overriden message! This will display over the corresponding default entry below.'
+
 Messages:
   #------------------- Main Messages -------------------
   wwcEnabled: 'Enabled WorldwideChat version %i.'

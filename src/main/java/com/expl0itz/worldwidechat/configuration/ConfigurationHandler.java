@@ -3,7 +3,12 @@ package com.expl0itz.worldwidechat.configuration;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.InaccessibleObjectException;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.List;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -73,6 +78,8 @@ public class ConfigurationHandler {
 			mainConfig.save(configFile);
 		} catch (IOException e) {
 			e.printStackTrace();
+			Bukkit.getPluginManager().disablePlugin(main);
+			return;
 		}
 
 		/* Get plugin lang */
@@ -94,10 +101,75 @@ public class ConfigurationHandler {
 		messagesFile = new File(main.getDataFolder(), "messages-" + main.getPluginLang() + ".yml");
 
 		/* Always save new lang files */
-		main.saveResource("messages-" + main.getPluginLang() + ".yml", true);
+		if (!messagesFile.exists()) {
+			main.saveResource("messages-" + main.getPluginLang() + ".yml", true);
+			
+			YamlConfiguration tempConfig = YamlConfiguration.loadConfiguration(messagesFile);
+			
+			tempConfig.set("DoNotTouchThis.Version", main.getCurrentMessagesConfigVersion());
+			
+			try {
+				tempConfig.save(messagesFile);
+			} catch (IOException e) {
+				e.printStackTrace();
+				Bukkit.getPluginManager().disablePlugin(main);
+				return;
+			}
+		}
 
 		/* Load config */
 		messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
+		
+		/* Save messages config */
+		try {
+			messagesConfig.save(messagesFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+			Bukkit.getPluginManager().disablePlugin(main);
+			return;
+		}
+		
+		/* Check if version value is out of date...*/
+		int currentMessagesConfigVersion = main.getCurrentMessagesConfigVersion();
+		
+		HashMap<String, String> oldOverrides = new HashMap<String, String>();
+		if (messagesConfig.getInt("DoNotTouchThis.Version") != currentMessagesConfigVersion) {
+			main.getLogger().warning("Upgrading out-of-date messages config!");
+			
+			/* Copy overrides section */
+			if (messagesConfig.getConfigurationSection("Overrides") != null) {
+				for (String eaKey : messagesConfig.getConfigurationSection("Overrides").getKeys(true)) {
+					oldOverrides.put(eaKey, messagesConfig.getString("Overrides." + eaKey));
+				}
+			}
+			
+			/* Delete old config */
+			messagesFile.delete();
+			
+			/* Copy newest config */
+			main.saveResource("messages-" + main.getPluginLang() + ".yml", true);
+			messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
+			messagesConfig.set("DoNotTouchThis.Version", main.getCurrentMessagesConfigVersion());
+			
+			/* Paste overrides section */
+			if (messagesConfig.getConfigurationSection("Overrides") != null) {
+				for (Map.Entry<String, String> entry : oldOverrides.entrySet()) {
+				    messagesConfig.set("Overrides." + entry.getKey(), entry.getValue());
+				}
+			}
+			
+			/* Save messages config */
+			try {
+				messagesConfig.save(messagesFile);
+			} catch (IOException e) {
+				e.printStackTrace();
+				Bukkit.getPluginManager().disablePlugin(main);
+				return;
+			}
+			
+			/* Success :) */
+			main.getLogger().warning("Upgrade successful.");
+		}
 	}
 
 	/* Load Main Settings Method */
