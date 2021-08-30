@@ -52,7 +52,7 @@ Messages:
     comando!'
   wwcConfigGUILangButton: Cambia lingua plugin
   wwctGUISignButton: Attiva/disattiva traduzione segno
-  wwcUpdaterOutOfDate: WorldwideChat non è aggiornato. Esegui l\'aggiornamento alla
+  wwcUpdaterOutOfDate: WorldwideChat non è aggiornato. Esegui l'aggiornamento alla
     versione più recente, %i.
   wwcConfigGUIChangesNotSaved: 'Le tue modifiche potrebbero non avere effetto finché
     non esegui /wwcr, o fai clic sulla barriera rossa in /wwcc.'
@@ -99,14 +99,14 @@ Messages:
     è troppo lunga. Traduzione:'
   wwctsOnTarget: 'Firma traduzione abilitata per %i.'
   wwcConfigCacheDisabled: Cache del traduttore disabilitata.
-  wwcConfigConversationWatsonURLInput: L\'URL corrente è %i. Immettere un URL di servizio
+  wwcConfigConversationWatsonURLInput: L'URL corrente è %i. Immettere un URL di servizio
     per Watson oppure digitare 0 per tornare indietro.
   wwcOnJoinTranslationNotificationSourceLang: 'La tua chat viene tradotta da %i a
     %o.'
   wwcBookDone: 'Libro tradotto con successo.'
   wwctsOnSender: 'Traduzione firmare abilitata. Fare clic con il tasto destro su
     un segno per tradurlo!'
-  watsonColorCodeWarning: 'L\''utilizzo di codici colore può dare risultati imprevedibili.'
+  watsonColorCodeWarning: 'L''utilizzo di codici colore può dare risultati imprevedibili.'
   wwctGUITranslationButton: Inizia a tradurre
   wwctGUIAutoDetectButton: Rileva automaticamente la lingua di origine
   wwcUpdaterUpToDate: WorldwideChat è aggiornato!
@@ -116,7 +116,7 @@ Messages:
   wwcInitializationFail: Impossibile inizializzare WorldwideChat.
   wwcrSuccess: 'WorldwideChat ricaricato correttamente.'
   wwcPlayerNotFound: 'Giocatore %i non trovato.'
-  wwcUpdaterOutOfDateChat: 'WorldwideChat non è aggiornato. Esegui l\''aggiornamento
+  wwcUpdaterOutOfDateChat: 'WorldwideChat non è aggiornato. Esegui l''aggiornamento
     alla versione più recente.'
   wwcConfigConversationRateLimitSuccess: 'Limite di velocità impostato correttamente.'
   wwcConfigConversationWatsonURLSuccess: 'URL Watson impostato correttamente.'
@@ -144,7 +144,7 @@ Messages:
     Impostazione predefinita 0 secondi...
   wwcSignTranslateStart: 'Traduzione del segno di destinazione...'
   wwcConfigGUIChatSettings: Configurazione della chat
-  wwcConfigGUIWatsonURLButton: Modificare l\'URL del servizio Watson
+  wwcConfigGUIWatsonURLButton: Modificare l'URL del servizio Watson
   wwcConfigConversationUpdateCheckerSuccess: 'Aggiorna il ritardo del controllo impostato
     correttamente.'
   wwcUnsupportedVersion: 'Stai eseguendo una versione non supportata di Bukkit, Spigot
@@ -215,15 +215,15 @@ Messages:
     predefinita su 10...
   wwcInventoryErrorPlayer: 'Errore rilevato con la GUI. Un registro è stato inviato
     alla console.'
-  wwcInventoryError: Errore rilevato con la GUI dell\'utente %i. Segnalare il problema
+  wwcInventoryError: Errore rilevato con la GUI dell'utente %i. Segnalare il problema
     allo sviluppatore.
   wwcConfigConversationTranslatorFail: 'Impossibile abilitare %i.'
-  wwcConfigConversationConsoleTranslatorSuccess: L\'utente %ho abilitato correttamente
+  wwcConfigConversationConsoleTranslatorSuccess: L'utente %ho abilitato correttamente
     %o.
   wwcConfigConversationTranslatorSuccess: 'Abilitato con successo %i.'
-  wwcConfigConversationConsoleTranslatorFail: L\'utente %non è riuscito ad abilitare
+  wwcConfigConversationConsoleTranslatorFail: L'utente %non è riuscito ad abilitare
     %o.
-  wwcWatson117Warning: Watson non è riuscito a inizializzare a causa di un\'eccezione
+  wwcWatson117Warning: Watson non è riuscito a inizializzare a causa di un'eccezione
     InaccessibleObjectException. Per ora, aggiungi —illegal-access=permit agli argomenti
     del jar del server esistenti.
   wwcDeluxeChatIncompatible: Questo plugin potrebbe non funzionare correttamente con
@@ -231,23 +231,23 @@ Messages:
   wwcSignTranslationFail: 'Impossibile tradurre una o più righe sul segno di destinazione.'
   wwcBookTranslationFail: 'Impossibile tradurre una o più pagine nel tuo libro di
     destinazione.'
-  wwctiOffTarget: 'Traduzione dell\''articolo disattivata per %i.'
-  wwctiOffSender: 'Traduzione dell\''articolo disattivata.'
+  wwctiOffTarget: 'Traduzione dell''articolo disattivata per %i.'
+  wwctiOffSender: 'Traduzione dell''articolo disattivata.'
   wwcItemTranslateTitleStock: 'Impossibile tradurre i nomi degli elementi predefiniti.'
   wwcItemTranslateLoreFail: 'Impossibile tradurre la tradizione degli elementi.'
-  wwcItemTranslateTitleFail: 'Impossibile tradurre il nome dell\''elemento.'
+  wwcItemTranslateTitleFail: 'Impossibile tradurre il nome dell''elemento.'
   wwctGUIItemButton: Attiva/disattiva la traduzione degli articoli
-  wwcItemTranslateTitleDone: 'Titolo dell\''articolo tradotto con successo.'
+  wwcItemTranslateTitleDone: 'Titolo dell''articolo tradotto con successo.'
   wwcGUITempItem: Visualizzazione articolo
-  wwcItemTranslateStart: 'Traducendo l\''elemento target in corso...'
+  wwcItemTranslateStart: 'Traducendo l''elemento target in corso...'
   wwcSignTranslationFailCatastrophic: 'Impossibile tradurre il segno di destinazione.'
-  wwcItemTranslationFailCatastrophic: 'Impossibile tradurre l\''elemento di destinazione.'
+  wwcItemTranslationFailCatastrophic: 'Impossibile tradurre l''elemento di destinazione.'
   wwcBookTranslateTitleSuccess: 'Titolo libro tradotto: %i'
-  wwctiOnSender: 'Traduzione dell\''articolo abilitata. Fai clic con il pulsante
+  wwctiOnSender: 'Traduzione dell''articolo abilitata. Fai clic con il pulsante
     destro del mouse con un oggetto nella mano principale per tradurlo!'
-  wwcItemTranslateLoreStart: 'Traducendo la tradizione dell\''oggetto target...'
-  wwcItemTranslateLoreDone: 'La tradizione dell\''articolo tradotta con successo.'
-  wwctiOnTarget: 'Traduzione dell\''articolo abilitata per %i.'
+  wwcItemTranslateLoreStart: 'Traducendo la tradizione dell''oggetto target...'
+  wwcItemTranslateLoreDone: 'La tradizione dell''articolo tradotta con successo.'
+  wwctiOnTarget: 'Traduzione dell''articolo abilitata per %i.'
   wwcBookTranslationFailCatastrophic: 'Impossibile tradurre il libro di destinazione.'
   wwcBookTranslateTitleFail: 'Impossibile tradurre il titolo del libro.'
   wwcChatTranslationFail: 'Impossibile tradurre il messaggio.'
@@ -258,7 +258,7 @@ Messages:
   wwcConfigGUIEachTranslatorSettings: Configurazione %i
   wwcConfigGUIToggleButton: Attiva %i
   wwcConfigGUIWatsonButton: Watson
-  wwcServerReloadWarning: WorldwideChat non condona l\'utilizzo di /reload. Si prega
+  wwcServerReloadWarning: WorldwideChat non condona l'utilizzo di /reload. Si prega
     di procedere con cautela.
   wwcConfigEnabledDebugMode: Modalità DEBUG abilitata. Se non sei uno sviluppatore
     o uno strumento di risoluzione dei problemi, dovresti disattivarlo.
@@ -268,7 +268,7 @@ Messages:
   wwcTranslatorError: 'Si è verificato un problema durante il tentativo di traduzione.
     Per favore riprova.'
   wwcTranslatorErrorConsole: Si è verificato un problema durante il tentativo di traduzione
-    dell\'utente %i. Ora stampa lo stacktrace.
+    dell'utente %i. Ora stampa lo stacktrace.
   wwcConfigErrorLimitInvalid: Limite di errore del traduttore non valido impostato
     in config.yml. Impostazione predefinita a 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Controllare errorLog.txt nella cartella

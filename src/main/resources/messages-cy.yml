@@ -7,24 +7,24 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Newid Gwirio am Oedi Diweddariadau
   wwcUpdaterFailedGeneric: Methu gwirio am ddiweddariadau WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Yr oedi presennol ar y gwiriwr diweddaru
-    yw %i eiliad. Teipiwch unrhyw beth sy\'n fwy na 10 i osod gwerth newydd, neu unrhyw
+    yw %i eiliad. Teipiwch unrhyw beth sy'n fwy na 10 i osod gwerth newydd, neu unrhyw
     beth llai na 10 i fynd yn ôl.
   wwctGUIMainMenuGlobal: Bwydlen Gyfieithu Fyd-eang
   wwcConfigConversationPluginUpdateChatSuccess: 'Ategyn atgoffa sgwrs diweddariad
     toggled yn llwyddiannus.'
-  wwctbOnTarget: 'Cyfieithu llyfr wedi\''i alluogi am %i.'
+  wwctbOnTarget: 'Cyfieithu llyfr wedi''i alluogi am %i.'
   wwcsNotATranslator: 'Nid oes cofnodion ar gael ar gyfer %i eto.'
   wwcConfigGUIbStatsButton: Toglo bStats
   wwctGUINewTranslationSource: Dewiswch Iaith Ffynhonnell
   wwcConfigConnectionFailed: Methu cysylltu â %o Gwnewch yn siŵr bod eich cymwysterau
-    a\'ch wal dân wedi eu ffurfweddu\'n gywir!
+    a'ch wal dân wedi eu ffurfweddu'n gywir!
   wwcConfigEnabledbStats: bStats galluogi.
   wwctGUIMainMenuPlayer: Cyfieithiad Dewislen o %i
   wwctGUIBookButton: Toggle Cyfieithu Llyfr
   wwcLangDetected: Iaith %o canfod.
   wwcBookTranslateStart: 'Cyfieithu llyfr targed...'
   wwcConfigDisabledbStats: bStats anabl.
-  wwctsOffSender: 'Cyfieithu arwyddion wedi\''i analluogi.'
+  wwctsOffSender: 'Cyfieithu arwyddion wedi''i analluogi.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Mae sgwrs fyd-eang yn
     cael ei gyfieithu, ond mae eich sgwrs yn cael ei chyfieithu o %i i %o.'
   wwcUpdaterParserFailed: Methwyd gramadegu data diweddaru o Github.
@@ -32,29 +32,29 @@ Messages:
   wwcConfigConversationAmazonTranslateSecretKeyInput: Yr allwedd gyfrinach ar hyn
     o bryd yw %i mewnbynnu allwedd gyfrinachol ar gyfer Amazon, neu deipio 0 i fynd
     yn ôl.
-  wwctbOffSender: 'Cyfieithu llyfr wedi\''i analluogi.'
+  wwctbOffSender: 'Cyfieithu llyfr wedi''i analluogi.'
   wwcConfigGUIAmazonTranslateButton: Amazon Cyfieithu
   wwcConfigConversationLangSuccess: 'Iaith ategyn newid yn llwyddiannus.'
   wwcsSuccessfulTranslations: 'Cyfieithiadau Llwyddiannus: %i'
   wwctTranslationStoppedOtherPlayer: 'Cyfieithu sgwrsio am %i wedi cael ei stopio.'
   wwcConfigConversationTranslationCacheInput: Y terfyn cache cyfieithu cyfredol yw
     %i ymadroddion. Teipiwch unrhyw beth mwy na 0 i osod gwerth newydd, neu deipio
-    0 i analluoga \'r cache cyfieithu. Teipiwch unrhyw beth llai na 0 i fynd yn ôl.
-  wwctbOffTarget: 'Cyfieithu llyfr wedi\''i analluogi am %i.'
+    0 i analluoga 'r cache cyfieithu. Teipiwch unrhyw beth llai na 0 i fynd yn ôl.
+  wwctbOffTarget: 'Cyfieithu llyfr wedi''i analluogi am %i.'
   wwcConfigGUIGeneralSettings: Ffurfweddiad Cyffredinol
   wwcInvalidLang: Iaith annilys yn eich config.yml. Defaulting i en...
   wwcConfigConversationAmazonTranslateRegionSuccess: 'Amazon rhanbarth gosod yn llwyddiannus.'
-  wwcConfigRateLimitEnabled: Cyfyngiad cyfradd fyd-eang wedi\'i alluogi a\'i osod
+  wwcConfigRateLimitEnabled: Cyfyngiad cyfradd fyd-eang wedi'i alluogi a'i osod
     i %i eiliad.
   wwcBadPerms: 'Nid oes gennych y caniatâd gofynnol i weithredu gorchymyn hwn!'
   wwcConfigGUILangButton: Newid Iaith Ategyn
   wwctGUISignButton: Toggle Cyfieithu Arwyddion
-  wwcUpdaterOutOfDate: Mae WorldwideChat yn hen. Diweddarwch i\'r fersiwn ddiweddaraf,
+  wwcUpdaterOutOfDate: Mae WorldwideChat yn hen. Diweddarwch i'r fersiwn ddiweddaraf,
     %i.
   wwcConfigGUIChangesNotSaved: 'Efallai na fydd eich newidiadau yn dod i rym nes
     i chi naill ai redeg /wwcr, neu glicio ar y rhwystr coch yn /wwcc.'
   wwcConfigGUINextPageButton: Tudalen Nesaf
-  wwctbTranslatePageFail: (Methwyd cyfieithu\'r dudalen hon) %i
+  wwctbTranslatePageFail: (Methwyd cyfieithu'r dudalen hon) %i
   wwcConfigInvalidTranslatorSettings: Gosodiadau cyfieithydd annilys! Os gwelwch yn
     dda alluogi dim ond un cyfieithydd yn eich config.yml.
   wwcConfigGUIQuitButton: Ymadael ac Arbed Newidiadau
@@ -71,36 +71,36 @@ Messages:
   wwcConfigGUIWatsonAPIKeyButton: Newid Watson API Allweddol
   wwcEnabled: Galluogwyd fersiwn WorldwideChat %i.
   wwcgLangToLangStart: 'Nawr cyfieithu sgwrs fyd-eang o %i i %o.'
-  wwctbOnSender: 'Cyfieithu llyfr wedi\''i alluogi. Cliciwch y botwm dde wrth ddal
-    llyfr i\''w gyfieithu!'
+  wwctbOnSender: 'Cyfieithu llyfr wedi''i alluogi. Cliciwch y botwm dde wrth ddal
+    llyfr i''w gyfieithu!'
   wwcListenersInitialized: Gwrandawyr ymgychwyn.
   wwcUserDataCorrupted: Wedi dod o hyd ac yn symud %i llygredig neu hen ffeiliau data
     defnyddiwr. Byddant yn cael eu dileu ar yr ail-lwytho nesaf.
   wwcConfigGUIPluginUpdateChatButton: Anfon Atgoffa Sgwrs ar gyfer Diweddariadau Ategyn
   wwcConfigConversationSendTranslationChatSuccess: 'Atgoffa sgwrs cyfieithydd gweithredol
     toggled yn llwyddiannus.'
-  wwctsOffTarget: 'Llofnodi cyfieithu wedi\''i analluogi am %i.'
+  wwctsOffTarget: 'Llofnodi cyfieithu wedi''i analluogi am %i.'
   wwcUpdaterConnectionFailed: Methu gwirio am ddiweddariadau diweddaraf ar Github.
   watsonNotFoundExceptionNotification: 'Methu cyfieithu eich mewnbwn ymhellach.'
   wwcConfigConversationWatsonAPIKeyInput: Yr allwedd API cyfredol yw %i mewnbynnu
     allwedd API ar gyfer Watson, neu deipio 0 i fynd yn ôl.
   wwctGUIStopButton: Stopio Cyfieithu
   wwcgTranslationStopped: 'Cyfieithu sgwrsio byd-eang wedi cael ei atal.'
-  wwctAutoTranslateStartOtherPlayer: 'Nawr cyfieithu\''r sgwrs o %i i %o.'
-  wwcUpdaterFutureDate: Mae gan yr achos hwn o WorldwideChat fersiwn fwy na\'r un
+  wwctAutoTranslateStartOtherPlayer: 'Nawr cyfieithu''r sgwrs o %i i %o.'
+  wwcUpdaterFutureDate: Mae gan yr achos hwn o WorldwideChat fersiwn fwy na'r un
     cyhoeddus diweddaraf.
   wwcConfigConversationPrefixSuccess: 'Rhagddodiad newid yn llwyddiannus.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: Newid Google Translate API Allweddol
   wwcSignDeletedOrTooLong: 'Arwydd targed naill ai ei ddileu neu y cyfieithiad yn
     rhy hir. Cyfieithu:'
   wwctsOnTarget: 'Mewngofnodi cyfieithu galluogi am %i.'
-  wwcConfigCacheDisabled: Cache cyfieithydd wedi\'i analluogi.
+  wwcConfigCacheDisabled: Cache cyfieithydd wedi'i analluogi.
   wwcConfigConversationWatsonURLInput: Yr URL cyfredol yw %i mewnbynnu URL gwasanaeth
     ar gyfer Watson, neu deipio 0 i fynd yn ôl.
   wwcOnJoinTranslationNotificationSourceLang: 'Mae eich sgwrs yn cael ei gyfieithu
     o %i i %o.'
-  wwcBookDone: 'Llyfr wedi\''i gyfieithu yn llwyddiannus.'
-  wwctsOnSender: 'Galluogi cyfieithu arwyddion. Cliciwch y botwm dde ar arwydd i\''w
+  wwcBookDone: 'Llyfr wedi''i gyfieithu yn llwyddiannus.'
+  wwctsOnSender: 'Galluogi cyfieithu arwyddion. Cliciwch y botwm dde ar arwydd i''w
     gyfieithu!'
   watsonColorCodeWarning: 'Gall defnyddio codau lliw roi canlyniadau anrhagweladwy
     i chi.'
@@ -113,18 +113,18 @@ Messages:
   wwcInitializationFail: Methwyd ymgychwyn WorldwideChat.
   wwcrSuccess: 'Ail-lwytho WorldwideChat yn llwyddiannus.'
   wwcPlayerNotFound: 'Chwaraewr %i ddim dod o hyd.'
-  wwcUpdaterOutOfDateChat: 'Mae WorldwideChat yn hen. Diweddarwch i\''r fersiwn ddiweddaraf.'
+  wwcUpdaterOutOfDateChat: 'Mae WorldwideChat yn hen. Diweddarwch i''r fersiwn ddiweddaraf.'
   wwcConfigConversationRateLimitSuccess: 'Terfyn cyfradd a osodwyd yn llwyddiannus.'
   wwcConfigConversationWatsonURLSuccess: 'Gosododd Watson URL yn llwyddiannus.'
-  wwctbPlayerNotFound: 'Chwaraewr %i naill ai heb ei ganfod, neu nid yw\''n gyfieithydd
+  wwctbPlayerNotFound: 'Chwaraewr %i naill ai heb ei ganfod, neu nid yw''n gyfieithydd
     gweithredol.'
   wwcConfigConversationTranslationCacheSuccess: 'Cyfyngiad cache Cyfieithu gosod
     yn llwyddiannus.'
   wwctInvalidArgs: 'Dadleuon annilys a ddarperir!'
   wwcConfigGUIPrefixButton: Newid Rhagddodiad Ategyn
-  wwctSameLangError: 'Ni allwch gyfieithu i\''r un iaith!'
+  wwctSameLangError: 'Ni allwch gyfieithu i''r un iaith!'
   wwctGUINewTranslationTarget: Dewiswch Iaith Darged
-  wwctLangToLangStartOtherPlayer: 'Nawr cyfieithu\''r sgwrs o %o o %i i %e.'
+  wwctLangToLangStartOtherPlayer: 'Nawr cyfieithu''r sgwrs o %o o %i i %e.'
   wwcConfigConnectionSuccess: Wedi cysylltu yn llwyddiannus i %o!
   wwcConfigGUIGoogleTranslateButton: Google Cyfieithu
   wwcsIsActiveTranslator: 'A yw Cyfieithydd Actif: %i'
@@ -133,9 +133,9 @@ Messages:
     neu teipiwch 0 i fynd yn ôl.
   wwcConfigGUIPreviousPageButton: Tudalen Blaenorol
   wwcConfigGUITranslatorCacheButton: Newid Terfyn Cache Cyfieithu
-  wwcConfigConversationbStatsSuccess: 'Toglu\''n llwyddiannus bStats.'
+  wwcConfigConversationbStatsSuccess: 'Toglu''n llwyddiannus bStats.'
   wwcSignDone: 'Arwydd cyfieithu yn llwyddiannus.'
-  wwcConfigInvalidPrefixSettings: Methu darllen eich rhagddodiad. Defnyddio\'r diofyn...
+  wwcConfigInvalidPrefixSettings: Methu darllen eich rhagddodiad. Defnyddio'r diofyn...
   wwcConfigRateLimitInvalid: Terfyn cyfradd drwg a osodwyd yn config.yml. Defaulting
     i 0 eiliad...
   wwcSignTranslateStart: 'Cyfieithu arwydd targed...'
@@ -151,8 +151,8 @@ Messages:
   wwcConfigConversationGoogleTranslateAPIKeyInput: Yr allwedd API cyfredol yw %i mewnbynnu
     allwedd API ar gyfer Google Translate, neu deipio 0 i fynd yn ôl.
   wwcConfigConversationRateLimitInput: Y terfyn cyfradd fyd-eang ar hyn o bryd fesul
-    cyfieithiad yw %i eiliad. Teipiwch unrhyw beth sy\'n fwy na 0 i osod gwerth newydd,
-    neu deipio 0 i analluoga \'r terfyn. Teipiwch unrhyw beth llai na 0 i fynd yn
+    cyfieithiad yw %i eiliad. Teipiwch unrhyw beth sy'n fwy na 0 i osod gwerth newydd,
+    neu deipio 0 i analluoga 'r terfyn. Teipiwch unrhyw beth llai na 0 i fynd yn
     ôl.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Google Translate set allweddol
     API llwyddiannus.'
@@ -162,13 +162,13 @@ Messages:
   wwcConfigConversationAmazonTranslateSecretKeySuccess: 'Amazon set allweddol gyfrinach
     yn llwyddiannus.'
   wwcConfigConversationWatsonAPIKeySuccess: 'Watson API allweddol gosod yn llwyddiannus.'
-  wwcRateLimit: 'Mae eich cyfieithiadau yn gyfyngedig i\''r gyfradd. Arhoswch arall
+  wwcRateLimit: 'Mae eich cyfieithiadau yn gyfyngedig i''r gyfradd. Arhoswch arall
     %i eiliadau.'
-  wwcConfigCacheEnabled: Galluogodd cache cyfieithydd a\'i osod i derfyn o %i.
+  wwcConfigCacheEnabled: Galluogodd cache cyfieithydd a'i osod i derfyn o %i.
   wwctGUIExistingTranslationButton: Trosysgrifo Sesiwn Cyfieithu Cyfredol
   wwcOnJoinTranslationNotificationNoSourceLang: 'Mae eich sgwrs yn cael ei gyfieithu
     i %o.'
-  wwcUserDataReloaded: Llwytho\'r holl ddata defnyddiwr a gadwyd.
+  wwcUserDataReloaded: Llwytho'r holl ddata defnyddiwr a gadwyd.
   wwcConfigGUISendTranslationChatButton: Anfon Sgwrs Atgoffa i Gyfieithydd Actif ar
     Mewngofnodi
   wwcsLastTranslationTime: 'Diwethaf (Llwyddiannus) Amser Cyfieithu: %i'
@@ -183,66 +183,66 @@ Messages:
     i 86400 eiliad...
   wwctrlRateLimitOffSender: 'Diffodd eich terfyn cyfradd.'
   wwctrlRateLimitAlreadyOffTarget: 'Mae terfyn cyfradd %i eisoes wedi ei analluogi.'
-  wwctrlPlayerNotFound: 'Chwaraewr %i naill ai heb ei ganfod, neu nid yw\''n gyfieithydd
+  wwctrlPlayerNotFound: 'Chwaraewr %i naill ai heb ei ganfod, neu nid yw''n gyfieithydd
     gweithredol.'
   wwctrlRateLimitSetSender: 'Gosodwch eich terfyn cyfradd i %i eiliad.'
   wwctrlRateLimitOffTarget: 'Diffodd terfyn cyfradd %i.'
   wwctrlRateLimitSetTarget: 'Gosodwch derfyn y gyfradd o %i i %o eiliad.'
   wwctrlNotATranslator: 'Nid ydych yn gyfieithydd gweithredol! Gwnewch yn siŵr eich
     bod wedi gosod hyn gyda/wwct.'
-  wwctrlRateLimitAlreadyOffSender: 'Mae eich terfyn cyfradd eisoes wedi\''i analluogi.'
+  wwctrlRateLimitAlreadyOffSender: 'Mae eich terfyn cyfradd eisoes wedi''i analluogi.'
   wwctGUIRateButton: Gosod Terfyn Cyfradd
   wwctGUIConversationRateLimit: Y terfyn cyfradd fesul cyfieithiad ar hyn o bryd %i
-    eiliad. Teipiwch unrhyw beth sy\'n fwy na 0 i osod gwerth newydd, neu deipio 0
-    i analluoga \'r terfyn. Teipiwch unrhyw beth llai na 0 i fynd yn ôl.
-  wwctGUITargetPlayerNull: 'Mae\''r chwaraewr targed ddatgysylltu oddi wrth y gweinydd.'
+    eiliad. Teipiwch unrhyw beth sy'n fwy na 0 i osod gwerth newydd, neu deipio 0
+    i analluoga 'r terfyn. Teipiwch unrhyw beth llai na 0 i fynd yn ôl.
+  wwctGUITargetPlayerNull: 'Mae''r chwaraewr targed ddatgysylltu oddi wrth y gweinydd.'
   wwcConfigConversationSyncUserDataDelayInput: Yr oedi cyfredol fesul cydamseru data
-    defnyddiwr yw %i eiliad. Teipiwch unrhyw beth sy\'n fwy na 10 i osod gwerth newydd,
+    defnyddiwr yw %i eiliad. Teipiwch unrhyw beth sy'n fwy na 10 i osod gwerth newydd,
     neu unrhyw beth llai na 10 i fynd yn ôl.
   wwcConfigGUISyncUserDataButton: Newid defnyddiwr Data Sync Oedi
-  wwcConfigSyncTime: Cydamseru data defnyddiwr awtomatig wedi\'i gwblhau yn %i nanoseconds.
+  wwcConfigSyncTime: Cydamseru data defnyddiwr awtomatig wedi'i gwblhau yn %i nanoseconds.
   wwcConfigSyncDelayEnabled: Oedi fesul set cysoni data defnyddiwr i %i eiliad.
   wwcConfigConversationSyncUserDataDelaySuccess: 'Data defnyddiwr oedi cysoni gosod
     yn llwyddiannus.'
   wwcConfigSyncDelayInvalid: Gohirio cysoni data defnyddiwr annilys a osodwyd yn config.yml.
     Defaulting i 7200 eiliad...
   wwcConfigCacheInvalid: Maint cache Cyfieithydd annilys. Defaulting i 10...
-  wwcInventoryErrorPlayer: 'Gwall canfod gyda\''ch GUI. Anfonwyd log at y consol.'
-  wwcInventoryError: Gwall a ganfuwyd gyda GUI o defnyddiwr %i Rhowch wybod i\'r datblygwr.
+  wwcInventoryErrorPlayer: 'Gwall canfod gyda''ch GUI. Anfonwyd log at y consol.'
+  wwcInventoryError: Gwall a ganfuwyd gyda GUI o defnyddiwr %i Rhowch wybod i'r datblygwr.
   wwcConfigConversationTranslatorFail: 'Methwyd galluog %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Defnyddiwr %o wedi galluo %o yn llwyddiannus.
   wwcConfigConversationTranslatorSuccess: 'Llwyddo galluo %i.'
   wwcConfigConversationConsoleTranslatorFail: Methais defnyddiwr %o.
   wwcWatson117Warning: Mae Watson wedi methu ymgychwyn oherwydd InaccesSibleObjectException.
-    Am y tro, ychwanegwch —illegal-mynediad = trwydded i\'ch dadleuon jar gweinydd
+    Am y tro, ychwanegwch —illegal-mynediad = trwydded i'ch dadleuon jar gweinydd
     presennol.
-  wwcDeluxeChatIncompatible: Efallai na fydd hyn yn ategyn yn gweithio\'n iawn gyda
+  wwcDeluxeChatIncompatible: Efallai na fydd hyn yn ategyn yn gweithio'n iawn gyda
     xeChat.
   wwcSignTranslationFail: 'Methu cyfieithu un neu fwy o linellau ar eich arwydd targed.'
   wwcBookTranslationFail: 'Methu cyfieithu un neu fwy o dudalennau yn eich llyfr
     targed.'
-  wwctiOffTarget: 'Cyfieithu eitem wedi\''i analluogi am %i.'
-  wwctiOffSender: 'Cyfieithu eitem wedi\''i analluogi.'
+  wwctiOffTarget: 'Cyfieithu eitem wedi''i analluogi am %i.'
+  wwctiOffSender: 'Cyfieithu eitem wedi''i analluogi.'
   wwcItemTranslateTitleStock: 'Methu cyfieithu enwau eitemau diofyn.'
   wwcItemTranslateLoreFail: 'Methu cyfieithu eitem lore.'
-  wwcItemTranslateTitleFail: 'Methu cyfieithu enw\''r eitem.'
+  wwcItemTranslateTitleFail: 'Methu cyfieithu enw''r eitem.'
   wwctGUIItemButton: Toggle Cyfieithu Eitem
-  wwcItemTranslateTitleDone: 'Teitl eitem wedi\''i gyfieithu yn llwyddiannus.'
+  wwcItemTranslateTitleDone: 'Teitl eitem wedi''i gyfieithu yn llwyddiannus.'
   wwcGUITempItem: Arddangos Eitem
   wwcItemTranslateStart: 'Cyfieithu eitem darged...'
   wwcSignTranslationFailCatastrophic: 'Methu cyfieithu arwydd targed.'
   wwcItemTranslationFailCatastrophic: 'Methu cyfieithu eitem darged.'
   wwcBookTranslateTitleSuccess: 'Teitl Llyfr Cyfieithiedig: %i'
   wwctiOnSender: 'Alluogwyd cyfieithiad eitem. Cliciwch y botwm dde gydag eitem yn
-    eich prif law i\''w gyfieithu!'
+    eich prif law i''w gyfieithu!'
   wwcItemTranslateLoreStart: 'Cyfieithu llên o eitem darged...'
   wwcItemTranslateLoreDone: 'Lore eitem Cyfieithwyd yn llwyddiannus.'
-  wwctiOnTarget: 'Cyfieithiad eitem wedi\''i alluogi ar gyfer %i.'
-  wwcBookTranslationFailCatastrophic: 'Methu cyfieithu\''r llyfr targed.'
+  wwctiOnTarget: 'Cyfieithiad eitem wedi''i alluogi ar gyfer %i.'
+  wwcBookTranslationFailCatastrophic: 'Methu cyfieithu''r llyfr targed.'
   wwcBookTranslateTitleFail: 'Methu cyfieithu teitl llyfr.'
   wwcChatTranslationFail: 'Methwyd â chyfieithu eich neges.'
   wwcInvalidTranslator: 'Gosodiadau cyfieithydd annilys. Os gwelwch yn dda atgyweiria
-    hon yn eich config.yml neu gyda/wwcc i ddefnyddio\''r ategyn hwn.'
+    hon yn eich config.yml neu gyda/wwcc i ddefnyddio''r ategyn hwn.'
   wwcNotDoneLoading: 'Mae WorldwideChat yn dal i ymgychwyn. Ceisiwch eto cyn bo hir.'
   wwcConfigGUIEachTranslatorSettings: '%i Ffurfweddiad'
   wwcConfigGUIToggleButton: Toggle %i
@@ -257,14 +257,14 @@ Messages:
   wwcTranslatorError: 'Digwyddodd problem wrth geisio eich cyfieithiad. Ceisiwch
     eto os gwelwch yn dda.'
   wwcTranslatorErrorConsole: Digwyddodd problem tra defnyddiwr %i yn ceisio eu cyfieithiad.
-    Nawr argraffu\'r stacktrace.
+    Nawr argraffu'r stacktrace.
   wwcConfigErrorLimitInvalid: Cyfyngiad gwall cyfieithydd annilys a osodwyd yn config.yml.
     Defaulting i 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Gwiriwch errorLog.txt yn y ffolder
     ategyn WorldwideChat am fwy o wybodaeth.
   wwcConfigMaxResponseTimeInvalid: Amser ymateb max annilys a osodwyd yn config.yml.
     Defaulting i 7 eiliad...
-  wwcConfigMaxResponseTimeEnabled: Amser ymateb Max wedi\'i osod i %i eiliadau.
+  wwcConfigMaxResponseTimeEnabled: Amser ymateb Max wedi'i osod i %i eiliadau.
   wwctInvalidInputLangCode: 'Cod iaith mewnbwn annilys a ddarperir! Codau lang dilys:
     %o'
   wwcsTitle: Cofnod o %i

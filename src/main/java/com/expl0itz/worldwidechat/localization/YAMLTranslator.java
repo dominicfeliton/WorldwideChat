@@ -180,11 +180,6 @@ public class YAMLTranslator {
 							sortChars.add(j, ' ');
 							j--;
 						}
-						// Apostrophe check
-						if (sortChars.get(j) == '\'') {
-							sortChars.add(j, '\\');
-							j--;
-						}
 						// Punctuation check
 						if ((sortChars.get(j) == '!' || sortChars.get(j) == '.' || sortChars.get(j) == '?'
 								|| sortChars.get(j) == ':') && j - 1 > -1

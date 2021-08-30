@@ -8,7 +8,7 @@ Messages:
   wwcUpdaterFailedGeneric: E pamundur për të kontrolluar përditësimet WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Vonesa aktuale në kontrolluesin e përditësimit
     është %i sekonda. Lloji ndonjë gjë më të madhe se 10 për të vendosur një vlerë
-    të re, ose ndonjë gjë më pak se 10 për t\'u kthyer.
+    të re, ose ndonjë gjë më pak se 10 për t'u kthyer.
   wwctGUIMainMenuGlobal: Menuja Përkthimi Global
   wwcConfigConversationPluginUpdateChatSuccess: 'Përditësimi i plugin chat kujtesë
     toggled me sukses.'
@@ -40,7 +40,7 @@ Messages:
   wwcConfigConversationTranslationCacheInput: Kufiri aktual i përkthimit cache është
     %i frazat. Shkruani ndonjë gjë më të madhe se 0 për të vendosur një vlerë të re,
     ose shkruani 0 për të çaktivizuar cache përkthimi. Lloji asgjë më pak se 0 për
-    t\'u kthyer.
+    t'u kthyer.
   wwctbOffTarget: 'Përkthimi i librit i paaftë për %i.'
   wwcConfigGUIGeneralSettings: Konfigurimi i përgjithshëm
   wwcInvalidLang: Gjuha e pavlefshme në config.yml tuaj. Defaulting to al...
@@ -87,7 +87,7 @@ Messages:
   watsonNotFoundExceptionNotification: 'Në pamundësi për të përkthyer të dhëna tuaj
     më tej.'
   wwcConfigConversationWatsonAPIKeyInput: Kyçi i tanishëm API është %i. Ju lutemi,
-    futni një çelës API për Watson, ose shkruani 0 për t\'u kthyer mbrapsht.
+    futni një çelës API për Watson, ose shkruani 0 për t'u kthyer mbrapsht.
   wwctGUIStopButton: Ndaloni Përkthimin
   wwcgTranslationStopped: 'Përkthimi global i bisedave është ndalur.'
   wwctAutoTranslateStartOtherPlayer: 'Tani përkthimi i bisedës pre %i në %o.'
@@ -100,19 +100,19 @@ Messages:
   wwctsOnTarget: 'Përkthimi i shenjave aktivizohet për %i.'
   wwcConfigCacheDisabled: Cache Translator çaktivizuar.
   wwcConfigConversationWatsonURLInput: URL-ja e tanishme është %i. Ju lutemi, futni
-    një URL shërbimi për Watson, ose shkruani 0 për t\'u kthyer prapa.
+    një URL shërbimi për Watson, ose shkruani 0 për t'u kthyer prapa.
   wwcOnJoinTranslationNotificationSourceLang: 'Biseda juaj po përkthehet nga %i në
     %o.'
   wwcBookDone: 'Libri i përkthyer me sukses.'
   wwctsOnSender: 'Përkthimi Sign aktivizuar. Djathtas-klikoni mbi një shenjë për
     ta përkthyer atë'
-  watsonColorCodeWarning: 'Përdorimi i kodeve të ngjyrave mund t\''ju japë rezultate
+  watsonColorCodeWarning: 'Përdorimi i kodeve të ngjyrave mund t''ju japë rezultate
     të paparashikueshme.'
   wwctGUITranslationButton: Filloni Përkthimin
   wwctGUIAutoDetectButton: Auto-zbuloni gjuhën burimore
   wwcUpdaterUpToDate: WorldwideChat është i përditësuar!
   wwcConfigConversationAmazonTranslateRegionInput: Rajoni i tanishëm është %i. Ju
-    lutemi, futni një rajon për Amazon, ose shkruani 0 për t\'u kthyer prapa.
+    lutemi, futni një rajon për Amazon, ose shkruani 0 për t'u kthyer prapa.
   wwcNoConsole: 'Ky komandë mund të drejtohet vetëm nga një lojtar.'
   wwcInitializationFail: Dështoi për të inicializuar WorldwideChat.
   wwcrSuccess: 'Rifreskuar me sukses WorldwideChat.'
@@ -134,7 +134,7 @@ Messages:
   wwcsIsActiveTranslator: 'Është Përkthyes Aktiv: %i'
   wwctLangToLangStart: 'Tani duke përkthyer krejt bisedën tënde nga %i në %o.'
   wwcConfigConversationPrefixInput: Prefiksi i tanishëm është %i. Ju lutemi shkruani
-    një të re, ose shkruani 0 për t\'u kthyer prapa.
+    një të re, ose shkruani 0 për t'u kthyer prapa.
   wwcConfigGUIPreviousPageButton: Faqja e mëparshme
   wwcConfigGUITranslatorCacheButton: Ndryshimi i përkthimit Cache
   wwcConfigConversationbStatsSuccess: 'bStats toggled sukses.'
@@ -154,12 +154,12 @@ Messages:
     nga %i në %o.'
   wwcConfigGUITranslatorSettings: Konfigurimi i përkthyesit
   wwcConfigConversationGoogleTranslateAPIKeyInput: Kyçi i tanishëm API është %i. Ju
-    lutemi, futni një kyç API për Google Translate, ose shkruani 0 për t\'u kthyer
+    lutemi, futni një kyç API për Google Translate, ose shkruani 0 për t'u kthyer
     prapa.
   wwcConfigConversationRateLimitInput: Kufiri aktual i normës globale për përkthim
     është %i sekonda. Shkruani ndonjë gjë më të madhe se 0 për të vendosur një vlerë
     të re, ose shkruani 0 për të çaktivizuar kufirin. Lloji asgjë më pak se 0 për
-    t\'u kthyer.
+    t'u kthyer.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Google Translate API çelësi
     vendosur me sukses.'
   wwcConfigGUIAmazonTranslateSecretKeyButton: Ndrysho Amazon Secret Key
@@ -181,7 +181,7 @@ Messages:
   wwctbNotATranslator: 'Ju nuk jeni një përkthyes aktiv! Sigurohuni që keni vendosur
     këtë me /wwct.'
   wwcConfigConversationAmazonTranslateAccessKeyInput: Kyçi aktual i hyrjes është %i.
-    Ju lutemi, futni një kyç hyrjeje për Amazon, ose shkruani 0 për t\'u kthyer mbrapa.
+    Ju lutemi, futni një kyç hyrjeje për Amazon, ose shkruani 0 për t'u kthyer mbrapa.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: 'Çelësi i qasjes Amazon vendosur
     me sukses.'
   wwcConfigBadUpdateDelay: Vonesa e pavlefshme e përditësimit të vendosur në config.yml.
@@ -198,11 +198,11 @@ Messages:
   wwctGUIRateButton: Cakto Limiti Vlerës
   wwctGUIConversationRateLimit: Kufiri i normës për përkthim është aktual %i sekonda.
     Shkruani ndonjë gjë më të madhe se 0 për të vendosur një vlerë të re, ose shkruani
-    0 për të çaktivizuar kufirin. Lloji asgjë më pak se 0 për t\'u kthyer.
+    0 për të çaktivizuar kufirin. Lloji asgjë më pak se 0 për t'u kthyer.
   wwctGUITargetPlayerNull: 'Lojtari i synuar shkëputet nga serveri.'
   wwcConfigConversationSyncUserDataDelayInput: Vonesa aktuale për sinkronizim të të
     dhënave të përdoruesit është %i sekonda. Lloji ndonjë gjë më të madhe se 10 për
-    të vendosur një vlerë të re, ose ndonjë gjë më pak se 10 për t\'u kthyer.
+    të vendosur një vlerë të re, ose ndonjë gjë më pak se 10 për t'u kthyer.
   wwcConfigGUISyncUserDataButton: Ndrysho vonesën e sinkroniz
   wwcConfigSyncTime: Sinkronizimi automatik i të dhënave të përdoruesit përfundoi
     në %i nanoseconds.

@@ -7,7 +7,7 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Verander tjek vir updates vertraging
   wwcUpdaterFailedGeneric: Nie in staat om te kyk vir WorldwideChat updates.
   wwcConfigConversationUpdateCheckerInput: Die huidige vertraging op die opdateringstoetser
-    is %i sekondes. Tik enigiets groter as 10 om \'n nuwe waarde te stel, of enigiets
+    is %i sekondes. Tik enigiets groter as 10 om 'n nuwe waarde te stel, of enigiets
     minder as 10 om terug te gaan.
   wwctGUIMainMenuGlobal: Globale Vertaling Menu
   wwcConfigConversationPluginUpdateChatSuccess: 'Inprop update chat herinnering geskakel
@@ -15,7 +15,7 @@ Messages:
   wwctbOnTarget: 'Boekvertaling geaktiveer vir %i.'
   wwcsNotATranslator: 'Daar is nog geen rekords beskikbaar vir %i nie.'
   wwcConfigGUIbStatsButton: Skakel bStats
-  wwctGUINewTranslationSource: Kies \'n Bron Taal
+  wwctGUINewTranslationSource: Kies 'n Bron Taal
   wwcConfigConnectionFailed: Kon nie konnekteer na %o nie. Maak seker jou geloofsbriewe
     en firewall is korrek gekonfigureer!
   wwcConfigEnabledbStats: Geaktiveer bStats.
@@ -30,7 +30,7 @@ Messages:
   wwcUpdaterParserFailed: Misluk om opdateringsdata van GitHub te ontleed.
   wwctAutoTranslateStart: 'Vertaal nou al jou chat na %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Die huidige geheime sleutel
-    is %i. Voer asseblief \'n geheime sleutel in vir Amazon, of tik 0 om terug te
+    is %i. Voer asseblief 'n geheime sleutel in vir Amazon, of tik 0 om terug te
     gaan.
   wwctbOffSender: 'Boekvertaling gedeaktiveer.'
   wwcConfigGUIAmazonTranslateButton: Amazon Vertaal
@@ -38,7 +38,7 @@ Messages:
   wwcsSuccessfulTranslations: 'Suksesvolle vertalings: %i'
   wwctTranslationStoppedOtherPlayer: 'Gesels vertaling vir %i is gestop.'
   wwcConfigConversationTranslationCacheInput: Die huidige vertaling kas limiet is
-    %i frases. Tik enigiets groter as 0 om \'n nuwe waarde in te stel, of tik 0 om
+    %i frases. Tik enigiets groter as 0 om 'n nuwe waarde in te stel, of tik 0 om
     die vertaalkas uit te skakel. Tik enigiets minder as 0 om terug te gaan.
   wwctbOffTarget: 'Boekvertaling gedeaktiveer vir %i.'
   wwcConfigGUIGeneralSettings: Algemene Konfigurasie
@@ -63,14 +63,14 @@ Messages:
   wwcConfigGUIGlobalRateLimit: Verander Globale Koersbeperking
   wwctGUIBackToSourceLanguageButton: Terug na Bron Taal Menu
   wwcConfigGUIAmazonTranslateRegionButton: Verander Amazon Streek
-  wwcConfigConversationLangInput: 'Die huidige inprop taal is %i. Voer asseblief \''n
+  wwcConfigConversationLangInput: 'Die huidige inprop taal is %i. Voer asseblief ''n
     geldige taalkode in, of tik 0 om te kanselleer. Geldige taalkodes: %o'
   wwcConfigConversationLangInvalid: 'Ongeldige taal kode!'
   wwctTranslationStopped: 'Jou chat vertaling is gestop.'
   wwcConfigGUIWatsonAPIKeyButton: Verander Watson API Sleutel
   wwcEnabled: Geaktiveer WorldwideChat weergawe %i.
   wwcgLangToLangStart: 'Vertaal nou globale chat van %i na %o.'
-  wwctbOnSender: 'Boekvertaling geaktiveer. Regs-kliek terwyl jy \''n boek hou om
+  wwctbOnSender: 'Boekvertaling geaktiveer. Regs-kliek terwyl jy ''n boek hou om
     dit te vertaal!'
   wwcListenersInitialized: geïnisialiseer luisteraars.
   wwcUserDataCorrupted: Gevind en beweeg %i beskadig of ou gebruiker data lêers. Hulle
@@ -82,11 +82,11 @@ Messages:
   wwcUpdaterConnectionFailed: Kan nie kyk vir nuutste opdaterings op GitHub nie.
   watsonNotFoundExceptionNotification: 'Nie in staat om jou insette verder te vertaal.'
   wwcConfigConversationWatsonAPIKeyInput: Die huidige API-sleutel is %i. Voer asseblief
-    \'n API-sleutel in vir Watson, of tik 0 om terug te gaan.
+    'n API-sleutel in vir Watson, of tik 0 om terug te gaan.
   wwctGUIStopButton: Stop Vertaal
   wwcgTranslationStopped: 'Globale chat vertaling is gestop.'
   wwctAutoTranslateStartOtherPlayer: 'Vertaal nou die klets van %i na %o.'
-  wwcUpdaterFutureDate: Hierdie geval van WorldwideChat het \'n groter weergawe as
+  wwcUpdaterFutureDate: Hierdie geval van WorldwideChat het 'n groter weergawe as
     die nuutste openbare een.
   wwcConfigConversationPrefixSuccess: 'Voorvoegsel het suksesvol verander.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: Verander Google Translate API-sleutel
@@ -94,19 +94,19 @@ Messages:
     Vertaling:'
   wwctsOnTarget: 'Teken vertaling geaktiveer vir %i.'
   wwcConfigCacheDisabled: Vertaler kas gedeaktiveer.
-  wwcConfigConversationWatsonURLInput: Die huidige URL is %i. Voer asseblief \'n diens-URL
+  wwcConfigConversationWatsonURLInput: Die huidige URL is %i. Voer asseblief 'n diens-URL
     in vir Watson, of tik 0 om terug te gaan.
   wwcOnJoinTranslationNotificationSourceLang: 'Jou chat word vertaal van %i na %o.'
   wwcBookDone: 'Boek suksesvol vertaal.'
-  wwctsOnSender: 'Teken vertaling geaktiveer. Regskliek op \''n teken om dit te vertaal!'
+  wwctsOnSender: 'Teken vertaling geaktiveer. Regskliek op ''n teken om dit te vertaal!'
   watsonColorCodeWarning: 'Die gebruik van kleurkodes kan jy onvoorspelbare resultate
     gee.'
   wwctGUITranslationButton: Begin Vertaal
   wwctGUIAutoDetectButton: Outo-opspoor Bron Taal
   wwcUpdaterUpToDate: WorldwideChat is op datum!
   wwcConfigConversationAmazonTranslateRegionInput: Die huidige streek is %i. Voer
-    asseblief \'n streek vir Amazon in, of tik 0 om terug te gaan.
-  wwcNoConsole: 'Hierdie opdrag kan slegs gehardloop word deur \''n speler.'
+    asseblief 'n streek vir Amazon in, of tik 0 om terug te gaan.
+  wwcNoConsole: 'Hierdie opdrag kan slegs gehardloop word deur ''n speler.'
   wwcInitializationFail: Misluk om WorldwideChat te inisialiseer.
   wwcrSuccess: 'Suksesvol herlaai WorldwideChat.'
   wwcPlayerNotFound: 'Speler %ek nie gevind nie.'
@@ -114,19 +114,19 @@ Messages:
     weergawe.'
   wwcConfigConversationRateLimitSuccess: 'Koers limiet suksesvol ingestel.'
   wwcConfigConversationWatsonURLSuccess: 'Watson URL suksesvol gestel.'
-  wwctbPlayerNotFound: 'Speler %i is nie gevind nie, of is nie \''n aktiewe vertaler
+  wwctbPlayerNotFound: 'Speler %i is nie gevind nie, of is nie ''n aktiewe vertaler
     nie.'
   wwcConfigConversationTranslationCacheSuccess: 'Vertaling kas limiet suksesvol ingestel.'
   wwctInvalidArgs: 'Ongeldige argumente verskaf!'
   wwcConfigGUIPrefixButton: Verander Plugin Voorvoegsel
   wwctSameLangError: 'Jy kan nie na dieselfde taal vertaal nie!'
-  wwctGUINewTranslationTarget: Kies \'n teikentaal
+  wwctGUINewTranslationTarget: Kies 'n teikentaal
   wwctLangToLangStartOtherPlayer: 'Vertaal nou die klets van %o van %i na %e.'
   wwcConfigConnectionSuccess: Suksesvol verbind na %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Is Aktief Vertaler: %i'
   wwctLangToLangStart: 'Vertaal nou al jou chat van %i na %o.'
-  wwcConfigConversationPrefixInput: Die huidige voorvoegsel is %i. Tik asseblief \'n
+  wwcConfigConversationPrefixInput: Die huidige voorvoegsel is %i. Tik asseblief 'n
     nuwe een, of tik 0 om terug te gaan.
   wwcConfigGUIPreviousPageButton: Vorige Bladsy
   wwcConfigGUITranslatorCacheButton: Verander Vertaling Cache Limiet
@@ -139,16 +139,16 @@ Messages:
   wwcConfigGUIChatSettings: Gesels Opstelling
   wwcConfigGUIWatsonURLButton: Verander Watson Diens URL
   wwcConfigConversationUpdateCheckerSuccess: 'Opdateer checker vertraging stel suksesvol.'
-  wwcUnsupportedVersion: 'Jy loop \''n nie-ondersteunde weergawe van Bukkit, Spigot,
+  wwcUnsupportedVersion: 'Jy loop ''n nie-ondersteunde weergawe van Bukkit, Spigot,
     of Paper. Ondersteunde versies:'
   wwctGUIBackToMainMenuButton: Terug na Main Vertaling Menu
   wwcGlobalOnJoinTranslationNotificationSourceLang: 'Globale chat word vertaal van
     %i na %o.'
   wwcConfigGUITranslatorSettings: Vertaler Opstelling
   wwcConfigConversationGoogleTranslateAPIKeyInput: Die huidige API-sleutel is %i.
-    Voer asseblief \'n API-sleutel in vir Google Translate, of tik 0 om terug te gaan.
+    Voer asseblief 'n API-sleutel in vir Google Translate, of tik 0 om terug te gaan.
   wwcConfigConversationRateLimitInput: Die huidige globale koersbeperking per vertaling
-    is %i sekondes. Tik enigiets groter as 0 om \'n nuwe waarde in te stel, of tik
+    is %i sekondes. Tik enigiets groter as 0 om 'n nuwe waarde in te stel, of tik
     0 om die limiet uit te skakel. Tik enigiets minder as 0 om terug te gaan.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Google Translate API sleutel
     stel suksesvol.'
@@ -158,39 +158,39 @@ Messages:
   wwcConfigConversationAmazonTranslateSecretKeySuccess: 'Amazon geheime sleutel suksesvol
     te stel.'
   wwcConfigConversationWatsonAPIKeySuccess: 'Watson API sleutel suksesvol stel.'
-  wwcRateLimit: 'Jou vertalings is koers beperk. Wag asseblief \''n ander %i sekondes.'
-  wwcConfigCacheEnabled: Vertaler kas geaktiveer en stel op \'n limiet van %i.
+  wwcRateLimit: 'Jou vertalings is koers beperk. Wag asseblief ''n ander %i sekondes.'
+  wwcConfigCacheEnabled: Vertaler kas geaktiveer en stel op 'n limiet van %i.
   wwctGUIExistingTranslationButton: Oorskryf Huidige Vertaling Sessie
   wwcOnJoinTranslationNotificationNoSourceLang: 'Jou geselsie word na %o vertaal.'
   wwcUserDataReloaded: Gelaai alle gestoor gebruiker data.
   wwcConfigGUISendTranslationChatButton: Stuur Chat Herinnering aan Active Translator
     op Login
   wwcsLastTranslationTime: 'Laaste (Suksesvolle) Vertaaltyd: %i'
-  wwctbNotATranslator: 'Jy is nie \''n aktiewe vertaler nie! Maak seker dat jy hierdie
+  wwctbNotATranslator: 'Jy is nie ''n aktiewe vertaler nie! Maak seker dat jy hierdie
     stel met/wwct.'
   wwcConfigConversationAmazonTranslateAccessKeyInput: Die huidige toegangsleutel is
-    %i. Voer asseblief \'n toegangsleutel vir Amazon in, of tik 0 om terug te gaan.
+    %i. Voer asseblief 'n toegangsleutel vir Amazon in, of tik 0 om terug te gaan.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: 'Amazon toegang sleutel stel
     suksesvol.'
   wwcConfigBadUpdateDelay: Ongeldige updater vertraging stel in config.yml. Verstek
     na 86400 sekondes...
   wwctrlRateLimitOffSender: 'Skakel jou koers limiet af.'
   wwctrlRateLimitAlreadyOffTarget: 'Die koersbeperking van %i is alreeds gedeaktiveer.'
-  wwctrlPlayerNotFound: 'Speler %i is nie gevind nie, of is nie \''n aktiewe vertaler
+  wwctrlPlayerNotFound: 'Speler %i is nie gevind nie, of is nie ''n aktiewe vertaler
     nie.'
   wwctrlRateLimitSetSender: 'Stel jou koersbeperking na %i sekondes.'
   wwctrlRateLimitOffTarget: 'Skakel die koersbeperking van %i af.'
   wwctrlRateLimitSetTarget: 'Stel die tempogrens van %i na %o sekondes.'
-  wwctrlNotATranslator: 'Jy is nie \''n aktiewe vertaler nie! Maak seker dat jy hierdie
+  wwctrlNotATranslator: 'Jy is nie ''n aktiewe vertaler nie! Maak seker dat jy hierdie
     stel met/wwct.'
   wwctrlRateLimitAlreadyOffSender: 'Jou tarieflimiet is reeds gedeaktiveer.'
   wwctGUIRateButton: Stel Koers Limiet
   wwctGUIConversationRateLimit: Die koersbeperking per vertaling is huidig %i sekondes.
-    Tik enigiets groter as 0 om \'n nuwe waarde in te stel, of tik 0 om die limiet
+    Tik enigiets groter as 0 om 'n nuwe waarde in te stel, of tik 0 om die limiet
     uit te skakel. Tik enigiets minder as 0 om terug te gaan.
   wwctGUITargetPlayerNull: 'Die teikenspeler ontkoppel van die bediener.'
   wwcConfigConversationSyncUserDataDelayInput: Die huidige vertraging per sinkronisasie
-    van gebruikersdata is %i sekondes. Tik enigiets groter as 10 om \'n nuwe waarde
+    van gebruikersdata is %i sekondes. Tik enigiets groter as 10 om 'n nuwe waarde
     te stel, of enigiets minder as 10 om terug te gaan.
   wwcConfigGUISyncUserDataButton: Verander Gebruiker Data Sync Vertraging
   wwcConfigSyncTime: Outomatiese gebruiker data sinkronisasie voltooi in %i nano sekondes.
@@ -201,7 +201,7 @@ Messages:
   wwcConfigSyncDelayInvalid: Ongeldige gebruiker data sync vertraging stel in config.yml.
     Verstek na 7200 sekondes...
   wwcConfigCacheInvalid: Vertaler kas grootte ongeldig. Verstek na 10...
-  wwcInventoryErrorPlayer: 'Fout bespeur met jou GUI. \''N Logboek is gestuur om
+  wwcInventoryErrorPlayer: 'Fout bespeur met jou GUI. ''N Logboek is gestuur om
     die konsole.'
   wwcInventoryError: Fout bespeur met GUI van gebruiker %i. Rapporteer asseblief hierdie
     probleem aan die ontwikkelaar.
@@ -210,7 +210,7 @@ Messages:
   wwcConfigConversationTranslatorSuccess: 'Suksesvol aangepas %i.'
   wwcConfigConversationConsoleTranslatorFail: Gebruiker %i het misluk om %o te aktiveer
     %o.
-  wwcWatson117Warning: Watson het misluk om te inisialiseer as gevolg van \'n InaccessibleObjectException.
+  wwcWatson117Warning: Watson het misluk om te inisialiseer as gevolg van 'n InaccessibleObjectException.
     Vir nou, voeg asseblief —illegal-access=permit by jou bestaande bedienerjar argumente.
   wwcDeluxeChatIncompatible: Hierdie inprop werk dalk nie behoorlik met DeluxeChat
     nie.
@@ -230,7 +230,7 @@ Messages:
   wwcSignTranslationFailCatastrophic: 'Misluk om teiken teken te vertaal.'
   wwcItemTranslationFailCatastrophic: 'Misluk om teiken item te vertaal.'
   wwcBookTranslateTitleSuccess: 'Vertaalde Boek Titel: %i'
-  wwctiOnSender: 'Item vertaling geaktiveer. Regs-kliek met \''n item in jou hoof
+  wwctiOnSender: 'Item vertaling geaktiveer. Regs-kliek met ''n item in jou hoof
     hand om dit te vertaal!'
   wwcItemTranslateLoreStart: 'Vertaling van leersaamhede van teiken item...'
   wwcItemTranslateLoreDone: 'Vertaal item leersaamhede suksesvol.'
@@ -247,12 +247,12 @@ Messages:
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat kondoneer nie die gebruik van/herlaai nie.
     Gaan asseblief met omsigtigheid voort
-  wwcConfigEnabledDebugMode: Ontfout modus geaktiveer. As jy nie \'n ontwikkelaar
+  wwcConfigEnabledDebugMode: Ontfout modus geaktiveer. As jy nie 'n ontwikkelaar
     of probleemoplossing is nie, moet jy dit afskakel.
   wwcTranslatorErrorThresholdReached: Fout drumpel bereik. Hierdie inprop sal nou
     herlaai en alle vertalers deaktiveer.
   wwcConfigErrorLimitEnabled: Vertaler fout limiet stel na %i.
-  wwcTranslatorError: '\''N Probleem ondervind terwyl \''n poging om jou vertaling.
+  wwcTranslatorError: '''N Probleem ondervind terwyl ''n poging om jou vertaling.
     Probeer asseblief weer.'
   wwcTranslatorErrorConsole: '''n Probleem het ondervind terwyl gebruiker %i hul vertaling
     probeer het. Nou druk die stacktrace.'

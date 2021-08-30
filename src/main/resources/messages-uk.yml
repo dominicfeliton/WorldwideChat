@@ -16,7 +16,7 @@ Messages:
   wwcsNotATranslator: 'Поки немає записів, доступних для %i.'
   wwcConfigGUIbStatsButton: Перемикач bStats
   wwctGUINewTranslationSource: Вибір мови джерела
-  wwcConfigConnectionFailed: Не вдалося з\'єднатися з %o. Переконайтеся, що ваші
+  wwcConfigConnectionFailed: Не вдалося з'єднатися з %o. Переконайтеся, що ваші
     облікові дані та брандмауер налаштовано правильно!
   wwcConfigEnabledbStats: Увімкнено bStats.
   wwctGUIMainMenuPlayer: Меню перекладо %i
@@ -52,7 +52,7 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat застаріла. Будь ласка, оновіть до останньої версії,
     %i.
   wwcConfigGUIChangesNotSaved: 'Ваші зміни можуть не набути чинності, доки ви не
-    запустите /wwcr, або не натиснете на червоний бар\''єр в /wwc.'
+    запустите /wwcr, або не натиснете на червоний бар''єр в /wwc.'
   wwcConfigGUINextPageButton: Наступна сторінка
   wwctbTranslatePageFail: (Не вдалося перекласти цю сторінку) %i
   wwcConfigInvalidTranslatorSettings: Некоректні налаштування перекладача! Будь ласка,
@@ -125,7 +125,7 @@ Messages:
   wwctSameLangError: 'Ви не можете перекладати тією ж мовою!'
   wwctGUINewTranslationTarget: Вибір мови призначення
   wwctLangToLangStartOtherPlayer: 'Тепер переклад чату %o з %i на %e.'
-  wwcConfigConnectionSuccess: Успішно з\'єднано з %o
+  wwcConfigConnectionSuccess: Успішно з'єднано з %o
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Є активним перекладачем: %i'
   wwctLangToLangStart: 'Тепер перекладаємо всі ваші чати з %i на %o.'
@@ -191,7 +191,7 @@ Messages:
   wwctGUIConversationRateLimit: Обмеження швидкості на переклад поточно %i секунд.
     Введіть щось більше 0, щоб встановити нове значення, або введіть 0, щоб вимкнути
     обмеження. Введіть що-небудь менше 0, щоб повернутися назад.
-  wwctGUITargetPlayerNull: 'Цільовий гравець від\''єднано від сервера.'
+  wwctGUITargetPlayerNull: 'Цільовий гравець від''єднано від сервера.'
   wwcConfigConversationSyncUserDataDelayInput: Поточна затримка на синхронізацію даних
     користувача становить %i секунд. Введіть щось більше 10, щоб встановити нове значення,
     або щось менше 10, щоб повернутися назад.
@@ -208,7 +208,7 @@ Messages:
   wwcInventoryError: Виявлено помилку з графічним інтерфейсом користувача %i. Будь
     ласка, повідомте про цю проблему розробнику.
   wwcConfigConversationTranslatorFail: 'Не вдалося вбути %i.'
-  wwcConfigConversationConsoleTranslatorSuccess: Користувач %i успішно в\'язував
+  wwcConfigConversationConsoleTranslatorSuccess: Користувач %i успішно в'язував
     %o.
   wwcConfigConversationTranslatorSuccess: 'Успішно вняє %i.'
   wwcConfigConversationConsoleTranslatorFail: Користувач %i не вдалося вмикання %o.
