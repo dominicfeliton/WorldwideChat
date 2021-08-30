@@ -1,19 +1,19 @@
 Messages:
-  wwcgAutoTranslateStart: ' در حال حاضر ترجمه گپ جهانی به %o.'
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' گپ جهانی به %o در حال ترجمه
+  wwcgAutoTranslateStart: 'در حال حاضر ترجمه گپ جهانی به %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'گپ جهانی به %o در حال ترجمه
     است.'
   wwcConfigGUIAmazonTranslateAccessKeyButton: تغییر کلید دسترسی آمازون
-  wwcrFail: ' بارگیری مجدد WorldWidechat شکست خورد.'
+  wwcrFail: 'بارگیری مجدد WorldWidechat شکست خورد.'
   wwcConfigGUIUpdateCheckerButton: بررسی تغییر برای تاخیر به روز رسانی
   wwcUpdaterFailedGeneric: قادر به بررسی به روز رسانی WorldWidechat نیست.
   wwcConfigConversationUpdateCheckerInput: تاخیر فعلی در جستجوگر به روز رسانی %i ثانیه
     است. هر چیزی بزرگتر از ۱۰ را تایپ کنید تا مقدار جدید تعیین شود، یا هر چیزی کمتر
     از ۱۰ برای بازگشت به عقب.
   wwctGUIMainMenuGlobal: منوی ترجمه جهانی
-  wwcConfigConversationPluginUpdateChatSuccess: ' یادآوری چت به روز رسانی پلاگین با
+  wwcConfigConversationPluginUpdateChatSuccess: 'یادآوری چت به روز رسانی پلاگین با
     موفقیت togggled.'
-  wwctbOnTarget: ' ترجمه کتاب برای %i فعال شد.'
-  wwcsNotATranslator: ' هنوز رکوردی برای %i در دسترس نیست.'
+  wwctbOnTarget: 'ترجمه کتاب برای %i فعال شد.'
+  wwcsNotATranslator: 'هنوز رکوردی برای %i در دسترس نیست.'
   wwcConfigGUIbStatsButton: ضامن bStats
   wwctGUINewTranslationSource: زبان منبع را انتخاب کنید
   wwcConfigConnectionFailed: اتصال به %o شکست خورد. مطمئن شوید که اعتبارنامه ها و
@@ -22,129 +22,127 @@ Messages:
   wwctGUIMainMenuPlayer: منوی ترجمه %i
   wwctGUIBookButton: ضامن ترجمه کتاب
   wwcLangDetected: زبان شناسایی شده %o.
-  wwcBookTranslateStart: ' ترجمه کتاب هدف...'
+  wwcBookTranslateStart: 'ترجمه کتاب هدف...'
   wwcConfigDisabledbStats: bStats غیرفعال.
-  wwctsOffSender: ' ترجمه امضا غیرفعال شد.'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' گپ جهانی در حال ترجمه
+  wwctsOffSender: 'ترجمه امضا غیرفعال شد.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'گپ جهانی در حال ترجمه
     است، اما گپ شما از %i به %o ترجمه می شود.'
   wwcUpdaterParserFailed: تجزیه اطلاعات به روز رسانی از Github شکست خورد.
-  wwctAutoTranslateStart: ' اکنون همه گفتگوهای شما را به %o ترجمه می کند.'
+  wwctAutoTranslateStart: 'اکنون همه گفتگوهای شما را به %o ترجمه می کند.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: کلید مخفی فعلی %i است. لطفا
     یک کلید مخفی برای آمازون وارد کنید، یا تایپ 0 برای بازگشت.
-  wwctbOffSender: ' ترجمه کتاب غیرفعال شد.'
+  wwctbOffSender: 'ترجمه کتاب غیرفعال شد.'
   wwcConfigGUIAmazonTranslateButton: آمازون ترجمه
-  wwcConfigConversationLangSuccess: ' زبان افزونه با موفقیت تغییر کرد.'
-  wwcsSuccessfulTranslations: ' ترجمه های موفق: %i'
-  wwctTranslationStoppedOtherPlayer: ' ترجمه گپ برای %i متوقف شده است.'
+  wwcConfigConversationLangSuccess: 'زبان افزونه با موفقیت تغییر کرد.'
+  wwcsSuccessfulTranslations: 'ترجمه های موفق: %i'
+  wwctTranslationStoppedOtherPlayer: 'ترجمه گپ برای %i متوقف شده است.'
   wwcConfigConversationTranslationCacheInput: محدودیت حافظه نهان ترجمه فعلی عبارت
     %i است. برای تنظیم مقدار جدید، هر چیزی بیشتر از ۰ تایپ کنید، یا برای غیرفعال کردن
     حافظه پنهان ترجمه، تایپ ۰ کنید. هر چیزی کمتر از 0 تایپ کنید تا به عقب برگردید.
-  wwctbOffTarget: ' ترجمه کتاب برای %i غیرفعال شد.'
+  wwctbOffTarget: 'ترجمه کتاب برای %i غیرفعال شد.'
   wwcConfigGUIGeneralSettings: پیکربندی عمومی
   wwcInvalidLang: زبان نامعتبر در config.yml شما. قصور به EN...
-  wwcConfigConversationAmazonTranslateRegionSuccess: ' منطقه آمازون با موفقیت تنظیم
+  wwcConfigConversationAmazonTranslateRegionSuccess: 'منطقه آمازون با موفقیت تنظیم
     شد.'
   wwcConfigRateLimitEnabled: محدودیت نرخ جهانی فعال شده و روی %i ثانیه تنظیم شده است.
-  wwcBadPerms: ' شما مجوزهای لازم برای اجرای این فرمان را ندارید!'
+  wwcBadPerms: 'شما مجوزهای لازم برای اجرای این فرمان را ندارید!'
   wwcConfigGUILangButton: تغییر زبان وصله
   wwctGUISignButton: ضامن ترجمه امضا
   wwcUpdaterOutOfDate: WorldWidechat از تاریخ خارج شده است. لطفا به آخرین نسخه به
     روز رسانی, %i.
-  wwcConfigGUIChangesNotSaved: ' تغییرات شما ممکن است تا زمانی که شما یا اجرا /wwcr
+  wwcConfigGUIChangesNotSaved: 'تغییرات شما ممکن است تا زمانی که شما یا اجرا /wwcr
     یا کلیک بر روی مانع قرمز در /wwcc.'
   wwcConfigGUINextPageButton: صفحه بعدی
   wwctbTranslatePageFail: (ترجمه این صفحه شکست خورد) %i
   wwcConfigInvalidTranslatorSettings: تنظیمات مترجم نامعتبر! لطفا تنها یک مترجم را
     در config.yml خود فعال کنید.
   wwcConfigGUIQuitButton: خروج و ذخیره تغییرات
-  wwctPlayerNotFound: ' بازیکن %من پیدا نشد.'
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' گپ جهانی در حال ترجمه
+  wwctPlayerNotFound: 'بازیکن %من پیدا نشد.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'گپ جهانی در حال ترجمه
     است، اما گپ شما به %o ترجمه می شود.'
   wwcConfigGUIGlobalRateLimit: تغییر محدودیت نرخ جهانی
   wwctGUIBackToSourceLanguageButton: بازگشت به منوی زبان منبع
   wwcConfigGUIAmazonTranslateRegionButton: تغییر منطقه آمازون
   wwcConfigConversationLangInput: 'زبان افزونه %i است. لطفا کد زبان معتبری را وارد
     کنید، یا برای لغو تایپ 0 کنید. کدهای زبان معتبر: %o'
-  wwcConfigConversationLangInvalid: ' کد زبان نامعتبر!'
-  wwctTranslationStopped: ' ترجمه چت شما متوقف شده است.'
-  wwctsPlayerNotFound: ' بازیکن %i یا یافت نشد، یا مترجم فعال نیست.'
+  wwcConfigConversationLangInvalid: 'کد زبان نامعتبر!'
+  wwctTranslationStopped: 'ترجمه چت شما متوقف شده است.'
   wwcConfigGUIWatsonAPIKeyButton: تغییر کلید API واتسون
   wwcEnabled: نسخه WideChat را فعال کنید %i.
-  wwcgLangToLangStart: ' در حال حاضر ترجمه گپ جهانی از %i به %o.'
-  wwctbOnSender: ' ترجمه کتاب فعال شد. کلیک راست کنید در حالی که نگه داشتن یک کتاب
+  wwcgLangToLangStart: 'در حال حاضر ترجمه گپ جهانی از %i به %o.'
+  wwctbOnSender: 'ترجمه کتاب فعال شد. کلیک راست کنید در حالی که نگه داشتن یک کتاب
     برای ترجمه آن!'
   wwcListenersInitialized: شنوندگان مقداردهی اولیه
   wwcUserDataCorrupted: یافت و جابجایی %i فایل های داده کاربر خراب شده یا قدیمی. آنها
     در بازنگری بعدی حذف خواهند شد.
   wwcConfigGUIPluginUpdateChatButton: ارسال یادآوری چت برای به‌روزرسانی‌های افزونه
-  wwcConfigConversationSendTranslationChatSuccess: ' یادآوری چت مترجم فعال با موفقیت
+  wwcConfigConversationSendTranslationChatSuccess: 'یادآوری چت مترجم فعال با موفقیت
     togggled.'
-  wwctsOffTarget: ' ترجمه امضا برای %i غیرفعال شد.'
+  wwctsOffTarget: 'ترجمه امضا برای %i غیرفعال شد.'
   wwcUpdaterConnectionFailed: قادر به بررسی آخرین به روز رسانی در Github نیست.
-  watsonNotFoundExceptionNotification: ' دیگر قادر به ترجمه ورودی شما نیست.'
+  watsonNotFoundExceptionNotification: 'دیگر قادر به ترجمه ورودی شما نیست.'
   wwcConfigConversationWatsonAPIKeyInput: کلید API فعلی %i است. لطفا یک کلید API برای
     واتسون وارد کنید، یا برای بازگشت به عقب تایپ 0 کنید.
   wwctGUIStopButton: توقف ترجمه
-  wwcgTranslationStopped: ' ترجمه جهانی چت متوقف شده است.'
-  wwctAutoTranslateStartOtherPlayer: ' در حال حاضر ترجمه گپ از %i به %o.'
+  wwcgTranslationStopped: 'ترجمه جهانی چت متوقف شده است.'
+  wwctAutoTranslateStartOtherPlayer: 'در حال حاضر ترجمه گپ از %i به %o.'
   wwcUpdaterFutureDate: این نمونه از WorldWidechat دارای یک نسخه بزرگتر از آخرین نسخه
     عمومی است.
-  wwcConfigConversationPrefixSuccess: ' پیشوند با موفقیت تغییر کرد.'
+  wwcConfigConversationPrefixSuccess: 'پیشوند با موفقیت تغییر کرد.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: تغییر کلید گوگل ترجمه API
-  wwcSignDeletedOrTooLong: ' علامت هدف یا حذف شد یا ترجمه بیش از حد طولانی بود. ترجمه:'
-  wwctsOnTarget: ' ترجمه امضا برای %i فعال شد.'
+  wwcSignDeletedOrTooLong: 'علامت هدف یا حذف شد یا ترجمه بیش از حد طولانی بود. ترجمه:'
+  wwctsOnTarget: 'ترجمه امضا برای %i فعال شد.'
   wwcConfigCacheDisabled: حافظه پنهان مترجم غیرفعال شد.
   wwcConfigConversationWatsonURLInput: نشانی وب فعلی %i است. لطفا یک نشانی وب سرویس
     برای واتسون وارد کنید، یا برای بازگشت به عقب تایپ کنید.
-  wwcOnJoinTranslationNotificationSourceLang: ' گفتگوی شما از %i به %o ترجمه می شود.'
-  wwcBookDone: ' کتاب با موفقیت ترجمه شد.'
-  wwctsOnSender: ' ترجمه امضا فعال شد. کلیک راست بر روی یک علامت برای ترجمه آن!'
-  watsonColorCodeWarning: ' استفاده از کدهای رنگی ممکن است نتایج غیر قابل پیش بینی
+  wwcOnJoinTranslationNotificationSourceLang: 'گفتگوی شما از %i به %o ترجمه می شود.'
+  wwcBookDone: 'کتاب با موفقیت ترجمه شد.'
+  wwctsOnSender: 'ترجمه امضا فعال شد. کلیک راست بر روی یک علامت برای ترجمه آن!'
+  watsonColorCodeWarning: 'استفاده از کدهای رنگی ممکن است نتایج غیر قابل پیش بینی
     را به شما بدهد.'
   wwctGUITranslationButton: شروع به ترجمه
   wwctGUIAutoDetectButton: آشکارسازی خودکار زبان منبع
   wwcUpdaterUpToDate: WorldWidechat به روز است!
   wwcConfigConversationAmazonTranslateRegionInput: منطقه فعلی %i است. لطفا یک منطقه
     را برای آمازون وارد کنید، یا نوع 0 را برای بازگشت تایپ کنید.
-  wwcNoConsole: ' این دستور تنها توسط یک بازیکن قابل اجرا است.'
+  wwcNoConsole: 'این دستور تنها توسط یک بازیکن قابل اجرا است.'
   wwcInitializationFail: موفق به مقداردهی اولیه WorldWidechat نشد.
-  wwcrSuccess: ' با موفقیت دوباره worldWidechat.'
-  wwcPlayerNotFound: ' بازیکن %من پیدا نشد.'
-  wwcUpdaterOutOfDateChat: ' WorldWidechat از تاریخ خارج شده است. لطفا به آخرین نسخه
+  wwcrSuccess: 'با موفقیت دوباره worldWidechat.'
+  wwcPlayerNotFound: 'بازیکن %من پیدا نشد.'
+  wwcUpdaterOutOfDateChat: 'WorldWidechat از تاریخ خارج شده است. لطفا به آخرین نسخه
     به روز رسانی.'
-  wwcConfigConversationRateLimitSuccess: ' حد مجاز تعیین شده با موفقیت.'
-  wwcConfigConversationWatsonURLSuccess: ' نشانی وب واتسون با موفقیت تنظیم شد.'
-  wwctbPlayerNotFound: ' بازیکن %i یا یافت نشد، یا مترجم فعال نیست.'
-  wwcConfigConversationTranslationCacheSuccess: ' محدودیت حافظه پنهان ترجمه با موفقیت
+  wwcConfigConversationRateLimitSuccess: 'حد مجاز تعیین شده با موفقیت.'
+  wwcConfigConversationWatsonURLSuccess: 'نشانی وب واتسون با موفقیت تنظیم شد.'
+  wwctbPlayerNotFound: 'بازیکن %i یا یافت نشد، یا مترجم فعال نیست.'
+  wwcConfigConversationTranslationCacheSuccess: 'محدودیت حافظه پنهان ترجمه با موفقیت
     تنظیم شده است.'
-  wwctInvalidArgs: ' استدلال های نامعتبر ارائه شده!'
+  wwctInvalidArgs: 'استدلال های نامعتبر ارائه شده!'
   wwcConfigGUIPrefixButton: تغییر پیشوند پلاگین
-  wwctSameLangError: ' شما نمی توانید به یک زبان ترجمه کنید!'
+  wwctSameLangError: 'شما نمی توانید به یک زبان ترجمه کنید!'
   wwctGUINewTranslationTarget: زبان مقصد را انتخاب کنید
-  wwctLangToLangStartOtherPlayer: ' در حال حاضر ترجمه گپ از %o از %i به %e.'
+  wwctLangToLangStartOtherPlayer: 'در حال حاضر ترجمه گپ از %o از %i به %e.'
   wwcConfigConnectionSuccess: با موفقیت به %o متصل شد!
   wwcConfigGUIGoogleTranslateButton: گوگل ترجمه
-  wwcsIsActiveTranslator: ' مترجم فعال است: %i'
-  wwctLangToLangStart: ' در حال حاضر ترجمه همه چت از %i به %o.'
+  wwcsIsActiveTranslator: 'مترجم فعال است: %i'
+  wwctLangToLangStart: 'در حال حاضر ترجمه همه چت از %i به %o.'
   wwcConfigConversationPrefixInput: پیشوند فعلی %i است. لطفا یک پیشوند جدید تایپ کنید،
     یا برای بازگشت تایپ 0 کنید.
   wwcConfigGUIPreviousPageButton: صفحه قبلی
   wwcConfigGUITranslatorCacheButton: تغییر محدودیت حافظه پنهان ترجمه
-  wwcConfigConversationbStatsSuccess: ' bStats را با موفقیت به کار برد.'
-  wwcSignDone: ' امضا با موفقیت ترجمه شد.'
+  wwcConfigConversationbStatsSuccess: 'bStats را با موفقیت به کار برد.'
+  wwcSignDone: 'امضا با موفقیت ترجمه شد.'
   wwcConfigInvalidPrefixSettings: خواندن پیشوند شما ناموفق بود. با استفاده از پیش
     فرض...
   wwcConfigRateLimitInvalid: حد نرخ بد تنظیم شده در config.yml. قصور تا 0 ثانیه...
-  wwcSignTranslateStart: ' در حال ترجمه علامت هدف...'
+  wwcSignTranslateStart: 'در حال ترجمه علامت هدف...'
   wwcConfigGUIChatSettings: پیکربندی گپ
   wwcConfigGUIWatsonURLButton: تغییر نشانی وب سرویس واتسون
-  wwctInvalidLangCode: ' کد (های) زبان نامعتبر ارائه شده! کدهای معتبر زبان: %o'
-  wwcConfigConversationUpdateCheckerSuccess: ' به روز رسانی تاخیر چک کننده با موفقیت
+  wwcConfigConversationUpdateCheckerSuccess: 'به روز رسانی تاخیر چک کننده با موفقیت
     تنظیم.'
   wwcUnsupportedVersion: 'شما در حال اجرا یک نسخه پشتیبانی نشده از Bukkit، Spiget،
     و یا کاغذ. نسخه‌های پشتیبانی شده:'
   wwctGUIBackToMainMenuButton: بازگشت به منوی اصلی ترجمه
-  wwcGlobalOnJoinTranslationNotificationSourceLang: ' گپ جهانی از %i به %o در حال
+  wwcGlobalOnJoinTranslationNotificationSourceLang: 'گپ جهانی از %i به %o در حال
     ترجمه است.'
   wwcConfigGUITranslatorSettings: پیکربندی مترجم
   wwcConfigConversationGoogleTranslateAPIKeyInput: کلید API فعلی %i است. لطفا کلید
@@ -152,47 +150,43 @@ Messages:
   wwcConfigConversationRateLimitInput: محدودیت نرخ جهانی فعلی در هر ترجمه %i ثانیه
     است. برای تنظیم مقدار جدید، هر چیزی بیشتر از 0 تایپ کنید، یا نوع 0 را برای غیرفعال
     کردن محدودیت تایپ کنید. هر چیزی کمتر از 0 تایپ کنید تا به عقب برگردید.
-  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' گوگل ترجمه API کلید مجموعه
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: 'گوگل ترجمه API کلید مجموعه
     با موفقیت.'
   wwcConfigGUIAmazonTranslateSecretKeyButton: تغییر کلید راز آمازون
-  wwcVersion: ' ورلد ویچت، نسخه'
-  wwcsName: ' نام بازیکن: %i'
-  wwcsAttemptedTranslations: ' اقدام به ترجمه: %i'
-  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' آمازون کلید مخفی مجموعه
+  wwcVersion: 'ورلد ویچت، نسخه'
+  wwcsAttemptedTranslations: 'اقدام به ترجمه: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: 'آمازون کلید مخفی مجموعه
     با موفقیت.'
-  wwcConfigConversationWatsonAPIKeySuccess: ' واتسون مجموعه کلید API با موفقیت.'
-  wwctGUIMainMenu: منوی ترجمه شما
-  wwctsNotATranslator: ' تو يه مترجم فعال نيستي اطمینان حاصل کنید که این را با /wwct
-    تنظیم کرده اید.'
-  wwcRateLimit: ' ترجمه خود را نرخ محدود. لطفا دیگر %i ثانیه صبر کنید.'
+  wwcConfigConversationWatsonAPIKeySuccess: 'واتسون مجموعه کلید API با موفقیت.'
+  wwcRateLimit: 'ترجمه خود را نرخ محدود. لطفا دیگر %i ثانیه صبر کنید.'
   wwcConfigCacheEnabled: حافظه پنهان مترجم فعال شده و روی محدودیت %i تنظیم شده است.
   wwctGUIExistingTranslationButton: بازنویسی جلسه ترجمه فعلی
-  wwcOnJoinTranslationNotificationNoSourceLang: ' گفتگوی شما به %o ترجمه می شود.'
+  wwcOnJoinTranslationNotificationNoSourceLang: 'گفتگوی شما به %o ترجمه می شود.'
   wwcUserDataReloaded: بارگذاری تمام داده های ذخیره شده کاربر.
   wwcConfigGUISendTranslationChatButton: ارسال یادآوری چت به مترجم فعال در هنگام ورود
-  wwcsLastTranslationTime: ' آخرین (موفق) زمان ترجمه: %i'
-  wwctbNotATranslator: ' تو يه مترجم فعال نيستي اطمینان حاصل کنید که این را با /wwct
+  wwcsLastTranslationTime: 'آخرین (موفق) زمان ترجمه: %i'
+  wwctbNotATranslator: 'تو يه مترجم فعال نيستي اطمینان حاصل کنید که این را با /wwct
     تنظیم کرده اید.'
   wwcConfigConversationAmazonTranslateAccessKeyInput: کلید دسترسی فعلی %i است. لطفا
     کلید دسترسی را برای آمازون وارد کنید، یا برای بازگشت تایپ 0 کنید.
-  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' کلید دسترسی آمازون با موفقیت
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: 'کلید دسترسی آمازون با موفقیت
     تنظیم شده است.'
   wwcConfigBadUpdateDelay: تاخیر updater نامعتبر تنظیم شده در config.yml.... تا 86400
     ثانيه
-  wwctrlRateLimitOffSender: ' خاموش محدودیت نرخ خود را.'
-  wwctrlRateLimitAlreadyOffTarget: ' محدودیت نرخی از %i از قبل غیرفعال شده است.'
-  wwctrlPlayerNotFound: ' بازیکن %i یا یافت نشد، یا مترجم فعال نیست.'
-  wwctrlRateLimitSetSender: ' محدودیت نرخ خود را به %i ثانیه تنظیم کنید.'
-  wwctrlRateLimitOffTarget: ' محدودیت نرخی از %i را خاموش کرد.'
-  wwctrlRateLimitSetTarget: ' محدودیت نرخ از %i به %o ثانیه را تنظیم کنید.'
-  wwctrlNotATranslator: ' تو يه مترجم فعال نيستي اطمینان حاصل کنید که این را با /wwct
+  wwctrlRateLimitOffSender: 'خاموش محدودیت نرخ خود را.'
+  wwctrlRateLimitAlreadyOffTarget: 'محدودیت نرخی از %i از قبل غیرفعال شده است.'
+  wwctrlPlayerNotFound: 'بازیکن %i یا یافت نشد، یا مترجم فعال نیست.'
+  wwctrlRateLimitSetSender: 'محدودیت نرخ خود را به %i ثانیه تنظیم کنید.'
+  wwctrlRateLimitOffTarget: 'محدودیت نرخی از %i را خاموش کرد.'
+  wwctrlRateLimitSetTarget: 'محدودیت نرخ از %i به %o ثانیه را تنظیم کنید.'
+  wwctrlNotATranslator: 'تو يه مترجم فعال نيستي اطمینان حاصل کنید که این را با /wwct
     تنظیم کرده اید.'
-  wwctrlRateLimitAlreadyOffSender: ' محدودیت نرخ شما در حال حاضر غیر فعال.'
+  wwctrlRateLimitAlreadyOffSender: 'محدودیت نرخ شما در حال حاضر غیر فعال.'
   wwctGUIRateButton: تنظیم محدودیت نرخ
   wwctGUIConversationRateLimit: محدودیت نرخ در هر ترجمه در حال حاضر %i ثانیه است.
     برای تنظیم مقدار جدید، هر چیزی بیشتر از 0 تایپ کنید، یا نوع 0 را برای غیرفعال
     کردن محدودیت تایپ کنید. هر چیزی کمتر از 0 تایپ کنید تا به عقب برگردید.
-  wwctGUITargetPlayerNull: ' بازیکن هدف از سرور قطع شد.'
+  wwctGUITargetPlayerNull: 'بازیکن هدف از سرور قطع شد.'
   wwcConfigConversationSyncUserDataDelayInput: تأخیر فعلی در هر همگام‌سازی داده‌های
     کاربر %i ثانیه است. هر چیزی بزرگتر از ۱۰ را تایپ کنید تا مقدار جدید تعیین شود،
     یا هر چیزی کمتر از ۱۰ برای بازگشت به عقب.
@@ -200,51 +194,48 @@ Messages:
   wwcConfigSyncTime: همگام‌سازی خودکار داده کاربر در %i نانو ثانیه تکمیل شد.
   wwcConfigSyncDelayEnabled: تاخیر در همگام‌سازی داده کاربر به %i ثانیه تنظیم شده
     است.
-  wwcConfigConversationSyncUserDataDelaySuccess: ' تاخیر همگام سازی داده های کاربر
+  wwcConfigConversationSyncUserDataDelaySuccess: 'تاخیر همگام سازی داده های کاربر
     با موفقیت تنظیم شده است.'
   wwcConfigSyncDelayInvalid: تاخیر همگام سازی داده کاربر نامعتبر تنظیم شده در config.yml.
     تا 7200 ثانيه...
   wwcConfigCacheInvalid: اندازه کش مترجم نامعتبر است. قصور به 10...
-  wwcInventoryErrorPlayer: ' خطای شناسایی شده با رابط کاربری گرافیکی شما. یک ورود
+  wwcInventoryErrorPlayer: 'خطای شناسایی شده با رابط کاربری گرافیکی شما. یک ورود
     به سیستم به کنسول ارسال شده است.'
   wwcInventoryError: خطای تشخیص داده شده با رابط کاربری گرافیکی کاربر %i. لطفا این
     مشکل را به توسعه دهنده گزارش دهید.
-  wwcConfigConversationTranslatorFail: ' قادر به کارکردن %i شکست خورد.'
+  wwcConfigConversationTranslatorFail: 'قادر به کارکردن %i شکست خورد.'
   wwcConfigConversationConsoleTranslatorSuccess: کاربر %i با موفقیت توان %o.
-  wwcConfigConversationTranslatorSuccess: ' با موفقیت کار %i را ممکن کرد.'
+  wwcConfigConversationTranslatorSuccess: 'با موفقیت کار %i را ممکن کرد.'
   wwcConfigConversationConsoleTranslatorFail: کاربری %o موفق به کارمندی %o نشدم.
   wwcWatson117Warning: واتسون به دلیل یک InaccessibleObjectexCeption نتوانست مقداردهی
     اولیه شود. در حال حاضر، لطفا —illegal-access=اجازه را به استدلال جار سرور موجود
     خود اضافه کنید.
   wwcDeluxeChatIncompatible: این افزونه ممکن است به درستی با DeluxeChat کار نکند.
-  wwcSignTranslationFail: ' قادر به ترجمه یک یا چند خط در تابلوی هدف شما نیست.'
-  wwcBookTranslationFail: ' قادر به ترجمه یک یا چند صفحه در کتاب هدف شما نیست.'
-  wwctiOffTarget: ' ترجمه مورد برای %i غیرفعال شد.'
-  wwctiPlayerNotFound: ' بازیکن %i یا یافت نشد، یا مترجم فعال نیست.'
-  wwctiOffSender: ' ترجمه مورد غیرفعال شد.'
-  wwcItemTranslateTitleStock: ' قادر به ترجمه نام موارد پیش فرض نیست.'
-  wwcItemTranslateLoreFail: ' ترجمه افسانه هاو روایات قومی شکست خورد.'
-  wwcItemTranslateTitleFail: ' ترجمه نام مورد ناموفق بود.'
-  wwctiNotATranslator: ' تو يه مترجم فعال نيستي اطمینان حاصل کنید که این را با /wwct
-    تنظیم کرده اید.'
+  wwcSignTranslationFail: 'قادر به ترجمه یک یا چند خط در تابلوی هدف شما نیست.'
+  wwcBookTranslationFail: 'قادر به ترجمه یک یا چند صفحه در کتاب هدف شما نیست.'
+  wwctiOffTarget: 'ترجمه مورد برای %i غیرفعال شد.'
+  wwctiOffSender: 'ترجمه مورد غیرفعال شد.'
+  wwcItemTranslateTitleStock: 'قادر به ترجمه نام موارد پیش فرض نیست.'
+  wwcItemTranslateLoreFail: 'ترجمه افسانه هاو روایات قومی شکست خورد.'
+  wwcItemTranslateTitleFail: 'ترجمه نام مورد ناموفق بود.'
   wwctGUIItemButton: زدن ضامن ترجمه مورد
-  wwcItemTranslateTitleDone: ' عنوان آیتم ترجمه شده با موفقیت.'
+  wwcItemTranslateTitleDone: 'عنوان آیتم ترجمه شده با موفقیت.'
   wwcGUITempItem: نمایش آیتم
-  wwcItemTranslateStart: ' در حال ترجمه مورد هدف...'
-  wwcSignTranslationFailCatastrophic: ' ترجمه علامت هدف ناموفق بود.'
-  wwcItemTranslationFailCatastrophic: ' ترجمه مورد هدف شکست خورد.'
-  wwcBookTranslateTitleSuccess: ' عنوان کتاب ترجمه شده: %i'
-  wwctiOnSender: ' ترجمه مورد فعال شد. با یک آیتم در دست اصلی خود راست کلیک کنید تا
+  wwcItemTranslateStart: 'در حال ترجمه مورد هدف...'
+  wwcSignTranslationFailCatastrophic: 'ترجمه علامت هدف ناموفق بود.'
+  wwcItemTranslationFailCatastrophic: 'ترجمه مورد هدف شکست خورد.'
+  wwcBookTranslateTitleSuccess: 'عنوان کتاب ترجمه شده: %i'
+  wwctiOnSender: 'ترجمه مورد فعال شد. با یک آیتم در دست اصلی خود راست کلیک کنید تا
     آن را ترجمه کنید!'
-  wwcItemTranslateLoreStart: ' ترجمه افسانه مورد هدف...'
-  wwcItemTranslateLoreDone: ' ترجمه افسانه هاو روایات قومی با موفقیت'
-  wwctiOnTarget: ' ترجمه مورد برای %i فعال شد.'
-  wwcBookTranslationFailCatastrophic: ' ترجمه کتاب هدف ناموفق بود.'
-  wwcBookTranslateTitleFail: ' ترجمه عنوان کتاب شکست خورد.'
-  wwcChatTranslationFail: ' در ترجمه پیام شما ناموفق بود.'
-  wwcInvalidTranslator: ' تنظیمات مترجم نامعتبر. لطفا این را در config.yml خود یا
+  wwcItemTranslateLoreStart: 'ترجمه افسانه مورد هدف...'
+  wwcItemTranslateLoreDone: 'ترجمه افسانه هاو روایات قومی با موفقیت'
+  wwctiOnTarget: 'ترجمه مورد برای %i فعال شد.'
+  wwcBookTranslationFailCatastrophic: 'ترجمه کتاب هدف ناموفق بود.'
+  wwcBookTranslateTitleFail: 'ترجمه عنوان کتاب شکست خورد.'
+  wwcChatTranslationFail: 'در ترجمه پیام شما ناموفق بود.'
+  wwcInvalidTranslator: 'تنظیمات مترجم نامعتبر. لطفا این را در config.yml خود یا
     با /wwcc برای استفاده از این افزونه رفع کنید.'
-  wwcNotDoneLoading: ' WorldwideChat هنوز در حال مقداردهی اولیه است. لطفا به زودی
+  wwcNotDoneLoading: 'WorldwideChat هنوز در حال مقداردهی اولیه است. لطفا به زودی
     دوباره امتحان کنید.'
   wwcConfigGUIEachTranslatorSettings: '%i پیکربندی'
   wwcConfigGUIToggleButton: ضامن ضامن %i
@@ -256,7 +247,7 @@ Messages:
   wwcTranslatorErrorThresholdReached: آستانه خطا رسید. این افزونه اکنون بارگذاری مجدد
     خواهد شد و همه مترجمان را غیرفعال خواهد کرد.
   wwcConfigErrorLimitEnabled: محدودیت خطای مترجم به %i تنظیم شده است.
-  wwcTranslatorError: ' مشکلی در هنگام تلاش برای ترجمه شما رخ داد. لطفا دوباره امتحان
+  wwcTranslatorError: 'مشکلی در هنگام تلاش برای ترجمه شما رخ داد. لطفا دوباره امتحان
     کن'
   wwcTranslatorErrorConsole: هنگامی که کاربر %i در حال تلاش برای ترجمه آنها بود، یک
     مشکل رخ داد. در حال حاضر در حال چاپ پشته.
@@ -267,3 +258,6 @@ Messages:
   wwcConfigMaxResponseTimeInvalid: حداکثر زمان پاسخ نامعتبر تنظیم شده در config.yml.
     به مدت 7 ثانیه...
   wwcConfigMaxResponseTimeEnabled: حداکثر زمان پاسخ به %i ثانیه تنظیم شده است.
+  wwctInvalidInputLangCode: 'کد زبان ورودی نامعتبر ارائه شده! کدهای معتبر زبان: %o'
+  wwcsTitle: رکورد %i
+  wwctInvalidOutputLangCode: 'کد زبان خروجی نامعتبر ارائه شده! کدهای معتبر زبان: %o'

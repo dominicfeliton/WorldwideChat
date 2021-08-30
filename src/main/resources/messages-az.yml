@@ -1,19 +1,19 @@
 Messages:
-  wwcgAutoTranslateStart: ' İndi qlobal söhbət %o dilinə tərcümə olunur.'
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Qlobal söhbət %o dilinə tərcümə
+  wwcgAutoTranslateStart: 'İndi qlobal söhbət %o dilinə tərcümə olunur.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'Qlobal söhbət %o dilinə tərcümə
     olunur.'
   wwcConfigGUIAmazonTranslateAccessKeyButton: Amazon Access Key Change
-  wwcrFail: ' WorldWireChat yenidən yüklənə bilmədi.'
+  wwcrFail: 'WorldWireChat yenidən yüklənə bilmədi.'
   wwcConfigGUIUpdateCheckerButton: Yeniləmələri gecikdirmək üçün yoxlayın
   wwcUpdaterFailedGeneric: WorldWieChat yeniləmələrini yoxlamaq mümkün deyil.
   wwcConfigConversationUpdateCheckerInput: Yeniləmə yoxlayıcısı cari gecikməsi %i
     saniyədir. Yeni bir dəyər təyin etmək üçün 10-dan daha böyük bir şey yazın və
     ya 10-dan az bir şey geri qayıtmaq üçün.
   wwctGUIMainMenuGlobal: Qlobal Tərcümə Menyusu
-  wwcConfigConversationPluginUpdateChatSuccess: ' Plugin yeniləmə chat xatırlatma
+  wwcConfigConversationPluginUpdateChatSuccess: 'Plugin yeniləmə chat xatırlatma
     uğurla keçdi.'
-  wwctbOnTarget: ' Kitabın tərcüməsi %i üçün aktivdir.'
-  wwcsNotATranslator: ' %i üçün hələ heç bir qeydlər yoxdur.'
+  wwctbOnTarget: 'Kitabın tərcüməsi %i üçün aktivdir.'
+  wwcsNotATranslator: '%i üçün hələ heç bir qeydlər yoxdur.'
   wwcConfigGUIbStatsButton: bStats keçid
   wwctGUINewTranslationSource: Mənbə dilini seçin
   wwcConfigConnectionFailed: '%o\''ya qoşulmaq mümkün olmadı. Etimadnamələrinizin
@@ -22,130 +22,127 @@ Messages:
   wwctGUIMainMenuPlayer: '%i tərcümə menyusu'
   wwctGUIBookButton: Toggle Book Tərcümə
   wwcLangDetected: Təsbit edilmiş dil %o.
-  wwcBookTranslateStart: ' Hədəf kitabının tərcüməsi...'
+  wwcBookTranslateStart: 'Hədəf kitabının tərcüməsi...'
   wwcConfigDisabledbStats: Əlil bStats.
-  wwctsOffSender: ' Sign tərcümə əlil.'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Qlobal söhbət tərcümə
+  wwctsOffSender: 'Sign tərcümə əlil.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Qlobal söhbət tərcümə
     olunur, ancaq söhbətiniz %i -ə tərcümə olunur.'
   wwcUpdaterParserFailed: Github-dan yeniləmə məlumatlarını təhlil edə bilmədi.
-  wwctAutoTranslateStart: ' İndi bütün söhbətiniz %o dilinə tərcümə edir.'
+  wwctAutoTranslateStart: 'İndi bütün söhbətiniz %o dilinə tərcümə edir.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Mövcud gizli açar %i. Amazon
     üçün gizli bir düyməni daxil edin və ya geri dönmək üçün 0 yazın.
-  wwctbOffSender: ' Kitab tərcüməsi əlil.'
+  wwctbOffSender: 'Kitab tərcüməsi əlil.'
   wwcConfigGUIAmazonTranslateButton: Amazon Tərcümə
-  wwcConfigConversationLangSuccess: ' Plugin dili uğurla dəyişdi.'
-  wwcsSuccessfulTranslations: ' Uğurlu Tərcümələr: %i'
-  wwctTranslationStoppedOtherPlayer: ' %i üçün chat tərcüməsi dayandırıldı.'
+  wwcConfigConversationLangSuccess: 'Plugin dili uğurla dəyişdi.'
+  wwcsSuccessfulTranslations: 'Uğurlu Tərcümələr: %i'
+  wwctTranslationStoppedOtherPlayer: '%i üçün chat tərcüməsi dayandırıldı.'
   wwcConfigConversationTranslationCacheInput: Mövcud tərcümə önbellek limitin %i ifadələridir.
     Yeni bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın və ya tərcümə önbelleğini
     aradan qaldırmaq üçün 0 yazın. Geri dönmək üçün 0\'dan az bir şey yazın.
-  wwctbOffTarget: ' %i üçün kitab tərcüməsi əlil oldu.'
+  wwctbOffTarget: '%i üçün kitab tərcüməsi əlil oldu.'
   wwcConfigGUIGeneralSettings: Ümumi Konfiqurasiya
   wwcInvalidLang: Sizin config.yml etibarsız dil. en Defaulting...
-  wwcConfigConversationAmazonTranslateRegionSuccess: ' Amazon regionu uğurla qurdu.'
+  wwcConfigConversationAmazonTranslateRegionSuccess: 'Amazon regionu uğurla qurdu.'
   wwcConfigRateLimitEnabled: Qlobal məzənnə limiti effektiv və %i saniyəyə təyin edildi.
-  wwcBadPerms: ' Bu əmri yerinə yetirmək üçün tələb olunan icazələriniz yoxdur!'
+  wwcBadPerms: 'Bu əmri yerinə yetirmək üçün tələb olunan icazələriniz yoxdur!'
   wwcConfigGUILangButton: Plugin dilini dəyişdirin
   wwctGUISignButton: İşarə tərcüməsi
   wwcUpdaterOutOfDate: WorldWieChat tarix deyil. Xahiş edirik ən son versiyaya yeniləyin,
     %i.
-  wwcConfigGUIChangesNotSaved: ' /wwcr run və ya /wwcc qırmızı maneə basın qədər dəyişikliklər
+  wwcConfigGUIChangesNotSaved: '/wwcr run və ya /wwcc qırmızı maneə basın qədər dəyişikliklər
     qüvvəyə bilməz.'
   wwcConfigGUINextPageButton: Növbəti səhifə
   wwctbTranslatePageFail: (Bu səhifəni tərcümə etmək mümkün deyil) %i
   wwcConfigInvalidTranslatorSettings: Yanlış tərcüməçi parametrləri! Sizin config.yml
     yalnız bir tərcüməçi aktivləşdirin.
   wwcConfigGUIQuitButton: Çıx və dəyişiklikləri saxla
-  wwctPlayerNotFound: ' Oyunçu %tapılmadı.'
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Qlobal söhbət tərcümə
+  wwctPlayerNotFound: 'Oyunçu %tapılmadı.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'Qlobal söhbət tərcümə
     olunur, ancaq söhbətiniz %o tərcümə olunur.'
   wwcConfigGUIGlobalRateLimit: Global Rate Limitini dəyişdirin
   wwctGUIBackToSourceLanguageButton: Mənbə dili menyusuna qayıt
   wwcConfigGUIAmazonTranslateRegionButton: Amazon Regionunu dəyişdirin
   wwcConfigConversationLangInput: 'Mövcud plugin dili %i. Lütfən etibarlı dil kodunu
     daxil edin və ya ləğv etmək üçün 0 yazın. Dil kodları: %o'
-  wwcConfigConversationLangInvalid: ' Yanlış dil kodu!'
-  wwctTranslationStopped: ' Sizin chat tərcüməsi dayandırılıb.'
-  wwctsPlayerNotFound: ' Oyunçu %i ya tapılmadı, ya da aktiv tərcüməçi deyil.'
+  wwcConfigConversationLangInvalid: 'Yanlış dil kodu!'
+  wwctTranslationStopped: 'Sizin chat tərcüməsi dayandırılıb.'
   wwcConfigGUIWatsonAPIKeyButton: Watson API Açarını dəyişdirin
   wwcEnabled: WorldWieChat versiyası %i aktivləşdirildi.
-  wwcgLangToLangStart: ' İndi qlobal söhbət %i %o dilinə tərcümə edir.'
-  wwctbOnSender: ' Kitab tərcüməsi aktivdir. Tərcümə etmək üçün bir kitab tutarkən
+  wwcgLangToLangStart: 'İndi qlobal söhbət %i %o dilinə tərcümə edir.'
+  wwctbOnSender: 'Kitab tərcüməsi aktivdir. Tərcümə etmək üçün bir kitab tutarkən
     sağ basın!'
   wwcListenersInitialized: Başlanmış dinləyicilər.
   wwcUserDataCorrupted: Tapıldı və %i bad və ya köhnə istifadəçi data faylları hərəkətə
     gətirdi. Onlar növbəti yenidən silinəcək.
   wwcConfigGUIPluginUpdateChatButton: Plugin Updates üçün Chat Xatırlatma göndər
-  wwcConfigConversationSendTranslationChatSuccess: ' Aktiv tərcüməçi chat xatırlatma
+  wwcConfigConversationSendTranslationChatSuccess: 'Aktiv tərcüməçi chat xatırlatma
     uğurla keçid.'
-  wwctsOffTarget: ' %i üçün tərcüməni imzalayın.'
+  wwctsOffTarget: '%i üçün tərcüməni imzalayın.'
   wwcUpdaterConnectionFailed: Github haqqında ən son yenilikləri yoxlamaq mümkün deyil.
-  watsonNotFoundExceptionNotification: ' Girişinizi hər hansı bir daha tərcümə edə
+  watsonNotFoundExceptionNotification: 'Girişinizi hər hansı bir daha tərcümə edə
     bilmir.'
   wwcConfigConversationWatsonAPIKeyInput: Mövcud API açarı %i., Watson üçün bir API
     düyməsini daxil edin və ya geri qayıtmaq üçün 0 yazın.
   wwctGUIStopButton: Tərcüməni dayandırın
-  wwcgTranslationStopped: ' Qlobal chat tərcüməsi dayandırılıb.'
-  wwctAutoTranslateStartOtherPlayer: ' İndi %i söhbəti %o dilinə tərcümə edir.'
+  wwcgTranslationStopped: 'Qlobal chat tərcüməsi dayandırılıb.'
+  wwctAutoTranslateStartOtherPlayer: 'İndi %i söhbəti %o dilinə tərcümə edir.'
   wwcUpdaterFutureDate: WorldWieChat bu instansiyası ən son ictimaiyyətdən daha böyük
     bir versiyaya malikdir.
-  wwcConfigConversationPrefixSuccess: ' Prefiks uğurla dəyişdi.'
+  wwcConfigConversationPrefixSuccess: 'Prefiks uğurla dəyişdi.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google Translate API Açarını dəyişdirin
-  wwcSignDeletedOrTooLong: ' Hədəf işarəsi ya silindi, ya da tərcümə çox uzun idi.
+  wwcSignDeletedOrTooLong: 'Hədəf işarəsi ya silindi, ya da tərcümə çox uzun idi.
     Tərcümə:'
-  wwctsOnTarget: ' Sign tərcümə %i üçün effektiv.'
+  wwctsOnTarget: 'Sign tərcümə %i üçün effektiv.'
   wwcConfigCacheDisabled: Tərcüməçi önbellek aradan qaldırıldı.
   wwcConfigConversationWatsonURLInput: Mövcud URL %i. Watson üçün xidmət URL\'sini
     daxil edin və ya geri dönmək üçün 0 yazın.
-  wwcOnJoinTranslationNotificationSourceLang: ' Sizin söhbətiniz %i dən %o dilinə
+  wwcOnJoinTranslationNotificationSourceLang: 'Sizin söhbətiniz %i dən %o dilinə
     tərcümə olunur.'
-  wwcBookDone: ' Kitab uğurla tərcümə edilmişdir.'
-  wwctsOnSender: ' Sign tərcümə effektiv. Tərcümə etmək üçün bir işarəni sağ basın!'
-  watsonColorCodeWarning: ' Rəng kodlarını istifadə edərək, gözlənilməz nəticələr
+  wwcBookDone: 'Kitab uğurla tərcümə edilmişdir.'
+  wwctsOnSender: 'Sign tərcümə effektiv. Tərcümə etmək üçün bir işarəni sağ basın!'
+  watsonColorCodeWarning: 'Rəng kodlarını istifadə edərək, gözlənilməz nəticələr
     verə bilər.'
   wwctGUITranslationButton: Tərcüməyə Başla
   wwctGUIAutoDetectButton: Mənbə dilini avtomatik aşkar etmək
   wwcUpdaterUpToDate: WorldWieChat bu günə qədər!
   wwcConfigConversationAmazonTranslateRegionInput: Hazırkı bölgə %i. Amazon üçün bir
     bölgəni daxil edin və ya geri qayıtmaq üçün 0 yazın.
-  wwcNoConsole: ' Bu komanda yalnız bir oyunçu tərəfindən qaça bilər.'
+  wwcNoConsole: 'Bu komanda yalnız bir oyunçu tərəfindən qaça bilər.'
   wwcInitializationFail: WorldwideChat-ı başlatmaq mümkün olmadı.
-  wwcrSuccess: ' WorldWireChat uğurla yenidən yükləndi.'
-  wwcPlayerNotFound: ' Oyunçu %tapılmadı.'
-  wwcUpdaterOutOfDateChat: ' WorldWieChat tarix deyil. Xahiş edirik son versiyaya
+  wwcrSuccess: 'WorldWireChat uğurla yenidən yükləndi.'
+  wwcPlayerNotFound: 'Oyunçu %tapılmadı.'
+  wwcUpdaterOutOfDateChat: 'WorldWieChat tarix deyil. Xahiş edirik son versiyaya
     yeniləyin.'
-  wwcConfigConversationRateLimitSuccess: ' Rate limit uğurla müəyyən.'
-  wwcConfigConversationWatsonURLSuccess: ' Watson URL uğurla müəyyən.'
-  wwctbPlayerNotFound: ' Oyunçu %i ya tapılmadı, ya da aktiv tərcüməçi deyil.'
-  wwcConfigConversationTranslationCacheSuccess: ' Tərcümə cache limit uğurla müəyyən.'
-  wwctInvalidArgs: ' Yanlış arqumentlər təmin!'
+  wwcConfigConversationRateLimitSuccess: 'Rate limit uğurla müəyyən.'
+  wwcConfigConversationWatsonURLSuccess: 'Watson URL uğurla müəyyən.'
+  wwctbPlayerNotFound: 'Oyunçu %i ya tapılmadı, ya da aktiv tərcüməçi deyil.'
+  wwcConfigConversationTranslationCacheSuccess: 'Tərcümə cache limit uğurla müəyyən.'
+  wwctInvalidArgs: 'Yanlış arqumentlər təmin!'
   wwcConfigGUIPrefixButton: Plugin Prefiksini dəyişdirin
-  wwctSameLangError: ' Eyni dilə tərcümə edə bilməzsiniz!'
+  wwctSameLangError: 'Eyni dilə tərcümə edə bilməzsiniz!'
   wwctGUINewTranslationTarget: Hədəf Dil Seçin
-  wwctLangToLangStartOtherPlayer: ' İndi %o söhbətini tərcümə edir %i -dən %e.'
+  wwctLangToLangStartOtherPlayer: 'İndi %o söhbətini tərcümə edir %i -dən %e.'
   wwcConfigConnectionSuccess: Uğurla bağlıdır %o!
   wwcConfigGUIGoogleTranslateButton: Google Tərcümə
-  wwcsIsActiveTranslator: ' Aktiv Tərcüməçi: %i'
-  wwctLangToLangStart: ' İndi söhbətiniz %i %o dilinə tərcümə edir.'
+  wwcsIsActiveTranslator: 'Aktiv Tərcüməçi: %i'
+  wwctLangToLangStart: 'İndi söhbətiniz %i %o dilinə tərcümə edir.'
   wwcConfigConversationPrefixInput: Mövcud prefiksi %i. Yenisini yazın və ya geri
     qayıtmaq üçün 0 yazın.
   wwcConfigGUIPreviousPageButton: Əvvəlki səhifə
   wwcConfigGUITranslatorCacheButton: Tərcümə Cache Limitini dəyişdir
-  wwcConfigConversationbStatsSuccess: ' Uğurla bStats keçdi.'
-  wwcSignDone: ' Sign uğurla tərcümə.'
+  wwcConfigConversationbStatsSuccess: 'Uğurla bStats keçdi.'
+  wwcSignDone: 'Sign uğurla tərcümə.'
   wwcConfigInvalidPrefixSettings: Prefiksinizi oxumaq uğursuz oldu. Varsayılan istifadə...
   wwcConfigRateLimitInvalid: Config.yml müəyyən pis dərəcəsi limit. 0 saniyəyə qədər
     öncül...
-  wwcSignTranslateStart: ' Hədəf işarəsinin tərcüməsi...'
+  wwcSignTranslateStart: 'Hədəf işarəsinin tərcüməsi...'
   wwcConfigGUIChatSettings: Konfiqurasiya söhbət
   wwcConfigGUIWatsonURLButton: Watson Service URL\'sini dəyişdirin
-  wwctInvalidLangCode: ' Yanlış dil kodu (lar) təqdim edildi! etibarlı lang kodları:
-    %o'
-  wwcConfigConversationUpdateCheckerSuccess: ' Update checker gecikmə uğurla müəyyən.'
+  wwcConfigConversationUpdateCheckerSuccess: 'Update checker gecikmə uğurla müəyyən.'
   wwcUnsupportedVersion: 'Siz Bukkit, Spigot\''un və ya Kağızın dəstəklənməmiş bir
     versiyasını işləyirsiniz. Dəstəklənən versiyalar:'
   wwctGUIBackToMainMenuButton: Əsas Tərcümə Menyusuna Geri qayıt
-  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Qlobal söhbət %i %o dilinə tərcümə
+  wwcGlobalOnJoinTranslationNotificationSourceLang: 'Qlobal söhbət %i %o dilinə tərcümə
     olunur.'
   wwcConfigGUITranslatorSettings: Translator Konfiqurasiyası
   wwcConfigConversationGoogleTranslateAPIKeyInput: Mövcud API açarı %i. Google Translate
@@ -153,49 +150,45 @@ Messages:
   wwcConfigConversationRateLimitInput: Tərcümə başına mövcud qlobal məzənnə həddi
     %i saniyədir. Yeni bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın və
     ya limiti aradan qaldırmaq üçün 0 yazın. Geri dönmək üçün 0\'dan az bir şey yazın.
-  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Google Translate API düyməsini
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Google Translate API düyməsini
     müvəffəqiyyətlə təyin etdi.'
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon Secret Key Change
-  wwcVersion: ' WorldWieChat, versiya'
-  wwcsName: ' Oyunçunun adı: %i'
-  wwcsAttemptedTranslations: ' Təqdim edilən tərcümələr: %i'
-  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon gizli açarı uğurla
+  wwcVersion: 'WorldWieChat, versiya'
+  wwcsAttemptedTranslations: 'Təqdim edilən tərcümələr: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: 'Amazon gizli açarı uğurla
     təyin edildi.'
-  wwcConfigConversationWatsonAPIKeySuccess: ' Watson API əsas uğurla müəyyən.'
-  wwctGUIMainMenu: Tərcümə Menyusu
-  wwctsNotATranslator: ' Siz fəal tərcüməçi deyilsiniz! Bunu /wwct ilə təyin etdiyinizə
-    əmin olun.'
-  wwcRateLimit: ' Sizin tərcümələr dərəcəsi məhduddur. Zəhmət olmasa başqa bir %i
+  wwcConfigConversationWatsonAPIKeySuccess: 'Watson API əsas uğurla müəyyən.'
+  wwcRateLimit: 'Sizin tərcümələr dərəcəsi məhduddur. Zəhmət olmasa başqa bir %i
     saniyə gözləyin.'
   wwcConfigCacheEnabled: Tərcüməçi önbelleğini aktivləşdirdi və %i həddinə təyin etdi.
   wwctGUIExistingTranslationButton: Cari Tərcümə Sessiyasının yazılması
-  wwcOnJoinTranslationNotificationNoSourceLang: ' Sizin söhbətiniz %o tərcümə olunur.'
+  wwcOnJoinTranslationNotificationNoSourceLang: 'Sizin söhbətiniz %o tərcümə olunur.'
   wwcUserDataReloaded: Bütün saxlanılan istifadəçi məlumatlarını yüklədi.
   wwcConfigGUISendTranslationChatButton: Girişdə Aktiv Tərcüməçiyə Chat Xatırlatma
     göndər
-  wwcsLastTranslationTime: ' Sonuncu (Uğurlu) Tərcümə Zaatı: %i'
-  wwctbNotATranslator: ' Siz fəal tərcüməçi deyilsiniz! Bunu /wwct ilə təyin etdiyinizə
+  wwcsLastTranslationTime: 'Sonuncu (Uğurlu) Tərcümə Zaatı: %i'
+  wwctbNotATranslator: 'Siz fəal tərcüməçi deyilsiniz! Bunu /wwct ilə təyin etdiyinizə
     əmin olun.'
   wwcConfigConversationAmazonTranslateAccessKeyInput: Mövcud giriş düyməsi %i. Amazon
     üçün giriş düyməsini daxil edin və ya geri dönmək üçün 0 yazın.
-  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Amazon giriş düyməsi uğurla
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: 'Amazon giriş düyməsi uğurla
     təyin edildi.'
   wwcConfigBadUpdateDelay: Config.yml müəyyən etibarsız updater gecikmə. 86400 saniyəyə
     qədər defaulting...
-  wwctrlRateLimitOffSender: ' Dərəcəsi limitinizi söndürür.'
-  wwctrlRateLimitAlreadyOffTarget: ' %i dərəcəsi həddi artıq aradan qaldırılmışdır.'
-  wwctrlPlayerNotFound: ' Oyunçu %i ya tapılmadı, ya da aktiv tərcüməçi deyil.'
-  wwctrlRateLimitSetSender: ' Dərəcəsi limitinizi %i saniyəyə təyin edin.'
-  wwctrlRateLimitOffTarget: ' %i dərəcəsi limitini söndürüldü.'
-  wwctrlRateLimitSetTarget: ' %i nisbəti limitini %o saniyəyə təyin edin.'
-  wwctrlNotATranslator: ' Siz fəal tərcüməçi deyilsiniz! Bunu /wwct ilə təyin etdiyinizə
+  wwctrlRateLimitOffSender: 'Dərəcəsi limitinizi söndürür.'
+  wwctrlRateLimitAlreadyOffTarget: '%i dərəcəsi həddi artıq aradan qaldırılmışdır.'
+  wwctrlPlayerNotFound: 'Oyunçu %i ya tapılmadı, ya da aktiv tərcüməçi deyil.'
+  wwctrlRateLimitSetSender: 'Dərəcəsi limitinizi %i saniyəyə təyin edin.'
+  wwctrlRateLimitOffTarget: '%i dərəcəsi limitini söndürüldü.'
+  wwctrlRateLimitSetTarget: '%i nisbəti limitini %o saniyəyə təyin edin.'
+  wwctrlNotATranslator: 'Siz fəal tərcüməçi deyilsiniz! Bunu /wwct ilə təyin etdiyinizə
     əmin olun.'
-  wwctrlRateLimitAlreadyOffSender: ' Sizin dərəcəsi limitiniz artıq aradan qaldırılıb.'
+  wwctrlRateLimitAlreadyOffSender: 'Sizin dərəcəsi limitiniz artıq aradan qaldırılıb.'
   wwctGUIRateButton: Set Rate Limitini
   wwctGUIConversationRateLimit: Tərcümə başına nisbət həddi halda %i saniyədir. Yeni
     bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın və ya limiti aradan
     qaldırmaq üçün 0 yazın. Geri dönmək üçün 0\'dan az bir şey yazın.
-  wwctGUITargetPlayerNull: ' Hədəf oyunçu serverdən uzaqlaşır.'
+  wwctGUITargetPlayerNull: 'Hədəf oyunçu serverdən uzaqlaşır.'
   wwcConfigConversationSyncUserDataDelayInput: İstifadəçi məlumatlarının sinxronlaşdırılmasına
     görə cari gecikmə %i saniyədir. Yeni bir dəyər təyin etmək üçün 10-dan daha böyük
     bir şey yazın və ya 10-dan az bir şey geri qayıtmaq üçün.
@@ -204,50 +197,47 @@ Messages:
     başa çatdı.
   wwcConfigSyncDelayEnabled: İstifadəçi məlumatlarının sinxronizasiya başına gecikmə
     %i saniyəyə təyin olunur.
-  wwcConfigConversationSyncUserDataDelaySuccess: ' İstifadəçi data sync gecikmə uğurla
+  wwcConfigConversationSyncUserDataDelaySuccess: 'İstifadəçi data sync gecikmə uğurla
     müəyyən.'
   wwcConfigSyncDelayInvalid: Config.yml müəyyən etibarsız istifadəçi data sync gecikmə.
     7200 saniyəyə qədər defaulting...
   wwcConfigCacheInvalid: Tərcüməçi önbellek ölçüsü etibarsız. 10 üçün defaulting...
-  wwcInventoryErrorPlayer: ' Hata GUI ilə aşkar. Konsol bir günlük göndərildi.'
+  wwcInventoryErrorPlayer: 'Hata GUI ilə aşkar. Konsol bir günlük göndərildi.'
   wwcInventoryError: İstifadəçi %i GUI ilə aşkarlanan səhv.
-  wwcConfigConversationTranslatorFail: ' %i aktivləşdirə bilmədi.'
+  wwcConfigConversationTranslatorFail: '%i aktivləşdirə bilmədi.'
   wwcConfigConversationConsoleTranslatorSuccess: İstifadəçi %o uğurla aktivləşdirdi.
-  wwcConfigConversationTranslatorSuccess: ' Uğurla aktivləşdirilmişdir %i.'
+  wwcConfigConversationTranslatorSuccess: 'Uğurla aktivləşdirilmişdir %i.'
   wwcConfigConversationConsoleTranslatorFail: İstifadəçi %o aktivləşdirə bilmədi.
   wwcWatson117Warning: Watson bir InaccessibleObjectException səbəbiylə başlaya bilmədi.
     Hal-hazırda, mövcud server jar arqumentləri -illegal-access=icazə əlavə edin.
   wwcDeluxeChatIncompatible: Bu plugin DeluXeChat ilə düzgün işləməyəcək.
-  wwcSignTranslationFail: ' Hədəf işarənizdə bir və ya daha çox xətt tərcümə etmək
+  wwcSignTranslationFail: 'Hədəf işarənizdə bir və ya daha çox xətt tərcümə etmək
     mümkün deyil.'
-  wwcBookTranslationFail: ' Hədəf kitabınızdakı bir və ya daha çox səhifəni tərcümə
+  wwcBookTranslationFail: 'Hədəf kitabınızdakı bir və ya daha çox səhifəni tərcümə
     edə bilmir.'
-  wwctiOffTarget: ' Item tərcümə %i üçün əlil.'
-  wwctiPlayerNotFound: ' Oyunçu %i ya tapılmadı, ya da aktiv tərcüməçi deyil.'
-  wwctiOffSender: ' Item tərcümə əlil.'
-  wwcItemTranslateTitleStock: ' Varsayılan maddə adlarını tərcümə etmək mümkün deyil.'
-  wwcItemTranslateLoreFail: ' Maddə irfan tərcümə edə bilmədi.'
-  wwcItemTranslateTitleFail: ' Maddə adını tərcümə edə bilmədi.'
-  wwctiNotATranslator: ' Siz fəal tərcüməçi deyilsiniz! Bunu /wwct ilə təyin etdiyinizə
-    əmin olun.'
+  wwctiOffTarget: 'Item tərcümə %i üçün əlil.'
+  wwctiOffSender: 'Item tərcümə əlil.'
+  wwcItemTranslateTitleStock: 'Varsayılan maddə adlarını tərcümə etmək mümkün deyil.'
+  wwcItemTranslateLoreFail: 'Maddə irfan tərcümə edə bilmədi.'
+  wwcItemTranslateTitleFail: 'Maddə adını tərcümə edə bilmədi.'
   wwctGUIItemButton: Maddə tərcüməsi keçid
-  wwcItemTranslateTitleDone: ' Müvəffəqiyyətlə tərcümə maddə adı.'
+  wwcItemTranslateTitleDone: 'Müvəffəqiyyətlə tərcümə maddə adı.'
   wwcGUITempItem: Item Display
-  wwcItemTranslateStart: ' Hədəf maddəsinin tərcüməsi...'
-  wwcSignTranslationFailCatastrophic: ' Hədəf işarəsini tərcümə edə bilmədi.'
-  wwcItemTranslationFailCatastrophic: ' Hədəf maddəsini tərcümə edə bilmədi.'
-  wwcBookTranslateTitleSuccess: ' Tərcümə olunan kitabın adı: %i'
-  wwctiOnSender: ' Item tərcümə effektiv. Tərcümə etmək üçün əsas əlinizdə bir maddə
+  wwcItemTranslateStart: 'Hədəf maddəsinin tərcüməsi...'
+  wwcSignTranslationFailCatastrophic: 'Hədəf işarəsini tərcümə edə bilmədi.'
+  wwcItemTranslationFailCatastrophic: 'Hədəf maddəsini tərcümə edə bilmədi.'
+  wwcBookTranslateTitleSuccess: 'Tərcümə olunan kitabın adı: %i'
+  wwctiOnSender: 'Item tərcümə effektiv. Tərcümə etmək üçün əsas əlinizdə bir maddə
     ilə sağ basın!'
-  wwcItemTranslateLoreStart: ' Hədəf maddənin irfan tərcümə...'
-  wwcItemTranslateLoreDone: ' Tərcümə maddə irfan uğurla.'
-  wwctiOnTarget: ' Item tərcümə %i üçün effektiv.'
-  wwcBookTranslationFailCatastrophic: ' Hədəf kitabını tərcümə edə bilmədi.'
-  wwcBookTranslateTitleFail: ' Kitabın adını tərcümə edə bilmədi.'
-  wwcChatTranslationFail: ' Mesajınızı tərcümə edə bilmədi.'
-  wwcInvalidTranslator: ' Yanlış tərcüməçi parametrləri. Bu plugin istifadə etmək
+  wwcItemTranslateLoreStart: 'Hədəf maddənin irfan tərcümə...'
+  wwcItemTranslateLoreDone: 'Tərcümə maddə irfan uğurla.'
+  wwctiOnTarget: 'Item tərcümə %i üçün effektiv.'
+  wwcBookTranslationFailCatastrophic: 'Hədəf kitabını tərcümə edə bilmədi.'
+  wwcBookTranslateTitleFail: 'Kitabın adını tərcümə edə bilmədi.'
+  wwcChatTranslationFail: 'Mesajınızı tərcümə edə bilmədi.'
+  wwcInvalidTranslator: 'Yanlış tərcüməçi parametrləri. Bu plugin istifadə etmək
     üçün config.yml və ya /wwcc ilə düzeltmek edin.'
-  wwcNotDoneLoading: ' WorldwideChat hələ də başlanğıcdır. Xahiş edirik qısa bir müddət
+  wwcNotDoneLoading: 'WorldwideChat hələ də başlanğıcdır. Xahiş edirik qısa bir müddət
     yenidən cəhd edin.'
   wwcConfigGUIEachTranslatorSettings: '%i Konfiqurasiya'
   wwcConfigGUIToggleButton: '%i keçin'
@@ -259,7 +249,7 @@ Messages:
   wwcTranslatorErrorThresholdReached: Xəta ərəfəsinə çatdı. Bu plugin indi yenidən
     yüklənəcək və bütün tərcüməçiləri aradan qaldıracaq.
   wwcConfigErrorLimitEnabled: Tərcüməçi səhv limiti %i olaraq təyin edilir.
-  wwcTranslatorError: ' Tərcümə cəhd edərkən bir problem yaşandı. Yenidən cəhd edin.'
+  wwcTranslatorError: 'Tərcümə cəhd edərkən bir problem yaşandı. Yenidən cəhd edin.'
   wwcTranslatorErrorConsole: İstifadəçi %i onların tərcüməsinə cəhd edərkən bir problem
     yarandı. İndi yığını çap edin.
   wwcConfigErrorLimitInvalid: Config.yml müəyyən etibarsız tərcüməçi səhv limit. 5
@@ -269,3 +259,8 @@ Messages:
   wwcConfigMaxResponseTimeInvalid: Config.yml müəyyən etibarsız maksimum cavab müddəti.
     7 saniyəyə qədər defaulting...
   wwcConfigMaxResponseTimeEnabled: Maksimum cavab müddəti %i saniyəyə təyin edilir.
+  wwctInvalidInputLangCode: 'Yanlış giriş dili kodu təqdim edildi! etibarlı lang kodları:
+    %o'
+  wwcsTitle: '%i rekordu'
+  wwctInvalidOutputLangCode: 'Yanlış çıxış dili kodu təqdim edildi! etibarlı lang
+    kodları: %o'

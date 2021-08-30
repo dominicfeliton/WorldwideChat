@@ -1,19 +1,19 @@
 Messages:
-  wwcgAutoTranslateStart: ' এখন গ্লোবাল চ্যাট %o এ অনুবাদ করা হচ্ছে।'
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' গ্লোবাল চ্যাট %o এ অনুবাদ
+  wwcgAutoTranslateStart: 'এখন গ্লোবাল চ্যাট %o এ অনুবাদ করা হচ্ছে।'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'গ্লোবাল চ্যাট %o এ অনুবাদ
     করা হচ্ছে।'
   wwcConfigGUIAmazonTranslateAccessKeyButton: আমাজন অ্যাক্সেস কী পরিবর্তন করুন
-  wwcrFail: ' ওয়ার্ল্ডউইডচ্যাট পুনরায় লোড করতে ব্যর্থ।'
+  wwcrFail: 'ওয়ার্ল্ডউইডচ্যাট পুনরায় লোড করতে ব্যর্থ।'
   wwcConfigGUIUpdateCheckerButton: আপডেট বিলম্বের জন্য চেক পরিবর্তন করুন
   wwcUpdaterFailedGeneric: ওয়ার্ল্ডউইডচ্যাট আপডেটের জন্য পরীক্ষা করা যায়নি।
   wwcConfigConversationUpdateCheckerInput: আপডেট পরীক্ষকের বর্তমান বিলম্ব হল %i সেকেন্ড।
     একটি নতুন মান সেট করার জন্য 10 এর চেয়ে বড় কিছু টাইপ করুন, অথবা 10 এর কম কিছু
     ফিরে যেতে।
   wwctGUIMainMenuGlobal: গ্লোবাল অনুবাদ মেনু
-  wwcConfigConversationPluginUpdateChatSuccess: ' প্লাগইন আপডেট চ্যাটের অনুস্মারক
+  wwcConfigConversationPluginUpdateChatSuccess: 'প্লাগইন আপডেট চ্যাটের অনুস্মারক
     সফলভাবে টগল হয়েছে।'
-  wwctbOnTarget: ' %i এর জন্য বইয়ের অনুবাদ সক্রিয় করা হয়েছে।'
-  wwcsNotATranslator: ' %i এর জন্য এখনও কোনো রেকর্ড উপলব্ধ নেই।'
+  wwctbOnTarget: '%i এর জন্য বইয়ের অনুবাদ সক্রিয় করা হয়েছে।'
+  wwcsNotATranslator: '%i এর জন্য এখনও কোনো রেকর্ড উপলব্ধ নেই।'
   wwcConfigGUIbStatsButton: বিস্ট্যাট টগল করুন
   wwctGUINewTranslationSource: একটি উৎস ভাষা বেছে নিন
   wwcConfigConnectionFailed: '%o এর সাথে সংযোগ করতে ব্যর্থ। নিশ্চিত করুন যে আপনার
@@ -22,131 +22,129 @@ Messages:
   wwctGUIMainMenuPlayer: '%i এর অনুবাদ মেনু'
   wwctGUIBookButton: বইয়ের অনুবাদ টগল করুন
   wwcLangDetected: ভাষা %o সনাক্ত করা হয়েছে।
-  wwcBookTranslateStart: ' টার্গেট বই অনুবাদ করা হচ্ছে...'
+  wwcBookTranslateStart: 'টার্গেট বই অনুবাদ করা হচ্ছে...'
   wwcConfigDisabledbStats: নিষ্ক্রিয় bStats
-  wwctsOffSender: ' অনুবাদ নিষ্ক্রিয় স্বাক্ষর করুন।'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' গ্লোবাল চ্যাট অনুবাদ
+  wwctsOffSender: 'অনুবাদ নিষ্ক্রিয় স্বাক্ষর করুন।'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'গ্লোবাল চ্যাট অনুবাদ
     করা হচ্ছে, কিন্তু আপনার চ্যাট %i থেকে %o তে অনুবাদ করা হচ্ছে।'
   wwcUpdaterParserFailed: Github থেকে আপডেট ডেটা পার্স করতে ব্যর্থ।
-  wwctAutoTranslateStart: ' এখন আপনার সমস্ত চ্যাট %o এ অনুবাদ করা হচ্ছে।'
+  wwctAutoTranslateStart: 'এখন আপনার সমস্ত চ্যাট %o এ অনুবাদ করা হচ্ছে।'
   wwcConfigConversationAmazonTranslateSecretKeyInput: বর্তমান গোপন কী %i। অনুগ্রহ
     করে Amazon এর জন্য একটি গোপন কী ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
-  wwctbOffSender: ' বইয়ের অনুবাদ নিষ্ক্রিয়।'
+  wwctbOffSender: 'বইয়ের অনুবাদ নিষ্ক্রিয়।'
   wwcConfigGUIAmazonTranslateButton: আমাজন অনুবাদ
-  wwcConfigConversationLangSuccess: ' প্লাগইন ভাষা সফলভাবে পরিবর্তিত হয়েছে।'
-  wwcsSuccessfulTranslations: ' সফল অনুবাদ: %i'
-  wwctTranslationStoppedOtherPlayer: ' %i এর জন্য আড্ডা অনুবাদ বন্ধ করা হয়েছে।'
+  wwcConfigConversationLangSuccess: 'প্লাগইন ভাষা সফলভাবে পরিবর্তিত হয়েছে।'
+  wwcsSuccessfulTranslations: 'সফল অনুবাদ: %i'
+  wwctTranslationStoppedOtherPlayer: '%i এর জন্য আড্ডা অনুবাদ বন্ধ করা হয়েছে।'
   wwcConfigConversationTranslationCacheInput: বর্তমান অনুবাদ ক্যাশে লিমিত %i বাক্যাংশ।
     নতুন মান নির্ধারণ করতে 0 এর চেয়ে বড় কিছু টাইপ করুন, অথবা অনুবাদ ক্যাশে নিষ্ক্রিয়
     করতে 0 টাইপ করুন। ফিরে যেতে 0 এর চেয়ে কম কিছু টাইপ করুন।
-  wwctbOffTarget: ' %i এর জন্য বইয়ের অনুবাদ নিষ্ক্রিয় করা হয়েছে।'
+  wwctbOffTarget: '%i এর জন্য বইয়ের অনুবাদ নিষ্ক্রিয় করা হয়েছে।'
   wwcConfigGUIGeneralSettings: সাধারণ কনফিগারেশন
   wwcInvalidLang: আপনার config.yml এ অবৈধ ভাষা। ডিফল্ট থেকে...
-  wwcConfigConversationAmazonTranslateRegionSuccess: ' আমাজন অঞ্চল সফলভাবে সেট।'
+  wwcConfigConversationAmazonTranslateRegionSuccess: 'আমাজন অঞ্চল সফলভাবে সেট।'
   wwcConfigRateLimitEnabled: গ্লোবাল রেট সীমা সক্রিয় এবং %i সেকেন্ড নির্ধারণ করা হবে।
-  wwcBadPerms: ' এই কমান্ডটি চালানোর জন্য আপনার কাছে প্রয়োজনীয় অনুমতি নেই!'
+  wwcBadPerms: 'এই কমান্ডটি চালানোর জন্য আপনার কাছে প্রয়োজনীয় অনুমতি নেই!'
   wwcConfigGUILangButton: প্লাগইন ভাষা পরিবর্তন করুন
   wwctGUISignButton: সাইন অনুবাদ টগল করুন
   wwcUpdaterOutOfDate: ওয়ার্ল্ডউইডচ্যাট ডেট আউট অনুগ্রহ করে সর্বশেষ সংস্করণে আপডেট
     করুন, %i।
-  wwcConfigGUIChangesNotSaved: ' আপনি /wwcr রান না করা পর্যন্ত আপনার পরিবর্তনগুলি
+  wwcConfigGUIChangesNotSaved: 'আপনি /wwcr রান না করা পর্যন্ত আপনার পরিবর্তনগুলি
     কার্যকর নাও হতে পারে, অথবা /wwcc।'
   wwcConfigGUINextPageButton: পরবর্তী পৃষ্ঠা
   wwctbTranslatePageFail: (এই পাতাটি অনুবাদ করতে ব্যর্থ) %i
   wwcConfigInvalidTranslatorSettings: অকার্যকর অনুবাদক সেটিংস! অনুগ্রহ করে আপনার config.yml
     এ শুধুমাত্র একটি অনুবাদক সক্ষম করুন।
   wwcConfigGUIQuitButton: পরিবর্তন থেকে প্রস্থান করো
-  wwctPlayerNotFound: ' খেলোয়াড় %i পাওয়া যায়নি।'
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' গ্লোবাল চ্যাট অনুবাদ
+  wwctPlayerNotFound: 'খেলোয়াড় %i পাওয়া যায়নি।'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'গ্লোবাল চ্যাট অনুবাদ
     করা হচ্ছে, কিন্তু আপনার চ্যাট %o এ অনুবাদ করা হচ্ছে।'
   wwcConfigGUIGlobalRateLimit: গ্লোবাল রেট লিমিট পরিবর্তন করুন
   wwctGUIBackToSourceLanguageButton: সোর্স ল্যাঙ্গুয়েজ মেনুতে ফিরে যান
   wwcConfigGUIAmazonTranslateRegionButton: আমাজন অঞ্চল পরিবর্তন করুন
   wwcConfigConversationLangInput: 'বর্তমান প্লাগইন ভাষা %i। অনুগ্রহ করে একটি বৈধ ভাষা
     কোড লিখুন, অথবা বাতিল করার জন্য 0 টাইপ করুন। বৈধ ভাষা কোড: %o'
-  wwcConfigConversationLangInvalid: ' ভাষা কোড অবৈধ!'
-  wwctTranslationStopped: ' আপনার চ্যাটের অনুবাদ বন্ধ করা হয়েছে।'
-  wwctsPlayerNotFound: ' প্লেয়ার %i পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।'
+  wwcConfigConversationLangInvalid: 'ভাষা কোড অবৈধ!'
+  wwctTranslationStopped: 'আপনার চ্যাটের অনুবাদ বন্ধ করা হয়েছে।'
   wwcConfigGUIWatsonAPIKeyButton: ওয়াটসন এপিআই কী পরিবর্তন করুন
   wwcEnabled: ওয়ার্ল্ডউইডচ্যাট সংস্করণ %i সক্রিয় করা হয়েছে।
-  wwcgLangToLangStart: ' এখন %i থেকে %o থেকে %o পর্যন্ত গ্লোবাল চ্যাট অনুবাদ করা হচ্ছে।'
-  wwctbOnSender: ' বইয়ের অনুবাদ সক্রিয় করা হয়েছে। এটি অনুবাদ করার জন্য একটি বই ধরে
+  wwcgLangToLangStart: 'এখন %i থেকে %o থেকে %o পর্যন্ত গ্লোবাল চ্যাট অনুবাদ করা হচ্ছে।'
+  wwctbOnSender: 'বইয়ের অনুবাদ সক্রিয় করা হয়েছে। এটি অনুবাদ করার জন্য একটি বই ধরে
     রাখার সময় ডান-ক্লিক করুন!'
   wwcListenersInitialized: আরম্ভ করা শ্রোতা।
   wwcUserDataCorrupted: '%i দূষিত অথবা পুরনো ব্যবহারকারী ডাটা ফাইল পাওয়া গিয়েছে এবং
     সরানো হয়েছে। তারা পরবর্তী রিলোডে মুছে ফেলা হবে।'
   wwcConfigGUIPluginUpdateChatButton: প্লাগইন আপডেটের জন্য চ্যাট স্মারক
-  wwcConfigConversationSendTranslationChatSuccess: ' সক্রিয় অনুবাদক চ্যাটের অনুস্মারক
+  wwcConfigConversationSendTranslationChatSuccess: 'সক্রিয় অনুবাদক চ্যাটের অনুস্মারক
     সফলভাবে টগল হয়েছে'
-  wwctsOffTarget: ' %i এর জন্য অনুবাদ নিষ্ক্রিয় সাইন ইন করুন।'
+  wwctsOffTarget: '%i এর জন্য অনুবাদ নিষ্ক্রিয় সাইন ইন করুন।'
   wwcUpdaterConnectionFailed: Github এ সর্বশেষ আপডেট পরীক্ষা করতে অক্ষম।
-  watsonNotFoundExceptionNotification: ' আপনার ইনপুট আরও অনুবাদ করতে অক্ষম।'
+  watsonNotFoundExceptionNotification: 'আপনার ইনপুট আরও অনুবাদ করতে অক্ষম।'
   wwcConfigConversationWatsonAPIKeyInput: বর্তমান API কী %i। অনুগ্রহ করে ওয়াটসনের
     জন্য একটি API কী ইনপুট করুন, অথবা ফিরে যাওয়ার জন্য 0 টাইপ করুন।
   wwctGUIStopButton: অনুবাদ বন্ধ করুন
-  wwcgTranslationStopped: ' গ্লোবাল আড্ডা অনুবাদ বন্ধ করা হয়েছে।'
-  wwctAutoTranslateStartOtherPlayer: ' এবার %i থেকে %o এর আড্ডা অনুবাদ করা হচ্ছে।'
+  wwcgTranslationStopped: 'গ্লোবাল আড্ডা অনুবাদ বন্ধ করা হয়েছে।'
+  wwctAutoTranslateStartOtherPlayer: 'এবার %i থেকে %o এর আড্ডা অনুবাদ করা হচ্ছে।'
   wwcUpdaterFutureDate: ওয়ার্ল্ডউইডচ্যাটের এই দৃষ্টান্তটি সর্বশেষ জনসাধারণের তুলনায়
     একটি বড় সংস্করণ রয়েছে।
-  wwcConfigConversationPrefixSuccess: ' প্রিফিক্স সফলভাবে পরিবর্তিত হয়েছে।'
+  wwcConfigConversationPrefixSuccess: 'প্রিফিক্স সফলভাবে পরিবর্তিত হয়েছে।'
   wwcConfigGUIGoogleTranslateAPIKeyButton: গুগল অনুবাদ API কী পরিবর্তন করুন
-  wwcSignDeletedOrTooLong: ' টার্গেট সাইন হয় মুছে ফেলা হয় বা অনুবাদ খুব দীর্ঘ ছিল।
+  wwcSignDeletedOrTooLong: 'টার্গেট সাইন হয় মুছে ফেলা হয় বা অনুবাদ খুব দীর্ঘ ছিল।
     অনুবাদ:'
-  wwctsOnTarget: ' %i এর জন্য সাইন অনুবাদ সক্রিয় করা হয়েছে।'
+  wwctsOnTarget: '%i এর জন্য সাইন অনুবাদ সক্রিয় করা হয়েছে।'
   wwcConfigCacheDisabled: অনুবাদক ক্যাশে নিষ্ক্রিয়
   wwcConfigConversationWatsonURLInput: বর্তমান URL %i। অনুগ্রহ করে ওয়াটসনের জন্য একটি
     পরিষেবা URL ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
-  wwcOnJoinTranslationNotificationSourceLang: ' আপনার চ্যাট %i থেকে %o তে অনুবাদ করা
+  wwcOnJoinTranslationNotificationSourceLang: 'আপনার চ্যাট %i থেকে %o তে অনুবাদ করা
     হচ্ছে।'
-  wwcBookDone: ' বইটি সফলভাবে অনুবাদ করেছে।'
-  wwctsOnSender: ' অনুবাদ সক্রিয় সাইন ইন করুন। এটি অনুবাদ করতে একটি সাইন উপর ডান-ক্লিক
+  wwcBookDone: 'বইটি সফলভাবে অনুবাদ করেছে।'
+  wwctsOnSender: 'অনুবাদ সক্রিয় সাইন ইন করুন। এটি অনুবাদ করতে একটি সাইন উপর ডান-ক্লিক
     করুন!'
-  watsonColorCodeWarning: ' রঙ কোড ব্যবহার করে আপনি অনির্দেশ্য ফলাফল দিতে পারে।'
+  watsonColorCodeWarning: 'রঙ কোড ব্যবহার করে আপনি অনির্দেশ্য ফলাফল দিতে পারে।'
   wwctGUITranslationButton: অনুবাদ শুরু করুন
   wwctGUIAutoDetectButton: উৎস ভাষা স্বয়ংক্রিয় সনাক্ত করো
   wwcUpdaterUpToDate: ওয়ার্ল্ডউইডচ্যাট আপ টু ডেট!
   wwcConfigConversationAmazonTranslateRegionInput: বর্তমান অঞ্চল %i। অনুগ্রহ করে আমাজনের
     জন্য একটি অঞ্চল ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
-  wwcNoConsole: ' এই কমান্ডটি শুধুমাত্র একটি প্লেয়ার দ্বারা চালানো যাবে।'
+  wwcNoConsole: 'এই কমান্ডটি শুধুমাত্র একটি প্লেয়ার দ্বারা চালানো যাবে।'
   wwcInitializationFail: ওয়ার্ল্ডউইডচ্যাট আরম্ভ করতে ব্যর্থ।
-  wwcrSuccess: ' ওয়ার্ল্ডউইডচ্যাট সফলভাবে পুনরায় লোড করা হয়েছে।'
-  wwcPlayerNotFound: ' খেলোয়াড় %i পাওয়া যায়নি।'
-  wwcUpdaterOutOfDateChat: ' ওয়ার্ল্ডউইডচ্যাট ডেট আউট অনুগ্রহ করে সর্বশেষ সংস্করণে
+  wwcrSuccess: 'ওয়ার্ল্ডউইডচ্যাট সফলভাবে পুনরায় লোড করা হয়েছে।'
+  wwcPlayerNotFound: 'খেলোয়াড় %i পাওয়া যায়নি।'
+  wwcUpdaterOutOfDateChat: 'ওয়ার্ল্ডউইডচ্যাট ডেট আউট অনুগ্রহ করে সর্বশেষ সংস্করণে
     আপডেট করুন।'
-  wwcConfigConversationRateLimitSuccess: ' রেট সীমা সফলভাবে সেট করা হয়েছে।'
-  wwcConfigConversationWatsonURLSuccess: ' ওয়াটসন ইউআরএল সফলভাবে সেট করেছে।'
-  wwctbPlayerNotFound: ' প্লেয়ার %i পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।'
-  wwcConfigConversationTranslationCacheSuccess: ' অনুবাদ ক্যাশে সীমা সফলভাবে সেট করা
+  wwcConfigConversationRateLimitSuccess: 'রেট সীমা সফলভাবে সেট করা হয়েছে।'
+  wwcConfigConversationWatsonURLSuccess: 'ওয়াটসন ইউআরএল সফলভাবে সেট করেছে।'
+  wwctbPlayerNotFound: 'প্লেয়ার %i পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।'
+  wwcConfigConversationTranslationCacheSuccess: 'অনুবাদ ক্যাশে সীমা সফলভাবে সেট করা
     হয়েছে।'
-  wwctInvalidArgs: ' অবৈধ আর্গুমেন্ট প্রদান!'
+  wwctInvalidArgs: 'অবৈধ আর্গুমেন্ট প্রদান!'
   wwcConfigGUIPrefixButton: প্লাগইন প্রিফিক্স পরিবর্তন করুন
-  wwctSameLangError: ' আপনি একই ভাষায় অনুবাদ করতে পারবেন না!'
+  wwctSameLangError: 'আপনি একই ভাষায় অনুবাদ করতে পারবেন না!'
   wwctGUINewTranslationTarget: একটি লক্ষ্যবস্তু ভাষা বেছে নিন
-  wwctLangToLangStartOtherPlayer: ' এবার %o থেকে %i থেকে %e পর্যন্ত চ্যাট অনুবাদ করা
+  wwctLangToLangStartOtherPlayer: 'এবার %o থেকে %i থেকে %e পর্যন্ত চ্যাট অনুবাদ করা
     হচ্ছে।'
   wwcConfigConnectionSuccess: '%o এর সাথে সফলভাবে সংযুক্ত হয়েছে!'
   wwcConfigGUIGoogleTranslateButton: গুগল অনুবাদ
-  wwcsIsActiveTranslator: ' সক্রিয় অনুবাদক: %i'
-  wwctLangToLangStart: ' এখন আপনার সমস্ত চ্যাট %i থেকে %o পর্যন্ত অনুবাদ করা হচ্ছে।'
+  wwcsIsActiveTranslator: 'সক্রিয় অনুবাদক: %i'
+  wwctLangToLangStart: 'এখন আপনার সমস্ত চ্যাট %i থেকে %o পর্যন্ত অনুবাদ করা হচ্ছে।'
   wwcConfigConversationPrefixInput: বর্তমান উপসর্গ %i। অনুগ্রহ করে একটি নতুন টাইপ
     করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
   wwcConfigGUIPreviousPageButton: পূর্ববর্তী পৃষ্ঠা
   wwcConfigGUITranslatorCacheButton: অনুবাদ ক্যাশে সীমা পরিবর্তন করুন
-  wwcConfigConversationbStatsSuccess: ' সফলভাবে bStats টগল করা হয়েছে।'
-  wwcSignDone: ' সাইন সফলভাবে অনুবাদ করা হয়েছে।'
+  wwcConfigConversationbStatsSuccess: 'সফলভাবে bStats টগল করা হয়েছে।'
+  wwcSignDone: 'সাইন সফলভাবে অনুবাদ করা হয়েছে।'
   wwcConfigInvalidPrefixSettings: আপনার প্রিফিক্স পড়তে ব্যর্থ। ডিফল্ট ব্যবহার করা
     হচ্ছে...
   wwcConfigRateLimitInvalid: config.yml এ সেট করা খারাপ রেট সীমা ০ সেকেন্ডে ডিফল্ট
     হচ্ছে...
-  wwcSignTranslateStart: ' টার্গেট সাইন অনুবাদ করা হচ্ছে...'
+  wwcSignTranslateStart: 'টার্গেট সাইন অনুবাদ করা হচ্ছে...'
   wwcConfigGUIChatSettings: চ্যাট কনফিগারেশন
   wwcConfigGUIWatsonURLButton: ওয়াটসন সার্ভিস URL পরিবর্তন করুন
-  wwctInvalidLangCode: ' অবৈধ ভাষা কোড (গুলি) প্রদান করা হয়েছে! বৈধ ল্যাং কোড: %o'
-  wwcConfigConversationUpdateCheckerSuccess: ' পরীক্ষক বিলম্ব সেট সফলভাবে আপডেট করুন'
+  wwcConfigConversationUpdateCheckerSuccess: 'পরীক্ষক বিলম্ব সেট সফলভাবে আপডেট করুন'
   wwcUnsupportedVersion: 'আপনি বুককিট, স্পাইগট বা পেপারের অসমর্থিত সংস্করণ চালাচ্ছেন।
     সমর্থিত সংস্করণ:'
   wwctGUIBackToMainMenuButton: প্রধান অনুবাদ মেনুতে ফিরে যান
-  wwcGlobalOnJoinTranslationNotificationSourceLang: ' গ্লোবাল চ্যাট %i থেকে %o তে
+  wwcGlobalOnJoinTranslationNotificationSourceLang: 'গ্লোবাল চ্যাট %i থেকে %o তে
     অনুবাদ করা হচ্ছে।'
   wwcConfigGUITranslatorSettings: অনুবাদক কনফিগার
   wwcConfigConversationGoogleTranslateAPIKeyInput: বর্তমান API কী %i। অনুগ্রহ করে
@@ -154,98 +152,91 @@ Messages:
   wwcConfigConversationRateLimitInput: অনুবাদের প্রতি বর্তমান গ্লোবাল রেট সীমা হচ্ছে
     %i সেকেন্ড। একটি নতুন মান নির্ধারণ করতে 0 এর চেয়ে বড় কিছু টাইপ করুন, অথবা সীমা
     নিষ্ক্রিয় করতে 0 টাইপ করুন। ফিরে যেতে 0 এর চেয়ে কম কিছু টাইপ করুন।
-  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' গুগল অনুবাদ API কী সেট সফলভাবে।'
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: 'গুগল অনুবাদ API কী সেট সফলভাবে।'
   wwcConfigGUIAmazonTranslateSecretKeyButton: আমাজন গোপন কী পরিবর্তন করুন
-  wwcVersion: ' ওয়ার্ল্ডউইডচ্যাট, সংস্করণ'
-  wwcsName: ' খেলোয়াড়ের নাম: %i'
-  wwcsAttemptedTranslations: ' অনুবাদের চেষ্টা করা হয়েছে: %i'
-  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' ইসলাম গোপন কী সেট সফলভাবে'
-  wwcConfigConversationWatsonAPIKeySuccess: ' ওয়াটসন API কী সেট সফলভাবে'
-  wwctGUIMainMenu: আপনার অনুবাদ মেনু
-  wwctsNotATranslator: ' আপনি একজন সক্রিয় অনুবাদক নন! নিশ্চিত করুন যে আপনি এটি /wwct
-    দিয়ে সেট করেছেন।'
-  wwcRateLimit: ' আপনার অনুবাদগুলি হার সীমিত। অনুগ্রহ করে অন্য %i সেকেন্ড অপেক্ষা
+  wwcVersion: 'ওয়ার্ল্ডউইডচ্যাট, সংস্করণ'
+  wwcsAttemptedTranslations: 'অনুবাদের চেষ্টা করা হয়েছে: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: 'ইসলাম গোপন কী সেট সফলভাবে'
+  wwcConfigConversationWatsonAPIKeySuccess: 'ওয়াটসন API কী সেট সফলভাবে'
+  wwcRateLimit: 'আপনার অনুবাদগুলি হার সীমিত। অনুগ্রহ করে অন্য %i সেকেন্ড অপেক্ষা
     করুন।'
   wwcConfigCacheEnabled: অনুবাদক ক্যাশে সক্রিয় এবং %i এর সীমা নির্ধারণ করা হয়েছে।
   wwctGUIExistingTranslationButton: বর্তমান অনুবাদের অধিবেশন মুছে দিন
-  wwcOnJoinTranslationNotificationNoSourceLang: ' আপনার চ্যাট %o এ অনুবাদ করা হচ্ছে।'
+  wwcOnJoinTranslationNotificationNoSourceLang: 'আপনার চ্যাট %o এ অনুবাদ করা হচ্ছে।'
   wwcUserDataReloaded: সমস্ত সংরক্ষিত ব্যবহারকারী ডেটা লোড করা হয়েছে।
   wwcConfigGUISendTranslationChatButton: লগইন এ সক্রিয় অনুবাদক চ্যাট অনুস্মারক
-  wwcsLastTranslationTime: ' সর্বশেষ (সফল) অনুবাদের সময়: %i'
-  wwctbNotATranslator: ' আপনি একজন সক্রিয় অনুবাদক নন! নিশ্চিত করুন যে আপনি এটি /wwct
+  wwcsLastTranslationTime: 'সর্বশেষ (সফল) অনুবাদের সময়: %i'
+  wwctbNotATranslator: 'আপনি একজন সক্রিয় অনুবাদক নন! নিশ্চিত করুন যে আপনি এটি /wwct
     দিয়ে সেট করেছেন।'
   wwcConfigConversationAmazonTranslateAccessKeyInput: বর্তমান অ্যাক্সেস কী %i। অনুগ্রহ
     করে আমাজনের জন্য একটি অ্যাক্সেস কী ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
-  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' আমাজন অ্যাক্সেস কী সেট সফলভাবে'
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: 'আমাজন অ্যাক্সেস কী সেট সফলভাবে'
   wwcConfigBadUpdateDelay: config.yml এ অবৈধ আপডেটার বিলম্ব সেট। ৮৬৪০০ সেকেন্ডে ডিফল্ট
     হচ্ছে...
-  wwctrlRateLimitOffSender: ' আপনার রেট লিমিট বন্ধ করে দিয়েছে।'
-  wwctrlRateLimitAlreadyOffTarget: ' %i হার সীমা ইতোমধ্যে নিষ্ক্রিয় করা হয়েছে।'
-  wwctrlPlayerNotFound: ' প্লেয়ার %i পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।'
-  wwctrlRateLimitSetSender: ' আপনার রেট সীমিত %i সেকেন্ডে সেট করুন।'
-  wwctrlRateLimitOffTarget: ' %i হার সীমা বন্ধ করে দিয়েছে।'
-  wwctrlRateLimitSetTarget: ' %i থেকে %o সেকেন্ডের রেটের সীমা নির্ধারণ করুন।'
-  wwctrlNotATranslator: ' আপনি একজন সক্রিয় অনুবাদক নন! নিশ্চিত করুন যে আপনি এটি /wwct
+  wwctrlRateLimitOffSender: 'আপনার রেট লিমিট বন্ধ করে দিয়েছে।'
+  wwctrlRateLimitAlreadyOffTarget: '%i হার সীমা ইতোমধ্যে নিষ্ক্রিয় করা হয়েছে।'
+  wwctrlPlayerNotFound: 'প্লেয়ার %i পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।'
+  wwctrlRateLimitSetSender: 'আপনার রেট সীমিত %i সেকেন্ডে সেট করুন।'
+  wwctrlRateLimitOffTarget: '%i হার সীমা বন্ধ করে দিয়েছে।'
+  wwctrlRateLimitSetTarget: '%i থেকে %o সেকেন্ডের রেটের সীমা নির্ধারণ করুন।'
+  wwctrlNotATranslator: 'আপনি একজন সক্রিয় অনুবাদক নন! নিশ্চিত করুন যে আপনি এটি /wwct
     দিয়ে সেট করেছেন।'
-  wwctrlRateLimitAlreadyOffSender: ' আপনার রেট সীমা ইতোমধ্যে নিষ্ক্রিয় করা হয়েছে।'
+  wwctrlRateLimitAlreadyOffSender: 'আপনার রেট সীমা ইতোমধ্যে নিষ্ক্রিয় করা হয়েছে।'
   wwctGUIRateButton: রেট সীমা নির্ধারণ করো
   wwctGUIConversationRateLimit: প্রতি অনুবাদের হার সীমা বর্তমান %i সেকেন্ড। একটি নতুন
     মান নির্ধারণ করতে 0 এর চেয়ে বড় কিছু টাইপ করুন, অথবা সীমা নিষ্ক্রিয় করতে 0 টাইপ
     করুন। ফিরে যেতে 0 এর চেয়ে কম কিছু টাইপ করুন।
-  wwctGUITargetPlayerNull: ' টার্গেট প্লেয়ার সার্ভার থেকে সংযোগ বিচ্ছিন্ন।'
+  wwctGUITargetPlayerNull: 'টার্গেট প্লেয়ার সার্ভার থেকে সংযোগ বিচ্ছিন্ন।'
   wwcConfigConversationSyncUserDataDelayInput: ব্যবহারকারীর ডাটা সিঙ্ক প্রতি বর্তমান
     বিলম্ব হল %i সেকেন্ড। একটি নতুন মান সেট করার জন্য 10 এর চেয়ে বড় কিছু টাইপ করুন,
     অথবা 10 এর কম কিছু ফিরে যেতে।
   wwcConfigGUISyncUserDataButton: ব্যবহারকারীর ডেটা সিঙ্ক বিলম্ব পরিবর্তন করুন
   wwcConfigSyncTime: স্বয়ংক্রিয় ব্যবহারকারী ডাটা সিঙ্ক %i ন্যানোসেকেন্ডে সম্পন্ন হয়েছে।
   wwcConfigSyncDelayEnabled: প্রতি ব্যবহারকারীর ডাটা সিঙ্ক সেট করুন %i সেকেন্ড।
-  wwcConfigConversationSyncUserDataDelaySuccess: ' ব্যবহারকারীর ডাটা সিঙ্ক বিলম্বের
+  wwcConfigConversationSyncUserDataDelaySuccess: 'ব্যবহারকারীর ডাটা সিঙ্ক বিলম্বের
     সেট সফলভাবে।'
   wwcConfigSyncDelayInvalid: config.yml এ অবৈধ ব্যবহারকারী ডাটা সিঙ্ক বিলম্ব সেট করা
     হয়েছে। ৭২০০ সেকেন্ডে ডিফল্ট হচ্ছে...
   wwcConfigCacheInvalid: অনুবাদকের ক্যাশের আকার অবৈধ। ১০ তে ডিফল্ট হচ্ছে...
-  wwcInventoryErrorPlayer: ' আপনার GUI এর সাথে ত্রুটি সনাক্ত করা হয়েছে। কনসোলে একটি
+  wwcInventoryErrorPlayer: 'আপনার GUI এর সাথে ত্রুটি সনাক্ত করা হয়েছে। কনসোলে একটি
     লগ পাঠানো হয়েছে।'
   wwcInventoryError: ব্যবহারকারী %i এর GUI এর সাথে ত্রুটি সনাক্ত করা হয়েছে। অনুগ্রহ
     করে ডেভেলপারের কাছে এই সমস্যা রিপোর্ট করুন।
-  wwcConfigConversationTranslatorFail: ' %1$i সক্রিয় করতে ব্যর্থ।'
+  wwcConfigConversationTranslatorFail: '%1$i সক্রিয় করতে ব্যর্থ।'
   wwcConfigConversationConsoleTranslatorSuccess: ব্যবহারকারী %2 %o সফলভাবে সক্রিয়
     করা হয়েছে।
-  wwcConfigConversationTranslatorSuccess: ' %i সফলভাবে সক্রিয় করা হয়েছে।'
+  wwcConfigConversationTranslatorSuccess: '%i সফলভাবে সক্রিয় করা হয়েছে।'
   wwcConfigConversationConsoleTranslatorFail: ব্যবহারকারী %2 %o সক্রিয় করতে ব্যর্থ।
   wwcWatson117Warning: একটি InAcessibleObjectException এর কারণে ওয়াটসন আরম্ভ করতে
     ব্যর্থ হয়েছে। এখন জন্য, দয়া করে —illegal-access=আপনার বিদ্যমান সার্ভার জার আর্গুমেন্টগুলিতে
     পারমিট যোগ করুন।
   wwcDeluxeChatIncompatible: এই প্লাগইনটি ডিলাক্সচ্যাটের সাথে সঠিকভাবে কাজ করতে পারে
     না।
-  wwcSignTranslationFail: ' আপনার টার্গেট সাইন এ এক বা একাধিক লাইন অনুবাদ করতে অক্ষম।'
-  wwcBookTranslationFail: ' আপনার টার্গেট বইয়ের এক বা একাধিক পৃষ্ঠা অনুবাদ করতে ব্যর্থ।'
-  wwctiOffTarget: ' %i এর জন্য আইটেমের অনুবাদ নিষ্ক্রিয় করা হয়েছে।'
-  wwctiPlayerNotFound: ' প্লেয়ার %i পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।'
-  wwctiOffSender: ' আইটেম অনুবাদ নিষ্ক্রিয় করা হয়েছে।'
-  wwcItemTranslateTitleStock: ' ডিফল্ট আইটেমের নাম অনুবাদ করতে ব্যর্থ।'
-  wwcItemTranslateLoreFail: ' আইটেম কাহিনী অনুবাদ করতে ব্যর্থ।'
-  wwcItemTranslateTitleFail: ' আইটেমের নাম অনুবাদ করতে ব্যর্থ।'
-  wwctiNotATranslator: ' আপনি একজন সক্রিয় অনুবাদক নন! নিশ্চিত করুন যে আপনি এটি /wwct
-    দিয়ে সেট করেছেন।'
+  wwcSignTranslationFail: 'আপনার টার্গেট সাইন এ এক বা একাধিক লাইন অনুবাদ করতে অক্ষম।'
+  wwcBookTranslationFail: 'আপনার টার্গেট বইয়ের এক বা একাধিক পৃষ্ঠা অনুবাদ করতে ব্যর্থ।'
+  wwctiOffTarget: '%i এর জন্য আইটেমের অনুবাদ নিষ্ক্রিয় করা হয়েছে।'
+  wwctiOffSender: 'আইটেম অনুবাদ নিষ্ক্রিয় করা হয়েছে।'
+  wwcItemTranslateTitleStock: 'ডিফল্ট আইটেমের নাম অনুবাদ করতে ব্যর্থ।'
+  wwcItemTranslateLoreFail: 'আইটেম কাহিনী অনুবাদ করতে ব্যর্থ।'
+  wwcItemTranslateTitleFail: 'আইটেমের নাম অনুবাদ করতে ব্যর্থ।'
   wwctGUIItemButton: আইটেম অনুবাদ টগল করুন
-  wwcItemTranslateTitleDone: ' অনুবাদ করা আইটেমের শিরোনাম সফলভাবে।'
+  wwcItemTranslateTitleDone: 'অনুবাদ করা আইটেমের শিরোনাম সফলভাবে।'
   wwcGUITempItem: আইটেম ডিসপ্লে
-  wwcItemTranslateStart: ' টার্গেট আইটেম অনুবাদ করা হচ্ছে...'
-  wwcSignTranslationFailCatastrophic: ' টার্গেট সাইন অনুবাদ করতে ব্যর্থ।'
-  wwcItemTranslationFailCatastrophic: ' টার্গেট আইটেম অনুবাদ করতে ব্যর্থ।'
-  wwcBookTranslateTitleSuccess: ' অনূদিত বইয়ের শিরোনাম: %i'
-  wwctiOnSender: ' আইটেমের অনুবাদ সক্রিয় করা হয়েছে। এটি অনুবাদ করার জন্য আপনার প্রধান
+  wwcItemTranslateStart: 'টার্গেট আইটেম অনুবাদ করা হচ্ছে...'
+  wwcSignTranslationFailCatastrophic: 'টার্গেট সাইন অনুবাদ করতে ব্যর্থ।'
+  wwcItemTranslationFailCatastrophic: 'টার্গেট আইটেম অনুবাদ করতে ব্যর্থ।'
+  wwcBookTranslateTitleSuccess: 'অনূদিত বইয়ের শিরোনাম: %i'
+  wwctiOnSender: 'আইটেমের অনুবাদ সক্রিয় করা হয়েছে। এটি অনুবাদ করার জন্য আপনার প্রধান
     হাতে একটি আইটেম দিয়ে ডান-ক্লিক করুন!'
-  wwcItemTranslateLoreStart: ' টার্গেট আইটেমের কাহিনী অনুবাদ করা হচ্ছে...'
-  wwcItemTranslateLoreDone: ' অনুবাদ করা আইটেমটি সফলভাবে।'
-  wwctiOnTarget: ' আইটেমের অনুবাদ %i জন্য সক্রিয় করা হয়েছে।'
-  wwcBookTranslationFailCatastrophic: ' টার্গেট বই অনুবাদ করতে ব্যর্থ।'
-  wwcBookTranslateTitleFail: ' বইয়ের শিরোনাম অনুবাদ করতে ব্যর্থ।'
-  wwcChatTranslationFail: ' আপনার বার্তা অনুবাদ করতে ব্যর্থ।'
-  wwcInvalidTranslator: ' অনুবাদক সেটিংস অবৈধ। এই প্লাগইনটি ব্যবহার করার জন্য অনুগ্রহ
+  wwcItemTranslateLoreStart: 'টার্গেট আইটেমের কাহিনী অনুবাদ করা হচ্ছে...'
+  wwcItemTranslateLoreDone: 'অনুবাদ করা আইটেমটি সফলভাবে।'
+  wwctiOnTarget: 'আইটেমের অনুবাদ %i জন্য সক্রিয় করা হয়েছে।'
+  wwcBookTranslationFailCatastrophic: 'টার্গেট বই অনুবাদ করতে ব্যর্থ।'
+  wwcBookTranslateTitleFail: 'বইয়ের শিরোনাম অনুবাদ করতে ব্যর্থ।'
+  wwcChatTranslationFail: 'আপনার বার্তা অনুবাদ করতে ব্যর্থ।'
+  wwcInvalidTranslator: 'অনুবাদক সেটিংস অবৈধ। এই প্লাগইনটি ব্যবহার করার জন্য অনুগ্রহ
     করে আপনার config.yml অথবা /wwcc এর সাথে এটি ঠিক করুন।'
-  wwcNotDoneLoading: ' ওয়ার্ল্ডউইডচ্যাট এখনও শুরু হচ্ছে। দয়া করে খুব শীঘ্রই আবার
+  wwcNotDoneLoading: 'ওয়ার্ল্ডউইডচ্যাট এখনও শুরু হচ্ছে। দয়া করে খুব শীঘ্রই আবার
     চেষ্টা করুন।'
   wwcConfigGUIEachTranslatorSettings: '%i কনফিগারেশন'
   wwcConfigGUIToggleButton: '%i টগল করুন'
@@ -257,7 +248,7 @@ Messages:
   wwcTranslatorErrorThresholdReached: ত্রুটি থ্রেশহোল্ড পৌঁছেছে এই প্লাগইনটি এখন পুনরায়
     লোড করবে এবং সকল অনুবাদক নিষ্ক্রিয় করবে।
   wwcConfigErrorLimitEnabled: অনুবাদকের ত্রুটির সীমিত %i নির্ধারণ করা হয়েছে।
-  wwcTranslatorError: ' আপনার অনুবাদের চেষ্টা করার সময় একটি সমস্যা হয়েছে। দয়া করে
+  wwcTranslatorError: 'আপনার অনুবাদের চেষ্টা করার সময় একটি সমস্যা হয়েছে। দয়া করে
     আবার চেষ্টা করুন।'
   wwcTranslatorErrorConsole: ব্যবহারকারী %i তাদের অনুবাদের চেষ্টা করার সময় একটি সমস্যা
     হয়েছে। এখন স্ট্যাকট্রেস মুদ্রণ।
@@ -268,3 +259,8 @@ Messages:
   wwcConfigMaxResponseTimeInvalid: config.yml এ সর্বোচ্চ প্রতিক্রিয়া সময় সেট করা
     অবৈধ। ৭ সেকেন্ডে ডিফল্ট হচ্ছে...
   wwcConfigMaxResponseTimeEnabled: সর্বোচ্চ রেসপন্স টাইম %i সেকেন্ড সেট করা হয়েছে।
+  wwctInvalidInputLangCode: 'অবৈধ ইনপুট ভাষা কোড প্রদান করা হয়েছে! বৈধ ল্যাং কোড:
+    %o'
+  wwcsTitle: '%i এর রেকর্ড'
+  wwctInvalidOutputLangCode: 'অবৈধ আউটপুট ভাষা কোড প্রদান করা হয়েছে! বৈধ ল্যাং কোড:
+    %o'

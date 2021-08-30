@@ -35,8 +35,8 @@ public class YAMLTranslator {
 		// String supportedLangs[] = new
 		// CommonDefinitions().getSupportedPluginLangCodes();
 		String inputLang = "en";
-		String originalYAMLDir = "C:\\Users\\Dominic\\Desktop\\Test\\";
-		String outputYAMLDir = "C:\\Users\\Dominic\\Desktop\\Test\\";
+		String originalYAMLDir = "";
+		String outputYAMLDir = "";
 		String originalYAML = "";
 		String outputYAML = "";
 
@@ -69,7 +69,7 @@ public class YAMLTranslator {
 		System.out.println("Enter Amazon Access Key: ");
 		amazonAccessKey = scanner.nextLine().toString();
 		
-		System.out.println("Enter Amazon Secret Key");
+		System.out.println("Enter Amazon Secret Key: ");
 		amazonSecretKey = scanner.nextLine().toString();
 		
 		if (originalYAMLDir.equals("")) {

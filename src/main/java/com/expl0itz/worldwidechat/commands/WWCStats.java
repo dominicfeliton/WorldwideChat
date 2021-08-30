@@ -77,7 +77,7 @@ public class WWCStats extends BasicCommand {
 				}
 				final TextComponent stats = Component.text()
 						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcsName", new String[] {inPlayer.getName()}))
+								.content(CommonDefinitions.getMessage("wwcsTitle", new String[] {inPlayer.getName()}))
 								.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
 						.append(Component.text()
 								.content("\n- " + CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {isActiveTranslator}))

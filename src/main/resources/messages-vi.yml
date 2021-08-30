@@ -1,19 +1,19 @@
 Messages:
-  wwcgAutoTranslateStart: ' Bây giờ dịch trò chuyện toàn cầu vào %o.'
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Trò chuyện toàn cầu đang được
+  wwcgAutoTranslateStart: 'Bây giờ dịch trò chuyện toàn cầu vào %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'Trò chuyện toàn cầu đang được
     dịch vào %o.'
   wwcConfigGUIAmazonTranslateAccessKeyButton: Thay đổi khóa truy cập Amazon
-  wwcrFail: ' Thất bại trong việc tải lại WorldwideChat.'
+  wwcrFail: 'Thất bại trong việc tải lại WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Thay đổi Kiểm tra Cập Nhật chậm trễ
   wwcUpdaterFailedGeneric: Không thể kiểm tra bản cập nhật WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Sự chậm trễ hiện tại trên trình kiểm tra
     cập nhật là %i giây. Nhập bất cứ điều gì lớn hơn 10 để đặt một giá trị mới, hoặc
     bất cứ điều gì nhỏ hơn 10 để quay lại.
   wwctGUIMainMenuGlobal: Menu dịch toàn cầu
-  wwcConfigConversationPluginUpdateChatSuccess: ' Plugin cập nhật trò chuyện nhắc
+  wwcConfigConversationPluginUpdateChatSuccess: 'Plugin cập nhật trò chuyện nhắc
     nhở bật thành công.'
-  wwctbOnTarget: ' Đã bật dịch sách cho %i.'
-  wwcsNotATranslator: ' Không có bản ghi nào được cung cấp cho %i.'
+  wwctbOnTarget: 'Đã bật dịch sách cho %i.'
+  wwcsNotATranslator: 'Không có bản ghi nào được cung cấp cho %i.'
   wwcConfigGUIbStatsButton: Chuyển đổi bStats
   wwctGUINewTranslationSource: Chọn một ngôn ngữ nguồn
   wwcConfigConnectionFailed: Không thể kết nối đến %o. Đảm bảo thông tin đăng nhập
@@ -22,135 +22,131 @@ Messages:
   wwctGUIMainMenuPlayer: Menu dịch của %i
   wwctGUIBookButton: Chuyển đổi sách dịch
   wwcLangDetected: Phát hiện ngôn ngữ %o.
-  wwcBookTranslateStart: ' Dịch sách mục tiêu...'
+  wwcBookTranslateStart: 'Dịch sách mục tiêu...'
   wwcConfigDisabledbStats: Tắt bStats.
-  wwctsOffSender: ' Đã vô hiệu hóa bản dịch ký.'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Trò chuyện toàn cầu
+  wwctsOffSender: 'Đã vô hiệu hóa bản dịch ký.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Trò chuyện toàn cầu
     đang được dịch, nhưng trò chuyện của bạn đang được dịch từ %i đến %o.'
   wwcUpdaterParserFailed: Không thể phân tích dữ liệu cập nhật từ Github.
-  wwctAutoTranslateStart: ' Bây giờ dịch tất cả các cuộc trò chuyện của bạn vào %o.'
+  wwctAutoTranslateStart: 'Bây giờ dịch tất cả các cuộc trò chuyện của bạn vào %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Khóa bí mật hiện tại là %i.
     Vui lòng nhập một khóa bí mật cho Amazon, hoặc nhập 0 để quay lại.
-  wwctbOffSender: ' Bản dịch sách bị vô hiệu hóa.'
+  wwctbOffSender: 'Bản dịch sách bị vô hiệu hóa.'
   wwcConfigGUIAmazonTranslateButton: Amazon Translate
-  wwcConfigConversationLangSuccess: ' Ngôn ngữ plugin đã thay đổi thành công.'
-  wwcsSuccessfulTranslations: ' Bản dịch thành công: %i'
-  wwctTranslationStoppedOtherPlayer: ' Dịch trò chuyện cho %i đã bị dừng.'
+  wwcConfigConversationLangSuccess: 'Ngôn ngữ plugin đã thay đổi thành công.'
+  wwcsSuccessfulTranslations: 'Bản dịch thành công: %i'
+  wwctTranslationStoppedOtherPlayer: 'Dịch trò chuyện cho %i đã bị dừng.'
   wwcConfigConversationTranslationCacheInput: Giới hạn bộ nhớ cache dịch hiện tại
     là %i cụm từ. Nhập bất cứ điều gì lớn hơn 0 để đặt một giá trị mới, hoặc nhập
     0 để vô hiệu hóa bộ nhớ cache dịch. Nhập bất cứ điều gì nhỏ hơn 0 để quay trở
     lại.
-  wwctbOffTarget: ' Dịch sách bị tắt cho %i.'
+  wwctbOffTarget: 'Dịch sách bị tắt cho %i.'
   wwcConfigGUIGeneralSettings: Cấu hình chung
   wwcInvalidLang: Ngôn ngữ không hợp lệ trong config.yml của bạn. Defaulting to en...
-  wwcConfigConversationAmazonTranslateRegionSuccess: ' Khu vực Amazon được thiết lập
+  wwcConfigConversationAmazonTranslateRegionSuccess: 'Khu vực Amazon được thiết lập
     thành công.'
   wwcConfigRateLimitEnabled: Giới hạn tốc độ toàn cầu được bật và đặt thành %i giây.
-  wwcBadPerms: ' Bạn không có quyền yêu cầu để thực hiện lệnh này!'
+  wwcBadPerms: 'Bạn không có quyền yêu cầu để thực hiện lệnh này!'
   wwcConfigGUILangButton: Thay đổi ngôn ngữ Plugin
   wwctGUISignButton: Chuyển đổi Đăng dịch
   wwcUpdaterOutOfDate: WorldwideChat đã lỗi thời. Vui lòng cập nhật lên phiên bản
     mới nhất, %i.
-  wwcConfigGUIChangesNotSaved: ' Thay đổi của bạn có thể không có hiệu lực cho đến
+  wwcConfigGUIChangesNotSaved: 'Thay đổi của bạn có thể không có hiệu lực cho đến
     khi bạn chạy /wwcr, hoặc bấm vào rào cản màu đỏ trong /wwcc.'
   wwcConfigGUINextPageButton: Trang tiếp theo
   wwctbTranslatePageFail: (Không dịch được trang này) %i
   wwcConfigInvalidTranslatorSettings: Cài đặt dịch giả không hợp lệ! Vui lòng kích
     hoạt chỉ một trình dịch trong config.yml của bạn.
   wwcConfigGUIQuitButton: Thoát & Lưu Thay đổi
-  wwctPlayerNotFound: ' Người chơi %Tôi không tìm thấy.'
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Trò chuyện toàn cầu
+  wwctPlayerNotFound: 'Người chơi %Tôi không tìm thấy.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'Trò chuyện toàn cầu
     đang được dịch, nhưng trò chuyện của bạn đang được dịch vào %o.'
   wwcConfigGUIGlobalRateLimit: Thay đổi giới hạn mức giá toàn cầu
   wwctGUIBackToSourceLanguageButton: Quay lại trình đơn ngôn ngữ nguồn
   wwcConfigGUIAmazonTranslateRegionButton: Thay đổi Vùng Amazon
   wwcConfigConversationLangInput: 'Ngôn ngữ plugin hiện tại là %i. Vui lòng nhập mã
     ngôn ngữ hợp lệ, hoặc nhập 0 để hủy. Mã ngôn ngữ hợp lệ: %o'
-  wwcConfigConversationLangInvalid: ' Mã ngôn ngữ không hợp lệ!'
-  wwctTranslationStopped: ' Bản dịch trò chuyện của bạn đã bị dừng lại.'
-  wwctsPlayerNotFound: ' Người chơi %i hoặc là không tìm thấy, hoặc không phải là
-    một dịch giả đang hoạt động.'
+  wwcConfigConversationLangInvalid: 'Mã ngôn ngữ không hợp lệ!'
+  wwctTranslationStopped: 'Bản dịch trò chuyện của bạn đã bị dừng lại.'
   wwcConfigGUIWatsonAPIKeyButton: Thay đổi khóa API Watson
   wwcEnabled: Đã bật phiên bản WorldwideChat %i.
-  wwcgLangToLangStart: ' Bây giờ dịch trò chuyện toàn cầu từ %i đến %o.'
-  wwctbOnSender: ' Đã bật dịch sách. Nhấp chuột phải trong khi giữ một cuốn sách để
+  wwcgLangToLangStart: 'Bây giờ dịch trò chuyện toàn cầu từ %i đến %o.'
+  wwctbOnSender: 'Đã bật dịch sách. Nhấp chuột phải trong khi giữ một cuốn sách để
     dịch nó!'
   wwcListenersInitialized: Người nghe được khởi tạo.
   wwcUserDataCorrupted: Tìm thấy và di chuyển %i bị hỏng hoặc tệp dữ liệu người dùng
     cũ. Chúng sẽ bị xóa khi tải lại tiếp theo.
   wwcConfigGUIPluginUpdateChatButton: Gửi lời nhắc trò chuyện cho Plugin cập nhật
-  wwcConfigConversationSendTranslationChatSuccess: ' Lời nhắc trò chuyện dịch đang
+  wwcConfigConversationSendTranslationChatSuccess: 'Lời nhắc trò chuyện dịch đang
     hoạt động được bật thành công.'
-  wwctsOffTarget: ' Đăng dịch bị vô hiệu hóa cho %i.'
+  wwctsOffTarget: 'Đăng dịch bị vô hiệu hóa cho %i.'
   wwcUpdaterConnectionFailed: Không thể kiểm tra các bản cập nhật mới nhất trên Github.
-  watsonNotFoundExceptionNotification: ' Không thể dịch đầu vào của bạn thêm nữa.'
+  watsonNotFoundExceptionNotification: 'Không thể dịch đầu vào của bạn thêm nữa.'
   wwcConfigConversationWatsonAPIKeyInput: Khóa API hiện tại là %i. Vui lòng nhập khóa
     API cho Watson, hoặc nhập 0 để quay lại.
   wwctGUIStopButton: Dừng dịch
-  wwcgTranslationStopped: ' Dịch trò chuyện toàn cầu đã bị dừng lại.'
-  wwctAutoTranslateStartOtherPlayer: ' Bây giờ dịch cuộc trò chuyện của %i đến %o.'
+  wwcgTranslationStopped: 'Dịch trò chuyện toàn cầu đã bị dừng lại.'
+  wwctAutoTranslateStartOtherPlayer: 'Bây giờ dịch cuộc trò chuyện của %i đến %o.'
   wwcUpdaterFutureDate: Phiên bản WorldwideChat này có phiên bản lớn hơn phiên bản
     công khai mới nhất.
-  wwcConfigConversationPrefixSuccess: ' Tiền tố đã thay đổi thành công.'
+  wwcConfigConversationPrefixSuccess: 'Tiền tố đã thay đổi thành công.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: Thay đổi khóa API Google Translate
-  wwcSignDeletedOrTooLong: ' Dấu hiệu mục tiêu đã bị xóa hoặc bản dịch quá dài. Bản
+  wwcSignDeletedOrTooLong: 'Dấu hiệu mục tiêu đã bị xóa hoặc bản dịch quá dài. Bản
     dịch:'
-  wwctsOnTarget: ' Đăng dịch được bật cho %i.'
+  wwctsOnTarget: 'Đăng dịch được bật cho %i.'
   wwcConfigCacheDisabled: Bộ nhớ cache của trình dịch bị tắt.
   wwcConfigConversationWatsonURLInput: URL hiện tại là %i. Vui lòng nhập URL dịch
     vụ cho Watson, hoặc nhập 0 để quay lại.
-  wwcOnJoinTranslationNotificationSourceLang: ' Trò chuyện của bạn đang được dịch
+  wwcOnJoinTranslationNotificationSourceLang: 'Trò chuyện của bạn đang được dịch
     từ %i đến %o.'
-  wwcBookDone: ' Sách dịch thành công.'
-  wwctsOnSender: ' Đã bật bản dịch ký. Nhấp chuột phải vào một dấu hiệu để dịch nó!'
-  watsonColorCodeWarning: ' Sử dụng mã màu có thể cho bạn kết quả không thể đoán trước.'
+  wwcBookDone: 'Sách dịch thành công.'
+  wwctsOnSender: 'Đã bật bản dịch ký. Nhấp chuột phải vào một dấu hiệu để dịch nó!'
+  watsonColorCodeWarning: 'Sử dụng mã màu có thể cho bạn kết quả không thể đoán trước.'
   wwctGUITranslationButton: Bắt đầu Translating
   wwctGUIAutoDetectButton: Ngôn ngữ nguồn tự động phát hiện
   wwcUpdaterUpToDate: WorldwideChat được cập nhật!
   wwcConfigConversationAmazonTranslateRegionInput: Vùng hiện tại là %i. Vui lòng nhập
     một vùng cho Amazon, hoặc nhập 0 để quay lại.
-  wwcNoConsole: ' Lệnh này chỉ có thể được chạy bởi một người chơi.'
+  wwcNoConsole: 'Lệnh này chỉ có thể được chạy bởi một người chơi.'
   wwcInitializationFail: Thất bại trong việc khởi tạo WorldwideChat.
-  wwcrSuccess: ' Nạp lại thành công WorldwideChat.'
-  wwcPlayerNotFound: ' Người chơi %Tôi không tìm thấy.'
-  wwcUpdaterOutOfDateChat: ' WorldwideChat đã lỗi thời. Vui lòng cập nhật lên phiên
+  wwcrSuccess: 'Nạp lại thành công WorldwideChat.'
+  wwcPlayerNotFound: 'Người chơi %Tôi không tìm thấy.'
+  wwcUpdaterOutOfDateChat: 'WorldwideChat đã lỗi thời. Vui lòng cập nhật lên phiên
     bản mới nhất.'
-  wwcConfigConversationRateLimitSuccess: ' Giới hạn tỷ lệ đặt thành công.'
-  wwcConfigConversationWatsonURLSuccess: ' Watson URL đặt thành công.'
-  wwctbPlayerNotFound: ' Người chơi %i hoặc là không tìm thấy, hoặc không phải là
+  wwcConfigConversationRateLimitSuccess: 'Giới hạn tỷ lệ đặt thành công.'
+  wwcConfigConversationWatsonURLSuccess: 'Watson URL đặt thành công.'
+  wwctbPlayerNotFound: 'Người chơi %i hoặc là không tìm thấy, hoặc không phải là
     một dịch giả đang hoạt động.'
-  wwcConfigConversationTranslationCacheSuccess: ' Giới hạn bộ nhớ cache dịch đặt thành
+  wwcConfigConversationTranslationCacheSuccess: 'Giới hạn bộ nhớ cache dịch đặt thành
     công.'
-  wwctInvalidArgs: ' Các đối số không hợp lệ được cung cấp!'
+  wwctInvalidArgs: 'Các đối số không hợp lệ được cung cấp!'
   wwcConfigGUIPrefixButton: Thay đổi tiền tố plugin
-  wwctSameLangError: ' Bạn không thể dịch sang cùng một ngôn ngữ!'
+  wwctSameLangError: 'Bạn không thể dịch sang cùng một ngôn ngữ!'
   wwctGUINewTranslationTarget: Chọn một ngôn ngữ mục tiêu
-  wwctLangToLangStartOtherPlayer: ' Bây giờ dịch cuộc trò chuyện của %o từ %i đến
+  wwctLangToLangStartOtherPlayer: 'Bây giờ dịch cuộc trò chuyện của %o từ %i đến
     %e.'
   wwcConfigConnectionSuccess: Kết nối thành công vào %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: ' Đang hoạt động Translator: %i'
-  wwctLangToLangStart: ' Bây giờ dịch tất cả cuộc trò chuyện của bạn từ %i đến %o.'
+  wwcsIsActiveTranslator: 'Đang hoạt động Translator: %i'
+  wwctLangToLangStart: 'Bây giờ dịch tất cả cuộc trò chuyện của bạn từ %i đến %o.'
   wwcConfigConversationPrefixInput: Tiền tố hiện tại là %i. Vui lòng nhập một tiền
     tố mới, hoặc nhập 0 để quay lại.
   wwcConfigGUIPreviousPageButton: Trang trước
   wwcConfigGUITranslatorCacheButton: Thay đổi giới hạn bộ nhớ cache dịch
-  wwcConfigConversationbStatsSuccess: ' Đã bật bStats thành công.'
-  wwcSignDone: ' Ký dịch thành công.'
+  wwcConfigConversationbStatsSuccess: 'Đã bật bStats thành công.'
+  wwcSignDone: 'Ký dịch thành công.'
   wwcConfigInvalidPrefixSettings: Không đọc tiền tố của bạn. Sử dụng mặc định...
   wwcConfigRateLimitInvalid: Giới hạn tỷ lệ xấu đặt trong config.yml. Mặc định là
     0 giây...
-  wwcSignTranslateStart: ' Đang dịch dấu hiệu mục tiêu...'
+  wwcSignTranslateStart: 'Đang dịch dấu hiệu mục tiêu...'
   wwcConfigGUIChatSettings: Cấu hình trò chuyện
   wwcConfigGUIWatsonURLButton: Thay đổi URL dịch vụ Watson
-  wwctInvalidLangCode: ' (các) mã ngôn ngữ không hợp lệ được cung cấp! Mã lang hợp
-    lệ: %o'
-  wwcConfigConversationUpdateCheckerSuccess: ' Cập Nhật kiểm tra chậm trễ đặt thành
+  wwcConfigConversationUpdateCheckerSuccess: 'Cập Nhật kiểm tra chậm trễ đặt thành
     công.'
   wwcUnsupportedVersion: 'Bạn đang chạy một phiên bản không được hỗ trợ của Bukkit,
     Spigot hoặc Paper. Các phiên bản được hỗ trợ:'
   wwctGUIBackToMainMenuButton: Quay lại trình đơn dịch chính
-  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Trò chuyện toàn cầu đang được
+  wwcGlobalOnJoinTranslationNotificationSourceLang: 'Trò chuyện toàn cầu đang được
     dịch từ %i đến %o.'
   wwcConfigGUITranslatorSettings: Cấu hình Translator
   wwcConfigConversationGoogleTranslateAPIKeyInput: Khóa API hiện tại là %i. Vui lòng
@@ -158,52 +154,48 @@ Messages:
   wwcConfigConversationRateLimitInput: Giới hạn tốc độ toàn cầu hiện tại cho mỗi bản
     dịch là %i giây. Nhập bất cứ điều gì lớn hơn 0 để đặt một giá trị mới, hoặc nhập
     0 để vô hiệu hóa giới hạn. Nhập bất cứ điều gì nhỏ hơn 0 để quay trở lại.
-  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Thiết lập khóa Google Translate
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Thiết lập khóa Google Translate
     API thành công.'
   wwcConfigGUIAmazonTranslateSecretKeyButton: Thay đổi khóa bí mật Amazon
-  wwcVersion: ' WorldwideChat, phiên bản'
-  wwcsName: ' Tên người chơi: %i'
-  wwcsAttemptedTranslations: ' Bản dịch đã cố gắng: %i'
-  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazon khóa bí mật thiết
+  wwcVersion: 'WorldwideChat, phiên bản'
+  wwcsAttemptedTranslations: 'Bản dịch đã cố gắng: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: 'Amazon khóa bí mật thiết
     lập thành công.'
-  wwcConfigConversationWatsonAPIKeySuccess: ' Watson API chìa khóa thiết lập thành
+  wwcConfigConversationWatsonAPIKeySuccess: 'Watson API chìa khóa thiết lập thành
     công.'
-  wwctGUIMainMenu: Menu dịch của bạn
-  wwctsNotATranslator: ' Bạn không phải là một dịch giả tích cực! Hãy chắc chắn rằng
-    bạn đã thiết lập này với /wwct.'
-  wwcRateLimit: ' Bản dịch của bạn bị giới hạn tỷ lệ. Vui lòng chơi %i giây khác.'
+  wwcRateLimit: 'Bản dịch của bạn bị giới hạn tỷ lệ. Vui lòng chơi %i giây khác.'
   wwcConfigCacheEnabled: Bộ nhớ cache của trình dịch được bật và đặt thành giới hạn
     của %i.
   wwctGUIExistingTranslationButton: Ghi đè phiên dịch hiện tại
-  wwcOnJoinTranslationNotificationNoSourceLang: ' Trò chuyện của bạn đang được dịch
+  wwcOnJoinTranslationNotificationNoSourceLang: 'Trò chuyện của bạn đang được dịch
     tới %o.'
   wwcUserDataReloaded: Đã nạp tất cả dữ liệu người dùng đã lưu.
   wwcConfigGUISendTranslationChatButton: Gửi lời nhắc trò chuyện cho Active Translator
     khi đăng nhập
-  wwcsLastTranslationTime: ' Thời gian dịch cuối cùng (thành công): %i'
-  wwctbNotATranslator: ' Bạn không phải là một dịch giả tích cực! Hãy chắc chắn rằng
+  wwcsLastTranslationTime: 'Thời gian dịch cuối cùng (thành công): %i'
+  wwctbNotATranslator: 'Bạn không phải là một dịch giả tích cực! Hãy chắc chắn rằng
     bạn đã thiết lập này với /wwct.'
   wwcConfigConversationAmazonTranslateAccessKeyInput: Khóa truy cập hiện tại là %i.
     Vui lòng nhập khóa truy cập cho Amazon, hoặc nhập 0 để quay lại.
-  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Thiết lập thành công khóa
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: 'Thiết lập thành công khóa
     truy cập Amazon.'
   wwcConfigBadUpdateDelay: Độ trễ cập nhật không hợp lệ đặt trong config.yml. Mặc
     định đến 86400 giây...
-  wwctrlRateLimitOffSender: ' Tắt giới hạn mức giá của bạn.'
-  wwctrlRateLimitAlreadyOffTarget: ' Giới hạn tỷ lệ của %i đã bị vô hiệu hóa.'
-  wwctrlPlayerNotFound: ' Người chơi %i hoặc là không tìm thấy, hoặc không phải là
+  wwctrlRateLimitOffSender: 'Tắt giới hạn mức giá của bạn.'
+  wwctrlRateLimitAlreadyOffTarget: 'Giới hạn tỷ lệ của %i đã bị vô hiệu hóa.'
+  wwctrlPlayerNotFound: 'Người chơi %i hoặc là không tìm thấy, hoặc không phải là
     một dịch giả đang hoạt động.'
-  wwctrlRateLimitSetSender: ' Đặt giới hạn tỷ lệ của bạn thành %i giây.'
-  wwctrlRateLimitOffTarget: ' Tắt giới hạn tỷ lệ của %i.'
-  wwctrlRateLimitSetTarget: ' Đặt giới hạn tỷ lệ của %i đến %o giây.'
-  wwctrlNotATranslator: ' Bạn không phải là một dịch giả tích cực! Hãy chắc chắn rằng
+  wwctrlRateLimitSetSender: 'Đặt giới hạn tỷ lệ của bạn thành %i giây.'
+  wwctrlRateLimitOffTarget: 'Tắt giới hạn tỷ lệ của %i.'
+  wwctrlRateLimitSetTarget: 'Đặt giới hạn tỷ lệ của %i đến %o giây.'
+  wwctrlNotATranslator: 'Bạn không phải là một dịch giả tích cực! Hãy chắc chắn rằng
     bạn đã thiết lập này với /wwct.'
-  wwctrlRateLimitAlreadyOffSender: ' Giới hạn lãi suất của bạn đã bị vô hiệu hóa.'
+  wwctrlRateLimitAlreadyOffSender: 'Giới hạn lãi suất của bạn đã bị vô hiệu hóa.'
   wwctGUIRateButton: Đặt giới hạn tỷ lệ
   wwctGUIConversationRateLimit: Giới hạn tốc độ cho mỗi bản dịch hiện tại %i giây.
     Nhập bất cứ điều gì lớn hơn 0 để đặt một giá trị mới, hoặc nhập 0 để vô hiệu hóa
     giới hạn. Nhập bất cứ điều gì nhỏ hơn 0 để quay trở lại.
-  wwctGUITargetPlayerNull: ' Người chơi mục tiêu bị ngắt kết nối khỏi máy chủ.'
+  wwctGUITargetPlayerNull: 'Người chơi mục tiêu bị ngắt kết nối khỏi máy chủ.'
   wwcConfigConversationSyncUserDataDelayInput: Sự chậm trễ hiện tại cho mỗi đồng bộ
     hóa dữ liệu người dùng là %i giây. Nhập bất cứ điều gì lớn hơn 10 để đặt một giá
     trị mới, hoặc bất cứ điều gì nhỏ hơn 10 để quay lại.
@@ -211,55 +203,51 @@ Messages:
   wwcConfigSyncTime: Tự động đồng bộ dữ liệu người dùng hoàn tất trong %i nanogiây.
   wwcConfigSyncDelayEnabled: Trì hoãn cho mỗi người dùng đồng bộ hóa dữ liệu đặt thành
     %i giây.
-  wwcConfigConversationSyncUserDataDelaySuccess: ' Thiết lập chậm trễ đồng bộ hóa
+  wwcConfigConversationSyncUserDataDelaySuccess: 'Thiết lập chậm trễ đồng bộ hóa
     dữ liệu người dùng thành công.'
   wwcConfigSyncDelayInvalid: Sự chậm trễ đồng bộ hóa dữ liệu người dùng không hợp
     lệ đặt trong config.yml. Mặc định đến 7200 giây...
   wwcConfigCacheInvalid: Kích thước bộ nhớ cache của trình dịch không hợp lệ. Mặc
     định là 10...
-  wwcInventoryErrorPlayer: ' Phát hiện lỗi với GUI của bạn. Một bản ghi đã được gửi
+  wwcInventoryErrorPlayer: 'Phát hiện lỗi với GUI của bạn. Một bản ghi đã được gửi
     đến giao diện điều khiển.'
   wwcInventoryError: Phát hiện lỗi với GUI của người dùng %i. Vui lòng báo cáo vấn
     đề này cho nhà phát triển.
-  wwcConfigConversationTranslatorFail: ' Không thể bật %i.'
+  wwcConfigConversationTranslatorFail: 'Không thể bật %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Người dùng %i đã bật thành công %o.
-  wwcConfigConversationTranslatorSuccess: ' Đã bật thành công %i.'
+  wwcConfigConversationTranslatorSuccess: 'Đã bật thành công %i.'
   wwcConfigConversationConsoleTranslatorFail: Người dùng %tôi không thể bật %o.
   wwcWatson117Warning: Watson đã thất bại trong việc khởi tạo do một InAccessibleObjectException.
     Bây giờ, xin vui lòng thêm —illegal-access=giấy phép cho các đối số jar máy chủ
     hiện có của bạn.
   wwcDeluxeChatIncompatible: Plugin này có thể không hoạt động đúng với DeluxeChat.
-  wwcSignTranslationFail: ' Không thể dịch một hoặc nhiều dòng trên dấu hiệu mục tiêu
+  wwcSignTranslationFail: 'Không thể dịch một hoặc nhiều dòng trên dấu hiệu mục tiêu
     của bạn.'
-  wwcBookTranslationFail: ' Không thể dịch một hoặc nhiều trang trong sách mục tiêu
+  wwcBookTranslationFail: 'Không thể dịch một hoặc nhiều trang trong sách mục tiêu
     của bạn.'
-  wwctiOffTarget: ' Mục dịch vô hiệu hóa cho %i.'
-  wwctiPlayerNotFound: ' Người chơi %i hoặc là không tìm thấy, hoặc không phải là
-    một dịch giả đang hoạt động.'
-  wwctiOffSender: ' Bản dịch mục bị vô hiệu hóa.'
-  wwcItemTranslateTitleStock: ' Không thể dịch tên mục mặc định.'
-  wwcItemTranslateLoreFail: ' Thất bại trong việc dịch mục truyền thuyết.'
-  wwcItemTranslateTitleFail: ' Không thể dịch tên mục.'
-  wwctiNotATranslator: ' Bạn không phải là một dịch giả tích cực! Hãy chắc chắn rằng
-    bạn đã thiết lập này với /wwct.'
+  wwctiOffTarget: 'Mục dịch vô hiệu hóa cho %i.'
+  wwctiOffSender: 'Bản dịch mục bị vô hiệu hóa.'
+  wwcItemTranslateTitleStock: 'Không thể dịch tên mục mặc định.'
+  wwcItemTranslateLoreFail: 'Thất bại trong việc dịch mục truyền thuyết.'
+  wwcItemTranslateTitleFail: 'Không thể dịch tên mục.'
   wwctGUIItemButton: Chuyển đổi mục dịch
-  wwcItemTranslateTitleDone: ' Đã dịch tiêu đề mục thành công.'
+  wwcItemTranslateTitleDone: 'Đã dịch tiêu đề mục thành công.'
   wwcGUITempItem: Mục Hiển thị
-  wwcItemTranslateStart: ' Đang dịch mục tiêu...'
-  wwcSignTranslationFailCatastrophic: ' Lỗi dịch dấu hiệu đích.'
-  wwcItemTranslationFailCatastrophic: ' Không thể dịch mục đích.'
-  wwcBookTranslateTitleSuccess: ' Tựa đề sách đã dịch: %i'
-  wwctiOnSender: ' Đã bật dịch mục. Nhấp chuột phải với một mục trong tay chính của
+  wwcItemTranslateStart: 'Đang dịch mục tiêu...'
+  wwcSignTranslationFailCatastrophic: 'Lỗi dịch dấu hiệu đích.'
+  wwcItemTranslationFailCatastrophic: 'Không thể dịch mục đích.'
+  wwcBookTranslateTitleSuccess: 'Tựa đề sách đã dịch: %i'
+  wwctiOnSender: 'Đã bật dịch mục. Nhấp chuột phải với một mục trong tay chính của
     bạn để dịch nó!'
-  wwcItemTranslateLoreStart: ' Dịch truyền thuyết của mục tiêu...'
-  wwcItemTranslateLoreDone: ' Dịch mục truyền thuyết thành công.'
-  wwctiOnTarget: ' Mục dịch được kích hoạt cho %i.'
-  wwcBookTranslationFailCatastrophic: ' Không thể dịch sổ mục tiêu.'
-  wwcBookTranslateTitleFail: ' Thất bại trong việc dịch tiêu đề sách.'
-  wwcChatTranslationFail: ' Không dịch được thư của bạn.'
-  wwcInvalidTranslator: ' Cài đặt dịch không hợp lệ. Vui lòng sửa lỗi này trong config.yml
+  wwcItemTranslateLoreStart: 'Dịch truyền thuyết của mục tiêu...'
+  wwcItemTranslateLoreDone: 'Dịch mục truyền thuyết thành công.'
+  wwctiOnTarget: 'Mục dịch được kích hoạt cho %i.'
+  wwcBookTranslationFailCatastrophic: 'Không thể dịch sổ mục tiêu.'
+  wwcBookTranslateTitleFail: 'Thất bại trong việc dịch tiêu đề sách.'
+  wwcChatTranslationFail: 'Không dịch được thư của bạn.'
+  wwcInvalidTranslator: 'Cài đặt dịch không hợp lệ. Vui lòng sửa lỗi này trong config.yml
     của bạn hoặc với /wwccc để sử dụng plugin này.'
-  wwcNotDoneLoading: ' WorldwideChat vẫn đang khởi tạo. Vui lòng thử lại ngay.'
+  wwcNotDoneLoading: 'WorldwideChat vẫn đang khởi tạo. Vui lòng thử lại ngay.'
   wwcConfigGUIEachTranslatorSettings: '%i Cấu hình'
   wwcConfigGUIToggleButton: Tật %i
   wwcConfigGUIWatsonButton: Watson
@@ -270,7 +258,7 @@ Messages:
   wwcTranslatorErrorThresholdReached: Đã đạt ngưỡng lỗi. Plugin này bây giờ sẽ tải
     lại và vô hiệu hóa tất cả các dịch giả.
   wwcConfigErrorLimitEnabled: Giới hạn lỗi dịch được đặt thành %i.
-  wwcTranslatorError: ' Một vấn đề xảy ra trong khi cố gắng dịch thuật của bạn. Vui
+  wwcTranslatorError: 'Một vấn đề xảy ra trong khi cố gắng dịch thuật của bạn. Vui
     lòng thử lại.'
   wwcTranslatorErrorConsole: Một vấn đề xảy ra trong khi người dùng %i đang cố gắng
     dịch thuật của họ. Bây giờ in stacktrace.
@@ -281,3 +269,8 @@ Messages:
   wwcConfigMaxResponseTimeInvalid: Thời gian phản hồi tối đa không hợp lệ được đặt
     trong config.yml. Mặc định đến 7 giây...
   wwcConfigMaxResponseTimeEnabled: Thời gian phản hồi tối đa được đặt thành %i giây.
+  wwctInvalidInputLangCode: 'Mã ngôn ngữ nhập không hợp lệ được cung cấp! Mã lang
+    hợp lệ: %o'
+  wwcsTitle: Bản ghi của %i
+  wwctInvalidOutputLangCode: 'Mã ngôn ngữ xuất không hợp lệ được cung cấp! Mã lang
+    hợp lệ: %o'

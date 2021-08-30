@@ -1,19 +1,19 @@
 Messages:
-  wwcgAutoTranslateStart: ' Översätter nu global chatt till %o.'
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Global chatt översätts till
+  wwcgAutoTranslateStart: 'Översätter nu global chatt till %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'Global chatt översätts till
     %o.'
   wwcConfigGUIAmazonTranslateAccessKeyButton: Ändra Amazon-åtkomstnyckel
-  wwcrFail: ' Det gick inte att ladda om WorldwideChat.'
+  wwcrFail: 'Det gick inte att ladda om WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Fördröjning av Ändra Sök efter uppdateringar
   wwcUpdaterFailedGeneric: Det gick inte att söka efter WorldwideChat-uppdateringar.
   wwcConfigConversationUpdateCheckerInput: Den aktuella fördröjningen på uppdateringskontrollen
     är %i sekunder. Skriv något större än 10 för att ställa in ett nytt värde, eller
     något mindre än 10 för att gå tillbaka.
   wwctGUIMainMenuGlobal: Menyn Global Översättning
-  wwcConfigConversationPluginUpdateChatSuccess: ' Påminnelse om pluginuppdatering
+  wwcConfigConversationPluginUpdateChatSuccess: 'Påminnelse om pluginuppdatering
     chattar har blivit omsatt.'
-  wwctbOnTarget: ' Boköversättning aktiverad för %i.'
-  wwcsNotATranslator: ' Det finns ännu inga poster tillgängliga för %i.'
+  wwctbOnTarget: 'Boköversättning aktiverad för %i.'
+  wwcsNotATranslator: 'Det finns ännu inga poster tillgängliga för %i.'
   wwcConfigGUIbStatsButton: Växla bStats
   wwctGUINewTranslationSource: Välj ett källspråk
   wwcConfigConnectionFailed: Det gick inte att ansluta till %o. Försäkra dig om att
@@ -22,135 +22,131 @@ Messages:
   wwctGUIMainMenuPlayer: Menyn Översättning av %i
   wwctGUIBookButton: Växla bok Översättning
   wwcLangDetected: Upptäckt språk %o.
-  wwcBookTranslateStart: ' Översätter målbok...'
+  wwcBookTranslateStart: 'Översätter målbok...'
   wwcConfigDisabledbStats: Inaktiverad bStats.
-  wwctsOffSender: ' Signera översättning inaktiverad.'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Global chatt översätts,
+  wwctsOffSender: 'Signera översättning inaktiverad.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Global chatt översätts,
     men din chatt översätts från %i till %o.'
   wwcUpdaterParserFailed: Det gick inte att tolka uppdateringsdata från Github.
-  wwctAutoTranslateStart: ' Översätter nu all din chatt till %o.'
+  wwctAutoTranslateStart: 'Översätter nu all din chatt till %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Den nuvarande hemliga nyckeln
     är %i. Ange en hemlig nyckel för Amazon, eller skriv 0 för att gå tillbaka.
-  wwctbOffSender: ' Boköversättning inaktiverad.'
+  wwctbOffSender: 'Boköversättning inaktiverad.'
   wwcConfigGUIAmazonTranslateButton: Amazon Översätt
-  wwcConfigConversationLangSuccess: ' Insticksprogrammets språk har ändrats.'
-  wwcsSuccessfulTranslations: ' Framgångsrika översättningar: %i'
-  wwctTranslationStoppedOtherPlayer: ' Chattöversättning för %i har stoppats.'
+  wwcConfigConversationLangSuccess: 'Insticksprogrammets språk har ändrats.'
+  wwcsSuccessfulTranslations: 'Framgångsrika översättningar: %i'
+  wwctTranslationStoppedOtherPlayer: 'Chattöversättning för %i har stoppats.'
   wwcConfigConversationTranslationCacheInput: Den aktuella begränsningen för översättningscachen
     är %i-fraser. Skriv något större än 0 om du vill ange ett nytt värde eller skriv
     0 om du vill inaktivera översättningscachen. Skriv något mindre än 0 för att gå
     tillbaka.
-  wwctbOffTarget: ' Boköversättning inaktiverad för %i.'
+  wwctbOffTarget: 'Boköversättning inaktiverad för %i.'
   wwcConfigGUIGeneralSettings: Allmän konfiguration
   wwcInvalidLang: Ogiltigt språk i config.yml. Faulting till en...
-  wwcConfigConversationAmazonTranslateRegionSuccess: ' Amazon regionen satt framgångsrikt.'
+  wwcConfigConversationAmazonTranslateRegionSuccess: 'Amazon regionen satt framgångsrikt.'
   wwcConfigRateLimitEnabled: Global hastighetsgräns aktiverad och inställd på %i sekunder.
-  wwcBadPerms: ' Du har inte de behörigheter som krävs för att köra det här kommandot!'
+  wwcBadPerms: 'Du har inte de behörigheter som krävs för att köra det här kommandot!'
   wwcConfigGUILangButton: Ändra plugin-språk
   wwctGUISignButton: Växla signera översättning
   wwcUpdaterOutOfDate: WorldwideChat är föråldrad. Uppdatera till den senaste versionen,
     %i.
-  wwcConfigGUIChangesNotSaved: ' Dina ändringar kanske inte träder i kraft förrän
+  wwcConfigGUIChangesNotSaved: 'Dina ändringar kanske inte träder i kraft förrän
     du antingen har kört /wwcr eller klickar på den röda barriären i /wwcc.'
   wwcConfigGUINextPageButton: Nästa sida
   wwctbTranslatePageFail: (Det gick inte att översätta den här sidan) %i
   wwcConfigInvalidTranslatorSettings: Ogiltiga översättarinställningar! Aktivera endast
     en översättare i config.yml.
   wwcConfigGUIQuitButton: Avsluta och spara ändringar
-  wwctPlayerNotFound: ' Spelaren % Jag hittade inte.'
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Global chatt översätts,
+  wwctPlayerNotFound: 'Spelaren % Jag hittade inte.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'Global chatt översätts,
     men din chatt översätts till %o.'
   wwcConfigGUIGlobalRateLimit: Ändra global hastighetsgräns
   wwctGUIBackToSourceLanguageButton: Tillbaka till menyn Källspråk
   wwcConfigGUIAmazonTranslateRegionButton: Ändra Amazonas region
   wwcConfigConversationLangInput: 'Det aktuella insticksspråket är %i. Ange en giltig
     språkkod, eller skriv 0 för att avbryta. Giltiga språkkoder: %o'
-  wwcConfigConversationLangInvalid: ' Ogiltig språkkod!'
-  wwctTranslationStopped: ' Din chattöversättning har stoppats.'
-  wwctsPlayerNotFound: ' Spelaren %i hittas antingen inte, eller är inte en aktiv
-    översättare.'
+  wwcConfigConversationLangInvalid: 'Ogiltig språkkod!'
+  wwctTranslationStopped: 'Din chattöversättning har stoppats.'
   wwcConfigGUIWatsonAPIKeyButton: Ändra Watson API-nyckel
   wwcEnabled: Aktiverad WorldwideChat-version %i.
-  wwcgLangToLangStart: ' Översätter nu global chatt från %i till %o.'
-  wwctbOnSender: ' Boköversättning aktiverad. Högerklicka medan du håller en bok för
+  wwcgLangToLangStart: 'Översätter nu global chatt från %i till %o.'
+  wwctbOnSender: 'Boköversättning aktiverad. Högerklicka medan du håller en bok för
     att översätta den!'
   wwcListenersInitialized: Initierade lyssnare.
   wwcUserDataCorrupted: Hittade och flyttad %i skadade eller gamla användardatafiler.
     De kommer att raderas vid nästa omladdning.
   wwcConfigGUIPluginUpdateChatButton: Skicka chattpåminnelse för plugin-uppdateringar
-  wwcConfigConversationSendTranslationChatSuccess: ' Aktiv översättare chattpåminnelse
+  wwcConfigConversationSendTranslationChatSuccess: 'Aktiv översättare chattpåminnelse
     har aktiverats.'
-  wwctsOffTarget: ' Signera översättning inaktiverad för %i.'
+  wwctsOffTarget: 'Signera översättning inaktiverad för %i.'
   wwcUpdaterConnectionFailed: Det gick inte att söka efter senaste uppdateringar på
     Github.
-  watsonNotFoundExceptionNotification: ' Det går inte att översätta din inmatning
+  watsonNotFoundExceptionNotification: 'Det går inte att översätta din inmatning
     längre.'
   wwcConfigConversationWatsonAPIKeyInput: Aktuell API-nyckel är %i. Ange en API-nyckel
     för Watson, eller skriv 0 för att gå tillbaka.
   wwctGUIStopButton: Sluta översätta
-  wwcgTranslationStopped: ' Global chattöversättning har stoppats.'
-  wwctAutoTranslateStartOtherPlayer: ' Nu översätter chatten av %i till %o.'
+  wwcgTranslationStopped: 'Global chattöversättning har stoppats.'
+  wwctAutoTranslateStartOtherPlayer: 'Nu översätter chatten av %i till %o.'
   wwcUpdaterFutureDate: Denna instans av WorldwideChat har en större version än den
     senaste offentliga versionen.
-  wwcConfigConversationPrefixSuccess: ' Prefixet har ändrats.'
+  wwcConfigConversationPrefixSuccess: 'Prefixet har ändrats.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: Ändra Google Translate API-nyckel
-  wwcSignDeletedOrTooLong: ' Måltecknet togs antingen bort eller översättningen var
+  wwcSignDeletedOrTooLong: 'Måltecknet togs antingen bort eller översättningen var
     för lång. Översättning:'
-  wwctsOnTarget: ' Signera översättning aktiverad för %i.'
+  wwctsOnTarget: 'Signera översättning aktiverad för %i.'
   wwcConfigCacheDisabled: Translator-cache inaktiverad.
   wwcConfigConversationWatsonURLInput: Den aktuella webbadressen är %i. Ange en tjänstwebbadress
     för Watson, eller skriv 0 för att gå tillbaka.
-  wwcOnJoinTranslationNotificationSourceLang: ' Din chatt översätts från %i till %o.'
-  wwcBookDone: ' Boken översatt framgångsrikt.'
-  wwctsOnSender: ' Signera översättning aktiverad. Högerklicka på ett tecken för att
+  wwcOnJoinTranslationNotificationSourceLang: 'Din chatt översätts från %i till %o.'
+  wwcBookDone: 'Boken översatt framgångsrikt.'
+  wwctsOnSender: 'Signera översättning aktiverad. Högerklicka på ett tecken för att
     översätta det!'
-  watsonColorCodeWarning: ' Att använda färgkoder kan ge dig oförutsägbara resultat.'
+  watsonColorCodeWarning: 'Att använda färgkoder kan ge dig oförutsägbara resultat.'
   wwctGUITranslationButton: Börja översätta
   wwctGUIAutoDetectButton: Identifiera källspråk automatiskt
   wwcUpdaterUpToDate: WorldwideChat är uppdaterad!
   wwcConfigConversationAmazonTranslateRegionInput: Den aktuella regionen är %i. Ange
     en region för Amazon, eller skriv 0 för att gå tillbaka.
-  wwcNoConsole: ' Kommandot kan bara köras av en spelare.'
+  wwcNoConsole: 'Kommandot kan bara köras av en spelare.'
   wwcInitializationFail: Det gick inte att initiera WorldwideChat.
-  wwcrSuccess: ' Reloaded WorldwideChat framgångsrikt.'
-  wwcPlayerNotFound: ' Spelaren % Jag hittade inte.'
-  wwcUpdaterOutOfDateChat: ' WorldwideChat är föråldrad. Uppdatera till den senaste
+  wwcrSuccess: 'Reloaded WorldwideChat framgångsrikt.'
+  wwcPlayerNotFound: 'Spelaren % Jag hittade inte.'
+  wwcUpdaterOutOfDateChat: 'WorldwideChat är föråldrad. Uppdatera till den senaste
     versionen.'
-  wwcConfigConversationRateLimitSuccess: ' Gränsen har ställts in.'
-  wwcConfigConversationWatsonURLSuccess: ' Watsons URL har ställts in.'
-  wwctbPlayerNotFound: ' Spelaren %i hittas antingen inte, eller är inte en aktiv
+  wwcConfigConversationRateLimitSuccess: 'Gränsen har ställts in.'
+  wwcConfigConversationWatsonURLSuccess: 'Watsons URL har ställts in.'
+  wwctbPlayerNotFound: 'Spelaren %i hittas antingen inte, eller är inte en aktiv
     översättare.'
-  wwcConfigConversationTranslationCacheSuccess: ' Gränsen för cache för översättning
+  wwcConfigConversationTranslationCacheSuccess: 'Gränsen för cache för översättning
     har angetts'
-  wwctInvalidArgs: ' Ogiltiga argument tillhandahållna!'
+  wwctInvalidArgs: 'Ogiltiga argument tillhandahållna!'
   wwcConfigGUIPrefixButton: Ändra insticksprefix
-  wwctSameLangError: ' Du kan inte översätta till samma språk!'
+  wwctSameLangError: 'Du kan inte översätta till samma språk!'
   wwctGUINewTranslationTarget: Välj ett målspråk
-  wwctLangToLangStartOtherPlayer: ' Nu översätter chatten av %o från %i till %e.'
+  wwctLangToLangStartOtherPlayer: 'Nu översätter chatten av %o från %i till %e.'
   wwcConfigConnectionSuccess: Ansluten till %o!
   wwcConfigGUIGoogleTranslateButton: Google Översätt
-  wwcsIsActiveTranslator: ' Är aktiv översättare: %i'
-  wwctLangToLangStart: ' Nu översätter du all din chatt från %i till %o.'
+  wwcsIsActiveTranslator: 'Är aktiv översättare: %i'
+  wwctLangToLangStart: 'Nu översätter du all din chatt från %i till %o.'
   wwcConfigConversationPrefixInput: Det aktuella prefixet är %i. Skriv ett nytt, eller
     skriv 0 för att gå tillbaka.
   wwcConfigGUIPreviousPageButton: Föregående sida
   wwcConfigGUITranslatorCacheButton: Ändra cachegräns för översättning
-  wwcConfigConversationbStatsSuccess: ' Framgångsrikt bytt bStats.'
-  wwcSignDone: ' Signera översatt framgångsrikt.'
+  wwcConfigConversationbStatsSuccess: 'Framgångsrikt bytt bStats.'
+  wwcSignDone: 'Signera översatt framgångsrikt.'
   wwcConfigInvalidPrefixSettings: Det gick inte att läsa prefixet. Använder standardvärdet...
   wwcConfigRateLimitInvalid: Dålig hastighetsgräns inställd i config.yml. Standardinställning
     till 0 sekunder...
-  wwcSignTranslateStart: ' Översätter måltecken...'
+  wwcSignTranslateStart: 'Översätter måltecken...'
   wwcConfigGUIChatSettings: Konfiguration av chatt
   wwcConfigGUIWatsonURLButton: Ändra URL för Watson Service
-  wwctInvalidLangCode: ' Ogiltig språkkod (er) tillhandahållen! Giltiga langkoder:
-    %o'
-  wwcConfigConversationUpdateCheckerSuccess: ' Fördröjning för uppdateringskontroll
+  wwcConfigConversationUpdateCheckerSuccess: 'Fördröjning för uppdateringskontroll
     har ställts in.'
   wwcUnsupportedVersion: 'Du kör en version av Bukkit, Spigot eller Paper som inte
     stöds. Versioner som stöds:'
   wwctGUIBackToMainMenuButton: Tillbaka till huvudmenyn för översättning
-  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Global chat översätts från %i
+  wwcGlobalOnJoinTranslationNotificationSourceLang: 'Global chat översätts från %i
     till %o.'
   wwcConfigGUITranslatorSettings: Översättarens konfiguration
   wwcConfigConversationGoogleTranslateAPIKeyInput: Den aktuella API-nyckeln är %i.
@@ -159,49 +155,45 @@ Messages:
     översättning är %i sekunder. Skriv något större än 0 om du vill ange ett nytt
     värde, eller skriv 0 om du vill inaktivera gränsen. Skriv något mindre än 0 för
     att gå tillbaka.
-  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Google Translate API-nyckeluppsättning
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Google Translate API-nyckeluppsättning
     lyckades.'
   wwcConfigGUIAmazonTranslateSecretKeyButton: Ändra Amazon hemlig nyckel
-  wwcVersion: ' WorldwideChat, version'
-  wwcsName: ' Spelarens namn: %i'
-  wwcsAttemptedTranslations: ' Försök till översättningar: %i'
-  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Amazons hemliga nyckeluppsättning
+  wwcVersion: 'WorldwideChat, version'
+  wwcsAttemptedTranslations: 'Försök till översättningar: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: 'Amazons hemliga nyckeluppsättning
     med lyckat resultat.'
-  wwcConfigConversationWatsonAPIKeySuccess: ' Watson API-nyckeluppsättning lyckades.'
-  wwctGUIMainMenu: Menyn Översättning
-  wwctsNotATranslator: ' Du är inte en aktiv översättare! Se till att du har ställt
-    in detta med /wwct.'
-  wwcRateLimit: ' Dina översättningar är prisbegränsade. Vänta en annan %i sekunder.'
+  wwcConfigConversationWatsonAPIKeySuccess: 'Watson API-nyckeluppsättning lyckades.'
+  wwcRateLimit: 'Dina översättningar är prisbegränsade. Vänta en annan %i sekunder.'
   wwcConfigCacheEnabled: Translator-cache aktiverad och satt till en begränsning %i.
   wwctGUIExistingTranslationButton: Skriv över aktuell översättningssession
-  wwcOnJoinTranslationNotificationNoSourceLang: ' Din chatt översätts till %o.'
+  wwcOnJoinTranslationNotificationNoSourceLang: 'Din chatt översätts till %o.'
   wwcUserDataReloaded: Laddade alla sparade användardata.
   wwcConfigGUISendTranslationChatButton: Skicka påminnelse om chatt till Aktiv översättare
     vid inloggning
-  wwcsLastTranslationTime: ' Senaste (lyckad) översättningstid: %i'
-  wwctbNotATranslator: ' Du är inte en aktiv översättare! Se till att du har ställt
+  wwcsLastTranslationTime: 'Senaste (lyckad) översättningstid: %i'
+  wwctbNotATranslator: 'Du är inte en aktiv översättare! Se till att du har ställt
     in detta med /wwct.'
   wwcConfigConversationAmazonTranslateAccessKeyInput: Den aktuella åtkomstnyckeln
     är %i. Ange en åtkomstnyckel för Amazon, eller skriv 0 för att gå tillbaka.
-  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Amazon åtkomstnyckel uppsättning
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: 'Amazon åtkomstnyckel uppsättning
     framgångsrikt.'
   wwcConfigBadUpdateDelay: Ogiltig uppdateringsfördröjning inställd i config.yml.
     Defaulerar till 86400 sekunder...
-  wwctrlRateLimitOffSender: ' Stängde av din prisgräns.'
-  wwctrlRateLimitAlreadyOffTarget: ' Hastighetsbegränsning %i är redan inaktiverad.'
-  wwctrlPlayerNotFound: ' Spelaren %i hittas antingen inte, eller är inte en aktiv
+  wwctrlRateLimitOffSender: 'Stängde av din prisgräns.'
+  wwctrlRateLimitAlreadyOffTarget: 'Hastighetsbegränsning %i är redan inaktiverad.'
+  wwctrlPlayerNotFound: 'Spelaren %i hittas antingen inte, eller är inte en aktiv
     översättare.'
-  wwctrlRateLimitSetSender: ' Ställ in din hastighetsgräns till %i sekunder.'
-  wwctrlRateLimitOffTarget: ' Inaktiverade hastighetsbegränsning %i.'
-  wwctrlRateLimitSetTarget: ' Ställ in hastighetsbegränsning %i till %o sekunder.'
-  wwctrlNotATranslator: ' Du är inte en aktiv översättare! Se till att du har ställt
+  wwctrlRateLimitSetSender: 'Ställ in din hastighetsgräns till %i sekunder.'
+  wwctrlRateLimitOffTarget: 'Inaktiverade hastighetsbegränsning %i.'
+  wwctrlRateLimitSetTarget: 'Ställ in hastighetsbegränsning %i till %o sekunder.'
+  wwctrlNotATranslator: 'Du är inte en aktiv översättare! Se till att du har ställt
     in detta med /wwct.'
-  wwctrlRateLimitAlreadyOffSender: ' Din prisgräns är redan inaktiverad.'
+  wwctrlRateLimitAlreadyOffSender: 'Din prisgräns är redan inaktiverad.'
   wwctGUIRateButton: Ange hastighetsgräns
   wwctGUIConversationRateLimit: Hastighetsgränsen per översättning är för närvarande
     %i sekunder. Skriv något större än 0 om du vill ange ett nytt värde, eller skriv
     0 om du vill inaktivera gränsen. Skriv något mindre än 0 för att gå tillbaka.
-  wwctGUITargetPlayerNull: ' Målspelaren frånkopplad från servern.'
+  wwctGUITargetPlayerNull: 'Målspelaren frånkopplad från servern.'
   wwcConfigConversationSyncUserDataDelayInput: Den aktuella fördröjningen per synkronisering
     av användardata är %i sekunder. Skriv något större än 10 för att ställa in ett
     nytt värde, eller något mindre än 10 för att gå tillbaka.
@@ -209,53 +201,49 @@ Messages:
   wwcConfigSyncTime: Automatisk synkronisering av användardata slutfördes i %i nanosekunder.
   wwcConfigSyncDelayEnabled: Fördröjning per användarsynkronisering av data inställd
     till %i sekunder.
-  wwcConfigConversationSyncUserDataDelaySuccess: ' Fördröjning för synkronisering
+  wwcConfigConversationSyncUserDataDelaySuccess: 'Fördröjning för synkronisering
     av användardata.'
   wwcConfigSyncDelayInvalid: Ogiltig synkroniseringsfördröjning för användardata som
     angetts i config.yml. Defaulerar till 7200 sekunder...
   wwcConfigCacheInvalid: Översättarens cachestorlek ogiltig. Fallande till 10...
-  wwcInventoryErrorPlayer: ' Fel upptäcktes med det grafiska användargränssnittet.
+  wwcInventoryErrorPlayer: 'Fel upptäcktes med det grafiska användargränssnittet.
     En logg har skickats till konsolen.'
   wwcInventoryError: Fel som upptäcktes med användaranvändargränssnittet för användaren
     %i. Rapportera problemet till utvecklaren.
-  wwcConfigConversationTranslatorFail: ' Det gick inte att aktivera %i.'
+  wwcConfigConversationTranslatorFail: 'Det gick inte att aktivera %i.'
   wwcConfigConversationConsoleTranslatorSuccess: Användaren %i aktiverad %o.
-  wwcConfigConversationTranslatorSuccess: ' Aktiverad %i.'
+  wwcConfigConversationTranslatorSuccess: 'Aktiverad %i.'
   wwcConfigConversationConsoleTranslatorFail: Användaren %i kunde inte aktivera %o.
   wwcWatson117Warning: Watson har misslyckats med att initiera på grund av ett InAccessibleObjectException.
     För tillfället, lägg till —illegal-access=permit till dina befintliga server jar
     argument.
   wwcDeluxeChatIncompatible: Det här insticksprogrammet kanske inte fungerar korrekt
     med DeluxeChat.
-  wwcSignTranslationFail: ' Det gick inte att översätta en eller flera rader på måltecknet.'
-  wwcBookTranslationFail: ' Det går inte att översätta en eller flera sidor i målboken.'
-  wwctiOffTarget: ' Objektöversättning inaktiverad för %i.'
-  wwctiPlayerNotFound: ' Spelaren %i hittas antingen inte, eller är inte en aktiv
-    översättare.'
-  wwctiOffSender: ' Översättning av objekt inaktiverad'
-  wwcItemTranslateTitleStock: ' Det gick inte att översätta standardobjektnamn.'
-  wwcItemTranslateLoreFail: ' Det gick inte att översätta objektet lore.'
-  wwcItemTranslateTitleFail: ' Det gick inte att översätta objektnamn'
-  wwctiNotATranslator: ' Du är inte en aktiv översättare! Se till att du har ställt
-    in detta med /wwct.'
+  wwcSignTranslationFail: 'Det gick inte att översätta en eller flera rader på måltecknet.'
+  wwcBookTranslationFail: 'Det går inte att översätta en eller flera sidor i målboken.'
+  wwctiOffTarget: 'Objektöversättning inaktiverad för %i.'
+  wwctiOffSender: 'Översättning av objekt inaktiverad'
+  wwcItemTranslateTitleStock: 'Det gick inte att översätta standardobjektnamn.'
+  wwcItemTranslateLoreFail: 'Det gick inte att översätta objektet lore.'
+  wwcItemTranslateTitleFail: 'Det gick inte att översätta objektnamn'
   wwctGUIItemButton: Växla översättning av objekt
-  wwcItemTranslateTitleDone: ' Översatt objektets titel framgångsrikt.'
+  wwcItemTranslateTitleDone: 'Översatt objektets titel framgångsrikt.'
   wwcGUITempItem: Visning av objekt
-  wwcItemTranslateStart: ' Översätter målobjekt...'
-  wwcSignTranslationFailCatastrophic: ' Det gick inte att översätta måltecknet.'
-  wwcItemTranslationFailCatastrophic: ' Det gick inte att översätta målobjektet.'
-  wwcBookTranslateTitleSuccess: ' Titel på översatt bok: %i'
-  wwctiOnSender: ' Översättning av objekt aktiverad. Högerklicka med ett objekt i
+  wwcItemTranslateStart: 'Översätter målobjekt...'
+  wwcSignTranslationFailCatastrophic: 'Det gick inte att översätta måltecknet.'
+  wwcItemTranslationFailCatastrophic: 'Det gick inte att översätta målobjektet.'
+  wwcBookTranslateTitleSuccess: 'Titel på översatt bok: %i'
+  wwctiOnSender: 'Översättning av objekt aktiverad. Högerklicka med ett objekt i
     huvudhanden för att översätta det!'
-  wwcItemTranslateLoreStart: ' Översätta lore av målobjekt...'
-  wwcItemTranslateLoreDone: ' Översatt objekt lore framgångsrikt.'
-  wwctiOnTarget: ' Objektöversättning aktiverad för %i.'
-  wwcBookTranslationFailCatastrophic: ' Det gick inte att översätta målboken.'
-  wwcBookTranslateTitleFail: ' Misslyckades översätta bokens titel.'
-  wwcChatTranslationFail: ' Det gick inte att översätta ditt meddelande.'
-  wwcInvalidTranslator: ' Ogiltiga översättarinställningar. Rätta detta i din config.yml
+  wwcItemTranslateLoreStart: 'Översätta lore av målobjekt...'
+  wwcItemTranslateLoreDone: 'Översatt objekt lore framgångsrikt.'
+  wwctiOnTarget: 'Objektöversättning aktiverad för %i.'
+  wwcBookTranslationFailCatastrophic: 'Det gick inte att översätta målboken.'
+  wwcBookTranslateTitleFail: 'Misslyckades översätta bokens titel.'
+  wwcChatTranslationFail: 'Det gick inte att översätta ditt meddelande.'
+  wwcInvalidTranslator: 'Ogiltiga översättarinställningar. Rätta detta i din config.yml
     eller med /wwcc för att använda detta insticksprogram.'
-  wwcNotDoneLoading: ' WorldwideChat initierar fortfarande. Försök igen inom kort.'
+  wwcNotDoneLoading: 'WorldwideChat initierar fortfarande. Försök igen inom kort.'
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'
   wwcConfigGUIToggleButton: Rogg %i
   wwcConfigGUIWatsonButton: Watson
@@ -266,7 +254,7 @@ Messages:
   wwcTranslatorErrorThresholdReached: Feltröskeln har uppnåtts. Insticksprogrammet
     kommer nu att ladda om, och inaktivera alla översättare.
   wwcConfigErrorLimitEnabled: Översättare felgräns satt till %i.
-  wwcTranslatorError: ' Ett problem uppstod när du försökte översätta. Var snäll och
+  wwcTranslatorError: 'Ett problem uppstod när du försökte översätta. Var snäll och
     försök igen.'
   wwcTranslatorErrorConsole: Ett problem uppstod när användare %i försökte översätta
     dem. Nu skriver du ut stapelspårningen.
@@ -277,3 +265,8 @@ Messages:
   wwcConfigMaxResponseTimeInvalid: Ogiltig maximal svarstid inställd i config.yml.
     Defaulerar till 7 sekunder...
   wwcConfigMaxResponseTimeEnabled: Maximal svarstid inställd på %i sekunder.
+  wwctInvalidInputLangCode: 'Ogiltig språkkod för inmatning tillhandahålls! Giltiga
+    langkoder: %o'
+  wwcsTitle: Post av %i
+  wwctInvalidOutputLangCode: 'Ogiltig språkkod för utmatning tillhandahålls! Giltiga
+    langkoder: %o'

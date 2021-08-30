@@ -1,154 +1,152 @@
 Messages:
-  wwcgAutoTranslateStart: ' Тепер переклад глобального чату на %o.'
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ' Глобальний чат наразі перекладається
+  wwcgAutoTranslateStart: 'Тепер переклад глобального чату на %o.'
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'Глобальний чат наразі перекладається
     на %o.'
   wwcConfigGUIAmazonTranslateAccessKeyButton: Змінити ключ доступу Amazon
-  wwcrFail: ' Не вдалося перезавантажити програму WorldwideChat.'
+  wwcrFail: 'Не вдалося перезавантажити програму WorldwideChat.'
   wwcConfigGUIUpdateCheckerButton: Змінення перевірки наявності затримки оновлень
   wwcUpdaterFailedGeneric: Не вдалося перевірити наявність оновлень WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Поточна затримка на засобі перевірки оновлень
     становить %i секунд. Введіть щось більше 10, щоб встановити нове значення, або
     щось менше 10, щоб повернутися назад.
   wwctGUIMainMenuGlobal: Глобальне меню перекладу
-  wwcConfigConversationPluginUpdateChatSuccess: ' Плагін оновлення чату нагадування
+  wwcConfigConversationPluginUpdateChatSuccess: 'Плагін оновлення чату нагадування
     успішно увімкнено.'
-  wwctbOnTarget: ' Переклад книг увімкнено для %i.'
-  wwcsNotATranslator: ' Поки немає записів, доступних для %i.'
+  wwctbOnTarget: 'Переклад книг увімкнено для %i.'
+  wwcsNotATranslator: 'Поки немає записів, доступних для %i.'
   wwcConfigGUIbStatsButton: Перемикач bStats
   wwctGUINewTranslationSource: Вибір мови джерела
-  wwcConfigConnectionFailed: Не вдалося з\' єднатися з %o. Переконайтеся, що ваші
+  wwcConfigConnectionFailed: Не вдалося з\'єднатися з %o. Переконайтеся, що ваші
     облікові дані та брандмауер налаштовано правильно!
   wwcConfigEnabledbStats: Увімкнено bStats.
   wwctGUIMainMenuPlayer: Меню перекладо %i
   wwctGUIBookButton: Переключити переклад книги
   wwcLangDetected: Виявлена мова %o.
-  wwcBookTranslateStart: ' Переклад цільової книги...'
+  wwcBookTranslateStart: 'Переклад цільової книги...'
   wwcConfigDisabledbStats: Вимкнені bStats.
-  wwctsOffSender: ' Підписати переклад вимкнено.'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ' Глобальний чат наразі
+  wwctsOffSender: 'Підписати переклад вимкнено.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Глобальний чат наразі
     перекладається, але ваш чат наразі перекладається з %i на %o.'
   wwcUpdaterParserFailed: Не вдалося проаналізувати оновлення даних з Github.
-  wwctAutoTranslateStart: ' Тепер перекладаємо всі ваші чати на %o.'
+  wwctAutoTranslateStart: 'Тепер перекладаємо всі ваші чати на %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: Поточним секретним ключем є
     %i. Будь ласка, введіть закритий ключ для Amazon або введіть 0, щоб повернутися
     назад.
-  wwctbOffSender: ' Переклад книжки вимкнено.'
+  wwctbOffSender: 'Переклад книжки вимкнено.'
   wwcConfigGUIAmazonTranslateButton: Амазонка Переклад
-  wwcConfigConversationLangSuccess: ' Мова плагіна успішно змінилася.'
-  wwcsSuccessfulTranslations: ' Успішні переклади: %i'
-  wwctTranslationStoppedOtherPlayer: ' Переклад чату для %i було зупинено.'
+  wwcConfigConversationLangSuccess: 'Мова плагіна успішно змінилася.'
+  wwcsSuccessfulTranslations: 'Успішні переклади: %i'
+  wwctTranslationStoppedOtherPlayer: 'Переклад чату для %i було зупинено.'
   wwcConfigConversationTranslationCacheInput: Обмеження поточного кешу перекладу складає
     %i фраз. Введіть щось більше за 0, щоб встановити нове значення, або введіть 0,
     щоб вимкнути кеш перекладу. Введіть що-небудь менше 0, щоб повернутися назад.
-  wwctbOffTarget: ' Переклад книжки вимкнено для %i.'
+  wwctbOffTarget: 'Переклад книжки вимкнено для %i.'
   wwcConfigGUIGeneralSettings: Загальні налаштування
   wwcInvalidLang: Некоректна мова у вашому config.yml. За нефолт для ан...
-  wwcConfigConversationAmazonTranslateRegionSuccess: ' Регіон Амазонки успішно налаштований.'
+  wwcConfigConversationAmazonTranslateRegionSuccess: 'Регіон Амазонки успішно налаштований.'
   wwcConfigRateLimitEnabled: Обмеження глобальної швидкості увімкнено і встановлено
     на %i секунд.
-  wwcBadPerms: ' У вас немає необхідних дозволів для виконання цієї команди!'
+  wwcBadPerms: 'У вас немає необхідних дозволів для виконання цієї команди!'
   wwcConfigGUILangButton: Змінити мову додатка
   wwctGUISignButton: Увімкнути або вимкнути переклад підпису
   wwcUpdaterOutOfDate: WorldwideChat застаріла. Будь ласка, оновіть до останньої версії,
     %i.
-  wwcConfigGUIChangesNotSaved: ' Ваші зміни можуть не набути чинності, доки ви не
+  wwcConfigGUIChangesNotSaved: 'Ваші зміни можуть не набути чинності, доки ви не
     запустите /wwcr, або не натиснете на червоний бар\''єр в /wwc.'
   wwcConfigGUINextPageButton: Наступна сторінка
   wwctbTranslatePageFail: (Не вдалося перекласти цю сторінку) %i
   wwcConfigInvalidTranslatorSettings: Некоректні налаштування перекладача! Будь ласка,
     увімкніть лише один перекладач у вашому config.yml.
   wwcConfigGUIQuitButton: Вийти і зберегти зміни
-  wwctPlayerNotFound: ' Гравець %я не знайдено.'
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ' Глобальний чат наразі
+  wwctPlayerNotFound: 'Гравець %я не знайдено.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'Глобальний чат наразі
     перекладається, але ваш чат перекладається на %o.'
   wwcConfigGUIGlobalRateLimit: Змінити ліміт глобального тарифу
   wwctGUIBackToSourceLanguageButton: Повернутися до меню «Мова джерела»
   wwcConfigGUIAmazonTranslateRegionButton: Змінити регіон Амазонки
   wwcConfigConversationLangInput: 'Поточною мовою додатка є %i. Будь ласка, введіть
     коректний код мови або введіть 0, щоб скасувати. Коди допустимих мов: %o'
-  wwcConfigConversationLangInvalid: ' Некоректний код мови!'
-  wwctTranslationStopped: ' Переклад вашого чату було зупинено.'
-  wwctsPlayerNotFound: ' Гравець %i або не знайдено, або не є активним перекладачем.'
+  wwcConfigConversationLangInvalid: 'Некоректний код мови!'
+  wwctTranslationStopped: 'Переклад вашого чату було зупинено.'
   wwcConfigGUIWatsonAPIKeyButton: Змінити ключ API Уотсона
   wwcEnabled: Увімкнено Всесвітній чат версії %i.
-  wwcgLangToLangStart: ' Тепер переклад глобального чату з %i на %o.'
-  wwctbOnSender: ' Переклад книг увімкнено. Клацніть правою кнопкою миші, утримуючи
+  wwcgLangToLangStart: 'Тепер переклад глобального чату з %i на %o.'
+  wwctbOnSender: 'Переклад книг увімкнено. Клацніть правою кнопкою миші, утримуючи
     книгу, щоб перекласти її!'
   wwcListenersInitialized: Ініціалізовані слухачі.
   wwcUserDataCorrupted: Знайдено і переміщений %i пошкоджені або старі файли даних
     користувача. Вони будуть видалені при наступному перезавантаженні.
   wwcConfigGUIPluginUpdateChatButton: Надіслати нагадування чату для оновлень плагінів
-  wwcConfigConversationSendTranslationChatSuccess: ' Активний перекладач з нагадуванням
+  wwcConfigConversationSendTranslationChatSuccess: 'Активний перекладач з нагадуванням
     про чат успішно увімкнено.'
-  wwctsOffTarget: ' Підписати переклад вимкнено для %i.'
+  wwctsOffTarget: 'Підписати переклад вимкнено для %i.'
   wwcUpdaterConnectionFailed: Не вдалося перевірити наявність останніх оновлень на
     Github.
-  watsonNotFoundExceptionNotification: ' Не вдається перекласти ваш ввід далі.'
+  watsonNotFoundExceptionNotification: 'Не вдається перекласти ваш ввід далі.'
   wwcConfigConversationWatsonAPIKeyInput: Поточний ключ API — %i. Будь ласка, введіть
     ключ API для Watson або введіть 0, щоб повернутися назад.
   wwctGUIStopButton: Припинити переклад
-  wwcgTranslationStopped: ' Глобальний переклад чату зупинено.'
-  wwctAutoTranslateStartOtherPlayer: ' Тепер переклад чату %i на %o.'
+  wwcgTranslationStopped: 'Глобальний переклад чату зупинено.'
+  wwctAutoTranslateStartOtherPlayer: 'Тепер переклад чату %i на %o.'
   wwcUpdaterFutureDate: Цей екземпляр WorldwideChat має більшу версію, ніж остання
     публічна.
-  wwcConfigConversationPrefixSuccess: ' Префікс успішно змінено.'
+  wwcConfigConversationPrefixSuccess: 'Префікс успішно змінено.'
   wwcConfigGUIGoogleTranslateAPIKeyButton: Змінення ключа API для перекладу Google
-  wwcSignDeletedOrTooLong: ' Знак призначення було видалено, або переклад був занадто
+  wwcSignDeletedOrTooLong: 'Знак призначення було видалено, або переклад був занадто
     довгим. Переклад:'
-  wwctsOnTarget: ' Підписати переклад увімкнено для %i.'
+  wwctsOnTarget: 'Підписати переклад увімкнено для %i.'
   wwcConfigCacheDisabled: Кеш перекладача вимкнено.
   wwcConfigConversationWatsonURLInput: Поточна адреса URL — %i. Будь ласка, введіть
     URL служби для Watson або введіть 0, щоб повернутися назад.
-  wwcOnJoinTranslationNotificationSourceLang: ' Ваш чат перекладається з %i на %o.'
-  wwcBookDone: ' Книга успішно перекладена.'
-  wwctsOnSender: ' Підписати переклад увімкнено. Клацніть правою кнопкою миші на знаку,
+  wwcOnJoinTranslationNotificationSourceLang: 'Ваш чат перекладається з %i на %o.'
+  wwcBookDone: 'Книга успішно перекладена.'
+  wwctsOnSender: 'Підписати переклад увімкнено. Клацніть правою кнопкою миші на знаку,
     щоб перевести його!'
-  watsonColorCodeWarning: ' Використання колірних кодів може дати вам непередбачувані
+  watsonColorCodeWarning: 'Використання колірних кодів може дати вам непередбачувані
     результати.'
   wwctGUITranslationButton: Почати переклад
   wwctGUIAutoDetectButton: Автовизначення мови джерела
   wwcUpdaterUpToDate: WorldwideChat є актуальним!
   wwcConfigConversationAmazonTranslateRegionInput: Поточною областю є %i. Будь ласка,
     введіть область для Amazon або введіть 0, щоб повернутися назад.
-  wwcNoConsole: ' Цю команду може виконувати лише гравець.'
+  wwcNoConsole: 'Цю команду може виконувати лише гравець.'
   wwcInitializationFail: Не вдалося ініціалізувати WorldwideChat.
-  wwcrSuccess: ' Успішно перезавантажено WorldwideChat.'
-  wwcPlayerNotFound: ' Гравець %я не знайдено.'
-  wwcUpdaterOutOfDateChat: ' WorldwideChat застаріла. Будь ласка, оновіть до останньої
+  wwcrSuccess: 'Успішно перезавантажено WorldwideChat.'
+  wwcPlayerNotFound: 'Гравець %я не знайдено.'
+  wwcUpdaterOutOfDateChat: 'WorldwideChat застаріла. Будь ласка, оновіть до останньої
     версії.'
-  wwcConfigConversationRateLimitSuccess: ' Обмеження швидкості встановлено успішно.'
-  wwcConfigConversationWatsonURLSuccess: ' URL Watson успішно встановлено.'
-  wwctbPlayerNotFound: ' Гравець %i або не знайдено, або не є активним перекладачем.'
-  wwcConfigConversationTranslationCacheSuccess: ' Обмеження кешу перекладів встановлено
+  wwcConfigConversationRateLimitSuccess: 'Обмеження швидкості встановлено успішно.'
+  wwcConfigConversationWatsonURLSuccess: 'URL Watson успішно встановлено.'
+  wwctbPlayerNotFound: 'Гравець %i або не знайдено, або не є активним перекладачем.'
+  wwcConfigConversationTranslationCacheSuccess: 'Обмеження кешу перекладів встановлено
     успішно.'
-  wwctInvalidArgs: ' Надано некоректні аргументи!'
+  wwctInvalidArgs: 'Надано некоректні аргументи!'
   wwcConfigGUIPrefixButton: Змінити префікс додатка
-  wwctSameLangError: ' Ви не можете перекладати тією ж мовою!'
+  wwctSameLangError: 'Ви не можете перекладати тією ж мовою!'
   wwctGUINewTranslationTarget: Вибір мови призначення
-  wwctLangToLangStartOtherPlayer: ' Тепер переклад чату %o з %i на %e.'
-  wwcConfigConnectionSuccess: Успішно з\' єднано з %o
+  wwctLangToLangStartOtherPlayer: 'Тепер переклад чату %o з %i на %e.'
+  wwcConfigConnectionSuccess: Успішно з\'єднано з %o
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: ' Є активним перекладачем: %i'
-  wwctLangToLangStart: ' Тепер перекладаємо всі ваші чати з %i на %o.'
+  wwcsIsActiveTranslator: 'Є активним перекладачем: %i'
+  wwctLangToLangStart: 'Тепер перекладаємо всі ваші чати з %i на %o.'
   wwcConfigConversationPrefixInput: Поточний префікс є %i. Будь ласка, введіть новий
     або введіть 0, щоб повернутися назад.
   wwcConfigGUIPreviousPageButton: Попередня сторінка
   wwcConfigGUITranslatorCacheButton: Змінити обмеження кешу перекладів
-  wwcConfigConversationbStatsSuccess: ' Успішно перемикати bStats.'
-  wwcSignDone: ' Підпис успішно перекладено.'
+  wwcConfigConversationbStatsSuccess: 'Успішно перемикати bStats.'
+  wwcSignDone: 'Підпис успішно перекладено.'
   wwcConfigInvalidPrefixSettings: Не вдалося прочитати префікс. Використання типового...
   wwcConfigRateLimitInvalid: Обмеження поганої швидкості встановлено у config.yml.
     Значення за замовленням до 0 секунд...
-  wwcSignTranslateStart: ' Переклад знака призначення...'
+  wwcSignTranslateStart: 'Переклад знака призначення...'
   wwcConfigGUIChatSettings: Налаштування чату
   wwcConfigGUIWatsonURLButton: Змінити URL-адресу служби Watson
-  wwctInvalidLangCode: ' Надано невірний код мови! Допустимі коди ленг: %o'
-  wwcConfigConversationUpdateCheckerSuccess: ' Затримка перевірки оновлень успішно
+  wwcConfigConversationUpdateCheckerSuccess: 'Затримка перевірки оновлень успішно
     встановлено.'
   wwcUnsupportedVersion: 'Ви використовуєте непідтримувану версію Bukkit, Spigot або
     Paper. Підтримувані версії:'
   wwctGUIBackToMainMenuButton: Повернутися до головного меню перекладу
-  wwcGlobalOnJoinTranslationNotificationSourceLang: ' Глобальний чат наразі перекладається
+  wwcGlobalOnJoinTranslationNotificationSourceLang: 'Глобальний чат наразі перекладається
     з %i на %o.'
   wwcConfigGUITranslatorSettings: Налаштування перекладача
   wwcConfigConversationGoogleTranslateAPIKeyInput: Поточний ключ API — %i. Будь ласка,
@@ -156,102 +154,95 @@ Messages:
   wwcConfigConversationRateLimitInput: Поточне обмеження глобальної швидкості на переклад
     складає %i секунд. Введіть щось більше 0, щоб встановити нове значення, або введіть
     0, щоб вимкнути обмеження. Введіть що-небудь менше 0, щоб повернутися назад.
-  wwcConfigConversationGoogleTranslateAPIKeySuccess: ' Ключ API Google Translate успішно
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Ключ API Google Translate успішно
     встановлено.'
   wwcConfigGUIAmazonTranslateSecretKeyButton: Змінити секретний ключ Amazon
-  wwcVersion: ' Всесвітній чат, версія'
-  wwcsName: ' Назва гравця: %i'
-  wwcsAttemptedTranslations: ' Спроба перекладу: %i'
-  wwcConfigConversationAmazonTranslateSecretKeySuccess: ' Секретний ключ Amazon успішно
+  wwcVersion: 'Всесвітній чат, версія'
+  wwcsAttemptedTranslations: 'Спроба перекладу: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: 'Секретний ключ Amazon успішно
     встановлено.'
-  wwcConfigConversationWatsonAPIKeySuccess: ' Ключ API Watson успішно встановлено.'
-  wwctGUIMainMenu: Ваше меню Переклад
-  wwctsNotATranslator: ' Ви не активний перекладач! Переконайтеся, що ви встановили
-    це за допомогою /wwct.'
-  wwcRateLimit: ' Ваш переклад обмежений. Будь ласка, зачекайте інший %i секунд.'
+  wwcConfigConversationWatsonAPIKeySuccess: 'Ключ API Watson успішно встановлено.'
+  wwcRateLimit: 'Ваш переклад обмежений. Будь ласка, зачекайте інший %i секунд.'
   wwcConfigCacheEnabled: Кеш перекладача увімкнено та встановлено обмеження %i.
   wwctGUIExistingTranslationButton: Перезаписати поточний сеанс перекладу
-  wwcOnJoinTranslationNotificationNoSourceLang: ' Ваш чат перекладається на %o.'
+  wwcOnJoinTranslationNotificationNoSourceLang: 'Ваш чат перекладається на %o.'
   wwcUserDataReloaded: Завантажено всі збережені дані користувача.
   wwcConfigGUISendTranslationChatButton: Надсилати нагадування чату активному перекладачеві
     під час входу
-  wwcsLastTranslationTime: ' Останній (успішний) час перекладу: %i'
-  wwctbNotATranslator: ' Ви не активний перекладач! Переконайтеся, що ви встановили
+  wwcsLastTranslationTime: 'Останній (успішний) час перекладу: %i'
+  wwctbNotATranslator: 'Ви не активний перекладач! Переконайтеся, що ви встановили
     це за допомогою /wwct.'
   wwcConfigConversationAmazonTranslateAccessKeyInput: Поточний ключ доступу — %i.
     Будь ласка, введіть ключ доступу для Amazon або введіть 0, щоб повернутися назад.
-  wwcConfigConversationAmazonTranslateAccessKeySuccess: ' Ключ доступу Amazon успішно
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: 'Ключ доступу Amazon успішно
     встановлено.'
   wwcConfigBadUpdateDelay: У config.yml встановлено некоректну затримку оновлення.
     За дефолт до 86400 секунд...
-  wwctrlRateLimitOffSender: ' Вимкнув ліміт ставки.'
-  wwctrlRateLimitAlreadyOffTarget: ' Обмеження швидкості з %i вже вимкнено.'
-  wwctrlPlayerNotFound: ' Гравець %i або не знайдено, або не є активним перекладачем.'
-  wwctrlRateLimitSetSender: ' Встановіть обмеження швидкості на %i секунд.'
-  wwctrlRateLimitOffTarget: ' Вимкнено обмеження швидкості з %i.'
-  wwctrlRateLimitSetTarget: ' Встановіть обмеження швидкості з %i на %o секунд.'
-  wwctrlNotATranslator: ' Ви не активний перекладач! Переконайтеся, що ви встановили
+  wwctrlRateLimitOffSender: 'Вимкнув ліміт ставки.'
+  wwctrlRateLimitAlreadyOffTarget: 'Обмеження швидкості з %i вже вимкнено.'
+  wwctrlPlayerNotFound: 'Гравець %i або не знайдено, або не є активним перекладачем.'
+  wwctrlRateLimitSetSender: 'Встановіть обмеження швидкості на %i секунд.'
+  wwctrlRateLimitOffTarget: 'Вимкнено обмеження швидкості з %i.'
+  wwctrlRateLimitSetTarget: 'Встановіть обмеження швидкості з %i на %o секунд.'
+  wwctrlNotATranslator: 'Ви не активний перекладач! Переконайтеся, що ви встановили
     це за допомогою /wwct.'
-  wwctrlRateLimitAlreadyOffSender: ' Обмеження ставки вже вимкнено.'
+  wwctrlRateLimitAlreadyOffSender: 'Обмеження ставки вже вимкнено.'
   wwctGUIRateButton: Встановити ліміт швидкості
   wwctGUIConversationRateLimit: Обмеження швидкості на переклад поточно %i секунд.
     Введіть щось більше 0, щоб встановити нове значення, або введіть 0, щоб вимкнути
     обмеження. Введіть що-небудь менше 0, щоб повернутися назад.
-  wwctGUITargetPlayerNull: ' Цільовий гравець від\''єднано від сервера.'
+  wwctGUITargetPlayerNull: 'Цільовий гравець від\''єднано від сервера.'
   wwcConfigConversationSyncUserDataDelayInput: Поточна затримка на синхронізацію даних
     користувача становить %i секунд. Введіть щось більше 10, щоб встановити нове значення,
     або щось менше 10, щоб повернутися назад.
   wwcConfigGUISyncUserDataButton: Змінення затримки синхронізації даних користувача
   wwcConfigSyncTime: Автоматична синхронізація даних користувача завершена в %i nanomeconds.
   wwcConfigSyncDelayEnabled: Затримка для синхронізації даних користувача на %i секунд.
-  wwcConfigConversationSyncUserDataDelaySuccess: ' Затримка синхронізації даних користувача
+  wwcConfigConversationSyncUserDataDelaySuccess: 'Затримка синхронізації даних користувача
     успішно встановлено.'
   wwcConfigSyncDelayInvalid: Неприпустима затримка синхронізації даних користувача
     в config.yml. Дефолт до 7200 секунд...
   wwcConfigCacheInvalid: Неправильний розмір кешу перекладача. Дефолт до 10...
-  wwcInventoryErrorPlayer: ' Виявлено помилку з вашим графічним інтерфейсом. Журнал
+  wwcInventoryErrorPlayer: 'Виявлено помилку з вашим графічним інтерфейсом. Журнал
     було відправлено в консоль.'
   wwcInventoryError: Виявлено помилку з графічним інтерфейсом користувача %i. Будь
     ласка, повідомте про цю проблему розробнику.
-  wwcConfigConversationTranslatorFail: ' Не вдалося вбути %i.'
-  wwcConfigConversationConsoleTranslatorSuccess: Користувач %i успішно в\' язував
+  wwcConfigConversationTranslatorFail: 'Не вдалося вбути %i.'
+  wwcConfigConversationConsoleTranslatorSuccess: Користувач %i успішно в\'язував
     %o.
-  wwcConfigConversationTranslatorSuccess: ' Успішно вняє %i.'
+  wwcConfigConversationTranslatorSuccess: 'Успішно вняє %i.'
   wwcConfigConversationConsoleTranslatorFail: Користувач %i не вдалося вмикання %o.
   wwcWatson117Warning: Уотсон не вдалося ініціалізувати через неAccessibleObjectException.
     Зараз, будь ласка, додайте —illegal-access=Дозволити до наявних аргументів сервера
     jar.
   wwcDeluxeChatIncompatible: Цей плагін може не працювати належним чином з DeluxeChat.
-  wwcSignTranslationFail: ' Не вдається перекласти один або кілька рядків на цільовому
+  wwcSignTranslationFail: 'Не вдається перекласти один або кілька рядків на цільовому
     знаку.'
-  wwcBookTranslationFail: ' Не вдається перекласти одну або декілька сторінок у вашій
+  wwcBookTranslationFail: 'Не вдається перекласти одну або декілька сторінок у вашій
     цільовій книзі.'
-  wwctiOffTarget: ' Переклад елементів вимкнено для %i.'
-  wwctiPlayerNotFound: ' Гравець %i або не знайдено, або не є активним перекладачем.'
-  wwctiOffSender: ' Переклад елементів вимкнено.'
-  wwcItemTranslateTitleStock: ' Не вдається перекласти типові назви елементів.'
-  wwcItemTranslateLoreFail: ' Не вдалося перекласти елемент lore.'
-  wwcItemTranslateTitleFail: ' Не вдалося перекласти назву елемента.'
-  wwctiNotATranslator: ' Ви не активний перекладач! Переконайтеся, що ви встановили
-    це за допомогою /wwct.'
+  wwctiOffTarget: 'Переклад елементів вимкнено для %i.'
+  wwctiOffSender: 'Переклад елементів вимкнено.'
+  wwcItemTranslateTitleStock: 'Не вдається перекласти типові назви елементів.'
+  wwcItemTranslateLoreFail: 'Не вдалося перекласти елемент lore.'
+  wwcItemTranslateTitleFail: 'Не вдалося перекласти назву елемента.'
   wwctGUIItemButton: Увімкнути або вимкнути переклад елементів
-  wwcItemTranslateTitleDone: ' Успішно перекладений заголовок елемента.'
+  wwcItemTranslateTitleDone: 'Успішно перекладений заголовок елемента.'
   wwcGUITempItem: Відображення елемента
-  wwcItemTranslateStart: ' Переклад елемента призначення...'
-  wwcSignTranslationFailCatastrophic: ' Не вдалося перекласти знак призначення.'
-  wwcItemTranslationFailCatastrophic: ' Не вдалося перекласти цільовий елемент.'
-  wwcBookTranslateTitleSuccess: ' Назва перекладеної книги: %i'
-  wwctiOnSender: ' Увімкнено переклад елементів. Клацніть правою кнопкою миші елемент
+  wwcItemTranslateStart: 'Переклад елемента призначення...'
+  wwcSignTranslationFailCatastrophic: 'Не вдалося перекласти знак призначення.'
+  wwcItemTranslationFailCatastrophic: 'Не вдалося перекласти цільовий елемент.'
+  wwcBookTranslateTitleSuccess: 'Назва перекладеної книги: %i'
+  wwctiOnSender: 'Увімкнено переклад елементів. Клацніть правою кнопкою миші елемент
     у вашій головній руці, щоб перекласти його!'
-  wwcItemTranslateLoreStart: ' Переклад предмета призначення...'
-  wwcItemTranslateLoreDone: ' Перекладений елемент успішно освоєний.'
-  wwctiOnTarget: ' Увімкнено переклад елементу для %i.'
-  wwcBookTranslationFailCatastrophic: ' Не вдалося перекласти цільову книгу.'
-  wwcBookTranslateTitleFail: ' Не вдалося перекласти назву книги.'
-  wwcChatTranslationFail: ' Не вдалося перекласти ваше повідомлення.'
-  wwcInvalidTranslator: ' Некоректні параметри перекладача. Будь ласка, виправте це
+  wwcItemTranslateLoreStart: 'Переклад предмета призначення...'
+  wwcItemTranslateLoreDone: 'Перекладений елемент успішно освоєний.'
+  wwctiOnTarget: 'Увімкнено переклад елементу для %i.'
+  wwcBookTranslationFailCatastrophic: 'Не вдалося перекласти цільову книгу.'
+  wwcBookTranslateTitleFail: 'Не вдалося перекласти назву книги.'
+  wwcChatTranslationFail: 'Не вдалося перекласти ваше повідомлення.'
+  wwcInvalidTranslator: 'Некоректні параметри перекладача. Будь ласка, виправте це
     у вашому config.yml або за допомогою /wwcc, щоб використовувати цей плагін.'
-  wwcNotDoneLoading: ' WorldwideChat все ще ініціалізується. Будь ласка, спробуйте
+  wwcNotDoneLoading: 'WorldwideChat все ще ініціалізується. Будь ласка, спробуйте
     ще раз.'
   wwcConfigGUIEachTranslatorSettings: '%i Конфігурація'
   wwcConfigGUIToggleButton: Перемикання %i
@@ -263,7 +254,7 @@ Messages:
   wwcTranslatorErrorThresholdReached: Досягнуто поріг помилки. Цей плагін тепер перезавантажиться
     і вимкне всі перекладачі.
   wwcConfigErrorLimitEnabled: Обмеження помилки перекладача встановлено на %i.
-  wwcTranslatorError: ' Під час спроби перекладу виникла проблема. Будь ласка, спробуйте
+  wwcTranslatorError: 'Під час спроби перекладу виникла проблема. Будь ласка, спробуйте
     ще раз.'
   wwcTranslatorErrorConsole: Виникла проблема, коли користувач %i намагався їх переклад.
     Тепер роздрукуйте стек-трасування.
@@ -274,3 +265,7 @@ Messages:
   wwcConfigMaxResponseTimeInvalid: Некоректний максимальний час відгуку, встановлений
     у config.yml. За замовленням до 7 секунд...
   wwcConfigMaxResponseTimeEnabled: Максимальний час відгуку встановлено в %i секунд.
+  wwctInvalidInputLangCode: 'Некоректний код мови вводу! Допустимі коди ленг: %o'
+  wwcsTitle: Запис з %i
+  wwctInvalidOutputLangCode: 'Некоректний код мови виведення! Допустимі коди ленг:
+    %o'
