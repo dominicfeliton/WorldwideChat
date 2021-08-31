@@ -269,46 +269,15 @@ public class CommonDefinitions {
 						.getActiveTranslator(currPlayer.getUniqueId().toString()).getRateLimit();
 				}
 
-				//TODO: Write limits method with ratelimit amt for parameter, since these two are practically the same segments of code
 				// Personal Limits (Override Global)
 				if (!isExempt && personalRateLimit > 0) {
-					if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
-						Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
-						Instant currTime = Instant.now();
-						if (currTime.compareTo(previous.plus(personalRateLimit, ChronoUnit.SECONDS)) < 0) {
-							final TextComponent rateLimit = Component.text()
-									.append(Component.text().content(CommonDefinitions.getMessage("wwcRateLimit", new String[] {"" + ChronoUnit.SECONDS.between(currTime,
-											previous.plus(personalRateLimit, ChronoUnit.SECONDS))}))
-											.color(NamedTextColor.YELLOW))
-									.build();
-							CommonDefinitions.sendMessage(currPlayer, rateLimit);
-							return inMessage;
-						} else {
-							currActiveTranslator.setRateLimitPreviousTime(Instant.now());
-						}
-					} else {
-						currActiveTranslator.setRateLimitPreviousTime(Instant.now());
+					if (!checkForRateLimits(personalRateLimit, currActiveTranslator, currPlayer)) {
+						return inMessage;
 					}
-					// Global Limits
+				// Global Limits
 				} else if (!isExempt && WorldwideChat.getInstance().getRateLimit() > 0) {
-					if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
-						Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
-						Instant currTime = Instant.now();
-						int globalLimit = WorldwideChat.getInstance().getRateLimit();
-						if (currTime.compareTo(previous.plus(globalLimit, ChronoUnit.SECONDS)) < 0) {
-							final TextComponent rateLimit = Component.text()
-									.append(Component.text()
-											.content(CommonDefinitions.getMessage("wwcRateLimit", new String[] {"" + ChronoUnit.SECONDS.between(currTime,
-													previous.plus(globalLimit, ChronoUnit.SECONDS))}))
-											.color(NamedTextColor.YELLOW))
-									.build();
-							CommonDefinitions.sendMessage(currPlayer, rateLimit);
-							return inMessage;
-						} else {
-							currActiveTranslator.setRateLimitPreviousTime(Instant.now());
-						}
-					} else {
-						currActiveTranslator.setRateLimitPreviousTime(Instant.now());
+					if (!checkForRateLimits(WorldwideChat.getInstance().getRateLimit(), currActiveTranslator, currPlayer)) {
+						return inMessage;
 					}
 				}
 			} catch (Exception e2) {
@@ -442,7 +411,7 @@ public class CommonDefinitions {
 					} catch (IOException e1) {
 						e1.printStackTrace();
 					}
-					WorldwideChat.getInstance().reload();
+					WorldwideChat.getInstance().reload(null);
 				}
 			} catch (Exception e1) {
 				// If we got here, the plugin is most likely disabling.
@@ -451,6 +420,27 @@ public class CommonDefinitions {
 		return inMessage;
 	}
 
+	private static boolean checkForRateLimits(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
+		if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
+			Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
+			Instant currTime = Instant.now();
+			if (currTime.compareTo(previous.plus(delay, ChronoUnit.SECONDS)) < 0) {
+				final TextComponent rateLimit = Component.text()
+						.append(Component.text().content(CommonDefinitions.getMessage("wwcRateLimit", new String[] {"" + ChronoUnit.SECONDS.between(currTime,
+								previous.plus(delay, ChronoUnit.SECONDS))}))
+								.color(NamedTextColor.YELLOW))
+						.build();
+				CommonDefinitions.sendMessage(sender, rateLimit);
+				return false;
+			} else {
+				currActiveTranslator.setRateLimitPreviousTime(Instant.now());
+			}
+		} else {
+			currActiveTranslator.setRateLimitPreviousTime(Instant.now());
+		}
+		return true;
+	}
+	
 	private static String checkForRateLimitPermissions(Player currPlayer) {
 		Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
 		for (PermissionAttachmentInfo perm : perms) {

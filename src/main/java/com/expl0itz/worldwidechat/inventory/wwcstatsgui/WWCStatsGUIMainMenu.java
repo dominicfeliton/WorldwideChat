@@ -86,9 +86,6 @@ public class WWCStatsGUIMainMenu implements InventoryProvider {
 	}
 
 	@Override
-	public void update(Player player, InventoryContents contents) {
-		// TODO Auto-generated method stub
-		
-	}
+	public void update(Player player, InventoryContents contents) {}
 
 }

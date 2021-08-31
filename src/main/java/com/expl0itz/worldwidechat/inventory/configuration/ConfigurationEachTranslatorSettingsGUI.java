@@ -197,9 +197,6 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 		translatorStatusButtonMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIToggleButton", new String[] {translatorName}));
 		translatorStatusButton.setItemMeta(translatorStatusButtonMeta);
 
-		// TODO: If a user runs this and then immediately runs /stop, an exception will
-		// be thrown to console.
-		// Catch it and cancel the operation.
 		contents.set(1, 1, ClickableItem.of(translatorStatusButton, e -> {
 			if (!main.getTranslatorName().equals(translatorName)) {
 				new BukkitRunnable() {

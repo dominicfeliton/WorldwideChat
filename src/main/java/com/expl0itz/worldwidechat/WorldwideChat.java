@@ -276,7 +276,7 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/* Easy Reload Method */
-	public void reload() {
+	public void reload(CommandSender inSender) {
 		errorCount = 0;
 		if (!translatorName.equals("Invalid")) {
 			translatorName = "Starting";
@@ -287,6 +287,14 @@ public class WorldwideChat extends JavaPlugin {
 			public void run() {
 				cancelBackgroundTasks();
 				loadPluginConfigs(true);
+				if (inSender != null) {
+					final TextComponent wwcrSuccess = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwcrSuccess"))
+									.color(NamedTextColor.GREEN))
+							.build();
+					CommonDefinitions.sendMessage(inSender, wwcrSuccess);
+				}
 			}
 		}.runTaskAsynchronously(this);
 	}
