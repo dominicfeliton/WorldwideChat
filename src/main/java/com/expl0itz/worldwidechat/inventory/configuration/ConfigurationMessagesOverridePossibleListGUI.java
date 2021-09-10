@@ -16,6 +16,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.conversations.configuration.ChatSettingsModifyOverrideTextConversation;
 import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
+import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import fr.minuskube.inv.ClickableItem;
@@ -37,78 +38,81 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 	
 	@Override
 	public void init(Player player, InventoryContents contents) {
-		/* Pagination */
-		Pagination pagination = contents.pagination();
-		HashMap<String, String> messagesFromConfig = new HashMap<String, String>();
-		ClickableItem[] currentMessages = new ClickableItem[0];
-		FileConfiguration messagesConfig = main.getConfigManager().getMessagesConfig();
-		
-		for (String eaKey : messagesConfig.getConfigurationSection("Messages").getKeys(true)) {
-			messagesFromConfig.put(eaKey, messagesConfig.getString("Messages." + eaKey));
-		}
-		currentMessages = new ClickableItem[messagesFromConfig.size()];
-		
-		int currSpot = 0;
-		CommonDefinitions.sendDebugMessage("Adding all possible messages to inventory! Amount of messages: " + currentMessages.length);
-		for (Map.Entry<String, String> entry : messagesFromConfig.entrySet()) {
-			ItemStack currentEntry = new ItemStack(Material.OAK_SIGN);
-			ItemMeta currentEntryMeta = currentEntry.getItemMeta();
+		try {
+			/* Pagination */
+			Pagination pagination = contents.pagination();
+			HashMap<String, String> messagesFromConfig = new HashMap<String, String>();
+			ClickableItem[] currentMessages = new ClickableItem[0];
+			FileConfiguration messagesConfig = main.getConfigManager().getMessagesConfig();
 			
-			currentEntryMeta.setDisplayName(entry.getKey());
-			ArrayList<String> lore = new ArrayList<>();
-			if (messagesConfig.getString("Overrides." + entry.getKey()) != null) {
-				EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
-				currentEntryMeta.addEnchant(glow, 1, true);
-				lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwcConfigGUIMessagesAlreadyOverriden"));
+			for (String eaKey : messagesConfig.getConfigurationSection("Messages").getKeys(true)) {
+				messagesFromConfig.put(eaKey, messagesConfig.getString("Messages." + eaKey));
 			}
-			lore.add(CommonDefinitions.getMessage("wwcConfigGUIMessagesOverrideOriginalLabel") + ": " + messagesConfig.getString("Messages." + entry.getKey()));
-			currentEntryMeta.setLore(lore);
-			currentEntry.setItemMeta(currentEntryMeta);
-			currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {
-				// Start conversation
-				ConversationFactory textConvo = new ConversationFactory(main).withModality(true)
-						.withFirstPrompt(new ChatSettingsModifyOverrideTextConversation(ConfigurationMessagesOverridePossibleListGUI.overrideNewMessageSettings, entry.getKey()));
-			    textConvo.buildConversation(player).begin();
-			});
-			currSpot++;
+			currentMessages = new ClickableItem[messagesFromConfig.size()];
+			
+			int currSpot = 0;
+			CommonDefinitions.sendDebugMessage("Adding all possible messages to inventory! Amount of messages: " + currentMessages.length);
+			for (Map.Entry<String, String> entry : messagesFromConfig.entrySet()) {
+				ItemStack currentEntry = new ItemStack(Material.OAK_SIGN);
+				ItemMeta currentEntryMeta = currentEntry.getItemMeta();
+				
+				currentEntryMeta.setDisplayName(entry.getKey());
+				ArrayList<String> lore = new ArrayList<>();
+				if (messagesConfig.getString("Overrides." + entry.getKey()) != null) {
+					EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
+					currentEntryMeta.addEnchant(glow, 1, true);
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwcConfigGUIMessagesAlreadyOverriden"));
+				}
+				lore.add(CommonDefinitions.getMessage("wwcConfigGUIMessagesOverrideOriginalLabel") + ": " + messagesConfig.getString("Messages." + entry.getKey()));
+				currentEntryMeta.setLore(lore);
+				currentEntry.setItemMeta(currentEntryMeta);
+				currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {
+					// Start conversation
+					ConversationFactory textConvo = new ConversationFactory(main).withModality(true)
+							.withFirstPrompt(new ChatSettingsModifyOverrideTextConversation(ConfigurationMessagesOverridePossibleListGUI.overrideNewMessageSettings, entry.getKey()));
+				    textConvo.buildConversation(player).begin();
+				});
+				currSpot++;
+			}
+			
+			/* 45 messages per page, start at 0, 0 */
+			pagination.setItems(currentMessages);
+			pagination.setItemsPerPage(45);
+			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
+			
+			/* Bottom Left Option: Previous Page */
+			ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
+			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
+			previousPageMeta.setDisplayName(ChatColor.GREEN
+					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
+			previousPageButton.setItemMeta(previousPageMeta);
+			if (!pagination.isFirst()) {
+				contents.set(5, 2, ClickableItem.of(previousPageButton, e -> {
+					overrideNewMessageSettings.open(player,
+							pagination.previous().getPage());
+				}));
+			} else {
+				contents.set(5, 2, ClickableItem.of(previousPageButton, e -> {
+					ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
+				}));
+			}
+			
+			/* Bottom Right Option: Next Page */
+			ItemStack nextPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
+			ItemMeta nextPageMeta = nextPageButton.getItemMeta();
+			nextPageMeta.setDisplayName(ChatColor.GREEN
+					+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));
+			nextPageButton.setItemMeta(nextPageMeta);
+			if (!pagination.isLast()) {
+				contents.set(5, 6, ClickableItem.of(nextPageButton, e -> {
+					overrideNewMessageSettings.open(player,
+							pagination.next().getPage());
+				}));
+				;
+			}
+		} catch (Exception e) {
+			WWCInventoryManager.inventoryError(player, e);
 		}
-		
-		/* 45 messages per page, start at 0, 0 */
-		pagination.setItems(currentMessages);
-		pagination.setItemsPerPage(45);
-		pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
-		
-		/* Bottom Left Option: Previous Page */
-		ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
-		ItemMeta previousPageMeta = previousPageButton.getItemMeta();
-		previousPageMeta.setDisplayName(ChatColor.GREEN
-				+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
-		previousPageButton.setItemMeta(previousPageMeta);
-		if (!pagination.isFirst()) {
-			contents.set(5, 2, ClickableItem.of(previousPageButton, e -> {
-				overrideNewMessageSettings.open(player,
-						pagination.previous().getPage());
-			}));
-		} else {
-			contents.set(5, 2, ClickableItem.of(previousPageButton, e -> {
-				ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
-			}));
-		}
-		
-		/* Bottom Right Option: Next Page */
-		ItemStack nextPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
-		ItemMeta nextPageMeta = nextPageButton.getItemMeta();
-		nextPageMeta.setDisplayName(ChatColor.GREEN
-				+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));
-		nextPageButton.setItemMeta(nextPageMeta);
-		if (!pagination.isLast()) {
-			contents.set(5, 6, ClickableItem.of(nextPageButton, e -> {
-				overrideNewMessageSettings.open(player,
-						pagination.next().getPage());
-			}));
-			;
-		}
-		
 	}
 
 	@Override

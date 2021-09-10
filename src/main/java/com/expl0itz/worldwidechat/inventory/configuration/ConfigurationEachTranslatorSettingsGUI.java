@@ -16,6 +16,7 @@ import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettings
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsGoogleTranslateApiKeyConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsWatsonApiKeyConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsWatsonServiceUrlConversation;
+import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
@@ -50,132 +51,136 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 
 	@Override
 	public void init(Player player, InventoryContents contents) {
-		if (translatorName.equals("Watson")) {
-			/* White stained glass borders */
-			ItemStack customBorders = new ItemStack(Material.BLUE_STAINED_GLASS_PANE);
-			ItemMeta borderMeta = customBorders.getItemMeta();
-			borderMeta.setDisplayName(" ");
-			customBorders.setItemMeta(borderMeta);
-			contents.fillBorders(ClickableItem.empty(customBorders));
+		try {
+			if (translatorName.equals("Watson")) {
+				/* White stained glass borders */
+				ItemStack customBorders = new ItemStack(Material.BLUE_STAINED_GLASS_PANE);
+				ItemMeta borderMeta = customBorders.getItemMeta();
+				borderMeta.setDisplayName(" ");
+				customBorders.setItemMeta(borderMeta);
+				contents.fillBorders(ClickableItem.empty(customBorders));
 
-			/* First Option: Watson Status Button */
-			translateStatusButton(player, contents);
+				/* First Option: Watson Status Button */
+				translateStatusButton(player, contents);
 
-			/* Second Option: Watson API Key */
-			ConversationFactory apiConvo = new ConversationFactory(main).withModality(true)
-					.withFirstPrompt(new TranslatorSettingsWatsonApiKeyConversation());
-			ItemStack apiKeyButton = new ItemStack(Material.NAME_TAG);
-			ItemMeta apiKeyMeta = apiKeyButton.getItemMeta();
-			apiKeyMeta.setDisplayName(ChatColor.GOLD
-					+ CommonDefinitions.getMessage("wwcConfigGUIWatsonAPIKeyButton"));
-			apiKeyButton.setItemMeta(apiKeyMeta);
-			contents.set(1, 2, ClickableItem.of(apiKeyButton, e -> {
-				apiConvo.buildConversation(player).begin();
+				/* Second Option: Watson API Key */
+				ConversationFactory apiConvo = new ConversationFactory(main).withModality(true)
+						.withFirstPrompt(new TranslatorSettingsWatsonApiKeyConversation());
+				ItemStack apiKeyButton = new ItemStack(Material.NAME_TAG);
+				ItemMeta apiKeyMeta = apiKeyButton.getItemMeta();
+				apiKeyMeta.setDisplayName(ChatColor.GOLD
+						+ CommonDefinitions.getMessage("wwcConfigGUIWatsonAPIKeyButton"));
+				apiKeyButton.setItemMeta(apiKeyMeta);
+				contents.set(1, 2, ClickableItem.of(apiKeyButton, e -> {
+					apiConvo.buildConversation(player).begin();
+				}));
+
+				/* Third Option: Watson Service URL */
+				ConversationFactory urlConvo = new ConversationFactory(main).withModality(true)
+						.withFirstPrompt(new TranslatorSettingsWatsonServiceUrlConversation());
+				ItemStack urlButton = new ItemStack(Material.NAME_TAG);
+				ItemMeta urlMeta = urlButton.getItemMeta();
+				urlMeta.setDisplayName(ChatColor.GOLD
+						+ CommonDefinitions.getMessage("wwcConfigGUIWatsonURLButton"));
+				urlButton.setItemMeta(urlMeta);
+				contents.set(1, 3, ClickableItem.of(urlButton, e -> {
+					urlConvo.buildConversation(player).begin();
+				}));
+			} else if (translatorName.equals("Google Translate")) {
+				/* White stained glass borders */
+				ItemStack customBorders = new ItemStack(Material.RED_STAINED_GLASS_PANE);
+				ItemMeta borderMeta = customBorders.getItemMeta();
+				borderMeta.setDisplayName(" ");
+				customBorders.setItemMeta(borderMeta);
+				contents.fillBorders(ClickableItem.empty(customBorders));
+
+				/* First Option: Google Translate is Enabled */
+				translateStatusButton(player, contents);
+
+				/* Second Option: Google Translate API Key */
+				ConversationFactory apiConvo = new ConversationFactory(main).withModality(true)
+						.withFirstPrompt(new TranslatorSettingsGoogleTranslateApiKeyConversation());
+				ItemStack apiKeyButton = new ItemStack(Material.NAME_TAG);
+				ItemMeta apiKeyMeta = apiKeyButton.getItemMeta();
+				apiKeyMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIGoogleTranslateAPIKeyButton"));
+				apiKeyButton.setItemMeta(apiKeyMeta);
+				contents.set(1, 2, ClickableItem.of(apiKeyButton, e -> {
+					apiConvo.buildConversation(player).begin();
+				}));
+			} else if (translatorName.equals("Amazon Translate")) {
+				ItemStack customBorders = new ItemStack(Material.YELLOW_STAINED_GLASS_PANE);
+				ItemMeta borderMeta = customBorders.getItemMeta();
+				borderMeta.setDisplayName(" ");
+				customBorders.setItemMeta(borderMeta);
+				contents.fillBorders(ClickableItem.empty(customBorders));
+
+				/* First Option: Amazon Translate Status Button */
+				translateStatusButton(player, contents);
+
+				/* Second Option: Amazon Access Key */
+				ConversationFactory accessKeyConvo = new ConversationFactory(main).withModality(true)
+						.withFirstPrompt(new TranslatorSettingsAmazonTranslateAccessKeyConversation());
+				ItemStack accessKeyButton = new ItemStack(Material.NAME_TAG);
+				ItemMeta accessKeyMeta = accessKeyButton.getItemMeta();
+				accessKeyMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIAmazonTranslateAccessKeyButton"));
+				accessKeyButton.setItemMeta(accessKeyMeta);
+				contents.set(1, 2, ClickableItem.of(accessKeyButton, e -> {
+					accessKeyConvo.buildConversation(player).begin();
+				}));
+
+				/* Third Option: Amazon Secret Key */
+				ConversationFactory secretKeyConvo = new ConversationFactory(main).withModality(true)
+						.withFirstPrompt(new TranslatorSettingsAmazonTranslateSecretKeyConversation());
+				ItemStack secretKeyButton = new ItemStack(Material.NAME_TAG);
+				ItemMeta secretKeyMeta = secretKeyButton.getItemMeta();
+				secretKeyMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIAmazonTranslateSecretKeyButton"));
+				secretKeyButton.setItemMeta(secretKeyMeta);
+				contents.set(1, 3, ClickableItem.of(secretKeyButton, e -> {
+					secretKeyConvo.buildConversation(player).begin();
+				}));
+
+				/* Fourth Option: Amazon Region */
+				ConversationFactory regionConvo = new ConversationFactory(main).withModality(true)
+						.withFirstPrompt(new TranslatorSettingsAmazonTranslateRegionConversation());
+				ItemStack regionButton = new ItemStack(Material.NAME_TAG);
+				ItemMeta regionMeta = regionButton.getItemMeta();
+				regionMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIAmazonTranslateRegionButton"));
+				regionButton.setItemMeta(regionMeta);
+				contents.set(1, 4, ClickableItem.of(regionButton, e -> {
+					regionConvo.buildConversation(player).begin();
+				}));
+			} else {
+				ItemStack customBorders = new ItemStack(Material.WHITE_STAINED_GLASS_PANE);
+				ItemMeta borderMeta = customBorders.getItemMeta();
+				borderMeta.setDisplayName(" ");
+				customBorders.setItemMeta(borderMeta);
+				contents.fillBorders(ClickableItem.empty(customBorders));
+			}
+
+			/* Bottom Right Option: Previous Page */
+			ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
+			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
+			previousPageMeta.setDisplayName(ChatColor.GREEN
+					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
+			previousPageButton.setItemMeta(previousPageMeta);
+			contents.set(2, 1, ClickableItem.of(previousPageButton,
+					e -> ConfigurationTranslatorSettingsGUI.translatorSettings.open(player)));
+
+			/* Bottom Middle Option: Quit */
+			ItemStack quitButton = new ItemStack(Material.BARRIER);
+			ItemMeta quitMeta = quitButton.getItemMeta();
+			quitMeta.setDisplayName(ChatColor.RED
+					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
+			quitButton.setItemMeta(quitMeta);
+			WWCReload rel = new WWCReload(player, null, null, null);
+			contents.set(2, 4, ClickableItem.of(quitButton, e -> {
+				main.removePlayerUsingConfigurationGUI(player);
+				player.closeInventory();
+				rel.processCommand();
 			}));
-
-			/* Third Option: Watson Service URL */
-			ConversationFactory urlConvo = new ConversationFactory(main).withModality(true)
-					.withFirstPrompt(new TranslatorSettingsWatsonServiceUrlConversation());
-			ItemStack urlButton = new ItemStack(Material.NAME_TAG);
-			ItemMeta urlMeta = urlButton.getItemMeta();
-			urlMeta.setDisplayName(ChatColor.GOLD
-					+ CommonDefinitions.getMessage("wwcConfigGUIWatsonURLButton"));
-			urlButton.setItemMeta(urlMeta);
-			contents.set(1, 3, ClickableItem.of(urlButton, e -> {
-				urlConvo.buildConversation(player).begin();
-			}));
-		} else if (translatorName.equals("Google Translate")) {
-			/* White stained glass borders */
-			ItemStack customBorders = new ItemStack(Material.RED_STAINED_GLASS_PANE);
-			ItemMeta borderMeta = customBorders.getItemMeta();
-			borderMeta.setDisplayName(" ");
-			customBorders.setItemMeta(borderMeta);
-			contents.fillBorders(ClickableItem.empty(customBorders));
-
-			/* First Option: Google Translate is Enabled */
-			translateStatusButton(player, contents);
-
-			/* Second Option: Google Translate API Key */
-			ConversationFactory apiConvo = new ConversationFactory(main).withModality(true)
-					.withFirstPrompt(new TranslatorSettingsGoogleTranslateApiKeyConversation());
-			ItemStack apiKeyButton = new ItemStack(Material.NAME_TAG);
-			ItemMeta apiKeyMeta = apiKeyButton.getItemMeta();
-			apiKeyMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIGoogleTranslateAPIKeyButton"));
-			apiKeyButton.setItemMeta(apiKeyMeta);
-			contents.set(1, 2, ClickableItem.of(apiKeyButton, e -> {
-				apiConvo.buildConversation(player).begin();
-			}));
-		} else if (translatorName.equals("Amazon Translate")) {
-			ItemStack customBorders = new ItemStack(Material.YELLOW_STAINED_GLASS_PANE);
-			ItemMeta borderMeta = customBorders.getItemMeta();
-			borderMeta.setDisplayName(" ");
-			customBorders.setItemMeta(borderMeta);
-			contents.fillBorders(ClickableItem.empty(customBorders));
-
-			/* First Option: Amazon Translate Status Button */
-			translateStatusButton(player, contents);
-
-			/* Second Option: Amazon Access Key */
-			ConversationFactory accessKeyConvo = new ConversationFactory(main).withModality(true)
-					.withFirstPrompt(new TranslatorSettingsAmazonTranslateAccessKeyConversation());
-			ItemStack accessKeyButton = new ItemStack(Material.NAME_TAG);
-			ItemMeta accessKeyMeta = accessKeyButton.getItemMeta();
-			accessKeyMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIAmazonTranslateAccessKeyButton"));
-			accessKeyButton.setItemMeta(accessKeyMeta);
-			contents.set(1, 2, ClickableItem.of(accessKeyButton, e -> {
-				accessKeyConvo.buildConversation(player).begin();
-			}));
-
-			/* Third Option: Amazon Secret Key */
-			ConversationFactory secretKeyConvo = new ConversationFactory(main).withModality(true)
-					.withFirstPrompt(new TranslatorSettingsAmazonTranslateSecretKeyConversation());
-			ItemStack secretKeyButton = new ItemStack(Material.NAME_TAG);
-			ItemMeta secretKeyMeta = secretKeyButton.getItemMeta();
-			secretKeyMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIAmazonTranslateSecretKeyButton"));
-			secretKeyButton.setItemMeta(secretKeyMeta);
-			contents.set(1, 3, ClickableItem.of(secretKeyButton, e -> {
-				secretKeyConvo.buildConversation(player).begin();
-			}));
-
-			/* Fourth Option: Amazon Region */
-			ConversationFactory regionConvo = new ConversationFactory(main).withModality(true)
-					.withFirstPrompt(new TranslatorSettingsAmazonTranslateRegionConversation());
-			ItemStack regionButton = new ItemStack(Material.NAME_TAG);
-			ItemMeta regionMeta = regionButton.getItemMeta();
-			regionMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIAmazonTranslateRegionButton"));
-			regionButton.setItemMeta(regionMeta);
-			contents.set(1, 4, ClickableItem.of(regionButton, e -> {
-				regionConvo.buildConversation(player).begin();
-			}));
-		} else {
-			ItemStack customBorders = new ItemStack(Material.WHITE_STAINED_GLASS_PANE);
-			ItemMeta borderMeta = customBorders.getItemMeta();
-			borderMeta.setDisplayName(" ");
-			customBorders.setItemMeta(borderMeta);
-			contents.fillBorders(ClickableItem.empty(customBorders));
+		} catch (Exception e) {
+			WWCInventoryManager.inventoryError(player, e);
 		}
-
-		/* Bottom Right Option: Previous Page */
-		ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
-		ItemMeta previousPageMeta = previousPageButton.getItemMeta();
-		previousPageMeta.setDisplayName(ChatColor.GREEN
-				+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
-		previousPageButton.setItemMeta(previousPageMeta);
-		contents.set(2, 1, ClickableItem.of(previousPageButton,
-				e -> ConfigurationTranslatorSettingsGUI.translatorSettings.open(player)));
-
-		/* Bottom Middle Option: Quit */
-		ItemStack quitButton = new ItemStack(Material.BARRIER);
-		ItemMeta quitMeta = quitButton.getItemMeta();
-		quitMeta.setDisplayName(ChatColor.RED
-				+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
-		quitButton.setItemMeta(quitMeta);
-		WWCReload rel = new WWCReload(player, null, null, null);
-		contents.set(2, 4, ClickableItem.of(quitButton, e -> {
-			main.removePlayerUsingConfigurationGUI(player);
-			player.closeInventory();
-			rel.processCommand();
-		}));
 	}
 
 	@Override

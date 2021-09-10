@@ -11,6 +11,7 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsGlobalRateConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsTranslationCacheConversation;
+import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import fr.minuskube.inv.ClickableItem;
@@ -30,67 +31,71 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 
 	@Override
 	public void init(Player player, InventoryContents contents) {
-		/* White stained glass borders */
-		ItemStack customBorders = new ItemStack(Material.WHITE_STAINED_GLASS_PANE);
-		ItemMeta borderMeta = customBorders.getItemMeta();
-		borderMeta.setDisplayName(" ");
-		customBorders.setItemMeta(borderMeta);
-		contents.fillBorders(ClickableItem.empty(customBorders));
+		try {
+			/* White stained glass borders */
+			ItemStack customBorders = new ItemStack(Material.WHITE_STAINED_GLASS_PANE);
+			ItemMeta borderMeta = customBorders.getItemMeta();
+			borderMeta.setDisplayName(" ");
+			customBorders.setItemMeta(borderMeta);
+			contents.fillBorders(ClickableItem.empty(customBorders));
 
-		/* Option One: Watson */
-		watsonInventory(player, contents);
+			/* Option One: Watson */
+			watsonInventory(player, contents);
 
-		/* Option Two: Google Translate */
-		googleTranslateInventory(player, contents);
+			/* Option Two: Google Translate */
+			googleTranslateInventory(player, contents);
 
-		/* Option Three: Amazon Translate */
-		amazonTranslateInventory(player, contents);
+			/* Option Three: Amazon Translate */
+			amazonTranslateInventory(player, contents);
 
-		/* Option Four: Translator Cache Size */
-		ConversationFactory cacheConvo = new ConversationFactory(main).withModality(true)
-				.withFirstPrompt(new TranslatorSettingsTranslationCacheConversation());
-		ItemStack translatorCacheButton = new ItemStack(Material.NAME_TAG);
-		ItemMeta translatorCacheMeta = translatorCacheButton.getItemMeta();
-		translatorCacheMeta.setDisplayName(ChatColor.GOLD
-				+ CommonDefinitions.getMessage("wwcConfigGUITranslatorCacheButton"));
-		translatorCacheButton.setItemMeta(translatorCacheMeta);
-		contents.set(1, 4, ClickableItem.of(translatorCacheButton, e -> {
-			cacheConvo.buildConversation(player).begin();
-		}));
+			/* Option Four: Translator Cache Size */
+			ConversationFactory cacheConvo = new ConversationFactory(main).withModality(true)
+					.withFirstPrompt(new TranslatorSettingsTranslationCacheConversation());
+			ItemStack translatorCacheButton = new ItemStack(Material.NAME_TAG);
+			ItemMeta translatorCacheMeta = translatorCacheButton.getItemMeta();
+			translatorCacheMeta.setDisplayName(ChatColor.GOLD
+					+ CommonDefinitions.getMessage("wwcConfigGUITranslatorCacheButton"));
+			translatorCacheButton.setItemMeta(translatorCacheMeta);
+			contents.set(1, 4, ClickableItem.of(translatorCacheButton, e -> {
+				cacheConvo.buildConversation(player).begin();
+			}));
 
-		/* Option Five : Global Rate Limit */
-		ConversationFactory rateConvo = new ConversationFactory(main).withModality(true)
-				.withFirstPrompt(new TranslatorSettingsGlobalRateConversation());
-		ItemStack rateLimitButton = new ItemStack(Material.NAME_TAG);
-		ItemMeta rateLimitMeta = rateLimitButton.getItemMeta();
-		rateLimitMeta.setDisplayName(ChatColor.GOLD
-				+ CommonDefinitions.getMessage("wwcConfigGUIGlobalRateLimit"));
-		rateLimitButton.setItemMeta(rateLimitMeta);
-		contents.set(1, 5, ClickableItem.of(rateLimitButton, e -> {
-			rateConvo.buildConversation(player).begin();
-		}));
+			/* Option Five : Global Rate Limit */
+			ConversationFactory rateConvo = new ConversationFactory(main).withModality(true)
+					.withFirstPrompt(new TranslatorSettingsGlobalRateConversation());
+			ItemStack rateLimitButton = new ItemStack(Material.NAME_TAG);
+			ItemMeta rateLimitMeta = rateLimitButton.getItemMeta();
+			rateLimitMeta.setDisplayName(ChatColor.GOLD
+					+ CommonDefinitions.getMessage("wwcConfigGUIGlobalRateLimit"));
+			rateLimitButton.setItemMeta(rateLimitMeta);
+			contents.set(1, 5, ClickableItem.of(rateLimitButton, e -> {
+				rateConvo.buildConversation(player).begin();
+			}));
 
-		/* Bottom Right Option: Previous Page */
-		ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
-		ItemMeta previousPageMeta = previousPageButton.getItemMeta();
-		previousPageMeta.setDisplayName(ChatColor.GREEN
-				+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
-		previousPageButton.setItemMeta(previousPageMeta);
-		contents.set(2, 1,
-				ClickableItem.of(previousPageButton, e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
+			/* Bottom Right Option: Previous Page */
+			ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
+			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
+			previousPageMeta.setDisplayName(ChatColor.GREEN
+					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
+			previousPageButton.setItemMeta(previousPageMeta);
+			contents.set(2, 1,
+					ClickableItem.of(previousPageButton, e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
 
-		/* Bottom Middle Option: Quit */
-		ItemStack quitButton = new ItemStack(Material.BARRIER);
-		ItemMeta quitMeta = quitButton.getItemMeta();
-		quitMeta.setDisplayName(ChatColor.RED
-				+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
-		quitButton.setItemMeta(quitMeta);
-		WWCReload rel = new WWCReload(player, null, null, new String[0]);
-		contents.set(2, 4, ClickableItem.of(quitButton, e -> {
-			main.removePlayerUsingConfigurationGUI(player);
-			player.closeInventory();
-			rel.processCommand();
-		}));
+			/* Bottom Middle Option: Quit */
+			ItemStack quitButton = new ItemStack(Material.BARRIER);
+			ItemMeta quitMeta = quitButton.getItemMeta();
+			quitMeta.setDisplayName(ChatColor.RED
+					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
+			quitButton.setItemMeta(quitMeta);
+			WWCReload rel = new WWCReload(player, null, null, new String[0]);
+			contents.set(2, 4, ClickableItem.of(quitButton, e -> {
+				main.removePlayerUsingConfigurationGUI(player);
+				player.closeInventory();
+				rel.processCommand();
+			}));
+		} catch (Exception e) {
+			WWCInventoryManager.inventoryError(player, e);
+		}
 	}
 
 	@Override
