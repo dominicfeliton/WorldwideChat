@@ -94,11 +94,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 	}
 
 	@Override
-	public void update(Player player, InventoryContents contents) {
-		watsonInventory(player, contents);
-		googleTranslateInventory(player, contents);
-		amazonTranslateInventory(player, contents);
-	}
+	public void update(Player player, InventoryContents contents) {}
 
 	private void watsonInventory(Player player, InventoryContents contents) {
 		/* Option One: Watson */

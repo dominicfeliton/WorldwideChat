@@ -179,17 +179,14 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 	}
 
 	@Override
-	public void update(Player player, InventoryContents contents) {
-		translateStatusButton(player, contents);
-
-	}
+	public void update(Player player, InventoryContents contents) {}
 
 	private void translateStatusButton(Player player, InventoryContents contents) {
-		ItemStack translatorStatusButton;
+		ItemStack translatorStatusButton = new ItemStack(Material.BEDROCK);
 		if (main.getTranslatorName().equals(translatorName)) {
-			translatorStatusButton = new ItemStack(Material.EMERALD_BLOCK);
+			translatorStatusButton.setType(Material.EMERALD_BLOCK);
 		} else {
-			translatorStatusButton = new ItemStack(Material.REDSTONE_BLOCK);
+			translatorStatusButton.setType(Material.REDSTONE_BLOCK);
 		}
 		ItemMeta translatorStatusButtonMeta = translatorStatusButton.getItemMeta();
 		translatorStatusButtonMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIToggleButton", new String[] {translatorName}));

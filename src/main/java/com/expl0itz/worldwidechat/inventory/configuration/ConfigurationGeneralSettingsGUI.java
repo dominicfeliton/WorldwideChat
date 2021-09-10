@@ -120,17 +120,14 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 	}
 
 	@Override
-	public void update(Player player, InventoryContents contents) {
-		bStatsButton(player, contents);
-		debugModeButton(player, contents);
-	}
-
+	public void update(Player player, InventoryContents contents) {}
+	
 	private void bStatsButton(Player player, InventoryContents contents) {
-		ItemStack bStatsButton;
+		ItemStack bStatsButton = new ItemStack(Material.BEDROCK);
 		if (main.getbStats()) {
-			bStatsButton = new ItemStack(Material.EMERALD_BLOCK);
+			bStatsButton.setType(Material.EMERALD_BLOCK);
 		} else {
-			bStatsButton = new ItemStack(Material.REDSTONE_BLOCK);
+			bStatsButton.setType(Material.REDSTONE_BLOCK);
 		}
 		ItemMeta bStatsMeta = bStatsButton.getItemMeta();
 		bStatsMeta.setDisplayName(ChatColor.GOLD
@@ -148,15 +145,16 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 							.color(NamedTextColor.GREEN))
 					.build();
 			CommonDefinitions.sendMessage(player, successfulChange);
+			bStatsButton(player, contents);
 		}));
 	}
 	
 	private void debugModeButton(Player player, InventoryContents contents) {
-		ItemStack debugModeButton;
+		ItemStack debugModeButton = new ItemStack(Material.BEDROCK);
 		if (main.getDebugMode()) {
-			debugModeButton = new ItemStack(Material.EMERALD_BLOCK);
+			debugModeButton.setType(Material.EMERALD_BLOCK);
 		} else {
-			debugModeButton = new ItemStack(Material.REDSTONE_BLOCK);
+			debugModeButton.setType(Material.REDSTONE_BLOCK);
 		}
 		ItemMeta debugModeMeta = debugModeButton.getItemMeta();
 		debugModeMeta.setDisplayName(ChatColor.GOLD
@@ -174,7 +172,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 							.color(NamedTextColor.GREEN))
 					.build();
 			CommonDefinitions.sendMessage(player, successfulChange);
+			debugModeButton(player, contents);
 		}));
 	}
-
 }

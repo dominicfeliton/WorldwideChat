@@ -373,40 +373,49 @@ public class ConfigurationHandler {
 	/* Main config save method */
 	public void saveMainConfig(boolean async) {
 		if (async && main.isEnabled()) {
+			CommonDefinitions.sendDebugMessage("Saving main config async!");
 			new BukkitRunnable() {
 				@Override
 				public void run() {
 					saveMainConfig(false);
 				}
 			}.runTaskAsynchronously(main);
+			return;
 		}
+		CommonDefinitions.sendDebugMessage("Saving main config sync!");
 		saveCustomConfig(mainConfig, configFile, false);
 	}
 	
 	/* Messages config save method */
 	public void saveMessagesConfig(boolean async) {
 		if (async && main.isEnabled()) {
+			CommonDefinitions.sendDebugMessage("Saving messages config async!");
 			new BukkitRunnable() {
 				@Override
 				public void run() {
 					saveMessagesConfig(false);
 				}
 			}.runTaskAsynchronously(main);
+			return;
 		}
+		CommonDefinitions.sendDebugMessage("Saving messages config sync!");
 		saveCustomConfig(messagesConfig, messagesFile, false);
 	}
 	
 	/* Custom config save method */
 	public synchronized void saveCustomConfig(YamlConfiguration inConfig, File dest, boolean async) {
 		if (async && main.isEnabled()) {
+			CommonDefinitions.sendDebugMessage("Saving custom config async!");
 			new BukkitRunnable() {
 				@Override
 				public void run() {
 					saveCustomConfig(inConfig, dest, false);
 				}
 			}.runTaskAsynchronously(main);
+			return;
 		}
 		if (inConfig != null && dest != null) {
+			CommonDefinitions.sendDebugMessage("Saving custom config sync!");
 			try {
 				inConfig.save(dest);
 			} catch (IOException e) {

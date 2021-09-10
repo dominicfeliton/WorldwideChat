@@ -88,17 +88,14 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 	}
 
 	@Override
-	public void update(Player player, InventoryContents contents) {
-		sendTranslationChatButton(player, contents);
-		sendPluginUpdateChatButton(player, contents);
-	}
+	public void update(Player player, InventoryContents contents) {}
 
 	private void sendTranslationChatButton(Player player, InventoryContents contents) {
-		ItemStack translationChatButton;
+		ItemStack translationChatButton = new ItemStack(Material.BEDROCK);
 		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat")) {
-			translationChatButton = new ItemStack(Material.EMERALD_BLOCK);
+			translationChatButton.setType(Material.EMERALD_BLOCK);
 		} else {
-			translationChatButton = new ItemStack(Material.REDSTONE_BLOCK);
+			translationChatButton.setType(Material.REDSTONE_BLOCK);
 		}
 		ItemMeta translationChatMeta = translationChatButton.getItemMeta();
 		translationChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUISendTranslationChatButton"));
@@ -114,15 +111,16 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 							.color(NamedTextColor.GREEN))
 					.build();
 			CommonDefinitions.sendMessage(player, successfulChange);
+			sendTranslationChatButton(player, contents);
 		}));
 	}
 
 	private void sendPluginUpdateChatButton(Player player, InventoryContents contents) {
-		ItemStack pluginUpdateChatButton;
+		ItemStack pluginUpdateChatButton = new ItemStack(Material.BEDROCK);
 		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) {
-			pluginUpdateChatButton = new ItemStack(Material.EMERALD_BLOCK);
+			pluginUpdateChatButton.setType(Material.EMERALD_BLOCK);;
 		} else {
-			pluginUpdateChatButton = new ItemStack(Material.REDSTONE_BLOCK);
+			pluginUpdateChatButton.setType(Material.REDSTONE_BLOCK);
 		}
 		ItemMeta pluginUpdateChatMeta = pluginUpdateChatButton.getItemMeta();
 		pluginUpdateChatMeta.setDisplayName(ChatColor.GOLD
@@ -139,6 +137,7 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 							.color(NamedTextColor.GREEN))
 					.build();
 			CommonDefinitions.sendMessage(player, successfulChange);
+			sendPluginUpdateChatButton(player, contents);
 		}));
 	}
 }
