@@ -1,7 +1,5 @@
 package com.expl0itz.worldwidechat.inventory.configuration;
 
-import java.io.IOException;
-
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.conversations.ConversationFactory;
@@ -101,7 +99,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 		quitMeta.setDisplayName(ChatColor.RED
 				+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
 		quitButton.setItemMeta(quitMeta);
-		WWCReload rel = new WWCReload(player, null, null, null);
+		WWCReload rel = new WWCReload(player, null, null, new String[0]);
 		contents.set(2, 4, ClickableItem.of(quitButton, e -> {
 			main.removePlayerUsingConfigurationGUI(player);
 			player.closeInventory();
@@ -123,7 +121,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 		bStatsButton(player, contents);
 	}
 
-	public void bStatsButton(Player player, InventoryContents contents) {
+	private void bStatsButton(Player player, InventoryContents contents) {
 		ItemStack bStatsButton;
 		if (main.getbStats()) {
 			bStatsButton = new ItemStack(Material.EMERALD_BLOCK);
@@ -139,17 +137,13 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			main.getConfigManager().getMainConfig().set("General.enablebStats",
 					!(main.getConfigManager().getMainConfig().getBoolean("General.enablebStats")));
 			main.setbStats(!main.getbStats());
-			try {
-				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-				final TextComponent successfulChange = Component.text()
-						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcConfigConversationbStatsSuccess"))
-								.color(NamedTextColor.GREEN))
-						.build();
-				CommonDefinitions.sendMessage(player, successfulChange);
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
+			main.getConfigManager().saveMainConfig(true);
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcConfigConversationbStatsSuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage(player, successfulChange);
 		}));
 	}
 

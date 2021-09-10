@@ -57,13 +57,16 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 				ItemStack currentLang = new ItemStack(Material.BOOK);
 				ItemMeta currentLangMeta = currentLang.getItemMeta();
 				/* Add Glow Effect */
-				if (currTranslator.getInLangCode().equals(main.getSupportedTranslatorLanguages().get(i).getLangCode()) 
-						|| selectedSourceLanguage.equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
-					EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
+				ArrayList<String> lore = new ArrayList<>();
+				EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
+				if (selectedSourceLanguage.equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
 					currentLangMeta.addEnchant(glow, 1, true);
+					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
+				} else if (currTranslator.getInLangCode().equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
+					currentLangMeta.addEnchant(glow, 1, true);
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				currentLangMeta.setDisplayName(main.getSupportedTranslatorLanguages().get(i).getLangName());
-				ArrayList<String> lore = new ArrayList<>();
 				if (!main.getSupportedTranslatorLanguages().get(i).getNativeLangName().equals("")) {
 					lore.add(main.getSupportedTranslatorLanguages().get(i).getNativeLangName());
 				}
@@ -82,16 +85,6 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 			pagination.setItemsPerPage(45);
 			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
 
-			/* Deep Bottom Left Option: Back to main translation menu */
-			ItemStack stopButton = new ItemStack(Material.BARRIER);
-			ItemMeta stopMeta = stopButton.getItemMeta();
-			stopMeta.setDisplayName(ChatColor.RED
-					+ CommonDefinitions.getMessage("wwctGUIBackToMainMenuButton"));
-			stopButton.setItemMeta(stopMeta);
-			contents.set(5, 0, ClickableItem.of(stopButton, e -> {
-				WWCTranslateGUIMainMenu.getTranslateMainMenu(targetPlayerUUID).open(player);
-			}));
-
 			/* Bottom Left Option: Previous Page */
 			ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
 			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
@@ -103,6 +96,10 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 					getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player,
 							pagination.previous().getPage());
 				}));
+			} else {
+				contents.set(5, 2, ClickableItem.of(previousPageButton, e -> {
+					WWCTranslateGUIMainMenu.getTranslateMainMenu(targetPlayerUUID).open(player);
+				}));
 			}
 
 			/* Bottom Middle Option: Auto-detect Source Language */
@@ -112,9 +109,14 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 					+ CommonDefinitions.getMessage("wwctGUIAutoDetectButton"));
 			
 			/* Add Glow Effect */
-			if ((currTranslator.getInLangCode().equals("None")) || selectedSourceLanguage.equalsIgnoreCase("None")) {
-				EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
+			EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
+			ArrayList<String> lore = new ArrayList<>();
+			if ((currTranslator.getInLangCode().equals("None"))) {
 				skipSourceMeta.addEnchant(glow, 1, true);
+				lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
+			} else if (selectedSourceLanguage.equalsIgnoreCase("None")) {
+				skipSourceMeta.addEnchant(glow, 1, true);
+				lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
 			}
 			skipSourceButton.setItemMeta(skipSourceMeta);
 			contents.set(5, 4, ClickableItem.of(skipSourceButton, e -> WWCTranslateGUITargetLanguage

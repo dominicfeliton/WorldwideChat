@@ -30,7 +30,7 @@ public class TempItemInventory implements InventoryProvider {
 
 	@Override
 	public void init(Player player, InventoryContents contents) {
-		/* Set borders to purple */
+		/* Set borders to green */
 		ItemStack customDefaultBorders = new ItemStack(Material.GREEN_STAINED_GLASS_PANE);
 		ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
 		defaultBorderMeta.setDisplayName(" ");

@@ -1,7 +1,6 @@
 # DO NOT TOUCH THE VERSION ENTRY!
 Overrides:
   wwcExampleMessage: 'Overriden message! This will display over the corresponding default entry below.'
-
 Messages:
   #------------------- Main Messages -------------------
   wwcEnabled: 'Enabled WorldwideChat version %i.'
@@ -87,8 +86,13 @@ Messages:
   wwcConfigSyncTime: 'Automatic user data sync completed in %i nanoseconds.'
   wwcConfigGUIGeneralSettings: 'General Configuration'
   wwcConfigGUIChatSettings: 'Chat Configuration'
+  wwcConfigGUIChatMessagesOverrideSettings: 'Override Default Messages'
+  wwcConfigGUIChatMessagesPossibleOverrides: 'Choose a Message'
   wwcConfigGUITranslatorSettings: 'Translator Configuration'
   wwcConfigGUIEachTranslatorSettings: '%i Configuration'
+  wwcConfigGUIChatMessagesOverrideNewButton: 'Add a New Override'
+  wwcConfigGUIChatMessagesModifyOverride: 'Modify Existing Override'
+  wwcConfigGUIChatMessagesDeadOverride: 'This override is either invalid, or the original message has been removed. You should delete this.'
   wwcConfigGUIQuitButton: 'Exit & Save Changes'
   wwcConfigGUINextPageButton: 'Next Page'
   wwcConfigGUIPreviousPageButton: 'Previous Page'
@@ -99,6 +103,12 @@ Messages:
   wwcConfigGUISyncUserDataButton: 'Change User Data Sync Delay'
   wwcConfigGUISendTranslationChatButton: 'Send Chat Reminder to Active Translator on Login'
   wwcConfigGUIPluginUpdateChatButton: 'Send Chat Reminder for Plugin Updates'
+  wwcConfigGUIMessagesOverrideChatButton: 'Override Default Plugin Messages'
+  wwcConfigGUIChatMessagesOverrideChangeButton: 'Change Existing Text'
+  wwcConfigGUIChatMessagesOverrideDeleteButton: 'Delete Override'
+  wwcConfigGUIMessagesOverrideOriginalLabel: 'Original Message'
+  wwcConfigGUIMessagesAlreadyOverriden: 'You already have an override for this message!'
+  wwcConfigGUIMessagesOverrideCustomLabel: 'New Message'
   wwcConfigGUIToggleButton: 'Toggle %i'
   wwcConfigGUIWatsonButton: 'Watson'
   wwcConfigGUIWatsonAPIKeyButton: 'Change Watson API Key'
@@ -123,6 +133,9 @@ Messages:
   wwcConfigConversationSyncUserDataDelaySuccess: 'User data sync delay set successfully.'
   wwcConfigConversationSendTranslationChatSuccess: 'Active translator chat reminder toggled successfully.'
   wwcConfigConversationPluginUpdateChatSuccess: 'Plugin update chat reminder toggled successfully.'
+  wwcConfigConversationOverrideTextChange: 'Please type a new message for this override, or type 0 to go back. Remember to include any variables starting with percentage signs you see in the original message.'
+  wwcConfigConversationOverrideTextChangeSuccess: 'New message set successfully.'
+  wwcConfigConversationOverrideDeletionSuccess: 'Custom message override has been deleted.'
   wwcConfigConversationConsoleTranslatorFail: 'User %i failed to enable %o.'
   wwcConfigConversationConsoleTranslatorSuccess: 'User %i successfully enabled %o.'
   wwcConfigConversationTranslatorFail: 'Failed to enable %i.'
@@ -169,6 +182,8 @@ Messages:
   wwctGUIMainMenuPlayer: 'Translation Menu of %i'
   wwctGUIMainMenuGlobal: 'Global Translation Menu'
   wwctGUINewTranslationSource: 'Choose a Source Language'
+  wwctGUISourceTranslationSelected: 'You have selected this language.'
+  wwctGUISourceOrTargetTranslationAlreadyActive: 'This language is already active!'
   wwctGUIStopButton: 'Stop Translating'
   wwctGUITranslationButton: 'Start Translating'
   wwctGUIExistingTranslationButton: 'Overwrite Current Translation Session'
@@ -176,10 +191,8 @@ Messages:
   wwctGUIBookButton: 'Toggle Book Translation'
   wwctGUISignButton: 'Toggle Sign Translation'
   wwctGUIItemButton: 'Toggle Item Translation'
-  wwctGUIBackToMainMenuButton: 'Back to Main Translation Menu'
   wwctGUIAutoDetectButton: 'Auto-detect Source Language'
   wwctGUINewTranslationTarget: 'Choose a Target Language'
-  wwctGUIBackToSourceLanguageButton: 'Back to Source Language Menu'
   wwctGUIConversationRateLimit: 'The rate limit per translation is currently %i seconds. Type anything greater than 0 to set a new value, or type 0 to disable the limit. Type anything less than 0 to go back.'
   #------------------- /wwctb Messages ------------------
   wwctbPlayerNotFound: 'Player %i is either not found, or is not an active translator.'
@@ -216,3 +229,5 @@ Messages:
   watsonNotFoundExceptionNotification: 'Unable to translate your input any further.'
   watsonColorCodeWarning: 'Using color codes may give you unpredictable results.'
   wwcWatson117Warning: 'Watson has failed to initialize due to an InaccessibleObjectException. For now, please add --illegal-access=permit to your existing server jar arguments.'
+  #------------------- Other Messages -------------------
+  wwcExampleMessage: 'This is a dummy message, and is meant to be overriden as an example.'

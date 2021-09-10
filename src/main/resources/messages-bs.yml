@@ -1,19 +1,19 @@
 Messages:
-  wwcgAutoTranslateStart: 'Sada prevođenje globalnog chata na %o.'
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'Globalni chat se prevodi na
-    %o.'
+  wwcgAutoTranslateStart: Sada prevođenje globalnog chata na %o.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Globalni chat se prevodi na
+    %o.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Promijenite Amazon pristupni ključ
-  wwcrFail: 'Nije uspjelo ponovno učitati WorldwideChat.'
+  wwcrFail: Nije uspjelo ponovno učitati WorldwideChat.
   wwcConfigGUIUpdateCheckerButton: Promjena odgode provjere ažuriranja
   wwcUpdaterFailedGeneric: Nije moguće provjeriti ažuriranja WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Trenutačno kašnjenje na kontroleru ažuriranja
     je %i sekundi. Upišite sve veće od 10 da biste postavili novu vrijednost ili nešto
     manje od 10 da biste se vratili.
   wwctGUIMainMenuGlobal: Globalni meni prevođenja
-  wwcConfigConversationPluginUpdateChatSuccess: 'Plugin update chat podsjetnik se
-    uspješno uključio.'
-  wwctbOnTarget: 'Prevođenje knjige omogućeno za %i.'
-  wwcsNotATranslator: 'Još nema dostupnih zapisa za %i.'
+  wwcConfigConversationPluginUpdateChatSuccess: Plugin update chat podsjetnik se uspješno
+    uključio.
+  wwctbOnTarget: Prevođenje knjige omogućeno za %i.
+  wwcsNotATranslator: Još nema dostupnih zapisa za %i.
   wwcConfigGUIbStatsButton: Prebaci bStats
   wwctGUINewTranslationSource: Odabir izvornog jezika
   wwcConfigConnectionFailed: Neuspjelo povezivanje na %o. Provjerite jesu li vaše
@@ -22,174 +22,172 @@ Messages:
   wwctGUIMainMenuPlayer: Meni za prevođenje od %i
   wwctGUIBookButton: Prebacivanje prevođenja knjige
   wwcLangDetected: Otkriveni jezik %o.
-  wwcBookTranslateStart: 'Prevođenje ciljne knjige...'
+  wwcBookTranslateStart: Prevođenje ciljne knjige...
   wwcConfigDisabledbStats: Onemogućeno bStats.
-  wwctsOffSender: 'Prevođenje potpisa onemogućeno.'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Globalni chat se prevodi,
-    ali vaš chat se prevodi iz %i na %o.'
+  wwctsOffSender: Prevođenje potpisa onemogućeno.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globalni chat se prevodi,
+    ali vaš chat se prevodi iz %i na %o.
   wwcUpdaterParserFailed: Nije uspjelo analizirati podatke o ažuriranju iz Github-a.
-  wwctAutoTranslateStart: 'Sada prevođenje svih vaših čavrljanja na %o.'
+  wwctAutoTranslateStart: Sada prevođenje svih vaših čavrljanja na %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Trenutni tajni ključ je %i.
     Unesite tajni ključ za Amazon ili upišite 0 da biste se vratili.
-  wwctbOffSender: 'Prevođenje knjige onemogućeno.'
+  wwctbOffSender: Prevođenje knjige onemogućeno.
   wwcConfigGUIAmazonTranslateButton: Amazon Prijevod
-  wwcConfigConversationLangSuccess: 'Jezik dodatka uspješno se promijenio.'
+  wwcConfigConversationLangSuccess: Jezik dodatka uspješno se promijenio.
   wwcsSuccessfulTranslations: 'Uspješni prijevodi: %i'
-  wwctTranslationStoppedOtherPlayer: 'Prevođenje čavrljanja za %i je zaustavljen.'
+  wwctTranslationStoppedOtherPlayer: Prevođenje čavrljanja za %i je zaustavljen.
   wwcConfigConversationTranslationCacheInput: Trenutno ograničenje predmemorije prevođenja
     je %i fraze. Upišite nešto veće od 0 da biste postavili novu vrijednost ili upišite
     0 da biste onemogućili predmemoriju prijevoda. Upišite ništa manje od 0 da biste
     se vratili.
-  wwctbOffTarget: 'Prevođenje knjige onemogućeno za %i.'
+  wwctbOffTarget: Prevođenje knjige onemogućeno za %i.
   wwcConfigGUIGeneralSettings: Opšta konfiguracija
   wwcInvalidLang: Nevažeći jezik u konfiguraciji.yml. Defaulting za en...
-  wwcConfigConversationAmazonTranslateRegionSuccess: 'Amazon regija uspješno postavljen.'
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazon regija uspješno postavljen.
   wwcConfigRateLimitEnabled: Ograničenje globalnog stopa omogućeno je i postavljeno
     na %i sekundi.
-  wwcBadPerms: 'Nemate potrebne dozvole za izvršavanje ove naredbe!'
+  wwcBadPerms: Nemate potrebne dozvole za izvršavanje ove naredbe!
   wwcConfigGUILangButton: Promijeni jezik dodatka
   wwctGUISignButton: Prebacivanje prijevoda potpisa
   wwcUpdaterOutOfDate: WorldwideChat je zastario. Ažurirajte na najnoviju verziju,
     %i.
-  wwcConfigGUIChangesNotSaved: 'Vaše promjene možda neće stupiti na snagu dok ne
-    pokrenete /wwcr ili kliknete na crvenu barijeru u /wwcc.'
+  wwcConfigGUIChangesNotSaved: Vaše promjene možda neće stupiti na snagu dok ne pokrenete
+    /wwcr ili kliknete na crvenu barijeru u /wwcc.
   wwcConfigGUINextPageButton: Sljedeća stranica
   wwctbTranslatePageFail: (Nije uspjelo prevesti ovu stranicu) %i
   wwcConfigInvalidTranslatorSettings: Nevažeća podešavanja prevoditelja! Omogućite
     samo jedan prevoditelj u konfiguraciji.yml.
   wwcConfigGUIQuitButton: Izlaz i spremanje promjena
-  wwctPlayerNotFound: 'Player %nisam pronađen.'
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'Globalni chat se prevodi,
-    ali vaš chat se prevodi na %o.'
+  wwctPlayerNotFound: Player %nisam pronađen.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globalni chat se prevodi,
+    ali vaš chat se prevodi na %o.
   wwcConfigGUIGlobalRateLimit: Promijenite ograničenje globalne stope
-  wwctGUIBackToSourceLanguageButton: Natrag na Izvor Jezik Meni
   wwcConfigGUIAmazonTranslateRegionButton: Promijeni Amazon Region
   wwcConfigConversationLangInput: 'Trenutni jezik dodatka je %i. Molimo unesite važeći
     jezični kod ili upišite 0 da biste otkazali. Važeći jezički kodovi: %o'
-  wwcConfigConversationLangInvalid: 'Nevažeći jezični kod!'
-  wwctTranslationStopped: 'Vaš chat prevod je zaustavljen.'
+  wwcConfigConversationLangInvalid: Nevažeći jezični kod!
+  wwctTranslationStopped: Vaš chat prevod je zaustavljen.
   wwcConfigGUIWatsonAPIKeyButton: Promijenite Watson API ključ
   wwcEnabled: Omogućeno WorldwideChat verzija %i.
-  wwcgLangToLangStart: 'Sada prevođenje globalnog ćaskanja od %i na %o.'
-  wwctbOnSender: 'Omogućen je prijevod knjige. Desnom tipkom miša kliknite dok držite
-    knjigu da biste je prevesti!'
+  wwcgLangToLangStart: Sada prevođenje globalnog ćaskanja od %i na %o.
+  wwctbOnSender: Omogućen je prijevod knjige. Desnom tipkom miša kliknite dok držite
+    knjigu da biste je prevesti!
   wwcListenersInitialized: Inicijalizirani slušatelji.
   wwcUserDataCorrupted: Pronađeno i premjestiti %i oštećene ili stare korisničke podatkovne
     datoteke. Oni će biti izbrisani na sljedećem ponovnom učitanju.
   wwcConfigGUIPluginUpdateChatButton: Pošalji podsjetnik za ažuriranja dodataka
-  wwcConfigConversationSendTranslationChatSuccess: 'Aktivni prevoditelj chat podsjetnik
-    se uspješno uključio.'
-  wwctsOffTarget: 'Prevođenje potpisivanja onemogućen za %i.'
+  wwcConfigConversationSendTranslationChatSuccess: Aktivni prevoditelj chat podsjetnik
+    se uspješno uključio.
+  wwctsOffTarget: Prevođenje potpisivanja onemogućen za %i.
   wwcUpdaterConnectionFailed: Nije moguće provjeriti ima li najnovijih ažuriranja
     na Githubu.
-  watsonNotFoundExceptionNotification: 'Nije moguće prevesti svoj unos dalje.'
+  watsonNotFoundExceptionNotification: Nije moguće prevesti svoj unos dalje.
   wwcConfigConversationWatsonAPIKeyInput: Trenutni API ključ je %i. Unesite API ključ
     za Watson ili upišite 0 da biste se vratili.
   wwctGUIStopButton: Zaustavi prevođenje
-  wwcgTranslationStopped: 'Globalni prevod čavrljanja je zaustavljen.'
-  wwctAutoTranslateStartOtherPlayer: 'Sada prevođenje ćaska %i na %o.'
+  wwcgTranslationStopped: Globalni prevod čavrljanja je zaustavljen.
+  wwctAutoTranslateStartOtherPlayer: Sada prevođenje ćaska %i na %o.
   wwcUpdaterFutureDate: Ova instanca WorldwideChat ima veću verziju od najnovije javne.
-  wwcConfigConversationPrefixSuccess: 'Prefiks je uspješno promijenjen.'
+  wwcConfigConversationPrefixSuccess: Prefiks je uspješno promijenjen.
   wwcConfigGUIGoogleTranslateAPIKeyButton: Promjena ključa API-ja Google prevoditelja
   wwcSignDeletedOrTooLong: 'Ciljni znak je ili izbrisan ili je prevod bio predugačak.
     Prijevod:'
-  wwctsOnTarget: 'Potpisni prijevod omogućen za %i.'
+  wwctsOnTarget: Potpisni prijevod omogućen za %i.
   wwcConfigCacheDisabled: Prevodilac keš onemogućen.
   wwcConfigConversationWatsonURLInput: Trenutni URL je %i. Unesite URL servisa za
     Watson ili upišite 0 da biste se vratili.
-  wwcOnJoinTranslationNotificationSourceLang: 'Vaš chat se prevodi iz %i na %o.'
-  wwcBookDone: 'Knjiga uspješno prevedena.'
-  wwctsOnSender: 'Omogućen je prijevod potpisa. Desnom tipkom miša kliknite znak
-    da biste ga prevesti!'
-  watsonColorCodeWarning: 'Upotreba kodova boja može vam dati nepredvidljive rezultate.'
+  wwcOnJoinTranslationNotificationSourceLang: Vaš chat se prevodi iz %i na %o.
+  wwcBookDone: Knjiga uspješno prevedena.
+  wwctsOnSender: Omogućen je prijevod potpisa. Desnom tipkom miša kliknite znak da
+    biste ga prevesti!
+  watsonColorCodeWarning: Upotreba kodova boja može vam dati nepredvidljive rezultate.
   wwctGUITranslationButton: Započnite prevođenje
   wwctGUIAutoDetectButton: Automatsko otkrivanje izvornog jezika
   wwcUpdaterUpToDate: WorldwideChat je ažuriran!
   wwcConfigConversationAmazonTranslateRegionInput: Trenutna regija je %i. Molimo unesite
     regiju za Amazon ili upišite 0 da biste se vratili.
-  wwcNoConsole: 'Ovu naredbu može pokrenuti samo igrač.'
+  wwcNoConsole: Ovu naredbu može pokrenuti samo igrač.
   wwcInitializationFail: Nije uspjelo inicijalizirati WorldwideChat.
-  wwcrSuccess: 'Uspješno ponovno učitava WorldwideChat.'
-  wwcPlayerNotFound: 'Player %nisam pronađen.'
-  wwcUpdaterOutOfDateChat: 'WorldwideChat je zastario. Ažurirajte na najnoviju verziju.'
-  wwcConfigConversationRateLimitSuccess: 'Ograničenje stopa uspješno postavljen.'
-  wwcConfigConversationWatsonURLSuccess: 'Watson URL je uspješno postavljen.'
-  wwctbPlayerNotFound: 'Player %i nije pronađen ili nije aktivan prevoditelj.'
-  wwcConfigConversationTranslationCacheSuccess: 'Ograničenje predmemorije prijevoda
-    uspješno postavljen.'
-  wwctInvalidArgs: 'Nevažeći argumenti pod uvjetom!'
+  wwcrSuccess: Uspješno ponovno učitava WorldwideChat.
+  wwcPlayerNotFound: Player %nisam pronađen.
+  wwcUpdaterOutOfDateChat: WorldwideChat je zastario. Ažurirajte na najnoviju verziju.
+  wwcConfigConversationRateLimitSuccess: Ograničenje stopa uspješno postavljen.
+  wwcConfigConversationWatsonURLSuccess: Watson URL je uspješno postavljen.
+  wwctbPlayerNotFound: Player %i nije pronađen ili nije aktivan prevoditelj.
+  wwcConfigConversationTranslationCacheSuccess: Ograničenje predmemorije prijevoda
+    uspješno postavljen.
+  wwctInvalidArgs: Nevažeći argumenti pod uvjetom!
   wwcConfigGUIPrefixButton: Promjena prefiksa dodatka
-  wwctSameLangError: 'Ne možete prevesti na isti jezik!'
+  wwctSameLangError: Ne možete prevesti na isti jezik!
   wwctGUINewTranslationTarget: Odabir ciljnog jezika
-  wwctLangToLangStartOtherPlayer: 'Sada prevođenje ćaska %o od %i do %e.'
+  wwctLangToLangStartOtherPlayer: Sada prevođenje ćaska %o od %i do %e.
   wwcConfigConnectionSuccess: Uspješno povezan na %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Je li aktivan prevoditelj: %i'
-  wwctLangToLangStart: 'Sada prevođenje svih vaših čavrljanja od %i na %o.'
+  wwctLangToLangStart: Sada prevođenje svih vaših čavrljanja od %i na %o.
   wwcConfigConversationPrefixInput: Trenutni prefiks je %i. Molimo upišite novi ili
     upišite 0 da biste se vratili.
   wwcConfigGUIPreviousPageButton: Prethodna stranica
   wwcConfigGUITranslatorCacheButton: Promjena ograničenja predmemorije prijevoda
-  wwcConfigConversationbStatsSuccess: 'Uspješno toggled bStats.'
-  wwcSignDone: 'Potpis uspješno preveden.'
+  wwcConfigConversationbStatsSuccess: Uspješno toggled bStats.
+  wwcSignDone: Potpis uspješno preveden.
   wwcConfigInvalidPrefixSettings: Nije uspjelo pročitati vaš prefiks. Upotreba zadanog...
   wwcConfigRateLimitInvalid: Loše ograničenje stopa postavljena u config.yml. Defaulting
     na 0 sekundi...
-  wwcSignTranslateStart: 'Prevođenje ciljnog znaka...'
+  wwcSignTranslateStart: Prevođenje ciljnog znaka...
   wwcConfigGUIChatSettings: Konfiguracija chat
   wwcConfigGUIWatsonURLButton: Promijenite URL usluge Watson
-  wwcConfigConversationUpdateCheckerSuccess: 'Uspješno postavljena odgoda za provjeru
-    ažuriranja.'
+  wwcConfigConversationUpdateCheckerSuccess: Uspješno postavljena odgoda za provjeru
+    ažuriranja.
   wwcUnsupportedVersion: 'Pokrećete nepodržanu verziju programa Bukkit, Spigot ili
     Paper. Podržane verzije:'
-  wwctGUIBackToMainMenuButton: Nazad na glavni meni prevođenja
-  wwcGlobalOnJoinTranslationNotificationSourceLang: 'Globalni chat se prevodi iz
-    %i na %o.'
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Globalni chat se prevodi iz %i
+    na %o.
   wwcConfigGUITranslatorSettings: Konfiguracija prevoditelja
   wwcConfigConversationGoogleTranslateAPIKeyInput: Trenutni API ključ je %i. Unesite
     API ključ za Google Translate ili upišite 0 da biste se vratili.
   wwcConfigConversationRateLimitInput: Trenutni globalni limit stopa po prijevodu
     je %i sekundi. Upišite sve veće od 0 da biste postavili novu vrijednost ili upišite
     0 da biste onemogućili ograničenje. Upišite ništa manje od 0 da biste se vratili.
-  wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Google Translate API ključ
-    uspješno postavljen.'
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API ključ uspješno
+    postavljen.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Promijeni Amazon tajni ključ
-  wwcVersion: 'WorldwideChat, verzija'
+  wwcVersion: WorldwideChat, verzija
   wwcsAttemptedTranslations: 'Pokušaj prijevoda: %i'
-  wwcConfigConversationAmazonTranslateSecretKeySuccess: 'Amazon tajni ključ postavljen
-    uspješno.'
-  wwcConfigConversationWatsonAPIKeySuccess: 'Watson API ključ uspješno postavljen.'
-  wwcRateLimit: 'Vaši prijevodi su ograničeni. Molimo pričekajte drugo %i sekundi.'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon tajni ključ postavljen
+    uspješno.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API ključ uspješno postavljen.
+  wwcRateLimit: Vaši prijevodi su ograničeni. Molimo pričekajte drugo %i sekundi.
   wwcConfigCacheEnabled: Predmemorija prevoditelja omogućena je i postavljena na ograničenje
     %i.
   wwctGUIExistingTranslationButton: Prebrisati trenutnu sesiju prevođenja
-  wwcOnJoinTranslationNotificationNoSourceLang: 'Vaš chat se prevodi na %o.'
+  wwcOnJoinTranslationNotificationNoSourceLang: Vaš chat se prevodi na %o.
   wwcUserDataReloaded: Učitao sve spremljene korisničke podatke.
   wwcConfigGUISendTranslationChatButton: Pošalji podsjetnik za chat aktivnom prevoditelju
     na prijavi
   wwcsLastTranslationTime: 'Posljednje (uspješno) vrijeme prevođenja: %i'
-  wwctbNotATranslator: 'Niste aktivni prevoditelj! Provjerite jeste li to postavili
-    s /wwct.'
+  wwctbNotATranslator: Niste aktivni prevoditelj! Provjerite jeste li to postavili
+    s /wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Trenutni pristupni ključ je
     %i. Unesite pristupni ključ za Amazon ili upišite 0 da biste se vratili.
-  wwcConfigConversationAmazonTranslateAccessKeySuccess: 'Amazon pristupni ključ uspješno
-    postavljen.'
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon pristupni ključ uspješno
+    postavljen.
   wwcConfigBadUpdateDelay: Nevažeće kašnjenje updatera postavljeno u config.yml. Defaulting
     na 86400 sekundi...
-  wwctrlRateLimitOffSender: 'Isključio ograničenje stope.'
-  wwctrlRateLimitAlreadyOffTarget: 'Ograničenje stope od %i je već onemogućeno.'
-  wwctrlPlayerNotFound: 'Player %i nije pronađen ili nije aktivan prevoditelj.'
-  wwctrlRateLimitSetSender: 'Postavite ograničenje brzine na %i sekundi.'
-  wwctrlRateLimitOffTarget: 'Isključio ograničenje stope od %i.'
-  wwctrlRateLimitSetTarget: 'Postavite ograničenje brzine od %i na %o sekundi.'
-  wwctrlNotATranslator: 'Niste aktivni prevoditelj! Provjerite jeste li to postavili
-    s /wwct.'
-  wwctrlRateLimitAlreadyOffSender: 'Ograničenje stope već je onemogućeno.'
+  wwctrlRateLimitOffSender: Isključio ograničenje stope.
+  wwctrlRateLimitAlreadyOffTarget: Ograničenje stope od %i je već onemogućeno.
+  wwctrlPlayerNotFound: Player %i nije pronađen ili nije aktivan prevoditelj.
+  wwctrlRateLimitSetSender: Postavite ograničenje brzine na %i sekundi.
+  wwctrlRateLimitOffTarget: Isključio ograničenje stope od %i.
+  wwctrlRateLimitSetTarget: Postavite ograničenje brzine od %i na %o sekundi.
+  wwctrlNotATranslator: Niste aktivni prevoditelj! Provjerite jeste li to postavili
+    s /wwct.
+  wwctrlRateLimitAlreadyOffSender: Ograničenje stope već je onemogućeno.
   wwctGUIRateButton: Postavite ograničenje brzine
   wwctGUIConversationRateLimit: Ograničenje brzine po prijevodu je trenutno %i sekundi.
     Upišite sve veće od 0 da biste postavili novu vrijednost ili upišite 0 da biste
     onemogućili ograničenje. Upišite ništa manje od 0 da biste se vratili.
-  wwctGUITargetPlayerNull: 'Ciljni igrač je isključen sa servera.'
+  wwctGUITargetPlayerNull: Ciljni igrač je isključen sa servera.
   wwcConfigConversationSyncUserDataDelayInput: Trenutačno kašnjenje po sinkronizaciji
     korisničkih podataka je %i sekundi. Upišite sve veće od 10 da biste postavili
     novu vrijednost ili nešto manje od 10 da biste se vratili.
@@ -198,50 +196,47 @@ Messages:
     %i nanosekundi.
   wwcConfigSyncDelayEnabled: Odgoda po sinkronizaciji korisničkih podataka postavljena
     na %i sekundi.
-  wwcConfigConversationSyncUserDataDelaySuccess: 'Odgoda sinkronizacije korisničkih
-    podataka uspješno postavljena.'
+  wwcConfigConversationSyncUserDataDelaySuccess: Odgoda sinkronizacije korisničkih
+    podataka uspješno postavljena.
   wwcConfigSyncDelayInvalid: Nevažeće kašnjenje sinkronizacije korisničkih podataka
     postavljeno u config.yml. Defaulting na 7200 sekundi...
   wwcConfigCacheInvalid: Prevoditelj keš veličina nevažeći. Defaulting do 10...
-  wwcInventoryErrorPlayer: 'Greška otkrivena sa vašim GUI. Zapisnik je poslan na
-    konzolu.'
+  wwcInventoryErrorPlayer: Greška otkrivena sa vašim GUI. Zapisnik je poslan na konzolu.
   wwcInventoryError: Greška otkrivena pomoću GUI korisnika %i. Molimo prijavite ovaj
     problem razvojnom programeru.
-  wwcConfigConversationTranslatorFail: 'Nije uspjelo omogućiti %i.'
+  wwcConfigConversationTranslatorFail: Nije uspjelo omogućiti %i.
   wwcConfigConversationConsoleTranslatorSuccess: Korisnik %i je uspješno omogućio
     %o.
-  wwcConfigConversationTranslatorSuccess: 'Uspješno omogućeno %i.'
+  wwcConfigConversationTranslatorSuccess: Uspješno omogućeno %i.
   wwcConfigConversationConsoleTranslatorFail: Korisnik %i nije uspio omogućiti %o.
   wwcWatson117Warning: Watson nije uspio inicijalizirati zbog nepristupačnoObjecTexception.
     Za sada dodajte —illegal-access=dozvolu postojećim argumentima poslužitelja.
   wwcDeluxeChatIncompatible: Ovaj dodatak možda neće ispravno funkcionirati s DeluxeChat.
-  wwcSignTranslationFail: 'Nije moguće prevesti jednu ili više redaka na ciljnom
-    znaku.'
-  wwcBookTranslationFail: 'Nije moguće prevesti jednu ili više stranica u ciljnoj
-    knjizi.'
-  wwctiOffTarget: 'Prevođenje stavke onemogućeno za %i.'
-  wwctiOffSender: 'Prevođenje stavke onemogućeno.'
-  wwcItemTranslateTitleStock: 'Nije moguće prevesti zadana imena stavki.'
-  wwcItemTranslateLoreFail: 'Nije uspjelo prevođenje predmeta.'
-  wwcItemTranslateTitleFail: 'Naziv stavke nije uspjelo prevesti.'
+  wwcSignTranslationFail: Nije moguće prevesti jednu ili više redaka na ciljnom znaku.
+  wwcBookTranslationFail: Nije moguće prevesti jednu ili više stranica u ciljnoj knjizi.
+  wwctiOffTarget: Prevođenje stavke onemogućeno za %i.
+  wwctiOffSender: Prevođenje stavke onemogućeno.
+  wwcItemTranslateTitleStock: Nije moguće prevesti zadana imena stavki.
+  wwcItemTranslateLoreFail: Nije uspjelo prevođenje predmeta.
+  wwcItemTranslateTitleFail: Naziv stavke nije uspjelo prevesti.
   wwctGUIItemButton: Prevođenje stavke Prebacivanje
-  wwcItemTranslateTitleDone: 'Prevedeno naslov stavke uspješno.'
+  wwcItemTranslateTitleDone: Prevedeno naslov stavke uspješno.
   wwcGUITempItem: Prikaz stavke
-  wwcItemTranslateStart: 'Prevođenje ciljne stavke...'
-  wwcSignTranslationFailCatastrophic: 'Prevođenje ciljnog znaka nije uspjelo.'
-  wwcItemTranslationFailCatastrophic: 'Nije uspjelo prevođenje ciljne stavke.'
+  wwcItemTranslateStart: Prevođenje ciljne stavke...
+  wwcSignTranslationFailCatastrophic: Prevođenje ciljnog znaka nije uspjelo.
+  wwcItemTranslationFailCatastrophic: Nije uspjelo prevođenje ciljne stavke.
   wwcBookTranslateTitleSuccess: 'Prevedeni naslov knjige: %i'
-  wwctiOnSender: 'Omogućen je prijevod stavke. Desnom tipkom miša kliknite stavku
-    u glavnoj ruci da biste je prevesti!'
-  wwcItemTranslateLoreStart: 'Prevođenje predavanja ciljne stavke...'
-  wwcItemTranslateLoreDone: 'Prevedena stavka nauka uspješno.'
-  wwctiOnTarget: 'Prevođenje stavke omogućeno za %i.'
-  wwcBookTranslationFailCatastrophic: 'Nije uspjelo prevesti ciljnu knjigu.'
-  wwcBookTranslateTitleFail: 'Nije uspjelo prevesti naslov knjige.'
-  wwcChatTranslationFail: 'Nije uspjelo prevesti poruku.'
-  wwcInvalidTranslator: 'Nevažeća podešavanja prevoditelja. Molimo vas da to popravite
-    u svoj config.yml ili s /wwcc koristiti ovaj dodatak.'
-  wwcNotDoneLoading: 'WorldwideChat još uvijek inicijalizira. Pokušajte ponovo uskoro.'
+  wwctiOnSender: Omogućen je prijevod stavke. Desnom tipkom miša kliknite stavku u
+    glavnoj ruci da biste je prevesti!
+  wwcItemTranslateLoreStart: Prevođenje predavanja ciljne stavke...
+  wwcItemTranslateLoreDone: Prevedena stavka nauka uspješno.
+  wwctiOnTarget: Prevođenje stavke omogućeno za %i.
+  wwcBookTranslationFailCatastrophic: Nije uspjelo prevesti ciljnu knjigu.
+  wwcBookTranslateTitleFail: Nije uspjelo prevesti naslov knjige.
+  wwcChatTranslationFail: Nije uspjelo prevesti poruku.
+  wwcInvalidTranslator: Nevažeća podešavanja prevoditelja. Molimo vas da to popravite
+    u svoj config.yml ili s /wwcc koristiti ovaj dodatak.
+  wwcNotDoneLoading: WorldwideChat još uvijek inicijalizira. Pokušajte ponovo uskoro.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguracija'
   wwcConfigGUIToggleButton: Prebaci %i
   wwcConfigGUIWatsonButton: Votsone
@@ -252,8 +247,8 @@ Messages:
   wwcTranslatorErrorThresholdReached: Prag greške postignut. Ovaj dodatak će se sada
     ponovo učitati i onemogućiti sve prevodioce.
   wwcConfigErrorLimitEnabled: Ograničenje greške prevoditelja postavljeno na %i.
-  wwcTranslatorError: 'Tijekom pokušaja prevođenja došlo je do problema. Molim vas
-    pokušajte ponovo.'
+  wwcTranslatorError: Tijekom pokušaja prevođenja došlo je do problema. Molim vas
+    pokušajte ponovo.
   wwcTranslatorErrorConsole: Do problema se pojavio dok je korisnik %i pokušavao prevođenje.
     Sada štampanje stacktrace.
   wwcConfigErrorLimitInvalid: Nevažeća granica greške prevoditelja postavljena u config.yml.
@@ -268,3 +263,24 @@ Messages:
   wwcsTitle: Snimanje od %i
   wwctInvalidOutputLangCode: 'Nevažeći izlazni jezični kod pod uvjetom! Važeći lang
     kodovi: %o'
+  wwctGUISourceTranslationSelected: Odabrali ste ovaj jezik.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Izbriši nadjačavanje
+  wwcConfigConversationOverrideTextChange: Molimo upišite novu poruku za ovu nadjačavanje
+    ili upišite 0 da biste se vratili. Ne zaboravite uključiti sve varijable počevši
+    s postotnim znakovima koje vidite u izvornoj poruci.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Ovaj jezik je već aktivan!
+  wwcConfigGUIMessagesOverrideChatButton: Nadjačati zadane plugin poruke
+  wwcConfigGUIChatMessagesPossibleOverrides: Odabir poruke
+  wwcConfigGUIChatMessagesModifyOverride: Izmjena postojećeg premošnjavanja
+  wwcConfigConversationOverrideDeletionSuccess: Prilagođeno premošćenje poruke je
+    izbrisano.
+  wwcConfigGUIChatMessagesOverrideSettings: Nadjačati zadane poruke
+  wwcConfigGUIChatMessagesDeadOverride: Ovo nadjačavanje je nevažeće ili je izvorna
+    poruka uklonjena. Trebalo bi da izbrišete ovo.
+  wwcConfigGUIMessagesAlreadyOverriden: Već imate premošćenje za ovu poruku!
+  wwcConfigGUIChatMessagesOverrideNewButton: Dodavanje novog premoštavanja
+  wwcConfigGUIMessagesOverrideCustomLabel: Nova poruka
+  wwcConfigConversationOverrideTextChangeSuccess: Nova poruka je uspješno postavljena.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Promjena postojećeg teksta
+  wwcExampleMessage: Ovo je lažna poruka i trebala bi biti nadjačana kao primjer.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Izvorna poruka

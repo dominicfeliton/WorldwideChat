@@ -85,7 +85,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		quitMeta.setDisplayName(ChatColor.RED
 				+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
 		quitButton.setItemMeta(quitMeta);
-		WWCReload rel = new WWCReload(player, null, null, null);
+		WWCReload rel = new WWCReload(player, null, null, new String[0]);
 		contents.set(2, 4, ClickableItem.of(quitButton, e -> {
 			main.removePlayerUsingConfigurationGUI(player);
 			player.closeInventory();
@@ -100,7 +100,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		amazonTranslateInventory(player, contents);
 	}
 
-	public void watsonInventory(Player player, InventoryContents contents) {
+	private void watsonInventory(Player player, InventoryContents contents) {
 		/* Option One: Watson */
 		ItemStack translatorButton;
 		if (main.getTranslatorName().equals("Watson")) {
@@ -117,7 +117,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		}));
 	}
 
-	public void googleTranslateInventory(Player player, InventoryContents contents) {
+	private void googleTranslateInventory(Player player, InventoryContents contents) {
 		/* Option Two: Google Translate */
 		ItemStack translatorButton;
 		if (main.getTranslatorName().equals("Google Translate")) {
@@ -134,7 +134,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		}));
 	}
 
-	public void amazonTranslateInventory(Player player, InventoryContents contents) {
+	private void amazonTranslateInventory(Player player, InventoryContents contents) {
 		/* Option Three: Amazon Translate */
 		ItemStack translatorButton;
 		if (main.getTranslatorName().equals("Amazon Translate")) {

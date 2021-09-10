@@ -66,17 +66,14 @@ public class WorldwideChat extends JavaPlugin {
 	private BukkitAudiences adventure;
 	private ConfigurationHandler configurationManager;
 
-	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>(); // Way																												// write
-	private List<PlayerRecord> playerRecords = new CopyOnWriteArrayList<PlayerRecord>(); // Way more reads, occasional																			// write
-	private List<ActiveTranslator> activeTranslators = Collections.synchronizedList(new ArrayList<ActiveTranslator>()); // Many																					// writes
-	private List<CachedTranslation> cache = Collections.synchronizedList(new ArrayList<CachedTranslation>()); // Many																				// writes
-	private List<Player> playersUsingConfigurationGUI = Collections.synchronizedList(new ArrayList<Player>()); // Many																				// writes
-
-	private String pluginVersion = this.getDescription().getVersion();
+	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>();
+	private List<PlayerRecord> playerRecords = new CopyOnWriteArrayList<PlayerRecord>();
+	private List<ActiveTranslator> activeTranslators = Collections.synchronizedList(new ArrayList<ActiveTranslator>());
+	private List<CachedTranslation> cache = Collections.synchronizedList(new ArrayList<CachedTranslation>());
+	private List<Player> playersUsingConfigurationGUI = Collections.synchronizedList(new ArrayList<Player>());
 
 	private int rateLimit = 0;
 	private int bStatsID = 10562;
-	private String currentMessagesConfigVersion = "8302021-1"; //This is just MM-DD-YYYY-whatever
 	private int updateCheckerDelay = 86400;
 	private int syncUserDataDelay = 7200;
 	private int asyncTasksTimeoutSeconds = 7;
@@ -90,6 +87,8 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean debugMode = false;
 	
 	private String pluginLang = "en";
+	private String pluginVersion = this.getDescription().getVersion();
+	private String currentMessagesConfigVersion = "8302021-1"; //This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	/* Default constructor */
@@ -211,7 +210,7 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		return workers;
 	}
-
+	
 	/* Init all commands */
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		if (command.getName().equalsIgnoreCase("wwc")) {

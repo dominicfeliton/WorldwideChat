@@ -1,7 +1,5 @@
 package com.expl0itz.worldwidechat.conversations.configuration;
 
-import java.io.IOException;
-
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -32,18 +30,14 @@ public class TranslatorSettingsWatsonApiKeyConversation extends StringPrompt {
 		if (!input.equals("0")) {
 			main.getConfigManager().getMainConfig().set("Translator.watsonAPIKey", input);
 			main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", false);
-			try {
-				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-				main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-				final TextComponent successfulChange = Component.text()
-						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcConfigConversationWatsonAPIKeySuccess"))
-								.color(NamedTextColor.GREEN))
-						.build();
-				CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			main.getConfigManager().saveMainConfig(true);
+			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcConfigConversationWatsonAPIKeySuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
 		}
 		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson")
 				.open((Player) context.getForWhom());

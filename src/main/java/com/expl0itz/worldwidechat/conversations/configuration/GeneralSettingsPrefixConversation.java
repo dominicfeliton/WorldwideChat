@@ -1,7 +1,5 @@
 package com.expl0itz.worldwidechat.conversations.configuration;
 
-import java.io.IOException;
-
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -34,18 +32,14 @@ public class GeneralSettingsPrefixConversation extends StringPrompt {
 		if (!input.equals("0")) {
 			main.setPrefixName(input);
 			main.getConfigManager().getMainConfig().set("General.prefixName", input);
-			try {
-				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-				main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-				final TextComponent successfulChange = Component.text()
-						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcConfigConversationPrefixSuccess"))
-								.color(NamedTextColor.GREEN))
-						.build();
-				CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			main.getConfigManager().saveMainConfig(true);
+			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcConfigConversationPrefixSuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
 		}
 		/* Re-open ConfigurationInventoryGUI */
 		ConfigurationGeneralSettingsGUI.generalSettings.open((Player) context.getForWhom());

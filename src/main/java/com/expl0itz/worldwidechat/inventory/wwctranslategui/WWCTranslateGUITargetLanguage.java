@@ -32,7 +32,7 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 
 	private String selectedSourceLanguage = "";
 	private String targetPlayerUUID = "";
-
+	
 	public WWCTranslateGUITargetLanguage(String source, String targetPlayerUUID) {
 		selectedSourceLanguage = source;
 		this.targetPlayerUUID = targetPlayerUUID;
@@ -60,13 +60,15 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 			for (int i = 0; i < main.getSupportedTranslatorLanguages().size(); i++) {
 				ItemStack currentLang = new ItemStack(Material.TARGET);
 				ItemMeta currentLangMeta = currentLang.getItemMeta();
+				
+				ArrayList<String> lore = new ArrayList<>();
 				/* Add Glow Effect */
 				if (currTranslator.getOutLangCode().equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
 					EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
 					currentLangMeta.addEnchant(glow, 1, true);
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				currentLangMeta.setDisplayName(main.getSupportedTranslatorLanguages().get(i).getLangName());
-				ArrayList<String> lore = new ArrayList<>();
 				if (!main.getSupportedTranslatorLanguages().get(i).getNativeLangName().equals("")) {
 					lore.add(main.getSupportedTranslatorLanguages().get(i).getNativeLangName());
 				}
@@ -92,16 +94,6 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 			pagination.setItemsPerPage(45);
 			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
 
-			/* Deep Bottom Left Option: Back to source translation menu */
-			ItemStack stopButton = new ItemStack(Material.BARRIER);
-			ItemMeta stopMeta = stopButton.getItemMeta();
-			stopMeta.setDisplayName(ChatColor.RED + CommonDefinitions.getMessage("wwctGUIBackToSourceLanguageButton"));
-			stopButton.setItemMeta(stopMeta);
-			contents.set(5, 0, ClickableItem.of(stopButton, e -> {
-				WWCTranslateGUISourceLanguage.getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID)
-						.open(player);
-			}));
-
 			/* Bottom Left Option: Previous Page */
 			ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
 			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
@@ -113,6 +105,10 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 						ClickableItem.of(previousPageButton,
 								e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player,
 										pagination.previous().getPage())));
+			} else {
+				contents.set(5, 2,
+						ClickableItem.of(previousPageButton,
+								e -> WWCTranslateGUISourceLanguage.getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player)));
 			}
 
 			/* Bottom Right Option: Next Page */

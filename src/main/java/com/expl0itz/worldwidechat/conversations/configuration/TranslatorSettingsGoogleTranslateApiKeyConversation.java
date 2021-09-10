@@ -1,7 +1,5 @@
 package com.expl0itz.worldwidechat.conversations.configuration;
 
-import java.io.IOException;
-
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -33,18 +31,14 @@ public class TranslatorSettingsGoogleTranslateApiKeyConversation extends StringP
 			main.getConfigManager().getMainConfig().set("Translator.googleTranslateAPIKey", input);
 			// Disable google translate so the user manually enables
 			main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate", false);
-			try {
-				main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-				final TextComponent successfulChange = Component.text()
-						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcConfigConversationGoogleTranslateAPIKeySuccess"))
-								.color(NamedTextColor.GREEN))
-						.build();
-				CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcConfigConversationGoogleTranslateAPIKeySuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
+			main.getConfigManager().saveMainConfig(true);
 		}
 		/* Re-open GoogleTranslateInventoryGUI */
 		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Google Translate")

@@ -1,7 +1,5 @@
 package com.expl0itz.worldwidechat.inventory.configuration;
 
-import java.io.IOException;
-
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.conversations.ConversationFactory;
@@ -186,7 +184,7 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 
 	}
 
-	public void translateStatusButton(Player player, InventoryContents contents) {
+	private void translateStatusButton(Player player, InventoryContents contents) {
 		ItemStack translatorStatusButton;
 		if (main.getTranslatorName().equals(translatorName)) {
 			translatorStatusButton = new ItemStack(Material.EMERALD_BLOCK);
@@ -282,36 +280,21 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 											main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate",
 													false);
 										}
-										try {
-											main.getConfigManager().getMainConfig()
-													.save(main.getConfigManager().getConfigFile());
-										} catch (IOException e1) {
-											e1.printStackTrace();
-											this.cancel();
-											return;
-										}
+										
+										// Save config
+										main.getConfigManager().saveMainConfig(true);
 
-										// Send successful change message
-										new BukkitRunnable() {
-											@Override
-											public void run() {
-												final TextComponent successfulChange = Component.text()
-														.append(Component.text().content(CommonDefinitions.getMessage("wwcConfigConversationTranslatorSuccess", new String[] {translatorName}))
-																.color(NamedTextColor.GREEN))
-														.build();
-												CommonDefinitions.sendMessage(player, successfulChange);
-												main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigConversationConsoleTranslatorSuccess", new String[] {player.getName(), translatorName}));
-
-												// Reload the plugin
-												new BukkitRunnable() {
-													@Override
-													public void run() {
-														WWCReload rel = new WWCReload(player, null, null, null);
-														rel.processCommand();
-													}
-												}.runTask(main);
-											}
-										}.runTaskAsynchronously(main);
+										// Send successful change messsage
+										final TextComponent successfulChange = Component.text()
+												.append(Component.text().content(CommonDefinitions.getMessage("wwcConfigConversationTranslatorSuccess", new String[] {translatorName}))
+														.color(NamedTextColor.GREEN))
+												.build();
+										CommonDefinitions.sendMessage(player, successfulChange);
+										main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigConversationConsoleTranslatorSuccess", new String[] {player.getName(), translatorName}));
+										
+										// Reload the plugin
+										WWCReload rel = new WWCReload(player, null, null, new String[0]);
+										rel.processCommand();
 									}
 								}.runTask(main);
 							}

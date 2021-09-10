@@ -23,12 +23,12 @@
         <dependency>
             <groupId>com.ibm.watson</groupId>
             <artifactId>ibm-watson</artifactId>
-            <version>9.2.1</version>
+            <version>9.2.2</version>
         </dependency>
         <dependency>
             <groupId>com.ibm.cloud</groupId>
             <artifactId>sdk-core</artifactId>
-            <version>9.12.1</version>
+            <version>9.13.0</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -38,27 +38,27 @@
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-text-serializer-gson</artifactId>
-            <version>4.8.1</version>
+            <version>4.9.1</version>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-api</artifactId>
-            <version>4.8.1</version>
+            <version>4.9.1</version>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-nbt</artifactId>
-            <version>4.8.1</version>
+            <version>4.9.1</version>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-key</artifactId>
-            <version>4.8.1</version>
+            <version>4.9.1</version>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-text-serializer-gson-legacy-impl</artifactId>
-            <version>4.8.1</version>
+            <version>4.9.1</version>
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
@@ -75,13 +75,11 @@
             <artifactId>adventure-platform-common</artifactId>
             <version>4.0.0-SNAPSHOT</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/net.kyori/examination-api -->
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>examination-api</artifactId>
-            <version>1.1.0</version>
+            <version>1.3.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -90,13 +88,17 @@
         <dependency>
             <groupId>com.google.cloud</groupId>
             <artifactId>google-cloud-translate</artifactId>
-            <version>2.0.3</version>
+            <version>2.1.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-translate -->
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-translate</artifactId>
-            <version>1.12.52</version>
+            <version>1.12.64</version>
+        </dependency>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-s3</artifactId>
+            <version>1.12.64</version>
         </dependency>
         <dependency>
             <groupId>org.jsoup</groupId>
@@ -125,6 +127,7 @@
             <artifactId>maven-artifact</artifactId>
             <version>3.6.3</version>
         </dependency>
+        
     </dependencies>
 
   <repositories>
@@ -132,18 +135,6 @@
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-        </repository>
-        <repository>
-            <id>papermc</id>
-            <url>https://papermc.io/repo/repository/maven-public</url>
-        </repository>
-        <repository>
-            <id>CodeMC</id>
-            <url>https://repo.codemc.org/repository/maven-public</url>
-        </repository>
-        <repository>
-            <id>aikar</id>
-            <url>https://repo.aikar.co/content/groups/aikar/</url>
         </repository>
     </repositories>
 
@@ -178,6 +169,7 @@
           <artifactId>maven-shade-plugin</artifactId>
           <version>3.2.4</version>
           <configuration>
+              <minimizeJar>true</minimizeJar>
                <createDependencyReducedPom>false</createDependencyReducedPom>
                     <artifactSet>
                         <includes>
@@ -190,6 +182,7 @@
                             <include>com.ibm.watson:discovery</include>
                             <include>com.ibm.watson:language-translator</include>
                             <include>com.squareup.okhttp3:*</include>
+                            <include>com.google.guava:guava</include>
                             <include>com.google.code.gson:*</include>
                             <include>com.google.cloud:google-cloud-core</include>
                             <include>com.google.cloud:google-cloud-core-http</include>
@@ -200,14 +193,11 @@
                             <include>org.threeten:threetenbp</include>
                             <include>io.opencensus:opencensus*</include>
                             <include>io.grpc:*</include>
-                            <include>com.fasterxml.jackson.core:jackson-core</include>
                             <include>com.ibm.watson:natural-language-classifier</include>
                             <include>com.ibm.watson:natural-language-understanding</include>
                             <include>org.apache.tomcat:tomcat-jdbc</include>
                             <include>org.apache.tomcat:tomcat-juli</include>
                             <include>org.apache.commons:commons-lang3</include>
-                            <include>org.bstats:bstats-base</include>
-                            <include>org.bstats:bstats-bukkit</include>
                             <include>net.kyori:adventure-api</include>
                             <include>net.kyori:adventure-key</include>
                             <include>net.kyori:adventure-nbt</include>
@@ -224,7 +214,7 @@
                             <include>org.jetbrains.kotlin:kotlin-stdlib</include>
                             <include>com.squareup.okio:okio</include>
                             <include>com.amazonaws:*</include>
-                            <include>org.jsoup:*</include>
+                            <include>org.jsoup:jsoup</include>
                             <include>com.fasterxml.jackson.core:*</include>
                             <include>com.fasterxml.jackson.dataformat:*</include>
                             <include>org.apache.httpcomponents:*</include>
@@ -233,11 +223,102 @@
                             <include>org.apache.maven:maven-artifact</include>
                         </includes>
                     </artifactSet>
+                    <filters>
+                        <filter>
+                            <artifact>*:*</artifact>
+                            <excludes>
+                                <exclude>module-info.class</exclude>
+                                <exclude>META-INF/*.SF</exclude>
+                                <exclude>META-INF/*.MF</exclude>
+                                <exclude>META-INF/*.DSA</exclude>
+                                <exclude>META-INF/*.RSA</exclude>
+                                <exclude>META-INF/**</exclude>
+                            </excludes>
+                        </filter>
+                        <filter>
+                            <artifact>fr.minuskube.inv:smart-invs</artifact>
+                            <excludes>
+                                <exclude>plugin.yml</exclude>
+                            </excludes>
+                        </filter>
+                        <filter>
+                            <artifact>commons*</artifact>
+                            <includes>
+                                <include>**</include>
+                            </includes>
+                        </filter>
+                    </filters>
                     <relocations>
                         <relocation>
-                            <pattern>co.aikar.taskchain</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.misc</shadedPattern>
-                         </relocation>
+                            <pattern>net.kyori.examination</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.net.kyori.examination</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>net.kyori.adventure</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.net.kyori.adventure</shadedPattern>
+                        </relocation>
+                        
+                        <relocation>
+                            <pattern>org.apache</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.org.apache</shadedPattern>
+                        </relocation>
+                        <!-- Removed google relocation. Relocating the API seems to break it...annoying, since another plugin who is using it may hate us but oh well -->
+                        <relocation>
+                            <pattern>mozilla</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.mozilla</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.amazonaws</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.amazonaws</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.ibm</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.ibm</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.fasterxml.jackson</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.fasterxml.jackson</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>org.jsoup</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.org.jsoup</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>fr.minuskube.inv</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.fr.minuskube.inv</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>okio</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.squareup.okio</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>okhttp3</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.okhttp3</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>org.joda.time</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.org.joda.time</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>io.grpc</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.io.grpc</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>grpc</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.grpc</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>io.opencensus</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.io.opencensus</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>org.threeten</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.org.threeten</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>kotlin</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.jetbrains.kotlin</shadedPattern>
+                        </relocation>
                     </relocations>
               </configuration>
           <executions>

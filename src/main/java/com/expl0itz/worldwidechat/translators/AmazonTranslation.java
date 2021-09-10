@@ -50,7 +50,7 @@ public class AmazonTranslation {
 		isInitializing = true;
 	}
 
-	public String useTranslator() throws TranslatorTimeoutException {
+	public String useTranslator() throws TranslatorTimeoutException, TranslatorFailException {
 		ExecutorService executor = Executors.newSingleThreadExecutor();
 		Future<String> process = executor.submit(new translationTask());
 		String finalOut = "";
@@ -60,9 +60,13 @@ public class AmazonTranslation {
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			CommonDefinitions.sendDebugMessage("Amazon Translate Timeout!!");
 			process.cancel(true);
+			if (e instanceof ExecutionException) {
+			    throw new TranslatorFailException(e);	
+			}
 			throw new TranslatorTimeoutException("Timed out while waiting for Amazon Translate response.", e);
+		} finally {
+			executor.shutdownNow();
 		}
-		executor.shutdownNow();
 
 		/* Return final result */
 		return finalOut;
@@ -111,7 +115,7 @@ public class AmazonTranslation {
 			if (!CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
 				outputLang = CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode();
 			}
-
+			
 			/* Actual translation */
 			TranslateTextRequest request = new TranslateTextRequest().withText(textToTranslate)
 					.withSourceLanguageCode(inputLang.equals("None") ? "auto" : inputLang)

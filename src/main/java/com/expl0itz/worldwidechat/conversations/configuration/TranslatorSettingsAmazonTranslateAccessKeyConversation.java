@@ -1,7 +1,5 @@
 package com.expl0itz.worldwidechat.conversations.configuration;
 
-import java.io.IOException;
-
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.conversations.StringPrompt;
@@ -32,18 +30,14 @@ public class TranslatorSettingsAmazonTranslateAccessKeyConversation extends Stri
 		if (!input.equals("0")) {
 			main.getConfigManager().getMainConfig().set("Translator.amazonAccessKey", input);
 			main.getConfigManager().getMainConfig().set("Translator.useAmazonTranslate", false);
-			try {
-				main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-				final TextComponent successfulChange = Component.text()
-						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcConfigConversationAmazonTranslateAccessKeySuccess"))
-								.color(NamedTextColor.GREEN))
-						.build();
-				CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcConfigConversationAmazonTranslateAccessKeySuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
+			main.getConfigManager().saveMainConfig(true);
 		}
 		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Amazon Translate")
 				.open((Player) context.getForWhom());

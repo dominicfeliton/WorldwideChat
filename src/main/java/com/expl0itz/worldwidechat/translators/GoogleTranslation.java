@@ -47,7 +47,7 @@ public class GoogleTranslation {
 		isInitializing = true;
 	}
 
-	public String useTranslator() throws TranslatorTimeoutException {
+	public String useTranslator() throws TranslatorTimeoutException, TranslatorFailException {
 		ExecutorService executor = Executors.newSingleThreadExecutor();
 		Future<String> process = executor.submit(new translationTask());
 		String finalOut = "";
@@ -57,9 +57,13 @@ public class GoogleTranslation {
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			CommonDefinitions.sendDebugMessage("Google Translate Timeout!!");
 			process.cancel(true);
+			if (e instanceof ExecutionException) {
+			    throw new TranslatorFailException(e);	
+			}
 			throw new TranslatorTimeoutException("Timed out while waiting for Google Translate response.", e);
+		} finally {
+			executor.shutdownNow();
 		}
-		executor.shutdownNow();
 		return finalOut;
 	}
 

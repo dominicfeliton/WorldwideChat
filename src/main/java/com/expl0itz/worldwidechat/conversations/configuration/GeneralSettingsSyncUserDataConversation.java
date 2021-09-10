@@ -1,7 +1,5 @@
 package com.expl0itz.worldwidechat.conversations.configuration;
 
-import java.io.IOException;
-
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.NumericPrompt;
 import org.bukkit.conversations.Prompt;
@@ -32,18 +30,14 @@ public class GeneralSettingsSyncUserDataConversation extends NumericPrompt {
 		if (input.intValue() > 10) {
 			main.setSyncUserDataDelay(input.intValue());
 			main.getConfigManager().getMainConfig().set("General.syncUserDataDelay", input.intValue());
-			try {
-				main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-				final TextComponent successfulChange = Component.text()
-						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcConfigConversationSyncUserDataDelaySuccess"))
-								.color(NamedTextColor.GREEN))
-						.build();
-				CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcConfigConversationSyncUserDataDelaySuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
+			main.getConfigManager().saveMainConfig(true);
 		}
 		/* Re-open ConfigurationInventoryGUI */
 		ConfigurationGeneralSettingsGUI.generalSettings.open((Player) context.getForWhom());

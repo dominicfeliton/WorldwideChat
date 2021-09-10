@@ -6,7 +6,7 @@ import com.expl0itz.worldwidechat.util.CommonDefinitions;
 public class SyncUserData implements Runnable {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
-
+	
 	@Override
 	public void run() {
 		final long startTime = System.nanoTime();

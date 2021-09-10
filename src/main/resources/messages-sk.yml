@@ -1,19 +1,19 @@
 Messages:
-  wwcgAutoTranslateStart: 'Teraz prekladám globálny chat na %o.'
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'Globálny chat je prekladaný
-    do %o.'
+  wwcgAutoTranslateStart: Teraz prekladám globálny chat na %o.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Globálny chat je prekladaný
+    do %o.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Zmena prístupového kľúča Amazon
-  wwcrFail: 'Nepodarilo sa obnoviť WorldwideChat.'
+  wwcrFail: Nepodarilo sa obnoviť WorldwideChat.
   wwcConfigGUIUpdateCheckerButton: Zmeniť kontrolu aktualizácií oneskorenie
   wwcUpdaterFailedGeneric: Nie je možné skontrolovať aktualizácie WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Aktuálne oneskorenie kontroly aktualizácií
     je %i sekúnd. Zadajte čokoľvek väčšie ako 10, ak chcete nastaviť novú hodnotu,
     alebo čokoľvek menej ako 10, aby ste sa vrátili späť.
   wwctGUIMainMenuGlobal: Globálne Prekladateľské menu
-  wwcConfigConversationPluginUpdateChatSuccess: 'Pripomenutie na aktualizáciu konverzácie
-    doplnku úspešne prepínal.'
-  wwctbOnTarget: 'Preklad kníh povolený pre %i.'
-  wwcsNotATranslator: 'Zatiaľ nie sú k dispozícii žiadne záznamy pre %i.'
+  wwcConfigConversationPluginUpdateChatSuccess: Pripomenutie na aktualizáciu konverzácie
+    doplnku úspešne prepínal.
+  wwctbOnTarget: Preklad kníh povolený pre %i.
+  wwcsNotATranslator: Zatiaľ nie sú k dispozícii žiadne záznamy pre %i.
   wwcConfigGUIbStatsButton: Prepnúť bStats
   wwctGUINewTranslationSource: Vyberte zdrojový jazyk
   wwcConfigConnectionFailed: Nepodarilo sa pripojiť k %o. Uistite sa, že vaše poverenia
@@ -22,132 +22,128 @@ Messages:
   wwctGUIMainMenuPlayer: Prekladové menu %i
   wwctGUIBookButton: Prepnúť preklad kníh
   wwcLangDetected: Zistený jazyk %o.
-  wwcBookTranslateStart: 'Preklad cieľovej knihy...'
+  wwcBookTranslateStart: Preklad cieľovej knihy...
   wwcConfigDisabledbStats: Zakázané Bstaty.
-  wwctsOffSender: 'Preklad podpísať vypnutý.'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Globálny chat je prekladaný,
-    ale váš chat je prekladaný z %i do %o.'
+  wwctsOffSender: Preklad podpísať vypnutý.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globálny chat je prekladaný,
+    ale váš chat je prekladaný z %i do %o.
   wwcUpdaterParserFailed: Nepodarilo sa analyzovať aktualizačné údaje z Githubu.
-  wwctAutoTranslateStart: 'Teraz prekladám všetok váš chat na %o.'
+  wwctAutoTranslateStart: Teraz prekladám všetok váš chat na %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Aktuálny tajný kľúč je %i. Prosím,
     zadajte tajný kľúč pre Amazon, alebo zadajte 0, aby ste sa vrátili späť.
-  wwctbOffSender: 'Preklad kníh zakázaný.'
+  wwctbOffSender: Preklad kníh zakázaný.
   wwcConfigGUIAmazonTranslateButton: Amazon Preložiť
-  wwcConfigConversationLangSuccess: 'Jazyk pluginu sa úspešne zmenil.'
+  wwcConfigConversationLangSuccess: Jazyk pluginu sa úspešne zmenil.
   wwcsSuccessfulTranslations: 'Úspešné preklady: %i'
-  wwctTranslationStoppedOtherPlayer: 'Preklad chatu pre %i bol zastavený.'
+  wwctTranslationStoppedOtherPlayer: Preklad chatu pre %i bol zastavený.
   wwcConfigConversationTranslationCacheInput: Aktuálny limit vyrovnávacej pamäte prekladu
     je %i frázy. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu, alebo
     zadaním 0 vypnite vyrovnávaciu pamäť prekladu. Zadajte čokoľvek menej ako 0, aby
     ste sa vrátili späť.
-  wwctbOffTarget: 'Preklad knihy zakázaný pre %i.'
+  wwctbOffTarget: Preklad knihy zakázaný pre %i.
   wwcConfigGUIGeneralSettings: Všeobecná konfigurácia
   wwcInvalidLang: Neplatný jazyk vo vašom config.yml. Predvolené na en...
-  wwcConfigConversationAmazonTranslateRegionSuccess: 'Oblasť Amazon bola úspešne
-    nastavená.'
+  wwcConfigConversationAmazonTranslateRegionSuccess: Oblasť Amazon bola úspešne nastavená.
   wwcConfigRateLimitEnabled: Globálny limit rýchlosti povolený a nastavený na %i sekúnd.
-  wwcBadPerms: 'Nemáte požadované povolenia na vykonanie tohto príkazu!'
+  wwcBadPerms: Nemáte požadované povolenia na vykonanie tohto príkazu!
   wwcConfigGUILangButton: Zmeniť jazyk doplnku
   wwctGUISignButton: Prepnúť preklad znakov
   wwcUpdaterOutOfDate: WorldwideChat je zastaraný. Aktualizujte na najnovšiu verziu,
     %i.
-  wwcConfigGUIChangesNotSaved: 'Vaše zmeny sa nemusia prejaviť, kým nespustíte /wwcr,
-    alebo kliknete na červenú bariéru v /wwcc.'
+  wwcConfigGUIChangesNotSaved: Vaše zmeny sa nemusia prejaviť, kým nespustíte /wwcr,
+    alebo kliknete na červenú bariéru v /wwcc.
   wwcConfigGUINextPageButton: Nasledujúca strana
   wwctbTranslatePageFail: (Nepodarilo sa preložiť túto stránku) %i
   wwcConfigInvalidTranslatorSettings: Neplatné nastavenia prekladateľa! Povoliť iba
     jeden prekladač vo vašom config.yml.
   wwcConfigGUIQuitButton: Ukončiť a uložiť zmeny
-  wwctPlayerNotFound: 'Hráč %Nenašiel som.'
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'Globálny chat je prekladaný,
-    ale váš chat je prekladaný do %o.'
+  wwctPlayerNotFound: Hráč %Nenašiel som.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globálny chat je prekladaný,
+    ale váš chat je prekladaný do %o.
   wwcConfigGUIGlobalRateLimit: Zmena globálneho limitu rýchlosti
-  wwctGUIBackToSourceLanguageButton: Späť na Ponuku zdrojového jazyka
   wwcConfigGUIAmazonTranslateRegionButton: Zmeniť oblasť Amazon
   wwcConfigConversationLangInput: 'Aktuálny jazyk pluginu je %i. Prosím zadajte platný
     kód jazyka alebo zadajte 0 pre zrušenie. Platné kódy jazykov: %o'
-  wwcConfigConversationLangInvalid: 'Neplatný kód jazyka!'
-  wwctTranslationStopped: 'Váš preklad chatu bol zastavený.'
+  wwcConfigConversationLangInvalid: Neplatný kód jazyka!
+  wwctTranslationStopped: Váš preklad chatu bol zastavený.
   wwcConfigGUIWatsonAPIKeyButton: Zmeniť Watson API kľúč
   wwcEnabled: Povolená verzia WorldwideChat %i.
-  wwcgLangToLangStart: 'Teraz prekladám globálny chat z %i do %o.'
-  wwctbOnSender: 'Preklad kníh povolený. Kliknite pravým tlačidlom myši, zatiaľ čo
-    držíte knihu preložiť!'
+  wwcgLangToLangStart: Teraz prekladám globálny chat z %i do %o.
+  wwctbOnSender: Preklad kníh povolený. Kliknite pravým tlačidlom myši, zatiaľ čo
+    držíte knihu preložiť!
   wwcListenersInitialized: Inicializovaní poslucháči.
   wwcUserDataCorrupted: Nájdené a presunuté %i poškodené alebo staré používateľské
     dátové súbory. Budú vymazané pri ďalšom opätovnom načítaní.
   wwcConfigGUIPluginUpdateChatButton: Odoslať pripomenutie konverzácie pre aktualizácie
     doplnku
-  wwcConfigConversationSendTranslationChatSuccess: 'Aktívna pripomienka chatu prekladateľa
-    sa úspešne prepína.'
-  wwctsOffTarget: 'Preklad podpisu vypnutý pre %i.'
+  wwcConfigConversationSendTranslationChatSuccess: Aktívna pripomienka chatu prekladateľa
+    sa úspešne prepína.
+  wwctsOffTarget: Preklad podpisu vypnutý pre %i.
   wwcUpdaterConnectionFailed: Nie je možné skontrolovať najnovšie aktualizácie v Githube.
-  watsonNotFoundExceptionNotification: 'Nie je možné preložiť váš vstup ďalej.'
+  watsonNotFoundExceptionNotification: Nie je možné preložiť váš vstup ďalej.
   wwcConfigConversationWatsonAPIKeyInput: Aktuálny kľúč API je %i. Prosím, zadajte
     API kľúč pre Watson, alebo zadajte 0, aby ste sa vrátili späť.
   wwctGUIStopButton: Zastaviť preklad
-  wwcgTranslationStopped: 'Globálny preklad chatu bol zastavený.'
-  wwctAutoTranslateStartOtherPlayer: 'Teraz prekladám chatu %i do %o.'
+  wwcgTranslationStopped: Globálny preklad chatu bol zastavený.
+  wwctAutoTranslateStartOtherPlayer: Teraz prekladám chatu %i do %o.
   wwcUpdaterFutureDate: Táto inštancia WorldwideChat má vyššiu verziu ako najnovšia
     verejná verzia.
-  wwcConfigConversationPrefixSuccess: 'Predpona sa úspešne zmenila.'
+  wwcConfigConversationPrefixSuccess: Predpona sa úspešne zmenila.
   wwcConfigGUIGoogleTranslateAPIKeyButton: Zmena kľúča API Prekladača Google
   wwcSignDeletedOrTooLong: 'Cieľový znak bol buď odstránený alebo preklad bol príliš
     dlhý. Preklad:'
-  wwctsOnTarget: 'Preklad podpisu povolený pre %i.'
+  wwctsOnTarget: Preklad podpisu povolený pre %i.
   wwcConfigCacheDisabled: Cache prekladateľa vypnutá.
   wwcConfigConversationWatsonURLInput: Aktuálna URL je %i. Prosím, zadajte adresu
     URL služby pre Watson, alebo zadajte 0, aby ste sa vrátili späť.
-  wwcOnJoinTranslationNotificationSourceLang: 'Váš chat je prekladaný z %i do %o.'
-  wwcBookDone: 'Kniha úspešne preložená.'
-  wwctsOnSender: 'Podpísať preklad povolený. Kliknite pravým tlačidlom myši na znamenie
-    ho preložiť!'
-  watsonColorCodeWarning: 'Použitie farebných kódov vám môže poskytnúť nepredvídateľné
-    výsledky.'
+  wwcOnJoinTranslationNotificationSourceLang: Váš chat je prekladaný z %i do %o.
+  wwcBookDone: Kniha úspešne preložená.
+  wwctsOnSender: Podpísať preklad povolený. Kliknite pravým tlačidlom myši na znamenie
+    ho preložiť!
+  watsonColorCodeWarning: Použitie farebných kódov vám môže poskytnúť nepredvídateľné
+    výsledky.
   wwctGUITranslationButton: Začať prekladať
   wwctGUIAutoDetectButton: Automatická detekcia zdrojového jazyka
   wwcUpdaterUpToDate: WorldwideChat je aktuálny!
   wwcConfigConversationAmazonTranslateRegionInput: Aktuálny región je %i. Prosím,
     zadajte región pre Amazon, alebo zadajte 0, aby ste sa vrátili späť.
-  wwcNoConsole: 'Tento príkaz môže spustiť iba hráč.'
+  wwcNoConsole: Tento príkaz môže spustiť iba hráč.
   wwcInitializationFail: Nepodarilo sa inicializovať WorldwideChat.
-  wwcrSuccess: 'Úspešne načítané WorldwideChat'
-  wwcPlayerNotFound: 'Hráč %Nenašiel som.'
-  wwcUpdaterOutOfDateChat: 'WorldwideChat je zastaraný. Aktualizujte na najnovšiu
-    verziu.'
-  wwcConfigConversationRateLimitSuccess: 'Úspešne nastavený limit rýchlosti.'
-  wwcConfigConversationWatsonURLSuccess: 'Watson URL nastavená úspešne.'
-  wwctbPlayerNotFound: 'Prehrávač %i sa buď nenašiel, alebo nie je aktívny prekladateľ.'
-  wwcConfigConversationTranslationCacheSuccess: 'Limit vyrovnávacej pamäte prekladu
-    úspešne nastavený.'
-  wwctInvalidArgs: 'Poskytnuté neplatné argumenty!'
+  wwcrSuccess: Úspešne načítané WorldwideChat
+  wwcPlayerNotFound: Hráč %Nenašiel som.
+  wwcUpdaterOutOfDateChat: WorldwideChat je zastaraný. Aktualizujte na najnovšiu verziu.
+  wwcConfigConversationRateLimitSuccess: Úspešne nastavený limit rýchlosti.
+  wwcConfigConversationWatsonURLSuccess: Watson URL nastavená úspešne.
+  wwctbPlayerNotFound: Prehrávač %i sa buď nenašiel, alebo nie je aktívny prekladateľ.
+  wwcConfigConversationTranslationCacheSuccess: Limit vyrovnávacej pamäte prekladu
+    úspešne nastavený.
+  wwctInvalidArgs: Poskytnuté neplatné argumenty!
   wwcConfigGUIPrefixButton: Zmeniť predponu zásuvného modulu
-  wwctSameLangError: 'Nemôžete preložiť do toho istého jazyka!'
+  wwctSameLangError: Nemôžete preložiť do toho istého jazyka!
   wwctGUINewTranslationTarget: Vyberte cieľový jazyk
-  wwctLangToLangStartOtherPlayer: 'Teraz prekladám chatu %o od %i do %e.'
+  wwctLangToLangStartOtherPlayer: Teraz prekladám chatu %o od %i do %e.
   wwcConfigConnectionSuccess: Úspešne pripojený k %o!
   wwcConfigGUIGoogleTranslateButton: Prekladač Google
   wwcsIsActiveTranslator: 'Je aktívny prekladateľ: %i'
-  wwctLangToLangStart: 'Teraz prekladám všetok váš chat z %i do %o.'
+  wwctLangToLangStart: Teraz prekladám všetok váš chat z %i do %o.
   wwcConfigConversationPrefixInput: Aktuálna predpona je %i. Prosím zadajte novú alebo
     zadajte 0, aby ste sa vrátili späť.
   wwcConfigGUIPreviousPageButton: Predchádzajúca strana
   wwcConfigGUITranslatorCacheButton: Zmeniť limit vyrovnávacej pamäte prekladu
-  wwcConfigConversationbStatsSuccess: 'Úspešne prepínal bStats.'
-  wwcSignDone: 'Podpis úspešne preložený.'
+  wwcConfigConversationbStatsSuccess: Úspešne prepínal bStats.
+  wwcSignDone: Podpis úspešne preložený.
   wwcConfigInvalidPrefixSettings: Nepodarilo sa prečítať predponu. Používanie predvoleného...
   wwcConfigRateLimitInvalid: Zlý limit rýchlosti nastavený v config.yml. Predvolené
     na 0 sekúnd...
-  wwcSignTranslateStart: 'Preklad cieľového znaku...'
+  wwcSignTranslateStart: Preklad cieľového znaku...
   wwcConfigGUIChatSettings: Konfigurácia chatu
   wwcConfigGUIWatsonURLButton: Zmena adresy URL služby Watson
-  wwcConfigConversationUpdateCheckerSuccess: 'Aktualizácia kontroly oneskorenia nastavená
-    úspešne.'
+  wwcConfigConversationUpdateCheckerSuccess: Aktualizácia kontroly oneskorenia nastavená
+    úspešne.
   wwcUnsupportedVersion: 'Používate nepodporovanú verziu Bukkit, Spigot alebo Paper.
     Podporované verzie:'
-  wwctGUIBackToMainMenuButton: Späť na hlavné prekladateľské menu
-  wwcGlobalOnJoinTranslationNotificationSourceLang: 'Globálny chat je prekladaný
-    z %i do %o.'
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Globálny chat je prekladaný z
+    %i do %o.
   wwcConfigGUITranslatorSettings: Konfigurácia prekladateľa
   wwcConfigConversationGoogleTranslateAPIKeyInput: Aktuálny kľúč API je %i. Prosím,
     zadajte kľúč API pre Google Translate alebo zadajte 0, aby ste sa vrátili späť.
@@ -155,47 +151,47 @@ Messages:
     je %i sekúnd. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu,
     alebo zadajte hodnotu 0 na vypnutie limitu. Zadajte čokoľvek menej ako 0, aby
     ste sa vrátili späť.
-  wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Google Translate API kľúč nastavený
-    úspešne.'
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API kľúč nastavený
+    úspešne.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Zmena tajného kľúča Amazon
-  wwcVersion: 'WorldwideChat, verzia'
+  wwcVersion: WorldwideChat, verzia
   wwcsAttemptedTranslations: 'Pokus o preklady: %i'
-  wwcConfigConversationAmazonTranslateSecretKeySuccess: 'Amazon tajný kľúč nastavený
-    úspešne.'
-  wwcConfigConversationWatsonAPIKeySuccess: 'Watson API kľúč nastavený úspešne.'
-  wwcRateLimit: 'Vaše preklady sú obmedzené. Počkajte prosím ďalšie %i sekúnd.'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon tajný kľúč nastavený
+    úspešne.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API kľúč nastavený úspešne.
+  wwcRateLimit: Vaše preklady sú obmedzené. Počkajte prosím ďalšie %i sekúnd.
   wwcConfigCacheEnabled: Vyrovnávacia pamäť prekladateľa povolená a nastavená na limit
     %i.
   wwctGUIExistingTranslationButton: Prepísať aktuálnu reláciu prekladu
-  wwcOnJoinTranslationNotificationNoSourceLang: 'Váš chat je prekladaný do %o.'
+  wwcOnJoinTranslationNotificationNoSourceLang: Váš chat je prekladaný do %o.
   wwcUserDataReloaded: Načítané všetky uložené používateľské údaje.
   wwcConfigGUISendTranslationChatButton: Poslať pripomenutie chatu aktívnemu prekladateľovi
     pri pri
   wwcsLastTranslationTime: 'Posledný (úspešný) čas prekladu: %i'
-  wwctbNotATranslator: 'Nie ste aktívny prekladateľ! Uistite sa, že ste to nastavili
-    pomocou /wwct.'
+  wwctbNotATranslator: Nie ste aktívny prekladateľ! Uistite sa, že ste to nastavili
+    pomocou /wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Aktuálny prístupový kľúč je
     %i. Prosím, zadajte prístupový kľúč pre Amazon, alebo zadajte 0, aby ste sa vrátili
     späť.
-  wwcConfigConversationAmazonTranslateAccessKeySuccess: 'Úspešne nastaviť prístupový
-    kľúč Amazon.'
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Úspešne nastaviť prístupový
+    kľúč Amazon.
   wwcConfigBadUpdateDelay: Neplatné oneskorenie aktualizovača nastavené v config.yml.
     Predvolené na 86400 sekúnd...
-  wwctrlRateLimitOffSender: 'Vypnutý limit sadzby.'
-  wwctrlRateLimitAlreadyOffTarget: 'Limit sadzby %i je už zakázaný.'
-  wwctrlPlayerNotFound: 'Prehrávač %i sa buď nenašiel, alebo nie je aktívny prekladateľ.'
-  wwctrlRateLimitSetSender: 'Nastavte svoj limit sadzby na %i sekúnd.'
-  wwctrlRateLimitOffTarget: 'Vypnutý limit sadzby %i.'
-  wwctrlRateLimitSetTarget: 'Nastavte limit sadzby %i na %o sekúnd.'
-  wwctrlNotATranslator: 'Nie ste aktívny prekladateľ! Uistite sa, že ste to nastavili
-    pomocou /wwct.'
-  wwctrlRateLimitAlreadyOffSender: 'Váš limit sadzby je už vypnutý.'
+  wwctrlRateLimitOffSender: Vypnutý limit sadzby.
+  wwctrlRateLimitAlreadyOffTarget: Limit sadzby %i je už zakázaný.
+  wwctrlPlayerNotFound: Prehrávač %i sa buď nenašiel, alebo nie je aktívny prekladateľ.
+  wwctrlRateLimitSetSender: Nastavte svoj limit sadzby na %i sekúnd.
+  wwctrlRateLimitOffTarget: Vypnutý limit sadzby %i.
+  wwctrlRateLimitSetTarget: Nastavte limit sadzby %i na %o sekúnd.
+  wwctrlNotATranslator: Nie ste aktívny prekladateľ! Uistite sa, že ste to nastavili
+    pomocou /wwct.
+  wwctrlRateLimitAlreadyOffSender: Váš limit sadzby je už vypnutý.
   wwctGUIRateButton: Nastaviť sadzobný limit
   wwctGUIConversationRateLimit: Limit rýchlosti na preklad je aktuálne %i sekúnd.
     Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu, alebo zadajte
     hodnotu 0 na vypnutie limitu. Zadajte čokoľvek menej ako 0, aby ste sa vrátili
     späť.
-  wwctGUITargetPlayerNull: 'Cieľový prehrávač sa odpojil od servera.'
+  wwctGUITargetPlayerNull: Cieľový prehrávač sa odpojil od servera.
   wwcConfigConversationSyncUserDataDelayInput: Aktuálne oneskorenie na synchronizáciu
     údajov používateľa je %i sekúnd. Zadajte čokoľvek väčšie ako 10, ak chcete nastaviť
     novú hodnotu, alebo čokoľvek menej ako 10, aby ste sa vrátili späť.
@@ -204,53 +200,53 @@ Messages:
     v %i nanosekúnd.
   wwcConfigSyncDelayEnabled: Oneskorenie synchronizácie údajov používateľa nastavené
     na %i sekúnd.
-  wwcConfigConversationSyncUserDataDelaySuccess: 'Oneskorenie synchronizácie používateľských
-    dát úspešne nastaviť.'
+  wwcConfigConversationSyncUserDataDelaySuccess: Oneskorenie synchronizácie používateľských
+    dát úspešne nastaviť.
   wwcConfigSyncDelayInvalid: Neplatné oneskorenie synchronizácie údajov používateľa
     nastavené v config.yml. Predvolené na 7200 sekúnd...
   wwcConfigCacheInvalid: Translator veľkosť vyrovnávacej pamäte je neplatná. Predvolené
     na 10...
-  wwcInventoryErrorPlayer: 'Chyba zistená pomocou grafického rozhrania. Do konzoly
-    bol odoslaný denník.'
+  wwcInventoryErrorPlayer: Chyba zistená pomocou grafického rozhrania. Do konzoly
+    bol odoslaný denník.
   wwcInventoryError: Chyba zistená pomocou grafického rozhrania používateľa %i. Prosím,
     nahláste tento problém vývojárovi.
-  wwcConfigConversationTranslatorFail: 'Nepodarilo sa povoliť %i.'
+  wwcConfigConversationTranslatorFail: Nepodarilo sa povoliť %i.
   wwcConfigConversationConsoleTranslatorSuccess: Užívateľ %som úspešne zapnutý %o.
-  wwcConfigConversationTranslatorSuccess: 'Úspešne zapnuté %i.'
+  wwcConfigConversationTranslatorSuccess: Úspešne zapnuté %i.
   wwcConfigConversationConsoleTranslatorFail: Používateľa %nepodarilo sa mi povoliť
     %o.
   wwcWatson117Warning: Watson sa nepodarilo inicializovať kvôli InaccessibleObjectException.
     Pre túto chvíľu pridajte —illegal-access=povoliť k existujúcim argumentom servera
     jar.
   wwcDeluxeChatIncompatible: Tento zásuvný modul nemusí pracovať správne s DeluxeCat.
-  wwcSignTranslationFail: 'Nie je možné preložiť jeden alebo viac riadkov na cieľovom
-    znamienko.'
-  wwcBookTranslationFail: 'Nie je možné preložiť jednu alebo viac strán v cieľovej
-    knihe.'
-  wwctiOffTarget: 'Preklad položiek zakázaný pre %i.'
-  wwctiOffSender: 'Preklad položiek vypnutý.'
-  wwcItemTranslateTitleStock: 'Nie je možné preložiť predvolené názvy položiek.'
-  wwcItemTranslateLoreFail: 'Nepodarilo sa preložiť položky tradície.'
-  wwcItemTranslateTitleFail: 'Nepodarilo sa preložiť názov položky.'
+  wwcSignTranslationFail: Nie je možné preložiť jeden alebo viac riadkov na cieľovom
+    znamienko.
+  wwcBookTranslationFail: Nie je možné preložiť jednu alebo viac strán v cieľovej
+    knihe.
+  wwctiOffTarget: Preklad položiek zakázaný pre %i.
+  wwctiOffSender: Preklad položiek vypnutý.
+  wwcItemTranslateTitleStock: Nie je možné preložiť predvolené názvy položiek.
+  wwcItemTranslateLoreFail: Nepodarilo sa preložiť položky tradície.
+  wwcItemTranslateTitleFail: Nepodarilo sa preložiť názov položky.
   wwctGUIItemButton: Prepnúť preklad položiek
-  wwcItemTranslateTitleDone: 'Názov položky bol úspešne preložený.'
+  wwcItemTranslateTitleDone: Názov položky bol úspešne preložený.
   wwcGUITempItem: Zobrazenie položky
-  wwcItemTranslateStart: 'Preklad cieľovej položky...'
-  wwcSignTranslationFailCatastrophic: 'Nepodarilo sa preložiť cieľový znak.'
-  wwcItemTranslationFailCatastrophic: 'Nepodarilo sa preložiť cieľovú položku.'
+  wwcItemTranslateStart: Preklad cieľovej položky...
+  wwcSignTranslationFailCatastrophic: Nepodarilo sa preložiť cieľový znak.
+  wwcItemTranslationFailCatastrophic: Nepodarilo sa preložiť cieľovú položku.
   wwcBookTranslateTitleSuccess: 'Preklad názvu knihy: %i'
-  wwctiOnSender: 'Preklad položiek povolený. Kliknite pravým tlačidlom myši na položku
-    v hlavnej ruke, aby ste ju preložili!'
-  wwcItemTranslateLoreStart: 'Preklad tradície cieľovej položky...'
-  wwcItemTranslateLoreDone: 'Preložené položky tradície úspešne.'
-  wwctiOnTarget: 'Preklad položiek povolený pre %i.'
-  wwcBookTranslationFailCatastrophic: 'Nepodarilo sa preložiť cieľovú knihu.'
-  wwcBookTranslateTitleFail: 'Nepodarilo sa preložiť názov knihy.'
-  wwcChatTranslationFail: 'Nepodarilo sa preložiť správu.'
-  wwcInvalidTranslator: 'Neplatné nastavenia prekladateľa. Opravte to vo vašom config.yml
-    alebo /wwcc použiť tento plugin.'
-  wwcNotDoneLoading: 'WorldwideChat sa stále inicializuje. Prosím, skúste to znova
-    krátko.'
+  wwctiOnSender: Preklad položiek povolený. Kliknite pravým tlačidlom myši na položku
+    v hlavnej ruke, aby ste ju preložili!
+  wwcItemTranslateLoreStart: Preklad tradície cieľovej položky...
+  wwcItemTranslateLoreDone: Preložené položky tradície úspešne.
+  wwctiOnTarget: Preklad položiek povolený pre %i.
+  wwcBookTranslationFailCatastrophic: Nepodarilo sa preložiť cieľovú knihu.
+  wwcBookTranslateTitleFail: Nepodarilo sa preložiť názov knihy.
+  wwcChatTranslationFail: Nepodarilo sa preložiť správu.
+  wwcInvalidTranslator: Neplatné nastavenia prekladateľa. Opravte to vo vašom config.yml
+    alebo /wwcc použiť tento plugin.
+  wwcNotDoneLoading: WorldwideChat sa stále inicializuje. Prosím, skúste to znova
+    krátko.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurácia'
   wwcConfigGUIToggleButton: Prepnúť %i
   wwcConfigGUIWatsonButton: Watson
@@ -261,8 +257,8 @@ Messages:
   wwcTranslatorErrorThresholdReached: Dosiahnutý prah chyby. Tento plugin sa teraz
     znova načíta a vypne všetkých prekladateľov.
   wwcConfigErrorLimitEnabled: Limit chyby prekladateľa nastavený na %i.
-  wwcTranslatorError: 'Vyskytol sa problém pri pokuse o preklad. Prosím, skúste to
-    znova.'
+  wwcTranslatorError: Vyskytol sa problém pri pokuse o preklad. Prosím, skúste to
+    znova.
   wwcTranslatorErrorConsole: Vyskytol sa problém, keď používateľ %i sa pokúšal o ich
     preklad. Teraz tlač stacktrace.
   wwcConfigErrorLimitInvalid: Neplatný limit chyby prekladateľa nastavený v config.yml.
@@ -277,3 +273,23 @@ Messages:
   wwcsTitle: Záznam %i
   wwctInvalidOutputLangCode: 'Neplatný kód výstupného jazyka je k dispozícii! Platné
     kódy lang: %o'
+  wwctGUISourceTranslationSelected: Vybrali ste tento jazyk.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Odstrániť prepísanie
+  wwcConfigConversationOverrideTextChange: Zadajte novú správu pre toto prepísanie
+    alebo zadajte hodnotu 0, aby ste sa vrátili späť. Nezabudnite zahrnúť všetky premenné
+    začínajúce znakmi percentuálneho podielu, ktoré sa zobrazujú v pôvodnej správe.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Tento jazyk je už aktívny!
+  wwcConfigGUIMessagesOverrideChatButton: Prepísať predvolené správy zásuvných modulov
+  wwcConfigGUIChatMessagesPossibleOverrides: Vybrať správu
+  wwcConfigGUIChatMessagesModifyOverride: Upraviť existujúce prepísanie
+  wwcConfigConversationOverrideDeletionSuccess: Vlastné prepísanie správy bolo odstránené.
+  wwcConfigGUIChatMessagesOverrideSettings: Prepísať predvolené správy
+  wwcConfigGUIChatMessagesDeadOverride: Toto prepísanie je buď neplatné, alebo pôvodná
+    správa bola odstránená. Mali by ste to vymazať.
+  wwcConfigGUIMessagesAlreadyOverriden: Už máte prepísanie tejto správy!
+  wwcConfigGUIChatMessagesOverrideNewButton: Pridanie nového prepísania
+  wwcConfigGUIMessagesOverrideCustomLabel: Nová správa
+  wwcConfigConversationOverrideTextChangeSuccess: Nová správa bola úspešne nastavená.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Zmeniť existujúci text
+  wwcExampleMessage: Toto je falošná správa a má byť prehodnotená ako príklad.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Pôvodná správa

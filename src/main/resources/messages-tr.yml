@@ -1,16 +1,16 @@
 Messages:
-  wwcgAutoTranslateStart: 'Şimdi küresel sohbet %o''ya çevriliyor.'
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'Küresel sohbet %o''ya çevriliyor.'
+  wwcgAutoTranslateStart: Şimdi küresel sohbet %o'ya çevriliyor.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Küresel sohbet %o'ya çevriliyor.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Amazon Erişim Anahtarını Değiştir
-  wwcrFail: 'WorldwideChat yeniden yüklenemedi.'
+  wwcrFail: WorldwideChat yeniden yüklenemedi.
   wwcConfigGUIUpdateCheckerButton: Güncelleştirmeleri Denetimi Gecikmesi Değiştir
   wwcUpdaterFailedGeneric: WorldwideChat güncelleştirmeleri denetlenemiyor.
   wwcConfigConversationUpdateCheckerInput: Güncelleme denetleyicisi üzerindeki geçerli
     gecikme %i saniye. Yeni bir değer ayarlamak için 10'dan büyük bir şey yazın veya
     geri dönmek için 10'dan küçük bir şey yazın.
   wwctGUIMainMenuGlobal: Küresel Çeviri Menüsü
-  wwcConfigConversationPluginUpdateChatSuccess: 'Eklenti güncelleme sohbet anımsatıcısı
-    başarıyla güncellendi.'
+  wwcConfigConversationPluginUpdateChatSuccess: Eklenti güncelleme sohbet anımsatıcısı
+    başarıyla güncellendi.
   wwctbOnTarget: '%i için kitap çevirisi etkinleştirildi.'
   wwcsNotATranslator: '%i için henüz mevcut bir kayıt yok.'
   wwcConfigGUIbStatsButton: bStats'ı aç/kapat
@@ -21,18 +21,18 @@ Messages:
   wwctGUIMainMenuPlayer: '%i çeviri menüsü'
   wwctGUIBookButton: Kitap Çevirisi Değiştir
   wwcLangDetected: Algılandı %o dilini.
-  wwcBookTranslateStart: 'Hedef kitabı çeviriyorum...'
+  wwcBookTranslateStart: Hedef kitabı çeviriyorum...
   wwcConfigDisabledbStats: Devre dışı bırakılmış bStats.
-  wwctsOffSender: 'İmza çevirisi devre dışı'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Küresel sohbet çevriliyor,
-    ancak sohbetiniz %i konumundan %o''ya çevriliyor.'
+  wwctsOffSender: İmza çevirisi devre dışı
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Küresel sohbet çevriliyor,
+    ancak sohbetiniz %i konumundan %o'ya çevriliyor.
   wwcUpdaterParserFailed: Github'dan güncelleme verileri ayrıştırılamadı.
-  wwctAutoTranslateStart: 'Şimdi tüm sohbetinizi %o''ya çevriliyor.'
+  wwctAutoTranslateStart: Şimdi tüm sohbetinizi %o'ya çevriliyor.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Geçerli gizli anahtar %i. Lütfen
     Amazon için bir gizli anahtar girin veya geri dönmek için 0 yazın.
-  wwctbOffSender: 'Kitap çevirisi devre dışı.'
+  wwctbOffSender: Kitap çevirisi devre dışı.
   wwcConfigGUIAmazonTranslateButton: Amazon Tercüme
-  wwcConfigConversationLangSuccess: 'Eklenti dili başarıyla değiştirildi.'
+  wwcConfigConversationLangSuccess: Eklenti dili başarıyla değiştirildi.
   wwcsSuccessfulTranslations: 'Başarılı Çeviriler: %i'
   wwctTranslationStoppedOtherPlayer: '%i için sohbet çevirisi durduruldu.'
   wwcConfigConversationTranslationCacheInput: Geçerli çeviri önbellek sınırı %i ifadeleri.
@@ -41,162 +41,159 @@ Messages:
   wwctbOffTarget: '%i için kitap çevirisi devre dışı bırakıldı'
   wwcConfigGUIGeneralSettings: Genel Yapılandırma
   wwcInvalidLang: Config.yml içinde geçersiz dil. tr için Defaulting...
-  wwcConfigConversationAmazonTranslateRegionSuccess: 'Amazon bölgesi başarıyla ayarlandı.'
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazon bölgesi başarıyla ayarlandı.
   wwcConfigRateLimitEnabled: Genel hız sınırı etkinleştirildi ve %i saniye olarak
     ayarlandı.
-  wwcBadPerms: 'Bu komutu çalıştırmak için gerekli izinlere sahip değilsiniz!'
+  wwcBadPerms: Bu komutu çalıştırmak için gerekli izinlere sahip değilsiniz!
   wwcConfigGUILangButton: Eklenti Dili Değiştir
   wwctGUISignButton: İmzala Tercümesi
   wwcUpdaterOutOfDate: WorldwideChat güncel değil. Lütfen %i en son sürüme güncelleyin.
-  wwcConfigGUIChangesNotSaved: 'Değişiklikleriniz, /wwcr çalıştırıncaya veya /wwcc''deki
-    kırmızı bariyeri tıklayana kadar geçerli olmayabilir.'
+  wwcConfigGUIChangesNotSaved: Değişiklikleriniz, /wwcr çalıştırıncaya veya /wwcc'deki
+    kırmızı bariyeri tıklayana kadar geçerli olmayabilir.
   wwcConfigGUINextPageButton: Sonraki Sayfa
   wwctbTranslatePageFail: (Bu sayfa çevrilemedi) %i
   wwcConfigInvalidTranslatorSettings: Geçersiz çevirmen ayarları! Lütfen config.yml'nizde
     yalnızca bir çevirmen etkinleştirin.
   wwcConfigGUIQuitButton: Değişiklikleri Kaydet
-  wwctPlayerNotFound: 'Oyuncu %i bulunamadı.'
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'Küresel sohbet çevriliyor,
-    ancak sohbetiniz %o''ya çevriliyor.'
+  wwctPlayerNotFound: Oyuncu %i bulunamadı.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Küresel sohbet çevriliyor,
+    ancak sohbetiniz %o'ya çevriliyor.
   wwcConfigGUIGlobalRateLimit: Küresel Fiyat Limitini Değiştir
-  wwctGUIBackToSourceLanguageButton: Kaynak Dil Menüsüne Geri Dön
   wwcConfigGUIAmazonTranslateRegionButton: Amazon Bölgesini Değiştir
   wwcConfigConversationLangInput: 'Geçerli eklenti dili %i. Lütfen geçerli bir dil
     kodu girin veya iptal etmek için 0 yazın. Geçerli dil kodları: %o'
-  wwcConfigConversationLangInvalid: 'Geçersiz dil kodu!'
-  wwctTranslationStopped: 'Sohbet çeviriniz durduruldu.'
+  wwcConfigConversationLangInvalid: Geçersiz dil kodu!
+  wwctTranslationStopped: Sohbet çeviriniz durduruldu.
   wwcConfigGUIWatsonAPIKeyButton: Watson API Anahtarını Değiştir
   wwcEnabled: WorldwideChat sürümün %i etkinleştirildi.
-  wwcgLangToLangStart: 'Şimdi küresel sohbeti %i ile %o''ya çevriliyor.'
-  wwctbOnSender: 'Kitap çevirisi etkin. Çevirmek için bir kitap tutarken sağ tıklayın!'
+  wwcgLangToLangStart: Şimdi küresel sohbeti %i ile %o'ya çevriliyor.
+  wwctbOnSender: Kitap çevirisi etkin. Çevirmek için bir kitap tutarken sağ tıklayın!
   wwcListenersInitialized: İlk dinleyiciler.
   wwcUserDataCorrupted: '%i bozuk veya eski kullanıcı veri dosyaları bulundu ve taşındı.
     Bir sonraki yeniden yüklemede silinirler.'
   wwcConfigGUIPluginUpdateChatButton: Eklenti Güncellemeleri için Sohbet Anımsatıcısı
     Gönder
-  wwcConfigConversationSendTranslationChatSuccess: 'Aktif çevirmen sohbet hatırlatıcı
-    başarıyla değiştirildi.'
+  wwcConfigConversationSendTranslationChatSuccess: Aktif çevirmen sohbet hatırlatıcı
+    başarıyla değiştirildi.
   wwctsOffTarget: '%i için çeviri devre dışı bırakıldı.'
   wwcUpdaterConnectionFailed: Github hakkında en son güncellemeler denetlenemiyor.
-  watsonNotFoundExceptionNotification: 'Girdilerinizi daha fazla tercüme edemiyor.'
+  watsonNotFoundExceptionNotification: Girdilerinizi daha fazla tercüme edemiyor.
   wwcConfigConversationWatsonAPIKeyInput: Geçerli API anahtarı %i. Lütfen Watson için
     bir API anahtarı girin veya geri dönmek için 0 yazın.
   wwctGUIStopButton: Çevirmeyi Durdur
-  wwcgTranslationStopped: 'Küresel sohbet çevirisi durduruldu.'
-  wwctAutoTranslateStartOtherPlayer: 'Şimdi %i sohbeti %o''ya çevriliyor.'
+  wwcgTranslationStopped: Küresel sohbet çevirisi durduruldu.
+  wwctAutoTranslateStartOtherPlayer: Şimdi %i sohbeti %o'ya çevriliyor.
   wwcUpdaterFutureDate: WorldwideChat'in bu örneği, en son halka açık olandan daha
     büyük bir sürüme sahiptir.
-  wwcConfigConversationPrefixSuccess: 'Önek başarıyla değiştirildi.'
+  wwcConfigConversationPrefixSuccess: Önek başarıyla değiştirildi.
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google Translate API Anahtarını Değiştir
   wwcSignDeletedOrTooLong: 'Hedef işareti silindi veya çeviri çok uzundu. Çeviri:'
   wwctsOnTarget: '%i için imzalama çevirisi etkinleştirildi.'
   wwcConfigCacheDisabled: Çevirmen önbelleği devre dışı.
   wwcConfigConversationWatsonURLInput: Geçerli URL %i. Lütfen Watson için bir hizmet
     URL'si girin veya geri dönmek için 0 yazın.
-  wwcOnJoinTranslationNotificationSourceLang: 'Sohbetiniz %i konumundan %o''ya çevriliyor.'
-  wwcBookDone: 'Kitap başarıyla çevrildi.'
-  wwctsOnSender: 'İmza çevirisi etkin. Çevirmek için bir işareti sağ tıklayın!'
-  watsonColorCodeWarning: 'Renk kodlarını kullanmak size öngörülemeyen sonuçlar verebilir.'
+  wwcOnJoinTranslationNotificationSourceLang: Sohbetiniz %i konumundan %o'ya çevriliyor.
+  wwcBookDone: Kitap başarıyla çevrildi.
+  wwctsOnSender: İmza çevirisi etkin. Çevirmek için bir işareti sağ tıklayın!
+  watsonColorCodeWarning: Renk kodlarını kullanmak size öngörülemeyen sonuçlar verebilir.
   wwctGUITranslationButton: Çevirmeye Başla
   wwctGUIAutoDetectButton: Kaynak Dilini Otomatik Algıla
   wwcUpdaterUpToDate: WorldwideChat güncel!
   wwcConfigConversationAmazonTranslateRegionInput: Mevcut bölge %i. Lütfen Amazon
     için bir bölge girin veya geri dönmek için 0 yazın.
-  wwcNoConsole: 'Bu komut sadece bir oyuncu tarafından çalıştırılabilir.'
+  wwcNoConsole: Bu komut sadece bir oyuncu tarafından çalıştırılabilir.
   wwcInitializationFail: WorldwideChat başlatılamadı.
-  wwcrSuccess: 'WorldwideChat başarıyla yeniden yüklendi.'
-  wwcPlayerNotFound: 'Oyuncu %i bulunamadı.'
-  wwcUpdaterOutOfDateChat: 'WorldwideChat güncel değil. Lütfen en son sürüme güncelleyin.'
-  wwcConfigConversationRateLimitSuccess: 'Hız sınırı başarıyla ayarlandı.'
-  wwcConfigConversationWatsonURLSuccess: 'Watson URL başarıyla ayarlandı.'
+  wwcrSuccess: WorldwideChat başarıyla yeniden yüklendi.
+  wwcPlayerNotFound: Oyuncu %i bulunamadı.
+  wwcUpdaterOutOfDateChat: WorldwideChat güncel değil. Lütfen en son sürüme güncelleyin.
+  wwcConfigConversationRateLimitSuccess: Hız sınırı başarıyla ayarlandı.
+  wwcConfigConversationWatsonURLSuccess: Watson URL başarıyla ayarlandı.
   wwctbPlayerNotFound: '%i oyuncuya bulunamadı ya da etkin bir çevirmen değil.'
-  wwcConfigConversationTranslationCacheSuccess: 'Çeviri önbellek sınırı başarıyla
-    ayarlandı.'
-  wwctInvalidArgs: 'Geçersiz argümanlar sağlandı!'
+  wwcConfigConversationTranslationCacheSuccess: Çeviri önbellek sınırı başarıyla ayarlandı.
+  wwctInvalidArgs: Geçersiz argümanlar sağlandı!
   wwcConfigGUIPrefixButton: Eklenti Öneki Değiştir
-  wwctSameLangError: 'Aynı dile tercüme edemezsin!'
+  wwctSameLangError: Aynı dile tercüme edemezsin!
   wwctGUINewTranslationTarget: Hedef Dil Seçin
-  wwctLangToLangStartOtherPlayer: 'Şimdi %o sohbeti %i ile %e çevriliyor.'
+  wwctLangToLangStartOtherPlayer: Şimdi %o sohbeti %i ile %e çevriliyor.
   wwcConfigConnectionSuccess: '%o!'
   wwcConfigGUIGoogleTranslateButton: Google Çevir
   wwcsIsActiveTranslator: 'Etkin Çevirmen: %i'
-  wwctLangToLangStart: 'Şimdi tüm sohbetinizi %i konumundan %o''ya çevriliyor.'
+  wwctLangToLangStart: Şimdi tüm sohbetinizi %i konumundan %o'ya çevriliyor.
   wwcConfigConversationPrefixInput: Geçerli önek %i. Lütfen yeni bir tane yazın veya
     geri dönmek için 0 yazın.
   wwcConfigGUIPreviousPageButton: Önceki Sayfa
   wwcConfigGUITranslatorCacheButton: Çeviri Önbelleği Sınırını Değiştir
-  wwcConfigConversationbStatsSuccess: 'bStats başarılı bir şekilde açıldı.'
-  wwcSignDone: 'İmzala başarıyla çevrildi'
+  wwcConfigConversationbStatsSuccess: bStats başarılı bir şekilde açıldı.
+  wwcSignDone: İmzala başarıyla çevrildi
   wwcConfigInvalidPrefixSettings: Önek okunamadı. Varsayılanı kullanma...
   wwcConfigRateLimitInvalid: Config.yml cinsinden ayarlanan kötü oran sınırı. 0 saniyeye
     varsayılan—
-  wwcSignTranslateStart: 'Hedef işareti çevriliyor...'
+  wwcSignTranslateStart: Hedef işareti çevriliyor...
   wwcConfigGUIChatSettings: Sohbet Yapılandırması
   wwcConfigGUIWatsonURLButton: Watson Hizmeti URL'sini Değiştir
-  wwcConfigConversationUpdateCheckerSuccess: 'Güncelleştirme denetleyicisi gecikme
-    başarıyla ayarlandı.'
+  wwcConfigConversationUpdateCheckerSuccess: Güncelleştirme denetleyicisi gecikme
+    başarıyla ayarlandı.
   wwcUnsupportedVersion: 'Bukkit, Spigot veya Paper desteklenmeyen bir sürümünü çalıştırıyorsunuz.
     Desteklenen sürümler:'
-  wwctGUIBackToMainMenuButton: Ana Çeviri Menüsüne Geri Dön
-  wwcGlobalOnJoinTranslationNotificationSourceLang: 'Genel sohbet %i ile %i konumundan
-    %o''ya çevriliyor.'
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Genel sohbet %i ile %i konumundan
+    %o'ya çevriliyor.
   wwcConfigGUITranslatorSettings: Çevirmen Yapılandırması
   wwcConfigConversationGoogleTranslateAPIKeyInput: Geçerli API anahtarı %i. Lütfen
     Google Translate için bir API anahtarı girin veya geri dönmek için 0 yazın.
   wwcConfigConversationRateLimitInput: Çeviri başına geçerli genel oran sınırı %i
     saniyedir. Yeni bir değer ayarlamak için 0'dan büyük bir şey yazın veya sınırı
     devre dışı bırakmak için 0 yazın. Geri dönmek için 0'dan az bir şey yazın.
-  wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Google Translate API anahtarı
-    başarıyla ayarlandı.'
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API anahtarı
+    başarıyla ayarlandı.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon Gizli Anahtarını Değiştir
-  wwcVersion: 'WorldwideChat, sürüm'
+  wwcVersion: WorldwideChat, sürüm
   wwcsAttemptedTranslations: 'Deneme Çevirileri: %i'
-  wwcConfigConversationAmazonTranslateSecretKeySuccess: 'Amazon gizli anahtar seti
-    başarıyla.'
-  wwcConfigConversationWatsonAPIKeySuccess: 'Watson API anahtarı başarıyla ayarlandı.'
-  wwcRateLimit: 'Çevirileriniz oranı sınırlıdır. Lütfen %i saniye daha bekleyin.'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon gizli anahtar seti
+    başarıyla.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API anahtarı başarıyla ayarlandı.
+  wwcRateLimit: Çevirileriniz oranı sınırlıdır. Lütfen %i saniye daha bekleyin.
   wwcConfigCacheEnabled: Çevirmen önbelleği etkinleştirildi ve %i sınırına ayarlandı.
   wwctGUIExistingTranslationButton: Geçerli Çeviri Oturumunun Üzerine Yaz
-  wwcOnJoinTranslationNotificationNoSourceLang: 'Sohbetin %o''ya çevriliyor.'
+  wwcOnJoinTranslationNotificationNoSourceLang: Sohbetin %o'ya çevriliyor.
   wwcUserDataReloaded: Kaydedilen tüm kullanıcı verilerini yüklendi.
   wwcConfigGUISendTranslationChatButton: Oturum Açan Aktif Çevirmen'e Sohbet Hatırlatıcısı
     Gönder
   wwcsLastTranslationTime: 'Son (Başarılı) Çeviri Süresi: %i'
-  wwctbNotATranslator: 'Sen aktif bir çevirmen değilsin! Bunu /wwct ile ayarladığınızdan
-    emin olun.'
+  wwctbNotATranslator: Sen aktif bir çevirmen değilsin! Bunu /wwct ile ayarladığınızdan
+    emin olun.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Geçerli erişim anahtarı %i.
     Lütfen Amazon için bir erişim anahtarı girin veya geri dönmek için 0 yazın.
-  wwcConfigConversationAmazonTranslateAccessKeySuccess: 'Amazon erişim anahtarı başarıyla
-    ayarlandı.'
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon erişim anahtarı başarıyla
+    ayarlandı.
   wwcConfigBadUpdateDelay: Config.yml içinde ayarlanmış geçersiz güncelleyici gecikmesi.
     Varsayılan olarak 86400 saniye...
-  wwctrlRateLimitOffSender: 'Senin oran limitini kapattı.'
+  wwctrlRateLimitOffSender: Senin oran limitini kapattı.
   wwctrlRateLimitAlreadyOffTarget: '%i oranı sınırı zaten devre dışı bırakıldı.'
   wwctrlPlayerNotFound: '%i oyuncuya bulunamadı ya da etkin bir çevirmen değil.'
-  wwctrlRateLimitSetSender: 'Hız sınırını %i saniye olarak ayarlayın.'
+  wwctrlRateLimitSetSender: Hız sınırını %i saniye olarak ayarlayın.
   wwctrlRateLimitOffTarget: '%i oranı sınırı kapatıldı.'
   wwctrlRateLimitSetTarget: '%i oranı sınırını %o saniye olarak ayarlayın.'
-  wwctrlNotATranslator: 'Sen aktif bir çevirmen değilsin! Bunu /wwct ile ayarladığınızdan
-    emin olun.'
-  wwctrlRateLimitAlreadyOffSender: 'Fiyat limitiniz zaten devre dışı bırakıldı.'
+  wwctrlNotATranslator: Sen aktif bir çevirmen değilsin! Bunu /wwct ile ayarladığınızdan
+    emin olun.
+  wwctrlRateLimitAlreadyOffSender: Fiyat limitiniz zaten devre dışı bırakıldı.
   wwctGUIRateButton: Hız Sınırını Ayarla
   wwctGUIConversationRateLimit: Çeviri başına oran sınırı şu anda %i saniye. Yeni
     bir değer ayarlamak için 0'dan büyük bir şey yazın veya sınırı devre dışı bırakmak
     için 0 yazın. Geri dönmek için 0'dan az bir şey yazın.
-  wwctGUITargetPlayerNull: 'Hedef oynatıcının sunucudan bağlantısı kesildi.'
+  wwctGUITargetPlayerNull: Hedef oynatıcının sunucudan bağlantısı kesildi.
   wwcConfigConversationSyncUserDataDelayInput: Kullanıcı verilerinin eşitleme başına
-    geçerli gecikme %i saniyedir. Yeni bir değer ayarlamak için 10'dan büyük bir
-    şey yazın veya geri dönmek için 10'dan küçük bir şey yazın.
+    geçerli gecikme %i saniyedir. Yeni bir değer ayarlamak için 10'dan büyük bir şey
+    yazın veya geri dönmek için 10'dan küçük bir şey yazın.
   wwcConfigGUISyncUserDataButton: Kullanıcı Veri Eşitleme Gecikmesini Değiştir
   wwcConfigSyncTime: Otomatik kullanıcı veri eşitlemesi %i nanosaniye içinde tamamlandı.
   wwcConfigSyncDelayEnabled: Kullanıcı veri eşitleme başına gecikme %i saniye olarak
     ayarlanır.
-  wwcConfigConversationSyncUserDataDelaySuccess: 'Kullanıcı veri eşitleme gecikmesi
-    başarıyla ayarlanır.'
+  wwcConfigConversationSyncUserDataDelaySuccess: Kullanıcı veri eşitleme gecikmesi
+    başarıyla ayarlanır.
   wwcConfigSyncDelayInvalid: Geçersiz kullanıcı veri eşitleme gecikmesi config.yml
     içinde ayarlanır. Varsayılan olarak 7200 saniye...
   wwcConfigCacheInvalid: Çevirmen önbellek boyutu geçersiz. 10'a varsayılan—
-  wwcInventoryErrorPlayer: 'GUI''niz ile hata algılandı. Konsola bir günlük gönderildi.'
+  wwcInventoryErrorPlayer: GUI'niz ile hata algılandı. Konsola bir günlük gönderildi.
   wwcInventoryError: '%i kullanıcısının GUI ile hata tespit edildi. Lütfen bu sorunu
     geliştiriciye bildirin.'
   wwcConfigConversationTranslatorFail: '%i etkinleştirilemedi.'
@@ -207,32 +204,31 @@ Messages:
     Şimdilik, lütfen mevcut sunucu kavanozu bağımsız değişkenlerinize —illegal-access=izin
     ekleyin.
   wwcDeluxeChatIncompatible: Bu eklenti DeluxeChat ile düzgün çalışmayabilir.
-  wwcSignTranslationFail: 'Hedef işaretinizde bir veya daha fazla satır çevrilemiyor.'
-  wwcBookTranslationFail: 'Hedef kitabınızda bir veya daha fazla sayfa çevirilemiyor.'
-  wwctiOffTarget: 'Öğe çevirisi devre dışı bırakıldı.'
-  wwctiOffSender: 'Ürün çevirisi devre dışı.'
-  wwcItemTranslateTitleStock: 'Varsayılan öğe adları çevrilemiyor.'
-  wwcItemTranslateLoreFail: 'Öğe ilmi çevrilemedi.'
-  wwcItemTranslateTitleFail: 'Öğe adı çevrilemedi.'
+  wwcSignTranslationFail: Hedef işaretinizde bir veya daha fazla satır çevrilemiyor.
+  wwcBookTranslationFail: Hedef kitabınızda bir veya daha fazla sayfa çevirilemiyor.
+  wwctiOffTarget: Öğe çevirisi devre dışı bırakıldı.
+  wwctiOffSender: Ürün çevirisi devre dışı.
+  wwcItemTranslateTitleStock: Varsayılan öğe adları çevrilemiyor.
+  wwcItemTranslateLoreFail: Öğe ilmi çevrilemedi.
+  wwcItemTranslateTitleFail: Öğe adı çevrilemedi.
   wwctGUIItemButton: Öğe Çevirisi Değiştir
-  wwcItemTranslateTitleDone: 'Öğe başlığı başarıyla çevrildi.'
+  wwcItemTranslateTitleDone: Öğe başlığı başarıyla çevrildi.
   wwcGUITempItem: Öğe Göstergesi
-  wwcItemTranslateStart: 'Hedef öğe çevriliyor...'
-  wwcSignTranslationFailCatastrophic: 'Hedef işareti çevrilemedi.'
-  wwcItemTranslationFailCatastrophic: 'Hedef öğe çevrilemedi.'
+  wwcItemTranslateStart: Hedef öğe çevriliyor...
+  wwcSignTranslationFailCatastrophic: Hedef işareti çevrilemedi.
+  wwcItemTranslationFailCatastrophic: Hedef öğe çevrilemedi.
   wwcBookTranslateTitleSuccess: 'Çevrilen Kitap Başlığı: %i'
-  wwctiOnSender: 'Öğe çevirisi etkin. Çevirmek için ana elinizdeki bir öğeyle sağ
-    tıklayın!'
-  wwcItemTranslateLoreStart: 'Hedef öğenin ilmi çevriliyor...'
-  wwcItemTranslateLoreDone: 'Öğe irfan başarıyla tercüme edildi.'
+  wwctiOnSender: Öğe çevirisi etkin. Çevirmek için ana elinizdeki bir öğeyle sağ tıklayın!
+  wwcItemTranslateLoreStart: Hedef öğenin ilmi çevriliyor...
+  wwcItemTranslateLoreDone: Öğe irfan başarıyla tercüme edildi.
   wwctiOnTarget: '%i için öğe çevirisi etkinleştirildi.'
-  wwcBookTranslationFailCatastrophic: 'Hedef kitabın çevrilemedi.'
-  wwcBookTranslateTitleFail: 'Kitap başlığı çevrilemedi.'
-  wwcChatTranslationFail: 'Mesajınız çevrilemedi.'
-  wwcInvalidTranslator: 'Geçersiz çevirmen ayarları. Lütfen bu eklentiyi kullanmak
-    için config.yml veya /wwcc ile düzeltin.'
-  wwcNotDoneLoading: 'WorldwideChat hala başlatılıyor. Lütfen kısa bir süre sonra
-    tekrar deneyin.'
+  wwcBookTranslationFailCatastrophic: Hedef kitabın çevrilemedi.
+  wwcBookTranslateTitleFail: Kitap başlığı çevrilemedi.
+  wwcChatTranslationFail: Mesajınız çevrilemedi.
+  wwcInvalidTranslator: Geçersiz çevirmen ayarları. Lütfen bu eklentiyi kullanmak
+    için config.yml veya /wwcc ile düzeltin.
+  wwcNotDoneLoading: WorldwideChat hala başlatılıyor. Lütfen kısa bir süre sonra tekrar
+    deneyin.
   wwcConfigGUIEachTranslatorSettings: '%i Yapılandırma'
   wwcConfigGUIToggleButton: '%i'
   wwcConfigGUIWatsonButton: Watson
@@ -243,7 +239,7 @@ Messages:
   wwcTranslatorErrorThresholdReached: Hata eşiğine ulaşıldı. Bu eklenti şimdi yeniden
     yükleyecek ve tüm çevirmenleri devre dışı bırakacaktır.
   wwcConfigErrorLimitEnabled: Çevirmen hata sınırı %i olarak ayarlandı.
-  wwcTranslatorError: 'Çevirinizi denerken bir sorun oluştu. Lütfen tekrar deneyin.'
+  wwcTranslatorError: Çevirinizi denerken bir sorun oluştu. Lütfen tekrar deneyin.
   wwcTranslatorErrorConsole: '%i kullanıcısı çevirisini denerken bir sorun oluştu.
     Şimdi yığın izini yazdırıyorum.'
   wwcConfigErrorLimitInvalid: Config.yml içinde ayarlanmış geçersiz çevirmen hata
@@ -258,3 +254,24 @@ Messages:
   wwcsTitle: '%i kaydı'
   wwctInvalidOutputLangCode: 'Geçersiz çıktı dili kodu sağlandı! Geçerli lang kodları:
     %o'
+  wwctGUISourceTranslationSelected: Bu dili seçtiniz.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Geçersiz Kıl
+  wwcConfigConversationOverrideTextChange: Lütfen bu geçersiz kılma için yeni bir
+    ileti yazın veya geri dönmek için 0 yazın. Orijinal iletide gördüğünüz yüzde işaretleriyle
+    başlayan değişkenleri eklemeyi unutmayın.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Bu dil zaten aktif!
+  wwcConfigGUIMessagesOverrideChatButton: Varsayılan Eklenti İletilerini Geçersiz
+    Kıl
+  wwcConfigGUIChatMessagesPossibleOverrides: Bir Mesaj Seçin
+  wwcConfigGUIChatMessagesModifyOverride: Varolan Geçersiz Kılmayı Değiştir
+  wwcConfigConversationOverrideDeletionSuccess: Özel ileti geçersiz kılma silindi.
+  wwcConfigGUIChatMessagesOverrideSettings: Varsayılan İletileri Geçersiz Kıl
+  wwcConfigGUIChatMessagesDeadOverride: Bu geçersiz kılma geçersiz veya özgün ileti
+    kaldırıldı. Bunu silmelisin.
+  wwcConfigGUIMessagesAlreadyOverriden: Bu mesaj için zaten bir geçersiz kılma var!
+  wwcConfigGUIChatMessagesOverrideNewButton: Yeni Geçersiz Kılma Ekle
+  wwcConfigGUIMessagesOverrideCustomLabel: Yeni Mesaj
+  wwcConfigConversationOverrideTextChangeSuccess: Yeni ileti başarıyla ayarlandı.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Varolan Metni Değiştir
+  wwcExampleMessage: Bu sahte bir mesaj ve örnek olarak geçersiz kılınması gerekiyor.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Orijinal Mesaj

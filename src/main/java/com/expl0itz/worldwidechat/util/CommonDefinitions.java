@@ -405,12 +405,7 @@ public class CommonDefinitions {
 							false);
 					WorldwideChat.getInstance().getConfigManager().getMainConfig().set("Translator.useAmazonTranslate",
 							false);
-					try {
-						WorldwideChat.getInstance().getConfigManager().getMainConfig()
-								.save(WorldwideChat.getInstance().getConfigManager().getConfigFile());
-					} catch (IOException e1) {
-						e1.printStackTrace();
-					}
+					WorldwideChat.getInstance().getConfigManager().saveMainConfig(false);
 					WorldwideChat.getInstance().reload(null);
 				}
 			} catch (Exception e1) {

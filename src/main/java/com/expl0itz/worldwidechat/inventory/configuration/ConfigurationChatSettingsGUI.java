@@ -1,7 +1,5 @@
 package com.expl0itz.worldwidechat.inventory.configuration;
 
-import java.io.IOException;
-
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -47,6 +45,16 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 		 */
 		sendPluginUpdateChatButton(player, contents);
 
+		/* Third Button: Let user override default plugin messages */
+		ItemStack messagesOverrideChatButton;
+		messagesOverrideChatButton = new ItemStack(Material.WRITABLE_BOOK);
+		ItemMeta messagesOverrideChatMeta = messagesOverrideChatButton.getItemMeta();
+		messagesOverrideChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIMessagesOverrideChatButton"));
+		messagesOverrideChatButton.setItemMeta(messagesOverrideChatMeta);
+		contents.set(1, 3, ClickableItem.of(messagesOverrideChatButton, e -> {
+			ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
+		}));
+		
 		/* Bottom Right Option: Previous Page */
 		ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
 		ItemMeta previousPageMeta = previousPageButton.getItemMeta();
@@ -62,7 +70,7 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 		quitMeta.setDisplayName(ChatColor.RED
 				+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
 		quitButton.setItemMeta(quitMeta);
-		WWCReload rel = new WWCReload(player, null, null, null);
+		WWCReload rel = new WWCReload(player, null, null, new String[0]);
 		contents.set(2, 4, ClickableItem.of(quitButton, e -> {
 			main.removePlayerUsingConfigurationGUI(player);
 			player.closeInventory();
@@ -85,7 +93,7 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 		sendPluginUpdateChatButton(player, contents);
 	}
 
-	public void sendTranslationChatButton(Player player, InventoryContents contents) {
+	private void sendTranslationChatButton(Player player, InventoryContents contents) {
 		ItemStack translationChatButton;
 		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat")) {
 			translationChatButton = new ItemStack(Material.EMERALD_BLOCK);
@@ -99,21 +107,17 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			main.addPlayerUsingConfigurationGUI(player);
 			main.getConfigManager().getMainConfig().set("Chat.sendTranslationChat",
 					!(main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat")));
-			try {
-				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-				final TextComponent successfulChange = Component.text()
-						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcConfigConversationSendTranslationChatSuccess"))
-								.color(NamedTextColor.GREEN))
-						.build();
-				CommonDefinitions.sendMessage(player, successfulChange);
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
+			main.getConfigManager().saveMainConfig(true);
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcConfigConversationSendTranslationChatSuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage(player, successfulChange);
 		}));
 	}
 
-	public void sendPluginUpdateChatButton(Player player, InventoryContents contents) {
+	private void sendPluginUpdateChatButton(Player player, InventoryContents contents) {
 		ItemStack pluginUpdateChatButton;
 		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) {
 			pluginUpdateChatButton = new ItemStack(Material.EMERALD_BLOCK);
@@ -128,17 +132,13 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			main.addPlayerUsingConfigurationGUI(player);
 			main.getConfigManager().getMainConfig().set("Chat.sendPluginUpdateChat",
 					!(main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")));
-			try {
-				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-				final TextComponent successfulChange = Component.text()
-						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcConfigConversationPluginUpdateChatSuccess"))
-								.color(NamedTextColor.GREEN))
-						.build();
-				CommonDefinitions.sendMessage(player, successfulChange);
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
+			main.getConfigManager().saveMainConfig(true);
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcConfigConversationPluginUpdateChatSuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage(player, successfulChange);
 		}));
 	}
 }

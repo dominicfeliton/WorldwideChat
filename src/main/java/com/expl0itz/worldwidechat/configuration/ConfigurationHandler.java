@@ -8,8 +8,8 @@ import java.util.HashMap;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.scheduler.BukkitRunnable;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
@@ -27,8 +27,8 @@ public class ConfigurationHandler {
 
 	private File messagesFile;
 	private File configFile;
-	private FileConfiguration messagesConfig;
-	private FileConfiguration mainConfig;
+	private YamlConfiguration messagesConfig;
+	private YamlConfiguration mainConfig;
 
 	/* Init Main Config Method */
 	public void initMainConfig() {
@@ -72,13 +72,7 @@ public class ConfigurationHandler {
 		mainConfig.addDefault("Translator.maxResponseTime", 7);
 
 		mainConfig.options().copyDefaults(true);
-		try {
-			mainConfig.save(configFile);
-		} catch (IOException e) {
-			e.printStackTrace();
-			Bukkit.getPluginManager().disablePlugin(main);
-			return;
-		}
+		saveMainConfig(false);
 
 		/* Get plugin lang */
 		for (int i = 0; i < CommonDefinitions.supportedPluginLangCodes.length; i++) {
@@ -106,33 +100,18 @@ public class ConfigurationHandler {
 			
 			tempConfig.set("DoNotTouchThis.Version", main.getCurrentMessagesConfigVersion());
 			
-			try {
-				tempConfig.save(messagesFile);
-			} catch (IOException e) {
-				e.printStackTrace();
-				Bukkit.getPluginManager().disablePlugin(main);
-				return;
-			}
+			saveCustomConfig(tempConfig, messagesFile, false);
 		}
 
 		/* Load config */
 		messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
 		
-		/* Save messages config */
-		try {
-			messagesConfig.save(messagesFile);
-		} catch (IOException e) {
-			e.printStackTrace();
-			Bukkit.getPluginManager().disablePlugin(main);
-			return;
-		}
-		
 		/* Check if version value is out of date...*/
 		String currentMessagesConfigVersion = main.getCurrentMessagesConfigVersion();
 		
-		HashMap<String, String> oldOverrides = new HashMap<String, String>();
-		if (!messagesConfig.getString("DoNotTouchThis.Version").equals(currentMessagesConfigVersion)) {
+		if (messagesConfig.getString("DoNotTouchThis.Version") == null || !messagesConfig.getString("DoNotTouchThis.Version").equals(currentMessagesConfigVersion)) {
 			main.getLogger().warning("Upgrading out-of-date messages config!");
+			HashMap<String, String> oldOverrides = new HashMap<String, String>();
 			
 			/* Copy overrides section */
 			if (messagesConfig.getConfigurationSection("Overrides") != null) {
@@ -157,13 +136,7 @@ public class ConfigurationHandler {
 			}
 			
 			/* Save messages config */
-			try {
-				messagesConfig.save(messagesFile);
-			} catch (IOException e) {
-				e.printStackTrace();
-				Bukkit.getPluginManager().disablePlugin(main);
-				return;
-			}
+			saveMessagesConfig(false);
 			
 			/* Success :) */
 			main.getLogger().warning("Upgrade successful.");
@@ -314,7 +287,8 @@ public class ConfigurationHandler {
 				getMainConfig().set("Translator.useWatsonTranslate", false);
 				getMainConfig().set("Translator.useGoogleTranslate", false);
 				getMainConfig().set("Translator.useAmazonTranslate", false);
-				getMainConfig().save(configFile);
+				
+				saveMainConfig(false);
 				outName = "Invalid";
 			}
 		} catch (Exception e) {
@@ -332,7 +306,7 @@ public class ConfigurationHandler {
 		if (outName.equals("Invalid")) {
 			main.getLogger().severe(CommonDefinitions.getMessage("wwcInvalidTranslator"));
 		} else {
-			main.getLogger().info(ChatColor.LIGHT_PURPLE
+			main.getLogger().info(ChatColor.GREEN
 					+ CommonDefinitions.getMessage("wwcConfigConnectionSuccess", new String[] {outName}));
 		}
 		main.setTranslatorName(outName);
@@ -341,7 +315,7 @@ public class ConfigurationHandler {
 	/* Per User Settings Saver */
 	public void createUserDataConfig(ActiveTranslator inTranslator) {
 		File userSettingsFile;
-		FileConfiguration userSettingsConfig;
+		YamlConfiguration userSettingsConfig;
 		userSettingsFile = new File(main.getDataFolder() + File.separator + "data" + File.separator,
 				inTranslator.getUUID() + ".yml");
 
@@ -349,38 +323,34 @@ public class ConfigurationHandler {
 		userSettingsConfig = YamlConfiguration.loadConfiguration(userSettingsFile);
 
 		/* Set data */
-		try {
-			userSettingsConfig.createSection("inLang");
-			userSettingsConfig.set("inLang", inTranslator.getInLangCode());
+		userSettingsConfig.createSection("inLang");
+		userSettingsConfig.set("inLang", inTranslator.getInLangCode());
 
-			userSettingsConfig.createSection("outLang");
-			userSettingsConfig.set("outLang", inTranslator.getOutLangCode());
+		userSettingsConfig.createSection("outLang");
+		userSettingsConfig.set("outLang", inTranslator.getOutLangCode());
 
-			userSettingsConfig.createSection("bookTranslation");
-			userSettingsConfig.set("bookTranslation", inTranslator.getTranslatingBook());
+		userSettingsConfig.createSection("bookTranslation");
+		userSettingsConfig.set("bookTranslation", inTranslator.getTranslatingBook());
 
-			userSettingsConfig.createSection("signTranslation");
-			userSettingsConfig.set("signTranslation", inTranslator.getTranslatingSign());
+		userSettingsConfig.createSection("signTranslation");
+		userSettingsConfig.set("signTranslation", inTranslator.getTranslatingSign());
 
-			userSettingsConfig.createSection("itemTranslation");
-			userSettingsConfig.set("itemTranslation", inTranslator.getTranslatingItem());
+		userSettingsConfig.createSection("itemTranslation");
+		userSettingsConfig.set("itemTranslation", inTranslator.getTranslatingItem());
 
-			userSettingsConfig.createSection("rateLimit");
-			userSettingsConfig.set("rateLimit", inTranslator.getRateLimit());
+		userSettingsConfig.createSection("rateLimit");
+		userSettingsConfig.set("rateLimit", inTranslator.getRateLimit());
 
-			userSettingsConfig.createSection("rateLimitPreviousRecordedTime");
-			userSettingsConfig.set("rateLimitPreviousRecordedTime", inTranslator.getRateLimitPreviousTime());
+		userSettingsConfig.createSection("rateLimitPreviousRecordedTime");
+		userSettingsConfig.set("rateLimitPreviousRecordedTime", inTranslator.getRateLimitPreviousTime());
 
-			userSettingsConfig.save(userSettingsFile);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		saveCustomConfig(userSettingsConfig, userSettingsFile, false);
 	}
 
 	/* Stats File Creator */
 	public void createStatsConfig(PlayerRecord inRecord) {
 		File userStatsFile;
-		FileConfiguration userStatsConfig;
+		YamlConfiguration userStatsConfig;
 		userStatsFile = new File(main.getDataFolder() + File.separator + "stats" + File.separator,
 				inRecord.getUUID() + ".yml");
 
@@ -388,22 +358,65 @@ public class ConfigurationHandler {
 		userStatsConfig = YamlConfiguration.loadConfiguration(userStatsFile);
 
 		/* Set data */
-		try {
-			userStatsConfig.createSection("lastTranslationTime");
-			userStatsConfig.set("lastTranslationTime", inRecord.getLastTranslationTime());
+		userStatsConfig.createSection("lastTranslationTime");
+		userStatsConfig.set("lastTranslationTime", inRecord.getLastTranslationTime());
 
-			userStatsConfig.createSection("attemptedTranslations");
-			userStatsConfig.set("attemptedTranslations", inRecord.getAttemptedTranslations());
+		userStatsConfig.createSection("attemptedTranslations");
+		userStatsConfig.set("attemptedTranslations", inRecord.getAttemptedTranslations());
 
-			userStatsConfig.createSection("successfulTranslations");
-			userStatsConfig.set("successfulTranslations", inRecord.getSuccessfulTranslations());
+		userStatsConfig.createSection("successfulTranslations");
+		userStatsConfig.set("successfulTranslations", inRecord.getSuccessfulTranslations());
 
-			userStatsConfig.save(userStatsFile);
-		} catch (IOException e) {
-			e.printStackTrace();
+		saveCustomConfig(userStatsConfig, userStatsFile, false);
+	}	
+	
+	/* Main config save method */
+	public void saveMainConfig(boolean async) {
+		if (async && main.isEnabled()) {
+			new BukkitRunnable() {
+				@Override
+				public void run() {
+					saveMainConfig(false);
+				}
+			}.runTaskAsynchronously(main);
+		}
+		saveCustomConfig(mainConfig, configFile, false);
+	}
+	
+	/* Messages config save method */
+	public void saveMessagesConfig(boolean async) {
+		if (async && main.isEnabled()) {
+			new BukkitRunnable() {
+				@Override
+				public void run() {
+					saveMessagesConfig(false);
+				}
+			}.runTaskAsynchronously(main);
+		}
+		saveCustomConfig(messagesConfig, messagesFile, false);
+	}
+	
+	/* Custom config save method */
+	public synchronized void saveCustomConfig(YamlConfiguration inConfig, File dest, boolean async) {
+		if (async && main.isEnabled()) {
+			new BukkitRunnable() {
+				@Override
+				public void run() {
+					saveCustomConfig(inConfig, dest, false);
+				}
+			}.runTaskAsynchronously(main);
+		}
+		if (inConfig != null && dest != null) {
+			try {
+				inConfig.save(dest);
+			} catch (IOException e) {
+				e.printStackTrace();
+				Bukkit.getPluginManager().disablePlugin(main);
+				return;
+			}
 		}
 	}
-
+	
 	/* Sync user data to disk */
 	public void syncData() {
 		if (!main.getTranslatorName().equals("Invalid")) {
@@ -448,28 +461,12 @@ public class ConfigurationHandler {
 	}
 
 	/* Getters */
-	public FileConfiguration getMainConfig() {
+	public YamlConfiguration getMainConfig() {
 		return mainConfig;
 	}
 
-	public FileConfiguration getMessagesConfig() {
+	public YamlConfiguration getMessagesConfig() {
 		return messagesConfig;
-	}
-
-	public File getUserSettingsFile(String uuid) {
-		File outFile = new File(main.getDataFolder() + File.separator + "data" + File.separator, uuid + ".yml");
-		if (outFile.exists()) {
-			return outFile;
-		}
-		return null;
-	}
-
-	public File getStatsFile(String uuid) {
-		File outFile = new File(main.getDataFolder() + File.separator + "stats" + File.separator, uuid + ".yml");
-		if (outFile.exists()) {
-			return outFile;
-		}
-		return null;
 	}
 
 	public File getConfigFile() {

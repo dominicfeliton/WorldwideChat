@@ -1,7 +1,5 @@
 package com.expl0itz.worldwidechat.conversations.configuration;
 
-import java.io.IOException;
-
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.NumericPrompt;
 import org.bukkit.conversations.Prompt;
@@ -32,18 +30,14 @@ public class TranslatorSettingsGlobalRateConversation extends NumericPrompt {
 		if (input.intValue() > -1) {
 			main.setRateLimit(input.intValue());
 			main.getConfigManager().getMainConfig().set("Translator.rateLimit", input.intValue());
-			try {
-				main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-				final TextComponent successfulChange = Component.text()
-						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcConfigConversationRateLimitSuccess"))
-								.color(NamedTextColor.GREEN))
-						.build();
-				CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-				main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcConfigConversationRateLimitSuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
+			main.getConfigManager().saveMainConfig(true);
 		}
 		ConfigurationTranslatorSettingsGUI.translatorSettings.open((Player) context.getForWhom());
 		return END_OF_CONVERSATION;

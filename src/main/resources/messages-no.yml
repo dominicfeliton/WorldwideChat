@@ -1,19 +1,19 @@
 Messages:
-  wwcgAutoTranslateStart: 'Oversetter nå global chat til %o.'
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'Global chat blir oversatt
-    til %o.'
+  wwcgAutoTranslateStart: Oversetter nå global chat til %o.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Global chat blir oversatt til
+    %o.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Endre Amazon-tilgangsnøkkel
-  wwcrFail: 'Kan ikke laste WorldwideChat på nytt.'
+  wwcrFail: Kan ikke laste WorldwideChat på nytt.
   wwcConfigGUIUpdateCheckerButton: Endre Se etter oppdateringer forsinkelse
   wwcUpdaterFailedGeneric: Kan ikke se etter WorldwideChat-oppdateringer.
   wwcConfigConversationUpdateCheckerInput: Gjeldende forsinkelse på oppdateringskontrollen
     er %i sekunder. Skriv inn noe som er større enn 10 for å angi en ny verdi, eller
     noe mindre enn 10 for å gå tilbake.
   wwctGUIMainMenuGlobal: Meny for global oversettelse
-  wwcConfigConversationPluginUpdateChatSuccess: 'Plugin update chat påminnelse slått
-    vellykket.'
-  wwctbOnTarget: 'Bokoversettelse aktivert for %i.'
-  wwcsNotATranslator: 'Det er ingen poster ennå tilgjengelig for %i.'
+  wwcConfigConversationPluginUpdateChatSuccess: Plugin update chat påminnelse slått
+    vellykket.
+  wwctbOnTarget: Bokoversettelse aktivert for %i.
+  wwcsNotATranslator: Det er ingen poster ennå tilgjengelig for %i.
   wwcConfigGUIbStatsButton: Veksle bStats
   wwctGUINewTranslationSource: Velg kildespråk
   wwcConfigConnectionFailed: Kan ikke koble til %o. Kontroller at legitimasjonen og
@@ -22,173 +22,168 @@ Messages:
   wwctGUIMainMenuPlayer: Oversettelsesmeny på %i
   wwctGUIBookButton: Toggle Book Oversettelse
   wwcLangDetected: Oppdaget språk %o.
-  wwcBookTranslateStart: 'Oversette målet bok...'
+  wwcBookTranslateStart: Oversette målet bok...
   wwcConfigDisabledbStats: Deaktivert bStats.
-  wwctsOffSender: 'Signer oversettelse deaktivert.'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Global chat blir oversatt,
-    men chatten din blir oversatt fra %i til %o.'
+  wwctsOffSender: Signer oversettelse deaktivert.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat blir oversatt,
+    men chatten din blir oversatt fra %i til %o.
   wwcUpdaterParserFailed: Kan ikke analysere oppdateringsdata fra Github.
-  wwctAutoTranslateStart: 'Oversetter nå all chatten til %o.'
+  wwctAutoTranslateStart: Oversetter nå all chatten til %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Gjeldende hemmelig nøkkel er
     %i. Skriv inn en hemmelig nøkkel for Amazon, eller skriv 0 for å gå tilbake.
-  wwctbOffSender: 'Bokoversettelse deaktivert.'
+  wwctbOffSender: Bokoversettelse deaktivert.
   wwcConfigGUIAmazonTranslateButton: Amazon oversette
-  wwcConfigConversationLangSuccess: 'Plugin språk endret vellykket.'
+  wwcConfigConversationLangSuccess: Plugin språk endret vellykket.
   wwcsSuccessfulTranslations: 'Vellykkede oversettelser: %i'
-  wwctTranslationStoppedOtherPlayer: 'Chat oversettelse for %i er stoppet.'
+  wwctTranslationStoppedOtherPlayer: Chat oversettelse for %i er stoppet.
   wwcConfigConversationTranslationCacheInput: Gjeldende grense for oversettelse er
     %i-setninger. Skriv inn noe større enn 0 for å angi en ny verdi, eller skriv 0
     for å deaktivere oversettelsesbufferen. Skriv inn noe mindre enn 0 for å gå tilbake.
-  wwctbOffTarget: 'Bokoversettelse deaktivert for %i.'
+  wwctbOffTarget: Bokoversettelse deaktivert for %i.
   wwcConfigGUIGeneralSettings: Generell konfigurasjon
   wwcInvalidLang: Ugyldig språk i config.yml. Defaulting til en...
-  wwcConfigConversationAmazonTranslateRegionSuccess: 'Amazon regionen satt vellykket.'
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazon regionen satt vellykket.
   wwcConfigRateLimitEnabled: Global satsgrense aktivert og satt til %i sekunder.
-  wwcBadPerms: 'Du har ikke de nødvendige tillatelsene for å utføre denne kommandoen!'
+  wwcBadPerms: Du har ikke de nødvendige tillatelsene for å utføre denne kommandoen!
   wwcConfigGUILangButton: Endre plugin-språk
   wwctGUISignButton: Toggle Sign Oversettelse
   wwcUpdaterOutOfDate: WorldwideChat er utdatert. Oppdater til den nyeste versjonen,
     %i.
-  wwcConfigGUIChangesNotSaved: 'Endringene trer kanskje ikke i kraft før du enten
-    kjører /wwcr, eller klikker på den røde barrieren i /wwcc.'
+  wwcConfigGUIChangesNotSaved: Endringene trer kanskje ikke i kraft før du enten kjører
+    /wwcr, eller klikker på den røde barrieren i /wwcc.
   wwcConfigGUINextPageButton: Neste side
   wwctbTranslatePageFail: (Kan ikke oversette denne siden) %i
   wwcConfigInvalidTranslatorSettings: Ugyldige oversetterinnstillinger! Aktiver bare
     én oversetter i din config.yml.
   wwcConfigGUIQuitButton: Avslutt og lagre endringer
-  wwctPlayerNotFound: 'Spiller %jeg ble ikke funnet.'
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'Global chat blir oversatt,
-    men chatten din blir oversatt til %o.'
+  wwctPlayerNotFound: Spiller %jeg ble ikke funnet.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat blir oversatt,
+    men chatten din blir oversatt til %o.
   wwcConfigGUIGlobalRateLimit: Endre Global Rate
-  wwctGUIBackToSourceLanguageButton: Tilbake til menyen Kildespråk
   wwcConfigGUIAmazonTranslateRegionButton: Endre Amazon-regionen
   wwcConfigConversationLangInput: 'Gjeldende plugin-språk er %i. Angi en gyldig språkkode,
     eller skriv inn 0 for å avbryte. Gyldige språkkoder: %o'
-  wwcConfigConversationLangInvalid: 'Ugyldig språkkode!'
-  wwctTranslationStopped: 'Chatteoversettelsen din er stoppet.'
+  wwcConfigConversationLangInvalid: Ugyldig språkkode!
+  wwctTranslationStopped: Chatteoversettelsen din er stoppet.
   wwcConfigGUIWatsonAPIKeyButton: Endre Watson API-nøkkel
   wwcEnabled: Aktivert WorldwideChat versjon %i.
-  wwcgLangToLangStart: 'Oversetter nå global chat fra %i til %o.'
-  wwctbOnSender: 'Bokoversettelse aktivert. Høyreklikk mens du holder en bok for
-    å oversette den!'
+  wwcgLangToLangStart: Oversetter nå global chat fra %i til %o.
+  wwctbOnSender: Bokoversettelse aktivert. Høyreklikk mens du holder en bok for å
+    oversette den!
   wwcListenersInitialized: Initialiserte lyttere.
   wwcUserDataCorrupted: Funnet og flytttt %i ødelagte eller gamle brukerdatafiler.
     De vil bli slettet på neste reload.
   wwcConfigGUIPluginUpdateChatButton: Send Chat Påminnelse for oppdateringer av plugin
-  wwcConfigConversationSendTranslationChatSuccess: 'Aktiv oversetterchat påminnelse
-    aktivert.'
-  wwctsOffTarget: 'Signeroversettelse deaktivert for %i.'
+  wwcConfigConversationSendTranslationChatSuccess: Aktiv oversetterchat påminnelse
+    aktivert.
+  wwctsOffTarget: Signeroversettelse deaktivert for %i.
   wwcUpdaterConnectionFailed: Kan ikke se etter de siste oppdateringene på Github.
-  watsonNotFoundExceptionNotification: 'Kan ikke oversette dine innspill lenger.'
+  watsonNotFoundExceptionNotification: Kan ikke oversette dine innspill lenger.
   wwcConfigConversationWatsonAPIKeyInput: Gjeldende API-nøkkel er %i. Skriv inn en
     API-nøkkel for Watson, eller skriv 0 for å gå tilbake.
   wwctGUIStopButton: Slutt å oversette
-  wwcgTranslationStopped: 'Global chat-oversettelse er stoppet.'
-  wwctAutoTranslateStartOtherPlayer: 'Oversetter nå chatten av %i til %o.'
+  wwcgTranslationStopped: Global chat-oversettelse er stoppet.
+  wwctAutoTranslateStartOtherPlayer: Oversetter nå chatten av %i til %o.
   wwcUpdaterFutureDate: Denne forekomsten av WorldwideChat har en større versjon enn
     den nyeste offentlige.
-  wwcConfigConversationPrefixSuccess: 'Prefiks endret.'
+  wwcConfigConversationPrefixSuccess: Prefiks endret.
   wwcConfigGUIGoogleTranslateAPIKeyButton: Endre Google Translate API-nøkkel
   wwcSignDeletedOrTooLong: 'Måltegnet ble enten slettet eller oversettelsen var for
     lang. Oversettelse:'
-  wwctsOnTarget: 'Signeroversettelse aktivert for %i.'
+  wwctsOnTarget: Signeroversettelse aktivert for %i.
   wwcConfigCacheDisabled: Translator-buffer deaktivert.
   wwcConfigConversationWatsonURLInput: Gjeldende URL-adresse er %i. Skriv inn en service-URL
     for Watson, eller skriv 0 for å gå tilbake.
-  wwcOnJoinTranslationNotificationSourceLang: 'Chatten din blir oversatt fra %i til
-    %o.'
-  wwcBookDone: 'Bok oversatt med hell.'
-  wwctsOnSender: 'Signer oversettelse aktivert. Høyreklikk på et skilt for å oversette
-    det!'
-  watsonColorCodeWarning: 'Bruk av fargekoder kan gi deg uforutsigbare resultater.'
+  wwcOnJoinTranslationNotificationSourceLang: Chatten din blir oversatt fra %i til
+    %o.
+  wwcBookDone: Bok oversatt med hell.
+  wwctsOnSender: Signer oversettelse aktivert. Høyreklikk på et skilt for å oversette
+    det!
+  watsonColorCodeWarning: Bruk av fargekoder kan gi deg uforutsigbare resultater.
   wwctGUITranslationButton: Begynn å oversette
   wwctGUIAutoDetectButton: Registrer kildespråk
   wwcUpdaterUpToDate: WorldwideChat er oppdatert!
   wwcConfigConversationAmazonTranslateRegionInput: Gjeldende område er %i. Angi et
     område for Amazon, eller skriv 0 for å gå tilbake.
-  wwcNoConsole: 'Denne kommandoen kan bare drives av en spiller.'
+  wwcNoConsole: Denne kommandoen kan bare drives av en spiller.
   wwcInitializationFail: Kan ikke initialisere WorldwideChat.
-  wwcrSuccess: 'Vellykket lastet WorldwideChat'
-  wwcPlayerNotFound: 'Spiller %jeg ble ikke funnet.'
-  wwcUpdaterOutOfDateChat: 'WorldwideChat er utdatert. Oppdater til den nyeste versjonen.'
-  wwcConfigConversationRateLimitSuccess: 'Rate limit satt vellykket.'
-  wwcConfigConversationWatsonURLSuccess: 'Watson URL satt vellykket.'
-  wwctbPlayerNotFound: 'Spiller %i er enten ikke funnet, eller er ikke en aktiv oversetter.'
-  wwcConfigConversationTranslationCacheSuccess: 'Oversettelse cache grensen satt
-    vellykket.'
-  wwctInvalidArgs: 'Ugyldige argumenter oppgitt!'
+  wwcrSuccess: Vellykket lastet WorldwideChat
+  wwcPlayerNotFound: Spiller %jeg ble ikke funnet.
+  wwcUpdaterOutOfDateChat: WorldwideChat er utdatert. Oppdater til den nyeste versjonen.
+  wwcConfigConversationRateLimitSuccess: Rate limit satt vellykket.
+  wwcConfigConversationWatsonURLSuccess: Watson URL satt vellykket.
+  wwctbPlayerNotFound: Spiller %i er enten ikke funnet, eller er ikke en aktiv oversetter.
+  wwcConfigConversationTranslationCacheSuccess: Oversettelse cache grensen satt vellykket.
+  wwctInvalidArgs: Ugyldige argumenter oppgitt!
   wwcConfigGUIPrefixButton: Endre prefiks for plugin
-  wwctSameLangError: 'Du kan ikke oversette til samme språk!'
+  wwctSameLangError: Du kan ikke oversette til samme språk!
   wwctGUINewTranslationTarget: Velg et målspråk
-  wwctLangToLangStartOtherPlayer: 'Oversetter nå chatten av %o fra %i til %e.'
+  wwctLangToLangStartOtherPlayer: Oversetter nå chatten av %o fra %i til %e.
   wwcConfigConnectionSuccess: Tilkoblet til %o!
   wwcConfigGUIGoogleTranslateButton: Google Oversett
   wwcsIsActiveTranslator: 'Er aktiv oversetter: %i'
-  wwctLangToLangStart: 'Oversetter nå all chatten fra %i til %o.'
+  wwctLangToLangStart: Oversetter nå all chatten fra %i til %o.
   wwcConfigConversationPrefixInput: Gjeldende prefiks er %i. Skriv inn et nytt, eller
     skriv inn 0 for å gå tilbake.
   wwcConfigGUIPreviousPageButton: Forrige side
   wwcConfigGUITranslatorCacheButton: Endre grensen for oversettelse cache
-  wwcConfigConversationbStatsSuccess: 'Vellykket vekslede bStats.'
-  wwcSignDone: 'Signer oversatt.'
+  wwcConfigConversationbStatsSuccess: Vellykket vekslede bStats.
+  wwcSignDone: Signer oversatt.
   wwcConfigInvalidPrefixSettings: Kan ikke lese prefikset. Ved hjelp av standard...
   wwcConfigRateLimitInvalid: Dårlig rentegrense satt i config.yml. Defaulting til
     0 sekunder...
-  wwcSignTranslateStart: 'Oversette målskilt...'
+  wwcSignTranslateStart: Oversette målskilt...
   wwcConfigGUIChatSettings: Chat konfigurasjon
   wwcConfigGUIWatsonURLButton: Endre URL-adressen til Watson Service
-  wwcConfigConversationUpdateCheckerSuccess: 'Oppdater kontrollforsinkelsen satt
-    vellykket.'
+  wwcConfigConversationUpdateCheckerSuccess: Oppdater kontrollforsinkelsen satt vellykket.
   wwcUnsupportedVersion: 'Du kjører en versjon som ikke støttes av Bukkit, Spigot
     eller Paper. Støttede versjoner:'
-  wwctGUIBackToMainMenuButton: Tilbake til hovedoversettingsmeny
-  wwcGlobalOnJoinTranslationNotificationSourceLang: 'Global chat blir oversatt fra
-    %i til %o.'
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Global chat blir oversatt fra
+    %i til %o.
   wwcConfigGUITranslatorSettings: Konfigurasjon av oversettelse
   wwcConfigConversationGoogleTranslateAPIKeyInput: Gjeldende API-nøkkel er %i. Skriv
     inn en API-nøkkel for Google Translate, eller skriv 0 for å gå tilbake.
   wwcConfigConversationRateLimitInput: Gjeldende global satsgrense per oversettelse
     er %i sekunder. Skriv inn noe større enn 0 for å angi en ny verdi, eller skriv
     0 for å deaktivere grensen. Skriv inn noe mindre enn 0 for å gå tilbake.
-  wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Google Translate API nøkkel
-    satt vellykket.'
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API nøkkel satt
+    vellykket.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Endre Amazon hemmelig nøkkel
-  wwcVersion: 'WorldwideChat, versjon'
+  wwcVersion: WorldwideChat, versjon
   wwcsAttemptedTranslations: 'Forsøk på oversettelser: %i'
-  wwcConfigConversationAmazonTranslateSecretKeySuccess: 'Amazon hemmelig nøkkel satt
-    vellykket.'
-  wwcConfigConversationWatsonAPIKeySuccess: 'Watson API nøkkel satt vellykket.'
-  wwcRateLimit: 'Oversettelsene dine er prisbegrenset. Vent en annen %i sekunder.'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon hemmelig nøkkel satt
+    vellykket.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API nøkkel satt vellykket.
+  wwcRateLimit: Oversettelsene dine er prisbegrenset. Vent en annen %i sekunder.
   wwcConfigCacheEnabled: Translator cache aktivert og satt til en grense på %i.
   wwctGUIExistingTranslationButton: Overskriv gjeldende oversettelsesøkt
-  wwcOnJoinTranslationNotificationNoSourceLang: 'Chatten din blir oversatt til %o.'
+  wwcOnJoinTranslationNotificationNoSourceLang: Chatten din blir oversatt til %o.
   wwcUserDataReloaded: Lastet alle lagrede brukerdata.
   wwcConfigGUISendTranslationChatButton: Send chatpåminnelse til aktiv oversetter
     ved innlogging
   wwcsLastTranslationTime: 'Siste (vellykket) oversettelsestid: %i'
-  wwctbNotATranslator: 'Du er ikke en aktiv oversetter! Sørg for, at du har angivet
-    dette med /wwct.'
+  wwctbNotATranslator: Du er ikke en aktiv oversetter! Sørg for, at du har angivet
+    dette med /wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Gjeldende tilgangsnøkkel er
     %i. Skriv inn en tilgangsnøkkel for Amazon, eller skriv 0 for å gå tilbake.
-  wwcConfigConversationAmazonTranslateAccessKeySuccess: 'Amazon tilgangsnøkkel satt
-    vellykket.'
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon tilgangsnøkkel satt
+    vellykket.
   wwcConfigBadUpdateDelay: Ugyldig oppdateringforsinkelse satt i config.yml. Defaulting
     til 86400 sekunder...
-  wwctrlRateLimitOffSender: 'Slått av prisgrensen.'
-  wwctrlRateLimitAlreadyOffTarget: 'Satsgrensen på %i er allerede deaktivert.'
-  wwctrlPlayerNotFound: 'Spiller %i er enten ikke funnet, eller er ikke en aktiv
-    oversetter.'
-  wwctrlRateLimitSetSender: 'Angi hastighetsgrensen til %i sekunder.'
-  wwctrlRateLimitOffTarget: 'Slått av satsgrensen på %i.'
-  wwctrlRateLimitSetTarget: 'Angi hastighetsgrensen på %i til %o sekunder.'
-  wwctrlNotATranslator: 'Du er ikke en aktiv oversetter! Sørg for, at du har angivet
-    dette med /wwct.'
-  wwctrlRateLimitAlreadyOffSender: 'Din satsgrense er allerede deaktivert.'
+  wwctrlRateLimitOffSender: Slått av prisgrensen.
+  wwctrlRateLimitAlreadyOffTarget: Satsgrensen på %i er allerede deaktivert.
+  wwctrlPlayerNotFound: Spiller %i er enten ikke funnet, eller er ikke en aktiv oversetter.
+  wwctrlRateLimitSetSender: Angi hastighetsgrensen til %i sekunder.
+  wwctrlRateLimitOffTarget: Slått av satsgrensen på %i.
+  wwctrlRateLimitSetTarget: Angi hastighetsgrensen på %i til %o sekunder.
+  wwctrlNotATranslator: Du er ikke en aktiv oversetter! Sørg for, at du har angivet
+    dette med /wwct.
+  wwctrlRateLimitAlreadyOffSender: Din satsgrense er allerede deaktivert.
   wwctGUIRateButton: Angi satsgrense
   wwctGUIConversationRateLimit: Satsgrensen per oversettelse er for nåtid %i sekunder.
     Skriv inn noe større enn 0 for å angi en ny verdi, eller skriv 0 for å deaktivere
     grensen. Skriv inn noe mindre enn 0 for å gå tilbake.
-  wwctGUITargetPlayerNull: 'Målspilleren koblet fra serveren.'
+  wwctGUITargetPlayerNull: Målspilleren koblet fra serveren.
   wwcConfigConversationSyncUserDataDelayInput: Gjeldende forsinkelse per synkronisering
     av brukerdata er %i sekunder. Skriv inn noe som er større enn 10 for å angi en
     ny verdi, eller noe mindre enn 10 for å gå tilbake.
@@ -196,47 +191,47 @@ Messages:
   wwcConfigSyncTime: Automatisk synkronisering av brukerdata fullført i %i nanosekunder.
   wwcConfigSyncDelayEnabled: Forsinkelse per brukerdatasynkronisering satt til %i
     sekunder.
-  wwcConfigConversationSyncUserDataDelaySuccess: 'Bruker data synkronisering forsinkelse
-    satt vellykket.'
+  wwcConfigConversationSyncUserDataDelaySuccess: Bruker data synkronisering forsinkelse
+    satt vellykket.
   wwcConfigSyncDelayInvalid: Ugyldig forsinkelse for synkronisering av brukerdata
     satt i config.yml. Defaulting til 7200 sekunder...
   wwcConfigCacheInvalid: Oversetterbufferstørrelse ugyldig. Defaulting til 10...
-  wwcInventoryErrorPlayer: 'Feil oppdaget med GUI. En logg er sendt til konsollen.'
+  wwcInventoryErrorPlayer: Feil oppdaget med GUI. En logg er sendt til konsollen.
   wwcInventoryError: Feil oppdaget med brukerbrukerbrukeren %i. Rapporter dette problemet
     til utvikleren.
-  wwcConfigConversationTranslatorFail: 'Kan ikke aktivere %i.'
+  wwcConfigConversationTranslatorFail: Kan ikke aktivere %i.
   wwcConfigConversationConsoleTranslatorSuccess: Brukeren %i aktiveret %o.
-  wwcConfigConversationTranslatorSuccess: 'Aktivert %i.'
+  wwcConfigConversationTranslatorSuccess: Aktivert %i.
   wwcConfigConversationConsoleTranslatorFail: Brukeren %i kunne ikke aktivere %o.
   wwcWatson117Warning: Watson har ikke initialisert på grunn av en InAccessibleObjectException.
     For nå, vennligst legg til —illegal-access=tilladelse til dine eksisterende server
     jar argumenter.
   wwcDeluxeChatIncompatible: Dette plugin fungerer muligvis ikke korrekt med DeluxeChat.
-  wwcSignTranslationFail: 'Kan ikke oversette én eller flere linjer på måltegnet.'
-  wwcBookTranslationFail: 'Kan ikke oversette én eller flere sider i målboken.'
-  wwctiOffTarget: 'Vareoversettelse deaktivert for %i.'
-  wwctiOffSender: 'Vareoversettelse deaktivert.'
-  wwcItemTranslateTitleStock: 'Kan ikke oversette standard varenavn.'
-  wwcItemTranslateLoreFail: 'Kan ikke oversette varelore.'
-  wwcItemTranslateTitleFail: 'Kan ikke oversette elementnavn.'
+  wwcSignTranslationFail: Kan ikke oversette én eller flere linjer på måltegnet.
+  wwcBookTranslationFail: Kan ikke oversette én eller flere sider i målboken.
+  wwctiOffTarget: Vareoversettelse deaktivert for %i.
+  wwctiOffSender: Vareoversettelse deaktivert.
+  wwcItemTranslateTitleStock: Kan ikke oversette standard varenavn.
+  wwcItemTranslateLoreFail: Kan ikke oversette varelore.
+  wwcItemTranslateTitleFail: Kan ikke oversette elementnavn.
   wwctGUIItemButton: Veksle elementoversettelse
-  wwcItemTranslateTitleDone: 'Oversatt element tittelen vellykket.'
+  wwcItemTranslateTitleDone: Oversatt element tittelen vellykket.
   wwcGUITempItem: Vare Visning
-  wwcItemTranslateStart: 'Oversette målet element...'
-  wwcSignTranslationFailCatastrophic: 'Kan ikke oversette måltegn.'
-  wwcItemTranslationFailCatastrophic: 'Kan ikke oversette målobjekt.'
+  wwcItemTranslateStart: Oversette målet element...
+  wwcSignTranslationFailCatastrophic: Kan ikke oversette måltegn.
+  wwcItemTranslationFailCatastrophic: Kan ikke oversette målobjekt.
   wwcBookTranslateTitleSuccess: 'Oversatt boktittel: %i'
-  wwctiOnSender: 'Vareoversettelse aktivert. Høyreklikk med et element i hovedhånden
-    for å oversette det!'
-  wwcItemTranslateLoreStart: 'Oversette lore av målet element...'
-  wwcItemTranslateLoreDone: 'Oversatt element lore vellykket.'
-  wwctiOnTarget: 'Vareoversettelse aktivert for %i.'
-  wwcBookTranslationFailCatastrophic: 'Kan ikke oversette målboken.'
-  wwcBookTranslateTitleFail: 'Kan ikke oversette boktittel.'
-  wwcChatTranslationFail: 'Kan ikke oversette meldingen.'
-  wwcInvalidTranslator: 'Ugyldige innstillinger for oversetteren. Vennligst reparer
-    dette i din config.yml eller med /wwcc for å bruke denne plugin.'
-  wwcNotDoneLoading: 'WorldwideChat initialiserer fortsatt. Prøv igjen om kort tid.'
+  wwctiOnSender: Vareoversettelse aktivert. Høyreklikk med et element i hovedhånden
+    for å oversette det!
+  wwcItemTranslateLoreStart: Oversette lore av målet element...
+  wwcItemTranslateLoreDone: Oversatt element lore vellykket.
+  wwctiOnTarget: Vareoversettelse aktivert for %i.
+  wwcBookTranslationFailCatastrophic: Kan ikke oversette målboken.
+  wwcBookTranslateTitleFail: Kan ikke oversette boktittel.
+  wwcChatTranslationFail: Kan ikke oversette meldingen.
+  wwcInvalidTranslator: Ugyldige innstillinger for oversetteren. Vennligst reparer
+    dette i din config.yml eller med /wwcc for å bruke denne plugin.
+  wwcNotDoneLoading: WorldwideChat initialiserer fortsatt. Prøv igjen om kort tid.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurasjon'
   wwcConfigGUIToggleButton: Veksle %i
   wwcConfigGUIWatsonButton: Watson
@@ -247,8 +242,7 @@ Messages:
   wwcTranslatorErrorThresholdReached: Feil terskel nådd. Dette pluginet vil nå laste
     på nytt, og deaktivere alle oversettere.
   wwcConfigErrorLimitEnabled: Oversetterfeilgrense satt til %i.
-  wwcTranslatorError: 'Det oppstod et problem under forsøk på oversettelsen. Prøv
-    igjen.'
+  wwcTranslatorError: Det oppstod et problem under forsøk på oversettelsen. Prøv igjen.
   wwcTranslatorErrorConsole: Det oppstod et problem mens brukeren %i forsøkte oversettelsen.
     Nå skriver du ut stacktrace.
   wwcConfigErrorLimitInvalid: Ugyldig feilgrense for oversetteren satt i config.yml.
@@ -261,3 +255,24 @@ Messages:
   wwctInvalidInputLangCode: 'Ugyldig inndataspråkkode oppgitt Gyldige langkoder: %o'
   wwcsTitle: Opptak av %i
   wwctInvalidOutputLangCode: 'Ugyldig kode for utdata gitt! Gyldige langkoder: %o'
+  wwctGUISourceTranslationSelected: Du har valgt dette språket.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Slett overstyring
+  wwcConfigConversationOverrideTextChange: Skriv inn en ny melding for denne overstyringen,
+    eller skriv 0 for å gå tilbake. Husk å inkludere eventuelle variabler som starter
+    med prosentvise tegn du ser i den opprinnelige meldingen.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Dette språket er allerede aktivt!
+  wwcConfigGUIMessagesOverrideChatButton: Overstyr standard plugin-meldinger
+  wwcConfigGUIChatMessagesPossibleOverrides: Velg en melding
+  wwcConfigGUIChatMessagesModifyOverride: Endre eksisterende overstyring
+  wwcConfigConversationOverrideDeletionSuccess: Tilpasset meldingsoverstyring er slettet.
+  wwcConfigGUIChatMessagesOverrideSettings: Overstyr standardmeldinger
+  wwcConfigGUIChatMessagesDeadOverride: Denne overstyringen er enten ugyldig, eller
+    den opprinnelige meldingen er fjernet. Du bør slette dette.
+  wwcConfigGUIMessagesAlreadyOverriden: Du har allerede en overstyring for denne meldingen!
+  wwcConfigGUIChatMessagesOverrideNewButton: Legge til en ny overstyring
+  wwcConfigGUIMessagesOverrideCustomLabel: Ny melding
+  wwcConfigConversationOverrideTextChangeSuccess: Ny melding er angitt.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Endre eksisterende tekst
+  wwcExampleMessage: Dette er en dummy melding, og er ment å bli overstyrt som et
+    eksempel.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Opprinnelig melding

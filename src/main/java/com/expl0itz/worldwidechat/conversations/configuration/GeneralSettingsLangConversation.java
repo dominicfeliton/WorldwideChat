@@ -1,6 +1,5 @@
 package com.expl0itz.worldwidechat.conversations.configuration;
 
-import java.io.IOException;
 import java.util.Arrays;
 
 import org.bukkit.conversations.ConversationContext;
@@ -35,18 +34,14 @@ public class GeneralSettingsLangConversation extends StringPrompt {
 				if (eaStr.equals(input)) {
 					main.setPluginLang(input);
 					main.getConfigManager().getMainConfig().set("General.pluginLang", input);
-					try {
-						main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-						final TextComponent successfulChange = Component.text()
-								.append(Component.text()
-										.content(CommonDefinitions.getMessage("wwcConfigConversationLangSuccess"))
-										.color(NamedTextColor.GREEN))
-								.build();
-						CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-						main.getConfigManager().getMainConfig().save(main.getConfigManager().getConfigFile());
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
+					main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
+					final TextComponent successfulChange = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwcConfigConversationLangSuccess"))
+									.color(NamedTextColor.GREEN))
+							.build();
+					CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
+					main.getConfigManager().saveMainConfig(true);
 					/* Re-open ConfigurationInventoryGUI */
 					ConfigurationGeneralSettingsGUI.generalSettings.open((Player) context.getForWhom());
 					return END_OF_CONVERSATION;

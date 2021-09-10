@@ -52,7 +52,7 @@ public class WatsonTranslation {
 		isInitializing = true;
 	}
 
-	public String useTranslator() throws TranslatorTimeoutException {
+	public String useTranslator() throws TranslatorTimeoutException, TranslatorFailException {
 		ExecutorService executor = Executors.newSingleThreadExecutor();
 		Future<String> process = executor.submit(new translationTask());
 		String finalOut = "";
@@ -62,10 +62,14 @@ public class WatsonTranslation {
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			CommonDefinitions.sendDebugMessage("Watson Translate Timeout!!");
 			process.cancel(true);
+			if (e instanceof ExecutionException) {
+			    throw new TranslatorFailException(e);	
+			}
 			throw new TranslatorTimeoutException("Timed out while waiting for Watson Translate response.", e);
+		} finally {
+			executor.shutdownNow();
 		}
-		executor.shutdownNow();
-
+		
 		/* Return final result */
 		return finalOut;
 	}

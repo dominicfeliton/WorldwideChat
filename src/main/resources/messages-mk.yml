@@ -1,19 +1,19 @@
 Messages:
-  wwcgAutoTranslateStart: 'Сега преведување на глобален разговор на %o.'
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'Глобалниот разговор се преведува
-    на %o.'
+  wwcgAutoTranslateStart: Сега преведување на глобален разговор на %o.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Глобалниот разговор се преведува
+    на %o.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Промена Амазон пристап Клучни
-  wwcrFail: 'Не успеа да ја превчита WorldWideC'
+  wwcrFail: Не успеа да ја превчита WorldWideC
   wwcConfigGUIUpdateCheckerButton: Промена Проверете за одложување на ажурирања
   wwcUpdaterFailedGeneric: Не може да се провери за WorldwideChat ажурирања
   wwcConfigConversationUpdateCheckerInput: Тековното одложување на проверката за ажурирање
     е %i секунди. Внесете нешто поголемо од 10 за да поставите нова вредност, или
     нешто помалку од 10 за да се вратите назад.
   wwctGUIMainMenuGlobal: Глобално мени за превод
-  wwcConfigConversationPluginUpdateChatSuccess: 'Потсетник за разговор за ажурирање
-    на приклучокот успешно се префрли.'
-  wwctbOnTarget: 'Преводот на книги е овозможен за %i.'
-  wwcsNotATranslator: 'Сè уште нема достапни записи за %i.'
+  wwcConfigConversationPluginUpdateChatSuccess: Потсетник за разговор за ажурирање
+    на приклучокот успешно се префрли.
+  wwctbOnTarget: Преводот на книги е овозможен за %i.
+  wwcsNotATranslator: Сè уште нема достапни записи за %i.
   wwcConfigGUIbStatsButton: Вклучи bStats
   wwctGUINewTranslationSource: Изберете изворен јазик
   wwcConfigConnectionFailed: Не успеа да се поврзете до %o. Проверете дали вашите
@@ -22,133 +22,130 @@ Messages:
   wwctGUIMainMenuPlayer: Мени за преведување на %i
   wwctGUIBookButton: Вклучи превод на книги
   wwcLangDetected: Откриен јазик %o.
-  wwcBookTranslateStart: 'Преведување целна книга...'
+  wwcBookTranslateStart: Преведување целна книга...
   wwcConfigDisabledbStats: Исклучени bStats.
-  wwctsOffSender: 'Пријавете превод оневозможено.'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Глобалниот разговор
-    се преведува, но вашиот разговор се преведува од %i до %o.'
+  wwctsOffSender: Пријавете превод оневозможено.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобалниот разговор се
+    преведува, но вашиот разговор се преведува од %i до %o.
   wwcUpdaterParserFailed: Не успеа да ги анализираат податоците за ажурирање од Github.
-  wwctAutoTranslateStart: 'Сега преведување на сите на вашиот разговор на %o.'
+  wwctAutoTranslateStart: Сега преведување на сите на вашиот разговор на %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Тековниот таен клуч е %i. Ве
     молиме внесете таен клуч за Амазон, или напишете 0 за да се вратите назад.
-  wwctbOffSender: 'Превод на книги оневозможено.'
+  wwctbOffSender: Превод на книги оневозможено.
   wwcConfigGUIAmazonTranslateButton: Амазон Преведи
-  wwcConfigConversationLangSuccess: 'Јазикот на приклучокот успешно се промени.'
+  wwcConfigConversationLangSuccess: Јазикот на приклучокот успешно се промени.
   wwcsSuccessfulTranslations: 'Успешни преводи: %i'
-  wwctTranslationStoppedOtherPlayer: 'Преводот на разговор за %i е запрен.'
+  wwctTranslationStoppedOtherPlayer: Преводот на разговор за %i е запрен.
   wwcConfigConversationTranslationCacheInput: Тековната граница на кеш за превод е
     %i фрази. Внесете нешто поголемо од 0 за да поставите нова вредност или напишете
     0 за да го оневозможите кешот за превод. Напишете нешто помалку од 0 за да се
     вратите назад.
-  wwctbOffTarget: 'Преводот на книги е исклучен за %i.'
+  wwctbOffTarget: Преводот на книги е исклучен за %i.
   wwcConfigGUIGeneralSettings: Општа конфигурација
   wwcInvalidLang: Неважечки јазик во вашиот config.yml. Стандардно да en...
-  wwcConfigConversationAmazonTranslateRegionSuccess: 'Амазон регионот постави успешно.'
+  wwcConfigConversationAmazonTranslateRegionSuccess: Амазон регионот постави успешно.
   wwcConfigRateLimitEnabled: Ограничувањето на глобалната стапка е овозможено и поставено
     на %i секунди.
-  wwcBadPerms: 'Немате потребни дозволи да ја извршите оваа команда!'
+  wwcBadPerms: Немате потребни дозволи да ја извршите оваа команда!
   wwcConfigGUILangButton: Промена на јазикот на приклучокот
   wwctGUISignButton: Префрли Превод на знаци
   wwcUpdaterOutOfDate: WorldwideChat е застарен. Ве молиме ажурирајте ја најновата
     верзија, %i.
-  wwcConfigGUIChangesNotSaved: 'Вашите промени може да не стапат на сила додека не
-    се кандидира /wwcr, или кликнете на црвената бариера во/wwcc.'
+  wwcConfigGUIChangesNotSaved: Вашите промени може да не стапат на сила додека не
+    се кандидира /wwcr, или кликнете на црвената бариера во/wwcc.
   wwcConfigGUINextPageButton: Следна страница
   wwctbTranslatePageFail: (Не успеа да ја преведе оваа страница) %i
   wwcConfigInvalidTranslatorSettings: Неважечки поставки за преведувач! Ве молиме
     вклучете само еден преведувач во вашиот config.yml.
   wwcConfigGUIQuitButton: Излез и зачувување на промените
-  wwctPlayerNotFound: 'Играч % не сум пронајден.'
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'Глобалниот разговор
-    се преведува, но вашиот разговор се преведува на %o.'
+  wwctPlayerNotFound: Играч % не сум пронајден.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобалниот разговор
+    се преведува, но вашиот разговор се преведува на %o.
   wwcConfigGUIGlobalRateLimit: Промена на глобалната стапка граница
-  wwctGUIBackToSourceLanguageButton: Назад кон менито за изворен јазик
   wwcConfigGUIAmazonTranslateRegionButton: Промена на регионот Амазон
   wwcConfigConversationLangInput: 'Тековниот јазик на приклучокот е %i. Ве молиме
     внесете валиден јазичен код или напишете 0 за да го откажете. Валидни јазични
     кодови: %o'
-  wwcConfigConversationLangInvalid: 'Неважечки јазичен код!'
-  wwctTranslationStopped: 'Вашиот разговор превод е запрен.'
+  wwcConfigConversationLangInvalid: Неважечки јазичен код!
+  wwctTranslationStopped: Вашиот разговор превод е запрен.
   wwcConfigGUIWatsonAPIKeyButton: Промена Вотсон API Клучни
   wwcEnabled: Овозможена верзија %i.
-  wwcgLangToLangStart: 'Сега преведување на глобален разговор од %i до %o.'
-  wwctbOnSender: 'Превод на книги е овозможено. Десен-клик додека држите книга за
-    да ја преведете!'
+  wwcgLangToLangStart: Сега преведување на глобален разговор од %i до %o.
+  wwctbOnSender: Превод на книги е овозможено. Десен-клик додека држите книга за да
+    ја преведете!
   wwcListenersInitialized: Иницијализирани слушатели.
   wwcUserDataCorrupted: Пронајдени и се движи %i оштетени или стари кориснички датотеки
     со податоци. Тие ќе бидат избришани на следниот Вчитај ја повторно.
   wwcConfigGUIPluginUpdateChatButton: Испрати потсетник за разговор за надградби на
-  wwcConfigConversationSendTranslationChatSuccess: 'Активен потсетник за разговор
-    со преведувач успешно се префрли.'
-  wwctsOffTarget: 'Пријавете преводот исклучен за %i.'
+  wwcConfigConversationSendTranslationChatSuccess: Активен потсетник за разговор со
+    преведувач успешно се префрли.
+  wwctsOffTarget: Пријавете преводот исклучен за %i.
   wwcUpdaterConnectionFailed: Не можам да проверам за најновите ажурирања на Github.
-  watsonNotFoundExceptionNotification: 'Не може да се преведе вашиот влез понатаму.'
+  watsonNotFoundExceptionNotification: Не може да се преведе вашиот влез понатаму.
   wwcConfigConversationWatsonAPIKeyInput: Тековниот API клуч е %i. Ве молиме внесете
     API клуч за Вотсон, или напишете 0 за да се вратите назад.
   wwctGUIStopButton: Стоп за преведување
-  wwcgTranslationStopped: 'Глобалниот разговор превод е запрен.'
-  wwctAutoTranslateStartOtherPlayer: 'Сега преведување на разговорот %i до %o.'
+  wwcgTranslationStopped: Глобалниот разговор превод е запрен.
+  wwctAutoTranslateStartOtherPlayer: Сега преведување на разговорот %i до %o.
   wwcUpdaterFutureDate: Овој пример на WorldwideChat има поголема верзија од најновата
     јавна.
-  wwcConfigConversationPrefixSuccess: 'Префиксот успешно се промени.'
+  wwcConfigConversationPrefixSuccess: Префиксот успешно се промени.
   wwcConfigGUIGoogleTranslateAPIKeyButton: Промена на Google Преведете API клуч
   wwcSignDeletedOrTooLong: 'Целниот знак беше или избришан или преводот беше премногу
     долг. Превод:'
-  wwctsOnTarget: 'Пријавете превод е овозможено за %i.'
+  wwctsOnTarget: Пријавете превод е овозможено за %i.
   wwcConfigCacheDisabled: Кешот на преведувачот оневозможен
   wwcConfigConversationWatsonURLInput: Тековната URL адреса е %i. Ве молиме внесете
     URL адреса на услугата за Вотсон или напишете 0 за да се вратите назад.
-  wwcOnJoinTranslationNotificationSourceLang: 'Вашиот разговор е преведен од %i до
-    %o.'
-  wwcBookDone: 'Книга преведена успешно.'
-  wwctsOnSender: 'Пријавете превод овозможено. Десен-клик на знак за да го преведете!'
-  watsonColorCodeWarning: 'Користењето кодови во боја може да ви даде непредвидливи
-    резултати.'
+  wwcOnJoinTranslationNotificationSourceLang: Вашиот разговор е преведен од %i до
+    %o.
+  wwcBookDone: Книга преведена успешно.
+  wwctsOnSender: Пријавете превод овозможено. Десен-клик на знак за да го преведете!
+  watsonColorCodeWarning: Користењето кодови во боја може да ви даде непредвидливи
+    резултати.
   wwctGUITranslationButton: Започнете со преведување
   wwctGUIAutoDetectButton: Авто-откривање на изворниот јазик
   wwcUpdaterUpToDate: WorldwideChat е ажуриран!
   wwcConfigConversationAmazonTranslateRegionInput: Тековниот регион е %i Ве молиме
     внесете регион за Амазон, или напишете 0 за да се вратите назад.
-  wwcNoConsole: 'Оваа команда може да ја извршува само играч.'
+  wwcNoConsole: Оваа команда може да ја извршува само играч.
   wwcInitializationFail: Не успеа да иницијализира WorldwideChat
-  wwcrSuccess: 'Успешно превчита WorldwideChat'
-  wwcPlayerNotFound: 'Играч % не сум пронајден.'
-  wwcUpdaterOutOfDateChat: 'WorldwideChat е застарен. Ве молиме ажурирајте ја најновата
-    верзија.'
-  wwcConfigConversationRateLimitSuccess: 'Стапка граница поставена успешно.'
-  wwcConfigConversationWatsonURLSuccess: 'URL-то на Вотсон постави успешно.'
-  wwctbPlayerNotFound: 'Играч %i или не е пронајден, или не е активен преведувач.'
-  wwcConfigConversationTranslationCacheSuccess: 'Превод кеш граница поставена успешно.'
-  wwctInvalidArgs: 'Неважечки аргументи обезбедени!'
+  wwcrSuccess: Успешно превчита WorldwideChat
+  wwcPlayerNotFound: Играч % не сум пронајден.
+  wwcUpdaterOutOfDateChat: WorldwideChat е застарен. Ве молиме ажурирајте ја најновата
+    верзија.
+  wwcConfigConversationRateLimitSuccess: Стапка граница поставена успешно.
+  wwcConfigConversationWatsonURLSuccess: URL-то на Вотсон постави успешно.
+  wwctbPlayerNotFound: Играч %i или не е пронајден, или не е активен преведувач.
+  wwcConfigConversationTranslationCacheSuccess: Превод кеш граница поставена успешно.
+  wwctInvalidArgs: Неважечки аргументи обезбедени!
   wwcConfigGUIPrefixButton: Променете го префиксот на приклучок
-  wwctSameLangError: 'Не можете да преведете на ист јазик!'
+  wwctSameLangError: Не можете да преведете на ист јазик!
   wwctGUINewTranslationTarget: Изберете целен јазик
-  wwctLangToLangStartOtherPlayer: 'Сега преведување на разговорот на %o од %i до
-    %e.'
+  wwctLangToLangStartOtherPlayer: Сега преведување на разговорот на %o од %i до %e.
   wwcConfigConnectionSuccess: Успешно поврзан со %o!
   wwcConfigGUIGoogleTranslateButton: Преведи на Google
   wwcsIsActiveTranslator: 'Дали е активен преведувач: %i'
-  wwctLangToLangStart: 'Сега преведување на сите на вашиот разговор од %i до %o.'
+  wwctLangToLangStart: Сега преведување на сите на вашиот разговор од %i до %o.
   wwcConfigConversationPrefixInput: Тековниот префикс е %i. Ве молиме напишете нов,
     или напишете 0 за да се вратите назад.
   wwcConfigGUIPreviousPageButton: Претходна страница
   wwcConfigGUITranslatorCacheButton: Промена на преводот кеш
-  wwcConfigConversationbStatsSuccess: 'Успешно се префрли bStats.'
-  wwcSignDone: 'Пријавете се преведен успешно.'
+  wwcConfigConversationbStatsSuccess: Успешно се префрли bStats.
+  wwcSignDone: Пријавете се преведен успешно.
   wwcConfigInvalidPrefixSettings: Не успеав да го прочитате вашиот префикс. Користење
     на стандардно...
   wwcConfigRateLimitInvalid: Лоша стапка граница поставена во config.yml. Стандардно
     до 0 секунди...
-  wwcSignTranslateStart: 'Преведување на целниот знак...'
+  wwcSignTranslateStart: Преведување на целниот знак...
   wwcConfigGUIChatSettings: Конфигурација на разговор
   wwcConfigGUIWatsonURLButton: Промена на URL-то на услугата Вотсон
-  wwcConfigConversationUpdateCheckerSuccess: 'Ажурирање проверка одложување постави
-    успешно.'
+  wwcConfigConversationUpdateCheckerSuccess: Ажурирање проверка одложување постави
+    успешно.
   wwcUnsupportedVersion: 'Ќе се работи на неподдржана верзија на Bukkit, Кран, или
     хартија. Поддржани верзии:'
-  wwctGUIBackToMainMenuButton: Назад кон Главното мени за превод
-  wwcGlobalOnJoinTranslationNotificationSourceLang: 'Глобалниот разговор се преведува
-    од %i до %o.'
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Глобалниот разговор се преведува
+    од %i до %o.
   wwcConfigGUITranslatorSettings: Конфигурација преведувач
   wwcConfigConversationGoogleTranslateAPIKeyInput: Тековниот API клуч е %i Ве молиме
     внесете API клуч за Google Translate или напишете 0 за да се вратите назад.
@@ -156,49 +153,48 @@ Messages:
     е %i секунди. Внесете нешто поголемо од 0 за да поставите нова вредност или напишете
     0 за да го оневозможите границата. Напишете нешто помалку од 0 за да се вратите
     назад.
-  wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Google Translate API клуч поставен
-    успешно.'
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API клуч поставен
+    успешно.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Амазон промена Тајната Клучни
-  wwcVersion: 'WorldwideChat, верзија'
+  wwcVersion: WorldwideChat, верзија
   wwcsAttemptedTranslations: 'Обид за преводи: %i'
-  wwcConfigConversationAmazonTranslateSecretKeySuccess: 'Амазон таен клуч во собата
-    успешно.'
-  wwcConfigConversationWatsonAPIKeySuccess: 'Вотсон API клуч поставен успешно.'
-  wwcRateLimit: 'Вашите преводи се ограничени на стапка. Ве молиме почекајте друг
-    %i секунди.'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Амазон таен клуч во собата
+    успешно.
+  wwcConfigConversationWatsonAPIKeySuccess: Вотсон API клуч поставен успешно.
+  wwcRateLimit: Вашите преводи се ограничени на стапка. Ве молиме почекајте друг %i
+    секунди.
   wwcConfigCacheEnabled: Кеш на преведувачот е овозможено и поставено на ограничување
     од %i.
   wwctGUIExistingTranslationButton: Пребриши тековната сесија за превод
-  wwcOnJoinTranslationNotificationNoSourceLang: 'Вашиот разговор е преведен на %o.'
+  wwcOnJoinTranslationNotificationNoSourceLang: Вашиот разговор е преведен на %o.
   wwcUserDataReloaded: Вчитани сите зачувани кориснички податоци.
   wwcConfigGUISendTranslationChatButton: Испрати потсетник за разговор на активен
     преведувач на најава
   wwcsLastTranslationTime: 'Последно (успешно) време за превод: %i'
-  wwctbNotATranslator: 'Вие не сте активен преведувач! Бидете сигурни дека сте го
-    поставиле ова со/wwct.'
+  wwctbNotATranslator: Вие не сте активен преведувач! Бидете сигурни дека сте го поставиле
+    ова со/wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Тековниот клуч за пристап е
     %i Ве молиме внесете клуч за пристап за Амазон, или напишете 0 за да се вратите
     назад.
-  wwcConfigConversationAmazonTranslateAccessKeySuccess: 'Амазон клуч за пристап во
-    собата успешно.'
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Амазон клуч за пристап во
+    собата успешно.
   wwcConfigBadUpdateDelay: Невалидно доцнување на ажурирачот поставено во config.yml.
     Стандардно да 86400 секунди...
-  wwctrlRateLimitOffSender: 'Исклучен вашиот лимит стапка.'
-  wwctrlRateLimitAlreadyOffTarget: 'Ограничувањето на стапката на %i е веќе оневозможено.'
-  wwctrlPlayerNotFound: 'Играч %i или не е пронајден, или не е активен преведувач.'
-  wwctrlRateLimitSetSender: 'Поставете го лимитот на стапката на %i секунди.'
-  wwctrlRateLimitOffTarget: 'Исклучи го ограничувањето на стапката на %i.'
-  wwctrlRateLimitSetTarget: 'Поставете го ограничувањето на стапката од %i до %o
-    секунди.'
-  wwctrlNotATranslator: 'Вие не сте активен преведувач! Бидете сигурни дека сте го
-    поставиле ова со/wwct.'
-  wwctrlRateLimitAlreadyOffSender: 'Вашиот лимит на стапка е веќе оневозможен.'
+  wwctrlRateLimitOffSender: Исклучен вашиот лимит стапка.
+  wwctrlRateLimitAlreadyOffTarget: Ограничувањето на стапката на %i е веќе оневозможено.
+  wwctrlPlayerNotFound: Играч %i или не е пронајден, или не е активен преведувач.
+  wwctrlRateLimitSetSender: Поставете го лимитот на стапката на %i секунди.
+  wwctrlRateLimitOffTarget: Исклучи го ограничувањето на стапката на %i.
+  wwctrlRateLimitSetTarget: Поставете го ограничувањето на стапката од %i до %o секунди.
+  wwctrlNotATranslator: Вие не сте активен преведувач! Бидете сигурни дека сте го
+    поставиле ова со/wwct.
+  wwctrlRateLimitAlreadyOffSender: Вашиот лимит на стапка е веќе оневозможен.
   wwctGUIRateButton: Постави ограничување на стапката
   wwctGUIConversationRateLimit: Ограничувањето на стапката по превод е тековно %i
     секунди. Внесете нешто поголемо од 0 за да поставите нова вредност или напишете
     0 за да го оневозможите границата. Напишете нешто помалку од 0 за да се вратите
     назад.
-  wwctGUITargetPlayerNull: 'Целниот плеер исклучен од серверот.'
+  wwctGUITargetPlayerNull: Целниот плеер исклучен од серверот.
   wwcConfigConversationSyncUserDataDelayInput: Тековното одложување по синхронизација
     на кориснички податоци е %i секунди. Внесете нешто поголемо од 10 за да поставите
     нова вредност, или нешто помалку од 10 за да се вратите назад.
@@ -207,52 +203,52 @@ Messages:
     во %i nanoсекунди.
   wwcConfigSyncDelayEnabled: Одложување по синхронизација на кориснички податоци поставено
     на %i секунди.
-  wwcConfigConversationSyncUserDataDelaySuccess: 'Задоцнување синхронизација на корисникот
-    податоци постави успешно.'
+  wwcConfigConversationSyncUserDataDelaySuccess: Задоцнување синхронизација на корисникот
+    податоци постави успешно.
   wwcConfigSyncDelayInvalid: Невалидно одложување на синхронизација на кориснички
     податоци поставено во config.yml. Стандардно до 7200 секунди...
   wwcConfigCacheInvalid: Големина на кешот на преведувачот невалидна. Стандардно до
     10...
-  wwcInventoryErrorPlayer: 'Грешка откриена со вашиот GUI. Дневникот е испратен до
-    конзолата.'
+  wwcInventoryErrorPlayer: Грешка откриена со вашиот GUI. Дневникот е испратен до
+    конзолата.
   wwcInventoryError: Грешка откриена со GUI на корисник %i. Ве молиме пријавете го
     ова прашање на програмерот.
-  wwcConfigConversationTranslatorFail: 'Не успеа да се овозможи %i.'
+  wwcConfigConversationTranslatorFail: Не успеа да се овозможи %i.
   wwcConfigConversationConsoleTranslatorSuccess: Корисникот %i успешно овозможи %o.
-  wwcConfigConversationTranslatorSuccess: 'Успешно овозможена %i.'
+  wwcConfigConversationTranslatorSuccess: Успешно овозможена %i.
   wwcConfigConversationConsoleTranslatorFail: Корисникот % Јас не успеа %o.
   wwcWatson117Warning: Вотсон не успеа да се иницијализира поради непристапна ObjecEctException.
     За сега, ве молиме додадете -незаконски пристап = дозвола на вашиот постоечки
     сервер тегла аргументи.
   wwcDeluxeChatIncompatible: Овој приклучок може да не работи правилно со DeluxeChat.
-  wwcSignTranslationFail: 'Не можам да преведам една или повеќе линии на вашиот целен
-    знак.'
-  wwcBookTranslationFail: 'Не можам да преведам една или повеќе страници во вашата
-    целна книга.'
-  wwctiOffTarget: 'Точка превод оневозможени за %i.'
-  wwctiOffSender: 'Точка превод оневозможено.'
-  wwcItemTranslateTitleStock: 'Не можам да преведам стандардните имиња на ставки.'
-  wwcItemTranslateLoreFail: 'Не успеа да се преведе ставка ученост.'
-  wwcItemTranslateTitleFail: 'Не успеа да го преведе името на предметот.'
+  wwcSignTranslationFail: Не можам да преведам една или повеќе линии на вашиот целен
+    знак.
+  wwcBookTranslationFail: Не можам да преведам една или повеќе страници во вашата
+    целна книга.
+  wwctiOffTarget: Точка превод оневозможени за %i.
+  wwctiOffSender: Точка превод оневозможено.
+  wwcItemTranslateTitleStock: Не можам да преведам стандардните имиња на ставки.
+  wwcItemTranslateLoreFail: Не успеа да се преведе ставка ученост.
+  wwcItemTranslateTitleFail: Не успеа да го преведе името на предметот.
   wwctGUIItemButton: Префрли Точка Превод
-  wwcItemTranslateTitleDone: 'Преведено насловот на предметот успешно.'
+  wwcItemTranslateTitleDone: Преведено насловот на предметот успешно.
   wwcGUITempItem: точка Покажи
-  wwcItemTranslateStart: 'Преведување на целната ставка...'
-  wwcSignTranslationFailCatastrophic: 'Не успеа да го преведе целниот знак.'
-  wwcItemTranslationFailCatastrophic: 'Не успеа да преведе целната ставка.'
+  wwcItemTranslateStart: Преведување на целната ставка...
+  wwcSignTranslationFailCatastrophic: Не успеа да го преведе целниот знак.
+  wwcItemTranslationFailCatastrophic: Не успеа да преведе целната ставка.
   wwcBookTranslateTitleSuccess: 'Преведен наслов на книгата: %i'
-  wwctiOnSender: 'Точка превод е овозможено. Десен-клик со ставка во вашата главна
-    рака за да ја преведете!'
-  wwcItemTranslateLoreStart: 'Преведување на знанија на целната ставка...'
-  wwcItemTranslateLoreDone: 'Преведено точка ученост успешно.'
-  wwctiOnTarget: 'Точка превод овозможено за %i.'
-  wwcBookTranslationFailCatastrophic: 'Не успеа да преведе целна книга.'
-  wwcBookTranslateTitleFail: 'Не успеа да преведе насловот на книгата.'
-  wwcChatTranslationFail: 'Не успеа да ја преведе вашата порака.'
-  wwcInvalidTranslator: 'Неважечки поставки за преведувач. Ве молиме поправете го
-    ова во вашиот config.yml или со /wwcc да го користите овој приклучок.'
-  wwcNotDoneLoading: 'WorldwideChat сè уште иницијализира. Ве молиме обидете се повторно
-    наскоро.'
+  wwctiOnSender: Точка превод е овозможено. Десен-клик со ставка во вашата главна
+    рака за да ја преведете!
+  wwcItemTranslateLoreStart: Преведување на знанија на целната ставка...
+  wwcItemTranslateLoreDone: Преведено точка ученост успешно.
+  wwctiOnTarget: Точка превод овозможено за %i.
+  wwcBookTranslationFailCatastrophic: Не успеа да преведе целна книга.
+  wwcBookTranslateTitleFail: Не успеа да преведе насловот на книгата.
+  wwcChatTranslationFail: Не успеа да ја преведе вашата порака.
+  wwcInvalidTranslator: Неважечки поставки за преведувач. Ве молиме поправете го ова
+    во вашиот config.yml или со /wwcc да го користите овој приклучок.
+  wwcNotDoneLoading: WorldwideChat сè уште иницијализира. Ве молиме обидете се повторно
+    наскоро.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурација'
   wwcConfigGUIToggleButton: Вклучување %i
   wwcConfigGUIWatsonButton: Вотсон
@@ -264,8 +260,8 @@ Messages:
     ќе се вчита и ќе ги оневозможи сите преведувачи.
   wwcConfigErrorLimitEnabled: Ограничувањето за грешка во преведувачот поставено на
     %i.
-  wwcTranslatorError: 'Проблем се случи при обидот за вашиот превод. Ве молиме обидете
-    се повторно.'
+  wwcTranslatorError: Проблем се случи при обидот за вашиот превод. Ве молиме обидете
+    се повторно.
   wwcTranslatorErrorConsole: Проблем се појави додека корисник %i се обидуваше нивниот
     превод. Сега печатење на stacktrace.
   wwcConfigErrorLimitInvalid: Невалиден преведувач граница грешка поставена во config.yml.
@@ -280,3 +276,24 @@ Messages:
   wwcsTitle: Рекорд на %i
   wwctInvalidOutputLangCode: 'Неважечки код за излез јазик обезбеден! Валидни кодови
     за ланг: %o'
+  wwctGUISourceTranslationSelected: Го избравте овој јазик.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Избриши го замени
+  wwcConfigConversationOverrideTextChange: Ве молиме напишете нова порака за ова отфрлање
+    или напишете 0 за да се вратите назад. Не заборавајте да ги вклучите сите променливи
+    почнувајќи со процентни знаци што ги гледате во оригиналната порака.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Овој јазик е веќе активен!
+  wwcConfigGUIMessagesOverrideChatButton: Заменете ги стандардните пораки за приклучок
+  wwcConfigGUIChatMessagesPossibleOverrides: Изберете порака
+  wwcConfigGUIChatMessagesModifyOverride: Измени постоечки прескокнување
+  wwcConfigConversationOverrideDeletionSuccess: Прилагодено отфрлањето на пораките
+    е избришано.
+  wwcConfigGUIChatMessagesOverrideSettings: Заменете ги стандардните пораки
+  wwcConfigGUIChatMessagesDeadOverride: Ова отфрлање е или неважечко, или оригиналната
+    порака е отстранета. Треба да го избришете ова.
+  wwcConfigGUIMessagesAlreadyOverriden: Веќе имате превртување за оваа порака!
+  wwcConfigGUIChatMessagesOverrideNewButton: Додај нов прескокнување
+  wwcConfigGUIMessagesOverrideCustomLabel: Нова порака
+  wwcConfigConversationOverrideTextChangeSuccess: Нова порака поставена успешно.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Промена на постоечкиот текст
+  wwcExampleMessage: Ова е кукла порака, и е наменета да биде overriden како пример.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Оригинална порака

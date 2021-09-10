@@ -1,20 +1,19 @@
 Messages:
-  wwcgAutoTranslateStart: 'Nyt käännetään maailmanlaajuinen keskustelu kohteeseen
-    %o.'
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'Globaali keskustelu käännetään
-    kohteella %o.'
+  wwcgAutoTranslateStart: Nyt käännetään maailmanlaajuinen keskustelu kohteeseen %o.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Globaali keskustelu käännetään
+    kohteella %o.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Muuta Amazon Access -
-  wwcrFail: 'WorldwideChatin lataaminen uudelleen epäonnistui.'
+  wwcrFail: WorldwideChatin lataaminen uudelleen epäonnistui.
   wwcConfigGUIUpdateCheckerButton: Päivitysten tarkistamisen viive
   wwcUpdaterFailedGeneric: WorldwideChat-päivityksiä ei voi tarkistaa.
   wwcConfigConversationUpdateCheckerInput: Päivityksen tarkistuksen nykyinen viive
     on %i sekuntia. Kirjoita mitä tahansa suurempi kuin 10, jos haluat asettaa uuden
     arvon, tai jotain alle 10 palata takaisin.
   wwctGUIMainMenuGlobal: Maailmanlaajuinen käännös
-  wwcConfigConversationPluginUpdateChatSuccess: 'Plugin päivitys chat muistutus vaihdettu
-    onnistuneesti.'
-  wwctbOnTarget: 'Kirjan käännös käytössä kohteella %i.'
-  wwcsNotATranslator: 'Tiedon %i ei ole vielä käytettävissä tietueita.'
+  wwcConfigConversationPluginUpdateChatSuccess: Plugin päivitys chat muistutus vaihdettu
+    onnistuneesti.
+  wwctbOnTarget: Kirjan käännös käytössä kohteella %i.
+  wwcsNotATranslator: Tiedon %i ei ole vielä käytettävissä tietueita.
   wwcConfigGUIbStatsButton: Vaihda bStats
   wwctGUINewTranslationSource: Valitse lähdekieli
   wwcConfigConnectionFailed: Yhteyden muodostaminen kohteeseen %o epäonnistui. Varmista,
@@ -23,108 +22,107 @@ Messages:
   wwctGUIMainMenuPlayer: Käännösvalikko %i
   wwctGUIBookButton: Vaihda kirjan käännös
   wwcLangDetected: Havaittu kieli %o.
-  wwcBookTranslateStart: 'Käännetään kohdekirja...'
+  wwcBookTranslateStart: Käännetään kohdekirja...
   wwcConfigDisabledbStats: Vammaiset bStats.
-  wwctsOffSender: 'Allekirjoita käännös käytöstä'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Maailmanlaajuista keskustelua
-    käännetään, mutta keskusteluasi käännetään osoitteesta %i kohteeseen %o.'
+  wwctsOffSender: Allekirjoita käännös käytöstä
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Maailmanlaajuista keskustelua
+    käännetään, mutta keskusteluasi käännetään osoitteesta %i kohteeseen %o.
   wwcUpdaterParserFailed: Päivitystietojen jäsentäminen Githubista epäonnistui.
-  wwctAutoTranslateStart: 'Käännä nyt kaikki keskustelusi kohteeseen %o.'
+  wwctAutoTranslateStart: Käännä nyt kaikki keskustelusi kohteeseen %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Nykyinen salainen avain on %i.
     Kirjoita salainen avain Amazonille tai kirjoita 0 palaaksesi takaisin.
-  wwctbOffSender: 'Kirjan käännös käytöstä.'
+  wwctbOffSender: Kirjan käännös käytöstä.
   wwcConfigGUIAmazonTranslateButton: Amazon kääntää
-  wwcConfigConversationLangSuccess: 'Plugin kieli muuttui onnistuneesti.'
+  wwcConfigConversationLangSuccess: Plugin kieli muuttui onnistuneesti.
   wwcsSuccessfulTranslations: 'Onnistuneet käännökset: %i'
-  wwctTranslationStoppedOtherPlayer: 'Keskustelukäännös kohteelle %i on pysäytetty.'
+  wwctTranslationStoppedOtherPlayer: Keskustelukäännös kohteelle %i on pysäytetty.
   wwcConfigConversationTranslationCacheInput: Nykyinen käännösvälimuistin raja on
     %i lauseita. Määritä uusi arvo kirjoittamalla jokin suurempi kuin 0 tai poista
     käännösvälimuisti käytöstä kirjoittamalla 0. Kirjoita mitään alle 0, jotta voit
     palata takaisin.
-  wwctbOffTarget: 'Kirjan käännös käytöstä kohteella %i.'
+  wwctbOffTarget: Kirjan käännös käytöstä kohteella %i.
   wwcConfigGUIGeneralSettings: Yleiset määritykset
   wwcInvalidLang: Virheellinen kieli config.yml. Defaulting fi...
-  wwcConfigConversationAmazonTranslateRegionSuccess: 'Amazonin alue asetettu onnistuneesti.'
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazonin alue asetettu onnistuneesti.
   wwcConfigRateLimitEnabled: Yleinen nopeusraja käytössä ja aseta %i sekuntia.
-  wwcBadPerms: 'Sinulla ei ole vaadittuja oikeuksia tämän komennon suorittamiseen!'
+  wwcBadPerms: Sinulla ei ole vaadittuja oikeuksia tämän komennon suorittamiseen!
   wwcConfigGUILangButton: Vaihda liitännäisen kieli
   wwctGUISignButton: Vaihda allekirjoittaa käännös
   wwcUpdaterOutOfDate: WorldwideChat on vanhentunut. Päivitä uusimpaan versioon, %i.
-  wwcConfigGUIChangesNotSaved: 'Muutokset eivät ehkä tule voimaan ennen kuin suoritat
-    /wwcr tai napsautat punaista estettä /wwcc.'
+  wwcConfigGUIChangesNotSaved: Muutokset eivät ehkä tule voimaan ennen kuin suoritat
+    /wwcr tai napsautat punaista estettä /wwcc.
   wwcConfigGUINextPageButton: Seuraava sivu
   wwctbTranslatePageFail: (Tämän sivun kääntäminen epäonnistui) %i
   wwcConfigInvalidTranslatorSettings: Virheelliset kääntäjän asetukset! Ota käyttöön
     vain yksi kääntäjä config.yml.
   wwcConfigGUIQuitButton: Poistu ja tallenna muutokset
-  wwctPlayerNotFound: 'Pelaaja %en löytänyt.'
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'Maailmanlaajuista
-    keskustelua käännetään, mutta keskusteluasi käännetään kohteeseen %o.'
+  wwctPlayerNotFound: Pelaaja %en löytänyt.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Maailmanlaajuista keskustelua
+    käännetään, mutta keskusteluasi käännetään kohteeseen %o.
   wwcConfigGUIGlobalRateLimit: Muuta maailmanlaajuista hintarajaa
-  wwctGUIBackToSourceLanguageButton: Takaisin Lähdekieli -valikkoon
   wwcConfigGUIAmazonTranslateRegionButton: Vaihda Amazonin alue
   wwcConfigConversationLangInput: 'Nykyinen liitännäisen kieli on %i. Kirjoita kelvollinen
     kielikoodi tai kirjoita 0 peruuttaaksesi sen. Kelvolliset kielikoodit: %'
-  wwcConfigConversationLangInvalid: 'Virheellinen kielikoodi!'
-  wwctTranslationStopped: 'Keskustelukäännös on lopetettu.'
+  wwcConfigConversationLangInvalid: Virheellinen kielikoodi!
+  wwctTranslationStopped: Keskustelukäännös on lopetettu.
   wwcConfigGUIWatsonAPIKeyButton: Watsonin API-avaimen muuttaminen
   wwcEnabled: Käytössä WorldwideChat-versio %i.
   wwcgLangToLangStart: 'Nyt käännetään maailmanlaajuinen keskustelu osoitteesta %i:
     s %o.'
-  wwctbOnSender: 'Kirjan käännös käytössä. Napsauta hiiren kakkospainikkeella, kun
-    pidät kirjaa painettuna kääntääksesi sen!'
+  wwctbOnSender: Kirjan käännös käytössä. Napsauta hiiren kakkospainikkeella, kun
+    pidät kirjaa painettuna kääntääksesi sen!
   wwcListenersInitialized: Alustivat kuulijat.
   wwcUserDataCorrupted: Löytyi ja siirretty %i vioittuneita tai vanhoja käyttäjätietotiedostoja.
     Ne poistetaan seuraavassa latauksessa.
   wwcConfigGUIPluginUpdateChatButton: Lähetä chat-muistutus lisäosan päivityksistä
-  wwcConfigConversationSendTranslationChatSuccess: 'Aktiivinen kääntäjä chat-muistutus
-    vaihdettu onnistuneesti.'
-  wwctsOffTarget: 'Allekirjoita käännös käytöstä kohteella %i'
+  wwcConfigConversationSendTranslationChatSuccess: Aktiivinen kääntäjä chat-muistutus
+    vaihdettu onnistuneesti.
+  wwctsOffTarget: Allekirjoita käännös käytöstä kohteella %i
   wwcUpdaterConnectionFailed: Githubin uusimpia päivityksiä ei voi tarkistaa.
-  watsonNotFoundExceptionNotification: 'Syötettä ei voi kääntää pidemmälle.'
+  watsonNotFoundExceptionNotification: Syötettä ei voi kääntää pidemmälle.
   wwcConfigConversationWatsonAPIKeyInput: Nykyinen API-avain on %i. Kirjoita Watsonille
     API-avain tai kirjoita 0, jotta voit palata takaisin.
   wwctGUIStopButton: Lopeta kääntäminen
-  wwcgTranslationStopped: 'Globaali keskustelukäännös on lopetettu.'
-  wwctAutoTranslateStartOtherPlayer: 'Nyt käännetään keskustelu %i kohteeseen %o.'
+  wwcgTranslationStopped: Globaali keskustelukäännös on lopetettu.
+  wwctAutoTranslateStartOtherPlayer: Nyt käännetään keskustelu %i kohteeseen %o.
   wwcUpdaterFutureDate: Tämä WorldwideChatin tapaus on suurempi versio kuin uusin
     julkinen.
-  wwcConfigConversationPrefixSuccess: 'Etuliite muuttui onnistuneesti.'
+  wwcConfigConversationPrefixSuccess: Etuliite muuttui onnistuneesti.
   wwcConfigGUIGoogleTranslateAPIKeyButton: Vaihda Google Translate API -näppäintä
   wwcSignDeletedOrTooLong: 'Kohdemerkki joko poistettiin tai käännös oli liian pitkä.
     Käännös:'
-  wwctsOnTarget: 'Allekirjoita käännös käytössä kohteella %i'
+  wwctsOnTarget: Allekirjoita käännös käytössä kohteella %i
   wwcConfigCacheDisabled: Kääntäjän välimuisti poistettu käytöstä.
   wwcConfigConversationWatsonURLInput: Nykyinen URL-osoite on %i. Kirjoita Watsonille
     palvelun URL-osoite tai kirjoita 0 palaaksesi takaisin.
-  wwcOnJoinTranslationNotificationSourceLang: 'Keskusteluasi käännetään osoitteesta
-    %i kohteeseen %o.'
-  wwcBookDone: 'Kirja käännetty onnistuneesti.'
-  wwctsOnSender: 'Allekirjoita käännös käytössä Napsauta merkkiä hiiren kakkospainikkeella
-    kääntääksesi sen!'
-  watsonColorCodeWarning: 'Värikoodien käyttäminen voi antaa sinulle arvaamattomia
-    tuloksia.'
+  wwcOnJoinTranslationNotificationSourceLang: Keskusteluasi käännetään osoitteesta
+    %i kohteeseen %o.
+  wwcBookDone: Kirja käännetty onnistuneesti.
+  wwctsOnSender: Allekirjoita käännös käytössä Napsauta merkkiä hiiren kakkospainikkeella
+    kääntääksesi sen!
+  watsonColorCodeWarning: Värikoodien käyttäminen voi antaa sinulle arvaamattomia
+    tuloksia.
   wwctGUITranslationButton: Aloita kääntäminen
   wwctGUIAutoDetectButton: Automaattinen tunnistus lähdekieli
   wwcUpdaterUpToDate: WorldwideChat on ajan tasalla!
   wwcConfigConversationAmazonTranslateRegionInput: Nykyinen alue on %i. Kirjoita alue
     Amazonille tai kirjoita 0 palaaksesi takaisin.
-  wwcNoConsole: 'Tätä komentoa voi suorittaa vain pelaaja.'
+  wwcNoConsole: Tätä komentoa voi suorittaa vain pelaaja.
   wwcInitializationFail: WorldwideChatin alustus epäonnistui.
-  wwcrSuccess: 'WorldwideChat ladattu onnistuneesti uudelleen.'
-  wwcPlayerNotFound: 'Pelaaja %en löytänyt.'
-  wwcUpdaterOutOfDateChat: 'WorldwideChat on vanhentunut. Päivitä uusimpaan versioon.'
-  wwcConfigConversationRateLimitSuccess: 'Arvosteluraja on asetettu onnistuneesti.'
-  wwcConfigConversationWatsonURLSuccess: 'Watsonin URL-osoite on määritetty onnistuneesti.'
-  wwctbPlayerNotFound: 'Pelaaja %i ei joko löydy tai se ei ole aktiivinen kääntäjä.'
-  wwcConfigConversationTranslationCacheSuccess: 'Käännös välimuistin raja asetettu
-    onnistuneesti.'
-  wwctInvalidArgs: 'Virheelliset argumentit toimitettu!'
+  wwcrSuccess: WorldwideChat ladattu onnistuneesti uudelleen.
+  wwcPlayerNotFound: Pelaaja %en löytänyt.
+  wwcUpdaterOutOfDateChat: WorldwideChat on vanhentunut. Päivitä uusimpaan versioon.
+  wwcConfigConversationRateLimitSuccess: Arvosteluraja on asetettu onnistuneesti.
+  wwcConfigConversationWatsonURLSuccess: Watsonin URL-osoite on määritetty onnistuneesti.
+  wwctbPlayerNotFound: Pelaaja %i ei joko löydy tai se ei ole aktiivinen kääntäjä.
+  wwcConfigConversationTranslationCacheSuccess: Käännös välimuistin raja asetettu
+    onnistuneesti.
+  wwctInvalidArgs: Virheelliset argumentit toimitettu!
   wwcConfigGUIPrefixButton: Vaihda liitännäisen etuliite
-  wwctSameLangError: 'Et voi kääntää samalle kielelle!'
+  wwctSameLangError: Et voi kääntää samalle kielelle!
   wwctGUINewTranslationTarget: Valitse kohdekieli
-  wwctLangToLangStartOtherPlayer: 'Käännetään nyt keskustelua %o osoitteesta %i kohteeseen
-    %e.'
+  wwctLangToLangStartOtherPlayer: Käännetään nyt keskustelua %o osoitteesta %i kohteeseen
+    %e.
   wwcConfigConnectionSuccess: Yhteys onnistui kohteeseen %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Onko aktiivinen kääntäjä: %i'
@@ -133,64 +131,63 @@ Messages:
     0 palataksesi takaisin.
   wwcConfigGUIPreviousPageButton: Edellinen sivu
   wwcConfigGUITranslatorCacheButton: Vaihda käännösvälimuistin raja
-  wwcConfigConversationbStatsSuccess: 'Onnistuneesti vaihdettu bStats.'
-  wwcSignDone: 'Sign käännetty onnistuneesti.'
+  wwcConfigConversationbStatsSuccess: Onnistuneesti vaihdettu bStats.
+  wwcSignDone: Sign käännetty onnistuneesti.
   wwcConfigInvalidPrefixSettings: Etuliitteen lukeminen epäonnistui. Käyttämällä oletusarvoa...
   wwcConfigRateLimitInvalid: Huono nopeus raja asetettu config.yml. Defaulting 0 sekuntia...
-  wwcSignTranslateStart: 'Käännetään kohdemerkki...'
+  wwcSignTranslateStart: Käännetään kohdemerkki...
   wwcConfigGUIChatSettings: Chat-määritykset
   wwcConfigGUIWatsonURLButton: Watson-palvelun URL-osoitteen muuttaminen
-  wwcConfigConversationUpdateCheckerSuccess: 'Päivitä tarkistusviive asetettu onnistuneesti.'
+  wwcConfigConversationUpdateCheckerSuccess: Päivitä tarkistusviive asetettu onnistuneesti.
   wwcUnsupportedVersion: 'Sinulla on käytössä Bukkit-, Spigot-tai Paper-versio, jota
     ei tueta. Tuetut versiot:'
-  wwctGUIBackToMainMenuButton: Takaisin Pääkäännösvalikko
-  wwcGlobalOnJoinTranslationNotificationSourceLang: 'Globaali keskustelu käännetään
-    osoitteesta %i kohteeseen %o.'
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Globaali keskustelu käännetään
+    osoitteesta %i kohteeseen %o.
   wwcConfigGUITranslatorSettings: Kääntäjän kokoonpano
   wwcConfigConversationGoogleTranslateAPIKeyInput: Nykyinen API-avain on %i. Kirjoita
     API-avain Google Translatea varten tai kirjoita 0 palaaksesi takaisin.
   wwcConfigConversationRateLimitInput: Nykyinen yleisnopeusraja käännöskohtaisesti
     on %i sekuntia. Määritä uusi arvo kirjoittamalla jokin suurempi kuin 0 tai poista
     raja käytöstä kirjoittamalla 0. Kirjoita mitään alle 0, jotta voit palata takaisin.
-  wwcConfigConversationGoogleTranslateAPIKeySuccess: 'Google Translate API avaimen
-    asetettu onnistuneesti.'
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API avaimen
+    asetettu onnistuneesti.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Vaihda Amazonin salainen avain
-  wwcVersion: 'WorldwideChat, versio'
+  wwcVersion: WorldwideChat, versio
   wwcsAttemptedTranslations: 'Käännösyritykset: %i'
-  wwcConfigConversationAmazonTranslateSecretKeySuccess: 'Amazonin salainen avain
-    asetettu onnistuneesti.'
-  wwcConfigConversationWatsonAPIKeySuccess: 'Watson API avain asetettu onnistuneesti.'
-  wwcRateLimit: 'Käännökset ovat nopeita rajoitettuja. Odota toisen %i sekuntia.'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazonin salainen avain asetettu
+    onnistuneesti.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API avain asetettu onnistuneesti.
+  wwcRateLimit: Käännökset ovat nopeita rajoitettuja. Odota toisen %i sekuntia.
   wwcConfigCacheEnabled: Kääntäjän välimuisti käytössä ja asetettu raja %i.
   wwctGUIExistingTranslationButton: Korvaa nykyinen käännösistunto
-  wwcOnJoinTranslationNotificationNoSourceLang: 'Keskusteluasi käännetään kohteeseen
-    %o.'
+  wwcOnJoinTranslationNotificationNoSourceLang: Keskusteluasi käännetään kohteeseen
+    %o.
   wwcUserDataReloaded: Ladattu kaikki tallennetut käyttäjätiedot.
   wwcConfigGUISendTranslationChatButton: Lähetä Chat-muistutus Active Translatorille
     kirjautumisen yhteydessä
   wwcsLastTranslationTime: 'Viimeinen (onnistunut) käännösaika: %i'
-  wwctbNotATranslator: 'Et ole aktiivinen kääntäjä! Varmista, että olet asettanut
-    tämän käyttämällä /wwct.'
+  wwctbNotATranslator: Et ole aktiivinen kääntäjä! Varmista, että olet asettanut tämän
+    käyttämällä /wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Nykyinen käyttöavain on %i.
     Kirjoita Amazonin käyttöavain tai kirjoita 0, jotta voit palata takaisin.
-  wwcConfigConversationAmazonTranslateAccessKeySuccess: 'Amazonin käyttöavaimen asetettu
-    onnistuneesti.'
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazonin käyttöavaimen asetettu
+    onnistuneesti.
   wwcConfigBadUpdateDelay: Virheellinen päivitysviive asetettu config.yml. Defaulting
     86400 sekuntiin...
-  wwctrlRateLimitOffSender: 'Sammutti korkorajoituksesi.'
+  wwctrlRateLimitOffSender: Sammutti korkorajoituksesi.
   wwctrlRateLimitAlreadyOffTarget: '%i: n nopeusraja on jo poistettu käytöstä.'
-  wwctrlPlayerNotFound: 'Pelaaja %i ei joko löydy tai se ei ole aktiivinen kääntäjä.'
-  wwctrlRateLimitSetSender: 'Aseta nopeusrajasi arvoon %i sekuntia.'
+  wwctrlPlayerNotFound: Pelaaja %i ei joko löydy tai se ei ole aktiivinen kääntäjä.
+  wwctrlRateLimitSetSender: Aseta nopeusrajasi arvoon %i sekuntia.
   wwctrlRateLimitOffTarget: 'Kytkettiin %i: n nopeusraja pois päältä.'
-  wwctrlRateLimitSetTarget: 'Aseta nopeusraja %i arvoon %o sekuntia.'
-  wwctrlNotATranslator: 'Et ole aktiivinen kääntäjä! Varmista, että olet asettanut
-    tämän käyttämällä /wwct.'
-  wwctrlRateLimitAlreadyOffSender: 'Sinun hintaraja on jo poistettu käytöstä.'
+  wwctrlRateLimitSetTarget: Aseta nopeusraja %i arvoon %o sekuntia.
+  wwctrlNotATranslator: Et ole aktiivinen kääntäjä! Varmista, että olet asettanut
+    tämän käyttämällä /wwct.
+  wwctrlRateLimitAlreadyOffSender: Sinun hintaraja on jo poistettu käytöstä.
   wwctGUIRateButton: Aseta nopeusraja
   wwctGUIConversationRateLimit: Nopeusraja per käännös on nykyisesti %i sekuntia.
     Määritä uusi arvo kirjoittamalla jokin suurempi kuin 0 tai poista raja käytöstä
     kirjoittamalla 0. Kirjoita mitään alle 0, jotta voit palata takaisin.
-  wwctGUITargetPlayerNull: 'Kohdepelaaja irrottautunut palvelimesta.'
+  wwctGUITargetPlayerNull: Kohdepelaaja irrottautunut palvelimesta.
   wwcConfigConversationSyncUserDataDelayInput: Käyttäjätietojen synkronoinnin nykyinen
     viive on %i sekuntia. Kirjoita mitä tahansa suurempi kuin 10, jos haluat asettaa
     uuden arvon, tai jotain alle 10 palata takaisin.
@@ -199,50 +196,50 @@ Messages:
     nanosekunneissa.
   wwcConfigSyncDelayEnabled: Viive käyttäjän tietojen synkronoinnin asetukseksi %i
     sekuntia.
-  wwcConfigConversationSyncUserDataDelaySuccess: 'Käyttäjän tietojen synkronoinnin
-    viive on asetettu onnistuneesti.'
+  wwcConfigConversationSyncUserDataDelaySuccess: Käyttäjän tietojen synkronoinnin
+    viive on asetettu onnistuneesti.
   wwcConfigSyncDelayInvalid: Virheellinen käyttäjän tietojen synkronoinnin viive asetettu
     config.yml. Defaulting 7200 sekuntiin...
   wwcConfigCacheInvalid: Kääntäjän välimuistin koko ei kelpaa. Defaulting kymmeneen...
-  wwcInventoryErrorPlayer: 'Virhe havaittu käyttöliittymäsi yhteydessä. Konsoliin
-    on lähetetty loki.'
+  wwcInventoryErrorPlayer: Virhe havaittu käyttöliittymäsi yhteydessä. Konsoliin on
+    lähetetty loki.
   wwcInventoryError: 'Virhe havaittu käyttäjä %i: n käyttöliittymän yhteydessä. Ilmoita
     tästä ongelmasta kehittäjälle.'
   wwcConfigConversationTranslatorFail: '%i: n ottaminen käytöstä epäonnistui.'
   wwcConfigConversationConsoleTranslatorSuccess: Käyttäjä %i onnistuneesti otettiin
     %o.
-  wwcConfigConversationTranslatorSuccess: 'Onnistuneesti otettu %i.'
+  wwcConfigConversationTranslatorSuccess: Onnistuneesti otettu %i.
   wwcConfigConversationConsoleTranslatorFail: Käyttäjä %i epäonnistui ota %o.
   wwcWatson117Warning: Watson ei ole alustanut InAccessibleObjectExceptionin vuoksi.
     Toistaiseksi, ole hyvä ja lisää —laiton-access=lupa olemassa oleviin palvelimen
     purkki argumentteja.
   wwcDeluxeChatIncompatible: Tämä liitännäinen ei välttämättä toimi oikein DeluxeChatin
     kanssa.
-  wwcSignTranslationFail: 'Yhtä tai useampaa riviä ei voi kääntää kohdemerkissä.'
-  wwcBookTranslationFail: 'Yhtä tai useampaa sivua ei voi kääntää kohderyhmässä.'
-  wwctiOffTarget: 'Kohteen käännös käytöstä kohteella %i.'
-  wwctiOffSender: 'Kohteen käännös käytöstä.'
-  wwcItemTranslateTitleStock: 'Oletusnimien nimiä ei voi kääntää.'
-  wwcItemTranslateLoreFail: 'Kohteen lore kääntäminen epäonnistui.'
-  wwcItemTranslateTitleFail: 'Nimikkeen nimen kääntäminen epäonnistui.'
+  wwcSignTranslationFail: Yhtä tai useampaa riviä ei voi kääntää kohdemerkissä.
+  wwcBookTranslationFail: Yhtä tai useampaa sivua ei voi kääntää kohderyhmässä.
+  wwctiOffTarget: Kohteen käännös käytöstä kohteella %i.
+  wwctiOffSender: Kohteen käännös käytöstä.
+  wwcItemTranslateTitleStock: Oletusnimien nimiä ei voi kääntää.
+  wwcItemTranslateLoreFail: Kohteen lore kääntäminen epäonnistui.
+  wwcItemTranslateTitleFail: Nimikkeen nimen kääntäminen epäonnistui.
   wwctGUIItemButton: Vaihda kohteen käännös
-  wwcItemTranslateTitleDone: 'Käännetty kohteen otsikko onnistuneesti.'
+  wwcItemTranslateTitleDone: Käännetty kohteen otsikko onnistuneesti.
   wwcGUITempItem: Kohteen näyttö
-  wwcItemTranslateStart: 'Kohdekohteen kääntäminen...'
-  wwcSignTranslationFailCatastrophic: 'Kohdemerkin kääntäminen epäonnistui.'
-  wwcItemTranslationFailCatastrophic: 'Kohdekohteen kääntäminen epäonnistui.'
+  wwcItemTranslateStart: Kohdekohteen kääntäminen...
+  wwcSignTranslationFailCatastrophic: Kohdemerkin kääntäminen epäonnistui.
+  wwcItemTranslationFailCatastrophic: Kohdekohteen kääntäminen epäonnistui.
   wwcBookTranslateTitleSuccess: 'Käännetyn kirjan nimi: %i'
-  wwctiOnSender: 'Kohteen käännös käytössä. Napsauta hiiren kakkospainikkeella pääkädessäsi
-    olevaa kohdetta kääntääksesi sen!'
-  wwcItemTranslateLoreStart: 'Kääntäminen Lore kohdekohteen...'
-  wwcItemTranslateLoreDone: 'Käännetty kohde Lore onnistuneesti.'
-  wwctiOnTarget: 'Kohteen käännös käytössä kohteella %i.'
-  wwcBookTranslationFailCatastrophic: 'Kohdekirjan kääntäminen epäonnistui.'
-  wwcBookTranslateTitleFail: 'Kirjan nimen kääntäminen epäonnistui.'
-  wwcChatTranslationFail: 'Viestin kääntäminen epäonnistui.'
-  wwcInvalidTranslator: 'Kääntäjän asetukset eivät kelpaa. Korjaa tämä config.yml
-    tai /wwcc käyttää tätä plugin.'
-  wwcNotDoneLoading: 'WorldwideChat alustaa edelleen. Yritä pian uudelleen.'
+  wwctiOnSender: Kohteen käännös käytössä. Napsauta hiiren kakkospainikkeella pääkädessäsi
+    olevaa kohdetta kääntääksesi sen!
+  wwcItemTranslateLoreStart: Kääntäminen Lore kohdekohteen...
+  wwcItemTranslateLoreDone: Käännetty kohde Lore onnistuneesti.
+  wwctiOnTarget: Kohteen käännös käytössä kohteella %i.
+  wwcBookTranslationFailCatastrophic: Kohdekirjan kääntäminen epäonnistui.
+  wwcBookTranslateTitleFail: Kirjan nimen kääntäminen epäonnistui.
+  wwcChatTranslationFail: Viestin kääntäminen epäonnistui.
+  wwcInvalidTranslator: Kääntäjän asetukset eivät kelpaa. Korjaa tämä config.yml tai
+    /wwcc käyttää tätä plugin.
+  wwcNotDoneLoading: WorldwideChat alustaa edelleen. Yritä pian uudelleen.
   wwcConfigGUIEachTranslatorSettings: '%i määritykset'
   wwcConfigGUIToggleButton: Vaihda %i
   wwcConfigGUIWatsonButton: Watson
@@ -253,7 +250,7 @@ Messages:
   wwcTranslatorErrorThresholdReached: Virhekynnys saavutettu Tämä plugin lataa nyt
     uudelleen ja poistaa kaikki kääntäjät käytöstä.
   wwcConfigErrorLimitEnabled: Kääntäjän virheraja %i.
-  wwcTranslatorError: 'Ongelmana oli yritettäessä käännös. Yritä uudelleen.'
+  wwcTranslatorError: Ongelmana oli yritettäessä käännös. Yritä uudelleen.
   wwcTranslatorErrorConsole: Ongelma ilmeni, kun käyttäjä %i yritti käännöstä. Nyt
     tulostetaan pinonjälki.
   wwcConfigErrorLimitInvalid: Virheellinen kääntäjän virheraja asetettu config.yml.
@@ -268,3 +265,23 @@ Messages:
   wwcsTitle: Tiedon %i tietue
   wwctInvalidOutputLangCode: 'Virheellinen tulostuskielikoodi toimitetaan! Kelvolliset
     lang-koodit: %o'
+  wwctGUISourceTranslationSelected: Olet valinnut tämän kielen.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Poista ohitus
+  wwcConfigConversationOverrideTextChange: Kirjoita uusi viesti tälle ohitukselle
+    tai palaa takaisin kirjoittamalla 0. Muista sisällyttää kaikki muuttujat, jotka
+    alkavat alkuperäisessä viestissä näkyvillä prosenttimerkeillä.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Tämä kieli on jo aktiivinen!
+  wwcConfigGUIMessagesOverrideChatButton: Ohita oletusliitännäisen viestit
+  wwcConfigGUIChatMessagesPossibleOverrides: Valitse viesti
+  wwcConfigGUIChatMessagesModifyOverride: Nykyisen ohituksen muokkaaminen
+  wwcConfigConversationOverrideDeletionSuccess: Mukautettu viestien ohitus on poistettu.
+  wwcConfigGUIChatMessagesOverrideSettings: Oletusviestien ohittaminen
+  wwcConfigGUIChatMessagesDeadOverride: Tämä ohitus on joko virheellinen tai alkuperäinen
+    viesti on poistettu. Sinun pitäisi poistaa tämä.
+  wwcConfigGUIMessagesAlreadyOverriden: Sinulla on jo ohitus tälle viestille!
+  wwcConfigGUIChatMessagesOverrideNewButton: Lisää uusi ohitus
+  wwcConfigGUIMessagesOverrideCustomLabel: Uusi viesti
+  wwcConfigConversationOverrideTextChangeSuccess: Uusi viesti on asetettu onnistuneesti.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Olemassa olevan tekstin muuttaminen
+  wwcExampleMessage: Tämä on tyhmä viesti, ja se on tarkoitettu ohittavaksi esimerkkinä.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Alkuperäinen viesti
