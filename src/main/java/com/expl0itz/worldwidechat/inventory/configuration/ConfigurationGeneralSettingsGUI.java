@@ -92,6 +92,9 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 		contents.set(1, 5, ClickableItem.of(syncUserDataButton, e -> {
 			syncUserDataConvo.buildConversation(player).begin();
 		}));
+		
+		/* Option Six: Debug Mode */
+		debugModeButton(player, contents);
 
 		/* Bottom Middle Option: Quit */
 		ItemStack quitButton = new ItemStack(Material.BARRIER);
@@ -119,6 +122,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 	@Override
 	public void update(Player player, InventoryContents contents) {
 		bStatsButton(player, contents);
+		debugModeButton(player, contents);
 	}
 
 	private void bStatsButton(Player player, InventoryContents contents) {
@@ -141,6 +145,32 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			final TextComponent successfulChange = Component.text()
 					.append(Component.text()
 							.content(CommonDefinitions.getMessage("wwcConfigConversationbStatsSuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage(player, successfulChange);
+		}));
+	}
+	
+	private void debugModeButton(Player player, InventoryContents contents) {
+		ItemStack debugModeButton;
+		if (main.getDebugMode()) {
+			debugModeButton = new ItemStack(Material.EMERALD_BLOCK);
+		} else {
+			debugModeButton = new ItemStack(Material.REDSTONE_BLOCK);
+		}
+		ItemMeta debugModeMeta = debugModeButton.getItemMeta();
+		debugModeMeta.setDisplayName(ChatColor.GOLD
+				+ CommonDefinitions.getMessage("wwcConfigGUIDebugModeButton"));
+		debugModeButton.setItemMeta(debugModeMeta);
+		contents.set(1, 6, ClickableItem.of(debugModeButton, e -> {
+			main.addPlayerUsingConfigurationGUI(player);
+			main.getConfigManager().getMainConfig().set("General.enableDebugMode",
+					!(main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")));
+			main.setDebugMode(!main.getDebugMode());
+			main.getConfigManager().saveMainConfig(true);
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcConfigConversationDebugModeSuccess"))
 							.color(NamedTextColor.GREEN))
 					.build();
 			CommonDefinitions.sendMessage(player, successfulChange);
