@@ -104,7 +104,6 @@ public class TestPlayerCommands {
 		/* User runs /wwctb player */
 		playerMock.performCommand("worldwidechat:wwctb player1");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
-		plugin.getLogger().info("" + currTranslator.getTranslatingBook());
 		if (toggleStatus) {
 			assertTrue(currTranslator.getTranslatingBook());
 		} else {
