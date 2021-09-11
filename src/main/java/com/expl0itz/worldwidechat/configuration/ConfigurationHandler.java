@@ -2,7 +2,6 @@ package com.expl0itz.worldwidechat.configuration;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.InaccessibleObjectException;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -292,15 +291,8 @@ public class ConfigurationHandler {
 				outName = "Invalid";
 			}
 		} catch (Exception e) {
-			if (e instanceof InaccessibleObjectException) {
-				// Watson does not work properly on 1.17 without --illegal-access=permit. Remove
-				// this once the IBM devs fix it
-				main.getLogger()
-						.warning(CommonDefinitions.getMessage("wwcWatson117Warning"));
-			} else {
-				main.getLogger().severe("(" + outName + ") " + e.getMessage());
-				e.printStackTrace();
-			}
+			main.getLogger().severe("(" + outName + ") " + e.getMessage());
+			e.printStackTrace();
 			outName = "Invalid";
 		}
 		if (outName.equals("Invalid")) {

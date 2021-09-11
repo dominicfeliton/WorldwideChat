@@ -29,12 +29,10 @@ public class UpdateChecker implements Runnable {
 		} catch (MalformedURLException e) {
 			latest = main.getPluginVersion() + ""; // Just set latest to the current plugin version, since we can't find
 													// a newer one
-			main.getLogger().warning(
-					CommonDefinitions.getMessage("wwcUpdaterConnectionFailed"));
+			main.getLogger().warning(CommonDefinitions.getMessage("wwcUpdaterConnectionFailed"));
 		} catch (IOException e) {
 			latest = main.getPluginVersion() + "";
-			main.getLogger()
-					.warning(CommonDefinitions.getMessage("wwcUpdaterParserFailed"));
+			main.getLogger().warning(CommonDefinitions.getMessage("wwcUpdaterParserFailed"));
 		}
 
 		try {
@@ -49,8 +47,7 @@ public class UpdateChecker implements Runnable {
 				main.setOutOfDate(true);
 			}
 		} catch (Exception e) {
-			main.getLogger()
-					.warning(CommonDefinitions.getMessage("wwcUpdaterFailedGeneric"));
+			main.getLogger().warning(CommonDefinitions.getMessage("wwcUpdaterFailedGeneric"));
 		}
 	}
 

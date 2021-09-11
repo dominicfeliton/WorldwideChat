@@ -218,8 +218,6 @@ Messages:
   wwcConfigConversationTranslatorSuccess: Se ha habilitado satisfactoriamente %i.
   wwcConfigConversationConsoleTranslatorFail: El usuario %i no ha podido habilitar
     %o.
-  wwcWatson117Warning: Watson no ha podido inicializarse debido a una excepción InAccessibleObjectException.
-    Por ahora, agregue —illegal-access=permit a los argumentos jar del servidor existentes.
   wwcDeluxeChatIncompatible: Es posible que este complemento no funcione correctamente
     con DeluxeChat.
   wwcSignTranslationFail: No se puede traducir una o más líneas en el signo de destino.

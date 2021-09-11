@@ -215,9 +215,6 @@ Messages:
   wwcConfigConversationTranslatorSuccess: Успешно включено %i.
   wwcConfigConversationConsoleTranslatorFail: Пользователю %Мне не удалось включить
     %o.
-  wwcWatson117Warning: Watson не удалось инициализировать из-за InaccessibleObjectException.
-    На данный момент добавьте —illegal-access=permit к существующим аргументам серверной
-    jar.
   wwcDeluxeChatIncompatible: Этот плагин может неправильно работать с DeluxeChat.
   wwcSignTranslationFail: Невозможно перевести одну или несколько строк на целевом
     знаке.

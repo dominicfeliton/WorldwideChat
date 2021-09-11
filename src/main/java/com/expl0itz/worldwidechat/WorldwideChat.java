@@ -144,8 +144,7 @@ public class WorldwideChat extends JavaPlugin {
 				+ CommonDefinitions.getMessage("wwcListenersInitialized"));
 
 		// We made it!
-		getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcEnabled")
-				.replace("%i", pluginVersion));
+		getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcEnabled", new String[] {pluginVersion}));
 	}
 
 	@Override
@@ -494,8 +493,7 @@ public class WorldwideChat extends JavaPlugin {
 				}
 
 				removeCacheTerm(leastAmountOfTimes);
-				CommonDefinitions
-						.sendDebugMessage("Removed least used phrase in cache, since we are now at the hard limit.");
+				CommonDefinitions.sendDebugMessage("Removed least used phrase in cache, since we are now at the hard limit.");
 				addCacheTerm(input);
 			}
 		}
