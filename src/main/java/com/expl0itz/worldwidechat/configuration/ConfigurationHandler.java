@@ -84,6 +84,7 @@ public class ConfigurationHandler {
 		}
 
 		main.getLogger().warning("Unable to detect a valid language in your config.yml. Defaulting to en...");
+		main.setPluginLang("en");
 	}
 
 	/* Init Messages Method */
