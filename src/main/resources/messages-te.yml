@@ -61,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ప్లేయర్ % నేను కనుగొనబడలేదు.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: గ్లోబల్ చాట్ అనువదించబడింది,
     కానీ మీ చాట్ %o కు అనువదించబడింది.
-  wwcConfigGUIGlobalRateLimit: గ్లోబల్ రేట్ పరిమితిని మార్చండి
   wwcConfigGUIAmazonTranslateRegionButton: అమెజాన్ ప్రాంతం మార్చండి
   wwcConfigConversationLangInput: 'ప్రస్తుత ప్లగిన్ భాష %i. దయచేసి చెల్లుబాటు అయ్యే
     భాషా కోడ్ను నమోదు చేయండి లేదా రద్దు చేయడానికి 0 అని టైప్ చేయండి. చెల్లుబాటు అయ్యే
@@ -220,21 +219,16 @@ Messages:
   wwcItemTranslateTitleDone: అంశం శీర్షిక విజయవంతంగా అనువదించబడింది.
   wwcGUITempItem: అంశం డిస్ప్లే
   wwcItemTranslateStart: లక్ష్యం అంశం అనువదించడం...
-  wwcSignTranslationFailCatastrophic: లక్ష్యం సైన్ అనువదించడానికి విఫలమైంది.
-  wwcItemTranslationFailCatastrophic: లక్ష్యం అంశం అనువదించడానికి విఫలమైంది.
   wwcBookTranslateTitleSuccess: 'అనువదించబడిన పుస్తక శీర్షిక: %i'
   wwctiOnSender: అంశం అనువాదం ప్రారంభించబడింది. అనువదించడానికి మీ ప్రధాన చేతిలో ఒక
     వస్తువుతో కుడి-క్లిక్ చేయండి!
   wwcItemTranslateLoreStart: లక్ష్యం అంశం యొక్క లోర్ అనువదించడం...
   wwcItemTranslateLoreDone: అనువాదం అంశం విజయవంతంగా.
   wwctiOnTarget: అంశం అనువాదం %i కొరకు ప్రారంభించబడింది.
-  wwcBookTranslationFailCatastrophic: లక్ష్యం పుస్తకం అనువదించడానికి విఫలమైంది.
   wwcBookTranslateTitleFail: పుస్తక శీర్షికను అనువదించడంలో విఫలమైంది.
   wwcChatTranslationFail: మీ సందేశాన్ని అనువదించడానికి విఫలమైంది.
   wwcInvalidTranslator: చెల్లని అనువాదకుడు సెట్టింగులు. ఈ ప్లగ్ఇన్ ఉపయోగించడానికి
     మీ config.yml లేదా /wwcc తో ఈ పరిష్కరించడానికి దయచేసి.
-  wwcNotDoneLoading: ప్రపంచవ్యాప్తం చాట్ ఇప్పటికీ ప్రారంభిస్తోంది. దయచేసి త్వరలో మళ్ళీ
-    ప్రయత్నించండి.
   wwcConfigGUIEachTranslatorSettings: '%i ఆకృతీకరణ'
   wwcConfigGUIToggleButton: టోగుల్ %i
   wwcConfigGUIWatsonButton: వాట్సన్
@@ -283,3 +277,33 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: అసలు సందేశం
   wwcConfigGUIDebugModeButton: డీబగ్ మోడ్ను టోగుల్ చేయండి
   wwcConfigConversationDebugModeSuccess: విజయవంతంగా డీబగ్ మోడ్ toggled.
+  wwcConfigGUIErrorLimitButton: అనువాదకుడు దోష పరిమితిని మార్చండి
+  wwcConfigConversationErrorLimitSuccess: దోష పరిమితి విజయవంతంగా సెట్.
+  wwcEntityTranslateStart: టార్గెట్ ఎంటిటీని అనువదించడం...
+  wwcConfigGUICharacterLimitButton: సందేశం అక్షర పరిమితి మార్చండి
+  wwcConfigMessageCharLimitInvalid: config.yml లో సెట్ సందేశానికి చెల్లని పరిమితి.
+    255 పట్టీలు డిఫాల్ట్...
+  wwcConfigConversationCharacterLimitSuccess: అక్షర పరిమితి విజయవంతంగా సెట్.
+  wwcteOnTarget: ఎంటిటీ అనువాదం %i కోసం ప్రారంభించబడింది.
+  wwcEntityTranslateDone: 'అనువాదం ఎంటిటీ పేరు: %i'
+  wwcEntityTranslateNoName: ఎంటిటీకి కస్టమ్ పేరు లేదు.
+  wwcConfigConversationErrorLimitInput: ప్రతి అనువాదకునికి ప్రస్తుత దోష పరిమితి %i.
+  wwcConfigGUIGlobalRateLimitButton: గ్లోబల్ రేట్ పరిమితిని మార్చండి
+  wwcteOnSender: ఎంటిటీ అనువాదం ప్రారంభించబడింది. దాని పేరును అనువదించడానికి ఒక ఎంటిటీపై
+    కుడి-క్లిక్ చేయండి!
+  wwcInGameObjectTranslationFailCatastrophic: లక్ష్యం వస్తువు అనువదించడానికి విఫలమైంది.
+  wwcInGameEntityTranslationFailCatastrophic: లక్ష్యం పరిధి అనువదించడానికి విఫలమైంది.
+  wwcConfigGUIResponseLimitButton: అనువాదకుడు రెస్పాన్స్ టైమ్అవుట్ మార్చండి
+  wwcConfigMessageCharLimitEnabled: సందేశానికి అక్షర పరిమితి %i అక్షరాలకు సెట్.
+  wwcteOffTarget: ఎంటిటీ అనువాదం %i కోసం నిలిపివేయబడింది.
+  wwcCharLimit: మీ సందేశం చాలా పొడవుగా ఉంది! దయచేసి మీ సందేశం పొడవు ఉన్న %i అక్షరాల
+    కంటే తక్కువగా ఉందని నిర్ధారించుకోండి.
+  wwcConfigConversationResponseLimitInput: ప్రతి అనువాదకునికి ప్రస్తుత ప్రతిస్పందన
+    సమయము %i సెకన్లు. క్రొత్త విలువను సెట్ చేయడానికి 0 కన్నా ఎక్కువ ఏదైనా టైప్ చేయండి
+    లేదా తిరిగి వెళ్ళడానికి 0 కంటే తక్కువ లేదా సమానమైన ఏదైనా టైప్ చేయండి.
+  wwcConfigConversationCharacterLimitInput: సందేశానికి ప్రస్తుత అక్షర పరిమితి %i అక్షరాలు.
+    క్రొత్త విలువను సెట్ చేయడానికి 0 కన్నా ఎక్కువ ఏదైనా టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి
+    0 కంటే తక్కువ లేదా సమానమైన ఏదైనా టైప్ చేయండి.
+  wwcteOffSender: ఎంటిటీ అనువాదం నిలిపివేయబడింది.
+  wwctGUIEntityButton: టోగుల్ ఎంటిటీ అనువాదం
+  wwcConfigConversationResponseLimitSuccess: రెస్పాన్స్ టైమ్అవుట్ విజయవంతంగా సెట్.

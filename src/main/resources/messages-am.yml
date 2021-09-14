@@ -55,7 +55,6 @@ Messages:
   wwctPlayerNotFound: ተጫዋች %እኔ አልተገኘም።
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ዓለም አቀፍ ውይይት እየተተረጎመ
     ነው, ነገር ግን የእርስዎ ውይይት ወደ %o እየተተረጎመ ነው።
-  wwcConfigGUIGlobalRateLimit: ዓለም አቀፍ ደረጃ ገደብ ለውጥ
   wwcConfigGUIAmazonTranslateRegionButton: የአማዞን ክልል ቀይር
   wwcConfigConversationLangInput: 'አሁን ያለው ተሰኪ ቋንቋ %i ነው። እባክዎ ትክክለኛ የሆነ የቋንቋ ኮድ ያስገቡ
     ወይም ለመሰረዝ 0 ይተይቡ። ትክክለኛ የቋንቋ ኮዶች: %o'
@@ -194,19 +193,15 @@ Messages:
   wwcItemTranslateTitleDone: የተተረጎመው ንጥል ርዕስ በተሳካ ሁኔታ
   wwcGUITempItem: ንጥል ማሳያ
   wwcItemTranslateStart: ዒላማ ንጥል መተርጎም...
-  wwcSignTranslationFailCatastrophic: የዒላማ ምልክት መተርጎም አልተቻለም
-  wwcItemTranslationFailCatastrophic: ዒላማ ንጥል መተርጎም አልተሳካም።
   wwcBookTranslateTitleSuccess: 'የተተረጎመ መጽሐፍ ርዕስ: %i'
   wwctiOnSender: ንጥል ትርጉም ነቅቷል። ለመተርጎም በዋናው እጅዎ ውስጥ አንድ ንጥል በቀኝ-ጠቅ ያድርጉ!
   wwcItemTranslateLoreStart: የዒላማ ንጥል መተርጎም በርዝዴዎች...
   wwcItemTranslateLoreDone: የተተረጎመው ንጥል በርዝዴይስ በተ
   wwctiOnTarget: ንጥል ትርጉም ነቅቷል ለ %i።
-  wwcBookTranslationFailCatastrophic: የዒላማ መጽሐፍ መተርጎም አልተቻለም
   wwcBookTranslateTitleFail: የመጽሐፍ ርዕስ መተርጎም አልተሳካም
   wwcChatTranslationFail: መልዕክትዎን መተርጎም አልተሳካም።
   wwcInvalidTranslator: ልክ ያልሆነ ተርጓሚ ቅንብሮች። እባክዎ ይህን ፕለጊን ለመጠቀም በ config.yml ወይም በ
     /wwcc ውስጥ ያስተካክሉት።
-  wwcNotDoneLoading: WorldwideChat አሁንም እየተነቃነቀ ነው። እባክዎ በአጭር ጊዜ እንደገና ይሞክሩ።
   wwcConfigGUIEachTranslatorSettings: '%i ውቅር'
   wwcConfigGUIToggleButton: መቀያየ %i
   wwcConfigGUIWatsonButton: ዋትሰን
@@ -248,3 +243,31 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: ኦሪጅናል መልዕክት
   wwcConfigGUIDebugModeButton: የማረም ሁነታ ይቀያይሩ
   wwcConfigConversationDebugModeSuccess: በተሳካ ሁኔታ የማረም ሁነታ ተቀይሯል።
+  wwcConfigGUIErrorLimitButton: የአስተርጓሚ ስህተት ገደብ ለውጥ
+  wwcConfigConversationErrorLimitSuccess: የስህተት ገደብ በተሳካ ሁኔታ ማዘጋጀት።
+  wwcEntityTranslateStart: ዒላማ የሆነውን አካል በመተርጎም ላይ...
+  wwcConfigGUICharacterLimitButton: የመልዕክት ቁምፊ ወሰን ለውጥ
+  wwcConfigMessageCharLimitInvalid: በ config.yml ውስጥ ከተዋቀረ መልዕክት ልክ ያልሆነ ገደብ። ወደ 255
+    ቻርስ ነባር በመሆን ላይ...
+  wwcConfigConversationCharacterLimitSuccess: የቁምፊ ገደብ በተሳካ ሁኔታ ማዘጋጀት
+  wwcteOnTarget: የአካል ትርጉም ነቅቷል ለ %i።
+  wwcEntityTranslateDone: 'የተተረጎመው የህጋዊ ስም: %i'
+  wwcEntityTranslateNoName: አካል ብጁ ስም የለውም።
+  wwcConfigConversationErrorLimitInput: የአሁኑ የስህተት ገደብ ለእያንዳንዱ ተርጓሚ ነው %i. አዲስ እሴት
+    ለማዘጋጀት ከ 0 የሚበልጥ ነገር ይተይቡ ወይም ከ 0 ያነሰ ወይም እኩል የሆነ ነገር ይተይቡ።
+  wwcConfigGUIGlobalRateLimitButton: ዓለም አቀፍ ደረጃ ገደብ ለውጥ
+  wwcteOnSender: አካል ትርጉም ነቅቷል። ስሙን ለመተርጎም በአንድ አካል ላይ በቀኝ-ጠቅ ያድርጉ!
+  wwcInGameObjectTranslationFailCatastrophic: ዒላማ ነገርን መተርጎም አልተሳካም።
+  wwcInGameEntityTranslationFailCatastrophic: የዒላማ አካል መተርጎም አልተቻለም
+  wwcConfigGUIResponseLimitButton: የተርጓሚ ምላሽ ጊዜ ማብቂያ ይቀይሩ
+  wwcConfigMessageCharLimitEnabled: የቁምፊ ገደብ በአንድ መልዕክት ተዘጋጅቷል ወደ %i ቁምፊዎች
+  wwcteOffTarget: የአካል ትርጉም ተሰናክሏል ለ %i።
+  wwcCharLimit: መልዕክትዎ በጣም ረጅም ነው! እባክዎ መልዕክትዎ ርዝመት %i ቁምፊዎች ያነሰ መሆኑን ያረጋግጡ።
+  wwcConfigConversationResponseLimitInput: ለእያንዳንዱ ተርጓሚ አሁን ያለው ምላሽ የእረፍት ጊዜ %i ሰከንዶች
+    ነው። አዲስ እሴት ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ወደ ኋላ ለመመለስ ከ 0 ያነሰ ወይም እኩል የሆነ ነገር
+    ይተይቡ።
+  wwcConfigConversationCharacterLimitInput: አሁን ያለው የቁምፊ ገደብ በአንድ መልዕክት %i ቁምፊዎች ነው።
+    አዲስ እሴት ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ወደ ኋላ ለመመለስ ከ 0 ያነሰ ወይም እኩል የሆነ ነገር ይተይቡ።
+  wwcteOffSender: የአካል ትርጉም ተሰናክሏል።
+  wwctGUIEntityButton: የመቀያየሪያ አካል ትርጉም
+  wwcConfigConversationResponseLimitSuccess: የምላሽ ጊዜው በተሳካ ሁኔታ ተዘጋጅቷል

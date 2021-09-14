@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: খেলোয়াড় %i পাওয়া যায়নি।
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: গ্লোবাল চ্যাট অনুবাদ
     করা হচ্ছে, কিন্তু আপনার চ্যাট %o এ অনুবাদ করা হচ্ছে।
-  wwcConfigGUIGlobalRateLimit: গ্লোবাল রেট লিমিট পরিবর্তন করুন
   wwcConfigGUIAmazonTranslateRegionButton: আমাজন অঞ্চল পরিবর্তন করুন
   wwcConfigConversationLangInput: 'বর্তমান প্লাগইন ভাষা %i। অনুগ্রহ করে একটি বৈধ ভাষা
     কোড লিখুন, অথবা বাতিল করার জন্য 0 টাইপ করুন। বৈধ ভাষা কোড: %o'
@@ -217,21 +216,16 @@ Messages:
   wwcItemTranslateTitleDone: অনুবাদ করা আইটেমের শিরোনাম সফলভাবে।
   wwcGUITempItem: আইটেম ডিসপ্লে
   wwcItemTranslateStart: টার্গেট আইটেম অনুবাদ করা হচ্ছে...
-  wwcSignTranslationFailCatastrophic: টার্গেট সাইন অনুবাদ করতে ব্যর্থ।
-  wwcItemTranslationFailCatastrophic: টার্গেট আইটেম অনুবাদ করতে ব্যর্থ।
   wwcBookTranslateTitleSuccess: 'অনূদিত বইয়ের শিরোনাম: %i'
   wwctiOnSender: আইটেমের অনুবাদ সক্রিয় করা হয়েছে। এটি অনুবাদ করার জন্য আপনার প্রধান
     হাতে একটি আইটেম দিয়ে ডান-ক্লিক করুন!
   wwcItemTranslateLoreStart: টার্গেট আইটেমের কাহিনী অনুবাদ করা হচ্ছে...
   wwcItemTranslateLoreDone: অনুবাদ করা আইটেমটি সফলভাবে।
   wwctiOnTarget: আইটেমের অনুবাদ %i জন্য সক্রিয় করা হয়েছে।
-  wwcBookTranslationFailCatastrophic: টার্গেট বই অনুবাদ করতে ব্যর্থ।
   wwcBookTranslateTitleFail: বইয়ের শিরোনাম অনুবাদ করতে ব্যর্থ।
   wwcChatTranslationFail: আপনার বার্তা অনুবাদ করতে ব্যর্থ।
   wwcInvalidTranslator: অনুবাদক সেটিংস অবৈধ। এই প্লাগইনটি ব্যবহার করার জন্য অনুগ্রহ
     করে আপনার config.yml অথবা /wwcc এর সাথে এটি ঠিক করুন।
-  wwcNotDoneLoading: ওয়ার্ল্ডউইডচ্যাট এখনও শুরু হচ্ছে। দয়া করে খুব শীঘ্রই আবার চেষ্টা
-    করুন।
   wwcConfigGUIEachTranslatorSettings: '%i কনফিগারেশন'
   wwcConfigGUIToggleButton: '%i টগল করুন'
   wwcConfigGUIWatsonButton: ওয়াটসন
@@ -282,3 +276,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: মূল বার্তা
   wwcConfigGUIDebugModeButton: ডিবাগ মোড টগল করো
   wwcConfigConversationDebugModeSuccess: ডিবাগ মোড সফলভাবে টগল করা হয়েছে।
+  wwcConfigGUIErrorLimitButton: অনুবাদকের ত্রুটির সীমা পরিবর্তন করুন
+  wwcConfigConversationErrorLimitSuccess: ত্রুটি সীমা নির্ধারণ সফলভাবে
+  wwcEntityTranslateStart: টার্গেট সত্তা অনুবাদ করা হচ্ছে...
+  wwcConfigGUICharacterLimitButton: বার্তার অক্ষর সীমা পরিবর্তন করো
+  wwcConfigMessageCharLimitInvalid: config.yml এ প্রতি বার্তা সেট করা অবৈধ সীমা ২৫৫
+    টি চরিতে ডিফল্ট হচ্ছে...
+  wwcConfigConversationCharacterLimitSuccess: অক্ষরের সীমা সফলভাবে নির্ধারণ করা হয়েছে।
+  wwcteOnTarget: '%i এর জন্য সত্তা অনুবাদ সক্রিয় করা হয়েছে।'
+  wwcEntityTranslateDone: 'অনূদিত সত্তার নাম: %i'
+  wwcEntityTranslateNoName: সত্তার কোন কাস্টম নাম নেই।
+  wwcConfigConversationErrorLimitInput: প্রতিটি অনুবাদকের জন্য বর্তমান ত্রুটির সীমা
+    হল %i। নতুন মান নির্ধারণের জন্য 0 থেকে বড় কিছু টাইপ করুন, অথবা ফিরে যাওয়ার জন্য
+    0 এর চেয়ে কম বা তার সমান কিছু টাইপ করুন।
+  wwcConfigGUIGlobalRateLimitButton: গ্লোবাল রেট লিমিট পরিবর্তন করুন
+  wwcteOnSender: সত্তা অনুবাদ সক্রিয়। তার নাম অনুবাদ করার জন্য একটি সত্তার উপর ডান-ক্লিক
+    করুন!
+  wwcInGameObjectTranslationFailCatastrophic: টার্গেট অবজেক্ট অনুবাদ করতে ব্যর্থ।
+  wwcInGameEntityTranslationFailCatastrophic: টার্গেট সত্তা অনুবাদ করতে ব্যর্থ।
+  wwcConfigGUIResponseLimitButton: অনুবাদক প্রতিক্রিয়া সময়সীমা পরিবর্তন করুন
+  wwcConfigMessageCharLimitEnabled: প্রতি বার্তা %i অক্ষরে সেট করা অক্ষরের সীমা।
+  wwcteOffTarget: '%i এর জন্য সত্তা অনুবাদ নিষ্ক্রিয় করা হয়েছে'
+  wwcCharLimit: আপনার বার্তা অনেক দীর্ঘ! অনুগ্রহ করে নিশ্চিত করুন যে আপনার বার্তা
+    %i অক্ষরের দৈর্ঘ্যের কম।
+  wwcConfigConversationResponseLimitInput: প্রতিটি অনুবাদকের জন্য বর্তমান প্রতিক্রিয়া
+    সময়সীমা হচ্ছে %i সেকেন্ড। একটি নতুন মান সেট করার জন্য 0 এর চেয়ে বড় কিছু টাইপ
+    করুন, অথবা ফিরে যাওয়ার জন্য 0 এর চেয়ে কম বা সমান কিছু টাইপ করুন।
+  wwcConfigConversationCharacterLimitInput: প্রতি বার্তার বর্তমান অক্ষর সীমা হল %i
+    অক্ষর। একটি নতুন মান সেট করার জন্য 0 এর চেয়ে বড় কিছু টাইপ করুন, অথবা ফিরে যাওয়ার
+    জন্য 0 এর চেয়ে কম বা সমান কিছু টাইপ করুন।
+  wwcteOffSender: সত্তা অনুবাদ নিষ্ক্রিয়।
+  wwctGUIEntityButton: সত্তা অনুবাদ টগল করুন
+  wwcConfigConversationResponseLimitSuccess: প্রতিক্রিয়া সময়সীমা সফলভাবে সেট করা হয়েছে।

@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: O'yinchi % Men topilmadi.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat tarjima
     qilinmoqda, ammo sizning suhbatingiz %o ga tarjima qilinmoqda.
-  wwcConfigGUIGlobalRateLimit: Global stavka limitini o'zgartirish
   wwcConfigGUIAmazonTranslateRegionButton: Amazon mintaqasini o'zgartirish
   wwcConfigConversationLangInput: 'Joriy plagin tili %i. Iltimos, tegishli til kodini
     kiriting yoki bekor qilish uchun 0 yozing. Haqiqiy til kodlari: %o'
@@ -226,21 +225,16 @@ Messages:
   wwcItemTranslateTitleDone: Tarjima element nomi muvaffaqiyatli.
   wwcGUITempItem: Item ko'rsatish
   wwcItemTranslateStart: Maqsadli elementni tarjima qilish...
-  wwcSignTranslationFailCatastrophic: maqsad belgisini tarjima bo'lmadi.
-  wwcItemTranslationFailCatastrophic: Maqsadli elementni tarjima qilib bo'lmadi.
   wwcBookTranslateTitleSuccess: 'Tarjima qilingan kitob nomi: %i'
   wwctiOnSender: Elementni tarjima qilish yoqilgan. Uni tarjima qilish uchun asosiy
     qo'lingizdagi element bilan o'ng tugmasini bosing!
   wwcItemTranslateLoreStart: Maqsadli elementni tarjima qilish...
   wwcItemTranslateLoreDone: Tarjima element muvaffaqiyatli.
   wwctiOnTarget: '%i uchun mahsulot tarjimasi yoqilgan.'
-  wwcBookTranslationFailCatastrophic: Maqsadli kitobni tarjima qilib bo'lmadi.
   wwcBookTranslateTitleFail: Kitob nomini tarjima bo'lmadi.
   wwcChatTranslationFail: Xabaringizni tarjima qilib bo'lmadi.
   wwcInvalidTranslator: Tarjimon sozlamalari noto'g'ri. Iltimos, ushbu plaginni ishlatish
     uchun config.yml yoki /wwcc bilan tuzating.
-  wwcNotDoneLoading: WorldwideChat hali ham ishga tushirilmoqda. Iltimos, tezda qayta
-    urinib ko'ring.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguratsiya'
   wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Uotson
@@ -288,3 +282,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Original Xabar
   wwcConfigGUIDebugModeButton: Toggle disk raskadrovka rejimi
   wwcConfigConversationDebugModeSuccess: Muvaffaqiyatli disk raskadrovka rejimi.
+  wwcConfigGUIErrorLimitButton: Translator xato limitini o'zgartirish
+  wwcConfigConversationErrorLimitSuccess: Xato chegarasi muvaffaqiyatli o'rnatildi.
+  wwcEntityTranslateStart: Tarjima maqsadli shaxs...
+  wwcConfigGUICharacterLimitButton: Xabar belgilar limitini o'zgartirish
+  wwcConfigMessageCharLimitInvalid: Config.yml da o'rnatilgan xabar uchun noto'g'ri
+    limit. 255 chars uchun standart...
+  wwcConfigConversationCharacterLimitSuccess: Belgilar chegarasi muvaffaqiyatli o'rnatildi.
+  wwcteOnTarget: '%i uchun shaxs tarjimasi yoqilgan.'
+  wwcEntityTranslateDone: 'Tarjima qilingan shaxs nomi: %i'
+  wwcEntityTranslateNoName: Entity maxsus nomga ega emas.
+  wwcConfigConversationErrorLimitInput: Har bir tarjimon uchun joriy xato chegarasi
+    %i. 0 dan katta narsani yangi qiymatni belgilash uchun kiriting yoki orqaga qaytish
+    uchun 0 dan kam yoki teng narsani yozing.
+  wwcConfigGUIGlobalRateLimitButton: Global stavka limitini o'zgartirish
+  wwcteOnSender: Yuridik shaxs tarjimasi yoqilgan. Uning nomini tarjima qilish uchun
+    biror shaxs ustiga o'ng tugmasini bosing!
+  wwcInGameObjectTranslationFailCatastrophic: Maqsadli ob'ektni tarjima qilib bo'lmadi.
+  wwcInGameEntityTranslationFailCatastrophic: Maqsadli shaxsni tarjima qilib bo'lmadi.
+  wwcConfigGUIResponseLimitButton: Translator Response Timeout
+  wwcConfigMessageCharLimitEnabled: '%i belgilariga oʻrnatilgan xabar uchun belgilar
+    chegarasi.'
+  wwcteOffTarget: '%i uchun oʻchirilgan shaxs tarjimasi.'
+  wwcCharLimit: Sizning xabaringiz juda uzun! Iltimos, xabaringiz uzunligi %i belgilaridan
+    kamroq ekanligiga ishonch hosil qiling.
+  wwcConfigConversationResponseLimitInput: Har bir tarjimon uchun joriy javob muddati
+    %i sekunddir. Yangi qiymatni belgilash uchun 0 dan katta narsani yozing yoki orqaga
+    qaytish uchun 0 dan kam yoki teng narsani yozing.
+  wwcConfigConversationCharacterLimitInput: Har bir xabar uchun joriy belgilar chegarasi
+    %i belgilaridir. Yangi qiymatni belgilash uchun 0 dan katta narsani yozing yoki
+    orqaga qaytish uchun 0 dan kam yoki teng narsani yozing.
+  wwcteOffSender: O'chirilgan shaxs tarjimasi.
+  wwctGUIEntityButton: Toggle shaxs tarjimasi
+  wwcConfigConversationResponseLimitSuccess: Response muddati muvaffaqiyatli o'rnatildi.

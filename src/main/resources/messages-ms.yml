@@ -61,7 +61,6 @@ Messages:
   wwctPlayerNotFound: Pemain %i tidak ditemui.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Sembang global sedang
     diterjemahkan, tetapi sembang anda sedang diterjemahkan ke %o.
-  wwcConfigGUIGlobalRateLimit: Ubah Had Kadar Global
   wwcConfigGUIAmazonTranslateRegionButton: Ubah Wilayah Amazon
   wwcConfigConversationLangInput: 'Bahasa pemalam semasa ialah %i. Sila masukkan kod
     bahasa yang sah, atau taip 0 untuk dibatalkan. Kod bahasa yang sah: %o'
@@ -225,20 +224,16 @@ Messages:
   wwcItemTranslateTitleDone: Tajuk item yang diterjemahkan berjaya.
   wwcGUITempItem: Paparan Item
   wwcItemTranslateStart: Menterjemahkan item sasaran...
-  wwcSignTranslationFailCatastrophic: Gagal menterjemahkan tanda sasaran.
-  wwcItemTranslationFailCatastrophic: Gagal menterjemahkan item sasaran.
   wwcBookTranslateTitleSuccess: 'Tajuk Buku Diterjemahkan: %i'
   wwctiOnSender: Terjemahan item dibenarkan. Klik kanan dengan item di tangan utama
     Anda untuk menerjemahkannya!
   wwcItemTranslateLoreStart: Menterjemahkan pengetahuan item sasaran...
   wwcItemTranslateLoreDone: Maklumat item yang diterjemahkan berjaya.
   wwctiOnTarget: Terjemahan item dibenarkan untuk %i.
-  wwcBookTranslationFailCatastrophic: Gagal menterjemahkan buku sasaran.
   wwcBookTranslateTitleFail: Gagal menterjemahkan tajuk buku.
   wwcChatTranslationFail: Gagal menterjemahkan mesej anda.
   wwcInvalidTranslator: Tetapan penterjemah tidak sah. Sila betulkan ini dalam config.yml
     anda atau dengan /wwcc untuk guna pemalam ini.
-  wwcNotDoneLoading: WorldWidChat masih memulakan. Sila cuba lagi tidak lama lagi.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurasi'
   wwcConfigGUIToggleButton: Togol
   wwcConfigGUIWatsonButton: Watson
@@ -287,3 +282,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Mesej Asal
   wwcConfigGUIDebugModeButton: Togol Mod Nyahpepijat
   wwcConfigConversationDebugModeSuccess: Berjaya menogolkan mod nyahpepijat.
+  wwcConfigGUIErrorLimitButton: Ubah Had Ralat Penterjemah
+  wwcConfigConversationErrorLimitSuccess: Had ralat berjaya ditetapkan.
+  wwcEntityTranslateStart: Menterjemahkan entiti sasaran...
+  wwcConfigGUICharacterLimitButton: Tukar Had Aksara Mesej
+  wwcConfigMessageCharLimitInvalid: Had tidak sah setiap mesej ditetapkan dalam config.yml.
+    Defaulting kepada 255 aksara...
+  wwcConfigConversationCharacterLimitSuccess: Had aksara berjaya ditetapkan.
+  wwcteOnTarget: Terjemahan entiti dibenarkan untuk %i.
+  wwcEntityTranslateDone: 'Nama Entiti Diterjemahkan: %i'
+  wwcEntityTranslateNoName: Entiti tidak mempunyai nama tersuai.
+  wwcConfigConversationErrorLimitInput: Had ralat semasa bagi setiap penterjemah adalah
+    %i. Taipkan apa-apa yang lebih besar daripada 0 untuk menetapkan nilai baru, atau
+    taip apa-apa yang kurang atau sama dengan 0 untuk kembali.
+  wwcConfigGUIGlobalRateLimitButton: Ubah Had Kadar Global
+  wwcteOnSender: Terjemahan entiti dibenarkan. Klik kanan pada entiti untuk menterjemahkan
+    namanya!
+  wwcInGameObjectTranslationFailCatastrophic: Gagal menterjemahkan objek sasaran.
+  wwcInGameEntityTranslationFailCatastrophic: Gagal menterjemahkan entiti sasaran.
+  wwcConfigGUIResponseLimitButton: Ubah Masa Tamat Balas Penterjemah
+  wwcConfigMessageCharLimitEnabled: Had aksara setiap mesej ditetapkan ke %i aksara.
+  wwcteOffTarget: Terjemahan entiti dilumpuhkan untuk %i.
+  wwcCharLimit: Mesej anda terlalu panjang! Sila pastikan panjang mesej anda kurang
+    daripada %i aksara.
+  wwcConfigConversationResponseLimitInput: Had masa tamat respons semasa bagi setiap
+    penterjemah adalah %i saat. Taip apa-apa yang lebih besar daripada 0 untuk menetapkan
+    nilai baru, atau taip apa-apa yang kurang daripada atau sama dengan 0 untuk kembali.
+  wwcConfigConversationCharacterLimitInput: Had aksara semasa bagi setiap mesej adalah
+    %i aksara. Taip apa-apa yang lebih besar daripada 0 untuk menetapkan nilai baru,
+    atau taip apa-apa yang kurang daripada atau sama dengan 0 untuk kembali.
+  wwcteOffSender: Terjemahan entiti dilumpuhkan.
+  wwctGUIEntityButton: Togol Terjemahan Entiti
+  wwcConfigConversationResponseLimitSuccess: Had masa tamat balasan berjaya ditetapkan.

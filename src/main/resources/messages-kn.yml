@@ -61,7 +61,6 @@ Messages:
   wwctPlayerNotFound: ಆಟಗಾರ % ನಾನು ಕಂಡುಬಂದಿಲ್ಲ.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ,
     ಆದರೆ ನಿಮ್ಮ ಚಾಟ್ ಅನ್ನು %o ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.
-  wwcConfigGUIGlobalRateLimit: ಜಾಗತಿಕ ದರ ಮಿತಿಯನ್ನು ಬದಲಾಯಿಸಿ
   wwcConfigGUIAmazonTranslateRegionButton: ಅಮೆಜಾನ್ ಪ್ರದೇಶವನ್ನು ಬದಲಿಸಿ
   wwcConfigConversationLangInput: 'ಪ್ರಸ್ತುತ ಪ್ಲಗ್ಇನ್ ಭಾಷೆ %i ಆಗಿದೆ. ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ
     ಭಾಷಾ ಸಂಕೇತವನ್ನು ನಮೂದಿಸಿ, ಅಥವ 0 ಅನ್ನು ರದ್ದುಗೊಳಿಸಲು ಟೈಪ್ ಮಾಡಿ. ಮಾನ್ಯ ಭಾಷಾ ಸಂಕೇತಗಳು:
@@ -227,21 +226,16 @@ Messages:
   wwcItemTranslateTitleDone: ಐಟಂ ಶೀರ್ಷಿಕೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅನುವಾದಿಸಲಾಗಿದೆ.
   wwcGUITempItem: ಐಟಂ ಪ್ರದರ್ಶನ
   wwcItemTranslateStart: ಗುರಿ ಐಟಂ ಭಾಷಾಂತರಿಸಲಾಗುತ್ತಿದೆ...
-  wwcSignTranslationFailCatastrophic: ಗುರಿ ಚಿಹ್ನೆಯನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
-  wwcItemTranslationFailCatastrophic: ಗುರಿ ಐಟಂ ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
   wwcBookTranslateTitleSuccess: 'ಅನುವಾದಿಸಿದ ಪುಸ್ತಕ ಶೀರ್ಷಿಕೆ: %i'
   wwctiOnSender: ಐಟಂ ಅನುವಾದ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ಅದನ್ನು ಭಾಷಾಂತರಿಸಲು ನಿಮ್ಮ ಮುಖ್ಯ ಕೈಯಲ್ಲಿರುವ
     ಐಟಮ್ನೊಂದಿಗೆ ಬಲ ಕ್ಲಿಕ್ ಮಾಡಿ!
   wwcItemTranslateLoreStart: ಗುರಿ ಐಟಂನ ಉದ್ದವನ್ನು ಭಾಷಾಂತರಿಸಲಾಗುತ್ತಿದೆ...
   wwcItemTranslateLoreDone: ಅನುವಾದಿಸಿದ ಐಟಂ ಯಶಸ್ವಿಯಾಗಿ.
   wwctiOnTarget: ಐಟಂ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
-  wwcBookTranslationFailCatastrophic: ಗುರಿ ಪುಸ್ತಕವನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
   wwcBookTranslateTitleFail: ಪುಸ್ತಕದ ಶೀರ್ಷಿಕೆಯನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
   wwcChatTranslationFail: ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
   wwcInvalidTranslator: ಅಮಾನ್ಯ ಅನುವಾದಕ ಸೆಟ್ಟಿಂಗ್ಗಳು. ಈ ಪ್ಲಗ್ಇನ್ ಅನ್ನು ಬಳಸಲು ದಯವಿಟ್ಟು
     ನಿಮ್ಮ config.yml ಅಥವಾ/wwcc ನೊಂದಿಗೆ ಇದನ್ನು ಸರಿಪಡಿಸಿ.
-  wwcNotDoneLoading: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ಇನ್ನೂ ಪ್ರಾರಂಭಿಸುತ್ತಿದೆ. ದಯವಿಟ್ಟು ಶೀಘ್ರದಲ್ಲೇ ಮತ್ತೆ
-    ಪ್ರಯತ್ನಿಸಿ.
   wwcConfigGUIEachTranslatorSettings: '%i ಸಂರಚನೆ'
   wwcConfigGUIToggleButton: ಟಾಗಲ್ %i
   wwcConfigGUIWatsonButton: ವ್ಯಾಟ್ಸನ್
@@ -290,3 +284,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: ಮೂಲ ಸಂದೇಶ
   wwcConfigGUIDebugModeButton: ಟಾಗಲ್ ಡೀಬಗ್ ಮೋಡ್
   wwcConfigConversationDebugModeSuccess: ಡೀಬಗ್ ಮೋಡ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಟಾಗಲ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigGUIErrorLimitButton: ಅನುವಾದಕ ದೋಷ ಮಿತಿ ಬದಲಾಯಿಸಿ
+  wwcConfigConversationErrorLimitSuccess: ದೋಷ ಮಿತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcEntityTranslateStart: ಗುರಿ ಘಟಕದ ಭಾಷಾಂತರಿಸಲಾಗುತ್ತಿದೆ...
+  wwcConfigGUICharacterLimitButton: ಸಂದೇಶ ಅಕ್ಷರ ಮಿತಿಯನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigMessageCharLimitInvalid: config.yml ಸೆಟ್ ಸಂದೇಶವನ್ನು ಪ್ರತಿ ಅಮಾನ್ಯ ಮಿತಿ.
+    255 ಚಾರ್ಸ್ಗೆ ಡೀಫಾಲ್ಟ್ ಮಾಡಲಾಗುತ್ತಿದೆ...
+  wwcConfigConversationCharacterLimitSuccess: ಅಕ್ಷರ ಮಿತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcteOnTarget: ಘಟಕದ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwcEntityTranslateDone: 'ಅನುವಾದಿತ ಘಟಕದ ಹೆಸರು: %i'
+  wwcEntityTranslateNoName: ಎಂಟಿಟಿ ಕಸ್ಟಮ್ ಹೆಸರನ್ನು ಹೊಂದಿಲ್ಲ.
+  wwcConfigConversationErrorLimitInput: ಪ್ರತಿ ಭಾಷಾಂತರಕಾರನಿಗೆ ಪ್ರಸ್ತುತ ದೋಷ ಮಿತಿ %i
+    ಆಗಿದೆ. ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 0 ಗಿಂತ ಹೆಚ್ಚಿನದ್ದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ
+    ಹೋಗಲು 0 ಗಿಂತ ಕಡಿಮೆ ಅಥವಾ ಸಮಾನವಾದದ್ದನ್ನು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIGlobalRateLimitButton: ಜಾಗತಿಕ ದರ ಮಿತಿಯನ್ನು ಬದಲಾಯಿಸಿ
+  wwcteOnSender: ಘಟಕದ ಅನುವಾದವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ಅದರ ಹೆಸರನ್ನು ಭಾಷಾಂತರಿಸಲು ಒಂದು
+    ಘಟಕದ ಮೇಲೆ ಬಲ ಕ್ಲಿಕ್ ಮಾಡಿ!
+  wwcInGameObjectTranslationFailCatastrophic: ಗುರಿ ವಸ್ತುವನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
+  wwcInGameEntityTranslationFailCatastrophic: ಗುರಿ ಘಟಕದ ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
+  wwcConfigGUIResponseLimitButton: ಅನುವಾದಕ ಪ್ರತಿಕ್ರಿಯೆ ಕಾಲಾವಧಿಯನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigMessageCharLimitEnabled: '%i ಅಕ್ಷರಗಳಿಗೆ ಹೊಂದಿಸಲಾದ ಸಂದೇಶದ ಪ್ರತಿ ಅಕ್ಷರ ಮಿತಿ.'
+  wwcteOffTarget: ಘಟಕದ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwcCharLimit: ನಿಮ್ಮ ಸಂದೇಶವು ತುಂಬಾ ಉದ್ದವಾಗಿದೆ! ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸಂದೇಶವು ಉದ್ದ %i ಅಕ್ಷರಗಳಿಗಿಂತ
+    ಕಡಿಮೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
+  wwcConfigConversationResponseLimitInput: ಪ್ರತಿ ಭಾಷಾಂತರಕಾರನಿಗೆ ಪ್ರಸ್ತುತ ಪ್ರತಿಕ್ರಿಯೆ
+    ಸಮಯ %i ಸೆಕೆಂಡುಗಳು. ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 0 ಗಿಂತ ಹೆಚ್ಚಿನದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ
+    ಹಿಂತಿರುಗಿ 0 ಗಿಂತ ಕಡಿಮೆ ಅಥವಾ ಸಮಾನವಾದದ್ದನ್ನು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationCharacterLimitInput: ಪ್ರತಿ ಸಂದೇಶಕ್ಕೆ ಪ್ರಸ್ತುತ ಅಕ್ಷರ ಮಿತಿ %i
+    ಅಕ್ಷರಗಳು. ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 0 ಗಿಂತ ಹೆಚ್ಚಿನದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ
+    0 ಗಿಂತ ಕಡಿಮೆ ಅಥವಾ ಸಮಾನವಾದದ್ದನ್ನು ಟೈಪ್ ಮಾಡಿ.
+  wwcteOffSender: ಘಟಕದ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctGUIEntityButton: ಟಾಗಲ್ ಎಂಟಿಟಿ ಅನುವಾದ
+  wwcConfigConversationResponseLimitSuccess: ಪ್ರತಿಕ್ರಿಯೆ ಕಾಲಾವಧಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.

@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: Mai wasa %Ban samu ba.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Ana fassara hira ta
     duniya, amma ana fassara hira zuwa %o.
-  wwcConfigGUIGlobalRateLimit: Canja Iyakar Ƙimar Duniya
   wwcConfigGUIAmazonTranslateRegionButton: Canja Yankin Amazon
   wwcConfigConversationLangInput: 'Harshen plugin na yanzu shine %i. Da fatan za a
     shigar da lambar harshe mai inganci, ko rubuta 0 don sokewa. Lambobin harshe masu
@@ -221,21 +220,16 @@ Messages:
   wwcItemTranslateTitleDone: An fassara taken abu cikin nasara.
   wwcGUITempItem: Nunin abu
   wwcItemTranslateStart: Fassara abu mai mahimmanci...
-  wwcSignTranslationFailCatastrophic: An kasa fassara alamar manufa.
-  wwcItemTranslationFailCatastrophic: Kasa fassara abu mai manufa.
   wwcBookTranslateTitleSuccess: 'Rubutun Littafin da aka fassara: %i'
   wwctiOnSender: An kunna fassarar abu. Danna-dama tare da abu a cikin babban hannunka
     don fassara shi!
   wwcItemTranslateLoreStart: Fassara lore na abu mai manufa...
   wwcItemTranslateLoreDone: An fassara abu lore nasara.
   wwctiOnTarget: An kunna fassarar abu da %i.
-  wwcBookTranslationFailCatastrophic: Kasa fassara littafin manufa.
   wwcBookTranslateTitleFail: An kasa fassara taken littafin.
   wwcChatTranslationFail: Kasa fassara sakonka.
   wwcInvalidTranslator: Saitunan fassara mara inganci. Da fatan a gyara wannan a cikin
     daidaitawa.yml ko tare da /wwcc don amfani da wannan plugin.
-  wwcNotDoneLoading: WideChat har yanzu yana farawa. Da fatan za a sake gwadawa nan
-    ba
   wwcConfigGUIEachTranslatorSettings: '%i Configuration'
   wwcConfigGUIToggleButton: toggle %i
   wwcConfigGUIWatsonButton: Watson
@@ -285,3 +279,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Saƙo na asali
   wwcConfigGUIDebugModeButton: Yanayin Debug
   wwcConfigConversationDebugModeSuccess: Yanayin debug nasarar da aka samu.
+  wwcConfigGUIErrorLimitButton: Canja Kuskuren Mai fassara
+  wwcConfigConversationErrorLimitSuccess: Kuskuren iyaka saita nasara.
+  wwcEntityTranslateStart: Fassara mahallin manufa...
+  wwcConfigGUICharacterLimitButton: Canja Ƙayyadadden Harafin
+  wwcConfigMessageCharLimitInvalid: Ƙayyadadden iyaka da saƙo da aka saita a daidaitawa.
+    Cefaulting zuwa 255 chars...
+  wwcConfigConversationCharacterLimitSuccess: Ƙayyadadden hali an saita nasara
+  wwcteOnTarget: An kunna fassarar haɗin kai da %i.
+  wwcEntityTranslateDone: 'Sunan Haɗin da aka fassara: %i'
+  wwcEntityTranslateNoName: Ƙungiya ba ta da sunan al'ada.
+  wwcConfigConversationErrorLimitInput: Iyakar kuskure na yanzu ga kowane mai fassara
+    shine %i. Rubuta wani abu mafi girma fiye da 0 don saita sabon darajar, ko rubuta
+    wani abu kasa da ko daidai da 0 don komawa.
+  wwcConfigGUIGlobalRateLimitButton: Canja Iyakar Ƙimar Duniya
+  wwcteOnSender: An kunna fassarar mahalli. Danna-dama a kan wani mahalli don fassara
+    sunansa!
+  wwcInGameObjectTranslationFailCatastrophic: An kasa fassara abin da aka yi nufi.
+  wwcInGameEntityTranslationFailCatastrophic: An kasa fassara mahallin manufa.
+  wwcConfigGUIResponseLimitButton: Canja lokacin amsawar Mai fassara
+  wwcConfigMessageCharLimitEnabled: Ƙayyadadden haruffa ta kowane saƙo da aka saita
+  wwcteOffTarget: Fassarar mahalli da aka kashe domin %i.
+  wwcCharLimit: Sakonka ya yi tsawo! Don Allah ka tabbata sakonka ya kasa da haruffan
+    %i a tsawon.
+  wwcConfigConversationResponseLimitInput: Lokacin amsawa na yanzu ga kowane mai fassara
+    shine %i seconds. Rubuta wani abu mafi girma fiye da 0 don saita sabon darajar,
+    ko rubuta wani abu kasa da ko daidai da 0 don komawa.
+  wwcConfigConversationCharacterLimitInput: Iyakar hali na yanzu a kowane saƙo shi
+    ne haruffan %i. Rubuta wani abu mafi girma fiye da 0 don saita sabon darajar,
+    ko rubuta wani abu kasa da ko daidai da 0 don komawa.
+  wwcteOffSender: An kashe fassarar haɗin kai.
+  wwctGUIEntityButton: Fassarar Kunshiya
+  wwcConfigConversationResponseLimitSuccess: An saita lokacin amsawa cikin nasara.

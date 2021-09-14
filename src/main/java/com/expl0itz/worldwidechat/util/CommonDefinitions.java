@@ -207,6 +207,17 @@ public class CommonDefinitions {
 				currActiveTranslator = WorldwideChat.getInstance().getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 			}
 
+			/* Char limit check */
+			int limit = WorldwideChat.getInstance().getMessageCharLimit();
+			if (inMessage.length() > limit) {
+				final TextComponent charLimit = Component.text()
+						.append(Component.text().content(CommonDefinitions.getMessage("wwcCharLimit", new String[] {"" + limit}))
+								.color(NamedTextColor.YELLOW))
+						.build();
+				CommonDefinitions.sendMessage(currPlayer, charLimit);
+				return inMessage;
+			}
+			
 			/* Check cache */
 			if (WorldwideChat.getInstance().getTranslatorCacheLimit() > 0) {
 				// Check cache for inputs, since config says we should

@@ -67,6 +67,7 @@ public class ConfigurationHandler {
 		mainConfig.addDefault("Translator.amazonRegion", "");
 		mainConfig.addDefault("Translator.translatorCacheSize", 100);
 		mainConfig.addDefault("Translator.rateLimit", 0);
+		mainConfig.addDefault("Translator.messageCharLimit", 255);
 		mainConfig.addDefault("Translator.errorLimit", 5);
 		mainConfig.addDefault("Translator.maxResponseTime", 7);
 
@@ -200,13 +201,29 @@ public class ConfigurationHandler {
 		}
 		// Rate limit Settings
 		try {
-			if (getMainConfig().getInt("Translator.rateLimit") > 0) {
+			if (getMainConfig().getInt("Translator.rateLimit") >= 0) {
 				main.setRateLimit(getMainConfig().getInt("Translator.rateLimit"));
 				main.getLogger().info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigRateLimitEnabled", new String[] {"" + main.getRateLimit()}));
+			} else {
+				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigRateLimitInvalid"));
+				main.setRateLimit(0);
 			}
 		} catch (Exception e) {
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigRateLimitInvalid"));
 			main.setRateLimit(0);
+		}
+		// Per-message char limit Settings
+		try {
+			if (getMainConfig().getInt("Translator.messageCharLimit") >= 0) {
+				main.setMessageCharLimit(getMainConfig().getInt("Translator.messageCharLimit"));
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigMessageCharLimitEnabled", new String[] {"" + main.getMessageCharLimit()}));
+			} else {
+				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMessageCharLimitInvalid"));
+				main.setMessageCharLimit(255);
+			}
+		} catch (Exception e) {
+			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMessageCharLimitInvalid"));
+			main.setMessageCharLimit(255);
 		}
 		// Cache Settings
 		try {
@@ -331,12 +348,15 @@ public class ConfigurationHandler {
 		userSettingsConfig.createSection("itemTranslation");
 		userSettingsConfig.set("itemTranslation", inTranslator.getTranslatingItem());
 
+		userSettingsConfig.createSection("entityTranslation");
+		userSettingsConfig.set("entityTranslation", inTranslator.getTranslatingEntity());
+		
 		userSettingsConfig.createSection("rateLimit");
 		userSettingsConfig.set("rateLimit", inTranslator.getRateLimit());
 
 		userSettingsConfig.createSection("rateLimitPreviousRecordedTime");
 		userSettingsConfig.set("rateLimitPreviousRecordedTime", inTranslator.getRateLimitPreviousTime());
-
+		
 		saveCustomConfig(userSettingsConfig, userSettingsFile, false);
 	}
 

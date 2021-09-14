@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: കളിക്കാരന് % ഞാൻ കണ്ടെത്തിയില്ല.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ആഗോള ചാറ്റ് വിവർത്തനം
     ചെയ്യുകയാണ്, പക്ഷേ നിങ്ങളുടെ ചാറ്റിൽ %o ലേക്ക് വിവർത്തനം ചെയ്യപ്പെടുന്നു.
-  wwcConfigGUIGlobalRateLimit: ആഗോള നിരക്ക് പരിധി മാറ്റുക
   wwcConfigGUIAmazonTranslateRegionButton: ആമസോൺ റീജിയൺ മാറ്റുക
   wwcConfigConversationLangInput: 'നിലവിലെ പ്ലഗിൻ ഭാഷ %i ആണ്, ദയവായി ഒരു സാധുവായ ഭാഷാ
     കോഡ് നൽകുക, അല്ലെങ്കിൽ റദ്ദാക്കാൻ 0 ടൈപ്പ് ചെയ്യുക. സാധുവായ ഭാഷാ കോഡുകൾ: %o'
@@ -226,20 +225,16 @@ Messages:
   wwcItemTranslateTitleDone: വിവർത്തനം ചെയ്ത ഇനം ശീർഷകം വിജയകരമായി.
   wwcGUITempItem: ഇനം പ്രദർശിപ്പിക്കുക
   wwcItemTranslateStart: ടാർഗെറ്റ് ഇനം വിവർത്തനം ചെയ്യുന്നു...
-  wwcSignTranslationFailCatastrophic: ലക്ഷ്യം അടയാളം വിവർത്തനം പരാജയപ്പെട്ടു.
-  wwcItemTranslationFailCatastrophic: ലക്ഷ്യം ഇനം വിവർത്തനം പരാജയപ്പെട്ടു.
   wwcBookTranslateTitleSuccess: 'വിവർത്തനം ചെയ്ത പുസ്തക ശീർഷകം: %i'
   wwctiOnSender: ഇനം വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. ഇത് വിവർത്തനം ചെയ്യുന്നതിന് നിങ്ങളുടെ
     പ്രധാന കൈയിലെ ഒരു ഇനം ഉപയോഗിച്ച് വലത്-ക്ലിക്കുചെയ്യുക!
   wwcItemTranslateLoreStart: ലക്ഷ്യം ഇനത്തിന്റെ നാടാകെ വിവർത്തനം...
   wwcItemTranslateLoreDone: വിവർത്തനം ചെയ്ത ഇനം വിജയകരമായി.
   wwctiOnTarget: ഇനം പരിഭാഷ %i എന്നതിന് പ്രവർത്തനക്ഷമമാക്കി.
-  wwcBookTranslationFailCatastrophic: ലക്ഷ്യം പുസ്തകം വിവർത്തനം പരാജയപ്പെട്ടു.
   wwcBookTranslateTitleFail: പുസ്തക തലക്കെട്ട് വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.
   wwcChatTranslationFail: നിങ്ങളുടെ സന്ദേശം വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.
   wwcInvalidTranslator: അസാധുവായ വിവർത്തകൻ ക്രമീകരണങ്ങൾ. ഈ പ്ലഗിൻ ഉപയോഗിക്കുന്നതിന്
     നിങ്ങളുടെ കോൺഫിഗറേഷനിൽ അല്ലെങ്കിൽ /wwcc ഉപയോഗിച്ച് ഇത് പരിഹരിക്കുക.
-  wwcNotDoneLoading: ചാറ്റ് ഇപ്പോഴും സമാരംഭിച്ചു ആണ്. ദയവായി ഉടൻ വീണ്ടും ശ്രമിക്കുക.
   wwcConfigGUIEachTranslatorSettings: '%i കോൺഫിഗറേഷൻ'
   wwcConfigGUIToggleButton: ടോഗിൾ % 1
   wwcConfigGUIWatsonButton: വാട്സൺ
@@ -287,3 +282,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: യഥാർത്ഥ സന്ദേശം
   wwcConfigGUIDebugModeButton: ഡീബഗ് മോഡ് ടോഗിൾ
   wwcConfigConversationDebugModeSuccess: ഡീബഗ് മോഡ് വിജയകരമായി ടോഗിൾ ചെയ്തു.
+  wwcConfigGUIErrorLimitButton: പരിഭാഷകൻ പിശക് പരിധി മാറ്റുക
+  wwcConfigConversationErrorLimitSuccess: പിശക് പരിധി വിജയകരമായി സജ്ജമാക്കി.
+  wwcEntityTranslateStart: ടാർഗെറ്റ് എന്റിറ്റി വിവർത്തനം ചെയ്യുന്നു...
+  wwcConfigGUICharacterLimitButton: സന്ദേശ പ്രതീക പരിധി മാറ്റുക
+  wwcConfigMessageCharLimitInvalid: സന്ദേശത്തിന് അസാധുവായ പരിധി ചൊന്ഫിഗ്. യ്മ്ല് വെച്ചു.
+    255 ചാർസുകളിലേക്ക് സ്ഥിരസ്ഥിതിയായി...
+  wwcConfigConversationCharacterLimitSuccess: കഥാപാത്രം പരിധി വിജയകരമായി വെച്ചു.
+  wwcteOnTarget: എന്റിറ്റി വിവർത്തനം %i ന് പ്രാപ്തമാക്കി.
+  wwcEntityTranslateDone: 'വിവർത്തനം ചെയ്ത എന്റിറ്റി പേര്: %i'
+  wwcEntityTranslateNoName: എന്റിറ്റിക്ക് ഒരു ഇഷ്ടാനുസൃത പേര് ഇല്ല.
+  wwcConfigConversationErrorLimitInput: ഓരോ പരിഭാഷകനുമുള്ള നിലവിലെ പിശക് പരിധിയെ %i
+    ആണ്, ഒരു പുതിയ മൂല്യം സജ്ജമാക്കുന്നതിന് 0 ൽ കൂടുതലുള്ള എന്തും ടൈപ്പ് ചെയ്യുക,
+    അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്നതിനേക്കാൾ കുറവോ തുല്യമോ ടൈപ്പുചെയ്യുക.
+  wwcConfigGUIGlobalRateLimitButton: ആഗോള നിരക്ക് പരിധി മാറ്റുക
+  wwcteOnSender: എന്റിറ്റി വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. അതിന്റെ പേര് വിവർത്തനം ചെയ്യുന്നതിന്
+    ഒരു എന്റിറ്റിയിൽ റൈറ്റ് ക്ലിക്ക് ചെയ്യുക!
+  wwcInGameObjectTranslationFailCatastrophic: ലക്ഷ്യം ഒബ്ജക്റ്റ് വിവർത്തനം പരാജയപ്പെട്ടു.
+  wwcInGameEntityTranslationFailCatastrophic: ടാർഗെറ്റ് എന്റിറ്റി വിവർത്തനം പരാജയപ്പെട്ടു.
+  wwcConfigGUIResponseLimitButton: വിവർത്തകന്റെ പ്രതികരണ സമയപരിധി മാറ്റുക
+  wwcConfigMessageCharLimitEnabled: ഓരോ സന്ദേശത്തിനും പ്രതീക പരിധി %i പ്രതീകങ്ങൾ സജ്ജമാക്കി.
+  wwcteOffTarget: എന്റിറ്റി വിവർത്തനം %i ന് അപ്രാപ്തമാക്കി.
+  wwcCharLimit: നിങ്ങളുടെ സന്ദേശം ദൈർഘ്യമേറിയതാണ്! നിങ്ങളുടെ സന്ദേശം %i പ്രതീകങ്ങളേക്കാൾ
+    കുറവാണെന്ന് ഉറപ്പുവരുത്തുക.
+  wwcConfigConversationResponseLimitInput: ഓരോ വിവർത്തകനുമുള്ള നിലവിലെ പ്രതികരണ സമയം
+    %i സെക്കൻഡ് ആണ്. ഒരു പുതിയ മൂല്യം സജ്ജമാക്കുന്നതിന് 0 ൽ കൂടുതലുള്ള എന്തും ടൈപ്പുചെയ്യുക,
+    അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്നതിനേക്കാൾ കുറവോ തുല്യമോ ആയ ഒന്നും ടൈപ്പുചെയ്യുക.
+  wwcConfigConversationCharacterLimitInput: ഓരോ സന്ദേശത്തിനും നിലവിലെ പ്രതീക പരിധിയെ
+    %i പ്രതീകങ്ങളാണ്. ഒരു പുതിയ മൂല്യം സജ്ജമാക്കുന്നതിന് 0 ൽ കൂടുതലുള്ള എന്തും ടൈപ്പുചെയ്യുക,
+    അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്നതിനേക്കാൾ കുറവോ തുല്യമോ ആയ ഒന്നും ടൈപ്പുചെയ്യുക.
+  wwcteOffSender: എന്റിറ്റി വിവർത്തനം അപ്രാപ്തമാക്കി.
+  wwctGUIEntityButton: ടോഗിൾ എന്റിറ്റി വിവർത്തനം
+  wwcConfigConversationResponseLimitSuccess: പ്രതികരണ സമയപരിധി വിജയകരമായി സജ്ജമാക്കി.

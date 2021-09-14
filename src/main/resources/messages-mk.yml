@@ -61,7 +61,6 @@ Messages:
   wwctPlayerNotFound: Играч % не сум пронајден.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобалниот разговор
     се преведува, но вашиот разговор се преведува на %o.
-  wwcConfigGUIGlobalRateLimit: Промена на глобалната стапка граница
   wwcConfigGUIAmazonTranslateRegionButton: Промена на регионот Амазон
   wwcConfigConversationLangInput: 'Тековниот јазик на приклучокот е %i. Ве молиме
     внесете валиден јазичен код или напишете 0 за да го откажете. Валидни јазични
@@ -231,21 +230,16 @@ Messages:
   wwcItemTranslateTitleDone: Преведено насловот на предметот успешно.
   wwcGUITempItem: точка Покажи
   wwcItemTranslateStart: Преведување на целната ставка...
-  wwcSignTranslationFailCatastrophic: Не успеа да го преведе целниот знак.
-  wwcItemTranslationFailCatastrophic: Не успеа да преведе целната ставка.
   wwcBookTranslateTitleSuccess: 'Преведен наслов на книгата: %i'
   wwctiOnSender: Точка превод е овозможено. Десен-клик со ставка во вашата главна
     рака за да ја преведете!
   wwcItemTranslateLoreStart: Преведување на знанија на целната ставка...
   wwcItemTranslateLoreDone: Преведено точка ученост успешно.
   wwctiOnTarget: Точка превод овозможено за %i.
-  wwcBookTranslationFailCatastrophic: Не успеа да преведе целна книга.
   wwcBookTranslateTitleFail: Не успеа да преведе насловот на книгата.
   wwcChatTranslationFail: Не успеа да ја преведе вашата порака.
   wwcInvalidTranslator: Неважечки поставки за преведувач. Ве молиме поправете го ова
     во вашиот config.yml или со /wwcc да го користите овој приклучок.
-  wwcNotDoneLoading: WorldwideChat сè уште иницијализира. Ве молиме обидете се повторно
-    наскоро.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурација'
   wwcConfigGUIToggleButton: Вклучување %i
   wwcConfigGUIWatsonButton: Вотсон
@@ -296,3 +290,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Оригинална порака
   wwcConfigGUIDebugModeButton: Вклучете го режимот за дебагирање
   wwcConfigConversationDebugModeSuccess: Успешно го вклучи режимот за дебагирање.
+  wwcConfigGUIErrorLimitButton: Промена Преведувач Грешка Ограничување
+  wwcConfigConversationErrorLimitSuccess: Ограничување на грешка поставено успешно.
+  wwcEntityTranslateStart: Преведување на целниот ентитет...
+  wwcConfigGUICharacterLimitButton: Промена на лимит на карактерот
+  wwcConfigMessageCharLimitInvalid: Неважечки лимит по порака поставена во config.yml.
+    Стандардно да 255 знаци...
+  wwcConfigConversationCharacterLimitSuccess: Лимит на карактерот е поставен успешно.
+  wwcteOnTarget: Преводот на ентитетот е овозможен за %
+  wwcEntityTranslateDone: 'Преведено име на ентитет: %i'
+  wwcEntityTranslateNoName: Ентитетот нема сопствено име.
+  wwcConfigConversationErrorLimitInput: Тековната граница за грешка за секој преведувач
+    е %i. Внесете нешто поголемо од 0 за да поставите нова вредност или напишете нешто
+    помалку од или еднакво на 0 за да се вратите назад.
+  wwcConfigGUIGlobalRateLimitButton: Промена на глобалната стапка граница
+  wwcteOnSender: Преводот на субјектот е Десен-клик на ентитет за да го преведе своето
+    име!
+  wwcInGameObjectTranslationFailCatastrophic: Не успеа да преведе цел објект.
+  wwcInGameEntityTranslationFailCatastrophic: Не успеа да преведе целниот ентитет.
+  wwcConfigGUIResponseLimitButton: Промена на времето за одговор на преведувачот
+  wwcConfigMessageCharLimitEnabled: Ограничување на знаци по порака поставена на %i
+    карактери.
+  wwcteOffTarget: Преводот на ентитет исклучен за %i
+  wwcCharLimit: Вашата порака е премногу долга! Ве молиме проверете дали вашата порака
+    е помала од %i карактери во должина.
+  wwcConfigConversationResponseLimitInput: Тековниот истек на одговор за секој преведувач
+    е %i секунди. Внесете нешто поголемо од 0 за да поставите нова вредност, или напишете
+    нешто помалку од или еднакво на 0 за да се вратите назад.
+  wwcConfigConversationCharacterLimitInput: Тековната граница на знаци по порака е
+    %i карактери. Внесете нешто поголемо од 0 за да поставите нова вредност, или напишете
+    нешто помалку од или еднакво на 0 за да се вратите назад.
+  wwcteOffSender: Ентитет превод оневозможен.
+  wwctGUIEntityButton: Префрли ентитет Превод
+  wwcConfigConversationResponseLimitSuccess: Истек на одговор постави успешно.

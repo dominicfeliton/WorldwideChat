@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: खिलाड़ी %मैं नहीं मिला।
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ग्लोबल चैट का अनुवाद
     किया जा रहा है, लेकिन आपकी गपश %o में किया जा रहा है।
-  wwcConfigGUIGlobalRateLimit: वैश्विक दर सीमा बदलें
   wwcConfigGUIAmazonTranslateRegionButton: अमेज़ॅन क्षेत्र बदलें
   wwcConfigConversationLangInput: 'मौज़ूदा प्लगइन भाषा %i है. कृपया वैध भाषा कोड भरें,
     या रद्द करने के लिए 0 टाइप करें। वैध भाषा कोड: %o'
@@ -224,21 +223,16 @@ Messages:
   wwcItemTranslateTitleDone: अनुवादित आइटम शीर्षक सफलतापूर्वक।
   wwcGUITempItem: आइटम डिस्प्ले
   wwcItemTranslateStart: लक्ष्य आइटम का अनुवाद करना...
-  wwcSignTranslationFailCatastrophic: लक्ष्य चिह्न का अनुवाद करने में विफल।
-  wwcItemTranslationFailCatastrophic: target item का अनुवाद करने में विफल।
   wwcBookTranslateTitleSuccess: 'अनुवादित पुस्तक शीर्षक: %i'
   wwctiOnSender: आइटम अनुवाद सक्षम है। अनुवाद करने के लिए अपने मुख्य हाथ में एक आइटम
     के साथ राइट-क्लिक करें!
   wwcItemTranslateLoreStart: लक्ष्य आइटम की विद्या का अनुवाद करना...
   wwcItemTranslateLoreDone: अनुवादित आइटम विद्या सफलतापूर्वक।
   wwctiOnTarget: आइटम अनुवाद %i के लिए सक्षम है।
-  wwcBookTranslationFailCatastrophic: लक्ष्य पुस्तक का अनुवाद करने में विफल।
   wwcBookTranslateTitleFail: पुस्तक शीर्षक का अनुवाद करने में विफल।
   wwcChatTranslationFail: आपके संदेश का अनुवाद करने में विफल।
   wwcInvalidTranslator: अमान्य अनुवादक सेटिंग्स। कृपया इस प्लगइन का उपयोग करने के
     लिए इसे अपने config.yml में या /wwcc के साथ ठीक करें।
-  wwcNotDoneLoading: वर्ल्डवाइड चैट अभी भी शुरू कर रहा है। कृपया शीघ्र ही फिर से कोशिश
-    करें।
   wwcConfigGUIEachTranslatorSettings: '%i कॉन्फ़िगरेशन'
   wwcConfigGUIToggleButton: टॉगल %i
   wwcConfigGUIWatsonButton: वाटसन
@@ -290,3 +284,37 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: ओरिजिनल मैसेज
   wwcConfigGUIDebugModeButton: डीबग मोड टॉगल करें
   wwcConfigConversationDebugModeSuccess: डीबग मोड को सफलतापूर्वक टॉगल किया गया
+  wwcConfigGUIErrorLimitButton: ट्रांसलेटर एरर लिमिट बदलें
+  wwcConfigConversationErrorLimitSuccess: त्रुटि सीमा सफलतापूर्वक सेट की गई।
+  wwcEntityTranslateStart: लक्ष्य इकाई का अनुवाद किया जा रहा है...
+  wwcConfigGUICharacterLimitButton: मैसेज कैरेक्टर लिमिट बदलें
+  wwcConfigMessageCharLimitInvalid: config.yml में प्रति संदेश सेट की गई अमान्य सीमा।
+    255 वर्णों के लिए डिफॉल्ट हो रहा है...
+  wwcConfigConversationCharacterLimitSuccess: कैरेक्टर लिमिट सफलतापूर्वक सेट की गई।
+  wwcteOnTarget: '%i के लिए एंटिटी अनुवाद सक्षम किया गया।'
+  wwcEntityTranslateDone: 'अनूदित एंटिटी का नाम: %i'
+  wwcEntityTranslateNoName: इकाई का कोई कस्टम नाम नहीं है।
+  wwcConfigConversationErrorLimitInput: प्रत्येक अनुवादक के लिए वर्तमान त्रुटि सीमा
+    %i है. नया मान सेट करने के लिए 0 से अधिक कुछ भी टाइप करें, या वापस जाने के लिए
+    0 से कम या बराबर कुछ भी टाइप करें।
+  wwcConfigGUIGlobalRateLimitButton: ग्लोबल रेट लिमिट बदलें
+  wwcteOnSender: इकाई अनुवाद सक्षम किया गया। अपने नाम का अनुवाद करने के लिए किसी इकाई
+    पर राइट-क्लिक करें!
+  wwcInGameObjectTranslationFailCatastrophic: लक्ष्य वस्तु का अनुवाद करने में विफल।
+  wwcInGameEntityTranslationFailCatastrophic: लक्ष्य इकाई का अनुवाद करने में विफल।
+  wwcConfigGUIResponseLimitButton: ट्रांसलेटर रिस्पांस टाइमआउट बदलें
+  wwcConfigMessageCharLimitEnabled: प्रति संदेश की वर्ण सीमा %i वर्णों पर सेट की गई
+    है।
+  wwcteOffTarget: '%i के लिए इकाई अनुवाद अक्षम किया गया।'
+  wwcCharLimit: आपका संदेश बहुत लंबा है! कृपया सुनिश्चित करें कि आपका संदेश लंबाई
+    में %i वर्णों से कम है।
+  wwcConfigConversationResponseLimitInput: प्रत्येक अनुवादक के लिए वर्तमान प्रतिसाद
+    टाइमआउट %i सेकेंड है। एक नया मान सेट करने के लिए 0 से अधिक कुछ भी टाइप करें, या
+    वापस जाने के लिए 0 से कम या बराबर कुछ भी टाइप करें।
+  wwcConfigConversationCharacterLimitInput: प्रति संदेश वर्तमान वर्ण सीमा %i अक्षर
+    है। एक नया मान सेट करने के लिए 0 से अधिक कुछ भी टाइप करें, या वापस जाने के लिए
+    0 से कम या बराबर कुछ भी टाइप करें।
+  wwcteOffSender: इकाई अनुवाद अक्षम किया गया।
+  wwctGUIEntityButton: एंटिटी ट्रांसलेशन टॉगल करें
+  wwcConfigConversationResponseLimitSuccess: रिस्पांस टाइमआउट सफलतापूर्वक सेट किया
+    गया

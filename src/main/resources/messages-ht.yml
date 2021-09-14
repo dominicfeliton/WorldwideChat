@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: Jwè mwen pa jwenn.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat ke yo te
     tradui, men se chat ou ke yo te tradui nan %o.
-  wwcConfigGUIGlobalRateLimit: Chanje limit pousantaj mondyal
   wwcConfigGUIAmazonTranslateRegionButton: Chanje Amazon Rejyon
   wwcConfigConversationLangInput: 'Plugin lang aktyèl la se % mwen % Tanpri antre
     yon kòd lang ki valab, oswa tape 0 anile. kòd lang valab: %o'
@@ -216,21 +215,16 @@ Messages:
   wwcItemTranslateTitleDone: Tradwi atik tit avèk siksè.
   wwcGUITempItem: atik ekspozisyon
   wwcItemTranslateStart: Tradwi atik sib...
-  wwcSignTranslationFailCatastrophic: Echwe pou pou tradui siy sib.
-  wwcItemTranslationFailCatastrophic: Echwe pou pou tradui atik sib.
   wwcBookTranslateTitleSuccess: 'Tradwi Tit Liv: %i'
   wwctiOnSender: Tradiksyon atik pèmèt. Dwa-klike sou ak yon atik nan men prensipal
     ou a tradui li!
   wwcItemTranslateLoreStart: Tradwi lore nan atik sib...
   wwcItemTranslateLoreDone: Tradui atik fè lò avèk siksè.
   wwctiOnTarget: Tradiksyon atik pèmèt pou % mwen.
-  wwcBookTranslationFailCatastrophic: Echwe pou pou tradwi liv sib.
   wwcBookTranslateTitleFail: Echwe pou pou tradwi tit liv.
   wwcChatTranslationFail: Echwe pou pou tradwi mesaj ou a.
   wwcInvalidTranslator: Anviwònman tradiktè envalid. Tanpri ranje sa a nan config.yml
     ou oswa ak/wwcc yo sèvi ak sa a Plugin.
-  wwcNotDoneLoading: WorldwideChat se toujou inisyalizin. Tanpri eseye ankò yon ti
-    tan.
   wwcConfigGUIEachTranslatorSettings: '% mwen konfigirasyon'
   wwcConfigGUIToggleButton: baskèl % mwen
   wwcConfigGUIWatsonButton: Watson
@@ -280,3 +274,34 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Mesaj orijinal
   wwcConfigGUIDebugModeButton: Baskile Debug Mode
   wwcConfigConversationDebugModeSuccess: Avèk siksè baskile mòd dbug.
+  wwcConfigGUIErrorLimitButton: Chanje tradiktè Erè Limite
+  wwcConfigConversationErrorLimitSuccess: Limit erè mete avèk siksè.
+  wwcEntityTranslateStart: Tradwi antite sib...
+  wwcConfigGUICharacterLimitButton: Chanje mesaj Limite karaktè
+  wwcConfigMessageCharLimitInvalid: Envalid limit pou chak mesaj mete nan config.yml.
+    Défauting 255 charaktèr...
+  wwcConfigConversationCharacterLimitSuccess: Limit karaktè mete avèk siksè.
+  wwcteOnTarget: Tradiksyon antite pèmèt pou % mwen.
+  wwcEntityTranslateDone: 'Tradwi Non Antite: % mwen'
+  wwcEntityTranslateNoName: Antite pa gen yon non koutim.
+  wwcConfigConversationErrorLimitInput: Limit la erè aktyèl pou chak tradiktè se %
+    mwen % Kalite anyen pi gran pase 0 yo mete yon nouvo valè, oswa tape anyen mwens
+    pase oswa egal a 0 ale tounen.
+  wwcConfigGUIGlobalRateLimitButton: Chanje limit pousantaj mondyal
+  wwcteOnSender: Tradiksyon antite pèmèt. Dwa-klike sou yon antite tradui non li!
+  wwcInGameObjectTranslationFailCatastrophic: Echwe pou pou tradui objè sib.
+  wwcInGameEntityTranslationFailCatastrophic: Echwe pou pou tradwi antite sib.
+  wwcConfigGUIResponseLimitButton: Chanje tradiktè repons poz
+  wwcConfigMessageCharLimitEnabled: Limit karaktè pou chak mesaj mete nan % mwen karaktè.
+  wwcteOffTarget: Tradiksyon antite andikape pou % mwen.
+  wwcCharLimit: Mesaj ou a twò lontan! Tanpri asire w ke mesaj ou a se mwens pase
+    % mwen karaktè nan longè.
+  wwcConfigConversationResponseLimitInput: Poz repons aktyèl la pou chak tradiktè
+    se % mwen segonn. Tape anyen ki pi konsekan pase 0 yo mete yon nouvo valè, oswa
+    tape anyen mwens pase oswa egal a 0 ale tounen.
+  wwcConfigConversationCharacterLimitInput: Limit karaktè aktyèl la pou chak mesaj
+    se % mwen karaktè. Tape anyen ki pi konsekan pase 0 yo mete yon nouvo valè, oswa
+    tape anyen mwens pase oswa egal a 0 ale tounen.
+  wwcteOffSender: Tradiksyon antite enfim.
+  wwctGUIEntityButton: Tradiksyon antite baskil
+  wwcConfigConversationResponseLimitSuccess: poz Repons mete avèk siksè.

@@ -29,7 +29,7 @@ import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCStats;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
-import com.expl0itz.worldwidechat.commands.WWCTranslateInGameObjects;
+import com.expl0itz.worldwidechat.commands.WWCTranslateEntity;
 import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
@@ -79,6 +79,7 @@ public class WorldwideChat extends JavaPlugin {
 	private int asyncTasksTimeoutSeconds = 7;
 	private int errorCount = 0;
 	private int errorLimit = 5;
+	private int messageCharLimit = 255;
 	private int translatorCacheLimit = 100;
 	private int maxResponseTime = 7;
 
@@ -88,7 +89,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	private String pluginLang = "en";
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "8302021-1"; //This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "9132021-1"; //This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	/* Default constructor */
@@ -179,7 +180,7 @@ public class WorldwideChat extends JavaPlugin {
 		}
 
 		// Cleanly cancel/reset all background tasks (runnables, timers, vars, etc.)
-		cancelBackgroundTasks();
+		cancelBackgroundTasks(false);
 
 		// Unregister listeners
 		HandlerList.unregisterAll(this);
@@ -212,7 +213,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	/* Init all commands */
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-		if (command.getName().equalsIgnoreCase("wwc")) {
+		if (command.getName().equalsIgnoreCase("wwc") && !translatorName.equals("Starting")) {
 			// WWC version
 			final TextComponent versionNotice = Component.text()
 					.append((Component.text().content(CommonDefinitions.getMessage("wwcVersion")).color(NamedTextColor.RED))
@@ -223,52 +224,42 @@ public class WorldwideChat extends JavaPlugin {
 			// Reload command
 			WWCReload wwcr = new WWCReload(sender, command, label, args);
 			return wwcr.processCommand();
-		} else if (command.getName().equalsIgnoreCase("wwcg") && hasValidTranslatorSettings(sender)) {
+		} else if (command.getName().equalsIgnoreCase("wwcg") && hasValidTranslatorSettings(sender) && checkSenderIdentity(sender)) {
 			// Global translation
-			if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-				WWCTranslate wwcg = new WWCGlobal(sender, command, label, args);
-				return wwcg.processCommand();
-			}
-		} else if (command.getName().equalsIgnoreCase("wwct") && hasValidTranslatorSettings(sender)) {
+			WWCTranslate wwcg = new WWCGlobal(sender, command, label, args);
+			return wwcg.processCommand();
+		} else if (command.getName().equalsIgnoreCase("wwct") && hasValidTranslatorSettings(sender) && checkSenderIdentity(sender)) {
 			// Per player translation
-			if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-				WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
-				return wwct.processCommand();
-			}
-		} else if (command.getName().equalsIgnoreCase("wwctb") && hasValidTranslatorSettings(sender)) {
+			WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
+			return wwct.processCommand();
+		} else if (command.getName().equalsIgnoreCase("wwctb") && hasValidTranslatorSettings(sender) && checkSenderIdentity(sender)) {
 			// Book translation
-			if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-				WWCTranslateInGameObjects wwctb = new WWCTranslateBook(sender, command, label, args);
-				return wwctb.processCommand();
-			}
-		} else if (command.getName().equalsIgnoreCase("wwcts") && hasValidTranslatorSettings(sender)) {
+			WWCTranslateBook wwctb = new WWCTranslateBook(sender, command, label, args);
+			return wwctb.processCommand();
+		} else if (command.getName().equalsIgnoreCase("wwcts") && hasValidTranslatorSettings(sender) && checkSenderIdentity(sender)) {
 			// Sign translation
-			if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-				WWCTranslateInGameObjects wwcts = new WWCTranslateSign(sender, command, label, args);
-				return wwcts.processCommand();
-			}
-		} else if (command.getName().equalsIgnoreCase("wwcti") && hasValidTranslatorSettings(sender)) {
+			WWCTranslateSign wwcts = new WWCTranslateSign(sender, command, label, args);
+			return wwcts.processCommand();
+		} else if (command.getName().equalsIgnoreCase("wwcti") && hasValidTranslatorSettings(sender) && checkSenderIdentity(sender)) {
 			// Item translation
-			if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-				WWCTranslateInGameObjects wwcti = new WWCTranslateItem(sender, command, label, args);
-				return wwcti.processCommand();
-			}
+			WWCTranslateItem wwcti = new WWCTranslateItem(sender, command, label, args);
+			return wwcti.processCommand();
+		} else if (command.getName().equalsIgnoreCase("wwcte") && hasValidTranslatorSettings(sender)) {
+			// Entity translation
+			WWCTranslateEntity wwcte = new WWCTranslateEntity(sender, command, label, args);
+			return wwcte.processCommand();
 		} else if (command.getName().equalsIgnoreCase("wwcs")) {
 			// Stats for translator
 			WWCStats wwcs = new WWCStats(sender, command, label, args);
 			return wwcs.processCommand();
-		} else if (command.getName().equalsIgnoreCase("wwcc")) {
+		} else if (command.getName().equalsIgnoreCase("wwcc") && checkSenderIdentity(sender) && !translatorName.equals("Starting")) {
 			// Configuration GUI
-			if (checkSenderIdentity(sender)) {
-				WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
-				return wwcc.processCommand();
-			}
-		} else if (command.getName().equalsIgnoreCase("wwctrl")) {
+			WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
+			return wwcc.processCommand();
+		} else if (command.getName().equalsIgnoreCase("wwctrl") && hasValidTranslatorSettings(sender) && checkSenderIdentity(sender)) {
 			// Rate Limit Command
-			if (checkSenderIdentity(sender) && hasValidTranslatorSettings(sender)) {
-				WWCTranslateRateLimit wwctrl = new WWCTranslateRateLimit(sender, command, label, args);
-				return wwctrl.processCommand();
-			}
+			WWCTranslateRateLimit wwctrl = new WWCTranslateRateLimit(sender, command, label, args);
+			return wwctrl.processCommand();
 		}
 		return true;
 	}
@@ -279,11 +270,12 @@ public class WorldwideChat extends JavaPlugin {
 		if (!translatorName.equals("Invalid")) {
 			translatorName = "Starting";
 		}
+		CommonDefinitions.closeAllInventories();
 
 		new BukkitRunnable() {
 			@Override
 			public void run() {
-				cancelBackgroundTasks();
+				cancelBackgroundTasks(true);
 				loadPluginConfigs(true);
 				if (inSender != null) {
 					final TextComponent wwcrSuccess = Component.text()
@@ -298,9 +290,11 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/* Cancel Background Tasks */
-	public void cancelBackgroundTasks() {
-		// Close all inventories
-		CommonDefinitions.closeAllInventories();
+	public void cancelBackgroundTasks(boolean isReloading) {
+		if (!isReloading) {
+			// Close all inventories
+			CommonDefinitions.closeAllInventories();
+		}
 
 		// Cancel + remove all tasks
 		WorldwideChat.getInstance().getServer().getScheduler().cancelTasks(WorldwideChat.getInstance());
@@ -397,7 +391,7 @@ public class WorldwideChat extends JavaPlugin {
 		if (getTranslatorName().equals("Starting")) {
 			final TextComponent notDone = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcNotDoneLoading"))
+							.content("WorldwideChat is still initializing. Please try again shortly.")
 							.color(NamedTextColor.YELLOW))
 					.build();
 			CommonDefinitions.sendMessage(sender, notDone);
@@ -534,6 +528,10 @@ public class WorldwideChat extends JavaPlugin {
 
 	public void setRateLimit(int i) {
 		rateLimit = i;
+	}
+	
+	public void setMessageCharLimit(int i) {
+		messageCharLimit = i;
 	}
 
 	public void setSyncUserDataDelay(int i) {
@@ -676,6 +674,10 @@ public class WorldwideChat extends JavaPlugin {
 		return rateLimit;
 	}
 
+	public int getMessageCharLimit() {
+		return messageCharLimit;
+	}
+	
 	public int getSyncUserDataDelay() {
 		return syncUserDataDelay;
 	}

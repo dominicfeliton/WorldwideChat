@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: Spēlētājs %es neesmu atrasts.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globālā tērzēšana tiek
     tulkota, bet jūsu tērzēšana tiek tulkota uz %o.
-  wwcConfigGUIGlobalRateLimit: Mainīt globālo likmes ierobežojumu
   wwcConfigGUIAmazonTranslateRegionButton: Mainīt Amazones reģionu
   wwcConfigConversationLangInput: 'Pašreizējā spraudņa valoda ir %i. Lūdzu ievadiet
     derīgu valodas kodu vai ierakstiet 0, lai atceltu. Derīgi valodas kodi: %o'
@@ -223,20 +222,16 @@ Messages:
   wwcItemTranslateTitleDone: Tulkots vienuma nosaukums veiksmīgi.
   wwcGUITempItem: Vienuma displejs
   wwcItemTranslateStart: Mērķa vienuma tulkošana...
-  wwcSignTranslationFailCatastrophic: Neizdevās tulkot mērķa zīmi.
-  wwcItemTranslationFailCatastrophic: Neizdevās tulkot mērķa vienumu.
   wwcBookTranslateTitleSuccess: 'Tulkots grāmatas nosaukums: %i'
   wwctiOnSender: Iespējots vienuma tulkojums. Ar peles labo pogu noklikšķiniet ar
     vienumu galvenajā rokā, lai to tulkotu!
   wwcItemTranslateLoreStart: Tulkojot mācība mērķa posteni...
   wwcItemTranslateLoreDone: Tulkots vienums mācījās veiksmīgi.
   wwctiOnTarget: Vienuma tulkošana iespējota uz %i.
-  wwcBookTranslationFailCatastrophic: Neizdevās tulkot mērķa grāmatu.
   wwcBookTranslateTitleFail: Neizdevās tulkot grāmatas nosaukumu.
   wwcChatTranslationFail: Neizdevās tulkot savu ziņojumu.
   wwcInvalidTranslator: Nederīgi tulkotāja iestatījumi. Lūdzu, salabojiet to savā
     config.yml vai ar /wwcc, lai izmantotu šo spraudni.
-  wwcNotDoneLoading: WorldwideChat joprojām inicializē. Lūdzu, mēģiniet vēlreiz drīz.
   wwcConfigGUIEachTranslatorSettings: '%i konfigurācija'
   wwcConfigGUIToggleButton: Pārslēgt %i
   wwcConfigGUIWatsonButton: Vatsons
@@ -285,3 +280,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Sākotnējais ziņojums
   wwcConfigGUIDebugModeButton: Pārslēgt atkļūdošanas režīmu
   wwcConfigConversationDebugModeSuccess: Veiksmīgi pārslēgts atkļūdošanas režīms.
+  wwcConfigGUIErrorLimitButton: Mainīt tulkotāja kļūdu ierobežojumu
+  wwcConfigConversationErrorLimitSuccess: Kļūdas ierobežojums veiksmīgi iestatīts.
+  wwcEntityTranslateStart: Mērķa entītijas tulkošana...
+  wwcConfigGUICharacterLimitButton: Mainīt ziņojuma rakstzīmju ierobežojumu
+  wwcConfigMessageCharLimitInvalid: Nederīgs ierobežojums vienam ziņojumam, kas iestatīts
+    config.yml. Noklusējuma izpilde līdz 255 rakstiem...
+  wwcConfigConversationCharacterLimitSuccess: Rakstzīmju ierobežojums veiksmīgi iestatīts.
+  wwcteOnTarget: Entītijas tulkošana iespējota uz %i.
+  wwcEntityTranslateDone: 'Tulkots entītijas nosaukums: %i'
+  wwcEntityTranslateNoName: Entītijai nav pielāgota nosaukuma.
+  wwcConfigConversationErrorLimitInput: Pašreizējais kļūdu ierobežojums katram tulkotājam
+    ir %i. Ierakstiet kaut ko lielāku par 0, lai iestatītu jaunu vērtību, vai ierakstiet
+    kaut ko mazāku par vai vienādu ar 0, lai atgrieztos.
+  wwcConfigGUIGlobalRateLimitButton: Mainīt globālo likmes ierobežojumu
+  wwcteOnSender: Entītijas tulkojums iespējots. Ar peles labo pogu noklikšķiniet uz
+    entītijas, lai tulkotu tā nosaukumu!
+  wwcInGameObjectTranslationFailCatastrophic: Neizdevās tulkot mērķa objektu.
+  wwcInGameEntityTranslationFailCatastrophic: Neizdevās tulkot mērķa entītiju.
+  wwcConfigGUIResponseLimitButton: Mainīt tulkotāja atbildes taimautu
+  wwcConfigMessageCharLimitEnabled: Rakstzīmju ierobežojums vienam ziņojumam ir iestatīts
+    uz %i rakstzīmes.
+  wwcteOffTarget: Entītijas tulkojums atspējots uz %i.
+  wwcCharLimit: Jūsu ziņa ir pārāk gara! Lūdzu, pārliecinieties, ka jūsu ziņojums
+    ir mazāks par %i rakstzīmes garumā.
+  wwcConfigConversationResponseLimitInput: Pašreizējais atbildes taimauts katram tulkotājam
+    ir %i sekundes. Ierakstiet visu, kas lielāks par 0, lai iestatītu jaunu vērtību,
+    vai ierakstiet kaut ko, kas mazāks par vai vienāds ar 0, lai atgrieztos.
+  wwcConfigConversationCharacterLimitInput: Pašreizējais rakstzīmju ierobežojums vienam
+    ziņojumam ir %i rakstzīmes. Ierakstiet visu, kas lielāks par 0, lai iestatītu
+    jaunu vērtību, vai ierakstiet kaut ko, kas mazāks par vai vienāds ar 0, lai atgrieztos.
+  wwcteOffSender: Entītiju tulkošana ir
+  wwctGUIEntityButton: Pārslēgt entītijas tulkošanu
+  wwcConfigConversationResponseLimitSuccess: Atbildes taimauts veiksmīgi iestatīts.

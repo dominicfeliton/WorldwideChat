@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: Oyunçu %tapılmadı.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Qlobal söhbət tərcümə
     olunur, ancaq söhbətiniz %o tərcümə olunur.
-  wwcConfigGUIGlobalRateLimit: Global Rate Limitini dəyişdirin
   wwcConfigGUIAmazonTranslateRegionButton: Amazon Regionunu dəyişdirin
   wwcConfigConversationLangInput: 'Mövcud plugin dili %i. Lütfən etibarlı dil kodunu
     daxil edin və ya ləğv etmək üçün 0 yazın. Dil kodları: %o'
@@ -218,21 +217,16 @@ Messages:
   wwcItemTranslateTitleDone: Müvəffəqiyyətlə tərcümə maddə adı.
   wwcGUITempItem: Item Display
   wwcItemTranslateStart: Hədəf maddəsinin tərcüməsi...
-  wwcSignTranslationFailCatastrophic: Hədəf işarəsini tərcümə edə bilmədi.
-  wwcItemTranslationFailCatastrophic: Hədəf maddəsini tərcümə edə bilmədi.
   wwcBookTranslateTitleSuccess: 'Tərcümə olunan kitabın adı: %i'
   wwctiOnSender: Item tərcümə effektiv. Tərcümə etmək üçün əsas əlinizdə bir maddə
     ilə sağ basın!
   wwcItemTranslateLoreStart: Hədəf maddənin irfan tərcümə...
   wwcItemTranslateLoreDone: Tərcümə maddə irfan uğurla.
   wwctiOnTarget: Item tərcümə %i üçün effektiv.
-  wwcBookTranslationFailCatastrophic: Hədəf kitabını tərcümə edə bilmədi.
   wwcBookTranslateTitleFail: Kitabın adını tərcümə edə bilmədi.
   wwcChatTranslationFail: Mesajınızı tərcümə edə bilmədi.
   wwcInvalidTranslator: Yanlış tərcüməçi parametrləri. Bu plugin istifadə etmək üçün
     config.yml və ya /wwcc ilə düzeltmek edin.
-  wwcNotDoneLoading: WorldwideChat hələ də başlanğıcdır. Xahiş edirik qısa bir müddət
-    yenidən cəhd edin.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiqurasiya'
   wwcConfigGUIToggleButton: '%i keçin'
   wwcConfigGUIWatsonButton: Watson
@@ -280,3 +274,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Original Mesaj
   wwcConfigGUIDebugModeButton: Debug Mode keçid
   wwcConfigConversationDebugModeSuccess: Uğurla debug rejimi keçid.
+  wwcConfigGUIErrorLimitButton: Tərcüməçi səhv limitini dəyişdirin
+  wwcConfigConversationErrorLimitSuccess: Error limit uğurla müəyyən.
+  wwcEntityTranslateStart: Hədəf qurumun tərcüməsi...
+  wwcConfigGUICharacterLimitButton: Mesaj Character Limitini
+  wwcConfigMessageCharLimitInvalid: config.yml müəyyən mesaj başına etibarsız limit.
+    255 chars üçün defaulting...
+  wwcConfigConversationCharacterLimitSuccess: Character limit uğurla müəyyən.
+  wwcteOnTarget: Cəmiyyət tərcüməsi %i üçün aktivdir.
+  wwcEntityTranslateDone: 'Tərcümə olunan Cəmiyyət Adı: %i'
+  wwcEntityTranslateNoName: Cəmiyyətin xüsusi adı yoxdur.
+  wwcConfigConversationErrorLimitInput: Hər bir tərcüməçi üçün cari səhv həddi %i.
+    0-dan daha böyük bir şey yazın, yeni bir dəyər təyin etmək və ya geri qayıtmaq
+    üçün 0-dan az və ya bərabər bir şey yazın.
+  wwcConfigGUIGlobalRateLimitButton: Global Rate Limitini dəyişdirin
+  wwcteOnSender: Cəmiyyətin tərcüməsi aktivdir. Adını tərcümə etmək üçün bir müəssisənin
+    üzərinə sağ basın!
+  wwcInGameObjectTranslationFailCatastrophic: Hədəf obyekti tərcümə edə bilmədi.
+  wwcInGameEntityTranslationFailCatastrophic: Hədəf şəxs tərcümə edə bilmədi.
+  wwcConfigGUIResponseLimitButton: Tərcüməçi cavab müddəti aşımı dəyişdirin
+  wwcConfigMessageCharLimitEnabled: Mesaj başına xarakter limit %i simvollarına təyin
+    edilir.
+  wwcteOffTarget: Cəmiyyət tərcümə %i üçün əlil.
+  wwcCharLimit: Mesajınız çox uzun! Lütfən mesajınızın uzunluğunda %i simvollarından
+    az olduğundan əmin olun.
+  wwcConfigConversationResponseLimitInput: Hər bir tərcüməçi üçün cari cavab zaman
+    aşımı %i saniyədir. Yeni bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın
+    və ya geri qayıtmaq üçün 0-dan az və ya bərabər bir şey yazın.
+  wwcConfigConversationCharacterLimitInput: Mesaj başına mövcud xarakter limiti %i
+    simvoldur. Yeni bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın və ya
+    geri qayıtmaq üçün 0-dan az və ya bərabər bir şey yazın.
+  wwcteOffSender: Cəmiyyət tərcüməsi əlil.
+  wwctGUIEntityButton: Toggle Entity Tərcümə
+  wwcConfigConversationResponseLimitSuccess: Cavab zaman aşımı uğurla təyin edildi.

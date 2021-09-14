@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: Player %i ma nstabx.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Iċ-chat globali qed
     jiġi tradott, iżda ċ-chat tiegħek qed jiġi tradott għal %o.
-  wwcConfigGUIGlobalRateLimit: Bidla tal-Limitu tar-Rata Globali
   wwcConfigGUIAmazonTranslateRegionButton: Bidla Reġjun Amazon
   wwcConfigConversationLangInput: 'Jekk jogħġbok ikteb kodiċi tal-lingwa valida, jew
     tip 0 biex tikkanċella. Kodiċijiet validi tal-lingwa: %o'
@@ -223,21 +222,16 @@ Messages:
   wwcItemTranslateTitleDone: Titlu oġġett tradott b'suċċess.
   wwcGUITempItem: Punt Display
   wwcItemTranslateStart: Traduzzjoni oġġett mira...
-  wwcSignTranslationFailCatastrophic: Naqas milli jittraduċi sinjal mira.
-  wwcItemTranslationFailCatastrophic: Naqas milli tittraduċi oġġett fil-mira.
   wwcBookTranslateTitleSuccess: 'Titlu tal-Ktieb Tradott: %i'
   wwctiOnSender: traduzzjoni oġġett ppermettiet. Ikklikkja dritt ma 'oġġett fl-idejn
     prinċipali tiegħek biex tittraduċiha!
   wwcItemTranslateLoreStart: Traduzzjoni Lore ta 'oġġett fil-mira...
   wwcItemTranslateLoreDone: Oġġett tradott Lore b'suċċess.
   wwctiOnTarget: traduzzjoni Punt ppermettiet għal %i.
-  wwcBookTranslationFailCatastrophic: Naqas milli tittraduċi ktieb mira.
   wwcBookTranslateTitleFail: Naqas milli jittraduċi titolu ktieb.
   wwcChatTranslationFail: Naqas milli tittraduċi l-messaġġ tiegħek.
   wwcInvalidTranslator: Settings tat-traduttur invalidi. Jekk jogħġbok jiffissaw dan
     fil config.yml tiegħek jew ma '/wwcc għall-użu dan plugin.
-  wwcNotDoneLoading: WorldwideChat għadu inizjalizzanti. Jekk jogħġbok erġa 'pprova
-    dalwaqt.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurazzjoni'
   wwcConfigGUIToggleButton: toggle %
   wwcConfigGUIWatsonButton: Watson
@@ -287,3 +281,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Messaġġ Oriġinali
   wwcConfigGUIDebugModeButton: Modalità debug toggle
   wwcConfigConversationDebugModeSuccess: B'suċċess toggled modalità debug.
+  wwcConfigGUIErrorLimitButton: Bidla Translator Limitu Żball
+  wwcConfigConversationErrorLimitSuccess: Limitu ta 'żball stabbilit b'suċċess.
+  wwcEntityTranslateStart: It-traduzzjoni tal-entità fil-mira...
+  wwcConfigGUICharacterLimitButton: Bidla Limitu Karattru Messaġġ
+  wwcConfigMessageCharLimitInvalid: Limitu invalidu għal kull messaġġ stabbilit f'konfig.yml.
+    Inadempjenti għal 255 chars...
+  wwcConfigConversationCharacterLimitSuccess: Limitu tal-karattru stabbilit b'suċċess.
+  wwcteOnTarget: It-traduzzjoni tal-entità ppermettiet għal %i.
+  wwcEntityTranslateDone: 'Isem ta'' Entità Tradott: %i'
+  wwcEntityTranslateNoName: Entità m'għandhiex isem tad-dwana.
+  wwcConfigConversationErrorLimitInput: Il-limitu ta 'żball attwali għal kull traduttur
+    hija %i. tip xejn akbar minn 0 li jiġi stabbilit valur ġdid, jew tip xejn inqas
+    minn jew ugwali għal 0 li jmorru lura.
+  wwcConfigGUIGlobalRateLimitButton: Bidla tal-Limitu tar-Rata Globali
+  wwcteOnSender: Entità traduzzjoni ppermettiet. Ikklikkja fuq il-lemin fuq entità
+    biex tittraduċi isimha!
+  wwcInGameObjectTranslationFailCatastrophic: Naqas milli tittraduċi oġġett fil-mira.
+  wwcInGameEntityTranslationFailCatastrophic: Naqas milli tittraduċi l-entità fil-mira.
+  wwcConfigGUIResponseLimitButton: Bidla timeout Rispons Translator
+  wwcConfigMessageCharLimitEnabled: Limitu Karattru għal kull messaġġ stabbilit għal
+    %i karattri.
+  wwcteOffTarget: Entità traduzzjoni b'diżabilità għal %i.
+  wwcCharLimit: Il-messaġġ tiegħek huwa twil wisq! Jekk jogħġbok kun żgur messaġġ
+    tiegħek huwa inqas minn % karattri i fit-tul.
+  wwcConfigConversationResponseLimitInput: Il-timeout rispons attwali għal kull traduttur
+    hija %i sekondi. Tip xejn akbar minn 0 biex tistabbilixxi valur ġdid, jew tip
+    xejn inqas minn jew ugwali għal 0 li jmorru lura.
+  wwcConfigConversationCharacterLimitInput: Il-limitu attwali tal-karattru għal kull
+    messaġġ hija %i karattri. Tip xejn akbar minn 0 biex tistabbilixxi valur ġdid,
+    jew tip xejn inqas minn jew ugwali għal 0 li jmorru lura.
+  wwcteOffSender: Entità traduzzjoni b'diżabilità.
+  wwctGUIEntityButton: Traduzzjoni ta 'Entità
+  wwcConfigConversationResponseLimitSuccess: L-iskedi ta 'rispons stabbiliti b'suċċess.

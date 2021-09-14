@@ -50,7 +50,6 @@ Messages:
   wwctPlayerNotFound: 玩家 %我没找到。
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 全球聊天正在翻译，但是您的聊天正在被翻译为
     %o。
-  wwcConfigGUIGlobalRateLimit: 更改全球费率限制
   wwcConfigGUIAmazonTranslateRegionButton: 更改亚马逊地区
   wwcConfigConversationLangInput: 当前插件语言为 %i。请输入有效的语言代码，或键入 0 以取消。有效的语言代码： %o
   wwcConfigConversationLangInvalid: 语言代码无效！
@@ -178,18 +177,14 @@ Messages:
   wwcItemTranslateTitleDone: 已成功翻译商品标题。
   wwcGUITempItem: 物品展示
   wwcItemTranslateStart: 正在翻译目标物品...
-  wwcSignTranslationFailCatastrophic: 无法翻译目标标志。
-  wwcItemTranslationFailCatastrophic: 无法翻译目标商品。
   wwcBookTranslateTitleSuccess: 翻译的图书标题： %i
   wwctiOnSender: 已启用商品翻译。用主手中的物品右键单击以翻译它！
   wwcItemTranslateLoreStart: 翻译目标物品的更多知识...
   wwcItemTranslateLoreDone: 已成功翻译商品传说。
   wwctiOnTarget: 为 %i 启用了商品翻译。
-  wwcBookTranslationFailCatastrophic: 无法翻译目标图书。
   wwcBookTranslateTitleFail: 无法翻译图书标题。
   wwcChatTranslationFail: 无法翻译你的消息。
   wwcInvalidTranslator: 翻译器设置无效。请在 config.yml 或使用 /wwcc 中修复此问题以使用此插件。
-  wwcNotDoneLoading: WorldwideChat 仍在初始化。请稍后重试。
   wwcConfigGUIEachTranslatorSettings: '%i 配置'
   wwcConfigGUIToggleButton: 切换 %i
   wwcConfigGUIWatsonButton: 沃森
@@ -226,3 +221,29 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: 原始消息
   wwcConfigGUIDebugModeButton: 切换调试模式
   wwcConfigConversationDebugModeSuccess: 成功切换调试模式。
+  wwcConfigGUIErrorLimitButton: 更改翻译器错误限制
+  wwcConfigConversationErrorLimitSuccess: 已成功设置错误限制。
+  wwcEntityTranslateStart: 正在翻译目标实体...
+  wwcConfigGUICharacterLimitButton: 更改留言字符数限制
+  wwcConfigMessageCharLimitInvalid: config.yml 中设置的每条消息的限制无效。默认为 255 个字符...
+  wwcConfigConversationCharacterLimitSuccess: 已成功设置字符数限制。
+  wwcteOnTarget: 为 %i 启用了实体转换。
+  wwcEntityTranslateDone: 已翻译的实体名称： %i
+  wwcEntityTranslateNoName: 实体没有自定义名称。
+  wwcConfigConversationErrorLimitInput: 每个转换器的当前错误限制为 %i。键入任何大于 0 的值可设置新值，或键入小于或等于
+    0 的任何内容返回。
+  wwcConfigGUIGlobalRateLimitButton: 更改全局速率限制
+  wwcteOnSender: 已启用实体翻译。右键单击一个实体以翻译其名称！
+  wwcInGameObjectTranslationFailCatastrophic: 翻译目标对象失败。
+  wwcInGameEntityTranslationFailCatastrophic: 翻译目标实体失败。
+  wwcConfigGUIResponseLimitButton: 更改转换器响应超时
+  wwcConfigMessageCharLimitEnabled: 每封邮件的字符数限制设置为 %i 个字符。
+  wwcteOffTarget: 已为 %i 禁用实体转换。
+  wwcCharLimit: 你的留言太长了！请确保您的消息长度少于 %i 个字符。
+  wwcConfigConversationResponseLimitInput: 每个转换器的当前响应超时时间为 %i 秒。键入大于 0 的任何内容以设置新值，或键入小于或等于
+    0 的任何值以返回。
+  wwcConfigConversationCharacterLimitInput: 每封邮件的当前字符数限制为 %i 个字符。键入大于 0 的任何内容以设置新值，或键入小于或等于
+    0 的任何值以返回。
+  wwcteOffSender: 实体翻译已禁用。
+  wwctGUIEntityButton: 切换实体翻译
+  wwcConfigConversationResponseLimitSuccess: 响应超时设置成功。

@@ -62,7 +62,6 @@ Messages:
   wwctPlayerNotFound: Παίχτης %Δεν βρέθηκε.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Η παγκόσμια συνομιλία
     μεταφράζεται, αλλά η συνομιλία σας μεταφράζεται σε %o.
-  wwcConfigGUIGlobalRateLimit: Αλλαγή ορίου καθολικού ρυθμού
   wwcConfigGUIAmazonTranslateRegionButton: Αλλαγή περιοχής του Αμαζονίου
   wwcConfigConversationLangInput: 'Η τρέχουσα γλώσσα πρόσθετου είναι %i. Εισαγάγετε
     έναν έγκυρο κωδικό γλώσσας ή πληκτρολογήστε 0 για ακύρωση. Κωδικοί έγκυρης γλώσσας:
@@ -240,21 +239,16 @@ Messages:
   wwcItemTranslateTitleDone: Μετάφραση τίτλου αντικειμένου με επιτυχία.
   wwcGUITempItem: Οθόνη Στοιχείου
   wwcItemTranslateStart: Μετάφραση στοχευόμενου αντικειμένου...
-  wwcSignTranslationFailCatastrophic: Αποτυχία μετάφρασης του σημείου προορισμού.
-  wwcItemTranslationFailCatastrophic: Αποτυχία μετάφρασης αντικειμένου προορισμού.
   wwcBookTranslateTitleSuccess: 'Τίτλος μεταφρασμένου βιβλίου: %i'
   wwctiOnSender: Ενεργοποίηση μετάφρασης αντικειμένου. Κάντε δεξί κλικ με ένα στοιχείο
     στο κύριο χέρι σας για να το μεταφράσετε!
   wwcItemTranslateLoreStart: Μεταφράζοντας την παράδοση του στοχευόμενου αντικειμένου...
   wwcItemTranslateLoreDone: Μετάφραση αντικειμένων με επιτυχία.
   wwctiOnTarget: Η μετάφραση αντικειμένου ενεργοποιήθηκε για %i.
-  wwcBookTranslationFailCatastrophic: Αποτυχία μετάφρασης βιβλίου προορισμού.
   wwcBookTranslateTitleFail: Αποτυχία μετάφρασης τίτλου βιβλίου.
   wwcChatTranslationFail: Απέτυχε η μετάφραση του μηνύματός σας.
   wwcInvalidTranslator: Μη έγκυρες ρυθμίσεις μεταφραστή. Διορθώστε το στο config.yml
     ή στο /wwcc για να χρησιμοποιήσετε αυτό το πρόσθετο.
-  wwcNotDoneLoading: Το WorldwideChat προετοιμάζεται ακόμα. Παρακαλώ προσπαθήστε ξανά
-    σύντομα.
   wwcConfigGUIEachTranslatorSettings: '%i Ρύθμιση παραμέτρων'
   wwcConfigGUIToggleButton: Εναλλαγή του %i
   wwcConfigGUIWatsonButton: Γουάτσον
@@ -306,3 +300,38 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Αρχικό μήνυμα
   wwcConfigGUIDebugModeButton: Εναλλαγή λειτουργίας αποσφαλμάτωσης
   wwcConfigConversationDebugModeSuccess: Επιτυχής εναλλαγή κατάστασης αποσφαλμάτωσης.
+  wwcConfigGUIErrorLimitButton: Αλλαγή ορίου σφάλματος μεταφραστή
+  wwcConfigConversationErrorLimitSuccess: Το όριο σφάλματος ορίστηκε με επιτυχία.
+  wwcEntityTranslateStart: Μεταφράζοντας την οντότητα-στόχο...
+  wwcConfigGUICharacterLimitButton: Αλλαγή ορίου χαρακτήρων μηνύματος
+  wwcConfigMessageCharLimitInvalid: Μη έγκυρο όριο ανά μήνυμα που έχει οριστεί στο
+    config.yml. Προεπιλογές σε 255 χαρακτήρες...
+  wwcConfigConversationCharacterLimitSuccess: Το όριο χαρακτήρων ορίστηκε με επιτυχία.
+  wwcteOnTarget: Η μετάφραση της οντότητας είναι ενεργοποιημένη για %i.
+  wwcEntityTranslateDone: 'Όνομα μεταφρασμένης οντότητας: %i'
+  wwcEntityTranslateNoName: Η οντότητα δεν έχει προσαρμοσμένο όνομα.
+  wwcConfigConversationErrorLimitInput: Το τρέχον όριο σφάλματος για κάθε μεταφραστή
+    είναι %i. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια νέα τιμή
+    ή πληκτρολογήστε οτιδήποτε μικρότερο ή ίσο με 0 για να επιστρέψετε.
+  wwcConfigGUIGlobalRateLimitButton: Αλλαγή ορίου καθολικού ρυθμού
+  wwcteOnSender: Ενεργοποίηση μετάφρασης οντότητας. Κάντε δεξί κλικ σε μια οντότητα
+    για να μεταφράσετε το όνομά της!
+  wwcInGameObjectTranslationFailCatastrophic: Αποτυχία μετάφρασης αντικειμένου προορισμού.
+  wwcInGameEntityTranslationFailCatastrophic: Η μετάφραση της οντότητας-στόχου απέτυχε.
+  wwcConfigGUIResponseLimitButton: Αλλαγή χρονικού ορίου απόκρισης μεταφραστή
+  wwcConfigMessageCharLimitEnabled: Όριο χαρακτήρων ανά μήνυμα που έχει οριστεί σε
+    %i χαρακτήρες.
+  wwcteOffTarget: Η μετάφραση οντότητας απενεργοποιημένη για %i.
+  wwcCharLimit: Το μήνυμά σου είναι πολύ μεγάλο! Βεβαιωθείτε ότι το μήνυμά σας είναι
+    μικρότερο από το %i χαρακτήρες σε μήκος.
+  wwcConfigConversationResponseLimitInput: Το τρέχον χρονικό όριο απόκρισης για κάθε
+    μεταφραστή είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για
+    να ορίσετε μια νέα τιμή ή πληκτρολογήστε οτιδήποτε μικρότερο ή ίσο με 0 για να
+    επιστρέψετε.
+  wwcConfigConversationCharacterLimitInput: Το τρέχον όριο χαρακτήρων ανά μήνυμα είναι
+    %i χαρακτήρες. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια νέα
+    τιμή ή πληκτρολογήστε οτιδήποτε μικρότερο ή ίσο με 0 για να επιστρέψετε.
+  wwcteOffSender: Η μετάφραση οντότητας απενεργοποιημένη.
+  wwctGUIEntityButton: Εναλλαγή μετάφρασης οντοτήτων
+  wwcConfigConversationResponseLimitSuccess: Το χρονικό όριο απόκρισης ορίστηκε με
+    επιτυχία.

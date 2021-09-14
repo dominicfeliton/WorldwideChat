@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: Žaidėjas %neradau.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Pasaulinis pokalbis
     yra išverstas, bet jūsų pokalbis yra išverstas į %o.
-  wwcConfigGUIGlobalRateLimit: Keisti pasaulinę normos ribą
   wwcConfigGUIAmazonTranslateRegionButton: Keisti Amazon regioną
   wwcConfigConversationLangInput: 'Dabartinė įskiepio kalba yra %i. Įveskite galiojantį
     kalbos kodą arba įveskite 0, kad atšauktumėte. Galiojantys kalbos kodai: %o'
@@ -221,20 +220,16 @@ Messages:
   wwcItemTranslateTitleDone: Išverstas elemento pavadinimas sėkmingai.
   wwcGUITempItem: Prekė Ekranas
   wwcItemTranslateStart: Vertimas tikslinę prekę...
-  wwcSignTranslationFailCatastrophic: Nepavyko išversti tikslinio ženklo.
-  wwcItemTranslationFailCatastrophic: Nepavyko išversti tikslinio elemento.
   wwcBookTranslateTitleSuccess: 'Išverstas knygos pavadinimas: %i'
   wwctiOnSender: Prekė vertimas įjungtas. Dešiniuoju pelės mygtuku spustelėkite su
     elementu jūsų pagrindinėje rankoje jį išversti!
   wwcItemTranslateLoreStart: Vertimas kraštotyros tikslinės elemento...
   wwcItemTranslateLoreDone: Išversta prekė kraštotyros sėkmingai.
   wwctiOnTarget: Elemento vertimas įjungtas %i.
-  wwcBookTranslationFailCatastrophic: Nepavyko išversti tikslinės knygos.
   wwcBookTranslateTitleFail: Nepavyko išversti knygos pavadinimo.
   wwcChatTranslationFail: Nepavyko išversti jūsų žinutės.
   wwcInvalidTranslator: Neteisingas vertėjo nustatymai. Prašome išspręsti šią problemą
     savo config.yml arba su /wwcc naudoti šį įskiepiai.
-  wwcNotDoneLoading: WorldwideChat vis dar inicijuoja. Bandykite dar kartą netrukus.
   wwcConfigGUIEachTranslatorSettings: '%i konfigūracija'
   wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watsonas
@@ -283,3 +278,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Originali žinutė
   wwcConfigGUIDebugModeButton: Perjungti derinimo režimą
   wwcConfigConversationDebugModeSuccess: Sėkmingai perjungtas derinimo režimas.
+  wwcConfigGUIErrorLimitButton: Keisti vertėjo klaidos limitą
+  wwcConfigConversationErrorLimitSuccess: Klaida riba nustatyti sėkmingai.
+  wwcEntityTranslateStart: Vertimas tikslinį subjektą...
+  wwcConfigGUICharacterLimitButton: Keisti pranešimo simbolių limitą
+  wwcConfigMessageCharLimitInvalid: Neteisingas apribojimas vienam pranešimui, nustatytam
+    config.yml. Numatytieji 255 chars...
+  wwcConfigConversationCharacterLimitSuccess: Simbolių limitas sėkmingai nustatytas.
+  wwcteOnTarget: Subjekto vertimas įgalintas į %i.
+  wwcEntityTranslateDone: 'Išverstas subjekto pavadinimas: %i'
+  wwcEntityTranslateNoName: Subjektas neturi pasirinktinio pavadinimo.
+  wwcConfigConversationErrorLimitInput: Dabartinis kiekvieno vertėjo klaidos apribojimas
+    yra %i. Įveskite bet ką didesnį nei 0, kad nustatytumėte naują vertę, arba įveskite
+    bet ką mažesnį arba lygesnį 0, kad grįžtumėte atgal.
+  wwcConfigGUIGlobalRateLimitButton: Keisti pasaulinę normos ribą
+  wwcteOnSender: Subjekto vertimas įjungtas. Dešiniuoju pelės mygtuku spustelėkite
+    subjektą, norėdami išversti jo pavadinimą!
+  wwcInGameObjectTranslationFailCatastrophic: Nepavyko išversti tikslinio objekto.
+  wwcInGameEntityTranslationFailCatastrophic: Nepavyko išversti tikslinio subjekto.
+  wwcConfigGUIResponseLimitButton: Pakeisti Vertėjas Atsakas Timeout
+  wwcConfigMessageCharLimitEnabled: Simbolių limitas pranešimui nustatytas į %i simbolius.
+  wwcteOffTarget: Subjekto vertimas išjungtas %i.
+  wwcCharLimit: Jūsų žinutė yra per ilga! Įsitikinkite, kad jūsų žinutė yra mažesnė
+    nei %i simbolių ilgio.
+  wwcConfigConversationResponseLimitInput: Dabartinis kiekvieno vertėjo atsakymo laikas
+    yra %i sekundes. Įveskite viską, kas yra didesnė nei 0, kad nustatytumėte naują
+    vertę, arba įveskite viską, kas yra mažesnė arba lygi 0, kad grįžtumėte atgal.
+  wwcConfigConversationCharacterLimitInput: Dabartinis simbolių limitas vienam pranešimui
+    yra %i simboliai. Įveskite viską, kas yra didesnė nei 0, kad nustatytumėte naują
+    vertę, arba įveskite viską, kas yra mažesnė arba lygi 0, kad grįžtumėte atgal.
+  wwcteOffSender: Subjekto vertimas išjungtas.
+  wwctGUIEntityButton: Perjungti subjekto vertimą
+  wwcConfigConversationResponseLimitSuccess: Atsakymo skirtasis laikas sėkmingai nustatytas.

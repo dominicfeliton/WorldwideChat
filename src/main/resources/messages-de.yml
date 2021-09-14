@@ -65,7 +65,6 @@ Messages:
   wwctPlayerNotFound: Spieler %ich habe nicht gefunden.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Der globale Chat wird
     übersetzt, aber Ihr Chat wird in %o übersetzt.
-  wwcConfigGUIGlobalRateLimit: Globale Zinsbegrenzung ändern
   wwcConfigGUIAmazonTranslateRegionButton: Amazon-Region ändern
   wwcConfigConversationLangInput: 'Die aktuelle Plugin-Sprache ist %i. Bitte geben
     Sie einen gültigen Sprachcode ein oder geben Sie 0 ein, um abzubrechen. Gültige
@@ -242,21 +241,16 @@ Messages:
   wwcItemTranslateTitleDone: Der Titel des Artikels wurde erfolgreich übersetzt.
   wwcGUITempItem: Artikel-Display
   wwcItemTranslateStart: Zielelement wird übersetzt...
-  wwcSignTranslationFailCatastrophic: Das Zielzeichen konnte nicht übersetzt werden.
-  wwcItemTranslationFailCatastrophic: Das Zielelement konnte nicht übersetzt werden.
   wwcBookTranslateTitleSuccess: 'Titel des übersetzten Buches: %i'
   wwctiOnSender: Artikelübersetzung aktiviert. Klicken Sie mit der rechten Maustaste
     mit einem Element in Ihrer Haupthand, um es zu übersetzen!
   wwcItemTranslateLoreStart: Überlieferung des Zielgegenstandes wird übersetzt...
   wwcItemTranslateLoreDone: Übersetzte Item-Überlieferung erfolgreich.
   wwctiOnTarget: Artikelübersetzung für %i aktiviert.
-  wwcBookTranslationFailCatastrophic: Das Zielbuch konnte nicht übersetzt werden.
   wwcBookTranslateTitleFail: Der Buchtitel konnte nicht übersetzt werden.
   wwcChatTranslationFail: Ihre Nachricht konnte nicht übersetzt werden.
   wwcInvalidTranslator: Ungültige Übersetzereinstellungen. Bitte repariere das in
     deiner config.yml oder mit /wwcc um dieses Plugin zu verwenden.
-  wwcNotDoneLoading: WorldwideChat initialisiert immer noch. Bitte versuchen Sie es
-    in Kürze erneut.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'
   wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
@@ -311,3 +305,38 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Ursprüngliche Nachricht
   wwcConfigGUIDebugModeButton: Debug-Modus umschalten
   wwcConfigConversationDebugModeSuccess: Der Debug-Modus wurde erfolgreich umgeschaltet.
+  wwcConfigGUIErrorLimitButton: Ändern des Translator-Fehlerlimits
+  wwcConfigConversationErrorLimitSuccess: Fehlerlimit wurde erfolgreich festgelegt.
+  wwcEntityTranslateStart: Zielentität wird übersetzt...
+  wwcConfigGUICharacterLimitButton: Zeichenbeschränkung für Nachrichten ändern
+  wwcConfigMessageCharLimitInvalid: Ungültiges Limit pro Nachricht in config.yml festgelegt.
+    Standardmäßig 255 Zeichen...
+  wwcConfigConversationCharacterLimitSuccess: Die Zeichenbegrenzung wurde erfolgreich
+    festgelegt.
+  wwcteOnTarget: Die Entitätsübersetzung wurde für %i aktiviert.
+  wwcEntityTranslateDone: 'Name der übersetzten Einheit: %i'
+  wwcEntityTranslateNoName: Entität hat keinen benutzerdefinierten Namen.
+  wwcConfigConversationErrorLimitInput: Die aktuelle Fehlergrenze für jeden Übersetzer
+    beträgt %i. Geben Sie etwas größer als 0 ein, um einen neuen Wert festzulegen,
+    oder geben Sie etwas kleiner oder gleich 0 ein, um zurückzukehren.
+  wwcConfigGUIGlobalRateLimitButton: Globales Zinslimit ändern
+  wwcteOnSender: Entitätsübersetzung aktiviert. Rechtsklick auf eine Entität um ihren
+    Namen zu übersetzen!
+  wwcInGameObjectTranslationFailCatastrophic: Zielobjekt konnte nicht übersetzt werden.
+  wwcInGameEntityTranslationFailCatastrophic: Zielentität konnte nicht übersetzt werden.
+  wwcConfigGUIResponseLimitButton: Ändern des Antwort-Timeouts des Übersetzers
+  wwcConfigMessageCharLimitEnabled: Die Zeichenbegrenzung pro Nachricht ist auf %i
+    Zeichen festgelegt.
+  wwcteOffTarget: Die Entitätsübersetzung wurde für %i deaktiviert.
+  wwcCharLimit: Ihre Nachricht ist zu lang! Bitte stellen Sie sicher, dass Ihre Nachricht
+    weniger als %i Zeichen lang ist.
+  wwcConfigConversationResponseLimitInput: Das aktuelle Antwort-Timeout für jeden
+    Übersetzer beträgt %i Sekunden. Geben Sie etwas größer als 0 ein, um einen neuen
+    Wert festzulegen, oder geben Sie etwas kleiner oder gleich 0 ein, um zurückzukehren.
+  wwcConfigConversationCharacterLimitInput: Die aktuelle Zeichenbeschränkung pro Nachricht
+    beträgt %i Zeichen. Geben Sie etwas größer als 0 ein, um einen neuen Wert festzulegen,
+    oder geben Sie etwas kleiner oder gleich 0 ein, um zurückzukehren.
+  wwcteOffSender: Entitätsübersetzung ist deaktiviert
+  wwctGUIEntityButton: Entitätsübersetzung umschalten
+  wwcConfigConversationResponseLimitSuccess: Das Antwort-Timeout wurde erfolgreich
+    eingestellt.

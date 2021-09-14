@@ -61,7 +61,6 @@ Messages:
   wwctPlayerNotFound: Jogador %eu não encontrei.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: O bate-papo global está
     sendo traduzido, mas seu chat está sendo traduzido para %o.
-  wwcConfigGUIGlobalRateLimit: Alterar limite de taxa global
   wwcConfigGUIAmazonTranslateRegionButton: Alterar região da Amazon
   wwcConfigConversationLangInput: 'O idioma atual do plugin é %i. Insira um código
     de idioma válido ou digite 0 para cancelar. Códigos de idioma válidos: %o'
@@ -225,21 +224,16 @@ Messages:
   wwcItemTranslateTitleDone: Título do item traduzido com sucesso.
   wwcGUITempItem: Exibição do item
   wwcItemTranslateStart: Traduzindo o item alvo...
-  wwcSignTranslationFailCatastrophic: Falha ao traduzir o sinal de destino.
-  wwcItemTranslationFailCatastrophic: Falha ao traduzir o item de destino.
   wwcBookTranslateTitleSuccess: 'Título do livro traduzido: %i'
   wwctiOnSender: Tradução de itens ativada. Clique com o botão direito do mouse com
     um item na mão principal para traduzi-lo!
   wwcItemTranslateLoreStart: Traduzindo o lore do item alvo...
   wwcItemTranslateLoreDone: Lore do item traduzido com sucesso.
   wwctiOnTarget: Tradução de itens ativada para %i.
-  wwcBookTranslationFailCatastrophic: Falha ao traduzir o livro de destino.
   wwcBookTranslateTitleFail: Falha ao traduzir o título do livro.
   wwcChatTranslationFail: Falha ao traduzir sua mensagem.
   wwcInvalidTranslator: Configurações inválidas do tradutor. Corrija isso em seu config.yml
     ou com /wwcc para usar este plugin.
-  wwcNotDoneLoading: O WorldwideChat ainda está sendo inicializado. Por favor, tente
-    novamente em breve.
   wwcConfigGUIEachTranslatorSettings: '%i Configuração'
   wwcConfigGUIToggleButton: Alterno %i
   wwcConfigGUIWatsonButton: Watson
@@ -289,3 +283,37 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Mensagem original
   wwcConfigGUIDebugModeButton: Alternar modo de depuração
   wwcConfigConversationDebugModeSuccess: Modo de depuração alternado com sucesso.
+  wwcConfigGUIErrorLimitButton: Limite de erro de alteração do tradutor
+  wwcConfigConversationErrorLimitSuccess: Limite de erro definido com sucesso.
+  wwcEntityTranslateStart: Traduzindo a entidade de destino...
+  wwcConfigGUICharacterLimitButton: Alterar limite de caracteres de mensagem
+  wwcConfigMessageCharLimitInvalid: Limite inválido por mensagem definida em config.yml.
+    Padrão para 255 caracteres...
+  wwcConfigConversationCharacterLimitSuccess: Limite de caracteres definido com sucesso.
+  wwcteOnTarget: Tradução de entidade habilitada para %i.
+  wwcEntityTranslateDone: 'Nome da entidade traduzida: %i'
+  wwcEntityTranslateNoName: A entidade não tem um nome personalizado.
+  wwcConfigConversationErrorLimitInput: O limite de erro atual para cada tradutor
+    é %i. Digite algo maior que 0 para definir um novo valor, ou digite qualquer coisa
+    menor ou igual a 0 para voltar.
+  wwcConfigGUIGlobalRateLimitButton: Alterar limite de taxa global
+  wwcteOnSender: Tradução de entidade ativada. Clique com o botão direito em uma entidade
+    para traduzir seu nome!
+  wwcInGameObjectTranslationFailCatastrophic: Falha ao traduzir o objeto de destino.
+  wwcInGameEntityTranslationFailCatastrophic: Falha ao traduzir a entidade de destino.
+  wwcConfigGUIResponseLimitButton: Tempo limite de resposta do tradutor de alterações
+  wwcConfigMessageCharLimitEnabled: Limite de caracteres por mensagem definido como
+    %i caracteres.
+  wwcteOffTarget: Tradução de entidade desativada para %i.
+  wwcCharLimit: Sua mensagem é muito longa! Certifique-se de que sua mensagem tenha
+    menos de %i caracteres.
+  wwcConfigConversationResponseLimitInput: O tempo limite de resposta atual para cada
+    tradutor é de %i segundos. Digite qualquer coisa maior que 0 para definir um novo
+    valor, ou digite qualquer coisa menor ou igual a 0 para voltar.
+  wwcConfigConversationCharacterLimitInput: O limite de caracteres atual por mensagem
+    é de %i caracteres. Digite qualquer coisa maior que 0 para definir um novo valor,
+    ou digite qualquer coisa menor ou igual a 0 para voltar.
+  wwcteOffSender: Tradução de entidades desativada.
+  wwctGUIEntityButton: Alternar tradução de entidades
+  wwcConfigConversationResponseLimitSuccess: Tempo limite de resposta definido com
+    êxito.

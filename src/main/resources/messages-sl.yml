@@ -61,7 +61,6 @@ Messages:
   wwctPlayerNotFound: Igralca %Nisem našel.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globalni klepet se prevaja,
     vendar je vaš klepet preveden v %o.
-  wwcConfigGUIGlobalRateLimit: Spremeni omejitev globalne stopnje
   wwcConfigGUIAmazonTranslateRegionButton: Spremeni regijo Amazon
   wwcConfigConversationLangInput: 'Trenutni jezik vtičnika je %i. vnesite veljavno
     jezikovno kodo ali vnesite 0 za preklic. Veljavne jezikovne kode: %o'
@@ -223,21 +222,16 @@ Messages:
   wwcItemTranslateTitleDone: Preveden naslov predmeta uspešno.
   wwcGUITempItem: Prikaz elementa
   wwcItemTranslateStart: Prevajanje ciljne postavke...
-  wwcSignTranslationFailCatastrophic: Ni bilo mogoče prevajati ciljnega znaka.
-  wwcItemTranslationFailCatastrophic: Ni bilo mogoče prevajati ciljnega elementa.
   wwcBookTranslateTitleSuccess: 'Naslov prevedene knjige: %i'
   wwctiOnSender: Omogočen prevod elementa. Z desno tipko miške kliknite element v
     glavni roki, da ga prevedete!
   wwcItemTranslateLoreStart: Prevajanje izročilo ciljne postavke...
   wwcItemTranslateLoreDone: Prevedena postavka izročilo uspešno.
   wwctiOnTarget: Prevod elementa je omogočen za %i.
-  wwcBookTranslationFailCatastrophic: Ni bilo mogoče prevajati ciljne knjige.
   wwcBookTranslateTitleFail: Ni bilo mogoče prevesti naslova knjige.
   wwcChatTranslationFail: Sporočila ni bilo mogoče prevesti.
   wwcInvalidTranslator: Neveljavne nastavitve prevajalca. Prosimo, da to popravite
     v vašem config.yml ali z /wwcc za uporabo tega vtičnika.
-  wwcNotDoneLoading: WorldwideChat še vedno inicializira. Prosimo, poskusite znova
-    kmalu.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguracija'
   wwcConfigGUIToggleButton: Preklap %i
   wwcConfigGUIWatsonButton: Watson
@@ -287,3 +281,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Izvirno sporočilo
   wwcConfigGUIDebugModeButton: Preklop načina odpravljanja napak
   wwcConfigConversationDebugModeSuccess: Uspešno preklopljen način odpravljanja napak.
+  wwcConfigGUIErrorLimitButton: Spremeni omejitev napak prevajalca
+  wwcConfigConversationErrorLimitSuccess: Omejitev napak je uspešno nastavljena.
+  wwcEntityTranslateStart: Prevajanje ciljnega subjekta...
+  wwcConfigGUICharacterLimitButton: Spremeni omejitev znakov sporočila
+  wwcConfigMessageCharLimitInvalid: Neveljavna omejitev na sporočilo, nastavljeno
+    v config.yml. Privzetje do 255 znakov...
+  wwcConfigConversationCharacterLimitSuccess: Omejitev znakov je uspešno nastavljena.
+  wwcteOnTarget: Prevod entitete je omogočen za %i.
+  wwcEntityTranslateDone: 'Ime prevedene entitete: %i'
+  wwcEntityTranslateNoName: Entiteta nima imena po meri.
+  wwcConfigConversationErrorLimitInput: Trenutna omejitev napake za vsakega prevajalca
+    je %i. vnesite karkoli, ki je večje od 0, če želite nastaviti novo vrednost, ali
+    pa vnesite kaj manj ali enako 0, da se vrnete nazaj.
+  wwcConfigGUIGlobalRateLimitButton: Spremeni omejitev globalne stopnje
+  wwcteOnSender: Prevod entitete omogočen. Z desno tipko miške kliknite entiteto,
+    da prevedete svoje ime!
+  wwcInGameObjectTranslationFailCatastrophic: Ni bilo mogoče prevajati ciljnega predmeta.
+  wwcInGameEntityTranslationFailCatastrophic: Ni bilo mogoče prevajati ciljne entitete.
+  wwcConfigGUIResponseLimitButton: Spremeni časovno omejitev odziva prevajalca
+  wwcConfigMessageCharLimitEnabled: Omejitev znakov na sporočilo, nastavljena na %i
+    znakov.
+  wwcteOffTarget: Prevod entitete onemogočen za %i.
+  wwcCharLimit: Vaše sporočilo je predolgo! Prosimo, poskrbite, da je vaše sporočilo
+    manjše od %i znakov v dolžino.
+  wwcConfigConversationResponseLimitInput: Trenutni odzivni čas za vsak prevajalec
+    je %i sekund. Vnesite karkoli večje od 0, če želite nastaviti novo vrednost, ali
+    pa vnesite karkoli, ki je manjša ali enaka 0, da se vrnete nazaj.
+  wwcConfigConversationCharacterLimitInput: Trenutna omejitev znakov na sporočilo
+    je %i znakov. Vnesite karkoli večje od 0, če želite nastaviti novo vrednost, ali
+    pa vnesite karkoli, ki je manjša ali enaka 0, da se vrnete nazaj.
+  wwcteOffSender: Prevod entitete onemogočen.
+  wwctGUIEntityButton: Preklop prevodov entitete
+  wwcConfigConversationResponseLimitSuccess: Odzivni čas je bil uspešno nastavljen.

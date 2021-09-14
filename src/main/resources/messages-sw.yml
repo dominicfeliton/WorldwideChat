@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: Mchezaji %sijaipata.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Soga ya kimataifa inatafsiriwa,
     lakini soga yako inatafsiriwa kwa %o.
-  wwcConfigGUIGlobalRateLimit: Badilisha kikomo cha Kiwango cha Global
   wwcConfigGUIAmazonTranslateRegionButton: Badilisha Mkoa wa Amazon
   wwcConfigConversationLangInput: 'Lugha ya sasa ya Plugin ni %i. Tafadhali ingiza
     msimbo halali wa lugha, au weka 0 ili kughairi. Misimbo halali ya lugha: %o'
@@ -218,20 +217,16 @@ Messages:
   wwcItemTranslateTitleDone: Kutafsiriwa jina bidhaa mafanikio.
   wwcGUITempItem: Onyesha kipengee
   wwcItemTranslateStart: Kutafsiri kipengee cha lengo...
-  wwcSignTranslationFailCatastrophic: Imeshindwa kutafsiri ishara ya lengo.
-  wwcItemTranslationFailCatastrophic: Imeshindwa kutafsiri kipengee cha lengo.
   wwcBookTranslateTitleSuccess: Title ya Kitabu kilichotafsiriwa
   wwctiOnSender: Bidhaa tafsiri kuwezeshwa. Bonyeza-click na kipengee katika mkono
     wako kuu ili kutafsiri!
   wwcItemTranslateLoreStart: Kutafsiri lore ya bidhaa lengo...
   wwcItemTranslateLoreDone: Tafsiri bidhaa lore mafanikio.
   wwctiOnTarget: Tafsiri ya kipengee imewezeshwa kwa %i.
-  wwcBookTranslationFailCatastrophic: Imeshindwa kutafsiri lengo kitabu.
   wwcBookTranslateTitleFail: Imeshindwa kutafsiri kichwa cha kitabu.
   wwcChatTranslationFail: Imeshindwa kutafsiri ujumbe wako.
   wwcInvalidTranslator: Mipangilio ya msanii batili. Tafadhali tengeneza hii katika
     config.yml yako au na/wwcc kutumia Plugin hii.
-  wwcNotDoneLoading: WorldwideChat bado inaanzisha. Tafadhali jaribu tena muda mfupi.
   wwcConfigGUIEachTranslatorSettings: '%i Usanidi'
   wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
@@ -280,3 +275,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Ujumbe wa awali
   wwcConfigGUIDebugModeButton: Badilisha Hali ya Debug
   wwcConfigConversationDebugModeSuccess: Mafanikio ya kurekebisha hali ya kufuta.
+  wwcConfigGUIErrorLimitButton: Badilisha Mtafsiri Hitilafu
+  wwcConfigConversationErrorLimitSuccess: Hitilafu kikomo kuweka kwa mafanikio
+  wwcEntityTranslateStart: Kutafsiri lengo chombo...
+  wwcConfigGUICharacterLimitButton: Mabadiliko ya Tabia ya Ujumbe
+  wwcConfigMessageCharLimitInvalid: Kikomo batili kwa ujumbe kuweka katika config.yml.
+    Defaulting kwa 255 chars...
+  wwcConfigConversationCharacterLimitSuccess: Kikomo cha tabia kinawekwa kwa ufanisi.
+  wwcteOnTarget: Tafsiri ya chombo imewezeshwa kwa %i.
+  wwcEntityTranslateDone: 'Jina la Chombo cha Tafsiri: %i'
+  wwcEntityTranslateNoName: Chombo haina jina la desturi.
+  wwcConfigConversationErrorLimitInput: Hitilafu ya sasa kikomo kwa kila translator
+    ni %i. aina kitu chochote kubwa kuliko 0 kuweka thamani mpya, au aina kitu chochote
+    chini ya au sawa na 0 kurudi nyuma.
+  wwcConfigGUIGlobalRateLimitButton: Badilisha kikomo cha Kiwango cha Global
+  wwcteOnSender: Tafsiri ya chombo imewezeshwa. Bonyeza-click kwenye chombo cha kutafsiri
+    jina lake!
+  wwcInGameObjectTranslationFailCatastrophic: Imeshindwa kutafsiri kitu cha lengo.
+  wwcInGameEntityTranslationFailCatastrophic: Imeshindwa kutafsiri chombo cha lengo.
+  wwcConfigGUIResponseLimitButton: Badilisha Mwitikio wa Mtafsiri
+  wwcConfigMessageCharLimitEnabled: Kikomo cha tabia kwa kila ujumbe umewekwa kwa
+    %i herufi.
+  wwcteOffTarget: Tafsiri ya chombo imezimwa kwa %i.
+  wwcCharLimit: Ujumbe wako ni mrefu sana! Tafadhali hakikisha ujumbe wako uko chini
+    ya herufi ya %i kwa urefu.
+  wwcConfigConversationResponseLimitInput: majibu ya sasa umeisha kwa kila translator
+    ni %i sekunde. Andika kitu chochote zaidi kuliko 0 kuweka thamani mpya, au aina
+    kitu chochote chini ya au sawa na 0 kurudi nyuma.
+  wwcConfigConversationCharacterLimitInput: Kikomo cha tabia ya sasa kwa kila ujumbe
+    ni %i herufi. Andika kitu chochote zaidi kuliko 0 kuweka thamani mpya, au aina
+    kitu chochote chini ya au sawa na 0 kurudi nyuma.
+  wwcteOffSender: Chombo tafsiri walemavu.
+  wwctGUIEntityButton: Badilisha Tafsiri ya Chombo
+  wwcConfigConversationResponseLimitSuccess: Mwitikio wa majibu umewekwa kwa mafanikio.

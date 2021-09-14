@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: Gracza %Nie znaleziono.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Czat globalny jest tłumaczony,
     ale twój czat jest tłumaczony na %o.
-  wwcConfigGUIGlobalRateLimit: Zmień globalny limit stawki
   wwcConfigGUIAmazonTranslateRegionButton: Zmień region Amazon
   wwcConfigConversationLangInput: 'Bieżący język wtyczki to %i. Wprowadź prawidłowy
     kod języka lub wpisz 0, aby anulować. Prawidłowe kody językowe: %o'
@@ -223,20 +222,16 @@ Messages:
   wwcItemTranslateTitleDone: Przetłumaczony tytuł elementu pomyślnie.
   wwcGUITempItem: Wyświetlanie pozycji
   wwcItemTranslateStart: Tłumaczenie elementu docelowego...
-  wwcSignTranslationFailCatastrophic: Nie można przetłumaczyć znaku celu.
-  wwcItemTranslationFailCatastrophic: Nie można przetłumaczyć elementu docelowego.
   wwcBookTranslateTitleSuccess: 'Przetłumaczony tytuł książki: %i'
   wwctiOnSender: Translacja elementu włączona. Kliknij prawym przyciskiem myszy element
     w głównym rozdaniu, aby go przetłumaczyć!
   wwcItemTranslateLoreStart: Tłumaczenie wiedzy o elemencie docelowym...
   wwcItemTranslateLoreDone: Przetłumaczone legendy przedmiotu pomyślnie.
   wwctiOnTarget: Translacja elementu włączona dla %i.
-  wwcBookTranslationFailCatastrophic: Nie można przetłumaczyć książki docelowej.
   wwcBookTranslateTitleFail: Nie udało się przetłumaczyć tytułu książki.
   wwcChatTranslationFail: Przetłumaczenie wiadomości nie powiodło się.
   wwcInvalidTranslator: Nieprawidłowe ustawienia tłumacza. Proszę to naprawić w swoim
     config.yml lub z /wwcc, aby użyć tej wtyczki.
-  wwcNotDoneLoading: WorldwideChat wciąż inicjuje. Proszę spróbować ponownie niebawem.
   wwcConfigGUIEachTranslatorSettings: Konfiguracja %i
   wwcConfigGUIToggleButton: Przełącza %i
   wwcConfigGUIWatsonButton: Watson
@@ -286,3 +281,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Oryginalna wiadomość
   wwcConfigGUIDebugModeButton: Przełącz tryb debugowania
   wwcConfigConversationDebugModeSuccess: Pomyślnie przełączono tryb debugowania.
+  wwcConfigGUIErrorLimitButton: Zmień limit błędów usługi Translator
+  wwcConfigConversationErrorLimitSuccess: Ustawiono limit błędu pomyślnie.
+  wwcEntityTranslateStart: Tłumaczenie elementu docelowego...
+  wwcConfigGUICharacterLimitButton: Zmień limit znaków wiadomości
+  wwcConfigMessageCharLimitInvalid: Nieprawidłowy limit dla wiadomości ustawionej
+    w config.yml. Domyślnie na 255 znaków...
+  wwcConfigConversationCharacterLimitSuccess: Ustawiony limit znaków pomyślnie.
+  wwcteOnTarget: Translacja encji włączona dla %i.
+  wwcEntityTranslateDone: 'Nazwa przetłumaczonego podmiotu: %i'
+  wwcEntityTranslateNoName: Encja nie ma niestandardowej nazwy.
+  wwcConfigConversationErrorLimitInput: Bieżący limit błędów dla każdego tłumacza
+    to %i. Wpisz wartość większą niż 0, aby ustawić nową wartość, lub wpisz wartość
+    mniejszą lub równą 0, aby wrócić.
+  wwcConfigGUIGlobalRateLimitButton: Zmień globalny limit stawki
+  wwcteOnSender: Translacja encji włączona. Kliknij prawym przyciskiem myszy na podmiot,
+    aby przetłumaczyć jego nazwę!
+  wwcInGameObjectTranslationFailCatastrophic: Nie udało się przetłumaczyć obiektu
+    docelowego.
+  wwcInGameEntityTranslationFailCatastrophic: Nie udało się przetłumaczyć encji docelowej.
+  wwcConfigGUIResponseLimitButton: Zmień limit czasu odpowiedzi tłumacza
+  wwcConfigMessageCharLimitEnabled: Limit znaków dla wiadomości ustawiony na %i znaków.
+  wwcteOffTarget: Tłumaczenie encji wyłączone dla %i.
+  wwcCharLimit: Twoja wiadomość jest za długa! Upewnij się, że Twoja wiadomość jest
+    mniejsza niż %i znaków.
+  wwcConfigConversationResponseLimitInput: Bieżący limit czasu odpowiedzi dla każdego
+    tłumacza wynosi %i sekund. Wpisz wartość większą niż 0, aby ustawić nową wartość,
+    lub wpisz wartość mniejszą lub równą 0, aby wrócić.
+  wwcConfigConversationCharacterLimitInput: Bieżący limit znaków na wiadomość to %i
+    znaków. Wpisz wartość większą niż 0, aby ustawić nową wartość, lub wpisz wartość
+    mniejszą lub równą 0, aby wrócić.
+  wwcteOffSender: Tłumaczenie encji wyłączone.
+  wwctGUIEntityButton: Przełącz translację encji
+  wwcConfigConversationResponseLimitSuccess: Ustawiono limit czasu odpowiedzi pomyślnie.

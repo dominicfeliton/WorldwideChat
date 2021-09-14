@@ -62,7 +62,6 @@ Messages:
   wwctPlayerNotFound: Jucătorul %nu am găsit.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Chatul global este tradus,
     dar chatul dvs. este tradus la %o.
-  wwcConfigGUIGlobalRateLimit: Modificarea limitei globale a ratei
   wwcConfigGUIAmazonTranslateRegionButton: Schimbă regiunea Amazon
   wwcConfigConversationLangInput: 'Limba curentă a pluginului este %i. Introduceți
     un cod de limbă valid sau tastați 0 pentru a anula. Coduri de limbă valide: %o'
@@ -232,21 +231,16 @@ Messages:
   wwcItemTranslateTitleDone: Titlul articolului tradus cu succes.
   wwcGUITempItem: Afișaj element
   wwcItemTranslateStart: Traducerea obiectului țintă...
-  wwcSignTranslationFailCatastrophic: Nu a reușit să traducă semnul țintă.
-  wwcItemTranslationFailCatastrophic: Nu a reușit să traducă elementul țintă.
   wwcBookTranslateTitleSuccess: 'Titlul cărții traduse: %i'
   wwctiOnSender: Traducerea elementului activată. Faceți clic dreapta cu un element
     în mâna principală pentru a-l traduce!
   wwcItemTranslateLoreStart: Traducerea lore a obiectului țintă...
   wwcItemTranslateLoreDone: Lore articol tradus cu succes.
   wwctiOnTarget: Traducerea elementului este activată pentru %i.
-  wwcBookTranslationFailCatastrophic: Nu a reușit să traducă cartea țintă.
   wwcBookTranslateTitleFail: Nu a reușit să traducă titlul cărții.
   wwcChatTranslationFail: Nu a reușit să traducă mesajul.
   wwcInvalidTranslator: Setări de traducător nevalide. Vă rugăm să remediați acest
     lucru în config.yml sau cu /wwcc pentru a utiliza acest plugin.
-  wwcNotDoneLoading: WorldwideChat este încă inițializarea. Vă rugăm să încercați
-    din nou în curând
   wwcConfigGUIEachTranslatorSettings: Configurare %i
   wwcConfigGUIToggleButton: Comută %i
   wwcConfigGUIWatsonButton: Watson
@@ -297,3 +291,37 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Mesaj original
   wwcConfigGUIDebugModeButton: Comută modul de depanare
   wwcConfigConversationDebugModeSuccess: Comutată cu succes modul de depanare.
+  wwcConfigGUIErrorLimitButton: Modificare limita de eroare a traducătorului
+  wwcConfigConversationErrorLimitSuccess: Limita de eroare stabilită cu succes.
+  wwcEntityTranslateStart: Traduc entitatea ţintă...
+  wwcConfigGUICharacterLimitButton: Modificare limită de caractere mesaj
+  wwcConfigMessageCharLimitInvalid: Limită nevalidă per mesaj setată în config.yml.
+    În mod neîndeplinire a obligațiilor la 255 de caractere...
+  wwcConfigConversationCharacterLimitSuccess: Limita de caractere stabilită cu succes.
+  wwcteOnTarget: Traducerea entității activată pentru %i.
+  wwcEntityTranslateDone: 'Denumirea entității traduse: %i'
+  wwcEntityTranslateNoName: Entitatea nu are un nume particularizat.
+  wwcConfigConversationErrorLimitInput: Limita de eroare curentă pentru fiecare traducător
+    este %i. Tastați ceva mai mare decât 0 pentru a seta o valoare nouă sau tastați
+    ceva mai mic sau egal cu 0 pentru a reveni.
+  wwcConfigGUIGlobalRateLimitButton: Modificarea limitei globale a ratei
+  wwcteOnSender: Entitate traducere activat. Faceți clic dreapta pe o entitate pentru
+    a-i traduce numele!
+  wwcInGameObjectTranslationFailCatastrophic: Nu a reușit să traducă obiectul țintă.
+  wwcInGameEntityTranslationFailCatastrophic: Nu a reuşit să traducă entitatea ţintă.
+  wwcConfigGUIResponseLimitButton: Modificare expirare răspuns traducător
+  wwcConfigMessageCharLimitEnabled: Limita de caractere pentru fiecare mesaj setată
+    la %i caractere.
+  wwcteOffTarget: Traducerea entității dezactivată pentru %i.
+  wwcCharLimit: Mesajul tău e prea lung! Vă rugăm să vă asigurați că mesajul dvs.
+    este mai mic de %i caracterele.
+  wwcConfigConversationResponseLimitInput: Timpul de expirare a răspunsului curent
+    pentru fiecare traducător este %i secunde. Tastați ceva mai mare decât 0 pentru
+    a seta o valoare nouă sau tastați ceva mai mic sau egal cu 0 pentru a reveni.
+  wwcConfigConversationCharacterLimitInput: Limita curentă de caractere pentru fiecare
+    mesaj este %i caractere. Tastați ceva mai mare decât 0 pentru a seta o valoare
+    nouă sau tastați ceva mai mic sau egal cu 0 pentru a reveni.
+  wwcteOffSender: Entitate traducere dezactivată.
+  wwctGUIEntityButton: Comută traducerea entității
+  wwcConfigConversationResponseLimitSuccess: Timpul de expirare a răspunsului stabilit
+    cu succes

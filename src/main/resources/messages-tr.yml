@@ -58,7 +58,6 @@ Messages:
   wwctPlayerNotFound: Oyuncu %i bulunamadı.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Küresel sohbet çevriliyor,
     ancak sohbetiniz %o'ya çevriliyor.
-  wwcConfigGUIGlobalRateLimit: Küresel Fiyat Limitini Değiştir
   wwcConfigGUIAmazonTranslateRegionButton: Amazon Bölgesini Değiştir
   wwcConfigConversationLangInput: 'Geçerli eklenti dili %i. Lütfen geçerli bir dil
     kodu girin veya iptal etmek için 0 yazın. Geçerli dil kodları: %o'
@@ -212,20 +211,15 @@ Messages:
   wwcItemTranslateTitleDone: Öğe başlığı başarıyla çevrildi.
   wwcGUITempItem: Öğe Göstergesi
   wwcItemTranslateStart: Hedef öğe çevriliyor...
-  wwcSignTranslationFailCatastrophic: Hedef işareti çevrilemedi.
-  wwcItemTranslationFailCatastrophic: Hedef öğe çevrilemedi.
   wwcBookTranslateTitleSuccess: 'Çevrilen Kitap Başlığı: %i'
   wwctiOnSender: Öğe çevirisi etkin. Çevirmek için ana elinizdeki bir öğeyle sağ tıklayın!
   wwcItemTranslateLoreStart: Hedef öğenin ilmi çevriliyor...
   wwcItemTranslateLoreDone: Öğe irfan başarıyla tercüme edildi.
   wwctiOnTarget: '%i için öğe çevirisi etkinleştirildi.'
-  wwcBookTranslationFailCatastrophic: Hedef kitabın çevrilemedi.
   wwcBookTranslateTitleFail: Kitap başlığı çevrilemedi.
   wwcChatTranslationFail: Mesajınız çevrilemedi.
   wwcInvalidTranslator: Geçersiz çevirmen ayarları. Lütfen bu eklentiyi kullanmak
     için config.yml veya /wwcc ile düzeltin.
-  wwcNotDoneLoading: WorldwideChat hala başlatılıyor. Lütfen kısa bir süre sonra tekrar
-    deneyin.
   wwcConfigGUIEachTranslatorSettings: '%i Yapılandırma'
   wwcConfigGUIToggleButton: '%i'
   wwcConfigGUIWatsonButton: Watson
@@ -274,3 +268,34 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Orijinal Mesaj
   wwcConfigGUIDebugModeButton: Hata Ayıklama Modunu Aç
   wwcConfigConversationDebugModeSuccess: Hata ayıklama modu başarıyla ayarlandı.
+  wwcConfigGUIErrorLimitButton: Çevirmen Hata Sınırını Değiştir
+  wwcConfigConversationErrorLimitSuccess: Hata sınırı başarıyla ayarlandı.
+  wwcEntityTranslateStart: Hedef varlık çevriliyor...
+  wwcConfigGUICharacterLimitButton: İleti Karakter Sınırını Değiştir
+  wwcConfigMessageCharLimitInvalid: Config.yml içinde ayarlanan ileti başına geçersiz
+    sınır. 255 karaya varsayılandır...
+  wwcConfigConversationCharacterLimitSuccess: Karakter sınırı başarıyla ayarlandı.
+  wwcteOnTarget: '%i için varlık çevirisi etkinleştirildi.'
+  wwcEntityTranslateDone: 'Çevrilen Varlık Adı: %i'
+  wwcEntityTranslateNoName: Varlığın özel adı yok.
+  wwcConfigConversationErrorLimitInput: Her çevirici için geçerli hata sınırı %i.
+    Yeni bir değer ayarlamak için 0'dan büyük bir şey yazın veya geri dönmek için
+    0'dan küçük veya eşit bir şey yazın.
+  wwcConfigGUIGlobalRateLimitButton: Küresel Fiyat Limitini Değiştir
+  wwcteOnSender: Varlık çevirisi etkin. Adını çevirmek için bir varlığa sağ tıklayın!
+  wwcInGameObjectTranslationFailCatastrophic: Hedef nesne çevrilemedi.
+  wwcInGameEntityTranslationFailCatastrophic: Hedef varlık çevrilemedi.
+  wwcConfigGUIResponseLimitButton: Çevirmen Yanıt Zaman aşımı Değiştir
+  wwcConfigMessageCharLimitEnabled: İleti başına karakter sınırı %i karaktere ayarlanır.
+  wwcteOffTarget: '%i için varlık çevirisi devre dışı bırakıldı.'
+  wwcCharLimit: Mesajın çok uzun! Lütfen mesajınızın uzunluğu %i karakterden daha
+    az olduğundan emin olun.
+  wwcConfigConversationResponseLimitInput: Her çevirmen için geçerli yanıt zaman aşımı
+    %i saniyedir. Yeni bir değer ayarlamak için 0'dan büyük bir şey yazın veya geri
+    dönmek için 0'dan küçük veya eşit bir şey yazın.
+  wwcConfigConversationCharacterLimitInput: İleti başına geçerli karakter sınırı %i
+    karakterdir. Yeni bir değer ayarlamak için 0'dan büyük bir şey yazın veya geri
+    dönmek için 0'dan küçük veya eşit bir şey yazın.
+  wwcteOffSender: Varlık çevirisi devre dışı.
+  wwctGUIEntityButton: Varlık Çevirisi Aç/Kapat
+  wwcConfigConversationResponseLimitSuccess: Yanıt zaman aşımı başarıyla ayarlandı.

@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: کھلاڑی میں %مجھے نہیں ملا
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: گلوبل چیٹ کا ترجمہ کیا
     جا رہا ہے، لیکن آپ کی بات کا ترجمہ %o میں کیا جا رہا ہے۔
-  wwcConfigGUIGlobalRateLimit: عالمی شرح کی حد تبدیل کریں
   wwcConfigGUIAmazonTranslateRegionButton: ایمیزون علاقہ تبدیل کریں
   wwcConfigConversationLangInput: 'موجودہ پلگ ان زبان %i ہے برائے مہربانی ایک درست
     زبان کوڈ درج کریں، یا منسوخ کرنے کیلئے 0 ٹائپ کریں۔ درست زبان کوڈ: %o'
@@ -221,21 +220,16 @@ Messages:
   wwcItemTranslateTitleDone: ترجمہ کردہ آئٹم عنوان کامیابی سے.
   wwcGUITempItem: آئٹم نمائش
   wwcItemTranslateStart: ہدف شے کا ترجمہ...
-  wwcSignTranslationFailCatastrophic: ہدف کے نشان کا ترجمہ کرنے میں ناکام.
-  wwcItemTranslationFailCatastrophic: ہدف آئٹم کا ترجمہ کرنے میں ناکام
   wwcBookTranslateTitleSuccess: 'ترجمہ شدہ کتاب کا عنوان: %i'
   wwctiOnSender: آئٹم ترجمہ فعال. ترجمہ کرنے کے لئے اپنے اہم ہاتھ میں ایک آئٹم کے
     ساتھ دائیں کلک کریں!
   wwcItemTranslateLoreStart: ہدف شے کی تکرار کا ترجمہ...
   wwcItemTranslateLoreDone: ترجمہ شدہ آئٹم کامیابی سے بھی۔
   wwctiOnTarget: آئٹم ترجمہ %i کے لئے فعال.
-  wwcBookTranslationFailCatastrophic: ہدف کتاب کا ترجمہ کرنے میں ناکام رہا۔
   wwcBookTranslateTitleFail: کتاب کے عنوان کا ترجمہ کرنے میں ناکام رہے۔
   wwcChatTranslationFail: آپ کے پیغام کا ترجمہ کرنے میں ناکام رہا۔
   wwcInvalidTranslator: غلط مترجم کی ترتیبات. براہ کرم اس پلگ ان کو استعمال کرنے کے
     لئے اپنے config.yml میں یا /wwcc کے ساتھ ٹھیک کریں.
-  wwcNotDoneLoading: WorldwideChat اب بھی شروع کر رہا ہے. برائے مہربانی جلد ہی دوبارہ
-    کوشش کریں۔
   wwcConfigGUIEachTranslatorSettings: '%i ترتیب'
   wwcConfigGUIToggleButton: '%i ٹوگل کریں'
   wwcConfigGUIWatsonButton: واٹسن
@@ -285,3 +279,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: اصل پیغام
   wwcConfigGUIDebugModeButton: ڈیبگ موڈ کو ٹگل کریں
   wwcConfigConversationDebugModeSuccess: ڈیبگ موڈ کو کامیابی سے ٹوگل کیا گیا ہے۔
+  wwcConfigGUIErrorLimitButton: مترجم غلطی کی حد تبدیل کریں
+  wwcConfigConversationErrorLimitSuccess: غلطی کی حد کامیابی کے ساتھ سیٹ.
+  wwcEntityTranslateStart: ہدف ادارے کا ترجمہ...
+  wwcConfigGUICharacterLimitButton: پیغام کی حرف کی حد تبدیل کریں
+  wwcConfigMessageCharLimitInvalid: config.yml میں سیٹ کردہ پیغام فی غلط حد. 255 حروف
+    کے لئے ناقص...
+  wwcConfigConversationCharacterLimitSuccess: کریکٹر کی حد کامیابی کا سیٹ.
+  wwcteOnTarget: ہستی ترجمہ %i کے لئے فعال.
+  wwcEntityTranslateDone: 'ترجمہ شدہ ادارے کا نام: %i'
+  wwcEntityTranslateNoName: ادارے کا کوئی حسب ضرورت نام نہیں ہے۔
+  wwcConfigConversationErrorLimitInput: ہر مترجم کے لیے موجودہ غلطی کی حد %i ہے نئی
+    قدر مقرر کرنے کے لیے 0 سے زیادہ کسی چیز کو ٹائپ کریں، یا واپس جانے کے لیے 0 سے
+    کم یا اس کے برابر کسی چیز کو ٹائپ کریں۔
+  wwcConfigGUIGlobalRateLimitButton: عالمی شرح کی حد تبدیل کریں
+  wwcteOnSender: ادارے ترجمہ فعال. اس کے نام کا ترجمہ کرنے کے لئے ایک ادارے پر دائیں
+    کلک کریں!
+  wwcInGameObjectTranslationFailCatastrophic: ہدف اعتراض کا ترجمہ کرنے میں ناکام
+  wwcInGameEntityTranslationFailCatastrophic: ہدف ادارے کا ترجمہ کرنے میں ناکام.
+  wwcConfigGUIResponseLimitButton: ترجمہ جواب ٹائم آؤٹ تبدیل کریں
+  wwcConfigMessageCharLimitEnabled: پیغام فی کریکٹر کی حد %i حروف پر سیٹ کی گئی ہے۔
+  wwcteOffTarget: ہستی ترجمہ %i کے لئے غیر فعال.
+  wwcCharLimit: آپ کا پیغام بہت طویل ہے! براہ کرم اس بات کو یقینی بنائیں کہ آپ کا
+    پیغام %i حروف سے بھی کم ہے۔
+  wwcConfigConversationResponseLimitInput: ہر مترجم کے لیے موجودہ ردعمل کا ٹائم آؤٹ
+    %i سیکنڈ ہے۔ 0 سے زیادہ کچھ بھی ٹائپ کرنے کے لئے ایک نئی قدر مقرر کریں، یا واپس
+    جانے کے لئے 0 سے کم یا برابر کچھ بھی ٹائپ کریں.
+  wwcConfigConversationCharacterLimitInput: فی پیغام موجودہ حرف کی حد %i حروف ہے۔
+    0 سے زیادہ کچھ بھی ٹائپ کرنے کے لئے ایک نئی قدر مقرر کریں، یا واپس جانے کے لئے
+    0 سے کم یا برابر کچھ بھی ٹائپ کریں.
+  wwcteOffSender: ادارہ ترجمہ معذور.
+  wwctGUIEntityButton: انسٹی ٹیٹی ترجمہ ٹوگل کریں
+  wwcConfigConversationResponseLimitSuccess: ردعمل کا ٹائم آؤٹ کامیابی سے سیٹ

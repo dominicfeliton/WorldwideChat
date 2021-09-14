@@ -56,7 +56,6 @@ Messages:
   wwctPlayerNotFound: שחקן %לא מצאתי.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: צ'אט גלובלי מתורגם,
     אבל הצ'אט שלך מתורגם אל %o.
-  wwcConfigGUIGlobalRateLimit: שינוי מגבלת קצב גלובלי
   wwcConfigGUIAmazonTranslateRegionButton: שינוי אזור אמזון
   wwcConfigConversationLangInput: 'שפת התוסף הנוכחית היא %i. הזן קוד שפה חוקי, או
     הקלד 0 כדי לבטל. קודי שפה תקפים: %o'
@@ -199,20 +198,16 @@ Messages:
   wwcItemTranslateTitleDone: כותרת פריט מתורגמת בהצלחה.
   wwcGUITempItem: תצוגת פריט
   wwcItemTranslateStart: מתרגם פריט יעד...
-  wwcSignTranslationFailCatastrophic: לא הצליח לתרגם סימן יעד.
-  wwcItemTranslationFailCatastrophic: לא הצליח לתרגם פריט יעד.
   wwcBookTranslateTitleSuccess: 'כותרת הספר מתורגמת: %i'
   wwctiOnSender: תרגום פריט מופעל. לחץ לחיצה ימנית עם פריט ביד הראשית שלך כדי לתרגם
     אותו!
   wwcItemTranslateLoreStart: תרגום הפולקלור של פריט היעד...
   wwcItemTranslateLoreDone: תורגם פריט תורגם בהצלחה.
   wwctiOnTarget: תרגום פריט מופעל עבור %i.
-  wwcBookTranslationFailCatastrophic: לא הצליח לתרגם את ספר היעד.
   wwcBookTranslateTitleFail: לא הצליח לתרגם את כותרת הספר.
   wwcChatTranslationFail: לא הצליח לתרגם את ההודעה שלך.
   wwcInvalidTranslator: הגדרות מתרגם לא חוקיות. אנא תקן זאת ב- config.yml שלך או עם
     /wwcc כדי להשתמש בתוסף זה.
-  wwcNotDoneLoading: WorldwideChat עדיין מאתחל. אנא נסה שוב בקרוב.
   wwcConfigGUIEachTranslatorSettings: '%i תצורה'
   wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: ווטסון
@@ -257,3 +252,33 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: הודעה מקורית
   wwcConfigGUIDebugModeButton: החלף מצב איתור באגים
   wwcConfigConversationDebugModeSuccess: מצב איתור באגים בהצלחה.
+  wwcConfigGUIErrorLimitButton: שינוי מגבלת שגיאה של מתרגם
+  wwcConfigConversationErrorLimitSuccess: מגבלת שגיאה מוגדרת בהצלחה.
+  wwcEntityTranslateStart: מתרגם ישות יעד...
+  wwcConfigGUICharacterLimitButton: שינוי מגבלת תו של הודעה
+  wwcConfigMessageCharLimitInvalid: מגבלה לא חוקית לכל הודעה מוגדרת ב- config.yml.
+    ברירת מחדל ל 255 תווים...
+  wwcConfigConversationCharacterLimitSuccess: מגבלת תווים מוגדרת בהצלחה.
+  wwcteOnTarget: תרגום היישות זמין עבור %i.
+  wwcEntityTranslateDone: 'שם ישות מתורגם: %i'
+  wwcEntityTranslateNoName: ישות אין שם מותאם אישית.
+  wwcConfigConversationErrorLimitInput: מגבלת השגיאה הנוכחית עבור כל מתרגם הוא %i.
+    הקלד דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד כל דבר פחות או שווה ל- 0 כדי לחזור
+    אחורה.
+  wwcConfigGUIGlobalRateLimitButton: שינוי מגבלת קצב גלובלי
+  wwcteOnSender: תרגום הישות מופעל. לחץ לחיצה ימנית על ישות כדי לתרגם את שמה!
+  wwcInGameObjectTranslationFailCatastrophic: לא הצליח לתרגם אובייקט יעד.
+  wwcInGameEntityTranslationFailCatastrophic: לא הצליח לתרגם ישות היעד.
+  wwcConfigGUIResponseLimitButton: שנה את הזמן הקצוב לתגובת
+  wwcConfigMessageCharLimitEnabled: מגבלת תווים לכל הודעה שהוגדרה לתווי %i.
+  wwcteOffTarget: תרגום היישות מושבת עבור %i.
+  wwcCharLimit: המסר שלך ארוך מדי! אנא ודא שההודעה שלך היא פחות מ- %i תווים באורך.
+  wwcConfigConversationResponseLimitInput: הזמן הקצוב לתגובה הנוכחי עבור כל מתרגם
+    הוא %i שניות. הקלד כל דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד כל דבר קטן מ-
+    0 או שווה ל- 0 כדי לחזור אחורה.
+  wwcConfigConversationCharacterLimitInput: מגבלת התווים הנוכחית לכל הודעה היא תווי
+    %i. הקלד כל דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד כל דבר קטן מ- 0 או שווה
+    ל- 0 כדי לחזור אחורה.
+  wwcteOffSender: תרגום הישות מושבת.
+  wwctGUIEntityButton: החלפת תרגום ישות
+  wwcConfigConversationResponseLimitSuccess: זמן קצוב לתגובה נקבע בהצלחה.

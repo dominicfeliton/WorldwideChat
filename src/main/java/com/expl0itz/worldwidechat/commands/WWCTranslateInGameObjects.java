@@ -70,6 +70,12 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 					} else {
 						badPermsMessage("worldwidechat.wwcts.otherplayers");
 					}
+				} else if (this instanceof WWCTranslateEntity) {
+					if (sender.hasPermission("worldwidechat.wwcte.otherplayers")) {
+						return toggleStatus(Bukkit.getPlayerExact(args[0]));
+					} else {
+						badPermsMessage("worldwidechat.wwcte.otherplayers");
+					}
 				}
 			} else {
 				// If target is not a string or active translator:
@@ -251,6 +257,61 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 							.build();
 					CommonDefinitions.sendMessage(inPlayer, toggleTranslationTarget);
 					CommonDefinitions.sendDebugMessage("Item translation disabled for " + inPlayer.getName() + ".");
+				}
+			}
+			return true;
+		} else if (this instanceof WWCTranslateEntity) {
+			/* Toggle entity translation for sender! */
+			if (inPlayer.getName().equalsIgnoreCase(sender.getName())) {
+				currentTranslator.setTranslatingEntity(!currentTranslator.getTranslatingEntity());
+				if (currentTranslator.getTranslatingEntity()) {
+					final TextComponent toggleTranslation = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwcteOnSender"))
+									.color(NamedTextColor.LIGHT_PURPLE))
+							.build();
+					CommonDefinitions.sendMessage(inPlayer, toggleTranslation);
+					CommonDefinitions.sendDebugMessage("Entity translation enabled for " + inPlayer.getName() + ".");
+				} else {
+					final TextComponent toggleTranslation = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwcteOffSender"))
+									.color(NamedTextColor.LIGHT_PURPLE))
+							.build();
+					CommonDefinitions.sendMessage(inPlayer, toggleTranslation);
+					CommonDefinitions.sendDebugMessage("Entity translation disabled for " + inPlayer.getName() + ".");
+				}
+			/* Toggle entity translation for target! */
+			} else {
+				currentTranslator.setTranslatingEntity(!currentTranslator.getTranslatingEntity());
+				if (currentTranslator.getTranslatingEntity()) {
+					final TextComponent toggleTranslation = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwcteOnTarget", new String[] {args[0]}))
+									.color(NamedTextColor.LIGHT_PURPLE))
+							.build();
+					CommonDefinitions.sendMessage((Player)sender, toggleTranslation);
+					final TextComponent toggleTranslationTarget = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwcteOnSender"))
+									.color(NamedTextColor.LIGHT_PURPLE))
+							.build();
+					CommonDefinitions.sendMessage(inPlayer, toggleTranslationTarget);
+					CommonDefinitions.sendDebugMessage("Entity translation enabled for " + inPlayer.getName() + ".");
+				} else {
+					final TextComponent toggleTranslation = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwcteOffTarget", new String[] {args[0]}))
+									.color(NamedTextColor.LIGHT_PURPLE))
+							.build();
+					CommonDefinitions.sendMessage((Player)sender, toggleTranslation);
+					final TextComponent toggleTranslationTarget = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwcteOffSender"))
+									.color(NamedTextColor.LIGHT_PURPLE))
+							.build();
+					CommonDefinitions.sendMessage(inPlayer, toggleTranslationTarget);
+					CommonDefinitions.sendDebugMessage("Entity translation disabled for " + inPlayer.getName() + ".");
 				}
 			}
 			return true;

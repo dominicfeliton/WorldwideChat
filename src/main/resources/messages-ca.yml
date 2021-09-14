@@ -61,7 +61,6 @@ Messages:
   wwctPlayerNotFound: Jugador %No he trobat.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: El xat global s'està
     traduint, però el xat s'està traduint a %o.
-  wwcConfigGUIGlobalRateLimit: Canvi Límit de Tarifa Global
   wwcConfigGUIAmazonTranslateRegionButton: Canviar la regió d'Amazon
   wwcConfigConversationLangInput: 'L''idioma actual del connector és %i Si us plau,
     introduïu un codi d''idioma vàlid, o escriviu 0 per cancel·lar. Codis d''idioma
@@ -230,21 +229,16 @@ Messages:
   wwcItemTranslateTitleDone: Títol de l'article traduït amb èxit.
   wwcGUITempItem: Pantalla de l'article
   wwcItemTranslateStart: La traducció de l'element objectiu...
-  wwcSignTranslationFailCatastrophic: No s'ha pogut traduir el signe de destinació.
-  wwcItemTranslationFailCatastrophic: No s'ha pogut traduir l'element de destinació.
   wwcBookTranslateTitleSuccess: 'Títol del llibre traduït: %i'
   wwctiOnSender: S'ha habilitat la traducció d'elements. Feu clic amb el botó dret
     del ratolí amb un element a la vostra mà principal per traduir-lo!
   wwcItemTranslateLoreStart: Traduint la tradició de l'objecte objectiu...
   wwcItemTranslateLoreDone: Lore article traduït amb èxit.
   wwctiOnTarget: La traducció d'elements activada per a %i.
-  wwcBookTranslationFailCatastrophic: No s'ha pogut traduir el llibre de destinació.
   wwcBookTranslateTitleFail: No s'ha pogut traduir el títol del llibre.
   wwcChatTranslationFail: No s'ha pogut traduir el missatge.
   wwcInvalidTranslator: Configuració del traductor no vàlid. Si us plau, corregiu
     això a la vostra config.yml o amb /wwcc per utilitzar aquest connector.
-  wwcNotDoneLoading: WorldwideChat encara s'està inicialitzant. Torneu-ho a provar
-    en breu.
   wwcConfigGUIEachTranslatorSettings: '%i Configuració'
   wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
@@ -295,3 +289,37 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Missatge original
   wwcConfigGUIDebugModeButton: Commuta el mode de depuració
   wwcConfigConversationDebugModeSuccess: Amb èxit canviar el mode de depuració.
+  wwcConfigGUIErrorLimitButton: Canviar el límit d'error del traductor
+  wwcConfigConversationErrorLimitSuccess: Límit d'error establert correctament.
+  wwcEntityTranslateStart: Traduint entitat objectiu...
+  wwcConfigGUICharacterLimitButton: Canviar el límit de caràcters del missatge
+  wwcConfigMessageCharLimitInvalid: Límit no vàlid per missatge establert a config.yml.
+    Per defecte, 255 caràcters...
+  wwcConfigConversationCharacterLimitSuccess: Límit de caràcters establert correctament.
+  wwcteOnTarget: S'ha habilitat la traducció d'entitats per %i.
+  wwcEntityTranslateDone: 'Nom de l''entitat traduïda: %i'
+  wwcEntityTranslateNoName: Entitat no té un nom personalitzat.
+  wwcConfigConversationErrorLimitInput: El límit d'error actual per a cada traductor
+    és %i Escriviu qualsevol cosa més gran que 0 per establir un valor nou, o escriviu
+    qualsevol cosa menys que o igual a 0 per tornar enrere.
+  wwcConfigGUIGlobalRateLimitButton: Canvi Límit de Tarifa Global
+  wwcteOnSender: S'ha habilitat la traducció d'entitat. Feu clic amb el botó dret
+    sobre una entitat per traduir el seu nom!
+  wwcInGameObjectTranslationFailCatastrophic: No s'ha pogut traduir l'objecte de destinació.
+  wwcInGameEntityTranslationFailCatastrophic: No s'ha pogut traduir l'entitat de destinació.
+  wwcConfigGUIResponseLimitButton: Canviar el temps d'espera de resposta del traductor
+  wwcConfigMessageCharLimitEnabled: Límit de caràcters per missatge establert a %i
+    caràcters.
+  wwcteOffTarget: Traducció d'entitats desactivada per %i.
+  wwcCharLimit: El teu missatge és massa llarg! Si us plau, assegureu-vos que el missatge
+    té menys de %i caràcters de longitud.
+  wwcConfigConversationResponseLimitInput: El temps d'espera de resposta actual per
+    a cada traductor és %i segons. Escriviu qualsevol cosa més gran que 0 per establir
+    un valor nou, o escriviu res menys que o igual a 0 per tornar enrere.
+  wwcConfigConversationCharacterLimitInput: El límit de caràcters actual per missatge
+    és %i caràcters. Escriviu qualsevol cosa més gran que 0 per establir un valor
+    nou, o escriviu res menys que o igual a 0 per tornar enrere.
+  wwcteOffSender: Entitat de traducció desactivada.
+  wwctGUIEntityButton: Commuta la traducció de l'entitat
+  wwcConfigConversationResponseLimitSuccess: Temps d'espera de resposta establert
+    amb èxit.

@@ -30,5 +30,6 @@ Translator:
   amazonRegion: 
   translatorCacheSize: 100
   rateLimit: 0
+  messageCharLimit: 255
   errorLimit: 5
   maxResponseTime: 7

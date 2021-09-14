@@ -54,7 +54,6 @@ Messages:
   wwctPlayerNotFound: ไม่พบผู้เล่น %ฉันไม่พบ
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: แชททั่วโลกกำลังถูกแปล
     แต่แชทของคุณกำลังถูกแปลเป็น %o
-  wwcConfigGUIGlobalRateLimit: เปลี่ยนวงเงินอัตราทั่วโลก
   wwcConfigGUIAmazonTranslateRegionButton: เปลี่ยนภูมิภาคอเมซอน
   wwcConfigConversationLangInput: 'ภาษาปลั๊กอินปัจจุบันคือ %i โปรดป้อนรหัสภาษาที่ถูกต้อง
     หรือพิมพ์ 0 เพื่อยกเลิกรหัสภาษาที่ถูกต้อง: %o'
@@ -197,19 +196,15 @@ Messages:
   wwcItemTranslateTitleDone: ชื่อรายการที่แปลเรียบร้อยแล้ว
   wwcGUITempItem: แสดงรายการ
   wwcItemTranslateStart: แปลรายการเป้าหมาย...
-  wwcSignTranslationFailCatastrophic: ล้มเหลวในการแปลเครื่องหมายเป้าหมาย
-  wwcItemTranslationFailCatastrophic: ล้มเหลวในการแปลรายการเป้าหมาย
   wwcBookTranslateTitleSuccess: 'ชื่อหนังสือที่แปลแล้ว: %i'
   wwctiOnSender: เปิดใช้งานการแปลรายการคลิกขวาด้วยรายการในมือหลักของคุณเพื่อแปลมัน!
   wwcItemTranslateLoreStart: แปลตำนานของรายการเป้าหมาย...
   wwcItemTranslateLoreDone: แปลตำนานรายการประสบความสำเร็จ.
   wwctiOnTarget: เปิดใช้งานการแปลรายการสำหรับ %i
-  wwcBookTranslationFailCatastrophic: ล้มเหลวในการแปลหนังสือเป้าหมาย
   wwcBookTranslateTitleFail: ล้มเหลวในการแปลชื่อหนังสือ
   wwcChatTranslationFail: ล้มเหลวในการแปลข้อความของคุณ
   wwcInvalidTranslator: การตั้งค่าตัวแปลไม่ถูกต้องโปรดแก้ไขปัญหานี้ใน config.yml ของคุณหรือกับ
     /wwcc เพื่อใช้ปลั๊กอินนี้
-  wwcNotDoneLoading: WorldwideChat ยังคงเริ่มต้นอยู่โปรดลองใหม่อีกครั้งในไม่ช้า
   wwcConfigGUIEachTranslatorSettings: การตั้งค่าคอนฟิก %i
   wwcConfigGUIToggleButton: เลื่อน %i
   wwcConfigGUIWatsonButton: วัตสัน
@@ -252,3 +247,34 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: ข้อความต้นฉบับ
   wwcConfigGUIDebugModeButton: สลับโหมดดีบัก
   wwcConfigConversationDebugModeSuccess: ประสบความสำเร็จสลับโหมดการดีบัก
+  wwcConfigGUIErrorLimitButton: เปลี่ยนขีดจำกัดข้อผิดพลาดในการแปล
+  wwcConfigConversationErrorLimitSuccess: ตั้งค่าขีดจำกัดข้อผิดพลาดเรียบร้อยแล้ว
+  wwcEntityTranslateStart: แปลเอนทิตีเป้าหมาย...
+  wwcConfigGUICharacterLimitButton: เปลี่ยนขีดจำกัดอักขระของข้อความ
+  wwcConfigMessageCharLimitInvalid: ขีดจำกัดไม่ถูกต้องต่อข้อความที่กำหนดไว้ใน config.ymlเริ่มต้นที่
+    255 ตัวอักษร...
+  wwcConfigConversationCharacterLimitSuccess: ตั้งค่าขีดจำกัดอักขระเรียบร้อยแล้ว
+  wwcteOnTarget: เปิดใช้งานการแปลเอนทิตีสำหรับ %i
+  wwcEntityTranslateDone: 'ชื่อเอนทิตีที่แปลแล้ว: %'
+  wwcEntityTranslateNoName: เอนทิตีไม่มีชื่อที่กำหนดเอง
+  wwcConfigConversationErrorLimitInput: ขีด จำกัด ข้อผิดพลาดปัจจุบันสำหรับนักแปลแต่ละคนเป็น
+    %i พิมพ์อะไรที่มากกว่า 0 เพื่อตั้งค่าใหม่หรือพิมพ์อะไรที่น้อยกว่าหรือเท่ากับ 0
+    เพื่อย้อนกลับ
+  wwcConfigGUIGlobalRateLimitButton: เปลี่ยนวงเงินอัตราทั่วโลก
+  wwcteOnSender: เปิดใช้งานการแปลเอนทิตีคลิกขวาที่นิติบุคคลเพื่อแปลชื่อ!
+  wwcInGameObjectTranslationFailCatastrophic: ล้มเหลวในการแปลวัตถุเป้าหมาย
+  wwcInGameEntityTranslationFailCatastrophic: ล้มเหลวในการแปลเอนทิตีเป้าหมาย
+  wwcConfigGUIResponseLimitButton: เปลี่ยนหมดเวลาการตอบสนองของนักแปล
+  wwcConfigMessageCharLimitEnabled: ขีดจำกัดอักขระต่อข้อความที่กำหนดเป็นอักขระ %i
+  wwcteOffTarget: การแปลเอนทิตีปิดใช้งานสำหรับ %i
+  wwcCharLimit: ข้อความของคุณยาวเกินไป!โปรดตรวจสอบให้แน่ใจว่าข้อความของคุณมีความยาวน้อยกว่า
+    %i
+  wwcConfigConversationResponseLimitInput: หมดเวลาการตอบสนองในปัจจุบันสำหรับนักแปลแต่ละคนเป็น
+    %i วินาทีพิมพ์อะไรที่มากกว่า 0 เพื่อตั้งค่าใหม่หรือพิมพ์อะไรที่น้อยกว่าหรือเท่ากับ
+    0 เพื่อย้อนกลับ
+  wwcConfigConversationCharacterLimitInput: ขีด จำกัด ตัวอักษรปัจจุบันต่อข้อความเป็นตัวละคร
+    %iพิมพ์อะไรที่มากกว่า 0 เพื่อตั้งค่าใหม่หรือพิมพ์อะไรที่น้อยกว่าหรือเท่ากับ 0
+    เพื่อย้อนกลับ
+  wwcteOffSender: การแปลนิติบุคคลถูกปิดใช้งาน
+  wwctGUIEntityButton: สลับการแปลเอนทิตี
+  wwcConfigConversationResponseLimitSuccess: หมดเวลาการตอบสนองการตั้งค่าเรียบร้อยแล้ว

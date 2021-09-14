@@ -48,6 +48,8 @@ public class WorldwideChatTests {
 		playerMock.addAttachment(plugin, "worldwidechat.wwcts.otherplayers", true);
 		playerMock.addAttachment(plugin, "worldwidechat.wwcti", true);
 		playerMock.addAttachment(plugin, "worldwidechat.wwcti.otherplayers", true);
+		playerMock.addAttachment(plugin, "worldwidechat.wwcte", true);
+		playerMock.addAttachment(plugin, "worldwidechat.wwcte.otherplayers", true);
 		playerMock.addAttachment(plugin, "worldwidechat.wwctrl", true);
 		playerMock.addAttachment(plugin, "worldwidechat.wwcs", true);
 		secondPlayerMock.addAttachment(plugin, "worldwidechat.wwct", true);
@@ -67,7 +69,7 @@ public class WorldwideChatTests {
 	}
 	
 	public static void reloadWWC() {
-		plugin.cancelBackgroundTasks();
+		plugin.cancelBackgroundTasks(false);
 		plugin.onEnable();
 	}
 
@@ -110,6 +112,12 @@ public class WorldwideChatTests {
 		testPlayerCommands.testItemTranslateCommandPlayerOther(false);
 		testPlayerCommands.testItemTranslateCommandPlayerOtherButSamePlayer(true);
 		testPlayerCommands.testItemTranslateCommandPlayerOtherButSamePlayer(false);
+		testPlayerCommands.testEntityTranslateCommandPlayer(true);
+		testPlayerCommands.testEntityTranslateCommandPlayer(false);
+		testPlayerCommands.testEntityTranslateCommandPlayerOther(true);
+		testPlayerCommands.testEntityTranslateCommandPlayerOther(false);
+		testPlayerCommands.testEntityTranslateCommandPlayerOtherButSamePlayer(true);
+		testPlayerCommands.testEntityTranslateCommandPlayerOtherButSamePlayer(false);
 		testPlayerCommands.testRateLimitTranslateCommandPlayer(true);
 		testPlayerCommands.testRateLimitTranslateCommandPlayer(false);
 		testPlayerCommands.testRateLimitTranslateCommandPlayerOther(true);

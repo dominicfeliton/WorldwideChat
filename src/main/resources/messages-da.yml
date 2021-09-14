@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: Spilleren % jeg blev ikke fundet.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat bliver oversat,
     men din chat bliver oversat til %o.
-  wwcConfigGUIGlobalRateLimit: Ændre global kursgrænse
   wwcConfigGUIAmazonTranslateRegionButton: Ændre Amazon-regionen
   wwcConfigConversationLangInput: 'Det aktuelle udvidelsessprog er %i. Indtast en
     gyldig sprogkode, eller skriv 0 for at annullere. Gyldige sprogkoder: %o'
@@ -219,21 +218,16 @@ Messages:
   wwcItemTranslateTitleDone: Oversat vare titel med succes.
   wwcGUITempItem: Visning af element
   wwcItemTranslateStart: Oversætter målpunkt...
-  wwcSignTranslationFailCatastrophic: Kunne ikke oversætte måltegn.
-  wwcItemTranslationFailCatastrophic: Det lykkedes ikke at oversætte målelementet.
   wwcBookTranslateTitleSuccess: 'Oversat bogs titel: %i'
   wwctiOnSender: Oversættelse af elementer aktiveret. Højreklik med et element i din
     hovedhånd for at oversætte det!
   wwcItemTranslateLoreStart: Oversætter lore af målpunkt...
   wwcItemTranslateLoreDone: Oversat vare lore med succes.
   wwctiOnTarget: Oversættelse af elementer aktiveret for %i.
-  wwcBookTranslationFailCatastrophic: Kunne ikke oversætte målbogen.
   wwcBookTranslateTitleFail: Kunne ikke oversætte bogens titel.
   wwcChatTranslationFail: Kunne ikke oversætte din besked.
   wwcInvalidTranslator: Ugyldige indstillinger for oversætter. Løs venligst dette
     i din config.yml eller med /wwcc for at bruge dette plugin.
-  wwcNotDoneLoading: WorldwideChat initialiserer stadig. Prøv venligst igen om kort
-    tid.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'
   wwcConfigGUIToggleButton: Skift til %i
   wwcConfigGUIWatsonButton: Watson
@@ -285,3 +279,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Oprindelig meddelelse
   wwcConfigGUIDebugModeButton: Slå fejlfindingstilstand til/
   wwcConfigConversationDebugModeSuccess: Fejlsøgningstilstand er slået til.
+  wwcConfigGUIErrorLimitButton: Ændring af oversætterfejlgrænse
+  wwcConfigConversationErrorLimitSuccess: Fejlgrænse indstillet korrekt.
+  wwcEntityTranslateStart: Oversætter mål- enhed...
+  wwcConfigGUICharacterLimitButton: Begræns grænse for tegn på skift
+  wwcConfigMessageCharLimitInvalid: Ugyldig grænse pr. meddelelse angivet i config.yml.
+    Default til 255 tegn...
+  wwcConfigConversationCharacterLimitSuccess: Tegngrænse sat med succes.
+  wwcteOnTarget: Enhedsoversættelse aktiveret for %i.
+  wwcEntityTranslateDone: 'Navn på oversat enhed: %i'
+  wwcEntityTranslateNoName: Objekt har ikke et brugerdefineret navn.
+  wwcConfigConversationErrorLimitInput: Den aktuelle fejlgrænse for hver oversætter
+    er %i. Skriv noget større end 0 for at sætte en ny værdi, eller skriv noget mindre
+    end eller lig med 0 for at gå tilbage.
+  wwcConfigGUIGlobalRateLimitButton: Ændre global kursgrænse
+  wwcteOnSender: Oversættelse af enhed aktiveret. Højreklik på en enhed for at oversætte
+    dens navn!
+  wwcInGameObjectTranslationFailCatastrophic: Det lykkedes ikke at oversætte målobjektet.
+  wwcInGameEntityTranslationFailCatastrophic: Det lykkedes ikke at oversætte målobjektet.
+  wwcConfigGUIResponseLimitButton: Skift timeout for oversætteren
+  wwcConfigMessageCharLimitEnabled: Tegngrænse pr. meddelelse sat til %i tegn.
+  wwcteOffTarget: Oversættelse af enheder deaktiveret for %i.
+  wwcCharLimit: Din besked er for lang! Sørg for, at din besked er mindre end %i tegn
+    i længden.
+  wwcConfigConversationResponseLimitInput: Den aktuelle svartimeout for hver oversætter
+    er %i sekunder. Skriv noget større end 0 for at angive en ny værdi, eller skriv
+    noget mindre end eller lig med 0 for at gå tilbage.
+  wwcConfigConversationCharacterLimitInput: Den aktuelle tegngrænse pr. meddelelse
+    er %i tegn. Skriv noget større end 0 for at angive en ny værdi, eller skriv noget
+    mindre end eller lig med 0 for at gå tilbage.
+  wwcteOffSender: Oversættelse af enheder deaktiveret.
+  wwctGUIEntityButton: Skift objektoversættelse til/ fra
+  wwcConfigConversationResponseLimitSuccess: Timeout for svartid er indstillet.

@@ -15,6 +15,7 @@ public class ActiveTranslator {
 	private boolean translatingBook = false;
 	private boolean translatingSign = false;
 	private boolean translatingItem = false;
+	private boolean translatingEntity = false;
 
 	public ActiveTranslator(String uuid, String langIn, String langOut) {
 		playerUUID = uuid;
@@ -54,6 +55,10 @@ public class ActiveTranslator {
 	public void setTranslatingItem(boolean i) {
 		translatingItem = i;
 	}
+	
+	public void setTranslatingEntity(boolean i) {
+		translatingEntity = i;
+	}
 
 	public void setRateLimitPreviousTime(Instant i) {
 		rateLimitPreviousTime = i.toString();
@@ -90,6 +95,10 @@ public class ActiveTranslator {
 
 	public boolean getTranslatingItem() {
 		return translatingItem;
+	}
+	
+	public boolean getTranslatingEntity() {
+		return translatingEntity;
 	}
 
 	public String getRateLimitPreviousTime() {

@@ -61,7 +61,6 @@ Messages:
   wwctPlayerNotFound: Pemain %i tidak ditemukan.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat sedang diterjemahkan,
     tetapi chat Anda sedang diterjemahkan ke %o.
-  wwcConfigGUIGlobalRateLimit: Ubah Batas Tingkat Global
   wwcConfigGUIAmazonTranslateRegionButton: Ubah Wilayah Amazon
   wwcConfigConversationLangInput: 'Bahasa plugin saat ini adalah %i. Harap masukkan
     kode bahasa yang valid, atau ketik 0 untuk dibatalkan. Kode bahasa yang valid:
@@ -227,21 +226,16 @@ Messages:
   wwcItemTranslateTitleDone: Judul butir yang diterjemahkan berhasil.
   wwcGUITempItem: Tampilan Butir
   wwcItemTranslateStart: Menerjemahkan butir target...
-  wwcSignTranslationFailCatastrophic: Gagal menerjemahkan tanda target.
-  wwcItemTranslationFailCatastrophic: Gagal menerjemahkan butir target.
   wwcBookTranslateTitleSuccess: 'Judul Buku Diterjemahkan: %i'
   wwctiOnSender: Terjemahan butir diaktifkan. Klik kanan dengan item di tangan utama
     Anda untuk menerjemahkannya!
   wwcItemTranslateLoreStart: Menerjemahkan pengetahuan dari item target...
   wwcItemTranslateLoreDone: Diterjemahkan item pengetahuan berhasil.
   wwctiOnTarget: Terjemahan butir diaktifkan untuk %i.
-  wwcBookTranslationFailCatastrophic: Gagal menerjemahkan buku target.
   wwcBookTranslateTitleFail: Gagal menerjemahkan judul buku.
   wwcChatTranslationFail: Gagal menerjemahkan pesan Anda.
   wwcInvalidTranslator: Pengaturan penerjemah tidak valid. Silakan perbaiki ini di
     config.ymlmu atau dengan/wwcc untuk menggunakan plugin ini.
-  wwcNotDoneLoading: WorldWidChat masih menginisialisasi. Silakan coba lagi sebentar
-    lagi.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurasi'
   wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
@@ -291,3 +285,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Pesan Asli
   wwcConfigGUIDebugModeButton: Toggle Mode Debug
   wwcConfigConversationDebugModeSuccess: Berhasil beralih mode debug.
+  wwcConfigGUIErrorLimitButton: Ubah Batas Galat Penerjemah
+  wwcConfigConversationErrorLimitSuccess: Batas kesalahan ditetapkan berhasil.
+  wwcEntityTranslateStart: Menerjemahkan entitas target...
+  wwcConfigGUICharacterLimitButton: Ubah Batas Karakter Pesan
+  wwcConfigMessageCharLimitInvalid: Batas per pesan yang ditetapkan tidak valid dalam
+    config.ymL. Defaulting ke 255 karakter...
+  wwcConfigConversationCharacterLimitSuccess: Batas karakter berhasil diatur.
+  wwcteOnTarget: Terjemahan entitas diaktifkan untuk %i.
+  wwcEntityTranslateDone: 'Nama Entitas Diterjemahkan: %i'
+  wwcEntityTranslateNoName: Entitas tidak memiliki nama kustom.
+  wwcConfigConversationErrorLimitInput: Batas galat saat ini untuk setiap penerjemah
+    adalah %i. Ketik sesuatu yang lebih besar dari 0 untuk menetapkan nilai baru,
+    atau ketik sesuatu yang kurang dari atau sama dengan 0 untuk kembali.
+  wwcConfigGUIGlobalRateLimitButton: Ubah Batas Tingkat Global
+  wwcteOnSender: Terjemahan entitas diaktifkan. Klik kanan pada entitas untuk menerjemahkan
+    namanya!
+  wwcInGameObjectTranslationFailCatastrophic: Gagal menerjemahkan objek target.
+  wwcInGameEntityTranslationFailCatastrophic: Gagal menerjemahkan entitas target.
+  wwcConfigGUIResponseLimitButton: Ubah Waktu Tanggapan Penerjemah
+  wwcConfigMessageCharLimitEnabled: Batas karakter per pesan diset ke %i karakter.
+  wwcteOffTarget: Terjemahan entitas dinonaktifkan untuk %i.
+  wwcCharLimit: Pesan Anda terlalu panjang! Pastikan pesan Anda kurang dari %i karakter
+    panjangnya.
+  wwcConfigConversationResponseLimitInput: Batas waktu respons saat ini untuk setiap
+    penerjemah adalah %i detik. Ketik sesuatu yang lebih besar dari 0 untuk menetapkan
+    nilai baru, atau ketik sesuatu yang kurang dari atau sama dengan 0 untuk kembali.
+  wwcConfigConversationCharacterLimitInput: Batas karakter saat ini per pesan adalah
+    %i karakter. Ketik sesuatu yang lebih besar dari 0 untuk menetapkan nilai baru,
+    atau ketik sesuatu yang kurang dari atau sama dengan 0 untuk kembali.
+  wwcteOffSender: Terjemahan entitas dinonaktifkan.
+  wwctGUIEntityButton: Alihkan Terjemahan Entitas
+  wwcConfigConversationResponseLimitSuccess: Batas waktu respons berhasil ditetapkan.

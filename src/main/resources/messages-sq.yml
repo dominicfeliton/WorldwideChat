@@ -62,7 +62,6 @@ Messages:
   wwctPlayerNotFound: Lojtar %Nuk u gjet.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Biseda globale po përkthehet,
     por biseda juaj po përkthehet në %o.
-  wwcConfigGUIGlobalRateLimit: Ndrysho kufirin Global Rate
   wwcConfigGUIAmazonTranslateRegionButton: Ndrysho rajonin Amazon
   wwcConfigConversationLangInput: 'Gjuha aktuale e shtojcës është %i. Ju lutemi, futni
     një kod të vlefshëm gjuhësor, ose shkruani 0 që të anul Kodet e vlefshme të gjuhës:
@@ -234,21 +233,16 @@ Messages:
   wwcItemTranslateTitleDone: Titulli i përkthyer artikulli me sukses
   wwcGUITempItem: Shfaqja e artikullit
   wwcItemTranslateStart: Përkthimi i artikullit të synuar...
-  wwcSignTranslationFailCatastrophic: Dështoi në përkthimin e shenjës objektiv.
-  wwcItemTranslationFailCatastrophic: Dështoi në përkthimin e artikullit të sy
   wwcBookTranslateTitleSuccess: 'Titulli i librit të përkthyer: %i'
   wwctiOnSender: Përkthimi artikull aktivizuar. Djathtas-klikoni me një artikull në
     dorën tuaj kryesore për ta përkthyer atë!
   wwcItemTranslateLoreStart: Përkthimi dije e artikullit të synuar...
   wwcItemTranslateLoreDone: Përkthyer artikull dije me sukses.
   wwctiOnTarget: Përkthimi i artikullit aktivizohet për %i.
-  wwcBookTranslationFailCatastrophic: Dështoi për të përkthyer librin objektiv.
   wwcBookTranslateTitleFail: Dështoi të përkthehet titulli i librit
   wwcChatTranslationFail: Dështoi në përkthimin e mesazhit tuaj.
   wwcInvalidTranslator: Cilësimet e pavlefshme të përkthyesit Ju lutemi rregulloni
     këtë në config.yml ose me /wwcc për të përdorur këtë shtojcë.
-  wwcNotDoneLoading: WorldwideChat është ende inicializuar. Ju lutem provoni përsëri
-    së shpejti.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurimi'
   wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
@@ -298,3 +292,38 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Mesazhi origjinal
   wwcConfigGUIDebugModeButton: Toggle Debug Mode
   wwcConfigConversationDebugModeSuccess: Modaliteti i debugut të toggled me sukses.
+  wwcConfigGUIErrorLimitButton: Ndrysho kufirin e gabimit të për
+  wwcConfigConversationErrorLimitSuccess: Kufiri i gabimit vendoset me sukses.
+  wwcEntityTranslateStart: Përkthimi i subjektit të synuar...
+  wwcConfigGUICharacterLimitButton: Ndrysho mesazhin e karakterit
+  wwcConfigMessageCharLimitInvalid: Kufiri i pavlefshëm për mesazh të vendosur në
+    config.yml. Defaulting në 255 chars...
+  wwcConfigConversationCharacterLimitSuccess: Kufiri i karakterit të vendosur me sukses.
+  wwcteOnTarget: Përkthimi i subjektit aktivizohet për %i.
+  wwcEntityTranslateDone: 'Emri i Entit të Përkthyer: %i'
+  wwcEntityTranslateNoName: Subjekti nuk ka një emër me porosi.
+  wwcConfigConversationErrorLimitInput: Kufiri aktual i gabimit për secilin përkthyes
+    është %i. Shkruani diçka më të madhe se 0 për të vendosur një vlerë të re, ose
+    shkruani diçka më të vogël ose të barabartë me 0 për t'u kthyer mbrapa.
+  wwcConfigGUIGlobalRateLimitButton: Ndrysho kufirin Global Rate
+  wwcteOnSender: Enti përkthim aktivizuar. Djathtas-klikoni mbi një entitet për të
+    përkthyer emrin e
+  wwcInGameObjectTranslationFailCatastrophic: Dështoi në përkthimin e objektit objektiv.
+  wwcInGameEntityTranslationFailCatastrophic: Dështoi për të përkthyer entitet objektiv.
+  wwcConfigGUIResponseLimitButton: Ndrysho Kohëzgjatjen e përgjigjes së
+  wwcConfigMessageCharLimitEnabled: Kufiri i karakterit për mesazh të vendosur në
+    %i karaktere.
+  wwcteOffTarget: Përkthimi i subjektit i paaftë për %i.
+  wwcCharLimit: Mesazhi juaj është shumë i gjatë! Ju lutemi sigurohuni që mesazhi
+    juaj të jetë më i vogël se %i karaktere në gjatësi.
+  wwcConfigConversationResponseLimitInput: Kohëzgjatja aktuale e përgjigjes për secilin
+    përkthyes është %i sekonda. Shkruani ndonjë gjë më të madhe se 0 për të vendosur
+    një vlerë të re, ose shkruani ndonjë gjë më pak se ose të barabartë me 0 për t'u
+    kthyer.
+  wwcConfigConversationCharacterLimitInput: Kufiri aktual i karakterit për mesazh
+    është %i karaktere. Shkruani ndonjë gjë më të madhe se 0 për të vendosur një vlerë
+    të re, ose shkruani ndonjë gjë më pak se ose të barabartë me 0 për t'u kthyer.
+  wwcteOffSender: Përkthimi subjekt me aftësi
+  wwctGUIEntityButton: Toggle Enti Përkthimi
+  wwcConfigConversationResponseLimitSuccess: Kohëzgjatja e përgjigjes vendosur me
+    sukses.

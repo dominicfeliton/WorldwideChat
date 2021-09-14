@@ -63,7 +63,6 @@ Messages:
   wwctPlayerNotFound: Ang manlalaro ng %hindi ko natagpuan.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Ang pandaigdigang chat
     ay isinalin, ngunit ang iyong chat ay isinalin sa %o.
-  wwcConfigGUIGlobalRateLimit: Baguhin ang Global Rate Limitasyon
   wwcConfigGUIAmazonTranslateRegionButton: Baguhin ang rehiyon ng Amazon
   wwcConfigConversationLangInput: 'Ang kasalukuyang wika ng plugin ay %i Mangyaring
     magpasok ng wastong code ng wika, o i-type ang 0 upang kanselahin. Walid na code
@@ -240,21 +239,16 @@ Messages:
   wwcItemTranslateTitleDone: Matagumpay na isinalin item pamagat.
   wwcGUITempItem: Item Display
   wwcItemTranslateStart: Pagsasalin ng target na item...
-  wwcSignTranslationFailCatastrophic: Nabigong i-translate ang target sign.
-  wwcItemTranslationFailCatastrophic: Nabigong i-translate ang target na item.
   wwcBookTranslateTitleSuccess: 'Isinalin Pamagat ng Aklat: %i'
   wwctiOnSender: Pinagana ang pagsasalin ng item. Mag-right-click sa isang item sa
     iyong pangunahing kamay upang isalin ito!
   wwcItemTranslateLoreStart: Pagsasalin ng tradisyonal na kaalaman ng target na item...
   wwcItemTranslateLoreDone: Matagumpay na isinalin item tradisyonal na kaalaman
   wwctiOnTarget: Pinagana ang pagsasalin ng item para sa %i.
-  wwcBookTranslationFailCatastrophic: Nabigong i-translate ang target na aklat.
   wwcBookTranslateTitleFail: Nabigong i-translate ang pamagat ng libro.
   wwcChatTranslationFail: Nabigong i-translate ang iyong mensahe.
   wwcInvalidTranslator: Di-wastong mga setting ng tagasalin. Mangyaring ayusin ito
     sa iyong config.yml o sa /wwcc upang magamit ang plugin na ito.
-  wwcNotDoneLoading: Nagsisimula pa rin ang WorldwideChat. Mangyaring subukan muli
-    sa ilang sandali.
   wwcConfigGUIEachTranslatorSettings: '%i Pagsasaayos'
   wwcConfigGUIToggleButton: Iba-toggle %i
   wwcConfigGUIWatsonButton: Watson
@@ -309,3 +303,42 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Orihinal na Mensahe
   wwcConfigGUIDebugModeButton: I-toggle ang Debug Mode
   wwcConfigConversationDebugModeSuccess: Matagumpay na na-toggled debug mode.
+  wwcConfigGUIErrorLimitButton: Baguhin ang Limitasyon ng Error sa Translator
+  wwcConfigConversationErrorLimitSuccess: Matagumpay na naka-set ang limitasyon ng
+    error.
+  wwcEntityTranslateStart: Pagsasalin ng target na entity...
+  wwcConfigGUICharacterLimitButton: Palitan ang Limitasyon ng Character
+  wwcConfigMessageCharLimitInvalid: Di-wastong limitasyon sa bawat mensahe na itinakda
+    sa config.yml. Default sa 255 chars...
+  wwcConfigConversationCharacterLimitSuccess: Matagumpay na itinakda ang limitasyon
+    ng character
+  wwcteOnTarget: Pinagana ang pagsasalin ng entity para sa %i.
+  wwcEntityTranslateDone: 'Isinalin Pangalan ng Entity: %i'
+  wwcEntityTranslateNoName: Ang entity ay walang pasadyang pangalan.
+  wwcConfigConversationErrorLimitInput: Ang kasalukuyang limitasyon ng error para
+    sa bawat tagasalin ay %i. I-type ang anumang mas malaki kaysa sa 0 upang magtakda
+    ng bagong halaga, o mag-type ng kahit anong mas mababa sa o katumbas ng 0 upang
+    bumalik.
+  wwcConfigGUIGlobalRateLimitButton: Baguhin ang Global Rate Limitasyon
+  wwcteOnSender: Pinagana ang pagsasalin ng entity. Mag-right-click sa isang entity
+    upang isalin ang pangalan nito!
+  wwcInGameObjectTranslationFailCatastrophic: Nabigong i-translate ang target na object.
+  wwcInGameEntityTranslationFailCatastrophic: Nabigong i-translate ang target na entity.
+  wwcConfigGUIResponseLimitButton: Baguhin ang Tagasalin Tugon Timeout
+  wwcConfigMessageCharLimitEnabled: Limitasyon ng character sa bawat mensahe na nakatakda
+    sa %i character.
+  wwcteOffTarget: Hindi pinagana ang pagsasalin ng entity para sa %i.
+  wwcCharLimit: Masyadong mahaba ang iyong mensahe! Mangyaring siguraduhin na ang
+    iyong mensahe ay mas mababa sa %i character sa haba.
+  wwcConfigConversationResponseLimitInput: Ang kasalukuyang timeout ng pagtugon para
+    sa bawat tagasalin ay %i segundo. I-type ang anumang mas malaki kaysa sa 0 upang
+    magtakda ng bagong halaga, o i-type ang anumang mas mababa sa o katumbas ng 0
+    upang bumalik.
+  wwcConfigConversationCharacterLimitInput: Ang kasalukuyang limitasyon ng character
+    sa bawat mensahe ay %i character. I-type ang anumang mas malaki kaysa sa 0 upang
+    magtakda ng bagong halaga, o i-type ang anumang mas mababa sa o katumbas ng 0
+    upang bumalik.
+  wwcteOffSender: Hindi pinagana ang pagsasalin ng entity.
+  wwctGUIEntityButton: I-toggle ang Entity Translation
+  wwcConfigConversationResponseLimitSuccess: Matagumpay na itinakda ang timeout ng
+    tugon.

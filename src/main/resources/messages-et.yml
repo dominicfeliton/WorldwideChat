@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: Mängija %ma ei leidnud.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globaalset vestlust
     tõlgitakse, kuid sinu vestlus on tõlgitud %o.
-  wwcConfigGUIGlobalRateLimit: Muuda globaalse määra limiiti
   wwcConfigGUIAmazonTranslateRegionButton: Muuda Amazonase regiooni
   wwcConfigConversationLangInput: 'Praegune plugina keel on %i. Palun sisestage kehtiv
     keelekood või tühjendamiseks tippige 0. Kehtivad keelekoodid: %o'
@@ -213,21 +212,16 @@ Messages:
   wwcItemTranslateTitleDone: Tõlgitud objekti pealkiri edukalt.
   wwcGUITempItem: Üksuse ekraan
   wwcItemTranslateStart: Sihtpunkti tõlkimine...
-  wwcSignTranslationFailCatastrophic: Sihtmärgi tõlkimine nurjus.
-  wwcItemTranslationFailCatastrophic: Sihtobjekti tõlkimine nurjus.
   wwcBookTranslateTitleSuccess: 'Tõlkinud raamatu pealkiri: %i'
   wwctiOnSender: Objekti tõlkimine lubatud. Paremklõpsake oma põhikäes oleval üksusel,
     et seda tõlkida!
   wwcItemTranslateLoreStart: Sihtpunkti pärimuse tõlkimine...
   wwcItemTranslateLoreDone: Tõlgitud kirje pärimuse edukalt.
   wwctiOnTarget: Objekti tõlkimine lubatud %i.
-  wwcBookTranslationFailCatastrophic: Sihtraamatu tõlkimine nurjus
   wwcBookTranslateTitleFail: Raamatu pealkirja tõlkimine nurjus.
   wwcChatTranslationFail: Sõnumi tõlkimine nurjus.
   wwcInvalidTranslator: Kehtetu tõlkija sätted. Palun parandage see oma config.yml
     või /wwcc kasutada seda pluginat.
-  wwcNotDoneLoading: WorldwideChat on endiselt initsialiseeriv. Palun proovige varsti
-    uuesti.
   wwcConfigGUIEachTranslatorSettings: '%i konfiguratsioon'
   wwcConfigGUIToggleButton: Kogu %i
   wwcConfigGUIWatsonButton: Watson
@@ -274,3 +268,34 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Algne sõnum
   wwcConfigGUIDebugModeButton: Lülita silumisrežiim
   wwcConfigConversationDebugModeSuccess: Edukalt lülitatud silumisrežiim.
+  wwcConfigGUIErrorLimitButton: Muuda tõlkija tõrke piirang
+  wwcConfigConversationErrorLimitSuccess: Tõrkepiirang on seatud edukalt.
+  wwcEntityTranslateStart: Sihtelundi tõlkimine...
+  wwcConfigGUICharacterLimitButton: Sõnumi märgipiiri muutmine
+  wwcConfigMessageCharLimitInvalid: Kehtetu limiit sõnumi seatud config.yml. Defaulting
+    kuni 255 tähemärkide...
+  wwcConfigConversationCharacterLimitSuccess: Märkide piirang seatud edukalt.
+  wwcteOnTarget: Olemi tõlge lubatud %i.
+  wwcEntityTranslateDone: 'Tõlgitud olemi nimi: %i'
+  wwcEntityTranslateNoName: Olemil pole kohandatud nime.
+  wwcConfigConversationErrorLimitInput: Iga tõlkija praegune tõrkepiirang on %i. Uue
+    väärtuse määramiseks tippige midagi suuremat kui 0, või tippige midagi, mis on
+    väiksem või võrdne 0, et minna tagasi.
+  wwcConfigGUIGlobalRateLimitButton: Muuda globaalse määra limiiti
+  wwcteOnSender: Olemi tõlkimine on lubatud. Paremklõpsake üksusel oma nime tõlkimiseks!
+  wwcInGameObjectTranslationFailCatastrophic: Sihtobjekti tõlkimine nurjus.
+  wwcInGameEntityTranslationFailCatastrophic: Sihtolemi tõlkimine nurjus
+  wwcConfigGUIResponseLimitButton: Muuda tõlkija reageerimise ajalõpp
+  wwcConfigMessageCharLimitEnabled: Märkide piirang sõnumi kohta määratud %i tähemärki.
+  wwcteOffTarget: Olemi tõlge keelatud %i.
+  wwcCharLimit: Teie sõnum on liiga pikk! Palun veenduge, et teie sõnum oleks väiksem
+    kui %i tähemärki pikkuses.
+  wwcConfigConversationResponseLimitInput: Praegune reageerimise ajalõpp iga tõlkija
+    on %i sekundit. Uue väärtuse määramiseks tippige midagi suuremat kui 0 või tippige
+    midagi, mis on väiksem või võrdne 0, et minna tagasi.
+  wwcConfigConversationCharacterLimitInput: Praegune märgisepiirang sõnumi kohta on
+    %i tähemärki. Uue väärtuse määramiseks tippige midagi suuremat kui 0 või tippige
+    midagi, mis on väiksem või võrdne 0, et minna tagasi.
+  wwcteOffSender: Olemi tõlkimine keelatud.
+  wwctGUIEntityButton: Lülita olemi tõlge
+  wwcConfigConversationResponseLimitSuccess: Vastuse ajalõpp seatud edukalt.

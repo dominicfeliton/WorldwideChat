@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: Spiller %jeg ble ikke funnet.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat blir oversatt,
     men chatten din blir oversatt til %o.
-  wwcConfigGUIGlobalRateLimit: Endre Global Rate
   wwcConfigGUIAmazonTranslateRegionButton: Endre Amazon-regionen
   wwcConfigConversationLangInput: 'Gjeldende plugin-språk er %i. Angi en gyldig språkkode,
     eller skriv inn 0 for å avbryte. Gyldige språkkoder: %o'
@@ -215,20 +214,16 @@ Messages:
   wwcItemTranslateTitleDone: Oversatt element tittelen vellykket.
   wwcGUITempItem: Vare Visning
   wwcItemTranslateStart: Oversette målet element...
-  wwcSignTranslationFailCatastrophic: Kan ikke oversette måltegn.
-  wwcItemTranslationFailCatastrophic: Kan ikke oversette målobjekt.
   wwcBookTranslateTitleSuccess: 'Oversatt boktittel: %i'
   wwctiOnSender: Vareoversettelse aktivert. Høyreklikk med et element i hovedhånden
     for å oversette det!
   wwcItemTranslateLoreStart: Oversette lore av målet element...
   wwcItemTranslateLoreDone: Oversatt element lore vellykket.
   wwctiOnTarget: Vareoversettelse aktivert for %i.
-  wwcBookTranslationFailCatastrophic: Kan ikke oversette målboken.
   wwcBookTranslateTitleFail: Kan ikke oversette boktittel.
   wwcChatTranslationFail: Kan ikke oversette meldingen.
   wwcInvalidTranslator: Ugyldige innstillinger for oversetteren. Vennligst reparer
     dette i din config.yml eller med /wwcc for å bruke denne plugin.
-  wwcNotDoneLoading: WorldwideChat initialiserer fortsatt. Prøv igjen om kort tid.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurasjon'
   wwcConfigGUIToggleButton: Veksle %i
   wwcConfigGUIWatsonButton: Watson
@@ -275,3 +270,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Opprinnelig melding
   wwcConfigGUIDebugModeButton: Veksle feilsøkingsmodus
   wwcConfigConversationDebugModeSuccess: Vellykket feilsøkingsmodus.
+  wwcConfigGUIErrorLimitButton: Endring av feilgrense for oversetter
+  wwcConfigConversationErrorLimitSuccess: Feilgrense angitt.
+  wwcEntityTranslateStart: Oversette målenhet...
+  wwcConfigGUICharacterLimitButton: Endre meldingstegn grense
+  wwcConfigMessageCharLimitInvalid: Ugyldig grense per melding angitt i config.yml.
+    Defaulting til 255 tegn...
+  wwcConfigConversationCharacterLimitSuccess: Tegngrensen er angitt.
+  wwcteOnTarget: Enhetsoversettelse aktivert for %i.
+  wwcEntityTranslateDone: 'Navn på oversatt enhet: %i'
+  wwcEntityTranslateNoName: Enheten har ikke et egendefinert navn.
+  wwcConfigConversationErrorLimitInput: Gjeldende feilgrense for hver oversetter er
+    %i. Skriv inn noe større enn 0 for å angi en ny verdi, eller skriv inn noe mindre
+    enn eller lik 0 for å gå tilbake.
+  wwcConfigGUIGlobalRateLimitButton: Endre Global Rate
+  wwcteOnSender: Enhetsoversettelse aktivert. Høyreklikk på en enhet for å oversette
+    navnet sitt!
+  wwcInGameObjectTranslationFailCatastrophic: Kan ikke oversette målobjektet.
+  wwcInGameEntityTranslationFailCatastrophic: Kan ikke oversette målenhet.
+  wwcConfigGUIResponseLimitButton: Endre tidsavbrudd for svar på oversetteren
+  wwcConfigMessageCharLimitEnabled: Tegngrense per melding satt til %i tegn.
+  wwcteOffTarget: Enhetsoversettelse deaktivert for %i.
+  wwcCharLimit: Meldingen din er for lang! Kontroller at meldingen din er mindre enn
+    %i tegn i lengde.
+  wwcConfigConversationResponseLimitInput: Tidsavbrudd for gjeldende svar for hver
+    oversetter er %i sekunder. Skriv inn noe større enn 0 for å angi en ny verdi,
+    eller skriv inn noe mindre enn eller lik 0 for å gå tilbake.
+  wwcConfigConversationCharacterLimitInput: Gjeldende tegngrense per melding er %i
+    tegn. Skriv inn noe større enn 0 for å angi en ny verdi, eller skriv inn noe mindre
+    enn eller lik 0 for å gå tilbake.
+  wwcteOffSender: Enhetsoversettelse deaktivert.
+  wwctGUIEntityButton: Veksle enhetsoversettelse
+  wwcConfigConversationResponseLimitSuccess: Tidsavbrudd for responsen er angitt.

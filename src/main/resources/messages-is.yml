@@ -62,7 +62,6 @@ Messages:
   wwctPlayerNotFound: Leikmaður %Ég fann ekki.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Alþjóðlegt spjall er
     þýtt, en spjallið þitt er þýtt í %o.
-  wwcConfigGUIGlobalRateLimit: Breyta Global Rate Limit
   wwcConfigGUIAmazonTranslateRegionButton: Breyta Amazon svæðinu
   wwcConfigConversationLangInput: 'Núverandi tappi tungumál er %i. Vinsamlegast sláðu
     inn gilt tungumál kóða, eða tegund 0 til að hætta við. Gildir tungumálakóðar:
@@ -226,21 +225,16 @@ Messages:
   wwcItemTranslateTitleDone: Þýtt atriði titil með góðum árangri.
   wwcGUITempItem: Item Sýna
   wwcItemTranslateStart: Þýða miða atriði...
-  wwcSignTranslationFailCatastrophic: Mistókst að þýða miða merki.
-  wwcItemTranslationFailCatastrophic: Mistókst að þýða miða atriði.
   wwcBookTranslateTitleSuccess: 'Þýtt Book Titill: %i'
   wwctiOnSender: Item þýðing virkt. Hægrismelltu með hlut í aðalhendinni til að þýða
     það!
   wwcItemTranslateLoreStart: Þýða lore af miða atriði...
   wwcItemTranslateLoreDone: Þýtt atriði lore með góðum árangri.
   wwctiOnTarget: Item þýðing virkt fyrir %i.
-  wwcBookTranslationFailCatastrophic: Mistókst að þýða miða bók.
   wwcBookTranslateTitleFail: Mistókst að þýða bók titil.
   wwcChatTranslationFail: Mistókst að þýða skilaboðin þín.
   wwcInvalidTranslator: Ógildar stillingar þýðanda. Vinsamlegast lagaðu þetta í config.yml
     eða með/wwcc til að nota þessa tappi.
-  wwcNotDoneLoading: WorldwideChat er enn að frumstilla. Vinsamlegast reyndu aftur
-    fljótlega.
   wwcConfigGUIEachTranslatorSettings: '%i Stillingar'
   wwcConfigGUIToggleButton: Skipti %i
   wwcConfigGUIWatsonButton: Watson
@@ -290,3 +284,34 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Upprunaleg skilaboð
   wwcConfigGUIDebugModeButton: Skipta kemba Mode
   wwcConfigConversationDebugModeSuccess: Tókst skipta kemba ham.
+  wwcConfigGUIErrorLimitButton: Breyta þýðandi Villa Limit
+  wwcConfigConversationErrorLimitSuccess: Villa takmörk sett með góðum árangri.
+  wwcEntityTranslateStart: Þýða markeiningu...
+  wwcConfigGUICharacterLimitButton: Breyta skilaboðum staf Limit
+  wwcConfigMessageCharLimitInvalid: Ógild takmörk á skeyti sett í config.yml. Vanskil
+    á 255 bleikju...
+  wwcConfigConversationCharacterLimitSuccess: Eðli mörk sett með góðum árangri.
+  wwcteOnTarget: Entity þýðing virkt fyrir %i.
+  wwcEntityTranslateDone: 'Þýtt nafn Entity: %i'
+  wwcEntityTranslateNoName: Entity hefur ekki sérsniðið nafn.
+  wwcConfigConversationErrorLimitInput: Núverandi villumörk fyrir hvern þýðanda er
+    %i. Sláðu inn neitt stærra en 0 til að setja nýtt gildi, eða sláðu inn neitt minna
+    en eða jafnt og 0 til að fara aftur.
+  wwcConfigGUIGlobalRateLimitButton: Breyta Global Rate Limit
+  wwcteOnSender: Entity þýðing virkt. Hægrismelltu á aðila til að þýða nafn sitt!
+  wwcInGameObjectTranslationFailCatastrophic: Mistókst að þýða miða hlut.
+  wwcInGameEntityTranslationFailCatastrophic: Mistókst að þýða miða aðila.
+  wwcConfigGUIResponseLimitButton: Breyta Response Timeout
+  wwcConfigMessageCharLimitEnabled: Eðli takmörk á skeyti stillt á %i stafi.
+  wwcteOffTarget: Entity þýðing óvirk fyrir %i.
+  wwcCharLimit: Skilaboðin þín eru of löng! Gakktu úr skugga um að skilaboðin þín
+    séu minna en %i stafir að lengd.
+  wwcConfigConversationResponseLimitInput: Núverandi svar tími fyrir hvern þýðanda
+    er %i sekúndur. Sláðu eitthvað sem er stærra en 0 til að setja nýtt gildi, eða
+    sláðu inn neitt minna en eða jafnt og 0 til að fara aftur.
+  wwcConfigConversationCharacterLimitInput: Núverandi stafatakmörk á skeyti er %i
+    stafir. Sláðu eitthvað sem er stærra en 0 til að setja nýtt gildi, eða sláðu inn
+    neitt minna en eða jafnt og 0 til að fara aftur.
+  wwcteOffSender: Entity þýðingar óvirk.
+  wwctGUIEntityButton: Skipta Entity Þýðing
+  wwcConfigConversationResponseLimitSuccess: Svar tímamót sett með góðum árangri.

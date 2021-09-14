@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: Pelaaja %en löytänyt.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Maailmanlaajuista keskustelua
     käännetään, mutta keskusteluasi käännetään kohteeseen %o.
-  wwcConfigGUIGlobalRateLimit: Muuta maailmanlaajuista hintarajaa
   wwcConfigGUIAmazonTranslateRegionButton: Vaihda Amazonin alue
   wwcConfigConversationLangInput: 'Nykyinen liitännäisen kieli on %i. Kirjoita kelvollinen
     kielikoodi tai kirjoita 0 peruuttaaksesi sen. Kelvolliset kielikoodit: %'
@@ -223,20 +222,16 @@ Messages:
   wwcItemTranslateTitleDone: Käännetty kohteen otsikko onnistuneesti.
   wwcGUITempItem: Kohteen näyttö
   wwcItemTranslateStart: Kohdekohteen kääntäminen...
-  wwcSignTranslationFailCatastrophic: Kohdemerkin kääntäminen epäonnistui.
-  wwcItemTranslationFailCatastrophic: Kohdekohteen kääntäminen epäonnistui.
   wwcBookTranslateTitleSuccess: 'Käännetyn kirjan nimi: %i'
   wwctiOnSender: Kohteen käännös käytössä. Napsauta hiiren kakkospainikkeella pääkädessäsi
     olevaa kohdetta kääntääksesi sen!
   wwcItemTranslateLoreStart: Kääntäminen Lore kohdekohteen...
   wwcItemTranslateLoreDone: Käännetty kohde Lore onnistuneesti.
   wwctiOnTarget: Kohteen käännös käytössä kohteella %i.
-  wwcBookTranslationFailCatastrophic: Kohdekirjan kääntäminen epäonnistui.
   wwcBookTranslateTitleFail: Kirjan nimen kääntäminen epäonnistui.
   wwcChatTranslationFail: Viestin kääntäminen epäonnistui.
   wwcInvalidTranslator: Kääntäjän asetukset eivät kelpaa. Korjaa tämä config.yml tai
     /wwcc käyttää tätä plugin.
-  wwcNotDoneLoading: WorldwideChat alustaa edelleen. Yritä pian uudelleen.
   wwcConfigGUIEachTranslatorSettings: '%i määritykset'
   wwcConfigGUIToggleButton: Vaihda %i
   wwcConfigGUIWatsonButton: Watson
@@ -284,3 +279,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Alkuperäinen viesti
   wwcConfigGUIDebugModeButton: Vaihda virheenkorjaustila
   wwcConfigConversationDebugModeSuccess: Onnistuneesti vaihdettu virheenkorjaustila.
+  wwcConfigGUIErrorLimitButton: Vaihda kääntäjän virheraja
+  wwcConfigConversationErrorLimitSuccess: Virheraja on määritetty onnistuneesti.
+  wwcEntityTranslateStart: Kohdekokonaisuuden kääntäminen...
+  wwcConfigGUICharacterLimitButton: Muuta viestin merkkiraja
+  wwcConfigMessageCharLimitInvalid: Virheellinen raja sanomaa kohti config.yml. Defaulting
+    255 merkkiä...
+  wwcConfigConversationCharacterLimitSuccess: Merkin raja on asetettu onnistuneesti.
+  wwcteOnTarget: Entiteetin käännös käytössä kohteella %
+  wwcEntityTranslateDone: 'Käännetty entiteetti nimi: %i'
+  wwcEntityTranslateNoName: Entiteetillä ei ole mukautettua nimeä.
+  wwcConfigConversationErrorLimitInput: Kunkin kääntäjän nykyinen virheraja on %i.
+    Kirjoita mikä tahansa suurempi kuin 0, jos haluat asettaa uuden arvon, tai kirjoita
+    jokin pienempi tai yhtä suuri kuin 0 palaat takaisin.
+  wwcConfigGUIGlobalRateLimitButton: Muuta maailmanlaajuista hintarajaa
+  wwcteOnSender: Entiteetin käännös Napsauta entiteettiä hiiren kakkospainikkeella
+    kääntääksesi sen nimen!
+  wwcInGameObjectTranslationFailCatastrophic: Kohdeobjektin kääntäminen epäonnistui.
+  wwcInGameEntityTranslationFailCatastrophic: Kohdeentiteetin kääntäminen epäonnistui.
+  wwcConfigGUIResponseLimitButton: Vaihda kääntäjän vasteen aikakatkaisu
+  wwcConfigMessageCharLimitEnabled: Merkkiraja viestillä asetettu %i-merkkeihin.
+  wwcteOffTarget: Entiteetin käännös käytöstä kohteella %
+  wwcCharLimit: Viestisi on liian pitkä! Varmista, että viestisi on pituudeltaan alle
+    %i merkkiä.
+  wwcConfigConversationResponseLimitInput: Kunkin kääntäjän nykyinen vasteaikakatkaisu
+    on %i sekuntia. Kirjoita jokin suurempi kuin 0, jos haluat asettaa uuden arvon,
+    tai kirjoita jotain vähemmän tai yhtä suuri kuin 0, jos haluat palata takaisin.
+  wwcConfigConversationCharacterLimitInput: Viestin nykyinen merkkiraja on %i-merkkiä.
+    Kirjoita jokin suurempi kuin 0, jos haluat asettaa uuden arvon, tai kirjoita jotain
+    vähemmän tai yhtä suuri kuin 0, jos haluat palata takaisin.
+  wwcteOffSender: Yksikön käännös käytöstä
+  wwctGUIEntityButton: Vaihda entiteetin käännös
+  wwcConfigConversationResponseLimitSuccess: Vastausaikakatkaisu on määritetty onnistuneesti.

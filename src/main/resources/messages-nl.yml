@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: Speler %ik heb niet gevonden.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globale chat wordt vertaald,
     maar uw chat wordt vertaald naar %o.
-  wwcConfigGUIGlobalRateLimit: Wereldwijde tarieflimiet wijzigen
   wwcConfigGUIAmazonTranslateRegionButton: Amazon-regio wijzigen
   wwcConfigConversationLangInput: 'De huidige taal van de plug-in is %i. Voer een
     geldige taalcode in of typ 0 om te annuleren. Geldige taalcodes: %o'
@@ -224,21 +223,16 @@ Messages:
   wwcItemTranslateTitleDone: De titel van een vertaald item succesvol.
   wwcGUITempItem: Weergave van item
   wwcItemTranslateStart: Doelitem vertalen...
-  wwcSignTranslationFailCatastrophic: Kan het doelteken niet vertalen.
-  wwcItemTranslationFailCatastrophic: Kan doelitem niet vertalen.
   wwcBookTranslateTitleSuccess: 'Vertaalde boektitel: %i'
   wwctiOnSender: Itemvertaling is ingeschakeld. Klik met de rechtermuisknop met een
     item in je hoofdhand om het te vertalen!
   wwcItemTranslateLoreStart: Meer over doelitem vertalen...
   wwcItemTranslateLoreDone: Vertaald item lore succesvol.
   wwctiOnTarget: Itemvertaling ingeschakeld voor %i.
-  wwcBookTranslationFailCatastrophic: Kan doelboek niet vertalen.
   wwcBookTranslateTitleFail: Kan de boektitel niet vertalen.
   wwcChatTranslationFail: Kan je bericht niet vertalen.
   wwcInvalidTranslator: Ongeldige instellingen voor vertalers. Gelieve dit op te lossen
     in je config.yml of met /wwcc om deze plugin te gebruiken.
-  wwcNotDoneLoading: WorldwideChat is nog steeds aan het initialiseren. Probeer het
-    binnenkort opnieuw.
   wwcConfigGUIEachTranslatorSettings: '%i Configuratie'
   wwcConfigGUIToggleButton: '%i omschakelen %i'
   wwcConfigGUIWatsonButton: Watson
@@ -290,3 +284,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Origineel bericht
   wwcConfigGUIDebugModeButton: De foutopsporingsmodus schakelen
   wwcConfigConversationDebugModeSuccess: Succesvol omgeschakeld foutopsporingsmodus.
+  wwcConfigGUIErrorLimitButton: Foutlimiet voor vertaler wijzigen
+  wwcConfigConversationErrorLimitSuccess: Foutlimiet is succesvol ingesteld.
+  wwcEntityTranslateStart: Doelentiteit vertalen...
+  wwcConfigGUICharacterLimitButton: Limiet voor berichttekens wijzigen
+  wwcConfigMessageCharLimitInvalid: Ongeldige limiet per bericht ingesteld in config.yml.
+    Standaard 25 tekens...
+  wwcConfigConversationCharacterLimitSuccess: Tekenlimiet is succesvol ingesteld.
+  wwcteOnTarget: Entiteitvertaling ingeschakeld voor %i.
+  wwcEntityTranslateDone: 'Naam van de vertaalde entiteit: %i'
+  wwcEntityTranslateNoName: Entiteit heeft geen aangepaste naam.
+  wwcConfigConversationErrorLimitInput: De huidige foutlimiet voor elke vertaler is
+    %i. Typ iets groter dan 0 om een nieuwe waarde in te stellen, of typ iets kleiner
+    dan of gelijk aan 0 om terug te gaan.
+  wwcConfigGUIGlobalRateLimitButton: Globale tarieflimiet wijzigen
+  wwcteOnSender: Vertaling van entiteit ingeschakeld. Klik met de rechtermuisknop
+    op een entiteit om de naam te vertalen!
+  wwcInGameObjectTranslationFailCatastrophic: Kan doelobject niet vertalen.
+  wwcInGameEntityTranslationFailCatastrophic: Kan doelentiteit niet vertalen.
+  wwcConfigGUIResponseLimitButton: Time-out voor respons van vertaler wijzigen
+  wwcConfigMessageCharLimitEnabled: Tekenlimiet per bericht ingesteld op %i tekens.
+  wwcteOffTarget: Entiteitvertaling uitgeschakeld voor %i.
+  wwcCharLimit: Je boodschap is te lang! Zorg ervoor dat je bericht minder dan %i
+    tekens lang is.
+  wwcConfigConversationResponseLimitInput: De huidige reactietijd voor elke vertaler
+    is %i seconden. Typ iets groter dan 0 om een nieuwe waarde in te stellen, of typ
+    iets kleiner dan of gelijk aan 0 om terug te gaan.
+  wwcConfigConversationCharacterLimitInput: De huidige tekenlimiet per bericht is
+    %i tekens. Typ iets groter dan 0 om een nieuwe waarde in te stellen, of typ iets
+    kleiner dan of gelijk aan 0 om terug te gaan.
+  wwcteOffSender: Vertaling van entiteit is uitgeschakeld.
+  wwctGUIEntityButton: Toggle Enty Translation
+  wwcConfigConversationResponseLimitSuccess: Time-out voor respons is succesvol ingesteld.

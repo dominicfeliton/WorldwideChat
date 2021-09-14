@@ -61,7 +61,6 @@ Messages:
   wwctPlayerNotFound: Chwaraewr %i ddim dod o hyd.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Mae sgwrs fyd-eang yn
     cael ei gyfieithu, ond mae eich sgwrs yn cael ei gyfieithu i %o.
-  wwcConfigGUIGlobalRateLimit: Newid Terfyn Cyfradd Fyd-eang
   wwcConfigGUIAmazonTranslateRegionButton: Newid Rhanbarth Amazon
   wwcConfigConversationLangInput: 'Yr iaith ategyn gyfredol yw %i Rhowch god iaith
     ddilys, neu deipio 0 i ganslo. Codau iaith dilys: %o'
@@ -223,20 +222,16 @@ Messages:
   wwcItemTranslateTitleDone: Teitl eitem wedi'i gyfieithu yn llwyddiannus.
   wwcGUITempItem: Arddangos Eitem
   wwcItemTranslateStart: Cyfieithu eitem darged...
-  wwcSignTranslationFailCatastrophic: Methu cyfieithu arwydd targed.
-  wwcItemTranslationFailCatastrophic: Methu cyfieithu eitem darged.
   wwcBookTranslateTitleSuccess: 'Teitl Llyfr Cyfieithiedig: %i'
   wwctiOnSender: Alluogwyd cyfieithiad eitem. Cliciwch y botwm dde gydag eitem yn
     eich prif law i'w gyfieithu!
   wwcItemTranslateLoreStart: Cyfieithu llên o eitem darged...
   wwcItemTranslateLoreDone: Lore eitem Cyfieithwyd yn llwyddiannus.
   wwctiOnTarget: Cyfieithiad eitem wedi'i alluogi ar gyfer %i.
-  wwcBookTranslationFailCatastrophic: Methu cyfieithu'r llyfr targed.
   wwcBookTranslateTitleFail: Methu cyfieithu teitl llyfr.
   wwcChatTranslationFail: Methwyd â chyfieithu eich neges.
   wwcInvalidTranslator: Gosodiadau cyfieithydd annilys. Os gwelwch yn dda atgyweiria
     hon yn eich config.yml neu gyda/wwcc i ddefnyddio'r ategyn hwn.
-  wwcNotDoneLoading: Mae WorldwideChat yn dal i ymgychwyn. Ceisiwch eto cyn bo hir.
   wwcConfigGUIEachTranslatorSettings: '%i Ffurfweddiad'
   wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
@@ -287,3 +282,34 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Neges Gwreiddiol
   wwcConfigGUIDebugModeButton: Toggle dadfygio Modd
   wwcConfigConversationDebugModeSuccess: Modd dadfygio llwyddiannus toggled.
+  wwcConfigGUIErrorLimitButton: Newid Cyfyngiad Gwall Cyfieithydd
+  wwcConfigConversationErrorLimitSuccess: Terfyn gwall a osodwyd yn llwyddiannus.
+  wwcEntityTranslateStart: Cyfieithu endid targed...
+  wwcConfigGUICharacterLimitButton: Newid Terfyn Cymeriad Neges
+  wwcConfigMessageCharLimitInvalid: Terfyn annilys fesul neges a osodwyd yn config.yml.
+    Defaulting i 255 chars...
+  wwcConfigConversationCharacterLimitSuccess: Gosod terfyn cymeriad yn llwyddiannus.
+  wwcteOnTarget: Cyfieithu endid galluogi am %i.
+  wwcEntityTranslateDone: 'Enw Endid Cyfieithwyd: %i'
+  wwcEntityTranslateNoName: Nid oes gan endid enw arfer.
+  wwcConfigConversationErrorLimitInput: Teipiwch unrhyw beth sy'n fwy na 0 i osod
+    gwerth newydd, neu deipiwch unrhyw beth llai na 0 neu'n hafal i 0 i fynd yn ôl.
+  wwcConfigGUIGlobalRateLimitButton: Newid Terfyn Cyfradd Fyd-eang
+  wwcteOnSender: Galluogi cyfieithu endid. Cliciwch y botwm dde ar endid i gyfieithu
+    ei enw!
+  wwcInGameObjectTranslationFailCatastrophic: Methu cyfieithu gwrthrych targed.
+  wwcInGameEntityTranslationFailCatastrophic: Methu cyfieithu endid targed.
+  wwcConfigGUIResponseLimitButton: Newid Amseroedd Ymateb Cyfieithydd
+  wwcConfigMessageCharLimitEnabled: Terfyn cymeriad fesul neges a osodwyd i %i nodau.
+  wwcteOffTarget: Cyfieithu endid wedi'i analluogi am %i.
+  wwcCharLimit: Mae eich neges yn rhy hir! Gwnewch yn siŵr bod eich neges yn llai
+    na %i nodau o hyd.
+  wwcConfigConversationResponseLimitInput: Yr amser ymateb presennol ar gyfer pob
+    cyfieithydd yw %i eiliad. Teipiwch unrhyw beth mwy na 0 i osod gwerth newydd,
+    neu deipio unrhyw beth llai na neu'n hafal i 0 i fynd yn ôl.
+  wwcConfigConversationCharacterLimitInput: Y terfyn nod cyfredol fesul neges yw cymeriadau
+    %i. Teipiwch unrhyw beth mwy na 0 i osod gwerth newydd, neu deipio unrhyw beth
+    llai na neu'n hafal i 0 i fynd yn ôl.
+  wwcteOffSender: Analluogwyd cyfieithu endid.
+  wwctGUIEntityButton: Toggle Endid Cyfieithu
+  wwcConfigConversationResponseLimitSuccess: Amser ymateb a osodwyd yn llwyddiannus.

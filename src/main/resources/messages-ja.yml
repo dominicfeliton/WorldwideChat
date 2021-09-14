@@ -50,7 +50,6 @@ Messages:
   wwctPlayerNotFound: プレイヤー %i が見つかりません。
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: グローバルチャットは翻訳されていますが、チャットは
     %oに翻訳されています。
-  wwcConfigGUIGlobalRateLimit: グローバルレート制限の変更
   wwcConfigGUIAmazonTranslateRegionButton: Amazonリージョンの変更
   wwcConfigConversationLangInput: '現在のプラグイン言語は %i です。有効な言語コードを入力するか、0 を入力してキャンセルしてください。有効な言語コード:
     %o'
@@ -181,18 +180,14 @@ Messages:
   wwcItemTranslateTitleDone: アイテムのタイトルが正常に翻訳されました。
   wwcGUITempItem: アイテム表示
   wwcItemTranslateStart: ターゲットアイテムを翻訳中...
-  wwcSignTranslationFailCatastrophic: ターゲット記号の翻訳に失敗しました。
-  wwcItemTranslationFailCatastrophic: ターゲットアイテムの翻訳に失敗しました。
   wwcBookTranslateTitleSuccess: '翻訳された本のタイトル: %i'
   wwctiOnSender: アイテムの翻訳が有効です。メインハンドのアイテムを右クリックして翻訳してください！
   wwcItemTranslateLoreStart: ターゲットアイテムの伝承を翻訳しています...
   wwcItemTranslateLoreDone: アイテムの伝承は正常に翻訳されました。
   wwctiOnTarget: '%i のアイテム翻訳が有効になりました。'
-  wwcBookTranslationFailCatastrophic: ターゲットブックの翻訳に失敗しました。
   wwcBookTranslateTitleFail: 本のタイトルの翻訳に失敗しました。
   wwcChatTranslationFail: メッセージの翻訳に失敗しました。
   wwcInvalidTranslator: トランスレータ設定が無効です。このプラグインを使用するには、config.yml または /wwcc でこれを修正してください。
-  wwcNotDoneLoading: WorldwideChat はまだ初期化中です。しばらくしてからもう一度お試しください。
   wwcConfigGUIEachTranslatorSettings: '%i 構成'
   wwcConfigGUIToggleButton: '%i を切り替える'
   wwcConfigGUIWatsonButton: ワトソン
@@ -229,3 +224,29 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: オリジナルメッセージ
   wwcConfigGUIDebugModeButton: デバッグモードを切り替え
   wwcConfigConversationDebugModeSuccess: デバッグモードが正常に切り替わった。
+  wwcConfigGUIErrorLimitButton: トランスレータのエラー制限の変更
+  wwcConfigConversationErrorLimitSuccess: エラー制限が正常に設定されました。
+  wwcEntityTranslateStart: ターゲットエンティティを翻訳中...
+  wwcConfigGUICharacterLimitButton: メッセージの文字数制限の変更
+  wwcConfigMessageCharLimitInvalid: config.yml に設定されたメッセージごとの制限が無効です。デフォルトで 255 文字に設定...
+  wwcConfigConversationCharacterLimitSuccess: 文字制限が正常に設定されました。
+  wwcteOnTarget: '%i のエンティティ変換が有効になっています。'
+  wwcEntityTranslateDone: '変換されたエンティティ名: %i'
+  wwcEntityTranslateNoName: エンティティにはカスタム名がありません。
+  wwcConfigConversationErrorLimitInput: 各トランスレータの現在のエラー制限は %i です。0 より大きい値を入力して新しい値を設定するか、0
+    以下の値を入力して戻ります。
+  wwcConfigGUIGlobalRateLimitButton: グローバルレート制限の変更
+  wwcteOnSender: エンティティ変換が有効になっています。エンティティを右クリックして名前を変換します。
+  wwcInGameObjectTranslationFailCatastrophic: ターゲットオブジェクトの変換に失敗しました。
+  wwcInGameEntityTranslationFailCatastrophic: ターゲットエンティティの変換に失敗しました。
+  wwcConfigGUIResponseLimitButton: トランスレータ応答タイムアウトの変更
+  wwcConfigMessageCharLimitEnabled: メッセージあたりの文字数の制限は %i 文字に設定されています。
+  wwcteOffTarget: '%i のエンティティ変換は無効です。'
+  wwcCharLimit: あなたのメッセージは長すぎます！メッセージの長さが %i 文字未満であることを確認してください。
+  wwcConfigConversationResponseLimitInput: 各トランスレータの現在の応答タイムアウトは %i 秒です。0 より大きい値を入力して新しい値を設定するか、0
+    以下の値を入力して戻ります。
+  wwcConfigConversationCharacterLimitInput: 現在のメッセージあたりの文字数の制限は %i 文字です。0 より大きい値を入力して新しい値を設定するか、0
+    以下の値を入力して戻ります。
+  wwcteOffSender: エンティティ変換が無効になっています。
+  wwctGUIEntityButton: エンティティ変換の切り替え
+  wwcConfigConversationResponseLimitSuccess: レスポンスタイムアウトが正常に設定されました。

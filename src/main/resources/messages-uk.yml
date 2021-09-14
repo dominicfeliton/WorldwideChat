@@ -61,7 +61,6 @@ Messages:
   wwctPlayerNotFound: Гравець %я не знайдено.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобальний чат наразі
     перекладається, але ваш чат перекладається на %o.
-  wwcConfigGUIGlobalRateLimit: Змінити ліміт глобального тарифу
   wwcConfigGUIAmazonTranslateRegionButton: Змінити регіон Амазонки
   wwcConfigConversationLangInput: 'Поточною мовою додатка є %i. Будь ласка, введіть
     коректний код мови або введіть 0, щоб скасувати. Коди допустимих мов: %o'
@@ -222,21 +221,16 @@ Messages:
   wwcItemTranslateTitleDone: Успішно перекладений заголовок елемента.
   wwcGUITempItem: Відображення елемента
   wwcItemTranslateStart: Переклад елемента призначення...
-  wwcSignTranslationFailCatastrophic: Не вдалося перекласти знак призначення.
-  wwcItemTranslationFailCatastrophic: Не вдалося перекласти цільовий елемент.
   wwcBookTranslateTitleSuccess: 'Назва перекладеної книги: %i'
   wwctiOnSender: Увімкнено переклад елементів. Клацніть правою кнопкою миші елемент
     у вашій головній руці, щоб перекласти його!
   wwcItemTranslateLoreStart: Переклад предмета призначення...
   wwcItemTranslateLoreDone: Перекладений елемент успішно освоєний.
   wwctiOnTarget: Увімкнено переклад елементу для %i.
-  wwcBookTranslationFailCatastrophic: Не вдалося перекласти цільову книгу.
   wwcBookTranslateTitleFail: Не вдалося перекласти назву книги.
   wwcChatTranslationFail: Не вдалося перекласти ваше повідомлення.
   wwcInvalidTranslator: Некоректні параметри перекладача. Будь ласка, виправте це
     у вашому config.yml або за допомогою /wwcc, щоб використовувати цей плагін.
-  wwcNotDoneLoading: WorldwideChat все ще ініціалізується. Будь ласка, спробуйте ще
-    раз.
   wwcConfigGUIEachTranslatorSettings: '%i Конфігурація'
   wwcConfigGUIToggleButton: Перемикання %i
   wwcConfigGUIWatsonButton: Ватсон
@@ -285,3 +279,37 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Початкове повідомлення
   wwcConfigGUIDebugModeButton: Увімкнути або вимкнути режим зневаджування
   wwcConfigConversationDebugModeSuccess: Успішно перемикати режим зневадження.
+  wwcConfigGUIErrorLimitButton: Змінити обмеження помилок перекладача
+  wwcConfigConversationErrorLimitSuccess: Обмеження помилок встановлено успішно.
+  wwcEntityTranslateStart: Переклад цільової сутності...
+  wwcConfigGUICharacterLimitButton: Змінити обмеження символів повідомлення
+  wwcConfigMessageCharLimitInvalid: Некоректне обмеження на кожне повідомлення, встановлене
+    у config.yml. Дефолт до 255 символів...
+  wwcConfigConversationCharacterLimitSuccess: Обмеження символів успішно встановлено.
+  wwcteOnTarget: Включено переклад сутності для %i.
+  wwcEntityTranslateDone: 'Перекладена назва сутності: %i'
+  wwcEntityTranslateNoName: Сутність не має настроюваного імені.
+  wwcConfigConversationErrorLimitInput: 'Обмеження поточної помилки для кожного перекладача:
+    %i. Введіть значення, що перевищує 0, щоб встановити нове значення, або введіть
+    щось менше або рівне 0, щоб повернутися назад.'
+  wwcConfigGUIGlobalRateLimitButton: Змінити ліміт глобального тарифу
+  wwcteOnSender: Включено переклад сутності. Клацніть правою кнопкою миші на сутності,
+    щоб перекласти її назву!
+  wwcInGameObjectTranslationFailCatastrophic: Не вдалося перекласти об'єкт призначення.
+  wwcInGameEntityTranslationFailCatastrophic: Не вдалося перекласти цільовий сутності.
+  wwcConfigGUIResponseLimitButton: Змінити час очікування відповіді перекладача
+  wwcConfigMessageCharLimitEnabled: Обмеження символів для кожного повідомлення встановлення
+    %i символів.
+  wwcteOffTarget: Переклад сутності вимкнено для %i.
+  wwcCharLimit: Ваше повідомлення занадто довге! Будь ласка, переконайтеся, що ваше
+    повідомлення менше, ніж у %i символів.
+  wwcConfigConversationResponseLimitInput: Поточний час очікування відповіді для кожного
+    перекладача складає %i секунд. Введіть щось більше за 0, щоб встановити нове значення,
+    або введіть щось менше або рівне 0, щоб повернутися назад.
+  wwcConfigConversationCharacterLimitInput: Поточне обмеження символів на повідомлення
+    складає %i символів. Введіть щось більше за 0, щоб встановити нове значення, або
+    введіть щось менше або рівне 0, щоб повернутися назад.
+  wwcteOffSender: Переклад сутності вимкнено.
+  wwctGUIEntityButton: Переключити переклад сутності
+  wwcConfigConversationResponseLimitSuccess: Час очікування відповіді встановлено
+    успішно.

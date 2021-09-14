@@ -61,7 +61,6 @@ Messages:
   wwctPlayerNotFound: Người chơi %Tôi không tìm thấy.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Trò chuyện toàn cầu
     đang được dịch, nhưng trò chuyện của bạn đang được dịch vào %o.
-  wwcConfigGUIGlobalRateLimit: Thay đổi giới hạn mức giá toàn cầu
   wwcConfigGUIAmazonTranslateRegionButton: Thay đổi Vùng Amazon
   wwcConfigConversationLangInput: 'Ngôn ngữ plugin hiện tại là %i. Vui lòng nhập mã
     ngôn ngữ hợp lệ, hoặc nhập 0 để hủy. Mã ngôn ngữ hợp lệ: %o'
@@ -227,20 +226,16 @@ Messages:
   wwcItemTranslateTitleDone: Đã dịch tiêu đề mục thành công.
   wwcGUITempItem: Mục Hiển thị
   wwcItemTranslateStart: Đang dịch mục tiêu...
-  wwcSignTranslationFailCatastrophic: Lỗi dịch dấu hiệu đích.
-  wwcItemTranslationFailCatastrophic: Không thể dịch mục đích.
   wwcBookTranslateTitleSuccess: 'Tựa đề sách đã dịch: %i'
   wwctiOnSender: Đã bật dịch mục. Nhấp chuột phải với một mục trong tay chính của
     bạn để dịch nó!
   wwcItemTranslateLoreStart: Dịch truyền thuyết của mục tiêu...
   wwcItemTranslateLoreDone: Dịch mục truyền thuyết thành công.
   wwctiOnTarget: Mục dịch được kích hoạt cho %i.
-  wwcBookTranslationFailCatastrophic: Không thể dịch sổ mục tiêu.
   wwcBookTranslateTitleFail: Thất bại trong việc dịch tiêu đề sách.
   wwcChatTranslationFail: Không dịch được thư của bạn.
   wwcInvalidTranslator: Cài đặt dịch không hợp lệ. Vui lòng sửa lỗi này trong config.yml
     của bạn hoặc với /wwccc để sử dụng plugin này.
-  wwcNotDoneLoading: WorldwideChat vẫn đang khởi tạo. Vui lòng thử lại ngay.
   wwcConfigGUIEachTranslatorSettings: '%i Cấu hình'
   wwcConfigGUIToggleButton: Tật %i
   wwcConfigGUIWatsonButton: Watson
@@ -290,3 +285,37 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Tin nhắn gốc
   wwcConfigGUIDebugModeButton: Chuyển đổi chế độ gỡ lỗi
   wwcConfigConversationDebugModeSuccess: Chuyển thành công chế độ gỡ lỗi.
+  wwcConfigGUIErrorLimitButton: Thay đổi giới hạn lỗi Translator
+  wwcConfigConversationErrorLimitSuccess: Giới hạn lỗi đặt thành công.
+  wwcEntityTranslateStart: Dịch thực thể đích...
+  wwcConfigGUICharacterLimitButton: Thay đổi giới hạn ký tự thư
+  wwcConfigMessageCharLimitInvalid: Giới hạn không hợp lệ cho mỗi thư đặt trong config.yml.
+    Mặc định để 255 ký tự...
+  wwcConfigConversationCharacterLimitSuccess: Giới hạn ký tự đặt thành công.
+  wwcteOnTarget: Dịch thực thể được kích hoạt cho %i.
+  wwcEntityTranslateDone: 'Tên thực thể dịch: %i'
+  wwcEntityTranslateNoName: Thực thể không có tên tùy chỉnh.
+  wwcConfigConversationErrorLimitInput: Giới hạn lỗi hiện tại cho mỗi trình dịch là
+    %i. Nhập bất cứ điều gì lớn hơn 0 để đặt một giá trị mới, hoặc nhập bất cứ điều
+    gì nhỏ hơn hoặc bằng 0 để quay lại.
+  wwcConfigGUIGlobalRateLimitButton: Thay đổi giới hạn mức giá toàn cầu
+  wwcteOnSender: Đã bật dịch thực thể. Nhấp chuột phải vào một thực thể để dịch tên
+    của nó!
+  wwcInGameObjectTranslationFailCatastrophic: Không thể dịch đối tượng đích.
+  wwcInGameEntityTranslationFailCatastrophic: Không dịch được thực thể đích.
+  wwcConfigGUIResponseLimitButton: Change Translator Response timeout
+  wwcConfigMessageCharLimitEnabled: Giới hạn ký tự cho mỗi thư được đặt thành
+    ký tự %i.
+  wwcteOffTarget: Dịch thực thể bị tắt cho %i.
+  wwcCharLimit: Tin nhắn của bạn quá dài! Hãy chắc chắn rằng tin nhắn của bạn có độ
+    dài nhỏ hơn %i ký tự.
+  wwcConfigConversationResponseLimitInput: Thời gian chờ phản hồi hiện tại cho mỗi
+    trình dịch là %i giây. Nhập bất cứ điều gì lớn hơn 0 để đặt một giá trị mới, hoặc
+    nhập bất cứ điều gì nhỏ hơn hoặc bằng 0 để quay lại.
+  wwcConfigConversationCharacterLimitInput: Giới hạn ký tự hiện tại cho mỗi thư là
+    %i ký tự. Nhập bất cứ điều gì lớn hơn 0 để đặt một giá trị mới, hoặc nhập bất
+    cứ điều gì nhỏ hơn hoặc bằng 0 để quay lại.
+  wwcteOffSender: Tắt dịch thực thể.
+  wwctGUIEntityButton: Chuyển đổi Dịch thực thể
+  wwcConfigConversationResponseLimitSuccess: Đáp ứng thời gian chờ thiết lập thành
+    công.

@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: Hráč %Nenalezen.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globální chat je překládán,
     ale váš chat je překládán do %o.
-  wwcConfigGUIGlobalRateLimit: Změna globálního limitu sazeb
   wwcConfigGUIAmazonTranslateRegionButton: Změnit oblast Amazon
   wwcConfigConversationLangInput: 'Aktuální jazyk pluginu je %i. Zadejte platný kód
     jazyka nebo zadejte 0 pro zrušení. Platné kódy jazyků: %o'
@@ -221,20 +220,16 @@ Messages:
   wwcItemTranslateTitleDone: Název položky byl úspěšně přeložen.
   wwcGUITempItem: Zobrazení položky
   wwcItemTranslateStart: Překlad cílové položky...
-  wwcSignTranslationFailCatastrophic: Nepodařilo se převést cílové znaménko.
-  wwcItemTranslationFailCatastrophic: Nepodařilo se převést cílovou položku.
   wwcBookTranslateTitleSuccess: 'Překlad názvu knihy: %i'
   wwctiOnSender: Překlad položek povolen. Klikněte pravým tlačítkem myši na položku
     v hlavní ruce, abyste ji přeložili!
   wwcItemTranslateLoreStart: Překlad tradice cílové položky...
   wwcItemTranslateLoreDone: Přeložený předmět tradice úspěšně.
   wwctiOnTarget: Překlad položek povolen pro %i.
-  wwcBookTranslationFailCatastrophic: Nepodařilo se přeložit cílovou knihu.
   wwcBookTranslateTitleFail: Nepodařilo se přeložit název knihy.
   wwcChatTranslationFail: Nepodařilo se přeložit zprávu.
   wwcInvalidTranslator: Neplatná nastavení překladače. Opravte to prosím ve vašem
     config.yml nebo /wwcc pro použití tohoto pluginu.
-  wwcNotDoneLoading: WorldwideChat se stále inicializuje. Zkuste to prosím brzy znovu.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurace'
   wwcConfigGUIToggleButton: Přepnout %i
   wwcConfigGUIWatsonButton: Watsona
@@ -282,3 +277,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Původní zpráva
   wwcConfigGUIDebugModeButton: Přepnout režim ladění
   wwcConfigConversationDebugModeSuccess: Úspěšně přepnul režim ladění.
+  wwcConfigGUIErrorLimitButton: Změna omezení chyb překladače
+  wwcConfigConversationErrorLimitSuccess: Úspěšně nastaven limit chyb.
+  wwcEntityTranslateStart: Převod cílové entity...
+  wwcConfigGUICharacterLimitButton: Změna omezení znaků zprávy
+  wwcConfigMessageCharLimitInvalid: Neplatný limit pro zprávu nastavený v config.yml.
+    Výchozí hodnota 255 znaků...
+  wwcConfigConversationCharacterLimitSuccess: Lze nastavit limit znaků úspěšně.
+  wwcteOnTarget: Převod entit povolen pro %i.
+  wwcEntityTranslateDone: 'Název přeložené entity: %i'
+  wwcEntityTranslateNoName: Entita nemá vlastní název.
+  wwcConfigConversationErrorLimitInput: Aktuální limit chyb pro každý překladač je
+    %i. Zadejte něco většího než 0 pro nastavení nové hodnoty, nebo zadejte něco menší
+    než nebo rovno 0, abyste se vrátili zpět.
+  wwcConfigGUIGlobalRateLimitButton: Změna globálního limitu sazeb
+  wwcteOnSender: Převod entit povolen. Pravým tlačítkem myši na entitu přeložte její
+    název!
+  wwcInGameObjectTranslationFailCatastrophic: Nepodařilo se převést cílový objekt.
+  wwcInGameEntityTranslationFailCatastrophic: Nepodařilo se převést cílovou entitu.
+  wwcConfigGUIResponseLimitButton: Změnit časový limit odezvy překladatele
+  wwcConfigMessageCharLimitEnabled: Limit znaků na zprávu nastaven na %i znaků.
+  wwcteOffTarget: Překlad entit zakázán pro %i.
+  wwcCharLimit: Vaše zpráva je příliš dlouhá! Ujistěte se, že vaše zpráva má menší
+    než %i znaků.
+  wwcConfigConversationResponseLimitInput: Aktuální časový limit odezvy pro každý
+    překladač je %i sekund. Zadejte něco většího než 0 pro nastavení nové hodnoty
+    nebo zadejte něco menší než nebo rovno 0 a vraťte se zpět.
+  wwcConfigConversationCharacterLimitInput: Aktuální limit znaků na zprávu je %i znaků.
+    Zadejte něco většího než 0 pro nastavení nové hodnoty nebo zadejte něco menší
+    než nebo rovno 0 a vraťte se zpět.
+  wwcteOffSender: Převod entit zakázán.
+  wwctGUIEntityButton: Přepnout překlad entit
+  wwcConfigConversationResponseLimitSuccess: Časový limit odezvy byl úspěšně nastaven.

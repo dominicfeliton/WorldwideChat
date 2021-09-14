@@ -50,7 +50,6 @@ Messages:
   wwcConfigGUIQuitButton: 退出並儲存變更
   wwctPlayerNotFound: 玩家 % 我找不到。
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 全球聊天正在翻譯，但您的聊天翻譯成 %o。
-  wwcConfigGUIGlobalRateLimit: 變更全域匯率限制
   wwcConfigGUIAmazonTranslateRegionButton: 變更亞馬遜區域
   wwcConfigConversationLangInput: '目前的外掛程式語言為 %i。請輸入有效的語言代碼，或輸入 0 以取消。有效的語言代碼: %o'
   wwcConfigConversationLangInvalid: 語言代碼無效！
@@ -179,18 +178,14 @@ Messages:
   wwcItemTranslateTitleDone: 已成功翻譯物品標題。
   wwcGUITempItem: 料號顯示
   wwcItemTranslateStart: 正在正在轉譯目標項目...
-  wwcSignTranslationFailCatastrophic: 無法轉譯目標符號。
-  wwcItemTranslationFailCatastrophic: 無法轉譯目標項目。
   wwcBookTranslateTitleSuccess: '翻譯書名: %i'
   wwctiOnSender: 已啟用料號轉譯。右鍵點擊主手中的項目即可翻譯它！
   wwcItemTranslateLoreStart: 正在翻譯目標項目的傳說...
   wwcItemTranslateLoreDone: 已翻譯的項目傳說成功。
   wwctiOnTarget: 已啟用 %i 的項目轉譯。
-  wwcBookTranslationFailCatastrophic: 無法翻譯目標書冊。
   wwcBookTranslateTitleFail: 無法翻譯書籍標題。
   wwcChatTranslationFail: 無法翻譯您的訊息。
   wwcInvalidTranslator: 無效的轉換器設定。請在您的配置.yml 或 /wwcc 中修復此問題以使用此插件。
-  wwcNotDoneLoading: 全球聊天仍在初始化。請稍後再試一次。
   wwcConfigGUIEachTranslatorSettings: '%i 組態'
   wwcConfigGUIToggleButton: 切換 %i
   wwcConfigGUIWatsonButton: 華生
@@ -226,3 +221,29 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: 原始訊息
   wwcConfigGUIDebugModeButton: 切換除錯模式
   wwcConfigConversationDebugModeSuccess: 成功切換除錯模式。
+  wwcConfigGUIErrorLimitButton: 變更轉換器錯誤限制
+  wwcConfigConversationErrorLimitSuccess: 錯誤限制設定成功。
+  wwcEntityTranslateStart: 正在轉譯目標實體...
+  wwcConfigGUICharacterLimitButton: 變更訊息字元限制
+  wwcConfigMessageCharLimitInvalid: 在 config.yml 中每封郵件設定的限制無效。默認為 255 個字符...
+  wwcConfigConversationCharacterLimitSuccess: 字元限制設定成功。
+  wwcteOnTarget: '%i 已啟用實體轉譯。'
+  wwcEntityTranslateDone: '轉譯的實體名稱: %i'
+  wwcEntityTranslateNoName: 實體沒有自訂名稱。
+  wwcConfigConversationErrorLimitInput: 每個轉換器目前的錯誤限制為 %i。請輸入大於 0 的任何值以設定新值，或輸入小於或等於
+    0 的任何值以返回。
+  wwcConfigGUIGlobalRateLimitButton: 變更全域匯率限制
+  wwcteOnSender: 已啟用實體轉譯。在實體上按一下滑鼠右鍵即可翻譯其名稱！
+  wwcInGameObjectTranslationFailCatastrophic: 無法轉譯目標物件。
+  wwcInGameEntityTranslationFailCatastrophic: 無法轉譯目標實體。
+  wwcConfigGUIResponseLimitButton: 變更轉譯器回應逾時
+  wwcConfigMessageCharLimitEnabled: 每封郵件設定為 %i 個字元的字元限制。
+  wwcteOffTarget: '%i 已停用實體轉譯。'
+  wwcCharLimit: 您的訊息太長了！請確認您的訊息長度少於 %i 個字元。
+  wwcConfigConversationResponseLimitInput: 每個轉換器的目前回應逾時為 %i 秒。輸入大於 0 的任何值以設定新值，或輸入小於或等於
+    0 的任何值以返回。
+  wwcConfigConversationCharacterLimitInput: 每封郵件目前的字元限制為 %i 個字元。輸入大於 0 的任何值以設定新值，或輸入小於或等於
+    0 的任何值以返回。
+  wwcteOffSender: 已停用實體轉換。
+  wwctGUIEntityButton: 切換實體轉換
+  wwcConfigConversationResponseLimitSuccess: 回應逾時設定成功。

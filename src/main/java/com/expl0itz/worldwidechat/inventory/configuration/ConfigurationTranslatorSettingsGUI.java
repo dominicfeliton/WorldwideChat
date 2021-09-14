@@ -9,7 +9,10 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCReload;
+import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsCharacterLimitConversation;
+import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsErrorLimitConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsGlobalRateConversation;
+import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsResponseLimitConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsTranslationCacheConversation;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
@@ -24,7 +27,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 	private WorldwideChat main = WorldwideChat.getInstance();
 
 	public static final SmartInventory translatorSettings = SmartInventory.builder().id("translatorSettingsMenu")
-			.provider(new ConfigurationTranslatorSettingsGUI()).size(3, 9)
+			.provider(new ConfigurationTranslatorSettingsGUI()).size(4, 9)
 			.manager(WorldwideChat.getInstance().getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUITranslatorSettings"))
 			.build();
@@ -66,19 +69,55 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			ItemStack rateLimitButton = new ItemStack(Material.NAME_TAG);
 			ItemMeta rateLimitMeta = rateLimitButton.getItemMeta();
 			rateLimitMeta.setDisplayName(ChatColor.GOLD
-					+ CommonDefinitions.getMessage("wwcConfigGUIGlobalRateLimit"));
+					+ CommonDefinitions.getMessage("wwcConfigGUIGlobalRateLimitButton"));
 			rateLimitButton.setItemMeta(rateLimitMeta);
 			contents.set(1, 5, ClickableItem.of(rateLimitButton, e -> {
 				rateConvo.buildConversation(player).begin();
 			}));
-
+			
+			/* Option Six: Translator Error Limit */
+			ConversationFactory errorConvo = new ConversationFactory(main).withModality(true)
+					.withFirstPrompt(new TranslatorSettingsErrorLimitConversation());
+			ItemStack errorLimitButton = new ItemStack(Material.NAME_TAG);
+			ItemMeta errorLimitMeta = errorLimitButton.getItemMeta();
+			errorLimitMeta.setDisplayName(ChatColor.GOLD
+					+ CommonDefinitions.getMessage("wwcConfigGUIErrorLimitButton"));
+			errorLimitButton.setItemMeta(errorLimitMeta);
+			contents.set(1, 6, ClickableItem.of(errorLimitButton, e -> {
+				errorConvo.buildConversation(player).begin();
+			}));
+			
+			/* Option Seven: Max Translator Response Time */
+			ConversationFactory responseConvo = new ConversationFactory(main).withModality(true)
+					.withFirstPrompt(new TranslatorSettingsResponseLimitConversation());
+			ItemStack responseLimitButton = new ItemStack(Material.NAME_TAG);
+			ItemMeta responseLimitMeta = responseLimitButton.getItemMeta();
+			responseLimitMeta.setDisplayName(ChatColor.GOLD
+					+ CommonDefinitions.getMessage("wwcConfigGUIResponseLimitButton"));
+			responseLimitButton.setItemMeta(responseLimitMeta);
+			contents.set(1, 7, ClickableItem.of(responseLimitButton, e -> {
+				responseConvo.buildConversation(player).begin();
+			}));
+			
+			/* Option Eight: Message Character Limit */
+			ConversationFactory charConvo = new ConversationFactory(main).withModality(true)
+					.withFirstPrompt(new TranslatorSettingsCharacterLimitConversation());
+			ItemStack charLimitButton = new ItemStack(Material.NAME_TAG);
+			ItemMeta charLimitMeta = charLimitButton.getItemMeta();
+			charLimitMeta.setDisplayName(ChatColor.GOLD
+					+ CommonDefinitions.getMessage("wwcConfigGUICharacterLimitButton"));
+			charLimitButton.setItemMeta(charLimitMeta);
+			contents.set(2, 1, ClickableItem.of(charLimitButton, e -> {
+				charConvo.buildConversation(player).begin();
+			}));
+			
 			/* Bottom Right Option: Previous Page */
 			ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
 			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
 			previousPageMeta.setDisplayName(ChatColor.GREEN
 					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
 			previousPageButton.setItemMeta(previousPageMeta);
-			contents.set(2, 1,
+			contents.set(3, 1,
 					ClickableItem.of(previousPageButton, e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */
@@ -88,7 +127,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
 			quitButton.setItemMeta(quitMeta);
 			WWCReload rel = new WWCReload(player, null, null, new String[0]);
-			contents.set(2, 4, ClickableItem.of(quitButton, e -> {
+			contents.set(3, 4, ClickableItem.of(quitButton, e -> {
 				main.removePlayerUsingConfigurationGUI(player);
 				player.closeInventory();
 				rel.processCommand();

@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: მოთამაშე %i ვერ მოიძებნა.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: გლობალური სტატისტიკა
     თარგმნილია, მაგრამ თქვენი სტატისტიკა თარგმნა %o.
-  wwcConfigGUIGlobalRateLimit: გლობალური განაკვეთის ლიმიტის შეცვლა
   wwcConfigGUIAmazonTranslateRegionButton: ამაზონის რეგიონის შეცვლა
   wwcConfigConversationLangInput: 'მიმდინარე მოდული ენა %i. გთხოვთ შეიყვანოთ სწორი
     ენის კოდი ან ტიპის 0 გასაუქმებლად. სწორი ენის კოდები: %o'
@@ -219,21 +218,16 @@ Messages:
   wwcItemTranslateTitleDone: თარგმნილი პუნქტის სათაური წარმატებით.
   wwcGUITempItem: ნივთის ჩვენება
   wwcItemTranslateStart: სამიზნე ნივთის თარგმნა...
-  wwcSignTranslationFailCatastrophic: სამიზნე ნიშნის თარგმნა ვერ მოხერხდა.
-  wwcItemTranslationFailCatastrophic: სამიზნე ნივთის თარგმნა ვერ მოხერხდა.
   wwcBookTranslateTitleSuccess: 'თარგმნილი წიგნის სათაური: %i'
   wwctiOnSender: საქონელი თარგმანი ჩართულია. მარჯვენა ღილაკით თქვენი მთავარი ხელით
     თარგმნა!
   wwcItemTranslateLoreStart: თარგმნა მხარეთმცოდნეობის სამიზნე ნივთი...
   wwcItemTranslateLoreDone: თარგმნა საქონელი მხარეთმცოდნეობის წარმატებით.
   wwctiOnTarget: ელემენტის თარგმანი ჩართულია %i.
-  wwcBookTranslationFailCatastrophic: სამიზნე წიგნის თარგმნა ვერ მოხერხდა.
   wwcBookTranslateTitleFail: წიგნის სათაურის თარგმნა ვერ მოხერხდა.
   wwcChatTranslationFail: ვერ მოხერხდა თქვენი წერილის თარგმნა.
   wwcInvalidTranslator: არასწორი თარჯიმანი პარამეტრები. გთხოვთ, დააფიქსიროთ ეს თქვენი
     config.yml ან /wwcc გამოიყენოთ ეს მოდული.
-  wwcNotDoneLoading: WorldwideChat კვლავ ინიციალიზაციაა. გთხოვთ, სცადოთ ცოტა ხნის
-    წინ.
   wwcConfigGUIEachTranslatorSettings: '%i კონფიგურაცია'
   wwcConfigGUIToggleButton: დან %i
   wwcConfigGUIWatsonButton: უოტსონი
@@ -283,3 +277,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: ორიგინალური შეტყობინება
   wwcConfigGUIDebugModeButton: გამართვის რეჟიმის გადართვა
   wwcConfigConversationDebugModeSuccess: წარმატებით გადართვა გამართვის რეჟიმი.
+  wwcConfigGUIErrorLimitButton: თარჯიმნის შეცდომის შეზღუდვა
+  wwcConfigConversationErrorLimitSuccess: შეცდომის ლიმიტის კომპლექტი წარმატებით.
+  wwcEntityTranslateStart: სამიზნე სუბიექტის თარგმნა...
+  wwcConfigGUICharacterLimitButton: შეტყობინებების სიმბოლოთა ლიმიტის შეცვლა
+  wwcConfigMessageCharLimitInvalid: არასწორი ლიმიტი თითო გაგზავნა მითითებული config.yml.
+    უპირობოდ 255 სიმბოლო...
+  wwcConfigConversationCharacterLimitSuccess: სიმბოლოთა ლიმიტის კომპლექტი წარმატებით.
+  wwcteOnTarget: ერთეულის თარგმანი ჩართულია %i.
+  wwcEntityTranslateDone: 'ნათარგმნი ერთეულის სახელი: %i'
+  wwcEntityTranslateNoName: სუბიექტს არ გააჩნია საბაჟო სახელი.
+  wwcConfigConversationErrorLimitInput: თითოეული მთარგმნელისთვის მიმდინარე შეცდომის
+    ლიმიტი არის %i. აკრიფეთ 0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან
+    აკრიფოთ არაფერი ნაკლები ან ტოლი 0-ის უკან დასაბრუნებლად.
+  wwcConfigGUIGlobalRateLimitButton: გლობალური განაკვეთის ლიმიტის შეცვლა
+  wwcteOnSender: ერთეულის თარგმანი ჩართულია. მარჯვენა ღილაკით სუბიექტის თარგმნა მისი
+    სახელი!
+  wwcInGameObjectTranslationFailCatastrophic: სამიზნე ობიექტის თარგმნა ვერ მოხერხდა.
+  wwcInGameEntityTranslationFailCatastrophic: სამიზნე სუბიექტის თარგმნა ვერ მოხერხდა.
+  wwcConfigGUIResponseLimitButton: შეცვლა თარჯიმანი რეაგირების შეყოვნება
+  wwcConfigMessageCharLimitEnabled: სიმბოლოთა ლიმიტი თითო შეტყობინება %i სიმბოლოებზე.
+  wwcteOffTarget: ერთეულის თარგმანი გათიშულია %i.
+  wwcCharLimit: შენი გზავნილი ძალიან გრძელია! გთხოვთ, დარწმუნდეთ, რომ თქვენი შეტყობინება
+    სიგრძე %i სიმბოლოზე ნაკლებია.
+  wwcConfigConversationResponseLimitInput: თითოეული მთარგმნელისთვის მიმდინარე რეაგირების
+    შეყოვნება არის %i წამი. აკრიფეთ 0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა,
+    ან აკრიფოთ არაფერი ნაკლები ან ტოლი 0 დაბრუნდეს.
+  wwcConfigConversationCharacterLimitInput: სიმბოლოთა მიმდინარე ლიმიტი თითო შეტყობინება
+    %i სიმბოლოებია. აკრიფეთ 0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან
+    აკრიფოთ არაფერი ნაკლები ან ტოლი 0 დაბრუნდეს.
+  wwcteOffSender: პირი თარგმანი გამორთულია.
+  wwctGUIEntityButton: სუბიექტური თარგმანის გადართვა
+  wwcConfigConversationResponseLimitSuccess: რეაგირების შეყოვნება წარმატებით არის
+    მითითებული.

@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: Тоглогч % Би олж чадаагүй.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобал чат орчуулагдаж
     байгаа боловч таны чатыг %o руу орчуулж байна.
-  wwcConfigGUIGlobalRateLimit: Глобал ханшийн хязгаарыг өөрчлөх
   wwcConfigGUIAmazonTranslateRegionButton: Амазоны бүсийг өөрчлөх
   wwcConfigConversationLangInput: 'Одоогийн залгаас хэл %i байна. хүчинтэй хэлний
     кодыг оруулна уу, эсвэл төрөл 0 цуцлах. Хүчинтэй хэлний код: %o'
@@ -224,21 +223,16 @@ Messages:
   wwcItemTranslateTitleDone: Орчуулсан зүйл нэр амжилттай.
   wwcGUITempItem: Дэлгэц зүйл
   wwcItemTranslateStart: Зорилтот зүйлийг орчуулах...
-  wwcSignTranslationFailCatastrophic: зорилтот тэмдэг орчуулж чадаагүй.
-  wwcItemTranslationFailCatastrophic: зорилтот зүйлийг орчуулж чадаагүй.
   wwcBookTranslateTitleSuccess: 'Орчуулсан Номын гарчиг: %i'
   wwctiOnSender: Барааны орчуулга идэвхжүүлсэн. Үүнийг орчуулахын тулд таны гол гарт
     байгаа зүйл нь баруун товшино уу!
   wwcItemTranslateLoreStart: Зорилтот зүйлийн Lore орчуулах...
   wwcItemTranslateLoreDone: Орчуулсан зүйл lore амжилттай.
   wwctiOnTarget: Барааны орчуулга %i идэвхжүүлсэн.
-  wwcBookTranslationFailCatastrophic: зорилтот номыг орчуулж чадаагүй.
   wwcBookTranslateTitleFail: Номын нэрийг орчуулж чадаагүй.
   wwcChatTranslationFail: Таны захиасыг орчуулж чадаагүй.
   wwcInvalidTranslator: Буруу орчуулагч тохиргоо. Үүнийг өөрийн config.yml эсвэл /wwcc
     ашиглан энэ залгаасыг ашиглана уу.
-  wwcNotDoneLoading: WorldWwidechat одоо ч гэсэн эхлүүлж байна. Удахгүй дахин оролдоно
-    уу.
   wwcConfigGUIEachTranslatorSettings: '%i Тохиргоо'
   wwcConfigGUIToggleButton: Toggle % 1
   wwcConfigGUIWatsonButton: Ватсон
@@ -289,3 +283,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Жинхэнэ Зурвас
   wwcConfigGUIDebugModeButton: Түлхүүр дибаг хийх горим
   wwcConfigConversationDebugModeSuccess: Амжилттай сольсон дибаг хийх горим.
+  wwcConfigGUIErrorLimitButton: Орчуулагч алдааны хязгаарыг өөрчлөх
+  wwcConfigConversationErrorLimitSuccess: Алдаа хязгаар амжилттай тогтоосон.
+  wwcEntityTranslateStart: Зорилтот аж ахуйн нэгжийг орчуулах...
+  wwcConfigGUICharacterLimitButton: Зурвас тэмдэгтийн хязгаарыг өөрчлөх
+  wwcConfigMessageCharLimitInvalid: config.yml-д заасан зурваст тутамд хүчингүй хязгаар.
+    255 chars нь анхдагч...
+  wwcConfigConversationCharacterLimitSuccess: Тэмдэгтийн хязгаар амжилттай тогтоосон.
+  wwcteOnTarget: Байгууллагын хөрвүүлэх %i идэвхжсэн.
+  wwcEntityTranslateDone: 'Орчуулсан аж ахуйн нэгжийн нэр: %i'
+  wwcEntityTranslateNoName: Аж ахуйн нэгж нь өөрчлөн нэртэй байх албагүй.
+  wwcConfigConversationErrorLimitInput: Орчуулагч бүрийн одоогийн алдааны хязгаар
+    %i байна. 0-ээс их зүйлийг бичиж, шинэ утгыг тохируулахын тулд эсвэл 0-ээс бага
+    эсвэл тэнцүү зүйлийг бичих хэрэгтэй.
+  wwcConfigGUIGlobalRateLimitButton: Глобал ханшийн хязгаарыг өөрчлөх
+  wwcteOnSender: Аж ахуйн нэгжийн орчуулга идэвхжсэн. Нэрээ орчуулахын тулд аж ахуйн
+    нэгж дээр хулганы баруун товчийг дараад
+  wwcInGameObjectTranslationFailCatastrophic: зорилтот объект орчуулах чадаагүй.
+  wwcInGameEntityTranslationFailCatastrophic: зорилтот аж ахуйн нэгж орчуулж чадаагүй.
+  wwcConfigGUIResponseLimitButton: Орчуулагч хариу Хугацаа өөрчлөх
+  wwcConfigMessageCharLimitEnabled: Зурвас бүрт тэмдэгтийн хязгаар нь %i тэмдэгтүүд.
+  wwcteOffTarget: Аж ахуйн нэгжийн орчуулга %i нь идэвхгүй.
+  wwcCharLimit: Таны мессеж хэтэрхий урт байна! Таны мессеж урт %i тэмдэгтээс бага
+    байгаа эсэхийг шалгана уу.
+  wwcConfigConversationResponseLimitInput: Орчуулагч бүрийн одоогийн хариу хугацаа
+    %i секунд байна. 0-ээс их зүйлийг шинэ утгыг тохируулахын тулд эсвэл 0-ээс бага
+    эсвэл тэнцүү зүйлийг бичиж өгнө үү.
+  wwcConfigConversationCharacterLimitInput: Мессеж дэх одоогийн тэмдэгтийн хязгаар
+    нь %i тэмдэгтүүд байна. 0-ээс их зүйлийг шинэ утгыг тохируулахын тулд эсвэл 0-ээс
+    бага эсвэл тэнцүү зүйлийг бичиж өгнө үү.
+  wwcteOffSender: Аж ахуйн нэгж орчуулга тахир дутуу.
+  wwctGUIEntityButton: Түлхүүр аж ахуйн нэгжийн орчуулга
+  wwcConfigConversationResponseLimitSuccess: Хариу хугацаа амжилттай тогтоосон.

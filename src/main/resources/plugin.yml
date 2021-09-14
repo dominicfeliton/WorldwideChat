@@ -1,5 +1,5 @@
 name: WorldwideChat
-version: 1.6.0
+version: 1.5.5
 description: Break the blocky language barrier!
 api-version: 1.14
 author: 3xpl0itz
@@ -47,6 +47,12 @@ commands:
         usage: §4/wwcti (playerName)
         permission: worldwidechat.wwcti
         permission-message: §4You do not have permission to run this command.
+    wwcte:
+        description: Enables entity translation to a certain language.
+        aliases: [wwctranslateentity, translateentity]
+        usage: §4/wwcte (playerName)
+        permission: worldwidechat.wwcte
+        permission-message: §4You do not have permission to run this command.
     wwcs:
         description: Gets translation stats for a specified user.
         aliases: [wwctranslatestats, translatestats]
@@ -81,6 +87,8 @@ permissions:
             worldwidechat.wwcts.otherplayers: true
             worldwidechat.wwcti: true
             worldwidechat.wwcti.otherplayers: true
+            worldwidechat.wwcte: true
+            worldwidechat.wwcte.otherplayers: true
             worldwidechat.wwcs: true
             worldwidechat.ratelimit.exempt: true
             worldwidechat.wwcc: true
@@ -121,6 +129,12 @@ permissions:
         default: true
     worldwidechat.wwcti.otherplayers:
         description: Gives access to /wwcti to a certain language on target players.
+        default: op
+    worldwidechat.wwcte:
+        description: Gives access to /wwcte.
+        default: true
+    worldwidechat.wwcte.otherplayers:
+        description: Gives access to /wwcte to a certain language on target players.
         default: op
     worldwidechat.wwcs:
         description: Gives access to /wwcs.

@@ -63,7 +63,6 @@ Messages:
   wwctPlayerNotFound: Ciyaartoy %Anigu lama helin.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Sheeko caalami ah ayaa
     loo turjumay, laakiin sheekeysigaaga waxaa loo turjumay %o.
-  wwcConfigGUIGlobalRateLimit: Bedelka Heerka Caalamiga ah
   wwcConfigGUIAmazonTranslateRegionButton: Beddel Gobolka Amazon
   wwcConfigConversationLangInput: 'Luuqada fiilinta imika waa %i. Fadlan gali lambarka
     luuqada oo sax ah, ama nooca 0 si aad u joojiso. Koodhadhka luuqada ee saxda ah:
@@ -231,21 +230,16 @@ Messages:
   wwcItemTranslateTitleDone: Horyaalka item turjumay si guul leh.
   wwcGUITempItem: Muujinta shayga
   wwcItemTranslateStart: Tarjumidda shayga bartilmaameedka...
-  wwcSignTranslationFailCatastrophic: Guuldareystay in ay turjumaan calaamad bartilmaameedka.
-  wwcItemTranslationFailCatastrophic: Guuldareystay in ay turjumaan item bartilmaameedka.
   wwcBookTranslateTitleSuccess: 'Cinwaanka buugga la turjumay: %i'
   wwctiOnSender: turjumaad Item karti. Xuquuqda-riix la shay in aad gacanta ugu weyn
     si ay u turjumaan!
   wwcItemTranslateLoreStart: Tarjumidda aamminsan ee shayga bartilmaameedka...
   wwcItemTranslateLoreDone: aamminsan item turjumay si guul leh.
   wwctiOnTarget: Turjumaad shayga awood u yeelo %i.
-  wwcBookTranslationFailCatastrophic: Ku guuldareystay in ay turjumaan buugga diirada
   wwcBookTranslateTitleFail: Ku guuldareystay in ay turjumaan horyaalka buugga.
   wwcChatTranslationFail: Ku guuldareystay in ay turjumaan aad fariin.
   wwcInvalidTranslator: Goobaha turjumaan aan sax ahayn. Fadlan hagaajin this in aad
     config.yml ama /wwcc si aad u isticmaasho plugin this.
-  wwcNotDoneLoading: WorldwideChat ayaa weli bilaabaysa. Fadlan isku day mar kale
-    wax yar.
   wwcConfigGUIEachTranslatorSettings: '%i Hagaajinta'
   wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
@@ -296,3 +290,38 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Fariin asal ah
   wwcConfigGUIDebugModeButton: Nooca Toggle Debug
   wwcConfigConversationDebugModeSuccess: Si guul leh toggled hab Debug.
+  wwcConfigGUIErrorLimitButton: Bedelka Khaladka Turjumaanka
+  wwcConfigConversationErrorLimitSuccess: xadka Error si guul leh dhigay.
+  wwcEntityTranslateStart: Tarjumidda hay'ad bartilmaameedka...
+  wwcConfigGUICharacterLimitButton: Badalka Fariinta Xadidan
+  wwcConfigMessageCharLimitInvalid: xadka aan sax ahayn halkii fariin dhigay config.yml.
+    Default in 255 chars...
+  wwcConfigConversationCharacterLimitSuccess: xadka Character si guul leh dhigay.
+  wwcteOnTarget: Turjubaan hay'ad ayaa awood u yeelatay %i.
+  wwcEntityTranslateDone: 'Magaca hay''ada la turjumay: %i'
+  wwcEntityTranslateNoName: Hay'adda ma laha magac caado.
+  wwcConfigConversationErrorLimitInput: Xadka qaladka imika ee turjumaan kasta waa
+    %i. Nooca wax ka weyn 0 si aad u dejiso qiime cusub, ama ku qor wax ka yar ama
+    u dhigma 0 si aad dib ugu noqoto.
+  wwcConfigGUIGlobalRateLimitButton: Bedelka Heerka Caalamiga ah
+  wwcteOnSender: Turjumaad hay'ad ayaa awood u leh. Xuquuqda-riix hay'ad si ay u turjumaan
+    magaceeda!
+  wwcInGameObjectTranslationFailCatastrophic: Ku guuldareystay in ay turjumaan shay
+    diirada.
+  wwcInGameEntityTranslationFailCatastrophic: Ku guuldareystay in ay turjumaan hay'ad
+    diirada
+  wwcConfigGUIResponseLimitButton: Bedelka Jawaabaha Turjubaanka
+  wwcConfigMessageCharLimitEnabled: Xaddidaadda xarfaha fariin kasta oo loo qoondeeyo
+    %i jilayaal.
+  wwcteOffTarget: Turjubaanka cidda naafada %i.
+  wwcCharLimit: Your fariin waa mid aad u dheer! Fadlan hubi in fariintaada ay ka
+    yartahay xarfaha %i oo dherer ah.
+  wwcConfigConversationResponseLimitInput: Jawaabta wakhtigan ee turjumaan kastaa
+    waa %i ilbiriqsi. Ku qor wax ka weyn 0 si aad u dejiso qiime cusub, ama ku qor
+    wax ka yar ama u dhigma 0 si aad dib ugu noqoto.
+  wwcConfigConversationCharacterLimitInput: Xadka dabeecadda hadda ee fariin kasta
+    waa %i jilayaal. Ku qor wax ka weyn 0 si aad u dejiso qiime cusub, ama ku qor
+    wax ka yar ama u dhigma 0 si aad dib ugu noqoto.
+  wwcteOffSender: Turjumaad hay'ad naafo.
+  wwctGUIEntityButton: Turjubaan Hay'adda Toggle
+  wwcConfigConversationResponseLimitSuccess: fekero Response dhigay si guul leh.

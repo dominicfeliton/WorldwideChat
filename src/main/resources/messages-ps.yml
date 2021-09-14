@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: . لوبغاړي ونه موندل شو
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ګلوبل چیٹ ژباړل کیږي،
     مګر ستاسو چیٹ د %o لپاره ژباړل کیږي.
-  wwcConfigGUIGlobalRateLimit: د نړیوال نرخ محدودیت بدل کړئ
   wwcConfigGUIAmazonTranslateRegionButton: د ایمیزون سیمه بدل کړئ
   wwcConfigConversationLangInput: 'د اوسني فلګن ژبه ده %i. مهرباني وکړئ د اعتبار وړ
     ژبې کوډ داخل کړئ، یا د فسخه کولو لپاره 0 ډول کړئ. د اعتبار وړ ژبې کوډونه: %o'
@@ -215,21 +214,16 @@ Messages:
   wwcItemTranslateTitleDone: ژباړل شوی توکی عنوان په بریالیتوب سره
   wwcGUITempItem: توکي ښودنه
   wwcItemTranslateStart: د هدف توکي ژباړل...
-  wwcSignTranslationFailCatastrophic: د نښه نښه ژباړلو کې پاتې راغله.
-  wwcItemTranslationFailCatastrophic: د هدف توکي ژباړلو کې پاتې راغی.
   wwcBookTranslateTitleSuccess: 'د ژباړل شوي کتاب سرليک: %i'
   wwctiOnSender: د توکو ژباړه فعاله شوه. په خپل اصلي لاس کې د یو توکي سره ښی کلیک
     وکړئ ترڅو دا ژباړئ!
   wwcItemTranslateLoreStart: د هدف توکي د لور ژباړه...
   wwcItemTranslateLoreDone: ژباړل شوي توکي په بریالیتوب سره.
   wwctiOnTarget: .توکی ژباړل د %i لپاره فعال شو
-  wwcBookTranslationFailCatastrophic: د هدف کتاب ژباړلو کې پاتې راغی.
   wwcBookTranslateTitleFail: د کتاب سرلیک ژباړلو کې پاتې راغی.
   wwcChatTranslationFail: ستاسو پیغام په ژباړلو کې پاتې راغی.
   wwcInvalidTranslator: ناسم ژباړونکي امستنې. مهرباني وکړئ دا په خپل config.yml یا/wwcc
     سره د دې فلګین کارولو لپاره حل کړئ.
-  wwcNotDoneLoading: WorldwideChat لا تر اوسه پیل کیږي. مهرباني وکړئ لږ تر لږه بیا
-    هڅه وکړئ.
   wwcConfigGUIEachTranslatorSettings: '%i سازونه'
   wwcConfigGUIToggleButton: ټولي %i
   wwcConfigGUIWatsonButton: واټسن
@@ -279,3 +273,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: اصلي استوزه
   wwcConfigGUIDebugModeButton: د ډيباګ اکر توګول
   wwcConfigConversationDebugModeSuccess: په بریالیتوب سره د Debug موډل شوی.
+  wwcConfigGUIErrorLimitButton: د ژباړونکي تېروتنه حد بدلول
+  wwcConfigConversationErrorLimitSuccess: د تېروتنې حد په بریالیتوب سره ټاکل.
+  wwcEntityTranslateStart: د هدفي ارګان ژباړل...
+  wwcConfigGUICharacterLimitButton: د استوزې کرکټر حد بدلول
+  wwcConfigMessageCharLimitInvalid: په config.yml کې د هر پیغام ټاکل ناسم حد 255 چرو
+    ته تلل...
+  wwcConfigConversationCharacterLimitSuccess: د کرکټر حد په بریالیتوب سره ټاکل شو
+  wwcteOnTarget: .د بنسټ ژباړل %i لپاره فعال شو
+  wwcEntityTranslateDone: 'ژباړل شوي بنسټ نوم: %i'
+  wwcEntityTranslateNoName: اداره دوديز نوم نلري.
+  wwcConfigConversationErrorLimitInput: د هر ژباړونکي لپاره د اوسني تېروتنه محدودیت
+    %i دی. له 0 څخه ډیر څه ولیکئ چې نوی ارزښت وټاکئ، یا له 0 څخه کم یا مساوي څه ولیکئ
+    چې بیرته لاړ شئ.
+  wwcConfigGUIGlobalRateLimitButton: د نړیوال نرخ محدودیت بدل کړئ
+  wwcteOnSender: د بنسټ ژباړه فعاله شوه. د خپل نوم د ژباړلو لپاره په یوه اداره باندې
+    ښی کلیک وکړئ!
+  wwcInGameObjectTranslationFailCatastrophic: . هدف څيز ژباړلو کې پاتې راغی
+  wwcInGameEntityTranslationFailCatastrophic: د هدف ارګان ژباړلو کې پاتې راغی
+  wwcConfigGUIResponseLimitButton: د ژباړونکي غبرګون وخت بدل کړئ
+  wwcConfigMessageCharLimitEnabled: .د استوزې په ټولې %i حروفونو ته د توري حد
+  wwcteOffTarget: .د بنسټ ژباړه ناتوانول شو %i لپاره
+  wwcCharLimit: ستاسو پیغام ډیر اوږد دی! مهرباني وکړئ ډاډ ترلاسه کړئ چې ستاسو پیغام
+    په اوږدوالي کې له %i څخه کم دی.
+  wwcConfigConversationResponseLimitInput: د هر ژباړونکي لپاره اوسنی غبرګون وخت اوټ
+    %i ثانیې دی. د نوي ارزښت ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د 0 څخه کم یا مساوي
+    څه ولیکئ چې بیرته لاړ شئ.
+  wwcConfigConversationCharacterLimitInput: .په پیغام کې د اوسني کرکټر حد %i حروفونه
+    دي د نوي ارزښت ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د 0 څخه کم یا مساوي څه ولیکئ
+    چې بیرته لاړ شئ.
+  wwcteOffSender: د بنسټ ژباړه معلول.
+  wwctGUIEntityButton: د بنسټ ژباړه توګول
+  wwcConfigConversationResponseLimitSuccess: د غبرګون وخت وخت په بریالیتوب سره وټاکل
+    شو.

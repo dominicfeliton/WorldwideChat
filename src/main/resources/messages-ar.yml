@@ -57,7 +57,6 @@ Messages:
   wwctPlayerNotFound: لم يتم العثور على اللاعب %.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: تتم ترجمة الدردشة العامة،
     ولكن تتم ترجمة الدردشة إلى %o.
-  wwcConfigGUIGlobalRateLimit: تغيير حد السعر العالمي
   wwcConfigGUIAmazonTranslateRegionButton: تغيير منطقة الأمازون
   wwcConfigConversationLangInput: 'لغة البرنامج المساعد الحالية هو %i. الرجاء إدخال
     رمز لغة صالح، أو اكتب 0 للإلغاء. رموز لغة صالحة: %o'
@@ -207,21 +206,16 @@ Messages:
   wwcItemTranslateTitleDone: عنوان العنصر المترجم بنجاح.
   wwcGUITempItem: عرض السلعة
   wwcItemTranslateStart: ترجمة العنصر المستهدف...
-  wwcSignTranslationFailCatastrophic: فشل ترجمة علامة الهدف.
-  wwcItemTranslationFailCatastrophic: فشل ترجمة العنصر المستهدف.
   wwcBookTranslateTitleSuccess: 'عنوان الكتاب المترجمة: %i'
   wwctiOnSender: تم تمكين ترجمة العنصر. انقر بزر الماوس الأيمن مع عنصر في يدك الرئيسية
     لترجمته!
   wwcItemTranslateLoreStart: ترجمة تقاليد العنصر المستهدف...
   wwcItemTranslateLoreDone: تقاليد العنصر المترجم بنجاح.
   wwctiOnTarget: تم تمكين ترجمة العنصر لـ %i.
-  wwcBookTranslationFailCatastrophic: فشل ترجمة الكتاب المستهدف.
   wwcBookTranslateTitleFail: فشل ترجمة عنوان الكتاب.
   wwcChatTranslationFail: فشلت ترجمة رسالتك.
   wwcInvalidTranslator: إعدادات المترجم غير صالحة. يرجى إصلاح هذا في config.yml الخاص
     بك أو مع/wwcc لاستخدام هذا البرنامج المساعد.
-  wwcNotDoneLoading: لا تزال WorldwideChat في مرحلة التهيئة. يرجى المحاولة مرة أخرى
-    قريبًا.
   wwcConfigGUIEachTranslatorSettings: تكوين %i
   wwcConfigGUIToggleButton: تبديل إلى %i
   wwcConfigGUIWatsonButton: واتسون
@@ -269,3 +263,31 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: الرسالة الأصلية
   wwcConfigGUIDebugModeButton: تبديل وضع التصحيح
   wwcConfigConversationDebugModeSuccess: تم تبديل وضع التصحيح بنجاح.
+  wwcConfigGUIErrorLimitButton: تغيير حد خطأ المترجم
+  wwcConfigConversationErrorLimitSuccess: تم تعيين حد الخطأ بنجاح.
+  wwcEntityTranslateStart: ترجمة الكيان المستهدف...
+  wwcConfigGUICharacterLimitButton: تغيير حد أحرف الرسالة
+  wwcConfigMessageCharLimitInvalid: حد غير صالح لكل رسالة تم تعيينها في config.yml.
+    افتراضيًا إلى 255 حرفًا...
+  wwcConfigConversationCharacterLimitSuccess: تم تعيين حد الأحرف بنجاح.
+  wwcteOnTarget: تم تمكين ترجمة الكيان لـ %i.
+  wwcEntityTranslateDone: 'اسم الكيان المترجم: %i'
+  wwcEntityTranslateNoName: لا يحتوي الكيان على اسم مخصص.
+  wwcConfigConversationErrorLimitInput: حد الخطأ الحالي لكل مترجم هو %i. اكتب أي شيء
+    أكبر من 0 لتعيين قيمة جديدة، أو اكتب أي شيء أقل من أو يساوي 0 للعودة.
+  wwcConfigGUIGlobalRateLimitButton: تغيير حد السعر العالمي
+  wwcteOnSender: تم تمكين ترجمة الكيان. انقر بزر الماوس الأيمن على كيان لترجمة اسمه!
+  wwcInGameObjectTranslationFailCatastrophic: فشل ترجمة الكائن الهدف.
+  wwcInGameEntityTranslationFailCatastrophic: فشل ترجمة الكيان المستهدف.
+  wwcConfigGUIResponseLimitButton: تغيير مهلة استجابة المترجم
+  wwcConfigMessageCharLimitEnabled: تم تعيين حد الأحرف لكل رسالة إلى أحرف %i.
+  wwcteOffTarget: تم تعطيل ترجمة الكيان لـ %i.
+  wwcCharLimit: رسالتك طويلة جدًا! يرجى التأكد من أن رسالتك أقل من %i حرف في الطول.
+  wwcConfigConversationResponseLimitInput: مهلة الاستجابة الحالية لكل مترجم هي %i
+    ثانية. اكتب أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب أي شيء أقل من أو يساوي
+    0 للعودة.
+  wwcConfigConversationCharacterLimitInput: الحد الحالي للحرف لكل رسالة هو %i حرف.
+    اكتب أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب أي شيء أقل من أو يساوي 0 للعودة.
+  wwcteOffSender: تم تعطيل ترجمة الكيان.
+  wwctGUIEntityButton: تبديل ترجمة الكيان
+  wwcConfigConversationResponseLimitSuccess: تم تعيين مهلة الاستجابة بنجاح.

@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: A (z) %i játékos nem található.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'A globális csevegés
     lefordítása folyamatban van, de a csevegésedet lefordítjuk erre: %o.'
-  wwcConfigGUIGlobalRateLimit: Globális díjkorlát módosítása
   wwcConfigGUIAmazonTranslateRegionButton: Az Amazon régió megváltoztatása
   wwcConfigConversationLangInput: 'A beépülő modul jelenlegi nyelve: %i. Adjon meg
     egy érvényes nyelvi kódot, vagy írja be a 0 értéket a törléshez. Érvényes nyelvkódok:
@@ -229,21 +228,16 @@ Messages:
   wwcItemTranslateTitleDone: A lefordított tétel címe sikeresen.
   wwcGUITempItem: Elem megjelenítése
   wwcItemTranslateStart: Célelem lefordítása...
-  wwcSignTranslationFailCatastrophic: Nem sikerült lefordítani a céltáblát.
-  wwcItemTranslationFailCatastrophic: Nem sikerült lefordítani a célelemet.
   wwcBookTranslateTitleSuccess: 'Fordított könyv címe: %i'
   wwctiOnSender: Elem fordítás engedélyezve. Kattintson a jobb gombbal egy tételre
     a fő kezében, hogy lefordítsa!
   wwcItemTranslateLoreStart: A céltárgy lefordítása...
   wwcItemTranslateLoreDone: Fordított tétel Lore sikeresen.
   wwctiOnTarget: Elemfordítás engedélyezve a %i számára.
-  wwcBookTranslationFailCatastrophic: Nem sikerült lefordítani a célkönyvet.
   wwcBookTranslateTitleFail: Nem sikerült lefordítani a könyv címét.
   wwcChatTranslationFail: Nem sikerült lefordítani az üzenetet.
   wwcInvalidTranslator: Érvénytelen fordítói beállítások. Kérjük, javítsa ki ezt a
     config.yml vagy /wwcc segítségével a plugin használatához.
-  wwcNotDoneLoading: A WorldwideChat még mindig inicializálódik. Kérjük, próbálja
-    meg újra hamarosan.
   wwcConfigGUIEachTranslatorSettings: '%i konfiguráció'
   wwcConfigGUIToggleButton: '%i be-'
   wwcConfigGUIWatsonButton: Watson
@@ -293,3 +287,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Eredeti üzenet
   wwcConfigGUIDebugModeButton: Hibakeresési mód ki- és bekapcsolása
   wwcConfigConversationDebugModeSuccess: Sikeresen váltott hibakeresési mód.
+  wwcConfigGUIErrorLimitButton: Fordítói hiba korlát módosítása
+  wwcConfigConversationErrorLimitSuccess: Hibakorlát beállítása sikeresen.
+  wwcEntityTranslateStart: Célentitás lefordítása...
+  wwcConfigGUICharacterLimitButton: Üzenet karakterkorlátának módosítása
+  wwcConfigMessageCharLimitInvalid: A config.yml fájlban megadott üzenetenkénti korlát
+    érvénytelen. Nem teljesítve 255 Charm...
+  wwcConfigConversationCharacterLimitSuccess: Karakterkorlát sikeresen beállítva.
+  wwcteOnTarget: Entitásfordítás engedélyezve a %i.
+  wwcEntityTranslateDone: 'Fordított entitás neve: %i'
+  wwcEntityTranslateNoName: Az entitás nem rendelkezik egyéni névvel.
+  wwcConfigConversationErrorLimitInput: 'Az aktuális hibahatár minden fordítónál:
+    %i. Írjon be minden 0-nál nagyobb értéket egy új érték beállításához, vagy írjon
+    be egy nullánál kisebb vagy egyenlő értéket a visszalépéshez.'
+  wwcConfigGUIGlobalRateLimitButton: Globális díjkorlát módosítása
+  wwcteOnSender: Entitásfordítás engedélyezve Kattintson a jobb gombbal egy entitásra,
+    hogy lefordítsa a nevét!
+  wwcInGameObjectTranslationFailCatastrophic: Nem sikerült lefordítani a célobjektumot.
+  wwcInGameEntityTranslationFailCatastrophic: Nem sikerült lefordítani a célentitást.
+  wwcConfigGUIResponseLimitButton: Fordítói válasz időtúllépése
+  wwcConfigMessageCharLimitEnabled: Karakterkorlát üzenetenként %i karakterre állítva.
+  wwcteOffTarget: 'Entitásfordítás letiltva: %i.'
+  wwcCharLimit: Túl hosszú az üzeneted! Győződjön meg arról, hogy az üzenet hossza
+    kevesebb, mint a %i karakter.
+  wwcConfigConversationResponseLimitInput: 'Az aktuális válaszidőtúllépés minden fordítónál:
+    %i másodperc. Ha új értéket szeretne beállítani, írjon be egy 0-nál nagyobb értéket,
+    vagy írjon be egy nullánál kisebb vagy egyenlő értéket a visszatéréshez.'
+  wwcConfigConversationCharacterLimitInput: Az üzenetenkénti aktuális karakterkorlát
+    %i karakter. Ha új értéket szeretne beállítani, írjon be egy 0-nál nagyobb értéket,
+    vagy írjon be egy nullánál kisebb vagy egyenlő értéket a visszatéréshez.
+  wwcteOffSender: Az entitásfordítás letiltva
+  wwctGUIEntityButton: Entitásfordítás be-
+  wwcConfigConversationResponseLimitSuccess: A válaszidőtúllépés sikeresen beállítva.

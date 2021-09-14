@@ -16,6 +16,7 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
+import com.expl0itz.worldwidechat.commands.WWCTranslateEntity;
 import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.conversations.wwctranslategui.RateLimitConversation;
@@ -121,10 +122,13 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 							.withFirstPrompt(new RateLimitConversation(targetTranslator));
 					ItemStack rateButton = new ItemStack(Material.SLIME_BLOCK);
 					ItemMeta rateMeta = rateButton.getItemMeta();
-					rateMeta.setDisplayName(ChatColor.GREEN
-							+ CommonDefinitions.getMessage("wwctGUIRateButton"));
 					if (targetTranslator.getRateLimit() > 0) {
 						rateMeta.addEnchant(glow, 1, true);
+						rateMeta.setDisplayName(ChatColor.GREEN
+								+ CommonDefinitions.getMessage("wwctGUIRateButton"));
+					} else {
+						rateMeta.setDisplayName(ChatColor.YELLOW
+								+ CommonDefinitions.getMessage("wwctGUIRateButton"));
 					}
 					rateButton.setItemMeta(rateMeta);
 					contents.set(3, 2, ClickableItem.of(rateButton, e -> {
@@ -137,10 +141,13 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 						&& (player.hasPermission("worldwidechat.wwctb.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
 					ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
 					ItemMeta bookMeta = bookButton.getItemMeta();
-					bookMeta.setDisplayName(ChatColor.GREEN
-							+ CommonDefinitions.getMessage("wwctGUIBookButton"));
 					if (targetTranslator.getTranslatingBook()) {
+						bookMeta.setDisplayName(ChatColor.GREEN
+								+ CommonDefinitions.getMessage("wwctGUIBookButton"));
 						bookMeta.addEnchant(glow, 1, true);
+					} else {
+						bookMeta.setDisplayName(ChatColor.YELLOW
+								+ CommonDefinitions.getMessage("wwctGUIBookButton"));
 					}
 					bookButton.setItemMeta(bookMeta);
 					contents.set(3, 1, ClickableItem.of(bookButton, e -> {
@@ -156,10 +163,13 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 						&& (player.hasPermission("worldwidechat.wwcts.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
 					ItemStack signButton = new ItemStack(Material.OAK_SIGN);
 					ItemMeta signMeta = signButton.getItemMeta();
-					signMeta.setDisplayName(ChatColor.GREEN
-							+ CommonDefinitions.getMessage("wwctGUISignButton"));
 					if (targetTranslator.getTranslatingSign()) {
+						signMeta.setDisplayName(ChatColor.GREEN
+								+ CommonDefinitions.getMessage("wwctGUISignButton"));
 						signMeta.addEnchant(glow, 1, true);
+					} else {
+						signMeta.setDisplayName(ChatColor.YELLOW
+								+ CommonDefinitions.getMessage("wwctGUISignButton"));
 					}
 					signButton.setItemMeta(signMeta);
 					contents.set(3, 7, ClickableItem.of(signButton, e -> {
@@ -173,18 +183,43 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				/* Item Translation Button */
 				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcti")
 						&& (player.hasPermission("worldwidechat.wwcti.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
-					ItemStack itemButton = new ItemStack(Material.NAME_TAG);
+					ItemStack itemButton = new ItemStack(Material.GRASS_BLOCK);
 					ItemMeta itemMeta = itemButton.getItemMeta();
-					itemMeta.setDisplayName(ChatColor.GREEN
-							+ CommonDefinitions.getMessage("wwctGUIItemButton"));
 					if (targetTranslator.getTranslatingItem()) {
+						itemMeta.setDisplayName(ChatColor.GREEN
+								+ CommonDefinitions.getMessage("wwctGUIItemButton"));
 						itemMeta.addEnchant(glow, 1, true);
+					} else {
+						itemMeta.setDisplayName(ChatColor.YELLOW
+								+ CommonDefinitions.getMessage("wwctGUIItemButton"));
 					}
 					itemButton.setItemMeta(itemMeta);
 					contents.set(3, 6, ClickableItem.of(itemButton, e -> {
 						String[] args = { main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName() };
 						WWCTranslateItem translateItem = new WWCTranslateItem((CommandSender) player, null, null, args);
 						translateItem.processCommand();
+						getTranslateMainMenu(targetPlayerUUID).open(player);
+					}));
+				}
+				
+				/* Entity Translation Button */
+				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcte")
+						&& (player.hasPermission("worldwidechat.wwcte.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
+					ItemStack entityButton = new ItemStack(Material.NAME_TAG);
+					ItemMeta entityMeta = entityButton.getItemMeta();
+					if (targetTranslator.getTranslatingEntity()) {
+						entityMeta.addEnchant(glow, 1, true);
+						entityMeta.setDisplayName(ChatColor.GREEN
+								+ CommonDefinitions.getMessage("wwctGUIEntityButton"));
+					} else {
+						entityMeta.setDisplayName(ChatColor.YELLOW
+								+ CommonDefinitions.getMessage("wwctGUIEntityButton"));
+					}
+					entityButton.setItemMeta(entityMeta);
+					contents.set(2, 1, ClickableItem.of(entityButton, e -> {
+						String[] args = { main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName() };
+						WWCTranslateEntity translateEntity = new WWCTranslateEntity((CommandSender) player, null, null, args);
+						translateEntity.processCommand();
 						getTranslateMainMenu(targetPlayerUUID).open(player);
 					}));
 				}

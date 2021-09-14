@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: Speler %ek nie gevind nie.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat word vertaal,
     maar jou chat word vertaal na %o.
-  wwcConfigGUIGlobalRateLimit: Verander Globale Koersbeperking
   wwcConfigGUIAmazonTranslateRegionButton: Verander Amazon Streek
   wwcConfigConversationLangInput: 'Die huidige inprop taal is %i. Voer asseblief ''n
     geldige taalkode in, of tik 0 om te kanselleer. Geldige taalkodes: %o'
@@ -220,21 +219,16 @@ Messages:
   wwcItemTranslateTitleDone: Vertaal item titel suksesvol.
   wwcGUITempItem: Item Vertoon
   wwcItemTranslateStart: Vertaal teiken item...
-  wwcSignTranslationFailCatastrophic: Misluk om teiken teken te vertaal.
-  wwcItemTranslationFailCatastrophic: Misluk om teiken item te vertaal.
   wwcBookTranslateTitleSuccess: 'Vertaalde Boek Titel: %i'
   wwctiOnSender: Item vertaling geaktiveer. Regs-kliek met 'n item in jou hoof hand
     om dit te vertaal!
   wwcItemTranslateLoreStart: Vertaling van leersaamhede van teiken item...
   wwcItemTranslateLoreDone: Vertaal item leersaamhede suksesvol.
   wwctiOnTarget: Item vertaling geaktiveer vir %i.
-  wwcBookTranslationFailCatastrophic: Misluk om teiken boek te vertaal.
   wwcBookTranslateTitleFail: Misluk om boektitel te vertaal.
   wwcChatTranslationFail: Misluk om jou boodskap te vertaal.
   wwcInvalidTranslator: Ongeldige vertaler instellings. Los dit asseblief in jou config.yml
     of met/wwcc om hierdie inprop te gebruik.
-  wwcNotDoneLoading: WorldwideChat is nog steeds inisialiseer. Probeer asseblief weer
-    binnekort.
   wwcConfigGUIEachTranslatorSettings: '%i Opstelling'
   wwcConfigGUIToggleButton: Wissel
   wwcConfigGUIWatsonButton: Watson
@@ -284,3 +278,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Oorspronklike boodskap
   wwcConfigGUIDebugModeButton: Wissel Debug Modus
   wwcConfigConversationDebugModeSuccess: Suksesvol geskakel ontfouting modus.
+  wwcConfigGUIErrorLimitButton: Verander Vertaler Fout Limiet
+  wwcConfigConversationErrorLimitSuccess: Fout limiet stel suksesvol.
+  wwcEntityTranslateStart: Vertaal teiken entiteit...
+  wwcConfigGUICharacterLimitButton: Verander boodskap Karakter perk
+  wwcConfigMessageCharLimitInvalid: Ongeldige limiet per boodskap stel in config.yml.
+    Verstek na 255 karakters...
+  wwcConfigConversationCharacterLimitSuccess: Karakter limiet stel suksesvol.
+  wwcteOnTarget: Entiteitsvertaling geaktiveer vir %i.
+  wwcEntityTranslateDone: 'Vertaalde Entiteit Naam: %i'
+  wwcEntityTranslateNoName: Entiteit het nie 'n pasmaak naam nie.
+  wwcConfigConversationErrorLimitInput: Die huidige fout limiet vir elke vertaler
+    is %i. Tik enigiets groter as 0 om 'n nuwe waarde in te stel, of tik enigiets
+    minder as of gelyk aan 0 om terug te gaan.
+  wwcConfigGUIGlobalRateLimitButton: Verander Globale Koersbeperking
+  wwcteOnSender: Entiteit vertaling geaktiveer. Regskliek op 'n entiteit om sy naam
+    te vertaal!
+  wwcInGameObjectTranslationFailCatastrophic: Misluk om teiken voorwerp te vertaal.
+  wwcInGameEntityTranslationFailCatastrophic: Misluk om teiken entiteit te vertaal.
+  wwcConfigGUIResponseLimitButton: Verander Vertaler Reaksie Tydverstrek
+  wwcConfigMessageCharLimitEnabled: Karakter limiet per boodskap stel na %i karakters.
+  wwcteOffTarget: Entiteitsvertaling gedeaktiveer vir %i.
+  wwcCharLimit: Jou boodskap is te lank! Maak asseblief seker dat jou boodskap minder
+    as %i karakters in lengte is.
+  wwcConfigConversationResponseLimitInput: Die huidige reaksie tydsverloop vir elke
+    vertaler is %i sekondes. Tik enigiets groter as 0 om 'n nuwe waarde in te stel,
+    of tik enigiets minder as of gelyk aan 0 om terug te gaan.
+  wwcConfigConversationCharacterLimitInput: Die huidige karakterlimiet per boodskap
+    is %i karakters. Tik enigiets groter as 0 om 'n nuwe waarde in te stel, of tik
+    enigiets minder as of gelyk aan 0 om terug te gaan.
+  wwcteOffSender: Entiteit vertaling gedeaktiveer.
+  wwctGUIEntityButton: Wissel Entiteit Vertaling
+  wwcConfigConversationResponseLimitSuccess: Reaksie tydverstrek suksesvol gestel.

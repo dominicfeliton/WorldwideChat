@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: Hráč %Nenašiel som.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globálny chat je prekladaný,
     ale váš chat je prekladaný do %o.
-  wwcConfigGUIGlobalRateLimit: Zmena globálneho limitu rýchlosti
   wwcConfigGUIAmazonTranslateRegionButton: Zmeniť oblasť Amazon
   wwcConfigConversationLangInput: 'Aktuálny jazyk pluginu je %i. Prosím zadajte platný
     kód jazyka alebo zadajte 0 pre zrušenie. Platné kódy jazykov: %o'
@@ -229,21 +228,16 @@ Messages:
   wwcItemTranslateTitleDone: Názov položky bol úspešne preložený.
   wwcGUITempItem: Zobrazenie položky
   wwcItemTranslateStart: Preklad cieľovej položky...
-  wwcSignTranslationFailCatastrophic: Nepodarilo sa preložiť cieľový znak.
-  wwcItemTranslationFailCatastrophic: Nepodarilo sa preložiť cieľovú položku.
   wwcBookTranslateTitleSuccess: 'Preklad názvu knihy: %i'
   wwctiOnSender: Preklad položiek povolený. Kliknite pravým tlačidlom myši na položku
     v hlavnej ruke, aby ste ju preložili!
   wwcItemTranslateLoreStart: Preklad tradície cieľovej položky...
   wwcItemTranslateLoreDone: Preložené položky tradície úspešne.
   wwctiOnTarget: Preklad položiek povolený pre %i.
-  wwcBookTranslationFailCatastrophic: Nepodarilo sa preložiť cieľovú knihu.
   wwcBookTranslateTitleFail: Nepodarilo sa preložiť názov knihy.
   wwcChatTranslationFail: Nepodarilo sa preložiť správu.
   wwcInvalidTranslator: Neplatné nastavenia prekladateľa. Opravte to vo vašom config.yml
     alebo /wwcc použiť tento plugin.
-  wwcNotDoneLoading: WorldwideChat sa stále inicializuje. Prosím, skúste to znova
-    krátko.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurácia'
   wwcConfigGUIToggleButton: Prepnúť %i
   wwcConfigGUIWatsonButton: Watson
@@ -292,3 +286,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Pôvodná správa
   wwcConfigGUIDebugModeButton: Prepnúť režim ladenia
   wwcConfigConversationDebugModeSuccess: Úspešne prepnutý ladiaci režim.
+  wwcConfigGUIErrorLimitButton: Zmeniť limit chýb prekladateľa
+  wwcConfigConversationErrorLimitSuccess: Úspešne nastavený limit chýb.
+  wwcEntityTranslateStart: Preklad cieľovej entity...
+  wwcConfigGUICharacterLimitButton: Zmeniť limit znakov správy
+  wwcConfigMessageCharLimitInvalid: Neplatný limit pre správu nastavený v config.yml.
+    Predvolené na 255 znakov...
+  wwcConfigConversationCharacterLimitSuccess: Nastavenie limitov znakov úspešne.
+  wwcteOnTarget: Preklad entity povolený pre %i.
+  wwcEntityTranslateDone: 'Preložený názov entity: %i'
+  wwcEntityTranslateNoName: Entita nemá vlastný názov.
+  wwcConfigConversationErrorLimitInput: Aktuálny limit chýb pre každého prekladateľa
+    je %i. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu, alebo zadajte
+    niečo menšie alebo rovnajúce sa 0, aby ste sa vrátili späť.
+  wwcConfigGUIGlobalRateLimitButton: Zmena globálneho limitu rýchlosti
+  wwcteOnSender: Preklad entít povolený. Kliknite pravým tlačidlom myši na entitu
+    a preložte jej názov!
+  wwcInGameObjectTranslationFailCatastrophic: Nepodarilo sa preložiť cieľový objekt.
+  wwcInGameEntityTranslationFailCatastrophic: Nepodarilo sa preložiť cieľovú entitu.
+  wwcConfigGUIResponseLimitButton: Zmeniť časový limit odpovede prekladateľa
+  wwcConfigMessageCharLimitEnabled: Obmedzenie znakov na správu nastavené na %i znakov.
+  wwcteOffTarget: Preklad entít vypnutý pre %i.
+  wwcCharLimit: Vaša správa je príliš dlhá! Uistite sa, že vaša správa je menšia ako
+    %i znakov.
+  wwcConfigConversationResponseLimitInput: Aktuálny časový limit odpovede pre každého
+    prekladateľa je %i sekúnd. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú
+    hodnotu, alebo zadajte niečo menšie alebo rovnajúce sa 0 a vráťte sa späť.
+  wwcConfigConversationCharacterLimitInput: Aktuálny limit znakov na správu je %i
+    znakov. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu, alebo
+    zadajte niečo menšie alebo rovnajúce sa 0 a vráťte sa späť.
+  wwcteOffSender: Preklad entít vypnutý.
+  wwctGUIEntityButton: Prepnúť preklad entity
+  wwcConfigConversationResponseLimitSuccess: Časový limit odpovede nastavený úspešne.

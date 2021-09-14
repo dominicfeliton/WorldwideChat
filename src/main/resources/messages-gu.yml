@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: ખેલાડી % મને મળ્યું નથી.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: વૈશ્વિક ચેટનો અનુવાદ
     થઈ રહ્યો છે, પરંતુ તમારી ચેટનો અનુવાદ %o માં થઈ રહ્યો છે.
-  wwcConfigGUIGlobalRateLimit: વૈશ્વિક દર મર્યાદા બદલો
   wwcConfigGUIAmazonTranslateRegionButton: એમેઝોન પ્રદેશ બદલો
   wwcConfigConversationLangInput: 'વર્તમાન પ્લગઇન ભાષા %i છે કૃપા કરીને માન્ય ભાષા
     કોડ દાખલ કરો, અથવા રદ કરવા માટે 0 લખો. માન્ય ભાષા કોડ: %o'
@@ -219,21 +218,16 @@ Messages:
   wwcItemTranslateTitleDone: અનુવાદિત આઇટમ શીર્ષક સફળતાપૂર્વક.
   wwcGUITempItem: આઇટમ દર્શાવો
   wwcItemTranslateStart: લક્ષ્ય આઇટમનું ભાષાંતર કરી રહ્યું છે...
-  wwcSignTranslationFailCatastrophic: લક્ષ્ય ચિહ્નનું ભાષાંતર કરવામાં નિષ્ફળ થયું.
-  wwcItemTranslationFailCatastrophic: લક્ષ્ય આઇટમનું ભાષાંતર કરવામાં નિષ્ફળ થયું.
   wwcBookTranslateTitleSuccess: 'અનુવાદિત પુસ્તક શીર્ષક: %i'
   wwctiOnSender: આઇટમ અનુવાદ સક્ષમ. તેને અનુવાદિત કરવા માટે તમારા મુખ્ય હાથમાં આઇટમ
     સાથે જમણું-ક્લિક કરો!
   wwcItemTranslateLoreStart: લક્ષ્ય આઇટમની ભાષાંતરની...
   wwcItemTranslateLoreDone: અનુવાદિત આઇટમ સફળતાપૂર્વક.
   wwctiOnTarget: આઇટમ અનુવાદ %i માટે સક્ષમ.
-  wwcBookTranslationFailCatastrophic: લક્ષ્ય પુસ્તકનું ભાષાંતર કરવામાં નિષ્ફળ થયું.
   wwcBookTranslateTitleFail: પુસ્તક શીર્ષકનું ભાષાંતર કરવામાં નિષ્ફળ થયું.
   wwcChatTranslationFail: તમારા સંદેશનું ભાષાંતર કરવામાં નિષ્ફળ થયું.
   wwcInvalidTranslator: અમાન્ય અનુવાદક સેટિંગ્સ. કૃપા કરીને આ પલ્ગઇનની વાપરવા માટે
     તમારા config.yml અથવા સાથે/wwcc માં ઠીક કરો.
-  wwcNotDoneLoading: વર્લ્ડવાઇડચેટ હજી પણ પ્રારંભ કરી રહ્યું છે. કૃપા કરીને ટૂંક સમયમાં
-    ફરી પ્રયાસ કરો.
   wwcConfigGUIEachTranslatorSettings: '%i રૂપરેખાંકન'
   wwcConfigGUIToggleButton: ટૉગલ %i
   wwcConfigGUIWatsonButton: વોટસન
@@ -284,3 +278,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: મૂળ સંદેશ
   wwcConfigGUIDebugModeButton: ટૉગલ ડીબગ મોડ
   wwcConfigConversationDebugModeSuccess: ડિબગ મોડને સફળતાપૂર્વક ટૉગલ કર્યું.
+  wwcConfigGUIErrorLimitButton: અનુવાદક ભૂલ મર્યાદા બદલો
+  wwcConfigConversationErrorLimitSuccess: ભૂલ મર્યાદા સફળતાપૂર્વક સેટ.
+  wwcEntityTranslateStart: લક્ષ્ય એન્ટિટીનું અનુવાદ...
+  wwcConfigGUICharacterLimitButton: સંદેશ અક્ષર મર્યાદા બદલો
+  wwcConfigMessageCharLimitInvalid: config.yml માં સેટ સંદેશ દીઠ અમાન્ય મર્યાદા. 255
+    ચરસ માટે ડિફોલ્ટિંગ...
+  wwcConfigConversationCharacterLimitSuccess: અક્ષર મર્યાદા સફળતાપૂર્વક સેટ.
+  wwcteOnTarget: એન્ટિટી અનુવાદ %i માટે સક્ષમ છે.
+  wwcEntityTranslateDone: 'અનુવાદિત એન્ટિટી નામ: %i'
+  wwcEntityTranslateNoName: એન્ટિટીમાં કસ્ટમ નામ નથી.
+  wwcConfigConversationErrorLimitInput: દરેક અનુવાદક માટે વર્તમાન ભૂલ મર્યાદા %i છે
+    નવું મૂલ્ય સેટ કરવા માટે 0 કરતા વધારે કંઈપણ લખો, અથવા પાછા જવા માટે 0 કરતા ઓછા
+    અથવા સમાન કંઈપણ લખો.
+  wwcConfigGUIGlobalRateLimitButton: વૈશ્વિક દર મર્યાદા બદલો
+  wwcteOnSender: એન્ટિટી અનુવાદ સક્ષમ. તેના નામનું અનુવાદ કરવા માટે એન્ટિટી પર જમણું-ક્લિક
+    કરો!
+  wwcInGameObjectTranslationFailCatastrophic: લક્ષ્ય ઑબ્જેક્ટનું ભાષાંતર કરવામાં નિષ્ફળ
+    થયું.
+  wwcInGameEntityTranslationFailCatastrophic: લક્ષ્ય એન્ટિટીનું અનુવાદ કરવામાં નિષ્ફળ.
+  wwcConfigGUIResponseLimitButton: અનુવાદક પ્રતિભાવ સમયસમાપ્તિ બદલો
+  wwcConfigMessageCharLimitEnabled: સંદેશ દીઠ અક્ષર મર્યાદા %i અક્ષરો પર સેટ કરો.
+  wwcteOffTarget: એન્ટિટી અનુવાદ %i માટે અક્ષમ છે.
+  wwcCharLimit: તમારો સંદેશ ખૂબ લાંબો છે! કૃપા કરીને ખાતરી કરો કે તમારો સંદેશ લંબાઈ
+    %i અક્ષરો કરતા ઓછો છે.
+  wwcConfigConversationResponseLimitInput: દરેક અનુવાદક માટે વર્તમાન પ્રતિસાદ સમયસમાપ્તિ
+    %i સેકંડ છે. નવું મૂલ્ય સેટ કરવા માટે 0 કરતા વધારે કંઈપણ લખો, અથવા પાછા જવા માટે
+    0 કરતા ઓછું અથવા બરાબર કંઈપણ લખો.
+  wwcConfigConversationCharacterLimitInput: સંદેશ દીઠ વર્તમાન અક્ષર મર્યાદા %i અક્ષરો
+    છે. નવું મૂલ્ય સેટ કરવા માટે 0 કરતા વધારે કંઈપણ લખો, અથવા પાછા જવા માટે 0 કરતા
+    ઓછું અથવા બરાબર કંઈપણ લખો.
+  wwcteOffSender: એન્ટિટી અનુવાદ અક્ષમ.
+  wwctGUIEntityButton: ટૉગલ અનુવાદ એન્ટિટી
+  wwcConfigConversationResponseLimitSuccess: પ્રતિભાવ સમયસમાપ્તિ સફળતાપૂર્વક સેટ.

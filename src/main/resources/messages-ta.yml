@@ -61,7 +61,6 @@ Messages:
   wwctPlayerNotFound: வீரர் % நான் காணப்படவில்லை.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: உலகளாவிய அரட்டை மொழிபெயர்க்கப்பட்டுள்ளது,
     ஆனால் உங்கள் அரட்டை %o க்கு மொழிபெயர்க்கப்பட்டுள்ளது.
-  wwcConfigGUIGlobalRateLimit: உலகளாவிய வீத வரம்பை மாற்றவும்
   wwcConfigGUIAmazonTranslateRegionButton: அமேசான் பிராந்தியம் மாற்ற
   wwcConfigConversationLangInput: 'தற்போதைய சொருகி மொழியு %i ஆகும். தயவுசெய்து செல்லுபடியாகும்
     மொழிக் குறியீட்டை உள்ளிடவும், அல்லது ரத்து செய்ய 0 செல்லுபடியாகும் மொழி குறியீடுகள்:
@@ -232,20 +231,16 @@ Messages:
   wwcItemTranslateTitleDone: மொழிபெயர்க்கப்பட்ட உருப்படியை தலைப்பு வெற்றிகரமாக.
   wwcGUITempItem: உருப்படிக் காட்சி
   wwcItemTranslateStart: இலக்கு உருப்படியை மொழிபெயர்த்தல்...
-  wwcSignTranslationFailCatastrophic: இலக்கு அடையாளம் மொழிபெயர்க்கத் தவறியது.
-  wwcItemTranslationFailCatastrophic: இலக்கு உருப்படியை மொழிபெயர்க்க தவறிவிட்டது.
   wwcBookTranslateTitleSuccess: 'மொழிபெயர்க்கப்பட்ட புத்தகத் தலைப்பு: %i'
   wwctiOnSender: பொருள் மொழிபெயர்ப்பு இயக்கப்பட்டது. அதை மொழிபெயர்க்க உங்கள் முக்கிய
     கையில் ஒரு உருப்படியை வலது கிளிக் செய்யவும்!
   wwcItemTranslateLoreStart: இலக்கு உருப்படியை லோர் மொழிபெயர்ப்பது...
   wwcItemTranslateLoreDone: மொழிபெயர்க்கப்பட்ட உருப்படியை லோ
   wwctiOnTarget: '%i க்கு உருப்படி மொழிபெயர்ப்பு இயக்கப்பட்டது.'
-  wwcBookTranslationFailCatastrophic: இலக்கு நூலை மொழிபெயர்த்துத் தோல்வியடைந்தார்.
   wwcBookTranslateTitleFail: புத்தகத் தலைப்பை மொழிபெயர்க்கத் தவறினார்
   wwcChatTranslationFail: உங்கள் செய்தியை மொழிபெயர்க்க தவறிவிட்டது.
   wwcInvalidTranslator: தவறான மொழிபெயர்ப்பாளர் அமைப்புகள். இந்த சொருகி பயன்படுத்த
     உங்கள் config.yml அல்லது wwcc உடன் இதை சரிசெய்யவும்.
-  wwcNotDoneLoading: WorldWideSaat இன்னும் துவக்குகிறது. விரைவில் மீண்டும் முயற்சிக்கவும்.
   wwcConfigGUIEachTranslatorSettings: '%i உள்ளமைவு'
   wwcConfigGUIToggleButton: மாற்று %i
   wwcConfigGUIWatsonButton: வாட்சன்
@@ -296,3 +291,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: மூலச் செய்தி
   wwcConfigGUIDebugModeButton: மாற்று பிழைதிருப்பு முறை
   wwcConfigConversationDebugModeSuccess: பிழைதிருப்பு முறையில் வெற்றிகரமாக மாற்றப்பட்டது.
+  wwcConfigGUIErrorLimitButton: மொழிபெயர்ப்பாளர் பிழை வரம்பை மாற்றவும்
+  wwcConfigConversationErrorLimitSuccess: பிழை எல்லை வெற்றிகரமாக அமைக்க.
+  wwcEntityTranslateStart: இலக்கு நிறுவனம் மொழிபெயர்ப்பது...
+  wwcConfigGUICharacterLimitButton: செய்தி எழுத்து வரம்பை மாற்றுக
+  wwcConfigMessageCharLimitInvalid: செய்தி ஒன்றுக்கு தவறான எல்லை config.yml அமைக்க.
+    255 எழுத்துகளுக்கு இயல்புநிலைக்கு...
+  wwcConfigConversationCharacterLimitSuccess: எழுத்து வரம்பு வெற்றிகரமாக அமைக்கப்பட்டது.
+  wwcteOnTarget: '%i க்கு நிறுவன மொழிபெயர்ப்பு இயக்கப்பட்டது.'
+  wwcEntityTranslateDone: 'மொழிபெயர்க்கப்பட்ட நிறுவனத்தின் பெயர்: %i'
+  wwcEntityTranslateNoName: நிறுவனத்திற்கு தனிப்பயன் பெயர் இல்லை.
+  wwcConfigConversationErrorLimitInput: ஒவ்வொரு மொழிபெயர்ப்பாளருக்கும் தற்போதைய பிழை
+    வரம்பு %i ஆகும். ஒரு புதிய மதிப்பை அமைக்க 0 ஐ விட அதிகமான எதையும் தட்டச்சு செய்யவும்,
+    அல்லது திரும்பி செல்ல 0 க்கு குறைவாக அல்லது சமமான எதையும் தட்டச்சு செய்யவும்.
+  wwcConfigGUIGlobalRateLimitButton: உலகளாவிய வீத வரம்பை மாற்றவும்
+  wwcteOnSender: நிறுவனம் மொழிபெயர்ப்பு இயக்கப்பட்டது. அதன் பெயரை மொழிபெயர்க்க ஒரு
+    நிறுவனத்தின் மீது வலது கிளிக் செய்யவும்!
+  wwcInGameObjectTranslationFailCatastrophic: இலக்குப் பொருளை மொழிபெயர்க்க தவறிவிட்டது.
+  wwcInGameEntityTranslationFailCatastrophic: இலக்கு நிறுவனத்தை மொழிபெயர்த்துத் தோல்வியடைந்தார்.
+  wwcConfigGUIResponseLimitButton: மொழிபெயர்ப்பாளர் பதில் நேர முடிவை மாற்றவும்
+  wwcConfigMessageCharLimitEnabled: செய்திக்கு எழுத்து வரம்பு %i எழுத்துக்களுக்கு
+    அமைக்கப்பட்டுள்ளது.
+  wwcteOffTarget: நிறுவனம் மொழிபெயர்ப்பு முடக்கப்பட்டது %i.
+  wwcCharLimit: உங்கள் செய்தி மிக நீளமாக உள்ளது! தயவுசெய்து உங்கள் செய்தி %i எழுத்துக்களுக்கு
+    குறைவாக உள்ளதா என்பதை உறுதிப்படுத்தவும்.
+  wwcConfigConversationResponseLimitInput: ஒவ்வொரு மொழிபெயர்ப்பாளருக்கும் தற்போதைய
+    பதில் நேரம் முடிந்து %i வினாடிகள் ஆகும். ஒரு புதிய மதிப்பு அமைக்க 0 விட அதிகமாக
+    எதையும் தட்டச்சு, அல்லது திரும்பி செல்ல 0 குறைவாக அல்லது சமமாக எதையும் தட்டச்சு.
+  wwcConfigConversationCharacterLimitInput: செய்திக்கு தற்போதைய எழுத்து வரம்பு %i
+    எழுத்துக்கள் ஆகும். ஒரு புதிய மதிப்பு அமைக்க 0 விட அதிகமாக எதையும் தட்டச்சு, அல்லது
+    திரும்பி செல்ல 0 குறைவாக அல்லது சமமாக எதையும் தட்டச்சு.
+  wwcteOffSender: நிறுவனம் மொழிபெயர்ப்பு முடக்கப்பட்டது.
+  wwctGUIEntityButton: மாற்று நிறுவனம் மொழிபெயர்ப்பு
+  wwcConfigConversationResponseLimitSuccess: பதில் காலாவதி வெற்றிகரமாக அமைக்க.

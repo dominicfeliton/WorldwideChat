@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: بازیکن %i یافت نشد.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: چت سراسری در حال ترجمه
     است، اما چت شما به %o ترجمه شده است.
-  wwcConfigGUIGlobalRateLimit: تغییر حد نرخ جهانی
   wwcConfigGUIAmazonTranslateRegionButton: تغییر منطقه آمازون
   wwcConfigConversationLangInput: 'زبان افزایش %i است. لطفا یک کد زبان معتبر وارد
     کنید، یا برای لغو تایپ کنید. کدهای زبان معتبر: %o'
@@ -215,21 +214,16 @@ Messages:
   wwcItemTranslateTitleDone: عنوان آیتم ترجمه شده با موفقیت.
   wwcGUITempItem: نمایش آیتم
   wwcItemTranslateStart: ترجمه آیتم هدف...
-  wwcSignTranslationFailCatastrophic: ترجمه علامت هدف شکست خورد.
-  wwcItemTranslationFailCatastrophic: ترجمه مورد هدف شکست خورد.
   wwcBookTranslateTitleSuccess: 'عنوان کتاب ترجمه شده: %i'
   wwctiOnSender: ترجمه مورد فعال شد. با یک آیتم در دست اصلی خود کلیک راست کنید تا
     آن را ترجمه کنید!
   wwcItemTranslateLoreStart: ترجمه افسانه ای از آیتم های هدف...
   wwcItemTranslateLoreDone: ترجمه افسانه هاو روایات قومی مورد موفقیت.
   wwctiOnTarget: ترجمه مورد برای %i فعال شد.
-  wwcBookTranslationFailCatastrophic: ترجمه کتاب هدف شکست خورد.
   wwcBookTranslateTitleFail: ترجمه عنوان کتاب شکست خورد.
   wwcChatTranslationFail: ترجمه پیام شما شکست خورد.
   wwcInvalidTranslator: تنظیمات مترجم نامعتبر. لطفا این را در config.yml یا با /wcc
     خود برای استفاده از این افزونه تعمیر کنید.
-  wwcNotDoneLoading: WorldwideChat هنوز مقداردهی اولیه دارد. لطفا به زودی دوباره تلاش
-    کنید.
   wwcConfigGUIEachTranslatorSettings: '%i پیکربندی'
   wwcConfigGUIToggleButton: درز %i
   wwcConfigGUIWatsonButton: واتسون
@@ -279,3 +273,34 @@ Messages:
   wwcConfigGUIDebugModeButton: ضامن حالت اشکال زدایی
   wwcConfigConversationDebugModeSuccess: حالت اشکال زدایی با موفقیت تغییر داده شده
     است.
+  wwcConfigGUIErrorLimitButton: تغییر حد خطای مترجم
+  wwcConfigConversationErrorLimitSuccess: حد خطا با موفقیت تنظیم شد.
+  wwcEntityTranslateStart: ترجمه موجودیت هدف...
+  wwcConfigGUICharacterLimitButton: تغییر محدودیت نویسه پیام
+  wwcConfigMessageCharLimitInvalid: حد نامعتبر در هر پیام تنظیم شده در config.yml.
+    قراردادی به 255 کاراکتر...
+  wwcConfigConversationCharacterLimitSuccess: حد کاراکترها با موفقیت تنظیم شد.
+  wwcteOnTarget: ترجمه موجودیت برای %i فعال شد.
+  wwcEntityTranslateDone: 'نام نهاد ترجمه شده: %i'
+  wwcEntityTranslateNoName: موجودیت یک نام سفارشی ندارد.
+  wwcConfigConversationErrorLimitInput: حد خطای فعلی برای هر مترجم عبارت است %i. هر
+    چیزی بزرگتر از 0 را تایپ کنید تا یک مقدار جدید تعیین شود، یا چیزی را کمتر یا مساوی
+    با 0 برای بازگشت تایپ کنید.
+  wwcConfigGUIGlobalRateLimitButton: تغییر حد نرخ جهانی
+  wwcteOnSender: ترجمه موجودیت فعال شد. برای ترجمه نام، بر روی یک نهاد کلیک راست کنید!
+  wwcInGameObjectTranslationFailCatastrophic: ترجمه شیء هدف شکست خورد.
+  wwcInGameEntityTranslationFailCatastrophic: ترجمه موجودیت هدف شکست خورد.
+  wwcConfigGUIResponseLimitButton: تغییر زمان پاسخ مترجم
+  wwcConfigMessageCharLimitEnabled: حد کاراکتر در هر پیام روی نویسه %i تنظیم شده است.
+  wwcteOffTarget: ترجمه موجودیت برای %i غیرفعال شد.
+  wwcCharLimit: پیام شما بیش از حد طولانی است! لطفا اطمینان حاصل کنید که پیام شما
+    کمتر از %i نویسه باشد.
+  wwcConfigConversationResponseLimitInput: زمان پاسخ فعلی برای هر مترجم، %i ثانیه
+    است. چیزی بزرگتر از 0 را تایپ کنید تا یک مقدار جدید تعیین شود، یا چیزی را کمتر
+    از 0 یا مساوی تایپ کنید تا به عقب برگردید.
+  wwcConfigConversationCharacterLimitInput: محدودیت نویسه فعلی در هر پیغام %i نویسه
+    است. چیزی بزرگتر از 0 را تایپ کنید تا یک مقدار جدید تعیین شود، یا چیزی را کمتر
+    از 0 یا مساوی تایپ کنید تا به عقب برگردید.
+  wwcteOffSender: ترجمه موجودیت غیر فعال شد.
+  wwctGUIEntityButton: ضامن ترجمه موجودیت
+  wwcConfigConversationResponseLimitSuccess: زمان پاسخ با موفقیت تنظیم شد.

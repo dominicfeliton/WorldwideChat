@@ -60,7 +60,6 @@ Messages:
   wwctPlayerNotFound: Spelaren % Jag hittade inte.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chatt översätts,
     men din chatt översätts till %o.
-  wwcConfigGUIGlobalRateLimit: Ändra global hastighetsgräns
   wwcConfigGUIAmazonTranslateRegionButton: Ändra Amazonas region
   wwcConfigConversationLangInput: 'Det aktuella insticksspråket är %i. Ange en giltig
     språkkod, eller skriv 0 för att avbryta. Giltiga språkkoder: %o'
@@ -222,20 +221,16 @@ Messages:
   wwcItemTranslateTitleDone: Översatt objektets titel framgångsrikt.
   wwcGUITempItem: Visning av objekt
   wwcItemTranslateStart: Översätter målobjekt...
-  wwcSignTranslationFailCatastrophic: Det gick inte att översätta måltecknet.
-  wwcItemTranslationFailCatastrophic: Det gick inte att översätta målobjektet.
   wwcBookTranslateTitleSuccess: 'Titel på översatt bok: %i'
   wwctiOnSender: Översättning av objekt aktiverad. Högerklicka med ett objekt i huvudhanden
     för att översätta det!
   wwcItemTranslateLoreStart: Översätta lore av målobjekt...
   wwcItemTranslateLoreDone: Översatt objekt lore framgångsrikt.
   wwctiOnTarget: Objektöversättning aktiverad för %i.
-  wwcBookTranslationFailCatastrophic: Det gick inte att översätta målboken.
   wwcBookTranslateTitleFail: Misslyckades översätta bokens titel.
   wwcChatTranslationFail: Det gick inte att översätta ditt meddelande.
   wwcInvalidTranslator: Ogiltiga översättarinställningar. Rätta detta i din config.yml
     eller med /wwcc för att använda detta insticksprogram.
-  wwcNotDoneLoading: WorldwideChat initierar fortfarande. Försök igen inom kort.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'
   wwcConfigGUIToggleButton: Rogg %i
   wwcConfigGUIWatsonButton: Watson
@@ -287,3 +282,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Ursprungligt meddelande
   wwcConfigGUIDebugModeButton: Växla felsökningsläge
   wwcConfigConversationDebugModeSuccess: Har bytt felsökningsläge.
+  wwcConfigGUIErrorLimitButton: Ändra gränsvärde för översättare
+  wwcConfigConversationErrorLimitSuccess: Felgräns har ställts in.
+  wwcEntityTranslateStart: Översätter målenhet...
+  wwcConfigGUICharacterLimitButton: Ändra teckengräns för meddelanden
+  wwcConfigMessageCharLimitInvalid: Ogiltig gräns per meddelandeuppsättning i config.yml.
+    Standardvärde för 255 tecken...
+  wwcConfigConversationCharacterLimitSuccess: Teckengräns har ställts in.
+  wwcteOnTarget: Entitetsöversättning aktiverad för %i.
+  wwcEntityTranslateDone: 'Översatt enhetsnamn: %i'
+  wwcEntityTranslateNoName: Entiteten har inget eget namn.
+  wwcConfigConversationErrorLimitInput: Den aktuella felgränsen för varje översättare
+    är %i. Skriv något större än 0 för att ange ett nytt värde, eller skriv något
+    mindre än eller lika med 0 för att gå tillbaka.
+  wwcConfigGUIGlobalRateLimitButton: Ändra global hastighetsgräns
+  wwcteOnSender: Entitetsöversättning aktiverad. Högerklicka på en entitet för att
+    översätta dess namn!
+  wwcInGameObjectTranslationFailCatastrophic: Det gick inte att översätta målobjektet.
+  wwcInGameEntityTranslationFailCatastrophic: Det gick inte att översätta målenheten.
+  wwcConfigGUIResponseLimitButton: Tidsgräns för ändring av översättare
+  wwcConfigMessageCharLimitEnabled: Teckengräns per meddelande angett %i-tecken.
+  wwcteOffTarget: Entitetsöversättning inaktiverad för %i.
+  wwcCharLimit: Ditt meddelande är för långt! Se till att ditt meddelande är mindre
+    än %i tecken.
+  wwcConfigConversationResponseLimitInput: Den aktuella tidsgränsen för svaren för
+    varje översättare är %i sekunder. Skriv något större än 0 om du vill ange ett
+    nytt värde, eller skriv något mindre än eller lika med 0 för att gå tillbaka.
+  wwcConfigConversationCharacterLimitInput: Den aktuella teckengränsen per meddelande
+    är %i-tecken. Skriv något större än 0 om du vill ange ett nytt värde, eller skriv
+    något mindre än eller lika med 0 för att gå tillbaka.
+  wwcteOffSender: Entitetsöversättning inaktiverad
+  wwctGUIEntityButton: Växla entitetsöversättning
+  wwcConfigConversationResponseLimitSuccess: Tidsgräns för svar har ställts in.

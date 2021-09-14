@@ -62,7 +62,6 @@ Messages:
   wwctPlayerNotFound: 'Խաղացող %Ես չեմ գտել:'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Գլոբալ Վիճակագրություն
     թարգմանվում է, բայց ձեր զրուցարանում թարգմանվում է %o.
-  wwcConfigGUIGlobalRateLimit: Փոխել Գլոբալ Տոկոսադրույքը
   wwcConfigGUIAmazonTranslateRegionButton: Փոխել Amazon Տարածաշրջան
   wwcConfigConversationLangInput: 'Ընթացիկ plugin լեզուն է %i: Խնդրում ենք մուտքագրել
     վավեր լեզվի կոդը կամ մուտքագրեք 0 չեղյալ համարելու համար: Լեզվի վավեր կոդեր: %o'
@@ -225,20 +224,16 @@ Messages:
   wwcItemTranslateTitleDone: Թարգմանված նյութի վերնագիրը հաջողությամբ
   wwcGUITempItem: Նյութի Ցուցադրել
   wwcItemTranslateStart: Թարգմանելով թիրախային նյութը...
-  wwcSignTranslationFailCatastrophic: Չհաջողվեց թարգմանել թիրախային նշանը.
-  wwcItemTranslationFailCatastrophic: 'Չհաջողվեց թարգմանել թիրախային տարրը:'
   wwcBookTranslateTitleSuccess: 'Թարգմանված գրքի վերնագիր: %i'
   wwctiOnSender: Նյութի թարգմանությունը միացված. Աջ սեղմեք մի տարրի ձեր հիմնական ձեռքը
     թարգմանել այն!
   wwcItemTranslateLoreStart: Թարգմանություն թիրախային կետի...
   wwcItemTranslateLoreDone: Թարգմանված նյութը Lore հաջողությամբ.
   wwctiOnTarget: Նյութի թարգմանությունը միացված է %i համար։
-  wwcBookTranslationFailCatastrophic: 'Չհաջողվեց թարգմանել թիրախային գիրքը:'
   wwcBookTranslateTitleFail: Չհաջողվեց թարգմանել գրքի կոչումը.
   wwcChatTranslationFail: 'Չհաջողվեց թարգմանել ձեր հաղորդագրությունը:'
   wwcInvalidTranslator: 'Անվավեր թարգմանիչ պարամետրերը: Խնդրում ենք ամրագրել այս ձեր
     config.yml կամ /wwcc օգտագործել այս plugin.'
-  wwcNotDoneLoading: WorldwideChat դեռ սկզբնականացումը. Խնդրում ենք կրկին փորձեք շուտով.
   wwcConfigGUIEachTranslatorSettings: '%i կոնֆիգուրացիա'
   wwcConfigGUIToggleButton: Անջատել %i
   wwcConfigGUIWatsonButton: Վոտսոն
@@ -291,3 +286,35 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Բնօրինակը հաղորդագրություն
   wwcConfigGUIDebugModeButton: Անջատել Debug ռեժիմ
   wwcConfigConversationDebugModeSuccess: Հաջողությամբ toggled debug ռեժիմ.
+  wwcConfigGUIErrorLimitButton: Փոխել Թարգմանիչ սխալ Սահմանափակում
+  wwcConfigConversationErrorLimitSuccess: 'Սխալ սահմանաչափը հաջողությամբ սահմանված:'
+  wwcEntityTranslateStart: Թարգմանելով թիրախային անձ...
+  wwcConfigGUICharacterLimitButton: Փոխել հաղորդագրություն բնույթի սահմանաչափը
+  wwcConfigMessageCharLimitInvalid: Անվավեր սահմանաչափը մեկ հաղորդագրության մեջ սահմանված
+    config.yml. Նախնականը 255 Chars...
+  wwcConfigConversationCharacterLimitSuccess: 'Նիշերի սահմանաչափը հաջողությամբ սահմանված:'
+  wwcteOnTarget: Անդամության թարգմանությունը միացված է %i համար։
+  wwcEntityTranslateDone: 'Թարգմանված անձի Անունը: %i'
+  wwcEntityTranslateNoName: Անհատությունը չունի մաքսային անուն.
+  wwcConfigConversationErrorLimitInput: 'Յուրաքանչյուր թարգմանչի ընթացիկ սխալի սահմանաչափը
+    է %i: Մուտքագրեք ավելի մեծ բան, քան 0 նոր արժեք սահմանելու համար կամ մուտքագրեք
+    0- ից պակաս կամ հավասար է:'
+  wwcConfigGUIGlobalRateLimitButton: Փոխել Գլոբալ Տոկոսադրույքը
+  wwcteOnSender: 'Անձ թարգմանությունը միացված. Աջ սեղմեք անձի վրա, թարգմանել իր անունը:'
+  wwcInGameObjectTranslationFailCatastrophic: Չհաջողվեց թարգմանել թիրախ օբյեկտ.
+  wwcInGameEntityTranslationFailCatastrophic: 'Չհաջողվեց թարգմանել թիրախային կազմակերպությունը:'
+  wwcConfigGUIResponseLimitButton: Փոխել Թարգմանիչ արձագանքման Timeout
+  wwcConfigMessageCharLimitEnabled: 'Նիշերի սահմանաչափը մեկ հաղորդագրության սահմանված
+    համար %i նիշերի համար:'
+  wwcteOffTarget: Անդամության թարգմանությունը անջատված է %i համար։
+  wwcCharLimit: 'Ձեր հաղորդագրությունը չափազանց երկար է! Խնդրում ենք համոզվեք, որ
+    ձեր հաղորդագրությունը պակաս է %i նիշերից երկարությամբ:'
+  wwcConfigConversationResponseLimitInput: 'Ընթացիկ պատասխան ժամկետը յուրաքանչյուր
+    թարգմանչի համար %i վայրկյան. Մուտքագրեք ավելի մեծ բան, քան 0 նոր արժեք սահմանելու
+    համար կամ մուտքագրեք 0- ից պակաս կամ հավասար է:'
+  wwcConfigConversationCharacterLimitInput: 'Ներկայիս բնույթի սահմանաչափը մեկ հաղորդագրության
+    համար %i նիշ է: Մուտքագրեք ավելի մեծ բան, քան 0 նոր արժեք սահմանելու համար կամ
+    մուտքագրեք 0- ից պակաս կամ հավասար է:'
+  wwcteOffSender: Անձ թարգմանությունը հաշմանդամ.
+  wwctGUIEntityButton: Toggle անձի թարգմանություն
+  wwcConfigConversationResponseLimitSuccess: Response timeout սահմանված հաջողությամբ.

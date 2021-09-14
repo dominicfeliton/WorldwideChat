@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: ක්රීඩකයා සොයාගත්තේ නැත.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ගෝලීය කතාබස් පරිවර්තනය
     වෙමින් පවතී, නමුත් ඔබගේ කතාබස් %o වෙත පරිවර්තනය වෙමින් පවතී.
-  wwcConfigGUIGlobalRateLimit: ගෝලීය අනුපාත සීමාව වෙනස් කිරීම
   wwcConfigGUIAmazonTranslateRegionButton: ඇමසන් කලාපය වෙනස් කරන්න
   wwcConfigConversationLangInput: 'වත්මන් ප්ලගින භාෂාව %i වේ. කරුණාකර වලංගු භාෂා කේතයක්
     ඇතුලත් කරන්න, නැතහොත් අවලංගු කිරීමට 0 ටයිප් කරන්න. වලංගු භාෂා කේත: %o'
@@ -228,21 +227,16 @@ Messages:
   wwcItemTranslateTitleDone: පරිවර්තනය කරන ලද අයිතම මාතෘකාව සාර්ථකව.
   wwcGUITempItem: අයිතමය පෙන්වන්න
   wwcItemTranslateStart: ඉලක්කගත අයිතමය පරිවර්තනය කිරීම...
-  wwcSignTranslationFailCatastrophic: ඉලක්කගත ලකුණ පරිවර්තනය කිරීමට අසමත් විය.
-  wwcItemTranslationFailCatastrophic: ඉලක්කගත අයිතමය පරිවර්තනය කිරීමට අසමත් විය.
   wwcBookTranslateTitleSuccess: 'පරිවර්තනය කළ පොත් මාතෘකාව: %i'
   wwctiOnSender: අයිතම පරිවර්තනය සක්රීය කර ඇත. එය පරිවර්තනය කිරීම සඳහා ඔබේ ප්රධාන
     අතේ ඇති අයිතමයක් සමඟ දකුණු-ක්ලික් කරන්න!
   wwcItemTranslateLoreStart: ඉලක්කය අයිතමය ක lore පරිවර්තනය...
   wwcItemTranslateLoreDone: පරිවර්ථනය කරන ලද අයිතමය සාර්ථකව.
   wwctiOnTarget: අයිතම පරිවර්තනය %i සඳහා සබල කර ඇත.
-  wwcBookTranslationFailCatastrophic: ඉලක්කගත පොත පරිවර්තනය කිරීමට අසමත් විය.
   wwcBookTranslateTitleFail: පොත් මාතෘකාව පරිවර්තනය කිරීමට අසමත් විය.
   wwcChatTranslationFail: ඔබගේ පණිවිඩය පරිවර්තනය කිරීමට අසමත් විය.
   wwcInvalidTranslator: වලංගු නොවන පරිවර්තක සැකසුම්. කරුණාකර මෙම ප්ලගිනය භාවිතා කිරීමට
     ඔබගේ config.yml හෝ /wwcc සමඟ මෙය නිවැරදි කරන්න.
-  wwcNotDoneLoading: වර්ල්ඩ්වයිඩ්හාට් තවමත් ආරම්භ වෙමින් පවතී. කරුණාකර කෙටි කලකින්
-    නැවත උත්සාහ කරන්න.
   wwcConfigGUIEachTranslatorSettings: '%i වින්යාසය'
   wwcConfigGUIToggleButton: '%i ටොගල් කරන්න'
   wwcConfigGUIWatsonButton: වොට්සන්
@@ -291,3 +285,37 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: මුල් පණිවිඩය
   wwcConfigGUIDebugModeButton: ටොගල් කරන්න නිදොස්ගත ප්රකාරය
   wwcConfigConversationDebugModeSuccess: සාර්ථකව ටොගල් කරන ලද නිදොස්කිරීම් මාදිලිය.
+  wwcConfigGUIErrorLimitButton: පරිවර්තක දෝෂ සීමාව වෙනස් කරන්න
+  wwcConfigConversationErrorLimitSuccess: දෝෂ සීමාව සාර්ථකව සකසා ඇත.
+  wwcEntityTranslateStart: ඉලක්කගත ආයතනය පරිවර්තනය කිරීම...
+  wwcConfigGUICharacterLimitButton: පණිවිඩ අක්ෂර සීමාව වෙනස් කරන්න
+  wwcConfigMessageCharLimitInvalid: config.yml හි ඇති පණිවිඩයක් අනුව වලංගු නොවන සීමාවක්.
+    භාජන 255 ක් පැහැර හැරීම...
+  wwcConfigConversationCharacterLimitSuccess: අක්ෂර සීමාව සාර්ථකව සකසා ඇත.
+  wwcteOnTarget: '%i සඳහා ආයතන පරිවර්තනය සක්රීය කර ඇත.'
+  wwcEntityTranslateDone: 'පරිවර්ථනය කරන ලද ආයතන නම: %i'
+  wwcEntityTranslateNoName: ආයතනයට අභිරුචි නමක් නොමැත.
+  wwcConfigConversationErrorLimitInput: එක් එක් පරිවර්තකයා සඳහා වර්තමාන දෝෂ සීමාව
+    %i වේ. නව අගයක් සැකසීම සඳහා 0 ට වඩා වැඩි යමක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0
+    ට වඩා අඩු හෝ සමාන දෙයක් ටයිප් කරන්න.
+  wwcConfigGUIGlobalRateLimitButton: ගෝලීය අනුපාත සීමාව වෙනස් කිරීම
+  wwcteOnSender: ආයතන පරිවර්තනය සක්රීය කර ඇත. එහි නම පරිවර්තනය කිරීම සඳහා ආයතනයක්
+    මත දකුණු-ක්ලික් කරන්න!
+  wwcInGameObjectTranslationFailCatastrophic: ඉලක්කගත වස්තුව පරිවර්තනය කිරීමට අසමත්
+    විය.
+  wwcInGameEntityTranslationFailCatastrophic: ඉලක්කගත ආයතනය පරිවර්තනය කිරීමට අසමත්
+    විය.
+  wwcConfigGUIResponseLimitButton: පරිවර්තක ප්රතිචාර කාලය වෙනස් කරන්න
+  wwcConfigMessageCharLimitEnabled: පණිවුඩයකට අක්ෂර සීමාව %i අක්ෂර දක්වා සකසා ඇත.
+  wwcteOffTarget: ආයතන පරිවර්ථනය %i සඳහා අක්‍රීය විය.
+  wwcCharLimit: ඔබේ පණිවිඩය දිගු වේ! කරුණාකර ඔබගේ පණිවිඩය %i අක්ෂරවලට වඩා අඩුවෙන්
+    ඇති බවට වග බලා ගන්න.
+  wwcConfigConversationResponseLimitInput: එක් එක් පරිවර්තකයා සඳහා වර්තමාන ප්රතිචාර
+    කාලය %i තත්පර වේ. නව වටිනාකමක් සැකසීමට 0 ට වඩා වැඩි දෙයක් ටයිප් කරන්න, නැතහොත්
+    ආපසු යාමට 0 ට වඩා අඩු හෝ සමාන දෙයක් ටයිප් කරන්න.
+  wwcConfigConversationCharacterLimitInput: පණිවිඩයකට වර්තමාන අක්ෂර සීමාව %i අක්ෂර
+    වේ. නව වටිනාකමක් සැකසීමට 0 ට වඩා වැඩි දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ට
+    වඩා අඩු හෝ සමාන දෙයක් ටයිප් කරන්න.
+  wwcteOffSender: ආයතන පරිවර්තනය අක්රීය කර ඇත.
+  wwctGUIEntityButton: ටොගල් කරන්න ආයතනය පරිවර්තනය
+  wwcConfigConversationResponseLimitSuccess: ප්රතිචාර කාලය සාර්ථකව සකසා ඇත.

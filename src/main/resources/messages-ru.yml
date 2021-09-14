@@ -59,7 +59,6 @@ Messages:
   wwctPlayerNotFound: Игрок %Я не найден.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобальный чат переводится,
     но ваш чат переводится на %o.
-  wwcConfigGUIGlobalRateLimit: Изменить глобальный лимит ставок
   wwcConfigGUIAmazonTranslateRegionButton: Изменить регион Amazon
   wwcConfigConversationLangInput: 'Текущий язык плагина %i. Введите допустимый код
     языка или введите 0 для отмены. Допустимые коды языков: %o'
@@ -229,21 +228,16 @@ Messages:
   wwcItemTranslateTitleDone: Заголовок переведенного элемента успешно.
   wwcGUITempItem: Отображение товара
   wwcItemTranslateStart: Перевод целевого элемента...
-  wwcSignTranslationFailCatastrophic: Не удалось перевести знак целевого знака.
-  wwcItemTranslationFailCatastrophic: Не удалось перевести целевой элемент.
   wwcBookTranslateTitleSuccess: 'Название переведенной книги: %i'
   wwctiOnSender: Перевод элементов включен. Щелкните правой кнопкой мыши элемент в
     главной руке, чтобы перевести его!
   wwcItemTranslateLoreStart: Перевод краеведения целевого предмета...
   wwcItemTranslateLoreDone: Переведенный предмет успешно завершен.
   wwctiOnTarget: Перевод элементов включен для %i.
-  wwcBookTranslationFailCatastrophic: Не удалось перевести целевую книгу.
   wwcBookTranslateTitleFail: Не удалось перевести название книги.
   wwcChatTranslationFail: Не удалось перевести сообщение.
   wwcInvalidTranslator: Неверные настройки переводчика. Пожалуйста, исправьте это
     в своем config.yml или с помощью /wwcc, чтобы использовать этот плагин.
-  wwcNotDoneLoading: WorldwideChat все еще инициализируется. Повторите попытку в ближайшее
-    время.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурация'
   wwcConfigGUIToggleButton: Переключить %i
   wwcConfigGUIWatsonButton: Уотсон
@@ -294,3 +288,37 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Оригинальное сообщение
   wwcConfigGUIDebugModeButton: Переключить режим отладки
   wwcConfigConversationDebugModeSuccess: Режим отладки успешно переключился.
+  wwcConfigGUIErrorLimitButton: Изменить лимит ошибок транслятора
+  wwcConfigConversationErrorLimitSuccess: Предел ошибок установлен успешно.
+  wwcEntityTranslateStart: Перевод целевой сущности...
+  wwcConfigGUICharacterLimitButton: Изменить лимит символов сообщения
+  wwcConfigMessageCharLimitInvalid: Недопустимое ограничение на сообщение, установленное
+    в config.yml. По умолчанию 255 chars...
+  wwcConfigConversationCharacterLimitSuccess: Ограничение количества символов установлено
+    успешно.
+  wwcteOnTarget: Перевод сущностей включен для %i.
+  wwcEntityTranslateDone: 'Название переведенной сущности: %i'
+  wwcEntityTranslateNoName: У сущности нет пользовательского имени.
+  wwcConfigConversationErrorLimitInput: Текущее ограничение ошибок для каждого транслятора
+    составляет %i. Введите значение больше 0, чтобы задать новое значение, или меньшее
+    или равное 0, чтобы вернуться назад.
+  wwcConfigGUIGlobalRateLimitButton: Изменить глобальный лимит ставок
+  wwcteOnSender: Перевод сущностей включен. Щелкните правой кнопкой мыши на объекте,
+    чтобы перевести его имя!
+  wwcInGameObjectTranslationFailCatastrophic: Не удалось преобразовать целевой объект.
+  wwcInGameEntityTranslationFailCatastrophic: Не удалось преобразовать целевую сущность.
+  wwcConfigGUIResponseLimitButton: Таймаут ответа на изменение транслятора
+  wwcConfigMessageCharLimitEnabled: Ограничение количества символов на сообщение равно
+    %i символов.
+  wwcteOffTarget: Перевод сущностей отключен для %i.
+  wwcCharLimit: Ваше сообщение слишком длинное! Убедитесь, что длина сообщения не
+    превышает %i символов.
+  wwcConfigConversationResponseLimitInput: Текущее время ожидания ответа для каждого
+    транслятора составляет %i секунд. Введите значение больше 0, чтобы задать новое
+    значение, или введите значение меньше или равно 0, чтобы вернуться назад.
+  wwcConfigConversationCharacterLimitInput: Текущее ограничение количества символов
+    на сообщение составляет %i символов. Введите значение больше 0, чтобы задать новое
+    значение, или введите значение меньше или равно 0, чтобы вернуться назад.
+  wwcteOffSender: Перевод сущностей отключен.
+  wwctGUIEntityButton: Переключить перевод сущностей
+  wwcConfigConversationResponseLimitSuccess: Таймаут ответа успешно установлен.

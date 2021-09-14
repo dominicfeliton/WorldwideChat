@@ -57,7 +57,6 @@ Messages:
   wwctPlayerNotFound: Ойыншы %i табылған жоқ.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Ғаламдық чат аударылып
     жатыр, бірақ сіздің чатыңыз %o аударылып жатыр.
-  wwcConfigGUIGlobalRateLimit: Әлемдік мөлшерлеме лимитін
   wwcConfigGUIAmazonTranslateRegionButton: Amazon аймағын өзгерту
   wwcConfigConversationLangInput: 'Ағымдағы плагин тілі %i болып табылады, жарамды
     тіл кодын енгізіңіз немесе бас тарту үшін 0 теріңіз. Жарамды тіл кодтары: %o'
@@ -216,20 +215,16 @@ Messages:
   wwcItemTranslateTitleDone: сәтті аударылған элемент атауы.
   wwcGUITempItem: Дисплей элемент
   wwcItemTranslateStart: Мақсатты элементті аудару...
-  wwcSignTranslationFailCatastrophic: Мақсатты белгіні аудару сәтсіз аяқталды.
-  wwcItemTranslationFailCatastrophic: Мақсатты элементті аудару сәтсіз аяқталды.
   wwcBookTranslateTitleSuccess: 'Аударылған кітап атауы: %i'
   wwctiOnSender: Элемент аудармасы қосылған. Оны аудару үшін басты қолыңыздағы элементпен
     тінтуірдің оң жақ түймешігімен нұқыңыз!
   wwcItemTranslateLoreStart: Мақсатты элементтің аудармасы...
   wwcItemTranslateLoreDone: Аударылған тармақ сәтті.
   wwctiOnTarget: Элемент аудармасы %i үшін қосылған.
-  wwcBookTranslationFailCatastrophic: мақсатты кітапты аудару алмады.
   wwcBookTranslateTitleFail: Кітап атауын аудара алмады.
   wwcChatTranslationFail: Хабарламаңызды аудару сәтсіз болды.
   wwcInvalidTranslator: Жарамсыз аудармашы параметрлері. Бұл плагинді пайдалану үшін
     config.yml немесе /wwcc көмегімен түзетіңіз.
-  wwcNotDoneLoading: WorldwideChat әлі де баптандырады. Көп ұзамай қайталап көріңіз.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурация'
   wwcConfigGUIToggleButton: '%i'
   wwcConfigGUIWatsonButton: Уотсон
@@ -278,3 +273,36 @@ Messages:
   wwcConfigGUIMessagesOverrideOriginalLabel: Түпнұсқа хабарлама
   wwcConfigGUIDebugModeButton: Toggle күйін келтіру режимі
   wwcConfigConversationDebugModeSuccess: Табысты отладка режимін toggled.
+  wwcConfigGUIErrorLimitButton: Аудармашы қате шегін өзгерту
+  wwcConfigConversationErrorLimitSuccess: Қате шегі сәтті орнатыңыз.
+  wwcEntityTranslateStart: Мақсатты тұлғаны аудару...
+  wwcConfigGUICharacterLimitButton: Хабар таңбасының лимитін өзгерту
+  wwcConfigMessageCharLimitInvalid: config.yml ішінде орнатылған хабарға жарамсыз
+    шектеу. 255 чарға дефолт...
+  wwcConfigConversationCharacterLimitSuccess: Таңба шегі сәтті орнатыңыз.
+  wwcteOnTarget: Субъект аудармасы %i үшін қосылған.
+  wwcEntityTranslateDone: 'Аударылған субъект атауы: %i'
+  wwcEntityTranslateNoName: Субъектінің теңшелетін атауы жоқ.
+  wwcConfigConversationErrorLimitInput: Әрбір аудармашы үшін ағымдағы қате шектеуі
+    %i болып табылады. жаңа мәнді орнату үшін 0-ден артық нәрсені теріңіз немесе кері
+    қайту үшін 0-ден кем немесе тең нәрсені теріңіз.
+  wwcConfigGUIGlobalRateLimitButton: Әлемдік мөлшерлеме лимитін
+  wwcteOnSender: Субъект аудармасы қосылған. Өз атын аудару үшін ұйымды тінтуірдің
+    оң жақ түймешігімен нұқыңыз!
+  wwcInGameObjectTranslationFailCatastrophic: Мақсатты нысанды аудару сәтсіз аяқталды.
+  wwcInGameEntityTranslationFailCatastrophic: Мақсатты тұлғаны аудару сәтсіз аяқталды.
+  wwcConfigGUIResponseLimitButton: Аудармашы жауап уақытын өзгерту
+  wwcConfigMessageCharLimitEnabled: '%i таңбаларына орнатылған хабарға арналған таңба
+    шегі.'
+  wwcteOffTarget: Субъект аудармасы %i өшірілген.
+  wwcCharLimit: Сіздің хабарламаңыз тым ұзақ! Хабарламаңыздың ұзындығы %i таңбаларынан
+    аз екеніне көз жеткізіңіз.
+  wwcConfigConversationResponseLimitInput: Әр аудармашы үшін ағымдағы жауап беру мерзімі
+    %i секунд. Жаңа мәнді орнату үшін 0-ден асатын нәрсені теріңіз немесе кері оралу
+    үшін 0-ден аз немесе тең нәрсені теріңіз.
+  wwcConfigConversationCharacterLimitInput: Бір хабардың ағымдағы таңбалар шегі %i
+    таңбалары болып табылады. Жаңа мәнді орнату үшін 0-ден асатын нәрсені теріңіз
+    немесе кері оралу үшін 0-ден аз немесе тең нәрсені теріңіз.
+  wwcteOffSender: Субъект аударма өшірілген.
+  wwctGUIEntityButton: Toggle субъектінің аудармасы
+  wwcConfigConversationResponseLimitSuccess: Жауап беру мерзімдері сәтті орнатылған.
