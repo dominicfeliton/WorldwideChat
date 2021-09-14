@@ -248,7 +248,7 @@ public class WorldwideChat extends JavaPlugin {
 			// Entity translation
 			WWCTranslateEntity wwcte = new WWCTranslateEntity(sender, command, label, args);
 			return wwcte.processCommand();
-		} else if (command.getName().equalsIgnoreCase("wwcs")) {
+		} else if (command.getName().equalsIgnoreCase("wwcs") && !translatorName.equals("Starting")) {
 			// Stats for translator
 			WWCStats wwcs = new WWCStats(sender, command, label, args);
 			return wwcs.processCommand();
