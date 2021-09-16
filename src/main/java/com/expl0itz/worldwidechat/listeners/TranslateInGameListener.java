@@ -3,8 +3,10 @@ package com.expl0itz.worldwidechat.listeners;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Sign;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -20,6 +22,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.TempItemInventory;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
+import com.google.common.base.Enums;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
@@ -209,6 +212,15 @@ public class TranslateInGameListener implements Listener {
 								}
 								changedSignText[i] = eaLine;
 							}
+							
+							/* Version Check: For 1.13 and below compatibility */
+							try {
+								Player.class.getMethod("sendSignChange", Location.class, String.class);
+							} catch (Exception e) {
+								textLimit = true;
+								// Always send the user the result via chat. sendSignChange() does not exist in Player.class before 1.14.
+							}
+							
 							/*
 							 * Change sign for this user only, if translationNotTooLong and sign still
 							 * exists

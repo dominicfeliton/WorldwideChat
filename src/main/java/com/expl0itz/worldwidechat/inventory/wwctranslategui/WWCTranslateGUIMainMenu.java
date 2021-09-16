@@ -12,6 +12,7 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
@@ -161,7 +162,8 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				/* Sign Translation Button */
 				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcts")
 						&& (player.hasPermission("worldwidechat.wwcts.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
-					ItemStack signButton = new ItemStack(Material.OAK_SIGN);
+					/* Init item, ensure pre-1.14 compatibility */
+					ItemStack signButton = XMaterial.OAK_SIGN.parseItem();
 					ItemMeta signMeta = signButton.getItemMeta();
 					if (targetTranslator.getTranslatingSign()) {
 						signMeta.setDisplayName(ChatColor.GREEN

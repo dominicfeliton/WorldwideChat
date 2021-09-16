@@ -13,6 +13,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.conversations.configuration.ChatSettingsModifyOverrideTextConversation;
 import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
@@ -53,7 +54,8 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 			int currSpot = 0;
 			CommonDefinitions.sendDebugMessage("Adding all possible messages to inventory! Amount of messages: " + currentMessages.length);
 			for (Map.Entry<String, String> entry : messagesFromConfig.entrySet()) {
-				ItemStack currentEntry = new ItemStack(Material.OAK_SIGN);
+				/* Init item, ensure pre-1.14 compatibility */
+				ItemStack currentEntry = XMaterial.OAK_SIGN.parseItem();
 				ItemMeta currentEntryMeta = currentEntry.getItemMeta();
 				
 				currentEntryMeta.setDisplayName(entry.getKey());

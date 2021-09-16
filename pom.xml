@@ -10,8 +10,8 @@
   <description>Break the blocky language barrier!</description>
 
   <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+  </properties>
 
   <dependencies>
         <dependency>
@@ -127,6 +127,11 @@
             <artifactId>maven-artifact</artifactId>
             <version>3.8.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.cryptomorin</groupId>
+            <artifactId>XSeries</artifactId>
+            <version>8.4.0</version>
+        </dependency>
         
     </dependencies>
 
@@ -225,6 +230,7 @@
                             <include>joda-time:*</include>
                             <include>fr.minuskube.inv:smart-invs</include>
                             <include>org.apache.maven:maven-artifact</include>
+                            <include>com.github.cryptomorin:XSeries</include>
                         </includes>
                     </artifactSet>
                     <filters>
@@ -237,6 +243,19 @@
                                 <exclude>META-INF/*.DSA</exclude>
                                 <exclude>META-INF/*.RSA</exclude>
                                 <exclude>META-INF/**</exclude>
+                                <exclude>com/cryptomorin/xseries/messages/*</exclude>
+                                <exclude>com/cryptomorin/xseries/particles/*</exclude>
+                                <exclude>com/cryptomorin/xseries/unused/*</exclude>
+                                <exclude>com/cryptomorin/xseries/XBiome*</exclude>
+                                <exclude>com/cryptomorin/xseries/NMSExtras*</exclude>
+                                <exclude>com/cryptomorin/xseries/NoteBlockMusic*</exclude>
+                                <exclude>com/cryptomorin/xseries/XEntity*</exclude>
+                                <exclude>com/cryptomorin/xseries/XEnchantment*</exclude>
+                                <exclude>com/cryptomorin/xseries/XBlock*</exclude>
+                                <exclude>com/cryptomorin/xseries/XPotion*</exclude>
+                                <exclude>com/cryptomorin/xseries/XSound*</exclude>
+                                <exclude>com/cryptomorin/xseries/Skull*</exclude>
+                                
                             </excludes>
                         </filter>
                         <filter>
@@ -322,6 +341,10 @@
                         <relocation>
                             <pattern>kotlin</pattern>
                             <shadedPattern>com.expl0itz.worldwidechat.libs.jetbrains.kotlin</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.cryptomorin.xseries</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.cryptomorin.xseries</shadedPattern>
                         </relocation>
                     </relocations>
               </configuration>
