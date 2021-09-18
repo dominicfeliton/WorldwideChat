@@ -5,12 +5,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
@@ -52,7 +52,7 @@ public class ConfigurationMessagesOverrideCurrentListGUI implements InventoryPro
 				CommonDefinitions.sendDebugMessage("Adding existing overrides to inventory! Amount of overrides: " + currentOverrides.length);
 				int currSpot = 0;
 				for (Map.Entry<String, String> entry : overridesFromConfig.entrySet()) {
-					ItemStack currentEntry = new ItemStack(Material.WRITABLE_BOOK);
+					ItemStack currentEntry = XMaterial.WRITABLE_BOOK.parseItem();
 					ItemMeta currentEntryMeta = currentEntry.getItemMeta();
 					
 					currentEntryMeta.setDisplayName(entry.getKey());
@@ -75,7 +75,7 @@ public class ConfigurationMessagesOverrideCurrentListGUI implements InventoryPro
 			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
 			
 			/* Bottom Left Option: Previous Page */
-			ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
+			ItemStack previousPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
 			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
 			previousPageMeta.setDisplayName(ChatColor.GREEN
 					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
@@ -92,7 +92,7 @@ public class ConfigurationMessagesOverrideCurrentListGUI implements InventoryPro
 			}
 			
 			/* Bottom Middle Option: Add new override */
-			ItemStack addNewOverrideButton = new ItemStack(Material.GREEN_GLAZED_TERRACOTTA);
+			ItemStack addNewOverrideButton = XMaterial.GREEN_GLAZED_TERRACOTTA.parseItem();
 			ItemMeta addNewOverrideMeta = addNewOverrideButton.getItemMeta();
 			addNewOverrideMeta.setDisplayName(ChatColor.GREEN
 					+ CommonDefinitions.getMessage("wwcConfigGUIChatMessagesOverrideNewButton"));
@@ -102,7 +102,7 @@ public class ConfigurationMessagesOverrideCurrentListGUI implements InventoryPro
 			}));
 			
 			/* Bottom Right Option: Next Page */
-			ItemStack nextPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
+			ItemStack nextPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
 			ItemMeta nextPageMeta = nextPageButton.getItemMeta();
 			nextPageMeta.setDisplayName(ChatColor.GREEN
 					+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));

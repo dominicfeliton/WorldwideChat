@@ -1,7 +1,6 @@
 package com.expl0itz.worldwidechat;
 
 import java.io.File;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -9,10 +8,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.NamespacedKey;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.IllegalPluginAccessException;
@@ -33,7 +30,6 @@ import com.expl0itz.worldwidechat.commands.WWCTranslateEntity;
 import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
-import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
 import com.expl0itz.worldwidechat.listeners.InventoryListener;
@@ -89,7 +85,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	private String pluginLang = "en";
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "9132021-1"; //This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "9182021-1"; //This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	/* Default constructor */
@@ -123,7 +119,6 @@ public class WorldwideChat extends JavaPlugin {
 		inventoryManager = new WWCInventoryManager(this); // InventoryManager for SmartInvs API
 		inventoryManager.init(); // Init InventoryManager
 		instance = this; // Static instance of this class
-		registerGlowEffect(); // Register inventory glow effect
 
 		// Load plugin configs, check if they successfully initialized
 		loadPluginConfigs(false);
@@ -357,7 +352,11 @@ public class WorldwideChat extends JavaPlugin {
 	public void checkMCVersion() {
 		String supportedVersions = "";
 		for (int i = 0; i < CommonDefinitions.supportedMCVersions.length; i++) {
-			supportedVersions += "(" + CommonDefinitions.supportedMCVersions[i] + ") ";
+			if (i+1 != CommonDefinitions.supportedMCVersions.length) {
+				supportedVersions += CommonDefinitions.supportedMCVersions[i] + ", ";
+			} else {
+				supportedVersions += CommonDefinitions.supportedMCVersions[i];
+			}
 			if (Bukkit.getVersion().contains(CommonDefinitions.supportedMCVersions[i])) {
 				return;
 			}
@@ -406,23 +405,6 @@ public class WorldwideChat extends JavaPlugin {
 			return false;
 		}
 		return true;
-	}
-
-	public void registerGlowEffect() {
-		try {
-			Field f = Enchantment.class.getDeclaredField("acceptingNew");
-			f.setAccessible(true);
-			f.set(null, true);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		try {
-			EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(this, "wwc_glow"));
-			Enchantment.registerEnchantment(glow);
-		} catch (IllegalArgumentException e) {
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 
 	public void registerTabCompleters() {

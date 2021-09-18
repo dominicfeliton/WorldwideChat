@@ -3,8 +3,6 @@ package com.expl0itz.worldwidechat.inventory.wwctranslategui;
 import java.util.UUID;
 
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
 import org.bukkit.command.CommandSender;
 import org.bukkit.conversations.ConversationFactory;
 import org.bukkit.entity.Player;
@@ -12,6 +10,7 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import com.cryptomorin.xseries.XEnchantment;
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
@@ -21,7 +20,6 @@ import com.expl0itz.worldwidechat.commands.WWCTranslateEntity;
 import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.conversations.wwctranslategui.RateLimitConversation;
-import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
@@ -58,14 +56,14 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 	public void init(Player player, InventoryContents contents) {
 		try {
 			/* Default white stained glass borders for inactive */
-			ItemStack customDefaultBorders = new ItemStack(Material.WHITE_STAINED_GLASS_PANE);
+			ItemStack customDefaultBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
 			ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
 			defaultBorderMeta.setDisplayName(" ");
 			customDefaultBorders.setItemMeta(defaultBorderMeta);
 			contents.fillBorders(ClickableItem.empty(customDefaultBorders));
 
 			/* New translation button */
-			ItemStack translationButton = new ItemStack(Material.COMPASS);
+			ItemStack translationButton = XMaterial.COMPASS.parseItem();
 			ItemMeta translationMeta = translationButton.getItemMeta();
 			translationMeta.setDisplayName(
 					CommonDefinitions.getMessage("wwctGUITranslationButton"));
@@ -79,21 +77,20 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 			
 			if (!main.getActiveTranslator(targetPlayerUUID).getUUID().equals("")) {
 				/* Make compass enchanted */
-				EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
-				translationMeta.addEnchant(glow, 1, true);
-				translationMeta.setDisplayName(CommonDefinitions.getMessage("wwctGUIExistingTranslationButton"));
 				translationMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+				translationMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
+				translationMeta.setDisplayName(CommonDefinitions.getMessage("wwctGUIExistingTranslationButton"));
 				translationButton.setItemMeta(translationMeta);
 
 				/* Green stained glass borders for active */
-				ItemStack customBorders = new ItemStack(Material.GREEN_STAINED_GLASS_PANE);
+				ItemStack customBorders = XMaterial.GREEN_STAINED_GLASS_PANE.parseItem();
 				ItemMeta borderMeta = customBorders.getItemMeta();
 				borderMeta.setDisplayName(" ");
 				customBorders.setItemMeta(borderMeta);
 				contents.fillBorders(ClickableItem.empty(customBorders));
 
 				/* Stop Button: Stop translation if active */
-				ItemStack stopButton = new ItemStack(Material.BARRIER);
+				ItemStack stopButton = XMaterial.BARRIER.parseItem();
 				ItemMeta stopMeta = stopButton.getItemMeta();
 				stopMeta.setDisplayName(ChatColor.RED
 						+ CommonDefinitions.getMessage("wwctGUIStopButton"));
@@ -121,10 +118,11 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 						&& (player.hasPermission("worldwidechat.wwctrl.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
 					ConversationFactory rateConvo = new ConversationFactory(main).withModality(true)
 							.withFirstPrompt(new RateLimitConversation(targetTranslator));
-					ItemStack rateButton = new ItemStack(Material.SLIME_BLOCK);
+					ItemStack rateButton = XMaterial.SLIME_BLOCK.parseItem();
 					ItemMeta rateMeta = rateButton.getItemMeta();
 					if (targetTranslator.getRateLimit() > 0) {
-						rateMeta.addEnchant(glow, 1, true);
+						rateMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+						rateMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
 						rateMeta.setDisplayName(ChatColor.GREEN
 								+ CommonDefinitions.getMessage("wwctGUIRateButton"));
 					} else {
@@ -140,12 +138,13 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				/* Book Translation Button */
 				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwctb")
 						&& (player.hasPermission("worldwidechat.wwctb.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
-					ItemStack bookButton = new ItemStack(Material.WRITABLE_BOOK);
+					ItemStack bookButton = XMaterial.WRITABLE_BOOK.parseItem();
 					ItemMeta bookMeta = bookButton.getItemMeta();
 					if (targetTranslator.getTranslatingBook()) {
 						bookMeta.setDisplayName(ChatColor.GREEN
 								+ CommonDefinitions.getMessage("wwctGUIBookButton"));
-						bookMeta.addEnchant(glow, 1, true);
+						bookMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+						bookMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
 					} else {
 						bookMeta.setDisplayName(ChatColor.YELLOW
 								+ CommonDefinitions.getMessage("wwctGUIBookButton"));
@@ -168,7 +167,8 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 					if (targetTranslator.getTranslatingSign()) {
 						signMeta.setDisplayName(ChatColor.GREEN
 								+ CommonDefinitions.getMessage("wwctGUISignButton"));
-						signMeta.addEnchant(glow, 1, true);
+						signMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+						signMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
 					} else {
 						signMeta.setDisplayName(ChatColor.YELLOW
 								+ CommonDefinitions.getMessage("wwctGUISignButton"));
@@ -185,12 +185,13 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				/* Item Translation Button */
 				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcti")
 						&& (player.hasPermission("worldwidechat.wwcti.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
-					ItemStack itemButton = new ItemStack(Material.GRASS_BLOCK);
+					ItemStack itemButton = XMaterial.GRASS_BLOCK.parseItem();
 					ItemMeta itemMeta = itemButton.getItemMeta();
 					if (targetTranslator.getTranslatingItem()) {
 						itemMeta.setDisplayName(ChatColor.GREEN
 								+ CommonDefinitions.getMessage("wwctGUIItemButton"));
-						itemMeta.addEnchant(glow, 1, true);
+						itemMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+						itemMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
 					} else {
 						itemMeta.setDisplayName(ChatColor.YELLOW
 								+ CommonDefinitions.getMessage("wwctGUIItemButton"));
@@ -207,10 +208,11 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				/* Entity Translation Button */
 				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcte")
 						&& (player.hasPermission("worldwidechat.wwcte.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
-					ItemStack entityButton = new ItemStack(Material.NAME_TAG);
+					ItemStack entityButton = XMaterial.NAME_TAG.parseItem();
 					ItemMeta entityMeta = entityButton.getItemMeta();
 					if (targetTranslator.getTranslatingEntity()) {
-						entityMeta.addEnchant(glow, 1, true);
+						entityMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+						entityMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
 						entityMeta.setDisplayName(ChatColor.GREEN
 								+ CommonDefinitions.getMessage("wwctGUIEntityButton"));
 					} else {

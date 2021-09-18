@@ -1,13 +1,13 @@
 package com.expl0itz.worldwidechat.inventory.wwcstatsgui;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.UUID;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
@@ -44,7 +44,7 @@ public class WWCStatsGUIMainMenu implements InventoryProvider {
 			PlayerRecord currRecord = main.getPlayerRecord(targetPlayerUUID, false);
 			
 			/* Default orange stained glass borders */
-			ItemStack customDefaultBorders = new ItemStack(Material.ORANGE_STAINED_GLASS_PANE);
+			ItemStack customDefaultBorders = XMaterial.ORANGE_STAINED_GLASS_PANE.parseItem();
 			ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
 			defaultBorderMeta.setDisplayName(" ");
 			customDefaultBorders.setItemMeta(defaultBorderMeta);
@@ -53,12 +53,12 @@ public class WWCStatsGUIMainMenu implements InventoryProvider {
 			/* Is active translator button */
 			ItemStack isActiveTranslator;
 			if (!main.getActiveTranslator(targetPlayerUUID).getUUID().equals("")) {
-				isActiveTranslator = new ItemStack(Material.GREEN_CONCRETE);
+				isActiveTranslator = XMaterial.GREEN_CONCRETE.parseItem();
 				ItemMeta isActiveTranslatorMeta = isActiveTranslator.getItemMeta();
 				isActiveTranslatorMeta.setDisplayName(CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713"}));
 				isActiveTranslator.setItemMeta(isActiveTranslatorMeta);
 			} else {
-				isActiveTranslator = new ItemStack(Material.RED_CONCRETE);
+				isActiveTranslator = XMaterial.RED_CONCRETE.parseItem();
 				ItemMeta isActiveTranslatorMeta = isActiveTranslator.getItemMeta();
 				isActiveTranslatorMeta.setDisplayName(CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {ChatColor.BOLD + "" + ChatColor.RED + "\u2717"}));
 				isActiveTranslator.setItemMeta(isActiveTranslatorMeta);
@@ -66,21 +66,21 @@ public class WWCStatsGUIMainMenu implements InventoryProvider {
 			contents.set(2, 1, ClickableItem.empty(isActiveTranslator));
 			
 			/* Attempted translations button */
-			ItemStack attemptedTranslations = new ItemStack(Material.WRITABLE_BOOK);
+			ItemStack attemptedTranslations = XMaterial.WRITABLE_BOOK.parseItem();
 			ItemMeta attemptedTranslationsMeta = attemptedTranslations.getItemMeta();
 			attemptedTranslationsMeta.setDisplayName(CommonDefinitions.getMessage("wwcsAttemptedTranslations", new String[] {ChatColor.AQUA + "" + currRecord.getAttemptedTranslations()}));
 			attemptedTranslations.setItemMeta(attemptedTranslationsMeta);
 			contents.set(2, 3, ClickableItem.empty(attemptedTranslations));
 			
 			/* Successful translations button */
-			ItemStack successfulTranslations = new ItemStack(Material.WRITTEN_BOOK);
+			ItemStack successfulTranslations = XMaterial.WRITTEN_BOOK.parseItem();
 			ItemMeta successfulTranslationsMeta = successfulTranslations.getItemMeta();
 			successfulTranslationsMeta.setDisplayName(CommonDefinitions.getMessage("wwcsSuccessfulTranslations", new String[] {ChatColor.AQUA + "" + currRecord.getSuccessfulTranslations()}));
 			successfulTranslations.setItemMeta(successfulTranslationsMeta);
 			contents.set(2, 5, ClickableItem.empty(successfulTranslations));
 			
 			/* Last translation time button */
-			ItemStack lastTranslationTime = new ItemStack(Material.CLOCK);
+			ItemStack lastTranslationTime = XMaterial.CLOCK.parseItem();
 			ItemMeta lastTranslationTimeMeta = lastTranslationTime.getItemMeta();
 			lastTranslationTimeMeta.setDisplayName(CommonDefinitions.getMessage("wwcsLastTranslationTime", new String[] {ChatColor.AQUA + "" + currRecord.getLastTranslationTime()}));
 			lastTranslationTime.setItemMeta(lastTranslationTimeMeta);

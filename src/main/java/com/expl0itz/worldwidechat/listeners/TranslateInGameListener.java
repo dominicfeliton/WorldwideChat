@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.bukkit.Location;
-import org.bukkit.Material;
+
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -19,10 +19,11 @@ import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.scheduler.BukkitRunnable;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.TempItemInventory;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
-import com.google.common.base.Enums;
+import com.expl0itz.worldwidechat.util.OldVersionOpenBook;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
@@ -89,7 +90,7 @@ public class TranslateInGameListener implements Listener {
 				/* Book Translation */
 				if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingBook()
 					&& event.getHand() != null && event.getItem() != null
-					&& Material.WRITTEN_BOOK == event.getItem().getType()
+					&& XMaterial.WRITTEN_BOOK.parseMaterial() == event.getItem().getType()
 					&& (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
 					ItemStack currentBook = event.getItem().clone();
 					new BukkitRunnable() {
@@ -157,7 +158,7 @@ public class TranslateInGameListener implements Listener {
 							}
 
 							/* Create the modified book */
-							ItemStack newBook = new ItemStack(Material.WRITTEN_BOOK);
+							ItemStack newBook = XMaterial.WRITTEN_BOOK.parseItem();
 							BookMeta newMeta = (BookMeta) newBook.getItemMeta();
 							newMeta.setAuthor(meta.getAuthor());
 							newMeta.setGeneration(meta.getGeneration());
@@ -168,7 +169,13 @@ public class TranslateInGameListener implements Listener {
 							new BukkitRunnable() {
 								@Override
 								public void run() {
-									event.getPlayer().openBook(newBook);
+									/* Version Check: For 1.13 and below compatibility */
+									try {
+										Player.class.getMethod("openBook", ItemStack.class);
+										event.getPlayer().openBook(newBook);
+									} catch (Exception e) {
+										OldVersionOpenBook.openBook(newBook, event.getPlayer());
+									}
 								}
 							}.runTask(main);
 						}
@@ -283,8 +290,8 @@ public class TranslateInGameListener implements Listener {
 				else if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingItem()
 					&& event.getPlayer().getInventory() != null
 					&& event.getPlayer().getInventory().getItemInMainHand() != null
-					&& event.getPlayer().getInventory().getItemInMainHand().getType() != Material.AIR
-					&& event.getPlayer().getInventory().getItemInMainHand().getType() != Material.WRITTEN_BOOK
+					&& event.getPlayer().getInventory().getItemInMainHand().getType() != XMaterial.AIR.parseMaterial()
+					&& event.getPlayer().getInventory().getItemInMainHand().getType() != XMaterial.WRITTEN_BOOK.parseMaterial()
 					&& (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
 					/* Start item translation */
 					ItemStack currentItem = event.getPlayer().getInventory().getItemInMainHand();

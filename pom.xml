@@ -4,7 +4,7 @@
 
   <groupId>com.expl0itz.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
-  <version>1.5.5-SNAPSHOT</version>
+  <version>1.6.0-SNAPSHOT</version>
 
   <name>WorldwideChat</name>
   <description>Break the blocky language barrier!</description>
@@ -128,6 +128,11 @@
             <version>3.8.2</version>
         </dependency>
         <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
             <groupId>com.github.cryptomorin</groupId>
             <artifactId>XSeries</artifactId>
             <version>8.4.0</version>
@@ -207,6 +212,7 @@
                             <include>org.apache.tomcat:tomcat-jdbc</include>
                             <include>org.apache.tomcat:tomcat-juli</include>
                             <include>org.apache.commons:commons-lang3</include>
+                            <include>commons-lang:commons-lang</include>
                             <include>net.kyori:adventure-api</include>
                             <include>net.kyori:adventure-key</include>
                             <include>net.kyori:adventure-nbt</include>
@@ -250,7 +256,6 @@
                                 <exclude>com/cryptomorin/xseries/NMSExtras*</exclude>
                                 <exclude>com/cryptomorin/xseries/NoteBlockMusic*</exclude>
                                 <exclude>com/cryptomorin/xseries/XEntity*</exclude>
-                                <exclude>com/cryptomorin/xseries/XEnchantment*</exclude>
                                 <exclude>com/cryptomorin/xseries/XBlock*</exclude>
                                 <exclude>com/cryptomorin/xseries/XPotion*</exclude>
                                 <exclude>com/cryptomorin/xseries/XSound*</exclude>
@@ -280,12 +285,15 @@
                             <pattern>net.kyori.adventure</pattern>
                             <shadedPattern>com.expl0itz.worldwidechat.libs.net.kyori.adventure</shadedPattern>
                         </relocation>
-                        
                         <relocation>
                             <pattern>org.apache</pattern>
                             <shadedPattern>com.expl0itz.worldwidechat.libs.org.apache</shadedPattern>
                         </relocation>
-                        <!-- Removed google relocation. Relocating the API seems to break it...annoying, since another plugin who is using it may hate us but oh well -->
+                        <relocation>
+                            <pattern>com.google.gson</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.google.gson</shadedPattern>
+                        </relocation>
+                        <!-- Removed google cloud relocation. Relocating the API seems to break it...annoying, since another plugin who is using it may hate us but oh well -->
                         <relocation>
                             <pattern>mozilla</pattern>
                             <shadedPattern>com.expl0itz.worldwidechat.libs.mozilla</shadedPattern>

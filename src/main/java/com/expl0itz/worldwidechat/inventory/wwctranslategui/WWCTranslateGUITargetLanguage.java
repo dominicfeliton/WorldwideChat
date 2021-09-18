@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import com.cryptomorin.xseries.XEnchantment;
+import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
-import com.expl0itz.worldwidechat.inventory.EnchantGlowEffect;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
@@ -58,14 +58,17 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 
 			/* Add each supported language from each respective translator */
 			for (int i = 0; i < main.getSupportedTranslatorLanguages().size(); i++) {
-				ItemStack currentLang = new ItemStack(Material.TARGET);
+				ItemStack currentLang = XMaterial.ARROW.parseItem();
+				if (XMaterial.TARGET.parseItem() != null) {
+					currentLang.setType(XMaterial.TARGET.parseMaterial());
+				}
 				ItemMeta currentLangMeta = currentLang.getItemMeta();
 				
 				ArrayList<String> lore = new ArrayList<>();
 				/* Add Glow Effect */
+				currentLangMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 				if (currTranslator.getOutLangCode().equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
-					EnchantGlowEffect glow = new EnchantGlowEffect(new NamespacedKey(main, "wwc_glow"));
-					currentLangMeta.addEnchant(glow, 1, true);
+					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				currentLangMeta.setDisplayName(main.getSupportedTranslatorLanguages().get(i).getLangName());
@@ -95,7 +98,7 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
 
 			/* Bottom Left Option: Previous Page */
-			ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
+			ItemStack previousPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
 			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
 			previousPageMeta.setDisplayName(ChatColor.GREEN
 					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
@@ -112,7 +115,7 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 			}
 
 			/* Bottom Right Option: Next Page */
-			ItemStack nextPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
+			ItemStack nextPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
 			ItemMeta nextPageMeta = nextPageButton.getItemMeta();
 			nextPageMeta.setDisplayName(ChatColor.GREEN
 					+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));

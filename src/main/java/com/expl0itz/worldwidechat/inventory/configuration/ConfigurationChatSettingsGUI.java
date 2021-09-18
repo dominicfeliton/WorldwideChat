@@ -1,11 +1,11 @@
 package com.expl0itz.worldwidechat.inventory.configuration;
 
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
@@ -33,7 +33,7 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 	public void init(Player player, InventoryContents contents) {
 		try {
 			/* White stained glass borders */
-			ItemStack customBorders = new ItemStack(Material.WHITE_STAINED_GLASS_PANE);
+			ItemStack customBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
 			ItemMeta borderMeta = customBorders.getItemMeta();
 			borderMeta.setDisplayName(" ");
 			customBorders.setItemMeta(borderMeta);
@@ -48,8 +48,7 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			sendPluginUpdateChatButton(player, contents);
 
 			/* Third Button: Let user override default plugin messages */
-			ItemStack messagesOverrideChatButton;
-			messagesOverrideChatButton = new ItemStack(Material.WRITABLE_BOOK);
+			ItemStack messagesOverrideChatButton = XMaterial.WRITABLE_BOOK.parseItem();
 			ItemMeta messagesOverrideChatMeta = messagesOverrideChatButton.getItemMeta();
 			messagesOverrideChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIMessagesOverrideChatButton"));
 			messagesOverrideChatButton.setItemMeta(messagesOverrideChatMeta);
@@ -58,7 +57,7 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			}));
 			
 			/* Bottom Right Option: Previous Page */
-			ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
+			ItemStack previousPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
 			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
 			previousPageMeta.setDisplayName(ChatColor.GREEN
 					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
@@ -67,7 +66,7 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 					e -> ConfigurationGeneralSettingsGUI.generalSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */
-			ItemStack quitButton = new ItemStack(Material.BARRIER);
+			ItemStack quitButton = XMaterial.BARRIER.parseItem();
 			ItemMeta quitMeta = quitButton.getItemMeta();
 			quitMeta.setDisplayName(ChatColor.RED
 					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
@@ -80,7 +79,7 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			}));
 
 			/* Bottom Right Option: Next Page */
-			ItemStack nextPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
+			ItemStack nextPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
 			ItemMeta nextPageMeta = nextPageButton.getItemMeta();
 			nextPageMeta.setDisplayName(ChatColor.GREEN
 					+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));
@@ -96,11 +95,11 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 	public void update(Player player, InventoryContents contents) {}
 
 	private void sendTranslationChatButton(Player player, InventoryContents contents) {
-		ItemStack translationChatButton = new ItemStack(Material.BEDROCK);
+		ItemStack translationChatButton = XMaterial.BEDROCK.parseItem();
 		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat")) {
-			translationChatButton.setType(Material.EMERALD_BLOCK);
+			translationChatButton.setType(XMaterial.EMERALD_BLOCK.parseMaterial());
 		} else {
-			translationChatButton.setType(Material.REDSTONE_BLOCK);
+			translationChatButton.setType(XMaterial.REDSTONE_BLOCK.parseMaterial());
 		}
 		ItemMeta translationChatMeta = translationChatButton.getItemMeta();
 		translationChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUISendTranslationChatButton"));
@@ -121,11 +120,11 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 	}
 
 	private void sendPluginUpdateChatButton(Player player, InventoryContents contents) {
-		ItemStack pluginUpdateChatButton = new ItemStack(Material.BEDROCK);
+		ItemStack pluginUpdateChatButton = XMaterial.BEDROCK.parseItem();
 		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) {
-			pluginUpdateChatButton.setType(Material.EMERALD_BLOCK);;
+			pluginUpdateChatButton.setType(XMaterial.EMERALD_BLOCK.parseMaterial());
 		} else {
-			pluginUpdateChatButton.setType(Material.REDSTONE_BLOCK);
+			pluginUpdateChatButton.setType(XMaterial.REDSTONE_BLOCK.parseMaterial());
 		}
 		ItemMeta pluginUpdateChatMeta = pluginUpdateChatButton.getItemMeta();
 		pluginUpdateChatMeta.setDisplayName(ChatColor.GOLD

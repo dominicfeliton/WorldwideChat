@@ -1,12 +1,12 @@
 package com.expl0itz.worldwidechat.inventory.configuration;
 
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.conversations.ConversationFactory;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsLangConversation;
@@ -38,7 +38,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 	public void init(Player player, InventoryContents contents) {
 		try {
 			/* White stained glass borders */
-			ItemStack customBorders = new ItemStack(Material.WHITE_STAINED_GLASS_PANE);
+			ItemStack customBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
 			ItemMeta borderMeta = customBorders.getItemMeta();
 			borderMeta.setDisplayName(" ");
 			customBorders.setItemMeta(borderMeta);
@@ -47,7 +47,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			/* Option One: Plugin Prefix */
 			ConversationFactory prefixConvo = new ConversationFactory(main).withModality(true)
 					.withFirstPrompt(new GeneralSettingsPrefixConversation());
-			ItemStack prefixButton = new ItemStack(Material.NAME_TAG);
+			ItemStack prefixButton = XMaterial.NAME_TAG.parseItem();
 			ItemMeta prefixMeta = prefixButton.getItemMeta();
 			prefixMeta.setDisplayName(ChatColor.GOLD
 					+ CommonDefinitions.getMessage("wwcConfigGUIPrefixButton"));
@@ -62,7 +62,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			/* Option Three: Change Plugin Lang */
 			ConversationFactory langConvo = new ConversationFactory(main).withModality(true)
 					.withFirstPrompt(new GeneralSettingsLangConversation());
-			ItemStack langButton = new ItemStack(Material.NAME_TAG);
+			ItemStack langButton = XMaterial.NAME_TAG.parseItem();
 			ItemMeta langMeta = langButton.getItemMeta();
 			langMeta.setDisplayName(ChatColor.GOLD
 					+ CommonDefinitions.getMessage("wwcConfigGUILangButton"));
@@ -74,7 +74,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			/* Option Four: Update Checker Delay */
 			ConversationFactory updateCheckerConvo = new ConversationFactory(main).withModality(true)
 					.withFirstPrompt(new GeneralSettingsUpdateCheckerConversation());
-			ItemStack updateCheckerButton = new ItemStack(Material.NAME_TAG);
+			ItemStack updateCheckerButton = XMaterial.NAME_TAG.parseItem();
 			ItemMeta updateCheckerMeta = updateCheckerButton.getItemMeta();
 			updateCheckerMeta.setDisplayName(ChatColor.GOLD
 					+ CommonDefinitions.getMessage("wwcConfigGUIUpdateCheckerButton"));
@@ -86,7 +86,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			/* Option Five: Sync User Data Delay */
 			ConversationFactory syncUserDataConvo = new ConversationFactory(main).withModality(true)
 					.withFirstPrompt(new GeneralSettingsSyncUserDataConversation());
-			ItemStack syncUserDataButton = new ItemStack(Material.NAME_TAG);
+			ItemStack syncUserDataButton = XMaterial.NAME_TAG.parseItem();
 			ItemMeta syncUserDataMeta = syncUserDataButton.getItemMeta();
 			syncUserDataMeta.setDisplayName(ChatColor.GOLD
 					+ CommonDefinitions.getMessage("wwcConfigGUISyncUserDataButton"));
@@ -99,7 +99,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			debugModeButton(player, contents);
 
 			/* Bottom Middle Option: Quit */
-			ItemStack quitButton = new ItemStack(Material.BARRIER);
+			ItemStack quitButton = XMaterial.BARRIER.parseItem();
 			ItemMeta quitMeta = quitButton.getItemMeta();
 			quitMeta.setDisplayName(ChatColor.RED
 					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
@@ -112,7 +112,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			}));
 
 			/* Bottom Right Option: Next Page */
-			ItemStack nextPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
+			ItemStack nextPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
 			ItemMeta nextPageMeta = nextPageButton.getItemMeta();
 			nextPageMeta.setDisplayName(ChatColor.GREEN
 					+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));
@@ -128,11 +128,11 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 	public void update(Player player, InventoryContents contents) {}
 	
 	private void bStatsButton(Player player, InventoryContents contents) {
-		ItemStack bStatsButton = new ItemStack(Material.BEDROCK);
+		ItemStack bStatsButton = XMaterial.BEDROCK.parseItem();
 		if (main.getbStats()) {
-			bStatsButton.setType(Material.EMERALD_BLOCK);
+			bStatsButton.setType(XMaterial.EMERALD_BLOCK.parseMaterial());
 		} else {
-			bStatsButton.setType(Material.REDSTONE_BLOCK);
+			bStatsButton.setType(XMaterial.REDSTONE_BLOCK.parseMaterial());
 		}
 		ItemMeta bStatsMeta = bStatsButton.getItemMeta();
 		bStatsMeta.setDisplayName(ChatColor.GOLD
@@ -155,11 +155,11 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 	}
 	
 	private void debugModeButton(Player player, InventoryContents contents) {
-		ItemStack debugModeButton = new ItemStack(Material.BEDROCK);
+		ItemStack debugModeButton = XMaterial.BEDROCK.parseItem();
 		if (main.getDebugMode()) {
-			debugModeButton.setType(Material.EMERALD_BLOCK);
+			debugModeButton.setType(XMaterial.EMERALD_BLOCK.parseMaterial());
 		} else {
-			debugModeButton.setType(Material.REDSTONE_BLOCK);
+			debugModeButton.setType(XMaterial.REDSTONE_BLOCK.parseMaterial());
 		}
 		ItemMeta debugModeMeta = debugModeButton.getItemMeta();
 		debugModeMeta.setDisplayName(ChatColor.GOLD

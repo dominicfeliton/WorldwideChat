@@ -1,10 +1,10 @@
 package com.expl0itz.worldwidechat.inventory;
 
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
@@ -31,7 +31,7 @@ public class TempItemInventory implements InventoryProvider {
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		/* Set borders to green */
-		ItemStack customDefaultBorders = new ItemStack(Material.GREEN_STAINED_GLASS_PANE);
+		ItemStack customDefaultBorders = XMaterial.GREEN_STAINED_GLASS_PANE.parseItem();
 		ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
 		defaultBorderMeta.setDisplayName(" ");
 		customDefaultBorders.setItemMeta(defaultBorderMeta);

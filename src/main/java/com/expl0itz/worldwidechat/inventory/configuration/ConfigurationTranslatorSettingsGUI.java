@@ -1,12 +1,12 @@
 package com.expl0itz.worldwidechat.inventory.configuration;
 
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.conversations.ConversationFactory;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsCharacterLimitConversation;
@@ -36,7 +36,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 	public void init(Player player, InventoryContents contents) {
 		try {
 			/* White stained glass borders */
-			ItemStack customBorders = new ItemStack(Material.WHITE_STAINED_GLASS_PANE);
+			ItemStack customBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
 			ItemMeta borderMeta = customBorders.getItemMeta();
 			borderMeta.setDisplayName(" ");
 			customBorders.setItemMeta(borderMeta);
@@ -54,7 +54,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			/* Option Four: Translator Cache Size */
 			ConversationFactory cacheConvo = new ConversationFactory(main).withModality(true)
 					.withFirstPrompt(new TranslatorSettingsTranslationCacheConversation());
-			ItemStack translatorCacheButton = new ItemStack(Material.NAME_TAG);
+			ItemStack translatorCacheButton = XMaterial.NAME_TAG.parseItem();
 			ItemMeta translatorCacheMeta = translatorCacheButton.getItemMeta();
 			translatorCacheMeta.setDisplayName(ChatColor.GOLD
 					+ CommonDefinitions.getMessage("wwcConfigGUITranslatorCacheButton"));
@@ -66,7 +66,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			/* Option Five : Global Rate Limit */
 			ConversationFactory rateConvo = new ConversationFactory(main).withModality(true)
 					.withFirstPrompt(new TranslatorSettingsGlobalRateConversation());
-			ItemStack rateLimitButton = new ItemStack(Material.NAME_TAG);
+			ItemStack rateLimitButton = XMaterial.NAME_TAG.parseItem();
 			ItemMeta rateLimitMeta = rateLimitButton.getItemMeta();
 			rateLimitMeta.setDisplayName(ChatColor.GOLD
 					+ CommonDefinitions.getMessage("wwcConfigGUIGlobalRateLimitButton"));
@@ -78,7 +78,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			/* Option Six: Translator Error Limit */
 			ConversationFactory errorConvo = new ConversationFactory(main).withModality(true)
 					.withFirstPrompt(new TranslatorSettingsErrorLimitConversation());
-			ItemStack errorLimitButton = new ItemStack(Material.NAME_TAG);
+			ItemStack errorLimitButton = XMaterial.NAME_TAG.parseItem();
 			ItemMeta errorLimitMeta = errorLimitButton.getItemMeta();
 			errorLimitMeta.setDisplayName(ChatColor.GOLD
 					+ CommonDefinitions.getMessage("wwcConfigGUIErrorLimitButton"));
@@ -90,7 +90,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			/* Option Seven: Max Translator Response Time */
 			ConversationFactory responseConvo = new ConversationFactory(main).withModality(true)
 					.withFirstPrompt(new TranslatorSettingsResponseLimitConversation());
-			ItemStack responseLimitButton = new ItemStack(Material.NAME_TAG);
+			ItemStack responseLimitButton = XMaterial.NAME_TAG.parseItem();
 			ItemMeta responseLimitMeta = responseLimitButton.getItemMeta();
 			responseLimitMeta.setDisplayName(ChatColor.GOLD
 					+ CommonDefinitions.getMessage("wwcConfigGUIResponseLimitButton"));
@@ -102,7 +102,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			/* Option Eight: Message Character Limit */
 			ConversationFactory charConvo = new ConversationFactory(main).withModality(true)
 					.withFirstPrompt(new TranslatorSettingsCharacterLimitConversation());
-			ItemStack charLimitButton = new ItemStack(Material.NAME_TAG);
+			ItemStack charLimitButton = XMaterial.NAME_TAG.parseItem();
 			ItemMeta charLimitMeta = charLimitButton.getItemMeta();
 			charLimitMeta.setDisplayName(ChatColor.GOLD
 					+ CommonDefinitions.getMessage("wwcConfigGUICharacterLimitButton"));
@@ -112,7 +112,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			}));
 			
 			/* Bottom Right Option: Previous Page */
-			ItemStack previousPageButton = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
+			ItemStack previousPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
 			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
 			previousPageMeta.setDisplayName(ChatColor.GREEN
 					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
@@ -121,7 +121,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 					ClickableItem.of(previousPageButton, e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */
-			ItemStack quitButton = new ItemStack(Material.BARRIER);
+			ItemStack quitButton = XMaterial.BARRIER.parseItem();
 			ItemMeta quitMeta = quitButton.getItemMeta();
 			quitMeta.setDisplayName(ChatColor.RED
 					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
@@ -144,9 +144,9 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		/* Option One: Watson */
 		ItemStack translatorButton;
 		if (main.getTranslatorName().equals("Watson")) {
-			translatorButton = new ItemStack(Material.EMERALD_BLOCK);
+			translatorButton = XMaterial.EMERALD_BLOCK.parseItem();
 		} else {
-			translatorButton = new ItemStack(Material.REDSTONE_BLOCK);
+			translatorButton = XMaterial.REDSTONE_BLOCK.parseItem();
 		}
 		ItemMeta translatorButtonMeta = translatorButton.getItemMeta();
 		translatorButtonMeta.setDisplayName(ChatColor.GOLD
@@ -161,9 +161,9 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		/* Option Two: Google Translate */
 		ItemStack translatorButton;
 		if (main.getTranslatorName().equals("Google Translate")) {
-			translatorButton = new ItemStack(Material.EMERALD_BLOCK);
+			translatorButton = XMaterial.EMERALD_BLOCK.parseItem();
 		} else {
-			translatorButton = new ItemStack(Material.REDSTONE_BLOCK);
+			translatorButton = XMaterial.REDSTONE_BLOCK.parseItem();
 		}
 		ItemMeta translatorButtonMeta = translatorButton.getItemMeta();
 		translatorButtonMeta.setDisplayName(ChatColor.GOLD
@@ -178,9 +178,9 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 		/* Option Three: Amazon Translate */
 		ItemStack translatorButton;
 		if (main.getTranslatorName().equals("Amazon Translate")) {
-			translatorButton = new ItemStack(Material.EMERALD_BLOCK);
+			translatorButton = XMaterial.EMERALD_BLOCK.parseItem();
 		} else {
-			translatorButton = new ItemStack(Material.REDSTONE_BLOCK);
+			translatorButton = XMaterial.REDSTONE_BLOCK.parseItem();
 		}
 		ItemMeta translatorButtonMeta = translatorButton.getItemMeta();
 		translatorButtonMeta.setDisplayName(ChatColor.GOLD
