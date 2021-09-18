@@ -25,5 +25,10 @@ Download WorldwideChat from the Releases tab. View more info about it on its [Sp
 ## Contributing
 Pull requests are welcome. File issues in the Issues tab; include things like version number, server software, and a detailed description of the bug.
 
+## Credits
+Thank you to:
+- jedk1 for OldVersionBookTranslate.java
+- DarkBlade12 for ReflectionUtils.java
+
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
