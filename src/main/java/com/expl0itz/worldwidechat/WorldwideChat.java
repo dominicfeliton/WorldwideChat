@@ -413,6 +413,7 @@ public class WorldwideChat extends JavaPlugin {
 		getCommand("wwct").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwcti").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwctb").setTabCompleter(new WWCTabCompleter());
+		getCommand("wwcte").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwcts").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwcs").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwctrl").setTabCompleter(new WWCTabCompleter());
