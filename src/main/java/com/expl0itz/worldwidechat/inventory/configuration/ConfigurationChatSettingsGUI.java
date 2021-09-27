@@ -57,12 +57,7 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			}));
 			
 			/* Bottom Right Option: Previous Page */
-			ItemStack previousPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
-			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
-			previousPageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
-			previousPageButton.setItemMeta(previousPageMeta);
-			contents.set(2, 1, ClickableItem.of(previousPageButton,
+			contents.set(2, 1, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"),
 					e -> ConfigurationGeneralSettingsGUI.generalSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */
@@ -79,12 +74,7 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			}));
 
 			/* Bottom Right Option: Next Page */
-			ItemStack nextPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
-			ItemMeta nextPageMeta = nextPageButton.getItemMeta();
-			nextPageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));
-			nextPageButton.setItemMeta(nextPageMeta);
-			contents.set(2, 7, ClickableItem.of(nextPageButton,
+			contents.set(2, 7, ClickableItem.of(WWCInventoryManager.getCommonButton("Next"),
 					e -> ConfigurationTranslatorSettingsGUI.translatorSettings.open(player)));
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
@@ -97,9 +87,9 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 	private void sendTranslationChatButton(Player player, InventoryContents contents) {
 		ItemStack translationChatButton = XMaterial.BEDROCK.parseItem();
 		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat")) {
-			translationChatButton.setType(XMaterial.EMERALD_BLOCK.parseMaterial());
+			translationChatButton = XMaterial.EMERALD_BLOCK.parseItem();
 		} else {
-			translationChatButton.setType(XMaterial.REDSTONE_BLOCK.parseMaterial());
+			translationChatButton = XMaterial.REDSTONE_BLOCK.parseItem();
 		}
 		ItemMeta translationChatMeta = translationChatButton.getItemMeta();
 		translationChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUISendTranslationChatButton"));
@@ -122,9 +112,9 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 	private void sendPluginUpdateChatButton(Player player, InventoryContents contents) {
 		ItemStack pluginUpdateChatButton = XMaterial.BEDROCK.parseItem();
 		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) {
-			pluginUpdateChatButton.setType(XMaterial.EMERALD_BLOCK.parseMaterial());
+			pluginUpdateChatButton = XMaterial.EMERALD_BLOCK.parseItem();
 		} else {
-			pluginUpdateChatButton.setType(XMaterial.REDSTONE_BLOCK.parseMaterial());
+			pluginUpdateChatButton = XMaterial.REDSTONE_BLOCK.parseItem();
 		}
 		ItemMeta pluginUpdateChatMeta = pluginUpdateChatButton.getItemMeta();
 		pluginUpdateChatMeta.setDisplayName(ChatColor.GOLD

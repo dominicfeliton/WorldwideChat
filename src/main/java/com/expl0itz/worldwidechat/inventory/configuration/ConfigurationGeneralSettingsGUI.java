@@ -112,13 +112,9 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			}));
 
 			/* Bottom Right Option: Next Page */
-			ItemStack nextPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
-			ItemMeta nextPageMeta = nextPageButton.getItemMeta();
-			nextPageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));
-			nextPageButton.setItemMeta(nextPageMeta);
 			contents.set(2, 7,
-					ClickableItem.of(nextPageButton, e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
+					ClickableItem.of(WWCInventoryManager.getCommonButton("Next"), 
+							e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}
@@ -130,9 +126,9 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 	private void bStatsButton(Player player, InventoryContents contents) {
 		ItemStack bStatsButton = XMaterial.BEDROCK.parseItem();
 		if (main.getbStats()) {
-			bStatsButton.setType(XMaterial.EMERALD_BLOCK.parseMaterial());
+			bStatsButton = XMaterial.EMERALD_BLOCK.parseItem();
 		} else {
-			bStatsButton.setType(XMaterial.REDSTONE_BLOCK.parseMaterial());
+			bStatsButton = XMaterial.REDSTONE_BLOCK.parseItem();
 		}
 		ItemMeta bStatsMeta = bStatsButton.getItemMeta();
 		bStatsMeta.setDisplayName(ChatColor.GOLD
@@ -157,9 +153,9 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 	private void debugModeButton(Player player, InventoryContents contents) {
 		ItemStack debugModeButton = XMaterial.BEDROCK.parseItem();
 		if (main.getDebugMode()) {
-			debugModeButton.setType(XMaterial.EMERALD_BLOCK.parseMaterial());
+			debugModeButton = XMaterial.EMERALD_BLOCK.parseItem();
 		} else {
-			debugModeButton.setType(XMaterial.REDSTONE_BLOCK.parseMaterial());
+			debugModeButton = XMaterial.REDSTONE_BLOCK.parseItem();
 		}
 		ItemMeta debugModeMeta = debugModeButton.getItemMeta();
 		debugModeMeta.setDisplayName(ChatColor.GOLD

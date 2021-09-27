@@ -158,12 +158,7 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 			}
 
 			/* Bottom Right Option: Previous Page */
-			ItemStack previousPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
-			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
-			previousPageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
-			previousPageButton.setItemMeta(previousPageMeta);
-			contents.set(2, 1, ClickableItem.of(previousPageButton,
+			contents.set(2, 1, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"),
 					e -> ConfigurationTranslatorSettingsGUI.translatorSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */
@@ -189,9 +184,9 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 	private void translateStatusButton(Player player, InventoryContents contents) {
 		ItemStack translatorStatusButton = XMaterial.BEDROCK.parseItem();
 		if (main.getTranslatorName().equals(translatorName)) {
-			translatorStatusButton.setType(XMaterial.EMERALD_BLOCK.parseMaterial());
+			translatorStatusButton = XMaterial.EMERALD_BLOCK.parseItem();
 		} else {
-			translatorStatusButton.setType(XMaterial.REDSTONE_BLOCK.parseMaterial());
+			translatorStatusButton = XMaterial.REDSTONE_BLOCK.parseItem();
 		}
 		ItemMeta translatorStatusButtonMeta = translatorStatusButton.getItemMeta();
 		translatorStatusButtonMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIToggleButton", new String[] {translatorName}));

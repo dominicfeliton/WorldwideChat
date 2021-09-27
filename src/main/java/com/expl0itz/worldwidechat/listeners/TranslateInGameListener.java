@@ -1,8 +1,10 @@
 package com.expl0itz.worldwidechat.listeners;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bukkit.Location;
 
 import org.bukkit.block.Sign;
@@ -15,6 +17,7 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.meta.BookMeta;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -33,11 +36,11 @@ import net.kyori.adventure.text.format.TextDecoration;
 public class TranslateInGameListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
-
+	
 	/* Custom Entity Name Translation */
 	@EventHandler(priority = EventPriority.HIGHEST) 
 	public void onInGameEntityTranslateRequest(PlayerInteractEntityEvent event) {
-		if (!main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("") && event.getHand().equals(EquipmentSlot.HAND)) {
+		if (!main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("") && checkInventoryHand(event)) {
 			try {
 				/* Entity Names */
 				if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingEntity()) {
@@ -78,6 +81,7 @@ public class TranslateInGameListener implements Listener {
 								.color(NamedTextColor.RED).decoration(TextDecoration.ITALIC, true))
 						.build();
 				CommonDefinitions.sendMessage(event.getPlayer(), translationFailMsg);
+				CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
 			}
 		}
 	}
@@ -89,8 +93,8 @@ public class TranslateInGameListener implements Listener {
 			try {
 				/* Book Translation */
 				if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingBook()
-					&& event.getHand() != null && event.getItem() != null
-					&& XMaterial.WRITTEN_BOOK.parseMaterial() == event.getItem().getType()
+					&& checkInventoryHand(event) && event.getItem() != null
+					&& XMaterial.WRITTEN_BOOK.parseItem().getType() == event.getItem().getType()
 					&& (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
 					ItemStack currentBook = event.getItem().clone();
 					new BukkitRunnable() {
@@ -134,7 +138,7 @@ public class TranslateInGameListener implements Listener {
 								String out = CommonDefinitions.translateText(eaPage, event.getPlayer());
 								if (out.equals("") || out.equalsIgnoreCase(eaPage)) {
 									sameResult = true;
-									out = CommonDefinitions.getMessage("Messages.wwctbTranslatePageFail", new String[] {eaPage});
+									out = CommonDefinitions.getMessage("wwctbTranslatePageFail", new String[] {eaPage});
 								}
 								translatedPages.add(out);
 							}
@@ -161,7 +165,10 @@ public class TranslateInGameListener implements Listener {
 							ItemStack newBook = XMaterial.WRITTEN_BOOK.parseItem();
 							BookMeta newMeta = (BookMeta) newBook.getItemMeta();
 							newMeta.setAuthor(meta.getAuthor());
-							newMeta.setGeneration(meta.getGeneration());
+							try {
+								/* Older MC versions do not have generation data */
+							    newMeta.setGeneration(meta.getGeneration());
+							} catch (NoSuchMethodError e) {}
 							newMeta.setTitle(outTitle);
 							newMeta.setPages(translatedPages);
 							newBook.setItemMeta(newMeta);
@@ -186,6 +193,7 @@ public class TranslateInGameListener implements Listener {
 				else if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingSign()
 				    && event.getClickedBlock() != null 
 				    && event.getClickedBlock().getType().name().contains("SIGN")
+				    && checkInventoryHand(event)
 				    && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
 					/* Start sign translation */
 					Sign currentSign = (Sign) event.getClickedBlock().getState();
@@ -288,13 +296,10 @@ public class TranslateInGameListener implements Listener {
 				
 				/* Item Translation */
 				else if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingItem()
-					&& event.getPlayer().getInventory() != null
-					&& event.getPlayer().getInventory().getItemInMainHand() != null
-					&& event.getPlayer().getInventory().getItemInMainHand().getType() != XMaterial.AIR.parseMaterial()
-					&& event.getPlayer().getInventory().getItemInMainHand().getType() != XMaterial.WRITTEN_BOOK.parseMaterial()
+					&& getItemInMainHand(event) != null
 					&& (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
 					/* Start item translation */
-					ItemStack currentItem = event.getPlayer().getInventory().getItemInMainHand();
+					ItemStack currentItem = (ItemStack) getItemInMainHand(event);
 
 					new BukkitRunnable() {
 						@Override
@@ -410,7 +415,76 @@ public class TranslateInGameListener implements Listener {
 								.color(NamedTextColor.RED).decoration(TextDecoration.ITALIC, true))
 						.build();
 				CommonDefinitions.sendMessage(event.getPlayer(), translationFailMsg);
+				CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
 			}
 		}
+	}
+	
+	private boolean checkInventoryHand(PlayerInteractEvent event) {
+		try {
+			try {
+				PlayerInteractEvent.class.getMethod("getHand");
+				if (event.getHand().equals(EquipmentSlot.HAND)) {
+					return true;
+				}
+				return false;
+			} catch (NoSuchMethodException e) {
+				CommonDefinitions.sendDebugMessage("getHand() method not found in PlayerInteractEvent!");
+				return true;
+			}
+		} catch (Exception e) {
+			CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
+			return false;
+		}
+	}
+	
+	private boolean checkInventoryHand(PlayerInteractEntityEvent event) {
+		try {
+			try {
+				PlayerInteractEvent.class.getMethod("getHand");
+				if (event.getHand().equals(EquipmentSlot.HAND)) {
+					return true;
+				}
+				return false;
+			} catch (NoSuchMethodException e) {
+				CommonDefinitions.sendDebugMessage("getHand() method not found in PlayerInteractEntityEvent!");
+				return true;
+			}
+		} catch (Exception e) {
+			CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
+			return false;
+		}
+	}
+	
+	private Object getItemInMainHand(PlayerInteractEvent event) {
+		if (event.getPlayer().getInventory() != null) {
+			try {
+				try {
+					if (PlayerInventory.class.getMethod("getItemInMainHand") != null ) {
+						if (event.getPlayer().getInventory().getItemInMainHand() != null
+								&& event.getPlayer().getInventory().getItemInMainHand().getType() != XMaterial.AIR.parseItem().getType()
+								&& event.getPlayer().getInventory().getItemInMainHand().getType() != XMaterial.WRITTEN_BOOK.parseItem().getType()) {
+							return event.getPlayer().getInventory().getItemInMainHand();
+						}
+						return null;
+					}
+				} catch (NoSuchMethodException e) {
+					CommonDefinitions.sendDebugMessage("getItemInMainHand() does not exist in PlayerInventory!");
+					Method getItemInHand = PlayerInventory.class.getMethod("getItemInHand");
+					Object getItemInHandObj = getItemInHand.invoke(event.getPlayer().getInventory());
+					Object itemType = getItemInHandObj.getClass().getMethod("getType").invoke(getItemInHandObj);
+					if (getItemInHandObj != null
+							&& itemType != XMaterial.AIR.parseItem().getType()
+							&& itemType != XMaterial.WRITTEN_BOOK.parseItem().getType()) {
+					    return getItemInHandObj;	
+					}
+					return null;
+				}
+			} catch (Exception e) {
+				CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
+				return null;
+			}
+		}
+		return null;
 	}
 }

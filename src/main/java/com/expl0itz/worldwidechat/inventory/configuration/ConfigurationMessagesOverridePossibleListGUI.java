@@ -62,7 +62,7 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 				if (messagesConfig.getString("Overrides." + entry.getKey()) != null) {
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwcConfigGUIMessagesAlreadyOverriden"));
 					currentEntryMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-					currentEntryMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
+					currentEntryMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
 				}
 				lore.add(CommonDefinitions.getMessage("wwcConfigGUIMessagesOverrideOriginalLabel") + ": " + messagesConfig.getString("Messages." + entry.getKey()));
 				currentEntryMeta.setLore(lore);
@@ -82,30 +82,20 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
 			
 			/* Bottom Left Option: Previous Page */
-			ItemStack previousPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
-			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
-			previousPageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
-			previousPageButton.setItemMeta(previousPageMeta);
 			if (!pagination.isFirst()) {
-				contents.set(5, 2, ClickableItem.of(previousPageButton, e -> {
+				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
 					overrideNewMessageSettings.open(player,
 							pagination.previous().getPage());
 				}));
 			} else {
-				contents.set(5, 2, ClickableItem.of(previousPageButton, e -> {
+				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
 					ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
 				}));
 			}
 			
 			/* Bottom Right Option: Next Page */
-			ItemStack nextPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
-			ItemMeta nextPageMeta = nextPageButton.getItemMeta();
-			nextPageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));
-			nextPageButton.setItemMeta(nextPageMeta);
 			if (!pagination.isLast()) {
-				contents.set(5, 6, ClickableItem.of(nextPageButton, e -> {
+				contents.set(5, 6, ClickableItem.of(WWCInventoryManager.getCommonButton("Next"), e -> {
 					overrideNewMessageSettings.open(player,
 							pagination.next().getPage());
 				}));

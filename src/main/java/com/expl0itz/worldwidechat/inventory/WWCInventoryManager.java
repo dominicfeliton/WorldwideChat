@@ -3,9 +3,14 @@ package com.expl0itz.worldwidechat.inventory;
 import java.util.UUID;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
@@ -45,6 +50,25 @@ public class WWCInventoryManager extends InventoryManager {
 		CommonDefinitions.sendMessage(player, inventoryError);
 		WorldwideChat.getInstance().getLogger().severe(CommonDefinitions.getMessage("wwcInventoryError", new String[] {player.getName()}));
 		e.printStackTrace();
+	}
+	
+	public static ItemStack getCommonButton(String buttonType) {
+		ItemStack pageButton = XMaterial.WHITE_STAINED_GLASS.parseItem();
+		ItemMeta pageMeta = pageButton.getItemMeta();
+		if (buttonType.equalsIgnoreCase("Previous")) {
+			pageButton = XMaterial.RED_STAINED_GLASS.parseItem();
+			pageMeta.setDisplayName(ChatColor.GREEN
+					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
+		} else if (buttonType.equalsIgnoreCase("Next")) {
+			pageButton = XMaterial.GREEN_STAINED_GLASS.parseItem();
+			pageMeta.setDisplayName(ChatColor.GREEN
+					+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));
+		} else {
+			pageMeta.setDisplayName(ChatColor.RED + "Not a valid button!");
+		}
+		
+		pageButton.setItemMeta(pageMeta);
+		return pageButton;
 	}
 
 }

@@ -42,7 +42,7 @@ import net.md_5.bungee.api.ChatColor;
 public class CommonDefinitions {
 
 	/* Important vars */
-	public static String[] supportedMCVersions = { "1.17", "1.16", "1.15", "1.14", "1.13", "1.12" };
+	public static String[] supportedMCVersions = { "1.17", "1.16", "1.15", "1.14", "1.13", "1.12", "1.11", "1.10", "1.9", "1.8" };
 
 	public static String[] supportedPluginLangCodes = { "af", "sq", "am", "ar", "hy", "az", "bn", "bs", "bg", "ca",
 			"zh", "zh-TW", "hr", "cs", "da", "fa-AF", "nl", "en", "et", "fa", "tl", "fi", "fr", "fr-CA", "ka", "de",

@@ -24,7 +24,7 @@ public class TempItemInventory implements InventoryProvider {
 
 	public static SmartInventory getTempItemInventory(ItemStack displayedItem) {
 		return SmartInventory.builder().id("tempItemMenu").provider(new TempItemInventory(displayedItem)).size(5, 9)
-				.manager(WorldwideChat.getInstance().getInventoryManager()).title(ChatColor.DARK_AQUA + CommonDefinitions.getMessage("wwcGUITempItem"))
+				.manager(WorldwideChat.getInstance().getInventoryManager()).title(ChatColor.DARK_BLUE + CommonDefinitions.getMessage("wwcGUITempItem"))
 				.build();
 	}
 
@@ -42,7 +42,6 @@ public class TempItemInventory implements InventoryProvider {
 	}
 
 	@Override
-	public void update(Player player, InventoryContents contents) {
-	}
+	public void update(Player player, InventoryContents contents) {}
 
 }

@@ -91,12 +91,7 @@ public class ConfigurationMessagesOverrideModifyGUI implements InventoryProvider
 			
 			
 			/* Left Option: Previous Page */
-			ItemStack previousPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
-			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
-			previousPageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
-			previousPageButton.setItemMeta(previousPageMeta);
-			contents.set(1, 2, ClickableItem.of(previousPageButton, e -> {
+			contents.set(1, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
 				ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
 			}));
 		} catch (Exception e) {

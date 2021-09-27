@@ -14,14 +14,22 @@ public class OldVersionOpenBook {
 
 	// Written by jedk1. Thank you!
 	
-	 private static boolean initialised = false;
+	  private static boolean initialised = false;
+	  private static boolean isNewer = true;
 	   private static Method getHandle;
 	   private static Method openBook;
 	   
 	   static {
 	      try {
 	         getHandle = ReflectionUtils.getMethod("CraftPlayer", PackageType.CRAFTBUKKIT_ENTITY, "getHandle");
-	         openBook = ReflectionUtils.getMethod("EntityPlayer", PackageType.MINECRAFT_SERVER, "a", PackageType.MINECRAFT_SERVER.getClass("ItemStack"), PackageType.MINECRAFT_SERVER.getClass("EnumHand"));
+	         try {
+	        	 // 1.9+
+	             openBook = ReflectionUtils.getMethod("EntityPlayer", PackageType.MINECRAFT_SERVER, "a", PackageType.MINECRAFT_SERVER.getClass("ItemStack"), PackageType.MINECRAFT_SERVER.getClass("EnumHand"));
+	         } catch (ClassNotFoundException e) {
+	        	 // 1.8
+	        	 isNewer = false;
+	        	 openBook = ReflectionUtils.getMethod("EntityPlayer", PackageType.MINECRAFT_SERVER, "openBook", PackageType.MINECRAFT_SERVER.getClass("ItemStack"));
+	         }
 	         initialised = true;
 	      } catch (ReflectiveOperationException e) {
 	         e.printStackTrace();
@@ -40,23 +48,52 @@ public class OldVersionOpenBook {
 	   */
 	   public static boolean openBook(ItemStack i, Player p) {
 	      if (!initialised) return false;
-	      ItemStack held = p.getInventory().getItemInMainHand();
-	      try {
-	         p.getInventory().setItemInMainHand(i);
-	         sendPacket(i, p);
-	      } catch (ReflectiveOperationException e) {
-	         e.printStackTrace();
-	      initialised = false;
-	      }
-	      p.getInventory().setItemInMainHand(held);
-	      return initialised;
+	      return (isNewer ? openBook119(i, p) : openBook118(i, p));
+	   }
+	   
+	   private static boolean openBook118(ItemStack i, Player p) {
+		   if (!initialised) return false;	
+		   try {
+			   ItemStack held = (ItemStack) Player.class.getMethod("getItemInHand").invoke(p);
+			   try {
+				   Player.class.getMethod("setItemInHand", ItemStack.class).invoke(p, i);
+		           sendPacket(i, p);
+			   } catch (ReflectiveOperationException e) {
+				   Player.class.getMethod("setItemInHand", ItemStack.class).invoke(p, held);
+				   initialised = false;
+			   }
+			   Player.class.getMethod("setItemInHand", ItemStack.class).invoke(p, held);
+		       return initialised;
+		   } catch (Exception e) {
+			   initialised = false;
+			   e.printStackTrace();
+			   return initialised;
+		   }
+	   }
+	   
+	   private static boolean openBook119(ItemStack i, Player p) {
+		   ItemStack held = p.getInventory().getItemInMainHand();
+		      try {
+		         p.getInventory().setItemInMainHand(i);
+		         sendPacket(i, p);
+		      } catch (ReflectiveOperationException e) {
+		         e.printStackTrace();
+		         initialised = false;
+		      }
+		      p.getInventory().setItemInMainHand(held);
+		      return initialised;
 	   }
 
 	   private static void sendPacket(ItemStack i, Player p) throws ReflectiveOperationException {
-	      Object entityplayer = getHandle.invoke(p);
-	      Class<?> enumHand = PackageType.MINECRAFT_SERVER.getClass("EnumHand");
-	      Object[] enumArray = enumHand.getEnumConstants();
-	      openBook.invoke(entityplayer, getItemStack(i), enumArray[0]);
+	      if (isNewer) {
+	    	  Object entityplayer = getHandle.invoke(p);
+	          Class<?> enumHand = PackageType.MINECRAFT_SERVER.getClass("EnumHand");
+	          Object[] enumArray = enumHand.getEnumConstants();
+	          openBook.invoke(entityplayer, getItemStack(i), enumArray[0]);
+	      } else {
+	    	  Object entityplayer = getHandle.invoke(p);	
+	          openBook.invoke(entityplayer, getItemStack(i));
+	      }
 	   }
 
 	   public static Object getItemStack(ItemStack item) {
@@ -81,7 +118,7 @@ public class OldVersionOpenBook {
 	      try {
 	         p = (List<Object>) ReflectionUtils.getField(PackageType.CRAFTBUKKIT_INVENTORY.getClass("CraftMetaBook"), true, "pages").get(metadata);
 	         for (String text : pages) {
-	            page = ReflectionUtils.invokeMethod(ReflectionUtils.PackageType.MINECRAFT_SERVER.getClass("IChatBaseComponent$ChatSerializer").newInstance(), "a", text);
+	            page = ReflectionUtils.invokeMethod(ReflectionUtils.PackageType.MINECRAFT_SERVER.getClass("IChatBaseComponent$ChatSerializer").getDeclaredConstructor().newInstance(), "a", text);
 	            p.add(page);
 	         }
 	      } catch (Exception e) {

@@ -60,7 +60,7 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 			for (int i = 0; i < main.getSupportedTranslatorLanguages().size(); i++) {
 				ItemStack currentLang = XMaterial.ARROW.parseItem();
 				if (XMaterial.TARGET.parseItem() != null) {
-					currentLang.setType(XMaterial.TARGET.parseMaterial());
+					currentLang = XMaterial.TARGET.parseItem();
 				}
 				ItemMeta currentLangMeta = currentLang.getItemMeta();
 				
@@ -68,7 +68,7 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 				/* Add Glow Effect */
 				currentLangMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 				if (currTranslator.getOutLangCode().equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
-					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
+					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				currentLangMeta.setDisplayName(main.getSupportedTranslatorLanguages().get(i).getLangName());
@@ -98,31 +98,21 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
 
 			/* Bottom Left Option: Previous Page */
-			ItemStack previousPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
-			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
-			previousPageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
-			previousPageButton.setItemMeta(previousPageMeta);
 			if (!pagination.isFirst()) {
 				contents.set(5, 2,
-						ClickableItem.of(previousPageButton,
+						ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"),
 								e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player,
 										pagination.previous().getPage())));
 			} else {
 				contents.set(5, 2,
-						ClickableItem.of(previousPageButton,
+						ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"),
 								e -> WWCTranslateGUISourceLanguage.getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player)));
 			}
 
 			/* Bottom Right Option: Next Page */
-			ItemStack nextPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
-			ItemMeta nextPageMeta = nextPageButton.getItemMeta();
-			nextPageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));
-			nextPageButton.setItemMeta(nextPageMeta);
 			if (!pagination.isLast()) {
 				contents.set(5, 6,
-						ClickableItem.of(nextPageButton,
+						ClickableItem.of(WWCInventoryManager.getCommonButton("Next"),
 								e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player,
 										pagination.next().getPage())));
 			}

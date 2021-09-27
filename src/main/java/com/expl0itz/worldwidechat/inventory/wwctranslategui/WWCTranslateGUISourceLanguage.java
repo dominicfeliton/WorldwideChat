@@ -60,10 +60,10 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 				ArrayList<String> lore = new ArrayList<>();
 				currentLangMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 				if (selectedSourceLanguage.equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
-					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
+					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
 					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
 				} else if (currTranslator.getInLangCode().equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
-					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
+					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				currentLangMeta.setDisplayName(main.getSupportedTranslatorLanguages().get(i).getLangName());
@@ -86,18 +86,13 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
 
 			/* Bottom Left Option: Previous Page */
-			ItemStack previousPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
-			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
-			previousPageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
-			previousPageButton.setItemMeta(previousPageMeta);
 			if (!pagination.isFirst()) {
-				contents.set(5, 2, ClickableItem.of(previousPageButton, e -> {
+				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
 					getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player,
 							pagination.previous().getPage());
 				}));
 			} else {
-				contents.set(5, 2, ClickableItem.of(previousPageButton, e -> {
+				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
 					WWCTranslateGUIMainMenu.getTranslateMainMenu(targetPlayerUUID).open(player);
 				}));
 			}
@@ -112,10 +107,10 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 			skipSourceMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 			ArrayList<String> lore = new ArrayList<>();
 			if ((currTranslator.getInLangCode().equals("None"))) {
-				skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
+				skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
 				lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
 			} else if (selectedSourceLanguage.equalsIgnoreCase("None")) {
-				skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("mending").get().parseEnchantment(), 1, false);
+				skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
 				lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
 			}
 			skipSourceButton.setItemMeta(skipSourceMeta);
@@ -123,13 +118,8 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 					.getTargetLanguageInventory("None", targetPlayerUUID).open(player)));
 
 			/* Bottom Right Option: Next Page */
-			ItemStack nextPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
-			ItemMeta nextPageMeta = nextPageButton.getItemMeta();
-			nextPageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));
-			nextPageButton.setItemMeta(nextPageMeta);
 			if (!pagination.isLast()) {
-				contents.set(5, 6, ClickableItem.of(nextPageButton, e -> {
+				contents.set(5, 6, ClickableItem.of(WWCInventoryManager.getCommonButton("Next"), e -> {
 					getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player,
 							pagination.next().getPage());
 				}));

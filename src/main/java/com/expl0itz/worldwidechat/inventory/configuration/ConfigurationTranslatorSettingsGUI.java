@@ -112,13 +112,9 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			}));
 			
 			/* Bottom Right Option: Previous Page */
-			ItemStack previousPageButton = XMaterial.MAGENTA_GLAZED_TERRACOTTA.parseItem();
-			ItemMeta previousPageMeta = previousPageButton.getItemMeta();
-			previousPageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
-			previousPageButton.setItemMeta(previousPageMeta);
 			contents.set(3, 1,
-					ClickableItem.of(previousPageButton, e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
+					ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), 
+							e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */
 			ItemStack quitButton = XMaterial.BARRIER.parseItem();
