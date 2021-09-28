@@ -32,6 +32,7 @@ import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
+import com.expl0itz.worldwidechat.listeners.DeluxeChatListener;
 import com.expl0itz.worldwidechat.listeners.InventoryListener;
 import com.expl0itz.worldwidechat.listeners.OnPlayerJoinListener;
 import com.expl0itz.worldwidechat.listeners.TranslateInGameListener;
@@ -127,10 +128,9 @@ public class WorldwideChat extends JavaPlugin {
 		checkMCVersion();
 
 		// EventHandlers + check for plugins
-		if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) { // DeluxeChat is incompatible as of v1.3
-			// getServer().getPluginManager().registerEvents(new DeluxeChatListener(),
-			// this);
-			getLogger().warning(CommonDefinitions.getMessage("wwcDeluxeChatIncompatible"));
+		if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) {
+			getServer().getPluginManager().registerEvents(new DeluxeChatListener(), this);
+			//getLogger().warning(CommonDefinitions.getMessage("wwcDeluxeChatIncompatible"));
 		}
 		getServer().getPluginManager().registerEvents(new ChatListener(), this);
 		getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
