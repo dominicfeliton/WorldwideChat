@@ -137,6 +137,11 @@
             <artifactId>XSeries</artifactId>
             <version>8.4.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.expl0itz.stripped.deluxechat</groupId>
+            <artifactId>stripped-deluxechat</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         
     </dependencies>
 
@@ -149,6 +154,10 @@
         <repository> <!-- for adventure development builds -->
             <id>sonatype-oss-snapshots</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+        <repository> <!-- Local repository dependencies -->
+            <id>Local-repo</id>
+            <url>file://${basedir}/dependencies/local-maven-repo</url>
         </repository>
     </repositories>
 
