@@ -9,7 +9,6 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsAmazonTranslateAccessKeyConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsAmazonTranslateRegionConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsAmazonTranslateSecretKeyConversation;
@@ -167,11 +166,10 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 			quitMeta.setDisplayName(ChatColor.RED
 					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
 			quitButton.setItemMeta(quitMeta);
-			WWCReload rel = new WWCReload(player, null, null, null);
 			contents.set(2, 4, ClickableItem.of(quitButton, e -> {
 				main.removePlayerUsingConfigurationGUI(player);
 				player.closeInventory();
-				rel.processCommand();
+				main.reload(player);
 			}));
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
@@ -290,8 +288,7 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 										main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigConversationConsoleTranslatorSuccess", new String[] {player.getName(), translatorName}));
 										
 										// Reload the plugin
-										WWCReload rel = new WWCReload(player, null, null, new String[0]);
-										rel.processCommand();
+										main.reload(player);
 									}
 								}.runTask(main);
 							}

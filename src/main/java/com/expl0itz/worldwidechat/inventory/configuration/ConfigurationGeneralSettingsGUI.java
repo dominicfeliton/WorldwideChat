@@ -8,7 +8,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsLangConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsPrefixConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsSyncUserDataConversation;
@@ -104,11 +103,10 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			quitMeta.setDisplayName(ChatColor.RED
 					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
 			quitButton.setItemMeta(quitMeta);
-			WWCReload rel = new WWCReload(player, null, null, new String[0]);
 			contents.set(2, 4, ClickableItem.of(quitButton, e -> {
 				main.removePlayerUsingConfigurationGUI(player);
 				player.closeInventory();
-				rel.processCommand();
+				main.reload(player);
 			}));
 
 			/* Bottom Right Option: Next Page */

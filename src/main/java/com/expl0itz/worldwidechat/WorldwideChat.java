@@ -86,7 +86,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	private String pluginLang = "en";
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "9182021-1"; //This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "9282021-1"; //This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	/* Default constructor */
@@ -219,11 +219,11 @@ public class WorldwideChat extends JavaPlugin {
 			// Reload command
 			WWCReload wwcr = new WWCReload(sender, command, label, args);
 			return wwcr.processCommand();
-		} else if (command.getName().equalsIgnoreCase("wwcg") && hasValidTranslatorSettings(sender) && checkSenderIdentity(sender)) {
+		} else if (command.getName().equalsIgnoreCase("wwcg") && hasValidTranslatorSettings(sender)) {
 			// Global translation
 			WWCTranslate wwcg = new WWCGlobal(sender, command, label, args);
 			return wwcg.processCommand();
-		} else if (command.getName().equalsIgnoreCase("wwct") && hasValidTranslatorSettings(sender) && checkSenderIdentity(sender)) {
+		} else if (command.getName().equalsIgnoreCase("wwct") && hasValidTranslatorSettings(sender)) {
 			// Per player translation
 			WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
 			return wwct.processCommand();

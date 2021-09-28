@@ -7,7 +7,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
@@ -66,11 +65,10 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			quitMeta.setDisplayName(ChatColor.RED
 					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
 			quitButton.setItemMeta(quitMeta);
-			WWCReload rel = new WWCReload(player, null, null, new String[0]);
 			contents.set(2, 4, ClickableItem.of(quitButton, e -> {
 				main.removePlayerUsingConfigurationGUI(player);
 				player.closeInventory();
-				rel.processCommand();
+				main.reload(player);
 			}));
 
 			/* Bottom Right Option: Next Page */

@@ -5,6 +5,7 @@ import java.util.UUID;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
@@ -21,7 +22,8 @@ public class WWCTranslate extends BasicCommand {
 	private WorldwideChat main = WorldwideChat.getInstance();
 	
 	private boolean isGlobal = this instanceof WWCGlobal;
-
+	private boolean isConsoleSender = sender instanceof ConsoleCommandSender;
+	
 	public WWCTranslate(CommandSender sender, Command command, String label, String[] args) {
 		super(sender, command, label, args);
 	}
@@ -45,10 +47,10 @@ public class WWCTranslate extends BasicCommand {
 		}
 
 		/* GUI Checks */
-		if (args.length == 0 && isGlobal) {
+		if (args.length == 0 && isGlobal && !isConsoleSender) {
 			WWCTranslateGUIMainMenu.getTranslateMainMenu("GLOBAL-TRANSLATE-ENABLED").open((Player) sender);
 			return true;
-		} else {
+		} else if (!isConsoleSender) {
 			if ((args.length == 0 && !isGlobal) || (args.length == 1 && !isGlobal && args[0].equalsIgnoreCase(sender.getName()))) { /* User wants to see their own translation session */
 				WWCTranslateGUIMainMenu.getTranslateMainMenu(((Player)sender).getUniqueId().toString()).open((Player) sender);
 				return true;
@@ -75,7 +77,7 @@ public class WWCTranslate extends BasicCommand {
 		/* Existing translator checks */
 		if (!isGlobal) {
 			/* User wants to exit their own translation session. */
-			if ((Bukkit.getServer().getPlayerExact(args[0]) == null || (args[0] instanceof String && args[0].equalsIgnoreCase(sender.getName()))) && !main.getActiveTranslator(((Player)sender).getUniqueId().toString()).getUUID().equals("")) {
+			if (!isConsoleSender && args.length > 0 && (Bukkit.getServer().getPlayerExact(args[0]) == null || (args[0] instanceof String && args[0].equalsIgnoreCase(sender.getName()))) && !main.getActiveTranslator(((Player)sender).getUniqueId().toString()).getUUID().equals("")) {
 				ActiveTranslator currTarget = main.getActiveTranslator(((Player)sender).getUniqueId().toString());
 				main.removeActiveTranslator(currTarget);
 				final TextComponent chatTranslationStopped = Component.text()
@@ -88,7 +90,7 @@ public class WWCTranslate extends BasicCommand {
 					return true;
 				}
 			/* User wants to delete another player's translation session. */
-			} else if (args[0] instanceof String && Bukkit.getServer().getPlayerExact(args[0]) != null && !main.getActiveTranslator(Bukkit.getServer().getPlayer(args[0]).getUniqueId().toString()).getUUID().equals("")) {
+			} else if (args.length > 0 && Bukkit.getServer().getPlayerExact(args[0]) != null && !main.getActiveTranslator(Bukkit.getServer().getPlayerExact(args[0]).getUniqueId().toString()).getUUID().equals("")) {
 				Player testPlayer = Bukkit.getServer().getPlayerExact(args[0]);
 				main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
 				final TextComponent chatTranslationStopped = Component.text()
@@ -103,11 +105,11 @@ public class WWCTranslate extends BasicCommand {
 								.color(NamedTextColor.LIGHT_PURPLE))
 						.build();
 				CommonDefinitions.sendMessage(sender, chatTranslationStoppedOtherPlayer);
-				if (args.length >= 2 && args[1] instanceof String && args[1].equalsIgnoreCase("Stop")) {
+				if ((isConsoleSender && args.length == 1) || (args.length >= 2 && args[1] instanceof String && args[1].equalsIgnoreCase("Stop"))) {
 					return true;
 				}
 			}
-		} else if (isGlobal && !main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")) {
+		} else if (args.length > 0 && isGlobal && !main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")) {
 			main.removeActiveTranslator(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
 			final TextComponent chatTranslationStopped = Component.text()
 					.append(Component.text()
@@ -124,7 +126,21 @@ public class WWCTranslate extends BasicCommand {
 
 		/* Player has given us one argument */
 		if (args.length == 1) {
-			return startNewTranslationSession(isGlobal ? "GLOBAL-TRANSLATE-ENABLED" : ((Player)sender).getUniqueId().toString(), "None", args[0]);
+			/* If the sender is a player */
+			if (!isConsoleSender) {
+				return startNewTranslationSession(isGlobal ? "GLOBAL-TRANSLATE-ENABLED" : ((Player)sender).getUniqueId().toString(), "None", args[0]);
+			}
+			/* If we are console... */
+			if (isGlobal) {
+				return startNewTranslationSession("GLOBAL-TRANSLATE-ENABLED", "None", args[0]);
+			}
+			final TextComponent noConsoleChat = Component.text() // Cannot translate console chat
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwctCannotTranslateConsole", new String[0]))
+							.color(NamedTextColor.RED))
+					.build();
+			CommonDefinitions.sendMessage(sender, noConsoleChat);
+			return false;
 		}
 		
 		/* Player has given us two arguments */
@@ -132,14 +148,21 @@ public class WWCTranslate extends BasicCommand {
 			if (!isGlobal) {
 				/* If we are passing two languages (or attempting to pass two languages) */
 				if (Bukkit.getPlayerExact(args[0]) == null) {
-					return startNewTranslationSession(((Player)sender).getUniqueId().toString(), args[0], args[1]);
+					if (!isConsoleSender) {
+						return startNewTranslationSession(((Player)sender).getUniqueId().toString(), args[0], args[1]);
+					}
+					final TextComponent noConsoleChat = Component.text() // Cannot translate console chat
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwctCannotTranslateConsole", new String[0]))
+									.color(NamedTextColor.RED))
+							.build();
+					CommonDefinitions.sendMessage(sender, noConsoleChat);
+					return false;
 				/* If we are attempting to pass a player and an outLang */
-				} else {
-					return startNewTranslationSession(Bukkit.getPlayer(args[0]).getUniqueId().toString(), "None", args[1]);
 				}
-			} else {
-				return startNewTranslationSession("GLOBAL-TRANSLATE-ENABLED", args[0], args[1]);
+				return startNewTranslationSession(Bukkit.getPlayer(args[0]).getUniqueId().toString(), "None", args[1]);
 			}
+			return startNewTranslationSession("GLOBAL-TRANSLATE-ENABLED", args[0], args[1]);
 		}
 		
 		/* Player has given us three arguments */
@@ -190,7 +213,9 @@ public class WWCTranslate extends BasicCommand {
 			CommonDefinitions.sendMessage(sender, playerNotFound);
 			return false;
 		}
-		boolean targetIsSelf = inUUID.equals((((Player)sender)).getUniqueId().toString());
+		/* Check if user is targetting themselves, which doesn't need this permission (or if we are console) */
+		
+		boolean targetIsSelf = !isConsoleSender ? inUUID.equals((((Player)sender)).getUniqueId().toString()) : false;
 		if (!isGlobal && !targetIsSelf && !sender.hasPermission("worldwidechat.wwct.otherplayers")) {
 			final TextComponent badPerms = Component.text()
 					.append(Component.text()

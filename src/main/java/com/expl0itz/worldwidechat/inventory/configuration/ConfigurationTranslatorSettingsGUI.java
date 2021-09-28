@@ -8,7 +8,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsCharacterLimitConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsErrorLimitConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsGlobalRateConversation;
@@ -122,11 +121,10 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			quitMeta.setDisplayName(ChatColor.RED
 					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
 			quitButton.setItemMeta(quitMeta);
-			WWCReload rel = new WWCReload(player, null, null, new String[0]);
 			contents.set(3, 4, ClickableItem.of(quitButton, e -> {
 				main.removePlayerUsingConfigurationGUI(player);
 				player.closeInventory();
-				rel.processCommand();
+				main.reload(player);
 			}));
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
