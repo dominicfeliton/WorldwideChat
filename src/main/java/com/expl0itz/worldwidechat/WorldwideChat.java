@@ -130,7 +130,6 @@ public class WorldwideChat extends JavaPlugin {
 		// EventHandlers + check for plugins
 		if (getServer().getPluginManager().getPlugin("DeluxeChat") != null) {
 			getServer().getPluginManager().registerEvents(new DeluxeChatListener(), this);
-			//getLogger().warning(CommonDefinitions.getMessage("wwcDeluxeChatIncompatible"));
 		}
 		getServer().getPluginManager().registerEvents(new ChatListener(), this);
 		getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
