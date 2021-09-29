@@ -20,6 +20,8 @@ import net.md_5.bungee.api.ChatColor;
 public class WWCStats extends BasicCommand {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
+	
+	private boolean isConsoleSender = sender instanceof ConsoleCommandSender;
 
 	public WWCStats(CommandSender sender, Command command, String label, String[] args) {
 		super(sender, command, label, args);
@@ -39,7 +41,7 @@ public class WWCStats extends BasicCommand {
 
 		/* Get Sender Stats */
 		if (args.length == 0) {
-			if (sender instanceof ConsoleCommandSender) {
+			if (isConsoleSender) {
 				return noRecordsMessage("Console");
 			}
 			return translatorMessage((Player)sender);
@@ -49,15 +51,14 @@ public class WWCStats extends BasicCommand {
 		if (args.length == 1) {
 			if (Bukkit.getServer().getPlayerExact(args[0]) != null) {
 				return translatorMessage(Bukkit.getServer().getPlayerExact(args[0]));
-			} else {
-				// Target player not found
-				final TextComponent playerNotFound = Component.text()
-						.append(Component
-								.text().content(CommonDefinitions.getMessage("wwcPlayerNotFound", new String[] {args[0]}))
-								.color(NamedTextColor.RED))
-						.build();
-				CommonDefinitions.sendMessage(sender, playerNotFound);
 			}
+			// Target player not found
+			final TextComponent playerNotFound = Component.text()
+					.append(Component
+							.text().content(CommonDefinitions.getMessage("wwcPlayerNotFound", new String[] {args[0]}))
+							.color(NamedTextColor.RED))
+					.build();
+			CommonDefinitions.sendMessage(sender, playerNotFound);
 		}
 		return false;
 	}

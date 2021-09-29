@@ -227,15 +227,15 @@ public class WorldwideChat extends JavaPlugin {
 			// Per player translation
 			WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
 			return wwct.processCommand();
-		} else if (command.getName().equalsIgnoreCase("wwctb") && hasValidTranslatorSettings(sender) && checkSenderIdentity(sender)) {
+		} else if (command.getName().equalsIgnoreCase("wwctb") && hasValidTranslatorSettings(sender)) {
 			// Book translation
 			WWCTranslateBook wwctb = new WWCTranslateBook(sender, command, label, args);
 			return wwctb.processCommand();
-		} else if (command.getName().equalsIgnoreCase("wwcts") && hasValidTranslatorSettings(sender) && checkSenderIdentity(sender)) {
+		} else if (command.getName().equalsIgnoreCase("wwcts") && hasValidTranslatorSettings(sender)) {
 			// Sign translation
 			WWCTranslateSign wwcts = new WWCTranslateSign(sender, command, label, args);
 			return wwcts.processCommand();
-		} else if (command.getName().equalsIgnoreCase("wwcti") && hasValidTranslatorSettings(sender) && checkSenderIdentity(sender)) {
+		} else if (command.getName().equalsIgnoreCase("wwcti") && hasValidTranslatorSettings(sender)) {
 			// Item translation
 			WWCTranslateItem wwcti = new WWCTranslateItem(sender, command, label, args);
 			return wwcti.processCommand();
@@ -251,7 +251,7 @@ public class WorldwideChat extends JavaPlugin {
 			// Configuration GUI
 			WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
 			return wwcc.processCommand();
-		} else if (command.getName().equalsIgnoreCase("wwctrl") && hasValidTranslatorSettings(sender) && checkSenderIdentity(sender)) {
+		} else if (command.getName().equalsIgnoreCase("wwctrl") && hasValidTranslatorSettings(sender)) {
 			// Rate Limit Command
 			WWCTranslateRateLimit wwctrl = new WWCTranslateRateLimit(sender, command, label, args);
 			return wwctrl.processCommand();

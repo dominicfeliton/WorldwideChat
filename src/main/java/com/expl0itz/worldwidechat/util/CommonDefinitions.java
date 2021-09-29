@@ -51,6 +51,34 @@ public class CommonDefinitions {
 			"sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy" };
 
 	/* Getters */
+	public static boolean isInteger(String str) {
+		/* This gets whether something is an integer, FAST. 
+		 * It's messy, and should only be used if you value performance over readability.
+		 * Suck it, matches()
+		 * */
+	    if (str == null) {
+	        return false;
+	    }
+	    int length = str.length();
+	    if (length == 0) {
+	        return false;
+	    }
+	    int i = 0;
+	    if (str.charAt(0) == '-') {
+	        if (length == 1) {
+	            return false;
+	        }
+	        i = 1;
+	    }
+	    for (; i < length; i++) {
+	        char c = str.charAt(i);
+	        if (c < '0' || c > '9') {
+	            return false;
+	        }
+	    }
+	    return true;
+	}
+	
 	public static boolean isSameLang(String first, String second) {
 		for (SupportedLanguageObject eaLang : WorldwideChat.getInstance().getSupportedTranslatorLanguages()) {
 			if ((eaLang.getLangName().equals(getSupportedTranslatorLang(first).getLangName())
@@ -168,12 +196,7 @@ public class CommonDefinitions {
 			// Warn user about color codes
 			// EssentialsX chat and maybe others replace "&4Test" with " 4Test"
 			// Therefore, we find the " #" regex or the "&" char, and warn the user about it
-			boolean essentialsColorCodeWarning = false;
-			if (inMessage.matches(".*[0-9].*")) {
-				essentialsColorCodeWarning = true;
-			}
-
-			if ((essentialsColorCodeWarning && WorldwideChat.getInstance().getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals(""))
+			if ((inMessage.contains("&") && WorldwideChat.getInstance().getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals(""))
 					&& !(WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString())
 							.getCCWarning())) // check if user has already been sent CC warning
 			{
@@ -426,6 +449,16 @@ public class CommonDefinitions {
 		return inMessage;
 	}
 
+	public static boolean getNoConsoleChatMessage(CommandSender sender) {
+		final TextComponent noConsoleChat = Component.text() // Cannot translate console chat
+				.append(Component.text()
+						.content(CommonDefinitions.getMessage("wwctCannotTranslateConsole", new String[0]))
+						.color(NamedTextColor.RED))
+				.build();
+		CommonDefinitions.sendMessage(sender, noConsoleChat);
+		return false;
+	}
+	
 	private static boolean checkForRateLimits(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
 		if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
 			Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());

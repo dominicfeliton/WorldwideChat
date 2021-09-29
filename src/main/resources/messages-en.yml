@@ -247,6 +247,7 @@ Messages:
   wwctrlRateLimitSetTarget: 'Set the rate limit of %i to %o seconds.'
   wwctrlRateLimitOffTarget: 'Disabled the rate limit of %i.'
   wwctrlRateLimitAlreadyOffTarget: 'The rate limit of %i is already disabled.'
+  wwctrlRateLimitBadInt: 'Your rate limit is not a valid integer.'
   #------------------- Watson Translator Messages -------------------
   watsonNotFoundExceptionNotification: 'Unable to translate your input any further.'
   watsonColorCodeWarning: 'Using color codes may give you unpredictable results.'

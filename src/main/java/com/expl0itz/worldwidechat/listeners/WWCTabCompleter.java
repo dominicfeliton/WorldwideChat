@@ -176,7 +176,7 @@ public class WWCTabCompleter implements TabCompleter {
 					}
 				}
 			}
-			if (args.length == 1 || (args.length == 2 && !args[0].matches("[0-9]+") && Bukkit.getPlayerExact(args[0]) != null
+			if (args.length == 1 || (args.length == 2 && !CommonDefinitions.isInteger(args[0]) && Bukkit.getPlayerExact(args[0]) != null
 					&& !main.getActiveTranslator(Bukkit.getPlayerExact(args[0]).getUniqueId().toString()).getUUID().equals(""))) {
 				out.add("0");
 				out.add("3");

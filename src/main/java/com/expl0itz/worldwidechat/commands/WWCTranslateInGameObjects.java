@@ -3,6 +3,7 @@ package com.expl0itz.worldwidechat.commands;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
@@ -19,6 +20,8 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 		super(sender, command, label, args);
 	}
 	
+	private boolean isConsoleSender = sender instanceof ConsoleCommandSender;
+	
 	private WorldwideChat main = WorldwideChat.getInstance();
 	
 	/* Process command */
@@ -34,19 +37,21 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 		}
 		
 		/* If no args are provided */
+		if (isConsoleSender && args.length == 0) {
+			return CommonDefinitions.getNoConsoleChatMessage(sender);
+		}
 		if (args.length == 0 || (args.length == 1 && args[0].equalsIgnoreCase(sender.getName()))) {
 			if (!main.getActiveTranslator(((Player)sender).getUniqueId().toString()).getUUID().equals("")) {
 				return toggleStatus((Player)sender);
-			} else {
-				// Player is not an active translator
-				final TextComponent notATranslator = Component.text()
-						.append(Component.text().content(
-								CommonDefinitions.getMessage("wwctbNotATranslator"))
-								.color(NamedTextColor.RED))
-						.build();
-				CommonDefinitions.sendMessage(sender, notATranslator);
-				return true;
 			}
+			// Player is not an active translator
+			final TextComponent notATranslator = Component.text()
+					.append(Component.text().content(
+							CommonDefinitions.getMessage("wwctbNotATranslator"))
+							.color(NamedTextColor.RED))
+					.build();
+			CommonDefinitions.sendMessage(sender, notATranslator);
+			return true;
 		}
 		
 		/* If there is an argument (another player) */
@@ -97,7 +102,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 		/* If we are book translation... */
 		if (this instanceof WWCTranslateBook) {
 			/* Toggle book translation for sender! */
-			if (inPlayer.getName().equalsIgnoreCase(sender.getName())) {
+			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 				currentTranslator.setTranslatingBook(!currentTranslator.getTranslatingBook());
 				if (currentTranslator.getTranslatingBook()) {
 					final TextComponent toggleTranslation = Component.text()
@@ -125,7 +130,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 									.content(CommonDefinitions.getMessage("wwctbOnTarget", new String[] {args[0]}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage((Player)sender, toggleTranslation);
+					CommonDefinitions.sendMessage(sender, toggleTranslation);
 					final TextComponent toggleTranslationTarget = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwctbOnSender"))
@@ -139,7 +144,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 									.content(CommonDefinitions.getMessage("wwctbOffTarget", new String[] {args[0]}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage((Player)sender, toggleTranslation);
+					CommonDefinitions.sendMessage(sender, toggleTranslation);
 					final TextComponent toggleTranslationTarget = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwctbOffSender"))
@@ -152,7 +157,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			return true;
 		} else if (this instanceof WWCTranslateSign) {
 			/* Toggle sign translation for sender! */
-			if (inPlayer.getName().equalsIgnoreCase(sender.getName())) {
+			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 				currentTranslator.setTranslatingSign(!currentTranslator.getTranslatingSign());
 				if (currentTranslator.getTranslatingSign()) {
 					final TextComponent toggleTranslation = Component.text()
@@ -180,7 +185,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 									.content(CommonDefinitions.getMessage("wwctsOnTarget", new String[] {args[0]}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage((Player)sender, toggleTranslation);
+					CommonDefinitions.sendMessage(sender, toggleTranslation);
 					final TextComponent toggleTranslationTarget = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwctsOnSender"))
@@ -194,7 +199,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 									.content(CommonDefinitions.getMessage("wwctsOffTarget", new String[] {args[0]}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage((Player)sender, toggleTranslation);
+					CommonDefinitions.sendMessage(sender, toggleTranslation);
 					final TextComponent toggleTranslationTarget = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwctsOffSender"))
@@ -207,7 +212,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			return true;
 		} else if (this instanceof WWCTranslateItem) {
 			/* Toggle item translation for sender! */
-			if (inPlayer.getName().equalsIgnoreCase(sender.getName())) {
+			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 				currentTranslator.setTranslatingItem(!currentTranslator.getTranslatingItem());
 				if (currentTranslator.getTranslatingItem()) {
 					final TextComponent toggleTranslation = Component.text()
@@ -235,7 +240,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 									.content(CommonDefinitions.getMessage("wwctiOnTarget", new String[] {args[0]}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage((Player)sender, toggleTranslation);
+					CommonDefinitions.sendMessage(sender, toggleTranslation);
 					final TextComponent toggleTranslationTarget = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwctiOnSender"))
@@ -249,7 +254,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 									.content(CommonDefinitions.getMessage("wwctiOffTarget", new String[] {args[0]}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage((Player)sender, toggleTranslation);
+					CommonDefinitions.sendMessage(sender, toggleTranslation);
 					final TextComponent toggleTranslationTarget = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwctiOffSender"))
@@ -262,7 +267,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			return true;
 		} else if (this instanceof WWCTranslateEntity) {
 			/* Toggle entity translation for sender! */
-			if (inPlayer.getName().equalsIgnoreCase(sender.getName())) {
+			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 				currentTranslator.setTranslatingEntity(!currentTranslator.getTranslatingEntity());
 				if (currentTranslator.getTranslatingEntity()) {
 					final TextComponent toggleTranslation = Component.text()
@@ -290,7 +295,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 									.content(CommonDefinitions.getMessage("wwcteOnTarget", new String[] {args[0]}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage((Player)sender, toggleTranslation);
+					CommonDefinitions.sendMessage(sender, toggleTranslation);
 					final TextComponent toggleTranslationTarget = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwcteOnSender"))
@@ -304,7 +309,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 									.content(CommonDefinitions.getMessage("wwcteOffTarget", new String[] {args[0]}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage((Player)sender, toggleTranslation);
+					CommonDefinitions.sendMessage(sender, toggleTranslation);
 					final TextComponent toggleTranslationTarget = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwcteOffSender"))

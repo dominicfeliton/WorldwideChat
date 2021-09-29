@@ -134,13 +134,7 @@ public class WWCTranslate extends BasicCommand {
 			if (isGlobal) {
 				return startNewTranslationSession("GLOBAL-TRANSLATE-ENABLED", "None", args[0]);
 			}
-			final TextComponent noConsoleChat = Component.text() // Cannot translate console chat
-					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwctCannotTranslateConsole", new String[0]))
-							.color(NamedTextColor.RED))
-					.build();
-			CommonDefinitions.sendMessage(sender, noConsoleChat);
-			return false;
+			return CommonDefinitions.getNoConsoleChatMessage(sender);
 		}
 		
 		/* Player has given us two arguments */
@@ -151,13 +145,7 @@ public class WWCTranslate extends BasicCommand {
 					if (!isConsoleSender) {
 						return startNewTranslationSession(((Player)sender).getUniqueId().toString(), args[0], args[1]);
 					}
-					final TextComponent noConsoleChat = Component.text() // Cannot translate console chat
-							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctCannotTranslateConsole", new String[0]))
-									.color(NamedTextColor.RED))
-							.build();
-					CommonDefinitions.sendMessage(sender, noConsoleChat);
-					return false;
+					return CommonDefinitions.getNoConsoleChatMessage(sender);
 				/* If we are attempting to pass a player and an outLang */
 				}
 				return startNewTranslationSession(Bukkit.getPlayer(args[0]).getUniqueId().toString(), "None", args[1]);
