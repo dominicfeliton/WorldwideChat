@@ -245,8 +245,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Թարգմանիչ սխալի սահմանաչափը սահմանված է %i.
   wwcTranslatorError: 'Խնդիրն առաջացել է, երբ փորձում է ձեր թարգմանությունը. Խնդրում
     ենք կրկին փորձեք:'
-  wwcTranslatorErrorConsole: Խնդիրն առաջացել է, իսկ օգտվողը %i փորձում էր իրենց թարգմանությունը.
-    Այժմ տպագրություն stacktrace.
   wwcConfigErrorLimitInvalid: Անվավեր թարգմանիչ սխալ սահմանաչափը սահմանվել է config.yml.
     Նախնականը 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Խնդրում ենք ստուգել errorLog.txt է
@@ -319,3 +317,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Response timeout սահմանված հաջողությամբ.
   wwctCannotTranslateConsole: Դուք չեք կարող թարգմանել Վահանակով զրուցել!
   wwctrlRateLimitBadInt: Ձեր տոկոսադրույքը սահմանաչափը չէ վավեր թիվ.
+  wwcTranslatorErrorConsole: Խնդիրն առաջացել է, իսկ օգտվողը %i փորձում էր իրենց թարգմանությունը.
+    Խնդրում ենք ստուգել errorLog.txt լրացուցիչ մանրամասների համար.

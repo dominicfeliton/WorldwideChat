@@ -247,8 +247,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Batas kesalahan penerjemah ditetapkan ke %i.
   wwcTranslatorError: Sebuah masalah terjadi ketika mencoba terjemahan Anda. Silakan
     coba lagi.
-  wwcTranslatorErrorConsole: Sebuah masalah terjadi ketika pengguna %i mencoba terjemahan
-    mereka. Sekarang mencetak stacktrace.
   wwcConfigErrorLimitInvalid: Batas kesalahan penerjemah tidak valid diatur dalam
     config.yml. Defaulting ke 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Silakan periksa errorLog.txt di folder
@@ -318,3 +316,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Batas waktu respons berhasil ditetapkan.
   wwctCannotTranslateConsole: Anda tidak dapat menerjemahkan obrolan konsol!
   wwctrlRateLimitBadInt: Batas tingkat Anda bukan bilangan bulat yang valid.
+  wwcTranslatorErrorConsole: Sebuah masalah terjadi ketika pengguna %i mencoba terjemahan
+    mereka. Silakan periksa errorLog.txt untuk lebih jelasnya.

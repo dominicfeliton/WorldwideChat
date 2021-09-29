@@ -237,8 +237,6 @@ Messages:
     yüklənəcək və bütün tərcüməçiləri aradan qaldıracaq.
   wwcConfigErrorLimitEnabled: Tərcüməçi səhv limiti %i olaraq təyin edilir.
   wwcTranslatorError: Tərcümə cəhd edərkən bir problem yaşandı. Yenidən cəhd edin.
-  wwcTranslatorErrorConsole: İstifadəçi %i onların tərcüməsinə cəhd edərkən bir problem
-    yarandı. İndi yığını çap edin.
   wwcConfigErrorLimitInvalid: Config.yml müəyyən etibarsız tərcüməçi səhv limit. 5
     üçün defaulting...
   wwcTranslatorErrorThresholdReachedCheckLogs: Daha ətraflı məlumat üçün WorldWieChat
@@ -308,3 +306,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Cavab zaman aşımı uğurla təyin edildi.
   wwctCannotTranslateConsole: Siz konsol chat tərcümə edə bilməz!
   wwctrlRateLimitBadInt: Dərəcəsi limitiniz etibarlı tam ədəd deyil.
+  wwcTranslatorErrorConsole: İstifadəçi %i onların tərcüməsinə cəhd edərkən bir problem
+    yarandı. Daha ətraflı məlumat üçün errorLog.txt edin.

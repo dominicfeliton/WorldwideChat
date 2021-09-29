@@ -252,8 +252,6 @@ Messages:
   wwcConfigErrorLimitEnabled: மொழிபெயர்ப்பாளர் பிழை வரம்பு %i க்கு அமைக்கப்பட்டது.
   wwcTranslatorError: உங்கள் மொழிபெயர்ப்பு முயற்சிக்கும் போது ஒரு பிரச்சனை ஏற்பட்டது.
     மீண்டும் முயற்சிக்கவும்.
-  wwcTranslatorErrorConsole: பயனர் %i அவர்களின் மொழிபெயர்ப்பை முயற்சிக்கும் போது ஒரு
-    சிக்கல் ஏற்பட்டது. இப்போது stacktrace அச்சிடும்.
   wwcConfigErrorLimitInvalid: தவறான மொழிபெயர்ப்பாளர் பிழை எல்லை config.yml அமைக்க.
     5 க்கு இயல்புநிலைக்கு...
   wwcTranslatorErrorThresholdReachedCheckLogs: மேலும் தகவலுக்கு WorldWideSat சொருகி
@@ -325,3 +323,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: பதில் காலாவதி வெற்றிகரமாக அமைக்க.
   wwctCannotTranslateConsole: நீங்கள் பணியகம் அரட்டை மொழிபெயர்க்க முடியாது!
   wwctrlRateLimitBadInt: உங்கள் வீத வரம்பு செல்லுபடியாகும் முழு எண் அல்ல.
+  wwcTranslatorErrorConsole: பயனர் %i அவர்களின் மொழிபெயர்ப்பை முயற்சிக்கும் போது ஒரு
+    சிக்கல் ஏற்பட்டது. மேலும் விவரங்களுக்கு errorLog.txt சரிபார்க்கவும்.

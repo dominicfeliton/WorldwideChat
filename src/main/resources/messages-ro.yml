@@ -251,8 +251,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Limita de eroare a traducătorului setată la %i.
   wwcTranslatorError: A apărut o problemă în timpul încercării traducerii. Vă rugăm
     să încercați din nou.
-  wwcTranslatorErrorConsole: A apărut o problemă în timp ce utilizatorul %i încerca
-    traducerea lor. Acum tipărim stiva.
   wwcConfigErrorLimitInvalid: Limita de eroare de traducător nevalidă setată în config.yml.
     Inîndeplinire a obligațiilor de plată la 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Verificați errorLog.txt în folderul
@@ -325,3 +323,5 @@ Messages:
     cu succes
   wwctCannotTranslateConsole: Nu poți traduce consola de chat!
   wwctrlRateLimitBadInt: Limita dvs. de rată nu este un număr întreg valid.
+  wwcTranslatorErrorConsole: A apărut o problemă în timp ce utilizatorul %i încerca
+    traducerea lor. Vă rugăm să verificați errorLog.txt pentru mai multe detalii.

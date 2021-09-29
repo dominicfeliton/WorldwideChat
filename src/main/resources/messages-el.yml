@@ -260,8 +260,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Το όριο σφάλματος μεταφραστή έχει οριστεί σε %i.
   wwcTranslatorError: Παρουσιάστηκε ένα πρόβλημα κατά την προσπάθεια μετάφρασής σας.
     Παρακαλώ προσπαθήστε ξανά.
-  wwcTranslatorErrorConsole: Παρουσιάστηκε ένα πρόβλημα ενώ ο χρήστης %i προσπαθούσε
-    τη μετάφρασή του. Τώρα εκτυπώνω την ιχνηλάτηση.
   wwcConfigErrorLimitInvalid: Μη έγκυρο όριο σφάλματος μεταφραστή που έχει οριστεί
     στο config.yml. Προεπιλογές σε 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Ελέγξτε το errorLog.txt στο φάκελο
@@ -335,3 +333,5 @@ Messages:
     επιτυχία.
   wwctCannotTranslateConsole: Δεν μπορείτε να μεταφράσετε τη συνομιλία κονσόλας!
   wwctrlRateLimitBadInt: Το όριο τιμών σας δεν είναι έγκυρος ακέραιος.
+  wwcTranslatorErrorConsole: Παρουσιάστηκε ένα πρόβλημα ενώ ο χρήστης %i προσπαθούσε
+    τη μετάφρασή του. Παρακαλούμε ελέγξτε το errorLog.txt για περισσότερες λεπτομέρειες.

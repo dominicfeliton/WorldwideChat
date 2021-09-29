@@ -243,8 +243,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Limit błędu translatora ustawiony na %i.
   wwcTranslatorError: Wystąpił problem podczas próby tłumaczenia. Proszę spróbować
     jeszcze raz.
-  wwcTranslatorErrorConsole: Wystąpił problem podczas próby tłumaczenia przez użytkownik
-    %i. Teraz drukuje ślad stosu.
   wwcConfigErrorLimitInvalid: Nieprawidłowy limit błędu tłumacza ustawiony w config.yml.
     Domyślnie do 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Sprawdź errorLog.txt w folderze wtyczki
@@ -315,3 +313,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Ustawiono limit czasu odpowiedzi pomyślnie.
   wwctCannotTranslateConsole: Nie możesz przetłumaczyć czatu konsoli!
   wwctrlRateLimitBadInt: Twój limit szybkości nie jest prawidłową liczbą całkowitą.
+  wwcTranslatorErrorConsole: Wystąpił problem podczas próby tłumaczenia przez użytkownik
+    %i. Sprawdź errorLog.txt, aby uzyskać więcej szczegółów.

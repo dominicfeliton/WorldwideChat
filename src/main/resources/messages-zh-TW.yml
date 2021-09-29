@@ -193,7 +193,6 @@ Messages:
   wwcTranslatorErrorThresholdReached: 已達到錯誤臨界值。這個插件現在將重新加載，並禁用所有翻譯員。
   wwcConfigErrorLimitEnabled: 轉換器錯誤限制設定為 %i。
   wwcTranslatorError: 嘗試翻譯時發生問題。請再試一次。
-  wwcTranslatorErrorConsole: 使用者 %i 嘗試翻譯時發生問題。現在打印堆棧跟踪。
   wwcConfigErrorLimitInvalid: 在 config.yml 中設定的轉換器錯誤限制無效。預設為 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: 如需詳細資訊，請檢查「全球聊天」外掛程式資料夾中的 errorLog.txt。
   wwcConfigMaxResponseTimeInvalid: 在 config.yml 中設定的最大回應時間無效。預設值為 7 秒...
@@ -248,3 +247,4 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: 回應逾時設定成功。
   wwctCannotTranslateConsole: 你不能翻譯控制台聊天！
   wwctrlRateLimitBadInt: 你的費率限制不是有效的整數。
+  wwcTranslatorErrorConsole: 使用者 %i 嘗試翻譯時發生問題。請查看 errorLog.txt 以獲取更多詳細信息。

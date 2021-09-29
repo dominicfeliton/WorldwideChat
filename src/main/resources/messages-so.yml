@@ -250,8 +250,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Xadka qaladka Translator dhigay in %i.
   wwcTranslatorError: Dhibaato ayaa ka dhacday markii la isku dayay in aad turjumaad.
     Fadlan isku day mar kale.
-  wwcTranslatorErrorConsole: Dhibaato ayaa ka dhacday intii uu isticmaalay %i isku
-    dayayay turjumaadkooda. Hadda daabacaadda stacktrace ah.
   wwcConfigErrorLimitInvalid: xadka baadi turjumaan aan sax ahayn dhigay config.yml.
     Default in 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Fadlan hubi errorLog.txt ee folder
@@ -325,3 +323,6 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: fekero Response dhigay si guul leh.
   wwctCannotTranslateConsole: Ma turjumi kartid sheekada Console!
   wwctrlRateLimitBadInt: Xadka heerka Your ma aha abyoonaha ansax ah.
+  wwcTranslatorErrorConsole: Dhibaato ayaa ka dhacday intii uu isticmaalay %i isku
+    dayayay turjumaadkooda. Fadlan hubi errorLog.txt wixii faahfaahin dheeraad ah
+    oo ku.

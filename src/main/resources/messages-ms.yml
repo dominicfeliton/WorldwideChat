@@ -243,8 +243,6 @@ Messages:
     memuatkan semula, dan melumpuhkan semua penterjemah.
   wwcConfigErrorLimitEnabled: Had ralat penterjemah ditetapkan ke %i.
   wwcTranslatorError: Masalah berlaku semasa cuba terjemahan anda. Sila cuba lagi.
-  wwcTranslatorErrorConsole: Masalah berlaku semasa pengguna %i cuba terjemahannya.
-    Sekarang mencetak stacktrace.
   wwcConfigErrorLimitInvalid: Had ralat penterjemah tidak sah ditetapkan dalam config.yml.
     Defaulting kepada 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Sila semak errorLog.txt dalam folder
@@ -314,3 +312,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Had masa tamat balasan berjaya ditetapkan.
   wwctCannotTranslateConsole: Anda tidak boleh menterjemahkan sembang konsol!
   wwctrlRateLimitBadInt: Had kadar anda bukan integer yang sah.
+  wwcTranslatorErrorConsole: Masalah berlaku semasa pengguna %i cuba terjemahannya.
+    Sila semak errorLog.txt untuk maklumat lanjut.

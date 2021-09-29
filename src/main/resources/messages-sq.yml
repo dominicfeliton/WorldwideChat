@@ -254,8 +254,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Kufiri i gabimit të përkthyesit caktohet në %i.
   wwcTranslatorError: Ndodhi një problem gjatë përpjekjes për përkthimin tuaj. Ju
     lutem provoni përsëri.
-  wwcTranslatorErrorConsole: Ndodhi një problem përderisa përdoruesi %i po tentonte
-    përkthimin e tyre. Tani shtypjen e stacktrace.
   wwcConfigErrorLimitInvalid: Kufiri i gabimit të përkthyesit të pavlefshëm të vendosur
     në config.yml. Defaulting në 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Ju lutem kontrolloni errorLog.txt në
@@ -328,3 +326,5 @@ Messages:
     sukses.
   wwctCannotTranslateConsole: Ju nuk mund të përktheni tastierë chat!
   wwctrlRateLimitBadInt: Kufiri juaj i normës nuk është një numër i plotë i vlefshëm.
+  wwcTranslatorErrorConsole: Ndodhi një problem përderisa përdoruesi %i po tentonte
+    përkthimin e tyre. Ju lutem kontrolloni errorLog.txt për më shumë detaje.

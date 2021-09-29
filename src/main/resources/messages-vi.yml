@@ -247,8 +247,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Giới hạn lỗi dịch được đặt thành %i.
   wwcTranslatorError: Một vấn đề xảy ra trong khi cố gắng dịch thuật của bạn. Vui
     lòng thử lại.
-  wwcTranslatorErrorConsole: Một vấn đề xảy ra trong khi người dùng %i đang cố gắng
-    dịch thuật của họ. Bây giờ in stacktrace.
   wwcConfigErrorLimitInvalid: Giới hạn lỗi dịch không hợp lệ được đặt trong config.yml.
     Mặc định đến 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Vui lòng kiểm tra errorLog.txt trong
@@ -320,3 +318,5 @@ Messages:
     công.
   wwctCannotTranslateConsole: Bạn không thể dịch giao diện điều khiển trò chuyện!
   wwctrlRateLimitBadInt: Giới hạn tỷ lệ của bạn không phải là số nguyên hợp lệ.
+  wwcTranslatorErrorConsole: Một vấn đề xảy ra trong khi người dùng %i đang cố gắng
+    dịch thuật của họ. Vui lòng kiểm tra errorLog.txt để biết thêm chi tiết.

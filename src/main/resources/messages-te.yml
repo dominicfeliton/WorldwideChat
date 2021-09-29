@@ -240,8 +240,6 @@ Messages:
   wwcConfigErrorLimitEnabled: అనువాదకుడు దోష పరిమితి %i కు సెట్ చేయబడింది.
   wwcTranslatorError: మీ అనువాదాన్ని ప్రయత్నించేటప్పుడు ఒక సమస్య ఏర్పడింది. దయచేసి
     మళ్ళీ ప్రయత్నించండి.
-  wwcTranslatorErrorConsole: వాడుకరి %i వారి అనువాదానికి ప్రయత్నిస్తున్నప్పుడు ఒక
-    సమస్య ఏర్పడింది. ఇప్పుడు stacktrace ప్రింటింగ్.
   wwcConfigErrorLimitInvalid: చెల్లని అనువాదకుడు దోష పరిమితి config.yml లో సెట్. 5
     కు డిఫాల్టింగ్...
   wwcTranslatorErrorThresholdReachedCheckLogs: దయచేసి మరింత సమాచారం కోసం వరల్డ్చాట్
@@ -308,3 +306,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: రెస్పాన్స్ టైమ్అవుట్ విజయవంతంగా సెట్.
   wwctCannotTranslateConsole: మీరు కన్సోల్ చాట్ను అనువదించలేరు!
   wwctrlRateLimitBadInt: మీ రేటు పరిమితి చెల్లుబాటు అయ్యే పూర్ణాంకం కాదు.
+  wwcTranslatorErrorConsole: వాడుకరి %i వారి అనువాదానికి ప్రయత్నిస్తున్నప్పుడు ఒక
+    సమస్య ఏర్పడింది. దయచేసి మరిన్ని వివరాల కోసం errorLog.txt ను తనిఖీ చేయండి.

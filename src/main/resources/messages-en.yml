@@ -24,7 +24,7 @@ Messages:
   wwcGUITempItem: 'Item Display'
   wwcServerReloadWarning: 'WorldwideChat does not condone the usage of /reload. Please proceed with caution.'
   wwcTranslatorError: 'A problem occured while attempting your translation. Please try again.'
-  wwcTranslatorErrorConsole: 'A problem occured while user %i was attempting their translation. Now printing the stacktrace.'
+  wwcTranslatorErrorConsole: 'A problem occured while user %i was attempting their translation. Please check errorLog.txt for more details.'
   wwcTranslatorErrorThresholdReached: 'Error threshold reached. This plugin will now reload, and disable all translators.'
   wwcTranslatorErrorThresholdReachedCheckLogs: 'Please check errorLog.txt in the WorldwideChat plugin folder for more information.'
   #------------------- Listener Messages -------------------

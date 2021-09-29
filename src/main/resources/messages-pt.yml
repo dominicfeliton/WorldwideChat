@@ -245,8 +245,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Limite de erro do tradutor definido para %i.
   wwcTranslatorError: Ocorreu um problema ao tentar sua tradução. Por favor, tente
     novamente.
-  wwcTranslatorErrorConsole: Ocorreu um problema enquanto o usuário %i tentava a tradução.
-    Agora imprimindo o stacktrace.
   wwcConfigErrorLimitInvalid: Limite de erro do tradutor inválido definido em config.yml.
     Padrão para 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Por favor, verifique errorLog.txt na
@@ -318,3 +316,5 @@ Messages:
     êxito.
   wwctCannotTranslateConsole: Você não pode traduzir o bate-papo do console!
   wwctrlRateLimitBadInt: Seu limite de taxa não é um número inteiro válido.
+  wwcTranslatorErrorConsole: Ocorreu um problema enquanto o usuário %i estava tentando
+    traduzir. Por favor, verifique errorLog.txt para obter mais detalhes.

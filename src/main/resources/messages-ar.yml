@@ -226,8 +226,6 @@ Messages:
     هذا المكون الإضافي وتعطيل جميع المترجمين.
   wwcConfigErrorLimitEnabled: تعيين حد خطأ المترجم إلى %i.
   wwcTranslatorError: حدثت مشكلة أثناء محاولة الترجمة. يرجى المحاولة مرة أخرى.
-  wwcTranslatorErrorConsole: حدثت مشكلة أثناء محاولة المستخدم %i ترجمته. الآن طباعة
-    stacktrace.
   wwcConfigErrorLimitInvalid: تعيين حد خطأ مترجم غير صالح في config.yml. التخلف عن
     العمل إلى 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: يرجى التحقق من errorLog.txt في مجلد
@@ -292,3 +290,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: تم تعيين مهلة الاستجابة بنجاح.
   wwctCannotTranslateConsole: لا يمكنك ترجمة دردشة وحدة التحكم!
   wwctrlRateLimitBadInt: حد السعر الخاص بك ليس عددًا صحيحًا صالحًا.
+  wwcTranslatorErrorConsole: حدثت مشكلة أثناء محاولة المستخدم %i ترجمته. يرجى التحقق
+    من errorLog.txt لمزيد من التفاصيل.

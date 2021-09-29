@@ -243,8 +243,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Omejitev napake prevajalca je nastavljena na %i.
   wwcTranslatorError: Med poskusom prevajanja je prišlo do težave. Prosimo, poskusite
     znova.
-  wwcTranslatorErrorConsole: Do težave je prišlo, medtem ko je uporabnik %i poskušal
-    njihov prevod. Zdaj natisnete skladovnico.
   wwcConfigErrorLimitInvalid: Neveljavna omejitev napake prevajalca nastavljena v
     config.yml. V neplačilu do 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Za več informacij preverite errorLog.txt
@@ -315,3 +313,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Odzivni čas je bil uspešno nastavljen.
   wwctCannotTranslateConsole: Ne morete prevajati konzole klepeta!
   wwctrlRateLimitBadInt: Vaša omejitev stopnje ni veljavno celo število.
+  wwcTranslatorErrorConsole: Do težave je prišlo, medtem ko je uporabnik %i poskušal
+    njihov prevod. Prosimo, preverite errorLog.txt za več podrobnosti.

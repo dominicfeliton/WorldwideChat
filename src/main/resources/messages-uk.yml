@@ -242,8 +242,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Обмеження помилки перекладача встановлено на %i.
   wwcTranslatorError: Під час спроби перекладу виникла проблема. Будь ласка, спробуйте
     ще раз.
-  wwcTranslatorErrorConsole: Виникла проблема, коли користувач %i намагався їх переклад.
-    Тепер роздрукуйте стек-трасування.
   wwcConfigErrorLimitInvalid: Неприпустимий обмеження помилки перекладача у config.yml.
     Дефолт до 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Будь ласка, перевірте errorLog.txt
@@ -314,3 +312,5 @@ Messages:
     успішно.
   wwctCannotTranslateConsole: Ви не можете перекласти консольний чат!
   wwctrlRateLimitBadInt: Обмеження ставки не є дійсним цілим числом.
+  wwcTranslatorErrorConsole: Виникла проблема, коли користувач %i намагався їх переклад.
+    Будь ласка, перевірте errorLog.txt для отримання додаткової інформації.

@@ -210,7 +210,6 @@ Messages:
     ተርጓሚዎች ያሰናክላል።
   wwcConfigErrorLimitEnabled: የተርጓሚ ስህተት ገደብ ተዘጋጅቷል ለ %i።
   wwcTranslatorError: የእርስዎን ትርጉም በመሞከር ላይ ሳለ አንድ ችግር ተፈጠረ። እባክዎ እንደገና ይሞክሩ።
-  wwcTranslatorErrorConsole: ተጠቃሚው %i ትርጉማቸውን እየሞከረ ሳለ ችግር ተፈጥሯል። አሁን ቁልል ማተም።
   wwcConfigErrorLimitInvalid: ልክ ያልሆነ ተርጓሚ ስህተት ገደብ config.yml ውስጥ ተዘጋጅቷል። ወደ 5 ነባር
     በመሆን ላይ...
   wwcTranslatorErrorThresholdReachedCheckLogs: ተጨማሪ መረጃ ለማግኘት WorldwideChat ተሰኪ አቃፊ
@@ -272,3 +271,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: የምላሽ ጊዜው በተሳካ ሁኔታ ተዘጋጅቷል
   wwctCannotTranslateConsole: የኮንሶል ውይይት መተርጎም አይችሉም!
   wwctrlRateLimitBadInt: የእርስዎ ተመን ገደብ ትክክለኛ ኢንቲጀር አይደለም።
+  wwcTranslatorErrorConsole: ተጠቃሚው %i ትርጉማቸውን እየሞከረ ሳለ ችግር ተፈጥሯል። ተጨማሪ ዝርዝሮችን ለማግኘት
+    errorLog.txt ይመልከቱ።

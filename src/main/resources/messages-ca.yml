@@ -249,8 +249,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Límit d'error del traductor establert a %i.
   wwcTranslatorError: S'ha produït un problema en intentar la traducció. Torneu-ho
     a provar.
-  wwcTranslatorErrorConsole: Es va produir un problema mentre l'usuari %i estava intentant
-    la seva traducció. Ara la impressió de la stacktrace.
   wwcConfigErrorLimitInvalid: Límit d'error del traductor no vàlid establert a config.yml.
     Per defecte 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Si us plau, comproveu errorLog.txt
@@ -323,3 +321,5 @@ Messages:
     amb èxit.
   wwctCannotTranslateConsole: No es pot traduir el xat de la consola!
   wwctrlRateLimitBadInt: El seu límit de tarifa no és un nombre enter vàlid.
+  wwcTranslatorErrorConsole: Es va produir un problema mentre l'usuari %i estava intentant
+    la seva traducció. Si us plau, comproveu errorLog.txt per a més detalls.

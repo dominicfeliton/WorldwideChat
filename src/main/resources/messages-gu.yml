@@ -239,8 +239,6 @@ Messages:
   wwcConfigErrorLimitEnabled: અનુવાદક ભૂલ મર્યાદા %i પર સેટ કરો.
   wwcTranslatorError: તમારા અનુવાદનો પ્રયાસ કરતી વખતે એક સમસ્યા આવી. કૃપા કરીને ફરીથી
     પ્રયાસ કરો.
-  wwcTranslatorErrorConsole: વપરાશકર્તા %i તેમના અનુવાદનો પ્રયાસ કરી રહ્યો હતો ત્યારે
-    એક સમસ્યા આવી. હવે સ્ટેકટ્રેસ છાપવા.
   wwcConfigErrorLimitInvalid: અમાન્ય અનુવાદક ભૂલ મર્યાદા config.yml માં સુયોજિત. 5
     માટે ડિફોલ્ટિંગ...
   wwcTranslatorErrorThresholdReachedCheckLogs: કૃપા કરીને વધુ માહિતી માટે WorldWidChat
@@ -312,3 +310,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: પ્રતિભાવ સમયસમાપ્તિ સફળતાપૂર્વક સેટ.
   wwctCannotTranslateConsole: તમે કન્સોલ ચેટનું ભાષાંતર કરી શકતા નથી
   wwctrlRateLimitBadInt: તમારી દર મર્યાદા માન્ય પૂર્ણાંક નથી.
+  wwcTranslatorErrorConsole: વપરાશકર્તા %i તેમના અનુવાદનો પ્રયાસ કરી રહ્યો હતો ત્યારે
+    એક સમસ્યા આવી. વધુ વિગતો માટે કૃપા કરીને errorLog.txt તપાસો.

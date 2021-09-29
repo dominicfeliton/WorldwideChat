@@ -245,8 +245,6 @@ Messages:
     ще се презареди и ще деактивира всички преводачи.
   wwcConfigErrorLimitEnabled: Ограничението за грешка на преводача е зададено на %i.
   wwcTranslatorError: Появи се проблем при опит за превод. Моля те, опитай отново.
-  wwcTranslatorErrorConsole: Проблем възникна при опит за превод на потребител %i.
-    Сега отпечатване на стек следа.
   wwcConfigErrorLimitInvalid: Невалиден преводач ограничение за грешка, зададено в
     config.yml. Протичане на 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Моля, проверете errorLog.txt в папката
@@ -323,3 +321,5 @@ Messages:
     успешно.
   wwctCannotTranslateConsole: Не можете да превеждате конзолен чат!
   wwctrlRateLimitBadInt: Вашият лимит на скоростта не е валидно цяло число.
+  wwcTranslatorErrorConsole: Проблем възникна при опит за превод на потребител %i.
+    Моля, проверете errorLog.txt за повече подробности.

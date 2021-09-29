@@ -218,8 +218,6 @@ Messages:
     ולהשבית את כל המתרגמים.
   wwcConfigErrorLimitEnabled: מגבלת שגיאת המתרגם מוגדרת אל %i
   wwcTranslatorError: אירעה בעיה בעת ניסיון התרגום שלך. אנא נסה שוב.
-  wwcTranslatorErrorConsole: אירעה בעיה בזמן שהמשתמש %i ניסה את התרגום שלהם. עכשיו
-    מדפיס את הערימה.
   wwcConfigErrorLimitInvalid: מגבלת שגיאת מתרגם לא חוקית מוגדרת ב- config.yml. ברירת
     מחדל ל 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: לקבלת מידע נוסף, בדוק את errorLog.txt
@@ -283,3 +281,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: זמן קצוב לתגובה נקבע בהצלחה.
   wwctCannotTranslateConsole: לא ניתן לתרגם צ'אט קונסולה
   wwctrlRateLimitBadInt: מגבלת התעריף אינה מספר שלם חוקי.
+  wwcTranslatorErrorConsole: אירעה בעיה בזמן שהמשתמש %i ניסה את התרגום שלהם. אנא בדוק
+    errorLog.txt לפרטים נוספים.

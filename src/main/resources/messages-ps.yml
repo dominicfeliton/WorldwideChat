@@ -235,8 +235,6 @@ Messages:
   wwcConfigErrorLimitEnabled: .ژباړونکي تېروتنه حد وټا %i ته.
   wwcTranslatorError: ستاسو د ژباړې د هڅه کولو پر مهال ستونزه رامنځته شوه. مهرباني
     وکړئ بیا هڅه وکړئ.
-  wwcTranslatorErrorConsole: کومه ستونزه رامنځته شوه کله چې کارن- %i د خپلې ژباړې
-    هڅه کوله. اوس د سټیکټریس چاپ کول.
   wwcConfigErrorLimitInvalid: ناسم ژباړونکي تېروتنه حد په config.yml کې ټاکل شوی.
     5 ته تلل...
   wwcTranslatorErrorThresholdReachedCheckLogs: مهرباني وکړئ د نورو معلوماتو لپاره
@@ -307,3 +305,5 @@ Messages:
     شو.
   wwctCannotTranslateConsole: تاسو کولی شئ د کنسول چیٹ ژباړئ!
   wwctrlRateLimitBadInt: ستاسو د نرخ حد یو باوري عدد نه دی.
+  wwcTranslatorErrorConsole: کومه ستونزه رامنځته شوه کله چې کارن- %i د خپلې ژباړې
+    هڅه کوله. مهرباني وکړئ د نورو جزیاتو لپاره errorLog.txt وګورئ.

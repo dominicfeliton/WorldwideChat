@@ -235,8 +235,6 @@ Messages:
   wwcConfigErrorLimitEnabled: حد خطای مترجم روی %i تنظیم شده است.
   wwcTranslatorError: یک مشکل در هنگام تلاش برای ترجمه شما رخ داده است. لطفا دوباره
     امتحان کنید
-  wwcTranslatorErrorConsole: یک مشکل زمانی رخ داد که کاربر %i در حال تلاش برای ترجمه
-    آنها بود. حالا انبرک رو چاپ کن
   wwcConfigErrorLimitInvalid: حد خطای مترجم نامعتبر تنظیم شده در config.yml. قصور
     به 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: لطفا errorLog.txt را در پوشه پلاگین
@@ -305,3 +303,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: زمان پاسخ با موفقیت تنظیم شد.
   wwctCannotTranslateConsole: شما نمی توانید چت کنسول را ترجمه کنید!
   wwctrlRateLimitBadInt: حد مجاز شما یک عدد صحیح معتبر نیست.
+  wwcTranslatorErrorConsole: یک مشکل زمانی رخ داد که کاربر %i در حال تلاش برای ترجمه
+    آنها بود. لطفا errorLog.txt برای جزئیات بیشتر را بررسی کنید.

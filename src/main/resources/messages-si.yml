@@ -247,8 +247,6 @@ Messages:
   wwcConfigErrorLimitEnabled: පරිවර්තක දෝෂ සීමාව %i ලෙස සකසා ඇත.
   wwcTranslatorError: ඔබේ පරිවර්තනයට උත්සාහ කරන අතරතුර ගැටළුවක් ඇති විය. කරුණාකර නැවත
     උත්සාහ කරන්න.
-  wwcTranslatorErrorConsole: පරිශීලක % මම ඔවුන්ගේ පරිවර්තනයට උත්සාහ කරමින් සිටියදී
-    ගැටළුවක් ඇති විය. දැන් stacktrace මුද්රණය.
   wwcConfigErrorLimitInvalid: වලංගු නොවන පරිවර්තක දෝෂ සීමාව config.yml හි දක්වා ඇත.
     5 වෙත ගෙවීම පැහැර හැරීම...
   wwcTranslatorErrorThresholdReachedCheckLogs: වැඩි විස්තර සඳහා කරුණාකර WorldwideChat
@@ -319,3 +317,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: ප්රතිචාර කාලය සාර්ථකව සකසා ඇත.
   wwctCannotTranslateConsole: ඔබට කොන්සෝල චැට් පරිවර්තනය කළ නොහැක!
   wwctrlRateLimitBadInt: ඔබගේ අනුපාත සීමාව වලංගු නිඛිලයක් නොවේ.
+  wwcTranslatorErrorConsole: පරිශීලක % මම ඔවුන්ගේ පරිවර්තනයට උත්සාහ කරමින් සිටියදී
+    ගැටළුවක් ඇති විය. වැඩි විස්තර සඳහා errorLog.txt පරීක්ෂා කරන්න.

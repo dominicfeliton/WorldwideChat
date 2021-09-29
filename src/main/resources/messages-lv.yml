@@ -242,8 +242,6 @@ Messages:
     pārlādēsies un atspējos visus tulkotājus.
   wwcConfigErrorLimitEnabled: Tulkotāja kļūdu ierobežojums iestatīts uz %i.
   wwcTranslatorError: Problēma radās mēģinot tulkojumu. Lūdzu, mēģiniet vēlreiz.
-  wwcTranslatorErrorConsole: Problēma radās, kamēr lietotājs %i mēģināja tulkot. Tagad
-    drukājot kaudzēm.
   wwcConfigErrorLimitInvalid: Nederīgs tulkotājs kļūdu ierobežojums iestatīts config.yml.
     Noklusējuma izpilde līdz 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Lūdzu, pārbaudiet errorLog.txt WorldwideChat
@@ -314,3 +312,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Atbildes taimauts veiksmīgi iestatīts.
   wwctCannotTranslateConsole: Jūs nevarat tulkot konsoles tērzēšanu!
   wwctrlRateLimitBadInt: Jūsu likmes ierobežojums nav derīgs vesels skaitlis.
+  wwcTranslatorErrorConsole: Problēma radās, kamēr lietotājs %i mēģināja tulkot. Lūdzu,
+    pārbaudiet errorLog.txt, lai iegūtu sīkāku informāciju.

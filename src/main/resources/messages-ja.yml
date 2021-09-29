@@ -195,7 +195,6 @@ Messages:
   wwcTranslatorErrorThresholdReached: エラーしきい値に達しました。このプラグインはリロードし、すべての翻訳者を無効にします。
   wwcConfigErrorLimitEnabled: トランスレータエラー制限は %i に設定されています。
   wwcTranslatorError: 翻訳中に問題が発生しました。もう一度お試しください。
-  wwcTranslatorErrorConsole: ユーザー %i が翻訳を試みているときに問題が発生しました。スタックトレースを印刷します。
   wwcConfigErrorLimitInvalid: config.yml に設定されたトランスレータエラー制限が無効です。デフォルトは 5 に設定されています...
   wwcTranslatorErrorThresholdReachedCheckLogs: 詳細については、WorldwideChat プラグインフォルダの errorLog.txt
     をチェックしてください。
@@ -251,3 +250,4 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: レスポンスタイムアウトが正常に設定されました。
   wwctCannotTranslateConsole: コンソールチャットは翻訳できません！
   wwctrlRateLimitBadInt: レートリミットは有効な整数ではありません。
+  wwcTranslatorErrorConsole: ユーザー %i が翻訳を試みているときに問題が発生しました。詳細については errorLog.txt を確認してください。

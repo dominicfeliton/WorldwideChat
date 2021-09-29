@@ -236,8 +236,6 @@ Messages:
   wwcConfigErrorLimitEnabled: অনুবাদকের ত্রুটির সীমিত %i নির্ধারণ করা হয়েছে।
   wwcTranslatorError: আপনার অনুবাদের চেষ্টা করার সময় একটি সমস্যা হয়েছে। দয়া করে আবার
     চেষ্টা করুন।
-  wwcTranslatorErrorConsole: ব্যবহারকারী %i তাদের অনুবাদের চেষ্টা করার সময় একটি সমস্যা
-    হয়েছে। এখন স্ট্যাকট্রেস মুদ্রণ।
   wwcConfigErrorLimitInvalid: config.yml এ অকার্যকর অনুবাদক ত্রুটির সীমা নির্ধারণ
     করা হয়েছে। ৫ এ ডিফল্ট হচ্ছে...
   wwcTranslatorErrorThresholdReachedCheckLogs: অনুগ্রহ করে আরও তথ্যের জন্য WorldwideChat
@@ -308,3 +306,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: প্রতিক্রিয়া সময়সীমা সফলভাবে সেট করা হয়েছে।
   wwctCannotTranslateConsole: আপনি কনসোল চ্যাট অনুবাদ করতে পারবেন না!
   wwctrlRateLimitBadInt: আপনার হার সীমা একটি বৈধ পূর্ণসংখ্যা নয়।
+  wwcTranslatorErrorConsole: ব্যবহারকারী %i তাদের অনুবাদের চেষ্টা করার সময় একটি সমস্যা
+    হয়েছে। আরও বিস্তারিত জানার জন্য অনুগ্রহ করে errorLog.txt চেক করুন।

@@ -238,8 +238,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Kikomo cha hitilafu ya Mtafsiri imewekwa kwa %i.
   wwcTranslatorError: Tatizo limetokea wakati wa kujaribu tafsiri yako. Tafadhali
     jaribu tena.
-  wwcTranslatorErrorConsole: Tatizo lilitokea wakati mtumiaji %i alikuwa akijaribu
-    tafsiri yao. Sasa uchapishaji stacktrace.
   wwcConfigErrorLimitInvalid: batili translator makosa kikomo kuweka katika config.yml.
     Defaulting kwa 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Tafadhali angalia errorLog.txt katika
@@ -309,3 +307,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Mwitikio wa majibu umewekwa kwa mafanikio.
   wwctCannotTranslateConsole: Huwezi kutafsiri mazungumzo ya console!
   wwctrlRateLimitBadInt: Kiwango chako cha kikomo si integer halali.
+  wwcTranslatorErrorConsole: Tatizo lilitokea wakati mtumiaji %i alikuwa akijaribu
+    tafsiri yao. Tafadhali angalia errorLog.txt kwa maelezo zaidi.

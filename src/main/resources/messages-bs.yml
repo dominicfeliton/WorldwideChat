@@ -241,8 +241,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Ograničenje greške prevoditelja postavljeno na %i.
   wwcTranslatorError: Tijekom pokušaja prevođenja došlo je do problema. Molim vas
     pokušajte ponovo.
-  wwcTranslatorErrorConsole: Do problema se pojavio dok je korisnik %i pokušavao prevođenje.
-    Sada štampanje stacktrace.
   wwcConfigErrorLimitInvalid: Nevažeća granica greške prevoditelja postavljena u config.yml.
     Defaulting do 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Molimo provjerite errorLog.txt u WorldwideChat
@@ -313,3 +311,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Odziv timeout postavljen uspješno.
   wwctCannotTranslateConsole: Ne možete prevesti konzolni chat!
   wwctrlRateLimitBadInt: Ograničenje stope nije važeći cijeli broj.
+  wwcTranslatorErrorConsole: Do problema se pojavio dok je korisnik %i pokušavao prevođenje.
+    Molimo provjerite errorLog.txt za više detalja.

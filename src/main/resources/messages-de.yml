@@ -261,8 +261,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Die Fehlergrenze für Übersetzer ist auf %i festgelegt.
   wwcTranslatorError: Beim Versuch Ihrer Übersetzung ist ein Problem aufgetreten.
     Bitte versuchen Sie es noch einmal.
-  wwcTranslatorErrorConsole: Ein Problem ist aufgetreten, während Benutzer %i seine
-    Übersetzung versuchte. Drucken Sie jetzt den Stacktrace.
   wwcConfigErrorLimitInvalid: Ungültiges Übersetzer-Fehlerlimit, das in config.yml
     festgelegt wurde. Standardmäßig 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Weitere Informationen finden Sie in
@@ -340,3 +338,5 @@ Messages:
     eingestellt.
   wwctCannotTranslateConsole: Konsolen-Chat kann nicht übersetzt werden!
   wwctrlRateLimitBadInt: Ihr Ratenlimit ist keine gültige Ganzzahl.
+  wwcTranslatorErrorConsole: Während der Benutzer %i seine Übersetzung versuchte,
+    ist ein Problem aufgetreten. Bitte überprüfen Sie errorLog.txt für weitere Details.

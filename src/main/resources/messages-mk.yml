@@ -252,8 +252,6 @@ Messages:
     %i.
   wwcTranslatorError: Проблем се случи при обидот за вашиот превод. Ве молиме обидете
     се повторно.
-  wwcTranslatorErrorConsole: Проблем се појави додека корисник %i се обидуваше нивниот
-    превод. Сега печатење на stacktrace.
   wwcConfigErrorLimitInvalid: Невалиден преведувач граница грешка поставена во config.yml.
     Стандардно да 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Ве молиме проверете errorLog.txt во
@@ -324,3 +322,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Истек на одговор постави успешно.
   wwctCannotTranslateConsole: Не можете да преведете конзола разговор!
   wwctrlRateLimitBadInt: Вашата стапка граница не е валиден цел број.
+  wwcTranslatorErrorConsole: Проблем се појави додека корисник %i се обидуваше нивниот
+    превод. Ве молиме проверете errorLog.txt за повеќе детали.

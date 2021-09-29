@@ -240,8 +240,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Kuskuren kuskuren fassara zuwa %i.
   wwcTranslatorError: Wata matsala ta zama yayin ƙoƙarin fassararka. Da fatan a sake
     gwadawa.
-  wwcTranslatorErrorConsole: Wata matsala ta zama yayin da mai amfani %i yake ƙoƙarin
-    fassararsu. Yanzu buga stacktrace.
   wwcConfigErrorLimitInvalid: Kuskuren kuskuren fassara mara inganci da aka saita
     a daidaita.yml Cefaulting zuwa 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Da fatan a duba errorLog.txt a cikin
@@ -311,3 +309,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: An saita lokacin amsawa cikin nasara.
   wwctCannotTranslateConsole: Ba za ku iya fassara na'ura mai kwakwalwa ba!
   wwctrlRateLimitBadInt: Iyakar kuɗin ku ba wata lamba mai inganci ba ce.
+  wwcTranslatorErrorConsole: Wata matsala ta zama yayin da mai amfani %i yake ƙoƙarin
+    fassararsu. Da fatan za a duba errorLog.txt don ƙarin bayani.

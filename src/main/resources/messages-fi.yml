@@ -241,8 +241,6 @@ Messages:
     uudelleen ja poistaa kaikki kääntäjät käytöstä.
   wwcConfigErrorLimitEnabled: Kääntäjän virheraja %i.
   wwcTranslatorError: Ongelmana oli yritettäessä käännös. Yritä uudelleen.
-  wwcTranslatorErrorConsole: Ongelma ilmeni, kun käyttäjä %i yritti käännöstä. Nyt
-    tulostetaan pinonjälki.
   wwcConfigErrorLimitInvalid: Virheellinen kääntäjän virheraja asetettu config.yml.
     Defaulting 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Lisätietoja on WorldwideChat plugin
@@ -311,3 +309,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Vastausaikakatkaisu on määritetty onnistuneesti.
   wwctCannotTranslateConsole: Et voi kääntää konsolikeskustelua!
   wwctrlRateLimitBadInt: Korkorajoituksesi ei ole kelvollinen kokonaisluku.
+  wwcTranslatorErrorConsole: Ongelma ilmeni, kun käyttäjä %i yritti käännöstä. Tarkista
+    lisätietoja errorLog.txt.

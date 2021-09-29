@@ -242,8 +242,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Cyfyngiad gwall Cyfieithydd a osodwyd i %i.
   wwcTranslatorError: Digwyddodd problem wrth geisio eich cyfieithiad. Ceisiwch eto
     os gwelwch yn dda.
-  wwcTranslatorErrorConsole: Digwyddodd problem tra defnyddiwr %i yn ceisio eu cyfieithiad.
-    Nawr argraffu'r stacktrace.
   wwcConfigErrorLimitInvalid: Cyfyngiad gwall cyfieithydd annilys a osodwyd yn config.yml.
     Defaulting i 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Gwiriwch errorLog.txt yn y ffolder
@@ -313,3 +311,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Amser ymateb a osodwyd yn llwyddiannus.
   wwctCannotTranslateConsole: Ni allwch gyfieithu sgwrs consol!
   wwctrlRateLimitBadInt: Nid yw eich terfyn cyfradd yn gyfanrif dilys.
+  wwcTranslatorErrorConsole: Digwyddodd problem tra defnyddiwr %i yn ceisio eu cyfieithiad.
+    Gwiriwch errorLog.txt am fwy o fanylion.

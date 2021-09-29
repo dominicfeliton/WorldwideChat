@@ -248,8 +248,6 @@ Messages:
     и отключит всех переводчиков.
   wwcConfigErrorLimitEnabled: Предел ошибок транслятора установлен в %i.
   wwcTranslatorError: При попытке перевода возникла проблема. Повторите попытку.
-  wwcTranslatorErrorConsole: Проблема возникла при попытке пользователя %i перевода.
-    Теперь печатаем стектрассировку.
   wwcConfigErrorLimitInvalid: Недопустимый предел ошибок переводчика установлен в
     config.yml. При дефолте 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Пожалуйста, обратитесь к errorLog.txt
@@ -323,3 +321,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Таймаут ответа успешно установлен.
   wwctCannotTranslateConsole: Вы не можете перевести консольный чат!
   wwctrlRateLimitBadInt: Ограничение скорости не является допустимым целым числом.
+  wwcTranslatorErrorConsole: Возникла проблема при попытке перевода пользователем
+    %i. Для получения более подробной информации обратитесь к файлу errorLog.txt.

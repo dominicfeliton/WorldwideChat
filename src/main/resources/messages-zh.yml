@@ -192,7 +192,6 @@ Messages:
   wwcTranslatorErrorThresholdReached: 已达到错误阈值。此插件现在将重新加载，并禁用所有翻译人员。
   wwcConfigErrorLimitEnabled: 翻译器错误限制设置为 %i。
   wwcTranslatorError: 尝试翻译时出现问题。请再试一次。
-  wwcTranslatorErrorConsole: 用户 %i 正在尝试翻译时出现问题。现在打印堆栈跟踪。
   wwcConfigErrorLimitInvalid: config.yml 中设置的转换器错误限制无效。默认为 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: 请查看 WorldwideChat 插件文件夹中的 errorLog.txt
     以了解更多信息。
@@ -248,3 +247,4 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: 响应超时设置成功。
   wwctCannotTranslateConsole: 你不能翻译控制台聊天！
   wwctrlRateLimitBadInt: 您的速率限制不是有效的整数。
+  wwcTranslatorErrorConsole: 用户 %i 尝试翻译时出现问题。有关更多详细信息，请查看 errorLog.txt。

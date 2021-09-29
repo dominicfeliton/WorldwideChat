@@ -260,8 +260,6 @@ Messages:
     %i.
   wwcTranslatorError: Isang problema ang nagkaroon habang sinusubukan ang iyong pagsasalin.
     Mangyaring subukan muli.
-  wwcTranslatorErrorConsole: Nagkaroon ng problema habang tinatangka ng gumagamit
-    %i ang kanilang pagsasalin. Ngayon i-print ang stacktrace.
   wwcConfigErrorLimitInvalid: Hindi wastong limitasyon ng error sa tagasalin na itinakda
     sa config.yml. Default sa 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Mangyaring suriin ang errorLog.txt
@@ -342,3 +340,6 @@ Messages:
     tugon.
   wwctCannotTranslateConsole: Hindi mo maaaring isalin ang console chat!
   wwctrlRateLimitBadInt: Ang iyong limitasyon sa rate ay hindi wastong integer.
+  wwcTranslatorErrorConsole: Nagkaroon ng problema habang tinatangka ng gumagamit
+    %i ang kanilang pagsasalin. Mangyaring suriin errorLog.txt para sa higit pang
+    mga detalye.

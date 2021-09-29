@@ -236,8 +236,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Limit erè tradiktè mete nan % mwen.
   wwcTranslatorError: Yon pwoblèm ki te fèt pandan y ap eseye tradiksyon ou. Tanpri
     eseye ankò.
-  wwcTranslatorErrorConsole: Yon pwoblèm ki te fèt pandan y ap itilizatè % mwen te
-    eseye tradiksyon yo. Koulye a, enprime stacktrace la.
   wwcConfigErrorLimitInvalid: Envalid tradiktè erè limit mete nan config.yml. Défauting
     pou 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Tanpri tcheke errorLog.txt nan folder
@@ -306,3 +304,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: poz Repons mete avèk siksè.
   wwctCannotTranslateConsole: Ou pa ka tradui konsole chat!
   wwctrlRateLimitBadInt: Limit pousantaj ou a se pa yon nonb antye relatif ki valab.
+  wwcTranslatorErrorConsole: Yon pwoblèm ki te fèt pandan y ap itilizatè % mwen te
+    eseye tradiksyon yo. Tanpri tcheke errorLog.txt pou plis detay.

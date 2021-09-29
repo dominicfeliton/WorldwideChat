@@ -240,8 +240,6 @@ Messages:
   wwcConfigErrorLimitEnabled: مترجم کی خرابی کی حد %i پر سیٹ ہے۔
   wwcTranslatorError: آپ کے ترجمہ کی کوشش کرتے ہوئے ایک مسئلہ پیش آیا۔ براہ مہربانی
     دوبارہ کوشش کریں۔
-  wwcTranslatorErrorConsole: ایک مسئلہ پیش آیا جبکہ صارف %i ان کے ترجمہ کی کوشش کر
-    رہا تھا. اب stacktrace پرنٹنگ.
   wwcConfigErrorLimitInvalid: config.yml میں مقرر کردہ غلط مترجم غلطی کی حد. 5 کے
     لئے ناقص...
   wwcTranslatorErrorThresholdReachedCheckLogs: مزید معلومات کے لئے براہ کرم WorldwideChat
@@ -311,3 +309,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: ردعمل کا ٹائم آؤٹ کامیابی سے سیٹ
   wwctCannotTranslateConsole: آپ کنسول چیٹ ترجمہ نہیں کر سکتے!
   wwctrlRateLimitBadInt: آپ کی شرح کی حد ایک درست عددی نہیں ہے.
+  wwcTranslatorErrorConsole: ایک مسئلہ پیش آیا جبکہ صارف %i ان کے ترجمہ کی کوشش کر
+    رہا تھا. براہ کرم چیک کریں errorLog.txt مزید تفصیلات کے لئے.

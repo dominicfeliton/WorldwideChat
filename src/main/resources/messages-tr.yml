@@ -230,8 +230,6 @@ Messages:
     yükleyecek ve tüm çevirmenleri devre dışı bırakacaktır.
   wwcConfigErrorLimitEnabled: Çevirmen hata sınırı %i olarak ayarlandı.
   wwcTranslatorError: Çevirinizi denerken bir sorun oluştu. Lütfen tekrar deneyin.
-  wwcTranslatorErrorConsole: '%i kullanıcısı çevirisini denerken bir sorun oluştu.
-    Şimdi yığın izini yazdırıyorum.'
   wwcConfigErrorLimitInvalid: Config.yml içinde ayarlanmış geçersiz çevirmen hata
     sınırı. Varsayılan olarak 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Daha fazla bilgi için lütfen WorldwideChat
@@ -300,3 +298,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Yanıt zaman aşımı başarıyla ayarlandı.
   wwctCannotTranslateConsole: Konsol sohbetini çeviremezsiniz!
   wwctrlRateLimitBadInt: Hız limitiniz geçerli bir tamsayı değil.
+  wwcTranslatorErrorConsole: '%i kullanıcısı çevirisini denerken bir sorun oluştu.
+    Daha fazla ayrıntı için errorLog.txt dosyasını kontrol edin.'

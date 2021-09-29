@@ -247,8 +247,6 @@ Messages:
   wwcConfigErrorLimitEnabled: ಅನುವಾದಕ ದೋಷ ಮಿತಿ %i ಗೆ ಹೊಂದಿಸಲಾಗಿದೆ.
   wwcTranslatorError: ನಿಮ್ಮ ಅನುವಾದವನ್ನು ಪ್ರಯತ್ನಿಸುವಾಗ ಒಂದು ಸಮಸ್ಯೆ ಎದುರಾಗಿದೆ. ದಯವಿಟ್ಟು
     ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.
-  wwcTranslatorErrorConsole: ಬಳಕೆದಾರ %i ಅವರ ಅನುವಾದವನ್ನು ಪ್ರಯತ್ನಿಸುತ್ತಿರುವಾಗ ಒಂದು ಸಮಸ್ಯೆ
-    ಎದುರಾಗಿದೆ. ಈಗ ಸ್ಟ್ಯಾಕ್ಟ್ರೇಸ್ ಅನ್ನು ಮುದ್ರಿಸುವುದು.
   wwcConfigErrorLimitInvalid: ಅಮಾನ್ಯವಾದ ಅನುವಾದಕ ದೋಷ ಮಿತಿಯನ್ನು config.yml ನಲ್ಲಿ ಹೊಂದಿಸಲಾಗಿದೆ.
     5 ಗೆ ಡಿಫಾಲ್ಟಿಂಗ್...
   wwcTranslatorErrorThresholdReachedCheckLogs: ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ದಯವಿಟ್ಟು WordWidechat
@@ -317,3 +315,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: ಪ್ರತಿಕ್ರಿಯೆ ಕಾಲಾವಧಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
   wwctCannotTranslateConsole: ನೀವು ಕನ್ಸೋಲ್ ಚಾಟ್ ಅನ್ನು ಭಾಷಾಂತರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ!
   wwctrlRateLimitBadInt: ನಿಮ್ಮ ದರ ಮಿತಿ ಮಾನ್ಯ ಪೂರ್ಣಾಂಕವಲ್ಲ.
+  wwcTranslatorErrorConsole: ಬಳಕೆದಾರ %i ಅವರ ಅನುವಾದವನ್ನು ಪ್ರಯತ್ನಿಸುತ್ತಿರುವಾಗ ಒಂದು ಸಮಸ್ಯೆ
+    ಎದುರಾಗಿದೆ. ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ ದಯವಿಟ್ಟು errorLog.txt ಅನ್ನು ಪರಿಶೀಲಿಸಿ.

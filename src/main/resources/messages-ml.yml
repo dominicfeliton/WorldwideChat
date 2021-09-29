@@ -245,8 +245,6 @@ Messages:
   wwcConfigErrorLimitEnabled: പരിഭാഷകൻ പിശക് പരിധി %i ലേക്ക് സജ്ജമാക്കി.
   wwcTranslatorError: നിങ്ങളുടെ വിവർത്തനം ശ്രമിക്കുമ്പോൾ ഒരു പ്രശ്നം. ദയവായി വീണ്ടും
     ശ്രമിക്കുക.
-  wwcTranslatorErrorConsole: ഉപയോക്താവിനെ %i അവരുടെ പരിഭാഷ ശ്രമിക്കുമ്പോൾ ഒരു പ്രശ്നം
-    സംഭവിച്ചു. ഇപ്പോൾ സ്റ്റാക്ക്ട്രേസ് അച്ചടിക്കുന്നു.
   wwcConfigErrorLimitInvalid: അസാധുവായ പരിഭാഷകൻ പിശക് പരിധി ചൊന്ഫിഗ്. യ്മ്ല് വെച്ചു.
     5 ലേക്ക് സ്ഥിരസ്ഥിതിയായി...
   wwcTranslatorErrorThresholdReachedCheckLogs: കൂടുതൽ വിവരങ്ങൾക്ക് Chat പ്ലഗിൻ ഫോൾഡറിൽ
@@ -315,3 +313,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: പ്രതികരണ സമയപരിധി വിജയകരമായി സജ്ജമാക്കി.
   wwctCannotTranslateConsole: നിങ്ങൾക്ക് കൺസോൾ ചാറ്റ് വിവർത്തനം ചെയ്യാൻ കഴിയില്ല!
   wwctrlRateLimitBadInt: നിങ്ങളുടെ നിരക്ക് പരിധി സാധുവായ പൂർണ്ണസംഖ്യയല്ല.
+  wwcTranslatorErrorConsole: ഉപയോക്താവിനെ %i അവരുടെ പരിഭാഷ ശ്രമിക്കുമ്പോൾ ഒരു പ്രശ്നം
+    സംഭവിച്ചു. കൂടുതൽ വിവരങ്ങൾക്ക് errorLog.txt പരിശോധിക്കുക.

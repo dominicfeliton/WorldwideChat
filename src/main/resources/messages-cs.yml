@@ -240,8 +240,6 @@ Messages:
     znovu načte a zakáže všechny překladatele.
   wwcConfigErrorLimitEnabled: Omezení chyby překladače nastaveno na %i.
   wwcTranslatorError: Při pokusu o překlad došlo k problému. Zkuste to prosím znovu.
-  wwcTranslatorErrorConsole: Vyskytl se problém, když se uživatele %i pokoušel o jejich
-    překlad. Teď vytiskněte stacktrace.
   wwcConfigErrorLimitInvalid: Neplatný limit chyby překladače nastaven v config.yml.
     Výchozí hodnota 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Další informace zkontrolujte errorLog.txt
@@ -310,3 +308,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Časový limit odezvy byl úspěšně nastaven.
   wwctCannotTranslateConsole: Nemůžete přeložit konzolový chat!
   wwctrlRateLimitBadInt: Váš limit sazeb není platné celé číslo.
+  wwcTranslatorErrorConsole: Vyskytl se problém, když se uživatele %i pokoušel o jejich
+    překlad. Další podrobnosti zkontrolujte errorLog.txt.

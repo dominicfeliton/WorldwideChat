@@ -248,8 +248,6 @@ Messages:
   wwcConfigErrorLimitEnabled: A fordítói hibahatárt a %i értékre állítjuk be.
   wwcTranslatorError: Probléma merült fel a fordítás kísérlete közben. Kérem, próbálja
     meg újra.
-  wwcTranslatorErrorConsole: Probléma merült fel, amikor a (z) %i felhasználó megpróbálta
-    a fordítást. Most nyomtassa ki a nyomkövetést.
   wwcConfigErrorLimitInvalid: 'Érvénytelen fordítási hiba korlát beállítása config.yml.
     Alapértelmezés: 5...'
   wwcTranslatorErrorThresholdReachedCheckLogs: Kérjük, ellenőrizze a errorLog.txt
@@ -319,3 +317,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: A válaszidőtúllépés sikeresen beállítva.
   wwctCannotTranslateConsole: Nem lehet lefordítani a konzolos csevegést!
   wwctrlRateLimitBadInt: A díjkorlát nem érvényes egész szám.
+  wwcTranslatorErrorConsole: Probléma merült fel, amikor a (z) %i felhasználó megpróbálta
+    a fordítást. Kérjük, tekintse meg a errorLog.txt fájlt további részletekért.

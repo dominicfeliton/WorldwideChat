@@ -410,7 +410,7 @@ public class CommonDefinitions {
 				CommonDefinitions.sendMessage(currPlayer, playerError);
 				WorldwideChat.getInstance().getLogger()
 						.severe(CommonDefinitions.getMessage("wwcTranslatorErrorConsole", new String[] {currPlayer.getName()}));
-				e.printStackTrace();
+				CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
 
 				/* Write to log file */
 				File errorLog = new File(WorldwideChat.getInstance().getDataFolder(), "errorLog.txt");
@@ -429,7 +429,7 @@ public class CommonDefinitions {
 					e1.printStackTrace();
 				}
 
-				/* If error count is greater than threshold set in config.yml, reload */
+				/* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
 				if (WorldwideChat.getInstance().getErrorCount() >= WorldwideChat.getInstance().getErrorLimit()) {
 					WorldwideChat.getInstance().getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReached"));
 					WorldwideChat.getInstance().getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReachedCheckLogs"));

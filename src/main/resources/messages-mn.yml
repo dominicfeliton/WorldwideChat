@@ -243,8 +243,6 @@ Messages:
     дахин ачаалах болно, бүх орчуулагчдыг идэвхгүй.
   wwcConfigErrorLimitEnabled: Орчуулагч алдааны хязгаар %i гэж тохируулагдсан.
   wwcTranslatorError: Таны орчуулгыг оролдох үед асуудал гарсан. Дахин оролдоно уу.
-  wwcTranslatorErrorConsole: Хэрэглэгч %i тэдний орчуулгыг оролдож байх үед асуудал
-    гарсан. Одоо stacktrace хэвлэх.
   wwcConfigErrorLimitInvalid: Буруу орчуулагч алдааны хязгаар config.yml тогтоосон.
     5 руу анхдагч...
   wwcTranslatorErrorThresholdReachedCheckLogs: Дэлгэрэнгүй мэдээллийг WorldWidDechat
@@ -316,3 +314,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Хариу хугацаа амжилттай тогтоосон.
   wwctCannotTranslateConsole: Та консол чат орчуулж чадахгүй байна!
   wwctrlRateLimitBadInt: Таны ханшийн хязгаар нь хүчин төгөлдөр бүхэл тоо биш юм.
+  wwcTranslatorErrorConsole: Хэрэглэгч %i тэдний орчуулгыг оролдож байх үед асуудал
+    гарсан. Илүү дэлгэрэнгүйг errorLog.txt шалгана уу.

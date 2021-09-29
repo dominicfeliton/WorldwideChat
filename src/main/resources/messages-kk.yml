@@ -235,8 +235,6 @@ Messages:
     және барлық аудармашыларды өшіреді.
   wwcConfigErrorLimitEnabled: Аудармашының қате шегі %i мәніне орнатылады.
   wwcTranslatorError: Аудармаға әрекет ету кезінде проблема туындады. Қайтадан көріңіз.
-  wwcTranslatorErrorConsole: '%i қолдануда олардың аудармасын жасау кезінде проблема
-    туындады. Енді стэктресті басып шығару.'
   wwcConfigErrorLimitInvalid: config.yml орнатылған жарамсыз аудармашы қате шегі.
     5 дефолт...
   wwcTranslatorErrorThresholdReachedCheckLogs: Қосымша ақпарат алу үшін WorldwideChat
@@ -307,3 +305,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Жауап беру мерзімдері сәтті орнатылған.
   wwctCannotTranslateConsole: Сіз консольдық чатты аудару мүмкін емес!
   wwctrlRateLimitBadInt: Сіздің мөлшерлеме шегі жарамды бүтін сан емес.
+  wwcTranslatorErrorConsole: '%i қолдануда олардың аудармасын жасау кезінде проблема
+    туындады. Қосымша ақпарат алу үшін errorLog.txt тексеріңіз.'

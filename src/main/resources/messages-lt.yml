@@ -240,8 +240,6 @@ Messages:
     naujo įkels ir išjungs visus vertėjus.
   wwcConfigErrorLimitEnabled: Vertėjo klaidos limitas nustatytas į %i.
   wwcTranslatorError: Problema kilo bandant vertimą. Bandykite dar kartą.
-  wwcTranslatorErrorConsole: Problema kilo, kai vartotojas %i bandė jų vertimą. Dabar
-    spausdinkite kamino pėdsaką.
   wwcConfigErrorLimitInvalid: Neteisingas vertėjo klaidos limitas nustatytas config.yml.
     Numatytinas iki 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Prašome patikrinti errorLog.txt WorldwideChat
@@ -311,3 +309,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Atsakymo skirtasis laikas sėkmingai nustatytas.
   wwctCannotTranslateConsole: Jūs negalite išversti konsolės pokalbių!
   wwctrlRateLimitBadInt: Jūsų normos limitas nėra tinkamas sveikasis skaičius.
+  wwcTranslatorErrorConsole: Problema kilo, kai vartotojas %i bandė jų vertimą. Prašome
+    patikrinti errorLog.txt daugiau informacijos.

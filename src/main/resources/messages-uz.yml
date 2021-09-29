@@ -246,8 +246,6 @@ Messages:
   wwcConfigErrorLimitEnabled: Tarjimon xatosi limiti %i ga o'rnatildi.
   wwcTranslatorError: Tarjima qilishda muammo yuzaga keldi. Iltimos, qayta urinib
     ko'ring.
-  wwcTranslatorErrorConsole: '%i foydalanuvchisi ularning tarjimasiga urinayotganda
-    muammo yuzaga keldi. Endi stacktrace chop.'
   wwcConfigErrorLimitInvalid: Config.yml da o'rnatilgan noto'g'ri tarjimon xatosi
     chegarasi. 5ga standart...
   wwcTranslatorErrorThresholdReachedCheckLogs: Qo'shimcha ma'lumot olish uchun WorldwideChat
@@ -316,3 +314,5 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: Response muddati muvaffaqiyatli o'rnatildi.
   wwctCannotTranslateConsole: Siz konsol suhbatini tarjima qila olmaysiz!
   wwctrlRateLimitBadInt: Sizning stavkangiz cheklovi haqiqiy emas.
+  wwcTranslatorErrorConsole: '%i foydalanuvchisi ularning tarjimasiga urinayotganda
+    muammo yuzaga keldi. Qo''shimcha ma''lumot olish uchun errorLog.txt tekshiring.'

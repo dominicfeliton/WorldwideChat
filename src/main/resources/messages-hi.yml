@@ -244,8 +244,6 @@ Messages:
   wwcConfigErrorLimitEnabled: अनुवादक त्रुटि सीमा %i पर सेट है।
   wwcTranslatorError: आपके अनुवाद का प्रयास करते समय एक समस्या हुई। कृपया फिर से कोशिश
     करें।
-  wwcTranslatorErrorConsole: एक समस्या तब हुई जब उपयोगकर्ता %i उनके अनुवाद का प्रयास
-    कर रहा था। अब स्टैकट्रैक प्रिंट कर रहा है।
   wwcConfigErrorLimitInvalid: अमान्य अनुवादक त्रुटि सीमा config.yml में सेट है। डिफॉल्टिंग
     टू 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: कृपया अधिक जानकारी के लिए WorldwideChat
@@ -319,3 +317,5 @@ Messages:
     गया
   wwctCannotTranslateConsole: आप कंसोल चैट का अनुवाद नहीं कर सकते!
   wwctrlRateLimitBadInt: आपकी दर सीमा वैध पूर्णांक नहीं है।
+  wwcTranslatorErrorConsole: एक समस्या तब हुई जब उपयोगकर्ता %i उनके अनुवाद का प्रयास
+    कर रहा था। अधिक जानकारी के लिए कृपया errorLog.txt की जांच करें।
