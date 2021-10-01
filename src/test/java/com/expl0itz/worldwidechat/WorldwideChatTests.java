@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
+import com.expl0itz.worldwidechat.commands.TestConsoleCommands;
 import com.expl0itz.worldwidechat.commands.TestPlayerCommands;
 import com.expl0itz.worldwidechat.inventory.TestPlayerGUI;
 import com.expl0itz.worldwidechat.util.TestTranslationUtils;
@@ -26,6 +27,7 @@ public class WorldwideChatTests {
 
 	/* Init all test classes */
 	TestPlayerCommands testPlayerCommands = new TestPlayerCommands(server, plugin, playerMock, secondPlayerMock);
+	TestConsoleCommands testConsoleCommands = new TestConsoleCommands(server, plugin, playerMock, secondPlayerMock);
 	TestPlayerGUI testPlayerGUI = new TestPlayerGUI(server, plugin, playerMock, secondPlayerMock);
 	TestTranslationUtils testTranslationUtils = new TestTranslationUtils(server, plugin, playerMock, secondPlayerMock);
 
@@ -78,7 +80,7 @@ public class WorldwideChatTests {
 		plugin.getLogger().info("=== (Test " + testCount + ") Completed Successfully ===");
 	}
 
-	/* Command Tests */
+	/* Player Command Tests */
 	@Order(1)
 	@Test
 	public void testPlayerCommands() {
@@ -129,11 +131,31 @@ public class WorldwideChatTests {
 		sendCompletedMessage();
 	}
 
-	/* GUI Tests */
+	/* Console Command Tests */
 	@Order(2)
 	@Test
+	public void testConsoleCommands() {
+		/* Reset */
+		resetWWC();
+		
+		/* Print start message */
+		plugin.getLogger().info("=== Test Console Commands ===");
+		
+		/* Run tests */
+		testConsoleCommands.testTranslateCommandConsoleTargetOther();
+		testConsoleCommands.testTranslateCommandConsoleSourceTargetOther();
+		testConsoleCommands.testGlobalTranslateCommandPlayerTarget();
+		testConsoleCommands.testGlobalTranslateCommandPlayerSourceTarget();
+		
+		/* Print finished message */
+		sendCompletedMessage();
+	}
+	
+	/* GUI Tests */
+	@Order(3)
+	@Test
 	public void testPlayerGUI() {
-		/* Reset Translators */
+		/* Reset */
 		resetWWC();
 
 		/* Print start message */
@@ -153,10 +175,10 @@ public class WorldwideChatTests {
 	}
 
 	/* Util Tests */
-	@Order(3)
+	@Order(4)
 	@Test
 	public void testUtils() {
-		/* Reset Translators */
+		/* Reset */
 		resetWWC();
 
 		/* Print start message */

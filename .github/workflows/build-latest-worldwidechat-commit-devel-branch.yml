@@ -1,13 +1,13 @@
 # This workflow will build a Java project with Maven
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Release Builds (Main Branch)
+name: Bleeding-Edge Builds (Development Branch)
 
 on:
   push:
-    branches: [ main ]
+    branches: [ development-1.x ]
   pull_request:
-    branches: [ main ]
+    branches: [ development-1.x ]
 
 jobs:
   build:

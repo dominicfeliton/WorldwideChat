@@ -1,6 +1,6 @@
 package com.expl0itz.worldwidechat.util;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.WorldwideChatTests;
