@@ -340,6 +340,7 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public void checkMCVersion() {
+		/* MC Version check */
 		String supportedVersions = "";
 		for (int i = 0; i < CommonDefinitions.supportedMCVersions.length; i++) {
 			if (i+1 != CommonDefinitions.supportedMCVersions.length) {

@@ -59,7 +59,7 @@ public class OldVersionOpenBook {
 				   Player.class.getMethod("setItemInHand", ItemStack.class).invoke(p, i);
 		           sendPacket(i, p);
 			   } catch (ReflectiveOperationException e) {
-				   Player.class.getMethod("setItemInHand", ItemStack.class).invoke(p, held);
+				   e.printStackTrace();
 				   initialised = false;
 			   }
 			   Player.class.getMethod("setItemInHand", ItemStack.class).invoke(p, held);
