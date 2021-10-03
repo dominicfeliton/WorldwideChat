@@ -12,7 +12,6 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.HandlerList;
-import org.bukkit.plugin.IllegalPluginAccessException;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.JavaPluginLoader;
@@ -86,7 +85,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	private String pluginLang = "en";
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "9282021-1"; //This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "1032021-1"; //This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	/* Default constructor */
@@ -314,18 +313,19 @@ public class WorldwideChat extends JavaPlugin {
 		getConfigManager().loadTranslatorSettings();
 
 		/* Run tasks after translator loaded */
-		try {
-			// Check for updates
-			Bukkit.getScheduler().runTaskTimerAsynchronously(instance, new UpdateChecker(), 0,
-					getUpdateCheckerDelay() * 20); // Run update checker now
+		// Check for updates
+		if (!CommonDefinitions.serverIsStopping()) 
+			Bukkit.getScheduler().runTaskTimerAsynchronously(instance, new UpdateChecker(), 0, getUpdateCheckerDelay() * 20);
 
-			// Schedule automatic user data sync
-			Bukkit.getScheduler().runTaskTimerAsynchronously(instance, new SyncUserData(), getSyncUserDataDelay() * 20,
-					getSyncUserDataDelay() * 20);
+		// Schedule automatic user data sync
+		if (!CommonDefinitions.serverIsStopping()) 
+			Bukkit.getScheduler().runTaskTimerAsynchronously(instance, new SyncUserData(), getSyncUserDataDelay() * 20, getSyncUserDataDelay() * 20);
 
-			// Load saved user data
-			new LoadUserData().run();
+		// Load saved user data
+		if (!CommonDefinitions.serverIsStopping()) new LoadUserData().run();
 
+		// Enable tab completers
+		if (!CommonDefinitions.serverIsStopping()) {
 			if (isReloading) {
 				new BukkitRunnable() {
 					@Override
@@ -336,19 +336,11 @@ public class WorldwideChat extends JavaPlugin {
 			} else {
 				registerTabCompleters();
 			}
-		} catch (IllegalPluginAccessException e) {
-			// We will only run into this if the user runs /stop or /reload confirm
-			// right after a /wwcr.
-			// If this happens, and we run into an exception despite our checks,
-			// Just catch the exception.
-			// This will not affect the user in any way, since the only way we run into this
-			// is if we are getting disabled.
-			CommonDefinitions.sendDebugMessage(
-					"Ran into an IllegalPluginAccessException on " + this.getClass().getName() + ", oh well...");
 		}
 	}
 
 	public void checkMCVersion() {
+		/* MC Version check */
 		String supportedVersions = "";
 		for (int i = 0; i < CommonDefinitions.supportedMCVersions.length; i++) {
 			if (i+1 != CommonDefinitions.supportedMCVersions.length) {
@@ -389,7 +381,7 @@ public class WorldwideChat extends JavaPlugin {
 		if (getTranslatorName().equals("Starting")) {
 			final TextComponent notDone = Component.text()
 					.append(Component.text()
-							.content("WorldwideChat is still initializing. Please try again shortly.")
+							.content("WorldwideChat is still initializing, please try again shortly.")
 							.color(NamedTextColor.YELLOW))
 					.build();
 			CommonDefinitions.sendMessage(sender, notDone);

@@ -14,6 +14,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionAttachmentInfo;
+import org.bukkit.plugin.IllegalPluginAccessException;
+import org.bukkit.scheduler.BukkitRunnable;
 import org.threeten.bp.Instant;
 import org.threeten.bp.LocalDate;
 import org.threeten.bp.LocalTime;
@@ -456,6 +458,21 @@ public class CommonDefinitions {
 						.color(NamedTextColor.RED))
 				.build();
 		CommonDefinitions.sendMessage(sender, noConsoleChat);
+		return false;
+	}
+	
+	public static boolean serverIsStopping() {
+		try {
+			new BukkitRunnable() {
+				@Override
+				public void run() {
+					CommonDefinitions.sendDebugMessage("Server is not stopping!");
+				}
+			}.runTask(WorldwideChat.getInstance());
+		} catch (IllegalPluginAccessException e) {
+			CommonDefinitions.sendDebugMessage("Server is stopping! Don't run this task/do any dumb shit.");
+			return true;
+		}
 		return false;
 	}
 	

@@ -16,6 +16,7 @@ public class ActiveTranslator {
 	private boolean translatingSign = false;
 	private boolean translatingItem = false;
 	private boolean translatingEntity = false;
+	private boolean hasBeenSaved = false;
 
 	public ActiveTranslator(String uuid, String langIn, String langOut) {
 		playerUUID = uuid;
@@ -25,18 +26,22 @@ public class ActiveTranslator {
 
 	/* Setters */
 	public void setRateLimit(int i) {
+		hasBeenSaved = false;
 		rateLimit = i;
 	}
 
 	public void setUUID(String i) {
+		hasBeenSaved = false;
 		playerUUID = i;
 	}
 
 	public void setInLangCode(String i) {
+		hasBeenSaved = false;
 		inLangCode = i;
 	}
 
 	public void setOutLangCode(String i) {
+		hasBeenSaved = false;
 		outLangCode = i;
 	}
 
@@ -45,22 +50,31 @@ public class ActiveTranslator {
 	}
 
 	public void setTranslatingBook(boolean i) {
+		hasBeenSaved = false;
 		translatingBook = i;
 	}
 
 	public void setTranslatingSign(boolean i) {
+		hasBeenSaved = false;
 		translatingSign = i;
 	}
 
 	public void setTranslatingItem(boolean i) {
+		hasBeenSaved = false;
 		translatingItem = i;
 	}
 	
 	public void setTranslatingEntity(boolean i) {
+		hasBeenSaved = false;
 		translatingEntity = i;
 	}
 
+	public void setHasBeenSaved(boolean i) {
+		hasBeenSaved = i;
+	}
+	
 	public void setRateLimitPreviousTime(Instant i) {
+		hasBeenSaved = false;
 		rateLimitPreviousTime = i.toString();
 	}
 
@@ -99,6 +113,10 @@ public class ActiveTranslator {
 	
 	public boolean getTranslatingEntity() {
 		return translatingEntity;
+	}
+	
+	public boolean getHasBeenSaved() {
+		return hasBeenSaved;
 	}
 
 	public String getRateLimitPreviousTime() {
