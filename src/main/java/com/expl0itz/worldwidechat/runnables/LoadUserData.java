@@ -47,6 +47,7 @@ public class LoadUserData implements Runnable {
 						eaFile.getName().substring(0, eaFile.getName().indexOf(".")),
 						currFileConfig.getInt("attemptedTranslations"),
 						currFileConfig.getInt("successfulTranslations"));
+				currRecord.setHasBeenSaved(true);
 				main.addPlayerRecord(currRecord);
 			} else { // move corrupted files to corrupted dir; they will be deleted on next run
 				try {
@@ -75,8 +76,7 @@ public class LoadUserData implements Runnable {
 					&& currFileConfig.isBoolean("itemTranslation") && currFileConfig.isBoolean("entityTranslation") 
 					&& currFileConfig.isInt("rateLimit") && currFileConfig.isString("rateLimitPreviousRecordedTime")) { // If file has proper entries
 				ActiveTranslator currentTranslator = new ActiveTranslator(
-						eaFile.getName().substring(0, eaFile.getName().indexOf(".")), // add active translator to
-																						// arraylist
+						eaFile.getName().substring(0, eaFile.getName().indexOf(".")), // add active translator to arraylist
 						currFileConfig.getString("inLang"), currFileConfig.getString("outLang"));
 				currentTranslator.setTranslatingSign(currFileConfig.getBoolean("signTranslation"));
 				currentTranslator.setTranslatingBook(currFileConfig.getBoolean("bookTranslation"));
@@ -87,9 +87,9 @@ public class LoadUserData implements Runnable {
 					currentTranslator.setRateLimitPreviousTime(
 							Instant.parse(currFileConfig.getString("rateLimitPreviousRecordedTime")));
 				}
+				currentTranslator.setHasBeenSaved(true);
 				main.addActiveTranslator(currentTranslator);
-			} else { // move corrupted or old files to corrupted dir; they will be deleted on next
-						// run
+			} else { // move corrupted or old files to corrupted dir; they will be deleted on next run
 				try {
 					File badDataFile = new File(
 							badDataFolder.toString() + File.separator + eaFile.getName().toString());

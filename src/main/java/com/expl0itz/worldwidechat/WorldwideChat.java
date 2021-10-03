@@ -314,18 +314,18 @@ public class WorldwideChat extends JavaPlugin {
 
 		/* Run tasks after translator loaded */
 		// Check for updates
-		if (!CommonDefinitions.serverIsDisabling()) 
+		if (!CommonDefinitions.serverIsStopping()) 
 			Bukkit.getScheduler().runTaskTimerAsynchronously(instance, new UpdateChecker(), 0, getUpdateCheckerDelay() * 20);
 
 		// Schedule automatic user data sync
-		if (!CommonDefinitions.serverIsDisabling()) 
+		if (!CommonDefinitions.serverIsStopping()) 
 			Bukkit.getScheduler().runTaskTimerAsynchronously(instance, new SyncUserData(), getSyncUserDataDelay() * 20, getSyncUserDataDelay() * 20);
 
 		// Load saved user data
-		if (!CommonDefinitions.serverIsDisabling()) new LoadUserData().run();
+		if (!CommonDefinitions.serverIsStopping()) new LoadUserData().run();
 
 		// Enable tab completers
-		if (!CommonDefinitions.serverIsDisabling()) {
+		if (!CommonDefinitions.serverIsStopping()) {
 			if (isReloading) {
 				new BukkitRunnable() {
 					@Override

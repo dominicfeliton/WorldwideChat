@@ -446,9 +446,12 @@ public class ConfigurationHandler {
 			synchronized (main.getActiveTranslators()) {
 				// Save all new activeTranslators
 				for (ActiveTranslator eaTranslator : main.getActiveTranslators()) {
-					CommonDefinitions
-							.sendDebugMessage("Created/updated user data config of " + eaTranslator.getUUID() + ".");
-					createUserDataConfig(eaTranslator);
+					CommonDefinitions.sendDebugMessage("Translation data of " + eaTranslator.getUUID() + " save status: " + eaTranslator.getHasBeenSaved());
+					if (!eaTranslator.getHasBeenSaved()) {
+						CommonDefinitions.sendDebugMessage("Created/updated unsaved user data config of " + eaTranslator.getUUID() + ".");
+						eaTranslator.setHasBeenSaved(true);
+						createUserDataConfig(eaTranslator);
+					}
 				}
 				// Delete any old activeTranslators
 				File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
@@ -465,18 +468,11 @@ public class ConfigurationHandler {
 
 			/* Sync playerRecords to disk */
 			for (PlayerRecord eaRecord : main.getPlayerRecords()) {
-				CommonDefinitions.sendDebugMessage("Created/updated user record of " + eaRecord.getUUID() + ".");
-				createStatsConfig(eaRecord);
-			}
-			// Delete old playerRecords (just in case)
-			File playerRecordsDir = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
-			for (String eaName : playerRecordsDir.list()) {
-				File currFile = new File(playerRecordsDir, eaName);
-				if (main.getPlayerRecord(currFile.getName().substring(0, currFile.getName().indexOf(".")),
-						false).getUUID().equals("")) {
-					CommonDefinitions.sendDebugMessage("Deleted user record of "
-							+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + ".");
-					currFile.delete();
+				CommonDefinitions.sendDebugMessage("Record of " + eaRecord.getUUID() + " save status: " + eaRecord.getHasBeenSaved());
+				if (!eaRecord.getHasBeenSaved()) {
+					CommonDefinitions.sendDebugMessage("Created/updated unsaved user record of " + eaRecord.getUUID() + ".");
+					eaRecord.setHasBeenSaved(true);
+					createStatsConfig(eaRecord);
 				}
 			}
 		}

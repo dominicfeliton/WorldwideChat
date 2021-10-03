@@ -461,16 +461,16 @@ public class CommonDefinitions {
 		return false;
 	}
 	
-	public static boolean serverIsDisabling() {
+	public static boolean serverIsStopping() {
 		try {
 			new BukkitRunnable() {
 				@Override
 				public void run() {
-					CommonDefinitions.sendDebugMessage("Server is not disabled!");
+					CommonDefinitions.sendDebugMessage("Server is not stopping!");
 				}
 			}.runTask(WorldwideChat.getInstance());
 		} catch (IllegalPluginAccessException e) {
-			CommonDefinitions.sendDebugMessage("Server is disabling! Don't run this task/do any dumb shit.");
+			CommonDefinitions.sendDebugMessage("Server is stopping! Don't run this task/do any dumb shit.");
 			return true;
 		}
 		return false;
