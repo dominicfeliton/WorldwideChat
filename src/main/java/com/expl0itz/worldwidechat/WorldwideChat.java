@@ -381,7 +381,7 @@ public class WorldwideChat extends JavaPlugin {
 		if (getTranslatorName().equals("Starting")) {
 			final TextComponent notDone = Component.text()
 					.append(Component.text()
-							.content("WorldwideChat is still initializing. Please try again shortly.")
+							.content("WorldwideChat is still initializing, please try again shortly.")
 							.color(NamedTextColor.YELLOW))
 					.build();
 			CommonDefinitions.sendMessage(sender, notDone);
