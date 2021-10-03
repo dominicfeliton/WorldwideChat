@@ -17,13 +17,12 @@ public class DeluxeChatListener implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onDeluxeChat(DeluxeChatEvent event) { 
         if (!main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("") || !main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")) {
-            String out = CommonDefinitions.translateText(event.getChatMessage(), event.getPlayer());
+        	PlayerRecord currRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
+        	currRecord.setAttemptedTranslations(currRecord.getAttemptedTranslations()+1);
+        	String out = CommonDefinitions.translateText(event.getChatMessage(), event.getPlayer());
             
-            //Normally, since DeluxeChat has its own weird chat thread, this method is called twice,
-            //and a player is given two attempted/successful translations. Let's subtract one.
-            PlayerRecord currRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
-            currRecord.setAttemptedTranslations(currRecord.getAttemptedTranslations()-1);
-            currRecord.setSuccessfulTranslations(currRecord.getSuccessfulTranslations()-1);
+            // This method gets called in addition to the main chat thread, so we are adding stats manually.
+            currRecord.setSuccessfulTranslations(currRecord.getSuccessfulTranslations()+1);
             
             event.setChatMessage(out);
         }
