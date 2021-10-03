@@ -218,7 +218,7 @@ public class CommonDefinitions {
 			/* Modify or create new player record */
 			PlayerRecord currPlayerRecord = WorldwideChat.getInstance()
 					.getPlayerRecord(currPlayer.getUniqueId().toString(), true);
-			currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations() + 1);
+			if (WorldwideChat.getInstance().getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations() + 1);
 
 			/* Initialize current ActiveTranslator, sanity checks */
 			ActiveTranslator currActiveTranslator;
@@ -254,8 +254,7 @@ public class CommonDefinitions {
 								&& (currentTerm.getInputPhrase().equalsIgnoreCase(inMessage))) {
 							currentTerm.setNumberOfTimes(currentTerm.getNumberOfTimes() + 1);
 							// Update stats, return output
-							currPlayerRecord
-									.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+							if (WorldwideChat.getInstance().getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
 							currPlayerRecord.setLastTranslationTime();
 							return StringEscapeUtils.unescapeJava(
 									ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase())); // done
@@ -390,7 +389,7 @@ public class CommonDefinitions {
 			}
 
 			/* Update stats */
-			currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+			if (WorldwideChat.getInstance().getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
 			currPlayerRecord.setLastTranslationTime();
 
 			/* Add to cache */
