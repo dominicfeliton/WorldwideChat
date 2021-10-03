@@ -460,7 +460,7 @@ public class ConfigurationHandler {
 					if (main.getActiveTranslator(
 							currFile.getName().substring(0, currFile.getName().indexOf("."))).getUUID().equals("")) {
 						CommonDefinitions.sendDebugMessage("Deleted user data config of "
-								+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + " .");
+								+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + ".");
 						currFile.delete();
 					}
 				}
