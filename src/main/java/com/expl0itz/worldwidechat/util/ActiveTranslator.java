@@ -12,7 +12,7 @@ public class ActiveTranslator {
 	private String rateLimitPreviousTime = "None";
 
 	private boolean hasBeenShownColorCodeWarning = false;
-	private boolean translatingChat = false;
+	private boolean translatingChat = true;
 	private boolean translatingBook = false;
 	private boolean translatingSign = false;
 	private boolean translatingItem = false;
@@ -23,7 +23,6 @@ public class ActiveTranslator {
 		playerUUID = uuid;
 		inLangCode = langIn;
 		outLangCode = langOut;
-		translatingChat = true;
 	}
 
 	/* Setters */
