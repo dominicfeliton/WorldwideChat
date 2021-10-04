@@ -208,6 +208,7 @@ Messages:
   wwctGUISignButton: 'Toggle Sign Translation'
   wwctGUIItemButton: 'Toggle Item Translation'
   wwctGUIEntityButton: 'Toggle Entity Translation'
+  wwctGUIChatButton: 'Toggle Chat Translation'
   wwctGUIAutoDetectButton: 'Auto-detect Source Language'
   wwctGUINewTranslationTarget: 'Choose a Target Language'
   wwctGUIConversationRateLimit: 'The rate limit per translation is currently %i seconds. Type anything greater than 0 to set a new value, or type 0 to disable the limit. Type anything less than 0 to go back.'
@@ -229,11 +230,16 @@ Messages:
   wwctiOffSender: 'Item translation disabled.'
   wwctiOnTarget: 'Item translation enabled for %i.'
   wwctiOffTarget: 'Item translation disabled for %i.'
-    #------------------- /wwcte Messages ------------------
+  #------------------- /wwcte Messages ------------------
   wwcteOnSender: 'Entity translation enabled. Right-click on an entity to translate its name!'
   wwcteOffSender: 'Entity translation disabled.'
   wwcteOnTarget: 'Entity translation enabled for %i.'
   wwcteOffTarget: 'Entity translation disabled for %i.'
+  #------------------- /wwctc Messages ------------------
+  wwctcOnSender: 'Chat translation enabled. Anything you say will be translated!'
+  wwctcOffSender: 'Chat translation disabled.'
+  wwctcOnTarget: 'Chat translation enabled for %i.'
+  wwctcOffTarget: 'Chat translation disabled for %i.'
   #------------------- /wwcg Messages -------------------
   wwcgTranslationStopped: 'Global chat translation has been stopped.'
   wwcgAutoTranslateStart: 'Now translating global chat to %o.'

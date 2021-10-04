@@ -5,6 +5,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
 
@@ -16,12 +17,15 @@ public class DeluxeChatListener implements Listener {
     
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onDeluxeChat(DeluxeChatEvent event) { 
-        if (!main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("") || !main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")) {
+    	ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
+		if ((!currTranslator.getUUID().equals("") && currTranslator.getTranslatingChat())
+				|| (!main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("") && !main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChat())) {
         	PlayerRecord currRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
         	currRecord.setAttemptedTranslations(currRecord.getAttemptedTranslations()+1);
         	String out = CommonDefinitions.translateText(event.getChatMessage(), event.getPlayer());
             
             // This method gets called in addition to the main chat thread, so we are adding stats manually.
+        	// Oh, and this fucking sucks. It looks like shit. Why do I have to do this?
             currRecord.setSuccessfulTranslations(currRecord.getSuccessfulTranslations()+1);
             
             event.setChatMessage(out);

@@ -230,7 +230,7 @@ public class TranslateInGameListener implements Listener {
 							
 							/* Version Check: For 1.13 and below compatibility */
 							try {
-								Player.class.getMethod("sendSignChange", Location.class, String.class);
+								Player.class.getMethod("sendSignChange", Location.class, String[].class);
 							} catch (Exception e) {
 								textLimit = true;
 								// Always send the user the result via chat. sendSignChange() does not exist in Player.class before 1.14.

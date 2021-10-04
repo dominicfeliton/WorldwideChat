@@ -351,6 +351,9 @@ public class ConfigurationHandler {
 		userSettingsConfig.createSection("entityTranslation");
 		userSettingsConfig.set("entityTranslation", inTranslator.getTranslatingEntity());
 		
+		userSettingsConfig.createSection("chatTranslation");
+		userSettingsConfig.set("chatTranslation", inTranslator.getTranslatingChat());
+		
 		userSettingsConfig.createSection("rateLimit");
 		userSettingsConfig.set("rateLimit", inTranslator.getRateLimit());
 

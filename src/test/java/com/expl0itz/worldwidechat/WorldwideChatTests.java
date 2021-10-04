@@ -52,6 +52,8 @@ public class WorldwideChatTests {
 		playerMock.addAttachment(plugin, "worldwidechat.wwcti.otherplayers", true);
 		playerMock.addAttachment(plugin, "worldwidechat.wwcte", true);
 		playerMock.addAttachment(plugin, "worldwidechat.wwcte.otherplayers", true);
+		playerMock.addAttachment(plugin, "worldwidechat.wwctc", true);
+		playerMock.addAttachment(plugin, "worldwidechat.wwctc.otherplayers", true);
 		playerMock.addAttachment(plugin, "worldwidechat.wwctrl", true);
 		playerMock.addAttachment(plugin, "worldwidechat.wwcs", true);
 		secondPlayerMock.addAttachment(plugin, "worldwidechat.wwct", true);
@@ -120,6 +122,12 @@ public class WorldwideChatTests {
 		testPlayerCommands.testEntityTranslateCommandPlayerOther(false);
 		testPlayerCommands.testEntityTranslateCommandPlayerOtherButSamePlayer(true);
 		testPlayerCommands.testEntityTranslateCommandPlayerOtherButSamePlayer(false);
+		testPlayerCommands.testChatTranslateCommandPlayer(false);
+		testPlayerCommands.testChatTranslateCommandPlayer(true);
+		testPlayerCommands.testChatTranslateCommandPlayerOther(false);
+		testPlayerCommands.testChatTranslateCommandPlayerOther(true);
+		testPlayerCommands.testChatTranslateCommandPlayerOtherButSamePlayer(false);
+		testPlayerCommands.testChatTranslateCommandPlayerOtherButSamePlayer(true);
 		testPlayerCommands.testRateLimitTranslateCommandPlayer(true);
 		testPlayerCommands.testRateLimitTranslateCommandPlayer(false);
 		testPlayerCommands.testRateLimitTranslateCommandPlayerOther(true);

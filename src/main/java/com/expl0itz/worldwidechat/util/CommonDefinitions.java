@@ -469,7 +469,7 @@ public class CommonDefinitions {
 				}
 			}.runTask(WorldwideChat.getInstance());
 		} catch (IllegalPluginAccessException e) {
-			CommonDefinitions.sendDebugMessage("Server is stopping! Don't run this task/do any dumb shit.");
+			CommonDefinitions.sendDebugMessage("Server is stopping! Don't run a task/do any dumb shit.");
 			return true;
 		}
 		return false;
