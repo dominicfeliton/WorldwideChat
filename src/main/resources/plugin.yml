@@ -1,5 +1,5 @@
 name: WorldwideChat
-version: 1.7.0
+version: 1.6.5
 api-version: 1.13
 description: Break the blocky language barrier!
 author: 3xpl0itz
@@ -115,7 +115,7 @@ permissions:
         description: Gives access to /wwct.
         default: true
     worldwidechat.wwct.otherplayers:
-        description: Gives access to /wwct to a certain language on target players.
+        description: Gives access to /wwct on target players.
         default: op
     worldwidechat.chatupdate:
         description: Gives access to receiving of plugin update notification in chat on login.
