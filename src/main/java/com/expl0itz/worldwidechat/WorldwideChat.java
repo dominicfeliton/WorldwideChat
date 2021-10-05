@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.TimeUnit;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -86,7 +87,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	private String pluginLang = "en";
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "1052021-1"; //This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "1052021-2"; //This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	/* Default constructor */
@@ -264,22 +265,40 @@ public class WorldwideChat extends JavaPlugin {
 
 	/* Easy Reload Method */
 	public void reload(CommandSender inSender) {
+		/* Send start reload message */
+		if (inSender != null) {
+			final TextComponent wwcrBegin = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcrBegin"))
+							.color(NamedTextColor.YELLOW))
+					.build();
+			CommonDefinitions.sendMessage(inSender, wwcrBegin);
+		}
+		
+		/* Put plugin into a reloading state */
 		errorCount = 0;
 		if (!translatorName.equals("Invalid")) {
 			translatorName = "Starting";
 		}
 		CommonDefinitions.closeAllInventories();
-
+		
+		/* Once it is safe to, cancelBackgroundTasks and loadPluginConfigs async so we don't stall the main thread */
 		new BukkitRunnable() {
 			@Override
 			public void run() {
+				final long currentDuration = System.nanoTime();
 				cancelBackgroundTasks(true);
 				loadPluginConfigs(true);
+				
+				/* Send successfully reloaded message */
 				if (inSender != null) {
 					final TextComponent wwcrSuccess = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwcrSuccess"))
 									.color(NamedTextColor.GREEN))
+							.append(Component.text()
+									.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
+									.color(NamedTextColor.YELLOW))
 							.build();
 					CommonDefinitions.sendMessage(inSender, wwcrSuccess);
 				}

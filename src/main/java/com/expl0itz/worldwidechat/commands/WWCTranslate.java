@@ -201,8 +201,8 @@ public class WWCTranslate extends BasicCommand {
 			CommonDefinitions.sendMessage(sender, playerNotFound);
 			return false;
 		}
-		/* Check if user is targetting themselves, which doesn't need this permission (or if we are console) */
 		
+		/* Check if user is targetting themselves, which doesn't need this permission (or if we are console) */
 		boolean targetIsSelf = !isConsoleSender ? inUUID.equals((((Player)sender)).getUniqueId().toString()) : false;
 		if (!isGlobal && !targetIsSelf && !sender.hasPermission("worldwidechat.wwct.otherplayers")) {
 			final TextComponent badPerms = Component.text()
