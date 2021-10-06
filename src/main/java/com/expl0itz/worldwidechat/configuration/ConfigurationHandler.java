@@ -384,7 +384,7 @@ public class ConfigurationHandler {
 		userStatsConfig.set("successfulTranslations", inRecord.getSuccessfulTranslations());
 
 		saveCustomConfig(userStatsConfig, userStatsFile, false);
-	}	
+	}
 	
 	/* Main config save method */
 	public void saveMainConfig(boolean async) {
