@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Fassara littafin manufa...
   wwcConfigDisabledbStats: bStats da aka kashe.
   wwctsOffSender: An kashe fassarar hannu.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Ana fassara hirar duniya,
-    amma ana fassara hirar ku daga %i zuwa %o.
   wwcUpdaterParserFailed: An kasa yin amfani da bayanan sabuntawa daga Github.
-  wwctAutoTranslateStart: Yanzu fassara duk hirar ku zuwa %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Maɓallin asiri na yanzu shine
     %i. Da fatan za a shigar da maɓallin asiri don Amazon, ko rubuta 0 don komawa.
   wwctbOffSender: Fassarar littafi nakasassu.
   wwcConfigGUIAmazonTranslateButton: Fassara Amazon
   wwcConfigConversationLangSuccess: Harshen plugin ya canza nasara.
   wwcsSuccessfulTranslations: 'Fassara masu nasara: %i'
-  wwctTranslationStoppedOtherPlayer: An dakatar da fassarar hira domin %i.
   wwcConfigConversationTranslationCacheInput: Iyakar cache na fassara na yanzu shine
     kalmomin %i. Rubuta wani abu mafi girma fiye da 0 don saita sabon darajar, ko
     rubuta 0 don musaki cache fassarar. Rubuta wani abu kasa da 0 don komawa.
@@ -57,14 +53,11 @@ Messages:
     taimaka wa mai fassara ɗaya kawai a cikin daidaitawa.yml.
   wwcConfigGUIQuitButton: Fita & Ajiye Canje-canje
   wwctPlayerNotFound: Mai wasa %Ban samu ba.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Ana fassara hira ta
-    duniya, amma ana fassara hira zuwa %o.
   wwcConfigGUIAmazonTranslateRegionButton: Canja Yankin Amazon
   wwcConfigConversationLangInput: 'Harshen plugin na yanzu shine %i. Da fatan za a
     shigar da lambar harshe mai inganci, ko rubuta 0 don sokewa. Lambobin harshe masu
     inganci: %o'
   wwcConfigConversationLangInvalid: Lambar harshe mara inganci!
-  wwctTranslationStopped: An dakatar da fassarar hirar ku.
   wwcConfigGUIWatsonAPIKeyButton: Canja Maɓallin Watson API
   wwcEnabled: An kunna versionWideChat na Duniya %i.
   wwcgLangToLangStart: Yanzu ana fassara hira ta duniya dag %i zuwa %o.
@@ -83,7 +76,6 @@ Messages:
     za a shigar da maɓallin API don Watson, ko rubuta 0 don komawa.
   wwctGUIStopButton: Dakatar da fassara
   wwcgTranslationStopped: An dakatar da fassarar hira ta duniya.
-  wwctAutoTranslateStartOtherPlayer: Yanzu ana fassara hirar na %i zuwa %o.
   wwcUpdaterFutureDate: Wannan misali na WorldwideChat yana da mafi girma fiye da
     sabon jama'a.
   wwcConfigConversationPrefixSuccess: Prefix ya canza nasara.
@@ -93,7 +85,6 @@ Messages:
   wwcConfigCacheDisabled: An kashe cache mai fassara.
   wwcConfigConversationWatsonURLInput: URL na yanzu shine %i. Da fatan za a shigar
     da adireshin sabis don Watson, ko rubuta 0 don komawa.
-  wwcOnJoinTranslationNotificationSourceLang: Ana fassara hirar ku daga %i zuwa %o.
   wwcBookDone: Littafin da aka fassara cikin nasara.
   wwctsOnSender: An kunna fassarar shiga. Danna-dama a kan alamar don fassara shi!
   watsonColorCodeWarning: Yin amfani da lambobin launi na iya ba ku sakamakon da ba
@@ -118,11 +109,9 @@ Messages:
   wwcConfigGUIPrefixButton: Canja Prefix Plugin
   wwctSameLangError: Ba za ku iya fassara zuwa wannan harshe ba!
   wwctGUINewTranslationTarget: Zabi Harshen Target
-  wwctLangToLangStartOtherPlayer: Yanzu ana fassara hirar na %o daga %i zuwa %e.
   wwcConfigConnectionSuccess: An haɗa nasarar zuwa %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Shin Mai Aiki Mai Fassara: %i'
-  wwctLangToLangStart: Yanzu ana fassara duk hirar ku daga %i zuwa %o.
   wwcConfigConversationPrefixInput: Shafin farko na yanzu shi ne %i. Da fatan za a
     rubuta sabon abu, ko rubuta 0 don komawa.
   wwcConfigGUIPreviousPageButton: Shafin baya
@@ -158,7 +147,6 @@ Messages:
   wwcRateLimit: Fassararku suna iyakance. Da fatan za a jira wanin %i seconds.
   wwcConfigCacheEnabled: An kunna cache mai fassara kuma an saita zuwa iyaka na %i.
   wwctGUIExistingTranslationButton: Coverwrite Translation Session
-  wwcOnJoinTranslationNotificationNoSourceLang: Ana fassara hirar ku zuwa %o.
   wwcUserDataReloaded: An ɗora duk bayanan mai amfani da aka ajiye.
   wwcConfigGUISendTranslationChatButton: Aika Tunatarwa Taɗi ga Mai fassara mai aiki
     a kan Shiga
@@ -190,7 +178,6 @@ Messages:
     bayanan mai amfani shine %i seconds. Rubuta wani abu mafi girma fiye da 10 don
     saita sabon darajar, ko wani abu kasa da 10 don komawa.
   wwcConfigGUISyncUserDataButton: Canja Sync Bayanan Mai amfani
-  wwcConfigSyncTime: Sync bayanan mai amfani na atomatik ya kammala cikin %i nanosconds
   wwcConfigSyncDelayEnabled: Jinkirta sync bayanan mai amfani zuwa %i seconds.
   wwcConfigConversationSyncUserDataDelaySuccess: Sync data sync jinkirta saita nasara.
   wwcConfigSyncDelayInvalid: Sync mai amfani da bayanai mara amfani da aka saita a
@@ -307,7 +294,27 @@ Messages:
   wwcteOffSender: An kashe fassarar haɗin kai.
   wwctGUIEntityButton: Fassarar Kunshiya
   wwcConfigConversationResponseLimitSuccess: An saita lokacin amsawa cikin nasara.
-  wwctCannotTranslateConsole: Ba za ku iya fassara na'ura mai kwakwalwa ba!
   wwctrlRateLimitBadInt: Iyakar kuɗin ku ba wata lamba mai inganci ba ce.
   wwcTranslatorErrorConsole: Wata matsala ta zama yayin da mai amfani %i yake ƙoƙarin
     fassararsu. Da fatan za a duba errorLog.txt don ƙarin bayani.
+  wwctcOffSender: Fassarar hira nakasassu.
+  wwctcOnTarget: Fassarar hira ta kunna da %i.
+  wwctcOnSender: An kunna fassarar hira. Duk wani abu da ka ce za a fassara shi!
+  wwctGUIChatButton: Fassarar Taɗi
+  wwctcOffTarget: Fassarar hira ta nakasa da %i.
+  wwcrBegin: Sake sauke WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: An dakatar da zaman fassara da %i.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Ana fassara tattaunawar
+    duniya, amma kuna da zaman fassara mai aiki daga %i zuwa %o.
+  wwctCannotTranslateConsole: Ba za ku iya fara zaman fassara ba don na'ura mai kwakwalwa!
+  wwctLangToLangStart: Fara sabon zaman fassara daga %i zuwa %o.
+  wwcOnJoinTranslationNotificationSourceLang: Kana da zaman fassara mai aiki daga
+    %i zuwa %o.
+  wwctAutoTranslateStartOtherPlayer: Fara sabon zaman fassara na %i zuwa %o.
+  wwctTranslationStopped: An dakatar da zaman fassararka.
+  wwctLangToLangStartOtherPlayer: Fara sabon zaman fassara na %o daga %i zuwa %e.
+  wwctAutoTranslateStart: Fara sabon zaman fassara zuwa %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Kana da zaman fassara mai aiki zuwa
+    %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Ana fassara tattaunawar
+    duniya, amma kuna da zaman fassara mai aiki zuwa %o.

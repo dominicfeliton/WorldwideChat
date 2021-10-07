@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Menerjemahkan buku target...
   wwcConfigDisabledbStats: bStats dinonaktifkan.
   wwctsOffSender: Menandatangani terjemahan dinonaktifkan.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Obrolan global sedang
-    diterjemahkan, tetapi chat Anda sedang diterjemahkan dari %i ke %o.
   wwcUpdaterParserFailed: Gagal mengurai data pembaruan dari Github.
-  wwctAutoTranslateStart: Sekarang menerjemahkan semua obrolan Anda ke %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Kunci rahasia saat ini adalah
     %i. Harap masukan kunci rahasia untuk Amazon, atau ketik 0 untuk kembali.
   wwctbOffSender: Terjemahan buku dinonaktifkan.
   wwcConfigGUIAmazonTranslateButton: Amazon Terjemahkan
   wwcConfigConversationLangSuccess: Bahasa plugin berhasil diubah.
   wwcsSuccessfulTranslations: 'Terjemahan Berhasil: %i'
-  wwctTranslationStoppedOtherPlayer: Terjemahan obrolan untuk %i telah dihentikan.
   wwcConfigConversationTranslationCacheInput: Batas tembolok terjemahan saat ini adalah
     %i frase. Ketik apa pun yang lebih besar dari 0 untuk menetapkan nilai baru, atau
     ketik 0 untuk menonaktifkan tembolok terjemahan. Ketik apa pun kurang dari 0 untuk
@@ -59,14 +55,11 @@ Messages:
     hanya satu penerjemah di config.ymlmu.
   wwcConfigGUIQuitButton: Keluar & Simpan Perubahan
   wwctPlayerNotFound: Pemain %i tidak ditemukan.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat sedang diterjemahkan,
-    tetapi chat Anda sedang diterjemahkan ke %o.
   wwcConfigGUIAmazonTranslateRegionButton: Ubah Wilayah Amazon
   wwcConfigConversationLangInput: 'Bahasa plugin saat ini adalah %i. Harap masukkan
     kode bahasa yang valid, atau ketik 0 untuk dibatalkan. Kode bahasa yang valid:
     %o'
   wwcConfigConversationLangInvalid: Kode bahasa tidak valid!
-  wwctTranslationStopped: Terjemahan chat Anda telah dihentikan.
   wwcConfigGUIWatsonAPIKeyButton: Ubah Kunci API Watson
   wwcEnabled: Diaktifkan WorldwideChat versi %i.
   wwcgLangToLangStart: Sekarang menerjemahkan obrolan global dari %i ke %o.
@@ -86,7 +79,6 @@ Messages:
     kunci API untuk Watson, atau ketik 0 untuk kembali.
   wwctGUIStopButton: Berhenti Menerjemahkan
   wwcgTranslationStopped: Terjemahan obrolan global telah dihentikan.
-  wwctAutoTranslateStartOtherPlayer: Sekarang menerjemahkan obrolan dari %i ke %o.
   wwcUpdaterFutureDate: Contoh WorldwideChat ini memiliki versi yang lebih besar dari
     versi publik terbaru.
   wwcConfigConversationPrefixSuccess: Awalan berhasil diubah.
@@ -97,8 +89,6 @@ Messages:
   wwcConfigCacheDisabled: Cache penerjemah dinonaktifkan.
   wwcConfigConversationWatsonURLInput: URL saat ini adalah %i. Harap masukan URL layanan
     untuk Watson, atau ketik 0 untuk kembali.
-  wwcOnJoinTranslationNotificationSourceLang: Obrolan Anda sedang diterjemahkan dari
-    %i ke %o.
   wwcBookDone: Buku berhasil diterjemahkan.
   wwctsOnSender: Menandatangani terjemahan diaktifkan. Klik kanan pada tanda untuk
     menerjemahkannya!
@@ -123,12 +113,9 @@ Messages:
   wwcConfigGUIPrefixButton: Ubah Awalan Plugin
   wwctSameLangError: Anda tidak dapat menerjemahkan ke bahasa yang sama!
   wwctGUINewTranslationTarget: Pilih Bahasa Target
-  wwctLangToLangStartOtherPlayer: Sekarang menerjemahkan obrolan dari %o dari %i ke
-    %e.
   wwcConfigConnectionSuccess: Berhasil terhubung ke %o!
   wwcConfigGUIGoogleTranslateButton: Google Terjemahkan
   wwcsIsActiveTranslator: 'Adalah Penerjemah Aktif: %i'
-  wwctLangToLangStart: Sekarang menerjemahkan semua obrolan anda dari %i ke %o.
   wwcConfigConversationPrefixInput: Awalan saat ini adalah %i. Harap ketik yang baru,
     atau ketik 0 untuk kembali.
   wwcConfigGUIPreviousPageButton: Halaman Sebelumnya
@@ -164,8 +151,6 @@ Messages:
     detik.
   wwcConfigCacheEnabled: Cache penerjemah diaktifkan dan disetel ke batas %i.
   wwctGUIExistingTranslationButton: Timpa Sesi Terjemahan Saat Ini
-  wwcOnJoinTranslationNotificationNoSourceLang: Obrolan Anda sedang diterjemahkan
-    ke %o.
   wwcUserDataReloaded: Dimuatkan semua data pengguna yang disimpan.
   wwcConfigGUISendTranslationChatButton: Kirim Pengingat Chat ke Penerjemah Aktif
     saat Masuk
@@ -195,7 +180,6 @@ Messages:
     data pengguna adalah %i detik. Ketik apa pun yang lebih besar dari 10 untuk menetapkan
     nilai baru, atau apa pun kurang dari 10 untuk kembali.
   wwcConfigGUISyncUserDataButton: Ubah Keterlambatan Sinkronisasi Data Pengguna
-  wwcConfigSyncTime: Sinkronisasi data pengguna otomatis selesai dalam %i nanodetik.
   wwcConfigSyncDelayEnabled: Keterlambatan per sinkronisasi data pengguna diset ke
     %i detik.
   wwcConfigConversationSyncUserDataDelaySuccess: Penundaan sinkronisasi data pengguna
@@ -314,7 +298,28 @@ Messages:
   wwcteOffSender: Terjemahan entitas dinonaktifkan.
   wwctGUIEntityButton: Alihkan Terjemahan Entitas
   wwcConfigConversationResponseLimitSuccess: Batas waktu respons berhasil ditetapkan.
-  wwctCannotTranslateConsole: Anda tidak dapat menerjemahkan obrolan konsol!
   wwctrlRateLimitBadInt: Batas tingkat Anda bukan bilangan bulat yang valid.
   wwcTranslatorErrorConsole: Sebuah masalah terjadi ketika pengguna %i mencoba terjemahan
     mereka. Silakan periksa errorLog.txt untuk lebih jelasnya.
+  wwctcOffSender: Terjemahan obrolan dinonaktifkan.
+  wwctcOnTarget: Terjemahan obrolan diaktifkan untuk %i.
+  wwctcOnSender: Terjemahan obrolan diaktifkan. Apa pun yang Anda katakan akan diterjemahkan!
+  wwctGUIChatButton: Toggle Terjemahan Obrolan
+  wwctcOffTarget: Terjemahan obrolan dinonaktifkan untuk %i.
+  wwcrBegin: Memuat ulang WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Sesi terjemahan untuk %i telah dihentikan.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Obrolan global sedang
+    diterjemahkan, tetapi Anda memiliki sesi terjemahan aktif dari %i ke %o.
+  wwctCannotTranslateConsole: Anda tidak dapat memulai sesi terjemahan untuk konsol!
+  wwctLangToLangStart: Memulai sesi terjemahan baru dari %i ke %o.
+  wwcOnJoinTranslationNotificationSourceLang: Anda memiliki sesi terjemahan aktif
+    dari %i ke %o.
+  wwctAutoTranslateStartOtherPlayer: Memulai sesi terjemahan baru untuk %i ke %o.
+  wwctTranslationStopped: Sesi terjemahan Anda telah dihentikan.
+  wwctLangToLangStartOtherPlayer: Memulai sesi terjemahan baru untuk %o dari %i ke
+    %e.
+  wwctAutoTranslateStart: Memulai sesi terjemahan baru ke %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Anda memiliki sesi terjemahan aktif
+    ke %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat sedang diterjemahkan,
+    tetapi Anda memiliki sesi terjemahan aktif ke %o.

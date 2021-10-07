@@ -24,10 +24,7 @@ Messages:
   wwcBookTranslateStart: ಗುರಿ ಪುಸ್ತಕವನ್ನು ಅನುವಾದಿಸುವುದು...
   wwcConfigDisabledbStats: ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ bStats.
   wwctsOffSender: ಸೈನ್ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ,
-    ಆದರೆ ನಿಮ್ಮ ಚಾಟ್ ಅನ್ನು %i ನಿಂದ %o ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.
   wwcUpdaterParserFailed: Github ನಿಂದ ಅಪ್ಡೇಟ್ ಡೇಟಾವನ್ನು ಪಾರ್ಸ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ.
-  wwctAutoTranslateStart: ಈಗ ನಿಮ್ಮ ಎಲ್ಲಾ ಚಾಟ್ ಅನ್ನು %o ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.
   wwcConfigConversationAmazonTranslateSecretKeyInput: ಪ್ರಸ್ತುತ ರಹಸ್ಯ ಕೀಲಿಯು %i ಆಗಿದೆ.
     ದಯವಿಟ್ಟು ಅಮೆಜಾನ್ಗೆ ಒಂದು ರಹಸ್ಯ ಕೀಲಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವ ಹಿಂದಕ್ಕೆ ಹೋಗಲು 0 ಅನ್ನು
     ಟೈಪ್ ಮಾಡಿ.
@@ -35,7 +32,6 @@ Messages:
   wwcConfigGUIAmazonTranslateButton: ಅಮೆಜಾನ್ ಭಾಷಾಂತರಿಸಿ
   wwcConfigConversationLangSuccess: ಪ್ಲಗಿನ್ ಭಾಷೆ ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಗಿದೆ.
   wwcsSuccessfulTranslations: 'ಯಶಸ್ವಿ ಅನುವಾದಗಳು: %i'
-  wwctTranslationStoppedOtherPlayer: '%i ಗಾಗಿ ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ.'
   wwcConfigConversationTranslationCacheInput: ಪ್ರಸ್ತುತ ಅನುವಾದ ಸಂಗ್ರಹ ಮಿತಿ %i ನುಡಿಗಟ್ಟುಗಳು.
     ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 0 ಗಿಂತ ಹೆಚ್ಚಿನದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಅನುವಾದ ಸಂಗ್ರಹವನ್ನು
     ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲು 0 ಅನ್ನು ಟೈಪ್ ಮಾಡಿ. ಹಿಂತಿರುಗಿ 0 ಗಿಂತ ಕಡಿಮೆಯಿರುವ ಯಾವುದನ್ನಾದರೂ ಟೈಪ್
@@ -59,14 +55,11 @@ Messages:
     config.yml ನಲ್ಲಿ ಕೇವಲ ಒಂದು ಅನುವಾದಕವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.
   wwcConfigGUIQuitButton: ನಿರ್ಗಮಿಸಿ & ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ
   wwctPlayerNotFound: ಆಟಗಾರ % ನಾನು ಕಂಡುಬಂದಿಲ್ಲ.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ,
-    ಆದರೆ ನಿಮ್ಮ ಚಾಟ್ ಅನ್ನು %o ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.
   wwcConfigGUIAmazonTranslateRegionButton: ಅಮೆಜಾನ್ ಪ್ರದೇಶವನ್ನು ಬದಲಿಸಿ
   wwcConfigConversationLangInput: 'ಪ್ರಸ್ತುತ ಪ್ಲಗ್ಇನ್ ಭಾಷೆ %i ಆಗಿದೆ. ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ
     ಭಾಷಾ ಸಂಕೇತವನ್ನು ನಮೂದಿಸಿ, ಅಥವ 0 ಅನ್ನು ರದ್ದುಗೊಳಿಸಲು ಟೈಪ್ ಮಾಡಿ. ಮಾನ್ಯ ಭಾಷಾ ಸಂಕೇತಗಳು:
     %o'
   wwcConfigConversationLangInvalid: ಅಮಾನ್ಯ ಭಾಷಾ ಕೋಡ್!
-  wwctTranslationStopped: ನಿಮ್ಮ ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ.
   wwcConfigGUIWatsonAPIKeyButton: ವ್ಯಾಟ್ಸನ್ ಎಪಿಐ ಕೀ ಬದಲಾಯಿಸಿ
   wwcEnabled: ಸಕ್ರಿಯಗೊಳಿಸಿದ ವಿಶ್ವವೈಡೆಚಾಟ್ ಆವೃತ್ತಿ %i.
   wwcgLangToLangStart: ಈಗ ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು %i ನಿಂದ %o ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.
@@ -85,7 +78,6 @@ Messages:
     ಒಂದು API ಕೀಲಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವ ಹಿಂದಕ್ಕೆ ಹೋಗಲು 0 ಅನ್ನು ಟೈಪ್ ಮಾಡಿ.
   wwctGUIStopButton: ಭಾಷಾಂತರಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ
   wwcgTranslationStopped: ಜಾಗತಿಕ ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ.
-  wwctAutoTranslateStartOtherPlayer: ಈಗ %i ನ ಚಾಟ್ ಅನ್ನು %o ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.
   wwcUpdaterFutureDate: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ನ ಈ ಉದಾಹರಣೆಯು ಇತ್ತೀಚಿನ ಸಾರ್ವಜನಿಕಕ್ಕಿಂತ ಹೆಚ್ಚಿನ
     ಆವೃತ್ತಿಯನ್ನು ಹೊಂದಿದೆ.
   wwcConfigConversationPrefixSuccess: ಪೂರ್ವಪ್ರತ್ಯಯ ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಗಿದೆ.
@@ -96,7 +88,6 @@ Messages:
   wwcConfigCacheDisabled: ಅನುವಾದಕ ಸಂಗ್ರಹ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwcConfigConversationWatsonURLInput: ಪ್ರಸ್ತುತ URL %i ಆಗಿದೆ. ದಯವಿಟ್ಟು ವ್ಯಾಟ್ಸನ್ಗಾಗಿ
     ಒಂದು ಸೇವಾ URL ಅನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವ ಹಿಂದಕ್ಕೆ ಹೋಗಲು 0 ಅನ್ನು ಟೈಪ್ ಮಾಡಿ.
-  wwcOnJoinTranslationNotificationSourceLang: ನಿಮ್ಮ ಚಾಟ್ ಅನ್ನು %i ನಿಂದ %o ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.
   wwcBookDone: ಪುಸ್ತಕ ಯಶಸ್ವಿಯಾಗಿ ಅನುವಾದಿಸಲಾಗಿದೆ.
   wwctsOnSender: ಸೈನ್ ಅನುವಾದ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ಅದನ್ನು ಭಾಷಾಂತರಿಸಲು ಚಿಹ್ನೆಯ ಮೇಲೆ ಬಲ
     ಕ್ಲಿಕ್ ಮಾಡಿ!
@@ -122,11 +113,9 @@ Messages:
   wwcConfigGUIPrefixButton: ಪ್ಲಗಿನ್ ಪೂರ್ವಪ್ರತ್ಯಯ ಬದಲಾಯಿಸಿ
   wwctSameLangError: ನೀವು ಒಂದೇ ಭಾಷೆಗೆ ಭಾಷಾಂತರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ!
   wwctGUINewTranslationTarget: ಟಾರ್ಗೆಟ್ ಭಾಷೆಯನ್ನು ಆರಿಸಿ
-  wwctLangToLangStartOtherPlayer: ಈಗ %o ನ ಚಾಟ್ ಅನ್ನು %i ನಿಂದ %e ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.
   wwcConfigConnectionSuccess: '%o ಗೆ ಯಶಸ್ವಿಯಾಗಿ ಸಂಪರ್ಕಗೊಂಡಿದೆ!'
   wwcConfigGUIGoogleTranslateButton: ಗೂಗಲ್ ಭಾಷಾಂತರಿಸಿ
   wwcsIsActiveTranslator: 'ಸಕ್ರಿಯ ಅನುವಾದಕ: %i'
-  wwctLangToLangStart: ಈಗ ನಿಮ್ಮ ಎಲ್ಲಾ ಚಾಟ್ ಅನ್ನು %i ನಿಂದ %o ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.
   wwcConfigConversationPrefixInput: ಪ್ರಸ್ತುತ ಪೂರ್ವಪ್ರತ್ಯಯವು %i ಆಗಿದೆ. ದಯವಿಟ್ಟು ಹೊಸದನ್ನು
     ಟೈಪ್ ಮಾಡಿ, ಅಥವ ಹಿಂದಕ್ಕೆ ಹೋಗಲು 0 ಅನ್ನು ಟೈಪ್ ಮಾಡಿ.
   wwcConfigGUIPreviousPageButton: ಹಿಂದಿನ ಪುಟ
@@ -166,7 +155,6 @@ Messages:
     ಕಾಯಿರಿ.
   wwcConfigCacheEnabled: ಅನುವಾದಕ ಸಂಗ್ರಹವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದ್ದು, %i ನ ಮಿತಿಗೆ ಹೊಂದಿಸಲಾಗಿದೆ.
   wwctGUIExistingTranslationButton: ಪ್ರಸ್ತುತ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ತಿದ್ದಿ ಬರೆಯಿರಿ
-  wwcOnJoinTranslationNotificationNoSourceLang: ನಿಮ್ಮ ಚಾಟ್ ಅನ್ನು %o ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.
   wwcUserDataReloaded: ಎಲ್ಲಾ ಉಳಿಸಿದ ಬಳಕೆದಾರ ಡೇಟಾವನ್ನು ಲೋಡ್ ಮಾಡಲಾಗಿದೆ.
   wwcConfigGUISendTranslationChatButton: ಲಾಗಿನ್ ನಲ್ಲಿ ಸಕ್ರಿಯ ಅನುವಾದಕರಿಗೆ ಚಾಟ್ ಜ್ಞಾಪನೆ
     ಕಳುಹಿಸಿ
@@ -197,7 +185,6 @@ Messages:
     ವಿಳಂಬ %i ಸೆಕೆಂಡುಗಳು. ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 10 ಗಿಂತ ಹೆಚ್ಚಿನದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ
     10 ಗಿಂತ ಕಡಿಮೆ ಏನು ಹಿಂತಿರುಗಿ.
   wwcConfigGUISyncUserDataButton: ಬಳಕೆದಾರ ಡೇಟಾ ಸಿಂಕ್ ವಿಳಂಬ ಬದಲಾಯಿಸಿ
-  wwcConfigSyncTime: ಸ್ವಯಂಚಾಲಿತ ಬಳಕೆದಾರ ಡೇಟಾ ಸಿಂಕ್ %i ನ್ಯಾನೊಸೆಕೆಂಡುಗಳಲ್ಲಿ ಪೂರ್ಣಗೊಂಡಿದೆ.
   wwcConfigSyncDelayEnabled: ಬಳಕೆದಾರ ಡೇಟಾ ಸಿಂಕ್ ಪ್ರತಿ ವಿಳಂಬ %i ಸೆಕೆಂಡುಗಳವರೆಗೆ ಹೊಂದಿಸಲಾಗಿದೆ.
   wwcConfigConversationSyncUserDataDelaySuccess: ಬಳಕೆದಾರ ಡೇಟಾ ಸಿಂಕ್ ವಿಳಂಬವನ್ನು ಯಶಸ್ವಿಯಾಗಿ
     ಹೊಂದಿಸಲಾಗಿದೆ.
@@ -313,7 +300,27 @@ Messages:
   wwcteOffSender: ಘಟಕದ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwctGUIEntityButton: ಟಾಗಲ್ ಎಂಟಿಟಿ ಅನುವಾದ
   wwcConfigConversationResponseLimitSuccess: ಪ್ರತಿಕ್ರಿಯೆ ಕಾಲಾವಧಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
-  wwctCannotTranslateConsole: ನೀವು ಕನ್ಸೋಲ್ ಚಾಟ್ ಅನ್ನು ಭಾಷಾಂತರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ!
   wwctrlRateLimitBadInt: ನಿಮ್ಮ ದರ ಮಿತಿ ಮಾನ್ಯ ಪೂರ್ಣಾಂಕವಲ್ಲ.
   wwcTranslatorErrorConsole: ಬಳಕೆದಾರ %i ಅವರ ಅನುವಾದವನ್ನು ಪ್ರಯತ್ನಿಸುತ್ತಿರುವಾಗ ಒಂದು ಸಮಸ್ಯೆ
     ಎದುರಾಗಿದೆ. ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ ದಯವಿಟ್ಟು errorLog.txt ಅನ್ನು ಪರಿಶೀಲಿಸಿ.
+  wwctcOffSender: ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctcOnTarget: ಚಾಟ್ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctcOnSender: ಚಾಟ್ ಅನುವಾದವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ನೀವು ಹೇಳುವ ಯಾವುದನ್ನಾದರೂ ಅನುವಾದಿಸಲಾಗುತ್ತದೆ!
+  wwctGUIChatButton: ಚಾಟ್ ಅನುವಾದ ಟಾಗಲ್
+  wwctcOffTarget: ಚಾಟ್ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwcrBegin: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ...
+  wwctTranslationStoppedOtherPlayer: '%i ಗಾಗಿ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ,
+    ಆದರೆ ನೀವು %i ನಿಂದ %o ಗೆ ಸಕ್ರಿಯ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಹೊಂದಿದ್ದೀರಿ.
+  wwctCannotTranslateConsole: ಕನ್ಸೋಲ್ಗಾಗಿ ನೀವು ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ!
+  wwctLangToLangStart: '%i ನಿಂದ %o ಗೆ ಹೊಸ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಪ್ರಾರಂಭಿಸುವುದು.'
+  wwcOnJoinTranslationNotificationSourceLang: ನೀವು %i ನಿಂದ %o ಗೆ ಸಕ್ರಿಯ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು
+    ಹೊಂದಿದ್ದೀರಿ.
+  wwctAutoTranslateStartOtherPlayer: '%i ಗೆ %o ಗೆ ಹೊಸ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಪ್ರಾರಂಭಿಸುವುದು.'
+  wwctTranslationStopped: ನಿಮ್ಮ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ.
+  wwctLangToLangStartOtherPlayer: '%i ನಿಂದ %e ಗೆ ಹೊಸ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಪ್ರಾರಂಭಿಸುವುದು.'
+  wwctAutoTranslateStart: '%o ಗೆ ಹೊಸ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಪ್ರಾರಂಭಿಸುವುದು.'
+  wwcOnJoinTranslationNotificationNoSourceLang: ನೀವು %o ಗೆ ಸಕ್ರಿಯ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು
+    ಹೊಂದಿದ್ದೀರಿ.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ,
+    ಆದರೆ ನೀವು %o ಗೆ ಸಕ್ರಿಯ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಹೊಂದಿದ್ದೀರಿ.

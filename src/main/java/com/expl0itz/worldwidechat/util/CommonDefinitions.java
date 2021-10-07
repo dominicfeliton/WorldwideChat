@@ -146,8 +146,8 @@ public class CommonDefinitions {
 		} else {
 			convertedOriginalMessage = WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages." + ChatColor.stripColor(messageName));
 			if (convertedOriginalMessage == null) {
-				WorldwideChat.getInstance().getLogger().severe("Bad message! Please fix your messages-XX.yml.");
-				return ChatColor.RED + "Bad message! Please fix your messages-XX.yml.";
+				WorldwideChat.getInstance().getLogger().severe("Bad message! Please fix your messages-" + WorldwideChat.getInstance().getPluginLang() + ".yml.");
+				return ChatColor.RED + "Bad message! Please fix your messages-" + WorldwideChat.getInstance().getPluginLang() + ".yml.";
 			}
 		}
 		
@@ -469,7 +469,7 @@ public class CommonDefinitions {
 				}
 			}.runTask(WorldwideChat.getInstance());
 		} catch (IllegalPluginAccessException e) {
-			CommonDefinitions.sendDebugMessage("Server is stopping! Don't run this task/do any dumb shit.");
+			CommonDefinitions.sendDebugMessage("Server is stopping! Don't run a task/do any dumb shit.");
 			return true;
 		}
 		return false;

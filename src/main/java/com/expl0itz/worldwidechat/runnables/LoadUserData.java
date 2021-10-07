@@ -74,6 +74,7 @@ public class LoadUserData implements Runnable {
 					&& (!CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("outLang")).getLangCode().equals("")))
 					&& currFileConfig.isBoolean("signTranslation") && currFileConfig.isBoolean("bookTranslation")
 					&& currFileConfig.isBoolean("itemTranslation") && currFileConfig.isBoolean("entityTranslation") 
+					&& currFileConfig.isBoolean("chatTranslation")
 					&& currFileConfig.isInt("rateLimit") && currFileConfig.isString("rateLimitPreviousRecordedTime")) { // If file has proper entries
 				ActiveTranslator currentTranslator = new ActiveTranslator(
 						eaFile.getName().substring(0, eaFile.getName().indexOf(".")), // add active translator to arraylist
@@ -82,6 +83,7 @@ public class LoadUserData implements Runnable {
 				currentTranslator.setTranslatingBook(currFileConfig.getBoolean("bookTranslation"));
 				currentTranslator.setTranslatingItem(currFileConfig.getBoolean("itemTranslation"));
 				currentTranslator.setTranslatingEntity(currFileConfig.getBoolean("entityTranslation"));
+				currentTranslator.setTranslatingChat(currFileConfig.getBoolean("chatTranslation"));
 				currentTranslator.setRateLimit(currFileConfig.getInt("rateLimit"));
 				if (!currFileConfig.getString("rateLimitPreviousRecordedTime").equals("None")) {
 					currentTranslator.setRateLimitPreviousTime(

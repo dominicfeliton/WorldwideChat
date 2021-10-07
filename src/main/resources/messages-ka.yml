@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: სამიზნე წიგნის თარგმნა...
   wwcConfigDisabledbStats: შეზღუდული შესაძლებლობების მქონე bStats.
   wwctsOffSender: შესვლა თარგმანი გამორთულია.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: გლობალური ჩეთი თარგმნილია,
-    მაგრამ თქვენი სტატისტიკა თარგმნა %i-დან %o- დან.
   wwcUpdaterParserFailed: Github- ის განახლების მონაცემების გარჩევა ვერ მოხერხდა.
-  wwctAutoTranslateStart: ახლა თარგმნეთ ყველა თქვენი სტატისტიკა %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: მიმდინარე საიდუმლო გასაღები
     არის %i. გთხოვთ, შეიყვანოთ საიდუმლო გასაღები Amazon- ისთვის, ან ტიპი 0 უკან დასაბრუნებლად.
   wwctbOffSender: წიგნის თარგმანი გამორთულია.
   wwcConfigGUIAmazonTranslateButton: ამაზონის თარგმანი
   wwcConfigConversationLangSuccess: მოდული ენა წარმატებით შეიცვალა.
   wwcsSuccessfulTranslations: 'წარმატებული თარგმანები: %i'
-  wwctTranslationStoppedOtherPlayer: ჩატი თარგმანი %i უკვე შეჩერებულია.
   wwcConfigConversationTranslationCacheInput: მიმდინარე თარგმანის ქეშის ლიმიტი არის
     %i ფრაზებია. აკრიფეთ 0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან ტიპი
     0, რათა გამორთოთ თარგმანის ქეში. ჩაწერეთ 0-ზე ნაკლები დაბრუნება.
@@ -58,13 +54,10 @@ Messages:
     მხოლოდ ერთი თარჯიმანი თქვენს config.yml.
   wwcConfigGUIQuitButton: გასვლისა და ცვლილებების შენახვა
   wwctPlayerNotFound: მოთამაშე %i ვერ მოიძებნა.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: გლობალური სტატისტიკა
-    თარგმნილია, მაგრამ თქვენი სტატისტიკა თარგმნა %o.
   wwcConfigGUIAmazonTranslateRegionButton: ამაზონის რეგიონის შეცვლა
   wwcConfigConversationLangInput: 'მიმდინარე მოდული ენა %i. გთხოვთ შეიყვანოთ სწორი
     ენის კოდი ან ტიპის 0 გასაუქმებლად. სწორი ენის კოდები: %o'
   wwcConfigConversationLangInvalid: არასწორი ენის კოდი!
-  wwctTranslationStopped: თქვენი სტატისტიკა თარგმანი შეწყდა.
   wwcConfigGUIWatsonAPIKeyButton: შეცვალეთ Watson API გასაღები
   wwcEnabled: ჩართულია WorldWidecHat ვერსია %i.
   wwcgLangToLangStart: ახლა გლობალური ჩეთის თარგმნა %i დან %o.
@@ -83,7 +76,6 @@ Messages:
     შეიყვანოთ API გასაღები Watson— ისთვის, ან ტიპის 0 დასაბრუნებლად.
   wwctGUIStopButton: მთარგმნელობის შეჩერება
   wwcgTranslationStopped: გლობალური სტატისტიკა თარგმანი შეწყდა.
-  wwctAutoTranslateStartOtherPlayer: ახლა თარგმნა %i-ს ჩეთი %o.
   wwcUpdaterFutureDate: WorldWidecHat- ის ეს მაგალითი უფრო დიდი ვერსიაა, ვიდრე უახლესი
     საზოგადოება.
   wwcConfigConversationPrefixSuccess: პრეფიქსი წარმატებით შეიცვალა.
@@ -94,8 +86,6 @@ Messages:
   wwcConfigCacheDisabled: თარჯიმანი ქეში გამორთულია.
   wwcConfigConversationWatsonURLInput: მიმდინარე URL არის %i. გთხოვთ, შეიყვანოთ სერვისის
     URL Watson- ისთვის, ან აკრიფეთ 0 უკან დასაბრუნებლად.
-  wwcOnJoinTranslationNotificationSourceLang: თქვენი სტატისტიკა ითარგმნება %i -დან
-    %o- დან.
   wwcBookDone: წიგნი წარმატებით ითარგმნა.
   wwctsOnSender: შესვლა თარგმანი ჩართულია. მარჯვენა ღილაკით ნიშანი თარგმნა!
   watsonColorCodeWarning: ფერადი კოდების გამოყენება შეიძლება არაპროგნოზირებადი შედეგების
@@ -119,11 +109,9 @@ Messages:
   wwcConfigGUIPrefixButton: მოდულის პრეფიქსის შეცვლა
   wwctSameLangError: თქვენ არ შეგიძლიათ თარგმნოთ იმავე ენაზე!
   wwctGUINewTranslationTarget: აირჩიეთ სამიზნე ენა
-  wwctLangToLangStartOtherPlayer: ახლა თარგმნა სტატისტიკა %o დან %e.
   wwcConfigConnectionSuccess: წარმატებით დაკავშირებულია %o!
   wwcConfigGUIGoogleTranslateButton: Google თარგმნა
   wwcsIsActiveTranslator: 'არის აქტიური მთარგმნელი: %i'
-  wwctLangToLangStart: ახლა თარგმნეთ ყველა თქვენი სტატისტიკა %i დან %o.
   wwcConfigConversationPrefixInput: მიმდინარე პრეფიქსი არის %i. გთხოვთ აკრიფოთ ახალი
     ან ტიპი 0, რომ დაბრუნდეთ.
   wwcConfigGUIPreviousPageButton: წინა გვერდი
@@ -160,7 +148,6 @@ Messages:
   wwcRateLimit: თქვენი თარგმანი განაკვეთი შეზღუდულია. გთხოვთ დაელოდოთ სხვა %i წამში.
   wwcConfigCacheEnabled: თარჯიმანი ქეში ჩართულია და დაყენებულია ლიმიტი %i.
   wwctGUIExistingTranslationButton: მთარგმნელობითი მიმდინარე სესიის გადაწერა
-  wwcOnJoinTranslationNotificationNoSourceLang: თქვენი სტატისტიკა თარგმნა %o.
   wwcUserDataReloaded: დატვირთული ყველა შენახული მომხმარებლის მონაცემები.
   wwcConfigGUISendTranslationChatButton: ჩაწერეთ შეხსენება აქტიურ მთარგმნელთან შესვლაზე
   wwcsLastTranslationTime: 'ბოლო (წარმატებული) თარგმანის დრო: %i'
@@ -190,7 +177,6 @@ Messages:
     ან არაფერი ნაკლებია, ვიდრე 10 დაბრუნდეს.
   wwcConfigGUISyncUserDataButton: მომხმარებლის მონაცემთა სინქრონიზაციის შეფერხების
     შეცვლა
-  wwcConfigSyncTime: მომხმარებლის ავტომატური სინქრონიზაცია დასრულებულია %i nanoseconds.
   wwcConfigSyncDelayEnabled: გადადება მომხმარებლის მონაცემების სინქრონიზაცია დაყენებულია
     %i წამში.
   wwcConfigConversationSyncUserDataDelaySuccess: მომხმარებლის მონაცემების სინქრონიზაციის
@@ -307,7 +293,26 @@ Messages:
   wwctGUIEntityButton: სუბიექტური თარგმანის გადართვა
   wwcConfigConversationResponseLimitSuccess: რეაგირების შეყოვნება წარმატებით არის
     მითითებული.
-  wwctCannotTranslateConsole: თქვენ არ შეგიძლიათ თარგმნოთ კონსოლი სტატისტიკა!
   wwctrlRateLimitBadInt: თქვენი კურსის ლიმიტი არ არის სწორი რიცხვი.
   wwcTranslatorErrorConsole: პრობლემა იმართებოდა მომხმარებელი %i მათი თარგმანის მცდელობისას.
     გთხოვთ შეამოწმოთ errorLog.txt უფრო დეტალურად.
+  wwctcOffSender: ჩატი თარგმანი გამორთულია.
+  wwctcOnTarget: ჩეთის თარგმანი ჩართულია %i.
+  wwctcOnSender: ჩატი თარგმანი ჩართულია. ყველაფერი რაც თქვენ ამბობთ იქნება თარგმნილი!
+  wwctGUIChatButton: ჩატის თარგმანის გადართვა
+  wwctcOffTarget: ჩატი თარგმანი გამორთულია %i.
+  wwcrBegin: WorldwideChat გადატვირთვა...
+  wwctTranslationStoppedOtherPlayer: '%i მთარგმნელობითი სესია შეჩერებულია.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: გლობალური სტატისტიკა თარგმნილია,
+    მაგრამ თქვენ გაქვთ აქტიური მთარგმნელობითი სესია %i to %o.
+  wwctCannotTranslateConsole: თქვენ არ შეგიძლიათ დაიწყოთ თარგმანის სესია კონსოლისთვის!
+  wwctLangToLangStart: თარგმანის ახალი სესიის დაწყება %i to %o.
+  wwcOnJoinTranslationNotificationSourceLang: თქვენ გაქვთ აქტიური მთარგმნელობითი სესია
+    %i დან %o.
+  wwctAutoTranslateStartOtherPlayer: თარგმანის ახალი სესიის დაწყება %i to %o.
+  wwctTranslationStopped: თქვენი თარგმანის სესია შეჩერებულია.
+  wwctLangToLangStartOtherPlayer: თარგმანის ახალი სესიის დაწყება %o დან %e-მდე.
+  wwctAutoTranslateStart: თარგმანის ახალი სესიის დაწყება %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: თქვენ გაქვთ მთარგმნელობითი სესია %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: გლობალური სტატისტიკა
+    თარგმნილია, მაგრამ თქვენ გაქვთ აქტიური თარგმანის სესია %o.

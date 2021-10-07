@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Traduzindo o livro-alvo...
   wwcConfigDisabledbStats: bStats desativados.
   wwctsOffSender: Tradução do sinal desativada.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: O bate-papo global está
-    sendo traduzido, mas seu chat está sendo traduzido de %i para %o.
   wwcUpdaterParserFailed: Falha ao analisar dados de atualização do Github.
-  wwctAutoTranslateStart: Agora traduzindo todo o seu chat para %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: A chave secreta atual é %i.
     Insira uma chave secreta para a Amazon ou digite 0 para voltar.
   wwctbOffSender: Tradução do livro desativada.
   wwcConfigGUIAmazonTranslateButton: Amazon Traduzir
   wwcConfigConversationLangSuccess: O idioma do plugin foi alterado com sucesso.
   wwcsSuccessfulTranslations: 'Traduções bem-sucedidas: %i'
-  wwctTranslationStoppedOtherPlayer: A tradução de chat para %i foi interrompida.
   wwcConfigConversationTranslationCacheInput: O limite atual do cache de tradução
     é %i frases %i. Digite qualquer coisa maior que 0 para definir um novo valor ou
     digite 0 para desabilitar o cache de tradução. Digite qualquer coisa menor que
@@ -59,13 +55,10 @@ Messages:
     um tradutor no seu config.yml.
   wwcConfigGUIQuitButton: Sair e salvar alterações
   wwctPlayerNotFound: Jogador %eu não encontrei.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: O bate-papo global está
-    sendo traduzido, mas seu chat está sendo traduzido para %o.
   wwcConfigGUIAmazonTranslateRegionButton: Alterar região da Amazon
   wwcConfigConversationLangInput: 'O idioma atual do plugin é %i. Insira um código
     de idioma válido ou digite 0 para cancelar. Códigos de idioma válidos: %o'
   wwcConfigConversationLangInvalid: Código de idioma inválido!
-  wwctTranslationStopped: Sua tradução de chat foi interrompida.
   wwcConfigGUIWatsonAPIKeyButton: Alterar a chave da API Watson
   wwcEnabled: Ativado a versão WorldwideChat %i.
   wwcgLangToLangStart: Agora traduzindo o bate-papo global de %i para %o.
@@ -86,7 +79,6 @@ Messages:
     de API para Watson ou digite 0 para voltar.
   wwctGUIStopButton: Parar de traduzir
   wwcgTranslationStopped: A tradução de bate-papo global foi interrompida.
-  wwctAutoTranslateStartOtherPlayer: Agora traduzindo o chat de %i para %o.
   wwcUpdaterFutureDate: Esta instância do WorldwideChat tem uma versão maior do que
     a mais recente pública.
   wwcConfigConversationPrefixSuccess: O prefixo foi alterado com sucesso.
@@ -97,8 +89,6 @@ Messages:
   wwcConfigCacheDisabled: Cache do tradutor desativado.
   wwcConfigConversationWatsonURLInput: O URL atual é %i. Insira um URL de serviço
     para Watson ou digite 0 para voltar.
-  wwcOnJoinTranslationNotificationSourceLang: Seu chat está sendo traduzido de %i
-    para %o.
   wwcBookDone: Livro traduzido com sucesso.
   wwctsOnSender: Tradução de assinar habilitada. Clique com o botão direito em um
     sinal para traduzi-lo!
@@ -123,11 +113,9 @@ Messages:
   wwcConfigGUIPrefixButton: Alterar Prefixo do Plugin
   wwctSameLangError: Você não pode traduzir para o mesmo idioma!
   wwctGUINewTranslationTarget: Escolha um idioma de destino
-  wwctLangToLangStartOtherPlayer: Agora traduzindo o chat de %o de %i para %e.
   wwcConfigConnectionSuccess: Conectado com sucesso a %o!
   wwcConfigGUIGoogleTranslateButton: Google Tradutor
   wwcsIsActiveTranslator: 'É o Tradutor Ativo: %i'
-  wwctLangToLangStart: Agora traduzindo todo o seu chat de %i para %o.
   wwcConfigConversationPrefixInput: O prefixo atual é %i. Digite um novo ou digite
     0 para voltar.
   wwcConfigGUIPreviousPageButton: Página Anterior
@@ -163,8 +151,6 @@ Messages:
   wwcRateLimit: Suas traduções são taxas limitadas. Aguarde outro %i segundos.
   wwcConfigCacheEnabled: Cache do tradutor ativado e definido como um limite de %i.
   wwctGUIExistingTranslationButton: Substituir Sessão de Tradução Atual
-  wwcOnJoinTranslationNotificationNoSourceLang: Seu chat está sendo traduzido para
-    %o.
   wwcUserDataReloaded: Carregado todos os dados de usuário salvos.
   wwcConfigGUISendTranslationChatButton: Enviar lembrete de bate-papo para o Active
     Translator no login
@@ -195,8 +181,6 @@ Messages:
     dados do usuário é %i segundos. Digite qualquer coisa maior que 10 para definir
     um novo valor, ou qualquer coisa menor que 10 para voltar.
   wwcConfigGUISyncUserDataButton: Alterar retardo de sincronização de dados
-  wwcConfigSyncTime: Sincronização automática de dados do usuário concluída em %i
-    nanossegundos.
   wwcConfigSyncDelayEnabled: Atraso por sincronização de dados do usuário definido
     para %i segundos.
   wwcConfigConversationSyncUserDataDelaySuccess: Atraso de sincronização de dados
@@ -314,7 +298,30 @@ Messages:
   wwctGUIEntityButton: Alternar tradução de entidades
   wwcConfigConversationResponseLimitSuccess: Tempo limite de resposta definido com
     êxito.
-  wwctCannotTranslateConsole: Você não pode traduzir o bate-papo do console!
   wwctrlRateLimitBadInt: Seu limite de taxa não é um número inteiro válido.
   wwcTranslatorErrorConsole: Ocorreu um problema enquanto o usuário %i estava tentando
     traduzir. Por favor, verifique errorLog.txt para obter mais detalhes.
+  wwctcOffSender: Tradução de bate-papo desativada.
+  wwctcOnTarget: Tradução de bate-papo ativada para %i.
+  wwctcOnSender: Tradução de bate-papo ativada. Tudo o que você disser será traduzido!
+  wwctGUIChatButton: Alternar tradução de bate-papo
+  wwctcOffTarget: Tradução de bate-papo desativada para %i.
+  wwcrBegin: Recarregando o WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: A sessão de tradução para %i foi interrompida.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: O bate-papo global está
+    sendo traduzido, mas você tem uma sessão de tradução ativa de %i para %o.
+  wwctCannotTranslateConsole: Você não pode iniciar uma sessão de tradução para o
+    console!
+  wwctLangToLangStart: Iniciando uma nova sessão de tradução de %i para %o.
+  wwcOnJoinTranslationNotificationSourceLang: Você tem uma sessão de tradução ativa
+    de %i a %o.
+  wwctAutoTranslateStartOtherPlayer: Iniciando uma nova sessão de tradução de %i a
+    %o.
+  wwctTranslationStopped: Sua sessão de tradução foi interrompida.
+  wwctLangToLangStartOtherPlayer: Iniciando uma nova sessão de tradução para %o de
+    %i para %e.
+  wwctAutoTranslateStart: Iniciando uma nova sessão de tradução para %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Você tem uma sessão de tradução ativa
+    para %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: O bate-papo global está
+    sendo traduzido, mas você tem uma sessão de tradução ativa para %o.

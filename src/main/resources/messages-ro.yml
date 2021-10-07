@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Traduc cartea ţintă...
   wwcConfigDisabledbStats: BSTAT-uri dezactivate.
   wwctsOffSender: Semnează traducerea dezactivată.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Chatul global este tradus,
-    dar chat-ul dvs. este tradus din %i la %o.
   wwcUpdaterParserFailed: Nu a reușit să analizeze datele de actualizare de la Github.
-  wwctAutoTranslateStart: Acum traduceți întregul chat la %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Cheia secretă curentă este %i.
     Introduceți o cheie secretă pentru Amazon sau tastați 0 pentru a reveni.
   wwctbOffSender: Traducere carte dezactivat.
   wwcConfigGUIAmazonTranslateButton: Amazon Traduce
   wwcConfigConversationLangSuccess: Limba plugin-ului s-a schimbat cu succes.
   wwcsSuccessfulTranslations: 'Traduceri reușite: %i'
-  wwctTranslationStoppedOtherPlayer: Traducerea chat-ului pentru %i a fost oprită.
   wwcConfigConversationTranslationCacheInput: Limita cache de traducere curentă este
     %i fraze. Tastați ceva mai mare decât 0 pentru a seta o valoare nouă sau tastați
     0 pentru a dezactiva memoria cache de traducere. Tastați ceva mai puțin de 0 pentru
@@ -60,13 +56,10 @@ Messages:
     un singur traducător în config.yml.
   wwcConfigGUIQuitButton: Ieșire și salvare modificări
   wwctPlayerNotFound: Jucătorul %nu am găsit.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Chatul global este tradus,
-    dar chatul dvs. este tradus la %o.
   wwcConfigGUIAmazonTranslateRegionButton: Schimbă regiunea Amazon
   wwcConfigConversationLangInput: 'Limba curentă a pluginului este %i. Introduceți
     un cod de limbă valid sau tastați 0 pentru a anula. Coduri de limbă valide: %o'
   wwcConfigConversationLangInvalid: Cod de limbă nevalid!
-  wwctTranslationStopped: Traducerea chat-ului a fost oprită.
   wwcConfigGUIWatsonAPIKeyButton: Modificare cheie API Watson
   wwcEnabled: Versiune WorldwideChat activată.
   wwcgLangToLangStart: Acum traducem chatul global de la %i la %o.
@@ -86,7 +79,6 @@ Messages:
     cheie API pentru Watson sau tastați 0 pentru a reveni.
   wwctGUIStopButton: Opriți traducerea
   wwcgTranslationStopped: Traducerea globală a chat-ului a fost oprită.
-  wwctAutoTranslateStartOtherPlayer: Acum traducem chat-ul de %i la %o.
   wwcUpdaterFutureDate: Această instanță a WorldwideChat are o versiune mai mare decât
     cea mai recentă publică.
   wwcConfigConversationPrefixSuccess: Prefixul s-a schimbat cu succes.
@@ -97,7 +89,6 @@ Messages:
   wwcConfigCacheDisabled: Cache traducător dezactivat.
   wwcConfigConversationWatsonURLInput: Adresa URL curentă este %i. Introduceți un
     URL de serviciu pentru Watson sau tastați 0 pentru a reveni.
-  wwcOnJoinTranslationNotificationSourceLang: Chat-ul dvs. este tradus din %i la %o.
   wwcBookDone: Cartea tradusă cu succes.
   wwctsOnSender: Traducerea semnelor activată. Faceți clic dreapta pe un semn pentru
     ao traduce!
@@ -123,11 +114,9 @@ Messages:
   wwcConfigGUIPrefixButton: Schimbare prefixul plugin-ului
   wwctSameLangError: Nu puteți traduce în aceeași limbă!
   wwctGUINewTranslationTarget: Alegeți o limbă țintă
-  wwctLangToLangStartOtherPlayer: Acum traducem chat-ul de %o de la %i la %e.
   wwcConfigConnectionSuccess: Conectat cu succes la %o!
   wwcConfigGUIGoogleTranslateButton: Traducere în Google
   wwcsIsActiveTranslator: 'Este un translator activ: %i'
-  wwctLangToLangStart: Acum traduceți toată conversația de la %i la %o.
   wwcConfigConversationPrefixInput: Prefixul curent este %i. Introduceți unul nou
     sau tastați 0 pentru a reveni.
   wwcConfigGUIPreviousPageButton: Pagina precedentă
@@ -166,7 +155,6 @@ Messages:
   wwcConfigCacheEnabled: Memoria cache a traducătorului este activată și setată la
     o limită de %i.
   wwctGUIExistingTranslationButton: Suprascriere sesiune de traducere curentă
-  wwcOnJoinTranslationNotificationNoSourceLang: Chatul dvs. este tradus la %o.
   wwcUserDataReloaded: Încărcat toate datele de utilizator salvate.
   wwcConfigGUISendTranslationChatButton: Trimiteți Memento Chat către Translatorul
     Activ la conectare
@@ -198,8 +186,6 @@ Messages:
     a datelor utilizatorului este %i secunde. Tastați ceva mai mare de 10 pentru a
     seta o valoare nouă sau ceva mai mic de 10 pentru a reveni.
   wwcConfigGUISyncUserDataButton: Modificarea întârzierii sincronizării datelor utilizatorului
-  wwcConfigSyncTime: Sincronizarea automată a datelor de utilizator finalizată în
-    %i nanosecunde.
   wwcConfigSyncDelayEnabled: Întârziere pentru sincronizarea datelor utilizatorului
     setată la %i secunde.
   wwcConfigConversationSyncUserDataDelaySuccess: Întârziere sincronizare date utilizator
@@ -321,7 +307,29 @@ Messages:
   wwctGUIEntityButton: Comută traducerea entității
   wwcConfigConversationResponseLimitSuccess: Timpul de expirare a răspunsului stabilit
     cu succes
-  wwctCannotTranslateConsole: Nu poți traduce consola de chat!
   wwctrlRateLimitBadInt: Limita dvs. de rată nu este un număr întreg valid.
   wwcTranslatorErrorConsole: A apărut o problemă în timp ce utilizatorul %i încerca
     traducerea lor. Vă rugăm să verificați errorLog.txt pentru mai multe detalii.
+  wwctcOffSender: Traducere chat dezactivat.
+  wwctcOnTarget: Traducerea conversațiilor activată pentru %i.
+  wwctcOnSender: Traducerea chat-ului activată. Tot ce spui va fi tradus!
+  wwctGUIChatButton: Comută traducerea conversațiilor
+  wwctcOffTarget: Traducerea conversațiilor dezactivate pentru %i.
+  wwcrBegin: Reîncarcă WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Sesiunea de traducere pentru %i a fost oprită.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Chat global este tradus,
+    dar aveți o sesiune de traducere activă de la %i la %o.
+  wwctCannotTranslateConsole: Nu puteți începe o sesiune de traducere pentru consola!
+  wwctLangToLangStart: Începerea unei noi sesiuni de traducere de la %i la %o.
+  wwcOnJoinTranslationNotificationSourceLang: Aveți o sesiune de traducere activă
+    de la %i la %o.
+  wwctAutoTranslateStartOtherPlayer: Începem o nouă sesiune de traducere pentru %i
+    la %o.
+  wwctTranslationStopped: Sesiunea de traducere a fost oprită.
+  wwctLangToLangStartOtherPlayer: Începem o nouă sesiune de traducere pentru %o de
+    la %i la %e.
+  wwctAutoTranslateStart: Începem o nouă sesiune de traducere la %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Aveți o sesiune de traducere activă
+    la %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Chat global este tradus,
+    dar aveți o sesiune de traducere activă la %o.

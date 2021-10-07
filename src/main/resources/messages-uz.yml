@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Tarjima maqsadli kitob...
   wwcConfigDisabledbStats: Nogironlar bStats.
   wwctsOffSender: Imzo tarjimasi o'chirilgan.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat tarjima qilinmoqda,
-    ammo sizning suhbatingiz %i dan %o ga tarjima qilinmoqda.
   wwcUpdaterParserFailed: Github ma'lumotlarni yangilash ajralish bo'lmadi.
-  wwctAutoTranslateStart: Endi barcha suhbatingizni %o ga tarjima qiling.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Joriy maxfiy kalit %i. Iltimos,
     Amazon uchun maxfiy kalitni kiriting yoki orqaga qaytish uchun 0 yozing.
   wwctbOffSender: Kitob tarjimasi o'chirib qo'yildi.
   wwcConfigGUIAmazonTranslateButton: Amazon Tarjima
   wwcConfigConversationLangSuccess: Plagin tili muvaffaqiyatli o'zgardi.
   wwcsSuccessfulTranslations: 'Muvaffaqiyatli tarjimalar: %i'
-  wwctTranslationStoppedOtherPlayer: '%i uchun chat tarjimasi to''xtatildi.'
   wwcConfigConversationTranslationCacheInput: Joriy tarjima keshi chegarasi %i iboralari.
     Yangi qiymatni belgilash uchun 0 dan katta narsa yozing yoki tarjima keshini o'chirish
     uchun 0 yozing. Orqaga qaytish uchun 0 dan kamroq narsa yozing.
@@ -58,13 +54,10 @@ Messages:
     faqat bitta tarjimonni yoqing.
   wwcConfigGUIQuitButton: Chiqish & O'zgarishlarni saqlash
   wwctPlayerNotFound: O'yinchi % Men topilmadi.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat tarjima
-    qilinmoqda, ammo sizning suhbatingiz %o ga tarjima qilinmoqda.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon mintaqasini o'zgartirish
   wwcConfigConversationLangInput: 'Joriy plagin tili %i. Iltimos, tegishli til kodini
     kiriting yoki bekor qilish uchun 0 yozing. Haqiqiy til kodlari: %o'
   wwcConfigConversationLangInvalid: Noto'g'ri til kodi!
-  wwctTranslationStopped: Sizning chat tarjimasi to'xtatildi.
   wwcConfigGUIWatsonAPIKeyButton: Watson API kalitini o'zgartirish
   wwcEnabled: '%i WorldWidechat versiyasini yoqing.'
   wwcgLangToLangStart: Endi global suhbatni %i dan %o ga tarjima qilish.
@@ -84,7 +77,6 @@ Messages:
     API kalitini kiriting yoki orqaga qaytish uchun 0 kiriting.
   wwctGUIStopButton: Tarjimani to'xtatish
   wwcgTranslationStopped: Global chat tarjimasi to'xtatildi.
-  wwctAutoTranslateStartOtherPlayer: Endi %i chatini %o ga tarjima qilish.
   wwcUpdaterFutureDate: WorldwideChat-ning ushbu misoli eng so'nggi jamoatchilikka
     qaraganda ko'proq versiyaga ega.
   wwcConfigConversationPrefixSuccess: Prefiks muvaffaqiyatli o'zgardi.
@@ -95,8 +87,6 @@ Messages:
   wwcConfigCacheDisabled: Tarjimon keshi o'chirilgan.
   wwcConfigConversationWatsonURLInput: Joriy URL manzili %i. Iltimos Watson uchun
     xizmat URL manzilini kiriting yoki orqaga qaytish uchun 0 yozing.
-  wwcOnJoinTranslationNotificationSourceLang: Sizning suhbatingiz %i dan %o ga tarjima
-    qilinmoqda.
   wwcBookDone: Kitob muvaffaqiyatli tarjima.
   wwctsOnSender: Sign tarjimasi yoqilgan. Uni tarjima qilish uchun belgini o'ng tugmasini
     bosing!
@@ -121,11 +111,9 @@ Messages:
   wwcConfigGUIPrefixButton: Prefiks plaginini o'zgartirish
   wwctSameLangError: Siz bir xil tilga tarjima qila olmaysiz!
   wwctGUINewTranslationTarget: Maqsadli tilni tanlang
-  wwctLangToLangStartOtherPlayer: Endi %o chatini %i dan %e ga tarjima qilish.
   wwcConfigConnectionSuccess: '%o ga muvaffaqiyatli ulandi!'
   wwcConfigGUIGoogleTranslateButton: Google Tarjima
   wwcsIsActiveTranslator: 'Faol tarjimon: %i'
-  wwctLangToLangStart: Endi suhbatingizning barchasini %i dan %o ga tarjima qiling.
   wwcConfigConversationPrefixInput: Joriy prefiks %i. Iltimos, yangisini yozing yoki
     orqaga qaytish uchun 0 yozing.
   wwcConfigGUIPreviousPageButton: Oldingi sahifa
@@ -162,8 +150,6 @@ Messages:
     kuting.
   wwcConfigCacheEnabled: Tarjimon keshi yoqilgan va %i limiti oʻrnatilgan.
   wwctGUIExistingTranslationButton: Joriy tarjima sessiyasi ustiga yozish
-  wwcOnJoinTranslationNotificationNoSourceLang: Sizning suhbatingiz %o ga tarjima
-    qilinmoqda.
   wwcUserDataReloaded: Barcha saqlangan foydalanuvchi ma'lumotlarini yukladi.
   wwcConfigGUISendTranslationChatButton: Kirish bo'yicha faol tarjimonga suhbat eslatmasini
     yuboring
@@ -195,8 +181,6 @@ Messages:
     narsani yoki orqaga qaytish uchun 10 dan kam narsani kiriting.
   wwcConfigGUISyncUserDataButton: Foydalanuvchi ma'lumotlarini sinxronlashni kechiktirishni
     o'zgartirish
-  wwcConfigSyncTime: '%i nanosaniyalarida foydalanuvchi maʼlumotlarini avtomatik sinxronlash
-    yakunlandi.'
   wwcConfigSyncDelayEnabled: Foydalanuvchi maʼlumotlarini sinxronlash uchun kechiktirish
     %i sekundiga oʻrnatilgan.
   wwcConfigConversationSyncUserDataDelaySuccess: Foydalanuvchi ma'lumotlarini sinxronlashni
@@ -312,7 +296,30 @@ Messages:
   wwcteOffSender: O'chirilgan shaxs tarjimasi.
   wwctGUIEntityButton: Toggle shaxs tarjimasi
   wwcConfigConversationResponseLimitSuccess: Response muddati muvaffaqiyatli o'rnatildi.
-  wwctCannotTranslateConsole: Siz konsol suhbatini tarjima qila olmaysiz!
   wwctrlRateLimitBadInt: Sizning stavkangiz cheklovi haqiqiy emas.
   wwcTranslatorErrorConsole: '%i foydalanuvchisi ularning tarjimasiga urinayotganda
     muammo yuzaga keldi. Qo''shimcha ma''lumot olish uchun errorLog.txt tekshiring.'
+  wwctcOffSender: Chat tarjimasi o'chirib qo'yildi.
+  wwctcOnTarget: '%i uchun chat tarjimasi yoqilgan.'
+  wwctcOnSender: Chat tarjimasi yoqilgan. Siz aytayotgan har qanday narsa tarjima
+    qilinadi!
+  wwctGUIChatButton: Toggle chat Tarjima
+  wwctcOffTarget: '%i uchun chat tarjimasi oʻchirildi.'
+  wwcrBegin: WorldwideChat qayta yuklash...
+  wwctTranslationStoppedOtherPlayer: '%i uchun tarjima sessiyasi to''xtatildi.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat tarjima qilinmoqda,
+    ammo sizda %i dan %o gacha faol tarjima seansi mavjud.
+  wwctCannotTranslateConsole: Konsol uchun tarjima seansini boshlamaysiz!
+  wwctLangToLangStart: '%i dan %o gacha yangi tarjima sessiyasini boshlash.'
+  wwcOnJoinTranslationNotificationSourceLang: Sizda %i dan %o ga faol tarjima seansi
+    mavjud.
+  wwctAutoTranslateStartOtherPlayer: '%i uchun %o uchun yangi tarjima sessiyasini
+    boshlash.'
+  wwctTranslationStopped: Sizning tarjima sessiyasi to'xtatildi.
+  wwctLangToLangStartOtherPlayer: '%o uchun %i dan %e gacha yangi tarjima sessiyasini
+    boshlash.'
+  wwctAutoTranslateStart: “ %o” ga yangi tarjima sessiyasini boshlash.
+  wwcOnJoinTranslationNotificationNoSourceLang: Sizning %o ga faol tarjima seansi
+    bor.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat tarjima
+    qilinmoqda, ammo sizda %o ga faol tarjima seansi mavjud.

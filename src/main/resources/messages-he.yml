@@ -22,17 +22,13 @@ Messages:
   wwcBookTranslateStart: מתרגם את ספר היעד...
   wwcConfigDisabledbStats: bStats נכים.
   wwctsOffSender: תרגום הסימנים מושבת.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: הצ'אט הגלובלי מתורגם,
-    אך הצ'אט שלך מתורגם מ- %i ל %o.
   wwcUpdaterParserFailed: ניתוח נתוני עדכון מ- Github נכשלה.
-  wwctAutoTranslateStart: עכשיו מתרגם את כל הצ'אט שלך ל %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: המפתח הסודי הנוכחי הוא %i. הזן
     מפתח סודי עבור Amazon, או הקלד 0 כדי לחזור אחורה.
   wwctbOffSender: תרגום ספרים מנוטרל.
   wwcConfigGUIAmazonTranslateButton: אמזון לתרגם
   wwcConfigConversationLangSuccess: שפת התוספים השתנתה בהצלחה.
   wwcsSuccessfulTranslations: 'תרגומים מוצלחים: %i'
-  wwctTranslationStoppedOtherPlayer: תרגום צ'אט עבור %i הופסק.
   wwcConfigConversationTranslationCacheInput: מגבלת מטמון התרגום הנוכחית היא ביטויים
     %i. הקלד דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד 0 כדי להשבית את מטמון התרגום.
     הקלד כל דבר פחות מ-0 כדי לחזור.
@@ -54,13 +50,10 @@ Messages:
     בconfig.yml שלך.
   wwcConfigGUIQuitButton: יציאה ושמור שינויים
   wwctPlayerNotFound: שחקן %לא מצאתי.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: צ'אט גלובלי מתורגם,
-    אבל הצ'אט שלך מתורגם אל %o.
   wwcConfigGUIAmazonTranslateRegionButton: שינוי אזור אמזון
   wwcConfigConversationLangInput: 'שפת התוסף הנוכחית היא %i. הזן קוד שפה חוקי, או
     הקלד 0 כדי לבטל. קודי שפה תקפים: %o'
   wwcConfigConversationLangInvalid: קוד שפה לא חוקי!
-  wwctTranslationStopped: תרגום הצ'אט שלך הופסק.
   wwcConfigGUIWatsonAPIKeyButton: שינוי מפתח API של ווטסון
   wwcEnabled: גרסת WorldwideChat מופעלת. i.
   wwcgLangToLangStart: כעת מתרגם צ'אט גלובלי מ %i אל %o.
@@ -77,7 +70,6 @@ Messages:
     Watson, או הקלד 0 כדי לחזור אחורה.
   wwctGUIStopButton: הפסק לתרגם
   wwcgTranslationStopped: תרגום צ'אט גלובלי הופסק.
-  wwctAutoTranslateStartOtherPlayer: עכשיו מתרגם את הצ'אט של %i אל %o.
   wwcUpdaterFutureDate: למופע זה של WorldwideChat יש גרסה גדולה יותר מאשר הגרסה הציבורית
     האחרונה.
   wwcConfigConversationPrefixSuccess: הקידומת השתנתה בהצלחה.
@@ -87,7 +79,6 @@ Messages:
   wwcConfigCacheDisabled: מטמון מתרגם מנוטרל.
   wwcConfigConversationWatsonURLInput: כתובת האתר הנוכחית היא %i. הזן כתובת URL של
     שירות עבור ווטסון, או הקלד 0 כדי לחזור.
-  wwcOnJoinTranslationNotificationSourceLang: הצ'אט שלך מתורגם מ %i אל %o.
   wwcBookDone: הספר תורגם בהצלחה.
   wwctsOnSender: תרגום החתימה מופעל. לחץ לחיצה ימנית על שלט כדי לתרגם אותו!
   watsonColorCodeWarning: שימוש בקודי צבע עשוי לתת לך תוצאות בלתי צפויות.
@@ -109,11 +100,9 @@ Messages:
   wwcConfigGUIPrefixButton: שינוי קידומת תוסף
   wwctSameLangError: אתה לא יכול לתרגם לאותה שפה!
   wwctGUINewTranslationTarget: בחר שפת יעד
-  wwctLangToLangStartOtherPlayer: עכשיו מתרגם את הצ'אט של %o מ %i אל %e.
   wwcConfigConnectionSuccess: מחובר בהצלחה אל %o!
   wwcConfigGUIGoogleTranslateButton: גוגל תרגום
   wwcsIsActiveTranslator: 'הוא מתרגם פעיל: %i'
-  wwctLangToLangStart: כעת מתרגם את כל הצ'אט שלך מ %i אל %o.
   wwcConfigConversationPrefixInput: הקידומת הנוכחית היא %i. הקלד קידומת חדשה, או הקלד
     0 כדי לחזור אחורה.
   wwcConfigGUIPreviousPageButton: העמוד הקודם
@@ -146,7 +135,6 @@ Messages:
   wwcRateLimit: התרגומים שלך מוגבלים בשיעור. אנא המתן עוד שניות.
   wwcConfigCacheEnabled: מטמון המתרגם מופעל והוגדר למגבלה של %i.
   wwctGUIExistingTranslationButton: החלף את הפעלת התרגום הנוכחית
-  wwcOnJoinTranslationNotificationNoSourceLang: הצ'אט שלך מתורגם אל %o.
   wwcUserDataReloaded: טען את כל נתוני המשתמש השמורים.
   wwcConfigGUISendTranslationChatButton: שליחת תזכורת צ'אט למתרגם פעיל בהתחברות
   wwcsLastTranslationTime: 'זמן התרגום האחרון (מוצלח): %i'
@@ -173,7 +161,6 @@ Messages:
     המשתמש הוא %i שניות. הקלד כל דבר גדול מ- 10 כדי להגדיר ערך חדש, או כל דבר פחות
     מ- 10 כדי לחזור אחורה.
   wwcConfigGUISyncUserDataButton: שינוי שיהוי סינכרון נתוני משתמש
-  wwcConfigSyncTime: סנכרון נתוני משתמש אוטומטי הושלם ב %i ננו-שניות.
   wwcConfigSyncDelayEnabled: השהיה לכל סינכרון נתוני המשתמש מוגדר אל %i שניות.
   wwcConfigConversationSyncUserDataDelaySuccess: עיכוב סינכרון נתוני המשתמש הוגדר
     בהצלחה.
@@ -279,7 +266,25 @@ Messages:
   wwcteOffSender: תרגום הישות מושבת.
   wwctGUIEntityButton: החלפת תרגום ישות
   wwcConfigConversationResponseLimitSuccess: זמן קצוב לתגובה נקבע בהצלחה.
-  wwctCannotTranslateConsole: לא ניתן לתרגם צ'אט קונסולה
   wwctrlRateLimitBadInt: מגבלת התעריף אינה מספר שלם חוקי.
   wwcTranslatorErrorConsole: אירעה בעיה בזמן שהמשתמש %i ניסה את התרגום שלהם. אנא בדוק
     errorLog.txt לפרטים נוספים.
+  wwctcOffSender: תרגום צ'אט מושבת.
+  wwctcOnTarget: תרגום צ'אט מופעל עבור %i.
+  wwctcOnSender: תרגום צ'אט מופעל. כל מה שתגיד יתורגם!
+  wwctGUIChatButton: החלף תרגום צ'אט
+  wwctcOffTarget: תרגום צ'אט מושבת עבור %i.
+  wwcrBegin: טוען מחדש את וורלד-ווידצ...
+  wwctTranslationStoppedOtherPlayer: הפעלת התרגום עבור %i הופסקה.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: צ'אט גלובלי מתורגם, אבל
+    יש לך הפעלת תרגום פעילה מ %i ל %o.
+  wwctCannotTranslateConsole: לא ניתן להתחיל הפעלת תרגום עבור מסוף!
+  wwctLangToLangStart: מתחיל הפעלת תרגום חדשה מ- %i אל %o.
+  wwcOnJoinTranslationNotificationSourceLang: יש לך הפעלת תרגום פעילה מ- %i אל %o.
+  wwctAutoTranslateStartOtherPlayer: מתחיל הפעלת תרגום חדשה עבור %i אל %o.
+  wwctTranslationStopped: התרגום שלך הופסק.
+  wwctLangToLangStartOtherPlayer: מתחיל הפעלת תרגום חדשה עבור %o מ- %i אל %e.
+  wwctAutoTranslateStart: מתחיל הפעלת תרגום חדשה אל %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: יש לך הפעלת תרגום פעילה אל %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: צ'אט גלובלי מתורגם,
+    אבל יש לך הפעלת תרגום פעילה אל %o.

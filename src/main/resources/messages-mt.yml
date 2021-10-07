@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Traduzzjoni ktieb mira...
   wwcConfigDisabledbStats: bStats b'diżabbiltà.
   wwctsOffSender: Sinjal traduzzjoni b'diżabilità.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Iċ-chat globali qed jiġi
-    tradott, iżda ċ-chat tiegħek qed jiġi tradott minn %i sa %o.
   wwcUpdaterParserFailed: Naqas milli parse data aġġornament minn Github.
-  wwctAutoTranslateStart: Issa traduzzjoni kollha ta 'chat tiegħek għal %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Jekk jogħġbok input ċavetta
     sigriet għall Amazon, jew tip 0 li jmorru lura.
   wwctbOffSender: Ktieb traduzzjoni b'diżabilità.
   wwcConfigGUIAmazonTranslateButton: Ittraduċi Amazon
   wwcConfigConversationLangSuccess: Lingwa Plugin mibdula b'suċċess.
   wwcsSuccessfulTranslations: 'Traduzzjonijiet b''suċċess: %i'
-  wwctTranslationStoppedOtherPlayer: Chat traduzzjoni għal %i twaqqfet.
   wwcConfigConversationTranslationCacheInput: Il-limitu cache traduzzjoni attwali
     huwa % frażijiet i. Tip xejn akbar minn 0 biex tistabbilixxi valur ġdid, jew tip
     0 biex jiskonnettja l-cache traduzzjoni. Tip xejn inqas minn 0 biex tmur lura.
@@ -58,13 +54,10 @@ Messages:
     traduttur wieħed biss fil-konfig.yml tiegħek.
   wwcConfigGUIQuitButton: Ħruġ & Save Bidliet
   wwctPlayerNotFound: Player %i ma nstabx.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Iċ-chat globali qed
-    jiġi tradott, iżda ċ-chat tiegħek qed jiġi tradott għal %o.
   wwcConfigGUIAmazonTranslateRegionButton: Bidla Reġjun Amazon
   wwcConfigConversationLangInput: 'Jekk jogħġbok ikteb kodiċi tal-lingwa valida, jew
     tip 0 biex tikkanċella. Kodiċijiet validi tal-lingwa: %o'
   wwcConfigConversationLangInvalid: Kodiċi tal-lingwa invalidu!
-  wwctTranslationStopped: It-traduzzjoni taċ-chat tiegħek twaqqfet.
   wwcConfigGUIWatsonAPIKeyButton: Bidla Watson API Ewlenin
   wwcEnabled: Enabled verżjoni WorldwideChat %i.
   wwcgLangToLangStart: Issa traduzzjoni chat globali minn %i sa %o.
@@ -84,7 +77,6 @@ Messages:
     jew tip 0 li jmorru lura.
   wwctGUIStopButton: Waqqaf it-traduzzjoni
   wwcgTranslationStopped: It-traduzzjoni globali taċ-chat twaqqfet.
-  wwctAutoTranslateStartOtherPlayer: Issa nittraduċu ċ-chat ta '%i għal %o.
   wwcUpdaterFutureDate: Dan l-istanza ta 'WorldwideChat għandha verżjoni akbar mill-aħħar
     waħda pubblika.
   wwcConfigConversationPrefixSuccess: Il-prefiss inbidel b'suċċess.
@@ -95,8 +87,6 @@ Messages:
   wwcConfigCacheDisabled: Cache tat-traduttur b'diżabilità.
   wwcConfigConversationWatsonURLInput: Jekk jogħġbok input URL servizz URL għall Watson,
     jew tip 0 li jmorru lura.
-  wwcOnJoinTranslationNotificationSourceLang: Iċ-chat tiegħek qed jiġi tradott minn
-    %i sa %o.
   wwcBookDone: Ktieb tradott b'suċċess.
   wwctsOnSender: Sinjal traduzzjoni ppermettiet. Ikklikkja lemin fuq sinjal biex tittraduċih!
   watsonColorCodeWarning: L-użu ta 'kodiċi tal-kulur jista'jagħtik riżultati imprevedibbli.
@@ -120,11 +110,9 @@ Messages:
   wwcConfigGUIPrefixButton: Bidla Plugin Prefiss
   wwctSameLangError: Ma tistax tittraduċi għall-istess lingwa!
   wwctGUINewTranslationTarget: Agħżel Lingwa tal-Mira
-  wwctLangToLangStartOtherPlayer: Issa nittraduċu ċ-chat ta '%o minn %i sa %e.
   wwcConfigConnectionSuccess: Konnessi b'suċċess għal %o!
   wwcConfigGUIGoogleTranslateButton: Google Ittraduċi
   wwcsIsActiveTranslator: 'Huwa Traduttur Attiv: %i'
-  wwctLangToLangStart: Issa traduzzjoni kollha ta 'chat tiegħek minn %i sa %o.
   wwcConfigConversationPrefixInput: Jekk jogħġbok tip waħda ġdida, jew tip 0 li jmorru
     lura.
   wwcConfigGUIPreviousPageButton: Paġna ta'qabel
@@ -162,8 +150,6 @@ Messages:
   wwcConfigCacheEnabled: Cache traduttur ppermettiet u stabbiliti għal limitu ta '
     %i.
   wwctGUIExistingTranslationButton: Traduzzjoni Sessjoni Kurrenti
-  wwcOnJoinTranslationNotificationNoSourceLang: Iċ-chat tiegħek qed jiġi tradott għal
-    %o.
   wwcUserDataReloaded: Mgħobbija data kollha utent ffrankati.
   wwcConfigGUISendTranslationChatButton: Ibgħat Tfakkira Chat biex Traduttur Attiv
   wwcsLastTranslationTime: 'L-aħħar Ħin tat-Traduzzjoni (Suċċess): %i'
@@ -193,7 +179,6 @@ Messages:
     ta 'data utent huwa %i sekondi. Tip xi ħaġa akbar minn 10 biex tistabbilixxi valur
     ġdid, jew xi ħaġa inqas minn 10 biex tmur lura.
   wwcConfigGUISyncUserDataButton: Bidla Utent Data sync Dewmien
-  wwcConfigSyncTime: sync data utent awtomatiku tlesta f'% nanoseconds.
   wwcConfigSyncDelayEnabled: Dewmien għal kull utent sett sync data għal %i sekondi.
   wwcConfigConversationSyncUserDataDelaySuccess: Utent data sync dewmien stabbiliti
     b'suċċess.
@@ -311,7 +296,29 @@ Messages:
   wwcteOffSender: Entità traduzzjoni b'diżabilità.
   wwctGUIEntityButton: Traduzzjoni ta 'Entità
   wwcConfigConversationResponseLimitSuccess: L-iskedi ta 'rispons stabbiliti b'suċċess.
-  wwctCannotTranslateConsole: Inti ma tistax tittraduċi console chat!
   wwctrlRateLimitBadInt: Il-limitu tar-rata tiegħek mhuwiex numru sħiħ validu.
   wwcTranslatorErrorConsole: Problema seħħet waqt l-utent %i kien jippruvaw traduzzjoni
     tagħhom. Jekk jogħġbok iċċekkja errorLog.txt għal aktar dettalji.
+  wwctcOffSender: Chat traduzzjoni b'diżabilità.
+  wwctcOnTarget: Chat traduzzjoni ppermettiet għal %i.
+  wwctcOnSender: Chat traduzzjoni ppermettiet. Kull ħaġa li tgħid se tiġi tradotta!
+  wwctGUIChatButton: Traduzzjoni Toggle Chat
+  wwctcOffTarget: Chat traduzzjoni b'diżabilità għal %i.
+  wwcrBegin: Reloading WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Sessjoni ta 'traduzzjoni għal % twaqqfet.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Chat globali qed jiġi
+    tradott, imma inti għandek sessjoni ta 'traduzzjoni attiva minn %i sa %o.
+  wwctCannotTranslateConsole: Inti ma tistax tibda sessjoni ta 'traduzzjoni għall-console!
+  wwctLangToLangStart: Tibda sessjoni ġdida ta 'traduzzjoni minn %i sa %o.
+  wwcOnJoinTranslationNotificationSourceLang: Għandek sessjoni ta 'traduzzjoni attiva
+    minn %i sa %o.
+  wwctAutoTranslateStartOtherPlayer: Tibda sessjoni ġdida ta 'traduzzjoni għal %i
+    sa %o.
+  wwctTranslationStopped: Is-sessjoni tat-traduzzjoni tiegħek twaqqfet.
+  wwctLangToLangStartOtherPlayer: Tibda sessjoni ġdida ta 'traduzzjoni għal %o minn
+    %i sa %e.
+  wwctAutoTranslateStart: Tibda sessjoni ġdida ta 'traduzzjoni għal %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Għandek sessjoni ta 'traduzzjoni attiva
+    għal %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Iċ-chat globali qed
+    jiġi tradott, imma għandek sessjoni ta 'traduzzjoni attiva għal %o.

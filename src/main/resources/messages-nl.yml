@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Doelboek vertalen...
   wwcConfigDisabledbStats: Uitgeschakeld bStats.
   wwctsOffSender: Vertaling ondertekenen uitgeschakeld.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globale chat wordt vertaald,
-    maar uw chat wordt vertaald van %i naar %o.
   wwcUpdaterParserFailed: Ontleden van updategegevens van Github is mislukt.
-  wwctAutoTranslateStart: Vertaal nu al je chat naar %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: De huidige geheime sleutel is
     %i. Voer een geheime sleutel in voor Amazon of typ 0 om terug te gaan.
   wwctbOffSender: Boekvertaling uitgeschakeld.
   wwcConfigGUIAmazonTranslateButton: Amazon Translate
   wwcConfigConversationLangSuccess: Plug-in-taal is succesvol gewijzigd.
   wwcsSuccessfulTranslations: 'Succesvolle vertalingen: %i'
-  wwctTranslationStoppedOtherPlayer: Chatvertaling voor %i is gestopt.
   wwcConfigConversationTranslationCacheInput: De huidige limiet voor de vertaalcache
     is %i zinnen. Typ iets groter dan 0 om een nieuwe waarde in te stellen of typ
     0 om de vertaalcache uit te schakelen. Typ iets minder dan 0 om terug te gaan.
@@ -58,13 +54,10 @@ Messages:
     slechts één vertaler in uw config.yml.
   wwcConfigGUIQuitButton: Wijzigingen afsluiten en opslaan
   wwctPlayerNotFound: Speler %ik heb niet gevonden.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globale chat wordt vertaald,
-    maar uw chat wordt vertaald naar %o.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon-regio wijzigen
   wwcConfigConversationLangInput: 'De huidige taal van de plug-in is %i. Voer een
     geldige taalcode in of typ 0 om te annuleren. Geldige taalcodes: %o'
   wwcConfigConversationLangInvalid: Ongeldige taalcode!
-  wwctTranslationStopped: Uw chatvertaling is gestopt.
   wwcConfigGUIWatsonAPIKeyButton: Watson API-sleutel wijzigen
   wwcEnabled: WorldwideChat-versie %i ingeschakeld.
   wwcgLangToLangStart: Vertaal nu globale chat van %i naar %o.
@@ -84,7 +77,6 @@ Messages:
     in voor Watson of typ 0 om terug te gaan.
   wwctGUIStopButton: Stoppen met vertalen
   wwcgTranslationStopped: Wereldwijde chat-vertaling is gestopt.
-  wwctAutoTranslateStartOtherPlayer: Vertaal nu de chat van %i naar %o.
   wwcUpdaterFutureDate: Dit exemplaar van WorldwideChat heeft een grotere versie dan
     de meest recente openbare versie.
   wwcConfigConversationPrefixSuccess: Voorvoegsel is succesvol gewijzigd.
@@ -94,7 +86,6 @@ Messages:
   wwcConfigCacheDisabled: Cache van de vertaler uitgeschakeld.
   wwcConfigConversationWatsonURLInput: De huidige URL is %i. Voer een service-URL
     in voor Watson of typ 0 om terug te gaan.
-  wwcOnJoinTranslationNotificationSourceLang: Uw chat wordt vertaald van %i naar %o.
   wwcBookDone: Boek met succes vertaald.
   wwctsOnSender: Vertaling ondertekenen ingeschakeld. Klik met de rechtermuisknop
     op een teken om het te vertalen!
@@ -119,11 +110,9 @@ Messages:
   wwcConfigGUIPrefixButton: Plugin-voorvoegsel wijzigen
   wwctSameLangError: Je kunt niet vertalen naar dezelfde taal!
   wwctGUINewTranslationTarget: Kies een doeltaal
-  wwctLangToLangStartOtherPlayer: Vertaal nu de chat van %o van %i naar %e.
   wwcConfigConnectionSuccess: Succesvol verbonden met %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Is actieve vertaler: %i'
-  wwctLangToLangStart: Vertaal nu al je chat van %i naar %o.
   wwcConfigConversationPrefixInput: Het huidige voorvoegsel is %i. Typ een nieuw voorvoegsel
     of typ 0 om terug te gaan.
   wwcConfigGUIPreviousPageButton: Vorige pagina
@@ -161,7 +150,6 @@ Messages:
   wwcConfigCacheEnabled: Vertaler cache ingeschakeld en ingesteld op een limiet van
     %i.
   wwctGUIExistingTranslationButton: Huidige vertaalsessie overschrijven
-  wwcOnJoinTranslationNotificationNoSourceLang: Uw chat wordt vertaald naar %o.
   wwcUserDataReloaded: Alle opgeslagen gebruikersgegevens zijn geladen.
   wwcConfigGUISendTranslationChatButton: Stuur chatherinnering naar Actieve vertaler
     bij inloggen
@@ -192,8 +180,6 @@ Messages:
     van gebruikersgegevens is %i seconden. Typ iets groter dan 10 om een nieuwe waarde
     in te stellen, of iets minder dan 10 om terug te gaan.
   wwcConfigGUISyncUserDataButton: Vertraging synchronisatie gebruikersgegevens wijzigen
-  wwcConfigSyncTime: Automatische synchronisatie van gebruikersgegevens voltooid in
-    %i nanoseconden.
   wwcConfigSyncDelayEnabled: Vertraging per synchronisatie van gebruikersgegevens
     ingesteld op %i seconden.
   wwcConfigConversationSyncUserDataDelaySuccess: Vertraging voor synchronisatie van
@@ -313,7 +299,29 @@ Messages:
   wwcteOffSender: Vertaling van entiteit is uitgeschakeld.
   wwctGUIEntityButton: Toggle Enty Translation
   wwcConfigConversationResponseLimitSuccess: Time-out voor respons is succesvol ingesteld.
-  wwctCannotTranslateConsole: Je kunt console-chat niet vertalen!
   wwctrlRateLimitBadInt: Je tarieflimiet is geen geldig geheel getal.
   wwcTranslatorErrorConsole: Er is een probleem opgetreden tijdens de vertaling van
     gebruiker %i. Raadpleeg errorLog.txt voor meer informatie.
+  wwctcOffSender: Chatvertaling is uitgeschakeld.
+  wwctcOnTarget: Chatvertaling is ingeschakeld voor %i.
+  wwctcOnSender: Chatvertaling ingeschakeld. Alles wat je zegt wordt vertaald!
+  wwctGUIChatButton: Toggle Chat Vertaling
+  wwctcOffTarget: Chatvertaling is uitgeschakeld voor %i.
+  wwcrBegin: WorldwideChat herladen...
+  wwctTranslationStoppedOtherPlayer: De vertaalsessie voor %i is gestopt.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globale chat wordt vertaald,
+    maar je hebt een actieve vertaalsessie van %i naar %o.
+  wwctCannotTranslateConsole: U kunt geen vertaalsessie starten voor de console!
+  wwctLangToLangStart: Een nieuwe vertaalsessie starten van %i naar %o.
+  wwcOnJoinTranslationNotificationSourceLang: U hebt een actieve vertaalsessie van
+    %i naar %o.
+  wwctAutoTranslateStartOtherPlayer: Een nieuwe vertaalsessie starten voor %i naar
+    %o.
+  wwctTranslationStopped: Je vertaalsessie is gestopt.
+  wwctLangToLangStartOtherPlayer: Een nieuwe vertaalsessie voor %o starten van %i
+    naar %e.
+  wwctAutoTranslateStart: Een nieuwe vertaalsessie starten naar %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Je hebt een actieve vertaalsessie
+    naar %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Wereldwijde chat wordt
+    vertaald, maar je hebt een actieve vertaalsessie naar %o.

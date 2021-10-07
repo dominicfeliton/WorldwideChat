@@ -25,11 +25,8 @@ Messages:
   wwcBookTranslateStart: Tarjumidda buugga bartilmaameedka...
   wwcConfigDisabledbStats: bStats naafada.
   wwctsOffSender: Turjumaad Sign naafo.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Sheeko caalami ah ayaa
-    la tarjumayaa, laakiin sheekeysigaaga waxaa laga turjumay %i ilaa %o.
   wwcUpdaterParserFailed: Ku guuldareysatay in ay khaladaad cusbooneysiiso xogta ka
     timid Github.
-  wwctAutoTranslateStart: Hadda tarjumaadda dhammaan sheekeysigaaga si %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Furaha qarsoodiga ah ee imika
     waa %i. Fadlan geli furaha qarsoodiga ah ee Amazon, ama nooca 0 si aad dib ugu
     noqoto.
@@ -37,7 +34,6 @@ Messages:
   wwcConfigGUIAmazonTranslateButton: Amazon Translate
   wwcConfigConversationLangSuccess: Luqadda plugin si guul leh loo bedelay.
   wwcsSuccessfulTranslations: 'Tarjumidda guuleysta: %i'
-  wwctTranslationStoppedOtherPlayer: Turjubaanka Chat ee %i ayaa la joojiyay.
   wwcConfigConversationTranslationCacheInput: Xadka xaddiga tarjumaadda ee hadda waa
     %i weedho. Ku qor wax ka weyn 0 si aad u dejiso qiime cusub, ama nooca 0 si aad
     u joojiso kaydka tarjumaadda. Ku qor wax ka yar 0 inuu dib ugu noqdo.
@@ -61,14 +57,11 @@ Messages:
     kaliya hal turjumaan in aad config.yml.
   wwcConfigGUIQuitButton: Bixitaanka & Badbaadinta Isbedelada
   wwctPlayerNotFound: Ciyaartoy %Anigu lama helin.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Sheeko caalami ah ayaa
-    loo turjumay, laakiin sheekeysigaaga waxaa loo turjumay %o.
   wwcConfigGUIAmazonTranslateRegionButton: Beddel Gobolka Amazon
   wwcConfigConversationLangInput: 'Luuqada fiilinta imika waa %i. Fadlan gali lambarka
     luuqada oo sax ah, ama nooca 0 si aad u joojiso. Koodhadhka luuqada ee saxda ah:
     %o'
   wwcConfigConversationLangInvalid: Koodhka luqadda oo aan sax ahayn!
-  wwctTranslationStopped: Your turjumaad chat ayaa la joojiyay.
   wwcConfigGUIWatsonAPIKeyButton: Badalka Furaha Watson API
   wwcEnabled: Noocyada WorldWideCat ee la kartiday %i.
   wwcgLangToLangStart: Hadda tarjumidda chat caalami ah laga bilaabo %i ilaa %o.
@@ -88,7 +81,6 @@ Messages:
     furaha API ee Watson, ama nooca 0 si aad ugu noqoto.
   wwctGUIStopButton: Jooji Tarjumidda
   wwcgTranslationStopped: Turjumaadda chat Global ayaa la joojiyay.
-  wwctAutoTranslateStartOtherPlayer: Hadda tarjumidda sheekeysiga %i ilo %o.
   wwcUpdaterFutureDate: Tusaale ahaan WorldwideChat waxay leedahay nooc ka weyn kan
     ugu dambeeyey ee dadweynaha.
   wwcConfigConversationPrefixSuccess: Horgale si guul leh u bedelay.
@@ -99,8 +91,6 @@ Messages:
   wwcConfigCacheDisabled: kayd Translator naafo.
   wwcConfigConversationWatsonURLInput: URL hadda waa %i. Fadlan geli URL adeeg ee
     Watson, ama nooca 0 si aad dib ugu noqoto.
-  wwcOnJoinTranslationNotificationSourceLang: Sheekeysigaaga waxaa laga tarjumay %i
-    ilaa %o.
   wwcBookDone: Book si guul leh loo tarjumay.
   wwctsOnSender: Turjumaad Sign karti. Xuquuqda-riix calaamad si ay u turjumaan!
   watsonColorCodeWarning: Isticmaalka codes midabka ku siin karaan natiijooyinka aan
@@ -125,11 +115,9 @@ Messages:
   wwcConfigGUIPrefixButton: Beddel Horgalaha Plugin
   wwctSameLangError: Ma turjumi kartid luqad isku mid ah!
   wwctGUINewTranslationTarget: Dooro Luqad Bartilmaameed
-  wwctLangToLangStartOtherPlayer: Hadda tarjumidda sheekeysiga %o ka %i ilaa %e.
   wwcConfigConnectionSuccess: Si guul leh ugu xiran %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Turjumaan firfircoon: %i'
-  wwctLangToLangStart: Hadda tarjumidda dhammaan sheekeysigaaga ka %i ilaa %o.
   wwcConfigConversationPrefixInput: Horgalaha imika waa %i. Fadlan qor mid cusub,
     ama nooca 0 si aad dib ugu noqoto.
   wwcConfigGUIPreviousPageButton: Bogga hore
@@ -165,8 +153,6 @@ Messages:
   wwcRateLimit: turjumaadaha waxaa heerka ku koobnayn. Fadlan sug ilbiriqsi kale %i.
   wwcConfigCacheEnabled: Cache turjumaan awood iyo qarka u saaran in xadka ah %i.
   wwctGUIExistingTranslationButton: Overwrite Kalfadhiga Turjumaadda ee hadda
-  wwcOnJoinTranslationNotificationNoSourceLang: Sheekeysigaaga waxaa loo turjumay
-    %o.
   wwcUserDataReloaded: Ku raran yihiin oo dhan xogta user badbaadiyey.
   wwcConfigGUISendTranslationChatButton: U dir xasuusinta sheekeysiga si aad u turjumaan
     firfircoon
@@ -197,8 +183,6 @@ Messages:
     ee xogta isticmaalaha waa %i ilbiriqsi. Ku qor wax ka weyn 10 si aad u dejiso
     qiimo cusub, ama wax ka yar 10 si aad dib ugu noqoto.
   wwcConfigGUISyncUserDataButton: Bedelka Macluumaadka Isticmaalaha Dib u dhaca
-  wwcConfigSyncTime: Macluumaadka isticmaalaha ee tooska ah ayaa lagu dhameystiray
-    %i nanoseconds.
   wwcConfigSyncDelayEnabled: Dib u dhac halkii xogta user u dhigan %i ilbiriqsi.
   wwcConfigConversationSyncUserDataDelaySuccess: User dib u dhac u hagaagsan xogta
     si guul leh dhigay.
@@ -321,8 +305,31 @@ Messages:
   wwcteOffSender: Turjumaad hay'ad naafo.
   wwctGUIEntityButton: Turjubaan Hay'adda Toggle
   wwcConfigConversationResponseLimitSuccess: fekero Response dhigay si guul leh.
-  wwctCannotTranslateConsole: Ma turjumi kartid sheekada Console!
   wwctrlRateLimitBadInt: Xadka heerka Your ma aha abyoonaha ansax ah.
   wwcTranslatorErrorConsole: Dhibaato ayaa ka dhacday intii uu isticmaalay %i isku
     dayayay turjumaadkooda. Fadlan hubi errorLog.txt wixii faahfaahin dheeraad ah
     oo ku.
+  wwctcOffSender: turjumaad Chat naafo.
+  wwctcOnTarget: Turjumaad Chat awood u siiyo %i.
+  wwctcOnSender: turjumaad Chat karti. Wax kasta oo aad tiraahdo waa la tarjumi doonaa!
+  wwctGUIChatButton: Toggle Chat Translation
+  wwctcOffTarget: Turjumaad Chat naafo ah %i.
+  wwcrBegin: Dib u soo celinta WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Kulanka turjubaanka ee %i waa la joojiyay.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Wadahadal caalami ah ayaa
+    la turjumayaa, laakiin waxaad leedahay fadhi tarjumaad firfircoon oo ka bilaaban
+    %i ilaa %o.
+  wwctCannotTranslateConsole: Ma bilaabi kartid fadhiga turjumaadda ee Console!
+  wwctLangToLangStart: Laga bilaabo fadhiga turjumaad cusub laga bilaabo %i ilaa %o.
+  wwcOnJoinTranslationNotificationSourceLang: Waxaad leedahay fadhi tarjumaad firfircoon
+    oo laga bilaabay %i ilaa %o.
+  wwctAutoTranslateStartOtherPlayer: Bilaabidda fadhiga turjumaad cusub ee loogu talagalay
+    %i ilaa %o.
+  wwctTranslationStopped: Kalfadhigaaga tarjumaadda ayaa la joojiyay.
+  wwctLangToLangStartOtherPlayer: Bilaabidda fadhiga turjumaad cusub ee loogu talagalay
+    %o ka %i ilaa %e.
+  wwctAutoTranslateStart: Bilaabidda fadhiga turjumaad cusub ilaa %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Waxaad leedahay fadhi turjumaad firfircoon
+    ilaa %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Wadahadal caalami ah
+    ayaa la turjumayaa, laakiin waxaad leedahay fadhi tarjumaad firfircoon ee %o.

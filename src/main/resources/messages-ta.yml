@@ -24,10 +24,7 @@ Messages:
   wwcBookTranslateStart: இலக்கு புத்தகத்தை மொழிபெயர்த்தல்...
   wwcConfigDisabledbStats: முடக்கப்பட்டது bStats.
   wwctsOffSender: கையெழுத்திட மொழிபெயர்ப்பு முட
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: உலகளாவிய அரட்டை மொழிபெயர்க்கப்பட்டுள்ளது,
-    ஆனால் உங்கள் அரட்டை %i இலிருந்து %o க்கு மொழிபெயர்க்கப்பட்டுள்ளது.
   wwcUpdaterParserFailed: கிட்ஹப் இருந்து புதுப்பிப்பு தரவை பாகுபடுத்தத் தவறியது.
-  wwctAutoTranslateStart: இப்போது உங்கள் அரட்டை அனைத்தையும் %o க்கு மொழிபெயர்க்கிறது.
   wwcConfigConversationAmazonTranslateSecretKeyInput: தற்போதைய இரகசிய விசை %i ஆகும்.
     தயவுசெய்து உள்ளீடு செய்க அமேசான் ஒரு இரகசிய விசையை, அல்லது திரும்பி செல்ல 0 தட்டச்சு
     செய்யவும்.
@@ -35,7 +32,6 @@ Messages:
   wwcConfigGUIAmazonTranslateButton: அமேசான் மொழிபெயர்ப்பு
   wwcConfigConversationLangSuccess: சொருகி மொழி வெற்றிகரமாக மாற்றப்பட்டது.
   wwcsSuccessfulTranslations: 'வெற்றிகரமான மொழிபெயர்ப்புகள்: %i'
-  wwctTranslationStoppedOtherPlayer: '%i க்கு அரட்டை மொழிபெயர்ப்பு நிறுத்தப்பட்டுள்ளது.'
   wwcConfigConversationTranslationCacheInput: தற்போதைய மொழிபெயர்ப்பு கேச் வரம்பு %i
     சொற்றொடர்கள் ஆகும். ஒரு புதிய மதிப்பை அமைக்க 0 ஐ விட அதிகமான எதையும் தட்டச்சு
     செய்யவும் அல்லது மொழிபெயர்ப்பு கேச் முடக்குவதற்கு 0 ஐ தட்டச்சு செய்யவும். திரும்பி
@@ -59,14 +55,11 @@ Messages:
     ஒரே ஒரு மொழிபெயர்ப்பாளர் செயல்படுத்த கொள்ளவும்.
   wwcConfigGUIQuitButton: மாற்றங்களை வெளியேறவும் சேமிக்கவும்
   wwctPlayerNotFound: வீரர் % நான் காணப்படவில்லை.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: உலகளாவிய அரட்டை மொழிபெயர்க்கப்பட்டுள்ளது,
-    ஆனால் உங்கள் அரட்டை %o க்கு மொழிபெயர்க்கப்பட்டுள்ளது.
   wwcConfigGUIAmazonTranslateRegionButton: அமேசான் பிராந்தியம் மாற்ற
   wwcConfigConversationLangInput: 'தற்போதைய சொருகி மொழியு %i ஆகும். தயவுசெய்து செல்லுபடியாகும்
     மொழிக் குறியீட்டை உள்ளிடவும், அல்லது ரத்து செய்ய 0 செல்லுபடியாகும் மொழி குறியீடுகள்:
     %o'
   wwcConfigConversationLangInvalid: செல்லுபடியாகாத மொழி குறியீடு!
-  wwctTranslationStopped: உங்கள் அரட்டை மொழிபெயர்ப்பு நிறுத்தப்பட்டுள்ளது.
   wwcConfigGUIWatsonAPIKeyButton: மாற்றம் வாட்சன் ஏபிஐ சாவி
   wwcEnabled: செயல்படுத்தப்பட்டது WorldWideSat பதிப்பு %i.
   wwcgLangToLangStart: இப்போது %i இலிருந்து %o க்கு உலகளாவிய அரட்டை மொழிபெயர்க்கிறது.
@@ -86,7 +79,6 @@ Messages:
     விசை, அல்லது திரும்பி செல்ல 0 வகை தயவு செய்து.
   wwctGUIStopButton: மொழிபெயர்ப்பு நிறுத்து
   wwcgTranslationStopped: உலகளாவிய அரட்டை மொழிபெயர்ப்பு நிறுத்தப்பட்டுள்ளது.
-  wwctAutoTranslateStartOtherPlayer: இப்பொழுது %i க்கு அரட்டை மொழிபெயர்க்கிறது.
   wwcUpdaterFutureDate: WorldWideSaat இந்த நிகழ்வில் சமீபத்திய பொது ஒரு விட அதிக பதிப்பு
     உள்ளது.
   wwcConfigConversationPrefixSuccess: முன்னொட்டு வெற்றிகரமாக மாற்றப்பட்டது.
@@ -97,7 +89,6 @@ Messages:
   wwcConfigCacheDisabled: மொழிபெயர்ப்பாளர் கேச் முடக்கப்பட்டுள்ளது.
   wwcConfigConversationWatsonURLInput: தற்போதைய URL %i ஆகும். வாட்சனுக்கு ஒரு சேவை
     URL ஐ உள்ளிடவும் அல்லது திரும்பி செல்ல 0 ஐ தட்டச்சு செய்யவும்.
-  wwcOnJoinTranslationNotificationSourceLang: உங்கள் அரட்டை %i இலிருந்து %o க்கு மொழிபெயர்க்கப்பட்டுள்ளது.
   wwcBookDone: புத்தகம் வெற்றிகரமாக மொழிபெயர்க்கப்பட்டது.
   wwctsOnSender: சைகை மொழிபெயர்ப்பு இயக்கப்பட்டது. அதை மொழிபெயர்க்க ஒரு அடையாளம் வலது
     கிளிக்!
@@ -123,12 +114,9 @@ Messages:
   wwcConfigGUIPrefixButton: சொருகி முன்னொட்டு மாற்றவும்
   wwctSameLangError: அதே மொழிக்கு நீங்கள் மொழிபெயர்க்க முடியாது!
   wwctGUINewTranslationTarget: இலக்கு மொழியைத் தேர்வுசெய்க
-  wwctLangToLangStartOtherPlayer: இப்பொழுது %i இலிருந்து %e இலிருந்து %e க்கு அரட்டை
-    மொழிபெயர்க்கிறது.
   wwcConfigConnectionSuccess: வெற்றிகரமாக இணைக்கப்பட்டது %o!
   wwcConfigGUIGoogleTranslateButton: கூகிள் மொழிபெயர்ப்பு
   wwcsIsActiveTranslator: 'இயல் மொழிபெயர்ப்பாளர்: %i'
-  wwctLangToLangStart: இப்போது உங்கள் அரட்டை முழுவது %i இலிருந்து %o க்கு மொழிபெயர்க்கிறது.
   wwcConfigConversationPrefixInput: தற்போதைய முன்னொட்டு %i ஆகும். தயவுசெய்து புதிய
     ஒன்றை தட்டச்சு செய்யவும் அல்லது திரும்பி செல்ல 0 ஐ தட்டச்சு செய்யவும்.
   wwcConfigGUIPreviousPageButton: முந்தைய பக்கம்
@@ -167,7 +155,6 @@ Messages:
     காத்திருக்கவும்.
   wwcConfigCacheEnabled: மொழிபெயர்ப்பாளர் கேச் செயல்படுத்தப்பட்டு, %i வரம்புக்கு அமைக்கப்பட்டது.
   wwctGUIExistingTranslationButton: தற்போதைய மொழிபெயர்ப்புக் கூட்டத்தை மேலெழுத
-  wwcOnJoinTranslationNotificationNoSourceLang: உங்கள் அரட்டை %o க்கு மொழிபெயர்க்கப்பட்டுள்ளது.
   wwcUserDataReloaded: அனைத்து சேமிக்கப்பட்ட பயனர் தரவு ஏற்றப்பட்டது.
   wwcConfigGUISendTranslationChatButton: உள்நுழைவில் செயலில் மொழிபெயர்ப்பாளருக்கு
     அரட்டை நினைவூட்டல் அனுப்பவும்
@@ -201,7 +188,6 @@ Messages:
     தாமதம் %i விநாடிகள் ஆகும். ஒரு புதிய மதிப்பு அமைக்க 10 விட அதிகமாக எதையும் தட்டச்சு,
     அல்லது மீண்டும் செல்ல 10 குறைவாக எதையும்.
   wwcConfigGUISyncUserDataButton: பயனர் தரவு ஒத்திசைவு தாமதத்தை மாற்றவும்
-  wwcConfigSyncTime: தானியங்கு பயனர் தரவு ஒத்திசைவு %i நானோ விநாடிகளில் நிறைவுற்றது.
   wwcConfigSyncDelayEnabled: பயனர் தரவு ஒத்திசைக்கு %i விநாடிகளுக்கு அமைக்கப்படும்
     தாமதம்.
   wwcConfigConversationSyncUserDataDelaySuccess: பயனர் தரவு ஒத்திசைவு தாமதம் வெற்றிகரமாக
@@ -321,7 +307,28 @@ Messages:
   wwcteOffSender: நிறுவனம் மொழிபெயர்ப்பு முடக்கப்பட்டது.
   wwctGUIEntityButton: மாற்று நிறுவனம் மொழிபெயர்ப்பு
   wwcConfigConversationResponseLimitSuccess: பதில் காலாவதி வெற்றிகரமாக அமைக்க.
-  wwctCannotTranslateConsole: நீங்கள் பணியகம் அரட்டை மொழிபெயர்க்க முடியாது!
   wwctrlRateLimitBadInt: உங்கள் வீத வரம்பு செல்லுபடியாகும் முழு எண் அல்ல.
   wwcTranslatorErrorConsole: பயனர் %i அவர்களின் மொழிபெயர்ப்பை முயற்சிக்கும் போது ஒரு
     சிக்கல் ஏற்பட்டது. மேலும் விவரங்களுக்கு errorLog.txt சரிபார்க்கவும்.
+  wwctcOffSender: அரட்டை மொழிபெயர்ப்பு முடக்கப்பட்டுள்ளது.
+  wwctcOnTarget: அரட்டை மொழிபெயர்ப்பு %i க்கு இயக்கப்பட்டது.
+  wwctcOnSender: அரட்டை மொழிபெயர்ப்பு இயக்கப்பட்டது நீங்கள் சொல்வது எதையும் மொழிபெயர்க்கப்படும்!
+  wwctGUIChatButton: அரட்டை மொழிபெயர்ப்பு
+  wwctcOffTarget: அரட்டை மொழிபெயர்ப்பு %i க்கு முடக்கப்பட்டது.
+  wwcrBegin: WorldWideSat மீண்டும் ஏற்றுகிறது...
+  wwctTranslationStoppedOtherPlayer: '%i க்கு மொழிபெயர்ப்பு அமர்வு நிறுத்தப்பட்டுள்ளது.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: உலகளாவிய அரட்டை மொழிபெயர்க்கப்பட்டுள்ளது,
+    ஆனால் உங்களுக்கு %i இலிருந்து %o க்கு செயலில் மொழிபெயர்ப்பு அமர்வு உள்ளது.
+  wwctCannotTranslateConsole: நீங்கள் கன்சோல் ஒரு மொழிபெயர்ப்பு அமர்வு தொடங்க முடியாது!
+  wwctLangToLangStart: '%i இலிருந்து ஒரு புதிய மொழிபெயர்ப்பு அமர்வைத் தொடங்குதல்.'
+  wwcOnJoinTranslationNotificationSourceLang: உங்களுக்கு %i இலிருந்து %o இலிருந்தே
+    செயலில் மொழிபெயர்ப்பு அமர்வு உள்ளது.
+  wwctAutoTranslateStartOtherPlayer: '%i க்கு ஒரு புதிய மொழிபெயர்ப்பு அமர்வைத் தொடங்குதல்.'
+  wwctTranslationStopped: உங்கள் மொழிபெயர்ப்பு அமர்வு நிறுத்தப்பட்டுள்ளது.
+  wwctLangToLangStartOtherPlayer: '%i இலிருந்து %e க்கு புதிய மொழிபெயர்ப்பு அமர்வைத்
+    தொடங்குதல்.'
+  wwctAutoTranslateStart: '%o க்கு ஒரு புதிய மொழிபெயர்ப்பு அமர்வைத் தொடங்குதல்.'
+  wwcOnJoinTranslationNotificationNoSourceLang: உங்களுக்கு %o க்கு செயலில் மொழிபெயர்ப்பு
+    அமர்வு உள்ளது.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: உலகளாவிய அரட்டை மொழிபெயர்க்கப்பட்டுள்ளது,
+    ஆனால் உங்களுக்கு %o க்கு செயலில் உள்ள மொழிபெயர்ப்பு அமர்வு உள்ளது.

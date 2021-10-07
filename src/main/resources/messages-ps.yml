@@ -24,17 +24,13 @@ Messages:
   wwcBookTranslateStart: د هدف کتاب ژباړه...
   wwcConfigDisabledbStats: معلولین bStats.
   wwctsOffSender: د ژباړې معلول لاسليک کړئ.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ګلوبل چیٹ ژباړل کیږي،
-    مګر ستاسو چیٹ د %i څخه تر %o پورې ژباړل کیږي.
   wwcUpdaterParserFailed: له Github څخه د تازه معلوماتو د تجزولو کې پاتې راغلی.
-  wwctAutoTranslateStart: اوس ستاسو ټول چیٹ ژباړئ %o ته.
   wwcConfigConversationAmazonTranslateSecretKeyInput: اوسنی پټ کیل %i دی. مهرباني
     وکړئ د ایمیزون لپاره یو پټ کیلي ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
   wwctbOffSender: د کتاب ژباړې معلول.
   wwcConfigGUIAmazonTranslateButton: ایمیزون ژباړه
   wwcConfigConversationLangSuccess: د پلگ ان ژبه په بریالیتوب سره بدل
   wwcsSuccessfulTranslations: 'بريالي ژباړل: %i'
-  wwctTranslationStoppedOtherPlayer: د ژباړې لپاره چیٹ ژباړه ودرول شوې ده.
   wwcConfigConversationTranslationCacheInput: .د ژباړې اوسنۍ زیرمه حدود %i عبارتونه
     دي د نوي ارزښت ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د ژباړې کیچ غیر فعال کولو
     لپاره 0 ډول کړئ. د 0 څخه لږ څه ولیکئ چې بیرته لاړ شئ.
@@ -57,13 +53,10 @@ Messages:
     ژباړونکي په خپل ترتیب کې فعال کړئ.
   wwcConfigGUIQuitButton: بدلونونه وتل & ساتل
   wwctPlayerNotFound: . لوبغاړي ونه موندل شو
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ګلوبل چیٹ ژباړل کیږي،
-    مګر ستاسو چیٹ د %o لپاره ژباړل کیږي.
   wwcConfigGUIAmazonTranslateRegionButton: د ایمیزون سیمه بدل کړئ
   wwcConfigConversationLangInput: 'د اوسني فلګن ژبه ده %i. مهرباني وکړئ د اعتبار وړ
     ژبې کوډ داخل کړئ، یا د فسخه کولو لپاره 0 ډول کړئ. د اعتبار وړ ژبې کوډونه: %o'
   wwcConfigConversationLangInvalid: ناسم ژبه کوډ!
-  wwctTranslationStopped: ستاسو د چیٹ ژباړه ودرول شوې ده.
   wwcConfigGUIWatsonAPIKeyButton: د واټسن API کیلي بدل کړئ
   wwcEnabled: فعال شوی WorldWieChat نسخه %i.
   wwcgLangToLangStart: اوس د نړېوالې خبرې له %i څخه ژباړل.
@@ -82,7 +75,6 @@ Messages:
     لپاره د API کیلي ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
   wwctGUIStopButton: ژباړل ودرول
   wwcgTranslationStopped: د ګلوبل چیٹ ژباړه ودرول شوې.
-  wwctAutoTranslateStartOtherPlayer: اوس د %i چیلنج ژباړه کړئ %o ته.
   wwcUpdaterFutureDate: د WorldWiDeChat دا مثال د وروستي عامه خلکو په پرتله خورا لوی
     نسخه لري.
   wwcConfigConversationPrefixSuccess: مختاړی په بریالیتوب سره بدل شو.
@@ -92,8 +84,6 @@ Messages:
   wwcConfigCacheDisabled: ژباړونکي کیچ معلول شو.
   wwcConfigConversationWatsonURLInput: اوسنی URL دی %i. مهرباني وکړئ د واټسن لپاره
     د خدمت URL ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
-  wwcOnJoinTranslationNotificationSourceLang: ستاسو چیٹ د %i څخه تر %o پورې ژباړل
-    کیږي.
   wwcBookDone: په بریالیتوب سره ژباړل شوی کتاب
   wwctsOnSender: د ژباړې لاسليک فعال شو. د ژباړلو لپاره په نښه باندې ښی کلیک وکړئ!
   watsonColorCodeWarning: د رنګ کوډونو کارول ممکن تاسو ته غیر متوقع پایلې درکړي.
@@ -117,11 +107,9 @@ Messages:
   wwcConfigGUIPrefixButton: لګون مختاړی بدلول
   wwctSameLangError: تاسې همغه ژبې ته ژباړئ نه شئ!
   wwctGUINewTranslationTarget: موخه ژبه غوره کړئ
-  wwctLangToLangStartOtherPlayer: اوس د خبرو ژباړه %o له %i څخه %e ته.
   wwcConfigConnectionSuccess: په برياليتوب سره نښلول شو %o!
   wwcConfigGUIGoogleTranslateButton: ګوګل ژباړل
   wwcsIsActiveTranslator: ': %i فعاله ژباړونکی دی'
-  wwctLangToLangStart: اوس ستاسو ټول چیٹ له %i څخه ژباړئ.
   wwcConfigConversationPrefixInput: اوسنی مختاړی ده %i دی. مهرباني وکړئ یو نوی ولیکئ،
     یا 0 ډول کړئ چې بېرته لاړ شئ.
   wwcConfigGUIPreviousPageButton: مخکنی مخ
@@ -156,7 +144,6 @@ Messages:
   wwcRateLimit: ستاسو ژباړې کچه محدود ده. مهرباني وکړئ نور څه انتظار وکړئ %i ثانیو.
   wwcConfigCacheEnabled: ژباړونکي کیچ فعال او د %i حد ته یې وټاکه.
   wwctGUIExistingTranslationButton: د ژباړې اوسنۍ ناسته بیا لیکل
-  wwcOnJoinTranslationNotificationNoSourceLang: ستاسو چیٹ ژباړل کیږي %o ته.
   wwcUserDataReloaded: ټول خوندي شوي کارن ډاټا لوډ کړئ.
   wwcConfigGUISendTranslationChatButton: په ننوت کې فعال ژباړونکي ته د چیٹ یادښت واستوئ
   wwcsLastTranslationTime: 'وروستی (بریالۍ) د ژباړې وخت: %i'
@@ -186,7 +173,6 @@ Messages:
     %i ثانیې دی. د نوي ارزښت ټاکلو لپاره د 10 څخه ډیر څه ولیکئ، یا د 10 څخه لږ څه
     چې بیرته لاړ شئ.
   wwcConfigGUISyncUserDataButton: د کارن ډاټا سنک ځنډیدل بدلول
-  wwcConfigSyncTime: اتومات کارن ډاټا په %i نانو ثانیو کې بشپړ شو.
   wwcConfigSyncDelayEnabled: د کارن د ډیټا سنک سیټ د %i ثانیو ته ځنډول.
   wwcConfigConversationSyncUserDataDelaySuccess: د کارن ډاټا هماهنګ ځنډ په بریالیتوب
     سره ټاکل شوی.
@@ -303,7 +289,26 @@ Messages:
   wwctGUIEntityButton: د بنسټ ژباړه توګول
   wwcConfigConversationResponseLimitSuccess: د غبرګون وخت وخت په بریالیتوب سره وټاکل
     شو.
-  wwctCannotTranslateConsole: تاسو کولی شئ د کنسول چیٹ ژباړئ!
   wwctrlRateLimitBadInt: ستاسو د نرخ حد یو باوري عدد نه دی.
   wwcTranslatorErrorConsole: کومه ستونزه رامنځته شوه کله چې کارن- %i د خپلې ژباړې
     هڅه کوله. مهرباني وکړئ د نورو جزیاتو لپاره errorLog.txt وګورئ.
+  wwctcOffSender: د چیٹ ژباړه معیوب.
+  wwctcOnTarget: . چیٹ ژباړل د %i لپاره فعال شو
+  wwctcOnSender: د چیٹ ژباړه فعاله کړه. هر څه چې تاسو وایئ به ژباړل شي!
+  wwctGUIChatButton: د چیٹ ژباړه توګول
+  wwctcOffTarget: .د ژباړې خبرې ناتوانول شو %i لپاره
+  wwcrBegin: د WorldWieChat بیا ځلي کول...
+  wwctTranslationStoppedOtherPlayer: .د ژباړې ناستې لپاره درول شو %i
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ګلوبل چیٹ ژباړل کیږي،
+    مګر تاسو له %i څخه تر %o پورې د ژباړې فعاله ناسته لرئ.
+  wwctCannotTranslateConsole: تاسو د کنسول لپاره د ژباړې ناستې نه شي پیل کولی!
+  wwctLangToLangStart: . %i څخه تر %o پورې د ژباړې نوې ناسته پیلول
+  wwcOnJoinTranslationNotificationSourceLang: تاسو له %i څخه تر %o پورې د ژباړې فعاله
+    ناسته لرئ.
+  wwctAutoTranslateStartOtherPlayer: . %i ته د ژباړې نوې ناستې پیلول
+  wwctTranslationStopped: ستاسو د ژباړې ناسته ودرول شوې ده.
+  wwctLangToLangStartOtherPlayer: د ژباړې نوې ناستې پیلول %o له %i څخه %e ته.
+  wwctAutoTranslateStart: .o ته د ژباړې نوې ناستې پیلول
+  wwcOnJoinTranslationNotificationNoSourceLang: . ت %o ته د ژباړې فعاله ناسته لرﺉ
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ګلوبل چیٹ ژباړل کیږي،
+    مګر تاسو د ژباړې فعاله ناستې لرئ.

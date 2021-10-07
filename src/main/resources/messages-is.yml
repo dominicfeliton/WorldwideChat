@@ -25,10 +25,7 @@ Messages:
   wwcBookTranslateStart: Þýða miða bók...
   wwcConfigDisabledbStats: Fatlaðir bStats.
   wwctsOffSender: Sign þýðing óvirk.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Alþjóðlegt spjall er þýtt,
-    en spjall þitt er þýtt frá %i til %o.
   wwcUpdaterParserFailed: Mistókst að flokka uppfærslugögn frá Github.
-  wwctAutoTranslateStart: Nú þýða allt spjall þitt %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Núverandi leyndarmál lykill
     er %i. Vinsamlegast sláðu inn leyndarmál lykill fyrir Amazon, eða tegund 0 til
     að fara aftur.
@@ -36,7 +33,6 @@ Messages:
   wwcConfigGUIAmazonTranslateButton: Amazon Þýða
   wwcConfigConversationLangSuccess: Plugin tungumál breytt með góðum árangri.
   wwcsSuccessfulTranslations: 'Árangursrík þýðingar: %i'
-  wwctTranslationStoppedOtherPlayer: Spjall þýðing fyrir %i hefur verið hætt.
   wwcConfigConversationTranslationCacheInput: Núverandi þýðing skyndiminni takmörk
     er %i setningar. Sláðu inn neitt stærra en 0 til að setja nýtt gildi, eða tegund
     0 til að slökkva á þýðingarskyndiminni. Sláðu eitthvað minna en 0 til að fara
@@ -60,14 +56,11 @@ Messages:
     aðeins einn þýðanda í config.yml þínum.
   wwcConfigGUIQuitButton: Hætta og vista breytingar
   wwctPlayerNotFound: Leikmaður %Ég fann ekki.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Alþjóðlegt spjall er
-    þýtt, en spjallið þitt er þýtt í %o.
   wwcConfigGUIAmazonTranslateRegionButton: Breyta Amazon svæðinu
   wwcConfigConversationLangInput: 'Núverandi tappi tungumál er %i. Vinsamlegast sláðu
     inn gilt tungumál kóða, eða tegund 0 til að hætta við. Gildir tungumálakóðar:
     %o'
   wwcConfigConversationLangInvalid: Ógildur tungumálakóði!
-  wwctTranslationStopped: Spjall þýðing þín hefur verið hætt.
   wwcConfigGUIWatsonAPIKeyButton: Breyta Watson API Lykill
   wwcEnabled: Virkja WorldwideChat útgáfa %i.
   wwcgLangToLangStart: Nú þýða alþjóðlegt spjall frá %i til %o.
@@ -86,7 +79,6 @@ Messages:
     sláðu inn API lykil fyrir Watson, eða tegund 0 til að fara aftur.
   wwctGUIStopButton: Hættu að þýða
   wwcgTranslationStopped: Global spjall þýðing hefur verið hætt.
-  wwctAutoTranslateStartOtherPlayer: Nú þýða spjallið af %i til %o.
   wwcUpdaterFutureDate: Þetta dæmi af WorldwideChat hefur meiri útgáfu en nýjasta
     almenningi.
   wwcConfigConversationPrefixSuccess: Forskeyti breytt með góðum árangri.
@@ -97,7 +89,6 @@ Messages:
   wwcConfigCacheDisabled: Þýðandi skyndiminni óvirk.
   wwcConfigConversationWatsonURLInput: Núverandi vefslóð er %i. Vinsamlegast sláðu
     inn þjónustuslóð fyrir Watson, eða tegund 0 til að fara aftur.
-  wwcOnJoinTranslationNotificationSourceLang: Spjallið þitt er þýtt frá %i til %o.
   wwcBookDone: Bókin þýdd með góðum árangri.
   wwctsOnSender: Skilti þýðing virkt. Hægrismelltu á skilti til að þýða það!
   watsonColorCodeWarning: Notkun litakóða getur gefið þér ófyrirsjáanlegar niðurstöður.
@@ -122,11 +113,9 @@ Messages:
   wwcConfigGUIPrefixButton: Breyta Plugin forskeyti
   wwctSameLangError: Þú getur ekki þýtt á sama tungumál!
   wwctGUINewTranslationTarget: Veldu markmál
-  wwctLangToLangStartOtherPlayer: Nú þýða spjallið af %o frá %i til %e.
   wwcConfigConnectionSuccess: Tókst tengdur til %o!
   wwcConfigGUIGoogleTranslateButton: Google Þýða
   wwcsIsActiveTranslator: 'Er virkur þýðandi: %i'
-  wwctLangToLangStart: Nú þýða allt spjall frá %i til %o.
   wwcConfigConversationPrefixInput: Núverandi forskeyti er %i. Sláðu inn nýjan, eða
     sláðu inn 0 til að fara aftur.
   wwcConfigGUIPreviousPageButton: fyrri síða
@@ -164,7 +153,6 @@ Messages:
     sekúndur.
   wwcConfigCacheEnabled: Þýðandi skyndiminni virkt og stillt á takmörk af %i.
   wwctGUIExistingTranslationButton: Yfirskrifa núverandi Þýðing Session
-  wwcOnJoinTranslationNotificationNoSourceLang: Spjallið þitt er þýtt í %o.
   wwcUserDataReloaded: Hlaðinn öllum vistaðar notendagögnum
   wwcConfigGUISendTranslationChatButton: Senda spjall áminning til Active Translator
     á Innskráning
@@ -196,7 +184,6 @@ Messages:
     er %i sekúndur. Sláðu inn neitt stærra en 10 til að setja nýtt gildi, eða eitthvað
     minna en 10 til að fara aftur.
   wwcConfigGUISyncUserDataButton: Breyta notendagögnum Sync Delay
-  wwcConfigSyncTime: Sjálfvirk notendagögn samstilling lokið í %i nanoseconds.
   wwcConfigSyncDelayEnabled: Töf á notanda gögn samstillingu stillt á %i sekúndur.
   wwcConfigConversationSyncUserDataDelaySuccess: Notandagögn samstilla seinkun stillt
     með góðum árangri.
@@ -312,7 +299,27 @@ Messages:
   wwcteOffSender: Entity þýðingar óvirk.
   wwctGUIEntityButton: Skipta Entity Þýðing
   wwcConfigConversationResponseLimitSuccess: Svar tímamót sett með góðum árangri.
-  wwctCannotTranslateConsole: Þú getur ekki þýtt hugga spjall!
   wwctrlRateLimitBadInt: Hlutfall þitt er ekki gild heiltala.
   wwcTranslatorErrorConsole: Vandamál kom fram á meðan notandi %ég var að reyna þýðingu
     þeirra. Vinsamlegast athugaðu errorLog.txt fyrir frekari upplýsingar.
+  wwctcOffSender: Spjall þýðing óvirk.
+  wwctcOnTarget: Spjall þýðing virkt fyrir %i.
+  wwctcOnSender: Spjall þýðing virkt. Allt sem þú segir verður þýtt!
+  wwctGUIChatButton: Skipta Spjall Þýðing
+  wwctcOffTarget: Spjall þýðing óvirk fyrir %i.
+  wwcrBegin: Endurhlaða WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Þýðing fundur fyrir %i hefur verið hætt.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global spjall er þýtt,
+    en þú ert með virkan þýðing fundur frá %i til %o.
+  wwctCannotTranslateConsole: Þú getur ekki byrjað þýðing fundur fyrir hugga!
+  wwctLangToLangStart: Byrja nýja þýðingu fundur frá %i til %o.
+  wwcOnJoinTranslationNotificationSourceLang: Þú ert með virkan þýðing fundur frá
+    %i til %o.
+  wwctAutoTranslateStartOtherPlayer: Byrja nýja þýðingu fundur fyrir %i til %o.
+  wwctTranslationStopped: Þýðing fundur þinn hefur verið hætt.
+  wwctLangToLangStartOtherPlayer: Byrja nýja þýðingu fundur fyrir %o frá %i til %e.
+  wwctAutoTranslateStart: Byrja nýja þýðingu fundur til %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Þú ert með virkan þýðing fundur til
+    %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Alþjóðlegt spjall er
+    þýtt, en þú ert með virkan þýðingartíma til %o.

@@ -24,17 +24,13 @@ Messages:
   wwcBookTranslateStart: ترجمة الكتاب المستهدف...
   wwcConfigDisabledbStats: بستاتس المعوقين.
   wwctsOffSender: تسجيل الترجمة تعطيل.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: تتم ترجمة الدردشة العامة،
-    ولكن تتم ترجمة الدردشة من %i إلى %o.
   wwcUpdaterParserFailed: فشل تحليل بيانات التحديث من جيثب.
-  wwctAutoTranslateStart: الآن ترجمة كل من الدردشة إلى %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: المفتاح السري الحالي هو %i.
     الرجاء إدخال مفتاح سري لـ Amazon، أو اكتب 0 للعودة.
   wwctbOffSender: ترجمة الكتاب تعطيل.
   wwcConfigGUIAmazonTranslateButton: الأمازون ترجمة
   wwcConfigConversationLangSuccess: تغيرت لغة البرنامج المساعد بنجاح.
   wwcsSuccessfulTranslations: 'الترجمات الناجحة: %i'
-  wwctTranslationStoppedOtherPlayer: تم إيقاف ترجمة الدردشة لـ %i.
   wwcConfigConversationTranslationCacheInput: الحد الحالي لذاكرة التخزين المؤقت للترجمة
     هو %i العبارات. اكتب أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب 0 لتعطيل ذاكرة
     التخزين المؤقت للترجمة. اكتب أي شيء أقل من 0 للعودة.
@@ -55,13 +51,10 @@ Messages:
     فقط في config.yml الخاص بك.
   wwcConfigGUIQuitButton: الخروج من التغييرات وحفظها
   wwctPlayerNotFound: لم يتم العثور على اللاعب %.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: تتم ترجمة الدردشة العامة،
-    ولكن تتم ترجمة الدردشة إلى %o.
   wwcConfigGUIAmazonTranslateRegionButton: تغيير منطقة الأمازون
   wwcConfigConversationLangInput: 'لغة البرنامج المساعد الحالية هو %i. الرجاء إدخال
     رمز لغة صالح، أو اكتب 0 للإلغاء. رموز لغة صالحة: %o'
   wwcConfigConversationLangInvalid: رمز لغة غير صالح!
-  wwctTranslationStopped: تم إيقاف ترجمة الدردشة الخاصة بك.
   wwcConfigGUIWatsonAPIKeyButton: تغيير مفتاح واجهة برمجة التطبيقات واتسون
   wwcEnabled: تمكين نسخة ورلدويدشة %i.
   wwcgLangToLangStart: الآن ترجمة الدردشة العامة من %i إلى %o.
@@ -80,7 +73,6 @@ Messages:
     الرجاء إدخال مفتاح API لـ Watson، أو اكتب 0 للعودة.
   wwctGUIStopButton: توقف عن الترجمة
   wwcgTranslationStopped: تم إيقاف ترجمة الدردشة العالمية.
-  wwctAutoTranslateStartOtherPlayer: الآن ترجمة دردشة %i إلى %o.
   wwcUpdaterFutureDate: هذا المثال من WorldwideChat لديه نسخة أكبر من أحدث واحد عام.
   wwcConfigConversationPrefixSuccess: تغيرت البادئة بنجاح.
   wwcConfigGUIGoogleTranslateAPIKeyButton: تغيير جوجل ترجمة أبي مفتاح
@@ -89,7 +81,6 @@ Messages:
   wwcConfigCacheDisabled: تعطيل ذاكرة التخزين المؤقت المترجم.
   wwcConfigConversationWatsonURLInput: عنوان URL الحالي هو %i. الرجاء إدخال عنوان
     URL لخدمة Watson، أو اكتب 0 للعودة.
-  wwcOnJoinTranslationNotificationSourceLang: تتم ترجمة الدردشة من %i إلى %o.
   wwcBookDone: كتاب ترجمت بنجاح.
   wwctsOnSender: تم تمكين ترجمة التوقيع. انقر بزر الماوس الأيمن على علامة لترجمتها!
   watsonColorCodeWarning: استخدام رموز الألوان قد تعطيك نتائج لا يمكن التنبؤ بها.
@@ -112,11 +103,9 @@ Messages:
   wwcConfigGUIPrefixButton: تغيير بادئة البرنامج المساعد
   wwctSameLangError: لا يمكنك الترجمة إلى نفس اللغة!
   wwctGUINewTranslationTarget: اختر لغة الهدف
-  wwctLangToLangStartOtherPlayer: الآن ترجمة دردشة %o من %i إلى %e.
   wwcConfigConnectionSuccess: تم الاتصال بنجاح بـ %o!
   wwcConfigGUIGoogleTranslateButton: ترجمة جوجل
   wwcsIsActiveTranslator: 'مترجم نشط: %i'
-  wwctLangToLangStart: الآن ترجمة كل الدردشة من %i إلى %o.
   wwcConfigConversationPrefixInput: البادئة الحالية هو %i. الرجاء كتابة واحدة جديدة،
     أو اكتب 0 للعودة.
   wwcConfigGUIPreviousPageButton: الصفحة السابقة
@@ -151,7 +140,6 @@ Messages:
   wwcRateLimit: الترجمات الخاصة بك محدودة معدل. الرجاء الانتظار لثواني أخرى %i.
   wwcConfigCacheEnabled: تم تمكين ذاكرة التخزين المؤقت للمترجم وتعيينها إلى حد %i.
   wwctGUIExistingTranslationButton: الكتابة فوق جلسة الترجمة الحالية
-  wwcOnJoinTranslationNotificationNoSourceLang: تتم ترجمة الدردشة إلى %o.
   wwcUserDataReloaded: تحميل جميع بيانات المستخدم المحفوظة.
   wwcConfigGUISendTranslationChatButton: إرسال تذكير الدردشة إلى المترجم النشط عند
     تسجيل الدخول
@@ -179,7 +167,6 @@ Messages:
   wwcConfigConversationSyncUserDataDelayInput: التأخير الحالي لكل مزامنة لبيانات المستخدم
     هو %i ثانية. اكتب أي شيء أكبر من 10 لتعيين قيمة جديدة، أو أي شيء أقل من 10 للعودة.
   wwcConfigGUISyncUserDataButton: تغيير تأخير مزامنة بيانات المستخدم
-  wwcConfigSyncTime: تمت مزامنة بيانات المستخدم التلقائية في %i nanoseconds.
   wwcConfigSyncDelayEnabled: تم تعيين تأخير مزامنة بيانات المستخدم إلى %i ثانية.
   wwcConfigConversationSyncUserDataDelaySuccess: تعيين تأخير مزامنة بيانات المستخدم
     بنجاح.
@@ -288,7 +275,25 @@ Messages:
   wwcteOffSender: تم تعطيل ترجمة الكيان.
   wwctGUIEntityButton: تبديل ترجمة الكيان
   wwcConfigConversationResponseLimitSuccess: تم تعيين مهلة الاستجابة بنجاح.
-  wwctCannotTranslateConsole: لا يمكنك ترجمة دردشة وحدة التحكم!
   wwctrlRateLimitBadInt: حد السعر الخاص بك ليس عددًا صحيحًا صالحًا.
   wwcTranslatorErrorConsole: حدثت مشكلة أثناء محاولة المستخدم %i ترجمته. يرجى التحقق
     من errorLog.txt لمزيد من التفاصيل.
+  wwctcOffSender: تم تعطيل ترجمة الدردشة.
+  wwctcOnTarget: تم تمكين ترجمة الدردشة لـ %i.
+  wwctcOnSender: تم تمكين ترجمة الدردشة. سيتم ترجمة أي شيء تقوله!
+  wwctGUIChatButton: تبديل ترجمة الدردشة
+  wwctcOffTarget: تم تعطيل ترجمة الدردشة لـ %i.
+  wwcrBegin: إعادة تحميل الدردشة في جميع أنحاء العالم...
+  wwctTranslationStoppedOtherPlayer: تم إيقاف جلسة الترجمة لـ %i.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: تتم ترجمة الدردشة العالمية،
+    ولكن لديك جلسة ترجمة نشطة من %i إلى %o.
+  wwctCannotTranslateConsole: لا يمكنك بدء جلسة ترجمة لوحدة التحكم!
+  wwctLangToLangStart: بدء جلسة ترجمة جديدة من %i إلى %o.
+  wwcOnJoinTranslationNotificationSourceLang: لديك جلسة ترجمة نشطة من %i إلى %o.
+  wwctAutoTranslateStartOtherPlayer: بدء جلسة ترجمة جديدة لـ %i إلى %o.
+  wwctTranslationStopped: تم إيقاف جلسة الترجمة الخاصة بك.
+  wwctLangToLangStartOtherPlayer: بدء جلسة ترجمة جديدة لـ %o من %i إلى %e.
+  wwctAutoTranslateStart: بدء جلسة ترجمة جديدة إلى %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: لديك جلسة ترجمة نشطة إلى %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: تتم ترجمة الدردشة العالمية،
+    ولكن لديك جلسة ترجمة نشطة إلى %o.

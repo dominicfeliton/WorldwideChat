@@ -12,6 +12,7 @@ public class ActiveTranslator {
 	private String rateLimitPreviousTime = "None";
 
 	private boolean hasBeenShownColorCodeWarning = false;
+	private boolean translatingChat = true;
 	private boolean translatingBook = false;
 	private boolean translatingSign = false;
 	private boolean translatingItem = false;
@@ -34,7 +35,7 @@ public class ActiveTranslator {
 		hasBeenSaved = false;
 		playerUUID = i;
 	}
-
+	
 	public void setInLangCode(String i) {
 		hasBeenSaved = false;
 		inLangCode = i;
@@ -49,6 +50,11 @@ public class ActiveTranslator {
 		hasBeenShownColorCodeWarning = i;
 	}
 
+	public void setTranslatingChat(boolean i) {
+		hasBeenSaved = false;
+		translatingChat = i;
+	}
+	
 	public void setTranslatingBook(boolean i) {
 		hasBeenSaved = false;
 		translatingBook = i;
@@ -99,6 +105,10 @@ public class ActiveTranslator {
 		return hasBeenShownColorCodeWarning;
 	}
 
+	public boolean getTranslatingChat() {
+		return translatingChat;
+	}
+	
 	public boolean getTranslatingBook() {
 		return translatingBook;
 	}

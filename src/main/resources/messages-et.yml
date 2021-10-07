@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Tõlkimine sihtraamat...
   wwcConfigDisabledbStats: Keelatud bStats.
   wwctsOffSender: Allkirjastamine keelatud.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globaalne vestlus on tõlgitud,
-    kuid sinu vestlus on tõlgitud alates %i kuni %o.
   wwcUpdaterParserFailed: Andmete sõelumine Githubist nurjus.
-  wwctAutoTranslateStart: Nüüd tõlkides kõik oma vestlus %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Praegune salajane võti on %i.
     Palun sisestage Amazoni salajane võti või tippige 0, et minna tagasi.
   wwctbOffSender: Broneeri tõlge keelatud.
   wwcConfigGUIAmazonTranslateButton: Amazon tõlkida
   wwcConfigConversationLangSuccess: Plugin keel muutunud edukalt.
   wwcsSuccessfulTranslations: 'Edukad tõlked: %i'
-  wwctTranslationStoppedOtherPlayer: Vestlus tõlke %i on peatunud.
   wwcConfigConversationTranslationCacheInput: Praegune tõlkevahemälu limiit on %i
     laused. Uue väärtuse määramiseks tippige midagi suuremat kui 0 või tippige tõlkevahemälu
     keelamiseks 0. Tippige midagi vähem kui 0 tagasi minna.
@@ -57,13 +53,10 @@ Messages:
     üks tõlkija oma config.yml.
   wwcConfigGUIQuitButton: Välju ja salvesta muudatused
   wwctPlayerNotFound: Mängija %ma ei leidnud.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globaalset vestlust
-    tõlgitakse, kuid sinu vestlus on tõlgitud %o.
   wwcConfigGUIAmazonTranslateRegionButton: Muuda Amazonase regiooni
   wwcConfigConversationLangInput: 'Praegune plugina keel on %i. Palun sisestage kehtiv
     keelekood või tühjendamiseks tippige 0. Kehtivad keelekoodid: %o'
   wwcConfigConversationLangInvalid: Kehtetu keelekood!
-  wwctTranslationStopped: Teie vestluse tõlge on peatatud.
   wwcConfigGUIWatsonAPIKeyButton: Muuda Watsoni API võtit
   wwcEnabled: Lubatud WorldwideChat versioon %i.
   wwcgLangToLangStart: Nüüd tõlkides globaalse vestluse alates %i kuni %o.
@@ -82,7 +75,6 @@ Messages:
     Watsoni API võti või tippige 0, et minna tagasi.
   wwctGUIStopButton: Lõpeta tõlkimine
   wwcgTranslationStopped: Global chat tõlge on peatunud.
-  wwctAutoTranslateStartOtherPlayer: Nüüd tõlkides vestlust %i kuni %o.
   wwcUpdaterFutureDate: Sellel WorldwideChati eksemplaril on suurem versioon kui viimane
     avalik versioon.
   wwcConfigConversationPrefixSuccess: Eesliide on edukalt muudetud.
@@ -92,8 +84,6 @@ Messages:
   wwcConfigCacheDisabled: Tõlkija vahemälu on keelatud.
   wwcConfigConversationWatsonURLInput: Praegune URL on %i. Palun sisestage Watsoni
     teenuse URL või tippige tagasi minemiseks 0.
-  wwcOnJoinTranslationNotificationSourceLang: Sinu vestlus on tõlgitud alates %i kuni
-    %o.
   wwcBookDone: Raamat tõlgitud edukalt.
   wwctsOnSender: Logi tõlkimine lubatud. Paremklõpsake märk tõlkida!
   watsonColorCodeWarning: Värvikoodide kasutamine võib anda teile ettearvamatuid tulemusi.
@@ -115,11 +105,9 @@ Messages:
   wwcConfigGUIPrefixButton: Muuda plugina eesliide
   wwctSameLangError: Sa ei saa tõlkida samasse keelde!
   wwctGUINewTranslationTarget: Vali sihtkeel
-  wwctLangToLangStartOtherPlayer: Nüüd tõlkides vestlust %o alates %i kuni %e.
   wwcConfigConnectionSuccess: Edukalt ühendatud %o!
   wwcConfigGUIGoogleTranslateButton: Google Tõlgi
   wwcsIsActiveTranslator: 'Kas aktiivne tõlkija: %i'
-  wwctLangToLangStart: Nüüd tõlkides kogu oma vestluse alates %i kuni %o.
   wwcConfigConversationPrefixInput: Praegune eesliide on %i. Palun tippige uus või
     tippige tagasi minemiseks 0.
   wwcConfigGUIPreviousPageButton: Eelmine lehekülg
@@ -154,7 +142,6 @@ Messages:
   wwcRateLimit: Teie tõlked on piiratud. Palun oodake teise %i sekundit.
   wwcConfigCacheEnabled: Tõlkija vahemälu lubatud ja seatud piir %i.
   wwctGUIExistingTranslationButton: Praeguse tõlke seansi üle
-  wwcOnJoinTranslationNotificationNoSourceLang: Sinu vestlus on tõlgitud %o.
   wwcUserDataReloaded: Laadisid kõik salvestatud kasutaja andmed.
   wwcConfigGUISendTranslationChatButton: Saada vestluse meeldetuletus aktiivsele tõlkijale
     sisselogimisel
@@ -185,7 +172,6 @@ Messages:
     sünkroonimise kohta on %i sekundit. Tippige midagi suuremat kui 10 uue väärtuse
     määramiseks või midagi vähem kui 10, et minna tagasi.
   wwcConfigGUISyncUserDataButton: Kasutaja andmete sünkroonimise viivituse
-  wwcConfigSyncTime: Automaatne kasutaja andmete sünkroonimine on lõpetatud %i nanosekundit.
   wwcConfigSyncDelayEnabled: Viivitus kasutaja andmete sünkroonimise kohta määratud
     %i sekundit.
   wwcConfigConversationSyncUserDataDelaySuccess: Kasutaja andmete sünkroonimise viivitus
@@ -296,7 +282,28 @@ Messages:
   wwcteOffSender: Olemi tõlkimine keelatud.
   wwctGUIEntityButton: Lülita olemi tõlge
   wwcConfigConversationResponseLimitSuccess: Vastuse ajalõpp seatud edukalt.
-  wwctCannotTranslateConsole: Konsooli vestlust ei saa tõlkida!
   wwctrlRateLimitBadInt: Hinnapiirang ei ole kehtiv täisarv.
   wwcTranslatorErrorConsole: Probleem ilmnes, kui kasutaja %i üritas oma tõlkimist.
     Palun kontrollige errorLog.txt rohkem üksikasju.
+  wwctcOffSender: Vestluse tõlkimine keelatud.
+  wwctcOnTarget: Vestlus tõlge lubatud %i.
+  wwctcOnSender: Vestluse tõlge on lubatud. Kõik, mida te ütlete, tõlgitakse!
+  wwctGUIChatButton: Lülita vestlus tõlge
+  wwctcOffTarget: Vestlus tõlge keelatud %i.
+  wwcrBegin: WorldwideChat uuesti laadimine...
+  wwctTranslationStoppedOtherPlayer: Tõlkesessioon %i on peatatud.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globaalne vestlus on tõlgitud,
+    kuid sul on aktiivne tõlkesessioon alates %i kuni %o.
+  wwctCannotTranslateConsole: Konsooli tõlkeseanssi ei saa käivitada!
+  wwctLangToLangStart: Uue tõlkeseansi alustamine alates %i kuni %o.
+  wwcOnJoinTranslationNotificationSourceLang: Teil on aktiivne tõlkeseanss alates
+    %i kuni %o.
+  wwctAutoTranslateStartOtherPlayer: Uue tõlkeseansi alustamine jaoks %i kuni %o.
+  wwctTranslationStopped: Teie tõlkeseanss on lõpetatud.
+  wwctLangToLangStartOtherPlayer: Uue tõlkeseansi alustamine kohta %o alates %i kuni
+    %e.
+  wwctAutoTranslateStart: Uue tõlkeseansi alustamine kuni %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Teil on aktiivne tõlkeseanss kuni
+    %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globaalne vestlus on
+    tõlgitud, kuid teil on aktiivne tõlkesessioon kuni %o.

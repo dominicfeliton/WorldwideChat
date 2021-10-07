@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: ترجمه کتاب هدف...
   wwcConfigDisabledbStats: bStats غیرفعال.
   wwctsOffSender: ترجمه امضا غیرفعال شد.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: گپ جهانی در حال ترجمه
-    است، اما گپ شما از %i به %o ترجمه می شود.
   wwcUpdaterParserFailed: تجزیه اطلاعات به روز رسانی از Github شکست خورد.
-  wwctAutoTranslateStart: اکنون همه گفتگوهای شما را به %o ترجمه می کند.
   wwcConfigConversationAmazonTranslateSecretKeyInput: کلید مخفی فعلی %i است. لطفا
     یک کلید مخفی برای آمازون وارد کنید، یا تایپ 0 برای بازگشت.
   wwctbOffSender: ترجمه کتاب غیرفعال شد.
   wwcConfigGUIAmazonTranslateButton: آمازون ترجمه
   wwcConfigConversationLangSuccess: زبان افزونه با موفقیت تغییر کرد.
   wwcsSuccessfulTranslations: 'ترجمه های موفق: %i'
-  wwctTranslationStoppedOtherPlayer: ترجمه گپ برای %i متوقف شده است.
   wwcConfigConversationTranslationCacheInput: محدودیت حافظه نهان ترجمه فعلی عبارت
     %i است. برای تنظیم مقدار جدید، هر چیزی بیشتر از ۰ تایپ کنید، یا برای غیرفعال کردن
     حافظه پنهان ترجمه، تایپ ۰ کنید. هر چیزی کمتر از 0 تایپ کنید تا به عقب برگردید.
@@ -58,13 +54,10 @@ Messages:
     در config.yml خود فعال کنید.
   wwcConfigGUIQuitButton: خروج و ذخیره تغییرات
   wwctPlayerNotFound: بازیکن %من پیدا نشد.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: گپ جهانی در حال ترجمه
-    است، اما گپ شما به %o ترجمه می شود.
   wwcConfigGUIAmazonTranslateRegionButton: تغییر منطقه آمازون
   wwcConfigConversationLangInput: 'زبان افزونه %i است. لطفا کد زبان معتبری را وارد
     کنید، یا برای لغو تایپ 0 کنید. کدهای زبان معتبر: %o'
   wwcConfigConversationLangInvalid: کد زبان نامعتبر!
-  wwctTranslationStopped: ترجمه چت شما متوقف شده است.
   wwcConfigGUIWatsonAPIKeyButton: تغییر کلید API واتسون
   wwcEnabled: نسخه WideChat را فعال کنید %i.
   wwcgLangToLangStart: در حال حاضر ترجمه گپ جهانی از %i به %o.
@@ -83,7 +76,6 @@ Messages:
     واتسون وارد کنید، یا برای بازگشت به عقب تایپ 0 کنید.
   wwctGUIStopButton: توقف ترجمه
   wwcgTranslationStopped: ترجمه جهانی چت متوقف شده است.
-  wwctAutoTranslateStartOtherPlayer: در حال حاضر ترجمه گپ از %i به %o.
   wwcUpdaterFutureDate: این نمونه از WorldWidechat دارای یک نسخه بزرگتر از آخرین نسخه
     عمومی است.
   wwcConfigConversationPrefixSuccess: پیشوند با موفقیت تغییر کرد.
@@ -93,7 +85,6 @@ Messages:
   wwcConfigCacheDisabled: حافظه پنهان مترجم غیرفعال شد.
   wwcConfigConversationWatsonURLInput: نشانی وب فعلی %i است. لطفا یک نشانی وب سرویس
     برای واتسون وارد کنید، یا برای بازگشت به عقب تایپ کنید.
-  wwcOnJoinTranslationNotificationSourceLang: گفتگوی شما از %i به %o ترجمه می شود.
   wwcBookDone: کتاب با موفقیت ترجمه شد.
   wwctsOnSender: ترجمه امضا فعال شد. کلیک راست بر روی یک علامت برای ترجمه آن!
   watsonColorCodeWarning: استفاده از کدهای رنگی ممکن است نتایج غیر قابل پیش بینی را
@@ -118,11 +109,9 @@ Messages:
   wwcConfigGUIPrefixButton: تغییر پیشوند پلاگین
   wwctSameLangError: شما نمی توانید به یک زبان ترجمه کنید!
   wwctGUINewTranslationTarget: زبان مقصد را انتخاب کنید
-  wwctLangToLangStartOtherPlayer: در حال حاضر ترجمه گپ از %o از %i به %e.
   wwcConfigConnectionSuccess: با موفقیت به %o متصل شد!
   wwcConfigGUIGoogleTranslateButton: گوگل ترجمه
   wwcsIsActiveTranslator: 'مترجم فعال است: %i'
-  wwctLangToLangStart: در حال حاضر ترجمه همه چت از %i به %o.
   wwcConfigConversationPrefixInput: پیشوند فعلی %i است. لطفا یک پیشوند جدید تایپ کنید،
     یا برای بازگشت تایپ 0 کنید.
   wwcConfigGUIPreviousPageButton: صفحه قبلی
@@ -158,7 +147,6 @@ Messages:
   wwcRateLimit: ترجمه خود را نرخ محدود. لطفا دیگر %i ثانیه صبر کنید.
   wwcConfigCacheEnabled: حافظه پنهان مترجم فعال شده و روی محدودیت %i تنظیم شده است.
   wwctGUIExistingTranslationButton: بازنویسی جلسه ترجمه فعلی
-  wwcOnJoinTranslationNotificationNoSourceLang: گفتگوی شما به %o ترجمه می شود.
   wwcUserDataReloaded: بارگذاری تمام داده های ذخیره شده کاربر.
   wwcConfigGUISendTranslationChatButton: ارسال یادآوری چت به مترجم فعال در هنگام ورود
   wwcsLastTranslationTime: 'آخرین (موفق) زمان ترجمه: %i'
@@ -188,7 +176,6 @@ Messages:
     کاربر %i ثانیه است. هر چیزی بزرگتر از ۱۰ را تایپ کنید تا مقدار جدید تعیین شود،
     یا هر چیزی کمتر از ۱۰ برای بازگشت به عقب.
   wwcConfigGUISyncUserDataButton: تغییر تأخیر همگام سازی داده کاربر
-  wwcConfigSyncTime: همگام‌سازی خودکار داده کاربر در %i نانو ثانیه تکمیل شد.
   wwcConfigSyncDelayEnabled: تاخیر در همگام‌سازی داده کاربر به %i ثانیه تنظیم شده
     است.
   wwcConfigConversationSyncUserDataDelaySuccess: تاخیر همگام سازی داده های کاربر با
@@ -302,7 +289,25 @@ Messages:
   wwcteOffSender: ترجمه موجودیت غیرفعال شد.
   wwctGUIEntityButton: ضامن ترجمه موجودیت
   wwcConfigConversationResponseLimitSuccess: مهلت پاسخ با موفقیت تنظیم شد.
-  wwctCannotTranslateConsole: شما نمی توانید چت کنسول را ترجمه کنید!
   wwctrlRateLimitBadInt: محدودیت نرخ شما یک عدد صحیح معتبر نیست.
   wwcTranslatorErrorConsole: هنگامی که کاربر %i در حال تلاش برای ترجمه آنها بود، یک
     مشکل رخ داد. لطفا errorLog.txt را برای جزئیات بیشتر بررسی کنید.
+  wwctcOffSender: ترجمه چت غیرفعال شد.
+  wwctcOnTarget: ترجمه گپ برای %i فعال شد.
+  wwctcOnSender: ترجمه چت فعال شد. هر چيزي که بگي ترجمه ميشه
+  wwctGUIChatButton: زدن ضامن ترجمه گپ
+  wwctcOffTarget: ترجمه گپ برای %i غیرفعال شد.
+  wwcrBegin: بارگیری مجدد WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: جلسه ترجمه برای %i متوقف شده است.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: گپ جهانی در حال ترجمه
+    است، اما شما یک جلسه ترجمه فعال از %i به %o دارید.
+  wwctCannotTranslateConsole: شما نمی توانید یک جلسه ترجمه را برای کنسول شروع کنید!
+  wwctLangToLangStart: شروع یک جلسه ترجمه جدید از %i به %o.
+  wwcOnJoinTranslationNotificationSourceLang: شما یک جلسه فعال ترجمه از %i به %o دارید.
+  wwctAutoTranslateStartOtherPlayer: شروع یک نشست ترجمه جدید برای %i به %o.
+  wwctTranslationStopped: جلسه ترجمه شما متوقف شده است.
+  wwctLangToLangStartOtherPlayer: شروع یک جلسه ترجمه جدید برای %o از %i به %e.
+  wwctAutoTranslateStart: شروع یک نشست ترجمه جدید به %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: شما یک جلسه فعال ترجمه به %o دارید.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: گپ جهانی در حال ترجمه
+    است، اما شما یک جلسه ترجمه فعال به %o دارید.

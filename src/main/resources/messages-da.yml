@@ -24,10 +24,7 @@ Messages:
   wwcBookTranslateStart: Oversætter målbog...
   wwcConfigDisabledbStats: Handicappede bStats.
   wwctsOffSender: Signer oversættelse deaktiveret.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat bliver oversat,
-    men din chat bliver oversat fra %i til %o.
   wwcUpdaterParserFailed: Det lykkedes ikke at fortolke opdateringsdata fra Github.
-  wwctAutoTranslateStart: Oversætter nu al din chat til %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Den nuværende hemmelige nøgle
     er %i. Indtast venligst en hemmelig nøgle til Amazon, eller skriv 0 for at gå
     tilbage.
@@ -35,7 +32,6 @@ Messages:
   wwcConfigGUIAmazonTranslateButton: Amazon oversætte
   wwcConfigConversationLangSuccess: Plugin sprog ændret med succes.
   wwcsSuccessfulTranslations: 'Vellykkede oversættelser: %i'
-  wwctTranslationStoppedOtherPlayer: Chatoversættelse for %i er blevet stoppet.
   wwcConfigConversationTranslationCacheInput: Den aktuelle grænse for oversættelsescachen
     er %i sætninger. Skriv noget større end 0 for at angive en ny værdi, eller skriv
     0 for at deaktivere oversættelsescachen. Skriv noget mindre end 0 for at gå tilbage.
@@ -58,13 +54,10 @@ Messages:
     kun én oversætter i din config.yml.
   wwcConfigGUIQuitButton: Afslut og gem ændringer
   wwctPlayerNotFound: Spilleren % jeg blev ikke fundet.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat bliver oversat,
-    men din chat bliver oversat til %o.
   wwcConfigGUIAmazonTranslateRegionButton: Ændre Amazon-regionen
   wwcConfigConversationLangInput: 'Det aktuelle udvidelsessprog er %i. Indtast en
     gyldig sprogkode, eller skriv 0 for at annullere. Gyldige sprogkoder: %o'
   wwcConfigConversationLangInvalid: Ugyldig sprogkode!
-  wwctTranslationStopped: Din chatoversættelse er blevet stoppet.
   wwcConfigGUIWatsonAPIKeyButton: Skift Watson API-nøgle
   wwcEnabled: Aktiveret WorldwideChat version %i.
   wwcgLangToLangStart: Oversætter nu global chat fra %i til %o.
@@ -83,7 +76,6 @@ Messages:
     API nøgle til Watson, eller skriv 0 for at gå tilbage.
   wwctGUIStopButton: Stop med at oversætte
   wwcgTranslationStopped: Global chat oversættelse er blevet stoppet.
-  wwctAutoTranslateStartOtherPlayer: Nu oversætter chatten på %i til %o.
   wwcUpdaterFutureDate: Denne forekomst af WorldwideChat har en større version end
     den nyeste offentlige.
   wwcConfigConversationPrefixSuccess: Præfiks ændret.
@@ -94,7 +86,6 @@ Messages:
   wwcConfigCacheDisabled: Oversætter cache deaktiveret.
   wwcConfigConversationWatsonURLInput: Den nuværende URL er %i. Indtast venligst en
     service- URL for Watson, eller skriv 0 for at gå tilbage.
-  wwcOnJoinTranslationNotificationSourceLang: Din chat oversættes fra %i til %o.
   wwcBookDone: Bog oversat med succes.
   wwctsOnSender: Signer oversættelse aktiveret. Højreklik på et tegn for at oversætte
     det!
@@ -119,11 +110,9 @@ Messages:
   wwcConfigGUIPrefixButton: Skift plugin- præfiks
   wwctSameLangError: Du kan ikke oversætte til det samme sprog!
   wwctGUINewTranslationTarget: Vælg et målsprog
-  wwctLangToLangStartOtherPlayer: Nu oversætter chatten på %o fra %i til %e.
   wwcConfigConnectionSuccess: Succesfuld forbindelse til %o!
   wwcConfigGUIGoogleTranslateButton: Google Oversæt
   wwcsIsActiveTranslator: 'Er aktiv oversætter: %i'
-  wwctLangToLangStart: Oversætter nu al din chat fra %i til %o.
   wwcConfigConversationPrefixInput: Det aktuelle præfiks er %i. Skriv et nyt, eller
     skriv 0 for at gå tilbage.
   wwcConfigGUIPreviousPageButton: Forrige side
@@ -159,8 +148,6 @@ Messages:
   wwcRateLimit: Dine oversættelser er begrænset. Vent venligst et anden %i sekunder.
   wwcConfigCacheEnabled: Translator cache aktiveret og sat til en grænse på %i.
   wwctGUIExistingTranslationButton: Overskriv nuværende oversættelsessession
-  wwcOnJoinTranslationNotificationNoSourceLang: Din chat er ved at blive oversat til
-    %o.
   wwcUserDataReloaded: Indlæst alle gemte brugerdata.
   wwcConfigGUISendTranslationChatButton: Send Chat påmindelse til aktiv oversætter
     ved login
@@ -191,7 +178,6 @@ Messages:
     af brugerdata er %i sekunder. Skriv noget større end 10 for at indstille en ny
     værdi, eller noget mindre end 10 for at gå tilbage.
   wwcConfigGUISyncUserDataButton: Skift forsinkelse af synkronisering af brugerdata
-  wwcConfigSyncTime: Automatisk synkronisering af brugerdata fuldført i %i nanosekunder.
   wwcConfigSyncDelayEnabled: Forsinkelse pr. brugerdatasynkronisering indstillet til
     %i sekunder.
   wwcConfigConversationSyncUserDataDelaySuccess: Forsinkelse af brugerdata indstillet
@@ -308,7 +294,30 @@ Messages:
   wwcteOffSender: Oversættelse af enheder deaktiveret.
   wwctGUIEntityButton: Skift objektoversættelse til/ fra
   wwcConfigConversationResponseLimitSuccess: Timeout for svartid er indstillet.
-  wwctCannotTranslateConsole: Du kan ikke oversætte konsolchat!
   wwctrlRateLimitBadInt: Din takst grænse er ikke et gyldigt heltal.
   wwcTranslatorErrorConsole: Der opstod et problem, mens bruger %i forsøgte at oversætte
     deres. Tjek venligst errorLog.txt for flere detaljer.
+  wwctcOffSender: Chatoversættelse deaktiveret.
+  wwctcOnTarget: Chatoversættelse aktiveret for %i.
+  wwctcOnSender: Chatoversættelse aktiveret. Alt, hvad du siger, vil blive oversat!
+  wwctGUIChatButton: Slå chatoversættelse til/ fra
+  wwctcOffTarget: Chatoversættelse deaktiveret for %i.
+  wwcrBegin: Genindlæser WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Oversættelsessessessessionen for %i er blevet
+    stoppet.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat bliver oversat,
+    men du har en aktiv oversættelsessession fra %i til %o.
+  wwctCannotTranslateConsole: Du kan ikke starte en oversættelsessession for konsol!
+  wwctLangToLangStart: Start af en ny oversættelsessession fra %i til %o.
+  wwcOnJoinTranslationNotificationSourceLang: Du har en aktiv oversættelsessession
+    fra %i til %o.
+  wwctAutoTranslateStartOtherPlayer: Start af en ny oversættelsessession for %i til
+    %o.
+  wwctTranslationStopped: Din oversættelsessession er blevet stoppet.
+  wwctLangToLangStartOtherPlayer: Starter en ny oversættelsessession for %o fra %i
+    til %e.
+  wwctAutoTranslateStart: Start af en ny oversættelsessession til %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Du har en aktiv oversættelsessession
+    til %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat bliver oversat,
+    men du har en aktiv oversættelsessession til %o.

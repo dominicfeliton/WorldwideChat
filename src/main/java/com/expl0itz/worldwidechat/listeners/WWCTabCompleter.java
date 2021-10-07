@@ -116,7 +116,8 @@ public class WWCTabCompleter implements TabCompleter {
 				}
 			}
 		} else if ((command.getName().equals("wwcts") || command.getName().equals("wwctb")
-				|| command.getName().equals("wwcti") || command.getName().equals("wwcte")) && args.length == 1) {
+				|| command.getName().equals("wwcti") || command.getName().equals("wwcte")
+				|| command.getName().equals("wwctc")) && args.length == 1) {
 			if (args[0].isEmpty()) {
 				synchronized (main.getActiveTranslators()) {
 					for (ActiveTranslator eaTranslator : main.getActiveTranslators()) {

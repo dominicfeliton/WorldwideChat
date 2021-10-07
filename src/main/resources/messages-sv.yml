@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Översätter målbok...
   wwcConfigDisabledbStats: Inaktiverad bStats.
   wwctsOffSender: Signera översättning inaktiverad.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chatt översätts,
-    men din chatt översätts från %i till %o.
   wwcUpdaterParserFailed: Det gick inte att tolka uppdateringsdata från Github.
-  wwctAutoTranslateStart: Översätter nu all din chatt till %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Den nuvarande hemliga nyckeln
     är %i. Ange en hemlig nyckel för Amazon, eller skriv 0 för att gå tillbaka.
   wwctbOffSender: Boköversättning inaktiverad.
   wwcConfigGUIAmazonTranslateButton: Amazon Översätt
   wwcConfigConversationLangSuccess: Insticksprogrammets språk har ändrats.
   wwcsSuccessfulTranslations: 'Framgångsrika översättningar: %i'
-  wwctTranslationStoppedOtherPlayer: Chattöversättning för %i har stoppats.
   wwcConfigConversationTranslationCacheInput: Den aktuella begränsningen för översättningscachen
     är %i-fraser. Skriv något större än 0 om du vill ange ett nytt värde eller skriv
     0 om du vill inaktivera översättningscachen. Skriv något mindre än 0 för att gå
@@ -58,13 +54,10 @@ Messages:
     en översättare i config.yml.
   wwcConfigGUIQuitButton: Avsluta och spara ändringar
   wwctPlayerNotFound: Spelaren % Jag hittade inte.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chatt översätts,
-    men din chatt översätts till %o.
   wwcConfigGUIAmazonTranslateRegionButton: Ändra Amazonas region
   wwcConfigConversationLangInput: 'Det aktuella insticksspråket är %i. Ange en giltig
     språkkod, eller skriv 0 för att avbryta. Giltiga språkkoder: %o'
   wwcConfigConversationLangInvalid: Ogiltig språkkod!
-  wwctTranslationStopped: Din chattöversättning har stoppats.
   wwcConfigGUIWatsonAPIKeyButton: Ändra Watson API-nyckel
   wwcEnabled: Aktiverad WorldwideChat-version %i.
   wwcgLangToLangStart: Översätter nu global chatt från %i till %o.
@@ -84,7 +77,6 @@ Messages:
     för Watson, eller skriv 0 för att gå tillbaka.
   wwctGUIStopButton: Sluta översätta
   wwcgTranslationStopped: Global chattöversättning har stoppats.
-  wwctAutoTranslateStartOtherPlayer: Nu översätter chatten av %i till %o.
   wwcUpdaterFutureDate: Denna instans av WorldwideChat har en större version än den
     senaste offentliga versionen.
   wwcConfigConversationPrefixSuccess: Prefixet har ändrats.
@@ -95,7 +87,6 @@ Messages:
   wwcConfigCacheDisabled: Translator-cache inaktiverad.
   wwcConfigConversationWatsonURLInput: Den aktuella webbadressen är %i. Ange en tjänstwebbadress
     för Watson, eller skriv 0 för att gå tillbaka.
-  wwcOnJoinTranslationNotificationSourceLang: Din chatt översätts från %i till %o.
   wwcBookDone: Boken översatt framgångsrikt.
   wwctsOnSender: Signera översättning aktiverad. Högerklicka på ett tecken för att
     översätta det!
@@ -120,11 +111,9 @@ Messages:
   wwcConfigGUIPrefixButton: Ändra insticksprefix
   wwctSameLangError: Du kan inte översätta till samma språk!
   wwctGUINewTranslationTarget: Välj ett målspråk
-  wwctLangToLangStartOtherPlayer: Nu översätter chatten av %o från %i till %e.
   wwcConfigConnectionSuccess: Ansluten till %o!
   wwcConfigGUIGoogleTranslateButton: Google Översätt
   wwcsIsActiveTranslator: 'Är aktiv översättare: %i'
-  wwctLangToLangStart: Nu översätter du all din chatt från %i till %o.
   wwcConfigConversationPrefixInput: Det aktuella prefixet är %i. Skriv ett nytt, eller
     skriv 0 för att gå tillbaka.
   wwcConfigGUIPreviousPageButton: Föregående sida
@@ -161,7 +150,6 @@ Messages:
   wwcRateLimit: Dina översättningar är prisbegränsade. Vänta en annan %i sekunder.
   wwcConfigCacheEnabled: Translator-cache aktiverad och satt till en begränsning %i.
   wwctGUIExistingTranslationButton: Skriv över aktuell översättningssession
-  wwcOnJoinTranslationNotificationNoSourceLang: Din chatt översätts till %o.
   wwcUserDataReloaded: Laddade alla sparade användardata.
   wwcConfigGUISendTranslationChatButton: Skicka påminnelse om chatt till Aktiv översättare
     vid inloggning
@@ -192,7 +180,6 @@ Messages:
     av användardata är %i sekunder. Skriv något större än 10 för att ställa in ett
     nytt värde, eller något mindre än 10 för att gå tillbaka.
   wwcConfigGUISyncUserDataButton: Ändra synkroniseringsfördröjning för användardata
-  wwcConfigSyncTime: Automatisk synkronisering av användardata slutfördes i %i nanosekunder.
   wwcConfigSyncDelayEnabled: Fördröjning per användarsynkronisering av data inställd
     till %i sekunder.
   wwcConfigConversationSyncUserDataDelaySuccess: Fördröjning för synkronisering av
@@ -310,7 +297,29 @@ Messages:
   wwcteOffSender: Entitetsöversättning inaktiverad
   wwctGUIEntityButton: Växla entitetsöversättning
   wwcConfigConversationResponseLimitSuccess: Tidsgräns för svar har ställts in.
-  wwctCannotTranslateConsole: Du kan inte översätta konsolchatt!
   wwctrlRateLimitBadInt: Din prisgräns är inte ett giltigt heltal.
   wwcTranslatorErrorConsole: Ett problem uppstod när användare %i försökte översätta
     dem. Kontrollera errorLog.txt för mer information.
+  wwctcOffSender: Chatt översättning inaktiverad.
+  wwctcOnTarget: Översättning av chatt aktiverad för %i.
+  wwctcOnSender: Översättning av chatt aktiverad. Allt du säger kommer att översättas!
+  wwctGUIChatButton: Växla Chat Översättning
+  wwctcOffTarget: Översättning av chatt inaktiverad för %i.
+  wwcrBegin: Ladda om WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Översättningssession för %i har stoppats.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chatt översätts,
+    men du har en aktiv översättningssession från %i till %o.
+  wwctCannotTranslateConsole: Du kan inte starta en översättningssession för konsolen!
+  wwctLangToLangStart: Starta en ny översättningssession från %i till %o.
+  wwcOnJoinTranslationNotificationSourceLang: Du har en aktiv översättningssession
+    från %i till %o.
+  wwctAutoTranslateStartOtherPlayer: Starta en ny översättningssession för %i till
+    %o.
+  wwctTranslationStopped: Din översättningssession har stoppats.
+  wwctLangToLangStartOtherPlayer: Starta en ny översättningssession för %o från %i
+    till %e.
+  wwctAutoTranslateStart: Starta en ny översättningssession till %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Du har en aktiv översättningssession
+    till %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chatt översätts,
+    men du har en aktiv översättningssession till %o.

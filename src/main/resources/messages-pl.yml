@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Tłumaczenie książki docelowej...
   wwcConfigDisabledbStats: Wyłączone bStats.
   wwctsOffSender: Tłumaczenie podpisu wyłączone.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Czat globalny jest tłumaczony,
-    ale twój czat jest tłumaczony z %i do %o.
   wwcUpdaterParserFailed: Nie można przeanalizować danych aktualizacji z Githuba.
-  wwctAutoTranslateStart: Teraz tłumaczy cały swój czat do %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Bieżący klucz tajny to %i. Wprowadź
     tajny klucz dla Amazon lub wpisz 0, aby wrócić.
   wwctbOffSender: Tłumaczenie książki wyłączone.
   wwcConfigGUIAmazonTranslateButton: Amazon Tłumacz
   wwcConfigConversationLangSuccess: Język wtyczki został pomyślnie zmieniony.
   wwcsSuccessfulTranslations: 'Udane tłumaczenia: %i'
-  wwctTranslationStoppedOtherPlayer: Tłumaczenie czatu dla %i zostało zatrzymane.
   wwcConfigConversationTranslationCacheInput: Bieżący limit pamięci podręcznej tłumaczenia
     %i frazy. Wpisz wartość większą niż 0, aby ustawić nową wartość, lub wpisz 0,
     aby wyłączyć pamięć podręczną tłumaczenia. Wpisz mniej niż 0, aby wrócić.
@@ -57,13 +53,10 @@ Messages:
     tylko jednego tłumacza w config.yml.
   wwcConfigGUIQuitButton: Zakończ i zapisz zmiany
   wwctPlayerNotFound: Gracza %Nie znaleziono.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Czat globalny jest tłumaczony,
-    ale twój czat jest tłumaczony na %o.
   wwcConfigGUIAmazonTranslateRegionButton: Zmień region Amazon
   wwcConfigConversationLangInput: 'Bieżący język wtyczki to %i. Wprowadź prawidłowy
     kod języka lub wpisz 0, aby anulować. Prawidłowe kody językowe: %o'
   wwcConfigConversationLangInvalid: Nieprawidłowy kod języka!
-  wwctTranslationStopped: Twoje tłumaczenie czatu zostało zatrzymane.
   wwcConfigGUIWatsonAPIKeyButton: Zmień klucz API Watson
   wwcEnabled: Włączona wersja WorldwideChat %i.
   wwcgLangToLangStart: Teraz tłumaczy globalny czat z %i do %o.
@@ -83,7 +76,6 @@ Messages:
     API dla Watson lub wpisz 0, aby wrócić.
   wwctGUIStopButton: Zatrzymaj tłumaczenie
   wwcgTranslationStopped: Globalne tłumaczenie czatu zostało zatrzymane.
-  wwctAutoTranslateStartOtherPlayer: Teraz tłumaczy czat %i do %o.
   wwcUpdaterFutureDate: Ta instancja WorldwideChat ma większą wersję niż najnowsza
     publiczna.
   wwcConfigConversationPrefixSuccess: Przedrostek zmieniono pomyślnie.
@@ -94,7 +86,6 @@ Messages:
   wwcConfigCacheDisabled: Pamięć podręczna translatora
   wwcConfigConversationWatsonURLInput: Bieżący adres URL to %i. Wprowadź adres URL
     usługi dla Watson lub wpisz 0, aby wrócić.
-  wwcOnJoinTranslationNotificationSourceLang: Twój czat jest tłumaczony z %i do %o.
   wwcBookDone: Książka przetłumaczona pomyślnie
   wwctsOnSender: Tłumaczenie podpisów włączone. Kliknij prawym przyciskiem myszy znak,
     aby go przetłumaczyć!
@@ -119,11 +110,9 @@ Messages:
   wwcConfigGUIPrefixButton: Zmień prefiks wtyczki
   wwctSameLangError: Nie możesz tłumaczyć na ten sam język!
   wwctGUINewTranslationTarget: Wybierz język docelowy
-  wwctLangToLangStartOtherPlayer: Teraz tłumaczy czat z %o z %i do %e.
   wwcConfigConnectionSuccess: Pomyślnie nawiązano połączenie z %o!
   wwcConfigGUIGoogleTranslateButton: Tłumacz Google
   wwcsIsActiveTranslator: 'Jest aktywnym translatorem: %i'
-  wwctLangToLangStart: Teraz tłumaczy cały czat z %i do %o.
   wwcConfigConversationPrefixInput: Bieżący przedrostek to %i. Wpisz nowy lub wpisz
     0, aby wrócić.
   wwcConfigGUIPreviousPageButton: Poprzednia strona
@@ -160,7 +149,6 @@ Messages:
   wwcConfigCacheEnabled: Pamięć podręczna translatora włączona i ustawiona na ograniczenie
     %i.
   wwctGUIExistingTranslationButton: Zastąp bieżącą sesję tłumaczenia
-  wwcOnJoinTranslationNotificationNoSourceLang: Twój czat jest tłumaczony na %o.
   wwcUserDataReloaded: Wczytano wszystkie zapisane dane użytkownika.
   wwcConfigGUISendTranslationChatButton: Wyślij przypomnienie o czacie do Active Translator
     przy logowaniu
@@ -191,8 +179,6 @@ Messages:
     użytkownika wynosi %i sekund. Wpisz wartość większą niż 10, aby ustawić nową wartość
     lub wartość mniejszą niż 10, aby wrócić.
   wwcConfigGUISyncUserDataButton: Zmień opóźnienie synchronizacji danych użytkownika
-  wwcConfigSyncTime: Automatyczna synchronizacja danych użytkownika zakończona w %i
-    nanosekund.
   wwcConfigSyncDelayEnabled: Opóźnienie synchronizacji danych użytkownika ustawione
     na %i sekund.
   wwcConfigConversationSyncUserDataDelaySuccess: Ustawiono opóźnienie synchronizacji
@@ -311,7 +297,28 @@ Messages:
   wwcteOffSender: Tłumaczenie encji wyłączone.
   wwctGUIEntityButton: Przełącz translację encji
   wwcConfigConversationResponseLimitSuccess: Ustawiono limit czasu odpowiedzi pomyślnie.
-  wwctCannotTranslateConsole: Nie możesz przetłumaczyć czatu konsoli!
   wwctrlRateLimitBadInt: Twój limit szybkości nie jest prawidłową liczbą całkowitą.
   wwcTranslatorErrorConsole: Wystąpił problem podczas próby tłumaczenia przez użytkownik
     %i. Sprawdź errorLog.txt, aby uzyskać więcej szczegółów.
+  wwctcOffSender: Tłumaczenie czatu wyłączone.
+  wwctcOnTarget: Tłumaczenie czatu włączone dla %i.
+  wwctcOnSender: Tłumaczenie czatu włączone. Wszystko, co powiesz, zostanie przetłumaczone!
+  wwctGUIChatButton: Przełącz tłumaczenie czatu
+  wwctcOffTarget: Tłumaczenie czatu wyłączone dla %i.
+  wwcrBegin: Przeładowanie WorldwideChat
+  wwctTranslationStoppedOtherPlayer: Sesja tłumaczeń dla %i została zatrzymana.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Czat globalny jest tłumaczony,
+    ale masz aktywną sesję tłumaczeniową od %i do %o.
+  wwctCannotTranslateConsole: Nie można rozpocząć sesji tłumaczenia dla konsoli!
+  wwctLangToLangStart: Rozpoczynanie nowej sesji tłumaczenia od %i do %o.
+  wwcOnJoinTranslationNotificationSourceLang: Masz aktywną sesję tłumaczenia od %i
+    do %o.
+  wwctAutoTranslateStartOtherPlayer: Rozpoczynanie nowej sesji tłumaczenia dla %i
+    do %o.
+  wwctTranslationStopped: Twoja sesja tłumaczeń została zatrzymana.
+  wwctLangToLangStartOtherPlayer: Rozpoczynanie nowej sesji tłumaczenia %o z %i do
+    %e.
+  wwctAutoTranslateStart: Rozpoczynanie nowej sesji tłumaczenia %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Masz aktywną sesję tłumaczenia %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globalny czat jest tłumaczony,
+    ale masz aktywną sesję tłumaczeniową do %o.

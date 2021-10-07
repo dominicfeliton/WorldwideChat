@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Превеждане на учебника...
   wwcConfigDisabledbStats: БСТАТС за инвалиди.
   wwctsOffSender: Преводът е изключен.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобалният чат се превежда,
-    но вашият чат се превежда от %i към %o.
   wwcUpdaterParserFailed: Неуспешно анализиране на данни за актуализация от GitHub.
-  wwctAutoTranslateStart: Сега превеждате целия си чат на %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Настоящият таен ключ е %i. Моля,
     въведете таен ключ за Amazon или въведете 0, за да се върнете.
   wwctbOffSender: Преводът на книги забранен.
   wwcConfigGUIAmazonTranslateButton: Амазонка превод
   wwcConfigConversationLangSuccess: Езикът на приставката се промени успешно.
   wwcsSuccessfulTranslations: 'Успешни преводи: %i'
-  wwctTranslationStoppedOtherPlayer: Преводът на чат за %i е спрян.
   wwcConfigConversationTranslationCacheInput: Текущият кеш лимит за превод е %i фрази.
     Въведете нещо по-голямо от 0, за да зададете нова стойност, или въведете 0, за
     да забраните кеша за превод. Напиши нещо по-малко от 0, за да се върнеш.
@@ -58,13 +54,10 @@ Messages:
     само един преводач във вашия config.yml.
   wwcConfigGUIQuitButton: Изход и записване на промените
   wwctPlayerNotFound: Играч % Не съм намерил.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобалният чат се превежда,
-    но вашият чат се превежда на %o.
   wwcConfigGUIAmazonTranslateRegionButton: Промяна на Амазон
   wwcConfigConversationLangInput: 'Текущият език на приставката е %i. Моля, въведете
     валиден език или въведете 0, за да отмените. Валидни кодове на езика: %o'
   wwcConfigConversationLangInvalid: Невалиден езиков код!
-  wwctTranslationStopped: Вашият чат превод е спрян.
   wwcConfigGUIWatsonAPIKeyButton: Промяна на API ключа на Уотсън
   wwcEnabled: Разрешена версия на WorldwideChat %i.
   wwcgLangToLangStart: Сега превежда глобален чат от %i към %o.
@@ -85,7 +78,6 @@ Messages:
     ключ за Уотсън или въведете 0 за връщане.
   wwctGUIStopButton: Спиране на превода
   wwcgTranslationStopped: Глобалният чат превод е спрян.
-  wwctAutoTranslateStartOtherPlayer: Сега превеждате чата на %i към %o.
   wwcUpdaterFutureDate: Този екземпляр на WorldwideChat има по-голяма версия от последната
     публична.
   wwcConfigConversationPrefixSuccess: Префиксът е променен успешно.
@@ -96,7 +88,6 @@ Messages:
   wwcConfigCacheDisabled: Кеш на преводача забранен.
   wwcConfigConversationWatsonURLInput: Настоящият URL адрес е %i. Моля, въведете URL
     адрес на услугата за Уотсън или въведете 0, за да се върнете.
-  wwcOnJoinTranslationNotificationSourceLang: Вашият чат се превежда от %i към %o.
   wwcBookDone: Книгата е преведена успешно.
   wwctsOnSender: Разрешено е преводът. Щракнете с десния бутон върху знак, за да го
     преведете!
@@ -122,11 +113,9 @@ Messages:
   wwcConfigGUIPrefixButton: Промяна на представката на приставката
   wwctSameLangError: Не можете да превеждате на един и същ език!
   wwctGUINewTranslationTarget: Избор на целеви език
-  wwctLangToLangStartOtherPlayer: Сега превежда чата на %o от %i към %e.
   wwcConfigConnectionSuccess: Успешно свързан към %o!
   wwcConfigGUIGoogleTranslateButton: Превод на Google
   wwcsIsActiveTranslator: 'Активен преводач: %i'
-  wwctLangToLangStart: Сега превеждате целия си чат от %i към %o.
   wwcConfigConversationPrefixInput: Текущият префикс е %i. Моля, въведете нов или
     въведете 0, за да се върнете.
   wwcConfigGUIPreviousPageButton: Предишна страница
@@ -161,7 +150,6 @@ Messages:
   wwcRateLimit: Преводите ви са ограничени. Моля, изчакайте друг %i секунди.
   wwcConfigCacheEnabled: Кеш на преводача е активиран и зададен на лимит от %i.
   wwctGUIExistingTranslationButton: Презаписване на текущата сесия за превод
-  wwcOnJoinTranslationNotificationNoSourceLang: Вашият чат се превежда на %o.
   wwcUserDataReloaded: Заредени всички запазени потребителски данни.
   wwcConfigGUISendTranslationChatButton: Изпращане на напомняне за чат на активен
     преводач при влизане
@@ -193,8 +181,6 @@ Messages:
     нова стойност, или нещо по-малко от 10, за да се върнете.
   wwcConfigGUISyncUserDataButton: Промяна на закъснението за синхронизиране на потребителски
     данни
-  wwcConfigSyncTime: Автоматичната синхронизация на потребителските данни е завършена
-    в %i наносекунди.
   wwcConfigSyncDelayEnabled: Закъснение за синхронизиране на данни от потребител до
     %i секунди.
   wwcConfigConversationSyncUserDataDelaySuccess: Задаване на закъснение за синхронизиране
@@ -319,7 +305,27 @@ Messages:
   wwctGUIEntityButton: Превключване на превод на обект
   wwcConfigConversationResponseLimitSuccess: Времето за изчакване на отговор зададено
     успешно.
-  wwctCannotTranslateConsole: Не можете да превеждате конзолен чат!
   wwctrlRateLimitBadInt: Вашият лимит на скоростта не е валидно цяло число.
   wwcTranslatorErrorConsole: Проблем възникна при опит за превод на потребител %i.
     Моля, проверете errorLog.txt за повече подробности.
+  wwctcOffSender: Чат превод забранен.
+  wwctcOnTarget: Преводът на чат е разрешен за %i.
+  wwctcOnSender: Разрешен чат превод. Всичко, което кажете, ще бъде преведено!
+  wwctGUIChatButton: Превключване на чат превод
+  wwctcOffTarget: Преводът на чат е забранен за %i.
+  wwcrBegin: Презареждане на WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Сесията за превод за %i беше спряна.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобалният чат се превежда,
+    но имате активна сесия за превод от %i до %o.
+  wwctCannotTranslateConsole: Не можете да започнете сесия за превод за конзола!
+  wwctLangToLangStart: Започване на нова сесия за превод от %i до %o.
+  wwcOnJoinTranslationNotificationSourceLang: Имате активна сесия за превод от %i
+    до %o.
+  wwctAutoTranslateStartOtherPlayer: Започване на нова сесия за превод за %i до %o.
+  wwctTranslationStopped: Преводаческата ви сесия беше спряна.
+  wwctLangToLangStartOtherPlayer: Започване на нова сесия за превод за %o от %i до
+    %e.
+  wwctAutoTranslateStart: Започване на нова сесия за превод на %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Имате активна сесия за превод до %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Превежда се глобален
+    чат, но имате активна сесия за превод до %o.

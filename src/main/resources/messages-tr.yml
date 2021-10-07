@@ -24,17 +24,13 @@ Messages:
   wwcBookTranslateStart: Hedef kitabı çeviriyorum...
   wwcConfigDisabledbStats: Devre dışı bırakılmış bStats.
   wwctsOffSender: İmza çevirisi devre dışı
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Küresel sohbet çevriliyor,
-    ancak sohbetiniz %i konumundan %o'ya çevriliyor.
   wwcUpdaterParserFailed: Github'dan güncelleme verileri ayrıştırılamadı.
-  wwctAutoTranslateStart: Şimdi tüm sohbetinizi %o'ya çevriliyor.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Geçerli gizli anahtar %i. Lütfen
     Amazon için bir gizli anahtar girin veya geri dönmek için 0 yazın.
   wwctbOffSender: Kitap çevirisi devre dışı.
   wwcConfigGUIAmazonTranslateButton: Amazon Tercüme
   wwcConfigConversationLangSuccess: Eklenti dili başarıyla değiştirildi.
   wwcsSuccessfulTranslations: 'Başarılı Çeviriler: %i'
-  wwctTranslationStoppedOtherPlayer: '%i için sohbet çevirisi durduruldu.'
   wwcConfigConversationTranslationCacheInput: Geçerli çeviri önbellek sınırı %i ifadeleri.
     Yeni bir değer ayarlamak için 0'dan büyük bir şey yazın veya çeviri önbelleğini
     devre dışı bırakmak için 0 yazın. Geri dönmek için 0'dan az bir şey yazın.
@@ -56,13 +52,10 @@ Messages:
     yalnızca bir çevirmen etkinleştirin.
   wwcConfigGUIQuitButton: Değişiklikleri Kaydet
   wwctPlayerNotFound: Oyuncu %i bulunamadı.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Küresel sohbet çevriliyor,
-    ancak sohbetiniz %o'ya çevriliyor.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon Bölgesini Değiştir
   wwcConfigConversationLangInput: 'Geçerli eklenti dili %i. Lütfen geçerli bir dil
     kodu girin veya iptal etmek için 0 yazın. Geçerli dil kodları: %o'
   wwcConfigConversationLangInvalid: Geçersiz dil kodu!
-  wwctTranslationStopped: Sohbet çeviriniz durduruldu.
   wwcConfigGUIWatsonAPIKeyButton: Watson API Anahtarını Değiştir
   wwcEnabled: WorldwideChat sürümün %i etkinleştirildi.
   wwcgLangToLangStart: Şimdi küresel sohbeti %i ile %o'ya çevriliyor.
@@ -81,7 +74,6 @@ Messages:
     bir API anahtarı girin veya geri dönmek için 0 yazın.
   wwctGUIStopButton: Çevirmeyi Durdur
   wwcgTranslationStopped: Küresel sohbet çevirisi durduruldu.
-  wwctAutoTranslateStartOtherPlayer: Şimdi %i sohbeti %o'ya çevriliyor.
   wwcUpdaterFutureDate: WorldwideChat'in bu örneği, en son halka açık olandan daha
     büyük bir sürüme sahiptir.
   wwcConfigConversationPrefixSuccess: Önek başarıyla değiştirildi.
@@ -91,7 +83,6 @@ Messages:
   wwcConfigCacheDisabled: Çevirmen önbelleği devre dışı.
   wwcConfigConversationWatsonURLInput: Geçerli URL %i. Lütfen Watson için bir hizmet
     URL'si girin veya geri dönmek için 0 yazın.
-  wwcOnJoinTranslationNotificationSourceLang: Sohbetiniz %i konumundan %o'ya çevriliyor.
   wwcBookDone: Kitap başarıyla çevrildi.
   wwctsOnSender: İmza çevirisi etkin. Çevirmek için bir işareti sağ tıklayın!
   watsonColorCodeWarning: Renk kodlarını kullanmak size öngörülemeyen sonuçlar verebilir.
@@ -113,11 +104,9 @@ Messages:
   wwcConfigGUIPrefixButton: Eklenti Öneki Değiştir
   wwctSameLangError: Aynı dile tercüme edemezsin!
   wwctGUINewTranslationTarget: Hedef Dil Seçin
-  wwctLangToLangStartOtherPlayer: Şimdi %o sohbeti %i ile %e çevriliyor.
   wwcConfigConnectionSuccess: '%o!'
   wwcConfigGUIGoogleTranslateButton: Google Çevir
   wwcsIsActiveTranslator: 'Etkin Çevirmen: %i'
-  wwctLangToLangStart: Şimdi tüm sohbetinizi %i konumundan %o'ya çevriliyor.
   wwcConfigConversationPrefixInput: Geçerli önek %i. Lütfen yeni bir tane yazın veya
     geri dönmek için 0 yazın.
   wwcConfigGUIPreviousPageButton: Önceki Sayfa
@@ -153,7 +142,6 @@ Messages:
   wwcRateLimit: Çevirileriniz oranı sınırlıdır. Lütfen %i saniye daha bekleyin.
   wwcConfigCacheEnabled: Çevirmen önbelleği etkinleştirildi ve %i sınırına ayarlandı.
   wwctGUIExistingTranslationButton: Geçerli Çeviri Oturumunun Üzerine Yaz
-  wwcOnJoinTranslationNotificationNoSourceLang: Sohbetin %o'ya çevriliyor.
   wwcUserDataReloaded: Kaydedilen tüm kullanıcı verilerini yüklendi.
   wwcConfigGUISendTranslationChatButton: Oturum Açan Aktif Çevirmen'e Sohbet Hatırlatıcısı
     Gönder
@@ -184,7 +172,6 @@ Messages:
     geçerli gecikme %i saniyedir. Yeni bir değer ayarlamak için 10'dan büyük bir şey
     yazın veya geri dönmek için 10'dan küçük bir şey yazın.
   wwcConfigGUISyncUserDataButton: Kullanıcı Veri Eşitleme Gecikmesini Değiştir
-  wwcConfigSyncTime: Otomatik kullanıcı veri eşitlemesi %i nanosaniye içinde tamamlandı.
   wwcConfigSyncDelayEnabled: Kullanıcı veri eşitleme başına gecikme %i saniye olarak
     ayarlanır.
   wwcConfigConversationSyncUserDataDelaySuccess: Kullanıcı veri eşitleme gecikmesi
@@ -296,7 +283,27 @@ Messages:
   wwcteOffSender: Varlık çevirisi devre dışı.
   wwctGUIEntityButton: Varlık Çevirisi Aç/Kapat
   wwcConfigConversationResponseLimitSuccess: Yanıt zaman aşımı başarıyla ayarlandı.
-  wwctCannotTranslateConsole: Konsol sohbetini çeviremezsiniz!
   wwctrlRateLimitBadInt: Hız limitiniz geçerli bir tamsayı değil.
   wwcTranslatorErrorConsole: '%i kullanıcısı çevirisini denerken bir sorun oluştu.
     Daha fazla ayrıntı için errorLog.txt dosyasını kontrol edin.'
+  wwctcOffSender: Sohbet çevirisi devre dışı.
+  wwctcOnTarget: '%i için sohbet çevirisi etkinleştirildi.'
+  wwctcOnSender: Sohbet çevirisi etkinleştirildi. Söyleyeceğin her şey tercüme edilecek!
+  wwctGUIChatButton: Sohbet Çevirisine Geçiş
+  wwctcOffTarget: '%i için sohbet çevirisi devre dışı bırakıldı'
+  wwcrBegin: WorldwideChat yeniden yükleniyor...
+  wwctTranslationStoppedOtherPlayer: '%i için çeviri oturumu durduruldu.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Küresel sohbet çevriliyor,
+    ancak %i ile %o arasında etkin bir çeviri oturumunuz var.
+  wwctCannotTranslateConsole: Konsol için çeviri oturumu başlatamazsınız!
+  wwctLangToLangStart: '%i ile %o arasında yeni bir çeviri oturumu başlatılıyor.'
+  wwcOnJoinTranslationNotificationSourceLang: '%i ile %o arasında etkin bir çeviri
+    oturumunuz var.'
+  wwctAutoTranslateStartOtherPlayer: '%i ile %o için yeni bir çeviri oturumu başlatılıyor.'
+  wwctTranslationStopped: Çeviri oturumunuz durduruldu.
+  wwctLangToLangStartOtherPlayer: '%o için %i ile %e yeni bir çeviri oturumu başlatılıyor.'
+  wwctAutoTranslateStart: '%o''ya yeni bir çeviri oturumu başlatılıyor.'
+  wwcOnJoinTranslationNotificationNoSourceLang: '%o için etkin bir çeviri oturumunuz
+    var.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Küresel sohbet çevriliyor,
+    ancak %o konumuna etkin bir çeviri oturumunuz var.

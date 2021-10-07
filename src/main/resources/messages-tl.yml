@@ -25,10 +25,7 @@ Messages:
   wwcBookTranslateStart: Pagsasalin ng target na aklat...
   wwcConfigDisabledbStats: Hindi Pinagana ang bStats.
   wwctsOffSender: Hindi pinagana ang pagsasalin ng pag-sign.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Ang global chat ay isinalin,
-    ngunit ang iyong chat ay isinalin mula sa %i sa %o.
   wwcUpdaterParserFailed: Nabigong i-parse ang data ng pag-update mula sa Github.
-  wwctAutoTranslateStart: Ngayon ay isinasalin ang lahat ng iyong chat sa %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Ang kasalukuyang sikretong susi
     ay %i. Pakipasok ang isang lihim na susi para sa Amazon, o i-type ang 0 upang
     bumalik.
@@ -36,7 +33,6 @@ Messages:
   wwcConfigGUIAmazonTranslateButton: Isalin
   wwcConfigConversationLangSuccess: Matagumpay na nagbago ang wika ng plugin.
   wwcsSuccessfulTranslations: 'Mga Matagumpay na Pagsasalin: %i'
-  wwctTranslationStoppedOtherPlayer: Ang pagsasalin ng chat para sa %i ay tumigil.
   wwcConfigConversationTranslationCacheInput: Ang kasalukuyang limitasyon ng cache
     ng pagsasalin ay %i parirala. I-type ang anumang mas malaki kaysa sa 0 upang magtakda
     ng bagong halaga, o i-type ang 0 upang huwag paganahin ang cache ng pagsasalin.
@@ -61,14 +57,11 @@ Messages:
     paganahin lamang ang isang tagasalin sa iyong config.yml.
   wwcConfigGUIQuitButton: Lumabas at I-save ang Mga Pagbab
   wwctPlayerNotFound: Ang manlalaro ng %hindi ko natagpuan.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Ang pandaigdigang chat
-    ay isinalin, ngunit ang iyong chat ay isinalin sa %o.
   wwcConfigGUIAmazonTranslateRegionButton: Baguhin ang rehiyon ng Amazon
   wwcConfigConversationLangInput: 'Ang kasalukuyang wika ng plugin ay %i Mangyaring
     magpasok ng wastong code ng wika, o i-type ang 0 upang kanselahin. Walid na code
     ng wika: %o'
   wwcConfigConversationLangInvalid: Di-wastong code ng wika!
-  wwctTranslationStopped: Ang iyong chat translation ay tumigil.
   wwcConfigGUIWatsonAPIKeyButton: Baguhin ang Watson API Key
   wwcEnabled: Pinagana ang bersyong WorldwideChat %i.
   wwcgLangToLangStart: Ngayon ay nagsasalin ng global chat mula sa %i sa %o.
@@ -88,7 +81,6 @@ Messages:
     ang API key para sa Watson, o i-type ang 0 upang bumalik.
   wwctGUIStopButton: Itigil ang Pagsasalin
   wwcgTranslationStopped: Ang pagsasalin ng pandaigdigang chat ay tumigil.
-  wwctAutoTranslateStartOtherPlayer: Ngayon isinasalin ang chat ng %i sa %o.
   wwcUpdaterFutureDate: Ang halimbawang ito ng WorldwideChat ay may mas malaking bersyon
     kaysa sa pinakabagong pampublikong isa.
   wwcConfigConversationPrefixSuccess: Matagumpay na nagbago ang prefix.
@@ -99,8 +91,6 @@ Messages:
   wwcConfigCacheDisabled: Hindi pinagana ang cache ng tagasalin.
   wwcConfigConversationWatsonURLInput: Ang kasalukuyang URL ay %i. Pakipasok ang URL
     ng serbisyo para sa Watson, o i-type ang 0 upang bumalik.
-  wwcOnJoinTranslationNotificationSourceLang: Ang iyong chat ay isinalin mula sa %i
-    sa %o.
   wwcBookDone: Book matagumpay na isinalin.
   wwctsOnSender: Pinagana ang pagsasalin ng pag-sign. Mag-right-click sa isang senyas
     upang isalin ito!
@@ -128,12 +118,9 @@ Messages:
   wwcConfigGUIPrefixButton: Baguhin ang Prefix ng Plugin
   wwctSameLangError: Hindi ka maaaring isalin sa parehong wika!
   wwctGUINewTranslationTarget: Pumili ng isang Target na Wika
-  wwctLangToLangStartOtherPlayer: Ngayon isinasalin ang chat ng %o mula sa %i sa %e.
   wwcConfigConnectionSuccess: Matagumpay na nakakonekta sa %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Ay Aktibong Tagasalin: %i'
-  wwctLangToLangStart: Ngayon ay isinasalin ang lahat ng iyong chat mula sa %i sa
-    %o.
   wwcConfigConversationPrefixInput: Ang kasalukuyang prefix ay %i. Paki-type ang bago,
     o i-type ang 0 upang bumalik.
   wwcConfigGUIPreviousPageButton: Nakaraang Pahina
@@ -173,7 +160,6 @@ Messages:
   wwcConfigCacheEnabled: Pinagana ang cache ng tagasalin at nakatakda sa limitasyon
     ng %i.
   wwctGUIExistingTranslationButton: Patungan ang Kasalukuyang Session ng pagsasalin
-  wwcOnJoinTranslationNotificationNoSourceLang: Ang iyong chat ay isinalin sa %o.
   wwcUserDataReloaded: Na-load ang lahat ng naka-save na data ng user.
   wwcConfigGUISendTranslationChatButton: Magpadala ng Paalala sa Chat sa Aktibong
     Tagasalin sa Pag-login
@@ -206,7 +192,6 @@ Messages:
     pag-sync ng data ng user ay %i segundo. I-type ang anumang mas malaki kaysa sa
     10 upang magtakda ng bagong halaga, o anumang mas mababa sa 10 upang bumalik.
   wwcConfigGUISyncUserDataButton: Baguhin ang Pag-sync ng Data ng User
-  wwcConfigSyncTime: Nakumpleto ang awtomatikong pag-sync ng data ng user sa %i nanoseconds.
   wwcConfigSyncDelayEnabled: Nakatakda ang pagkaantala sa bawat pag-sync ng data ng
     user sa %i segundo.
   wwcConfigConversationSyncUserDataDelaySuccess: Matagumpay na naitakda ang pag-sync
@@ -338,8 +323,31 @@ Messages:
   wwctGUIEntityButton: I-toggle ang Entity Translation
   wwcConfigConversationResponseLimitSuccess: Matagumpay na itinakda ang timeout ng
     tugon.
-  wwctCannotTranslateConsole: Hindi mo maaaring isalin ang console chat!
   wwctrlRateLimitBadInt: Ang iyong limitasyon sa rate ay hindi wastong integer.
   wwcTranslatorErrorConsole: Nagkaroon ng problema habang tinatangka ng gumagamit
     %i ang kanilang pagsasalin. Mangyaring suriin errorLog.txt para sa higit pang
     mga detalye.
+  wwctcOffSender: Hindi pinagana ang pagsasalin ng chat.
+  wwctcOnTarget: Pinagana ang pagsasalin ng chat para sa %i.
+  wwctcOnSender: Pinagana ang pagsasalin ng chat. Anumang sasabihin mo ay isasalin!
+  wwctGUIChatButton: I-toggle ang Pagsasalin ng Chat
+  wwctcOffTarget: Hindi pinagana ang pagsasalin ng chat para sa %i.
+  wwcrBegin: I-reload ang WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Ang sesyon ng pagsasalin para sa %i ay tumigil.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Isinasalin ang pandaigdigang
+    chat, ngunit mayroon kang aktibong sesyon ng pagsasalin mula sa %i sa %o.
+  wwctCannotTranslateConsole: Hindi ka maaaring magsimula ng sesyon ng pagsasalin
+    para sa console!
+  wwctLangToLangStart: Simula ng bagong sesyon ng pagsasalin mula sa %i sa %o.
+  wwcOnJoinTranslationNotificationSourceLang: Mayroon kang aktibong sesyon ng pagsasalin
+    mula sa %i sa %o.
+  wwctAutoTranslateStartOtherPlayer: Simula ng bagong sesyon ng pagsasalin para sa
+    %i sa %o.
+  wwctTranslationStopped: Ang iyong sesyon ng pagsasalin ay tumigil.
+  wwctLangToLangStartOtherPlayer: Simula ng bagong sesyon ng pagsasalin para sa %o
+    mula sa %i sa %e.
+  wwctAutoTranslateStart: Simula ng bagong sesyon ng pagsasalin sa %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Mayroon kang aktibong sesyon ng pagsasalin
+    sa %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Isinasalin ang pandaigdigang
+    chat, ngunit mayroon kang aktibong sesyon ng pagsasalin sa %o.

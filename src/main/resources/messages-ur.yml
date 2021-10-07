@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: ہدف کتاب کا ترجمہ...
   wwcConfigDisabledbStats: غیر فعال bStats.
   wwctsOffSender: معذور سائن ترجمہ.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: گلوبل چیٹ کا ترجمہ کیا
-    جا رہا ہے، لیکن آپ کی بات کا ترجمہ %i سے %o تک کیا جا رہا ہے۔
   wwcUpdaterParserFailed: Github سے اپ ڈیٹ ڈیٹا کا تجزیہ کرنے میں ناکام.
-  wwctAutoTranslateStart: اب آپ کی تمام چیٹ کو %o میں ترجمہ کرنا۔
   wwcConfigConversationAmazonTranslateSecretKeyInput: موجودہ خفیہ کلید %i ہے، برائے
     مہربانی ایمیزون کے لئے ایک خفیہ کلید ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
   wwctbOffSender: کتاب ترجمہ معذور.
   wwcConfigGUIAmazonTranslateButton: ایمیزون ترجمہ
   wwcConfigConversationLangSuccess: پلگ ان کی زبان کامیابی سے تبدیل ہو گئی۔
   wwcsSuccessfulTranslations: 'کامیاب ترجمہ: %i'
-  wwctTranslationStoppedOtherPlayer: '%i کے لیے بات چیت کا ترجمہ روکا گیا ہے۔'
   wwcConfigConversationTranslationCacheInput: موجودہ ترجمہ کی کیش کی حد %i جملے ہے۔
     نئی قدر مقرر کرنے کے لئے 0 سے زیادہ کچھ ٹائپ کریں، یا ترجمہ کیش کو غیر فعال کرنے
     کے لئے 0 ٹائپ کریں. واپس جانے کے لئے 0 سے کم کچھ بھی ٹائپ کریں.
@@ -57,13 +53,10 @@ Messages:
     میں صرف ایک مترجم کو فعال کریں.
   wwcConfigGUIQuitButton: تبدیلی سے باہر نکلیں اور محفوظ کریں
   wwctPlayerNotFound: کھلاڑی میں %مجھے نہیں ملا
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: گلوبل چیٹ کا ترجمہ کیا
-    جا رہا ہے، لیکن آپ کی بات کا ترجمہ %o میں کیا جا رہا ہے۔
   wwcConfigGUIAmazonTranslateRegionButton: ایمیزون علاقہ تبدیل کریں
   wwcConfigConversationLangInput: 'موجودہ پلگ ان زبان %i ہے برائے مہربانی ایک درست
     زبان کوڈ درج کریں، یا منسوخ کرنے کیلئے 0 ٹائپ کریں۔ درست زبان کوڈ: %o'
   wwcConfigConversationLangInvalid: غلط زبان کا کوڈ!
-  wwctTranslationStopped: آپ کی گفتگو کا ترجمہ روک دیا گیا ہے۔
   wwcConfigGUIWatsonAPIKeyButton: واٹسن API کی کلید تبدیل کریں
   wwcEnabled: فعال ورلڈ وائڈ ہاٹ ورژن %i.
   wwcgLangToLangStart: اب %i سے %o تک گلوبل چیٹ کا ترجمہ کر رہا ہے۔
@@ -83,7 +76,6 @@ Messages:
     API کلید، یا 0 ٹائپ واپس جانے کے لئے.
   wwctGUIStopButton: ترجمے کو روکیں
   wwcgTranslationStopped: گلوبل چیٹ ترجمہ روک دیا گیا ہے.
-  wwctAutoTranslateStartOtherPlayer: اب %i کی چیٹ میں %o پر ترجمہ کر رہا ہے۔
   wwcUpdaterFutureDate: WorldwideChat کی یہ مثال تازہ ترین عوامی ایک سے زیادہ ورژن
     ہے.
   wwcConfigConversationPrefixSuccess: سابقہ کامیابی سے تبدیل ہو گیا۔
@@ -94,8 +86,6 @@ Messages:
   wwcConfigCacheDisabled: مترجم کی کیش غیر فعال
   wwcConfigConversationWatsonURLInput: موجودہ URL %i ہے، برائے مہربانی واٹسن کے لئے
     سروس یو آر ایل ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔
-  wwcOnJoinTranslationNotificationSourceLang: آپ کی بات کا %i سے %o تک ترجمہ کیا جا
-    رہا ہے۔
   wwcBookDone: کتاب کامیابی سے ترجمہ.
   wwctsOnSender: سائن ترجمہ فعال. ترجمہ کرنے کے لئے ایک نشانی پر دائیں کلک کریں!
   watsonColorCodeWarning: رنگ کوڈ کا استعمال کرتے ہوئے آپ کو غیر متوقع نتائج دے سکتا
@@ -119,11 +109,9 @@ Messages:
   wwcConfigGUIPrefixButton: پلگ ان کا سابقہ تبدیل کریں
   wwctSameLangError: آپ ایک ہی زبان میں ترجمہ نہیں کر سکتے!
   wwctGUINewTranslationTarget: ہدف کی زبان کا انتخاب کریں
-  wwctLangToLangStartOtherPlayer: اب %o سے %i سے %e کے چیٹ کا ترجمہ کر رہا ہے۔
   wwcConfigConnectionSuccess: کامیابی کے ساتھ %o سے جڑا ہوا!
   wwcConfigGUIGoogleTranslateButton: گوگل ترجمہ
   wwcsIsActiveTranslator: 'فعال مترجم ہے: %i'
-  wwctLangToLangStart: اب آپ کی تمام چیٹ کا %i سے %o تک ترجمہ کرنا۔
   wwcConfigConversationPrefixInput: موجودہ سابق %i ہے براہ مہربانی نیا ٹائپ کریں یا
     واپس جانے کے لیے 0 ٹائپ کریں۔
   wwcConfigGUIPreviousPageButton: پچھلا صفحہ
@@ -159,8 +147,6 @@ Messages:
     کریں۔
   wwcConfigCacheEnabled: مترجم کیش فعال اور %i کی حد پر مقرر کیا گیا ہے۔
   wwctGUIExistingTranslationButton: موجودہ ترجمہ کا اجلاس اوور لکھنا
-  wwcOnJoinTranslationNotificationNoSourceLang: آپ کی بات کا ترجمہ %o پر کیا جا رہا
-    ہے۔
   wwcUserDataReloaded: تمام محفوظ کردہ صارف کے ڈیٹا کو لوڈ کیا گیا.
   wwcConfigGUISendTranslationChatButton: لاگ ان پر فعال مترجم کو چیٹ یاد دہانی
   wwcsLastTranslationTime: 'آخری (کامیاب) ترجمہ کا وقت: %i'
@@ -189,7 +175,6 @@ Messages:
     تاخیر %i سیکنڈ ہے. ایک نئی قیمت مقرر کرنے کے لئے 10 سے زیادہ کچھ بھی ٹائپ کریں،
     یا واپس جانے کے لئے 10 سے کم کچھ بھی.
   wwcConfigGUISyncUserDataButton: صارف ڈیٹا کی مطابقت پذیری میں تبدیلی کریں
-  wwcConfigSyncTime: خودکار صارف ڈیٹا مطابقت پذیر %i نینو سیکنڈ میں مکمل ہوا۔
   wwcConfigSyncDelayEnabled: فی صارف ڈیٹا مطابقت پذیری تاخیر %i سیکنڈ پر سیٹ کریں.
   wwcConfigConversationSyncUserDataDelaySuccess: صارف ڈیٹا مطابقت پذیری تاخیر کا سیٹ
     کامیابی سے
@@ -307,7 +292,29 @@ Messages:
   wwcteOffSender: ادارہ ترجمہ معذور.
   wwctGUIEntityButton: انسٹی ٹیٹی ترجمہ ٹوگل کریں
   wwcConfigConversationResponseLimitSuccess: ردعمل کا ٹائم آؤٹ کامیابی سے سیٹ
-  wwctCannotTranslateConsole: آپ کنسول چیٹ ترجمہ نہیں کر سکتے!
   wwctrlRateLimitBadInt: آپ کی شرح کی حد ایک درست عددی نہیں ہے.
   wwcTranslatorErrorConsole: ایک مسئلہ پیش آیا جبکہ صارف %i ان کے ترجمہ کی کوشش کر
     رہا تھا. براہ کرم چیک کریں errorLog.txt مزید تفصیلات کے لئے.
+  wwctcOffSender: چیٹ ترجمہ غیر فعال.
+  wwctcOnTarget: '%i کے لئے چیٹ ترجمہ فعال کیا گیا ہے۔'
+  wwctcOnSender: بات چیت کا ترجمہ فعال. جو کچھ بھی آپ کہتے ہیں اُس کا ترجمہ کیا جائے
+    گا!
+  wwctGUIChatButton: چیٹ ترجمہ ٹوگل کریں
+  wwctcOffTarget: '%i کے لئے بات چیت کا ترجمہ غیر فعال ہے۔'
+  wwcrBegin: ورلڈ وائڈ ہاٹ دوبارہ لوڈ کرنا...
+  wwctTranslationStoppedOtherPlayer: '%i کے لئے ترجمہ سیشن روک دیا گیا ہے.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: گلوبل چیٹ کا ترجمہ کیا
+    جا رہا ہے، لیکن آپ کے پاس ترجمہ کا ایک فعال سیشن ہے %i سے %o
+  wwctCannotTranslateConsole: آپ کنسول کے لئے ترجمہ سیشن شروع نہیں کر سکتے ہیں!
+  wwctLangToLangStart: '%i سے %o تک ایک نیا ترجمہ سیشن شروع کر رہا ہے۔'
+  wwcOnJoinTranslationNotificationSourceLang: آپ کے پاس ایک فعال ترجمہ سیشن ہے %i
+    سے %o تک.
+  wwctAutoTranslateStartOtherPlayer: '%i کے لیے %o کے لیے ایک نیا ترجمہ سیشن شروع
+    کر رہا ہے۔'
+  wwctTranslationStopped: آپ کا ترجمہ سیشن روک دیا گیا ہے۔
+  wwctLangToLangStartOtherPlayer: '%o کے لئے ایک نیا ترجمہ سیشن شروع کررہا ہے %i سے
+    %e'
+  wwctAutoTranslateStart: ترجمہ کا ایک نیا سیشن %o پر شروع کیا جا رہا ہے۔
+  wwcOnJoinTranslationNotificationNoSourceLang: آپ کے پاس ایک فعال ترجمہ سیشن ہے %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: گلوبل چیٹ کا ترجمہ کیا
+    جا رہا ہے، لیکن آپ کے پاس ترجمہ کا ایک فعال سیشن ہے %o.

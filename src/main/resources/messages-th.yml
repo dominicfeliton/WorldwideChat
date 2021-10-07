@@ -22,17 +22,13 @@ Messages:
   wwcBookTranslateStart: แปลหนังสือเป้าหมาย...
   wwcConfigDisabledbStats: bStats ปิดใช้งาน
   wwctsOffSender: ปิดการแปลลงลายมือชื่อ
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: แชททั่วโลกกำลังถูกแปล
-    แต่แชทของคุณกำลังถูกแปลจาก %i เป็น %o
   wwcUpdaterParserFailed: ไม่สามารถแยกวิเคราะห์ข้อมูลการปรับปรุงจาก Github
-  wwctAutoTranslateStart: ตอนนี้แปลทั้งหมดของการสนทนาของคุณไปยัง %o
   wwcConfigConversationAmazonTranslateSecretKeyInput: รหัสลับปัจจุบันคือ %i โปรดป้อนรหัสลับสำหรับ
     Amazon หรือพิมพ์ 0 เพื่อย้อนกลับ
   wwctbOffSender: ปิดการแปลหนังสือ
   wwcConfigGUIAmazonTranslateButton: อเมซอนแปลภาษา
   wwcConfigConversationLangSuccess: ภาษาปลั๊กอินเปลี่ยนเรียบร้อยแล้ว
   wwcsSuccessfulTranslations: 'การแปลที่ประสบความสำเร็จ: %i'
-  wwctTranslationStoppedOtherPlayer: การแปลการสนทนาสำหรับ %i ถูกหยุดแล้ว
   wwcConfigConversationTranslationCacheInput: ขีด จำกัด แคชแปลปัจจุบันคือวลี %iพิมพ์อะไรที่มากกว่า
     0 เพื่อตั้งค่าใหม่ หรือพิมพ์ 0 เพื่อปิดใช้งานแคชการแปลพิมพ์อะไรที่น้อยกว่า 0 เพื่อย้อนกลับ
   wwctbOffTarget: ปิดการแปลหนังสือสำหรับ %i
@@ -52,13 +48,10 @@ Messages:
     config.yml ของคุณ
   wwcConfigGUIQuitButton: ออกจากการบันทึกการเปลี่ยนแปลง
   wwctPlayerNotFound: ไม่พบผู้เล่น %ฉันไม่พบ
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: แชททั่วโลกกำลังถูกแปล
-    แต่แชทของคุณกำลังถูกแปลเป็น %o
   wwcConfigGUIAmazonTranslateRegionButton: เปลี่ยนภูมิภาคอเมซอน
   wwcConfigConversationLangInput: 'ภาษาปลั๊กอินปัจจุบันคือ %i โปรดป้อนรหัสภาษาที่ถูกต้อง
     หรือพิมพ์ 0 เพื่อยกเลิกรหัสภาษาที่ถูกต้อง: %o'
   wwcConfigConversationLangInvalid: รหัสภาษาไม่ถูกต้อง!
-  wwctTranslationStopped: การแปลการแชทของคุณถูกหยุดลงแล้ว
   wwcConfigGUIWatsonAPIKeyButton: เปลี่ยนคีย์ API วัตสัน
   wwcEnabled: เปิดใช้งานเวอร์ชันของ WorldwideChat %i
   wwcgLangToLangStart: ตอนนี้แปลแชททั่วโลกจาก %i เพื่อ %o
@@ -74,7 +67,6 @@ Messages:
     สำหรับวัตสัน หรือพิมพ์ 0 เพื่อย้อนกลับ
   wwctGUIStopButton: หยุดการแปล
   wwcgTranslationStopped: การแปลการแชททั่วโลกได้หยุดลง
-  wwctAutoTranslateStartOtherPlayer: ตอนนี้แปลการแชทของ % ฉันไปยัง %o
   wwcUpdaterFutureDate: อินสแตนซ์ของ WorldwideChat นี้มีรุ่นที่มากกว่าหนึ่งสาธารณะล่าสุด
   wwcConfigConversationPrefixSuccess: เปลี่ยนคำนำหน้าเรียบร้อยแล้ว
   wwcConfigGUIGoogleTranslateAPIKeyButton: เปลี่ยนคีย์ API ของ Google แปลภาษา
@@ -83,8 +75,6 @@ Messages:
   wwcConfigCacheDisabled: ปิดการใช้งานแคชนักแปล
   wwcConfigConversationWatsonURLInput: URL ปัจจุบันคือ %i โปรดป้อน URL บริการสำหรับวัตสัน
     หรือพิมพ์ 0 เพื่อย้อนกลับ
-  wwcOnJoinTranslationNotificationSourceLang: การสนทนาของคุณกำลังถูกแปลจาก %i เป็น
-    %o
   wwcBookDone: หนังสือแปลเรียบร้อยแล้ว
   wwctsOnSender: เปิดใช้งานการแปลด้วยลายเซ็นคลิกขวาที่ป้ายเพื่อแปล!
   watsonColorCodeWarning: การใช้รหัสสีอาจทำให้ผลลัพธ์ที่คาดเดาไม่ได้
@@ -106,11 +96,9 @@ Messages:
   wwcConfigGUIPrefixButton: เปลี่ยนคำนำหน้าปลั๊กอิน
   wwctSameLangError: คุณไม่สามารถแปลเป็นภาษาเดียวกันได้!
   wwctGUINewTranslationTarget: เลือกภาษาเป้าหมาย
-  wwctLangToLangStartOtherPlayer: ตอนนี้แปลการแชทของ %oจาก % ฉันไปยัง %e
   wwcConfigConnectionSuccess: เชื่อมต่อกับ %o สำเร็จแล้ว!
   wwcConfigGUIGoogleTranslateButton: กูเกิล แปลภาษา
   wwcsIsActiveTranslator: 'คือตัวแปลที่ใช้งานอยู่: %i'
-  wwctLangToLangStart: ตอนนี้แปลทั้งหมดของการแชทของคุณจาก %i เพื่อ %o
   wwcConfigConversationPrefixInput: คำนำหน้าปัจจุบันคือ %i โปรดพิมพ์คำใหม่ หรือพิมพ์
     0 เพื่อย้อนกลับ
   wwcConfigGUIPreviousPageButton: หน้าก่อนหน้า
@@ -143,7 +131,6 @@ Messages:
   wwcRateLimit: การแปลของคุณมีอัตราที่ จำกัด.กรุณารออีก %i วินาที
   wwcConfigCacheEnabled: แคช Translator เปิดใช้งานและตั้งค่าเป็นขีด จำกัด ของ %i
   wwctGUIExistingTranslationButton: เขียนทับเซสชันการแปลปัจจุบัน
-  wwcOnJoinTranslationNotificationNoSourceLang: แชทของคุณกำลังถูกแปลเป็น %o
   wwcUserDataReloaded: โหลดข้อมูลผู้ใช้ที่บันทึกไว้ทั้งหมด
   wwcConfigGUISendTranslationChatButton: ส่งการแจ้งเตือนการแชทไปยังนักแปลที่ใช้งานอยู่เมื่อเข้าสู่ระบบ
   wwcsLastTranslationTime: 'เวลาแปลล่าสุด (สำเร็จ): %i'
@@ -171,7 +158,6 @@ Messages:
   wwcConfigConversationSyncUserDataDelayInput: ความล่าช้าปัจจุบันต่อซิงค์ข้อมูลผู้ใช้คือ
     %i วินาทีพิมพ์อะไรที่มากกว่า 10 เพื่อตั้งค่าใหม่หรืออะไรที่น้อยกว่า 10 เพื่อย้อนกลับ
   wwcConfigGUISyncUserDataButton: เปลี่ยนการหน่วงเวลาการซิงค์ข้อมูลผู้ใช้
-  wwcConfigSyncTime: การซิงค์ข้อมูลผู้ใช้อัตโนมัติเสร็จสมบูรณ์ใน %i nanoseconds
   wwcConfigSyncDelayEnabled: การหน่วงเวลาการซิงค์ข้อมูลของผู้ใช้ต่อหนึ่งตั้งค่าเป็น
     %i วินาที
   wwcConfigConversationSyncUserDataDelaySuccess: ตั้งค่าการหน่วงเวลาการซิงค์ข้อมูลผู้ใช้เรียบร้อยแล้ว
@@ -276,7 +262,27 @@ Messages:
   wwcteOffSender: การแปลนิติบุคคลถูกปิดใช้งาน
   wwctGUIEntityButton: สลับการแปลเอนทิตี
   wwcConfigConversationResponseLimitSuccess: หมดเวลาการตอบสนองการตั้งค่าเรียบร้อยแล้ว
-  wwctCannotTranslateConsole: คุณไม่สามารถแปลคอนโซลแชท!
   wwctrlRateLimitBadInt: ขีด จำกัด อัตราของคุณไม่ได้เป็นจำนวนเต็มที่ถูกต้อง.
   wwcTranslatorErrorConsole: เกิดปัญหาขึ้นขณะผู้ใช้ %i กำลังพยายามแปลกรุณาตรวจสอบ
     errorLog.txt สำหรับรายละเอียดเพิ่มเติม
+  wwctcOffSender: ปิดการแปลการสนทนา
+  wwctcOnTarget: เปิดใช้งานการแปลการสนทนาสำหรับ %i
+  wwctcOnSender: เปิดใช้งานการแปลการสนทนาสิ่งที่คุณพูดจะได้รับการแปล!
+  wwctGUIChatButton: สลับการแปลการสนทนา
+  wwctcOffTarget: ปิดการแปลการสนทนาสำหรับ %i
+  wwcrBegin: กำลังโหลดเวิลด์ไวด์แชท...
+  wwctTranslationStoppedOtherPlayer: เซสชันการแปลสำหรับ %i ถูกหยุดแล้ว
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: การสนทนาทั่วโลกกำลังถูกแปล
+    แต่คุณมีเซสชันการแปลที่ใช้งานอยู่จาก %i ไปยัง %o
+  wwctCannotTranslateConsole: คุณไม่สามารถเริ่มเซสชันการแปลสำหรับคอนโซล!
+  wwctLangToLangStart: เริ่มเซสชันการแปลใหม่จาก %i ไปยัง %o
+  wwcOnJoinTranslationNotificationSourceLang: คุณมีเซสชันการแปลที่ใช้งานอยู่จาก %i
+    ถึง %o
+  wwctAutoTranslateStartOtherPlayer: เริ่มเซสชันการแปลใหม่สำหรับ %i ไปยัง %o
+  wwctTranslationStopped: เซสชันการแปลของคุณถูกหยุดลง
+  wwctLangToLangStartOtherPlayer: เริ่มเซสชันการแปลใหม่สำหรับ %oจาก %i ไปยัง %e
+  wwctAutoTranslateStart: เริ่มเซสชันการแปลใหม่เป็น %o
+  wwcOnJoinTranslationNotificationNoSourceLang: คุณมีเซสชันการแปลที่ใช้งานอยู่เป็น
+    %o
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: การสนทนาทั่วโลกกำลังถูกแปล
+    แต่คุณมีเซสชันการแปลที่ใช้งานอยู่เป็น %o

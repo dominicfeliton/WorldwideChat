@@ -1,5 +1,5 @@
 name: WorldwideChat
-version: 1.6.1
+version: 1.6.5
 api-version: 1.13
 description: Break the blocky language barrier!
 author: 3xpl0itz
@@ -53,6 +53,12 @@ commands:
         usage: §4/wwcte (playerName)
         permission: worldwidechat.wwcte
         permission-message: §4You do not have permission to run this command.
+    wwctc:
+        description: Enables chat translation to a certain language.
+        aliases: [wwctranslatechat, translatechat]
+        usage: §4/wwctc (playerName)
+        permission: worldwidechat.wwctc
+        permission-message: §4You do not have permission to run this command.
     wwcs:
         description: Gets translation stats for a specified user.
         aliases: [wwctranslatestats, translatestats]
@@ -89,6 +95,8 @@ permissions:
             worldwidechat.wwcti.otherplayers: true
             worldwidechat.wwcte: true
             worldwidechat.wwcte.otherplayers: true
+            worldwidechat.wwctc: true
+            worldwidechat.wwctc.otherplayers: true
             worldwidechat.wwcs: true
             worldwidechat.ratelimit.exempt: true
             worldwidechat.wwcc: true
@@ -107,7 +115,7 @@ permissions:
         description: Gives access to /wwct.
         default: true
     worldwidechat.wwct.otherplayers:
-        description: Gives access to /wwct to a certain language for other players.
+        description: Gives access to /wwct on target players.
         default: op
     worldwidechat.chatupdate:
         description: Gives access to receiving of plugin update notification in chat on login.
@@ -116,25 +124,31 @@ permissions:
         description: Gives access to /wwctb.
         default: true
     worldwidechat.wwctb.otherplayers:
-        description: Gives access to /wwctb to a certain language on target players.
+        description: Gives access to /wwctb on target players.
         default: op
     worldwidechat.wwcts:
         description: Gives access to /wwcts.
         default: true
     worldwidechat.wwcts.otherplayers:
-        description: Gives access to /wwcts to a certain language on target players.
+        description: Gives access to /wwcts on target players.
         default: op
     worldwidechat.wwcti:
         description: Gives access to /wwcti.
         default: true
     worldwidechat.wwcti.otherplayers:
-        description: Gives access to /wwcti to a certain language on target players.
+        description: Gives access to /wwcti on target players.
         default: op
     worldwidechat.wwcte:
         description: Gives access to /wwcte.
         default: true
     worldwidechat.wwcte.otherplayers:
-        description: Gives access to /wwcte to a certain language on target players.
+        description: Gives access to /wwcte on target players.
+        default: op
+    worldwidechat.wwctc:
+        description: Gives access to /wwctc.
+        default: true
+    worldwidechat.wwctc.otherplayers:
+        description: Gives access to /wwctc on target players.
         default: op
     worldwidechat.wwcs:
         description: Gives access to /wwcs.

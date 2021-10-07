@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: लक्ष्य पुस्तक का अनुवाद...
   wwcConfigDisabledbStats: अक्षम बीएसटीएएस।
   wwctsOffSender: हस्ताक्षर अनुवाद अक्षम।
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ग्लोबल चैट का अनुवाद किया
-    जा रहा है, लेकिन आपकी गपश %i से %o में किया जा रहा है।
   wwcUpdaterParserFailed: Github से अद्यतन डेटा पार्स करने में विफल।
-  wwctAutoTranslateStart: अब अपनी सारी गपश %o में अनुवाद कर रहा है।
   wwcConfigConversationAmazonTranslateSecretKeyInput: वर्तमान गुप्त कुंजी %i है. कृपया
     अमेज़ॅन के लिए एक गुप्त कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
   wwctbOffSender: पुस्तक अनुवाद अक्षम।
   wwcConfigGUIAmazonTranslateButton: अमेज़न में अनुवाद
   wwcConfigConversationLangSuccess: प्लगइन भाषा सफलतापूर्वक बदल गई।
   wwcsSuccessfulTranslations: 'सफल अनुवाद: %i'
-  wwctTranslationStoppedOtherPlayer: '%i के लिए चैट अनुवाद रोक दिया गया है।'
   wwcConfigConversationTranslationCacheInput: वर्तमान अनुवाद कैश सीमा %i वाक्यांश
     है। नया मान सेट करने के लिए 0 से अधिक कुछ टाइप करें, या अनुवाद कैश को अक्षम करने
     के लिए 0 टाइप करें। वापस जाने के लिए 0 से कम कुछ भी टाइप करें।
@@ -58,13 +54,10 @@ Messages:
     में केवल एक अनुवादक सक्षम करें।
   wwcConfigGUIQuitButton: परिवर्तन से बाहर निकलें (S)
   wwctPlayerNotFound: खिलाड़ी %मैं नहीं मिला।
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ग्लोबल चैट का अनुवाद
-    किया जा रहा है, लेकिन आपकी गपश %o में किया जा रहा है।
   wwcConfigGUIAmazonTranslateRegionButton: अमेज़ॅन क्षेत्र बदलें
   wwcConfigConversationLangInput: 'मौज़ूदा प्लगइन भाषा %i है. कृपया वैध भाषा कोड भरें,
     या रद्द करने के लिए 0 टाइप करें। वैध भाषा कोड: %o'
   wwcConfigConversationLangInvalid: अवैध भाषा कोड!
-  wwctTranslationStopped: आपका चैट अनुवाद बंद कर दिया गया है।
   wwcConfigGUIWatsonAPIKeyButton: वाटसन एपीआई कुंजी बदलें
   wwcEnabled: वर्ल्डवाइडचैट संस्करण %i सक्षम किया गया
   wwcgLangToLangStart: अब वैश्विक चैट को %i से %o तक अनुवाद कर रहा है।
@@ -83,7 +76,6 @@ Messages:
     लिए एपीआई कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
   wwctGUIStopButton: अनुवाद बंद करें
   wwcgTranslationStopped: वैश्विक चैट अनुवाद बंद कर दिया गया है।
-  wwctAutoTranslateStartOtherPlayer: अब %i के चैट को %o में अनुवाद कर रहा है।
   wwcUpdaterFutureDate: WorldwideChat के इस उदाहरण में नवीनतम सार्वजनिक की तुलना में
     एक बड़ा संस्करण है।
   wwcConfigConversationPrefixSuccess: उपसर्ग सफलतापूर्वक बदल गया।
@@ -94,8 +86,6 @@ Messages:
   wwcConfigCacheDisabled: अनुवादक कैश अक्षम।
   wwcConfigConversationWatsonURLInput: वर्तमान यूआरएल है %i. कृपया वाटसन के लिए एक
     सेवा यूआरएल इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
-  wwcOnJoinTranslationNotificationSourceLang: आपकी गपश %i से %o में अनुवादित की जा
-    रही है।
   wwcBookDone: पुस्तक का सफलतापूर्वक अनुवाद किया गया
   wwctsOnSender: साइन अनुवाद सक्षम है। इसका अनुवाद करने के लिए एक संकेत पर राइट-क्लिक
     करें!
@@ -120,11 +110,9 @@ Messages:
   wwcConfigGUIPrefixButton: प्लगइन उपसर्ग बदलें
   wwctSameLangError: आप एक ही भाषा में अनुवाद नहीं कर सकते हैं!
   wwctGUINewTranslationTarget: एक लक्ष्य भाषा चुनें
-  wwctLangToLangStartOtherPlayer: अब %o की गपश %i से %e तक अनुवाद कर रहा है।
   wwcConfigConnectionSuccess: '%o से सफलतापूर्वक जुड़ा हुआ है!'
   wwcConfigGUIGoogleTranslateButton: गूगल अनुवाद
   wwcsIsActiveTranslator: 'सक्रिय अनुवादक है: %i'
-  wwctLangToLangStart: अब आपके सभी चैट को %i से %o तक अनुवाद कर रहा है।
   wwcConfigConversationPrefixInput: वर्तमान उपसर्ग %i है. कृपया एक नया टाइप करें,
     या वापस जाने के लिए 0 टाइप करें।
   wwcConfigGUIPreviousPageButton: पिछला पृष्ठ
@@ -160,8 +148,6 @@ Messages:
   wwcRateLimit: आपका अनुवाद दर सीमित हैं। कृपया एक और %i सेकंड प्रतीक्षा करें।
   wwcConfigCacheEnabled: अनुवादक कैश सक्षम और %i की सीमा पर सेट किया गया।
   wwctGUIExistingTranslationButton: वर्तमान अनुवाद सत्र को मिटाकर लिखें
-  wwcOnJoinTranslationNotificationNoSourceLang: आपकी गपश %o में अनुवादित की जा रही
-    है।
   wwcUserDataReloaded: सभी सहेजे गए उपयोगकर्ता डेटा को लोड किया गया।
   wwcConfigGUISendTranslationChatButton: लॉगिन पर सक्रिय अनुवादक को चैट अनुस्मारक
     भेजें
@@ -192,7 +178,6 @@ Messages:
     विलंब है %i सेकंड। एक नया मान सेट करने के लिए 10 से अधिक कुछ भी टाइप करें, या
     वापस जाने के लिए 10 से कम कुछ भी टाइप करें।
   wwcConfigGUISyncUserDataButton: उपयोगकर्ता डेटा सिंक विलंब बदलें
-  wwcConfigSyncTime: स्वचालित उपयोक्ता डाटा समन्वयन को %i नैनोसेकंड में पूरा हुआ।
   wwcConfigSyncDelayEnabled: प्रति उपयोगकर्ता डेटा सिंक विलंब से %i सेकेंड पर सेट
     करें।
   wwcConfigConversationSyncUserDataDelaySuccess: उपयोगकर्ता डेटा सिंक विलंब सेट सफलतापूर्वक।
@@ -315,7 +300,30 @@ Messages:
   wwctGUIEntityButton: एंटिटी ट्रांसलेशन टॉगल करें
   wwcConfigConversationResponseLimitSuccess: रिस्पांस टाइमआउट सफलतापूर्वक सेट किया
     गया
-  wwctCannotTranslateConsole: आप कंसोल चैट का अनुवाद नहीं कर सकते!
   wwctrlRateLimitBadInt: आपकी दर सीमा वैध पूर्णांक नहीं है।
   wwcTranslatorErrorConsole: एक समस्या तब हुई जब उपयोगकर्ता %i उनके अनुवाद का प्रयास
     कर रहा था। अधिक जानकारी के लिए कृपया errorLog.txt की जांच करें।
+  wwctcOffSender: चैट अनुवाद अक्षम किया गया।
+  wwctcOnTarget: '%i के लिए चैट अनुवाद सक्षम किया गया है।'
+  wwctcOnSender: चैट अनुवाद सक्षम किया गया। जो कुछ भी आप कहते हैं उसका अनुवाद किया
+    जाएगा!
+  wwctGUIChatButton: चैट अनुवाद टॉगल करें
+  wwctcOffTarget: '%i के लिए चैट अनुवाद अक्षम किया गया।'
+  wwcrBegin: वर्ल्डवाइड चैट पुनः लोड हो रहा है...
+  wwctTranslationStoppedOtherPlayer: '%i के लिए अनुवाद सत्र बंद कर दिया गया है।'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: वैश्विक चैट का अनुवाद
+    किया जा रहा है, लेकिन आपके पास %i से %o तक एक सक्रिय अनुवाद सत्र है।
+  wwctCannotTranslateConsole: आप कंसोल के लिए अनुवाद सत्र शुरू नहीं कर सकते!
+  wwctLangToLangStart: एक नया अनुवाद सत्र %i से %o तक प्रारंभ कर रहा है।
+  wwcOnJoinTranslationNotificationSourceLang: आपके पास %i से %o तक एक सक्रिय अनुवाद
+    सत्र है।
+  wwctAutoTranslateStartOtherPlayer: '%i से %o के लिए एक नया अनुवाद सत्र शुरू कर रहा
+    है।'
+  wwctTranslationStopped: आपका अनुवाद सत्र रोक दिया गया है।
+  wwctLangToLangStartOtherPlayer: '%o के लिए %i से %e तक एक नया अनुवाद सत्र शुरू कर
+    रहा है।'
+  wwctAutoTranslateStart: एक नया अनुवाद सत्र %o से प्रारंभ कर रहा है।
+  wwcOnJoinTranslationNotificationNoSourceLang: आपके पास %o में एक सक्रिय अनुवाद सत्र
+    है।
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ग्लोबल चैट का अनुवाद
+    किया जा रहा है, लेकिन आपके पास %o में एक सक्रिय अनुवाद सत्र है।

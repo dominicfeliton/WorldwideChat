@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.TimeUnit;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -25,6 +26,7 @@ import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCStats;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
+import com.expl0itz.worldwidechat.commands.WWCTranslateChat;
 import com.expl0itz.worldwidechat.commands.WWCTranslateEntity;
 import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
@@ -85,7 +87,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	private String pluginLang = "en";
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "1032021-1"; //This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "1062021-1"; //This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	/* Default constructor */
@@ -241,6 +243,10 @@ public class WorldwideChat extends JavaPlugin {
 			// Entity translation
 			WWCTranslateEntity wwcte = new WWCTranslateEntity(sender, command, label, args);
 			return wwcte.processCommand();
+		} else if (command.getName().equalsIgnoreCase("wwctc") && hasValidTranslatorSettings(sender)){
+			// Chat translation
+			WWCTranslateChat wwctc = new WWCTranslateChat(sender, command, label, args);
+			return wwctc.processCommand();
 		} else if (command.getName().equalsIgnoreCase("wwcs") && !translatorName.equals("Starting")) {
 			// Stats for translator
 			WWCStats wwcs = new WWCStats(sender, command, label, args);
@@ -259,22 +265,40 @@ public class WorldwideChat extends JavaPlugin {
 
 	/* Easy Reload Method */
 	public void reload(CommandSender inSender) {
+		/* Send start reload message */
+		if (inSender != null) {
+			final TextComponent wwcrBegin = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcrBegin"))
+							.color(NamedTextColor.YELLOW))
+					.build();
+			CommonDefinitions.sendMessage(inSender, wwcrBegin);
+		}
+		
+		/* Put plugin into a reloading state */
 		errorCount = 0;
 		if (!translatorName.equals("Invalid")) {
 			translatorName = "Starting";
 		}
 		CommonDefinitions.closeAllInventories();
-
+		
+		/* Once it is safe to, cancelBackgroundTasks and loadPluginConfigs async so we don't stall the main thread */
 		new BukkitRunnable() {
 			@Override
 			public void run() {
+				final long currentDuration = System.nanoTime();
 				cancelBackgroundTasks(true);
 				loadPluginConfigs(true);
+				
+				/* Send successfully reloaded message */
 				if (inSender != null) {
 					final TextComponent wwcrSuccess = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwcrSuccess"))
 									.color(NamedTextColor.GREEN))
+							.append(Component.text()
+									.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
+									.color(NamedTextColor.YELLOW))
 							.build();
 					CommonDefinitions.sendMessage(inSender, wwcrSuccess);
 				}
@@ -290,7 +314,7 @@ public class WorldwideChat extends JavaPlugin {
 		}
 
 		// Cancel + remove all tasks
-		WorldwideChat.getInstance().getServer().getScheduler().cancelTasks(WorldwideChat.getInstance());
+		this.getServer().getScheduler().cancelTasks(this);
 
 		// Sync activeTranslators, playerRecords to disk
 		getConfigManager().syncData();
@@ -315,11 +339,11 @@ public class WorldwideChat extends JavaPlugin {
 		/* Run tasks after translator loaded */
 		// Check for updates
 		if (!CommonDefinitions.serverIsStopping()) 
-			Bukkit.getScheduler().runTaskTimerAsynchronously(instance, new UpdateChecker(), 0, getUpdateCheckerDelay() * 20);
+			Bukkit.getScheduler().runTaskTimerAsynchronously(this, new UpdateChecker(), 0, getUpdateCheckerDelay() * 20);
 
 		// Schedule automatic user data sync
 		if (!CommonDefinitions.serverIsStopping()) 
-			Bukkit.getScheduler().runTaskTimerAsynchronously(instance, new SyncUserData(), getSyncUserDataDelay() * 20, getSyncUserDataDelay() * 20);
+			Bukkit.getScheduler().runTaskTimerAsynchronously(this, new SyncUserData(), getSyncUserDataDelay() * 20, getSyncUserDataDelay() * 20);
 
 		// Load saved user data
 		if (!CommonDefinitions.serverIsStopping()) new LoadUserData().run();
@@ -405,6 +429,7 @@ public class WorldwideChat extends JavaPlugin {
 		getCommand("wwcti").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwctb").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwcte").setTabCompleter(new WWCTabCompleter());
+		getCommand("wwctc").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwcts").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwcs").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwctrl").setTabCompleter(new WWCTabCompleter());

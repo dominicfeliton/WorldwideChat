@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Preklad cieľovej knihy...
   wwcConfigDisabledbStats: Zakázané Bstaty.
   wwctsOffSender: Preklad podpísať vypnutý.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globálny chat je prekladaný,
-    ale váš chat je prekladaný z %i do %o.
   wwcUpdaterParserFailed: Nepodarilo sa analyzovať aktualizačné údaje z Githubu.
-  wwctAutoTranslateStart: Teraz prekladám všetok váš chat na %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Aktuálny tajný kľúč je %i. Prosím,
     zadajte tajný kľúč pre Amazon, alebo zadajte 0, aby ste sa vrátili späť.
   wwctbOffSender: Preklad kníh zakázaný.
   wwcConfigGUIAmazonTranslateButton: Amazon Preložiť
   wwcConfigConversationLangSuccess: Jazyk pluginu sa úspešne zmenil.
   wwcsSuccessfulTranslations: 'Úspešné preklady: %i'
-  wwctTranslationStoppedOtherPlayer: Preklad chatu pre %i bol zastavený.
   wwcConfigConversationTranslationCacheInput: Aktuálny limit vyrovnávacej pamäte prekladu
     je %i frázy. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu, alebo
     zadaním 0 vypnite vyrovnávaciu pamäť prekladu. Zadajte čokoľvek menej ako 0, aby
@@ -58,13 +54,10 @@ Messages:
     jeden prekladač vo vašom config.yml.
   wwcConfigGUIQuitButton: Ukončiť a uložiť zmeny
   wwctPlayerNotFound: Hráč %Nenašiel som.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globálny chat je prekladaný,
-    ale váš chat je prekladaný do %o.
   wwcConfigGUIAmazonTranslateRegionButton: Zmeniť oblasť Amazon
   wwcConfigConversationLangInput: 'Aktuálny jazyk pluginu je %i. Prosím zadajte platný
     kód jazyka alebo zadajte 0 pre zrušenie. Platné kódy jazykov: %o'
   wwcConfigConversationLangInvalid: Neplatný kód jazyka!
-  wwctTranslationStopped: Váš preklad chatu bol zastavený.
   wwcConfigGUIWatsonAPIKeyButton: Zmeniť Watson API kľúč
   wwcEnabled: Povolená verzia WorldwideChat %i.
   wwcgLangToLangStart: Teraz prekladám globálny chat z %i do %o.
@@ -84,7 +77,6 @@ Messages:
     API kľúč pre Watson, alebo zadajte 0, aby ste sa vrátili späť.
   wwctGUIStopButton: Zastaviť preklad
   wwcgTranslationStopped: Globálny preklad chatu bol zastavený.
-  wwctAutoTranslateStartOtherPlayer: Teraz prekladám chatu %i do %o.
   wwcUpdaterFutureDate: Táto inštancia WorldwideChat má vyššiu verziu ako najnovšia
     verejná verzia.
   wwcConfigConversationPrefixSuccess: Predpona sa úspešne zmenila.
@@ -95,7 +87,6 @@ Messages:
   wwcConfigCacheDisabled: Cache prekladateľa vypnutá.
   wwcConfigConversationWatsonURLInput: Aktuálna URL je %i. Prosím, zadajte adresu
     URL služby pre Watson, alebo zadajte 0, aby ste sa vrátili späť.
-  wwcOnJoinTranslationNotificationSourceLang: Váš chat je prekladaný z %i do %o.
   wwcBookDone: Kniha úspešne preložená.
   wwctsOnSender: Podpísať preklad povolený. Kliknite pravým tlačidlom myši na znamenie
     ho preložiť!
@@ -120,11 +111,9 @@ Messages:
   wwcConfigGUIPrefixButton: Zmeniť predponu zásuvného modulu
   wwctSameLangError: Nemôžete preložiť do toho istého jazyka!
   wwctGUINewTranslationTarget: Vyberte cieľový jazyk
-  wwctLangToLangStartOtherPlayer: Teraz prekladám chatu %o od %i do %e.
   wwcConfigConnectionSuccess: Úspešne pripojený k %o!
   wwcConfigGUIGoogleTranslateButton: Prekladač Google
   wwcsIsActiveTranslator: 'Je aktívny prekladateľ: %i'
-  wwctLangToLangStart: Teraz prekladám všetok váš chat z %i do %o.
   wwcConfigConversationPrefixInput: Aktuálna predpona je %i. Prosím zadajte novú alebo
     zadajte 0, aby ste sa vrátili späť.
   wwcConfigGUIPreviousPageButton: Predchádzajúca strana
@@ -162,7 +151,6 @@ Messages:
   wwcConfigCacheEnabled: Vyrovnávacia pamäť prekladateľa povolená a nastavená na limit
     %i.
   wwctGUIExistingTranslationButton: Prepísať aktuálnu reláciu prekladu
-  wwcOnJoinTranslationNotificationNoSourceLang: Váš chat je prekladaný do %o.
   wwcUserDataReloaded: Načítané všetky uložené používateľské údaje.
   wwcConfigGUISendTranslationChatButton: Poslať pripomenutie chatu aktívnemu prekladateľovi
     pri pri
@@ -195,8 +183,6 @@ Messages:
     údajov používateľa je %i sekúnd. Zadajte čokoľvek väčšie ako 10, ak chcete nastaviť
     novú hodnotu, alebo čokoľvek menej ako 10, aby ste sa vrátili späť.
   wwcConfigGUISyncUserDataButton: Zmeniť oneskorenie synchronizácie údajov používateľa
-  wwcConfigSyncTime: Automatická synchronizácia údajov používateľa bola dokončená
-    v %i nanosekúnd.
   wwcConfigSyncDelayEnabled: Oneskorenie synchronizácie údajov používateľa nastavené
     na %i sekúnd.
   wwcConfigConversationSyncUserDataDelaySuccess: Oneskorenie synchronizácie používateľských
@@ -315,7 +301,27 @@ Messages:
   wwcteOffSender: Preklad entít vypnutý.
   wwctGUIEntityButton: Prepnúť preklad entity
   wwcConfigConversationResponseLimitSuccess: Časový limit odpovede nastavený úspešne.
-  wwctCannotTranslateConsole: Nemôžete preložiť konzolový chat!
   wwctrlRateLimitBadInt: Váš limit sadzby nie je platné celé číslo.
   wwcTranslatorErrorConsole: Vyskytol sa problém, keď používateľ %i sa pokúšal o ich
     preklad. Skontrolujte, prosím, errorLog.txt pre viac informácií.
+  wwctcOffSender: Preklad chatu vypnutý.
+  wwctcOnTarget: Preklad chatu povolený pre %i.
+  wwctcOnSender: Preklad chatu povolený. Čokoľvek poviete, bude preložené!
+  wwctGUIChatButton: Prepnúť preklad konverzácie
+  wwctcOffTarget: Preklad chatu vypnutý pre %i.
+  wwcrBegin: Opätovné načítanie WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Prekladateľská relácia pre %i bola zastavená.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globálny chat sa prekladá,
+    ale máte aktívnu reláciu prekladu od %i do %o.
+  wwctCannotTranslateConsole: Nie je možné spustiť reláciu prekladu pre konzolu!
+  wwctLangToLangStart: Spustenie novej relácie prekladu od %i do %o.
+  wwcOnJoinTranslationNotificationSourceLang: Máte aktívnu reláciu prekladu od %i
+    do %o.
+  wwctAutoTranslateStartOtherPlayer: Spustenie novej relácie prekladu pre %i do %o.
+  wwctTranslationStopped: Vaša relácia prekladu bola zastavená.
+  wwctLangToLangStartOtherPlayer: Spustenie novej relácie prekladu pre %o od %i do
+    %e.
+  wwctAutoTranslateStart: Spustenie novej relácie prekladu na %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Máte aktívnu reláciu prekladu do %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globálny chat je prekladaný,
+    ale máte aktívnu reláciu prekladu do %o.

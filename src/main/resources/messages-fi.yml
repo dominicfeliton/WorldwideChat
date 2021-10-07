@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Käännetään kohdekirja...
   wwcConfigDisabledbStats: Vammaiset bStats.
   wwctsOffSender: Allekirjoita käännös käytöstä
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Maailmanlaajuista keskustelua
-    käännetään, mutta keskusteluasi käännetään osoitteesta %i kohteeseen %o.
   wwcUpdaterParserFailed: Päivitystietojen jäsentäminen Githubista epäonnistui.
-  wwctAutoTranslateStart: Käännä nyt kaikki keskustelusi kohteeseen %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Nykyinen salainen avain on %i.
     Kirjoita salainen avain Amazonille tai kirjoita 0 palaaksesi takaisin.
   wwctbOffSender: Kirjan käännös käytöstä.
   wwcConfigGUIAmazonTranslateButton: Amazon kääntää
   wwcConfigConversationLangSuccess: Plugin kieli muuttui onnistuneesti.
   wwcsSuccessfulTranslations: 'Onnistuneet käännökset: %i'
-  wwctTranslationStoppedOtherPlayer: Keskustelukäännös kohteelle %i on pysäytetty.
   wwcConfigConversationTranslationCacheInput: Nykyinen käännösvälimuistin raja on
     %i lauseita. Määritä uusi arvo kirjoittamalla jokin suurempi kuin 0 tai poista
     käännösvälimuisti käytöstä kirjoittamalla 0. Kirjoita mitään alle 0, jotta voit
@@ -57,13 +53,10 @@ Messages:
     vain yksi kääntäjä config.yml.
   wwcConfigGUIQuitButton: Poistu ja tallenna muutokset
   wwctPlayerNotFound: Pelaaja %en löytänyt.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Maailmanlaajuista keskustelua
-    käännetään, mutta keskusteluasi käännetään kohteeseen %o.
   wwcConfigGUIAmazonTranslateRegionButton: Vaihda Amazonin alue
   wwcConfigConversationLangInput: 'Nykyinen liitännäisen kieli on %i. Kirjoita kelvollinen
     kielikoodi tai kirjoita 0 peruuttaaksesi sen. Kelvolliset kielikoodit: %'
   wwcConfigConversationLangInvalid: Virheellinen kielikoodi!
-  wwctTranslationStopped: Keskustelukäännös on lopetettu.
   wwcConfigGUIWatsonAPIKeyButton: Watsonin API-avaimen muuttaminen
   wwcEnabled: Käytössä WorldwideChat-versio %i.
   wwcgLangToLangStart: 'Nyt käännetään maailmanlaajuinen keskustelu osoitteesta %i:
@@ -83,7 +76,6 @@ Messages:
     API-avain tai kirjoita 0, jotta voit palata takaisin.
   wwctGUIStopButton: Lopeta kääntäminen
   wwcgTranslationStopped: Globaali keskustelukäännös on lopetettu.
-  wwctAutoTranslateStartOtherPlayer: Nyt käännetään keskustelu %i kohteeseen %o.
   wwcUpdaterFutureDate: Tämä WorldwideChatin tapaus on suurempi versio kuin uusin
     julkinen.
   wwcConfigConversationPrefixSuccess: Etuliite muuttui onnistuneesti.
@@ -94,8 +86,6 @@ Messages:
   wwcConfigCacheDisabled: Kääntäjän välimuisti poistettu käytöstä.
   wwcConfigConversationWatsonURLInput: Nykyinen URL-osoite on %i. Kirjoita Watsonille
     palvelun URL-osoite tai kirjoita 0 palaaksesi takaisin.
-  wwcOnJoinTranslationNotificationSourceLang: Keskusteluasi käännetään osoitteesta
-    %i kohteeseen %o.
   wwcBookDone: Kirja käännetty onnistuneesti.
   wwctsOnSender: Allekirjoita käännös käytössä Napsauta merkkiä hiiren kakkospainikkeella
     kääntääksesi sen!
@@ -120,12 +110,9 @@ Messages:
   wwcConfigGUIPrefixButton: Vaihda liitännäisen etuliite
   wwctSameLangError: Et voi kääntää samalle kielelle!
   wwctGUINewTranslationTarget: Valitse kohdekieli
-  wwctLangToLangStartOtherPlayer: Käännetään nyt keskustelua %o osoitteesta %i kohteeseen
-    %e.
   wwcConfigConnectionSuccess: Yhteys onnistui kohteeseen %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Onko aktiivinen kääntäjä: %i'
-  wwctLangToLangStart: 'Kääntäkää nyt kaikki keskustelut %i: stä kohteeseen %o.'
   wwcConfigConversationPrefixInput: Nykyinen etuliite on %i. Kirjoita uusi tai kirjoita
     0 palataksesi takaisin.
   wwcConfigGUIPreviousPageButton: Edellinen sivu
@@ -159,8 +146,6 @@ Messages:
   wwcRateLimit: Käännökset ovat nopeita rajoitettuja. Odota toisen %i sekuntia.
   wwcConfigCacheEnabled: Kääntäjän välimuisti käytössä ja asetettu raja %i.
   wwctGUIExistingTranslationButton: Korvaa nykyinen käännösistunto
-  wwcOnJoinTranslationNotificationNoSourceLang: Keskusteluasi käännetään kohteeseen
-    %o.
   wwcUserDataReloaded: Ladattu kaikki tallennetut käyttäjätiedot.
   wwcConfigGUISendTranslationChatButton: Lähetä Chat-muistutus Active Translatorille
     kirjautumisen yhteydessä
@@ -191,8 +176,6 @@ Messages:
     viive on %i sekuntia. Kirjoita mitä tahansa suurempi kuin 10, jos haluat asettaa
     uuden arvon, tai jotain alle 10 palata takaisin.
   wwcConfigGUISyncUserDataButton: Käyttäjän tietojen synkronoinnin viiveen muuttaminen
-  wwcConfigSyncTime: Automaattinen käyttäjän tietojen synkronointi suoritetaan %i
-    nanosekunneissa.
   wwcConfigSyncDelayEnabled: Viive käyttäjän tietojen synkronoinnin asetukseksi %i
     sekuntia.
   wwcConfigConversationSyncUserDataDelaySuccess: Käyttäjän tietojen synkronoinnin
@@ -307,7 +290,28 @@ Messages:
   wwcteOffSender: Yksikön käännös käytöstä
   wwctGUIEntityButton: Vaihda entiteetin käännös
   wwcConfigConversationResponseLimitSuccess: Vastausaikakatkaisu on määritetty onnistuneesti.
-  wwctCannotTranslateConsole: Et voi kääntää konsolikeskustelua!
   wwctrlRateLimitBadInt: Korkorajoituksesi ei ole kelvollinen kokonaisluku.
   wwcTranslatorErrorConsole: Ongelma ilmeni, kun käyttäjä %i yritti käännöstä. Tarkista
     lisätietoja errorLog.txt.
+  wwctcOffSender: Chat käännös poistettu käytöstä
+  wwctcOnTarget: Keskustelukäännös käytössä kohteella %i.
+  wwctcOnSender: Keskustelukäännös käytössä. Kaikki, mitä sanot, käännetään!
+  wwctGUIChatButton: Vaihda Chat Käännös
+  wwctcOffTarget: Keskustelukäännös poistettu käytöstä kohteella %i
+  wwcrBegin: Lataa WorldwideChat uudelleen...
+  wwctTranslationStoppedOtherPlayer: Käännösistunto kohteelle %i on pysäytetty
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Yleistä keskustelua käännetään,
+    mutta sinulla on aktiivinen käännösistunto osoitteesta %i - %o.
+  wwctCannotTranslateConsole: Konsolin käännösistuntoa ei voi aloittaa!
+  wwctLangToLangStart: Aloitetaan uusi käännösistunto kohteesta %o.
+  wwcOnJoinTranslationNotificationSourceLang: Sinulla on aktiivinen käännösistunto
+    osoitteesta %i - %o.
+  wwctAutoTranslateStartOtherPlayer: Aloitetaan uusi käännösistunto kohteella %o.
+  wwctTranslationStopped: Käännösistuntosi on keskeytetty.
+  wwctLangToLangStartOtherPlayer: Aloitetaan uusi käännösistunto kohteella %o kohteella
+    %i.
+  wwctAutoTranslateStart: Aloitetaan uusi käännösistunto kohteeseen %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Sinulla on aktiivinen käännösistunto
+    kohteeseen %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globaali keskustelu
+    käännetään, mutta sinulla on aktiivinen käännösistunto kohteeseen %o.

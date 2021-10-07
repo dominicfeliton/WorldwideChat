@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Mērķa grāmatas tulkošana...
   wwcConfigDisabledbStats: Atspējots bStats.
   wwctsOffSender: Zīmes tulkojums ir atspēj
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globālā tērzēšana tiek
-    tulkota, bet jūsu tērzēšana tiek tulkota no %i uz %o.
   wwcUpdaterParserFailed: Neizdevās parsēt atjaunināšanas datus no Github.
-  wwctAutoTranslateStart: Tagad tulkojot visu savu tērzēšanu uz %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Pašreizējā slepenā atslēga ir
     %i. Lūdzu, ievadiet Amazon slepeno atslēgu vai ierakstiet 0, lai atgrieztos.
   wwctbOffSender: Grāmatu tulkojums atspējots
   wwcConfigGUIAmazonTranslateButton: Amazon tulkot
   wwcConfigConversationLangSuccess: Spraudņa valoda veiksmīgi mainīta.
   wwcsSuccessfulTranslations: 'Veiksmīgi tulkojumi: %i'
-  wwctTranslationStoppedOtherPlayer: Tērzēšanas tulkošana par %i ir apturēta.
   wwcConfigConversationTranslationCacheInput: Pašreizējais tulkošanas kešatmiņas ierobežojums
     ir %i frāzes. Ierakstiet vairāk nekā 0, lai iestatītu jaunu vērtību, vai ierakstiet
     0, lai atspējotu tulkošanas kešatmiņu Ierakstiet kaut ko mazāk par 0, lai atgrieztos.
@@ -58,13 +54,10 @@ Messages:
     tikai vienu tulkotāju savā config.yml.
   wwcConfigGUIQuitButton: Iziet no & Saglabāt izmaiņas
   wwctPlayerNotFound: Spēlētājs %es neesmu atrasts.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globālā tērzēšana tiek
-    tulkota, bet jūsu tērzēšana tiek tulkota uz %o.
   wwcConfigGUIAmazonTranslateRegionButton: Mainīt Amazones reģionu
   wwcConfigConversationLangInput: 'Pašreizējā spraudņa valoda ir %i. Lūdzu ievadiet
     derīgu valodas kodu vai ierakstiet 0, lai atceltu. Derīgi valodas kodi: %o'
   wwcConfigConversationLangInvalid: Nederīgs valodas kods!
-  wwctTranslationStopped: Jūsu tērzēšanas tulkošana ir apturēta.
   wwcConfigGUIWatsonAPIKeyButton: Mainīt Watson API atslēgu
   wwcEnabled: Iespējota WorldwideChat versija %i.
   wwcgLangToLangStart: Tagad tulkojot globālo tērzēšanu no %i uz %o.
@@ -83,7 +76,6 @@ Messages:
     API atslēgu Watson vai ierakstiet 0, lai atgrieztos.
   wwctGUIStopButton: Pārtraukt tulkošanu
   wwcgTranslationStopped: Global tērzēšanas tulkošana ir apturēta.
-  wwctAutoTranslateStartOtherPlayer: Tagad tulkojot tērzēšanu %i uz %o.
   wwcUpdaterFutureDate: Šim WorldwideChat gadījumam ir lielāka versija nekā jaunākā
     publiskā versija.
   wwcConfigConversationPrefixSuccess: Prefikss veiksmīgi mainīts.
@@ -94,8 +86,6 @@ Messages:
   wwcConfigCacheDisabled: Tulkotāja kešatmiņa ir at
   wwcConfigConversationWatsonURLInput: Pašreizējais URL ir %i. Lūdzu, ievadiet pakalpojuma
     URL Watson vai ierakstiet 0, lai atgrieztos.
-  wwcOnJoinTranslationNotificationSourceLang: Jūsu tērzēšana tiek tulkota no %i uz
-    %o.
   wwcBookDone: Grāmata tulkota veiksmīgi.
   wwctsOnSender: Iespējots paraksta tulkojums. Ar peles labo pogu noklikšķiniet uz
     zīmes, lai to tulkotu!
@@ -120,11 +110,9 @@ Messages:
   wwcConfigGUIPrefixButton: Mainīt spraudņa prefiksu
   wwctSameLangError: Jūs nevarat tulkot tajā pašā valodā!
   wwctGUINewTranslationTarget: Izvēlēties mērķa valodu
-  wwctLangToLangStartOtherPlayer: Tagad tulkojot tērzēšanu %o no %i uz %e.
   wwcConfigConnectionSuccess: Veiksmīgi savienots ar %o!
   wwcConfigGUIGoogleTranslateButton: Google tulkot
   wwcsIsActiveTranslator: 'Ir aktīvs tulkotājs: %i'
-  wwctLangToLangStart: Tagad tulkojot visu savu tērzēšanu no %i uz %o.
   wwcConfigConversationPrefixInput: Pašreizējais prefikss ir %i. Lūdzu ierakstiet
     jaunu vai ierakstiet 0, lai atgrieztos.
   wwcConfigGUIPreviousPageButton: Iepriekšējā lapa
@@ -161,7 +149,6 @@ Messages:
   wwcRateLimit: Jūsu tulkojumi ir ierobežoti. Lūdzu, uzgaidiet citu %i sekundes.
   wwcConfigCacheEnabled: Tulkotāja kešatmiņa ir iespējota un iestatīta uz robežu %i.
   wwctGUIExistingTranslationButton: Pārrakstīt pašreizējo tulkošanas sesiju
-  wwcOnJoinTranslationNotificationNoSourceLang: Jūsu tērzēšana tiek tulkota uz %o.
   wwcUserDataReloaded: Ielādēti visi saglabātie lietotāja dati.
   wwcConfigGUISendTranslationChatButton: Nosūtīt tērzēšanas atgādinājumu aktīvajam
     tulkotājam pēc pieteikšanās
@@ -193,7 +180,6 @@ Messages:
     kavēšanās ir %i sekundes. Ierakstiet kaut ko lielāku par 10, lai iestatītu jaunu
     vērtību, vai jebko, kas ir mazāks par 10, lai atgrieztos.
   wwcConfigGUISyncUserDataButton: Mainīt lietotāja datu sinhronizācijas aizkavēšanos
-  wwcConfigSyncTime: Automātiska lietotāja datu sinhronizācija pabeigta %i nanoseconds.
   wwcConfigSyncDelayEnabled: Kavēšanās katram lietotāja datu sinhronizācijai iestatīta
     uz %i sekundes.
   wwcConfigConversationSyncUserDataDelaySuccess: Lietotāja datu sinhronizācijas kavēšanās
@@ -310,7 +296,27 @@ Messages:
   wwcteOffSender: Entītiju tulkošana ir
   wwctGUIEntityButton: Pārslēgt entītijas tulkošanu
   wwcConfigConversationResponseLimitSuccess: Atbildes taimauts veiksmīgi iestatīts.
-  wwctCannotTranslateConsole: Jūs nevarat tulkot konsoles tērzēšanu!
   wwctrlRateLimitBadInt: Jūsu likmes ierobežojums nav derīgs vesels skaitlis.
   wwcTranslatorErrorConsole: Problēma radās, kamēr lietotājs %i mēģināja tulkot. Lūdzu,
     pārbaudiet errorLog.txt, lai iegūtu sīkāku informāciju.
+  wwctcOffSender: Tērzēšanas tulkošana ir
+  wwctcOnTarget: Tērzēšanas tulkojums iespējots uz %i.
+  wwctcOnSender: Tērzēšanas tulkojums iespējots Viss, ko jūs sakāt, tiks tulkots!
+  wwctGUIChatButton: Pārslēgt tērzēšanas tulkošanu
+  wwctcOffTarget: Tērzēšanas tulkojums atspējots uz %i
+  wwcrBegin: Pārlādēšana WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Tulkošanas sesija priekš %i ir apturēta.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globālā tērzēšana tiek
+    tulkota, bet jums ir aktīva tulkošanas sesija no %i uz %o.
+  wwctCannotTranslateConsole: Jūs nevarat sākt tulkošanas sesiju konsolei!
+  wwctLangToLangStart: Sākot jaunu tulkošanas sesiju no %i līdz %o.
+  wwcOnJoinTranslationNotificationSourceLang: Jums ir aktīva tulkošanas sesija no
+    %i līdz %o.
+  wwctAutoTranslateStartOtherPlayer: Sākot jaunu tulkošanas sesiju uz %i uz %o.
+  wwctTranslationStopped: Tulkošanas sesija ir apturēta.
+  wwctLangToLangStartOtherPlayer: Sākot jaunu tulkošanas sesiju uz %o no %i uz %e.
+  wwctAutoTranslateStart: Sākot jaunu tulkošanas sesiju uz %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Jums ir aktīva tulkošanas sesija uz
+    %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globālā tērzēšana tiek
+    tulkota, bet jums ir aktīva tulkošanas sesija uz %o.

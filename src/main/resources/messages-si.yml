@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: ඉලක්කගත පොත පරිවර්තනය කිරීම...
   wwcConfigDisabledbStats: ආබාධිත bStats.
   wwctsOffSender: සංඥා පරිවර්තනය අක්රීය.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ගෝලීය කතාබස් පරිවර්ථනය
-    වෙමින් පවතී, නමුත් ඔබගේ කතාබස් පරිවර්ථනය කරනු ලබන්නේ %i වෙත %o වෙතටයි.
   wwcUpdaterParserFailed: Github වෙතින් යාවත්කාලීන දත්ත විග්රහ කිරීමට අපොහොසත් විය.
-  wwctAutoTranslateStart: දැන් ඔබගේ කතාබස් සියල්ලම %o වෙත පරිවර්තනය කරන්න.
   wwcConfigConversationAmazonTranslateSecretKeyInput: වත්මන් රහස් යතුර %i වේ. කරුණාකර
     ඇමේසන් සඳහා රහස් යතුරක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwctbOffSender: පොත් පරිවර්තනය අක්රීය කර ඇත.
   wwcConfigGUIAmazonTranslateButton: ඇමේසන් පරිවර්තනය
   wwcConfigConversationLangSuccess: ප්ලගින භාෂාව සාර්ථකව වෙනස්.
   wwcsSuccessfulTranslations: 'සාර්ථක පරිවර්තන: %i'
-  wwctTranslationStoppedOtherPlayer: '%i සඳහා කතාබස් පරිවර්තනය නතර කර ඇත.'
   wwcConfigConversationTranslationCacheInput: වර්තමාන පරිවර්තන හැඹිලි සීමා %i වාක්ය
     ඛණ්ඩ වේ. වඩා වැඩි දෙයක් ටයිප් 0 නව අගය නියම කිරීමට, හෝ ටයිප් 0 පරිවර්තනය හැඹිලි
     අක්රිය කිරීමට. ආපසු යාමට 0 ට වඩා අඩු දෙයක් ටයිප් කරන්න.
@@ -57,13 +53,10 @@ Messages:
     තුළ එක් පරිවර්තකයෙකුට පමණක් සක්රීය කරන්න.
   wwcConfigGUIQuitButton: පිටවීමේ සහ සුරකින්න වෙනස්කම්
   wwctPlayerNotFound: ක්රීඩකයා සොයාගත්තේ නැත.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ගෝලීය කතාබස් පරිවර්තනය
-    වෙමින් පවතී, නමුත් ඔබගේ කතාබස් %o වෙත පරිවර්තනය වෙමින් පවතී.
   wwcConfigGUIAmazonTranslateRegionButton: ඇමසන් කලාපය වෙනස් කරන්න
   wwcConfigConversationLangInput: 'වත්මන් ප්ලගින භාෂාව %i වේ. කරුණාකර වලංගු භාෂා කේතයක්
     ඇතුලත් කරන්න, නැතහොත් අවලංගු කිරීමට 0 ටයිප් කරන්න. වලංගු භාෂා කේත: %o'
   wwcConfigConversationLangInvalid: වලංගු නොවන භාෂා කේතය!
-  wwctTranslationStopped: ඔබේ චැට් පරිවර්තනය නතර කර ඇත.
   wwcConfigGUIWatsonAPIKeyButton: වොට්සන් API කී වෙනස්
   wwcEnabled: සක්‍රීය වර්ල්වයිඩ්හාට් අනුවාදය %i.
   wwcgLangToLangStart: දැන් ගෝලීය කතාබස් %i සිට %o වෙත පරිවර්තනය කිරීම.
@@ -84,7 +77,6 @@ Messages:
     API යතුරක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwctGUIStopButton: පරිවර්තනය නවත්වන්න
   wwcgTranslationStopped: ගෝලීය චැට් පරිවර්තනය නතර කර ඇත.
-  wwctAutoTranslateStartOtherPlayer: දැන් කතාබස් පරිවර්ථනය කිරීම %i සිට %o.
   wwcUpdaterFutureDate: වර්ල්ඩ්වයිඩ්හාට් හි මෙම අවස්ථාව නවතම පොදු එකට වඩා විශාල අනුවාදයක්
     ඇත.
   wwcConfigConversationPrefixSuccess: උපසර්ගය සාර්ථකව වෙනස් විය.
@@ -94,8 +86,6 @@ Messages:
   wwcConfigCacheDisabled: පරිවර්තක හැඹිලි අක්රීය කර ඇත.
   wwcConfigConversationWatsonURLInput: වත්මන් URL එක %i වේ. කරුණාකර වොට්සන් සඳහා සේවා
     URL එකක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
-  wwcOnJoinTranslationNotificationSourceLang: ඔබගේ කතාබස් එක %i සිට %o වෙත පරිවර්තනය
-    කරනු ලැබේ.
   wwcBookDone: පොත සාර්ථකව පරිවර්තනය කර ඇත.
   wwctsOnSender: සංඥා පරිවර්තනය සක්රීය කර ඇත. එය පරිවර්තනය කිරීම සඳහා ලකුණක් මත දකුණු-ක්ලික්
     කරන්න!
@@ -121,11 +111,9 @@ Messages:
   wwcConfigGUIPrefixButton: ප්ලගින උපසර්ගය වෙනස් කරන්න
   wwctSameLangError: ඔබට එකම භාෂාවට පරිවර්තනය කළ නොහැක!
   wwctGUINewTranslationTarget: ඉලක්කගත භාෂාවක් තෝරන්න
-  wwctLangToLangStartOtherPlayer: දැන් %o සිට කතාබස් පරිවර්තනය කිරීම %i සිට %e.
   wwcConfigConnectionSuccess: '%o වෙත සාර්ථකව සම්බන්ධ විය!'
   wwcConfigGUIGoogleTranslateButton: ගූගල් පරිවර්තනය
   wwcsIsActiveTranslator: 'ක්රියාකාරී පරිවර්තක වේ: %i'
-  wwctLangToLangStart: දැන් ඔබගේ කතාබස් සියල්ලම %i සිට %o වෙත පරිවර්තනය කරන්න.
   wwcConfigConversationPrefixInput: වත්මන් උපසර්ගය %i වේ. කරුණාකර අලුත් එකක් ටයිප්
     කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigGUIPreviousPageButton: පෙර පිටුව
@@ -162,8 +150,6 @@ Messages:
   wwcRateLimit: ඔබගේ පරිවර්තන අනුපාතය සීමිතය. කරුණාකර තත්පර ගණනක් බලා සිටින්න.
   wwcConfigCacheEnabled: පරිවර්තක හැඹිලි සක්රීය කර %i සීමාවකට සකසා ඇත.
   wwctGUIExistingTranslationButton: වත්මන් පරිවර්තන සැසිය ලියන්න
-  wwcOnJoinTranslationNotificationNoSourceLang: ඔබගේ චැට් එක %o වෙත පරිවර්තනය කරනු
-    ලැබේ.
   wwcUserDataReloaded: සියලු සුරකින ලද පරිශීලක දත්ත පටවා.
   wwcConfigGUISendTranslationChatButton: ලොගින් වන්න මත ක්රියාකාරී පරිවර්තකයාට චැට්
     මතක් කිරීම යවන්න
@@ -195,8 +181,6 @@ Messages:
     පවතින ප්රමාදය තත්පරය %i වේ. නව වටිනාකමක් සැකසීමට 10 ට වඩා වැඩි යමක් ටයිප් කරන්න,
     නැතහොත් ආපසු යාමට 10 ට වඩා අඩු දෙයක්.
   wwcConfigGUISyncUserDataButton: පරිශීලක දත්ත සමමුහුර්ත කරන්න ප්රමාද වෙනස්
-  wwcConfigSyncTime: ස්වයංක්රීය පරිශීලක දත්ත සමමුහුර්ත කිරීම %i නැනෝ තත්පර වලින් සම්පූර්ණ
-    කරන ලදී.
   wwcConfigSyncDelayEnabled: තත්පර 1 දක්වා පරිශීලක දත්ත සමමුහුර්තකරණය ප්රමාද කිරීම.
   wwcConfigConversationSyncUserDataDelaySuccess: පරිශීලක දත්ත සමමුහුර්ත ප්රමාදය සාර්ථකව
     සකසා ඇත.
@@ -315,7 +299,28 @@ Messages:
   wwcteOffSender: ආයතන පරිවර්තනය අක්රීය කර ඇත.
   wwctGUIEntityButton: ටොගල් කරන්න ආයතනය පරිවර්තනය
   wwcConfigConversationResponseLimitSuccess: ප්රතිචාර කාලය සාර්ථකව සකසා ඇත.
-  wwctCannotTranslateConsole: ඔබට කොන්සෝල චැට් පරිවර්තනය කළ නොහැක!
   wwctrlRateLimitBadInt: ඔබගේ අනුපාත සීමාව වලංගු නිඛිලයක් නොවේ.
   wwcTranslatorErrorConsole: පරිශීලක % මම ඔවුන්ගේ පරිවර්තනයට උත්සාහ කරමින් සිටියදී
     ගැටළුවක් ඇති විය. වැඩි විස්තර සඳහා errorLog.txt පරීක්ෂා කරන්න.
+  wwctcOffSender: චැට් පරිවර්තනය අක්රීය කර ඇත.
+  wwctcOnTarget: කතාබස් පරිවර්තනය සක්‍රීය කර ඇත %i.
+  wwctcOnSender: චැට් පරිවර්තනය සක්රීය කර ඇත. ඔබ කියන ඕනෑම දෙයක් පරිවර්තනය කරනු ඇත!
+  wwctGUIChatButton: ටොගල් කරන්න චැට් පරිවර්තනය
+  wwctcOffTarget: කතාබස් පරිවර්තනය %i සඳහා අක්රීය කර ඇත.
+  wwcrBegin: නැවත පූරණය කිරීම ලෝක වයිඩෙහාට්...
+  wwctTranslationStoppedOtherPlayer: '%i සඳහා පරිවර්තන සැසිය නතර කර ඇත.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ගෝලීය කතාබස් පරිවර්තනය
+    වෙමින් පවතී, නමුත් ඔබට %i සිට %o සිට ක්රියාකාරී පරිවර්තන සැසියක් ඇත.
+  wwctCannotTranslateConsole: ඔබට කොන්සෝලය සඳහා පරිවර්තන සැසියක් ආරම්භ කළ නොහැක!
+  wwctLangToLangStart: '%i සිට %o දක්වා නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
+  wwcOnJoinTranslationNotificationSourceLang: ඔබට %i සිට සක්‍රීය පරිවර්තන සැසියක්
+    ඇත.
+  wwctAutoTranslateStartOtherPlayer: '%i to %o සඳහා නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
+  wwctTranslationStopped: ඔබගේ පරිවර්තන සැසිය නතර කර ඇත.
+  wwctLangToLangStartOtherPlayer: '%o සඳහා නව පරිවර්තන සැසියක් ආරම්භ කිරීම %i සිට
+    %e.'
+  wwctAutoTranslateStart: '%o වෙත නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
+  wwcOnJoinTranslationNotificationNoSourceLang: ඔබට %o වෙත ක්රියාකාරී පරිවර්තන සැසියක්
+    ඇත.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ගෝලීය චැට් පරිවර්තනය
+    වෙමින් පවතී, නමුත් ඔබට %o වෙත ක්රියාකාරී පරිවර්තන සැසියක් ඇත.
