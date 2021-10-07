@@ -119,6 +119,7 @@ public class WWCTranslate extends BasicCommand {
 			for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
 				CommonDefinitions.sendMessage(eaPlayer, chatTranslationStopped);
 			}
+			CommonDefinitions.sendMessage(WorldwideChat.getInstance().getServer().getConsoleSender(), chatTranslationStopped);
 			if (args.length >= 1 && args[0] instanceof String && args[0].equalsIgnoreCase("Stop")) {
 				return true;
 			}
@@ -273,6 +274,7 @@ public class WWCTranslate extends BasicCommand {
 				for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
 					CommonDefinitions.sendMessage(eaPlayer, autoTranslate);
 				}
+				CommonDefinitions.sendMessage(WorldwideChat.getInstance().getServer().getConsoleSender(), autoTranslate);
 			} else {
 				final TextComponent langToLang = Component.text()
 						.append(Component.text()
@@ -282,6 +284,7 @@ public class WWCTranslate extends BasicCommand {
 				for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
 					CommonDefinitions.sendMessage(eaPlayer, langToLang);
 				}
+				CommonDefinitions.sendMessage(WorldwideChat.getInstance().getServer().getConsoleSender(), langToLang);
 			}
 		}
 		ActiveTranslator newTranslator = new ActiveTranslator(inUUID, "None", outLang);
