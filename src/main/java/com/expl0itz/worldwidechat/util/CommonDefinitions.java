@@ -31,7 +31,6 @@ import com.expl0itz.worldwidechat.translators.WatsonTranslation;
 import com.google.cloud.translate.TranslateException;
 import com.google.common.base.CharMatcher;
 import com.ibm.cloud.sdk.core.service.exception.NotFoundException;
-import com.sun.tools.javac.launcher.Main;
 
 import fr.minuskube.inv.SmartInventory;
 import net.kyori.adventure.audience.Audience;
