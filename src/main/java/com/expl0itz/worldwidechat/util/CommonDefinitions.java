@@ -31,6 +31,7 @@ import com.expl0itz.worldwidechat.translators.WatsonTranslation;
 import com.google.cloud.translate.TranslateException;
 import com.google.common.base.CharMatcher;
 import com.ibm.cloud.sdk.core.service.exception.NotFoundException;
+import com.sun.tools.javac.launcher.Main;
 
 import fr.minuskube.inv.SmartInventory;
 import net.kyori.adventure.audience.Audience;
@@ -146,8 +147,8 @@ public class CommonDefinitions {
 		} else {
 			convertedOriginalMessage = WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages." + ChatColor.stripColor(messageName));
 			if (convertedOriginalMessage == null) {
-				WorldwideChat.getInstance().getLogger().severe("Bad message! Please fix your messages-XX.yml.");
-				return ChatColor.RED + "Bad message! Please fix your messages-XX.yml.";
+				WorldwideChat.getInstance().getLogger().severe("Bad message! Please fix your messages-" + WorldwideChat.getInstance().getPluginLang() + ".yml.");
+				return ChatColor.RED + "Bad message! Please fix your messages-" + WorldwideChat.getInstance().getPluginLang() + ".yml.";
 			}
 		}
 		
