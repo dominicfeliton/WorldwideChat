@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Dịch sách mục tiêu...
   wwcConfigDisabledbStats: Tắt bStats.
   wwctsOffSender: Đã vô hiệu hóa bản dịch ký.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Trò chuyện toàn cầu đang
-    được dịch, nhưng trò chuyện của bạn đang được dịch từ %i đến %o.
   wwcUpdaterParserFailed: Không thể phân tích dữ liệu cập nhật từ Github.
-  wwctAutoTranslateStart: Bây giờ dịch tất cả các cuộc trò chuyện của bạn vào %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Khóa bí mật hiện tại là %i.
     Vui lòng nhập một khóa bí mật cho Amazon, hoặc nhập 0 để quay lại.
   wwctbOffSender: Bản dịch sách bị vô hiệu hóa.
   wwcConfigGUIAmazonTranslateButton: Amazon Translate
   wwcConfigConversationLangSuccess: Ngôn ngữ plugin đã thay đổi thành công.
   wwcsSuccessfulTranslations: 'Bản dịch thành công: %i'
-  wwctTranslationStoppedOtherPlayer: Dịch trò chuyện cho %i đã bị dừng.
   wwcConfigConversationTranslationCacheInput: Giới hạn bộ nhớ cache dịch hiện tại
     là %i cụm từ. Nhập bất cứ điều gì lớn hơn 0 để đặt một giá trị mới, hoặc nhập
     0 để vô hiệu hóa bộ nhớ cache dịch. Nhập bất cứ điều gì nhỏ hơn 0 để quay trở
@@ -59,13 +55,10 @@ Messages:
     hoạt chỉ một trình dịch trong config.yml của bạn.
   wwcConfigGUIQuitButton: Thoát & Lưu Thay đổi
   wwctPlayerNotFound: Người chơi %Tôi không tìm thấy.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Trò chuyện toàn cầu
-    đang được dịch, nhưng trò chuyện của bạn đang được dịch vào %o.
   wwcConfigGUIAmazonTranslateRegionButton: Thay đổi Vùng Amazon
   wwcConfigConversationLangInput: 'Ngôn ngữ plugin hiện tại là %i. Vui lòng nhập mã
     ngôn ngữ hợp lệ, hoặc nhập 0 để hủy. Mã ngôn ngữ hợp lệ: %o'
   wwcConfigConversationLangInvalid: Mã ngôn ngữ không hợp lệ!
-  wwctTranslationStopped: Bản dịch trò chuyện của bạn đã bị dừng lại.
   wwcConfigGUIWatsonAPIKeyButton: Thay đổi khóa API Watson
   wwcEnabled: Đã bật phiên bản WorldwideChat %i.
   wwcgLangToLangStart: Bây giờ dịch trò chuyện toàn cầu từ %i đến %o.
@@ -84,7 +77,6 @@ Messages:
     API cho Watson, hoặc nhập 0 để quay lại.
   wwctGUIStopButton: Dừng dịch
   wwcgTranslationStopped: Dịch trò chuyện toàn cầu đã bị dừng lại.
-  wwctAutoTranslateStartOtherPlayer: Bây giờ dịch cuộc trò chuyện của %i đến %o.
   wwcUpdaterFutureDate: Phiên bản WorldwideChat này có phiên bản lớn hơn phiên bản
     công khai mới nhất.
   wwcConfigConversationPrefixSuccess: Tiền tố đã thay đổi thành công.
@@ -95,8 +87,6 @@ Messages:
   wwcConfigCacheDisabled: Bộ nhớ cache của trình dịch bị tắt.
   wwcConfigConversationWatsonURLInput: URL hiện tại là %i. Vui lòng nhập URL dịch
     vụ cho Watson, hoặc nhập 0 để quay lại.
-  wwcOnJoinTranslationNotificationSourceLang: Trò chuyện của bạn đang được dịch từ
-    %i đến %o.
   wwcBookDone: Sách dịch thành công.
   wwctsOnSender: Đã bật bản dịch ký. Nhấp chuột phải vào một dấu hiệu để dịch nó!
   watsonColorCodeWarning: Sử dụng mã màu có thể cho bạn kết quả không thể đoán trước.
@@ -121,11 +111,9 @@ Messages:
   wwcConfigGUIPrefixButton: Thay đổi tiền tố plugin
   wwctSameLangError: Bạn không thể dịch sang cùng một ngôn ngữ!
   wwctGUINewTranslationTarget: Chọn một ngôn ngữ mục tiêu
-  wwctLangToLangStartOtherPlayer: Bây giờ dịch cuộc trò chuyện của %o từ %i đến %e.
   wwcConfigConnectionSuccess: Kết nối thành công vào %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Đang hoạt động Translator: %i'
-  wwctLangToLangStart: Bây giờ dịch tất cả cuộc trò chuyện của bạn từ %i đến %o.
   wwcConfigConversationPrefixInput: Tiền tố hiện tại là %i. Vui lòng nhập một tiền
     tố mới, hoặc nhập 0 để quay lại.
   wwcConfigGUIPreviousPageButton: Trang trước
@@ -162,8 +150,6 @@ Messages:
   wwcConfigCacheEnabled: Bộ nhớ cache của trình dịch được bật và đặt thành giới hạn
     của %i.
   wwctGUIExistingTranslationButton: Ghi đè phiên dịch hiện tại
-  wwcOnJoinTranslationNotificationNoSourceLang: Trò chuyện của bạn đang được dịch
-    tới %o.
   wwcUserDataReloaded: Đã nạp tất cả dữ liệu người dùng đã lưu.
   wwcConfigGUISendTranslationChatButton: Gửi lời nhắc trò chuyện cho Active Translator
     khi đăng nhập
@@ -195,7 +181,6 @@ Messages:
     hóa dữ liệu người dùng là %i giây. Nhập bất cứ điều gì lớn hơn 10 để đặt một giá
     trị mới, hoặc bất cứ điều gì nhỏ hơn 10 để quay lại.
   wwcConfigGUISyncUserDataButton: Thay đổi độ trễ đồng bộ hóa dữ liệu người dùng
-  wwcConfigSyncTime: Tự động đồng bộ dữ liệu người dùng hoàn tất trong %i nanogiây.
   wwcConfigSyncDelayEnabled: Trì hoãn cho mỗi người dùng đồng bộ hóa dữ liệu đặt thành
     %i giây.
   wwcConfigConversationSyncUserDataDelaySuccess: Thiết lập chậm trễ đồng bộ hóa dữ
@@ -316,7 +301,6 @@ Messages:
   wwctGUIEntityButton: Chuyển đổi Dịch thực thể
   wwcConfigConversationResponseLimitSuccess: Đáp ứng thời gian chờ thiết lập thành
     công.
-  wwctCannotTranslateConsole: Bạn không thể dịch giao diện điều khiển trò chuyện!
   wwctrlRateLimitBadInt: Giới hạn tỷ lệ của bạn không phải là số nguyên hợp lệ.
   wwcTranslatorErrorConsole: Một vấn đề xảy ra trong khi người dùng %i đang cố gắng
     dịch thuật của họ. Vui lòng kiểm tra errorLog.txt để biết thêm chi tiết.
@@ -326,3 +310,19 @@ Messages:
   wwctGUIChatButton: Chuyển đổi Chat Translation
   wwctcOffTarget: Dịch trò chuyện bị tắt cho %i.
   wwcrBegin: Nạp lại WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Phiên dịch cho %i đã bị dừng lại.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Trò chuyện toàn cầu đang
+    được dịch, nhưng bạn có phiên dịch hoạt động từ %i đến %o.
+  wwctCannotTranslateConsole: Bạn không thể bắt đầu phiên dịch cho giao diện điều
+    khiển!
+  wwctLangToLangStart: Bắt đầu phiên dịch mới từ %i đến %o.
+  wwcOnJoinTranslationNotificationSourceLang: Bạn có một phiên dịch hoạt động từ %i
+    đến %o.
+  wwctAutoTranslateStartOtherPlayer: Bắt đầu phiên dịch mới cho %i đến %o.
+  wwctTranslationStopped: Phiên dịch của bạn đã bị dừng lại.
+  wwctLangToLangStartOtherPlayer: Bắt đầu phiên dịch mới cho %o từ %i đến %e.
+  wwctAutoTranslateStart: Bắt đầu phiên dịch mới đến %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Bạn có một phiên dịch hoạt động đến
+    %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Trò chuyện toàn cầu
+    đang được dịch, nhưng bạn có phiên dịch đang hoạt động đến %o.

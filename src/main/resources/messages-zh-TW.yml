@@ -21,17 +21,13 @@ Messages:
   wwcBookTranslateStart: 正在正在翻譯目標報表簿...
   wwcConfigDisabledbStats: 停用的 bStats。
   wwctsOffSender: 已停用簽署轉譯。
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 全球聊天正在翻譯，但您的聊天將從 %i 翻譯成
-    %o。
   wwcUpdaterParserFailed: 無法從 Github 剖析更新資料。
-  wwctAutoTranslateStart: 現在將您所有的聊天翻譯為 %o。
   wwcConfigConversationAmazonTranslateSecretKeyInput: 目前的秘密金鑰是 %i。請輸入 Amazon 的秘密金鑰，或輸入
     0 返回。
   wwctbOffSender: 書籍翻譯已停用。
   wwcConfigGUIAmazonTranslateButton: 亞馬遜翻譯
   wwcConfigConversationLangSuccess: 外掛程式語言變更成功。
   wwcsSuccessfulTranslations: '成功翻譯: %i'
-  wwctTranslationStoppedOtherPlayer: '%i 的聊天翻譯已停止。'
   wwcConfigConversationTranslationCacheInput: 目前的轉譯快取限制為 %i 片語。輸入大於 0 的任何值以設定新值，或鍵入
     0 以停用轉譯快取。輸入小於 0 的任何內容以返回。
   wwctbOffTarget: '%i 已停用書冊翻譯。'
@@ -49,11 +45,9 @@ Messages:
   wwcConfigInvalidTranslatorSettings: 無效的翻譯器設定！請在您的配置.yml 中只啟用一個翻譯器。
   wwcConfigGUIQuitButton: 退出並儲存變更
   wwctPlayerNotFound: 玩家 % 我找不到。
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 全球聊天正在翻譯，但您的聊天翻譯成 %o。
   wwcConfigGUIAmazonTranslateRegionButton: 變更亞馬遜區域
   wwcConfigConversationLangInput: '目前的外掛程式語言為 %i。請輸入有效的語言代碼，或輸入 0 以取消。有效的語言代碼: %o'
   wwcConfigConversationLangInvalid: 語言代碼無效！
-  wwctTranslationStopped: 您的聊天翻譯已停止。
   wwcConfigGUIWatsonAPIKeyButton: 變更沃森 API 金鑰
   wwcEnabled: 已啟用全球聊天版本 %i。
   wwcgLangToLangStart: 現在將全球聊天從 %i 翻譯到 %o。
@@ -69,7 +63,6 @@ Messages:
     返回。
   wwctGUIStopButton: 停止翻譯
   wwcgTranslationStopped: 全球聊天翻譯已停止。
-  wwctAutoTranslateStartOtherPlayer: 現在將 ％i 的聊天翻譯到 ％o。
   wwcUpdaterFutureDate: 這個 WorldwideChat 的執行個體比最新的公開版本還要大。
   wwcConfigConversationPrefixSuccess: 字首已成功變更。
   wwcConfigGUIGoogleTranslateAPIKeyButton: 更改谷歌翻譯 API 密鑰
@@ -77,7 +70,6 @@ Messages:
   wwctsOnTarget: 已啟用 %i 的簽署轉譯。
   wwcConfigCacheDisabled: 翻譯器快取已停用。
   wwcConfigConversationWatsonURLInput: 目前的 URL 是 %i。請輸入 Watson 的服務 URL，或輸入 0 返回。
-  wwcOnJoinTranslationNotificationSourceLang: 您的聊天室正在從 %i 翻譯成 %o。
   wwcBookDone: 書籍翻譯成功。
   wwctsOnSender: 已啟用簽署翻譯。在標誌上按一下滑鼠右鍵即可翻譯它！
   watsonColorCodeWarning: 使用顏色代碼可能會給您無法預期的結果。
@@ -99,11 +91,9 @@ Messages:
   wwcConfigGUIPrefixButton: 變更外掛程式前置
   wwctSameLangError: 您無法翻譯成相同的語言！
   wwctGUINewTranslationTarget: 選擇目標語言
-  wwctLangToLangStartOtherPlayer: 現在將 ％o 的聊天從 ％i 翻譯到 ％e。
   wwcConfigConnectionSuccess: 成功連線到 %o!
   wwcConfigGUIGoogleTranslateButton: 谷歌翻譯
   wwcsIsActiveTranslator: '為作用中的轉換器: %i'
-  wwctLangToLangStart: 現在將您所有的聊天從 %i 翻譯到 %o。
   wwcConfigConversationPrefixInput: 目前的前置碼是 %i。請輸入新字首，或輸入 0 返回。
   wwcConfigGUIPreviousPageButton: 上一頁
   wwcConfigGUITranslatorCacheButton: 變更翻譯快取限制
@@ -131,7 +121,6 @@ Messages:
   wwcRateLimit: 您的翻譯費率有限。請稍候其他 %i 秒。
   wwcConfigCacheEnabled: 已啟用翻譯器快取並設定為 %i 的限制。
   wwctGUIExistingTranslationButton: 覆寫目前翻譯作業階段
-  wwcOnJoinTranslationNotificationNoSourceLang: 您的聊天正在翻譯成 %o。
   wwcUserDataReloaded: 載入所有已儲存的使用者資料。
   wwcConfigGUISendTranslationChatButton: 登入時傳送聊天提醒給現行翻譯人員
   wwcsLastTranslationTime: 上次 (成功) 轉譯時間： %i
@@ -155,7 +144,6 @@ Messages:
   wwcConfigConversationSyncUserDataDelayInput: 每次同步使用者資料的目前延遲為 %i 秒。輸入大於 10 的任何內容以設置一個新值，或者任何小於
     10 的東西返回。
   wwcConfigGUISyncUserDataButton: 變更使用者資料同步延遲
-  wwcConfigSyncTime: 自動使用者資料同步功能於 %i 納秒內完成。
   wwcConfigSyncDelayEnabled: 每個使用者資料同步設定為 %i 秒的延遲。
   wwcConfigConversationSyncUserDataDelaySuccess: 成功設定使用者資料同步延遲。
   wwcConfigSyncDelayInvalid: 在 config.yml 中設定的使用者資料同步延遲無效。預設值為 7200 秒...
@@ -245,7 +233,6 @@ Messages:
   wwcteOffSender: 已停用實體轉換。
   wwctGUIEntityButton: 切換實體轉換
   wwcConfigConversationResponseLimitSuccess: 回應逾時設定成功。
-  wwctCannotTranslateConsole: 你不能翻譯控制台聊天！
   wwctrlRateLimitBadInt: 你的費率限制不是有效的整數。
   wwcTranslatorErrorConsole: 使用者 %i 嘗試翻譯時發生問題。請查看 errorLog.txt 以獲取更多詳細信息。
   wwctcOffSender: 聊天翻譯已停用。
@@ -254,3 +241,16 @@ Messages:
   wwctGUIChatButton: 切換聊天翻譯
   wwctcOffTarget: '%i 的聊天翻譯已停用。'
   wwcrBegin: 正在重新載入全球聊天室...
+  wwctTranslationStoppedOtherPlayer: '%i 的翻譯階段作業已停止。'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 全球聊天正在翻譯，但您有一個從 %i 到 %o
+    的正在翻譯工作階段。
+  wwctCannotTranslateConsole: 您無法啟動主控台的翻譯工作階段！
+  wwctLangToLangStart: 從 %i 到 %o 開始新的翻譯階段作業。
+  wwcOnJoinTranslationNotificationSourceLang: 您有從 %i 到 %o 的作用中翻譯工作階段。
+  wwctAutoTranslateStartOtherPlayer: 開始 %i 到 %o 的新翻譯階段作業。
+  wwctTranslationStopped: 您的翻譯工作階段已停止。
+  wwctLangToLangStartOtherPlayer: 從 %i 到 %e 開始 %o 的新翻譯階段作業。
+  wwctAutoTranslateStart: 開始新的翻譯作業階段至 %o。
+  wwcOnJoinTranslationNotificationNoSourceLang: 您有一個有效的翻譯工作階段到 %o。
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 全球聊天正在翻譯，但您的翻譯工作階段為
+    %o。

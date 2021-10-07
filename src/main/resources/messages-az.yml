@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Hədəf kitabının tərcüməsi...
   wwcConfigDisabledbStats: Əlil bStats.
   wwctsOffSender: Sign tərcümə əlil.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Qlobal söhbət tərcümə
-    olunur, ancaq söhbətiniz %i -ə tərcümə olunur.
   wwcUpdaterParserFailed: Github-dan yeniləmə məlumatlarını təhlil edə bilmədi.
-  wwctAutoTranslateStart: İndi bütün söhbətiniz %o dilinə tərcümə edir.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Mövcud gizli açar %i. Amazon
     üçün gizli bir düyməni daxil edin və ya geri dönmək üçün 0 yazın.
   wwctbOffSender: Kitab tərcüməsi əlil.
   wwcConfigGUIAmazonTranslateButton: Amazon Tərcümə
   wwcConfigConversationLangSuccess: Plugin dili uğurla dəyişdi.
   wwcsSuccessfulTranslations: 'Uğurlu Tərcümələr: %i'
-  wwctTranslationStoppedOtherPlayer: '%i üçün chat tərcüməsi dayandırıldı.'
   wwcConfigConversationTranslationCacheInput: Mövcud tərcümə önbellek limitin %i ifadələridir.
     Yeni bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın və ya tərcümə önbelleğini
     aradan qaldırmaq üçün 0 yazın. Geri dönmək üçün 0'dan az bir şey yazın.
@@ -57,13 +53,10 @@ Messages:
     yalnız bir tərcüməçi aktivləşdirin.
   wwcConfigGUIQuitButton: Çıx və dəyişiklikləri saxla
   wwctPlayerNotFound: Oyunçu %tapılmadı.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Qlobal söhbət tərcümə
-    olunur, ancaq söhbətiniz %o tərcümə olunur.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon Regionunu dəyişdirin
   wwcConfigConversationLangInput: 'Mövcud plugin dili %i. Lütfən etibarlı dil kodunu
     daxil edin və ya ləğv etmək üçün 0 yazın. Dil kodları: %o'
   wwcConfigConversationLangInvalid: Yanlış dil kodu!
-  wwctTranslationStopped: Sizin chat tərcüməsi dayandırılıb.
   wwcConfigGUIWatsonAPIKeyButton: Watson API Açarını dəyişdirin
   wwcEnabled: WorldWieChat versiyası %i aktivləşdirildi.
   wwcgLangToLangStart: İndi qlobal söhbət %i %o dilinə tərcümə edir.
@@ -82,7 +75,6 @@ Messages:
     düyməsini daxil edin və ya geri qayıtmaq üçün 0 yazın.
   wwctGUIStopButton: Tərcüməni dayandırın
   wwcgTranslationStopped: Qlobal chat tərcüməsi dayandırılıb.
-  wwctAutoTranslateStartOtherPlayer: İndi %i söhbəti %o dilinə tərcümə edir.
   wwcUpdaterFutureDate: WorldWieChat bu instansiyası ən son ictimaiyyətdən daha böyük
     bir versiyaya malikdir.
   wwcConfigConversationPrefixSuccess: Prefiks uğurla dəyişdi.
@@ -93,8 +85,6 @@ Messages:
   wwcConfigCacheDisabled: Tərcüməçi önbellek aradan qaldırıldı.
   wwcConfigConversationWatsonURLInput: Mövcud URL %i. Watson üçün xidmət URL'sini
     daxil edin və ya geri dönmək üçün 0 yazın.
-  wwcOnJoinTranslationNotificationSourceLang: Sizin söhbətiniz %i dən %o dilinə tərcümə
-    olunur.
   wwcBookDone: Kitab uğurla tərcümə edilmişdir.
   wwctsOnSender: Sign tərcümə effektiv. Tərcümə etmək üçün bir işarəni sağ basın!
   watsonColorCodeWarning: Rəng kodlarını istifadə edərək, gözlənilməz nəticələr verə
@@ -117,11 +107,9 @@ Messages:
   wwcConfigGUIPrefixButton: Plugin Prefiksini dəyişdirin
   wwctSameLangError: Eyni dilə tərcümə edə bilməzsiniz!
   wwctGUINewTranslationTarget: Hədəf Dil Seçin
-  wwctLangToLangStartOtherPlayer: İndi %o söhbətini tərcümə edir %i -dən %e.
   wwcConfigConnectionSuccess: Uğurla bağlıdır %o!
   wwcConfigGUIGoogleTranslateButton: Google Tərcümə
   wwcsIsActiveTranslator: 'Aktiv Tərcüməçi: %i'
-  wwctLangToLangStart: İndi söhbətiniz %i %o dilinə tərcümə edir.
   wwcConfigConversationPrefixInput: Mövcud prefiksi %i. Yenisini yazın və ya geri
     qayıtmaq üçün 0 yazın.
   wwcConfigGUIPreviousPageButton: Əvvəlki səhifə
@@ -157,7 +145,6 @@ Messages:
     gözləyin.
   wwcConfigCacheEnabled: Tərcüməçi önbelleğini aktivləşdirdi və %i həddinə təyin etdi.
   wwctGUIExistingTranslationButton: Cari Tərcümə Sessiyasının yazılması
-  wwcOnJoinTranslationNotificationNoSourceLang: Sizin söhbətiniz %o tərcümə olunur.
   wwcUserDataReloaded: Bütün saxlanılan istifadəçi məlumatlarını yüklədi.
   wwcConfigGUISendTranslationChatButton: Girişdə Aktiv Tərcüməçiyə Chat Xatırlatma
     göndər
@@ -188,8 +175,6 @@ Messages:
     görə cari gecikmə %i saniyədir. Yeni bir dəyər təyin etmək üçün 10-dan daha böyük
     bir şey yazın və ya 10-dan az bir şey geri qayıtmaq üçün.
   wwcConfigGUISyncUserDataButton: İstifadəçi Məlumatlarının Sinxronlaşdırılmasının
-  wwcConfigSyncTime: Avtomatik istifadəçi məlumatlarının sinxronizasiyası %i nanosaniyədə
-    başa çatdı.
   wwcConfigSyncDelayEnabled: İstifadəçi məlumatlarının sinxronizasiya başına gecikmə
     %i saniyəyə təyin olunur.
   wwcConfigConversationSyncUserDataDelaySuccess: İstifadəçi data sync gecikmə uğurla
@@ -304,7 +289,6 @@ Messages:
   wwcteOffSender: Cəmiyyət tərcüməsi əlil.
   wwctGUIEntityButton: Toggle Entity Tərcümə
   wwcConfigConversationResponseLimitSuccess: Cavab zaman aşımı uğurla təyin edildi.
-  wwctCannotTranslateConsole: Siz konsol chat tərcümə edə bilməz!
   wwctrlRateLimitBadInt: Dərəcəsi limitiniz etibarlı tam ədəd deyil.
   wwcTranslatorErrorConsole: İstifadəçi %i onların tərcüməsinə cəhd edərkən bir problem
     yarandı. Daha ətraflı məlumat üçün errorLog.txt edin.
@@ -314,3 +298,19 @@ Messages:
   wwctGUIChatButton: Toggle Chat Tərcümə
   wwctcOffTarget: '%i üçün chat tərcüməsi aradan qaldırıldı.'
   wwcrBegin: WorldWireChat-ın yenidən yüklənməsi...
+  wwctTranslationStoppedOtherPlayer: '%i tərcümə sessiyası dayandırılıb.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Qlobal söhbət tərcümə
+    olunur, ancaq sizin %i-dən %o-a qədər aktiv tərcümə sessiyası var.
+  wwctCannotTranslateConsole: Konsol üçün tərcümə sessiyasına başlaya bilməzsiniz!
+  wwctLangToLangStart: '%i-dən %o''ya yeni tərcümə sessiyasının başlanması.'
+  wwcOnJoinTranslationNotificationSourceLang: '%i-dən %o-a qədər aktiv tərcümə sessiyasınız
+    var.'
+  wwctAutoTranslateStartOtherPlayer: '%i üçün %o üçün yeni tərcümə sessiyasının başlanması.'
+  wwctTranslationStopped: Tərcümə sessiyanız dayandırılıb.
+  wwctLangToLangStartOtherPlayer: '%o üçün %i-dən %e-ə qədər yeni tərcümə sessiyasının
+    başlanması.'
+  wwctAutoTranslateStart: '%o dilinə yeni tərcümə sessiyasına başlanır.'
+  wwcOnJoinTranslationNotificationNoSourceLang: '%o dilinə aktiv tərcümə sessiyasınız
+    var.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Qlobal söhbət tərcümə
+    olunur, ancaq sizin %o üçün aktiv tərcümə sessiyası var.

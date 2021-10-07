@@ -25,10 +25,7 @@ Messages:
   wwcBookTranslateStart: Cyfieithu llyfr targed...
   wwcConfigDisabledbStats: bStats anabl.
   wwctsOffSender: Cyfieithu arwyddion wedi'i analluogi.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Mae sgwrs fyd-eang yn
-    cael ei gyfieithu, ond mae eich sgwrs yn cael ei chyfieithu o %i i %o.
   wwcUpdaterParserFailed: Methwyd gramadegu data diweddaru o Github.
-  wwctAutoTranslateStart: Nawr cyfieithu eich holl sgwrs i %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Yr allwedd gyfrinach ar hyn
     o bryd yw %i mewnbynnu allwedd gyfrinachol ar gyfer Amazon, neu deipio 0 i fynd
     yn ôl.
@@ -36,7 +33,6 @@ Messages:
   wwcConfigGUIAmazonTranslateButton: Amazon Cyfieithu
   wwcConfigConversationLangSuccess: Iaith ategyn newid yn llwyddiannus.
   wwcsSuccessfulTranslations: 'Cyfieithiadau Llwyddiannus: %i'
-  wwctTranslationStoppedOtherPlayer: Cyfieithu sgwrsio am %i wedi cael ei stopio.
   wwcConfigConversationTranslationCacheInput: Y terfyn cache cyfieithu cyfredol yw
     %i ymadroddion. Teipiwch unrhyw beth mwy na 0 i osod gwerth newydd, neu deipio
     0 i analluoga 'r cache cyfieithu. Teipiwch unrhyw beth llai na 0 i fynd yn ôl.
@@ -59,13 +55,10 @@ Messages:
     dda alluogi dim ond un cyfieithydd yn eich config.yml.
   wwcConfigGUIQuitButton: Ymadael ac Arbed Newidiadau
   wwctPlayerNotFound: Chwaraewr %i ddim dod o hyd.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Mae sgwrs fyd-eang yn
-    cael ei gyfieithu, ond mae eich sgwrs yn cael ei gyfieithu i %o.
   wwcConfigGUIAmazonTranslateRegionButton: Newid Rhanbarth Amazon
   wwcConfigConversationLangInput: 'Yr iaith ategyn gyfredol yw %i Rhowch god iaith
     ddilys, neu deipio 0 i ganslo. Codau iaith dilys: %o'
   wwcConfigConversationLangInvalid: Cod iaith annilys!
-  wwctTranslationStopped: Mae eich cyfieithiad sgwrsio wedi cael ei atal.
   wwcConfigGUIWatsonAPIKeyButton: Newid Watson API Allweddol
   wwcEnabled: Galluogwyd fersiwn WorldwideChat %i.
   wwcgLangToLangStart: Nawr cyfieithu sgwrs fyd-eang o %i i %o.
@@ -84,7 +77,6 @@ Messages:
     allwedd API ar gyfer Watson, neu deipio 0 i fynd yn ôl.
   wwctGUIStopButton: Stopio Cyfieithu
   wwcgTranslationStopped: Cyfieithu sgwrsio byd-eang wedi cael ei atal.
-  wwctAutoTranslateStartOtherPlayer: Nawr cyfieithu'r sgwrs o %i i %o.
   wwcUpdaterFutureDate: Mae gan yr achos hwn o WorldwideChat fersiwn fwy na'r un cyhoeddus
     diweddaraf.
   wwcConfigConversationPrefixSuccess: Rhagddodiad newid yn llwyddiannus.
@@ -95,8 +87,6 @@ Messages:
   wwcConfigCacheDisabled: Cache cyfieithydd wedi'i analluogi.
   wwcConfigConversationWatsonURLInput: Yr URL cyfredol yw %i mewnbynnu URL gwasanaeth
     ar gyfer Watson, neu deipio 0 i fynd yn ôl.
-  wwcOnJoinTranslationNotificationSourceLang: Mae eich sgwrs yn cael ei gyfieithu
-    o %i i %o.
   wwcBookDone: Llyfr wedi'i gyfieithu yn llwyddiannus.
   wwctsOnSender: Galluogi cyfieithu arwyddion. Cliciwch y botwm dde ar arwydd i'w
     gyfieithu!
@@ -122,11 +112,9 @@ Messages:
   wwcConfigGUIPrefixButton: Newid Rhagddodiad Ategyn
   wwctSameLangError: Ni allwch gyfieithu i'r un iaith!
   wwctGUINewTranslationTarget: Dewiswch Iaith Darged
-  wwctLangToLangStartOtherPlayer: Nawr cyfieithu'r sgwrs o %o o %i i %e.
   wwcConfigConnectionSuccess: Wedi cysylltu yn llwyddiannus i %o!
   wwcConfigGUIGoogleTranslateButton: Google Cyfieithu
   wwcsIsActiveTranslator: 'A yw Cyfieithydd Actif: %i'
-  wwctLangToLangStart: Nawr cyfieithu eich holl sgwrs o %i i %o.
   wwcConfigConversationPrefixInput: Y rhagddodiad cyfredol yw %i Teipiwch un newydd,
     neu teipiwch 0 i fynd yn ôl.
   wwcConfigGUIPreviousPageButton: Tudalen Blaenorol
@@ -162,8 +150,6 @@ Messages:
     eiliadau.
   wwcConfigCacheEnabled: Galluogodd cache cyfieithydd a'i osod i derfyn o %i.
   wwctGUIExistingTranslationButton: Trosysgrifo Sesiwn Cyfieithu Cyfredol
-  wwcOnJoinTranslationNotificationNoSourceLang: Mae eich sgwrs yn cael ei gyfieithu
-    i %o.
   wwcUserDataReloaded: Llwytho'r holl ddata defnyddiwr a gadwyd.
   wwcConfigGUISendTranslationChatButton: Anfon Sgwrs Atgoffa i Gyfieithydd Actif ar
     Mewngofnodi
@@ -196,7 +182,6 @@ Messages:
     defnyddiwr yw %i eiliad. Teipiwch unrhyw beth sy'n fwy na 10 i osod gwerth newydd,
     neu unrhyw beth llai na 10 i fynd yn ôl.
   wwcConfigGUISyncUserDataButton: Newid defnyddiwr Data Sync Oedi
-  wwcConfigSyncTime: Cydamseru data defnyddiwr awtomatig wedi'i gwblhau yn %i nanoseconds.
   wwcConfigSyncDelayEnabled: Oedi fesul set cysoni data defnyddiwr i %i eiliad.
   wwcConfigConversationSyncUserDataDelaySuccess: Data defnyddiwr oedi cysoni gosod
     yn llwyddiannus.
@@ -309,7 +294,6 @@ Messages:
   wwcteOffSender: Analluogwyd cyfieithu endid.
   wwctGUIEntityButton: Toggle Endid Cyfieithu
   wwcConfigConversationResponseLimitSuccess: Amser ymateb a osodwyd yn llwyddiannus.
-  wwctCannotTranslateConsole: Ni allwch gyfieithu sgwrs consol!
   wwctrlRateLimitBadInt: Nid yw eich terfyn cyfradd yn gyfanrif dilys.
   wwcTranslatorErrorConsole: Digwyddodd problem tra defnyddiwr %i yn ceisio eu cyfieithiad.
     Gwiriwch errorLog.txt am fwy o fanylion.
@@ -320,3 +304,20 @@ Messages:
   wwctGUIChatButton: Toggle Sgwrs Cyfieithu
   wwctcOffTarget: Cyfieithu sgwrsio wedi'i analluogi am %i.
   wwcrBegin: Ail-lwytho WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Sesiwn gyfieithu ar gyfer %i wedi cael ei stopio.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Mae sgwrs fyd-eang yn
+    cael ei gyfieithu, ond mae gennych sesiwn gyfieithu weithredol o %i i %o.
+  wwctCannotTranslateConsole: Ni allwch ddechrau sesiwn gyfieithu ar gyfer consol!
+  wwctLangToLangStart: Dechrau sesiwn gyfieithu newydd o %i i %o.
+  wwcOnJoinTranslationNotificationSourceLang: Mae gennych sesiwn gyfieithu weithredol
+    o %i i %o.
+  wwctAutoTranslateStartOtherPlayer: Dechrau sesiwn gyfieithu newydd ar gyfer %i i
+    %o.
+  wwctTranslationStopped: Mae eich sesiwn gyfieithu wedi cael ei stopio.
+  wwctLangToLangStartOtherPlayer: Dechrau sesiwn gyfieithu newydd ar gyfer %o o %i
+    i %e.
+  wwctAutoTranslateStart: Dechrau sesiwn gyfieithu newydd i %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Mae gennych sesiwn gyfieithu weithredol
+    i %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Mae sgwrs fyd-eang yn
+    cael ei gyfieithu, ond mae gennych sesiwn gyfieithu weithredol i %o.

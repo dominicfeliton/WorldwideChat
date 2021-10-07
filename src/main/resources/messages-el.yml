@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Μεταφράζω το βιβλίο στόχου...
   wwcConfigDisabledbStats: Απενεργοποιημένη bStats.
   wwctsOffSender: Η μετάφραση υπογραφής απενεργοποιήθηκε.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Η παγκόσμια συνομιλία
-    μεταφράζεται, αλλά η συνομιλία σας μεταφράζεται από %i σε %o.
   wwcUpdaterParserFailed: Αποτυχία ανάλυσης δεδομένων ενημέρωσης από το Github.
-  wwctAutoTranslateStart: Μεταφράζω τώρα όλη τη συνομιλία σας στο %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Το τρέχον μυστικό κλειδί είναι
     %i. Εισαγάγετε ένα μυστικό κλειδί για το Amazon ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwctbOffSender: Η μετάφραση του βιβλίου απενεργοποιημένη.
   wwcConfigGUIAmazonTranslateButton: Amazon μετάφραση
   wwcConfigConversationLangSuccess: Η γλώσσα του προσθέτου άλλαξε με επιτυχία.
   wwcsSuccessfulTranslations: 'Επιτυχημένες μεταφράσεις: %i'
-  wwctTranslationStoppedOtherPlayer: Η μετάφραση συνομιλίας για %i έχει διακοπεί.
   wwcConfigConversationTranslationCacheInput: Το τρέχον όριο προσωρινής μνήμης μετάφρασης
     είναι %i φράσεις. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια
     νέα τιμή ή πληκτρολογήστε 0 για να απενεργοποιήσετε τη μνήμη cache μετάφρασης.
@@ -60,14 +56,11 @@ Messages:
     μόνο έναν μεταφραστή στο config.yml σας.
   wwcConfigGUIQuitButton: Έξοδος & αποθήκευση αλλαγών
   wwctPlayerNotFound: Παίχτης %Δεν βρέθηκε.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Η παγκόσμια συνομιλία
-    μεταφράζεται, αλλά η συνομιλία σας μεταφράζεται σε %o.
   wwcConfigGUIAmazonTranslateRegionButton: Αλλαγή περιοχής του Αμαζονίου
   wwcConfigConversationLangInput: 'Η τρέχουσα γλώσσα πρόσθετου είναι %i. Εισαγάγετε
     έναν έγκυρο κωδικό γλώσσας ή πληκτρολογήστε 0 για ακύρωση. Κωδικοί έγκυρης γλώσσας:
     %o'
   wwcConfigConversationLangInvalid: Μη έγκυρος κωδικός γλώσσας!
-  wwctTranslationStopped: Η μετάφραση της συνομιλίας σας έχει διακοπεί.
   wwcConfigGUIWatsonAPIKeyButton: Αλλαγή κλειδιού API Watson
   wwcEnabled: Ενεργοποιημένη έκδοση %i WorldwideChat
   wwcgLangToLangStart: Τώρα μεταφράζεται η παγκόσμια συνομιλία από %i σε %o.
@@ -89,7 +82,6 @@ Messages:
     ένα κλειδί API για το Watson ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwctGUIStopButton: Σταματήστε τη μετάφραση
   wwcgTranslationStopped: Η μετάφραση της παγκόσμιας συνομιλίας έχει διακοπεί.
-  wwctAutoTranslateStartOtherPlayer: Τώρα μεταφράζω τη συνομιλία του %i σε %o.
   wwcUpdaterFutureDate: Αυτή η παρουσία του WorldwideChat έχει μια μεγαλύτερη έκδοση
     από την πιο πρόσφατη δημόσια.
   wwcConfigConversationPrefixSuccess: Το πρόθεμα άλλαξε με επιτυχία.
@@ -100,8 +92,6 @@ Messages:
   wwcConfigCacheDisabled: Η μνήμη cache του μεταφραστή απενεργοποιήθηκε.
   wwcConfigConversationWatsonURLInput: Η τρέχουσα διεύθυνση URL είναι %i. Εισαγάγετε
     μια διεύθυνση URL υπηρεσίας για το Watson ή πληκτρολογήστε 0 για να επιστρέψετε.
-  wwcOnJoinTranslationNotificationSourceLang: Η συνομιλία σας μεταφράζεται από %i
-    σε %o.
   wwcBookDone: Το βιβλίο μεταφράστηκε με επιτυχία.
   wwctsOnSender: Ενεργοποίηση μετάφρασης υπογραφής. Κάντε δεξί κλικ σε μια πινακίδα
     για να τη μεταφράσετε!
@@ -127,11 +117,9 @@ Messages:
   wwcConfigGUIPrefixButton: Αλλαγή προθέματος πρόσθετου
   wwctSameLangError: Δεν μπορείτε να μεταφράσετε στην ίδια γλώσσα!
   wwctGUINewTranslationTarget: Επιλογή γλώσσας προορισμού
-  wwctLangToLangStartOtherPlayer: Τώρα μεταφράζεται η συνομιλία του %o από %i σε %e.
   wwcConfigConnectionSuccess: Επιτυχής σύνδεση στο %o!
   wwcConfigGUIGoogleTranslateButton: Μετάφραση Google
   wwcsIsActiveTranslator: 'Είναι ενεργός μεταφραστής: %i'
-  wwctLangToLangStart: Τώρα μεταφράζετε όλη τη συνομιλία σας από %i σε %o.
   wwcConfigConversationPrefixInput: Το τρέχον πρόθεμα είναι %i. Πληκτρολογήστε ένα
     νέο ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigGUIPreviousPageButton: Προηγούμενη σελίδα
@@ -171,7 +159,6 @@ Messages:
   wwcConfigCacheEnabled: Η μνήμη cache του μεταφραστή είναι ενεργοποιημένη και έχει
     οριστεί σε ένα όριο του %i.
   wwctGUIExistingTranslationButton: Αντικατάσταση τρέχουσας συνεδρίας μετάφρασης
-  wwcOnJoinTranslationNotificationNoSourceLang: Η συνομιλία σας μεταφράζεται σε %o.
   wwcUserDataReloaded: Φόρτωσε όλα τα αποθηκευμένα δεδομένα χρήστη.
   wwcConfigGUISendTranslationChatButton: Αποστολή υπενθύμισης συνομιλίας στον ενεργό
     μεταφραστή κατά τη σύνδεση
@@ -204,8 +191,6 @@ Messages:
     δεδομένων χρήστη είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από
     10 για να ορίσετε μια νέα τιμή ή οτιδήποτε λιγότερο από 10 για να επιστρέψετε.
   wwcConfigGUISyncUserDataButton: Αλλαγή καθυστέρησης συγχρονισμού δεδομένων χρήστη
-  wwcConfigSyncTime: Ο αυτόματος συγχρονισμός δεδομένων χρήστη ολοκληρώθηκε σε %i
-    nanoseconds.
   wwcConfigSyncDelayEnabled: Καθυστέρηση ανά χρήστη συγχρονισμού δεδομένων έχει οριστεί
     σε %i δευτερόλεπτα.
   wwcConfigConversationSyncUserDataDelaySuccess: Η καθυστέρηση συγχρονισμού δεδομένων
@@ -331,7 +316,6 @@ Messages:
   wwctGUIEntityButton: Εναλλαγή μετάφρασης οντοτήτων
   wwcConfigConversationResponseLimitSuccess: Το χρονικό όριο απόκρισης ορίστηκε με
     επιτυχία.
-  wwctCannotTranslateConsole: Δεν μπορείτε να μεταφράσετε τη συνομιλία κονσόλας!
   wwctrlRateLimitBadInt: Το όριο τιμών σας δεν είναι έγκυρος ακέραιος.
   wwcTranslatorErrorConsole: Παρουσιάστηκε ένα πρόβλημα ενώ ο χρήστης %i προσπαθούσε
     τη μετάφρασή του. Παρακαλούμε ελέγξτε το errorLog.txt για περισσότερες λεπτομέρειες.
@@ -341,3 +325,21 @@ Messages:
   wwctGUIChatButton: Εναλλαγή μετάφρασης συνομιλίας
   wwctcOffTarget: Η μετάφραση συνομιλίας απενεργοποιήθηκε για %i.
   wwcrBegin: Επαναφόρτωση Worldwide
+  wwctTranslationStoppedOtherPlayer: Διακόπηκε η συνεδρία μετάφρασης για %i.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Η παγκόσμια συνομιλία
+    μεταφράζεται, αλλά έχετε μια ενεργή συνεδρία μετάφρασης από %i σε %o.
+  wwctCannotTranslateConsole: Δεν μπορείτε να ξεκινήσετε μια συνεδρία μετάφρασης για
+    την κονσόλα!
+  wwctLangToLangStart: Έναρξη νέας περιόδου λειτουργίας μετάφρασης από %i έως %o.
+  wwcOnJoinTranslationNotificationSourceLang: Έχετε μια ενεργή συνεδρία μετάφρασης
+    από %i έως %o.
+  wwctAutoTranslateStartOtherPlayer: Έναρξη νέας περιόδου λειτουργίας μετάφρασης για
+    %i σε %o.
+  wwctTranslationStopped: Η συνεδρία μετάφρασής σας έχει διακοπεί.
+  wwctLangToLangStartOtherPlayer: Έναρξη νέας περιόδου λειτουργίας μετάφρασης για
+    το %o από %i έως %e.
+  wwctAutoTranslateStart: Έναρξη νέας περιόδου λειτουργίας μετάφρασης σε %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Έχετε μια ενεργή συνεδρία μετάφρασης
+    σε %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Η καθολική συνομιλία
+    μεταφράζεται, αλλά έχετε μια ενεργή συνεδρία μετάφρασης σε %o.

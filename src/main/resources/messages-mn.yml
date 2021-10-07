@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Зорилтот номыг орчуулах...
   wwcConfigDisabledbStats: Хөгжлийн бэрхшээлтэй bStats.
   wwctsOffSender: Дансаа ашиглах орчуулга идэвхгүй.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобал чат орчуулагдаж
-    байгаа боловч таны чатыг %i -аас орчуулж байна.
   wwcUpdaterParserFailed: Github-аас шинэчлэх өгөгдлийг задлан ялгалт хийж чадаагүй.
-  wwctAutoTranslateStart: Одоо таны чатыг бүгдийг нь орчуулж байна %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Одоогийн нууц түлхүүр %i байна.
     оруулах уу Амазон нь нууц түлхүүр, эсвэл төрөл 0 буцаж явах.
   wwctbOffSender: Ном орчуулга тахир дутуу.
   wwcConfigGUIAmazonTranslateButton: Амазоны орчуулга
   wwcConfigConversationLangSuccess: Залгаасын хэл амжилттай өөрчлөгдсөн.
   wwcsSuccessfulTranslations: 'Амжилттай Орчуулга: %i'
-  wwctTranslationStoppedOtherPlayer: '%i нь чат орчуулга зогссон байна.'
   wwcConfigConversationTranslationCacheInput: Одоогийн орчуулгын кэш хязгаар %i хэлц
     байна. Шинэ утгыг тохируулахын тулд 0-ээс их зүйлийг бичээрэй, эсвэл орчуулгын
     кэшийг идэвхгүй болгохын тулд 0 бичнэ үү. 0-ээс бага зүйлийг бичнэ үү.
@@ -57,13 +53,10 @@ Messages:
     зөвхөн нэг орчуулагчийг идэвхжүүлнэ үү.
   wwcConfigGUIQuitButton: Гарах & Save өөрчлөлтүүд
   wwctPlayerNotFound: Тоглогч % Би олж чадаагүй.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобал чат орчуулагдаж
-    байгаа боловч таны чатыг %o руу орчуулж байна.
   wwcConfigGUIAmazonTranslateRegionButton: Амазоны бүсийг өөрчлөх
   wwcConfigConversationLangInput: 'Одоогийн залгаас хэл %i байна. хүчинтэй хэлний
     кодыг оруулна уу, эсвэл төрөл 0 цуцлах. Хүчинтэй хэлний код: %o'
   wwcConfigConversationLangInvalid: Хэлний код буруу байна!
-  wwctTranslationStopped: Таны чат орчуулга зогссон байна.
   wwcConfigGUIWatsonAPIKeyButton: Ватсон API Түлхүүр өөрчлөлт
   wwcEnabled: Идэвхтэй WorldWedeChat хувилбар %i.
   wwcgLangToLangStart: Одоо дэлхийн чатыг %i нь %o руу орчуулж байна.
@@ -83,7 +76,6 @@ Messages:
     нь API түлхүүр уу, эсвэл төрөл 0 буцаж явах.
   wwctGUIStopButton: Орчуулгыг зогсоох
   wwcgTranslationStopped: Глобал чат орчуулга зогссон байна.
-  wwctAutoTranslateStartOtherPlayer: Одоо чатыг %i руу орчуулж байна.
   wwcUpdaterFutureDate: WorldWichat энэ жишээ нь хамгийн сүүлийн үеийн олон нийтэд
     илүү хувилбар байдаг.
   wwcConfigConversationPrefixSuccess: Угтвар амжилттай өөрчлөгдсөн.
@@ -94,7 +86,6 @@ Messages:
   wwcConfigCacheDisabled: Орчуулагч кэш идэвхгүй.
   wwcConfigConversationWatsonURLInput: Одоогийн URL байна %i. оролтын Ватсон нь үйлчилгээний
     URL уу, эсвэл төрөл 0 буцаж явах.
-  wwcOnJoinTranslationNotificationSourceLang: Таны чатыг %i -аас орчуулж байна.
   wwcBookDone: Ном амжилттай орчуулсан.
   wwctsOnSender: Дансаа ашиглах орчуулга идэвхтэй. Үүнийг орчуулах тэмдэг дээр хулганы
     баруун товчийг дараад!
@@ -120,11 +111,9 @@ Messages:
   wwcConfigGUIPrefixButton: Өөрчлөлт залгаас угтвар
   wwctSameLangError: Та ижил хэл рүү орчуулж чадахгүй!
   wwctGUINewTranslationTarget: Зорилтот хэл сонгоно уу
-  wwctLangToLangStartOtherPlayer: Одоо %o нь чатыг орчуулж байна %i нь %e.
   wwcConfigConnectionSuccess: Амжилттай холбогдсон %o!
   wwcConfigGUIGoogleTranslateButton: Google-ийн орчуулга
   wwcsIsActiveTranslator: 'Идэвхтэй Орчуулагч байна: %i'
-  wwctLangToLangStart: Одоо таны бүх чатыг %i нь %o руу орчуулж байна.
   wwcConfigConversationPrefixInput: Одоогийн угтвар нь %i байна. шинийг бичнэ үү,
     эсвэл 0 бичнэ үү.
   wwcConfigGUIPreviousPageButton: өмнөх хуудас
@@ -160,7 +149,6 @@ Messages:
     секунд.
   wwcConfigCacheEnabled: Орчуулагч кэш идэвхжүүлж, %i нь хязгаар тогтоосон.
   wwctGUIExistingTranslationButton: Одоогийн орчуулга хуралдааныг дарж бичих
-  wwcOnJoinTranslationNotificationNoSourceLang: Таны чат %o руу орчуулагдаж байна.
   wwcUserDataReloaded: Бүх хадгалсан хэрэглэгчийн өгөгдлийг ачаалагдсан.
   wwcConfigGUISendTranslationChatButton: Нэвтрэх дээр Идэвхтэй Орчуулагч руу чат сануулах
     илгээх
@@ -193,8 +181,6 @@ Messages:
     одоогийн саатал нь %i секунд байна. 10-ээс их зүйлийг шинэ утгыг тохируулах эсвэл
     10-аас бага зүйлийг буцааж өгнө үү.
   wwcConfigGUISyncUserDataButton: Хэрэглэгчийн мэдээлэл Sync саатал өөрчлөх
-  wwcConfigSyncTime: Автомат хэрэглэгчийн өгөгдлийн синхронч %i nanoseconds дотор
-    дууссан.
   wwcConfigSyncDelayEnabled: Хэрэглэгчийн өгөгдлийн синхрон тутамд саатал нь %i секунд
   wwcConfigConversationSyncUserDataDelaySuccess: Хэрэглэгчийн өгөгдлийн синхрон саатал
     амжилттай тогтоосон.
@@ -312,7 +298,6 @@ Messages:
   wwcteOffSender: Аж ахуйн нэгж орчуулга тахир дутуу.
   wwctGUIEntityButton: Түлхүүр аж ахуйн нэгжийн орчуулга
   wwcConfigConversationResponseLimitSuccess: Хариу хугацаа амжилттай тогтоосон.
-  wwctCannotTranslateConsole: Та консол чат орчуулж чадахгүй байна!
   wwctrlRateLimitBadInt: Таны ханшийн хязгаар нь хүчин төгөлдөр бүхэл тоо биш юм.
   wwcTranslatorErrorConsole: Хэрэглэгч %i тэдний орчуулгыг оролдож байх үед асуудал
     гарсан. Илүү дэлгэрэнгүйг errorLog.txt шалгана уу.
@@ -322,3 +307,19 @@ Messages:
   wwctGUIChatButton: Toggle чат орчуулга
   wwctcOffTarget: Чат орчуулга хаасан %i.
   wwcrBegin: Дэлхийцийг дахин ачаалж байна...
+  wwctTranslationStoppedOtherPlayer: '%i нь орчуулга сесс зогссон байна.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобал чат орчуулагдаж
+    байгаа боловч тад %i -аас %o руу идэвхтэй орчуулгын сесс байна.
+  wwctCannotTranslateConsole: Та консол нь орчуулга сесс эхлүүлж чадахгүй байна!
+  wwctLangToLangStart: '%i -аас %o руу шинэ орчуулгын сессийг эхлүүлэх.'
+  wwcOnJoinTranslationNotificationSourceLang: Танд %i -ээс %o гэсэн идэвхтэй орчуулгын
+    сесс байна.
+  wwctAutoTranslateStartOtherPlayer: '%i - %o руу шинэ орчуулгын сесс эхлүүлэх.'
+  wwctTranslationStopped: Таны орчуулгын сесс зогссон байна.
+  wwctLangToLangStartOtherPlayer: '%o гэсэн шинэ орчуулгын сессийг эхлүүлэх нь %i
+    to %e.'
+  wwctAutoTranslateStart: Шинэ орчуулгын сесс эхлүүлэх %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Тан %o гэсэн идэвхтэй орчуулгын сесс
+    байна.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобал чат орчуулагдаж
+    байгаа боловч тад %o руу идэвхтэй орчуулгын сесс байна.

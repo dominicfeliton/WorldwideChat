@@ -25,10 +25,7 @@ Messages:
   wwcBookTranslateStart: Переклад цільової книги...
   wwcConfigDisabledbStats: Вимкнені bStats.
   wwctsOffSender: Підписати переклад вимкнено.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобальний чат наразі
-    перекладається, але ваш чат наразі перекладається з %i на %o.
   wwcUpdaterParserFailed: Не вдалося проаналізувати оновлення даних з Github.
-  wwctAutoTranslateStart: Тепер перекладаємо всі ваші чати на %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Поточним секретним ключем є
     %i. Будь ласка, введіть закритий ключ для Amazon або введіть 0, щоб повернутися
     назад.
@@ -36,7 +33,6 @@ Messages:
   wwcConfigGUIAmazonTranslateButton: Амазонка Переклад
   wwcConfigConversationLangSuccess: Мова плагіна успішно змінилася.
   wwcsSuccessfulTranslations: 'Успішні переклади: %i'
-  wwctTranslationStoppedOtherPlayer: Переклад чату для %i було зупинено.
   wwcConfigConversationTranslationCacheInput: Обмеження поточного кешу перекладу складає
     %i фраз. Введіть щось більше за 0, щоб встановити нове значення, або введіть 0,
     щоб вимкнути кеш перекладу. Введіть що-небудь менше 0, щоб повернутися назад.
@@ -59,13 +55,10 @@ Messages:
     увімкніть лише один перекладач у вашому config.yml.
   wwcConfigGUIQuitButton: Вийти і зберегти зміни
   wwctPlayerNotFound: Гравець %я не знайдено.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобальний чат наразі
-    перекладається, але ваш чат перекладається на %o.
   wwcConfigGUIAmazonTranslateRegionButton: Змінити регіон Амазонки
   wwcConfigConversationLangInput: 'Поточною мовою додатка є %i. Будь ласка, введіть
     коректний код мови або введіть 0, щоб скасувати. Коди допустимих мов: %o'
   wwcConfigConversationLangInvalid: Некоректний код мови!
-  wwctTranslationStopped: Переклад вашого чату було зупинено.
   wwcConfigGUIWatsonAPIKeyButton: Змінити ключ API Уотсона
   wwcEnabled: Увімкнено Всесвітній чат версії %i.
   wwcgLangToLangStart: Тепер переклад глобального чату з %i на %o.
@@ -85,7 +78,6 @@ Messages:
     ключ API для Watson або введіть 0, щоб повернутися назад.
   wwctGUIStopButton: Припинити переклад
   wwcgTranslationStopped: Глобальний переклад чату зупинено.
-  wwctAutoTranslateStartOtherPlayer: Тепер переклад чату %i на %o.
   wwcUpdaterFutureDate: Цей екземпляр WorldwideChat має більшу версію, ніж остання
     публічна.
   wwcConfigConversationPrefixSuccess: Префікс успішно змінено.
@@ -96,7 +88,6 @@ Messages:
   wwcConfigCacheDisabled: Кеш перекладача вимкнено.
   wwcConfigConversationWatsonURLInput: Поточна адреса URL — %i. Будь ласка, введіть
     URL служби для Watson або введіть 0, щоб повернутися назад.
-  wwcOnJoinTranslationNotificationSourceLang: Ваш чат перекладається з %i на %o.
   wwcBookDone: Книга успішно перекладена.
   wwctsOnSender: Підписати переклад увімкнено. Клацніть правою кнопкою миші на знаку,
     щоб перевести його!
@@ -122,11 +113,9 @@ Messages:
   wwcConfigGUIPrefixButton: Змінити префікс додатка
   wwctSameLangError: Ви не можете перекладати тією ж мовою!
   wwctGUINewTranslationTarget: Вибір мови призначення
-  wwctLangToLangStartOtherPlayer: Тепер переклад чату %o з %i на %e.
   wwcConfigConnectionSuccess: Успішно з'єднано з %o
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Є активним перекладачем: %i'
-  wwctLangToLangStart: Тепер перекладаємо всі ваші чати з %i на %o.
   wwcConfigConversationPrefixInput: Поточний префікс є %i. Будь ласка, введіть новий
     або введіть 0, щоб повернутися назад.
   wwcConfigGUIPreviousPageButton: Попередня сторінка
@@ -161,7 +150,6 @@ Messages:
   wwcRateLimit: Ваш переклад обмежений. Будь ласка, зачекайте інший %i секунд.
   wwcConfigCacheEnabled: Кеш перекладача увімкнено та встановлено обмеження %i.
   wwctGUIExistingTranslationButton: Перезаписати поточний сеанс перекладу
-  wwcOnJoinTranslationNotificationNoSourceLang: Ваш чат перекладається на %o.
   wwcUserDataReloaded: Завантажено всі збережені дані користувача.
   wwcConfigGUISendTranslationChatButton: Надсилати нагадування чату активному перекладачеві
     під час входу
@@ -192,7 +180,6 @@ Messages:
     користувача становить %i секунд. Введіть щось більше 10, щоб встановити нове значення,
     або щось менше 10, щоб повернутися назад.
   wwcConfigGUISyncUserDataButton: Змінення затримки синхронізації даних користувача
-  wwcConfigSyncTime: Автоматична синхронізація даних користувача завершена в %i nanomeconds.
   wwcConfigSyncDelayEnabled: Затримка для синхронізації даних користувача на %i секунд.
   wwcConfigConversationSyncUserDataDelaySuccess: Затримка синхронізації даних користувача
     успішно встановлено.
@@ -310,7 +297,6 @@ Messages:
   wwctGUIEntityButton: Переключити переклад сутності
   wwcConfigConversationResponseLimitSuccess: Час очікування відповіді встановлено
     успішно.
-  wwctCannotTranslateConsole: Ви не можете перекласти консольний чат!
   wwctrlRateLimitBadInt: Обмеження ставки не є дійсним цілим числом.
   wwcTranslatorErrorConsole: Виникла проблема, коли користувач %i намагався їх переклад.
     Будь ласка, перевірте errorLog.txt для отримання додаткової інформації.
@@ -320,3 +306,18 @@ Messages:
   wwctGUIChatButton: Переключити переклад балачки
   wwctcOffTarget: Переклад чату вимкнено для %i.
   wwcrBegin: Перезавантаження WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Сеанс перекладу для %i було зупинено.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобальний чат наразі
+    перекладається, але у вас є активний сеанс перекладу з %i до %o.
+  wwctCannotTranslateConsole: Ви не можете розпочати сеанс перекладу для консолі!
+  wwctLangToLangStart: Запуск нового сеансу перекладу з %i до %o.
+  wwcOnJoinTranslationNotificationSourceLang: У вас є активний сеанс перекладу з %i
+    до %o.
+  wwctAutoTranslateStartOtherPlayer: Запуск нового сеансу перекладу для %i до %o.
+  wwctTranslationStopped: Ваш сеанс перекладу було зупинено.
+  wwctLangToLangStartOtherPlayer: Запуск нового сеансу перекладу для %o з %i до %e.
+  wwctAutoTranslateStart: Запуск нового сеансу перекладу до %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: У вас є активний сеанс перекладу до
+    %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобальний чат наразі
+    перекладається, але у вас є активний сеанс перекладу до %o.

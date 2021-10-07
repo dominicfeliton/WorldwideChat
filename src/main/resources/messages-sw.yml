@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Kutafsiri kitabu cha lengo...
   wwcConfigDisabledbStats: bStats walemavu.
   wwctsOffSender: Tafsiri ya ishara walemavu.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Soga ya kimataifa inatafsiriwa,
-    lakini soga yako inatafsiriwa kutoka %i hadi %o.
   wwcUpdaterParserFailed: Imeshindwa kupitisha data ya sasisho kutoka Github.
-  wwctAutoTranslateStart: Sasa kutafsiri soga yako yote kwa %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Funguo la siri la sasa ni %i.
     tafadhali ingiza ufunguo wa siri kwa Amazon, au funga 0 kurudi nyuma.
   wwctbOffSender: Kitabu tafsiri walemavu.
   wwcConfigGUIAmazonTranslateButton: Amazon Tafsiri
   wwcConfigConversationLangSuccess: Lugha ya Plugin iliyopita kwa mafanikio
   wwcsSuccessfulTranslations: 'Tafsiri zilizofanikiwa: %i'
-  wwctTranslationStoppedOtherPlayer: Tafsiri ya Ongea kwa %i imesimamishwa.
   wwcConfigConversationTranslationCacheInput: Kikomo cha sasa cha tafsiri ya cache
     ni %i misemo. Weka kitu chochote zaidi kuliko 0 kuweka thamani mpya, au aina ya
     0 ili kuzima cache ya tafsiri. Andika kitu chochote chini ya 0 kurudi nyuma.
@@ -58,13 +54,10 @@ Messages:
     translator moja tu katika config.yml yako.
   wwcConfigGUIQuitButton: Toka na Hifadhi Mabadiliko
   wwctPlayerNotFound: Mchezaji %sijaipata.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Soga ya kimataifa inatafsiriwa,
-    lakini soga yako inatafsiriwa kwa %o.
   wwcConfigGUIAmazonTranslateRegionButton: Badilisha Mkoa wa Amazon
   wwcConfigConversationLangInput: 'Lugha ya sasa ya Plugin ni %i. Tafadhali ingiza
     msimbo halali wa lugha, au weka 0 ili kughairi. Misimbo halali ya lugha: %o'
   wwcConfigConversationLangInvalid: Msimbo wa lugha batili!
-  wwctTranslationStopped: Tafsiri yako ya mazungumzo imesimamishwa.
   wwcConfigGUIWatsonAPIKeyButton: Badilisha ufunguo wa API wa Watson
   wwcEnabled: Imewezeshwa toleo la WorldwideChat %i.
   wwcgLangToLangStart: Sasa kutafsiri mazungumzo ya kimataifa kutoka %i hadi %o.
@@ -83,7 +76,6 @@ Messages:
     ingiza ufunguo wa API kwa Watson, au funga 0 kurudi nyuma.
   wwctGUIStopButton: Acha kutafsiri
   wwcgTranslationStopped: Tafsiri ya mazungumzo ya kimataifa imesimamishwa.
-  wwctAutoTranslateStartOtherPlayer: Sasa kutafsiri soga ya %i kwa %o.
   wwcUpdaterFutureDate: Mfano huu wa WorldwideChat una toleo kubwa zaidi kuliko moja
     ya hivi karibuni ya umma.
   wwcConfigConversationPrefixSuccess: Kiambishi awali kilibadilika kwa mafanikio.
@@ -94,8 +86,6 @@ Messages:
   wwcConfigCacheDisabled: Cache ya Translator imezimwa
   wwcConfigConversationWatsonURLInput: URL ya sasa ni %i. Tafadhali ingiza URL ya
     huduma kwa Watson, au funga 0 kurudi nyuma.
-  wwcOnJoinTranslationNotificationSourceLang: Soga yako inatafsiriwa kutoka %i hadi
-    %o.
   wwcBookDone: Kitabu kutafsiriwa kwa mafanikio.
   wwctsOnSender: Tafsiri ya ishara imewezeshwa. Bonyeza-click juu ya ishara ya kutafsiri!
   watsonColorCodeWarning: Kutumia codes rangi inaweza kukupa matokeo haitabiriki.
@@ -118,11 +108,9 @@ Messages:
   wwcConfigGUIPrefixButton: Badilisha Kiambatisho cha Plug
   wwctSameLangError: Huwezi kutafsiri kwa lugha moja!
   wwctGUINewTranslationTarget: Chagua Lugha ya Target
-  wwctLangToLangStartOtherPlayer: Sasa kutafsiri soga ya %o kutoka %i hadi %e.
   wwcConfigConnectionSuccess: Imeunganishwa kwa ufanisi na %o!
   wwcConfigGUIGoogleTranslateButton: Google Tafsiri
   wwcsIsActiveTranslator: 'Ni Mtafsiri wa Active: %i'
-  wwctLangToLangStart: Sasa kutafsiri soga yako yote kutoka %i hadi %o.
   wwcConfigConversationPrefixInput: Kiambishi awali cha sasa ni %i. Tafadhali andika
     mpya, au andika 0 ili urejee.
   wwcConfigGUIPreviousPageButton: Ukurasa uliopita
@@ -158,7 +146,6 @@ Messages:
   wwcRateLimit: Tafsiri yako ni kiwango mdogo. Tafadhali subiri sekunde nyingine %i.
   wwcConfigCacheEnabled: Cache ya Translator imewezeshwa na kuweka kikomo cha %i.
   wwctGUIExistingTranslationButton: Andika tena Tafsiri Kikao
-  wwcOnJoinTranslationNotificationNoSourceLang: Soga yako inatafsiriwa kwa %o.
   wwcUserDataReloaded: Imebeba data zote za mtumiaji zilizohifadhiwa.
   wwcConfigGUISendTranslationChatButton: Tuma Makumbusho ya Ongea kwa Mtafsiri wa
     Kazi
@@ -187,8 +174,6 @@ Messages:
     wa data ya mtumiaji ni %i sekunde. Andika kitu chochote zaidi ya 10 ili kuweka
     thamani mpya, au kitu chochote chini ya 10 kurudi nyuma.
   wwcConfigGUISyncUserDataButton: Badilisha Kuchelewa kwa Data ya Mtumiaji
-  wwcConfigSyncTime: Usawazishaji wa data ya mtumiaji moja kwa moja umekamilika katika
-    %i
   wwcConfigSyncDelayEnabled: Kuchelewesha kwa usawazishaji wa data ya mtumiaji kuweka
     kwa %i sekunde.
   wwcConfigConversationSyncUserDataDelaySuccess: Usawazishaji wa data ya mtumiaji
@@ -305,7 +290,6 @@ Messages:
   wwcteOffSender: Chombo tafsiri walemavu.
   wwctGUIEntityButton: Badilisha Tafsiri ya Chombo
   wwcConfigConversationResponseLimitSuccess: Mwitikio wa majibu umewekwa kwa mafanikio.
-  wwctCannotTranslateConsole: Huwezi kutafsiri mazungumzo ya console!
   wwctrlRateLimitBadInt: Kiwango chako cha kikomo si integer halali.
   wwcTranslatorErrorConsole: Tatizo lilitokea wakati mtumiaji %i alikuwa akijaribu
     tafsiri yao. Tafadhali angalia errorLog.txt kwa maelezo zaidi.
@@ -315,3 +299,19 @@ Messages:
   wwctGUIChatButton: Badilisha Tafsiri ya Soga
   wwctcOffTarget: Tafsiri ya Ongea walemavu kwa %i.
   wwcrBegin: Kurejesha upya WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Kikao cha tafsiri kwa %i kimesimamishwa.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Mazungumzo ya kimataifa
+    yanatafsiriwa, lakini una kikao cha kutafsiri cha kazi kutoka %i hadi %o.
+  wwctCannotTranslateConsole: Huwezi kuanza kikao cha tafsiri kwa console!
+  wwctLangToLangStart: Kuanzia kikao kipya cha tafsiri kutoka %i hadi %o.
+  wwcOnJoinTranslationNotificationSourceLang: Una kikao cha tafsiri cha kazi kutoka
+    %i hadi %o.
+  wwctAutoTranslateStartOtherPlayer: Kuanzia kikao kipya cha tafsiri kwa %i kwa %o.
+  wwctTranslationStopped: Kikao chako cha tafsiri kimesimamishwa.
+  wwctLangToLangStartOtherPlayer: Kuanzia kikao kipya cha tafsiri kwa %o kutoka %i
+    hadi %e.
+  wwctAutoTranslateStart: Kuanzia kikao kipya cha tafsiri kwa %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Una kikao cha tafsiri cha kazi kwa
+    %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Mazungumzo ya kimataifa
+    yanatafsiriwa, lakini una kikao cha kutafsiri cha kazi kwa %o.

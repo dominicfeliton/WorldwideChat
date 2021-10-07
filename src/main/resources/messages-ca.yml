@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Traduir el llibre de destinació...
   wwcConfigDisabledbStats: bStats discapacitats.
   wwctsOffSender: Traducció de signes desactivada.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: El xat global s'està traduint,
-    però el xat s'està traduint de %i a %o.
   wwcUpdaterParserFailed: No s'ha pogut analitzar les dades d'actualització de Github.
-  wwctAutoTranslateStart: Ara la traducció de tot el seu xat a %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: La clau secreta actual és %i.
     si us plau introdueixi una clau secreta per Amazon, o escrigui 0 per tornar enrere.
   wwctbOffSender: Traducció de llibres desactivats.
   wwcConfigGUIAmazonTranslateButton: Amazon Traduir
   wwcConfigConversationLangSuccess: Idioma del plugin ha canviat correctament.
   wwcsSuccessfulTranslations: 'Traduccions reeixides: %i'
-  wwctTranslationStoppedOtherPlayer: Traducció de xat de %i s'ha aturat.
   wwcConfigConversationTranslationCacheInput: El límit actual de la memòria cau de
     traducció és %i frases. Escriviu res més gran que 0 per establir un nou valor,
     o escriviu 0 per desactivar la memòria cau de traducció. Escriviu res menys que
@@ -59,14 +55,11 @@ Messages:
     habiliteu només un traductor a la vostra config.yml.
   wwcConfigGUIQuitButton: Sortir i desar els canvis
   wwctPlayerNotFound: Jugador %No he trobat.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: El xat global s'està
-    traduint, però el xat s'està traduint a %o.
   wwcConfigGUIAmazonTranslateRegionButton: Canviar la regió d'Amazon
   wwcConfigConversationLangInput: 'L''idioma actual del connector és %i Si us plau,
     introduïu un codi d''idioma vàlid, o escriviu 0 per cancel·lar. Codis d''idioma
     vàlids: %o'
   wwcConfigConversationLangInvalid: Codi d'idioma no vàlid!
-  wwctTranslationStopped: La seva traducció de xat s'ha aturat.
   wwcConfigGUIWatsonAPIKeyButton: Canviar la clau de l'API de Watson
   wwcEnabled: Habilitada la versió WorldwideChat %i.
   wwcgLangToLangStart: Ara la traducció del xat global de %i a %o.
@@ -87,7 +80,6 @@ Messages:
     una clau d'API per a Watson, o escriviu 0 per tornar enrere.
   wwctGUIStopButton: Deixar de traduir
   wwcgTranslationStopped: La traducció global de xat s'ha aturat.
-  wwctAutoTranslateStartOtherPlayer: Ara traduint el xat de %i a %o.
   wwcUpdaterFutureDate: Aquesta instància de WorldwideChat té una versió més gran
     que l'última pública.
   wwcConfigConversationPrefixSuccess: Prefix ha canviat correctament.
@@ -98,8 +90,6 @@ Messages:
   wwcConfigCacheDisabled: Traductor cau desactivat.
   wwcConfigConversationWatsonURLInput: L'URL actual és %i. introduïu un URL de servei
     per a Watson, o escriviu 0 per tornar enrere.
-  wwcOnJoinTranslationNotificationSourceLang: El vostre xat s'està traduint de %i
-    a %o.
   wwcBookDone: Llibre traduït amb èxit.
   wwctsOnSender: S'ha habilitat la traducció de signes. Feu clic amb el botó dret
     sobre un signe per traduir-lo!
@@ -124,11 +114,9 @@ Messages:
   wwcConfigGUIPrefixButton: Canviar el prefix del connector
   wwctSameLangError: No es pot traduir a la mateixa llengua!
   wwctGUINewTranslationTarget: Trieu una llengua de destinació
-  wwctLangToLangStartOtherPlayer: Ara la traducció del xat de %o de %i a %e.
   wwcConfigConnectionSuccess: Connectat amb èxit a %o!
   wwcConfigGUIGoogleTranslateButton: Traduir per Google
   wwcsIsActiveTranslator: 'És traductor actiu: %i'
-  wwctLangToLangStart: Ara la traducció de tot el seu xat de %i a %o.
   wwcConfigConversationPrefixInput: El prefix actual és %i Si us plau, escriviu un
     de nou, o escriviu 0 per tornar enrere.
   wwcConfigGUIPreviousPageButton: Pàgina anterior
@@ -167,7 +155,6 @@ Messages:
   wwcConfigCacheEnabled: La memòria cau del traductor activat i s'estableix com a
     límit de %i.
   wwctGUIExistingTranslationButton: Sobreescriu la sessió de traducció actual
-  wwcOnJoinTranslationNotificationNoSourceLang: El vostre xat s'està traduint a %o.
   wwcUserDataReloaded: Carregat totes les dades d'usuari desades.
   wwcConfigGUISendTranslationChatButton: Enviar recordatori de xat a traductor actiu
     en iniciar sessió
@@ -199,8 +186,6 @@ Messages:
     de dades d'usuari és %i segons. Escriviu qualsevol cosa més gran que 10 per establir
     un valor nou, o qualsevol cosa menys de 10 per tornar enrere.
   wwcConfigGUISyncUserDataButton: Canvi de dades de l'usuari de retard de sincronització
-  wwcConfigSyncTime: Sincronització automàtica de dades d'usuari completada en %i
-    nanosegons.
   wwcConfigSyncDelayEnabled: Retard per sincronització de dades d'usuari establert
     a %i segons.
   wwcConfigConversationSyncUserDataDelaySuccess: Retard de sincronització de dades
@@ -319,7 +304,6 @@ Messages:
   wwctGUIEntityButton: Commuta la traducció de l'entitat
   wwcConfigConversationResponseLimitSuccess: Temps d'espera de resposta establert
     amb èxit.
-  wwctCannotTranslateConsole: No es pot traduir el xat de la consola!
   wwctrlRateLimitBadInt: El seu límit de tarifa no és un nombre enter vàlid.
   wwcTranslatorErrorConsole: Es va produir un problema mentre l'usuari %i estava intentant
     la seva traducció. Si us plau, comproveu errorLog.txt per a més detalls.
@@ -330,3 +314,20 @@ Messages:
   wwctGUIChatButton: Toggle Traducció de Xat
   wwctcOffTarget: Traducció de xat desactivada per %i.
   wwcrBegin: Recarregar WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: La sessió de traducció per %i s'ha aturat.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: El xat global s'està traduint,
+    però teniu una sessió de traducció activa de %i a %o.
+  wwctCannotTranslateConsole: No podeu iniciar una sessió de traducció per a la consola!
+  wwctLangToLangStart: Iniciar una nova sessió de traducció des de %i a %o.
+  wwcOnJoinTranslationNotificationSourceLang: Teniu una sessió de traducció activa
+    des de %i a %o.
+  wwctAutoTranslateStartOtherPlayer: Iniciar una nova sessió de traducció per a %i
+    a %o.
+  wwctTranslationStopped: La vostra sessió de traducció s'ha aturat.
+  wwctLangToLangStartOtherPlayer: Iniciar una nova sessió de traducció per %o de %i
+    a %e.
+  wwctAutoTranslateStart: Iniciar una nova sessió de traducció a %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Teniu una sessió de traducció activa
+    a %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: El xat global s'està
+    traduint, però teniu una sessió de traducció activa a %o.

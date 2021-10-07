@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Célkönyv fordítása...
   wwcConfigDisabledbStats: Fogyatékos bStats.
   wwctsOffSender: Aláírás fordítás letiltva.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: A globális csevegés lefordítása
-    folyamatban van, de a csevegés lefordítása a %i -ról a %o címre történik.
   wwcUpdaterParserFailed: Nem sikerült elemezni a Github adatainak frissítését.
-  wwctAutoTranslateStart: 'Most lefordítod az összes csevegésedet erre: %o.'
   wwcConfigConversationAmazonTranslateSecretKeyInput: 'Az aktuális titkos kulcs: %i.
     Adjon meg egy titkos kulcsot az Amazonhoz, vagy írja be a 0 értéket a visszatéréshez.'
   wwctbOffSender: Könyv fordítás letiltva.
   wwcConfigGUIAmazonTranslateButton: Amazon fordítás
   wwcConfigConversationLangSuccess: A bővítmény nyelve sikeresen megváltozott.
   wwcsSuccessfulTranslations: 'Sikeres fordítások: %i'
-  wwctTranslationStoppedOtherPlayer: A (z) %i csevegés fordítása le lett állítva.
   wwcConfigConversationTranslationCacheInput: Az aktuális fordítási gyorsítótárkorlát
     a %i kifejezések. Írja be a 0-nál nagyobb értéket az új érték beállításához, vagy
     írja be a 0 értéket a fordítási gyorsítótár letiltásához. Írja be a 0-nál kevesebbet,
@@ -58,14 +54,11 @@ Messages:
     egy fordítót engedélyezzen a config.yml fájlban.
   wwcConfigGUIQuitButton: Kilépés és a módosítások mentése
   wwctPlayerNotFound: A (z) %i játékos nem található.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 'A globális csevegés
-    lefordítása folyamatban van, de a csevegésedet lefordítjuk erre: %o.'
   wwcConfigGUIAmazonTranslateRegionButton: Az Amazon régió megváltoztatása
   wwcConfigConversationLangInput: 'A beépülő modul jelenlegi nyelve: %i. Adjon meg
     egy érvényes nyelvi kódot, vagy írja be a 0 értéket a törléshez. Érvényes nyelvkódok:
     %o'
   wwcConfigConversationLangInvalid: Érvénytelen nyelvkód!
-  wwctTranslationStopped: A csevegés fordítása le lett állítva.
   wwcConfigGUIWatsonAPIKeyButton: Watson API-kulcs módosítása
   wwcEnabled: 'Engedélyezett WorldwideChat verzió: %i.'
   wwcgLangToLangStart: Most fordítod le a globális csevegést a %i -ról a %o címre.
@@ -85,7 +78,6 @@ Messages:
     API-kulcsot a Watson számára, vagy írja be a 0 értéket a visszatéréshez.'
   wwctGUIStopButton: Fordítás leállítása
   wwcgTranslationStopped: A globális chat fordítás leállt.
-  wwctAutoTranslateStartOtherPlayer: Most fordítod le a (z) %i csevegést a %o címre.
   wwcUpdaterFutureDate: Ez a WorldwideChat példánya nagyobb verzióval rendelkezik,
     mint a legújabb nyilvános.
   wwcConfigConversationPrefixSuccess: Az előtag sikeresen megváltozott.
@@ -96,8 +88,6 @@ Messages:
   wwcConfigCacheDisabled: A fordítói gyorsítótár letiltva.
   wwcConfigConversationWatsonURLInput: 'Az aktuális URL: %i. Adjon meg egy szolgáltatás
     URL-jét a Watson számára, vagy írja be a 0 értéket a visszatéréshez.'
-  wwcOnJoinTranslationNotificationSourceLang: A csevegés lefordítása a %i -ról a %o
-    címre történik.
   wwcBookDone: A könyv sikeresen lefordítva.
   wwctsOnSender: Aláírás fordítás engedélyezve. Kattintson a jobb gombbal egy jelre,
     hogy lefordítsa!
@@ -122,12 +112,9 @@ Messages:
   wwcConfigGUIPrefixButton: Plugin előtagának módosítása
   wwctSameLangError: Nem fordíthatsz ugyanarra a nyelvre!
   wwctGUINewTranslationTarget: Válasszon célnyelvet
-  wwctLangToLangStartOtherPlayer: Most lefordítja a (z) %o csevegését a %i -ról a
-    %e-ra.
   wwcConfigConnectionSuccess: 'Sikeresen csatlakozott ehhez: %o!'
   wwcConfigGUIGoogleTranslateButton: Google Fordító
   wwcsIsActiveTranslator: 'Aktív fordító: %i'
-  wwctLangToLangStart: Most lefordítod az összes csevegésedet a %i -ról a %o címre.
   wwcConfigConversationPrefixInput: 'Az aktuális előtag: %i. Írjon be egy újat, vagy
     írja be a 0 értéket a visszatéréshez.'
   wwcConfigGUIPreviousPageButton: Előző oldal
@@ -167,8 +154,6 @@ Messages:
   wwcConfigCacheEnabled: A fordítói gyorsítótár engedélyezve van, és a (z) %i értékre
     van állítva.
   wwctGUIExistingTranslationButton: Aktuális fordítási munkamenet felülbír
-  wwcOnJoinTranslationNotificationNoSourceLang: 'A csevegésedet lefordítjuk erre:
-    %o.'
   wwcUserDataReloaded: Betöltötte az összes mentett felhasználói adatot.
   wwcConfigGUISendTranslationChatButton: Emlékeztető küldése az aktív fordítónak bejelentkezéskor
   wwcsLastTranslationTime: 'Utolsó (sikeres) fordítási idő: %i'
@@ -197,8 +182,6 @@ Messages:
     aktuális késleltetése %i másodperc. Írja be a 10-nél nagyobb értéket az új érték
     beállításához, vagy 10-nél kevesebbet a visszatéréshez.
   wwcConfigGUISyncUserDataButton: Felhasználói adatok szinkronizálásának késleltetése
-  wwcConfigSyncTime: A felhasználói adatok automatikus szinkronizálása a %i nanoszekundumban
-    fejeződött be.
   wwcConfigSyncDelayEnabled: 'A felhasználói adatok szinkronizálásának késleltetése:
     %i másodperc.'
   wwcConfigConversationSyncUserDataDelaySuccess: A felhasználói adatok szinkronizálási
@@ -315,7 +298,6 @@ Messages:
   wwcteOffSender: Az entitásfordítás letiltva
   wwctGUIEntityButton: Entitásfordítás be-
   wwcConfigConversationResponseLimitSuccess: A válaszidőtúllépés sikeresen beállítva.
-  wwctCannotTranslateConsole: Nem lehet lefordítani a konzolos csevegést!
   wwctrlRateLimitBadInt: A díjkorlát nem érvényes egész szám.
   wwcTranslatorErrorConsole: Probléma merült fel, amikor a (z) %i felhasználó megpróbálta
     a fordítást. Kérjük, tekintse meg a errorLog.txt fájlt további részletekért.
@@ -325,3 +307,20 @@ Messages:
   wwctGUIChatButton: Csevegés fordítás be-
   wwctcOffTarget: 'Csevegés fordítása le van tiltva erre:'
   wwcrBegin: WorldwideChat újratöltése...
+  wwctTranslationStoppedOtherPlayer: A (z) %i fordítási munkamenet le lett állítva.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: A globális csevegés lefordítása
+    folyamatban van, de aktív fordítási munkamenete van a %i és %o között.
+  wwctCannotTranslateConsole: Nem indítható el fordítási munkamenet a konzolhoz!
+  wwctLangToLangStart: 'Új fordítási munkamenet indítása innen: %i ide: %o.'
+  wwcOnJoinTranslationNotificationSourceLang: Aktív fordítási munkamenete van a %i
+    és %o között.
+  wwctAutoTranslateStartOtherPlayer: 'Új fordítási munkamenet indítása erre: %i ide:
+    %o.'
+  wwctTranslationStopped: A fordítási munkamenetet leállították.
+  wwctLangToLangStartOtherPlayer: 'Új fordítási munkamenet indítása a következőre:
+    %i ide: %e.'
+  wwctAutoTranslateStart: 'Új fordítási munkamenet indítása erre: %o.'
+  wwcOnJoinTranslationNotificationNoSourceLang: 'Aktív fordítási munkamenete van erre:
+    %o.'
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: A globális csevegés
+    lefordítása folyamatban van, de aktív fordítási munkamenete van a %o.

@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Prevođenje ciljne knjige...
   wwcConfigDisabledbStats: Onemogućeno bStats.
   wwctsOffSender: Prevod potpisa onemogućen.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globalno ćaskanje se prevodi,
-    ali vaš ćaskanje se prevodi od %i na %o.
   wwcUpdaterParserFailed: Nije uspjelo analizirati podatke o ažuriranju iz Gituba.
-  wwctAutoTranslateStart: Sada prevodi sve vaše ćaskanje na %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Trenutni tajni ključ je %i.
     Unesite tajni ključ za Amazon ili upišite 0 da biste se vratili.
   wwctbOffSender: Knjiga prevod onemogućen.
   wwcConfigGUIAmazonTranslateButton: Amazon Prevod
   wwcConfigConversationLangSuccess: Plugin jezik se uspešno promenio.
   wwcsSuccessfulTranslations: 'Uspešni prevodi: %i'
-  wwctTranslationStoppedOtherPlayer: Prevod za ćaskanje za %i je zaustavljen.
   wwcConfigConversationTranslationCacheInput: Trenutni limit keša prevoda je %i fraze.
     Ukucajte nešto veće od 0 da biste postavili novu vrednost ili upišite 0 da biste
     onemogućili keš prevoda. Upišite ništa manje od 0 da se vratite.
@@ -58,13 +54,10 @@ Messages:
     da omogućite samo jedan prevodilac u vašem config.iml.
   wwcConfigGUIQuitButton: Izlaz & Sačuvaj promene
   wwctPlayerNotFound: Player %Nisam pronađen.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globalno ćaskanje se
-    prevodi, ali vaš ćaskanje se prevodi na %o.
   wwcConfigGUIAmazonTranslateRegionButton: Promenite Amazon Region
   wwcConfigConversationLangInput: 'Trenutni jezik dodatka je %i. Unesite važeći jezički
     kod ili upišite 0 da biste otkazali. Važeći jezički kodovi: %o'
   wwcConfigConversationLangInvalid: Nevažeći kod jezika!
-  wwctTranslationStopped: Vaš prevod za ćaskanje je zaustavljen.
   wwcConfigGUIWatsonAPIKeyButton: Promenite Vatson API ključ
   wwcEnabled: Omogućeno WorldwideChat verziju %i
   wwcgLangToLangStart: Sada prevođenje globalnog ćaskanja od %i na %o.
@@ -83,7 +76,6 @@ Messages:
     za Vatson ili upišite 0 da biste se vratili.
   wwctGUIStopButton: Stop prevođenje
   wwcgTranslationStopped: Globalni prevod za ćaskanje je zaustavljen.
-  wwctAutoTranslateStartOtherPlayer: Sada prevođenje ćaska %i na %o.
   wwcUpdaterFutureDate: Ova instanca WorldwideChat ima veću verziju od najnovije javne.
   wwcConfigConversationPrefixSuccess: Prefiks se uspešno promenio.
   wwcConfigGUIGoogleTranslateAPIKeyButton: Promenite Google prevodilac API ključ
@@ -93,7 +85,6 @@ Messages:
   wwcConfigCacheDisabled: Prevodilac keš onemogućen.
   wwcConfigConversationWatsonURLInput: Trenutni URL je %i. Unesite URL usluge za Vatson
     ili upišite 0 da biste se vratili.
-  wwcOnJoinTranslationNotificationSourceLang: Vaš ćaskanje se prevodi od %i na %o.
   wwcBookDone: Knjiga uspešno prevedena.
   wwctsOnSender: Potpisni prevod omogućen. Kliknite desnim tasterom miša na znak da
     ga prevede!
@@ -117,11 +108,9 @@ Messages:
   wwcConfigGUIPrefixButton: Promenite prefiks dodatka
   wwctSameLangError: Ne možete prevesti na isti jezik!
   wwctGUINewTranslationTarget: Izaberite ciljni jezik
-  wwctLangToLangStartOtherPlayer: Sada prevođenje ćaska %o od %i do %e.
   wwcConfigConnectionSuccess: Uspešno povezan na %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Da li je aktivan prevodilac: %i'
-  wwctLangToLangStart: Sada prevođenje svih vaših ćaskanja od %i na %o.
   wwcConfigConversationPrefixInput: Trenutni prefiks je %i. Ukucajte novi ili upišite
     0 da biste se vratili.
   wwcConfigGUIPreviousPageButton: Prethodna stranica
@@ -155,7 +144,6 @@ Messages:
   wwcRateLimit: Vaši prevodi su ograničeni na stopu. Molimo sačekajte drugo %i sekundi.
   wwcConfigCacheEnabled: Prevodilac keš omogućen i podešen na ograničenje %i.
   wwctGUIExistingTranslationButton: Prepišite trenutnu sesiju prevođenja
-  wwcOnJoinTranslationNotificationNoSourceLang: Vaš ćaskanje se prevodi na %o.
   wwcUserDataReloaded: Učitao sve sačuvane korisničke podatke.
   wwcConfigGUISendTranslationChatButton: Pošalji podsetnik za razgovor aktivnom prevodiocu
     na prijavu
@@ -186,8 +174,6 @@ Messages:
     korisničkih podataka je %i sekundi. Ukucajte nešto veće od 10 da biste postavili
     novu vrednost, ili nešto manje od 10 da biste se vratili.
   wwcConfigGUISyncUserDataButton: Promena kašnjenja sinhronizacije korisničkih podataka
-  wwcConfigSyncTime: Automatska sinhronizacija korisničkih podataka završena je u
-    %i nanosekunde.
   wwcConfigSyncDelayEnabled: Kašnjenje po sinhronizaciji korisničkih podataka postavljeno
     na %i sekundi.
   wwcConfigConversationSyncUserDataDelaySuccess: Odlaganje sinhronizacije korisničkih
@@ -305,7 +291,6 @@ Messages:
   wwcteOffSender: Entitetski prevod onemogućen.
   wwctGUIEntityButton: Prebacivanje entitetskog prevoda
   wwcConfigConversationResponseLimitSuccess: Odziv tajmeout set uspešno.
-  wwctCannotTranslateConsole: Ne možete prevesti konzolni chat!
   wwctrlRateLimitBadInt: Vaša stopa ograničenje nije važeći ceo broj.
   wwcTranslatorErrorConsole: Problem se pojavio dok je korisnik %i pokušavao njihov
     prevod. Molimo vas da proverite errorLog.txt za više detalja.
@@ -315,3 +300,17 @@ Messages:
   wwctGUIChatButton: Prevod na čet
   wwctcOffTarget: Chat prevod onemogućen za %i.
   wwcrBegin: Preopterećenje VorldVideChat...
+  wwctTranslationStoppedOtherPlayer: Sesija prevođenja za %i je zaustavljena.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globalno ćaskanje se prevodi,
+    ali imate aktivnu sesiju prevođenja od %i do %o.
+  wwctCannotTranslateConsole: Ne možete da započnete sesiju prevoda za konzolu!
+  wwctLangToLangStart: Pokretanje nove sesije prevoda od %i do %o.
+  wwcOnJoinTranslationNotificationSourceLang: Imate aktivnu sesiju prevoda od %i do
+    %o.
+  wwctAutoTranslateStartOtherPlayer: Pokretanje nove sesije prevoda za %i do %o.
+  wwctTranslationStopped: Vaša sesija prevoda je zaustavljena.
+  wwctLangToLangStartOtherPlayer: Pokretanje nove sesije prevoda za %o od %i do %e.
+  wwctAutoTranslateStart: Pokretanje nove sesije prevoda na %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Imate aktivnu sesiju prevoda na %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globalno ćaskanje se
+    prevodi, ali imate aktivnu sesiju prevođenja na %o.

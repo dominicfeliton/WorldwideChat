@@ -24,17 +24,13 @@ Messages:
   wwcBookTranslateStart: ترجمه کتاب هدف...
   wwcConfigDisabledbStats: bStats غیر فعال.
   wwctsOffSender: ترجمه امضا غیر فعال.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: چت سراسری در حال ترجمه
-    است، اما چت شما از %i به %o ترجمه می شود.
   wwcUpdaterParserFailed: تجزیه اطلاعات بروزرسانی از Github شکست خورد.
-  wwctAutoTranslateStart: اکنون همه چت خود را به %o ترجمه کنید.
   wwcConfigConversationAmazonTranslateSecretKeyInput: کلید مخفی کنار %i است. لطفا
     یک کلید مخفی برای آمازون وارد کنید، یا 0 را برای بازگشت تایپ کنید.
   wwctbOffSender: ترجمه کتاب غیر فعال.
   wwcConfigGUIAmazonTranslateButton: آمازون ترجمه
   wwcConfigConversationLangSuccess: زبان پلاگین با موفقیت تغییر کرد.
   wwcsSuccessfulTranslations: 'ترجمه های موفق: %i'
-  wwctTranslationStoppedOtherPlayer: ترجمه چت برای %i متوقف شده است.
   wwcConfigConversationTranslationCacheInput: حد نهانگاه ترجمه فعلی عبارت است %i.
     برای تنظیم یک مقدار جدید، چیزی بزرگتر از 0 را تایپ کنید یا 0 را تایپ کنید تا کش
     ترجمه را غیرفعال کنید. هر چیزی کمتر از 0 را تایپ کنید تا به عقب برگردید.
@@ -57,13 +53,10 @@ Messages:
     در config.yml خود فعال کنید.
   wwcConfigGUIQuitButton: خروج و ذخیره تغییرات
   wwctPlayerNotFound: بازیکن %i یافت نشد.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: چت سراسری در حال ترجمه
-    است، اما چت شما به %o ترجمه شده است.
   wwcConfigGUIAmazonTranslateRegionButton: تغییر منطقه آمازون
   wwcConfigConversationLangInput: 'زبان افزایش %i است. لطفا یک کد زبان معتبر وارد
     کنید، یا برای لغو تایپ کنید. کدهای زبان معتبر: %o'
   wwcConfigConversationLangInvalid: کد زبان نامعتبر!
-  wwctTranslationStopped: ترجمه چت شما متوقف شده است.
   wwcConfigGUIWatsonAPIKeyButton: تغییر کلید API واتسون
   wwcEnabled: نسخه WorldwideChat را فعال کنید %i.
   wwcgLangToLangStart: اکنون ترجمه چت جهانی از %i به %o.
@@ -82,7 +75,6 @@ Messages:
     برای واتسون وارد کنید، یا برای بازگشت به عقب، نوع 0 را تایپ کنید.
   wwctGUIStopButton: ترجمه را متوقف کنید
   wwcgTranslationStopped: ترجمه جهانی چت متوقف شده است.
-  wwctAutoTranslateStartOtherPlayer: اکنون ترجمه چت از %i به %o.
   wwcUpdaterFutureDate: این نمونه از WorldwideChat نسخه بزرگتری نسبت به آخرین نسخه
     عمومی دارد.
   wwcConfigConversationPrefixSuccess: پیشوند با موفقیت تغییر کرد.
@@ -92,7 +84,6 @@ Messages:
   wwcConfigCacheDisabled: حافظه پنهان مترجم غیرفعال شد.
   wwcConfigConversationWatsonURLInput: URL فعلی %i است. لطفا یک نشانی وب سرویس برای
     واتسون وارد کنید، یا 0 را برای بازگشت تایپ کنید.
-  wwcOnJoinTranslationNotificationSourceLang: چت شما از %i به %o ترجمه می شود.
   wwcBookDone: کتاب با موفقیت ترجمه شد.
   wwctsOnSender: امضای ترجمه فعال شد. راست کلیک بر روی علامت برای ترجمه آن!
   watsonColorCodeWarning: با استفاده از کدهای رنگ ممکن است نتایج غیر قابل پیش بینی
@@ -117,11 +108,9 @@ Messages:
   wwcConfigGUIPrefixButton: تغییر پیشوند پلاگین
   wwctSameLangError: شما نمی توانید به یک زبان ترجمه کنید!
   wwctGUINewTranslationTarget: انتخاب زبان هدف
-  wwctLangToLangStartOtherPlayer: اکنون ترجمه چت از %o از %i به %e.
   wwcConfigConnectionSuccess: با موفقیت به %o وصل شد!
   wwcConfigGUIGoogleTranslateButton: گوگل ترجمه
   wwcsIsActiveTranslator: 'مترجم فعال است: %i'
-  wwctLangToLangStart: اکنون همه چت خود را از %i به %o ترجمه کنید.
   wwcConfigConversationPrefixInput: پیشوند فعلی %i است. لطفا یک پیشوند جدید تایپ کنید،
     یا 0 را برای بازگشت تایپ کنید.
   wwcConfigGUIPreviousPageButton: صفحه قبلی
@@ -155,7 +144,6 @@ Messages:
   wwcRateLimit: ترجمه شما نرخ محدود. لطفا دیگر صبر کنید %i ثانیه.
   wwcConfigCacheEnabled: کش مترجم فعال شده و روی محدود %i تنظیم شده است.
   wwctGUIExistingTranslationButton: بازنویسی نشست فعلی ترجمه
-  wwcOnJoinTranslationNotificationNoSourceLang: چت شما به %o ترجمه شده است.
   wwcUserDataReloaded: بارگذاری تمام داده های کاربر ذخیره شده.
   wwcConfigGUISendTranslationChatButton: ارسال یادآور چت به مترجم فعال هنگام ورود
   wwcsLastTranslationTime: 'آخرین زمان (موفق) ترجمه: %i'
@@ -185,7 +173,6 @@ Messages:
     کاربر %i ثانیه است. هر چیزی بزرگتر از 10 را تایپ کنید تا یک مقدار جدید یا هر چیزی
     کمتر از 10 را تنظیم کنید تا به عقب برگردید.
   wwcConfigGUISyncUserDataButton: تغییر تاخیر همگام سازی داده های کاربر
-  wwcConfigSyncTime: همگام سازی خودکار داده های کاربر در %i نانوثانیه تکمیل شد.
   wwcConfigSyncDelayEnabled: تاخیر در همگام سازی داده های کاربر روی %i ثانیه تنظیم
     می شود.
   wwcConfigConversationSyncUserDataDelaySuccess: تاخیر همگام سازی داده های کاربر با
@@ -301,7 +288,6 @@ Messages:
   wwcteOffSender: ترجمه موجودیت غیر فعال شد.
   wwctGUIEntityButton: ضامن ترجمه موجودیت
   wwcConfigConversationResponseLimitSuccess: زمان پاسخ با موفقیت تنظیم شد.
-  wwctCannotTranslateConsole: شما نمی توانید چت کنسول را ترجمه کنید!
   wwctrlRateLimitBadInt: حد مجاز شما یک عدد صحیح معتبر نیست.
   wwcTranslatorErrorConsole: یک مشکل زمانی رخ داد که کاربر %i در حال تلاش برای ترجمه
     آنها بود. لطفا errorLog.txt برای جزئیات بیشتر را بررسی کنید.
@@ -311,3 +297,16 @@ Messages:
   wwctGUIChatButton: ضامن ترجمه گپ
   wwctcOffTarget: ترجمه چت برای %i غیرفعال شد.
   wwcrBegin: بارگذاری مجدد WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: جلسه ترجمه برای %i متوقف شده است.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: چت جهانی در حال ترجمه
+    است، اما شما یک جلسه ترجمه فعال از %i تا %o دارید.
+  wwctCannotTranslateConsole: شما نمی توانید جلسه ترجمه را برای کنسول شروع کنید!
+  wwctLangToLangStart: شروع یک جلسه ترجمه جدید از %i تا %o.
+  wwcOnJoinTranslationNotificationSourceLang: شما یک جلسه ترجمه فعال از %i تا %o دارید.
+  wwctAutoTranslateStartOtherPlayer: شروع یک نشست ترجمه جدید برای %i به %o.
+  wwctTranslationStopped: جلسه ترجمه شما متوقف شده است.
+  wwctLangToLangStartOtherPlayer: شروع یک نشست ترجمه جدید برای %o از %i به %e.
+  wwctAutoTranslateStart: شروع یک جلسه ترجمه جدید به %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: شما یک جلسه ترجمه فعال به %o دارید.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: چت جهانی در حال ترجمه
+    است، اما شما یک جلسه ترجمه فعال به %o دارید.

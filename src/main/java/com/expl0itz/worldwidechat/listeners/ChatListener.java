@@ -22,7 +22,7 @@ public class ChatListener implements Listener {
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
 		ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
 		if ((!currTranslator.getUUID().equals("") && currTranslator.getTranslatingChat())
-				|| (!main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("") && !main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChat())) {
+				|| (!main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChat())) {
 			String outMsg = CommonDefinitions.translateText(event.getMessage(), event.getPlayer());
 			if (!event.getMessage().equals(outMsg)) {
 				event.setMessage(outMsg);

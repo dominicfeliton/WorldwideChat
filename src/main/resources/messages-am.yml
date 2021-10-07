@@ -22,17 +22,13 @@ Messages:
   wwcBookTranslateStart: ዒላማ መጽሐፍ በመተርጎም ላይ...
   wwcConfigDisabledbStats: የተሰናከሉ bStats።
   wwctsOffSender: የትርጉም ምልክት ተሰናክሏል።
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ዓለም አቀፍ ውይይት እየተተረጎመ ነው,
-    ነገር ግን የእርስዎ ውይይት ከ %i ወደ %o እየተተረጎመ ነው።
   wwcUpdaterParserFailed: የዘመነ ውሂብ ከ Github መተንተን አልተሳካም።
-  wwctAutoTranslateStart: አሁን ሁሉንም የውይይትዎን መተርጎም ወደ %o።
   wwcConfigConversationAmazonTranslateSecretKeyInput: የአሁኑ ሚስጥራዊ ቁልፍ ነው %i. እባክዎን
     ለ አማዞን ሚስጥራዊ ቁልፍ ያስገቡ ወይም ተይብ 0 ወደ ኋላ ለመመለስ።
   wwctbOffSender: መጽሐፍ ትርጉም ተሰናክሏል።
   wwcConfigGUIAmazonTranslateButton: አማዞን ተርጉም
   wwcConfigConversationLangSuccess: ተሰኪ ቋንቋ በተሳካ ሁኔታ ተቀይሯል።
   wwcsSuccessfulTranslations: 'ስኬታማ ትርጉሞች: %i'
-  wwctTranslationStoppedOtherPlayer: የውይይት ትርጉም ለ %i ቆሟል።
   wwcConfigConversationTranslationCacheInput: የአሁኑ የትርጉም መሸጎጫ ገደብ %i ሐረጎች ነው። አዲስ
     እሴት ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም የትርጉም መሸጎጫውን ለማሰናከል 0 ይተይቡ። ወደ ኋላ ለመመለስ ከ
     0 በታች የሆነ ነገር ይተይቡ።
@@ -53,13 +49,10 @@ Messages:
     አንድ ተርጓሚ ብቻ ያንቁ።
   wwcConfigGUIQuitButton: ለውጦችን ውጣ እና አስቀምጥ
   wwctPlayerNotFound: ተጫዋች %እኔ አልተገኘም።
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ዓለም አቀፍ ውይይት እየተተረጎመ
-    ነው, ነገር ግን የእርስዎ ውይይት ወደ %o እየተተረጎመ ነው።
   wwcConfigGUIAmazonTranslateRegionButton: የአማዞን ክልል ቀይር
   wwcConfigConversationLangInput: 'አሁን ያለው ተሰኪ ቋንቋ %i ነው። እባክዎ ትክክለኛ የሆነ የቋንቋ ኮድ ያስገቡ
     ወይም ለመሰረዝ 0 ይተይቡ። ትክክለኛ የቋንቋ ኮዶች: %o'
   wwcConfigConversationLangInvalid: ልክ ያልሆነ የቋንቋ ኮድ!
-  wwctTranslationStopped: የእርስዎ የውይይት ትርጉም ቆሟል።
   wwcConfigGUIWatsonAPIKeyButton: ዋትሰን ኤፒአይ ቁልፍ ይቀይሩ
   wwcEnabled: የነቃ የዓለም WideChat ስሪት %i።
   wwcgLangToLangStart: አሁን ዓለም አቀፍ ውይይት መተርጎም ከ %i ወደ %o።
@@ -76,7 +69,6 @@ Messages:
     ያስገቡ ወይም 0 ተይብ ለመመለስ።
   wwctGUIStopButton: መተርጎም አቁም
   wwcgTranslationStopped: ግሎባል የውይይት ትርጉም ቆሟል።
-  wwctAutoTranslateStartOtherPlayer: አሁን የውይይት %i ወደ %o መተርጎም።
   wwcUpdaterFutureDate: ይህ የ WorldwideChat ምሳሌ ከቅርብ ጊዜ የህዝብ የበለጠ ስሪት አለው።
   wwcConfigConversationPrefixSuccess: ቅድመ-ቅጥያ በተሳካ ሁኔታ ተቀ
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google ተርጉም ኤፒአይ ቁልፍ ይቀይሩ
@@ -85,7 +77,6 @@ Messages:
   wwcConfigCacheDisabled: ተርጓሚ መሸጎጫ ተሰናክሏል።
   wwcConfigConversationWatsonURLInput: የአሁኑ ዩ አር ኤል %i ነው። እባክዎ ዋትሰን የአገልግሎት ዩአርኤል
     ያስገቡ፣ ወይም ተይብ 0 ወደ ኋላ ለመመለስ።
-  wwcOnJoinTranslationNotificationSourceLang: የእርስዎ ውይይት ከ %i ወደ %o እየተተረጎመ ነው።
   wwcBookDone: መጽሐፍ በተሳካ ሁኔታ ተተርጉሟል
   wwctsOnSender: የምልክት ትርጉም ነቅቷል። ለመተርጎም ምልክት ላይ ቀኝ-ጠቅ ያድርጉ!
   watsonColorCodeWarning: የቀለም ኮዶችን መጠቀም እርስዎ መተንበይ ውጤቶችን መስጠት ይችላል።
@@ -107,11 +98,9 @@ Messages:
   wwcConfigGUIPrefixButton: ተሰኪ ቅድመ ቅጥያ ይቀይሩ
   wwctSameLangError: ወደ ተመሳሳይ ቋንቋ መተርጎም አይችሉም!
   wwctGUINewTranslationTarget: ዒላማ ቋንቋ ይምረጡ
-  wwctLangToLangStartOtherPlayer: አሁን የውይይቱን መተርጎም ከ %i ወደ %e።
   wwcConfigConnectionSuccess: በተሳካ ሁኔታ ወደ %o ተገናኝቷል!
   wwcConfigGUIGoogleTranslateButton: ጉግል ተርጉም
   wwcsIsActiveTranslator: 'ንቁ ተርጓሚ ነው: %i'
-  wwctLangToLangStart: አሁን ሁሉንም የውይይትዎን መተርጎም ከ %i ወደ %o።
   wwcConfigConversationPrefixInput: አሁን ያለው ቅድመ ቅጥያ %i ነው እባክዎ አዲስ ይተይቡ ወይም 0 ይተይቡ
     ወደ ኋላ ይመለሱ።
   wwcConfigGUIPreviousPageButton: ቀዳሚ ገጽ
@@ -143,7 +132,6 @@ Messages:
   wwcRateLimit: የእርስዎ ትርጉሞች መጠን ውስን ናቸው። እባክዎ ሌላ %i ሰከንዶች ይጠብቁ
   wwcConfigCacheEnabled: ተርጓሚ መሸጎጫ ነቅቶ ወደ ገደብ ተዘጋጅቷል %i።
   wwctGUIExistingTranslationButton: የአሁኑን የትርጉም ክፍለ ጊዜ ተጻፈ
-  wwcOnJoinTranslationNotificationNoSourceLang: የእርስዎ ውይይት ወደ %o እየተተረጎመ ነው።
   wwcUserDataReloaded: ሁሉም የተቀመጡ የተጠቃሚ ውሂብ ተጭኗል።
   wwcConfigGUISendTranslationChatButton: መግቢያ ላይ ገባሪ ተርጓሚ የውይይት አስታዋሽ ላክ
   wwcsLastTranslationTime: 'የመጨረሻ (ስኬታማ) የትርጉም ጊዜ: %i'
@@ -169,7 +157,6 @@ Messages:
   wwcConfigConversationSyncUserDataDelayInput: የአሁኑ መዘግየት የተጠቃሚ ውሂብ ማመሳሰል የ %i ሰከንዶች
     ነው። አዲስ እሴት ለማዘጋጀት ከ 10 በላይ የሆነ ነገር ይተይቡ, ወይም ከ 10 ያነሰ ማንኛውም ነገር ወደ ኋላ ለመመለስ።
   wwcConfigGUISyncUserDataButton: የተጠቃሚ ውሂብ ማመሳሰል መዘግየት ለውጥ
-  wwcConfigSyncTime: አውቶማቲክ የተጠቃሚ ውሂብ ማመሳሰል በ %i ናኖሰከንዶች ተጠናቋል።
   wwcConfigSyncDelayEnabled: በአንድ የተጠቃሚ ውሂብ ማመሳሰል መዘግየት ወደ %i ሰከንዶች።
   wwcConfigConversationSyncUserDataDelaySuccess: የተጠቃሚ ውሂብ ማመሳሰል መዘግየት በተሳካ ሁኔታ ማዘጋጀት
   wwcConfigSyncDelayInvalid: ልክ ያልሆነ የተጠቃሚ ውሂብ ማመሳሰል መዘግየት config.yml ውስጥ ተዘጋጅቷል።
@@ -269,7 +256,6 @@ Messages:
   wwcteOffSender: የአካል ትርጉም ተሰናክሏል።
   wwctGUIEntityButton: የመቀያየሪያ አካል ትርጉም
   wwcConfigConversationResponseLimitSuccess: የምላሽ ጊዜው በተሳካ ሁኔታ ተዘጋጅቷል
-  wwctCannotTranslateConsole: የኮንሶል ውይይት መተርጎም አይችሉም!
   wwctrlRateLimitBadInt: የእርስዎ ተመን ገደብ ትክክለኛ ኢንቲጀር አይደለም።
   wwcTranslatorErrorConsole: ተጠቃሚው %i ትርጉማቸውን እየሞከረ ሳለ ችግር ተፈጥሯል። ተጨማሪ ዝርዝሮችን ለማግኘት
     errorLog.txt ይመልከቱ።
@@ -279,3 +265,16 @@ Messages:
   wwctGUIChatButton: የውይይት ትርጉም ይቀያይሩ
   wwctcOffTarget: የውይይት ትርጉም ተሰናክሏል ለ %i።
   wwcrBegin: WorldwideChat ን ዳግም በመጫን ላይ...
+  wwctTranslationStoppedOtherPlayer: የትርጉም ክፍለ ጊዜ ለ %i ቆሟል።
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ግሎባል ውይይት እየተተረጎመ ነው,
+    ነገር ግን ከ %i ወደ %o ንቁ የትርጉም ክፍለ ጊዜ አለዎት።
+  wwctCannotTranslateConsole: ለኮንሶል የትርጉም ክፍለ ጊዜ መጀመር አይችሉም!
+  wwctLangToLangStart: አዲስ የትርጉም ክፍለ ጊዜ ጀምሮ ከ %i ወደ %o።
+  wwcOnJoinTranslationNotificationSourceLang: ንቁ የትርጉም ክፍለ ጊዜ አለዎት ከ %i ወደ %o።
+  wwctAutoTranslateStartOtherPlayer: አዲስ የትርጉም ክፍለ ጊዜ መጀመር ለ %i ወደ %o።
+  wwctTranslationStopped: የእርስዎ የትርጉም ክፍለ ጊዜ ቆሟል።
+  wwctLangToLangStartOtherPlayer: አዲስ የትርጉም ክፍለ ጊዜ መጀመር ለ %o ከ %i ወደ %e።
+  wwctAutoTranslateStart: አዲስ የትርጉም ክፍለ ጊዜ መጀመር ወደ %o።
+  wwcOnJoinTranslationNotificationNoSourceLang: ንቁ የትርጉም ክፍለ ጊዜ አለዎት ወደ %o።
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ዓለም አቀፍ ውይይት እየተተረጎመ
+    ነው, ነገር ግን ንቁ የትርጉም ክፍለ ጊዜ ወደ %o አለዎት።

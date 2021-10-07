@@ -25,10 +25,7 @@ Messages:
   wwcBookTranslateStart: Përkthimi i librit të synuar...
   wwcConfigDisabledbStats: bStats me aftësi të kufizuara.
   wwctsOffSender: Përkthimi i shenjave të paaf
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Biseda globale po përkthehet,
-    por biseda juaj po përkthehet nga %i në %o.
   wwcUpdaterParserFailed: Dështoi në analizimin e të dhënave të përditësimit nga Github.
-  wwctAutoTranslateStart: Tani duke përkthyer krejt bisedën tënde në %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Kyçi i tanishëm sekret është
     %i. Ju lutemi, futni një kyç sekret për Amazon, ose shkruani 0 që të ktheheni
     mbrapsht.
@@ -36,7 +33,6 @@ Messages:
   wwcConfigGUIAmazonTranslateButton: Amazon Translate
   wwcConfigConversationLangSuccess: Gjuha plugin ndryshoi me sukses.
   wwcsSuccessfulTranslations: 'Përkthime të suksesshme: %i'
-  wwctTranslationStoppedOtherPlayer: Përkthimi i bisedës për %i është ndalur.
   wwcConfigConversationTranslationCacheInput: Kufiri aktual i përkthimit cache është
     %i frazat. Shkruani ndonjë gjë më të madhe se 0 për të vendosur një vlerë të re,
     ose shkruani 0 për të çaktivizuar cache përkthimi. Lloji asgjë më pak se 0 për
@@ -60,14 +56,11 @@ Messages:
     aktivizoni vetëm një përkthyes në config.yml tuaj.
   wwcConfigGUIQuitButton: Dalja & Ruaj Ndryshimet
   wwctPlayerNotFound: Lojtar %Nuk u gjet.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Biseda globale po përkthehet,
-    por biseda juaj po përkthehet në %o.
   wwcConfigGUIAmazonTranslateRegionButton: Ndrysho rajonin Amazon
   wwcConfigConversationLangInput: 'Gjuha aktuale e shtojcës është %i. Ju lutemi, futni
     një kod të vlefshëm gjuhësor, ose shkruani 0 që të anul Kodet e vlefshme të gjuhës:
     %o'
   wwcConfigConversationLangInvalid: Kodi i pavlefshëm i gjuhës!
-  wwctTranslationStopped: Përkthimi juaj i bisedës është ndalur.
   wwcConfigGUIWatsonAPIKeyButton: Ndrysho çelësin API Watson
   wwcEnabled: Versioni i aktivizuar WorldwideChat %i.
   wwcgLangToLangStart: Tani përkthimi i bisedës globale nga %i në %o.
@@ -88,7 +81,6 @@ Messages:
     futni një çelës API për Watson, ose shkruani 0 për t'u kthyer mbrapsht.
   wwctGUIStopButton: Ndaloni Përkthimin
   wwcgTranslationStopped: Përkthimi global i bisedave është ndalur.
-  wwctAutoTranslateStartOtherPlayer: Tani përkthimi i bisedës pre %i në %o.
   wwcUpdaterFutureDate: Ky shembull i WorldwideChat ka një version më të madh se ai
     i fundit publik.
   wwcConfigConversationPrefixSuccess: Prefiksi ndryshoi me sukses.
@@ -99,8 +91,6 @@ Messages:
   wwcConfigCacheDisabled: Cache Translator çaktivizuar.
   wwcConfigConversationWatsonURLInput: URL-ja e tanishme është %i. Ju lutemi, futni
     një URL shërbimi për Watson, ose shkruani 0 për t'u kthyer prapa.
-  wwcOnJoinTranslationNotificationSourceLang: Biseda juaj po përkthehet nga %i në
-    %o.
   wwcBookDone: Libri i përkthyer me sukses.
   wwctsOnSender: Përkthimi Sign aktivizuar. Djathtas-klikoni mbi një shenjë për ta
     përkthyer atë
@@ -126,11 +116,9 @@ Messages:
   wwcConfigGUIPrefixButton: Ndrysho Prefiksin e Plugin
   wwctSameLangError: Ju nuk mund të përkthehet në të njëjtën gjuhë!
   wwctGUINewTranslationTarget: Zgjidhni një gjuhë të synuar
-  wwctLangToLangStartOtherPlayer: Tani përkthimi i bisedës pre %o nga %i në %e.
   wwcConfigConnectionSuccess: Lidhur me sukses në %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Është Përkthyes Aktiv: %i'
-  wwctLangToLangStart: Tani duke përkthyer krejt bisedën tënde nga %i në %o.
   wwcConfigConversationPrefixInput: Prefiksi i tanishëm është %i. Ju lutemi shkruani
     një të re, ose shkruani 0 për t'u kthyer prapa.
   wwcConfigGUIPreviousPageButton: Faqja e mëparshme
@@ -170,7 +158,6 @@ Messages:
   wwcConfigCacheEnabled: Cache Translator aktivizuar dhe vendosur në një limit prej
     %i.
   wwctGUIExistingTranslationButton: Mbishkruaj Sesionin Aktual të Përkthimit
-  wwcOnJoinTranslationNotificationNoSourceLang: Biseda juaj po përkthehet në %o.
   wwcUserDataReloaded: Ngarkuar të gjitha të dhënat e ruajtura përdorues
   wwcConfigGUISendTranslationChatButton: Dërgo Kujtesën e Bisedës tek Përkthyes Aktiv
     në Login
@@ -201,8 +188,6 @@ Messages:
     dhënave të përdoruesit është %i sekonda. Lloji ndonjë gjë më të madhe se 10 për
     të vendosur një vlerë të re, ose ndonjë gjë më pak se 10 për t'u kthyer.
   wwcConfigGUISyncUserDataButton: Ndrysho vonesën e sinkroniz
-  wwcConfigSyncTime: Sinkronizimi automatik i të dhënave të përdoruesit përfundoi
-    në %i nanoseconds.
   wwcConfigSyncDelayEnabled: Vonesë për sinkronizimin e të dhënave të përdoruesit
     të vendosur në %i sekon
   wwcConfigConversationSyncUserDataDelaySuccess: Vonesa e sinkronizimit të dhënave
@@ -324,7 +309,6 @@ Messages:
   wwctGUIEntityButton: Toggle Enti Përkthimi
   wwcConfigConversationResponseLimitSuccess: Kohëzgjatja e përgjigjes vendosur me
     sukses.
-  wwctCannotTranslateConsole: Ju nuk mund të përktheni tastierë chat!
   wwctrlRateLimitBadInt: Kufiri juaj i normës nuk është një numër i plotë i vlefshëm.
   wwcTranslatorErrorConsole: Ndodhi një problem përderisa përdoruesi %i po tentonte
     përkthimin e tyre. Ju lutem kontrolloni errorLog.txt për më shumë detaje.
@@ -334,3 +318,20 @@ Messages:
   wwctGUIChatButton: Përkthimi Toggle Chat
   wwctcOffTarget: Përkthimi Chat i çaktivizuar për %i.
   wwcrBegin: Rifreskimi WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Sesioni i përkthimit për %i është ndalur.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Biseda globale po përkthehet,
+    por keni një sesion aktiv përkthimi nga %i në %o.
+  wwctCannotTranslateConsole: Nuk mund të filloni një sesion përkthimi për tastierë!
+  wwctLangToLangStart: Fillimi i një sesioni të ri përkthimi nga %i në %o.
+  wwcOnJoinTranslationNotificationSourceLang: Ju keni një sesion aktiv përkthimi nga
+    %i në %o.
+  wwctAutoTranslateStartOtherPlayer: Fillimi i një sesioni të ri përkthimi për %i
+    në %o.
+  wwctTranslationStopped: Sesioni juaj i përkthimit është ndalur.
+  wwctLangToLangStartOtherPlayer: Fillimi i një sesioni të ri përkthimi për %o nga
+    %i në %e.
+  wwctAutoTranslateStart: Duke filluar një sesion të ri përkthimi në %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Ju keni një sesion aktiv përkthimi
+    në %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Biseda globale po përkthehet,
+    por ju keni një sesion aktiv përkthimi në %o.

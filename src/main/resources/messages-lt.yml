@@ -25,17 +25,13 @@ Messages:
   wwcBookTranslateStart: Vertimas tikslinė knyga...
   wwcConfigDisabledbStats: Neįgalūs bStats.
   wwctsOffSender: Ženklas vertimas išjungtas.
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat yra išverstas,
-    bet jūsų pokalbis yra išverstas iš %i į %o.
   wwcUpdaterParserFailed: Nepavyko išanalizuoti naujinimo duomenų iš “Github”.
-  wwctAutoTranslateStart: Dabar verskite visus savo pokalbius į %o.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Dabartinis slaptasis raktas
     yra %i. Prašome įvesti slaptą raktą “Amazon” arba įveskite 0, kad grįžtumėte.
   wwctbOffSender: Knygų vertimas išjungtas.
   wwcConfigGUIAmazonTranslateButton: Amazon Išversti
   wwcConfigConversationLangSuccess: Įskiepių kalba sėkmingai pasikeitė.
   wwcsSuccessfulTranslations: 'Sėkmingi vertimai: %i'
-  wwctTranslationStoppedOtherPlayer: Pokalbių vertimas %i buvo sustabdytas.
   wwcConfigConversationTranslationCacheInput: Dabartinė vertimo talpyklos riba yra
     %i frazės. Įveskite viską, kas didesnė nei 0, kad nustatytumėte naują vertę, arba
     įveskite 0, kad išjungtumėte vertimo talpyklą. Įveskite ką nors mažiau nei 0,
@@ -58,13 +54,10 @@ Messages:
     tik vieną vertėją savo config.yml.
   wwcConfigGUIQuitButton: Išeiti ir išsaugoti pakeitimus
   wwctPlayerNotFound: Žaidėjas %neradau.
-  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Pasaulinis pokalbis
-    yra išverstas, bet jūsų pokalbis yra išverstas į %o.
   wwcConfigGUIAmazonTranslateRegionButton: Keisti Amazon regioną
   wwcConfigConversationLangInput: 'Dabartinė įskiepio kalba yra %i. Įveskite galiojantį
     kalbos kodą arba įveskite 0, kad atšauktumėte. Galiojantys kalbos kodai: %o'
   wwcConfigConversationLangInvalid: Neteisingas kalbos kodas!
-  wwctTranslationStopped: Jūsų pokalbių vertimas buvo sustabdytas.
   wwcConfigGUIWatsonAPIKeyButton: Pakeisti Watson API raktas
   wwcEnabled: Įgalinta WorldwideChat versija %i.
   wwcgLangToLangStart: Dabar verčiate globalinius pokalbius iš %i į %o.
@@ -83,7 +76,6 @@ Messages:
     “Watson” API raktą arba įveskite 0, kad grįžtumėte.
   wwctGUIStopButton: Sustabdyti vertimą
   wwcgTranslationStopped: Pasaulinis pokalbių vertimas buvo sustabdytas.
-  wwctAutoTranslateStartOtherPlayer: Dabar verčiate pokalbį %i į %o.
   wwcUpdaterFutureDate: Šis “WorldwideChat” egzempliorius turi didesnę versiją nei
     naujausia vieša.
   wwcConfigConversationPrefixSuccess: Priešdėlis sėkmingai pakeistas.
@@ -94,8 +86,6 @@ Messages:
   wwcConfigCacheDisabled: Vertėjas talpyklos išjungtas.
   wwcConfigConversationWatsonURLInput: Dabartinis URL yra %i. Prašome įvesti “Watson”
     paslaugos URL arba įveskite 0, kad grįžtumėte.
-  wwcOnJoinTranslationNotificationSourceLang: Jūsų pokalbis yra išverstas iš %i į
-    %o.
   wwcBookDone: Knyga sėkmingai išversta.
   wwctsOnSender: Įgalintas pasirašyti vertimą. Dešiniuoju pelės mygtuku spustelėkite
     ženklą, kad jį išversti!
@@ -119,11 +109,9 @@ Messages:
   wwcConfigGUIPrefixButton: Pakeisti Plugin Priešdėlis
   wwctSameLangError: Jūs negalite išversti į tą pačią kalbą!
   wwctGUINewTranslationTarget: Pasirinkti tikslinę kalbą
-  wwctLangToLangStartOtherPlayer: Dabar verčiate pokalbį %o iš %i į %e.
   wwcConfigConnectionSuccess: Sėkmingai prijungtas su %o!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Ar aktyvus vertėjas: %i'
-  wwctLangToLangStart: Dabar verskite visus savo pokalbius iš %i į %o.
   wwcConfigConversationPrefixInput: Dabartinis priešdėlis yra %i. Prašome įvesti naują
     arba įveskite 0, kad grįžtumėte atgal.
   wwcConfigGUIPreviousPageButton: Ankstesnis puslapis
@@ -160,7 +148,6 @@ Messages:
   wwcRateLimit: Jūsų vertimai yra ribotas. Prašome palaukti kitą %i sekundes.
   wwcConfigCacheEnabled: Vertėjo talpykla įjungta ir nustatyti %i ribą.
   wwctGUIExistingTranslationButton: Perrašyti dabartinę vertimo sesiją
-  wwcOnJoinTranslationNotificationNoSourceLang: Jūsų pokalbis yra išverstas į %o.
   wwcUserDataReloaded: Įkelti visus išsaugotus naudotojo duomenis.
   wwcConfigGUISendTranslationChatButton: Siųsti Pokalbių priminimą Active Translator
     on Login
@@ -191,7 +178,6 @@ Messages:
     naudotojo duomenis yra %i sekundes. Įveskite viską, kas didesnė nei 10, kad nustatytumėte
     naują vertę, arba nieko mažiau nei 10, kad grįžtumėte atgal.
   wwcConfigGUISyncUserDataButton: Keisti vartotojo duomenų sinchronizavimo vėlavimą
-  wwcConfigSyncTime: Automatinis vartotojo duomenų sinchronizavimas užbaigtas %i nanosekonds.
   wwcConfigSyncDelayEnabled: Delsimas vienam vartotojo duomenų sinchronizavimui nustatyti
     %i sekundes.
   wwcConfigConversationSyncUserDataDelaySuccess: Vartotojo duomenų sinchronizavimo
@@ -307,7 +293,6 @@ Messages:
   wwcteOffSender: Subjekto vertimas išjungtas.
   wwctGUIEntityButton: Perjungti subjekto vertimą
   wwcConfigConversationResponseLimitSuccess: Atsakymo skirtasis laikas sėkmingai nustatytas.
-  wwctCannotTranslateConsole: Jūs negalite išversti konsolės pokalbių!
   wwctrlRateLimitBadInt: Jūsų normos limitas nėra tinkamas sveikasis skaičius.
   wwcTranslatorErrorConsole: Problema kilo, kai vartotojas %i bandė jų vertimą. Prašome
     patikrinti errorLog.txt daugiau informacijos.
@@ -317,3 +302,17 @@ Messages:
   wwctGUIChatButton: Perjungti Pokalbių Vertimas
   wwctcOffTarget: Pokalbių vertimas išjungtas %i.
   wwcrBegin: Perkrovimas WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Vertimo sesija %i buvo sustabdyta.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat yra verčiamas,
+    bet jūs turite aktyvų vertimo seansą iš %i į %o.
+  wwctCannotTranslateConsole: Jūs negalite pradėti vertimo sesijos konsolės!
+  wwctLangToLangStart: Pradedama nauja vertimo sesija nuo %i iki %o.
+  wwcOnJoinTranslationNotificationSourceLang: Turite aktyvų vertimo seansą iš %i iki
+    %o.
+  wwctAutoTranslateStartOtherPlayer: Pradedama nauja vertimo sesija %i į %o.
+  wwctTranslationStopped: Jūsų vertimo sesija buvo sustabdyta.
+  wwctLangToLangStartOtherPlayer: Pradedama nauja vertimo sesija %o nuo %i iki %e.
+  wwctAutoTranslateStart: Pradedama nauja vertimo sesija į %o.
+  wwcOnJoinTranslationNotificationNoSourceLang: Turite aktyvų vertimo seansą %o.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat yra išverstas,
+    bet jūs turite aktyvų vertimo seansą %o.
