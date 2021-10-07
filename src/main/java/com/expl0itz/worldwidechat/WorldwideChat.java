@@ -314,7 +314,7 @@ public class WorldwideChat extends JavaPlugin {
 		}
 
 		// Cancel + remove all tasks
-		WorldwideChat.getInstance().getServer().getScheduler().cancelTasks(WorldwideChat.getInstance());
+		this.getServer().getScheduler().cancelTasks(this);
 
 		// Sync activeTranslators, playerRecords to disk
 		getConfigManager().syncData();
@@ -339,11 +339,11 @@ public class WorldwideChat extends JavaPlugin {
 		/* Run tasks after translator loaded */
 		// Check for updates
 		if (!CommonDefinitions.serverIsStopping()) 
-			Bukkit.getScheduler().runTaskTimerAsynchronously(instance, new UpdateChecker(), 0, getUpdateCheckerDelay() * 20);
+			Bukkit.getScheduler().runTaskTimerAsynchronously(this, new UpdateChecker(), 0, getUpdateCheckerDelay() * 20);
 
 		// Schedule automatic user data sync
 		if (!CommonDefinitions.serverIsStopping()) 
-			Bukkit.getScheduler().runTaskTimerAsynchronously(instance, new SyncUserData(), getSyncUserDataDelay() * 20, getSyncUserDataDelay() * 20);
+			Bukkit.getScheduler().runTaskTimerAsynchronously(this, new SyncUserData(), getSyncUserDataDelay() * 20, getSyncUserDataDelay() * 20);
 
 		// Load saved user data
 		if (!CommonDefinitions.serverIsStopping()) new LoadUserData().run();
