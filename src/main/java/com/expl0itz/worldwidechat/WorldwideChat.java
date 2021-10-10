@@ -190,7 +190,7 @@ public class WorldwideChat extends JavaPlugin {
 		CommonDefinitions.supportedPluginLangCodes = null;
 
 		// All done.
-		getLogger().info("Disabled WorldwideChat version " + pluginVersion + ".");
+		getLogger().info("Disabled WorldwideChat version " + pluginVersion + ". Goodbye!");
 	}
 
 	/* Get active async tasks */
