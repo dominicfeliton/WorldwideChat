@@ -26,7 +26,7 @@ public class ChatListener implements Listener {
 			String outMsg = CommonDefinitions.translateText(event.getMessage(), event.getPlayer());
 			if (!event.getMessage().equals(outMsg)) {
 				event.setMessage(outMsg);
-			} else {
+			} else if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendFailedTranslationChat")) {
 				final TextComponent chatTranslationFail = Component.text()
 						.append(Component.text()
 								.content(CommonDefinitions.getMessage("wwcChatTranslationFail"))
