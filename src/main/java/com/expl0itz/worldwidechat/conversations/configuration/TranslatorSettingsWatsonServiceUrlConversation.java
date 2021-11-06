@@ -37,7 +37,6 @@ public class TranslatorSettingsWatsonServiceUrlConversation extends StringPrompt
 							.color(NamedTextColor.GREEN))
 					.build();
 			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-			main.getConfigManager().saveMainConfig(true);
 		}
 		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson")
 				.open((Player) context.getForWhom());

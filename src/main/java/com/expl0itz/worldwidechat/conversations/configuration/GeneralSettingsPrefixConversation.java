@@ -32,7 +32,6 @@ public class GeneralSettingsPrefixConversation extends StringPrompt {
 		if (!input.equals("0")) {
 			main.setPrefixName(input);
 			main.getConfigManager().getMainConfig().set("General.prefixName", input);
-			main.getConfigManager().saveMainConfig(true);
 			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
 			final TextComponent successfulChange = Component.text()
 					.append(Component.text()

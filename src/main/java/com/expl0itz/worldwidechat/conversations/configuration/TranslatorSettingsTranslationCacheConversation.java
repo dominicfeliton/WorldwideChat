@@ -36,7 +36,6 @@ public class TranslatorSettingsTranslationCacheConversation extends NumericPromp
 							.color(NamedTextColor.GREEN))
 					.build();
 			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-			main.getConfigManager().saveMainConfig(true);
 		}
 		ConfigurationTranslatorSettingsGUI.translatorSettings.open((Player) context.getForWhom());
 		return END_OF_CONVERSATION;

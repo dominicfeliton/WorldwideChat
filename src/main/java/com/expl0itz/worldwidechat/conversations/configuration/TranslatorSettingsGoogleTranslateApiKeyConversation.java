@@ -38,7 +38,6 @@ public class TranslatorSettingsGoogleTranslateApiKeyConversation extends StringP
 							.color(NamedTextColor.GREEN))
 					.build();
 			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-			main.getConfigManager().saveMainConfig(true);
 		}
 		/* Re-open GoogleTranslateInventoryGUI */
 		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Google Translate")
