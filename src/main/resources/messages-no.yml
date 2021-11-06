@@ -45,8 +45,6 @@ Messages:
   wwctGUISignButton: Toggle Sign Oversettelse
   wwcUpdaterOutOfDate: WorldwideChat er utdatert. Oppdater til den nyeste versjonen,
     %i.
-  wwcConfigGUIChangesNotSaved: Endringene trer kanskje ikke i kraft før du enten kjører
-    /wwcr, eller klikker på den røde barrieren i /wwcc.
   wwcConfigGUINextPageButton: Neste side
   wwctbTranslatePageFail: (Kan ikke oversette denne siden) %i
   wwcConfigInvalidTranslatorSettings: Ugyldige oversetterinnstillinger! Aktiver bare
@@ -310,3 +308,5 @@ Messages:
     %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat blir oversatt,
     men du har en aktiv oversettelsesøkt til %o.
+  wwcConfigGUIChangesNotSaved: Endringene trer ikke i kraft før du klikker på den
+    røde barrieren i /wwcc.

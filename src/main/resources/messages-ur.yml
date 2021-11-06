@@ -45,8 +45,6 @@ Messages:
   wwctGUISignButton: سائن ترجمہ ٹوگل کریں
   wwcUpdaterOutOfDate: ورلڈ وائڈ چیٹ تاریخ سے باہر ہے. برائے مہربانی تازہ ترین ورژن،
     %i میں اپ ڈیٹ کریں۔
-  wwcConfigGUIChangesNotSaved: آپ کی تبدیلیاں اس وقت تک اثر نہیں ہوسکتی جب تک کہ آپ
-    یا تو چلائیں یا wwcc میں سرخ رکاوٹ پر کلک کریں.
   wwcConfigGUINextPageButton: اگلا صفحہ
   wwctbTranslatePageFail: (اس صفحہ کا ترجمہ کرنے میں ناکام) %i
   wwcConfigInvalidTranslatorSettings: غلط مترجم کی ترتیبات! براہ کرم اپنے config.yml
@@ -318,3 +316,5 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: آپ کے پاس ایک فعال ترجمہ سیشن ہے %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: گلوبل چیٹ کا ترجمہ کیا
     جا رہا ہے، لیکن آپ کے پاس ترجمہ کا ایک فعال سیشن ہے %o.
+  wwcConfigGUIChangesNotSaved: آپ کی تبدیلیاں اس وقت تک اثر نہیں ہوگی جب تک آپ /wwcc
+    میں سرخ رکاوٹ پر کلک نہ کریں.

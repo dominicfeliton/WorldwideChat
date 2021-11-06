@@ -48,8 +48,6 @@ Messages:
   wwctGUISignButton: Comută traducerea semnelor
   wwcUpdaterOutOfDate: WorldwideChat este expirat. Vă rugăm să actualizați la cea
     mai recentă versiune, %i.
-  wwcConfigGUIChangesNotSaved: Este posibil ca modificările să nu aibă efect până
-    când fie rulați /wwcr, fie faceți clic pe bariera roșie în /wwcc.
   wwcConfigGUINextPageButton: Pagina următoare
   wwctbTranslatePageFail: (Eșec la traducerea acestei pagini) %i
   wwcConfigInvalidTranslatorSettings: Setări de traducător nevalide! Vă rugăm să activați
@@ -333,3 +331,5 @@ Messages:
     la %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Chat global este tradus,
     dar aveți o sesiune de traducere activă la %o.
+  wwcConfigGUIChangesNotSaved: Modificările dvs. nu vor intra în vigoare până când
+    nu faceți clic pe bariera roșie în /wwcc.

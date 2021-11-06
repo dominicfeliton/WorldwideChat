@@ -45,8 +45,6 @@ Messages:
   wwctGUISignButton: Lülita viipetõlge
   wwcUpdaterOutOfDate: WorldwideChat on aegunud. Palun uuenda uusimale versioonile,
     %i.
-  wwcConfigGUIChangesNotSaved: Muudatused ei pruugi jõustuda enne, kui käivitate /wwcr
-    või klõpsate punasel tõkkel /wwcc.
   wwcConfigGUINextPageButton: Järgmine lehekülg
   wwctbTranslatePageFail: (Selle lehe tõlkimine nurjus) %i
   wwcConfigInvalidTranslatorSettings: Kehtetu tõlkija seaded! Palun lubage ainult
@@ -307,3 +305,5 @@ Messages:
     %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globaalne vestlus on
     tõlgitud, kuid teil on aktiivne tõlkesessioon kuni %o.
+  wwcConfigGUIChangesNotSaved: Teie muudatused ei jõustu enne, kui klõpsate punasel
+    tõkkel /wwcc.

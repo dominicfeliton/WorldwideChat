@@ -46,8 +46,6 @@ Messages:
   wwctGUISignButton: Pārslēgt zīmju tulkošanu
   wwcUpdaterOutOfDate: WorldwideChat ir novecojis. Lūdzu, atjauniniet uz jaunāko versiju,
     %i.
-  wwcConfigGUIChangesNotSaved: Jūsu izmaiņas var nestāties spēkā, kamēr jūs vai nu
-    palaist /wwcr, vai noklikšķiniet uz sarkanās barjeras /wwcc.
   wwcConfigGUINextPageButton: Nākamā lapa
   wwctbTranslatePageFail: (Neizdevās tulkot šo lapu) %i
   wwcConfigInvalidTranslatorSettings: Nederīgi tulkotāja iestatījumi! Lūdzu, iespējojiet
@@ -320,3 +318,5 @@ Messages:
     %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globālā tērzēšana tiek
     tulkota, bet jums ir aktīva tulkošanas sesija uz %o.
+  wwcConfigGUIChangesNotSaved: Jūsu izmaiņas nestāsies spēkā, kamēr jūs noklikšķināsit
+    uz sarkanās barjeras /wwcc.

@@ -48,8 +48,6 @@ Messages:
   wwctGUISignButton: Skipta Sign Þýðing
   wwcUpdaterOutOfDate: WorldwideChat er úrelt. Vinsamlegast uppfærðu í nýjustu útgáfuna,
     %i.
-  wwcConfigGUIChangesNotSaved: Breytingarnar þínar mega ekki taka gildi fyrr en þú
-    keyrir annað hvort /wwcr, eða smelltu á rauða hindrunina í/wwcc.
   wwcConfigGUINextPageButton: Næsta síða
   wwctbTranslatePageFail: (Mistókst að þýða þessa síðu) %i
   wwcConfigInvalidTranslatorSettings: Ógildar stillingar þýðanda! Vinsamlegast virkjaðu
@@ -323,3 +321,5 @@ Messages:
     %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Alþjóðlegt spjall er
     þýtt, en þú ert með virkan þýðingartíma til %o.
+  wwcConfigGUIChangesNotSaved: Breytingarnar þínar munu ekki taka gildi fyrr en þú
+    smellir á rauða hindrunina í/wwcc.

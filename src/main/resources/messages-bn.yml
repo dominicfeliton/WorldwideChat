@@ -45,8 +45,6 @@ Messages:
   wwctGUISignButton: সাইন অনুবাদ টগল করুন
   wwcUpdaterOutOfDate: ওয়ার্ল্ডউইডচ্যাট ডেট আউট অনুগ্রহ করে সর্বশেষ সংস্করণে আপডেট
     করুন, %i।
-  wwcConfigGUIChangesNotSaved: আপনি /wwcr রান না করা পর্যন্ত আপনার পরিবর্তনগুলি কার্যকর
-    নাও হতে পারে, অথবা /wwcc।
   wwcConfigGUINextPageButton: পরবর্তী পৃষ্ঠা
   wwctbTranslatePageFail: (এই পাতাটি অনুবাদ করতে ব্যর্থ) %i
   wwcConfigInvalidTranslatorSettings: অকার্যকর অনুবাদক সেটিংস! অনুগ্রহ করে আপনার config.yml
@@ -315,3 +313,5 @@ Messages:
     আছে।'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: গ্লোবাল চ্যাট অনুবাদ
     করা হচ্ছে, কিন্তু আপনা %o তে একটি সক্রিয় অনুবাদ সেশন আছে।
+  wwcConfigGUIChangesNotSaved: আপনার পরিবর্তনগুলি কার্যকর হবে না যতক্ষণ না আপনি /wwcc
+    এ লাল বাধা ক্লিক করেন।

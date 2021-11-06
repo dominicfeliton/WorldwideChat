@@ -45,8 +45,6 @@ Messages:
   wwctGUISignButton: ضامن ترجمه امضا
   wwcUpdaterOutOfDate: WorldwideChat از تاریخ گذشته است. لطفا به آخرین نسخه به‌روزرسانی
     کنید، %i.
-  wwcConfigGUIChangesNotSaved: تغییرات شما ممکن است اثر را ندارد تا زمانی که شما یا
-    اجرا /wwcr, و یا با کلیک بر روی مانع قرمز در /wwcc.
   wwcConfigGUINextPageButton: صفحه بعدی
   wwctbTranslatePageFail: (ترجمه این صفحه شکست خورد) %i
   wwcConfigInvalidTranslatorSettings: تنظیمات مترجم نامعتبر! لطفا تنها یک مترجم را
@@ -310,3 +308,5 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: شما یک جلسه ترجمه فعال به %o دارید.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: چت جهانی در حال ترجمه
     است، اما شما یک جلسه ترجمه فعال به %o دارید.
+  wwcConfigGUIChangesNotSaved: تغییرات شما اثر را تا زمانی که شما بر روی مانع قرمز
+    در /wwcc کلیک کنید.

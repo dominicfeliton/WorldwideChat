@@ -45,8 +45,6 @@ Messages:
   wwctGUISignButton: İşarə tərcüməsi
   wwcUpdaterOutOfDate: WorldWieChat tarix deyil. Xahiş edirik ən son versiyaya yeniləyin,
     %i.
-  wwcConfigGUIChangesNotSaved: /wwcr run və ya /wwcc qırmızı maneə basın qədər dəyişikliklər
-    qüvvəyə bilməz.
   wwcConfigGUINextPageButton: Növbəti səhifə
   wwctbTranslatePageFail: (Bu səhifəni tərcümə etmək mümkün deyil) %i
   wwcConfigInvalidTranslatorSettings: Yanlış tərcüməçi parametrləri! Sizin config.yml
@@ -314,3 +312,5 @@ Messages:
     var.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Qlobal söhbət tərcümə
     olunur, ancaq sizin %o üçün aktiv tərcümə sessiyası var.
+  wwcConfigGUIChangesNotSaved: /wwcc qırmızı maneə basın qədər dəyişikliklər qüvvəyə
+    minməyəcək.

@@ -98,15 +98,8 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			debugModeButton(player, contents);
 
 			/* Bottom Middle Option: Quit */
-			ItemStack quitButton = XMaterial.BARRIER.parseItem();
-			ItemMeta quitMeta = quitButton.getItemMeta();
-			quitMeta.setDisplayName(ChatColor.RED
-					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
-			quitButton.setItemMeta(quitMeta);
-			contents.set(2, 4, ClickableItem.of(quitButton, e -> {
-				main.removePlayerUsingConfigurationGUI(player);
-				player.closeInventory();
-				main.reload(player);
+			contents.set(2, 4, ClickableItem.of(WWCInventoryManager.getSaveMainConfigButton(), e -> {
+				WWCInventoryManager.saveMainConfigAndReload(player, contents);
 			}));
 
 			/* Bottom Right Option: Next Page */
@@ -137,7 +130,6 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			main.getConfigManager().getMainConfig().set("General.enablebStats",
 					!(main.getConfigManager().getMainConfig().getBoolean("General.enablebStats")));
 			main.setbStats(!main.getbStats());
-			main.getConfigManager().saveMainConfig(true);
 			final TextComponent successfulChange = Component.text()
 					.append(Component.text()
 							.content(CommonDefinitions.getMessage("wwcConfigConversationbStatsSuccess"))
@@ -164,7 +156,6 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			main.getConfigManager().getMainConfig().set("General.enableDebugMode",
 					!(main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")));
 			main.setDebugMode(!main.getDebugMode());
-			main.getConfigManager().saveMainConfig(true);
 			final TextComponent successfulChange = Component.text()
 					.append(Component.text()
 							.content(CommonDefinitions.getMessage("wwcConfigConversationDebugModeSuccess"))

@@ -161,15 +161,8 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 					e -> ConfigurationTranslatorSettingsGUI.translatorSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */
-			ItemStack quitButton = XMaterial.BARRIER.parseItem();
-			ItemMeta quitMeta = quitButton.getItemMeta();
-			quitMeta.setDisplayName(ChatColor.RED
-					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
-			quitButton.setItemMeta(quitMeta);
-			contents.set(2, 4, ClickableItem.of(quitButton, e -> {
-				main.removePlayerUsingConfigurationGUI(player);
-				player.closeInventory();
-				main.reload(player);
+			contents.set(2, 4, ClickableItem.of(WWCInventoryManager.getSaveMainConfigButton(), e -> {
+				WWCInventoryManager.saveMainConfigAndReload(player, contents);
 			}));
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
@@ -276,19 +269,24 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 													false);
 										}
 										
-										// Save config
-										main.getConfigManager().saveMainConfig(true);
+										new BukkitRunnable() {
+											@Override
+											public void run() {
+												// Save config
+												main.getConfigManager().saveMainConfig(false);
 
-										// Send successful change messsage
-										final TextComponent successfulChange = Component.text()
-												.append(Component.text().content(CommonDefinitions.getMessage("wwcConfigConversationTranslatorSuccess", new String[] {translatorName}))
-														.color(NamedTextColor.GREEN))
-												.build();
-										CommonDefinitions.sendMessage(player, successfulChange);
-										main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigConversationConsoleTranslatorSuccess", new String[] {player.getName(), translatorName}));
-										
-										// Reload the plugin
-										main.reload(player);
+												// Send successful change messsage
+												final TextComponent successfulChange = Component.text()
+														.append(Component.text().content(CommonDefinitions.getMessage("wwcConfigConversationTranslatorSuccess", new String[] {translatorName}))
+																.color(NamedTextColor.GREEN))
+														.build();
+												CommonDefinitions.sendMessage(player, successfulChange);
+												main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigConversationConsoleTranslatorSuccess", new String[] {player.getName(), translatorName}));
+												
+												// Reload the plugin
+												main.reload(player);
+											}
+										}.runTaskAsynchronously(main);
 									}
 								}.runTask(main);
 							}

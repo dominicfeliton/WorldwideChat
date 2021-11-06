@@ -43,8 +43,6 @@ Messages:
   wwcConfigGUILangButton: تغيير لغة البرنامج المساعد
   wwctGUISignButton: تبديل تسجيل الترجمة
   wwcUpdaterOutOfDate: وورلدويدتشات هو قديما. الرجاء التحديث إلى أحدث إصدار، %i.
-  wwcConfigGUIChangesNotSaved: قد لا تصبح التغييرات نافذة المفعول حتى تقوم إما بتشغيل/wwwcr،
-    أو النقر على الحاجز الأحمر في/wwcc.
   wwcConfigGUINextPageButton: الصفحة التالية
   wwctbTranslatePageFail: (فشل ترجمة هذه الصفحة) %i
   wwcConfigInvalidTranslatorSettings: إعدادات مترجم غير صالحة! يرجى تمكين مترجم واحد
@@ -297,3 +295,5 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: لديك جلسة ترجمة نشطة إلى %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: تتم ترجمة الدردشة العالمية،
     ولكن لديك جلسة ترجمة نشطة إلى %o.
+  wwcConfigGUIChangesNotSaved: لن تسري التغييرات الخاصة بك حتى تنقر على الحاجز الأحمر
+    في/wwcc.

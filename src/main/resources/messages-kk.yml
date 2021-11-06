@@ -43,8 +43,6 @@ Messages:
   wwcConfigGUILangButton: Плагин тілін өзгерту
   wwctGUISignButton: Toggle белгісі аударма
   wwcUpdaterOutOfDate: WorldWidechat күннен тыс. Соңғы нұсқаға жаңартыңыз, %i.
-  wwcConfigGUIChangesNotSaved: Өзгертулеріңіз /wwcr іске қосылғанша немесе /wwcc-дегі
-    қызыл тосқауылды басқанша күшіне ие болмауы мүмкін.
   wwcConfigGUINextPageButton: Келесі бет
   wwctbTranslatePageFail: (Бұл бетті аудара алмады) %i
   wwcConfigInvalidTranslatorSettings: Жарамсыз аудармашы параметрлері! Сіздің config.yml
@@ -312,3 +310,5 @@ Messages:
     %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Ғаламдық чат аударылып
     жатыр, бірақ сіздің %o үшін белсенді аударма сеансы бар.
+  wwcConfigGUIChangesNotSaved: /wwcc-дегі қызыл тосқауылды басқанша сіздің өзгертулеріңіз
+    күшіне енеді.

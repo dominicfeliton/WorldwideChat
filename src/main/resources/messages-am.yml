@@ -41,8 +41,6 @@ Messages:
   wwcConfigGUILangButton: ተሰኪ ቋንቋን ይቀይሩ
   wwctGUISignButton: የምልክት ትርጉም ይቀያይሩ
   wwcUpdaterOutOfDate: WorldWidechat ጊዜው ያለፈበት ነው። እባክዎን ወደ ቅርብ ጊዜው ስሪት ያዘምኑ, %i።
-  wwcConfigGUIChangesNotSaved: ለውጦች/wwcr እስኪሄዱ ድረስ ወይም በ /wwccr ውስጥ ቀይ ግርዶሽ ላይ ጠቅ
-    ያድርጉ።
   wwcConfigGUINextPageButton: ቀጣይ ገጽ
   wwctbTranslatePageFail: (ይህን ገጽ መተርጎም አልተቻለም) %i
   wwcConfigInvalidTranslatorSettings: ልክ ያልሆነ ተርጓሚ ቅንብሮች! እባክዎ በእርስዎ config.yml ውስጥ
@@ -278,3 +276,5 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: ንቁ የትርጉም ክፍለ ጊዜ አለዎት ወደ %o።
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ዓለም አቀፍ ውይይት እየተተረጎመ
     ነው, ነገር ግን ንቁ የትርጉም ክፍለ ጊዜ ወደ %o አለዎት።
+  wwcConfigGUIChangesNotSaved: በ /wwccc ውስጥ ቀይ ግርዶሽ ላይ ጠቅ እስኪያደርጉ ድረስ የእርስዎ ለውጦች ተግባራዊ
+    አይሆንም።

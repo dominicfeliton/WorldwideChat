@@ -38,7 +38,6 @@ Messages:
   wwcConfigGUILangButton: プラグイン言語の変更
   wwctGUISignButton: 署名翻訳の切り替え
   wwcUpdaterOutOfDate: WorldwideChatは廃れてる最新バージョン %i に更新してください。
-  wwcConfigGUIChangesNotSaved: /wwcr を実行するか、/wwcc の赤いバリアをクリックするまで、変更が有効にならない場合があります。
   wwcConfigGUINextPageButton: 次のページ
   wwctbTranslatePageFail: (このページの翻訳に失敗しました) %i
   wwcConfigInvalidTranslatorSettings: トランスレータの設定が無効です！config.yml でトランスレータを 1 つだけ有効にしてください。
@@ -256,3 +255,4 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: '%o へのアクティブな翻訳セッションがあります。'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: グローバルチャットは翻訳中ですが、 %o
     へのアクティブな翻訳セッションがあります。
+  wwcConfigGUIChangesNotSaved: 変更内容は /wwcc の赤いバリアをクリックするまで有効になりません。

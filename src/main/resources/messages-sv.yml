@@ -46,8 +46,6 @@ Messages:
   wwctGUISignButton: Växla signera översättning
   wwcUpdaterOutOfDate: WorldwideChat är föråldrad. Uppdatera till den senaste versionen,
     %i.
-  wwcConfigGUIChangesNotSaved: Dina ändringar kanske inte träder i kraft förrän du
-    antingen har kört /wwcr eller klickar på den röda barriären i /wwcc.
   wwcConfigGUINextPageButton: Nästa sida
   wwctbTranslatePageFail: (Det gick inte att översätta den här sidan) %i
   wwcConfigInvalidTranslatorSettings: Ogiltiga översättarinställningar! Aktivera endast
@@ -323,3 +321,5 @@ Messages:
     till %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chatt översätts,
     men du har en aktiv översättningssession till %o.
+  wwcConfigGUIChangesNotSaved: Dina ändringar träder inte i kraft förrän du klickar
+    på den röda barriären i /wwcc.

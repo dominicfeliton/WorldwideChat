@@ -45,8 +45,6 @@ Messages:
   wwctGUISignButton: Toggle Teken Vertaling
   wwcUpdaterOutOfDate: WorldwideChat is verouderd. Dateer asseblief na die nuutste
     weergawe, %i.
-  wwcConfigGUIChangesNotSaved: Jou veranderinge mag nie in werking tree totdat jy
-    óf hardloop/wwcr, of kliek op die rooi versperring in /wwcc.
   wwcConfigGUINextPageButton: Volgende Bladsy
   wwctbTranslatePageFail: (Kon nie hierdie bladsy vertaal nie) %i
   wwcConfigInvalidTranslatorSettings: Ongeldige vertaler instellings! Aktiveer asseblief
@@ -318,3 +316,5 @@ Messages:
     na %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat word vertaal,
     maar jy het 'n aktiewe vertaling sessie na %o.
+  wwcConfigGUIChangesNotSaved: Jou veranderinge sal nie in werking tree totdat jy
+    kliek op die rooi versperring in /wwcc.

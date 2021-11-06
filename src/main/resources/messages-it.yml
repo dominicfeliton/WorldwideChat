@@ -50,8 +50,6 @@ Messages:
   wwctGUISignButton: Attiva/disattiva traduzione segno
   wwcUpdaterOutOfDate: WorldwideChat non è aggiornato. Esegui l'aggiornamento alla
     versione più recente, %i.
-  wwcConfigGUIChangesNotSaved: Le tue modifiche potrebbero non avere effetto finché
-    non esegui /wwcr, o fai clic sulla barriera rossa in /wwcc.
   wwcConfigGUINextPageButton: Pagina successiva
   wwctbTranslatePageFail: (Traduzione della pagina non riuscita) %i
   wwcConfigInvalidTranslatorSettings: Impostazioni del traduttore non valide! Attivare
@@ -332,3 +330,5 @@ Messages:
     per %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: La chat globale è in
     fase di traduzione, ma hai una sessione di traduzione attiva per %o.
+  wwcConfigGUIChangesNotSaved: Le modifiche non avranno effetto finché non si fa clic
+    sulla barriera rossa in /wwcc.

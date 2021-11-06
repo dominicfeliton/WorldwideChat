@@ -48,8 +48,6 @@ Messages:
   wwctGUISignButton: Toggle Նշան թարգմանություն
   wwcUpdaterOutOfDate: WorldwideChat դուրս օրվանից. Խնդրում ենք թարմացնել վերջին տարբերակը,
     %i.
-  wwcConfigGUIChangesNotSaved: Ձեր փոփոխությունները չեն կարող ուժի մեջ մտնել, քանի
-    դեռ դուք կամ վազում /wwcr, կամ սեղմեք կարմիր արգելքը /wwcc.
   wwcConfigGUINextPageButton: Հաջորդ էջը
   wwctbTranslatePageFail: (Չհաջողվեց թարգմանել այս էջը) %i
   wwcConfigInvalidTranslatorSettings: Անվավեր թարգմանիչ պարամետրերը! Խնդրում ենք միացնել
@@ -327,3 +325,5 @@ Messages:
     է %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Գլոբալ զրույցը թարգմանվում
     է, բայց դուք ունեք ակտիվ թարգմանության նիստ է %o.
+  wwcConfigGUIChangesNotSaved: Ձեր փոփոխությունները չեն ուժի մեջ մտնելու, քանի դեռ
+    դուք սեղմեք կարմիր արգելքը /wwcc.

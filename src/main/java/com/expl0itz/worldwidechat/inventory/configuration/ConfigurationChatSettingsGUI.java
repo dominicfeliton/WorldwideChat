@@ -60,15 +60,8 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 					e -> ConfigurationGeneralSettingsGUI.generalSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */
-			ItemStack quitButton = XMaterial.BARRIER.parseItem();
-			ItemMeta quitMeta = quitButton.getItemMeta();
-			quitMeta.setDisplayName(ChatColor.RED
-					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
-			quitButton.setItemMeta(quitMeta);
-			contents.set(2, 4, ClickableItem.of(quitButton, e -> {
-				main.removePlayerUsingConfigurationGUI(player);
-				player.closeInventory();
-				main.reload(player);
+			contents.set(2, 4, ClickableItem.of(WWCInventoryManager.getSaveMainConfigButton(), e -> {
+				WWCInventoryManager.saveMainConfigAndReload(player, contents);
 			}));
 
 			/* Bottom Right Option: Next Page */
@@ -96,7 +89,6 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			main.addPlayerUsingConfigurationGUI(player);
 			main.getConfigManager().getMainConfig().set("Chat.sendTranslationChat",
 					!(main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat")));
-			main.getConfigManager().saveMainConfig(true);
 			final TextComponent successfulChange = Component.text()
 					.append(Component.text()
 							.content(CommonDefinitions.getMessage("wwcConfigConversationSendTranslationChatSuccess"))
@@ -122,7 +114,6 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			main.addPlayerUsingConfigurationGUI(player);
 			main.getConfigManager().getMainConfig().set("Chat.sendPluginUpdateChat",
 					!(main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")));
-			main.getConfigManager().saveMainConfig(true);
 			final TextComponent successfulChange = Component.text()
 					.append(Component.text()
 							.content(CommonDefinitions.getMessage("wwcConfigConversationPluginUpdateChatSuccess"))
