@@ -1,0 +1,318 @@
+Messages:
+  wwcInventoryErrorPlayer: ਤੁਹਾਡੇ GUI ਨਾਲ ਲੱਭੀ ਗਲਤੀ ਹੈ ਇੱਕ ਲਾਗ ਕੰਸੋਲ ਨੂੰ ਭੇਜਿਆ ਗਿਆ
+    ਹੈ.
+  wwctGUITargetPlayerNull: ਟੀਚੇ ਦਾ ਖਿਡਾਰੀ ਸਰਵਰ ਤੋਂ ਡਿਸਕਨੈਕਟ ਹੋਇਆ ਹੈ.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ %o ਵਿੱਚ
+    ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।
+  wwcConfigErrorLimitInvalid: ਗਲਤ ਅਨੁਵਾਦਕ ਗਲਤੀ ਸੀਮਾ config.yml ਵਿੱਚ ਸੈੱਟ ਕੀਤੀ. 5 ਨੂੰ
+    ਡਿਫਾਲਟ ਕਰਨਾ...
+  wwcConfigGUIUpdateCheckerButton: ਅੱਪਡੇਟ ਦੇਰੀ ਲਈ ਚੈੱਕ ਬਦਲੋ
+  wwctInvalidOutputLangCode: 'ਗਲਤ ਆਉਟਪੁੱਟ ਭਾਸ਼ਾ ਕੋਡ ਪ੍ਰਦਾਨ ਕੀਤਾ ਗਿਆ! ਵੈਧ ਲੰਬੇ ਕੋਡ:
+    %o'
+  wwcConfigConversationUpdateCheckerInput: ਅੱਪਡੇਟ ਜਾਂਚਕਰਤਾ ਉੱਤੇ ਮੌਜੂਦਾ ਦੇਰੀ %i ਸਕਿੰਟ
+    ਹੈ। ਇੱਕ ਨਵਾਂ ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 10 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 10
+    ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ.
+  wwcCharLimit: ਤੁਹਾਡਾ ਸੁਨੇਹਾ ਬਹੁਤ ਲੰਮਾ ਹੈ! ਕਿਰਪਾ ਕਰਕੇ ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਤੁਹਾਡਾ
+    ਸੁਨੇਹਾ %i ਤੋਂ ਘੱਟ ਅੱਖਰ ਲੰਬਾਈ ਵਿੱਚ ਹੈ।
+  wwcInventoryError: ਯੂਜ਼ਰ %i ਦੇ GUI ਨਾਲ ਲੱਭੀ ਗਲਤੀ ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਮੁੱਦੇ ਨੂੰ ਡਿਵੈਲਪਰ
+    ਨੂੰ ਰਿਪੋਰਟ ਕਰੋ।
+  wwctbOnTarget: '%i ਲਈ ਬੁੱਕ ਅਨੁਵਾਦ ਯੋਗ ਹੈ।'
+  wwctrlRateLimitAlreadyOffTarget: '%i ਦੀ ਦਰ ਸੀਮਾ ਪਹਿਲਾਂ ਹੀ ਅਯੋਗ ਹੋ ਗਈ ਹੈ।'
+  wwcConfigConnectionFailed: '%o ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਇਹ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ ਕ੍ਰੇਡੇੰਸ਼ਿਅਲ
+    ਅਤੇ ਫਾਇਰਵਾਲ ਸਹੀ ਢੰਗ ਨਾਲ ਸੰਰਚਿਤ ਕੀਤੇ ਗਏ ਹਨ!'
+  wwcConfigEnabledbStats: ਸਮਰਥਿਤ ਬੀਐਸਟੀਟਸ.
+  wwctGUIConversationRateLimit: ਅਨੁਵਾਦ ਪ੍ਰਤੀ ਰੇਟ ਸੀਮਾ ਇਸ ਸਮੇਂ %i ਸਕਿੰਟ ਹੈ। ਇੱਕ ਨਵਾਂ
+    ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਸੀਮਾ ਨੂੰ ਅਯੋਗ ਕਰਨ ਲਈ 0 ਟਾਈਪ
+    ਕਰੋ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ.
+  wwcteOnTarget: ਇਕਾਈ ਦਾ ਅਨੁਵਾਦ %i ਲਈ ਯੋਗ ਹੈ।
+  wwcConfigMaxResponseTimeInvalid: ਗਲਤ ਅਧਿਕਤਮ ਜਵਾਬ ਵਾਰ config.yml ਵਿੱਚ ਸੈੱਟ ਕੀਤਾ.
+    7 ਸਕਿੰਟ ਲਈ ਡਿਫਾਲਟ...
+  wwcBookTranslateStart: ਟੀਚੇ ਦੀ ਕਿਤਾਬ ਦਾ ਅਨੁਵਾਦ...
+  wwcEntityTranslateDone: 'ਅਨੁਵਾਦਿਤ ਇਕਾਈ ਦਾ ਨਾਮ: %i'
+  wwctsOffSender: ਸਾਈਨ ਅਨੁਵਾਦ ਅਯੋਗ.
+  wwcConfigGUIChatMessagesDeadOverride: ਇਹ ਓਵਰਰਾਈਡ ਜਾਂ ਤਾਂ ਗਲਤ ਹੈ, ਜਾਂ ਅਸਲ ਸੰਦੇਸ਼
+    ਹਟਾ ਦਿੱਤਾ ਗਿਆ ਹੈ. ਤੁਹਾਨੂੰ ਇਸ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੀਦਾ ਹੈ.
+  wwcConfigConversationResponseLimitInput: ਹਰੇਕ ਅਨੁਵਾਦਕ ਲਈ ਮੌਜੂਦਾ ਜਵਾਬ ਦਾ ਸਮਾਂ ਕੱ.
+    %i ਸਕਿੰਟ ਹੈ. ਇੱਕ ਨਵਾਂ ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ
+    ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਜਾਂ ਇਸ ਦੇ ਬਰਾਬਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ.
+  wwcUpdaterParserFailed: GitHub ਤੱਕ ਅੱਪਡੇਟ ਡਾਟਾ ਪਾਰਸ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
+  wwcConfigMaxResponseTimeEnabled: ਮੈਕਸ ਜਵਾਬ ਵਾਰ %i ਸਕਿੰਟ ਲਈ ਸੈੱਟ ਕੀਤਾ.
+  wwctAutoTranslateStart: '%o ਲਈ ਨਵਾਂ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
+  wwctbOffSender: ਕਿਤਾਬ ਦਾ ਅਨੁਵਾਦ ਅਯੋਗ.
+  wwcsSuccessfulTranslations: 'ਸਫਲ ਅਨੁਵਾਦ: %i'
+  wwctTranslationStoppedOtherPlayer: '%i ਲਈ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ।'
+  wwcrBegin: ਵਿਸ਼ਵਵਿਡਚੈਟ ਨੂੰ ਮੁੜ ਲੋਡ ਕਰਨਾ...
+  wwctiOffSender: ਆਈਟਮ ਅਨੁਵਾਦ ਅਯੋਗ.
+  wwctbOffTarget: '%i ਲਈ ਪੁਸਤਕ ਅਨੁਵਾਦ ਆਯੋਗ ਹੈ।'
+  wwcConfigGUIGeneralSettings: ਜਨਰਲ ਸੰਰਚਨਾ
+  wwcConfigCacheInvalid: ਅਨੁਵਾਦਕ ਕੈਚੇ ਦਾ ਆਕਾਰ ਗਲਤ ਹੈ. 10 ਨੂੰ ਡਿਫਾਲਟ ਕਰਨਾ...
+  wwcInvalidLang: ਤੁਹਾਡੀ config.yml ਵਿੱਚ ਅਵੈਧ ਭਾਸ਼ਾ. en ਨੂੰ ਮੂਲ...
+  wwcteOnSender: ਇਕਾਈ ਦਾ ਅਨੁਵਾਦ ਯੋਗ ਹੈ। ਇਸ ਦੇ ਨਾਮ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਕਿਸੇ ਇਕਾਈ 'ਤੇ ਸੱਜਾ-ਕਲਿੱਕ
+    ਕਰੋ!
+  wwcBadPerms: ਤੁਹਾਡੇ ਕੋਲ ਇਸ ਕਮਾਂਡ ਨੂੰ ਚਲਾਉਣ ਲਈ ਲੋੜੀਂਦੇ ਅਧਿਕਾਰ ਨਹੀਂ ਹਨ!
+  wwcConfigGUILangButton: ਪਲੱਗਇਨ ਭਾਸ਼ਾ ਬਦਲੋ
+  wwctGUISignButton: ਬਦਲੋ ਦਾਖ਼ਲਾ ਅਨੁਵਾਦ
+  wwcTranslatorErrorThresholdReached: ਗਲਤੀ ਥਰੈਸ਼ਹੋਲਡ ਪਹੁੰਚ ਗਿਆ. ਇਹ ਪਲੱਗਇਨ ਹੁਣ ਮੁੜ
+    ਲੋਡ ਹੋ ਜਾਵੇਗੀ, ਅਤੇ ਸਾਰੇ ਅਨੁਵਾਦਕਾਂ ਨੂੰ ਅਯੋਗ ਕਰ ਦੇਵੇਗੀ।
+  wwctrlRateLimitOffTarget: '%i ਦੀ ਦਰ ਸੀਮਾ ਨੂੰ ਅਯੋਗ ਕਰ ਦਿੱਤਾ ਹੈ।'
+  wwcConfigInvalidTranslatorSettings: ਗਲਤ ਅਨੁਵਾਦਕ ਸੈਟਿੰਗ! ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ config.yml
+    ਵਿੱਚ ਸਿਰਫ ਇੱਕ ਅਨੁਵਾਦਕ ਨੂੰ ਯੋਗ ਕਰੋ.
+  wwcTranslatorErrorThresholdReachedCheckLogs: ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ WorldwideChat ਪਲੱਗਇਨ
+    ਫੋਲਡਰ ਵਿੱਚ errorLog.txt ਚੈੱਕ ਕਰੋ ਜੀ.
+  wwcConfigGUIQuitButton: ਬੰਦ ਕਰੋ ਅਤੇ ਬਦਲਾਅ ਸੰਭਾਲੋ
+  wwctPlayerNotFound: ਪਲੇਅਰ %i ਨਹੀਂ ਮਿਲਿਆ।
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ
+    ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ, ਪਰ ਤੁਹਾਡੇ ਕੋਲ %o ਲਈ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਹੈ।
+  wwctiOffTarget: ਆਈਟਮ ਅਨੁਵਾਦ %i ਲਈ ਅਯੋਗ ਹੈ।
+  wwcConfigConversationLangInput: 'ਮੌਜੂਦਾ ਪਲੱਗਇਨ ਭਾਸ਼ਾ %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਰੱਦ ਕਰਨ ਲਈ
+    ਇੱਕ ਵੈਧ ਭਾਸ਼ਾ ਕੋਡ ਦਰਜ ਕਰੋ, ਜਾਂ ਟਾਈਪ 0 ਟਾਈਪ ਕਰੋ। ਪ੍ਰਮਾਣਿਕ ਭਾਸ਼ਾ ਕੋਡ: %o'
+  wwctTranslationStopped: ਤੁਹਾਡਾ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ।
+  wwcEntityTranslateNoName: ਸੰਸਥਾ ਦਾ ਕੋਈ ਕਸਟਮ ਨਾਮ ਨਹੀਂ ਹੈ
+  wwcConfigGUIWatsonAPIKeyButton: ਵਾਟਸਨ API ਨੂੰ ਕੁੰਜੀ ਬਦਲੋ
+  wwctrlRateLimitOffSender: ਤੁਹਾਡੀ ਦਰ ਸੀਮਾ ਨੂੰ ਅਯੋਗ ਕਰ ਦਿੱਤਾ.
+  wwctbOnSender: ਕਿਤਾਬ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਇਸ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਇੱਕ ਕਿਤਾਬ ਰੱਖਣ ਦੌਰਾਨ ਸੱਜਾ-ਕਲਿੱਕ
+    ਕਰੋ!
+  wwctrlRateLimitAlreadyOffSender: ਤੁਹਾਡੀ ਦਰ ਸੀਮਾ ਪਹਿਲਾਂ ਹੀ ਅਯੋਗ ਹੋ ਗਈ ਹੈ.
+  wwcConfigSyncDelayEnabled: ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਨੂੰ %i ਸਕਿੰਟ ਲਈ ਸੈੱਟ ਦੇਰੀ.
+  wwcConfigGUIEachTranslatorSettings: '%i ਸੰਰਚਨਾ'
+  wwctGUIEntityButton: ਟੌਗਲ ਐਂਟੀਟੀ ਅਨੁਵਾਦ
+  wwcListenersInitialized: ਸ਼ੁਰੂਆਤੀ ਸੁਣਨ ਵਾਲੇ.
+  wwcConfigConversationSendTranslationChatSuccess: ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਚੈਟ ਰੀਮਾਈਂਡਰ ਸਫਲਤਾਪੂਰਵਕ
+    ਬਦਲ ਗਿਆ.
+  wwctsOffTarget: '%i ਲਈ ਅਨੁਵਾਦ ਆਯੋਗ ਸਾਈਨ ਕਰੋ।'
+  wwcUpdaterConnectionFailed: GitHub 'ਤੇ ਤਾਜ਼ਾ ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ.
+  watsonNotFoundExceptionNotification: ਆਪਣੇ ਇੰਪੁੱਟ ਦਾ ਕੋਈ ਹੋਰ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਅਸਮਰੱਥ
+    ਹੈ.
+  wwcConfigConversationErrorLimitSuccess: ਗਲਤੀ ਸੀਮਾ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwctGUIStopButton: ਅਨੁਵਾਦ ਕਰਨਾ ਬੰਦ ਕਰੋ
+  wwcEntityTranslateStart: ਟੀਚੇ ਦੀ ਇਕਾਈ ਦਾ ਅਨੁਵਾਦ...
+  wwcUpdaterFutureDate: ਵਰਲਡਵਿਡਚੈਟ ਦੀ ਇਸ ਉਦਾਹਰਣ ਦਾ ਨਵੀਨਤਮ ਜਨਤਕ ਨਾਲੋਂ ਵੱਡਾ ਸੰਸਕਰਣ ਹੈ.
+  wwcItemTranslateLoreFail: ਇਕਾਈ ਨੂੰ lore ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: ਗੂਗਲ ਅਨੁਵਾਦ API ਕੁੰਜੀ ਬਦਲੋ
+  wwcConfigGUIGlobalRateLimitButton: ਗਲੋਬਲ ਰੇਟ ਸੀਮਾ ਬਦਲੋ
+  wwcItemTranslateTitleFail: ਇਕਾਈ ਨੂੰ ਨਾਮ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ.
+  wwctsOnTarget: '%i ਲਈ ਸਿੰਨ ਅਨੁਵਾਦ ਯੋਗ ਹੈ।'
+  wwcConfigCacheDisabled: ਅਨੁਵਾਦਕ ਕੈਸ਼ ਅਯੋਗ.
+  wwcConfigConversationWatsonURLInput: ਮੌਜੂਦਾ URL %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਵਾਟਸਨ ਲਈ ਇੱਕ ਸਰਵਿਸ
+    URL ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
+  wwcBookDone: ਕਿਤਾਬ ਦਾ ਸਫਲਤਾਪੂਰਵਕ ਅਨੁਵਾਦ ਕੀਤਾ ਗਿਆ.
+  watsonColorCodeWarning: ਰੰਗ ਕੋਡ ਦਾ ਇਸਤੇਮਾਲ ਤੁਹਾਨੂੰ ਅਣਹੋਣੀ ਨਤੀਜੇ ਦੇ ਸਕਦਾ ਹੈ.
+  wwctGUITranslationButton: ਅਨੁਵਾਦ ਸ਼ੁਰੂ
+  wwcItemTranslateLoreStart: ਟੀਚੇ ਦਾ ਇਕਾਈ ਨੂੰ ਦੇ lore ਦਾ ਅਨੁਵਾਦ...
+  wwcUpdaterUpToDate: ਵਰਲਡਵਿਡਚੈਟ ਅਪ ਟੂ ਡੇਟ ਹੈ!
+  wwcConfigConversationAmazonTranslateRegionInput: ਮੌਜੂਦਾ ਖੇਤਰ %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਐਮਾਜ਼ਾਨ
+    ਲਈ ਇੱਕ ਖੇਤਰ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ.
+  wwcConfigConversationOverrideTextChange: ਇਸ ਓਵਰਰਾਈਡ ਲਈ ਇੱਕ ਨਵ ਸੁਨੇਹਾ ਟਾਈਪ ਕਰੋ ਜੀ,
+    ਜ ਟਾਈਪ 0 ਵਾਪਸ ਜਾਣ ਲਈ. ਯਾਦ ਰੱਖੋ ਕਿ ਤੁਸੀਂ ਅਸਲ ਸੰਦੇਸ਼ ਵਿੱਚ ਵੇਖਦੇ ਹੋ ਪ੍ਰਤੀਸ਼ਤ ਸੰਕੇਤਾਂ
+    ਨਾਲ ਸ਼ੁਰੂ ਹੋਣ ਵਾਲੇ ਕਿਸੇ ਵੀ ਵੇਰੀਏਬਲ ਨੂੰ ਸ਼ਾਮਲ ਕਰਨਾ ਯਾਦ ਰੱਖੋ.
+  wwcInitializationFail: ਵਿਸ਼ਵਵਿਡਚੈਟ ਦੀ ਸ਼ੁਰੂਆਤ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ.
+  wwcrSuccess: ਵਿਸ਼ਵਵਿਆਪੀ ਵਿੱਡਚੈਟ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਮੁੜ ਲੋਡ ਕੀਤਾ.
+  wwcConfigGUIChatMessagesPossibleOverrides: ਇੱਕ ਸੁਨੇਹਾ ਚੁਣੋ
+  wwcPlayerNotFound: ਪਲੇਅਰ %i ਨਹੀਂ ਮਿਲਿਆ।
+  wwcUpdaterOutOfDateChat: ਵਰਲਡਵਿਡਚੈਟ ਤਾਰੀਖ ਤੋਂ ਬਾਹਰ ਹੈ. ਨਵੀਨਤਮ ਵਰਜਨ ਲਈ ਅੱਪਡੇਟ ਕਰੋ
+    ਜੀ.
+  wwcConfigConversationRateLimitSuccess: ਰੇਟ ਸੀਮਾ ਸਫਲਤਾਪੂਰਵਕ ਨਿਰਧਾਰਤ ਕੀਤੀ ਗਈ.
+  wwctrlPlayerNotFound: ਪਲੇਅਰ %i ਜਾਂ ਤਾਂ ਨਹੀਂ ਮਿਲਿਆ, ਜਾਂ ਕੋਈ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨਹੀਂ ਹੈ।
+  wwcConfigConversationWatsonURLSuccess: ਵਾਟਸਨ URL ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwctbPlayerNotFound: ਪਲੇਅਰ %i ਜਾਂ ਤਾਂ ਨਹੀਂ ਮਿਲਿਆ, ਜਾਂ ਕੋਈ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨਹੀਂ ਹੈ।
+  wwcConfigGUIResponseLimitButton: ਬਦਲੋ ਅਨੁਵਾਦਕ ਜਵਾਬ ਟਾਈਮਆਉਟ
+  wwcConfigGUIPrefixButton: ਪਲੱਗਇਨ ਬਦਲੋ ਅਗੇਤਰ
+  wwctGUINewTranslationTarget: ਇੱਕ ਨਿਸ਼ਾਨਾ ਭਾਸ਼ਾ ਚੁਣੋ
+  wwcConfigConnectionSuccess: ਸਫਲਤਾਪੂਰਕ %o ਨਾਲ ਜੁੜਿਆ!
+  wwctGUIRateButton: ਸੈੱਟ ਦਰ ਸੀਮਾ
+  wwcConfigGUIGoogleTranslateButton: ਗੂਗਲ ਅਨੁਵਾਦ
+  wwcsIsActiveTranslator: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਹੈ: %i'
+  wwcConfigConversationPrefixInput: ਮੌਜੂਦਾ ਅਗੇਤਰ %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਨਵਾਂ ਟਾਈਪ ਕਰੋ,
+    ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ.
+  wwctInvalidInputLangCode: 'ਗਲਤ ਇੰਪੁੱਟ ਭਾਸ਼ਾ ਕੋਡ ਦਿੱਤਾ ਗਿਆ! ਵੈਧ ਲੰਬੇ ਕੋਡ: %o'
+  wwcConfigConversationbStatsSuccess: ਸਫਲਤਾਪੂਰਵਕ ਬੀਐਸਟੀਟਸ ਨੂੰ ਬਦਲ ਦਿੱਤਾ ਗਿਆ.
+  wwcSignDone: ਸਾਈਨ ਸਫਲਤਾਪੂਰਕ ਅਨੁਵਾਦ ਕੀਤਾ.
+  wwctrlNotATranslator: ਤੁਸੀਂ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨਹੀਂ ਹੋ! ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਤੁਸੀਂ
+    ਇਸ ਨੂੰ /wwc ਨਾਲ ਸੈਟ ਕੀਤਾ ਹੈ.
+  wwcConfigGUIChatSettings: ਚੈਟ ਸੰਰਚਨਾ
+  wwcConfigGUIWatsonURLButton: ਵਾਟਸਨ ਸਰਵਿਸ URL ਬਦਲੋ
+  wwcConfigConversationUpdateCheckerSuccess: ਅਪਡੇਟ ਚੈਕਰ ਦੇਰੀ ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ ਕੀਤੀ ਗਈ.
+  wwctrlRateLimitSetTarget: '%i ਤੋਂ %o ਸਕਿੰਟ ਦੀ ਦਰ ਸੀਮਾ ਨਿਰਧਾਰਤ ਕਰੋ.'
+  wwcConfigGUIMessagesOverrideCustomLabel: ਨਵਾਂ ਸੁਨੇਹਾ
+  wwcGUITempItem: ਆਈਟਮ ਡਿਸਪਲੇਅ
+  wwcConfigConversationConsoleTranslatorSuccess: ਯੂਜ਼ਰ %i ਸਫਲਤਾਪੂਰਕ %o ਯੋਗ ਹੈ।
+  wwcBookTranslationFail: ਆਪਣੇ ਟੀਚੇ ਦੀ ਕਿਤਾਬ ਵਿੱਚ ਇੱਕ ਜ ਹੋਰ ਸਫ਼ੇ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ
+    ਅਸਮਰੱਥ ਹੈ.
+  wwcConfigConversationGoogleTranslateAPIKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ
+    Google ਅਨੁਵਾਦ ਲਈ API ਕੁੰਜੀ ਇੰਪੁੱਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationRateLimitInput: ਅਨੁਵਾਦ ਪ੍ਰਤੀ ਮੌਜੂਦਾ ਗਲੋਬਲ ਦਰ ਸੀਮਾ %i ਸਕਿੰਟ
+    ਹੈ। ਇੱਕ ਨਵਾਂ ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਸੀਮਾ ਨੂੰ ਅਯੋਗ
+    ਕਰਨ ਲਈ 0 ਟਾਈਪ ਕਰੋ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google API ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ
+    ਸੈੱਟ ਕੀਤਾ ਅਨੁਵਾਦ ਕਰੋ।
+  wwcConfigConversationTranslatorSuccess: ਸਫਲਤਾਪੂਰਕ ਯੋਗ ਕੀਤਾ %i.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: ਐਮਾਜ਼ਾਨ ਗੁਪਤ ਕੁੰਜੀ ਬਦਲੋ
+  wwcInvalidTranslator: ਗਲਤ ਅਨੁਵਾਦਕ ਸੈਟਿੰਗ. ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਪਲੱਗਇਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਆਪਣੀ
+    config.yml ਜਾਂ /wwcc ਨਾਲ ਇਸ ਨੂੰ ਠੀਕ ਕਰੋ.
+  wwcConfigConversationWatsonAPIKeySuccess: ਵਾਟਸਨ API ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwcChatTranslationFail: ਆਪਣੇ ਸੁਨੇਹੇ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
+  wwcConfigCacheEnabled: ਅਨੁਵਾਦਕ ਕੈਚੇ ਨੂੰ ਯੋਗ ਕੀਤਾ ਗਿਆ ਹੈ ਅਤੇ %i ਦੀ ਸੀਮਾ ਤੱਕ ਸੈੱਟ
+    ਕੀਤਾ ਗਿਆ ਹੈ।
+  wwcConfigConversationOverrideDeletionSuccess: ਕਸਟਮ ਸੁਨੇਹਾ ਓਵਰਰਾਈਡ ਨੂੰ ਹਟਾ ਦਿੱਤਾ
+    ਗਿਆ ਹੈ.
+  wwctGUIChatButton: ਬਦਲੋ ਚੈਟ ਅਨੁਵਾਦ
+  wwcOnJoinTranslationNotificationNoSourceLang: ਤੁਹਾਡੇ ਕੋਲ %o ਲਈ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦ
+    ਸੈਸ਼ਨ ਹੈ।
+  wwcTranslatorError: ਤੁਹਾਡੇ ਅਨੁਵਾਦ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਸਮੇਂ ਇੱਕ ਸਮੱਸਿਆ ਆਈ. ਕਿਰਪਾ ਕਰਕੇ
+    ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.
+  wwcConfigConversationTranslatorFail: '%i ਯੋਗ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ।'
+  wwcUserDataReloaded: ਸਾਰੇ ਸੇਵ ਕੀਤੇ ਉਪਭੋਗਤਾ ਡੇਟਾ ਨੂੰ ਲੋਡ ਕੀਤਾ.
+  wwcteOffSender: ਸੰਸਥਾ ਦਾ ਅਨੁਵਾਦ ਅਯੋਗ ਹੈ।
+  wwcsLastTranslationTime: 'ਆਖਰੀ (ਸਫਲ) ਅਨੁਵਾਦ ਸਮਾਂ: %i'
+  wwctbNotATranslator: ਤੁਸੀਂ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨਹੀਂ ਹੋ! ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਤੁਸੀਂ
+    ਇਸ ਨੂੰ /wwc ਨਾਲ ਸੈਟ ਕੀਤਾ ਹੈ.
+  wwcItemTranslateLoreDone: ਅਨੁਵਾਦ ਕੀਤਾ ਇਕਾਈ ਨੂੰ ਸਫਲਤਾਪੂਰਕ lore.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: ਮੌਜੂਦਾ ਪਹੁੰਚ ਕੁੰਜੀ %i ਹੈ ਕਿਰਪਾ
+    ਕਰਕੇ ਐਮਾਜ਼ਾਨ ਲਈ ਐਕਸੈਸ ਕੁੰਜੀ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
+  wwctcOffTarget: ਚੈਟ ਅਨੁਵਾਦ %i ਲਈ ਅਯੋਗ ਹੈ।
+  wwcConfigConversationSyncUserDataDelayInput: ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਪ੍ਰਤੀ ਮੌਜੂਦਾ ਦੇਰੀ %i
+    ਸਕਿੰਟ ਹੈ। ਇੱਕ ਨਵਾਂ ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 10 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ
+    ਲਈ 10 ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ.
+  wwcgAutoTranslateStart: ਹੁਣ ਗਲੋਬਲ ਚੈਟ ਦਾ %o ਵਿੱਚ ਅਨੁਵਾਦ ਕਰ ਰਿਹਾ ਹੈ।
+  wwcConfigGUIAmazonTranslateAccessKeyButton: ਐਮਾਜ਼ਾਨ ਐਕਸੈਸ ਕੁੰਜੀ ਬਦਲੋ
+  wwcrFail: ਵਰਲਡਵਿਡਚੈਟ ਨੂੰ ਮੁੜ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ.
+  wwcSignTranslationFail: ਆਪਣੇ ਟੀਚੇ ਦਾ ਨਿਸ਼ਾਨ 'ਤੇ ਇੱਕ ਜ ਹੋਰ ਲਾਈਨ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ
+    ਅਸਮਰੱਥ ਹੈ.
+  wwcUpdaterFailedGeneric: WorldwideChat ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ.
+  wwcConfigGUIChatMessagesOverrideSettings: ਮੂਲ ਸੁਨੇਹੇ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰੋ
+  wwctGUIMainMenuGlobal: ਗਲੋਬਲ ਅਨੁਵਾਦ ਮੇਨੂ
+  wwcItemTranslateTitleDone: ਅਨੁਵਾਦ ਇਕਾਈ ਨੂੰ ਸਿਰਲੇਖ ਨੂੰ ਸਫਲਤਾਪੂਰਕ.
+  wwcConfigGUIWatsonButton: ਵਾਟਸਨ
+  wwcConfigConversationPluginUpdateChatSuccess: ਪਲੱਗਇਨ ਅੱਪਡੇਟ ਚੈਟ ਯਾਦ ਸਫਲਤਾਪੂਰਕ ਬਦਲ.
+  wwcsNotATranslator: '%i ਲਈ ਅਜੇ ਤੱਕ ਕੋਈ ਰਿਕਾਰਡ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।'
+  wwcConfigGUIbStatsButton: ਟੌਗਲ ਬੀਸਟੈਟਸ
+  wwctGUINewTranslationSource: ਇੱਕ ਸਰੋਤ ਭਾਸ਼ਾ ਚੁਣੋ
+  wwcConfigConversationConsoleTranslatorFail: ਯੂਜ਼ਰ %i %o ਯੋਗ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ।
+  wwctGUIMainMenuPlayer: '%i ਦਾ ਅਨੁਵਾਦ ਮੀਨੂੰ'
+  wwctGUIBookButton: ਟੌਗਲ ਕਿਤਾਬ ਅਨੁਵਾਦ
+  wwcConfigGUIDebugModeButton: ਡੀਬੱਗ ਮੋਡ ਬਦਲੋ
+  wwcConfigMessageCharLimitInvalid: config.yml ਵਿੱਚ ਸੈੱਟ ਪ੍ਰਤੀ ਸੁਨੇਹਾ ਅਵੈਧ ਸੀਮਾ। 255
+    ਰਿੱਛ ਨੂੰ ਮੂਲ...
+  wwcLangDetected: ਖੋਜਿਆ ਭਾਸ਼ਾ %o.
+  wwcConfigDisabledbStats: ਅਯੋਗ ਬੀਸਟੈਟਸ.
+  wwcInGameEntityTranslationFailCatastrophic: ਟੀਚੇ ਦਾ ਹਸਤੀ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
+  wwcConfigMessageCharLimitEnabled: ਅੱਖਰ ਸੀਮਾ ਪ੍ਰਤੀ ਸੁਨੇਹਾ %i ਅੱਖਰਾਂ ਲਈ ਸੈੱਟ ਕੀਤਾ
+    ਗਿਆ ਹੈ।
+  wwcConfigGUIMessagesAlreadyOverriden: ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਇਸ ਸੰਦੇਸ਼ ਲਈ ਇੱਕ ਓਵਰਰਾਈਡ
+    ਹੈ!
+  wwctGUIItemButton: ਬਦਲੋ ਆਈਟਮ ਅਨੁਵਾਦ
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ ਕੀਤਾ
+    ਜਾ ਰਿਹਾ ਹੈ, ਪਰ ਤੁਹਾਡੇ ਕੋਲ %i ਤੋਂ %o ਤੱਕ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਹੈ।
+  wwcConfigConversationCharacterLimitInput: ਮੌਜੂਦਾ ਅੱਖਰ ਸੀਮਾ ਪ੍ਰਤੀ ਸੁਨੇਹਾ %i ਅੱਖਰ
+    ਹੈ। ਇੱਕ ਨਵਾਂ ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0
+    ਤੋਂ ਘੱਟ ਜਾਂ ਇਸ ਦੇ ਬਰਾਬਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ.
+  wwctrlRateLimitBadInt: ਤੁਹਾਡੀ ਦਰ ਸੀਮਾ ਇੱਕ ਵੈਧ ਪੂਰਨ ਅੰਕ ਨਹੀਂ ਹੈ.
+  wwcConfigGUIChatMessagesOverrideChangeButton: ਮੌਜੂਦਾ ਪਾਠ ਬਦਲੋ
+  wwcConfigConversationAmazonTranslateSecretKeyInput: ਮੌਜੂਦਾ ਗੁਪਤ ਕੁੰਜੀ %i ਹੈ ਕਿਰਪਾ
+    ਕਰਕੇ ਐਮਾਜ਼ਾਨ ਲਈ ਇੱਕ ਗੁਪਤ ਕੁੰਜੀ ਇੰਪੁੱਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
+  wwctiOnTarget: ਆਈਟਮ ਅਨੁਵਾਦ %i ਲਈ ਯੋਗ ਹੈ।
+  wwctcOnSender: ਚੈਟ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਕੋਈ ਵੀ ਚੀਜ਼ ਤੁਹਾਨੂੰ ਕਹਿਣਾ ਅਨੁਵਾਦ ਕੀਤਾ ਜਾਵੇਗਾ!
+  wwcConfigGUIAmazonTranslateButton: Amazon ਅਨੁਵਾਦ
+  wwcConfigConversationLangSuccess: ਪਲੱਗਇਨ ਭਾਸ਼ਾ ਸਫਲਤਾਪੂਰਕ ਬਦਲ ਗਈ.
+  wwcConfigConversationTranslationCacheInput: ਮੌਜੂਦਾ ਅਨੁਵਾਦ ਕੈਚੇ ਸੀਮਾ %i ਵਾਕ ਹੈ। ਵੱਧ
+    ਕੁਝ ਵੀ ਟਾਈਪ 0 ਇੱਕ ਨਵ ਮੁੱਲ ਸੈੱਟ ਕਰਨ ਲਈ, ਜ ਟਾਈਪ 0 ਅਨੁਵਾਦ ਕੈਸ਼ ਨੂੰ ਆਯੋਗ ਕਰਨ ਲਈ. ਵਾਪਸ
+    ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ.
+  wwcConfigGUIChatMessagesModifyOverride: ਮੌਜੂਦਾ ਓਵਰਰਾਈਡ ਨੂੰ ਸੰਸ਼ੋਧਿਤ ਕਰੋ
+  wwcConfigConversationAmazonTranslateRegionSuccess: ਐਮਾਜ਼ਾਨ ਖੇਤਰ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ
+    ਕੀਤਾ.
+  wwcConfigRateLimitEnabled: ਗਲੋਬਲ ਰੇਟ ਸੀਮਾ ਯੋਗ ਹੈ ਅਤੇ %i ਸਕਿੰਟ ਤੱਕ ਸੈੱਟ ਕੀਤੀ ਗਈ ਹੈ।
+  wwcConfigGUIChatMessagesOverrideNewButton: ਇੱਕ ਨਵਾਂ ਓਵਰਰਾਈਡ ਸ਼ਾਮਲ ਕਰੋ
+  wwcUpdaterOutOfDate: ਵਰਲਡਵਿਡਚੈਟ ਤਾਰੀਖ ਤੋਂ ਬਾਹਰ ਹੈ. ਕਿਰਪਾ ਕਰਕੇ ਨਵੀਨਤਮ ਵਰਜਨ, %i ਲਈ
+    ਅੱਪਡੇਟ ਕਰੋ।
+  wwcTranslatorErrorConsole: ਉਪਭੋਗੀ ਨੂੰ %i ਆਪਣੇ ਅਨੁਵਾਦ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਸੀ, ਜਦਕਿ
+    ਇੱਕ ਸਮੱਸਿਆ ਆਈ ਹੈ। ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ ਕਿਰਪਾ ਕਰਕੇ errorLog.txt ਚੈੱਕ ਕਰੋ.
+  wwcConfigGUIChangesNotSaved: ਤੁਹਾਡੀਆਂ ਤਬਦੀਲੀਆਂ ਉਦੋਂ ਤੱਕ ਲਾਗੂ ਨਹੀਂ ਹੋਣਗੀਆਂ ਜਦੋਂ ਤੱਕ
+    ਤੁਸੀਂ /wwcc ਵਿੱਚ ਲਾਲ ਰੁਕਾਵਟ ਤੇ ਕਲਿਕ ਨਹੀਂ ਕਰਦੇ.
+  wwcBookTranslateTitleSuccess: 'ਅਨੁਵਾਦਿਤ ਕਿਤਾਬ ਦਾ ਸਿਰਲੇਖ: %i'
+  wwcConfigGUINextPageButton: ਅਗਲੇ ਸਫ਼ੇ
+  wwctbTranslatePageFail: (ਇਸ ਸਫ਼ੇ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਅਸਫਲ) %i
+  wwctiOnSender: ਆਈਟਮ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਇਸ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਆਪਣੇ ਮੁੱਖ ਹੱਥ ਵਿੱਚ ਇੱਕ ਆਈਟਮ
+    ਨਾਲ ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ!
+  wwctcOnTarget: ਚੈਟ ਅਨੁਵਾਦ %i ਲਈ ਯੋਗ ਹੈ।
+  wwcConfigGUIMessagesOverrideOriginalLabel: ਅਸਲੀ ਸੁਨੇਹਾ
+  wwcConfigGUISyncUserDataButton: ਬਦਲੋ ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਦੇਰੀ
+  wwctGUISourceTranslationSelected: ਤੁਸੀਂ ਇਸ ਭਾਸ਼ਾ ਦੀ ਚੋਣ ਕੀਤੀ ਹੈ.
+  wwcConfigGUIAmazonTranslateRegionButton: ਐਮਾਜ਼ਾਨ ਖੇਤਰ ਬਦਲੋ
+  wwcConfigConversationLangInvalid: ਗਲਤ ਭਾਸ਼ਾ ਕੋਡ!
+  wwcConfigGUIMessagesOverrideChatButton: ਮੂਲ ਪਲੱਗਇਨ ਸੁਨੇਹੇ ਨੂੰ ਅਣਡਿੱਠਾ
+  wwcConfigConversationErrorLimitInput: ਹਰੇਕ ਅਨੁਵਾਦਕ ਲਈ ਮੌਜੂਦਾ ਗਲਤੀ ਸੀਮਾ %i ਹੈ ਨਵਾਂ
+    ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਜਾਂ ਇਸ
+    ਦੇ ਬਰਾਬਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ।
+  wwcEnabled: ਸਮਰੱਥ ਵਰਲਡਵਿਡਚੈਟ ਵਰਜਨ %i.
+  wwcgLangToLangStart: ਹੁਣ %i ਤੋਂ %o ਤੱਕ ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ ਕਰ ਰਿਹਾ ਹੈ।
+  wwcUserDataCorrupted: ਲੱਭਿਆ ਹੈ ਅਤੇ ਚਲੇ ਗਏ %i ਨਿਕਾਰਾ ਹੋ ਜ ਪੁਰਾਣੇ ਯੂਜ਼ਰ ਡਾਟਾ ਫਾਇਲ.
+    ਉਨ੍ਹਾਂ ਨੂੰ ਅਗਲੇ ਮੁੜ ਲੋਡ ਤੇ ਮਿਟਾਇਆ ਜਾਵੇਗਾ.
+  wwcConfigGUIPluginUpdateChatButton: ਪਲੱਗਇਨ ਅੱਪਡੇਟ ਲਈ ਚੈਟ ਯਾਦ ਭੇਜੋ
+  wwcsTitle: '%i ਦਾ ਰਿਕਾਰਡ'
+  wwcConfigConversationResponseLimitSuccess: ਜਵਾਬ ਅੰਤਰਾਲ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwcConfigGUIErrorLimitButton: ਬਦਲੋ ਅਨੁਵਾਦਕ ਗਲਤੀ ਸੀਮਾ
+  wwcConfigConversationWatsonAPIKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਵਾਟਸਨ
+    ਲਈ ਇੱਕ API ਕੁੰਜੀ ਇੰਪੁੱਟ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ।
+  wwcgTranslationStopped: ਗਲੋਬਲ ਚੈਟ ਅਨੁਵਾਦ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ.
+  wwcConfigConversationCharacterLimitSuccess: ਅੱਖਰ ਸੀਮਾ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwctAutoTranslateStartOtherPlayer: '%i ਤੋਂ %o ਲਈ ਨਵਾਂ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
+  wwcItemTranslateTitleStock: ਮੂਲ ਇਕਾਈ ਨੂੰ ਨਾਮ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ.
+  wwcConfigConversationSyncUserDataDelaySuccess: ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਦੇਰੀ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ
+    ਕੀਤਾ.
+  wwcConfigConversationPrefixSuccess: ਅਗੇਤਰ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲ ਗਿਆ.
+  wwcSignDeletedOrTooLong: 'ਟੀਚੇ ਦਾ ਚਿੰਨ੍ਹ ਜਾਂ ਤਾਂ ਹਟਾਇਆ ਗਿਆ ਸੀ ਜਾਂ ਅਨੁਵਾਦ ਬਹੁਤ ਲੰਮਾ
+    ਸੀ. ਅਨੁਵਾਦ:'
+  wwcItemTranslateStart: ਟੀਚੇ ਦਾ ਆਈਟਮ ਅਨੁਵਾਦ...
+  wwcOnJoinTranslationNotificationSourceLang: ਤੁਹਾਡੇ ਕੋਲ %i ਤੋਂ %o ਤੱਕ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦ
+    ਸੈਸ਼ਨ ਹੈ।
+  wwcConfigEnabledDebugMode: ਯੋਗ ਡੀਬੱਗ ਮੋਡ. ਜੇ ਤੁਸੀਂ ਡਿਵੈਲਪਰ ਜਾਂ ਸਮੱਸਿਆ ਨਿਪਟਾਰੇ ਨਹੀਂ
+    ਹੋ, ਤਾਂ ਤੁਹਾਨੂੰ ਇਸ ਨੂੰ ਬੰਦ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ.
+  wwctsOnSender: ਸਾਈਨ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਇਸ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਸਾਈਨ 'ਤੇ ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ!
+  wwctGUIAutoDetectButton: ਆਟੋ-ਖੋਜ ਸਰੋਤ ਭਾਸ਼ਾ
+  wwcConfigConversationDebugModeSuccess: ਡੀਬੱਗ ਮੋਡ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲ ਦਿੱਤਾ ਗਿਆ ਹੈ।
+  wwcBookTranslateTitleFail: ਕਿਤਾਬ ਦੇ ਸਿਰਲੇਖ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: ਓਵਰਰਾਈਡ ਮਿਟਾਓ
+  wwcNoConsole: ਇਹ ਕਮਾਂਡ ਸਿਰਫ ਇੱਕ ਖਿਡਾਰੀ ਦੁਆਰਾ ਚਲਾਇਆ ਜਾ ਸਕਦਾ ਹੈ.
+  wwcInGameObjectTranslationFailCatastrophic: ਟੀਚੇ ਦਾ ਆਬਜੈਕਟ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
+  wwcConfigConversationTranslationCacheSuccess: ਅਨੁਵਾਦ ਕੈਸ਼ ਸੀਮਾ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ
+    ਕੀਤਾ.
+  wwctInvalidArgs: ਗਲਤ ਦਲੀਲਾਂ ਪ੍ਰਦਾਨ ਕੀਤੀਆਂ ਗਈਆਂ!
+  wwctCannotTranslateConsole: ਤੁਸੀਂ ਕੰਸੋਲ ਲਈ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਨਹੀਂ ਕਰ ਸਕਦੇ!
+  wwctSameLangError: 'ਤੁਸੀਂ ਉਸੇ ਭਾਸ਼ਾ ਵਿੱਚ ਅਨੁਵਾਦ ਨਹੀਂ ਕਰ ਸਕਦੇ! ਵੈਧ ਲੰਬੇ ਕੋਡ: %o'
+  wwctLangToLangStartOtherPlayer: '%i ਤੋਂ %e ਲਈ ਨਵਾਂ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
+  wwctcOffSender: ਚੈਟ ਅਨੁਵਾਦ ਅਯੋਗ.
+  wwcConfigGUICharacterLimitButton: ਸੁਨੇਹਾ ਅੱਖਰ ਸੀਮਾ ਬਦਲੋ
+  wwctLangToLangStart: '%i ਤੋਂ %o ਤੱਕ ਨਵਾਂ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
+  wwctGUISourceOrTargetTranslationAlreadyActive: ਇਹ ਭਾਸ਼ਾ ਪਹਿਲਾਂ ਹੀ ਸਰਗਰਮ ਹੈ!
+  wwcConfigGUIPreviousPageButton: ਪਿਛਲੇ ਸਫ਼ੇ
+  wwcConfigGUITranslatorCacheButton: ਅਨੁਵਾਦ ਕੈਸ਼ ਸੀਮਾ ਬਦਲੋ
+  wwcConfigInvalidPrefixSettings: ਆਪਣੇ ਅਗੇਤਰ ਨੂੰ ਪੜ੍ਹਨ ਵਿੱਚ ਅਸਫਲ. ਮੂਲ ਦਾ ਇਸਤੇਮਾਲ ਕਰਕੇ...
+  wwcConfigRateLimitInvalid: ਗਲਤ ਦਰ ਸੀਮਾ config.yml ਵਿੱਚ ਸੈੱਟ ਕੀਤੀ. 0 ਸਕਿੰਟ ਲਈ ਡਿਫਾਲਟ...
+  wwcSignTranslateStart: ਟੀਚੇ ਦਾ ਨਿਸ਼ਾਨ ਅਨੁਵਾਦ...
+  wwcteOffTarget: '%i ਲਈ ਇਕਾਈ ਦਾ ਅਨੁਵਾਦ ਆਯੋਗ ਹੈ।'
+  wwcUnsupportedVersion: 'ਤੁਸੀਂ ਬੁਕਿਟ, ਸਪਾਈਗੋਟ, ਜਾਂ ਪੇਪਰ ਦਾ ਇੱਕ ਅਸਮਰਥਿਤ ਸੰਸਕਰਣ ਚਲਾ
+    ਰਹੇ ਹੋ. ਸਹਾਇਕ ਵਰਜਨ:'
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ %i ਤੋਂ %o
+    ਤੱਕ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।
+  wwcConfigGUITranslatorSettings: ਅਨੁਵਾਦਕ ਸੰਰਚਨਾ
+  wwcExampleMessage: ਇਹ ਇੱਕ ਨਕਲੀ ਸੁਨੇਹਾ ਹੈ, ਅਤੇ ਇੱਕ ਉਦਾਹਰਣ ਦੇ ਤੌਰ ਤੇ overriden ਹੋਣ
+    ਦਾ ਮਤਲਬ ਹੈ.
+  wwcVersion: ਵਰਲਡਵਿਡਚੈਟ, ਸੰਸਕਰਣ
+  wwcServerReloadWarning: ਵਰਲਡਵਾਈਡਚੈਟ /ਰੀਲੋਡ/ਰੀਲੋਡ/ਦੀ ਵਰਤੋਂ ਨੂੰ ਰੱਦ ਨਹੀਂ ਕਰਦਾ. ਕਿਰਪਾ
+    ਕਰਕੇ ਸਾਵਧਾਨੀ ਨਾਲ ਅੱਗੇ ਵਧੋ.
+  wwcsAttemptedTranslations: 'ਕੋਸ਼ਿਸ਼ ਕੀਤੇ ਅਨੁਵਾਦ: %i'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ਐਮਾਜ਼ਾਨ ਗੁਪਤ ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ
+    ਸੈੱਟ ਕੀਤਾ.
+  wwctrlRateLimitSetSender: ਆਪਣੀ ਦਰ ਸੀਮਾ %i ਸਕਿੰਟ ਤੱਕ ਨਿਰਧਾਰਤ ਕਰੋ।
+  wwcRateLimit: ਤੁਹਾਡੇ ਅਨੁਵਾਦ ਦੀ ਦਰ ਸੀਮਿਤ ਹਨ. ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ %i ਸਕਿੰਟ ਉਡੀਕ ਕਰੋ.
+  wwctGUIExistingTranslationButton: ਮੌਜੂਦਾ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਨੂੰ ਓਵਰਰਾਈਟ ਕਰੋ
+  wwcConfigErrorLimitEnabled: ਅਨੁਵਾਦਕ ਗਲਤੀ ਸੀਮਾ %i ਤੱਕ ਸੈੱਟ ਕੀਤੀ ਗਈ ਹੈ।
+  wwcConfigConversationOverrideTextChangeSuccess: ਨਿਊ ਸੁਨੇਹੇ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwcConfigGUISendTranslationChatButton: ਲਾਗਇਨ 'ਤੇ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨੂੰ ਚੈਟ ਯਾਦ ਭੇਜੋ
+  wwcConfigSyncDelayInvalid: ਗਲਤ ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਦੇਰੀ config.yml ਵਿੱਚ ਸੈੱਟ ਕੀਤਾ. 7200
+    ਸਕਿੰਟ ਲਈ ਡਿਫਾਲਟ...
+  wwcConfigGUIToggleButton: '%i ਟੌਗਲ ਕਰੋ'
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ਐਮਾਜ਼ਾਨ ਪਹੁੰਚ ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ
+    ਸੈੱਟ ਕੀਤਾ.
+  wwcConfigBadUpdateDelay: ਗਲਤ ਅਪਡੇਟਰ ਦੇਰੀ config.yml ਵਿੱਚ ਸੈੱਟ ਕੀਤੀ. 86400 ਸਕਿੰਟ
+    ਲਈ ਡਿਫਾਲਟ...
