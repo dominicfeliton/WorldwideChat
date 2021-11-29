@@ -46,8 +46,6 @@ Messages:
   wwctGUISignButton: Toggle belgisi tarjimasi
   wwcUpdaterOutOfDate: WorldwideChat eskirgan. Iltimos, eng soʻnggi versiyasini yangilang,
     %i.
-  wwcConfigGUIChangesNotSaved: O'zgartirishlaringiz /wwcr ni ishga tushirmaguningizcha
-    yoki /wwcc-da qizil to'siqni bosmaguningizcha kuchga kirmasligi mumkin.
   wwcConfigGUINextPageButton: Keyingi sahifa
   wwctbTranslatePageFail: (Ushbu sahifani tarjima qilib boʻlmadi) %i
   wwcConfigInvalidTranslatorSettings: Tarjimon sozlamalari noto'g'ri! Iltimos, config.yml-da
@@ -323,3 +321,5 @@ Messages:
     bor.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat tarjima
     qilinmoqda, ammo sizda %o ga faol tarjima seansi mavjud.
+  wwcConfigGUIChangesNotSaved: /wwcc-da qizil to'siqni bosmaguningizcha o'zgarishlaringiz
+    kuchga kirmaydi.

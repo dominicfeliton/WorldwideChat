@@ -47,8 +47,6 @@ Messages:
   wwctGUISignButton: Chuyển đổi Đăng dịch
   wwcUpdaterOutOfDate: WorldwideChat đã lỗi thời. Vui lòng cập nhật lên phiên bản
     mới nhất, %i.
-  wwcConfigGUIChangesNotSaved: Thay đổi của bạn có thể không có hiệu lực cho đến khi
-    bạn chạy /wwcr, hoặc bấm vào rào cản màu đỏ trong /wwcc.
   wwcConfigGUINextPageButton: Trang tiếp theo
   wwctbTranslatePageFail: (Không dịch được trang này) %i
   wwcConfigInvalidTranslatorSettings: Cài đặt dịch giả không hợp lệ! Vui lòng kích
@@ -326,3 +324,5 @@ Messages:
     %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Trò chuyện toàn cầu
     đang được dịch, nhưng bạn có phiên dịch đang hoạt động đến %o.
+  wwcConfigGUIChangesNotSaved: Thay đổi của bạn sẽ không có hiệu lực cho đến khi bạn
+    nhấp vào hàng rào màu đỏ trong /wwcc.

@@ -45,8 +45,6 @@ Messages:
   wwctGUISignButton: Přepnout překlad znaků
   wwcUpdaterOutOfDate: WorldwideChat je zastaralý. Aktualizujte prosím na nejnovější
     verzi, %i.
-  wwcConfigGUIChangesNotSaved: Vaše změny se neprojeví, dokud nespustíte /wwcr, nebo
-    kliknete na červenou bariéru v /wwcc.
   wwcConfigGUINextPageButton: Další stránka
   wwctbTranslatePageFail: (Nepodařilo se přeložit tuto stránku) %i
   wwcConfigInvalidTranslatorSettings: Neplatná nastavení překladače! Povolte pouze
@@ -315,3 +313,5 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: Máte aktivní relaci překladu na %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globální chat je překládán,
     ale máte aktivní překladatelskou relaci na %o.
+  wwcConfigGUIChangesNotSaved: Vaše změny se projeví, dokud nekliknete na červenou
+    bariéru v /wwcc.

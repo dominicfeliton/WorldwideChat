@@ -40,8 +40,6 @@ Messages:
   wwcConfigGUILangButton: เปลี่ยนภาษาปลั๊กอิน
   wwctGUISignButton: สลับการแปล
   wwcUpdaterOutOfDate: WorldwideChat ล้าสมัยแล้วโปรดอัปเดตเป็นเวอร์ชันล่าสุด %i
-  wwcConfigGUIChangesNotSaved: การเปลี่ยนแปลงของคุณอาจไม่มีผลจนกว่าคุณจะเรียกใช้ /wwcr
-    หรือคลิกที่อุปสรรคสีแดงใน /wwccc
   wwcConfigGUINextPageButton: หน้าถัดไป
   wwctbTranslatePageFail: (ไม่สามารถแปลหน้านี้ได้) %i
   wwcConfigInvalidTranslatorSettings: การตั้งค่าตัวแปลไม่ถูกต้อง!โปรดเปิดใช้งานเพียงหนึ่งแปลใน
@@ -286,3 +284,5 @@ Messages:
     %o
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: การสนทนาทั่วโลกกำลังถูกแปล
     แต่คุณมีเซสชันการแปลที่ใช้งานอยู่เป็น %o
+  wwcConfigGUIChangesNotSaved: การเปลี่ยนแปลงของคุณจะไม่มีผลจนกว่าคุณจะคลิกที่อุปสรรคสีแดงใน
+    /wwcc.

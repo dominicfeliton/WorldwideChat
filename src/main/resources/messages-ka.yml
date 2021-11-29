@@ -46,8 +46,6 @@ Messages:
   wwctGUISignButton: ჟესტების თარგმანის გადართვა
   wwcUpdaterOutOfDate: WorldwideChat მოძველებულია. გთხოვთ განაახლოთ უახლესი ვერსია,
     %i.
-  wwcConfigGUIChangesNotSaved: თქვენი ცვლილებები შეიძლება არ ამოქმედდეს მანამ, სანამ
-    არ აწარმოებთ /wwcr, ან დააჭირეთ წითელ ბარიერს /wwcc.
   wwcConfigGUINextPageButton: შემდეგი გვერდი
   wwctbTranslatePageFail: (ამ გვერდის თარგმნა ვერ მოხერხდა) %i
   wwcConfigInvalidTranslatorSettings: არასწორი თარჯიმანი პარამეტრები! გთხოვთ, ჩართოთ
@@ -316,3 +314,5 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: თქვენ გაქვთ მთარგმნელობითი სესია %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: გლობალური სტატისტიკა
     თარგმნილია, მაგრამ თქვენ გაქვთ აქტიური თარგმანის სესია %o.
+  wwcConfigGUIChangesNotSaved: თქვენი ცვლილებები ძალაში არ შედის, სანამ არ დააჭერთ
+    წითელ ბარიერს /wwccc.- ში.

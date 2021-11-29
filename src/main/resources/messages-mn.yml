@@ -45,8 +45,6 @@ Messages:
   wwctGUISignButton: Түлхүүр гарын үсэг зурах орчуулга
   wwcUpdaterOutOfDate: Дэлхий даяарWedeChat хуучирсан байна. Хамгийн сүүлийн үеийн
     хувилбар руу шинэчлэнэ үү, %i.
-  wwcConfigGUIChangesNotSaved: Таны өөрчлөлтүүд /wwcr ажиллуулах эсвэл /wwcc дахь
-    улаан саад тотгорыг дарах хүртэл хүчин төгөлдөр болохгүй байж болох юм.
   wwcConfigGUINextPageButton: Дараагийн хуудас
   wwctbTranslatePageFail: (Энэ хуудсыг орчуулж чадаагүй) %i
   wwcConfigInvalidTranslatorSettings: Буруу орчуулагч тохиргоо! Өөрийн config.yml-д
@@ -323,3 +321,5 @@ Messages:
     байна.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобал чат орчуулагдаж
     байгаа боловч тад %o руу идэвхтэй орчуулгын сесс байна.
+  wwcConfigGUIChangesNotSaved: /wwcc дахь улаан саад тотгорыг дарах хүртэл таны өөрчлөлтүүд
+    хүчин төгөлдөр болохгүй.

@@ -30,7 +30,6 @@ public class TranslatorSettingsWatsonApiKeyConversation extends StringPrompt {
 		if (!input.equals("0")) {
 			main.getConfigManager().getMainConfig().set("Translator.watsonAPIKey", input);
 			main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", false);
-			main.getConfigManager().saveMainConfig(true);
 			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
 			final TextComponent successfulChange = Component.text()
 					.append(Component.text()

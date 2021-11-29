@@ -18,6 +18,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.JavaPluginLoader;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitWorker;
+import org.jetbrains.annotations.NotNull;
 
 import com.expl0itz.worldwidechat.commands.WWCConfiguration;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
@@ -48,7 +49,6 @@ import com.expl0itz.worldwidechat.util.PlayerRecord;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 
 import fr.minuskube.inv.InventoryManager;
-import io.reactivex.annotations.NonNull;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
@@ -190,7 +190,7 @@ public class WorldwideChat extends JavaPlugin {
 		CommonDefinitions.supportedPluginLangCodes = null;
 
 		// All done.
-		getLogger().info("Disabled WorldwideChat version " + pluginVersion + ".");
+		getLogger().info("Disabled WorldwideChat version " + pluginVersion + ". Goodbye!");
 	}
 
 	/* Get active async tasks */
@@ -264,6 +264,10 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/* Easy Reload Method */
+	public void reload() {
+		reload(null);
+	}
+	
 	public void reload(CommandSender inSender) {
 		/* Send start reload message */
 		if (inSender != null) {
@@ -308,10 +312,8 @@ public class WorldwideChat extends JavaPlugin {
 
 	/* Cancel Background Tasks */
 	public void cancelBackgroundTasks(boolean isReloading) {
-		if (!isReloading) {
-			// Close all inventories
-			CommonDefinitions.closeAllInventories();
-		}
+		// Close all inventories
+		if (!isReloading) CommonDefinitions.closeAllInventories();
 
 		// Cancel + remove all tasks
 		this.getServer().getScheduler().cancelTasks(this);
@@ -381,7 +383,7 @@ public class WorldwideChat extends JavaPlugin {
 		getLogger().warning(supportedVersions);
 	}
 
-	public @NonNull BukkitAudiences adventure() {
+	public @NotNull BukkitAudiences adventure() {
 		if (this.adventure == null) {
 			throw new IllegalStateException("Tried to access Adventure when the plugin was disabled!");
 		}

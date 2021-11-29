@@ -11,9 +11,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
+import org.bukkit.scheduler.BukkitRunnable;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import fr.minuskube.inv.InventoryManager;
+import fr.minuskube.inv.content.InventoryContents;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -69,5 +71,29 @@ public class WWCInventoryManager extends InventoryManager {
 		pageButton.setItemMeta(pageMeta);
 		return pageButton;
 	}
+	
+	public static ItemStack getSaveMainConfigButton() {
+		ItemStack quitButton = XMaterial.BARRIER.parseItem();
+		ItemMeta quitMeta = quitButton.getItemMeta();
+		quitMeta.setDisplayName(ChatColor.RED
+				+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
+		quitButton.setItemMeta(quitMeta);
+		return quitButton;
+	}
 
+	public static void saveMainConfigAndReload(Player player, InventoryContents content) {
+		WorldwideChat.getInstance().removePlayerUsingConfigurationGUI(player);
+		player.closeInventory();
+		new BukkitRunnable() {
+			@Override
+			public void run() {
+				// Save config sync/in the same thread because we are already in another thread thanks to Bukkit Scheduler
+				WorldwideChat.getInstance().getConfigManager().saveMainConfig(false);
+				
+				// Reload
+				WorldwideChat.getInstance().reload(player);
+			}
+		}.runTaskAsynchronously(WorldwideChat.getInstance());
+	}
+	
 }

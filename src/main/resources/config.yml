@@ -16,6 +16,7 @@ General:
   syncUserDataDelay: 7200
   enableDebugMode: false
 Chat:
+  sendFailedTranslationChat: true
   sendTranslationChat: true
   sendPluginUpdateChat: true
 Translator:

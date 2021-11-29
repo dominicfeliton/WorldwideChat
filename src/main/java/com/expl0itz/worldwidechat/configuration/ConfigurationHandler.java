@@ -54,6 +54,7 @@ public class ConfigurationHandler {
 		// Chat
 		mainConfig.addDefault("Chat.sendTranslationChat", true);
 		mainConfig.addDefault("Chat.sendPluginUpdateChat", true);
+		mainConfig.addDefault("Chat.sendFailedTranslationChat", true);
 
 		// Translator
 		mainConfig.addDefault("Translator.useWatsonTranslate", true);

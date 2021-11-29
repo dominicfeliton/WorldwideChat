@@ -45,8 +45,6 @@ Messages:
   wwcConfigGUILangButton: Vaihda liitännäisen kieli
   wwctGUISignButton: Vaihda allekirjoittaa käännös
   wwcUpdaterOutOfDate: WorldwideChat on vanhentunut. Päivitä uusimpaan versioon, %i.
-  wwcConfigGUIChangesNotSaved: Muutokset eivät ehkä tule voimaan ennen kuin suoritat
-    /wwcr tai napsautat punaista estettä /wwcc.
   wwcConfigGUINextPageButton: Seuraava sivu
   wwctbTranslatePageFail: (Tämän sivun kääntäminen epäonnistui) %i
   wwcConfigInvalidTranslatorSettings: Virheelliset kääntäjän asetukset! Ota käyttöön
@@ -315,3 +313,5 @@ Messages:
     kohteeseen %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globaali keskustelu
     käännetään, mutta sinulla on aktiivinen käännösistunto kohteeseen %o.
+  wwcConfigGUIChangesNotSaved: Muutokset tulevat voimaan vasta, kun napsautat punaista
+    estettä /wwcc.

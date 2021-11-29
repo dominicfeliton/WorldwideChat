@@ -42,8 +42,6 @@ Messages:
   wwctGUISignButton: החלפת סימן לתרגום
   wwcUpdaterOutOfDate: WorldwideChat הוא לא מעודכן. אנא עדכן לגרסה העדכנית ביותר,
     %i.
-  wwcConfigGUIChangesNotSaved: השינויים שלך לא ייכנסו לתוקף עד שתפעיל /wcr, או תלחץ
-    על המכשול האדום ב- /wwcc.
   wwcConfigGUINextPageButton: העמוד הבא
   wwctbTranslatePageFail: (נכשל בתרגם דף זה) %i
   wwcConfigInvalidTranslatorSettings: הגדרות מתרגם לא חוקיות! נא הפעל רק מתרגם אחד
@@ -288,3 +286,5 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: יש לך הפעלת תרגום פעילה אל %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: צ'אט גלובלי מתורגם,
     אבל יש לך הפעלת תרגום פעילה אל %o.
+  wwcConfigGUIChangesNotSaved: השינויים שלך לא ייכנסו לתוקף עד שתלחץ על המכשול האדום
+    ב- /wcc.

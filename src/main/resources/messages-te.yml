@@ -47,8 +47,6 @@ Messages:
   wwctGUISignButton: టోగుల్ సైన్ అనువాదం
   wwcUpdaterOutOfDate: ప్రపంచవ్యాప్తచాట్ తేదీ ముగిసింది. దయచేసి తాజా వర్షన్, %i కు
     నవీకరించండి.
-  wwcConfigGUIChangesNotSaved: మీరు గాని అమలు వరకు మీ మార్పులు అమలులోకి రాకపోవచ్చు
-    /wwcr, లేదా /wwccలో ఎరుపు అవరోధం క్లిక్ చేయండి.
   wwcConfigGUINextPageButton: తదుపరి పేజీ
   wwctbTranslatePageFail: (ఈ పేజీని అనువదించడంలో విఫలమైంది) %i
   wwcConfigInvalidTranslatorSettings: చెల్లని అనువాదకుడు సెట్టింగులు! దయచేసి మీ config.yml
@@ -314,3 +312,5 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: మీరు %o కు చురుకైన అనువాద సెషన్ ఉంది.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: గ్లోబల్ చాట్ అనువదించబడుతోంది,
     కాని మీరు %o కు చురుకైన అనువాద సెషన్ ఉంది.
+  wwcConfigGUIChangesNotSaved: మీరు/wwccలో ఎరుపు అవరోధం క్లిక్ వరకు మీ మార్పులు ప్రభావం
+    చూపవు.

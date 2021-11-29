@@ -47,8 +47,6 @@ Messages:
   wwctGUISignButton: Togol Terjemahan Tanda
   wwcUpdaterOutOfDate: WorldWidChat sudah lapuk. Sila kemaskini ke versi terkini,
     %i.
-  wwcConfigGUIChangesNotSaved: Perubahan Anda mungkin tidak berlaku sampai Anda menjalankan
-    /wwcr, atau klik pada penghalang merah di /wwcc.
   wwcConfigGUINextPageButton: Halaman Seterusnya
   wwctbTranslatePageFail: (Gagal menterjemahkan halaman ini) %i
   wwcConfigInvalidTranslatorSettings: Tetapan penterjemah tidak sah! Sila aktifkan
@@ -320,3 +318,5 @@ Messages:
     ke %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Sembang global sedang
     diterjemahkan, tetapi anda mempunyai sesi terjemahan aktif ke %o.
+  wwcConfigGUIChangesNotSaved: Perubahan anda tidak akan berkuat kuasa sehingga anda
+    klik pada halangan merah di /wwcc.

@@ -47,8 +47,6 @@ Messages:
   wwctGUISignButton: Preklapljanje znakovnih prevodov
   wwcUpdaterOutOfDate: WorldwideChat je zastarel. Prosimo, posodobite na najnovejšo
     različico, %i.
-  wwcConfigGUIChangesNotSaved: Vaše spremembe morda ne bodo začele veljati, dokler
-    ne zaženete /wwcr ali kliknete na rdečo pregrado v /wwcc.
   wwcConfigGUINextPageButton: Naslednja stran
   wwctbTranslatePageFail: (Te strani ni bilo mogoče prevesti) %i
   wwcConfigInvalidTranslatorSettings: Neveljavne nastavitve prevajalca! Prosimo, omogočite
@@ -321,3 +319,5 @@ Messages:
     %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globalni klepet se prevaja,
     vendar imate aktivno prevajanje na %o.
+  wwcConfigGUIChangesNotSaved: Vaše spremembe ne bodo začele veljati, dokler ne boste
+    kliknili na rdečo pregrado v /wwcc.

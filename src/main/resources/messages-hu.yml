@@ -46,8 +46,6 @@ Messages:
   wwcConfigGUILangButton: Plugin nyelv módosítása
   wwctGUISignButton: Jelfordítás be- és bekapcsolása
   wwcUpdaterOutOfDate: 'A WorldwideChat elavult. Frissítsen a legújabb verzióra: %i.'
-  wwcConfigGUIChangesNotSaved: Előfordulhat, hogy a módosítások addig nem lépnek életbe,
-    amíg nem futtatod a /wwcr parancsot, vagy kattints a piros korlátra a /wwcc-ban.
   wwcConfigGUINextPageButton: Következő oldal
   wwctbTranslatePageFail: (Nem sikerült lefordítani ezt az oldalt) %i
   wwcConfigInvalidTranslatorSettings: Érvénytelen fordítói beállítások! Kérjük, csak
@@ -324,3 +322,5 @@ Messages:
     %o.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: A globális csevegés
     lefordítása folyamatban van, de aktív fordítási munkamenete van a %o.
+  wwcConfigGUIChangesNotSaved: A módosítások addig nem lépnek életbe, amíg nem kattint
+    a /wwcc-ban található piros korlátra.

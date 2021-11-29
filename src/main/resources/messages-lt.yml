@@ -46,8 +46,6 @@ Messages:
   wwctGUISignButton: Perjungti gestų vertimą
   wwcUpdaterOutOfDate: WorldwideChat yra pavėlęs. Atnaujinkite į naujausią versiją,
     %i.
-  wwcConfigGUIChangesNotSaved: Jūsų pakeitimai gali neįsigalioti tol, kol paleisite
-    /wwcr arba spustelėsite raudoną barjerą /wwcc.
   wwcConfigGUINextPageButton: Sekantis puslapis
   wwctbTranslatePageFail: (Nepavyko išversti šio puslapio) %i
   wwcConfigInvalidTranslatorSettings: Neteisingas vertėjo nustatymai! Prašome įjungti
@@ -316,3 +314,5 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: Turite aktyvų vertimo seansą %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat yra išverstas,
     bet jūs turite aktyvų vertimo seansą %o.
+  wwcConfigGUIChangesNotSaved: Jūsų pakeitimai neįsigalios tol, kol spustelėsite raudoną
+    barjerą /wwcc.

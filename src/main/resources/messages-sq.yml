@@ -48,8 +48,6 @@ Messages:
   wwctGUISignButton: Toggle Shenja Përkthimi
   wwcUpdaterOutOfDate: WorldwideChat është i vjetëruar. Ju lutemi përditësoni versionin
     më të fundit, %i.
-  wwcConfigGUIChangesNotSaved: Ndryshimet tuaja mund të mos hyjnë në fuqi derisa të
-    ekzekutoni /wwcr, ose klikoni mbi barrierën e kuqe në /wwcc.
   wwcConfigGUINextPageButton: Faqja Tjetër
   wwctbTranslatePageFail: (Dështoi në përkthimin e kësaj faqeje) %i
   wwcConfigInvalidTranslatorSettings: Cilësimet e pavlefshme të përkthyesit Ju lutemi
@@ -335,3 +333,5 @@ Messages:
     në %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Biseda globale po përkthehet,
     por ju keni një sesion aktiv përkthimi në %o.
+  wwcConfigGUIChangesNotSaved: Ndryshimet tuaja nuk do të hyjnë në fuqi derisa të
+    klikoni mbi pengesën e kuqe në /wwcc.

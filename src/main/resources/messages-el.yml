@@ -48,8 +48,6 @@ Messages:
   wwctGUISignButton: Εναλλαγή Μετάφρασης Υπογραφών
   wwcUpdaterOutOfDate: Το WorldwideChat είναι ξεπερμένο. Ενημερώστε την τελευταία
     έκδοση, %i.
-  wwcConfigGUIChangesNotSaved: Οι αλλαγές σας ενδέχεται να μην τεθούν σε ισχύ μέχρι
-    να εκτελέσετε /wwcr, ή να κάνετε κλικ στο κόκκινο φράγμα στο /wwcc.
   wwcConfigGUINextPageButton: Επόμενη Σελίδα
   wwctbTranslatePageFail: (Αποτυχία μετάφρασης αυτής της σελίδας) %i
   wwcConfigInvalidTranslatorSettings: Μη έγκυρες ρυθμίσεις μεταφραστή! Παρακαλώ ενεργοποιήστε
@@ -343,3 +341,5 @@ Messages:
     σε %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Η καθολική συνομιλία
     μεταφράζεται, αλλά έχετε μια ενεργή συνεδρία μετάφρασης σε %o.
+  wwcConfigGUIChangesNotSaved: Οι αλλαγές σας δεν θα τεθούν σε ισχύ μέχρι να κάνετε
+    κλικ στο κόκκινο φράγμα στο /wwcc.

@@ -45,8 +45,6 @@ Messages:
   wwcConfigGUILangButton: Изменить язык плагина
   wwctGUISignButton: Переключить перевод знака
   wwcUpdaterOutOfDate: WorldwideChat устарел. Обновите до последней версии %i.
-  wwcConfigGUIChangesNotSaved: Изменения могут не вступить в силу до тех пор, пока
-    вы не запустите /wwcr или не нажмете на красный барьер в /wwcc.
   wwcConfigGUINextPageButton: Следующая страница
   wwctbTranslatePageFail: (Не удалось перевести эту страницу) %i
   wwcConfigInvalidTranslatorSettings: Недопустимые настройки переводчика! Пожалуйста,
@@ -329,3 +327,5 @@ Messages:
     на %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобальный чат переводится,
     но у вас есть активный сеанс перевода на %o.
+  wwcConfigGUIChangesNotSaved: Ваши изменения не вступят в силу, пока вы не нажмете
+    на красный барьер в /wwcc.

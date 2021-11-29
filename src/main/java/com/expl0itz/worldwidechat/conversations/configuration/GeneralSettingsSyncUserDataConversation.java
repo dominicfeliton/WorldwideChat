@@ -37,7 +37,6 @@ public class GeneralSettingsSyncUserDataConversation extends NumericPrompt {
 							.color(NamedTextColor.GREEN))
 					.build();
 			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-			main.getConfigManager().saveMainConfig(true);
 		}
 		/* Re-open ConfigurationInventoryGUI */
 		ConfigurationGeneralSettingsGUI.generalSettings.open((Player) context.getForWhom());

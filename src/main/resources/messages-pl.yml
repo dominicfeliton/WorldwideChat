@@ -45,8 +45,6 @@ Messages:
   wwctGUISignButton: Przełącz tłumaczenie podpisu
   wwcUpdaterOutOfDate: WorldwideChat jest nieaktualne. Zaktualizuj do najnowszej wersji,
     %i.
-  wwcConfigGUIChangesNotSaved: Zmiany mogą nie zostać wprowadzone do momentu uruchomienia
-    /wwcr lub kliknięcia czerwonej bariery w /wwcc.
   wwcConfigGUINextPageButton: Następna strona
   wwctbTranslatePageFail: (Przetłumaczenie tej strony nie powiodło się) %i
   wwcConfigInvalidTranslatorSettings: Nieprawidłowe ustawienia tłumacza! Proszę włączyć
@@ -322,3 +320,5 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: Masz aktywną sesję tłumaczenia %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globalny czat jest tłumaczony,
     ale masz aktywną sesję tłumaczeniową do %o.
+  wwcConfigGUIChangesNotSaved: Zmiany nie wejdą w życie, dopóki nie klikniesz czerwoną
+    barierę w /wwcc.

@@ -46,8 +46,6 @@ Messages:
   wwctGUISignButton: साइन अनुवाद टॉगल करें
   wwcUpdaterOutOfDate: वर्ल्डवाइडचैट पुराना है। कृपया नवीनतम संस्करण, %i में अद्यतन
     करें।
-  wwcConfigGUIChangesNotSaved: आपके परिवर्तन तब तक प्रभावी नहीं हो सकते जब तक कि आप
-    या तो चलाएं/wwcc में लाल बाधा पर क्लिक न करें।
   wwcConfigGUINextPageButton: अगला पृष्ठ
   wwctbTranslatePageFail: (इस पृष्ठ का अनुवाद करने में विफल) %i
   wwcConfigInvalidTranslatorSettings: अवैध अनुवादक सेटिंग्स! कृपया अपने config.yml
@@ -327,3 +325,5 @@ Messages:
     है।
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ग्लोबल चैट का अनुवाद
     किया जा रहा है, लेकिन आपके पास %o में एक सक्रिय अनुवाद सत्र है।
+  wwcConfigGUIChangesNotSaved: जब तक आप /wwcc में लाल बाधा पर क्लिक नहीं करते हैं,
+    तब तक आपके परिवर्तन प्रभावी नहीं होंगे।

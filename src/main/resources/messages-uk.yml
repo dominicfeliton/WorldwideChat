@@ -47,8 +47,6 @@ Messages:
   wwctGUISignButton: Увімкнути або вимкнути переклад підпису
   wwcUpdaterOutOfDate: WorldwideChat застаріла. Будь ласка, оновіть до останньої версії,
     %i.
-  wwcConfigGUIChangesNotSaved: Ваші зміни можуть не набути чинності, доки ви не запустите
-    /wwcr, або не натиснете на червоний бар'єр в /wwc.
   wwcConfigGUINextPageButton: Наступна сторінка
   wwctbTranslatePageFail: (Не вдалося перекласти цю сторінку) %i
   wwcConfigInvalidTranslatorSettings: Некоректні налаштування перекладача! Будь ласка,
@@ -321,3 +319,5 @@ Messages:
     %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобальний чат наразі
     перекладається, але у вас є активний сеанс перекладу до %o.
+  wwcConfigGUIChangesNotSaved: Ваші зміни не набудуть чинності до тих пір, поки ви
+    не натиснете на червоний бар'єр в /wwc.

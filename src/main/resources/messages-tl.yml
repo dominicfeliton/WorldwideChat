@@ -49,8 +49,6 @@ Messages:
   wwctGUISignButton: I-toggle ang Sign Translation
   wwcUpdaterOutOfDate: Ang WorldwideChat ay wala na sa petsa. Paki-update sa pinakabagong
     bersiyon, %i.
-  wwcConfigGUIChangesNotSaved: Maaaring hindi magkabisa ang iyong mga pagbabago hanggang
-    sa patakbuhin mo ang /wwcr, o mag-click sa pulang hadlang sa /wwcc.
   wwcConfigGUINextPageButton: Susunod na Pahina
   wwctbTranslatePageFail: (Nabigong isalin ang pahinang ito) %i
   wwcConfigInvalidTranslatorSettings: Di-wastong mga setting ng tagasalin! Mangyaring
@@ -351,3 +349,5 @@ Messages:
     sa %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Isinasalin ang pandaigdigang
     chat, ngunit mayroon kang aktibong sesyon ng pagsasalin sa %o.
+  wwcConfigGUIChangesNotSaved: Ang iyong mga pagbabago ay hindi magkakabisa hanggang
+    sa mag-click ka sa pulang hadlang sa /wwcc.

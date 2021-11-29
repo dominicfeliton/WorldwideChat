@@ -37,7 +37,6 @@ public class TranslatorSettingsAmazonTranslateRegionConversation extends StringP
 							.color(NamedTextColor.GREEN))
 					.build();
 			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-			main.getConfigManager().saveMainConfig(true);
 		}
 		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Amazon Translate")
 				.open((Player) context.getForWhom());

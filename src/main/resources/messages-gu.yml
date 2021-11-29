@@ -45,8 +45,6 @@ Messages:
   wwctGUISignButton: ટૉગલ સાઇન અનુવાદ
   wwcUpdaterOutOfDate: વર્લ્ડવાઇડચેટ આઉટ ઓફ ડેટ છે. મહેરબાની કરીને નવીનતમ સંસ્કરણ
     પર અપડેટ કરો, %i.
-  wwcConfigGUIChangesNotSaved: જ્યાં સુધી તમે કાં તો /wwcr ચલાવો, અથવા /wwccr માં
-    લાલ અવરોધ પર ક્લિક ન કરો ત્યાં સુધી તમારા ફેરફારો અસર કરી શકશે નહીં.
   wwcConfigGUINextPageButton: આગલું પૃષ્ઠ
   wwctbTranslatePageFail: (આ પાનું અનુવાદિત કરવામાં નિષ્ફળ) %i
   wwcConfigInvalidTranslatorSettings: અમાન્ય અનુવાદક સેટિંગ્સ! કૃપા કરીને તમારા config.yml
@@ -317,3 +315,5 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: તમારા %o નું સક્રિય અનુવાદ સત્ર છે.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: વૈશ્વિક ચેટનું ભાષાંતર
     થઈ રહ્યું છે, પરંતુ તમારા %o નું સક્રિય અનુવાદ સત્ર છે.
+  wwcConfigGUIChangesNotSaved: જ્યાં સુધી તમે /wwccમાં લાલ અવરોધ પર ક્લિક ન કરો ત્યાં
+    સુધી તમારા ફેરફારો પ્રભાવિત થશે નહીં.

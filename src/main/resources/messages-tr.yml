@@ -44,8 +44,6 @@ Messages:
   wwcConfigGUILangButton: Eklenti Dili Değiştir
   wwctGUISignButton: İmzala Tercümesi
   wwcUpdaterOutOfDate: WorldwideChat güncel değil. Lütfen %i en son sürüme güncelleyin.
-  wwcConfigGUIChangesNotSaved: Değişiklikleriniz, /wwcr çalıştırıncaya veya /wwcc'deki
-    kırmızı bariyeri tıklayana kadar geçerli olmayabilir.
   wwcConfigGUINextPageButton: Sonraki Sayfa
   wwctbTranslatePageFail: (Bu sayfa çevrilemedi) %i
   wwcConfigInvalidTranslatorSettings: Geçersiz çevirmen ayarları! Lütfen config.yml'nizde
@@ -307,3 +305,5 @@ Messages:
     var.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Küresel sohbet çevriliyor,
     ancak %o konumuna etkin bir çeviri oturumunuz var.
+  wwcConfigGUIChangesNotSaved: Değişiklikleriniz siz /wwcc'deki kırmızı bariyere tıklayana
+    kadar etkili olmayacaktır.

@@ -47,8 +47,6 @@ Messages:
   wwctGUISignButton: Commuta la traducció de signes
   wwcUpdaterOutOfDate: WorldwideChat està fora de data. Si us plau, actualitzeu a
     l'última versió, %i.
-  wwcConfigGUIChangesNotSaved: És possible que els vostres canvis no tinguin efecte
-    fins que executeu /wwcr, o feu clic a la barrera vermella de /wwcc.
   wwcConfigGUINextPageButton: Pàgina següent
   wwctbTranslatePageFail: (No s'ha pogut traduir aquesta pàgina) %i
   wwcConfigInvalidTranslatorSettings: Configuració del traductor no vàlid! Si us plau,
@@ -331,3 +329,5 @@ Messages:
     a %o.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: El xat global s'està
     traduint, però teniu una sessió de traducció activa a %o.
+  wwcConfigGUIChangesNotSaved: Els canvis no entraran en vigor fins que feu clic a
+    la barrera vermella de /wwcc.
