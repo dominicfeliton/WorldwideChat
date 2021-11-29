@@ -249,7 +249,8 @@
                             <include>joda-time:*</include>
                             <include>fr.minuskube.inv:smart-invs</include>
                             <include>org.apache.maven:maven-artifact</include>
-                            <include>com.github.cryptomorin:XSeries</include>
+                            <!-- <include>com.github.cryptomorin:XSeries</include> -->
+                            <include>com.github.CryptoMorin:XSeries</include>
                         </includes>
                     </artifactSet>
                     <filters>

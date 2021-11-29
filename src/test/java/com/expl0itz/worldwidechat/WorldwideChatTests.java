@@ -25,6 +25,9 @@ public class WorldwideChatTests {
 
 	private static int testCount = 0;
 
+	// DISABLED AS OF 1.18
+	// WILL BE RE-ENABLED WHEN MOCKBUKKIT GETS UPDATED.
+	
 	/* Init all test classes */
 	TestPlayerCommands testPlayerCommands = new TestPlayerCommands(server, plugin, playerMock, secondPlayerMock);
 	TestConsoleCommands testConsoleCommands = new TestConsoleCommands(server, plugin, playerMock, secondPlayerMock);
