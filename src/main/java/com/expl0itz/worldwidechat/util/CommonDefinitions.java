@@ -441,7 +441,7 @@ public class CommonDefinitions {
 					WorldwideChat.getInstance().getConfigManager().getMainConfig().set("Translator.useAmazonTranslate",
 							false);
 					WorldwideChat.getInstance().getConfigManager().saveMainConfig(false);
-					WorldwideChat.getInstance().reload(null);
+					WorldwideChat.getInstance().reload();
 				}
 			} catch (Exception e1) {
 				// If we got here, the plugin is most likely disabling.

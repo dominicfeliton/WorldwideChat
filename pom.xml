@@ -17,7 +17,7 @@
         <dependency>
            <groupId>org.spigotmc</groupId>
            <artifactId>spigot-api</artifactId>
-           <version>1.17.1-R0.1-SNAPSHOT</version>
+           <version>1.18-rc3-R0.1-SNAPSHOT</version>
            <scope>provided</scope>
         </dependency>
         <dependency>
@@ -133,10 +133,10 @@
             <version>2.6</version>
         </dependency>
         <dependency>
-            <groupId>com.github.cryptomorin</groupId>
-            <artifactId>XSeries</artifactId>
-            <version>8.4.0</version>
-        </dependency>
+	        <groupId>com.github.CryptoMorin</groupId>
+	        <artifactId>XSeries</artifactId>
+	        <version>1e513da186</version>
+	    </dependency>
         <dependency>
             <groupId>com.expl0itz.stripped.deluxechat</groupId>
             <artifactId>stripped-deluxechat</artifactId>
@@ -147,6 +147,10 @@
 
   <repositories>
       <!-- This adds the Spigot Maven repository to the build -->
+        <repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>

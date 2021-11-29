@@ -14,7 +14,6 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import org.bukkit.scheduler.BukkitRunnable;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.InventoryManager;
 import fr.minuskube.inv.content.InventoryContents;
 import net.kyori.adventure.text.Component;
