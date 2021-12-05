@@ -15,7 +15,6 @@ Messages:
   wwcUnsupportedVersion: 'You are running an unsupported version of Bukkit, Spigot, or Paper. Supported versions:'
   wwcInitializationFail: 'Failed to initialize WorldwideChat.'
   wwcUserDataReloaded: 'Loaded all saved user data.'
-  wwcUserDataCorrupted: 'Found and moved %i corrupted or old user data files. They will be deleted on the next reload.'
   wwcRateLimit: 'Your translations are rate limited. Please wait another %i seconds.'
   wwcCharLimit: 'Your message is too long! Please make sure your message is less than %i characters in length.'
   wwcInvalidTranslator: 'Invalid translator settings. Please fix this in your config.yml or with /wwcc to use this plugin.'

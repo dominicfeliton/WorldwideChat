@@ -2,6 +2,9 @@ package com.expl0itz.worldwidechat.configuration;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.UnsupportedEncodingException;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -43,34 +46,12 @@ public class ConfigurationHandler {
 		mainConfig = YamlConfiguration.loadConfiguration(configFile);
 
 		/* Add default options, if they do not exist */
-		// General
-		mainConfig.addDefault("General.prefixName", "WWC");
-		mainConfig.addDefault("General.enablebStats", true);
-		mainConfig.addDefault("General.pluginLang", "en");
-		mainConfig.addDefault("General.updateCheckerDelay", 86400);
-		mainConfig.addDefault("General.syncUserDataDelay", 7200);
-		mainConfig.addDefault("General.enableDebugMode", false);
-
-		// Chat
-		mainConfig.addDefault("Chat.sendTranslationChat", true);
-		mainConfig.addDefault("Chat.sendPluginUpdateChat", true);
-		mainConfig.addDefault("Chat.sendFailedTranslationChat", true);
-
-		// Translator
-		mainConfig.addDefault("Translator.useWatsonTranslate", true);
-		mainConfig.addDefault("Translator.watsonAPIKey", "");
-		mainConfig.addDefault("Translator.watsonURL", "");
-		mainConfig.addDefault("Translator.useGoogleTranslate", false);
-		mainConfig.addDefault("Translator.googleTranslateAPIKey", "");
-		mainConfig.addDefault("Translator.useAmazonTranslate", false);
-		mainConfig.addDefault("Translator.amazonAccessKey", "");
-		mainConfig.addDefault("Translator.amazonSecretKey", "");
-		mainConfig.addDefault("Translator.amazonRegion", "");
-		mainConfig.addDefault("Translator.translatorCacheSize", 100);
-		mainConfig.addDefault("Translator.rateLimit", 0);
-		mainConfig.addDefault("Translator.messageCharLimit", 255);
-		mainConfig.addDefault("Translator.errorLimit", 5);
-		mainConfig.addDefault("Translator.maxResponseTime", 7);
+		try {
+			Reader mainConfigStream = new InputStreamReader(main.getResource("config.yml"), "UTF-8");
+			mainConfig.setDefaults(YamlConfiguration.loadConfiguration(mainConfigStream));
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 
 		mainConfig.options().copyDefaults(true);
 		saveMainConfig(false);
