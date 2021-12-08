@@ -179,7 +179,6 @@ Messages:
   wwcConfigConversationAmazonTranslateAccessKeyInput: Is é an eochair rochtana atá
     ann faoi láthair %i. Cuir ionchur eochair rochtana do Amazon, nó cineál 0 chun
     dul ar ais.
-  wwctcOffTarget: Aistriúchán Comhrá faoi mhíchumas ar feadh %i.
   wwcConfigConversationSyncUserDataDelayInput: Is é an mhoill atá ann faoi láthair
     in aghaidh info na sonraí úsáideora %i soicind. Cineál rud ar bith níos mó ná
     10 a shocrú le luach nua, nó rud ar bith níos lú ná 10 chun dul ar ais.
@@ -224,7 +223,6 @@ Messages:
     faoi láthair %i. Cuir ionchur eochair rúnda do Amazon, nó cineál 0 chun dul ar
     ais.
   wwctiOnTarget: Aistriúchán Mír cumasaithe ar feadh %i.
-  wwctcOnSender: Aistriúchán Comhrá cumasaithe. Aistreofar aon rud a deir tú!
   wwcConfigGUIAmazonTranslateButton: Aistrigh Amazon
   wwcConfigConversationLangSuccess: D'athraigh teanga an bhreiseáin go rathúil.
   wwcConfigConversationTranslationCacheInput: Is é an teorainn taisce aistriúcháin
@@ -247,7 +245,6 @@ Messages:
   wwctbTranslatePageFail: (Theip ar aistriú an leathanach seo) %i
   wwctiOnSender: aistriúchán Mír cumasaithe. Right-click le mír i do lámh is mó a
     aistriú é!
-  wwctcOnTarget: Aistriúchán Comhrá cumasaithe le h %i.
   wwcConfigGUIMessagesOverrideOriginalLabel: Teachtaireacht Bunaidh
   wwcConfigGUISyncUserDataButton: Athraigh Úsáideoir Sonraí Sync Moill
   wwctGUISourceTranslationSelected: Roghnaigh tú an teanga seo.
@@ -299,7 +296,6 @@ Messages:
     %o'
   wwctLangToLangStartOtherPlayer: Seisiún aistriúcháin nua a thosú le haghaidh %o
     ó %i go %e.
-  wwctcOffSender: Aistriúchán Comhrá faoi mhíchumas.
   wwcConfigGUICharacterLimitButton: Athraigh Teorainn Carachtair Teachtaireacht
   wwctLangToLangStart: Seisiún aistriúcháin nua a thosú ó %i go %o.
   wwctGUISourceOrTargetTranslationAlreadyActive: Tá an teanga seo gníomhach cheana
@@ -343,3 +339,15 @@ Messages:
     aistriúcháin toggled go rathúil.
   wwcConfigGUISendFailedTranslationChatButton: Seol Teachtaireacht Comhrá ar Aistriúchán
     Theip
+  wwctciOffSender: Aistriúchán comhrá Isteach faoi mhíchumas.
+  wwctGUIChatIncomingButton: Aistriúchán Comhrá Isteach
+  wwctcoOffSender: Aistriúchán comhrá amach faoi mhíchumas.
+  wwctcoOnSender: Aistriúchán comhrá amach cumasaithe. Aistreofar aon rud a deir tú!
+  wwctciOnSender: Aistriúchán comhrá Isteach cumasaithe. Aistreofar aon rud a fhaigheann
+    tú!
+  wwctGUIChatMenu: Toggle Comhrá Aistriúchán Menu
+  wwctcoOnTarget: Aistriúchán comhrá amach ar chumas ar %i.
+  wwctcoOffTarget: Aistriúchán comhrá amach faoi mhíchumas ar feadh %i.
+  wwctGUIChatOutgoingButton: Aistriúchán Comhrá Amach
+  wwctciOnTarget: Aistriúchán comhrá Isteach ar chumas ar %i.
+  wwctciOffTarget: Aistriúchán comhrá Isteach faoi mhíchumas ar feadh %i.

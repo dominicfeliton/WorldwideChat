@@ -284,11 +284,7 @@ Messages:
   wwctrlRateLimitBadInt: Din satsgrense er ikke et gyldig heltall.
   wwcTranslatorErrorConsole: Det oppstod et problem mens brukeren %i forsøkte oversettelsen.
     Se errorLog.txt hvis du vil ha mer informasjon.
-  wwctcOffSender: Chat oversettelse deaktivert.
-  wwctcOnTarget: Chat oversettelse aktivert for %i.
-  wwctcOnSender: Chat oversettelse aktivert. Alt du sier vil bli oversatt!
   wwctGUIChatButton: Veksle Chat Oversettelse
-  wwctcOffTarget: Chat oversettelse deaktivert for %i.
   wwcrBegin: Omlasting WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Oversettelsesøkt for %i er stoppet.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat blir oversatt,
@@ -311,3 +307,14 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: Mislykket oversettelse chat-melding
     ble slått vellykket.
   wwcConfigGUISendFailedTranslationChatButton: Send chat-melding om mislykket oversettelse
+  wwctciOffSender: Innkommende chat oversettelse deaktivert.
+  wwctGUIChatIncomingButton: Veksle Innkommende Chat Oversettelse
+  wwctcoOffSender: Utgående chat oversettelse deaktivert.
+  wwctcoOnSender: Utgående chat oversettelse aktivert. Alt du sier vil bli oversatt!
+  wwctciOnSender: Innkommende chat oversettelse aktivert. Alt du mottar vil bli oversatt!
+  wwctGUIChatMenu: Veksle Chat Oversettelse Meny
+  wwctcoOnTarget: Utgående chat oversettelse aktivert for %i.
+  wwctcoOffTarget: Utgående chat oversettelse deaktivert for %i.
+  wwctGUIChatOutgoingButton: Veksle Utgående Chat Oversettelse
+  wwctciOnTarget: Innkommende chat oversettelse aktivert for %i.
+  wwctciOffTarget: Innkommende chat oversettelse deaktivert for %i.

@@ -281,11 +281,7 @@ Messages:
   wwctrlRateLimitBadInt: Hinnapiirang ei ole kehtiv täisarv.
   wwcTranslatorErrorConsole: Probleem ilmnes, kui kasutaja %i üritas oma tõlkimist.
     Palun kontrollige errorLog.txt rohkem üksikasju.
-  wwctcOffSender: Vestluse tõlkimine keelatud.
-  wwctcOnTarget: Vestlus tõlge lubatud %i.
-  wwctcOnSender: Vestluse tõlge on lubatud. Kõik, mida te ütlete, tõlgitakse!
   wwctGUIChatButton: Lülita vestlus tõlge
-  wwctcOffTarget: Vestlus tõlge keelatud %i.
   wwcrBegin: WorldwideChat uuesti laadimine...
   wwctTranslationStoppedOtherPlayer: Tõlkesessioon %i on peatatud.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globaalne vestlus on tõlgitud,
@@ -308,3 +304,14 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: Nurjus tõlkevestluse sõnum
     lülitatud edukalt.
   wwcConfigGUISendFailedTranslationChatButton: Saada vestluse sõnum nurjunud tõlkimine
+  wwctciOffSender: Sissetuleva vestluse tõlge keelatud.
+  wwctGUIChatIncomingButton: Lülita sissetuleva vestluse tõlge
+  wwctcoOffSender: Väljamineva vestluse tõlge keelatud.
+  wwctcoOnSender: Väljamineva vestluse tõlge lubatud. Midagi, mida te ütlete, tõlgitakse!
+  wwctciOnSender: Sissetuleva vestluse tõlge lubatud. Kõik, mida saate, tõlgitakse!
+  wwctGUIChatMenu: Lülita vestluse tõlkimise menüü
+  wwctcoOnTarget: Väljamineva vestluse tõlge lubatud %i.
+  wwctcoOffTarget: Väljamineva vestluse tõlge keelatud %i.
+  wwctGUIChatOutgoingButton: Lülita väljamineva vestluse tõlge
+  wwctciOnTarget: Sissetuleva vestluse tõlge lubatud %i.
+  wwctciOffTarget: Sissetuleva vestluse tõlge keelatud %i.

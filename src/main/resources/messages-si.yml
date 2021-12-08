@@ -298,11 +298,7 @@ Messages:
   wwctrlRateLimitBadInt: ඔබගේ අනුපාත සීමාව වලංගු නිඛිලයක් නොවේ.
   wwcTranslatorErrorConsole: පරිශීලක % මම ඔවුන්ගේ පරිවර්තනයට උත්සාහ කරමින් සිටියදී
     ගැටළුවක් ඇති විය. වැඩි විස්තර සඳහා errorLog.txt පරීක්ෂා කරන්න.
-  wwctcOffSender: චැට් පරිවර්තනය අක්රීය කර ඇත.
-  wwctcOnTarget: කතාබස් පරිවර්තනය සක්‍රීය කර ඇත %i.
-  wwctcOnSender: චැට් පරිවර්තනය සක්රීය කර ඇත. ඔබ කියන ඕනෑම දෙයක් පරිවර්තනය කරනු ඇත!
   wwctGUIChatButton: ටොගල් කරන්න චැට් පරිවර්තනය
-  wwctcOffTarget: කතාබස් පරිවර්තනය %i සඳහා අක්රීය කර ඇත.
   wwcrBegin: නැවත පූරණය කිරීම ලෝක වයිඩෙහාට්...
   wwctTranslationStoppedOtherPlayer: '%i සඳහා පරිවර්තන සැසිය නතර කර ඇත.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ගෝලීය කතාබස් පරිවර්තනය
@@ -326,3 +322,16 @@ Messages:
     සාර්ථකව ටොගල් කර ඇත.
   wwcConfigGUISendFailedTranslationChatButton: අසාර්ථක පරිවර්තනය පිළිබඳ චැට් පණිවිඩය
     යවන්න
+  wwctciOffSender: පැමිණෙන චැට් පරිවර්තනය අක්රීය කර ඇත.
+  wwctGUIChatIncomingButton: ටොගල් කරන්න එන චැට් පරිවර්තනය
+  wwctcoOffSender: පිටතට යන චැට් පරිවර්තනය අක්රීය.
+  wwctcoOnSender: පිටතට යන චැට් පරිවර්තනය සක්රීය කර ඇත. ඔබ කියන ඕනෑම දෙයක් පරිවර්තනය
+    කරනු ඇත!
+  wwctciOnSender: ලැබෙන චැට් පරිවර්තනය සක්රීය කර ඇත. ඔබට ලැබෙන ඕනෑම දෙයක් පරිවර්තනය
+    කරනු ඇත!
+  wwctGUIChatMenu: ටොගල් කරන්න භාෂා පරිවර්තන මෙනුව
+  wwctcoOnTarget: පිටතට යන චැට් පරිවර්තනය %i සඳහා සක්රීය කර ඇත.
+  wwctcoOffTarget: '%i සඳහා පිටතට යන චැට් පරිවර්තනය අක්රීය කර ඇත.'
+  wwctGUIChatOutgoingButton: ටොගල් කරන්න පිටතට යන චැට් පරිවර්තනය
+  wwctciOnTarget: '%i සඳහා පැමිණෙන චැට් පරිවර්තනය සක්රීය කර ඇත.'
+  wwctciOffTarget: '%i සඳහා පැමිණෙන චැට් පරිවර්තනය අක්රීය කර ඇත.'

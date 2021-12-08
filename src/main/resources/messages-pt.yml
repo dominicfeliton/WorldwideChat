@@ -297,11 +297,7 @@ Messages:
   wwctrlRateLimitBadInt: Seu limite de taxa não é um número inteiro válido.
   wwcTranslatorErrorConsole: Ocorreu um problema enquanto o usuário %i estava tentando
     traduzir. Por favor, verifique errorLog.txt para obter mais detalhes.
-  wwctcOffSender: Tradução de bate-papo desativada.
-  wwctcOnTarget: Tradução de bate-papo ativada para %i.
-  wwctcOnSender: Tradução de bate-papo ativada. Tudo o que você disser será traduzido!
   wwctGUIChatButton: Alternar tradução de bate-papo
-  wwctcOffTarget: Tradução de bate-papo desativada para %i.
   wwcrBegin: Recarregando o WorldwideChat...
   wwctTranslationStoppedOtherPlayer: A sessão de tradução para %i foi interrompida.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: O bate-papo global está
@@ -327,3 +323,16 @@ Messages:
     falha na tradução foi alternada com sucesso.
   wwcConfigGUISendFailedTranslationChatButton: Enviar mensagem de bate-papo na tradução
     falhada
+  wwctciOffSender: Tradução de bate-papo recebida desativada.
+  wwctGUIChatIncomingButton: Alternar tradução de bate-papo recebido
+  wwctcoOffSender: Tradução de bate-papo de saída desativada.
+  wwctcoOnSender: Tradução de bate-papo de saída ativada. Tudo o que você disser será
+    traduzido!
+  wwctciOnSender: Tradução de bate-papo recebida ativada. Tudo o que você receber
+    será traduzido!
+  wwctGUIChatMenu: Alternar menu de tradução de bate-papo
+  wwctcoOnTarget: Tradução de bate-papo de saída ativada para %i.
+  wwctcoOffTarget: Tradução de bate-papo de saída desativada para %i.
+  wwctGUIChatOutgoingButton: Alternar tradução de bate-papo de saída
+  wwctciOnTarget: Tradução de bate-papo recebida habilitada para %i.
+  wwctciOffTarget: Tradução de bate-papo recebida desativada para %i.

@@ -308,11 +308,7 @@ Messages:
   wwctrlRateLimitBadInt: Kufiri juaj i normës nuk është një numër i plotë i vlefshëm.
   wwcTranslatorErrorConsole: Ndodhi një problem përderisa përdoruesi %i po tentonte
     përkthimin e tyre. Ju lutem kontrolloni errorLog.txt për më shumë detaje.
-  wwctcOffSender: Chat përkthim i paaftë.
-  wwctcOnTarget: Përkthimi i bisedës aktivizohet për %i.
-  wwctcOnSender: Përkthimi Chat aktivizuar. Çdo gjë që thoni do të përkthehet!
   wwctGUIChatButton: Përkthimi Toggle Chat
-  wwctcOffTarget: Përkthimi Chat i çaktivizuar për %i.
   wwcrBegin: Rifreskimi WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Sesioni i përkthimit për %i është ndalur.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Biseda globale po përkthehet,
@@ -337,3 +333,16 @@ Messages:
     të dështuar u kthye me sukses.
   wwcConfigGUISendFailedTranslationChatButton: Dërgoni mesazh bisede në përkthimin
     e dështuar
+  wwctciOffSender: Përkthimi në hyrje chat me aftësi të kufizuara.
+  wwctGUIChatIncomingButton: Toggle Përkthimi i Bisedës Hyrëse
+  wwctcoOffSender: Përkthimi në dalje chat me aftësi të kufizuara.
+  wwctcoOnSender: Përkthimi i bisedës në dalje aktivizohet. Çdo gjë që thoni do të
+    përkthehet!
+  wwctciOnSender: Përkthimi i bisedës hyrëse aktivizohet. Çdo gjë që ju merrni do
+    të përkthehet!
+  wwctGUIChatMenu: Toggle Menyja e Përkthimit të Bisedës
+  wwctcoOnTarget: Përkthimi i bisedës që po largohet aktivizohet për %i.
+  wwctcoOffTarget: Përkthimi po largohet chat me aftësi të kufizuara për %i.
+  wwctGUIChatOutgoingButton: Toggle Përkthimi i Bisedës që po largohet
+  wwctciOnTarget: Përkthimi i bisedës hyrëse aktivizohet për %i.
+  wwctciOffTarget: Përkthimi në hyrje chat me aftësi të kufizuara për %i.

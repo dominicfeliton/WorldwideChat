@@ -297,11 +297,7 @@ Messages:
   wwctrlRateLimitBadInt: A díjkorlát nem érvényes egész szám.
   wwcTranslatorErrorConsole: Probléma merült fel, amikor a (z) %i felhasználó megpróbálta
     a fordítást. Kérjük, tekintse meg a errorLog.txt fájlt további részletekért.
-  wwctcOffSender: Csevegés fordítás letiltva
-  wwctcOnTarget: Csevegés fordítás engedélyezve a %i.
-  wwctcOnSender: Csevegés fordítás engedélyezve Bármi, amit mond, le lesz fordítva!
   wwctGUIChatButton: Csevegés fordítás be-
-  wwctcOffTarget: 'Csevegés fordítása le van tiltva erre:'
   wwcrBegin: WorldwideChat újratöltése...
   wwctTranslationStoppedOtherPlayer: A (z) %i fordítási munkamenet le lett állítva.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: A globális csevegés lefordítása
@@ -326,3 +322,14 @@ Messages:
     üzenet sikeresen vált.
   wwcConfigGUISendFailedTranslationChatButton: Csevegési üzenet küldése sikertelen
     fordításon
+  wwctciOffSender: A bejövő csevegés fordítása letiltva.
+  wwctGUIChatIncomingButton: A bejövő csevegés fordításának váltása
+  wwctcoOffSender: A kimenő csevegés fordítása letiltva.
+  wwctcoOnSender: Kimenő csevegés fordítás engedélyezve. Bármit, amit mondasz, lefordítják!
+  wwctciOnSender: Bejövő csevegés fordítás engedélyezve. Bármit, amit kap, lefordítják!
+  wwctGUIChatMenu: Toggle Chat fordítás menü
+  wwctcoOnTarget: A kimenő csevegés fordítása engedélyezve van %i.
+  wwctcoOffTarget: A kimenő csevegés fordítása le van tiltva %i.
+  wwctGUIChatOutgoingButton: A kimenő csevegés fordításának váltása
+  wwctciOnTarget: A bejövő csevegés fordítása engedélyezve van %i.
+  wwctciOffTarget: A bejövő csevegés fordítása le van tiltva %i.

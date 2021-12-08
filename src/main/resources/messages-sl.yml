@@ -296,11 +296,7 @@ Messages:
   wwctrlRateLimitBadInt: Vaša omejitev stopnje ni veljavno celo število.
   wwcTranslatorErrorConsole: Do težave je prišlo, medtem ko je uporabnik %i poskušal
     njihov prevod. Prosimo, preverite errorLog.txt za več podrobnosti.
-  wwctcOffSender: Prevod klepeta onemogočen.
-  wwctcOnTarget: Prevod klepeta je omogočen za %i.
-  wwctcOnSender: Prevod klepeta omogočen. Vse, kar rečeš, bo prevedeno!
   wwctGUIChatButton: Preklop prevajanja klepeta
-  wwctcOffTarget: Prevod klepeta onemogočen za %i.
   wwcrBegin: Ponovno nalaganje WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Prevajalska seja za %i je bila prekinjena.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globalni klepet se prevaja,
@@ -322,3 +318,14 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: Sporočilo za klepet ni uspelo
     pretoggled uspešno.
   wwcConfigGUISendFailedTranslationChatButton: Pošlji klepet sporočilo o neuspelem
+  wwctciOffSender: Prevod dohodnega klepeta onemogočen.
+  wwctGUIChatIncomingButton: Preklop dohodnega klepeta prevajanja
+  wwctcoOffSender: Odhodni klepet prevod onemogočen.
+  wwctcoOnSender: Odhodni klepet prevod omogočeno. Vse, kar pravite, bo prevedeno!
+  wwctciOnSender: Dohodni klepet prevod omogočeno. Vse, kar prejmete, bo prevedeno!
+  wwctGUIChatMenu: Preklopi meni za prevajanje klepeta
+  wwctcoOnTarget: Odhodni klepet prevod omogočen za %i.
+  wwctcoOffTarget: Odhodni klepet prevod onemogočen za %i.
+  wwctGUIChatOutgoingButton: Preklop odhodnega klepeta prevajanja
+  wwctciOnTarget: Dohodni klepet prevod omogočen za %i.
+  wwctciOffTarget: Dohodni klepet prevod onemogočen za %i.

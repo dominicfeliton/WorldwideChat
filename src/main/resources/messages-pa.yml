@@ -169,7 +169,6 @@ Messages:
   wwcItemTranslateLoreDone: ਅਨੁਵਾਦ ਕੀਤਾ ਇਕਾਈ ਨੂੰ ਸਫਲਤਾਪੂਰਕ lore.
   wwcConfigConversationAmazonTranslateAccessKeyInput: ਮੌਜੂਦਾ ਪਹੁੰਚ ਕੁੰਜੀ %i ਹੈ ਕਿਰਪਾ
     ਕਰਕੇ ਐਮਾਜ਼ਾਨ ਲਈ ਐਕਸੈਸ ਕੁੰਜੀ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
-  wwctcOffTarget: ਚੈਟ ਅਨੁਵਾਦ %i ਲਈ ਅਯੋਗ ਹੈ।
   wwcConfigConversationSyncUserDataDelayInput: ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਪ੍ਰਤੀ ਮੌਜੂਦਾ ਦੇਰੀ %i
     ਸਕਿੰਟ ਹੈ। ਇੱਕ ਨਵਾਂ ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 10 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ
     ਲਈ 10 ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ.
@@ -211,7 +210,6 @@ Messages:
   wwcConfigConversationAmazonTranslateSecretKeyInput: ਮੌਜੂਦਾ ਗੁਪਤ ਕੁੰਜੀ %i ਹੈ ਕਿਰਪਾ
     ਕਰਕੇ ਐਮਾਜ਼ਾਨ ਲਈ ਇੱਕ ਗੁਪਤ ਕੁੰਜੀ ਇੰਪੁੱਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
   wwctiOnTarget: ਆਈਟਮ ਅਨੁਵਾਦ %i ਲਈ ਯੋਗ ਹੈ।
-  wwctcOnSender: ਚੈਟ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਕੋਈ ਵੀ ਚੀਜ਼ ਤੁਹਾਨੂੰ ਕਹਿਣਾ ਅਨੁਵਾਦ ਕੀਤਾ ਜਾਵੇਗਾ!
   wwcConfigGUIAmazonTranslateButton: Amazon ਅਨੁਵਾਦ
   wwcConfigConversationLangSuccess: ਪਲੱਗਇਨ ਭਾਸ਼ਾ ਸਫਲਤਾਪੂਰਕ ਬਦਲ ਗਈ.
   wwcConfigConversationTranslationCacheInput: ਮੌਜੂਦਾ ਅਨੁਵਾਦ ਕੈਚੇ ਸੀਮਾ %i ਵਾਕ ਹੈ। ਵੱਧ
@@ -233,7 +231,6 @@ Messages:
   wwctbTranslatePageFail: (ਇਸ ਸਫ਼ੇ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਅਸਫਲ) %i
   wwctiOnSender: ਆਈਟਮ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਇਸ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਆਪਣੇ ਮੁੱਖ ਹੱਥ ਵਿੱਚ ਇੱਕ ਆਈਟਮ
     ਨਾਲ ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ!
-  wwctcOnTarget: ਚੈਟ ਅਨੁਵਾਦ %i ਲਈ ਯੋਗ ਹੈ।
   wwcConfigGUIMessagesOverrideOriginalLabel: ਅਸਲੀ ਸੁਨੇਹਾ
   wwcConfigGUISyncUserDataButton: ਬਦਲੋ ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਦੇਰੀ
   wwctGUISourceTranslationSelected: ਤੁਸੀਂ ਇਸ ਭਾਸ਼ਾ ਦੀ ਚੋਣ ਕੀਤੀ ਹੈ.
@@ -278,7 +275,6 @@ Messages:
   wwctCannotTranslateConsole: ਤੁਸੀਂ ਕੰਸੋਲ ਲਈ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਨਹੀਂ ਕਰ ਸਕਦੇ!
   wwctSameLangError: 'ਤੁਸੀਂ ਉਸੇ ਭਾਸ਼ਾ ਵਿੱਚ ਅਨੁਵਾਦ ਨਹੀਂ ਕਰ ਸਕਦੇ! ਵੈਧ ਲੰਬੇ ਕੋਡ: %o'
   wwctLangToLangStartOtherPlayer: '%i ਤੋਂ %e ਲਈ ਨਵਾਂ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
-  wwctcOffSender: ਚੈਟ ਅਨੁਵਾਦ ਅਯੋਗ.
   wwcConfigGUICharacterLimitButton: ਸੁਨੇਹਾ ਅੱਖਰ ਸੀਮਾ ਬਦਲੋ
   wwctLangToLangStart: '%i ਤੋਂ %o ਤੱਕ ਨਵਾਂ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
   wwctGUISourceOrTargetTranslationAlreadyActive: ਇਹ ਭਾਸ਼ਾ ਪਹਿਲਾਂ ਹੀ ਸਰਗਰਮ ਹੈ!
@@ -317,3 +313,15 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: ਅਸਫਲ ਅਨੁਵਾਦ ਚੈਟ ਸੁਨੇਹੇ ਨੂੰ
     ਸਫਲਤਾਪੂਰਕ ਬਦਲ.
   wwcConfigGUISendFailedTranslationChatButton: ਅਸਫਲ ਅਨੁਵਾਦ 'ਤੇ ਚੈਟ ਸੁਨੇਹਾ ਭੇਜੋ
+  wwctciOffSender: ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ ਅਯੋਗ.
+  wwctGUIChatIncomingButton: ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ ਬਦਲੋ
+  wwctcoOffSender: ਬਾਹਰ ਜਾਣ ਚੈਟ ਅਨੁਵਾਦ ਅਯੋਗ.
+  wwctcoOnSender: ਬਾਹਰ ਜਾਣ ਵਾਲੀ ਚੈਟ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਕੋਈ ਵੀ ਚੀਜ਼ ਤੁਹਾਨੂੰ ਕਹਿਣਾ ਅਨੁਵਾਦ
+    ਕੀਤਾ ਜਾਵੇਗਾ!
+  wwctciOnSender: ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਜੋ ਵੀ ਤੁਹਾਨੂੰ ਪ੍ਰਾਪਤ ਅਨੁਵਾਦ ਕੀਤਾ ਜਾਵੇਗਾ!
+  wwctGUIChatMenu: ਬਦਲੋ ਚੈਟ ਅਨੁਵਾਦ ਮੇਨੂ
+  wwctcoOnTarget: ਆਊਟਗੋਇੰਗ ਚੈਟ ਅਨੁਵਾਦ %i ਲਈ ਯੋਗ ਹੈ।
+  wwctcoOffTarget: ਆਊਟਗੋਇੰਗ ਚੈਟ ਅਨੁਵਾਦ %i ਲਈ ਅਯੋਗ ਹੈ।
+  wwctGUIChatOutgoingButton: ਬਾਹਰ ਜਾਣ ਵਾਲੇ ਚੈਟ ਅਨੁਵਾਦ ਨੂੰ ਟੌਗਲ ਕਰੋ
+  wwctciOnTarget: ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ %i ਲਈ ਯੋਗ ਹੈ।
+  wwctciOffTarget: ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ %i ਲਈ ਅਯੋਗ ਹੈ।

@@ -290,11 +290,7 @@ Messages:
   wwctrlRateLimitBadInt: మీ రేటు పరిమితి చెల్లుబాటు అయ్యే పూర్ణాంకం కాదు.
   wwcTranslatorErrorConsole: వాడుకరి %i వారి అనువాదానికి ప్రయత్నిస్తున్నప్పుడు ఒక
     సమస్య ఏర్పడింది. దయచేసి మరిన్ని వివరాల కోసం errorLog.txt ను తనిఖీ చేయండి.
-  wwctcOffSender: చాట్ అనువాదం డిసేబుల్.
-  wwctcOnTarget: చాట్ అనువాదం %i కోసం ప్రారంభించబడింది.
-  wwctcOnSender: చాట్ అనువాదం ప్రారంభించబడింది. మీరు చెప్పే ఏదైనా అనువదించబడుతుంది!
   wwctGUIChatButton: టోగుల్ చాట్ అనువాదం
-  wwctcOffTarget: '%i కొరకు చాట్ అనువాదము నిలిపివేయబడింది.'
   wwcrBegin: ప్రపంచవ్యాప్తంగా చాట్ రీలోడ్ అవుతోంది...
   wwctTranslationStoppedOtherPlayer: '%i కొరకు అనువాద సెషన్ నిలిపివేయబడింది.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: గ్లోబల్ చాట్ అనువదించబడుతోంది,
@@ -315,3 +311,14 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: విఫలమైంది అనువాద చాట్ సందేశం
     విజయవంతంగా toggled.
   wwcConfigGUISendFailedTranslationChatButton: విఫలమైన అనువాదంపై చాట్ సందేశం పంపండి
+  wwctciOffSender: ఇన్కమింగ్ చాట్ అనువాదం డిసేబుల్.
+  wwctGUIChatIncomingButton: ఇన్కమింగ్ చాట్ అనువాదం టోగుల్
+  wwctcoOffSender: అవుట్గోయింగ్ చాట్ అనువాదం డిసేబుల్.
+  wwctcoOnSender: అవుట్గోయింగ్ చాట్ అనువాదం ప్రారంభించబడింది. మీరు చెప్పే ఏదైనా అనువదించబడుతుంది!
+  wwctciOnSender: ఇన్కమింగ్ చాట్ అనువాదం ప్రారంభించబడింది. మీరు అందుకున్న ఏదైనా అనువదించబడుతుంది!
+  wwctGUIChatMenu: చాట్ అనువాద మెనూ టోగుల్
+  wwctcoOnTarget: అవుట్గోయింగ్ చాట్ అనువాదం %i కోసం ప్రారంభించబడింది.
+  wwctcoOffTarget: '%i కోసం అవుట్గోయింగ్ చాట్ అనువాదం నిలిపివేయబడింది.'
+  wwctGUIChatOutgoingButton: అవుట్గోయింగ్ చాట్ అనువాదం టోగుల్
+  wwctciOnTarget: ఇన్కమింగ్ చాట్ అనువాదం %i కోసం ప్రారంభించబడింది.
+  wwctciOffTarget: '%i కోసం ఇన్కమింగ్ చాట్ అనువాదం నిలిపివేయబడింది.'

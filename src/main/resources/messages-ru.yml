@@ -304,11 +304,7 @@ Messages:
   wwctrlRateLimitBadInt: Ограничение скорости не является допустимым целым числом.
   wwcTranslatorErrorConsole: Возникла проблема при попытке перевода пользователем
     %i. Для получения более подробной информации обратитесь к файлу errorLog.txt.
-  wwctcOffSender: Перевод чата отключен.
-  wwctcOnTarget: Перевод чата включен для %i.
-  wwctcOnSender: Перевод чата включен. Все, что вы скажете, будет переведено!
   wwctGUIChatButton: Переключить перевод чата
-  wwctcOffTarget: Перевод чата отключен для %i.
   wwcrBegin: Перезагрузка чата по всему миру...
   wwctTranslationStoppedOtherPlayer: Сеанс перевода для %i остановлен.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобальный чат переводится,
@@ -331,3 +327,14 @@ Messages:
     переводом успешно переключено.
   wwcConfigGUISendFailedTranslationChatButton: Отправить сообщение в чате о неудачном
     переводе
+  wwctciOffSender: Перевод входящего чата отключен.
+  wwctGUIChatIncomingButton: Переключить перевод входящего чата
+  wwctcoOffSender: Перевод исходящего чата отключен.
+  wwctcoOnSender: Перевод исходящего чата включен. Все, что вы скажете, будет переведено!
+  wwctciOnSender: Перевод входящего чата включен. Все, что вы получите, будет переведено!
+  wwctGUIChatMenu: Переключить меню перевода чата
+  wwctcoOnTarget: Перевод исходящего чата включен для %i.
+  wwctcoOffTarget: Перевод исходящего чата отключен для %i.
+  wwctGUIChatOutgoingButton: Переключить перевод исходящего чата
+  wwctciOnTarget: Перевод входящего чата включен для %i.
+  wwctciOffTarget: Перевод входящего чата отключен для %i.

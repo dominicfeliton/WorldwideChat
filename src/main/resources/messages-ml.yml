@@ -293,12 +293,7 @@ Messages:
   wwctrlRateLimitBadInt: നിങ്ങളുടെ നിരക്ക് പരിധി സാധുവായ പൂർണ്ണസംഖ്യയല്ല.
   wwcTranslatorErrorConsole: ഉപയോക്താവിനെ %i അവരുടെ പരിഭാഷ ശ്രമിക്കുമ്പോൾ ഒരു പ്രശ്നം
     സംഭവിച്ചു. കൂടുതൽ വിവരങ്ങൾക്ക് errorLog.txt പരിശോധിക്കുക.
-  wwctcOffSender: ചാറ്റ് വിവർത്തനം അപ്രാപ്തമാക്കി.
-  wwctcOnTarget: ചാറ്റ് പരിഭാഷ %i എന്നതിനായി പ്രവർത്തനക്ഷമമാക്കി.
-  wwctcOnSender: ചാറ്റ് വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. നിങ്ങൾ പറയുന്ന എന്തും വിവർത്തനം
-    ചെയ്യും!
   wwctGUIChatButton: ചാറ്റ് വിവർത്തനം ടോഗിൾ ചെയ്യുക
-  wwctcOffTarget: ചാറ്റ് വിവർത്തനം അപ്രാപ്തമാക്കി %i.
   wwcrBegin: റീലോഡുചെയ്യുന്നു ഛത്...
   wwctTranslationStoppedOtherPlayer: '%i ന് പരിഭാഷാ സെഷൻ നിർത്തി.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ആഗോള ചാറ്റ് വിവർത്തനം
@@ -322,3 +317,16 @@ Messages:
     സന്ദേശം വിജയകരമായി ടോഗിൾ ചെയ്തു.
   wwcConfigGUISendFailedTranslationChatButton: പരാജയപ്പെട്ട വിവർത്തനത്തിൽ ചാറ്റ് സന്ദേശം
     അയയ്ക്കുക
+  wwctciOffSender: ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം അപ്രാപ്തമാക്കി.
+  wwctGUIChatIncomingButton: ടോഗിൾ ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം
+  wwctcoOffSender: ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം അപ്രാപ്തമാക്കി.
+  wwctcoOnSender: ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. നിങ്ങൾ പറയുന്ന
+    എന്തും വിവർത്തനം ചെയ്യും!
+  wwctciOnSender: ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. നിങ്ങൾക്ക് ലഭിക്കുന്ന
+    എന്തും വിവർത്തനം ചെയ്യും!
+  wwctGUIChatMenu: ടോഗിൾ ചാറ്റ് വിവർത്തനം മെനു
+  wwctcoOnTarget: ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം %i ന് പ്രാപ്തമാക്കി.
+  wwctcoOffTarget: ഔട്ട്ഗോയിംഗ് ചാറ്റ് പരിഭാഷ അപ്രാപ്തമാക്കി %i.
+  wwctGUIChatOutgoingButton: ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം ടോഗിൾ
+  wwctciOnTarget: ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം %i പ്രാപ്തമാക്കി.
+  wwctciOffTarget: ഇൻകമിംഗ് ചാറ്റ് പരിഭാഷ അപ്രാപ്തമാക്കി %i.

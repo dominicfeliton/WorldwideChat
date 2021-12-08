@@ -300,11 +300,7 @@ Messages:
   wwctrlRateLimitBadInt: Giới hạn tỷ lệ của bạn không phải là số nguyên hợp lệ.
   wwcTranslatorErrorConsole: Một vấn đề xảy ra trong khi người dùng %i đang cố gắng
     dịch thuật của họ. Vui lòng kiểm tra errorLog.txt để biết thêm chi tiết.
-  wwctcOffSender: Đã tắt bản dịch trò chuyện.
-  wwctcOnTarget: Dịch trò chuyện được kích hoạt cho %i.
-  wwctcOnSender: Đã bật dịch trò chuyện. Bất cứ điều gì bạn nói sẽ được dịch!
   wwctGUIChatButton: Chuyển đổi Chat Translation
-  wwctcOffTarget: Dịch trò chuyện bị tắt cho %i.
   wwcrBegin: Nạp lại WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Phiên dịch cho %i đã bị dừng lại.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Trò chuyện toàn cầu đang
@@ -328,3 +324,15 @@ Messages:
     trò chuyện dịch chuyển đổi thành công.
   wwcConfigGUISendFailedTranslationChatButton: Gửi tin nhắn trò chuyện về dịch không
     thành công
+  wwctciOffSender: Bản dịch trò chuyện đến bị vô hiệu hóa.
+  wwctGUIChatIncomingButton: Chuyển đổi bản dịch trò chuyện đến
+  wwctcoOffSender: Dịch trò chuyện đi bị vô hiệu hóa.
+  wwctcoOnSender: Dịch trò chuyện đi được bật. Bất cứ điều gì bạn nói sẽ được dịch!
+  wwctciOnSender: Bản dịch trò chuyện đến được kích hoạt. Bất cứ điều gì bạn nhận
+    được sẽ được dịch!
+  wwctGUIChatMenu: Chuyển đổi trò chuyện dịch Menu
+  wwctcoOnTarget: Dịch trò chuyện đi được bật cho %i.
+  wwctcoOffTarget: Bản dịch trò chuyện đi bị vô hiệu hóa cho %i.
+  wwctGUIChatOutgoingButton: Chuyển đổi dịch trò chuyện đi
+  wwctciOnTarget: Bản dịch trò chuyện đến được bật cho %i.
+  wwctciOffTarget: Bản dịch trò chuyện đến bị vô hiệu hóa cho %i.

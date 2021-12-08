@@ -81,7 +81,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 					} else {
 						badPermsMessage("worldwidechat.wwcte.otherplayers");
 					}
-				} else if (this instanceof WWCTranslateChat) {
+				} else if (this instanceof WWCTranslateChatOutgoing) {
 					if (sender.hasPermission("worldwidechat.wwctc.otherplayers")) {
 						return toggleStatus(Bukkit.getPlayerExact(args[0])); 
 					} else {
@@ -322,57 +322,110 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 				}
 			}
 			return true;
-		} else if (this instanceof WWCTranslateChat) {
+		} else if (this instanceof WWCTranslateChatOutgoing) {
 			currentTranslator.setTranslatingChatOutgoing(!currentTranslator.getTranslatingChatOutgoing());
 			/* Toggle chat translation for sender! */
 			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 				if (currentTranslator.getTranslatingChatOutgoing()) {
 					final TextComponent toggleTranslation = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctcOnSender"))
+									.content(CommonDefinitions.getMessage("wwctcoOnSender"))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
 					CommonDefinitions.sendMessage(inPlayer, toggleTranslation);
-					CommonDefinitions.sendDebugMessage("Chat translation enabled for " + inPlayer.getName() + ".");
+					CommonDefinitions.sendDebugMessage("Outgoing chat translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					final TextComponent toggleTranslation = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctcOffSender"))
+									.content(CommonDefinitions.getMessage("wwctcoOffSender"))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
 					CommonDefinitions.sendMessage(inPlayer, toggleTranslation);
-					CommonDefinitions.sendDebugMessage("Chat translation disabled for " + inPlayer.getName() + ".");
+					CommonDefinitions.sendDebugMessage("Outgoing chat translation disabled for " + inPlayer.getName() + ".");
 				}
 			/* Toggle chat translation for target! */
 			} else {
 				if (currentTranslator.getTranslatingChatOutgoing()) {
 					final TextComponent toggleTranslation = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctcOnTarget", new String[] {args[0]}))
+									.content(CommonDefinitions.getMessage("wwctcoOnTarget", new String[] {args[0]}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
 					CommonDefinitions.sendMessage(sender, toggleTranslation);
 					final TextComponent toggleTranslationTarget = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctcOnSender"))
+									.content(CommonDefinitions.getMessage("wwctcoOnSender"))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
 					CommonDefinitions.sendMessage(inPlayer, toggleTranslationTarget);
-					CommonDefinitions.sendDebugMessage("Chat translation enabled for " + inPlayer.getName() + ".");
+					CommonDefinitions.sendDebugMessage("Outgoing chat translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					final TextComponent toggleTranslation = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctcOffTarget", new String[] {args[0]}))
+									.content(CommonDefinitions.getMessage("wwctcoOffTarget", new String[] {args[0]}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
 					CommonDefinitions.sendMessage(sender, toggleTranslation);
 					final TextComponent toggleTranslationTarget = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctcOffSender"))
+									.content(CommonDefinitions.getMessage("wwctcoOffSender"))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
 					CommonDefinitions.sendMessage(inPlayer, toggleTranslationTarget);
-					CommonDefinitions.sendDebugMessage("Chat translation disabled for " + inPlayer.getName() + ".");
+					CommonDefinitions.sendDebugMessage("Outgoing chat translation disabled for " + inPlayer.getName() + ".");
+				}
+			}
+		} else if (this instanceof WWCTranslateChatIncoming) {
+			currentTranslator.setTranslatingChatIncoming(!currentTranslator.getTranslatingChatIncoming());
+			/* Toggle chat translation for sender! */
+			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
+				if (currentTranslator.getTranslatingChatIncoming()) {
+					final TextComponent toggleTranslation = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwctciOnSender"))
+									.color(NamedTextColor.LIGHT_PURPLE))
+							.build();
+					CommonDefinitions.sendMessage(inPlayer, toggleTranslation);
+					CommonDefinitions.sendDebugMessage("Incoming chat translation enabled for " + inPlayer.getName() + ".");
+				} else {
+					final TextComponent toggleTranslation = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwctciOffSender"))
+									.color(NamedTextColor.LIGHT_PURPLE))
+							.build();
+					CommonDefinitions.sendMessage(inPlayer, toggleTranslation);
+					CommonDefinitions.sendDebugMessage("Incoming chat translation disabled for " + inPlayer.getName() + ".");
+				}
+			/* Toggle chat translation for target! */
+			} else {
+				if (currentTranslator.getTranslatingChatIncoming()) {
+					final TextComponent toggleTranslation = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwctciOnTarget", new String[] {args[0]}))
+									.color(NamedTextColor.LIGHT_PURPLE))
+							.build();
+					CommonDefinitions.sendMessage(sender, toggleTranslation);
+					final TextComponent toggleTranslationTarget = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwctciOnSender"))
+									.color(NamedTextColor.LIGHT_PURPLE))
+							.build();
+					CommonDefinitions.sendMessage(inPlayer, toggleTranslationTarget);
+					CommonDefinitions.sendDebugMessage("Incoming chat translation enabled for " + inPlayer.getName() + ".");
+				} else {
+					final TextComponent toggleTranslation = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwctciOffTarget", new String[] {args[0]}))
+									.color(NamedTextColor.LIGHT_PURPLE))
+							.build();
+					CommonDefinitions.sendMessage(sender, toggleTranslation);
+					final TextComponent toggleTranslationTarget = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwctciOffSender"))
+									.color(NamedTextColor.LIGHT_PURPLE))
+							.build();
+					CommonDefinitions.sendMessage(inPlayer, toggleTranslationTarget);
+					CommonDefinitions.sendDebugMessage("Incoming chat translation disabled for " + inPlayer.getName() + ".");
 				}
 			}
 		}

@@ -313,11 +313,7 @@ Messages:
   wwctrlRateLimitBadInt: Votre limite de taux n'est pas un entier valide.
   wwcTranslatorErrorConsole: Un problème s'est produit pendant que l'utilisateur %i
     tentait leur traduction. Veuillez vérifier errorLog.txt pour plus de détails.
-  wwctcOffSender: Traduction de chat désactivé.
-  wwctcOnTarget: Traduction de chat activée pour %i.
-  wwctcOnSender: Traduction de chat activée. Tout ce que vous dites sera traduit!
   wwctGUIChatButton: Basculer la traduction du chat
-  wwctcOffTarget: Traduction de chat désactivée pour %i.
   wwcrBegin: Rechargement WorldwideChat...
   wwctTranslationStoppedOtherPlayer: La session de traduction pour %i a été arrêtée.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Le chat global est en
@@ -343,3 +339,16 @@ Messages:
     de traduction a été basculé avec succès.
   wwcConfigGUISendFailedTranslationChatButton: Envoyer un message de clavardage lors
     de la traduction
+  wwctciOffSender: Traduction de clavardage entrante désactivée.
+  wwctGUIChatIncomingButton: Basculer la traduction des clavardages entrants
+  wwctcoOffSender: Traduction de clavardage sortante désactivée.
+  wwctcoOnSender: La traduction de clavardage sortante est activée. Tout ce que vous
+    direz sera traduit!
+  wwctciOnSender: La traduction de clavardage entrante est activée. Tout ce que vous
+    recevrez sera traduit!
+  wwctGUIChatMenu: Basculer le menu Traduction de clavardage
+  wwctcoOnTarget: Traduction de clavardage sortante activée pour %i.
+  wwctcoOffTarget: Traduction de clavardage sortante désactivée pour %i.
+  wwctGUIChatOutgoingButton: Basculer la traduction des clavardages sortants
+  wwctciOnTarget: Traduction de clavardage entrante activée pour %i.
+  wwctciOffTarget: Traduction de clavardage entrante désactivée pour %i.

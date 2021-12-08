@@ -174,7 +174,6 @@ Messages:
   wwcItemTranslateLoreDone: Traduzido o artigo lore com sucesso.
   wwcConfigConversationAmazonTranslateAccessKeyInput: A chave de acesso actual é %i.
     Introduza uma chave de acesso para Amazon ou digite 0 para voltar atrás.
-  wwctcOffTarget: A tradução do chat desativada para %i.
   wwcConfigConversationSyncUserDataDelayInput: O atraso actual por sincronização de
     dados do utilizador é %i segundos. Digite qualquer coisa superior a 10 para definir
     um novo valor, ou qualquer coisa inferior a 10 para voltar atrás.
@@ -217,7 +216,6 @@ Messages:
   wwcConfigConversationAmazonTranslateSecretKeyInput: A chave secreta atual é %i.
     Introduza uma chave secreta para Amazon ou digite 0 para voltar atrás.
   wwctiOnTarget: Tradução de itens activada para %i.
-  wwctcOnSender: Tradução de chat activada. Tudo o que disser será traduzido!
   wwcConfigGUIAmazonTranslateButton: Amazon Tradutor
   wwcConfigConversationLangSuccess: A linguagem do plugin foi alterada com sucesso.
   wwcConfigConversationTranslationCacheInput: O limite de cache de tradução atual
@@ -241,7 +239,6 @@ Messages:
   wwctbTranslatePageFail: (Não foi possível traduzir esta página) %i
   wwctiOnSender: Tradução de itens activada. Clique com o botão direito do rato com
     um item na sua mão principal para traduzi-lo!
-  wwctcOnTarget: Tradução de chat activada para %i.
   wwcConfigGUIMessagesOverrideOriginalLabel: Mensagem Original
   wwcConfigGUISyncUserDataButton: Alterar atraso da sincronização dos dados do utilizador
   wwctGUISourceTranslationSelected: Seleccionou este idioma.
@@ -293,7 +290,6 @@ Messages:
     %o'
   wwctLangToLangStartOtherPlayer: Iniciar uma nova sessão de tradução para %o de %i
     para %e.
-  wwctcOffSender: A tradução do chat desactivada
   wwcConfigGUICharacterLimitButton: Alterar o limite de caracter
   wwctLangToLangStart: Início de uma nova sessão de tradução de %i para %o.
   wwctGUISourceOrTargetTranslationAlreadyActive: Esta linguagem já está ativa!
@@ -334,3 +330,14 @@ Messages:
     na tradução alternada com êxito.
   wwcConfigGUISendFailedTranslationChatButton: Enviar mensagem de chat na tradução
     falhada
+  wwctciOffSender: A tradução do chat recebido desactivada.
+  wwctGUIChatIncomingButton: Alternar tradução do Chat de Entrada
+  wwctcoOffSender: Tradução de chat de saída desativada.
+  wwctcoOnSender: Tradução de chat de saída activada. Tudo o que disser será traduzido!
+  wwctciOnSender: Tradução de chat recebida activada. Tudo o que receber será traduzido!
+  wwctGUIChatMenu: Alternar menu de tradução do chat
+  wwctcoOnTarget: Tradução de chat de saída activada para %i.
+  wwctcoOffTarget: Tradução de chat de saída desativada para %i.
+  wwctGUIChatOutgoingButton: Alternar Tradução do Chat de Saída
+  wwctciOnTarget: Tradução do chat recebido activada para %i.
+  wwctciOffTarget: A tradução do chat recebido desativada para %i.

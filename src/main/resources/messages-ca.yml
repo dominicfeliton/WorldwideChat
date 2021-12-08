@@ -303,12 +303,7 @@ Messages:
   wwctrlRateLimitBadInt: El seu límit de tarifa no és un nombre enter vàlid.
   wwcTranslatorErrorConsole: Es va produir un problema mentre l'usuari %i estava intentant
     la seva traducció. Si us plau, comproveu errorLog.txt per a més detalls.
-  wwctcOffSender: Traducció de xat desactivada.
-  wwctcOnTarget: Traducció de xat activada per %i.
-  wwctcOnSender: S'ha habilitat la traducció de xat. Qualsevol cosa que diguis serà
-    traduïda!
   wwctGUIChatButton: Toggle Traducció de Xat
-  wwctcOffTarget: Traducció de xat desactivada per %i.
   wwcrBegin: Recarregar WorldwideChat...
   wwctTranslationStoppedOtherPlayer: La sessió de traducció per %i s'ha aturat.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: El xat global s'està traduint,
@@ -333,3 +328,15 @@ Messages:
     de xat de traducció que s'ha produït correctament.
   wwcConfigGUISendFailedTranslationChatButton: Enviar missatges de xat en traducció
     fallada
+  wwctciOffSender: Traducció de xat entrant desactivat.
+  wwctGUIChatIncomingButton: Alterna la traducció de xat entrant
+  wwctcoOffSender: Traducció de xat sortint desactivat.
+  wwctcoOnSender: Traducció de xat sortint habilitat. Qualsevol cosa que diguis es
+    traduirà!
+  wwctciOnSender: Traducció de xat entrant habilitat. Qualsevol cosa que rebi es traduirà!
+  wwctGUIChatMenu: Commuta el menú de traducció de xat
+  wwctcoOnTarget: Traducció de xat sortint habilitada per %i.
+  wwctcoOffTarget: S'ha desactivat la traducció de xat sortint per %i.
+  wwctGUIChatOutgoingButton: Alterna la traducció del xat sortint
+  wwctciOnTarget: Traducció de xat entrant habilitada per %i.
+  wwctciOffTarget: S'ha desactivat la traducció de xat entrant per %i.

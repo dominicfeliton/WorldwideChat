@@ -304,11 +304,7 @@ Messages:
   wwctrlRateLimitBadInt: Il limite di frequenza non è un numero intero valido.
   wwcTranslatorErrorConsole: Si è verificato un problema durante il tentativo di traduzione
     da parte dell'utente %i. Si prega di controllare errorLog.txt per ulteriori dettagli.
-  wwctcOffSender: Traduzione chat disattivata.
-  wwctcOnTarget: Traduzione chat abilitata per %i.
-  wwctcOnSender: Traduzione chat abilitata. Tutto quello che dici sarà tradotto!
   wwctGUIChatButton: Attiva/disattiva traduzione chat
-  wwctcOffTarget: Traduzione chat disabilitata per %i.
   wwcrBegin: Ricarica WorldwideChat...
   wwctTranslationStoppedOtherPlayer: La sessione di traduzione per %i è stata interrotta.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: La chat globale è in fase
@@ -334,3 +330,15 @@ Messages:
     non riuscito è stato dismesso correttamente.
   wwcConfigGUISendFailedTranslationChatButton: Invia un messaggio di chat sulla traduzione
     non riuscita
+  wwctciOffSender: Traduzione chat in arrivo disattivata.
+  wwctGUIChatIncomingButton: Attiva/disattiva la traduzione della chat in arrivo
+  wwctcoOffSender: Traduzione chat in uscita disabilitata.
+  wwctcoOnSender: Traduzione chat in uscita abilitata. Tutto ciò che dici verrà tradotto!
+  wwctciOnSender: Traduzione chat in entrata abilitata. Tutto ciò che riceverai verrà
+    tradotto!
+  wwctGUIChatMenu: Attiva/disattiva il menu traduzione chat
+  wwctcoOnTarget: Traduzione chat in uscita abilitata per %i.
+  wwctcoOffTarget: Traduzione chat in uscita disattivata per %i.
+  wwctGUIChatOutgoingButton: Attiva/disattiva traduzione chat in uscita
+  wwctciOnTarget: Traduzione chat in entrata abilitata per %i.
+  wwctciOffTarget: Traduzione della chat in arrivo disabilitata per %i.

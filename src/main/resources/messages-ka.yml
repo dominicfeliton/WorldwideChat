@@ -292,11 +292,7 @@ Messages:
   wwctrlRateLimitBadInt: თქვენი კურსის ლიმიტი არ არის სწორი რიცხვი.
   wwcTranslatorErrorConsole: პრობლემა იმართებოდა მომხმარებელი %i მათი თარგმანის მცდელობისას.
     გთხოვთ შეამოწმოთ errorLog.txt უფრო დეტალურად.
-  wwctcOffSender: ჩატი თარგმანი გამორთულია.
-  wwctcOnTarget: ჩეთის თარგმანი ჩართულია %i.
-  wwctcOnSender: ჩატი თარგმანი ჩართულია. ყველაფერი რაც თქვენ ამბობთ იქნება თარგმნილი!
   wwctGUIChatButton: ჩატის თარგმანის გადართვა
-  wwctcOffTarget: ჩატი თარგმანი გამორთულია %i.
   wwcrBegin: WorldwideChat გადატვირთვა...
   wwctTranslationStoppedOtherPlayer: '%i მთარგმნელობითი სესია შეჩერებულია.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: გლობალური სტატისტიკა თარგმნილია,
@@ -318,3 +314,16 @@ Messages:
     გაგზავნა toggled წარმატებით.
   wwcConfigGUISendFailedTranslationChatButton: ჩატის გაგზავნა ვერ მოხერხდა თარგმანის
     შესახებ
+  wwctciOffSender: შემომავალი სტატისტიკა თარგმანი გამორთულია.
+  wwctGUIChatIncomingButton: შემომავალი ჩეთის თარგმანის გადართვა
+  wwctcoOffSender: გამავალი სტატისტიკა თარგმანი გამორთულია.
+  wwctcoOnSender: გამავალი სტატისტიკა თარგმანი ჩართულია. ყველაფერი რაც თქვენ ამბობთ,
+    თარგმნილია!
+  wwctciOnSender: შემომავალი სტატისტიკა თარგმანი ჩართულია. არაფერი თქვენ მიიღებთ იქნება
+    თარგმნილი!
+  wwctGUIChatMenu: ჩატის თარგმანის მენიუს გადართვა
+  wwctcoOnTarget: გამავალი ჩეთის თარგმანი ჩართულია %i- სთვის.
+  wwctcoOffTarget: გამავალი სტატისტიკა თარგმანი გამორთულია %i- სთვის.
+  wwctGUIChatOutgoingButton: გამავალი ჩეთის თარგმანის გადართვა
+  wwctciOnTarget: შემომავალი ჩეთის თარგმანი ჩართულია %i- სთვის.
+  wwctciOffTarget: შემომავალი ჩეთის თარგმანი გამორთულია %i- სთვის.

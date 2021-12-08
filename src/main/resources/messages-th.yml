@@ -262,11 +262,7 @@ Messages:
   wwctrlRateLimitBadInt: ขีด จำกัด อัตราของคุณไม่ได้เป็นจำนวนเต็มที่ถูกต้อง.
   wwcTranslatorErrorConsole: เกิดปัญหาขึ้นขณะผู้ใช้ %i กำลังพยายามแปลกรุณาตรวจสอบ
     errorLog.txt สำหรับรายละเอียดเพิ่มเติม
-  wwctcOffSender: ปิดการแปลการสนทนา
-  wwctcOnTarget: เปิดใช้งานการแปลการสนทนาสำหรับ %i
-  wwctcOnSender: เปิดใช้งานการแปลการสนทนาสิ่งที่คุณพูดจะได้รับการแปล!
   wwctGUIChatButton: สลับการแปลการสนทนา
-  wwctcOffTarget: ปิดการแปลการสนทนาสำหรับ %i
   wwcrBegin: กำลังโหลดเวิลด์ไวด์แชท...
   wwctTranslationStoppedOtherPlayer: เซสชันการแปลสำหรับ %i ถูกหยุดแล้ว
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: การสนทนาทั่วโลกกำลังถูกแปล
@@ -287,3 +283,14 @@ Messages:
     /wwcc.
   wwcConfigConversationSendFailedTranslationChatSuccess: ล้มเหลวในการแปลข้อความแชทเปลี่ยนเสร็จเรียบร้อยแล้ว
   wwcConfigGUISendFailedTranslationChatButton: ส่งข้อความแชทเมื่อแปลล้มเหลว
+  wwctciOffSender: ปิดการแปลแชทขาเข้า
+  wwctGUIChatIncomingButton: สลับการแปลแชทขาเข้า
+  wwctcoOffSender: ปิดการแปลแชทขาออก
+  wwctcoOnSender: เปิดใช้งานการแปลแชทขาออกทุกอย่างที่คุณพูดจะได้รับการแปล!
+  wwctciOnSender: เปิดใช้งานการแปลแชทขาเข้าสิ่งที่คุณได้รับจะได้รับการแปล!
+  wwctGUIChatMenu: สลับเมนูการแปลแชท
+  wwctcoOnTarget: เปิดใช้งานการแปลการสนทนาสำหรับ %i
+  wwctcoOffTarget: การแปลการสนทนาขาออกถูกปิดใช้งานสำหรับ %i
+  wwctGUIChatOutgoingButton: สลับการแปลแชทขาออก
+  wwctciOnTarget: เปิดใช้งานการแปลการสนทนาที่เข้ามาสำหรับ %i
+  wwctciOffTarget: การแปลการสนทนาขาเข้าถูกปิดใช้งานสำหรับ %i

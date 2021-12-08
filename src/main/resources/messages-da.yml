@@ -293,11 +293,7 @@ Messages:
   wwctrlRateLimitBadInt: Din takst grænse er ikke et gyldigt heltal.
   wwcTranslatorErrorConsole: Der opstod et problem, mens bruger %i forsøgte at oversætte
     deres. Tjek venligst errorLog.txt for flere detaljer.
-  wwctcOffSender: Chatoversættelse deaktiveret.
-  wwctcOnTarget: Chatoversættelse aktiveret for %i.
-  wwctcOnSender: Chatoversættelse aktiveret. Alt, hvad du siger, vil blive oversat!
   wwctGUIChatButton: Slå chatoversættelse til/ fra
-  wwctcOffTarget: Chatoversættelse deaktiveret for %i.
   wwcrBegin: Genindlæser WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Oversættelsessessessessionen for %i er blevet
     stoppet.
@@ -322,3 +318,16 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: Mislykket oversættelse chat
     besked skiftede med succes.
   wwcConfigGUISendFailedTranslationChatButton: Send chatbesked om mislykket oversættelse
+  wwctciOffSender: Indgående chat oversættelse deaktiveret.
+  wwctGUIChatIncomingButton: Toggle Indgående Chat Oversættelse
+  wwctcoOffSender: Udgående chat oversættelse deaktiveret.
+  wwctcoOnSender: Udgående chat oversættelse aktiveret. Alt, hvad du siger, vil blive
+    oversat!
+  wwctciOnSender: Indgående chat oversættelse aktiveret. Alt, hvad du modtager, vil
+    blive oversat!
+  wwctGUIChatMenu: Toggle Chat Oversættelse Menu
+  wwctcoOnTarget: Udgående chat oversættelse aktiveret for %i.
+  wwctcoOffTarget: Udgående chat oversættelse deaktiveret for %i.
+  wwctGUIChatOutgoingButton: Toggle Udgående Chat Oversættelse
+  wwctciOnTarget: Indgående chat oversættelse aktiveret for %i.
+  wwctciOffTarget: Indgående chat oversættelse deaktiveret for %i.

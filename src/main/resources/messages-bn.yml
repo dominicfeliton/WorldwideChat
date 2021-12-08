@@ -288,11 +288,7 @@ Messages:
   wwctrlRateLimitBadInt: আপনার হার সীমা একটি বৈধ পূর্ণসংখ্যা নয়।
   wwcTranslatorErrorConsole: ব্যবহারকারী %i তাদের অনুবাদের চেষ্টা করার সময় একটি সমস্যা
     হয়েছে। আরও বিস্তারিত জানার জন্য অনুগ্রহ করে errorLog.txt চেক করুন।
-  wwctcOffSender: চ্যাটের অনুবাদ নিষ্ক্রিয় করা হয়েছে
-  wwctcOnTarget: '%i এর জন্য আড্ডা অনুবাদ সক্রিয় করা হয়েছে'
-  wwctcOnSender: চ্যাটের অনুবাদ সক্রিয় করা হয়েছে। আপনি যা বলবেন তা অনুবাদ করা হবে!
   wwctGUIChatButton: চ্যাটের অনুবাদ টগল করুন
-  wwctcOffTarget: '%i এর জন্য চ্যাটের অনুবাদ নিষ্ক্রিয় করা হয়েছে।'
   wwcrBegin: ওয়ার্ল্ডউইডচ্যাট পুনরায় লোড করা হচ্ছে...
   wwctTranslationStoppedOtherPlayer: '%i এর জন্য অনুবাদ সেশন বন্ধ করা হয়েছে।'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: গ্লোবাল চ্যাট অনুবাদ করা
@@ -316,3 +312,14 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: অনুবাদ চ্যাটের বার্তা ব্যর্থ
     হয়েছে সফলভাবে টগল করা হয়েছে।
   wwcConfigGUISendFailedTranslationChatButton: অনুবাদ ব্যর্থ হলে আড্ডা বার্তা পাঠান
+  wwctciOffSender: আগত আড্ডা অনুবাদ অক্ষম।
+  wwctGUIChatIncomingButton: আগত আড্ডা অনুবাদ টগল করুন
+  wwctcoOffSender: আউটগোয়িং আড্ডা অনুবাদ অক্ষম।
+  wwctcoOnSender: আউটগোয়িং চ্যাট অনুবাদ সক্রিয়। আপনি যা বলছেন তা অনুবাদ করা হবে!
+  wwctciOnSender: আগত আড্ডা অনুবাদ সক্রিয়। আপনি পাবেন কিছু অনুবাদ করা হবে!
+  wwctGUIChatMenu: আড্ডা অনুবাদ মেনু পরিবর্তন করুন
+  wwctcoOnTarget: '%i এর জন্য বহির্মুখী চ্যাটের অনুবাদটি সক্রিয় করা হয়েছে'
+  wwctcoOffTarget: আউটগোয়িং আড্ডা অনুবাদ %i এর জন্য নিষ্
+  wwctGUIChatOutgoingButton: আউটগোয়িং আড্ডা অনুবাদ টগল করুন
+  wwctciOnTarget: ইনকামিং আড্ডা অনুবাদ %i এর জন্য সক্রিয়
+  wwctciOffTarget: আগত আড্ডা অনুবাদ %i এর জন্য নিষ্ক্রিয়

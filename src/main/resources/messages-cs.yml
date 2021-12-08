@@ -291,11 +291,7 @@ Messages:
   wwctrlRateLimitBadInt: Váš limit sazeb není platné celé číslo.
   wwcTranslatorErrorConsole: Vyskytl se problém, když se uživatele %i pokoušel o jejich
     překlad. Další podrobnosti zkontrolujte errorLog.txt.
-  wwctcOffSender: Překlad chatu zakázán.
-  wwctcOnTarget: Překlad chatu povolen pro %i.
-  wwctcOnSender: Překlad chatu povolen. Cokoliv řeknete, bude přeloženo!
   wwctGUIChatButton: Přepnout chat překlad
-  wwctcOffTarget: Překlad chatu zakázán pro %i.
   wwcrBegin: Znovu načtení WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Relace překladu pro %i byla zastavena.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globální chat je překládán,
@@ -317,3 +313,14 @@ Messages:
     překladu byla úspěšně přepnuto.
   wwcConfigGUISendFailedTranslationChatButton: Odeslání zprávy o chatu na neúspěšný
     překlad
+  wwctciOffSender: Příchozí překlad chatu zakázán.
+  wwctGUIChatIncomingButton: Přepnout překlad příchozí konverzace
+  wwctcoOffSender: Překlad odchozího chatu zakázán.
+  wwctcoOnSender: Překlad odchozího chatu povolen. Cokoliv řeknete, bude přeloženo!
+  wwctciOnSender: Příchozí překlad chatu povolen. Vše, co obdržíte, bude přeloženo!
+  wwctGUIChatMenu: Přepnout menu Překlad konverzace
+  wwctcoOnTarget: Překlad odchozího chatu povolen pro %i.
+  wwctcoOffTarget: Překlad odchozího chatu zakázán pro %i.
+  wwctGUIChatOutgoingButton: Přepnout překlad odchozí konverzace
+  wwctciOnTarget: Příchozí překlad chatu povolen pro %i.
+  wwctciOffTarget: Příchozí překlad chatu zakázán pro %i.

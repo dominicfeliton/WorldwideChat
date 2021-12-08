@@ -299,12 +299,7 @@ Messages:
   wwctrlRateLimitBadInt: आपकी दर सीमा वैध पूर्णांक नहीं है।
   wwcTranslatorErrorConsole: एक समस्या तब हुई जब उपयोगकर्ता %i उनके अनुवाद का प्रयास
     कर रहा था। अधिक जानकारी के लिए कृपया errorLog.txt की जांच करें।
-  wwctcOffSender: चैट अनुवाद अक्षम किया गया।
-  wwctcOnTarget: '%i के लिए चैट अनुवाद सक्षम किया गया है।'
-  wwctcOnSender: चैट अनुवाद सक्षम किया गया। जो कुछ भी आप कहते हैं उसका अनुवाद किया
-    जाएगा!
   wwctGUIChatButton: चैट अनुवाद टॉगल करें
-  wwctcOffTarget: '%i के लिए चैट अनुवाद अक्षम किया गया।'
   wwcrBegin: वर्ल्डवाइड चैट पुनः लोड हो रहा है...
   wwctTranslationStoppedOtherPlayer: '%i के लिए अनुवाद सत्र बंद कर दिया गया है।'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: वैश्विक चैट का अनुवाद
@@ -328,3 +323,16 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: असफल अनुवाद चैट संदेश सफलतापूर्वक
     टॉगल किया गया।
   wwcConfigGUISendFailedTranslationChatButton: असफल अनुवाद पर चैट संदेश भेजें
+  wwctciOffSender: इनकमिंग चैट अनुवाद अक्षम।
+  wwctGUIChatIncomingButton: इनकमिंग चैट ट्रांसलेशन टॉगल करें
+  wwctcoOffSender: जावक चैट अनुवाद अक्षम है।
+  wwctcoOnSender: जावक चैट अनुवाद सक्षम किया गया। आप जो भी कहेंगे उसका अनुवाद किया
+    जाएगा!
+  wwctciOnSender: इनकमिंग चैट अनुवाद सक्षम किया गया। आपको जो भी मिलेगा वह अनुवादित
+    होगा!
+  wwctGUIChatMenu: चैट अनुवाद मेनू टॉगल करें
+  wwctcoOnTarget: '%i के लिए जावक चैट अनुवाद सक्षम किया गया।'
+  wwctcoOffTarget: '%i के लिए जावक चैट अनुवाद अक्षम किया गया।'
+  wwctGUIChatOutgoingButton: आउटगोइंग चैट ट्रांसलेशन टॉगल करें
+  wwctciOnTarget: '%i के लिए आवक चैट अनुवाद सक्षम किया गया।'
+  wwctciOffTarget: '%i के लिए आवक चैट अनुवाद अक्षम किया गया।'

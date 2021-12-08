@@ -296,11 +296,7 @@ Messages:
   wwctrlRateLimitBadInt: Din prisgräns är inte ett giltigt heltal.
   wwcTranslatorErrorConsole: Ett problem uppstod när användare %i försökte översätta
     dem. Kontrollera errorLog.txt för mer information.
-  wwctcOffSender: Chatt översättning inaktiverad.
-  wwctcOnTarget: Översättning av chatt aktiverad för %i.
-  wwctcOnSender: Översättning av chatt aktiverad. Allt du säger kommer att översättas!
   wwctGUIChatButton: Växla Chat Översättning
-  wwctcOffTarget: Översättning av chatt inaktiverad för %i.
   wwcrBegin: Ladda om WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Översättningssession för %i har stoppats.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chatt översätts,
@@ -325,3 +321,16 @@ Messages:
     växlas med lyckat resultat.
   wwcConfigGUISendFailedTranslationChatButton: Skicka chattmeddelande vid misslyckad
     översättning
+  wwctciOffSender: Översättning av inkommande chatt inaktiverad.
+  wwctGUIChatIncomingButton: Växla översättning för inkommande chatt
+  wwctcoOffSender: Översättning av utgående chatt inaktiverad.
+  wwctcoOnSender: Översättning av utgående chatt aktiverad. Allt du säger kommer att
+    översättas!
+  wwctciOnSender: Översättning av inkommande chatt aktiverad. Allt du får kommer att
+    översättas!
+  wwctGUIChatMenu: Växla menyn för chattöversättning
+  wwctcoOnTarget: Översättning av utgående chatt aktiverad för %i.
+  wwctcoOffTarget: Översättning av utgående chatt inaktiverad för %i.
+  wwctGUIChatOutgoingButton: Växla översättning av utgående chatt
+  wwctciOnTarget: Översättning av inkommande chatt aktiverad för %i.
+  wwctciOffTarget: Översättning av inkommande chatt inaktiverad för %i.

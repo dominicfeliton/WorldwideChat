@@ -232,11 +232,7 @@ Messages:
   wwcConfigConversationResponseLimitSuccess: 响应超时设置成功。
   wwctrlRateLimitBadInt: 您的速率限制不是有效的整数。
   wwcTranslatorErrorConsole: 用户 %i 尝试翻译时出现问题。有关更多详细信息，请查看 errorLog.txt。
-  wwctcOffSender: 聊天翻译已禁用。
-  wwctcOnTarget: 已为 %i 启用聊天翻译。
-  wwctcOnSender: 已启用聊天翻译。你说的任何话都会被翻译！
   wwctGUIChatButton: 切换聊天翻译
-  wwctcOffTarget: 已为 %i 禁用聊天翻译。
   wwcrBegin: 正在重新加载 WorldwideChat...
   wwctTranslationStoppedOtherPlayer: '%i 的翻译会话已停止。'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 全局聊天正在进行翻译，但是您有一个从 %i
@@ -254,3 +250,14 @@ Messages:
   wwcConfigGUIChangesNotSaved: 只有在你点击 /wwcc 中的红色屏障后，你的更改才会生效。
   wwcConfigConversationSendFailedTranslationChatSuccess: 成功切换失败的翻译聊天消息。
   wwcConfigGUISendFailedTranslationChatButton: 在翻译失败时发送聊天消息
+  wwctciOffSender: 传入聊天翻译已禁用。
+  wwctGUIChatIncomingButton: 切换传入聊天翻译
+  wwctcoOffSender: 已禁用外向聊天翻译。
+  wwctcoOnSender: 启用了外向聊天翻译。你说的任何话都会被翻译！
+  wwctciOnSender: 已启用传入聊天翻译。你收到的任何东西都会被翻译！
+  wwctGUIChatMenu: 切换聊天翻译菜单
+  wwctcoOnTarget: 为 %i 启用了外发聊天翻译。
+  wwctcoOffTarget: '%i 禁用了外发聊天翻译。'
+  wwctGUIChatOutgoingButton: 切换外向聊天翻译
+  wwctciOnTarget: 为 %i 启用了传入聊天翻译。
+  wwctciOffTarget: '%i 禁用了传入聊天翻译。'

@@ -295,12 +295,7 @@ Messages:
   wwctrlRateLimitBadInt: Sizning stavkangiz cheklovi haqiqiy emas.
   wwcTranslatorErrorConsole: '%i foydalanuvchisi ularning tarjimasiga urinayotganda
     muammo yuzaga keldi. Qo''shimcha ma''lumot olish uchun errorLog.txt tekshiring.'
-  wwctcOffSender: Chat tarjimasi o'chirib qo'yildi.
-  wwctcOnTarget: '%i uchun chat tarjimasi yoqilgan.'
-  wwctcOnSender: Chat tarjimasi yoqilgan. Siz aytayotgan har qanday narsa tarjima
-    qilinadi!
   wwctGUIChatButton: Toggle chat Tarjima
-  wwctcOffTarget: '%i uchun chat tarjimasi oʻchirildi.'
   wwcrBegin: WorldwideChat qayta yuklash...
   wwctTranslationStoppedOtherPlayer: '%i uchun tarjima sessiyasi to''xtatildi.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat tarjima qilinmoqda,
@@ -325,3 +320,16 @@ Messages:
     xabari muvaffaqiyatli o'tdi.
   wwcConfigGUISendFailedTranslationChatButton: Muvaffaqiyatsiz tarjima haqida chat
     xabarini yuboring
+  wwctciOffSender: Kiruvchi chat tarjimasi o'chirilgan.
+  wwctGUIChatIncomingButton: Toggle kiruvchi Chat tarjimasi
+  wwctcoOffSender: Chiquvchi chat tarjimasi o'chirilgan.
+  wwctcoOnSender: Chiquvchi chat tarjimasi yoqilgan. Siz aytayotgan har qanday narsa
+    tarjima qilinadi!
+  wwctciOnSender: Kiruvchi chat tarjimasi yoqilgan. Siz olgan har qanday narsa tarjima
+    qilinadi!
+  wwctGUIChatMenu: Toggle Chat tarjima menyusi
+  wwctcoOnTarget: '%i uchun chiquvchi chat tarjimasi yoqilgan.'
+  wwctcoOffTarget: Chiquvchi chat tarjimasi %i uchun o'chirib qo'yildi.
+  wwctGUIChatOutgoingButton: Toggle Chiquvchi Chat tarjimasi
+  wwctciOnTarget: '%i uchun kiruvchi chat tarjimasi yoqilgan.'
+  wwctciOffTarget: '%i uchun kiruvchi chat tarjimasi o''chirib qo''yildi.'

@@ -293,12 +293,7 @@ Messages:
   wwctrlRateLimitBadInt: Nid yw eich terfyn cyfradd yn gyfanrif dilys.
   wwcTranslatorErrorConsole: Digwyddodd problem tra defnyddiwr %i yn ceisio eu cyfieithiad.
     Gwiriwch errorLog.txt am fwy o fanylion.
-  wwctcOffSender: Cyfieithu sgwrsio anabl.
-  wwctcOnTarget: Cyfieithu sgwrsio galluogi am %i.
-  wwctcOnSender: Cyfieithu sgwrsio wedi'i alluogi. Bydd unrhyw beth a ddywedwch yn
-    cael ei gyfieithu!
   wwctGUIChatButton: Toggle Sgwrs Cyfieithu
-  wwctcOffTarget: Cyfieithu sgwrsio wedi'i analluogi am %i.
   wwcrBegin: Ail-lwytho WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Sesiwn gyfieithu ar gyfer %i wedi cael ei stopio.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Mae sgwrs fyd-eang yn
@@ -322,3 +317,16 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: Wedi methu neges sgwrsio
     cyfieithu toggled llwyddiannus.
   wwcConfigGUISendFailedTranslationChatButton: Anfon Neges Sgwrs ar Cyfieithu Methedig
+  wwctciOffSender: Cyfieithu sgwrsio sy'n dod i mewn anabl.
+  wwctGUIChatIncomingButton: Toggle Cyfieithu Sgwrs sy'n dod i mewn
+  wwctcoOffSender: Cyfieithiad sgwrsio sy'n mynd allan anabl.
+  wwctcoOnSender: Galluogi cyfieithu sgwrsio sy'n mynd allan. Bydd unrhyw beth a ddywedwch
+    yn cael ei gyfieithu!
+  wwctciOnSender: Cyfieithu sgwrsio sy'n dod i mewn galluogi. Bydd unrhyw beth a gewch
+    yn cael ei gyfieithu!
+  wwctGUIChatMenu: Toggle Sgwrs Dewislen Cyfieithu
+  wwctcoOnTarget: Galluogwyd cyfieithu sgwrsio sy'n mynd allan ar gyfer %i.
+  wwctcoOffTarget: Cyfieithiad sgwrsio sy'n mynd allan wedi ei analluogi am %i.
+  wwctGUIChatOutgoingButton: Toggle Cyfieithu Sgwrs Ymadawol
+  wwctciOnTarget: Cyfieithiad sgwrsio sy'n dod i mewn wedi'i alluogi am %i.
+  wwctciOffTarget: Cyfieithiad sgwrsio sy'n dod i mewn anabl am %i.

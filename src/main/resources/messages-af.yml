@@ -292,11 +292,7 @@ Messages:
   wwctrlRateLimitBadInt: Jou koersbeperking is nie 'n geldige heelgetal nie.
   wwcTranslatorErrorConsole: '''n Probleem het ondervind terwyl gebruiker %i hul vertaling
     probeer het. Gaan asseblief errorLog.txt vir meer besonderhede.'
-  wwctcOffSender: Gesels vertaling gedeaktiveer.
-  wwctcOnTarget: Gesels vertaling geaktiveer vir %i.
-  wwctcOnSender: Gesels vertaling geaktiveer. Enigiets wat jy sê, sal vertaal word!
   wwctGUIChatButton: Toggle Chat Vertaling
-  wwctcOffTarget: Gesels vertaling gedeaktiveer vir %i.
   wwcrBegin: Herlaai WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Vertaalsessie vir %i is gestop.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globale chat word vertaal,
@@ -319,3 +315,16 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: Mislukte vertaling chat boodskap
     suksesvol aangeskakel.
   wwcConfigGUISendFailedTranslationChatButton: Stuur kletsboodskap oor mislukte vertaling
+  wwctciOffSender: Inkomende chat vertaling gedeaktiveer.
+  wwctGUIChatIncomingButton: Skakel Inkomende Chat Vertaling
+  wwctcoOffSender: Uitgaande chat vertaling gedeaktiveer.
+  wwctcoOnSender: Uitgaande chat vertaling geaktiveer. Enigiets wat jy sê, sal vertaal
+    word!
+  wwctciOnSender: Inkomende chat vertaling geaktiveer. Enigiets wat u ontvang, sal
+    vertaal word!
+  wwctGUIChatMenu: Wissel Chat Vertaling Spyskaart
+  wwctcoOnTarget: Uitgaande kletsvertaling geaktiveer vir %i.
+  wwctcoOffTarget: Uitgaande kletsvertaling gedeaktiveer vir %i.
+  wwctGUIChatOutgoingButton: Wissel uitgaande chat vertaling
+  wwctciOnTarget: Inkomende chat vertaling geaktiveer vir %i
+  wwctciOffTarget: Inkomende kletsvertaling gedeaktiveer vir %i.

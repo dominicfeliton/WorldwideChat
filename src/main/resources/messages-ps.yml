@@ -288,11 +288,7 @@ Messages:
   wwctrlRateLimitBadInt: ستاسو د نرخ حد یو باوري عدد نه دی.
   wwcTranslatorErrorConsole: کومه ستونزه رامنځته شوه کله چې کارن- %i د خپلې ژباړې
     هڅه کوله. مهرباني وکړئ د نورو جزیاتو لپاره errorLog.txt وګورئ.
-  wwctcOffSender: د چیٹ ژباړه معیوب.
-  wwctcOnTarget: . چیٹ ژباړل د %i لپاره فعال شو
-  wwctcOnSender: د چیٹ ژباړه فعاله کړه. هر څه چې تاسو وایئ به ژباړل شي!
   wwctGUIChatButton: د چیٹ ژباړه توګول
-  wwctcOffTarget: .د ژباړې خبرې ناتوانول شو %i لپاره
   wwcrBegin: د WorldWieChat بیا ځلي کول...
   wwctTranslationStoppedOtherPlayer: .د ژباړې ناستې لپاره درول شو %i
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ګلوبل چیٹ ژباړل کیږي،
@@ -313,3 +309,15 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: ناکام ژباړې چیٹ پیغام په
     بریالیتوب سره ټګل شو.
   wwcConfigGUISendFailedTranslationChatButton: په ناکام ژباړه کې د چیٹ پیغام ولیږئ
+  wwctciOffSender: راتلونکی چیٹ ژباړه غیر فعال شوی.
+  wwctGUIChatIncomingButton: د راتلونکی چیٹ ژباړه
+  wwctcoOffSender: د وتلو چیٹ ژباړه معلولیت لري.
+  wwctcoOnSender: د وتلو چیٹ ژباړه فعاله شوه. هر څه چې تاسو وایاست به ژباړل شي!
+  wwctciOnSender: راتلونکی چیٹ ژباړه فعاله شوه. هر څه چې تاسو ترلاسه کوئ به ژباړل
+    شي!
+  wwctGUIChatMenu: د ژباړې غورنۍ چټ غږول
+  wwctcoOnTarget: د وتلي چیٹ ژباړې د %i لپاره فعال شو.
+  wwctcoOffTarget: د وتلي چیٹ ژباړه د %i لپاره معلول شوه.
+  wwctGUIChatOutgoingButton: د بهر تلونکي چیٹ ژباړه
+  wwctciOnTarget: راتلونکی چیٹ ژباړه د %i لپاره فعاله شوه.
+  wwctciOffTarget: راتلونکی چیٹ ژباړه د %i لپاره ناتوان شو.

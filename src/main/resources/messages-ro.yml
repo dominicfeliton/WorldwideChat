@@ -306,11 +306,7 @@ Messages:
   wwctrlRateLimitBadInt: Limita dvs. de rată nu este un număr întreg valid.
   wwcTranslatorErrorConsole: A apărut o problemă în timp ce utilizatorul %i încerca
     traducerea lor. Vă rugăm să verificați errorLog.txt pentru mai multe detalii.
-  wwctcOffSender: Traducere chat dezactivat.
-  wwctcOnTarget: Traducerea conversațiilor activată pentru %i.
-  wwctcOnSender: Traducerea chat-ului activată. Tot ce spui va fi tradus!
   wwctGUIChatButton: Comută traducerea conversațiilor
-  wwctcOffTarget: Traducerea conversațiilor dezactivate pentru %i.
   wwcrBegin: Reîncarcă WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Sesiunea de traducere pentru %i a fost oprită.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Chat global este tradus,
@@ -335,3 +331,16 @@ Messages:
     comuta cu succes.
   wwcConfigGUISendFailedTranslationChatButton: Trimite mesaj de chat pentru traducerea
     eșuată
+  wwctciOffSender: Intrare traducere chat dezactivat.
+  wwctGUIChatIncomingButton: Comută traducerea conversațiilor primite
+  wwctcoOffSender: Traducere chat de ieșire dezactivat.
+  wwctcoOnSender: Traducerea conversațiilor de ieșire activată. Tot ce spui va fi
+    tradus!
+  wwctciOnSender: Traducerea conversațiilor primite activată. Orice veţi primi va
+    fi tradus!
+  wwctGUIChatMenu: Comutare Meniu Traducere Chat
+  wwctcoOnTarget: Traducerea conversațiilor de ieșire activată pentru %i.
+  wwctcoOffTarget: Traducere chat de ieșire dezactivat pentru %i.
+  wwctGUIChatOutgoingButton: Comută traducerea conversațiilor de ieșire
+  wwctciOnTarget: Traducerea conversațiilor primite este activată pentru %i.
+  wwctciOffTarget: Traducerea chat-ului de intrare dezactivată pentru %i.

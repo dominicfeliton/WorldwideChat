@@ -304,11 +304,7 @@ Messages:
   wwctrlRateLimitBadInt: Вашата стапка граница не е валиден цел број.
   wwcTranslatorErrorConsole: Проблем се појави додека корисник %i се обидуваше нивниот
     превод. Ве молиме проверете errorLog.txt за повеќе детали.
-  wwctcOffSender: Превод на разговор оневозможено.
-  wwctcOnTarget: Преводот на разговор е овозможен за %i.
-  wwctcOnSender: Превод на разговор е овозможено. Нешто што ќе кажете ќе биде преведено!
   wwctGUIChatButton: Вклучи разговор Превод
-  wwctcOffTarget: Преводот на разговор е исклучен за %i.
   wwcrBegin: Превчитување WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Преводната сесија за %i е запрена.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобалниот разговор се
@@ -333,3 +329,15 @@ Messages:
     порака успешно.
   wwcConfigGUISendFailedTranslationChatButton: Испратете порака за разговор за неуспешен
     превод
+  wwctciOffSender: Дојдовни разговор превод оневозможено.
+  wwctGUIChatIncomingButton: Вклучи дојдовни разговор превод
+  wwctcoOffSender: Појдовни разговор превод оневозможено.
+  wwctcoOnSender: Појдовен разговор превод овозможено. Нешто што ќе кажете ќе биде
+    преведено!
+  wwctciOnSender: Дојдовни разговор превод овозможено. Нешто ќе добиете ќе биде преведено!
+  wwctGUIChatMenu: Вклучи Мени за преведување на разговор
+  wwctcoOnTarget: Овозможен е појдовен разговор превод за %i.
+  wwctcoOffTarget: Појдовен разговор превод оневозможено за %i.
+  wwctGUIChatOutgoingButton: Вклучи појдовни разговор Превод
+  wwctciOnTarget: Вклучен е дојдовен разговор превод за %i.
+  wwctciOffTarget: Дојдовен разговор превод оневозможено за %i.

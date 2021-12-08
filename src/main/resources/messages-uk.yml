@@ -296,11 +296,7 @@ Messages:
   wwctrlRateLimitBadInt: Обмеження ставки не є дійсним цілим числом.
   wwcTranslatorErrorConsole: Виникла проблема, коли користувач %i намагався їх переклад.
     Будь ласка, перевірте errorLog.txt для отримання додаткової інформації.
-  wwctcOffSender: Переклад чату вимкнено.
-  wwctcOnTarget: Переклад чату увімкнено для %i.
-  wwctcOnSender: Переклад чату увімкнено. Все, що ви скажете, буде переведено!
   wwctGUIChatButton: Переключити переклад балачки
-  wwctcOffTarget: Переклад чату вимкнено для %i.
   wwcrBegin: Перезавантаження WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Сеанс перекладу для %i було зупинено.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобальний чат наразі
@@ -323,3 +319,14 @@ Messages:
     чату успішно переведено.
   wwcConfigGUISendFailedTranslationChatButton: Надіслати повідомлення чату при невдалому
     перекладі
+  wwctciOffSender: Вхідний переклад чату вимкнено.
+  wwctGUIChatIncomingButton: Перемкнути вхідний переклад чату
+  wwctcoOffSender: Вихідний переклад чату вимкнено.
+  wwctcoOnSender: Включений вихідний переклад чату. Все, що ви говорите, буде перекладено!
+  wwctciOnSender: Включений вхідний переклад чату. Все, що ви отримаєте, буде перекладено!
+  wwctGUIChatMenu: Перемкнути меню «Переклад чату»
+  wwctcoOnTarget: Для %i увімкнено вихідний переклад чату.
+  wwctcoOffTarget: Вихідний переклад чату вимкнено для %i.
+  wwctGUIChatOutgoingButton: Переключити переклад вихідного чату
+  wwctciOnTarget: Вхідний переклад чату увімкнено для %i.
+  wwctciOffTarget: Вхідний переклад балачки вимкнено для %i.

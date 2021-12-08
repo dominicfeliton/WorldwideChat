@@ -239,11 +239,7 @@ Messages:
   wwctrlRateLimitBadInt: 요금 제한은 유효한 정수가 아닙니다.
   wwcTranslatorErrorConsole: '%i 사용자가 번역을 시도하는 동안 문제가 발생했습니다.자세한 내용은 errorLog.txt
     를 확인하십시오.'
-  wwctcOffSender: 채팅 번역이 비활성화되었습니다.
-  wwctcOnTarget: '%i에 대해 채팅 번역이 활성화되었습니다.'
-  wwctcOnSender: 채팅 번역이 활성화되었습니다.당신이 말하는 모든 것이 번역됩니다!
   wwctGUIChatButton: 채팅 번역 토글
-  wwctcOffTarget: '%i에 대한 채팅 번역이 비활성화되었습니다.'
   wwcrBegin: 월드와이드채팅을 다시 불러오는 중...
   wwctTranslationStoppedOtherPlayer: '%i에 대한 번역 세션이 중지되었습니다.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 글로벌 채팅이 번역 중이지만 %i에서 %o
@@ -261,3 +257,14 @@ Messages:
   wwcConfigGUIChangesNotSaved: /wwcc에서 빨간색 장벽을 클릭하기 전까지는 변경 사항이 적용되지 않습니다.
   wwcConfigConversationSendFailedTranslationChatSuccess: 실패한 번역 채팅 메시지가 성공적으로 전환되었습니다.
   wwcConfigGUISendFailedTranslationChatButton: 번역 실패시 채팅 메시지 보내기
+  wwctciOffSender: 수신 채팅 번역이 비활성화되었습니다.
+  wwctGUIChatIncomingButton: 수신 채팅 번역 전환
+  wwctcoOffSender: 발신 채팅 번역이 비활성화되었습니다.
+  wwctcoOnSender: 발신 채팅 번역이 활성화되었습니다.당신이 말하는 것은 무엇이든 번역될 것입니다!
+  wwctciOnSender: 수신 채팅 번역이 활성화되었습니다.받은 모든 것이 번역됩니다!
+  wwctGUIChatMenu: 채팅 번역 메뉴 토글
+  wwctcoOnTarget: 발신 채팅 번역이 %i에 대해 활성화되었습니다.
+  wwctcoOffTarget: '%i에 대해 발신 채팅 번역이 비활성화되었습니다.'
+  wwctGUIChatOutgoingButton: 발신 채팅 번역 전환
+  wwctciOnTarget: '%i에 대해 수신 채팅 번역이 활성화되었습니다.'
+  wwctciOffTarget: '%i에 대해 수신 채팅 번역이 비활성화되었습니다.'

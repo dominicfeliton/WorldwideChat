@@ -323,11 +323,7 @@ Messages:
   wwcTranslatorErrorConsole: Nagkaroon ng problema habang tinatangka ng gumagamit
     %i ang kanilang pagsasalin. Mangyaring suriin errorLog.txt para sa higit pang
     mga detalye.
-  wwctcOffSender: Hindi pinagana ang pagsasalin ng chat.
-  wwctcOnTarget: Pinagana ang pagsasalin ng chat para sa %i.
-  wwctcOnSender: Pinagana ang pagsasalin ng chat. Anumang sasabihin mo ay isasalin!
   wwctGUIChatButton: I-toggle ang Pagsasalin ng Chat
-  wwctcOffTarget: Hindi pinagana ang pagsasalin ng chat para sa %i.
   wwcrBegin: I-reload ang WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Ang sesyon ng pagsasalin para sa %i ay tumigil.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Isinasalin ang pandaigdigang
@@ -353,3 +349,16 @@ Messages:
     ang mensahe ng chat sa pagsasalin.
   wwcConfigGUISendFailedTranslationChatButton: Magpadala ng Chat Message sa Nabigong
     Pagsasalin
+  wwctciOffSender: Hindi pinagana ang pagsasalin ng papasok na chat.
+  wwctGUIChatIncomingButton: I-toggle ang Incoming Chat Translation
+  wwctcoOffSender: Hindi pinagana ang pagsasalin ng papalabas na chat.
+  wwctcoOnSender: Pinagana ang pagsasalin ng papalabas na chat. Ang anumang sasabihin
+    mo ay isasalin!
+  wwctciOnSender: Pinagana ang pagsasalin ng papasok na chat. Ang anumang natatanggap
+    mo ay isasalin!
+  wwctGUIChatMenu: I-toggle ang Pagsasalin ng Chat Menu
+  wwctcoOnTarget: Pinagana ang pagsasalin ng papalabas na chat para sa %i.
+  wwctcoOffTarget: Hindi pinagana ang pagsasalin ng papalabas na chat para sa %i.
+  wwctGUIChatOutgoingButton: I-toggle ang Papalabas na Pagsasalin ng Chat
+  wwctciOnTarget: Pinagana ang papasok na pagsasalin ng chat para sa %i.
+  wwctciOffTarget: Hindi pinagana ang pagsasalin ng papasok na chat para sa %i.

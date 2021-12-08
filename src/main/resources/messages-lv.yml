@@ -295,11 +295,7 @@ Messages:
   wwctrlRateLimitBadInt: Jūsu likmes ierobežojums nav derīgs vesels skaitlis.
   wwcTranslatorErrorConsole: Problēma radās, kamēr lietotājs %i mēģināja tulkot. Lūdzu,
     pārbaudiet errorLog.txt, lai iegūtu sīkāku informāciju.
-  wwctcOffSender: Tērzēšanas tulkošana ir
-  wwctcOnTarget: Tērzēšanas tulkojums iespējots uz %i.
-  wwctcOnSender: Tērzēšanas tulkojums iespējots Viss, ko jūs sakāt, tiks tulkots!
   wwctGUIChatButton: Pārslēgt tērzēšanas tulkošanu
-  wwctcOffTarget: Tērzēšanas tulkojums atspējots uz %i
   wwcrBegin: Pārlādēšana WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Tulkošanas sesija priekš %i ir apturēta.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globālā tērzēšana tiek
@@ -321,3 +317,15 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: Neizdevās tulkošanas tērzēšanas
     ziņojums pārslēgts veiksmīgi.
   wwcConfigGUISendFailedTranslationChatButton: Tērzēšanas ziņojuma sūtīšana par neizdev
+  wwctciOffSender: Ienākošais tērzēšanas tulkojums ir
+  wwctGUIChatIncomingButton: Pārslēgt ienākošo tērzēšanas tulkojumu
+  wwctcoOffSender: Izejošā tērzēšanas tulkošana atspēj
+  wwctcoOnSender: Izejošā tērzēšanas tulkošana iespējota Viss, ko jūs sakāt, tiks
+    tulkots!
+  wwctciOnSender: Ienākošā tērzēšanas tulkošana iespējota Viss, ko saņemat, tiks tulkots!
+  wwctGUIChatMenu: Pārslēgt tērzēšanas tulkošanas izvēlni
+  wwctcoOnTarget: Izejošā tērzēšanas tulkošana iespējota %i.
+  wwctcoOffTarget: Izejošā tērzēšanas tulkošana atspējot %i.
+  wwctGUIChatOutgoingButton: Pārslēgt izejošo čats tulkojumu
+  wwctciOnTarget: Ienākošā tērzēšanas tulkošana iespējota %i.
+  wwctciOffTarget: Ienākošā tērzēšanas tulkošana atspējot %i.

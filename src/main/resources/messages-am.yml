@@ -255,11 +255,7 @@ Messages:
   wwctrlRateLimitBadInt: የእርስዎ ተመን ገደብ ትክክለኛ ኢንቲጀር አይደለም።
   wwcTranslatorErrorConsole: ተጠቃሚው %i ትርጉማቸውን እየሞከረ ሳለ ችግር ተፈጥሯል። ተጨማሪ ዝርዝሮችን ለማግኘት
     errorLog.txt ይመልከቱ።
-  wwctcOffSender: የውይይት ትርጉም ተሰናክሏል።
-  wwctcOnTarget: የውይይት ትርጉም ለ %i ነቅቷል።
-  wwctcOnSender: የውይይት ትርጉም ነቅቷል። የምትሉት ነገር ሁሉ ይተረጎማል!
   wwctGUIChatButton: የውይይት ትርጉም ይቀያይሩ
-  wwctcOffTarget: የውይይት ትርጉም ተሰናክሏል ለ %i።
   wwcrBegin: WorldwideChat ን ዳግም በመጫን ላይ...
   wwctTranslationStoppedOtherPlayer: የትርጉም ክፍለ ጊዜ ለ %i ቆሟል።
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ግሎባል ውይይት እየተተረጎመ ነው,
@@ -279,3 +275,14 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: አልተሳካም የትርጉም ውይይት መልዕክት በተሳካ
     ሁኔታ ቀይሯል።
   wwcConfigGUISendFailedTranslationChatButton: አልተሳካም ትርጉም ላይ የውይይት መልዕክት ይላኩ
+  wwctciOffSender: ገቢ የውይይት ትርጉም ተሰናክሏል።
+  wwctGUIChatIncomingButton: ገቢ የውይይት ትርጉም ቀያይር
+  wwctcoOffSender: ወጪ የውይይት ትርጉም ተሰናክሏል።
+  wwctcoOnSender: ወጪ የውይይት ትርጉም ነቅቷል። የምትሉት ማንኛውም ነገር ይተረጎማል!
+  wwctciOnSender: ገቢ የውይይት ትርጉም ነቅቷል። የሚቀበሉት ማንኛውም ነገር ይተረጎማል!
+  wwctGUIChatMenu: የውይይት የትርጉም ምናሌ ቀያይር
+  wwctcoOnTarget: ወጪ የውይይት ትርጉም ነቅለ %i።
+  wwctcoOffTarget: ወጪ የውይይት ትርጉም ተሰናክሏል ለ %i።
+  wwctGUIChatOutgoingButton: ወጪ የውይይት ትርጉም ቀያይር
+  wwctciOnTarget: ገቢ የውይይት ትርጉም ነቅለ %i።
+  wwctciOffTarget: ገቢ የውይይት ትርጉም ተሰናክሏል ለ %i።

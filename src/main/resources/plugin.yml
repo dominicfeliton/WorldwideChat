@@ -53,11 +53,17 @@ commands:
         usage: §4/wwcte (playerName)
         permission: worldwidechat.wwcte
         permission-message: §4You do not have permission to run this command.
-    wwctc:
-        description: Enables chat translation to a certain language.
-        aliases: [wwctranslatechat, translatechat]
-        usage: §4/wwctc (playerName)
-        permission: worldwidechat.wwctc
+    wwctco:
+        description: Enables outgoing chat translation to a certain language.
+        aliases: [wwctranslatechatoutgoing, translatechatoutgoing]
+        usage: §4/wwctco (playerName)
+        permission: worldwidechat.wwctco
+        permission-message: §4You do not have permission to run this command.
+    wwctci:
+        description: Enables incoming chat translation to a certain language.
+        aliases: [wwctranslatechatincoming, translatechatincoming]
+        usage: §4/wwctcu (playerName)
+        permission: worldwidechat.wwctci
         permission-message: §4You do not have permission to run this command.
     wwcs:
         description: Gets translation stats for a specified user.
@@ -95,8 +101,10 @@ permissions:
             worldwidechat.wwcti.otherplayers: true
             worldwidechat.wwcte: true
             worldwidechat.wwcte.otherplayers: true
-            worldwidechat.wwctc: true
-            worldwidechat.wwctc.otherplayers: true
+            worldwidechat.wwctco: true
+            worldwidechat.wwctco.otherplayers: true
+            worldwidechat.wwctci: true
+            worldwidechat.wwctci.otherplayers: true
             worldwidechat.wwcs: true
             worldwidechat.ratelimit.exempt: true
             worldwidechat.wwcc: true
@@ -144,11 +152,17 @@ permissions:
     worldwidechat.wwcte.otherplayers:
         description: Gives access to /wwcte on target players.
         default: op
-    worldwidechat.wwctc:
-        description: Gives access to /wwctc.
+    worldwidechat.wwctco:
+        description: Gives access to /wwctco.
         default: true
-    worldwidechat.wwctc.otherplayers:
-        description: Gives access to /wwctc on target players.
+    worldwidechat.wwctco.otherplayers:
+        description: Gives access to /wwctco on target players.
+        default: op
+    worldwidechat.wwctci:
+        description: Gives access to /wwctci.
+        default: true
+    worldwidechat.wwctci.otherplayers:
+        description: Gives access to /wwctci on target players.
         default: op
     worldwidechat.wwcs:
         description: Gives access to /wwcs.

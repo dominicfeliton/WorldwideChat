@@ -287,11 +287,7 @@ Messages:
   wwctrlRateLimitBadInt: Сіздің мөлшерлеме шегі жарамды бүтін сан емес.
   wwcTranslatorErrorConsole: '%i қолдануда олардың аудармасын жасау кезінде проблема
     туындады. Қосымша ақпарат алу үшін errorLog.txt тексеріңіз.'
-  wwctcOffSender: Чат аударма өшірілген.
-  wwctcOnTarget: Чат аудармасы %i үшін қосылған.
-  wwctcOnSender: Чат аудармасы қосылған. Сіз айтқан нәрсе аударылады!
   wwctGUIChatButton: Toggle чат аудармасы
-  wwctcOffTarget: Чат аудармасы өшірілген %i.
   wwcrBegin: Әлемді қайта жүктеу WidecHat...
   wwctTranslationStoppedOtherPlayer: '%i үшін аударма сессиясы тоқтатылды.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Ғаламдық чат аударылып
@@ -314,3 +310,14 @@ Messages:
     сәтті ауыстырылды.
   wwcConfigGUISendFailedTranslationChatButton: Орындалмаған аударма туралы чат хабарын
     жіберу
+  wwctciOffSender: Кіріс чат аударма өшірілген.
+  wwctGUIChatIncomingButton: Toggle Кіріс чат аударма
+  wwctcoOffSender: Шығыс чат аудармасы өшірілген.
+  wwctcoOnSender: Шығыс чат аудармасы қосылған. Сіз айтқан кез келген нәрсе аударылады!
+  wwctciOnSender: Кіріс чат аудармасы қосылған. Сіз алған кез келген нәрсе аударылады!
+  wwctGUIChatMenu: Toggle чат аударма мәзірі
+  wwctcoOnTarget: '%i үшін шығыс чат аудармасы қосылған.'
+  wwctcoOffTarget: '%i үшін шығыс чат аудармасы өшірілген.'
+  wwctGUIChatOutgoingButton: Шығыс чат аудармасы
+  wwctciOnTarget: Кіріс чат аудармасы %i үшін қосылған.
+  wwctciOffTarget: Кіріс чат аудармасы өшірілген %i.

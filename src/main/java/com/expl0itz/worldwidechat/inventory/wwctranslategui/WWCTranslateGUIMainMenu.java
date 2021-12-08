@@ -16,7 +16,6 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
-import com.expl0itz.worldwidechat.commands.WWCTranslateChat;
 import com.expl0itz.worldwidechat.commands.WWCTranslateEntity;
 import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
@@ -230,11 +229,11 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				}
 				
 				/* Chat Translation Button */
-				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwctc")
-						&& (player.hasPermission("worldwidechat.wwctc.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
+				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && (player.hasPermission("worldwidechat.wwctci") || player.hasPermission("worldwidechat.wwctco"))
+						&& (player.hasPermission("worldwidechat.wwctci.otherplayers") || player.hasPermission("worldwidechat.wwctco") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
 					ItemStack chatButton = XMaterial.PAINTING.parseItem();
 					ItemMeta chatMeta = chatButton.getItemMeta();
-					if (targetTranslator.getTranslatingChatOutgoing()) {
+					if (targetTranslator.getTranslatingChatOutgoing() || targetTranslator.getTranslatingChatIncoming()) {
 						chatMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 						chatMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
 						chatMeta.setDisplayName(ChatColor.GREEN
@@ -245,10 +244,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 					}
 					chatButton.setItemMeta(chatMeta);
 					contents.set(3, 4, ClickableItem.of(chatButton, e -> {
-						String[] args = { main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName() };
-						WWCTranslateChat translateChat = new WWCTranslateChat((CommandSender) player, null, null, args);
-						translateChat.processCommand();
-						getTranslateMainMenu(targetPlayerUUID).open(player);
+						WWCTranslateGUIChatMenu.getTranslateChatMenu(targetPlayerUUID).open(player);
 					}));
 				}
 			}

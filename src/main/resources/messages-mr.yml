@@ -168,7 +168,6 @@ Messages:
     ठराविक
   wwcConfigConversationAmazonTranslateAccessKeyInput: सध्याची ऍक्सेस की %i आहे. कृपया
     ऍमेझॉनसाठी ऍक्सेस की इनपुट करा, किंवा परत जाण्यासाठी टाइप करा 0.
-  wwctcOffTarget: '%i करीता चॅट भाषांतर अकार्यान्वीत केले आहे.'
   wwcConfigConversationSyncUserDataDelayInput: वापरकर्ता डेटाचे संकालित सद्य विलंबाने
     %i सेकंद आहे. नवीन मूल्य सेट करण्यासाठी 10 पेक्षा जास्त काहीही टाइप करा, किंवा
     10 पेक्षा कमी काहीही परत जाण्यासाठी.
@@ -211,7 +210,6 @@ Messages:
   wwcConfigConversationAmazonTranslateSecretKeyInput: सध्याची गुप्त किल्ली %i आहे.
     कृपया ऍमेझॉनसाठी एक गुप्त की इनपुट करा, किंवा परत जाण्यासाठी टाइप करा 0.
   wwctiOnTarget: '%i करीता घटक भाषांतर सक्षम केले.'
-  wwctcOnSender: गप्पा अनुवाद सक्षम. आपण जे काही बोलता ते अनुवादित केले जाईल!
   wwcConfigGUIAmazonTranslateButton: ऍमेझॉन भाषांतर
   wwcConfigConversationLangSuccess: प्लगइन भाषा यशस्वीरित्या बदलली.
   wwcConfigConversationTranslationCacheInput: सध्याचे भाषांतर कॅशे मर्यादा %i वाक्ये
@@ -233,7 +231,6 @@ Messages:
   wwctbTranslatePageFail: (या पृष्ठाचे भाषांतर करण्यास अपयशी) %i
   wwctiOnSender: आयटम अनुवाद सक्षम. त्याचे भाषांतर करण्यासाठी आपल्या मुख्य हातात असलेल्या
     आयटमसह उजवे-क्लिक करा!
-  wwctcOnTarget: '%i करीता चॅट भाषांतर सक्षम केले.'
   wwcConfigGUIMessagesOverrideOriginalLabel: मूळ संदेश
   wwcConfigGUISyncUserDataButton: वापरकर्ता डेटा समक्रमण विलंब बदला
   wwctGUISourceTranslationSelected: तुम्ही ही भाषा निवडली आहे.
@@ -280,7 +277,6 @@ Messages:
   wwctSameLangError: 'आपण एकाच भाषेत अनुवाद करू शकत नाही! वैध लांब कोड: %o'
   wwctLangToLangStartOtherPlayer: '%i ते %e पासून %e करीता नविन भाषांतर सत्र सुरू
     करत आहे.'
-  wwctcOffSender: गप्पा अनुवाद अक्षम.
   wwcConfigGUICharacterLimitButton: संदेश अक्षर मर्यादा बदला
   wwctLangToLangStart: '%i पासून %o पासून नविन भाषांतर सत्र सुरू करणे.'
   wwctGUISourceOrTargetTranslationAlreadyActive: ही भाषा आधीच सक्रिय आहे!
@@ -320,3 +316,16 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: अयशस्वीपणे भाषांतर केलेले
     चॅट संदेश अयशस्वी झाले.
   wwcConfigGUISendFailedTranslationChatButton: अयशस्वी अनुवाद वर गप्पा संदेश पाठवा
+  wwctciOffSender: येणारे चॅट भाषांतर अक्षम केले.
+  wwctGUIChatIncomingButton: इनकमिंग चॅट भाषांतर टॉगल करा
+  wwctcoOffSender: आउटगोइंग चॅट भाषांतर अक्षम केले.
+  wwctcoOnSender: आउटगोइंग चॅट भाषांतर सक्षम केले. आपण जे काही बोलता ते अनुवादित केले
+    जाईल!
+  wwctciOnSender: येणारे चॅट भाषांतर सक्षम केले. आपण प्राप्त काहीही अनुवादित केले
+    जाईल!
+  wwctGUIChatMenu: चॅट भाषांतर मेनू टॉगल करा
+  wwctcoOnTarget: आउटगोइंग चॅट भाषांतर %i करीता सक्षम केले.
+  wwctcoOffTarget: आउटगोइंग चॅट भाषांतर %i करीता अकार्यान्वीत केले आहे.
+  wwctGUIChatOutgoingButton: आउटगोइंग चॅट ट्रान्सलेशन टॉगल करा
+  wwctciOnTarget: '%i करीता इनकमिंग चॅट भाषांतर सक्षम केले.'
+  wwctciOffTarget: येणारे चॅट भाषांतर %i करीता अकार्यान्वीत केले आहे.

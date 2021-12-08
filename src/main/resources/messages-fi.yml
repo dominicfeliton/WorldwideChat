@@ -289,11 +289,7 @@ Messages:
   wwctrlRateLimitBadInt: Korkorajoituksesi ei ole kelvollinen kokonaisluku.
   wwcTranslatorErrorConsole: Ongelma ilmeni, kun käyttäjä %i yritti käännöstä. Tarkista
     lisätietoja errorLog.txt.
-  wwctcOffSender: Chat käännös poistettu käytöstä
-  wwctcOnTarget: Keskustelukäännös käytössä kohteella %i.
-  wwctcOnSender: Keskustelukäännös käytössä. Kaikki, mitä sanot, käännetään!
   wwctGUIChatButton: Vaihda Chat Käännös
-  wwctcOffTarget: Keskustelukäännös poistettu käytöstä kohteella %i
   wwcrBegin: Lataa WorldwideChat uudelleen...
   wwctTranslationStoppedOtherPlayer: Käännösistunto kohteelle %i on pysäytetty
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Yleistä keskustelua käännetään,
@@ -317,3 +313,14 @@ Messages:
     vaihdettiin onnistuneesti.
   wwcConfigGUISendFailedTranslationChatButton: Lähetä chat-viesti epäonnistuneesta
     käännöksestä
+  wwctciOffSender: Saapuva chat-käännös poistettu käytöstä.
+  wwctGUIChatIncomingButton: Vaihda Saapuva Chat Käännös
+  wwctcoOffSender: Lähtevä chat-käännös poistettu käytöstä.
+  wwctcoOnSender: Lähtevä chat-käännös käytössä. Kaikki mitä sanot käännetään!
+  wwctciOnSender: Saapuva chat-käännös käytössä. Kaikki saamasi käännetään!
+  wwctGUIChatMenu: Vaihda Chat Käännös Menu
+  wwctcoOnTarget: Lähtevä chat käännös käytössä %i.
+  wwctcoOffTarget: Lähtevä chat-käännös on poistettu käytöstä kohteelle %i.
+  wwctGUIChatOutgoingButton: Toggle Lähtevä Chat Käännös
+  wwctciOnTarget: Saapuva chat käännös käytössä %i.
+  wwctciOffTarget: Saapuva chat-käännös on poistettu käytöstä %i.

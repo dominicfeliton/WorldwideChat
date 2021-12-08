@@ -298,11 +298,7 @@ Messages:
   wwctrlRateLimitBadInt: Je tarieflimiet is geen geldig geheel getal.
   wwcTranslatorErrorConsole: Er is een probleem opgetreden tijdens de vertaling van
     gebruiker %i. Raadpleeg errorLog.txt voor meer informatie.
-  wwctcOffSender: Chatvertaling is uitgeschakeld.
-  wwctcOnTarget: Chatvertaling is ingeschakeld voor %i.
-  wwctcOnSender: Chatvertaling ingeschakeld. Alles wat je zegt wordt vertaald!
   wwctGUIChatButton: Toggle Chat Vertaling
-  wwctcOffTarget: Chatvertaling is uitgeschakeld voor %i.
   wwcrBegin: WorldwideChat herladen...
   wwctTranslationStoppedOtherPlayer: De vertaalsessie voor %i is gestopt.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globale chat wordt vertaald,
@@ -327,3 +323,16 @@ Messages:
     is met succes geschakeld.
   wwcConfigGUISendFailedTranslationChatButton: Chatbericht verzenden bij mislukte
     vertaling
+  wwctciOffSender: Inkomende chatvertaling uitgeschakeld.
+  wwctGUIChatIncomingButton: Toggle Inkomende chatvertaling
+  wwctcoOffSender: Uitgaande chatvertaling uitgeschakeld.
+  wwctcoOnSender: Vertaling van uitgaande chat ingeschakeld. Alles wat je zegt wordt
+    vertaald!
+  wwctciOnSender: Inkomende chatvertaling ingeschakeld. Alles wat je ontvangt wordt
+    vertaald!
+  wwctGUIChatMenu: Toggle Chat - Vertaalmenu
+  wwctcoOnTarget: Vertaling van uitgaande chat ingeschakeld voor %i.
+  wwctcoOffTarget: Uitgaande chatvertaling uitgeschakeld voor %i.
+  wwctGUIChatOutgoingButton: Toggle uitgaande chat vertaling
+  wwctciOnTarget: Inkomende chatvertaling ingeschakeld voor %i.
+  wwctciOffTarget: Inkomende chatvertaling uitgeschakeld voor %i.

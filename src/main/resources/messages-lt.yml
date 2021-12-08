@@ -292,11 +292,7 @@ Messages:
   wwctrlRateLimitBadInt: Jūsų normos limitas nėra tinkamas sveikasis skaičius.
   wwcTranslatorErrorConsole: Problema kilo, kai vartotojas %i bandė jų vertimą. Prašome
     patikrinti errorLog.txt daugiau informacijos.
-  wwctcOffSender: Pokalbiai vertimas išjungtas.
-  wwctcOnTarget: Pokalbių vertimas įjungtas %i.
-  wwctcOnSender: Pokalbių vertimas įjungtas. Viskas, ką jūs sakote, bus išversta!
   wwctGUIChatButton: Perjungti Pokalbių Vertimas
-  wwctcOffTarget: Pokalbių vertimas išjungtas %i.
   wwcrBegin: Perkrovimas WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Vertimo sesija %i buvo sustabdyta.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat yra verčiamas,
@@ -318,3 +314,14 @@ Messages:
     pranešimas sėkmingai perėjo.
   wwcConfigGUISendFailedTranslationChatButton: Siųsti pokalbių pranešimą dėl nepavykusio
     vertimo
+  wwctciOffSender: Gaunamų pokalbių vertimas išjungtas.
+  wwctGUIChatIncomingButton: Perjungti Gaunamus Pokalbiai Vertimas
+  wwctcoOffSender: Išeinantis pokalbių vertimas išjungtas.
+  wwctcoOnSender: Išeinantis pokalbių vertimas įjungtas. Viskas, ką sakote, bus išversta!
+  wwctciOnSender: Įjungtas įeinantis pokalbių vertimas. Viskas, ką gausite, bus išversta!
+  wwctGUIChatMenu: Perjungti Pokalbių vertimo meniu
+  wwctcoOnTarget: Išeinančio pokalbio vertimas įjungtas %i.
+  wwctcoOffTarget: Išeinančio pokalbio vertimas išjungtas %i.
+  wwctGUIChatOutgoingButton: Perjungti Išeinantis Pokalbių Vertimas
+  wwctciOnTarget: Gaunamų pokalbių vertimas įjungtas %i.
+  wwctciOffTarget: Gaunamų pokalbių vertimas išjungtas %i.

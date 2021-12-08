@@ -297,11 +297,7 @@ Messages:
   wwctrlRateLimitBadInt: Batas tingkat Anda bukan bilangan bulat yang valid.
   wwcTranslatorErrorConsole: Sebuah masalah terjadi ketika pengguna %i mencoba terjemahan
     mereka. Silakan periksa errorLog.txt untuk lebih jelasnya.
-  wwctcOffSender: Terjemahan obrolan dinonaktifkan.
-  wwctcOnTarget: Terjemahan obrolan diaktifkan untuk %i.
-  wwctcOnSender: Terjemahan obrolan diaktifkan. Apa pun yang Anda katakan akan diterjemahkan!
   wwctGUIChatButton: Toggle Terjemahan Obrolan
-  wwctcOffTarget: Terjemahan obrolan dinonaktifkan untuk %i.
   wwcrBegin: Memuat ulang WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Sesi terjemahan untuk %i telah dihentikan.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Obrolan global sedang
@@ -325,3 +321,16 @@ Messages:
     gagal berhasil diubah.
   wwcConfigGUISendFailedTranslationChatButton: Mengirim Pesan Obrolan pada Terjemahan
     Gagal
+  wwctciOffSender: Terjemahan obrolan masuk dinonaktifkan.
+  wwctGUIChatIncomingButton: Alihkan Terjemahan Obrolan Masuk
+  wwctcoOffSender: Terjemahan obrolan keluar dinonaktifkan.
+  wwctcoOnSender: Terjemahan obrolan keluar diaktifkan. Apa pun yang Anda katakan
+    akan diterjemahkan!
+  wwctciOnSender: Terjemahan obrolan masuk diaktifkan. Apa pun yang Anda terima akan
+    diterjemahkan!
+  wwctGUIChatMenu: Beralih Obrolan Menu Terjemahan
+  wwctcoOnTarget: Terjemahan obrolan keluar diaktifkan untuk %i.
+  wwctcoOffTarget: Terjemahan obrolan keluar dinonaktifkan untuk %i.
+  wwctGUIChatOutgoingButton: Alihkan Terjemahan Obrolan Keluar
+  wwctciOnTarget: Terjemahan obrolan masuk diaktifkan untuk %i.
+  wwctciOffTarget: Terjemahan obrolan masuk dinonaktifkan untuk %i.

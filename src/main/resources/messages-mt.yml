@@ -295,11 +295,7 @@ Messages:
   wwctrlRateLimitBadInt: Il-limitu tar-rata tiegħek mhuwiex numru sħiħ validu.
   wwcTranslatorErrorConsole: Problema seħħet waqt l-utent %i kien jippruvaw traduzzjoni
     tagħhom. Jekk jogħġbok iċċekkja errorLog.txt għal aktar dettalji.
-  wwctcOffSender: Chat traduzzjoni b'diżabilità.
-  wwctcOnTarget: Chat traduzzjoni ppermettiet għal %i.
-  wwctcOnSender: Chat traduzzjoni ppermettiet. Kull ħaġa li tgħid se tiġi tradotta!
   wwctGUIChatButton: Traduzzjoni Toggle Chat
-  wwctcOffTarget: Chat traduzzjoni b'diżabilità għal %i.
   wwcrBegin: Reloading WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Sessjoni ta 'traduzzjoni għal % twaqqfet.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Chat globali qed jiġi
@@ -323,3 +319,16 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: Naqas messaġġ chat traduzzjoni
     toggled b'suċċess.
   wwcConfigGUISendFailedTranslationChatButton: Ibgħat Messaġġ ta 'Chat fuq Traduzzjoni
+  wwctciOffSender: Traduzzjoni chat deħlin b'diżabilità.
+  wwctGUIChatIncomingButton: Toggle Traduzzjoni Chat deħlin
+  wwctcoOffSender: Traduzzjoni chat ħerġin b'diżabilità.
+  wwctcoOnSender: Ħierġa chat traduzzjoni ppermettiet. Kull ħaġa li tgħid se tkun
+    tradotta!
+  wwctciOnSender: Traduzzjoni chat deħlin ppermettiet. Kull ħaġa li tirċievi se tkun
+    tradotta!
+  wwctGUIChatMenu: Toggle Chat Menu Traduzzjoni
+  wwctcoOnTarget: Ħierġa chat traduzzjoni ppermettiet għal %i.
+  wwctcoOffTarget: Ħierġa chat traduzzjoni b'diżabilità għal %i.
+  wwctGUIChatOutgoingButton: Toggle Outgoing Chat Traduzzjoni
+  wwctciOnTarget: Traduzzjoni chat deħlin ppermettiet għal %i.
+  wwctciOffTarget: Traduzzjoni chat deħlin b'diżabilità għal %i.

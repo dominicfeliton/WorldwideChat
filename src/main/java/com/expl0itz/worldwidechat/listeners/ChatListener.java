@@ -44,6 +44,10 @@ public class ChatListener implements Listener {
 		}
 		
 		/* New WWC functionality/Incoming Messages */
+		//TODO: Add small message saying message failed to translate next to original message, do not perform modifications.
+		//TODO: Make hover text toggleable.
+		//TODO: Prefixes and suffixes get nuked when player is in external translation mode; either fix this, or own it
+		//TODO: User-configurable default chat translation to start at: incoming messages, outgoing messages, or both
 		CommonDefinitions.sendDebugMessage("Message format: " + event.getFormat());
 		List<Player> unmodifiedMessageRecipients = new ArrayList<Player>();
 		for (Player eaRecipient : event.getRecipients()) {
@@ -53,6 +57,7 @@ public class ChatListener implements Listener {
 					/* Check if this testTranslator doesn't already want the current chat message */
 					&& !(!currTranslator.getUUID().equals("") && currTranslator.getInLangCode().equals(testTranslator.getInLangCode())
 							&& currTranslator.getOutLangCode().equals(testTranslator.getOutLangCode()))) {
+				
 				String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), CommonDefinitions.translateText(event.getMessage() + ChatColor.ITALIC + " (Translated)", eaRecipient));
 				TextComponent hoverOutMessage = Component.text()
 						.content(outMessageWithoutHover)

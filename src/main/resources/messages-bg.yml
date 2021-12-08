@@ -304,11 +304,7 @@ Messages:
   wwctrlRateLimitBadInt: Вашият лимит на скоростта не е валидно цяло число.
   wwcTranslatorErrorConsole: Проблем възникна при опит за превод на потребител %i.
     Моля, проверете errorLog.txt за повече подробности.
-  wwctcOffSender: Чат превод забранен.
-  wwctcOnTarget: Преводът на чат е разрешен за %i.
-  wwctcOnSender: Разрешен чат превод. Всичко, което кажете, ще бъде преведено!
   wwctGUIChatButton: Превключване на чат превод
-  wwctcOffTarget: Преводът на чат е забранен за %i.
   wwcrBegin: Презареждане на WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Сесията за превод за %i беше спряна.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобалният чат се превежда,
@@ -331,3 +327,14 @@ Messages:
     прекъсна успешно.
   wwcConfigGUISendFailedTranslationChatButton: Изпращане на чат съобщение за неуспешен
     превод
+  wwctciOffSender: Входящ чат превод забранено.
+  wwctGUIChatIncomingButton: Превключване входящ чат превод
+  wwctcoOffSender: Изходящ чат превод забранено.
+  wwctcoOnSender: Изходящ чат превод активиран. Всичко, което кажете, ще бъде преведено!
+  wwctciOnSender: Входящ чат превод активиран. Всичко, което получите, ще бъде преведено!
+  wwctGUIChatMenu: Превключване на менюто за превод на чат
+  wwctcoOnTarget: Изходящ превод на чат е активиран за %i.
+  wwctcoOffTarget: Изходящ превод на чат е забранен за %i.
+  wwctGUIChatOutgoingButton: Превключване на изходящи чат превод
+  wwctciOnTarget: Входящ чат превод е активиран за %i.
+  wwctciOffTarget: Преводът на входящ чат е забранен за %i.

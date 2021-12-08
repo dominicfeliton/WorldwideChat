@@ -28,7 +28,8 @@ import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCStats;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
-import com.expl0itz.worldwidechat.commands.WWCTranslateChat;
+import com.expl0itz.worldwidechat.commands.WWCTranslateChatIncoming;
+import com.expl0itz.worldwidechat.commands.WWCTranslateChatOutgoing;
 import com.expl0itz.worldwidechat.commands.WWCTranslateEntity;
 import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
@@ -88,7 +89,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	private String pluginLang = "en";
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "12072021-1"; //This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "12092021-1"; //This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	/* Default constructor */
@@ -245,10 +246,14 @@ public class WorldwideChat extends JavaPlugin {
 			// Entity translation
 			WWCTranslateEntity wwcte = new WWCTranslateEntity(sender, command, label, args);
 			return wwcte.processCommand();
-		} else if (command.getName().equalsIgnoreCase("wwctc") && hasValidTranslatorSettings(sender)){
-			// Chat translation
-			WWCTranslateChat wwctc = new WWCTranslateChat(sender, command, label, args);
-			return wwctc.processCommand();
+		} else if (command.getName().equalsIgnoreCase("wwctco") && hasValidTranslatorSettings(sender)){
+			// Outgoing chat translation
+			WWCTranslateChatOutgoing wwctco = new WWCTranslateChatOutgoing(sender, command, label, args);
+			return wwctco.processCommand();
+		} else if (command.getName().equalsIgnoreCase("wwctci") && hasValidTranslatorSettings(sender)){
+			// Incoming chat translation
+			WWCTranslateChatIncoming wwctci = new WWCTranslateChatIncoming(sender, command, label, args);
+			return wwctci.processCommand();
 		} else if (command.getName().equalsIgnoreCase("wwcs") && !translatorName.equals("Starting")) {
 			// Stats for translator
 			WWCStats wwcs = new WWCStats(sender, command, label, args);
@@ -433,7 +438,8 @@ public class WorldwideChat extends JavaPlugin {
 		getCommand("wwcti").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwctb").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwcte").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwctc").setTabCompleter(new WWCTabCompleter());
+		getCommand("wwctco").setTabCompleter(new WWCTabCompleter());
+		getCommand("wwctci").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwcts").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwcs").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwctrl").setTabCompleter(new WWCTabCompleter());

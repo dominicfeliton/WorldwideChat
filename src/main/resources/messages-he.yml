@@ -265,11 +265,7 @@ Messages:
   wwctrlRateLimitBadInt: מגבלת התעריף אינה מספר שלם חוקי.
   wwcTranslatorErrorConsole: אירעה בעיה בזמן שהמשתמש %i ניסה את התרגום שלהם. אנא בדוק
     errorLog.txt לפרטים נוספים.
-  wwctcOffSender: תרגום צ'אט מושבת.
-  wwctcOnTarget: תרגום צ'אט מופעל עבור %i.
-  wwctcOnSender: תרגום צ'אט מופעל. כל מה שתגיד יתורגם!
   wwctGUIChatButton: החלף תרגום צ'אט
-  wwctcOffTarget: תרגום צ'אט מושבת עבור %i.
   wwcrBegin: טוען מחדש את וורלד-ווידצ...
   wwctTranslationStoppedOtherPlayer: הפעלת התרגום עבור %i הופסקה.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: צ'אט גלובלי מתורגם, אבל
@@ -289,3 +285,14 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: הודעת צ'אט התרגום נכשלה הועברה
     בהצלחה.
   wwcConfigGUISendFailedTranslationChatButton: שלח הודעת צ'אט בתרגום כושל
+  wwctciOffSender: תרגום צ'אט נכנס מושבת.
+  wwctGUIChatIncomingButton: החלפת תרגום צ'אט נכנס
+  wwctcoOffSender: תרגום צ'אט יוצא מושבת.
+  wwctcoOnSender: תרגום צ'אט יוצא מופעל. כל מה שתגיד יתורגם!
+  wwctciOnSender: תרגום צ'אט נכנס מופעל. כל דבר שתקבלו יתורגם!
+  wwctGUIChatMenu: החלפת תפריט תרגום צ'אט
+  wwctcoOnTarget: תרגום צ'אט יוצא מופעל עבור %i.
+  wwctcoOffTarget: תרגום צ'אט יוצא מושבת עבור %i.
+  wwctGUIChatOutgoingButton: החלפת תרגום צ'אט יוצא
+  wwctciOnTarget: תרגום צ'אט נכנס מופעל עבור %i.
+  wwctciOffTarget: תרגום צ'אט נכנס מושבת עבור %i.

@@ -297,11 +297,7 @@ Messages:
   wwctrlRateLimitBadInt: Таны ханшийн хязгаар нь хүчин төгөлдөр бүхэл тоо биш юм.
   wwcTranslatorErrorConsole: Хэрэглэгч %i тэдний орчуулгыг оролдож байх үед асуудал
     гарсан. Илүү дэлгэрэнгүйг errorLog.txt шалгана уу.
-  wwctcOffSender: Чат орчуулга тахир дутуу.
-  wwctcOnTarget: Чат орчуулга %i идэвхжсэн.
-  wwctcOnSender: Чат орчуулга идэвхжүүлсэн. Таны хэлдэг бүх зүйл орчуулагдах болно!
   wwctGUIChatButton: Toggle чат орчуулга
-  wwctcOffTarget: Чат орчуулга хаасан %i.
   wwcrBegin: Дэлхийцийг дахин ачаалж байна...
   wwctTranslationStoppedOtherPlayer: '%i нь орчуулга сесс зогссон байна.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобал чат орчуулагдаж
@@ -324,3 +320,16 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: Бүтэлгүй орчуулга чат зурвас
     амжилттай toggled.
   wwcConfigGUISendFailedTranslationChatButton: Бүтэлгүй орчуулга дээр чат зурвас илгээх
+  wwctciOffSender: Ирж буй чат орчуулга хөгжлийн бэрхшээлтэй.
+  wwctGUIChatIncomingButton: Toggle Ирж буй чат орчуулга
+  wwctcoOffSender: Гарч байгаа чат орчуулга хөгжлийн бэрхшээлтэй.
+  wwctcoOnSender: Гарч байгаа чат орчуулга идэвхжсэн. Таны хэлэх зүйл орчуулагдах
+    болно!
+  wwctciOnSender: Ирж буй чат орчуулга идэвхжсэн. Та хүлээн авсан аливаа зүйл орчуулагдах
+    болно!
+  wwctGUIChatMenu: Toggle чат орчуулгын цэс
+  wwctcoOnTarget: Гарч байгаа чат орчуулга идэвхжсэн %i.
+  wwctcoOffTarget: Гарч байгаа чат орчуулга идэвхгүй нь %i.
+  wwctGUIChatOutgoingButton: Toggle гарч буй чат орчуулга
+  wwctciOnTarget: Ирж буй чат орчуулга идэвхжсэн %i.
+  wwctciOffTarget: Ирж буй чат орчуулга идэвхгүй нь %i.

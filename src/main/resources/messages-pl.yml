@@ -296,11 +296,7 @@ Messages:
   wwctrlRateLimitBadInt: Twój limit szybkości nie jest prawidłową liczbą całkowitą.
   wwcTranslatorErrorConsole: Wystąpił problem podczas próby tłumaczenia przez użytkownik
     %i. Sprawdź errorLog.txt, aby uzyskać więcej szczegółów.
-  wwctcOffSender: Tłumaczenie czatu wyłączone.
-  wwctcOnTarget: Tłumaczenie czatu włączone dla %i.
-  wwctcOnSender: Tłumaczenie czatu włączone. Wszystko, co powiesz, zostanie przetłumaczone!
   wwctGUIChatButton: Przełącz tłumaczenie czatu
-  wwctcOffTarget: Tłumaczenie czatu wyłączone dla %i.
   wwcrBegin: Przeładowanie WorldwideChat
   wwctTranslationStoppedOtherPlayer: Sesja tłumaczeń dla %i została zatrzymana.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Czat globalny jest tłumaczony,
@@ -324,3 +320,16 @@ Messages:
     komunikatu tłumaczenia pomyślnie.
   wwcConfigGUISendFailedTranslationChatButton: Wyślij wiadomość czatu na nieudane
     tłumaczenie
+  wwctciOffSender: Tłumaczenie czatu przychodzącego wyłączone.
+  wwctGUIChatIncomingButton: Przełącz tłumaczenie czatu przychodzącego
+  wwctcoOffSender: Tłumaczenie czatu wychodzącego wyłączone.
+  wwctcoOnSender: Tłumaczenie czatu wychodzącego włączone. Wszystko, co powiesz, zostanie
+    przetłumaczone!
+  wwctciOnSender: Tłumaczenie czatu przychodzącego włączone. Wszystko, co otrzymasz,
+    zostanie przetłumaczone!
+  wwctGUIChatMenu: Przełącz menu tłumaczenia czatu
+  wwctcoOnTarget: Tłumaczenie czatu wychodzącego włączone dla %i.
+  wwctcoOffTarget: Tłumaczenie czatu wychodzącego wyłączone dla %i.
+  wwctGUIChatOutgoingButton: Przełącz tłumaczenie czatu wychodzącego
+  wwctciOnTarget: Tłumaczenie czatu przychodzącego włączone dla %i.
+  wwctciOffTarget: Tłumaczenie czatu przychodzącego wyłączone dla %i.

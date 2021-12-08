@@ -292,11 +292,7 @@ Messages:
   wwctrlRateLimitBadInt: તમારી દર મર્યાદા માન્ય પૂર્ણાંક નથી.
   wwcTranslatorErrorConsole: વપરાશકર્તા %i તેમના અનુવાદનો પ્રયાસ કરી રહ્યો હતો ત્યારે
     એક સમસ્યા આવી. વધુ વિગતો માટે કૃપા કરીને errorLog.txt તપાસો.
-  wwctcOffSender: ચેટ અનુવાદ અક્ષમ.
-  wwctcOnTarget: ચેટ અનુવાદ સક્ષમ કરો %i માટે.
-  wwctcOnSender: ચેટ અનુવાદ સક્ષમ. તમે કહો છો તે કંઈપણ ભાષાંતર કરવામાં આવશે!
   wwctGUIChatButton: ટૉગલ અનુવાદ ચેટ
-  wwctcOffTarget: ચેટ અનુવાદ અક્ષમ કરો %i માટે.
   wwcrBegin: વર્લ્ડવાઇડચેટ ફરીથી લોડ કરી રહ્યું છે...
   wwctTranslationStoppedOtherPlayer: '%i માટે અનુવાદ સત્ર બંધ કરવામાં આવ્યું છે.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: વૈશ્વિક ચેટનું ભાષાંતર
@@ -318,3 +314,16 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: નિષ્ફળ અનુવાદ ચેટ સંદેશ સફળતાપૂર્વક
     ટૉગલ કર્યો.
   wwcConfigGUISendFailedTranslationChatButton: નિષ્ફળ અનુવાદ પર ચેટ સંદેશ મોકલો
+  wwctciOffSender: ઇનકમિંગ ચેટનું ભાષાંતર અક્ષમ કર્યું.
+  wwctGUIChatIncomingButton: ઇનકમિંગ ચેટ અનુવાદ ટૉગલ
+  wwctcoOffSender: આઉટગોઇંગ ચેટનું ભાષાંતર અક્ષમ કર્યું.
+  wwctcoOnSender: આઉટગોઇંગ ચેટ અનુવાદ સક્ષમ. તમે કહો છો તે કંઈપણ અનુવાદિત કરવામાં
+    આવશે!
+  wwctciOnSender: ઇનકમિંગ ચેટ અનુવાદ સક્ષમ છે. તમે પ્રાપ્ત કરો છો તે કંઈપણ અનુવાદિત
+    કરવામાં આવશે!
+  wwctGUIChatMenu: ટૉગલ ચેટ અનુવાદ મેનુ
+  wwctcoOnTarget: આઉટગોઇંગ ચેટનું ભાષાંતર %i માટે સક્ષમ કર્યું.
+  wwctcoOffTarget: આઉટગોઇંગ ચેટનું ભાષાંતર %i માટે અક્ષમ કર્યું છે.
+  wwctGUIChatOutgoingButton: ટૉગલ આઉટગોઇંગ ચેટ અનુવાદ
+  wwctciOnTarget: '%i માટે ઇનકમિંગ ચેટ અનુવાદને સક્ષમ કર્યું.'
+  wwctciOffTarget: આવતા %i માટે ચેટનું ભાષાંતર અક્ષમ કર્યું છે.

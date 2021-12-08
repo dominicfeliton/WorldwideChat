@@ -296,11 +296,7 @@ Messages:
   wwctrlRateLimitBadInt: Ograničenje stope nije valjani cijeli broj.
   wwcTranslatorErrorConsole: Došlo je do problema dok je korisnik %i pokušavao njihovo
     prevođenje. Molimo provjerite errorLog.txt za više detalja.
-  wwctcOffSender: Chat prijevod onemogućen.
-  wwctcOnTarget: Prijevod čavrljanja omogućen za %i.
-  wwctcOnSender: Chat prijevod omogućen. Sve što kažete bit će prevedeno!
   wwctGUIChatButton: Uključi Chat prijevod
-  wwctcOffTarget: Chat prijevod onemogućen za %i.
   wwcrBegin: Ponovno učitavanje WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Prevoditeljska sesija za %i je zaustavljena.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globalni chat se prevodi,
@@ -324,3 +320,14 @@ Messages:
     chat uspješno je prevedena.
   wwcConfigGUISendFailedTranslationChatButton: Pošalji poruku razgovora na neuspjelom
     prijevodu
+  wwctciOffSender: Dolazni chat prijevod onemogućen.
+  wwctGUIChatIncomingButton: Uključi prijevod dolaznog čavrljanja
+  wwctcoOffSender: Odlazni chat prijevod onemogućen.
+  wwctcoOnSender: Prijevod odlaznog chata omogućen. Sve što kažete bit će prevedeno!
+  wwctciOnSender: Dolazni chat prijevod omogućen. Sve što primite bit će prevedeno!
+  wwctGUIChatMenu: Uključi izbornik za prijevod chata
+  wwctcoOnTarget: Prijevod odlaznog chata omogućen za %i.
+  wwctcoOffTarget: Prijevod odlaznog chata onemogućen za %i.
+  wwctGUIChatOutgoingButton: Uključi prijevod odlaznog čavrljanja
+  wwctciOnTarget: Prijevod dolaznog chata omogućen za %i.
+  wwctciOffTarget: Prijevod dolaznog chata onemogućen za %i.

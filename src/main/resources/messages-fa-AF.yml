@@ -287,11 +287,7 @@ Messages:
   wwctrlRateLimitBadInt: حد مجاز شما یک عدد صحیح معتبر نیست.
   wwcTranslatorErrorConsole: یک مشکل زمانی رخ داد که کاربر %i در حال تلاش برای ترجمه
     آنها بود. لطفا errorLog.txt برای جزئیات بیشتر را بررسی کنید.
-  wwctcOffSender: ترجمه چت غیر فعال.
-  wwctcOnTarget: ترجمه چت برای %i فعال شد.
-  wwctcOnSender: ترجمه چت فعال شد. هر چي که بگي ترجمه ميشه
   wwctGUIChatButton: ضامن ترجمه گپ
-  wwctcOffTarget: ترجمه چت برای %i غیرفعال شد.
   wwcrBegin: بارگذاری مجدد WorldwideChat...
   wwctTranslationStoppedOtherPlayer: جلسه ترجمه برای %i متوقف شده است.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: چت جهانی در حال ترجمه
@@ -311,3 +307,16 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: پیام چت ترجمه ناموفق با موفقیت
     جابجا شد.
   wwcConfigGUISendFailedTranslationChatButton: ارسال پیام چت در ترجمه ناموفق
+  wwctciOffSender: ترجمه چت ورودی غیر فعال.
+  wwctGUIChatIncomingButton: ضامن ترجمه چت ورودی
+  wwctcoOffSender: ترجمه چت خروجی غیر فعال.
+  wwctcoOnSender: ترجمه چت خروجی را فعال کنید. هر چیزی که شما می گویند ترجمه خواهد
+    شد!
+  wwctciOnSender: ترجمه چت ورودی را فعال کنید. هر چیزی که دریافت می کنید ترجمه خواهد
+    شد!
+  wwctGUIChatMenu: ضامن منوی ترجمه چت
+  wwctcoOnTarget: ترجمه چت خروجی برای %i فعال شد.
+  wwctcoOffTarget: ترجمه چت خروجی برای %i غیرفعال شد.
+  wwctGUIChatOutgoingButton: ضامن ترجمه چت خروجی
+  wwctciOnTarget: ترجمه گفتگوی ورودی برای %i فعال شد.
+  wwctciOffTarget: ترجمه چت ورودی برای %i غیرفعال شد.

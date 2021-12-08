@@ -289,11 +289,7 @@ Messages:
   wwctrlRateLimitBadInt: Kiwango chako cha kikomo si integer halali.
   wwcTranslatorErrorConsole: Tatizo lilitokea wakati mtumiaji %i alikuwa akijaribu
     tafsiri yao. Tafadhali angalia errorLog.txt kwa maelezo zaidi.
-  wwctcOffSender: Chat tafsiri walemavu.
-  wwctcOnTarget: Tafsiri ya Ongea imewezeshwa kwa %i.
-  wwctcOnSender: Tafsiri ya kuzungumza imewezeshwa. Kitu chochote unachosema kitafsiriwa!
   wwctGUIChatButton: Badilisha Tafsiri ya Soga
-  wwctcOffTarget: Tafsiri ya Ongea walemavu kwa %i.
   wwcrBegin: Kurejesha upya WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Kikao cha tafsiri kwa %i kimesimamishwa.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Mazungumzo ya kimataifa
@@ -317,3 +313,14 @@ Messages:
     chat kugeuzwa kwa mafanikio.
   wwcConfigGUISendFailedTranslationChatButton: Tuma Ujumbe wa Ongea kwenye tafsiri
     Im
+  wwctciOffSender: Tafsiri zinazoingia chat walemavu
+  wwctGUIChatIncomingButton: Badilisha Tafsiri ya Ongea Zinazoingia
+  wwctcoOffSender: Kutoka chat tafsiri walemavu.
+  wwctcoOnSender: Kutoka chat tafsiri kuwezeshwa. Kitu chochote unachosema kitatafsiriwa!
+  wwctciOnSender: Tafsiri zinazoingia chat kuwezeshwa Kitu chochote kupokea kitatafsiriwa!
+  wwctGUIChatMenu: Badilisha Menyu ya tafsiri ya Ongea
+  wwctcoOnTarget: Tafsiri ya mazungumzo inayotoka imewezeshwa kwa %i.
+  wwctcoOffTarget: Kutoka chat tafsiri walemavu kwa %i.
+  wwctGUIChatOutgoingButton: Badilisha tafsiri ya Ongea Zinazoondoka
+  wwctciOnTarget: Tafsiri ya mazungumzo inayoingia imewezeshwa kwa %i.
+  wwctciOffTarget: Tafsiri ya mazungumzo inayoingia imezimwa kwa %i.

@@ -299,11 +299,7 @@ Messages:
   wwctrlRateLimitBadInt: ನಿಮ್ಮ ದರ ಮಿತಿ ಮಾನ್ಯ ಪೂರ್ಣಾಂಕವಲ್ಲ.
   wwcTranslatorErrorConsole: ಬಳಕೆದಾರ %i ಅವರ ಅನುವಾದವನ್ನು ಪ್ರಯತ್ನಿಸುತ್ತಿರುವಾಗ ಒಂದು ಸಮಸ್ಯೆ
     ಎದುರಾಗಿದೆ. ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ ದಯವಿಟ್ಟು errorLog.txt ಅನ್ನು ಪರಿಶೀಲಿಸಿ.
-  wwctcOffSender: ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
-  wwctcOnTarget: ಚಾಟ್ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
-  wwctcOnSender: ಚಾಟ್ ಅನುವಾದವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ನೀವು ಹೇಳುವ ಯಾವುದನ್ನಾದರೂ ಅನುವಾದಿಸಲಾಗುತ್ತದೆ!
   wwctGUIChatButton: ಚಾಟ್ ಅನುವಾದ ಟಾಗಲ್
-  wwctcOffTarget: ಚಾಟ್ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwcrBegin: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ...
   wwctTranslationStoppedOtherPlayer: '%i ಗಾಗಿ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ,
@@ -326,3 +322,16 @@ Messages:
     ಯಶಸ್ವಿಯಾಗಿ toggled.
   wwcConfigGUISendFailedTranslationChatButton: ವಿಫಲವಾದ ಅನುವಾದದಲ್ಲಿ ಚಾಟ್ ಸಂದೇಶವನ್ನು
     ಕಳುಹಿಸಿ
+  wwctciOffSender: ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctGUIChatIncomingButton: ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwctcoOffSender: ಹೊರಹೋಗುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctcoOnSender: ಹೊರಹೋಗುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ನೀವು ಹೇಳುವ ಯಾವುದನ್ನಾದರೂ
+    ಅನುವಾದಿಸಲಾಗುತ್ತದೆ!
+  wwctciOnSender: ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ನೀವು ಸ್ವೀಕರಿಸುವ ಯಾವುದನ್ನಾದರೂ
+    ಅನುವಾದಿಸಲಾಗುತ್ತದೆ!
+  wwctGUIChatMenu: ಟಾಗಲ್ ಚಾಟ್ ಅನುವಾದ ಮೆನು
+  wwctcoOnTarget: ಹೊರಹೋಗುವ ಚಾಟ್ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctcoOffTarget: ಹೊರಹೋಗುವ ಚಾಟ್ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctGUIChatOutgoingButton: ಹೊರಹೋಗುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwctciOnTarget: ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctciOffTarget: ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.

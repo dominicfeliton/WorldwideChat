@@ -298,11 +298,7 @@ Messages:
   wwctrlRateLimitBadInt: Hlutfall þitt er ekki gild heiltala.
   wwcTranslatorErrorConsole: Vandamál kom fram á meðan notandi %ég var að reyna þýðingu
     þeirra. Vinsamlegast athugaðu errorLog.txt fyrir frekari upplýsingar.
-  wwctcOffSender: Spjall þýðing óvirk.
-  wwctcOnTarget: Spjall þýðing virkt fyrir %i.
-  wwctcOnSender: Spjall þýðing virkt. Allt sem þú segir verður þýtt!
   wwctGUIChatButton: Skipta Spjall Þýðing
-  wwctcOffTarget: Spjall þýðing óvirk fyrir %i.
   wwcrBegin: Endurhlaða WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Þýðing fundur fyrir %i hefur verið hætt.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global spjall er þýtt,
@@ -324,3 +320,14 @@ Messages:
   wwcConfigConversationSendFailedTranslationChatSuccess: Mistókst þýðingar spjall
     skilaboð skipta með góðum árangri.
   wwcConfigGUISendFailedTranslationChatButton: Senda spjallskilaboð á mistókst þýðing
+  wwctciOffSender: Komandi spjall þýðing óvirk.
+  wwctGUIChatIncomingButton: Skipta um komandi spjall Þýðing
+  wwctcoOffSender: Útleið spjall þýðing óvirk.
+  wwctcoOnSender: Outgoing spjall þýðing virkt. Allt sem þú segir verður þýtt!
+  wwctciOnSender: Komandi spjall þýðing virkt. Allt sem þú færð verður þýtt!
+  wwctGUIChatMenu: Skipta Chat Þýðing Valmynd
+  wwctcoOnTarget: Outgoing spjall þýðing virkt fyrir %i.
+  wwctcoOffTarget: Outgoing spjall þýðing óvirk fyrir %i.
+  wwctGUIChatOutgoingButton: Skipta á sendan spjall Þýðing
+  wwctciOnTarget: Komandi spjall þýðing virkt fyrir %i.
+  wwctciOffTarget: Komandi spjall þýðing óvirk fyrir %i.

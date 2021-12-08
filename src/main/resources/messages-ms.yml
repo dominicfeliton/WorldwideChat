@@ -293,12 +293,7 @@ Messages:
   wwctrlRateLimitBadInt: Had kadar anda bukan integer yang sah.
   wwcTranslatorErrorConsole: Masalah berlaku semasa pengguna %i cuba terjemahannya.
     Sila semak errorLog.txt untuk maklumat lanjut.
-  wwctcOffSender: Terjemahan sembang dilumpuhkan.
-  wwctcOnTarget: Terjemahan sembang dibenarkan untuk %i.
-  wwctcOnSender: Terjemahan sembang dibenarkan. Apa sahaja yang anda katakan akan
-    diterjemahkan!
   wwctGUIChatButton: Togol Terjemahan Sembang
-  wwctcOffTarget: Terjemahan sembang dilumpuhkan untuk %i.
   wwcrBegin: Memuat semula WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Sesi terjemahan untuk %i telah dihentikan.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Sembang global sedang
@@ -322,3 +317,16 @@ Messages:
     gagal berjaya ditogol.
   wwcConfigGUISendFailedTranslationChatButton: Hantar Mesej Sembang pada Terjemahan
     Gagal
+  wwctciOffSender: Terjemahan sembang masuk dilumpuhkan.
+  wwctGUIChatIncomingButton: Togol Terjemahan Sembang Masuk
+  wwctcoOffSender: Terjemahan sembang keluar dilumpuhkan.
+  wwctcoOnSender: Terjemahan sembang keluar didayakan. Apa sahaja yang anda katakan
+    akan diterjemahkan!
+  wwctciOnSender: Terjemahan sembang masuk didayakan. Apa-apa sahaja yang anda terima
+    akan diterjemahkan!
+  wwctGUIChatMenu: Togol Chat Terjemahan Menu
+  wwctcoOnTarget: Terjemahan sembang keluar didayakan untuk %i.
+  wwctcoOffTarget: Terjemahan sembang keluar dilumpuhkan untuk %i.
+  wwctGUIChatOutgoingButton: Togol Terjemahan Sembang Keluar
+  wwctciOnTarget: Terjemahan sembang masuk didayakan untuk %i.
+  wwctciOffTarget: Terjemahan sembang masuk dilumpuhkan untuk %i.
