@@ -24,7 +24,7 @@ public class ChatListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
 	
-	@EventHandler(priority = EventPriority.HIGHEST)
+	@EventHandler(priority = EventPriority.NORMAL)
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
 		/* Original WWC functionality/Outgoing Messages */
 		ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
@@ -48,6 +48,7 @@ public class ChatListener implements Listener {
 		//TODO: Make hover text toggleable.
 		//TODO: Prefixes and suffixes get nuked when player is in external translation mode; either fix this, or own it
 		//TODO: User-configurable default chat translation to start at: incoming messages, outgoing messages, or both
+		//TODO: Add toggle-able prefix/suffix from Vault
 		CommonDefinitions.sendDebugMessage("Message format: " + event.getFormat());
 		List<Player> unmodifiedMessageRecipients = new ArrayList<Player>();
 		for (Player eaRecipient : event.getRecipients()) {
@@ -59,6 +60,7 @@ public class ChatListener implements Listener {
 							&& currTranslator.getOutLangCode().equals(testTranslator.getOutLangCode()))) {
 				
 				String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), CommonDefinitions.translateText(event.getMessage() + ChatColor.ITALIC + " (Translated)", eaRecipient));
+				
 				TextComponent hoverOutMessage = Component.text()
 						.content(outMessageWithoutHover)
 						.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))

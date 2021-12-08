@@ -138,9 +138,10 @@
             <version>8.5.0.1</version>
         </dependency>
         <dependency>
-            <groupId>com.expl0itz.stripped.deluxechat</groupId>
-            <artifactId>stripped-deluxechat</artifactId>
-            <version>1.0.0</version>
+            <groupId>com.github.MilkBowl</groupId>
+            <artifactId>VaultAPI</artifactId>
+            <version>1.7</version>
+            <scope>provided</scope>
         </dependency>
         
     </dependencies>
@@ -158,10 +159,6 @@
         <repository> <!-- for adventure development builds -->
             <id>sonatype-oss-snapshots</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-        </repository>
-        <repository> <!-- Local repository dependencies -->
-            <id>Local-repo</id>
-            <url>file://${basedir}/dependencies/local-maven-repo</url>
         </repository>
     </repositories>
 

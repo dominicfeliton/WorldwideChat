@@ -26,6 +26,7 @@ Messages:
   wwcTranslatorErrorConsole: 'A problem occured while user %i was attempting their translation. Please check errorLog.txt for more details.'
   wwcTranslatorErrorThresholdReached: 'Error threshold reached. This plugin will now reload, and disable all translators.'
   wwcTranslatorErrorThresholdReachedCheckLogs: 'Please check errorLog.txt in the WorldwideChat plugin folder for more information.'
+  wwcVaultNotFound: 'Disabling chat translation, as no Vault dependency could be found. Please install Vault.'
   #------------------- Listener Messages -------------------
   wwcChatTranslationFail: 'Failed to translate your message.'
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from %i to %o.'
