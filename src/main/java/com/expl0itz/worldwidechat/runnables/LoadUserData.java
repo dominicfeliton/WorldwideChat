@@ -77,7 +77,8 @@ public class LoadUserData implements Runnable {
 			currentTranslator.setTranslatingBook(currFileConfig.getBoolean("bookTranslation"));
 			currentTranslator.setTranslatingItem(currFileConfig.getBoolean("itemTranslation"));
 			currentTranslator.setTranslatingEntity(currFileConfig.getBoolean("entityTranslation"));
-			currentTranslator.setTranslatingChat(currFileConfig.getBoolean("chatTranslation"));
+			currentTranslator.setTranslatingChatOutgoing(currFileConfig.getBoolean("chatTranslationOutgoing"));
+			currentTranslator.setTranslatingChatIncoming(currFileConfig.getBoolean("chatTranslationIncoming"));
 			currentTranslator.setRateLimit(currFileConfig.getInt("rateLimit"));
 			if (!currFileConfig.getString("rateLimitPreviousRecordedTime").equals("None")) {
 				currentTranslator.setRateLimitPreviousTime(

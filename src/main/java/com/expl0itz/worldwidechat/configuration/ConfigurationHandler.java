@@ -333,8 +333,11 @@ public class ConfigurationHandler {
 		userSettingsConfig.createSection("entityTranslation");
 		userSettingsConfig.set("entityTranslation", inTranslator.getTranslatingEntity());
 		
-		userSettingsConfig.createSection("chatTranslation");
-		userSettingsConfig.set("chatTranslation", inTranslator.getTranslatingChat());
+		userSettingsConfig.createSection("chatTranslationOutgoing");
+		userSettingsConfig.set("chatTranslationOutgoing", inTranslator.getTranslatingChatOutgoing());
+		
+		userSettingsConfig.createSection("chatTranslationIncoming");
+		userSettingsConfig.set("chatTranslationIncoming", inTranslator.getTranslatingChatIncoming());
 		
 		userSettingsConfig.createSection("rateLimit");
 		userSettingsConfig.set("rateLimit", inTranslator.getRateLimit());

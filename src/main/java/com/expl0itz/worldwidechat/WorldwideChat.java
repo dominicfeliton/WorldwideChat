@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
 
@@ -63,7 +64,7 @@ public class WorldwideChat extends JavaPlugin {
 	private InventoryManager inventoryManager;
 	private BukkitAudiences adventure;
 	private ConfigurationHandler configurationManager;
-
+	
 	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>();
 	private List<PlayerRecord> playerRecords = new CopyOnWriteArrayList<PlayerRecord>();
 	private List<ActiveTranslator> activeTranslators = Collections.synchronizedList(new ArrayList<ActiveTranslator>());
@@ -87,7 +88,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	private String pluginLang = "en";
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "12052021-1"; //This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "12072021-1"; //This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	/* Default constructor */
@@ -188,6 +189,7 @@ public class WorldwideChat extends JavaPlugin {
 		instance = null;
 		CommonDefinitions.supportedMCVersions = null;
 		CommonDefinitions.supportedPluginLangCodes = null;
+		inventoryManager = null;
 
 		// All done.
 		getLogger().info("Disabled WorldwideChat version " + pluginVersion + ". Goodbye!");
@@ -576,6 +578,10 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/* Getters */
+	public ActiveTranslator getActiveTranslator(UUID uuid) {
+		return getActiveTranslator(uuid.toString());
+	}
+	
 	public ActiveTranslator getActiveTranslator(String uuid) {
 		if (activeTranslators.size() > 0) // just return false if there are no active translators, less code to run
 		{

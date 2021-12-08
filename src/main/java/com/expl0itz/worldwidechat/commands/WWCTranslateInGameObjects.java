@@ -323,10 +323,10 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			}
 			return true;
 		} else if (this instanceof WWCTranslateChat) {
-			currentTranslator.setTranslatingChat(!currentTranslator.getTranslatingChat());
+			currentTranslator.setTranslatingChatOutgoing(!currentTranslator.getTranslatingChatOutgoing());
 			/* Toggle chat translation for sender! */
 			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
-				if (currentTranslator.getTranslatingChat()) {
+				if (currentTranslator.getTranslatingChatOutgoing()) {
 					final TextComponent toggleTranslation = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwctcOnSender"))
@@ -345,7 +345,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 				}
 			/* Toggle chat translation for target! */
 			} else {
-				if (currentTranslator.getTranslatingChat()) {
+				if (currentTranslator.getTranslatingChatOutgoing()) {
 					final TextComponent toggleTranslation = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwctcOnTarget", new String[] {args[0]}))

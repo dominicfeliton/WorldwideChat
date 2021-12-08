@@ -46,12 +46,15 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			 */
 			sendPluginUpdateChatButton(player, contents);
 
-			/* Third Button: Let user override default plugin messages */
+			/* Third Button: Send a message to the user if their translation has failed */
+			sendFailedTranslationChatButton(player, contents);
+			
+			/* Fourth Button: Let user override default plugin messages */
 			ItemStack messagesOverrideChatButton = XMaterial.WRITABLE_BOOK.parseItem();
 			ItemMeta messagesOverrideChatMeta = messagesOverrideChatButton.getItemMeta();
 			messagesOverrideChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIMessagesOverrideChatButton"));
 			messagesOverrideChatButton.setItemMeta(messagesOverrideChatMeta);
-			contents.set(1, 3, ClickableItem.of(messagesOverrideChatButton, e -> {
+			contents.set(1, 4, ClickableItem.of(messagesOverrideChatButton, e -> {
 				ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
 			}));
 			
@@ -121,6 +124,30 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 					.build();
 			CommonDefinitions.sendMessage(player, successfulChange);
 			sendPluginUpdateChatButton(player, contents);
+		}));
+	}
+	
+	private void sendFailedTranslationChatButton(Player player, InventoryContents contents) {
+		ItemStack translationChatButton = XMaterial.BEDROCK.parseItem();
+		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendFailedTranslationChat")) {
+			translationChatButton = XMaterial.EMERALD_BLOCK.parseItem();
+		} else {
+			translationChatButton = XMaterial.REDSTONE_BLOCK.parseItem();
+		}
+		ItemMeta translationChatMeta = translationChatButton.getItemMeta();
+		translationChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUISendFailedTranslationChatButton"));
+		translationChatButton.setItemMeta(translationChatMeta);
+		contents.set(1, 3, ClickableItem.of(translationChatButton, e -> {
+			main.addPlayerUsingConfigurationGUI(player);
+			main.getConfigManager().getMainConfig().set("Chat.sendFailedTranslationChat",
+					!(main.getConfigManager().getMainConfig().getBoolean("Chat.sendFailedTranslationChat")));
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcConfigConversationSendFailedTranslationChatSuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage(player, successfulChange);
+			sendFailedTranslationChatButton(player, contents);
 		}));
 	}
 }

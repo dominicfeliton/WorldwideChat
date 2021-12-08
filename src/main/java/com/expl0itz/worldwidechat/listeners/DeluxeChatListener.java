@@ -18,8 +18,8 @@ public class DeluxeChatListener implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onDeluxeChat(DeluxeChatEvent event) { 
     	ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
-		if ((!currTranslator.getUUID().equals("") && currTranslator.getTranslatingChat())
-				|| (!main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("") && !main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChat())) {
+		if ((!currTranslator.getUUID().equals("") && currTranslator.getTranslatingChatOutgoing())
+				|| (!main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("") && !main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
         	PlayerRecord currRecord = main.getPlayerRecord(event.getPlayer().getUniqueId().toString(), true);
         	currRecord.setAttemptedTranslations(currRecord.getAttemptedTranslations()+1);
         	String out = CommonDefinitions.translateText(event.getChatMessage(), event.getPlayer());

@@ -234,7 +234,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 						&& (player.hasPermission("worldwidechat.wwctc.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
 					ItemStack chatButton = XMaterial.PAINTING.parseItem();
 					ItemMeta chatMeta = chatButton.getItemMeta();
-					if (targetTranslator.getTranslatingChat()) {
+					if (targetTranslator.getTranslatingChatOutgoing()) {
 						chatMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 						chatMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
 						chatMeta.setDisplayName(ChatColor.GREEN
