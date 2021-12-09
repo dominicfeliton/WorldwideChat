@@ -62,7 +62,7 @@ commands:
     wwctci:
         description: Enables incoming chat translation to a certain language.
         aliases: [wwctranslatechatincoming, translatechatincoming]
-        usage: §4/wwctcu (playerName)
+        usage: §4/wwctci (playerName)
         permission: worldwidechat.wwctci
         permission-message: §4You do not have permission to run this command.
     wwcs:

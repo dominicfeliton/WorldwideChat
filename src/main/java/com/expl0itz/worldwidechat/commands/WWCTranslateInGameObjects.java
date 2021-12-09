@@ -82,10 +82,16 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 						badPermsMessage("worldwidechat.wwcte.otherplayers");
 					}
 				} else if (this instanceof WWCTranslateChatOutgoing) {
-					if (sender.hasPermission("worldwidechat.wwctc.otherplayers")) {
+					if (sender.hasPermission("worldwidechat.wwctco.otherplayers")) {
 						return toggleStatus(Bukkit.getPlayerExact(args[0])); 
 					} else {
-						badPermsMessage("worldwidechat.wwctc.otherplayers");
+						badPermsMessage("worldwidechat.wwctco.otherplayers");
+					}
+				} else if (this instanceof WWCTranslateChatIncoming) {
+					if (sender.hasPermission("worldwidechat.wwctci.otherplayers")) {
+						return toggleStatus(Bukkit.getPlayerExact(args[0]));
+					} else {
+						badPermsMessage("worldwidechat.wwctci.otherplayers");
 					}
 				}
 			} else {
