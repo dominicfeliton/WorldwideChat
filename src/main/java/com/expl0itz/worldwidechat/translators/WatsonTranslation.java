@@ -58,7 +58,7 @@ public class WatsonTranslation {
 		String finalOut = "";
 		try {
 			/* Get test translation */
-			finalOut = process.get(main.getMaxResponseTime(), TimeUnit.SECONDS);
+			finalOut = process.get(main.getConfigManager().getMainConfig().getInt("Translator.maxResponseTime"), TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			CommonDefinitions.sendDebugMessage("Watson Translate Timeout!!");
 			process.cancel(true);
@@ -122,6 +122,7 @@ public class WatsonTranslation {
 
 			/* Process final output */
 			TranslationResult translationResult = translatorService.translate(options).execute().getResult();
+			//TODO: Check if we can stop using deprecated methods
 			JsonParser jsonParser = new JsonParser();
 			JsonElement jsonTree = jsonParser.parse(translationResult.toString());
 			JsonObject jsonObject = jsonTree.getAsJsonObject();

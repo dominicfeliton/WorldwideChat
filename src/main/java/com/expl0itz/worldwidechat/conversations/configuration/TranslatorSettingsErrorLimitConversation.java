@@ -22,13 +22,12 @@ public class TranslatorSettingsErrorLimitConversation extends NumericPrompt {
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		((Player) context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationErrorLimitInput", new String[] {"" + main.getErrorLimit()});
+		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationErrorLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.errorLimit")});
 	}
 
 	@Override
 	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 		if (input.intValue() > 0) {
-			main.setErrorLimit(input.intValue());
 			main.getConfigManager().getMainConfig().set("Translator.errorLimit", input.intValue());
 			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
 			final TextComponent successfulChange = Component.text()

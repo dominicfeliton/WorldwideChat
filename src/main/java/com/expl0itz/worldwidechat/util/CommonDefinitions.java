@@ -129,7 +129,7 @@ public class CommonDefinitions {
 	}
 
 	public static void sendDebugMessage(String inMessage) {
-		if (WorldwideChat.instance.getDebugMode()) {
+		if (WorldwideChat.instance.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
 			WorldwideChat.instance.getLogger().warning("DEBUG: " + inMessage);
 		}
 	}
@@ -146,8 +146,8 @@ public class CommonDefinitions {
 		} else {
 			convertedOriginalMessage = WorldwideChat.instance.getConfigManager().getMessagesConfig().getString("Messages." + ChatColor.stripColor(messageName));
 			if (convertedOriginalMessage == null) {
-				WorldwideChat.instance.getLogger().severe("Bad message! Please fix your messages-" + WorldwideChat.instance.getPluginLang() + ".yml.");
-				return ChatColor.RED + "Bad message! Please fix your messages-" + WorldwideChat.instance.getPluginLang() + ".yml.";
+				WorldwideChat.instance.getLogger().severe("Bad message! Please fix your messages-" + WorldwideChat.instance.getConfigManager().getMainConfig().getString("General.pluginLang") + ".yml.");
+				return ChatColor.RED + "Bad message! Please fix your messages-" + WorldwideChat.instance.getConfigManager().getMainConfig().getString("General.pluginLang") + ".yml.";
 			}
 		}
 		
@@ -233,7 +233,7 @@ public class CommonDefinitions {
 			}
 
 			/* Char limit check */
-			int limit = WorldwideChat.instance.getMessageCharLimit();
+			int limit = WorldwideChat.instance.getConfigManager().getMainConfig().getInt("Translator.messageCharLimit");
 			if (inMessage.length() > limit) {
 				final TextComponent charLimit = Component.text()
 						.append(Component.text().content(CommonDefinitions.getMessage("wwcCharLimit", new String[] {"" + limit}))
@@ -244,7 +244,7 @@ public class CommonDefinitions {
 			}
 			
 			/* Check cache */
-			if (WorldwideChat.instance.getTranslatorCacheLimit() > 0) {
+			if (WorldwideChat.instance.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
 				// Check cache for inputs, since config says we should
 				List<CachedTranslation> currCache = WorldwideChat.instance.getCache();
 				synchronized (currCache) {
@@ -257,8 +257,7 @@ public class CommonDefinitions {
 							if (WorldwideChat.instance.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
 							currPlayerRecord.setLastTranslationTime();
 							return StringEscapeUtils.unescapeJava(
-									ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase())); // done
-																													// :)
+									ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase()));
 						}
 					}
 				}
@@ -310,8 +309,8 @@ public class CommonDefinitions {
 						return inMessage;
 					}
 				// Global Limits
-				} else if (!isExempt && WorldwideChat.instance.getRateLimit() > 0) {
-					if (!checkForRateLimits(WorldwideChat.instance.getRateLimit(), currActiveTranslator, currPlayer)) {
+				} else if (!isExempt && WorldwideChat.instance.getConfigManager().getMainConfig().getInt("Translator.rateLimit") > 0) {
+					if (!checkForRateLimits(WorldwideChat.instance.getConfigManager().getMainConfig().getInt("Translator.rateLimit"), currActiveTranslator, currPlayer)) {
 						return inMessage;
 					}
 				}
@@ -393,7 +392,7 @@ public class CommonDefinitions {
 			currPlayerRecord.setLastTranslationTime();
 
 			/* Add to cache */
-			if (WorldwideChat.instance.getTranslatorCacheLimit() > 0
+			if (WorldwideChat.instance.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize") > 0
 					&& !(currActiveTranslator.getInLangCode().equals("None"))) {
 				CachedTranslation newTerm = new CachedTranslation(currActiveTranslator.getInLangCode(),
 						currActiveTranslator.getOutLangCode(), inMessage, out);
@@ -403,7 +402,7 @@ public class CommonDefinitions {
 		} catch (Exception e) {
 			try {
 				/* Add 1 to error count */
-				WorldwideChat.instance.setErrorCount(WorldwideChat.instance.getErrorCount() + 1);
+				WorldwideChat.instance.setTranslatorErrorCount(WorldwideChat.instance.getTranslatorErrorCount() + 1);
 				final TextComponent playerError = Component.text()
 						.append(Component.text().content(CommonDefinitions.getMessage("wwcTranslatorError"))
 								.color(NamedTextColor.RED))
@@ -431,7 +430,7 @@ public class CommonDefinitions {
 				}
 
 				/* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
-				if (WorldwideChat.instance.getErrorCount() >= WorldwideChat.instance.getErrorLimit()) {
+				if (WorldwideChat.instance.getTranslatorErrorCount() >= WorldwideChat.instance.getConfigManager().getMainConfig().getInt("Translator.errorLimit")) {
 					WorldwideChat.instance.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReached"));
 					WorldwideChat.instance.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReachedCheckLogs"));
 					WorldwideChat.instance.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate",

@@ -22,13 +22,12 @@ public class TranslatorSettingsGlobalRateConversation extends NumericPrompt {
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		((Player) context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationRateLimitInput", new String[] {"" + main.getRateLimit()});
+		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationRateLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.rateLimit")});
 	}
 
 	@Override
 	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 		if (input.intValue() > -1) {
-			main.setRateLimit(input.intValue());
 			main.getConfigManager().getMainConfig().set("Translator.rateLimit", input.intValue());
 			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
 			final TextComponent successfulChange = Component.text()

@@ -59,25 +59,26 @@ public class ConfigurationHandler {
 		/* Get plugin lang */
 		for (int i = 0; i < CommonDefinitions.supportedPluginLangCodes.length; i++) {
 			if (CommonDefinitions.supportedPluginLangCodes[i]
-					.equalsIgnoreCase(getMainConfig().getString("General.pluginLang"))) {
-				main.setPluginLang(getMainConfig().getString("General.pluginLang"));
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + main.getPluginLang() + ".");
+					.equalsIgnoreCase(mainConfig.getString("General.pluginLang"))) {
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + mainConfig.getString("General.pluginLang") + ".");
 				return;
 			}
 		}
 
+		//TODO: Check if setting works to overwrite mem vals (but not overwrite config) instead of setPluginLang
+		mainConfig.set("General.pluginLang", "en");
 		main.getLogger().warning("Unable to detect a valid language in your config.yml. Defaulting to en...");
-		main.setPluginLang("en");
+		//main.setPluginLang("en");
 	}
 
 	/* Init Messages Method */
 	public void initMessagesConfig() {
 		/* Init config file */
-		messagesFile = new File(main.getDataFolder(), "messages-" + main.getPluginLang() + ".yml");
+		messagesFile = new File(main.getDataFolder(), "messages-" + mainConfig.getString("General.pluginLang") + ".yml");
 
 		/* Save default messages file if it does not exist */
 		if (!messagesFile.exists()) {
-			main.saveResource("messages-" + main.getPluginLang() + ".yml", true);
+			main.saveResource("messages-" + mainConfig.getString("General.pluginLang") + ".yml", true);
 			
 			YamlConfiguration tempConfig = YamlConfiguration.loadConfiguration(messagesFile);
 			
@@ -107,7 +108,7 @@ public class ConfigurationHandler {
 			messagesFile.delete();
 			
 			/* Copy newest config */
-			main.saveResource("messages-" + main.getPluginLang() + ".yml", true);
+			main.saveResource("messages-" + mainConfig.getString("General.pluginLang") + ".yml", true);
 			messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
 			messagesConfig.set("DoNotTouchThis.Version", main.getCurrentMessagesConfigVersion());
 			
@@ -130,15 +131,14 @@ public class ConfigurationHandler {
 	public void loadMainSettings() {
 		/* Get rest of General Settings */
 		// Debug Mode
-		if (getMainConfig().getBoolean("General.enableDebugMode")) {
+		if (mainConfig.getBoolean("General.enableDebugMode")) {
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigEnabledDebugMode"));
-			main.setDebugMode(true);
 		}
 		// Prefix
 		try {
-			if (!getMainConfig().getString("General.prefixName").equalsIgnoreCase("Default")
-					&& !getMainConfig().getString("General.prefixName").equalsIgnoreCase("WWC")) {
-				main.setPrefixName(getMainConfig().getString("General.prefixName"));
+			if (!mainConfig.getString("General.prefixName").equalsIgnoreCase("Default")
+					&& !mainConfig.getString("General.prefixName").equalsIgnoreCase("WWC")) {
+				main.setPrefixName(mainConfig.getString("General.prefixName"));
 			} else {
 				main.setPrefixName("WWC"); // If default the entry for prefix, interpret as WWC
 			}
@@ -146,10 +146,9 @@ public class ConfigurationHandler {
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigInvalidPrefixSettings"));
 		}
 		// bStats
-		main.setbStats(getMainConfig().getBoolean("General.enablebStats"));
-		if (getMainConfig().getBoolean("General.enablebStats")) {
+		if (mainConfig.getBoolean("General.enablebStats")) {
 			@SuppressWarnings("unused")
-			Metrics metrics = new Metrics(WorldwideChat.instance, WorldwideChat.instance.getbStatsID());
+			Metrics metrics = new Metrics(WorldwideChat.instance, WorldwideChat.bStatsID);
 			main.getLogger()
 					.info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigEnabledbStats"));
 		} else {
@@ -157,97 +156,76 @@ public class ConfigurationHandler {
 		}
 		// Update Checker Delay
 		try {
-			if ((getMainConfig().getInt("General.updateCheckerDelay") > 10)) {
-				main.setUpdateCheckerDelay(getMainConfig().getInt("General.updateCheckerDelay"));
+			if ((mainConfig.getInt("General.updateCheckerDelay") > 10)) {
 			} else {
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigBadUpdateDelay"));
-				main.setUpdateCheckerDelay(86400);
 			}
 		} catch (Exception e) {
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigBadUpdateDelay"));
-			main.setUpdateCheckerDelay(86400);
 		}
 		// Sync User Data Delay
 		try {
-			if ((getMainConfig().getInt("General.syncUserDataDelay") > 10)) {
-				main.setSyncUserDataDelay(getMainConfig().getInt("General.syncUserDataDelay"));
+			if ((mainConfig.getInt("General.syncUserDataDelay") > 10)) {
 				main.getLogger().info(
-						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigSyncDelayEnabled", new String[] {main.getSyncUserDataDelay() + ""}));
+						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigSyncDelayEnabled", new String[] {mainConfig.getInt("General.syncUserDataDelay") + ""}));
 			} else {
-				main.setSyncUserDataDelay(7200);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigSyncDelayInvalid"));
 			}
 		} catch (Exception e) {
-			main.setSyncUserDataDelay(7200);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigSyncDelayInvalid"));
 		}
 		// Rate limit Settings
 		try {
-			if (getMainConfig().getInt("Translator.rateLimit") >= 0) {
-				main.setRateLimit(getMainConfig().getInt("Translator.rateLimit"));
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigRateLimitEnabled", new String[] {"" + main.getRateLimit()}));
+			if (mainConfig.getInt("Translator.rateLimit") >= 0) {
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigRateLimitEnabled", new String[] {"" + mainConfig.getInt("Translator.rateLimit")}));
 			} else {
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigRateLimitInvalid"));
-				main.setRateLimit(0);
 			}
 		} catch (Exception e) {
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigRateLimitInvalid"));
-			main.setRateLimit(0);
 		}
 		// Per-message char limit Settings
 		try {
-			if (getMainConfig().getInt("Translator.messageCharLimit") >= 0) {
-				main.setMessageCharLimit(getMainConfig().getInt("Translator.messageCharLimit"));
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigMessageCharLimitEnabled", new String[] {"" + main.getMessageCharLimit()}));
+			if (mainConfig.getInt("Translator.messageCharLimit") >= 0) {
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigMessageCharLimitEnabled", new String[] {"" + mainConfig.getInt("Translator.messageCharLimit")}));
 			} else {
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMessageCharLimitInvalid"));
-				main.setMessageCharLimit(255);
 			}
 		} catch (Exception e) {
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMessageCharLimitInvalid"));
-			main.setMessageCharLimit(255);
 		}
 		// Cache Settings
 		try {
-			if (getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
+			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
 				main.getLogger()
-						.info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigCacheEnabled", new String[] {getMainConfig().getInt("Translator.translatorCacheSize") + ""}));
-				main.setTranslatorCacheLimit(getMainConfig().getInt("Translator.translatorCacheSize"));
+						.info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigCacheEnabled", new String[] {mainConfig.getInt("Translator.translatorCacheSize") + ""}));
 			} else {
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigCacheDisabled"));
-				main.setTranslatorCacheLimit(0);
 			}
 		} catch (Exception e) {
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigCacheInvalid"));
-			main.setTranslatorCacheLimit(100);
 		}
 		// Error Limit Settings
 		try {
-			if (getMainConfig().getInt("Translator.errorLimit") > 0) {
+			if (mainConfig.getInt("Translator.errorLimit") > 0) {
 				main.getLogger().info(
-						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigErrorLimitEnabled", new String[] {getMainConfig().getInt("Translator.errorLimit") + ""}));
-				main.setErrorLimit(getMainConfig().getInt("Translator.errorLimit"));
+						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigErrorLimitEnabled", new String[] {mainConfig.getInt("Translator.errorLimit") + ""}));
 			} else {
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigErrorLimitInvalid"));
-				main.setErrorLimit(5);
 			}
 		} catch (Exception e) {
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigErrorLimitInvalid"));
-			main.setErrorLimit(5);
 		}
 		// Max Response Time Settings
 		try {
-			if (getMainConfig().getInt("Translator.maxResponseTime") > 0) {
+			if (mainConfig.getInt("Translator.maxResponseTime") > 0) {
 				main.getLogger().info(
-						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigMaxResponseTimeEnabled", new String[] {getMainConfig().getInt("Translator.maxResponseTime") + ""}));
-				main.setMaxResponseTime(getMainConfig().getInt("Translator.maxResponseTime"));
+						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigMaxResponseTimeEnabled", new String[] {mainConfig.getInt("Translator.maxResponseTime") + ""}));
 			} else {
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMaxResponseTimeInvalid"));
-				main.setMaxResponseTime(7);
 			}
 		} catch (Exception e) {
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMaxResponseTimeInvalid"));
-			main.setMaxResponseTime(7);
 		}
 	}
 
@@ -255,37 +233,37 @@ public class ConfigurationHandler {
 	public void loadTranslatorSettings() {
 		String outName = "Invalid";
 		try {
-			if (getMainConfig().getBoolean("Translator.useWatsonTranslate")
-					&& (!(getMainConfig().getBoolean("Translator.useGoogleTranslate"))
-							&& (!(getMainConfig().getBoolean("Translator.useAmazonTranslate"))))) {
+			if (mainConfig.getBoolean("Translator.useWatsonTranslate")
+					&& (!(mainConfig.getBoolean("Translator.useGoogleTranslate"))
+							&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
 				outName = "Watson";
-				WatsonTranslation test = new WatsonTranslation(getMainConfig().getString("Translator.watsonAPIKey"),
-						getMainConfig().getString("Translator.watsonURL"));
+				WatsonTranslation test = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
+						mainConfig.getString("Translator.watsonURL"));
 				test.useTranslator();
-			} else if (getMainConfig().getBoolean("Translator.useGoogleTranslate")
-					&& (!(getMainConfig().getBoolean("Translator.useWatsonTranslate"))
-							&& (!(getMainConfig().getBoolean("Translator.useAmazonTranslate"))))) {
+			} else if (mainConfig.getBoolean("Translator.useGoogleTranslate")
+					&& (!(mainConfig.getBoolean("Translator.useWatsonTranslate"))
+							&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
 				outName = "Google Translate";
 				GoogleTranslation test = new GoogleTranslation(
-						getMainConfig().getString("Translator.googleTranslateAPIKey"));
+						mainConfig.getString("Translator.googleTranslateAPIKey"));
 				test.useTranslator();
-			} else if (getMainConfig().getBoolean("Translator.useAmazonTranslate")
-					&& (!(getMainConfig().getBoolean("Translator.useGoogleTranslate"))
-							&& (!(getMainConfig().getBoolean("Translator.useWatsonTranslate"))))) {
+			} else if (mainConfig.getBoolean("Translator.useAmazonTranslate")
+					&& (!(mainConfig.getBoolean("Translator.useGoogleTranslate"))
+							&& (!(mainConfig.getBoolean("Translator.useWatsonTranslate"))))) {
 				outName = "Amazon Translate";
-				AmazonTranslation test = new AmazonTranslation(getMainConfig().getString("Translator.amazonAccessKey"),
-						getMainConfig().getString("Translator.amazonSecretKey"),
-						getMainConfig().getString("Translator.amazonRegion"));
+				AmazonTranslation test = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
+						mainConfig.getString("Translator.amazonSecretKey"),
+						mainConfig.getString("Translator.amazonRegion"));
 				test.useTranslator();
-			} else if (getMainConfig().getBoolean("Translator.testModeTranslator")) {
+			} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
 				outName = "JUnit/MockBukkit Testing Translator";
 				TestTranslation test = new TestTranslation(
 						"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu");
 				test.useTranslator();
 			} else {
-				getMainConfig().set("Translator.useWatsonTranslate", false);
-				getMainConfig().set("Translator.useGoogleTranslate", false);
-				getMainConfig().set("Translator.useAmazonTranslate", false);
+				mainConfig.set("Translator.useWatsonTranslate", false);
+				mainConfig.set("Translator.useGoogleTranslate", false);
+				mainConfig.set("Translator.useAmazonTranslate", false);
 				
 				saveMainConfig(false);
 				outName = "Invalid";

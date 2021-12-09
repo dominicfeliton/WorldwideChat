@@ -24,7 +24,7 @@ public class GeneralSettingsLangConversation extends StringPrompt {
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		((Player) context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationLangInput", new String[] {main.getPluginLang(), Arrays.toString(CommonDefinitions.supportedPluginLangCodes)});
+		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationLangInput", new String[] {main.getConfigManager().getMainConfig().getString("General.pluginLang"), Arrays.toString(CommonDefinitions.supportedPluginLangCodes)});
 	}
 
 	@Override
@@ -32,7 +32,6 @@ public class GeneralSettingsLangConversation extends StringPrompt {
 		for (String eaStr : CommonDefinitions.supportedPluginLangCodes) {
 			if (!input.equals("0")) {
 				if (eaStr.equals(input)) {
-					main.setPluginLang(input);
 					main.getConfigManager().getMainConfig().set("General.pluginLang", input);
 					main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
 					final TextComponent successfulChange = Component.text()

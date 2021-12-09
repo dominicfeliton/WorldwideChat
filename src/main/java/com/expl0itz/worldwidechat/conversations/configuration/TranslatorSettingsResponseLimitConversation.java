@@ -22,13 +22,12 @@ public class TranslatorSettingsResponseLimitConversation extends NumericPrompt {
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		((Player) context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationResponseLimitInput", new String[] {"" + main.getMaxResponseTime()});
+		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationResponseLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.maxResponseTime")});
 	}
 
 	@Override
 	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 		if (input.intValue() > 0) {
-			main.setMaxResponseTime(input.intValue());
 			main.getConfigManager().getMainConfig().set("Translator.maxResponseTime", input.intValue());
 			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
 			final TextComponent successfulChange = Component.text()
