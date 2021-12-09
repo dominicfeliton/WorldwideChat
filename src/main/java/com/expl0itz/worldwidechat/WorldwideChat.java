@@ -15,7 +15,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.PluginDescriptionFile;
-import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.JavaPluginLoader;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -57,12 +56,10 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
-import net.milkbowl.vault.chat.Chat;
 
 public class WorldwideChat extends JavaPlugin {
 	/* Vars */
 	private static WorldwideChat instance;
-	private static Chat vaultChat = null;
 
 	private InventoryManager inventoryManager;
 	private BukkitAudiences adventure;
@@ -133,11 +130,7 @@ public class WorldwideChat extends JavaPlugin {
 		checkMCVersion();
 
 		// EventHandlers + check for plugins
-        if (!setupChat()) {
-			getLogger().warning(CommonDefinitions.getMessage("wwcVaultNotFound"));
-		} else {
-			getServer().getPluginManager().registerEvents(new ChatListener(), this);
-		}
+		getServer().getPluginManager().registerEvents(new ChatListener(), this);
 		getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
 		getServer().getPluginManager().registerEvents(new TranslateInGameListener(), this);
 		getServer().getPluginManager().registerEvents(new InventoryListener(), this);
@@ -194,18 +187,10 @@ public class WorldwideChat extends JavaPlugin {
 		CommonDefinitions.supportedMCVersions = null;
 		CommonDefinitions.supportedPluginLangCodes = null;
 		inventoryManager = null;
-		vaultChat = null;
 
 		// All done.
 		getLogger().info("Disabled WorldwideChat version " + pluginVersion + ". Goodbye!");
 	}
-
-	/* Setup Vault API Chat */
-	private boolean setupChat() {
-        RegisteredServiceProvider<Chat> rsp = getServer().getServicesManager().getRegistration(Chat.class);
-        vaultChat = rsp.getProvider();
-        return vaultChat != null;
-    }
 	
 	/* Get active async tasks */
 	private int getActiveAsyncTasks() {
@@ -595,10 +580,6 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/* Getters */
-	public static Chat getVaultChat() {
-		return vaultChat;
-	}
-	
 	public ActiveTranslator getActiveTranslator(UUID uuid) {
 		return getActiveTranslator(uuid.toString());
 	}

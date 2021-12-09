@@ -171,7 +171,8 @@ public class WWCTranslate extends BasicCommand {
 			CommonDefinitions.sendMessage(sender, sameLangError);
 			return false;
 		}
-		if ((!inLang.equalsIgnoreCase("None") && CommonDefinitions.getSupportedTranslatorLang(inLang).getLangCode().equals(""))) {
+		/* Do not let users use None inputLang with Amazon Translate, remove this if we ever find a workaround for error */
+		if ((!inLang.equalsIgnoreCase("None") && CommonDefinitions.getSupportedTranslatorLang(inLang).getLangCode().equals("")) || (inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
 							CommonDefinitions.getMessage("wwctInvalidInputLangCode", new String[] {CommonDefinitions.getFormattedValidLangCodes()}))

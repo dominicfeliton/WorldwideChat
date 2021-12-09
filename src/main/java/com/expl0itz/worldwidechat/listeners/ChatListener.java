@@ -24,7 +24,7 @@ public class ChatListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.getInstance();
 	
-	@EventHandler(priority = EventPriority.NORMAL)
+	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
 		/* Original WWC functionality/Outgoing Messages */
 		ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
@@ -60,7 +60,6 @@ public class ChatListener implements Listener {
 							&& currTranslator.getOutLangCode().equals(testTranslator.getOutLangCode()))) {
 				
 				String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), CommonDefinitions.translateText(event.getMessage() + ChatColor.ITALIC + " (Translated)", eaRecipient));
-				
 				TextComponent hoverOutMessage = Component.text()
 						.content(outMessageWithoutHover)
 						.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))

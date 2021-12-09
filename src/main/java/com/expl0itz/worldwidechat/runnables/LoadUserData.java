@@ -63,7 +63,9 @@ public class LoadUserData implements Runnable {
 				e.printStackTrace();
 			}
 			currFileConfig.options().copyDefaults(true);
-			if (!currFileConfig.getString("inLang").equalsIgnoreCase("None") && CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("inLang")).getLangCode().equals("")) {
+			/* Hopefully temporary check that disables use of none with Amazon Translate until we find a workaround */
+			if ((!currFileConfig.getString("inLang").equalsIgnoreCase("None") && CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("inLang")).getLangCode().equals(""))
+					|| (currFileConfig.getString("inLang").equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
 				currFileConfig.set("inLang", "en");
 			}
 			if (CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("outLang")).getLangCode().equals("")) {

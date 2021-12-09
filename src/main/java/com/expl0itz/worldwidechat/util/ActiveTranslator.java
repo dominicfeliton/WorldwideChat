@@ -13,7 +13,7 @@ public class ActiveTranslator {
 
 	private boolean hasBeenShownColorCodeWarning = false;
 	private boolean translatingChatOutgoing = true;
-	private boolean translatingChatIncoming = true;
+	private boolean translatingChatIncoming = false;
 	private boolean translatingBook = false;
 	private boolean translatingSign = false;
 	private boolean translatingItem = false;
