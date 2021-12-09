@@ -34,7 +34,7 @@ public class AmazonTranslation {
 
 	private boolean isInitializing = false;
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	public AmazonTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
 		this.textToTranslate = textToTranslate;

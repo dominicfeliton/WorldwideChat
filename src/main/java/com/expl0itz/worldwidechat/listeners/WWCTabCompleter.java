@@ -17,7 +17,7 @@ import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 
 public class WWCTabCompleter implements TabCompleter {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	@Override
 	public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {

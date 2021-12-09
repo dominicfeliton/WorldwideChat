@@ -31,7 +31,7 @@ import net.kyori.adventure.text.format.NamedTextColor;
 
 public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	private String translatorName = "Invalid";
 
@@ -43,7 +43,7 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 		return SmartInventory.builder().id("currentTranslatorSettings")
 				.provider(new ConfigurationEachTranslatorSettingsGUI(translatorName))
 				.parent(ConfigurationTranslatorSettingsGUI.translatorSettings).size(3, 9)
-				.manager(WorldwideChat.getInstance().getInventoryManager())
+				.manager(WorldwideChat.instance.getInventoryManager())
 				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIEachTranslatorSettings", new String[] {translatorName}))
 				.build();
 	}

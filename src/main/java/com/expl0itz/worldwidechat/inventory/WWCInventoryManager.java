@@ -49,7 +49,7 @@ public class WWCInventoryManager extends InventoryManager {
 						.color(NamedTextColor.RED))
 				.build();
 		CommonDefinitions.sendMessage(player, inventoryError);
-		WorldwideChat.getInstance().getLogger().severe(CommonDefinitions.getMessage("wwcInventoryError", new String[] {player.getName()}));
+		WorldwideChat.instance.getLogger().severe(CommonDefinitions.getMessage("wwcInventoryError", new String[] {player.getName()}));
 		e.printStackTrace();
 	}
 	
@@ -82,18 +82,18 @@ public class WWCInventoryManager extends InventoryManager {
 	}
 
 	public static void saveMainConfigAndReload(Player player, InventoryContents content) {
-		WorldwideChat.getInstance().removePlayerUsingConfigurationGUI(player);
+		WorldwideChat.instance.removePlayerUsingConfigurationGUI(player);
 		player.closeInventory();
 		new BukkitRunnable() {
 			@Override
 			public void run() {
 				// Save config sync/in the same thread because we are already in another thread thanks to Bukkit Scheduler
-				WorldwideChat.getInstance().getConfigManager().saveMainConfig(false);
+				WorldwideChat.instance.getConfigManager().saveMainConfig(false);
 				
 				// Reload
-				WorldwideChat.getInstance().reload(player);
+				WorldwideChat.instance.reload(player);
 			}
-		}.runTaskAsynchronously(WorldwideChat.getInstance());
+		}.runTaskAsynchronously(WorldwideChat.instance);
 	}
 	
 }

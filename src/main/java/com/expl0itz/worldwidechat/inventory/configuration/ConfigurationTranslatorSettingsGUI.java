@@ -23,11 +23,11 @@ import fr.minuskube.inv.content.InventoryProvider;
 
 public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	public static final SmartInventory translatorSettings = SmartInventory.builder().id("translatorSettingsMenu")
 			.provider(new ConfigurationTranslatorSettingsGUI()).size(4, 9)
-			.manager(WorldwideChat.getInstance().getInventoryManager())
+			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUITranslatorSettings"))
 			.build();
 

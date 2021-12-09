@@ -22,7 +22,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 	
 	private boolean isConsoleSender = sender instanceof ConsoleCommandSender;
 	
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 	
 	/* Process command */
 	public boolean processCommand() {

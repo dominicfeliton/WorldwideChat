@@ -24,7 +24,7 @@ public class TempItemInventory implements InventoryProvider {
 
 	public static SmartInventory getTempItemInventory(ItemStack displayedItem) {
 		return SmartInventory.builder().id("tempItemMenu").provider(new TempItemInventory(displayedItem)).size(5, 9)
-				.manager(WorldwideChat.getInstance().getInventoryManager()).title(ChatColor.DARK_BLUE + CommonDefinitions.getMessage("wwcGUITempItem"))
+				.manager(WorldwideChat.instance.getInventoryManager()).title(ChatColor.DARK_BLUE + CommonDefinitions.getMessage("wwcGUITempItem"))
 				.build();
 	}
 

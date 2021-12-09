@@ -24,7 +24,7 @@ import fr.minuskube.inv.content.SlotIterator;
 
 public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	private String selectedSourceLanguage = "";
 	private String targetPlayerUUID = "";
@@ -37,7 +37,7 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 	public static SmartInventory getSourceLanguageInventory(String s, String targetPlayerUUID) {
 		return SmartInventory.builder().id("translateSourceLanguage")
 				.provider(new WWCTranslateGUISourceLanguage(s, targetPlayerUUID)).size(6, 9)
-				.manager(WorldwideChat.getInstance().getInventoryManager())
+				.manager(WorldwideChat.instance.getInventoryManager())
 				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUINewTranslationSource"))
 				.build();
 	}

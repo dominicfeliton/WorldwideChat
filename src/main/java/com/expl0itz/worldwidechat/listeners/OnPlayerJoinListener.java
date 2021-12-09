@@ -17,7 +17,7 @@ import net.kyori.adventure.text.format.TextDecoration;
 
 public class OnPlayerJoinListener implements Listener {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerJoinListener(PlayerJoinEvent event) {

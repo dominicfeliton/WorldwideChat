@@ -25,11 +25,11 @@ import net.kyori.adventure.text.format.NamedTextColor;
 
 public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	public static final SmartInventory generalSettings = SmartInventory.builder().id("generalSettingsMenu")
 			.provider(new ConfigurationGeneralSettingsGUI()).size(3, 9)
-			.manager(WorldwideChat.getInstance().getInventoryManager())
+			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIGeneralSettings"))
 			.build();
 

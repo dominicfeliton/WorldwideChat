@@ -24,7 +24,6 @@ import org.jetbrains.annotations.NotNull;
 import com.expl0itz.worldwidechat.commands.WWCConfiguration;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCTranslateRateLimit;
-import com.expl0itz.worldwidechat.commands.WWCReload;
 import com.expl0itz.worldwidechat.commands.WWCStats;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
@@ -63,10 +62,10 @@ public class WorldwideChat extends JavaPlugin {
 	//TODO: Changelog.txt per-commit
 	
 	/* Vars */
-	private static WorldwideChat instance;
-
-	private InventoryManager inventoryManager;
+	public static WorldwideChat instance;
+	
 	private BukkitAudiences adventure;
+	private InventoryManager inventoryManager;
 	private ConfigurationHandler configurationManager;
 	
 	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>();
@@ -111,21 +110,32 @@ public class WorldwideChat extends JavaPlugin {
 			.build();
 
 	/* Methods */
-	public static WorldwideChat getInstance() {
-		return instance;
+	public @NotNull BukkitAudiences adventure() {
+		if (adventure == null) {
+			throw new IllegalStateException("Tried to access Adventure when the plugin was disabled!");
+		}
+		return adventure;
 	}
-
+	
 	public InventoryManager getInventoryManager() {
 		return inventoryManager;
+	}
+	
+	public void setConfigManager(ConfigurationHandler i) {
+		configurationManager = i;
+	}
+	
+	public ConfigurationHandler getConfigManager() {
+		return configurationManager;
 	}
 
 	@Override
 	public void onEnable() {
 		// Initialize critical instances
-		this.adventure = BukkitAudiences.create(this); // Adventure
+		instance = this; // Static instance of this class
+		adventure = BukkitAudiences.create(this); // Adventure
 		inventoryManager = new WWCInventoryManager(this); // InventoryManager for SmartInvs API
 		inventoryManager.init(); // Init InventoryManager
-		instance = this; // Static instance of this class
 
 		// Load plugin configs, check if they successfully initialized
 		loadPluginConfigs(false);
@@ -183,14 +193,13 @@ public class WorldwideChat extends JavaPlugin {
 		HandlerList.unregisterAll(this);
 
 		// Set static vars to null
-		if (this.adventure != null) {
-			this.adventure.close();
-			this.adventure = null;
+		if (adventure != null) {
+			adventure.close();
+			adventure = null;
 		}
 		instance = null;
 		CommonDefinitions.supportedMCVersions = null;
 		CommonDefinitions.supportedPluginLangCodes = null;
-		inventoryManager = null;
 
 		// All done.
 		getLogger().info("Disabled WorldwideChat version " + pluginVersion + ". Goodbye!");
@@ -220,8 +229,8 @@ public class WorldwideChat extends JavaPlugin {
 		} else if (command.getName().equalsIgnoreCase("wwcr") && !translatorName.equals("Starting")
 				&& getActiveAsyncTasks() == 0) {
 			// Reload command
-			WWCReload wwcr = new WWCReload(sender, command, label, args);
-			return wwcr.processCommand();
+			reload(sender);
+			return true;
 		} else if (command.getName().equalsIgnoreCase("wwcg") && hasValidTranslatorSettings(sender)) {
 			// Global translation
 			WWCTranslate wwcg = new WWCGlobal(sender, command, label, args);
@@ -390,13 +399,6 @@ public class WorldwideChat extends JavaPlugin {
 		getLogger().warning(supportedVersions);
 	}
 
-	public @NotNull BukkitAudiences adventure() {
-		if (this.adventure == null) {
-			throw new IllegalStateException("Tried to access Adventure when the plugin was disabled!");
-		}
-		return this.adventure;
-	}
-
 	public boolean checkSenderIdentity(CommandSender sender) {
 		if (!(sender instanceof Player)) {
 			final TextComponent consoleNotice = Component.text()
@@ -449,10 +451,6 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/* Setters */
-	public void setConfigManager(ConfigurationHandler i) {
-		configurationManager = i;
-	}
-
 	public void addActiveTranslator(ActiveTranslator i) {
 		if (!activeTranslators.contains(i)) {
 			activeTranslators.add(i);
@@ -709,9 +707,5 @@ public class WorldwideChat extends JavaPlugin {
 	
 	public int getMaxResponseTime() {
 		return maxResponseTime;
-	}
-
-	public ConfigurationHandler getConfigManager() {
-		return configurationManager;
 	}
 }

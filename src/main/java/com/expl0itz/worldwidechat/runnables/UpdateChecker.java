@@ -18,7 +18,7 @@ public class UpdateChecker implements Runnable {
 
 	private boolean upToDate = false;
 	private String latest = "";
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	@Override
 	public void run() {

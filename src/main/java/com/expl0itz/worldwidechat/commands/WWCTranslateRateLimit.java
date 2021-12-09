@@ -16,7 +16,7 @@ import net.kyori.adventure.text.format.NamedTextColor;
 
 public class WWCTranslateRateLimit extends BasicCommand {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	private boolean isConsoleSender = sender instanceof ConsoleCommandSender;
 	

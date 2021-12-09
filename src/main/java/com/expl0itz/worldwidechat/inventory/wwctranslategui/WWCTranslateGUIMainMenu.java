@@ -31,7 +31,7 @@ import fr.minuskube.inv.content.InventoryProvider;
 
 public class WWCTranslateGUIMainMenu implements InventoryProvider {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	private String targetPlayerUUID = "";
 
@@ -45,11 +45,11 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 		if (targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
 			playerTitle = ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUIMainMenuGlobal");
 		} else {
-			playerTitle = ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUIMainMenuPlayer", new String[] {WorldwideChat.getInstance().getServer()
+			playerTitle = ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUIMainMenuPlayer", new String[] {WorldwideChat.instance.getServer()
 					.getPlayer(UUID.fromString(targetPlayerUUID)).getName()});
 		}
 		return SmartInventory.builder().id("translateMainMenu").provider(new WWCTranslateGUIMainMenu(targetPlayerUUID))
-				.size(5, 9).manager(WorldwideChat.getInstance().getInventoryManager()).title(playerTitle).build();
+				.size(5, 9).manager(WorldwideChat.instance.getInventoryManager()).title(playerTitle).build();
 	}
 
 	@Override

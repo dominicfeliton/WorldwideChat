@@ -23,7 +23,7 @@ import net.kyori.adventure.text.format.NamedTextColor;
 
 public class ConfigurationMessagesOverrideModifyGUI implements InventoryProvider {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 	
 	private String currentOverrideName = "";
 	
@@ -34,7 +34,7 @@ public class ConfigurationMessagesOverrideModifyGUI implements InventoryProvider
 	public static SmartInventory getModifyCurrentOverride(String currentOverrideName) {
 		return SmartInventory.builder().id("overrideModifyMenu")
 				.provider(new ConfigurationMessagesOverrideModifyGUI(currentOverrideName)).size(3, 9)
-				.manager(WorldwideChat.getInstance().getInventoryManager())
+				.manager(WorldwideChat.instance.getInventoryManager())
 				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatMessagesModifyOverride"))
 				.build();
 	}
@@ -86,7 +86,7 @@ public class ConfigurationMessagesOverrideModifyGUI implements InventoryProvider
 							}
 						}.runTask(main);
 					}
-				}.runTaskAsynchronously(WorldwideChat.getInstance());
+				}.runTaskAsynchronously(WorldwideChat.instance);
 			}));
 			
 			

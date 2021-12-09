@@ -33,7 +33,7 @@ public class GoogleTranslation {
 
 	private boolean isInitializing = false;
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	public GoogleTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
 		this.textToTranslate = textToTranslate;

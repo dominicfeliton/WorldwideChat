@@ -16,7 +16,7 @@ import com.expl0itz.worldwidechat.util.PlayerRecord;
 
 public class LoadUserData implements Runnable {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	@Override
 	public void run() {

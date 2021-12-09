@@ -27,7 +27,7 @@ import com.ibm.watson.language_translator.v3.model.TranslationResult;
 
 public class WatsonTranslation {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	private String textToTranslate = "";
 	private String inputLang = "";

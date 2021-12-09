@@ -25,7 +25,7 @@ import com.expl0itz.worldwidechat.util.PlayerRecord;
 
 public class ConfigurationHandler {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	private File messagesFile;
 	private File configFile;
@@ -149,7 +149,7 @@ public class ConfigurationHandler {
 		main.setbStats(getMainConfig().getBoolean("General.enablebStats"));
 		if (getMainConfig().getBoolean("General.enablebStats")) {
 			@SuppressWarnings("unused")
-			Metrics metrics = new Metrics(WorldwideChat.getInstance(), WorldwideChat.getInstance().getbStatsID());
+			Metrics metrics = new Metrics(WorldwideChat.instance, WorldwideChat.instance.getbStatsID());
 			main.getLogger()
 					.info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigEnabledbStats"));
 		} else {

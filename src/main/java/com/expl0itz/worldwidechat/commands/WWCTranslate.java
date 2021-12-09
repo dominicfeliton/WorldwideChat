@@ -19,7 +19,7 @@ import net.kyori.adventure.text.format.NamedTextColor;
 
 public class WWCTranslate extends BasicCommand {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 	
 	private boolean isGlobal = this instanceof WWCGlobal;
 	private boolean isConsoleSender = sender instanceof ConsoleCommandSender;
@@ -119,7 +119,7 @@ public class WWCTranslate extends BasicCommand {
 			for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
 				CommonDefinitions.sendMessage(eaPlayer, chatTranslationStopped);
 			}
-			CommonDefinitions.sendMessage(WorldwideChat.getInstance().getServer().getConsoleSender(), chatTranslationStopped);
+			CommonDefinitions.sendMessage(WorldwideChat.instance.getServer().getConsoleSender(), chatTranslationStopped);
 			if (args.length >= 1 && args[0] instanceof String && args[0].equalsIgnoreCase("Stop")) {
 				return true;
 			}
@@ -275,7 +275,7 @@ public class WWCTranslate extends BasicCommand {
 				for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
 					CommonDefinitions.sendMessage(eaPlayer, autoTranslate);
 				}
-				CommonDefinitions.sendMessage(WorldwideChat.getInstance().getServer().getConsoleSender(), autoTranslate);
+				CommonDefinitions.sendMessage(WorldwideChat.instance.getServer().getConsoleSender(), autoTranslate);
 			} else {
 				final TextComponent langToLang = Component.text()
 						.append(Component.text()
@@ -285,7 +285,7 @@ public class WWCTranslate extends BasicCommand {
 				for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
 					CommonDefinitions.sendMessage(eaPlayer, langToLang);
 				}
-				CommonDefinitions.sendMessage(WorldwideChat.getInstance().getServer().getConsoleSender(), langToLang);
+				CommonDefinitions.sendMessage(WorldwideChat.instance.getServer().getConsoleSender(), langToLang);
 			}
 		}
 		ActiveTranslator newTranslator = new ActiveTranslator(inUUID, "None", outLang);

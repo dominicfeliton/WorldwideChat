@@ -82,7 +82,7 @@ public class CommonDefinitions {
 	}
 	
 	public static boolean isSameLang(String first, String second) {
-		for (SupportedLanguageObject eaLang : WorldwideChat.getInstance().getSupportedTranslatorLanguages()) {
+		for (SupportedLanguageObject eaLang : WorldwideChat.instance.getSupportedTranslatorLanguages()) {
 			if ((eaLang.getLangName().equals(getSupportedTranslatorLang(first).getLangName())
 					&& eaLang.getLangName().equals(getSupportedTranslatorLang(second).getLangName()))) {
 				return true;
@@ -92,7 +92,7 @@ public class CommonDefinitions {
 	}
 
 	public static SupportedLanguageObject getSupportedTranslatorLang(String in) {
-		for (SupportedLanguageObject eaLang : WorldwideChat.getInstance().getSupportedTranslatorLanguages()) {
+		for (SupportedLanguageObject eaLang : WorldwideChat.instance.getSupportedTranslatorLanguages()) {
 			if ((eaLang.getLangCode().equalsIgnoreCase(in) || eaLang.getLangName().equalsIgnoreCase(in))) {
 				return eaLang;
 			}
@@ -102,7 +102,7 @@ public class CommonDefinitions {
 
 	public static String getFormattedValidLangCodes() {
 		String out = "\n";
-		for (SupportedLanguageObject eaLang : WorldwideChat.getInstance().getSupportedTranslatorLanguages()) {
+		for (SupportedLanguageObject eaLang : WorldwideChat.instance.getSupportedTranslatorLanguages()) {
 			out += "(" + eaLang.getLangCode() + " - " + eaLang.getLangName() + "), ";
 		}
 		if (out.indexOf(",") != -1) {
@@ -113,13 +113,13 @@ public class CommonDefinitions {
 
 	public static void closeAllInventories() {
 		// Close all active GUIs
-		WorldwideChat.getInstance().getPlayersUsingGUI().clear();
+		WorldwideChat.instance.getPlayersUsingGUI().clear();
 		for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
 			try {
-				if (WorldwideChat.getInstance().getInventoryManager().getInventory(eaPlayer)
+				if (WorldwideChat.instance.getInventoryManager().getInventory(eaPlayer)
 						.get() instanceof SmartInventory
-						&& WorldwideChat.getInstance().getInventoryManager().getInventory(eaPlayer).get().getManager()
-								.equals(WorldwideChat.getInstance().getInventoryManager())) {
+						&& WorldwideChat.instance.getInventoryManager().getInventory(eaPlayer).get().getManager()
+								.equals(WorldwideChat.instance.getInventoryManager())) {
 					eaPlayer.closeInventory();
 				}
 			} catch (NoSuchElementException e) {
@@ -129,8 +129,8 @@ public class CommonDefinitions {
 	}
 
 	public static void sendDebugMessage(String inMessage) {
-		if (WorldwideChat.getInstance().getDebugMode()) {
-			WorldwideChat.getInstance().getLogger().warning("DEBUG: " + inMessage);
+		if (WorldwideChat.instance.getDebugMode()) {
+			WorldwideChat.instance.getLogger().warning("DEBUG: " + inMessage);
 		}
 	}
 	
@@ -141,13 +141,13 @@ public class CommonDefinitions {
 	public static String getMessage(String messageName, String[] replacements) {
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
-		if (WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
-			convertedOriginalMessage = WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName));
+		if (WorldwideChat.instance.getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
+			convertedOriginalMessage = WorldwideChat.instance.getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName));
 		} else {
-			convertedOriginalMessage = WorldwideChat.getInstance().getConfigManager().getMessagesConfig().getString("Messages." + ChatColor.stripColor(messageName));
+			convertedOriginalMessage = WorldwideChat.instance.getConfigManager().getMessagesConfig().getString("Messages." + ChatColor.stripColor(messageName));
 			if (convertedOriginalMessage == null) {
-				WorldwideChat.getInstance().getLogger().severe("Bad message! Please fix your messages-" + WorldwideChat.getInstance().getPluginLang() + ".yml.");
-				return ChatColor.RED + "Bad message! Please fix your messages-" + WorldwideChat.getInstance().getPluginLang() + ".yml.";
+				WorldwideChat.instance.getLogger().severe("Bad message! Please fix your messages-" + WorldwideChat.instance.getPluginLang() + ".yml.");
+				return ChatColor.RED + "Bad message! Please fix your messages-" + WorldwideChat.instance.getPluginLang() + ".yml.";
 			}
 		}
 		
@@ -171,13 +171,13 @@ public class CommonDefinitions {
 	
 	public static void sendMessage(CommandSender sender, TextComponent originalMessage) {
 		try {
-			Audience adventureSender = WorldwideChat.getInstance().adventure().sender(sender);
-			final TextComponent outMessage = Component.text().append(WorldwideChat.getInstance().getPluginPrefix().asComponent())
+			Audience adventureSender = WorldwideChat.instance.adventure().sender(sender);
+			final TextComponent outMessage = Component.text().append(WorldwideChat.instance.getPluginPrefix().asComponent())
 					.append(Component.text().content(" "))
 					.append(originalMessage.asComponent())
 					.build();
 			if (sender instanceof ConsoleCommandSender) {
-				WorldwideChat.getInstance().getServer().getConsoleSender().sendMessage((ChatColor.translateAlternateColorCodes('&', LegacyComponentSerializer.legacyAmpersand().serialize(outMessage))));
+				WorldwideChat.instance.getServer().getConsoleSender().sendMessage((ChatColor.translateAlternateColorCodes('&', LegacyComponentSerializer.legacyAmpersand().serialize(outMessage))));
 			} else {
 				adventureSender.sendMessage(outMessage);
 			}
@@ -190,7 +190,7 @@ public class CommonDefinitions {
 	public static String translateText(String inMessage, Player currPlayer) {
 		try {
 			/* If translator settings are invalid, do not do this... */
-			if (WorldwideChat.getInstance().getTranslatorName().equals("Invalid") || !(inMessage.length() > 0)) {
+			if (WorldwideChat.instance.getTranslatorName().equals("Invalid") || !(inMessage.length() > 0)) {
 				return inMessage;
 			}
 
@@ -198,8 +198,8 @@ public class CommonDefinitions {
 			// Warn user about color codes
 			// EssentialsX chat and maybe others replace "&4Test" with " 4Test"
 			// Therefore, we find the " #" regex or the "&" char, and warn the user about it
-			if ((inMessage.contains("&") && WorldwideChat.getInstance().getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals(""))
-					&& !(WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString())
+			if ((inMessage.contains("&") && WorldwideChat.instance.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals(""))
+					&& !(WorldwideChat.instance.getActiveTranslator(currPlayer.getUniqueId().toString())
 							.getCCWarning())) // check if user has already been sent CC warning
 			{
 				final TextComponent watsonCCWarning = Component.text()
@@ -210,30 +210,30 @@ public class CommonDefinitions {
 				CommonDefinitions.sendMessage(currPlayer, watsonCCWarning);
 				// Set got CC warning of current translator to true, so that they don't get
 				// spammed by it if they keep using CCs
-				WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString())
+				WorldwideChat.instance.getActiveTranslator(currPlayer.getUniqueId().toString())
 						.setCCWarning(true);
 				// we're still gonna translate it but it won't look pretty
 			}
 
 			/* Modify or create new player record */
-			PlayerRecord currPlayerRecord = WorldwideChat.getInstance()
+			PlayerRecord currPlayerRecord = WorldwideChat.instance
 					.getPlayerRecord(currPlayer.getUniqueId().toString(), true);
-			if (WorldwideChat.getInstance().getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations() + 1);
+			if (WorldwideChat.instance.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations() + 1);
 
 			/* Initialize current ActiveTranslator, sanity checks */
 			ActiveTranslator currActiveTranslator;
-			if (WorldwideChat.getInstance().getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
-					&& (!WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals(""))) {
-				currActiveTranslator = WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString());
-			} else if (!WorldwideChat.getInstance().getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
-					&& (!WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals(""))) {
-				currActiveTranslator = WorldwideChat.getInstance().getActiveTranslator(currPlayer.getUniqueId().toString());
+			if (WorldwideChat.instance.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
+					&& (!WorldwideChat.instance.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals(""))) {
+				currActiveTranslator = WorldwideChat.instance.getActiveTranslator(currPlayer.getUniqueId().toString());
+			} else if (!WorldwideChat.instance.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
+					&& (!WorldwideChat.instance.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals(""))) {
+				currActiveTranslator = WorldwideChat.instance.getActiveTranslator(currPlayer.getUniqueId().toString());
 			} else {
-				currActiveTranslator = WorldwideChat.getInstance().getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+				currActiveTranslator = WorldwideChat.instance.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 			}
 
 			/* Char limit check */
-			int limit = WorldwideChat.getInstance().getMessageCharLimit();
+			int limit = WorldwideChat.instance.getMessageCharLimit();
 			if (inMessage.length() > limit) {
 				final TextComponent charLimit = Component.text()
 						.append(Component.text().content(CommonDefinitions.getMessage("wwcCharLimit", new String[] {"" + limit}))
@@ -244,9 +244,9 @@ public class CommonDefinitions {
 			}
 			
 			/* Check cache */
-			if (WorldwideChat.getInstance().getTranslatorCacheLimit() > 0) {
+			if (WorldwideChat.instance.getTranslatorCacheLimit() > 0) {
 				// Check cache for inputs, since config says we should
-				List<CachedTranslation> currCache = WorldwideChat.getInstance().getCache();
+				List<CachedTranslation> currCache = WorldwideChat.instance.getCache();
 				synchronized (currCache) {
 					for (CachedTranslation currentTerm : currCache) {
 						if (currentTerm.getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
@@ -254,7 +254,7 @@ public class CommonDefinitions {
 								&& (currentTerm.getInputPhrase().equalsIgnoreCase(inMessage))) {
 							currentTerm.setNumberOfTimes(currentTerm.getNumberOfTimes() + 1);
 							// Update stats, return output
-							if (WorldwideChat.getInstance().getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+							if (WorldwideChat.instance.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
 							currPlayerRecord.setLastTranslationTime();
 							return StringEscapeUtils.unescapeJava(
 									ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase())); // done
@@ -274,8 +274,8 @@ public class CommonDefinitions {
 
 				// Get permission from Bukkit API synchronously, since we do not want to risk
 				// concurrency problems
-				if (!WorldwideChat.getInstance().getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
-					permissionCheck = Bukkit.getScheduler().callSyncMethod(WorldwideChat.getInstance(), () -> {
+				if (!WorldwideChat.instance.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+					permissionCheck = Bukkit.getScheduler().callSyncMethod(WorldwideChat.instance, () -> {
 						return checkForRateLimitPermissions(currPlayer);
 					}).get();
 				} else {
@@ -298,9 +298,9 @@ public class CommonDefinitions {
 
 				// Get user's personal rate limit, if permission is not set and they are an
 				// active translator.
-				if (!isExempt && !hasPermission && !WorldwideChat.getInstance()
+				if (!isExempt && !hasPermission && !WorldwideChat.instance
 						.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals("")) {
-					personalRateLimit = WorldwideChat.getInstance()
+					personalRateLimit = WorldwideChat.instance
 						.getActiveTranslator(currPlayer.getUniqueId().toString()).getRateLimit();
 				}
 
@@ -310,8 +310,8 @@ public class CommonDefinitions {
 						return inMessage;
 					}
 				// Global Limits
-				} else if (!isExempt && WorldwideChat.getInstance().getRateLimit() > 0) {
-					if (!checkForRateLimits(WorldwideChat.getInstance().getRateLimit(), currActiveTranslator, currPlayer)) {
+				} else if (!isExempt && WorldwideChat.instance.getRateLimit() > 0) {
+					if (!checkForRateLimits(WorldwideChat.instance.getRateLimit(), currActiveTranslator, currPlayer)) {
 						return inMessage;
 					}
 				}
@@ -324,7 +324,7 @@ public class CommonDefinitions {
 			/* Begin actual translation, set message to output */
 			String out = "";
 			CommonDefinitions.sendDebugMessage("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
-			if (WorldwideChat.getInstance().getTranslatorName().equals("Watson")) {
+			if (WorldwideChat.instance.getTranslatorName().equals("Watson")) {
 				try {
 					WatsonTranslation watsonInstance = new WatsonTranslation(inMessage,
 							currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), currPlayer);
@@ -348,7 +348,7 @@ public class CommonDefinitions {
 					CommonDefinitions.sendMessage(currPlayer, lowConfidence);
 					return inMessage;
 				}
-			} else if (WorldwideChat.getInstance().getTranslatorName().equals("Google Translate")) {
+			} else if (WorldwideChat.instance.getTranslatorName().equals("Google Translate")) {
 				try {
 					GoogleTranslation googleTranslateInstance = new GoogleTranslation(inMessage,
 							currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), currPlayer);
@@ -367,7 +367,7 @@ public class CommonDefinitions {
 					CommonDefinitions.sendMessage(currPlayer, lowConfidence);
 					return inMessage;
 				}
-			} else if (WorldwideChat.getInstance().getTranslatorName().equals("Amazon Translate")) {
+			} else if (WorldwideChat.instance.getTranslatorName().equals("Amazon Translate")) {
 				try {
 					AmazonTranslation amazonTranslateInstance = new AmazonTranslation(inMessage,
 							currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), currPlayer);
@@ -382,39 +382,39 @@ public class CommonDefinitions {
 					CommonDefinitions.sendMessage(currPlayer, lowConfidence);
 					return inMessage;
 				}
-			} else if (WorldwideChat.getInstance().getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+			} else if (WorldwideChat.instance.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
 				TestTranslation testTranslator = new TestTranslation(inMessage, currActiveTranslator.getInLangCode(),
 						currActiveTranslator.getOutLangCode(), currPlayer);
 				out = testTranslator.useTranslator();
 			}
 
 			/* Update stats */
-			if (WorldwideChat.getInstance().getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+			if (WorldwideChat.instance.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
 			currPlayerRecord.setLastTranslationTime();
 
 			/* Add to cache */
-			if (WorldwideChat.getInstance().getTranslatorCacheLimit() > 0
+			if (WorldwideChat.instance.getTranslatorCacheLimit() > 0
 					&& !(currActiveTranslator.getInLangCode().equals("None"))) {
 				CachedTranslation newTerm = new CachedTranslation(currActiveTranslator.getInLangCode(),
 						currActiveTranslator.getOutLangCode(), inMessage, out);
-				WorldwideChat.getInstance().addCacheTerm(newTerm);
+				WorldwideChat.instance.addCacheTerm(newTerm);
 			}
 			return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', out));
 		} catch (Exception e) {
 			try {
 				/* Add 1 to error count */
-				WorldwideChat.getInstance().setErrorCount(WorldwideChat.getInstance().getErrorCount() + 1);
+				WorldwideChat.instance.setErrorCount(WorldwideChat.instance.getErrorCount() + 1);
 				final TextComponent playerError = Component.text()
 						.append(Component.text().content(CommonDefinitions.getMessage("wwcTranslatorError"))
 								.color(NamedTextColor.RED))
 						.build();
 				CommonDefinitions.sendMessage(currPlayer, playerError);
-				WorldwideChat.getInstance().getLogger()
+				WorldwideChat.instance.getLogger()
 						.severe(CommonDefinitions.getMessage("wwcTranslatorErrorConsole", new String[] {currPlayer.getName()}));
 				CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
 
 				/* Write to log file */
-				File errorLog = new File(WorldwideChat.getInstance().getDataFolder(), "errorLog.txt");
+				File errorLog = new File(WorldwideChat.instance.getDataFolder(), "errorLog.txt");
 				try {
 					FileWriter fw = new FileWriter(errorLog, true);
 					LocalDate date = LocalDate.now();
@@ -431,17 +431,17 @@ public class CommonDefinitions {
 				}
 
 				/* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
-				if (WorldwideChat.getInstance().getErrorCount() >= WorldwideChat.getInstance().getErrorLimit()) {
-					WorldwideChat.getInstance().getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReached"));
-					WorldwideChat.getInstance().getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReachedCheckLogs"));
-					WorldwideChat.getInstance().getConfigManager().getMainConfig().set("Translator.useWatsonTranslate",
+				if (WorldwideChat.instance.getErrorCount() >= WorldwideChat.instance.getErrorLimit()) {
+					WorldwideChat.instance.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReached"));
+					WorldwideChat.instance.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReachedCheckLogs"));
+					WorldwideChat.instance.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate",
 							false);
-					WorldwideChat.getInstance().getConfigManager().getMainConfig().set("Translator.useGoogleTranslate",
+					WorldwideChat.instance.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate",
 							false);
-					WorldwideChat.getInstance().getConfigManager().getMainConfig().set("Translator.useAmazonTranslate",
+					WorldwideChat.instance.getConfigManager().getMainConfig().set("Translator.useAmazonTranslate",
 							false);
-					WorldwideChat.getInstance().getConfigManager().saveMainConfig(false);
-					WorldwideChat.getInstance().reload();
+					WorldwideChat.instance.getConfigManager().saveMainConfig(false);
+					WorldwideChat.instance.reload();
 				}
 			} catch (Exception e1) {
 				// If we got here, the plugin is most likely disabling.
@@ -467,7 +467,7 @@ public class CommonDefinitions {
 				public void run() {
 					CommonDefinitions.sendDebugMessage("Server is not stopping!");
 				}
-			}.runTask(WorldwideChat.getInstance());
+			}.runTask(WorldwideChat.instance);
 		} catch (IllegalPluginAccessException e) {
 			CommonDefinitions.sendDebugMessage("Server is stopping! Don't run a task/do any dumb shit.");
 			return true;
