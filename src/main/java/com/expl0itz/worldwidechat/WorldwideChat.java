@@ -58,6 +58,10 @@ import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 
 public class WorldwideChat extends JavaPlugin {
+	//TODO: Eliminate most of these config vars, and simply call them from memory
+	//TODO: Optimize WWCTranslateInGameObjects, remove non DRY code
+	//TODO: Changelog.txt per-commit
+	
 	/* Vars */
 	private static WorldwideChat instance;
 
