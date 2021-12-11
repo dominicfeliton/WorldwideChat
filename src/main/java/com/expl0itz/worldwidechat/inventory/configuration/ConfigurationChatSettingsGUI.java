@@ -49,12 +49,15 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			/* Third Button: Send a message to the user if their translation has failed */
 			sendFailedTranslationChatButton(player, contents);
 			
-			/* Fourth Button: Let user override default plugin messages */
+			/* Fourth Button: Hover over incoming translated chat to see the original message */
+			sendIncomingHoverTextChatButton(player, contents);
+			
+			/* Fifth Button: Let user override default plugin messages */
 			ItemStack messagesOverrideChatButton = XMaterial.WRITABLE_BOOK.parseItem();
 			ItemMeta messagesOverrideChatMeta = messagesOverrideChatButton.getItemMeta();
 			messagesOverrideChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIMessagesOverrideChatButton"));
 			messagesOverrideChatButton.setItemMeta(messagesOverrideChatMeta);
-			contents.set(1, 4, ClickableItem.of(messagesOverrideChatButton, e -> {
+			contents.set(1, 5, ClickableItem.of(messagesOverrideChatButton, e -> {
 				ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
 			}));
 			
@@ -148,6 +151,30 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 					.build();
 			CommonDefinitions.sendMessage(player, successfulChange);
 			sendFailedTranslationChatButton(player, contents);
+		}));
+	}
+	
+	private void sendIncomingHoverTextChatButton(Player player, InventoryContents contents) {
+		ItemStack translationChatButton = XMaterial.BEDROCK.parseItem();
+		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
+			translationChatButton = XMaterial.EMERALD_BLOCK.parseItem();
+		} else {
+			translationChatButton = XMaterial.REDSTONE_BLOCK.parseItem();
+		}
+		ItemMeta translationChatMeta = translationChatButton.getItemMeta();
+		translationChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUISendIncomingHoverTextChatButton"));
+		translationChatButton.setItemMeta(translationChatMeta);
+		contents.set(1, 4, ClickableItem.of(translationChatButton, e -> {
+			main.addPlayerUsingConfigurationGUI(player);
+			main.getConfigManager().getMainConfig().set("Chat.sendIncomingHoverTextChat",
+					!(main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")));
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwcConfigConversationSendIncomingHoverTextChatSuccess"))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage(player, successfulChange);
+			sendIncomingHoverTextChatButton(player, contents);
 		}));
 	}
 }

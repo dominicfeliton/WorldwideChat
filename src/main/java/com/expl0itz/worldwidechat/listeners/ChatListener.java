@@ -58,10 +58,18 @@ public class ChatListener implements Listener {
 							&& currTranslator.getOutLangCode().equals(testTranslator.getOutLangCode()))) {
 				
 				String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), CommonDefinitions.translateText(event.getMessage() + ChatColor.ITALIC + " (Translated)", eaRecipient));
-				TextComponent hoverOutMessage = Component.text()
-						.content(outMessageWithoutHover)
-						.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
-						.build();
+				
+				TextComponent hoverOutMessage;
+                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
+					hoverOutMessage = Component.text()
+							.content(outMessageWithoutHover)
+							.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
+							.build();
+				} else {
+					hoverOutMessage = Component.text()
+							.content(outMessageWithoutHover)
+							.build();
+				}
 				try {
 				    main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
 				} catch (IllegalStateException e) {return;}
