@@ -381,6 +381,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 					CommonDefinitions.sendDebugMessage("Outgoing chat translation disabled for " + inPlayer.getName() + ".");
 				}
 			}
+			return true;
 		} else if (this instanceof WWCTranslateChatIncoming) {
 			currentTranslator.setTranslatingChatIncoming(!currentTranslator.getTranslatingChatIncoming());
 			/* Toggle chat translation for sender! */
@@ -434,6 +435,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 					CommonDefinitions.sendDebugMessage("Incoming chat translation disabled for " + inPlayer.getName() + ".");
 				}
 			}
+			return true;
 		}
 		return false;
 	}
