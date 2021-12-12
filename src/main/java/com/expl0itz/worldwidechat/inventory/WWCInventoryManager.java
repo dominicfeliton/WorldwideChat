@@ -58,7 +58,7 @@ public class WWCInventoryManager extends InventoryManager {
 		ItemMeta pageMeta = pageButton.getItemMeta();
 		if (buttonType.equalsIgnoreCase("Previous")) {
 			pageButton = XMaterial.RED_STAINED_GLASS.parseItem();
-			pageMeta.setDisplayName(ChatColor.GREEN
+			pageMeta.setDisplayName(ChatColor.RED
 					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
 		} else if (buttonType.equalsIgnoreCase("Next")) {
 			pageButton = XMaterial.GREEN_STAINED_GLASS.parseItem();

@@ -65,10 +65,8 @@ public class ConfigurationHandler {
 			}
 		}
 
-		//TODO: Check if setting works to overwrite mem vals (but not overwrite config) instead of setPluginLang
 		mainConfig.set("General.pluginLang", "en");
 		main.getLogger().warning("Unable to detect a valid language in your config.yml. Defaulting to en...");
-		//main.setPluginLang("en");
 	}
 
 	/* Init Messages Method */

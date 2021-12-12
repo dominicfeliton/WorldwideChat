@@ -86,12 +86,7 @@ public class WatsonTranslation {
 			if (isInitializing) {
 				/* Get languages */
 				Languages allLanguages = translatorService.listLanguages().execute().getResult();
-				// we have to use deprecated methods here; trying to reference JsonParser
-				// statically results in a class not found error?? :(
-				// this is probably because watson uses an outdated gson version interally. sad
-				// :(
-				JsonParser jsonParser = new JsonParser();
-				JsonElement jsonTree = jsonParser.parse(allLanguages.toString());
+				JsonElement jsonTree = JsonParser.parseString(allLanguages.toString());
 				JsonObject jsonObject = jsonTree.getAsJsonObject();
 
 				/* Parse json */
@@ -122,9 +117,7 @@ public class WatsonTranslation {
 
 			/* Process final output */
 			TranslationResult translationResult = translatorService.translate(options).execute().getResult();
-			//TODO: Check if we can stop using deprecated methods
-			JsonParser jsonParser = new JsonParser();
-			JsonElement jsonTree = jsonParser.parse(translationResult.toString());
+			JsonElement jsonTree = JsonParser.parseString(translationResult.toString());
 			JsonObject jsonObject = jsonTree.getAsJsonObject();
 			JsonElement translationSection = jsonObject.getAsJsonArray("translations").get(0).getAsJsonObject()
 					.get("translation");

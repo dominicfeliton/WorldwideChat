@@ -57,10 +57,6 @@ import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 
 public class WorldwideChat extends JavaPlugin {
-	//TODO: Eliminate most of these config vars, and simply call them from memory
-	//TODO: Optimize WWCTranslateInGameObjects, remove non DRY code
-	//TODO: Changelog.txt per-commit
-	
 	/* Vars */
 	public static final int bStatsID = 10562;
 	public static final int asyncTasksTimeoutSeconds = 10;

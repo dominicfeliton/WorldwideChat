@@ -25,7 +25,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 	private WorldwideChat main = WorldwideChat.instance;
 
 	public static final SmartInventory translatorSettings = SmartInventory.builder().id("translatorSettingsMenu")
-			.provider(new ConfigurationTranslatorSettingsGUI()).size(4, 9)
+			.provider(new ConfigurationTranslatorSettingsGUI()).size(3, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUITranslatorSettings"))
 			.build();
@@ -33,7 +33,6 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		try {
-			//TODO: Resize this GUI, extra row
 			/* White stained glass borders */
 			ItemStack customBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
 			ItemMeta borderMeta = customBorders.getItemMeta();
@@ -99,7 +98,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			}));
 			
 			/* Bottom Right Option: Previous Page */
-			contents.set(3, 1,
+			contents.set(2, 1,
 					ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), 
 							e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
 
@@ -109,7 +108,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			quitMeta.setDisplayName(ChatColor.RED
 					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
 			quitButton.setItemMeta(quitMeta);
-			contents.set(3, 4, ClickableItem.of(quitButton, e -> {
+			contents.set(2, 4, ClickableItem.of(quitButton, e -> {
 				main.removePlayerUsingConfigurationGUI(player);
 				player.closeInventory();
 				main.reload(player);
