@@ -229,9 +229,6 @@ Messages:
     5 руу анхдагч...
   wwcTranslatorErrorThresholdReachedCheckLogs: Дэлгэрэнгүй мэдээллийг WorldWidDechat
     залгаас хавтсанд errorLog.txt шалгана уу.
-  wwcConfigMaxResponseTimeInvalid: Буруу хамгийн их хариу цаг config.yml-д заасан.
-    7 секунд хүртэл анхдагч...
-  wwcConfigMaxResponseTimeEnabled: Макс хариу хугацаа %i секунд тохируулагдсан.
   wwctInvalidInputLangCode: 'Оролтын хэлний код буруу байна! Хүчинтэй урт кодууд:
     %o'
   wwcsTitle: '%i Бичлэг'
@@ -285,15 +282,11 @@ Messages:
   wwcteOffTarget: Аж ахуйн нэгжийн орчуулга %i нь идэвхгүй.
   wwcCharLimit: Таны мессеж хэтэрхий урт байна! Таны мессеж урт %i тэмдэгтээс бага
     байгаа эсэхийг шалгана уу.
-  wwcConfigConversationResponseLimitInput: Орчуулагч бүрийн одоогийн хариу хугацаа
-    %i секунд байна. 0-ээс их зүйлийг шинэ утгыг тохируулахын тулд эсвэл 0-ээс бага
-    эсвэл тэнцүү зүйлийг бичиж өгнө үү.
   wwcConfigConversationCharacterLimitInput: Мессеж дэх одоогийн тэмдэгтийн хязгаар
     нь %i тэмдэгтүүд байна. 0-ээс их зүйлийг шинэ утгыг тохируулахын тулд эсвэл 0-ээс
     бага эсвэл тэнцүү зүйлийг бичиж өгнө үү.
   wwcteOffSender: Аж ахуйн нэгж орчуулга тахир дутуу.
   wwctGUIEntityButton: Түлхүүр аж ахуйн нэгжийн орчуулга
-  wwcConfigConversationResponseLimitSuccess: Хариу хугацаа амжилттай тогтоосон.
   wwctrlRateLimitBadInt: Таны ханшийн хязгаар нь хүчин төгөлдөр бүхэл тоо биш юм.
   wwcTranslatorErrorConsole: Хэрэглэгч %i тэдний орчуулгыг оролдож байх үед асуудал
     гарсан. Илүү дэлгэрэнгүйг errorLog.txt шалгана уу.

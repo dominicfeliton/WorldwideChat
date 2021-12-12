@@ -26,18 +26,12 @@ Messages:
     cineál 0 a chur ar ceal an teorainn. Cineál rud ar bith níos lú ná 0 chun dul
     ar ais.
   wwcteOnTarget: Aistriúchán aonáin cumasaithe le h %i.
-  wwcConfigMaxResponseTimeInvalid: Neamhbhailí am freagartha max atá leagtha síos
-    i config.yml. Réamhshocraithe go 7 soicind...
   wwcBookTranslateStart: Aistriú leabhar sprioc...
   wwcEntityTranslateDone: 'Aistrithe Ainm an Aonáin: %i'
   wwctsOffSender: Sínigh aistriúchán faoi mhíchumas.
   wwcConfigGUIChatMessagesDeadOverride: Tá an sárú seo neamhbhailí, nó baineadh an
     teachtaireacht bhunaidh. Ba chóir duit é seo a scriosadh.
-  wwcConfigConversationResponseLimitInput: Is é an t-amchlár freagartha reatha do
-    gach aistritheoir ná %i soicindí. Cineál rud ar bith níos mó ná 0 a shocrú le
-    luach nua, nó cineál rud ar bith níos lú ná nó cothrom le 0 chun dul ar ais.
   wwcUpdaterParserFailed: Theip ar pharsáil sonraí cothrom le dáta ó Github.
-  wwcConfigMaxResponseTimeEnabled: Am freagartha Max a leagtar a %i soicindí.
   wwctAutoTranslateStart: Seisiún nua aistriúcháin a thosú chuig %o.
   wwctbOffSender: Aistriúchán leabhar faoi mhíchumas.
   wwcsSuccessfulTranslations: 'Aistriúcháin Rathúil: %i'
@@ -259,7 +253,6 @@ Messages:
   wwcConfigGUIPluginUpdateChatButton: Seol Meabhrúchán Comhrá le haghaidh Nuashonruithe
     Breiseán
   wwcsTitle: Taifead de %i
-  wwcConfigConversationResponseLimitSuccess: Teorainn ama freagartha leagtha go rathúil.
   wwcConfigGUIErrorLimitButton: Athraigh Teorainn Earráid Aistritheoir
   wwcConfigConversationWatsonAPIKeyInput: Is é an eochair API atá ann faoi láthair
     %i. Cuir isteach eochair API do Watson, nó cineál 0 chun dul ar ais.

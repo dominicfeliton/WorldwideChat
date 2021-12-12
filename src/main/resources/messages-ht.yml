@@ -221,9 +221,6 @@ Messages:
     pou 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Tanpri tcheke errorLog.txt nan folder
     nan Plugin WorldwideChat pou plis enfòmasyon.
-  wwcConfigMaxResponseTimeInvalid: Envalid max tan repons mete nan config.yml. Défauting
-    pou 7 segonn...
-  wwcConfigMaxResponseTimeEnabled: Max tan repons mete nan % mwen segonn.
   wwctInvalidInputLangCode: 'Envalid kòd lang opinyon bay! kòd lang valab: %o'
   wwcsTitle: Dosye nan % mwen
   wwctInvalidOutputLangCode: 'Envalid kòd lang pwodiksyon bay! kòd lang valab: %o'
@@ -274,15 +271,11 @@ Messages:
   wwcteOffTarget: Tradiksyon antite andikape pou % mwen.
   wwcCharLimit: Mesaj ou a twò lontan! Tanpri asire w ke mesaj ou a se mwens pase
     % mwen karaktè nan longè.
-  wwcConfigConversationResponseLimitInput: Poz repons aktyèl la pou chak tradiktè
-    se % mwen segonn. Tape anyen ki pi konsekan pase 0 yo mete yon nouvo valè, oswa
-    tape anyen mwens pase oswa egal a 0 ale tounen.
   wwcConfigConversationCharacterLimitInput: Limit karaktè aktyèl la pou chak mesaj
     se % mwen karaktè. Tape anyen ki pi konsekan pase 0 yo mete yon nouvo valè, oswa
     tape anyen mwens pase oswa egal a 0 ale tounen.
   wwcteOffSender: Tradiksyon antite enfim.
   wwctGUIEntityButton: Tradiksyon antite baskil
-  wwcConfigConversationResponseLimitSuccess: poz Repons mete avèk siksè.
   wwctrlRateLimitBadInt: Limit pousantaj ou a se pa yon nonb antye relatif ki valab.
   wwcTranslatorErrorConsole: Yon pwoblèm ki te fèt pandan y ap itilizatè % mwen te
     eseye tradiksyon yo. Tanpri tcheke errorLog.txt pou plis detay.

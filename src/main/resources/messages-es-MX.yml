@@ -235,9 +235,6 @@ Messages:
     config.yml. Incumpliendo a 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Por favor, consulte errorLog.txt en
     la carpeta del plugin WorldwideChat para obtener más información.
-  wwcConfigMaxResponseTimeInvalid: Tiempo máximo de respuesta no válido establecido
-    en config.yml. Defendiendo a 7 segundos...
-  wwcConfigMaxResponseTimeEnabled: Tiempo máximo de respuesta establecido a %i segundos.
   wwctInvalidInputLangCode: '¡Se proporciona código de idioma de entrada no válido!
     Códigos de lang válidos: %o'
   wwcsTitle: Registro de %i
@@ -292,16 +289,11 @@ Messages:
   wwcteOffTarget: Traducción de entidad desactivada para %i.
   wwcCharLimit: ¡Tu mensaje es demasiado largo! Por favor, asegúrate de que tu mensaje
     tenga menos de %i caracteres de longitud.
-  wwcConfigConversationResponseLimitInput: El tiempo de espera de respuesta actual
-    para cada traductor es %i segundos. Escriba algo mayor que 0 para establecer un
-    nuevo valor, o escriba algo menor o igual a 0 para volver atrás.
   wwcConfigConversationCharacterLimitInput: El límite de caracteres actual por mensaje
     es %i caracteres. Escriba algo mayor que 0 para establecer un nuevo valor, o escriba
     algo menor o igual a 0 para volver atrás.
   wwcteOffSender: Traducción de entidad desactivada.
   wwctGUIEntityButton: Alternar Entidad Traducción
-  wwcConfigConversationResponseLimitSuccess: Tiempo de espera de respuesta establecido
-    con éxito.
   wwctrlRateLimitBadInt: Tu límite de tasa no es un entero válido.
   wwcTranslatorErrorConsole: Ocupa un problema mientras el usuario %i intentaba su
     traducción. Por favor, consulte errorLog.txt para obtener más detalles.

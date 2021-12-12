@@ -227,9 +227,6 @@ Messages:
     Defaulting kepada 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Sila semak errorLog.txt dalam folder
     plugin WorldwideChat untuk maklumat lanjut.
-  wwcConfigMaxResponseTimeInvalid: Masa respons maks tidak sah ditetapkan dalam config.yml.
-    Lalai hingga 7 saat...
-  wwcConfigMaxResponseTimeEnabled: Masa maks respons ditetapkan ke %i saat.
   wwctInvalidInputLangCode: 'Kod bahasa input tidak sah disediakan! Kod lang sah:
     %o'
   wwcsTitle: Rekod dari %i
@@ -281,15 +278,11 @@ Messages:
   wwcteOffTarget: Terjemahan entiti dilumpuhkan untuk %i.
   wwcCharLimit: Mesej anda terlalu panjang! Sila pastikan panjang mesej anda kurang
     daripada %i aksara.
-  wwcConfigConversationResponseLimitInput: Had masa tamat respons semasa bagi setiap
-    penterjemah adalah %i saat. Taip apa-apa yang lebih besar daripada 0 untuk menetapkan
-    nilai baru, atau taip apa-apa yang kurang daripada atau sama dengan 0 untuk kembali.
   wwcConfigConversationCharacterLimitInput: Had aksara semasa bagi setiap mesej adalah
     %i aksara. Taip apa-apa yang lebih besar daripada 0 untuk menetapkan nilai baru,
     atau taip apa-apa yang kurang daripada atau sama dengan 0 untuk kembali.
   wwcteOffSender: Terjemahan entiti dilumpuhkan.
   wwctGUIEntityButton: Togol Terjemahan Entiti
-  wwcConfigConversationResponseLimitSuccess: Had masa tamat balasan berjaya ditetapkan.
   wwctrlRateLimitBadInt: Had kadar anda bukan integer yang sah.
   wwcTranslatorErrorConsole: Masalah berlaku semasa pengguna %i cuba terjemahannya.
     Sila semak errorLog.txt untuk maklumat lanjut.

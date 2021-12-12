@@ -228,9 +228,6 @@ Messages:
     Noklusējuma izpilde līdz 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Lūdzu, pārbaudiet errorLog.txt WorldwideChat
     spraudnis mapē, lai iegūtu vairāk informācijas.
-  wwcConfigMaxResponseTimeInvalid: Nederīgs maksimālais reakcijas laiks, kas iestatīts
-    config.yml. Noklusējuma izpilde līdz 7 sekundēm...
-  wwcConfigMaxResponseTimeEnabled: Maksimālais atbildes laiks ir iestatīts uz %i sekundes.
   wwctInvalidInputLangCode: 'Norādīts nederīgs ievades valodas kods! Derīgi lang kodi:
     %o'
   wwcsTitle: Ierakstīt %i
@@ -283,15 +280,11 @@ Messages:
   wwcteOffTarget: Entītijas tulkojums atspējots uz %i.
   wwcCharLimit: Jūsu ziņa ir pārāk gara! Lūdzu, pārliecinieties, ka jūsu ziņojums
     ir mazāks par %i rakstzīmes garumā.
-  wwcConfigConversationResponseLimitInput: Pašreizējais atbildes taimauts katram tulkotājam
-    ir %i sekundes. Ierakstiet visu, kas lielāks par 0, lai iestatītu jaunu vērtību,
-    vai ierakstiet kaut ko, kas mazāks par vai vienāds ar 0, lai atgrieztos.
   wwcConfigConversationCharacterLimitInput: Pašreizējais rakstzīmju ierobežojums vienam
     ziņojumam ir %i rakstzīmes. Ierakstiet visu, kas lielāks par 0, lai iestatītu
     jaunu vērtību, vai ierakstiet kaut ko, kas mazāks par vai vienāds ar 0, lai atgrieztos.
   wwcteOffSender: Entītiju tulkošana ir
   wwctGUIEntityButton: Pārslēgt entītijas tulkošanu
-  wwcConfigConversationResponseLimitSuccess: Atbildes taimauts veiksmīgi iestatīts.
   wwctrlRateLimitBadInt: Jūsu likmes ierobežojums nav derīgs vesels skaitlis.
   wwcTranslatorErrorConsole: Problēma radās, kamēr lietotājs %i mēģināja tulkot. Lūdzu,
     pārbaudiet errorLog.txt, lai iegūtu sīkāku informāciju.

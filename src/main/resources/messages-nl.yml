@@ -230,9 +230,6 @@ Messages:
     Standaard 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Raadpleeg errorLog.txt in de map WorldwideChat-plug-in
     voor meer informatie.
-  wwcConfigMaxResponseTimeInvalid: Ongeldige maximale responstijd ingesteld in config.yml.
-    Standaard 7 seconden...
-  wwcConfigMaxResponseTimeEnabled: Max. reactietijd ingesteld op %i seconden.
   wwctInvalidInputLangCode: 'Ongeldige invoertaalcode meegeleverd! Geldige lange codes:
     %o'
   wwcsTitle: Record van %i
@@ -286,15 +283,11 @@ Messages:
   wwcteOffTarget: Entiteitvertaling uitgeschakeld voor %i.
   wwcCharLimit: Je boodschap is te lang! Zorg ervoor dat je bericht minder dan %i
     tekens lang is.
-  wwcConfigConversationResponseLimitInput: De huidige reactietijd voor elke vertaler
-    is %i seconden. Typ iets groter dan 0 om een nieuwe waarde in te stellen, of typ
-    iets kleiner dan of gelijk aan 0 om terug te gaan.
   wwcConfigConversationCharacterLimitInput: De huidige tekenlimiet per bericht is
     %i tekens. Typ iets groter dan 0 om een nieuwe waarde in te stellen, of typ iets
     kleiner dan of gelijk aan 0 om terug te gaan.
   wwcteOffSender: Vertaling van entiteit is uitgeschakeld.
   wwctGUIEntityButton: Toggle Enty Translation
-  wwcConfigConversationResponseLimitSuccess: Time-out voor respons is succesvol ingesteld.
   wwctrlRateLimitBadInt: Je tarieflimiet is geen geldig geheel getal.
   wwcTranslatorErrorConsole: Er is een probleem opgetreden tijdens de vertaling van
     gebruiker %i. Raadpleeg errorLog.txt voor meer informatie.

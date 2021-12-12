@@ -229,9 +229,6 @@ Messages:
     Дефолт до 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Будь ласка, перевірте errorLog.txt
     в папці плагінів WorldwideChat для отримання додаткової інформації.
-  wwcConfigMaxResponseTimeInvalid: Некоректний максимальний час відгуку, встановлений
-    у config.yml. За замовленням до 7 секунд...
-  wwcConfigMaxResponseTimeEnabled: Максимальний час відгуку встановлено в %i секунд.
   wwctInvalidInputLangCode: 'Некоректний код мови вводу! Допустимі коди ленг: %o'
   wwcsTitle: Запис з %i
   wwctInvalidOutputLangCode: 'Некоректний код мови виведення! Допустимі коди ленг:
@@ -283,16 +280,11 @@ Messages:
   wwcteOffTarget: Переклад сутності вимкнено для %i.
   wwcCharLimit: Ваше повідомлення занадто довге! Будь ласка, переконайтеся, що ваше
     повідомлення менше, ніж у %i символів.
-  wwcConfigConversationResponseLimitInput: Поточний час очікування відповіді для кожного
-    перекладача складає %i секунд. Введіть щось більше за 0, щоб встановити нове значення,
-    або введіть щось менше або рівне 0, щоб повернутися назад.
   wwcConfigConversationCharacterLimitInput: Поточне обмеження символів на повідомлення
     складає %i символів. Введіть щось більше за 0, щоб встановити нове значення, або
     введіть щось менше або рівне 0, щоб повернутися назад.
   wwcteOffSender: Переклад сутності вимкнено.
   wwctGUIEntityButton: Переключити переклад сутності
-  wwcConfigConversationResponseLimitSuccess: Час очікування відповіді встановлено
-    успішно.
   wwctrlRateLimitBadInt: Обмеження ставки не є дійсним цілим числом.
   wwcTranslatorErrorConsole: Виникла проблема, коли користувач %i намагався їх переклад.
     Будь ласка, перевірте errorLog.txt для отримання додаткової інформації.

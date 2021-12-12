@@ -213,9 +213,6 @@ Messages:
     العمل إلى 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: يرجى التحقق من errorLog.txt في مجلد
     البرنامج المساعد WorldwideChat لمزيد من المعلومات.
-  wwcConfigMaxResponseTimeInvalid: تعيين وقت استجابة الحد الأقصى غير صالح في config.yml.
-    تخلف عن العمل لمدة 7 ثوانٍ...
-  wwcConfigMaxResponseTimeEnabled: تعيين الحد الأقصى لوقت الاستجابة إلى %i ثانية.
   wwctInvalidInputLangCode: 'تم توفير رمز لغة الإدخال غير صالح! رموز اللغة الصالحة:
     %o'
   wwcsTitle: سجل %i
@@ -263,14 +260,10 @@ Messages:
   wwcConfigMessageCharLimitEnabled: تم تعيين حد الأحرف لكل رسالة إلى أحرف %i.
   wwcteOffTarget: تم تعطيل ترجمة الكيان لـ %i.
   wwcCharLimit: رسالتك طويلة جدًا! يرجى التأكد من أن رسالتك أقل من %i حرف في الطول.
-  wwcConfigConversationResponseLimitInput: مهلة الاستجابة الحالية لكل مترجم هي %i
-    ثانية. اكتب أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب أي شيء أقل من أو يساوي
-    0 للعودة.
   wwcConfigConversationCharacterLimitInput: الحد الحالي للحرف لكل رسالة هو %i حرف.
     اكتب أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب أي شيء أقل من أو يساوي 0 للعودة.
   wwcteOffSender: تم تعطيل ترجمة الكيان.
   wwctGUIEntityButton: تبديل ترجمة الكيان
-  wwcConfigConversationResponseLimitSuccess: تم تعيين مهلة الاستجابة بنجاح.
   wwctrlRateLimitBadInt: حد السعر الخاص بك ليس عددًا صحيحًا صالحًا.
   wwcTranslatorErrorConsole: حدثت مشكلة أثناء محاولة المستخدم %i ترجمته. يرجى التحقق
     من errorLog.txt لمزيد من التفاصيل.

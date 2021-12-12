@@ -225,9 +225,6 @@ Messages:
     უპირობოდ 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: გთხოვთ შეამოწმოთ errorLog.txt WorldwideChat
     მოდულის საქაღალდეში დამატებითი ინფორმაციისთვის.
-  wwcConfigMaxResponseTimeInvalid: არასწორი მაქსიმალური რეაგირების დრო მითითებული
-    config.yml. 7 წამის დეფოლტირება...
-  wwcConfigMaxResponseTimeEnabled: მაქსიმალური რეაგირების დრო დაყენებულია %i წამში.
   wwctInvalidInputLangCode: 'არასწორი შეყვანის ენის კოდი გათვალისწინებული! მოქმედი
     lang კოდები: %o'
   wwcsTitle: '%i - ის ჩანაწერი'
@@ -279,16 +276,11 @@ Messages:
   wwcteOffTarget: ერთეულის თარგმანი გათიშულია %i.
   wwcCharLimit: შენი გზავნილი ძალიან გრძელია! გთხოვთ, დარწმუნდეთ, რომ თქვენი შეტყობინება
     სიგრძე %i სიმბოლოზე ნაკლებია.
-  wwcConfigConversationResponseLimitInput: თითოეული მთარგმნელისთვის მიმდინარე რეაგირების
-    შეყოვნება არის %i წამი. აკრიფეთ 0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა,
-    ან აკრიფოთ არაფერი ნაკლები ან ტოლი 0 დაბრუნდეს.
   wwcConfigConversationCharacterLimitInput: სიმბოლოთა მიმდინარე ლიმიტი თითო შეტყობინება
     %i სიმბოლოებია. აკრიფეთ 0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან
     აკრიფოთ არაფერი ნაკლები ან ტოლი 0 დაბრუნდეს.
   wwcteOffSender: პირი თარგმანი გამორთულია.
   wwctGUIEntityButton: სუბიექტური თარგმანის გადართვა
-  wwcConfigConversationResponseLimitSuccess: რეაგირების შეყოვნება წარმატებით არის
-    მითითებული.
   wwctrlRateLimitBadInt: თქვენი კურსის ლიმიტი არ არის სწორი რიცხვი.
   wwcTranslatorErrorConsole: პრობლემა იმართებოდა მომხმარებელი %i მათი თარგმანის მცდელობისას.
     გთხოვთ შეამოწმოთ errorLog.txt უფრო დეტალურად.

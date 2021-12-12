@@ -181,8 +181,6 @@ Messages:
   wwcTranslatorError: 嘗試翻譯時發生問題。請再試一次。
   wwcConfigErrorLimitInvalid: 在 config.yml 中設定的轉換器錯誤限制無效。預設為 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: 如需詳細資訊，請檢查「全球聊天」外掛程式資料夾中的 errorLog.txt。
-  wwcConfigMaxResponseTimeInvalid: 在 config.yml 中設定的最大回應時間無效。預設值為 7 秒...
-  wwcConfigMaxResponseTimeEnabled: 最大回應時間設定為 %i 秒。
   wwctInvalidInputLangCode: 提供的輸入語言代碼無效！有效的語言代碼： %o
   wwcsTitle: '%i 的記錄'
   wwctInvalidOutputLangCode: 提供的輸出語言代碼無效！有效的語言代碼： %o
@@ -224,13 +222,10 @@ Messages:
   wwcConfigMessageCharLimitEnabled: 每封郵件設定為 %i 個字元的字元限制。
   wwcteOffTarget: '%i 已停用實體轉譯。'
   wwcCharLimit: 您的訊息太長了！請確認您的訊息長度少於 %i 個字元。
-  wwcConfigConversationResponseLimitInput: 每個轉換器的目前回應逾時為 %i 秒。輸入大於 0 的任何值以設定新值，或輸入小於或等於
-    0 的任何值以返回。
   wwcConfigConversationCharacterLimitInput: 每封郵件目前的字元限制為 %i 個字元。輸入大於 0 的任何值以設定新值，或輸入小於或等於
     0 的任何值以返回。
   wwcteOffSender: 已停用實體轉換。
   wwctGUIEntityButton: 切換實體轉換
-  wwcConfigConversationResponseLimitSuccess: 回應逾時設定成功。
   wwctrlRateLimitBadInt: 你的費率限制不是有效的整數。
   wwcTranslatorErrorConsole: 使用者 %i 嘗試翻譯時發生問題。請查看 errorLog.txt 以獲取更多詳細信息。
   wwctGUIChatButton: 切換聊天翻譯

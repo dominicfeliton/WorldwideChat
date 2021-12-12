@@ -226,9 +226,6 @@ Messages:
     Výchozí hodnota 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Další informace zkontrolujte errorLog.txt
     ve složce plugin WorldwideChat.
-  wwcConfigMaxResponseTimeInvalid: Neplatná maximální doba odezvy nastavená v config.yml.
-    Výchozí na 7 sekund...
-  wwcConfigMaxResponseTimeEnabled: Maximální doba odezvy nastavena na %i sekund.
   wwctInvalidInputLangCode: 'Neplatný kód vstupního jazyka je k dispozici! Platné
     kódy lang: %o'
   wwcsTitle: Záznam %i
@@ -279,15 +276,11 @@ Messages:
   wwcteOffTarget: Překlad entit zakázán pro %i.
   wwcCharLimit: Vaše zpráva je příliš dlouhá! Ujistěte se, že vaše zpráva má menší
     než %i znaků.
-  wwcConfigConversationResponseLimitInput: Aktuální časový limit odezvy pro každý
-    překladač je %i sekund. Zadejte něco většího než 0 pro nastavení nové hodnoty
-    nebo zadejte něco menší než nebo rovno 0 a vraťte se zpět.
   wwcConfigConversationCharacterLimitInput: Aktuální limit znaků na zprávu je %i znaků.
     Zadejte něco většího než 0 pro nastavení nové hodnoty nebo zadejte něco menší
     než nebo rovno 0 a vraťte se zpět.
   wwcteOffSender: Převod entit zakázán.
   wwctGUIEntityButton: Přepnout překlad entit
-  wwcConfigConversationResponseLimitSuccess: Časový limit odezvy byl úspěšně nastaven.
   wwctrlRateLimitBadInt: Váš limit sazeb není platné celé číslo.
   wwcTranslatorErrorConsole: Vyskytl se problém, když se uživatele %i pokoušel o jejich
     překlad. Další podrobnosti zkontrolujte errorLog.txt.

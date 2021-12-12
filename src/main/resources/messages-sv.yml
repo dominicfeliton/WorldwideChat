@@ -228,9 +228,6 @@ Messages:
     till 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Kontrollera errorLog.txt i mappen WorldwideChat
     plugin för mer information.
-  wwcConfigMaxResponseTimeInvalid: Ogiltig maximal svarstid inställd i config.yml.
-    Defaulerar till 7 sekunder...
-  wwcConfigMaxResponseTimeEnabled: Maximal svarstid inställd på %i sekunder.
   wwctInvalidInputLangCode: 'Ogiltig språkkod för inmatning tillhandahålls! Giltiga
     langkoder: %o'
   wwcsTitle: Post av %i
@@ -284,15 +281,11 @@ Messages:
   wwcteOffTarget: Entitetsöversättning inaktiverad för %i.
   wwcCharLimit: Ditt meddelande är för långt! Se till att ditt meddelande är mindre
     än %i tecken.
-  wwcConfigConversationResponseLimitInput: Den aktuella tidsgränsen för svaren för
-    varje översättare är %i sekunder. Skriv något större än 0 om du vill ange ett
-    nytt värde, eller skriv något mindre än eller lika med 0 för att gå tillbaka.
   wwcConfigConversationCharacterLimitInput: Den aktuella teckengränsen per meddelande
     är %i-tecken. Skriv något större än 0 om du vill ange ett nytt värde, eller skriv
     något mindre än eller lika med 0 för att gå tillbaka.
   wwcteOffSender: Entitetsöversättning inaktiverad
   wwctGUIEntityButton: Växla entitetsöversättning
-  wwcConfigConversationResponseLimitSuccess: Tidsgräns för svar har ställts in.
   wwctrlRateLimitBadInt: Din prisgräns är inte ett giltigt heltal.
   wwcTranslatorErrorConsole: Ett problem uppstod när användare %i försökte översätta
     dem. Kontrollera errorLog.txt för mer information.

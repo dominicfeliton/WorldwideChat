@@ -229,10 +229,6 @@ Messages:
     टू 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: कृपया अधिक जानकारी के लिए WorldwideChat
     प्लगइन फ़ोल्डर में errorLog.txt की जांच करें।
-  wwcConfigMaxResponseTimeInvalid: config.yml में अमान्य अधिकतम प्रतिक्रिया समय सेट
-    किया गया है। 7 सेकंड के लिए डिफ़ॉल्ट...
-  wwcConfigMaxResponseTimeEnabled: अधिकतम प्रतिक्रिया समय %i सेकंड पर सेट किया गया
-    है।
   wwctInvalidInputLangCode: 'अमान्य इनपुट भाषा कोड प्रदान किया गया! वैध लैंग कोड:
     %o'
   wwcsTitle: '%i का रिकॉर्ड'
@@ -286,16 +282,11 @@ Messages:
   wwcteOffTarget: '%i के लिए इकाई अनुवाद अक्षम किया गया।'
   wwcCharLimit: आपका संदेश बहुत लंबा है! कृपया सुनिश्चित करें कि आपका संदेश लंबाई
     में %i वर्णों से कम है।
-  wwcConfigConversationResponseLimitInput: प्रत्येक अनुवादक के लिए वर्तमान प्रतिसाद
-    टाइमआउट %i सेकेंड है। एक नया मान सेट करने के लिए 0 से अधिक कुछ भी टाइप करें, या
-    वापस जाने के लिए 0 से कम या बराबर कुछ भी टाइप करें।
   wwcConfigConversationCharacterLimitInput: प्रति संदेश वर्तमान वर्ण सीमा %i अक्षर
     है। एक नया मान सेट करने के लिए 0 से अधिक कुछ भी टाइप करें, या वापस जाने के लिए
     0 से कम या बराबर कुछ भी टाइप करें।
   wwcteOffSender: इकाई अनुवाद अक्षम किया गया।
   wwctGUIEntityButton: एंटिटी ट्रांसलेशन टॉगल करें
-  wwcConfigConversationResponseLimitSuccess: रिस्पांस टाइमआउट सफलतापूर्वक सेट किया
-    गया
   wwctrlRateLimitBadInt: आपकी दर सीमा वैध पूर्णांक नहीं है।
   wwcTranslatorErrorConsole: एक समस्या तब हुई जब उपयोगकर्ता %i उनके अनुवाद का प्रयास
     कर रहा था। अधिक जानकारी के लिए कृपया errorLog.txt की जांच करें।

@@ -63,7 +63,9 @@ public class WorldwideChat extends JavaPlugin {
 	
 	/* Vars */
 	public static final int bStatsID = 10562;
-	public static final int asyncTasksTimeoutSeconds = 7;
+	public static final int asyncTasksTimeoutSeconds = 10;
+	public static final int translatorConnectionTimeoutSeconds = 5;
+	public static final int translatorFatalAbortSeconds = 8;
 	
 	public static WorldwideChat instance;
 	
@@ -143,6 +145,7 @@ public class WorldwideChat extends JavaPlugin {
 				+ CommonDefinitions.getMessage("wwcListenersInitialized"));
 
 		// We made it!
+		CommonDefinitions.sendDebugMessage("Async tasks running: " + this.getActiveAsyncTasks());
 		getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcEnabled", new String[] {pluginVersion}));
 	}
 
@@ -176,7 +179,7 @@ public class WorldwideChat extends JavaPlugin {
 				CommonDefinitions.sendDebugMessage("Waited " + asyncTasksTimeWaited + " ms for async tasks to finish.");
 			}
 		}
-
+		
 		// Cleanly cancel/reset all background tasks (runnables, timers, vars, etc.)
 		cancelBackgroundTasks(false);
 

@@ -216,17 +216,6 @@ public class ConfigurationHandler {
 		} catch (Exception e) {
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigErrorLimitInvalid"));
 		}
-		// Max Response Time Settings
-		try {
-			if (mainConfig.getInt("Translator.maxResponseTime") > 0) {
-				main.getLogger().info(
-						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigMaxResponseTimeEnabled", new String[] {mainConfig.getInt("Translator.maxResponseTime") + ""}));
-			} else {
-				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMaxResponseTimeInvalid"));
-			}
-		} catch (Exception e) {
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMaxResponseTimeInvalid"));
-		}
 	}
 
 	/* Translator Settings */

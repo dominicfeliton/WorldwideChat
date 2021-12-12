@@ -229,9 +229,6 @@ Messages:
     config.yml. V neplačilu do 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Za več informacij preverite errorLog.txt
     v mapi WorldwideChat plugin.
-  wwcConfigMaxResponseTimeInvalid: Neveljaven maksimalni odzivni čas, določen v config.yml.
-    Privzetje do 7 sekund...
-  wwcConfigMaxResponseTimeEnabled: Maksimalni odzivni čas nastavljen na %i sekunde.
   wwctInvalidInputLangCode: 'Neveljavna koda jezika vnosa na voljo! Veljavne kode
     lang: %o'
   wwcsTitle: Zapis od %i
@@ -284,15 +281,11 @@ Messages:
   wwcteOffTarget: Prevod entitete onemogočen za %i.
   wwcCharLimit: Vaše sporočilo je predolgo! Prosimo, poskrbite, da je vaše sporočilo
     manjše od %i znakov v dolžino.
-  wwcConfigConversationResponseLimitInput: Trenutni odzivni čas za vsak prevajalec
-    je %i sekund. Vnesite karkoli večje od 0, če želite nastaviti novo vrednost, ali
-    pa vnesite karkoli, ki je manjša ali enaka 0, da se vrnete nazaj.
   wwcConfigConversationCharacterLimitInput: Trenutna omejitev znakov na sporočilo
     je %i znakov. Vnesite karkoli večje od 0, če želite nastaviti novo vrednost, ali
     pa vnesite karkoli, ki je manjša ali enaka 0, da se vrnete nazaj.
   wwcteOffSender: Prevod entitete onemogočen.
   wwctGUIEntityButton: Preklop prevodov entitete
-  wwcConfigConversationResponseLimitSuccess: Odzivni čas je bil uspešno nastavljen.
   wwctrlRateLimitBadInt: Vaša omejitev stopnje ni veljavno celo število.
   wwcTranslatorErrorConsole: Do težave je prišlo, medtem ko je uporabnik %i poskušal
     njihov prevod. Prosimo, preverite errorLog.txt za več podrobnosti.

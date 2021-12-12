@@ -239,9 +239,6 @@ Messages:
     në config.yml. Defaulting në 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Ju lutem kontrolloni errorLog.txt në
     dosjen e plugin WorldwideChat për më shumë informacion.
-  wwcConfigMaxResponseTimeInvalid: Koha e pavlefshme e përgjigjes max vendosur në
-    config.yml. Defaulting në 7 sekonda...
-  wwcConfigMaxResponseTimeEnabled: Koha maksimale e përgjigjes caktohet në %i sekonda.
   wwctInvalidInputLangCode: 'Kodi i pavlefshëm i gjuhës së hyrjes dhënë! Kodet e vlefshme
     lang: %o'
   wwcsTitle: Regjistrimi prej %i
@@ -294,17 +291,11 @@ Messages:
   wwcteOffTarget: Përkthimi i subjektit i paaftë për %i.
   wwcCharLimit: Mesazhi juaj është shumë i gjatë! Ju lutemi sigurohuni që mesazhi
     juaj të jetë më i vogël se %i karaktere në gjatësi.
-  wwcConfigConversationResponseLimitInput: Kohëzgjatja aktuale e përgjigjes për secilin
-    përkthyes është %i sekonda. Shkruani ndonjë gjë më të madhe se 0 për të vendosur
-    një vlerë të re, ose shkruani ndonjë gjë më pak se ose të barabartë me 0 për t'u
-    kthyer.
   wwcConfigConversationCharacterLimitInput: Kufiri aktual i karakterit për mesazh
     është %i karaktere. Shkruani ndonjë gjë më të madhe se 0 për të vendosur një vlerë
     të re, ose shkruani ndonjë gjë më pak se ose të barabartë me 0 për t'u kthyer.
   wwcteOffSender: Përkthimi subjekt me aftësi
   wwctGUIEntityButton: Toggle Enti Përkthimi
-  wwcConfigConversationResponseLimitSuccess: Kohëzgjatja e përgjigjes vendosur me
-    sukses.
   wwctrlRateLimitBadInt: Kufiri juaj i normës nuk është një numër i plotë i vlefshëm.
   wwcTranslatorErrorConsole: Ndodhi një problem përderisa përdoruesi %i po tentonte
     përkthimin e tyre. Ju lutem kontrolloni errorLog.txt për më shumë detaje.

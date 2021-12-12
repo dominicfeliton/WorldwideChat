@@ -224,9 +224,6 @@ Messages:
     Defaulting 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Lisätietoja on WorldwideChat plugin
     -kansiossa errorLog.txt.
-  wwcConfigMaxResponseTimeInvalid: Virheellinen enimmäisvasteaika asetettu config.yml.
-    Defaulting 7 sekuntia...
-  wwcConfigMaxResponseTimeEnabled: Suurin vasteaika asetettu %i sekuntia.
   wwctInvalidInputLangCode: 'Virheellinen syöttökielikoodi toimitetaan! Kelvolliset
     lang-koodit: %o'
   wwcsTitle: Tiedon %i tietue
@@ -277,15 +274,11 @@ Messages:
   wwcteOffTarget: Entiteetin käännös käytöstä kohteella %
   wwcCharLimit: Viestisi on liian pitkä! Varmista, että viestisi on pituudeltaan alle
     %i merkkiä.
-  wwcConfigConversationResponseLimitInput: Kunkin kääntäjän nykyinen vasteaikakatkaisu
-    on %i sekuntia. Kirjoita jokin suurempi kuin 0, jos haluat asettaa uuden arvon,
-    tai kirjoita jotain vähemmän tai yhtä suuri kuin 0, jos haluat palata takaisin.
   wwcConfigConversationCharacterLimitInput: Viestin nykyinen merkkiraja on %i-merkkiä.
     Kirjoita jokin suurempi kuin 0, jos haluat asettaa uuden arvon, tai kirjoita jotain
     vähemmän tai yhtä suuri kuin 0, jos haluat palata takaisin.
   wwcteOffSender: Yksikön käännös käytöstä
   wwctGUIEntityButton: Vaihda entiteetin käännös
-  wwcConfigConversationResponseLimitSuccess: Vastausaikakatkaisu on määritetty onnistuneesti.
   wwctrlRateLimitBadInt: Korkorajoituksesi ei ole kelvollinen kokonaisluku.
   wwcTranslatorErrorConsole: Ongelma ilmeni, kun käyttäjä %i yritti käännöstä. Tarkista
     lisätietoja errorLog.txt.

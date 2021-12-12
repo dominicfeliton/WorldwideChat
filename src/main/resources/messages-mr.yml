@@ -23,18 +23,12 @@ Messages:
     मूल्य सेट करण्यासाठी 0 पेक्षा जास्त काहीही टाइप करा, किंवा मर्यादा अक्षम करण्यासाठी
     0 टाइप करा. परत जाण्यासाठी 0 पेक्षा कमी काहीही टाइप करा.
   wwcteOnTarget: '%i करीता अस्तित्व भाषांतर कार्यान्वीत केले आहे.'
-  wwcConfigMaxResponseTimeInvalid: अवैध कमाल प्रतिसाद वेळ config.yml मध्ये सेट. 7
-    सेकंद डीफॉल्ट...
   wwcBookTranslateStart: लक्ष्य पुस्तकाचे भाषांतर करीत आहे...
   wwcEntityTranslateDone: 'भाषांतरित अस्तित्व नाव: %i'
   wwctsOffSender: अनुवाद अक्षम साइन इन करा.
   wwcConfigGUIChatMessagesDeadOverride: हा अधिलिखित एकतर अवैध आहे, किंवा मूळ संदेश
     काढला गेला आहे. आपण या हटवू नये.
-  wwcConfigConversationResponseLimitInput: प्रत्येक अनुवादकाचे सध्याचे प्रतिसाद वेळ
-    %i सेकंद आहे. नवीन मूल्य सेट करण्यासाठी 0 पेक्षा जास्त काहीही टाइप करा, किंवा
-    परत जाण्यासाठी 0 पेक्षा कमी किंवा समान काहीही टाइप करा.
   wwcUpdaterParserFailed: GitHub पासून डेटा अद्यतनित करण्यास अयशस्वी.
-  wwcConfigMaxResponseTimeEnabled: कमाल प्रतिसाद वेळ %i सेकंद करीता सेट केले जाते.
   wwctAutoTranslateStart: नविन भाषांतर सत्र %o करीता सुरू करत आहे.
   wwctbOffSender: पुस्तक अनुवाद अक्षम.
   wwcsSuccessfulTranslations: 'यशस्वी भाषांतरे: %i'
@@ -244,7 +238,6 @@ Messages:
   wwcgLangToLangStart: आता जागतिक गप्पांचे भाषांतर %i पासून %o पर्यंत केले आहे.
   wwcConfigGUIPluginUpdateChatButton: प्लगइन अद्यतनांसाठी चॅट रिमाइंडर पाठवा
   wwcsTitle: '%i ची नोंद'
-  wwcConfigConversationResponseLimitSuccess: प्रतिसाद कालबाह्य यशस्वीरित्या सेट.
   wwcConfigGUIErrorLimitButton: अनुवादक त्रुटी मर्यादा बदला
   wwcConfigConversationWatsonAPIKeyInput: वर्तमान API कि %i आहे. कृपया वॉटसनसाठी API
     की इनपुट करा, किंवा परत जाण्यासाठी टाइप करा 0.

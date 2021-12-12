@@ -237,9 +237,6 @@ Messages:
     Inîndeplinire a obligațiilor de plată la 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Verificați errorLog.txt în folderul
     plugin WorldwideChat pentru mai multe informații.
-  wwcConfigMaxResponseTimeInvalid: Timp maxim de răspuns invalid stabilit în config.yml.
-    Inîndeplinire a obligațiilor la 7 secunde...
-  wwcConfigMaxResponseTimeEnabled: Timpul maxim de răspuns setat la %i secunde.
   wwctInvalidInputLangCode: 'Codul de limbă de intrare nevalid furnizat! Coduri valide
     lang: %o'
   wwcsTitle: Înregistrarea de %i
@@ -293,16 +290,11 @@ Messages:
   wwcteOffTarget: Traducerea entității dezactivată pentru %i.
   wwcCharLimit: Mesajul tău e prea lung! Vă rugăm să vă asigurați că mesajul dvs.
     este mai mic de %i caracterele.
-  wwcConfigConversationResponseLimitInput: Timpul de expirare a răspunsului curent
-    pentru fiecare traducător este %i secunde. Tastați ceva mai mare decât 0 pentru
-    a seta o valoare nouă sau tastați ceva mai mic sau egal cu 0 pentru a reveni.
   wwcConfigConversationCharacterLimitInput: Limita curentă de caractere pentru fiecare
     mesaj este %i caractere. Tastați ceva mai mare decât 0 pentru a seta o valoare
     nouă sau tastați ceva mai mic sau egal cu 0 pentru a reveni.
   wwcteOffSender: Entitate traducere dezactivată.
   wwctGUIEntityButton: Comută traducerea entității
-  wwcConfigConversationResponseLimitSuccess: Timpul de expirare a răspunsului stabilit
-    cu succes
   wwctrlRateLimitBadInt: Limita dvs. de rată nu este un număr întreg valid.
   wwcTranslatorErrorConsole: A apărut o problemă în timp ce utilizatorul %i încerca
     traducerea lor. Vă rugăm să verificați errorLog.txt pentru mai multe detalii.

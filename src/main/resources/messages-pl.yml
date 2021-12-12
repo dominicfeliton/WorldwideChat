@@ -229,9 +229,6 @@ Messages:
     Domyślnie do 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Sprawdź errorLog.txt w folderze wtyczki
     WorldwideChat, aby uzyskać więcej informacji.
-  wwcConfigMaxResponseTimeInvalid: Nieprawidłowy maksymalny czas odpowiedzi ustawiony
-    w config.yml. Domyślnie 7 sekund...
-  wwcConfigMaxResponseTimeEnabled: Maksymalny czas reakcji ustawiony na %i sekund.
   wwctInvalidInputLangCode: 'Podano nieprawidłowy kod języka wejściowego! Prawidłowe
     kody lang: %o'
   wwcsTitle: Zapis z %i
@@ -284,15 +281,11 @@ Messages:
   wwcteOffTarget: Tłumaczenie encji wyłączone dla %i.
   wwcCharLimit: Twoja wiadomość jest za długa! Upewnij się, że Twoja wiadomość jest
     mniejsza niż %i znaków.
-  wwcConfigConversationResponseLimitInput: Bieżący limit czasu odpowiedzi dla każdego
-    tłumacza wynosi %i sekund. Wpisz wartość większą niż 0, aby ustawić nową wartość,
-    lub wpisz wartość mniejszą lub równą 0, aby wrócić.
   wwcConfigConversationCharacterLimitInput: Bieżący limit znaków na wiadomość to %i
     znaków. Wpisz wartość większą niż 0, aby ustawić nową wartość, lub wpisz wartość
     mniejszą lub równą 0, aby wrócić.
   wwcteOffSender: Tłumaczenie encji wyłączone.
   wwctGUIEntityButton: Przełącz translację encji
-  wwcConfigConversationResponseLimitSuccess: Ustawiono limit czasu odpowiedzi pomyślnie.
   wwctrlRateLimitBadInt: Twój limit szybkości nie jest prawidłową liczbą całkowitą.
   wwcTranslatorErrorConsole: Wystąpił problem podczas próby tłumaczenia przez użytkownik
     %i. Sprawdź errorLog.txt, aby uzyskać więcej szczegółów.

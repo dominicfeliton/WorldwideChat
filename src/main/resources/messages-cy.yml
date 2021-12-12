@@ -227,9 +227,6 @@ Messages:
     Defaulting i 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Gwiriwch errorLog.txt yn y ffolder
     ategyn WorldwideChat am fwy o wybodaeth.
-  wwcConfigMaxResponseTimeInvalid: Amser ymateb max annilys a osodwyd yn config.yml.
-    Defaulting i 7 eiliad...
-  wwcConfigMaxResponseTimeEnabled: Amser ymateb Max wedi'i osod i %i eiliadau.
   wwctInvalidInputLangCode: 'Cod iaith mewnbwn annilys a ddarperir! Codau lang dilys:
     %o'
   wwcsTitle: Cofnod o %i
@@ -281,15 +278,11 @@ Messages:
   wwcteOffTarget: Cyfieithu endid wedi'i analluogi am %i.
   wwcCharLimit: Mae eich neges yn rhy hir! Gwnewch yn siŵr bod eich neges yn llai
     na %i nodau o hyd.
-  wwcConfigConversationResponseLimitInput: Yr amser ymateb presennol ar gyfer pob
-    cyfieithydd yw %i eiliad. Teipiwch unrhyw beth mwy na 0 i osod gwerth newydd,
-    neu deipio unrhyw beth llai na neu'n hafal i 0 i fynd yn ôl.
   wwcConfigConversationCharacterLimitInput: Y terfyn nod cyfredol fesul neges yw cymeriadau
     %i. Teipiwch unrhyw beth mwy na 0 i osod gwerth newydd, neu deipio unrhyw beth
     llai na neu'n hafal i 0 i fynd yn ôl.
   wwcteOffSender: Analluogwyd cyfieithu endid.
   wwctGUIEntityButton: Toggle Endid Cyfieithu
-  wwcConfigConversationResponseLimitSuccess: Amser ymateb a osodwyd yn llwyddiannus.
   wwctrlRateLimitBadInt: Nid yw eich terfyn cyfradd yn gyfanrif dilys.
   wwcTranslatorErrorConsole: Digwyddodd problem tra defnyddiwr %i yn ceisio eu cyfieithiad.
     Gwiriwch errorLog.txt am fwy o fanylion.

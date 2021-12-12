@@ -25,18 +25,12 @@ Messages:
     Digite qualquer coisa superior a 0 para definir um novo valor, ou digite 0 para
     desativar o limite. Digite qualquer coisa inferior a 0 para voltar atrás.
   wwcteOnTarget: Tradução de entidade habilitada para %i.
-  wwcConfigMaxResponseTimeInvalid: Tempo de resposta máximo inválido definido em config.yml.
-    Predefinida para 7 segundos...
   wwcBookTranslateStart: A traduzir o livro de destino...
   wwcEntityTranslateDone: 'Nome da entidade traduzida: %i'
   wwctsOffSender: Assinar tradução desactivado.
   wwcConfigGUIChatMessagesDeadOverride: Esta revogação é inválida ou a mensagem original
     foi removida. Deve apagar isto.
-  wwcConfigConversationResponseLimitInput: O tempo de resposta atual para cada tradutor
-    é %i segundos. Digite qualquer coisa superior a 0 para definir um novo valor,
-    ou escreva qualquer coisa inferior ou igual a 0 para voltar atrás.
   wwcUpdaterParserFailed: Falha ao analisar os dados de actualização do Github.
-  wwcConfigMaxResponseTimeEnabled: Tempo máximo de resposta definido para %i segundos.
   wwctAutoTranslateStart: Início de uma nova sessão de tradução para %o.
   wwctbOffSender: Tradução de livro desactivada
   wwcsSuccessfulTranslations: 'Traduções de sucesso: %i'
@@ -253,8 +247,6 @@ Messages:
   wwcConfigGUIPluginUpdateChatButton: Enviar lembrete de chat para atualizações de
     plugin
   wwcsTitle: Registo de %i
-  wwcConfigConversationResponseLimitSuccess: Tempo limite de resposta definido com
-    sucesso.
   wwcConfigGUIErrorLimitButton: Alterar limite de erro do tradutor
   wwcConfigConversationWatsonAPIKeyInput: A chave API actual é %i. Introduza uma chave
     API para o Watson ou introduza 0 para voltar atrás.

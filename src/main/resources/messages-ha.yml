@@ -227,9 +227,6 @@ Messages:
     a daidaita.yml Cefaulting zuwa 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Da fatan a duba errorLog.txt a cikin
     babban fayil na WorldwideChat don ƙarin bayani.
-  wwcConfigMaxResponseTimeInvalid: Lokacin amsawa mara inganci wanda aka saita a daidaitawa.
-    yml. Cefaulting zuwa 7 seconds...
-  wwcConfigMaxResponseTimeEnabled: Max lokacin amsawa saiti zuwa %i seconds.
   wwctInvalidInputLangCode: 'An ba da lambar harshe mai shigar da inganci! Lambobin
     lang masu inganci: %o'
   wwcsTitle: rikodin na %i
@@ -281,15 +278,11 @@ Messages:
   wwcteOffTarget: Fassarar mahalli da aka kashe domin %i.
   wwcCharLimit: Sakonka ya yi tsawo! Don Allah ka tabbata sakonka ya kasa da haruffan
     %i a tsawon.
-  wwcConfigConversationResponseLimitInput: Lokacin amsawa na yanzu ga kowane mai fassara
-    shine %i seconds. Rubuta wani abu mafi girma fiye da 0 don saita sabon darajar,
-    ko rubuta wani abu kasa da ko daidai da 0 don komawa.
   wwcConfigConversationCharacterLimitInput: Iyakar hali na yanzu a kowane saƙo shi
     ne haruffan %i. Rubuta wani abu mafi girma fiye da 0 don saita sabon darajar,
     ko rubuta wani abu kasa da ko daidai da 0 don komawa.
   wwcteOffSender: An kashe fassarar haɗin kai.
   wwctGUIEntityButton: Fassarar Kunshiya
-  wwcConfigConversationResponseLimitSuccess: An saita lokacin amsawa cikin nasara.
   wwctrlRateLimitBadInt: Iyakar kuɗin ku ba wata lamba mai inganci ba ce.
   wwcTranslatorErrorConsole: Wata matsala ta zama yayin da mai amfani %i yake ƙoƙarin
     fassararsu. Da fatan za a duba errorLog.txt don ƙarin bayani.

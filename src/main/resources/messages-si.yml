@@ -231,9 +231,6 @@ Messages:
     5 වෙත ගෙවීම පැහැර හැරීම...
   wwcTranslatorErrorThresholdReachedCheckLogs: වැඩි විස්තර සඳහා කරුණාකර WorldwideChat
     ප්ලගින ෆෝල්ඩරයේ errorLog.txt පරීක්ෂා කරන්න.
-  wwcConfigMaxResponseTimeInvalid: config.yml තබා වලංගු නොවන උපරිම ප්රතිචාර කාලය.
-    තත්පර 7 ක් දක්වා පැහැර හැරීම...
-  wwcConfigMaxResponseTimeEnabled: මැක්ස් ප්රතිචාර කාලය %i තත්පරයට සකසා ඇත.
   wwctInvalidInputLangCode: 'වලංගු නොවන ආදාන භාෂා කේතය ලබා දී ඇත! වලංගු දිගු කේත:
     %o'
   wwcsTitle: '%i වාර්තාව'
@@ -286,15 +283,11 @@ Messages:
   wwcteOffTarget: ආයතන පරිවර්ථනය %i සඳහා අක්‍රීය විය.
   wwcCharLimit: ඔබේ පණිවිඩය දිගු වේ! කරුණාකර ඔබගේ පණිවිඩය %i අක්ෂරවලට වඩා අඩුවෙන්
     ඇති බවට වග බලා ගන්න.
-  wwcConfigConversationResponseLimitInput: එක් එක් පරිවර්තකයා සඳහා වර්තමාන ප්රතිචාර
-    කාලය %i තත්පර වේ. නව වටිනාකමක් සැකසීමට 0 ට වඩා වැඩි දෙයක් ටයිප් කරන්න, නැතහොත්
-    ආපසු යාමට 0 ට වඩා අඩු හෝ සමාන දෙයක් ටයිප් කරන්න.
   wwcConfigConversationCharacterLimitInput: පණිවිඩයකට වර්තමාන අක්ෂර සීමාව %i අක්ෂර
     වේ. නව වටිනාකමක් සැකසීමට 0 ට වඩා වැඩි දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ට
     වඩා අඩු හෝ සමාන දෙයක් ටයිප් කරන්න.
   wwcteOffSender: ආයතන පරිවර්තනය අක්රීය කර ඇත.
   wwctGUIEntityButton: ටොගල් කරන්න ආයතනය පරිවර්තනය
-  wwcConfigConversationResponseLimitSuccess: ප්රතිචාර කාලය සාර්ථකව සකසා ඇත.
   wwctrlRateLimitBadInt: ඔබගේ අනුපාත සීමාව වලංගු නිඛිලයක් නොවේ.
   wwcTranslatorErrorConsole: පරිශීලක % මම ඔවුන්ගේ පරිවර්තනයට උත්සාහ කරමින් සිටියදී
     ගැටළුවක් ඇති විය. වැඩි විස්තර සඳහා errorLog.txt පරීක්ෂා කරන්න.

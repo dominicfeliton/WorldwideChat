@@ -232,10 +232,6 @@ Messages:
     Նախնականը 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Խնդրում ենք ստուգել errorLog.txt է
     WorldwideChat plugin թղթապանակում լրացուցիչ տեղեկությունների համար.
-  wwcConfigMaxResponseTimeInvalid: Անվավեր առավելագույն արձագանքման ժամանակը սահմանվում
-    է config.yml. Նախնականը 7 վայրկյան...
-  wwcConfigMaxResponseTimeEnabled: 'Առավելագույն արձագանքման ժամանակը սահմանվել է
-    %i վայրկյան:'
   wwctInvalidInputLangCode: 'Անվավեր մուտքագրման լեզվի կոդը տրամադրված! Վավեր lang
     կոդեր: %o'
   wwcsTitle: '%i ռեկորդային'
@@ -289,15 +285,11 @@ Messages:
   wwcteOffTarget: Անդամության թարգմանությունը անջատված է %i համար։
   wwcCharLimit: 'Ձեր հաղորդագրությունը չափազանց երկար է! Խնդրում ենք համոզվեք, որ
     ձեր հաղորդագրությունը պակաս է %i նիշերից երկարությամբ:'
-  wwcConfigConversationResponseLimitInput: 'Ընթացիկ պատասխան ժամկետը յուրաքանչյուր
-    թարգմանչի համար %i վայրկյան. Մուտքագրեք ավելի մեծ բան, քան 0 նոր արժեք սահմանելու
-    համար կամ մուտքագրեք 0- ից պակաս կամ հավասար է:'
   wwcConfigConversationCharacterLimitInput: 'Ներկայիս բնույթի սահմանաչափը մեկ հաղորդագրության
     համար %i նիշ է: Մուտքագրեք ավելի մեծ բան, քան 0 նոր արժեք սահմանելու համար կամ
     մուտքագրեք 0- ից պակաս կամ հավասար է:'
   wwcteOffSender: Անձ թարգմանությունը հաշմանդամ.
   wwctGUIEntityButton: Toggle անձի թարգմանություն
-  wwcConfigConversationResponseLimitSuccess: Response timeout սահմանված հաջողությամբ.
   wwctrlRateLimitBadInt: Ձեր տոկոսադրույքը սահմանաչափը չէ վավեր թիվ.
   wwcTranslatorErrorConsole: Խնդիրն առաջացել է, իսկ օգտվողը %i փորձում էր իրենց թարգմանությունը.
     Խնդրում ենք ստուգել errorLog.txt լրացուցիչ մանրամասների համար.

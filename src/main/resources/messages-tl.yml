@@ -245,10 +245,6 @@ Messages:
     sa config.yml. Default sa 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Mangyaring suriin ang errorLog.txt
     sa folder ng WorldwideChat plugin para sa karagdagang impormasyon.
-  wwcConfigMaxResponseTimeInvalid: Di-wastong max na oras ng pagtugon na itinakda
-    sa config.yml. Default sa 7 segundo...
-  wwcConfigMaxResponseTimeEnabled: Ang maximum na oras ng pagtugon ay nakatakda sa
-    %i segundo.
   wwctInvalidInputLangCode: 'Di-wastong input code ng wika na ibinigay! Valid lang
     mga code: %o'
   wwcsTitle: Record ng %i
@@ -307,18 +303,12 @@ Messages:
   wwcteOffTarget: Hindi pinagana ang pagsasalin ng entity para sa %i.
   wwcCharLimit: Masyadong mahaba ang iyong mensahe! Mangyaring siguraduhin na ang
     iyong mensahe ay mas mababa sa %i character sa haba.
-  wwcConfigConversationResponseLimitInput: Ang kasalukuyang timeout ng pagtugon para
-    sa bawat tagasalin ay %i segundo. I-type ang anumang mas malaki kaysa sa 0 upang
-    magtakda ng bagong halaga, o i-type ang anumang mas mababa sa o katumbas ng 0
-    upang bumalik.
   wwcConfigConversationCharacterLimitInput: Ang kasalukuyang limitasyon ng character
     sa bawat mensahe ay %i character. I-type ang anumang mas malaki kaysa sa 0 upang
     magtakda ng bagong halaga, o i-type ang anumang mas mababa sa o katumbas ng 0
     upang bumalik.
   wwcteOffSender: Hindi pinagana ang pagsasalin ng entity.
   wwctGUIEntityButton: I-toggle ang Entity Translation
-  wwcConfigConversationResponseLimitSuccess: Matagumpay na itinakda ang timeout ng
-    tugon.
   wwctrlRateLimitBadInt: Ang iyong limitasyon sa rate ay hindi wastong integer.
   wwcTranslatorErrorConsole: Nagkaroon ng problema habang tinatangka ng gumagamit
     %i ang kanilang pagsasalin. Mangyaring suriin errorLog.txt para sa higit pang

@@ -220,9 +220,6 @@ Messages:
     5 дефолт...
   wwcTranslatorErrorThresholdReachedCheckLogs: Қосымша ақпарат алу үшін WorldwideChat
     плагин қалтасында errorLog.txt тексеріңіз.
-  wwcConfigMaxResponseTimeInvalid: config.yml ішінде орнатылған жарамсыз макс жауап
-    уақыты. 7 секундқа дефолт...
-  wwcConfigMaxResponseTimeEnabled: Макс жауап беру уақыты %i секундқа орнатылады.
   wwctInvalidInputLangCode: 'Жарамсыз енгізу тілінің коды берілген! Жарамды кодтары:
     %o'
   wwcsTitle: '%i жазбасы'
@@ -275,15 +272,11 @@ Messages:
   wwcteOffTarget: Субъект аудармасы %i өшірілген.
   wwcCharLimit: Сіздің хабарламаңыз тым ұзақ! Хабарламаңыздың ұзындығы %i таңбаларынан
     аз екеніне көз жеткізіңіз.
-  wwcConfigConversationResponseLimitInput: Әр аудармашы үшін ағымдағы жауап беру мерзімі
-    %i секунд. Жаңа мәнді орнату үшін 0-ден асатын нәрсені теріңіз немесе кері оралу
-    үшін 0-ден аз немесе тең нәрсені теріңіз.
   wwcConfigConversationCharacterLimitInput: Бір хабардың ағымдағы таңбалар шегі %i
     таңбалары болып табылады. Жаңа мәнді орнату үшін 0-ден асатын нәрсені теріңіз
     немесе кері оралу үшін 0-ден аз немесе тең нәрсені теріңіз.
   wwcteOffSender: Субъект аударма өшірілген.
   wwctGUIEntityButton: Toggle субъектінің аудармасы
-  wwcConfigConversationResponseLimitSuccess: Жауап беру мерзімдері сәтті орнатылған.
   wwctrlRateLimitBadInt: Сіздің мөлшерлеме шегі жарамды бүтін сан емес.
   wwcTranslatorErrorConsole: '%i қолдануда олардың аудармасын жасау кезінде проблема
     туындады. Қосымша ақпарат алу үшін errorLog.txt тексеріңіз.'

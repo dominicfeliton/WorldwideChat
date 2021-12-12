@@ -217,9 +217,6 @@ Messages:
     sınırı. Varsayılan olarak 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Daha fazla bilgi için lütfen WorldwideChat
     eklentisi klasöründeki errorLog.txt dosyasını kontrol edin.
-  wwcConfigMaxResponseTimeInvalid: Config.yml içinde ayarlanmış maksimum yanıt süresi
-    geçersiz. 7 saniyeye varsayılan—
-  wwcConfigMaxResponseTimeEnabled: Maksimum yanıt süresi %i saniye olarak ayarlandı.
   wwctInvalidInputLangCode: 'Geçersiz giriş dili kodu sağlandı! Geçerli lang kodları:
     %o'
   wwcsTitle: '%i kaydı'
@@ -270,15 +267,11 @@ Messages:
   wwcteOffTarget: '%i için varlık çevirisi devre dışı bırakıldı.'
   wwcCharLimit: Mesajın çok uzun! Lütfen mesajınızın uzunluğu %i karakterden daha
     az olduğundan emin olun.
-  wwcConfigConversationResponseLimitInput: Her çevirmen için geçerli yanıt zaman aşımı
-    %i saniyedir. Yeni bir değer ayarlamak için 0'dan büyük bir şey yazın veya geri
-    dönmek için 0'dan küçük veya eşit bir şey yazın.
   wwcConfigConversationCharacterLimitInput: İleti başına geçerli karakter sınırı %i
     karakterdir. Yeni bir değer ayarlamak için 0'dan büyük bir şey yazın veya geri
     dönmek için 0'dan küçük veya eşit bir şey yazın.
   wwcteOffSender: Varlık çevirisi devre dışı.
   wwctGUIEntityButton: Varlık Çevirisi Aç/Kapat
-  wwcConfigConversationResponseLimitSuccess: Yanıt zaman aşımı başarıyla ayarlandı.
   wwctrlRateLimitBadInt: Hız limitiniz geçerli bir tamsayı değil.
   wwcTranslatorErrorConsole: '%i kullanıcısı çevirisini denerken bir sorun oluştu.
     Daha fazla ayrıntı için errorLog.txt dosyasını kontrol edin.'

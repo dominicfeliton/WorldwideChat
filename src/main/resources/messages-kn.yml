@@ -234,9 +234,6 @@ Messages:
     5 ಗೆ ಡಿಫಾಲ್ಟಿಂಗ್...
   wwcTranslatorErrorThresholdReachedCheckLogs: ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ದಯವಿಟ್ಟು WordWidechat
     ಪ್ಲಗಿನ್ ಫೋಲ್ಡರ್ errorLog.txt ಪರಿಶೀಲಿಸಿ.
-  wwcConfigMaxResponseTimeInvalid: ಅಮಾನ್ಯ ಗರಿಷ್ಠ ಪ್ರತಿಕ್ರಿಯೆ ಸಮಯ config.yml ಸೆಟ್.
-    7 ಸೆಕೆಂಡುಗಳ ಕಾಲ ಡಿಫಾಲ್ಟಿಂಗ್...
-  wwcConfigMaxResponseTimeEnabled: ಮ್ಯಾಕ್ಸ್ ಪ್ರತಿಕ್ರಿಯೆ ಸಮಯ %i ಸೆಕೆಂಡುಗಳ ಸೆಟ್.
   wwctInvalidInputLangCode: 'ಅಮಾನ್ಯವಾದ ಇನ್ಪುಟ್ ಭಾಷಾ ಕೋಡ್ ಒದಗಿಸಲಾಗಿದೆ! ಮಾನ್ಯ ಲಾಂಗ್
     ಸಂಕೇತಗಳು: %o'
   wwcsTitle: '%i ನ ದಾಖಲೆ'
@@ -287,15 +284,11 @@ Messages:
   wwcteOffTarget: ಘಟಕದ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwcCharLimit: ನಿಮ್ಮ ಸಂದೇಶವು ತುಂಬಾ ಉದ್ದವಾಗಿದೆ! ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸಂದೇಶವು ಉದ್ದ %i ಅಕ್ಷರಗಳಿಗಿಂತ
     ಕಡಿಮೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
-  wwcConfigConversationResponseLimitInput: ಪ್ರತಿ ಭಾಷಾಂತರಕಾರನಿಗೆ ಪ್ರಸ್ತುತ ಪ್ರತಿಕ್ರಿಯೆ
-    ಸಮಯ %i ಸೆಕೆಂಡುಗಳು. ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 0 ಗಿಂತ ಹೆಚ್ಚಿನದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ
-    ಹಿಂತಿರುಗಿ 0 ಗಿಂತ ಕಡಿಮೆ ಅಥವಾ ಸಮಾನವಾದದ್ದನ್ನು ಟೈಪ್ ಮಾಡಿ.
   wwcConfigConversationCharacterLimitInput: ಪ್ರತಿ ಸಂದೇಶಕ್ಕೆ ಪ್ರಸ್ತುತ ಅಕ್ಷರ ಮಿತಿ %i
     ಅಕ್ಷರಗಳು. ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 0 ಗಿಂತ ಹೆಚ್ಚಿನದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ
     0 ಗಿಂತ ಕಡಿಮೆ ಅಥವಾ ಸಮಾನವಾದದ್ದನ್ನು ಟೈಪ್ ಮಾಡಿ.
   wwcteOffSender: ಘಟಕದ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwctGUIEntityButton: ಟಾಗಲ್ ಎಂಟಿಟಿ ಅನುವಾದ
-  wwcConfigConversationResponseLimitSuccess: ಪ್ರತಿಕ್ರಿಯೆ ಕಾಲಾವಧಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
   wwctrlRateLimitBadInt: ನಿಮ್ಮ ದರ ಮಿತಿ ಮಾನ್ಯ ಪೂರ್ಣಾಂಕವಲ್ಲ.
   wwcTranslatorErrorConsole: ಬಳಕೆದಾರ %i ಅವರ ಅನುವಾದವನ್ನು ಪ್ರಯತ್ನಿಸುತ್ತಿರುವಾಗ ಒಂದು ಸಮಸ್ಯೆ
     ಎದುರಾಗಿದೆ. ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ ದಯವಿಟ್ಟು errorLog.txt ಅನ್ನು ಪರಿಶೀಲಿಸಿ.

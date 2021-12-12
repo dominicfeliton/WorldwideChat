@@ -221,9 +221,6 @@ Messages:
     5 ته تلل...
   wwcTranslatorErrorThresholdReachedCheckLogs: مهرباني وکړئ د نورو معلوماتو لپاره
     د WorldwideChat پلگ ان فولډر کې errorLog.txt وګورئ.
-  wwcConfigMaxResponseTimeInvalid: ناسم اعظمي ځواب وخت په config.yml کې ټاکل شوی.
-    7 ثانیو ته تلل...
-  wwcConfigMaxResponseTimeEnabled: . %i ثانیو ته د ځواب اعظمي وخت ټاکل
   wwctInvalidInputLangCode: 'ناسم انډول ژبې کوډ برابر شو! د اعتبار وړ لینګ کوډونه:
     %o'
   wwcsTitle: '%i ثبتول'
@@ -275,16 +272,11 @@ Messages:
   wwcteOffTarget: .د بنسټ ژباړه ناتوانول شو %i لپاره
   wwcCharLimit: ستاسو پیغام ډیر اوږد دی! مهرباني وکړئ ډاډ ترلاسه کړئ چې ستاسو پیغام
     په اوږدوالي کې له %i څخه کم دی.
-  wwcConfigConversationResponseLimitInput: د هر ژباړونکي لپاره اوسنی غبرګون وخت اوټ
-    %i ثانیې دی. د نوي ارزښت ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د 0 څخه کم یا مساوي
-    څه ولیکئ چې بیرته لاړ شئ.
   wwcConfigConversationCharacterLimitInput: .په پیغام کې د اوسني کرکټر حد %i حروفونه
     دي د نوي ارزښت ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د 0 څخه کم یا مساوي څه ولیکئ
     چې بیرته لاړ شئ.
   wwcteOffSender: د بنسټ ژباړه معلول.
   wwctGUIEntityButton: د بنسټ ژباړه توګول
-  wwcConfigConversationResponseLimitSuccess: د غبرګون وخت وخت په بریالیتوب سره وټاکل
-    شو.
   wwctrlRateLimitBadInt: ستاسو د نرخ حد یو باوري عدد نه دی.
   wwcTranslatorErrorConsole: کومه ستونزه رامنځته شوه کله چې کارن- %i د خپلې ژباړې
     هڅه کوله. مهرباني وکړئ د نورو جزیاتو لپاره errorLog.txt وګورئ.

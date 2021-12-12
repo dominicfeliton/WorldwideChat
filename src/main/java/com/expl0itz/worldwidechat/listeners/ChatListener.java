@@ -8,6 +8,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
+import org.bukkit.scheduler.BukkitRunnable;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
@@ -16,7 +17,6 @@ import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
-import net.md_5.bungee.api.ChatColor;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.event.HoverEvent;
 
@@ -44,35 +44,46 @@ public class ChatListener implements Listener {
 		}
 		
 		/* New WWC functionality/Incoming Messages */
-		//TODO: Add small message saying message failed to translate next to original message, do not perform modifications.
-		//TODO: Make hover text toggleable.
-		//TODO: User-configurable default chat translation to start at: incoming messages, outgoing messages, or both
 		CommonDefinitions.sendDebugMessage("Message format: " + event.getFormat());
 		List<Player> unmodifiedMessageRecipients = new ArrayList<Player>();
 		for (Player eaRecipient : event.getRecipients()) {
 			ActiveTranslator testTranslator = main.getActiveTranslator(eaRecipient.getUniqueId());
-			if ((   /* Check if this testTranslator wants their incoming messages to be translated */
-					!currTranslator.getUUID().equals(testTranslator.getUUID()) && !testTranslator.getUUID().equals("") && testTranslator.getTranslatingChatIncoming())
+			if ((   !CommonDefinitions.serverIsStopping()
+					/* Check if this testTranslator wants their incoming messages to be translated */
+					&& !currTranslator.getUUID().equals(testTranslator.getUUID()) && !testTranslator.getUUID().equals("") && testTranslator.getTranslatingChatIncoming())
 					/* Check if this testTranslator doesn't already want the current chat message */
 					&& !(!currTranslator.getUUID().equals("") && currTranslator.getInLangCode().equals(testTranslator.getInLangCode())
 							&& currTranslator.getOutLangCode().equals(testTranslator.getOutLangCode()))) {
 				
-				String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), CommonDefinitions.translateText(event.getMessage() + ChatColor.ITALIC + " (Translated)", eaRecipient));
-				
-				TextComponent hoverOutMessage;
-                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
-					hoverOutMessage = Component.text()
-							.content(outMessageWithoutHover)
-							.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
-							.build();
-				} else {
-					hoverOutMessage = Component.text()
-							.content(outMessageWithoutHover)
-							.build();
-				}
-				try {
-				    main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
-				} catch (IllegalStateException e) {return;}
+				/* Send the message in a new task, to avoid delaying the chat message for others */
+				new BukkitRunnable() {
+					@Override
+					public void run() {
+						String translation = CommonDefinitions.translateText(event.getMessage() + " (Translated)", eaRecipient);
+						if (translation.contains(event.getMessage())) {
+							translation = event.getMessage();
+						}
+						String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
+						
+						TextComponent hoverOutMessage;
+		                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat") && !(translation.equals(event.getMessage()))) {
+							hoverOutMessage = Component.text()
+									.content(outMessageWithoutHover)
+									.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
+									.build();
+						} else {
+							hoverOutMessage = Component.text()
+									.content(outMessageWithoutHover)
+									.build();
+						}
+						try {
+						    main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
+						} catch (IllegalStateException e) {
+							return;
+						}
+						
+					}
+				}.runTaskAsynchronously(main);
 			} else {
 				unmodifiedMessageRecipients.add(eaRecipient);
 			}

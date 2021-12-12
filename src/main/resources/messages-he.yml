@@ -205,9 +205,6 @@ Messages:
     מחדל ל 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: לקבלת מידע נוסף, בדוק את errorLog.txt
     בתיקיית התוספים WorldwideChat.
-  wwcConfigMaxResponseTimeInvalid: זמן תגובה מרבי לא חוקי מוגדר ב- config.yml. ברירת
-    מחדל ל-7 שניות...
-  wwcConfigMaxResponseTimeEnabled: זמן תגובה מרבי מוגדר אל %i שניות.
   wwctInvalidInputLangCode: 'קוד שפת קלט לא חוקי מסופק! קודי lang תקפים: %o'
   wwcsTitle: רשומה של %i
   wwctInvalidOutputLangCode: 'קוד שפת פלט לא חוקי מסופק! קודי lang תקפים: %o'
@@ -253,15 +250,11 @@ Messages:
   wwcConfigMessageCharLimitEnabled: מגבלת תווים לכל הודעה שהוגדרה לתווי %i.
   wwcteOffTarget: תרגום היישות מושבת עבור %i.
   wwcCharLimit: המסר שלך ארוך מדי! אנא ודא שההודעה שלך היא פחות מ- %i תווים באורך.
-  wwcConfigConversationResponseLimitInput: הזמן הקצוב לתגובה הנוכחי עבור כל מתרגם
-    הוא %i שניות. הקלד כל דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד כל דבר קטן מ-
-    0 או שווה ל- 0 כדי לחזור אחורה.
   wwcConfigConversationCharacterLimitInput: מגבלת התווים הנוכחית לכל הודעה היא תווי
     %i. הקלד כל דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד כל דבר קטן מ- 0 או שווה
     ל- 0 כדי לחזור אחורה.
   wwcteOffSender: תרגום הישות מושבת.
   wwctGUIEntityButton: החלפת תרגום ישות
-  wwcConfigConversationResponseLimitSuccess: זמן קצוב לתגובה נקבע בהצלחה.
   wwctrlRateLimitBadInt: מגבלת התעריף אינה מספר שלם חוקי.
   wwcTranslatorErrorConsole: אירעה בעיה בזמן שהמשתמש %i ניסה את התרגום שלהם. אנא בדוק
     errorLog.txt לפרטים נוספים.

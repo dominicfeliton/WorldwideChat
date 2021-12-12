@@ -233,9 +233,6 @@ Messages:
     til 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Vinsamlegast athugaðu errorLog.txt
     í WorldwideChat tappi möppunni fyrir frekari upplýsingar.
-  wwcConfigMaxResponseTimeInvalid: Ógildur max svar tími sett í config.yml. Vanskil
-    í 7 sekúndur...
-  wwcConfigMaxResponseTimeEnabled: Max svar tími stilltur á %i sekúndur.
   wwctInvalidInputLangCode: 'Ógild inntak tungumál kóða veitt! Gildir langur kóða:
     %o'
   wwcsTitle: Upptaka af %i
@@ -286,15 +283,11 @@ Messages:
   wwcteOffTarget: Entity þýðing óvirk fyrir %i.
   wwcCharLimit: Skilaboðin þín eru of löng! Gakktu úr skugga um að skilaboðin þín
     séu minna en %i stafir að lengd.
-  wwcConfigConversationResponseLimitInput: Núverandi svar tími fyrir hvern þýðanda
-    er %i sekúndur. Sláðu eitthvað sem er stærra en 0 til að setja nýtt gildi, eða
-    sláðu inn neitt minna en eða jafnt og 0 til að fara aftur.
   wwcConfigConversationCharacterLimitInput: Núverandi stafatakmörk á skeyti er %i
     stafir. Sláðu eitthvað sem er stærra en 0 til að setja nýtt gildi, eða sláðu inn
     neitt minna en eða jafnt og 0 til að fara aftur.
   wwcteOffSender: Entity þýðingar óvirk.
   wwctGUIEntityButton: Skipta Entity Þýðing
-  wwcConfigConversationResponseLimitSuccess: Svar tímamót sett með góðum árangri.
   wwctrlRateLimitBadInt: Hlutfall þitt er ekki gild heiltala.
   wwcTranslatorErrorConsole: Vandamál kom fram á meðan notandi %ég var að reyna þýðingu
     þeirra. Vinsamlegast athugaðu errorLog.txt fyrir frekari upplýsingar.

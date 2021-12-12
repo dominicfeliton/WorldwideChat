@@ -231,10 +231,6 @@ Messages:
     config.yml. Протичане на 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Моля, проверете errorLog.txt в папката
     WorldwideChat плъгин за повече информация.
-  wwcConfigMaxResponseTimeInvalid: Невалидно максимално време за реакция, зададено
-    в config.yml. Пропускате 7 секунди...
-  wwcConfigMaxResponseTimeEnabled: Максималното време за реакция е зададено на %i
-    секунди.
   wwctInvalidInputLangCode: 'Предоставя се невалиден код на езика за въвеждане! Валидни
     кодове на lang: %o'
   wwcsTitle: Запис на %i
@@ -291,16 +287,11 @@ Messages:
   wwcteOffTarget: Преводът на обект е забранен за %i.
   wwcCharLimit: Съобщението ти е твърде дълго! Моля, уверете се, че съобщението ви
     е с дължина по-малко от %i знаци.
-  wwcConfigConversationResponseLimitInput: Текущото изчакване на отговор за всеки
-    преводач е %i секунди. Въведете нещо по-голямо от 0, за да зададете нова стойност,
-    или въведете нещо по-малко от или равно на 0, за да се върнете.
   wwcConfigConversationCharacterLimitInput: Текущото ограничение на символите за всяко
     съобщение е %i знаци. Въведете нещо по-голямо от 0, за да зададете нова стойност,
     или въведете нещо по-малко от или равно на 0, за да се върнете.
   wwcteOffSender: Преводът на субект е
   wwctGUIEntityButton: Превключване на превод на обект
-  wwcConfigConversationResponseLimitSuccess: Времето за изчакване на отговор зададено
-    успешно.
   wwctrlRateLimitBadInt: Вашият лимит на скоростта не е валидно цяло число.
   wwcTranslatorErrorConsole: Проблем възникна при опит за превод на потребител %i.
     Моля, проверете errorLog.txt за повече подробности.

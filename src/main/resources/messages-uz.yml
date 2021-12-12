@@ -230,9 +230,6 @@ Messages:
     chegarasi. 5ga standart...
   wwcTranslatorErrorThresholdReachedCheckLogs: Qo'shimcha ma'lumot olish uchun WorldwideChat
     plagin papkasida errorLog.txt tekshiring.
-  wwcConfigMaxResponseTimeInvalid: Config.yml da belgilangan maksimal javob vaqti
-    noto'g'ri. 7 soniya defaulting...
-  wwcConfigMaxResponseTimeEnabled: Maksimal javob berish vaqti %i sekundgacha belgilangan.
   wwctInvalidInputLangCode: 'Kirish tili kodi noto''g''ri! Amaldagi uzoq kodlar: %o'
   wwcsTitle: '%i yozuvi %'
   wwctInvalidOutputLangCode: 'Yaroqsiz chiqish tili kodi taqdim! Amaldagi uzoq kodlar:
@@ -283,15 +280,11 @@ Messages:
   wwcteOffTarget: '%i uchun oʻchirilgan shaxs tarjimasi.'
   wwcCharLimit: Sizning xabaringiz juda uzun! Iltimos, xabaringiz uzunligi %i belgilaridan
     kamroq ekanligiga ishonch hosil qiling.
-  wwcConfigConversationResponseLimitInput: Har bir tarjimon uchun joriy javob muddati
-    %i sekunddir. Yangi qiymatni belgilash uchun 0 dan katta narsani yozing yoki orqaga
-    qaytish uchun 0 dan kam yoki teng narsani yozing.
   wwcConfigConversationCharacterLimitInput: Har bir xabar uchun joriy belgilar chegarasi
     %i belgilaridir. Yangi qiymatni belgilash uchun 0 dan katta narsani yozing yoki
     orqaga qaytish uchun 0 dan kam yoki teng narsani yozing.
   wwcteOffSender: O'chirilgan shaxs tarjimasi.
   wwctGUIEntityButton: Toggle shaxs tarjimasi
-  wwcConfigConversationResponseLimitSuccess: Response muddati muvaffaqiyatli o'rnatildi.
   wwctrlRateLimitBadInt: Sizning stavkangiz cheklovi haqiqiy emas.
   wwcTranslatorErrorConsole: '%i foydalanuvchisi ularning tarjimasiga urinayotganda
     muammo yuzaga keldi. Qo''shimcha ma''lumot olish uchun errorLog.txt tekshiring.'

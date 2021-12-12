@@ -200,9 +200,6 @@ Messages:
     config.ymlผิดนัดที่ 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: กรุณาตรวจสอบ errorLog.txt ในโฟลเดอร์ปลั๊กอิน
     WorldwideChat สำหรับข้อมูลเพิ่มเติม.
-  wwcConfigMaxResponseTimeInvalid: เวลาตอบสนองสูงสุดไม่ถูกต้องที่กำหนดไว้ใน config.ymlเริ่มต้นที่
-    7 วินาที...
-  wwcConfigMaxResponseTimeEnabled: เวลาตอบสนองสูงสุดตั้งเป็น %i วินาที
   wwctInvalidInputLangCode: 'รหัสภาษาสำหรับการป้อนข้อมูลไม่ถูกต้อง!รหัส lang ที่ถูกต้อง:
     %o'
   wwcsTitle: บันทึกของ %i
@@ -250,15 +247,11 @@ Messages:
   wwcteOffTarget: การแปลเอนทิตีปิดใช้งานสำหรับ %i
   wwcCharLimit: ข้อความของคุณยาวเกินไป!โปรดตรวจสอบให้แน่ใจว่าข้อความของคุณมีความยาวน้อยกว่า
     %i
-  wwcConfigConversationResponseLimitInput: หมดเวลาการตอบสนองในปัจจุบันสำหรับนักแปลแต่ละคนเป็น
-    %i วินาทีพิมพ์อะไรที่มากกว่า 0 เพื่อตั้งค่าใหม่หรือพิมพ์อะไรที่น้อยกว่าหรือเท่ากับ
-    0 เพื่อย้อนกลับ
   wwcConfigConversationCharacterLimitInput: ขีด จำกัด ตัวอักษรปัจจุบันต่อข้อความเป็นตัวละคร
     %iพิมพ์อะไรที่มากกว่า 0 เพื่อตั้งค่าใหม่หรือพิมพ์อะไรที่น้อยกว่าหรือเท่ากับ 0
     เพื่อย้อนกลับ
   wwcteOffSender: การแปลนิติบุคคลถูกปิดใช้งาน
   wwctGUIEntityButton: สลับการแปลเอนทิตี
-  wwcConfigConversationResponseLimitSuccess: หมดเวลาการตอบสนองการตั้งค่าเรียบร้อยแล้ว
   wwctrlRateLimitBadInt: ขีด จำกัด อัตราของคุณไม่ได้เป็นจำนวนเต็มที่ถูกต้อง.
   wwcTranslatorErrorConsole: เกิดปัญหาขึ้นขณะผู้ใช้ %i กำลังพยายามแปลกรุณาตรวจสอบ
     errorLog.txt สำหรับรายละเอียดเพิ่มเติม

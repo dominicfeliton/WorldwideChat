@@ -246,10 +246,6 @@ Messages:
     festgelegt wurde. Standardmäßig 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Weitere Informationen finden Sie in
     errorLog.txt im WorldwideChat-Plugin-Ordner.
-  wwcConfigMaxResponseTimeInvalid: Ungültige maximale Reaktionszeit, die in config.yml
-    festgelegt wurde. Standardmäßig 7 Sekunden...
-  wwcConfigMaxResponseTimeEnabled: Die maximale Reaktionszeit ist auf %i Sekunden
-    eingestellt.
   wwctInvalidInputLangCode: 'Ungültiger Code für Eingabesprache Gültige Lang-Codes:
     %o'
   wwcsTitle: Datensatz von %i
@@ -307,16 +303,11 @@ Messages:
   wwcteOffTarget: Die Entitätsübersetzung wurde für %i deaktiviert.
   wwcCharLimit: Ihre Nachricht ist zu lang! Bitte stellen Sie sicher, dass Ihre Nachricht
     weniger als %i Zeichen lang ist.
-  wwcConfigConversationResponseLimitInput: Das aktuelle Antwort-Timeout für jeden
-    Übersetzer beträgt %i Sekunden. Geben Sie etwas größer als 0 ein, um einen neuen
-    Wert festzulegen, oder geben Sie etwas kleiner oder gleich 0 ein, um zurückzukehren.
   wwcConfigConversationCharacterLimitInput: Die aktuelle Zeichenbeschränkung pro Nachricht
     beträgt %i Zeichen. Geben Sie etwas größer als 0 ein, um einen neuen Wert festzulegen,
     oder geben Sie etwas kleiner oder gleich 0 ein, um zurückzukehren.
   wwcteOffSender: Entitätsübersetzung ist deaktiviert
   wwctGUIEntityButton: Entitätsübersetzung umschalten
-  wwcConfigConversationResponseLimitSuccess: Das Antwort-Timeout wurde erfolgreich
-    eingestellt.
   wwctrlRateLimitBadInt: Ihr Ratenlimit ist keine gültige Ganzzahl.
   wwcTranslatorErrorConsole: Während der Benutzer %i seine Übersetzung versuchte,
     ist ein Problem aufgetreten. Bitte überprüfen Sie errorLog.txt für weitere Details.

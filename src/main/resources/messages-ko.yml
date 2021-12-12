@@ -185,8 +185,6 @@ Messages:
   wwcConfigErrorLimitInvalid: config.yml에 잘못된 번역기 오류 제한이 설정되어 있습니다.기본값 5로 설정 중...
   wwcTranslatorErrorThresholdReachedCheckLogs: 자세한 내용은 WorldwideChat 플러그인 폴더에서 errorLog.txt
     를 확인하십시오.
-  wwcConfigMaxResponseTimeInvalid: config.yml에 설정된 최대 응답 시간이 잘못되었습니다.기본값 설정 7초...
-  wwcConfigMaxResponseTimeEnabled: 최대 응답 시간은 %i 초로 설정되었습니다.
   wwctInvalidInputLangCode: '잘못된 입력 언어 코드가 제공되었습니다!유효한 랭 코드: %o'
   wwcsTitle: '%i 레코드'
   wwctInvalidOutputLangCode: '잘못된 출력 언어 코드가 제공되었습니다!유효한 랭 코드: %o'
@@ -229,13 +227,10 @@ Messages:
   wwcConfigMessageCharLimitEnabled: 메시지당 문자 제한이 %i자로 설정되었습니다.
   wwcteOffTarget: '%i에 대한 엔티티 변환이 비활성화되었습니다.'
   wwcCharLimit: 메시지가 너무 깁니다!메시지 길이가 %i자 미만인지 확인하십시오.
-  wwcConfigConversationResponseLimitInput: 각 변환기의 현재 응답 시간 초과는 %i초입니다.0보다 큰 값을 입력하여
-    새 값을 설정하거나 0보다 작거나 같은 값을 입력하여 뒤로 돌아갑니다.
   wwcConfigConversationCharacterLimitInput: 메시지당 현재 문자 제한은 %i자입니다.0보다 큰 값을 입력하여 새
     값을 설정하거나 0보다 작거나 같은 값을 입력하여 뒤로 돌아갑니다.
   wwcteOffSender: 엔티티 변환이 비활성화되었습니다.
   wwctGUIEntityButton: 엔티티 변환 토글
-  wwcConfigConversationResponseLimitSuccess: 응답 시간 초과가 성공적으로 설정되었습니다.
   wwctrlRateLimitBadInt: 요금 제한은 유효한 정수가 아닙니다.
   wwcTranslatorErrorConsole: '%i 사용자가 번역을 시도하는 동안 문제가 발생했습니다.자세한 내용은 errorLog.txt
     를 확인하십시오.'

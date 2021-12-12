@@ -53,7 +53,7 @@ public class GoogleTranslation {
 		String finalOut = "";
 		try {
 			/* Get translation */
-			finalOut = process.get(main.getConfigManager().getMainConfig().getInt("Translator.maxResponseTime"), TimeUnit.SECONDS);
+			finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			CommonDefinitions.sendDebugMessage("Google Translate Timeout!!");
 			process.cancel(true);

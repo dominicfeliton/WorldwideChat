@@ -218,9 +218,6 @@ Messages:
     kuni 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Palun kontrollige errorLog.txt WorldwideChat
     plugin kaustas rohkem teavet.
-  wwcConfigMaxResponseTimeInvalid: Kehtetu max reaktsiooniaeg seatud config.yml. Defaulting
-    kuni 7 sekundit...
-  wwcConfigMaxResponseTimeEnabled: Max reaktsiooniaeg seatud %i sekundit.
   wwctInvalidInputLangCode: 'Kehtetu sisestuskeele kood ette! Kehtivad lang koodid:
     %o'
   wwcsTitle: Salvesta %i
@@ -269,15 +266,11 @@ Messages:
   wwcteOffTarget: Olemi tõlge keelatud %i.
   wwcCharLimit: Teie sõnum on liiga pikk! Palun veenduge, et teie sõnum oleks väiksem
     kui %i tähemärki pikkuses.
-  wwcConfigConversationResponseLimitInput: Praegune reageerimise ajalõpp iga tõlkija
-    on %i sekundit. Uue väärtuse määramiseks tippige midagi suuremat kui 0 või tippige
-    midagi, mis on väiksem või võrdne 0, et minna tagasi.
   wwcConfigConversationCharacterLimitInput: Praegune märgisepiirang sõnumi kohta on
     %i tähemärki. Uue väärtuse määramiseks tippige midagi suuremat kui 0 või tippige
     midagi, mis on väiksem või võrdne 0, et minna tagasi.
   wwcteOffSender: Olemi tõlkimine keelatud.
   wwctGUIEntityButton: Lülita olemi tõlge
-  wwcConfigConversationResponseLimitSuccess: Vastuse ajalõpp seatud edukalt.
   wwctrlRateLimitBadInt: Hinnapiirang ei ole kehtiv täisarv.
   wwcTranslatorErrorConsole: Probleem ilmnes, kui kasutaja %i üritas oma tõlkimist.
     Palun kontrollige errorLog.txt rohkem üksikasju.

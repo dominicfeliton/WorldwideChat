@@ -237,9 +237,6 @@ Messages:
     Стандардно да 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Ве молиме проверете errorLog.txt во
     папката WorldwideChat приклучок за повеќе информации.
-  wwcConfigMaxResponseTimeInvalid: Невалидно максимално време на одговор поставено
-    во config.yml. Стандардно до 7 секунди...
-  wwcConfigMaxResponseTimeEnabled: Максимално време на одговор поставено на %i секунди.
   wwctInvalidInputLangCode: 'Невалиден код за внесување јазик обезбеден! Валидни кодови
     за ланг: %o'
   wwcsTitle: Рекорд на %i
@@ -292,15 +289,11 @@ Messages:
   wwcteOffTarget: Преводот на ентитет исклучен за %i
   wwcCharLimit: Вашата порака е премногу долга! Ве молиме проверете дали вашата порака
     е помала од %i карактери во должина.
-  wwcConfigConversationResponseLimitInput: Тековниот истек на одговор за секој преведувач
-    е %i секунди. Внесете нешто поголемо од 0 за да поставите нова вредност, или напишете
-    нешто помалку од или еднакво на 0 за да се вратите назад.
   wwcConfigConversationCharacterLimitInput: Тековната граница на знаци по порака е
     %i карактери. Внесете нешто поголемо од 0 за да поставите нова вредност, или напишете
     нешто помалку од или еднакво на 0 за да се вратите назад.
   wwcteOffSender: Ентитет превод оневозможен.
   wwctGUIEntityButton: Префрли ентитет Превод
-  wwcConfigConversationResponseLimitSuccess: Истек на одговор постави успешно.
   wwctrlRateLimitBadInt: Вашата стапка граница не е валиден цел број.
   wwcTranslatorErrorConsole: Проблем се појави додека корисник %i се обидуваше нивниот
     превод. Ве молиме проверете errorLog.txt за повеќе детали.

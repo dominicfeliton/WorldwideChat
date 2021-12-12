@@ -226,9 +226,6 @@ Messages:
     Numatytinas iki 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Prašome patikrinti errorLog.txt WorldwideChat
     įskiepiai aplanke daugiau informacijos.
-  wwcConfigMaxResponseTimeInvalid: Neteisingas maks. Atsakymo laikas nustatytas config.yml.
-    Numatytinas iki 7 sekundžių...
-  wwcConfigMaxResponseTimeEnabled: Maksimalus atsako laikas nustatytas %i sekundes.
   wwctInvalidInputLangCode: 'Pateiktas neteisingas įvesties kalbos kodas! Galiojantys
     lang kodai: %o'
   wwcsTitle: Įrašas %i
@@ -280,15 +277,11 @@ Messages:
   wwcteOffTarget: Subjekto vertimas išjungtas %i.
   wwcCharLimit: Jūsų žinutė yra per ilga! Įsitikinkite, kad jūsų žinutė yra mažesnė
     nei %i simbolių ilgio.
-  wwcConfigConversationResponseLimitInput: Dabartinis kiekvieno vertėjo atsakymo laikas
-    yra %i sekundes. Įveskite viską, kas yra didesnė nei 0, kad nustatytumėte naują
-    vertę, arba įveskite viską, kas yra mažesnė arba lygi 0, kad grįžtumėte atgal.
   wwcConfigConversationCharacterLimitInput: Dabartinis simbolių limitas vienam pranešimui
     yra %i simboliai. Įveskite viską, kas yra didesnė nei 0, kad nustatytumėte naują
     vertę, arba įveskite viską, kas yra mažesnė arba lygi 0, kad grįžtumėte atgal.
   wwcteOffSender: Subjekto vertimas išjungtas.
   wwctGUIEntityButton: Perjungti subjekto vertimą
-  wwcConfigConversationResponseLimitSuccess: Atsakymo skirtasis laikas sėkmingai nustatytas.
   wwctrlRateLimitBadInt: Jūsų normos limitas nėra tinkamas sveikasis skaičius.
   wwcTranslatorErrorConsole: Problema kilo, kai vartotojas %i bandė jų vertimą. Prašome
     patikrinti errorLog.txt daugiau informacijos.

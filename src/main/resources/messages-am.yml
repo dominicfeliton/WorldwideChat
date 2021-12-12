@@ -197,9 +197,6 @@ Messages:
     በመሆን ላይ...
   wwcTranslatorErrorThresholdReachedCheckLogs: ተጨማሪ መረጃ ለማግኘት WorldwideChat ተሰኪ አቃፊ
     ውስጥ errorLog.txt ይመልከቱ።
-  wwcConfigMaxResponseTimeInvalid: ልክ ያልሆነ ከፍተኛ የምላሽ ጊዜ በ config.yml ውስጥ ተዘጋጅቷል። ወደ
-    7 ሰከንዶች ነባር...
-  wwcConfigMaxResponseTimeEnabled: ከፍተኛው የምላሽ ጊዜ ወደ %i ሰከንዶች ተዘጋጅቷል።
   wwctInvalidInputLangCode: 'ልክ ያልሆነ የግቤት ቋንቋ ኮድ የቀረበ! የሚሰራ ላንግ ኮዶች: %o'
   wwcsTitle: ቅዳሴ %i
   wwctInvalidOutputLangCode: 'ልክ ያልሆነ ውፅዓት ቋንቋ ኮድ የቀረበ! የሚሰራ ላንግ ኮዶች: %o'
@@ -244,14 +241,10 @@ Messages:
   wwcConfigMessageCharLimitEnabled: የቁምፊ ገደብ በአንድ መልዕክት ተዘጋጅቷል ወደ %i ቁምፊዎች
   wwcteOffTarget: የአካል ትርጉም ተሰናክሏል ለ %i።
   wwcCharLimit: መልዕክትዎ በጣም ረጅም ነው! እባክዎ መልዕክትዎ ርዝመት %i ቁምፊዎች ያነሰ መሆኑን ያረጋግጡ።
-  wwcConfigConversationResponseLimitInput: ለእያንዳንዱ ተርጓሚ አሁን ያለው ምላሽ የእረፍት ጊዜ %i ሰከንዶች
-    ነው። አዲስ እሴት ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ወደ ኋላ ለመመለስ ከ 0 ያነሰ ወይም እኩል የሆነ ነገር
-    ይተይቡ።
   wwcConfigConversationCharacterLimitInput: አሁን ያለው የቁምፊ ገደብ በአንድ መልዕክት %i ቁምፊዎች ነው።
     አዲስ እሴት ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ወደ ኋላ ለመመለስ ከ 0 ያነሰ ወይም እኩል የሆነ ነገር ይተይቡ።
   wwcteOffSender: የአካል ትርጉም ተሰናክሏል።
   wwctGUIEntityButton: የመቀያየሪያ አካል ትርጉም
-  wwcConfigConversationResponseLimitSuccess: የምላሽ ጊዜው በተሳካ ሁኔታ ተዘጋጅቷል
   wwctrlRateLimitBadInt: የእርስዎ ተመን ገደብ ትክክለኛ ኢንቲጀር አይደለም።
   wwcTranslatorErrorConsole: ተጠቃሚው %i ትርጉማቸውን እየሞከረ ሳለ ችግር ተፈጥሯል። ተጨማሪ ዝርዝሮችን ለማግኘት
     errorLog.txt ይመልከቱ።

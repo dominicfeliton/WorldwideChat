@@ -222,9 +222,6 @@ Messages:
     به 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: لطفا errorLog.txt را در پوشه پلاگین
     WorldwideChat برای اطلاعات بیشتر بررسی کنید.
-  wwcConfigMaxResponseTimeInvalid: حداکثر زمان پاسخ نامعتبر تنظیم شده در config.yml.
-    پیش بینی به 7 ثانیه...
-  wwcConfigMaxResponseTimeEnabled: حداکثر زمان پاسخ روی %i ثانیه تنظیم شده است.
   wwctInvalidInputLangCode: 'کد زبان ورودی نامعتبر ارائه شده است! کدهای زبان معتبر:
     %o'
   wwcsTitle: ضبط %i
@@ -275,15 +272,11 @@ Messages:
   wwcteOffTarget: ترجمه موجودیت برای %i غیرفعال شد.
   wwcCharLimit: پیام شما بیش از حد طولانی است! لطفا اطمینان حاصل کنید که پیام شما
     کمتر از %i نویسه باشد.
-  wwcConfigConversationResponseLimitInput: زمان پاسخ فعلی برای هر مترجم، %i ثانیه
-    است. چیزی بزرگتر از 0 را تایپ کنید تا یک مقدار جدید تعیین شود، یا چیزی را کمتر
-    از 0 یا مساوی تایپ کنید تا به عقب برگردید.
   wwcConfigConversationCharacterLimitInput: محدودیت نویسه فعلی در هر پیغام %i نویسه
     است. چیزی بزرگتر از 0 را تایپ کنید تا یک مقدار جدید تعیین شود، یا چیزی را کمتر
     از 0 یا مساوی تایپ کنید تا به عقب برگردید.
   wwcteOffSender: ترجمه موجودیت غیر فعال شد.
   wwctGUIEntityButton: ضامن ترجمه موجودیت
-  wwcConfigConversationResponseLimitSuccess: زمان پاسخ با موفقیت تنظیم شد.
   wwctrlRateLimitBadInt: حد مجاز شما یک عدد صحیح معتبر نیست.
   wwcTranslatorErrorConsole: یک مشکل زمانی رخ داد که کاربر %i در حال تلاش برای ترجمه
     آنها بود. لطفا errorLog.txt برای جزئیات بیشتر را بررسی کنید.
