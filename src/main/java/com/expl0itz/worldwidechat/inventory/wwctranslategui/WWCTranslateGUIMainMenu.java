@@ -1,5 +1,7 @@
 package com.expl0itz.worldwidechat.inventory.wwctranslategui;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import org.bukkit.ChatColor;
@@ -80,6 +82,10 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				translationMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 				translationMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
 				translationMeta.setDisplayName(CommonDefinitions.getMessage("wwctGUIExistingTranslationButton"));
+				List<String> outLore = new ArrayList<>();
+				outLore.add(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwctGUIExistingTranslationInput", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getInLangCode()}));
+				outLore.add(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwctGUIExistingTranslationOutput", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getOutLangCode()}));
+				translationMeta.setLore(outLore);
 				translationButton.setItemMeta(translationMeta);
 
 				/* Green stained glass borders for active */
@@ -130,7 +136,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 								+ CommonDefinitions.getMessage("wwctGUIRateButton"));
 					}
 					rateButton.setItemMeta(rateMeta);
-					contents.set(2, 2, ClickableItem.of(rateButton, e -> {
+					contents.set(1, 1, ClickableItem.of(rateButton, e -> {
 						rateConvo.buildConversation(player).begin();
 					}));
 				}
@@ -220,7 +226,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 								+ CommonDefinitions.getMessage("wwctGUIEntityButton"));
 					}
 					entityButton.setItemMeta(entityMeta);
-					contents.set(1, 1, ClickableItem.of(entityButton, e -> {
+					contents.set(2, 2, ClickableItem.of(entityButton, e -> {
 						String[] args = { main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName() };
 						WWCTranslateEntity translateEntity = new WWCTranslateEntity((CommandSender) player, null, null, args);
 						translateEntity.processCommand();
@@ -236,6 +242,10 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 					if (targetTranslator.getTranslatingChatOutgoing() || targetTranslator.getTranslatingChatIncoming()) {
 						chatMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 						chatMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
+						List<String> outLoreChat = new ArrayList<>();
+						outLoreChat.add(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwctGUIExistingChatIncomingEnabled", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getTranslatingChatIncoming()}));
+						outLoreChat.add(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwctGUIExistingChatOutgoingEnabled", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getTranslatingChatOutgoing()}));
+						chatMeta.setLore(outLoreChat);
 						chatMeta.setDisplayName(ChatColor.GREEN
 								+ CommonDefinitions.getMessage("wwctGUIChatButton"));
 					} else {
