@@ -235,8 +235,9 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				}
 				
 				/* Chat Translation Button */
-				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && (player.hasPermission("worldwidechat.wwctci") || player.hasPermission("worldwidechat.wwctco"))
-						&& (player.hasPermission("worldwidechat.wwctci.otherplayers") || player.hasPermission("worldwidechat.wwctco") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
+				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")
+						&& ((targetPlayerUUID.equals(player.getUniqueId().toString()) && (player.hasPermission("worldwidechat.wwctco") || player.hasPermission("worldwidechat.wwctci"))) 
+								|| (!targetPlayerUUID.equals(player.getUniqueId().toString()) && (player.hasPermission("worldwidechat.wwctco.otherplayers") || player.hasPermission("worldwidechat.wwctci.otherplayers"))))) {
 					ItemStack chatButton = XMaterial.PAINTING.parseItem();
 					ItemMeta chatMeta = chatButton.getItemMeta();
 					if (targetTranslator.getTranslatingChatOutgoing() || targetTranslator.getTranslatingChatIncoming()) {
