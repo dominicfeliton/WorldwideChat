@@ -1,5 +1,7 @@
 package com.expl0itz.worldwidechat.inventory.wwctranslategui;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import org.bukkit.ChatColor;
@@ -16,7 +18,6 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.commands.WWCGlobal;
 import com.expl0itz.worldwidechat.commands.WWCTranslate;
 import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
-import com.expl0itz.worldwidechat.commands.WWCTranslateChat;
 import com.expl0itz.worldwidechat.commands.WWCTranslateEntity;
 import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
@@ -32,7 +33,7 @@ import fr.minuskube.inv.content.InventoryProvider;
 
 public class WWCTranslateGUIMainMenu implements InventoryProvider {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	private String targetPlayerUUID = "";
 
@@ -46,11 +47,11 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 		if (targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
 			playerTitle = ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUIMainMenuGlobal");
 		} else {
-			playerTitle = ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUIMainMenuPlayer", new String[] {WorldwideChat.getInstance().getServer()
+			playerTitle = ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUIMainMenuPlayer", new String[] {WorldwideChat.instance.getServer()
 					.getPlayer(UUID.fromString(targetPlayerUUID)).getName()});
 		}
 		return SmartInventory.builder().id("translateMainMenu").provider(new WWCTranslateGUIMainMenu(targetPlayerUUID))
-				.size(5, 9).manager(WorldwideChat.getInstance().getInventoryManager()).title(playerTitle).build();
+				.size(5, 9).manager(WorldwideChat.instance.getInventoryManager()).title(playerTitle).build();
 	}
 
 	@Override
@@ -81,6 +82,10 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				translationMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 				translationMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
 				translationMeta.setDisplayName(CommonDefinitions.getMessage("wwctGUIExistingTranslationButton"));
+				List<String> outLore = new ArrayList<>();
+				outLore.add(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwctGUIExistingTranslationInput", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getInLangCode()}));
+				outLore.add(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwctGUIExistingTranslationOutput", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getOutLangCode()}));
+				translationMeta.setLore(outLore);
 				translationButton.setItemMeta(translationMeta);
 
 				/* Green stained glass borders for active */
@@ -131,7 +136,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 								+ CommonDefinitions.getMessage("wwctGUIRateButton"));
 					}
 					rateButton.setItemMeta(rateMeta);
-					contents.set(2, 2, ClickableItem.of(rateButton, e -> {
+					contents.set(1, 1, ClickableItem.of(rateButton, e -> {
 						rateConvo.buildConversation(player).begin();
 					}));
 				}
@@ -221,7 +226,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 								+ CommonDefinitions.getMessage("wwctGUIEntityButton"));
 					}
 					entityButton.setItemMeta(entityMeta);
-					contents.set(1, 1, ClickableItem.of(entityButton, e -> {
+					contents.set(2, 2, ClickableItem.of(entityButton, e -> {
 						String[] args = { main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName() };
 						WWCTranslateEntity translateEntity = new WWCTranslateEntity((CommandSender) player, null, null, args);
 						translateEntity.processCommand();
@@ -230,13 +235,18 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				}
 				
 				/* Chat Translation Button */
-				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwctc")
-						&& (player.hasPermission("worldwidechat.wwctc.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
+				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")
+						&& ((targetPlayerUUID.equals(player.getUniqueId().toString()) && (player.hasPermission("worldwidechat.wwctco") || player.hasPermission("worldwidechat.wwctci"))) 
+								|| (!targetPlayerUUID.equals(player.getUniqueId().toString()) && (player.hasPermission("worldwidechat.wwctco.otherplayers") || player.hasPermission("worldwidechat.wwctci.otherplayers"))))) {
 					ItemStack chatButton = XMaterial.PAINTING.parseItem();
 					ItemMeta chatMeta = chatButton.getItemMeta();
-					if (targetTranslator.getTranslatingChat()) {
+					if (targetTranslator.getTranslatingChatOutgoing() || targetTranslator.getTranslatingChatIncoming()) {
 						chatMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 						chatMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
+						List<String> outLoreChat = new ArrayList<>();
+						outLoreChat.add(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwctGUIExistingChatIncomingEnabled", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getTranslatingChatIncoming()}));
+						outLoreChat.add(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwctGUIExistingChatOutgoingEnabled", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getTranslatingChatOutgoing()}));
+						chatMeta.setLore(outLoreChat);
 						chatMeta.setDisplayName(ChatColor.GREEN
 								+ CommonDefinitions.getMessage("wwctGUIChatButton"));
 					} else {
@@ -245,10 +255,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 					}
 					chatButton.setItemMeta(chatMeta);
 					contents.set(3, 4, ClickableItem.of(chatButton, e -> {
-						String[] args = { main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName() };
-						WWCTranslateChat translateChat = new WWCTranslateChat((CommandSender) player, null, null, args);
-						translateChat.processCommand();
-						getTranslateMainMenu(targetPlayerUUID).open(player);
+						WWCTranslateGUIChatMenu.getTranslateChatMenu(targetPlayerUUID).open(player);
 					}));
 				}
 			}

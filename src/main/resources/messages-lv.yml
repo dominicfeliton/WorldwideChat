@@ -62,8 +62,6 @@ Messages:
   wwctbOnSender: Iespējota grāmatu tulkošana. Ar peles labo pogu noklikšķiniet, turot
     grāmatu, lai to tulkotu!
   wwcListenersInitialized: Inicializēti klausītāji.
-  wwcUserDataCorrupted: Atrasti un pārvietot %i bojāti vai veci lietotāja datu faili.
-    Tie tiks dzēsti nākamajā pārlādēšanas reizē.
   wwcConfigGUIPluginUpdateChatButton: Sūtīt tērzēšanas atgādinājumu par spraudņu
   wwcConfigConversationSendTranslationChatSuccess: Aktīvā tulkotāja tērzēšanas atgādinājums
     veiksmīgi pārslēgts.
@@ -230,9 +228,6 @@ Messages:
     Noklusējuma izpilde līdz 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Lūdzu, pārbaudiet errorLog.txt WorldwideChat
     spraudnis mapē, lai iegūtu vairāk informācijas.
-  wwcConfigMaxResponseTimeInvalid: Nederīgs maksimālais reakcijas laiks, kas iestatīts
-    config.yml. Noklusējuma izpilde līdz 7 sekundēm...
-  wwcConfigMaxResponseTimeEnabled: Maksimālais atbildes laiks ir iestatīts uz %i sekundes.
   wwctInvalidInputLangCode: 'Norādīts nederīgs ievades valodas kods! Derīgi lang kodi:
     %o'
   wwcsTitle: Ierakstīt %i
@@ -285,23 +280,15 @@ Messages:
   wwcteOffTarget: Entītijas tulkojums atspējots uz %i.
   wwcCharLimit: Jūsu ziņa ir pārāk gara! Lūdzu, pārliecinieties, ka jūsu ziņojums
     ir mazāks par %i rakstzīmes garumā.
-  wwcConfigConversationResponseLimitInput: Pašreizējais atbildes taimauts katram tulkotājam
-    ir %i sekundes. Ierakstiet visu, kas lielāks par 0, lai iestatītu jaunu vērtību,
-    vai ierakstiet kaut ko, kas mazāks par vai vienāds ar 0, lai atgrieztos.
   wwcConfigConversationCharacterLimitInput: Pašreizējais rakstzīmju ierobežojums vienam
     ziņojumam ir %i rakstzīmes. Ierakstiet visu, kas lielāks par 0, lai iestatītu
     jaunu vērtību, vai ierakstiet kaut ko, kas mazāks par vai vienāds ar 0, lai atgrieztos.
   wwcteOffSender: Entītiju tulkošana ir
   wwctGUIEntityButton: Pārslēgt entītijas tulkošanu
-  wwcConfigConversationResponseLimitSuccess: Atbildes taimauts veiksmīgi iestatīts.
   wwctrlRateLimitBadInt: Jūsu likmes ierobežojums nav derīgs vesels skaitlis.
   wwcTranslatorErrorConsole: Problēma radās, kamēr lietotājs %i mēģināja tulkot. Lūdzu,
     pārbaudiet errorLog.txt, lai iegūtu sīkāku informāciju.
-  wwctcOffSender: Tērzēšanas tulkošana ir
-  wwctcOnTarget: Tērzēšanas tulkojums iespējots uz %i.
-  wwctcOnSender: Tērzēšanas tulkojums iespējots Viss, ko jūs sakāt, tiks tulkots!
   wwctGUIChatButton: Pārslēgt tērzēšanas tulkošanu
-  wwctcOffTarget: Tērzēšanas tulkojums atspējots uz %i
   wwcrBegin: Pārlādēšana WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Tulkošanas sesija priekš %i ir apturēta.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globālā tērzēšana tiek
@@ -320,3 +307,26 @@ Messages:
     tulkota, bet jums ir aktīva tulkošanas sesija uz %o.
   wwcConfigGUIChangesNotSaved: Jūsu izmaiņas nestāsies spēkā, kamēr jūs noklikšķināsit
     uz sarkanās barjeras /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Neizdevās tulkošanas tērzēšanas
+    ziņojums pārslēgts veiksmīgi.
+  wwcConfigGUISendFailedTranslationChatButton: Tērzēšanas ziņojuma sūtīšana par neizdev
+  wwctciOffSender: Ienākošais tērzēšanas tulkojums ir
+  wwctGUIChatIncomingButton: Pārslēgt ienākošo tērzēšanas tulkojumu
+  wwctcoOffSender: Izejošā tērzēšanas tulkošana atspēj
+  wwctcoOnSender: Izejošā tērzēšanas tulkošana iespējota Viss, ko jūs sakāt, tiks
+    tulkots!
+  wwctciOnSender: Ienākošā tērzēšanas tulkošana iespējota Viss, ko saņemat, tiks tulkots!
+  wwctGUIChatMenu: Pārslēgt tērzēšanas tulkošanas izvēlni
+  wwctcoOnTarget: Izejošā tērzēšanas tulkošana iespējota %i.
+  wwctcoOffTarget: Izejošā tērzēšanas tulkošana atspējot %i.
+  wwctGUIChatOutgoingButton: Pārslēgt izejošo čats tulkojumu
+  wwctciOnTarget: Ienākošā tērzēšanas tulkošana iespējota %i.
+  wwctciOffTarget: Ienākošā tērzēšanas tulkošana atspējot %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Sākotnējā ienākošā tērzēšana
+    pievienots tulkošanai kā kursora teksts pārslēgts veiksmīgi.
+  wwcConfigGUISendIncomingHoverTextChatButton: Sākotnējo ienākošo ziņojumu pievienošana
+    kā kursora teksts
+  wwctGUIExistingChatOutgoingEnabled: 'Izejošā tērzēšanas tulkošana iespējota: %i'
+  wwctGUIExistingTranslationInput: 'Ievades valoda: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Ienākošā tērzēšanas tulkošana iespējota: %i'
+  wwctGUIExistingTranslationOutput: 'Izvades valoda: %i'

@@ -62,8 +62,6 @@ Messages:
   wwctbOnSender: Kirjan käännös käytössä. Napsauta hiiren kakkospainikkeella, kun
     pidät kirjaa painettuna kääntääksesi sen!
   wwcListenersInitialized: Alustivat kuulijat.
-  wwcUserDataCorrupted: Löytyi ja siirretty %i vioittuneita tai vanhoja käyttäjätietotiedostoja.
-    Ne poistetaan seuraavassa latauksessa.
   wwcConfigGUIPluginUpdateChatButton: Lähetä chat-muistutus lisäosan päivityksistä
   wwcConfigConversationSendTranslationChatSuccess: Aktiivinen kääntäjä chat-muistutus
     vaihdettu onnistuneesti.
@@ -226,9 +224,6 @@ Messages:
     Defaulting 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Lisätietoja on WorldwideChat plugin
     -kansiossa errorLog.txt.
-  wwcConfigMaxResponseTimeInvalid: Virheellinen enimmäisvasteaika asetettu config.yml.
-    Defaulting 7 sekuntia...
-  wwcConfigMaxResponseTimeEnabled: Suurin vasteaika asetettu %i sekuntia.
   wwctInvalidInputLangCode: 'Virheellinen syöttökielikoodi toimitetaan! Kelvolliset
     lang-koodit: %o'
   wwcsTitle: Tiedon %i tietue
@@ -279,23 +274,15 @@ Messages:
   wwcteOffTarget: Entiteetin käännös käytöstä kohteella %
   wwcCharLimit: Viestisi on liian pitkä! Varmista, että viestisi on pituudeltaan alle
     %i merkkiä.
-  wwcConfigConversationResponseLimitInput: Kunkin kääntäjän nykyinen vasteaikakatkaisu
-    on %i sekuntia. Kirjoita jokin suurempi kuin 0, jos haluat asettaa uuden arvon,
-    tai kirjoita jotain vähemmän tai yhtä suuri kuin 0, jos haluat palata takaisin.
   wwcConfigConversationCharacterLimitInput: Viestin nykyinen merkkiraja on %i-merkkiä.
     Kirjoita jokin suurempi kuin 0, jos haluat asettaa uuden arvon, tai kirjoita jotain
     vähemmän tai yhtä suuri kuin 0, jos haluat palata takaisin.
   wwcteOffSender: Yksikön käännös käytöstä
   wwctGUIEntityButton: Vaihda entiteetin käännös
-  wwcConfigConversationResponseLimitSuccess: Vastausaikakatkaisu on määritetty onnistuneesti.
   wwctrlRateLimitBadInt: Korkorajoituksesi ei ole kelvollinen kokonaisluku.
   wwcTranslatorErrorConsole: Ongelma ilmeni, kun käyttäjä %i yritti käännöstä. Tarkista
     lisätietoja errorLog.txt.
-  wwctcOffSender: Chat käännös poistettu käytöstä
-  wwctcOnTarget: Keskustelukäännös käytössä kohteella %i.
-  wwctcOnSender: Keskustelukäännös käytössä. Kaikki, mitä sanot, käännetään!
   wwctGUIChatButton: Vaihda Chat Käännös
-  wwctcOffTarget: Keskustelukäännös poistettu käytöstä kohteella %i
   wwcrBegin: Lataa WorldwideChat uudelleen...
   wwctTranslationStoppedOtherPlayer: Käännösistunto kohteelle %i on pysäytetty
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Yleistä keskustelua käännetään,
@@ -315,3 +302,26 @@ Messages:
     käännetään, mutta sinulla on aktiivinen käännösistunto kohteeseen %o.
   wwcConfigGUIChangesNotSaved: Muutokset tulevat voimaan vasta, kun napsautat punaista
     estettä /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Epäonnistui käännöskeskusteluviesti
+    vaihdettiin onnistuneesti.
+  wwcConfigGUISendFailedTranslationChatButton: Lähetä chat-viesti epäonnistuneesta
+    käännöksestä
+  wwctciOffSender: Saapuva chat-käännös poistettu käytöstä.
+  wwctGUIChatIncomingButton: Vaihda Saapuva Chat Käännös
+  wwctcoOffSender: Lähtevä chat-käännös poistettu käytöstä.
+  wwctcoOnSender: Lähtevä chat-käännös käytössä. Kaikki mitä sanot käännetään!
+  wwctciOnSender: Saapuva chat-käännös käytössä. Kaikki saamasi käännetään!
+  wwctGUIChatMenu: Vaihda Chat Käännös Menu
+  wwctcoOnTarget: Lähtevä chat käännös käytössä %i.
+  wwctcoOffTarget: Lähtevä chat-käännös on poistettu käytöstä kohteelle %i.
+  wwctGUIChatOutgoingButton: Toggle Lähtevä Chat Käännös
+  wwctciOnTarget: Saapuva chat käännös käytössä %i.
+  wwctciOffTarget: Saapuva chat-käännös on poistettu käytöstä %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Alkuperäinen saapuva chat,
+    joka on liitetty käännökseen, kun hiiren osoitin teksti vaihtui onnistuneesti.
+  wwcConfigGUISendIncomingHoverTextChatButton: Lisää alkuperäiset saapuvat viestit
+    Hover Text
+  wwctGUIExistingChatOutgoingEnabled: 'Lähtevä Chat Käännös käytössä: %i'
+  wwctGUIExistingTranslationInput: 'Syöttökieli: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Saapuva Chat Käännös käytössä: %i'
+  wwctGUIExistingTranslationOutput: 'Lähtökieli: %i'

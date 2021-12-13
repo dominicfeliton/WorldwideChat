@@ -65,8 +65,6 @@ Messages:
   wwctbOnSender: Bók þýðing virkt. Hægrismelltu á meðan þú heldur bók til að þýða
     það!
   wwcListenersInitialized: Frumstilla hlustendur.
-  wwcUserDataCorrupted: Fann og hreyfð % ég skemmd eða gamla notendagagnaskrár. Þeir
-    verða eytt á næstu endurhlaða.
   wwcConfigGUIPluginUpdateChatButton: Senda spjall áminning fyrir Plugin uppfærslur
   wwcConfigConversationSendTranslationChatSuccess: Virk þýðandi spjall áminning skipta
     með góðum árangri.
@@ -235,9 +233,6 @@ Messages:
     til 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Vinsamlegast athugaðu errorLog.txt
     í WorldwideChat tappi möppunni fyrir frekari upplýsingar.
-  wwcConfigMaxResponseTimeInvalid: Ógildur max svar tími sett í config.yml. Vanskil
-    í 7 sekúndur...
-  wwcConfigMaxResponseTimeEnabled: Max svar tími stilltur á %i sekúndur.
   wwctInvalidInputLangCode: 'Ógild inntak tungumál kóða veitt! Gildir langur kóða:
     %o'
   wwcsTitle: Upptaka af %i
@@ -288,23 +283,15 @@ Messages:
   wwcteOffTarget: Entity þýðing óvirk fyrir %i.
   wwcCharLimit: Skilaboðin þín eru of löng! Gakktu úr skugga um að skilaboðin þín
     séu minna en %i stafir að lengd.
-  wwcConfigConversationResponseLimitInput: Núverandi svar tími fyrir hvern þýðanda
-    er %i sekúndur. Sláðu eitthvað sem er stærra en 0 til að setja nýtt gildi, eða
-    sláðu inn neitt minna en eða jafnt og 0 til að fara aftur.
   wwcConfigConversationCharacterLimitInput: Núverandi stafatakmörk á skeyti er %i
     stafir. Sláðu eitthvað sem er stærra en 0 til að setja nýtt gildi, eða sláðu inn
     neitt minna en eða jafnt og 0 til að fara aftur.
   wwcteOffSender: Entity þýðingar óvirk.
   wwctGUIEntityButton: Skipta Entity Þýðing
-  wwcConfigConversationResponseLimitSuccess: Svar tímamót sett með góðum árangri.
   wwctrlRateLimitBadInt: Hlutfall þitt er ekki gild heiltala.
   wwcTranslatorErrorConsole: Vandamál kom fram á meðan notandi %ég var að reyna þýðingu
     þeirra. Vinsamlegast athugaðu errorLog.txt fyrir frekari upplýsingar.
-  wwctcOffSender: Spjall þýðing óvirk.
-  wwctcOnTarget: Spjall þýðing virkt fyrir %i.
-  wwctcOnSender: Spjall þýðing virkt. Allt sem þú segir verður þýtt!
   wwctGUIChatButton: Skipta Spjall Þýðing
-  wwctcOffTarget: Spjall þýðing óvirk fyrir %i.
   wwcrBegin: Endurhlaða WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Þýðing fundur fyrir %i hefur verið hætt.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global spjall er þýtt,
@@ -323,3 +310,25 @@ Messages:
     þýtt, en þú ert með virkan þýðingartíma til %o.
   wwcConfigGUIChangesNotSaved: Breytingarnar þínar munu ekki taka gildi fyrr en þú
     smellir á rauða hindrunina í/wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Mistókst þýðingar spjall
+    skilaboð skipta með góðum árangri.
+  wwcConfigGUISendFailedTranslationChatButton: Senda spjallskilaboð á mistókst þýðing
+  wwctciOffSender: Komandi spjall þýðing óvirk.
+  wwctGUIChatIncomingButton: Skipta um komandi spjall Þýðing
+  wwctcoOffSender: Útleið spjall þýðing óvirk.
+  wwctcoOnSender: Outgoing spjall þýðing virkt. Allt sem þú segir verður þýtt!
+  wwctciOnSender: Komandi spjall þýðing virkt. Allt sem þú færð verður þýtt!
+  wwctGUIChatMenu: Skipta Chat Þýðing Valmynd
+  wwctcoOnTarget: Outgoing spjall þýðing virkt fyrir %i.
+  wwctcoOffTarget: Outgoing spjall þýðing óvirk fyrir %i.
+  wwctGUIChatOutgoingButton: Skipta á sendan spjall Þýðing
+  wwctciOnTarget: Komandi spjall þýðing virkt fyrir %i.
+  wwctciOffTarget: Komandi spjall þýðing óvirk fyrir %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Upprunalega komandi spjall
+    fest við þýðingu sem sveima texta skipta með góðum árangri.
+  wwcConfigGUISendIncomingHoverTextChatButton: Bæta við upprunalegu komandi skilaboðum
+    sem sveima texta
+  wwctGUIExistingChatOutgoingEnabled: 'Outgoing Chat Þýðing Virkt: %i'
+  wwctGUIExistingTranslationInput: 'Inntak Tungumál: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Komandi spjall Þýðing Virkt: %i'
+  wwctGUIExistingTranslationOutput: 'Output Tungumál: %i'

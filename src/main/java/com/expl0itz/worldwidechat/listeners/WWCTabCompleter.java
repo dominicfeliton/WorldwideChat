@@ -17,7 +17,7 @@ import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 
 public class WWCTabCompleter implements TabCompleter {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	@Override
 	public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
@@ -117,7 +117,7 @@ public class WWCTabCompleter implements TabCompleter {
 			}
 		} else if ((command.getName().equals("wwcts") || command.getName().equals("wwctb")
 				|| command.getName().equals("wwcti") || command.getName().equals("wwcte")
-				|| command.getName().equals("wwctc")) && args.length == 1) {
+				|| command.getName().equals("wwctci") || command.getName().equals("wwctco")) && args.length == 1) {
 			if (args[0].isEmpty()) {
 				synchronized (main.getActiveTranslators()) {
 					for (ActiveTranslator eaTranslator : main.getActiveTranslators()) {

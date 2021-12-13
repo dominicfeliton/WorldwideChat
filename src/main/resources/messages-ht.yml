@@ -61,8 +61,6 @@ Messages:
   wwctbOnSender: Tradiksyon liv pèmèt. Dwa-klike sou pandan y ap kenbe yon liv tradui
     li!
   wwcListenersInitialized: Koute inisyalizèd.
-  wwcUserDataCorrupted: Twouve ak deplase % mwen pèvèti oswa fin vye granmoun dosye
-    done itilizatè. Yo pral efase sou Reload nan pwochen an.
   wwcConfigGUIPluginUpdateChatButton: Voye Rapèl Chat pou Updates Plugin
   wwcConfigConversationSendTranslationChatSuccess: Aktif tradiktè chat rapèl baskile
     avèk siksè.
@@ -223,9 +221,6 @@ Messages:
     pou 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Tanpri tcheke errorLog.txt nan folder
     nan Plugin WorldwideChat pou plis enfòmasyon.
-  wwcConfigMaxResponseTimeInvalid: Envalid max tan repons mete nan config.yml. Défauting
-    pou 7 segonn...
-  wwcConfigMaxResponseTimeEnabled: Max tan repons mete nan % mwen segonn.
   wwctInvalidInputLangCode: 'Envalid kòd lang opinyon bay! kòd lang valab: %o'
   wwcsTitle: Dosye nan % mwen
   wwctInvalidOutputLangCode: 'Envalid kòd lang pwodiksyon bay! kòd lang valab: %o'
@@ -276,23 +271,15 @@ Messages:
   wwcteOffTarget: Tradiksyon antite andikape pou % mwen.
   wwcCharLimit: Mesaj ou a twò lontan! Tanpri asire w ke mesaj ou a se mwens pase
     % mwen karaktè nan longè.
-  wwcConfigConversationResponseLimitInput: Poz repons aktyèl la pou chak tradiktè
-    se % mwen segonn. Tape anyen ki pi konsekan pase 0 yo mete yon nouvo valè, oswa
-    tape anyen mwens pase oswa egal a 0 ale tounen.
   wwcConfigConversationCharacterLimitInput: Limit karaktè aktyèl la pou chak mesaj
     se % mwen karaktè. Tape anyen ki pi konsekan pase 0 yo mete yon nouvo valè, oswa
     tape anyen mwens pase oswa egal a 0 ale tounen.
   wwcteOffSender: Tradiksyon antite enfim.
   wwctGUIEntityButton: Tradiksyon antite baskil
-  wwcConfigConversationResponseLimitSuccess: poz Repons mete avèk siksè.
   wwctrlRateLimitBadInt: Limit pousantaj ou a se pa yon nonb antye relatif ki valab.
   wwcTranslatorErrorConsole: Yon pwoblèm ki te fèt pandan y ap itilizatè % mwen te
     eseye tradiksyon yo. Tanpri tcheke errorLog.txt pou plis detay.
-  wwctcOffSender: Chat tradiksyon andikape.
-  wwctcOnTarget: Chat tradiksyon pèmèt pou % mwen.
-  wwctcOnSender: Chat tradiksyon pèmèt. Nenpòt bagay ou di yo pral tradui!
   wwctGUIChatButton: Tradiksyon chat baskil
-  wwctcOffTarget: Chat tradiksyon andikape pou % mwen.
   wwcrBegin: Reloading WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Tradiksyon sesyon pou % mwen te sispann.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat se ke yo te
@@ -313,3 +300,26 @@ Messages:
     tradui, men ou gen yon sesyon tradiksyon aktif nan %o.
   wwcConfigGUIChangesNotSaved: Chanjman ou yo pa pral pran efè jiskaske ou klike sou
     baryè wouj la nan/wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Echwe mesaj tradiksyon chat
+    baskule avèk siksè.
+  wwcConfigGUISendFailedTranslationChatButton: Voye Chat Mesaj sou Echwe Tradiksyon
+  wwctciOffSender: Fèk ap rantre tradiksyon chat enfim.
+  wwctGUIChatIncomingButton: Baskile fèk ap rantre Chat tradiksyon
+  wwctcoOffSender: Sortan chat tradiksyon enfim.
+  wwctcoOnSender: Sortan chat tradiksyon pèmèt. Nenpòt bagay ou di yo pral tradui!
+  wwctciOnSender: Fèk ap rantre tradiksyon chat pèmèt. Nenpòt bagay ou resevwa yo
+    pral tradui!
+  wwctGUIChatMenu: Baskile Chat Tradiksyon Menu
+  wwctcoOnTarget: Sortan chat tradiksyon pèmèt pou % mwen.
+  wwctcoOffTarget: Sortan chat tradiksyon enfim pou % mwen.
+  wwctGUIChatOutgoingButton: Baskile sortan Chat Tradiksyon
+  wwctciOnTarget: Fèk ap rantre tradiksyon chat pèmèt pou % mwen.
+  wwctciOffTarget: Fèk ap rantre tradiksyon chat andikape pou % mwen.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Original chat fèk ap rantre
+    tache ak tradiksyon kòm hover tèks baskile avèk siksè.
+  wwcConfigGUISendIncomingHoverTextChatButton: Ajoute orijinal mesaj fèk ap rantre
+    kòm Hover Tèks
+  wwctGUIExistingChatOutgoingEnabled: 'Sortan Chat Tradiksyon pèmèt: % mwen'
+  wwctGUIExistingTranslationInput: 'Antre Lang: % mwen'
+  wwctGUIExistingChatIncomingEnabled: 'Fèk ap rantre Tradiksyon Chat pèmèt: % mwen'
+  wwctGUIExistingTranslationOutput: 'Sòti Lang: % mwen'

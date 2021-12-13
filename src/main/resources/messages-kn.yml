@@ -64,8 +64,6 @@ Messages:
   wwctbOnSender: ಪುಸ್ತಕ ಅನುವಾದವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ಅದನ್ನು ಭಾಷಾಂತರಿಸಲು ಪುಸ್ತಕವನ್ನು
     ಹಿಡಿದಿಟ್ಟುಕೊಳ್ಳುವಾಗ ಬಲ ಕ್ಲಿಕ್ ಮಾಡಿ!
   wwcListenersInitialized: ಪ್ರಾರಂಭಿಸಿದ ಕೇಳುಗರು.
-  wwcUserDataCorrupted: ಕಂಡುಬಂದಿಲ್ಲ ಮತ್ತು %i ಭ್ರಷ್ಟಗೊಂಡಿದೆ ಅಥವಾ ಹಳೆಯ ಬಳಕೆದಾರ ಡೇಟಾ
-    ಫೈಲ್ಗಳು. ಮುಂದಿನ ಮರುಲೋಡ್ನಲ್ಲಿ ಅವುಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ.
   wwcConfigGUIPluginUpdateChatButton: ಪ್ಲಗಿನ್ ಅಪ್ಡೇಟ್ಗಳು ಚಾಟ್ ಜ್ಞಾಪನೆ ಕಳುಹಿಸಿ
   wwcConfigConversationSendTranslationChatSuccess: ಸಕ್ರಿಯ ಅನುವಾದಕ ಚಾಟ್ ಜ್ಞಾಪನೆ ಯಶಸ್ವಿಯಾಗಿ
     ಟಾಗಲ್ ಮಾಡಿದೆ.
@@ -236,9 +234,6 @@ Messages:
     5 ಗೆ ಡಿಫಾಲ್ಟಿಂಗ್...
   wwcTranslatorErrorThresholdReachedCheckLogs: ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ದಯವಿಟ್ಟು WordWidechat
     ಪ್ಲಗಿನ್ ಫೋಲ್ಡರ್ errorLog.txt ಪರಿಶೀಲಿಸಿ.
-  wwcConfigMaxResponseTimeInvalid: ಅಮಾನ್ಯ ಗರಿಷ್ಠ ಪ್ರತಿಕ್ರಿಯೆ ಸಮಯ config.yml ಸೆಟ್.
-    7 ಸೆಕೆಂಡುಗಳ ಕಾಲ ಡಿಫಾಲ್ಟಿಂಗ್...
-  wwcConfigMaxResponseTimeEnabled: ಮ್ಯಾಕ್ಸ್ ಪ್ರತಿಕ್ರಿಯೆ ಸಮಯ %i ಸೆಕೆಂಡುಗಳ ಸೆಟ್.
   wwctInvalidInputLangCode: 'ಅಮಾನ್ಯವಾದ ಇನ್ಪುಟ್ ಭಾಷಾ ಕೋಡ್ ಒದಗಿಸಲಾಗಿದೆ! ಮಾನ್ಯ ಲಾಂಗ್
     ಸಂಕೇತಗಳು: %o'
   wwcsTitle: '%i ನ ದಾಖಲೆ'
@@ -289,23 +284,15 @@ Messages:
   wwcteOffTarget: ಘಟಕದ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwcCharLimit: ನಿಮ್ಮ ಸಂದೇಶವು ತುಂಬಾ ಉದ್ದವಾಗಿದೆ! ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸಂದೇಶವು ಉದ್ದ %i ಅಕ್ಷರಗಳಿಗಿಂತ
     ಕಡಿಮೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
-  wwcConfigConversationResponseLimitInput: ಪ್ರತಿ ಭಾಷಾಂತರಕಾರನಿಗೆ ಪ್ರಸ್ತುತ ಪ್ರತಿಕ್ರಿಯೆ
-    ಸಮಯ %i ಸೆಕೆಂಡುಗಳು. ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 0 ಗಿಂತ ಹೆಚ್ಚಿನದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ
-    ಹಿಂತಿರುಗಿ 0 ಗಿಂತ ಕಡಿಮೆ ಅಥವಾ ಸಮಾನವಾದದ್ದನ್ನು ಟೈಪ್ ಮಾಡಿ.
   wwcConfigConversationCharacterLimitInput: ಪ್ರತಿ ಸಂದೇಶಕ್ಕೆ ಪ್ರಸ್ತುತ ಅಕ್ಷರ ಮಿತಿ %i
     ಅಕ್ಷರಗಳು. ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 0 ಗಿಂತ ಹೆಚ್ಚಿನದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ
     0 ಗಿಂತ ಕಡಿಮೆ ಅಥವಾ ಸಮಾನವಾದದ್ದನ್ನು ಟೈಪ್ ಮಾಡಿ.
   wwcteOffSender: ಘಟಕದ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwctGUIEntityButton: ಟಾಗಲ್ ಎಂಟಿಟಿ ಅನುವಾದ
-  wwcConfigConversationResponseLimitSuccess: ಪ್ರತಿಕ್ರಿಯೆ ಕಾಲಾವಧಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
   wwctrlRateLimitBadInt: ನಿಮ್ಮ ದರ ಮಿತಿ ಮಾನ್ಯ ಪೂರ್ಣಾಂಕವಲ್ಲ.
   wwcTranslatorErrorConsole: ಬಳಕೆದಾರ %i ಅವರ ಅನುವಾದವನ್ನು ಪ್ರಯತ್ನಿಸುತ್ತಿರುವಾಗ ಒಂದು ಸಮಸ್ಯೆ
     ಎದುರಾಗಿದೆ. ಹೆಚ್ಚಿನ ವಿವರಗಳಿಗಾಗಿ ದಯವಿಟ್ಟು errorLog.txt ಅನ್ನು ಪರಿಶೀಲಿಸಿ.
-  wwctcOffSender: ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
-  wwctcOnTarget: ಚಾಟ್ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
-  wwctcOnSender: ಚಾಟ್ ಅನುವಾದವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ನೀವು ಹೇಳುವ ಯಾವುದನ್ನಾದರೂ ಅನುವಾದಿಸಲಾಗುತ್ತದೆ!
   wwctGUIChatButton: ಚಾಟ್ ಅನುವಾದ ಟಾಗಲ್
-  wwctcOffTarget: ಚಾಟ್ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwcrBegin: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ...
   wwctTranslationStoppedOtherPlayer: '%i ಗಾಗಿ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ,
@@ -324,3 +311,28 @@ Messages:
     ಆದರೆ ನೀವು %o ಗೆ ಸಕ್ರಿಯ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಹೊಂದಿದ್ದೀರಿ.
   wwcConfigGUIChangesNotSaved: ನೀವು /wwccನಲ್ಲಿ ಕೆಂಪು ತಡೆಗೋಡೆ ಕ್ಲಿಕ್ ಮಾಡುವವರೆಗೆ ನಿಮ್ಮ
     ಬದಲಾವಣೆಗಳು ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ.
+  wwcConfigConversationSendFailedTranslationChatSuccess: ವಿಫಲವಾದ ಅನುವಾದ ಚಾಟ್ ಸಂದೇಶವನ್ನು
+    ಯಶಸ್ವಿಯಾಗಿ toggled.
+  wwcConfigGUISendFailedTranslationChatButton: ವಿಫಲವಾದ ಅನುವಾದದಲ್ಲಿ ಚಾಟ್ ಸಂದೇಶವನ್ನು
+    ಕಳುಹಿಸಿ
+  wwctciOffSender: ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctGUIChatIncomingButton: ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwctcoOffSender: ಹೊರಹೋಗುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctcoOnSender: ಹೊರಹೋಗುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ನೀವು ಹೇಳುವ ಯಾವುದನ್ನಾದರೂ
+    ಅನುವಾದಿಸಲಾಗುತ್ತದೆ!
+  wwctciOnSender: ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ನೀವು ಸ್ವೀಕರಿಸುವ ಯಾವುದನ್ನಾದರೂ
+    ಅನುವಾದಿಸಲಾಗುತ್ತದೆ!
+  wwctGUIChatMenu: ಟಾಗಲ್ ಚಾಟ್ ಅನುವಾದ ಮೆನು
+  wwctcoOnTarget: ಹೊರಹೋಗುವ ಚಾಟ್ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctcoOffTarget: ಹೊರಹೋಗುವ ಚಾಟ್ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctGUIChatOutgoingButton: ಹೊರಹೋಗುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwctciOnTarget: ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwctciOffTarget: ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: ಹೂವರ್ ಪಠ್ಯ ಯಶಸ್ವಿಯಾಗಿ toggled
+    ಮಾಹಿತಿ ಅನುವಾದಕ್ಕೆ ಲಗತ್ತಿಸಲಾದ ಮೂಲ ಒಳಬರುವ ಚಾಟ್.
+  wwcConfigGUISendIncomingHoverTextChatButton: ಹೂವರ್ ಪಠ್ಯವಾಗಿ ಮೂಲ ಒಳಬರುವ ಸಂದೇಶಗಳನ್ನು
+    ಸೇರಿಸಿ
+  wwctGUIExistingChatOutgoingEnabled: 'ಹೊರಹೋಗುವ ಚಾಟ್ ಅನುವಾದ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ: %i'
+  wwctGUIExistingTranslationInput: 'ಇನ್ಪುಟ್ ಭಾಷೆ: %i'
+  wwctGUIExistingChatIncomingEnabled: 'ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ: %i'
+  wwctGUIExistingTranslationOutput: 'ಔಟ್ಪುಟ್ ಭಾಷೆ: %i'

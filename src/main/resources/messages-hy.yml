@@ -64,8 +64,6 @@ Messages:
   wwctbOnSender: Գիրք թարգմանությունը միացված. Աջ սեղմեք, իսկ անցկացման գիրք է թարգմանել
     այն!
   wwcListenersInitialized: Նախաձեռնված ունկնդիրները.
-  wwcUserDataCorrupted: Գտնվել եւ տեղափոխվել %i կոռումպացված կամ հին օգտագործողի տվյալների
-    ֆայլեր. Նրանք կջնջվեն հաջորդ վերաբեռնել.
   wwcConfigGUIPluginUpdateChatButton: Ուղարկել Զրուցարան հիշեցում համար Plugin թարմացումներ
   wwcConfigConversationSendTranslationChatSuccess: Ակտիվ թարգմանիչ զրուցարան հիշեցում
     toggled հաջողությամբ.
@@ -234,10 +232,6 @@ Messages:
     Նախնականը 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Խնդրում ենք ստուգել errorLog.txt է
     WorldwideChat plugin թղթապանակում լրացուցիչ տեղեկությունների համար.
-  wwcConfigMaxResponseTimeInvalid: Անվավեր առավելագույն արձագանքման ժամանակը սահմանվում
-    է config.yml. Նախնականը 7 վայրկյան...
-  wwcConfigMaxResponseTimeEnabled: 'Առավելագույն արձագանքման ժամանակը սահմանվել է
-    %i վայրկյան:'
   wwctInvalidInputLangCode: 'Անվավեր մուտքագրման լեզվի կոդը տրամադրված! Վավեր lang
     կոդեր: %o'
   wwcsTitle: '%i ռեկորդային'
@@ -291,23 +285,15 @@ Messages:
   wwcteOffTarget: Անդամության թարգմանությունը անջատված է %i համար։
   wwcCharLimit: 'Ձեր հաղորդագրությունը չափազանց երկար է! Խնդրում ենք համոզվեք, որ
     ձեր հաղորդագրությունը պակաս է %i նիշերից երկարությամբ:'
-  wwcConfigConversationResponseLimitInput: 'Ընթացիկ պատասխան ժամկետը յուրաքանչյուր
-    թարգմանչի համար %i վայրկյան. Մուտքագրեք ավելի մեծ բան, քան 0 նոր արժեք սահմանելու
-    համար կամ մուտքագրեք 0- ից պակաս կամ հավասար է:'
   wwcConfigConversationCharacterLimitInput: 'Ներկայիս բնույթի սահմանաչափը մեկ հաղորդագրության
     համար %i նիշ է: Մուտքագրեք ավելի մեծ բան, քան 0 նոր արժեք սահմանելու համար կամ
     մուտքագրեք 0- ից պակաս կամ հավասար է:'
   wwcteOffSender: Անձ թարգմանությունը հաշմանդամ.
   wwctGUIEntityButton: Toggle անձի թարգմանություն
-  wwcConfigConversationResponseLimitSuccess: Response timeout սահմանված հաջողությամբ.
   wwctrlRateLimitBadInt: Ձեր տոկոսադրույքը սահմանաչափը չէ վավեր թիվ.
   wwcTranslatorErrorConsole: Խնդիրն առաջացել է, իսկ օգտվողը %i փորձում էր իրենց թարգմանությունը.
     Խնդրում ենք ստուգել errorLog.txt լրացուցիչ մանրամասների համար.
-  wwctcOffSender: Զրուցարան թարգմանությունը հաշմանդամ.
-  wwctcOnTarget: Զրուցարան թարգմանությունը միացված է համար %i.
-  wwctcOnSender: Զրուցարան թարգմանությունը միացված. Ամեն ինչ եք ասում, պետք է թարգմանվի!
   wwctGUIChatButton: Toggle Զրուցարան Թարգմանություն
-  wwctcOffTarget: Զրուցարան թարգմանությունը հաշմանդամ համար %i.
   wwcrBegin: Վերբեռնել WorldwideChat...
   wwctTranslationStoppedOtherPlayer: '%i թարգմանության նիստը դադարեցվել է:'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Գլոբալ զրույցը թարգմանվում
@@ -327,3 +313,31 @@ Messages:
     է, բայց դուք ունեք ակտիվ թարգմանության նիստ է %o.
   wwcConfigGUIChangesNotSaved: Ձեր փոփոխությունները չեն ուժի մեջ մտնելու, քանի դեռ
     դուք սեղմեք կարմիր արգելքը /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Ձախողված թարգմանությունը
+    Վիճակագրություն հաղորդագրություն toggled հաջողությամբ.
+  wwcConfigGUISendFailedTranslationChatButton: Ուղարկեք Զրուցարան հաղորդագրություն
+    ձախողված թարգմանության մասին
+  wwctciOffSender: 'Մուտքային Վիճակագրություն թարգմանությունը անջատված է:'
+  wwctGUIChatIncomingButton: Toggle Մուտքային Զրուցարան Թարգմանություն
+  wwctcoOffSender: Արտագնա Վիճակագրություն թարգմանություն անջատված.
+  wwctcoOnSender: 'Ելքային զրույցի թարգմանությունը միացված է: Ցանկացած բան, որ դուք
+    ասում եք, կթարգմանվի!'
+  wwctciOnSender: Մուտքային Վիճակագրություն թարգմանությունը միացված. Ցանկացած բան,
+    որը դուք ստանում եք, կթարգմանվի!
+  wwctGUIChatMenu: Toggle Զրուցարան Թարգմանություն Մենյու
+  wwctcoOnTarget: Արտագնա Վիճակագրություն թարգմանությունը հնարավորություն է տալիս
+    %i.
+  wwctcoOffTarget: Արտագնա Վիճակագրություն թարգմանությունը անջատված է %i.
+  wwctGUIChatOutgoingButton: Toggle Ելքային Զրուցարան Թարգմանություն
+  wwctciOnTarget: Մուտքային Վիճակագրություն թարգմանությունը հնարավորություն է տալիս
+    %i.
+  wwctciOffTarget: Մուտքային Վիճակագրություն թարգմանությունը անջատված է %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Բնօրինակը մուտքային Վիճակագրություն
+    կցվում է թարգմանության որպես սավառնել տեքստը toggled հաջողությամբ.
+  wwcConfigGUISendIncomingHoverTextChatButton: Ավելացնել բնօրինակ մուտքային հաղորդագրությունները
+    որպես սավառնել տեքստ
+  wwctGUIExistingChatOutgoingEnabled: 'Ելքային Զրուցարան Թարգմանություն Միացված: %i'
+  wwctGUIExistingTranslationInput: 'Մուտքային լեզու: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Մուտքային Զրուցարան Թարգմանություն Միացված:
+    %i'
+  wwctGUIExistingTranslationOutput: 'Արդյունք լեզու: %i'

@@ -61,8 +61,6 @@ Messages:
   wwctbOnSender: کتاب ترجمہ فعال. ترجمہ کرنے کے لئے کتاب کا انعقاد کرتے ہوئے دائیں
     کلک کریں!
   wwcListenersInitialized: ابتدائی سامعین.
-  wwcUserDataCorrupted: '%i خراب یا پرانے صارف ڈیٹا فائلوں کو ملا اور منتقل کیا گیا.
-    وہ اگلے دوبارہ لوڈ پر حذف کر دیے جائیں گے.'
   wwcConfigGUIPluginUpdateChatButton: پلگ ان اپ ڈیٹس کے لئے چیٹ یاد
   wwcConfigConversationSendTranslationChatSuccess: فعال مترجم چیٹ یاددہانی کامیابی
     کے ساتھ ٹوگل
@@ -227,9 +225,6 @@ Messages:
     لئے ناقص...
   wwcTranslatorErrorThresholdReachedCheckLogs: مزید معلومات کے لئے براہ کرم WorldwideChat
     پلگ ان فولڈر میں errorLog.txt چیک کریں.
-  wwcConfigMaxResponseTimeInvalid: config.yml میں غلط زیادہ سے زیادہ ردعمل کا وقت
-    مقرر کیا گیا ہے. 7 سیکنڈ پر ڈیفالٹنگ...
-  wwcConfigMaxResponseTimeEnabled: زیادہ سے زیادہ ردعمل کا وقت %i سیکنڈ پر سیٹ
   wwctInvalidInputLangCode: 'غلط ان پٹ زبان کوڈ فراہم کی! درست لنگ کوڈ: %o'
   wwcsTitle: '%i کا ریکارڈ'
   wwctInvalidOutputLangCode: 'غلط آؤٹ پٹ زبان کوڈ فراہم کی! درست لنگ کوڈ: %o'
@@ -281,24 +276,15 @@ Messages:
   wwcteOffTarget: ہستی ترجمہ %i کے لئے غیر فعال.
   wwcCharLimit: آپ کا پیغام بہت طویل ہے! براہ کرم اس بات کو یقینی بنائیں کہ آپ کا
     پیغام %i حروف سے بھی کم ہے۔
-  wwcConfigConversationResponseLimitInput: ہر مترجم کے لیے موجودہ ردعمل کا ٹائم آؤٹ
-    %i سیکنڈ ہے۔ 0 سے زیادہ کچھ بھی ٹائپ کرنے کے لئے ایک نئی قدر مقرر کریں، یا واپس
-    جانے کے لئے 0 سے کم یا برابر کچھ بھی ٹائپ کریں.
   wwcConfigConversationCharacterLimitInput: فی پیغام موجودہ حرف کی حد %i حروف ہے۔
     0 سے زیادہ کچھ بھی ٹائپ کرنے کے لئے ایک نئی قدر مقرر کریں، یا واپس جانے کے لئے
     0 سے کم یا برابر کچھ بھی ٹائپ کریں.
   wwcteOffSender: ادارہ ترجمہ معذور.
   wwctGUIEntityButton: انسٹی ٹیٹی ترجمہ ٹوگل کریں
-  wwcConfigConversationResponseLimitSuccess: ردعمل کا ٹائم آؤٹ کامیابی سے سیٹ
   wwctrlRateLimitBadInt: آپ کی شرح کی حد ایک درست عددی نہیں ہے.
   wwcTranslatorErrorConsole: ایک مسئلہ پیش آیا جبکہ صارف %i ان کے ترجمہ کی کوشش کر
     رہا تھا. براہ کرم چیک کریں errorLog.txt مزید تفصیلات کے لئے.
-  wwctcOffSender: چیٹ ترجمہ غیر فعال.
-  wwctcOnTarget: '%i کے لئے چیٹ ترجمہ فعال کیا گیا ہے۔'
-  wwctcOnSender: بات چیت کا ترجمہ فعال. جو کچھ بھی آپ کہتے ہیں اُس کا ترجمہ کیا جائے
-    گا!
   wwctGUIChatButton: چیٹ ترجمہ ٹوگل کریں
-  wwctcOffTarget: '%i کے لئے بات چیت کا ترجمہ غیر فعال ہے۔'
   wwcrBegin: ورلڈ وائڈ ہاٹ دوبارہ لوڈ کرنا...
   wwctTranslationStoppedOtherPlayer: '%i کے لئے ترجمہ سیشن روک دیا گیا ہے.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: گلوبل چیٹ کا ترجمہ کیا
@@ -318,3 +304,27 @@ Messages:
     جا رہا ہے، لیکن آپ کے پاس ترجمہ کا ایک فعال سیشن ہے %o.
   wwcConfigGUIChangesNotSaved: آپ کی تبدیلیاں اس وقت تک اثر نہیں ہوگی جب تک آپ /wwcc
     میں سرخ رکاوٹ پر کلک نہ کریں.
+  wwcConfigConversationSendFailedTranslationChatSuccess: ناکام ترجمہ چیٹ پیغام کو
+    کامیابی سے ٹوگل کیا گیا۔
+  wwcConfigGUISendFailedTranslationChatButton: ناکام ترجمہ پر چیٹ پیغام بھیجیں
+  wwctciOffSender: آنے والی چیٹ ترجمہ معذور.
+  wwctGUIChatIncomingButton: آنے والی چیٹ ترجمہ ٹوگل
+  wwctcoOffSender: سبکدوش ہونے والے چیٹ ترجمہ معذور.
+  wwctcoOnSender: سبکدوش ہونے والے چیٹ ترجمہ فعال. کچھ بھی جو آپ کہتے ہیں ترجمہ کیا
+    جائے گا!
+  wwctciOnSender: آنے والی چیٹ ترجمہ فعال. جو کچھ بھی آپ کو ملتا ہے اُس کا ترجمہ
+    کیا جائے گا!
+  wwctGUIChatMenu: چیٹ ترجمہ مینو ٹوگل کریں
+  wwctcoOnTarget: سبکدوش ہونے والے چیٹ ترجمہ کو %i کے لئے فعال کیا گیا ہے۔
+  wwctcoOffTarget: سبکدوش چیٹ ترجمہ %i کے لیے غیر فعال ہے۔
+  wwctGUIChatOutgoingButton: سبکدوش چیٹ ترجمہ ٹوگل
+  wwctciOnTarget: آنے والی چیٹ ترجمہ کا %i کے لیے فعال کیا گیا ہے۔
+  wwctciOffTarget: آنے والی چیٹ ترجمہ %i کے لیے غیر فعال ہے۔
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: اصل آنے والی چیٹ ترجمہ کے
+    ساتھ منسلک ہوور ٹیکسٹ کے طور پر کامیابی سے ٹوگل کیا گیا.
+  wwcConfigGUISendIncomingHoverTextChatButton: اصل آنے والے پیغامات کو ہوور ٹیکسٹ
+    کے طور پر شامل کریں
+  wwctGUIExistingChatOutgoingEnabled: 'باہر جانے والے چیٹ ترجمہ فعال: %i'
+  wwctGUIExistingTranslationInput: 'ان پٹ زبان: %i'
+  wwctGUIExistingChatIncomingEnabled: 'آنے والی چیٹ ترجمہ فعال: %i'
+  wwctGUIExistingTranslationOutput: 'آؤٹ پٹ کی زبان: %i'

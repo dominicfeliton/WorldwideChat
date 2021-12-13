@@ -16,19 +16,18 @@ import net.md_5.bungee.api.ChatColor;
 
 public class GeneralSettingsSyncUserDataConversation extends NumericPrompt {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	@Override
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		((Player) context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationSyncUserDataDelayInput", new String[] {"" + main.getSyncUserDataDelay()});
+		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationSyncUserDataDelayInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("General.syncUserDataDelay")});
 	}
 
 	@Override
 	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 		if (input.intValue() > 10) {
-			main.setSyncUserDataDelay(input.intValue());
 			main.getConfigManager().getMainConfig().set("General.syncUserDataDelay", input.intValue());
 			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
 			final TextComponent successfulChange = Component.text()

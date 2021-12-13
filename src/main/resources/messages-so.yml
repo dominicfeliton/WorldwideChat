@@ -66,8 +66,6 @@ Messages:
   wwctbOnSender: Book tarjumaad karti. Xuquuqda-riix inta aad haysato buug si aad
     u turjumto!
   wwcListenersInitialized: Dhagaystayaasha Initialized.
-  wwcUserDataCorrupted: Helay oo la dhaqaajiyay %i musuqmaasuq ama faylasha xogta
-    user hore. Waxay la tirtiri doonaa on Reload soo socda.
   wwcConfigGUIPluginUpdateChatButton: U dir Xasuusinta Sheekada ee Plugin Updates
   wwcConfigConversationSendTranslationChatSuccess: Turjumaan firfircoon xasuusin chat
     toggled si guul leh.
@@ -236,9 +234,6 @@ Messages:
     Default in 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Fadlan hubi errorLog.txt ee folder
     plugin WorldwideChat wixii macluumaad dheeraad ah.
-  wwcConfigMaxResponseTimeInvalid: waqti jawaab max aan sax ahayn dhigay config.yml.
-    Default ilaa 7 ilbiriqsi...
-  wwcConfigMaxResponseTimeEnabled: Waqtiga jawaabta Max ayaa loo qoondeeyay %i ilbiriqsi.
   wwctInvalidInputLangCode: 'Baadil code luqadda aqbasho bixiyo! Koodhadhka lang ee
     saxda ah: %o'
   wwcsTitle: Diiwaanka %i
@@ -294,24 +289,16 @@ Messages:
   wwcteOffTarget: Turjubaanka cidda naafada %i.
   wwcCharLimit: Your fariin waa mid aad u dheer! Fadlan hubi in fariintaada ay ka
     yartahay xarfaha %i oo dherer ah.
-  wwcConfigConversationResponseLimitInput: Jawaabta wakhtigan ee turjumaan kastaa
-    waa %i ilbiriqsi. Ku qor wax ka weyn 0 si aad u dejiso qiime cusub, ama ku qor
-    wax ka yar ama u dhigma 0 si aad dib ugu noqoto.
   wwcConfigConversationCharacterLimitInput: Xadka dabeecadda hadda ee fariin kasta
     waa %i jilayaal. Ku qor wax ka weyn 0 si aad u dejiso qiime cusub, ama ku qor
     wax ka yar ama u dhigma 0 si aad dib ugu noqoto.
   wwcteOffSender: Turjumaad hay'ad naafo.
   wwctGUIEntityButton: Turjubaan Hay'adda Toggle
-  wwcConfigConversationResponseLimitSuccess: fekero Response dhigay si guul leh.
   wwctrlRateLimitBadInt: Xadka heerka Your ma aha abyoonaha ansax ah.
   wwcTranslatorErrorConsole: Dhibaato ayaa ka dhacday intii uu isticmaalay %i isku
     dayayay turjumaadkooda. Fadlan hubi errorLog.txt wixii faahfaahin dheeraad ah
     oo ku.
-  wwctcOffSender: turjumaad Chat naafo.
-  wwctcOnTarget: Turjumaad Chat awood u siiyo %i.
-  wwctcOnSender: turjumaad Chat karti. Wax kasta oo aad tiraahdo waa la tarjumi doonaa!
   wwctGUIChatButton: Toggle Chat Translation
-  wwctcOffTarget: Turjumaad Chat naafo ah %i.
   wwcrBegin: Dib u soo celinta WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Kulanka turjubaanka ee %i waa la joojiyay.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Wadahadal caalami ah ayaa
@@ -333,3 +320,30 @@ Messages:
     ayaa la turjumayaa, laakiin waxaad leedahay fadhi tarjumaad firfircoon ee %o.
   wwcConfigGUIChangesNotSaved: isbedel Your ma dhaqangelin doono ilaa aad guji caqabad
     cas ee /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Fashilmay fariin chat turjumaad
+    guul toggled si guul leh.
+  wwcConfigGUISendFailedTranslationChatButton: U dir Fariin Wadahadal ah oo ku saabsan
+    Tarjum
+  wwctciOffSender: Soo socda turjumaad chat naafo ah.
+  wwctGUIChatIncomingButton: Toggle Tarjumaadda Wadahadalka Soo Socda
+  wwctcoOffSender: Turjumaad chat xilka naafada ah.
+  wwctcoOnSender: Turjumaad chat xilka karti. Wax kasta oo aad tiraahdo waa la turjumi
+    doonaa!
+  wwctciOnSender: Turjumaad chat soo socda karti. Wax kasta oo aad hesho waa la turjumi
+    doonaa!
+  wwctGUIChatMenu: Liiska Tarjumaadda Wadahadalka Toggle
+  wwctcoOnTarget: Turjumaad chat xilka karti for %i.
+  wwctcoOffTarget: Turjumaad chat xilka naafo ah %i.
+  wwctGUIChatOutgoingButton: Toggle Translation Chat xilka
+  wwctciOnTarget: Turjumaad chat soo socda karti for %i.
+  wwctciOffTarget: Turjumaad chat soo socda naafo ah %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Sheekaysiga soo socda ee
+    asalka ah ee ku lifaaqan tarjumaadda sida qoraalka dul wareegaya si guul leh.
+  wwcConfigGUISendIncomingHoverTextChatButton: Ku dar farriimaha soo socda ee asalka
+    ah sida qoraalka Hover
+  wwctGUIExistingChatOutgoingEnabled: 'Tarjumaadda Wadahadalka ee xilka laga qaaday:
+    %i'
+  wwctGUIExistingTranslationInput: 'Luqadda Gelinta: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Tarjumaadda Wadahadalka Soo Socda ee Karti
+    Leh: %i'
+  wwctGUIExistingTranslationOutput: 'Luqadda Wax Soo Saarka: %i'

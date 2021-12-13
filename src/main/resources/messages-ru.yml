@@ -61,8 +61,6 @@ Messages:
   wwctbOnSender: Перевод книг включен. Щелкните правой кнопкой мыши, удерживая книгу,
     чтобы перевести ее!
   wwcListenersInitialized: Инициализированные слушатели.
-  wwcUserDataCorrupted: Обнаружены и перемещены %i поврежденные или старые файлы пользовательских
-    данных. Они будут удалены при следующей перезагрузке.
   wwcConfigGUIPluginUpdateChatButton: Отправка напоминания чата для обновлений плагинов
   wwcConfigConversationSendTranslationChatSuccess: Напоминание чата активного переводчика
     успешно переключено.
@@ -236,10 +234,6 @@ Messages:
     config.yml. При дефолте 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Пожалуйста, обратитесь к errorLog.txt
     в папке плагинов WorldwideChat для получения дополнительной информации.
-  wwcConfigMaxResponseTimeInvalid: Недопустимое максимальное время отклика, установленное
-    в config.yml. При дефолте 7 секунд...
-  wwcConfigMaxResponseTimeEnabled: Максимальное время отклика, установленное в %i
-    секунд.
   wwctInvalidInputLangCode: 'Указан неверный код языка ввода! Допустимые коды lang:
     %o'
   wwcsTitle: Запись из %i
@@ -294,23 +288,15 @@ Messages:
   wwcteOffTarget: Перевод сущностей отключен для %i.
   wwcCharLimit: Ваше сообщение слишком длинное! Убедитесь, что длина сообщения не
     превышает %i символов.
-  wwcConfigConversationResponseLimitInput: Текущее время ожидания ответа для каждого
-    транслятора составляет %i секунд. Введите значение больше 0, чтобы задать новое
-    значение, или введите значение меньше или равно 0, чтобы вернуться назад.
   wwcConfigConversationCharacterLimitInput: Текущее ограничение количества символов
     на сообщение составляет %i символов. Введите значение больше 0, чтобы задать новое
     значение, или введите значение меньше или равно 0, чтобы вернуться назад.
   wwcteOffSender: Перевод сущностей отключен.
   wwctGUIEntityButton: Переключить перевод сущностей
-  wwcConfigConversationResponseLimitSuccess: Таймаут ответа успешно установлен.
   wwctrlRateLimitBadInt: Ограничение скорости не является допустимым целым числом.
   wwcTranslatorErrorConsole: Возникла проблема при попытке перевода пользователем
     %i. Для получения более подробной информации обратитесь к файлу errorLog.txt.
-  wwctcOffSender: Перевод чата отключен.
-  wwctcOnTarget: Перевод чата включен для %i.
-  wwctcOnSender: Перевод чата включен. Все, что вы скажете, будет переведено!
   wwctGUIChatButton: Переключить перевод чата
-  wwctcOffTarget: Перевод чата отключен для %i.
   wwcrBegin: Перезагрузка чата по всему миру...
   wwctTranslationStoppedOtherPlayer: Сеанс перевода для %i остановлен.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобальный чат переводится,
@@ -329,3 +315,26 @@ Messages:
     но у вас есть активный сеанс перевода на %o.
   wwcConfigGUIChangesNotSaved: Ваши изменения не вступят в силу, пока вы не нажмете
     на красный барьер в /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Сообщение в чате с неудачным
+    переводом успешно переключено.
+  wwcConfigGUISendFailedTranslationChatButton: Отправить сообщение в чате о неудачном
+    переводе
+  wwctciOffSender: Перевод входящего чата отключен.
+  wwctGUIChatIncomingButton: Переключить перевод входящего чата
+  wwctcoOffSender: Перевод исходящего чата отключен.
+  wwctcoOnSender: Перевод исходящего чата включен. Все, что вы скажете, будет переведено!
+  wwctciOnSender: Перевод входящего чата включен. Все, что вы получите, будет переведено!
+  wwctGUIChatMenu: Переключить меню перевода чата
+  wwctcoOnTarget: Перевод исходящего чата включен для %i.
+  wwctcoOffTarget: Перевод исходящего чата отключен для %i.
+  wwctGUIChatOutgoingButton: Переключить перевод исходящего чата
+  wwctciOnTarget: Перевод входящего чата включен для %i.
+  wwctciOffTarget: Перевод входящего чата отключен для %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Оригинальный входящий чат,
+    прикрепленный к переводу, так как текст при наведении курсора мыши успешно переключен.
+  wwcConfigGUISendIncomingHoverTextChatButton: Добавить оригинальные входящие сообщения
+    в виде текста при наведении
+  wwctGUIExistingChatOutgoingEnabled: 'Перевод исходящего чата включен: %i'
+  wwctGUIExistingTranslationInput: 'Язык ввода: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Перевод входящего чата включен: %i'
+  wwctGUIExistingTranslationOutput: 'Язык вывода: %i'

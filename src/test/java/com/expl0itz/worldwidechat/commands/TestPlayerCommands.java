@@ -215,9 +215,9 @@ public class TestPlayerCommands {
 		playerMock.performCommand("worldwidechat:wwctc");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
 		if (toggleStatus) {
-			assertTrue(currTranslator.getTranslatingChat());
+			assertTrue(currTranslator.getTranslatingChatOutgoing());
 		} else {
-			assertTrue(!currTranslator.getTranslatingChat());
+			assertTrue(!currTranslator.getTranslatingChatOutgoing());
 		}
 	}
 
@@ -226,9 +226,9 @@ public class TestPlayerCommands {
 		playerMock.performCommand("worldwidechat:wwctc player2");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(secondPlayerMock.getUniqueId().toString());
 		if (toggleStatus) {
-			assertTrue(currTranslator.getTranslatingChat());
+			assertTrue(currTranslator.getTranslatingChatOutgoing());
 		} else {
-			assertTrue(!currTranslator.getTranslatingChat());
+			assertTrue(!currTranslator.getTranslatingChatOutgoing());
 		}
 	}
 	
@@ -237,9 +237,9 @@ public class TestPlayerCommands {
 		playerMock.performCommand("worldwidechat:wwctc player1");
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
 		if (toggleStatus) {
-			assertTrue(currTranslator.getTranslatingChat());
+			assertTrue(currTranslator.getTranslatingChatOutgoing());
 		} else {
-			assertTrue(!currTranslator.getTranslatingChat());
+			assertTrue(!currTranslator.getTranslatingChatOutgoing());
 		}
 	}
 

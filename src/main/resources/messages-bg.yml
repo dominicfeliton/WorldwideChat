@@ -62,8 +62,6 @@ Messages:
   wwctbOnSender: Преводът на книги е разрешен Щракнете с десния бутон, докато държите
     книга, за да я преведете!
   wwcListenersInitialized: Инициализирани слушатели.
-  wwcUserDataCorrupted: Намерени и преобърнати %i повредени или стари потребителски
-    файлове с данни. Те ще бъдат изтрити при следващото презареждане.
   wwcConfigGUIPluginUpdateChatButton: Изпращане на чат напомняне за актуализации на
     приставките
   wwcConfigConversationSendTranslationChatSuccess: Активно напомняне за чат на преводача
@@ -233,10 +231,6 @@ Messages:
     config.yml. Протичане на 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Моля, проверете errorLog.txt в папката
     WorldwideChat плъгин за повече информация.
-  wwcConfigMaxResponseTimeInvalid: Невалидно максимално време за реакция, зададено
-    в config.yml. Пропускате 7 секунди...
-  wwcConfigMaxResponseTimeEnabled: Максималното време за реакция е зададено на %i
-    секунди.
   wwctInvalidInputLangCode: 'Предоставя се невалиден код на езика за въвеждане! Валидни
     кодове на lang: %o'
   wwcsTitle: Запис на %i
@@ -293,24 +287,15 @@ Messages:
   wwcteOffTarget: Преводът на обект е забранен за %i.
   wwcCharLimit: Съобщението ти е твърде дълго! Моля, уверете се, че съобщението ви
     е с дължина по-малко от %i знаци.
-  wwcConfigConversationResponseLimitInput: Текущото изчакване на отговор за всеки
-    преводач е %i секунди. Въведете нещо по-голямо от 0, за да зададете нова стойност,
-    или въведете нещо по-малко от или равно на 0, за да се върнете.
   wwcConfigConversationCharacterLimitInput: Текущото ограничение на символите за всяко
     съобщение е %i знаци. Въведете нещо по-голямо от 0, за да зададете нова стойност,
     или въведете нещо по-малко от или равно на 0, за да се върнете.
   wwcteOffSender: Преводът на субект е
   wwctGUIEntityButton: Превключване на превод на обект
-  wwcConfigConversationResponseLimitSuccess: Времето за изчакване на отговор зададено
-    успешно.
   wwctrlRateLimitBadInt: Вашият лимит на скоростта не е валидно цяло число.
   wwcTranslatorErrorConsole: Проблем възникна при опит за превод на потребител %i.
     Моля, проверете errorLog.txt за повече подробности.
-  wwctcOffSender: Чат превод забранен.
-  wwctcOnTarget: Преводът на чат е разрешен за %i.
-  wwctcOnSender: Разрешен чат превод. Всичко, което кажете, ще бъде преведено!
   wwctGUIChatButton: Превключване на чат превод
-  wwctcOffTarget: Преводът на чат е забранен за %i.
   wwcrBegin: Презареждане на WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Сесията за превод за %i беше спряна.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобалният чат се превежда,
@@ -329,3 +314,26 @@ Messages:
     чат, но имате активна сесия за превод до %o.
   wwcConfigGUIChangesNotSaved: Вашите промени няма да влязат в сила, докато не кликнете
     върху червената бариера в /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Неуспешно превод чат съобщение
+    прекъсна успешно.
+  wwcConfigGUISendFailedTranslationChatButton: Изпращане на чат съобщение за неуспешен
+    превод
+  wwctciOffSender: Входящ чат превод забранено.
+  wwctGUIChatIncomingButton: Превключване входящ чат превод
+  wwctcoOffSender: Изходящ чат превод забранено.
+  wwctcoOnSender: Изходящ чат превод активиран. Всичко, което кажете, ще бъде преведено!
+  wwctciOnSender: Входящ чат превод активиран. Всичко, което получите, ще бъде преведено!
+  wwctGUIChatMenu: Превключване на менюто за превод на чат
+  wwctcoOnTarget: Изходящ превод на чат е активиран за %i.
+  wwctcoOffTarget: Изходящ превод на чат е забранен за %i.
+  wwctGUIChatOutgoingButton: Превключване на изходящи чат превод
+  wwctciOnTarget: Входящ чат превод е активиран за %i.
+  wwctciOffTarget: Преводът на входящ чат е забранен за %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Оригинален входящ чат прикрепен
+    към превода като мишката текст прекъсна успешно.
+  wwcConfigGUISendIncomingHoverTextChatButton: Добавяне на оригинални входящи съобщения
+    като текст на мишката
+  wwctGUIExistingChatOutgoingEnabled: 'Изходящ чат Превод Активиран: %i'
+  wwctGUIExistingTranslationInput: 'Език на въвеждане: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Входящ чат Превод Активиран: %i'
+  wwctGUIExistingTranslationOutput: 'Език на изхода: %i'

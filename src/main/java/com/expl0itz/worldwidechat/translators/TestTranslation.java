@@ -18,7 +18,7 @@ public class TestTranslation {
 
 	private boolean isInitializing = false;
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	public TestTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
 		this.textToTranslate = textToTranslate;

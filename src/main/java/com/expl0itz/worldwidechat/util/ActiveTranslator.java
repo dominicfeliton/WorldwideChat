@@ -12,7 +12,8 @@ public class ActiveTranslator {
 	private String rateLimitPreviousTime = "None";
 
 	private boolean hasBeenShownColorCodeWarning = false;
-	private boolean translatingChat = true;
+	private boolean translatingChatOutgoing = true;
+	private boolean translatingChatIncoming = false;
 	private boolean translatingBook = false;
 	private boolean translatingSign = false;
 	private boolean translatingItem = false;
@@ -50,9 +51,14 @@ public class ActiveTranslator {
 		hasBeenShownColorCodeWarning = i;
 	}
 
-	public void setTranslatingChat(boolean i) {
+	public void setTranslatingChatOutgoing(boolean i) {
 		hasBeenSaved = false;
-		translatingChat = i;
+		translatingChatOutgoing = i;
+	}
+	
+	public void setTranslatingChatIncoming(boolean i) {
+		hasBeenSaved = false;
+		translatingChatIncoming = i;
 	}
 	
 	public void setTranslatingBook(boolean i) {
@@ -105,8 +111,12 @@ public class ActiveTranslator {
 		return hasBeenShownColorCodeWarning;
 	}
 
-	public boolean getTranslatingChat() {
-		return translatingChat;
+	public boolean getTranslatingChatOutgoing() {
+		return translatingChatOutgoing;
+	}
+	
+	public boolean getTranslatingChatIncoming() {
+		return translatingChatIncoming;
 	}
 	
 	public boolean getTranslatingBook() {

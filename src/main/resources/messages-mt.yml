@@ -62,8 +62,6 @@ Messages:
   wwctbOnSender: Ktieb traduzzjoni ppermettiet. Ikklikkja lemin waqt li żżomm ktieb
     biex tittraduċih!
   wwcListenersInitialized: Semmiegħa inizjalizzati.
-  wwcUserDataCorrupted: Misjuba u mwiegħed %i fajls tad-data korrotta jew qodma utent.
-    Dawn se jitħassru fuq it-tagħbija mill-ġdid li jmiss.
   wwcConfigGUIPluginUpdateChatButton: Ibgħat it-Tifkira taċ-Chat għal Aġġornamenti
   wwcConfigConversationSendTranslationChatSuccess: Tifkira ta 'chat traduttur attiv
     toggled b'suċċess.
@@ -230,9 +228,6 @@ Messages:
     Inadempjenti sa 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Jekk jogħġbok iċċekkja errorLog.txt
     fil-folder plugin WorldwideChat għal aktar informazzjoni.
-  wwcConfigMaxResponseTimeInvalid: Ħin ta 'rispons massimu invalidu stabbilit f'konfig.yml.
-    Inadempjenti għal 7 sekondi...
-  wwcConfigMaxResponseTimeEnabled: Ħin ta 'rispons Max stabbilit għal %i sekondi.
   wwctInvalidInputLangCode: 'Invalidu kodiċi lingwa input pprovduta! Kodiċijiet ta
     ''terminu validi: %o'
   wwcsTitle: Rekord ta'%i
@@ -285,23 +280,15 @@ Messages:
   wwcteOffTarget: Entità traduzzjoni b'diżabilità għal %i.
   wwcCharLimit: Il-messaġġ tiegħek huwa twil wisq! Jekk jogħġbok kun żgur messaġġ
     tiegħek huwa inqas minn % karattri i fit-tul.
-  wwcConfigConversationResponseLimitInput: Il-timeout rispons attwali għal kull traduttur
-    hija %i sekondi. Tip xejn akbar minn 0 biex tistabbilixxi valur ġdid, jew tip
-    xejn inqas minn jew ugwali għal 0 li jmorru lura.
   wwcConfigConversationCharacterLimitInput: Il-limitu attwali tal-karattru għal kull
     messaġġ hija %i karattri. Tip xejn akbar minn 0 biex tistabbilixxi valur ġdid,
     jew tip xejn inqas minn jew ugwali għal 0 li jmorru lura.
   wwcteOffSender: Entità traduzzjoni b'diżabilità.
   wwctGUIEntityButton: Traduzzjoni ta 'Entità
-  wwcConfigConversationResponseLimitSuccess: L-iskedi ta 'rispons stabbiliti b'suċċess.
   wwctrlRateLimitBadInt: Il-limitu tar-rata tiegħek mhuwiex numru sħiħ validu.
   wwcTranslatorErrorConsole: Problema seħħet waqt l-utent %i kien jippruvaw traduzzjoni
     tagħhom. Jekk jogħġbok iċċekkja errorLog.txt għal aktar dettalji.
-  wwctcOffSender: Chat traduzzjoni b'diżabilità.
-  wwctcOnTarget: Chat traduzzjoni ppermettiet għal %i.
-  wwctcOnSender: Chat traduzzjoni ppermettiet. Kull ħaġa li tgħid se tiġi tradotta!
   wwctGUIChatButton: Traduzzjoni Toggle Chat
-  wwctcOffTarget: Chat traduzzjoni b'diżabilità għal %i.
   wwcrBegin: Reloading WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Sessjoni ta 'traduzzjoni għal % twaqqfet.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Chat globali qed jiġi
@@ -322,3 +309,27 @@ Messages:
     jiġi tradott, imma għandek sessjoni ta 'traduzzjoni attiva għal %o.
   wwcConfigGUIChangesNotSaved: Il-bidliet tiegħek mhux se jidħlu fis-seħħ sakemm tikklikkja
     fuq il-barriera ħamra fi/wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Naqas messaġġ chat traduzzjoni
+    toggled b'suċċess.
+  wwcConfigGUISendFailedTranslationChatButton: Ibgħat Messaġġ ta 'Chat fuq Traduzzjoni
+  wwctciOffSender: Traduzzjoni chat deħlin b'diżabilità.
+  wwctGUIChatIncomingButton: Toggle Traduzzjoni Chat deħlin
+  wwctcoOffSender: Traduzzjoni chat ħerġin b'diżabilità.
+  wwctcoOnSender: Ħierġa chat traduzzjoni ppermettiet. Kull ħaġa li tgħid se tkun
+    tradotta!
+  wwctciOnSender: Traduzzjoni chat deħlin ppermettiet. Kull ħaġa li tirċievi se tkun
+    tradotta!
+  wwctGUIChatMenu: Toggle Chat Menu Traduzzjoni
+  wwctcoOnTarget: Ħierġa chat traduzzjoni ppermettiet għal %i.
+  wwctcoOffTarget: Ħierġa chat traduzzjoni b'diżabilità għal %i.
+  wwctGUIChatOutgoingButton: Toggle Outgoing Chat Traduzzjoni
+  wwctciOnTarget: Traduzzjoni chat deħlin ppermettiet għal %i.
+  wwctciOffTarget: Traduzzjoni chat deħlin b'diżabilità għal %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Chat oriġinali deħlin mehmuża
+    mat-traduzzjoni bħala test jerġgħu toggled b'suċċess.
+  wwcConfigGUISendIncomingHoverTextChatButton: Żid Messaġġi oriġinali li deħlin bħala
+    Hover Test
+  wwctGUIExistingChatOutgoingEnabled: 'Ħierġa Chat Traduzzjoni ppermettiet: %i'
+  wwctGUIExistingTranslationInput: 'Lingwa Input: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Traduzzjoni Chat deħlin ppermettiet: %i'
+  wwctGUIExistingTranslationOutput: 'Output Lingwa: %i'

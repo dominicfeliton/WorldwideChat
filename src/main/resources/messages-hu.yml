@@ -63,8 +63,6 @@ Messages:
   wwctbOnSender: Könyv fordítás engedélyezve. Kattintson a jobb gombbal, miközben
     tartja a könyvet, hogy lefordítsa!
   wwcListenersInitialized: Inicializált hallgatók.
-  wwcUserDataCorrupted: Megtalálható és átköltözt %i sérült vagy régi felhasználói
-    adatfájlok. A következő újratöltésen törlődnek.
   wwcConfigGUIPluginUpdateChatButton: Csevegési emlékeztető küldése beépülő modulfrissítésekhez
   wwcConfigConversationSendTranslationChatSuccess: Az aktív fordítói csevegés emlékeztető
     sikeresen váltott.
@@ -233,9 +231,6 @@ Messages:
     Alapértelmezés: 5...'
   wwcTranslatorErrorThresholdReachedCheckLogs: Kérjük, ellenőrizze a errorLog.txt
     fájlt a WorldwideChat bővítmény mappájában további információért.
-  wwcConfigMaxResponseTimeInvalid: A config.yml fájlban megadott maximális válaszidő
-    érvénytelen. Alapértelmezés 7 másodpercre...
-  wwcConfigMaxResponseTimeEnabled: 'Maximum válaszidő: %i másodperc.'
   wwctInvalidInputLangCode: 'Érvénytelen beviteli nyelvkód biztosított! Érvényes lang
     kódok: %o'
   wwcsTitle: '%i rekordja'
@@ -287,23 +282,15 @@ Messages:
   wwcteOffTarget: 'Entitásfordítás letiltva: %i.'
   wwcCharLimit: Túl hosszú az üzeneted! Győződjön meg arról, hogy az üzenet hossza
     kevesebb, mint a %i karakter.
-  wwcConfigConversationResponseLimitInput: 'Az aktuális válaszidőtúllépés minden fordítónál:
-    %i másodperc. Ha új értéket szeretne beállítani, írjon be egy 0-nál nagyobb értéket,
-    vagy írjon be egy nullánál kisebb vagy egyenlő értéket a visszatéréshez.'
   wwcConfigConversationCharacterLimitInput: Az üzenetenkénti aktuális karakterkorlát
     %i karakter. Ha új értéket szeretne beállítani, írjon be egy 0-nál nagyobb értéket,
     vagy írjon be egy nullánál kisebb vagy egyenlő értéket a visszatéréshez.
   wwcteOffSender: Az entitásfordítás letiltva
   wwctGUIEntityButton: Entitásfordítás be-
-  wwcConfigConversationResponseLimitSuccess: A válaszidőtúllépés sikeresen beállítva.
   wwctrlRateLimitBadInt: A díjkorlát nem érvényes egész szám.
   wwcTranslatorErrorConsole: Probléma merült fel, amikor a (z) %i felhasználó megpróbálta
     a fordítást. Kérjük, tekintse meg a errorLog.txt fájlt további részletekért.
-  wwctcOffSender: Csevegés fordítás letiltva
-  wwctcOnTarget: Csevegés fordítás engedélyezve a %i.
-  wwctcOnSender: Csevegés fordítás engedélyezve Bármi, amit mond, le lesz fordítva!
   wwctGUIChatButton: Csevegés fordítás be-
-  wwctcOffTarget: 'Csevegés fordítása le van tiltva erre:'
   wwcrBegin: WorldwideChat újratöltése...
   wwctTranslationStoppedOtherPlayer: A (z) %i fordítási munkamenet le lett állítva.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: A globális csevegés lefordítása
@@ -324,3 +311,26 @@ Messages:
     lefordítása folyamatban van, de aktív fordítási munkamenete van a %o.
   wwcConfigGUIChangesNotSaved: A módosítások addig nem lépnek életbe, amíg nem kattint
     a /wwcc-ban található piros korlátra.
+  wwcConfigConversationSendFailedTranslationChatSuccess: A sikertelen fordítási csevegési
+    üzenet sikeresen vált.
+  wwcConfigGUISendFailedTranslationChatButton: Csevegési üzenet küldése sikertelen
+    fordításon
+  wwctciOffSender: A bejövő csevegés fordítása letiltva.
+  wwctGUIChatIncomingButton: A bejövő csevegés fordításának váltása
+  wwctcoOffSender: A kimenő csevegés fordítása letiltva.
+  wwctcoOnSender: Kimenő csevegés fordítás engedélyezve. Bármit, amit mondasz, lefordítják!
+  wwctciOnSender: Bejövő csevegés fordítás engedélyezve. Bármit, amit kap, lefordítják!
+  wwctGUIChatMenu: Toggle Chat fordítás menü
+  wwctcoOnTarget: A kimenő csevegés fordítása engedélyezve van %i.
+  wwctcoOffTarget: A kimenő csevegés fordítása le van tiltva %i.
+  wwctGUIChatOutgoingButton: A kimenő csevegés fordításának váltása
+  wwctciOnTarget: A bejövő csevegés fordítása engedélyezve van %i.
+  wwctciOffTarget: A bejövő csevegés fordítása le van tiltva %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Eredeti bejövő csevegés a
+    fordításhoz csatolva, mivel a lebegő szöveg sikeresen vált.
+  wwcConfigGUISendIncomingHoverTextChatButton: Eredeti bejövő üzenetek hozzáadása
+    Hover szövegként
+  wwctGUIExistingChatOutgoingEnabled: 'Kimenő csevegés fordítás engedélyezve: %i'
+  wwctGUIExistingTranslationInput: 'Beviteli nyelv: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Bejövő csevegés fordítás engedélyezve: %i'
+  wwctGUIExistingTranslationOutput: 'Kimeneti nyelv: %i'

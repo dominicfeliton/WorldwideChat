@@ -65,8 +65,6 @@ Messages:
   wwctbOnSender: Η μετάφραση του βιβλίου είναι ενεργοποιημένη. Κάντε δεξί κλικ κρατώντας
     ένα βιβλίο για να το μεταφράσετε!
   wwcListenersInitialized: Αρχικοποιημένοι ακροατές.
-  wwcUserDataCorrupted: Βρέθηκαν και κινήθηκε %i κατεστραμμένα ή παλιά αρχεία δεδομένων
-    χρήστη. Θα διαγραφούν στην επόμενη επαναφόρτωση.
   wwcConfigGUIPluginUpdateChatButton: Αποστολή υπενθύμισης συνομιλίας για ενημερώσεις
     plugin
   wwcConfigConversationSendTranslationChatSuccess: Ενεργή υπενθύμιση συνομιλίας μεταφραστή
@@ -247,9 +245,6 @@ Messages:
     στο config.yml. Προεπιλογές σε 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Ελέγξτε το errorLog.txt στο φάκελο
     πρόσθετων WorldwideChat για περισσότερες πληροφορίες.
-  wwcConfigMaxResponseTimeInvalid: Μη έγκυρος μέγιστος χρόνος απόκρισης που έχει οριστεί
-    στο config.yml. Προεπιλογές σε 7 δευτερόλεπτα...
-  wwcConfigMaxResponseTimeEnabled: Μέγιστος χρόνος απόκρισης ρυθμίστηκε σε %i δευτερόλεπτα.
   wwctInvalidInputLangCode: 'Μη έγκυρος κωδικός γλώσσας εισαγωγής που παρέχεται! Έγκυροι
     κωδικοί lang: %o'
   wwcsTitle: Εγγραφή του %i
@@ -303,25 +298,15 @@ Messages:
   wwcteOffTarget: Η μετάφραση οντότητας απενεργοποιημένη για %i.
   wwcCharLimit: Το μήνυμά σου είναι πολύ μεγάλο! Βεβαιωθείτε ότι το μήνυμά σας είναι
     μικρότερο από το %i χαρακτήρες σε μήκος.
-  wwcConfigConversationResponseLimitInput: Το τρέχον χρονικό όριο απόκρισης για κάθε
-    μεταφραστή είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για
-    να ορίσετε μια νέα τιμή ή πληκτρολογήστε οτιδήποτε μικρότερο ή ίσο με 0 για να
-    επιστρέψετε.
   wwcConfigConversationCharacterLimitInput: Το τρέχον όριο χαρακτήρων ανά μήνυμα είναι
     %i χαρακτήρες. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια νέα
     τιμή ή πληκτρολογήστε οτιδήποτε μικρότερο ή ίσο με 0 για να επιστρέψετε.
   wwcteOffSender: Η μετάφραση οντότητας απενεργοποιημένη.
   wwctGUIEntityButton: Εναλλαγή μετάφρασης οντοτήτων
-  wwcConfigConversationResponseLimitSuccess: Το χρονικό όριο απόκρισης ορίστηκε με
-    επιτυχία.
   wwctrlRateLimitBadInt: Το όριο τιμών σας δεν είναι έγκυρος ακέραιος.
   wwcTranslatorErrorConsole: Παρουσιάστηκε ένα πρόβλημα ενώ ο χρήστης %i προσπαθούσε
     τη μετάφρασή του. Παρακαλούμε ελέγξτε το errorLog.txt για περισσότερες λεπτομέρειες.
-  wwctcOffSender: Η μετάφραση συνομιλίας απενεργοποιήθηκε.
-  wwctcOnTarget: Η μετάφραση συνομιλίας είναι ενεργοποιημένη για %i.
-  wwctcOnSender: Η μετάφραση συνομιλίας είναι ενεργοποιημένη. Ό, τι πεις θα μεταφραστεί!
   wwctGUIChatButton: Εναλλαγή μετάφρασης συνομιλίας
-  wwctcOffTarget: Η μετάφραση συνομιλίας απενεργοποιήθηκε για %i.
   wwcrBegin: Επαναφόρτωση Worldwide
   wwctTranslationStoppedOtherPlayer: Διακόπηκε η συνεδρία μετάφρασης για %i.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Η παγκόσμια συνομιλία
@@ -343,3 +328,29 @@ Messages:
     μεταφράζεται, αλλά έχετε μια ενεργή συνεδρία μετάφρασης σε %o.
   wwcConfigGUIChangesNotSaved: Οι αλλαγές σας δεν θα τεθούν σε ισχύ μέχρι να κάνετε
     κλικ στο κόκκινο φράγμα στο /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Απέτυχε η εναλλαγή μηνύματος
+    συνομιλίας μετάφρασης με επιτυχία.
+  wwcConfigGUISendFailedTranslationChatButton: Αποστολή μηνύματος συνομιλίας σε αποτυχημένη
+    μετάφραση
+  wwctciOffSender: Η μετάφραση εισερχόμενης συνομιλίας απενεργοποιήθηκε.
+  wwctGUIChatIncomingButton: Εναλλαγή μετάφρασης εισερχόμενης συνομιλίας
+  wwctcoOffSender: Η εξερχόμενη μετάφραση συνομιλίας απενεργοποιήθηκε.
+  wwctcoOnSender: Ενεργοποίηση μετάφρασης εξερχόμενης συνομιλίας. Ό, τι πεις θα μεταφραστεί!
+  wwctciOnSender: Εισερχόμενη μετάφραση συνομιλίας ενεργοποιημένη. Ό, τι λάβετε θα
+    μεταφραστεί!
+  wwctGUIChatMenu: Εναλλαγή μενού μετάφρασης συνομιλίας
+  wwctcoOnTarget: Ενεργοποιήθηκε η μετάφραση εξερχόμενης συνομιλίας για το %i.
+  wwctcoOffTarget: Η μετάφραση εξερχόμενης συνομιλίας απενεργοποιήθηκε για %i.
+  wwctGUIChatOutgoingButton: Εναλλαγή μετάφρασης εξερχόμενης συνομιλίας
+  wwctciOnTarget: Η μετάφραση εισερχόμενης συνομιλίας ενεργοποιήθηκε για %i.
+  wwctciOffTarget: Η μετάφραση εισερχόμενης συνομιλίας απενεργοποιήθηκε για %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Αρχική εισερχόμενη συνομιλία
+    που επισυνάπτεται στη μετάφραση καθώς το κείμενο του δείκτη εναλλαγής με επιτυχία.
+  wwcConfigGUISendIncomingHoverTextChatButton: Προσθήκη αρχικών εισερχόμενων μηνυμάτων
+    ως κειμένου του ποντικιού
+  wwctGUIExistingChatOutgoingEnabled: 'Ενεργοποιημένη μετάφραση εξερχόμενης συνομιλίας:
+    %i'
+  wwctGUIExistingTranslationInput: 'Γλώσσα εισόδου: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Ενεργοποιημένη μετάφραση εισερχόμενης συνομιλίας:
+    %i'
+  wwctGUIExistingTranslationOutput: 'Γλώσσα εξόδου: %i'

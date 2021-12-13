@@ -62,8 +62,6 @@ Messages:
   wwctbOnSender: Boekvertaling ingeschakeld. Klik met de rechtermuisknop terwijl u
     een boek vasthoudt om het te
   wwcListenersInitialized: Initialiseerde listeners.
-  wwcUserDataCorrupted: '%i beschadigde of oude gebruikersgegevensbestanden gevonden
-    en verplaatst %i. Ze worden verwijderd bij de volgende herlaad.'
   wwcConfigGUIPluginUpdateChatButton: Chat-herinnering verzenden voor updates van
     plug-ins
   wwcConfigConversationSendTranslationChatSuccess: Actieve vertaler chatherinnering
@@ -232,9 +230,6 @@ Messages:
     Standaard 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Raadpleeg errorLog.txt in de map WorldwideChat-plug-in
     voor meer informatie.
-  wwcConfigMaxResponseTimeInvalid: Ongeldige maximale responstijd ingesteld in config.yml.
-    Standaard 7 seconden...
-  wwcConfigMaxResponseTimeEnabled: Max. reactietijd ingesteld op %i seconden.
   wwctInvalidInputLangCode: 'Ongeldige invoertaalcode meegeleverd! Geldige lange codes:
     %o'
   wwcsTitle: Record van %i
@@ -288,23 +283,15 @@ Messages:
   wwcteOffTarget: Entiteitvertaling uitgeschakeld voor %i.
   wwcCharLimit: Je boodschap is te lang! Zorg ervoor dat je bericht minder dan %i
     tekens lang is.
-  wwcConfigConversationResponseLimitInput: De huidige reactietijd voor elke vertaler
-    is %i seconden. Typ iets groter dan 0 om een nieuwe waarde in te stellen, of typ
-    iets kleiner dan of gelijk aan 0 om terug te gaan.
   wwcConfigConversationCharacterLimitInput: De huidige tekenlimiet per bericht is
     %i tekens. Typ iets groter dan 0 om een nieuwe waarde in te stellen, of typ iets
     kleiner dan of gelijk aan 0 om terug te gaan.
   wwcteOffSender: Vertaling van entiteit is uitgeschakeld.
   wwctGUIEntityButton: Toggle Enty Translation
-  wwcConfigConversationResponseLimitSuccess: Time-out voor respons is succesvol ingesteld.
   wwctrlRateLimitBadInt: Je tarieflimiet is geen geldig geheel getal.
   wwcTranslatorErrorConsole: Er is een probleem opgetreden tijdens de vertaling van
     gebruiker %i. Raadpleeg errorLog.txt voor meer informatie.
-  wwctcOffSender: Chatvertaling is uitgeschakeld.
-  wwctcOnTarget: Chatvertaling is ingeschakeld voor %i.
-  wwctcOnSender: Chatvertaling ingeschakeld. Alles wat je zegt wordt vertaald!
   wwctGUIChatButton: Toggle Chat Vertaling
-  wwctcOffTarget: Chatvertaling is uitgeschakeld voor %i.
   wwcrBegin: WorldwideChat herladen...
   wwctTranslationStoppedOtherPlayer: De vertaalsessie voor %i is gestopt.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globale chat wordt vertaald,
@@ -325,3 +312,29 @@ Messages:
     vertaald, maar je hebt een actieve vertaalsessie naar %o.
   wwcConfigGUIChangesNotSaved: Uw wijzigingen worden pas van kracht als u op de rode
     barrière klikt in /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Mislukt vertaalchatbericht
+    is met succes geschakeld.
+  wwcConfigGUISendFailedTranslationChatButton: Chatbericht verzenden bij mislukte
+    vertaling
+  wwctciOffSender: Inkomende chatvertaling uitgeschakeld.
+  wwctGUIChatIncomingButton: Toggle Inkomende chatvertaling
+  wwctcoOffSender: Uitgaande chatvertaling uitgeschakeld.
+  wwctcoOnSender: Vertaling van uitgaande chat ingeschakeld. Alles wat je zegt wordt
+    vertaald!
+  wwctciOnSender: Inkomende chatvertaling ingeschakeld. Alles wat je ontvangt wordt
+    vertaald!
+  wwctGUIChatMenu: Toggle Chat - Vertaalmenu
+  wwctcoOnTarget: Vertaling van uitgaande chat ingeschakeld voor %i.
+  wwctcoOffTarget: Uitgaande chatvertaling uitgeschakeld voor %i.
+  wwctGUIChatOutgoingButton: Toggle uitgaande chat vertaling
+  wwctciOnTarget: Inkomende chatvertaling ingeschakeld voor %i.
+  wwctciOffTarget: Inkomende chatvertaling uitgeschakeld voor %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Originele inkomende chat
+    gekoppeld aan vertaling terwijl zweeftekst met succes is omgeschakeld.
+  wwcConfigGUISendIncomingHoverTextChatButton: Voeg originele inkomende berichten
+    toe als zweeftekst
+  wwctGUIExistingChatOutgoingEnabled: 'Vertaling van uitgaande chat ingeschakeld:
+    %i'
+  wwctGUIExistingTranslationInput: 'Invoertaal: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Inkomende chatvertaling ingeschakeld: %i'
+  wwctGUIExistingTranslationOutput: 'Uitvoertaal: %i'

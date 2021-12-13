@@ -62,8 +62,6 @@ Messages:
   wwctbOnSender: Boköversättning aktiverad. Högerklicka medan du håller en bok för
     att översätta den!
   wwcListenersInitialized: Initierade lyssnare.
-  wwcUserDataCorrupted: Hittade och flyttad %i skadade eller gamla användardatafiler.
-    De kommer att raderas vid nästa omladdning.
   wwcConfigGUIPluginUpdateChatButton: Skicka chattpåminnelse för plugin-uppdateringar
   wwcConfigConversationSendTranslationChatSuccess: Aktiv översättare chattpåminnelse
     har aktiverats.
@@ -230,9 +228,6 @@ Messages:
     till 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Kontrollera errorLog.txt i mappen WorldwideChat
     plugin för mer information.
-  wwcConfigMaxResponseTimeInvalid: Ogiltig maximal svarstid inställd i config.yml.
-    Defaulerar till 7 sekunder...
-  wwcConfigMaxResponseTimeEnabled: Maximal svarstid inställd på %i sekunder.
   wwctInvalidInputLangCode: 'Ogiltig språkkod för inmatning tillhandahålls! Giltiga
     langkoder: %o'
   wwcsTitle: Post av %i
@@ -286,23 +281,15 @@ Messages:
   wwcteOffTarget: Entitetsöversättning inaktiverad för %i.
   wwcCharLimit: Ditt meddelande är för långt! Se till att ditt meddelande är mindre
     än %i tecken.
-  wwcConfigConversationResponseLimitInput: Den aktuella tidsgränsen för svaren för
-    varje översättare är %i sekunder. Skriv något större än 0 om du vill ange ett
-    nytt värde, eller skriv något mindre än eller lika med 0 för att gå tillbaka.
   wwcConfigConversationCharacterLimitInput: Den aktuella teckengränsen per meddelande
     är %i-tecken. Skriv något större än 0 om du vill ange ett nytt värde, eller skriv
     något mindre än eller lika med 0 för att gå tillbaka.
   wwcteOffSender: Entitetsöversättning inaktiverad
   wwctGUIEntityButton: Växla entitetsöversättning
-  wwcConfigConversationResponseLimitSuccess: Tidsgräns för svar har ställts in.
   wwctrlRateLimitBadInt: Din prisgräns är inte ett giltigt heltal.
   wwcTranslatorErrorConsole: Ett problem uppstod när användare %i försökte översätta
     dem. Kontrollera errorLog.txt för mer information.
-  wwctcOffSender: Chatt översättning inaktiverad.
-  wwctcOnTarget: Översättning av chatt aktiverad för %i.
-  wwctcOnSender: Översättning av chatt aktiverad. Allt du säger kommer att översättas!
   wwctGUIChatButton: Växla Chat Översättning
-  wwctcOffTarget: Översättning av chatt inaktiverad för %i.
   wwcrBegin: Ladda om WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Översättningssession för %i har stoppats.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chatt översätts,
@@ -323,3 +310,29 @@ Messages:
     men du har en aktiv översättningssession till %o.
   wwcConfigGUIChangesNotSaved: Dina ändringar träder inte i kraft förrän du klickar
     på den röda barriären i /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Misslyckades översättningschattmeddelande
+    växlas med lyckat resultat.
+  wwcConfigGUISendFailedTranslationChatButton: Skicka chattmeddelande vid misslyckad
+    översättning
+  wwctciOffSender: Översättning av inkommande chatt inaktiverad.
+  wwctGUIChatIncomingButton: Växla översättning för inkommande chatt
+  wwctcoOffSender: Översättning av utgående chatt inaktiverad.
+  wwctcoOnSender: Översättning av utgående chatt aktiverad. Allt du säger kommer att
+    översättas!
+  wwctciOnSender: Översättning av inkommande chatt aktiverad. Allt du får kommer att
+    översättas!
+  wwctGUIChatMenu: Växla menyn för chattöversättning
+  wwctcoOnTarget: Översättning av utgående chatt aktiverad för %i.
+  wwctcoOffTarget: Översättning av utgående chatt inaktiverad för %i.
+  wwctGUIChatOutgoingButton: Växla översättning av utgående chatt
+  wwctciOnTarget: Översättning av inkommande chatt aktiverad för %i.
+  wwctciOffTarget: Översättning av inkommande chatt inaktiverad för %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Ursprunglig inkommande chatt
+    kopplad till översättning som hovrar text växlas med lyckat resultat.
+  wwcConfigGUISendIncomingHoverTextChatButton: Lägg till ursprungliga inkommande meddelanden
+    som hovrar text
+  wwctGUIExistingChatOutgoingEnabled: 'Översättning av utgående chatt aktiverad: %i'
+  wwctGUIExistingTranslationInput: 'Inmatningsspråk: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Översättning av inkommande chatt aktiverad:
+    %i'
+  wwctGUIExistingTranslationOutput: 'Utdataspråk: %i'

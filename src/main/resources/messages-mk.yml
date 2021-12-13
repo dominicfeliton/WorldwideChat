@@ -64,8 +64,6 @@ Messages:
   wwctbOnSender: Превод на книги е овозможено. Десен-клик додека држите книга за да
     ја преведете!
   wwcListenersInitialized: Иницијализирани слушатели.
-  wwcUserDataCorrupted: Пронајдени и се движи %i оштетени или стари кориснички датотеки
-    со податоци. Тие ќе бидат избришани на следниот Вчитај ја повторно.
   wwcConfigGUIPluginUpdateChatButton: Испрати потсетник за разговор за надградби на
   wwcConfigConversationSendTranslationChatSuccess: Активен потсетник за разговор со
     преведувач успешно се префрли.
@@ -239,9 +237,6 @@ Messages:
     Стандардно да 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Ве молиме проверете errorLog.txt во
     папката WorldwideChat приклучок за повеќе информации.
-  wwcConfigMaxResponseTimeInvalid: Невалидно максимално време на одговор поставено
-    во config.yml. Стандардно до 7 секунди...
-  wwcConfigMaxResponseTimeEnabled: Максимално време на одговор поставено на %i секунди.
   wwctInvalidInputLangCode: 'Невалиден код за внесување јазик обезбеден! Валидни кодови
     за ланг: %o'
   wwcsTitle: Рекорд на %i
@@ -294,23 +289,15 @@ Messages:
   wwcteOffTarget: Преводот на ентитет исклучен за %i
   wwcCharLimit: Вашата порака е премногу долга! Ве молиме проверете дали вашата порака
     е помала од %i карактери во должина.
-  wwcConfigConversationResponseLimitInput: Тековниот истек на одговор за секој преведувач
-    е %i секунди. Внесете нешто поголемо од 0 за да поставите нова вредност, или напишете
-    нешто помалку од или еднакво на 0 за да се вратите назад.
   wwcConfigConversationCharacterLimitInput: Тековната граница на знаци по порака е
     %i карактери. Внесете нешто поголемо од 0 за да поставите нова вредност, или напишете
     нешто помалку од или еднакво на 0 за да се вратите назад.
   wwcteOffSender: Ентитет превод оневозможен.
   wwctGUIEntityButton: Префрли ентитет Превод
-  wwcConfigConversationResponseLimitSuccess: Истек на одговор постави успешно.
   wwctrlRateLimitBadInt: Вашата стапка граница не е валиден цел број.
   wwcTranslatorErrorConsole: Проблем се појави додека корисник %i се обидуваше нивниот
     превод. Ве молиме проверете errorLog.txt за повеќе детали.
-  wwctcOffSender: Превод на разговор оневозможено.
-  wwctcOnTarget: Преводот на разговор е овозможен за %i.
-  wwctcOnSender: Превод на разговор е овозможено. Нешто што ќе кажете ќе биде преведено!
   wwctGUIChatButton: Вклучи разговор Превод
-  wwctcOffTarget: Преводот на разговор е исклучен за %i.
   wwcrBegin: Превчитување WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Преводната сесија за %i е запрена.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобалниот разговор се
@@ -331,3 +318,27 @@ Messages:
     се преведува, но имате активна сесија за превод на %o.
   wwcConfigGUIChangesNotSaved: Вашите промени нема да стапат на сила додека не кликнете
     на црвената бариера во/wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Не успеа превод разговор
+    порака успешно.
+  wwcConfigGUISendFailedTranslationChatButton: Испратете порака за разговор за неуспешен
+    превод
+  wwctciOffSender: Дојдовни разговор превод оневозможено.
+  wwctGUIChatIncomingButton: Вклучи дојдовни разговор превод
+  wwctcoOffSender: Појдовни разговор превод оневозможено.
+  wwctcoOnSender: Појдовен разговор превод овозможено. Нешто што ќе кажете ќе биде
+    преведено!
+  wwctciOnSender: Дојдовни разговор превод овозможено. Нешто ќе добиете ќе биде преведено!
+  wwctGUIChatMenu: Вклучи Мени за преведување на разговор
+  wwctcoOnTarget: Овозможен е појдовен разговор превод за %i.
+  wwctcoOffTarget: Појдовен разговор превод оневозможено за %i.
+  wwctGUIChatOutgoingButton: Вклучи појдовни разговор Превод
+  wwctciOnTarget: Вклучен е дојдовен разговор превод за %i.
+  wwctciOffTarget: Дојдовен разговор превод оневозможено за %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Оригинален дојдовни разговор
+    во прилог на превод како лебди текст toggled успешно.
+  wwcConfigGUISendIncomingHoverTextChatButton: Додајте оригинални дојдовни пораки
+    како текст на лебди
+  wwctGUIExistingChatOutgoingEnabled: 'Овозможено појдовен разговор Превод: %i'
+  wwctGUIExistingTranslationInput: 'Влезен јазик: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Дојдовен разговор Превод Овозможено: %i'
+  wwctGUIExistingTranslationOutput: 'Излезен јазик: %i'

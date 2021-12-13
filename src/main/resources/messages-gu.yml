@@ -61,8 +61,6 @@ Messages:
   wwctbOnSender: પુસ્તક અનુવાદ સક્ષમ. તેનું અનુવાદ કરવા માટે કોઈ પુસ્તક રાખતી વખતે
     જમણું-ક્લિક કરો!
   wwcListenersInitialized: પ્રારંભિક શ્રોતાઓ
-  wwcUserDataCorrupted: મળી અને ખસેડ %i દૂષિત અથવા જૂની વપરાશકર્તા ડેટા ફાઇલો. તેઓ
-    આગામી ફરીથી લોડ પર કાઢી નાખવામાં આવશે.
   wwcConfigGUIPluginUpdateChatButton: પ્લગઇન અપડેટ્સ માટે ચેટ રીમાઇન્ડર મોકલો
   wwcConfigConversationSendTranslationChatSuccess: સક્રિય અનુવાદક ચેટ રીમાઇન્ડર સફળતાપૂર્વક
     toggled.
@@ -226,9 +224,6 @@ Messages:
     માટે ડિફોલ્ટિંગ...
   wwcTranslatorErrorThresholdReachedCheckLogs: કૃપા કરીને વધુ માહિતી માટે WorldWidChat
     પ્લગઇન ફોલ્ડરમાં errorLog.txt તપાસો.
-  wwcConfigMaxResponseTimeInvalid: અમાન્ય મહત્તમ પ્રતિભાવ સમય config.yml માં સેટ.
-    7 સેકંડમાં ડિફોલ્ટિંગ...
-  wwcConfigMaxResponseTimeEnabled: મેક્સ પ્રતિભાવ સમય %i સેકન્ડ પર સેટ.
   wwctInvalidInputLangCode: 'અમાન્ય ઇનપુટ ભાષા કોડ પ્રદાન કરવામાં આવે છે! માન્ય લાંબા
     કોડ: %o'
   wwcsTitle: '%i નો રેકોર્ડ'
@@ -282,23 +277,15 @@ Messages:
   wwcteOffTarget: એન્ટિટી અનુવાદ %i માટે અક્ષમ છે.
   wwcCharLimit: તમારો સંદેશ ખૂબ લાંબો છે! કૃપા કરીને ખાતરી કરો કે તમારો સંદેશ લંબાઈ
     %i અક્ષરો કરતા ઓછો છે.
-  wwcConfigConversationResponseLimitInput: દરેક અનુવાદક માટે વર્તમાન પ્રતિસાદ સમયસમાપ્તિ
-    %i સેકંડ છે. નવું મૂલ્ય સેટ કરવા માટે 0 કરતા વધારે કંઈપણ લખો, અથવા પાછા જવા માટે
-    0 કરતા ઓછું અથવા બરાબર કંઈપણ લખો.
   wwcConfigConversationCharacterLimitInput: સંદેશ દીઠ વર્તમાન અક્ષર મર્યાદા %i અક્ષરો
     છે. નવું મૂલ્ય સેટ કરવા માટે 0 કરતા વધારે કંઈપણ લખો, અથવા પાછા જવા માટે 0 કરતા
     ઓછું અથવા બરાબર કંઈપણ લખો.
   wwcteOffSender: એન્ટિટી અનુવાદ અક્ષમ.
   wwctGUIEntityButton: ટૉગલ અનુવાદ એન્ટિટી
-  wwcConfigConversationResponseLimitSuccess: પ્રતિભાવ સમયસમાપ્તિ સફળતાપૂર્વક સેટ.
   wwctrlRateLimitBadInt: તમારી દર મર્યાદા માન્ય પૂર્ણાંક નથી.
   wwcTranslatorErrorConsole: વપરાશકર્તા %i તેમના અનુવાદનો પ્રયાસ કરી રહ્યો હતો ત્યારે
     એક સમસ્યા આવી. વધુ વિગતો માટે કૃપા કરીને errorLog.txt તપાસો.
-  wwctcOffSender: ચેટ અનુવાદ અક્ષમ.
-  wwctcOnTarget: ચેટ અનુવાદ સક્ષમ કરો %i માટે.
-  wwctcOnSender: ચેટ અનુવાદ સક્ષમ. તમે કહો છો તે કંઈપણ ભાષાંતર કરવામાં આવશે!
   wwctGUIChatButton: ટૉગલ અનુવાદ ચેટ
-  wwctcOffTarget: ચેટ અનુવાદ અક્ષમ કરો %i માટે.
   wwcrBegin: વર્લ્ડવાઇડચેટ ફરીથી લોડ કરી રહ્યું છે...
   wwctTranslationStoppedOtherPlayer: '%i માટે અનુવાદ સત્ર બંધ કરવામાં આવ્યું છે.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: વૈશ્વિક ચેટનું ભાષાંતર
@@ -317,3 +304,27 @@ Messages:
     થઈ રહ્યું છે, પરંતુ તમારા %o નું સક્રિય અનુવાદ સત્ર છે.
   wwcConfigGUIChangesNotSaved: જ્યાં સુધી તમે /wwccમાં લાલ અવરોધ પર ક્લિક ન કરો ત્યાં
     સુધી તમારા ફેરફારો પ્રભાવિત થશે નહીં.
+  wwcConfigConversationSendFailedTranslationChatSuccess: નિષ્ફળ અનુવાદ ચેટ સંદેશ સફળતાપૂર્વક
+    ટૉગલ કર્યો.
+  wwcConfigGUISendFailedTranslationChatButton: નિષ્ફળ અનુવાદ પર ચેટ સંદેશ મોકલો
+  wwctciOffSender: ઇનકમિંગ ચેટનું ભાષાંતર અક્ષમ કર્યું.
+  wwctGUIChatIncomingButton: ઇનકમિંગ ચેટ અનુવાદ ટૉગલ
+  wwctcoOffSender: આઉટગોઇંગ ચેટનું ભાષાંતર અક્ષમ કર્યું.
+  wwctcoOnSender: આઉટગોઇંગ ચેટ અનુવાદ સક્ષમ. તમે કહો છો તે કંઈપણ અનુવાદિત કરવામાં
+    આવશે!
+  wwctciOnSender: ઇનકમિંગ ચેટ અનુવાદ સક્ષમ છે. તમે પ્રાપ્ત કરો છો તે કંઈપણ અનુવાદિત
+    કરવામાં આવશે!
+  wwctGUIChatMenu: ટૉગલ ચેટ અનુવાદ મેનુ
+  wwctcoOnTarget: આઉટગોઇંગ ચેટનું ભાષાંતર %i માટે સક્ષમ કર્યું.
+  wwctcoOffTarget: આઉટગોઇંગ ચેટનું ભાષાંતર %i માટે અક્ષમ કર્યું છે.
+  wwctGUIChatOutgoingButton: ટૉગલ આઉટગોઇંગ ચેટ અનુવાદ
+  wwctciOnTarget: '%i માટે ઇનકમિંગ ચેટ અનુવાદને સક્ષમ કર્યું.'
+  wwctciOffTarget: આવતા %i માટે ચેટનું ભાષાંતર અક્ષમ કર્યું છે.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: મૂળ ઇનકમિંગ ચેટ ભાષાંતર સાથે
+    જોડાયેલ છે કારણ કે હોવર ટેક્સ્ટ સફળતાપૂર્વક ટૉગલ કરે છે.
+  wwcConfigGUISendIncomingHoverTextChatButton: મૂળ ઇનકમિંગ સંદેશાઓ હોવર ટેક્સ્ટ તરીકે
+    ઉમેરો
+  wwctGUIExistingChatOutgoingEnabled: 'આઉટગોઇંગ ચેટ અનુવાદ સક્ષમ: %i'
+  wwctGUIExistingTranslationInput: 'ઇનપુટ ભાષા: %i'
+  wwctGUIExistingChatIncomingEnabled: 'ઇનકમિંગ ચેટ અનુવાદ સક્ષમ: %i'
+  wwctGUIExistingTranslationOutput: 'આઉટપુટ ભાષા: %i'

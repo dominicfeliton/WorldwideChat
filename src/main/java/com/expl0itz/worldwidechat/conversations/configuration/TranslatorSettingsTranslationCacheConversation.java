@@ -16,13 +16,13 @@ import net.md_5.bungee.api.ChatColor;
 
 public class TranslatorSettingsTranslationCacheConversation extends NumericPrompt {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	@Override
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		((Player) context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationTranslationCacheInput", new String[] {"" + main.getTranslatorCacheLimit()});
+		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationTranslationCacheInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize")});
 	}
 
 	@Override

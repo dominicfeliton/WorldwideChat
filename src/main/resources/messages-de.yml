@@ -68,8 +68,6 @@ Messages:
   wwctbOnSender: Buchübersetzung ist aktiviert. Klicken Sie mit der rechten Maustaste,
     während Sie ein Buch halten, um
   wwcListenersInitialized: Initialisierte Zuhörer.
-  wwcUserDataCorrupted: '%i beschädigte oder alte Benutzerdatendateien gefunden und
-    verschoben. Sie werden beim nächsten Reload gelöscht.'
   wwcConfigGUIPluginUpdateChatButton: Chat-Erinnerung für Plugin-Updates senden
   wwcConfigConversationSendTranslationChatSuccess: Aktive Übersetzer-Chat-Erinnerung
     wurde erfolgreich umgeschaltet.
@@ -248,10 +246,6 @@ Messages:
     festgelegt wurde. Standardmäßig 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Weitere Informationen finden Sie in
     errorLog.txt im WorldwideChat-Plugin-Ordner.
-  wwcConfigMaxResponseTimeInvalid: Ungültige maximale Reaktionszeit, die in config.yml
-    festgelegt wurde. Standardmäßig 7 Sekunden...
-  wwcConfigMaxResponseTimeEnabled: Die maximale Reaktionszeit ist auf %i Sekunden
-    eingestellt.
   wwctInvalidInputLangCode: 'Ungültiger Code für Eingabesprache Gültige Lang-Codes:
     %o'
   wwcsTitle: Datensatz von %i
@@ -309,24 +303,15 @@ Messages:
   wwcteOffTarget: Die Entitätsübersetzung wurde für %i deaktiviert.
   wwcCharLimit: Ihre Nachricht ist zu lang! Bitte stellen Sie sicher, dass Ihre Nachricht
     weniger als %i Zeichen lang ist.
-  wwcConfigConversationResponseLimitInput: Das aktuelle Antwort-Timeout für jeden
-    Übersetzer beträgt %i Sekunden. Geben Sie etwas größer als 0 ein, um einen neuen
-    Wert festzulegen, oder geben Sie etwas kleiner oder gleich 0 ein, um zurückzukehren.
   wwcConfigConversationCharacterLimitInput: Die aktuelle Zeichenbeschränkung pro Nachricht
     beträgt %i Zeichen. Geben Sie etwas größer als 0 ein, um einen neuen Wert festzulegen,
     oder geben Sie etwas kleiner oder gleich 0 ein, um zurückzukehren.
   wwcteOffSender: Entitätsübersetzung ist deaktiviert
   wwctGUIEntityButton: Entitätsübersetzung umschalten
-  wwcConfigConversationResponseLimitSuccess: Das Antwort-Timeout wurde erfolgreich
-    eingestellt.
   wwctrlRateLimitBadInt: Ihr Ratenlimit ist keine gültige Ganzzahl.
   wwcTranslatorErrorConsole: Während der Benutzer %i seine Übersetzung versuchte,
     ist ein Problem aufgetreten. Bitte überprüfen Sie errorLog.txt für weitere Details.
-  wwctcOffSender: Chat-Übersetzung ist deaktiviert.
-  wwctcOnTarget: Chat-Übersetzung ist für %i aktiviert.
-  wwctcOnSender: Chat-Übersetzung aktiviert. Alles was du sagst wird übersetzt!
   wwctGUIChatButton: Chat-Übersetzung umschalten
-  wwctcOffTarget: Die Chat-Übersetzung wurde für %i deaktiviert.
   wwcrBegin: WorldwideChat neu laden...
   wwctTranslationStoppedOtherPlayer: Die Übersetzungssitzung für %i wurde beendet.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Der globale Chat wird
@@ -348,3 +333,28 @@ Messages:
     übersetzt, aber Sie haben eine aktive Übersetzungssitzung nach %o.
   wwcConfigGUIChangesNotSaved: Ihre Änderungen werden erst wirksam, wenn Sie in /wwcc
     auf die rote Barriere klicken.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Fehlgeschlagene Übersetzung
+    der Chat-Nachricht wurde erfolgreich umgeschaltet.
+  wwcConfigGUISendFailedTranslationChatButton: Chat-Nachricht bei fehlgeschlagener
+    Übersetzung senden
+  wwctciOffSender: Eingehende Chat-Übersetzung ist deaktiviert.
+  wwctGUIChatIncomingButton: Eingehende Chat-Übersetzung umschalten
+  wwctcoOffSender: Übersetzung ausgehender Chats ist deaktiviert.
+  wwctcoOnSender: Die Übersetzung ausgehender Chats ist aktiviert. Alles was du sagst
+    wird übersetzt!
+  wwctciOnSender: Die Übersetzung eingehender Chats ist aktiviert. Alles, was du erhältst,
+    wird übersetzt!
+  wwctGUIChatMenu: Chat-Übersetzungsmenü umschalten
+  wwctcoOnTarget: Die Übersetzung des ausgehenden Chats ist für %i aktiviert.
+  wwctcoOffTarget: Die Übersetzung ausgehender Chats wurde für %i deaktiviert.
+  wwctGUIChatOutgoingButton: Ausgehende Chat-Übersetzung umschalten
+  wwctciOnTarget: Die Übersetzung eingehender Chats ist für %i aktiviert.
+  wwctciOffTarget: Die Übersetzung eingehender Chats wurde für %i deaktiviert.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Ursprünglicher eingehender
+    Chat, der an die Übersetzung angehängt wurde, da der Hover-Text
+  wwcConfigGUISendIncomingHoverTextChatButton: Ursprüngliche eingehende Nachrichten
+    als Hover-Text hinzufügen
+  wwctGUIExistingChatOutgoingEnabled: 'Ausgehende Chat-Übersetzung aktiviert: %i'
+  wwctGUIExistingTranslationInput: 'Eingabesprache: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Eingehende Chat-Übersetzung aktiviert: %i'
+  wwctGUIExistingTranslationOutput: 'Ausgabesprache: %i'

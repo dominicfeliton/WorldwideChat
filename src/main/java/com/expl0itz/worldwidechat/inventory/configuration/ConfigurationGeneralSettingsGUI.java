@@ -25,11 +25,11 @@ import net.kyori.adventure.text.format.NamedTextColor;
 
 public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	public static final SmartInventory generalSettings = SmartInventory.builder().id("generalSettingsMenu")
 			.provider(new ConfigurationGeneralSettingsGUI()).size(3, 9)
-			.manager(WorldwideChat.getInstance().getInventoryManager())
+			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIGeneralSettings"))
 			.build();
 
@@ -116,7 +116,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 	
 	private void bStatsButton(Player player, InventoryContents contents) {
 		ItemStack bStatsButton = XMaterial.BEDROCK.parseItem();
-		if (main.getbStats()) {
+		if (main.getConfigManager().getMainConfig().getBoolean("General.enablebStats")) {
 			bStatsButton = XMaterial.EMERALD_BLOCK.parseItem();
 		} else {
 			bStatsButton = XMaterial.REDSTONE_BLOCK.parseItem();
@@ -129,7 +129,6 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			main.addPlayerUsingConfigurationGUI(player);
 			main.getConfigManager().getMainConfig().set("General.enablebStats",
 					!(main.getConfigManager().getMainConfig().getBoolean("General.enablebStats")));
-			main.setbStats(!main.getbStats());
 			final TextComponent successfulChange = Component.text()
 					.append(Component.text()
 							.content(CommonDefinitions.getMessage("wwcConfigConversationbStatsSuccess"))
@@ -142,7 +141,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 	
 	private void debugModeButton(Player player, InventoryContents contents) {
 		ItemStack debugModeButton = XMaterial.BEDROCK.parseItem();
-		if (main.getDebugMode()) {
+		if (main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
 			debugModeButton = XMaterial.EMERALD_BLOCK.parseItem();
 		} else {
 			debugModeButton = XMaterial.REDSTONE_BLOCK.parseItem();
@@ -153,9 +152,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 		debugModeButton.setItemMeta(debugModeMeta);
 		contents.set(1, 6, ClickableItem.of(debugModeButton, e -> {
 			main.addPlayerUsingConfigurationGUI(player);
-			main.getConfigManager().getMainConfig().set("General.enableDebugMode",
-					!(main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")));
-			main.setDebugMode(!main.getDebugMode());
+			main.getConfigManager().getMainConfig().set("General.enableDebugMode", !(main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")));
 			final TextComponent successfulChange = Component.text()
 					.append(Component.text()
 							.content(CommonDefinitions.getMessage("wwcConfigConversationDebugModeSuccess"))

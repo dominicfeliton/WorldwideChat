@@ -24,11 +24,11 @@ import fr.minuskube.inv.content.SlotIterator;
 
 public class ConfigurationMessagesOverrideCurrentListGUI implements InventoryProvider {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 	
 	public static final SmartInventory overrideMessagesSettings = SmartInventory.builder().id("overrideMessagesMenu")
 			.provider(new ConfigurationMessagesOverrideCurrentListGUI()).size(6, 9)
-			.manager(WorldwideChat.getInstance().getInventoryManager())
+			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatMessagesOverrideSettings"))
 	        .build();
 	

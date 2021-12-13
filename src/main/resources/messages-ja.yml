@@ -52,7 +52,6 @@ Messages:
   wwcgLangToLangStart: グローバルチャットを %iから %oに翻訳しています。
   wwctbOnSender: 本の翻訳が有効になりました。本を押しながら右クリックすると翻訳できます！
   wwcListenersInitialized: 初期化されたリスナー。
-  wwcUserDataCorrupted: '%i 破損または古いユーザーデータファイルを見つけて移動しました。次のリロード時に削除されます。'
   wwcConfigGUIPluginUpdateChatButton: プラグインの更新についてチャットリマインダーを送信
   wwcConfigConversationSendTranslationChatSuccess: 有効な翻訳者のチャットリマインダーが正常に切り替えられました。
   wwctsOffTarget: '%i の署名変換は無効です。'
@@ -184,8 +183,6 @@ Messages:
   wwcConfigErrorLimitInvalid: config.yml に設定されたトランスレータエラー制限が無効です。デフォルトは 5 に設定されています...
   wwcTranslatorErrorThresholdReachedCheckLogs: 詳細については、WorldwideChat プラグインフォルダの errorLog.txt
     をチェックしてください。
-  wwcConfigMaxResponseTimeInvalid: config.yml に設定された最大応答時間が無効です。デフォルトで 7 秒...
-  wwcConfigMaxResponseTimeEnabled: 最大応答時間は %i 秒に設定されています。
   wwctInvalidInputLangCode: '無効な入力言語コードが提供されました。有効なラングコード: %o'
   wwcsTitle: '%i のレコード'
   wwctInvalidOutputLangCode: '無効な出力言語コードが提供されました。有効なラングコード: %o'
@@ -227,20 +224,13 @@ Messages:
   wwcConfigMessageCharLimitEnabled: メッセージあたりの文字数の制限は %i 文字に設定されています。
   wwcteOffTarget: '%i のエンティティ変換は無効です。'
   wwcCharLimit: あなたのメッセージは長すぎます！メッセージの長さが %i 文字未満であることを確認してください。
-  wwcConfigConversationResponseLimitInput: 各トランスレータの現在の応答タイムアウトは %i 秒です。0 より大きい値を入力して新しい値を設定するか、0
-    以下の値を入力して戻ります。
   wwcConfigConversationCharacterLimitInput: 現在のメッセージあたりの文字数の制限は %i 文字です。0 より大きい値を入力して新しい値を設定するか、0
     以下の値を入力して戻ります。
   wwcteOffSender: エンティティ変換が無効になっています。
   wwctGUIEntityButton: エンティティ変換の切り替え
-  wwcConfigConversationResponseLimitSuccess: レスポンスタイムアウトが正常に設定されました。
   wwctrlRateLimitBadInt: レートリミットは有効な整数ではありません。
   wwcTranslatorErrorConsole: ユーザー %i が翻訳を試みているときに問題が発生しました。詳細については errorLog.txt を確認してください。
-  wwctcOffSender: チャット翻訳が無効になっています。
-  wwctcOnTarget: '%i のチャット翻訳が有効になりました。'
-  wwctcOnSender: チャット翻訳が有効になっています。おまえの言うことは何でも翻訳される！
   wwctGUIChatButton: チャット翻訳の切り替え
-  wwctcOffTarget: '%i のチャット翻訳は無効です。'
   wwcrBegin: ワールドワイドチャットをリロード中...
   wwctTranslationStoppedOtherPlayer: '%i の変換セッションが停止しました。'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: グローバルチャットは翻訳中ですが、 %i から
@@ -256,3 +246,22 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: グローバルチャットは翻訳中ですが、 %o
     へのアクティブな翻訳セッションがあります。
   wwcConfigGUIChangesNotSaved: 変更内容は /wwcc の赤いバリアをクリックするまで有効になりません。
+  wwcConfigConversationSendFailedTranslationChatSuccess: 翻訳に失敗したチャットメッセージは正常に切り替わりました。
+  wwcConfigGUISendFailedTranslationChatButton: 翻訳失敗時にチャットメッセージを送信する
+  wwctciOffSender: 着信チャットの翻訳が無効になりました。
+  wwctGUIChatIncomingButton: 着信チャット翻訳の切り替え
+  wwctcoOffSender: 発信チャットの翻訳が無効になりました。
+  wwctcoOnSender: 発信チャットの翻訳が有効になりました。あなたの言うことは何でも翻訳されるでしょう！
+  wwctciOnSender: 着信チャットの翻訳が有効になりました。受け取ったものはすべて翻訳されます！
+  wwctGUIChatMenu: チャット翻訳メニューを切り替え
+  wwctcoOnTarget: '%i の発信チャット翻訳が有効になりました。'
+  wwctcoOffTarget: '%i の発信チャット翻訳は無効になっています。'
+  wwctGUIChatOutgoingButton: 発信チャット翻訳の切り替え
+  wwctciOnTarget: '%i の着信チャット翻訳が有効になりました。'
+  wwctciOffTarget: '%i の着信チャット翻訳は無効になっています。'
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: ホバーテキストとして翻訳に添付された元の着信チャットが正常に切り替えられました。
+  wwcConfigGUISendIncomingHoverTextChatButton: 元の受信メッセージをホバーテキストとして追加
+  wwctGUIExistingChatOutgoingEnabled: '発信チャット翻訳有効: %i'
+  wwctGUIExistingTranslationInput: '入力言語: %i'
+  wwctGUIExistingChatIncomingEnabled: '着信チャット翻訳有効: %i'
+  wwctGUIExistingTranslationOutput: '出力言語: %i'

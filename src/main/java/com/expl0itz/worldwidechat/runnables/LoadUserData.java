@@ -1,10 +1,11 @@
 package com.expl0itz.worldwidechat.runnables;
 
 import java.io.File;
-import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.UnsupportedEncodingException;
 
 import org.bukkit.ChatColor;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.threeten.bp.Instant;
 
@@ -12,11 +13,10 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
-import com.google.common.io.Files;
 
 public class LoadUserData implements Runnable {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	@Override
 	public void run() {
@@ -24,41 +24,27 @@ public class LoadUserData implements Runnable {
 		CommonDefinitions.sendDebugMessage("Starting LoadUserData!!!");
 		File userDataFolder = new File(main.getDataFolder() + File.separator + "data" + File.separator);
 		File statsFolder = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
-		File badDataFolder = new File(main.getDataFolder() + File.separator + "corrupted" + File.separator);
-		badDataFolder.mkdir();
 		userDataFolder.mkdir();
 		statsFolder.mkdir();
-
-		/* Prepare add each file to Translator Array in main class */
-		int invalidConfigs = 0;
-
-		/* Delete old corrupted files */
-		for (File eaCorrupt : badDataFolder.listFiles()) {
-			eaCorrupt.delete();
-		}
 
 		/* Load user records (/wwcs) */
 		CommonDefinitions.sendDebugMessage("Loading user records or /wwcs...");
 		for (File eaFile : statsFolder.listFiles()) {
-			FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
-			if (currFileConfig.isInt("attemptedTranslations") && currFileConfig.isInt("successfulTranslations")
-					&& currFileConfig.isString("lastTranslationTime")) {
-				PlayerRecord currRecord = new PlayerRecord(currFileConfig.getString("lastTranslationTime"),
-						eaFile.getName().substring(0, eaFile.getName().indexOf(".")),
-						currFileConfig.getInt("attemptedTranslations"),
-						currFileConfig.getInt("successfulTranslations"));
-				currRecord.setHasBeenSaved(true);
-				main.addPlayerRecord(currRecord);
-			} else { // move corrupted files to corrupted dir; they will be deleted on next run
-				try {
-					File badDataFile = new File(
-							badDataFolder.toString() + File.separator + eaFile.getName().toString());
-					Files.move(eaFile, badDataFile);
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-				invalidConfigs++;
+			YamlConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
+			try {
+				Reader currConfigStream = new InputStreamReader(main.getResource("default-player-record.yml"), "UTF-8");
+				currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
+			} catch (UnsupportedEncodingException e) {
+				e.printStackTrace();
 			}
+			currFileConfig.options().copyDefaults(true);
+			main.getConfigManager().saveCustomConfig(currFileConfig, eaFile, false);
+			PlayerRecord currRecord = new PlayerRecord(currFileConfig.getString("lastTranslationTime"),
+					eaFile.getName().substring(0, eaFile.getName().indexOf(".")),
+					currFileConfig.getInt("attemptedTranslations"),
+					currFileConfig.getInt("successfulTranslations"));
+			currRecord.setHasBeenSaved(true);
+			main.addPlayerRecord(currRecord);
 		}
 
 		/* If translator settings are invalid, do not do anything else... */
@@ -69,41 +55,39 @@ public class LoadUserData implements Runnable {
 		/* Load user files (last translation session, etc.) */
 		CommonDefinitions.sendDebugMessage("Loading user data or /wwct...");
 		for (File eaFile : userDataFolder.listFiles()) {
-			FileConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
-			if ((currFileConfig.getString("inLang").equalsIgnoreCase("None") || !CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("inLang")).getLangCode().equals("")
-					&& (!CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("outLang")).getLangCode().equals("")))
-					&& currFileConfig.isBoolean("signTranslation") && currFileConfig.isBoolean("bookTranslation")
-					&& currFileConfig.isBoolean("itemTranslation") && currFileConfig.isBoolean("entityTranslation") 
-					&& currFileConfig.isBoolean("chatTranslation")
-					&& currFileConfig.isInt("rateLimit") && currFileConfig.isString("rateLimitPreviousRecordedTime")) { // If file has proper entries
-				ActiveTranslator currentTranslator = new ActiveTranslator(
-						eaFile.getName().substring(0, eaFile.getName().indexOf(".")), // add active translator to arraylist
-						currFileConfig.getString("inLang"), currFileConfig.getString("outLang"));
-				currentTranslator.setTranslatingSign(currFileConfig.getBoolean("signTranslation"));
-				currentTranslator.setTranslatingBook(currFileConfig.getBoolean("bookTranslation"));
-				currentTranslator.setTranslatingItem(currFileConfig.getBoolean("itemTranslation"));
-				currentTranslator.setTranslatingEntity(currFileConfig.getBoolean("entityTranslation"));
-				currentTranslator.setTranslatingChat(currFileConfig.getBoolean("chatTranslation"));
-				currentTranslator.setRateLimit(currFileConfig.getInt("rateLimit"));
-				if (!currFileConfig.getString("rateLimitPreviousRecordedTime").equals("None")) {
-					currentTranslator.setRateLimitPreviousTime(
-							Instant.parse(currFileConfig.getString("rateLimitPreviousRecordedTime")));
-				}
-				currentTranslator.setHasBeenSaved(true);
-				main.addActiveTranslator(currentTranslator);
-			} else { // move corrupted or old files to corrupted dir; they will be deleted on next run
-				try {
-					File badDataFile = new File(
-							badDataFolder.toString() + File.separator + eaFile.getName().toString());
-					Files.move(eaFile, badDataFile);
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-				invalidConfigs++;
+			YamlConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
+			try {
+				Reader currConfigStream = new InputStreamReader(main.getResource("default-active-translator.yml"), "UTF-8");
+				currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
+			} catch (UnsupportedEncodingException e) {
+				e.printStackTrace();
 			}
-		}
-		if (invalidConfigs > 0) {
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcUserDataCorrupted", new String[] {invalidConfigs + ""}));
+			currFileConfig.options().copyDefaults(true);
+			/* Hopefully temporary check that disables use of none with Amazon Translate until we find a workaround */
+			if ((!currFileConfig.getString("inLang").equalsIgnoreCase("None") && CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("inLang")).getLangCode().equals(""))
+					|| (currFileConfig.getString("inLang").equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
+				currFileConfig.set("inLang", "en");
+			}
+			if (CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("outLang")).getLangCode().equals("")) {
+				currFileConfig.set("outLang", "es");
+			}
+			main.getConfigManager().saveCustomConfig(currFileConfig, eaFile, false);
+			ActiveTranslator currentTranslator = new ActiveTranslator(
+					eaFile.getName().substring(0, eaFile.getName().indexOf(".")), // add active translator to arraylist
+					currFileConfig.getString("inLang"), currFileConfig.getString("outLang"));
+			currentTranslator.setTranslatingSign(currFileConfig.getBoolean("signTranslation"));
+			currentTranslator.setTranslatingBook(currFileConfig.getBoolean("bookTranslation"));
+			currentTranslator.setTranslatingItem(currFileConfig.getBoolean("itemTranslation"));
+			currentTranslator.setTranslatingEntity(currFileConfig.getBoolean("entityTranslation"));
+			currentTranslator.setTranslatingChatOutgoing(currFileConfig.getBoolean("chatTranslationOutgoing"));
+			currentTranslator.setTranslatingChatIncoming(currFileConfig.getBoolean("chatTranslationIncoming"));
+			currentTranslator.setRateLimit(currFileConfig.getInt("rateLimit"));
+			if (!currFileConfig.getString("rateLimitPreviousRecordedTime").equals("None")) {
+				currentTranslator.setRateLimitPreviousTime(
+						Instant.parse(currFileConfig.getString("rateLimitPreviousRecordedTime")));
+			}
+			currentTranslator.setHasBeenSaved(true);
+			main.addActiveTranslator(currentTranslator);
 		}
 		main.getLogger().info(ChatColor.LIGHT_PURPLE
 				+ CommonDefinitions.getMessage("wwcUserDataReloaded"));

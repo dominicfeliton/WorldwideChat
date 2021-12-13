@@ -57,8 +57,6 @@ Messages:
   wwcgLangToLangStart: כעת מתרגם צ'אט גלובלי מ %i אל %o.
   wwctbOnSender: תרגום ספרים מופעל. לחץ לחיצה ימנית תוך החזקת ספר לתרגם אותו!
   wwcListenersInitialized: מאזינים אותחלו.
-  wwcUserDataCorrupted: נמצאו והעברה %i פגומים או קבצי נתוני משתמש ישנים. הם יימחקו
-    על הטעינה הבאה.
   wwcConfigGUIPluginUpdateChatButton: שלח תזכורת צ'אט עבור עדכוני פלאגין
   wwcConfigConversationSendTranslationChatSuccess: תזכורת צ'אט מתרגם פעיל בהצלחה.
   wwctsOffTarget: תרגום כניסה מושבת עבור %i.
@@ -207,9 +205,6 @@ Messages:
     מחדל ל 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: לקבלת מידע נוסף, בדוק את errorLog.txt
     בתיקיית התוספים WorldwideChat.
-  wwcConfigMaxResponseTimeInvalid: זמן תגובה מרבי לא חוקי מוגדר ב- config.yml. ברירת
-    מחדל ל-7 שניות...
-  wwcConfigMaxResponseTimeEnabled: זמן תגובה מרבי מוגדר אל %i שניות.
   wwctInvalidInputLangCode: 'קוד שפת קלט לא חוקי מסופק! קודי lang תקפים: %o'
   wwcsTitle: רשומה של %i
   wwctInvalidOutputLangCode: 'קוד שפת פלט לא חוקי מסופק! קודי lang תקפים: %o'
@@ -255,23 +250,15 @@ Messages:
   wwcConfigMessageCharLimitEnabled: מגבלת תווים לכל הודעה שהוגדרה לתווי %i.
   wwcteOffTarget: תרגום היישות מושבת עבור %i.
   wwcCharLimit: המסר שלך ארוך מדי! אנא ודא שההודעה שלך היא פחות מ- %i תווים באורך.
-  wwcConfigConversationResponseLimitInput: הזמן הקצוב לתגובה הנוכחי עבור כל מתרגם
-    הוא %i שניות. הקלד כל דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד כל דבר קטן מ-
-    0 או שווה ל- 0 כדי לחזור אחורה.
   wwcConfigConversationCharacterLimitInput: מגבלת התווים הנוכחית לכל הודעה היא תווי
     %i. הקלד כל דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד כל דבר קטן מ- 0 או שווה
     ל- 0 כדי לחזור אחורה.
   wwcteOffSender: תרגום הישות מושבת.
   wwctGUIEntityButton: החלפת תרגום ישות
-  wwcConfigConversationResponseLimitSuccess: זמן קצוב לתגובה נקבע בהצלחה.
   wwctrlRateLimitBadInt: מגבלת התעריף אינה מספר שלם חוקי.
   wwcTranslatorErrorConsole: אירעה בעיה בזמן שהמשתמש %i ניסה את התרגום שלהם. אנא בדוק
     errorLog.txt לפרטים נוספים.
-  wwctcOffSender: תרגום צ'אט מושבת.
-  wwctcOnTarget: תרגום צ'אט מופעל עבור %i.
-  wwctcOnSender: תרגום צ'אט מופעל. כל מה שתגיד יתורגם!
   wwctGUIChatButton: החלף תרגום צ'אט
-  wwctcOffTarget: תרגום צ'אט מושבת עבור %i.
   wwcrBegin: טוען מחדש את וורלד-ווידצ...
   wwctTranslationStoppedOtherPlayer: הפעלת התרגום עבור %i הופסקה.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: צ'אט גלובלי מתורגם, אבל
@@ -288,3 +275,24 @@ Messages:
     אבל יש לך הפעלת תרגום פעילה אל %o.
   wwcConfigGUIChangesNotSaved: השינויים שלך לא ייכנסו לתוקף עד שתלחץ על המכשול האדום
     ב- /wcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: הודעת צ'אט התרגום נכשלה הועברה
+    בהצלחה.
+  wwcConfigGUISendFailedTranslationChatButton: שלח הודעת צ'אט בתרגום כושל
+  wwctciOffSender: תרגום צ'אט נכנס מושבת.
+  wwctGUIChatIncomingButton: החלפת תרגום צ'אט נכנס
+  wwctcoOffSender: תרגום צ'אט יוצא מושבת.
+  wwctcoOnSender: תרגום צ'אט יוצא מופעל. כל מה שתגיד יתורגם!
+  wwctciOnSender: תרגום צ'אט נכנס מופעל. כל דבר שתקבלו יתורגם!
+  wwctGUIChatMenu: החלפת תפריט תרגום צ'אט
+  wwctcoOnTarget: תרגום צ'אט יוצא מופעל עבור %i.
+  wwctcoOffTarget: תרגום צ'אט יוצא מושבת עבור %i.
+  wwctGUIChatOutgoingButton: החלפת תרגום צ'אט יוצא
+  wwctciOnTarget: תרגום צ'אט נכנס מופעל עבור %i.
+  wwctciOffTarget: תרגום צ'אט נכנס מושבת עבור %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: צ'אט נכנס מקורי המצורף לתרגום
+    כטקסט לרחף הועבר בהצלחה.
+  wwcConfigGUISendIncomingHoverTextChatButton: הוספת הודעות נכנסות מקוריות כטקסט לרחף
+  wwctGUIExistingChatOutgoingEnabled: 'תרגום צ''אט יוצא מופעל: %i'
+  wwctGUIExistingTranslationInput: 'שפת קלט: %i'
+  wwctGUIExistingChatIncomingEnabled: 'תרגום צ''אט נכנס מופעל: %i'
+  wwctGUIExistingTranslationOutput: 'שפת פלט: %i'

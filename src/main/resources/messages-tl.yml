@@ -66,8 +66,6 @@ Messages:
   wwctbOnSender: Pinagana ang pagsasalin ng aklat. Mag-right-click habang may hawak
     na isang libro upang isalin ito!
   wwcListenersInitialized: Pinasimulan ng mga tagapakinig.
-  wwcUserDataCorrupted: Natagpuan at inilipat ang %i na napinsala o lumang mga talaksang
-    datos ng tagagamit. Tatanggalin ang mga ito sa susunod na reload.
   wwcConfigGUIPluginUpdateChatButton: Magpadala ng Paalala para sa Mga Update ng Plugin
   wwcConfigConversationSendTranslationChatSuccess: Aktibong tagasalin chat paalala
     toggled matagumpay.
@@ -247,10 +245,6 @@ Messages:
     sa config.yml. Default sa 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Mangyaring suriin ang errorLog.txt
     sa folder ng WorldwideChat plugin para sa karagdagang impormasyon.
-  wwcConfigMaxResponseTimeInvalid: Di-wastong max na oras ng pagtugon na itinakda
-    sa config.yml. Default sa 7 segundo...
-  wwcConfigMaxResponseTimeEnabled: Ang maximum na oras ng pagtugon ay nakatakda sa
-    %i segundo.
   wwctInvalidInputLangCode: 'Di-wastong input code ng wika na ibinigay! Valid lang
     mga code: %o'
   wwcsTitle: Record ng %i
@@ -309,27 +303,17 @@ Messages:
   wwcteOffTarget: Hindi pinagana ang pagsasalin ng entity para sa %i.
   wwcCharLimit: Masyadong mahaba ang iyong mensahe! Mangyaring siguraduhin na ang
     iyong mensahe ay mas mababa sa %i character sa haba.
-  wwcConfigConversationResponseLimitInput: Ang kasalukuyang timeout ng pagtugon para
-    sa bawat tagasalin ay %i segundo. I-type ang anumang mas malaki kaysa sa 0 upang
-    magtakda ng bagong halaga, o i-type ang anumang mas mababa sa o katumbas ng 0
-    upang bumalik.
   wwcConfigConversationCharacterLimitInput: Ang kasalukuyang limitasyon ng character
     sa bawat mensahe ay %i character. I-type ang anumang mas malaki kaysa sa 0 upang
     magtakda ng bagong halaga, o i-type ang anumang mas mababa sa o katumbas ng 0
     upang bumalik.
   wwcteOffSender: Hindi pinagana ang pagsasalin ng entity.
   wwctGUIEntityButton: I-toggle ang Entity Translation
-  wwcConfigConversationResponseLimitSuccess: Matagumpay na itinakda ang timeout ng
-    tugon.
   wwctrlRateLimitBadInt: Ang iyong limitasyon sa rate ay hindi wastong integer.
   wwcTranslatorErrorConsole: Nagkaroon ng problema habang tinatangka ng gumagamit
     %i ang kanilang pagsasalin. Mangyaring suriin errorLog.txt para sa higit pang
     mga detalye.
-  wwctcOffSender: Hindi pinagana ang pagsasalin ng chat.
-  wwctcOnTarget: Pinagana ang pagsasalin ng chat para sa %i.
-  wwctcOnSender: Pinagana ang pagsasalin ng chat. Anumang sasabihin mo ay isasalin!
   wwctGUIChatButton: I-toggle ang Pagsasalin ng Chat
-  wwctcOffTarget: Hindi pinagana ang pagsasalin ng chat para sa %i.
   wwcrBegin: I-reload ang WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Ang sesyon ng pagsasalin para sa %i ay tumigil.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Isinasalin ang pandaigdigang
@@ -351,3 +335,30 @@ Messages:
     chat, ngunit mayroon kang aktibong sesyon ng pagsasalin sa %o.
   wwcConfigGUIChangesNotSaved: Ang iyong mga pagbabago ay hindi magkakabisa hanggang
     sa mag-click ka sa pulang hadlang sa /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Matagumpay na na-toggled
+    ang mensahe ng chat sa pagsasalin.
+  wwcConfigGUISendFailedTranslationChatButton: Magpadala ng Chat Message sa Nabigong
+    Pagsasalin
+  wwctciOffSender: Hindi pinagana ang pagsasalin ng papasok na chat.
+  wwctGUIChatIncomingButton: I-toggle ang Incoming Chat Translation
+  wwctcoOffSender: Hindi pinagana ang pagsasalin ng papalabas na chat.
+  wwctcoOnSender: Pinagana ang pagsasalin ng papalabas na chat. Ang anumang sasabihin
+    mo ay isasalin!
+  wwctciOnSender: Pinagana ang pagsasalin ng papasok na chat. Ang anumang natatanggap
+    mo ay isasalin!
+  wwctGUIChatMenu: I-toggle ang Pagsasalin ng Chat Menu
+  wwctcoOnTarget: Pinagana ang pagsasalin ng papalabas na chat para sa %i.
+  wwctcoOffTarget: Hindi pinagana ang pagsasalin ng papalabas na chat para sa %i.
+  wwctGUIChatOutgoingButton: I-toggle ang Papalabas na Pagsasalin ng Chat
+  wwctciOnTarget: Pinagana ang papasok na pagsasalin ng chat para sa %i.
+  wwctciOffTarget: Hindi pinagana ang pagsasalin ng papasok na chat para sa %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Orihinal na papasok na chat
+    na naka-attach sa pagsasalin bilang hover text toggled matagumpay.
+  wwcConfigGUISendIncomingHoverTextChatButton: Magdagdag ng Orihinal na Mga Papasok
+    na Mensahe bilang Hover Text
+  wwctGUIExistingChatOutgoingEnabled: 'Pinagana ang Pagsalin ng Papalabas na Chat:
+    %i'
+  wwctGUIExistingTranslationInput: 'Wika ng Input: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Pinagana ang pagsasalin ng papasok na Chat:
+    %i'
+  wwctGUIExistingTranslationOutput: 'Wika ng Output: %i'

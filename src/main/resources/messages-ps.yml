@@ -61,8 +61,6 @@ Messages:
   wwctbOnSender: د کتاب ژباړې فعال شو. د هغې د ژباړې لپاره د کتاب ساتلو په وخت کې
     ښي کلیک وکړئ!
   wwcListenersInitialized: ابتدايي اوریدونکي.
-  wwcUserDataCorrupted: . فاسد يا پخوانۍ کارن ډيټا دوتنې وموندل او ګرځوله %i دوی به
-    په راتلونکی ریلوټ کې حذف شي.
   wwcConfigGUIPluginUpdateChatButton: د پلگ ان تازه معلوماتو لپاره د چیٹ یادونه
   wwcConfigConversationSendTranslationChatSuccess: د فعال ژباړونکي چیٹ یادونه په بریالیتوب
     سره راټول شوه.
@@ -223,9 +221,6 @@ Messages:
     5 ته تلل...
   wwcTranslatorErrorThresholdReachedCheckLogs: مهرباني وکړئ د نورو معلوماتو لپاره
     د WorldwideChat پلگ ان فولډر کې errorLog.txt وګورئ.
-  wwcConfigMaxResponseTimeInvalid: ناسم اعظمي ځواب وخت په config.yml کې ټاکل شوی.
-    7 ثانیو ته تلل...
-  wwcConfigMaxResponseTimeEnabled: . %i ثانیو ته د ځواب اعظمي وخت ټاکل
   wwctInvalidInputLangCode: 'ناسم انډول ژبې کوډ برابر شو! د اعتبار وړ لینګ کوډونه:
     %o'
   wwcsTitle: '%i ثبتول'
@@ -277,24 +272,15 @@ Messages:
   wwcteOffTarget: .د بنسټ ژباړه ناتوانول شو %i لپاره
   wwcCharLimit: ستاسو پیغام ډیر اوږد دی! مهرباني وکړئ ډاډ ترلاسه کړئ چې ستاسو پیغام
     په اوږدوالي کې له %i څخه کم دی.
-  wwcConfigConversationResponseLimitInput: د هر ژباړونکي لپاره اوسنی غبرګون وخت اوټ
-    %i ثانیې دی. د نوي ارزښت ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د 0 څخه کم یا مساوي
-    څه ولیکئ چې بیرته لاړ شئ.
   wwcConfigConversationCharacterLimitInput: .په پیغام کې د اوسني کرکټر حد %i حروفونه
     دي د نوي ارزښت ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د 0 څخه کم یا مساوي څه ولیکئ
     چې بیرته لاړ شئ.
   wwcteOffSender: د بنسټ ژباړه معلول.
   wwctGUIEntityButton: د بنسټ ژباړه توګول
-  wwcConfigConversationResponseLimitSuccess: د غبرګون وخت وخت په بریالیتوب سره وټاکل
-    شو.
   wwctrlRateLimitBadInt: ستاسو د نرخ حد یو باوري عدد نه دی.
   wwcTranslatorErrorConsole: کومه ستونزه رامنځته شوه کله چې کارن- %i د خپلې ژباړې
     هڅه کوله. مهرباني وکړئ د نورو جزیاتو لپاره errorLog.txt وګورئ.
-  wwctcOffSender: د چیٹ ژباړه معیوب.
-  wwctcOnTarget: . چیٹ ژباړل د %i لپاره فعال شو
-  wwctcOnSender: د چیٹ ژباړه فعاله کړه. هر څه چې تاسو وایئ به ژباړل شي!
   wwctGUIChatButton: د چیٹ ژباړه توګول
-  wwctcOffTarget: .د ژباړې خبرې ناتوانول شو %i لپاره
   wwcrBegin: د WorldWieChat بیا ځلي کول...
   wwctTranslationStoppedOtherPlayer: .د ژباړې ناستې لپاره درول شو %i
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ګلوبل چیٹ ژباړل کیږي،
@@ -312,3 +298,26 @@ Messages:
     مګر تاسو د ژباړې فعاله ناستې لرئ.
   wwcConfigGUIChangesNotSaved: ستاسو بدلونونه به اغیزه ونکړي تر هغه چې تاسو په /wwcc
     کې په سور خنډ باندې کلیک وکړئ.
+  wwcConfigConversationSendFailedTranslationChatSuccess: ناکام ژباړې چیٹ پیغام په
+    بریالیتوب سره ټګل شو.
+  wwcConfigGUISendFailedTranslationChatButton: په ناکام ژباړه کې د چیٹ پیغام ولیږئ
+  wwctciOffSender: راتلونکی چیٹ ژباړه غیر فعال شوی.
+  wwctGUIChatIncomingButton: د راتلونکی چیٹ ژباړه
+  wwctcoOffSender: د وتلو چیٹ ژباړه معلولیت لري.
+  wwctcoOnSender: د وتلو چیٹ ژباړه فعاله شوه. هر څه چې تاسو وایاست به ژباړل شي!
+  wwctciOnSender: راتلونکی چیٹ ژباړه فعاله شوه. هر څه چې تاسو ترلاسه کوئ به ژباړل
+    شي!
+  wwctGUIChatMenu: د ژباړې غورنۍ چټ غږول
+  wwctcoOnTarget: د وتلي چیٹ ژباړې د %i لپاره فعال شو.
+  wwctcoOffTarget: د وتلي چیٹ ژباړه د %i لپاره معلول شوه.
+  wwctGUIChatOutgoingButton: د بهر تلونکي چیٹ ژباړه
+  wwctciOnTarget: راتلونکی چیٹ ژباړه د %i لپاره فعاله شوه.
+  wwctciOffTarget: راتلونکی چیٹ ژباړه د %i لپاره ناتوان شو.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: اصلي راتلونکی چیٹ د ژباړې
+    سره تړل شوی لکه څنګه چې د هور متن په بریالیتوب سره ټګ شوی.
+  wwcConfigGUISendIncomingHoverTextChatButton: اصلي راتلونکی پیغامونه د هور متن په
+    توګه اضافه کړئ
+  wwctGUIExistingChatOutgoingEnabled: 'د وتلو چیٹ ژباړه فعال شوی: %i'
+  wwctGUIExistingTranslationInput: 'ننوتۍ ژبه: %i'
+  wwctGUIExistingChatIncomingEnabled: 'راتلونکی چیٹ ژباړه فعال شوی: %i'
+  wwctGUIExistingTranslationOutput: 'د محصول ژبه: %i'

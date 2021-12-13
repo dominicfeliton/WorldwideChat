@@ -52,7 +52,6 @@ Messages:
   wwcgLangToLangStart: 現在將全球聊天從 %i 翻譯到 %o。
   wwctbOnSender: 已啟用書冊翻譯。在拿著書的同時按一下滑鼠右鍵即可翻譯它！
   wwcListenersInitialized: 初始化監聽程式。
-  wwcUserDataCorrupted: 找到並移動 %i 損毀或舊的使用者資料檔案。它們將在下次重新載入時刪除。
   wwcConfigGUIPluginUpdateChatButton: 傳送外掛程式更新的聊天提示
   wwcConfigConversationSendTranslationChatSuccess: 作用中的翻譯聊天提醒切換成功。
   wwctsOffTarget: '%i 已停用簽署轉譯。'
@@ -182,8 +181,6 @@ Messages:
   wwcTranslatorError: 嘗試翻譯時發生問題。請再試一次。
   wwcConfigErrorLimitInvalid: 在 config.yml 中設定的轉換器錯誤限制無效。預設為 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: 如需詳細資訊，請檢查「全球聊天」外掛程式資料夾中的 errorLog.txt。
-  wwcConfigMaxResponseTimeInvalid: 在 config.yml 中設定的最大回應時間無效。預設值為 7 秒...
-  wwcConfigMaxResponseTimeEnabled: 最大回應時間設定為 %i 秒。
   wwctInvalidInputLangCode: 提供的輸入語言代碼無效！有效的語言代碼： %o
   wwcsTitle: '%i 的記錄'
   wwctInvalidOutputLangCode: 提供的輸出語言代碼無效！有效的語言代碼： %o
@@ -225,20 +222,13 @@ Messages:
   wwcConfigMessageCharLimitEnabled: 每封郵件設定為 %i 個字元的字元限制。
   wwcteOffTarget: '%i 已停用實體轉譯。'
   wwcCharLimit: 您的訊息太長了！請確認您的訊息長度少於 %i 個字元。
-  wwcConfigConversationResponseLimitInput: 每個轉換器的目前回應逾時為 %i 秒。輸入大於 0 的任何值以設定新值，或輸入小於或等於
-    0 的任何值以返回。
   wwcConfigConversationCharacterLimitInput: 每封郵件目前的字元限制為 %i 個字元。輸入大於 0 的任何值以設定新值，或輸入小於或等於
     0 的任何值以返回。
   wwcteOffSender: 已停用實體轉換。
   wwctGUIEntityButton: 切換實體轉換
-  wwcConfigConversationResponseLimitSuccess: 回應逾時設定成功。
   wwctrlRateLimitBadInt: 你的費率限制不是有效的整數。
   wwcTranslatorErrorConsole: 使用者 %i 嘗試翻譯時發生問題。請查看 errorLog.txt 以獲取更多詳細信息。
-  wwctcOffSender: 聊天翻譯已停用。
-  wwctcOnTarget: '%i 已啟用聊天翻譯。'
-  wwctcOnSender: 啟用聊天翻譯功能。你說的任何東西都會被翻譯！
   wwctGUIChatButton: 切換聊天翻譯
-  wwctcOffTarget: '%i 的聊天翻譯已停用。'
   wwcrBegin: 正在重新載入全球聊天室...
   wwctTranslationStoppedOtherPlayer: '%i 的翻譯階段作業已停止。'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 全球聊天正在翻譯，但您有一個從 %i 到 %o
@@ -254,3 +244,22 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 全球聊天正在翻譯，但您的翻譯工作階段為
     %o。
   wwcConfigGUIChangesNotSaved: 您的變更將不會生效，直到您按一下 /wwcc 中的紅色屏障。
+  wwcConfigConversationSendFailedTranslationChatSuccess: 已成功切換翻譯聊天消息失敗。
+  wwcConfigGUISendFailedTranslationChatButton: 翻譯失敗時發送聊天消息
+  wwctciOffSender: 已禁用傳入聊天翻譯。
+  wwctGUIChatIncomingButton: 切換傳入聊天翻譯
+  wwctcoOffSender: 已禁用傳出聊天翻譯。
+  wwctcoOnSender: 已啟用傳出聊天翻譯。你説的任何東西都會被翻譯！
+  wwctciOnSender: 已啟用傳入聊天翻譯。您收到的任何內容都將被翻譯！
+  wwctGUIChatMenu: 切換聊天翻譯菜單
+  wwctcoOnTarget: 已啟用 %i 的傳出聊天翻譯。
+  wwctcoOffTarget: '%i 的傳出聊天翻譯已禁用。'
+  wwctGUIChatOutgoingButton: 切換傳出聊天翻譯
+  wwctciOnTarget: 已啟用 %i 的傳入聊天翻譯。
+  wwctciOffTarget: '%i 禁用傳入聊天翻譯。'
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: 原始傳入聊天附加到翻譯作為懸停文本切換成功。
+  wwcConfigGUISendIncomingHoverTextChatButton: 將原始傳入郵件添加為懸停文本
+  wwctGUIExistingChatOutgoingEnabled: 已啟用傳出聊天翻譯： %i
+  wwctGUIExistingTranslationInput: 輸入語言： %i
+  wwctGUIExistingChatIncomingEnabled: 已啟用傳入聊天翻譯： %i
+  wwctGUIExistingTranslationOutput: 輸出語言： %i

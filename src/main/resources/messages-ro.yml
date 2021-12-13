@@ -64,8 +64,6 @@ Messages:
   wwctbOnSender: Traducerea cărţii activată. Faceți clic dreapta în timp ce țineți
     o carte pentru ao traduce!
   wwcListenersInitialized: Ascultători iniţializaţi.
-  wwcUserDataCorrupted: S-au găsit și s-au mutat %i fișiere corupte sau vechi de date
-    ale utilizatorilor. Acestea vor fi șterse la următoarea reîncărcare.
   wwcConfigGUIPluginUpdateChatButton: Trimiteți Memento Chat pentru actualizări plugin-uri
   wwcConfigConversationSendTranslationChatSuccess: Memento-ul de chat al traducătorului
     activ a fost activat cu succes.
@@ -239,9 +237,6 @@ Messages:
     Inîndeplinire a obligațiilor de plată la 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Verificați errorLog.txt în folderul
     plugin WorldwideChat pentru mai multe informații.
-  wwcConfigMaxResponseTimeInvalid: Timp maxim de răspuns invalid stabilit în config.yml.
-    Inîndeplinire a obligațiilor la 7 secunde...
-  wwcConfigMaxResponseTimeEnabled: Timpul maxim de răspuns setat la %i secunde.
   wwctInvalidInputLangCode: 'Codul de limbă de intrare nevalid furnizat! Coduri valide
     lang: %o'
   wwcsTitle: Înregistrarea de %i
@@ -295,24 +290,15 @@ Messages:
   wwcteOffTarget: Traducerea entității dezactivată pentru %i.
   wwcCharLimit: Mesajul tău e prea lung! Vă rugăm să vă asigurați că mesajul dvs.
     este mai mic de %i caracterele.
-  wwcConfigConversationResponseLimitInput: Timpul de expirare a răspunsului curent
-    pentru fiecare traducător este %i secunde. Tastați ceva mai mare decât 0 pentru
-    a seta o valoare nouă sau tastați ceva mai mic sau egal cu 0 pentru a reveni.
   wwcConfigConversationCharacterLimitInput: Limita curentă de caractere pentru fiecare
     mesaj este %i caractere. Tastați ceva mai mare decât 0 pentru a seta o valoare
     nouă sau tastați ceva mai mic sau egal cu 0 pentru a reveni.
   wwcteOffSender: Entitate traducere dezactivată.
   wwctGUIEntityButton: Comută traducerea entității
-  wwcConfigConversationResponseLimitSuccess: Timpul de expirare a răspunsului stabilit
-    cu succes
   wwctrlRateLimitBadInt: Limita dvs. de rată nu este un număr întreg valid.
   wwcTranslatorErrorConsole: A apărut o problemă în timp ce utilizatorul %i încerca
     traducerea lor. Vă rugăm să verificați errorLog.txt pentru mai multe detalii.
-  wwctcOffSender: Traducere chat dezactivat.
-  wwctcOnTarget: Traducerea conversațiilor activată pentru %i.
-  wwctcOnSender: Traducerea chat-ului activată. Tot ce spui va fi tradus!
   wwctGUIChatButton: Comută traducerea conversațiilor
-  wwctcOffTarget: Traducerea conversațiilor dezactivate pentru %i.
   wwcrBegin: Reîncarcă WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Sesiunea de traducere pentru %i a fost oprită.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Chat global este tradus,
@@ -333,3 +319,30 @@ Messages:
     dar aveți o sesiune de traducere activă la %o.
   wwcConfigGUIChangesNotSaved: Modificările dvs. nu vor intra în vigoare până când
     nu faceți clic pe bariera roșie în /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Mesaj de chat traducere eșuat
+    comuta cu succes.
+  wwcConfigGUISendFailedTranslationChatButton: Trimite mesaj de chat pentru traducerea
+    eșuată
+  wwctciOffSender: Intrare traducere chat dezactivat.
+  wwctGUIChatIncomingButton: Comută traducerea conversațiilor primite
+  wwctcoOffSender: Traducere chat de ieșire dezactivat.
+  wwctcoOnSender: Traducerea conversațiilor de ieșire activată. Tot ce spui va fi
+    tradus!
+  wwctciOnSender: Traducerea conversațiilor primite activată. Orice veţi primi va
+    fi tradus!
+  wwctGUIChatMenu: Comutare Meniu Traducere Chat
+  wwctcoOnTarget: Traducerea conversațiilor de ieșire activată pentru %i.
+  wwctcoOffTarget: Traducere chat de ieșire dezactivat pentru %i.
+  wwctGUIChatOutgoingButton: Comută traducerea conversațiilor de ieșire
+  wwctciOnTarget: Traducerea conversațiilor primite este activată pentru %i.
+  wwctciOffTarget: Traducerea chat-ului de intrare dezactivată pentru %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Chatul original de intrare
+    atașat la traducere ca text hover comuta cu succes.
+  wwcConfigGUISendIncomingHoverTextChatButton: Adăugarea mesajelor primite originale
+    ca text de trecere
+  wwctGUIExistingChatOutgoingEnabled: 'Traducerea conversațiilor de ieșire activată:
+    %i'
+  wwctGUIExistingTranslationInput: 'Limba de intrare: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Traducerea conversațiilor primite activată:
+    %i'
+  wwctGUIExistingTranslationOutput: 'Limba de ieșire: %i'

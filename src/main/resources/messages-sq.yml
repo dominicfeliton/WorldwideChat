@@ -65,8 +65,6 @@ Messages:
   wwctbOnSender: Libri përkthim aktivizuar. Djathtas-klikoni duke mbajtur një libër
     për ta përkthyer!
   wwcListenersInitialized: Dëgjuesit e inicializuar.
-  wwcUserDataCorrupted: Gjetur dhe lëvizur %i fotografi të korruptuara ose të vjetra
-    të të dhënave të përdoruesit. Ato do të fshihen në ringarkimin e ardhshëm.
   wwcConfigGUIPluginUpdateChatButton: Dërgo Kujtesën e Chat për përditësime Plugin
   wwcConfigConversationSendTranslationChatSuccess: Kujtesa e bisedës së përkthyesit
     aktiv u tërhoqën me sukses.
@@ -241,9 +239,6 @@ Messages:
     në config.yml. Defaulting në 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Ju lutem kontrolloni errorLog.txt në
     dosjen e plugin WorldwideChat për më shumë informacion.
-  wwcConfigMaxResponseTimeInvalid: Koha e pavlefshme e përgjigjes max vendosur në
-    config.yml. Defaulting në 7 sekonda...
-  wwcConfigMaxResponseTimeEnabled: Koha maksimale e përgjigjes caktohet në %i sekonda.
   wwctInvalidInputLangCode: 'Kodi i pavlefshëm i gjuhës së hyrjes dhënë! Kodet e vlefshme
     lang: %o'
   wwcsTitle: Regjistrimi prej %i
@@ -296,25 +291,15 @@ Messages:
   wwcteOffTarget: Përkthimi i subjektit i paaftë për %i.
   wwcCharLimit: Mesazhi juaj është shumë i gjatë! Ju lutemi sigurohuni që mesazhi
     juaj të jetë më i vogël se %i karaktere në gjatësi.
-  wwcConfigConversationResponseLimitInput: Kohëzgjatja aktuale e përgjigjes për secilin
-    përkthyes është %i sekonda. Shkruani ndonjë gjë më të madhe se 0 për të vendosur
-    një vlerë të re, ose shkruani ndonjë gjë më pak se ose të barabartë me 0 për t'u
-    kthyer.
   wwcConfigConversationCharacterLimitInput: Kufiri aktual i karakterit për mesazh
     është %i karaktere. Shkruani ndonjë gjë më të madhe se 0 për të vendosur një vlerë
     të re, ose shkruani ndonjë gjë më pak se ose të barabartë me 0 për t'u kthyer.
   wwcteOffSender: Përkthimi subjekt me aftësi
   wwctGUIEntityButton: Toggle Enti Përkthimi
-  wwcConfigConversationResponseLimitSuccess: Kohëzgjatja e përgjigjes vendosur me
-    sukses.
   wwctrlRateLimitBadInt: Kufiri juaj i normës nuk është një numër i plotë i vlefshëm.
   wwcTranslatorErrorConsole: Ndodhi një problem përderisa përdoruesi %i po tentonte
     përkthimin e tyre. Ju lutem kontrolloni errorLog.txt për më shumë detaje.
-  wwctcOffSender: Chat përkthim i paaftë.
-  wwctcOnTarget: Përkthimi i bisedës aktivizohet për %i.
-  wwctcOnSender: Përkthimi Chat aktivizuar. Çdo gjë që thoni do të përkthehet!
   wwctGUIChatButton: Përkthimi Toggle Chat
-  wwctcOffTarget: Përkthimi Chat i çaktivizuar për %i.
   wwcrBegin: Rifreskimi WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Sesioni i përkthimit për %i është ndalur.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Biseda globale po përkthehet,
@@ -335,3 +320,28 @@ Messages:
     por ju keni një sesion aktiv përkthimi në %o.
   wwcConfigGUIChangesNotSaved: Ndryshimet tuaja nuk do të hyjnë në fuqi derisa të
     klikoni mbi pengesën e kuqe në /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Mesazhi i bisedës së përkthimit
+    të dështuar u kthye me sukses.
+  wwcConfigGUISendFailedTranslationChatButton: Dërgoni mesazh bisede në përkthimin
+    e dështuar
+  wwctciOffSender: Përkthimi në hyrje chat me aftësi të kufizuara.
+  wwctGUIChatIncomingButton: Toggle Përkthimi i Bisedës Hyrëse
+  wwctcoOffSender: Përkthimi në dalje chat me aftësi të kufizuara.
+  wwctcoOnSender: Përkthimi i bisedës në dalje aktivizohet. Çdo gjë që thoni do të
+    përkthehet!
+  wwctciOnSender: Përkthimi i bisedës hyrëse aktivizohet. Çdo gjë që ju merrni do
+    të përkthehet!
+  wwctGUIChatMenu: Toggle Menyja e Përkthimit të Bisedës
+  wwctcoOnTarget: Përkthimi i bisedës që po largohet aktivizohet për %i.
+  wwctcoOffTarget: Përkthimi po largohet chat me aftësi të kufizuara për %i.
+  wwctGUIChatOutgoingButton: Toggle Përkthimi i Bisedës që po largohet
+  wwctciOnTarget: Përkthimi i bisedës hyrëse aktivizohet për %i.
+  wwctciOffTarget: Përkthimi në hyrje chat me aftësi të kufizuara për %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Original hyrëse chat bashkangjitur
+    përkthim si tekst rri pezull toggled sukses.
+  wwcConfigGUISendIncomingHoverTextChatButton: Shto Mesazhe Origjinale Hyrëse si Tekst
+    Rri Pezull
+  wwctGUIExistingChatOutgoingEnabled: 'Aktivizohet përkthimi i bisedës në dalje: %i'
+  wwctGUIExistingTranslationInput: 'Gjuha e hyrjes: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Përkthimi i bisedës hyrëse e aktivizuar: %i'
+  wwctGUIExistingTranslationOutput: 'Gjuha e daljes: %i'

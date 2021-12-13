@@ -61,8 +61,6 @@ Messages:
   wwctbOnSender: Překlad knihy povolen. Klepněte pravým tlačítkem myši, zatímco držíte
     knihu přeložit!
   wwcListenersInitialized: Inicializovaní posluchači.
-  wwcUserDataCorrupted: Nalezeno a přesunuje %i poškozené nebo staré uživatelské datové
-    soubory. Budou smazány při dalším opětovném načtení.
   wwcConfigGUIPluginUpdateChatButton: Odeslat připomenutí chatu pro aktualizace pluginů
   wwcConfigConversationSendTranslationChatSuccess: Aktivní překladatel připomenutí
     chatu se úspěšně přepnul.
@@ -228,9 +226,6 @@ Messages:
     Výchozí hodnota 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Další informace zkontrolujte errorLog.txt
     ve složce plugin WorldwideChat.
-  wwcConfigMaxResponseTimeInvalid: Neplatná maximální doba odezvy nastavená v config.yml.
-    Výchozí na 7 sekund...
-  wwcConfigMaxResponseTimeEnabled: Maximální doba odezvy nastavena na %i sekund.
   wwctInvalidInputLangCode: 'Neplatný kód vstupního jazyka je k dispozici! Platné
     kódy lang: %o'
   wwcsTitle: Záznam %i
@@ -281,23 +276,15 @@ Messages:
   wwcteOffTarget: Překlad entit zakázán pro %i.
   wwcCharLimit: Vaše zpráva je příliš dlouhá! Ujistěte se, že vaše zpráva má menší
     než %i znaků.
-  wwcConfigConversationResponseLimitInput: Aktuální časový limit odezvy pro každý
-    překladač je %i sekund. Zadejte něco většího než 0 pro nastavení nové hodnoty
-    nebo zadejte něco menší než nebo rovno 0 a vraťte se zpět.
   wwcConfigConversationCharacterLimitInput: Aktuální limit znaků na zprávu je %i znaků.
     Zadejte něco většího než 0 pro nastavení nové hodnoty nebo zadejte něco menší
     než nebo rovno 0 a vraťte se zpět.
   wwcteOffSender: Převod entit zakázán.
   wwctGUIEntityButton: Přepnout překlad entit
-  wwcConfigConversationResponseLimitSuccess: Časový limit odezvy byl úspěšně nastaven.
   wwctrlRateLimitBadInt: Váš limit sazeb není platné celé číslo.
   wwcTranslatorErrorConsole: Vyskytl se problém, když se uživatele %i pokoušel o jejich
     překlad. Další podrobnosti zkontrolujte errorLog.txt.
-  wwctcOffSender: Překlad chatu zakázán.
-  wwctcOnTarget: Překlad chatu povolen pro %i.
-  wwctcOnSender: Překlad chatu povolen. Cokoliv řeknete, bude přeloženo!
   wwctGUIChatButton: Přepnout chat překlad
-  wwctcOffTarget: Překlad chatu zakázán pro %i.
   wwcrBegin: Znovu načtení WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Relace překladu pro %i byla zastavena.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globální chat je překládán,
@@ -315,3 +302,26 @@ Messages:
     ale máte aktivní překladatelskou relaci na %o.
   wwcConfigGUIChangesNotSaved: Vaše změny se projeví, dokud nekliknete na červenou
     bariéru v /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Neúspěšná zpráva konverzace
+    překladu byla úspěšně přepnuto.
+  wwcConfigGUISendFailedTranslationChatButton: Odeslání zprávy o chatu na neúspěšný
+    překlad
+  wwctciOffSender: Příchozí překlad chatu zakázán.
+  wwctGUIChatIncomingButton: Přepnout překlad příchozí konverzace
+  wwctcoOffSender: Překlad odchozího chatu zakázán.
+  wwctcoOnSender: Překlad odchozího chatu povolen. Cokoliv řeknete, bude přeloženo!
+  wwctciOnSender: Příchozí překlad chatu povolen. Vše, co obdržíte, bude přeloženo!
+  wwctGUIChatMenu: Přepnout menu Překlad konverzace
+  wwctcoOnTarget: Překlad odchozího chatu povolen pro %i.
+  wwctcoOffTarget: Překlad odchozího chatu zakázán pro %i.
+  wwctGUIChatOutgoingButton: Přepnout překlad odchozí konverzace
+  wwctciOnTarget: Příchozí překlad chatu povolen pro %i.
+  wwctciOffTarget: Příchozí překlad chatu zakázán pro %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Původní příchozí chat připojený
+    k překladu jako text ukazatele byl úspěšně přepnuto.
+  wwcConfigGUISendIncomingHoverTextChatButton: Přidání původních příchozích zpráv
+    jako text ukazatele
+  wwctGUIExistingChatOutgoingEnabled: 'Povolený překlad odchozího chatu: %i'
+  wwctGUIExistingTranslationInput: 'Vstupní jazyk: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Povolený překlad příchozího chatu: %i'
+  wwctGUIExistingTranslationOutput: 'Výstupní jazyk: %i'

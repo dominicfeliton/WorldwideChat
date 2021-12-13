@@ -61,8 +61,6 @@ Messages:
   wwctbOnSender: Tłumaczenie książki włączone. Kliknij prawym przyciskiem myszy trzymając
     książkę, aby ją przetłumaczyć!
   wwcListenersInitialized: Zainicjowane słuchacze.
-  wwcUserDataCorrupted: Znaleziono i przenieś %i uszkodzone lub stare pliki danych
-    użytkownika. Zostaną one usunięte przy następnym przeładowaniu.
   wwcConfigGUIPluginUpdateChatButton: Wyślij przypomnienie o czacie dla aktualizacji
     wtyczek
   wwcConfigConversationSendTranslationChatSuccess: Aktywny tłumacz przypomnienie czatu
@@ -231,9 +229,6 @@ Messages:
     Domyślnie do 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Sprawdź errorLog.txt w folderze wtyczki
     WorldwideChat, aby uzyskać więcej informacji.
-  wwcConfigMaxResponseTimeInvalid: Nieprawidłowy maksymalny czas odpowiedzi ustawiony
-    w config.yml. Domyślnie 7 sekund...
-  wwcConfigMaxResponseTimeEnabled: Maksymalny czas reakcji ustawiony na %i sekund.
   wwctInvalidInputLangCode: 'Podano nieprawidłowy kod języka wejściowego! Prawidłowe
     kody lang: %o'
   wwcsTitle: Zapis z %i
@@ -286,23 +281,15 @@ Messages:
   wwcteOffTarget: Tłumaczenie encji wyłączone dla %i.
   wwcCharLimit: Twoja wiadomość jest za długa! Upewnij się, że Twoja wiadomość jest
     mniejsza niż %i znaków.
-  wwcConfigConversationResponseLimitInput: Bieżący limit czasu odpowiedzi dla każdego
-    tłumacza wynosi %i sekund. Wpisz wartość większą niż 0, aby ustawić nową wartość,
-    lub wpisz wartość mniejszą lub równą 0, aby wrócić.
   wwcConfigConversationCharacterLimitInput: Bieżący limit znaków na wiadomość to %i
     znaków. Wpisz wartość większą niż 0, aby ustawić nową wartość, lub wpisz wartość
     mniejszą lub równą 0, aby wrócić.
   wwcteOffSender: Tłumaczenie encji wyłączone.
   wwctGUIEntityButton: Przełącz translację encji
-  wwcConfigConversationResponseLimitSuccess: Ustawiono limit czasu odpowiedzi pomyślnie.
   wwctrlRateLimitBadInt: Twój limit szybkości nie jest prawidłową liczbą całkowitą.
   wwcTranslatorErrorConsole: Wystąpił problem podczas próby tłumaczenia przez użytkownik
     %i. Sprawdź errorLog.txt, aby uzyskać więcej szczegółów.
-  wwctcOffSender: Tłumaczenie czatu wyłączone.
-  wwctcOnTarget: Tłumaczenie czatu włączone dla %i.
-  wwctcOnSender: Tłumaczenie czatu włączone. Wszystko, co powiesz, zostanie przetłumaczone!
   wwctGUIChatButton: Przełącz tłumaczenie czatu
-  wwctcOffTarget: Tłumaczenie czatu wyłączone dla %i.
   wwcrBegin: Przeładowanie WorldwideChat
   wwctTranslationStoppedOtherPlayer: Sesja tłumaczeń dla %i została zatrzymana.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Czat globalny jest tłumaczony,
@@ -322,3 +309,29 @@ Messages:
     ale masz aktywną sesję tłumaczeniową do %o.
   wwcConfigGUIChangesNotSaved: Zmiany nie wejdą w życie, dopóki nie klikniesz czerwoną
     barierę w /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Nie powiodło się przełączenie
+    komunikatu tłumaczenia pomyślnie.
+  wwcConfigGUISendFailedTranslationChatButton: Wyślij wiadomość czatu na nieudane
+    tłumaczenie
+  wwctciOffSender: Tłumaczenie czatu przychodzącego wyłączone.
+  wwctGUIChatIncomingButton: Przełącz tłumaczenie czatu przychodzącego
+  wwctcoOffSender: Tłumaczenie czatu wychodzącego wyłączone.
+  wwctcoOnSender: Tłumaczenie czatu wychodzącego włączone. Wszystko, co powiesz, zostanie
+    przetłumaczone!
+  wwctciOnSender: Tłumaczenie czatu przychodzącego włączone. Wszystko, co otrzymasz,
+    zostanie przetłumaczone!
+  wwctGUIChatMenu: Przełącz menu tłumaczenia czatu
+  wwctcoOnTarget: Tłumaczenie czatu wychodzącego włączone dla %i.
+  wwctcoOffTarget: Tłumaczenie czatu wychodzącego wyłączone dla %i.
+  wwctGUIChatOutgoingButton: Przełącz tłumaczenie czatu wychodzącego
+  wwctciOnTarget: Tłumaczenie czatu przychodzącego włączone dla %i.
+  wwctciOffTarget: Tłumaczenie czatu przychodzącego wyłączone dla %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Oryginalny czat przychodzący
+    dołączony do tłumaczenia jako tekst najechany został pomyślnie przełączony.
+  wwcConfigGUISendIncomingHoverTextChatButton: Dodaj oryginalne wiadomości przychodzące
+    jako tekst najechania
+  wwctGUIExistingChatOutgoingEnabled: 'Tłumaczenie czatu wychodzącego włączone: %i'
+  wwctGUIExistingTranslationInput: 'Język wprowadzania: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Tłumaczenie czatu przychodzącego włączone:
+    %i'
+  wwctGUIExistingTranslationOutput: 'Język wyjściowy: %i'

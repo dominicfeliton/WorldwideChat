@@ -60,8 +60,6 @@ Messages:
   wwcgLangToLangStart: Nüüd tõlkides globaalse vestluse alates %i kuni %o.
   wwctbOnSender: Raamatu tõlkimine on lubatud. Paremklõpsake hoides raamatut tõlkida!
   wwcListenersInitialized: Algastatud kuulajad.
-  wwcUserDataCorrupted: Leiti ja liigutatud %i rikutud või vanad kasutaja andmefailid.
-    Need kustutatakse järgmisel reload.
   wwcConfigGUIPluginUpdateChatButton: Saada vestluse meeldetuletus Plugin värskenduste
     jaoks
   wwcConfigConversationSendTranslationChatSuccess: Aktiivne tõlkija vestlus meeldetuletus
@@ -220,9 +218,6 @@ Messages:
     kuni 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Palun kontrollige errorLog.txt WorldwideChat
     plugin kaustas rohkem teavet.
-  wwcConfigMaxResponseTimeInvalid: Kehtetu max reaktsiooniaeg seatud config.yml. Defaulting
-    kuni 7 sekundit...
-  wwcConfigMaxResponseTimeEnabled: Max reaktsiooniaeg seatud %i sekundit.
   wwctInvalidInputLangCode: 'Kehtetu sisestuskeele kood ette! Kehtivad lang koodid:
     %o'
   wwcsTitle: Salvesta %i
@@ -271,23 +266,15 @@ Messages:
   wwcteOffTarget: Olemi tõlge keelatud %i.
   wwcCharLimit: Teie sõnum on liiga pikk! Palun veenduge, et teie sõnum oleks väiksem
     kui %i tähemärki pikkuses.
-  wwcConfigConversationResponseLimitInput: Praegune reageerimise ajalõpp iga tõlkija
-    on %i sekundit. Uue väärtuse määramiseks tippige midagi suuremat kui 0 või tippige
-    midagi, mis on väiksem või võrdne 0, et minna tagasi.
   wwcConfigConversationCharacterLimitInput: Praegune märgisepiirang sõnumi kohta on
     %i tähemärki. Uue väärtuse määramiseks tippige midagi suuremat kui 0 või tippige
     midagi, mis on väiksem või võrdne 0, et minna tagasi.
   wwcteOffSender: Olemi tõlkimine keelatud.
   wwctGUIEntityButton: Lülita olemi tõlge
-  wwcConfigConversationResponseLimitSuccess: Vastuse ajalõpp seatud edukalt.
   wwctrlRateLimitBadInt: Hinnapiirang ei ole kehtiv täisarv.
   wwcTranslatorErrorConsole: Probleem ilmnes, kui kasutaja %i üritas oma tõlkimist.
     Palun kontrollige errorLog.txt rohkem üksikasju.
-  wwctcOffSender: Vestluse tõlkimine keelatud.
-  wwctcOnTarget: Vestlus tõlge lubatud %i.
-  wwctcOnSender: Vestluse tõlge on lubatud. Kõik, mida te ütlete, tõlgitakse!
   wwctGUIChatButton: Lülita vestlus tõlge
-  wwctcOffTarget: Vestlus tõlge keelatud %i.
   wwcrBegin: WorldwideChat uuesti laadimine...
   wwctTranslationStoppedOtherPlayer: Tõlkesessioon %i on peatatud.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globaalne vestlus on tõlgitud,
@@ -307,3 +294,25 @@ Messages:
     tõlgitud, kuid teil on aktiivne tõlkesessioon kuni %o.
   wwcConfigGUIChangesNotSaved: Teie muudatused ei jõustu enne, kui klõpsate punasel
     tõkkel /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Nurjus tõlkevestluse sõnum
+    lülitatud edukalt.
+  wwcConfigGUISendFailedTranslationChatButton: Saada vestluse sõnum nurjunud tõlkimine
+  wwctciOffSender: Sissetuleva vestluse tõlge keelatud.
+  wwctGUIChatIncomingButton: Lülita sissetuleva vestluse tõlge
+  wwctcoOffSender: Väljamineva vestluse tõlge keelatud.
+  wwctcoOnSender: Väljamineva vestluse tõlge lubatud. Midagi, mida te ütlete, tõlgitakse!
+  wwctciOnSender: Sissetuleva vestluse tõlge lubatud. Kõik, mida saate, tõlgitakse!
+  wwctGUIChatMenu: Lülita vestluse tõlkimise menüü
+  wwctcoOnTarget: Väljamineva vestluse tõlge lubatud %i.
+  wwctcoOffTarget: Väljamineva vestluse tõlge keelatud %i.
+  wwctGUIChatOutgoingButton: Lülita väljamineva vestluse tõlge
+  wwctciOnTarget: Sissetuleva vestluse tõlge lubatud %i.
+  wwctciOffTarget: Sissetuleva vestluse tõlge keelatud %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Tõlkele lisatud algne sissetulev
+    vestlus hõljuva tekstina lülitati edukalt.
+  wwcConfigGUISendIncomingHoverTextChatButton: Algsete sissetulevate sõnumite lisamine
+    kursori tekstina
+  wwctGUIExistingChatOutgoingEnabled: 'Väljamineva vestluse tõlge lubatud: %i'
+  wwctGUIExistingTranslationInput: 'Sisestuskeel: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Sissetuleva vestluse tõlge lubatud: %i'
+  wwctGUIExistingTranslationOutput: 'Väljundkeel: %i'

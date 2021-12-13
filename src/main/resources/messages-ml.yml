@@ -62,8 +62,6 @@ Messages:
   wwctbOnSender: പുസ്തകം വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. അത് വിവർത്തനം ഒരു പുസ്തകം
     കൈവശമുള്ള വലത്-ക്ലിക്ക്!
   wwcListenersInitialized: സമാരംഭിച്ചു ശ്രോതാക്കൾ.
-  wwcUserDataCorrupted: കണ്ടെത്തി നീക്കി %i കേടായതാണ് അല്ലെങ്കിൽ പഴയ ഉപയോക്തൃ ഡാറ്റ
-    ഫയലുകൾ. അടുത്ത റീലോഡിൽ അവ ഇല്ലാതാക്കപ്പെടും.
   wwcConfigGUIPluginUpdateChatButton: പ്ലഗിൻ അപ്ഡേറ്റുകൾക്കായി ചാറ്റ് ഓർമ്മപ്പെടുത്തൽ
     അയയ്ക്കുക
   wwcConfigConversationSendTranslationChatSuccess: സജീവ വിവർത്തകൻ ചാറ്റ് ഓർമ്മപ്പെടുത്തൽ
@@ -230,9 +228,6 @@ Messages:
     5 ലേക്ക് സ്ഥിരസ്ഥിതിയായി...
   wwcTranslatorErrorThresholdReachedCheckLogs: കൂടുതൽ വിവരങ്ങൾക്ക് Chat പ്ലഗിൻ ഫോൾഡറിൽ
     errorLog.txt പരിശോധിക്കുക.
-  wwcConfigMaxResponseTimeInvalid: അസാധുവായ പരമാവധി പ്രതികരണ സമയം ചൊന്ഫിഗ്. യ്മ്ല്
-    വെച്ചു. 7 സെക്കൻഡ് വരെ സ്ഥിരസ്ഥിതിയായി...
-  wwcConfigMaxResponseTimeEnabled: പരമാവധി പ്രതികരണ സമയം %i സെക്കൻഡ് വരെ സജ്ജമാക്കി.
   wwctInvalidInputLangCode: 'അസാധുവായ ഇൻപുട്ട് ഭാഷാ കോഡ് നൽകി! സാധുവായ നീണ്ട കോഡുകൾ:
     %o'
   wwcsTitle: '% ഇ റെക്കോർഡ്'
@@ -283,24 +278,15 @@ Messages:
   wwcteOffTarget: എന്റിറ്റി വിവർത്തനം %i ന് അപ്രാപ്തമാക്കി.
   wwcCharLimit: നിങ്ങളുടെ സന്ദേശം ദൈർഘ്യമേറിയതാണ്! നിങ്ങളുടെ സന്ദേശം %i പ്രതീകങ്ങളേക്കാൾ
     കുറവാണെന്ന് ഉറപ്പുവരുത്തുക.
-  wwcConfigConversationResponseLimitInput: ഓരോ വിവർത്തകനുമുള്ള നിലവിലെ പ്രതികരണ സമയം
-    %i സെക്കൻഡ് ആണ്. ഒരു പുതിയ മൂല്യം സജ്ജമാക്കുന്നതിന് 0 ൽ കൂടുതലുള്ള എന്തും ടൈപ്പുചെയ്യുക,
-    അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്നതിനേക്കാൾ കുറവോ തുല്യമോ ആയ ഒന്നും ടൈപ്പുചെയ്യുക.
   wwcConfigConversationCharacterLimitInput: ഓരോ സന്ദേശത്തിനും നിലവിലെ പ്രതീക പരിധിയെ
     %i പ്രതീകങ്ങളാണ്. ഒരു പുതിയ മൂല്യം സജ്ജമാക്കുന്നതിന് 0 ൽ കൂടുതലുള്ള എന്തും ടൈപ്പുചെയ്യുക,
     അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്നതിനേക്കാൾ കുറവോ തുല്യമോ ആയ ഒന്നും ടൈപ്പുചെയ്യുക.
   wwcteOffSender: എന്റിറ്റി വിവർത്തനം അപ്രാപ്തമാക്കി.
   wwctGUIEntityButton: ടോഗിൾ എന്റിറ്റി വിവർത്തനം
-  wwcConfigConversationResponseLimitSuccess: പ്രതികരണ സമയപരിധി വിജയകരമായി സജ്ജമാക്കി.
   wwctrlRateLimitBadInt: നിങ്ങളുടെ നിരക്ക് പരിധി സാധുവായ പൂർണ്ണസംഖ്യയല്ല.
   wwcTranslatorErrorConsole: ഉപയോക്താവിനെ %i അവരുടെ പരിഭാഷ ശ്രമിക്കുമ്പോൾ ഒരു പ്രശ്നം
     സംഭവിച്ചു. കൂടുതൽ വിവരങ്ങൾക്ക് errorLog.txt പരിശോധിക്കുക.
-  wwctcOffSender: ചാറ്റ് വിവർത്തനം അപ്രാപ്തമാക്കി.
-  wwctcOnTarget: ചാറ്റ് പരിഭാഷ %i എന്നതിനായി പ്രവർത്തനക്ഷമമാക്കി.
-  wwctcOnSender: ചാറ്റ് വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. നിങ്ങൾ പറയുന്ന എന്തും വിവർത്തനം
-    ചെയ്യും!
   wwctGUIChatButton: ചാറ്റ് വിവർത്തനം ടോഗിൾ ചെയ്യുക
-  wwctcOffTarget: ചാറ്റ് വിവർത്തനം അപ്രാപ്തമാക്കി %i.
   wwcrBegin: റീലോഡുചെയ്യുന്നു ഛത്...
   wwctTranslationStoppedOtherPlayer: '%i ന് പരിഭാഷാ സെഷൻ നിർത്തി.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ആഗോള ചാറ്റ് വിവർത്തനം
@@ -320,3 +306,29 @@ Messages:
     ചെയ്യപ്പെടുന്നു, പക്ഷേ നിങ്ങൾക്ക് %o ലേക്ക് ഒരു സജീവ വിവർത്തന സെഷൻ ഉണ്ട്.
   wwcConfigGUIChangesNotSaved: നിങ്ങൾ/വ്വ്ച് ചുവന്ന തടസ്സം ക്ലിക്ക് വരെ നിങ്ങളുടെ
     മാറ്റങ്ങൾ പ്രാബല്യത്തിൽ വരികയില്ല.
+  wwcConfigConversationSendFailedTranslationChatSuccess: പരാജയപ്പെട്ടു വിവർത്തനം ചാറ്റ്
+    സന്ദേശം വിജയകരമായി ടോഗിൾ ചെയ്തു.
+  wwcConfigGUISendFailedTranslationChatButton: പരാജയപ്പെട്ട വിവർത്തനത്തിൽ ചാറ്റ് സന്ദേശം
+    അയയ്ക്കുക
+  wwctciOffSender: ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം അപ്രാപ്തമാക്കി.
+  wwctGUIChatIncomingButton: ടോഗിൾ ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം
+  wwctcoOffSender: ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം അപ്രാപ്തമാക്കി.
+  wwctcoOnSender: ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. നിങ്ങൾ പറയുന്ന
+    എന്തും വിവർത്തനം ചെയ്യും!
+  wwctciOnSender: ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. നിങ്ങൾക്ക് ലഭിക്കുന്ന
+    എന്തും വിവർത്തനം ചെയ്യും!
+  wwctGUIChatMenu: ടോഗിൾ ചാറ്റ് വിവർത്തനം മെനു
+  wwctcoOnTarget: ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം %i ന് പ്രാപ്തമാക്കി.
+  wwctcoOffTarget: ഔട്ട്ഗോയിംഗ് ചാറ്റ് പരിഭാഷ അപ്രാപ്തമാക്കി %i.
+  wwctGUIChatOutgoingButton: ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം ടോഗിൾ
+  wwctciOnTarget: ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം %i പ്രാപ്തമാക്കി.
+  wwctciOffTarget: ഇൻകമിംഗ് ചാറ്റ് പരിഭാഷ അപ്രാപ്തമാക്കി %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: ഹോവർ ടെക്സ്റ്റ് വിജയകരമായി
+    ടോഗിൾ ആയി വിവർത്തനം അറ്റാച്ച് യഥാർത്ഥ ഇൻകമിംഗ് ചാറ്റ്.
+  wwcConfigGUISendIncomingHoverTextChatButton: ഹോവർ ടെക്സ്റ്റ് ആയി യഥാർത്ഥ ഇൻകമിംഗ്
+    സന്ദേശങ്ങൾ ചേർക്കുക
+  wwctGUIExistingChatOutgoingEnabled: 'ഔട്ട്ഗോയിംഗ് ചാറ്റ് പരിഭാഷ പ്രാപ്തമാക്കി: %i'
+  wwctGUIExistingTranslationInput: 'ഇൻപുട്ട് ഭാഷ: %i'
+  wwctGUIExistingChatIncomingEnabled: 'ഇൻകമിംഗ് ചാറ്റ് പരിഭാഷ പ്രവർത്തനക്ഷമമാക്കി:
+    %i'
+  wwctGUIExistingTranslationOutput: 'ഔട്ട്പുട്ട് ഭാഷ: %i'

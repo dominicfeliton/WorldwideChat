@@ -11,7 +11,6 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsCharacterLimitConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsErrorLimitConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsGlobalRateConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsResponseLimitConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsTranslationCacheConversation;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
@@ -23,11 +22,11 @@ import fr.minuskube.inv.content.InventoryProvider;
 
 public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	public static final SmartInventory translatorSettings = SmartInventory.builder().id("translatorSettingsMenu")
-			.provider(new ConfigurationTranslatorSettingsGUI()).size(4, 9)
-			.manager(WorldwideChat.getInstance().getInventoryManager())
+			.provider(new ConfigurationTranslatorSettingsGUI()).size(3, 9)
+			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUITranslatorSettings"))
 			.build();
 
@@ -86,19 +85,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 				errorConvo.buildConversation(player).begin();
 			}));
 			
-			/* Option Seven: Max Translator Response Time */
-			ConversationFactory responseConvo = new ConversationFactory(main).withModality(true)
-					.withFirstPrompt(new TranslatorSettingsResponseLimitConversation());
-			ItemStack responseLimitButton = XMaterial.NAME_TAG.parseItem();
-			ItemMeta responseLimitMeta = responseLimitButton.getItemMeta();
-			responseLimitMeta.setDisplayName(ChatColor.GOLD
-					+ CommonDefinitions.getMessage("wwcConfigGUIResponseLimitButton"));
-			responseLimitButton.setItemMeta(responseLimitMeta);
-			contents.set(1, 7, ClickableItem.of(responseLimitButton, e -> {
-				responseConvo.buildConversation(player).begin();
-			}));
-			
-			/* Option Eight: Message Character Limit */
+			/* Option Seven: Message Character Limit */
 			ConversationFactory charConvo = new ConversationFactory(main).withModality(true)
 					.withFirstPrompt(new TranslatorSettingsCharacterLimitConversation());
 			ItemStack charLimitButton = XMaterial.NAME_TAG.parseItem();
@@ -106,12 +93,12 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			charLimitMeta.setDisplayName(ChatColor.GOLD
 					+ CommonDefinitions.getMessage("wwcConfigGUICharacterLimitButton"));
 			charLimitButton.setItemMeta(charLimitMeta);
-			contents.set(2, 1, ClickableItem.of(charLimitButton, e -> {
+			contents.set(1, 7, ClickableItem.of(charLimitButton, e -> {
 				charConvo.buildConversation(player).begin();
 			}));
 			
 			/* Bottom Right Option: Previous Page */
-			contents.set(3, 1,
+			contents.set(2, 1,
 					ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), 
 							e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
 
@@ -121,7 +108,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			quitMeta.setDisplayName(ChatColor.RED
 					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
 			quitButton.setItemMeta(quitMeta);
-			contents.set(3, 4, ClickableItem.of(quitButton, e -> {
+			contents.set(2, 4, ClickableItem.of(quitButton, e -> {
 				main.removePlayerUsingConfigurationGUI(player);
 				player.closeInventory();
 				main.reload(player);

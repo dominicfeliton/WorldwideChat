@@ -62,8 +62,6 @@ Messages:
   wwctbOnSender: Preklad kníh povolený. Kliknite pravým tlačidlom myši, zatiaľ čo
     držíte knihu preložiť!
   wwcListenersInitialized: Inicializovaní poslucháči.
-  wwcUserDataCorrupted: Nájdené a presunuté %i poškodené alebo staré používateľské
-    dátové súbory. Budú vymazané pri ďalšom opätovnom načítaní.
   wwcConfigGUIPluginUpdateChatButton: Odoslať pripomenutie konverzácie pre aktualizácie
     doplnku
   wwcConfigConversationSendTranslationChatSuccess: Aktívna pripomienka chatu prekladateľa
@@ -237,9 +235,6 @@ Messages:
     Predvolené na 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Skontrolujte errorLog.txt v priečinku
     WorldwideChat plugin pre viac informácií.
-  wwcConfigMaxResponseTimeInvalid: Neplatný maximálny čas odozvy nastavený v config.yml.
-    Predvolené na 7 sekúnd...
-  wwcConfigMaxResponseTimeEnabled: Maximálny čas odozvy nastavený na %i sekúnd.
   wwctInvalidInputLangCode: 'Zadaný neplatný kód zadávacieho jazyka! Platné kódy lang:
     %o'
   wwcsTitle: Záznam %i
@@ -290,23 +285,15 @@ Messages:
   wwcteOffTarget: Preklad entít vypnutý pre %i.
   wwcCharLimit: Vaša správa je príliš dlhá! Uistite sa, že vaša správa je menšia ako
     %i znakov.
-  wwcConfigConversationResponseLimitInput: Aktuálny časový limit odpovede pre každého
-    prekladateľa je %i sekúnd. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú
-    hodnotu, alebo zadajte niečo menšie alebo rovnajúce sa 0 a vráťte sa späť.
   wwcConfigConversationCharacterLimitInput: Aktuálny limit znakov na správu je %i
     znakov. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu, alebo
     zadajte niečo menšie alebo rovnajúce sa 0 a vráťte sa späť.
   wwcteOffSender: Preklad entít vypnutý.
   wwctGUIEntityButton: Prepnúť preklad entity
-  wwcConfigConversationResponseLimitSuccess: Časový limit odpovede nastavený úspešne.
   wwctrlRateLimitBadInt: Váš limit sadzby nie je platné celé číslo.
   wwcTranslatorErrorConsole: Vyskytol sa problém, keď používateľ %i sa pokúšal o ich
     preklad. Skontrolujte, prosím, errorLog.txt pre viac informácií.
-  wwctcOffSender: Preklad chatu vypnutý.
-  wwctcOnTarget: Preklad chatu povolený pre %i.
-  wwctcOnSender: Preklad chatu povolený. Čokoľvek poviete, bude preložené!
   wwctGUIChatButton: Prepnúť preklad konverzácie
-  wwctcOffTarget: Preklad chatu vypnutý pre %i.
   wwcrBegin: Opätovné načítanie WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Prekladateľská relácia pre %i bola zastavená.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globálny chat sa prekladá,
@@ -325,3 +312,29 @@ Messages:
     ale máte aktívnu reláciu prekladu do %o.
   wwcConfigGUIChangesNotSaved: Vaše zmeny sa prejavia, kým nekliknete na červenú bariéru
     v /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Nepodarilo sa preložiť správa
+    konverzácie úspešne prepínané.
+  wwcConfigGUISendFailedTranslationChatButton: Odoslanie správy chatu na zlyhal preklad
+  wwctciOffSender: Prichádzajúci preklad chatu zakázaný.
+  wwctGUIChatIncomingButton: Prepnúť preklad prichádzajúceho rozhovoru
+  wwctcoOffSender: Odchádzajúci preklad chatu zakázaný.
+  wwctcoOnSender: Preklad odchádzajúcej konverzácie povolený. Čokoľvek poviete, bude
+    preložené!
+  wwctciOnSender: Prichádzajúci preklad chatu povolený. Všetko, čo dostanete, bude
+    preložené!
+  wwctGUIChatMenu: Prepnúť menu Preklad konverzácie
+  wwctcoOnTarget: Preklad odchádzajúcej konverzácie povolený pre %i.
+  wwctcoOffTarget: Preklad odchádzajúcej konverzácie zakázaný pre %i.
+  wwctGUIChatOutgoingButton: Prepnúť preklad odchádzajúcej konverzácie
+  wwctciOnTarget: Prichádzajúci preklad chatu povolený pre %i.
+  wwctciOffTarget: Prichádzajúci preklad chatu vypnutý pre %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Pôvodný prichádzajúci chat
+    pripojený k prekladu ako text kurzora úspešne prepínal.
+  wwcConfigGUISendIncomingHoverTextChatButton: Pridať pôvodné prichádzajúce správy
+    ako text kurzorom
+  wwctGUIExistingChatOutgoingEnabled: 'Povolený preklad odchádzajúcej konverzácie:
+    %i'
+  wwctGUIExistingTranslationInput: 'Vstupný jazyk: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Povolený preklad prichádzajúceho rozhovoru:
+    %i'
+  wwctGUIExistingTranslationOutput: 'Výstupný jazyk: %i'

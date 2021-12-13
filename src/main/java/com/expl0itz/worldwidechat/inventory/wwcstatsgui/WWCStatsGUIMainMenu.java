@@ -21,7 +21,7 @@ import net.md_5.bungee.api.ChatColor;
 
 public class WWCStatsGUIMainMenu implements InventoryProvider {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 	
 	private String targetPlayerUUID = "";
 	
@@ -32,7 +32,7 @@ public class WWCStatsGUIMainMenu implements InventoryProvider {
 	public static SmartInventory getStatsMainMenu(String targetPlayerUUID) {
 		return SmartInventory.builder().id("statsMainMenu")
 				.provider(new WWCStatsGUIMainMenu(targetPlayerUUID)).size(5, 9)
-				.manager(WorldwideChat.getInstance().getInventoryManager())
+				.manager(WorldwideChat.instance.getInventoryManager())
 				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcsTitle", new String[] {Bukkit.getPlayer(UUID.fromString(targetPlayerUUID)).getName()}))
 				.build();
 	}

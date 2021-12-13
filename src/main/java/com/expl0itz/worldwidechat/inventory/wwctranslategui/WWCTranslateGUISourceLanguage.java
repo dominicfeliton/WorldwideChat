@@ -24,7 +24,7 @@ import fr.minuskube.inv.content.SlotIterator;
 
 public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	private String selectedSourceLanguage = "";
 	private String targetPlayerUUID = "";
@@ -37,7 +37,7 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 	public static SmartInventory getSourceLanguageInventory(String s, String targetPlayerUUID) {
 		return SmartInventory.builder().id("translateSourceLanguage")
 				.provider(new WWCTranslateGUISourceLanguage(s, targetPlayerUUID)).size(6, 9)
-				.manager(WorldwideChat.getInstance().getInventoryManager())
+				.manager(WorldwideChat.instance.getInventoryManager())
 				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUINewTranslationSource"))
 				.build();
 	}
@@ -98,24 +98,27 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 			}
 
 			/* Bottom Middle Option: Auto-detect Source Language */
-			ItemStack skipSourceButton = XMaterial.BOOKSHELF.parseItem();
-			ItemMeta skipSourceMeta = skipSourceButton.getItemMeta();
-			skipSourceMeta.setDisplayName(ChatColor.YELLOW
-					+ CommonDefinitions.getMessage("wwctGUIAutoDetectButton"));
-			
-			/* Add Glow Effect */
-			skipSourceMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-			ArrayList<String> lore = new ArrayList<>();
-			if ((currTranslator.getInLangCode().equals("None"))) {
-				skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
-				lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
-			} else if (selectedSourceLanguage.equalsIgnoreCase("None")) {
-				skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
-				lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
+			/* Disabled for Amazon Translate */
+			if (!main.getTranslatorName().equalsIgnoreCase("Amazon Translate")) {
+				ItemStack skipSourceButton = XMaterial.BOOKSHELF.parseItem();
+				ItemMeta skipSourceMeta = skipSourceButton.getItemMeta();
+				skipSourceMeta.setDisplayName(ChatColor.YELLOW
+						+ CommonDefinitions.getMessage("wwctGUIAutoDetectButton"));
+				
+				/* Add Glow Effect */
+				skipSourceMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+				ArrayList<String> lore = new ArrayList<>();
+				if ((currTranslator.getInLangCode().equals("None"))) {
+					skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
+					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
+				} else if (selectedSourceLanguage.equalsIgnoreCase("None")) {
+					skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
+				}
+				skipSourceButton.setItemMeta(skipSourceMeta);
+				contents.set(5, 4, ClickableItem.of(skipSourceButton, e -> WWCTranslateGUITargetLanguage
+						.getTargetLanguageInventory("None", targetPlayerUUID).open(player)));
 			}
-			skipSourceButton.setItemMeta(skipSourceMeta);
-			contents.set(5, 4, ClickableItem.of(skipSourceButton, e -> WWCTranslateGUITargetLanguage
-					.getTargetLanguageInventory("None", targetPlayerUUID).open(player)));
 
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {

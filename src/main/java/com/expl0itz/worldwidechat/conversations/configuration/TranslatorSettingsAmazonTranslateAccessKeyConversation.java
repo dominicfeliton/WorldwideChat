@@ -16,7 +16,7 @@ import net.md_5.bungee.api.ChatColor;
 
 public class TranslatorSettingsAmazonTranslateAccessKeyConversation extends StringPrompt {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	@Override
 	public String getPromptText(ConversationContext context) {

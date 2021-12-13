@@ -64,8 +64,6 @@ Messages:
   wwctbOnSender: புத்தக மொழிபெயர்ப்பு இயக்கப்பட்டது. அதை மொழிபெயர்க்க ஒரு புத்தகம்
     வைத்திருக்கும் போது வலது கிளிக்!
   wwcListenersInitialized: கேட்போர் துவக்கினார்.
-  wwcUserDataCorrupted: கண்டுபிடிக்கப்பட்டது மற்றும் நகர்த்தும் %i சிதைந்த அல்லது
-    பழைய பயனர் தரவு கோப்புகள். அடுத்த மறுஏற்றத்தில் அவை நீக்கப்படும்.
   wwcConfigGUIPluginUpdateChatButton: செருகுநிரல் மேம்படுத்தல்கள் அரட்டை நினைவூட்டல்
     அனுப்பவும்
   wwcConfigConversationSendTranslationChatSuccess: செயலில் மொழிபெயர்ப்பாளர் அரட்டை
@@ -240,9 +238,6 @@ Messages:
     5 க்கு இயல்புநிலைக்கு...
   wwcTranslatorErrorThresholdReachedCheckLogs: மேலும் தகவலுக்கு WorldWideSat சொருகி
     கோப்புறையில் errorLog.txt சரிபார்க்கவும்.
-  wwcConfigMaxResponseTimeInvalid: தவறான அதிகபட்சம் பதில் நேரம் config.yml அமைக்க.
-    7 விநாடிகளுக்கு இயல்புநிலைக்கு...
-  wwcConfigMaxResponseTimeEnabled: மேக்ஸ் பதில் நேரம் %i விநாடிகளுக்கு அமைக்கப்பட்டுள்ளது.
   wwctInvalidInputLangCode: 'செல்லுபடியாகும் உள்ளீடு மொழி குறியீடு வழங்கப்படும்!
     செல்லுபடியாகும் லாங் குறியீடுகள்: %o'
   wwcsTitle: '%i பதிவு'
@@ -296,23 +291,15 @@ Messages:
   wwcteOffTarget: நிறுவனம் மொழிபெயர்ப்பு முடக்கப்பட்டது %i.
   wwcCharLimit: உங்கள் செய்தி மிக நீளமாக உள்ளது! தயவுசெய்து உங்கள் செய்தி %i எழுத்துக்களுக்கு
     குறைவாக உள்ளதா என்பதை உறுதிப்படுத்தவும்.
-  wwcConfigConversationResponseLimitInput: ஒவ்வொரு மொழிபெயர்ப்பாளருக்கும் தற்போதைய
-    பதில் நேரம் முடிந்து %i வினாடிகள் ஆகும். ஒரு புதிய மதிப்பு அமைக்க 0 விட அதிகமாக
-    எதையும் தட்டச்சு, அல்லது திரும்பி செல்ல 0 குறைவாக அல்லது சமமாக எதையும் தட்டச்சு.
   wwcConfigConversationCharacterLimitInput: செய்திக்கு தற்போதைய எழுத்து வரம்பு %i
     எழுத்துக்கள் ஆகும். ஒரு புதிய மதிப்பு அமைக்க 0 விட அதிகமாக எதையும் தட்டச்சு, அல்லது
     திரும்பி செல்ல 0 குறைவாக அல்லது சமமாக எதையும் தட்டச்சு.
   wwcteOffSender: நிறுவனம் மொழிபெயர்ப்பு முடக்கப்பட்டது.
   wwctGUIEntityButton: மாற்று நிறுவனம் மொழிபெயர்ப்பு
-  wwcConfigConversationResponseLimitSuccess: பதில் காலாவதி வெற்றிகரமாக அமைக்க.
   wwctrlRateLimitBadInt: உங்கள் வீத வரம்பு செல்லுபடியாகும் முழு எண் அல்ல.
   wwcTranslatorErrorConsole: பயனர் %i அவர்களின் மொழிபெயர்ப்பை முயற்சிக்கும் போது ஒரு
     சிக்கல் ஏற்பட்டது. மேலும் விவரங்களுக்கு errorLog.txt சரிபார்க்கவும்.
-  wwctcOffSender: அரட்டை மொழிபெயர்ப்பு முடக்கப்பட்டுள்ளது.
-  wwctcOnTarget: அரட்டை மொழிபெயர்ப்பு %i க்கு இயக்கப்பட்டது.
-  wwctcOnSender: அரட்டை மொழிபெயர்ப்பு இயக்கப்பட்டது நீங்கள் சொல்வது எதையும் மொழிபெயர்க்கப்படும்!
   wwctGUIChatButton: அரட்டை மொழிபெயர்ப்பு
-  wwctcOffTarget: அரட்டை மொழிபெயர்ப்பு %i க்கு முடக்கப்பட்டது.
   wwcrBegin: WorldWideSat மீண்டும் ஏற்றுகிறது...
   wwctTranslationStoppedOtherPlayer: '%i க்கு மொழிபெயர்ப்பு அமர்வு நிறுத்தப்பட்டுள்ளது.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: உலகளாவிய அரட்டை மொழிபெயர்க்கப்பட்டுள்ளது,
@@ -332,3 +319,30 @@ Messages:
     ஆனால் உங்களுக்கு %o க்கு செயலில் உள்ள மொழிபெயர்ப்பு அமர்வு உள்ளது.
   wwcConfigGUIChangesNotSaved: நீங்கள் /wwcc சிவப்பு தடையை கிளிக் செய்யும் வரை உங்கள்
     மாற்றங்கள் அமல்படுத்தாது.
+  wwcConfigConversationSendFailedTranslationChatSuccess: தோல்வியுற்ற மொழிபெயர்ப்பு
+    அரட்டை செய்தி வெற்றிகரமாக மாற்றப்பட்டது.
+  wwcConfigGUISendFailedTranslationChatButton: தோல்வியுற்ற மொழிபெயர்ப்பில் அரட்டை
+    செய்தி அனுப்பவும்
+  wwctciOffSender: உள்வரும் அரட்டை மொழிபெயர்ப்பு முடக்கப்பட்டுள்ளது.
+  wwctGUIChatIncomingButton: உள்வரும் அரட்டை மொழிபெயர்ப்பு மாற்று
+  wwctcoOffSender: வெளிச்செல்லும் அரட்டை மொழிபெயர்ப்பு முடக்கப்பட்டுள்ளது.
+  wwctcoOnSender: வெளிச்செல்லும் அரட்டை மொழிபெயர்ப்பு செயல்படுத்தப்படும். நீங்கள்
+    சொல்லும் எதையும் மொழிபெயர்க்கப்படும்!
+  wwctciOnSender: உள்வரும் அரட்டை மொழிபெயர்ப்பு செயல்படுத்தப்படும். நீங்கள் பெறும்
+    எதையும் மொழிபெயர்க்க வேண்டும்!
+  wwctGUIChatMenu: அரட்டை மொழிபெயர்ப்பு பட்டி மாற்று
+  wwctcoOnTarget: வெளிச்செல்லும் அரட்டை மொழிபெயர்ப்பு %i க்கு செயல்படுத்தப்பட்டது.
+  wwctcoOffTarget: வெளிச்செல்லும் அரட்டை மொழிபெயர்ப்பு %i க்கு முடக்கப்பட்டுள்ளது.
+  wwctGUIChatOutgoingButton: வெளிச்செல்லும் அரட்டை மொழிபெயர்ப்பு மாற்று
+  wwctciOnTarget: உள்வரும் அரட்டை மொழிபெயர்ப்பு %i க்கு செயல்படுத்தப்பட்டது.
+  wwctciOffTarget: உள்வரும் அரட்டை மொழிபெயர்ப்பு %i க்கு முடக்கப்பட்டுள்ளது.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: மிதவை உரை வெற்றிகரமாக மாற்று
+    போன்ற அசல் உள்வரும் அரட்டை மொழிபெயர்ப்பு இணைக்கப்பட்ட.
+  wwcConfigGUISendIncomingHoverTextChatButton: ஹோவர் உரையாக அசல் உள்வரும் செய்திகளைச்
+    சேர்க்கவும்
+  wwctGUIExistingChatOutgoingEnabled: 'வெளிச்செல்லும் அரட்டை மொழிபெயர்ப்பு இயக்கப்பட்டது:
+    %i'
+  wwctGUIExistingTranslationInput: 'உள்ளீட்டு மொழி: %i'
+  wwctGUIExistingChatIncomingEnabled: 'உள்வரும் அரட்டை மொழிபெயர்ப்பு இயக்கப்பட்டது:
+    %i'
+  wwctGUIExistingTranslationOutput: 'வெளியீட்டு மொழி: %i'

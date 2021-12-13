@@ -63,8 +63,6 @@ Messages:
   wwctbOnSender: Prevajanje knjige je omogočeno. Z desno tipko miške, medtem ko držite
     knjigo, da jo prevedete
   wwcListenersInitialized: Inicializirani poslušalci.
-  wwcUserDataCorrupted: Najdeno in premaknjeno %i poškodovane ali stare uporabniške
-    podatkovne datoteke. Ti bodo izbrisani ob naslednjem ponovnem nalaganju.
   wwcConfigGUIPluginUpdateChatButton: Pošlji opomnik klepeta za posodobitve vtičnikov
   wwcConfigConversationSendTranslationChatSuccess: Aktivni prevajalec klepet opomnik
     uspešno preklapljanje.
@@ -231,9 +229,6 @@ Messages:
     config.yml. V neplačilu do 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Za več informacij preverite errorLog.txt
     v mapi WorldwideChat plugin.
-  wwcConfigMaxResponseTimeInvalid: Neveljaven maksimalni odzivni čas, določen v config.yml.
-    Privzetje do 7 sekund...
-  wwcConfigMaxResponseTimeEnabled: Maksimalni odzivni čas nastavljen na %i sekunde.
   wwctInvalidInputLangCode: 'Neveljavna koda jezika vnosa na voljo! Veljavne kode
     lang: %o'
   wwcsTitle: Zapis od %i
@@ -286,23 +281,15 @@ Messages:
   wwcteOffTarget: Prevod entitete onemogočen za %i.
   wwcCharLimit: Vaše sporočilo je predolgo! Prosimo, poskrbite, da je vaše sporočilo
     manjše od %i znakov v dolžino.
-  wwcConfigConversationResponseLimitInput: Trenutni odzivni čas za vsak prevajalec
-    je %i sekund. Vnesite karkoli večje od 0, če želite nastaviti novo vrednost, ali
-    pa vnesite karkoli, ki je manjša ali enaka 0, da se vrnete nazaj.
   wwcConfigConversationCharacterLimitInput: Trenutna omejitev znakov na sporočilo
     je %i znakov. Vnesite karkoli večje od 0, če želite nastaviti novo vrednost, ali
     pa vnesite karkoli, ki je manjša ali enaka 0, da se vrnete nazaj.
   wwcteOffSender: Prevod entitete onemogočen.
   wwctGUIEntityButton: Preklop prevodov entitete
-  wwcConfigConversationResponseLimitSuccess: Odzivni čas je bil uspešno nastavljen.
   wwctrlRateLimitBadInt: Vaša omejitev stopnje ni veljavno celo število.
   wwcTranslatorErrorConsole: Do težave je prišlo, medtem ko je uporabnik %i poskušal
     njihov prevod. Prosimo, preverite errorLog.txt za več podrobnosti.
-  wwctcOffSender: Prevod klepeta onemogočen.
-  wwctcOnTarget: Prevod klepeta je omogočen za %i.
-  wwctcOnSender: Prevod klepeta omogočen. Vse, kar rečeš, bo prevedeno!
   wwctGUIChatButton: Preklop prevajanja klepeta
-  wwctcOffTarget: Prevod klepeta onemogočen za %i.
   wwcrBegin: Ponovno nalaganje WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Prevajalska seja za %i je bila prekinjena.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globalni klepet se prevaja,
@@ -321,3 +308,25 @@ Messages:
     vendar imate aktivno prevajanje na %o.
   wwcConfigGUIChangesNotSaved: Vaše spremembe ne bodo začele veljati, dokler ne boste
     kliknili na rdečo pregrado v /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Sporočilo za klepet ni uspelo
+    pretoggled uspešno.
+  wwcConfigGUISendFailedTranslationChatButton: Pošlji klepet sporočilo o neuspelem
+  wwctciOffSender: Prevod dohodnega klepeta onemogočen.
+  wwctGUIChatIncomingButton: Preklop dohodnega klepeta prevajanja
+  wwctcoOffSender: Odhodni klepet prevod onemogočen.
+  wwctcoOnSender: Odhodni klepet prevod omogočeno. Vse, kar pravite, bo prevedeno!
+  wwctciOnSender: Dohodni klepet prevod omogočeno. Vse, kar prejmete, bo prevedeno!
+  wwctGUIChatMenu: Preklopi meni za prevajanje klepeta
+  wwctcoOnTarget: Odhodni klepet prevod omogočen za %i.
+  wwctcoOffTarget: Odhodni klepet prevod onemogočen za %i.
+  wwctGUIChatOutgoingButton: Preklop odhodnega klepeta prevajanja
+  wwctciOnTarget: Dohodni klepet prevod omogočen za %i.
+  wwctciOffTarget: Dohodni klepet prevod onemogočen za %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Izvirni dohodni klepet, priložen
+    prevod kot lebdeče besedilo preklopljeno uspešno.
+  wwcConfigGUISendIncomingHoverTextChatButton: Dodajanje izvirnih dohodnih sporočil
+    kot kazalca miške
+  wwctGUIExistingChatOutgoingEnabled: 'Odhodni klepet prevod omogočeno: %i'
+  wwctGUIExistingTranslationInput: 'Jezik vnosa: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Dohodni klepet prevod omogočeno: %i'
+  wwctGUIExistingTranslationOutput: 'Jezik izhoda: %i'

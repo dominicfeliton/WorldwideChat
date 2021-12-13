@@ -62,8 +62,6 @@ Messages:
   wwctbOnSender: Tafsiri ya kitabu imewezeshwa. Bonyeza-click wakati ameshika kitabu
     cha kutafsiri!
   wwcListenersInitialized: Wasikilizaji walioanzishwa.
-  wwcUserDataCorrupted: Imepatikana na kuhamisha %i faili zilizoharibika au za zamani
-    za data za mtumiaji. Wao watafutwa kwenye reload ijayo.
   wwcConfigGUIPluginUpdateChatButton: Tuma Mawaidha ya Ongea kwa Mipangilio
   wwcConfigConversationSendTranslationChatSuccess: Active translator chat ukumbusho
     ilibadilisha kwa mafanikio.
@@ -225,9 +223,6 @@ Messages:
     Defaulting kwa 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Tafadhali angalia errorLog.txt katika
     folda ya Plugin ya WorldwideChat kwa maelezo zaidi.
-  wwcConfigMaxResponseTimeInvalid: Batili max majibu wakati kuweka katika config.yml.
-    Defaulting kwa sekunde 7...
-  wwcConfigMaxResponseTimeEnabled: Muda wa kukabiliana na upeo umewekwa kwa %i sekunde.
   wwctInvalidInputLangCode: 'Batili pembejeo lugha code zinazotolewa! Nambari za lang
     halali: %o'
   wwcsTitle: Rekodi ya %i
@@ -279,23 +274,15 @@ Messages:
   wwcteOffTarget: Tafsiri ya chombo imezimwa kwa %i.
   wwcCharLimit: Ujumbe wako ni mrefu sana! Tafadhali hakikisha ujumbe wako uko chini
     ya herufi ya %i kwa urefu.
-  wwcConfigConversationResponseLimitInput: majibu ya sasa umeisha kwa kila translator
-    ni %i sekunde. Andika kitu chochote zaidi kuliko 0 kuweka thamani mpya, au aina
-    kitu chochote chini ya au sawa na 0 kurudi nyuma.
   wwcConfigConversationCharacterLimitInput: Kikomo cha tabia ya sasa kwa kila ujumbe
     ni %i herufi. Andika kitu chochote zaidi kuliko 0 kuweka thamani mpya, au aina
     kitu chochote chini ya au sawa na 0 kurudi nyuma.
   wwcteOffSender: Chombo tafsiri walemavu.
   wwctGUIEntityButton: Badilisha Tafsiri ya Chombo
-  wwcConfigConversationResponseLimitSuccess: Mwitikio wa majibu umewekwa kwa mafanikio.
   wwctrlRateLimitBadInt: Kiwango chako cha kikomo si integer halali.
   wwcTranslatorErrorConsole: Tatizo lilitokea wakati mtumiaji %i alikuwa akijaribu
     tafsiri yao. Tafadhali angalia errorLog.txt kwa maelezo zaidi.
-  wwctcOffSender: Chat tafsiri walemavu.
-  wwctcOnTarget: Tafsiri ya Ongea imewezeshwa kwa %i.
-  wwctcOnSender: Tafsiri ya kuzungumza imewezeshwa. Kitu chochote unachosema kitafsiriwa!
   wwctGUIChatButton: Badilisha Tafsiri ya Soga
-  wwctcOffTarget: Tafsiri ya Ongea walemavu kwa %i.
   wwcrBegin: Kurejesha upya WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Kikao cha tafsiri kwa %i kimesimamishwa.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Mazungumzo ya kimataifa
@@ -315,3 +302,26 @@ Messages:
     yanatafsiriwa, lakini una kikao cha kutafsiri cha kazi kwa %o.
   wwcConfigGUIChangesNotSaved: Mabadiliko yako hayatachukua athari mpaka bonyeza kizuizi
     nyekundu katika/wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Imeshindwa ujumbe wa kutafsiri
+    chat kugeuzwa kwa mafanikio.
+  wwcConfigGUISendFailedTranslationChatButton: Tuma Ujumbe wa Ongea kwenye tafsiri
+    Im
+  wwctciOffSender: Tafsiri zinazoingia chat walemavu
+  wwctGUIChatIncomingButton: Badilisha Tafsiri ya Ongea Zinazoingia
+  wwctcoOffSender: Kutoka chat tafsiri walemavu.
+  wwctcoOnSender: Kutoka chat tafsiri kuwezeshwa. Kitu chochote unachosema kitatafsiriwa!
+  wwctciOnSender: Tafsiri zinazoingia chat kuwezeshwa Kitu chochote kupokea kitatafsiriwa!
+  wwctGUIChatMenu: Badilisha Menyu ya tafsiri ya Ongea
+  wwctcoOnTarget: Tafsiri ya mazungumzo inayotoka imewezeshwa kwa %i.
+  wwctcoOffTarget: Kutoka chat tafsiri walemavu kwa %i.
+  wwctGUIChatOutgoingButton: Badilisha tafsiri ya Ongea Zinazoondoka
+  wwctciOnTarget: Tafsiri ya mazungumzo inayoingia imewezeshwa kwa %i.
+  wwctciOffTarget: Tafsiri ya mazungumzo inayoingia imezimwa kwa %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Original zinazoingia chat
+    masharti ya tafsiri kama hover maandishi kugeuzwa kwa mafanikio.
+  wwcConfigGUISendIncomingHoverTextChatButton: Ongeza Ujumbe wa awali unaoingia kama
+    Hover Nakala
+  wwctGUIExistingChatOutgoingEnabled: 'Tafsiri ya Soga inayotoka Imewezeshwa: %'
+  wwctGUIExistingTranslationInput: 'Lugha ya Ingiza: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Tafsiri ya Ongea inayoingia Imewezeshwa: %'
+  wwctGUIExistingTranslationOutput: 'Lugha ya Pato: %i'

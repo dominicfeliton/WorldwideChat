@@ -59,8 +59,6 @@ Messages:
   wwctbOnSender: Кітап аудармасы қосылған. Оны аудару үшін кітапты ұстап тұрғанда
     тінтуірдің оң жақ түймешігімен нұқыңыз!
   wwcListenersInitialized: Инициализацияланған тыңдаушылар.
-  wwcUserDataCorrupted: '%i бүлінген немесе ескі пайдаланушы деректерінің файлдары
-    табылды және қозғалады. Олар келесі қайта жүктеуде жойылады.'
   wwcConfigGUIPluginUpdateChatButton: Плагин жаңартулары үшін чат еске салғышты
   wwcConfigConversationSendTranslationChatSuccess: Белсенді аудармашы чат еске салғыш
     сәтті шықты.
@@ -222,9 +220,6 @@ Messages:
     5 дефолт...
   wwcTranslatorErrorThresholdReachedCheckLogs: Қосымша ақпарат алу үшін WorldwideChat
     плагин қалтасында errorLog.txt тексеріңіз.
-  wwcConfigMaxResponseTimeInvalid: config.yml ішінде орнатылған жарамсыз макс жауап
-    уақыты. 7 секундқа дефолт...
-  wwcConfigMaxResponseTimeEnabled: Макс жауап беру уақыты %i секундқа орнатылады.
   wwctInvalidInputLangCode: 'Жарамсыз енгізу тілінің коды берілген! Жарамды кодтары:
     %o'
   wwcsTitle: '%i жазбасы'
@@ -277,23 +272,15 @@ Messages:
   wwcteOffTarget: Субъект аудармасы %i өшірілген.
   wwcCharLimit: Сіздің хабарламаңыз тым ұзақ! Хабарламаңыздың ұзындығы %i таңбаларынан
     аз екеніне көз жеткізіңіз.
-  wwcConfigConversationResponseLimitInput: Әр аудармашы үшін ағымдағы жауап беру мерзімі
-    %i секунд. Жаңа мәнді орнату үшін 0-ден асатын нәрсені теріңіз немесе кері оралу
-    үшін 0-ден аз немесе тең нәрсені теріңіз.
   wwcConfigConversationCharacterLimitInput: Бір хабардың ағымдағы таңбалар шегі %i
     таңбалары болып табылады. Жаңа мәнді орнату үшін 0-ден асатын нәрсені теріңіз
     немесе кері оралу үшін 0-ден аз немесе тең нәрсені теріңіз.
   wwcteOffSender: Субъект аударма өшірілген.
   wwctGUIEntityButton: Toggle субъектінің аудармасы
-  wwcConfigConversationResponseLimitSuccess: Жауап беру мерзімдері сәтті орнатылған.
   wwctrlRateLimitBadInt: Сіздің мөлшерлеме шегі жарамды бүтін сан емес.
   wwcTranslatorErrorConsole: '%i қолдануда олардың аудармасын жасау кезінде проблема
     туындады. Қосымша ақпарат алу үшін errorLog.txt тексеріңіз.'
-  wwctcOffSender: Чат аударма өшірілген.
-  wwctcOnTarget: Чат аудармасы %i үшін қосылған.
-  wwctcOnSender: Чат аудармасы қосылған. Сіз айтқан нәрсе аударылады!
   wwctGUIChatButton: Toggle чат аудармасы
-  wwctcOffTarget: Чат аудармасы өшірілген %i.
   wwcrBegin: Әлемді қайта жүктеу WidecHat...
   wwctTranslationStoppedOtherPlayer: '%i үшін аударма сессиясы тоқтатылды.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Ғаламдық чат аударылып
@@ -312,3 +299,26 @@ Messages:
     жатыр, бірақ сіздің %o үшін белсенді аударма сеансы бар.
   wwcConfigGUIChangesNotSaved: /wwcc-дегі қызыл тосқауылды басқанша сіздің өзгертулеріңіз
     күшіне енеді.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Сәтсіз аударма чат хабары
+    сәтті ауыстырылды.
+  wwcConfigGUISendFailedTranslationChatButton: Орындалмаған аударма туралы чат хабарын
+    жіберу
+  wwctciOffSender: Кіріс чат аударма өшірілген.
+  wwctGUIChatIncomingButton: Toggle Кіріс чат аударма
+  wwctcoOffSender: Шығыс чат аудармасы өшірілген.
+  wwctcoOnSender: Шығыс чат аудармасы қосылған. Сіз айтқан кез келген нәрсе аударылады!
+  wwctciOnSender: Кіріс чат аудармасы қосылған. Сіз алған кез келген нәрсе аударылады!
+  wwctGUIChatMenu: Toggle чат аударма мәзірі
+  wwctcoOnTarget: '%i үшін шығыс чат аудармасы қосылған.'
+  wwctcoOffTarget: '%i үшін шығыс чат аудармасы өшірілген.'
+  wwctGUIChatOutgoingButton: Шығыс чат аудармасы
+  wwctciOnTarget: Кіріс чат аудармасы %i үшін қосылған.
+  wwctciOffTarget: Кіріс чат аудармасы өшірілген %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Түпнұсқа кіріс чат аударманы
+    сәтті ауыстырған мәтін ретінде аударуға қоса беріледі.
+  wwcConfigGUISendIncomingHoverTextChatButton: Бастапқы кіріс хабарларын Hover мәтіні
+    ретінде қосу
+  wwctGUIExistingChatOutgoingEnabled: 'Шығыс чат аудармасы қосылған: %i'
+  wwctGUIExistingTranslationInput: 'Кіріс тілі: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Кіріс чат аудармасы қосылған: %i'
+  wwctGUIExistingTranslationOutput: 'Шығу тілі: %i'

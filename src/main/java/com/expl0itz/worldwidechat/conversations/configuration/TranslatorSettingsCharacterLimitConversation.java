@@ -16,19 +16,18 @@ import net.md_5.bungee.api.ChatColor;
 
 public class TranslatorSettingsCharacterLimitConversation extends NumericPrompt {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 	
 	@Override
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		((Player) context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationCharacterLimitInput", new String[] {"" + main.getMessageCharLimit()});
+		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationCharacterLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.messageCharLimit")});
 	}
 
 	@Override
 	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 		if (input.intValue() > 0) {
-			main.setMessageCharLimit(input.intValue());
 			main.getConfigManager().getMainConfig().set("Translator.messageCharLimit", input.intValue());
 			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
 			final TextComponent successfulChange = Component.text()

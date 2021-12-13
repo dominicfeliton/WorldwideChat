@@ -16,19 +16,18 @@ import net.md_5.bungee.api.ChatColor;
 
 public class GeneralSettingsUpdateCheckerConversation extends NumericPrompt {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	@Override
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		((Player) context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationUpdateCheckerInput", new String[] {main.getUpdateCheckerDelay() + ""});
+		return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationUpdateCheckerInput", new String[] {main.getConfigManager().getMainConfig().getInt("General.updateCheckerDelay") + ""});
 	}
 
 	@Override
 	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 		if (input.intValue() > 10) {
-			main.setUpdateCheckerDelay(input.intValue());
 			main.getConfigManager().getMainConfig().set("General.updateCheckerDelay", input.intValue());
 			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
 			final TextComponent successfulChange = Component.text()

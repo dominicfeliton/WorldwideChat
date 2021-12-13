@@ -59,8 +59,6 @@ Messages:
   wwcgLangToLangStart: Şimdi küresel sohbeti %i ile %o'ya çevriliyor.
   wwctbOnSender: Kitap çevirisi etkin. Çevirmek için bir kitap tutarken sağ tıklayın!
   wwcListenersInitialized: İlk dinleyiciler.
-  wwcUserDataCorrupted: '%i bozuk veya eski kullanıcı veri dosyaları bulundu ve taşındı.
-    Bir sonraki yeniden yüklemede silinirler.'
   wwcConfigGUIPluginUpdateChatButton: Eklenti Güncellemeleri için Sohbet Anımsatıcısı
     Gönder
   wwcConfigConversationSendTranslationChatSuccess: Aktif çevirmen sohbet hatırlatıcı
@@ -219,9 +217,6 @@ Messages:
     sınırı. Varsayılan olarak 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Daha fazla bilgi için lütfen WorldwideChat
     eklentisi klasöründeki errorLog.txt dosyasını kontrol edin.
-  wwcConfigMaxResponseTimeInvalid: Config.yml içinde ayarlanmış maksimum yanıt süresi
-    geçersiz. 7 saniyeye varsayılan—
-  wwcConfigMaxResponseTimeEnabled: Maksimum yanıt süresi %i saniye olarak ayarlandı.
   wwctInvalidInputLangCode: 'Geçersiz giriş dili kodu sağlandı! Geçerli lang kodları:
     %o'
   wwcsTitle: '%i kaydı'
@@ -272,23 +267,15 @@ Messages:
   wwcteOffTarget: '%i için varlık çevirisi devre dışı bırakıldı.'
   wwcCharLimit: Mesajın çok uzun! Lütfen mesajınızın uzunluğu %i karakterden daha
     az olduğundan emin olun.
-  wwcConfigConversationResponseLimitInput: Her çevirmen için geçerli yanıt zaman aşımı
-    %i saniyedir. Yeni bir değer ayarlamak için 0'dan büyük bir şey yazın veya geri
-    dönmek için 0'dan küçük veya eşit bir şey yazın.
   wwcConfigConversationCharacterLimitInput: İleti başına geçerli karakter sınırı %i
     karakterdir. Yeni bir değer ayarlamak için 0'dan büyük bir şey yazın veya geri
     dönmek için 0'dan küçük veya eşit bir şey yazın.
   wwcteOffSender: Varlık çevirisi devre dışı.
   wwctGUIEntityButton: Varlık Çevirisi Aç/Kapat
-  wwcConfigConversationResponseLimitSuccess: Yanıt zaman aşımı başarıyla ayarlandı.
   wwctrlRateLimitBadInt: Hız limitiniz geçerli bir tamsayı değil.
   wwcTranslatorErrorConsole: '%i kullanıcısı çevirisini denerken bir sorun oluştu.
     Daha fazla ayrıntı için errorLog.txt dosyasını kontrol edin.'
-  wwctcOffSender: Sohbet çevirisi devre dışı.
-  wwctcOnTarget: '%i için sohbet çevirisi etkinleştirildi.'
-  wwctcOnSender: Sohbet çevirisi etkinleştirildi. Söyleyeceğin her şey tercüme edilecek!
   wwctGUIChatButton: Sohbet Çevirisine Geçiş
-  wwctcOffTarget: '%i için sohbet çevirisi devre dışı bırakıldı'
   wwcrBegin: WorldwideChat yeniden yükleniyor...
   wwctTranslationStoppedOtherPlayer: '%i için çeviri oturumu durduruldu.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Küresel sohbet çevriliyor,
@@ -307,3 +294,27 @@ Messages:
     ancak %o konumuna etkin bir çeviri oturumunuz var.
   wwcConfigGUIChangesNotSaved: Değişiklikleriniz siz /wwcc'deki kırmızı bariyere tıklayana
     kadar etkili olmayacaktır.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Başarısız çeviri sohbet mesajı
+    başarıyla geçildi.
+  wwcConfigGUISendFailedTranslationChatButton: Başarısız Çeviride Sohbet Mesajı Gönder
+  wwctciOffSender: Gelen sohbet çevirisi devre dışı.
+  wwctGUIChatIncomingButton: Gelen Sohbet Çevirisi
+  wwctcoOffSender: Giden sohbet çevirisi devre dışı.
+  wwctcoOnSender: Giden sohbet çevirisi etkinleştirildi. Söyleyeceğin her şey tercüme
+    edilecek!
+  wwctciOnSender: Gelen sohbet çevirisi etkinleştirildi. Aldığınız her şey tercüme
+    edilecektir!
+  wwctGUIChatMenu: Sohbet Çeviri Menüsünü Aç/Kapat
+  wwctcoOnTarget: '%i için giden sohbet çevirisi etkinleştirildi.'
+  wwctcoOffTarget: Giden sohbet çeviri %i için devre dışı bırakıldı.
+  wwctGUIChatOutgoingButton: Giden Sohbet Çevirisine Geçiş
+  wwctciOnTarget: '%i için gelen sohbet çevirisi etkinleştirildi.'
+  wwctciOffTarget: Gelen sohbet çeviri %i için devre dışı bırakıldı.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Özgün gelen sohbet çeviri
+    ekli olarak hover metin başarıyla geçiş yaptı.
+  wwcConfigGUISendIncomingHoverTextChatButton: Orijinal Gelen Mesajları Vurgulu Metin
+    olarak Ekle
+  wwctGUIExistingChatOutgoingEnabled: 'Giden Sohbet Çevirisi Etkinleştirildi: %i'
+  wwctGUIExistingTranslationInput: 'Giriş Dili: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Gelen Sohbet Çevirisi Etkinleştirildi: %i'
+  wwctGUIExistingTranslationOutput: 'Çıktı Dili: %i'

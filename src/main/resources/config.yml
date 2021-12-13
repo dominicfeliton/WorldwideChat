@@ -7,7 +7,7 @@
 #       \/  \/ \___/|_|  |_|\__,_| \_/\_/ |_|\__,_|\___|\____/_| |_|\__,_|\__|
 #
 # HOW TO SETUP: https://github.com/3xpl0itz/WorldwideChat/wiki/Default-Explained-config.yml
-
+#
 General:
   prefixName: WWC
   enablebStats: true
@@ -16,21 +16,21 @@ General:
   syncUserDataDelay: 7200
   enableDebugMode: false
 Chat:
-  sendFailedTranslationChat: true
   sendTranslationChat: true
+  sendFailedTranslationChat: true
   sendPluginUpdateChat: true
+  sendIncomingHoverTextChat: true
 Translator:
   useWatsonTranslate: true
-  watsonAPIKey: 
-  watsonURL:
+  watsonAPIKey: watson_key_goes_here
+  watsonURL: watson_site_goes_here
   useGoogleTranslate: false
-  googleTranslateAPIKey:
+  googleTranslateAPIKey: google_translate_key_goes_here
   useAmazonTranslate: false
-  amazonAccessKey:
-  amazonSecretKey:
-  amazonRegion: 
+  amazonAccessKey: amazon_translate_key_goes_here
+  amazonSecretKey: amazon_translate_secret_goes_here
+  amazonRegion: amazon_region_goes_here
   translatorCacheSize: 100
   rateLimit: 0
   messageCharLimit: 255
   errorLimit: 5
-  maxResponseTime: 7

@@ -61,8 +61,6 @@ Messages:
   wwctbOnSender: පොත් පරිවර්තනය සක්රීය කර ඇත. එය පරිවර්තනය කිරීම සඳහා පොතක් තබා ගන්නා
     අතරතුර දකුණු-ක්ලික් කරන්න!
   wwcListenersInitialized: ආරම්භකල සවන්දෙන්නන්.
-  wwcUserDataCorrupted: '% මම දූෂිත හෝ පැරණි පරිශීලක දත්ත ගොනු සොයාගෙන ඇත. ඊළඟ රීලෝඩ්
-    මත ඒවා මකා දැමෙනු ඇත.'
   wwcConfigGUIPluginUpdateChatButton: ප්ලගින යාවත්කාලීන සඳහා චැට් මතක් යවන්න
   wwcConfigConversationSendTranslationChatSuccess: ක්රියාකාරී පරිවර්තක චැට් මතක් කිරීම
     සාර්ථකව ටොගල කළේය.
@@ -233,9 +231,6 @@ Messages:
     5 වෙත ගෙවීම පැහැර හැරීම...
   wwcTranslatorErrorThresholdReachedCheckLogs: වැඩි විස්තර සඳහා කරුණාකර WorldwideChat
     ප්ලගින ෆෝල්ඩරයේ errorLog.txt පරීක්ෂා කරන්න.
-  wwcConfigMaxResponseTimeInvalid: config.yml තබා වලංගු නොවන උපරිම ප්රතිචාර කාලය.
-    තත්පර 7 ක් දක්වා පැහැර හැරීම...
-  wwcConfigMaxResponseTimeEnabled: මැක්ස් ප්රතිචාර කාලය %i තත්පරයට සකසා ඇත.
   wwctInvalidInputLangCode: 'වලංගු නොවන ආදාන භාෂා කේතය ලබා දී ඇත! වලංගු දිගු කේත:
     %o'
   wwcsTitle: '%i වාර්තාව'
@@ -288,23 +283,15 @@ Messages:
   wwcteOffTarget: ආයතන පරිවර්ථනය %i සඳහා අක්‍රීය විය.
   wwcCharLimit: ඔබේ පණිවිඩය දිගු වේ! කරුණාකර ඔබගේ පණිවිඩය %i අක්ෂරවලට වඩා අඩුවෙන්
     ඇති බවට වග බලා ගන්න.
-  wwcConfigConversationResponseLimitInput: එක් එක් පරිවර්තකයා සඳහා වර්තමාන ප්රතිචාර
-    කාලය %i තත්පර වේ. නව වටිනාකමක් සැකසීමට 0 ට වඩා වැඩි දෙයක් ටයිප් කරන්න, නැතහොත්
-    ආපසු යාමට 0 ට වඩා අඩු හෝ සමාන දෙයක් ටයිප් කරන්න.
   wwcConfigConversationCharacterLimitInput: පණිවිඩයකට වර්තමාන අක්ෂර සීමාව %i අක්ෂර
     වේ. නව වටිනාකමක් සැකසීමට 0 ට වඩා වැඩි දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ට
     වඩා අඩු හෝ සමාන දෙයක් ටයිප් කරන්න.
   wwcteOffSender: ආයතන පරිවර්තනය අක්රීය කර ඇත.
   wwctGUIEntityButton: ටොගල් කරන්න ආයතනය පරිවර්තනය
-  wwcConfigConversationResponseLimitSuccess: ප්රතිචාර කාලය සාර්ථකව සකසා ඇත.
   wwctrlRateLimitBadInt: ඔබගේ අනුපාත සීමාව වලංගු නිඛිලයක් නොවේ.
   wwcTranslatorErrorConsole: පරිශීලක % මම ඔවුන්ගේ පරිවර්තනයට උත්සාහ කරමින් සිටියදී
     ගැටළුවක් ඇති විය. වැඩි විස්තර සඳහා errorLog.txt පරීක්ෂා කරන්න.
-  wwctcOffSender: චැට් පරිවර්තනය අක්රීය කර ඇත.
-  wwctcOnTarget: කතාබස් පරිවර්තනය සක්‍රීය කර ඇත %i.
-  wwctcOnSender: චැට් පරිවර්තනය සක්රීය කර ඇත. ඔබ කියන ඕනෑම දෙයක් පරිවර්තනය කරනු ඇත!
   wwctGUIChatButton: ටොගල් කරන්න චැට් පරිවර්තනය
-  wwctcOffTarget: කතාබස් පරිවර්තනය %i සඳහා අක්රීය කර ඇත.
   wwcrBegin: නැවත පූරණය කිරීම ලෝක වයිඩෙහාට්...
   wwctTranslationStoppedOtherPlayer: '%i සඳහා පරිවර්තන සැසිය නතර කර ඇත.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ගෝලීය කතාබස් පරිවර්තනය
@@ -324,3 +311,27 @@ Messages:
     වෙමින් පවතී, නමුත් ඔබට %o වෙත ක්රියාකාරී පරිවර්තන සැසියක් ඇත.
   wwcConfigGUIChangesNotSaved: ඔබ /wwcහි රතු බාධකයක් මත ක්ලික් කරන තුරු ඔබේ වෙනස්කම්
     ක්රියාත්මක නොවනු ඇත.
+  wwcConfigConversationSendFailedTranslationChatSuccess: අසාර්ථක පරිවර්තන චැට් පණිවිඩය
+    සාර්ථකව ටොගල් කර ඇත.
+  wwcConfigGUISendFailedTranslationChatButton: අසාර්ථක පරිවර්තනය පිළිබඳ චැට් පණිවිඩය
+    යවන්න
+  wwctciOffSender: පැමිණෙන චැට් පරිවර්තනය අක්රීය කර ඇත.
+  wwctGUIChatIncomingButton: ටොගල් කරන්න එන චැට් පරිවර්තනය
+  wwctcoOffSender: පිටතට යන චැට් පරිවර්තනය අක්රීය.
+  wwctcoOnSender: පිටතට යන චැට් පරිවර්තනය සක්රීය කර ඇත. ඔබ කියන ඕනෑම දෙයක් පරිවර්තනය
+    කරනු ඇත!
+  wwctciOnSender: ලැබෙන චැට් පරිවර්තනය සක්රීය කර ඇත. ඔබට ලැබෙන ඕනෑම දෙයක් පරිවර්තනය
+    කරනු ඇත!
+  wwctGUIChatMenu: ටොගල් කරන්න භාෂා පරිවර්තන මෙනුව
+  wwctcoOnTarget: පිටතට යන චැට් පරිවර්තනය %i සඳහා සක්රීය කර ඇත.
+  wwctcoOffTarget: '%i සඳහා පිටතට යන චැට් පරිවර්තනය අක්රීය කර ඇත.'
+  wwctGUIChatOutgoingButton: ටොගල් කරන්න පිටතට යන චැට් පරිවර්තනය
+  wwctciOnTarget: '%i සඳහා පැමිණෙන චැට් පරිවර්තනය සක්රීය කර ඇත.'
+  wwctciOffTarget: '%i සඳහා පැමිණෙන චැට් පරිවර්තනය අක්රීය කර ඇත.'
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: පරිවර්තනයට අමුණා ඇති මුල්
+    පිටපත සාර්ථකව ටොගල් කර ඇත.
+  wwcConfigGUISendIncomingHoverTextChatButton: මුල් එන පණිවිඩ Hover පෙළ ලෙස එක් කරන්න
+  wwctGUIExistingChatOutgoingEnabled: 'පිටතට යන චැට් පරිවර්තනය සක්රීය කර ඇත: %i'
+  wwctGUIExistingTranslationInput: 'ආදාන භාෂාව: %i'
+  wwctGUIExistingChatIncomingEnabled: 'ලැබෙන චැට් පරිවර්තනය සක්රීය කර ඇත: %i'
+  wwctGUIExistingTranslationOutput: 'ප්රතිදාන භාෂාව: %i'

@@ -62,8 +62,6 @@ Messages:
   wwctbOnSender: पुस्तक अनुवाद सक्षम। इसका अनुवाद करने के लिए पुस्तक पकड़े हुए राइट-क्लिक
     करें!
   wwcListenersInitialized: आरंभिक श्रोताओं।
-  wwcUserDataCorrupted: '%i दूषित या पुराने उपयोक्ता डेटा फ़ाइलों को मिला और स्थानांतरित
-    किया। वे अगले पुनः लोड पर हटा दिए जाएंगे।'
   wwcConfigGUIPluginUpdateChatButton: प्लगइन अपडेट के लिए चैट अनुस्मारक भेजें
   wwcConfigConversationSendTranslationChatSuccess: सक्रिय अनुवादक चैट अनुस्मारक सफलतापूर्वक
     टॉगल किया गया।
@@ -231,10 +229,6 @@ Messages:
     टू 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: कृपया अधिक जानकारी के लिए WorldwideChat
     प्लगइन फ़ोल्डर में errorLog.txt की जांच करें।
-  wwcConfigMaxResponseTimeInvalid: config.yml में अमान्य अधिकतम प्रतिक्रिया समय सेट
-    किया गया है। 7 सेकंड के लिए डिफ़ॉल्ट...
-  wwcConfigMaxResponseTimeEnabled: अधिकतम प्रतिक्रिया समय %i सेकंड पर सेट किया गया
-    है।
   wwctInvalidInputLangCode: 'अमान्य इनपुट भाषा कोड प्रदान किया गया! वैध लैंग कोड:
     %o'
   wwcsTitle: '%i का रिकॉर्ड'
@@ -288,25 +282,15 @@ Messages:
   wwcteOffTarget: '%i के लिए इकाई अनुवाद अक्षम किया गया।'
   wwcCharLimit: आपका संदेश बहुत लंबा है! कृपया सुनिश्चित करें कि आपका संदेश लंबाई
     में %i वर्णों से कम है।
-  wwcConfigConversationResponseLimitInput: प्रत्येक अनुवादक के लिए वर्तमान प्रतिसाद
-    टाइमआउट %i सेकेंड है। एक नया मान सेट करने के लिए 0 से अधिक कुछ भी टाइप करें, या
-    वापस जाने के लिए 0 से कम या बराबर कुछ भी टाइप करें।
   wwcConfigConversationCharacterLimitInput: प्रति संदेश वर्तमान वर्ण सीमा %i अक्षर
     है। एक नया मान सेट करने के लिए 0 से अधिक कुछ भी टाइप करें, या वापस जाने के लिए
     0 से कम या बराबर कुछ भी टाइप करें।
   wwcteOffSender: इकाई अनुवाद अक्षम किया गया।
   wwctGUIEntityButton: एंटिटी ट्रांसलेशन टॉगल करें
-  wwcConfigConversationResponseLimitSuccess: रिस्पांस टाइमआउट सफलतापूर्वक सेट किया
-    गया
   wwctrlRateLimitBadInt: आपकी दर सीमा वैध पूर्णांक नहीं है।
   wwcTranslatorErrorConsole: एक समस्या तब हुई जब उपयोगकर्ता %i उनके अनुवाद का प्रयास
     कर रहा था। अधिक जानकारी के लिए कृपया errorLog.txt की जांच करें।
-  wwctcOffSender: चैट अनुवाद अक्षम किया गया।
-  wwctcOnTarget: '%i के लिए चैट अनुवाद सक्षम किया गया है।'
-  wwctcOnSender: चैट अनुवाद सक्षम किया गया। जो कुछ भी आप कहते हैं उसका अनुवाद किया
-    जाएगा!
   wwctGUIChatButton: चैट अनुवाद टॉगल करें
-  wwctcOffTarget: '%i के लिए चैट अनुवाद अक्षम किया गया।'
   wwcrBegin: वर्ल्डवाइड चैट पुनः लोड हो रहा है...
   wwctTranslationStoppedOtherPlayer: '%i के लिए अनुवाद सत्र बंद कर दिया गया है।'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: वैश्विक चैट का अनुवाद
@@ -327,3 +311,27 @@ Messages:
     किया जा रहा है, लेकिन आपके पास %o में एक सक्रिय अनुवाद सत्र है।
   wwcConfigGUIChangesNotSaved: जब तक आप /wwcc में लाल बाधा पर क्लिक नहीं करते हैं,
     तब तक आपके परिवर्तन प्रभावी नहीं होंगे।
+  wwcConfigConversationSendFailedTranslationChatSuccess: असफल अनुवाद चैट संदेश सफलतापूर्वक
+    टॉगल किया गया।
+  wwcConfigGUISendFailedTranslationChatButton: असफल अनुवाद पर चैट संदेश भेजें
+  wwctciOffSender: इनकमिंग चैट अनुवाद अक्षम।
+  wwctGUIChatIncomingButton: इनकमिंग चैट ट्रांसलेशन टॉगल करें
+  wwctcoOffSender: जावक चैट अनुवाद अक्षम है।
+  wwctcoOnSender: जावक चैट अनुवाद सक्षम किया गया। आप जो भी कहेंगे उसका अनुवाद किया
+    जाएगा!
+  wwctciOnSender: इनकमिंग चैट अनुवाद सक्षम किया गया। आपको जो भी मिलेगा वह अनुवादित
+    होगा!
+  wwctGUIChatMenu: चैट अनुवाद मेनू टॉगल करें
+  wwctcoOnTarget: '%i के लिए जावक चैट अनुवाद सक्षम किया गया।'
+  wwctcoOffTarget: '%i के लिए जावक चैट अनुवाद अक्षम किया गया।'
+  wwctGUIChatOutgoingButton: आउटगोइंग चैट ट्रांसलेशन टॉगल करें
+  wwctciOnTarget: '%i के लिए आवक चैट अनुवाद सक्षम किया गया।'
+  wwctciOffTarget: '%i के लिए आवक चैट अनुवाद अक्षम किया गया।'
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: होवर टेक्स्ट के रूप में अनुवाद
+    से जुड़ी मूल इनकमिंग चैट सफलतापूर्वक टॉगल हो गई।
+  wwcConfigGUISendIncomingHoverTextChatButton: होवर टेक्स्ट के रूप में मूल आवक संदेश
+    जोड़ें
+  wwctGUIExistingChatOutgoingEnabled: 'आउटगोइंग चैट अनुवाद सक्षम किया गया: %i'
+  wwctGUIExistingTranslationInput: 'इनपुट भाषा: %i'
+  wwctGUIExistingChatIncomingEnabled: 'आवक चैट अनुवाद सक्षम किया गया: %i'
+  wwctGUIExistingTranslationOutput: 'आउटपुट भाषा: %i'

@@ -17,9 +17,9 @@ import net.kyori.adventure.text.format.TextDecoration;
 
 public class OnPlayerJoinListener implements Listener {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
-	@EventHandler(priority = EventPriority.NORMAL)
+	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerJoinListener(PlayerJoinEvent event) {
 		// Check if plugin has updates
 		if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) && (main.getOutOfDate())

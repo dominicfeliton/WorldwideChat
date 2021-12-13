@@ -62,8 +62,6 @@ Messages:
   wwctbOnSender: წიგნის თარგმანი ჩართულია. მარჯვენა ღილაკით წიგნის ჩატარებისას თარგმნის
     მას!
   wwcListenersInitialized: ინიციალიზებულ მსმენელებს.
-  wwcUserDataCorrupted: ნაპოვნია და გადახვა %i კორუმპირებული ან ძველი მომხმარებლის
-    მონაცემთა ფაილები. ისინი წაიშლება მომდევნო გადატვირთვაზე.
   wwcConfigGUIPluginUpdateChatButton: პირადი ჩატის შეხსენება მოდულის განახლებებისთვის
   wwcConfigConversationSendTranslationChatSuccess: აქტიური მთარგმნელი სტატისტიკა შეხსენება
     toggled წარმატებით.
@@ -227,9 +225,6 @@ Messages:
     უპირობოდ 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: გთხოვთ შეამოწმოთ errorLog.txt WorldwideChat
     მოდულის საქაღალდეში დამატებითი ინფორმაციისთვის.
-  wwcConfigMaxResponseTimeInvalid: არასწორი მაქსიმალური რეაგირების დრო მითითებული
-    config.yml. 7 წამის დეფოლტირება...
-  wwcConfigMaxResponseTimeEnabled: მაქსიმალური რეაგირების დრო დაყენებულია %i წამში.
   wwctInvalidInputLangCode: 'არასწორი შეყვანის ენის კოდი გათვალისწინებული! მოქმედი
     lang კოდები: %o'
   wwcsTitle: '%i - ის ჩანაწერი'
@@ -281,24 +276,15 @@ Messages:
   wwcteOffTarget: ერთეულის თარგმანი გათიშულია %i.
   wwcCharLimit: შენი გზავნილი ძალიან გრძელია! გთხოვთ, დარწმუნდეთ, რომ თქვენი შეტყობინება
     სიგრძე %i სიმბოლოზე ნაკლებია.
-  wwcConfigConversationResponseLimitInput: თითოეული მთარგმნელისთვის მიმდინარე რეაგირების
-    შეყოვნება არის %i წამი. აკრიფეთ 0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა,
-    ან აკრიფოთ არაფერი ნაკლები ან ტოლი 0 დაბრუნდეს.
   wwcConfigConversationCharacterLimitInput: სიმბოლოთა მიმდინარე ლიმიტი თითო შეტყობინება
     %i სიმბოლოებია. აკრიფეთ 0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან
     აკრიფოთ არაფერი ნაკლები ან ტოლი 0 დაბრუნდეს.
   wwcteOffSender: პირი თარგმანი გამორთულია.
   wwctGUIEntityButton: სუბიექტური თარგმანის გადართვა
-  wwcConfigConversationResponseLimitSuccess: რეაგირების შეყოვნება წარმატებით არის
-    მითითებული.
   wwctrlRateLimitBadInt: თქვენი კურსის ლიმიტი არ არის სწორი რიცხვი.
   wwcTranslatorErrorConsole: პრობლემა იმართებოდა მომხმარებელი %i მათი თარგმანის მცდელობისას.
     გთხოვთ შეამოწმოთ errorLog.txt უფრო დეტალურად.
-  wwctcOffSender: ჩატი თარგმანი გამორთულია.
-  wwctcOnTarget: ჩეთის თარგმანი ჩართულია %i.
-  wwctcOnSender: ჩატი თარგმანი ჩართულია. ყველაფერი რაც თქვენ ამბობთ იქნება თარგმნილი!
   wwctGUIChatButton: ჩატის თარგმანის გადართვა
-  wwctcOffTarget: ჩატი თარგმანი გამორთულია %i.
   wwcrBegin: WorldwideChat გადატვირთვა...
   wwctTranslationStoppedOtherPlayer: '%i მთარგმნელობითი სესია შეჩერებულია.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: გლობალური სტატისტიკა თარგმნილია,
@@ -316,3 +302,28 @@ Messages:
     თარგმნილია, მაგრამ თქვენ გაქვთ აქტიური თარგმანის სესია %o.
   wwcConfigGUIChangesNotSaved: თქვენი ცვლილებები ძალაში არ შედის, სანამ არ დააჭერთ
     წითელ ბარიერს /wwccc.- ში.
+  wwcConfigConversationSendFailedTranslationChatSuccess: ვერ მოხერხდა თარგმანი სტატისტიკა
+    გაგზავნა toggled წარმატებით.
+  wwcConfigGUISendFailedTranslationChatButton: ჩატის გაგზავნა ვერ მოხერხდა თარგმანის
+    შესახებ
+  wwctciOffSender: შემომავალი სტატისტიკა თარგმანი გამორთულია.
+  wwctGUIChatIncomingButton: შემომავალი ჩეთის თარგმანის გადართვა
+  wwctcoOffSender: გამავალი სტატისტიკა თარგმანი გამორთულია.
+  wwctcoOnSender: გამავალი სტატისტიკა თარგმანი ჩართულია. ყველაფერი რაც თქვენ ამბობთ,
+    თარგმნილია!
+  wwctciOnSender: შემომავალი სტატისტიკა თარგმანი ჩართულია. არაფერი თქვენ მიიღებთ იქნება
+    თარგმნილი!
+  wwctGUIChatMenu: ჩატის თარგმანის მენიუს გადართვა
+  wwctcoOnTarget: გამავალი ჩეთის თარგმანი ჩართულია %i- სთვის.
+  wwctcoOffTarget: გამავალი სტატისტიკა თარგმანი გამორთულია %i- სთვის.
+  wwctGUIChatOutgoingButton: გამავალი ჩეთის თარგმანის გადართვა
+  wwctciOnTarget: შემომავალი ჩეთის თარგმანი ჩართულია %i- სთვის.
+  wwctciOffTarget: შემომავალი ჩეთის თარგმანი გამორთულია %i- სთვის.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: ორიგინალური შემომავალი სტატისტიკა
+    ერთვის თარგმანი hover ტექსტი toggled წარმატებით.
+  wwcConfigGUISendIncomingHoverTextChatButton: ორიგინალური შემომავალი შეტყობინებების
+    დამატება, როგორც Hover ტექსტი
+  wwctGUIExistingChatOutgoingEnabled: 'გამავალი ჩეთის თარგმანი ჩართულია: %i'
+  wwctGUIExistingTranslationInput: 'შეყვანის ენა: %i'
+  wwctGUIExistingChatIncomingEnabled: 'ჩეთის შემომავალი თარგმანი ჩართულია: %i'
+  wwctGUIExistingTranslationOutput: 'გამოყვანის ენა: %i'

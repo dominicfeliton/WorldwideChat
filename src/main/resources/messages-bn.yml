@@ -61,8 +61,6 @@ Messages:
   wwctbOnSender: বইয়ের অনুবাদ সক্রিয় করা হয়েছে। এটি অনুবাদ করার জন্য একটি বই ধরে রাখার
     সময় ডান-ক্লিক করুন!
   wwcListenersInitialized: আরম্ভ করা শ্রোতা।
-  wwcUserDataCorrupted: '%i দূষিত অথবা পুরনো ব্যবহারকারী ডাটা ফাইল পাওয়া গিয়েছে এবং
-    সরানো হয়েছে। তারা পরবর্তী রিলোডে মুছে ফেলা হবে।'
   wwcConfigGUIPluginUpdateChatButton: প্লাগইন আপডেটের জন্য চ্যাট স্মারক
   wwcConfigConversationSendTranslationChatSuccess: সক্রিয় অনুবাদক চ্যাটের অনুস্মারক
     সফলভাবে টগল হয়েছে
@@ -223,9 +221,6 @@ Messages:
     করা হয়েছে। ৫ এ ডিফল্ট হচ্ছে...
   wwcTranslatorErrorThresholdReachedCheckLogs: অনুগ্রহ করে আরও তথ্যের জন্য WorldwideChat
     প্লাগইন ফোল্ডারে errorLog.txt চেক করুন।
-  wwcConfigMaxResponseTimeInvalid: config.yml এ সর্বোচ্চ প্রতিক্রিয়া সময় সেট করা
-    অবৈধ। ৭ সেকেন্ডে ডিফল্ট হচ্ছে...
-  wwcConfigMaxResponseTimeEnabled: সর্বোচ্চ রেসপন্স টাইম %i সেকেন্ড সেট করা হয়েছে।
   wwctInvalidInputLangCode: 'অবৈধ ইনপুট ভাষা কোড প্রদান করা হয়েছে! বৈধ ল্যাং কোড:
     %o'
   wwcsTitle: '%i এর রেকর্ড'
@@ -278,23 +273,15 @@ Messages:
   wwcteOffTarget: '%i এর জন্য সত্তা অনুবাদ নিষ্ক্রিয় করা হয়েছে'
   wwcCharLimit: আপনার বার্তা অনেক দীর্ঘ! অনুগ্রহ করে নিশ্চিত করুন যে আপনার বার্তা
     %i অক্ষরের দৈর্ঘ্যের কম।
-  wwcConfigConversationResponseLimitInput: প্রতিটি অনুবাদকের জন্য বর্তমান প্রতিক্রিয়া
-    সময়সীমা হচ্ছে %i সেকেন্ড। একটি নতুন মান সেট করার জন্য 0 এর চেয়ে বড় কিছু টাইপ
-    করুন, অথবা ফিরে যাওয়ার জন্য 0 এর চেয়ে কম বা সমান কিছু টাইপ করুন।
   wwcConfigConversationCharacterLimitInput: প্রতি বার্তার বর্তমান অক্ষর সীমা হল %i
     অক্ষর। একটি নতুন মান সেট করার জন্য 0 এর চেয়ে বড় কিছু টাইপ করুন, অথবা ফিরে যাওয়ার
     জন্য 0 এর চেয়ে কম বা সমান কিছু টাইপ করুন।
   wwcteOffSender: সত্তা অনুবাদ নিষ্ক্রিয়।
   wwctGUIEntityButton: সত্তা অনুবাদ টগল করুন
-  wwcConfigConversationResponseLimitSuccess: প্রতিক্রিয়া সময়সীমা সফলভাবে সেট করা হয়েছে।
   wwctrlRateLimitBadInt: আপনার হার সীমা একটি বৈধ পূর্ণসংখ্যা নয়।
   wwcTranslatorErrorConsole: ব্যবহারকারী %i তাদের অনুবাদের চেষ্টা করার সময় একটি সমস্যা
     হয়েছে। আরও বিস্তারিত জানার জন্য অনুগ্রহ করে errorLog.txt চেক করুন।
-  wwctcOffSender: চ্যাটের অনুবাদ নিষ্ক্রিয় করা হয়েছে
-  wwctcOnTarget: '%i এর জন্য আড্ডা অনুবাদ সক্রিয় করা হয়েছে'
-  wwctcOnSender: চ্যাটের অনুবাদ সক্রিয় করা হয়েছে। আপনি যা বলবেন তা অনুবাদ করা হবে!
   wwctGUIChatButton: চ্যাটের অনুবাদ টগল করুন
-  wwctcOffTarget: '%i এর জন্য চ্যাটের অনুবাদ নিষ্ক্রিয় করা হয়েছে।'
   wwcrBegin: ওয়ার্ল্ডউইডচ্যাট পুনরায় লোড করা হচ্ছে...
   wwctTranslationStoppedOtherPlayer: '%i এর জন্য অনুবাদ সেশন বন্ধ করা হয়েছে।'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: গ্লোবাল চ্যাট অনুবাদ করা
@@ -315,3 +302,25 @@ Messages:
     করা হচ্ছে, কিন্তু আপনা %o তে একটি সক্রিয় অনুবাদ সেশন আছে।
   wwcConfigGUIChangesNotSaved: আপনার পরিবর্তনগুলি কার্যকর হবে না যতক্ষণ না আপনি /wwcc
     এ লাল বাধা ক্লিক করেন।
+  wwcConfigConversationSendFailedTranslationChatSuccess: অনুবাদ চ্যাটের বার্তা ব্যর্থ
+    হয়েছে সফলভাবে টগল করা হয়েছে।
+  wwcConfigGUISendFailedTranslationChatButton: অনুবাদ ব্যর্থ হলে আড্ডা বার্তা পাঠান
+  wwctciOffSender: আগত আড্ডা অনুবাদ অক্ষম।
+  wwctGUIChatIncomingButton: আগত আড্ডা অনুবাদ টগল করুন
+  wwctcoOffSender: আউটগোয়িং আড্ডা অনুবাদ অক্ষম।
+  wwctcoOnSender: আউটগোয়িং চ্যাট অনুবাদ সক্রিয়। আপনি যা বলছেন তা অনুবাদ করা হবে!
+  wwctciOnSender: আগত আড্ডা অনুবাদ সক্রিয়। আপনি পাবেন কিছু অনুবাদ করা হবে!
+  wwctGUIChatMenu: আড্ডা অনুবাদ মেনু পরিবর্তন করুন
+  wwctcoOnTarget: '%i এর জন্য বহির্মুখী চ্যাটের অনুবাদটি সক্রিয় করা হয়েছে'
+  wwctcoOffTarget: আউটগোয়িং আড্ডা অনুবাদ %i এর জন্য নিষ্
+  wwctGUIChatOutgoingButton: আউটগোয়িং আড্ডা অনুবাদ টগল করুন
+  wwctciOnTarget: ইনকামিং আড্ডা অনুবাদ %i এর জন্য সক্রিয়
+  wwctciOffTarget: আগত আড্ডা অনুবাদ %i এর জন্য নিষ্ক্রিয়
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: হভার টেক্সট সফলভাবে টগল হওয়ায়
+    অনুবাদের সাথে সংযুক্ত মূল আগত চ্যাটটি।
+  wwcConfigGUISendIncomingHoverTextChatButton: হোভার টেক্সট হিসাবে আসল ইনকামিং বার্তা
+    যোগ করুন
+  wwctGUIExistingChatOutgoingEnabled: 'আউটগোয়িং আড্ডা অনুবাদ সক্রিয়: %i'
+  wwctGUIExistingTranslationInput: 'ইনপুট ভাষা: %i'
+  wwctGUIExistingChatIncomingEnabled: 'আগত আড্ডা অনুবাদ সক্রিয়: %i'
+  wwctGUIExistingTranslationOutput: 'আউটপুট ভাষা: %i'

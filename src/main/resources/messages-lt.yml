@@ -62,8 +62,6 @@ Messages:
   wwctbOnSender: Knygų vertimas įjungtas. Dešiniuoju pelės mygtuku spustelėkite laikydami
     knygą ją išversti!
   wwcListenersInitialized: Inicijuoti klausytojai.
-  wwcUserDataCorrupted: Surasta ir perkelta %i sugadintus ar senus naudotojo duomenų
-    failus. Jie bus ištrinti į kitą pakartotinį įkrovimą.
   wwcConfigGUIPluginUpdateChatButton: Siųsti pokalbių priminimą dėl papildinių atnaujinimų
   wwcConfigConversationSendTranslationChatSuccess: Aktyvus vertėjas pokalbių priminimas
     sėkmingai perjungtas.
@@ -228,9 +226,6 @@ Messages:
     Numatytinas iki 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Prašome patikrinti errorLog.txt WorldwideChat
     įskiepiai aplanke daugiau informacijos.
-  wwcConfigMaxResponseTimeInvalid: Neteisingas maks. Atsakymo laikas nustatytas config.yml.
-    Numatytinas iki 7 sekundžių...
-  wwcConfigMaxResponseTimeEnabled: Maksimalus atsako laikas nustatytas %i sekundes.
   wwctInvalidInputLangCode: 'Pateiktas neteisingas įvesties kalbos kodas! Galiojantys
     lang kodai: %o'
   wwcsTitle: Įrašas %i
@@ -282,23 +277,15 @@ Messages:
   wwcteOffTarget: Subjekto vertimas išjungtas %i.
   wwcCharLimit: Jūsų žinutė yra per ilga! Įsitikinkite, kad jūsų žinutė yra mažesnė
     nei %i simbolių ilgio.
-  wwcConfigConversationResponseLimitInput: Dabartinis kiekvieno vertėjo atsakymo laikas
-    yra %i sekundes. Įveskite viską, kas yra didesnė nei 0, kad nustatytumėte naują
-    vertę, arba įveskite viską, kas yra mažesnė arba lygi 0, kad grįžtumėte atgal.
   wwcConfigConversationCharacterLimitInput: Dabartinis simbolių limitas vienam pranešimui
     yra %i simboliai. Įveskite viską, kas yra didesnė nei 0, kad nustatytumėte naują
     vertę, arba įveskite viską, kas yra mažesnė arba lygi 0, kad grįžtumėte atgal.
   wwcteOffSender: Subjekto vertimas išjungtas.
   wwctGUIEntityButton: Perjungti subjekto vertimą
-  wwcConfigConversationResponseLimitSuccess: Atsakymo skirtasis laikas sėkmingai nustatytas.
   wwctrlRateLimitBadInt: Jūsų normos limitas nėra tinkamas sveikasis skaičius.
   wwcTranslatorErrorConsole: Problema kilo, kai vartotojas %i bandė jų vertimą. Prašome
     patikrinti errorLog.txt daugiau informacijos.
-  wwctcOffSender: Pokalbiai vertimas išjungtas.
-  wwctcOnTarget: Pokalbių vertimas įjungtas %i.
-  wwctcOnSender: Pokalbių vertimas įjungtas. Viskas, ką jūs sakote, bus išversta!
   wwctGUIChatButton: Perjungti Pokalbių Vertimas
-  wwctcOffTarget: Pokalbių vertimas išjungtas %i.
   wwcrBegin: Perkrovimas WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Vertimo sesija %i buvo sustabdyta.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat yra verčiamas,
@@ -316,3 +303,26 @@ Messages:
     bet jūs turite aktyvų vertimo seansą %o.
   wwcConfigGUIChangesNotSaved: Jūsų pakeitimai neįsigalios tol, kol spustelėsite raudoną
     barjerą /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Nepavyko vertimo pokalbių
+    pranešimas sėkmingai perėjo.
+  wwcConfigGUISendFailedTranslationChatButton: Siųsti pokalbių pranešimą dėl nepavykusio
+    vertimo
+  wwctciOffSender: Gaunamų pokalbių vertimas išjungtas.
+  wwctGUIChatIncomingButton: Perjungti Gaunamus Pokalbiai Vertimas
+  wwctcoOffSender: Išeinantis pokalbių vertimas išjungtas.
+  wwctcoOnSender: Išeinantis pokalbių vertimas įjungtas. Viskas, ką sakote, bus išversta!
+  wwctciOnSender: Įjungtas įeinantis pokalbių vertimas. Viskas, ką gausite, bus išversta!
+  wwctGUIChatMenu: Perjungti Pokalbių vertimo meniu
+  wwctcoOnTarget: Išeinančio pokalbio vertimas įjungtas %i.
+  wwctcoOffTarget: Išeinančio pokalbio vertimas išjungtas %i.
+  wwctGUIChatOutgoingButton: Perjungti Išeinantis Pokalbių Vertimas
+  wwctciOnTarget: Gaunamų pokalbių vertimas įjungtas %i.
+  wwctciOffTarget: Gaunamų pokalbių vertimas išjungtas %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Originalus įeinantis pokalbis
+    pridedamas prie vertimo kaip užveskite pelės žymeklį tekstą sėkmingai perjungtas.
+  wwcConfigGUISendIncomingHoverTextChatButton: Pridėti originalius gaunamus pranešimus
+    kaip užvesties tekstą
+  wwctGUIExistingChatOutgoingEnabled: 'Išeinantis pokalbių vertimas Įgalintas: %i'
+  wwctGUIExistingTranslationInput: 'Įvesties kalba: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Įgalintas gaunamų pokalbių vertimas: %i'
+  wwctGUIExistingTranslationOutput: 'Išvesties kalba: %i'

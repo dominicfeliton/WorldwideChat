@@ -7,7 +7,7 @@ import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 public class SyncUserData implements Runnable {
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 	
 	@Override
 	public void run() {

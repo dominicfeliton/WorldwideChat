@@ -58,8 +58,6 @@ Messages:
   wwcgLangToLangStart: الآن ترجمة الدردشة العامة من %i إلى %o.
   wwctbOnSender: ترجمة الكتاب تمكين. انقر بزر الماوس الأيمن أثناء عقد كتاب لترجمته!
   wwcListenersInitialized: المستمعين تهيئة.
-  wwcUserDataCorrupted: العثور على وحركة %i تالفة أو ملفات بيانات المستخدم القديمة.
-    سيتم حذفها على إعادة التحميل التالية.
   wwcConfigGUIPluginUpdateChatButton: إرسال تذكير الدردشة للحصول على تحديثات البرنامج
     المساعد
   wwcConfigConversationSendTranslationChatSuccess: نشط مترجم دردشة تذكير مثبت بنجاح.
@@ -215,9 +213,6 @@ Messages:
     العمل إلى 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: يرجى التحقق من errorLog.txt في مجلد
     البرنامج المساعد WorldwideChat لمزيد من المعلومات.
-  wwcConfigMaxResponseTimeInvalid: تعيين وقت استجابة الحد الأقصى غير صالح في config.yml.
-    تخلف عن العمل لمدة 7 ثوانٍ...
-  wwcConfigMaxResponseTimeEnabled: تعيين الحد الأقصى لوقت الاستجابة إلى %i ثانية.
   wwctInvalidInputLangCode: 'تم توفير رمز لغة الإدخال غير صالح! رموز اللغة الصالحة:
     %o'
   wwcsTitle: سجل %i
@@ -265,22 +260,14 @@ Messages:
   wwcConfigMessageCharLimitEnabled: تم تعيين حد الأحرف لكل رسالة إلى أحرف %i.
   wwcteOffTarget: تم تعطيل ترجمة الكيان لـ %i.
   wwcCharLimit: رسالتك طويلة جدًا! يرجى التأكد من أن رسالتك أقل من %i حرف في الطول.
-  wwcConfigConversationResponseLimitInput: مهلة الاستجابة الحالية لكل مترجم هي %i
-    ثانية. اكتب أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب أي شيء أقل من أو يساوي
-    0 للعودة.
   wwcConfigConversationCharacterLimitInput: الحد الحالي للحرف لكل رسالة هو %i حرف.
     اكتب أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب أي شيء أقل من أو يساوي 0 للعودة.
   wwcteOffSender: تم تعطيل ترجمة الكيان.
   wwctGUIEntityButton: تبديل ترجمة الكيان
-  wwcConfigConversationResponseLimitSuccess: تم تعيين مهلة الاستجابة بنجاح.
   wwctrlRateLimitBadInt: حد السعر الخاص بك ليس عددًا صحيحًا صالحًا.
   wwcTranslatorErrorConsole: حدثت مشكلة أثناء محاولة المستخدم %i ترجمته. يرجى التحقق
     من errorLog.txt لمزيد من التفاصيل.
-  wwctcOffSender: تم تعطيل ترجمة الدردشة.
-  wwctcOnTarget: تم تمكين ترجمة الدردشة لـ %i.
-  wwctcOnSender: تم تمكين ترجمة الدردشة. سيتم ترجمة أي شيء تقوله!
   wwctGUIChatButton: تبديل ترجمة الدردشة
-  wwctcOffTarget: تم تعطيل ترجمة الدردشة لـ %i.
   wwcrBegin: إعادة تحميل الدردشة في جميع أنحاء العالم...
   wwctTranslationStoppedOtherPlayer: تم إيقاف جلسة الترجمة لـ %i.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: تتم ترجمة الدردشة العالمية،
@@ -297,3 +284,24 @@ Messages:
     ولكن لديك جلسة ترجمة نشطة إلى %o.
   wwcConfigGUIChangesNotSaved: لن تسري التغييرات الخاصة بك حتى تنقر على الحاجز الأحمر
     في/wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: تم تبديل رسالة دردشة الترجمة
+    الفاشلة بنجاح.
+  wwcConfigGUISendFailedTranslationChatButton: إرسال رسالة دردشة على الترجمة الفاشلة
+  wwctciOffSender: تم تعطيل ترجمة الدردشة الواردة.
+  wwctGUIChatIncomingButton: تبديل ترجمة الدردشة الواردة
+  wwctcoOffSender: تم تعطيل ترجمة الدردشة الصادرة.
+  wwctcoOnSender: تم تمكين ترجمة الدردشة الصادرة. سيتم ترجمة أي شيء تقوله!
+  wwctciOnSender: تم تمكين ترجمة الدردشة الواردة. سيتم ترجمة أي شيء تتلقاه!
+  wwctGUIChatMenu: تبديل قائمة ترجمة الدردشة
+  wwctcoOnTarget: تم تمكين ترجمة الدردشة الصادرة لـ %i.
+  wwctcoOffTarget: تم تعطيل ترجمة الدردشة الصادرة لـ %i.
+  wwctGUIChatOutgoingButton: تبديل ترجمة الدردشة الصادرة
+  wwctciOnTarget: تم تمكين ترجمة الدردشة الواردة لـ %i.
+  wwctciOffTarget: تم تعطيل ترجمة الدردشة الواردة لـ %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: الدردشة الواردة الأصلية المرفقة
+    بالترجمة كنص تحوم تم تبديل النص بنجاح.
+  wwcConfigGUISendIncomingHoverTextChatButton: إضافة رسائل واردة أصلية كنص تحوم
+  wwctGUIExistingChatOutgoingEnabled: 'تمكين ترجمة الدردشة الصادرة: %i'
+  wwctGUIExistingTranslationInput: 'لغة الإدخال: %i'
+  wwctGUIExistingChatIncomingEnabled: 'تمكين ترجمة الدردشة الواردة: %i'
+  wwctGUIExistingTranslationOutput: 'لغة الإخراج: %i'

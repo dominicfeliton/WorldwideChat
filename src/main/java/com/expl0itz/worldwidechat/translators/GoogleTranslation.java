@@ -33,7 +33,7 @@ public class GoogleTranslation {
 
 	private boolean isInitializing = false;
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	public GoogleTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
 		this.textToTranslate = textToTranslate;
@@ -53,7 +53,7 @@ public class GoogleTranslation {
 		String finalOut = "";
 		try {
 			/* Get translation */
-			finalOut = process.get(main.getMaxResponseTime(), TimeUnit.SECONDS);
+			finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			CommonDefinitions.sendDebugMessage("Google Translate Timeout!!");
 			process.cancel(true);

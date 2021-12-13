@@ -61,8 +61,6 @@ Messages:
   wwctbOnSender: Kitab tərcüməsi aktivdir. Tərcümə etmək üçün bir kitab tutarkən sağ
     basın!
   wwcListenersInitialized: Başlanmış dinləyicilər.
-  wwcUserDataCorrupted: Tapıldı və %i bad və ya köhnə istifadəçi data faylları hərəkətə
-    gətirdi. Onlar növbəti yenidən silinəcək.
   wwcConfigGUIPluginUpdateChatButton: Plugin Updates üçün Chat Xatırlatma göndər
   wwcConfigConversationSendTranslationChatSuccess: Aktiv tərcüməçi chat xatırlatma
     uğurla keçid.
@@ -224,9 +222,6 @@ Messages:
     üçün defaulting...
   wwcTranslatorErrorThresholdReachedCheckLogs: Daha ətraflı məlumat üçün WorldWieChat
     plugin qovluğunda errorLog.txt yoxlayın.
-  wwcConfigMaxResponseTimeInvalid: Config.yml müəyyən etibarsız maksimum cavab müddəti.
-    7 saniyəyə qədər defaulting...
-  wwcConfigMaxResponseTimeEnabled: Maksimum cavab müddəti %i saniyəyə təyin edilir.
   wwctInvalidInputLangCode: 'Yanlış giriş dili kodu təqdim edildi! etibarlı lang kodları:
     %o'
   wwcsTitle: '%i rekordu'
@@ -278,23 +273,15 @@ Messages:
   wwcteOffTarget: Cəmiyyət tərcümə %i üçün əlil.
   wwcCharLimit: Mesajınız çox uzun! Lütfən mesajınızın uzunluğunda %i simvollarından
     az olduğundan əmin olun.
-  wwcConfigConversationResponseLimitInput: Hər bir tərcüməçi üçün cari cavab zaman
-    aşımı %i saniyədir. Yeni bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın
-    və ya geri qayıtmaq üçün 0-dan az və ya bərabər bir şey yazın.
   wwcConfigConversationCharacterLimitInput: Mesaj başına mövcud xarakter limiti %i
     simvoldur. Yeni bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın və ya
     geri qayıtmaq üçün 0-dan az və ya bərabər bir şey yazın.
   wwcteOffSender: Cəmiyyət tərcüməsi əlil.
   wwctGUIEntityButton: Toggle Entity Tərcümə
-  wwcConfigConversationResponseLimitSuccess: Cavab zaman aşımı uğurla təyin edildi.
   wwctrlRateLimitBadInt: Dərəcəsi limitiniz etibarlı tam ədəd deyil.
   wwcTranslatorErrorConsole: İstifadəçi %i onların tərcüməsinə cəhd edərkən bir problem
     yarandı. Daha ətraflı məlumat üçün errorLog.txt edin.
-  wwctcOffSender: Chat tərcümə əlil.
-  wwctcOnTarget: Chat tərcümə %i üçün effektiv.
-  wwctcOnSender: Chat tərcüməsi effektiv. Söylədiyiniz hər şey tərcümə olunacaq!
   wwctGUIChatButton: Toggle Chat Tərcümə
-  wwctcOffTarget: '%i üçün chat tərcüməsi aradan qaldırıldı.'
   wwcrBegin: WorldWireChat-ın yenidən yüklənməsi...
   wwctTranslationStoppedOtherPlayer: '%i tərcümə sessiyası dayandırılıb.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Qlobal söhbət tərcümə
@@ -314,3 +301,25 @@ Messages:
     olunur, ancaq sizin %o üçün aktiv tərcümə sessiyası var.
   wwcConfigGUIChangesNotSaved: /wwcc qırmızı maneə basın qədər dəyişikliklər qüvvəyə
     minməyəcək.
+  wwcConfigConversationSendFailedTranslationChatSuccess: Uğursuz tərcümə chat mesajı
+    uğurla keçdi.
+  wwcConfigGUISendFailedTranslationChatButton: Uğursuz Tərcümə Chat Mesajı
+  wwctciOffSender: Gələn chat tərcümə əlil.
+  wwctGUIChatIncomingButton: Gələn Chat Tərcümə keçid
+  wwctcoOffSender: Giden chat tərcümə əlil.
+  wwctcoOnSender: Gedən chat tərcümə effektiv. Deydiyiniz hər şey tərcümə olunacaq!
+  wwctciOnSender: Daxil olan chat tərcümə effektiv. Aldığınız hər şey tərcümə olunacaq!
+  wwctGUIChatMenu: Toggle Chat Tərcümə Menyu
+  wwctcoOnTarget: Gedən chat tərcümə %i üçün effektiv.
+  wwctcoOffTarget: Giden chat tərcümə %i üçün əlil.
+  wwctGUIChatOutgoingButton: Giden Chat Tərcümə keçid
+  wwctciOnTarget: Daxil olan chat tərcüməsi %i üçün effektiv.
+  wwctciOffTarget: Daxil olan chat tərcüməsi %i üçün əlil.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Hover mətni müvəffəqiyyətlə
+    keçdiyi kimi tərcüməyə əlavə olunan orijinal söhbət.
+  wwcConfigGUISendIncomingHoverTextChatButton: Hover Mətn kimi Orijinal Daxil olan
+    Mesajları əlavə edin
+  wwctGUIExistingChatOutgoingEnabled: 'Gedən Chat Tərcüməsi Aktivləşdirildi: %i'
+  wwctGUIExistingTranslationInput: 'Giriş dili: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Daxil olan Çat Tərcüməsi Aktivdir: %i'
+  wwctGUIExistingTranslationOutput: 'Çıxış dili: %i'

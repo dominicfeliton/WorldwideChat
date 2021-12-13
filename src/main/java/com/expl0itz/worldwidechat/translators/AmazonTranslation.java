@@ -34,7 +34,7 @@ public class AmazonTranslation {
 
 	private boolean isInitializing = false;
 
-	private WorldwideChat main = WorldwideChat.getInstance();
+	private WorldwideChat main = WorldwideChat.instance;
 
 	public AmazonTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
 		this.textToTranslate = textToTranslate;
@@ -56,7 +56,7 @@ public class AmazonTranslation {
 		String finalOut = "";
 		try {
 			/* Get test translation */
-			finalOut = process.get(main.getMaxResponseTime(), TimeUnit.SECONDS);
+			finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			CommonDefinitions.sendDebugMessage("Amazon Translate Timeout!!");
 			process.cancel(true);

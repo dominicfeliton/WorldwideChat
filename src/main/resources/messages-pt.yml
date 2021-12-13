@@ -63,8 +63,6 @@ Messages:
   wwctbOnSender: Tradução de livros habilitada. Clique com o botão direito enquanto
     segura um livro para traduzi-lo!
   wwcListenersInitialized: Ouvintes inicializados.
-  wwcUserDataCorrupted: Encontrados e movimentados %i arquivos de dados de usuário
-    corrompidos ou antigos. Eles serão excluídos na próxima recarga.
   wwcConfigGUIPluginUpdateChatButton: Enviar lembrete de bate-papo para atualizações
     de plugins
   wwcConfigConversationSendTranslationChatSuccess: O lembrete ativo do bate-papo do
@@ -231,9 +229,6 @@ Messages:
     Padrão para 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Por favor, verifique errorLog.txt na
     pasta de plugins WorldwideChat para obter mais informações.
-  wwcConfigMaxResponseTimeInvalid: Tempo de resposta máximo inválido definido em config.yml.
-    Padrão para 7 segundos...
-  wwcConfigMaxResponseTimeEnabled: Tempo máximo de resposta definido para %i segundos.
   wwctInvalidInputLangCode: 'Código de idioma de entrada inválido fornecido! Códigos
     lang válidos: %o'
   wwcsTitle: Registro de %i
@@ -286,24 +281,15 @@ Messages:
   wwcteOffTarget: Tradução de entidade desativada para %i.
   wwcCharLimit: Sua mensagem é muito longa! Certifique-se de que sua mensagem tenha
     menos de %i caracteres.
-  wwcConfigConversationResponseLimitInput: O tempo limite de resposta atual para cada
-    tradutor é de %i segundos. Digite qualquer coisa maior que 0 para definir um novo
-    valor, ou digite qualquer coisa menor ou igual a 0 para voltar.
   wwcConfigConversationCharacterLimitInput: O limite de caracteres atual por mensagem
     é de %i caracteres. Digite qualquer coisa maior que 0 para definir um novo valor,
     ou digite qualquer coisa menor ou igual a 0 para voltar.
   wwcteOffSender: Tradução de entidades desativada.
   wwctGUIEntityButton: Alternar tradução de entidades
-  wwcConfigConversationResponseLimitSuccess: Tempo limite de resposta definido com
-    êxito.
   wwctrlRateLimitBadInt: Seu limite de taxa não é um número inteiro válido.
   wwcTranslatorErrorConsole: Ocorreu um problema enquanto o usuário %i estava tentando
     traduzir. Por favor, verifique errorLog.txt para obter mais detalhes.
-  wwctcOffSender: Tradução de bate-papo desativada.
-  wwctcOnTarget: Tradução de bate-papo ativada para %i.
-  wwctcOnSender: Tradução de bate-papo ativada. Tudo o que você disser será traduzido!
   wwctGUIChatButton: Alternar tradução de bate-papo
-  wwctcOffTarget: Tradução de bate-papo desativada para %i.
   wwcrBegin: Recarregando o WorldwideChat...
   wwctTranslationStoppedOtherPlayer: A sessão de tradução para %i foi interrompida.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: O bate-papo global está
@@ -325,3 +311,28 @@ Messages:
     sendo traduzido, mas você tem uma sessão de tradução ativa para %o.
   wwcConfigGUIChangesNotSaved: Suas alterações não entrarão em vigor até que você
     clique na barreira vermelha em /wwcc.
+  wwcConfigConversationSendFailedTranslationChatSuccess: A mensagem de bate-papo com
+    falha na tradução foi alternada com sucesso.
+  wwcConfigGUISendFailedTranslationChatButton: Enviar mensagem de bate-papo na tradução
+    falhada
+  wwctciOffSender: Tradução de bate-papo recebida desativada.
+  wwctGUIChatIncomingButton: Alternar tradução de bate-papo recebido
+  wwctcoOffSender: Tradução de bate-papo de saída desativada.
+  wwctcoOnSender: Tradução de bate-papo de saída ativada. Tudo o que você disser será
+    traduzido!
+  wwctciOnSender: Tradução de bate-papo recebida ativada. Tudo o que você receber
+    será traduzido!
+  wwctGUIChatMenu: Alternar menu de tradução de bate-papo
+  wwctcoOnTarget: Tradução de bate-papo de saída ativada para %i.
+  wwctcoOffTarget: Tradução de bate-papo de saída desativada para %i.
+  wwctGUIChatOutgoingButton: Alternar tradução de bate-papo de saída
+  wwctciOnTarget: Tradução de bate-papo recebida habilitada para %i.
+  wwctciOffTarget: Tradução de bate-papo recebida desativada para %i.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: O bate-papo recebido original
+    anexado à tradução quando o texto do mouse foi alternado com sucesso.
+  wwcConfigGUISendIncomingHoverTextChatButton: Adicionar mensagens recebidas originais
+    como texto de foco
+  wwctGUIExistingChatOutgoingEnabled: 'Tradução de bate-papo de saída ativada: %i'
+  wwctGUIExistingTranslationInput: 'Idioma de entrada: %i'
+  wwctGUIExistingChatIncomingEnabled: 'Conversão de bate-papo recebida ativada: %i'
+  wwctGUIExistingTranslationOutput: 'Idioma de saída: %i'
