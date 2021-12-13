@@ -358,7 +358,7 @@ public class CommonDefinitions {
 					// Double getCause() because each translator is also wrapped in a callback try/catch, 
 					// and this error is our custom exception
 					Throwable realReason = e.getCause().getCause();
-					if (realReason instanceof NotFoundException || realReason instanceof TranslateException || realReason instanceof InvalidRequestException) {
+					if ((realReason != null) && (realReason instanceof NotFoundException || realReason instanceof TranslateException || realReason instanceof InvalidRequestException)) {
 						CommonDefinitions.sendDebugMessage("Low confidence exception thrown, do not add this to the error count!");
 					} else {
 						// If this isn't just low confidence, this error should be added
