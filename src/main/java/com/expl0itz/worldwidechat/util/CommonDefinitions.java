@@ -334,69 +334,38 @@ public class CommonDefinitions {
 
 				/* Begin actual translation, set message to output */
 				String out = "";
-				CommonDefinitions.sendDebugMessage("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
-				if (WorldwideChat.instance.getTranslatorName().equals("Watson")) {
-					try {
+				try {
+					CommonDefinitions.sendDebugMessage("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
+					if (WorldwideChat.instance.getTranslatorName().equals("Watson")) {
 						WatsonTranslation watsonInstance = new WatsonTranslation(inMessage,
 								currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), currPlayer);
 						// Get username + pass from config
 						out = watsonInstance.useTranslator();
-					} catch (NotFoundException lowConfidenceInAnswer) {
-						/*
-						 * This exception happens if the Watson translator is auto-detecting the input
-						 * language. By definition, the translator is unsure if the source language
-						 * detected is accurate due to confidence levels being below a certain
-						 * threshold. Usually, either already translated input is given or occasionally
-						 * a phrase is not fully translatable. This is where we catch that and send the
-						 * player a message telling them that their message was unable to be parsed by
-						 * the translator. You should be able to turn this off in the config.
-						 */
-						final TextComponent lowConfidence = Component.text()
-								.append(Component.text()
-										.content(CommonDefinitions.getMessage("watsonNotFoundExceptionNotification"))
-										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
-								.build();
-						CommonDefinitions.sendMessage(currPlayer, lowConfidence);
-						return inMessage;
-					}
-				} else if (WorldwideChat.instance.getTranslatorName().equals("Google Translate")) {
-					try {
+					} else if (WorldwideChat.instance.getTranslatorName().equals("Google Translate")) {
 						GoogleTranslation googleTranslateInstance = new GoogleTranslation(inMessage,
 								currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), currPlayer);
 						out = googleTranslateInstance.useTranslator();
-					} catch (TranslateException e) {
-						/*
-						 * This exception happens for the same reason that Watson does: low confidence.
-						 * Usually when a player tries to get around our same language translation
-						 * block. Examples of when this triggers: .wwct en and typing in English.
-						 */
-						final TextComponent lowConfidence = Component.text()
-								.append(Component.text()
-										.content(CommonDefinitions.getMessage("watsonNotFoundExceptionNotification"))
-										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
-								.build();
-						CommonDefinitions.sendMessage(currPlayer, lowConfidence);
-						return inMessage;
-					}
-				} else if (WorldwideChat.instance.getTranslatorName().equals("Amazon Translate")) {
-					try {
+					} else if (WorldwideChat.instance.getTranslatorName().equals("Amazon Translate")) {
 						AmazonTranslation amazonTranslateInstance = new AmazonTranslation(inMessage,
 								currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), currPlayer);
 						out = amazonTranslateInstance.useTranslator();
-					} catch (InvalidRequestException e) {
-						/* Low confidence exception, Amazon Translate Edition */
-						final TextComponent lowConfidence = Component.text()
-								.append(Component.text()
-										.content(CommonDefinitions.getMessage("watsonNotFoundExceptionNotification"))
-										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
-								.build();
-						CommonDefinitions.sendMessage(currPlayer, lowConfidence);
-						return inMessage;
+					} else if (WorldwideChat.instance.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+						TestTranslation testTranslator = new TestTranslation(inMessage, currActiveTranslator.getInLangCode(),
+								currActiveTranslator.getOutLangCode(), currPlayer);
+						out = testTranslator.useTranslator();
 					}
-				} else if (WorldwideChat.instance.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
-					TestTranslation testTranslator = new TestTranslation(inMessage, currActiveTranslator.getInLangCode(),
-							currActiveTranslator.getOutLangCode(), currPlayer);
-					out = testTranslator.useTranslator();
+				} catch (TranslatorFailException e) {
+					// Double getCause() because each translator is also wrapped in a callback try/catch, 
+					// and this error is our custom exception
+					Throwable realReason = e.getCause().getCause();
+					if (realReason instanceof NotFoundException || realReason instanceof TranslateException || realReason instanceof InvalidRequestException) {
+						CommonDefinitions.sendDebugMessage("Low confidence exception thrown, do not add this to the error count!");
+					} else {
+						// If this isn't just low confidence, this error should be added
+						// to the error count.
+						throw new TranslatorFailException(e);
+					}
+					return inMessage;
 				}
 
 				/* Update stats */
