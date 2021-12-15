@@ -381,6 +381,7 @@ public class CommonDefinitions {
 				}
 				return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', out));
 			} catch (Exception e) {
+				//TODO: Check if this code properly runs
 				/* Add 1 to error count */
 				WorldwideChat.instance.setTranslatorErrorCount(WorldwideChat.instance.getTranslatorErrorCount() + 1);
 				final TextComponent playerError = Component.text()
@@ -408,7 +409,8 @@ public class CommonDefinitions {
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
-
+				CommonDefinitions.sendDebugMessage("Error Count: " + WorldwideChat.instance.getTranslatorErrorCount());
+				
 				/* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
 				if (WorldwideChat.instance.getTranslatorErrorCount() >= WorldwideChat.instance.getConfigManager().getMainConfig().getInt("Translator.errorLimit")) {
 					WorldwideChat.instance.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReached"));
@@ -435,6 +437,7 @@ public class CommonDefinitions {
 			finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			CommonDefinitions.sendDebugMessage("Translator Timeout!! If we're here, this is not a normal error. Abort.");
+			//TODO: If this is a TimeoutException, print out a warning if the server is not stopping?
 			process.cancel(true);
 		} finally {
 			executor.shutdownNow();
