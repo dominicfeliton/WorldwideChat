@@ -17,6 +17,7 @@ Messages:
   wwcUserDataReloaded: 'Loaded all saved user data.'
   wwcRateLimit: 'Your translations are rate limited. Please wait another %i seconds.'
   wwcCharLimit: 'Your message is too long! Please make sure your message is less than %i characters in length.'
+  wwcTranslatorAttempt: 'Attempting to connect to translator in config.yml... (Attempt %i/%o)'
   wwcInvalidTranslator: 'Invalid translator settings. Please fix this in your config.yml or with /wwcc to use this plugin.'
   wwcInventoryError: 'Error detected with GUI of user %i. Please report this issue to the developer.'
   wwcInventoryErrorPlayer: 'Error detected with your GUI. A log has been sent to the console.'

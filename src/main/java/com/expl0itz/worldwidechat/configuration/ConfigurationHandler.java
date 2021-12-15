@@ -219,46 +219,55 @@ public class ConfigurationHandler {
 	/* Translator Settings */
 	public void loadTranslatorSettings() {
 		String outName = "Invalid";
-		try {
-			if (mainConfig.getBoolean("Translator.useWatsonTranslate")
-					&& (!(mainConfig.getBoolean("Translator.useGoogleTranslate"))
-							&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
-				outName = "Watson";
-				WatsonTranslation test = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
-						mainConfig.getString("Translator.watsonURL"));
-				test.useTranslator();
-			} else if (mainConfig.getBoolean("Translator.useGoogleTranslate")
-					&& (!(mainConfig.getBoolean("Translator.useWatsonTranslate"))
-							&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
-				outName = "Google Translate";
-				GoogleTranslation test = new GoogleTranslation(
-						mainConfig.getString("Translator.googleTranslateAPIKey"));
-				test.useTranslator();
-			} else if (mainConfig.getBoolean("Translator.useAmazonTranslate")
-					&& (!(mainConfig.getBoolean("Translator.useGoogleTranslate"))
-							&& (!(mainConfig.getBoolean("Translator.useWatsonTranslate"))))) {
-				outName = "Amazon Translate";
-				AmazonTranslation test = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
-						mainConfig.getString("Translator.amazonSecretKey"),
-						mainConfig.getString("Translator.amazonRegion"));
-				test.useTranslator();
-			} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
-				outName = "JUnit/MockBukkit Testing Translator";
-				TestTranslation test = new TestTranslation(
-						"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu");
-				test.useTranslator();
-			} else {
-				mainConfig.set("Translator.useWatsonTranslate", false);
-				mainConfig.set("Translator.useGoogleTranslate", false);
-				mainConfig.set("Translator.useAmazonTranslate", false);
-				
-				saveMainConfig(false);
+		final int maxTries = 3;
+		for (int tryNumber = 1; tryNumber <= maxTries; tryNumber++) {
+			try {
+				main.getLogger().warning(CommonDefinitions.getMessage("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}));
+				if (mainConfig.getBoolean("Translator.useWatsonTranslate")
+						&& (!(mainConfig.getBoolean("Translator.useGoogleTranslate"))
+								&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
+					outName = "Watson";
+					WatsonTranslation test = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
+							mainConfig.getString("Translator.watsonURL"));
+					test.useTranslator();
+					break;
+				} else if (mainConfig.getBoolean("Translator.useGoogleTranslate")
+						&& (!(mainConfig.getBoolean("Translator.useWatsonTranslate"))
+								&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
+					outName = "Google Translate";
+					GoogleTranslation test = new GoogleTranslation(
+							mainConfig.getString("Translator.googleTranslateAPIKey"));
+					test.useTranslator();
+					break;
+				} else if (mainConfig.getBoolean("Translator.useAmazonTranslate")
+						&& (!(mainConfig.getBoolean("Translator.useGoogleTranslate"))
+								&& (!(mainConfig.getBoolean("Translator.useWatsonTranslate"))))) {
+					outName = "Amazon Translate";
+					AmazonTranslation test = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
+							mainConfig.getString("Translator.amazonSecretKey"),
+							mainConfig.getString("Translator.amazonRegion"));
+					test.useTranslator();
+					break;
+				} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
+					outName = "JUnit/MockBukkit Testing Translator";
+					TestTranslation test = new TestTranslation(
+							"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu");
+					test.useTranslator();
+					break;
+				} else {
+					mainConfig.set("Translator.useWatsonTranslate", false);
+					mainConfig.set("Translator.useGoogleTranslate", false);
+					mainConfig.set("Translator.useAmazonTranslate", false);
+					
+					saveMainConfig(false);
+					outName = "Invalid";
+					break;
+				}
+			} catch (Exception e) {
+				main.getLogger().severe("(" + outName + ") " + e.getMessage());
+				e.printStackTrace();
 				outName = "Invalid";
 			}
-		} catch (Exception e) {
-			main.getLogger().severe("(" + outName + ") " + e.getMessage());
-			e.printStackTrace();
-			outName = "Invalid";
 		}
 		if (outName.equals("Invalid")) {
 			main.getLogger().severe(CommonDefinitions.getMessage("wwcInvalidTranslator"));
