@@ -147,42 +147,6 @@ public class WorldwideChat extends JavaPlugin {
 
 	@Override
 	public void onDisable() {
-		// Wait for background async tasks to finish
-		// Thanks to:
-		// https://gist.github.com/blablubbabc/e884c114484f34cae316c48290b21d8e#file-someplugin-java-L37
-		if (!translatorName.equals("JUnit/MockBukkit Testing Translator")) {
-			final long asyncTasksTimeoutMillis = (long) asyncTasksTimeoutSeconds * 1000;
-			final long asyncTasksStart = System.currentTimeMillis();
-			boolean asyncTasksTimeout = false;
-			while (this.getActiveAsyncTasks() > 0) {
-				// Send interrupt signal
-				try {
-					for (BukkitWorker worker : Bukkit.getScheduler().getActiveWorkers()) {
-						if (worker.getOwner().equals(this)) {
-							CommonDefinitions.sendDebugMessage("Sending interrupt to task with ID " + worker.getTaskId() + "...");
-							worker.getThread().interrupt();
-						}
-					}
-					Thread.sleep(50);
-				} catch (InterruptedException e) {
-					//e.printStackTrace();
-				}
-
-				// Disable once we reach timeout
-				if (System.currentTimeMillis() - asyncTasksStart > asyncTasksTimeoutMillis) {
-					asyncTasksTimeout = true;
-					CommonDefinitions.sendDebugMessage(
-							"Waited " + asyncTasksTimeoutSeconds + " seconds for " + this.getActiveAsyncTasks()
-									+ " remaining async tasks to complete. Killing tasks and disabling regardless...");
-					break;
-				}
-			}
-			final long asyncTasksTimeWaited = System.currentTimeMillis() - asyncTasksStart;
-			if (!asyncTasksTimeout && asyncTasksTimeWaited > 1) {
-				CommonDefinitions.sendDebugMessage("Waited " + asyncTasksTimeWaited + " ms for async tasks to finish.");
-			}
-		}
-		
 		// Cleanly cancel/reset all background tasks (runnables, timers, vars, etc.)
 		cancelBackgroundTasks(false);
 
@@ -202,19 +166,6 @@ public class WorldwideChat extends JavaPlugin {
 		getLogger().info("Disabled WorldwideChat version " + pluginVersion + ". Goodbye!");
 	}
 	
-	/* Get active async tasks */
-	private int getActiveAsyncTasks() {
-		int workers = 0;
-		if (!translatorName.equals("JUnit/MockBukkit Testing Translator")) {
-			for (BukkitWorker worker : Bukkit.getScheduler().getActiveWorkers()) {
-				if (worker.getOwner().equals(this)) {
-					workers++;
-				}
-			}
-		}
-		return workers;
-	}
-	
 	/* Init all commands */
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		if (command.getName().equalsIgnoreCase("wwc") && !translatorName.equals("Starting")) {
@@ -223,9 +174,9 @@ public class WorldwideChat extends JavaPlugin {
 					.append((Component.text().content(CommonDefinitions.getMessage("wwcVersion")).color(NamedTextColor.RED))
 					.append((Component.text().content(" " + pluginVersion)).color(NamedTextColor.LIGHT_PURPLE))).build();
 			CommonDefinitions.sendMessage(sender, versionNotice);
-		} else if (command.getName().equalsIgnoreCase("wwcr") && !translatorName.equals("Starting")
-				&& getActiveAsyncTasks() == 0) {
+		} else if (command.getName().equalsIgnoreCase("wwcr") && !translatorName.equals("Starting")) {
 			// Reload command
+			//TODO: Send a notice if getActiveAsyncTasks() is not == 0
 			reload(sender);
 			return true;
 		} else if (command.getName().equalsIgnoreCase("wwcg") && hasValidTranslatorSettings(sender)) {
@@ -304,7 +255,7 @@ public class WorldwideChat extends JavaPlugin {
 			@Override
 			public void run() {
 				final long currentDuration = System.nanoTime();
-				cancelBackgroundTasks(true);
+				cancelBackgroundTasks(true, this.getTaskId());
 				loadPluginConfigs(true);
 				
 				/* Send successfully reloaded message */
@@ -323,8 +274,50 @@ public class WorldwideChat extends JavaPlugin {
 		}.runTaskAsynchronously(this);
 	}
 
+	/* Cancel Background Tasks w/out ID */
+    public void cancelBackgroundTasks(boolean isReloading) {
+    	cancelBackgroundTasks(isReloading, -1);
+    }
+	
 	/* Cancel Background Tasks */
-	public void cancelBackgroundTasks(boolean isReloading) {
+	public void cancelBackgroundTasks(boolean isReloading, int taskID) {
+		// Kill all background tasks
+		// Wait for background async tasks to finish
+		// Thanks to:
+		// https://gist.github.com/blablubbabc/e884c114484f34cae316c48290b21d8e#file-someplugin-java-L37
+		if (!translatorName.equals("JUnit/MockBukkit Testing Translator")) {
+			final long asyncTasksTimeoutMillis = (long) asyncTasksTimeoutSeconds * 1000;
+			final long asyncTasksStart = System.currentTimeMillis();
+			boolean asyncTasksTimeout = false;
+			while (this.getActiveAsyncTasks(taskID) > 0) {
+				// Send interrupt signal
+				try {
+					for (BukkitWorker worker : Bukkit.getScheduler().getActiveWorkers()) {
+						if (worker.getOwner().equals(this) && worker.getTaskId() != taskID) {
+							CommonDefinitions.sendDebugMessage("Sending interrupt to task with ID " + worker.getTaskId() + "...");
+							worker.getThread().interrupt();
+						}
+					}
+					Thread.sleep(50);
+				} catch (InterruptedException e) {
+					//e.printStackTrace();
+				}
+
+				// Disable once we reach timeout
+				if (System.currentTimeMillis() - asyncTasksStart > asyncTasksTimeoutMillis) {
+					asyncTasksTimeout = true;
+					CommonDefinitions.sendDebugMessage(
+							"Waited " + asyncTasksTimeoutSeconds + " seconds for " + this.getActiveAsyncTasks()
+									+ " remaining async tasks to complete. Killing tasks and disabling regardless...");
+					break;
+				}
+			}
+			final long asyncTasksTimeWaited = System.currentTimeMillis() - asyncTasksStart;
+			if (!asyncTasksTimeout && asyncTasksTimeWaited > 1) {
+				CommonDefinitions.sendDebugMessage("Waited " + asyncTasksTimeWaited + " ms for async tasks to finish.");
+			}
+		}
+		
 		// Close all inventories
 		if (!isReloading) CommonDefinitions.closeAllInventories();
 
@@ -376,6 +369,23 @@ public class WorldwideChat extends JavaPlugin {
 				registerTabCompleters();
 			}
 		}
+	}
+	
+	/* Get active async tasks */
+	private int getActiveAsyncTasks() {
+		return getActiveAsyncTasks(-1);
+	}
+	
+	private int getActiveAsyncTasks(int excludedId) {
+		int workers = 0;
+		if (!translatorName.equals("JUnit/MockBukkit Testing Translator")) {
+			for (BukkitWorker worker : Bukkit.getScheduler().getActiveWorkers()) {
+				if (worker.getOwner().equals(this) && worker.getTaskId() != excludedId) {
+					workers++;
+				}
+			}
+		}
+		return workers;
 	}
 
 	public void checkMCVersion() {
