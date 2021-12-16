@@ -198,7 +198,7 @@ public class CommonDefinitions {
 	
 	public static String translateText(String inMessage, Player currPlayer) {
 		/* If translator settings are invalid, do not do this... */
-		if (!(inMessage.length() > 0)) {
+		if (!(inMessage.length() > 0) || CommonDefinitions.serverIsStopping()) {
 			return inMessage;
 		}
 		
@@ -286,9 +286,15 @@ public class CommonDefinitions {
 					// Get permission from Bukkit API synchronously, since we do not want to risk
 					// concurrency problems
 					if (!WorldwideChat.instance.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !CommonDefinitions.serverIsStopping()) {
-						permissionCheck = Bukkit.getScheduler().callSyncMethod(WorldwideChat.instance, () -> {
-							return checkForRateLimitPermissions(currPlayer);
-						}).get();
+						try {
+							permissionCheck = Bukkit.getScheduler().callSyncMethod(WorldwideChat.instance, () -> {
+								return checkForRateLimitPermissions(currPlayer);
+							}).get(3, TimeUnit.SECONDS);
+						} catch (TimeoutException | InterruptedException e) {
+							CommonDefinitions.sendDebugMessage("Timeout from rate limit permission check should never happen, unless the server is stopping or /reloading. "
+									+ "If it isn't, and we can't fetch a user permission in less than ~2.5 seconds, we have a problem.");
+							return inMessage;
+						}
 					} else if (WorldwideChat.instance.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
 						// It is extremely unlikely that we run into concurrency issues with MockBukkit.
 						// Until it supports callSyncMethod(), this will do.
@@ -358,7 +364,7 @@ public class CommonDefinitions {
 					// Double getCause() because each translator is also wrapped in a callback try/catch, 
 					// and this error is our custom exception
 					Throwable realReason = e.getCause().getCause();
-					if ((realReason != null) && (realReason instanceof NotFoundException || realReason instanceof TranslateException || realReason instanceof InvalidRequestException)) {
+					if ((realReason != null) && (realReason instanceof InterruptedException | realReason instanceof NotFoundException || realReason instanceof TranslateException || realReason instanceof InvalidRequestException)) {
 						CommonDefinitions.sendDebugMessage("Low confidence exception thrown, do not add this to the error count!");
 					} else {
 						// If this isn't just low confidence, this error should be added
@@ -383,6 +389,10 @@ public class CommonDefinitions {
 			} catch (Exception e) {
 				//TODO: Check if this code properly runs
 				/* Add 1 to error count */
+				if (e.getCause() != null && e.getCause() instanceof InterruptedException) {
+					// If we are getting stopped by onDisable, end this immediately.
+					return inMessage;
+				}
 				WorldwideChat.instance.setTranslatorErrorCount(WorldwideChat.instance.getTranslatorErrorCount() + 1);
 				final TextComponent playerError = Component.text()
 						.append(Component.text().content(CommonDefinitions.getMessage("wwcTranslatorError"))
@@ -436,7 +446,8 @@ public class CommonDefinitions {
 			/* Get translation */
 			finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
-			CommonDefinitions.sendDebugMessage("Translator Timeout!! If we're here, this is not a normal error. Abort.");
+			CommonDefinitions.sendDebugMessage("Translator Timeout!! Either we are reloading or we have lost connection. Abort.");
+			//CommonDefinitions.sendDebugMessage("Exact error: " + ExceptionUtils.getStackTrace(e.getCause()));
 			//TODO: If this is a TimeoutException, print out a warning if the server is not stopping?
 			process.cancel(true);
 		} finally {
@@ -463,7 +474,7 @@ public class CommonDefinitions {
 				@Override
 				public void run() {}
 			}.runTask(WorldwideChat.instance);
-		} catch (IllegalPluginAccessException e) {
+		} catch (Exception e) {
 			CommonDefinitions.sendDebugMessage("Server is stopping! Don't run a task/do any dumb shit.");
 			return true;
 		}

@@ -59,9 +59,9 @@ import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 public class WorldwideChat extends JavaPlugin {
 	/* Vars */
 	public static final int bStatsID = 10562;
-	public static final int asyncTasksTimeoutSeconds = 10;
 	public static final int translatorConnectionTimeoutSeconds = 5;
 	public static final int translatorFatalAbortSeconds = 8;
+	public static final int asyncTasksTimeoutSeconds = 3;
 	
 	public static WorldwideChat instance;
 	
@@ -155,10 +155,17 @@ public class WorldwideChat extends JavaPlugin {
 			final long asyncTasksStart = System.currentTimeMillis();
 			boolean asyncTasksTimeout = false;
 			while (this.getActiveAsyncTasks() > 0) {
+				// Send interrupt signal
 				try {
+					for (BukkitWorker worker : Bukkit.getScheduler().getActiveWorkers()) {
+						if (worker.getOwner().equals(this)) {
+							CommonDefinitions.sendDebugMessage("Sending interrupt to task with ID " + worker.getTaskId() + "...");
+							worker.getThread().interrupt();
+						}
+					}
 					Thread.sleep(50);
 				} catch (InterruptedException e) {
-					e.printStackTrace();
+					//e.printStackTrace();
 				}
 
 				// Disable once we reach timeout
@@ -166,7 +173,7 @@ public class WorldwideChat extends JavaPlugin {
 					asyncTasksTimeout = true;
 					CommonDefinitions.sendDebugMessage(
 							"Waited " + asyncTasksTimeoutSeconds + " seconds for " + this.getActiveAsyncTasks()
-									+ " remaining async tasks to complete. Disabling regardless...");
+									+ " remaining async tasks to complete. Killing tasks and disabling regardless...");
 					break;
 				}
 			}
