@@ -405,38 +405,39 @@ public class ConfigurationHandler {
 	public void syncData() {
 		if (!main.getTranslatorName().equals("Invalid")) {
 			/* Sync activeTranslators to disk */
-			synchronized (main.getActiveTranslators()) {
-				// Save all new activeTranslators
-				for (ActiveTranslator eaTranslator : main.getActiveTranslators()) {
-					CommonDefinitions.sendDebugMessage("Translation data of " + eaTranslator.getUUID() + " save status: " + eaTranslator.getHasBeenSaved());
-					if (!eaTranslator.getHasBeenSaved()) {
-						CommonDefinitions.sendDebugMessage("Created/updated unsaved user data config of " + eaTranslator.getUUID() + ".");
-						eaTranslator.setHasBeenSaved(true);
-						createUserDataConfig(eaTranslator);
-					}
+			// Save all new activeTranslators
+			//DEBUG:
+			long startTime = System.nanoTime();
+			main.getActiveTranslators().entrySet().forEach((entry) -> {
+				CommonDefinitions.sendDebugMessage("Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				if (!entry.getValue().getHasBeenSaved()) {
+					CommonDefinitions.sendDebugMessage("Created/updated unsaved user data config of " + entry.getKey() + ".");
+					entry.getValue().setHasBeenSaved(true);
+					createUserDataConfig(entry.getValue());
 				}
-				// Delete any old activeTranslators
-				File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
-				for (String eaName : userSettingsDir.list()) {
-					File currFile = new File(userSettingsDir, eaName);
-					if (main.getActiveTranslator(
-							currFile.getName().substring(0, currFile.getName().indexOf("."))).getUUID().equals("")) {
-						CommonDefinitions.sendDebugMessage("Deleted user data config of "
-								+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + ".");
-						currFile.delete();
-					}
+			});
+			// Delete any old activeTranslators
+			File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
+			for (String eaName : userSettingsDir.list()) {
+				File currFile = new File(userSettingsDir, eaName);
+				if (main.getActiveTranslator(
+						currFile.getName().substring(0, currFile.getName().indexOf("."))).getUUID().equals("")) {
+					CommonDefinitions.sendDebugMessage("Deleted user data config of "
+							+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + ".");
+					currFile.delete();
 				}
 			}
 
 			/* Sync playerRecords to disk */
-			for (PlayerRecord eaRecord : main.getPlayerRecords()) {
-				CommonDefinitions.sendDebugMessage("Record of " + eaRecord.getUUID() + " save status: " + eaRecord.getHasBeenSaved());
-				if (!eaRecord.getHasBeenSaved()) {
-					CommonDefinitions.sendDebugMessage("Created/updated unsaved user record of " + eaRecord.getUUID() + ".");
-					eaRecord.setHasBeenSaved(true);
-					createStatsConfig(eaRecord);
+			main.getPlayerRecords().entrySet().forEach((entry) -> {
+				CommonDefinitions.sendDebugMessage("Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				if (!entry.getValue().getHasBeenSaved()) {
+					CommonDefinitions.sendDebugMessage("Created/updated unsaved user record of " + entry.getKey() + ".");
+					entry.getValue().setHasBeenSaved(true);
+					createStatsConfig(entry.getValue());
 				}
-			}
+			});
+			CommonDefinitions.sendDebugMessage(System.nanoTime() - startTime + "");
 		}
 	}
 

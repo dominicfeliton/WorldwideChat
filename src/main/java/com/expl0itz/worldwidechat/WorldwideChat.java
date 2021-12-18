@@ -4,7 +4,9 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
 
@@ -70,8 +72,9 @@ public class WorldwideChat extends JavaPlugin {
 	private ConfigurationHandler configurationManager;
 	
 	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>();
-	private List<PlayerRecord> playerRecords = new CopyOnWriteArrayList<PlayerRecord>();
-	private List<ActiveTranslator> activeTranslators = Collections.synchronizedList(new ArrayList<ActiveTranslator>());
+	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<String, PlayerRecord>();
+	private Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<String, ActiveTranslator>();
+	//TODO: Change these two; make the last one a concurrentarraylist
 	private List<CachedTranslation> cache = Collections.synchronizedList(new ArrayList<CachedTranslation>());
 	private List<Player> playersUsingConfigurationGUI = Collections.synchronizedList(new ArrayList<Player>());
 	
@@ -176,7 +179,6 @@ public class WorldwideChat extends JavaPlugin {
 			CommonDefinitions.sendMessage(sender, versionNotice);
 		} else if (command.getName().equalsIgnoreCase("wwcr") && !translatorName.equals("Starting")) {
 			// Reload command
-			//TODO: Send a notice if getActiveAsyncTasks() is not == 0
 			reload(sender);
 			return true;
 		} else if (command.getName().equalsIgnoreCase("wwcg") && hasValidTranslatorSettings(sender)) {
@@ -459,14 +461,16 @@ public class WorldwideChat extends JavaPlugin {
 
 	/* Setters */
 	public void addActiveTranslator(ActiveTranslator i) {
-		if (!activeTranslators.contains(i)) {
-			activeTranslators.add(i);
-			CommonDefinitions.sendDebugMessage(i.getUUID() + " has been added to the internal active translator list.");
+		if (!activeTranslators.containsKey(i.getUUID())) {
+			activeTranslators.put(i.getUUID(), i);
+			CommonDefinitions.sendDebugMessage(i.getUUID() + " has been added to the internal active translator hashmap.");
+		} else {
+			CommonDefinitions.sendDebugMessage(i.getUUID() + " is already added. Refusing to add a duplicate...");
 		}
 	}
 
 	public void removeActiveTranslator(ActiveTranslator i) {
-		activeTranslators.remove(i);
+		activeTranslators.remove(i.getUUID());
 		CommonDefinitions.sendDebugMessage(i.getUUID() + " has been removed from the internal active translator list.");
 	}
 
@@ -512,13 +516,14 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public void addPlayerRecord(PlayerRecord i) {
-		if (!playerRecords.contains(i)) {
-			playerRecords.add(i);
+		if (!playerRecords.containsKey(i.getUUID())) {
+			playerRecords.put(i.getUUID(), i);
 		}
 	}
 
 	public void removePlayerRecord(PlayerRecord i) {
-		playerRecords.remove(i);
+		playerRecords.remove(i.getUUID());
+		CommonDefinitions.sendDebugMessage("Removed player record of " + i.getUUID() + ".");
 	}
 
 	public void setOutOfDate(boolean i) {
@@ -554,41 +559,28 @@ public class WorldwideChat extends JavaPlugin {
 	}
 	
 	public ActiveTranslator getActiveTranslator(String uuid) {
-		if (activeTranslators.size() > 0) // just return false if there are no active translators, less code to run
-		{
-			synchronized (activeTranslators) {
-				for (ActiveTranslator eaTranslator : activeTranslators) {
-					if (eaTranslator.getUUID().equals(uuid)) // if uuid matches up with one in ArrayList
-					{
-						return eaTranslator;
-					}
-				}
-			}
+		ActiveTranslator outTranslator = activeTranslators.get(uuid);
+		if (outTranslator != null) {
+			return outTranslator;
 		}
 		return new ActiveTranslator("", "", "");
 	}
 
-	public PlayerRecord getPlayerRecord(String UUID, boolean createNewIfNotExisting) {
-		if (playerRecords.size() > 0) {
-			synchronized (playerRecords) {
-				for (PlayerRecord eaRecord : playerRecords) {
-					// If the player is in the ArrayList
-					if (eaRecord.getUUID().toString().equals(UUID)) {
-						return eaRecord;
-					}
-				}
-			}
+	public PlayerRecord getPlayerRecord(String uuid, boolean createNewIfNotExisting) {
+		PlayerRecord outRecord = playerRecords.get(uuid);
+		if (outRecord != null) {
+			return outRecord;
 		}
 		if (createNewIfNotExisting) {
 			// Create + add new record
-			PlayerRecord newRecord = new PlayerRecord("--------", UUID, 0, 0);
+			PlayerRecord newRecord = new PlayerRecord("--------", uuid, 0, 0);
 			addPlayerRecord(newRecord);
 			return newRecord;
 		}
 		return new PlayerRecord("", "", -1, -1);
 	}
 
-	public List<ActiveTranslator> getActiveTranslators() {
+	public Map<String, ActiveTranslator> getActiveTranslators() {
 		return activeTranslators;
 	}
 
@@ -600,7 +592,7 @@ public class WorldwideChat extends JavaPlugin {
 		return cache;
 	}
 
-	public List<PlayerRecord> getPlayerRecords() {
+	public Map<String, PlayerRecord> getPlayerRecords() {
 		return playerRecords;
 	}
 
