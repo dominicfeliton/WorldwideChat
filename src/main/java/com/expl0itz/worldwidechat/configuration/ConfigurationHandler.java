@@ -406,8 +406,6 @@ public class ConfigurationHandler {
 		if (!main.getTranslatorName().equals("Invalid")) {
 			/* Sync activeTranslators to disk */
 			// Save all new activeTranslators
-			//DEBUG:
-			long startTime = System.nanoTime();
 			main.getActiveTranslators().entrySet().forEach((entry) -> {
 				CommonDefinitions.sendDebugMessage("Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
 				if (!entry.getValue().getHasBeenSaved()) {
@@ -437,7 +435,6 @@ public class ConfigurationHandler {
 					createStatsConfig(entry.getValue());
 				}
 			});
-			CommonDefinitions.sendDebugMessage(System.nanoTime() - startTime + "");
 		}
 	}
 
