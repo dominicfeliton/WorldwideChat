@@ -72,11 +72,11 @@ public class WorldwideChat extends JavaPlugin {
 	private ConfigurationHandler configurationManager;
 	
 	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>();
+	private List<CachedTranslation> cache = new CopyOnWriteArrayList<CachedTranslation>();
+	private List<Player> playersUsingConfigurationGUI = Collections.synchronizedList(new ArrayList<Player>());
+	
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<String, PlayerRecord>();
 	private Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<String, ActiveTranslator>();
-	//TODO: Change these two; make the last one a concurrentarraylist
-	private List<CachedTranslation> cache = Collections.synchronizedList(new ArrayList<CachedTranslation>());
-	private List<Player> playersUsingConfigurationGUI = Collections.synchronizedList(new ArrayList<Player>());
 	
 	private int translatorErrorCount = 0;
 	
@@ -494,13 +494,13 @@ public class WorldwideChat extends JavaPlugin {
 				CommonDefinitions.sendDebugMessage("Added new phrase into cache!");
 				cache.add(input);
 			} else { // cache size is greater than X; let's remove the least used thing
+				// TODO: This is o(n), because we are iterating thru the list; look into better logic
+				// This may not be able to be improved much
 				CachedTranslation leastAmountOfTimes = new CachedTranslation("", "", "", "");
 				leastAmountOfTimes.setNumberOfTimes(Integer.MAX_VALUE);
-				synchronized (cache) {
-					for (CachedTranslation eaTrans : cache) {
-						if (eaTrans.getNumberOfTimes() < leastAmountOfTimes.getNumberOfTimes()) {
-							leastAmountOfTimes = eaTrans;
-						}
+				for (CachedTranslation eaTrans : cache) {
+					if (eaTrans.getNumberOfTimes() < leastAmountOfTimes.getNumberOfTimes()) {
+						leastAmountOfTimes = eaTrans;
 					}
 				}
 

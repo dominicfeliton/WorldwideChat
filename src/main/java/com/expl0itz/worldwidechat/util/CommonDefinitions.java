@@ -259,18 +259,16 @@ public class CommonDefinitions {
 				if (WorldwideChat.instance.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
 					// Check cache for inputs, since config says we should
 					List<CachedTranslation> currCache = WorldwideChat.instance.getCache();
-					synchronized (currCache) {
-						for (CachedTranslation currentTerm : currCache) {
-							if (currentTerm.getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
-									&& (currentTerm.getOutputLang().equalsIgnoreCase(currActiveTranslator.getOutLangCode()))
-									&& (currentTerm.getInputPhrase().equalsIgnoreCase(inMessage))) {
-								currentTerm.setNumberOfTimes(currentTerm.getNumberOfTimes() + 1);
-								// Update stats, return output
-								if (WorldwideChat.instance.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
-								currPlayerRecord.setLastTranslationTime();
-								return StringEscapeUtils.unescapeJava(
-										ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase()));
-							}
+					for (CachedTranslation currentTerm : currCache) {
+						if (currentTerm.getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
+								&& (currentTerm.getOutputLang().equalsIgnoreCase(currActiveTranslator.getOutLangCode()))
+								&& (currentTerm.getInputPhrase().equalsIgnoreCase(inMessage))) {
+							currentTerm.setNumberOfTimes(currentTerm.getNumberOfTimes() + 1);
+							// Update stats, return output
+							if (WorldwideChat.instance.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+							currPlayerRecord.setLastTranslationTime();
+							return StringEscapeUtils.unescapeJava(
+									ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase()));
 						}
 					}
 				}
