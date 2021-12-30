@@ -300,7 +300,7 @@ public class WorldwideChat extends JavaPlugin {
 							worker.getThread().interrupt();
 						}
 					}
-					Thread.sleep(50);
+					Thread.sleep(100);
 				} catch (InterruptedException e) {
 					//e.printStackTrace();
 				}
