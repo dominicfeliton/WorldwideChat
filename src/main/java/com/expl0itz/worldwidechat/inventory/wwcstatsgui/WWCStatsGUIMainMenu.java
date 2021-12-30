@@ -29,11 +29,11 @@ public class WWCStatsGUIMainMenu implements InventoryProvider {
 		this.targetPlayerUUID = targetPlayerUUID;
 	}
 	
-	public static SmartInventory getStatsMainMenu(String targetPlayerUUID) {
+	public static SmartInventory getStatsMainMenu(String targetPlayerUUID, String targetPlayerName) {
 		return SmartInventory.builder().id("statsMainMenu")
 				.provider(new WWCStatsGUIMainMenu(targetPlayerUUID)).size(5, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcsTitle", new String[] {Bukkit.getPlayer(UUID.fromString(targetPlayerUUID)).getName()}))
+				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcsTitle", new String[] {targetPlayerName}))
 				.build();
 	}
 	

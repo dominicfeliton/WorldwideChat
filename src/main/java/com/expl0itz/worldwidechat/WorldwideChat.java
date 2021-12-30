@@ -471,7 +471,7 @@ public class WorldwideChat extends JavaPlugin {
 
 	public void removeActiveTranslator(ActiveTranslator i) {
 		activeTranslators.remove(i.getUUID());
-		CommonDefinitions.sendDebugMessage(i.getUUID() + " has been removed from the internal active translator list.");
+		CommonDefinitions.sendDebugMessage(i.getUUID() + " has been removed from the internal active translator hashmap.");
 	}
 
 	public void addPlayerUsingConfigurationGUI(Player p) {
