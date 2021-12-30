@@ -68,27 +68,31 @@ public class WWCStats extends BasicCommand {
 	
 	private void translatorMessage(String inName) {
 		if (!CommonDefinitions.serverIsStopping()) {
-			Callable<?> result = () -> {
-				new BukkitRunnable() {
-					@Override
-					public void run() {
+			new BukkitRunnable() {
+				@Override
+				public void run() {
+					Callable<?> result = () -> {
 						/* Get OfflinePlayer, this will allow us to get stats even if target is offline */
 						OfflinePlayer inPlayer = null;
 						if (sender.getName().equals(inName)) {
 							inPlayer = (Player)sender;
 						} else {
-							//TODO: Add callback timeout to this operation, so that it does not stall the main thread on reload or stop
+							final TextComponent playerNotFound = Component.text()
+									.append(Component
+											.text().content(CommonDefinitions.getMessage("wwcPlayerNotFound", new String[] {args[0]}))
+											.color(NamedTextColor.RED))
+									.build();
+							/* Don't run API against invalid long names */
+							if (inName.length() > 16 || inName.length() < 3) {
+								CommonDefinitions.sendMessage(sender, playerNotFound);
+								return null;
+							}
 							inPlayer = Bukkit.getOfflinePlayer(inName);
+							/* getOfflinePlayer always returns a player, so we must check if this player has played on this server */
 							if (!inPlayer.hasPlayedBefore()) {
 								// Target player not found
-								final TextComponent playerNotFound = Component.text()
-										.append(Component
-												.text().content(CommonDefinitions.getMessage("wwcPlayerNotFound", new String[] {args[0]}))
-												.color(NamedTextColor.RED))
-										.build();
 								CommonDefinitions.sendMessage(sender, playerNotFound);
-								this.cancel();
-								return;
+								return null;
 							}
 						}
 						
@@ -135,25 +139,27 @@ public class WWCStats extends BasicCommand {
 						} else {
 							noRecordsMessage(inPlayer.getName());
 						}
+						return null;
+					};
+					
+					/* Start Callback Process */
+					ExecutorService executor = Executors.newSingleThreadExecutor();
+					Future<?> process = executor.submit(result);
+					try {
+						/* Get translation */
+						 process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
+					} catch (TimeoutException | ExecutionException | InterruptedException e) {
+						CommonDefinitions.sendDebugMessage("/wwcs Timeout!! Either we are reloading or we have lost connection. Abort.");
+						//CommonDefinitions.sendDebugMessage("Exact error: " + ExceptionUtils.getStackTrace(e.getCause()));
+						//TODO: If this is a TimeoutException, print out a warning if the server is not stopping?
+						process.cancel(true);
+						this.cancel();
+						return;
+					} finally {
+						executor.shutdownNow();
 					}
-				}.runTaskAsynchronously(main);
-				return null;
-			};
-			
-			/* Start Callback Process */
-			ExecutorService executor = Executors.newSingleThreadExecutor();
-			Future<?> process = executor.submit(result);
-			try {
-				/* Get translation */
-				 process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
-			} catch (TimeoutException | ExecutionException | InterruptedException e) {
-				CommonDefinitions.sendDebugMessage("/wwcs Timeout!! Either we are reloading or we have lost connection. Abort.");
-				//CommonDefinitions.sendDebugMessage("Exact error: " + ExceptionUtils.getStackTrace(e.getCause()));
-				//TODO: If this is a TimeoutException, print out a warning if the server is not stopping?
-				process.cancel(true);
-			} finally {
-				executor.shutdownNow();
-			}
+				}
+			}.runTaskAsynchronously(main);
 		}
 	}
 	
