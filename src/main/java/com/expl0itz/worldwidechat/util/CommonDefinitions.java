@@ -137,6 +137,11 @@ public class CommonDefinitions {
 		}
 	}
 
+	/**
+	   * Sends a debug message to console. Will only work when debug mode is set to true in the Console.
+	   * @param inMessage (String) - The debug message that will be sent to the Console.
+	   * @return
+	   */
 	public static void sendDebugMessage(String inMessage) {
 		if (WorldwideChat.instance.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
 			WorldwideChat.instance.getLogger().warning("DEBUG: " + inMessage);
@@ -147,6 +152,12 @@ public class CommonDefinitions {
 		return getMessage(messageName, new String[0]);
 	}
 	
+	/**
+	   * Gets a message from the currently selected messages-XX.yml.
+	   * @param messageName (String) - The name of the message from messages-XX.yml.
+	   * @param replacements (String[]) - The list of replacement values that replace variables in the selected message. There is no sorting system; the list must be pre-sorted.
+	   * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX>yml.
+	   */
 	public static String getMessage(String messageName, String[] replacements) {
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
@@ -178,6 +189,12 @@ public class CommonDefinitions {
 		return fixedMessage.toString();
 	}
 	
+	/**
+	   * Sends the user a properly formatted message through our adventure instance.
+	   * @param sender (CommandSender) - The target sender. Can be any entity that can receive messages.
+	   * @param originalMessage (TextComponent) - The unformatted TextComponent that should be sent to sender.
+	   * @return
+	   */
 	public static void sendMessage(CommandSender sender, TextComponent originalMessage) {
 		try {
 			Audience adventureSender = WorldwideChat.instance.adventure().sender(sender);
@@ -196,6 +213,12 @@ public class CommonDefinitions {
 		}
 	}
 	
+	/**
+	   * Translates text using the selected translator.
+	   * @param inMessage (String) - The original message to be translated.
+	   * @param currPlayer (Player) - The player who wants this message to be translated.
+	   * @return String - The translated message. If this is equal to inMessage, the translation failed.
+	   */
 	public static String translateText(String inMessage, Player currPlayer) {
 		/* If translator settings are invalid, do not do this... */
 		if (!(inMessage.length() > 0) || CommonDefinitions.serverIsStopping()) {
