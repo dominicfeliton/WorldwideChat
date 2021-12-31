@@ -2,7 +2,6 @@ package com.expl0itz.worldwidechat;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -73,7 +72,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>();
 	private List<CachedTranslation> cache = new CopyOnWriteArrayList<CachedTranslation>();
-	private List<Player> playersUsingConfigurationGUI = Collections.synchronizedList(new ArrayList<Player>());
+	private List<Player> playersUsingConfigurationGUI = new ArrayList<Player>();
 	
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<String, PlayerRecord>();
 	private Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<String, ActiveTranslator>();
@@ -235,6 +234,13 @@ public class WorldwideChat extends JavaPlugin {
 	}
 	
 	public void reload(CommandSender inSender) {
+		/* Put plugin into a reloading state */
+		translatorErrorCount = 0;
+		if (!translatorName.equals("Invalid")) {
+			translatorName = "Starting";
+		}
+		CommonDefinitions.closeAllInventories();
+		
 		/* Send start reload message */
 		if (inSender != null) {
 			final TextComponent wwcrBegin = Component.text()
@@ -244,13 +250,6 @@ public class WorldwideChat extends JavaPlugin {
 					.build();
 			CommonDefinitions.sendMessage(inSender, wwcrBegin);
 		}
-		
-		/* Put plugin into a reloading state */
-		translatorErrorCount = 0;
-		if (!translatorName.equals("Invalid")) {
-			translatorName = "Starting";
-		}
-		CommonDefinitions.closeAllInventories();
 		
 		/* Once it is safe to, cancelBackgroundTasks and loadPluginConfigs async so we don't stall the main thread */
 		new BukkitRunnable() {

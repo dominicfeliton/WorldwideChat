@@ -84,16 +84,22 @@ public class WWCInventoryManager extends InventoryManager {
 	public static void saveMainConfigAndReload(Player player, InventoryContents content) {
 		WorldwideChat.instance.removePlayerUsingConfigurationGUI(player);
 		player.closeInventory();
-		new BukkitRunnable() {
-			@Override
-			public void run() {
-				// Save config sync/in the same thread because we are already in another thread thanks to Bukkit Scheduler
-				WorldwideChat.instance.getConfigManager().saveMainConfig(false);
-				
-				// Reload
-				WorldwideChat.instance.reload(player);
-			}
-		}.runTaskAsynchronously(WorldwideChat.instance);
+		
+		// Ensure that /wwcr is not ran while this is running
+		WorldwideChat.instance.setTranslatorName("Starting");
+		
+		if (!CommonDefinitions.serverIsStopping()) {
+			new BukkitRunnable() {
+				@Override
+				public void run() {
+					// Save config sync/in the same thread because we are already in another thread thanks to Bukkit Scheduler
+					WorldwideChat.instance.getConfigManager().saveMainConfig(false);
+					
+					// Reload
+					WorldwideChat.instance.reload(player);
+				}
+			}.runTaskAsynchronously(WorldwideChat.instance);	
+		}
 	}
 	
 }
