@@ -37,6 +37,7 @@ public class WWCStats extends BasicCommand {
 		super(sender, command, label, args);
 	}
 
+	@Override
 	public boolean processCommand() {
 		/* Sanitize args */
 		if (args.length > 1) {

@@ -16,5 +16,9 @@ public class BasicCommand {
 		this.label = label;
 		this.args = args;
 	}
+	
+	public boolean processCommand() {
+		return true;
+	}
 
 }

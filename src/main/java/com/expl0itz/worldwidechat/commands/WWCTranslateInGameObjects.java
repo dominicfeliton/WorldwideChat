@@ -25,6 +25,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 	private WorldwideChat main = WorldwideChat.instance;
 	
 	/* Process command */
+	@Override
 	public boolean processCommand() {
 		/* Check args */
 		if (args.length > 1) {

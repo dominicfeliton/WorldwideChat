@@ -12,6 +12,7 @@ public class WWCConfiguration extends BasicCommand {
 		super(sender, command, label, args);
 	}
 
+	@Override
 	public boolean processCommand() {
 		ConfigurationGeneralSettingsGUI.generalSettings.open((Player)sender);
 		return true;

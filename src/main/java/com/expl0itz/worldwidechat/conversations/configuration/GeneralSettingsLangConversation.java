@@ -50,7 +50,7 @@ public class GeneralSettingsLangConversation extends StringPrompt {
 				return END_OF_CONVERSATION;
 			}
 		}
-		final TextComponent badChange = Component.text().append(main.getPluginPrefix().asComponent())
+		final TextComponent badChange = Component.text()
 				.append(Component.text()
 						.content(CommonDefinitions.getMessage("wwcConfigConversationLangInvalid"))
 						.color(NamedTextColor.RED))

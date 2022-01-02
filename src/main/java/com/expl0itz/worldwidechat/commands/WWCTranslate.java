@@ -33,6 +33,7 @@ public class WWCTranslate extends BasicCommand {
 	 * MUST be valid, we will check with CommonDefinitions class
 	 */
 
+	@Override
 	public boolean processCommand() {
 		/* Sanitize args */
 		if ((isGlobal && args.length > 2) || (!isGlobal && args.length > 3)) {
