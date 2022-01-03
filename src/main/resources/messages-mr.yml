@@ -332,3 +332,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'आउटपुट भाषा: %i'
   wwcTranslatorAttempt: संरचना.yml मध्ये अनुवादक शी कनेक्ट करण्याचा प्रयत्न करीत आहे...
     ( %i/ %o प्रयत्न करा)
+  wwcTimeoutException: ' आपला आदेश कालबाह्य झाला. कृपया पुन्हा प्रयत्न करा.'
+  wwcTimeoutExceptionConsole: प्लेयर %i ची सर्वात अलीकडील विनंती कालबाह्य झाली. ही
+    त्रुटी घातक नाही, पण WorldwideChat तो घडू सुरू असेल तर रीलोड केले पाहिजे.

@@ -306,3 +306,6 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 'تمكين ترجمة الدردشة الواردة: %i'
   wwctGUIExistingTranslationOutput: 'لغة الإخراج: %i'
   wwcTranslatorAttempt: محاولة الاتصال بالمترجم في config.yml... (محاولة %i/ %o)
+  wwcTimeoutException: ' انتهت مهلة الأمر الخاص بك. يرجى المحاولة مرة أخرى.'
+  wwcTimeoutExceptionConsole: كان لدى اللاعب %i أحدث مهلة طلب. هذا الخطأ ليس قاتلاً،
+    ولكن يجب إعادة تحميل WorldwideChat إذا استمر حدوثه.

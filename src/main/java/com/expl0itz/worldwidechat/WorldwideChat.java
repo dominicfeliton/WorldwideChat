@@ -82,7 +82,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "12152021-2"; //This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "01032022-1"; //This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
@@ -301,7 +301,7 @@ public class WorldwideChat extends JavaPlugin {
 					}
 					Thread.sleep(100);
 				} catch (InterruptedException e) {
-					//e.printStackTrace();
+					CommonDefinitions.sendDebugMessage("Thread successfully aborted and threw an InterruptedException.");
 				}
 
 				// Disable once we reach timeout
@@ -389,7 +389,7 @@ public class WorldwideChat extends JavaPlugin {
 		return workers;
 	}
 
-	public void checkMCVersion() {
+	private void checkMCVersion() {
 		/* MC Version check */
 		String supportedVersions = "";
 		for (int i = 0; i < CommonDefinitions.supportedMCVersions.length; i++) {
@@ -407,7 +407,7 @@ public class WorldwideChat extends JavaPlugin {
 		getLogger().warning(supportedVersions);
 	}
 
-	public boolean checkSenderIdentity(CommandSender sender) {
+	private boolean checkSenderIdentity(CommandSender sender) {
 		if (!(sender instanceof Player)) {
 			final TextComponent consoleNotice = Component.text()
 					.append(Component.text()
@@ -420,7 +420,7 @@ public class WorldwideChat extends JavaPlugin {
 		return true;
 	}
 
-	public boolean hasValidTranslatorSettings(CommandSender sender) {
+	private boolean hasValidTranslatorSettings(CommandSender sender) {
 		if (getTranslatorName().equals("Starting")) {
 			final TextComponent notDone = Component.text()
 					.append(Component.text()
@@ -441,7 +441,7 @@ public class WorldwideChat extends JavaPlugin {
 		return true;
 	}
 
-	public void registerTabCompleters() {
+	private void registerTabCompleters() {
 		// Register tab completers
 		getCommand("wwcg").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwct").setTabCompleter(new WWCTabCompleter());

@@ -332,3 +332,7 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Jezik izhoda: %i'
   wwcTranslatorAttempt: Poskus povezovanja s prevajalcem v config.yml... (Poskus %i/
     %o)
+  wwcTimeoutException: ' Vaš ukaz je časovno razporejen. Prosimo, poskusite znova.'
+  wwcTimeoutExceptionConsole: Igral %imel sem svojo zadnjo časovno omejitev zahteve.
+    Ta napaka ni usodna, vendar je treba WorldwideChat ponovno naložiti, če se še
+    naprej dogaja.

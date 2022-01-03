@@ -466,8 +466,7 @@ public class CommonDefinitions {
 			finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			CommonDefinitions.sendDebugMessage("Translator Timeout!! Either we are reloading or we have lost connection. Abort.");
-			//CommonDefinitions.sendDebugMessage("Exact error: " + ExceptionUtils.getStackTrace(e.getCause()));
-			//TODO: If this is a TimeoutException, print out a warning if the server is not stopping?
+			if (e instanceof TimeoutException) {sendTimeoutExceptionMessage(currPlayer);};
 			process.cancel(true);
 		} finally {
 			executor.shutdownNow();
@@ -477,7 +476,7 @@ public class CommonDefinitions {
 		return finalOut;
 	}
 
-	public static boolean getNoConsoleChatMessage(CommandSender sender) {
+	public static boolean sendNoConsoleChatMessage(CommandSender sender) {
 		final TextComponent noConsoleChat = Component.text() // Cannot translate console chat
 				.append(Component.text()
 						.content(CommonDefinitions.getMessage("wwctCannotTranslateConsole", new String[0]))
@@ -485,6 +484,19 @@ public class CommonDefinitions {
 				.build();
 		CommonDefinitions.sendMessage(sender, noConsoleChat);
 		return false;
+	}
+	
+	public static boolean sendTimeoutExceptionMessage(CommandSender sender) {
+		if (sender instanceof Player) {
+			WorldwideChat.instance.getLogger().warning(CommonDefinitions.getMessage("wwcTimeoutExceptionConsole", new String[] {sender.getName()}));
+		}
+		final TextComponent timeoutException = Component.text()
+				.append(Component.text()
+						.content(CommonDefinitions.getMessage("wwcTimeoutException", new String[0]))
+						.color(NamedTextColor.YELLOW))
+				.build();
+		CommonDefinitions.sendMessage(sender, timeoutException);
+		return true;
 	}
 	
 	public static boolean serverIsStopping() {

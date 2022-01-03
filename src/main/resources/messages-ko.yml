@@ -271,3 +271,6 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: '수신 채팅 번역 사용: %i'
   wwctGUIExistingTranslationOutput: '출력 언어: %i'
   wwcTranslatorAttempt: config.yml에서 번역기에 연결하려고 시도하는 중...(시도 %i/ %o)
+  wwcTimeoutException: ' 명령 시간이 초과되었습니다.다시 시도해 주세요.'
+  wwcTimeoutExceptionConsole: '%i 플레이어의 요청 시간이 가장 최근에 초과되었습니다.이 오류는 치명적이지는 않지만 WorldwideChat이
+    계속 발생하면 다시 로드해야 합니다.'

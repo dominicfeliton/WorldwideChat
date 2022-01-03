@@ -331,3 +331,7 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Izlazni jezik: %i'
   wwcTranslatorAttempt: Pokušaj povezivanja sa prevoditeljem u config.yml... (Pokušaj
     %i/ %o)
+  wwcTimeoutException: ' Vaša komanda je istekao. Molim vas pokušajte ponovo.'
+  wwcTimeoutExceptionConsole: Igrač %imao sam najnoviji vremenski ograničenje zahtjeva.
+    Ova greška nije fatalna, ali WorldwideChat treba ponovo učitati ako se i dalje
+    događa.

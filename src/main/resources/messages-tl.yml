@@ -364,3 +364,7 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Wika ng Output: %i'
   wwcTranslatorAttempt: Sinusubukang kumonekta sa tagasalin sa config.yml... (Pagtangka
     %i/ %o)
+  wwcTimeoutException: ' Ang iyong utos ay nag-time out. Pakisubukang muli.'
+  wwcTimeoutExceptionConsole: Ang manlalarong %ako ay nagkaroon ng kanilang pinakahuling
+    timeout ng kahilingan. Ang error na ito ay hindi nakamamatay, ngunit dapat i-reload
+    ang WorldwideChat kung patuloy itong mangyayari.

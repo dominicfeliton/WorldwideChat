@@ -317,3 +317,6 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 'Sissetuleva vestluse tõlge lubatud: %i'
   wwctGUIExistingTranslationOutput: 'Väljundkeel: %i'
   wwcTranslatorAttempt: Üritades ühendada tõlkija config.yml... (Katse %i/ %o)
+  wwcTimeoutException: ' Teie käsk on ajastatud. Palun proovige uuesti.'
+  wwcTimeoutExceptionConsole: Mängija %Mul oli nende viimane taotluse ajalõpp. See
+    viga ei ole surmav, kuid WorldwideChat tuleks uuesti laadida, kui see jätkub.

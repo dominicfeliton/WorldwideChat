@@ -338,3 +338,7 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Utdataspråk: %i'
   wwcTranslatorAttempt: Försöker ansluta till översättaren i config.yml... (försök
     %i/ %o)
+  wwcTimeoutException: ' Ditt kommando tids ut. Försök igen.'
+  wwcTimeoutExceptionConsole: Spelare %i hade sin senaste tidsgräns för begäran. Det
+    här felet är inte dödligt, men WorldwideChat bör laddas om om det fortsätter att
+    hända.

@@ -346,3 +346,7 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Lingua di output: %i'
   wwcTranslatorAttempt: Tentativo di connettersi al traduttore in config.yml... (Tentativo
     %i/ %o)
+  wwcTimeoutException: ' Il tuo comando è scaduto. Per favore riprova.'
+  wwcTimeoutExceptionConsole: Il giocatore %i ha avuto il timeout della richiesta
+    più recente. Questo errore non è fatale, ma WorldwideChat dovrebbe essere ricaricato
+    se continua a verificarsi.

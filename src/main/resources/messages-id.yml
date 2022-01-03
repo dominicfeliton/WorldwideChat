@@ -337,3 +337,7 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Bahasa Keluaran: %i'
   wwcTranslatorAttempt: Mencoba untuk terhubung ke penerjemah di config.yml.... (Usaha
     %i/ %o)
+  wwcTimeoutException: ' Perintah Anda habis waktu. Silakan coba lagi.'
+  wwcTimeoutExceptionConsole: Pemain %i memiliki batas waktu permintaan terbaru mereka.
+    Kesalahan ini tidak fatal, tetapi WorldwideChat harus dimuat ulang jika terus
+    terjadi.

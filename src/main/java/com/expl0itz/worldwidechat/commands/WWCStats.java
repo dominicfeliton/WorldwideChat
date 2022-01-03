@@ -151,7 +151,7 @@ public class WWCStats extends BasicCommand {
 						 process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 					} catch (TimeoutException | ExecutionException | InterruptedException e) {
 						CommonDefinitions.sendDebugMessage("/wwcs Timeout!! Either we are reloading or we have lost connection. Abort.");
-						//TODO: If this is a TimeoutException, print out a warning if the server is not stopping?
+						if (e instanceof TimeoutException) {CommonDefinitions.sendTimeoutExceptionMessage(sender);};
 						process.cancel(true);
 						this.cancel();
 						return;

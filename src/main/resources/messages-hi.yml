@@ -337,3 +337,7 @@ Messages:
   wwctGUIExistingTranslationOutput: 'आउटपुट भाषा: %i'
   wwcTranslatorAttempt: Config.yml में अनुवादक से कनेक्ट करने का प्रयास किया जा रहा
     है... (प्रयास %i/ %o)
+  wwcTimeoutException: ' आपकी आज्ञा का समय समाप्त हो गया। कृपया फिर से कोशिश करें।'
+  wwcTimeoutExceptionConsole: प्लेयर %i के पास सबसे हाल का अनुरोध टाइमआउट था। यह त्रुटि
+    घातक नहीं है, लेकिन अगर ऐसा होता रहता है तो WorldwideChat को पुनः लोड किया जाना
+    चाहिए।

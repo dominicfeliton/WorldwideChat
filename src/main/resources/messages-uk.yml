@@ -332,3 +332,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Мова виводу: %i'
   wwcTranslatorAttempt: Спроба підключення до перекладача в config.yml... (Спроб %i/
     %o)
+  wwcTimeoutException: ' Ваша команда тайм-аут. Будь ласка, спробуйте ще раз.'
+  wwcTimeoutExceptionConsole: Програвач %i мав свій останній тайм-аут запиту. Ця помилка
+    не є фатальною, але WorldwideChat слід перезавантажити, якщо вона продовжує відбуватися.

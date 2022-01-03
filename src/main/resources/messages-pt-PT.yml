@@ -343,3 +343,7 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Língua de Saída: %i'
   wwcTranslatorAttempt: Tentando conectar-se ao tradutor em config.yml... (Tentativa
     %i/ %o)
+  wwcTimeoutException: ' O seu comando foi cronometrado. Por favor tente novamente.'
+  wwcTimeoutExceptionConsole: O jogador %i tinha o seu tempo de espera mais recente.
+    Este erro não é fatal, mas o WorldwideChat deve ser recarregado se continuar a
+    acontecer.
