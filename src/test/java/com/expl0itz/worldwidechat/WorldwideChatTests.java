@@ -24,9 +24,12 @@ public class WorldwideChatTests {
 	private static PlayerMock secondPlayerMock;
 
 	private static int testCount = 0;
-
-	// DISABLED AS OF 1.18
-	// WILL BE RE-ENABLED WHEN MOCKBUKKIT GETS UPDATED.
+	
+	// TODO: Replace MockBukkit with Mockito or a similar testing suite.
+	// Too many bugs in MockBukkit to make the below testing worth it.
+	// At the moment, there's a bug (Issue #250) that causes MockBukkit.unmock() to hang indefinitely and leave a zombie process
+	// running on the system.
+	// No thanks!
 	
 	/* Init all test classes */
 	TestPlayerCommands testPlayerCommands = new TestPlayerCommands(server, plugin, playerMock, secondPlayerMock);
