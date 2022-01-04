@@ -465,7 +465,7 @@ public class CommonDefinitions {
 			/* Get translation */
 			finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
-			CommonDefinitions.sendDebugMessage("Translator Timeout!! Either we are reloading or we have lost connection. Abort.");
+			CommonDefinitions.sendDebugMessage("Failed to receive a response from the translator, and it was not interrupted. Abort.");
 			if (e instanceof TimeoutException) {sendTimeoutExceptionMessage(currPlayer);};
 			process.cancel(true);
 		} finally {

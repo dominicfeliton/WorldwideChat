@@ -252,27 +252,30 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		
 		/* Once it is safe to, cancelBackgroundTasks and loadPluginConfigs async so we don't stall the main thread */
-		new BukkitRunnable() {
-			@Override
-			public void run() {
-				final long currentDuration = System.nanoTime();
-				cancelBackgroundTasks(true, this.getTaskId());
-				loadPluginConfigs(true);
-				
-				/* Send successfully reloaded message */
-				if (inSender != null) {
-					final TextComponent wwcrSuccess = Component.text()
-							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwcrSuccess"))
-									.color(NamedTextColor.GREEN))
-							.append(Component.text()
-									.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
-									.color(NamedTextColor.YELLOW))
-							.build();
-					CommonDefinitions.sendMessage(inSender, wwcrSuccess);
+		//TODO: Check if this breaks if server stops while this is running
+		if (!CommonDefinitions.serverIsStopping()) {
+			new BukkitRunnable() {
+				@Override
+				public void run() {
+					final long currentDuration = System.nanoTime();
+					cancelBackgroundTasks(true, this.getTaskId());
+					loadPluginConfigs(true);
+					
+					/* Send successfully reloaded message */
+					if (inSender != null) {
+						final TextComponent wwcrSuccess = Component.text()
+								.append(Component.text()
+										.content(CommonDefinitions.getMessage("wwcrSuccess"))
+										.color(NamedTextColor.GREEN))
+								.append(Component.text()
+										.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
+										.color(NamedTextColor.YELLOW))
+								.build();
+						CommonDefinitions.sendMessage(inSender, wwcrSuccess);
+					}
 				}
-			}
-		}.runTaskAsynchronously(this);
+			}.runTaskAsynchronously(this);	
+		}
 	}
 
 	/* Cancel Background Tasks w/out ID */
@@ -309,7 +312,7 @@ public class WorldwideChat extends JavaPlugin {
 					asyncTasksTimeout = true;
 					CommonDefinitions.sendDebugMessage(
 							"Waited " + asyncTasksTimeoutSeconds + " seconds for " + this.getActiveAsyncTasks()
-									+ " remaining async tasks to complete. Killing tasks and disabling regardless...");
+									+ " remaining async tasks to complete. Disabling/reloading regardless...");
 					break;
 				}
 			}
