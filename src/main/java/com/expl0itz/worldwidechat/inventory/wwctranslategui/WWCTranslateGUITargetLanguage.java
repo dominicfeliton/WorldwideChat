@@ -49,6 +49,16 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		try {
+			/* Default white stained glass borders for inactive, yellow if player has existing translation session */
+			ItemStack customDefaultBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
+			if (!main.getActiveTranslator(targetPlayerUUID).getInLangCode().equals("")) {
+				customDefaultBorders = XMaterial.YELLOW_STAINED_GLASS_PANE.parseItem();
+			}
+			ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
+			defaultBorderMeta.setDisplayName(" ");
+			customDefaultBorders.setItemMeta(defaultBorderMeta);
+			contents.fillBorders(ClickableItem.empty(customDefaultBorders));
+			
 			/* Init current active translator */
 			ActiveTranslator currTranslator = main.getActiveTranslator(targetPlayerUUID);
 			
@@ -92,10 +102,10 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 				});
 			}
 
-			/* 45 langs per page, start at 0, 0 */
+			/* 28 langs per page, start at 1, 1 */
 			pagination.setItems(listOfAvailableLangs);
-			pagination.setItemsPerPage(45);
-			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
+			pagination.setItemsPerPage(28);
+			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 1, 1).allowOverride(false));
 
 			/* Bottom Left Option: Previous Page */
 			if (!pagination.isFirst()) {

@@ -59,13 +59,15 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 		try {
 			/* Default white stained glass borders for inactive */
 			ItemStack customDefaultBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
+			if (!main.getActiveTranslator(targetPlayerUUID).getUUID().equals("")) {
+				customDefaultBorders = XMaterial.GREEN_STAINED_GLASS_PANE.parseItem();
+			}
 			ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
 			defaultBorderMeta.setDisplayName(" ");
 			customDefaultBorders.setItemMeta(defaultBorderMeta);
 			contents.fillBorders(ClickableItem.empty(customDefaultBorders));
 
 			/* New translation button */
-			//TODO: Add borders, rework pagination for both source and target GUIs?
 			ItemStack translationButton = XMaterial.COMPASS.parseItem();
 			ItemMeta translationMeta = translationButton.getItemMeta();
 			translationMeta.setDisplayName(
@@ -88,13 +90,6 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				outLore.add(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwctGUIExistingTranslationOutput", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getOutLangCode()}));
 				translationMeta.setLore(outLore);
 				translationButton.setItemMeta(translationMeta);
-
-				/* Green stained glass borders for active */
-				ItemStack customBorders = XMaterial.GREEN_STAINED_GLASS_PANE.parseItem();
-				ItemMeta borderMeta = customBorders.getItemMeta();
-				borderMeta.setDisplayName(" ");
-				customBorders.setItemMeta(borderMeta);
-				contents.fillBorders(ClickableItem.empty(customBorders));
 
 				/* Stop Button: Stop translation if active */
 				ItemStack stopButton = XMaterial.BARRIER.parseItem();
