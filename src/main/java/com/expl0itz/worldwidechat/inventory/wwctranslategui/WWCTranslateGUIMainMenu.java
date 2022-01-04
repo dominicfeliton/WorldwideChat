@@ -65,6 +65,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 			contents.fillBorders(ClickableItem.empty(customDefaultBorders));
 
 			/* New translation button */
+			//TODO: Add borders, rework pagination for both source and target GUIs?
 			ItemStack translationButton = XMaterial.COMPASS.parseItem();
 			ItemMeta translationMeta = translationButton.getItemMeta();
 			translationMeta.setDisplayName(

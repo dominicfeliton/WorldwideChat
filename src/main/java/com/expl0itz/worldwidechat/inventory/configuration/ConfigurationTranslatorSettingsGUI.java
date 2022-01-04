@@ -98,7 +98,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			}));
 			
 			/* Bottom Right Option: Previous Page */
-			contents.set(2, 1,
+			contents.set(2, 2,
 					ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), 
 							e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
 
@@ -113,6 +113,9 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 				player.closeInventory();
 				main.reload(player);
 			}));
+			
+			/* Last Option: Page Number */
+			contents.set(2, 8, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {"3"}), e -> {}));
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

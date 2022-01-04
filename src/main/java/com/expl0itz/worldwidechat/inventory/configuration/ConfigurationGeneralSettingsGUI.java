@@ -103,9 +103,12 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			}));
 
 			/* Bottom Right Option: Next Page */
-			contents.set(2, 7,
+			contents.set(2, 6,
 					ClickableItem.of(WWCInventoryManager.getCommonButton("Next"), 
 							e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
+			
+			/* Last Option: Page Number */
+			contents.set(2, 8, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {"1"}), e -> {}));
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

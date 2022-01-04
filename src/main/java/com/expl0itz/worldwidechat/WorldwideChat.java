@@ -82,7 +82,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "01032022-1"; //This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "01032022-2"; //This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
@@ -252,7 +252,6 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		
 		/* Once it is safe to, cancelBackgroundTasks and loadPluginConfigs async so we don't stall the main thread */
-		//TODO: Check if this breaks if server stops while this is running
 		if (!CommonDefinitions.serverIsStopping()) {
 			new BukkitRunnable() {
 				@Override

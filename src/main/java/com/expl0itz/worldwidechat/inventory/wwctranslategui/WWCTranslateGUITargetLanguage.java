@@ -116,6 +116,9 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 								e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player,
 										pagination.next().getPage())));
 			}
+			
+			/* Last Option: Page Number */
+			contents.set(5, 8, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {pagination.getPage() + 1 + ""}), e -> {}));
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

@@ -29,6 +29,7 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: 'Please check errorLog.txt in the WorldwideChat plugin folder for more information.'
   wwcTimeoutExceptionConsole: 'Player %i had their most recent request timeout. This error is not fatal, but WorldwideChat should be reloaded if it continues to happen.'
   wwcTimeoutException: ' Your command timed out. Please try again.'
+  wwcGUIPageNumber: 'Page Number: %i'
   #------------------- Listener Messages -------------------
   wwcChatTranslationFail: 'Failed to translate your message.'
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from %i to %o.'

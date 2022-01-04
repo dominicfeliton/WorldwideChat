@@ -157,7 +157,7 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 			}
 
 			/* Bottom Right Option: Previous Page */
-			contents.set(2, 1, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"),
+			contents.set(2, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"),
 					e -> ConfigurationTranslatorSettingsGUI.translatorSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */

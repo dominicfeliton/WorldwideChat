@@ -93,6 +93,9 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 				}));
 			}
 			
+			/* Middle Option: Current Page Number */
+			contents.set(5, 4, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {pagination.getPage() + 1 + ""}), e -> {}));
+			
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {
 				contents.set(5, 6, ClickableItem.of(WWCInventoryManager.getCommonButton("Next"), e -> {
