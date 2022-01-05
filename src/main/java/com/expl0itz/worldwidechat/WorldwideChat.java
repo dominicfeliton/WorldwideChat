@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -462,12 +463,8 @@ public class WorldwideChat extends JavaPlugin {
 
 	/* Setters */
 	public void addActiveTranslator(ActiveTranslator i) {
-		if (!activeTranslators.containsKey(i.getUUID())) {
-			activeTranslators.put(i.getUUID(), i);
-			CommonDefinitions.sendDebugMessage(i.getUUID() + " has been added to the internal active translator hashmap.");
-		} else {
-			CommonDefinitions.sendDebugMessage(i.getUUID() + " is already added. Refusing to add a duplicate...");
-		}
+		activeTranslators.put(i.getUUID(), i);
+		CommonDefinitions.sendDebugMessage(i.getUUID() + " has been added (or overwrriten) to the internal active translator hashmap.");
 	}
 
 	public void removeActiveTranslator(ActiveTranslator i) {
@@ -495,16 +492,14 @@ public class WorldwideChat extends JavaPlugin {
 				CommonDefinitions.sendDebugMessage("Added new phrase into cache!");
 				cache.put(input, 1);
 			} else { // cache size is greater than X; let's remove the least used thing
-				CachedTranslation keyToRemove = new CachedTranslation("","","","");
-				int leastAmountOfTimes = Integer.MAX_VALUE;
+				Entry<CachedTranslation, Integer> removeEntry = null;
 				for (Map.Entry<CachedTranslation, Integer> eaSet : cache.entrySet()) {
-					if (eaSet.getValue() < leastAmountOfTimes) {
-						leastAmountOfTimes = eaSet.getValue();
-						keyToRemove = eaSet.getKey();
+					if (removeEntry == null || eaSet.getValue() < removeEntry.getValue()) {
+						removeEntry = eaSet;
 					}
 				}
 
-				removeCacheTerm(keyToRemove);
+				removeCacheTerm(removeEntry.getKey());
 				CommonDefinitions.sendDebugMessage("Removed least used phrase in cache, since we are now at the hard limit.");
 				addCacheTerm(input);
 			}
@@ -516,9 +511,7 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public void addPlayerRecord(PlayerRecord i) {
-		if (!playerRecords.containsKey(i.getUUID())) {
-			playerRecords.put(i.getUUID(), i);
-		}
+		playerRecords.put(i.getUUID(), i);
 	}
 
 	public void removePlayerRecord(PlayerRecord i) {
