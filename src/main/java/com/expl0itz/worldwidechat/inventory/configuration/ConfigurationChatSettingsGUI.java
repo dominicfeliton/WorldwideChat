@@ -53,7 +53,6 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			sendIncomingHoverTextChatButton(player, contents);
 			
 			/* Fifth Button: Let user override default plugin messages */
-			//TODO: Add borders/move buttons + pagination for all msg override GUIs
 			//TODO: Check if color codes work in overrides
 			ItemStack messagesOverrideChatButton = XMaterial.WRITABLE_BOOK.parseItem();
 			ItemMeta messagesOverrideChatMeta = messagesOverrideChatButton.getItemMeta();

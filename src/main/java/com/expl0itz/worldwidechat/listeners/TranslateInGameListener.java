@@ -44,8 +44,6 @@ public class TranslateInGameListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	
-	//TODO: Add callbacks if needed for below BukkitRunnables
-	
 	/* Custom Entity Name Translation */
 	@EventHandler(priority = EventPriority.HIGHEST) 
 	public void onInGameEntityTranslateRequest(PlayerInteractEntityEvent event) {

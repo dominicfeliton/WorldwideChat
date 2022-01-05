@@ -71,9 +71,9 @@ public class WorldwideChat extends JavaPlugin {
 	private ConfigurationHandler configurationManager;
 	
 	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>();
-	private List<CachedTranslation> cache = new CopyOnWriteArrayList<CachedTranslation>();
-	private List<Player> playersUsingConfigurationGUI = new ArrayList<Player>();
+	private List<Player> playersUsingConfigurationGUI = new ArrayList<Player>(); //Not thread-safe, only modify this on the main thread
 	
+	private Map<CachedTranslation, Integer> cache = new ConcurrentHashMap<CachedTranslation, Integer>();
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<String, PlayerRecord>();
 	private Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<String, ActiveTranslator>();
 	
@@ -493,19 +493,18 @@ public class WorldwideChat extends JavaPlugin {
 		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
 			if (cache.size() < configurationManager.getMainConfig().getInt("Translator.translatorCacheSize")) {
 				CommonDefinitions.sendDebugMessage("Added new phrase into cache!");
-				cache.add(input);
+				cache.put(input, 1);
 			} else { // cache size is greater than X; let's remove the least used thing
-				// TODO: This is o(n), because we are iterating thru the list; look into better logic
-				// This may not be able to be improved much
-				CachedTranslation leastAmountOfTimes = new CachedTranslation("", "", "", "");
-				leastAmountOfTimes.setNumberOfTimes(Integer.MAX_VALUE);
-				for (CachedTranslation eaTrans : cache) {
-					if (eaTrans.getNumberOfTimes() < leastAmountOfTimes.getNumberOfTimes()) {
-						leastAmountOfTimes = eaTrans;
+				CachedTranslation keyToRemove = new CachedTranslation("","","","");
+				int leastAmountOfTimes = Integer.MAX_VALUE;
+				for (Map.Entry<CachedTranslation, Integer> eaSet : cache.entrySet()) {
+					if (eaSet.getValue() < leastAmountOfTimes) {
+						leastAmountOfTimes = eaSet.getValue();
+						keyToRemove = eaSet.getKey();
 					}
 				}
 
-				removeCacheTerm(leastAmountOfTimes);
+				removeCacheTerm(keyToRemove);
 				CommonDefinitions.sendDebugMessage("Removed least used phrase in cache, since we are now at the hard limit.");
 				addCacheTerm(input);
 			}
@@ -585,11 +584,7 @@ public class WorldwideChat extends JavaPlugin {
 		return activeTranslators;
 	}
 
-	public List<Player> getPlayersUsingGUI() {
-		return playersUsingConfigurationGUI;
-	}
-
-	public List<CachedTranslation> getCache() {
+	public Map<CachedTranslation, Integer> getCache() {
 		return cache;
 	}
 
@@ -597,6 +592,10 @@ public class WorldwideChat extends JavaPlugin {
 		return playerRecords;
 	}
 
+	public List<Player> getPlayersUsingGUI() {
+		return playersUsingConfigurationGUI;
+	}
+	
 	public List<SupportedLanguageObject> getSupportedTranslatorLanguages() {
 		return supportedLanguages;
 	}
