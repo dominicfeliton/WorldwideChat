@@ -160,7 +160,7 @@ public class CommonDefinitions {
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
 		if (WorldwideChat.instance.getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
-			convertedOriginalMessage = WorldwideChat.instance.getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName));
+			convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', WorldwideChat.instance.getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName)));
 		} else {
 			convertedOriginalMessage = WorldwideChat.instance.getConfigManager().getMessagesConfig().getString("Messages." + ChatColor.stripColor(messageName));
 			if (convertedOriginalMessage == null) {
@@ -405,7 +405,6 @@ public class CommonDefinitions {
 				}
 				return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', out));
 			} catch (Exception e) {
-				//TODO: Check if this code properly runs
 				/* Add 1 to error count */
 				if (e.getCause() != null && e.getCause() instanceof InterruptedException) {
 					// If we are getting stopped by onDisable, end this immediately.
