@@ -336,3 +336,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'Idioma de entrada: %i'
   wwctGUIExistingChatIncomingEnabled: 'Conversão de bate-papo recebida ativada: %i'
   wwctGUIExistingTranslationOutput: 'Idioma de saída: %i'
+  wwcTranslatorAttempt: Tentando se conectar ao tradutor no config.yml... (Tentativa
+    %i/ %o)
+  wwcTimeoutException: ' Seu comando atingiu o tempo limite. Por favor, tente novamente.'
+  wwcTimeoutExceptionConsole: O jogador %i teve seu tempo limite de solicitação mais
+    recente. Esse erro não é fatal, mas o WorldwideChat deve ser recarregado se continuar
+    acontecendo.
+  wwcGUIPageNumber: 'Número da página: %i'

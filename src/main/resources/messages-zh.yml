@@ -262,3 +262,7 @@ Messages:
   wwctGUIExistingTranslationInput: 输入语言： %i
   wwctGUIExistingChatIncomingEnabled: 已启用传入聊天翻译： %i
   wwctGUIExistingTranslationOutput: 输出语言： %i
+  wwcTranslatorAttempt: 正在尝试在 config.yml 中连接翻译器...（尝试 %i/ %o）
+  wwcTimeoutException: ' 你的命令已超时。请再试一次。'
+  wwcTimeoutExceptionConsole: 玩家 %i 最近一次请求超时。这个错误不是致命的，但是如果它继续发生，应该重新加载 WorldwideChat。
+  wwcGUIPageNumber: 页码： %i

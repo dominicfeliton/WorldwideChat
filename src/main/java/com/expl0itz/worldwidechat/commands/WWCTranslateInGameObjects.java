@@ -25,6 +25,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 	private WorldwideChat main = WorldwideChat.instance;
 	
 	/* Process command */
+	@Override
 	public boolean processCommand() {
 		/* Check args */
 		if (args.length > 1) {
@@ -38,7 +39,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 		
 		/* If no args are provided */
 		if (isConsoleSender && args.length == 0) {
-			return CommonDefinitions.getNoConsoleChatMessage(sender);
+			return CommonDefinitions.sendNoConsoleChatMessage(sender);
 		}
 		if (args.length == 0 || (args.length == 1 && args[0].equalsIgnoreCase(sender.getName()))) {
 			if (!main.getActiveTranslator(((Player)sender).getUniqueId().toString()).getUUID().equals("")) {

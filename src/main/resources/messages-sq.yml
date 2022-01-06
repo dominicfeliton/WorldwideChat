@@ -345,3 +345,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'Gjuha e hyrjes: %i'
   wwctGUIExistingChatIncomingEnabled: 'Përkthimi i bisedës hyrëse e aktivizuar: %i'
   wwctGUIExistingTranslationOutput: 'Gjuha e daljes: %i'
+  wwcTranslatorAttempt: Përpjekja për t'u lidhur me përkthyesin në config.yml... (Përpjekje
+    %i/ %o)
+  wwcTimeoutException: ' Komanda juaj në kohën e duhur. Ju lutemi provoni përsëri.'
+  wwcTimeoutExceptionConsole: Lojtari % kam pasur kohën e tyre më të fundit të kërkesës.
+    Ky gabim nuk është fatal, por WorldwideChat duhet të rifreskohet nëse vazhdon
+    të ndodhë.
+  wwcGUIPageNumber: 'Numri i faqes: %i'

@@ -336,3 +336,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'Ngôn ngữ nhập: %i'
   wwctGUIExistingChatIncomingEnabled: 'Đã bật bản dịch trò chuyện đến: %i'
   wwctGUIExistingTranslationOutput: 'Ngôn ngữ đầu ra: %i'
+  wwcTranslatorAttempt: Cố gắng kết nối với dịch giả trong config.yml... (Cố gắng
+    %i/ %o)
+  wwcTimeoutException: ' Lệnh của bạn đã hết thời gian. Vui lòng thử lại.'
+  wwcTimeoutExceptionConsole: Người chơi %i đã có thời gian chờ yêu cầu gần đây nhất
+    của họ. Lỗi này không gây tử vong, nhưng WorldwideChat nên được tải lại nếu nó
+    tiếp tục xảy ra.
+  wwcGUIPageNumber: 'Số trang: %i'

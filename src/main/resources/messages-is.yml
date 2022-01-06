@@ -332,3 +332,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'Inntak Tungumál: %i'
   wwctGUIExistingChatIncomingEnabled: 'Komandi spjall Þýðing Virkt: %i'
   wwctGUIExistingTranslationOutput: 'Output Tungumál: %i'
+  wwcTranslatorAttempt: Tilraun til að tengjast þýðanda í config.yml... (Reynta %i/
+    %o)
+  wwcTimeoutException: ' Skipunin þín tímasett út. Vinsamlegast reyndu aftur.'
+  wwcTimeoutExceptionConsole: Leikmaður %Ég hafði nýjustu beiðni tímamörk þeirra.
+    Þessi villa er ekki banvæn, en WorldwideChat ætti að endurhlaða ef það heldur
+    áfram að gerast.
+  wwcGUIPageNumber: 'Síðu númer: %i'

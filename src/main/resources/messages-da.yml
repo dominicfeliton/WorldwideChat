@@ -332,3 +332,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'Indtastningssprog: %i'
   wwctGUIExistingChatIncomingEnabled: 'Indgående chat Oversættelse Aktiveret: %i'
   wwctGUIExistingTranslationOutput: 'Output-sprog: %i'
+  wwcTranslatorAttempt: Forsøger at oprette forbindelse til oversætter i config.yml...
+    (forsøg %i/ %o)
+  wwcTimeoutException: ' Din kommando timet ud. Prøv venligst igen.'
+  wwcTimeoutExceptionConsole: Spiller %Jeg havde deres seneste timeout for anmodningen.
+    Denne fejl er ikke dødelig, men WorldwideChat skal genindlæses, hvis det fortsætter
+    med at ske.
+  wwcGUIPageNumber: 'Sidetal: %i'

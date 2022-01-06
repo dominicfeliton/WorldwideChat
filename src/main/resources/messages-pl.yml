@@ -335,3 +335,11 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 'Tłumaczenie czatu przychodzącego włączone:
     %i'
   wwctGUIExistingTranslationOutput: 'Język wyjściowy: %i'
+  wwcTranslatorAttempt: 'Próba połączenia z tłumaczem w config.yml... (Próba: %i/
+    %o)'
+  wwcTimeoutException: ' Upłynnął limit czasu twojego polecenia. Proszę spróbować
+    jeszcze raz.'
+  wwcTimeoutExceptionConsole: Odtwarzacz %i miał limit czasu ostatniego żądania. Ten
+    błąd nie jest krytyczny, ale WorldwideChat powinien zostać ponownie załadowany,
+    jeśli nadal występuje.
+  wwcGUIPageNumber: 'Numer strony: %i'

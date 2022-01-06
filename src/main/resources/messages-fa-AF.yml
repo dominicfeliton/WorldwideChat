@@ -321,3 +321,9 @@ Messages:
   wwctGUIExistingTranslationInput: 'زبان ورودی: %i'
   wwctGUIExistingChatIncomingEnabled: 'ترجمه گفتگوی ورودی فعال شد: %i'
   wwctGUIExistingTranslationOutput: 'زبان خروجی: %i'
+  wwcTranslatorAttempt: تلاش برای اتصال به مترجم در config.yml... (تلاش٪ من/٪ O)
+  wwcTimeoutException: ' فرمان خود را به پایان رسیده است. لطفا دوباره امتحان کنید'
+  wwcTimeoutExceptionConsole: بازیکن %من تا به حال آخرین مهلت درخواست خود را. این
+    خطا کشنده نیست، اما WorldwideChat باید دوباره بارگذاری شود اگر آن را همچنان به
+    اتفاق می افتد.
+  wwcGUIPageNumber: 'شماره صفحه: %i'

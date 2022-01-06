@@ -4,7 +4,7 @@
 
   <groupId>com.expl0itz.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
-  <version>1.8.0-SNAPSHOT</version>
+  <version>1.9.0-SNAPSHOT</version>
 
   <name>WorldwideChat</name>
   <description>Break the blocky language barrier!</description>
@@ -28,7 +28,7 @@
         <dependency>
             <groupId>com.ibm.cloud</groupId>
             <artifactId>sdk-core</artifactId>
-            <version>9.15.1</version>
+            <version>9.15.2</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -93,12 +93,12 @@
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-translate</artifactId>
-            <version>1.12.128</version>
+            <version>1.12.134</version>
         </dependency>
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-s3</artifactId>
-            <version>1.12.128</version>
+            <version>1.12.134</version>
         </dependency>
         <dependency>
             <groupId>org.jsoup</groupId>
@@ -109,12 +109,6 @@
             <groupId>fr.minuskube.inv</groupId>
             <artifactId>smart-invs</artifactId>
             <version>1.2.7</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.seeseemelk</groupId>
-            <artifactId>MockBukkit-v1.17</artifactId>
-            <version>1.13.0</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -135,7 +129,7 @@
         <dependency>
             <groupId>com.github.cryptomorin</groupId>
             <artifactId>XSeries</artifactId>
-            <version>8.5.0.1</version>
+            <version>8.6.0</version>
         </dependency>
     </dependencies>
 

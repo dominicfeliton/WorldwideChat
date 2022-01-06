@@ -265,3 +265,8 @@ Messages:
   wwctGUIExistingTranslationInput: '入力言語: %i'
   wwctGUIExistingChatIncomingEnabled: '着信チャット翻訳有効: %i'
   wwctGUIExistingTranslationOutput: '出力言語: %i'
+  wwcTranslatorAttempt: config.yml でトランスレータに接続しようとしています...(試行 %i/ %o)
+  wwcTimeoutException: ' コマンドがタイムアウトしました。もう一度お試しください。'
+  wwcTimeoutExceptionConsole: プレイヤー %i の直近のリクエストタイムアウトが発生しました。このエラーは致命的ではありませんが、引き続き発生する場合は
+    WorldwideChat をリロードする必要があります。
+  wwcGUIPageNumber: 'ページ番号: %i'

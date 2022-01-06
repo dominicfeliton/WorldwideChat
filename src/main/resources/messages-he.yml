@@ -296,3 +296,8 @@ Messages:
   wwctGUIExistingTranslationInput: 'שפת קלט: %i'
   wwctGUIExistingChatIncomingEnabled: 'תרגום צ''אט נכנס מופעל: %i'
   wwctGUIExistingTranslationOutput: 'שפת פלט: %i'
+  wwcTranslatorAttempt: מנסה להתחבר למתרגם ב config.yml... (ניסיון % אני/ %o)
+  wwcTimeoutException: ' הפקודה שלך מתוזמנת. אנא נסה שוב.'
+  wwcTimeoutExceptionConsole: שחקן % היה לי פסק זמן הבקשה האחרון שלהם. שגיאה זו אינה
+    קטלנית, אבל WorldwideChat יש לטעון מחדש אם זה ממשיך לקרות.
+  wwcGUIPageNumber: 'מספר עמוד: %i'

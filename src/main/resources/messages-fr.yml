@@ -349,3 +349,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'Langue d''entrée: %i'
   wwctGUIExistingChatIncomingEnabled: 'Traduction du chat entrant activée: %i'
   wwctGUIExistingTranslationOutput: 'Langue de sortie: %i'
+  wwcTranslatorAttempt: Tentative de connexion au traducteur dans config.yml... (Tentative
+    %i/ %o)
+  wwcTimeoutException: ' Votre commande a expiré. Veuillez réessayer.'
+  wwcTimeoutExceptionConsole: Le dernier délai de requête du joueur %i a été dépassé.
+    Cette erreur n'est pas fatale, mais WorldwideChat doit être rechargé si elle continue
+    à se produire.
+  wwcGUIPageNumber: 'Numéro de page: %i'

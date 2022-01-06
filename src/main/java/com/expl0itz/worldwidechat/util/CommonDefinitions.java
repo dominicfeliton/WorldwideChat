@@ -3,7 +3,7 @@ package com.expl0itz.worldwidechat.util;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.concurrent.Callable;
@@ -21,7 +21,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionAttachmentInfo;
-import org.bukkit.plugin.IllegalPluginAccessException;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.threeten.bp.Instant;
 import org.threeten.bp.LocalDate;
@@ -35,7 +34,6 @@ import com.expl0itz.worldwidechat.translators.AmazonTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
 import com.expl0itz.worldwidechat.translators.TestTranslation;
 import com.expl0itz.worldwidechat.translators.TranslatorFailException;
-import com.expl0itz.worldwidechat.translators.TranslatorTimeoutException;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
 import com.google.cloud.translate.TranslateException;
 import com.google.common.base.CharMatcher;
@@ -137,6 +135,11 @@ public class CommonDefinitions {
 		}
 	}
 
+	/**
+	   * Sends a debug message to console. Will only work when debug mode is set to true in the Console.
+	   * @param inMessage (String) - The debug message that will be sent to the Console.
+	   * @return
+	   */
 	public static void sendDebugMessage(String inMessage) {
 		if (WorldwideChat.instance.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
 			WorldwideChat.instance.getLogger().warning("DEBUG: " + inMessage);
@@ -147,11 +150,17 @@ public class CommonDefinitions {
 		return getMessage(messageName, new String[0]);
 	}
 	
+	/**
+	   * Gets a message from the currently selected messages-XX.yml.
+	   * @param messageName (String) - The name of the message from messages-XX.yml.
+	   * @param replacements (String[]) - The list of replacement values that replace variables in the selected message. There is no sorting system; the list must be pre-sorted.
+	   * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX>yml.
+	   */
 	public static String getMessage(String messageName, String[] replacements) {
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
 		if (WorldwideChat.instance.getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
-			convertedOriginalMessage = WorldwideChat.instance.getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName));
+			convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', WorldwideChat.instance.getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName)));
 		} else {
 			convertedOriginalMessage = WorldwideChat.instance.getConfigManager().getMessagesConfig().getString("Messages." + ChatColor.stripColor(messageName));
 			if (convertedOriginalMessage == null) {
@@ -178,6 +187,12 @@ public class CommonDefinitions {
 		return fixedMessage.toString();
 	}
 	
+	/**
+	   * Sends the user a properly formatted message through our adventure instance.
+	   * @param sender (CommandSender) - The target sender. Can be any entity that can receive messages.
+	   * @param originalMessage (TextComponent) - The unformatted TextComponent that should be sent to sender.
+	   * @return
+	   */
 	public static void sendMessage(CommandSender sender, TextComponent originalMessage) {
 		try {
 			Audience adventureSender = WorldwideChat.instance.adventure().sender(sender);
@@ -196,9 +211,15 @@ public class CommonDefinitions {
 		}
 	}
 	
+	/**
+	   * Translates text using the selected translator.
+	   * @param inMessage (String) - The original message to be translated.
+	   * @param currPlayer (Player) - The player who wants this message to be translated.
+	   * @return String - The translated message. If this is equal to inMessage, the translation failed.
+	   */
 	public static String translateText(String inMessage, Player currPlayer) {
 		/* If translator settings are invalid, do not do this... */
-		if (!(inMessage.length() > 0)) {
+		if (!(inMessage.length() > 0) || CommonDefinitions.serverIsStopping()) {
 			return inMessage;
 		}
 		
@@ -258,19 +279,16 @@ public class CommonDefinitions {
 				/* Check cache */
 				if (WorldwideChat.instance.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
 					// Check cache for inputs, since config says we should
-					List<CachedTranslation> currCache = WorldwideChat.instance.getCache();
-					synchronized (currCache) {
-						for (CachedTranslation currentTerm : currCache) {
-							if (currentTerm.getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
-									&& (currentTerm.getOutputLang().equalsIgnoreCase(currActiveTranslator.getOutLangCode()))
-									&& (currentTerm.getInputPhrase().equalsIgnoreCase(inMessage))) {
-								currentTerm.setNumberOfTimes(currentTerm.getNumberOfTimes() + 1);
-								// Update stats, return output
-								if (WorldwideChat.instance.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
-								currPlayerRecord.setLastTranslationTime();
-								return StringEscapeUtils.unescapeJava(
-										ChatColor.translateAlternateColorCodes('&', currentTerm.getOutputPhrase()));
-							}
+					for (Map.Entry<CachedTranslation, Integer> currentTerm : WorldwideChat.instance.getCache().entrySet()) {
+						if (currentTerm.getKey().getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
+								&& (currentTerm.getKey().getOutputLang().equalsIgnoreCase(currActiveTranslator.getOutLangCode()))
+								&& (currentTerm.getKey().getInputPhrase().equalsIgnoreCase(inMessage))) {
+							WorldwideChat.instance.getCache().put(currentTerm.getKey(), currentTerm.getValue()+1);
+							// Update stats, return output
+							currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+							currPlayerRecord.setLastTranslationTime();
+							return StringEscapeUtils.unescapeJava(
+									ChatColor.translateAlternateColorCodes('&', currentTerm.getKey().getOutputPhrase()));
 						}
 					}
 				}
@@ -286,9 +304,15 @@ public class CommonDefinitions {
 					// Get permission from Bukkit API synchronously, since we do not want to risk
 					// concurrency problems
 					if (!WorldwideChat.instance.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !CommonDefinitions.serverIsStopping()) {
-						permissionCheck = Bukkit.getScheduler().callSyncMethod(WorldwideChat.instance, () -> {
-							return checkForRateLimitPermissions(currPlayer);
-						}).get();
+						try {
+							permissionCheck = Bukkit.getScheduler().callSyncMethod(WorldwideChat.instance, () -> {
+								return checkForRateLimitPermissions(currPlayer);
+							}).get(3, TimeUnit.SECONDS);
+						} catch (TimeoutException | InterruptedException e) {
+							CommonDefinitions.sendDebugMessage("Timeout from rate limit permission check should never happen, unless the server is stopping or /reloading. "
+									+ "If it isn't, and we can't fetch a user permission in less than ~2.5 seconds, we have a problem.");
+							return inMessage;
+						}
 					} else if (WorldwideChat.instance.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
 						// It is extremely unlikely that we run into concurrency issues with MockBukkit.
 						// Until it supports callSyncMethod(), this will do.
@@ -358,7 +382,7 @@ public class CommonDefinitions {
 					// Double getCause() because each translator is also wrapped in a callback try/catch, 
 					// and this error is our custom exception
 					Throwable realReason = e.getCause().getCause();
-					if ((realReason != null) && (realReason instanceof NotFoundException || realReason instanceof TranslateException || realReason instanceof InvalidRequestException)) {
+					if ((realReason != null) && (realReason instanceof InterruptedException | realReason instanceof NotFoundException || realReason instanceof TranslateException || realReason instanceof InvalidRequestException)) {
 						CommonDefinitions.sendDebugMessage("Low confidence exception thrown, do not add this to the error count!");
 					} else {
 						// If this isn't just low confidence, this error should be added
@@ -382,6 +406,10 @@ public class CommonDefinitions {
 				return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', out));
 			} catch (Exception e) {
 				/* Add 1 to error count */
+				if (e.getCause() != null && e.getCause() instanceof InterruptedException) {
+					// If we are getting stopped by onDisable, end this immediately.
+					return inMessage;
+				}
 				WorldwideChat.instance.setTranslatorErrorCount(WorldwideChat.instance.getTranslatorErrorCount() + 1);
 				final TextComponent playerError = Component.text()
 						.append(Component.text().content(CommonDefinitions.getMessage("wwcTranslatorError"))
@@ -408,7 +436,8 @@ public class CommonDefinitions {
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
-
+				CommonDefinitions.sendDebugMessage("Error Count: " + WorldwideChat.instance.getTranslatorErrorCount());
+				
 				/* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
 				if (WorldwideChat.instance.getTranslatorErrorCount() >= WorldwideChat.instance.getConfigManager().getMainConfig().getInt("Translator.errorLimit")) {
 					WorldwideChat.instance.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReached"));
@@ -434,7 +463,8 @@ public class CommonDefinitions {
 			/* Get translation */
 			finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
-			CommonDefinitions.sendDebugMessage("Translator Timeout!! If we're here, this is not a normal error. Abort.");
+			CommonDefinitions.sendDebugMessage("Failed to receive a response from the translator, and it was not interrupted. Abort.");
+			if (e instanceof TimeoutException) {sendTimeoutExceptionMessage(currPlayer);};
 			process.cancel(true);
 		} finally {
 			executor.shutdownNow();
@@ -444,7 +474,7 @@ public class CommonDefinitions {
 		return finalOut;
 	}
 
-	public static boolean getNoConsoleChatMessage(CommandSender sender) {
+	public static boolean sendNoConsoleChatMessage(CommandSender sender) {
 		final TextComponent noConsoleChat = Component.text() // Cannot translate console chat
 				.append(Component.text()
 						.content(CommonDefinitions.getMessage("wwctCannotTranslateConsole", new String[0]))
@@ -454,13 +484,26 @@ public class CommonDefinitions {
 		return false;
 	}
 	
+	public static boolean sendTimeoutExceptionMessage(CommandSender sender) {
+		if (sender instanceof Player) {
+			WorldwideChat.instance.getLogger().warning(CommonDefinitions.getMessage("wwcTimeoutExceptionConsole", new String[] {sender.getName()}));
+		}
+		final TextComponent timeoutException = Component.text()
+				.append(Component.text()
+						.content(CommonDefinitions.getMessage("wwcTimeoutException", new String[0]))
+						.color(NamedTextColor.YELLOW))
+				.build();
+		CommonDefinitions.sendMessage(sender, timeoutException);
+		return true;
+	}
+	
 	public static boolean serverIsStopping() {
 		try {
 			new BukkitRunnable() {
 				@Override
 				public void run() {}
 			}.runTask(WorldwideChat.instance);
-		} catch (IllegalPluginAccessException e) {
+		} catch (Exception e) {
 			CommonDefinitions.sendDebugMessage("Server is stopping! Don't run a task/do any dumb shit.");
 			return true;
 		}

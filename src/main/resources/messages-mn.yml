@@ -333,3 +333,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'Оролтын хэл: %i'
   wwctGUIExistingChatIncomingEnabled: 'Ирж буй чат Орчуулга идэвхжсэн: %i'
   wwctGUIExistingTranslationOutput: 'Гаралтын Хэл: %i'
+  wwcTranslatorAttempt: config.yml орчуулагчтай холбогдохыг оролдох... ( %i/ %o оролдох
+    %)
+  wwcTimeoutException: ' Таны тушаал гарч хугацаатай. Дахин оролдоно уу.'
+  wwcTimeoutExceptionConsole: Тоглогчийн % Би тэдний хамгийн сүүлийн хүсэлт хугацаа
+    байсан. Энэ алдаа нь үхлийн аюултай биш юм, гэхдээ WorldwideChat энэ нь юу хэвээр
+    байгаа бол дахин ачаалах хэрэгтэй.
+  wwcGUIPageNumber: 'Хуудасны дугаар: %i'

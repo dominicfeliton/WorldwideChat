@@ -1,6 +1,5 @@
 package com.expl0itz.worldwidechat.commands;
 
-import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -13,9 +12,9 @@ public class WWCConfiguration extends BasicCommand {
 		super(sender, command, label, args);
 	}
 
+	@Override
 	public boolean processCommand() {
-		Player currPlayer = Bukkit.getServer().getPlayerExact(sender.getName());
-		ConfigurationGeneralSettingsGUI.generalSettings.open(currPlayer);
+		ConfigurationGeneralSettingsGUI.generalSettings.open((Player)sender);
 		return true;
 	}
 

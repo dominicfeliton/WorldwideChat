@@ -35,6 +35,13 @@ public class ConfigurationMessagesOverrideCurrentListGUI implements InventoryPro
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		try {
+			/* Green stained glass borders */
+			ItemStack customBorders = XMaterial.GREEN_STAINED_GLASS_PANE.parseItem();
+			ItemMeta borderMeta = customBorders.getItemMeta();
+			borderMeta.setDisplayName(" ");
+			customBorders.setItemMeta(borderMeta);
+			contents.fillBorders(ClickableItem.empty(customBorders));
+			
 			/* Pagination */
 			Pagination pagination = contents.pagination();
 			HashMap<String, String> overridesFromConfig = new HashMap<String, String>();
@@ -69,10 +76,10 @@ public class ConfigurationMessagesOverrideCurrentListGUI implements InventoryPro
 				}
 			}
 			
-			/* 45 messages per page, start at 0, 0 */
+			/* 28 messages per page, start at 1, 1 */
 			pagination.setItems(currentOverrides);
-			pagination.setItemsPerPage(45);
-			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
+			pagination.setItemsPerPage(28);
+			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 1, 1).allowOverride(false));
 			
 			/* Bottom Left Option: Previous Page */
 			if (!pagination.isFirst()) {
@@ -107,6 +114,9 @@ public class ConfigurationMessagesOverrideCurrentListGUI implements InventoryPro
 				}));
 				;
 			}
+			
+			/* Last Option: Page Number */
+			contents.set(5, 8, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {pagination.getPage() + 1 + ""}), e -> {}));
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

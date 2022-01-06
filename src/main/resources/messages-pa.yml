@@ -326,3 +326,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'ਇੰਪੁੱਟ ਭਾਸ਼ਾ: %i'
   wwctGUIExistingChatIncomingEnabled: 'ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ ਯੋਗ: %i'
   wwctGUIExistingTranslationOutput: 'ਆਉਟਪੁੱਟ ਭਾਸ਼ਾ: %i'
+  wwcTranslatorAttempt: config.yml ਵਿੱਚ ਅਨੁਵਾਦਕ ਨਾਲ ਜੁੜਨ ਦੀ ਕੋਸ਼ਿਸ਼... ( %// %o ਦੀ
+    ਕੋਸ਼ਿਸ਼ ਕਰੋ)
+  wwcTimeoutException: ' ਤੁਹਾਡਾ ਹੁਕਮ ਬਾਹਰ ਸਮਾਪਤ. ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.'
+  wwcTimeoutExceptionConsole: ਪਲੇਅਰ %i ਦੀ ਸਭ ਤੋਂ ਤਾਜ਼ਾ ਬੇਨਤੀ ਸਮਾਂ ਸੀ. ਇਹ ਗਲਤੀ ਘਾਤਕ
+    ਨਹੀਂ ਹੈ, ਪਰ ਜੇ ਇਹ ਵਾਪਰਨਾ ਜਾਰੀ ਹੈ ਤਾਂ ਵਰਲਡ ਵਿਡਚੈਟ ਨੂੰ ਮੁੜ ਲੋਡ ਕੀਤਾ ਜਾਣਾ ਚਾਹੀਦਾ
+    ਹੈ.
+  wwcGUIPageNumber: 'ਪੰਨਾ ਨੰਬਰ: %i'

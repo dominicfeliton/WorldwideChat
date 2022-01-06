@@ -346,3 +346,10 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 'Traducerea conversațiilor primite activată:
     %i'
   wwctGUIExistingTranslationOutput: 'Limba de ieșire: %i'
+  wwcTranslatorAttempt: Încercarea de a vă conecta la traducător în config.yml...
+    (Încercare %i/ %o)
+  wwcTimeoutException: ' Comanda ta a expirat. Vă rugăm să încercați din nou.'
+  wwcTimeoutExceptionConsole: Jucătorul %i a avut cea mai recentă expirare a solicitărilor.
+    Această eroare nu este fatală, dar WorldwideChat ar trebui reîncărcată dacă continuă
+    să se întâmple.
+  wwcGUIPageNumber: 'Număr pagină: %i'

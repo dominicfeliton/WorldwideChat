@@ -338,3 +338,10 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 'Povolený preklad prichádzajúceho rozhovoru:
     %i'
   wwctGUIExistingTranslationOutput: 'Výstupný jazyk: %i'
+  wwcTranslatorAttempt: Pokúšam sa pripojiť k prekladateľovi v config.yml... (Pokus
+    %i/ %o)
+  wwcTimeoutException: ' Váš príkaz vypršal. Prosím, skúste to znova.'
+  wwcTimeoutExceptionConsole: Hráč % Mal som ich poslednú požiadavku časový limit.
+    Táto chyba nie je fatálna, ale WorldwideChat by sa mal znovu načítať, ak sa to
+    stane aj naďalej.
+  wwcGUIPageNumber: 'Číslo stránky: %i'

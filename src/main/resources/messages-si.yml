@@ -335,3 +335,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'ආදාන භාෂාව: %i'
   wwctGUIExistingChatIncomingEnabled: 'ලැබෙන චැට් පරිවර්තනය සක්රීය කර ඇත: %i'
   wwctGUIExistingTranslationOutput: 'ප්රතිදාන භාෂාව: %i'
+  wwcTranslatorAttempt: config.yml හි පරිවර්තක සමඟ සම්බන්ධ වීමට උත්සාහ කිරීම... (
+    %i/ %o)
+  wwcTimeoutException: ' ඔබේ විධානය කාලය ගත විය. කරුණාකර නැවත උත්සාහ කරන්න.'
+  wwcTimeoutExceptionConsole: සෙල්ලම් කරන්න % මට ඔවුන්ගේ නවතම ඉල්ලීම කාලය තිබුණි.
+    මෙම දෝෂය මාරාන්තික නොවේ, නමුත් එය දිගටම සිදු වුවහොත් වර්ල්ඩ්වයිඩෙකැට් නැවත පූරණය
+    කළ යුතුය.
+  wwcGUIPageNumber: 'පිටු අංකය: %i'

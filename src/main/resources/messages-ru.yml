@@ -338,3 +338,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'Язык ввода: %i'
   wwctGUIExistingChatIncomingEnabled: 'Перевод входящего чата включен: %i'
   wwctGUIExistingTranslationOutput: 'Язык вывода: %i'
+  wwcTranslatorAttempt: Попытка подключиться к переводчику в config.yml... (Попытка
+    %i/ %o)
+  wwcTimeoutException: ' Время ожидания вашей команды истекло. Пожалуйста, попробуйте
+    еще раз.'
+  wwcTimeoutExceptionConsole: У игрока %i был последний тайм-аут запроса. Эта ошибка
+    не фатальная, но WorldwideChat следует перезагрузить, если она продолжает происходить.
+  wwcGUIPageNumber: 'Номер страницы: %i'

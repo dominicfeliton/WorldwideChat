@@ -338,3 +338,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'Invoertaal: %i'
   wwctGUIExistingChatIncomingEnabled: 'Inkomende chatvertaling ingeschakeld: %i'
   wwctGUIExistingTranslationOutput: 'Uitvoertaal: %i'
+  wwcTranslatorAttempt: Poging om verbinding te maken met vertaler in config.yml...
+    (Poging %i/ %o)
+  wwcTimeoutException: ' Je commando is een time-out geworden. Probeer het opnieuw.'
+  wwcTimeoutExceptionConsole: Speler %i had hun meest recente time-out voor het aanvragen.
+    Deze fout is niet fataal, maar WorldwideChat moet opnieuw worden geladen als het
+    blijft gebeuren.
+  wwcGUIPageNumber: 'Paginanummer: %i'

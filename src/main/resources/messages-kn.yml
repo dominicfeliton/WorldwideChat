@@ -336,3 +336,9 @@ Messages:
   wwctGUIExistingTranslationInput: 'ಇನ್ಪುಟ್ ಭಾಷೆ: %i'
   wwctGUIExistingChatIncomingEnabled: 'ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ: %i'
   wwctGUIExistingTranslationOutput: 'ಔಟ್ಪುಟ್ ಭಾಷೆ: %i'
+  wwcTranslatorAttempt: config.yml ನಲ್ಲಿ ಭಾಷಾಂತರಕಾರರಿಗೆ ಸಂಪರ್ಕಿಸಲು ಪ್ರಯತ್ನಿಸಲಾಗುತ್ತಿದೆ...
+    (ಲಗತ್ತು %i/ %o)
+  wwcTimeoutException: ' ನಿಮ್ಮ ಆಜ್ಞೆಯು ಸಮಯ ಮೀರಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.'
+  wwcTimeoutExceptionConsole: ಆಟಗಾರ %i ಅವರ ಇತ್ತೀಚಿನ ವಿನಂತಿಯ ಸಮಯವನ್ನು ಹೊಂದಿದ್ದೇನೆ.
+    ಈ ದೋಷವು ಮಾರಣಾಂತಿಕವಲ್ಲ, ಆದರೆ ಅದು ಸಂಭವಿಸುತ್ತಲೇ ಹೋದರೆ ವಿಶ್ವವಿಚಾಟ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಬೇಕು.
+  wwcGUIPageNumber: 'ಪುಟ ಸಂಖ್ಯೆ: %i'

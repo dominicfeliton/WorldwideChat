@@ -33,6 +33,7 @@ public class WWCTranslate extends BasicCommand {
 	 * MUST be valid, we will check with CommonDefinitions class
 	 */
 
+	@Override
 	public boolean processCommand() {
 		/* Sanitize args */
 		if ((isGlobal && args.length > 2) || (!isGlobal && args.length > 3)) {
@@ -135,7 +136,7 @@ public class WWCTranslate extends BasicCommand {
 			if (isGlobal) {
 				return startNewTranslationSession("GLOBAL-TRANSLATE-ENABLED", "None", args[0]);
 			}
-			return CommonDefinitions.getNoConsoleChatMessage(sender);
+			return CommonDefinitions.sendNoConsoleChatMessage(sender);
 		}
 		
 		/* Player has given us two arguments */
@@ -146,7 +147,7 @@ public class WWCTranslate extends BasicCommand {
 					if (!isConsoleSender) {
 						return startNewTranslationSession(((Player)sender).getUniqueId().toString(), args[0], args[1]);
 					}
-					return CommonDefinitions.getNoConsoleChatMessage(sender);
+					return CommonDefinitions.sendNoConsoleChatMessage(sender);
 				/* If we are attempting to pass a player and an outLang */
 				}
 				return startNewTranslationSession(Bukkit.getPlayer(args[0]).getUniqueId().toString(), "None", args[1]);

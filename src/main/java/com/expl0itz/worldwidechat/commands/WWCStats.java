@@ -1,10 +1,20 @@
 package com.expl0itz.worldwidechat.commands;
 
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
+
 import org.bukkit.Bukkit;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.scheduler.BukkitRunnable;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
@@ -27,6 +37,7 @@ public class WWCStats extends BasicCommand {
 		super(sender, command, label, args);
 	}
 
+	@Override
 	public boolean processCommand() {
 		/* Sanitize args */
 		if (args.length > 1) {
@@ -44,60 +55,111 @@ public class WWCStats extends BasicCommand {
 			if (isConsoleSender) {
 				return noRecordsMessage("Console");
 			}
-			return translatorMessage((Player)sender);
+			translatorMessage(sender.getName());
+			return true;
 		}
 
 		/* Get Target Stats */
 		if (args.length == 1) {
-			if (Bukkit.getServer().getPlayerExact(args[0]) != null) {
-				return translatorMessage(Bukkit.getServer().getPlayerExact(args[0]));
-			}
-			// Target player not found
-			final TextComponent playerNotFound = Component.text()
-					.append(Component
-							.text().content(CommonDefinitions.getMessage("wwcPlayerNotFound", new String[] {args[0]}))
-							.color(NamedTextColor.RED))
-					.build();
-			CommonDefinitions.sendMessage(sender, playerNotFound);
+			translatorMessage(args[0]);
+			return true;
 		}
 		return false;
 	}
 	
-	private boolean translatorMessage(Player inPlayer) {
-		if (!main.getPlayerRecord(inPlayer.getUniqueId().toString(), false).getUUID().equals("")) {
-			// Is on record; continue
-			if (sender instanceof Player) {
-				WWCStatsGUIMainMenu.getStatsMainMenu(inPlayer.getUniqueId().toString()).open(inPlayer);
-			} else {
-				String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
-				PlayerRecord record = main
-						.getPlayerRecord(inPlayer.getUniqueId().toString(), false);
-				if (!main.getActiveTranslator(inPlayer.getUniqueId().toString()).getUUID().equals("")) {
-					// Is currently an active translator
-					isActiveTranslator = ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713";
+	private void translatorMessage(String inName) {
+		if (!CommonDefinitions.serverIsStopping()) {
+			new BukkitRunnable() {
+				@Override
+				public void run() {
+					Callable<?> result = () -> {
+						/* Get OfflinePlayer, this will allow us to get stats even if target is offline */
+						OfflinePlayer inPlayer = null;
+						if (sender.getName().equals(inName)) {
+							inPlayer = (Player)sender;
+						} else {
+							final TextComponent playerNotFound = Component.text()
+									.append(Component
+											.text().content(CommonDefinitions.getMessage("wwcPlayerNotFound", new String[] {args[0]}))
+											.color(NamedTextColor.RED))
+									.build();
+							/* Don't run API against invalid long names */
+							if (inName.length() > 16 || inName.length() < 3) {
+								CommonDefinitions.sendMessage(sender, playerNotFound);
+								return null;
+							}
+							inPlayer = Bukkit.getOfflinePlayer(inName);
+							/* getOfflinePlayer always returns a player, so we must check if this player has played on this server */
+							if (!inPlayer.hasPlayedBefore()) {
+								// Target player not found
+								CommonDefinitions.sendMessage(sender, playerNotFound);
+								return null;
+							}
+						}
+						
+						/* Process stats of target */
+						if (!main.getPlayerRecord(inPlayer.getUniqueId().toString(), false).getUUID().equals("")) {
+							// Is on record; continue
+							if (sender instanceof Player) {
+								final String targetUUID = inPlayer.getUniqueId().toString();
+								if (!CommonDefinitions.serverIsStopping()) {
+									new BukkitRunnable() {
+										@Override
+										public void run() {
+											WWCStatsGUIMainMenu.getStatsMainMenu(targetUUID, inName).open((Player)sender);
+										}
+									}.runTask(main);
+								}
+							} else {
+								String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
+								PlayerRecord record = main
+										.getPlayerRecord(inPlayer.getUniqueId().toString(), false);
+								if (!main.getActiveTranslator(inPlayer.getUniqueId().toString()).getUUID().equals("")) {
+									// Is currently an active translator
+									isActiveTranslator = ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713";
+								}
+								final TextComponent stats = Component.text()
+										.append(Component.text()
+												.content(CommonDefinitions.getMessage("wwcsTitle", new String[] {inPlayer.getName()}))
+												.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
+										.append(Component.text()
+												.content("\n- " + CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {isActiveTranslator}))
+												.color(NamedTextColor.AQUA))
+										.append(Component.text()
+												.content("\n- " + CommonDefinitions.getMessage("wwcsAttemptedTranslations", new String[] {record.getAttemptedTranslations() + ""}))
+												.color(NamedTextColor.AQUA))
+										.append(Component.text()
+												.content("\n- " + CommonDefinitions.getMessage("wwcsSuccessfulTranslations", new String[] {record.getSuccessfulTranslations() + ""}))
+												.color(NamedTextColor.AQUA))
+										.append(Component.text()
+												.content("\n- " + CommonDefinitions.getMessage("wwcsLastTranslationTime", new String[] {record.getLastTranslationTime()}))
+												.color(NamedTextColor.AQUA))
+										.build();
+								CommonDefinitions.sendMessage(sender, stats);
+							}
+						} else {
+							noRecordsMessage(inPlayer.getName());
+						}
+						return null;
+					};
+					
+					/* Start Callback Process */
+					ExecutorService executor = Executors.newSingleThreadExecutor();
+					Future<?> process = executor.submit(result);
+					try {
+						/* Get translation */
+						 process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
+					} catch (TimeoutException | ExecutionException | InterruptedException e) {
+						CommonDefinitions.sendDebugMessage("/wwcs Timeout!! Either we are reloading or we have lost connection. Abort.");
+						if (e instanceof TimeoutException) {CommonDefinitions.sendTimeoutExceptionMessage(sender);};
+						process.cancel(true);
+						this.cancel();
+						return;
+					} finally {
+						executor.shutdownNow();
+					}
 				}
-				final TextComponent stats = Component.text()
-						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcsTitle", new String[] {inPlayer.getName()}))
-								.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
-						.append(Component.text()
-								.content("\n- " + CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {isActiveTranslator}))
-								.color(NamedTextColor.AQUA))
-						.append(Component.text()
-								.content("\n- " + CommonDefinitions.getMessage("wwcsAttemptedTranslations", new String[] {record.getAttemptedTranslations() + ""}))
-								.color(NamedTextColor.AQUA))
-						.append(Component.text()
-								.content("\n- " + CommonDefinitions.getMessage("wwcsSuccessfulTranslations", new String[] {record.getSuccessfulTranslations() + ""}))
-								.color(NamedTextColor.AQUA))
-						.append(Component.text()
-								.content("\n- " + CommonDefinitions.getMessage("wwcsLastTranslationTime", new String[] {record.getLastTranslationTime()}))
-								.color(NamedTextColor.AQUA))
-						.build();
-				CommonDefinitions.sendMessage(sender, stats);
-			}
-			return true;
-		} else {
-			return noRecordsMessage(inPlayer.getName());
+			}.runTaskAsynchronously(main);
 		}
 	}
 	

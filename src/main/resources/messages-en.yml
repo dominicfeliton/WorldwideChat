@@ -17,6 +17,7 @@ Messages:
   wwcUserDataReloaded: 'Loaded all saved user data.'
   wwcRateLimit: 'Your translations are rate limited. Please wait another %i seconds.'
   wwcCharLimit: 'Your message is too long! Please make sure your message is less than %i characters in length.'
+  wwcTranslatorAttempt: 'Attempting to connect to translator in config.yml... (Attempt %i/%o)'
   wwcInvalidTranslator: 'Invalid translator settings. Please fix this in your config.yml or with /wwcc to use this plugin.'
   wwcInventoryError: 'Error detected with GUI of user %i. Please report this issue to the developer.'
   wwcInventoryErrorPlayer: 'Error detected with your GUI. A log has been sent to the console.'
@@ -26,6 +27,9 @@ Messages:
   wwcTranslatorErrorConsole: 'A problem occured while user %i was attempting their translation. Please check errorLog.txt for more details.'
   wwcTranslatorErrorThresholdReached: 'Error threshold reached. This plugin will now reload, and disable all translators.'
   wwcTranslatorErrorThresholdReachedCheckLogs: 'Please check errorLog.txt in the WorldwideChat plugin folder for more information.'
+  wwcTimeoutExceptionConsole: 'Player %i had their most recent request timeout. This error is not fatal, but WorldwideChat should be reloaded if it continues to happen.'
+  wwcTimeoutException: ' Your command timed out. Please try again.'
+  wwcGUIPageNumber: 'Page Number: %i'
   #------------------- Listener Messages -------------------
   wwcChatTranslationFail: 'Failed to translate your message.'
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from %i to %o.'

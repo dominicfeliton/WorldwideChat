@@ -63,7 +63,7 @@ public class OnPlayerJoinListener implements Listener {
 				&& main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("")) {
 			ActiveTranslator currTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
-				final TextComponent langToLang = Component.text().append(main.getPluginPrefix().asComponent())
+				final TextComponent langToLang = Component.text()
 						.append(Component.text()
 								.content(CommonDefinitions.getMessage("wwcGlobalOnJoinTranslationNotificationSourceLang", new String[] {currTranslator.getInLangCode(), currTranslator.getOutLangCode()}))
 								.color(NamedTextColor.LIGHT_PURPLE))

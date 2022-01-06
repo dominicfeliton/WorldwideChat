@@ -331,3 +331,9 @@ Messages:
   wwctGUIExistingTranslationInput: 'Jezik unosa: %i'
   wwctGUIExistingChatIncomingEnabled: 'Omogućeno prevođenje dolaznog razgovora: %i'
   wwctGUIExistingTranslationOutput: 'Izlazni jezik: %i'
+  wwcTranslatorAttempt: Pokušaj povezivanja s prevoditeljem u config.yml... (Pokušaj
+    %i/ %o)
+  wwcTimeoutException: ' Vaša naredba je istekla. Molim te, probaj ponovo.'
+  wwcTimeoutExceptionConsole: Igrač %imao sam njihov najnoviji zahtjev timeout. Ova
+    pogreška nije kobna, ali WorldwideChat treba ponovno učitati ako se nastavi događati.
+  wwcGUIPageNumber: 'Broj stranice: %i'

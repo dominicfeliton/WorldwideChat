@@ -45,6 +45,16 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		try {
+			/* Default white stained glass borders for inactive, yellow if player has existing translation session */
+			ItemStack customDefaultBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
+			if (!main.getActiveTranslator(targetPlayerUUID).getInLangCode().equals("")) {
+				customDefaultBorders = XMaterial.YELLOW_STAINED_GLASS_PANE.parseItem();
+			}
+			ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
+			defaultBorderMeta.setDisplayName(" ");
+			customDefaultBorders.setItemMeta(defaultBorderMeta);
+			contents.fillBorders(ClickableItem.empty(customDefaultBorders));
+			
 			/* Init current active translator */
 			ActiveTranslator currTranslator = main.getActiveTranslator(targetPlayerUUID);
 			
@@ -60,10 +70,10 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 				ArrayList<String> lore = new ArrayList<>();
 				currentLangMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 				if (selectedSourceLanguage.equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
-					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
+					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
 					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
 				} else if (currTranslator.getInLangCode().equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
-					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
+					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				currentLangMeta.setDisplayName(main.getSupportedTranslatorLanguages().get(i).getLangName());
@@ -80,10 +90,10 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 				});
 			}
 
-			/* 45 langs per page, start at 0, 0 */
+			/* 28 langs per page, start at 1, 1 */
 			pagination.setItems(listOfAvailableLangs);
-			pagination.setItemsPerPage(45);
-			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
+			pagination.setItemsPerPage(28);
+			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 1, 1).allowOverride(false));
 
 			/* Bottom Left Option: Previous Page */
 			if (!pagination.isFirst()) {
@@ -109,10 +119,10 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 				skipSourceMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 				ArrayList<String> lore = new ArrayList<>();
 				if ((currTranslator.getInLangCode().equals("None"))) {
-					skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
+					skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
 					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
 				} else if (selectedSourceLanguage.equalsIgnoreCase("None")) {
-					skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
+					skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				skipSourceButton.setItemMeta(skipSourceMeta);
@@ -128,6 +138,9 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 				}));
 				;
 			}
+			
+			/* Last Option: Page Number */
+			contents.set(5, 8, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {pagination.getPage() + 1 + ""}), e -> {}));
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

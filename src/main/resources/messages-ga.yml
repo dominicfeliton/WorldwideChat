@@ -352,3 +352,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'Teanga Ionchur: %i'
   wwctGUIExistingChatIncomingEnabled: 'Isteach Comhrá Aistriúchán Cumasaithe: %i'
   wwctGUIExistingTranslationOutput: 'Teanga Aschuir: %i'
+  wwcTranslatorAttempt: Ag iarraidh ceangal a dhéanamh leis an aistritheoir i config.yml...
+    (Iarracht %i/ %o)
+  wwcTimeoutException: ' Do ordú uainiú amach. Bain triail eile as.'
+  wwcTimeoutExceptionConsole: Bhí an t-amchlár iarratais is déanaí ag an imreoir %i.
+    Níl an earráid seo marfach, ach ba chóir WorldwideChat a athlódáil má leanann
+    sé ag tarlú.
+  wwcGUIPageNumber: 'Uimhir Leathanach: %i'

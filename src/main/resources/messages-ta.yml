@@ -346,3 +346,10 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 'உள்வரும் அரட்டை மொழிபெயர்ப்பு இயக்கப்பட்டது:
     %i'
   wwctGUIExistingTranslationOutput: 'வெளியீட்டு மொழி: %i'
+  wwcTranslatorAttempt: config.yml மொழிபெயர்ப்பாளர் இணைக்க முயற்சிக்கிறது... ( %i/
+    %o ஐ முயற்சிக்க)
+  wwcTimeoutException: ' உங்கள் கட்டளை நேரம் கடந்துவிட்டது. மீண்டும் முயற்சிக்கவும்.'
+  wwcTimeoutExceptionConsole: பிளேயர் % நான் அவர்களின் மிக சமீபத்திய கோரிக்கை நேரம்
+    முடிந்தது. இந்த பிழை அபாயகரமானது அல்ல, ஆனால் அது தொடர்ந்து நடந்தால் WorldwideChat
+    மீண்டும் ஏற்றப்பட வேண்டும்.
+  wwcGUIPageNumber: 'பக்க எண்: %i'

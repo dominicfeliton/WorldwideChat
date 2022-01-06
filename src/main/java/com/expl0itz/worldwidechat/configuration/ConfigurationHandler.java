@@ -219,46 +219,57 @@ public class ConfigurationHandler {
 	/* Translator Settings */
 	public void loadTranslatorSettings() {
 		String outName = "Invalid";
-		try {
-			if (mainConfig.getBoolean("Translator.useWatsonTranslate")
-					&& (!(mainConfig.getBoolean("Translator.useGoogleTranslate"))
-							&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
-				outName = "Watson";
-				WatsonTranslation test = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
-						mainConfig.getString("Translator.watsonURL"));
-				test.useTranslator();
-			} else if (mainConfig.getBoolean("Translator.useGoogleTranslate")
-					&& (!(mainConfig.getBoolean("Translator.useWatsonTranslate"))
-							&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
-				outName = "Google Translate";
-				GoogleTranslation test = new GoogleTranslation(
-						mainConfig.getString("Translator.googleTranslateAPIKey"));
-				test.useTranslator();
-			} else if (mainConfig.getBoolean("Translator.useAmazonTranslate")
-					&& (!(mainConfig.getBoolean("Translator.useGoogleTranslate"))
-							&& (!(mainConfig.getBoolean("Translator.useWatsonTranslate"))))) {
-				outName = "Amazon Translate";
-				AmazonTranslation test = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
-						mainConfig.getString("Translator.amazonSecretKey"),
-						mainConfig.getString("Translator.amazonRegion"));
-				test.useTranslator();
-			} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
-				outName = "JUnit/MockBukkit Testing Translator";
-				TestTranslation test = new TestTranslation(
-						"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu");
-				test.useTranslator();
-			} else {
-				mainConfig.set("Translator.useWatsonTranslate", false);
-				mainConfig.set("Translator.useGoogleTranslate", false);
-				mainConfig.set("Translator.useAmazonTranslate", false);
-				
-				saveMainConfig(false);
-				outName = "Invalid";
+		final int maxTries = 3;
+		for (int tryNumber = 1; tryNumber <= maxTries; tryNumber++) {
+			if (!CommonDefinitions.serverIsStopping()) {
+				try {
+					main.getLogger().warning(CommonDefinitions.getMessage("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}));
+					if (mainConfig.getBoolean("Translator.useWatsonTranslate")
+							&& (!(mainConfig.getBoolean("Translator.useGoogleTranslate"))
+									&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
+						outName = "Watson";
+						WatsonTranslation test = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
+								mainConfig.getString("Translator.watsonURL"));
+						test.useTranslator();
+						break;
+					} else if (mainConfig.getBoolean("Translator.useGoogleTranslate")
+							&& (!(mainConfig.getBoolean("Translator.useWatsonTranslate"))
+									&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
+						outName = "Google Translate";
+						GoogleTranslation test = new GoogleTranslation(
+								mainConfig.getString("Translator.googleTranslateAPIKey"));
+						test.useTranslator();
+						break;
+					} else if (mainConfig.getBoolean("Translator.useAmazonTranslate")
+							&& (!(mainConfig.getBoolean("Translator.useGoogleTranslate"))
+									&& (!(mainConfig.getBoolean("Translator.useWatsonTranslate"))))) {
+						outName = "Amazon Translate";
+						AmazonTranslation test = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
+								mainConfig.getString("Translator.amazonSecretKey"),
+								mainConfig.getString("Translator.amazonRegion"));
+						test.useTranslator();
+						break;
+					} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
+						outName = "JUnit/MockBukkit Testing Translator";
+						TestTranslation test = new TestTranslation(
+								"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu");
+						test.useTranslator();
+						break;
+					} else {
+						mainConfig.set("Translator.useWatsonTranslate", false);
+						mainConfig.set("Translator.useGoogleTranslate", false);
+						mainConfig.set("Translator.useAmazonTranslate", false);
+						
+						saveMainConfig(false);
+						outName = "Invalid";
+						break;
+					}
+				} catch (Exception e) {
+					main.getLogger().severe("(" + outName + ") " + e.getMessage());
+					e.printStackTrace();
+					outName = "Invalid";
+				}
 			}
-		} catch (Exception e) {
-			main.getLogger().severe("(" + outName + ") " + e.getMessage());
-			e.printStackTrace();
-			outName = "Invalid";
 		}
 		if (outName.equals("Invalid")) {
 			main.getLogger().severe(CommonDefinitions.getMessage("wwcInvalidTranslator"));
@@ -394,40 +405,39 @@ public class ConfigurationHandler {
 	
 	/* Sync user data to disk */
 	public void syncData() {
+		/* If our translator is Invalid, do not run this code */
 		if (!main.getTranslatorName().equals("Invalid")) {
 			/* Sync activeTranslators to disk */
-			synchronized (main.getActiveTranslators()) {
-				// Save all new activeTranslators
-				for (ActiveTranslator eaTranslator : main.getActiveTranslators()) {
-					CommonDefinitions.sendDebugMessage("Translation data of " + eaTranslator.getUUID() + " save status: " + eaTranslator.getHasBeenSaved());
-					if (!eaTranslator.getHasBeenSaved()) {
-						CommonDefinitions.sendDebugMessage("Created/updated unsaved user data config of " + eaTranslator.getUUID() + ".");
-						eaTranslator.setHasBeenSaved(true);
-						createUserDataConfig(eaTranslator);
-					}
+			// Save all new activeTranslators
+			main.getActiveTranslators().entrySet().forEach((entry) -> {
+				CommonDefinitions.sendDebugMessage("Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				if (!entry.getValue().getHasBeenSaved()) {
+					CommonDefinitions.sendDebugMessage("Created/updated unsaved user data config of " + entry.getKey() + ".");
+					entry.getValue().setHasBeenSaved(true);
+					createUserDataConfig(entry.getValue());
 				}
-				// Delete any old activeTranslators
-				File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
-				for (String eaName : userSettingsDir.list()) {
-					File currFile = new File(userSettingsDir, eaName);
-					if (main.getActiveTranslator(
-							currFile.getName().substring(0, currFile.getName().indexOf("."))).getUUID().equals("")) {
-						CommonDefinitions.sendDebugMessage("Deleted user data config of "
-								+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + ".");
-						currFile.delete();
-					}
+			});
+			// Delete any old activeTranslators
+			File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
+			for (String eaName : userSettingsDir.list()) {
+				File currFile = new File(userSettingsDir, eaName);
+				if (main.getActiveTranslator(
+						currFile.getName().substring(0, currFile.getName().indexOf("."))).getUUID().equals("")) {
+					CommonDefinitions.sendDebugMessage("Deleted user data config of "
+							+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + ".");
+					currFile.delete();
 				}
 			}
 
 			/* Sync playerRecords to disk */
-			for (PlayerRecord eaRecord : main.getPlayerRecords()) {
-				CommonDefinitions.sendDebugMessage("Record of " + eaRecord.getUUID() + " save status: " + eaRecord.getHasBeenSaved());
-				if (!eaRecord.getHasBeenSaved()) {
-					CommonDefinitions.sendDebugMessage("Created/updated unsaved user record of " + eaRecord.getUUID() + ".");
-					eaRecord.setHasBeenSaved(true);
-					createStatsConfig(eaRecord);
+			main.getPlayerRecords().entrySet().forEach((entry) -> {
+				CommonDefinitions.sendDebugMessage("Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				if (!entry.getValue().getHasBeenSaved()) {
+					CommonDefinitions.sendDebugMessage("Created/updated unsaved user record of " + entry.getKey() + ".");
+					entry.getValue().setHasBeenSaved(true);
+					createStatsConfig(entry.getValue());
 				}
-			}
+			});
 		}
 	}
 

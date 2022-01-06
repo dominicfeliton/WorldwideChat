@@ -39,6 +39,13 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		try {
+			/* White stained glass borders */
+			ItemStack customBorders = XMaterial.YELLOW_STAINED_GLASS_PANE.parseItem();
+			ItemMeta borderMeta = customBorders.getItemMeta();
+			borderMeta.setDisplayName(" ");
+			customBorders.setItemMeta(borderMeta);
+			contents.fillBorders(ClickableItem.empty(customBorders));
+			
 			/* Pagination */
 			Pagination pagination = contents.pagination();
 			HashMap<String, String> messagesFromConfig = new HashMap<String, String>();
@@ -62,7 +69,7 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 				if (messagesConfig.getString("Overrides." + entry.getKey()) != null) {
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwcConfigGUIMessagesAlreadyOverriden"));
 					currentEntryMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-					currentEntryMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().parseEnchantment(), 1, false);
+					currentEntryMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
 				}
 				lore.add(CommonDefinitions.getMessage("wwcConfigGUIMessagesOverrideOriginalLabel") + ": " + messagesConfig.getString("Messages." + entry.getKey()));
 				currentEntryMeta.setLore(lore);
@@ -76,10 +83,10 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 				currSpot++;
 			}
 			
-			/* 45 messages per page, start at 0, 0 */
+			/* 28 messages per page, start at 1, 1 */
 			pagination.setItems(currentMessages);
-			pagination.setItemsPerPage(45);
-			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 0, 0));
+			pagination.setItemsPerPage(28);
+			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 1, 1).allowOverride(false));
 			
 			/* Bottom Left Option: Previous Page */
 			if (!pagination.isFirst()) {
@@ -92,6 +99,9 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 					ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
 				}));
 			}
+			
+			/* Middle Option: Current Page Number */
+			contents.set(5, 4, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {pagination.getPage() + 1 + ""}), e -> {}));
 			
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {

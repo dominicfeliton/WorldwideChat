@@ -62,7 +62,7 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			}));
 			
 			/* Bottom Right Option: Previous Page */
-			contents.set(2, 1, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"),
+			contents.set(2, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"),
 					e -> ConfigurationGeneralSettingsGUI.generalSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */
@@ -71,8 +71,11 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			}));
 
 			/* Bottom Right Option: Next Page */
-			contents.set(2, 7, ClickableItem.of(WWCInventoryManager.getCommonButton("Next"),
+			contents.set(2, 6, ClickableItem.of(WWCInventoryManager.getCommonButton("Next"),
 					e -> ConfigurationTranslatorSettingsGUI.translatorSettings.open(player)));
+			
+			/* Last Option: Page Number */
+			contents.set(2, 8, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {"2"}), e -> {}));
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

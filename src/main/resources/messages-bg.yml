@@ -337,3 +337,10 @@ Messages:
   wwctGUIExistingTranslationInput: 'Език на въвеждане: %i'
   wwctGUIExistingChatIncomingEnabled: 'Входящ чат Превод Активиран: %i'
   wwctGUIExistingTranslationOutput: 'Език на изхода: %i'
+  wwcTranslatorAttempt: Опитвайки се да се свържете с преводач в config.yml... (Опит
+    %i/ %o)
+  wwcTimeoutException: ' Командата ти е изчерпана. Моля, опитайте отново.'
+  wwcTimeoutExceptionConsole: Играч % имах последното изчакване на заявката. Тази
+    грешка не е фатална, но WorldwideChat трябва да се презареди, ако продължава да
+    се случва.
+  wwcGUIPageNumber: 'Номер на страницата: %i'
