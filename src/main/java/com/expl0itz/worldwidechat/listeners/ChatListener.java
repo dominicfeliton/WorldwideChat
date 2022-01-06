@@ -2,6 +2,13 @@ package com.expl0itz.worldwidechat.listeners;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -60,29 +67,45 @@ public class ChatListener implements Listener {
 					new BukkitRunnable() {
 						@Override
 						public void run() {
-							String translation = CommonDefinitions.translateText(event.getMessage() + " (Translated)", eaRecipient);
-							if (translation.contains(event.getMessage())) {
-								translation = event.getMessage();
-							}
-							String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
+							Callable<Void> result = () -> {
+								String translation = CommonDefinitions.translateText(event.getMessage() + " (Translated)", eaRecipient);
+								if (translation.contains(event.getMessage())) {
+									translation = event.getMessage();
+								}
+								String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
+								
+								TextComponent hoverOutMessage;
+				                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat") && !(translation.equals(event.getMessage()))) {
+									hoverOutMessage = Component.text()
+											.content(outMessageWithoutHover)
+											.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
+											.build();
+								} else {
+									hoverOutMessage = Component.text()
+											.content(outMessageWithoutHover)
+											.build();
+								}
+								try {
+								    main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
+								} catch (IllegalStateException e) {
+									// Just in case
+								}
+								return null;
+							};
 							
-							TextComponent hoverOutMessage;
-			                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat") && !(translation.equals(event.getMessage()))) {
-								hoverOutMessage = Component.text()
-										.content(outMessageWithoutHover)
-										.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
-										.build();
-							} else {
-								hoverOutMessage = Component.text()
-										.content(outMessageWithoutHover)
-										.build();
-							}
+							/* Start Callback Process */
+							ExecutorService executor = Executors.newSingleThreadExecutor();
+							Future<Void> process = executor.submit(result);
 							try {
-							    main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
-							} catch (IllegalStateException e) {
-								return;
+								/* Get update status */
+								process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
+							} catch (TimeoutException | ExecutionException | InterruptedException e) {
+								CommonDefinitions.sendDebugMessage("Chat Translation Timeout!! Either we are reloading or we have lost connection. Abort.");
+								if (e instanceof TimeoutException) {CommonDefinitions.sendTimeoutExceptionMessage(WorldwideChat.instance.getServer().getConsoleSender());};
+								process.cancel(true);
+							} finally {
+								executor.shutdownNow();
 							}
-							
 						}
 					}.runTaskAsynchronously(main);
 				} else {
@@ -91,9 +114,6 @@ public class ChatListener implements Listener {
 			}
 			event.getRecipients().clear();
 			event.getRecipients().addAll(unmodifiedMessageRecipients);
-		} catch (NullPointerException e) {
-			//CommonDefinitions.sendDebugMessage("Ran into a NullPointerException while translating chat, server is probably shutting down.");
-			//CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
-		}
+		} catch (NullPointerException e) {}
 	}
 }
