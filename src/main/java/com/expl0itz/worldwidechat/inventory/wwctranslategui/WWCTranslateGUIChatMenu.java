@@ -86,7 +86,7 @@ public class WWCTranslateGUIChatMenu implements InventoryProvider {
 			
 			/* Incoming Chat Button */
 			if ((player.getUniqueId().toString().equals(targetPlayerUUID) && player.hasPermission("worldwidechat.wwctci")) || (!player.getUniqueId().toString().equals(targetPlayerUUID)) && player.hasPermission("worldwidechat.wwctci.otherplayers")) {
-            	ItemStack incomingChatButton = XMaterial.MAP.parseItem();
+            	ItemStack incomingChatButton = XMaterial.ANVIL.parseItem();
     			ItemMeta incomingChatMeta = incomingChatButton.getItemMeta();
     			if (targetTranslator.getTranslatingChatIncoming()) {
     				incomingChatMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
