@@ -60,11 +60,13 @@ public class CommonDefinitions {
 			"sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy" };
 
 	/* Getters */
+	/**
+	  * Checks if a given string is an integer, fast. Better for speed than accuracy.
+	  * @param str - A valid string
+	  * @return Boolean - Whether string is an integer or not
+	  */
 	public static boolean isInteger(String str) {
-		/* This gets whether something is an integer, FAST. 
-		 * It's messy, and should only be used if you value performance over readability.
-		 * Suck it, matches()
-		 * */
+		// Suck it, matches()
 	    if (str == null) {
 	        return false;
 	    }
@@ -88,6 +90,12 @@ public class CommonDefinitions {
 	    return true;
 	}
 	
+	/**
+	  * Compares two strings to check if they are the same language under the current translator.
+	  * @param first - A valid language name
+	  * @param second - A valid language name
+	  * @return Boolean - Whether languages are the same or not
+	  */
 	public static boolean isSameLang(String first, String second) {
 		for (SupportedLanguageObject eaLang : WorldwideChat.instance.getSupportedTranslatorLanguages()) {
 			if ((eaLang.getLangName().equals(getSupportedTranslatorLang(first).getLangName())
@@ -98,6 +106,11 @@ public class CommonDefinitions {
 		return false;
 	}
 
+	/**
+	  * Checks if string is a supported language under the current translator.
+	  * @param in - A valid language name
+	  * @return SupportedLanguageObject - Will be completely empty if the language is invalid
+	  */
 	public static SupportedLanguageObject getSupportedTranslatorLang(String in) {
 		for (SupportedLanguageObject eaLang : WorldwideChat.instance.getSupportedTranslatorLanguages()) {
 			if ((eaLang.getLangCode().equalsIgnoreCase(in) || eaLang.getLangName().equalsIgnoreCase(in))) {
@@ -107,6 +120,10 @@ public class CommonDefinitions {
 		return new SupportedLanguageObject("", "", "", false, false);
 	}
 
+	/**
+	  * Gets a list of properly formatted, supported language codes.
+	  * @return String - Formatted language codes
+	  */
 	public static String getFormattedValidLangCodes() {
 		String out = "\n";
 		for (SupportedLanguageObject eaLang : WorldwideChat.instance.getSupportedTranslatorLanguages()) {
@@ -118,6 +135,9 @@ public class CommonDefinitions {
 		return out;
 	}
 
+	/**
+	  * Closes all inventories registered by WorldwideChat.
+	  */
 	public static void closeAllInventories() {
 		// Close all active GUIs
 		WorldwideChat.instance.getPlayersUsingGUI().clear();
@@ -136,26 +156,30 @@ public class CommonDefinitions {
 	}
 
 	/**
-	   * Sends a debug message to console. Will only work when debug mode is set to true in the Console.
-	   * @param inMessage (String) - The debug message that will be sent to the Console.
-	   * @return
-	   */
+	  * Sends a debug message to console. Will only work when debug mode is set to true in the Console.
+	  * @param inMessage - The debug message that will be sent to the Console.
+	  */
 	public static void sendDebugMessage(String inMessage) {
 		if (WorldwideChat.instance.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
 			WorldwideChat.instance.getLogger().warning("DEBUG: " + inMessage);
 		}
 	}
 	
+	/**
+	 * Gets a message (with no replacements) from the currently selected messages-XX.yml.
+	 * @param messageName - The name of the message from messages-XX.yml.
+	 * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
+	 */
 	public static String getMessage(String messageName) {
 		return getMessage(messageName, new String[0]);
 	}
 	
 	/**
-	   * Gets a message from the currently selected messages-XX.yml.
-	   * @param messageName (String) - The name of the message from messages-XX.yml.
-	   * @param replacements (String[]) - The list of replacement values that replace variables in the selected message. There is no sorting system; the list must be pre-sorted.
-	   * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX>yml.
-	   */
+	  * Gets a message from the currently selected messages-XX.yml.
+	  * @param messageName - The name of the message from messages-XX.yml.
+	  * @param replacements - The list of replacement values that replace variables in the selected message. There is no sorting system; the list must be already sorted.
+	  * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
+	  */
 	public static String getMessage(String messageName, String[] replacements) {
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
@@ -188,11 +212,11 @@ public class CommonDefinitions {
 	}
 	
 	/**
-	   * Sends the user a properly formatted message through our adventure instance.
-	   * @param sender (CommandSender) - The target sender. Can be any entity that can receive messages.
-	   * @param originalMessage (TextComponent) - The unformatted TextComponent that should be sent to sender.
-	   * @return
-	   */
+	  * Sends the user a properly formatted message through our adventure instance.
+	  * @param sender - The target sender. Can be any entity that can receive messages.
+	  * @param originalMessage - The unformatted TextComponent that should be sent to sender.
+	  * @return
+	  */
 	public static void sendMessage(CommandSender sender, TextComponent originalMessage) {
 		try {
 			Audience adventureSender = WorldwideChat.instance.adventure().sender(sender);
@@ -212,11 +236,11 @@ public class CommonDefinitions {
 	}
 	
 	/**
-	   * Translates text using the selected translator.
-	   * @param inMessage (String) - The original message to be translated.
-	   * @param currPlayer (Player) - The player who wants this message to be translated.
-	   * @return String - The translated message. If this is equal to inMessage, the translation failed.
-	   */
+	  * Translates text using the selected translator.
+	  * @param inMessage - The original message to be translated.
+	  * @param currPlayer - The player who wants this message to be translated.
+	  * @return String - The translated message. If this is equal to inMessage, the translation failed.
+	  */
 	public static String translateText(String inMessage, Player currPlayer) {
 		/* If translator settings are invalid, do not do this... */
 		if (!(inMessage.length() > 0) || CommonDefinitions.serverIsStopping()) {
@@ -497,6 +521,11 @@ public class CommonDefinitions {
 		return true;
 	}
 	
+	/**
+	  * Checks if the server is stopping or reloading, by attempting to register a scheduler task.
+	  * This will throw an IllegalPluginAccessException if we are on Bukkit or one of its derivatives.
+	  * @return Boolean - Whether the server is reloading/stopping or not
+	  */
 	public static boolean serverIsStopping() {
 		try {
 			new BukkitRunnable() {
@@ -510,6 +539,13 @@ public class CommonDefinitions {
 		return false;
 	}
 	
+	/**
+	  * Ensures that an ActiveTranslator does not currently need to be rate limited.
+	  * @param delay - Exact rate limit that is being looked for
+	  * @param currActiveTranslator - The valid ActiveTranslator target
+	  * @param sender - The sender of the original command
+	  * @return Boolean - Returns false if the user should currently be rate limited, and true otherwise.
+	  */
 	private static boolean checkForRateLimits(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
 		if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
 			Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
@@ -531,6 +567,11 @@ public class CommonDefinitions {
 		return true;
 	}
 	
+	/**
+	  * Ensures that a player does not have a rate limit permission.
+	  * @param currPlayer - Player that is being checked.
+	  * @return String - Returns an empty string if no permission was found, or the permission name if it is
+	  */
 	private static String checkForRateLimitPermissions(Player currPlayer) {
 		Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
 		for (PermissionAttachmentInfo perm : perms) {
