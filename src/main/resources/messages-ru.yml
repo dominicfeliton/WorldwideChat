@@ -345,3 +345,5 @@ Messages:
   wwcTimeoutExceptionConsole: У игрока %i был последний тайм-аут запроса. Эта ошибка
     не фатальная, но WorldwideChat следует перезагрузить, если она продолжает происходить.
   wwcGUIPageNumber: 'Номер страницы: %i'
+  wwcConfigSQLFail: Не удалось подключиться к SQL.
+  wwcConfigSQLSuccess: Успешно подключено к SQL!

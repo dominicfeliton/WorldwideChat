@@ -5,13 +5,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Map;
 import java.util.HashMap;
 
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.threeten.bp.Instant;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
@@ -22,6 +27,7 @@ import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.Metrics;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
+import com.expl0itz.worldwidechat.util.SQLManager;
 
 public class ConfigurationHandler {
 
@@ -215,6 +221,23 @@ public class ConfigurationHandler {
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigErrorLimitInvalid"));
 		}
 	}
+	
+	/* Storage Settings */
+	public void loadStorageSettings() {
+		if (mainConfig.getBoolean("Storage.useSQL")) {
+			try {
+				SQLManager.connect(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"), 
+						mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"), 
+						mainConfig.getBoolean("Storage.sqlUseSSL"));
+				//TODO: Add support for additional SQL flags
+				main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigSQLSuccess"));
+			} catch (SQLException e) {
+				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigSQLFail"));
+				main.getLogger().warning(ExceptionUtils.getMessage(e));
+				SQLManager.disconnect(); // Just in case
+			}
+		}
+	}
 
 	/* Translator Settings */
 	public void loadTranslatorSettings() {
@@ -280,7 +303,7 @@ public class ConfigurationHandler {
 		main.setTranslatorName(outName);
 	}
 
-	/* Per User Settings Saver */
+	/* Translator YAML File Saver */
 	public void createUserDataConfig(ActiveTranslator inTranslator) {
 		File userSettingsFile;
 		YamlConfiguration userSettingsConfig;
@@ -324,7 +347,7 @@ public class ConfigurationHandler {
 		saveCustomConfig(userSettingsConfig, userSettingsFile, false);
 	}
 
-	/* Stats File Creator */
+	/* Stats YAML File Saver */
 	public void createStatsConfig(PlayerRecord inRecord) {
 		File userStatsFile;
 		YamlConfiguration userStatsConfig;
@@ -403,16 +426,104 @@ public class ConfigurationHandler {
 		}
 	}
 	
-	/* Sync user data to disk */
+	/* Sync user data to storage */
 	public void syncData() {
 		/* If our translator is Invalid, do not run this code */
 		if (!main.getTranslatorName().equals("Invalid")) {
-			/* Sync activeTranslators to disk */
+			/* Sync to SQL database, if it exists */
+			// Our Generic Table Layout: 
+			// | Creation Date | Object Properties |  
+			if (SQLManager.isConnected()) {
+				try {
+					/* Create tables if they do not exist already */
+					PreparedStatement initActiveTranslators = SQLManager.getConnection().prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
+							+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),inLangCode VARCHAR(12),outLangCode VARCHAR(12),rateLimit VARCHAR(256),"
+							+ "rateLimitPreviousTime VARCHAR(256),translatingChatOutgoing VARCHAR(12), translatingChatIncoming VARCHAR(12),"
+							+ "translatingBook VARCHAR(12),translatingSign VARCHAR(12),translatingItem VARCHAR(12),translatingEntity VARCHAR(12),PRIMARY KEY (playerUUID))");
+					initActiveTranslators.executeUpdate();
+					initActiveTranslators.close();
+					PreparedStatement initPlayerRecords = SQLManager.getConnection().prepareStatement("CREATE TABLE IF NOT EXISTS playerRecords "
+							+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),attemptedTranslations VARCHAR(256),successfulTranslations VARCHAR(256),"
+							+ "lastTranslationTime VARCHAR(256),PRIMARY KEY (playerUUID))");
+					initPlayerRecords.executeUpdate();
+					initPlayerRecords.close();
+					/* Sync ActiveTranslator data to corresponding table */
+					main.getActiveTranslators().entrySet().forEach((entry) -> {
+						CommonDefinitions.sendDebugMessage("(SQL) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+					    if (!entry.getValue().getHasBeenSaved()) {
+					    	try {
+					    		PreparedStatement newActiveTranslator = SQLManager.getConnection().prepareStatement("REPLACE activeTranslators"
+						    			+ " (creationDate,playerUUID,inLangCode,outLangCode,rateLimit,rateLimitPreviousTime,translatingChatOutgoing,translatingChatIncoming,translatingBook,translatingSign,translatingItem,translatingEntity)" 
+						    			+ " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
+						    	newActiveTranslator.setString(1, Instant.now().toString());
+						    	newActiveTranslator.setString(2, entry.getValue().getUUID());
+						    	newActiveTranslator.setString(3, entry.getValue().getInLangCode());
+						    	newActiveTranslator.setString(4, entry.getValue().getOutLangCode());
+						    	newActiveTranslator.setInt(5, entry.getValue().getRateLimit());
+						    	newActiveTranslator.setString(6, entry.getValue().getRateLimitPreviousTime());
+						    	newActiveTranslator.setBoolean(7, entry.getValue().getTranslatingChatOutgoing());
+						    	newActiveTranslator.setBoolean(8, entry.getValue().getTranslatingChatIncoming());
+						    	newActiveTranslator.setBoolean(9, entry.getValue().getTranslatingBook());
+						    	newActiveTranslator.setBoolean(10, entry.getValue().getTranslatingSign());
+						    	newActiveTranslator.setBoolean(11, entry.getValue().getTranslatingItem());
+						    	newActiveTranslator.setBoolean(12, entry.getValue().getTranslatingEntity());
+						    	newActiveTranslator.executeUpdate();
+						    	newActiveTranslator.close();
+					    	} catch (SQLException e) {
+								e.printStackTrace();
+								return;
+							}
+					    	CommonDefinitions.sendDebugMessage("(SQL) Created/updated unsaved user data config of " + entry.getKey() + ".");
+					    	entry.getValue().setHasBeenSaved(true);
+					    }
+					});
+					/* Delete any old ActiveTranslators */
+					ResultSet rs = SQLManager.getConnection().createStatement().executeQuery("SELECT * FROM activeTranslators");
+					while (rs.next()) {
+						if (main.getActiveTranslator(rs.getString("playerUUID")).getUUID().equals("")) {
+							String uuid = rs.getString("playerUUID");
+							PreparedStatement deleteOldItem = SQLManager.getConnection().prepareStatement("DELETE FROM activeTranslators WHERE playerUUID = ?");
+							deleteOldItem.setString(1, uuid);
+							deleteOldItem.executeUpdate();
+							deleteOldItem.close();
+							CommonDefinitions.sendDebugMessage("(SQL) Deleted user data config of " + uuid + ".");
+						}
+					}
+					
+					/* Sync PlayerRecord data to corresponding table */
+                    main.getPlayerRecords().entrySet().forEach((entry) -> {
+                    	CommonDefinitions.sendDebugMessage("(SQL) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+                        if (!entry.getValue().getHasBeenSaved()) {
+                        	try {
+                        		PreparedStatement newPlayerRecord = SQLManager.getConnection().prepareStatement("REPLACE playerRecords"
+                        				+ " (creationDate,playerUUID,attemptedTranslations,successfulTranslations,lastTranslationTime) VALUES (?,?,?,?,?)");
+                        		newPlayerRecord.setString(1, Instant.now().toString());
+                        		newPlayerRecord.setString(2, entry.getValue().getUUID());
+                        		newPlayerRecord.setInt(3, entry.getValue().getAttemptedTranslations());
+                        		newPlayerRecord.setInt(4, entry.getValue().getSuccessfulTranslations());
+                        		newPlayerRecord.setString(5, entry.getValue().getLastTranslationTime());
+                        		newPlayerRecord.executeUpdate();
+                        		newPlayerRecord.close();
+                        	} catch (SQLException e) {
+                        		e.printStackTrace();
+                        		return;
+                        	}
+                        	CommonDefinitions.sendDebugMessage("(SQL) Created/updated unsaved user record of " + entry.getKey() + ".");
+                        	entry.getValue().setHasBeenSaved(true);
+					    }
+					});
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+				return;
+			}
+			
+			/* Last resort, sync activeTranslators to disk */
 			// Save all new activeTranslators
 			main.getActiveTranslators().entrySet().forEach((entry) -> {
-				CommonDefinitions.sendDebugMessage("Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				CommonDefinitions.sendDebugMessage("(YAML) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
 				if (!entry.getValue().getHasBeenSaved()) {
-					CommonDefinitions.sendDebugMessage("Created/updated unsaved user data config of " + entry.getKey() + ".");
+					CommonDefinitions.sendDebugMessage("(YAML) Created/updated unsaved user data config of " + entry.getKey() + ".");
 					entry.getValue().setHasBeenSaved(true);
 					createUserDataConfig(entry.getValue());
 				}
@@ -423,7 +534,7 @@ public class ConfigurationHandler {
 				File currFile = new File(userSettingsDir, eaName);
 				if (main.getActiveTranslator(
 						currFile.getName().substring(0, currFile.getName().indexOf("."))).getUUID().equals("")) {
-					CommonDefinitions.sendDebugMessage("Deleted user data config of "
+					CommonDefinitions.sendDebugMessage("(YAML) Deleted user data config of "
 							+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + ".");
 					currFile.delete();
 				}
@@ -431,9 +542,9 @@ public class ConfigurationHandler {
 
 			/* Sync playerRecords to disk */
 			main.getPlayerRecords().entrySet().forEach((entry) -> {
-				CommonDefinitions.sendDebugMessage("Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				CommonDefinitions.sendDebugMessage("(YAML) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
 				if (!entry.getValue().getHasBeenSaved()) {
-					CommonDefinitions.sendDebugMessage("Created/updated unsaved user record of " + entry.getKey() + ".");
+					CommonDefinitions.sendDebugMessage("(YAML) Created/updated unsaved user record of " + entry.getKey() + ".");
 					entry.getValue().setHasBeenSaved(true);
 					createStatsConfig(entry.getValue());
 				}

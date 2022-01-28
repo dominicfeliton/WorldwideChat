@@ -270,3 +270,5 @@ Messages:
   wwcTimeoutExceptionConsole: プレイヤー %i の直近のリクエストタイムアウトが発生しました。このエラーは致命的ではありませんが、引き続き発生する場合は
     WorldwideChat をリロードする必要があります。
   wwcGUIPageNumber: 'ページ番号: %i'
+  wwcConfigSQLFail: SQL に接続できませんでした。
+  wwcConfigSQLSuccess: SQL に正常に接続しました。

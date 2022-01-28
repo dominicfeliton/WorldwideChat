@@ -15,6 +15,14 @@ General:
   updateCheckerDelay: 86400
   syncUserDataDelay: 7200
   enableDebugMode: false
+Storage:
+  useSQL: false
+  sqlHostname: localhost
+  sqlPort: 3306
+  sqlDatabaseName: cooldatabase
+  sqlUsername: root
+  sqlPassword: root
+  sqlUseSSL: false
 Chat:
   sendTranslationChat: true
   sendFailedTranslationChat: true

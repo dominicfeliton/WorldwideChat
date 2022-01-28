@@ -267,3 +267,5 @@ Messages:
   wwcTimeoutException: ' 你的命令超時請重試。'
   wwcTimeoutExceptionConsole: 玩家 %i 有他們最近的請求超時。此錯誤不是致命的，但如果它繼續發生，則應該重新加載 WorldwideChat。
   wwcGUIPageNumber: 頁碼： %i
+  wwcConfigSQLFail: 無法連接到 SQL。
+  wwcConfigSQLSuccess: 已成功連接到 SQL！

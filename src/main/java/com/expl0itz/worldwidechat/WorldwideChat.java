@@ -48,6 +48,7 @@ import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CachedTranslation;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
+import com.expl0itz.worldwidechat.util.SQLManager;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 
 import fr.minuskube.inv.InventoryManager;
@@ -83,7 +84,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "01062022-1"; //This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "01282022-1"; //This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
@@ -331,6 +332,9 @@ public class WorldwideChat extends JavaPlugin {
 		// Sync activeTranslators, playerRecords to disk
 		configurationManager.syncData();
 
+		// Disconnect SQL
+		SQLManager.disconnect();
+		
 		// Clear all active translating users, cache, playersUsingConfigGUI
 		supportedLanguages.clear();
 		playerRecords.clear();
@@ -342,10 +346,11 @@ public class WorldwideChat extends JavaPlugin {
 	public void loadPluginConfigs(boolean isReloading) {
 		setConfigManager(new ConfigurationHandler());
 
-		// Init main config, then init messages config, then load main settings
+		// Init and load configs
 		configurationManager.initMainConfig();
 		configurationManager.initMessagesConfig();
 		configurationManager.loadMainSettings();
+		configurationManager.loadStorageSettings();
 		configurationManager.loadTranslatorSettings();
 
 		/* Run tasks after translator loaded */
