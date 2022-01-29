@@ -69,8 +69,10 @@ Messages:
   wwcUpdaterFailedGeneric: 'Unable to check for WorldwideChat updates.'
   wwcUpdaterOutOfDateChat: 'WorldwideChat is out of date. Please update to the latest version.'
   #------------------- Configuration Messages -------------------
+  wwcConfigYAMLDefault: 'Defaulted to YAML for data storage.'
   wwcConfigSQLSuccess: 'Successfully connected to SQL!'
   wwcConfigSQLFail: 'Failed to connect to SQL.'
+  wwcConfigYAMLFallback: 'Falling back to YAML...'
   wwcConfigConnectionSuccess: 'Successfully connected to %o!'
   wwcConfigConnectionFailed: 'Failed to connect to %o. Make sure your credentials and firewall are configured correctly!'
   wwcConfigInvalidTranslatorSettings: 'Invalid translator settings! Please enable only one translator in your config.yml.'

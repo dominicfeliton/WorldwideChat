@@ -30,17 +30,15 @@ public class WWCInventoryManager extends InventoryManager {
 	}
 	
 	public static void checkIfPlayerIsMissing(Player player, String targetPlayerUUID) {
-		if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
-			if (Bukkit.getPlayer(UUID.fromString(targetPlayerUUID)) == null) {
-				// Target player no longer online
-				player.closeInventory();
-				final TextComponent targetPlayerDC = Component.text()
-						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwctGUITargetPlayerNull"))
-								.color(NamedTextColor.RED).decorate(TextDecoration.ITALIC))
-						.build();
-				CommonDefinitions.sendMessage(player, targetPlayerDC);
-			}
+		if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && Bukkit.getPlayer(UUID.fromString(targetPlayerUUID)) == null) {
+			// Target player no longer online
+			player.closeInventory();
+			final TextComponent targetPlayerDC = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("wwctGUITargetPlayerNull"))
+							.color(NamedTextColor.RED).decorate(TextDecoration.ITALIC))
+					.build();
+			CommonDefinitions.sendMessage(player, targetPlayerDC);
 		}
 	}
 	

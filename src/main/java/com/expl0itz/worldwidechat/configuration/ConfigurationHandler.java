@@ -230,13 +230,15 @@ public class ConfigurationHandler {
 				SQLManager.connect(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"), 
 						mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"), 
 						(List<String>) mainConfig.getList("Storage.sqlAdditionalArguments"), mainConfig.getBoolean("Storage.sqlUseSSL"));
-				//TODO: Gracefully handle SQL failures or YAML parsing here
 				main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigSQLSuccess"));
 			} catch (SQLException e) {
 				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigSQLFail"));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
 				SQLManager.disconnect(); // Just in case
+				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigYAMLFallback"));
 			}
+		} else {
+			main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigYAMLDefault"));
 		}
 	}
 
@@ -280,11 +282,6 @@ public class ConfigurationHandler {
 						test.useTranslator();
 						break;
 					} else {
-						mainConfig.set("Translator.useWatsonTranslate", false);
-						mainConfig.set("Translator.useGoogleTranslate", false);
-						mainConfig.set("Translator.useAmazonTranslate", false);
-						
-						saveMainConfig(false);
 						outName = "Invalid";
 						break;
 					}
