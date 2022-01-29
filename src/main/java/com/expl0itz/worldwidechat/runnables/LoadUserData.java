@@ -61,7 +61,6 @@ public class LoadUserData implements Runnable {
 							rs.getInt("successfulTranslations")
 							);
 					recordToAdd.setHasBeenSaved(true);
-					
 					main.addPlayerRecord(recordToAdd);
 				}
 				rs.close();
@@ -133,7 +132,6 @@ public class LoadUserData implements Runnable {
 					translatorToAdd.setTranslatingEntity(rs.getBoolean("translatingEntity"));
 					translatorToAdd.setRateLimit(rs.getInt("rateLimit"));
 					translatorToAdd.setHasBeenSaved(true);
-					
 					main.addActiveTranslator(translatorToAdd);
 				}
 				rs.close();

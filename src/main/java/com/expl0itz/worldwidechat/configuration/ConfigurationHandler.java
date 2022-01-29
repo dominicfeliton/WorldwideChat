@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.List;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bukkit.Bukkit;
@@ -228,8 +229,8 @@ public class ConfigurationHandler {
 			try {
 				SQLManager.connect(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"), 
 						mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"), 
-						mainConfig.getBoolean("Storage.sqlUseSSL"));
-				//TODO: Add support for additional SQL flags
+						(List<String>) mainConfig.getList("Storage.sqlAdditionalArguments"), mainConfig.getBoolean("Storage.sqlUseSSL"));
+				//TODO: Gracefully handle SQL failures or YAML parsing here
 				main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigSQLSuccess"));
 			} catch (SQLException e) {
 				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigSQLFail"));

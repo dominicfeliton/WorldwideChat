@@ -23,6 +23,7 @@ Storage:
   sqlUsername: root
   sqlPassword: root
   sqlUseSSL: false
+  additionalArguments: []
 Chat:
   sendTranslationChat: true
   sendFailedTranslationChat: true
