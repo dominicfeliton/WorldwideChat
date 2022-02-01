@@ -29,26 +29,8 @@ public class GeneralSettingsLangConversation extends StringPrompt {
 
 	@Override
 	public Prompt acceptInput(ConversationContext context, String input) {
-		for (String eaStr : CommonDefinitions.supportedPluginLangCodes) {
-			if (!input.equals("0")) {
-				if (eaStr.equals(input)) {
-					main.getConfigManager().getMainConfig().set("General.pluginLang", input);
-					main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-					final TextComponent successfulChange = Component.text()
-							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwcConfigConversationLangSuccess"))
-									.color(NamedTextColor.GREEN))
-							.build();
-					CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-					/* Re-open ConfigurationInventoryGUI */
-					ConfigurationGeneralSettingsGUI.generalSettings.open((Player) context.getForWhom());
-					return END_OF_CONVERSATION;
-				}
-			} else {
-				/* Re-open ConfigurationInventoryGUI */
-				ConfigurationGeneralSettingsGUI.generalSettings.open((Player) context.getForWhom());
-				return END_OF_CONVERSATION;
-			}
+		if (!CommonDefinitions.getSupportedTranslatorLang(input).getLangCode().equals("") || input.equals("0")) {
+			return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationlangSuccess", "General.pluginLang", input, ConfigurationGeneralSettingsGUI.generalSettings);
 		}
 		final TextComponent badChange = Component.text()
 				.append(Component.text()

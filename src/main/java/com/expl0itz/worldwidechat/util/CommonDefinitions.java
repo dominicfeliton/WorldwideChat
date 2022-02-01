@@ -19,6 +19,8 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
+import org.bukkit.conversations.ConversationContext;
+import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 import org.bukkit.permissions.PermissionAttachmentInfo;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -498,6 +500,11 @@ public class CommonDefinitions {
 		return finalOut;
 	}
 
+	/**
+	 * Sends a message that console cannot have a translation session for itself.
+	 * @param sender - Who will receive the message
+	 * @return Returns false, so that a command can return this method.
+	 */
 	public static boolean sendNoConsoleChatMessage(CommandSender sender) {
 		final TextComponent noConsoleChat = Component.text() // Cannot translate console chat
 				.append(Component.text()
@@ -508,6 +515,11 @@ public class CommonDefinitions {
 		return false;
 	}
 	
+	/**
+	 * Sends a message to console and a sender that a timeout exception has occured.
+	 * @param sender - Who will receive the message besides console.
+	 * @return Returns true, so that a command can return this method.
+	 */
 	public static boolean sendTimeoutExceptionMessage(CommandSender sender) {
 		if (sender instanceof Player) {
 			WorldwideChat.instance.getLogger().warning(CommonDefinitions.getMessage("wwcTimeoutExceptionConsole", new String[] {sender.getName()}));
@@ -537,6 +549,51 @@ public class CommonDefinitions {
 			return true;
 		}
 		return false;
+	}
+	
+	/** 
+	  * Returns the generic conversation for modifying values in our config.yml using the GUI.
+	  * @param preCheck - The boolean that needs to be true for the change to proceed
+	  * @param context - The conversation context obj
+	  * @param successfulChangeMsg - Names of the message sent on successful change 
+	  * @param configValName - The names of the config value to be updated
+	  * @param configVal - The new value
+	  * @param prevInventory - The previous inventory to open up after the conversation is over
+	  * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation. If the length of configValName != the length of configVal, then null is returned.
+	  */
+	public static Prompt genericConfigConversation(boolean preCheck, ConversationContext context, String successfulChangeMsg, String configValName[], Object[] configVal, SmartInventory prevInventory) {
+		if (configValName.length != configVal.length) {
+			return null;
+		}
+		if (preCheck) {
+			for (int i = 0; i < configValName.length; i++) {
+				WorldwideChat.instance.getConfigManager().getMainConfig().set(configValName[i], configVal[i]);
+			}
+			WorldwideChat.instance.addPlayerUsingConfigurationGUI(((Player)context.getForWhom()).getUniqueId());
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage(successfulChangeMsg))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
+		}
+		/* Re-open previous GUI */
+		prevInventory.open((Player)context.getForWhom());
+		return Prompt.END_OF_CONVERSATION;
+	}
+	
+	/** 
+	  * Returns the generic conversation for modifying values in our config.yml using the GUI.
+	  * @param preCheck - The boolean that needs to be true for the change to proceed
+	  * @param context - The conversation context obj
+	  * @param successfulChangeMsg - Name of the message sent on successful change 
+	  * @param configValName - The name of the config value to be updated
+	  * @param configVal - The new value
+	  * @param prevInventory - The previous inventory to open up after the conversation is over
+	  * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation.
+	  */
+	public static Prompt genericConfigConversation(boolean preCheck, ConversationContext context, String successfulChangeMsg, String configValName, Object configVal, SmartInventory prevInventory) {
+		return genericConfigConversation(preCheck, context, successfulChangeMsg, new String[] {configValName}, new Object[] {configVal}, prevInventory);
 	}
 	
 	/**

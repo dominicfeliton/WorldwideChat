@@ -38,7 +38,7 @@ public class ChatSettingsModifyOverrideTextConversation extends StringPrompt {
 	public Prompt acceptInput(ConversationContext context, String input) {
 		if (!input.equals("0")) {
 			main.getConfigManager().getMessagesConfig().set("Overrides." + currentOverrideName, input);
-			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
+			main.addPlayerUsingConfigurationGUI(((Player) context.getForWhom()).getUniqueId());
 			final TextComponent successfulChange = Component.text()
 					.append(Component.text()
 							.content(CommonDefinitions.getMessage("wwcConfigConversationOverrideTextChangeSuccess"))

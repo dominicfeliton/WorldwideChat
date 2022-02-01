@@ -1,7 +1,6 @@
 package com.expl0itz.worldwidechat;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -73,7 +72,7 @@ public class WorldwideChat extends JavaPlugin {
 	private ConfigurationHandler configurationManager;
 	
 	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>();
-	private List<Player> playersUsingConfigurationGUI = new ArrayList<Player>(); //Not thread-safe, only modify this on the main thread
+	private List<String> playersUsingConfigurationGUI = new CopyOnWriteArrayList<String>();
 	
 	private Map<CachedTranslation, Integer> cache = new ConcurrentHashMap<CachedTranslation, Integer>();
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<String, PlayerRecord>();
@@ -84,7 +83,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "01292022-2"; //This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "01292022-2"; // This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
@@ -477,18 +476,26 @@ public class WorldwideChat extends JavaPlugin {
 		CommonDefinitions.sendDebugMessage(i.getUUID() + " has been removed from the internal active translator hashmap.");
 	}
 
-	public void addPlayerUsingConfigurationGUI(Player p) {
-		if (!playersUsingConfigurationGUI.contains(p)) {
-			playersUsingConfigurationGUI.add(p);
-			CommonDefinitions.sendDebugMessage("Player " + p.getName()
-					+ " has been added to the internal list of people that are using the configuration GUI.");
+	public void addPlayerUsingConfigurationGUI(UUID in) {
+		if (!playersUsingConfigurationGUI.contains(in.toString())) {
+			playersUsingConfigurationGUI.add(in.toString());
+			CommonDefinitions.sendDebugMessage("Player " + getServer().getPlayer(in)
+					+ " has been added (or overwrriten) to the internal hashmap of people that are using the configuration GUI.");
 		}
 	}
+	
+	public void addPlayerUsingConfigurationGUI(Player in) {
+		addPlayerUsingConfigurationGUI(in.getUniqueId());
+	}
 
-	public void removePlayerUsingConfigurationGUI(Player p) {
-		playersUsingConfigurationGUI.remove(p);
-		CommonDefinitions.sendDebugMessage("Player " + p.getName()
+	public void removePlayerUsingConfigurationGUI(UUID in) {
+		playersUsingConfigurationGUI.remove(in.toString());
+		CommonDefinitions.sendDebugMessage("Player " + getServer().getPlayer(in).getName()
 				+ " has been removed from the internal list of people that are using the configuration GUI.");
+	}
+	
+	public void removePlayerUsingConfigurationGUI(Player p) {
+		removePlayerUsingConfigurationGUI(p.getUniqueId());
 	}
 
 	public void addCacheTerm(CachedTranslation input) {
@@ -577,6 +584,13 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		return new PlayerRecord("", "", -1, -1);
 	}
+	
+	public boolean isPlayerUsingGUI(String uuid) {
+		if (playersUsingConfigurationGUI.contains(uuid)) {
+			return true;
+		}
+		return false;
+	}
 
 	public Map<String, ActiveTranslator> getActiveTranslators() {
 		return activeTranslators;
@@ -590,7 +604,7 @@ public class WorldwideChat extends JavaPlugin {
 		return playerRecords;
 	}
 
-	public List<Player> getPlayersUsingGUI() {
+	public List<String> getPlayersUsingGUI() {
 		return playersUsingConfigurationGUI;
 	}
 	

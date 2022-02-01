@@ -9,9 +9,6 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationEachTranslatorSettingsGUI;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
-import net.kyori.adventure.text.format.NamedTextColor;
 import net.md_5.bungee.api.ChatColor;
 
 public class TranslatorSettingsWatsonApiKeyConversation extends StringPrompt {
@@ -27,20 +24,8 @@ public class TranslatorSettingsWatsonApiKeyConversation extends StringPrompt {
 
 	@Override
 	public Prompt acceptInput(ConversationContext context, String input) {
-		if (!input.equals("0")) {
-			main.getConfigManager().getMainConfig().set("Translator.watsonAPIKey", input);
-			main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate", false);
-			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-			final TextComponent successfulChange = Component.text()
-					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcConfigConversationWatsonAPIKeySuccess"))
-							.color(NamedTextColor.GREEN))
-					.build();
-			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-		}
-		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson")
-				.open((Player) context.getForWhom());
-		return END_OF_CONVERSATION;
+		return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationWatsonAPIKeySuccess", 
+				new String[] {"Translator.watsonAPIKey", "Translator.useWatsonTranslate"}, new Object[] {input, false}, ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson"));
 	}
 
 }
