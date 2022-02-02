@@ -479,7 +479,7 @@ public class WorldwideChat extends JavaPlugin {
 	public void addPlayerUsingConfigurationGUI(UUID in) {
 		if (!playersUsingConfigurationGUI.contains(in.toString())) {
 			playersUsingConfigurationGUI.add(in.toString());
-			CommonDefinitions.sendDebugMessage("Player " + getServer().getPlayer(in)
+			CommonDefinitions.sendDebugMessage("Player " + getServer().getPlayer(in).getName()
 					+ " has been added (or overwrriten) to the internal hashmap of people that are using the configuration GUI.");
 		}
 	}

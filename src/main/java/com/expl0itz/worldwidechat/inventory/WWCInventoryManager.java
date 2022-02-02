@@ -16,6 +16,7 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import org.bukkit.scheduler.BukkitRunnable;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
+import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.InventoryManager;
 import fr.minuskube.inv.content.InventoryContents;
 import net.kyori.adventure.text.Component;
@@ -112,6 +113,30 @@ public class WWCInventoryManager extends InventoryManager {
 				}
 			}.runTaskAsynchronously(WorldwideChat.instance);	
 		}
+	}
+	
+	public static void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName) {
+		ItemStack button = XMaterial.BEDROCK.parseItem();
+		if (WorldwideChat.instance.getConfigManager().getMainConfig().getBoolean(configValueName)) {
+			button = XMaterial.EMERALD_BLOCK.parseItem();
+		} else {
+			button = XMaterial.REDSTONE_BLOCK.parseItem();
+		}
+		ItemMeta buttonMeta = button.getItemMeta();
+		buttonMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage(configButtonName));
+		button.setItemMeta(buttonMeta);
+		contents.set(x, y, ClickableItem.of(button, e -> {
+			WorldwideChat.instance.addPlayerUsingConfigurationGUI(player);
+			WorldwideChat.instance.getConfigManager().getMainConfig().set(configValueName,
+					!(WorldwideChat.instance.getConfigManager().getMainConfig().getBoolean(configValueName)));
+			final TextComponent successfulChange = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage(messageOnChange))
+							.color(NamedTextColor.GREEN))
+					.build();
+			CommonDefinitions.sendMessage(player, successfulChange);
+			genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName);
+		}));
 	}
 	
 }

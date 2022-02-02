@@ -14,13 +14,8 @@ import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
-import net.kyori.adventure.text.format.NamedTextColor;
 
 public class ConfigurationChatSettingsGUI implements InventoryProvider {
-
-	private WorldwideChat main = WorldwideChat.instance;
 
 	public static final SmartInventory chatSettings = SmartInventory.builder().id("chatSettingsMenu")
 			.provider(new ConfigurationChatSettingsGUI()).size(3, 9)
@@ -39,18 +34,16 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			contents.fillBorders(ClickableItem.empty(customBorders));
 
 			/* First Button: Send a chat if the user is actively translating */
-			sendTranslationChatButton(player, contents);
+			WWCInventoryManager.genericToggleButton(1, 1, player, contents, "wwcConfigGUISendTranslationChatButton", "wwcConfigConversationSendTranslationChatSuccess", "Chat.sendTranslationChat");
 
-			/*
-			 * Second Button: Send a notification in chat if the plugin requires an update
-			 */
-			sendPluginUpdateChatButton(player, contents);
+			/* Second Button: Send a notification in chat if the plugin requires an update */
+			WWCInventoryManager.genericToggleButton(1, 2, player, contents, "wwcConfigGUIPluginUpdateChatButton", "wwcConfigConversationPluginUpdateChatSuccess", "Chat.sendPluginUpdateChat");
 
 			/* Third Button: Send a message to the user if their translation has failed */
-			sendFailedTranslationChatButton(player, contents);
+			WWCInventoryManager.genericToggleButton(1, 3, player, contents, "wwcConfigGUISendFailedTranslationChatButton", "wwcConfigConversationSendFailedTranslationChatSuccess", "Chat.sendFailedTranslationChat");
 			
 			/* Fourth Button: Hover over incoming translated chat to see the original message */
-			sendIncomingHoverTextChatButton(player, contents);
+			WWCInventoryManager.genericToggleButton(1, 4, player, contents, "wwcConfigGUISendIncomingHoverTextChatButton", "wwcConfigConversationSendIncomingHoverTextChatSuccess", "Chat.sendIncomingHoverTextChat");
 			
 			/* Fifth Button: Let user override default plugin messages */
 			ItemStack messagesOverrideChatButton = XMaterial.WRITABLE_BOOK.parseItem();
@@ -83,101 +76,4 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 
 	@Override
 	public void update(Player player, InventoryContents contents) {}
-
-	private void sendTranslationChatButton(Player player, InventoryContents contents) {
-		ItemStack translationChatButton = XMaterial.BEDROCK.parseItem();
-		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat")) {
-			translationChatButton = XMaterial.EMERALD_BLOCK.parseItem();
-		} else {
-			translationChatButton = XMaterial.REDSTONE_BLOCK.parseItem();
-		}
-		ItemMeta translationChatMeta = translationChatButton.getItemMeta();
-		translationChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUISendTranslationChatButton"));
-		translationChatButton.setItemMeta(translationChatMeta);
-		contents.set(1, 1, ClickableItem.of(translationChatButton, e -> {
-			main.addPlayerUsingConfigurationGUI(player);
-			main.getConfigManager().getMainConfig().set("Chat.sendTranslationChat",
-					!(main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat")));
-			final TextComponent successfulChange = Component.text()
-					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcConfigConversationSendTranslationChatSuccess"))
-							.color(NamedTextColor.GREEN))
-					.build();
-			CommonDefinitions.sendMessage(player, successfulChange);
-			sendTranslationChatButton(player, contents);
-		}));
-	}
-
-	private void sendPluginUpdateChatButton(Player player, InventoryContents contents) {
-		ItemStack pluginUpdateChatButton = XMaterial.BEDROCK.parseItem();
-		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) {
-			pluginUpdateChatButton = XMaterial.EMERALD_BLOCK.parseItem();
-		} else {
-			pluginUpdateChatButton = XMaterial.REDSTONE_BLOCK.parseItem();
-		}
-		ItemMeta pluginUpdateChatMeta = pluginUpdateChatButton.getItemMeta();
-		pluginUpdateChatMeta.setDisplayName(ChatColor.GOLD
-				+ CommonDefinitions.getMessage("wwcConfigGUIPluginUpdateChatButton"));
-		pluginUpdateChatButton.setItemMeta(pluginUpdateChatMeta);
-		contents.set(1, 2, ClickableItem.of(pluginUpdateChatButton, e -> {
-			main.addPlayerUsingConfigurationGUI(player);
-			main.getConfigManager().getMainConfig().set("Chat.sendPluginUpdateChat",
-					!(main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")));
-			final TextComponent successfulChange = Component.text()
-					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcConfigConversationPluginUpdateChatSuccess"))
-							.color(NamedTextColor.GREEN))
-					.build();
-			CommonDefinitions.sendMessage(player, successfulChange);
-			sendPluginUpdateChatButton(player, contents);
-		}));
-	}
-	
-	private void sendFailedTranslationChatButton(Player player, InventoryContents contents) {
-		ItemStack translationChatButton = XMaterial.BEDROCK.parseItem();
-		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendFailedTranslationChat")) {
-			translationChatButton = XMaterial.EMERALD_BLOCK.parseItem();
-		} else {
-			translationChatButton = XMaterial.REDSTONE_BLOCK.parseItem();
-		}
-		ItemMeta translationChatMeta = translationChatButton.getItemMeta();
-		translationChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUISendFailedTranslationChatButton"));
-		translationChatButton.setItemMeta(translationChatMeta);
-		contents.set(1, 3, ClickableItem.of(translationChatButton, e -> {
-			main.addPlayerUsingConfigurationGUI(player);
-			main.getConfigManager().getMainConfig().set("Chat.sendFailedTranslationChat",
-					!(main.getConfigManager().getMainConfig().getBoolean("Chat.sendFailedTranslationChat")));
-			final TextComponent successfulChange = Component.text()
-					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcConfigConversationSendFailedTranslationChatSuccess"))
-							.color(NamedTextColor.GREEN))
-					.build();
-			CommonDefinitions.sendMessage(player, successfulChange);
-			sendFailedTranslationChatButton(player, contents);
-		}));
-	}
-	
-	private void sendIncomingHoverTextChatButton(Player player, InventoryContents contents) {
-		ItemStack translationChatButton = XMaterial.BEDROCK.parseItem();
-		if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
-			translationChatButton = XMaterial.EMERALD_BLOCK.parseItem();
-		} else {
-			translationChatButton = XMaterial.REDSTONE_BLOCK.parseItem();
-		}
-		ItemMeta translationChatMeta = translationChatButton.getItemMeta();
-		translationChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUISendIncomingHoverTextChatButton"));
-		translationChatButton.setItemMeta(translationChatMeta);
-		contents.set(1, 4, ClickableItem.of(translationChatButton, e -> {
-			main.addPlayerUsingConfigurationGUI(player);
-			main.getConfigManager().getMainConfig().set("Chat.sendIncomingHoverTextChat",
-					!(main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")));
-			final TextComponent successfulChange = Component.text()
-					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcConfigConversationSendIncomingHoverTextChatSuccess"))
-							.color(NamedTextColor.GREEN))
-					.build();
-			CommonDefinitions.sendMessage(player, successfulChange);
-			sendIncomingHoverTextChatButton(player, contents);
-		}));
-	}
 }

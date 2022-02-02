@@ -19,9 +19,6 @@ import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
-import net.kyori.adventure.text.format.NamedTextColor;
 
 public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 
@@ -56,7 +53,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			}));
 
 			/* Option Two: bStats */
-			bStatsButton(player, contents);
+			WWCInventoryManager.genericToggleButton(1, 2, player, contents, "wwcConfigGUIbStatsButton", "wwcConfigConversationbStatsSuccess", "General.enablebStats");
 
 			/* Option Three: Change Plugin Lang */
 			ConversationFactory langConvo = new ConversationFactory(main).withModality(true)
@@ -95,7 +92,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			}));
 			
 			/* Option Six: Debug Mode */
-			debugModeButton(player, contents);
+			WWCInventoryManager.genericToggleButton(1, 6, player, contents, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess", "General.enableDebugMode");
 
 			/* Bottom Middle Option: Quit */
 			contents.set(2, 4, ClickableItem.of(WWCInventoryManager.getSaveMainConfigButton(), e -> {
@@ -116,53 +113,4 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 
 	@Override
 	public void update(Player player, InventoryContents contents) {}
-	
-	private void bStatsButton(Player player, InventoryContents contents) {
-		ItemStack bStatsButton = XMaterial.BEDROCK.parseItem();
-		if (main.getConfigManager().getMainConfig().getBoolean("General.enablebStats")) {
-			bStatsButton = XMaterial.EMERALD_BLOCK.parseItem();
-		} else {
-			bStatsButton = XMaterial.REDSTONE_BLOCK.parseItem();
-		}
-		ItemMeta bStatsMeta = bStatsButton.getItemMeta();
-		bStatsMeta.setDisplayName(ChatColor.GOLD
-				+ CommonDefinitions.getMessage("wwcConfigGUIbStatsButton"));
-		bStatsButton.setItemMeta(bStatsMeta);
-		contents.set(1, 2, ClickableItem.of(bStatsButton, e -> {
-			main.addPlayerUsingConfigurationGUI(player);
-			main.getConfigManager().getMainConfig().set("General.enablebStats",
-					!(main.getConfigManager().getMainConfig().getBoolean("General.enablebStats")));
-			final TextComponent successfulChange = Component.text()
-					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcConfigConversationbStatsSuccess"))
-							.color(NamedTextColor.GREEN))
-					.build();
-			CommonDefinitions.sendMessage(player, successfulChange);
-			bStatsButton(player, contents);
-		}));
-	}
-	
-	private void debugModeButton(Player player, InventoryContents contents) {
-		ItemStack debugModeButton = XMaterial.BEDROCK.parseItem();
-		if (main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
-			debugModeButton = XMaterial.EMERALD_BLOCK.parseItem();
-		} else {
-			debugModeButton = XMaterial.REDSTONE_BLOCK.parseItem();
-		}
-		ItemMeta debugModeMeta = debugModeButton.getItemMeta();
-		debugModeMeta.setDisplayName(ChatColor.GOLD
-				+ CommonDefinitions.getMessage("wwcConfigGUIDebugModeButton"));
-		debugModeButton.setItemMeta(debugModeMeta);
-		contents.set(1, 6, ClickableItem.of(debugModeButton, e -> {
-			main.addPlayerUsingConfigurationGUI(player);
-			main.getConfigManager().getMainConfig().set("General.enableDebugMode", !(main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")));
-			final TextComponent successfulChange = Component.text()
-					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcConfigConversationDebugModeSuccess"))
-							.color(NamedTextColor.GREEN))
-					.build();
-			CommonDefinitions.sendMessage(player, successfulChange);
-			debugModeButton(player, contents);
-		}));
-	}
 }
