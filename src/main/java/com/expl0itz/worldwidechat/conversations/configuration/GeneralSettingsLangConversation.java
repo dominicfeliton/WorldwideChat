@@ -8,7 +8,7 @@ import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationGeneralSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.GeneralSettingsGUI;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import net.kyori.adventure.text.Component;
@@ -30,7 +30,7 @@ public class GeneralSettingsLangConversation extends StringPrompt {
 	@Override
 	public Prompt acceptInput(ConversationContext context, String input) {
 		if (!CommonDefinitions.getSupportedTranslatorLang(input).getLangCode().equals("") || input.equals("0")) {
-			return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationlangSuccess", "General.pluginLang", input, ConfigurationGeneralSettingsGUI.generalSettings);
+			return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationlangSuccess", "General.pluginLang", input, GeneralSettingsGUI.generalSettings);
 		}
 		final TextComponent badChange = Component.text()
 				.append(Component.text()

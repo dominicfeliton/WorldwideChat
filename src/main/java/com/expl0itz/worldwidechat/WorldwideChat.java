@@ -47,7 +47,7 @@ import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CachedTranslation;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
-import com.expl0itz.worldwidechat.util.SQLManager;
+import com.expl0itz.worldwidechat.util.SQLUtils;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 
 import fr.minuskube.inv.InventoryManager;
@@ -332,7 +332,7 @@ public class WorldwideChat extends JavaPlugin {
 		configurationManager.syncData();
 
 		// Disconnect SQL
-		SQLManager.disconnect();
+		SQLUtils.disconnect();
 		
 		// Clear all active translating users, cache, playersUsingConfigGUI
 		supportedLanguages.clear();

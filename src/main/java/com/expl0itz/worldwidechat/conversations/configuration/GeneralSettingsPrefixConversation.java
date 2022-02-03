@@ -6,7 +6,7 @@ import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationGeneralSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.GeneralSettingsGUI;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
@@ -26,7 +26,7 @@ public class GeneralSettingsPrefixConversation extends StringPrompt {
 
 	@Override
 	public Prompt acceptInput(ConversationContext context, String input) {
-		return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationPrefixSuccess", "General.prefixName", input, ConfigurationGeneralSettingsGUI.generalSettings);
+		return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationPrefixSuccess", "General.prefixName", input, GeneralSettingsGUI.generalSettings);
 	}
 
 }

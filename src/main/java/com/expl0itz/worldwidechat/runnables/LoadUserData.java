@@ -15,7 +15,7 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
-import com.expl0itz.worldwidechat.util.SQLManager;
+import com.expl0itz.worldwidechat.util.SQLUtils;
 
 public class LoadUserData implements Runnable {
 
@@ -32,7 +32,7 @@ public class LoadUserData implements Runnable {
 
 		/* Load user records (/wwcs) */
 		CommonDefinitions.sendDebugMessage("Loading user records or /wwcs...");
-		if (!SQLManager.isConnected()) {
+		if (!SQLUtils.isConnected()) {
 			for (File eaFile : statsFolder.listFiles()) {
 				YamlConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
 				try {
@@ -52,7 +52,7 @@ public class LoadUserData implements Runnable {
 			}
 		} else {
 			try {
-				ResultSet rs = SQLManager.getConnection().createStatement().executeQuery("SELECT * FROM playerRecords");
+				ResultSet rs = SQLUtils.getConnection().createStatement().executeQuery("SELECT * FROM playerRecords");
 				while (rs.next()) {
 					PlayerRecord recordToAdd = new PlayerRecord(
 							rs.getString("lastTranslationTime"),
@@ -76,7 +76,7 @@ public class LoadUserData implements Runnable {
 
 		/* Load user files (last translation session, etc.) */
 		CommonDefinitions.sendDebugMessage("Loading user data or /wwct...");
-		if (!SQLManager.isConnected()) {
+		if (!SQLUtils.isConnected()) {
 			for (File eaFile : userDataFolder.listFiles()) {
 				YamlConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
 				try {
@@ -114,7 +114,7 @@ public class LoadUserData implements Runnable {
 			}
 		} else {
 			try {
-				ResultSet rs = SQLManager.getConnection().createStatement().executeQuery("SELECT * FROM activeTranslators");
+				ResultSet rs = SQLUtils.getConnection().createStatement().executeQuery("SELECT * FROM activeTranslators");
 				while (rs.next()) {
 					ActiveTranslator translatorToAdd = new ActiveTranslator(
 							rs.getString("playerUUID"),

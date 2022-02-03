@@ -6,7 +6,7 @@ import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationTranslatorSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.TranslatorSettingsGUI;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import net.md_5.bungee.api.ChatColor;
@@ -25,7 +25,7 @@ public class TranslatorSettingsTranslationCacheConversation extends NumericPromp
 	@Override
 	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 		return CommonDefinitions.genericConfigConversation(input.intValue() > -1, context, "wwcConfigConversationTranslationCacheSuccess", 
-				"Translator.translatorCacheSize", input.intValue(), ConfigurationTranslatorSettingsGUI.translatorSettings);
+				"Translator.translatorCacheSize", input.intValue(), TranslatorSettingsGUI.translatorSettings);
 	}
 
 }

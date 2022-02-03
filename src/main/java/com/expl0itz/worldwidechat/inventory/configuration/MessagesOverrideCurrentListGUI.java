@@ -22,12 +22,12 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 
-public class ConfigurationMessagesOverrideCurrentListGUI implements InventoryProvider {
+public class MessagesOverrideCurrentListGUI implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	
 	public static final SmartInventory overrideMessagesSettings = SmartInventory.builder().id("overrideMessagesMenu")
-			.provider(new ConfigurationMessagesOverrideCurrentListGUI()).size(6, 9)
+			.provider(new MessagesOverrideCurrentListGUI()).size(6, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatMessagesOverrideSettings"))
 	        .build();
@@ -70,7 +70,7 @@ public class ConfigurationMessagesOverrideCurrentListGUI implements InventoryPro
 					currentEntry.setItemMeta(currentEntryMeta);
 					currentOverrides[currSpot] = ClickableItem.of(currentEntry, e -> {
 						// Open Specific Override GUI
-						ConfigurationMessagesOverrideModifyGUI.getModifyCurrentOverride(entry.getKey()).open(player);
+						MessagesOverrideModifyGUI.getModifyCurrentOverride(entry.getKey()).open(player);
 					});
 					currSpot++;
 				}
@@ -89,7 +89,7 @@ public class ConfigurationMessagesOverrideCurrentListGUI implements InventoryPro
 				}));
 			} else {
 				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
-					ConfigurationChatSettingsGUI.chatSettings.open(player);
+					ChatSettingsGUI.chatSettings.open(player);
 				}));
 			}
 			
@@ -103,7 +103,7 @@ public class ConfigurationMessagesOverrideCurrentListGUI implements InventoryPro
 					+ CommonDefinitions.getMessage("wwcConfigGUIChatMessagesOverrideNewButton"));
 			addNewOverrideButton.setItemMeta(addNewOverrideMeta);
 			contents.set(5, 4, ClickableItem.of(addNewOverrideButton, e -> {
-				ConfigurationMessagesOverridePossibleListGUI.overrideNewMessageSettings.open(player);
+				MessagesOverridePossibleListGUI.overrideNewMessageSettings.open(player);
 			}));
 			
 			/* Bottom Right Option: Next Page */

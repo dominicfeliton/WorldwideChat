@@ -26,12 +26,12 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 
-public class ConfigurationMessagesOverridePossibleListGUI implements InventoryProvider {
+public class MessagesOverridePossibleListGUI implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	
 	public static final SmartInventory overrideNewMessageSettings = SmartInventory.builder().id("overridePossibilitiesMenu")
-			.provider(new ConfigurationMessagesOverridePossibleListGUI()).size(6, 9)
+			.provider(new MessagesOverridePossibleListGUI()).size(6, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatMessagesPossibleOverrides"))
 	        .build();
@@ -77,7 +77,7 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 				currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {
 					// Start conversation
 					ConversationFactory textConvo = new ConversationFactory(main).withModality(true)
-							.withFirstPrompt(new ChatSettingsModifyOverrideTextConversation(ConfigurationMessagesOverridePossibleListGUI.overrideNewMessageSettings, entry.getKey()));
+							.withFirstPrompt(new ChatSettingsModifyOverrideTextConversation(MessagesOverridePossibleListGUI.overrideNewMessageSettings, entry.getKey()));
 				    textConvo.buildConversation(player).begin();
 				});
 				currSpot++;
@@ -96,7 +96,7 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 				}));
 			} else {
 				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
-					ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
+					MessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
 				}));
 			}
 			

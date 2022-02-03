@@ -6,7 +6,7 @@ import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationTranslatorSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.TranslatorSettingsGUI;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import net.md_5.bungee.api.ChatColor;
@@ -25,7 +25,7 @@ public class TranslatorSettingsCharacterLimitConversation extends NumericPrompt 
 	@Override
 	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 		return CommonDefinitions.genericConfigConversation(input.intValue() > 0, context, "wwcConfigConversationCharacterLimitSuccess", 
-				"Translator.messageCharLimit", input.intValue(), ConfigurationTranslatorSettingsGUI.translatorSettings);
+				"Translator.messageCharLimit", input.intValue(), TranslatorSettingsGUI.translatorSettings);
 	}
 
 }

@@ -29,20 +29,20 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
-public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider {
+public class EachTranslatorSettingsGUI implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
 	private String translatorName = "Invalid";
 
-	public ConfigurationEachTranslatorSettingsGUI(String translatorName) {
+	public EachTranslatorSettingsGUI(String translatorName) {
 		this.translatorName = translatorName;
 	}
 
 	public static SmartInventory getCurrentTranslatorSettings(String translatorName) {
 		return SmartInventory.builder().id("currentTranslatorSettings")
-				.provider(new ConfigurationEachTranslatorSettingsGUI(translatorName))
-				.parent(ConfigurationTranslatorSettingsGUI.translatorSettings).size(3, 9)
+				.provider(new EachTranslatorSettingsGUI(translatorName))
+				.parent(TranslatorSettingsGUI.translatorSettings).size(3, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
 				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIEachTranslatorSettings", new String[] {translatorName}))
 				.build();
@@ -158,7 +158,7 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 
 			/* Bottom Right Option: Previous Page */
 			contents.set(2, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"),
-					e -> ConfigurationTranslatorSettingsGUI.translatorSettings.open(player)));
+					e -> TranslatorSettingsGUI.translatorSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */
 			contents.set(2, 4, ClickableItem.of(WWCInventoryManager.getSaveMainConfigButton(), e -> {
@@ -240,7 +240,7 @@ public class ConfigurationEachTranslatorSettingsGUI implements InventoryProvider
 									@Override
 									public void run() {
 										if (!check) {
-											ConfigurationEachTranslatorSettingsGUI
+											EachTranslatorSettingsGUI
 													.getCurrentTranslatorSettings(translatorName).open(player);
 											main.addPlayerUsingConfigurationGUI(player);
 											this.cancel();

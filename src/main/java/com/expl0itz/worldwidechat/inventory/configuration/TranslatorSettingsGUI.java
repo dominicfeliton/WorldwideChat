@@ -20,12 +20,12 @@ import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 
-public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
+public class TranslatorSettingsGUI implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
 	public static final SmartInventory translatorSettings = SmartInventory.builder().id("translatorSettingsMenu")
-			.provider(new ConfigurationTranslatorSettingsGUI()).size(3, 9)
+			.provider(new TranslatorSettingsGUI()).size(3, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUITranslatorSettings"))
 			.build();
@@ -100,7 +100,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 			/* Bottom Right Option: Previous Page */
 			contents.set(2, 2,
 					ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), 
-							e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
+							e -> ChatSettingsGUI.chatSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */
 			ItemStack quitButton = XMaterial.BARRIER.parseItem();
@@ -137,7 +137,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 				+ CommonDefinitions.getMessage("wwcConfigGUIWatsonButton"));
 		translatorButton.setItemMeta(translatorButtonMeta);
 		contents.set(1, 1, ClickableItem.of(translatorButton, e -> {
-			ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson").open(player);
+			EachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson").open(player);
 		}));
 	}
 
@@ -154,7 +154,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 				+ CommonDefinitions.getMessage("wwcConfigGUIGoogleTranslateButton"));
 		translatorButton.setItemMeta(translatorButtonMeta);
 		contents.set(1, 2, ClickableItem.of(translatorButton, e -> {
-			ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Google Translate").open(player);
+			EachTranslatorSettingsGUI.getCurrentTranslatorSettings("Google Translate").open(player);
 		}));
 	}
 
@@ -171,7 +171,7 @@ public class ConfigurationTranslatorSettingsGUI implements InventoryProvider {
 				+ CommonDefinitions.getMessage("wwcConfigGUIAmazonTranslateButton"));
 		translatorButton.setItemMeta(translatorButtonMeta);
 		contents.set(1, 3, ClickableItem.of(translatorButton, e -> {
-			ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Amazon Translate").open(player);
+			EachTranslatorSettingsGUI.getCurrentTranslatorSettings("Amazon Translate").open(player);
 		}));
 	}
 

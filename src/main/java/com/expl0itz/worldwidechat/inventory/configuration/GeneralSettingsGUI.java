@@ -20,12 +20,12 @@ import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 
-public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
+public class GeneralSettingsGUI implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
 	public static final SmartInventory generalSettings = SmartInventory.builder().id("generalSettingsMenu")
-			.provider(new ConfigurationGeneralSettingsGUI()).size(3, 9)
+			.provider(new GeneralSettingsGUI()).size(3, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIGeneralSettings"))
 			.build();
@@ -102,7 +102,7 @@ public class ConfigurationGeneralSettingsGUI implements InventoryProvider {
 			/* Bottom Right Option: Next Page */
 			contents.set(2, 6,
 					ClickableItem.of(WWCInventoryManager.getCommonButton("Next"), 
-							e -> ConfigurationChatSettingsGUI.chatSettings.open(player)));
+							e -> ChatSettingsGUI.chatSettings.open(player)));
 			
 			/* Last Option: Page Number */
 			contents.set(2, 8, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {"1"}), e -> {}));

@@ -131,6 +131,18 @@
             <artifactId>XSeries</artifactId>
             <version>8.6.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>5.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.28</version>
+        </dependency>
+
     </dependencies>
 
   <repositories>
@@ -234,6 +246,8 @@
                             <include>fr.minuskube.inv:smart-invs</include>
                             <include>org.apache.maven:maven-artifact</include>
                             <include>com.github.cryptomorin:XSeries</include>
+                            <include>com.zaxxer:HikariCP</include>
+                            <include>mysql:*</include>
                         </includes>
                     </artifactSet>
                     <filters>
@@ -257,7 +271,6 @@
                                 <exclude>com/cryptomorin/xseries/XPotion*</exclude>
                                 <exclude>com/cryptomorin/xseries/XSound*</exclude>
                                 <exclude>com/cryptomorin/xseries/Skull*</exclude>
-                                
                             </excludes>
                         </filter>
                         <filter>
@@ -268,6 +281,12 @@
                         </filter>
                         <filter>
                             <artifact>commons*</artifact>
+                            <includes>
+                                <include>**</include>
+                            </includes>
+                        </filter>
+                        <filter>
+                            <artifact>mysql*</artifact>
                             <includes>
                                 <include>**</include>
                             </includes>
@@ -350,6 +369,14 @@
                         <relocation>
                             <pattern>com.cryptomorin.xseries</pattern>
                             <shadedPattern>com.expl0itz.worldwidechat.libs.com.cryptomorin.xseries</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.zaxxer</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.zaxxer</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.mysql</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.mysql</shadedPattern>
                         </relocation>
                     </relocations>
               </configuration>

@@ -21,19 +21,19 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
-public class ConfigurationMessagesOverrideModifyGUI implements InventoryProvider {
+public class MessagesOverrideModifyGUI implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	
 	private String currentOverrideName = "";
 	
-	public ConfigurationMessagesOverrideModifyGUI(String currentOverrideName) {
+	public MessagesOverrideModifyGUI(String currentOverrideName) {
 		this.currentOverrideName = currentOverrideName;
 	}
 	
 	public static SmartInventory getModifyCurrentOverride(String currentOverrideName) {
 		return SmartInventory.builder().id("overrideModifyMenu")
-				.provider(new ConfigurationMessagesOverrideModifyGUI(currentOverrideName)).size(3, 9)
+				.provider(new MessagesOverrideModifyGUI(currentOverrideName)).size(3, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
 				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatMessagesModifyOverride"))
 				.build();
@@ -82,7 +82,7 @@ public class ConfigurationMessagesOverrideModifyGUI implements InventoryProvider
 						new BukkitRunnable() {
 							@Override
 							public void run() {
-								ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
+								MessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
 							}
 						}.runTask(main);
 					}
@@ -92,7 +92,7 @@ public class ConfigurationMessagesOverrideModifyGUI implements InventoryProvider
 			
 			/* Left Option: Previous Page */
 			contents.set(1, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
-				ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
+				MessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
 			}));
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);

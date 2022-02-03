@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -28,7 +29,7 @@ import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.Metrics;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
-import com.expl0itz.worldwidechat.util.SQLManager;
+import com.expl0itz.worldwidechat.util.SQLUtils;
 
 public class ConfigurationHandler {
 
@@ -227,14 +228,14 @@ public class ConfigurationHandler {
 	public void loadStorageSettings() {
 		if (mainConfig.getBoolean("Storage.useSQL")) {
 			try {
-				SQLManager.connect(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"), 
+				SQLUtils.connect(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"), 
 						mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"), 
 						(List<String>) mainConfig.getList("Storage.sqlAdditionalArguments"), mainConfig.getBoolean("Storage.sqlUseSSL"));
 				main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigSQLSuccess"));
 			} catch (SQLException e) {
 				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigSQLFail"));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
-				SQLManager.disconnect(); // Just in case
+				SQLUtils.disconnect(); // Just in case
 				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigYAMLFallback"));
 			}
 		} else {
@@ -431,16 +432,18 @@ public class ConfigurationHandler {
 			/* Sync to SQL database, if it exists */
 			// Our Generic Table Layout: 
 			// | Creation Date | Object Properties |  
-			if (SQLManager.isConnected()) {
+			if (SQLUtils.isConnected()) {
 				try {
+					Connection sqlConnection = SQLUtils.getConnection();
+					
 					/* Create tables if they do not exist already */
-					PreparedStatement initActiveTranslators = SQLManager.getConnection().prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
+					PreparedStatement initActiveTranslators = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
 							+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),inLangCode VARCHAR(12),outLangCode VARCHAR(12),rateLimit VARCHAR(256),"
 							+ "rateLimitPreviousTime VARCHAR(256),translatingChatOutgoing VARCHAR(12), translatingChatIncoming VARCHAR(12),"
 							+ "translatingBook VARCHAR(12),translatingSign VARCHAR(12),translatingItem VARCHAR(12),translatingEntity VARCHAR(12),PRIMARY KEY (playerUUID))");
 					initActiveTranslators.executeUpdate();
 					initActiveTranslators.close();
-					PreparedStatement initPlayerRecords = SQLManager.getConnection().prepareStatement("CREATE TABLE IF NOT EXISTS playerRecords "
+					PreparedStatement initPlayerRecords = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS playerRecords "
 							+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),attemptedTranslations VARCHAR(256),successfulTranslations VARCHAR(256),"
 							+ "lastTranslationTime VARCHAR(256),PRIMARY KEY (playerUUID))");
 					initPlayerRecords.executeUpdate();
@@ -450,7 +453,7 @@ public class ConfigurationHandler {
 						CommonDefinitions.sendDebugMessage("(SQL) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
 					    if (!entry.getValue().getHasBeenSaved()) {
 					    	try {
-					    		PreparedStatement newActiveTranslator = SQLManager.getConnection().prepareStatement("REPLACE activeTranslators"
+					    		PreparedStatement newActiveTranslator = sqlConnection.prepareStatement("REPLACE activeTranslators"
 						    			+ " (creationDate,playerUUID,inLangCode,outLangCode,rateLimit,rateLimitPreviousTime,translatingChatOutgoing,translatingChatIncoming,translatingBook,translatingSign,translatingItem,translatingEntity)" 
 						    			+ " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
 						    	newActiveTranslator.setString(1, Instant.now().toString());
@@ -476,11 +479,11 @@ public class ConfigurationHandler {
 					    }
 					});
 					/* Delete any old ActiveTranslators */
-					ResultSet rs = SQLManager.getConnection().createStatement().executeQuery("SELECT * FROM activeTranslators");
+					ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM activeTranslators");
 					while (rs.next()) {
 						if (main.getActiveTranslator(rs.getString("playerUUID")).getUUID().equals("")) {
 							String uuid = rs.getString("playerUUID");
-							PreparedStatement deleteOldItem = SQLManager.getConnection().prepareStatement("DELETE FROM activeTranslators WHERE playerUUID = ?");
+							PreparedStatement deleteOldItem = sqlConnection.prepareStatement("DELETE FROM activeTranslators WHERE playerUUID = ?");
 							deleteOldItem.setString(1, uuid);
 							deleteOldItem.executeUpdate();
 							deleteOldItem.close();
@@ -493,7 +496,7 @@ public class ConfigurationHandler {
                     	CommonDefinitions.sendDebugMessage("(SQL) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
                         if (!entry.getValue().getHasBeenSaved()) {
                         	try {
-                        		PreparedStatement newPlayerRecord = SQLManager.getConnection().prepareStatement("REPLACE playerRecords"
+                        		PreparedStatement newPlayerRecord = sqlConnection.prepareStatement("REPLACE playerRecords"
                         				+ " (creationDate,playerUUID,attemptedTranslations,successfulTranslations,lastTranslationTime) VALUES (?,?,?,?,?)");
                         		newPlayerRecord.setString(1, Instant.now().toString());
                         		newPlayerRecord.setString(2, entry.getValue().getUUID());

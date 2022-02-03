@@ -15,10 +15,10 @@ import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 
-public class ConfigurationChatSettingsGUI implements InventoryProvider {
+public class ChatSettingsGUI implements InventoryProvider {
 
 	public static final SmartInventory chatSettings = SmartInventory.builder().id("chatSettingsMenu")
-			.provider(new ConfigurationChatSettingsGUI()).size(3, 9)
+			.provider(new ChatSettingsGUI()).size(3, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatSettings"))
 			.build();
@@ -51,12 +51,12 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 			messagesOverrideChatMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage("wwcConfigGUIMessagesOverrideChatButton"));
 			messagesOverrideChatButton.setItemMeta(messagesOverrideChatMeta);
 			contents.set(1, 5, ClickableItem.of(messagesOverrideChatButton, e -> {
-				ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
+				MessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
 			}));
 			
 			/* Bottom Right Option: Previous Page */
 			contents.set(2, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"),
-					e -> ConfigurationGeneralSettingsGUI.generalSettings.open(player)));
+					e -> GeneralSettingsGUI.generalSettings.open(player)));
 
 			/* Bottom Middle Option: Quit */
 			contents.set(2, 4, ClickableItem.of(WWCInventoryManager.getSaveMainConfigButton(), e -> {
@@ -65,7 +65,7 @@ public class ConfigurationChatSettingsGUI implements InventoryProvider {
 
 			/* Bottom Right Option: Next Page */
 			contents.set(2, 6, ClickableItem.of(WWCInventoryManager.getCommonButton("Next"),
-					e -> ConfigurationTranslatorSettingsGUI.translatorSettings.open(player)));
+					e -> TranslatorSettingsGUI.translatorSettings.open(player)));
 			
 			/* Last Option: Page Number */
 			contents.set(2, 8, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {"2"}), e -> {}));

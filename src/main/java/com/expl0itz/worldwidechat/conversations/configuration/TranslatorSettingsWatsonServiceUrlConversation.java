@@ -6,7 +6,7 @@ import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationEachTranslatorSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.EachTranslatorSettingsGUI;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import net.md_5.bungee.api.ChatColor;
@@ -25,7 +25,7 @@ public class TranslatorSettingsWatsonServiceUrlConversation extends StringPrompt
 	@Override
 	public Prompt acceptInput(ConversationContext context, String input) {
 		return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationWatsonURLSuccess", 
-				new String[] {"Translator.watsonURL", "Translator.useWatsonTranslate"}, new Object[] {input, false}, ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson"));
+				new String[] {"Translator.watsonURL", "Translator.useWatsonTranslate"}, new Object[] {input, false}, EachTranslatorSettingsGUI.getCurrentTranslatorSettings("Watson"));
 	}
 
 }
