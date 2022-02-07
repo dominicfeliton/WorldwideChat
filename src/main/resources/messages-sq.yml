@@ -195,11 +195,6 @@ Messages:
     në tastierë.
   wwcInventoryError: Gabim u zbulua me GUI të përdoruesit %i. Ju lutemi, raportoni
     këtë problem te zhvilluesi.
-  wwcConfigConversationTranslatorFail: Dështoi në mundësuar %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Përdoruesi %i aktivizuar me sukses
-    %o.
-  wwcConfigConversationTranslatorSuccess: U aktivizua me sukses %i.
-  wwcConfigConversationConsoleTranslatorFail: Përdoruesi %i dështoi të mundësuar %o.
   wwcSignTranslationFail: Nuk mund të përktheni një ose më shumë rreshta në shenjën
     tuaj të synuar.
   wwcBookTranslationFail: Nuk mund të përkthehet një ose më shumë faqe në librin tuaj
@@ -224,7 +219,6 @@ Messages:
   wwcInvalidTranslator: Cilësimet e pavlefshme të përkthyesit Ju lutemi rregulloni
     këtë në config.yml ose me /wwcc për të përdorur këtë shtojcë.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurimi'
-  wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat nuk e falë përdorimin e /reload. Ju lutemi
     vazhdoni me kujdes.
@@ -355,3 +349,55 @@ Messages:
   wwcConfigSQLFail: Dështoi të lidhet me SQL.
   wwcConfigSQLSuccess: Lidhur me sukses me SQL!
   wwcConfigYAMLFallback: Rënia përsëri në YAML...
+  wwcConfigGUIToggleSQLButton: Toggle SQL
+  wwcConfigConversationToggleSQLSuccess: SQL toggled me sukses. Rifresko që ndryshimi
+    të hyjë në fuqi.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Me sukses toggled Google Translate.
+    Rifresko që ndryshimi të hyjë në fuqi.
+  wwcConfigYAMLDefault: Defaulted për YAML për ruajtjen e të dhënave.
+  wwcConfigGUISQLMenuButton: Ndrysho cilësimet SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Sukses toggled Watson Translate.
+    Rifresko që ndryshimi të hyjë në fuqi.
+  wwcConfigGUISQLSettings: Konfigurimi SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Përkthejeni
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Përkthejeni
+  wwcConfigGUIStorageSettings: Konfigurimi i ruajtjes
+  wwcConfigConversationAmazonTranslateToggleSuccess: Sukses toggled Amazon Translate.
+    Rifresko që ndryshimi të hyjë në fuqi.
+  wwcConfigGUISQLPortButton: Ndrysho Portin SQL
+  wwcConfigGUISQLOptionalArgsButton: Ndrysho argumentet SQL Opsionale
+  wwcConfigConversationToggleSQLSSLSuccess: SSL për SQL toggled sukses.
+  wwcConfigConversationSQLPortInput: Porti aktual është %i. Shkruani ndonjë gjë tjetër
+    përveç 0 për të vendosur një port të ri, ose shkruani 0 për t'u kthyer mbrapa.
+  wwcConfigGUISQLPasswordButton: Ndryshoni fjalëkalimin SQL
+  wwcConfigConversationSQLHostnameSuccess: Me sukses ndryshoi emrin e hostit SQL.
+  wwcConfigConversationSQLHostnameInput: Emri aktual i hostit është %i. Shkruani ndonjë
+    gjë tjetër përveç 0 për të vendosur një hostname të ri, ose shkruani 0 për t'u
+    kthyer mbrapa.
+  wwcConfigGUISQLHostnameButton: Ndrysho SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Ndryshuar me sukses argumentet opsionale
+    SQL.
+  wwcConfigConversationSQLPasswordSuccess: Ndryshuar me sukses fjalëkalimin SQL.
+  wwcConfigConversationSQLPasswordInput: Fjalëkalimi aktual është %i. Shkruani ndonjë
+    gjë tjetër përveç 0 për të vendosur një fjalëkalim të ri, ose shkruani 0 për t'u
+    kthyer mbrapa.
+  wwcConfigGUIToggleSQLSSLButton: Toggle SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Ndryshuar me sukses emrin e përdoruesit
+    SQL.
+  wwcConfigConversationSQLUsernameInput: Emri i përdoruesit aktual është %i. Shkruani
+    ndonjë gjë tjetër përveç 0 për të vendosur një emër përdoruesi të ri, ose shkruani
+    0 për t'u kthyer mbrapa.
+  wwcConfigConversationSQLPortSuccess: Ndryshuar me sukses portin SQL.
+  wwcConfigGUISQLUsernameButton: Ndryshoni emrin e përdoruesit SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Argumentet opsionale u pastruan me
+    sukses.
+  wwcConfigConversationSQLOptionalArgsInput: 'Argumentet aktuale fakultative SQL janë:
+    %i. shkruani argumente të ndara nga një presje (key=value, key2=value2), ose shkruani
+    qartë për të fshirë args aktuale, ose shkruani 0 për t''u kthyer mbrapa.'
+  wwcConfigConversationSQLDatabaseNameInput: Emri aktual i bazës së të dhënave është
+    %i. Shkruani ndonjë gjë tjetër përveç 0 për të vendosur një emër të ri të bazës
+    së të dhënave, ose shkruani 0 për t'u kthyer mbrapa.
+  wwcConfigGUISQLDatabaseNameButton: Ndryshoni bazën e të dhënave SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Ndryshuar me sukses emrin e bazës së
+    të dhënave SQL.

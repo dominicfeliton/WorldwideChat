@@ -187,10 +187,6 @@ Messages:
   wwcInventoryErrorPlayer: Erro detectado com sua GUI. Um log foi enviado para o console.
   wwcInventoryError: Erro detectado com a GUI do usuário %i. Informe esse problema
     ao desenvolvedor.
-  wwcConfigConversationTranslatorFail: Falha ao ativar %i.
-  wwcConfigConversationConsoleTranslatorSuccess: O usuário %i habilitou %o com êxito.
-  wwcConfigConversationTranslatorSuccess: Ativado com êxito %i.
-  wwcConfigConversationConsoleTranslatorFail: O usuário %i falhou ao ativar %o.
   wwcSignTranslationFail: Não é possível traduzir uma ou mais linhas no sinal de destino.
   wwcBookTranslationFail: Não é possível traduzir uma ou mais páginas no seu livro
     de destino.
@@ -214,7 +210,6 @@ Messages:
   wwcInvalidTranslator: Configurações inválidas do tradutor. Corrija isso em seu config.yml
     ou com /wwcc para usar este plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Configuração'
-  wwcConfigGUIToggleButton: Alterno %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: O WorldwideChat não tolera o uso de /reload. Por favor,
     prossiga com cautela.
@@ -346,3 +341,51 @@ Messages:
   wwcConfigSQLFail: Falha ao conectar ao SQL.
   wwcConfigSQLSuccess: Conectado com sucesso ao SQL!
   wwcConfigYAMLFallback: Voltando ao YAML...
+  wwcConfigGUIToggleSQLButton: Alternar SQL
+  wwcConfigConversationToggleSQLSuccess: O SQL foi alternado com sucesso. Recarregue
+    para que a alteração entre em vigor.
+  wwcConfigConversationGoogleTranslateToggleSuccess: O Google Translate foi alternado
+    com sucesso. Recarregue para que a alteração entre em vigor.
+  wwcConfigYAMLDefault: Padrão para YAML para armazenamento de dados.
+  wwcConfigGUISQLMenuButton: Alterar configurações de SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: O Watson Translate foi alternado
+    com sucesso. Recarregue para que a alteração entre em vigor.
+  wwcConfigGUISQLSettings: Configuração do SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Alternar Google Tradutor
+  wwcConfigGUIToggleWatsonTranslateButton: Alternar Watson Translate
+  wwcConfigGUIToggleAmazonTranslateButton: Alternar Amazon Translate
+  wwcConfigGUIStorageSettings: Configuração de armazenamento
+  wwcConfigConversationAmazonTranslateToggleSuccess: Alternar com sucesso o Amazon
+    Translate. Recarregue para que a alteração entre em vigor.
+  wwcConfigGUISQLPortButton: Alterar porta SQL
+  wwcConfigGUISQLOptionalArgsButton: Alterar argumentos opcionais do SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL para SQL alternado com sucesso.
+  wwcConfigConversationSQLPortInput: A porta atual é %i. Digite qualquer coisa diferente
+    de 0 para definir uma nova porta ou digite 0 para voltar.
+  wwcConfigGUISQLPasswordButton: Alterar senha do SQL
+  wwcConfigConversationSQLHostnameSuccess: O nome do host SQL foi alterado com sucesso.
+  wwcConfigConversationSQLHostnameInput: O nome do host atual é %i. Digite qualquer
+    coisa diferente de 0 para definir um novo nome de host ou digite 0 para voltar.
+  wwcConfigGUISQLHostnameButton: Alterar nome do host SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Os argumentos SQL opcionais foram alterados
+    com sucesso.
+  wwcConfigConversationSQLPasswordSuccess: A senha do SQL foi alterada com sucesso.
+  wwcConfigConversationSQLPasswordInput: A senha atual é %i. Digite qualquer coisa
+    diferente de 0 para definir uma nova senha ou digite 0 para voltar.
+  wwcConfigGUIToggleSQLSSLButton: Alternar SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: O nome de usuário SQL foi alterado com
+    sucesso.
+  wwcConfigConversationSQLUsernameInput: O nome de usuário atual é %i. Digite qualquer
+    coisa diferente de 0 para definir um novo nome de usuário ou digite 0 para voltar.
+  wwcConfigConversationSQLPortSuccess: A porta SQL foi alterada com sucesso.
+  wwcConfigGUISQLUsernameButton: Alterar nome de usuário SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Argumentos opcionais apagados com sucesso.
+  wwcConfigConversationSQLOptionalArgsInput: 'Os argumentos SQL opcionais atuais são:
+    %i. Digite os argumentos separados por uma vírgula (chave=valor, chave2=valor2)
+    ou digite clear para limpar os argumentos atuais ou digite 0 para voltar.'
+  wwcConfigConversationSQLDatabaseNameInput: O nome do banco de dados atual é %i.
+    Digite qualquer coisa diferente de 0 para definir um novo nome de banco de dados
+    ou digite 0 para voltar.
+  wwcConfigGUISQLDatabaseNameButton: Alterar banco de dados SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: O nome do banco de dados SQL alterado
+    com sucesso.

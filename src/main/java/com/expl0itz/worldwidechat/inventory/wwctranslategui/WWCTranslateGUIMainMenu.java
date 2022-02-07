@@ -58,14 +58,10 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 	public void init(Player player, InventoryContents contents) {
 		try {
 			/* Default white stained glass borders for inactive */
-			ItemStack customDefaultBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
+			WWCInventoryManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
 			if (!main.getActiveTranslator(targetPlayerUUID).getUUID().equals("")) {
-				customDefaultBorders = XMaterial.GREEN_STAINED_GLASS_PANE.parseItem();
+				WWCInventoryManager.setBorders(contents, XMaterial.GREEN_STAINED_GLASS_PANE);
 			}
-			ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
-			defaultBorderMeta.setDisplayName(" ");
-			customDefaultBorders.setItemMeta(defaultBorderMeta);
-			contents.fillBorders(ClickableItem.empty(customDefaultBorders));
 
 			/* New translation button */
 			ItemStack translationButton = XMaterial.COMPASS.parseItem();

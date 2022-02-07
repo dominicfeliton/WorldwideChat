@@ -186,10 +186,6 @@ Messages:
   wwcConfigCacheInvalid: Maint cache Cyfieithydd annilys. Defaulting i 10...
   wwcInventoryErrorPlayer: Gwall canfod gyda'ch GUI. Anfonwyd log at y consol.
   wwcInventoryError: Gwall a ganfuwyd gyda GUI o defnyddiwr %i Rhowch wybod i'r datblygwr.
-  wwcConfigConversationTranslatorFail: Methwyd galluog %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Defnyddiwr %o wedi galluo %o yn llwyddiannus.
-  wwcConfigConversationTranslatorSuccess: Llwyddo galluo %i.
-  wwcConfigConversationConsoleTranslatorFail: Methais defnyddiwr %o.
   wwcSignTranslationFail: Methu cyfieithu un neu fwy o linellau ar eich arwydd targed.
   wwcBookTranslationFail: Methu cyfieithu un neu fwy o dudalennau yn eich llyfr targed.
   wwctiOffTarget: Cyfieithu eitem wedi'i analluogi am %i.
@@ -212,7 +208,6 @@ Messages:
   wwcInvalidTranslator: Gosodiadau cyfieithydd annilys. Os gwelwch yn dda atgyweiria
     hon yn eich config.yml neu gyda/wwcc i ddefnyddio'r ategyn hwn.
   wwcConfigGUIEachTranslatorSettings: '%i Ffurfweddiad'
-  wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: Nid yw WorldwideChat yn cydoddef y defnydd o/ail-lwytho.
     Ewch ymlaen yn ofalus.
@@ -342,3 +337,49 @@ Messages:
   wwcConfigSQLFail: Wedi methu â chysylltu â SQL.
   wwcConfigSQLSuccess: Wedi'i gysylltu'n llwyddiannus â SQL!
   wwcConfigYAMLFallback: Syrthio yn ôl i YAML...
+  wwcConfigGUIToggleSQLButton: Toggle SQL
+  wwcConfigConversationToggleSQLSuccess: SQL toggled yn llwyddiannus. Ail-lwytho ar
+    gyfer y newid i ddod i rym.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Llwyddo Google Translate yn llwyddiannus.
+    Ail-lwytho ar gyfer y newid i ddod i rym.
+  wwcConfigYAMLDefault: Yn ddiofyn i YAML ar gyfer storio data.
+  wwcConfigGUISQLMenuButton: Newid Gosodiadau SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Wedi toggled Watson Translate
+    yn llwyddiannus. Ail-lwytho ar gyfer y newid i ddod i rym.
+  wwcConfigGUISQLSettings: Cyfluniad SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Cyfieithu
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Cyfieithu
+  wwcConfigGUIStorageSettings: Ffurfweddu storio
+  wwcConfigConversationAmazonTranslateToggleSuccess: Toggled Amazon Translate yn llwyddiannus.
+    Ail-lwytho ar gyfer y newid i ddod i rym.
+  wwcConfigGUISQLPortButton: Newid SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Newid Dadleuon Dewisol SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL ar gyfer SQL toggled yn llwyddiannus.
+  wwcConfigConversationSQLPortInput: Y porthladd presennol yw %i. teipiwch unrhyw
+    beth heblaw 0 i osod porthladd newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigGUISQLPasswordButton: Newid SQL Cyfrinair
+  wwcConfigConversationSQLHostnameSuccess: Wedi newid enw gwesteiwr SQL yn llwyddiannus.
+  wwcConfigConversationSQLHostnameInput: Yr enw gwesteiwr presennol yw %i Teipiwch
+    unrhyw beth heblaw 0 i osod enw gwesteiwr newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigGUISQLHostnameButton: Newid enw gwesteiwr SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Wedi newid y dadleuon SQL dewisol yn
+    llwyddiannus.
+  wwcConfigConversationSQLPasswordSuccess: Wedi newid cyfrinair SQL yn llwyddiannus.
+  wwcConfigConversationSQLPasswordInput: Y cyfrinair presennol yw %i Teipiwch unrhyw
+    beth heblaw 0 i osod cyfrinair newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigGUIToggleSQLSSLButton: Toggle SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Wedi newid enw defnyddiwr SQL yn llwyddiannus.
+  wwcConfigConversationSQLUsernameInput: Yr enw defnyddiwr presennol yw %i Teipiwch
+    unrhyw beth heblaw 0 i osod enw defnyddiwr newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigConversationSQLPortSuccess: Wedi newid y porthladd SQL yn llwyddiannus.
+  wwcConfigGUISQLUsernameButton: Newid enw defnyddiwr SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Cliriwyd dadleuon dewisol yn llwyddiannus.
+  wwcConfigConversationSQLOptionalArgsInput: 'Y dadleuon SQL dewisol cyfredol yw:
+    %i. dadleuon Teipiwch wahanu gan goma (allwedd = value, key2 = value2), neu deipiwch
+    glir i sychu''r args presennol, neu deipio 0 i fynd yn ôl.'
+  wwcConfigConversationSQLDatabaseNameInput: Enw'r gronfa ddata gyfredol yw %i Teipiwch
+    unrhyw beth heblaw 0 i osod enw cronfa ddata newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigGUISQLDatabaseNameButton: Newid Cronfa Ddata SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Wedi newid enw cronfa ddata SQL yn
+    llwyddiannus.

@@ -183,11 +183,6 @@ Messages:
     lähetetty loki.
   wwcInventoryError: 'Virhe havaittu käyttäjä %i: n käyttöliittymän yhteydessä. Ilmoita
     tästä ongelmasta kehittäjälle.'
-  wwcConfigConversationTranslatorFail: '%i: n ottaminen käytöstä epäonnistui.'
-  wwcConfigConversationConsoleTranslatorSuccess: Käyttäjä %i onnistuneesti otettiin
-    %o.
-  wwcConfigConversationTranslatorSuccess: Onnistuneesti otettu %i.
-  wwcConfigConversationConsoleTranslatorFail: Käyttäjä %i epäonnistui ota %o.
   wwcSignTranslationFail: Yhtä tai useampaa riviä ei voi kääntää kohdemerkissä.
   wwcBookTranslationFail: Yhtä tai useampaa sivua ei voi kääntää kohderyhmässä.
   wwctiOffTarget: Kohteen käännös käytöstä kohteella %i.
@@ -210,7 +205,6 @@ Messages:
   wwcInvalidTranslator: Kääntäjän asetukset eivät kelpaa. Korjaa tämä config.yml tai
     /wwcc käyttää tätä plugin.
   wwcConfigGUIEachTranslatorSettings: '%i määritykset'
-  wwcConfigGUIToggleButton: Vaihda %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ei hyväksy /uudelleenlatauksen käyttöä. Ole
     hyvä ja jatka varoen.
@@ -334,3 +328,50 @@ Messages:
   wwcConfigSQLFail: 'Yhteyden muodostaminen SQL: ään epäonnistui.'
   wwcConfigSQLSuccess: 'Yhdistetty onnistuneesti SQL: ään!'
   wwcConfigYAMLFallback: 'Putoaminen takaisin YAML: ään...'
+  wwcConfigGUIToggleSQLButton: Vaihda SQL
+  wwcConfigConversationToggleSQLSuccess: SQL vaihtoi onnistuneesti. Lataa uudelleen,
+    jotta muutos tulee voimaan.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Onnistuneesti vaihdettu Google
+    Translate. Lataa uudelleen, jotta muutos tulee voimaan.
+  wwcConfigYAMLDefault: 'Oletettu YAML: lle tietojen tallennusta varten.'
+  wwcConfigGUISQLMenuButton: Muuta SQL-asetuksia
+  wwcConfigConversationWatsonTranslateToggleSuccess: Onnistuneesti vaihdettu Watson
+    Translate. Lataa uudelleen, jotta muutos tulee voimaan.
+  wwcConfigGUISQLSettings: SQL-kokoonpano
+  wwcConfigGUIToggleGoogleTranslateButton: Vaihda Google-kääntäjä
+  wwcConfigGUIToggleWatsonTranslateButton: Vaihda Watson Käännä
+  wwcConfigGUIToggleAmazonTranslateButton: Vaihda Amazon Käännä
+  wwcConfigGUIStorageSettings: Tallennus kokoonpano
+  wwcConfigConversationAmazonTranslateToggleSuccess: Onnistuneesti vaihdettu Amazon
+    Translate. Lataa uudelleen, jotta muutos tulee voimaan.
+  wwcConfigGUISQLPortButton: Muuta SQL-porttia
+  wwcConfigGUISQLOptionalArgsButton: Muuta SQL valinnaisia argumentteja
+  wwcConfigConversationToggleSQLSSLSuccess: 'SSL SQL: lle vaihtoi onnistuneesti.'
+  wwcConfigConversationSQLPortInput: Nykyinen portti on %i. Kirjoita jokin muu kuin
+    0 asettaaksesi uuden portin tai kirjoita 0 palataksesi takaisin.
+  wwcConfigGUISQLPasswordButton: Vaihda SQL-salasana
+  wwcConfigConversationSQLHostnameSuccess: Onnistuneesti muuttanut SQL-isäntänimeä.
+  wwcConfigConversationSQLHostnameInput: Nykyinen isäntänimi on %i. Kirjoita jokin
+    muu kuin 0 asettaaksesi uuden isäntänimen tai kirjoita 0 palataksesi takaisin.
+  wwcConfigGUISQLHostnameButton: Vaihda SQL-isäntänimi
+  wwcConfigConversationSQLOptionalArgsSuccess: Onnistuneesti muuttanut valinnaisia
+    SQL-argumentteja.
+  wwcConfigConversationSQLPasswordSuccess: Vaihtoi SQL-salasanan onnistuneesti.
+  wwcConfigConversationSQLPasswordInput: Nykyinen salasana on %i. Kirjoita jokin muu
+    kuin 0 asettaaksesi uuden salasanan tai kirjoita 0 palataksesi takaisin.
+  wwcConfigGUIToggleSQLSSLButton: Vaihda SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Vaihtoi SQL-käyttäjänimen onnistuneesti.
+  wwcConfigConversationSQLUsernameInput: Nykyinen käyttäjänimi on %i. Kirjoita jokin
+    muu kuin 0 asettaaksesi uuden käyttäjänimen tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationSQLPortSuccess: Onnistuneesti muuttanut SQL-porttia.
+  wwcConfigGUISQLUsernameButton: Vaihda SQL-käyttäjänimi
+  wwcConfigConversationSQLOptionalArgsCleared: Valinnaiset argumentit selvitetty onnistuneesti.
+  wwcConfigConversationSQLOptionalArgsInput: 'Nykyiset valinnaiset SQL-argumentit
+    ovat: %i. Kirjoita argumentteja, jotka on erotettu pilkulla (key=arvo, key2=value2)
+    tai kirjoita tyhjennä nykyisten argien pyyhkimiseksi tai kirjoita 0 palataksesi
+    takaisin.'
+  wwcConfigConversationSQLDatabaseNameInput: Nykyinen tietokannan nimi on %i. Kirjoita
+    jokin muu kuin 0 asettaaksesi uuden tietokannan nimen tai kirjoita 0 palataksesi
+    takaisin.
+  wwcConfigGUISQLDatabaseNameButton: Muuta SQL-tietokantaa
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL-tietokannan nimi on muutettu onnistuneesti.

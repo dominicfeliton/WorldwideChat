@@ -138,8 +138,6 @@ Messages:
   wwctrlRateLimitSetTarget: Socraigh an teorainn ráta de %i go %o soicind.
   wwcConfigGUIMessagesOverrideCustomLabel: Teachtaireacht Nua
   wwcGUITempItem: Taispeáin Mír
-  wwcConfigConversationConsoleTranslatorSuccess: Úsáideoir %i cumasaithe go rathúil
-    %o.
   wwcBookTranslationFail: Ní féidir leathanaigh amháin nó níos mó a aistriú i do spriocleabhar.
   wwcConfigConversationGoogleTranslateAPIKeyInput: Is é an eochair API reatha %i.
     Cuir isteach eochair API do Google Translate, nó cineál 0 chun dul ar ais.
@@ -149,7 +147,6 @@ Messages:
     dul ar ais.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API leagtha
     eochair go rathúil.
-  wwcConfigConversationTranslatorSuccess: Chumasú %i go rathúil.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Athraigh Amazon Eochair Rúnda
   wwcInvalidTranslator: Suíomhanna aistritheora neamhbhailí. Le do thoil a shocrú
     seo i do config.yml nó le/wwcc a bhaint as an mbreiseán seo.
@@ -163,7 +160,6 @@ Messages:
     a %o.
   wwcTranslatorError: Fadhb a tharla agus tú ag iarraidh d'aistriúchán. Bain triail
     eile as.
-  wwcConfigConversationTranslatorFail: Theip ar a chumasú %i.
   wwcUserDataReloaded: Luchtaithe na sonraí úsáideora a shábháil.
   wwcteOffSender: Aistriúchán Aonán faoi mhíchumas.
   wwcsLastTranslationTime: 'Am Aistriúcháin Last (Rathúil): %i'
@@ -191,7 +187,6 @@ Messages:
   wwcsNotATranslator: Níl aon taifid ar fáil go fóill le h %i.
   wwcConfigGUIbStatsButton: bStats Scoránaigh
   wwctGUINewTranslationSource: Roghnaigh Teanga Foinse
-  wwcConfigConversationConsoleTranslatorFail: Theip ar úsáide %i a chumasú %o.
   wwctGUIMainMenuPlayer: Aistriúchán Menu de %i
   wwctGUIBookButton: Aistriúchán Leabhar Scoránaigh
   wwcConfigGUIDebugModeButton: Mód Debug Scoránaigh
@@ -323,7 +318,6 @@ Messages:
     Gníomhach ar Logáil isteach
   wwcConfigSyncDelayInvalid: Moill info sonraí úsáideora neamhbhailí atá leagtha síos
     i config.yml. Réamhshocraithe go 7200 soicind...
-  wwcConfigGUIToggleButton: Scoránaigh %i
   wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon eochair rochtana leagtha
     go rathúil.
   wwcConfigBadUpdateDelay: Moill updater neamhbhailí atá leagtha síos i config.yml.
@@ -362,3 +356,53 @@ Messages:
   wwcConfigSQLFail: Theip ar ceangal le SQL.
   wwcConfigSQLSuccess: Go rathúil ceangailte le SQL!
   wwcConfigYAMLFallback: Ag titim ar ais go YAML...
+  wwcConfigGUIToggleSQLButton: SQL Scoránaigh
+  wwcConfigConversationToggleSQLSuccess: SQL toggled go rathúil. Athlódáil don athrú
+    chun éifeacht a ghlacadh.
+  wwcConfigConversationGoogleTranslateToggleSuccess: D'éirigh le Google Translate
+    a toggled. Athlódáil don athrú chun éifeacht a ghlacadh.
+  wwcConfigYAMLDefault: Mainníodh chuig YAML le haghaidh stórála sonraí.
+  wwcConfigGUISQLMenuButton: Athraigh Socruithe SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Go rathúil toggled Watson Translate.
+    Athlódáil don athrú chun éifeacht a ghlacadh.
+  wwcConfigGUISQLSettings: Cumraíocht SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Scoránaigh Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Aistríonn Scoránaigh Watson
+  wwcConfigGUIToggleAmazonTranslateButton: Aistríonn Scoránaigh Amazon
+  wwcConfigGUIStorageSettings: Cumraíocht stóráil
+  wwcConfigConversationAmazonTranslateToggleSuccess: D'éirigh le toggled Amazon Translate.
+    Athlódáil don athrú chun éifeacht a ghlacadh.
+  wwcConfigGUISQLPortButton: Athraigh SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Athrú QL Roghnach Argóintí
+  wwcConfigConversationToggleSQLSSLSuccess: SSL do SQL toggled go rathúil.
+  wwcConfigConversationSQLPortInput: Is é an calafort atá ann faoi láthair %i Cineál
+    rud ar bith eile seachas 0 a shocrú le port nua, nó cineál 0 chun dul ar ais.
+  wwcConfigGUISQLPasswordButton: Athraigh SQL Pasfhocal
+  wwcConfigConversationSQLHostnameSuccess: D'éirigh leis an óstainm SQL a athrú.
+  wwcConfigConversationSQLHostnameInput: Is é an óstainm atá ann faoi láthair %i Cineál
+    rud ar bith eile seachas 0 a shocrú óstainm nua, nó cineál 0 chun dul ar ais.
+  wwcConfigGUISQLHostnameButton: Athraigh SQL Óstainm
+  wwcConfigConversationSQLOptionalArgsSuccess: D'éirigh leis na hargóintí SQL roghnach
+    a athrú.
+  wwcConfigConversationSQLPasswordSuccess: D'éirigh leis an focal faire SQL a athrú.
+  wwcConfigConversationSQLPasswordInput: Is é an focal faire atá ann faoi láthair
+    %i Cineál rud ar bith eile seachas 0 a shocrú focal faire nua, nó cineál 0 chun
+    dul ar ais.
+  wwcConfigGUIToggleSQLSSLButton: Scoránaigh SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: D'éirigh leis an ainm úsáideora SQL a athrú.
+  wwcConfigConversationSQLUsernameInput: Is é an t-ainm úsáideora atá ann faoi láthair
+    %i Cineál rud ar bith eile seachas 0 a shocrú le ainm úsáideora nua, nó cineál
+    0 chun dul ar ais.
+  wwcConfigConversationSQLPortSuccess: D'éirigh leis an gcalafort SQL a athrú.
+  wwcConfigGUISQLUsernameButton: Athraigh SQL Ainm Úsáideora
+  wwcConfigConversationSQLOptionalArgsCleared: Argóintí Roghnach glanta go rathúil.
+  wwcConfigConversationSQLOptionalArgsInput: 'Is iad na hargóintí SQL roghnach atá
+    ann faoi láthair: %i. argóintí Cineál scartha le camóg (eochair = luach, key2
+    = value2), nó cineál soiléir a wipe an args atá ann faoi láthair, nó cineál 0
+    chun dul ar ais.'
+  wwcConfigConversationSQLDatabaseNameInput: Is é an t-ainm bunachar sonraí atá ann
+    faoi láthair %i Cineál rud ar bith eile seachas 0 a shocrú le ainm bunachar sonraí
+    nua, nó cineál 0 chun dul ar ais.
+  wwcConfigGUISQLDatabaseNameButton: Athraigh Bunachar Sonraí SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: D'athraigh sé ainm bunachar sonraí
+    SQL go rathúil.

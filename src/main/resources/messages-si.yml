@@ -186,12 +186,6 @@ Messages:
   wwcInventoryErrorPlayer: ඔබේ GUI සමඟ හඳුනාගත් දෝෂය. ලොගයක් කොන්සෝලය වෙත යවා ඇත.
   wwcInventoryError: '%i පරිශීලකයාගේ GUI සමඟ අනාවරණය වූ දෝෂය. කරුණාකර මෙම ගැටළුව සංවර්ධකයාට
     වාර්තා කරන්න.'
-  wwcConfigConversationTranslatorFail: '%i සක්‍රීය කිරීමට අසමත් විය.'
-  wwcConfigConversationConsoleTranslatorSuccess: '% මම පරිශීලක %o සාර්ථකව සක්‍රීය
-    කරමි.'
-  wwcConfigConversationTranslatorSuccess: '%i සාර්ථකව සක්‍රීය කරන්න.'
-  wwcConfigConversationConsoleTranslatorFail: '%o සක්‍රීය කිරීමට පරිශීලක % මම අසමත්
-    විය.'
   wwcSignTranslationFail: ඔබගේ ඉලක්කගත ලකුණෙහි රේඛා එකක් හෝ කිහිපයක් පරිවර්තනය කිරීමට
     නොහැකි විය.
   wwcBookTranslationFail: ඔබගේ ඉලක්කගත පොතේ පිටු එකක් හෝ කිහිපයක් පරිවර්තනය කිරීමට
@@ -216,7 +210,6 @@ Messages:
   wwcInvalidTranslator: වලංගු නොවන පරිවර්තක සැකසුම්. කරුණාකර මෙම ප්ලගිනය භාවිතා කිරීමට
     ඔබගේ config.yml හෝ /wwcc සමඟ මෙය නිවැරදි කරන්න.
   wwcConfigGUIEachTranslatorSettings: '%i වින්යාසය'
-  wwcConfigGUIToggleButton: '%i ටොගල් කරන්න'
   wwcConfigGUIWatsonButton: වොට්සන්
   wwcServerReloadWarning: වර්ල්ඩ්වයිඩ්හාට් භාවිතා කිරීම/රීලෝඩ් කිරීම සඳහා අනුකූල නොවේ.
     කරුණාකර පරෙස්සමින් ඉදිරියට යන්න.
@@ -345,3 +338,48 @@ Messages:
   wwcConfigSQLFail: SQL වෙත සම්බන්ධ වීමට අසමත් විය.
   wwcConfigSQLSuccess: SQL සමඟ සාර්ථකව සම්බන්ධ වී ඇත!
   wwcConfigYAMLFallback: YAML වෙත ආපසු වැටීම...
+  wwcConfigGUIToggleSQLButton: ටොගල් කරන්න SQL
+  wwcConfigConversationToggleSQLSuccess: SQL සාර්ථකව ටොගල කළේය. ක්රියාත්මක වන පරිදි
+    වෙනස් කිරීම සඳහා රීලෝඩ් කරන්න.
+  wwcConfigConversationGoogleTranslateToggleSuccess: ගූගල් පරිවර්තනය සාර්ථකව ටොගල.
+    ක්රියාත්මක වන පරිදි වෙනස් කිරීම සඳහා රීලෝඩ් කරන්න.
+  wwcConfigYAMLDefault: දත්ත ගබඩා කිරීම සඳහා YAML වෙත ගෙවීම පැහැර හැර ඇත.
+  wwcConfigGUISQLMenuButton: SQL සැකසුම් වෙනස් කරන්න
+  wwcConfigConversationWatsonTranslateToggleSuccess: සාර්ථකව ටොගල කළ වොට්සන් පරිවර්තනය.
+    ක්රියාත්මක වන පරිදි වෙනස් කිරීම සඳහා රීලෝඩ් කරන්න.
+  wwcConfigGUISQLSettings: SQL වින්යාසය
+  wwcConfigGUIToggleGoogleTranslateButton: ගූගල් පරිවර්තනය ටොගල් කරන්න
+  wwcConfigGUIToggleWatsonTranslateButton: ටොගල් කරන්න වොට්සන් පරිවර්තනය
+  wwcConfigGUIToggleAmazonTranslateButton: ටොගල් කරන්න ඇමේසන් පරිවර්තනය
+  wwcConfigGUIStorageSettings: ගබඩා වින්යාසය
+  wwcConfigConversationAmazonTranslateToggleSuccess: සාර්ථකව ටොගල ඇමේසන් පරිවර්තනය.
+    ක්රියාත්මක වන පරිදි වෙනස් කිරීම සඳහා රීලෝඩ් කරන්න.
+  wwcConfigGUISQLPortButton: SQL වරාය වෙනස්
+  wwcConfigGUISQLOptionalArgsButton: SQL විකල්ප තර්ක වෙනස්
+  wwcConfigConversationToggleSQLSSLSuccess: SQL සඳහා SSL සාර්ථකව ටොගල කර ඇත.
+  wwcConfigConversationSQLPortInput: වත්මන් වරාය %i වේ. නව වරායක් සැකසීමට 0 හැර වෙනත්
+    ඕනෑම දෙයක් ටයිප් කරන්න, නැතහොත් නැවත යාමට 0 ටයිප් කරන්න.
+  wwcConfigGUISQLPasswordButton: SQL මුරපදය වෙනස් කරන්න
+  wwcConfigConversationSQLHostnameSuccess: SQL සත්කාරකනාමය සාර්ථකව වෙනස් කළේය.
+  wwcConfigConversationSQLHostnameInput: වත්මන් හොස්ට්නාමය %i වේ. නව නේවාසිකාගාර නාමයක්
+    සැකසීමට 0 හැර වෙනත් කිසිවක් ටයිප් කරන්න, නැතහොත් නැවත යාමට 0 ටයිප් කරන්න.
+  wwcConfigGUISQLHostnameButton: SQL Hostname වෙනස්
+  wwcConfigConversationSQLOptionalArgsSuccess: විකල්ප SQL තර්ක සාර්ථකව වෙනස්.
+  wwcConfigConversationSQLPasswordSuccess: SQL මුරපදය සාර්ථකව වෙනස් කළේය.
+  wwcConfigConversationSQLPasswordInput: වත්මන් මුරපදය %i වේ. නව මුරපදයක් සැකසීමට
+    0 හැර වෙනත් කිසිවක් ටයිප් කරන්න, නැතහොත් නැවත යාමට 0 ටයිප් කරන්න.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL ටොගල් කරන්න
+  wwcConfigConversationSQLUsernameSuccess: SQL පරිශීලක නාමය සාර්ථකව වෙනස් කළේය.
+  wwcConfigConversationSQLUsernameInput: වත්මන් පරිශීලක නාමය %i වේ. නව පරිශීලක නාමයක්
+    සැකසීමට 0 හැර වෙනත් කිසිවක් ටයිප් කරන්න, නැතහොත් නැවත යාමට 0 ටයිප් කරන්න.
+  wwcConfigConversationSQLPortSuccess: SQL වරාය සාර්ථකව වෙනස් කළේය.
+  wwcConfigGUISQLUsernameButton: SQL පරිශීලක නාමය වෙනස්
+  wwcConfigConversationSQLOptionalArgsCleared: විකල්ප තර්ක සාර්ථකව ඉවත් කර ඇත.
+  wwcConfigConversationSQLOptionalArgsInput: 'වත්මන් විකල්ප SQL තර්ක නම්: %i. කොමාවකින්
+    වෙන් කරන ලද තර්ක ටයිප් කරන්න (යතුර = අගය, key2= value2), හෝ වත්මන් ආග පිස දැමීමට
+    පැහැදිලි ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.'
+  wwcConfigConversationSQLDatabaseNameInput: වත්මන් දත්ත සමුදා නාමය %i වේ. නව දත්ත
+    සමුදා නාමයක් සැකසීමට 0 හැර වෙනත් කිසිවක් ටයිප් කරන්න, නැතහොත් නැවත යාමට 0 ටයිප්
+    කරන්න.
+  wwcConfigGUISQLDatabaseNameButton: SQL දත්ත සමුදාය වෙනස්
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL දත්ත සමුදා නාමය සාර්ථකව වෙනස් කළේය.

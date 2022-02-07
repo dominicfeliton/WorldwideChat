@@ -178,12 +178,6 @@ Messages:
     bay konsole a.
   wwcInventoryError: Erè detekte ak entèfas nan itilizatè % mwen % Tanpri rapòte pwoblèm
     sa a nan pwomotè
-  wwcConfigConversationTranslatorFail: Echwe pou pou pèmèt % mwen.
-  wwcConfigConversationConsoleTranslatorSuccess: Itilizatè % mwen avèk siksè pèmèt
-    %o.
-  wwcConfigConversationTranslatorSuccess: Avèk siksè pèmèt % mwen.
-  wwcConfigConversationConsoleTranslatorFail: Itilizatè % mwen echwe pou pou pèmèt
-    %o.
   wwcSignTranslationFail: Kapab tradui youn oswa plis liy sou siy sib ou.
   wwcBookTranslationFail: Kapab tradui youn oswa plis paj nan liv sib ou.
   wwctiOffTarget: Tradiksyon atik andikape pou % mwen.
@@ -206,7 +200,6 @@ Messages:
   wwcInvalidTranslator: Anviwònman tradiktè envalid. Tanpri ranje sa a nan config.yml
     ou oswa ak/wwcc yo sèvi ak sa a Plugin.
   wwcConfigGUIEachTranslatorSettings: '% mwen konfigirasyon'
-  wwcConfigGUIToggleButton: baskèl % mwen
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat pa fèmen l 'a nan/Reload. Tanpri kontinye
     avèk prekosyon.
@@ -332,3 +325,48 @@ Messages:
   wwcConfigSQLFail: Echwe pou konekte avèk SQL.
   wwcConfigSQLSuccess: Avèk siksè konekte nan SQL!
   wwcConfigYAMLFallback: Tonbe tounen nan YAML...
+  wwcConfigGUIToggleSQLButton: SQL baskil
+  wwcConfigConversationToggleSQLSuccess: SQL baskile avèk siksè. Reload pou chanjman
+    an yo pran efè.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Avèk siksè baskile Google Translate.
+    Reload pou chanjman an yo pran efè.
+  wwcConfigYAMLDefault: Default YAML pou depo done.
+  wwcConfigGUISQLMenuButton: Chanje SQL Anviwònman
+  wwcConfigConversationWatsonTranslateToggleSuccess: Avèk siksè baskule Watson Translate.
+    Reload pou chanjman an yo pran efè.
+  wwcConfigGUISQLSettings: SQL konfigirasyon
+  wwcConfigGUIToggleGoogleTranslateButton: Baskile Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Baskile Watson tradui
+  wwcConfigGUIToggleAmazonTranslateButton: Amazon tradui baskil
+  wwcConfigGUIStorageSettings: Depo konte genyen
+  wwcConfigConversationAmazonTranslateToggleSuccess: Avèk siksè baskile Amazon Translate.
+    Reload pou chanjman an yo pran efè.
+  wwcConfigGUISQLPortButton: Chanje SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Chanje SQL Si ou vle agiman
+  wwcConfigConversationToggleSQLSSLSuccess: SSL pou SQL baskile avèk siksè.
+  wwcConfigConversationSQLPortInput: Pò a kounye a se % mwen. tape anyen lòt pase
+    0 yo mete yon pò nouvo, oswa kalite 0 ale tounen.
+  wwcConfigGUISQLPasswordButton: Chanje SQL Modpas
+  wwcConfigConversationSQLHostnameSuccess: Avèk siksè chanje hostname a SQL.
+  wwcConfigConversationSQLHostnameInput: Hostname aktyèl la se % mwen. tape anyen
+    lòt pase 0 yo mete yon hostname nouvo, oswa kalite 0 ale tounen.
+  wwcConfigGUISQLHostnameButton: Chanje SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Avèk siksè chanje agiman yo SQL si
+    ou vle.
+  wwcConfigConversationSQLPasswordSuccess: Avèk siksè chanje modpas la SQL.
+  wwcConfigConversationSQLPasswordInput: Modpas ki la kounye a se % mwen. tape anyen
+    lòt pase 0 yo mete yon nouvo modpas, oswa kalite 0 ale tounen.
+  wwcConfigGUIToggleSQLSSLButton: Baskile SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Avèk siksè chanje non itilizatè a SQL.
+  wwcConfigConversationSQLUsernameInput: Non itilizatè aktyèl la se % mwen. tape anyen
+    lòt pase 0 yo mete yon nouvo non itilizatè, oswa kalite 0 ale tounen.
+  wwcConfigConversationSQLPortSuccess: Avèk siksè chanje pò a SQL.
+  wwcConfigGUISQLUsernameButton: Chanje SQL Username
+  wwcConfigConversationSQLOptionalArgsCleared: Si ou vle agiman otorize avèk siksè.
+  wwcConfigConversationSQLOptionalArgsInput: 'Aktyèl si ou vle SQL agiman yo se: %
+    mwen. agiman Kalite separe pa yon vigil (kle = valè, key2 = value2), oswa tape
+    klè li siye args yo kounye a, oswa kalite 0 ale tounen.'
+  wwcConfigConversationSQLDatabaseNameInput: Non baz done aktyèl la se % mwen. tape
+    anyen lòt pase 0 yo mete yon non baz done nouvo, oswa kalite 0 ale tounen.
+  wwcConfigGUISQLDatabaseNameButton: Chanje baz done SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Avèk siksè chanje non an baz done SQL.

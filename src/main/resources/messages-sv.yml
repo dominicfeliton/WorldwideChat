@@ -187,10 +187,6 @@ Messages:
     logg har skickats till konsolen.
   wwcInventoryError: Fel som upptäcktes med användaranvändargränssnittet för användaren
     %i. Rapportera problemet till utvecklaren.
-  wwcConfigConversationTranslatorFail: Det gick inte att aktivera %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Användaren %i aktiverad %o.
-  wwcConfigConversationTranslatorSuccess: Aktiverad %i.
-  wwcConfigConversationConsoleTranslatorFail: Användaren %i kunde inte aktivera %o.
   wwcSignTranslationFail: Det gick inte att översätta en eller flera rader på måltecknet.
   wwcBookTranslationFail: Det går inte att översätta en eller flera sidor i målboken.
   wwctiOffTarget: Objektöversättning inaktiverad för %i.
@@ -213,7 +209,6 @@ Messages:
   wwcInvalidTranslator: Ogiltiga översättarinställningar. Rätta detta i din config.yml
     eller med /wwcc för att använda detta insticksprogram.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'
-  wwcConfigGUIToggleButton: Rogg %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat tolererar inte användning av /reload. Var
     snäll och fortsätt med försiktighet.
@@ -346,3 +341,50 @@ Messages:
   wwcConfigSQLFail: Det gick inte att ansluta till SQL.
   wwcConfigSQLSuccess: Ansluten till SQL!
   wwcConfigYAMLFallback: Att falla tillbaka till YAML...
+  wwcConfigGUIToggleSQLButton: Växla SQL
+  wwcConfigConversationToggleSQLSuccess: SQL växlas med lyckat resultat. Ladda om
+    för att ändringen ska träda i kraft.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Växlade Google Translate med
+    lyckat resultat. Ladda om för att ändringen ska träda i kraft.
+  wwcConfigYAMLDefault: Standardvärdet för YAML för datalagring.
+  wwcConfigGUISQLMenuButton: Ändra SQL-inställningar
+  wwcConfigConversationWatsonTranslateToggleSuccess: Lyckat växlade Watson Översätt.
+    Ladda om för att ändringen ska träda i kraft.
+  wwcConfigGUISQLSettings: SQL-konfiguration
+  wwcConfigGUIToggleGoogleTranslateButton: Växla Google Översätt
+  wwcConfigGUIToggleWatsonTranslateButton: Växla Watson översätta
+  wwcConfigGUIToggleAmazonTranslateButton: Växla Översätt Amazon
+  wwcConfigGUIStorageSettings: Konfiguration av lagring
+  wwcConfigConversationAmazonTranslateToggleSuccess: Ändrade Amazon Översätt med lyckat
+    resultat. Ladda om för att ändringen ska träda i kraft.
+  wwcConfigGUISQLPortButton: Ändra SQL-port
+  wwcConfigGUISQLOptionalArgsButton: Ändra valfria SQL-argument
+  wwcConfigConversationToggleSQLSSLSuccess: SSL för SQL växlas med lyckat resultat.
+  wwcConfigConversationSQLPortInput: Den aktuella porten är %i. Skriv något annat
+    än 0 för att ställa in en ny port, eller skriv 0 för att gå tillbaka.
+  wwcConfigGUISQLPasswordButton: Ändra SQL-lösenord
+  wwcConfigConversationSQLHostnameSuccess: Ändrade SQL-värdnamnet.
+  wwcConfigConversationSQLHostnameInput: Det nuvarande värddatornamnet är %i. Skriv
+    något annat än 0 för att ställa in ett nytt värddatornamn, eller skriv 0 för att
+    gå tillbaka.
+  wwcConfigGUISQLHostnameButton: Ändra SQL-värdnamn
+  wwcConfigConversationSQLOptionalArgsSuccess: Ändrade valfria SQL-argument.
+  wwcConfigConversationSQLPasswordSuccess: Ändrade SQL-lösenordet.
+  wwcConfigConversationSQLPasswordInput: Det aktuella lösenordet är %i. Skriv något
+    annat än 0 för att ange ett nytt lösenord, eller skriv 0 för att gå tillbaka.
+  wwcConfigGUIToggleSQLSSLButton: Växla SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Ändrade SQL-användarnamnet.
+  wwcConfigConversationSQLUsernameInput: Det nuvarande användarnamnet är %i. Skriv
+    något annat än 0 för att ställa in ett nytt användarnamn, eller skriv 0 för att
+    gå tillbaka.
+  wwcConfigConversationSQLPortSuccess: Ändrade SQL-porten.
+  wwcConfigGUISQLUsernameButton: Ändra SQL-användarnamn
+  wwcConfigConversationSQLOptionalArgsCleared: Valfria argument rensas med lyckat
+    resultat.
+  wwcConfigConversationSQLOptionalArgsInput: 'De nuvarande valfria SQL- argumenten
+    är: %i. Skriv argument åtskilda med ett komma (nyckel=värde, key2=värde2), eller
+    skriv clear för att radera nuvarande arg, eller skriv 0 för att gå tillbaka.'
+  wwcConfigConversationSQLDatabaseNameInput: Det aktuella databasnamnet är %i. Skriv
+    något annat än 0 för att ange ett nytt databasnamn, eller skriv 0 för att gå tillbaka.
+  wwcConfigGUISQLDatabaseNameButton: Ändra SQL-databas
+  wwcConfigConversationSQLDatabaseNameSuccess: Ändrade SQL-databasens namn.

@@ -190,11 +190,6 @@ Messages:
   wwcInventoryErrorPlayer: ನಿಮ್ಮ GUI ಯೊಂದಿಗೆ ದೋಷ ಪತ್ತೆಯಾಗಿದೆ. ಕನ್ಸೋಲ್ಗೆ ಲಾಗ್ ಕಳುಹಿಸಲಾಗಿದೆ.
   wwcInventoryError: '%i ಬಳಕೆದಾರನ GUI ಯೊಂದಿಗೆ ದೋಷ ಕಂಡುಬಂದಿದೆ. ದಯವಿಟ್ಟು ಈ ಸಮಸ್ಯೆಯನ್ನು
     ಡೆವಲಪರ್ಗೆ ವರದಿ ಮಾಡಿ.'
-  wwcConfigConversationTranslatorFail: '%i ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ವಿಫಲವಾಗಿದೆ.'
-  wwcConfigConversationConsoleTranslatorSuccess: ಬಳಕೆದಾರ %i ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ
-    %o.
-  wwcConfigConversationTranslatorSuccess: '%i ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸಕ್ರಿಯಗೊಳಿಸಲಾಯಿತು.'
-  wwcConfigConversationConsoleTranslatorFail: ಬಳಕೆದಾರ %i ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ವಿಫಲಗೊಂಡಿದೆ.
   wwcSignTranslationFail: ನಿಮ್ಮ ಗುರಿ ಸೈನ್ ಮೇಲೆ ಒಂದು ಅಥವಾ ಹೆಚ್ಚು ಸಾಲುಗಳನ್ನು ಭಾಷಾಂತರಿಸಲು
     ಸಾಧ್ಯವಿಲ್ಲ.
   wwcBookTranslationFail: ನಿಮ್ಮ ಗುರಿ ಪುಸ್ತಕದಲ್ಲಿ ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ಪುಟಗಳನ್ನು ಭಾಷಾಂತರಿಸಲು
@@ -219,7 +214,6 @@ Messages:
   wwcInvalidTranslator: ಅಮಾನ್ಯ ಅನುವಾದಕ ಸೆಟ್ಟಿಂಗ್ಗಳು. ಈ ಪ್ಲಗ್ಇನ್ ಅನ್ನು ಬಳಸಲು ದಯವಿಟ್ಟು
     ನಿಮ್ಮ config.yml ಅಥವಾ/wwcc ನೊಂದಿಗೆ ಇದನ್ನು ಸರಿಪಡಿಸಿ.
   wwcConfigGUIEachTranslatorSettings: '%i ಸಂರಚನೆ'
-  wwcConfigGUIToggleButton: ಟಾಗಲ್ %i
   wwcConfigGUIWatsonButton: ವ್ಯಾಟ್ಸನ್
   wwcServerReloadWarning: WorldwideChat /reloaded ಬಳಕೆಯನ್ನು ಕ್ಷಮಿಸುವುದಿಲ್ಲ. ದಯವಿಟ್ಟು
     ಎಚ್ಚರಿಕೆಯಿಂದ ಮುಂದುವರಿಯಿರಿ.
@@ -345,3 +339,49 @@ Messages:
   wwcConfigSQLFail: SQL ಗೆ ಸಂಪರ್ಕಿಸಲು ವಿಫಲವಾಗಿದೆ.
   wwcConfigSQLSuccess: SQL ಗೆ ಯಶಸ್ವಿಯಾಗಿ ಸಂಪರ್ಕ!
   wwcConfigYAMLFallback: YAML ಗೆ ಮತ್ತೆ ಬೀಳುವುದು...
+  wwcConfigGUIToggleSQLButton: SQL ಟಾಗಲ್
+  wwcConfigConversationToggleSQLSuccess: SQL ಯಶಸ್ವಿಯಾಗಿ toggled. ಬದಲಾವಣೆಗೆ ಮರುಲೋಡ್
+    ಮಾಡಿ.
+  wwcConfigConversationGoogleTranslateToggleSuccess: ಗೂಗಲ್ ಭಾಷಾಂತರಿಸಲು ಯಶಸ್ವಿಯಾಗಿ
+    toggled. ಬದಲಾವಣೆಗೆ ಮರುಲೋಡ್ ಮಾಡಿ.
+  wwcConfigYAMLDefault: ಡೇಟಾ ಶೇಖರಣೆಗಾಗಿ YAML ಗೆ ಡೀಫಾಲ್ಟ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigGUISQLMenuButton: SQL ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationWatsonTranslateToggleSuccess: ವ್ಯಾಟ್ಸನ್ ಭಾಷಾಂತರಿಸಲು ಯಶಸ್ವಿಯಾಗಿ
+    toggled. ಬದಲಾವಣೆಗೆ ಮರುಲೋಡ್ ಮಾಡಿ.
+  wwcConfigGUISQLSettings: SQL ಸಂರಚನೆ
+  wwcConfigGUIToggleGoogleTranslateButton: ಗೂಗಲ್ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwcConfigGUIToggleWatsonTranslateButton: ವ್ಯಾಟ್ಸನ್ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwcConfigGUIToggleAmazonTranslateButton: ಅಮೆಜಾನ್ ಭಾಷಾಂತರಿಸಲು ಟಾಗಲ್
+  wwcConfigGUIStorageSettings: ಶೇಖರಣಾ ಸಂರಚನೆ
+  wwcConfigConversationAmazonTranslateToggleSuccess: ಅಮೆಜಾನ್ ಭಾಷಾಂತರಿಸಲು ಯಶಸ್ವಿಯಾಗಿ
+    toggled. ಬದಲಾವಣೆಗೆ ಮರುಲೋಡ್ ಮಾಡಿ.
+  wwcConfigGUISQLPortButton: SQL ಪೋರ್ಟ್ ಬದಲಿಸಿ
+  wwcConfigGUISQLOptionalArgsButton: SQL ಐಚ್ಛಿಕ ವಾದಗಳು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationToggleSQLSSLSuccess: SQL ಫಾರ್ SSL ಯಶಸ್ವಿಯಾಗಿ toggled.
+  wwcConfigConversationSQLPortInput: ಪ್ರಸ್ತುತ ಬಂದರು %i ಆಗಿದೆ. ಹೊಸ ಪೋರ್ಟ್ ಅನ್ನು ಹೊಂದಿಸಲು
+    0 ಗಿಂತ ಬೇರೆ ಯಾವುದನ್ನೂ ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ 0 ಅನ್ನು ಹಿಂದಕ್ಕೆ ಹೋಗಲು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUISQLPasswordButton: SQL ಪಾಸ್ವರ್ಡ್ ಬದಲಾಯಿಸಿ
+  wwcConfigConversationSQLHostnameSuccess: SQL ಹೋಸ್ಟ್ಹೆಸರನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigConversationSQLHostnameInput: ಪ್ರಸ್ತುತ ಹೋಸ್ಟ್ಹೆಸರು %i ಆಗಿದೆ. ಹೊಸ ಹೋಸ್ಟ್ನೇಮ್
+    ಅನ್ನು ಹೊಂದಿಸಲು 0 ಗಿಂತ ಬೇರೆ ಯಾವುದನ್ನೂ ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಲು 0 ಅನ್ನು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUISQLHostnameButton: SQL ಹೋಸ್ಟ್ಹೆಸರು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationSQLOptionalArgsSuccess: ಐಚ್ಛಿಕ SQL ವಾದಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿಸಿತು.
+  wwcConfigConversationSQLPasswordSuccess: SQL ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigConversationSQLPasswordInput: ಪ್ರಸ್ತುತ ಪಾಸ್ವರ್ಡ್ %i ಆಗಿದೆ. ಹೊಸ ಗುಪ್ತಪದವನ್ನು
+    ಹೊಂದಿಸಲು 0 ಹೊರತುಪಡಿಸಿ ಯಾವುದನ್ನೂ ಟೈಪ್ ಮಾಡಿ, ಅಥವ ಮರಳಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL ಟಾಗಲ್
+  wwcConfigConversationSQLUsernameSuccess: SQL ಬಳಕೆದಾರಹೆಸರನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigConversationSQLUsernameInput: ಪ್ರಸ್ತುತ ಬಳಕೆದಾರಹೆಸರು %i ಆಗಿದೆ. ಹೊಸ ಬಳಕೆದಾರಹೆಸರನ್ನು
+    ಹೊಂದಿಸಲು 0 ಬಿಟ್ಟು ಬೇರೆ ಯಾವುದನ್ನೂ ಟೈಪ್ ಮಾಡಿ, ಅಥವ 0 ಅನ್ನು ಹಿಂದಕ್ಕೆ ಹೋಗಲು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationSQLPortSuccess: SQL ಪೋರ್ಟ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigGUISQLUsernameButton: SQL ಬಳಕೆದಾರ ಹೆಸರು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationSQLOptionalArgsCleared: ಐಚ್ಛಿಕ ವಾದಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ತೆರವುಗೊಳಿಸಲಾಗಿದೆ.
+  wwcConfigConversationSQLOptionalArgsInput: 'ಪ್ರಸ್ತುತ ಐಚ್ಛಿಕ SQL ವಾದಗಳು ಹೀಗಿವೆ: %i.
+    ಒಂದು ಅಲ್ಪವಿರಾಮದಿಂದ ಬೇರ್ಪಡಿಸಿದ ವಾದಗಳನ್ನು ಟೈಪ್ ಮಾಡಿ (key=value, key2=value2), ಅಥವಾ
+    ಪ್ರಸ್ತುತ ಆರ್ಗ್ಗಳನ್ನು ಅಳಿಸಿಹಾಕಲು ಸ್ಪಷ್ಟವಾಗಿ ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ 0 ಅನ್ನು ಹಿಂದಕ್ಕೆ ಹೋಗಲು
+    ಟೈಪ್ ಮಾಡಿ.'
+  wwcConfigConversationSQLDatabaseNameInput: ಪ್ರಸ್ತುತ ಡೇಟಾಬೇಸ್ ಹೆಸರು %i ಆಗಿದೆ. ಹೊಸ
+    ಡೇಟಾಬೇಸ್ ಹೆಸರನ್ನು ಹೊಂದಿಸಲು 0 ಹೊರತುಪಡಿಸಿ ಯಾವುದನ್ನೂ ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು
+    0 ಅನ್ನು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUISQLDatabaseNameButton: SQL ಡೇಟಾಬೇಸ್ ಬದಲಾಯಿಸಿ
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL ಡೇಟಾಬೇಸ್ ಹೆಸರನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿಸಲಾಗಿದೆ.

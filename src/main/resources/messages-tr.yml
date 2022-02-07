@@ -178,10 +178,6 @@ Messages:
   wwcInventoryErrorPlayer: GUI'niz ile hata algılandı. Konsola bir günlük gönderildi.
   wwcInventoryError: '%i kullanıcısının GUI ile hata tespit edildi. Lütfen bu sorunu
     geliştiriciye bildirin.'
-  wwcConfigConversationTranslatorFail: '%i etkinleştirilemedi.'
-  wwcConfigConversationConsoleTranslatorSuccess: '%i kullanıcısı %o başarıyla etkinleştirdi.'
-  wwcConfigConversationTranslatorSuccess: '%i başarıyla etkinleştirildi.'
-  wwcConfigConversationConsoleTranslatorFail: Kullanıcı %i, %o etkinleştiremedi.
   wwcSignTranslationFail: Hedef işaretinizde bir veya daha fazla satır çevrilemiyor.
   wwcBookTranslationFail: Hedef kitabınızda bir veya daha fazla sayfa çevirilemiyor.
   wwctiOffTarget: Öğe çevirisi devre dışı bırakıldı.
@@ -203,7 +199,6 @@ Messages:
   wwcInvalidTranslator: Geçersiz çevirmen ayarları. Lütfen bu eklentiyi kullanmak
     için config.yml veya /wwcc ile düzeltin.
   wwcConfigGUIEachTranslatorSettings: '%i Yapılandırma'
-  wwcConfigGUIToggleButton: '%i'
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat, /reload'un kullanımını göz yummaz. Lütfen
     dikkatli bir şekilde devam edin.
@@ -327,3 +322,50 @@ Messages:
   wwcConfigSQLFail: SQL'e bağlanılamadı.
   wwcConfigSQLSuccess: SQL'e başarıyla bağlandı!
   wwcConfigYAMLFallback: YAML'ye geri düşmek...
+  wwcConfigGUIToggleSQLButton: SQL'i Değiştir
+  wwcConfigConversationToggleSQLSuccess: SQL başarıyla geçiş yaptı. Değişikliğin etkili
+    olması için yeniden yükleyin.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google Translate başarılı bir
+    şekilde geçiş yaptı. Değişikliğin etkili olması için yeniden yükleyin.
+  wwcConfigYAMLDefault: Veri depolama için YAML olarak varsayılan olarak kullanılmıştır.
+  wwcConfigGUISQLMenuButton: SQL Ayarlarını Değiştir
+  wwcConfigConversationWatsonTranslateToggleSuccess: Watson Translate başarılı bir
+    şekilde geçiş yaptı. Değişikliğin etkili olması için yeniden yükleyin.
+  wwcConfigGUISQLSettings: SQL Yapılandırma
+  wwcConfigGUIToggleGoogleTranslateButton: Google Çevir'i Aç/Kapat
+  wwcConfigGUIToggleWatsonTranslateButton: Watson Çevir'i Aç/Kapat
+  wwcConfigGUIToggleAmazonTranslateButton: Amazon Çevir'i Aç/Kapat
+  wwcConfigGUIStorageSettings: Depolama Konfigürasyonu
+  wwcConfigConversationAmazonTranslateToggleSuccess: Amazon Translate başarıyla geçiş
+    yaptı. Değişikliğin etkili olması için yeniden yükleyin.
+  wwcConfigGUISQLPortButton: SQL Bağlantı Noktası Değiştir
+  wwcConfigGUISQLOptionalArgsButton: İsteğe Bağlı SQL Değişkenlerini Değiştirme
+  wwcConfigConversationToggleSQLSSLSuccess: SQL için SSL başarıyla geçiş yaptı.
+  wwcConfigConversationSQLPortInput: Geçerli bağlantı noktası %i'dir. Yeni bir bağlantı
+    noktası ayarlamak için 0'dan başka bir şey yazın veya geri dönmek için 0 yazın.
+  wwcConfigGUISQLPasswordButton: SQL Parolası Değiştir
+  wwcConfigConversationSQLHostnameSuccess: SQL ana bilgisayar adını başarıyla değiştirdi.
+  wwcConfigConversationSQLHostnameInput: Geçerli ana bilgisayar adı %i. Yeni bir ana
+    bilgisayar adı ayarlamak için 0'dan başka bir şey yazın veya geri dönmek için
+    0 yazın.
+  wwcConfigGUISQLHostnameButton: SQL Ana Bilgisayar Adını Değiştir
+  wwcConfigConversationSQLOptionalArgsSuccess: İsteğe bağlı SQL bağımsız değişkenlerini
+    başarıyla değiştirdi.
+  wwcConfigConversationSQLPasswordSuccess: SQL parolasını başarıyla değiştirdi.
+  wwcConfigConversationSQLPasswordInput: Geçerli parola %i'dir. Yeni bir parola ayarlamak
+    için 0'dan başka bir şey yazın veya geri dönmek için 0 yazın.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL'yi Değiştir
+  wwcConfigConversationSQLUsernameSuccess: SQL kullanıcı adını başarıyla değiştirdi.
+  wwcConfigConversationSQLUsernameInput: Geçerli kullanıcı adını %i. Yeni bir kullanıcı
+    adı ayarlamak için 0'dan başka bir şey yazın veya geri dönmek için 0 yazın.
+  wwcConfigConversationSQLPortSuccess: SQL bağlantı noktasını başarıyla değiştirdi.
+  wwcConfigGUISQLUsernameButton: SQL Kullanıcı Adını Değiştir
+  wwcConfigConversationSQLOptionalArgsCleared: İsteğe bağlı bağımsız değişkenler başarıyla
+    temizlendi.
+  wwcConfigConversationSQLOptionalArgsInput: 'Geçerli isteğe bağlı SQL bağımsız değişkenleri
+    şunlardır: %i. Virgülle ayrılmış argümanlar yazın (key=value, key2=value2) veya
+    geçerli arg''ları silmek için clear yazın veya geri dönmek için 0 yazın.'
+  wwcConfigConversationSQLDatabaseNameInput: Geçerli veritabanı adı %i. Yeni bir veritabanı
+    adı ayarlamak için 0'dan başka bir şey yazın veya geri dönmek için 0 yazın.
+  wwcConfigGUISQLDatabaseNameButton: SQL Veritabanını
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL veritabanı adı başarıyla değiştirildi.

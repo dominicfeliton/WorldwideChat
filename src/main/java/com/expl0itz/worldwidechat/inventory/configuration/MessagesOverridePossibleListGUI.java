@@ -39,12 +39,8 @@ public class MessagesOverridePossibleListGUI implements InventoryProvider {
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		try {
-			/* White stained glass borders */
-			ItemStack customBorders = XMaterial.YELLOW_STAINED_GLASS_PANE.parseItem();
-			ItemMeta borderMeta = customBorders.getItemMeta();
-			borderMeta.setDisplayName(" ");
-			customBorders.setItemMeta(borderMeta);
-			contents.fillBorders(ClickableItem.empty(customBorders));
+			/* Yellow stained glass borders */
+			WWCInventoryManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
 			
 			/* Pagination */
 			Pagination pagination = contents.pagination();
@@ -90,27 +86,19 @@ public class MessagesOverridePossibleListGUI implements InventoryProvider {
 			
 			/* Bottom Left Option: Previous Page */
 			if (!pagination.isFirst()) {
-				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
-					overrideNewMessageSettings.open(player,
-							pagination.previous().getPage());
-				}));
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous");
 			} else {
-				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
-					MessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
-				}));
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {MessagesOverrideCurrentListGUI.overrideMessagesSettings});
 			}
-			
-			/* Middle Option: Current Page Number */
-			contents.set(5, 4, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {pagination.getPage() + 1 + ""}), e -> {}));
 			
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {
-				contents.set(5, 6, ClickableItem.of(WWCInventoryManager.getCommonButton("Next"), e -> {
-					overrideNewMessageSettings.open(player,
-							pagination.next().getPage());
-				}));
-				;
+				WWCInventoryManager.setCommonButton(5, 6, player, contents, "Next");
 			}
+			
+			/* Last Option: Current Page Number */
+			WWCInventoryManager.setCommonButton(5, 8, player, contents, "Page Number", new String[] {pagination.getPage() + 1 + ""});
+			
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

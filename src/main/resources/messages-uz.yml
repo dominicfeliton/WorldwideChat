@@ -187,10 +187,6 @@ Messages:
   wwcInventoryErrorPlayer: Xato GUI bilan aniqlandi. Konsolga jurnal yuborildi.
   wwcInventoryError: '%i foydalanuvchi GUI bilan aniqlangan xato. Iltimos, ushbu masalani
     ishlab chiquvchiga xabar bering.'
-  wwcConfigConversationTranslatorFail: '%i yoqmadi.'
-  wwcConfigConversationConsoleTranslatorSuccess: Foydalanuvchi %i muvaffaqiyatli faollashtirdim.
-  wwcConfigConversationTranslatorSuccess: '%i muvaffaqiyatli faollashtirildi.'
-  wwcConfigConversationConsoleTranslatorFail: Foydalanuvchi %i faollashtira olmadi.
   wwcSignTranslationFail: Nishon belgisida bir yoki bir nechta satrlarni tarjima qilib
     bo'lmadi.
   wwcBookTranslationFail: Maqsadli kitobingizda bir yoki bir nechta sahifani tarjima
@@ -215,7 +211,6 @@ Messages:
   wwcInvalidTranslator: Tarjimon sozlamalari noto'g'ri. Iltimos, ushbu plaginni ishlatish
     uchun config.yml yoki /wwcc bilan tuzating.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguratsiya'
-  wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Uotson
   wwcServerReloadWarning: WorldwideChat /qayta yuklashdan foydalanishni cheklamaydi.
     Iltimos, ehtiyotkorlik bilan davom eting.
@@ -345,3 +340,52 @@ Messages:
   wwcConfigSQLFail: SQLga ulanib bo'lmadi.
   wwcConfigSQLSuccess: SQL ga muvaffaqiyatli ulangan!
   wwcConfigYAMLFallback: YAML qaytib tushib...
+  wwcConfigGUIToggleSQLButton: Toggle SQL
+  wwcConfigConversationToggleSQLSuccess: SQL muvaffaqiyatli harakat qildi. O'zgarish
+    kuchga kirishi uchun qayta yuklang.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Muvaffaqiyatli Google Tarjima.
+    O'zgarish kuchga kirishi uchun qayta yuklang.
+  wwcConfigYAMLDefault: Ma'lumotlarni saqlash uchun YAMLga defaulted.
+  wwcConfigGUISQLMenuButton: SQL sozlamalarini o'zgartirish
+  wwcConfigConversationWatsonTranslateToggleSuccess: Muvaffaqiyatli Watson Tarjima.
+    O'zgarish kuchga kirishi uchun qayta yuklang.
+  wwcConfigGUISQLSettings: SQL konfiguratsiyasi
+  wwcConfigGUIToggleGoogleTranslateButton: Google Tarjima Toggle
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Tarjima
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Tarjima
+  wwcConfigGUIStorageSettings: Saqlash konfiguratsiyasi
+  wwcConfigConversationAmazonTranslateToggleSuccess: Muvaffaqiyatli Amazon Tarjima.
+    O'zgarish kuchga kirishi uchun qayta yuklang.
+  wwcConfigGUISQLPortButton: SQL portini o'zgartirish
+  wwcConfigGUISQLOptionalArgsButton: SQL ixtiyoriy argumentlarni o'zgartirish
+  wwcConfigConversationToggleSQLSSLSuccess: SQL uchun SSL muvaffaqiyatli o'tdi.
+  wwcConfigConversationSQLPortInput: Joriy porti %i. 0 dan boshqa har qanday narsani
+    kiriting yangi portni o'rnatish yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUISQLPasswordButton: SQL parolini o'zgartirish
+  wwcConfigConversationSQLHostnameSuccess: SQL hostname-ni muvaffaqiyatli o'zgartirdi.
+  wwcConfigConversationSQLHostnameInput: Joriy hostname %i. 0 dan boshqa hech narsa
+    yozing yangi hostname o'rnatish yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUISQLHostnameButton: SQL Hostname-ni o'zgartirish
+  wwcConfigConversationSQLOptionalArgsSuccess: Ixtiyoriy SQL argumentlarini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigConversationSQLPasswordSuccess: SQL parolini muvaffaqiyatli o'zgartirdi.
+  wwcConfigConversationSQLPasswordInput: Joriy parol %i. Yangi parolni o'rnatish uchun
+    0 dan boshqa hech narsa yozing yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL Toggle
+  wwcConfigConversationSQLUsernameSuccess: SQL foydalanuvchi nomini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigConversationSQLUsernameInput: Joriy foydalanuvchi nomi %i. 0 dan boshqa
+    hech narsa yozing yangi foydalanuvchi nomini o'rnatish yoki orqaga qaytish uchun
+    0 yozing.
+  wwcConfigConversationSQLPortSuccess: SQL portini muvaffaqiyatli o'zgartirdi.
+  wwcConfigGUISQLUsernameButton: SQL foydalanuvchi nomini o'zgartirish
+  wwcConfigConversationSQLOptionalArgsCleared: Ixtiyoriy dalillar muvaffaqiyatli tozalanadi.
+  wwcConfigConversationSQLOptionalArgsInput: 'Joriy ixtiyoriy SQL argumentlari quyidagilardir:
+    %i. vergul bilan ajratilgan argumentlarni yozing (kalit = qiymat, key2=value2)
+    yoki joriy argsni o''chirish uchun aniq yozing yoki orqaga qaytish uchun 0 yozing.'
+  wwcConfigConversationSQLDatabaseNameInput: Joriy ma'lumotlar bazasi nomi %i. 0 dan
+    boshqa hech narsa yozing yangi ma'lumotlar bazasi nomini o'rnatish yoki orqaga
+    qaytish uchun 0 yozing.
+  wwcConfigGUISQLDatabaseNameButton: SQL ma'lumotlar bazasini o'zgartirish
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL ma'lumotlar bazasi nomini muvaffaqiyatli
+    o'zgartirdi.

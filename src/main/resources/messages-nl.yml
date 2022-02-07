@@ -188,11 +188,6 @@ Messages:
     console verzonden.
   wwcInventoryError: Fout gedetecteerd met GUI van gebruiker %i. Meld dit probleem
     aan de ontwikkelaar.
-  wwcConfigConversationTranslatorFail: Kon %i niet inschakelen.
-  wwcConfigConversationConsoleTranslatorSuccess: Gebruiker %i heeft %o succesvol ingeschakeld
-    %o.
-  wwcConfigConversationTranslatorSuccess: '%i is succesvol ingeschakeld %i.'
-  wwcConfigConversationConsoleTranslatorFail: Gebruiker %i kon %o niet inschakelen.
   wwcSignTranslationFail: Kan geen of meer regels op je doelbord vertalen.
   wwcBookTranslationFail: Kan geen of meer pagina's in je doelboek vertalen.
   wwctiOffTarget: Itemvertaling is uitgeschakeld voor %i.
@@ -215,7 +210,6 @@ Messages:
   wwcInvalidTranslator: Ongeldige instellingen voor vertalers. Gelieve dit op te lossen
     in je config.yml of met /wwcc om deze plugin te gebruiken.
   wwcConfigGUIEachTranslatorSettings: '%i Configuratie'
-  wwcConfigGUIToggleButton: '%i omschakelen %i'
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat staat het gebruik van /reloadniet toe. Wees
     voorzichtig.
@@ -348,3 +342,51 @@ Messages:
   wwcConfigSQLFail: Kan geen verbinding maken met SQL.
   wwcConfigSQLSuccess: Succesvol verbonden met SQL!
   wwcConfigYAMLFallback: Terugvallen op YAML...
+  wwcConfigGUIToggleSQLButton: SQL schakelen
+  wwcConfigConversationToggleSQLSuccess: SQL is succesvol omgeschakeld. Herladen om
+    de wijziging van kracht te laten worden.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google Translate is succesvol
+    ingeschakeld. Herladen om de wijziging van kracht te laten worden.
+  wwcConfigYAMLDefault: Standaard ingesteld op YAML voor gegevensopslag.
+  wwcConfigGUISQLMenuButton: SQL-instellingen wijzigen
+  wwcConfigConversationWatsonTranslateToggleSuccess: Watson Translate met succes ingeschakeld.
+    Herladen om de wijziging van kracht te laten worden.
+  wwcConfigGUISQLSettings: SQL-configuratie
+  wwcConfigGUIToggleGoogleTranslateButton: Schakel Google Translate in
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Vertalen
+  wwcConfigGUIToggleAmazonTranslateButton: Schakel Amazon Vertaal
+  wwcConfigGUIStorageSettings: Configuratie van opslag
+  wwcConfigConversationAmazonTranslateToggleSuccess: Amazon Translate is succesvol
+    ingeschakeld. Herladen om de wijziging van kracht te laten worden.
+  wwcConfigGUISQLPortButton: SQL-poort wijzigen
+  wwcConfigGUISQLOptionalArgsButton: Optionele SQL-argumenten wijzigen
+  wwcConfigConversationToggleSQLSSLSuccess: SSL voor SQL is succesvol geschakeld.
+  wwcConfigConversationSQLPortInput: De huidige poort is %i. Typ iets anders dan 0
+    om een nieuwe poort in te stellen, of typ 0 om terug te gaan.
+  wwcConfigGUISQLPasswordButton: SQL-wachtwoord wijzigen
+  wwcConfigConversationSQLHostnameSuccess: De SQL-hostnaam is succesvol gewijzigd.
+  wwcConfigConversationSQLHostnameInput: De huidige hostnaam is %i. Typ iets anders
+    dan 0 om een nieuwe hostnaam in te stellen, of typ 0 om terug te gaan.
+  wwcConfigGUISQLHostnameButton: SQL-hostnaam wijzigen
+  wwcConfigConversationSQLOptionalArgsSuccess: De optionele SQL-argumenten zijn succesvol
+    gewijzigd.
+  wwcConfigConversationSQLPasswordSuccess: Het SQL-wachtwoord is succesvol gewijzigd.
+  wwcConfigConversationSQLPasswordInput: Het huidige wachtwoord is %i. Typ iets anders
+    dan 0 om een nieuw wachtwoord in te stellen, of typ 0 om terug te gaan.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL schakelen
+  wwcConfigConversationSQLUsernameSuccess: De SQL-gebruikersnaam is succesvol gewijzigd.
+  wwcConfigConversationSQLUsernameInput: De huidige gebruikersnaam is %i. Typ iets
+    anders dan 0 om een nieuwe gebruikersnaam in te stellen, of typ 0 om terug te
+    gaan.
+  wwcConfigConversationSQLPortSuccess: De SQL-poort met succes gewijzigd.
+  wwcConfigGUISQLUsernameButton: SQL gebruikersnaam wijzigen
+  wwcConfigConversationSQLOptionalArgsCleared: Optionele argumenten zijn succesvol
+    gewist.
+  wwcConfigConversationSQLOptionalArgsInput: 'De huidige optionele SQL-argumenten
+    zijn: %i. Typ argumenten gescheiden door een komma (key=value, key2=value2), of
+    typ clear om de huidige args te wissen, of typ 0 om terug te gaan.'
+  wwcConfigConversationSQLDatabaseNameInput: De huidige databasenaam is %i. Typ iets
+    anders dan 0 om een nieuwe databasenaam in te stellen, of typ 0 om terug te gaan.
+  wwcConfigGUISQLDatabaseNameButton: SQL Database wijzigen
+  wwcConfigConversationSQLDatabaseNameSuccess: De naam van de SQL-database is succesvol
+    gewijzigd

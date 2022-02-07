@@ -185,10 +185,6 @@ Messages:
   wwcInventoryErrorPlayer: Ralat dikesan dengan GUI anda. Log telah dihantar ke konsol.
   wwcInventoryError: Ralat dikesan dengan GUI pengguna %i. Sila laporkan isu ini kepada
     pembangun.
-  wwcConfigConversationTranslatorFail: Gagal membolehkan %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Pengguna %i berjaya membenarkan %o.
-  wwcConfigConversationTranslatorSuccess: Berjaya membenarkan %i.
-  wwcConfigConversationConsoleTranslatorFail: Pengguna %i gagal membolehkan %o.
   wwcSignTranslationFail: Tidak dapat menterjemahkan satu atau lebih baris pada tanda
     sasaran anda.
   wwcBookTranslationFail: Tidak dapat menterjemahkan satu atau lebih halaman dalam
@@ -213,7 +209,6 @@ Messages:
   wwcInvalidTranslator: Tetapan penterjemah tidak sah. Sila betulkan ini dalam config.yml
     anda atau dengan /wwcc untuk guna pemalam ini.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurasi'
-  wwcConfigGUIToggleButton: Togol
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat tidak membenarkan penggunaan /reload. Sila
     teruskan dengan berhati-hati.
@@ -341,3 +336,49 @@ Messages:
   wwcConfigSQLFail: Gagal menyambung ke SQL.
   wwcConfigSQLSuccess: Berjaya disambungkan ke SQL!
   wwcConfigYAMLFallback: Jatuh kembali ke YAML...
+  wwcConfigGUIToggleSQLButton: Togol SQL
+  wwcConfigConversationToggleSQLSuccess: SQL berjaya ditogol. Muat semula untuk perubahan
+    berkuatkuasa.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Berjaya menogol Google Translate.
+    Muat semula untuk perubahan berkuatkuasa.
+  wwcConfigYAMLDefault: Lalai kepada YAML untuk storan data.
+  wwcConfigGUISQLMenuButton: Tukar Tetapan SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Berjaya menogol Watson Terjemah.
+    Muat semula untuk perubahan berkuatkuasa.
+  wwcConfigGUISQLSettings: Konfigurasi SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Togol Google Terjemah
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Terjemah
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Terjemah
+  wwcConfigGUIStorageSettings: Konfigurasi Storan
+  wwcConfigConversationAmazonTranslateToggleSuccess: Berjaya menogol Amazon Terjemah.
+    Muat semula untuk perubahan berkuatkuasa.
+  wwcConfigGUISQLPortButton: Tukar SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Tukar SQL Argumen Pilihan
+  wwcConfigConversationToggleSQLSSLSuccess: SSL untuk SQL berjaya ditogol.
+  wwcConfigConversationSQLPortInput: Port semasa adalah %i. Taip apa-apa selain 0
+    untuk tetapkan port baru, atau taip 0 untuk kembali.
+  wwcConfigGUISQLPasswordButton: Tukar Kata Laluan SQL
+  wwcConfigConversationSQLHostnameSuccess: Berjaya menukar nama hos SQL.
+  wwcConfigConversationSQLHostnameInput: Nama hos semasa adalah %i. Taip apa-apa selain
+    0 untuk tetapkan nama hos baru, atau taip 0 untuk kembali.
+  wwcConfigGUISQLHostnameButton: Tukar Nama Hos SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Berjaya menukar argumen SQL pilihan.
+  wwcConfigConversationSQLPasswordSuccess: Berjaya menukar kata laluan SQL.
+  wwcConfigConversationSQLPasswordInput: Kata laluan semasa adalah %i. Taip apa-apa
+    selain 0 untuk menetapkan kata laluan baru, atau taip 0 untuk kembali.
+  wwcConfigGUIToggleSQLSSLButton: Togol SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Berjaya menukar nama pengguna SQL.
+  wwcConfigConversationSQLUsernameInput: Nama pengguna semasa adalah %i. Taip apa-apa
+    selain 0 untuk menetapkan nama pengguna baru, atau taip 0 untuk kembali.
+  wwcConfigConversationSQLPortSuccess: Berjaya menukar port SQL.
+  wwcConfigGUISQLUsernameButton: Tukar Nama Pengguna SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Hujah pilihan berjaya dibersihkan.
+  wwcConfigConversationSQLOptionalArgsInput: 'Argumen SQL pilihan semasa ialah: %i.
+    Argumen jenis dipisahkan oleh koma (key=value, key2=value2), atau taipkan jelas
+    untuk menghapuskan args semasa, atau taip 0 untuk kembali.'
+  wwcConfigConversationSQLDatabaseNameInput: Nama pangkalan data semasa adalah %i.
+    Taip apa-apa selain 0 untuk tetapkan nama pangkalan data baru, atau taip 0 untuk
+    kembali.
+  wwcConfigGUISQLDatabaseNameButton: Tukar Pangkalan Data SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Berjaya menukar nama pangkalan data
+    SQL.

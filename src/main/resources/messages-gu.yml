@@ -179,12 +179,6 @@ Messages:
     છે.
   wwcInventoryError: વપરાશકર્તા %i ના GUI સાથે શોધાયેલ ભૂલ કૃપા કરીને વિકાસકર્તાને
     આ સમસ્યાની જાણ કરો.
-  wwcConfigConversationTranslatorFail: '%i ને સક્ષમ કરવામાં નિષ્ફળ.'
-  wwcConfigConversationConsoleTranslatorSuccess: વપરાશકર્તા %o મેં સફળતાપૂર્વક સક્ષમ
-    કર્યું.
-  wwcConfigConversationTranslatorSuccess: સફળતાપૂર્વક સક્ષમ કરો %i.
-  wwcConfigConversationConsoleTranslatorFail: વપરાશકર્તા %o ને સક્ષમ કરવામાં હું નિષ્ફળ
-    ગયો.
   wwcSignTranslationFail: તમારા લક્ષ્ય ચિહ્ન પર એક અથવા વધુ લીટીઓનું અનુવાદ કરવામાં
     અસમર્થ.
   wwcBookTranslationFail: તમારા લક્ષ્ય પુસ્તકમાં એક અથવા વધુ પૃષ્ઠોનું અનુવાદ કરવામાં
@@ -209,7 +203,6 @@ Messages:
   wwcInvalidTranslator: અમાન્ય અનુવાદક સેટિંગ્સ. કૃપા કરીને આ પલ્ગઇનની વાપરવા માટે
     તમારા config.yml અથવા સાથે/wwcc માં ઠીક કરો.
   wwcConfigGUIEachTranslatorSettings: '%i રૂપરેખાંકન'
-  wwcConfigGUIToggleButton: ટૉગલ %i
   wwcConfigGUIWatsonButton: વોટસન
   wwcServerReloadWarning: વર્લ્ડવાઇડચેટ/ફરીથી લોડ કરવાના ઉપયોગને અનુરૂપ નથી. કૃપા
     કરીને સાવધાની સાથે આગળ વધો.
@@ -338,3 +331,48 @@ Messages:
   wwcConfigSQLFail: એસક્યુએલ સાથે કનેક્ટ કરવામાં નિષ્ફળ.
   wwcConfigSQLSuccess: સફળતાપૂર્વક એસક્યુએલ સાથે જોડાયેલ!
   wwcConfigYAMLFallback: YAML પર પાછા ફોલિંગ...
+  wwcConfigGUIToggleSQLButton: ટૉગલ એસક્યુએલ
+  wwcConfigConversationToggleSQLSuccess: એસક્યુએલ સફળતાપૂર્વક toggled. ફેરફારને અસર
+    કરવા માટે ફરીથી લોડ કરો.
+  wwcConfigConversationGoogleTranslateToggleSuccess: સફળતાપૂર્વક Google અનુવાદને ટૉગલ
+    કર્યું. ફેરફારને અસર કરવા માટે ફરીથી લોડ કરો.
+  wwcConfigYAMLDefault: ડેટા સ્ટોરેજ માટે YAML માં ડિફોલ્ટ.
+  wwcConfigGUISQLMenuButton: એસક્યુએલ સેટિંગ્સ બદલો
+  wwcConfigConversationWatsonTranslateToggleSuccess: વોટસન અનુવાદને સફળતાપૂર્વક toggled.
+    ફેરફારને અસર કરવા માટે ફરીથી લોડ કરો.
+  wwcConfigGUISQLSettings: એસક્યુએલ રૂપરેખાંકન
+  wwcConfigGUIToggleGoogleTranslateButton: ગૂગલ અનુવાદને ટૉગલ કરો
+  wwcConfigGUIToggleWatsonTranslateButton: ટૉગલ વાટ્સન અનુવાદ
+  wwcConfigGUIToggleAmazonTranslateButton: એમેઝોન અનુવાદ ટૉગલ કરો
+  wwcConfigGUIStorageSettings: સંગ્રહ રૂપરેખાંકન
+  wwcConfigConversationAmazonTranslateToggleSuccess: સફળતાપૂર્વક એમેઝોન અનુવાદ toggled.
+    ફેરફારને અસર કરવા માટે ફરીથી લોડ કરો.
+  wwcConfigGUISQLPortButton: એસક્યુએલ પોર્ટ બદલો
+  wwcConfigGUISQLOptionalArgsButton: બદલો એસક્યુએલ વૈકલ્પિક દલીલો
+  wwcConfigConversationToggleSQLSSLSuccess: એસક્યુએલ માટે SSL સફળતાપૂર્વક ટૉગલ કર્યું.
+  wwcConfigConversationSQLPortInput: વર્તમાન બંદર %i છે નવું બંદર સેટ કરવા માટે 0
+    સિવાય કંઈપણ લખો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigGUISQLPasswordButton: એસક્યુએલ પાસવર્ડ બદલો
+  wwcConfigConversationSQLHostnameSuccess: સફળતાપૂર્વક એસક્યુએલ યજમાનનામ બદલ્યું.
+  wwcConfigConversationSQLHostnameInput: વર્તમાન યજમાનનામ %i છે નવું યજમાનનામ સેટ
+    કરવા માટે 0 સિવાય કંઈપણ લખો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigGUISQLHostnameButton: એસક્યુએલ યજમાનનામ બદલો
+  wwcConfigConversationSQLOptionalArgsSuccess: વૈકલ્પિક એસક્યુએલ દલીલો સફળતાપૂર્વક
+    બદલી.
+  wwcConfigConversationSQLPasswordSuccess: સફળતાપૂર્વક એસક્યુએલ પાસવર્ડ બદલ્યો.
+  wwcConfigConversationSQLPasswordInput: વર્તમાન પાસવર્ડ %i છે નવો પાસવર્ડ સેટ કરવા
+    માટે 0 સિવાય કંઈપણ લખો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigGUIToggleSQLSSLButton: ટૉગલ એસક્યુએલ SSL
+  wwcConfigConversationSQLUsernameSuccess: સફળતાપૂર્વક એસક્યુએલ વપરાશકર્તાનામ બદલ્યું.
+  wwcConfigConversationSQLUsernameInput: વર્તમાન વપરાશકર્તાનામ %i છે નવું વપરાશકર્તા
+    નામ સેટ કરવા માટે 0 સિવાય કંઈપણ લખો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigConversationSQLPortSuccess: સફળતાપૂર્વક એસક્યુએલ પોર્ટ બદલ્યું.
+  wwcConfigGUISQLUsernameButton: એસક્યુએલ વપરાશકર્તા નામ બદલો
+  wwcConfigConversationSQLOptionalArgsCleared: વૈકલ્પિક દલીલો સફળતાપૂર્વક સાફ.
+  wwcConfigConversationSQLOptionalArgsInput: 'વર્તમાન વૈકલ્પિક એસક્યુએલ દલીલો છે:
+    %i અલ્પવિરામ (key=value, key2 = value2) દ્વારા અલગ દલીલો લખો, અથવા વર્તમાન આર્ગ્સને
+    સાફ કરવા માટે સ્પષ્ટ લખો, અથવા પાછા જવા માટે 0 લખો.'
+  wwcConfigConversationSQLDatabaseNameInput: વર્તમાન ડેટાબેઝ નામ %i છે નવું ડેટાબેઝ
+    નામ સેટ કરવા માટે 0 સિવાય કંઈપણ લખો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigGUISQLDatabaseNameButton: એસક્યુએલ ડેટાબેઝ બદલો
+  wwcConfigConversationSQLDatabaseNameSuccess: સફળતાપૂર્વક SQL ડેટાબેઝ નામ બદલ્યું.

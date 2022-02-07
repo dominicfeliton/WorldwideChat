@@ -189,10 +189,6 @@ Messages:
     đến giao diện điều khiển.
   wwcInventoryError: Phát hiện lỗi với GUI của người dùng %i. Vui lòng báo cáo vấn
     đề này cho nhà phát triển.
-  wwcConfigConversationTranslatorFail: Không thể bật %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Người dùng %i đã bật thành công %o.
-  wwcConfigConversationTranslatorSuccess: Đã bật thành công %i.
-  wwcConfigConversationConsoleTranslatorFail: Người dùng %tôi không thể bật %o.
   wwcSignTranslationFail: Không thể dịch một hoặc nhiều dòng trên dấu hiệu mục tiêu
     của bạn.
   wwcBookTranslationFail: Không thể dịch một hoặc nhiều trang trong sách mục tiêu
@@ -217,7 +213,6 @@ Messages:
   wwcInvalidTranslator: Cài đặt dịch không hợp lệ. Vui lòng sửa lỗi này trong config.yml
     của bạn hoặc với /wwccc để sử dụng plugin này.
   wwcConfigGUIEachTranslatorSettings: '%i Cấu hình'
-  wwcConfigGUIToggleButton: Tật %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat không tha thứ việc sử dụng /tải lại. Xin hãy
     cẩn thận.
@@ -346,3 +341,49 @@ Messages:
   wwcConfigSQLFail: Không thể kết nối với SQL.
   wwcConfigSQLSuccess: Kết nối thành công với SQL!
   wwcConfigYAMLFallback: Rơi trở lại YAML...
+  wwcConfigGUIToggleSQLButton: Chuyển đổi SQL
+  wwcConfigConversationToggleSQLSuccess: SQL chuyển đổi thành công. Tải lại để thay
+    đổi có hiệu lực.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Chuyển đổi thành công Google
+    Translate. Tải lại để thay đổi có hiệu lực.
+  wwcConfigYAMLDefault: Mặc định là YAML để lưu trữ dữ liệu.
+  wwcConfigGUISQLMenuButton: Thay đổi cài đặt SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Chuyển đổi thành công Watson
+    Translate. Tải lại để thay đổi có hiệu lực.
+  wwcConfigGUISQLSettings: Cấu hình SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Chuyển đổi Google Dịch
+  wwcConfigGUIToggleWatsonTranslateButton: Chuyển đổi Watson Dịch
+  wwcConfigGUIToggleAmazonTranslateButton: Chuyển đổi Amazon Translate
+  wwcConfigGUIStorageSettings: Cấu hình lưu trữ
+  wwcConfigConversationAmazonTranslateToggleSuccess: Chuyển đổi thành công Amazon
+    Translate. Tải lại để thay đổi có hiệu lực.
+  wwcConfigGUISQLPortButton: Thay đổi cổng SQL
+  wwcConfigGUISQLOptionalArgsButton: Thay đổi đối số tùy chọn SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL cho SQL được chuyển đổi thành công.
+  wwcConfigConversationSQLPortInput: Cổng hiện tại là %i. Gõ bất cứ thứ gì khác với
+    0 để thiết lập một cổng mới, hoặc gõ 0 để quay lại.
+  wwcConfigGUISQLPasswordButton: Thay đổi mật khẩu SQL
+  wwcConfigConversationSQLHostnameSuccess: Thay đổi thành công tên máy chủ SQL.
+  wwcConfigConversationSQLHostnameInput: Tên máy chủ hiện tại là %i. Gõ bất cứ thứ
+    gì khác với 0 để đặt tên máy mới, hoặc gõ 0 để quay lại.
+  wwcConfigGUISQLHostnameButton: Thay đổi SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Thay đổi thành công các đối số SQL
+    tùy chọn.
+  wwcConfigConversationSQLPasswordSuccess: Đã thay đổi thành công mật khẩu SQL.
+  wwcConfigConversationSQLPasswordInput: Mật khẩu hiện tại là %i. Gõ bất cứ thứ gì
+    khác với 0 để đặt mật khẩu mới, hoặc gõ 0 để quay lại.
+  wwcConfigGUIToggleSQLSSLButton: Chuyển đổi SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Thay đổi thành công tên người dùng SQL.
+  wwcConfigConversationSQLUsernameInput: Tên người dùng hiện tại là %i. Gõ bất cứ
+    thứ gì khác với 0 để đặt tên người dùng mới, hoặc gõ 0 để quay lại.
+  wwcConfigConversationSQLPortSuccess: Thay đổi thành công cổng SQL.
+  wwcConfigGUISQLUsernameButton: Thay đổi tên người dùng SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Các đối số tùy chọn đã xóa thành công.
+  wwcConfigConversationSQLOptionalArgsInput: 'Các đối số SQL tùy chọn hiện tại là:
+    %i. Đối số kiểu cách nhau bằng dấu phẩy (key=value, key2=value2), hoặc gõ rõ ràng
+    để xóa các args hiện tại, hoặc gõ 0 để quay lại.'
+  wwcConfigConversationSQLDatabaseNameInput: Tên cơ sở dữ liệu hiện tại là %i. Gõ
+    bất cứ thứ gì khác hơn 0 để đặt tên cơ sở dữ liệu mới, hoặc gõ 0 để quay lại.
+  wwcConfigGUISQLDatabaseNameButton: Thay đổi cơ sở dữ liệu SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Thay đổi thành công tên cơ sở dữ liệu
+    SQL.

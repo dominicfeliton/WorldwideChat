@@ -189,11 +189,6 @@ Messages:
   wwcInventoryErrorPlayer: Hiba észlelt a GUI. A rendszer egy naplót küldött a konzolnak.
   wwcInventoryError: Hiba történt a (z) %i felhasználó GUI-jával. Jelentse ezt a problémát
     a fejlesztőnek.
-  wwcConfigConversationTranslatorFail: Nem sikerült a (z) %i.
-  wwcConfigConversationConsoleTranslatorSuccess: '%i felhasználó sikeresen engedélyezett
-    %o.'
-  wwcConfigConversationTranslatorSuccess: 'Sikeresen engedélyezve: %i.'
-  wwcConfigConversationConsoleTranslatorFail: A (z) %i felhasználót nem sikerült beengedni.
   wwcSignTranslationFail: Nem lehet lefordítani egy vagy több sort a céltáblán.
   wwcBookTranslationFail: Nem lehet lefordítani egy vagy több oldalt a célkönyvben.
   wwctiOffTarget: 'Elem fordítása le van tiltva: %i'
@@ -216,7 +211,6 @@ Messages:
   wwcInvalidTranslator: Érvénytelen fordítói beállítások. Kérjük, javítsa ki ezt a
     config.yml vagy /wwcc segítségével a plugin használatához.
   wwcConfigGUIEachTranslatorSettings: '%i konfiguráció'
-  wwcConfigGUIToggleButton: '%i be-'
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: A WorldwideChat nem nézi meg a /reload használatát. Kérem,
     óvatosan járjanak el.
@@ -344,3 +338,52 @@ Messages:
   wwcConfigSQLFail: Nem sikerült csatlakozni az SQL-hez.
   wwcConfigSQLSuccess: Sikeresen csatlakozik az SQL-hez!
   wwcConfigYAMLFallback: Visszaesik a YAML-hez...
+  wwcConfigGUIToggleSQLButton: SQL váltása
+  wwcConfigConversationToggleSQLSuccess: Az SQL sikeresen vált. Töltse be újra, hogy
+    a változás életbe lépjen.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Sikeresen váltotta be a Google
+    Fordítót. Töltse be újra, hogy a változás életbe lépjen.
+  wwcConfigYAMLDefault: Alapértelmezés szerint a YAML-nek adattárolás céljából.
+  wwcConfigGUISQLMenuButton: SQL beállítások módosítása
+  wwcConfigConversationWatsonTranslateToggleSuccess: Sikeresen váltotta a Watson Translate
+    programot. Töltse be újra, hogy a változás életbe lépjen.
+  wwcConfigGUISQLSettings: SQL konfiguráció
+  wwcConfigGUIToggleGoogleTranslateButton: A Google Fordító váltása
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson fordító
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Fordító
+  wwcConfigGUIStorageSettings: Tárolási konfiguráció
+  wwcConfigConversationAmazonTranslateToggleSuccess: Sikeresen váltotta az Amazon
+    Translate alkalmazást. Töltse be újra, hogy a változás életbe lépjen.
+  wwcConfigGUISQLPortButton: SQL port módosítása
+  wwcConfigGUISQLOptionalArgsButton: SQL opcionális argumentumok módosítása
+  wwcConfigConversationToggleSQLSSLSuccess: Az SQL SSL-je sikeresen vált.
+  wwcConfigConversationSQLPortInput: Az aktuális port %i. Írjon be bármi mást, mint
+    0 új portot, vagy írja be a 0 billentyűt, hogy visszatérjen.
+  wwcConfigGUISQLPasswordButton: SQL jelszó módosítása
+  wwcConfigConversationSQLHostnameSuccess: Sikeresen megváltoztatta az SQL gazdagépnevét.
+  wwcConfigConversationSQLHostnameInput: Az aktuális hosztnév %i. Írjon be bármi mást,
+    mint 0 új gazdagépnév beállításához, vagy írja be a 0 betűt a visszalépéshez.
+  wwcConfigGUISQLHostnameButton: SQL Hostname módosítása
+  wwcConfigConversationSQLOptionalArgsSuccess: Sikeresen megváltoztatta az opcionális
+    SQL argumentumokat.
+  wwcConfigConversationSQLPasswordSuccess: Sikeresen megváltoztatta az SQL jelszót.
+  wwcConfigConversationSQLPasswordInput: 'Az aktuális jelszó: %i. Írjon be bármi mást,
+    mint 0 új jelszó beállításához, vagy írja be a 0 betűt a visszalépéshez.'
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL váltása
+  wwcConfigConversationSQLUsernameSuccess: Sikeresen megváltoztatta az SQL felhasználónevet.
+  wwcConfigConversationSQLUsernameInput: A jelenlegi felhasználónév %i. Írjon be bármi
+    mást, mint 0 új felhasználónév beállításához, vagy írja be a 0 betűt, hogy visszatérjen.
+  wwcConfigConversationSQLPortSuccess: Sikeresen megváltoztatta az SQL portot.
+  wwcConfigGUISQLUsernameButton: SQL felhasználónév módosítása
+  wwcConfigConversationSQLOptionalArgsCleared: Az opcionális argumentumok sikeresen
+    törlődtek.
+  wwcConfigConversationSQLOptionalArgsInput: 'Az aktuális opcionális SQL argumentumok
+    a következők: %i. Írja be az argumentumokat vesszővel elválasztva (key=value,
+    key2=value2), vagy írja be a Clear parancsot az aktuális args törléséhez, vagy
+    írja be a 0 betűt a visszalépéshez.'
+  wwcConfigConversationSQLDatabaseNameInput: 'Az adatbázis aktuális neve: %i. Írjon
+    be bármi mást, mint 0 új adatbázisnév beállításához, vagy írja be a 0 betűt a
+    visszalépéshez.'
+  wwcConfigGUISQLDatabaseNameButton: SQL adatbázis módosítása
+  wwcConfigConversationSQLDatabaseNameSuccess: Sikeresen megváltoztatta az SQL adatbázis
+    nevét.

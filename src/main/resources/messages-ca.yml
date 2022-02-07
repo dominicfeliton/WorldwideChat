@@ -193,10 +193,6 @@ Messages:
     a la consola.
   wwcInventoryError: S'ha detectat un error amb la IGU de l'usuari %i, si us plau,
     informeu d'aquest problema al desenvolupador
-  wwcConfigConversationTranslatorFail: No s'ha pogut activar %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Usuari %i habilita amb èxit %o.
-  wwcConfigConversationTranslatorSuccess: Activa %i amb èxit.
-  wwcConfigConversationConsoleTranslatorFail: Usuari %No he pogut activar %o.
   wwcSignTranslationFail: No es pot traduir una o més línies al signe de destinació.
   wwcBookTranslationFail: No es pot traduir una o més pàgines al llibre de destinació.
   wwctiOffTarget: Traducció d'elements desactivats per %i.
@@ -219,7 +215,6 @@ Messages:
   wwcInvalidTranslator: Configuració del traductor no vàlid. Si us plau, corregiu
     això a la vostra config.yml o amb /wwcc per utilitzar aquest connector.
   wwcConfigGUIEachTranslatorSettings: '%i Configuració'
-  wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat no condona l'ús de /reload. Si us plau, procedeixi
     amb precaució.
@@ -350,3 +345,57 @@ Messages:
   wwcConfigSQLFail: No s'ha pogut connectar a SQL.
   wwcConfigSQLSuccess: Connectat amb èxit a SQL!
   wwcConfigYAMLFallback: Caient de nou a YAML...
+  wwcConfigGUIToggleSQLButton: Commuta SQL
+  wwcConfigConversationToggleSQLSuccess: SQL es va torgar amb èxit. Torna a carregar
+    perquè el canvi tingui efecte.
+  wwcConfigConversationGoogleTranslateToggleSuccess: S'ha completat correctament el
+    Traduït per Google Translate. Torna a carregar perquè el canvi tingui efecte.
+  wwcConfigYAMLDefault: Per defecte a YAML per a l'emmagatzematge de dades.
+  wwcConfigGUISQLMenuButton: Canviar la configuració SQ
+  wwcConfigConversationWatsonTranslateToggleSuccess: S'ha completat amb èxit Watson
+    Traduir. Torna a carregar perquè el canvi tingui efecte.
+  wwcConfigGUISQLSettings: Configuració SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Commuta Traduït per Google
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Traduir
+  wwcConfigGUIToggleAmazonTranslateButton: Alterna Amazon Traduir
+  wwcConfigGUIStorageSettings: Configuració d'emmagatzematge
+  wwcConfigConversationAmazonTranslateToggleSuccess: S'ha completat amb èxit Amazon
+    Traduir. Torna a carregar perquè el canvi tingui efecte.
+  wwcConfigGUISQLPortButton: Canviar port SQL
+  wwcConfigGUISQLOptionalArgsButton: Canviar arguments opcionals SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL per a SQL es va torgar amb èxit.
+  wwcConfigConversationSQLPortInput: El port actual és %i Escriviu qualsevol cosa
+    que no sigui 0 per establir un port nou, o escriviu 0 per tornar enrere.
+  wwcConfigGUISQLPasswordButton: Canviar contrasenya SQL
+  wwcConfigConversationSQLHostnameSuccess: S'ha canviat correctament el nom d'amfitrió
+    SQL.
+  wwcConfigConversationSQLHostnameInput: El nom d'amfitrió actual és %i Escriviu qualsevol
+    cosa que no sigui 0 per establir un nou nom d'amfitrió, o escriviu 0 per tornar
+    enrere.
+  wwcConfigGUISQLHostnameButton: Canviar SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: S'ha canviat correctament els arguments
+    SQL opcionals.
+  wwcConfigConversationSQLPasswordSuccess: S'ha canviat correctament la contrasenya
+    de SQL.
+  wwcConfigConversationSQLPasswordInput: La contrasenya actual és %i Escriviu qualsevol
+    cosa que no sigui 0 per establir una nova contrasenya, o escriviu 0 per tornar
+    enrere.
+  wwcConfigGUIToggleSQLSSLButton: Commuta SSL SQL
+  wwcConfigConversationSQLUsernameSuccess: S'ha canviat correctament el nom d'usuari
+    de SQL.
+  wwcConfigConversationSQLUsernameInput: El nom d'usuari actual és %i Escriviu qualsevol
+    cosa que no sigui 0 per establir un nou nom d'usuari, o escriviu 0 per tornar
+    enrere.
+  wwcConfigConversationSQLPortSuccess: S'ha canviat correctament el port SQL.
+  wwcConfigGUISQLUsernameButton: Canviar el nom d'usuari SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Els arguments opcionals s'esborren
+    correctament.
+  wwcConfigConversationSQLOptionalArgsInput: 'Els arguments SQL opcionals actuals
+    són: %i Escriviu els arguments separats per una coma (clau=valor, clau2=valor2),
+    o escriviu clar per netejar les args actuals, o escriviu 0 per tornar enrere.'
+  wwcConfigConversationSQLDatabaseNameInput: El nom de la base de dades actual és
+    %i Escriviu qualsevol cosa que no sigui 0 per establir un nou nom de base de dades,
+    o escriviu 0 per tornar enrere.
+  wwcConfigGUISQLDatabaseNameButton: Canviar la base de dades
+  wwcConfigConversationSQLDatabaseNameSuccess: S'ha canviat correctament el nom de
+    base de dades SQL.

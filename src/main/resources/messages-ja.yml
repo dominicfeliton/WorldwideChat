@@ -149,10 +149,6 @@ Messages:
   wwcConfigCacheInvalid: トランスレータキャッシュサイズが無効です。デフォルトは10に設定しています...
   wwcInventoryErrorPlayer: GUI でエラーが検出されました。ログがコンソールに送信されました。
   wwcInventoryError: ユーザー %i の GUI でエラーが検出されました。この問題を開発者に報告してください。
-  wwcConfigConversationTranslatorFail: '%i を有効にできませんでした。'
-  wwcConfigConversationConsoleTranslatorSuccess: ユーザー %i は %o を正常に有効化しました。
-  wwcConfigConversationTranslatorSuccess: '%i を正常に有効化しました。'
-  wwcConfigConversationConsoleTranslatorFail: ユーザー %i は %o を有効にできませんでした。
   wwcSignTranslationFail: ターゲット記号の 1 つ以上の行を翻訳できません。
   wwcBookTranslationFail: ターゲットブックの 1 つ以上のページを翻訳できません。
   wwctiOffTarget: '%i のアイテムの翻訳が無効です。'
@@ -173,7 +169,6 @@ Messages:
   wwcChatTranslationFail: メッセージの翻訳に失敗しました。
   wwcInvalidTranslator: トランスレータ設定が無効です。このプラグインを使用するには、config.yml または /wwcc でこれを修正してください。
   wwcConfigGUIEachTranslatorSettings: '%i 構成'
-  wwcConfigGUIToggleButton: '%i を切り替える'
   wwcConfigGUIWatsonButton: ワトソン
   wwcServerReloadWarning: WorldwideChat は /reload の使用を容認しません。注意して進めてください。
   wwcConfigEnabledDebugMode: デバッグモードを有効にしました。開発者またはトラブルシューティングツールでない場合は、これをオフにする必要があります。
@@ -273,3 +268,40 @@ Messages:
   wwcConfigSQLFail: SQL に接続できませんでした。
   wwcConfigSQLSuccess: SQL に正常に接続しました。
   wwcConfigYAMLFallback: YAMLにフォールバック...
+  wwcConfigGUIToggleSQLButton: SQL を切り替え
+  wwcConfigConversationToggleSQLSuccess: SQL が正常に切り替えられました。リロードして変更を有効にします。
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google翻訳が正常に切り替わりました。リロードして変更を有効にします。
+  wwcConfigYAMLDefault: データストレージのデフォルトは YAML です。
+  wwcConfigGUISQLMenuButton: SQL 設定の変更
+  wwcConfigConversationWatsonTranslateToggleSuccess: ワトソン翻訳が正常に切り替わりました。リロードして変更を有効にします。
+  wwcConfigGUISQLSettings: SQL 構成
+  wwcConfigGUIToggleGoogleTranslateButton: グーグル翻訳の切り替え
+  wwcConfigGUIToggleWatsonTranslateButton: ワトソン翻訳の切り替え
+  wwcConfigGUIToggleAmazonTranslateButton: Amazon翻訳の切り替え
+  wwcConfigGUIStorageSettings: ストレージ構成
+  wwcConfigConversationAmazonTranslateToggleSuccess: Amazon翻訳が正常に切り替わりました。リロードして変更を有効にします。
+  wwcConfigGUISQLPortButton: SQL ポートの変更
+  wwcConfigGUISQLOptionalArgsButton: SQL オプション引数の変更
+  wwcConfigConversationToggleSQLSSLSuccess: SQL 用 SSL が正常に切り替えられました。
+  wwcConfigConversationSQLPortInput: 現在のポートは %i です。0 以外の値を入力すると新しいポートが設定され、0 を入力すると元に戻ります。
+  wwcConfigGUISQLPasswordButton: SQL パスワードの変更
+  wwcConfigConversationSQLHostnameSuccess: SQL ホスト名が正常に変更されました。
+  wwcConfigConversationSQLHostnameInput: 現在のホスト名は %i です。0 以外を入力すると新しいホスト名が設定され、0 を入力すると元に戻ります。
+  wwcConfigGUISQLHostnameButton: SQL ホスト名の変更
+  wwcConfigConversationSQLOptionalArgsSuccess: オプションの SQL 引数が正常に変更されました。
+  wwcConfigConversationSQLPasswordSuccess: SQL パスワードが正常に変更されました。
+  wwcConfigConversationSQLPasswordInput: 現在のパスワードは %i です。0 以外を入力すると新しいパスワードが設定され、0
+    を入力すると元に戻ります。
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL を切り替え
+  wwcConfigConversationSQLUsernameSuccess: SQL ユーザー名が正常に変更されました。
+  wwcConfigConversationSQLUsernameInput: 現在のユーザ名は %i です。0 以外の値を入力すると新しいユーザ名が設定され、0
+    を入力すると戻ります。
+  wwcConfigConversationSQLPortSuccess: SQL ポートが正常に変更されました。
+  wwcConfigGUISQLUsernameButton: SQL ユーザ名の変更
+  wwcConfigConversationSQLOptionalArgsCleared: オプションの引数は正常にクリアされました。
+  wwcConfigConversationSQLOptionalArgsInput: '現在のオプションの SQL 引数: %i。引数をカンマで区切って入力するか
+    (key=value, key2=value2)、clear と入力して現在の引数を消去するか、0 を入力して戻ります。'
+  wwcConfigConversationSQLDatabaseNameInput: 現在のデータベース名は %i です。0 以外の値を入力すると新しいデータベース名が設定され、0
+    を入力すると元に戻ります。
+  wwcConfigGUISQLDatabaseNameButton: SQL データベースの変更
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL データベース名が正常に変更されました。

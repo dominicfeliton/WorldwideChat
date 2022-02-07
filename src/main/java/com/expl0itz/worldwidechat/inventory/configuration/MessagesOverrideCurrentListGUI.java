@@ -36,11 +36,7 @@ public class MessagesOverrideCurrentListGUI implements InventoryProvider {
 	public void init(Player player, InventoryContents contents) {
 		try {
 			/* Green stained glass borders */
-			ItemStack customBorders = XMaterial.GREEN_STAINED_GLASS_PANE.parseItem();
-			ItemMeta borderMeta = customBorders.getItemMeta();
-			borderMeta.setDisplayName(" ");
-			customBorders.setItemMeta(borderMeta);
-			contents.fillBorders(ClickableItem.empty(customBorders));
+			WWCInventoryManager.setBorders(contents, XMaterial.GREEN_STAINED_GLASS_PANE);
 			
 			/* Pagination */
 			Pagination pagination = contents.pagination();
@@ -83,40 +79,21 @@ public class MessagesOverrideCurrentListGUI implements InventoryProvider {
 			
 			/* Bottom Left Option: Previous Page */
 			if (!pagination.isFirst()) {
-				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
-					overrideMessagesSettings.open(player,
-							pagination.previous().getPage());
-				}));
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous");
 			} else {
-				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
-					ChatSettingsGUI.chatSettings.open(player);
-				}));
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {ChatSettingsGUI.chatSettings});
 			}
 			
 			/* Bottom Middle Option: Add new override */
-			ItemStack addNewOverrideButton = XMaterial.GREEN_WOOL.parseItem();
-			if (XMaterial.GREEN_GLAZED_TERRACOTTA.parseItem() != null) {
-				addNewOverrideButton = XMaterial.GREEN_GLAZED_TERRACOTTA.parseItem();
-			}
-			ItemMeta addNewOverrideMeta = addNewOverrideButton.getItemMeta();
-			addNewOverrideMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUIChatMessagesOverrideNewButton"));
-			addNewOverrideButton.setItemMeta(addNewOverrideMeta);
-			contents.set(5, 4, ClickableItem.of(addNewOverrideButton, e -> {
-				MessagesOverridePossibleListGUI.overrideNewMessageSettings.open(player);
-			}));
+			WWCInventoryManager.genericOpenSubmenuButton(5, 4, player, contents, "wwcConfigGUIChatMessagesOverrideNewButton", MessagesOverridePossibleListGUI.overrideNewMessageSettings);
 			
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {
-				contents.set(5, 6, ClickableItem.of(WWCInventoryManager.getCommonButton("Next"), e -> {
-					overrideMessagesSettings.open(player,
-							pagination.next().getPage());
-				}));
-				;
+				WWCInventoryManager.setCommonButton(5, 6, player, contents, "Next");
 			}
 			
 			/* Last Option: Page Number */
-			contents.set(5, 8, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {pagination.getPage() + 1 + ""}), e -> {}));
+			WWCInventoryManager.setCommonButton(5, 8, player, contents, "Page Number", new String[] {pagination.getPage() + 1 + ""});
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

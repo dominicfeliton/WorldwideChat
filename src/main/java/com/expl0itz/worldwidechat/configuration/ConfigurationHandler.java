@@ -230,9 +230,9 @@ public class ConfigurationHandler {
 			try {
 				SQLUtils.connect(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"), 
 						mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"), 
-						(List<String>) mainConfig.getList("Storage.sqlAdditionalArguments"), mainConfig.getBoolean("Storage.sqlUseSSL"));
+						(List<String>) mainConfig.getList("Storage.sqlOptionalArgs"), mainConfig.getBoolean("Storage.sqlUseSSL"));
 				main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigSQLSuccess"));
-			} catch (SQLException e) {
+			} catch (Exception e) {
 				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigSQLFail"));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
 				SQLUtils.disconnect(); // Just in case

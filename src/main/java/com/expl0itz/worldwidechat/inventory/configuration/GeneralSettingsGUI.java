@@ -1,10 +1,7 @@
 package com.expl0itz.worldwidechat.inventory.configuration;
 
 import org.bukkit.ChatColor;
-import org.bukkit.conversations.ConversationFactory;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
@@ -15,14 +12,11 @@ import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsUpd
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 
 public class GeneralSettingsGUI implements InventoryProvider {
-
-	private WorldwideChat main = WorldwideChat.instance;
 
 	public static final SmartInventory generalSettings = SmartInventory.builder().id("generalSettingsMenu")
 			.provider(new GeneralSettingsGUI()).size(3, 9)
@@ -34,78 +28,34 @@ public class GeneralSettingsGUI implements InventoryProvider {
 	public void init(Player player, InventoryContents contents) {
 		try {
 			/* White stained glass borders */
-			ItemStack customBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
-			ItemMeta borderMeta = customBorders.getItemMeta();
-			borderMeta.setDisplayName(" ");
-			customBorders.setItemMeta(borderMeta);
-			contents.fillBorders(ClickableItem.empty(customBorders));
+			WWCInventoryManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
 
 			/* Option One: Plugin Prefix */
-			ConversationFactory prefixConvo = new ConversationFactory(main).withModality(true)
-					.withFirstPrompt(new GeneralSettingsPrefixConversation());
-			ItemStack prefixButton = XMaterial.NAME_TAG.parseItem();
-			ItemMeta prefixMeta = prefixButton.getItemMeta();
-			prefixMeta.setDisplayName(ChatColor.GOLD
-					+ CommonDefinitions.getMessage("wwcConfigGUIPrefixButton"));
-			prefixButton.setItemMeta(prefixMeta);
-			contents.set(1, 1, ClickableItem.of(prefixButton, e -> {
-				prefixConvo.buildConversation(player).begin();
-			}));
+			WWCInventoryManager.genericConversationButton(1, 1, player, contents, new GeneralSettingsPrefixConversation(), XMaterial.NAME_TAG, "wwcConfigGUIPrefixButton");
 
 			/* Option Two: bStats */
 			WWCInventoryManager.genericToggleButton(1, 2, player, contents, "wwcConfigGUIbStatsButton", "wwcConfigConversationbStatsSuccess", "General.enablebStats");
 
 			/* Option Three: Change Plugin Lang */
-			ConversationFactory langConvo = new ConversationFactory(main).withModality(true)
-					.withFirstPrompt(new GeneralSettingsLangConversation());
-			ItemStack langButton = XMaterial.NAME_TAG.parseItem();
-			ItemMeta langMeta = langButton.getItemMeta();
-			langMeta.setDisplayName(ChatColor.GOLD
-					+ CommonDefinitions.getMessage("wwcConfigGUILangButton"));
-			langButton.setItemMeta(langMeta);
-			contents.set(1, 3, ClickableItem.of(langButton, e -> {
-				langConvo.buildConversation(player).begin();
-			}));
+			WWCInventoryManager.genericConversationButton(1, 3, player, contents, new GeneralSettingsLangConversation(), XMaterial.NAME_TAG, "wwcConfigGUILangButton");
 
 			/* Option Four: Update Checker Delay */
-			ConversationFactory updateCheckerConvo = new ConversationFactory(main).withModality(true)
-					.withFirstPrompt(new GeneralSettingsUpdateCheckerConversation());
-			ItemStack updateCheckerButton = XMaterial.NAME_TAG.parseItem();
-			ItemMeta updateCheckerMeta = updateCheckerButton.getItemMeta();
-			updateCheckerMeta.setDisplayName(ChatColor.GOLD
-					+ CommonDefinitions.getMessage("wwcConfigGUIUpdateCheckerButton"));
-			updateCheckerButton.setItemMeta(updateCheckerMeta);
-			contents.set(1, 4, ClickableItem.of(updateCheckerButton, e -> {
-				updateCheckerConvo.buildConversation(player).begin();
-			}));
+			WWCInventoryManager.genericConversationButton(1, 4, player, contents, new GeneralSettingsUpdateCheckerConversation(), XMaterial.NAME_TAG, "wwcConfigGUIUpdateCheckerButton");
 
 			/* Option Five: Sync User Data Delay */
-			ConversationFactory syncUserDataConvo = new ConversationFactory(main).withModality(true)
-					.withFirstPrompt(new GeneralSettingsSyncUserDataConversation());
-			ItemStack syncUserDataButton = XMaterial.NAME_TAG.parseItem();
-			ItemMeta syncUserDataMeta = syncUserDataButton.getItemMeta();
-			syncUserDataMeta.setDisplayName(ChatColor.GOLD
-					+ CommonDefinitions.getMessage("wwcConfigGUISyncUserDataButton"));
-			syncUserDataButton.setItemMeta(syncUserDataMeta);
-			contents.set(1, 5, ClickableItem.of(syncUserDataButton, e -> {
-				syncUserDataConvo.buildConversation(player).begin();
-			}));
+			WWCInventoryManager.genericConversationButton(1, 5, player, contents, new GeneralSettingsSyncUserDataConversation(), XMaterial.NAME_TAG, "wwcConfigGUISyncUserDataButton");
 			
 			/* Option Six: Debug Mode */
 			WWCInventoryManager.genericToggleButton(1, 6, player, contents, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess", "General.enableDebugMode");
 
 			/* Bottom Middle Option: Quit */
-			contents.set(2, 4, ClickableItem.of(WWCInventoryManager.getSaveMainConfigButton(), e -> {
-				WWCInventoryManager.saveMainConfigAndReload(player, contents);
-			}));
+			WWCInventoryManager.setCommonButton(2, 4, player, contents, "Quit");
 
 			/* Bottom Right Option: Next Page */
-			contents.set(2, 6,
-					ClickableItem.of(WWCInventoryManager.getCommonButton("Next"), 
-							e -> ChatSettingsGUI.chatSettings.open(player)));
+			WWCInventoryManager.setCommonButton(2, 6, player, contents, "Next", new Object[] {StorageSettingsGUI.storageSettings});
 			
 			/* Last Option: Page Number */
-			contents.set(2, 8, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {"1"}), e -> {}));
+			WWCInventoryManager.setCommonButton(2, 8, player, contents, "Page Number", new String[] {"1"});
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

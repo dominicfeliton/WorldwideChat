@@ -146,10 +146,6 @@ Messages:
   wwcConfigCacheInvalid: 转换器缓存大小无效。默认为 10...
   wwcInventoryErrorPlayer: 使用 GUI 检测到错误。日志已发送到控制台。
   wwcInventoryError: 用户 %i 的 GUI 检测到错误。请向开发者报告此问题。
-  wwcConfigConversationTranslatorFail: 无法启用 %i。
-  wwcConfigConversationConsoleTranslatorSuccess: 用户 %i 成功启用了 %o。
-  wwcConfigConversationTranslatorSuccess: 已成功启用 %i。
-  wwcConfigConversationConsoleTranslatorFail: 用户 %i 无法启用 %o。
   wwcSignTranslationFail: 无法翻译目标符号上的一行或多行。
   wwcBookTranslationFail: 无法翻译目标图书中的一页或多页。
   wwctiOffTarget: '%i 的商品翻译被禁用。'
@@ -170,7 +166,6 @@ Messages:
   wwcChatTranslationFail: 无法翻译你的消息。
   wwcInvalidTranslator: 翻译器设置无效。请在 config.yml 或使用 /wwcc 中修复此问题以使用此插件。
   wwcConfigGUIEachTranslatorSettings: '%i 配置'
-  wwcConfigGUIToggleButton: 切换 %i
   wwcConfigGUIWatsonButton: 沃森
   wwcServerReloadWarning: WorldwideChat 不宽恕 /reload 的使用。请谨慎行事。
   wwcConfigEnabledDebugMode: 已启用调试模式。如果你不是开发人员或疑难解答者，你应该关闭此功能。
@@ -269,3 +264,38 @@ Messages:
   wwcConfigSQLFail: 无法连接到 SQL。
   wwcConfigSQLSuccess: 已成功连接到 SQL！
   wwcConfigYAMLFallback: 正在回落到 YAML...
+  wwcConfigGUIToggleSQLButton: 切换 SQL
+  wwcConfigConversationToggleSQLSuccess: SQL 已成功切换。重新加载以使更改生效。
+  wwcConfigConversationGoogleTranslateToggleSuccess: 已成功切换谷歌翻译。重新加载以使更改生效。
+  wwcConfigYAMLDefault: 默认为 YAML 用于数据存储。
+  wwcConfigGUISQLMenuButton: 更改 SQL 设置
+  wwcConfigConversationWatsonTranslateToggleSuccess: 已成功切换 Watson 翻译。重新加载以使更改生效。
+  wwcConfigGUISQLSettings: SQL 配置
+  wwcConfigGUIToggleGoogleTranslateButton: 切换谷歌翻译
+  wwcConfigGUIToggleWatsonTranslateButton: 切换沃森翻译
+  wwcConfigGUIToggleAmazonTranslateButton: 切换亚马逊翻译
+  wwcConfigGUIStorageSettings: 存储配置
+  wwcConfigConversationAmazonTranslateToggleSuccess: 已成功切换亚马逊翻译。重新加载以使更改生效。
+  wwcConfigGUISQLPortButton: 更改 SQL 端口
+  wwcConfigGUISQLOptionalArgsButton: 更改 SQL 可选参数
+  wwcConfigConversationToggleSQLSSLSuccess: 已成功切换用于 SQL 的 SSL。
+  wwcConfigConversationSQLPortInput: 当前端口为 %i。键入 0 以外的任意值可设置新端口，或键入 0 返回。
+  wwcConfigGUISQLPasswordButton: 更改 SQL 密码
+  wwcConfigConversationSQLHostnameSuccess: 已成功更改 SQL 主机名。
+  wwcConfigConversationSQLHostnameInput: 当前的主机名是 %i。键入 0 以外的任意名称可设置新主机名，或键入 0 返回。
+  wwcConfigGUISQLHostnameButton: 更改 SQL 主机名
+  wwcConfigConversationSQLOptionalArgsSuccess: 已成功更改可选 SQL 参数。
+  wwcConfigConversationSQLPasswordSuccess: 已成功更改 SQL 密码。
+  wwcConfigConversationSQLPasswordInput: 当前密码为 %i。键入 0 以外的任何密码可设置新密码，或键入 0 以返回。
+  wwcConfigGUIToggleSQLSSLButton: 切换 SQL
+  wwcConfigConversationSQLUsernameSuccess: 已成功更改 SQL 用户名。
+  wwcConfigConversationSQLUsernameInput: 当前用户名为 %i。键入 0 以外的任何内容可设置新用户名，或键入 0 返回。
+  wwcConfigConversationSQLPortSuccess: 已成功更改 SQL 端口。
+  wwcConfigGUISQLUsernameButton: 更改 SQL 用户名
+  wwcConfigConversationSQLOptionalArgsCleared: 已成功清除可选参数。
+  wwcConfigConversationSQLOptionalArgsInput: 当前可选的 SQL 参数是： %i。键入用逗号分隔的参数（key=value，key2=value2），或者键入
+    clear 来擦除当前参数，或键入 0 返回。
+  wwcConfigConversationSQLDatabaseNameInput: 当前数据库名称为 %i。键入 0 以外的任意名称可设置新的数据库名称，或键入
+    0 以返回。
+  wwcConfigGUISQLDatabaseNameButton: 更改 SQL 数据库
+  wwcConfigConversationSQLDatabaseNameSuccess: 已成功更改 SQL 数据库名称。

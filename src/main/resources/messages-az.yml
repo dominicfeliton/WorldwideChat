@@ -180,10 +180,6 @@ Messages:
   wwcConfigCacheInvalid: Tərcüməçi önbellek ölçüsü etibarsız. 10 üçün defaulting...
   wwcInventoryErrorPlayer: Hata GUI ilə aşkar. Konsol bir günlük göndərildi.
   wwcInventoryError: İstifadəçi %i GUI ilə aşkarlanan səhv.
-  wwcConfigConversationTranslatorFail: '%i aktivləşdirə bilmədi.'
-  wwcConfigConversationConsoleTranslatorSuccess: İstifadəçi %o uğurla aktivləşdirdi.
-  wwcConfigConversationTranslatorSuccess: Uğurla aktivləşdirilmişdir %i.
-  wwcConfigConversationConsoleTranslatorFail: İstifadəçi %o aktivləşdirə bilmədi.
   wwcSignTranslationFail: Hədəf işarənizdə bir və ya daha çox xətt tərcümə etmək mümkün
     deyil.
   wwcBookTranslationFail: Hədəf kitabınızdakı bir və ya daha çox səhifəni tərcümə
@@ -208,7 +204,6 @@ Messages:
   wwcInvalidTranslator: Yanlış tərcüməçi parametrləri. Bu plugin istifadə etmək üçün
     config.yml və ya /wwcc ilə düzeltmek edin.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiqurasiya'
-  wwcConfigGUIToggleButton: '%i keçin'
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldWireChat /yeniden istifadə condone deyil. Xahiş edirik
     ehtiyatla davam edin.
@@ -331,3 +326,50 @@ Messages:
   wwcConfigSQLFail: SQL-ə qoşulmaq mümkün olmadı.
   wwcConfigSQLSuccess: SQL uğurla bağlı!
   wwcConfigYAMLFallback: YAML geri düşən...
+  wwcConfigGUIToggleSQLButton: SQL keçid
+  wwcConfigConversationToggleSQLSuccess: SQL uğurla keçdi. Dəyişikliyin qüvvəyə minməsi
+    üçün yenidən yüklə.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google Translate müvəffəqiyyətlə
+    keçdi. Dəyişikliyin qüvvəyə minməsi üçün yenidən yüklə.
+  wwcConfigYAMLDefault: məlumatların saxlanması üçün YAML üçün Defaulted.
+  wwcConfigGUISQLMenuButton: SQL Ayarlarını dəyişdirin
+  wwcConfigConversationWatsonTranslateToggleSuccess: Uğurla Watson Translate keçdi.
+    Dəyişikliyin qüvvəyə minməsi üçün yenidən yüklə.
+  wwcConfigGUISQLSettings: SQL Konfiqurasiya
+  wwcConfigGUIToggleGoogleTranslateButton: Google Translate keçid
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Tərcümə
+  wwcConfigGUIToggleAmazonTranslateButton: Amazon Tərcümə
+  wwcConfigGUIStorageSettings: Storage Konfiqurasiya
+  wwcConfigConversationAmazonTranslateToggleSuccess: Amazon Translate uğurla keçdi.
+    Dəyişikliyin qüvvəyə minməsi üçün yenidən yüklə.
+  wwcConfigGUISQLPortButton: SQL Portunu dəyişdirin
+  wwcConfigGUISQLOptionalArgsButton: SQL Könüllü Arqumentləri dəyişdirin
+  wwcConfigConversationToggleSQLSSLSuccess: SQL üçün SSL uğurla keçdi.
+  wwcConfigConversationSQLPortInput: Cari port %i. 0-dan başqa bir şey yazın, yeni
+    bir port qurmaq və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigGUISQLPasswordButton: SQL Şifrəni dəyişdirin
+  wwcConfigConversationSQLHostnameSuccess: SQL hostadını müvəffəqiyyətlə dəyişdi.
+  wwcConfigConversationSQLHostnameInput: Mövcud hostadı %i. 0-dan başqa bir şey yazın
+    yeni bir hostname təyin etmək və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigGUISQLHostnameButton: SQL Hostname dəyişdirin
+  wwcConfigConversationSQLOptionalArgsSuccess: isteğe bağlı SQL arqumentləri uğurla
+    dəyişdi.
+  wwcConfigConversationSQLPasswordSuccess: SQL parolunu müvəffəqiyyətlə dəyişdi.
+  wwcConfigConversationSQLPasswordInput: Cari parol %i. 0-dan başqa bir şey yazın
+    yeni parol təyin etmək və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL keçid
+  wwcConfigConversationSQLUsernameSuccess: SQL istifadəçi adını müvəffəqiyyətlə dəyişdi.
+  wwcConfigConversationSQLUsernameInput: Mövcud istifadəçi adı %i. 0-dan başqa bir
+    şey yazın, yeni bir istifadəçi adı təyin etmək və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigConversationSQLPortSuccess: SQL portunu müvəffəqiyyətlə dəyişdi.
+  wwcConfigGUISQLUsernameButton: SQL İstifadəçi adını dəyişdirin
+  wwcConfigConversationSQLOptionalArgsCleared: Könüllü arqumentlər uğurla təmizləndi.
+  wwcConfigConversationSQLOptionalArgsInput: 'Cari isteğe SQL arqumentlər bunlardır:
+    %i. bir vergül ayrılmış növü arqumentlər (key=dəyər, key2=value2), və ya cari
+    args silmək üçün aydın yazın, və ya növü 0 geri qayıtmaq üçün.'
+  wwcConfigConversationSQLDatabaseNameInput: Mövcud verilənlər bazası adı %i. 0-dan
+    başqa bir şey yazın yeni verilənlər bazası adını təyin etmək və ya geri qayıtmaq
+    üçün 0 yazın.
+  wwcConfigGUISQLDatabaseNameButton: SQL verilənlər bazasını dəyişdirin
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL verilənlər bazası adını müvəffəqiyyətlə
+    dəyişdi.

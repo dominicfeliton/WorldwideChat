@@ -163,10 +163,6 @@ Messages:
   wwcConfigCacheInvalid: ขนาดแคชของนักแปลไม่ถูกต้องผิดนัดที่ 10...
   wwcInventoryErrorPlayer: ข้อผิดพลาดที่ตรวจพบกับ GUI ของคุณบันทึกถูกส่งไปยังคอนโซล
   wwcInventoryError: ข้อผิดพลาดที่ตรวจพบกับ GUI ของผู้ใช้ %i โปรดรายงานปัญหานี้ไปยังผู้พัฒนา
-  wwcConfigConversationTranslatorFail: ล้มเหลวในการเปิด %i
-  wwcConfigConversationConsoleTranslatorSuccess: ผู้ใช้ %ฉันเปิด %o เรียบร้อยแล้ว
-  wwcConfigConversationTranslatorSuccess: เปิดใช้งาน %i สำเร็จแล้ว
-  wwcConfigConversationConsoleTranslatorFail: ผู้ใช้ %i ไม่สามารถเปิด %o ได้
   wwcSignTranslationFail: ไม่สามารถแปลหนึ่งบรรทัดหรือมากกว่าบนเครื่องหมายเป้าหมายของคุณ
   wwcBookTranslationFail: ไม่สามารถแปลหนึ่งหน้าหรือมากกว่าในหนังสือเป้าหมายของคุณ
   wwctiOffTarget: ปิดการแปลรายการสำหรับ %i
@@ -188,7 +184,6 @@ Messages:
   wwcInvalidTranslator: การตั้งค่าตัวแปลไม่ถูกต้องโปรดแก้ไขปัญหานี้ใน config.yml ของคุณหรือกับ
     /wwcc เพื่อใช้ปลั๊กอินนี้
   wwcConfigGUIEachTranslatorSettings: การตั้งค่าคอนฟิก %i
-  wwcConfigGUIToggleButton: เลื่อน %i
   wwcConfigGUIWatsonButton: วัตสัน
   wwcServerReloadWarning: WorldwideChat ไม่ให้อำนาจการใช้งาน/โหลดซ้ำโปรดดำเนินการด้วยความระมัดระวัง
   wwcConfigEnabledDebugMode: เปิดใช้งานโหมดดีบักหากคุณไม่ใช่นักพัฒนาซอฟต์แวร์หรือตัวแก้ไขปัญหา
@@ -301,3 +296,44 @@ Messages:
   wwcConfigSQLFail: ล้มเหลวในการเชื่อมต่อกับ SQL
   wwcConfigSQLSuccess: เชื่อมต่อกับ SQL สำเร็จแล้ว!
   wwcConfigYAMLFallback: ถอยกลับไป YAML...
+  wwcConfigGUIToggleSQLButton: สลับ SQL
+  wwcConfigConversationToggleSQLSuccess: SQL สับ เสร็จเรียบร้อยแล้วโหลดใหม่สำหรับการเปลี่ยนแปลงที่มีผล
+  wwcConfigConversationGoogleTranslateToggleSuccess: สับ Google แปลภาษาได้สำเร็จโหลดใหม่สำหรับการเปลี่ยนแปลงที่มีผล
+  wwcConfigYAMLDefault: ผิดนัดที่ YAML สำหรับการจัดเก็บข้อมูล
+  wwcConfigGUISQLMenuButton: เปลี่ยนการตั้งค่า SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: ประสบความสำเร็จในการเปลี่ยนวัตสันแปลภาษาโหลดใหม่สำหรับการเปลี่ยนแปลงที่มีผล
+  wwcConfigGUISQLSettings: การกำหนดค่า SQL
+  wwcConfigGUIToggleGoogleTranslateButton: สลับ กูเกิ้ล แปลภาษา
+  wwcConfigGUIToggleWatsonTranslateButton: สลับวัตสันแปล
+  wwcConfigGUIToggleAmazonTranslateButton: สลับอเมซอนแปล
+  wwcConfigGUIStorageSettings: การกำหนดค่าการจัดเก็บข้อมูล
+  wwcConfigConversationAmazonTranslateToggleSuccess: ประสบความสำเร็จในการเปลี่ยนอเมซอนแปลโหลดใหม่สำหรับการเปลี่ยนแปลงที่มีผล
+  wwcConfigGUISQLPortButton: เปลี่ยนพอร์ต SQL
+  wwcConfigGUISQLOptionalArgsButton: เปลี่ยนอาร์กิวเมนต์ตัวเลือก SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL สำหรับ SQL การย้ายเสร็จเรียบร้อยแล้ว
+  wwcConfigConversationSQLPortInput: พอร์ตปัจจุบันคือ %i พิมพ์สิ่งอื่นที่ไม่ใช่ 0
+    เพื่อตั้งค่าพอร์ตใหม่ หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUISQLPasswordButton: เปลี่ยนรหัสผ่าน SQL
+  wwcConfigConversationSQLHostnameSuccess: เปลี่ยนชื่อโฮสต์ SQL เรียบร้อยแล้ว
+  wwcConfigConversationSQLHostnameInput: ชื่อโฮสต์ปัจจุบันคือ %i พิมพ์สิ่งอื่นที่ไม่ใช่
+    0 เพื่อตั้งชื่อโฮสต์ใหม่ หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUISQLHostnameButton: เปลี่ยนชื่อโฮสต์ SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: ประสบความสำเร็จในการเปลี่ยนแปลงข้อโต้แย้ง
+    SQL ตัวเลือก
+  wwcConfigConversationSQLPasswordSuccess: เปลี่ยนรหัสผ่าน SQL เรียบร้อยแล้ว
+  wwcConfigConversationSQLPasswordInput: รหัสผ่านปัจจุบันคือ %i พิมพ์สิ่งอื่นที่ไม่ใช่
+    0 เพื่อตั้งรหัสผ่านใหม่ หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUIToggleSQLSSLButton: สลับ SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: เปลี่ยนชื่อผู้ใช้ SQL เรียบร้อยแล้ว
+  wwcConfigConversationSQLUsernameInput: ชื่อผู้ใช้ปัจจุบันคือ %i พิมพ์สิ่งอื่นที่ไม่ใช่
+    0 เพื่อตั้งค่าชื่อผู้ใช้ใหม่ หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigConversationSQLPortSuccess: เปลี่ยนพอร์ต SQL เรียบร้อยแล้ว
+  wwcConfigGUISQLUsernameButton: เปลี่ยนชื่อผู้ใช้ SQL
+  wwcConfigConversationSQLOptionalArgsCleared: อาร์กิวเมนต์ตัวเลือกล้างประสบความสำเร็จ
+  wwcConfigConversationSQLOptionalArgsInput: 'อาร์กิวเมนต์ SQL ตัวเลือกในปัจจุบันคือ:
+    %i อาร์กิวเมนต์ชนิดคั่นด้วยเครื่องหมายจุลภาค (คีย์ = ค่าคีย์ 2 = value2) หรือพิมพ์ชัดเจนเพื่อเช็ดหาเรื่องปัจจุบันหรือพิมพ์
+    0 เพื่อกลับไป'
+  wwcConfigConversationSQLDatabaseNameInput: ชื่อฐานข้อมูลปัจจุบันคือ %i พิมพ์สิ่งอื่นที่ไม่ใช่
+    0 เพื่อตั้งชื่อฐานข้อมูลใหม่หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUISQLDatabaseNameButton: เปลี่ยนฐานข้อมูล SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: เปลี่ยนชื่อฐานข้อมูล SQL เสร็จเรียบร้อยแล้ว

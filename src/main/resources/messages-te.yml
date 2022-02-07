@@ -183,11 +183,6 @@ Messages:
   wwcInventoryErrorPlayer: లోపం మీ GUI తో కనుగొనబడింది. ఒక లాగ్ కన్సోల్కు పంపబడింది.
   wwcInventoryError: యూజర్ %i యొక్క GUI తో కనుగొనబడిన దోషం దయచేసి ఈ సమస్యను డెవలపర్కు
     నివేదించండి.
-  wwcConfigConversationTranslatorFail: '%i ను ఎనేబుల్ చేయడంలో విఫలమైంది.'
-  wwcConfigConversationConsoleTranslatorSuccess: వాడుకరి %i విజయవంతంగా %o ను ఎనేబుల్
-    చేస్తుంది.
-  wwcConfigConversationTranslatorSuccess: విజయవంతంగా %i ను ఎనేబుల్ చేయండి.
-  wwcConfigConversationConsoleTranslatorFail: వాడుకరి %o ను ఎనేబుల్ చేయడంలో నేను విఫలమయ్యాను.
   wwcSignTranslationFail: మీ లక్ష్య చిహ్నంపై ఒకటి లేదా అంతకంటే ఎక్కువ పంక్తులను అనువదించడం
     సాధ్యం కాదు.
   wwcBookTranslationFail: మీ లక్ష్య పుస్తకంలో ఒకటి లేదా అంతకంటే ఎక్కువ పేజీలను అనువదించడం
@@ -212,7 +207,6 @@ Messages:
   wwcInvalidTranslator: చెల్లని అనువాదకుడు సెట్టింగులు. ఈ ప్లగ్ఇన్ ఉపయోగించడానికి
     మీ config.yml లేదా /wwcc తో ఈ పరిష్కరించడానికి దయచేసి.
   wwcConfigGUIEachTranslatorSettings: '%i ఆకృతీకరణ'
-  wwcConfigGUIToggleButton: టోగుల్ %i
   wwcConfigGUIWatsonButton: వాట్సన్
   wwcServerReloadWarning: ప్రపంచవ్యాప్తచాట్/రీలోడ్ వాడుక condone లేదు. దయచేసి జాగ్రత్తతో
     కొనసాగండి.
@@ -334,3 +328,51 @@ Messages:
   wwcConfigSQLFail: SQL కు కనెక్ట్ చేయడంలో విఫలమైంది.
   wwcConfigSQLSuccess: విజయవంతంగా SQL కనెక్ట్!
   wwcConfigYAMLFallback: YAML తిరిగి పడిపోవడం...
+  wwcConfigGUIToggleSQLButton: SQL టోగుల్
+  wwcConfigConversationToggleSQLSuccess: SQL విజయవంతంగా toggled. మార్పు అమలులోకి రావడానికి
+    రీలోడ్ చేయండి.
+  wwcConfigConversationGoogleTranslateToggleSuccess: విజయవంతంగా Google Translate toggled.
+    మార్పు అమలులోకి రావడానికి రీలోడ్ చేయండి.
+  wwcConfigYAMLDefault: డేటా నిల్వ కోసం YAML కు డిఫాల్టెడ్.
+  wwcConfigGUISQLMenuButton: SQL సెట్టింగులను మార్చండి
+  wwcConfigConversationWatsonTranslateToggleSuccess: విజయవంతంగా వాట్సన్ ట్రాన్స్లేట్
+    toggled. మార్పు అమలులోకి రావడానికి రీలోడ్ చేయండి.
+  wwcConfigGUISQLSettings: SQL ఆకృతీకరణ
+  wwcConfigGUIToggleGoogleTranslateButton: Google Translate టోగుల్
+  wwcConfigGUIToggleWatsonTranslateButton: వాట్సన్ అనువదించు టోగుల్
+  wwcConfigGUIToggleAmazonTranslateButton: అమెజాన్ అనువదించు టోగుల్
+  wwcConfigGUIStorageSettings: నిల్వ ఆకృతీకరణ
+  wwcConfigConversationAmazonTranslateToggleSuccess: అమెజాన్ అనువదించు విజయవంతంగా
+    toggled. మార్పు అమలులోకి రావడానికి రీలోడ్ చేయండి.
+  wwcConfigGUISQLPortButton: SQL పోర్ట్ మార్చండి
+  wwcConfigGUISQLOptionalArgsButton: SQL ఐచ్ఛిక వాదనలు మార్చండి
+  wwcConfigConversationToggleSQLSSLSuccess: SQL కోసం SSL విజయవంతంగా toggled.
+  wwcConfigConversationSQLPortInput: ప్రస్తుత పోర్ట్ %i. కొత్త పోర్ట్ సెట్ చేయడానికి
+    0 కాకుండా వేరే ఏదైనా టైప్ చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigGUISQLPasswordButton: SQL పాస్వర్డ్ను మార్చండి
+  wwcConfigConversationSQLHostnameSuccess: విజయవంతంగా SQL హోస్ట్ పేరు మార్చబడింది.
+  wwcConfigConversationSQLHostnameInput: ప్రస్తుత హోస్ట్పేరు %i., కొత్త హోస్ట్నేమ్
+    సెట్ చేయడానికి 0 కాకుండా మరేదైనా టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్
+    చేయండి.
+  wwcConfigGUISQLHostnameButton: SQL హోటల్ పేరు మార్చండి
+  wwcConfigConversationSQLOptionalArgsSuccess: విజయవంతంగా ఐచ్ఛిక SQL వాదనలు మార్చబడింది.
+  wwcConfigConversationSQLPasswordSuccess: విజయవంతంగా SQL పాస్వర్డ్ను మార్చబడింది.
+  wwcConfigConversationSQLPasswordInput: ప్రస్తుత పాస్వర్డ్ %i. కొత్త పాస్వర్డ్ను
+    సెట్ చేయడానికి 0 కాకుండా వేరే ఏదైనా టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని
+    టైప్ చేయండి.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL టోగుల్
+  wwcConfigConversationSQLUsernameSuccess: విజయవంతంగా SQL వినియోగదారు పేరు మార్చబడింది.
+  wwcConfigConversationSQLUsernameInput: ప్రస్తుత వాడుకరిపేరు %i. కొత్త వాడుకరిపేరును
+    సెట్ చేయడానికి 0 కాకుండా మరేదైనా టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్
+    చేయండి.
+  wwcConfigConversationSQLPortSuccess: విజయవంతంగా SQL పోర్ట్ మార్చబడింది.
+  wwcConfigGUISQLUsernameButton: SQL వినియోగదారు పేరు మార్చండి
+  wwcConfigConversationSQLOptionalArgsCleared: ఐచ్ఛిక వాదనలు విజయవంతంగా క్లియర్.
+  wwcConfigConversationSQLOptionalArgsInput: 'ప్రస్తుత ఐచ్ఛిక SQL వాదనలు: %i. కామాతో
+    వేరు చేయబడిన వాదనలు (key=value, key2=value2), లేదా ప్రస్తుత అర్గ్లను తుడిచివేయడానికి
+    స్పష్టమైన టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.'
+  wwcConfigConversationSQLDatabaseNameInput: ప్రస్తుత డేటాబేస్ పేరు %i., కొత్త డేటాబేస్
+    పేరును సెట్ చేయడానికి 0 కాకుండా వేరే ఏదైనా టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి
+    0 అని టైప్ చేయండి.
+  wwcConfigGUISQLDatabaseNameButton: SQL డేటాబేస్ మార్చండి
+  wwcConfigConversationSQLDatabaseNameSuccess: విజయవంతంగా SQL డేటాబేస్ పేరు మార్చబడింది.

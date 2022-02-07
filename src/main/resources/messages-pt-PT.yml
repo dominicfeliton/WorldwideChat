@@ -134,8 +134,6 @@ Messages:
   wwctrlRateLimitSetTarget: Defina o limite de taxa de %i para %o segundos.
   wwcConfigGUIMessagesOverrideCustomLabel: Nova Mensagem
   wwcGUITempItem: Visualização de itens
-  wwcConfigConversationConsoleTranslatorSuccess: O utilizador %i activou com êxito
-    %o.
   wwcBookTranslationFail: Não é possível traduzir uma ou mais páginas no seu livro
     de destino.
   wwcConfigConversationGoogleTranslateAPIKeyInput: A chave API atual é %i. Introduza
@@ -146,7 +144,6 @@ Messages:
     atrás.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: A chave API do Google Translate
     definida com sucesso.
-  wwcConfigConversationTranslatorSuccess: Ativado com êxito %i.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Alterar chave secreta da Amazon
   wwcInvalidTranslator: Definições do tradutor inválidas. Por favor corrija isto na
     sua config.yml ou com /wwcc para utilizar este plugin.
@@ -159,7 +156,6 @@ Messages:
   wwcOnJoinTranslationNotificationNoSourceLang: Tem uma sessão ativa de tradução para
     %o.
   wwcTranslatorError: Ocorreu um problema ao tentar a tradução. Por favor tente novamente.
-  wwcConfigConversationTranslatorFail: Falha ao activar %i.
   wwcUserDataReloaded: Carregado todos os dados de utilizador guardados.
   wwcteOffSender: Tradução de entidade deficiente.
   wwcsLastTranslationTime: 'Último Tempo de Tradução (Sucesso): %i'
@@ -186,8 +182,6 @@ Messages:
   wwcsNotATranslator: Ainda não existem registos disponíveis para %i.
   wwcConfigGUIbStatsButton: Alternar bStats
   wwctGUINewTranslationSource: Escolha um idioma de origem
-  wwcConfigConversationConsoleTranslatorFail: O utilizador %i não conseguiu ativar
-    %o.
   wwctGUIMainMenuPlayer: Menu Tradução de %i
   wwctGUIBookButton: Alternar Tradução
   wwcConfigGUIDebugModeButton: Alternar Modo de Debug
@@ -313,7 +307,6 @@ Messages:
     Activo no Login
   wwcConfigSyncDelayInvalid: Atraso de sincronização de dados de utilizador inválido
     definido no config.yml. Predefinida para 7200 segundos...
-  wwcConfigGUIToggleButton: Alternar %i
   wwcConfigConversationAmazonTranslateAccessKeySuccess: Chave de acesso Amazon definida
     com sucesso.
   wwcConfigBadUpdateDelay: Atraso de actualização inválido definido em config.yml.
@@ -351,3 +344,55 @@ Messages:
   wwcConfigSQLFail: Falha ao conectar ao SQL.
   wwcConfigSQLSuccess: Conectado com sucesso ao SQL!
   wwcConfigYAMLFallback: A cair para o YAML...
+  wwcConfigGUIToggleSQLButton: Alternar SQL
+  wwcConfigConversationToggleSQLSuccess: O SQL alternou com sucesso. Recarga para
+    que a alteração entre em vigor.
+  wwcConfigConversationGoogleTranslateToggleSuccess: O Google Translate foi alternado
+    com sucesso. Recarga para que a alteração entre em vigor.
+  wwcConfigYAMLDefault: Predefinida para YAML para armazenamento de dados.
+  wwcConfigGUISQLMenuButton: Alterar configurações do SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Translate Watson alternado com
+    sucesso. Recarga para que a alteração entre em vigor.
+  wwcConfigGUISQLSettings: Configuração SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Alternar Google Tradutor
+  wwcConfigGUIToggleWatsonTranslateButton: Alternar Watson Traduzir
+  wwcConfigGUIToggleAmazonTranslateButton: Alternar Amazon Tradutor
+  wwcConfigGUIStorageSettings: Configuração do armazenamento
+  wwcConfigConversationAmazonTranslateToggleSuccess: O Amazon Tradutor alterou com
+    sucesso. Recarga para que a alteração entre em vigor.
+  wwcConfigGUISQLPortButton: Alterar Porta SQL
+  wwcConfigGUISQLOptionalArgsButton: Alterar argumentos opcionais SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL para SQL alternado com sucesso.
+  wwcConfigConversationSQLPortInput: A porta actual é %i. Digite qualquer outra coisa
+    que não 0 para definir uma nova porta ou digite 0 para voltar atrás.
+  wwcConfigGUISQLPasswordButton: Alterar senha SQL
+  wwcConfigConversationSQLHostnameSuccess: Alterado com sucesso o hostname do SQL.
+  wwcConfigConversationSQLHostnameInput: O nome do sistema anfitrião atual é %i. Digite
+    qualquer outra coisa que não 0 para definir um novo nome do sistema anfitrião
+    ou digite 0 para voltar atrás.
+  wwcConfigGUISQLHostnameButton: Alterar SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Alterados com sucesso os argumentos
+    SQL opcionais.
+  wwcConfigConversationSQLPasswordSuccess: Alterada com sucesso a senha SQL.
+  wwcConfigConversationSQLPasswordInput: A palavra-passe actual é %i. Introduza qualquer
+    outra coisa que não 0 para definir uma nova palavra-passe ou introduza 0 para
+    voltar atrás.
+  wwcConfigGUIToggleSQLSSLButton: Alternar SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Alterado com sucesso o nome de usuário
+    SQL.
+  wwcConfigConversationSQLUsernameInput: O nome de utilizador actual é %i. Digite
+    qualquer outra coisa que não 0 para definir um novo nome de utilizador ou digite
+    0 para voltar atrás.
+  wwcConfigConversationSQLPortSuccess: Alterada com êxito a porta SQL.
+  wwcConfigGUISQLUsernameButton: Alterar SQL Username
+  wwcConfigConversationSQLOptionalArgsCleared: Argumentos opcionais eliminados com
+    sucesso.
+  wwcConfigConversationSQLOptionalArgsInput: 'Os argumentos SQL opcionais atuais são:
+    %i. Tipos de argumentos separados por uma vírgula (key=value, key2=value2) ou
+    digite clear para limpar os arcos atuais ou digite 0 para voltar atrás.'
+  wwcConfigConversationSQLDatabaseNameInput: O nome atual do banco de dados é %i.
+    Digite qualquer outra coisa que não 0 para definir um novo nome de banco de dados
+    ou digite 0 para voltar atrás.
+  wwcConfigGUISQLDatabaseNameButton: Alterar a base de dados do
+  wwcConfigConversationSQLDatabaseNameSuccess: Alterado com sucesso o nome do banco
+    de dados SQL

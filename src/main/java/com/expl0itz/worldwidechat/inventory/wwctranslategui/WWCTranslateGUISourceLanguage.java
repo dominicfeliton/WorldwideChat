@@ -46,14 +46,10 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 	public void init(Player player, InventoryContents contents) {
 		try {
 			/* Default white stained glass borders for inactive, yellow if player has existing translation session */
-			ItemStack customDefaultBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
+			WWCInventoryManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
 			if (!main.getActiveTranslator(targetPlayerUUID).getInLangCode().equals("")) {
-				customDefaultBorders = XMaterial.YELLOW_STAINED_GLASS_PANE.parseItem();
+				WWCInventoryManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
 			}
-			ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
-			defaultBorderMeta.setDisplayName(" ");
-			customDefaultBorders.setItemMeta(defaultBorderMeta);
-			contents.fillBorders(ClickableItem.empty(customDefaultBorders));
 			
 			/* Init current active translator */
 			ActiveTranslator currTranslator = main.getActiveTranslator(targetPlayerUUID);
@@ -95,18 +91,6 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 			pagination.setItemsPerPage(28);
 			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 1, 1).allowOverride(false));
 
-			/* Bottom Left Option: Previous Page */
-			if (!pagination.isFirst()) {
-				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
-					getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player,
-							pagination.previous().getPage());
-				}));
-			} else {
-				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
-					WWCTranslateGUIMainMenu.getTranslateMainMenu(targetPlayerUUID).open(player);
-				}));
-			}
-
 			/* Bottom Middle Option: Auto-detect Source Language */
 			/* Disabled for Amazon Translate */
 			if (!main.getTranslatorName().equalsIgnoreCase("Amazon Translate")) {
@@ -130,17 +114,20 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 						.getTargetLanguageInventory("None", targetPlayerUUID).open(player)));
 			}
 
+			/* Bottom Left Option: Previous Page */
+			if (!pagination.isFirst()) {
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID)});
+			} else {
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {WWCTranslateGUIMainMenu.getTranslateMainMenu(targetPlayerUUID)});
+			}
+			
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {
-				contents.set(5, 6, ClickableItem.of(WWCInventoryManager.getCommonButton("Next"), e -> {
-					getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player,
-							pagination.next().getPage());
-				}));
-				;
+				WWCInventoryManager.setCommonButton(5, 6, player, contents, "Next");
 			}
 			
 			/* Last Option: Page Number */
-			contents.set(5, 8, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {pagination.getPage() + 1 + ""}), e -> {}));
+			WWCInventoryManager.setCommonButton(5, 8, player, contents, "Page Number", new String[] {pagination.getPage() + 1 + ""});
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

@@ -160,10 +160,6 @@ Messages:
   wwcConfigCacheInvalid: ተርጓሚ መሸጎጫ መጠን ልክ ያልሆነ። ወደ ነባር 10...
   wwcInventoryErrorPlayer: ስህተት በእርስዎ GUI ጋር ተገኝቷል። አንድ ምዝግብ ወደ መሥሪያው ተልኳል።
   wwcInventoryError: በተጠቃሚ %i GUI ላይ ስህተት ተገኝቷል። እባክዎ ይህን ችግር ለገንቢው ሪፖርት ያድርጉ።
-  wwcConfigConversationTranslatorFail: ማንቃቱ አልተቻለም %i።
-  wwcConfigConversationConsoleTranslatorSuccess: ተጠቃሚ %o በተሳካ ሁኔታ ማንቃት %o።
-  wwcConfigConversationTranslatorSuccess: በተሳካ ሁኔታ ማንቃት %i።
-  wwcConfigConversationConsoleTranslatorFail: ተጠቃሚ %o ን ማንቃቴ አልቻልኩም %o።
   wwcSignTranslationFail: በዒላማ ምልክትዎ ላይ አንድ ወይም ከዚያ በላይ መስመሮችን መተርጎም አልተቻለም።
   wwcBookTranslationFail: በዒላማ መጽሐፍዎ ውስጥ አንድ ወይም ከዚያ በላይ ገጾች መተርጎም አልተቻለም።
   wwctiOffTarget: ንጥል ትርጉም ተሰናክሏል ለ %i።
@@ -185,7 +181,6 @@ Messages:
   wwcInvalidTranslator: ልክ ያልሆነ ተርጓሚ ቅንብሮች። እባክዎ ይህን ፕለጊን ለመጠቀም በ config.yml ወይም በ
     /wwcc ውስጥ ያስተካክሉት።
   wwcConfigGUIEachTranslatorSettings: '%i ውቅር'
-  wwcConfigGUIToggleButton: መቀያየ %i
   wwcConfigGUIWatsonButton: ዋትሰን
   wwcServerReloadWarning: WorldwideChat የ /ዳግም ጫን አጠቃቀም ኮንዶም አይደለም። እባክዎ በጥንቃቄ ይቀጥሉ።
   wwcConfigEnabledDebugMode: ነቅቷል የማረም ሁነታ ገንቢ ወይም መላ መፈለጊያ ካልሆኑ ይህን ማጥፋት አለብዎት።
@@ -294,3 +289,46 @@ Messages:
   wwcConfigSQLFail: ከ SQL ጋር መገናኘት አልተሳካም።
   wwcConfigSQLSuccess: SQL ጋር በተሳካ ሁኔታ ተገናኝቷል!
   wwcConfigYAMLFallback: ወደ ያምል ተመልሶ መውደቅ...
+  wwcConfigGUIToggleSQLButton: SQL ቀያይር
+  wwcConfigConversationToggleSQLSuccess: SQL በተሳካ ሁኔታ ቀይሯል። ለውጡ ተግባራዊ እንዲሆን ዳግም ይጫኑ።
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google ተርጉም በተሳካ ሁኔታ ቀይረዋል። ለውጡ
+    ተግባራዊ እንዲሆን ዳግም ይጫኑ።
+  wwcConfigYAMLDefault: የውሂብ ማከማቻ YAML ወደ ነባር።
+  wwcConfigGUISQLMenuButton: የ SQL ቅንብሮችን ይቀይሩ
+  wwcConfigConversationWatsonTranslateToggleSuccess: በተሳካ ሁኔታ ዋትሰን ተርጉም ቀይረዋል። ለውጡ
+    ተግባራዊ እንዲሆን ዳግም ይጫኑ።
+  wwcConfigGUISQLSettings: SQL ውቅር
+  wwcConfigGUIToggleGoogleTranslateButton: ጉግል ተርጉም ቀይር
+  wwcConfigGUIToggleWatsonTranslateButton: ዋትሰን ተርጉም ቀያይር
+  wwcConfigGUIToggleAmazonTranslateButton: የአማዞን ተርጉም ቀያይር
+  wwcConfigGUIStorageSettings: የማከማቻ ውቅር
+  wwcConfigConversationAmazonTranslateToggleSuccess: በተሳካ ሁኔታ የአማዞን ተርጉም ቀይረዋል። ለውጡ
+    ተግባራዊ እንዲሆን ዳግም ይጫኑ።
+  wwcConfigGUISQLPortButton: SQL ወደብ ይቀይሩ
+  wwcConfigGUISQLOptionalArgsButton: የ SQL አማራጭ ክርክሮችን ይቀይሩ
+  wwcConfigConversationToggleSQLSSLSuccess: SSL ለ SQL በተሳካ ሁኔታ ቀይረዋል።
+  wwcConfigConversationSQLPortInput: የአሁኑ ወደብ ነው %i ነው። አዲስ ወደብ ለማዘጋጀት ከ 0 ሌላ ማንኛውንም
+    ነገር ይተይቡ፣ ወይም ወደ ኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigGUISQLPasswordButton: የ SQL ይለፍ ቃል ይቀይሩ
+  wwcConfigConversationSQLHostnameSuccess: የ SQL አስተናጋጅ ስም በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigConversationSQLHostnameInput: የአሁኑ የአስተናጋጅ ስም ነው %i አዲስ የአስተናጋጅ ስም ለማዘጋጀት
+    ከ 0 ሌላ ማንኛውንም ነገር ይተይቡ, ወይም ወደ ኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigGUISQLHostnameButton: SQL አስተናጋጅ ስም ይቀይሩ
+  wwcConfigConversationSQLOptionalArgsSuccess: በተሳካ ሁኔታ አማራጭ SQL እሴቶች ተለውጧል።
+  wwcConfigConversationSQLPasswordSuccess: የ SQL ይለፍ ቃል በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigConversationSQLPasswordInput: የአሁኑ የይለፍ ቃል ነው %i አዲስ የይለፍ ቃል ለማዘጋጀት ከ 0
+    ሌላ ማንኛውንም ነገር ይተይቡ ወይም ወደ ኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL ን ቀይር
+  wwcConfigConversationSQLUsernameSuccess: የ SQL የተጠቃሚ ስም በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigConversationSQLUsernameInput: የአሁኑ የተጠቃሚ ስም ነው %i ነው። አዲስ የተጠቃሚ ስም ለማዘጋጀት
+    ከ 0 ሌላ ነገር ይተይቡ፣ ወይም ተይብ 0 ተይቡ።
+  wwcConfigConversationSQLPortSuccess: የ SQL ወደብ በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigGUISQLUsernameButton: የ SQL የተጠቃሚ ስም ይቀይሩ
+  wwcConfigConversationSQLOptionalArgsCleared: አማራጭ ክርክሮች በተሳካ ሁኔታ ጸድቷል።
+  wwcConfigConversationSQLOptionalArgsInput: 'የአሁኑ አማራጭ የ SQL ክርክሮች የሚከተሉት ናቸው: %i.
+    በኮማ የተለዩ ክርክሮች (ቁልፍ =ዋጋ, key2=value2) ወይም የአሁኑን አርግስ ለማጥራት ግልጽ ይተይቡ, ወይም ወደ ኋላ
+    ለመመለስ 0 ይተይቡ።'
+  wwcConfigConversationSQLDatabaseNameInput: የአሁኑ የውሂብ ጎታ ስም ነው %i። አዲስ የውሂብ ጎታ ስም
+    ለማዘጋጀት ከ 0 ሌላ ማንኛውንም ነገር ይተይቡ፣ ወይም ተይብ 0 ተይቡ።
+  wwcConfigGUISQLDatabaseNameButton: SQL ዳታቤዝ ይቀይሩ
+  wwcConfigConversationSQLDatabaseNameSuccess: የ SQL የውሂብ ጎታ ስም በተሳካ ሁኔታ ቀይሯል

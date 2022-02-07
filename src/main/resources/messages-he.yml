@@ -165,10 +165,6 @@ Messages:
   wwcConfigCacheInvalid: גודל המטמון מתרגם לא חוקי. ברירת מחדל ל- 10...
   wwcInventoryErrorPlayer: אירעה שגיאה עם ממשק המשתמש שלך. יומן רישום נשלח לקונסולה.
   wwcInventoryError: אירעה שגיאה עם GUI של המשתמש %i. אנא דווח על בעיה זו למפתח.
-  wwcConfigConversationTranslatorFail: נכשלה בהפעלת %i.
-  wwcConfigConversationConsoleTranslatorSuccess: המשתמש %i אפשור %o בהצלחה.
-  wwcConfigConversationTranslatorSuccess: אפשור %i בהצלחה.
-  wwcConfigConversationConsoleTranslatorFail: המשתמש % נכשלתי בהפעלת את %o.
   wwcSignTranslationFail: אין אפשרות לתרגם שורה אחת או יותר על סימן היעד שלך.
   wwcBookTranslationFail: לא ניתן לתרגם דף אחד או יותר בספר היעד שלך.
   wwctiOffTarget: תרגום פריט מושבת עבור %i.
@@ -191,7 +187,6 @@ Messages:
   wwcInvalidTranslator: הגדרות מתרגם לא חוקיות. אנא תקן זאת ב- config.yml שלך או עם
     /wwcc כדי להשתמש בתוסף זה.
   wwcConfigGUIEachTranslatorSettings: '%i תצורה'
-  wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: ווטסון
   wwcServerReloadWarning: WorldwideChat אינו מגנה על השימוש ב/reloade. אנא המשיכו
     בזהירות.
@@ -304,3 +299,46 @@ Messages:
   wwcConfigSQLFail: התחברות ל- SQL נכשלה.
   wwcConfigSQLSuccess: מחובר בהצלחה ל- SQL!
   wwcConfigYAMLFallback: נפילה חזרה ל- YAML...
+  wwcConfigGUIToggleSQLButton: החלף SQL
+  wwcConfigConversationToggleSQLSuccess: SQL עבר בהצלחה. רענן כדי שהשינוי ייכנס לתוקף.
+  wwcConfigConversationGoogleTranslateToggleSuccess: החלף בהצלחה את Google Translate.
+    רענן כדי שהשינוי ייכנס לתוקף.
+  wwcConfigYAMLDefault: ברירת המחדל ל- YAML לאחסון נתונים.
+  wwcConfigGUISQLMenuButton: שינוי הגדרות SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: בהצלחה לעבור ווטסון לתרגם. רענן
+    כדי שהשינוי ייכנס לתוקף.
+  wwcConfigGUISQLSettings: תצורת SQL
+  wwcConfigGUIToggleGoogleTranslateButton: החלפת גוגל תרגם
+  wwcConfigGUIToggleWatsonTranslateButton: החלפת ווטסון תרגם
+  wwcConfigGUIToggleAmazonTranslateButton: לעבור אמזון לתרגם
+  wwcConfigGUIStorageSettings: תצורת אחסון
+  wwcConfigConversationAmazonTranslateToggleSuccess: בהצלחה לעבור אמזון תרגם. רענן
+    כדי שהשינוי ייכנס לתוקף.
+  wwcConfigGUISQLPortButton: שינוי יציאת SQL
+  wwcConfigGUISQLOptionalArgsButton: שינוי ארגומנטים אופציונליים SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL עבור SQL החלף בהצלחה.
+  wwcConfigConversationSQLPortInput: היציאה הנוכחית היא %i. הקלד כל דבר אחר מאשר 0
+    כדי להגדיר יציאה חדשה, או הקלד 0 כדי לחזור.
+  wwcConfigGUISQLPasswordButton: שינוי סיסמת SQL
+  wwcConfigConversationSQLHostnameSuccess: שינה בהצלחה את שם המארח של SQL.
+  wwcConfigConversationSQLHostnameInput: שם המארח הנוכחי הוא %i. הקלד כל דבר אחר מאשר
+    0 כדי להגדיר שם מארח חדש, או הקלד 0 כדי לחזור.
+  wwcConfigGUISQLHostnameButton: שינוי שם מארח SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: שינה בהצלחה את הארגומנטים SQL האופציונליים.
+  wwcConfigConversationSQLPasswordSuccess: שינה בהצלחה את סיסמת SQL.
+  wwcConfigConversationSQLPasswordInput: הסיסמה הנוכחית היא %i. הקלד כל דבר אחר מאשר
+    0 כדי להגדיר סיסמה חדשה, או הקלד 0 כדי לחזור.
+  wwcConfigGUIToggleSQLSSLButton: החלפת SSL של SQL
+  wwcConfigConversationSQLUsernameSuccess: שינה בהצלחה את שם המשתמש של SQL.
+  wwcConfigConversationSQLUsernameInput: שם המשתמש הנוכחי הוא %i. הקלד כל דבר אחר
+    מאשר 0 כדי להגדיר שם משתמש חדש, או הקלד 0 כדי לחזור.
+  wwcConfigConversationSQLPortSuccess: שינה בהצלחה את יציאת SQL.
+  wwcConfigGUISQLUsernameButton: שינוי שם משתמש של SQL
+  wwcConfigConversationSQLOptionalArgsCleared: טיעונים אופציונליים ניקו בהצלחה
+  wwcConfigConversationSQLOptionalArgsInput: 'הארגומנטים הנוכחיים האופציונליים של
+    SQL הם: %i סוג ארגומנטים מופרדים באמצעות פסיק (key=value, key2 = value2), או הקלד
+    נקה כדי למחוק את args הנוכחי, או הקלד 0 כדי לחזור.'
+  wwcConfigConversationSQLDatabaseNameInput: שם מסד הנתונים הנוכחי הוא %i. הקלד כל
+    דבר אחר מאשר 0 כדי להגדיר שם מסד נתונים חדש, או הקלד 0 כדי לחזור.
+  wwcConfigGUISQLDatabaseNameButton: שינוי מסד הנתונים של SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: שינה בהצלחה את שם מסד הנתונים של SQL.
