@@ -16,6 +16,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import com.cryptomorin.xseries.XEnchantment;
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
+
 import org.bukkit.scheduler.BukkitRunnable;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
@@ -101,7 +102,7 @@ public class WWCInventoryManager extends InventoryManager {
 				pageMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
 			}
 			pageButton.setItemMeta(pageMeta);
-			contents.set(x, y, ClickableItem.of(pageButton, e -> {}));
+			contents.set(x, y, ClickableItem.empty(pageButton));
 		} else if (buttonType.equalsIgnoreCase("Quit")) {
 			pageButton = XMaterial.BARRIER.parseItem();
 			pageMeta = pageButton.getItemMeta();
@@ -118,6 +119,7 @@ public class WWCInventoryManager extends InventoryManager {
 	}
 
 	private static void saveMainConfigAndReload(Player player, InventoryContents content) {
+		/* Kick this player out of the GUI */
 		main.removePlayerUsingConfigurationGUI(player);
 		player.closeInventory();
 		
