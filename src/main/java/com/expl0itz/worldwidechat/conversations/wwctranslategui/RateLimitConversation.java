@@ -38,7 +38,7 @@ public class RateLimitConversation extends NumericPrompt {
 			rateCommand = new WWCTranslateRateLimit(((CommandSender) context.getForWhom()), null,
 					null, new String[] {Bukkit.getPlayer(UUID.fromString(currTranslator.getUUID())).getName(), input.intValue() + ""});
 			rateCommand.processCommand();
-		} else if (input.intValue() <= 0) { // Disable rate limit
+		} else if (input.intValue() == 0) { // Disable rate limit
 			rateCommand = new WWCTranslateRateLimit(((CommandSender) context.getForWhom()), null,
 					null, new String[] {Bukkit.getPlayer(UUID.fromString(currTranslator.getUUID())).getName()});
 			rateCommand.processCommand();
