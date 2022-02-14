@@ -62,9 +62,9 @@ public class WorldwideChat extends JavaPlugin {
 	/* Vars */
 	public static final int bStatsID = 10562;
 	//TODO: Get fatal abort seconds to be configurable
-	public static final int translatorConnectionTimeoutSeconds = 5;
-	public static final int translatorFatalAbortSeconds = 8;
-	public static final int asyncTasksTimeoutSeconds = 3;
+	public static final int translatorFatalAbortSeconds = 10;
+	public static final int translatorConnectionTimeoutSeconds = 7;
+	public static final int asyncTasksTimeoutSeconds = 4;
 	
 	public static WorldwideChat instance;
 	
@@ -84,7 +84,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "02062022-5"; // This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "02142022-1"; // This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)

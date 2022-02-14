@@ -219,36 +219,18 @@ public class CommonDefinitions {
 		}
 		
 		/* Main logic callback */
+		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 		Callable<String> result = () -> {
 			try {
-				/* Get result in user-defined delay plus extra amt. of time */
-				/* Sanitize Inputs */
-				// Warn user about color codes
-				// EssentialsX chat and maybe others replace "&4Test" with " 4Test"
-				// Therefore, we find the " #" regex or the "&" char, and warn the user about it
-				if ((inMessage.contains("&") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals(""))
-						&& !(main.getActiveTranslator(currPlayer.getUniqueId().toString())
-								.getCCWarning())) // check if user has already been sent CC warning
-				{
-					final TextComponent watsonCCWarning = Component.text()
-							.append(Component.text()
-									.content(CommonDefinitions.getMessage("watsonColorCodeWarning"))
-									.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
-							.build();
-					CommonDefinitions.sendMessage(currPlayer, watsonCCWarning);
-					// Set got CC warning of current translator to true, so that they don't get
-					// spammed by it if they keep using CCs
-					main.getActiveTranslator(currPlayer.getUniqueId().toString())
-							.setCCWarning(true);
-					// we're still gonna translate it but it won't look pretty
-				}
+				/* Detect color codes in message */
+				detectColorCodePresence(inMessage, currPlayer);
 
 				/* Modify or create new player record */
 				PlayerRecord currPlayerRecord = main
 						.getPlayerRecord(currPlayer.getUniqueId().toString(), true);
 				if (main.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations() + 1);
 
-				/* Initialize current ActiveTranslator, sanity checks */
+				/* Initialize current vars + ActiveTranslator, sanity checks */
 				ActiveTranslator currActiveTranslator;
 				if (main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
 						&& (!main.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals(""))) {
@@ -261,7 +243,7 @@ public class CommonDefinitions {
 				}
 
 				/* Char limit check */
-				int limit = main.getConfigManager().getMainConfig().getInt("Translator.messageCharLimit");
+				int limit = mainConfig.getInt("Translator.messageCharLimit");
 				if (inMessage.length() > limit) {
 					final TextComponent charLimit = Component.text()
 							.append(Component.text().content(CommonDefinitions.getMessage("wwcCharLimit", new String[] {"" + limit}))
@@ -272,18 +254,19 @@ public class CommonDefinitions {
 				}
 				
 				/* Check cache */
-				if (main.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
+				if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
 					// Check cache for inputs, since config says we should
 					for (Map.Entry<CachedTranslation, Integer> currentTerm : main.getCache().entrySet()) {
-						if (currentTerm.getKey().getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
-								&& (currentTerm.getKey().getOutputLang().equalsIgnoreCase(currActiveTranslator.getOutLangCode()))
-								&& (currentTerm.getKey().getInputPhrase().equalsIgnoreCase(inMessage))) {
-							main.getCache().put(currentTerm.getKey(), currentTerm.getValue()+1);
+						CachedTranslation currKey = currentTerm.getKey();
+						if (currKey.getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
+								&& (currKey.getOutputLang().equalsIgnoreCase(currActiveTranslator.getOutLangCode()))
+								&& (currKey.getInputPhrase().equalsIgnoreCase(inMessage))) {
+							main.getCache().put(currKey, currentTerm.getValue()+1);
 							// Update stats, return output
 							currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
 							currPlayerRecord.setLastTranslationTime();
 							return StringEscapeUtils.unescapeJava(
-									ChatColor.translateAlternateColorCodes('&', currentTerm.getKey().getOutputPhrase()));
+									ChatColor.translateAlternateColorCodes('&', currKey.getOutputPhrase()));
 						}
 					}
 				}
@@ -340,8 +323,8 @@ public class CommonDefinitions {
 							return inMessage;
 						}
 					// Global Limits
-					} else if (!isExempt && main.getConfigManager().getMainConfig().getInt("Translator.rateLimit") > 0) {
-						if (!checkForRateLimits(main.getConfigManager().getMainConfig().getInt("Translator.rateLimit"), currActiveTranslator, currPlayer)) {
+					} else if (!isExempt && mainConfig.getInt("Translator.rateLimit") > 0) {
+						if (!checkForRateLimits(mainConfig.getInt("Translator.rateLimit"), currActiveTranslator, currPlayer)) {
 							return inMessage;
 						}
 					}
@@ -392,7 +375,7 @@ public class CommonDefinitions {
 				currPlayerRecord.setLastTranslationTime();
 
 				/* Add to cache */
-				if (main.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize") > 0
+				if (mainConfig.getInt("Translator.translatorCacheSize") > 0
 						&& !(currActiveTranslator.getInLangCode().equals("None"))) {
 					CachedTranslation newTerm = new CachedTranslation(currActiveTranslator.getInLangCode(),
 							currActiveTranslator.getOutLangCode(), inMessage, out);
@@ -434,14 +417,14 @@ public class CommonDefinitions {
 				CommonDefinitions.sendDebugMessage("Error Count: " + main.getTranslatorErrorCount());
 				
 				/* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
-				if (main.getTranslatorErrorCount() >= main.getConfigManager().getMainConfig().getInt("Translator.errorLimit")) {
+				if (main.getTranslatorErrorCount() >= mainConfig.getInt("Translator.errorLimit")) {
 					main.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReached"));
 					main.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReachedCheckLogs"));
-					main.getConfigManager().getMainConfig().set("Translator.useWatsonTranslate",
+					mainConfig.set("Translator.useWatsonTranslate",
 							false);
-					main.getConfigManager().getMainConfig().set("Translator.useGoogleTranslate",
+					mainConfig.set("Translator.useGoogleTranslate",
 							false);
-					main.getConfigManager().getMainConfig().set("Translator.useAmazonTranslate",
+					mainConfig.set("Translator.useAmazonTranslate",
 							false);
 					main.getConfigManager().saveMainConfig(false);
 					main.reload();
@@ -563,6 +546,29 @@ public class CommonDefinitions {
 	  */
 	public static Prompt genericConfigConversation(boolean preCheck, ConversationContext context, String successfulChangeMsg, String configValName, Object configVal, SmartInventory prevInventory) {
 		return genericConfigConversation(preCheck, context, successfulChangeMsg, new String[] {configValName}, new Object[] {configVal}, prevInventory);
+	}
+	
+	/* Sanitize Inputs */
+	// Warn user about color codes
+	// EssentialsX chat and maybe others replace "&4Test" with " 4Test"
+	// Therefore, we find the " #" regex or the "&" char, and warn the user about it
+	protected static void detectColorCodePresence(String inMessage, Player currPlayer) {
+		if ((inMessage.contains("&") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals(""))
+				&& !(main.getActiveTranslator(currPlayer.getUniqueId().toString())
+						.getCCWarning())) // check if user has already been sent CC warning
+		{
+			final TextComponent watsonCCWarning = Component.text()
+					.append(Component.text()
+							.content(CommonDefinitions.getMessage("watsonColorCodeWarning"))
+							.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
+					.build();
+			CommonDefinitions.sendMessage(currPlayer, watsonCCWarning);
+			// Set got CC warning of current translator to true, so that they don't get
+			// spammed by it if they keep using CCs
+			main.getActiveTranslator(currPlayer.getUniqueId().toString())
+					.setCCWarning(true);
+			// we're still gonna translate it but it won't look pretty
+		}
 	}
 	
 	/**
