@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import org.apache.commons.lang3.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -168,7 +169,7 @@ public class WWCTabCompleter implements TabCompleter {
 					}
 				}
 			}
-			if (args.length == 1 || (args.length == 2 && !CommonDefinitions.isInteger(args[0]) && Bukkit.getPlayerExact(args[0]) != null
+			if (args.length == 1 || (args.length == 2 && !StringUtils.isNumeric(args[0]) && Bukkit.getPlayerExact(args[0]) != null
 					&& !main.getActiveTranslator(Bukkit.getPlayerExact(args[0]).getUniqueId().toString()).getUUID().equals(""))) {
 				out.add("0");
 				out.add("3");

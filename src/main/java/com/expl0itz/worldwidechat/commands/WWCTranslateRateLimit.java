@@ -1,5 +1,6 @@
 package com.expl0itz.worldwidechat.commands;
 
+import org.apache.commons.lang3.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -46,11 +47,11 @@ public class WWCTranslateRateLimit extends BasicCommand {
 		}
 
 		/* Set personal rate limit */
-		if (args.length == 1 && CommonDefinitions.isInteger(args[0])) {
+		if (args.length == 1 && StringUtils.isNumeric(args[0])) {
 			if (isConsoleSender) {
 				return CommonDefinitions.sendNoConsoleChatMessage(sender);
 			}
-			if (CommonDefinitions.isInteger(args[0])) {
+			if (StringUtils.isNumeric(args[0])) {
 				return changeRateLimit(sender.getName(), Integer.parseInt(args[0]));
 			}
 			/* If rate limit is not valid/user wants to disable it */
@@ -65,7 +66,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 
 		/* Set rate limit for another user */
 		if (args.length == 2 && args[0] instanceof String) {
-			if (CommonDefinitions.isInteger(args[1])) {
+			if (StringUtils.isNumeric(args[1])) {
 				return changeRateLimit(args[0], Integer.parseInt(args[1]));
 			}
             rateLimitBadIntMessage(sender);

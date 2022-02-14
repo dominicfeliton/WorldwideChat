@@ -19,6 +19,7 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
@@ -65,49 +66,13 @@ public class CommonDefinitions {
 
 	/* Getters */
 	/**
-	  * Checks if a given string is an integer, fast. Better for speed than accuracy.
-	  * @param str - A valid string
-	  * @return Boolean - Whether string is an integer or not
-	  */
-	public static boolean isInteger(String str) {
-		// Suck it, matches()
-	    if (str == null) {
-	        return false;
-	    }
-	    int length = str.length();
-	    if (length == 0) {
-	        return false;
-	    }
-	    int i = 0;
-	    if (str.charAt(0) == '-') {
-	        if (length == 1) {
-	            return false;
-	        }
-	        i = 1;
-	    }
-	    for (; i < length; i++) {
-	        char c = str.charAt(i);
-	        if (c < '0' || c > '9') {
-	            return false;
-	        }
-	    }
-	    return true;
-	}
-	
-	/**
 	  * Compares two strings to check if they are the same language under the current translator.
 	  * @param first - A valid language name
 	  * @param second - A valid language name
 	  * @return Boolean - Whether languages are the same or not
 	  */
 	public static boolean isSameLang(String first, String second) {
-		for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
-			if ((eaLang.getLangName().equals(getSupportedTranslatorLang(first).getLangName())
-					&& eaLang.getLangName().equals(getSupportedTranslatorLang(second).getLangName()))) {
-				return true;
-			}
-		}
-		return false;
+		return getSupportedTranslatorLang(first).compareTo(getSupportedTranslatorLang(second)) == 0 ? true : false;
 	}
 
 	/**
@@ -147,9 +112,9 @@ public class CommonDefinitions {
 		main.getPlayersUsingGUI().clear();
 		for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
 			try {
-				if (main.getInventoryManager().getInventory(eaPlayer)
-						.get() instanceof SmartInventory
-						&& main.getInventoryManager().getInventory(eaPlayer).get().getManager()
+				SmartInventory currInventory = main.getInventoryManager().getInventory(eaPlayer).get();
+				if (currInventory instanceof SmartInventory
+						&& currInventory.getManager()
 								.equals(main.getInventoryManager())) {
 					eaPlayer.closeInventory();
 				}
@@ -187,18 +152,20 @@ public class CommonDefinitions {
 	public static String getMessage(String messageName, String[] replacements) {
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
-		if (main.getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
-			convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', main.getConfigManager().getMessagesConfig().getString("Overrides." + ChatColor.stripColor(messageName)));
+		YamlConfiguration messagesConfig = main.getConfigManager().getMessagesConfig();
+		if (messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
+			convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
 		} else {
-			convertedOriginalMessage = main.getConfigManager().getMessagesConfig().getString("Messages." + ChatColor.stripColor(messageName));
+			convertedOriginalMessage = messagesConfig.getString("Messages." + ChatColor.stripColor(messageName));
 			if (convertedOriginalMessage == null) {
-				main.getLogger().severe("Bad message! Please fix your messages-" + main.getConfigManager().getMainConfig().getString("General.pluginLang") + ".yml.");
-				return ChatColor.RED + "Bad message! Please fix your messages-" + main.getConfigManager().getMainConfig().getString("General.pluginLang") + ".yml.";
+				main.getLogger().severe("Bad message! Please fix your messages-" + messagesConfig.getString("General.pluginLang") + ".yml.");
+				return ChatColor.RED + "Bad message! Please fix your messages-" + messagesConfig.getString("General.pluginLang") + ".yml.";
 			}
 		}
 		
 		/* Replace any and all %i, %e, %o, etc. */
 		/* This code will only go as far as replacements[] goes. */
+		//TODO: Replace with string.format
 		StringBuilder fixedMessage = new StringBuilder();
 		int replacementsPos = 0;
 		for (int c = 0; c < convertedOriginalMessage.toCharArray().length; c++) {
@@ -605,7 +572,7 @@ public class CommonDefinitions {
 	  * @param sender - The sender of the original command
 	  * @return Boolean - Returns false if the user should currently be rate limited, and true otherwise.
 	  */
-	private static boolean checkForRateLimits(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
+	protected static boolean checkForRateLimits(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
 		if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
 			Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
 			Instant currTime = Instant.now();
@@ -631,7 +598,7 @@ public class CommonDefinitions {
 	  * @param currPlayer - Player that is being checked.
 	  * @return String - Returns an empty string if no permission was found, or the permission name if it is
 	  */
-	private static String checkForRateLimitPermissions(Player currPlayer) {
+	protected static String checkForRateLimitPermissions(Player currPlayer) {
 		Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
 		for (PermissionAttachmentInfo perm : perms) {
 			if (perm.getPermission().startsWith("worldwidechat.ratelimit.")) {

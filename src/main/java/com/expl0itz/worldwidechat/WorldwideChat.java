@@ -61,6 +61,7 @@ import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 public class WorldwideChat extends JavaPlugin {
 	/* Vars */
 	public static final int bStatsID = 10562;
+	//TODO: Get fatal abort seconds to be configurable
 	public static final int translatorConnectionTimeoutSeconds = 5;
 	public static final int translatorFatalAbortSeconds = 8;
 	public static final int asyncTasksTimeoutSeconds = 3;
