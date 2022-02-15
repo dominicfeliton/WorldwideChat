@@ -403,3 +403,11 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Changer la base de données
   wwcConfigConversationSQLDatabaseNameSuccess: Modification du nom de la base de données
     SQL.
+  wwcConfigConversationFatalAsyncAbort: Le délai d'attente actuel pour abandonner
+    toutes les tâches asynchrones est de %i secondes. Tapez tout ce qui est supérieur
+    à 7 pour définir un nouveau délai d'expiration ou tout ce qui se trouve en dessous
+    pour revenir en arrière.
+  wwcConfigConversationFatalAsyncSuccess: Le délai d'expiration de la tâche asynchrone
+    a été correctement défini
+  wwcConfigGUIFatalAsyncAbortButton: Modification du délai d'expiration des tâches
+    asynchrones

@@ -380,3 +380,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Verander SQL databasis
   wwcConfigConversationSQLDatabaseNameSuccess: Suksesvol verander die SQL databasis
     naam.
+  wwcConfigConversationFatalAsyncAbort: Die huidige tydverstreke om alle async take
+    te staak, is %i sekondes. Tik enigiets bo 7 om 'n nuwe time-out stel, of enigiets
+    onder dit om terug te gaan.
+  wwcConfigConversationFatalAsyncSuccess: Async taak time-out suksesvol te stel.
+  wwcConfigGUIFatalAsyncAbortButton: Verander Async Taak Time-out

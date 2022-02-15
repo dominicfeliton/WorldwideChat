@@ -337,3 +337,7 @@ Messages:
     0 เพื่อตั้งชื่อฐานข้อมูลใหม่หรือพิมพ์ 0 เพื่อย้อนกลับ
   wwcConfigGUISQLDatabaseNameButton: เปลี่ยนฐานข้อมูล SQL
   wwcConfigConversationSQLDatabaseNameSuccess: เปลี่ยนชื่อฐานข้อมูล SQL เสร็จเรียบร้อยแล้ว
+  wwcConfigConversationFatalAsyncAbort: หมดเวลาปัจจุบันที่จะยกเลิกงาน async ทั้งหมดเป็น
+    %i วินาทีพิมพ์อะไรก็ได้ข้างต้น 7 เพื่อตั้งค่าการหมดเวลาใหม่ หรืออะไรก็ตามที่อยู่ด้านล่างเพื่อย้อนกลับ
+  wwcConfigConversationFatalAsyncSuccess: หมดเวลางาน Async ตั้งค่าเสร็จเรียบร้อยแล้ว
+  wwcConfigGUIFatalAsyncAbortButton: เปลี่ยนหมดเวลางาน Async

@@ -383,3 +383,9 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Spremeni zbirko podatkov SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Uspešno spremenil ime zbirke podatkov
     SQL.
+  wwcConfigConversationFatalAsyncAbort: Trenutna časovna omejitev za prekinitev vseh
+    async opravil je %i sekund. Vnesite karkoli nad 7, da nastavite novo časovno omejitev
+    ali kaj pod njim, da se vrnete nazaj.
+  wwcConfigConversationFatalAsyncSuccess: Async časovna omejitev opravila je bila
+    uspešno nastavljena.
+  wwcConfigGUIFatalAsyncAbortButton: Spremeni časovno omejitev opravila Async

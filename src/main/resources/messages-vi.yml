@@ -387,3 +387,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Thay đổi cơ sở dữ liệu SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Thay đổi thành công tên cơ sở dữ liệu
     SQL.
+  wwcConfigConversationFatalAsyncAbort: Thời gian chờ hiện tại để hủy bỏ tất cả các
+    tác vụ không đồng bộ là %i giây. Gõ bất cứ thứ gì trên 7 để đặt thời gian chờ
+    mới, hoặc bất cứ thứ gì bên dưới nó để quay trở lại.
+  wwcConfigConversationFatalAsyncSuccess: Async task timeout thiết lập thành công.
+  wwcConfigGUIFatalAsyncAbortButton: Thay đổi Async Task Timeout

@@ -387,3 +387,9 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: SQL adatbázis módosítása
   wwcConfigConversationSQLDatabaseNameSuccess: Sikeresen megváltoztatta az SQL adatbázis
     nevét.
+  wwcConfigConversationFatalAsyncAbort: Az összes aszinkron feladat megszakítására
+    vonatkozó aktuális időtúllát %i másodperc. Írjon be bármit a fenti 7 új időtúllépéshez,
+    vagy bármi alatta, hogy visszatérjen.
+  wwcConfigConversationFatalAsyncSuccess: Az aszinkron feladat időtúltolása sikeresen
+    beállítva.
+  wwcConfigGUIFatalAsyncAbortButton: Async Task Timeout módosítása

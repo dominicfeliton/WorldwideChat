@@ -399,3 +399,9 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Schimbarea bazei de date SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Modificat cu succes numele bazei de
     date SQL.
+  wwcConfigConversationFatalAsyncAbort: Timpul de expirare curent pentru a anula toate
+    sarcinile asincronice este %i secunde. Tastați orice peste 7 pentru a seta un
+    nou timeout, sau orice sub el pentru a merge înapoi.
+  wwcConfigConversationFatalAsyncSuccess: Timeout activitate async setat cu succes.
+  wwcConfigGUIFatalAsyncAbortButton: Modificarea timpului de expirare a activității
+    async

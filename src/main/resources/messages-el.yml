@@ -413,3 +413,9 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Αλλαγή βάσης δεδομένων SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Τροποποιήθηκε με επιτυχία το όνομα
     της βάσης δεδομένων SQL.
+  wwcConfigConversationFatalAsyncAbort: Το τρέχον χρονικό όριο για να ματαιώσετε όλες
+    τις ασύγχρονες εργασίες είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε πάνω από
+    το 7 για να ορίσετε ένα νέο χρονικό όριο, ή οτιδήποτε κάτω από αυτό για να επιστρέψετε.
+  wwcConfigConversationFatalAsyncSuccess: Καθορίστηκε με επιτυχία το χρονικό όριο
+    ασύγχρονης εργασίας.
+  wwcConfigGUIFatalAsyncAbortButton: Αλλαγή χρονικού ορίου εργασίας ασύγχρονη

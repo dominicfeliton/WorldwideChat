@@ -392,3 +392,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Փոխել SQL տվյալների բազան
   wwcConfigConversationSQLDatabaseNameSuccess: 'Հաջողությամբ փոխեց SQL տվյալների բազայի
     անունը:'
+  wwcConfigConversationFatalAsyncAbort: 'Ներկայիս timeout- ը բոլոր async խնդիրները
+    խաթարելու համար %i վայրկյան է: Մուտքագրեք որեւէ բան վերեւում 7 է սահմանել նոր
+    timeout, կամ որեւէ բան ներքեւում այն վերադառնալ.'
+  wwcConfigConversationFatalAsyncSuccess: Async խնդիրն timeout սահմանել հաջողությամբ.
+  wwcConfigGUIFatalAsyncAbortButton: Փոխել Async Task Ժամկետը

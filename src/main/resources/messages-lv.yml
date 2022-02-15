@@ -380,3 +380,8 @@ Messages:
     0, lai atgrieztos.
   wwcConfigGUISQLDatabaseNameButton: Mainīt SQL datu bāzi
   wwcConfigConversationSQLDatabaseNameSuccess: Veiksmīgi mainīts SQL datu bāzes nosaukums.
+  wwcConfigConversationFatalAsyncAbort: Pašreizējais taimauts, lai pārtrauktu visus
+    asinhronos uzdevumus ir %i sekundes. Ierakstiet kaut ko virs 7, lai iestatītu
+    jaunu taimautu vai kaut ko zem tā, lai atgrieztos.
+  wwcConfigConversationFatalAsyncSuccess: Asinc uzdevumu taimauts iestatīts veiksmīgi.
+  wwcConfigGUIFatalAsyncAbortButton: Mainīt Asinc uzdevumu taimautu

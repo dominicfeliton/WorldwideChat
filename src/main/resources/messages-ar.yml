@@ -352,3 +352,7 @@ Messages:
     أي شيء آخر غير 0 لتعيين اسم قاعدة بيانات جديد، أو اكتب 0 للرجوع إليه.
   wwcConfigGUISQLDatabaseNameButton: تغيير قاعدة بيانات SQL
   wwcConfigConversationSQLDatabaseNameSuccess: تم تغيير اسم قاعدة بيانات SQL بنجاح.
+  wwcConfigConversationFatalAsyncAbort: المهلة الحالية لإجهاض جميع المهام غير المتزامنة
+    هي %i ثانية. اكتب أي شيء فوق 7 لتعيين مهلة جديدة، أو أي شيء أسفله للعودة.
+  wwcConfigConversationFatalAsyncSuccess: تم تعيين مهلة مهمة غير متزامنة بنجاح.
+  wwcConfigGUIFatalAsyncAbortButton: تغيير مهلة المهام غير المتزامنة

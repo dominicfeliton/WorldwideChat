@@ -383,3 +383,8 @@ Messages:
     aftur.
   wwcConfigGUISQLDatabaseNameButton: Breyta SQL gagnagrunni
   wwcConfigConversationSQLDatabaseNameSuccess: Tókst að breyta SQL gagnagrunnsheiti.
+  wwcConfigConversationFatalAsyncAbort: Núverandi tímamörk til að fella niður öll
+    async verkefni er %i sekúndur. Sláðu inn eitthvað fyrir ofan 7 til að setja nýtt
+    tímamörk, eða eitthvað fyrir neðan það til að fara aftur.
+  wwcConfigConversationFatalAsyncSuccess: Async verkefni timeout sett með góðum árangri.
+  wwcConfigGUIFatalAsyncAbortButton: Breyta Async Task Timeout

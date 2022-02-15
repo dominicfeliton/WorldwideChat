@@ -374,3 +374,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Promenite SKL bazu podataka
   wwcConfigConversationSQLDatabaseNameSuccess: Uspešno je promenio naziv SKL baze
     podataka.
+  wwcConfigConversationFatalAsyncAbort: Trenutni timeout za prekid svih asinc zadataka
+    je %i sekundi. Ukucajte bilo šta iznad 7 da podesite novi timeout, ili bilo šta
+    ispod njega da se vrati.
+  wwcConfigConversationFatalAsyncSuccess: Asinc zadatak timeout set uspešno.
+  wwcConfigGUIFatalAsyncAbortButton: Promenite Asinc Task Timeout

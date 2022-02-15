@@ -409,3 +409,10 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Modifier la base de données SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Le nom de base de données SQL a été
     modifié.
+  wwcConfigConversationFatalAsyncAbort: Le délai d'attente actuel pour interrompre
+    toutes les tâches asynchrones est de %i secondes. Tapez tout ce qui est supérieur
+    à 7 pour définir un nouveau délai d'attente, ou quoi que ce soit en dessous pour
+    revenir en arrière.
+  wwcConfigConversationFatalAsyncSuccess: Délai d'attente des tâches asynchrones défini
+    avec succès.
+  wwcConfigGUIFatalAsyncAbortButton: Modifier le délai d'attente des tâches asynchrones

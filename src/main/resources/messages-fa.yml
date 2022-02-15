@@ -371,3 +371,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: تغییر دادگان SQL
   wwcConfigConversationSQLDatabaseNameSuccess: با موفقیت نام پایگاه داده SQL را تغییر
     داد.
+  wwcConfigConversationFatalAsyncAbort: زمان فعلی برای لغو تمام وظایف async %i ثانیه
+    است. هر چیزی بالاتر از 7 را تایپ کنید تا یک timeout جدید تنظیم کنید، یا هر چیز
+    زیر آن برای بازگشت.
+  wwcConfigConversationFatalAsyncSuccess: زمان کار Async با موفقیت تنظیم.
+  wwcConfigGUIFatalAsyncAbortButton: تغییر زمان تکلیف Async

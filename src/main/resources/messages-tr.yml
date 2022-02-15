@@ -369,3 +369,9 @@ Messages:
     adı ayarlamak için 0'dan başka bir şey yazın veya geri dönmek için 0 yazın.
   wwcConfigGUISQLDatabaseNameButton: SQL Veritabanını
   wwcConfigConversationSQLDatabaseNameSuccess: SQL veritabanı adı başarıyla değiştirildi.
+  wwcConfigConversationFatalAsyncAbort: Tüm zaman uyumsuz görevleri iptal etmek için
+    geçerli zaman aşımı %i saniyedir. Yeni bir zaman aşımı ayarlamak için 7'nin üstündeki
+    herhangi bir şeyi veya geri dönmek için altındaki herhangi bir şeyi yazın.
+  wwcConfigConversationFatalAsyncSuccess: Zaman uyumsuz görev zaman aşımı başarıyla
+    ayarlandı.
+  wwcConfigGUIFatalAsyncAbortButton: Zaman Eşzamanzamanlama Görev Zaman Aşımı Değiştir

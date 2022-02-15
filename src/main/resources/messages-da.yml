@@ -381,3 +381,8 @@ Messages:
     andet end 0 for at indstille et nyt databasenavn, eller skriv 0 for at gå tilbage.
   wwcConfigGUISQLDatabaseNameButton: Skift SQL Database
   wwcConfigConversationSQLDatabaseNameSuccess: Har ændret SQL-databasenavnet.
+  wwcConfigConversationFatalAsyncAbort: Den aktuelle timeout for at afbryde alle async
+    opgaver er %i sekunder. Skriv noget over 7 for at indstille en ny timeout, eller
+    noget under det for at gå tilbage.
+  wwcConfigConversationFatalAsyncSuccess: Async opgave timeout indstillet med succes.
+  wwcConfigGUIFatalAsyncAbortButton: Skift Async-opgavetimeout

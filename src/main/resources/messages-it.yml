@@ -398,3 +398,9 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Modificare il database SQL
   wwcConfigConversationSQLDatabaseNameSuccess: È stato cambiato il nome del database
     SQL.
+  wwcConfigConversationFatalAsyncAbort: Il timeout corrente per interrompere tutte
+    le attività asincrone è di %i secondi. Digita un valore superiore a 7 per impostare
+    un nuovo timeout o qualcosa al di sotto di esso per tornare indietro.
+  wwcConfigConversationFatalAsyncSuccess: Timeout dell'attività asincrona impostato
+    correttamente.
+  wwcConfigGUIFatalAsyncAbortButton: Modifica timeout attività asincrona

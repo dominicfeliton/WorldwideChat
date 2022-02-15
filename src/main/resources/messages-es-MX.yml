@@ -398,3 +398,10 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Cambiar base de datos SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Se cambió correctamente el nombre de
     la base de datos SQL.
+  wwcConfigConversationFatalAsyncAbort: El tiempo de espera actual para abortar todas
+    las tareas asíncrona es de %i segundos. Escriba cualquier cosa por encima de 7
+    para establecer un nuevo tiempo de espera, o cualquier cosa debajo de él para
+    volver atrás.
+  wwcConfigConversationFatalAsyncSuccess: El tiempo de espera de tarea asincrónica
+    se estableció correctamente.
+  wwcConfigGUIFatalAsyncAbortButton: Cambiar el tiempo de espera de tarea asincrónica

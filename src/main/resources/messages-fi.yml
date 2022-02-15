@@ -375,3 +375,8 @@ Messages:
     takaisin.
   wwcConfigGUISQLDatabaseNameButton: Muuta SQL-tietokantaa
   wwcConfigConversationSQLDatabaseNameSuccess: SQL-tietokannan nimi on muutettu onnistuneesti.
+  wwcConfigConversationFatalAsyncAbort: Nykyinen aikakatkaisu kaikkien async-tehtävien
+    keskeyttämiseksi on %i sekuntia. Kirjoita kaikki yllä 7 asettaaksesi uuden aikakatkaisun,
+    tai mitä tahansa sen alapuolella palataksesi takaisin.
+  wwcConfigConversationFatalAsyncSuccess: Async-tehtävän aikakatkaisu asetettu onnistuneesti.
+  wwcConfigGUIFatalAsyncAbortButton: Muuta Async-tehtävän aikakatkaisu

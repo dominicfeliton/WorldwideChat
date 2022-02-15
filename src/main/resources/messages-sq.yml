@@ -401,3 +401,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Ndryshoni bazën e të dhënave SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Ndryshuar me sukses emrin e bazës së
     të dhënave SQL.
+  wwcConfigConversationFatalAsyncAbort: Koha aktuale për të ndërprerë të gjitha detyrat
+    asinkron është %i sekonda. Shkruani ndonjë gjë mbi 7 për të vendosur një kohë
+    të re, ose ndonjë gjë poshtë saj për t'u kthyer prapa.
+  wwcConfigConversationFatalAsyncSuccess: Asinkron detyrë timeout vendosur me sukses.
+  wwcConfigGUIFatalAsyncAbortButton: Ndrysho Async Task Timeout

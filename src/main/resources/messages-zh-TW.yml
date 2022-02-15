@@ -300,3 +300,6 @@ Messages:
     0 返回。
   wwcConfigGUISQLDatabaseNameButton: 更改 SQL 數據庫
   wwcConfigConversationSQLDatabaseNameSuccess: 已成功更改 SQL 數據庫名稱。
+  wwcConfigConversationFatalAsyncAbort: 中止所有異步任務的當前超時時間為 %i 秒。鍵入 7 以上的任何內容以設置新的超時，或者在其下方的任何內容返回。
+  wwcConfigConversationFatalAsyncSuccess: 異步任務超時設置成功。
+  wwcConfigGUIFatalAsyncAbortButton: 更改異步任務超時

@@ -342,3 +342,7 @@ Messages:
     דבר אחר מאשר 0 כדי להגדיר שם מסד נתונים חדש, או הקלד 0 כדי לחזור.
   wwcConfigGUISQLDatabaseNameButton: שינוי מסד הנתונים של SQL
   wwcConfigConversationSQLDatabaseNameSuccess: שינה בהצלחה את שם מסד הנתונים של SQL.
+  wwcConfigConversationFatalAsyncAbort: הזמן הקצוב הנוכחי לביטול כל המשימות async
+    הוא %i שניות. הקלד כל דבר מעל 7 כדי להגדיר פסק זמן חדש, או כל דבר מתחתיו כדי לחזור.
+  wwcConfigConversationFatalAsyncSuccess: פסק זמן משימת Async מוגדר בהצלחה.
+  wwcConfigGUIFatalAsyncAbortButton: שינוי הזמן הקצוב למשימה של Async

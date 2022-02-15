@@ -315,3 +315,7 @@ Messages:
     0 이외의 다른 항목을 입력하고, 뒤로 돌아가려면 0을 입력합니다.
   wwcConfigGUISQLDatabaseNameButton: SQL 데이터베이스 변경
   wwcConfigConversationSQLDatabaseNameSuccess: SQL 데이터베이스 이름을 성공적으로 변경했습니다.
+  wwcConfigConversationFatalAsyncAbort: 모든 비동기 작업을 중단하는 현재 제한 시간은 %i초입니다.7보다 큰 값을
+    입력하여 새 시간 제한을 설정하거나 그 아래에 있는 값을 입력하여 되돌아갑니다.
+  wwcConfigConversationFatalAsyncSuccess: 비동기 작업 시간 초과가 성공적으로 설정되었습니다.
+  wwcConfigGUIFatalAsyncAbortButton: 비동기 작업 시간 초과 변경

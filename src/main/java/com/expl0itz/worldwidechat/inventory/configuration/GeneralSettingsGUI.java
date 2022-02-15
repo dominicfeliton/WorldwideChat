@@ -5,6 +5,7 @@ import org.bukkit.entity.Player;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsFatalAsyncAbortConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsLangConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsPrefixConversation;
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsSyncUserDataConversation;
@@ -45,8 +46,11 @@ public class GeneralSettingsGUI implements InventoryProvider {
 			/* Option Five: Sync User Data Delay */
 			WWCInventoryManager.genericConversationButton(1, 5, player, contents, new GeneralSettingsSyncUserDataConversation(), XMaterial.NAME_TAG, "wwcConfigGUISyncUserDataButton");
 			
-			/* Option Six: Debug Mode */
-			WWCInventoryManager.genericToggleButton(1, 6, player, contents, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess", "General.enableDebugMode");
+			/* Option Six: Async Task Fatal Abort Timeout */
+			WWCInventoryManager.genericConversationButton(1, 6, player, contents, new GeneralSettingsFatalAsyncAbortConversation(), XMaterial.NAME_TAG, "wwcConfigGUIFatalAsyncAbortButton");
+			
+			/* Option Seven: Debug Mode */
+			WWCInventoryManager.genericToggleButton(1, 7, player, contents, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess", "General.enableDebugMode");
 
 			/* Bottom Middle Option: Quit */
 			WWCInventoryManager.setCommonButton(2, 4, player, contents, "Quit");

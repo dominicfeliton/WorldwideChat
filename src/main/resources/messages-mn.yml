@@ -388,3 +388,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: SQL мэдээллийн санг өөрчлөх
   wwcConfigConversationSQLDatabaseNameSuccess: Амжилттай SQL мэдээллийн сангийн нэрийг
     өөрчилсөн.
+  wwcConfigConversationFatalAsyncAbort: Бүх async ажлуудыг зогсоох одоогийн хугацаа
+    нь %i секунд байна. 7-аас дээш зүйлийг бичнэ үү шинэ цагийг тохируулах, эсвэл
+    доор нь ямар нэгэн зүйл буцааж яваарай.
+  wwcConfigConversationFatalAsyncSuccess: Async ажил хугацаа амжилттай тогтоосон.
+  wwcConfigGUIFatalAsyncAbortButton: Async Даалгавар Хугацааны өөрчлөлт

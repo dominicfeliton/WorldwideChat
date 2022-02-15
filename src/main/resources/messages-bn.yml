@@ -373,3 +373,9 @@ Messages:
     নাম নির্ধারণ করতে ০ ছাড়া অন্য কিছু টাইপ করুন অথবা ফিরে যেতে ০ টাইপ করুন।
   wwcConfigGUISQLDatabaseNameButton: এসকিউএল ডাটাবেস পরিবর্তন
   wwcConfigConversationSQLDatabaseNameSuccess: সফলভাবে SQL ডাটাবেস নাম পরিবর্তন।
+  wwcConfigConversationFatalAsyncAbort: সমস্ত অ্যাসিঙ্ক কর্ম বন্ধ করার বর্তমান সময়সীমা
+    হল %i সেকেন্ড। নতুন সময়সীমা নির্ধারণের জন্য ৭ এর উপরে যেকোন কিছু টাইপ করুন অথবা
+    ফিরে যেতে নীচের যেকোন কিছু টাইপ করুন।
+  wwcConfigConversationFatalAsyncSuccess: অ্যাসিঙ্ক টাস্ক টাইমআউট সফলভাবে সেট করা
+    হয়েছে।
+  wwcConfigGUIFatalAsyncAbortButton: অ্যাসিঙ্ক টাস্ক টাইম- আউট পরিবর্তন করুন

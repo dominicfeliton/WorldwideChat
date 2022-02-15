@@ -382,3 +382,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Tukar Pangkalan Data SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Berjaya menukar nama pangkalan data
     SQL.
+  wwcConfigConversationFatalAsyncAbort: Masa tamat masa semasa untuk membatalkan semua
+    tugas async ialah %i saat. Taip apa-apa di atas 7 untuk menetapkan tamat masa
+    baru, atau apa-apa di bawahnya untuk kembali.
+  wwcConfigConversationFatalAsyncSuccess: Async tugas tamat masa ditetapkan berjaya.
+  wwcConfigGUIFatalAsyncAbortButton: Tukar Async Task Timeout

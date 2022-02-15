@@ -299,3 +299,6 @@ Messages:
     0 以返回。
   wwcConfigGUISQLDatabaseNameButton: 更改 SQL 数据库
   wwcConfigConversationSQLDatabaseNameSuccess: 已成功更改 SQL 数据库名称。
+  wwcConfigConversationFatalAsyncAbort: 当前中止所有异步任务的超时时间为 %i 秒。键入大于7的任何内容以设置新的超时，或键入低于此值的任何内容以返回。
+  wwcConfigConversationFatalAsyncSuccess: 异步任务超时设置成功。
+  wwcConfigGUIFatalAsyncAbortButton: 更改异步任务超时

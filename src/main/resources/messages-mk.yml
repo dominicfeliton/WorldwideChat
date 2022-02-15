@@ -396,3 +396,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Промени SQL база на податоци
   wwcConfigConversationSQLDatabaseNameSuccess: Успешно го промени името на SQL базата
     на податоци.
+  wwcConfigConversationFatalAsyncAbort: Тековниот тајмаут за да ги абортирате сите
+    асинк задачи е %i секунди. Напишете нешто над 7 за да поставите нов тајмаут, или
+    нешто под него за да се вратите назад.
+  wwcConfigConversationFatalAsyncSuccess: Async задача тајмаут постави успешно.
+  wwcConfigGUIFatalAsyncAbortButton: Промена Async Задача тајмаут

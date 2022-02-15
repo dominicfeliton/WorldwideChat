@@ -418,3 +418,10 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Baguhin ang SQL Database
   wwcConfigConversationSQLDatabaseNameSuccess: Matagumpay na binago ang pangalan ng
     SQL database.
+  wwcConfigConversationFatalAsyncAbort: Ang kasalukuyang timeout upang i-abort ang
+    lahat ng mga gawain ng async ay %i seconds. I-type ang anumang bagay sa itaas
+    7 upang magtakda ng isang bagong timeout, o anumang bagay sa ibaba nito upang
+    bumalik.
+  wwcConfigConversationFatalAsyncSuccess: Matagumpay na itinakda ang timeout ng pag-sync
+    ng gawain.
+  wwcConfigGUIFatalAsyncAbortButton: Baguhin ang Timeout ng Async Task

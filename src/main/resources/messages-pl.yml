@@ -388,3 +388,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Zmień bazę danych SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Pomyślnie zmieniono nazwę bazy danych
     SQL.
+  wwcConfigConversationFatalAsyncAbort: Bieżący limit czasu przerwania wszystkich
+    zadań asynchronicznych wynosi %i sekund. Wpisz cokolwiek powyżej 7, aby ustawić
+    nowy limit czasu, lub cokolwiek poniżej niego, aby wrócić.
+  wwcConfigConversationFatalAsyncSuccess: Ustawiono limit czasu zadania asynchroniczny.
+  wwcConfigGUIFatalAsyncAbortButton: Zmiana limitu czasu zadania asynchronnego

@@ -378,3 +378,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Badilisha database ya SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Imebadilishwa kwa ufanisi jina la database
     ya SQL.
+  wwcConfigConversationFatalAsyncAbort: Muda wa sasa wa kuazima kazi zote za async
+    ni %i sekunde. Andika kitu chochote juu ya 7 ili kuweka umeisha mpya, au kitu
+    chochote chini yake ili kurudi nyuma.
+  wwcConfigConversationFatalAsyncSuccess: Timeout kazi ya Async imewekwa kwa mafanikio.
+  wwcConfigGUIFatalAsyncAbortButton: Badilisha Muda wa Kazi ya Async

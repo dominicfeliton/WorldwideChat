@@ -383,3 +383,8 @@ Messages:
     apa pun selain 0 untuk menetapkan nama database baru, atau ketik 0 untuk kembali.
   wwcConfigGUISQLDatabaseNameButton: Ubah Database SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Berhasil mengubah nama database SQL.
+  wwcConfigConversationFatalAsyncAbort: Batas waktu saat ini untuk membatalkan semua
+    tugas async adalah %i detik. Ketik apa pun di atas 7 untuk mengatur batas waktu
+    baru, atau apa pun di bawahnya untuk kembali.
+  wwcConfigConversationFatalAsyncSuccess: Async tugas batas waktu ditetapkan berhasil.
+  wwcConfigGUIFatalAsyncAbortButton: Ubah Async Task Timeout

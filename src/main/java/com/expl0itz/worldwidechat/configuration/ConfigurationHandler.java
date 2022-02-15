@@ -149,7 +149,18 @@ public class ConfigurationHandler {
 				main.setPrefixName("WWC"); // If default the entry for prefix, interpret as WWC
 			}
 		} catch (Exception e) {
+			main.setPrefixName("WWC");
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigInvalidPrefixSettings"));
+		}
+		// Fatal Async Timeout Delay
+		try {
+			if (mainConfig.getInt("General.fatalAsyncTaskTimeout") > 7) {
+				WorldwideChat.translatorFatalAbortSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout");
+			} else {
+				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigInvalidFatalAsyncTimeout"));
+			}
+		} catch (Exception e) {
+			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigInvalidFatalAsyncTimeout"));
 		}
 		// bStats
 		if (mainConfig.getBoolean("General.enablebStats")) {
@@ -162,11 +173,12 @@ public class ConfigurationHandler {
 		}
 		// Update Checker Delay
 		try {
-			if ((mainConfig.getInt("General.updateCheckerDelay") > 10)) {
-			} else {
+			if (!(mainConfig.getInt("General.updateCheckerDelay") > 10)) {
+				mainConfig.set("General.updateCheckerDelay", 86400);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigBadUpdateDelay"));
 			}
 		} catch (Exception e) {
+			mainConfig.set("General.updateCheckerDelay", 86400);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigBadUpdateDelay"));
 		}
 		// Sync User Data Delay
@@ -175,9 +187,11 @@ public class ConfigurationHandler {
 				main.getLogger().info(
 						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigSyncDelayEnabled", new String[] {mainConfig.getInt("General.syncUserDataDelay") + ""}));
 			} else {
+				mainConfig.set("General.syncUserDataDelay", 7200);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigSyncDelayInvalid"));
 			}
 		} catch (Exception e) {
+			mainConfig.set("General.syncUserDataDelay", 7200);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigSyncDelayInvalid"));
 		}
 		// Rate limit Settings
@@ -185,9 +199,11 @@ public class ConfigurationHandler {
 			if (mainConfig.getInt("Translator.rateLimit") >= 0) {
 				main.getLogger().info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigRateLimitEnabled", new String[] {"" + mainConfig.getInt("Translator.rateLimit")}));
 			} else {
+				mainConfig.set("Translator.rateLimit", 0);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigRateLimitInvalid"));
 			}
 		} catch (Exception e) {
+			mainConfig.set("Translator.rateLimit", 0);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigRateLimitInvalid"));
 		}
 		// Per-message char limit Settings
@@ -195,9 +211,11 @@ public class ConfigurationHandler {
 			if (mainConfig.getInt("Translator.messageCharLimit") >= 0) {
 				main.getLogger().info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigMessageCharLimitEnabled", new String[] {"" + mainConfig.getInt("Translator.messageCharLimit")}));
 			} else {
+				mainConfig.set("Translator.messageCharLimit", 255);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMessageCharLimitInvalid"));
 			}
 		} catch (Exception e) {
+			mainConfig.set("Translator.messageCharLimit", 255);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMessageCharLimitInvalid"));
 		}
 		// Cache Settings
@@ -206,9 +224,11 @@ public class ConfigurationHandler {
 				main.getLogger()
 						.info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigCacheEnabled", new String[] {mainConfig.getInt("Translator.translatorCacheSize") + ""}));
 			} else {
+				mainConfig.set("Translator.translatorCacheSize", 0);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigCacheDisabled"));
 			}
 		} catch (Exception e) {
+			mainConfig.set("Translator.translatorCacheSize", 100);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigCacheInvalid"));
 		}
 		// Error Limit Settings
@@ -217,9 +237,11 @@ public class ConfigurationHandler {
 				main.getLogger().info(
 						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigErrorLimitEnabled", new String[] {mainConfig.getInt("Translator.errorLimit") + ""}));
 			} else {
+				mainConfig.set("Translator.errorLimit", 5);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigErrorLimitInvalid"));
 			}
 		} catch (Exception e) {
+			mainConfig.set("Translator.errorLimit", 5);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigErrorLimitInvalid"));
 		}
 	}
@@ -245,6 +267,7 @@ public class ConfigurationHandler {
 
 	/* Translator Settings */
 	public void loadTranslatorSettings() {
+		//TODO: Revise translator logic, use enum
 		String outName = "Invalid";
 		final int maxTries = 3;
 		for (int tryNumber = 1; tryNumber <= maxTries; tryNumber++) {

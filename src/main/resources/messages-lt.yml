@@ -378,3 +378,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Keisti SQL duomenų bazę
   wwcConfigConversationSQLDatabaseNameSuccess: Sėkmingai pakeistas SQL duomenų bazės
     pavadinimas.
+  wwcConfigConversationFatalAsyncAbort: Dabartinis laikas nutraukti visas async užduotis
+    yra %i sekundės. Įveskite ką nors aukščiau 7, kad nustatytumėte naują timeout,
+    arba ką nors žemiau jo grįžti.
+  wwcConfigConversationFatalAsyncSuccess: Async užduotis timeout nustatyti sėkmingai.
+  wwcConfigGUIFatalAsyncAbortButton: Pakeisti Async Užduočių Laikas

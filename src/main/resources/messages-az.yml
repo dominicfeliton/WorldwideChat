@@ -373,3 +373,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: SQL verilənlər bazasını dəyişdirin
   wwcConfigConversationSQLDatabaseNameSuccess: SQL verilənlər bazası adını müvəffəqiyyətlə
     dəyişdi.
+  wwcConfigConversationFatalAsyncAbort: Bütün async vəzifələri ləğv etmək üçün cari
+    zaman aşımı %i saniyədir. Yeni bir zaman aşımı və ya geri qayıtmaq üçün aşağıda
+    bir şey təyin etmək üçün 7-dən yuxarı bir şey yazın.
+  wwcConfigConversationFatalAsyncSuccess: Aync tapşırıq zaman aşımı uğurla müəyyən.
+  wwcConfigGUIFatalAsyncAbortButton: Aync Task Timeout Change

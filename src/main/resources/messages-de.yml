@@ -416,3 +416,9 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Ändern der SQL-Datenbank
   wwcConfigConversationSQLDatabaseNameSuccess: Der Name der SQL-Datenbank wurde erfolgreich
     geändert.
+  wwcConfigConversationFatalAsyncAbort: Die aktuelle Zeitüberschreitung für den Abbruch
+    aller Async-Aufgaben beträgt %i Sekunden. Geben Sie etwas über 7 ein, um ein neues
+    Timeout festzulegen, oder etwas darunter, um zurückzugehen.
+  wwcConfigConversationFatalAsyncSuccess: Zeitüberschreitung für asynchrone Aufgaben
+    wurde erfolgreich festgelegt.
+  wwcConfigGUIFatalAsyncAbortButton: Async-Aufgaben-Timeout ändern

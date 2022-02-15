@@ -390,3 +390,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Промяна на SQL база данни
   wwcConfigConversationSQLDatabaseNameSuccess: Успешно промени името на базата данни
     на SQL.
+  wwcConfigConversationFatalAsyncAbort: Текущото изчакване за прекратяване на всички
+    задачи на асинхрон е %i секунди. Въведете нещо над 7, за да зададете нов изчакване,
+    или нещо под него, за да се върнете.
+  wwcConfigConversationFatalAsyncSuccess: Async задача изчакване настроен успешно.
+  wwcConfigGUIFatalAsyncAbortButton: Промяна на изчакване на задачи за асинхрон

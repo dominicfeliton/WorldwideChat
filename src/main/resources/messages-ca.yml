@@ -399,3 +399,9 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Canviar la base de dades
   wwcConfigConversationSQLDatabaseNameSuccess: S'ha canviat correctament el nom de
     base de dades SQL.
+  wwcConfigConversationFatalAsyncAbort: El temps d'espera actual per avortar totes
+    les tasques asínices %i segons. Escriviu qualsevol cosa per sobre de 7 per establir
+    un nou temps d'espera, o qualsevol cosa que hi hagi a sota per tornar enrere.
+  wwcConfigConversationFatalAsyncSuccess: Async temps d'espera de tasques establert
+    amb èxit.
+  wwcConfigGUIFatalAsyncAbortButton: Canviar el temps d'espera de la tasca async

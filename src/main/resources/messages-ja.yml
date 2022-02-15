@@ -305,3 +305,6 @@ Messages:
     を入力すると元に戻ります。
   wwcConfigGUISQLDatabaseNameButton: SQL データベースの変更
   wwcConfigConversationSQLDatabaseNameSuccess: SQL データベース名が正常に変更されました。
+  wwcConfigConversationFatalAsyncAbort: すべての非同期タスクを中止する現在のタイムアウトは %i 秒です。7 より大きい値を入力すると新しいタイムアウトが設定され、それより小さい値を入力すると戻ります。
+  wwcConfigConversationFatalAsyncSuccess: 非同期タスクのタイムアウトが正常に設定されました。
+  wwcConfigGUIFatalAsyncAbortButton: 非同期タスクタイムアウトの変更

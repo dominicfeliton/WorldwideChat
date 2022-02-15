@@ -369,3 +369,8 @@ Messages:
     tilbake.
   wwcConfigGUISQLDatabaseNameButton: Endre SQL Database
   wwcConfigConversationSQLDatabaseNameSuccess: Endret SQL-databasenavnet ble endret.
+  wwcConfigConversationFatalAsyncAbort: Gjeldende tidsavbrudd for å avbryte alle async-oppgaver
+    er %i sekunder. Skriv inn noe over 7 for å angi en ny timeout, eller noe under
+    det for å gå tilbake.
+  wwcConfigConversationFatalAsyncSuccess: Tidsavbrudd for async oppgave satt vellykket.
+  wwcConfigGUIFatalAsyncAbortButton: Endre tidsavbrudd for async oppgave

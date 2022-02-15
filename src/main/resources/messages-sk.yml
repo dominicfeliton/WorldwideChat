@@ -390,3 +390,8 @@ Messages:
     ste sa vrátili späť.
   wwcConfigGUISQLDatabaseNameButton: Zmeniť databázu SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Úspešne zmenil názov databázy SQL.
+  wwcConfigConversationFatalAsyncAbort: Aktuálny časový limit na zrušenie všetkých
+    asynchrónnych úloh je %i sekúnd. Zadajte čokoľvek vyššie ako 7, aby ste nastavili
+    nový časový rámec, alebo čokoľvek pod ním, aby ste sa vrátili späť.
+  wwcConfigConversationFatalAsyncSuccess: Časový údaj úlohy Async úspešne nastavený.
+  wwcConfigGUIFatalAsyncAbortButton: Zmeniť časový interval úloh Async

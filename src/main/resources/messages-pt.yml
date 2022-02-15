@@ -389,3 +389,9 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Alterar banco de dados SQL
   wwcConfigConversationSQLDatabaseNameSuccess: O nome do banco de dados SQL alterado
     com sucesso.
+  wwcConfigConversationFatalAsyncAbort: O tempo limite atual para abortar todas as
+    tarefas assíncronas é de %i segundos. Digite qualquer coisa acima de 7 para definir
+    um novo tempo limite ou qualquer coisa abaixo dele para voltar.
+  wwcConfigConversationFatalAsyncSuccess: Tempo limite da tarefa assíncrona definido
+    com sucesso.
+  wwcConfigGUIFatalAsyncAbortButton: Alterar tempo limite da tarefa assíncrona

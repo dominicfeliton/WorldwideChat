@@ -385,3 +385,9 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: SQL डाटाबेस बदलें
   wwcConfigConversationSQLDatabaseNameSuccess: SQL डेटाबेस नाम को सफलतापूर्वक बदल
     दिया।
+  wwcConfigConversationFatalAsyncAbort: सभी async कार्यों को निरस्त करने के लिए वर्तमान
+    समयबाह्य %i सेकंड है। नया टाइमआउट सेट करने के लिए 7 से ऊपर कुछ भी टाइप करें, या
+    वापस जाने के लिए इसके नीचे कुछ भी टाइप करें।
+  wwcConfigConversationFatalAsyncSuccess: Async कार्य समयबाह्य सफलतापूर्वक सेट किया
+    गया।
+  wwcConfigGUIFatalAsyncAbortButton: Async टास्क टाइमआउट बदलें

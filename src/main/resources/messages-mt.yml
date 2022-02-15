@@ -384,3 +384,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Bidla Database SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Biddel b'suċċess l-isem tad-database
     SQL.
+  wwcConfigConversationFatalAsyncAbort: Il timeout attwali biex abort kompiti kollha
+    async huwa %i sekondi. Ittajpja xi ħaġa 'l fuq minn 7 biex tissettja timeout ġdid,
+    jew xi ħaġa taħtha biex tmur lura.
+  wwcConfigConversationFatalAsyncSuccess: Async timeout kompitu stabbiliti b'suċċess.
+  wwcConfigGUIFatalAsyncAbortButton: Bidla Timeout Task Async

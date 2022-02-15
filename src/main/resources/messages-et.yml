@@ -364,3 +364,8 @@ Messages:
     nime määramiseks tippige midagi muud kui 0 või tippige tagasi minemiseks 0.
   wwcConfigGUISQLDatabaseNameButton: Muuda SQL-andmebaasi
   wwcConfigConversationSQLDatabaseNameSuccess: SQL-i andmebaasi nime edukalt muutnud.
+  wwcConfigConversationFatalAsyncAbort: Praegune ajalõpp kõigi asünkroonitoimingute
+    katkestamiseks on %i sekundit. Tippige midagi eespool 7, et määrata uus ajalõpp,
+    või midagi selle alla minna tagasi.
+  wwcConfigConversationFatalAsyncSuccess: Async ülesande ajalõpu seatud edukalt.
+  wwcConfigGUIFatalAsyncAbortButton: Asynci ülesande ajalõpu muutmine

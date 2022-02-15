@@ -390,3 +390,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: SQL Database wijzigen
   wwcConfigConversationSQLDatabaseNameSuccess: De naam van de SQL-database is succesvol
     gewijzigd
+  wwcConfigConversationFatalAsyncAbort: De huidige time-out om alle async taken af
+    te breken is %i seconden. Typ iets boven 7 om een nieuwe time-out in te stellen,
+    of iets eronder om terug te gaan.
+  wwcConfigConversationFatalAsyncSuccess: Time-out voor async taken is succesvol ingesteld.
+  wwcConfigGUIFatalAsyncAbortButton: Time-out voor async taken wijzigen

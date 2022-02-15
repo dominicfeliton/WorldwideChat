@@ -388,3 +388,8 @@ Messages:
     något annat än 0 för att ange ett nytt databasnamn, eller skriv 0 för att gå tillbaka.
   wwcConfigGUISQLDatabaseNameButton: Ändra SQL-databas
   wwcConfigConversationSQLDatabaseNameSuccess: Ändrade SQL-databasens namn.
+  wwcConfigConversationFatalAsyncAbort: Aktuell timeout för att avbryta alla asynka
+    aktiviteter är %i sekunder. Skriv något över 7 för att ställa in en ny timeout,
+    eller något under det för att gå tillbaka.
+  wwcConfigConversationFatalAsyncSuccess: Tidsgräns för async aktivitet.
+  wwcConfigGUIFatalAsyncAbortButton: Ändra tidsgräns för async aktivitet

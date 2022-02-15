@@ -382,3 +382,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Promjena SQL baze podataka
   wwcConfigConversationSQLDatabaseNameSuccess: Uspješno je promijenio naziv SQL baze
     podataka.
+  wwcConfigConversationFatalAsyncAbort: Trenutni vremenski ograničenje za prekid svih
+    async zadataka je %i sekundi. Upišite sve iznad 7 da biste postavili novo vremensko
+    ograničenje ili bilo što ispod njega da biste se vratili.
+  wwcConfigConversationFatalAsyncSuccess: Aync zadatak timeout postavljen uspješno.
+  wwcConfigGUIFatalAsyncAbortButton: Promjena vremena zadatka Aync

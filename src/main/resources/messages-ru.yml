@@ -387,3 +387,8 @@ Messages:
     назад.'
   wwcConfigGUISQLDatabaseNameButton: Изменить базу данных SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Имя базы данных SQL успешно изменено.
+  wwcConfigConversationFatalAsyncAbort: Текущее время ожидания для прерывания всех
+    асинхронных задач составляет %i секунд. Введите значение выше 7, чтобы установить
+    новый тайм-аут, или значение ниже, чтобы вернуться.
+  wwcConfigConversationFatalAsyncSuccess: Тайм-аут асинхронной задачи установлен успешно.
+  wwcConfigGUIFatalAsyncAbortButton: Изменить тайм-аут асинхронной задачи

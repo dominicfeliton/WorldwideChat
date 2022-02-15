@@ -401,3 +401,8 @@ Messages:
     செல்ல 0 தட்டச்சு செய்க.
   wwcConfigGUISQLDatabaseNameButton: SQL தரவுத்தள மாற்ற
   wwcConfigConversationSQLDatabaseNameSuccess: SQL தரவுத்தள பெயரை வெற்றிகரமாக மாற்றியது.
+  wwcConfigConversationFatalAsyncAbort: அனைத்து async பணிகளையும் நீக்குவதற்கான தற்போதைய
+    நேரம் முடிவு %i வினாடிகள் ஆகும். ஒரு புதிய நேர முடிவை அமைக்க 7 க்கு மேலே எதையும்
+    தட்டச்சு செய்க, அல்லது அதற்கு கீழே உள்ள எதையும் திரும்பிச் செல்ல.
+  wwcConfigConversationFatalAsyncSuccess: Async பணி நேர முடிவின் வெற்றிகரமாக அமைக்க.
+  wwcConfigGUIFatalAsyncAbortButton: Async பணி நேர முடிவை மாற்றவும்
