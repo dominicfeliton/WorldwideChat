@@ -328,7 +328,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Гаралтын Хэл: %i'
   wwcTranslatorAttempt: config.yml орчуулагчтай холбогдохыг оролдох... ( %i/ %o оролдох
     %)
-  wwcTimeoutException: ' Таны тушаал гарч хугацаатай. Дахин оролдоно уу.'
   wwcTimeoutExceptionConsole: Тоглогчийн % Би тэдний хамгийн сүүлийн хүсэлт хугацаа
     байсан. Энэ алдаа нь үхлийн аюултай биш юм, гэхдээ WorldwideChat энэ нь юу хэвээр
     байгаа бол дахин ачаалах хэрэгтэй.
@@ -391,3 +390,4 @@ Messages:
     доор нь ямар нэгэн зүйл буцааж яваарай.
   wwcConfigConversationFatalAsyncSuccess: Async ажил хугацаа амжилттай тогтоосон.
   wwcConfigGUIFatalAsyncAbortButton: Async Даалгавар Хугацааны өөрчлөлт
+  wwcTimeoutException: Таны тушаал гарч хугацаатай. Дахин оролдоно уу.

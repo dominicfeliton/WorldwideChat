@@ -335,7 +335,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Idioma de sortida: %i'
   wwcTranslatorAttempt: Intentar connectar-se al traductor en config.yml... (Intentat
     %i/ %o)
-  wwcTimeoutException: ' La vostra comanda cronometrada. Torneu-ho a provar.'
   wwcTimeoutExceptionConsole: Jugador %He tingut el seu temps d'espera més recent
     sol·licitud. Aquest error no és fatal, però s'ha de tornar a carregar WorldwideChat
     si continua succeint.
@@ -403,3 +402,4 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async temps d'espera de tasques establert
     amb èxit.
   wwcConfigGUIFatalAsyncAbortButton: Canviar el temps d'espera de la tasca async
+  wwcTimeoutException: La vostra comanda cronometrada. Torneu-ho a provar.

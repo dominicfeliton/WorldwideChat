@@ -321,7 +321,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'გამოყვანის ენა: %i'
   wwcTranslatorAttempt: თარჯიმანთან დაკავშირების მცდელობა config.yml... (მცდელობა
     %i/ %o)
-  wwcTimeoutException: ' თქვენი ბრძანება დროული out. სცადეთ კიდევ ერთხელ.'
   wwcTimeoutExceptionConsole: Player %i მქონდა მათი უახლესი მოთხოვნის შეყოვნება. ეს
     შეცდომა არ არის ფატალური, მაგრამ WorldwideChat უნდა გადატვირთული თუ ის გრძელდება.
   wwcGUIPageNumber: 'გვერდის ნომერი: %i'
@@ -380,3 +379,4 @@ Messages:
     არაფერი ქვემოთ დაბრუნებას.
   wwcConfigConversationFatalAsyncSuccess: Async ამოცანა შეყოვნება მითითებული წარმატებით.
   wwcConfigGUIFatalAsyncAbortButton: ასინკის სამუშაო დროის შეცვლა
+  wwcTimeoutException: თქვენი ბრძანება დროული out. სცადეთ კიდევ ერთხელ.

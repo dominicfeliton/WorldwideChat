@@ -59,7 +59,6 @@ import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 
 public class WorldwideChat extends JavaPlugin {
-	/* Vars */
 	public static final int bStatsID = 10562;
 	public static int translatorFatalAbortSeconds = 10;
 	public static final int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -83,7 +82,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "02162022-1"; // This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "02162022-2"; // This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)

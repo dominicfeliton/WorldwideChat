@@ -327,7 +327,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Allbwn Iaith: %i'
   wwcTranslatorAttempt: Ceisio cysylltu â chyfieithydd yn config.yml... (Ceisiwch
     %i/ %o)
-  wwcTimeoutException: ' Eich gorchymyn wedi''i amseru allan. Ceisiwch eto.'
   wwcTimeoutExceptionConsole: Chwaraewr % Cefais eu hamseriad cais diweddaraf. Nid
     yw'r gwall hwn yn angheuol, ond dylid ail-lwytho WorldwideChat os yw'n parhau
     i ddigwydd.
@@ -386,3 +385,4 @@ Messages:
     beth oddi tano i fynd yn ôl.
   wwcConfigConversationFatalAsyncSuccess: Amserlen tasg Async gosod yn llwyddiannus.
   wwcConfigGUIFatalAsyncAbortButton: Newid Amserlen Tasg Async
+  wwcTimeoutException: Eich gorchymyn wedi'i amseru allan. Ceisiwch eto.

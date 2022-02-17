@@ -317,7 +317,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Шығу тілі: %i'
   wwcTranslatorAttempt: Config.yml ішіндегі аудармашыға қосылуға әрекет... ( %i/ %o
     әрекеті)
-  wwcTimeoutException: ' Сіздің командаңыз орайластырылған. Қайтадан көріңіз.'
   wwcTimeoutExceptionConsole: Player % Мен олардың ең соңғы сұрау уақыты болды. Бұл
     қате өлімге ұшырамайды, бірақ WorldwideChat оны жалғастыра берсе, қайта жүктеу
     керек.
@@ -378,3 +377,4 @@ Messages:
     үшін төмендегі нәрсені теріңіз.
   wwcConfigConversationFatalAsyncSuccess: Async тапсырма уақыты сәтті орнатылған.
   wwcConfigGUIFatalAsyncAbortButton: Async тапсырмасының уақытын өзгерту
+  wwcTimeoutException: Сіздің командаңыз орайластырылған. Қайтадан көріңіз.

@@ -256,7 +256,6 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 已启用传入聊天翻译： %i
   wwctGUIExistingTranslationOutput: 输出语言： %i
   wwcTranslatorAttempt: 正在尝试在 config.yml 中连接翻译器...（尝试 %i/ %o）
-  wwcTimeoutException: ' 你的命令已超时。请再试一次。'
   wwcTimeoutExceptionConsole: 玩家 %i 最近一次请求超时。这个错误不是致命的，但是如果它继续发生，应该重新加载 WorldwideChat。
   wwcGUIPageNumber: 页码： %i
   wwcConfigSQLFail: 无法连接到 SQL。
@@ -300,3 +299,4 @@ Messages:
   wwcConfigConversationFatalAsyncAbort: 当前中止所有异步任务的超时时间为 %i 秒。键入大于7的任何内容以设置新的超时，或键入低于此值的任何内容以返回。
   wwcConfigConversationFatalAsyncSuccess: 异步任务超时设置成功。
   wwcConfigGUIFatalAsyncAbortButton: 更改异步任务超时
+  wwcTimeoutException: 你的命令已超时。请再试一次。

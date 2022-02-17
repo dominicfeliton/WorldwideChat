@@ -324,7 +324,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Izvades valoda: %i'
   wwcTranslatorAttempt: Mēģinot izveidot savienojumu ar tulkotāju config.yml... (Mēģinājums
     %i/ %o)
-  wwcTimeoutException: ' Jūsu komanda taimauts. Lūdzu, mēģiniet vēlreiz.'
   wwcTimeoutExceptionConsole: Spēlētājs %Man bija pēdējais pieprasījuma taimauts.
     Šī kļūda nav letāla, bet WorldwideChat ir jāpārlādē, ja tā turpina notikt.
   wwcGUIPageNumber: 'Lapas numurs: %i'
@@ -383,3 +382,4 @@ Messages:
     jaunu taimautu vai kaut ko zem tā, lai atgrieztos.
   wwcConfigConversationFatalAsyncSuccess: Asinc uzdevumu taimauts iestatīts veiksmīgi.
   wwcConfigGUIFatalAsyncAbortButton: Mainīt Asinc uzdevumu taimautu
+  wwcTimeoutException: Jūsu komanda taimauts. Lūdzu, mēģiniet vēlreiz.

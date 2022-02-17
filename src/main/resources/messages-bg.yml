@@ -330,7 +330,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Език на изхода: %i'
   wwcTranslatorAttempt: Опитвайки се да се свържете с преводач в config.yml... (Опит
     %i/ %o)
-  wwcTimeoutException: ' Командата ти е изчерпана. Моля, опитайте отново.'
   wwcTimeoutExceptionConsole: Играч % имах последното изчакване на заявката. Тази
     грешка не е фатална, но WorldwideChat трябва да се презареди, ако продължава да
     се случва.
@@ -393,3 +392,4 @@ Messages:
     или нещо под него, за да се върнете.
   wwcConfigConversationFatalAsyncSuccess: Async задача изчакване настроен успешно.
   wwcConfigGUIFatalAsyncAbortButton: Промяна на изчакване на задачи за асинхрон
+  wwcTimeoutException: Командата ти е изчерпана. Моля, опитайте отново.

@@ -328,7 +328,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Output Lingwa: %i'
   wwcTranslatorAttempt: Jippruvaw jgħaqqdu lill traduttur fil config.yml... (ATTEMPT
     %i/ %o)
-  wwcTimeoutException: ' Il-kmand tiegħek ittajmjat. Jekk jogħġbok erġa pprova.'
   wwcTimeoutExceptionConsole: Player %i kellhom ħin talba aktar riċenti tagħhom. Dan
     l-iżball mhuwiex fatali, iżda WorldwideChat għandu jerġa 'jitgħabba jekk jibqa'
     jiġri.
@@ -387,3 +386,4 @@ Messages:
     jew xi ħaġa taħtha biex tmur lura.
   wwcConfigConversationFatalAsyncSuccess: Async timeout kompitu stabbiliti b'suċċess.
   wwcConfigGUIFatalAsyncAbortButton: Bidla Timeout Task Async
+  wwcTimeoutException: Il-kmand tiegħek ittajmjat. Jekk jogħġbok erġa pprova.

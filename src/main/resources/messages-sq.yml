@@ -339,7 +339,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Gjuha e daljes: %i'
   wwcTranslatorAttempt: Përpjekja për t'u lidhur me përkthyesin në config.yml... (Përpjekje
     %i/ %o)
-  wwcTimeoutException: ' Komanda juaj në kohën e duhur. Ju lutemi provoni përsëri.'
   wwcTimeoutExceptionConsole: Lojtari % kam pasur kohën e tyre më të fundit të kërkesës.
     Ky gabim nuk është fatal, por WorldwideChat duhet të rifreskohet nëse vazhdon
     të ndodhë.
@@ -404,3 +403,4 @@ Messages:
     të re, ose ndonjë gjë poshtë saj për t'u kthyer prapa.
   wwcConfigConversationFatalAsyncSuccess: Asinkron detyrë timeout vendosur me sukses.
   wwcConfigGUIFatalAsyncAbortButton: Ndrysho Async Task Timeout
+  wwcTimeoutException: Komanda juaj në kohën e duhur. Ju lutemi provoni përsëri.

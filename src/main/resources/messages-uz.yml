@@ -329,8 +329,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Chiqish tili: %i'
   wwcTranslatorAttempt: Config.yml da tarjimonga ulanishga harakat qilish... ( %i/
     %o urinishi)
-  wwcTimeoutException: ' Sizning buyrug''ingiz amalga oshirildi. Iltimos, yana urinib
-    ko''ring.'
   wwcTimeoutExceptionConsole: O'yinchi % Men ularning eng so'nggi so'rovlar vaqti
     bor edi. Bu xato halokatli emas, lekin agar u davom etsa WorldwideChat qayta yuklanishi
     kerak.
@@ -392,3 +390,5 @@ Messages:
     yoki orqaga qaytish uchun uning ostidagi narsalarni kiriting.
   wwcConfigConversationFatalAsyncSuccess: Async vazifa vaqt muvaffaqiyatli belgilangan.
   wwcConfigGUIFatalAsyncAbortButton: Async Vazifa vaqtini o'zgartirish
+  wwcTimeoutException: Sizning buyrug'ingiz amalga oshirildi. Iltimos, yana urinib
+    ko'ring.

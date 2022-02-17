@@ -323,7 +323,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Uitset Taal: %i'
   wwcTranslatorAttempt: Probeer om aan te sluit op vertaler in config.yml... (Poging
     %i/ %o)
-  wwcTimeoutException: ' Jou opdrag snel uit. Probeer asseblief weer.'
   wwcTimeoutExceptionConsole: Speler %i het hul mees onlangse versoektime-out gehad.
     Hierdie fout is nie noodlottig nie, maar WorldwideChat moet herlaai word as dit
     steeds gebeur.
@@ -383,3 +382,4 @@ Messages:
     onder dit om terug te gaan.
   wwcConfigConversationFatalAsyncSuccess: Async taak time-out suksesvol te stel.
   wwcConfigGUIFatalAsyncAbortButton: Verander Async Taak Time-out
+  wwcTimeoutException: Jou opdrag snel uit. Probeer asseblief weer.

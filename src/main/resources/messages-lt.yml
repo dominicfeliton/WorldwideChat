@@ -320,7 +320,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Išvesties kalba: %i'
   wwcTranslatorAttempt: Bandymas prisijungti prie vertėjo konfig.yml... (Bandymas
     %i/ %o)
-  wwcTimeoutException: ' Jūsų komanda sulaiko. Pabandykite dar kartą.'
   wwcTimeoutExceptionConsole: Žaidėjas %Aš turėjau naujausią užklausą laiko. Ši klaida
     nėra mirtina, bet WorldwideChat turėtų būti perkrautas, jei ji ir toliau įvyks.
   wwcGUIPageNumber: 'Puslapio numeris: %i'
@@ -381,3 +380,4 @@ Messages:
     arba ką nors žemiau jo grįžti.
   wwcConfigConversationFatalAsyncSuccess: Async užduotis timeout nustatyti sėkmingai.
   wwcConfigGUIFatalAsyncAbortButton: Pakeisti Async Užduočių Laikas
+  wwcTimeoutException: Jūsų komanda sulaiko. Pabandykite dar kartą.

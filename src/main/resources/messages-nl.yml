@@ -332,7 +332,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Uitvoertaal: %i'
   wwcTranslatorAttempt: Poging om verbinding te maken met vertaler in config.yml...
     (Poging %i/ %o)
-  wwcTimeoutException: ' Je commando is een time-out geworden. Probeer het opnieuw.'
   wwcTimeoutExceptionConsole: Speler %i had hun meest recente time-out voor het aanvragen.
     Deze fout is niet fataal, maar WorldwideChat moet opnieuw worden geladen als het
     blijft gebeuren.
@@ -393,3 +392,4 @@ Messages:
     of iets eronder om terug te gaan.
   wwcConfigConversationFatalAsyncSuccess: Time-out voor async taken is succesvol ingesteld.
   wwcConfigGUIFatalAsyncAbortButton: Time-out voor async taken wijzigen
+  wwcTimeoutException: Je commando is een time-out geworden. Probeer het opnieuw.

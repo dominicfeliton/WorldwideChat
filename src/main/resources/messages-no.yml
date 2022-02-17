@@ -314,7 +314,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Utdata Språk: %i'
   wwcTranslatorAttempt: Forsøker å koble til oversetter i config.yml... (Forsøk %i
     %o)
-  wwcTimeoutException: ' Din kommando tidsavbrudd. Prøv igjen.'
   wwcTimeoutExceptionConsole: Spiller %Jeg hadde sin siste tidsavbrudd for forespørselen.
     Denne feilen er ikke dødelig, men WorldwideChat bør lastes på nytt hvis den fortsetter
     å skje.
@@ -372,3 +371,4 @@ Messages:
     det for å gå tilbake.
   wwcConfigConversationFatalAsyncSuccess: Tidsavbrudd for async oppgave satt vellykket.
   wwcConfigGUIFatalAsyncAbortButton: Endre tidsavbrudd for async oppgave
+  wwcTimeoutException: Din kommando tidsavbrudd. Prøv igjen.

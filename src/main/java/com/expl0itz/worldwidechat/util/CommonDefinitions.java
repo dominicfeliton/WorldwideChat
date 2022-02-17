@@ -470,7 +470,7 @@ public class CommonDefinitions {
 		}
 		final TextComponent timeoutException = Component.text()
 				.append(Component.text()
-						.content(CommonDefinitions.getMessage("wwcTimeoutException", new String[0]))
+						.content(CommonDefinitions.getMessage("wwcTimeoutException"))
 						.color(NamedTextColor.YELLOW))
 				.build();
 		CommonDefinitions.sendMessage(sender, timeoutException);

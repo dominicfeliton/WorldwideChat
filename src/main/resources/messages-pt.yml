@@ -331,7 +331,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Idioma de saída: %i'
   wwcTranslatorAttempt: Tentando se conectar ao tradutor no config.yml... (Tentativa
     %i/ %o)
-  wwcTimeoutException: ' Seu comando atingiu o tempo limite. Por favor, tente novamente.'
   wwcTimeoutExceptionConsole: O jogador %i teve seu tempo limite de solicitação mais
     recente. Esse erro não é fatal, mas o WorldwideChat deve ser recarregado se continuar
     acontecendo.
@@ -393,3 +392,4 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Tempo limite da tarefa assíncrona definido
     com sucesso.
   wwcConfigGUIFatalAsyncAbortButton: Alterar tempo limite da tarefa assíncrona
+  wwcTimeoutException: Seu comando atingiu o tempo limite. Por favor, tente novamente.

@@ -318,8 +318,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'আউটপুট ভাষা: %i'
   wwcTranslatorAttempt: config.yml এ অনুবাদকের সাথে সংযোগ স্থাপনের চেষ্টা করা হচ্ছে...
     (প্রচেষ্টা %i/ %o)
-  wwcTimeoutException: ' আপনার কমান্ডের সময়সীমা শেষ হয়ে গেছে। অনুগ্রহ করে পুনরায় চেষ্টা
-    করুন।'
   wwcTimeoutExceptionConsole: খেলোয়াড় %i তাদের সাম্প্রতিক অনুরোধের সময়সীমা ছিল।
     এই ত্রুটিটি মারাত্মক নয়, তবে বিশ্বব্যাপী চ্যাট পুনরায় লোড করা উচিত যদি এটি ঘটতে
     থাকে।
@@ -377,3 +375,5 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: অ্যাসিঙ্ক টাস্ক টাইমআউট সফলভাবে সেট করা
     হয়েছে।
   wwcConfigGUIFatalAsyncAbortButton: অ্যাসিঙ্ক টাস্ক টাইম- আউট পরিবর্তন করুন
+  wwcTimeoutException: আপনার কমান্ডের সময়সীমা শেষ হয়ে গেছে। অনুগ্রহ করে পুনরায় চেষ্টা
+    করুন।

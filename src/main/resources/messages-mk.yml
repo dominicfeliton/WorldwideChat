@@ -337,7 +337,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Излезен јазик: %i'
   wwcTranslatorAttempt: Обид да се поврзете со преведувач во config.yml... (Обид %i/
     %o)
-  wwcTimeoutException: ' Вашата команда темпирана. Ве молиме обидете се повторно.'
   wwcTimeoutExceptionConsole: Играчот %Имав нивните најнови барање тајмаут. Оваа грешка
     не е фатална, но WorldwideChat треба да се превчита ако продолжи да се случува.
   wwcGUIPageNumber: 'Број на страница: %i'
@@ -399,3 +398,4 @@ Messages:
     нешто под него за да се вратите назад.
   wwcConfigConversationFatalAsyncSuccess: Async задача тајмаут постави успешно.
   wwcConfigGUIFatalAsyncAbortButton: Промена Async Задача тајмаут
+  wwcTimeoutException: Вашата команда темпирана. Ве молиме обидете се повторно.

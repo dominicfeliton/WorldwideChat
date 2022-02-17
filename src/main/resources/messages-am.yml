@@ -280,7 +280,6 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 'ገቢ የውይይት ትርጉም ነቅቷል: %i'
   wwctGUIExistingTranslationOutput: 'የውጤት ቋንቋ: %i'
   wwcTranslatorAttempt: በ config.yml ውስጥ ተርጓሚ ጋር ለመገናኘት በመሞከር ላይ... (ሙከር %እኔ/ %o)
-  wwcTimeoutException: ' የእርስዎ ትዕዛዝ አልፎበታል። እባክዎ እንደገና ይሞክሩ።'
   wwcTimeoutExceptionConsole: ተጫዋች %እኔ በጣም የቅርብ ጊዜ ጥያቄ የእረፍት ጊዜ ነበር። ይህ ስህተት ለሞት የሚዳርግ
     አይደለም, ነገር ግን በዓለም አቀፍ ደረጃ መከሰቱን ከቀጠለ ዳግም መጫን አለበት።
   wwcGUIPageNumber: 'የገጽ ቁጥር: %i'
@@ -335,3 +334,4 @@ Messages:
     ይተይቡ።
   wwcConfigConversationFatalAsyncSuccess: የተሳሳተ ተግባር የእረፍት ጊዜ በተሳካ ሁኔታ ተዘጋጅቷል።
   wwcConfigGUIFatalAsyncAbortButton: አሲንክ የተግባር ጊዜ ማብቂያ ይቀይሩ
+  wwcTimeoutException: የእርስዎ ትዕዛዝ አልፎበታል። እባክዎ እንደገና ይሞክሩ።

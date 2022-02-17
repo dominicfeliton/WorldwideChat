@@ -347,7 +347,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Langue de sortie: %i'
   wwcTranslatorAttempt: Tenter de se connecter au traducteur dans... (Tentative %i/
     %o)
-  wwcTimeoutException: ' Votre commande a expiré. Veuillez réessayer.'
   wwcTimeoutExceptionConsole: Le lecteur %i avait son délai d'attente le plus récent.
     Cette erreur n'est pas fatale, mais WorldwideChat devrait être rechargée si elle
     continue de se produire.
@@ -414,3 +413,4 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Délai d'attente des tâches asynchrones défini
     avec succès.
   wwcConfigGUIFatalAsyncAbortButton: Modifier le délai d'attente des tâches asynchrones
+  wwcTimeoutException: Votre commande a expiré. Veuillez réessayer.

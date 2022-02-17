@@ -326,7 +326,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'ഔട്ട്പുട്ട് ഭാഷ: %i'
   wwcTranslatorAttempt: config.yml ൽ വിവർത്തകനിലേക്ക് കണക്റ്റുചെയ്യാൻ ശ്രമിക്കുന്നു...
     (ശ്രമം %i/ %o)
-  wwcTimeoutException: ' നിങ്ങളുടെ കമാൻഡ് സമയമെടുത്തു. ദയവായി വീണ്ടും ശ്രമിക്കുക.'
   wwcTimeoutExceptionConsole: പ്ലേയർ % എനിക്ക് അവരുടെ ഏറ്റവും പുതിയ അഭ്യർത്ഥന സമയപരിധി
     ഉണ്ടായിരുന്നു. ഈ പിശക് മാരകമായ അല്ല, എന്നാൽ വൊര്ല്ദ്വിദെഛത് അത് സംഭവിക്കാൻ തുടരുകയാണെങ്കിൽ
     റീലോഡ് വേണം.
@@ -388,3 +387,4 @@ Messages:
     എന്തും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ താഴെയുള്ള എന്തും.
   wwcConfigConversationFatalAsyncSuccess: അസമമായ ടാസ്ക് ടൈംഔട്ട് വിജയകരമായി സജ്ജമാക്കി.
   wwcConfigGUIFatalAsyncAbortButton: അസമമായ ടാസ്ക് ടൈംഔട്ട് മാറ്റുക
+  wwcTimeoutException: നിങ്ങളുടെ കമാൻഡ് സമയമെടുത്തു. ദയവായി വീണ്ടും ശ്രമിക്കുക.

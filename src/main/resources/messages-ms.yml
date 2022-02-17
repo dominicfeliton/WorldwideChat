@@ -326,7 +326,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Bahasa Output: %i'
   wwcTranslatorAttempt: Cuba untuk menyambung kepada penterjemah dalam config.yml...
     (Percubaan %i/ %o)
-  wwcTimeoutException: ' Perintah anda tamat masa. Sila cuba lagi.'
   wwcTimeoutExceptionConsole: Pemain % saya mempunyai masa tamat permintaan terbaru
     mereka. Kesalahan ini tidak membawa maut, tetapi WorldwideChat harus dimuat semula
     jika ia terus berlaku.
@@ -385,3 +384,4 @@ Messages:
     baru, atau apa-apa di bawahnya untuk kembali.
   wwcConfigConversationFatalAsyncSuccess: Async tugas tamat masa ditetapkan berjaya.
   wwcConfigGUIFatalAsyncAbortButton: Tukar Async Task Timeout
+  wwcTimeoutException: Perintah anda tamat masa. Sila cuba lagi.

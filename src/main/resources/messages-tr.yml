@@ -313,7 +313,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Çıktı Dili: %i'
   wwcTranslatorAttempt: Config.yml içinde çevirmen bağlanmaya çalışılıyor... (Deneme
     %i/ %o)
-  wwcTimeoutException: ' Komutunuz zaman aşımına uğradı Lütfen tekrar deneyin.'
   wwcTimeoutExceptionConsole: Oyuncu %i en son istek zaman aşımına uğradı. Bu hata
     ölümcül değildir, ancak gerçekleşmeye devam ederse WorldwideChat yeniden yüklenmelidir.
   wwcGUIPageNumber: 'Sayfa Numarası: %i'
@@ -373,3 +372,4 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Zaman uyumsuz görev zaman aşımı başarıyla
     ayarlandı.
   wwcConfigGUIFatalAsyncAbortButton: Zaman Eşzamanzamanlama Görev Zaman Aşımı Değiştir
+  wwcTimeoutException: Komutunuz zaman aşımına uğradı Lütfen tekrar deneyin.

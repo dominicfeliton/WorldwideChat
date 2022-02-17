@@ -348,7 +348,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Γλώσσα εξόδου: %i'
   wwcTranslatorAttempt: Προσπάθεια σύνδεσης με μεταφραστή στο config.yml... (Προσπάθεια
     του %i/ %o)
-  wwcTimeoutException: ' Η εντολή σου έληξε. Παρακαλώ προσπαθήστε ξανά.'
   wwcTimeoutExceptionConsole: Παίχτης %Είχα το χρονικό όριο της πιο πρόσφατης αίτησής
     του. Αυτό το σφάλμα δεν είναι θανατηφόρο, αλλά το WorldwideChat θα πρέπει να επαναφορτωθεί
     εάν εξακολουθεί να συμβαίνει.
@@ -417,3 +416,4 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Καθορίστηκε με επιτυχία το χρονικό όριο
     ασύγχρονης εργασίας.
   wwcConfigGUIFatalAsyncAbortButton: Αλλαγή χρονικού ορίου εργασίας ασύγχρονη
+  wwcTimeoutException: Η εντολή σου έληξε. Παρακαλώ προσπαθήστε ξανά.

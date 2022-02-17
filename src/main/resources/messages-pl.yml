@@ -329,8 +329,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Język wyjściowy: %i'
   wwcTranslatorAttempt: 'Próba połączenia z tłumaczem w config.yml... (Próba: %i/
     %o)'
-  wwcTimeoutException: ' Upłynnął limit czasu twojego polecenia. Proszę spróbować
-    jeszcze raz.'
   wwcTimeoutExceptionConsole: Odtwarzacz %i miał limit czasu ostatniego żądania. Ten
     błąd nie jest krytyczny, ale WorldwideChat powinien zostać ponownie załadowany,
     jeśli nadal występuje.
@@ -390,3 +388,5 @@ Messages:
     nowy limit czasu, lub cokolwiek poniżej niego, aby wrócić.
   wwcConfigConversationFatalAsyncSuccess: Ustawiono limit czasu zadania asynchroniczny.
   wwcConfigGUIFatalAsyncAbortButton: Zmiana limitu czasu zadania asynchronnego
+  wwcTimeoutException: Upłynnął limit czasu twojego polecenia. Proszę spróbować jeszcze
+    raz.

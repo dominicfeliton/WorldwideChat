@@ -320,7 +320,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Lugha ya Pato: %i'
   wwcTranslatorAttempt: Kujaribu kuungana na translator katika config.yml... (jaribio
     %i/ %o)
-  wwcTimeoutException: ' Amri yako wakati muafaka nje. Tafadhali jaribu tena.'
   wwcTimeoutExceptionConsole: mchezaji %Nilikuwa na ombi yao ya hivi karibuni umeisha.
     Hitilafu hii sio mbaya, lakini WorldwideChat inapaswa kupakiwa tena ikiwa inaendelea
     kutokea.
@@ -381,3 +380,4 @@ Messages:
     chochote chini yake ili kurudi nyuma.
   wwcConfigConversationFatalAsyncSuccess: Timeout kazi ya Async imewekwa kwa mafanikio.
   wwcConfigGUIFatalAsyncAbortButton: Badilisha Muda wa Kazi ya Async
+  wwcTimeoutException: Amri yako wakati muafaka nje. Tafadhali jaribu tena.

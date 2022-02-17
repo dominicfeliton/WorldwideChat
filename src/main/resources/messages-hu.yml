@@ -328,7 +328,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Kimeneti nyelv: %i'
   wwcTranslatorAttempt: Megpróbál csatlakozni fordító config.yml... (Kísérlet %i/
     %o)
-  wwcTimeoutException: ' A parancsnoksága időtúllépés volt. Kérem, próbálja újra.'
   wwcTimeoutExceptionConsole: '%i játékos nála volt a legutóbbi kérési időtúlcselése.
     Ez a hiba nem végzetes, de a WorldwideChat-t újra kell tölteni, ha továbbra is
     megtörténik.'
@@ -391,3 +390,4 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Az aszinkron feladat időtúltolása sikeresen
     beállítva.
   wwcConfigGUIFatalAsyncAbortButton: Async Task Timeout módosítása
+  wwcTimeoutException: A parancsnoksága időtúllépés volt. Kérem, próbálja újra.

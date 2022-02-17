@@ -352,8 +352,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Ausgabesprache: %i'
   wwcTranslatorAttempt: Es wird versucht, in config.yml eine Verbindung zum Übersetzer
     herzustellen... (Versuch %i/ %o)
-  wwcTimeoutException: ' Ihr Befehl hat das Zeitlimit überschritten. Bitte versuche
-    es erneut.'
   wwcTimeoutExceptionConsole: Spieler %i hatte seinen letzten Zeitlimit für Anfragen.
     Dieser Fehler ist nicht schwerwiegend, aber WorldwideChat sollte neu geladen werden,
     falls er weiterhin auftritt.
@@ -420,3 +418,5 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Zeitüberschreitung für asynchrone Aufgaben
     wurde erfolgreich festgelegt.
   wwcConfigGUIFatalAsyncAbortButton: Async-Aufgaben-Timeout ändern
+  wwcTimeoutException: Ihr Befehl hat das Zeitlimit überschritten. Bitte versuche
+    es erneut.

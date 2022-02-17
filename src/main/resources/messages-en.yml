@@ -28,7 +28,7 @@ Messages:
   wwcTranslatorErrorThresholdReached: 'Error threshold reached. This plugin will now reload, and disable all translators.'
   wwcTranslatorErrorThresholdReachedCheckLogs: 'Please check errorLog.txt in the WorldwideChat plugin folder for more information.'
   wwcTimeoutExceptionConsole: 'Player %i had their most recent request timeout. This error is not fatal, but WorldwideChat should be reloaded if it continues to happen.'
-  wwcTimeoutException: ' Your command timed out. Please try again.'
+  wwcTimeoutException: 'Your command timed out. Please try again.'
   wwcGUIPageNumber: 'Page Number: %i'
   #------------------- Listener Messages -------------------
   wwcChatTranslationFail: 'Failed to translate your message.'

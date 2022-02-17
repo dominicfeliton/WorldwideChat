@@ -341,7 +341,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'வெளியீட்டு மொழி: %i'
   wwcTranslatorAttempt: config.yml மொழிபெயர்ப்பாளர் இணைக்க முயற்சிக்கிறது... ( %i/
     %o ஐ முயற்சிக்க)
-  wwcTimeoutException: ' உங்கள் கட்டளை நேரம் கடந்துவிட்டது. மீண்டும் முயற்சிக்கவும்.'
   wwcTimeoutExceptionConsole: பிளேயர் % நான் அவர்களின் மிக சமீபத்திய கோரிக்கை நேரம்
     முடிந்தது. இந்த பிழை அபாயகரமானது அல்ல, ஆனால் அது தொடர்ந்து நடந்தால் WorldwideChat
     மீண்டும் ஏற்றப்பட வேண்டும்.
@@ -404,3 +403,4 @@ Messages:
     தட்டச்சு செய்க, அல்லது அதற்கு கீழே உள்ள எதையும் திரும்பிச் செல்ல.
   wwcConfigConversationFatalAsyncSuccess: Async பணி நேர முடிவின் வெற்றிகரமாக அமைக்க.
   wwcConfigGUIFatalAsyncAbortButton: Async பணி நேர முடிவை மாற்றவும்
+  wwcTimeoutException: உங்கள் கட்டளை நேரம் கடந்துவிட்டது. மீண்டும் முயற்சிக்கவும்.

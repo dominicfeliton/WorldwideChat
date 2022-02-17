@@ -332,7 +332,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Výstupný jazyk: %i'
   wwcTranslatorAttempt: Pokúšam sa pripojiť k prekladateľovi v config.yml... (Pokus
     %i/ %o)
-  wwcTimeoutException: ' Váš príkaz vypršal. Prosím, skúste to znova.'
   wwcTimeoutExceptionConsole: Hráč % Mal som ich poslednú požiadavku časový limit.
     Táto chyba nie je fatálna, ale WorldwideChat by sa mal znovu načítať, ak sa to
     stane aj naďalej.
@@ -393,3 +392,4 @@ Messages:
     nový časový rámec, alebo čokoľvek pod ním, aby ste sa vrátili späť.
   wwcConfigConversationFatalAsyncSuccess: Časový údaj úlohy Async úspešne nastavený.
   wwcConfigGUIFatalAsyncAbortButton: Zmeniť časový interval úloh Async
+  wwcTimeoutException: Čas vášho velenia vypršal. Prosím, skúste to znova.

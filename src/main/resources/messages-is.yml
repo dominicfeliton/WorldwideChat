@@ -327,7 +327,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Output Tungumál: %i'
   wwcTranslatorAttempt: Tilraun til að tengjast þýðanda í config.yml... (Reynta %i/
     %o)
-  wwcTimeoutException: ' Skipunin þín tímasett út. Vinsamlegast reyndu aftur.'
   wwcTimeoutExceptionConsole: Leikmaður %Ég hafði nýjustu beiðni tímamörk þeirra.
     Þessi villa er ekki banvæn, en WorldwideChat ætti að endurhlaða ef það heldur
     áfram að gerast.
@@ -386,3 +385,4 @@ Messages:
     tímamörk, eða eitthvað fyrir neðan það til að fara aftur.
   wwcConfigConversationFatalAsyncSuccess: Async verkefni timeout sett með góðum árangri.
   wwcConfigGUIFatalAsyncAbortButton: Breyta Async Task Timeout
+  wwcTimeoutException: Skipunin þín tímasett út. Vinsamlegast reyndu aftur.

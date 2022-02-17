@@ -319,7 +319,6 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Lähtökieli: %i'
   wwcTranslatorAttempt: Yritetään muodostaa yhteys kääntäjään config.yml... (Yritys
     %i/ %o)
-  wwcTimeoutException: ' Komentosi aikakatkaistiin. Yritä uudelleen.'
   wwcTimeoutExceptionConsole: Pelaaja %i oli viimeisin pyyntöaikakatkaisu. Tämä virhe
     ei ole kohtalokas, mutta WorldwideChat tulisi ladata uudelleen, jos se jatkuu.
   wwcGUIPageNumber: 'Sivunumero: %i'
@@ -378,3 +377,4 @@ Messages:
     tai mitä tahansa sen alapuolella palataksesi takaisin.
   wwcConfigConversationFatalAsyncSuccess: Async-tehtävän aikakatkaisu asetettu onnistuneesti.
   wwcConfigGUIFatalAsyncAbortButton: Muuta Async-tehtävän aikakatkaisu
+  wwcTimeoutException: Komentosi aikakatkaistiin. Yritä uudelleen.
