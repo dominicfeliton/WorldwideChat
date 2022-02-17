@@ -10,22 +10,20 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-import org.bukkit.command.CommandSender;
-
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.ibm.cloud.sdk.core.security.IamAuthenticator;
+import com.ibm.cloud.sdk.core.service.exception.NotFoundException;
 import com.ibm.watson.language_translator.v3.LanguageTranslator;
 import com.ibm.watson.language_translator.v3.model.Languages;
 import com.ibm.watson.language_translator.v3.model.TranslateOptions;
 import com.ibm.watson.language_translator.v3.model.TranslationResult;
 
-public class WatsonTranslation {
+public class WatsonTranslation extends BasicTranslation {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
@@ -35,40 +33,30 @@ public class WatsonTranslation {
 
 	private boolean isInitializing = false;
 
-	private CommandSender sender;
-
 	// For normal translation operation
-	public WatsonTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
+	public WatsonTranslation(String textToTranslate, String inputLang, String outputLang) {
 		this.textToTranslate = textToTranslate;
 		this.inputLang = inputLang;
 		this.outputLang = outputLang;
-		this.sender = sender;
 	}
 
 	// For initializeConnection
-	public WatsonTranslation(String apikey, String serviceUrl) {
+	public WatsonTranslation(String apikey, String serviceUrl, boolean isInitializing) {
 		System.setProperty("WATSON_API_KEY", apikey);
 		System.setProperty("WATSON_SERVICE_URL", serviceUrl);
-		isInitializing = true;
+		this.isInitializing = isInitializing;
+		this.notConfidentException = NotFoundException.class;
 	}
 
-	public String useTranslator() throws TranslatorTimeoutException, TranslatorFailException {
+	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
 		ExecutorService executor = Executors.newSingleThreadExecutor();
 		Future<String> process = executor.submit(new translationTask());
 		String finalOut = "";
-		try {
-			/* Get test translation */
-			finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
-		} catch (TimeoutException | ExecutionException | InterruptedException e) {
-			CommonDefinitions.sendDebugMessage("Watson Translate Timeout!!");
-			process.cancel(true);
-			if (e instanceof ExecutionException) {
-			    throw new TranslatorFailException(e);	
-			}
-			throw new TranslatorTimeoutException("Timed out while waiting for Watson Translate response.", e);
-		} finally {
-			executor.shutdownNow();
-		}
+		
+		/* Get test translation */
+		finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
+		process.cancel(true);
+		executor.shutdownNow();
 		
 		/* Return final result */
 		return finalOut;

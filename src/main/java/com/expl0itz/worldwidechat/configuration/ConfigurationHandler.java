@@ -267,7 +267,6 @@ public class ConfigurationHandler {
 
 	/* Translator Settings */
 	public void loadTranslatorSettings() {
-		//TODO: Revise translator logic, use enum
 		String outName = "Invalid";
 		final int maxTries = 3;
 		for (int tryNumber = 1; tryNumber <= maxTries; tryNumber++) {
@@ -279,7 +278,7 @@ public class ConfigurationHandler {
 									&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
 						outName = "Watson";
 						WatsonTranslation test = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
-								mainConfig.getString("Translator.watsonURL"));
+								mainConfig.getString("Translator.watsonURL"), true);
 						test.useTranslator();
 						break;
 					} else if (mainConfig.getBoolean("Translator.useGoogleTranslate")
@@ -287,7 +286,7 @@ public class ConfigurationHandler {
 									&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
 						outName = "Google Translate";
 						GoogleTranslation test = new GoogleTranslation(
-								mainConfig.getString("Translator.googleTranslateAPIKey"));
+								mainConfig.getString("Translator.googleTranslateAPIKey"), true);
 						test.useTranslator();
 						break;
 					} else if (mainConfig.getBoolean("Translator.useAmazonTranslate")
@@ -296,13 +295,13 @@ public class ConfigurationHandler {
 						outName = "Amazon Translate";
 						AmazonTranslation test = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
 								mainConfig.getString("Translator.amazonSecretKey"),
-								mainConfig.getString("Translator.amazonRegion"));
+								mainConfig.getString("Translator.amazonRegion"), true);
 						test.useTranslator();
 						break;
 					} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
 						outName = "JUnit/MockBukkit Testing Translator";
 						TestTranslation test = new TestTranslation(
-								"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu");
+								"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu", true);
 						test.useTranslator();
 						break;
 					} else {

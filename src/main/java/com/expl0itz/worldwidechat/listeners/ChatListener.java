@@ -2,13 +2,6 @@ package com.expl0itz.worldwidechat.listeners;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -16,6 +9,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.codehaus.plexus.util.ExceptionUtils;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
@@ -67,45 +61,26 @@ public class ChatListener implements Listener {
 					new BukkitRunnable() {
 						@Override
 						public void run() {
-							Callable<Void> result = () -> {
-								String translation = CommonDefinitions.translateText(event.getMessage() + " (Translated)", eaRecipient);
-								if (translation.contains(event.getMessage())) {
-									translation = event.getMessage();
-								}
-								String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
-								
-								TextComponent hoverOutMessage;
-				                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat") && !(translation.equals(event.getMessage()))) {
-									hoverOutMessage = Component.text()
-											.content(outMessageWithoutHover)
-											.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
-											.build();
-								} else {
-									hoverOutMessage = Component.text()
-											.content(outMessageWithoutHover)
-											.build();
-								}
-								try {
-								    main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
-								} catch (IllegalStateException e) {
-									// Just in case
-								}
-								return null;
-							};
-							
-							/* Start Callback Process */
-							ExecutorService executor = Executors.newSingleThreadExecutor();
-							Future<Void> process = executor.submit(result);
-							try {
-								/* Get update status */
-								process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
-							} catch (TimeoutException | ExecutionException | InterruptedException e) {
-								CommonDefinitions.sendDebugMessage("Chat Translation Timeout!! Either we are reloading or we have lost connection. Abort.");
-								if (e instanceof TimeoutException) {CommonDefinitions.sendTimeoutExceptionMessage(WorldwideChat.instance.getServer().getConsoleSender());};
-								process.cancel(true);
-							} finally {
-								executor.shutdownNow();
+							String translation = CommonDefinitions.translateText(event.getMessage() + " (Translated)", eaRecipient);
+							if (translation.contains(event.getMessage())) {
+								translation = event.getMessage();
 							}
+							String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
+							
+							TextComponent hoverOutMessage;
+			                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat") && !(translation.equals(event.getMessage()))) {
+								hoverOutMessage = Component.text()
+										.content(outMessageWithoutHover)
+										.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
+										.build();
+							} else {
+								hoverOutMessage = Component.text()
+										.content(outMessageWithoutHover)
+										.build();
+							}
+							try {
+							    main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
+							} catch (IllegalStateException e) {}
 						}
 					}.runTaskAsynchronously(main);
 				} else {
@@ -114,6 +89,12 @@ public class ChatListener implements Listener {
 			}
 			event.getRecipients().clear();
 			event.getRecipients().addAll(unmodifiedMessageRecipients);
-		} catch (NullPointerException e) {}
+		} catch (Exception e) {
+			if (!CommonDefinitions.serverIsStopping()) {
+				throw e;
+			}
+			CommonDefinitions.sendDebugMessage("We are reloading! Caught exception in ChatListener...");
+			CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
+		}
 	}
 }

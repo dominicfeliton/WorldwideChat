@@ -14,8 +14,8 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
+import org.apache.commons.text.StringEscapeUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
@@ -36,7 +36,6 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
 import com.expl0itz.worldwidechat.translators.TestTranslation;
-import com.expl0itz.worldwidechat.translators.TranslatorFailException;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
 import com.google.cloud.translate.TranslateException;
 import com.google.common.base.CharMatcher;
@@ -63,7 +62,7 @@ public class CommonDefinitions {
 			"el", "gu", "ht", "ha", "he", "hi", "hu", "is", "id", "it", "ja", "kn", "kk", "ko", "lv", "lt", "mk", "mr", "ms",
 			"ml", "mt", "mn", "no", "fa", "pa", "ps", "pl", "pt", "pt-PT", "ro", "ru", "sr", "si", "sk", "sl", "so", "es", "es-MX",
 			"sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy" };
-
+	
 	/* Getters */
 	/**
 	  * Compares two strings to check if they are the same language under the current translator.
@@ -221,216 +220,154 @@ public class CommonDefinitions {
 		/* Main logic callback */
 		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 		Callable<String> result = () -> {
-			try {
-				/* Detect color codes in message */
-				detectColorCodePresence(inMessage, currPlayer);
+			/* Detect color codes in message */
+			detectColorCodePresence(inMessage, currPlayer);
 
-				/* Modify or create new player record */
-				PlayerRecord currPlayerRecord = main
-						.getPlayerRecord(currPlayer.getUniqueId().toString(), true);
-				if (main.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations() + 1);
+			/* Modify or create new player record */
+			PlayerRecord currPlayerRecord = main
+					.getPlayerRecord(currPlayer.getUniqueId().toString(), true);
+			if (main.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations() + 1);
 
-				/* Initialize current vars + ActiveTranslator, sanity checks */
-				ActiveTranslator currActiveTranslator;
-				if (main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
-						&& (!main.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals(""))) {
-					currActiveTranslator = main.getActiveTranslator(currPlayer.getUniqueId().toString());
-				} else if (!main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
-						&& (!main.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals(""))) {
-					currActiveTranslator = main.getActiveTranslator(currPlayer.getUniqueId().toString());
-				} else {
-					currActiveTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
-				}
+			/* Initialize current vars + ActiveTranslator, sanity checks */
+			ActiveTranslator currActiveTranslator;
+			if (main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
+					&& (!main.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals(""))) {
+				currActiveTranslator = main.getActiveTranslator(currPlayer.getUniqueId().toString());
+			} else if (!main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
+					&& (!main.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals(""))) {
+				currActiveTranslator = main.getActiveTranslator(currPlayer.getUniqueId().toString());
+			} else {
+				currActiveTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+			}
 
-				/* Char limit check */
-				int limit = mainConfig.getInt("Translator.messageCharLimit");
-				if (inMessage.length() > limit) {
-					final TextComponent charLimit = Component.text()
-							.append(Component.text().content(CommonDefinitions.getMessage("wwcCharLimit", new String[] {"" + limit}))
-									.color(NamedTextColor.YELLOW))
-							.build();
-					CommonDefinitions.sendMessage(currPlayer, charLimit);
-					return inMessage;
-				}
-				
-				/* Check cache */
-				if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
-					// Check cache for inputs, since config says we should
-					for (Map.Entry<CachedTranslation, Integer> currentTerm : main.getCache().entrySet()) {
-						CachedTranslation currKey = currentTerm.getKey();
-						if (currKey.getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
-								&& (currKey.getOutputLang().equalsIgnoreCase(currActiveTranslator.getOutLangCode()))
-								&& (currKey.getInputPhrase().equalsIgnoreCase(inMessage))) {
-							main.getCache().put(currKey, currentTerm.getValue()+1);
-							// Update stats, return output
-							currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
-							currPlayerRecord.setLastTranslationTime();
-							return StringEscapeUtils.unescapeJava(
-									ChatColor.translateAlternateColorCodes('&', currKey.getOutputPhrase()));
-						}
-					}
-				}
-
-				/* Rate limit check */
-				try {
-					// Init vars
-					boolean isExempt = false;
-					boolean hasPermission = false;
-					int personalRateLimit = 0;
-					String permissionCheck = "";
-
-					// Get permission from Bukkit API synchronously, since we do not want to risk
-					// concurrency problems
-					if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !CommonDefinitions.serverIsStopping()) {
-						try {
-							permissionCheck = Bukkit.getScheduler().callSyncMethod(main, () -> {
-								return checkForRateLimitPermissions(currPlayer);
-							}).get(3, TimeUnit.SECONDS);
-						} catch (TimeoutException | InterruptedException e) {
-							CommonDefinitions.sendDebugMessage("Timeout from rate limit permission check should never happen, unless the server is stopping or /reloading. "
-									+ "If it isn't, and we can't fetch a user permission in less than ~2.5 seconds, we have a problem.");
-							return inMessage;
-						}
-					} else if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
-						// It is extremely unlikely that we run into concurrency issues with MockBukkit.
-						// Until it supports callSyncMethod(), this will do.
-						permissionCheck = checkForRateLimitPermissions(currPlayer);
-					}
-
-					// If exempt, set exempt to true; else, get the delay from the end of the
-					// permission string
-					if (permissionCheck.equalsIgnoreCase("worldwidechat.ratelimit.exempt")) {
-						isExempt = true;
-					} else {
-						String delayStr = CharMatcher.inRange('0', '9').retainFrom(permissionCheck);
-						if (!delayStr.isEmpty()) {
-							personalRateLimit = Integer.parseInt(delayStr);
-							hasPermission = true;
-						}
-					}
-
-					// Get user's personal rate limit, if permission is not set and they are an
-					// active translator.
-					if (!isExempt && !hasPermission && !main
-							.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals("")) {
-						personalRateLimit = main
-							.getActiveTranslator(currPlayer.getUniqueId().toString()).getRateLimit();
-					}
-
-					// Personal Limits (Override Global)
-					if (!isExempt && personalRateLimit > 0) {
-						if (!checkForRateLimits(personalRateLimit, currActiveTranslator, currPlayer)) {
-							return inMessage;
-						}
-					// Global Limits
-					} else if (!isExempt && mainConfig.getInt("Translator.rateLimit") > 0) {
-						if (!checkForRateLimits(mainConfig.getInt("Translator.rateLimit"), currActiveTranslator, currPlayer)) {
-							return inMessage;
-						}
-					}
-				} catch (Exception e2) {
-					// Couldn't get user permissions: stop, drop, and roll.
-					e2.printStackTrace();
-					return inMessage;
-				}
-
-				/* Begin actual translation, set message to output */
-				String out = "";
-				try {
-					CommonDefinitions.sendDebugMessage("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
-					if (main.getTranslatorName().equals("Watson")) {
-						WatsonTranslation watsonInstance = new WatsonTranslation(inMessage,
-								currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), currPlayer);
-						// Get username + pass from config
-						out = watsonInstance.useTranslator();
-					} else if (main.getTranslatorName().equals("Google Translate")) {
-						GoogleTranslation googleTranslateInstance = new GoogleTranslation(inMessage,
-								currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), currPlayer);
-						out = googleTranslateInstance.useTranslator();
-					} else if (main.getTranslatorName().equals("Amazon Translate")) {
-						AmazonTranslation amazonTranslateInstance = new AmazonTranslation(inMessage,
-								currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), currPlayer);
-						out = amazonTranslateInstance.useTranslator();
-					} else if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
-						TestTranslation testTranslator = new TestTranslation(inMessage, currActiveTranslator.getInLangCode(),
-								currActiveTranslator.getOutLangCode(), currPlayer);
-						out = testTranslator.useTranslator();
-					}
-				} catch (TranslatorFailException e) {
-					// Double getCause() because each translator is also wrapped in a callback try/catch, 
-					// and this error is our custom exception
-					Throwable realReason = e.getCause().getCause();
-					if ((realReason != null) && (realReason instanceof InterruptedException | realReason instanceof NotFoundException || realReason instanceof TranslateException || realReason instanceof InvalidRequestException)) {
-						CommonDefinitions.sendDebugMessage("Low confidence exception thrown, do not add this to the error count!");
-					} else {
-						// If this isn't just low confidence, this error should be added
-						// to the error count.
-						throw new TranslatorFailException(e);
-					}
-					return inMessage;
-				}
-
-				/* Update stats */
-				if (main.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
-				currPlayerRecord.setLastTranslationTime();
-
-				/* Add to cache */
-				if (mainConfig.getInt("Translator.translatorCacheSize") > 0
-						&& !(currActiveTranslator.getInLangCode().equals("None"))) {
-					CachedTranslation newTerm = new CachedTranslation(currActiveTranslator.getInLangCode(),
-							currActiveTranslator.getOutLangCode(), inMessage, out);
-					main.addCacheTerm(newTerm);
-				}
-				return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', out));
-			} catch (Exception e) {
-				/* Add 1 to error count */
-				if (e.getCause() != null && e.getCause() instanceof InterruptedException) {
-					// If we are getting stopped by onDisable, end this immediately.
-					return inMessage;
-				}
-				main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
-				final TextComponent playerError = Component.text()
-						.append(Component.text().content(CommonDefinitions.getMessage("wwcTranslatorError"))
-								.color(NamedTextColor.RED))
+			/* Char limit check */
+			int limit = mainConfig.getInt("Translator.messageCharLimit");
+			if (inMessage.length() > limit) {
+				final TextComponent charLimit = Component.text()
+						.append(Component.text().content(CommonDefinitions.getMessage("wwcCharLimit", new String[] {"" + limit}))
+								.color(NamedTextColor.YELLOW))
 						.build();
-				CommonDefinitions.sendMessage(currPlayer, playerError);
-				main.getLogger()
-						.severe(CommonDefinitions.getMessage("wwcTranslatorErrorConsole", new String[] {currPlayer.getName()}));
-				CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
-
-				/* Write to log file */
-				File errorLog = new File(main.getDataFolder(), "errorLog.txt");
-				try {
-					FileWriter fw = new FileWriter(errorLog, true);
-					LocalDate date = LocalDate.now();
-					LocalTime time = LocalTime.now();
-					String dateStr = date.format(DateTimeFormatter.ofPattern("EEEE, MMMM dd, yyyy - "))
-							+ time.format(DateTimeFormatter.ofPattern("hh:mm:ss a"));
-
-					fw.write("========== " + dateStr + " ==========");
-					fw.write(System.getProperty("line.separator"));
-					fw.write(ExceptionUtils.getStackTrace(e));
-					fw.close();
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
-				CommonDefinitions.sendDebugMessage("Error Count: " + main.getTranslatorErrorCount());
-				
-				/* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
-				if (main.getTranslatorErrorCount() >= mainConfig.getInt("Translator.errorLimit")) {
-					main.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReached"));
-					main.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReachedCheckLogs"));
-					mainConfig.set("Translator.useWatsonTranslate",
-							false);
-					mainConfig.set("Translator.useGoogleTranslate",
-							false);
-					mainConfig.set("Translator.useAmazonTranslate",
-							false);
-					main.getConfigManager().saveMainConfig(false);
-					main.reload();
+				CommonDefinitions.sendMessage(currPlayer, charLimit);
+				return inMessage;
+			}
+			
+			/* Check cache */
+			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
+				// Check cache for inputs, since config says we should
+				for (Map.Entry<CachedTranslation, Integer> currentTerm : main.getCache().entrySet()) {
+					CachedTranslation currKey = currentTerm.getKey();
+					if (currKey.getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
+							&& (currKey.getOutputLang().equalsIgnoreCase(currActiveTranslator.getOutLangCode()))
+							&& (currKey.getInputPhrase().equalsIgnoreCase(inMessage))) {
+						main.getCache().put(currKey, currentTerm.getValue()+1);
+						// Update stats, return output
+						currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+						currPlayerRecord.setLastTranslationTime();
+						return StringEscapeUtils.unescapeJava(
+								ChatColor.translateAlternateColorCodes('&', currKey.getOutputPhrase()));
+					}
 				}
 			}
-			return inMessage;
+
+			// Init vars
+			boolean isExempt = false;
+			boolean hasPermission = false;
+			int personalRateLimit = 0;
+			String permissionCheck = "";
+
+			// Get permission from Bukkit API synchronously, since we do not want to risk
+			// concurrency problems
+			if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !CommonDefinitions.serverIsStopping()) {
+				try {
+					permissionCheck = Bukkit.getScheduler().callSyncMethod(main, () -> {
+						return checkForRateLimitPermissions(currPlayer);
+					}).get(3, TimeUnit.SECONDS);
+				} catch (TimeoutException | InterruptedException e) {
+					CommonDefinitions.sendDebugMessage("Timeout from rate limit permission check should never happen, unless the server is stopping or /reloading. "
+							+ "If it isn't, and we can't fetch a user permission in less than ~2.5 seconds, we have a problem.");
+					return inMessage;
+				}
+			} else if (main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+				// It is extremely unlikely that we run into concurrency issues with MockBukkit.
+				// Until it supports callSyncMethod(), this will do.
+				permissionCheck = checkForRateLimitPermissions(currPlayer);
+			}
+
+			// If exempt, set exempt to true; else, get the delay from the end of the
+			// permission string
+			if (permissionCheck.equalsIgnoreCase("worldwidechat.ratelimit.exempt")) {
+				isExempt = true;
+			} else {
+				String delayStr = CharMatcher.inRange('0', '9').retainFrom(permissionCheck);
+				if (!delayStr.isEmpty()) {
+					personalRateLimit = Integer.parseInt(delayStr);
+					hasPermission = true;
+				}
+			}
+
+			// Get user's personal rate limit, if permission is not set and they are an
+			// active translator.
+			if (!isExempt && !hasPermission && !main
+					.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals("")) {
+				personalRateLimit = main
+					.getActiveTranslator(currPlayer.getUniqueId().toString()).getRateLimit();
+			}
+
+			// Personal Limits (Override Global)
+			if (!isExempt && personalRateLimit > 0) {
+				if (!checkForRateLimits(personalRateLimit, currActiveTranslator, currPlayer)) {
+					return inMessage;
+				}
+			// Global Limits
+			} else if (!isExempt && mainConfig.getInt("Translator.rateLimit") > 0) {
+				if (!checkForRateLimits(mainConfig.getInt("Translator.rateLimit"), currActiveTranslator, currPlayer)) {
+					return inMessage;
+				}
+			}
+
+			/* Begin actual translation, set message to output */
+			String out = inMessage;
+			CommonDefinitions.sendDebugMessage("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
+			switch (main.getTranslatorName()) {
+			case "Watson":
+				WatsonTranslation watsonInstance = new WatsonTranslation(inMessage,
+						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
+				// Get username + pass from config
+				out = watsonInstance.useTranslator();
+				break;
+			case "Google Translate":
+				GoogleTranslation googleTranslateInstance = new GoogleTranslation(inMessage,
+						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
+				out = googleTranslateInstance.useTranslator();
+				break;
+			case "Amazon Translate":
+				AmazonTranslation amazonTranslateInstance = new AmazonTranslation(inMessage,
+						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
+				out = amazonTranslateInstance.useTranslator();
+				break;
+			case "JUnit/MockBukkit Testing Translator":
+				TestTranslation testTranslator = new TestTranslation(inMessage, currActiveTranslator.getInLangCode(),
+						currActiveTranslator.getOutLangCode());
+				out = testTranslator.useTranslator();
+				break;
+			default:
+				// We should never get here...
+				CommonDefinitions.sendDebugMessage("No valid translator currently in use, according to translateText(). Returning original message to " + currPlayer.getName() + "...");
+				return inMessage;
+			}
+
+			/* Update stats */
+			if (main.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+			currPlayerRecord.setLastTranslationTime();
+
+			/* Add to cache */
+			if (mainConfig.getInt("Translator.translatorCacheSize") > 0
+					&& !(currActiveTranslator.getInLangCode().equals("None"))) {
+				CachedTranslation newTerm = new CachedTranslation(currActiveTranslator.getInLangCode(),
+						currActiveTranslator.getOutLangCode(), inMessage, out);
+				main.addCacheTerm(newTerm);
+			}
+			return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', out));
 		};
 		
 		/* Start Callback Process */
@@ -441,8 +378,63 @@ public class CommonDefinitions {
 			/* Get translation */
 			finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
-			CommonDefinitions.sendDebugMessage("Failed to receive a response from the translator, and it was not interrupted. Abort.");
-			if (e instanceof TimeoutException) {sendTimeoutExceptionMessage(currPlayer);};
+			/* Sanitize error before proceeding to write it to errorLog */
+			if (e instanceof InterruptedException || main.getTranslatorName().equals("Starting")) {
+				// If we are getting stopped by onDisable, end this immediately.
+				CommonDefinitions.sendDebugMessage("Interrupted translateText(), or server state is changing...");
+				return inMessage;
+			} else if (e instanceof ExecutionException && isNoConfidenceException(e)) {
+				// If the translator has low confidence
+				CommonDefinitions.sendDebugMessage("Low confidence from current translator!");
+				return inMessage;
+			} else if (e instanceof TimeoutException) {
+				// If we get a timeoutexception
+				sendTimeoutExceptionMessage(currPlayer);
+				return inMessage;
+			}
+			
+			/* Add 1 to error count */
+			main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
+			final TextComponent playerError = Component.text()
+					.append(Component.text().content(CommonDefinitions.getMessage("wwcTranslatorError"))
+							.color(NamedTextColor.RED))
+					.build();
+			CommonDefinitions.sendMessage(currPlayer, playerError);
+			main.getLogger()
+					.severe(CommonDefinitions.getMessage("wwcTranslatorErrorConsole", new String[] {currPlayer.getName()}));
+			CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
+
+			/* Write to log file */
+			File errorLog = new File(main.getDataFolder(), "errorLog.txt");
+			try {
+				FileWriter fw = new FileWriter(errorLog, true);
+				LocalDate date = LocalDate.now();
+				LocalTime time = LocalTime.now();
+				String dateStr = date.format(DateTimeFormatter.ofPattern("EEEE, MMMM dd, yyyy - "))
+						+ time.format(DateTimeFormatter.ofPattern("hh:mm:ss a"));
+
+				fw.write("========== " + dateStr + " ==========");
+				fw.write(System.getProperty("line.separator"));
+				fw.write(ExceptionUtils.getStackTrace(e));
+				fw.close();
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}
+			CommonDefinitions.sendDebugMessage("Error Count: " + main.getTranslatorErrorCount());
+			
+			/* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
+			if (main.getTranslatorErrorCount() >= mainConfig.getInt("Translator.errorLimit")) {
+				main.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReached"));
+				main.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReachedCheckLogs"));
+				mainConfig.set("Translator.useWatsonTranslate",
+						false);
+				mainConfig.set("Translator.useGoogleTranslate",
+						false);
+				mainConfig.set("Translator.useAmazonTranslate",
+						false);
+				main.getConfigManager().saveMainConfig(false);
+				main.reload();
+			}
 			process.cancel(true);
 		} finally {
 			executor.shutdownNow();
@@ -548,11 +540,25 @@ public class CommonDefinitions {
 		return genericConfigConversation(preCheck, context, successfulChangeMsg, new String[] {configValName}, new Object[] {configVal}, prevInventory);
 	}
 	
+	private static boolean isNoConfidenceException(Exception exc) {
+		Class<?>[] noConfidenceExceptions = new Class<?>[]{
+			InvalidRequestException.class, // Amazon
+			TranslateException.class, // Google
+			NotFoundException.class}; // Watson
+		
+		for (Class<?> eaClass : noConfidenceExceptions) {
+			if (eaClass.isInstance(exc)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	/* Sanitize Inputs */
 	// Warn user about color codes
 	// EssentialsX chat and maybe others replace "&4Test" with " 4Test"
 	// Therefore, we find the " #" regex or the "&" char, and warn the user about it
-	protected static void detectColorCodePresence(String inMessage, Player currPlayer) {
+	private static void detectColorCodePresence(String inMessage, Player currPlayer) {
 		if ((inMessage.contains("&") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals(""))
 				&& !(main.getActiveTranslator(currPlayer.getUniqueId().toString())
 						.getCCWarning())) // check if user has already been sent CC warning
@@ -578,7 +584,7 @@ public class CommonDefinitions {
 	  * @param sender - The sender of the original command
 	  * @return Boolean - Returns false if the user should currently be rate limited, and true otherwise.
 	  */
-	protected static boolean checkForRateLimits(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
+	private static boolean checkForRateLimits(int delay, ActiveTranslator currActiveTranslator, CommandSender sender) {
 		if (!(currActiveTranslator.getRateLimitPreviousTime().equals("None"))) {
 			Instant previous = Instant.parse(currActiveTranslator.getRateLimitPreviousTime());
 			Instant currTime = Instant.now();
@@ -604,7 +610,7 @@ public class CommonDefinitions {
 	  * @param currPlayer - Player that is being checked.
 	  * @return String - Returns an empty string if no permission was found, or the permission name if it is
 	  */
-	protected static String checkForRateLimitPermissions(Player currPlayer) {
+	private static String checkForRateLimitPermissions(Player currPlayer) {
 		Set<PermissionAttachmentInfo> perms = currPlayer.getEffectivePermissions();
 		for (PermissionAttachmentInfo perm : perms) {
 			if (perm.getPermission().startsWith("worldwidechat.ratelimit.")) {
