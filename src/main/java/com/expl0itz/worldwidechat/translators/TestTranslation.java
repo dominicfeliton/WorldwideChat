@@ -6,7 +6,7 @@ import java.util.List;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 
-public class TestTranslation extends BasicTranslation {
+public class TestTranslation {
 
 	private String textToTranslate = "";
 	private String inputLang = "";

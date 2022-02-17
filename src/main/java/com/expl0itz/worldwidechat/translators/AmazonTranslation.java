@@ -18,14 +18,13 @@ import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.translate.AmazonTranslate;
 import com.amazonaws.services.translate.AmazonTranslateClient;
-import com.amazonaws.services.translate.model.InvalidRequestException;
 import com.amazonaws.services.translate.model.TranslateTextRequest;
 import com.amazonaws.services.translate.model.TranslateTextResult;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 
-public class AmazonTranslation extends BasicTranslation {
+public class AmazonTranslation {
 	private String textToTranslate = "";
 	private String inputLang = "";
 	private String outputLang = "";
@@ -45,7 +44,6 @@ public class AmazonTranslation extends BasicTranslation {
 		System.setProperty("AMAZON_SECRET_KEY", secretKeyId);
 		System.setProperty("AMAZON_REGION", region);
 		this.isInitializing = isInitializing;
-		this.notConfidentException = InvalidRequestException.class;
 	}
 
 	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {

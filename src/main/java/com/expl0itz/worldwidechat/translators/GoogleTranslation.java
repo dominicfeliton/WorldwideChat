@@ -17,12 +17,11 @@ import com.google.cloud.translate.Detection;
 import com.google.cloud.translate.Language;
 import com.google.cloud.translate.Translate;
 import com.google.cloud.translate.Translate.TranslateOption;
-import com.google.cloud.translate.TranslateException;
 import com.google.cloud.translate.Translation;
 
 import com.google.cloud.translate.TranslateOptions;
 
-public class GoogleTranslation extends BasicTranslation {
+public class GoogleTranslation {
 
 	private String textToTranslate = "";
 	private String inputLang = "";
@@ -41,7 +40,6 @@ public class GoogleTranslation extends BasicTranslation {
 	public GoogleTranslation(String apikey, boolean isInitializing) {
 		System.setProperty("GOOGLE_API_KEY", apikey); // we do this because .setApi() spams console :(
 		this.isInitializing = isInitializing;
-		this.notConfidentException = TranslateException.class;
 	}
 
 	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {

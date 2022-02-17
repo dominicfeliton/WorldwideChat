@@ -17,13 +17,12 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.ibm.cloud.sdk.core.security.IamAuthenticator;
-import com.ibm.cloud.sdk.core.service.exception.NotFoundException;
 import com.ibm.watson.language_translator.v3.LanguageTranslator;
 import com.ibm.watson.language_translator.v3.model.Languages;
 import com.ibm.watson.language_translator.v3.model.TranslateOptions;
 import com.ibm.watson.language_translator.v3.model.TranslationResult;
 
-public class WatsonTranslation extends BasicTranslation {
+public class WatsonTranslation {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
@@ -45,7 +44,6 @@ public class WatsonTranslation extends BasicTranslation {
 		System.setProperty("WATSON_API_KEY", apikey);
 		System.setProperty("WATSON_SERVICE_URL", serviceUrl);
 		this.isInitializing = isInitializing;
-		this.notConfidentException = NotFoundException.class;
 	}
 
 	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
