@@ -13,6 +13,7 @@ Some of its notable features include:
 - Rate limits so your players don't fill up a quota too quickly.
 - Persistent translation options saved per player across server reboots and reloads.
 - Stat tracker to keep track of how your players use this plugin.
+- SQL Support.
 
 And much more to come! 
 
