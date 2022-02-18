@@ -188,10 +188,6 @@ Messages:
     do 10...
   wwcInventoryErrorPlayer: Napaka, odkrita z vašim GUI. V konzolo je bil poslan dnevnik.
   wwcInventoryError: Napaka, odkrita z GUI uporabnika %i, to težavo sporočite razvijalcu.
-  wwcConfigConversationTranslatorFail: Ni uspelo omogočiti %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Uporabnik %sem uspešno omogočil %o.
-  wwcConfigConversationTranslatorSuccess: Uspešno omogočeno %i.
-  wwcConfigConversationConsoleTranslatorFail: Uporabnik %mi ni uspelo omogočiti %o.
   wwcSignTranslationFail: V ciljnem znaku ni mogoče prevesti ene ali več vrstic.
   wwcBookTranslationFail: Ni mogoče prevesti ene ali več strani v ciljni knjigi.
   wwctiOffTarget: Prevod elementa onemogočen za %i.
@@ -214,7 +210,6 @@ Messages:
   wwcInvalidTranslator: Neveljavne nastavitve prevajalca. Prosimo, da to popravite
     v vašem config.yml ali z /wwcc za uporabo tega vtičnika.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguracija'
-  wwcConfigGUIToggleButton: Preklap %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ne opraviča uporabe /reload. Prosimo, nadaljujte
     previdno.
@@ -273,8 +268,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Spremeni omejitev globalne stopnje
   wwcteOnSender: Prevod entitete omogočen. Z desno tipko miške kliknite entiteto,
     da prevedete svoje ime!
-  wwcInGameObjectTranslationFailCatastrophic: Ni bilo mogoče prevajati ciljnega predmeta.
-  wwcInGameEntityTranslationFailCatastrophic: Ni bilo mogoče prevajati ciljne entitete.
   wwcConfigGUIResponseLimitButton: Spremeni časovno omejitev odziva prevajalca
   wwcConfigMessageCharLimitEnabled: Omejitev znakov na sporočilo, nastavljena na %i
     znakov.
@@ -332,8 +325,65 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Jezik izhoda: %i'
   wwcTranslatorAttempt: Poskus povezovanja s prevajalcem v config.yml... (Poskus %i/
     %o)
-  wwcTimeoutException: ' Vaš ukaz je časovno razporejen. Prosimo, poskusite znova.'
   wwcTimeoutExceptionConsole: Igral %imel sem svojo zadnjo časovno omejitev zahteve.
     Ta napaka ni usodna, vendar je treba WorldwideChat ponovno naložiti, če se še
     naprej dogaja.
   wwcGUIPageNumber: 'Številka strani: %i'
+  wwcConfigSQLFail: Povezave s SQL ni uspelo.
+  wwcConfigSQLSuccess: Uspešno povezan s SQL!
+  wwcConfigYAMLFallback: Padec nazaj na YAML...
+  wwcConfigGUIToggleSQLButton: Preklopi SQL
+  wwcConfigConversationToggleSQLSuccess: SQL uspešno preklapljanje. Ponovno naložite,
+    da sprememba začne veljati.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Uspešno preklapljanje Google
+    Translate. Ponovno naložite, da sprememba začne veljati.
+  wwcConfigYAMLDefault: Privzeto na YAML za shranjevanje podatkov.
+  wwcConfigGUISQLMenuButton: Spreminjanje nastavitev SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Uspešno preklapljanje Watson
+    Translate. Ponovno naložite, da sprememba začne veljati.
+  wwcConfigGUISQLSettings: Konfiguracija SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Preklop Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Preklop Watson prevajanje
+  wwcConfigGUIToggleAmazonTranslateButton: Preklop Amazon prevajanje
+  wwcConfigGUIStorageSettings: Konfiguracija shranjevanja
+  wwcConfigConversationAmazonTranslateToggleSuccess: Uspešno preklopljen Amazon Translate.
+    Ponovno naložite, da sprememba začne veljati.
+  wwcConfigGUISQLPortButton: Spremeni vrata SQL
+  wwcConfigGUISQLOptionalArgsButton: Spremeni izbirne argumente SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL za SQL pretoggled uspešno.
+  wwcConfigConversationSQLPortInput: Trenutna vrata je %i. vnesite kaj drugega kot
+    0, da nastavite nova vrata, ali vnesite 0, da se vrnete nazaj.
+  wwcConfigGUISQLPasswordButton: Spremeni geslo SQL
+  wwcConfigConversationSQLHostnameSuccess: Uspešno spremenil ime gostitelja SQL.
+  wwcConfigConversationSQLHostnameInput: Trenutno ime gostitelja je %i.Vnesite kaj
+    drugega kot 0, da nastavite novo ime gostitelja, ali vnesite 0, da se vrnete.
+  wwcConfigGUISQLHostnameButton: Spremeni ime gostitelja SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Uspešno spremenili izbirne argumente
+    SQL.
+  wwcConfigConversationSQLPasswordSuccess: Uspešno spremenil geslo SQL.
+  wwcConfigConversationSQLPasswordInput: Trenutno geslo je %i.Vnesite kaj drugega
+    kot 0, da nastavite novo geslo, ali vnesite 0, da se vrnete nazaj.
+  wwcConfigGUIToggleSQLSSLButton: Preklopi SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Uspešno spremenila uporabniško ime SQL.
+  wwcConfigConversationSQLUsernameInput: Trenutno uporabniško ime je %i.Vnesite kaj
+    drugega kot 0, da nastavite novo uporabniško ime, ali vnesite 0, da se vrnete
+    nazaj.
+  wwcConfigConversationSQLPortSuccess: Uspešno spremenil vrata SQL.
+  wwcConfigGUISQLUsernameButton: Spremeni uporabniško ime SQ
+  wwcConfigConversationSQLOptionalArgsCleared: Izbirni argumenti uspešno izbrisani.
+  wwcConfigConversationSQLOptionalArgsInput: 'Trenutni izbirni argumenti SQL so: %i.
+    argumenti tipa, ločeni z vejico (ključ=vrednost, key2=value2) ali vnesite jasno,
+    da obrišete trenutne arge, ali vnesite 0, da se vrnete nazaj.'
+  wwcConfigConversationSQLDatabaseNameInput: Trenutna ime zbirke podatkov je %i.Vnesite
+    kaj drugega kot 0, da nastavite novo ime zbirke podatkov, ali vnesite 0, da se
+    vrnete nazaj.
+  wwcConfigGUISQLDatabaseNameButton: Spremeni zbirko podatkov SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Uspešno spremenil ime zbirke podatkov
+    SQL.
+  wwcConfigConversationFatalAsyncAbort: Trenutna časovna omejitev za prekinitev vseh
+    async opravil je %i sekund. Vnesite karkoli nad 7, da nastavite novo časovno omejitev
+    ali kaj pod njim, da se vrnete nazaj.
+  wwcConfigConversationFatalAsyncSuccess: Async časovna omejitev opravila je bila
+    uspešno nastavljena.
+  wwcConfigGUIFatalAsyncAbortButton: Spremeni časovno omejitev opravila Async
+  wwcTimeoutException: Vaš ukaz je časovno razporejen. Prosimo, poskusite znova.

@@ -6,12 +6,9 @@ import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationGeneralSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.GeneralSettingsGUI;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
-import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
 
@@ -29,20 +26,7 @@ public class GeneralSettingsPrefixConversation extends StringPrompt {
 
 	@Override
 	public Prompt acceptInput(ConversationContext context, String input) {
-		if (!input.equals("0")) {
-			main.setPrefixName(input);
-			main.getConfigManager().getMainConfig().set("General.prefixName", input);
-			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-			final TextComponent successfulChange = Component.text()
-					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcConfigConversationPrefixSuccess"))
-							.color(NamedTextColor.GREEN))
-					.build();
-			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-		}
-		/* Re-open ConfigurationInventoryGUI */
-		ConfigurationGeneralSettingsGUI.generalSettings.open((Player) context.getForWhom());
-		return END_OF_CONVERSATION;
+		return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationPrefixSuccess", "General.prefixName", input, GeneralSettingsGUI.generalSettings);
 	}
 
 }

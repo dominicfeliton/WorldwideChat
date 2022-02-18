@@ -22,22 +22,20 @@ public class InventoryListener implements Listener {
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInventoryCloseEvent(InventoryCloseEvent e) {
 		/* Send the user a message if they quit a config GUI without saving properly */
-		if (main.getPlayersUsingGUI().contains(e.getPlayer())) {
-			Bukkit.getScheduler().runTaskLater(main, new Runnable() {
-				@Override
-				public void run() {
-					if (e.getPlayer().getOpenInventory().getType() != InventoryType.CHEST
-							&& !((Player) e.getPlayer()).isConversing()) {
-						final TextComponent reloadPlease = Component.text()
-								.append(Component.text()
-										.content(CommonDefinitions.getMessage("wwcConfigGUIChangesNotSaved"))
-										.color(NamedTextColor.YELLOW))
-								.build();
-						CommonDefinitions.sendMessage(e.getPlayer(), reloadPlease);
-						main.removePlayerUsingConfigurationGUI((Player) e.getPlayer());
-					}
+		Bukkit.getScheduler().runTaskLater(main, new Runnable() {
+			@Override
+			public void run() {
+				if (main.isPlayerUsingGUI(e.getPlayer().getUniqueId().toString()) && e.getPlayer().getOpenInventory().getType() != InventoryType.CHEST
+						&& !((Player) e.getPlayer()).isConversing()) {
+					final TextComponent reloadPlease = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwcConfigGUIChangesNotSaved"))
+									.color(NamedTextColor.YELLOW))
+							.build();
+					CommonDefinitions.sendMessage(e.getPlayer(), reloadPlease);
+					main.removePlayerUsingConfigurationGUI((Player) e.getPlayer());
 				}
-			}, 10);
-		}
+			}
+		}, 10);
 	}
 }

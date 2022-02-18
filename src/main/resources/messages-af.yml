@@ -184,11 +184,6 @@ Messages:
     konsole.
   wwcInventoryError: Fout bespeur met GUI van gebruiker %i. Rapporteer asseblief hierdie
     probleem aan die ontwikkelaar.
-  wwcConfigConversationTranslatorFail: Misluk om %i te aktiveer %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Gebruiker %i het suksesvol aangepas.
-  wwcConfigConversationTranslatorSuccess: Suksesvol aangepas %i.
-  wwcConfigConversationConsoleTranslatorFail: Gebruiker %i het misluk om %o te aktiveer
-    %o.
   wwcSignTranslationFail: Nie moontlik na vertaal een of meer lyne op jou teiken teken.
   wwcBookTranslationFail: Kan nie een of meer bladsye in jou teikenboek vertaal nie.
   wwctiOffTarget: Item vertaling gedeaktiveer vir %i.
@@ -211,7 +206,6 @@ Messages:
   wwcInvalidTranslator: Ongeldige vertaler instellings. Los dit asseblief in jou config.yml
     of met/wwcc om hierdie inprop te gebruik.
   wwcConfigGUIEachTranslatorSettings: '%i Opstelling'
-  wwcConfigGUIToggleButton: Wissel
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat kondoneer nie die gebruik van/herlaai nie.
     Gaan asseblief met omsigtigheid voort
@@ -270,8 +264,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Verander Globale Koersbeperking
   wwcteOnSender: Entiteit vertaling geaktiveer. Regskliek op 'n entiteit om sy naam
     te vertaal!
-  wwcInGameObjectTranslationFailCatastrophic: Misluk om teiken voorwerp te vertaal.
-  wwcInGameEntityTranslationFailCatastrophic: Misluk om teiken entiteit te vertaal.
   wwcConfigGUIResponseLimitButton: Verander Vertaler Reaksie Tydverstrek
   wwcConfigMessageCharLimitEnabled: Karakter limiet per boodskap stel na %i karakters.
   wwcteOffTarget: Entiteitsvertaling gedeaktiveer vir %i.
@@ -331,8 +323,63 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Uitset Taal: %i'
   wwcTranslatorAttempt: Probeer om aan te sluit op vertaler in config.yml... (Poging
     %i/ %o)
-  wwcTimeoutException: ' Jou opdrag snel uit. Probeer asseblief weer.'
   wwcTimeoutExceptionConsole: Speler %i het hul mees onlangse versoektime-out gehad.
     Hierdie fout is nie noodlottig nie, maar WorldwideChat moet herlaai word as dit
     steeds gebeur.
   wwcGUIPageNumber: 'Bladsy nommer: %i'
+  wwcConfigSQLFail: Kon nie aan SQL koppel nie.
+  wwcConfigSQLSuccess: Suksesvol gekoppel aan SQL!
+  wwcConfigYAMLFallback: Val terug na YAML...
+  wwcConfigGUIToggleSQLButton: Wissel SQL
+  wwcConfigConversationToggleSQLSuccess: SQL omgeskuif suksesvol. Herlaai vir die
+    verandering om in werking te tree.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Suksesvol omgeskakelde Google
+    Translate. Herlaai vir die verandering om in werking te tree.
+  wwcConfigYAMLDefault: Verstek om YAML vir data stoor.
+  wwcConfigGUISQLMenuButton: Verander SQL instellings
+  wwcConfigConversationWatsonTranslateToggleSuccess: Suksesvol omgeskuif Watson Translate.
+    Herlaai vir die verandering om in werking te tree.
+  wwcConfigGUISQLSettings: SQL-konfigurasie
+  wwcConfigGUIToggleGoogleTranslateButton: Skakel Google Vertaal
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Vertaal
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Vertaal
+  wwcConfigGUIStorageSettings: berging konfigurasie
+  wwcConfigConversationAmazonTranslateToggleSuccess: Suksesvol aangeskakel Amazon
+    Translate. Herlaai vir die verandering om in werking te tree.
+  wwcConfigGUISQLPortButton: Verander SQL-poort
+  wwcConfigGUISQLOptionalArgsButton: Verander SQL Opsionele Argumente
+  wwcConfigConversationToggleSQLSSLSuccess: SSL vir SQL omgeskuif suksesvol.
+  wwcConfigConversationSQLPortInput: Die huidige poort is %i. Tik enigiets anders
+    as 0 na stel 'n nuwe poort, of tipe 0 om terug te gaan.
+  wwcConfigGUISQLPasswordButton: Verander SQL wagwoord
+  wwcConfigConversationSQLHostnameSuccess: Suksesvol verander die SQL gasheernaam.
+  wwcConfigConversationSQLHostnameInput: Die huidige gasheernaam is %i. Tik enigiets
+    anders as 0 om 'n nuwe gasheernaam te stel, of tipe 0 om terug te gaan.
+  wwcConfigGUISQLHostnameButton: Verander SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Suksesvol verander die opsionele SQL
+    argumente.
+  wwcConfigConversationSQLPasswordSuccess: Suksesvol verander die SQL wagwoord.
+  wwcConfigConversationSQLPasswordInput: Die huidige wagwoord is %i. Tik enigiets
+    anders as 0 om 'n nuwe wagwoord in te stel, of tik 0 om terug te gaan.
+  wwcConfigGUIToggleSQLSSLButton: Wissel SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Suksesvol verander die SQL gebruikersnaam.
+  wwcConfigConversationSQLUsernameInput: Die huidige gebruikersnaam is %i. Tik enigiets
+    anders as 0 om 'n nuwe gebruikersnaam in te stel, of tik 0 om terug te gaan.
+  wwcConfigConversationSQLPortSuccess: Suksesvol verander die SQL-poort.
+  wwcConfigGUISQLUsernameButton: Verander SQL Gebruikersnaam
+  wwcConfigConversationSQLOptionalArgsCleared: Opsionele argumente suksesvol skoongemaak.
+  wwcConfigConversationSQLOptionalArgsInput: 'Die huidige opsionele SQL argumente
+    is: %i. Tipe argumente geskei deur ''n komma (sleutel=waarde, key2=value2), of
+    tik duidelik na vee die huidige args, of tipe 0 om terug te gaan.'
+  wwcConfigConversationSQLDatabaseNameInput: Die huidige databasis naam is %i. Tik
+    enigiets anders as 0 om 'n nuwe databasis naam in te stel, of tik 0 om terug te
+    gaan.
+  wwcConfigGUISQLDatabaseNameButton: Verander SQL databasis
+  wwcConfigConversationSQLDatabaseNameSuccess: Suksesvol verander die SQL databasis
+    naam.
+  wwcConfigConversationFatalAsyncAbort: Die huidige tydverstreke om alle async take
+    te staak, is %i sekondes. Tik enigiets bo 7 om 'n nuwe time-out stel, of enigiets
+    onder dit om terug te gaan.
+  wwcConfigConversationFatalAsyncSuccess: Async taak time-out suksesvol te stel.
+  wwcConfigGUIFatalAsyncAbortButton: Verander Async Taak Time-out
+  wwcTimeoutException: Jou opdrag snel uit. Probeer asseblief weer.

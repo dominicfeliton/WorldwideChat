@@ -129,7 +129,6 @@ Messages:
   wwctrlRateLimitSetTarget: '%i ਤੋਂ %o ਸਕਿੰਟ ਦੀ ਦਰ ਸੀਮਾ ਨਿਰਧਾਰਤ ਕਰੋ.'
   wwcConfigGUIMessagesOverrideCustomLabel: ਨਵਾਂ ਸੁਨੇਹਾ
   wwcGUITempItem: ਆਈਟਮ ਡਿਸਪਲੇਅ
-  wwcConfigConversationConsoleTranslatorSuccess: ਯੂਜ਼ਰ %i ਸਫਲਤਾਪੂਰਕ %o ਯੋਗ ਹੈ।
   wwcBookTranslationFail: ਆਪਣੇ ਟੀਚੇ ਦੀ ਕਿਤਾਬ ਵਿੱਚ ਇੱਕ ਜ ਹੋਰ ਸਫ਼ੇ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ
     ਅਸਮਰੱਥ ਹੈ.
   wwcConfigConversationGoogleTranslateAPIKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ
@@ -139,7 +138,6 @@ Messages:
     ਕਰਨ ਲਈ 0 ਟਾਈਪ ਕਰੋ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google API ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ
     ਸੈੱਟ ਕੀਤਾ ਅਨੁਵਾਦ ਕਰੋ।
-  wwcConfigConversationTranslatorSuccess: ਸਫਲਤਾਪੂਰਕ ਯੋਗ ਕੀਤਾ %i.
   wwcConfigGUIAmazonTranslateSecretKeyButton: ਐਮਾਜ਼ਾਨ ਗੁਪਤ ਕੁੰਜੀ ਬਦਲੋ
   wwcInvalidTranslator: ਗਲਤ ਅਨੁਵਾਦਕ ਸੈਟਿੰਗ. ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਪਲੱਗਇਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਆਪਣੀ
     config.yml ਜਾਂ /wwcc ਨਾਲ ਇਸ ਨੂੰ ਠੀਕ ਕਰੋ.
@@ -154,7 +152,6 @@ Messages:
     ਸੈਸ਼ਨ ਹੈ।
   wwcTranslatorError: ਤੁਹਾਡੇ ਅਨੁਵਾਦ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਸਮੇਂ ਇੱਕ ਸਮੱਸਿਆ ਆਈ. ਕਿਰਪਾ ਕਰਕੇ
     ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.
-  wwcConfigConversationTranslatorFail: '%i ਯੋਗ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ।'
   wwcUserDataReloaded: ਸਾਰੇ ਸੇਵ ਕੀਤੇ ਉਪਭੋਗਤਾ ਡੇਟਾ ਨੂੰ ਲੋਡ ਕੀਤਾ.
   wwcteOffSender: ਸੰਸਥਾ ਦਾ ਅਨੁਵਾਦ ਅਯੋਗ ਹੈ।
   wwcsLastTranslationTime: 'ਆਖਰੀ (ਸਫਲ) ਅਨੁਵਾਦ ਸਮਾਂ: %i'
@@ -180,7 +177,6 @@ Messages:
   wwcsNotATranslator: '%i ਲਈ ਅਜੇ ਤੱਕ ਕੋਈ ਰਿਕਾਰਡ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।'
   wwcConfigGUIbStatsButton: ਟੌਗਲ ਬੀਸਟੈਟਸ
   wwctGUINewTranslationSource: ਇੱਕ ਸਰੋਤ ਭਾਸ਼ਾ ਚੁਣੋ
-  wwcConfigConversationConsoleTranslatorFail: ਯੂਜ਼ਰ %i %o ਯੋਗ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ।
   wwctGUIMainMenuPlayer: '%i ਦਾ ਅਨੁਵਾਦ ਮੀਨੂੰ'
   wwctGUIBookButton: ਟੌਗਲ ਕਿਤਾਬ ਅਨੁਵਾਦ
   wwcConfigGUIDebugModeButton: ਡੀਬੱਗ ਮੋਡ ਬਦਲੋ
@@ -188,7 +184,6 @@ Messages:
     ਰਿੱਛ ਨੂੰ ਮੂਲ...
   wwcLangDetected: ਖੋਜਿਆ ਭਾਸ਼ਾ %o.
   wwcConfigDisabledbStats: ਅਯੋਗ ਬੀਸਟੈਟਸ.
-  wwcInGameEntityTranslationFailCatastrophic: ਟੀਚੇ ਦਾ ਹਸਤੀ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
   wwcConfigMessageCharLimitEnabled: ਅੱਖਰ ਸੀਮਾ ਪ੍ਰਤੀ ਸੁਨੇਹਾ %i ਅੱਖਰਾਂ ਲਈ ਸੈੱਟ ਕੀਤਾ
     ਗਿਆ ਹੈ।
   wwcConfigGUIMessagesAlreadyOverriden: ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਇਸ ਸੰਦੇਸ਼ ਲਈ ਇੱਕ ਓਵਰਰਾਈਡ
@@ -261,7 +256,6 @@ Messages:
   wwcBookTranslateTitleFail: ਕਿਤਾਬ ਦੇ ਸਿਰਲੇਖ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
   wwcConfigGUIChatMessagesOverrideDeleteButton: ਓਵਰਰਾਈਡ ਮਿਟਾਓ
   wwcNoConsole: ਇਹ ਕਮਾਂਡ ਸਿਰਫ ਇੱਕ ਖਿਡਾਰੀ ਦੁਆਰਾ ਚਲਾਇਆ ਜਾ ਸਕਦਾ ਹੈ.
-  wwcInGameObjectTranslationFailCatastrophic: ਟੀਚੇ ਦਾ ਆਬਜੈਕਟ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
   wwcConfigConversationTranslationCacheSuccess: ਅਨੁਵਾਦ ਕੈਸ਼ ਸੀਮਾ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ
     ਕੀਤਾ.
   wwctInvalidArgs: ਗਲਤ ਦਲੀਲਾਂ ਪ੍ਰਦਾਨ ਕੀਤੀਆਂ ਗਈਆਂ!
@@ -298,7 +292,6 @@ Messages:
   wwcConfigGUISendTranslationChatButton: ਲਾਗਇਨ 'ਤੇ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨੂੰ ਚੈਟ ਯਾਦ ਭੇਜੋ
   wwcConfigSyncDelayInvalid: ਗਲਤ ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਦੇਰੀ config.yml ਵਿੱਚ ਸੈੱਟ ਕੀਤਾ. 7200
     ਸਕਿੰਟ ਲਈ ਡਿਫਾਲਟ...
-  wwcConfigGUIToggleButton: '%i ਟੌਗਲ ਕਰੋ'
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ਐਮਾਜ਼ਾਨ ਪਹੁੰਚ ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ
     ਸੈੱਟ ਕੀਤਾ.
   wwcConfigBadUpdateDelay: ਗਲਤ ਅਪਡੇਟਰ ਦੇਰੀ config.yml ਵਿੱਚ ਸੈੱਟ ਕੀਤੀ. 86400 ਸਕਿੰਟ
@@ -328,8 +321,63 @@ Messages:
   wwctGUIExistingTranslationOutput: 'ਆਉਟਪੁੱਟ ਭਾਸ਼ਾ: %i'
   wwcTranslatorAttempt: config.yml ਵਿੱਚ ਅਨੁਵਾਦਕ ਨਾਲ ਜੁੜਨ ਦੀ ਕੋਸ਼ਿਸ਼... ( %// %o ਦੀ
     ਕੋਸ਼ਿਸ਼ ਕਰੋ)
-  wwcTimeoutException: ' ਤੁਹਾਡਾ ਹੁਕਮ ਬਾਹਰ ਸਮਾਪਤ. ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.'
   wwcTimeoutExceptionConsole: ਪਲੇਅਰ %i ਦੀ ਸਭ ਤੋਂ ਤਾਜ਼ਾ ਬੇਨਤੀ ਸਮਾਂ ਸੀ. ਇਹ ਗਲਤੀ ਘਾਤਕ
     ਨਹੀਂ ਹੈ, ਪਰ ਜੇ ਇਹ ਵਾਪਰਨਾ ਜਾਰੀ ਹੈ ਤਾਂ ਵਰਲਡ ਵਿਡਚੈਟ ਨੂੰ ਮੁੜ ਲੋਡ ਕੀਤਾ ਜਾਣਾ ਚਾਹੀਦਾ
     ਹੈ.
   wwcGUIPageNumber: 'ਪੰਨਾ ਨੰਬਰ: %i'
+  wwcConfigSQLFail: SQL ਨਾਲ ਕੁਨੈਕਟ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
+  wwcConfigSQLSuccess: ਸਫਲਤਾਪੂਰਵਕ SQL ਨਾਲ ਜੁੜਿਆ!
+  wwcConfigYAMLFallback: YML ਨੂੰ ਵਾਪਸ ਡਿੱਗਣ...
+  wwcConfigGUIToggleSQLButton: SQL ਬਦਲੋ
+  wwcConfigConversationToggleSQLSuccess: SQL ਸਫਲਤਾਪੂਰਕ ਬਦਲ ਗਿਆ. ਪ੍ਰਭਾਵ ਨੂੰ ਲੈਣ ਲਈ
+    ਤਬਦੀਲੀ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigConversationGoogleTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਕ Google ਅਨੁਵਾਦ ਨੂੰ ਬਦਲ.
+    ਪ੍ਰਭਾਵ ਨੂੰ ਲੈਣ ਲਈ ਤਬਦੀਲੀ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigYAMLDefault: ਡਾਟਾ ਸਟੋਰੇਜ਼ ਲਈ YML ਨੂੰ ਮੂਲ.
+  wwcConfigGUISQLMenuButton: SQL ਸੈਟਿੰਗ ਬਦਲੋ
+  wwcConfigConversationWatsonTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਕ ਬਦਲੋ ਵਾਟਸਨ ਦਾ ਅਨੁਵਾਦ.
+    ਪ੍ਰਭਾਵ ਨੂੰ ਲੈਣ ਲਈ ਤਬਦੀਲੀ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigGUISQLSettings: SQL ਸੰਰਚਨਾ
+  wwcConfigGUIToggleGoogleTranslateButton: ਬਦਲੋ ਗੂਗਲ ਅਨੁਵਾਦ
+  wwcConfigGUIToggleWatsonTranslateButton: ਬਦਲੋ ਵਾਟਸਨ ਦਾ ਅਨੁਵਾਦ ਕਰੋ।
+  wwcConfigGUIToggleAmazonTranslateButton: ਬਦਲੋ ਐਮਾਜ਼ਾਨ ਦਾ ਅਨੁਵਾਦ ਕਰੋ
+  wwcConfigGUIStorageSettings: ਸਟੋਰੇਜ਼ ਸੰਰਚਨਾ
+  wwcConfigConversationAmazonTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਕ ਐਮਾਜ਼ਾਨ ਅਨੁਵਾਦ ਨੂੰ
+    ਬਦਲ. ਪ੍ਰਭਾਵ ਨੂੰ ਲੈਣ ਲਈ ਤਬਦੀਲੀ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigGUISQLPortButton: SQL ਪੋਰਟ ਬਦਲੋ
+  wwcConfigGUISQLOptionalArgsButton: SQL ਵਿਕਲਪਿਕ ਆਰਗੂਮੈਂਟਸ ਬਦਲੋ
+  wwcConfigConversationToggleSQLSSLSuccess: SQL ਲਈ SSL ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਬਦਲ ਦਿੱਤਾ.
+  wwcConfigConversationSQLPortInput: ਮੌਜੂਦਾ ਪੋਰਟ %i ਹੈ ਇੱਕ ਨਵਾਂ ਪੋਰਟ ਸੈਟ ਕਰਨ ਲਈ 0
+    ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ.
+  wwcConfigGUISQLPasswordButton: SQL ਪਾਸਵਰਡ ਬਦਲੋ
+  wwcConfigConversationSQLHostnameSuccess: ਸਫਲਤਾਪੂਰਵਕ SQL ਹੋਸਟਨਾਂ ਨੂੰ ਬਦਲ ਦਿੱਤਾ.
+  wwcConfigConversationSQLHostnameInput: ਮੌਜੂਦਾ ਮੇਜ਼ਬਾਨ ਨਾਂ %i ਹੈ ਨਵਾਂ ਮੇਜ਼ਬਾਨ ਨਾਂ
+    ਸੈੱਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ।
+  wwcConfigGUISQLHostnameButton: SQL ਹੋਸਟਨਾਮ ਬਦਲੋ
+  wwcConfigConversationSQLOptionalArgsSuccess: ਸਫਲਤਾਪੂਰਵਕ ਵਿਕਲਪਿਕ SQL ਦਲੀਲਾਂ ਨੂੰ ਬਦਲ
+    ਦਿੱਤਾ.
+  wwcConfigConversationSQLPasswordSuccess: ਸਫਲਤਾਪੂਰਵਕ SQL ਪਾਸਵਰਡ ਬਦਲ ਗਿਆ.
+  wwcConfigConversationSQLPasswordInput: ਮੌਜੂਦਾ ਪਾਸਵਰਡ %i ਹੈ ਨਵਾਂ ਪਾਸਵਰਡ ਸੈੱਟ ਕਰਨ
+    ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ।
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL ਨੂੰ ਬਦਲੋ
+  wwcConfigConversationSQLUsernameSuccess: ਸਫਲਤਾਪੂਰਵਕ SQL ਉਪਭੋਗਤਾ ਨਾਮ ਬਦਲ ਗਿਆ.
+  wwcConfigConversationSQLUsernameInput: ਮੌਜੂਦਾ ਯੂਜ਼ਰਨੇਮ %i ਹੈ ਵਾਪਸ ਜਾਣ ਲਈ ਇੱਕ ਨਵਾਂ
+    ਯੂਜ਼ਰਨਾਮ ਸੈਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ.
+  wwcConfigConversationSQLPortSuccess: ਸਫਲਤਾਪੂਰਵਕ SQL ਪੋਰਟ ਬਦਲ ਗਿਆ.
+  wwcConfigGUISQLUsernameButton: ਬਦਲੋ SQL ਯੂਜ਼ਰ
+  wwcConfigConversationSQLOptionalArgsCleared: ਅਖ਼ਤਿਆਰੀ ਦਲੀਲਾਂ ਸਫਲਤਾਪੂਰਵਕ ਸਾਫ਼ ਹੋ
+    ਗਈਆਂ.
+  wwcConfigConversationSQLOptionalArgsInput: 'ਮੌਜੂਦਾ ਵਿਕਲਪਿਕ SQL ਦਲੀਲਾਂ ਹਨ: %i ਕਾਮੇ
+    (ਕੁੰਜੀ = ਮੁੱਲ, key2 = value2) ਦੁਆਰਾ ਵੱਖ ਕੀਤੀਆਂ ਆਰਗੂਮੈਂਟਾਂ, ਜਾਂ ਮੌਜੂਦਾ ਆਰਗਾਂ ਨੂੰ
+    ਪੂੰਝਣ ਲਈ ਸਪੱਸ਼ਟ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.'
+  wwcConfigConversationSQLDatabaseNameInput: ਮੌਜੂਦਾ ਡਾਟਾਬੇਸ ਨਾਂ %i ਹੈ ਨਵਾਂ ਡਾਟਾਬੇਸ
+    ਨਾਂ ਸੈੱਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ।
+  wwcConfigGUISQLDatabaseNameButton: SQL ਡਾਟਾਬੇਸ ਬਦਲੋ
+  wwcConfigConversationSQLDatabaseNameSuccess: ਸਫਲਤਾਪੂਰਵਕ SQL ਡਾਟਾਬੇਸ ਨਾਮ ਬਦਲ ਦਿੱਤਾ.
+  wwcConfigConversationFatalAsyncAbort: ਸਾਰੇ async ਕਾਰਜਾਂ ਨੂੰ ਖਤਮ ਕਰਨ ਦਾ ਮੌਜੂਦਾ ਸਮਾਂ
+    ਆ. ਟ %i ਸਕਿੰਟ ਹੈ. ਇੱਕ ਨਵਾਂ ਸਮਾਂ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 7 ਤੋਂ ਉੱਪਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ
+    ਇਸ ਤੋਂ ਹੇਠਾਂ ਕੁਝ ਵੀ ਵਾਪਸ ਜਾਣ ਲਈ.
+  wwcConfigConversationFatalAsyncSuccess: ਅਸਿੰਕ ਟਾਸਕ ਟਾਈਮਆਉਟ ਸਫਲਤਾਪੂਰਵਕ ਸੈੱਟ ਕੀਤਾ
+    ਗਿਆ.
+  wwcConfigGUIFatalAsyncAbortButton: ਅਸਿੰਕ ਟਾਸਕ ਟਾਈਮਆਉਟ ਬਦਲੋ
+  wwcTimeoutException: ਤੁਹਾਡਾ ਹੁਕਮ ਬਾਹਰ ਸਮਾਪਤ. ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.

@@ -48,18 +48,10 @@ public class WWCTranslateGUIChatMenu implements InventoryProvider {
 			ActiveTranslator targetTranslator = main.getActiveTranslator(targetPlayerUUID);
 			
 			/* White stained glass borders as default, Green stained glass borders for active */
-			ItemStack customBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
-			ItemMeta borderMeta = customBorders.getItemMeta();
-			borderMeta.setDisplayName(" ");
-			customBorders.setItemMeta(borderMeta);
-			contents.fillBorders(ClickableItem.empty(customBorders));
+			WWCInventoryManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
 			
 			if (targetTranslator.getTranslatingChatOutgoing() || targetTranslator.getTranslatingChatIncoming()) {
-				ItemStack customBordersActive = XMaterial.GREEN_STAINED_GLASS_PANE.parseItem();
-				ItemMeta borderMetaActive = customBordersActive.getItemMeta();
-				borderMetaActive.setDisplayName(" ");
-				customBordersActive.setItemMeta(borderMetaActive);
-				contents.fillBorders(ClickableItem.empty(customBordersActive));
+				WWCInventoryManager.setBorders(contents, XMaterial.GREEN_STAINED_GLASS_PANE);
 			}
 			
 			/* Outgoing Chat Button */
@@ -107,9 +99,7 @@ public class WWCTranslateGUIChatMenu implements InventoryProvider {
 			}
 			
 			/* Bottom Left Option: Previous Page */
-			contents.set(2, 4, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
-				WWCTranslateGUIMainMenu.getTranslateMainMenu(targetPlayerUUID).open(player);
-			}));
+			WWCInventoryManager.setCommonButton(2, 4, player, contents, "Previous", new Object[] {WWCTranslateGUIMainMenu.getTranslateMainMenu(targetPlayerUUID)});
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

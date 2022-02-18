@@ -180,10 +180,6 @@ Messages:
   wwcInventoryErrorPlayer: Kosa wanaona na GUI yako. Logi imetumwa kwenye console.
   wwcInventoryError: Hitilafu imegunduliwa na GUI ya mtumiaji %i. Tafadhali ripoti
     suala hili kwa
-  wwcConfigConversationTranslatorFail: Imeshindwa kuwezesha %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Mtumiaji %nimewezesha %o kwa mafanikio.
-  wwcConfigConversationTranslatorSuccess: Imewezeshwa kwa mafanikio ya %i.
-  wwcConfigConversationConsoleTranslatorFail: Mtumiaji %nimeshindwa kuwawezesha %o.
   wwcSignTranslationFail: Haiwezi kutafsiri mistari moja au zaidi kwenye ishara yako
     ya lengo.
   wwcBookTranslationFail: Haiwezi kutafsiri kurasa moja au zaidi katika kitabu chako
@@ -208,7 +204,6 @@ Messages:
   wwcInvalidTranslator: Mipangilio ya msanii batili. Tafadhali tengeneza hii katika
     config.yml yako au na/wwcc kutumia Plugin hii.
   wwcConfigGUIEachTranslatorSettings: '%i Usanidi'
-  wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat haina kukubali matumizi ya/reloaded. Tafadhali
     endelea kwa tahadhari.
@@ -266,8 +261,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Badilisha kikomo cha Kiwango cha Global
   wwcteOnSender: Tafsiri ya chombo imewezeshwa. Bonyeza-click kwenye chombo cha kutafsiri
     jina lake!
-  wwcInGameObjectTranslationFailCatastrophic: Imeshindwa kutafsiri kitu cha lengo.
-  wwcInGameEntityTranslationFailCatastrophic: Imeshindwa kutafsiri chombo cha lengo.
   wwcConfigGUIResponseLimitButton: Badilisha Mwitikio wa Mtafsiri
   wwcConfigMessageCharLimitEnabled: Kikomo cha tabia kwa kila ujumbe umewekwa kwa
     %i herufi.
@@ -327,8 +320,64 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Lugha ya Pato: %i'
   wwcTranslatorAttempt: Kujaribu kuungana na translator katika config.yml... (jaribio
     %i/ %o)
-  wwcTimeoutException: ' Amri yako wakati muafaka nje. Tafadhali jaribu tena.'
   wwcTimeoutExceptionConsole: mchezaji %Nilikuwa na ombi yao ya hivi karibuni umeisha.
     Hitilafu hii sio mbaya, lakini WorldwideChat inapaswa kupakiwa tena ikiwa inaendelea
     kutokea.
   wwcGUIPageNumber: 'Idadi ya Ukurasa: %i'
+  wwcConfigSQLFail: Imeshindwa kuunganisha kwenye SQL.
+  wwcConfigSQLSuccess: Imeunganishwa kwa ufanisi kwenye SQL!
+  wwcConfigYAMLFallback: Kuanguka nyuma YAML...
+  wwcConfigGUIToggleSQLButton: Badilisha SQL
+  wwcConfigConversationToggleSQLSuccess: SQL ilibadilisha kwa mafanikio. Reload kwa
+    mabadiliko ya kuchukua athari.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Imefanikiwa kugeuza Google Tafsiri.
+    Reload kwa mabadiliko ya kuchukua athari.
+  wwcConfigYAMLDefault: Defaulted kwa YAML kwa ajili ya kuhifadhi data.
+  wwcConfigGUISQLMenuButton: Badilisha mipangilio ya SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Mafanikio kugeuza Watson Tafsiri.
+    Reload kwa mabadiliko ya kuchukua athari.
+  wwcConfigGUISQLSettings: Usanidi wa SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Badilisha Google Kutafsiri
+  wwcConfigGUIToggleWatsonTranslateButton: Kugeuza Watson kutafsiri
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Kutafsiri
+  wwcConfigGUIStorageSettings: Usanidi wa Uhifadhi
+  wwcConfigConversationAmazonTranslateToggleSuccess: Mafanikio kugeuza Amazon Tafsiri.
+    Reload kwa mabadiliko ya kuchukua athari.
+  wwcConfigGUISQLPortButton: Badilisha bandari ya SQL
+  wwcConfigGUISQLOptionalArgsButton: Badilisha Hoja za hiari za SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL kwa SQL kugeuzwa kwa mafanikio.
+  wwcConfigConversationSQLPortInput: Bandari ya sasa ni %i. aina kitu chochote mbali
+    na 0 kuweka bandari mpya, au aina 0 kurudi nyuma.
+  wwcConfigGUISQLPasswordButton: Badilisha nenosiri la SQL
+  wwcConfigConversationSQLHostnameSuccess: Imebadilishwa kwa ufanisi jina la mwenyeji
+    wa SQL.
+  wwcConfigConversationSQLHostnameInput: Jina la mwenyeji wa sasa ni %i Weka kitu
+    chochote isipokuwa 0 ili kuweka jina jipya la mwenyeji, au aina ya 0 kurudi nyuma.
+  wwcConfigGUISQLHostnameButton: Badilisha Jina la Mwenyeji wa SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Mafanikio iliyopita hoja hiari SQL.
+  wwcConfigConversationSQLPasswordSuccess: Imebadilisha nenosiri la SQL kwa ufanisi.
+  wwcConfigConversationSQLPasswordInput: Nenosiri la sasa ni %i Andika kitu chochote
+    isipokuwa 0 ili kuweka nenosiri jipya, au funga 0 kurudi nyuma.
+  wwcConfigGUIToggleSQLSSLButton: Badilisha SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Ilibadilisha kwa ufanisi jina la mtumiaji
+    wa SQL.
+  wwcConfigConversationSQLUsernameInput: Jina la mtumiaji sasa ni %i. aina kitu chochote
+    mbali na 0 kuweka jina jipya la mtumiaji, au aina 0 kurudi nyuma.
+  wwcConfigConversationSQLPortSuccess: Imebadilishwa kwa ufanisi bandari ya SQL.
+  wwcConfigGUISQLUsernameButton: Badilisha Jina la mtumiaji wa SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Hoja za hiari zimeondolewa kwa mafanikio.
+  wwcConfigConversationSQLOptionalArgsInput: 'Hoja za sasa za hiari za SQL ni: %i.
+    hoja za aina zilizotengwa na comma (key=thamani, key2= value2), au aina ya wazi
+    kuifuta args sasa, au aina 0 kurudi nyuma.'
+  wwcConfigConversationSQLDatabaseNameInput: Jina la sasa la database ni %i Andika
+    kitu chochote isipokuwa 0 ili kuweka jina jipya la database, au aina ya 0 kurudi
+    nyuma.
+  wwcConfigGUISQLDatabaseNameButton: Badilisha database ya SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Imebadilishwa kwa ufanisi jina la database
+    ya SQL.
+  wwcConfigConversationFatalAsyncAbort: Muda wa sasa wa kuazima kazi zote za async
+    ni %i sekunde. Andika kitu chochote juu ya 7 ili kuweka umeisha mpya, au kitu
+    chochote chini yake ili kurudi nyuma.
+  wwcConfigConversationFatalAsyncSuccess: Timeout kazi ya Async imewekwa kwa mafanikio.
+  wwcConfigGUIFatalAsyncAbortButton: Badilisha Muda wa Kazi ya Async
+  wwcTimeoutException: Amri yako wakati muafaka nje. Tafadhali jaribu tena.

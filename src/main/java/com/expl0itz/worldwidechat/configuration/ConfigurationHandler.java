@@ -5,13 +5,20 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.List;
 
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.threeten.bp.Instant;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
@@ -22,6 +29,7 @@ import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.Metrics;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
+import com.expl0itz.worldwidechat.util.SQLUtils;
 
 public class ConfigurationHandler {
 
@@ -141,7 +149,18 @@ public class ConfigurationHandler {
 				main.setPrefixName("WWC"); // If default the entry for prefix, interpret as WWC
 			}
 		} catch (Exception e) {
+			main.setPrefixName("WWC");
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigInvalidPrefixSettings"));
+		}
+		// Fatal Async Timeout Delay
+		try {
+			if (mainConfig.getInt("General.fatalAsyncTaskTimeout") > 7) {
+				WorldwideChat.translatorFatalAbortSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout");
+			} else {
+				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigInvalidFatalAsyncTimeout"));
+			}
+		} catch (Exception e) {
+			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigInvalidFatalAsyncTimeout"));
 		}
 		// bStats
 		if (mainConfig.getBoolean("General.enablebStats")) {
@@ -154,11 +173,12 @@ public class ConfigurationHandler {
 		}
 		// Update Checker Delay
 		try {
-			if ((mainConfig.getInt("General.updateCheckerDelay") > 10)) {
-			} else {
+			if (!(mainConfig.getInt("General.updateCheckerDelay") > 10)) {
+				mainConfig.set("General.updateCheckerDelay", 86400);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigBadUpdateDelay"));
 			}
 		} catch (Exception e) {
+			mainConfig.set("General.updateCheckerDelay", 86400);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigBadUpdateDelay"));
 		}
 		// Sync User Data Delay
@@ -167,9 +187,11 @@ public class ConfigurationHandler {
 				main.getLogger().info(
 						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigSyncDelayEnabled", new String[] {mainConfig.getInt("General.syncUserDataDelay") + ""}));
 			} else {
+				mainConfig.set("General.syncUserDataDelay", 7200);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigSyncDelayInvalid"));
 			}
 		} catch (Exception e) {
+			mainConfig.set("General.syncUserDataDelay", 7200);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigSyncDelayInvalid"));
 		}
 		// Rate limit Settings
@@ -177,9 +199,11 @@ public class ConfigurationHandler {
 			if (mainConfig.getInt("Translator.rateLimit") >= 0) {
 				main.getLogger().info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigRateLimitEnabled", new String[] {"" + mainConfig.getInt("Translator.rateLimit")}));
 			} else {
+				mainConfig.set("Translator.rateLimit", 0);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigRateLimitInvalid"));
 			}
 		} catch (Exception e) {
+			mainConfig.set("Translator.rateLimit", 0);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigRateLimitInvalid"));
 		}
 		// Per-message char limit Settings
@@ -187,9 +211,11 @@ public class ConfigurationHandler {
 			if (mainConfig.getInt("Translator.messageCharLimit") >= 0) {
 				main.getLogger().info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigMessageCharLimitEnabled", new String[] {"" + mainConfig.getInt("Translator.messageCharLimit")}));
 			} else {
+				mainConfig.set("Translator.messageCharLimit", 255);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMessageCharLimitInvalid"));
 			}
 		} catch (Exception e) {
+			mainConfig.set("Translator.messageCharLimit", 255);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMessageCharLimitInvalid"));
 		}
 		// Cache Settings
@@ -198,9 +224,11 @@ public class ConfigurationHandler {
 				main.getLogger()
 						.info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigCacheEnabled", new String[] {mainConfig.getInt("Translator.translatorCacheSize") + ""}));
 			} else {
+				mainConfig.set("Translator.translatorCacheSize", 0);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigCacheDisabled"));
 			}
 		} catch (Exception e) {
+			mainConfig.set("Translator.translatorCacheSize", 100);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigCacheInvalid"));
 		}
 		// Error Limit Settings
@@ -209,10 +237,31 @@ public class ConfigurationHandler {
 				main.getLogger().info(
 						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigErrorLimitEnabled", new String[] {mainConfig.getInt("Translator.errorLimit") + ""}));
 			} else {
+				mainConfig.set("Translator.errorLimit", 5);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigErrorLimitInvalid"));
 			}
 		} catch (Exception e) {
+			mainConfig.set("Translator.errorLimit", 5);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigErrorLimitInvalid"));
+		}
+	}
+	
+	/* Storage Settings */
+	public void loadStorageSettings() {
+		if (mainConfig.getBoolean("Storage.useSQL")) {
+			try {
+				SQLUtils.connect(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"), 
+						mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"), 
+						(List<String>) mainConfig.getList("Storage.sqlOptionalArgs"), mainConfig.getBoolean("Storage.sqlUseSSL"));
+				main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigSQLSuccess"));
+			} catch (Exception e) {
+				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigSQLFail"));
+				main.getLogger().warning(ExceptionUtils.getMessage(e));
+				SQLUtils.disconnect(); // Just in case
+				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigYAMLFallback"));
+			}
+		} else {
+			main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigYAMLDefault"));
 		}
 	}
 
@@ -229,7 +278,7 @@ public class ConfigurationHandler {
 									&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
 						outName = "Watson";
 						WatsonTranslation test = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
-								mainConfig.getString("Translator.watsonURL"));
+								mainConfig.getString("Translator.watsonURL"), true);
 						test.useTranslator();
 						break;
 					} else if (mainConfig.getBoolean("Translator.useGoogleTranslate")
@@ -237,7 +286,7 @@ public class ConfigurationHandler {
 									&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
 						outName = "Google Translate";
 						GoogleTranslation test = new GoogleTranslation(
-								mainConfig.getString("Translator.googleTranslateAPIKey"));
+								mainConfig.getString("Translator.googleTranslateAPIKey"), true);
 						test.useTranslator();
 						break;
 					} else if (mainConfig.getBoolean("Translator.useAmazonTranslate")
@@ -246,21 +295,16 @@ public class ConfigurationHandler {
 						outName = "Amazon Translate";
 						AmazonTranslation test = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
 								mainConfig.getString("Translator.amazonSecretKey"),
-								mainConfig.getString("Translator.amazonRegion"));
+								mainConfig.getString("Translator.amazonRegion"), true);
 						test.useTranslator();
 						break;
 					} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
 						outName = "JUnit/MockBukkit Testing Translator";
 						TestTranslation test = new TestTranslation(
-								"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu");
+								"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu", true);
 						test.useTranslator();
 						break;
 					} else {
-						mainConfig.set("Translator.useWatsonTranslate", false);
-						mainConfig.set("Translator.useGoogleTranslate", false);
-						mainConfig.set("Translator.useAmazonTranslate", false);
-						
-						saveMainConfig(false);
 						outName = "Invalid";
 						break;
 					}
@@ -280,7 +324,7 @@ public class ConfigurationHandler {
 		main.setTranslatorName(outName);
 	}
 
-	/* Per User Settings Saver */
+	/* Translator YAML File Saver */
 	public void createUserDataConfig(ActiveTranslator inTranslator) {
 		File userSettingsFile;
 		YamlConfiguration userSettingsConfig;
@@ -324,7 +368,7 @@ public class ConfigurationHandler {
 		saveCustomConfig(userSettingsConfig, userSettingsFile, false);
 	}
 
-	/* Stats File Creator */
+	/* Stats YAML File Saver */
 	public void createStatsConfig(PlayerRecord inRecord) {
 		File userStatsFile;
 		YamlConfiguration userStatsConfig;
@@ -403,16 +447,106 @@ public class ConfigurationHandler {
 		}
 	}
 	
-	/* Sync user data to disk */
+	/* Sync user data to storage */
 	public void syncData() {
 		/* If our translator is Invalid, do not run this code */
 		if (!main.getTranslatorName().equals("Invalid")) {
-			/* Sync activeTranslators to disk */
+			/* Sync to SQL database, if it exists */
+			// Our Generic Table Layout: 
+			// | Creation Date | Object Properties |  
+			if (SQLUtils.isConnected()) {
+				try {
+					Connection sqlConnection = SQLUtils.getConnection();
+					
+					/* Create tables if they do not exist already */
+					PreparedStatement initActiveTranslators = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
+							+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),inLangCode VARCHAR(12),outLangCode VARCHAR(12),rateLimit VARCHAR(256),"
+							+ "rateLimitPreviousTime VARCHAR(256),translatingChatOutgoing VARCHAR(12), translatingChatIncoming VARCHAR(12),"
+							+ "translatingBook VARCHAR(12),translatingSign VARCHAR(12),translatingItem VARCHAR(12),translatingEntity VARCHAR(12),PRIMARY KEY (playerUUID))");
+					initActiveTranslators.executeUpdate();
+					initActiveTranslators.close();
+					PreparedStatement initPlayerRecords = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS playerRecords "
+							+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),attemptedTranslations VARCHAR(256),successfulTranslations VARCHAR(256),"
+							+ "lastTranslationTime VARCHAR(256),PRIMARY KEY (playerUUID))");
+					initPlayerRecords.executeUpdate();
+					initPlayerRecords.close();
+					/* Sync ActiveTranslator data to corresponding table */
+					main.getActiveTranslators().entrySet().forEach((entry) -> {
+						CommonDefinitions.sendDebugMessage("(SQL) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+					    if (!entry.getValue().getHasBeenSaved()) {
+					    	try {
+					    		PreparedStatement newActiveTranslator = sqlConnection.prepareStatement("REPLACE activeTranslators"
+						    			+ " (creationDate,playerUUID,inLangCode,outLangCode,rateLimit,rateLimitPreviousTime,translatingChatOutgoing,translatingChatIncoming,translatingBook,translatingSign,translatingItem,translatingEntity)" 
+						    			+ " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
+						    	newActiveTranslator.setString(1, Instant.now().toString());
+						    	newActiveTranslator.setString(2, entry.getValue().getUUID());
+						    	newActiveTranslator.setString(3, entry.getValue().getInLangCode());
+						    	newActiveTranslator.setString(4, entry.getValue().getOutLangCode());
+						    	newActiveTranslator.setInt(5, entry.getValue().getRateLimit());
+						    	newActiveTranslator.setString(6, entry.getValue().getRateLimitPreviousTime());
+						    	newActiveTranslator.setBoolean(7, entry.getValue().getTranslatingChatOutgoing());
+						    	newActiveTranslator.setBoolean(8, entry.getValue().getTranslatingChatIncoming());
+						    	newActiveTranslator.setBoolean(9, entry.getValue().getTranslatingBook());
+						    	newActiveTranslator.setBoolean(10, entry.getValue().getTranslatingSign());
+						    	newActiveTranslator.setBoolean(11, entry.getValue().getTranslatingItem());
+						    	newActiveTranslator.setBoolean(12, entry.getValue().getTranslatingEntity());
+						    	newActiveTranslator.executeUpdate();
+						    	newActiveTranslator.close();
+					    	} catch (SQLException e) {
+								e.printStackTrace();
+								return;
+							}
+					    	CommonDefinitions.sendDebugMessage("(SQL) Created/updated unsaved user data config of " + entry.getKey() + ".");
+					    	entry.getValue().setHasBeenSaved(true);
+					    }
+					});
+					/* Delete any old ActiveTranslators */
+					ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM activeTranslators");
+					while (rs.next()) {
+						if (main.getActiveTranslator(rs.getString("playerUUID")).getUUID().equals("")) {
+							String uuid = rs.getString("playerUUID");
+							PreparedStatement deleteOldItem = sqlConnection.prepareStatement("DELETE FROM activeTranslators WHERE playerUUID = ?");
+							deleteOldItem.setString(1, uuid);
+							deleteOldItem.executeUpdate();
+							deleteOldItem.close();
+							CommonDefinitions.sendDebugMessage("(SQL) Deleted user data config of " + uuid + ".");
+						}
+					}
+					
+					/* Sync PlayerRecord data to corresponding table */
+                    main.getPlayerRecords().entrySet().forEach((entry) -> {
+                    	CommonDefinitions.sendDebugMessage("(SQL) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+                        if (!entry.getValue().getHasBeenSaved()) {
+                        	try {
+                        		PreparedStatement newPlayerRecord = sqlConnection.prepareStatement("REPLACE playerRecords"
+                        				+ " (creationDate,playerUUID,attemptedTranslations,successfulTranslations,lastTranslationTime) VALUES (?,?,?,?,?)");
+                        		newPlayerRecord.setString(1, Instant.now().toString());
+                        		newPlayerRecord.setString(2, entry.getValue().getUUID());
+                        		newPlayerRecord.setInt(3, entry.getValue().getAttemptedTranslations());
+                        		newPlayerRecord.setInt(4, entry.getValue().getSuccessfulTranslations());
+                        		newPlayerRecord.setString(5, entry.getValue().getLastTranslationTime());
+                        		newPlayerRecord.executeUpdate();
+                        		newPlayerRecord.close();
+                        	} catch (SQLException e) {
+                        		e.printStackTrace();
+                        		return;
+                        	}
+                        	CommonDefinitions.sendDebugMessage("(SQL) Created/updated unsaved user record of " + entry.getKey() + ".");
+                        	entry.getValue().setHasBeenSaved(true);
+					    }
+					});
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+				return;
+			}
+			
+			/* Last resort, sync activeTranslators to disk */
 			// Save all new activeTranslators
 			main.getActiveTranslators().entrySet().forEach((entry) -> {
-				CommonDefinitions.sendDebugMessage("Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				CommonDefinitions.sendDebugMessage("(YAML) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
 				if (!entry.getValue().getHasBeenSaved()) {
-					CommonDefinitions.sendDebugMessage("Created/updated unsaved user data config of " + entry.getKey() + ".");
+					CommonDefinitions.sendDebugMessage("(YAML) Created/updated unsaved user data config of " + entry.getKey() + ".");
 					entry.getValue().setHasBeenSaved(true);
 					createUserDataConfig(entry.getValue());
 				}
@@ -423,7 +557,7 @@ public class ConfigurationHandler {
 				File currFile = new File(userSettingsDir, eaName);
 				if (main.getActiveTranslator(
 						currFile.getName().substring(0, currFile.getName().indexOf("."))).getUUID().equals("")) {
-					CommonDefinitions.sendDebugMessage("Deleted user data config of "
+					CommonDefinitions.sendDebugMessage("(YAML) Deleted user data config of "
 							+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + ".");
 					currFile.delete();
 				}
@@ -431,9 +565,9 @@ public class ConfigurationHandler {
 
 			/* Sync playerRecords to disk */
 			main.getPlayerRecords().entrySet().forEach((entry) -> {
-				CommonDefinitions.sendDebugMessage("Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				CommonDefinitions.sendDebugMessage("(YAML) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
 				if (!entry.getValue().getHasBeenSaved()) {
-					CommonDefinitions.sendDebugMessage("Created/updated unsaved user record of " + entry.getKey() + ".");
+					CommonDefinitions.sendDebugMessage("(YAML) Created/updated unsaved user record of " + entry.getKey() + ".");
 					entry.getValue().setHasBeenSaved(true);
 					createStatsConfig(entry.getValue());
 				}

@@ -190,10 +190,6 @@ Messages:
     stjórnborðsins.
   wwcInventoryError: Villa greind með GUI notanda %i. Vinsamlegast tilkynna þetta
     mál til framkvæmdaraðila.
-  wwcConfigConversationTranslatorFail: Mistókst að gera %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Notanda %Ég tókst að virkja %o.
-  wwcConfigConversationTranslatorSuccess: Tókst að virkja %i.
-  wwcConfigConversationConsoleTranslatorFail: Notanda %Ég mistókst að gera %o.
   wwcSignTranslationFail: Ekki er hægt að þýða eina eða fleiri línur á markmerkinu
     þínu.
   wwcBookTranslationFail: Ekki er hægt að þýða eina eða fleiri síður í markbókinni
@@ -218,7 +214,6 @@ Messages:
   wwcInvalidTranslator: Ógildar stillingar þýðanda. Vinsamlegast lagaðu þetta í config.yml
     eða með/wwcc til að nota þessa tappi.
   wwcConfigGUIEachTranslatorSettings: '%i Stillingar'
-  wwcConfigGUIToggleButton: Skipti %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ekki condone notkun/endurhlaða. Vinsamlegast
     haltu áfram með varúð.
@@ -276,8 +271,6 @@ Messages:
     en eða jafnt og 0 til að fara aftur.
   wwcConfigGUIGlobalRateLimitButton: Breyta Global Rate Limit
   wwcteOnSender: Entity þýðing virkt. Hægrismelltu á aðila til að þýða nafn sitt!
-  wwcInGameObjectTranslationFailCatastrophic: Mistókst að þýða miða hlut.
-  wwcInGameEntityTranslationFailCatastrophic: Mistókst að þýða miða aðila.
   wwcConfigGUIResponseLimitButton: Breyta Response Timeout
   wwcConfigMessageCharLimitEnabled: Eðli takmörk á skeyti stillt á %i stafi.
   wwcteOffTarget: Entity þýðing óvirk fyrir %i.
@@ -334,8 +327,62 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Output Tungumál: %i'
   wwcTranslatorAttempt: Tilraun til að tengjast þýðanda í config.yml... (Reynta %i/
     %o)
-  wwcTimeoutException: ' Skipunin þín tímasett út. Vinsamlegast reyndu aftur.'
   wwcTimeoutExceptionConsole: Leikmaður %Ég hafði nýjustu beiðni tímamörk þeirra.
     Þessi villa er ekki banvæn, en WorldwideChat ætti að endurhlaða ef það heldur
     áfram að gerast.
   wwcGUIPageNumber: 'Síðu númer: %i'
+  wwcConfigSQLFail: Mistókst að tengjast SQL.
+  wwcConfigSQLSuccess: Tókst tengdur við SQL!
+  wwcConfigYAMLFallback: Falla aftur til YAML...
+  wwcConfigGUIToggleSQLButton: Skipta SQL
+  wwcConfigConversationToggleSQLSuccess: SQL skipta með góðum árangri. Endurhlaða
+    fyrir breytinguna til að taka gildi.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Tókst að skipta Google Translate.
+    Endurhlaða fyrir breytinguna til að taka gildi.
+  wwcConfigYAMLDefault: Vanskil á YAML fyrir gagnageymslu.
+  wwcConfigGUISQLMenuButton: Breyta SQL stillingum
+  wwcConfigConversationWatsonTranslateToggleSuccess: Tókst skipt Watson Translate.
+    Endurhlaða fyrir breytinguna til að taka gildi.
+  wwcConfigGUISQLSettings: SQL stillingar
+  wwcConfigGUIToggleGoogleTranslateButton: Skipta Google Þýða
+  wwcConfigGUIToggleWatsonTranslateButton: Skipta Watson Þýða
+  wwcConfigGUIToggleAmazonTranslateButton: Skipta Amazon Þýða
+  wwcConfigGUIStorageSettings: Geymsla stillingar
+  wwcConfigConversationAmazonTranslateToggleSuccess: Tókst skipt Amazon Translate.
+    Endurhlaða fyrir breytinguna til að taka gildi.
+  wwcConfigGUISQLPortButton: Breyta SQL höfn
+  wwcConfigGUISQLOptionalArgsButton: Breyta SQL valfrjálst rök
+  wwcConfigConversationToggleSQLSSLSuccess: SSL fyrir SQL skipti með góðum árangri.
+  wwcConfigConversationSQLPortInput: Núverandi höfn er %i. tegund eitthvað annað en
+    0 til að setja nýja höfn, eða tegund 0 til að fara aftur.
+  wwcConfigGUISQLPasswordButton: Breyta SQL lykilorð
+  wwcConfigConversationSQLHostnameSuccess: Tókst að breyta SQL hostname.
+  wwcConfigConversationSQLHostnameInput: Núverandi hostname er %i. tegund eitthvað
+    annað en 0 til að setja nýtt hostname, eða tegund 0 til að fara aftur.
+  wwcConfigGUISQLHostnameButton: Breyta SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Tókst að breyta valfrjáls SQL rök.
+  wwcConfigConversationSQLPasswordSuccess: Tókst að breyta SQL lykilorðinu.
+  wwcConfigConversationSQLPasswordInput: Núverandi lykilorð er %i Sláðu inn eitthvað
+    annað en 0 til að setja nýtt lykilorð, eða tegund 0 til að fara aftur.
+  wwcConfigGUIToggleSQLSSLButton: Skipta SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Tókst að breyta SQL notandanafninu.
+  wwcConfigConversationSQLUsernameInput: Núverandi notandanafn er %i. tegund eitthvað
+    annað en 0 til að setja nýtt notandanafn, eða tegund 0 til að fara aftur.
+  wwcConfigConversationSQLPortSuccess: Tókst að breyta SQL höfn.
+  wwcConfigGUISQLUsernameButton: Breyta SQL notendanafni
+  wwcConfigConversationSQLOptionalArgsCleared: Valfrjálst rök hreinsaðar með góðum
+    árangri.
+  wwcConfigConversationSQLOptionalArgsInput: 'Núverandi valfrjáls SQL rök eru: %i.
+    tegund rök aðskilin með kommu (lykill = gildi, key2 = value2), eða tegund skýr
+    til að þurrka núverandi args, eða tegund 0 til að fara aftur.'
+  wwcConfigConversationSQLDatabaseNameInput: Núverandi nafn gagnagrunns er %i. tegund
+    eitthvað annað en 0 til að setja nýtt nafn gagnagrunns, eða tegund 0 til að fara
+    aftur.
+  wwcConfigGUISQLDatabaseNameButton: Breyta SQL gagnagrunni
+  wwcConfigConversationSQLDatabaseNameSuccess: Tókst að breyta SQL gagnagrunnsheiti.
+  wwcConfigConversationFatalAsyncAbort: Núverandi tímamörk til að fella niður öll
+    async verkefni er %i sekúndur. Sláðu inn eitthvað fyrir ofan 7 til að setja nýtt
+    tímamörk, eða eitthvað fyrir neðan það til að fara aftur.
+  wwcConfigConversationFatalAsyncSuccess: Async verkefni timeout sett með góðum árangri.
+  wwcConfigGUIFatalAsyncAbortButton: Breyta Async Task Timeout
+  wwcTimeoutException: Skipunin þín tímasett út. Vinsamlegast reyndu aftur.

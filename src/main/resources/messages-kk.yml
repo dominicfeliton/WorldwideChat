@@ -178,10 +178,6 @@ Messages:
   wwcInventoryErrorPlayer: GUI-мен анықталған қате. Консольге журнал жіберілді.
   wwcInventoryError: '%i пайдаланушысының GUI көмегімен анықталған қате, бұл мәселені
     әзірлеушіге хабарлаңыз.'
-  wwcConfigConversationTranslatorFail: '%i қосу сәтсіз аяқталды.'
-  wwcConfigConversationConsoleTranslatorSuccess: Пайдаланушы %o сәтті қостым.
-  wwcConfigConversationTranslatorSuccess: Табысты түрде %i қосу.
-  wwcConfigConversationConsoleTranslatorFail: Пайдаланушы %o қосу сәтсіз аяқталды.
   wwcSignTranslationFail: Мақсатты белгіңізде бір немесе бірнеше жолдарды аудару мүмкін
     емес.
   wwcBookTranslationFail: Сіздің мақсатты кітабында бір немесе бірнеше беттерді аудару
@@ -206,7 +202,6 @@ Messages:
   wwcInvalidTranslator: Жарамсыз аудармашы параметрлері. Бұл плагинді пайдалану үшін
     config.yml немесе /wwcc көмегімен түзетіңіз.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурация'
-  wwcConfigGUIToggleButton: '%i'
   wwcConfigGUIWatsonButton: Уотсон
   wwcServerReloadWarning: WorldwideChat пайдалану/қайта жүктеуді шектемейді. Сақтықпен
     жалғастырыңыз.
@@ -264,8 +259,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Әлемдік мөлшерлеме лимитін
   wwcteOnSender: Субъект аудармасы қосылған. Өз атын аудару үшін ұйымды тінтуірдің
     оң жақ түймешігімен нұқыңыз!
-  wwcInGameObjectTranslationFailCatastrophic: Мақсатты нысанды аудару сәтсіз аяқталды.
-  wwcInGameEntityTranslationFailCatastrophic: Мақсатты тұлғаны аудару сәтсіз аяқталды.
   wwcConfigGUIResponseLimitButton: Аудармашы жауап уақытын өзгерту
   wwcConfigMessageCharLimitEnabled: '%i таңбаларына орнатылған хабарға арналған таңба
     шегі.'
@@ -324,8 +317,64 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Шығу тілі: %i'
   wwcTranslatorAttempt: Config.yml ішіндегі аудармашыға қосылуға әрекет... ( %i/ %o
     әрекеті)
-  wwcTimeoutException: ' Сіздің командаңыз орайластырылған. Қайтадан көріңіз.'
   wwcTimeoutExceptionConsole: Player % Мен олардың ең соңғы сұрау уақыты болды. Бұл
     қате өлімге ұшырамайды, бірақ WorldwideChat оны жалғастыра берсе, қайта жүктеу
     керек.
   wwcGUIPageNumber: 'Бет нөмірі: %i'
+  wwcConfigSQLFail: SQL қосылу үшін сәтсіз аяқталды.
+  wwcConfigSQLSuccess: SQL жүйесіне сәтті қосылған!
+  wwcConfigYAMLFallback: YAML кері құлап...
+  wwcConfigGUIToggleSQLButton: SQL ауыстыру
+  wwcConfigConversationToggleSQLSuccess: SQL сәтті болды. Өзгеріс күшіне ену үшін
+    қайта жүктеңіз.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google Translate сәтті болды.
+    Өзгеріс күшіне ену үшін қайта жүктеңіз.
+  wwcConfigYAMLDefault: Деректерді сақтау үшін YAML-ге дефолтқа жол берілді.
+  wwcConfigGUISQLMenuButton: SQL параметрлерін өзгерту
+  wwcConfigConversationWatsonTranslateToggleSuccess: Уотсон Аудару сәтті болды. Өзгеріс
+    күшіне ену үшін қайта жүктеңіз.
+  wwcConfigGUISQLSettings: SQL конфигурациясы
+  wwcConfigGUIToggleGoogleTranslateButton: Google Аудару
+  wwcConfigGUIToggleWatsonTranslateButton: Аудару
+  wwcConfigGUIToggleAmazonTranslateButton: Amazon Аудару
+  wwcConfigGUIStorageSettings: Сақтау конфигурациясы
+  wwcConfigConversationAmazonTranslateToggleSuccess: Сәтті түрде Amazon Аудару. Өзгеріс
+    күшіне ену үшін қайта жүктеңіз.
+  wwcConfigGUISQLPortButton: SQL портын өзгерту
+  wwcConfigGUISQLOptionalArgsButton: SQL Қосымша аргументтерді өзгерту
+  wwcConfigConversationToggleSQLSSLSuccess: SQL үшін SSL сәтті ауыстырылды.
+  wwcConfigConversationSQLPortInput: Ағымдағы порт %i болып табылады. 0 жаңа портты
+    орнату үшін 0-ден басқа нәрсені теріңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigGUISQLPasswordButton: SQL паролін өзгерту
+  wwcConfigConversationSQLHostnameSuccess: SQL хост атауын сәтті өзгертті.
+  wwcConfigConversationSQLHostnameInput: Ағымдағы хост атауы %i болып табылады. 0
+    жаңа хост атауын орнату үшін 0-ден басқа нәрсені теріңіз немесе кері оралу үшін
+    0 теріңіз.
+  wwcConfigGUISQLHostnameButton: SQL хост атауын өзгерту
+  wwcConfigConversationSQLOptionalArgsSuccess: Қосымша SQL дәлелдерін сәтті өзгертті.
+  wwcConfigConversationSQLPasswordSuccess: SQL құпия сөзін сәтті өзгертті.
+  wwcConfigConversationSQLPasswordInput: Ағымдағы құпиясөз %i болып табылады. 0-ден
+    басқа кез келген нәрсені теріңіз жаңа құпия сөзді орнату үшін немесе кері оралу
+    үшін 0 теріңіз.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL қосқыш
+  wwcConfigConversationSQLUsernameSuccess: SQL пайдаланушы атын сәтті өзгертті.
+  wwcConfigConversationSQLUsernameInput: Ағымдағы пайдаланушы аты %i болып табылады.
+    0-ден басқа кез келген нәрсені теріңіз жаңа пайдаланушы атын орнату үшін немесе
+    кері оралу үшін 0 теріңіз.
+  wwcConfigConversationSQLPortSuccess: SQL портын сәтті өзгертті.
+  wwcConfigGUISQLUsernameButton: SQL пайдаланушы атын өзгерту
+  wwcConfigConversationSQLOptionalArgsCleared: Қосымша дәлелдер сәтті тазартылды.
+  wwcConfigConversationSQLOptionalArgsInput: 'Ағымдағы қосымша SQL аргументтері: %i.
+    үтірмен бөлінген аргументтерді теріңіз (key=value, key2=value2) немесе ағымдағы
+    арқандарды сүрту үшін анық теріңіз немесе кері оралу үшін 0 теріңіз.'
+  wwcConfigConversationSQLDatabaseNameInput: Ағымдағы дерекқор атауы %i болып табылады.
+    0-ден басқа кез келген нәрсені теріңіз жаңа дерекқор атауын орнату үшін немесе
+    кері оралу үшін 0 теріңіз.
+  wwcConfigGUISQLDatabaseNameButton: SQL дерекқорын өзгерту
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL дерекқорының атауын сәтті өзгертті.
+  wwcConfigConversationFatalAsyncAbort: Барлық async тапсырмаларын орындау үшін ағымдағы
+    уақыт - %i секунд. Жаңа таймаут орнату үшін 7-ден жоғары нәрсені немесе кері оралу
+    үшін төмендегі нәрсені теріңіз.
+  wwcConfigConversationFatalAsyncSuccess: Async тапсырма уақыты сәтті орнатылған.
+  wwcConfigGUIFatalAsyncAbortButton: Async тапсырмасының уақытын өзгерту
+  wwcTimeoutException: Сіздің командаңыз орайластырылған. Қайтадан көріңіз.

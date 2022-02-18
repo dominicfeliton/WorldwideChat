@@ -179,11 +179,6 @@ Messages:
     دی.
   wwcInventoryError: د کارن د GUI سره تېروتنه وموندل شوه %i. مهرباني وکړئ دا مسله
     پرمخ وړونکي ته راپور ورکړئ.
-  wwcConfigConversationTranslatorFail: .i توانولو کې پاتې راغی
-  wwcConfigConversationConsoleTranslatorSuccess: .کاروون %o په بریالیتوب سره توانول
-    %o
-  wwcConfigConversationTranslatorSuccess: . په برياليتوب سره توانول شو %i
-  wwcConfigConversationConsoleTranslatorFail: .کاروون %o په توانولو کې پاتې راغم %o
   wwcSignTranslationFail: ستاسو په نښه نښه کې د یو یا ډیرو لینونو ژباړلو توان نلري.
   wwcBookTranslationFail: د خپل هدف کتاب کې د یو یا ډیرو مخونو ژباړلو توان نلري.
   wwctiOffTarget: .توکی ژباړه د %i لپاره ناتوانول شو
@@ -206,7 +201,6 @@ Messages:
   wwcInvalidTranslator: ناسم ژباړونکي امستنې. مهرباني وکړئ دا په خپل config.yml یا/wwcc
     سره د دې فلګین کارولو لپاره حل کړئ.
   wwcConfigGUIEachTranslatorSettings: '%i سازونه'
-  wwcConfigGUIToggleButton: ټولي %i
   wwcConfigGUIWatsonButton: واټسن
   wwcServerReloadWarning: WorldwideChat د/بیا لوټ کولو کارولو څخه مننه نه کوي. مهرباني
     وکړئ د احتیاط سره مخ شئ.
@@ -265,8 +259,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: د نړیوال نرخ محدودیت بدل کړئ
   wwcteOnSender: د بنسټ ژباړه فعاله شوه. د خپل نوم د ژباړلو لپاره په یوه اداره باندې
     ښی کلیک وکړئ!
-  wwcInGameObjectTranslationFailCatastrophic: . هدف څيز ژباړلو کې پاتې راغی
-  wwcInGameEntityTranslationFailCatastrophic: د هدف ارګان ژباړلو کې پاتې راغی
   wwcConfigGUIResponseLimitButton: د ژباړونکي غبرګون وخت بدل کړئ
   wwcConfigMessageCharLimitEnabled: .د استوزې په ټولې %i حروفونو ته د توري حد
   wwcteOffTarget: .د بنسټ ژباړه ناتوانول شو %i لپاره
@@ -323,7 +315,62 @@ Messages:
   wwctGUIExistingTranslationOutput: 'د محصول ژبه: %i'
   wwcTranslatorAttempt: په config.yml کې د ژباړونکي سره د نښلولو هڅه کول... (هټ٪ I/٪
     O)
-  wwcTimeoutException: ' ستاسو قوماندې وځنډول شو. مهرباني وکړئ بیا هڅه وکړئ.'
   wwcTimeoutExceptionConsole: لوبغاړي٪ ما د دوی ترټولو وروستي غوښتنې وخت درلود. دا
     تېروتنه وژونکي نه ده، مګر د نړۍ په کچه باید بیا پورته شي که چیرې دا پیښ شي.
   wwcGUIPageNumber: 'د مخ شمېر: %i'
+  wwcConfigSQLFail: د SQL سره نښلول پاتې راغلل.
+  wwcConfigSQLSuccess: په بریالیتوب سره د SQL سره وصل شو!
+  wwcConfigYAMLFallback: YAML ته بیرته راوتل...
+  wwcConfigGUIToggleSQLButton: غږول SQL
+  wwcConfigConversationToggleSQLSuccess: SQL په بریالیتوب سره ټګ شو. د بدلون لپاره
+    بیا پورته کول ترڅو اغیزه وکړي.
+  wwcConfigConversationGoogleTranslateToggleSuccess: په بریالیتوب سره د ګوګل ژباړونکي.
+    د بدلون لپاره بیا پورته کول ترڅو اغیزه وکړي.
+  wwcConfigYAMLDefault: د معلوماتو ذخیره کولو لپاره YAML ته ډیفالټ شوی.
+  wwcConfigGUISQLMenuButton: د SQL امستنې بدلول
+  wwcConfigConversationWatsonTranslateToggleSuccess: په بریالیتوب سره د واټسن ژباړل
+    شوی. د بدلون لپاره بیا پورته کول ترڅو اغیزه وکړي.
+  wwcConfigGUISQLSettings: SQL سازونې
+  wwcConfigGUIToggleGoogleTranslateButton: د ګوګل ژباړه
+  wwcConfigGUIToggleWatsonTranslateButton: د واټسن ژباړل
+  wwcConfigGUIToggleAmazonTranslateButton: د ایمیزون ژباړل
+  wwcConfigGUIStorageSettings: زيرمه سازونې
+  wwcConfigConversationAmazonTranslateToggleSuccess: په بریالیتوب سره د ایمیزون ژباړل
+    شوی. د بدلون لپاره بیا پورته کول ترڅو اغیزه وکړي.
+  wwcConfigGUISQLPortButton: SQL بندر بدل کړئ
+  wwcConfigGUISQLOptionalArgsButton: د SQL اختیاري دلیلونه بدل کړئ
+  wwcConfigConversationToggleSQLSSLSuccess: د SQL لپاره SSL په بریالیتوب سره ټګل شوی.
+  wwcConfigConversationSQLPortInput: اوسنی بندر دی٪ i. د 0 څخه پرته بل څه ډول یو نوی
+    بندر جوړ کړي، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
+  wwcConfigGUISQLPasswordButton: د SQL پاسورډ بدلول
+  wwcConfigConversationSQLHostnameSuccess: په بریالیتوب سره د SQL کوربه نوم بدل کړ.
+  wwcConfigConversationSQLHostnameInput: اوسنی کوربه نوم٪ i دی. د 0 څخه بل څه ټایپ
+    کړئ ترڅو یو نوی کوربه نوم جوړ کړئ، یا د 0 ټایپ کړئ چې بیرته لاړ شئ.
+  wwcConfigGUISQLHostnameButton: د SQL کوربه نوم بدل کړئ
+  wwcConfigConversationSQLOptionalArgsSuccess: په بریالیتوب سره د اختیاري SQL دلیلونه
+    بدل کړل.
+  wwcConfigConversationSQLPasswordSuccess: په بریالیتوب سره د SQL پټنوم بدل کړ.
+  wwcConfigConversationSQLPasswordInput: اوسنی پاسورډ %i دی. د 0 څخه بل څه ټایپ کړئ
+    ترڅو نوی پټنوم ترتیب کړئ، یا بیرته لاړ شئ 0 ټایپ کړئ.
+  wwcConfigGUIToggleSQLSSLButton: د ایس ایس ایل ایس ایل ټوګل
+  wwcConfigConversationSQLUsernameSuccess: په بریالیتوب سره د SQL کارن نوم بدل کړ.
+  wwcConfigConversationSQLUsernameInput: اوسنی کارن-نوم %i دی. د نوي کارن-نوم تنظیم
+    کولو لپاره د 0 څخه بل څه ټایپ کړئ، یا بیرته لاړ شئ 0 ټایپ کړئ.
+  wwcConfigConversationSQLPortSuccess: په بریالیتوب سره د SQL بندر بدل کړ.
+  wwcConfigGUISQLUsernameButton: د SQL کارن نوم بدل کړئ
+  wwcConfigConversationSQLOptionalArgsCleared: اختیاري دلیلونه په بریالیتوب سره پاک
+    شول.
+  wwcConfigConversationSQLOptionalArgsInput: 'د اوسني اختیاري SQL دلیلونه دي: %i.
+    د کوما لخوا جلا شوي دلیلونه ټایپ کړئ (key=value، key2 = value2)، یا د اوسني ارګز
+    مسح کولو لپاره واضح ډول کړئ، یا د بیرته تلو لپاره 0 ټایپ کړئ.'
+  wwcConfigConversationSQLDatabaseNameInput: د اوسني ډیټابیس نوم %i دی. د نوي ډیټابیس
+    نوم ترتیب کولو لپاره د 0 پرته بل څه ټایپ کړئ، یا بیرته لاړ شئ 0 ټایپ کړئ.
+  wwcConfigGUISQLDatabaseNameButton: د SQL ډیټابیس بدل کړئ
+  wwcConfigConversationSQLDatabaseNameSuccess: په بریالیتوب سره د SQL ډیټابیس نوم
+    بدل کړ.
+  wwcConfigConversationFatalAsyncAbort: د ASYNC ټولو دندو د لغوه کولو لپاره اوسنی
+    وخت د %i ثانیو دی. د 7 څخه پورته هر څه ټایپ کړئ ترڅو یو نوی وخت وټاکئ، یا د دې
+    لاندې هرڅه بیرته لاړ شئ.
+  wwcConfigConversationFatalAsyncSuccess: Async دنده مهال ویش په بریالیتوب سره ټاکل.
+  wwcConfigGUIFatalAsyncAbortButton: د اسینک ټاسک وخت بدل کړئ
+  wwcTimeoutException: ستاسو قوماندې وځنډول شو. مهرباني وکړئ بیا هڅه وکړئ.

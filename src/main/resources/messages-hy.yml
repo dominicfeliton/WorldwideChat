@@ -191,10 +191,6 @@ Messages:
     մխիթարել.
   wwcInventoryError: '%i օգտագործողի GUI- ի հետ հայտնաբերված սխալը: Խնդրում ենք այս
     հարցը զեկուցել մշակողին:'
-  wwcConfigConversationTranslatorFail: 'Չհաջողվեց միացնել %i:'
-  wwcConfigConversationConsoleTranslatorSuccess: 'Օգտվող %i հաջողությամբ միացնել %o:'
-  wwcConfigConversationTranslatorSuccess: Հաջողությամբ միացնել %i.
-  wwcConfigConversationConsoleTranslatorFail: 'Օգտվող %Ես չկարողացա միացնել %o:'
   wwcSignTranslationFail: Անհնար է թարգմանել մեկ կամ ավելի գծեր ձեր թիրախային նշանի.
   wwcBookTranslationFail: Անհնար է թարգմանել մեկ կամ ավելի էջեր ձեր թիրախային գրքում.
   wwctiOffTarget: Նյութի թարգմանությունը անջատված է համար %i.
@@ -217,7 +213,6 @@ Messages:
   wwcInvalidTranslator: 'Անվավեր թարգմանիչ պարամետրերը: Խնդրում ենք ամրագրել այս ձեր
     config.yml կամ /wwcc օգտագործել այս plugin.'
   wwcConfigGUIEachTranslatorSettings: '%i կոնֆիգուրացիա'
-  wwcConfigGUIToggleButton: Անջատել %i
   wwcConfigGUIWatsonButton: Վոտսոն
   wwcServerReloadWarning: 'WorldwideChat- ը չի զերծ օգտագործման/վերաբեռնել: Խնդրում
     ենք շարունակել զգուշությամբ.'
@@ -277,8 +272,6 @@ Messages:
     0- ից պակաս կամ հավասար է:'
   wwcConfigGUIGlobalRateLimitButton: Փոխել Գլոբալ Տոկոսադրույքը
   wwcteOnSender: 'Անձ թարգմանությունը միացված. Աջ սեղմեք անձի վրա, թարգմանել իր անունը:'
-  wwcInGameObjectTranslationFailCatastrophic: Չհաջողվեց թարգմանել թիրախ օբյեկտ.
-  wwcInGameEntityTranslationFailCatastrophic: 'Չհաջողվեց թարգմանել թիրախային կազմակերպությունը:'
   wwcConfigGUIResponseLimitButton: Փոխել Թարգմանիչ արձագանքման Timeout
   wwcConfigMessageCharLimitEnabled: 'Նիշերի սահմանաչափը մեկ հաղորդագրության սահմանված
     համար %i նիշերի համար:'
@@ -342,8 +335,63 @@ Messages:
     %i'
   wwctGUIExistingTranslationOutput: 'Արդյունք լեզու: %i'
   wwcTranslatorAttempt: Փորձում է միացնել թարգմանիչ config.yml... (Փորձի %i/ %o)
-  wwcTimeoutException: ' Ձեր հրամանը ժամանակավրեպ դուրս. Խնդրում ենք կրկին փորձել:'
   wwcTimeoutExceptionConsole: 'Խաղացող %Ես ունեի իրենց վերջին խնդրանքը timeout. Այս
     սխալը ճակատագրական չէ, բայց WorldWideHat- ը պետք է վերբեռնվի, եթե այն շարունակում
     է տեղի ունենալ:'
   wwcGUIPageNumber: 'Էջի համարը: %i'
+  wwcConfigSQLFail: 'Չհաջողվեց միանալ SQL- ին:'
+  wwcConfigSQLSuccess: Հաջողությամբ միացված է SQL!
+  wwcConfigYAMLFallback: Ընկնում ետ YAML...
+  wwcConfigGUIToggleSQLButton: Toggle SQL
+  wwcConfigConversationToggleSQLSuccess: 'SQL toggled հաջողությամբ. Վերբեռնել փոփոխության
+    ուժի մեջ մտնելու համար:'
+  wwcConfigConversationGoogleTranslateToggleSuccess: 'Հաջողությամբ toggled Google
+    Թարգմանել. Վերբեռնել փոփոխության ուժի մեջ մտնելու համար:'
+  wwcConfigYAMLDefault: Defaulted է YAML տվյալների պահպանման.
+  wwcConfigGUISQLMenuButton: Փոխել SQL կարգավորումները
+  wwcConfigConversationWatsonTranslateToggleSuccess: 'Հաջողությամբ toggled Watson
+    Թարգմանել. Վերբեռնել փոփոխության ուժի մեջ մտնելու համար:'
+  wwcConfigGUISQLSettings: SQL կոնֆիգուրացիա
+  wwcConfigGUIToggleGoogleTranslateButton: Փոխարկել Google Թարգմանել
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Թարգմանել
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Թարգմանել
+  wwcConfigGUIStorageSettings: Պահպանման կոնֆիգուրացիա
+  wwcConfigConversationAmazonTranslateToggleSuccess: 'Հաջողությամբ toggled Amazon
+    Թարգմանել. Վերբեռնել փոփոխության ուժի մեջ մտնելու համար:'
+  wwcConfigGUISQLPortButton: Փոխել SQL նավահանգիստ
+  wwcConfigGUISQLOptionalArgsButton: Փոխել SQL կամընտիր փաստարկները
+  wwcConfigConversationToggleSQLSSLSuccess: SSL համար SQL toggled հաջողությամբ.
+  wwcConfigConversationSQLPortInput: 'Ներկայիս նավահանգիստը %i է: Մուտքագրեք այլ բան,
+    քան 0 նոր նավահանգիստ սահմանելու համար, կամ տեսակը 0 վերադառնալ:'
+  wwcConfigGUISQLPasswordButton: Փոխել SQL գաղտնաբառը
+  wwcConfigConversationSQLHostnameSuccess: 'Հաջողությամբ փոխվել է SQL հոսթանունը:'
+  wwcConfigConversationSQLHostnameInput: 'Ներկայիս hostname- ը ` %i: Մուտքագրեք 0-ից
+    այլ բան `նոր հոսթանուն սահմանելու համար կամ 0 տիպը վերադառնալու համար:'
+  wwcConfigGUISQLHostnameButton: Փոխել SQL Հոսթանունը
+  wwcConfigConversationSQLOptionalArgsSuccess: 'Հաջողությամբ փոխվել է ընտրովի SQL
+    փաստարկները:'
+  wwcConfigConversationSQLPasswordSuccess: 'Հաջողությամբ փոխեց SQL գաղտնաբառը:'
+  wwcConfigConversationSQLPasswordInput: 'Ներկայիս գաղտնաբառը %i է: Մուտքագրեք այլ
+    բան, քան 0 նոր գաղտնաբառ սահմանելու համար, կամ մուտքագրեք 0 վերադառնալ:'
+  wwcConfigGUIToggleSQLSSLButton: Փոխել SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: 'Հաջողությամբ փոխվել է SQL օգտվողի անունը:'
+  wwcConfigConversationSQLUsernameInput: 'Ներկայիս մուտքաբառը %i է: Մուտքագրեք այլ
+    բան, քան 0-ից նոր օգտվողի անուն սահմանելու համար, կամ մուտքագրեք 0 վերադառնալ:'
+  wwcConfigConversationSQLPortSuccess: Հաջողությամբ փոխվել է SQL նավահանգիստ.
+  wwcConfigGUISQLUsernameButton: Փոխել SQL Մականուն
+  wwcConfigConversationSQLOptionalArgsCleared: Ըստ ցանկության փաստարկները մաքրվել
+    հաջողությամբ.
+  wwcConfigConversationSQLOptionalArgsInput: 'Ներկայիս ընտրովի SQL փաստարկներն են
+    ` %i: Մուտքագրեք փաստարկները բաժանված ստորակետով (key= value, key2 = value2),
+    կամ պարզ մուտքագրեք ընթացիկ args- ը սրբելու համար, կամ տեսակը 0 վերադառնալ:'
+  wwcConfigConversationSQLDatabaseNameInput: 'Ներկայիս տվյալների բազայի անվանում %i:
+    Մուտքագրեք այլ բան, քան 0 նոր տվյալների բազայի անունը, կամ տեսակը 0 վերադառնալ:'
+  wwcConfigGUISQLDatabaseNameButton: Փոխել SQL տվյալների բազան
+  wwcConfigConversationSQLDatabaseNameSuccess: 'Հաջողությամբ փոխեց SQL տվյալների բազայի
+    անունը:'
+  wwcConfigConversationFatalAsyncAbort: 'Ներկայիս timeout- ը բոլոր async խնդիրները
+    խաթարելու համար %i վայրկյան է: Մուտքագրեք որեւէ բան վերեւում 7 է սահմանել նոր
+    timeout, կամ որեւէ բան ներքեւում այն վերադառնալ.'
+  wwcConfigConversationFatalAsyncSuccess: Async խնդիրն timeout սահմանել հաջողությամբ.
+  wwcConfigGUIFatalAsyncAbortButton: Փոխել Async Task Ժամկետը
+  wwcTimeoutException: 'Ձեր հրամանը ժամանակավրեպ դուրս. Խնդրում ենք կրկին փորձել:'

@@ -3,8 +3,6 @@ package com.expl0itz.worldwidechat.translators;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.bukkit.command.CommandSender;
-
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 
@@ -14,22 +12,19 @@ public class TestTranslation {
 	private String inputLang = "";
 	private String outputLang = "";
 
-	private CommandSender sender;
-
 	private boolean isInitializing = false;
 
 	private WorldwideChat main = WorldwideChat.instance;
 
-	public TestTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
+	public TestTranslation(String textToTranslate, String inputLang, String outputLang) {
 		this.textToTranslate = textToTranslate;
 		this.inputLang = inputLang;
 		this.outputLang = outputLang;
-		this.sender = sender;
 	}
 
-	public TestTranslation(String apikey) {
+	public TestTranslation(String apikey, boolean isInitializing) {
 		System.setProperty("FAKE_API_KEY", apikey);
-		isInitializing = true;
+		this.isInitializing = isInitializing;
 	}
 
 	public String useTranslator() {

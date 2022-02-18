@@ -187,11 +187,6 @@ Messages:
     ke konsol.
   wwcInventoryError: Galat terdeteksi dengan GUI pengguna %i. Harap laporkan masalah
     ini ke pengembang.
-  wwcConfigConversationTranslatorFail: Gagal mengaktifkan %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Pengguna %i berhasil mengaktifkan
-    %o.
-  wwcConfigConversationTranslatorSuccess: Berhasil mengaktifkan %i.
-  wwcConfigConversationConsoleTranslatorFail: Pengguna %i gagal mengaktifkan %o.
   wwcSignTranslationFail: Tidak dapat menerjemahkan satu atau lebih baris pada tanda
     target Anda.
   wwcBookTranslationFail: Tidak dapat menerjemahkan satu atau lebih halaman di buku
@@ -216,7 +211,6 @@ Messages:
   wwcInvalidTranslator: Pengaturan penerjemah tidak valid. Silakan perbaiki ini di
     config.ymlmu atau dengan/wwcc untuk menggunakan plugin ini.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurasi'
-  wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat tidak membenarkan penggunaan /reload. Silahkan
     lanjutkan dengan hati-hati.
@@ -275,8 +269,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Ubah Batas Tingkat Global
   wwcteOnSender: Terjemahan entitas diaktifkan. Klik kanan pada entitas untuk menerjemahkan
     namanya!
-  wwcInGameObjectTranslationFailCatastrophic: Gagal menerjemahkan objek target.
-  wwcInGameEntityTranslationFailCatastrophic: Gagal menerjemahkan entitas target.
   wwcConfigGUIResponseLimitButton: Ubah Waktu Tanggapan Penerjemah
   wwcConfigMessageCharLimitEnabled: Batas karakter per pesan diset ke %i karakter.
   wwcteOffTarget: Terjemahan entitas dinonaktifkan untuk %i.
@@ -337,8 +329,60 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Bahasa Keluaran: %i'
   wwcTranslatorAttempt: Mencoba untuk terhubung ke penerjemah di config.yml.... (Usaha
     %i/ %o)
-  wwcTimeoutException: ' Perintah Anda habis waktu. Silakan coba lagi.'
   wwcTimeoutExceptionConsole: Pemain %i memiliki batas waktu permintaan terbaru mereka.
     Kesalahan ini tidak fatal, tetapi WorldwideChat harus dimuat ulang jika terus
     terjadi.
   wwcGUIPageNumber: 'Nomor Halaman: %i'
+  wwcConfigSQLFail: Gagal menyambung ke SQL.
+  wwcConfigSQLSuccess: Berhasil terhubung ke SQL!
+  wwcConfigYAMLFallback: Jatuh kembali ke YAML...
+  wwcConfigGUIToggleSQLButton: Beralih SQL
+  wwcConfigConversationToggleSQLSuccess: SQL toggled berhasil. Reload agar perubahan
+    berlaku.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Berhasil beralih Google Translate.
+    Reload agar perubahan berlaku.
+  wwcConfigYAMLDefault: Default ke YAML untuk penyimpanan data.
+  wwcConfigGUISQLMenuButton: Ubah Pengaturan SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Berhasil beralih Watson Translate.
+    Reload agar perubahan berlaku.
+  wwcConfigGUISQLSettings: Konfigurasi SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Beralih Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Terjemahkan
+  wwcConfigGUIToggleAmazonTranslateButton: Alihkan Amazon Terjemahkan
+  wwcConfigGUIStorageSettings: Konfigurasi Penyimpanan
+  wwcConfigConversationAmazonTranslateToggleSuccess: Berhasil beralih Amazon Translate.
+    Reload agar perubahan berlaku.
+  wwcConfigGUISQLPortButton: Ubah SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Ubah SQL Opsional Argumen
+  wwcConfigConversationToggleSQLSSLSuccess: SSL untuk SQL toggled berhasil.
+  wwcConfigConversationSQLPortInput: Port saat ini %i. Ketik apa pun selain 0 untuk
+    mengatur port baru, atau ketik 0 untuk kembali.
+  wwcConfigGUISQLPasswordButton: Ubah Kata Sandi SQL
+  wwcConfigConversationSQLHostnameSuccess: Berhasil mengubah nama host SQL.
+  wwcConfigConversationSQLHostnameInput: Nama host saat ini adalah %i. Ketik apa pun
+    selain 0 untuk menetapkan nama host baru, atau ketik 0 untuk kembali.
+  wwcConfigGUISQLHostnameButton: Ubah SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Berhasil mengubah argumen SQL opsional.
+  wwcConfigConversationSQLPasswordSuccess: Berhasil mengubah kata sandi SQL.
+  wwcConfigConversationSQLPasswordInput: Kata sandi saat ini adalah %i. Ketik apa
+    pun selain 0 untuk mengatur kata sandi baru, atau ketik 0 untuk kembali.
+  wwcConfigGUIToggleSQLSSLButton: Beralih SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Berhasil mengubah nama pengguna SQL.
+  wwcConfigConversationSQLUsernameInput: Nama pengguna saat ini adalah %i. Ketik apa
+    pun selain 0 untuk menetapkan nama pengguna baru, atau ketik 0 untuk kembali.
+  wwcConfigConversationSQLPortSuccess: Berhasil mengubah port SQL.
+  wwcConfigGUISQLUsernameButton: Ubah Nama Pengguna SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Argumen opsional dihapus berhasil.
+  wwcConfigConversationSQLOptionalArgsInput: 'Argumen SQL opsional saat ini adalah:
+    %i. Argumen tipe dipisahkan dengan koma (key=value, key2=value2), atau ketik clear
+    untuk menghapus args saat ini, atau tipe 0 untuk kembali.'
+  wwcConfigConversationSQLDatabaseNameInput: Nama database saat ini adalah %i. Ketik
+    apa pun selain 0 untuk menetapkan nama database baru, atau ketik 0 untuk kembali.
+  wwcConfigGUISQLDatabaseNameButton: Ubah Database SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Berhasil mengubah nama database SQL.
+  wwcConfigConversationFatalAsyncAbort: Batas waktu saat ini untuk membatalkan semua
+    tugas async adalah %i detik. Ketik apa pun di atas 7 untuk mengatur batas waktu
+    baru, atau apa pun di bawahnya untuk kembali.
+  wwcConfigConversationFatalAsyncSuccess: Async tugas batas waktu ditetapkan berhasil.
+  wwcConfigGUIFatalAsyncAbortButton: Ubah Async Task Timeout
+  wwcTimeoutException: Perintah Anda habis waktu. Silakan coba lagi.

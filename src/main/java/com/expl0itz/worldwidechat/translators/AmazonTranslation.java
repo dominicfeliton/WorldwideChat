@@ -10,7 +10,6 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-import org.bukkit.command.CommandSender;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -30,45 +29,33 @@ public class AmazonTranslation {
 	private String inputLang = "";
 	private String outputLang = "";
 
-	private CommandSender sender;
-
 	private boolean isInitializing = false;
 
 	private WorldwideChat main = WorldwideChat.instance;
 
-	public AmazonTranslation(String textToTranslate, String inputLang, String outputLang, CommandSender sender) {
+	public AmazonTranslation(String textToTranslate, String inputLang, String outputLang) {
 		this.textToTranslate = textToTranslate;
 		this.inputLang = inputLang;
 		this.outputLang = outputLang;
-		this.sender = sender;
 	}
 
-	public AmazonTranslation(String accessKeyId, String secretKeyId, String region) {
+	public AmazonTranslation(String accessKeyId, String secretKeyId, String region, boolean isInitializing) {
 		System.setProperty("AMAZON_KEY_ID", accessKeyId);
 		System.setProperty("AMAZON_SECRET_KEY", secretKeyId);
 		System.setProperty("AMAZON_REGION", region);
-		isInitializing = true;
+		this.isInitializing = isInitializing;
 	}
 
-	public String useTranslator() throws TranslatorTimeoutException, TranslatorFailException {
+	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
 		ExecutorService executor = Executors.newSingleThreadExecutor();
 		Future<String> process = executor.submit(new translationTask());
 		String finalOut = "";
-		try {
-			/* Get test translation */
-			finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
-		} catch (TimeoutException | ExecutionException | InterruptedException e) {
-			CommonDefinitions.sendDebugMessage("Amazon Translate Timeout!!");
-			process.cancel(true);
-			if (e instanceof ExecutionException) {
-			    throw new TranslatorFailException(e);	
-			}
-			throw new TranslatorTimeoutException("Timed out while waiting for Amazon Translate response.", e);
-		} finally {
-			executor.shutdownNow();
-		}
-
-		/* Return final result */
+		
+		/* Get test translation */
+		finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
+		process.cancel(true);
+		executor.shutdownNow();
+		
 		return finalOut;
 	}
 

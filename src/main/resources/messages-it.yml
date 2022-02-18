@@ -194,12 +194,6 @@ Messages:
     alla console.
   wwcInventoryError: Errore rilevato con la GUI dell'utente %i. Segnalare il problema
     allo sviluppatore.
-  wwcConfigConversationTranslatorFail: Impossibile abilitare %i.
-  wwcConfigConversationConsoleTranslatorSuccess: L'utente %ho abilitato correttamente
-    %o.
-  wwcConfigConversationTranslatorSuccess: Abilitato con successo %i.
-  wwcConfigConversationConsoleTranslatorFail: L'utente %non è riuscito ad abilitare
-    %o.
   wwcSignTranslationFail: Impossibile tradurre una o più righe sul segno di destinazione.
   wwcBookTranslationFail: Impossibile tradurre una o più pagine nel tuo libro di destinazione.
   wwctiOffTarget: Traduzione dell'articolo disattivata per %i.
@@ -222,7 +216,6 @@ Messages:
   wwcInvalidTranslator: Impostazioni del traduttore non valide. Risolvi questo problema
     nel tuo config.yml o con /wwcc per usare questo plugin.
   wwcConfigGUIEachTranslatorSettings: Configurazione %i
-  wwcConfigGUIToggleButton: Attiva %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat non condona l'utilizzo di /reload. Si prega
     di procedere con cautela.
@@ -281,8 +274,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Modifica del limite di tasso globale
   wwcteOnSender: Traduzione di entità abilitata. Fai clic con il tasto destro su un'entità
     per tradurne il nome
-  wwcInGameObjectTranslationFailCatastrophic: Impossibile tradurre l'oggetto di destinazione.
-  wwcInGameEntityTranslationFailCatastrophic: Impossibile tradurre l'entità target.
   wwcConfigGUIResponseLimitButton: Timeout della risposta del traduttore
   wwcConfigMessageCharLimitEnabled: Limite di caratteri per messaggio impostato su
     %i caratteri.
@@ -346,8 +337,68 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Lingua di output: %i'
   wwcTranslatorAttempt: Tentativo di connettersi al traduttore in config.yml... (Tentativo
     %i/ %o)
-  wwcTimeoutException: ' Il tuo comando è scaduto. Per favore riprova.'
   wwcTimeoutExceptionConsole: Il giocatore %i ha avuto il timeout della richiesta
     più recente. Questo errore non è fatale, ma WorldwideChat dovrebbe essere ricaricato
     se continua a verificarsi.
   wwcGUIPageNumber: 'Numero pagina: %i'
+  wwcConfigSQLFail: Impossibile connettersi a SQL.
+  wwcConfigSQLSuccess: Connesso con successo a SQL!
+  wwcConfigYAMLFallback: Tornando a YAML...
+  wwcConfigGUIToggleSQLButton: Commuta SQL
+  wwcConfigConversationToggleSQLSuccess: SQL è stato attivato correttamente. Ricarica
+    affinché la modifica abbia effetto.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google Translate è stato attivato
+    con successo. Ricarica affinché la modifica abbia effetto.
+  wwcConfigYAMLDefault: Il valore predefinito è YAML per l'archiviazione dei dati.
+  wwcConfigGUISQLMenuButton: Modificare le impostazioni SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Watson Translate è stato attivato
+    con successo. Ricarica affinché la modifica abbia effetto.
+  wwcConfigGUISQLSettings: Configurazione SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Attiva Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Attiva Watson Traduci
+  wwcConfigGUIToggleAmazonTranslateButton: Attiva Amazon Translate
+  wwcConfigGUIStorageSettings: Configurazione dello storage
+  wwcConfigConversationAmazonTranslateToggleSuccess: Amazon Translate è stato attivato
+    con successo. Ricarica affinché la modifica abbia effetto.
+  wwcConfigGUISQLPortButton: Cambia porta SQL
+  wwcConfigGUISQLOptionalArgsButton: Modificare argomenti facoltativi SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL per SQL è stato attivato correttamente.
+  wwcConfigConversationSQLPortInput: La porta corrente è %i. Digitare un valore diverso
+    da 0 per impostare una nuova porta o digitare 0 per tornare indietro.
+  wwcConfigGUISQLPasswordButton: Cambiare la password SQL
+  wwcConfigConversationSQLHostnameSuccess: Modificato con successo il nome host SQL.
+  wwcConfigConversationSQLHostnameInput: Il nome host corrente è %i. Digitare un valore
+    diverso da 0 per impostare un nuovo nome host o digitare 0 per tornare indietro.
+  wwcConfigGUISQLHostnameButton: Cambia nome host SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Modificati con successo gli argomenti
+    SQL facoltativi.
+  wwcConfigConversationSQLPasswordSuccess: Modificata con successo la password SQL.
+  wwcConfigConversationSQLPasswordInput: La password corrente è %i. Digitare un valore
+    diverso da 0 per impostare una nuova password o digitare 0 per tornare indietro.
+  wwcConfigGUIToggleSQLSSLButton: Attiva SSL SQL
+  wwcConfigConversationSQLUsernameSuccess: Modificato con successo il nome utente
+    SQL.
+  wwcConfigConversationSQLUsernameInput: Il nome utente corrente è %i. Digitare un
+    valore diverso da 0 per impostare un nuovo nome utente o digitare 0 per tornare
+    indietro.
+  wwcConfigConversationSQLPortSuccess: Modificata con successo la porta SQL.
+  wwcConfigGUISQLUsernameButton: Cambia nome utente SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Argomenti facoltativi cancellati con
+    successo.
+  wwcConfigConversationSQLOptionalArgsInput: 'Gli argomenti SQL facoltativi correnti
+    sono: %i. Digitare gli argomenti separati da una virgola (chiave=valore, chiave2=valore2),
+    o digitare clear per cancellare gli argomenti correnti o digitare 0 per tornare
+    indietro.'
+  wwcConfigConversationSQLDatabaseNameInput: Il nome del database corrente è %i. Digitare
+    un valore diverso da 0 per impostare un nuovo nome di database o digitare 0 per
+    tornare indietro.
+  wwcConfigGUISQLDatabaseNameButton: Modificare il database SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: È stato cambiato il nome del database
+    SQL.
+  wwcConfigConversationFatalAsyncAbort: Il timeout corrente per interrompere tutte
+    le attività asincrone è di %i secondi. Digita un valore superiore a 7 per impostare
+    un nuovo timeout o qualcosa al di sotto di esso per tornare indietro.
+  wwcConfigConversationFatalAsyncSuccess: Timeout dell'attività asincrona impostato
+    correttamente.
+  wwcConfigGUIFatalAsyncAbortButton: Modifica timeout attività asincrona
+  wwcTimeoutException: Il tuo comando è scaduto. Per favore riprova.

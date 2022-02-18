@@ -193,10 +193,6 @@ Messages:
     конзолата.
   wwcInventoryError: Грешка откриена со GUI на корисник %i. Ве молиме пријавете го
     ова прашање на програмерот.
-  wwcConfigConversationTranslatorFail: Не успеа да се овозможи %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Корисникот %i успешно овозможи %o.
-  wwcConfigConversationTranslatorSuccess: Успешно овозможена %i.
-  wwcConfigConversationConsoleTranslatorFail: Корисникот % Јас не успеа %o.
   wwcSignTranslationFail: Не можам да преведам една или повеќе линии на вашиот целен
     знак.
   wwcBookTranslationFail: Не можам да преведам една или повеќе страници во вашата
@@ -221,7 +217,6 @@ Messages:
   wwcInvalidTranslator: Неважечки поставки за преведувач. Ве молиме поправете го ова
     во вашиот config.yml или со /wwcc да го користите овој приклучок.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурација'
-  wwcConfigGUIToggleButton: Вклучување %i
   wwcConfigGUIWatsonButton: Вотсон
   wwcServerReloadWarning: WorldwideChat не го осучува користењето на /превчитај. Ве
     молиме продолжете со претпазливост.
@@ -281,8 +276,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Промена на глобалната стапка граница
   wwcteOnSender: Преводот на субјектот е Десен-клик на ентитет за да го преведе своето
     име!
-  wwcInGameObjectTranslationFailCatastrophic: Не успеа да преведе цел објект.
-  wwcInGameEntityTranslationFailCatastrophic: Не успеа да преведе целниот ентитет.
   wwcConfigGUIResponseLimitButton: Промена на времето за одговор на преведувачот
   wwcConfigMessageCharLimitEnabled: Ограничување на знаци по порака поставена на %i
     карактери.
@@ -344,7 +337,65 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Излезен јазик: %i'
   wwcTranslatorAttempt: Обид да се поврзете со преведувач во config.yml... (Обид %i/
     %o)
-  wwcTimeoutException: ' Вашата команда темпирана. Ве молиме обидете се повторно.'
   wwcTimeoutExceptionConsole: Играчот %Имав нивните најнови барање тајмаут. Оваа грешка
     не е фатална, но WorldwideChat треба да се превчита ако продолжи да се случува.
   wwcGUIPageNumber: 'Број на страница: %i'
+  wwcConfigSQLFail: Не успеа да се поврзе со SQL.
+  wwcConfigSQLSuccess: Успешно поврзан со SQL!
+  wwcConfigYAMLFallback: Паѓа назад во YAML...
+  wwcConfigGUIToggleSQLButton: Вклучи SQL
+  wwcConfigConversationToggleSQLSuccess: SQL успешно се преточи. Вчитајте повторно
+    за промената да стапи на сила.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Успешно префрлен Google Translate.
+    Вчитајте повторно за промената да стапи на сила.
+  wwcConfigYAMLDefault: Стандардно на YAML за складирање на податоци.
+  wwcConfigGUISQLMenuButton: Променете ги SQL поставките
+  wwcConfigConversationWatsonTranslateToggleSuccess: Успешно се префрли Вотсон Преведете.
+    Вчитајте повторно за промената да стапи на сила.
+  wwcConfigGUISQLSettings: SQL конфигурација
+  wwcConfigGUIToggleGoogleTranslateButton: Префрли Google Преведи
+  wwcConfigGUIToggleWatsonTranslateButton: Вклучи Вотсон Преведи
+  wwcConfigGUIToggleAmazonTranslateButton: Вклучи Амазон Преведи
+  wwcConfigGUIStorageSettings: Конфигурација на складирање
+  wwcConfigConversationAmazonTranslateToggleSuccess: Успешно префрлен Амазон Преведете.
+    Вчитајте повторно за промената да стапи на сила.
+  wwcConfigGUISQLPortButton: Промена на SQL порта
+  wwcConfigGUISQLOptionalArgsButton: Промена на SQL опционални
+  wwcConfigConversationToggleSQLSSLSuccess: SSL за SQL успешно се преточи.
+  wwcConfigConversationSQLPortInput: Тековната порта е %i. Напишете нешто друго освен
+    0 за да поставите нова порта, или напишете 0 за да се вратите назад.
+  wwcConfigGUISQLPasswordButton: Промена на SQL лозинка
+  wwcConfigConversationSQLHostnameSuccess: Успешно го промени името на хост на SQL.
+  wwcConfigConversationSQLHostnameInput: Тековното име на хост е %i. Внесете нешто
+    друго освен 0 за да поставите ново име на хост, или напишете 0 за да се вратите
+    назад.
+  wwcConfigGUISQLHostnameButton: Промена на SQL име на хостик
+  wwcConfigConversationSQLOptionalArgsSuccess: Успешно ги промени опционалните SQL
+    аргументи.
+  wwcConfigConversationSQLPasswordSuccess: Успешно ја смени лозинката на SQL.
+  wwcConfigConversationSQLPasswordInput: Тековната лозинка е %i. Впишете нешто друго
+    освен 0 за да поставите нова лозинка, или напишете 0 за да се вратите назад.
+  wwcConfigGUIToggleSQLSSLButton: Вклучи SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Успешно го промени корисничкото име на
+    SQL.
+  wwcConfigConversationSQLUsernameInput: Тековното корисничко име е %i. Впишете нешто
+    друго освен 0 за да поставите ново корисничко име, или напишете 0 за да се вратите
+    назад.
+  wwcConfigConversationSQLPortSuccess: Успешно го смени SQL портата.
+  wwcConfigGUISQLUsernameButton: Промена на SQL корисничко име
+  wwcConfigConversationSQLOptionalArgsCleared: Изборни аргументи исчистени успешно.
+  wwcConfigConversationSQLOptionalArgsInput: 'Тековните опционални SQL аргументи се:
+    %i. Внесете аргументи одделени со запирка (key=value, key2=value2), или напишете
+    јасно за да ги избришете тековните арги, или напишете 0 за да се вратите назад.'
+  wwcConfigConversationSQLDatabaseNameInput: Тековното име на базата е %i. Внесете
+    нешто друго освен 0 за да поставите ново име на база на податоци, или напишете
+    0 за да се вратите назад.
+  wwcConfigGUISQLDatabaseNameButton: Промени SQL база на податоци
+  wwcConfigConversationSQLDatabaseNameSuccess: Успешно го промени името на SQL базата
+    на податоци.
+  wwcConfigConversationFatalAsyncAbort: Тековниот тајмаут за да ги абортирате сите
+    асинк задачи е %i секунди. Напишете нешто над 7 за да поставите нов тајмаут, или
+    нешто под него за да се вратите назад.
+  wwcConfigConversationFatalAsyncSuccess: Async задача тајмаут постави успешно.
+  wwcConfigGUIFatalAsyncAbortButton: Промена Async Задача тајмаут
+  wwcTimeoutException: Вашата команда темпирана. Ве молиме обидете се повторно.

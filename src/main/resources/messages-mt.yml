@@ -185,10 +185,6 @@ Messages:
   wwcInventoryErrorPlayer: Żball skopert bil-GUI tiegħek. Ġie mibgħut log lill-console.
   wwcInventoryError: Żball skoperti bil GUI ta 'utent %i. Jekk jogħġbok irrapporta
     din il-kwistjoni lill-iżviluppatur.
-  wwcConfigConversationTranslatorFail: Naqas milli jippermettu %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Utent %i b'suċċess ppermettiet %o.
-  wwcConfigConversationTranslatorSuccess: B'suċċess jippermettu %i.
-  wwcConfigConversationConsoleTranslatorFail: Utent %i naqas milli jippermettu %o.
   wwcSignTranslationFail: Kapaċi tittraduċi linja waħda jew aktar fuq is-sinjal fil-mira
     tiegħek.
   wwcBookTranslationFail: Kapaċi tittraduċi paġna waħda jew aktar fil-ktieb fil-mira
@@ -213,7 +209,6 @@ Messages:
   wwcInvalidTranslator: Settings tat-traduttur invalidi. Jekk jogħġbok jiffissaw dan
     fil config.yml tiegħek jew ma '/wwcc għall-użu dan plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurazzjoni'
-  wwcConfigGUIToggleButton: toggle %
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ma jikkonformax l-użu ta '/tagħbija mill-ġdid.
     Jekk jogħġbok ipproċedi b'kawtela.
@@ -272,8 +267,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Bidla tal-Limitu tar-Rata Globali
   wwcteOnSender: Entità traduzzjoni ppermettiet. Ikklikkja fuq il-lemin fuq entità
     biex tittraduċi isimha!
-  wwcInGameObjectTranslationFailCatastrophic: Naqas milli tittraduċi oġġett fil-mira.
-  wwcInGameEntityTranslationFailCatastrophic: Naqas milli tittraduċi l-entità fil-mira.
   wwcConfigGUIResponseLimitButton: Bidla timeout Rispons Translator
   wwcConfigMessageCharLimitEnabled: Limitu Karattru għal kull messaġġ stabbilit għal
     %i karattri.
@@ -335,8 +328,62 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Output Lingwa: %i'
   wwcTranslatorAttempt: Jippruvaw jgħaqqdu lill traduttur fil config.yml... (ATTEMPT
     %i/ %o)
-  wwcTimeoutException: ' Il-kmand tiegħek ittajmjat. Jekk jogħġbok erġa pprova.'
   wwcTimeoutExceptionConsole: Player %i kellhom ħin talba aktar riċenti tagħhom. Dan
     l-iżball mhuwiex fatali, iżda WorldwideChat għandu jerġa 'jitgħabba jekk jibqa'
     jiġri.
   wwcGUIPageNumber: 'Paġna Numru: %'
+  wwcConfigSQLFail: Naqas milli jgħaqqdu l SQL.
+  wwcConfigSQLSuccess: B'suċċess konnessi ma 'SQL!
+  wwcConfigYAMLFallback: Jaqa 'lura għal YAML...
+  wwcConfigGUIToggleSQLButton: SQL toggle
+  wwcConfigConversationToggleSQLSuccess: SQL toggled b'suċċess. Reload biex il-bidla
+    tidħol fis-seħħ.
+  wwcConfigConversationGoogleTranslateToggleSuccess: B'suċċess ittoggled Google Translate.
+    Reload biex il-bidla tidħol fis-seħħ.
+  wwcConfigYAMLDefault: Inadempjenti għal YAML għall-ħażna tad-data.
+  wwcConfigGUISQLMenuButton: Bidla SQL Settings
+  wwcConfigConversationWatsonTranslateToggleSuccess: B'suċċess toggled Watson Ittraduċi.
+    Reload biex il-bidla tidħol fis-seħħ.
+  wwcConfigGUISQLSettings: SQL Konfigurazzjoni
+  wwcConfigGUIToggleGoogleTranslateButton: Ittraduċi Google Ittraduċi
+  wwcConfigGUIToggleWatsonTranslateButton: Ittraduċi Toggle Watson
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Ittraduċi
+  wwcConfigGUIStorageSettings: Ħażna Konfigurazzjoni
+  wwcConfigConversationAmazonTranslateToggleSuccess: B'suċċess toggled Amazon Ittraduċi.
+    Reload biex il-bidla tidħol fis-seħħ.
+  wwcConfigGUISQLPortButton: Bidla SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Bidla SQL Fakultattiv
+  wwcConfigConversationToggleSQLSSLSuccess: SSL għall SQL toggled b'suċċess.
+  wwcConfigConversationSQLPortInput: Il-port attwali huwa %i. Tip xi ħaġa oħra għajr
+    0 li jistabbilixxu port ġdid, jew it-tip 0 li jmorru lura.
+  wwcConfigGUISQLPasswordButton: Bidla Password SQL
+  wwcConfigConversationSQLHostnameSuccess: Biddel b'suċċess il-hostname SQL.
+  wwcConfigConversationSQLHostnameInput: Il hostname attwali huwa %i. Tip xi ħaġa
+    oħra għajr 0 li jistabbilixxu hostname ġdid, jew it-tip 0 li jmorru lura.
+  wwcConfigGUISQLHostnameButton: Bidla SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Biddel b'suċċess l-argumenti SQL fakultattivi.
+  wwcConfigConversationSQLPasswordSuccess: Biddel b'suċċess il-password SQL.
+  wwcConfigConversationSQLPasswordInput: Il-password attwali huwa %i. Ittajpja xi
+    ħaġa oħra għajr 0 biex tissettja password ġdida, jew it-tip 0 biex tmur lura.
+  wwcConfigGUIToggleSQLSSLButton: Toggle SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: B'suċċess biddel il-username SQL.
+  wwcConfigConversationSQLUsernameInput: Il-username attwali huwa %i. Tip xi ħaġa
+    oħra għajr 0 li jistabbilixxu username ġdid, jew it-tip 0 li jmorru lura.
+  wwcConfigConversationSQLPortSuccess: B'suċċess biddel il-port SQL.
+  wwcConfigGUISQLUsernameButton: Bidla SQL Username
+  wwcConfigConversationSQLOptionalArgsCleared: Argumenti fakultattivi kklerjati b'suċċess.
+  wwcConfigConversationSQLOptionalArgsInput: 'L-argumenti attwali SQL fakultattivi
+    huma: %i. argumenti Tip separati minn virgola (ċavetta = valur, key2 = value2),
+    jew tip ċara biex timsaħ il-args attwali, jew it-tip 0 li jmorru lura.'
+  wwcConfigConversationSQLDatabaseNameInput: L-isem database attwali hija %i. Tip
+    xi ħaġa oħra għajr 0 li jiġi stabbilit isem database ġdid, jew it-tip 0 li jmorru
+    lura.
+  wwcConfigGUISQLDatabaseNameButton: Bidla Database SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Biddel b'suċċess l-isem tad-database
+    SQL.
+  wwcConfigConversationFatalAsyncAbort: Il timeout attwali biex abort kompiti kollha
+    async huwa %i sekondi. Ittajpja xi ħaġa 'l fuq minn 7 biex tissettja timeout ġdid,
+    jew xi ħaġa taħtha biex tmur lura.
+  wwcConfigConversationFatalAsyncSuccess: Async timeout kompitu stabbiliti b'suċċess.
+  wwcConfigGUIFatalAsyncAbortButton: Bidla Timeout Task Async
+  wwcTimeoutException: Il-kmand tiegħek ittajmjat. Jekk jogħġbok erġa pprova.

@@ -184,11 +184,6 @@ Messages:
   wwcInventoryErrorPlayer: Greška otkrivena s GUI-jem. Dnevnik je poslan na konzolu.
   wwcInventoryError: Greška otkrivena s GUI-jem korisnika %i. Prijavite ovaj problem
     razvojnom programeru.
-  wwcConfigConversationTranslatorFail: Neuspjelo je mogući %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Korisnik %i uspješno je ostvario
-    %o.
-  wwcConfigConversationTranslatorSuccess: Uspješno je mogući %i.
-  wwcConfigConversationConsoleTranslatorFail: Korisnik %i nije uspio uspjeti %o.
   wwcSignTranslationFail: Nije moguće prevoditi jednu ili više redaka na ciljnom znaku.
   wwcBookTranslationFail: Nije moguće prevoditi jednu ili više stranica u ciljnoj
     knjizi.
@@ -212,7 +207,6 @@ Messages:
   wwcInvalidTranslator: Neispravne postavke prevoditelja. Molimo vas da to popravite
     u svom config.yml ili sa /wwcc da biste koristili ovaj dodatak.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguracija'
-  wwcConfigGUIToggleButton: Prekidanje %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ne odobrava korištenje /reload. Molim vas
     nastavite s oprezom.
@@ -272,8 +266,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Promijeni globalno ograničenje stope
   wwcteOnSender: Prijevod entiteta omogućen. Desnom tipkom miša kliknite entitet za
     prevođenje njegovog imena!
-  wwcInGameObjectTranslationFailCatastrophic: Neuspjelo prevođenje ciljnog objekta.
-  wwcInGameEntityTranslationFailCatastrophic: Nije uspjelo prevoditi ciljni entitet.
   wwcConfigGUIResponseLimitButton: Promijeni vrijeme odziva prevoditelja
   wwcConfigMessageCharLimitEnabled: Ograničenje znakova po poruci postavljenom na
     %i znakova.
@@ -333,7 +325,64 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Izlazni jezik: %i'
   wwcTranslatorAttempt: Pokušaj povezivanja s prevoditeljem u config.yml... (Pokušaj
     %i/ %o)
-  wwcTimeoutException: ' Vaša naredba je istekla. Molim te, probaj ponovo.'
   wwcTimeoutExceptionConsole: Igrač %imao sam njihov najnoviji zahtjev timeout. Ova
     pogreška nije kobna, ali WorldwideChat treba ponovno učitati ako se nastavi događati.
   wwcGUIPageNumber: 'Broj stranice: %i'
+  wwcConfigSQLFail: Povezivanje na SQL nije uspjelo.
+  wwcConfigSQLSuccess: Uspješno spojen na SQL!
+  wwcConfigYAMLFallback: Povratak na YAML...
+  wwcConfigGUIToggleSQLButton: Uključi SQL
+  wwcConfigConversationToggleSQLSuccess: SQL uspješno prešao. Ponovno učitajte kako
+    bi promjena stupila na snagu.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Uspješno prebačen Google Translate.
+    Ponovno učitajte kako bi promjena stupila na snagu.
+  wwcConfigYAMLDefault: Zadano je za YAML za pohranu podataka.
+  wwcConfigGUISQLMenuButton: Promjena SQL postavki
+  wwcConfigConversationWatsonTranslateToggleSuccess: Uspješno prebačen Watson Translate.
+    Ponovno učitajte kako bi promjena stupila na snagu.
+  wwcConfigGUISQLSettings: SQL konfiguracija
+  wwcConfigGUIToggleGoogleTranslateButton: Prebaci Google Prevoditelj
+  wwcConfigGUIToggleWatsonTranslateButton: Uključi Watson prijevod
+  wwcConfigGUIToggleAmazonTranslateButton: Prebaci Amazon prijevod
+  wwcConfigGUIStorageSettings: Konfiguracija pohrane
+  wwcConfigConversationAmazonTranslateToggleSuccess: Uspješno prebačen Amazon Prijevod.
+    Ponovno učitajte kako bi promjena stupila na snagu.
+  wwcConfigGUISQLPortButton: Promjena SQL priključka
+  wwcConfigGUISQLOptionalArgsButton: Promjena SQL neobaveznih argumenata
+  wwcConfigConversationToggleSQLSSLSuccess: SSL za SQL uspješno prešao.
+  wwcConfigConversationSQLPortInput: Trenutni priključak je %i. Upišite bilo što osim
+    0 da biste postavili novi priključak ili upišite 0 da biste se vratili.
+  wwcConfigGUISQLPasswordButton: Promjena SQL lozinke
+  wwcConfigConversationSQLHostnameSuccess: Uspješno je promijenio SQL naziv hosta.
+  wwcConfigConversationSQLHostnameInput: Trenutni naziv hosta je %i. Upišite sve osim
+    0 da biste postavili novi naziv hosta ili upišite 0 da biste se vratili.
+  wwcConfigGUISQLHostnameButton: Promijeni SQL naziv hosta
+  wwcConfigConversationSQLOptionalArgsSuccess: Uspješno je promijenio izborne SQL
+    argumente.
+  wwcConfigConversationSQLPasswordSuccess: Uspješno je promijenio SQL lozinku.
+  wwcConfigConversationSQLPasswordInput: Trenutna lozinka je %i. Upišite bilo što
+    osim 0 da biste postavili novu lozinku ili upišite 0 da biste se vratili.
+  wwcConfigGUIToggleSQLSSLButton: Uključi SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Uspješno je promijenio SQL korisničko ime.
+  wwcConfigConversationSQLUsernameInput: Trenutačno korisničko ime je %i. Upišite
+    bilo što drugo osim 0 da biste postavili novo korisničko ime ili upišite 0 da
+    biste se vratili.
+  wwcConfigConversationSQLPortSuccess: Uspješno je promijenio SQL priključak.
+  wwcConfigGUISQLUsernameButton: Promijeni SQL korisničko ime
+  wwcConfigConversationSQLOptionalArgsCleared: Izborni argumenti uspješno izbrisani.
+  wwcConfigConversationSQLOptionalArgsInput: 'Trenutni neobavezni SQL argumenti su:
+    %i. Upišite argumente odvojene zarezom (ključ=vrijednost, key2=value2) ili upišite
+    jasno da biste obrisali trenutne argove ili upišite 0 da biste se vratili.'
+  wwcConfigConversationSQLDatabaseNameInput: Trenutni naziv baze podataka je %i. Upišite
+    sve osim 0 da biste postavili novi naziv baze podataka ili upišite 0 da biste
+    se vratili.
+  wwcConfigGUISQLDatabaseNameButton: Promijeni SQL bazu podataka
+  wwcConfigConversationSQLDatabaseNameSuccess: Uspješno je promijenio naziv SQL baze
+    podataka.
+  wwcConfigConversationFatalAsyncAbort: Trenutni vremenski ograničenje za prekid svih
+    async zadataka je %i sekundi. Upišite bilo što iznad 7 da biste postavili novo
+    vremensko ograničenje ili bilo što ispod njega da biste se vratili.
+  wwcConfigConversationFatalAsyncSuccess: Async vremensko ograničenje zadatka postavljen
+    uspješno.
+  wwcConfigGUIFatalAsyncAbortButton: Promjena vremenskog ograničenja zadatka Async
+  wwcTimeoutException: Vaša naredba je istekla. Molim te, probaj ponovo.

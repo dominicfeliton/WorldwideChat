@@ -180,11 +180,6 @@ Messages:
     به سیستم به کنسول ارسال شده است.
   wwcInventoryError: خطا تشخیص داده شده با رابط کاربری گرافیکی از %i لطفا این موضوع
     را به توسعه دهنده گزارش دهید.
-  wwcConfigConversationTranslatorFail: در توان %i شکست خورد.
-  wwcConfigConversationConsoleTranslatorSuccess: کاربر %i با موفقیت توان %o را در
-    اختیار شما قرار داد.
-  wwcConfigConversationTranslatorSuccess: با موفقیت توانای %i را در بر گرفت.
-  wwcConfigConversationConsoleTranslatorFail: کاربر %i نتوانست %o را توانسته %o.
   wwcSignTranslationFail: قادر به ترجمه یک یا چند خط روی علامت هدف شما نیست.
   wwcBookTranslationFail: قادر به ترجمه یک یا چند صفحه در کتاب مقصد شما نیست.
   wwctiOffTarget: ترجمه مورد برای %i غیرفعال شد.
@@ -207,7 +202,6 @@ Messages:
   wwcInvalidTranslator: تنظیمات مترجم نامعتبر. لطفا این را در config.yml یا با /wcc
     خود برای استفاده از این افزونه تعمیر کنید.
   wwcConfigGUIEachTranslatorSettings: '%i پیکربندی'
-  wwcConfigGUIToggleButton: درز %i
   wwcConfigGUIWatsonButton: واتسون
   wwcServerReloadWarning: WorldwideChat استفاده از /بارگذاری مجدد را نادیده نمی گیرد.
     لطفا با احتياط ادامه بديد
@@ -265,8 +259,6 @@ Messages:
     با 0 برای بازگشت تایپ کنید.
   wwcConfigGUIGlobalRateLimitButton: تغییر حد نرخ جهانی
   wwcteOnSender: ترجمه موجودیت فعال شد. برای ترجمه نام، بر روی یک نهاد کلیک راست کنید!
-  wwcInGameObjectTranslationFailCatastrophic: ترجمه شیء هدف شکست خورد.
-  wwcInGameEntityTranslationFailCatastrophic: ترجمه موجودیت هدف شکست خورد.
   wwcConfigGUIResponseLimitButton: تغییر زمان پاسخ مترجم
   wwcConfigMessageCharLimitEnabled: حد کاراکتر در هر پیام روی نویسه %i تنظیم شده است.
   wwcteOffTarget: ترجمه موجودیت برای %i غیرفعال شد.
@@ -322,8 +314,63 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 'ترجمه گفتگوی ورودی فعال شد: %i'
   wwctGUIExistingTranslationOutput: 'زبان خروجی: %i'
   wwcTranslatorAttempt: تلاش برای اتصال به مترجم در config.yml... (تلاش٪ من/٪ O)
-  wwcTimeoutException: ' فرمان خود را به پایان رسیده است. لطفا دوباره امتحان کنید'
   wwcTimeoutExceptionConsole: بازیکن %من تا به حال آخرین مهلت درخواست خود را. این
     خطا کشنده نیست، اما WorldwideChat باید دوباره بارگذاری شود اگر آن را همچنان به
     اتفاق می افتد.
   wwcGUIPageNumber: 'شماره صفحه: %i'
+  wwcConfigSQLFail: اتصال به SQL شکست خورد.
+  wwcConfigSQLSuccess: با موفقیت به SQL متصل!
+  wwcConfigYAMLFallback: بازگشت به YAML...
+  wwcConfigGUIToggleSQLButton: ضامن SQL
+  wwcConfigConversationToggleSQLSuccess: SQL با موفقیت جابجا شد. بازنگری برای تغییر
+    به اثر.
+  wwcConfigConversationGoogleTranslateToggleSuccess: با موفقیت ترجمه گوگل را جابجا
+    کرد. بازنگری برای تغییر به اثر.
+  wwcConfigYAMLDefault: برای ذخیره سازی داده ها به YAML پیش فرض شده است.
+  wwcConfigGUISQLMenuButton: تغییر تنظیمات SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: با موفقیت ترجمه واتسون را جابجا
+    کرد. بازنگری برای تغییر به اثر.
+  wwcConfigGUISQLSettings: پیکربندی SQL
+  wwcConfigGUIToggleGoogleTranslateButton: ضامن گوگل ترجمه
+  wwcConfigGUIToggleWatsonTranslateButton: ضامن ترجمه واتسون
+  wwcConfigGUIToggleAmazonTranslateButton: ضامن آمازون ترجمه
+  wwcConfigGUIStorageSettings: پیکربندی ذخیره سازی
+  wwcConfigConversationAmazonTranslateToggleSuccess: با موفقیت ترجمه آمازون را جابجا
+    کرد. بازنگری برای تغییر به اثر.
+  wwcConfigGUISQLPortButton: تغییر پورت SQL
+  wwcConfigGUISQLOptionalArgsButton: تغییر SQL اختیاری آرگومان
+  wwcConfigConversationToggleSQLSSLSuccess: SSL برای SQL با موفقیت جابجا شد.
+  wwcConfigConversationSQLPortInput: پورت فعلی٪ i است. هر چیزی غیر از 0 را تایپ کنید
+    تا یک پورت جدید تنظیم شود، یا 0 را تایپ کنید تا به عقب برگردید.
+  wwcConfigGUISQLPasswordButton: تغییر رمز عبور SQL
+  wwcConfigConversationSQLHostnameSuccess: نام میزبان SQL با موفقیت تغییر کرد.
+  wwcConfigConversationSQLHostnameInput: نام میزبان فعلی %i است. هر چیزی غیر از 0
+    را تایپ کنید تا یک نام میزبان جدید تنظیم شود، یا 0 را تایپ کنید تا به عقب برگردید.
+  wwcConfigGUISQLHostnameButton: تغییر نام میزبان SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: با موفقیت تغییر آرگومان SQL اختیاری
+    است.
+  wwcConfigConversationSQLPasswordSuccess: رمز عبور SQL را با موفقیت تغییر داد.
+  wwcConfigConversationSQLPasswordInput: گذرواژه فعلی %i است. هر چیزی غیر از 0 را
+    برای تنظیم گذرواژه جدید تایپ کنید، یا 0 را تایپ کنید تا به عقب برگردید.
+  wwcConfigGUIToggleSQLSSLButton: ضامن SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: نام کاربری SQL با موفقیت تغییر کرد.
+  wwcConfigConversationSQLUsernameInput: نام کاربری فعلی %i است. هر چیزی غیر از 0
+    را تایپ کنید تا یک نام کاربری جدید تنظیم شود، یا 0 را تایپ کنید تا به عقب برگردید.
+  wwcConfigConversationSQLPortSuccess: پورت SQL را با موفقیت تغییر داد.
+  wwcConfigGUISQLUsernameButton: تغییر نام کاربری SQL
+  wwcConfigConversationSQLOptionalArgsCleared: استدلال اختیاری با موفقیت پاک شد.
+  wwcConfigConversationSQLOptionalArgsInput: 'آرگومانهای SQL اختیاری فعلی عبارتند
+    از: %i. آرگومان نوع جدا شده توسط کاما (key=value, key2=value2), یا نوع روشن برای
+    پاک کردن ارگ های فعلی, یا نوع 0 برای بازگشت.'
+  wwcConfigConversationSQLDatabaseNameInput: نام پایگاه داده فعلی است %i. هر چیزی
+    غیر از 0 را برای تنظیم یک نام پایگاه داده جدید تایپ کنید، یا 0 را تایپ کنید تا
+    به عقب برگردید.
+  wwcConfigGUISQLDatabaseNameButton: تغییر پایگاه داده SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: نام پایگاه داده SQL را با موفقیت تغییر
+    داد.
+  wwcConfigConversationFatalAsyncAbort: مهلت فعلی برای لغو تمام وظایف async است %i
+    ثانیه. نوع هر چیزی بالاتر از 7 به تنظیم ایست جدید، و یا هر چیزی در زیر آن را به
+    بازگشت.
+  wwcConfigConversationFatalAsyncSuccess: ایست وظیفه Async با موفقیت تنظیم شده است.
+  wwcConfigGUIFatalAsyncAbortButton: تغییر Async وظیفه ایست
+  wwcTimeoutException: فرمان خود را به پایان رسیده است. لطفا دوباره امتحان کنید

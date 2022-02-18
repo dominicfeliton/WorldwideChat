@@ -183,11 +183,6 @@ Messages:
     na'ura mai kwakwalwa.
   wwcInventoryError: Kuskuren da aka gano tare da GUI na mai amfani %i. Da fatan za
     a bayar da rahoton wannan batu ga mai
-  wwcConfigConversationTranslatorFail: An kasa kunna %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Mai amfani %i ya samu nasarar kunna
-    %o.
-  wwcConfigConversationTranslatorSuccess: An samu nasarar kunna %i.
-  wwcConfigConversationConsoleTranslatorFail: Mai amfani %i ya kasa kunna %o.
   wwcSignTranslationFail: Ba za a iya fassara ɗaya ko fiye da layi a kan alamar manufa
     ba.
   wwcBookTranslationFail: Ba za a iya fassara ɗaya ko fiye da shafuka a cikin littafinku
@@ -212,7 +207,6 @@ Messages:
   wwcInvalidTranslator: Saitunan fassara mara inganci. Da fatan a gyara wannan a cikin
     daidaitawa.yml ko tare da /wwcc don amfani da wannan plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Configuration'
-  wwcConfigGUIToggleButton: toggle %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ba ya yin amfani da/sake dawowa. Da fatan
     za a cigaba da taka tsantsan
@@ -271,8 +265,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Canja Iyakar Ƙimar Duniya
   wwcteOnSender: An kunna fassarar mahalli. Danna-dama a kan wani mahalli don fassara
     sunansa!
-  wwcInGameObjectTranslationFailCatastrophic: An kasa fassara abin da aka yi nufi.
-  wwcInGameEntityTranslationFailCatastrophic: An kasa fassara mahallin manufa.
   wwcConfigGUIResponseLimitButton: Canja lokacin amsawar Mai fassara
   wwcConfigMessageCharLimitEnabled: Ƙayyadadden haruffa ta kowane saƙo da aka saita
   wwcteOffTarget: Fassarar mahalli da aka kashe domin %i.
@@ -329,8 +321,62 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Harshen fitarwa: %i'
   wwcTranslatorAttempt: Ƙoƙarin haɗi zuwa mai fassara a cikin config.yml... (yunkuri
     %i/ %o)
-  wwcTimeoutException: ' Umurninka ya ƙare. Da fatan za a sake gwadawa.'
   wwcTimeoutExceptionConsole: Dan wasa %i na da lokacin buƙatarsu ta baya-bayan nan.
     Wannan kuskure ba m, amma WorldwideChat ya kamata a sake saukewa idan ya ci gaba
     da faruwa.
   wwcGUIPageNumber: 'Lambar Shafi: %i'
+  wwcConfigSQLFail: An kasa haɗi zuwa SQL.
+  wwcConfigSQLSuccess: An yi nasarar haɗawa da SQL!
+  wwcConfigYAMLFallback: Fadowa ta koma YAML...
+  wwcConfigGUIToggleSQLButton: toggle SQL
+  wwcConfigConversationToggleSQLSuccess: SQL toggled nasara. Sake dawowa don canjin
+    don yin tasiri.
+  wwcConfigConversationGoogleTranslateToggleSuccess: An yi nasarar toggled Google
+    Translate. Sake dawowa don canjin don yin tasiri.
+  wwcConfigYAMLDefault: An cire shi zuwa YAML don ajiyar bayanai.
+  wwcConfigGUISQLMenuButton: Canja Saitunan SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: An yi nasarar toggled Watson
+    Translate. Sake dawowa don canjin don yin tasiri.
+  wwcConfigGUISQLSettings: Sigar SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Togle Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: TGLE Watson Translate
+  wwcConfigGUIToggleAmazonTranslateButton: Fassara Amazon
+  wwcConfigGUIStorageSettings: Saitunan ajiya
+  wwcConfigConversationAmazonTranslateToggleSuccess: An yi nasarar toggled Amazon
+    Translate. Sake dawowa don canjin don yin tasiri.
+  wwcConfigGUISQLPortButton: Canja tashar SQL
+  wwcConfigGUISQLOptionalArgsButton: Canja SQL Zaɓin muhawara
+  wwcConfigConversationToggleSQLSSLSuccess: SSL don SQL toggled nasara.
+  wwcConfigConversationSQLPortInput: Tashar jiragen ruwa na yanzu shine %i. Rubuta
+    wani abu banda 0 don saita sabon tashar jiragen ruwa, ko rubuta 0 don komawa.
+  wwcConfigGUISQLPasswordButton: Canja kalmar sirri na SQL
+  wwcConfigConversationSQLHostnameSuccess: Yi nasarar canza sunan mai watsa shiri
+    na SQL.
+  wwcConfigConversationSQLHostnameInput: Sunan mai watsa shiri na yanzu shine %i.
+    Rubuta wani abu banda 0 don saita sabon sunan mai masauki, ko rubuta 0 don komawa.
+  wwcConfigGUISQLHostnameButton: Canja SQL Mai watsa shiri
+  wwcConfigConversationSQLOptionalArgsSuccess: Yi nasarar canza muhawarar SQL na zaɓi.
+  wwcConfigConversationSQLPasswordSuccess: Canza nasarar canza kalmar sirri na SQL.
+  wwcConfigConversationSQLPasswordInput: Kalmar wucewa ta yanzu ita ce %i. Rubuta
+    wani abu banda 0 don saita sabon kalmar sirri, ko rubuta 0 don komawa.
+  wwcConfigGUIToggleSQLSSLButton: toggle SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Canza nasarar canza sunan mai amfani na
+    SQL.
+  wwcConfigConversationSQLUsernameInput: Sunan mai amfani na yanzu shine %i. Rubuta
+    wani abu banda 0 don saita sabon sunan mai amfani, ko rubuta 0 don komawa.
+  wwcConfigConversationSQLPortSuccess: Canza nasarar canza tashar SQL.
+  wwcConfigGUISQLUsernameButton: Canja mai amfani na SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Muhawarar zaɓi ta share nasara.
+  wwcConfigConversationSQLOptionalArgsInput: 'Muhawarar SQL da aka zaɓa yanzu sune:
+    %i. Rubuta muhawarar da aka raba ta hanyar waƙafi (key=darajar, key2=darajar 2),
+    ko rubuta bayyane don goge rags na yanzu, ko rubuta 0 don komawa.'
+  wwcConfigConversationSQLDatabaseNameInput: Sunan bayanai na yanzu shine %i. Rubuta
+    wani abu banda 0 don saita sabon sunan bayanai, ko rubuta 0 don komawa.
+  wwcConfigGUISQLDatabaseNameButton: Canja SQL database
+  wwcConfigConversationSQLDatabaseNameSuccess: Samun nasarar canza sunan SQL database.
+  wwcConfigConversationFatalAsyncAbort: Lokaci na yanzu don ɗaukar duk ayyukan Sync
+    shine %i seconds. Rubuta wani abu sama da 7 don saita sabon lokaci, ko wani abu
+    da ke ƙasa da shi don komawa.
+  wwcConfigConversationFatalAsyncSuccess: Lokacin aiki na Async ya saita nasara.
+  wwcConfigGUIFatalAsyncAbortButton: Canja lokaci na Async
+  wwcTimeoutException: Umurninka ya ƙare. Da fatan za a sake gwadawa.

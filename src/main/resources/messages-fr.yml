@@ -195,12 +195,6 @@ Messages:
     a été envoyé à la console.
   wwcInventoryError: Erreur détectée avec l'interface graphique de l'utilisateur %i.
     Veuillez signaler ce problème au développeur.
-  wwcConfigConversationTranslatorFail: Impossible d'activer %i.
-  wwcConfigConversationConsoleTranslatorSuccess: L'utilisateur %i a correctement activé
-    %o.
-  wwcConfigConversationTranslatorSuccess: L'activation réussie de %i.
-  wwcConfigConversationConsoleTranslatorFail: L'utilisateur %i n'a pas réussi à activer
-    %o.
   wwcSignTranslationFail: Impossible de traduire une ou plusieurs lignes sur votre
     signe cible.
   wwcBookTranslationFail: Impossible de traduire une ou plusieurs pages de votre livre
@@ -225,7 +219,6 @@ Messages:
   wwcInvalidTranslator: Paramètres de traducteur non valides. Veuillez corriger cela
     dans votre config.yml ou avec /wwcc pour utiliser ce plugin.
   wwcConfigGUIEachTranslatorSettings: Configuration %i
-  wwcConfigGUIToggleButton: Bascule %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ne cause pas l'utilisation de /reload. Veuillez
     procéder avec précaution.
@@ -286,8 +279,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Modifier la limite de taux globale
   wwcteOnSender: La traduction des entités est activée. Cliquez avec le bouton droit
     de la souris sur une entité pour traduire son nom!
-  wwcInGameObjectTranslationFailCatastrophic: Impossible de traduire l'objet cible.
-  wwcInGameEntityTranslationFailCatastrophic: Impossible de traduire l'entité cible.
   wwcConfigGUIResponseLimitButton: Changer le délai de réponse du traducteur
   wwcConfigMessageCharLimitEnabled: La limite de caractères par message est fixée
     à %i caractères.
@@ -351,8 +342,70 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Langue de sortie: %i'
   wwcTranslatorAttempt: Tentative de connexion au traducteur dans config.yml... (Tentative
     %i/ %o)
-  wwcTimeoutException: ' Votre commande a expiré. Veuillez réessayer.'
   wwcTimeoutExceptionConsole: Le dernier délai de requête du joueur %i a été dépassé.
     Cette erreur n'est pas fatale, mais WorldwideChat doit être rechargé si elle continue
     à se produire.
   wwcGUIPageNumber: 'Numéro de page: %i'
+  wwcConfigSQLFail: Impossible de se connecter à SQL.
+  wwcConfigSQLSuccess: Connexion réussie à SQL!
+  wwcConfigYAMLFallback: Revenir à YAML...
+  wwcConfigGUIToggleSQLButton: Basculer SQL
+  wwcConfigConversationToggleSQLSuccess: SQL a basculé avec succès. Rechargez pour
+    que la modification prenne effet.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google Translate a été activé
+    avec succès. Rechargez pour que la modification prenne effet.
+  wwcConfigYAMLDefault: La valeur par défaut est YAML pour le stockage des données.
+  wwcConfigGUISQLMenuButton: Modifier les paramètres SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Watson Translate a été activé
+    avec succès. Rechargez pour que la modification prenne effet.
+  wwcConfigGUISQLSettings: Configuration SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Traduire
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Translate
+  wwcConfigGUIStorageSettings: Configuration du stockage
+  wwcConfigConversationAmazonTranslateToggleSuccess: Vous avez réussi à basculer Amazon
+    Translate. Rechargez pour que la modification prenne effet.
+  wwcConfigGUISQLPortButton: Changer le port SQL
+  wwcConfigGUISQLOptionalArgsButton: Modifier les arguments facultatifs SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL pour SQL a basculé avec succès.
+  wwcConfigConversationSQLPortInput: Le port actuel est %i. Entrez autre chose que
+    0 pour définir un nouveau port, ou tapez 0 pour revenir en arrière.
+  wwcConfigGUISQLPasswordButton: Changer le mot de passe
+  wwcConfigConversationSQLHostnameSuccess: Le nom d'hôte SQL a été correctement modifié.
+  wwcConfigConversationSQLHostnameInput: Le nom d'hôte actuel est %i. Entrez autre
+    chose que 0 pour définir un nouveau nom d'hôte, ou tapez 0 pour revenir en arrière.
+  wwcConfigGUISQLHostnameButton: Changer le nom d'hôte SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Les arguments SQL facultatifs ont été
+    correctement modifiés.
+  wwcConfigConversationSQLPasswordSuccess: Le mot de passe SQL a été correctement
+    modifié.
+  wwcConfigConversationSQLPasswordInput: Le mot de passe actuel est %i. Entrez autre
+    chose que 0 pour définir un nouveau mot de passe ou tapez 0 pour revenir en arrière.
+  wwcConfigGUIToggleSQLSSLButton: Basculer SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Le nom d'utilisateur SQL a été correctement
+    modifié.
+  wwcConfigConversationSQLUsernameInput: Le nom d'utilisateur actuel est %i. Entrez
+    autre chose que 0 pour définir un nouveau nom d'utilisateur, ou tapez 0 pour revenir
+    en arrière.
+  wwcConfigConversationSQLPortSuccess: Le port SQL a été correctement modifié.
+  wwcConfigGUISQLUsernameButton: Changer le nom utilisateur SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Arguments facultatifs effacés correctement.
+  wwcConfigConversationSQLOptionalArgsInput: 'Les arguments SQL optionnels actuels
+    sont: %i. Tapez des arguments séparés par une virgule (clé=valeur, touche2=valeur2),
+    ou tapez clear pour effacer les arguments actuels, ou tapez 0 pour revenir en
+    arrière.'
+  wwcConfigConversationSQLDatabaseNameInput: Le nom de la base de données actuelle
+    est %i. Entrez autre que 0 pour définir un nouveau nom de base de données, ou
+    tapez 0 pour revenir en arrière.
+  wwcConfigGUISQLDatabaseNameButton: Changer la base de données
+  wwcConfigConversationSQLDatabaseNameSuccess: Modification du nom de la base de données
+    SQL.
+  wwcConfigConversationFatalAsyncAbort: Le délai d'attente actuel pour abandonner
+    toutes les tâches asynchrones est de %i secondes. Tapez tout ce qui est supérieur
+    à 7 pour définir un nouveau délai d'expiration ou tout ce qui se trouve en dessous
+    pour revenir en arrière.
+  wwcConfigConversationFatalAsyncSuccess: Le délai d'expiration de la tâche asynchrone
+    a été correctement défini
+  wwcConfigGUIFatalAsyncAbortButton: Modification du délai d'expiration des tâches
+    asynchrones
+  wwcTimeoutException: Votre commande a expiré. Veuillez réessayer.

@@ -180,10 +180,6 @@ Messages:
   wwcInventoryErrorPlayer: Greška otkrivena sa GUI. Dnevnik je poslat na konzolu.
   wwcInventoryError: Greška otkrivena sa GUI korisnika %i. Molimo prijavite ovaj problem
     programeru.
-  wwcConfigConversationTranslatorFail: Nije uspelo da omogućite %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Korisnik %i uspešno omogućio %o.
-  wwcConfigConversationTranslatorSuccess: Uspešno omogućeno %i.
-  wwcConfigConversationConsoleTranslatorFail: Korisnik %ja nije uspeo da omogući %o.
   wwcSignTranslationFail: Nije moguće prevesti jednu ili više linija na vašem ciljnom
     znaku.
   wwcBookTranslationFail: Nije moguće prevesti jednu ili više stranica u vašoj ciljnoj
@@ -208,7 +204,6 @@ Messages:
   wwcInvalidTranslator: Nevažeća podešavanja prevodioca. Molimo vas da popravite ovo
     u konfiguraciju.iml ili sa /vvcc da koristite ovaj dodatak.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguracija'
-  wwcConfigGUIToggleButton: Prebaci %i
   wwcConfigGUIWatsonButton: Votson
   wwcServerReloadWarning: VorldVideChat ne odobrava korišćenje /reload. Molimo vas
     da nastavite sa oprezom.
@@ -267,8 +262,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Promenite ograničenje globalne stope
   wwcteOnSender: Entitetski prevod omogućen. Desnim tasterom miša kliknite na entitet
     da prevede svoje ime!
-  wwcInGameObjectTranslationFailCatastrophic: Nije uspelo prevesti ciljni objekat.
-  wwcInGameEntityTranslationFailCatastrophic: Nije uspelo prevesti ciljni entitet.
   wwcConfigGUIResponseLimitButton: Promena Prevodilac Odziv Timeout
   wwcConfigMessageCharLimitEnabled: Ograničenje karaktera po poruci postavljenim na
     %i znakova.
@@ -325,7 +318,62 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Izlazni jezik: %i'
   wwcTranslatorAttempt: Pokušaj da se poveže sa prevodiocem u config.iml... (Pokušaj
     %i/ %o)
-  wwcTimeoutException: ' Vaša komanda istekla. Molim vas pokušajte ponovo.'
   wwcTimeoutExceptionConsole: Igrač %imao sam svoj najnoviji zahtev timeout. Ova greška
     nije fatalna, ali širom svetaChat treba ponovo učitati ako se nastavi da se desi.
   wwcGUIPageNumber: 'Broj stranice: %i'
+  wwcConfigSQLFail: Nije uspelo da se poveže sa SKL.
+  wwcConfigSQLSuccess: Uspešno povezan sa SKL!
+  wwcConfigYAMLFallback: Padajući nazad u IAML...
+  wwcConfigGUIToggleSQLButton: Toggle SKL
+  wwcConfigConversationToggleSQLSuccess: SKL uspešno toggled. Reload za promenu da
+    stupi na snagu.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Uspešno toggled Google Translate.
+    Reload za promenu da stupi na snagu.
+  wwcConfigYAMLDefault: Defaulted IAML za skladištenje podataka.
+  wwcConfigGUISQLMenuButton: Promenite SKL podešavanja
+  wwcConfigConversationWatsonTranslateToggleSuccess: Uspešno toggled Vatson Translate.
+    Reload za promenu da stupi na snagu.
+  wwcConfigGUISQLSettings: SKL Konfiguracija
+  wwcConfigGUIToggleGoogleTranslateButton: Prebaci Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Vatson Prevod
+  wwcConfigGUIToggleAmazonTranslateButton: Prebaci Amazon Prevod
+  wwcConfigGUIStorageSettings: Konfiguracija skladištenje
+  wwcConfigConversationAmazonTranslateToggleSuccess: Uspešno toggled Amazon Translate.
+    Reload za promenu da stupi na snagu.
+  wwcConfigGUISQLPortButton: Promenite SKL Port
+  wwcConfigGUISQLOptionalArgsButton: Promenite SKL Opcioni argumenti
+  wwcConfigConversationToggleSQLSSLSuccess: SSL za SKL toggled uspešno.
+  wwcConfigConversationSQLPortInput: Trenutni port je %i. Upišite bilo šta drugo osim
+    0 da biste postavili novi port, ili tip 0 da se vratite nazad.
+  wwcConfigGUISQLPasswordButton: Promenite SKL lozinku
+  wwcConfigConversationSQLHostnameSuccess: Uspešno je promenio naziv SKL hosta.
+  wwcConfigConversationSQLHostnameInput: Trenutno ime hosta je %i. Ukucajte bilo šta
+    drugo osim 0 da biste postavili novo ime hosta ili tip 0 da biste se vratili.
+  wwcConfigGUISQLHostnameButton: Promenite SKL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Uspešno promenio opcione SKL argumente.
+  wwcConfigConversationSQLPasswordSuccess: Uspešno promenio SKL lozinku.
+  wwcConfigConversationSQLPasswordInput: Trenutna lozinka je %i. Upišite bilo šta
+    drugo osim 0 da biste postavili novu lozinku ili tip 0 da biste se vratili.
+  wwcConfigGUIToggleSQLSSLButton: Toggle SKL SSL
+  wwcConfigConversationSQLUsernameSuccess: Uspešno je promenio SKL korisničko ime.
+  wwcConfigConversationSQLUsernameInput: Trenutno korisničko ime je %i. Upišite bilo
+    šta drugo osim 0 da biste postavili novo korisničko ime ili tip 0 da biste se
+    vratili.
+  wwcConfigConversationSQLPortSuccess: Uspešno promenio SKL port.
+  wwcConfigGUISQLUsernameButton: Promenite SKL korisničko ime
+  wwcConfigConversationSQLOptionalArgsCleared: Opcioni argumenti uspešno izbrisani.
+  wwcConfigConversationSQLOptionalArgsInput: 'Trenutni opcioni SKL argumenti su: %i.
+    Argumenti tipa odvojeni zarezom (ključ = vrednost, ključ2=value2), ili tip jasno
+    da obriše trenutne args, ili tip 0 da se vrati nazad.'
+  wwcConfigConversationSQLDatabaseNameInput: Trenutno ime baze podataka je %i. Upišite
+    bilo šta drugo osim 0 da biste postavili novo ime baze podataka ili tip 0 da biste
+    se vratili.
+  wwcConfigGUISQLDatabaseNameButton: Promenite SKL bazu podataka
+  wwcConfigConversationSQLDatabaseNameSuccess: Uspešno je promenio naziv SKL baze
+    podataka.
+  wwcConfigConversationFatalAsyncAbort: Trenutni timeout za prekid svih asinc zadataka
+    je %i sekundi. Ukucajte bilo šta iznad 7 da podesite novi timeout, ili bilo šta
+    ispod njega da se vrati.
+  wwcConfigConversationFatalAsyncSuccess: Asinc zadatak timeout set uspešno.
+  wwcConfigGUIFatalAsyncAbortButton: Promenite Asinc Task Timeout
+  wwcTimeoutException: Vaša komanda istekla. Molim vas pokušajte ponovo.

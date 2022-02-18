@@ -185,11 +185,6 @@ Messages:
     അയച്ചു.
   wwcInventoryError: ഉപയോക്താവിന്റെ %i ന്റെ GUI ഉപയോഗിച്ചുള്ള പിശക് കണ്ടെത്തിയത് %i
     ഈ പ്രശ്നം ഡവലപ്പർക്ക് റിപ്പോർട്ട് ചെയ്യുക.
-  wwcConfigConversationTranslatorFail: '%i പ്രവർത്തനക്ഷമമാക്കുന്നതിൽ പരാജയപ്പെട്ടു.'
-  wwcConfigConversationConsoleTranslatorSuccess: ഉപയോക്താവ് % ഞാന് %o വിജയകരമായി പ്രാപ്തമാക്കി.
-  wwcConfigConversationTranslatorSuccess: വിജയകരമായി പ്രാപ്തമാക്കുക %i.
-  wwcConfigConversationConsoleTranslatorFail: ഉപയോക്താവ് %o പ്രവർത്തനക്ഷമമാക്കുന്നതിൽ
-    ഞാൻ പരാജയപ്പെട്ടു.
   wwcSignTranslationFail: നിങ്ങളുടെ ടാർഗെറ്റ് ചിഹ്നത്തിൽ ഒന്നോ അതിലധികമോ വരികൾ വിവർത്തനം
     ചെയ്യാൻ കഴിയുന്നില്ല.
   wwcBookTranslationFail: നിങ്ങളുടെ ടാർഗെറ്റ് പുസ്തകത്തിൽ ഒന്നോ അതിലധികമോ പേജുകൾ
@@ -214,7 +209,6 @@ Messages:
   wwcInvalidTranslator: അസാധുവായ വിവർത്തകൻ ക്രമീകരണങ്ങൾ. ഈ പ്ലഗിൻ ഉപയോഗിക്കുന്നതിന്
     നിങ്ങളുടെ കോൺഫിഗറേഷനിൽ അല്ലെങ്കിൽ /wwcc ഉപയോഗിച്ച് ഇത് പരിഹരിക്കുക.
   wwcConfigGUIEachTranslatorSettings: '%i കോൺഫിഗറേഷൻ'
-  wwcConfigGUIToggleButton: ടോഗിൾ % 1
   wwcConfigGUIWatsonButton: വാട്സൺ
   wwcServerReloadWarning: ഛത്/റീലോഡ് ഉപയോഗം ചൊംദൊനെ ഇല്ല. ദയവായി ജാഗ്രതയോടെ തുടരുക.
   wwcConfigEnabledDebugMode: പ്രവർത്തനക്ഷമമാക്കി ഡീബഗ് മോഡ്. നിങ്ങൾ ഒരു ഡവലപ്പർ അല്ലെങ്കിൽ
@@ -271,8 +265,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: ആഗോള നിരക്ക് പരിധി മാറ്റുക
   wwcteOnSender: എന്റിറ്റി വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. അതിന്റെ പേര് വിവർത്തനം ചെയ്യുന്നതിന്
     ഒരു എന്റിറ്റിയിൽ റൈറ്റ് ക്ലിക്ക് ചെയ്യുക!
-  wwcInGameObjectTranslationFailCatastrophic: ലക്ഷ്യം ഒബ്ജക്റ്റ് വിവർത്തനം പരാജയപ്പെട്ടു.
-  wwcInGameEntityTranslationFailCatastrophic: ടാർഗെറ്റ് എന്റിറ്റി വിവർത്തനം പരാജയപ്പെട്ടു.
   wwcConfigGUIResponseLimitButton: വിവർത്തകന്റെ പ്രതികരണ സമയപരിധി മാറ്റുക
   wwcConfigMessageCharLimitEnabled: ഓരോ സന്ദേശത്തിനും പ്രതീക പരിധി %i പ്രതീകങ്ങൾ സജ്ജമാക്കി.
   wwcteOffTarget: എന്റിറ്റി വിവർത്തനം %i ന് അപ്രാപ്തമാക്കി.
@@ -334,8 +326,65 @@ Messages:
   wwctGUIExistingTranslationOutput: 'ഔട്ട്പുട്ട് ഭാഷ: %i'
   wwcTranslatorAttempt: config.yml ൽ വിവർത്തകനിലേക്ക് കണക്റ്റുചെയ്യാൻ ശ്രമിക്കുന്നു...
     (ശ്രമം %i/ %o)
-  wwcTimeoutException: ' നിങ്ങളുടെ കമാൻഡ് സമയമെടുത്തു. ദയവായി വീണ്ടും ശ്രമിക്കുക.'
   wwcTimeoutExceptionConsole: പ്ലേയർ % എനിക്ക് അവരുടെ ഏറ്റവും പുതിയ അഭ്യർത്ഥന സമയപരിധി
     ഉണ്ടായിരുന്നു. ഈ പിശക് മാരകമായ അല്ല, എന്നാൽ വൊര്ല്ദ്വിദെഛത് അത് സംഭവിക്കാൻ തുടരുകയാണെങ്കിൽ
     റീലോഡ് വേണം.
   wwcGUIPageNumber: 'പേജ് നമ്പർ: %i'
+  wwcConfigSQLFail: SQL- ലേക്ക് കണക്റ്റുചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.
+  wwcConfigSQLSuccess: വിജയകരമായി SQL- ലേക്ക് കണക്റ്റുചെയ്തു!
+  wwcConfigYAMLFallback: തിരികെ YAML ലേക്ക് വീണു...
+  wwcConfigGUIToggleSQLButton: ടോഗിൾ SQL
+  wwcConfigConversationToggleSQLSuccess: SQL വിജയകരമായി ടോഗിൾ ചെയ്തു. മാറ്റം പ്രാബല്യത്തിൽ
+    വരുത്താൻ വീണ്ടും ലോഡുചെയ്യുക.
+  wwcConfigConversationGoogleTranslateToggleSuccess: വിജയകരമായി Google വിവർത്തനം ടോഗിൾ
+    ചെയ്തു. മാറ്റം പ്രാബല്യത്തിൽ വരുത്താൻ വീണ്ടും ലോഡുചെയ്യുക.
+  wwcConfigYAMLDefault: ഡാറ്റ സംഭരണത്തിനായി YAML- ലേക്ക് സ്ഥിരത.
+  wwcConfigGUISQLMenuButton: SQL ക്രമീകരണങ്ങൾ മാറ്റുക
+  wwcConfigConversationWatsonTranslateToggleSuccess: വാട്സൺ വിവർത്തനം വിജയകരമായി ടോഗിൾ
+    ചെയ്തു. മാറ്റം പ്രാബല്യത്തിൽ വരുത്താൻ വീണ്ടും ലോഡുചെയ്യുക.
+  wwcConfigGUISQLSettings: SQL കോൺഫിഗറേഷൻ
+  wwcConfigGUIToggleGoogleTranslateButton: Google വിവർത്തനം ടോഗിൾ ചെയ്യുക
+  wwcConfigGUIToggleWatsonTranslateButton: വാട്സൺ വിവർത്തനം ടോഗിൾ
+  wwcConfigGUIToggleAmazonTranslateButton: ആമസോൺ വിവർത്തനം ടോഗിൾ
+  wwcConfigGUIStorageSettings: സ്റ്റോറേജ് കോൺഫിഗറേഷൻ
+  wwcConfigConversationAmazonTranslateToggleSuccess: ആമസോൺ വിവർത്തനം വിജയകരമായി ടോഗിൾ
+    ചെയ്തു. മാറ്റം പ്രാബല്യത്തിൽ വരുത്താൻ വീണ്ടും ലോഡുചെയ്യുക.
+  wwcConfigGUISQLPortButton: SQL പോർട്ട് മാറ്റുക
+  wwcConfigGUISQLOptionalArgsButton: SQL ഓപ്ഷണൽ ആർഗ്യുമെന്റുകൾ മാറ്റുക
+  wwcConfigConversationToggleSQLSSLSuccess: SQL- നായുള്ള SSL വിജയകരമായി ടോഗിൾ ചെയ്തു.
+  wwcConfigConversationSQLPortInput: നിലവിലെ പോർട്ട് %i ആണ്. ഒരു പുതിയ പോർട്ട് സജ്ജമാക്കാൻ
+    0 അല്ലാതെ മറ്റൊന്നും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigGUISQLPasswordButton: SQL പാസ്വേഡ് മാറ്റുക
+  wwcConfigConversationSQLHostnameSuccess: വിജയകരമായി SQL ഹോസ്റ്റ്നെയിം മാറ്റി.
+  wwcConfigConversationSQLHostnameInput: നിലവിലെ ഹോസ്റ്റ്നെയിം %i ആണ്. ഒരു പുതിയ ഹോസ്റ്റ്നെയിം
+    സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റൊന്നും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ്
+    ചെയ്യുക.
+  wwcConfigGUISQLHostnameButton: SQL ഹോസ്റ്റ്നെയിം മാറ്റുക
+  wwcConfigConversationSQLOptionalArgsSuccess: വിജയകരമായി ഓപ്ഷണൽ SQL വാദങ്ങൾ മാറ്റി.
+  wwcConfigConversationSQLPasswordSuccess: SQL പാസ്വേഡ് വിജയകരമായി മാറ്റി.
+  wwcConfigConversationSQLPasswordInput: നിലവിലെ പാസ്വേഡ് %i ആണ്. ഒരു പുതിയ പാസ്വേഡ്
+    സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റൊന്നും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ്
+    ചെയ്യുക.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL ടോഗിൾ
+  wwcConfigConversationSQLUsernameSuccess: SQL ഉപയോക്തൃനാമം വിജയകരമായി മാറ്റി.
+  wwcConfigConversationSQLUsernameInput: നിലവിലെ ഉപയോക്തൃനാമം %i ആണ്. ഒരു പുതിയ ഉപയോക്തൃനാമം
+    സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റൊന്നും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ്
+    ചെയ്യുക.
+  wwcConfigConversationSQLPortSuccess: വിജയകരമായി SQL പോർട്ട് മാറ്റി.
+  wwcConfigGUISQLUsernameButton: SQL ഉപയോക്തൃനാമം മാറ്റുക
+  wwcConfigConversationSQLOptionalArgsCleared: ഓപ്ഷണൽ വാദങ്ങൾ വിജയകരമായി മായ്ച്ചു.
+  wwcConfigConversationSQLOptionalArgsInput: 'നിലവിലെ ഓപ്ഷണൽ SQL വാദങ്ങൾ ഇവയാണ്: %i.
+    ഒരു കോമ (key=value, key2=value2) ഉപയോഗിച്ച് വേർതിരിച്ച വാദങ്ങൾ ടൈപ്പ് ചെയ്യുക,
+    അല്ലെങ്കിൽ നിലവിലെ ആർഗുകൾ തുടച്ചുമാറ്റാൻ ക്ലിയർ ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ
+    പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
+  wwcConfigConversationSQLDatabaseNameInput: നിലവിലെ ഡാറ്റാബേസിന്റെ പേര് %i ആണ്. ഒരു
+    പുതിയ ഡാറ്റാബേസ് നാമം സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റൊന്നും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ
+    തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigGUISQLDatabaseNameButton: SQL ഡാറ്റാബേസ് മാറ്റുക
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL ഡാറ്റാബേസ് നാമം വിജയകരമായി മാറ്റി.
+  wwcConfigConversationFatalAsyncAbort: എല്ലാ അസമമായ ജോലികളും അലസിപ്പിക്കുന്നതിനുള്ള
+    നിലവിലെ സമയപരിധി %i സെക്കൻഡ് ആണ്. ഒരു പുതിയ സമയപരിധി സജ്ജമാക്കാൻ 7 ന് മുകളിലുള്ള
+    എന്തും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ താഴെയുള്ള എന്തും.
+  wwcConfigConversationFatalAsyncSuccess: അസമമായ ടാസ്ക് ടൈംഔട്ട് വിജയകരമായി സജ്ജമാക്കി.
+  wwcConfigGUIFatalAsyncAbortButton: അസമമായ ടാസ്ക് ടൈംഔട്ട് മാറ്റുക
+  wwcTimeoutException: നിങ്ങളുടെ കമാൻഡ് സമയമെടുത്തു. ദയവായി വീണ്ടും ശ്രമിക്കുക.

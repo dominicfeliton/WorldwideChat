@@ -50,14 +50,10 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 	public void init(Player player, InventoryContents contents) {
 		try {
 			/* Default white stained glass borders for inactive, yellow if player has existing translation session */
-			ItemStack customDefaultBorders = XMaterial.WHITE_STAINED_GLASS_PANE.parseItem();
+			WWCInventoryManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
 			if (!main.getActiveTranslator(targetPlayerUUID).getInLangCode().equals("")) {
-				customDefaultBorders = XMaterial.YELLOW_STAINED_GLASS_PANE.parseItem();
+				WWCInventoryManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
 			}
-			ItemMeta defaultBorderMeta = customDefaultBorders.getItemMeta();
-			defaultBorderMeta.setDisplayName(" ");
-			customDefaultBorders.setItemMeta(defaultBorderMeta);
-			contents.fillBorders(ClickableItem.empty(customDefaultBorders));
 			
 			/* Init current active translator */
 			ActiveTranslator currTranslator = main.getActiveTranslator(targetPlayerUUID);
@@ -109,26 +105,18 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 
 			/* Bottom Left Option: Previous Page */
 			if (!pagination.isFirst()) {
-				contents.set(5, 2,
-						ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"),
-								e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player,
-										pagination.previous().getPage())));
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID)});
 			} else {
-				contents.set(5, 2,
-						ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"),
-								e -> WWCTranslateGUISourceLanguage.getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player)));
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {WWCTranslateGUISourceLanguage.getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID)});
 			}
 
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {
-				contents.set(5, 6,
-						ClickableItem.of(WWCInventoryManager.getCommonButton("Next"),
-								e -> getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID).open(player,
-										pagination.next().getPage())));
+				WWCInventoryManager.setCommonButton(5, 6, player, contents, "Next", new Object[] {getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID)});
 			}
 			
 			/* Last Option: Page Number */
-			contents.set(5, 8, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {pagination.getPage() + 1 + ""}), e -> {}));
+			WWCInventoryManager.setCommonButton(5, 8, player, contents, "Page Number", new String[] {pagination.getPage() + 1 + ""});
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

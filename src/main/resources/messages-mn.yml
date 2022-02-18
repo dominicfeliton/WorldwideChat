@@ -187,10 +187,6 @@ Messages:
     байна.
   wwcInventoryError: Алдаа хэрэглэгч %i нь GUI нь илэрсэн байна. хөгжүүлэгчид энэ
     асуудлыг тайлагнах уу.
-  wwcConfigConversationTranslatorFail: '%i идэвхжүүлж чадаагүй.'
-  wwcConfigConversationConsoleTranslatorSuccess: Хэрэглэгч % би %o амжилттай идэвхжүүлсэн.
-  wwcConfigConversationTranslatorSuccess: '%i амжилттай идэвхжүүлсэн.'
-  wwcConfigConversationConsoleTranslatorFail: Хэрэглэгч % би %o идэвхжүүлж чадаагүй.
   wwcSignTranslationFail: Таны зорилтот тэмдэг дээр нэг буюу хэд хэдэн мөрийг орчуулах
     боломжгүй.
   wwcBookTranslationFail: Таны зорилтот номонд нэг буюу хэд хэдэн хуудсыг орчуулах
@@ -215,7 +211,6 @@ Messages:
   wwcInvalidTranslator: Буруу орчуулагч тохиргоо. Үүнийг өөрийн config.yml эсвэл /wwcc
     ашиглан энэ залгаасыг ашиглана уу.
   wwcConfigGUIEachTranslatorSettings: '%i Тохиргоо'
-  wwcConfigGUIToggleButton: Toggle % 1
   wwcConfigGUIWatsonButton: Ватсон
   wwcServerReloadWarning: WorldWedeChat нь /reload-ийн хэрэглээг зөвшөөрдөггүй. болгоомжтой
     үргэлжлүүлнэ үү.
@@ -275,8 +270,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Глобал ханшийн хязгаарыг өөрчлөх
   wwcteOnSender: Аж ахуйн нэгжийн орчуулга идэвхжсэн. Нэрээ орчуулахын тулд аж ахуйн
     нэгж дээр хулганы баруун товчийг дараад
-  wwcInGameObjectTranslationFailCatastrophic: зорилтот объект орчуулах чадаагүй.
-  wwcInGameEntityTranslationFailCatastrophic: зорилтот аж ахуйн нэгж орчуулж чадаагүй.
   wwcConfigGUIResponseLimitButton: Орчуулагч хариу Хугацаа өөрчлөх
   wwcConfigMessageCharLimitEnabled: Зурвас бүрт тэмдэгтийн хязгаар нь %i тэмдэгтүүд.
   wwcteOffTarget: Аж ахуйн нэгжийн орчуулга %i нь идэвхгүй.
@@ -335,8 +328,66 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Гаралтын Хэл: %i'
   wwcTranslatorAttempt: config.yml орчуулагчтай холбогдохыг оролдох... ( %i/ %o оролдох
     %)
-  wwcTimeoutException: ' Таны тушаал гарч хугацаатай. Дахин оролдоно уу.'
   wwcTimeoutExceptionConsole: Тоглогчийн % Би тэдний хамгийн сүүлийн хүсэлт хугацаа
     байсан. Энэ алдаа нь үхлийн аюултай биш юм, гэхдээ WorldwideChat энэ нь юу хэвээр
     байгаа бол дахин ачаалах хэрэгтэй.
   wwcGUIPageNumber: 'Хуудасны дугаар: %i'
+  wwcConfigSQLFail: SQL холбогдож чадаагүй.
+  wwcConfigSQLSuccess: Амжилттай SQL холбогдсон!
+  wwcConfigYAMLFallback: YAML руу буцаж унах...
+  wwcConfigGUIToggleSQLButton: SQL Toggle
+  wwcConfigConversationToggleSQLSuccess: SQL амжилттай toggled. Өөрчлөлтийг хүчин
+    төгөлдөр болгохын тулд дахин ачаална.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Амжилттай Google Translate toggled.
+    Өөрчлөлтийг хүчин төгөлдөр болгохын тулд дахин ачаална.
+  wwcConfigYAMLDefault: Өгөгдөл хадгалах YAML нь анхдагчлан.
+  wwcConfigGUISQLMenuButton: SQL Тохиргоо өөрчлөх
+  wwcConfigConversationWatsonTranslateToggleSuccess: Амжилттай ватсон орчуулах toggled.
+    Өөрчлөлтийг хүчин төгөлдөр болгохын тулд дахин ачаална.
+  wwcConfigGUISQLSettings: SQL тохиргоо
+  wwcConfigGUIToggleGoogleTranslateButton: Google Toggle орчуулах
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Ватсон орчуулах
+  wwcConfigGUIToggleAmazonTranslateButton: Amazon Toggle орчуулах
+  wwcConfigGUIStorageSettings: Хадгалалтын тохиргоо
+  wwcConfigConversationAmazonTranslateToggleSuccess: Амжилттай Amazon Translate toggled.
+    Өөрчлөлтийг хүчин төгөлдөр болгохын тулд дахин ачаална.
+  wwcConfigGUISQLPortButton: SQL Порт өөрчлөлт
+  wwcConfigGUISQLOptionalArgsButton: SQL Нэмэлт нэмэлт өгөгдлүүдийг өөрчлөх
+  wwcConfigConversationToggleSQLSSLSuccess: SQL нь SSL амжилттай toggled.
+  wwcConfigConversationSQLPortInput: Одоогийн порт нь %i байна. 0-ээс өөр ямар нэг
+    зүйлийг бичнэ үү шинэ порт тохируулахын тулд эсвэл 0-г бичнэ үү.
+  wwcConfigGUISQLPasswordButton: SQL Нууц үг өөрчлөх
+  wwcConfigConversationSQLHostnameSuccess: Амжилттай SQL хостын нэрийг өөрчилсөн.
+  wwcConfigConversationSQLHostnameInput: Одоогийн хостын нэр нь %i байна. 0-ээс өөр
+    зүйлийг бичнэ үү шинэ хостын нэр тохируулахын тулд эсвэл 0-г бичнэ үү.
+  wwcConfigGUISQLHostnameButton: SQL хостын нэрийг өөрчлөх
+  wwcConfigConversationSQLOptionalArgsSuccess: Амжилттай нэмэлт SQL нэмэлт өгөгдлүүдийг
+    өөрчилсөн.
+  wwcConfigConversationSQLPasswordSuccess: Амжилттай SQL нууц үгээ өөрчилсөн.
+  wwcConfigConversationSQLPasswordInput: Одоогийн нууц үг нь %i байна. 0-ээс бусад
+    зүйлийг бичнэ үү шинэ нууц үг тохируулахын тулд эсвэл 0-ийг бичээд буцаж очихыг
+    бичнэ үү.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL түлхүүр
+  wwcConfigConversationSQLUsernameSuccess: Амжилттай SQL хэрэглэгчийн нэрийг өөрчилсөн.
+  wwcConfigConversationSQLUsernameInput: Одоогийн хэрэглэгчийн нэр нь %i байна. 0-ээс
+    өөр ямар нэг зүйлийг бичнэ үү шинэ хэрэглэгчийн нэр тохируулахын тулд эсвэл 0-г
+    бичнэ үү.
+  wwcConfigConversationSQLPortSuccess: Амжилттай SQL портыг өөрчилсөн.
+  wwcConfigGUISQLUsernameButton: SQL хэрэглэгчийн нэрийг өөрчлөх
+  wwcConfigConversationSQLOptionalArgsCleared: Нэмэлт нэмэлт өгөгдлүүд нь амжилттай
+    цэвэрлэсэн.
+  wwcConfigConversationSQLOptionalArgsInput: 'Одоогийн нэмэлт SQL аргументууд нь:
+    %i байна. таслалаар тусгаарлагдсан аргументуудыг бичнэ (key=value, key2=value2),
+    эсвэл одоогийн аргануудыг арчихын тулд тодорхой бичнэ үү, эсвэл 0-г бичнэ үү.'
+  wwcConfigConversationSQLDatabaseNameInput: Одоогийн өгөгдлийн сангийн нэр нь %i
+    байна. 0-ээс өөр ямар нэг зүйлийг бичнэ үү өгөгдлийн сангийн шинэ нэрийг тохируулах
+    эсвэл 0-ийг бичээд буцаж яваарай.
+  wwcConfigGUISQLDatabaseNameButton: SQL мэдээллийн санг өөрчлөх
+  wwcConfigConversationSQLDatabaseNameSuccess: Амжилттай SQL мэдээллийн сангийн нэрийг
+    өөрчилсөн.
+  wwcConfigConversationFatalAsyncAbort: Бүх async ажлуудыг зогсоох одоогийн хугацаа
+    нь %i секунд байна. 7-аас дээш зүйлийг бичнэ үү шинэ цагийг тохируулах, эсвэл
+    доор нь ямар нэгэн зүйл буцааж яваарай.
+  wwcConfigConversationFatalAsyncSuccess: Async ажил хугацаа амжилттай тогтоосон.
+  wwcConfigGUIFatalAsyncAbortButton: Async Даалгавар Хугацааны өөрчлөлт
+  wwcTimeoutException: Таны тушаал гарч хугацаатай. Дахин оролдоно уу.

@@ -185,11 +185,6 @@ Messages:
   wwcInventoryErrorPlayer: Greška otkrivena sa vašim GUI. Zapisnik je poslan na konzolu.
   wwcInventoryError: Greška otkrivena pomoću GUI korisnika %i. Molimo prijavite ovaj
     problem razvojnom programeru.
-  wwcConfigConversationTranslatorFail: Nije uspjelo omogućiti %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Korisnik %i je uspješno omogućio
-    %o.
-  wwcConfigConversationTranslatorSuccess: Uspješno omogućeno %i.
-  wwcConfigConversationConsoleTranslatorFail: Korisnik %i nije uspio omogućiti %o.
   wwcSignTranslationFail: Nije moguće prevesti jednu ili više redaka na ciljnom znaku.
   wwcBookTranslationFail: Nije moguće prevesti jednu ili više stranica u ciljnoj knjizi.
   wwctiOffTarget: Prevođenje stavke onemogućeno za %i.
@@ -212,7 +207,6 @@ Messages:
   wwcInvalidTranslator: Nevažeća podešavanja prevoditelja. Molimo vas da to popravite
     u svoj config.yml ili s /wwcc koristiti ovaj dodatak.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguracija'
-  wwcConfigGUIToggleButton: Prebaci %i
   wwcConfigGUIWatsonButton: Votsone
   wwcServerReloadWarning: WorldwideChat ne odobrava korištenje /ponovno učitavanje.
     Molimo vas da nastavite s oprezom.
@@ -271,8 +265,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Promijenite ograničenje globalne stope
   wwcteOnSender: Omogućen entitetski prijevod. Desnom tipkom miša kliknite entitet
     da biste prevesti njegovo ime!
-  wwcInGameObjectTranslationFailCatastrophic: Neuspjelo prevođenje ciljnog objekta.
-  wwcInGameEntityTranslationFailCatastrophic: Neuspješno prevođenje ciljnog entiteta.
   wwcConfigGUIResponseLimitButton: Promjena vremenskog odziva prevoditelja
   wwcConfigMessageCharLimitEnabled: Ograničenje znakova po poruci postavljenoj na
     %i znakova.
@@ -331,8 +323,65 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Izlazni jezik: %i'
   wwcTranslatorAttempt: Pokušaj povezivanja sa prevoditeljem u config.yml... (Pokušaj
     %i/ %o)
-  wwcTimeoutException: ' Vaša komanda je istekao. Molim vas pokušajte ponovo.'
   wwcTimeoutExceptionConsole: Igrač %imao sam najnoviji vremenski ograničenje zahtjeva.
     Ova greška nije fatalna, ali WorldwideChat treba ponovo učitati ako se i dalje
     događa.
   wwcGUIPageNumber: 'Broj stranice: %i'
+  wwcConfigSQLFail: Povezivanje sa SQL nije uspjelo.
+  wwcConfigSQLSuccess: Uspješno povezan sa SQL!
+  wwcConfigYAMLFallback: Padajući natrag u YAML...
+  wwcConfigGUIToggleSQLButton: Prebaci SQL
+  wwcConfigConversationToggleSQLSuccess: SQL uspješno je prevučen. Ponovno učitajte
+    kako bi promjena stupila na snagu.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Uspješno prevučen Google Translate.
+    Ponovno učitajte kako bi promjena stupila na snagu.
+  wwcConfigYAMLDefault: Defaulted YAML za pohranu podataka.
+  wwcConfigGUISQLMenuButton: Promjena SQL postavki
+  wwcConfigConversationWatsonTranslateToggleSuccess: Uspješno toggled Watson Translate.
+    Ponovno učitajte kako bi promjena stupila na snagu.
+  wwcConfigGUISQLSettings: SQL konfiguracija
+  wwcConfigGUIToggleGoogleTranslateButton: Prebaci Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Prijevod
+  wwcConfigGUIToggleAmazonTranslateButton: Prebaci Amazon Prijevod
+  wwcConfigGUIStorageSettings: Konfiguracija memorije
+  wwcConfigConversationAmazonTranslateToggleSuccess: Uspješno toggled Amazon Translate.
+    Ponovno učitajte kako bi promjena stupila na snagu.
+  wwcConfigGUISQLPortButton: Promjena SQL porta
+  wwcConfigGUISQLOptionalArgsButton: Promjena SQL izbornih argumenata
+  wwcConfigConversationToggleSQLSSLSuccess: SSL za SQL uspješno je prevučen.
+  wwcConfigConversationSQLPortInput: Trenutni port je %i. Upišite bilo što drugo osim
+    0 da biste postavili novi port ili upišite 0 da biste se vratili.
+  wwcConfigGUISQLPasswordButton: Promjena SQL lozinke
+  wwcConfigConversationSQLHostnameSuccess: Uspješno je promijenio SQL naziv hosta.
+  wwcConfigConversationSQLHostnameInput: Trenutni naziv hosta je %i. Upišite bilo
+    što drugo osim 0 da biste postavili novi naziv hosta ili upišite 0 da biste se
+    vratili.
+  wwcConfigGUISQLHostnameButton: Promijenite naziv hosta SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Uspješno promijenio opcionalne SQL
+    argumente.
+  wwcConfigConversationSQLPasswordSuccess: Uspješno je promijenio SQL lozinku.
+  wwcConfigConversationSQLPasswordInput: Trenutna lozinka je %i. Upišite sve osim
+    0 da biste postavili novu lozinku ili upišite 0 da biste se vratili.
+  wwcConfigGUIToggleSQLSSLButton: Prebaci SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Uspješno je promijenio SQL korisničko ime.
+  wwcConfigConversationSQLUsernameInput: Trenutno korisničko ime je %i. Upišite sve
+    osim 0 da biste postavili novo korisničko ime ili upišite 0 da biste se vratili.
+  wwcConfigConversationSQLPortSuccess: Uspješno je promijenio SQL port.
+  wwcConfigGUISQLUsernameButton: Promijenite SQL korisničko ime
+  wwcConfigConversationSQLOptionalArgsCleared: Opcionalni argumenti uspješno su se
+    očistili.
+  wwcConfigConversationSQLOptionalArgsInput: 'Trenutni opcionalni argumenti SQL su:
+    %i. Argumenti tipa odvojeni zarezom (ključ = vrijednost, key2=value2) ili tipkajte
+    jasno da biste izbrisali trenutne argove ili upišite 0 da biste se vratili.'
+  wwcConfigConversationSQLDatabaseNameInput: Trenutni naziv baze podataka je %i. Upišite
+    bilo što drugo osim 0 da biste postavili novo ime baze podataka ili upišite 0
+    da biste se vratili.
+  wwcConfigGUISQLDatabaseNameButton: Promjena SQL baze podataka
+  wwcConfigConversationSQLDatabaseNameSuccess: Uspješno je promijenio naziv SQL baze
+    podataka.
+  wwcConfigConversationFatalAsyncAbort: Trenutni vremenski ograničenje za prekid svih
+    async zadataka je %i sekundi. Upišite sve iznad 7 da biste postavili novo vremensko
+    ograničenje ili bilo što ispod njega da biste se vratili.
+  wwcConfigConversationFatalAsyncSuccess: Aync zadatak timeout postavljen uspješno.
+  wwcConfigGUIFatalAsyncAbortButton: Promjena vremena zadatka Aync
+  wwcTimeoutException: Vaša komanda je istekao. Molim vas pokušajte ponovo.

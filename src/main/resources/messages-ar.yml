@@ -173,10 +173,6 @@ Messages:
     سجل إلى وحدة التحكم.
   wwcInventoryError: تم اكتشاف خطأ باستخدام واجهة المستخدم الرسومية للمستخدم %i. الرجاء
     إبلاغ المطور عن هذه المشكلة.
-  wwcConfigConversationTranslatorFail: فشل في تمكين %i.
-  wwcConfigConversationConsoleTranslatorSuccess: لقد مكّن %o المستخدم %o بنجاح.
-  wwcConfigConversationTranslatorSuccess: تم تمكين %i بنجاح.
-  wwcConfigConversationConsoleTranslatorFail: فشل المستخدم %i في تمكين %o.
   wwcSignTranslationFail: غير قادر على ترجمة سطر واحد أو أكثر على علامة الهدف.
   wwcBookTranslationFail: غير قادر على ترجمة صفحة واحدة أو أكثر في كتابك المستهدف.
   wwctiOffTarget: تم تعطيل ترجمة العنصر لـ %i.
@@ -199,7 +195,6 @@ Messages:
   wwcInvalidTranslator: إعدادات المترجم غير صالحة. يرجى إصلاح هذا في config.yml الخاص
     بك أو مع/wwcc لاستخدام هذا البرنامج المساعد.
   wwcConfigGUIEachTranslatorSettings: تكوين %i
-  wwcConfigGUIToggleButton: تبديل إلى %i
   wwcConfigGUIWatsonButton: واتسون
   wwcServerReloadWarning: لا تتغاضى WorldwideChat عن استخدام/إعادة التحميل. يرجى المتابعة
     بحذر.
@@ -254,8 +249,6 @@ Messages:
     أكبر من 0 لتعيين قيمة جديدة، أو اكتب أي شيء أقل من أو يساوي 0 للعودة.
   wwcConfigGUIGlobalRateLimitButton: تغيير حد السعر العالمي
   wwcteOnSender: تم تمكين ترجمة الكيان. انقر بزر الماوس الأيمن على كيان لترجمة اسمه!
-  wwcInGameObjectTranslationFailCatastrophic: فشل ترجمة الكائن الهدف.
-  wwcInGameEntityTranslationFailCatastrophic: فشل ترجمة الكيان المستهدف.
   wwcConfigGUIResponseLimitButton: تغيير مهلة استجابة المترجم
   wwcConfigMessageCharLimitEnabled: تم تعيين حد الأحرف لكل رسالة إلى أحرف %i.
   wwcteOffTarget: تم تعطيل ترجمة الكيان لـ %i.
@@ -306,7 +299,58 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 'تمكين ترجمة الدردشة الواردة: %i'
   wwctGUIExistingTranslationOutput: 'لغة الإخراج: %i'
   wwcTranslatorAttempt: محاولة الاتصال بالمترجم في config.yml... (محاولة %i/ %o)
-  wwcTimeoutException: ' انتهت مهلة الأمر الخاص بك. يرجى المحاولة مرة أخرى.'
   wwcTimeoutExceptionConsole: كان لدى اللاعب %i أحدث مهلة طلب. هذا الخطأ ليس قاتلاً،
     ولكن يجب إعادة تحميل WorldwideChat إذا استمر حدوثه.
   wwcGUIPageNumber: 'رقم الصفحة: %i'
+  wwcConfigSQLFail: فشل الاتصال بـ SQL.
+  wwcConfigSQLSuccess: تم الاتصال بنجاح بـ SQL!
+  wwcConfigYAMLFallback: العودة إلى YAML...
+  wwcConfigGUIToggleSQLButton: تبديل SQL
+  wwcConfigConversationToggleSQLSuccess: تم تبديل SQL بنجاح. أعد التحميل حتى يصبح
+    التغيير ساري المفعول.
+  wwcConfigConversationGoogleTranslateToggleSuccess: تم تبديل ترجمة Google بنجاح.
+    أعد التحميل حتى يصبح التغيير ساري المفعول.
+  wwcConfigYAMLDefault: افتراضيًا إلى YAML لتخزين البيانات.
+  wwcConfigGUISQLMenuButton: تغيير إعدادات SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: نجحت في تبديل Watson Translate.
+    أعد التحميل حتى يصبح التغيير ساري المفعول.
+  wwcConfigGUISQLSettings: تكوين SQL
+  wwcConfigGUIToggleGoogleTranslateButton: تبديل ترجمة جوجل
+  wwcConfigGUIToggleWatsonTranslateButton: تبديل ترجمة واتسون
+  wwcConfigGUIToggleAmazonTranslateButton: تبديل ترجمة أمازون
+  wwcConfigGUIStorageSettings: تكوين التخزين
+  wwcConfigConversationAmazonTranslateToggleSuccess: تم تبديل ترجمة أمازون بنجاح.
+    أعد التحميل حتى يصبح التغيير ساري المفعول.
+  wwcConfigGUISQLPortButton: تغيير منفذ SQL
+  wwcConfigGUISQLOptionalArgsButton: تغيير الوسيطات الاختيارية SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL لـ SQL تبديل بنجاح.
+  wwcConfigConversationSQLPortInput: المنفذ الحالي هو %i. اكتب أي شيء آخر غير 0 لتعيين
+    منفذ جديد، أو اكتب 0 للعودة.
+  wwcConfigGUISQLPasswordButton: تغيير كلمة مرور SQL
+  wwcConfigConversationSQLHostnameSuccess: تم تغيير اسم مضيف SQL بنجاح.
+  wwcConfigConversationSQLHostnameInput: اسم المضيف الحالي هو %i. اكتب أي شيء آخر
+    غير 0 لتعيين اسم مضيف جديد، أو اكتب 0 للعودة.
+  wwcConfigGUISQLHostnameButton: تغيير اسم مضيف SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: تم تغيير وسيطات SQL الاختيارية بنجاح.
+  wwcConfigConversationSQLPasswordSuccess: تم تغيير كلمة مرور SQL بنجاح.
+  wwcConfigConversationSQLPasswordInput: كلمة المرور الحالية هي %i. اكتب أي شيء بخلاف
+    0 لتعيين كلمة مرور جديدة، أو اكتب 0 للرجوع إليها.
+  wwcConfigGUIToggleSQLSSLButton: تبديل SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: تم تغيير اسم مستخدم SQL بنجاح.
+  wwcConfigConversationSQLUsernameInput: اسم المستخدم الحالي هو %i. اكتب أي شيء آخر
+    غير 0 لتعيين اسم مستخدم جديد، أو اكتب 0 للرجوع إليه.
+  wwcConfigConversationSQLPortSuccess: تم تغيير منفذ SQL بنجاح.
+  wwcConfigGUISQLUsernameButton: تغيير اسم مستخدم SQL
+  wwcConfigConversationSQLOptionalArgsCleared: تم مسح الوسيطات الاختيارية بنجاح.
+  wwcConfigConversationSQLOptionalArgsInput: 'وسيطات SQL الاختيارية الحالية هي: %i.
+    اكتب وسيطات مفصولة بفاصلة (key=value، key2=value2)، أو اكتب clear لمسح args الحالية،
+    أو اكتب 0 للعودة.'
+  wwcConfigConversationSQLDatabaseNameInput: اسم قاعدة البيانات الحالي هو %i. اكتب
+    أي شيء آخر غير 0 لتعيين اسم قاعدة بيانات جديد، أو اكتب 0 للرجوع إليه.
+  wwcConfigGUISQLDatabaseNameButton: تغيير قاعدة بيانات SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: تم تغيير اسم قاعدة بيانات SQL بنجاح.
+  wwcConfigConversationFatalAsyncAbort: المهلة الحالية لإجهاض جميع المهام غير المتزامنة
+    هي %i ثانية. اكتب أي شيء فوق 7 لتعيين مهلة جديدة، أو أي شيء أسفله للعودة.
+  wwcConfigConversationFatalAsyncSuccess: تم تعيين مهلة مهمة غير متزامنة بنجاح.
+  wwcConfigGUIFatalAsyncAbortButton: تغيير مهلة المهام غير المتزامنة
+  wwcTimeoutException: انتهت مهلة الأمر الخاص بك. يرجى المحاولة مرة أخرى.

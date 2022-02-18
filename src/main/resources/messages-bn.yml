@@ -179,11 +179,6 @@ Messages:
     লগ পাঠানো হয়েছে।
   wwcInventoryError: ব্যবহারকারী %i এর GUI এর সাথে ত্রুটি সনাক্ত করা হয়েছে। অনুগ্রহ
     করে ডেভেলপারের কাছে এই সমস্যা রিপোর্ট করুন।
-  wwcConfigConversationTranslatorFail: '%1$i সক্রিয় করতে ব্যর্থ।'
-  wwcConfigConversationConsoleTranslatorSuccess: ব্যবহারকারী %2 %o সফলভাবে সক্রিয়
-    করা হয়েছে।
-  wwcConfigConversationTranslatorSuccess: '%i সফলভাবে সক্রিয় করা হয়েছে।'
-  wwcConfigConversationConsoleTranslatorFail: ব্যবহারকারী %2 %o সক্রিয় করতে ব্যর্থ।
   wwcSignTranslationFail: আপনার টার্গেট সাইন এ এক বা একাধিক লাইন অনুবাদ করতে অক্ষম।
   wwcBookTranslationFail: আপনার টার্গেট বইয়ের এক বা একাধিক পৃষ্ঠা অনুবাদ করতে ব্যর্থ।
   wwctiOffTarget: '%i এর জন্য আইটেমের অনুবাদ নিষ্ক্রিয় করা হয়েছে।'
@@ -206,7 +201,6 @@ Messages:
   wwcInvalidTranslator: অনুবাদক সেটিংস অবৈধ। এই প্লাগইনটি ব্যবহার করার জন্য অনুগ্রহ
     করে আপনার config.yml অথবা /wwcc এর সাথে এটি ঠিক করুন।
   wwcConfigGUIEachTranslatorSettings: '%i কনফিগারেশন'
-  wwcConfigGUIToggleButton: '%i টগল করুন'
   wwcConfigGUIWatsonButton: ওয়াটসন
   wwcServerReloadWarning: ওয়ার্ল্ডউইডচ্যাট/রিলোডের ব্যবহারকে সমর্থন করে না। অনুগ্রহ
     করে সাবধানতার সাথে এগিয়ে যান।
@@ -266,8 +260,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: গ্লোবাল রেট লিমিট পরিবর্তন করুন
   wwcteOnSender: সত্তা অনুবাদ সক্রিয়। তার নাম অনুবাদ করার জন্য একটি সত্তার উপর ডান-ক্লিক
     করুন!
-  wwcInGameObjectTranslationFailCatastrophic: টার্গেট অবজেক্ট অনুবাদ করতে ব্যর্থ।
-  wwcInGameEntityTranslationFailCatastrophic: টার্গেট সত্তা অনুবাদ করতে ব্যর্থ।
   wwcConfigGUIResponseLimitButton: অনুবাদক প্রতিক্রিয়া সময়সীমা পরিবর্তন করুন
   wwcConfigMessageCharLimitEnabled: প্রতি বার্তা %i অক্ষরে সেট করা অক্ষরের সীমা।
   wwcteOffTarget: '%i এর জন্য সত্তা অনুবাদ নিষ্ক্রিয় করা হয়েছে'
@@ -326,9 +318,62 @@ Messages:
   wwctGUIExistingTranslationOutput: 'আউটপুট ভাষা: %i'
   wwcTranslatorAttempt: config.yml এ অনুবাদকের সাথে সংযোগ স্থাপনের চেষ্টা করা হচ্ছে...
     (প্রচেষ্টা %i/ %o)
-  wwcTimeoutException: ' আপনার কমান্ডের সময়সীমা শেষ হয়ে গেছে। অনুগ্রহ করে পুনরায় চেষ্টা
-    করুন।'
   wwcTimeoutExceptionConsole: খেলোয়াড় %i তাদের সাম্প্রতিক অনুরোধের সময়সীমা ছিল।
     এই ত্রুটিটি মারাত্মক নয়, তবে বিশ্বব্যাপী চ্যাট পুনরায় লোড করা উচিত যদি এটি ঘটতে
     থাকে।
   wwcGUIPageNumber: 'পৃষ্ঠা সংখ্যা: %i'
+  wwcConfigSQLFail: SQL- র সাথে সংযোগ করতে ব্যর্থ।
+  wwcConfigSQLSuccess: সফলভাবে SQL সাথে সংযুক্ত!
+  wwcConfigYAMLFallback: YAML ফিরে পতিত...
+  wwcConfigGUIToggleSQLButton: এসকিউএল টগল
+  wwcConfigConversationToggleSQLSuccess: এসকিউএল সফলভাবে টগল হয়েছে। পরিবর্তন কার্যকর
+    হওয়ার জন্য পুনরায় লোড করুন।
+  wwcConfigConversationGoogleTranslateToggleSuccess: সফলভাবে গুগল অনুবাদ টগল পরিবর্তন
+    কার্যকর হওয়ার জন্য পুনরায় লোড করুন।
+  wwcConfigYAMLDefault: ডাটা স্টোরেজের জন্য YAML তে ডিফল্ট করা হয়েছে।
+  wwcConfigGUISQLMenuButton: এসকিউএল সেটিংস পরিবর্তন করুন
+  wwcConfigConversationWatsonTranslateToggleSuccess: সফলভাবে ওয়াটসন অনুবাদ টগল করেছেন।
+    পরিবর্তন কার্যকর হওয়ার জন্য পুনরায় লোড করুন।
+  wwcConfigGUISQLSettings: SQL কনফিগারেশন
+  wwcConfigGUIToggleGoogleTranslateButton: গুগল অনুবাদ টগল
+  wwcConfigGUIToggleWatsonTranslateButton: ওয়াটসন অনুবাদ টগল করুন
+  wwcConfigGUIToggleAmazonTranslateButton: আমাজন অনুবাদ টগল করুন
+  wwcConfigGUIStorageSettings: সংগ্রহস্থল কনফিগারেশন
+  wwcConfigConversationAmazonTranslateToggleSuccess: সফলভাবে টগল আমাজন অনুবাদ। পরিবর্তন
+    কার্যকর হওয়ার জন্য পুনরায় লোড করুন।
+  wwcConfigGUISQLPortButton: এসকিউএল পোর্ট পরিবর্তন করুন
+  wwcConfigGUISQLOptionalArgsButton: SQL ঐচ্ছিক আর্গুমেন্ট পরিবর্তন করুন
+  wwcConfigConversationToggleSQLSSLSuccess: এসকিউএল এর জন্য SSL সফলভাবে টগল করা হয়েছে।
+  wwcConfigConversationSQLPortInput: বর্তমান পোর্টটি হল %i। নতুন পোর্ট নির্ধারণের
+    জন্য ০ ছাড়া অন্য কিছু টাইপ করুন অথবা ফিরে যেতে ০ টাইপ করুন।
+  wwcConfigGUISQLPasswordButton: এসকিউএল পাসওয়ার্ড পরিবর্তন করুন
+  wwcConfigConversationSQLHostnameSuccess: সফলভাবে এসকিউএল হোস্টনাম পরিবর্তন করা হয়েছে।
+  wwcConfigConversationSQLHostnameInput: বর্তমান হোস্টনাম হল %i। নতুন হোস্টনাম নির্ধারণের
+    জন্য ০ ছাড়া অন্য কিছু টাইপ করুন অথবা ফিরে যেতে ০ টাইপ করুন।
+  wwcConfigGUISQLHostnameButton: এসকিউএল হোস্টনাম পরিবর্তন করুন
+  wwcConfigConversationSQLOptionalArgsSuccess: সফলভাবে ঐচ্ছিক SQL আর্গুমেন্ট পরিবর্তন।
+  wwcConfigConversationSQLPasswordSuccess: সফলভাবে SQL পাসওয়ার্ড পরিবর্তন।
+  wwcConfigConversationSQLPasswordInput: বর্তমান পাসওয়ার্ড হল %i। নতুন পাসওয়ার্ড নির্ধারণের
+    জন্য ০ ছাড়া অন্য কিছু টাইপ করুন অথবা ফিরে যেতে ০ টাইপ করুন।
+  wwcConfigGUIToggleSQLSSLButton: এসকিউএল এসএসএল টগল করুন
+  wwcConfigConversationSQLUsernameSuccess: সফলভাবে এসকিউএল ইউজারনেম পরিবর্তন করেছে।
+  wwcConfigConversationSQLUsernameInput: বর্তমান ইউজারনের %i। নতুন ব্যবহারকারীর নাম
+    নির্ধারণের জন্য ০ ছাড়া অন্য কিছু টাইপ করুন অথবা ফিরে যেতে ০ টাইপ করুন।
+  wwcConfigConversationSQLPortSuccess: সফলভাবে এসকিউএল পোর্ট পরিবর্তন।
+  wwcConfigGUISQLUsernameButton: SQL ব্যবহারকারীর নাম পরিবর্তন করুন
+  wwcConfigConversationSQLOptionalArgsCleared: ঐচ্ছিক আর্গুমেন্ট সফলভাবে সাফ
+  wwcConfigConversationSQLOptionalArgsInput: 'বর্তমান ঐচ্ছিক SQL আর্গুমেন্ট হল: %i।
+    একটি কমা দ্বারা পৃথক আর্গুমেন্ট টাইপ করুন (key=value, key2=value2), অথবা বর্তমান
+    আর্গ মুছে ফেলার জন্য পরিষ্কার টাইপ করুন, অথবা ফিরে যেতে ০ টাইপ করুন।'
+  wwcConfigConversationSQLDatabaseNameInput: বর্তমান ডাটাবেসের নাম %i। নতুন ডাটাবেসের
+    নাম নির্ধারণ করতে ০ ছাড়া অন্য কিছু টাইপ করুন অথবা ফিরে যেতে ০ টাইপ করুন।
+  wwcConfigGUISQLDatabaseNameButton: এসকিউএল ডাটাবেস পরিবর্তন
+  wwcConfigConversationSQLDatabaseNameSuccess: সফলভাবে SQL ডাটাবেস নাম পরিবর্তন।
+  wwcConfigConversationFatalAsyncAbort: সমস্ত অ্যাসিঙ্ক কর্ম বন্ধ করার বর্তমান সময়সীমা
+    হল %i সেকেন্ড। নতুন সময়সীমা নির্ধারণের জন্য ৭ এর উপরে যেকোন কিছু টাইপ করুন অথবা
+    ফিরে যেতে নীচের যেকোন কিছু টাইপ করুন।
+  wwcConfigConversationFatalAsyncSuccess: অ্যাসিঙ্ক টাস্ক টাইমআউট সফলভাবে সেট করা
+    হয়েছে।
+  wwcConfigGUIFatalAsyncAbortButton: অ্যাসিঙ্ক টাস্ক টাইম- আউট পরিবর্তন করুন
+  wwcTimeoutException: আপনার কমান্ডের সময়সীমা শেষ হয়ে গেছে। অনুগ্রহ করে পুনরায় চেষ্টা
+    করুন।

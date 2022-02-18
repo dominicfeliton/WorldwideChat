@@ -184,10 +184,6 @@ Messages:
   wwcInventoryErrorPlayer: Fejl registreret med din GUI. Der er sendt en log til konsollen.
   wwcInventoryError: Fejl registreret med brugerflade %i GUI. Rapportér dette problem
     til udvikleren.
-  wwcConfigConversationTranslatorFail: Det lykkedes ikke at aktivere %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Brugeren %jeg aktiveret %o.
-  wwcConfigConversationTranslatorSuccess: Aktiveret %i.
-  wwcConfigConversationConsoleTranslatorFail: Brugeren %jeg kunne ikke aktivere %o.
   wwcSignTranslationFail: Kan ikke oversætte en eller flere linjer på dit målskilt.
   wwcBookTranslationFail: Kan ikke oversætte en eller flere sider i din målbog.
   wwctiOffTarget: Oversættelse af elementer deaktiveret for %i.
@@ -210,7 +206,6 @@ Messages:
   wwcInvalidTranslator: Ugyldige indstillinger for oversætter. Løs venligst dette
     i din config.yml eller med /wwcc for at bruge dette plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'
-  wwcConfigGUIToggleButton: Skift til %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat tolererer ikke brugen af /genindlæsning. Fortsæt
     venligst med forsigtighed.
@@ -271,8 +266,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Ændre global kursgrænse
   wwcteOnSender: Oversættelse af enhed aktiveret. Højreklik på en enhed for at oversætte
     dens navn!
-  wwcInGameObjectTranslationFailCatastrophic: Det lykkedes ikke at oversætte målobjektet.
-  wwcInGameEntityTranslationFailCatastrophic: Det lykkedes ikke at oversætte målobjektet.
   wwcConfigGUIResponseLimitButton: Skift timeout for oversætteren
   wwcConfigMessageCharLimitEnabled: Tegngrænse pr. meddelelse sat til %i tegn.
   wwcteOffTarget: Oversættelse af enheder deaktiveret for %i.
@@ -334,8 +327,60 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Output-sprog: %i'
   wwcTranslatorAttempt: Forsøger at oprette forbindelse til oversætter i config.yml...
     (forsøg %i/ %o)
-  wwcTimeoutException: ' Din kommando timet ud. Prøv venligst igen.'
   wwcTimeoutExceptionConsole: Spiller %Jeg havde deres seneste timeout for anmodningen.
     Denne fejl er ikke dødelig, men WorldwideChat skal genindlæses, hvis det fortsætter
     med at ske.
   wwcGUIPageNumber: 'Sidetal: %i'
+  wwcConfigSQLFail: Det lykkedes ikke at oprette forbindelse til SQL.
+  wwcConfigSQLSuccess: Succesfuld tilsluttet SQL!
+  wwcConfigYAMLFallback: Falder tilbage til YAML...
+  wwcConfigGUIToggleSQLButton: Slå SQL til
+  wwcConfigConversationToggleSQLSuccess: SQL skikkede med succes. Genindlæs for ændringen
+    træder i kraft.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Succesfuld slået Google Translate.
+    Genindlæs for ændringen træder i kraft.
+  wwcConfigYAMLDefault: Standard til YAML til datalagring.
+  wwcConfigGUISQLMenuButton: Skift SQL-indstillinger
+  wwcConfigConversationWatsonTranslateToggleSuccess: Succesfuld skikket Watson Translate.
+    Genindlæs for ændringen træder i kraft.
+  wwcConfigGUISQLSettings: SQL-konfiguration
+  wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Oversæt
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Oversæt
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Oversæt
+  wwcConfigGUIStorageSettings: Storage Konfiguration
+  wwcConfigConversationAmazonTranslateToggleSuccess: Succesfuld slået Amazon Translate.
+    Genindlæs for ændringen træder i kraft.
+  wwcConfigGUISQLPortButton: Skift SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Ændre SQL valgfrie argumenter
+  wwcConfigConversationToggleSQLSSLSuccess: SSL til SQL har slået med succes.
+  wwcConfigConversationSQLPortInput: Den aktuelle port er %i. Skriv andet end 0 for
+    at indstille en ny port, eller skriv 0 for at gå tilbage.
+  wwcConfigGUISQLPasswordButton: Skift SQL-adgangskode
+  wwcConfigConversationSQLHostnameSuccess: Har ændret SQL værtsnavn.
+  wwcConfigConversationSQLHostnameInput: Det aktuelle værtsnavn er %i. Skriv andet
+    end 0 for at indstille et nyt værtsnavn, eller skriv 0 for at gå tilbage.
+  wwcConfigGUISQLHostnameButton: Skift SQL-værtsnavn
+  wwcConfigConversationSQLOptionalArgsSuccess: Har ændret de valgfrie SQL-argumenter.
+  wwcConfigConversationSQLPasswordSuccess: Har ændret SQL-adgangskoden.
+  wwcConfigConversationSQLPasswordInput: Den aktuelle adgangskode er %i. Skriv andet
+    end 0 for at indstille en ny adgangskode, eller skriv 0 for at gå tilbage.
+  wwcConfigGUIToggleSQLSSLButton: Slå SQL SSL til
+  wwcConfigConversationSQLUsernameSuccess: Har ændret SQL-brugernavnet.
+  wwcConfigConversationSQLUsernameInput: Det aktuelle brugernavn er %i. Skriv andet
+    end 0 for at indstille et nyt brugernavn, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationSQLPortSuccess: Har ændret SQL-porten.
+  wwcConfigGUISQLUsernameButton: Skift SQL-brugernavn
+  wwcConfigConversationSQLOptionalArgsCleared: Valgfrie argumenter ryddet med succes.
+  wwcConfigConversationSQLOptionalArgsInput: 'De aktuelle valgfrie SQL-argumenter
+    er: %i. Skriv argumenter adskilt af et komma (key=value, key2=value2), eller skriv
+    klar for at slette de aktuelle args, eller skriv 0 for at gå tilbage.'
+  wwcConfigConversationSQLDatabaseNameInput: Det aktuelle databasenavn er %i. Skriv
+    andet end 0 for at indstille et nyt databasenavn, eller skriv 0 for at gå tilbage.
+  wwcConfigGUISQLDatabaseNameButton: Skift SQL Database
+  wwcConfigConversationSQLDatabaseNameSuccess: Har ændret SQL-databasenavnet.
+  wwcConfigConversationFatalAsyncAbort: Den aktuelle timeout for at afbryde alle async
+    opgaver er %i sekunder. Skriv noget over 7 for at indstille en ny timeout, eller
+    noget under det for at gå tilbage.
+  wwcConfigConversationFatalAsyncSuccess: Async opgave timeout indstillet med succes.
+  wwcConfigGUIFatalAsyncAbortButton: Skift Async-opgavetimeout
+  wwcTimeoutException: Din kommando timet ud. Prøv venligst igen.

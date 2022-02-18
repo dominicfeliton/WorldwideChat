@@ -184,12 +184,6 @@ Messages:
     है।
   wwcInventoryError: उपयोक्ता %i के GUI के साथ त्रुटि मिली. कृपया इस समस्या को डेवलपर
     को रिपोर्ट करें।
-  wwcConfigConversationTranslatorFail: '%i को सक्षम करने में विफल।'
-  wwcConfigConversationConsoleTranslatorSuccess: उपयोगकर्ता %i सक्षम %o को सक्षमता
-    %o सक्षम किया है।
-  wwcConfigConversationTranslatorSuccess: सफलतापूर्वक सक्षम %i।
-  wwcConfigConversationConsoleTranslatorFail: उपयोगकर्ता %i %o को सक्षम करने में विफल
-    रहा।
   wwcSignTranslationFail: अपने लक्ष्य चिह्न पर एक या अधिक लाइनों का अनुवाद करने में
     असमर्थ।
   wwcBookTranslationFail: अपनी लक्ष्य पुस्तक में एक या अधिक पृष्ठों का अनुवाद करने
@@ -214,7 +208,6 @@ Messages:
   wwcInvalidTranslator: अमान्य अनुवादक सेटिंग्स। कृपया इस प्लगइन का उपयोग करने के
     लिए इसे अपने config.yml में या /wwcc के साथ ठीक करें।
   wwcConfigGUIEachTranslatorSettings: '%i कॉन्फ़िगरेशन'
-  wwcConfigGUIToggleButton: टॉगल %i
   wwcConfigGUIWatsonButton: वाटसन
   wwcServerReloadWarning: WorldwideChat /reload के उपयोग को नज़रअंदाज़ नहीं करता है।
     कृपया सावधानी के साथ आगे बढ़ें।
@@ -274,8 +267,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: ग्लोबल रेट लिमिट बदलें
   wwcteOnSender: इकाई अनुवाद सक्षम किया गया। अपने नाम का अनुवाद करने के लिए किसी इकाई
     पर राइट-क्लिक करें!
-  wwcInGameObjectTranslationFailCatastrophic: लक्ष्य वस्तु का अनुवाद करने में विफल।
-  wwcInGameEntityTranslationFailCatastrophic: लक्ष्य इकाई का अनुवाद करने में विफल।
   wwcConfigGUIResponseLimitButton: ट्रांसलेटर रिस्पांस टाइमआउट बदलें
   wwcConfigMessageCharLimitEnabled: प्रति संदेश की वर्ण सीमा %i वर्णों पर सेट की गई
     है।
@@ -337,8 +328,64 @@ Messages:
   wwctGUIExistingTranslationOutput: 'आउटपुट भाषा: %i'
   wwcTranslatorAttempt: Config.yml में अनुवादक से कनेक्ट करने का प्रयास किया जा रहा
     है... (प्रयास %i/ %o)
-  wwcTimeoutException: ' आपकी आज्ञा का समय समाप्त हो गया। कृपया फिर से कोशिश करें।'
   wwcTimeoutExceptionConsole: प्लेयर %i के पास सबसे हाल का अनुरोध टाइमआउट था। यह त्रुटि
     घातक नहीं है, लेकिन अगर ऐसा होता रहता है तो WorldwideChat को पुनः लोड किया जाना
     चाहिए।
   wwcGUIPageNumber: 'पृष्ठ क्रमांक: %i'
+  wwcConfigSQLFail: SQL से कनेक्ट करने में विफल।
+  wwcConfigSQLSuccess: SQL से सफलतापूर्वक कनेक्ट किया गया!
+  wwcConfigYAMLFallback: YAML पर वापस गिरना...
+  wwcConfigGUIToggleSQLButton: SQL टॉगल करें
+  wwcConfigConversationToggleSQLSuccess: SQL सफलतापूर्वक टॉगल किया गया। परिवर्तन के
+    प्रभावी होने के लिए पुनः लोड करें।
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google अनुवाद को सफलतापूर्वक
+    टॉगल किया गया परिवर्तन के प्रभावी होने के लिए पुनः लोड करें।
+  wwcConfigYAMLDefault: डेटा संग्रहण के लिए YAML में डिफ़ॉल्ट।
+  wwcConfigGUISQLMenuButton: SQL सेटिंग बदलें
+  wwcConfigConversationWatsonTranslateToggleSuccess: वाटसन अनुवाद को सफलतापूर्वक टॉगल
+    किया गया। परिवर्तन के प्रभावी होने के लिए पुनः लोड करें।
+  wwcConfigGUISQLSettings: SQL कॉन्फ़िगरेशन
+  wwcConfigGUIToggleGoogleTranslateButton: Google अनुवाद टॉगल करें
+  wwcConfigGUIToggleWatsonTranslateButton: वॉटसन अनुवाद टॉगल करें
+  wwcConfigGUIToggleAmazonTranslateButton: Amazon अनुवाद टॉगल करें
+  wwcConfigGUIStorageSettings: स्टोरेज कॉन्फ़िगरेशन
+  wwcConfigConversationAmazonTranslateToggleSuccess: Amazon अनुवाद सफलतापूर्वक टॉगल
+    किया गया। परिवर्तन के प्रभावी होने के लिए पुनः लोड करें।
+  wwcConfigGUISQLPortButton: SQL पोर्ट बदलें
+  wwcConfigGUISQLOptionalArgsButton: SQL वैकल्पिक तर्क बदलें
+  wwcConfigConversationToggleSQLSSLSuccess: SQL के लिए SSL सफलतापूर्वक टॉगल किया गया।
+  wwcConfigConversationSQLPortInput: वर्तमान पोर्ट %i है. नया पोर्ट सेट करने के लिए
+    0 के अलावा और कुछ टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUISQLPasswordButton: SQL पासवर्ड बदलें
+  wwcConfigConversationSQLHostnameSuccess: SQL होस्टनाम को सफलतापूर्वक बदल दिया।
+  wwcConfigConversationSQLHostnameInput: वर्तमान होस्टनाम %i है. नया होस्टनाम सेट
+    करने के लिए 0 के अलावा कुछ भी टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUISQLHostnameButton: SQL होस्टनाम बदलें
+  wwcConfigConversationSQLOptionalArgsSuccess: वैकल्पिक SQL तर्कों को सफलतापूर्वक
+    बदल दिया।
+  wwcConfigConversationSQLPasswordSuccess: SQL पासवर्ड सफलतापूर्वक बदल दिया गया।
+  wwcConfigConversationSQLPasswordInput: मौज़ूदा कूटशब्द %i है. नया कूटशब्द सेट करने
+    के लिए 0 के अलावा और कुछ टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL टॉगल करें
+  wwcConfigConversationSQLUsernameSuccess: SQL उपयोगकर्ता नाम सफलतापूर्वक बदल दिया।
+  wwcConfigConversationSQLUsernameInput: वर्तमान उपयोगकर्ता नाम %i है. नया उपयोगकर्ता
+    नाम सेट करने के लिए 0 के अलावा और कुछ टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationSQLPortSuccess: SQL पोर्ट को सफलतापूर्वक बदल दिया।
+  wwcConfigGUISQLUsernameButton: SQL उपयोगकर्ता नाम बदलें
+  wwcConfigConversationSQLOptionalArgsCleared: वैकल्पिक तर्कों को सफलतापूर्वक मंजूरी
+    दे दी गई।
+  wwcConfigConversationSQLOptionalArgsInput: 'वर्तमान वैकल्पिक SQL तर्क हैं: %i अल्पविराम
+    (key=value, key2=value2) द्वारा अलग किए गए तर्क टाइप करें, या वर्तमान तर्कों को
+    पोंछने के लिए clear टाइप करें, या वापस जाने के लिए 0 टाइप करें।'
+  wwcConfigConversationSQLDatabaseNameInput: वर्तमान डेटाबेस नाम %i है. नया डाटाबेस
+    नाम सेट करने के लिए 0 के अलावा कुछ भी टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUISQLDatabaseNameButton: SQL डाटाबेस बदलें
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL डेटाबेस नाम को सफलतापूर्वक बदल
+    दिया।
+  wwcConfigConversationFatalAsyncAbort: सभी async कार्यों को निरस्त करने के लिए वर्तमान
+    समयबाह्य %i सेकंड है। नया टाइमआउट सेट करने के लिए 7 से ऊपर कुछ भी टाइप करें, या
+    वापस जाने के लिए इसके नीचे कुछ भी टाइप करें।
+  wwcConfigConversationFatalAsyncSuccess: Async कार्य समयबाह्य सफलतापूर्वक सेट किया
+    गया।
+  wwcConfigGUIFatalAsyncAbortButton: Async टास्क टाइमआउट बदलें
+  wwcTimeoutException: आपकी आज्ञा का समय समाप्त हो गया। कृपया फिर से कोशिश करें।

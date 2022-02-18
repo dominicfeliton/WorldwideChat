@@ -187,11 +187,6 @@ Messages:
   wwcInventoryErrorPlayer: Kļūda konstatēta ar jūsu GUI. Uz konsoli ir nosūtīts žurnāls.
   wwcInventoryError: Kļūda konstatēta ar lietotāja GUI ( %i). Lūdzu ziņojiet par šo
     problēmu izstrādātājam.
-  wwcConfigConversationTranslatorFail: Neizdevās iespējot %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Lietotājs %es veiksmīgi iespējoja
-    %o.
-  wwcConfigConversationTranslatorSuccess: Veiksmīgi iespējots %i.
-  wwcConfigConversationConsoleTranslatorFail: Lietotājs % man neizdevās iespējot %o.
   wwcSignTranslationFail: Nespēj tulkot vienu vai vairākas rindiņas jūsu mērķa zīmi.
   wwcBookTranslationFail: Nespēj tulkot vienu vai vairākas lappuses mērķa grāmatā.
   wwctiOffTarget: Vienuma tulkošana atspējota uz %i.
@@ -214,7 +209,6 @@ Messages:
   wwcInvalidTranslator: Nederīgi tulkotāja iestatījumi. Lūdzu, salabojiet to savā
     config.yml vai ar /wwcc, lai izmantotu šo spraudni.
   wwcConfigGUIEachTranslatorSettings: '%i konfigurācija'
-  wwcConfigGUIToggleButton: Pārslēgt %i
   wwcConfigGUIWatsonButton: Vatsons
   wwcServerReloadWarning: WorldwideChat neattaisno izmantošanu/pārlādēt. Lūdzu, rīkojieties
     piesardzīgi.
@@ -272,8 +266,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Mainīt globālo likmes ierobežojumu
   wwcteOnSender: Entītijas tulkojums iespējots. Ar peles labo pogu noklikšķiniet uz
     entītijas, lai tulkotu tā nosaukumu!
-  wwcInGameObjectTranslationFailCatastrophic: Neizdevās tulkot mērķa objektu.
-  wwcInGameEntityTranslationFailCatastrophic: Neizdevās tulkot mērķa entītiju.
   wwcConfigGUIResponseLimitButton: Mainīt tulkotāja atbildes taimautu
   wwcConfigMessageCharLimitEnabled: Rakstzīmju ierobežojums vienam ziņojumam ir iestatīts
     uz %i rakstzīmes.
@@ -332,7 +324,62 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Izvades valoda: %i'
   wwcTranslatorAttempt: Mēģinot izveidot savienojumu ar tulkotāju config.yml... (Mēģinājums
     %i/ %o)
-  wwcTimeoutException: ' Jūsu komanda taimauts. Lūdzu, mēģiniet vēlreiz.'
   wwcTimeoutExceptionConsole: Spēlētājs %Man bija pēdējais pieprasījuma taimauts.
     Šī kļūda nav letāla, bet WorldwideChat ir jāpārlādē, ja tā turpina notikt.
   wwcGUIPageNumber: 'Lapas numurs: %i'
+  wwcConfigSQLFail: Neizdevās izveidot savienojumu ar SQL.
+  wwcConfigSQLSuccess: Veiksmīgi savienots ar SQL!
+  wwcConfigYAMLFallback: Falling atpakaļ uz YAML...
+  wwcConfigGUIToggleSQLButton: Pārslēgt SQL
+  wwcConfigConversationToggleSQLSuccess: SQL pārslēgts veiksmīgi. Pārlādēt, lai izmaiņas
+    stātos spēkā.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Veiksmīgi pārslēgts Google Translate.
+    Pārlādēt, lai izmaiņas stātos spēkā.
+  wwcConfigYAMLDefault: Datu glabāšanai nav izpildīts YAML.
+  wwcConfigGUISQLMenuButton: SQL iestatījumu mainīšana
+  wwcConfigConversationWatsonTranslateToggleSuccess: Veiksmīgi pārslēgts Watson Translate.
+    Pārlādēt, lai izmaiņas stātos spēkā.
+  wwcConfigGUISQLSettings: SQL konfigurācija
+  wwcConfigGUIToggleGoogleTranslateButton: Pārslēgt Google tulkotāju
+  wwcConfigGUIToggleWatsonTranslateButton: Pārslēgt Watson Translate
+  wwcConfigGUIToggleAmazonTranslateButton: Pārslēgt Amazon tulkot
+  wwcConfigGUIStorageSettings: Krātuves konfigurācija
+  wwcConfigConversationAmazonTranslateToggleSuccess: Veiksmīgi pārslēgts Amazon Translate.
+    Pārlādēt, lai izmaiņas stātos spēkā.
+  wwcConfigGUISQLPortButton: Mainīt SQL portu
+  wwcConfigGUISQLOptionalArgsButton: Mainīt SQL izvēles argumentus
+  wwcConfigConversationToggleSQLSSLSuccess: SSL SQL pārslēgts veiksmīgi.
+  wwcConfigConversationSQLPortInput: Pašreizējais ports ir %i. Ierakstiet neko citu
+    kā 0, lai iestatītu jaunu portu, vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUISQLPasswordButton: Mainīt SQL paroli
+  wwcConfigConversationSQLHostnameSuccess: Veiksmīgi mainīts SQL resursdatora nosaukums.
+  wwcConfigConversationSQLHostnameInput: Pašreizējais resursdatora nosaukums ir %i.
+    Ierakstiet neko citu kā 0, lai iestatītu jaunu resursdatora nosaukumu, vai ierakstiet
+    0, lai atgrieztos.
+  wwcConfigGUISQLHostnameButton: Mainīt SQL resursdatora nosaukumu
+  wwcConfigConversationSQLOptionalArgsSuccess: Veiksmīgi mainīja SQL papildu argumentus.
+  wwcConfigConversationSQLPasswordSuccess: Veiksmīgi mainīja SQL paroli.
+  wwcConfigConversationSQLPasswordInput: Pašreizējā parole ir %i. Ierakstiet neko
+    citu kā 0, lai iestatītu jaunu paroli, vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIToggleSQLSSLButton: Pārslēgt SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Veiksmīgi mainīja SQL lietotājvārdu.
+  wwcConfigConversationSQLUsernameInput: Pašreizējais lietotājvārds ir %i. Ierakstiet
+    neko citu kā 0, lai iestatītu jaunu lietotājvārdu, vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationSQLPortSuccess: Veiksmīgi mainīja SQL portu.
+  wwcConfigGUISQLUsernameButton: Mainīt SQL lietotājvārdu
+  wwcConfigConversationSQLOptionalArgsCleared: Izvēles argumenti veiksmīgi notīrīti.
+  wwcConfigConversationSQLOptionalArgsInput: 'Pašreizējie neobligātie SQL argumenti
+    ir: %i. Ierakstiet argumentus, kas atdalīti ar komatu (atslēga = vērtība, key2=value2),
+    vai ierakstiet skaidru, lai notīrītu pašreizējās argas, vai ierakstiet 0, lai
+    atgrieztos.'
+  wwcConfigConversationSQLDatabaseNameInput: Pašreizējais datu bāzes nosaukums ir
+    %i. Ierakstiet neko citu kā 0, lai iestatītu jaunu datu bāzes nosaukumu, vai ierakstiet
+    0, lai atgrieztos.
+  wwcConfigGUISQLDatabaseNameButton: Mainīt SQL datu bāzi
+  wwcConfigConversationSQLDatabaseNameSuccess: Veiksmīgi mainīts SQL datu bāzes nosaukums.
+  wwcConfigConversationFatalAsyncAbort: Pašreizējais taimauts, lai pārtrauktu visus
+    asinhronos uzdevumus ir %i sekundes. Ierakstiet kaut ko virs 7, lai iestatītu
+    jaunu taimautu vai kaut ko zem tā, lai atgrieztos.
+  wwcConfigConversationFatalAsyncSuccess: Asinc uzdevumu taimauts iestatīts veiksmīgi.
+  wwcConfigGUIFatalAsyncAbortButton: Mainīt Asinc uzdevumu taimautu
+  wwcTimeoutException: Jūsu komanda taimauts. Lūdzu, mēģiniet vēlreiz.

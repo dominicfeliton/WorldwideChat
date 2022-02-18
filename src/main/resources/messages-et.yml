@@ -178,10 +178,6 @@ Messages:
   wwcInventoryErrorPlayer: Teie GUI-ga tuvastatud tõrge. Konsoolile on saadetud logi.
   wwcInventoryError: Kasutaja GUI-ga tuvastatud tõrge. Palun teatage sellest probleemist
     arendajale.
-  wwcConfigConversationTranslatorFail: '%i lubamine nurjus.'
-  wwcConfigConversationConsoleTranslatorSuccess: Kasutaja %i edukalt luba %o.
-  wwcConfigConversationTranslatorSuccess: Edukalt lubatud %i.
-  wwcConfigConversationConsoleTranslatorFail: Kasutaja %i ei õnnestunud lubada %o.
   wwcSignTranslationFail: Ei saa tõlkida ühte või mitut rida oma sihtmärk.
   wwcBookTranslationFail: Ei saa tõlkida ühte või mitut lehekülge oma sihtraamatus.
   wwctiOffTarget: Üksuse tõlge keelatud %i.
@@ -204,7 +200,6 @@ Messages:
   wwcInvalidTranslator: Kehtetu tõlkija sätted. Palun parandage see oma config.yml
     või /wwcc kasutada seda pluginat.
   wwcConfigGUIEachTranslatorSettings: '%i konfiguratsioon'
-  wwcConfigGUIToggleButton: Kogu %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ei nõustu /ümberlaadimise kasutamisega. Palun
     jätkake ettevaatusega.
@@ -259,8 +254,6 @@ Messages:
     väiksem või võrdne 0, et minna tagasi.
   wwcConfigGUIGlobalRateLimitButton: Muuda globaalse määra limiiti
   wwcteOnSender: Olemi tõlkimine on lubatud. Paremklõpsake üksusel oma nime tõlkimiseks!
-  wwcInGameObjectTranslationFailCatastrophic: Sihtobjekti tõlkimine nurjus.
-  wwcInGameEntityTranslationFailCatastrophic: Sihtolemi tõlkimine nurjus
   wwcConfigGUIResponseLimitButton: Muuda tõlkija reageerimise ajalõpp
   wwcConfigMessageCharLimitEnabled: Märkide piirang sõnumi kohta määratud %i tähemärki.
   wwcteOffTarget: Olemi tõlge keelatud %i.
@@ -317,7 +310,60 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 'Sissetuleva vestluse tõlge lubatud: %i'
   wwctGUIExistingTranslationOutput: 'Väljundkeel: %i'
   wwcTranslatorAttempt: Üritades ühendada tõlkija config.yml... (Katse %i/ %o)
-  wwcTimeoutException: ' Teie käsk on ajastatud. Palun proovige uuesti.'
   wwcTimeoutExceptionConsole: Mängija %Mul oli nende viimane taotluse ajalõpp. See
     viga ei ole surmav, kuid WorldwideChat tuleks uuesti laadida, kui see jätkub.
   wwcGUIPageNumber: 'Lehekülje number: %i'
+  wwcConfigSQLFail: SQL-iga ühenduse loomine nurjus.
+  wwcConfigSQLSuccess: SQL-iga edukalt ühendatud!
+  wwcConfigYAMLFallback: Langevad tagasi YAML-i...
+  wwcConfigGUIToggleSQLButton: Lülita SQL
+  wwcConfigConversationToggleSQLSuccess: SQL lülitati edukalt. Laadige muudatuse jõustumiseks
+    uuesti.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Edukalt lülitatud Google Translate.
+    Laadige muudatuse jõustumiseks uuesti.
+  wwcConfigYAMLDefault: Andmete salvestamiseks on vaikimisi YAML.
+  wwcConfigGUISQLMenuButton: SQL-i sätete muutmine
+  wwcConfigConversationWatsonTranslateToggleSuccess: Edukalt lülitatud Watson tõlkida.
+    Laadige muudatuse jõustumiseks uuesti.
+  wwcConfigGUISQLSettings: SQL konfiguratsioon
+  wwcConfigGUIToggleGoogleTranslateButton: Lülita Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Lülita Watson tõlkimine
+  wwcConfigGUIToggleAmazonTranslateButton: Lülita Amazon tõlkimine
+  wwcConfigGUIStorageSettings: Salvestusruumi se
+  wwcConfigConversationAmazonTranslateToggleSuccess: Edukalt lülitatud Amazon tõlkida.
+    Laadige muudatuse jõustumiseks uuesti.
+  wwcConfigGUISQLPortButton: Muuda SQL-porti
+  wwcConfigGUISQLOptionalArgsButton: SQL-i valikuliste argumentide
+  wwcConfigConversationToggleSQLSSLSuccess: SQL-i SSL lülitati edukalt.
+  wwcConfigConversationSQLPortInput: Praegune port on %i. Uue pordi määramiseks tippige
+    midagi muud kui 0 või tippige tagasi minemiseks 0.
+  wwcConfigGUISQLPasswordButton: Muuda SQL-i parooli
+  wwcConfigConversationSQLHostnameSuccess: SQL-i hostinime edukalt muutnud.
+  wwcConfigConversationSQLHostnameInput: Praegune hostinimi on %i. Uue hostinime määramiseks
+    tippige midagi muud kui 0 või tippige tagasi minemiseks 0.
+  wwcConfigGUISQLHostnameButton: Muuda SQL-i hostinime
+  wwcConfigConversationSQLOptionalArgsSuccess: Muudetud edukalt valikuline SQL argumendid.
+  wwcConfigConversationSQLPasswordSuccess: SQL-i parooli edukalt muudetud.
+  wwcConfigConversationSQLPasswordInput: Praegune parool on %i. Uue parooli määramiseks
+    tippige midagi muud kui 0 või tippige tagasi minemiseks 0.
+  wwcConfigGUIToggleSQLSSLButton: Lülita SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: SQL-i kasutajanime edukalt muutnud.
+  wwcConfigConversationSQLUsernameInput: Praegune kasutajanimi on %i. Uue kasutajanime
+    määramiseks tippige midagi muud kui 0, või tippige tagasi minemiseks 0.
+  wwcConfigConversationSQLPortSuccess: SQL-i porti edukalt muudetud.
+  wwcConfigGUISQLUsernameButton: Muuda SQL-i kasutajanime
+  wwcConfigConversationSQLOptionalArgsCleared: Valikulised argumendid kustutatakse
+    edukalt.
+  wwcConfigConversationSQLOptionalArgsInput: 'Praegused valikulised SQL-argumendid
+    on: %i. Tippige komaga eraldatud argumendid (võti = väärtus, klahv2 = väärtus2)
+    või tippige tühjendage praegused argid või tippige tagasi minemiseks 0.'
+  wwcConfigConversationSQLDatabaseNameInput: Praegune andmebaasi nimi on %i. Uue andmebaasi
+    nime määramiseks tippige midagi muud kui 0 või tippige tagasi minemiseks 0.
+  wwcConfigGUISQLDatabaseNameButton: Muuda SQL-andmebaasi
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL-i andmebaasi nime edukalt muutnud.
+  wwcConfigConversationFatalAsyncAbort: Praegune ajalõpp kõigi asünkroonitoimingute
+    katkestamiseks on %i sekundit. Tippige midagi eespool 7, et määrata uus ajalõpp,
+    või midagi selle alla minna tagasi.
+  wwcConfigConversationFatalAsyncSuccess: Async ülesande ajalõpu seatud edukalt.
+  wwcConfigGUIFatalAsyncAbortButton: Asynci ülesande ajalõpu muutmine
+  wwcTimeoutException: Teie käsk on ajastatud. Palun proovige uuesti.

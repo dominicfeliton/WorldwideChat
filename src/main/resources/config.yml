@@ -14,7 +14,17 @@ General:
   pluginLang: en
   updateCheckerDelay: 86400
   syncUserDataDelay: 7200
+  fatalAsyncTaskTimeout: 10
   enableDebugMode: false
+Storage:
+  useSQL: false
+  sqlHostname: localhost
+  sqlPort: 3306
+  sqlDatabaseName: cooldatabase
+  sqlUsername: root
+  sqlPassword: root
+  sqlUseSSL: false
+  sqlOptionalArgs: []
 Chat:
   sendTranslationChat: true
   sendFailedTranslationChat: true

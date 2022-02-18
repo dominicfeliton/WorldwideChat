@@ -193,12 +193,6 @@ Messages:
   wwcInventoryErrorPlayer: Eroare detectată cu GUI. Un jurnal a fost trimis la consolă.
   wwcInventoryError: Eroare detectată cu GUI a utilizatorului %i. Raportați această
     problemă dezvoltatorului.
-  wwcConfigConversationTranslatorFail: Eșec de a se declanșa %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Utilizatorul %Am activat cu succes.
-    %o.
-  wwcConfigConversationTranslatorSuccess: A fost activat cu succes. %i.
-  wwcConfigConversationConsoleTranslatorFail: Utilizatorul %Am eșuat să se ACTIVA
-    %o.
   wwcSignTranslationFail: Imposibil de tradus una sau mai multe linii de pe semnul
     țintă.
   wwcBookTranslationFail: Imposibil de tradus una sau mai multe pagini în cartea țintă.
@@ -222,7 +216,6 @@ Messages:
   wwcInvalidTranslator: Setări de traducător nevalide. Vă rugăm să remediați acest
     lucru în config.yml sau cu /wwcc pentru a utiliza acest plugin.
   wwcConfigGUIEachTranslatorSettings: Configurare %i
-  wwcConfigGUIToggleButton: Comută %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat nu acceptă utilizarea /reload. Vă rugăm să
     procedați cu prudență
@@ -282,8 +275,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Modificarea limitei globale a ratei
   wwcteOnSender: Entitate traducere activat. Faceți clic dreapta pe o entitate pentru
     a-i traduce numele!
-  wwcInGameObjectTranslationFailCatastrophic: Nu a reușit să traducă obiectul țintă.
-  wwcInGameEntityTranslationFailCatastrophic: Nu a reuşit să traducă entitatea ţintă.
   wwcConfigGUIResponseLimitButton: Modificare expirare răspuns traducător
   wwcConfigMessageCharLimitEnabled: Limita de caractere pentru fiecare mesaj setată
     la %i caractere.
@@ -348,8 +339,67 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Limba de ieșire: %i'
   wwcTranslatorAttempt: Încercarea de a vă conecta la traducător în config.yml...
     (Încercare %i/ %o)
-  wwcTimeoutException: ' Comanda ta a expirat. Vă rugăm să încercați din nou.'
   wwcTimeoutExceptionConsole: Jucătorul %i a avut cea mai recentă expirare a solicitărilor.
     Această eroare nu este fatală, dar WorldwideChat ar trebui reîncărcată dacă continuă
     să se întâmple.
   wwcGUIPageNumber: 'Număr pagină: %i'
+  wwcConfigSQLFail: Nu a reușit să se conecteze la SQL.
+  wwcConfigSQLSuccess: Conectat cu succes la SQL!
+  wwcConfigYAMLFallback: Revenind la YAML...
+  wwcConfigGUIToggleSQLButton: Comută SQL
+  wwcConfigConversationToggleSQLSuccess: SQL a comuta cu succes. Reîncărcați pentru
+    ca modificarea să aibă efect.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Comutată cu succes Google Translate.
+    Reîncărcați pentru ca modificarea să aibă efect.
+  wwcConfigYAMLDefault: Responsabilitate la YAML pentru stocarea datelor.
+  wwcConfigGUISQLMenuButton: Modificarea setărilor SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Comutată cu succes Watson Translate.
+    Reîncărcați pentru ca modificarea să aibă efect.
+  wwcConfigGUISQLSettings: Configurare SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Comută Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Comută Watson Traducere
+  wwcConfigGUIToggleAmazonTranslateButton: Comută Amazon Translate
+  wwcConfigGUIStorageSettings: Configurare stocare
+  wwcConfigConversationAmazonTranslateToggleSuccess: Comutată cu succes Amazon Translate.
+    Reîncărcați pentru ca modificarea să aibă efect.
+  wwcConfigGUISQLPortButton: Modificarea portului SQL
+  wwcConfigGUISQLOptionalArgsButton: Modificarea argumentelor opționale SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL pentru SQL comuta cu succes.
+  wwcConfigConversationSQLPortInput: Portul curent este %i. Tastați orice altceva
+    decât 0 pentru a seta un port nou sau tastați 0 pentru a reveni.
+  wwcConfigGUISQLPasswordButton: Modificarea parolei SQL
+  wwcConfigConversationSQLHostnameSuccess: A schimbat cu succes numele de gazdă SQL.
+  wwcConfigConversationSQLHostnameInput: Numele gazdei curente este %i. Tastați orice
+    altceva decât 0 pentru a seta un nume nou de gazdă sau tastați 0 pentru a reveni.
+  wwcConfigGUISQLHostnameButton: Modificarea numelui de gazdă SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Modificat cu succes argumentele SQL
+    opționale.
+  wwcConfigConversationSQLPasswordSuccess: A schimbat cu succes parola SQL.
+  wwcConfigConversationSQLPasswordInput: Parola curentă este %i. Introduceți orice
+    altceva decât 0 pentru a seta o nouă parolă sau tastați 0 pentru a reveni.
+  wwcConfigGUIToggleSQLSSLButton: Comută SSL SQL
+  wwcConfigConversationSQLUsernameSuccess: A schimbat cu succes numele de utilizator
+    SQL.
+  wwcConfigConversationSQLUsernameInput: Numele de utilizator curent este %i. Tastați
+    orice altceva decât 0 pentru a seta un nou nume de utilizator sau tastați 0 pentru
+    a reveni.
+  wwcConfigConversationSQLPortSuccess: A schimbat cu succes portul SQL.
+  wwcConfigGUISQLUsernameButton: Modificarea numelui de utilizator SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Argumentele opționale eliminate cu
+    succes
+  wwcConfigConversationSQLOptionalArgsInput: 'Argumentele SQL opționale actuale sunt:
+    %i. Argumentele de tip separate printr-o virgulă (cheie = valoare, key2=value2),
+    sau tastați clar pentru a șterge args curent, sau tastați 0 pentru a reveni.'
+  wwcConfigConversationSQLDatabaseNameInput: Numele actual al bazei de date este %i.
+    Tastați orice altceva decât 0 pentru a seta un nume nou al bazei de date sau tastați
+    0 pentru a reveni.
+  wwcConfigGUISQLDatabaseNameButton: Schimbarea bazei de date SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Modificat cu succes numele bazei de
+    date SQL.
+  wwcConfigConversationFatalAsyncAbort: Timpul de expirare curent pentru a anula toate
+    sarcinile asincronice este %i secunde. Tastați orice peste 7 pentru a seta un
+    nou timeout, sau orice sub el pentru a merge înapoi.
+  wwcConfigConversationFatalAsyncSuccess: Timeout activitate async setat cu succes.
+  wwcConfigGUIFatalAsyncAbortButton: Modificarea timpului de expirare a activității
+    async
+  wwcTimeoutException: Comanda ta a expirat. Vă rugăm să încercați din nou.

@@ -199,12 +199,6 @@ Messages:
     sa console.
   wwcInventoryError: Error na nakita sa GUI ng tagagamit na %i. Pakiulat ang isyung
     ito sa developer.
-  wwcConfigConversationTranslatorFail: Nabigong paganahin ang %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Matagumpay na pinagana ng tagagamit
-    ang %o.
-  wwcConfigConversationTranslatorSuccess: Matagumpay na pinagana ang %i.
-  wwcConfigConversationConsoleTranslatorFail: Nabigo ang gumagamit %i na paganahin
-    ang %o.
   wwcSignTranslationFail: Hindi ma-translate ang isa o higit pang mga linya sa iyong
     target sign.
   wwcBookTranslationFail: Hindi ma-translate ang isa o higit pang mga pahina sa iyong
@@ -229,7 +223,6 @@ Messages:
   wwcInvalidTranslator: Di-wastong mga setting ng tagasalin. Mangyaring ayusin ito
     sa iyong config.yml o sa /wwcc upang magamit ang plugin na ito.
   wwcConfigGUIEachTranslatorSettings: '%i Pagsasaayos'
-  wwcConfigGUIToggleButton: Iba-toggle %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: Ang WorldwideChat ay hindi nagpapahintulot sa paggamit ng/reload.
     Mangyaring magpatuloy nang may pag-iingat.
@@ -295,8 +288,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Baguhin ang Global Rate Limitasyon
   wwcteOnSender: Pinagana ang pagsasalin ng entity. Mag-right-click sa isang entity
     upang isalin ang pangalan nito!
-  wwcInGameObjectTranslationFailCatastrophic: Nabigong i-translate ang target na object.
-  wwcInGameEntityTranslationFailCatastrophic: Nabigong i-translate ang target na entity.
   wwcConfigGUIResponseLimitButton: Baguhin ang Tagasalin Tugon Timeout
   wwcConfigMessageCharLimitEnabled: Limitasyon ng character sa bawat mensahe na nakatakda
     sa %i character.
@@ -364,8 +355,71 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Wika ng Output: %i'
   wwcTranslatorAttempt: Sinusubukang kumonekta sa tagasalin sa config.yml... (Pagtangka
     %i/ %o)
-  wwcTimeoutException: ' Ang iyong utos ay nag-time out. Pakisubukang muli.'
   wwcTimeoutExceptionConsole: Ang manlalarong %ako ay nagkaroon ng kanilang pinakahuling
     timeout ng kahilingan. Ang error na ito ay hindi nakamamatay, ngunit dapat i-reload
     ang WorldwideChat kung patuloy itong mangyayari.
   wwcGUIPageNumber: 'Numero ng Pahina: %i'
+  wwcConfigSQLFail: Nabigong kumonekta sa SQL.
+  wwcConfigSQLSuccess: Matagumpay na nakakonekta sa SQL!
+  wwcConfigYAMLFallback: Bumabagsak pabalik sa YAML...
+  wwcConfigGUIToggleSQLButton: I-toggle ang SQL
+  wwcConfigConversationToggleSQLSuccess: Matagumpay na toggled ang SQL. I-reload para
+    magkabisa ang pagbabago.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Matagumpay na na-toggle ang Google
+    Translate. I-reload para magkabisa ang pagbabago.
+  wwcConfigYAMLDefault: Defaulted sa YAML para sa imbakan ng data.
+  wwcConfigGUISQLMenuButton: Baguhin ang Mga Setting ng SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Matagumpay na na-toggle ang Watson
+    Translate. I-reload para magkabisa ang pagbabago.
+  wwcConfigGUISQLSettings: Configuration ng SQL
+  wwcConfigGUIToggleGoogleTranslateButton: I-toggle ang Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: I-toggle ang Watson Translate
+  wwcConfigGUIToggleAmazonTranslateButton: I-toggle ang Amazon Translate
+  wwcConfigGUIStorageSettings: Configuration ng Imbakan
+  wwcConfigConversationAmazonTranslateToggleSuccess: Matagumpay na na-toggle ang Amazon
+    Translate. I-reload para magkabisa ang pagbabago.
+  wwcConfigGUISQLPortButton: Baguhin ang SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Baguhin ang SQL Opsyonal na Argumento
+  wwcConfigConversationToggleSQLSSLSuccess: Matagumpay na na-toggled ang SSL para
+    sa SQL.
+  wwcConfigConversationSQLPortInput: Ang kasalukuyang port ay %i I-type ang anumang
+    bagay maliban sa 0 upang magtakda ng bagong port, o i-type ang 0 upang bumalik.
+  wwcConfigGUISQLPasswordButton: Baguhin ang SQL Password
+  wwcConfigConversationSQLHostnameSuccess: Matagumpay na binago ang SQL hostname.
+  wwcConfigConversationSQLHostnameInput: Ang kasalukuyang hostname ay %i I-type ang
+    anumang bagay maliban sa 0 upang magtakda ng bagong hostname, o i-type ang 0 upang
+    bumalik.
+  wwcConfigGUISQLHostnameButton: Baguhin ang SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Matagumpay na binago ang opsyonal na
+    mga argumento ng SQL.
+  wwcConfigConversationSQLPasswordSuccess: Matagumpay na binago ang SQL password.
+  wwcConfigConversationSQLPasswordInput: Ang kasalukuyang password ay %i I-type ang
+    anumang bagay maliban sa 0 upang magtakda ng bagong password, o i-type ang 0 upang
+    bumalik.
+  wwcConfigGUIToggleSQLSSLButton: I-toggle ang SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Matagumpay na binago ang SQL username.
+  wwcConfigConversationSQLUsernameInput: Ang kasalukuyang username ay %i I-type ang
+    anumang bagay maliban sa 0 upang magtakda ng bagong username, o i-type ang 0 upang
+    bumalik.
+  wwcConfigConversationSQLPortSuccess: Matagumpay na binago ang SQL port.
+  wwcConfigGUISQLUsernameButton: Baguhin ang Username ng SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Ang mga opsyonal na argumento ay matagumpay
+    na na-clear.
+  wwcConfigConversationSQLOptionalArgsInput: 'Ang kasalukuyang opsyonal na mga argumento
+    ng SQL ay: %i Uri ng mga argumento na pinaghihiwalay ng kuwit (key=value, key2=value2),
+    o i-type ang malinaw upang punasan ang kasalukuyang mga arg, o i-type ang 0 upang
+    bumalik.'
+  wwcConfigConversationSQLDatabaseNameInput: Ang kasalukuyang pangalan ng database
+    ay %i I-type ang anumang bagay maliban sa 0 upang magtakda ng bagong pangalan
+    ng database, o i-type ang 0 upang bumalik.
+  wwcConfigGUISQLDatabaseNameButton: Baguhin ang SQL Database
+  wwcConfigConversationSQLDatabaseNameSuccess: Matagumpay na binago ang pangalan ng
+    SQL database.
+  wwcConfigConversationFatalAsyncAbort: Ang kasalukuyang timeout upang i-abort ang
+    lahat ng mga gawain ng async ay %i seconds. I-type ang anumang bagay sa itaas
+    7 upang magtakda ng isang bagong timeout, o anumang bagay sa ibaba nito upang
+    bumalik.
+  wwcConfigConversationFatalAsyncSuccess: Matagumpay na itinakda ang timeout ng pag-sync
+    ng gawain.
+  wwcConfigGUIFatalAsyncAbortButton: Baguhin ang Timeout ng Async Task
+  wwcTimeoutException: Ang iyong utos ay nag-time out. Pakisubukang muli.

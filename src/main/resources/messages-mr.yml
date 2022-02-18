@@ -127,8 +127,6 @@ Messages:
   wwctrlRateLimitSetTarget: '%i ते %o सेकंदांची दर मर्यादा निश्चित करा.'
   wwcConfigGUIMessagesOverrideCustomLabel: नवीन संदेश
   wwcGUITempItem: आयटम प्रदर्शन
-  wwcConfigConversationConsoleTranslatorSuccess: वापरकर्ता %i यशस्वीरित्या %o कार्यान्वीत
-    केले.
   wwcBookTranslationFail: आपल्या लक्ष्य पुस्तकात एक किंवा अधिक पृष्ठे भाषांतरित करण्यात
     अक्षम.
   wwcConfigConversationGoogleTranslateAPIKeyInput: वर्तमान API की %i आहे. कृपया Google
@@ -138,7 +136,6 @@ Messages:
     अक्षम करण्यासाठी 0 टाइप करा. परत जाण्यासाठी 0 पेक्षा कमी काहीही टाइप करा.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google भाषांतर API की यशस्वीरित्या
     सेट करा.
-  wwcConfigConversationTranslatorSuccess: '%i यशस्वीरीत्या कार्यान्वीत केले.'
   wwcConfigGUIAmazonTranslateSecretKeyButton: ऍमेझॉन गुप्त की बदला
   wwcInvalidTranslator: अवैध अनुवादक सेटिंग्ज. कृपया हे प्लगइन वापरण्यासाठी आपल्या
     config.yml मध्ये किंवा /wwcc सह याचे निराकरण करा.
@@ -152,7 +149,6 @@ Messages:
     सत्र आहे.
   wwcTranslatorError: आपल्या अनुवाद प्रयत्न करताना एक समस्या व्याप्त. कृपया पुन्हा
     प्रयत्न करा.
-  wwcConfigConversationTranslatorFail: '%i कार्यान्वीत करण्यास अपयशी.'
   wwcUserDataReloaded: सर्व जतन केलेला वापरकर्ता डेटा लोड केला.
   wwcteOffSender: अस्तित्व भाषांतर अक्षम केले.
   wwcsLastTranslationTime: 'अंतिम (यशस्वी) भाषांतर वेळ: %i'
@@ -180,8 +176,6 @@ Messages:
   wwcsNotATranslator: '%i साठी अद्याप कोणतेही रेकॉर्ड उपलब्ध नाहीत.'
   wwcConfigGUIbStatsButton: बीटीएटीएस टॉगल करा
   wwctGUINewTranslationSource: स्रोत भाषा निवडा
-  wwcConfigConversationConsoleTranslatorFail: वापरकर्ता %i %o कार्यान्वीत करण्यास
-    अपयशी ठरले.
   wwctGUIMainMenuPlayer: '%i चे भाषांतर मेनू'
   wwctGUIBookButton: पुस्तक अनुवाद टॉगल करा
   wwcConfigGUIDebugModeButton: डीबग मोड टॉगल करा
@@ -189,7 +183,6 @@ Messages:
     255 chars ते डीफॉल्ट...
   wwcLangDetected: आढळलेली भाषा %o.
   wwcConfigDisabledbStats: अक्षम bStats.
-  wwcInGameEntityTranslationFailCatastrophic: लक्ष्य अस्तित्व भाषांतरित करण्यात अयशस्वी.
   wwcConfigMessageCharLimitEnabled: '%i वर्णांकरीता अक्षर मर्यादा प्रति संदेश सेट
     केले आहे.'
   wwcConfigGUIMessagesAlreadyOverriden: आपण आधीच हा संदेश एक अधिलिखित आहे!
@@ -262,7 +255,6 @@ Messages:
   wwcBookTranslateTitleFail: पुस्तक शीर्षक भाषांतरित करण्यात अयशस्वी.
   wwcConfigGUIChatMessagesOverrideDeleteButton: अधिलिखित हटवा
   wwcNoConsole: हा आदेश फक्त एक खेळाडू संपली जाऊ शकते.
-  wwcInGameObjectTranslationFailCatastrophic: लक्ष्य ऑब्जेक्टचे भाषांतर करण्यात अयशस्वी.
   wwcConfigConversationTranslationCacheSuccess: भाषांतर कॅशे मर्यादा यशस्वीरित्या
     सेट.
   wwctInvalidArgs: अवैध वितर्क प्रदान!
@@ -301,7 +293,6 @@ Messages:
   wwcConfigGUISendTranslationChatButton: लॉगिन वर सक्रिय अनुवादक गप्पा स्मरणपत्र पाठवा
   wwcConfigSyncDelayInvalid: कॉन्फिगर करा.yml मध्ये अवैध वापरकर्ता डेटा समक्रमण विलंब
     सेट. 7200 सेकंद डीफॉल्ट...
-  wwcConfigGUIToggleButton: '%i टॉगल करा'
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ऍमेझॉन प्रवेश की यशस्वीरित्या
     सेट.
   wwcConfigBadUpdateDelay: कॉन्फिगर करा.yml मध्ये अवैध अद्यतनकर्ता विलंब सेट. 86400
@@ -332,7 +323,62 @@ Messages:
   wwctGUIExistingTranslationOutput: 'आउटपुट भाषा: %i'
   wwcTranslatorAttempt: संरचना.yml मध्ये अनुवादक शी कनेक्ट करण्याचा प्रयत्न करीत आहे...
     ( %i/ %o प्रयत्न करा)
-  wwcTimeoutException: ' आपला आदेश कालबाह्य झाला. कृपया पुन्हा प्रयत्न करा.'
   wwcTimeoutExceptionConsole: प्लेयर %i ची सर्वात अलीकडील विनंती कालबाह्य झाली. ही
     त्रुटी घातक नाही, पण WorldwideChat तो घडू सुरू असेल तर रीलोड केले पाहिजे.
   wwcGUIPageNumber: 'पृष्ठ क्रमांक: %i'
+  wwcConfigSQLFail: SQL शी कनेक्ट करण्यात अयशस्वी.
+  wwcConfigSQLSuccess: एस क्यू एलशी यशस्वीरित्या कनेक्ट!
+  wwcConfigYAMLFallback: परत YAML वर पडणे...
+  wwcConfigGUIToggleSQLButton: SQL टॉगल करा
+  wwcConfigConversationToggleSQLSuccess: SQL यशस्वीरित्या toggled. बदल प्रभावी होण्यासाठी
+    रीलोड करा.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google भाषांतर यशस्वीरित्या टॉगल
+    केले. बदल प्रभावी होण्यासाठी रीलोड करा.
+  wwcConfigYAMLDefault: डेटा स्टोरेजसाठी YAML वर डीफॉल्ट.
+  wwcConfigGUISQLMenuButton: SQL सेटिंग्ज बदला
+  wwcConfigConversationWatsonTranslateToggleSuccess: यशस्वीरित्या टॉगल वॉटसन भाषांतर.
+    बदल प्रभावी होण्यासाठी रीलोड करा.
+  wwcConfigGUISQLSettings: SQL संरचना
+  wwcConfigGUIToggleGoogleTranslateButton: गूगल भाषांतर टॉगल करा
+  wwcConfigGUIToggleWatsonTranslateButton: टॉगल वॉटसन भाषांतर
+  wwcConfigGUIToggleAmazonTranslateButton: ऍमेझॉन भाषांतर टॉगल करा
+  wwcConfigGUIStorageSettings: स्टोरेज संरचना
+  wwcConfigConversationAmazonTranslateToggleSuccess: यशस्वीरित्या ऍमेझॉन भाषांतर toggled.
+    बदल प्रभावी होण्यासाठी रीलोड करा.
+  wwcConfigGUISQLPortButton: एस क्यू एल पोर्ट बदला
+  wwcConfigGUISQLOptionalArgsButton: एस क्यू एल पर्यायी युक्तिवाद बदला
+  wwcConfigConversationToggleSQLSSLSuccess: एस क्यू एल साठी SSL यशस्वीपणे टॉगल केले.
+  wwcConfigConversationSQLPortInput: सध्याचे पोर्ट %i आहे. 0 पेक्षा इतर काहीही टाइप
+    करा नवीन पोर्ट सेट करण्यासाठी किंवा परत जाण्यासाठी टाइप करा.
+  wwcConfigGUISQLPasswordButton: SQL पासवर्ड बदला
+  wwcConfigConversationSQLHostnameSuccess: एस क्यू एल यजमाननाव यशस्वीरित्या बदलले.
+  wwcConfigConversationSQLHostnameInput: सध्याचे यजमाननाव %i आहे. 0 पेक्षा इतर काहीही
+    टाइप करा नवीन यजमाननाव सेट करण्यासाठी, किंवा परत जाण्यासाठी टाइप करा 0.
+  wwcConfigGUISQLHostnameButton: एस क्यू एल यजमाननाव बदला
+  wwcConfigConversationSQLOptionalArgsSuccess: पर्यायी एस क्यू एल वितर्क यशस्वीरित्या
+    बदलले.
+  wwcConfigConversationSQLPasswordSuccess: एस क्यू एल पासवर्ड यशस्वीपणे बदलला.
+  wwcConfigConversationSQLPasswordInput: वर्तमान पासवर्ड %i आहे. 0 पेक्षा इतर काहीही
+    टाइप करा नवीन पासवर्ड सेट करा, किंवा परत जाण्यासाठी टाइप करा 0.
+  wwcConfigGUIToggleSQLSSLButton: एस क्यू एल SSL टॉगल करा
+  wwcConfigConversationSQLUsernameSuccess: एस क्यू एल वापरकर्तानाव यशस्वीरित्या बदलले.
+  wwcConfigConversationSQLUsernameInput: वर्तमान वापरकर्तानाव %i आहे. 0 पेक्षा इतर
+    काहीही टाइप करा नवीन वापरकर्तानाव सेट करण्यासाठी, किंवा परत जाण्यासाठी टाइप करा
+    0.
+  wwcConfigConversationSQLPortSuccess: एस क्यू एल पोर्ट यशस्वीरित्या बदलला.
+  wwcConfigGUISQLUsernameButton: SQL वापरकर्तानाव बदला
+  wwcConfigConversationSQLOptionalArgsCleared: पर्यायी वितर्क यशस्वीरित्या साफ.
+  wwcConfigConversationSQLOptionalArgsInput: 'वर्तमान पर्यायी SQL वितर्क आहेत: %i
+    स्वल्पविराम (key=value, key2=value2) द्वारे विभक्त केलेले प्रकार वितर्क, किंवा
+    वर्तमान args पुसणे स्पष्ट टाइप करा, किंवा प्रकार 0 परत जाण्यासाठी.'
+  wwcConfigConversationSQLDatabaseNameInput: वर्तमान डाटाबेस नाव %i आहे. 0 पेक्षा
+    इतर काहीही टाइप करा नवीन डेटाबेस नाव सेट करा, किंवा परत जाण्यासाठी टाइप करा 0.
+  wwcConfigGUISQLDatabaseNameButton: एस क्यू एल डेटाबेस बदला
+  wwcConfigConversationSQLDatabaseNameSuccess: एस क्यू एल डेटाबेसचे नाव यशस्वीरित्या
+    बदलले.
+  wwcConfigConversationFatalAsyncAbort: सर्व async कार्ये पूर्ण करण्यासाठी सध्याची
+    कालबाह %i सेकंद आहे. नवीन कालबाह्य सेट करण्यासाठी 7 वरील काहीही टाइप करा, किंवा
+    परत जाण्यासाठी त्याच्या खाली काहीही.
+  wwcConfigConversationFatalAsyncSuccess: Async कार्य कालबाह्य यशस्वीरित्या सेट.
+  wwcConfigGUIFatalAsyncAbortButton: Async कार्य कालबाह्य बदला
+  wwcTimeoutException: आपला आदेश कालबाह्य झाला. कृपया पुन्हा प्रयत्न करा.

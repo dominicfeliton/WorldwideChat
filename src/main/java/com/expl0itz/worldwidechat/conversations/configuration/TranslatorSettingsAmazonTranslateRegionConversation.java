@@ -6,12 +6,9 @@ import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.inventory.configuration.ConfigurationEachTranslatorSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.EachTranslatorSettingsGUI;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
-import net.kyori.adventure.text.format.NamedTextColor;
 import net.md_5.bungee.api.ChatColor;
 
 public class TranslatorSettingsAmazonTranslateRegionConversation extends StringPrompt {
@@ -27,20 +24,8 @@ public class TranslatorSettingsAmazonTranslateRegionConversation extends StringP
 
 	@Override
 	public Prompt acceptInput(ConversationContext context, String input) {
-		if (!input.equals("0")) {
-			main.getConfigManager().getMainConfig().set("Translator.amazonRegion", input);
-			main.getConfigManager().getMainConfig().set("Translator.useAmazonTranslate", false);
-			main.addPlayerUsingConfigurationGUI((Player) context.getForWhom());
-			final TextComponent successfulChange = Component.text()
-					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcConfigConversationAmazonTranslateRegionSuccess"))
-							.color(NamedTextColor.GREEN))
-					.build();
-			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
-		}
-		ConfigurationEachTranslatorSettingsGUI.getCurrentTranslatorSettings("Amazon Translate")
-				.open((Player) context.getForWhom());
-		return END_OF_CONVERSATION;
+		return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateRegionSuccess", 
+				new String[] {"Translator.amazonRegion", "Translator.useAmazonTranslate"}, new Object[] {input, false}, EachTranslatorSettingsGUI.getCurrentTranslatorSettings("Amazon Translate"));
 	}
 
 }

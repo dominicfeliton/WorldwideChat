@@ -190,12 +190,6 @@ Messages:
     отправлен журнал.
   wwcInventoryError: Обнаружена ошибка с графическим интерфейсом пользователя %i.
     Сообщите об этой проблеме разработчику.
-  wwcConfigConversationTranslatorFail: Не удалось включить %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Пользователь %я успешно включить
-    %o.
-  wwcConfigConversationTranslatorSuccess: Успешно включено %i.
-  wwcConfigConversationConsoleTranslatorFail: Пользователю %Мне не удалось включить
-    %o.
   wwcSignTranslationFail: Невозможно перевести одну или несколько строк на целевом
     знаке.
   wwcBookTranslationFail: Невозможно перевести одну или несколько страниц целевой
@@ -220,7 +214,6 @@ Messages:
   wwcInvalidTranslator: Неверные настройки переводчика. Пожалуйста, исправьте это
     в своем config.yml или с помощью /wwcc, чтобы использовать этот плагин.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурация'
-  wwcConfigGUIToggleButton: Переключить %i
   wwcConfigGUIWatsonButton: Уотсон
   wwcServerReloadWarning: WorldwideChat не потворствует использованию /reload. Пожалуйста,
     действуйте с осторожностью.
@@ -280,8 +273,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Изменить глобальный лимит ставок
   wwcteOnSender: Перевод сущностей включен. Щелкните правой кнопкой мыши на объекте,
     чтобы перевести его имя!
-  wwcInGameObjectTranslationFailCatastrophic: Не удалось преобразовать целевой объект.
-  wwcInGameEntityTranslationFailCatastrophic: Не удалось преобразовать целевую сущность.
   wwcConfigGUIResponseLimitButton: Таймаут ответа на изменение транслятора
   wwcConfigMessageCharLimitEnabled: Ограничение количества символов на сообщение равно
     %i символов.
@@ -340,8 +331,62 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Язык вывода: %i'
   wwcTranslatorAttempt: Попытка подключиться к переводчику в config.yml... (Попытка
     %i/ %o)
-  wwcTimeoutException: ' Время ожидания вашей команды истекло. Пожалуйста, попробуйте
-    еще раз.'
   wwcTimeoutExceptionConsole: У игрока %i был последний тайм-аут запроса. Эта ошибка
     не фатальная, но WorldwideChat следует перезагрузить, если она продолжает происходить.
   wwcGUIPageNumber: 'Номер страницы: %i'
+  wwcConfigSQLFail: Не удалось подключиться к SQL.
+  wwcConfigSQLSuccess: Успешно подключено к SQL!
+  wwcConfigYAMLFallback: Возвращаясь к YAML...
+  wwcConfigGUIToggleSQLButton: Переключить SQL
+  wwcConfigConversationToggleSQLSuccess: SQL успешно переключен. Перезагрузите, чтобы
+    изменения вступили в силу.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google Переводчик успешно переключен.
+    Перезагрузите, чтобы изменения вступили в силу.
+  wwcConfigYAMLDefault: По умолчанию для хранения данных используется YAML.
+  wwcConfigGUISQLMenuButton: Изменить настройки SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Перевод Watson успешно переключен.
+    Перезагрузите, чтобы изменения вступили в силу.
+  wwcConfigGUISQLSettings: Конфигурация SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Переключить Google Переводчик
+  wwcConfigGUIToggleWatsonTranslateButton: Переключить Watson Перевод
+  wwcConfigGUIToggleAmazonTranslateButton: Переключить перевод Amazon
+  wwcConfigGUIStorageSettings: Конфигурация хранилища
+  wwcConfigConversationAmazonTranslateToggleSuccess: Сервис Amazon Translate успешно
+    переключен. Перезагрузите, чтобы изменения вступили в силу.
+  wwcConfigGUISQLPortButton: Изменить порт SQL
+  wwcConfigGUISQLOptionalArgsButton: Изменить необязательные аргументы SQL
+  wwcConfigConversationToggleSQLSSLSuccess: Протокол SSL для SQL успешно переключен.
+  wwcConfigConversationSQLPortInput: 'Текущий порт: %i. Введите что-либо, кроме 0,
+    чтобы установить новый порт, или 0, чтобы вернуться назад.'
+  wwcConfigGUISQLPasswordButton: Изменить пароль SQL
+  wwcConfigConversationSQLHostnameSuccess: Имя хоста SQL успешно изменено.
+  wwcConfigConversationSQLHostnameInput: 'Текущее имя хоста: %i. Введите любое значение,
+    кроме 0, чтобы задать новое имя хоста, или 0, чтобы вернуться назад.'
+  wwcConfigGUISQLHostnameButton: Изменить имя хоста SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Необязательные аргументы SQL успешно
+    изменены.
+  wwcConfigConversationSQLPasswordSuccess: Пароль SQL успешно изменен.
+  wwcConfigConversationSQLPasswordInput: 'Текущий пароль: %i. Введите любой другой
+    пароль, кроме 0, чтобы установить новый пароль, или 0, чтобы вернуться.'
+  wwcConfigGUIToggleSQLSSLButton: Переключить SSL SQL
+  wwcConfigConversationSQLUsernameSuccess: Имя пользователя SQL успешно изменено.
+  wwcConfigConversationSQLUsernameInput: 'Текущее имя пользователя: %i. Введите любое
+    значение, кроме 0, чтобы задать новое имя пользователя, или 0, чтобы вернуться.'
+  wwcConfigConversationSQLPortSuccess: Порт SQL успешно изменен.
+  wwcConfigGUISQLUsernameButton: Изменить имя пользователя SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Необязательные аргументы успешно очищены.
+  wwcConfigConversationSQLOptionalArgsInput: 'Текущие необязательные аргументы SQL:
+    %i. Введите аргументы, разделенные запятой (ключ=значение, key2=value2), или введите
+    clear, чтобы стереть текущие аргументы, или введите 0, чтобы вернуться назад.'
+  wwcConfigConversationSQLDatabaseNameInput: 'Текущее имя базы данных: %i. Введите
+    любое другое имя, кроме 0, чтобы задать новое имя базы данных, или 0, чтобы вернуться
+    назад.'
+  wwcConfigGUISQLDatabaseNameButton: Изменить базу данных SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Имя базы данных SQL успешно изменено.
+  wwcConfigConversationFatalAsyncAbort: Текущее время ожидания для прерывания всех
+    асинхронных задач составляет %i секунд. Введите значение выше 7, чтобы установить
+    новый тайм-аут, или значение ниже, чтобы вернуться.
+  wwcConfigConversationFatalAsyncSuccess: Тайм-аут асинхронной задачи установлен успешно.
+  wwcConfigGUIFatalAsyncAbortButton: Изменить тайм-аут асинхронной задачи
+  wwcTimeoutException: Время ожидания вашей команды истекло. Пожалуйста, попробуйте
+    еще раз.

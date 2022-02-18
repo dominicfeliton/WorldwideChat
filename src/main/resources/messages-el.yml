@@ -199,11 +199,6 @@ Messages:
     έχει σταλεί στην κονσόλα.
   wwcInventoryError: Εντοπίστηκε σφάλμα με το GUI του χρήστη %i. Παρακαλώ αναφέρετε
     αυτό το ζήτημα στον προγραμματιστή.
-  wwcConfigConversationTranslatorFail: Αποτυχία κατά την απεργία του %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Ο χρήστης %i απεργοποίησα επιτυχής
-    %o.
-  wwcConfigConversationTranslatorSuccess: Επιτυχής %i.
-  wwcConfigConversationConsoleTranslatorFail: Ο χρήστης %o απέτυχε να en %o.
   wwcSignTranslationFail: Δεν είναι δυνατή η μετάφραση μιας ή περισσοτέρων γραμμών
     στο σύμβολο προορισμού.
   wwcBookTranslationFail: Δεν είναι δυνατή η μετάφραση μιας ή περισσοτέρων σελίδων
@@ -229,7 +224,6 @@ Messages:
   wwcInvalidTranslator: Μη έγκυρες ρυθμίσεις μεταφραστή. Διορθώστε το στο config.yml
     ή στο /wwcc για να χρησιμοποιήσετε αυτό το πρόσθετο.
   wwcConfigGUIEachTranslatorSettings: '%i Ρύθμιση παραμέτρων'
-  wwcConfigGUIToggleButton: Εναλλαγή του %i
   wwcConfigGUIWatsonButton: Γουάτσον
   wwcServerReloadWarning: Το WorldwideChat δεν επιτρέπει τη χρήση του /reload. Παρακαλώ
     προχωρήστε με προσοχή.
@@ -290,8 +284,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Αλλαγή ορίου καθολικού ρυθμού
   wwcteOnSender: Ενεργοποίηση μετάφρασης οντότητας. Κάντε δεξί κλικ σε μια οντότητα
     για να μεταφράσετε το όνομά της!
-  wwcInGameObjectTranslationFailCatastrophic: Αποτυχία μετάφρασης αντικειμένου προορισμού.
-  wwcInGameEntityTranslationFailCatastrophic: Η μετάφραση της οντότητας-στόχου απέτυχε.
   wwcConfigGUIResponseLimitButton: Αλλαγή χρονικού ορίου απόκρισης μεταφραστή
   wwcConfigMessageCharLimitEnabled: Όριο χαρακτήρων ανά μήνυμα που έχει οριστεί σε
     %i χαρακτήρες.
@@ -356,8 +348,72 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Γλώσσα εξόδου: %i'
   wwcTranslatorAttempt: Προσπάθεια σύνδεσης με μεταφραστή στο config.yml... (Προσπάθεια
     του %i/ %o)
-  wwcTimeoutException: ' Η εντολή σου έληξε. Παρακαλώ προσπαθήστε ξανά.'
   wwcTimeoutExceptionConsole: Παίχτης %Είχα το χρονικό όριο της πιο πρόσφατης αίτησής
     του. Αυτό το σφάλμα δεν είναι θανατηφόρο, αλλά το WorldwideChat θα πρέπει να επαναφορτωθεί
     εάν εξακολουθεί να συμβαίνει.
   wwcGUIPageNumber: 'Αριθμός σελίδας: %i'
+  wwcConfigSQLFail: Αποτυχία σύνδεσης με SQL.
+  wwcConfigSQLSuccess: Επιτυχής σύνδεση με SQL!
+  wwcConfigYAMLFallback: Πέφτει πίσω στο YAML...
+  wwcConfigGUIToggleSQLButton: Εναλλαγή SQL
+  wwcConfigConversationToggleSQLSuccess: SQL εναλλαγή με επιτυχία. Επαναφόρτωση για
+    να τεθεί σε ισχύ η αλλαγή.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Με επιτυχία εναλλαγή Μετάφραση
+    Google. Επαναφόρτωση για να τεθεί σε ισχύ η αλλαγή.
+  wwcConfigYAMLDefault: Προέχει το YAML για αποθήκευση δεδομένων.
+  wwcConfigGUISQLMenuButton: Αλλαγή ρυθμίσεων SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Με επιτυχία εναλλαγή Watson Μετάφραση.
+    Επαναφόρτωση για να τεθεί σε ισχύ η αλλαγή.
+  wwcConfigGUISQLSettings: Ρύθμιση παραμέτρων SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Εναλλαγή Μετάφραση Google
+  wwcConfigGUIToggleWatsonTranslateButton: Εναλλαγή της μετάφρασης Watson
+  wwcConfigGUIToggleAmazonTranslateButton: Εναλλαγή Μετάφραση του Amazon
+  wwcConfigGUIStorageSettings: Ρύθμιση παραμέτρων αποθήκευσης
+  wwcConfigConversationAmazonTranslateToggleSuccess: Με επιτυχία εναλλαγή Amazon Μετάφραση.
+    Επαναφόρτωση για να τεθεί σε ισχύ η αλλαγή.
+  wwcConfigGUISQLPortButton: Αλλαγή θύρας SQL
+  wwcConfigGUISQLOptionalArgsButton: Αλλαγή προαιρετικών ορρισμάτων SQL
+  wwcConfigConversationToggleSQLSSLSuccess: Το SSL για SQL εναλλαγή με επιτυχία.
+  wwcConfigConversationSQLPortInput: Η τρέχουσα θύρα είναι %i. Πληκτρολογήστε οτιδήποτε
+    άλλο εκτός από το 0 για να ορίσετε μια νέα θύρα ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUISQLPasswordButton: Αλλαγή κωδικού πρόσβασης SQL
+  wwcConfigConversationSQLHostnameSuccess: Τροποποιήθηκε με επιτυχία το όνομα κεντρικού
+    υπολογιστή SQL.
+  wwcConfigConversationSQLHostnameInput: Το τρέχον όνομα κεντρικού υπολογιστή είναι
+    %i. Πληκτρολογήστε οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα
+    κεντρικού υπολογιστή ή πληκτρολογήστε 0 για επιστροφή.
+  wwcConfigGUISQLHostnameButton: Αλλαγή ονόματος κεντρικού υπολογιστή SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Αλλάξατε με επιτυχία τα προαιρετικά
+    ορίσματα SQL.
+  wwcConfigConversationSQLPasswordSuccess: Αλλάξατε με επιτυχία τον κωδικό πρόσβασης
+    SQL.
+  wwcConfigConversationSQLPasswordInput: Ο τρέχων κωδικός πρόσβασης είναι %i. Πληκτρολογήστε
+    οτιδήποτε άλλο εκτός από το 0 για να ορίσετε έναν νέο κωδικό πρόσβασης ή πληκτρολογήστε
+    0 για να επιστρέψετε.
+  wwcConfigGUIToggleSQLSSLButton: Εναλλαγή SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Τροποποιήθηκε με επιτυχία το όνομα χρήστη
+    SQL.
+  wwcConfigConversationSQLUsernameInput: Το τρέχον όνομα χρήστη είναι %i. Πληκτρολογήστε
+    οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα χρήστη ή πληκτρολογήστε
+    0 για να επιστρέψετε.
+  wwcConfigConversationSQLPortSuccess: Αλλάξατε με επιτυχία τη θύρα SQL.
+  wwcConfigGUISQLUsernameButton: Αλλαγή ονόματος χρήστη SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Τα προαιρετικά ορίσματα καταργήθηκαν
+    με επιτυχία.
+  wwcConfigConversationSQLOptionalArgsInput: 'Τα τρέχοντα προαιρετικά ορίσματα SQL
+    είναι: %i. Πληκτρολογήστε ορίσματα διαχωρισμένα με κόμμα (key=value, key2=value2)
+    ή πληκτρολογήστε clear για να διαγράψετε τα τρέχοντα args ή πληκτρολογήστε 0 για
+    να επιστρέψετε.'
+  wwcConfigConversationSQLDatabaseNameInput: Το τρέχον όνομα βάσης δεδομένων είναι
+    %i. Πληκτρολογήστε οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα
+    βάσης δεδομένων ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUISQLDatabaseNameButton: Αλλαγή βάσης δεδομένων SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Τροποποιήθηκε με επιτυχία το όνομα
+    της βάσης δεδομένων SQL.
+  wwcConfigConversationFatalAsyncAbort: Το τρέχον χρονικό όριο για να ματαιώσετε όλες
+    τις ασύγχρονες εργασίες είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε πάνω από
+    το 7 για να ορίσετε ένα νέο χρονικό όριο, ή οτιδήποτε κάτω από αυτό για να επιστρέψετε.
+  wwcConfigConversationFatalAsyncSuccess: Καθορίστηκε με επιτυχία το χρονικό όριο
+    ασύγχρονης εργασίας.
+  wwcConfigGUIFatalAsyncAbortButton: Αλλαγή χρονικού ορίου εργασίας ασύγχρονη
+  wwcTimeoutException: Η εντολή σου έληξε. Παρακαλώ προσπαθήστε ξανά.

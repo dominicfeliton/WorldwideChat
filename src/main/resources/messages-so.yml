@@ -188,12 +188,6 @@ Messages:
   wwcInventoryErrorPlayer: Error ogaado aad gui. log A ayaa loo diray Console ah.
   wwcInventoryError: Khalad la ogaaday GUI ee isticmaalaha %i. Fadlan u sheeg arintan
     horumariyaha.
-  wwcConfigConversationTranslatorFail: Ku guuldareystay in la suurtogeliyo %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Isticmaalaha %waxaan si guul leh
-    u awoodiay %o.
-  wwcConfigConversationTranslatorSuccess: Si guul leh loo karto %i.
-  wwcConfigConversationConsoleTranslatorFail: Isticmaalaha %waxaan ku guuldareystay
-    inuu awoodo %o.
   wwcSignTranslationFail: Aan awoodin in uu turjumo hal ama ka badan khadadka calaamadaada
     bartilmaameedka.
   wwcBookTranslationFail: Awoodi kari waayay in uu turjumo hal ama ka badan bog buuggaaga
@@ -219,7 +213,6 @@ Messages:
   wwcInvalidTranslator: Goobaha turjumaan aan sax ahayn. Fadlan hagaajin this in aad
     config.yml ama /wwcc si aad u isticmaasho plugin this.
   wwcConfigGUIEachTranslatorSettings: '%i Hagaajinta'
-  wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ma waafaqsanayn isticmaalka /reload. Fadlan
     sii wad si taxadar leh.
@@ -279,10 +272,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Bedelka Heerka Caalamiga ah
   wwcteOnSender: Turjumaad hay'ad ayaa awood u leh. Xuquuqda-riix hay'ad si ay u turjumaan
     magaceeda!
-  wwcInGameObjectTranslationFailCatastrophic: Ku guuldareystay in ay turjumaan shay
-    diirada.
-  wwcInGameEntityTranslationFailCatastrophic: Ku guuldareystay in ay turjumaan hay'ad
-    diirada
   wwcConfigGUIResponseLimitButton: Bedelka Jawaabaha Turjubaanka
   wwcConfigMessageCharLimitEnabled: Xaddidaadda xarfaha fariin kasta oo loo qoondeeyo
     %i jilayaal.
@@ -349,8 +338,70 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Luqadda Wax Soo Saarka: %i'
   wwcTranslatorAttempt: Isku dayga in ay ku xidhmaan turjumaan in config.yml... (Isku
     day %i/ %o)
-  wwcTimeoutException: ' Your amarka lagu tiriyaa baxay. Fadlan isku day mar kale.'
   wwcTimeoutExceptionConsole: Ciyaaryahan %i lahaa codsigoodii ugu dambeeyay ee codsigooda.
     Qaladkani ma aha mid dilaa ah, laakiin WorldwideChat waa in dib loo cusbooneysiiyaa
     haddii ay sii socoto.
   wwcGUIPageNumber: 'Lambarka Bogga: %i'
+  wwcConfigSQLFail: Ku guuldareystay inuu ku xirmo SQL.
+  wwcConfigSQLSuccess: Si guul leh ugu xiran SQL!
+  wwcConfigYAMLFallback: Dib ugu noqoshada YAML...
+  wwcConfigGUIToggleSQLButton: Toggle SQL
+  wwcConfigConversationToggleSQLSuccess: SQL ayaa si guul leh u toggled. Dib u cusbooneysii
+    isbedelka si uu u dhaqan geliyo.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Si guul leh u roggletGoogle Translate.
+    Dib u cusbooneysii isbedelka si uu u dhaqan geliyo.
+  wwcConfigYAMLDefault: Defaulted in YAML kaydinta xogta.
+  wwcConfigGUISQLMenuButton: Beddel Settings SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Si guul leh toggled Watson Translate.
+    Dib u cusbooneysii isbedelka si uu u dhaqan geliyo.
+  wwcConfigGUISQLSettings: Qaabeynta SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Translate
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Translate
+  wwcConfigGUIStorageSettings: haggaajin kaydinta
+  wwcConfigConversationAmazonTranslateToggleSuccess: Si guul leh u roggled Amazon
+    Translate. Dib u cusbooneysii isbedelka si uu u dhaqan geliyo.
+  wwcConfigGUISQLPortButton: Beddel Port SQL
+  wwcConfigGUISQLOptionalArgsButton: Beddel Doodaha Ikhtiyaariga ah ee SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL ee SQL si guul leh ayaa loo hagaajiyay.
+  wwcConfigConversationSQLPortInput: Dekedda hadda waa %i. qor wax kale oo aan ahayn
+    0 si aad u dejiso deked cusub, ama nooca 0 si aad dib ugu noqoto.
+  wwcConfigGUISQLPasswordButton: Beddel lambarka sirta ah SQL
+  wwcConfigConversationSQLHostnameSuccess: Si guul leh ayaa loo bedelay magaca hostname
+    SQL.
+  wwcConfigConversationSQLHostnameInput: hostname hadda waa %i. nooca wax kale oo
+    aan ahayn 0 si ay u dejiyaan hostname cusub, ama nooca 0 in ay dib ugu noqdaan.
+  wwcConfigGUISQLHostnameButton: Beddel Magaca Hoyga SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Si guul leh u beddelay doodaha SQL
+    ee ikhtiyaariga ah.
+  wwcConfigConversationSQLPasswordSuccess: Si guul leh u beddelay lambarka sirta ah
+    ee SQL.
+  wwcConfigConversationSQLPasswordInput: Lambarka sirta ah ee hadda jira waa %i. ku
+    qor wax kasta oo aan ahayn 0 si aad u dejiso erey cusub, ama ku qor 0 si aad dib
+    ugu noqoto.
+  wwcConfigGUIToggleSQLSSLButton: Toggle SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Si guul leh ayaa loo beddelay magaca isticmaalaha
+    SQL.
+  wwcConfigConversationSQLUsernameInput: Magaca isticmaalaha hadda jira waa %i. qor
+    wax kasta oo aan ahayn 0 si aad u dejiso username cusub, ama ku qor 0 si aad dib
+    ugu noqoto.
+  wwcConfigConversationSQLPortSuccess: Si guul leh ayaa loo beddelay dekedda SQL.
+  wwcConfigGUISQLUsernameButton: Beddel Username SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Doodaha ikhtiyaariga ah ayaa si guul
+    leh looga bar
+  wwcConfigConversationSQLOptionalArgsInput: 'Doodaha SQL ee ikhtiyaariga ah ee hadda
+    jira waa: %i. doodaha nooca kala soocay by comma a (muhiimka ah = qiimaha, key2
+    = value2), ama nooca cad si aad u tirtirto args hadda, ama nooca 0 in ay dib ugu
+    noqdaan.'
+  wwcConfigConversationSQLDatabaseNameInput: Magaca xogta hadda jira waa %i. Ku qor
+    wax kasta oo aan ahayn 0 si aad u dejiso magac cusub oo xog uruurin ah, ama nooca
+    0 si aad dib ugu noqoto.
+  wwcConfigGUISQLDatabaseNameButton: Beddel Xogta SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Si guul leh ayaa loo beddelay magaca
+    xogta SQL.
+  wwcConfigConversationFatalAsyncAbort: Waqtiga hadda jira ee lagu soo rido dhammaan
+    howlaha async waa %i ilbiriqsi. Ku qor wax kasta oo ka sarreeya 7 si aad u dejiso
+    feejignaan cusub, ama wax kasta oo ka hooseeya si aad dib ugu noqoto.
+  wwcConfigConversationFatalAsyncSuccess: feejignaan hawsha Async guul dhigay.
+  wwcConfigGUIFatalAsyncAbortButton: Beddel Async Task Feejignaan
+  wwcTimeoutException: Your amarka lagu tiriyaa baxay. Fadlan isku day mar kale.

@@ -195,10 +195,6 @@ Messages:
     அனுப்பப்பட்டுள்ளது.
   wwcInventoryError: பயனர் %i இன் GUI உடன் கண்டறியப்பட்ட பிழை. இந்த சிக்கலை உருவாக்குநருக்கு
     தெரிவிக்கவும்.
-  wwcConfigConversationTranslatorFail: '%i ஐ செயல்படுத்தத் தவறிவிட்டது.'
-  wwcConfigConversationConsoleTranslatorSuccess: பயனர் %i வெற்றிகரமாக %o ஐ செயல்படுத்துகிறது.
-  wwcConfigConversationTranslatorSuccess: '%i ஐ வெற்றிகரமாகச் செயல்படுத்துகிறது.'
-  wwcConfigConversationConsoleTranslatorFail: பயனர் %o ஐ செயல்படுத்தத் தவறிவிட்டது.
   wwcSignTranslationFail: உங்கள் இலக்கு அடையாளம் ஒன்று அல்லது அதற்கு மேற்பட்ட வரிகளை
     மொழிபெயர்க்க முடியவில்லை.
   wwcBookTranslationFail: உங்கள் இலக்கு புத்தகத்தில் ஒன்று அல்லது அதற்கு மேற்பட்ட
@@ -223,7 +219,6 @@ Messages:
   wwcInvalidTranslator: தவறான மொழிபெயர்ப்பாளர் அமைப்புகள். இந்த சொருகி பயன்படுத்த
     உங்கள் config.yml அல்லது wwcc உடன் இதை சரிசெய்யவும்.
   wwcConfigGUIEachTranslatorSettings: '%i உள்ளமைவு'
-  wwcConfigGUIToggleButton: மாற்று %i
   wwcConfigGUIWatsonButton: வாட்சன்
   wwcServerReloadWarning: WorldWideSHat /reloadஇன் பயன்பாடு மறுக்கவில்லை. எச்சரிக்கையுடன்
     தொடரவும்.
@@ -283,8 +278,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: உலகளாவிய வீத வரம்பை மாற்றவும்
   wwcteOnSender: நிறுவனம் மொழிபெயர்ப்பு இயக்கப்பட்டது. அதன் பெயரை மொழிபெயர்க்க ஒரு
     நிறுவனத்தின் மீது வலது கிளிக் செய்யவும்!
-  wwcInGameObjectTranslationFailCatastrophic: இலக்குப் பொருளை மொழிபெயர்க்க தவறிவிட்டது.
-  wwcInGameEntityTranslationFailCatastrophic: இலக்கு நிறுவனத்தை மொழிபெயர்த்துத் தோல்வியடைந்தார்.
   wwcConfigGUIResponseLimitButton: மொழிபெயர்ப்பாளர் பதில் நேர முடிவை மாற்றவும்
   wwcConfigMessageCharLimitEnabled: செய்திக்கு எழுத்து வரம்பு %i எழுத்துக்களுக்கு
     அமைக்கப்பட்டுள்ளது.
@@ -348,8 +341,66 @@ Messages:
   wwctGUIExistingTranslationOutput: 'வெளியீட்டு மொழி: %i'
   wwcTranslatorAttempt: config.yml மொழிபெயர்ப்பாளர் இணைக்க முயற்சிக்கிறது... ( %i/
     %o ஐ முயற்சிக்க)
-  wwcTimeoutException: ' உங்கள் கட்டளை நேரம் கடந்துவிட்டது. மீண்டும் முயற்சிக்கவும்.'
   wwcTimeoutExceptionConsole: பிளேயர் % நான் அவர்களின் மிக சமீபத்திய கோரிக்கை நேரம்
     முடிந்தது. இந்த பிழை அபாயகரமானது அல்ல, ஆனால் அது தொடர்ந்து நடந்தால் WorldwideChat
     மீண்டும் ஏற்றப்பட வேண்டும்.
   wwcGUIPageNumber: 'பக்க எண்: %i'
+  wwcConfigSQLFail: SQL உடன் இணைக்கத் தவறிவிட்டது.
+  wwcConfigSQLSuccess: வெற்றிகரமாக SQL இணைக்கப்பட்டுள்ளது!
+  wwcConfigYAMLFallback: YAML க்கு மீண்டும் வீழ்ச்சி...
+  wwcConfigGUIToggleSQLButton: SQL ஐ மாற்று
+  wwcConfigConversationToggleSQLSuccess: SQL வெற்றிகரமாக மாறுகிறது. மாற்றம் நடைமுறைக்கு
+    ஏற்றவும்.
+  wwcConfigConversationGoogleTranslateToggleSuccess: வெற்றிகரமாக மாற்றக்கூடிய Google
+    மொழிபெயர். மாற்றம் நடைமுறைக்கு ஏற்றவும்.
+  wwcConfigYAMLDefault: தரவு சேமிப்புக்காக YAML க்கு இயல்புநிலை.
+  wwcConfigGUISQLMenuButton: SQL அமைப்புகளை மாற்றவும்
+  wwcConfigConversationWatsonTranslateToggleSuccess: வெற்றிகரமாக மாற்று வாட்சன் மொழிபெயர்.
+    மாற்றம் நடைமுறைக்கு ஏற்றவும்.
+  wwcConfigGUISQLSettings: SQL கட்டமைப்பு
+  wwcConfigGUIToggleGoogleTranslateButton: Google மொழிபெயர் மாற்று
+  wwcConfigGUIToggleWatsonTranslateButton: வாட்சன் மொழிபெயர் மாற்று
+  wwcConfigGUIToggleAmazonTranslateButton: அமேசான் மொழிபெயர் மாற்று
+  wwcConfigGUIStorageSettings: சேமிப்பக உள்ளமைவு
+  wwcConfigConversationAmazonTranslateToggleSuccess: வெற்றிகரமாக மாற்று அமேசான் மொழிபெயர்.
+    மாற்றம் நடைமுறைக்கு ஏற்றவும்.
+  wwcConfigGUISQLPortButton: SQL போர்ட் மாற்ற
+  wwcConfigGUISQLOptionalArgsButton: SQL விருப்ப வாதங்கள் மாற்ற
+  wwcConfigConversationToggleSQLSSLSuccess: SQL க்கான SSL வெற்றிகரமாக மாற்றப்பட்டது.
+  wwcConfigConversationSQLPortInput: தற்போதைய துறைமுகம் %i ஆகும். ஒரு புதிய துறைமுகத்தை
+    அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும், அல்லது திரும்பி செல்ல 0 தட்டச்சு
+    செய்யவும்.
+  wwcConfigGUISQLPasswordButton: SQL கடவுச்சொல்லை மாற்ற
+  wwcConfigConversationSQLHostnameSuccess: வெற்றிகரமாக SQL புரவலன் பெயர் மாற்றப்பட்டது.
+  wwcConfigConversationSQLHostnameInput: தற்போதைய ஹோஸ்ட்பெயர் %i. ஒரு புதிய ஹோஸ்ட்பெயரை
+    அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க, அல்லது திரும்பி செல்ல 0 என தட்டச்சு
+    செய்க.
+  wwcConfigGUISQLHostnameButton: SQL ஹோஸ்ட்பெயரை மாற்றவும்
+  wwcConfigConversationSQLOptionalArgsSuccess: வெற்றிகரமாக விருப்ப SQL வாதங்கள் மாற்றப்பட்டது.
+  wwcConfigConversationSQLPasswordSuccess: வெற்றிகரமாக SQL கடவுச்சொல்லை மாற்றப்பட்டது.
+  wwcConfigConversationSQLPasswordInput: தற்போதைய கடவுச்சொல்லை %i ஆகும். ஒரு புதிய
+    கடவுச்சொல்லை அமைக்க 0 ஐ தவிர வேறு எதையும் தட்டச்சு செய்க, அல்லது திரும்பி செல்ல
+    0 என தட்டச்சு செய்க.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL ஐ மாற்று
+  wwcConfigConversationSQLUsernameSuccess: வெற்றிகரமாக SQL பயனர்பெயர் மாற்றப்பட்டது.
+  wwcConfigConversationSQLUsernameInput: தற்போதைய பயனர்பெயர் %i ஆகும். ஒரு புதிய பயனர்பெயரை
+    அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும், அல்லது திரும்பி செல்ல 0 தட்டச்சு
+    செய்யவும்.
+  wwcConfigConversationSQLPortSuccess: SQL துறைமுகத்தை வெற்றிகரமாக மாற்றியது.
+  wwcConfigGUISQLUsernameButton: SQL பயனர்பெயரை மாற்றவும்
+  wwcConfigConversationSQLOptionalArgsCleared: விருப்ப வாதங்கள் வெற்றிகரமாக அழிக்கப்படும்.
+  wwcConfigConversationSQLOptionalArgsInput: 'தற்போதைய விருப்பமான SQL வாதங்கள்: %i.
+    காற்புள்ளியால் பிரிக்கப்பட்ட வாதங்கள் (key=value, key2=value2), அல்லது தற்போதைய
+    வளைவுகளை துடைக்க தெளிவாகத் தட்டச்சு செய்யவும் அல்லது திரும்பிச் செல்ல 0 தட்டச்சு
+    செய்யவும்.'
+  wwcConfigConversationSQLDatabaseNameInput: தற்போதைய தரவுத்தள பெயர் %i ஆகும். ஒரு
+    புதிய தரவுத்தள பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க, அல்லது திரும்பி
+    செல்ல 0 தட்டச்சு செய்க.
+  wwcConfigGUISQLDatabaseNameButton: SQL தரவுத்தள மாற்ற
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL தரவுத்தள பெயரை வெற்றிகரமாக மாற்றியது.
+  wwcConfigConversationFatalAsyncAbort: அனைத்து async பணிகளையும் நீக்குவதற்கான தற்போதைய
+    நேரம் முடிவு %i வினாடிகள் ஆகும். ஒரு புதிய நேர முடிவை அமைக்க 7 க்கு மேலே எதையும்
+    தட்டச்சு செய்க, அல்லது அதற்கு கீழே உள்ள எதையும் திரும்பிச் செல்ல.
+  wwcConfigConversationFatalAsyncSuccess: Async பணி நேர முடிவின் வெற்றிகரமாக அமைக்க.
+  wwcConfigGUIFatalAsyncAbortButton: Async பணி நேர முடிவை மாற்றவும்
+  wwcTimeoutException: உங்கள் கட்டளை நேரம் கடந்துவிட்டது. மீண்டும் முயற்சிக்கவும்.

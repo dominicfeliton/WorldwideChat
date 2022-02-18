@@ -26,12 +26,12 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 
-public class ConfigurationMessagesOverridePossibleListGUI implements InventoryProvider {
+public class MessagesOverridePossibleListGUI implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	
 	public static final SmartInventory overrideNewMessageSettings = SmartInventory.builder().id("overridePossibilitiesMenu")
-			.provider(new ConfigurationMessagesOverridePossibleListGUI()).size(6, 9)
+			.provider(new MessagesOverridePossibleListGUI()).size(6, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatMessagesPossibleOverrides"))
 	        .build();
@@ -39,12 +39,8 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		try {
-			/* White stained glass borders */
-			ItemStack customBorders = XMaterial.YELLOW_STAINED_GLASS_PANE.parseItem();
-			ItemMeta borderMeta = customBorders.getItemMeta();
-			borderMeta.setDisplayName(" ");
-			customBorders.setItemMeta(borderMeta);
-			contents.fillBorders(ClickableItem.empty(customBorders));
+			/* Yellow stained glass borders */
+			WWCInventoryManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
 			
 			/* Pagination */
 			Pagination pagination = contents.pagination();
@@ -77,7 +73,7 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 				currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {
 					// Start conversation
 					ConversationFactory textConvo = new ConversationFactory(main).withModality(true)
-							.withFirstPrompt(new ChatSettingsModifyOverrideTextConversation(ConfigurationMessagesOverridePossibleListGUI.overrideNewMessageSettings, entry.getKey()));
+							.withFirstPrompt(new ChatSettingsModifyOverrideTextConversation(MessagesOverridePossibleListGUI.overrideNewMessageSettings, entry.getKey()));
 				    textConvo.buildConversation(player).begin();
 				});
 				currSpot++;
@@ -90,27 +86,19 @@ public class ConfigurationMessagesOverridePossibleListGUI implements InventoryPr
 			
 			/* Bottom Left Option: Previous Page */
 			if (!pagination.isFirst()) {
-				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
-					overrideNewMessageSettings.open(player,
-							pagination.previous().getPage());
-				}));
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous");
 			} else {
-				contents.set(5, 2, ClickableItem.of(WWCInventoryManager.getCommonButton("Previous"), e -> {
-					ConfigurationMessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
-				}));
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {MessagesOverrideCurrentListGUI.overrideMessagesSettings});
 			}
-			
-			/* Middle Option: Current Page Number */
-			contents.set(5, 4, ClickableItem.of(WWCInventoryManager.getCommonButton("Page Number", new String[] {pagination.getPage() + 1 + ""}), e -> {}));
 			
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {
-				contents.set(5, 6, ClickableItem.of(WWCInventoryManager.getCommonButton("Next"), e -> {
-					overrideNewMessageSettings.open(player,
-							pagination.next().getPage());
-				}));
-				;
+				WWCInventoryManager.setCommonButton(5, 6, player, contents, "Next");
 			}
+			
+			/* Last Option: Current Page Number */
+			WWCInventoryManager.setCommonButton(5, 8, player, contents, "Page Number", new String[] {pagination.getPage() + 1 + ""});
+			
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

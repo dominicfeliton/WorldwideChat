@@ -191,11 +191,6 @@ Messages:
     bol odoslaný denník.
   wwcInventoryError: Chyba zistená pomocou grafického rozhrania používateľa %i. Prosím,
     nahláste tento problém vývojárovi.
-  wwcConfigConversationTranslatorFail: Nepodarilo sa povoliť %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Užívateľ %som úspešne zapnutý %o.
-  wwcConfigConversationTranslatorSuccess: Úspešne zapnuté %i.
-  wwcConfigConversationConsoleTranslatorFail: Používateľa %nepodarilo sa mi povoliť
-    %o.
   wwcSignTranslationFail: Nie je možné preložiť jeden alebo viac riadkov na cieľovom
     znamienko.
   wwcBookTranslationFail: Nie je možné preložiť jednu alebo viac strán v cieľovej
@@ -220,7 +215,6 @@ Messages:
   wwcInvalidTranslator: Neplatné nastavenia prekladateľa. Opravte to vo vašom config.yml
     alebo /wwcc použiť tento plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurácia'
-  wwcConfigGUIToggleButton: Prepnúť %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat neodpúšťa použitie /reload. Prosím, postupujte
     opatrne.
@@ -278,8 +272,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Zmena globálneho limitu rýchlosti
   wwcteOnSender: Preklad entít povolený. Kliknite pravým tlačidlom myši na entitu
     a preložte jej názov!
-  wwcInGameObjectTranslationFailCatastrophic: Nepodarilo sa preložiť cieľový objekt.
-  wwcInGameEntityTranslationFailCatastrophic: Nepodarilo sa preložiť cieľovú entitu.
   wwcConfigGUIResponseLimitButton: Zmeniť časový limit odpovede prekladateľa
   wwcConfigMessageCharLimitEnabled: Obmedzenie znakov na správu nastavené na %i znakov.
   wwcteOffTarget: Preklad entít vypnutý pre %i.
@@ -340,8 +332,64 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Výstupný jazyk: %i'
   wwcTranslatorAttempt: Pokúšam sa pripojiť k prekladateľovi v config.yml... (Pokus
     %i/ %o)
-  wwcTimeoutException: ' Váš príkaz vypršal. Prosím, skúste to znova.'
   wwcTimeoutExceptionConsole: Hráč % Mal som ich poslednú požiadavku časový limit.
     Táto chyba nie je fatálna, ale WorldwideChat by sa mal znovu načítať, ak sa to
     stane aj naďalej.
   wwcGUIPageNumber: 'Číslo stránky: %i'
+  wwcConfigSQLFail: Nepodarilo sa pripojiť k SQL.
+  wwcConfigSQLSuccess: Úspešne pripojený k SQL!
+  wwcConfigYAMLFallback: Padajúc späť do YAML...
+  wwcConfigGUIToggleSQLButton: Prepnúť SQL
+  wwcConfigConversationToggleSQLSuccess: SQL úspešne prepínala. Znovu načítať, aby
+    sa zmena prejavili.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Úspešne preložil Google Translate.
+    Znovu načítať, aby sa zmena prejavili.
+  wwcConfigYAMLDefault: Zlyhanie YAML pre ukladanie dát.
+  wwcConfigGUISQLMenuButton: Zmeniť nastavenia SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Úspešne toggled Watson Preložiť.
+    Znovu načítať, aby sa zmena prejavili.
+  wwcConfigGUISQLSettings: SQL konfigurácia
+  wwcConfigGUIToggleGoogleTranslateButton: Prepnúť Prekladač Google
+  wwcConfigGUIToggleWatsonTranslateButton: Prepnúť Watson preložiť
+  wwcConfigGUIToggleAmazonTranslateButton: Prepnúť Amazon preklad
+  wwcConfigGUIStorageSettings: Konfigurácia úložiska
+  wwcConfigConversationAmazonTranslateToggleSuccess: Úspešne toggled Amazon Translate.
+    Znovu načítať, aby sa zmena prejavili.
+  wwcConfigGUISQLPortButton: Zmeniť port SQL
+  wwcConfigGUISQLOptionalArgsButton: Zmena voliteľných argumentov SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL pre SQL toggted úspešne.
+  wwcConfigConversationSQLPortInput: Aktuálny port je %i. Zadajte niečo iné ako 0,
+    ak chcete nastaviť nový port, alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigGUISQLPasswordButton: Zmeniť heslo SQL
+  wwcConfigConversationSQLHostnameSuccess: Úspešne zmenil názov hostiteľa SQL.
+  wwcConfigConversationSQLHostnameInput: Aktuálny názov hostiteľa je %i. Zadajte niečo
+    iné ako 0, aby ste nastavili nový názov hostiteľa alebo zadajte 0, aby ste sa
+    vrátili späť.
+  wwcConfigGUISQLHostnameButton: Zmeniť názov hostiteľa SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Úspešne zmenil voliteľné argumenty
+    SQL.
+  wwcConfigConversationSQLPasswordSuccess: Úspešne zmenil heslo SQL.
+  wwcConfigConversationSQLPasswordInput: Aktuálne heslo je %i. Zadajte niečo iné ako
+    0 pre nastavenie nového hesla alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigGUIToggleSQLSSLButton: Prepnúť SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Úspešne zmenil používateľské meno SQL.
+  wwcConfigConversationSQLUsernameInput: Aktuálne používateľské meno je %i. Zadajte
+    niečo iné ako 0 pre nastavenie nového užívateľského mena alebo zadajte 0, aby
+    ste sa vrátili späť.
+  wwcConfigConversationSQLPortSuccess: Úspešne zmenil port SQL.
+  wwcConfigGUISQLUsernameButton: Zmeniť používateľské meno SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Voliteľné argumenty úspešne vymazané.
+  wwcConfigConversationSQLOptionalArgsInput: 'Aktuálne voliteľné argumenty SQL sú:
+    %i. Zadajte argumenty oddelené čiarkou (kľúč=hodnota, key2=value2), alebo zadajte
+    vymazanie aktuálnych oblúkov alebo zadajte hodnotu 0, aby ste sa vrátili späť.'
+  wwcConfigConversationSQLDatabaseNameInput: Aktuálny názov databázy je %i. Zadajte
+    niečo iné ako 0, ak chcete nastaviť nový názov databázy, alebo zadajte 0, aby
+    ste sa vrátili späť.
+  wwcConfigGUISQLDatabaseNameButton: Zmeniť databázu SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Úspešne zmenil názov databázy SQL.
+  wwcConfigConversationFatalAsyncAbort: Aktuálny časový limit na zrušenie všetkých
+    asynchrónnych úloh je %i sekúnd. Zadajte čokoľvek vyššie ako 7, aby ste nastavili
+    nový časový rámec, alebo čokoľvek pod ním, aby ste sa vrátili späť.
+  wwcConfigConversationFatalAsyncSuccess: Časový údaj úlohy Async úspešne nastavený.
+  wwcConfigGUIFatalAsyncAbortButton: Zmeniť časový interval úloh Async
+  wwcTimeoutException: Čas vášho velenia vypršal. Prosím, skúste to znova.

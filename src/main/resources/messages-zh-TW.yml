@@ -148,10 +148,6 @@ Messages:
   wwcConfigCacheInvalid: 翻譯器快取大小無效。預設為 10...
   wwcInventoryErrorPlayer: 使用您的 GUI 偵測到錯誤。記錄檔已傳送至主控台。
   wwcInventoryError: 使用者 %i 的 GUI 偵測到錯誤。請向開發人員回報此問題。
-  wwcConfigConversationTranslatorFail: 無法啟用 %i。
-  wwcConfigConversationConsoleTranslatorSuccess: 使用者 %i 成功啟用 %o。
-  wwcConfigConversationTranslatorSuccess: 已成功啟用 %i。
-  wwcConfigConversationConsoleTranslatorFail: 使用者 %i 無法啟用 %o。
   wwcSignTranslationFail: 無法翻譯目標符號上的一或多行。
   wwcBookTranslationFail: 無法翻譯目標書冊中的一或多個頁面。
   wwctiOffTarget: '%i 已停用項目轉譯。'
@@ -172,7 +168,6 @@ Messages:
   wwcChatTranslationFail: 無法翻譯您的訊息。
   wwcInvalidTranslator: 無效的轉換器設定。請在您的配置.yml 或 /wwcc 中修復此問題以使用此插件。
   wwcConfigGUIEachTranslatorSettings: '%i 組態'
-  wwcConfigGUIToggleButton: 切換 %i
   wwcConfigGUIWatsonButton: 華生
   wwcServerReloadWarning: 全球聊天不容許/重新加載的使用。請謹慎繼續進行。
   wwcConfigEnabledDebugMode: 啟用除錯模式。如果您不是開發人員或疑難排解員，您應該關閉此功能。
@@ -216,8 +211,6 @@ Messages:
     0 的任何值以返回。
   wwcConfigGUIGlobalRateLimitButton: 變更全域匯率限制
   wwcteOnSender: 已啟用實體轉譯。在實體上按一下滑鼠右鍵即可翻譯其名稱！
-  wwcInGameObjectTranslationFailCatastrophic: 無法轉譯目標物件。
-  wwcInGameEntityTranslationFailCatastrophic: 無法轉譯目標實體。
   wwcConfigGUIResponseLimitButton: 變更轉譯器回應逾時
   wwcConfigMessageCharLimitEnabled: 每封郵件設定為 %i 個字元的字元限制。
   wwcteOffTarget: '%i 已停用實體轉譯。'
@@ -264,6 +257,47 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 已啟用傳入聊天翻譯： %i
   wwctGUIExistingTranslationOutput: 輸出語言： %i
   wwcTranslatorAttempt: 正在嘗試連接到配置.yml 中的轉換器...（嘗試 %i/ %o）
-  wwcTimeoutException: ' 你的命令超時請重試。'
   wwcTimeoutExceptionConsole: 玩家 %i 有他們最近的請求超時。此錯誤不是致命的，但如果它繼續發生，則應該重新加載 WorldwideChat。
   wwcGUIPageNumber: 頁碼： %i
+  wwcConfigSQLFail: 無法連接到 SQL。
+  wwcConfigSQLSuccess: 已成功連接到 SQL！
+  wwcConfigYAMLFallback: 回到 YAML...
+  wwcConfigGUIToggleSQLButton: 切換 SQL
+  wwcConfigConversationToggleSQLSuccess: SQL 切換成功。重新加載以使更改生效。
+  wwcConfigConversationGoogleTranslateToggleSuccess: 已成功切換谷歌翻譯。重新加載以使更改生效。
+  wwcConfigYAMLDefault: 默認為 YAML 進行數據存儲。
+  wwcConfigGUISQLMenuButton: 更改 SQL 設置
+  wwcConfigConversationWatsonTranslateToggleSuccess: 已成功切換沃森翻譯。重新加載以使更改生效。
+  wwcConfigGUISQLSettings: SQL 配置
+  wwcConfigGUIToggleGoogleTranslateButton: 切換谷歌翻譯
+  wwcConfigGUIToggleWatsonTranslateButton: 切換沃森翻譯
+  wwcConfigGUIToggleAmazonTranslateButton: 切換亞馬遜翻譯
+  wwcConfigGUIStorageSettings: 存儲配置
+  wwcConfigConversationAmazonTranslateToggleSuccess: 已成功切換亞馬遜翻譯。重新加載以使更改生效。
+  wwcConfigGUISQLPortButton: 更改 SQL 端口
+  wwcConfigGUISQLOptionalArgsButton: 更改 SQL 可選參數
+  wwcConfigConversationToggleSQLSSLSuccess: 已成功切換 SQL 的 SSL。
+  wwcConfigConversationSQLPortInput: 當前端口為 %i。鍵入 0 以外的任何內容以設置新端口，或鍵入 0 返回。
+  wwcConfigGUISQLPasswordButton: 更改 SQL 密碼
+  wwcConfigConversationSQLHostnameSuccess: 已成功更改 SQL 主機名。
+  wwcConfigConversationSQLHostnameInput: 當前主機名為 %i。鍵入 0 以外的任何內容以設置新的主機名，或鍵入 0 返回。
+  wwcConfigGUISQLHostnameButton: 更改 SQL 主機名
+  wwcConfigConversationSQLOptionalArgsSuccess: 已成功更改可選 SQL 參數。
+  wwcConfigConversationSQLPasswordSuccess: 已成功更改 SQL 密碼。
+  wwcConfigConversationSQLPasswordInput: 當前密碼為 %i。鍵入 0 以外的任何內容以設置新密碼，或鍵入 0 返回。
+  wwcConfigGUIToggleSQLSSLButton: 切換 SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: 已成功更改 SQL 用户名。
+  wwcConfigConversationSQLUsernameInput: 當前用户名為 %i。鍵入 0 以外的任何內容以設置新用户名，或鍵入 0 返回。
+  wwcConfigConversationSQLPortSuccess: 已成功更改 SQL 端口。
+  wwcConfigGUISQLUsernameButton: 更改 SQL 用户名
+  wwcConfigConversationSQLOptionalArgsCleared: 已成功清除可選參數。
+  wwcConfigConversationSQLOptionalArgsInput: 當前可選的 SQL 參數為： %i。鍵入參數以逗號分隔（鍵 = 值，key2
+    = 值 2），或鍵入「清除」以擦除當前參數，或鍵入 0 返回。
+  wwcConfigConversationSQLDatabaseNameInput: 當前數據庫名稱為 %i。鍵入 0 以外的任何內容以設置新的數據庫名稱，或鍵入
+    0 返回。
+  wwcConfigGUISQLDatabaseNameButton: 更改 SQL 數據庫
+  wwcConfigConversationSQLDatabaseNameSuccess: 已成功更改 SQL 數據庫名稱。
+  wwcConfigConversationFatalAsyncAbort: 中止所有異步任務的當前超時時間為 %i 秒。鍵入 7 以上的任何內容以設置新的超時，或者在其下方的任何內容返回。
+  wwcConfigConversationFatalAsyncSuccess: 異步任務超時設置成功。
+  wwcConfigGUIFatalAsyncAbortButton: 更改異步任務超時
+  wwcTimeoutException: 你的命令超時請重試。

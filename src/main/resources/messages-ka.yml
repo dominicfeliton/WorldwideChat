@@ -183,11 +183,6 @@ Messages:
   wwcInventoryErrorPlayer: შეცდომა გამოვლინდა თქვენი GUI. ჟურნალი გაიგზავნა კონსოლში.
   wwcInventoryError: '%i მომხმარებლის GUI- სთან აღმოჩენილი შეცდომა. გთხოვთ შეატყობინოთ
     ამ საკითხს დეველოპერს.'
-  wwcConfigConversationTranslatorFail: ვერ მოხერხდა %i ჩართვა %i.
-  wwcConfigConversationConsoleTranslatorSuccess: მომხმარებელი %i წარმატებით ჩართვა
-    %o.
-  wwcConfigConversationTranslatorSuccess: წარმატებით ჩართვა %i.
-  wwcConfigConversationConsoleTranslatorFail: მომხმარებელი %i ვერ ჩართვა %o.
   wwcSignTranslationFail: შეუძლებელია თქვენი სამიზნე ნიშანზე ერთი ან მეტი ხაზის თარგმნა.
   wwcBookTranslationFail: შეუძლებელია ერთი ან მეტი გვერდის თარგმნა სამიზნე წიგნში.
   wwctiOffTarget: საქონელი თარგმანი გამორთულია %i.
@@ -210,7 +205,6 @@ Messages:
   wwcInvalidTranslator: არასწორი თარჯიმანი პარამეტრები. გთხოვთ, დააფიქსიროთ ეს თქვენი
     config.yml ან /wwcc გამოიყენოთ ეს მოდული.
   wwcConfigGUIEachTranslatorSettings: '%i კონფიგურაცია'
-  wwcConfigGUIToggleButton: დან %i
   wwcConfigGUIWatsonButton: უოტსონი
   wwcServerReloadWarning: WorldwideChat არ ითვალისწინებს გამოყენების/გადატვირთვის
     გამოყენებას. გთხოვთ გააგრძელოთ სიფრთხილით.
@@ -269,8 +263,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: გლობალური განაკვეთის ლიმიტის შეცვლა
   wwcteOnSender: ერთეულის თარგმანი ჩართულია. მარჯვენა ღილაკით სუბიექტის თარგმნა მისი
     სახელი!
-  wwcInGameObjectTranslationFailCatastrophic: სამიზნე ობიექტის თარგმნა ვერ მოხერხდა.
-  wwcInGameEntityTranslationFailCatastrophic: სამიზნე სუბიექტის თარგმნა ვერ მოხერხდა.
   wwcConfigGUIResponseLimitButton: შეცვლა თარჯიმანი რეაგირების შეყოვნება
   wwcConfigMessageCharLimitEnabled: სიმბოლოთა ლიმიტი თითო შეტყობინება %i სიმბოლოებზე.
   wwcteOffTarget: ერთეულის თარგმანი გათიშულია %i.
@@ -329,7 +321,62 @@ Messages:
   wwctGUIExistingTranslationOutput: 'გამოყვანის ენა: %i'
   wwcTranslatorAttempt: თარჯიმანთან დაკავშირების მცდელობა config.yml... (მცდელობა
     %i/ %o)
-  wwcTimeoutException: ' თქვენი ბრძანება დროული out. სცადეთ კიდევ ერთხელ.'
   wwcTimeoutExceptionConsole: Player %i მქონდა მათი უახლესი მოთხოვნის შეყოვნება. ეს
     შეცდომა არ არის ფატალური, მაგრამ WorldwideChat უნდა გადატვირთული თუ ის გრძელდება.
   wwcGUIPageNumber: 'გვერდის ნომერი: %i'
+  wwcConfigSQLFail: ვერ მოხერხდა SQL- თან დაკავშირება.
+  wwcConfigSQLSuccess: წარმატებით უკავშირდება SQL!
+  wwcConfigYAMLFallback: დაცემა უკან YAML...
+  wwcConfigGUIToggleSQLButton: გადართვა SQL
+  wwcConfigConversationToggleSQLSuccess: SQL toggled წარმატებით. ცვლილებების შეცვლა
+    ძალაში შედის.
+  wwcConfigConversationGoogleTranslateToggleSuccess: წარმატებით გადაყრილი Google Translate.
+    ცვლილებების შეცვლა ძალაში შედის.
+  wwcConfigYAMLDefault: უპირობოდ YAML მონაცემთა შენახვისთვის.
+  wwcConfigGUISQLMenuButton: SQL პარამეტრების შეცვლა
+  wwcConfigConversationWatsonTranslateToggleSuccess: წარმატებით toggled Watson თარგმნა.
+    ცვლილებების შეცვლა ძალაში შედის.
+  wwcConfigGUISQLSettings: SQL კონფიგურაცია
+  wwcConfigGUIToggleGoogleTranslateButton: Google Translate გადართვა
+  wwcConfigGUIToggleWatsonTranslateButton: უოტსონის თარგმნის გადართვა
+  wwcConfigGUIToggleAmazonTranslateButton: გადართვა Amazon თარგმნა
+  wwcConfigGUIStorageSettings: შენახვის კონფიგურაცია
+  wwcConfigConversationAmazonTranslateToggleSuccess: წარმატებით toggled Amazon თარგმნა.
+    ცვლილებების შეცვლა ძალაში შედის.
+  wwcConfigGUISQLPortButton: SQL პორტის შეცვლა
+  wwcConfigGUISQLOptionalArgsButton: შეცვლა SQL პირობითი არგუმენტები
+  wwcConfigConversationToggleSQLSSLSuccess: SSL for SQL toggled წარმატებით.
+  wwcConfigConversationSQLPortInput: მიმდინარე პორტი არის %i. ახალი პორტის დასაყენებლად
+    0-ის სხვა რამეს ტიპი, ან 0-ის დასაბრუნებლად.
+  wwcConfigGUISQLPasswordButton: SQL პაროლის შეცვლა
+  wwcConfigConversationSQLHostnameSuccess: წარმატებით შეიცვალა SQL ჰოსტის სახელი.
+  wwcConfigConversationSQLHostnameInput: ახლანდელი ჰოსტსახელი არის %i. 0-ის სხვა რამეს
+    ტიპი ახალი ჰოსტის სახელის დასაყენებლად, ან 0 ტიპის დასაბრუნებლად.
+  wwcConfigGUISQLHostnameButton: SQL ჰოსტსახელის შეცვლა
+  wwcConfigConversationSQLOptionalArgsSuccess: წარმატებით შეიცვალა სურვილისამებრ SQL
+    არგუმენტები.
+  wwcConfigConversationSQLPasswordSuccess: წარმატებით შეიცვალა SQL პაროლი.
+  wwcConfigConversationSQLPasswordInput: მიმდინარე პაროლი %i. ახალი პაროლის დასაყენებლად
+    0-ის სხვა რამეს ტიპი, ან 0-ის დასაბრუნებლად აკრიფეთ.
+  wwcConfigGUIToggleSQLSSLButton: გადართვა SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: წარმატებით შეიცვალა SQL მომხმარებლის სახელი.
+  wwcConfigConversationSQLUsernameInput: მიმდინარე მომხმარებლის სახელი %i. შეიტანეთ
+    ყველაფერი, გარდა 0-ისა, ახალი მომხმარებლის სახელის დასაყენებლად, ან 0-ის დასაბრუნებლად.
+  wwcConfigConversationSQLPortSuccess: წარმატებით შეიცვალა SQL პორტი.
+  wwcConfigGUISQLUsernameButton: SQL მომხმარებლის სახელის შეცვლა
+  wwcConfigConversationSQLOptionalArgsCleared: პირობითი არგუმენტები გაიწმინდა წარმატებით.
+  wwcConfigConversationSQLOptionalArgsInput: 'მიმდინარე არჩევითი SQL არგუმენტებია:
+    %i. ტიპის არგუმენტები, რომლებიც გამოყოფილია მძიმით (გასაღები = value, key2=value2),
+    ან აკრიფეთ ნათელი, რომ წაშალოთ მიმდინარე არგები, ან აკრიფოთ 0 დასაბრუნებლად.'
+  wwcConfigConversationSQLDatabaseNameInput: მონაცემთა ბაზის ამჟამინდელი სახელი %i.
+    შეიტანეთ ყველაფერი, გარდა 0-ისა, ახალი მონაცემთა ბაზის სახელის დასაყენებლად, ან
+    0-ის დასაბრუნებლად.
+  wwcConfigGUISQLDatabaseNameButton: SQL მონაცემთა ბაზის შეცვლა
+  wwcConfigConversationSQLDatabaseNameSuccess: წარმატებით შეიცვალა SQL მონაცემთა ბაზის
+    სახელი.
+  wwcConfigConversationFatalAsyncAbort: ყველა ასინკის ამოცანის შესაწყვეტად მიმდინარე
+    შეყოვნება არის %i წამი. შეიტანეთ არაფერი ზემოთ 7 დააყენოთ ახალი შეყოვნება, ან
+    არაფერი ქვემოთ დაბრუნებას.
+  wwcConfigConversationFatalAsyncSuccess: Async ამოცანა შეყოვნება მითითებული წარმატებით.
+  wwcConfigGUIFatalAsyncAbortButton: ასინკის სამუშაო დროის შეცვლა
+  wwcTimeoutException: თქვენი ბრძანება დროული out. სცადეთ კიდევ ერთხელ.

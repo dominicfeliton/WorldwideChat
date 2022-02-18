@@ -186,10 +186,6 @@ Messages:
   wwcInventoryErrorPlayer: Wykryto błąd w graficznym interfejsie użytkownika. Dziennik
     został wysłany do konsoli.
   wwcInventoryError: Wykryto błąd w GUI użytkownika %i. Zgłoś ten problem programiście.
-  wwcConfigConversationTranslatorFail: Nie udało się włączyć %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Uzytkownik %i pomyślnie włączył %o.
-  wwcConfigConversationTranslatorSuccess: Pomyślnie włączona %i.
-  wwcConfigConversationConsoleTranslatorFail: User %i nie udało się włączyć %o.
   wwcSignTranslationFail: Nie można przetłumaczyć jednego lub więcej wierszy na znaku
     celu.
   wwcBookTranslationFail: Nie można przetłumaczyć jednej lub więcej stron w książce
@@ -214,7 +210,6 @@ Messages:
   wwcInvalidTranslator: Nieprawidłowe ustawienia tłumacza. Proszę to naprawić w swoim
     config.yml lub z /wwcc, aby użyć tej wtyczki.
   wwcConfigGUIEachTranslatorSettings: Konfiguracja %i
-  wwcConfigGUIToggleButton: Przełącza %i
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat nie pozwala na użycie /reload. Proszę postępować
     ostrożnie.
@@ -273,9 +268,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Zmień globalny limit stawki
   wwcteOnSender: Translacja encji włączona. Kliknij prawym przyciskiem myszy na podmiot,
     aby przetłumaczyć jego nazwę!
-  wwcInGameObjectTranslationFailCatastrophic: Nie udało się przetłumaczyć obiektu
-    docelowego.
-  wwcInGameEntityTranslationFailCatastrophic: Nie udało się przetłumaczyć encji docelowej.
   wwcConfigGUIResponseLimitButton: Zmień limit czasu odpowiedzi tłumacza
   wwcConfigMessageCharLimitEnabled: Limit znaków dla wiadomości ustawiony na %i znaków.
   wwcteOffTarget: Tłumaczenie encji wyłączone dla %i.
@@ -337,9 +329,64 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Język wyjściowy: %i'
   wwcTranslatorAttempt: 'Próba połączenia z tłumaczem w config.yml... (Próba: %i/
     %o)'
-  wwcTimeoutException: ' Upłynnął limit czasu twojego polecenia. Proszę spróbować
-    jeszcze raz.'
   wwcTimeoutExceptionConsole: Odtwarzacz %i miał limit czasu ostatniego żądania. Ten
     błąd nie jest krytyczny, ale WorldwideChat powinien zostać ponownie załadowany,
     jeśli nadal występuje.
   wwcGUIPageNumber: 'Numer strony: %i'
+  wwcConfigSQLFail: Połączenie z SQL nie powiodło się.
+  wwcConfigSQLSuccess: Pomyślnie podłączono do SQL!
+  wwcConfigYAMLFallback: Spada z powrotem do YAML...
+  wwcConfigGUIToggleSQLButton: Przełącz SQL
+  wwcConfigConversationToggleSQLSuccess: SQL został pomyślnie przełączony. Załaduj
+    ponownie, aby zmiana odniosła skutek.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Pomyślnie przełączono Google
+    Translate. Załaduj ponownie, aby zmiana odniosła skutek.
+  wwcConfigYAMLDefault: Domyślnie YAML do przechowywania danych.
+  wwcConfigGUISQLMenuButton: Zmień ustawienia SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Pomyślnie przełączono Watson
+    Translate. Załaduj ponownie, aby zmiana odniosła skutek.
+  wwcConfigGUISQLSettings: Konfiguracja SQL
+  wwcConfigGUIToggleGoogleTranslateButton: Przełącz Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Przełącz tłumacz Watson
+  wwcConfigGUIToggleAmazonTranslateButton: Przełącz tłumaczenie Amazon
+  wwcConfigGUIStorageSettings: Konfiguracja magazynu
+  wwcConfigConversationAmazonTranslateToggleSuccess: Pomyślnie przełączono Amazon
+    Translate. Załaduj ponownie, aby zmiana odniosła skutek.
+  wwcConfigGUISQLPortButton: Zmień port SQL
+  wwcConfigGUISQLOptionalArgsButton: Zmień opcjonalne argumenty SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL dla SQL został pomyślnie przełączony.
+  wwcConfigConversationSQLPortInput: Bieżący port jest %i. Wpisz coś innego niż 0,
+    aby ustawić nowy port, lub wpisz 0, aby wrócić.
+  wwcConfigGUISQLPasswordButton: Zmień hasło SQL
+  wwcConfigConversationSQLHostnameSuccess: Pomyślnie zmieniono nazwę hosta SQL.
+  wwcConfigConversationSQLHostnameInput: Bieżąca nazwa hosta to %i. Wpisz coś innego
+    niż 0, aby ustawić nową nazwę hosta, lub wpisz 0, aby wrócić.
+  wwcConfigGUISQLHostnameButton: Zmień nazwę hosta SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Pomyślnie zmieniono opcjonalne argumenty
+    SQL.
+  wwcConfigConversationSQLPasswordSuccess: Pomyślnie zmieniono hasło SQL.
+  wwcConfigConversationSQLPasswordInput: Bieżące hasło jest %i. Wpisz coś innego niż
+    0, aby ustawić nowe hasło, lub wpisz 0, aby wrócić.
+  wwcConfigGUIToggleSQLSSLButton: Przełącz protokół SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Pomyślnie zmieniono nazwę użytkownika SQL.
+  wwcConfigConversationSQLUsernameInput: Bieżąca nazwa użytkownika to %i. Wpisz coś
+    innego niż 0, aby ustawić nową nazwę użytkownika lub wpisz 0, aby wrócić.
+  wwcConfigConversationSQLPortSuccess: Pomyślnie zmieniono port SQL.
+  wwcConfigGUISQLUsernameButton: Zmień nazwę użytkownika SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Opcjonalne argumenty zostały usunięte
+    pomyślnie.
+  wwcConfigConversationSQLOptionalArgsInput: 'Bieżące opcjonalne argumenty SQL to:
+    %i. Argumenty należy wpisać oddzielone przecinkiem (key=wartość, key2=value2)
+    lub wpisz clear, aby wyczyścić bieżące args, lub wpisz 0, aby wrócić.'
+  wwcConfigConversationSQLDatabaseNameInput: Bieżąca nazwa bazy to %i. Wpisz coś innego
+    niż 0, aby ustawić nową nazwę bazy danych, lub wpisz 0, aby wrócić.
+  wwcConfigGUISQLDatabaseNameButton: Zmień bazę danych SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Pomyślnie zmieniono nazwę bazy danych
+    SQL.
+  wwcConfigConversationFatalAsyncAbort: Bieżący limit czasu przerwania wszystkich
+    zadań asynchronicznych wynosi %i sekund. Wpisz cokolwiek powyżej 7, aby ustawić
+    nowy limit czasu, lub cokolwiek poniżej niego, aby wrócić.
+  wwcConfigConversationFatalAsyncSuccess: Ustawiono limit czasu zadania asynchroniczny.
+  wwcConfigGUIFatalAsyncAbortButton: Zmiana limitu czasu zadania asynchronnego
+  wwcTimeoutException: Upłynnął limit czasu twojego polecenia. Proszę spróbować jeszcze
+    raz.

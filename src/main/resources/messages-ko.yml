@@ -151,10 +151,6 @@ Messages:
   wwcConfigCacheInvalid: 변환기 캐시 크기가 잘못되었습니다.기본값 10으로 설정 중...
   wwcInventoryErrorPlayer: GUI에서 오류가 감지되었습니다.로그가 콘솔로 전송되었습니다.
   wwcInventoryError: '%i 사용자의 GUI에서 오류가 발견되었습니다. 이 문제를 개발자에게 보고하십시오.'
-  wwcConfigConversationTranslatorFail: '%i을 (를) 활성화하지 못했습니다.'
-  wwcConfigConversationConsoleTranslatorSuccess: '%o 사용자가 %o을 (를) 성공적으로 활성화했습니다.'
-  wwcConfigConversationTranslatorSuccess: '%i 을 (를) 성공적으로 활성화했습니다.'
-  wwcConfigConversationConsoleTranslatorFail: '%i 사용자가 %o을 (를) 활성화하지 못했습니다.'
   wwcSignTranslationFail: 대상 기호에서 하나 이상의 줄을 번역할 수 없습니다.
   wwcBookTranslationFail: 대상 책에서 하나 이상의 페이지를 번역할 수 없습니다.
   wwctiOffTarget: '%i에 대해 항목 번역이 비활성화되었습니다.'
@@ -175,7 +171,6 @@ Messages:
   wwcChatTranslationFail: 메시지를 번역하지 못했습니다.
   wwcInvalidTranslator: 번역기 설정이 잘못되었습니다.이 플러그인을 사용하려면 config.yml 또는 /wwcc에서 수정하십시오.
   wwcConfigGUIEachTranslatorSettings: '%i 구성'
-  wwcConfigGUIToggleButton: '%i 토글'
   wwcConfigGUIWatsonButton: 왓슨
   wwcServerReloadWarning: WorldwideChat 은 /다시로드 사용을 용납하지 않습니다.주의해서 진행하십시오.
   wwcConfigEnabledDebugMode: 디버그 모드를 활성화했습니다.개발자 또는 문제 해결사가 아닌 경우 이 기능을 해제해야 합니다.
@@ -221,8 +216,6 @@ Messages:
     설정하거나 0보다 작거나 같은 값을 입력하여 뒤로 돌아갑니다.
   wwcConfigGUIGlobalRateLimitButton: 글로벌 요금 제한 변경
   wwcteOnSender: 엔티티 변환이 활성화되었습니다.엔티티를 마우스 오른쪽 버튼으로 클릭하여 이름을 번역합니다!
-  wwcInGameObjectTranslationFailCatastrophic: 대상 개체를 변환하지 못했습니다.
-  wwcInGameEntityTranslationFailCatastrophic: 대상 엔티티를 변환하지 못했습니다.
   wwcConfigGUIResponseLimitButton: 변경 변환기 응답 시간 초과
   wwcConfigMessageCharLimitEnabled: 메시지당 문자 제한이 %i자로 설정되었습니다.
   wwcteOffTarget: '%i에 대한 엔티티 변환이 비활성화되었습니다.'
@@ -271,7 +264,56 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: '수신 채팅 번역 사용: %i'
   wwctGUIExistingTranslationOutput: '출력 언어: %i'
   wwcTranslatorAttempt: config.yml에서 번역기에 연결하려고 시도하는 중...(시도 %i/ %o)
-  wwcTimeoutException: ' 명령 시간이 초과되었습니다.다시 시도해 주세요.'
   wwcTimeoutExceptionConsole: '%i 플레이어의 요청 시간이 가장 최근에 초과되었습니다.이 오류는 치명적이지는 않지만 WorldwideChat이
     계속 발생하면 다시 로드해야 합니다.'
   wwcGUIPageNumber: '페이지 번호: %i'
+  wwcConfigSQLFail: SQL에 연결하지 못했습니다.
+  wwcConfigSQLSuccess: SQL에 성공적으로 연결되었습니다!
+  wwcConfigYAMLFallback: YAML로 돌아가는 중...
+  wwcConfigGUIToggleSQLButton: SQL 토글
+  wwcConfigConversationToggleSQLSuccess: SQL이 성공적으로 전환되었습니다.변경 사항을 적용하려면 다시 로드합니다.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google 번역을 성공적으로 전환했습니다.변경 사항을
+    적용하려면 다시 로드합니다.
+  wwcConfigYAMLDefault: 데이터 저장을 위해 기본적으로 YAML로 설정됩니다.
+  wwcConfigGUISQLMenuButton: SQL 설정 변경
+  wwcConfigConversationWatsonTranslateToggleSuccess: 왓슨 번역을 성공적으로 전환했습니다.변경 사항을 적용하려면
+    다시 로드합니다.
+  wwcConfigGUISQLSettings: SQL 구성
+  wwcConfigGUIToggleGoogleTranslateButton: 구글 번역 토글
+  wwcConfigGUIToggleWatsonTranslateButton: 왓슨 번역 토글
+  wwcConfigGUIToggleAmazonTranslateButton: 아마존 번역 토글
+  wwcConfigGUIStorageSettings: 스토리지 구성
+  wwcConfigConversationAmazonTranslateToggleSuccess: 아마존 번역을 성공적으로 전환했습니다.변경 사항을 적용하려면
+    다시 로드합니다.
+  wwcConfigGUISQLPortButton: SQL 포트 변경
+  wwcConfigGUISQLOptionalArgsButton: SQL 선택적 인수 변경
+  wwcConfigConversationToggleSQLSSLSuccess: SQL용 SSL이 성공적으로 전환되었습니다.
+  wwcConfigConversationSQLPortInput: 현재 포트는 %i입니다. 0 이외의 다른 항목을 입력하여 새 포트를 설정하거나 0을
+    입력하여 되돌립니다.
+  wwcConfigGUISQLPasswordButton: SQL 비밀번호 변경
+  wwcConfigConversationSQLHostnameSuccess: SQL 호스트 이름을 성공적으로 변경했습니다.
+  wwcConfigConversationSQLHostnameInput: 현재 호스트 이름은 %i입니다. 0 이외의 다른 항목을 입력하여 새 호스트
+    이름을 설정하거나 0을 입력하여 되돌립니다.
+  wwcConfigGUISQLHostnameButton: SQL 호스트 이름 변경
+  wwcConfigConversationSQLOptionalArgsSuccess: 선택적 SQL 인수를 성공적으로 변경했습니다.
+  wwcConfigConversationSQLPasswordSuccess: SQL 암호를 성공적으로 변경했습니다.
+  wwcConfigConversationSQLPasswordInput: 현재 암호는 %i입니다. 0 이외의 다른 암호를 입력하여 새 암호를 설정하거나
+    0을 입력하여 되돌아갑니다.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL 전환
+  wwcConfigConversationSQLUsernameSuccess: SQL 사용자 이름을 성공적으로 변경했습니다.
+  wwcConfigConversationSQLUsernameInput: 현재 사용자 이름은 %i입니다. 0 이외의 다른 항목을 입력하여 새 사용자
+    이름을 설정하거나 0을 입력하여 되돌립니다.
+  wwcConfigConversationSQLPortSuccess: SQL 포트를 성공적으로 변경했습니다.
+  wwcConfigGUISQLUsernameButton: SQL 사용자 이름 변경
+  wwcConfigConversationSQLOptionalArgsCleared: 선택적 인수가 성공적으로 지워졌습니다.
+  wwcConfigConversationSQLOptionalArgsInput: 현재 선택적 SQL 인수는 %i입니다. 인수를 쉼표 (키=값, 키2=값2)
+    로 구분하여 입력하거나 clear를 입력하여 현재 인수를 지우거나 0을 입력하여 되돌아갑니다.
+  wwcConfigConversationSQLDatabaseNameInput: 현재 데이터베이스 이름은 %i입니다. 새 데이터베이스 이름을 설정하려면
+    0 이외의 다른 항목을 입력하고, 뒤로 돌아가려면 0을 입력합니다.
+  wwcConfigGUISQLDatabaseNameButton: SQL 데이터베이스 변경
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL 데이터베이스 이름을 성공적으로 변경했습니다.
+  wwcConfigConversationFatalAsyncAbort: 모든 비동기 작업을 중단하는 현재 제한 시간은 %i초입니다.7보다 큰 값을
+    입력하여 새 시간 제한을 설정하거나 그 아래에 있는 값을 입력하여 되돌아갑니다.
+  wwcConfigConversationFatalAsyncSuccess: 비동기 작업 시간 초과가 성공적으로 설정되었습니다.
+  wwcConfigGUIFatalAsyncAbortButton: 비동기 작업 시간 초과 변경
+  wwcTimeoutException: 명령 시간이 초과되었습니다.다시 시도해 주세요.

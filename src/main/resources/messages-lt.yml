@@ -185,11 +185,6 @@ Messages:
     konsolę.
   wwcInventoryError: Klaida aptikta naudotojo %i GUI. Prašome pranešti apie šią problemą
     kūrėjui.
-  wwcConfigConversationTranslatorFail: Nepavyko įgalinti %i.
-  wwcConfigConversationConsoleTranslatorSuccess: Vartotojas %Aš sėkmingai įgalino
-    %o.
-  wwcConfigConversationTranslatorSuccess: Sėkmingai įgalinta %i.
-  wwcConfigConversationConsoleTranslatorFail: Vartotojo %i nepavyko įgalinti %o.
   wwcSignTranslationFail: Nepavyko išversti vienos ar kelių eilučių į tikslinį ženklą.
   wwcBookTranslationFail: Nepavyko išversti vieno ar kelių puslapių tikslinėje knygoje.
   wwctiOffTarget: Elemento vertimas išjungtas %i.
@@ -212,7 +207,6 @@ Messages:
   wwcInvalidTranslator: Neteisingas vertėjo nustatymai. Prašome išspręsti šią problemą
     savo config.yml arba su /wwcc naudoti šį įskiepiai.
   wwcConfigGUIEachTranslatorSettings: '%i konfigūracija'
-  wwcConfigGUIToggleButton: Toggle %i
   wwcConfigGUIWatsonButton: Watsonas
   wwcServerReloadWarning: WorldwideChat nėra nusiraminti naudojimo/reload. Prašome
     elgtis atsargiai.
@@ -270,8 +264,6 @@ Messages:
   wwcConfigGUIGlobalRateLimitButton: Keisti pasaulinę normos ribą
   wwcteOnSender: Subjekto vertimas įjungtas. Dešiniuoju pelės mygtuku spustelėkite
     subjektą, norėdami išversti jo pavadinimą!
-  wwcInGameObjectTranslationFailCatastrophic: Nepavyko išversti tikslinio objekto.
-  wwcInGameEntityTranslationFailCatastrophic: Nepavyko išversti tikslinio subjekto.
   wwcConfigGUIResponseLimitButton: Pakeisti Vertėjas Atsakas Timeout
   wwcConfigMessageCharLimitEnabled: Simbolių limitas pranešimui nustatytas į %i simbolius.
   wwcteOffTarget: Subjekto vertimas išjungtas %i.
@@ -328,7 +320,64 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Išvesties kalba: %i'
   wwcTranslatorAttempt: Bandymas prisijungti prie vertėjo konfig.yml... (Bandymas
     %i/ %o)
-  wwcTimeoutException: ' Jūsų komanda sulaiko. Pabandykite dar kartą.'
   wwcTimeoutExceptionConsole: Žaidėjas %Aš turėjau naujausią užklausą laiko. Ši klaida
     nėra mirtina, bet WorldwideChat turėtų būti perkrautas, jei ji ir toliau įvyks.
   wwcGUIPageNumber: 'Puslapio numeris: %i'
+  wwcConfigSQLFail: Nepavyko prisijungti prie SQL.
+  wwcConfigSQLSuccess: Sėkmingai prijungtas prie SQL!
+  wwcConfigYAMLFallback: Sumažėja atgal į YAML...
+  wwcConfigGUIToggleSQLButton: Perjungti SQL
+  wwcConfigConversationToggleSQLSuccess: SQL sėkmingai perėjo. Perkraukite, kad pakeitimas
+    įsigaliotų.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Sėkmingai perėjo “Google Translate”.
+    Perkraukite, kad pakeitimas įsigaliotų.
+  wwcConfigYAMLDefault: Numatyta YAML duomenų saugojimui.
+  wwcConfigGUISQLMenuButton: Keisti SQL nustatymus
+  wwcConfigConversationWatsonTranslateToggleSuccess: Sėkmingai perėjo Watson Versti.
+    Perkraukite, kad pakeitimas įsigaliotų.
+  wwcConfigGUISQLSettings: SQL konfigūracija
+  wwcConfigGUIToggleGoogleTranslateButton: Perjungti Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Perjungti Watson Versti
+  wwcConfigGUIToggleAmazonTranslateButton: Perjungti Amazon Versti
+  wwcConfigGUIStorageSettings: Saugojimo konfigūracija
+  wwcConfigConversationAmazonTranslateToggleSuccess: Sėkmingai perėjo Amazon Versti.
+    Perkraukite, kad pakeitimas įsigaliotų.
+  wwcConfigGUISQLPortButton: Pakeisti SQL prievadą
+  wwcConfigGUISQLOptionalArgsButton: Keisti SQL pasirinktinius argumentus
+  wwcConfigConversationToggleSQLSSLSuccess: SSL SQL sėkmingai perėjo.
+  wwcConfigConversationSQLPortInput: Dabartinis prievadas yra %i. Įveskite bet ką,
+    išskyrus 0, kad nustatytumėte naują prievadą, arba įveskite 0, kad grįžtumėte
+    atgal.
+  wwcConfigGUISQLPasswordButton: Keisti SQL slaptažodį
+  wwcConfigConversationSQLHostnameSuccess: Sėkmingai pakeistas SQL hostname.
+  wwcConfigConversationSQLHostnameInput: Dabartinis hostname yra %i. Įveskite bet
+    ką, išskyrus 0, kad nustatytumėte naują hostname, arba įveskite 0, kad grįžtumėte.
+  wwcConfigGUISQLHostnameButton: Keisti SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Sėkmingai pakeitė neprivalomus SQL
+    argumentus.
+  wwcConfigConversationSQLPasswordSuccess: Sėkmingai pakeistas SQL slaptažodis.
+  wwcConfigConversationSQLPasswordInput: Dabartinis slaptažodis yra %i. Įveskite bet
+    ką, išskyrus 0, kad nustatytumėte naują slaptažodį, arba įveskite 0, kad grįžtumėte.
+  wwcConfigGUIToggleSQLSSLButton: Perjungti SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Sėkmingai pakeistas SQL vartotojo vardas.
+  wwcConfigConversationSQLUsernameInput: Dabartinis vartotojo vardas yra %i. Įveskite
+    bet ką, išskyrus 0, kad nustatytumėte naują vartotojo vardą, arba įveskite 0,
+    kad grįžtumėte.
+  wwcConfigConversationSQLPortSuccess: Sėkmingai pakeitė SQL prievadą.
+  wwcConfigGUISQLUsernameButton: Keisti SQL vartotojo vardą
+  wwcConfigConversationSQLOptionalArgsCleared: Neprivalomi argumentai sėkmingai išvalytas.
+  wwcConfigConversationSQLOptionalArgsInput: 'Dabartiniai neprivalomi SQL argumentai
+    yra: %i. Įveskite argumentus, atskirtus kableliu (key=value, key2 = value2) arba
+    įveskite aiškų, kad nuvalytumėte dabartinius argus, arba įveskite 0 grįžti.'
+  wwcConfigConversationSQLDatabaseNameInput: Dabartinis duomenų bazės pavadinimas
+    yra %i. Įveskite bet ką, išskyrus 0, kad nustatytumėte naują duomenų bazės pavadinimą,
+    arba įveskite 0, kad grįžtumėte.
+  wwcConfigGUISQLDatabaseNameButton: Keisti SQL duomenų bazę
+  wwcConfigConversationSQLDatabaseNameSuccess: Sėkmingai pakeistas SQL duomenų bazės
+    pavadinimas.
+  wwcConfigConversationFatalAsyncAbort: Dabartinis laikas nutraukti visas async užduotis
+    yra %i sekundės. Įveskite ką nors aukščiau 7, kad nustatytumėte naują timeout,
+    arba ką nors žemiau jo grįžti.
+  wwcConfigConversationFatalAsyncSuccess: Async užduotis timeout nustatyti sėkmingai.
+  wwcConfigGUIFatalAsyncAbortButton: Pakeisti Async Užduočių Laikas
+  wwcTimeoutException: Jūsų komanda sulaiko. Pabandykite dar kartą.
