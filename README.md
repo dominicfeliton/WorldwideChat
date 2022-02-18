@@ -9,7 +9,7 @@ Some of its notable features include:
 - Translate chat, signs, entities, and written books with an interactive GUI.
 - Translation globally, for other players, or just you.
 - The plugin itself has been translated into more than 30 languages.
-- A cache that stores the most used phrases by players on your server, so that you don't have to ping the API constantly.
+- A cache that stores the most used phrases by players on your server, improving speed and reliability in the event of slow API response times.
 - Rate limits so your players don't fill up a quota too quickly.
 - Persistent translation options saved per player across server reboots and reloads.
 - Stat tracker to keep track of how your players use this plugin.
