@@ -27,7 +27,7 @@ jobs:
       
     - name: Upload final artifact
       run: mkdir staging && cp target/WorldwideChat.jar staging/WorldwideChat.jar
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: WorldwideChat Jar
         path: staging
