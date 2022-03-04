@@ -190,8 +190,8 @@ public class WorldwideChat extends JavaPlugin {
 				WWCStats wwcs = new WWCStats(sender, command, label, args);
 				return wwcs.processCommand();
 			}
-		/* Commands that run regardless of translator settings, but not during restarts or if console */
 		}
+		/* Commands that run regardless of translator settings, but not during restarts or as console */
 		if (checkSenderIdentity(sender) && !translatorName.equals("Starting")) {
 			switch (command.getName()) {
 			case "wwcc":
@@ -199,7 +199,7 @@ public class WorldwideChat extends JavaPlugin {
 				WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
 				return wwcc.processCommand();
 			}
-		/* Commands that run if hasValidTranslatorSettings(sender) */
+		/* Commands that run if translator settings are valid */
 		}
 		if (hasValidTranslatorSettings(sender)) {
 			switch (command.getName()) {

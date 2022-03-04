@@ -72,6 +72,8 @@ public class WWCStats extends BasicCommand {
 			new BukkitRunnable() {
 				@Override
 				public void run() {
+					//TODO: Remove callable
+					//TODO: Cache names
 					Callable<?> result = () -> {
 						/* Get OfflinePlayer, this will allow us to get stats even if target is offline */
 						OfflinePlayer inPlayer = null;
@@ -88,6 +90,7 @@ public class WWCStats extends BasicCommand {
 								CommonDefinitions.sendMessage(sender, playerNotFound);
 								return null;
 							}
+							//TODO: Replace this with a synchronous online player check, and then query the api async if they do not exist
 							inPlayer = Bukkit.getOfflinePlayer(inName);
 							/* getOfflinePlayer always returns a player, so we must check if this player has played on this server */
 							if (!inPlayer.hasPlayedBefore()) {

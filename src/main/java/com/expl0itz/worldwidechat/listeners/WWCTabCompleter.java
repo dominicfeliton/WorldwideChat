@@ -22,6 +22,7 @@ public class WWCTabCompleter implements TabCompleter {
 	@Override
 	public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
 		// Init out list
+		// TODO: Revise this whole garbage class
 		List<String> out = new ArrayList<String>();
 
 		if (command.getName().equals("wwct") && args.length > 0 && args.length < 4) {

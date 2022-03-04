@@ -4,11 +4,9 @@ import java.util.ArrayList;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import com.cryptomorin.xseries.XEnchantment;
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
@@ -64,12 +62,11 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 				ItemMeta currentLangMeta = currentLang.getItemMeta();
 				/* Add Glow Effect */
 				ArrayList<String> lore = new ArrayList<>();
-				currentLangMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 				if (selectedSourceLanguage.equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
-					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
+					WWCInventoryManager.addGlowEffect(currentLangMeta);
 					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
 				} else if (currTranslator.getInLangCode().equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
-					currentLangMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
+					WWCInventoryManager.addGlowEffect(currentLangMeta);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				currentLangMeta.setDisplayName(main.getSupportedTranslatorLanguages().get(i).getLangName());
@@ -100,13 +97,12 @@ public class WWCTranslateGUISourceLanguage implements InventoryProvider {
 						+ CommonDefinitions.getMessage("wwctGUIAutoDetectButton"));
 				
 				/* Add Glow Effect */
-				skipSourceMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 				ArrayList<String> lore = new ArrayList<>();
 				if ((currTranslator.getInLangCode().equals("None"))) {
-					skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
+					WWCInventoryManager.addGlowEffect(skipSourceMeta);
 					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
 				} else if (selectedSourceLanguage.equalsIgnoreCase("None")) {
-					skipSourceMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
+					WWCInventoryManager.addGlowEffect(skipSourceMeta);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				skipSourceButton.setItemMeta(skipSourceMeta);

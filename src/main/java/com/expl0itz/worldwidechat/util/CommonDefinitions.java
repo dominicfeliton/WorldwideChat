@@ -426,13 +426,6 @@ public class CommonDefinitions {
 			if (main.getTranslatorErrorCount() >= mainConfig.getInt("Translator.errorLimit")) {
 				main.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReached"));
 				main.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReachedCheckLogs"));
-				mainConfig.set("Translator.useWatsonTranslate",
-						false);
-				mainConfig.set("Translator.useGoogleTranslate",
-						false);
-				mainConfig.set("Translator.useAmazonTranslate",
-						false);
-				main.getConfigManager().saveMainConfig(false);
 				main.reload();
 			}
 			process.cancel(true);
