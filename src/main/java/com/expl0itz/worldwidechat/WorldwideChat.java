@@ -244,11 +244,17 @@ public class WorldwideChat extends JavaPlugin {
 		return true;
 	}
 
-	/* Easy Reload Method */
+	/**
+	  * Easy way to reload this plugin; call this method anywhere to reload quickly
+	  */
 	public void reload() {
 		reload(null);
 	}
 	
+	/**
+	  * Reloads the plugin and sends a message to the caller
+	  * inSender - CommandSender who requested reload
+	  */
 	public void reload(CommandSender inSender) {
 		/* Put plugin into a reloading state */
 		translatorErrorCount = 0;
@@ -293,15 +299,21 @@ public class WorldwideChat extends JavaPlugin {
 		}
 	}
 
-	/* Cancel Background Tasks w/out ID */
+	/**
+	  * Wait for and cancel background tasks 
+	  * @param isReloading - If this function should accommodate for a plugin reload or not
+	  */
     public void cancelBackgroundTasks(boolean isReloading) {
     	cancelBackgroundTasks(isReloading, -1);
     }
 	
-	/* Cancel Background Tasks */
+    /**
+	  * Wait for and cancel background tasks 
+	  * @param isReloading - If this function should accommodate for a plugin reload or not
+	  * @param taskID - Task to ignore when cancelling tasks, in case this is being ran async
+	  */
 	public void cancelBackgroundTasks(boolean isReloading, int taskID) {
-		// Kill all background tasks
-		// Wait for background async tasks to finish
+		// Wait for completion + kill all background tasks
 		// Thanks to:
 		// https://gist.github.com/blablubbabc/e884c114484f34cae316c48290b21d8e#file-someplugin-java-L37
 		if (!translatorName.equals("JUnit/MockBukkit Testing Translator")) {
@@ -357,6 +369,10 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/* Load Plugin Configs */
+	/**
+	  * (Re)load all plugin configs 
+	  * @param isReloading - If this function should accommodate for a plugin reload or not
+	  */
 	public void loadPluginConfigs(boolean isReloading) {
 		setConfigManager(new ConfigurationHandler());
 
@@ -394,11 +410,19 @@ public class WorldwideChat extends JavaPlugin {
 		}
 	}
 	
-	/* Get active async tasks */
+	/**
+	  * Get active asynchronous tasks 
+	  * @return int - Number of active async tasks
+	  */
 	private int getActiveAsyncTasks() {
 		return getActiveAsyncTasks(-1);
 	}
 	
+	/**
+	  * Get active asynchronous tasks (excluding a provided one)
+	  * @param excludedId - Task ID to be excluded from this count
+	  * @return int - Number of active async tasks, excluding excludedId
+	  */
 	private int getActiveAsyncTasks(int excludedId) {
 		int workers = 0;
 		if (!translatorName.equals("JUnit/MockBukkit Testing Translator")) {
@@ -411,6 +435,9 @@ public class WorldwideChat extends JavaPlugin {
 		return workers;
 	}
 
+	/**
+	  * Check MC version, print to console if unsupported 
+	  */
 	private void checkMCVersion() {
 		/* MC Version check */
 		String supportedVersions = "";
@@ -429,6 +456,11 @@ public class WorldwideChat extends JavaPlugin {
 		getLogger().warning(supportedVersions);
 	}
 
+	/**
+	  * Checks a sender if they are console
+	  * @param sender - CommandSender to be checked
+	  * @return Boolean - Whether sender is allowed or not
+	  */
 	private boolean checkSenderIdentity(CommandSender sender) {
 		if (!(sender instanceof Player)) {
 			final TextComponent consoleNotice = Component.text()
@@ -442,6 +474,11 @@ public class WorldwideChat extends JavaPlugin {
 		return true;
 	}
 
+	/**
+	  * Checks if the current translator is active/working
+	  * @param sender - CommandSender who requested this check
+	  * @return Boolean - True if translator is valid; false otherwise
+	  */
 	private boolean hasValidTranslatorSettings(CommandSender sender) {
 		if (getTranslatorName().equals("Starting")) {
 			final TextComponent notDone = Component.text()
@@ -463,8 +500,10 @@ public class WorldwideChat extends JavaPlugin {
 		return true;
 	}
 
+	/**
+	  * Registers tab autocomplete for all valid commands 
+	  */
 	private void registerTabCompleters() {
-		// Register tab completers
 		getCommand("wwcg").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwct").setTabCompleter(new WWCTabCompleter());
 		getCommand("wwcti").setTabCompleter(new WWCTabCompleter());

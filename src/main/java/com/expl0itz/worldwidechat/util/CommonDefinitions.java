@@ -533,6 +533,11 @@ public class CommonDefinitions {
 		return genericConfigConversation(preCheck, context, successfulChangeMsg, new String[] {configValName}, new Object[] {configVal}, prevInventory);
 	}
 	
+	/**
+	  * Checks if a provided exception is a no confidence one from our target translator.
+	  * @param exc - The exception to be checked
+	  * @return Boolean - If exception is no confidence, true; false otherwise
+	  */
 	private static boolean isNoConfidenceException(Exception exc) {
 		Class<?>[] noConfidenceExceptions = new Class<?>[]{
 			InvalidRequestException.class, // Amazon
@@ -547,10 +552,11 @@ public class CommonDefinitions {
 		return false;
 	}
 	
-	/* Sanitize Inputs */
-	// Warn user about color codes
-	// EssentialsX chat and maybe others replace "&4Test" with " 4Test"
-	// Therefore, we find the " #" regex or the "&" char, and warn the user about it
+	/**
+	  * Detects presence of color codes in a given string
+	  * @param inMessage - Message to be checked
+	  * @param currPlayer - Player that sent the message
+	  */
 	private static void detectColorCodePresence(String inMessage, Player currPlayer) {
 		if ((inMessage.contains("&") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals(""))
 				&& !(main.getActiveTranslator(currPlayer.getUniqueId().toString())
