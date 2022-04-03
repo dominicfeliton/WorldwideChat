@@ -69,7 +69,6 @@ public class WWCInventoryManager extends InventoryManager {
 	public static void setCommonButton(int x, int y, Player player, InventoryContents contents, String buttonType, Object[] args) {
 		ItemStack pageButton = XMaterial.WHITE_STAINED_GLASS.parseItem();
 		ItemMeta pageMeta = pageButton.getItemMeta();
-		pageMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 		if (buttonType.equalsIgnoreCase("Previous")) {
 			pageButton = XMaterial.RED_STAINED_GLASS.parseItem();
 			pageMeta.setDisplayName(ChatColor.RED
@@ -99,7 +98,7 @@ public class WWCInventoryManager extends InventoryManager {
 			pageMeta.setDisplayName(ChatColor.AQUA
 					+ CommonDefinitions.getMessage("wwcGUIPageNumber", (Arrays.copyOf(args, args.length, String[].class))));
 			if (args[0].equals("1")) {
-				pageMeta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
+				WWCInventoryManager.addGlowEffect(pageMeta);
 			}
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.empty(pageButton));
@@ -216,5 +215,10 @@ public class WWCInventoryManager extends InventoryManager {
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			genericConversation.buildConversation(player).begin();
 		}));
+	}
+	
+	public static void addGlowEffect(ItemMeta meta) {
+		meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+		meta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
 	}
 }
