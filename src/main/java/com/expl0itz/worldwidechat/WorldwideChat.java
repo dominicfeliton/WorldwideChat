@@ -35,6 +35,7 @@ import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
+import com.expl0itz.worldwidechat.inventory.configuration.MenuGui;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
 import com.expl0itz.worldwidechat.listeners.InventoryListener;
 import com.expl0itz.worldwidechat.listeners.OnPlayerJoinListener;
@@ -59,8 +60,8 @@ import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 
 public class WorldwideChat extends JavaPlugin {
-	public static final int bStatsID = 10562;
 	public static int translatorFatalAbortSeconds = 10;
+	public static final int bStatsID = 10562;
 	public static final int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
 	public static final int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
 	
@@ -122,6 +123,7 @@ public class WorldwideChat extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
+		//TODO: Make common enum for scheduler tasks
 		// Initialize critical instances
 		instance = this; // Static instance of this class
 		adventure = BukkitAudiences.create(this); // Adventure
@@ -141,6 +143,9 @@ public class WorldwideChat extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new InventoryListener(), this);
 		getLogger().info(ChatColor.LIGHT_PURPLE
 				+ CommonDefinitions.getMessage("wwcListenersInitialized"));
+		
+		// Pre-generate hard coded config UIs
+		MenuGui.genAllConfigUIs();
 
 		// We made it!
 		CommonDefinitions.sendDebugMessage("Async tasks running: " + this.getActiveAsyncTasks());

@@ -6,7 +6,7 @@ import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.inventory.configuration.GeneralSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.MenuGui.TAGS;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import net.md_5.bungee.api.ChatColor;
@@ -24,7 +24,7 @@ public class GeneralSettingsSyncUserDataConversation extends NumericPrompt {
 
 	@Override
 	protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-		return CommonDefinitions.genericConfigConversation(input.intValue() > 10, context, "wwcConfigConversationSyncUserDataDelaySuccess", "General.syncUserDataDelay", input.intValue(), GeneralSettingsGUI.generalSettings);
+		return CommonDefinitions.genericConfigConversation(input.intValue() > 10, context, "wwcConfigConversationSyncUserDataDelaySuccess", "General.syncUserDataDelay", input.intValue(), TAGS.GEN_SET.smartInv);
 	}
 
 }

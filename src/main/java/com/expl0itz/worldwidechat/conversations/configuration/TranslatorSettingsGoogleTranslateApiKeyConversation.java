@@ -6,7 +6,7 @@ import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.inventory.configuration.EachTranslatorSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.MenuGui.TAGS;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import net.md_5.bungee.api.ChatColor;
@@ -25,7 +25,7 @@ public class TranslatorSettingsGoogleTranslateApiKeyConversation extends StringP
 	@Override
 	public Prompt acceptInput(ConversationContext context, String input) {
 		return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationGoogleTranslateAPIKeySuccess", 
-				new String[] {"Translator.googleTranslateAPIKey", "Translator.useGoogleTranslate"}, new Object[] {input, false}, EachTranslatorSettingsGUI.getCurrentTranslatorSettings("Google Translate"));
+				new String[] {"Translator.googleTranslateAPIKey", "Translator.useGoogleTranslate"}, new Object[] {input, false}, TAGS.GOOGLE_TRANS_SET.smartInv);
 	}
 
 }

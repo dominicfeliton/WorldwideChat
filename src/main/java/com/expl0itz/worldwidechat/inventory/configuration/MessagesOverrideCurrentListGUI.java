@@ -13,6 +13,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
+import com.expl0itz.worldwidechat.inventory.configuration.MenuGui.TAGS;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import fr.minuskube.inv.ClickableItem;
@@ -81,7 +82,7 @@ public class MessagesOverrideCurrentListGUI implements InventoryProvider {
 			if (!pagination.isFirst()) {
 				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous");
 			} else {
-				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {ChatSettingsGUI.chatSettings});
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {TAGS.CHAT_SET.smartInv});
 			}
 			
 			/* Bottom Middle Option: Add new override */

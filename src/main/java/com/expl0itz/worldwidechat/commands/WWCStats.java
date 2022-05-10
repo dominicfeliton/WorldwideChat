@@ -91,7 +91,10 @@ public class WWCStats extends BasicCommand {
 								return null;
 							}
 							//TODO: Replace this with a synchronous online player check, and then query the api async if they do not exist
-							inPlayer = Bukkit.getOfflinePlayer(inName);
+							inPlayer = Bukkit.getPlayer(inName);
+							if (inPlayer == null) {
+								
+							}
 							/* getOfflinePlayer always returns a player, so we must check if this player has played on this server */
 							if (!inPlayer.hasPlayedBefore()) {
 								// Target player not found

@@ -157,8 +157,8 @@ public class CommonDefinitions {
 		} else {
 			convertedOriginalMessage = messagesConfig.getString("Messages." + ChatColor.stripColor(messageName));
 			if (convertedOriginalMessage == null) {
-				main.getLogger().severe("Bad message! Please fix your messages-" + messagesConfig.getString("General.pluginLang") + ".yml.");
-				return ChatColor.RED + "Bad message! Please fix your messages-" + messagesConfig.getString("General.pluginLang") + ".yml.";
+				main.getLogger().severe("Bad message! Please fix your messages-XX.yml.");
+				return ChatColor.RED + "Bad message! Please fix your messages-XX.yml.";
 			}
 		}
 		
