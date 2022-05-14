@@ -24,6 +24,7 @@ public class YAMLTranslator {
 
 	// Local YAMLTranslator used for translating our localization files.
 	// This uses amazon translate exclusively.
+	// The code sucks. May revise it significantly someday, but since it's *only* for translating YAMLs before release who cares?
 
 	public static void main(String[] args) {
 		// Creds

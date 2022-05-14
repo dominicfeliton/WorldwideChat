@@ -20,19 +20,19 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
-public class MessagesOverrideModifyGUI implements InventoryProvider {
+public class MessagesOverrideModifyGui implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	
 	private String currentOverrideName = "";
 	
-	public MessagesOverrideModifyGUI(String currentOverrideName) {
+	public MessagesOverrideModifyGui(String currentOverrideName) {
 		this.currentOverrideName = currentOverrideName;
 	}
 	
 	public static SmartInventory getModifyCurrentOverride(String currentOverrideName) {
 		return SmartInventory.builder().id("overrideModifyMenu")
-				.provider(new MessagesOverrideModifyGUI(currentOverrideName)).size(3, 9)
+				.provider(new MessagesOverrideModifyGui(currentOverrideName)).size(3, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
 				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatMessagesModifyOverride"))
 				.build();
@@ -68,7 +68,7 @@ public class MessagesOverrideModifyGUI implements InventoryProvider {
 						BukkitRunnable out = new BukkitRunnable() {
 							@Override
 							public void run() {
-								MessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
+								MessagesOverrideCurrentListGui.overrideMessagesSettings.open(player);
 							}
 						};
 						CommonDefinitions.scheduleTask(out);
@@ -79,7 +79,7 @@ public class MessagesOverrideModifyGUI implements InventoryProvider {
 			
 			
 			/* Left Option: Previous Page */
-			WWCInventoryManager.setCommonButton(1, 2, player, contents, "Previous", new Object[] {MessagesOverrideCurrentListGUI.overrideMessagesSettings});
+			WWCInventoryManager.setCommonButton(1, 2, player, contents, "Previous", new Object[] {MessagesOverrideCurrentListGui.overrideMessagesSettings});
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

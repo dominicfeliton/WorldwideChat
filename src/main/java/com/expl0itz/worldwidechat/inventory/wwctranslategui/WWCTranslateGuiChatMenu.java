@@ -21,13 +21,13 @@ import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 
-public class WWCTranslateGUIChatMenu implements InventoryProvider {
+public class WWCTranslateGuiChatMenu implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
 	private String targetPlayerUUID = "";
 
-	public WWCTranslateGUIChatMenu(String targetPlayerUUID) {
+	public WWCTranslateGuiChatMenu(String targetPlayerUUID) {
 		this.targetPlayerUUID = targetPlayerUUID;
 	}
 
@@ -36,7 +36,7 @@ public class WWCTranslateGUIChatMenu implements InventoryProvider {
 		String playerTitle = "";
 		playerTitle = ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUIChatMenu", new String[] {WorldwideChat.instance.getServer()
 				.getPlayer(UUID.fromString(targetPlayerUUID)).getName()});
-		return SmartInventory.builder().id("translateChatMenu").provider(new WWCTranslateGUIChatMenu(targetPlayerUUID))
+		return SmartInventory.builder().id("translateChatMenu").provider(new WWCTranslateGuiChatMenu(targetPlayerUUID))
 				.size(4, 9).manager(WorldwideChat.instance.getInventoryManager()).title(playerTitle).build();
 	}
 
@@ -95,7 +95,7 @@ public class WWCTranslateGUIChatMenu implements InventoryProvider {
 			}
 			
 			/* Bottom Left Option: Previous Page */
-			WWCInventoryManager.setCommonButton(2, 4, player, contents, "Previous", new Object[] {WWCTranslateGUIMainMenu.getTranslateMainMenu(targetPlayerUUID)});
+			WWCInventoryManager.setCommonButton(2, 4, player, contents, "Previous", new Object[] {WWCTranslateGuiMainMenu.getTranslateMainMenu(targetPlayerUUID)});
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

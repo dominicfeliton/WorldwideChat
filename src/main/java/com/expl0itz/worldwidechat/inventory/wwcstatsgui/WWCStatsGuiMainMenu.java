@@ -16,19 +16,19 @@ import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import net.md_5.bungee.api.ChatColor;
 
-public class WWCStatsGUIMainMenu implements InventoryProvider {
+public class WWCStatsGuiMainMenu implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	
 	private String targetPlayerUUID = "";
 	
-	public WWCStatsGUIMainMenu(String targetPlayerUUID) {
+	public WWCStatsGuiMainMenu(String targetPlayerUUID) {
 		this.targetPlayerUUID = targetPlayerUUID;
 	}
 	
 	public static SmartInventory getStatsMainMenu(String targetPlayerUUID, String targetPlayerName) {
 		return SmartInventory.builder().id("statsMainMenu")
-				.provider(new WWCStatsGUIMainMenu(targetPlayerUUID)).size(5, 9)
+				.provider(new WWCStatsGuiMainMenu(targetPlayerUUID)).size(5, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
 				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcsTitle", new String[] {targetPlayerName}))
 				.build();

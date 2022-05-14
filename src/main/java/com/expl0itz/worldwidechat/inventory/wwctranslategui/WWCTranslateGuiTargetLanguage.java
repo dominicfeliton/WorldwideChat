@@ -24,21 +24,21 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 
-public class WWCTranslateGUITargetLanguage implements InventoryProvider {
+public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
 	private String selectedSourceLanguage = "";
 	private String targetPlayerUUID = "";
 	
-	public WWCTranslateGUITargetLanguage(String source, String targetPlayerUUID) {
+	public WWCTranslateGuiTargetLanguage(String source, String targetPlayerUUID) {
 		selectedSourceLanguage = source;
 		this.targetPlayerUUID = targetPlayerUUID;
 	}
 
 	public static SmartInventory getTargetLanguageInventory(String source, String targetPlayerUUID) {
 		return SmartInventory.builder().id("translateTargetLanguage")
-				.provider(new WWCTranslateGUITargetLanguage(source, targetPlayerUUID)).size(6, 9)
+				.provider(new WWCTranslateGuiTargetLanguage(source, targetPlayerUUID)).size(6, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
 				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUINewTranslationTarget"))
 				.build();
@@ -104,7 +104,7 @@ public class WWCTranslateGUITargetLanguage implements InventoryProvider {
 			if (!pagination.isFirst()) {
 				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID)});
 			} else {
-				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {WWCTranslateGUISourceLanguage.getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID)});
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {WWCTranslateGuiSourceLanguage.getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID)});
 			}
 
 			/* Bottom Right Option: Next Page */

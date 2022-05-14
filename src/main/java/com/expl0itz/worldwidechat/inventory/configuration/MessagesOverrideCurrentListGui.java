@@ -23,12 +23,12 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 
-public class MessagesOverrideCurrentListGUI implements InventoryProvider {
+public class MessagesOverrideCurrentListGui implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	
 	public static final SmartInventory overrideMessagesSettings = SmartInventory.builder().id("overrideMessagesMenu")
-			.provider(new MessagesOverrideCurrentListGUI()).size(6, 9)
+			.provider(new MessagesOverrideCurrentListGui()).size(6, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatMessagesOverrideSettings"))
 	        .build();
@@ -67,7 +67,7 @@ public class MessagesOverrideCurrentListGUI implements InventoryProvider {
 					currentEntry.setItemMeta(currentEntryMeta);
 					currentOverrides[currSpot] = ClickableItem.of(currentEntry, e -> {
 						// Open Specific Override GUI
-						MessagesOverrideModifyGUI.getModifyCurrentOverride(entry.getKey()).open(player);
+						MessagesOverrideModifyGui.getModifyCurrentOverride(entry.getKey()).open(player);
 					});
 					currSpot++;
 				}
@@ -86,7 +86,7 @@ public class MessagesOverrideCurrentListGUI implements InventoryProvider {
 			}
 			
 			/* Bottom Middle Option: Add new override */
-			WWCInventoryManager.genericOpenSubmenuButton(5, 4, player, contents, "wwcConfigGUIChatMessagesOverrideNewButton", MessagesOverridePossibleListGUI.overrideNewMessageSettings);
+			WWCInventoryManager.genericOpenSubmenuButton(5, 4, player, contents, "wwcConfigGUIChatMessagesOverrideNewButton", MessagesOverridePossibleListGui.overrideNewMessageSettings);
 			
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {
