@@ -14,7 +14,7 @@ public class WWCConfiguration extends BasicCommand {
 
 	@Override
 	public boolean processCommand() {
-		MenuGui.TAGS.GEN_SET.smartInv.open((Player) sender);
+		MenuGui.CONFIG_GUI_TAGS.GEN_SET.smartInv.open((Player) sender);
 		return true;
 	}
 

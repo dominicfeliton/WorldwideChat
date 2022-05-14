@@ -9,27 +9,12 @@ import org.bukkit.entity.Player;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsFatalAsyncAbortConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsLangConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsPrefixConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsSyncUserDataConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsUpdateCheckerConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.SQLSettingsDatabaseConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.SQLSettingsHostnameConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.SQLSettingsOptionalArgsConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.SQLSettingsPasswordConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.SQLSettingsPortConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.SQLSettingsUsernameConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsAmazonTranslateAccessKeyConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsAmazonTranslateRegionConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsAmazonTranslateSecretKeyConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsCharacterLimitConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsErrorLimitConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsGlobalRateConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsGoogleTranslateApiKeyConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsTranslationCacheConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsWatsonApiKeyConversation;
-import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsWatsonServiceUrlConversation;
+import com.expl0itz.worldwidechat.conversations.configuration.AmazonSettingsConvos;
+import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsConvos;
+import com.expl0itz.worldwidechat.conversations.configuration.GoogleSettingsConvos;
+import com.expl0itz.worldwidechat.conversations.configuration.SQLSettingsConvos;
+import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsConvos;
+import com.expl0itz.worldwidechat.conversations.configuration.WatsonSettingsConvos;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.SQLUtils;
@@ -40,85 +25,84 @@ import fr.minuskube.inv.content.InventoryProvider;
 
 public class MenuGui implements InventoryProvider {
 	
-	public static enum TAGS {
+	public static enum CONFIG_GUI_TAGS {
 		GEN_SET, STORAGE_SET, SQL_SET, CHAT_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET;
 		
 		public SmartInventory smartInv;
 	}
 	
-	static public void genAllConfigUIs() {
-		//TODO: Add a convo class with a similar structure to this one. Combine everything :)
+	public static void genAllConfigUIs() {
 		/* Generate inventories */
 		MenuGui generalSet = new MenuGui();
-		TAGS.GEN_SET.smartInv = generalSet.genSmartInv("generalSettingsMenu", "wwcConfigGUIGeneralSettings");
+		CONFIG_GUI_TAGS.GEN_SET.smartInv = generalSet.genSmartInv("generalSettingsMenu", "wwcConfigGUIGeneralSettings");
 		
 		MenuGui storageSet = new MenuGui();
-		TAGS.STORAGE_SET.smartInv = storageSet.genSmartInv("storageSettingsMenu", "wwcConfigGUIStorageSettings");
+		CONFIG_GUI_TAGS.STORAGE_SET.smartInv = storageSet.genSmartInv("storageSettingsMenu", "wwcConfigGUIStorageSettings");
 		
 		MenuGui sqlSet = new MenuGui();
-		TAGS.SQL_SET.smartInv = sqlSet.genSmartInv("sqlSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUISQLSettings");
+		CONFIG_GUI_TAGS.SQL_SET.smartInv = sqlSet.genSmartInv("sqlSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUISQLSettings");
 		
 		MenuGui chatSet = new MenuGui();
-		TAGS.CHAT_SET.smartInv = chatSet.genSmartInv("chatSettingsMenu", "wwcConfigGUIChatSettings");
+		CONFIG_GUI_TAGS.CHAT_SET.smartInv = chatSet.genSmartInv("chatSettingsMenu", "wwcConfigGUIChatSettings");
 		
 		MenuGui transSet = new MenuGui();
-		TAGS.TRANS_SET.smartInv = transSet.genSmartInv("translatorSettingsMenu", "wwcConfigGUITranslatorSettings");
+		CONFIG_GUI_TAGS.TRANS_SET.smartInv = transSet.genSmartInv("translatorSettingsMenu", "wwcConfigGUITranslatorSettings");
 		
 		MenuGui transWatsonSet = new MenuGui();
-		TAGS.WATSON_TRANS_SET.smartInv = transWatsonSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Watson"});
+		CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv = transWatsonSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Watson"});
 		
 		MenuGui transGoogleSet = new MenuGui();
-		TAGS.GOOGLE_TRANS_SET.smartInv = transGoogleSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Google"});
+		CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv = transGoogleSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Google"});
 		
 		MenuGui transAmazonSet = new MenuGui();
-		TAGS.AMAZON_TRANS_SET.smartInv = transAmazonSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Amazon"});
+		CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv = transAmazonSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Amazon"});
 		
 		/* Generate inventory contents */
 		// General
 		generalSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
 		generalSet.add(new ConvoElement(1, 1, "wwcConfigGUIPrefixButton", XMaterial.NAME_TAG,
-				new GeneralSettingsPrefixConversation()));
+				new GeneralSettingsConvos.Prefix()));
 		generalSet.add(new ToggleElement(1, 2, "wwcConfigGUIbStatsButton", "wwcConfigConversationbStatsSuccess", "General.enablebStats"));
 		generalSet.add(new ConvoElement(1, 3, "wwcConfigGUILangButton", XMaterial.NAME_TAG,
-				new GeneralSettingsLangConversation()));
+				new GeneralSettingsConvos.Lang()));
 		generalSet.add(new ConvoElement(1, 4, "wwcConfigGUIUpdateCheckerButton", XMaterial.NAME_TAG,
-				new GeneralSettingsUpdateCheckerConversation()));
+				new GeneralSettingsConvos.UpdateChecker()));
 		generalSet.add(new ConvoElement(1, 5, "wwcConfigGUISyncUserDataButton", XMaterial.NAME_TAG,
-				new GeneralSettingsSyncUserDataConversation()));
+				new GeneralSettingsConvos.SyncUserData()));
 		generalSet.add(new ConvoElement(1, 6, "wwcConfigGUIFatalAsyncAbortButton", XMaterial.NAME_TAG,
-				new GeneralSettingsFatalAsyncAbortConversation()));
+				new GeneralSettingsConvos.UpdateChecker()));
 		generalSet.add(new ToggleElement(1, 7, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess", "General.enableDebugMode"));
-		generalSet.add(new CommonElement(2, 4, "Quit", null));
-		generalSet.add(new CommonElement(2, 6, "Next", new Object[] {TAGS.STORAGE_SET.smartInv}));
-		generalSet.add(new CommonElement(2, 8, "Page Number", new String[] {TAGS.GEN_SET.ordinal()+1 + ""}));
+		generalSet.add(new CommonElement(2, 4, "Quit"));
+		generalSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
+		generalSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.GEN_SET.ordinal()+1 + ""}));
 		
 		// Storage
 		storageSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
-		storageSet.add(new SubMenuElement(1, 1, SQLUtils.isConnected(), "wwcConfigGUISQLMenuButton", TAGS.SQL_SET.smartInv));
-		storageSet.add(new CommonElement(2, 2, "Previous", new Object[] {TAGS.GEN_SET.smartInv}));
-		storageSet.add(new CommonElement(2, 4, "Quit", null));
-		storageSet.add(new CommonElement(2, 6, "Next", new Object[] {TAGS.CHAT_SET.smartInv}));
-		storageSet.add(new CommonElement(2, 8, "Page Number", new String[] {TAGS.STORAGE_SET.ordinal()+1 + ""}));
+		storageSet.add(new SubMenuElement(1, 1, SQLUtils.isConnected(), "wwcConfigGUISQLMenuButton", CONFIG_GUI_TAGS.SQL_SET.smartInv));
+		storageSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.GEN_SET.smartInv}));
+		storageSet.add(new CommonElement(2, 4, "Quit"));
+		storageSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
+		storageSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.STORAGE_SET.ordinal()+1 + ""}));
 		
 		// SQL
 		sqlSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
 		sqlSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleSQLButton", "wwcConfigConversationToggleSQLSuccess", "Storage.useSQL"));
 		sqlSet.add(new ConvoElement(1, 2, "wwcConfigGUISQLHostnameButton", XMaterial.NAME_TAG,
-				new SQLSettingsHostnameConversation()));
+				new SQLSettingsConvos.Hostname()));
 		sqlSet.add(new ConvoElement(1, 3, "wwcConfigGUISQLPortButton", XMaterial.NAME_TAG,
-				new SQLSettingsPortConversation()));
+				new SQLSettingsConvos.Port()));
 		sqlSet.add(new ConvoElement(1, 4, "wwcConfigGUISQLDatabaseNameButton", XMaterial.NAME_TAG,
-				new SQLSettingsDatabaseConversation()));
+				new SQLSettingsConvos.Database()));
 		sqlSet.add(new ConvoElement(1, 5, "wwcConfigGUISQLUsernameButton", XMaterial.NAME_TAG,
-				new SQLSettingsUsernameConversation()));
+				new SQLSettingsConvos.Username()));
 		sqlSet.add(new ConvoElement(1, 6, "wwcConfigGUISQLPasswordButton", XMaterial.NAME_TAG,
-				new SQLSettingsPasswordConversation()));
+				new SQLSettingsConvos.Password()));
 		sqlSet.add(new ToggleElement(1, 7, "wwcCOnfigGUIToggleSQLSSLButton", "wwcConfigConversationToggleSQLSSLSuccess", "Storage.sqlUseSSL"));
 		sqlSet.add(new ConvoElement(2, 1, "wwcConfigGUISQLOptionalArgsButton", XMaterial.NAME_TAG,
-				new SQLSettingsOptionalArgsConversation()));
-		sqlSet.add(new CommonElement(3, 2, "Previous", new Object[] {TAGS.STORAGE_SET.smartInv}));
-		sqlSet.add(new CommonElement(3, 4, "Quit", null));
-		sqlSet.add(new CommonElement(3, 8, "Page Number", new String[] {TAGS.STORAGE_SET.ordinal()+1 + ""}));
+				new SQLSettingsConvos.OptionalArgs()));
+		sqlSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
+		sqlSet.add(new CommonElement(3, 4, "Quit"));
+		sqlSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.STORAGE_SET.ordinal()+1 + ""}));
 		
 		// Chat 
 		chatSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
@@ -127,59 +111,59 @@ public class MenuGui implements InventoryProvider {
 		chatSet.add(new ToggleElement(1, 3, "wwcConfigGUISendFailedTranslationChatButton", "wwcConfigConversationSendFailedTranslationChatSuccess", "Chat.sendFailedTranslationChat"));
 		chatSet.add(new ToggleElement(1, 4, "wwcConfigGUISendIncomingHoverTextChatButton", "wwcConfigConversationSendIncomingHoverTextChatSuccess", "Chat.sendIncomingHoverTextChat"));
 		chatSet.add(new SubMenuElement(1, 5, "wwcConfigGUIMessagesOverrideChatButton", MessagesOverrideCurrentListGUI.overrideMessagesSettings));
-		chatSet.add(new CommonElement(2, 2, "Previous", new Object[] {TAGS.STORAGE_SET.smartInv}));
-		chatSet.add(new CommonElement(2, 4, "Quit", null));
-		chatSet.add(new CommonElement(2, 6, "Next", new Object[] {TAGS.TRANS_SET.smartInv}));
-		chatSet.add(new CommonElement(2, 8, "Page Number", new String[] {TAGS.CHAT_SET.ordinal()+1 + ""}));
+		chatSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
+		chatSet.add(new CommonElement(2, 4, "Quit"));
+		chatSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
+		chatSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));
 		
 		// Translator
 		transSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
-		transSet.add(new SubMenuElement(1, 1, WorldwideChat.instance.getTranslatorName().equals("Watson"), "wwcConfigGUIWatsonButton", TAGS.WATSON_TRANS_SET.smartInv));
-	    transSet.add(new SubMenuElement(1, 2, WorldwideChat.instance.getTranslatorName().equals("Google Translate"), "wwcConfigGUIGoogleTranslateButton", TAGS.GOOGLE_TRANS_SET.smartInv));
-	    transSet.add(new SubMenuElement(1, 3, WorldwideChat.instance.getTranslatorName().equals("Amazon Translate"), "wwcConfigGUIAmazonTranslateButton", TAGS.AMAZON_TRANS_SET.smartInv));
+		transSet.add(new SubMenuElement(1, 1, WorldwideChat.instance.getTranslatorName().equals("Watson"), "wwcConfigGUIWatsonButton", CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv));
+	    transSet.add(new SubMenuElement(1, 2, WorldwideChat.instance.getTranslatorName().equals("Google Translate"), "wwcConfigGUIGoogleTranslateButton", CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv));
+	    transSet.add(new SubMenuElement(1, 3, WorldwideChat.instance.getTranslatorName().equals("Amazon Translate"), "wwcConfigGUIAmazonTranslateButton", CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv));
 	    transSet.add(new ConvoElement(1, 4, "wwcConfigGUITranslatorCacheButton", XMaterial.NAME_TAG,
-	    		new TranslatorSettingsTranslationCacheConversation()));
+	    		new TranslatorSettingsConvos.TranslationCache()));
 	    transSet.add(new ConvoElement(1, 5, "wwcConfigGUIGlobalRateLimitButton", XMaterial.NAME_TAG,
-	    		new TranslatorSettingsGlobalRateConversation()));
+	    		new TranslatorSettingsConvos.GlobalRateLimit()));
 	    transSet.add(new ConvoElement(1, 6, "wwcConfigGUIErrorLimitButton", XMaterial.NAME_TAG,
-	    		new TranslatorSettingsErrorLimitConversation()));
+	    		new TranslatorSettingsConvos.ErrorLimit()));
 	    transSet.add(new ConvoElement(1, 7, "wwcConfigGUICharacterLimitButton", XMaterial.NAME_TAG,
-	    		new TranslatorSettingsCharacterLimitConversation()));
-	    transSet.add(new CommonElement(2, 2, "Previous", new Object[] {TAGS.CHAT_SET.smartInv}));
-		transSet.add(new CommonElement(2, 4, "Quit", null));
-		transSet.add(new CommonElement(2, 8, "Page Number", new String[] {TAGS.CHAT_SET.ordinal()+1 + ""}));
+	    		new TranslatorSettingsConvos.CharacterLimit()));
+	    transSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
+		transSet.add(new CommonElement(2, 4, "Quit"));
+		transSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));
 		
 		// Watson Translator
 		transWatsonSet.add(new BorderElement(XMaterial.BLUE_STAINED_GLASS_PANE));
 		transWatsonSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleWatsonTranslateButton", "wwcConfigConversationWatsonTranslateToggleSuccess", "Translator.useWatsonTranslate", new String[] {"Translator.useGoogleTranslate", "Translator.useAmazonTranslate"}));
 		transWatsonSet.add(new ConvoElement(1, 2, "wwcConfigGUIWatsonAPIKeyButton", XMaterial.NAME_TAG, 
-				new TranslatorSettingsWatsonApiKeyConversation()));
+				new WatsonSettingsConvos.ApiKey()));
 		transWatsonSet.add(new ConvoElement(1, 3, "wwcConfigGUIWatsonURLButton", XMaterial.NAME_TAG,
-				new TranslatorSettingsWatsonServiceUrlConversation()));
-		transWatsonSet.add(new CommonElement(2, 2, "Previous", new Object[] {TAGS.TRANS_SET.smartInv}));
-		transWatsonSet.add(new CommonElement(2, 4, "Quit", null));
+				new WatsonSettingsConvos.ServiceUrl()));
+		transWatsonSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
+		transWatsonSet.add(new CommonElement(2, 4, "Quit"));
 		transWatsonSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
 		
 		// Google Translator
 		transGoogleSet.add(new BorderElement(XMaterial.RED_STAINED_GLASS_PANE));
 		transGoogleSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleGoogleTranslateButton", "wwcConfigConversationGoogleTranslateToggleSuccess", "Translator.useGoogleTranslate", new String[] {"Translator.useWatsonTranslate", "Translator.useAmazonTranslate"}));
 		transGoogleSet.add(new ConvoElement(1, 2, "wwcConfigGUIGoogleTranslateAPIKeyButton", XMaterial.NAME_TAG, 
-				new TranslatorSettingsGoogleTranslateApiKeyConversation()));
-		transGoogleSet.add(new CommonElement(2, 2, "Previous", new Object[] {TAGS.TRANS_SET.smartInv}));
-		transGoogleSet.add(new CommonElement(2, 4, "Quit", null));
+				new GoogleSettingsConvos.ApiKey()));
+		transGoogleSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
+		transGoogleSet.add(new CommonElement(2, 4, "Quit"));
 		transGoogleSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
 		
 		// Amazon Translator
 		transAmazonSet.add(new BorderElement(XMaterial.YELLOW_STAINED_GLASS_PANE));
 		transAmazonSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleAmazonTranslateButton", "wwcConfigConversationAmazonTranslateToggleSuccess", "Translator.useAmazonTranslate", new String[] {"Translator.useGoogleTranslate", "Translator.useWatsonTranslate"}));
 		transAmazonSet.add(new ConvoElement(1, 2, "wwcConfigGUIAmazonTranslateAccessKeyButton", XMaterial.NAME_TAG, 
-				new TranslatorSettingsAmazonTranslateAccessKeyConversation()));
+				new AmazonSettingsConvos.AccessKey()));
 		transAmazonSet.add(new ConvoElement(1, 3, "wwcConfigGUIAmazonTranslateSecretKeyButton", XMaterial.NAME_TAG, 
-				new TranslatorSettingsAmazonTranslateSecretKeyConversation()));
+				new AmazonSettingsConvos.SecretKey()));
 		transAmazonSet.add(new ConvoElement(1, 4, "wwcConfigGUIAmazonTranslateRegionButton", XMaterial.NAME_TAG, 
-				new TranslatorSettingsAmazonTranslateRegionConversation()));
-		transAmazonSet.add(new CommonElement(2, 2, "Previous", new Object[] {TAGS.TRANS_SET.smartInv}));
-		transAmazonSet.add(new CommonElement(2, 4, "Quit", null));
+				new AmazonSettingsConvos.Region()));
+		transAmazonSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
+		transAmazonSet.add(new CommonElement(2, 4, "Quit"));
 		transAmazonSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
 	}
 	

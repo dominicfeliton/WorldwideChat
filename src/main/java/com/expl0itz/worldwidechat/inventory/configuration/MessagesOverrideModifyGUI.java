@@ -8,7 +8,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.conversations.configuration.ChatSettingsModifyOverrideTextConversation;
+import com.expl0itz.worldwidechat.conversations.configuration.ChatSettingsConvos;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
@@ -45,7 +45,7 @@ public class MessagesOverrideModifyGUI implements InventoryProvider {
 			WWCInventoryManager.setBorders(contents, XMaterial.ORANGE_STAINED_GLASS_PANE);
 
 			/* Middle Option: Change existing text */
-			WWCInventoryManager.genericConversationButton(1, 4, player, contents, new ChatSettingsModifyOverrideTextConversation(getModifyCurrentOverride(currentOverrideName), currentOverrideName), XMaterial.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
+			WWCInventoryManager.genericConversationButton(1, 4, player, contents, new ChatSettingsConvos.ModifyOverrideText(getModifyCurrentOverride(currentOverrideName), currentOverrideName), XMaterial.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
 			
 			/* Right Option: Delete override */
 			ItemStack deleteOverrideButton = XMaterial.BARRIER.parseItem();

@@ -13,7 +13,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.conversations.configuration.ChatSettingsModifyOverrideTextConversation;
+import com.expl0itz.worldwidechat.conversations.configuration.ChatSettingsConvos;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
@@ -70,7 +70,7 @@ public class MessagesOverridePossibleListGUI implements InventoryProvider {
 				currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {
 					// Start conversation
 					ConversationFactory textConvo = new ConversationFactory(main).withModality(true)
-							.withFirstPrompt(new ChatSettingsModifyOverrideTextConversation(MessagesOverridePossibleListGUI.overrideNewMessageSettings, entry.getKey()));
+							.withFirstPrompt(new ChatSettingsConvos.ModifyOverrideText(MessagesOverridePossibleListGUI.overrideNewMessageSettings, entry.getKey()));
 				    textConvo.buildConversation(player).begin();
 				});
 				currSpot++;
