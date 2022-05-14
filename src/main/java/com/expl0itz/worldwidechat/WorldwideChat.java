@@ -279,29 +279,28 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		
 		/* Once it is safe to, cancelBackgroundTasks and loadPluginConfigs async so we don't stall the main thread */
-		if (!CommonDefinitions.serverIsStopping()) {
-			new BukkitRunnable() {
-				@Override
-				public void run() {
-					final long currentDuration = System.nanoTime();
-					cancelBackgroundTasks(true, this.getTaskId());
-					loadPluginConfigs(true);
-					
-					/* Send successfully reloaded message */
-					if (inSender != null) {
-						final TextComponent wwcrSuccess = Component.text()
-								.append(Component.text()
-										.content(CommonDefinitions.getMessage("wwcrSuccess"))
-										.color(NamedTextColor.GREEN))
-								.append(Component.text()
-										.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
-										.color(NamedTextColor.YELLOW))
-								.build();
-						CommonDefinitions.sendMessage(inSender, wwcrSuccess);
-					}
+		BukkitRunnable reload = new BukkitRunnable() {
+			@Override
+			public void run() {
+				final long currentDuration = System.nanoTime();
+				cancelBackgroundTasks(true, this.getTaskId());
+				loadPluginConfigs(true);
+				
+				/* Send successfully reloaded message */
+				if (inSender != null) {
+					final TextComponent wwcrSuccess = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwcrSuccess"))
+									.color(NamedTextColor.GREEN))
+							.append(Component.text()
+									.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
+									.color(NamedTextColor.YELLOW))
+							.build();
+					CommonDefinitions.sendMessage(inSender, wwcrSuccess);
 				}
-			}.runTaskAsynchronously(this);	
-		}
+			}
+		};
+		CommonDefinitions.scheduleTaskAsynchronously(reload);
 	}
 
 	/**
@@ -390,28 +389,43 @@ public class WorldwideChat extends JavaPlugin {
 
 		/* Run tasks after translator loaded */
 		// Check for updates
-		if (!CommonDefinitions.serverIsStopping()) 
-			Bukkit.getScheduler().runTaskTimerAsynchronously(this, new UpdateChecker(), 0, configurationManager.getMainConfig().getInt("General.updateCheckerDelay") * 20);
+		BukkitRunnable update = new BukkitRunnable() {
+			@Override
+			public void run() {
+				new UpdateChecker().run();
+			}
+		};
+		CommonDefinitions.scheduleTaskAsynchronouslyRepeating(true, 0, configurationManager.getMainConfig().getInt("General.updateCheckerDelay") * 20, update);
 
 		// Schedule automatic user data sync
-		if (!CommonDefinitions.serverIsStopping()) 
-			Bukkit.getScheduler().runTaskTimerAsynchronously(this, new SyncUserData(), configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20, configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20);
-
+		BukkitRunnable sync = new BukkitRunnable() {
+			@Override
+			public void run() {
+				new SyncUserData().run();
+			}
+		};
+        CommonDefinitions.scheduleTaskAsynchronouslyRepeating(true, configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20,  configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20, sync);
+			
 		// Load saved user data
-		if (!CommonDefinitions.serverIsStopping()) new LoadUserData().run();
+		BukkitRunnable loadUserData = new BukkitRunnable() {
+			@Override
+			public void run() {
+				new LoadUserData().run();
+			}
+		};
+		CommonDefinitions.scheduleTask(loadUserData);
 
 		// Enable tab completers
-		if (!CommonDefinitions.serverIsStopping()) {
-			if (isReloading) {
-				new BukkitRunnable() {
-					@Override
-					public void run() {
-						registerTabCompleters();
-					}
-				}.runTask(this);
-			} else {
-				registerTabCompleters();
-			}
+		if (isReloading) {
+			BukkitRunnable tab = new BukkitRunnable() {
+				@Override
+				public void run() {
+					registerTabCompleters();
+				}
+			};
+			CommonDefinitions.scheduleTask(tab);
+		} else {
+			registerTabCompleters();
 		}
 	}
 	

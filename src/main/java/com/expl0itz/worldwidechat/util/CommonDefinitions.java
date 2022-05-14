@@ -64,6 +64,70 @@ public class CommonDefinitions {
 			"sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy" };
 	
 	/* Getters */
+	public static void scheduleTaskAsynchronously(BukkitRunnable in) {
+		scheduleTaskAsynchronously(true, in);
+	}
+	
+	public static void scheduleTaskAsynchronously(boolean serverMustBeRunning, BukkitRunnable in) {
+		scheduleTaskAsynchronously(serverMustBeRunning, 0, in);
+	}
+	
+	public static void scheduleTaskAsynchronously(boolean serverMustBeRunning, int delay, BukkitRunnable in) {
+		if (serverMustBeRunning) {
+			if (!CommonDefinitions.serverIsStopping()) {
+				in.runTaskLaterAsynchronously(main, delay);
+			}
+		} else {
+			in.runTaskLaterAsynchronously(main, delay);
+		}
+	}
+	
+	public static void scheduleTaskAsynchronouslyRepeating(boolean serverMustBeRunning, int delay, int repeatTime, BukkitRunnable in) {
+		if (serverMustBeRunning) {
+			if (!CommonDefinitions.serverIsStopping()) {
+				in.runTaskTimerAsynchronously(main, delay, repeatTime);
+			}
+		} else {
+			in.runTaskTimerAsynchronously(main, delay, repeatTime);
+		}
+	}
+	
+	public static void scheduleTaskAsynchronouslyRepeating(boolean serverMustBeRunning, int repeatTime, BukkitRunnable in) {
+		scheduleTaskAsynchronouslyRepeating(serverMustBeRunning, 0, repeatTime, in);
+	}
+	
+	public static void scheduleTask(BukkitRunnable in) {
+		scheduleTask(true, in);
+	}
+	
+	public static void scheduleTask(boolean serverMustBeRunning, BukkitRunnable in) {
+		scheduleTask(serverMustBeRunning, 0, in);
+	}
+	
+	public static void scheduleTask(boolean serverMustBeRunning, int delay, BukkitRunnable in) {
+		if (serverMustBeRunning) {
+			if (!CommonDefinitions.serverIsStopping()) {
+				in.runTaskLater(main, delay);
+			}
+		} else {
+			in.runTaskLater(main, delay);
+		}
+	}
+	
+	public static void scheduleTaskRepeating(boolean serverMustBeRunning, int delay, int repeatTime, BukkitRunnable in) {
+		if (serverMustBeRunning) {
+			if (!CommonDefinitions.serverIsStopping()) {
+				in.runTaskTimer(main, delay, repeatTime);
+			}
+		} else {
+			in.runTaskTimer(main, delay, repeatTime);
+		}
+	}
+	
+	public static void scheduleTaskRepeating(boolean serverMustBeRunning, int repeatTime, BukkitRunnable in) {
+		scheduleTaskRepeating(serverMustBeRunning, 0, repeatTime, in);
+	}
+	
 	/**
 	  * Compares two strings to check if they are the same language under the current translator.
 	  * @param first - A valid language name
@@ -476,6 +540,7 @@ public class CommonDefinitions {
 	  * @return Boolean - Whether the server is reloading/stopping or not
 	  */
 	public static boolean serverIsStopping() {
+		if (!main.isEnabled()) return true;
 		try {
 			new BukkitRunnable() {
 				@Override

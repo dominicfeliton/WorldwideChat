@@ -1,12 +1,12 @@
 package com.expl0itz.worldwidechat.listeners;
 
-import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryType;
+import org.bukkit.scheduler.BukkitRunnable;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
@@ -22,7 +22,7 @@ public class InventoryListener implements Listener {
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInventoryCloseEvent(InventoryCloseEvent e) {
 		/* Send the user a message if they quit a config GUI without saving properly */
-		Bukkit.getScheduler().runTaskLater(main, new Runnable() {
+		BukkitRunnable out = new BukkitRunnable() {
 			@Override
 			public void run() {
 				if (main.isPlayerUsingGUI(e.getPlayer().getUniqueId().toString()) && e.getPlayer().getOpenInventory().getType() != InventoryType.CHEST
@@ -36,6 +36,7 @@ public class InventoryListener implements Listener {
 					main.removePlayerUsingConfigurationGUI((Player) e.getPlayer());
 				}
 			}
-		}, 10);
+		};
+		CommonDefinitions.scheduleTask(true, 10, out);
 	}
 }

@@ -54,7 +54,7 @@ public class MessagesOverrideModifyGUI implements InventoryProvider {
 					+ CommonDefinitions.getMessage("wwcConfigGUIChatMessagesOverrideDeleteButton"));
 			deleteOverrideButton.setItemMeta(deleteOverrideMeta);
 			contents.set(1, 6, ClickableItem.of(deleteOverrideButton, e -> {
-				new BukkitRunnable() {
+				BukkitRunnable saveMessages = new BukkitRunnable() {
 					@Override
 					public void run() {
 						main.getConfigManager().getMessagesConfig().set("Overrides." + currentOverrideName, null);
@@ -65,14 +65,16 @@ public class MessagesOverrideModifyGUI implements InventoryProvider {
 										.color(NamedTextColor.GREEN))
 								.build();
 						CommonDefinitions.sendMessage(player, successfulChange);
-						new BukkitRunnable() {
+						BukkitRunnable out = new BukkitRunnable() {
 							@Override
 							public void run() {
 								MessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
 							}
-						}.runTask(main);
+						};
+						CommonDefinitions.scheduleTask(out);
 					}
-				}.runTaskAsynchronously(WorldwideChat.instance);
+				};
+				CommonDefinitions.scheduleTaskAsynchronously(saveMessages);
 			}));
 			
 			

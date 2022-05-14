@@ -69,7 +69,7 @@ public class WWCStats extends BasicCommand {
 	
 	private void translatorMessage(String inName) {
 		if (!CommonDefinitions.serverIsStopping()) {
-			new BukkitRunnable() {
+			BukkitRunnable translatorMessage = new BukkitRunnable() {
 				@Override
 				public void run() {
 					//TODO: Remove callable
@@ -108,14 +108,13 @@ public class WWCStats extends BasicCommand {
 							// Is on record; continue
 							if (sender instanceof Player) {
 								final String targetUUID = inPlayer.getUniqueId().toString();
-								if (!CommonDefinitions.serverIsStopping()) {
-									new BukkitRunnable() {
-										@Override
-										public void run() {
-											WWCStatsGUIMainMenu.getStatsMainMenu(targetUUID, inName).open((Player)sender);
-										}
-									}.runTask(main);
-								}
+								BukkitRunnable out = new BukkitRunnable() {
+									@Override
+									public void run() {
+										WWCStatsGUIMainMenu.getStatsMainMenu(targetUUID, inName).open((Player)sender);
+									}
+								};
+								CommonDefinitions.scheduleTask(out);
 							} else {
 								String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
 								PlayerRecord record = main
@@ -165,7 +164,8 @@ public class WWCStats extends BasicCommand {
 						executor.shutdownNow();
 					}
 				}
-			}.runTaskAsynchronously(main);
+			};
+			CommonDefinitions.scheduleTaskAsynchronously(translatorMessage);
 		}
 	}
 	

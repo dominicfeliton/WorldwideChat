@@ -393,14 +393,15 @@ public class ConfigurationHandler {
 	
 	/* Main config save method */
 	public void saveMainConfig(boolean async) {
-		if (async && main.isEnabled()) {
+		if (async) {
 			CommonDefinitions.sendDebugMessage("Saving main config async!");
-			new BukkitRunnable() {
+			BukkitRunnable out = new BukkitRunnable() {
 				@Override
 				public void run() {
 					saveMainConfig(false);
 				}
-			}.runTaskAsynchronously(main);
+			};
+			CommonDefinitions.scheduleTaskAsynchronously(out);
 			return;
 		}
 		CommonDefinitions.sendDebugMessage("Saving main config sync!");
@@ -409,14 +410,15 @@ public class ConfigurationHandler {
 	
 	/* Messages config save method */
 	public void saveMessagesConfig(boolean async) {
-		if (async && main.isEnabled()) {
+		if (async) {
 			CommonDefinitions.sendDebugMessage("Saving messages config async!");
-			new BukkitRunnable() {
+			BukkitRunnable out = new BukkitRunnable() {
 				@Override
 				public void run() {
 					saveMessagesConfig(false);
 				}
-			}.runTaskAsynchronously(main);
+			};
+			CommonDefinitions.scheduleTaskAsynchronously(out);
 			return;
 		}
 		CommonDefinitions.sendDebugMessage("Saving messages config sync!");
@@ -427,12 +429,13 @@ public class ConfigurationHandler {
 	public synchronized void saveCustomConfig(YamlConfiguration inConfig, File dest, boolean async) {
 		if (async && main.isEnabled()) {
 			CommonDefinitions.sendDebugMessage("Saving custom config async!");
-			new BukkitRunnable() {
+			BukkitRunnable out = new BukkitRunnable() {
 				@Override
 				public void run() {
 					saveCustomConfig(inConfig, dest, false);
 				}
-			}.runTaskAsynchronously(main);
+			};
+			CommonDefinitions.scheduleTaskAsynchronously(out);
 			return;
 		}
 		if (inConfig != null && dest != null) {

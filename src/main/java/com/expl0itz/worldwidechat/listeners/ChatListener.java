@@ -50,15 +50,14 @@ public class ChatListener implements Listener {
 			List<Player> unmodifiedMessageRecipients = new ArrayList<Player>();
 			for (Player eaRecipient : event.getRecipients()) {
 				ActiveTranslator testTranslator = main.getActiveTranslator(eaRecipient.getUniqueId());
-				if ((   !CommonDefinitions.serverIsStopping()
-						/* Check if this testTranslator wants their incoming messages to be translated */
-						&& !currTranslator.getUUID().equals(testTranslator.getUUID()) && !testTranslator.getUUID().equals("") && testTranslator.getTranslatingChatIncoming())
+				if ((   /* Check if this testTranslator wants their incoming messages to be translated */
+						!currTranslator.getUUID().equals(testTranslator.getUUID()) && !testTranslator.getUUID().equals("") && testTranslator.getTranslatingChatIncoming())
 						/* Check if this testTranslator doesn't already want the current chat message */
 						&& !(!currTranslator.getUUID().equals("") && currTranslator.getInLangCode().equals(testTranslator.getInLangCode())
 								&& currTranslator.getOutLangCode().equals(testTranslator.getOutLangCode()))) {
 					
 					/* Send the message in a new task, to avoid delaying the chat message for others */
-					new BukkitRunnable() {
+					BukkitRunnable chatHover = new BukkitRunnable() {
 						@Override
 						public void run() {
 							String translation = CommonDefinitions.translateText(event.getMessage() + " (Translated)", eaRecipient);
@@ -82,7 +81,8 @@ public class ChatListener implements Listener {
 							    main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
 							} catch (IllegalStateException e) {}
 						}
-					}.runTaskAsynchronously(main);
+					};
+					CommonDefinitions.scheduleTaskAsynchronously(chatHover);
 				} else {
 					unmodifiedMessageRecipients.add(eaRecipient);
 				}
@@ -93,8 +93,8 @@ public class ChatListener implements Listener {
 			if (!CommonDefinitions.serverIsStopping()) {
 				throw e;
 			}
-			CommonDefinitions.sendDebugMessage("We are reloading! Caught exception in ChatListener...");
-			CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
+			//CommonDefinitions.sendDebugMessage("We are reloading! Caught exception in ChatListener...");
+			//CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
 		}
 	}
 }
