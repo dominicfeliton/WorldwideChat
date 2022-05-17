@@ -213,6 +213,8 @@ public class CommonDefinitions {
 	  * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
 	  */
 	public static String getMessage(String messageName, String[] replacements) {
+		//TODO: If the final message is actually the same as inMessage, don't say translation failed...fix behavior POTENTIALLY
+		// EX: Saying Hello with Watson translates to Hello, sucks but w/e
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
 		YamlConfiguration messagesConfig = main.getConfigManager().getMessagesConfig();
@@ -316,21 +318,16 @@ public class CommonDefinitions {
 			}
 			
 			/* Check cache */
-			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
-				// Check cache for inputs, since config says we should
-				for (Map.Entry<CachedTranslation, Integer> currentTerm : main.getCache().entrySet()) {
-					CachedTranslation currKey = currentTerm.getKey();
-					if (currKey.getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
-							&& (currKey.getOutputLang().equalsIgnoreCase(currActiveTranslator.getOutLangCode()))
-							&& (currKey.getInputPhrase().equalsIgnoreCase(inMessage))) {
-						main.getCache().put(currKey, currentTerm.getValue()+1);
-						// Update stats, return output
-						currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
-						currPlayerRecord.setLastTranslationTime();
-						return StringEscapeUtils.unescapeJava(
-								ChatColor.translateAlternateColorCodes('&', currKey.getOutputPhrase()));
-					}
-				}
+			CachedTranslation testTranslation = new CachedTranslation(currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), inMessage);
+			if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.getCache().containsKey(testTranslation)) {
+				Object[] storedTranslation = main.getCache().get(testTranslation);
+				main.addCacheTerm(testTranslation, (String)storedTranslation[1]);
+				currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+				currPlayerRecord.setLastTranslationTime();
+				String outMessage = (String)storedTranslation[1];
+				if (((String)storedTranslation[1]).equalsIgnoreCase(inMessage)) outMessage += " "; //dont spam user with translation failed if translation actually == inMessage
+				return StringEscapeUtils.unescapeJava(
+						ChatColor.translateAlternateColorCodes('&', outMessage));
 			}
 
 			// Init vars
@@ -421,15 +418,13 @@ public class CommonDefinitions {
 			}
 
 			/* Update stats */
-			if (main.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+			currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
 			currPlayerRecord.setLastTranslationTime();
 
 			/* Add to cache */
 			if (mainConfig.getInt("Translator.translatorCacheSize") > 0
 					&& !(currActiveTranslator.getInLangCode().equals("None"))) {
-				CachedTranslation newTerm = new CachedTranslation(currActiveTranslator.getInLangCode(),
-						currActiveTranslator.getOutLangCode(), inMessage, out);
-				main.addCacheTerm(newTerm);
+				main.addCacheTerm(testTranslation, out);
 			}
 			return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', out));
 		};

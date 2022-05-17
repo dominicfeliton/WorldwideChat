@@ -10,6 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.HashMap;
 import java.util.List;
 
@@ -26,6 +27,7 @@ import com.expl0itz.worldwidechat.translators.GoogleTranslation;
 import com.expl0itz.worldwidechat.translators.TestTranslation;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
+import com.expl0itz.worldwidechat.util.CachedTranslation;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.Metrics;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
@@ -223,12 +225,16 @@ public class ConfigurationHandler {
 			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
 				main.getLogger()
 						.info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigCacheEnabled", new String[] {mainConfig.getInt("Translator.translatorCacheSize") + ""}));
+			    // Set cache to size beforehand, so we can avoid expandCapacity :)
+				main.setCache(new ConcurrentHashMap<CachedTranslation, Object[]>(mainConfig.getInt("Translator.translatorCacheSize"), 0.75f));
 			} else {
 				mainConfig.set("Translator.translatorCacheSize", 0);
+				main.setCache(new ConcurrentHashMap<CachedTranslation, Object[]>(100, 0.75f));
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigCacheDisabled"));
 			}
 		} catch (Exception e) {
 			mainConfig.set("Translator.translatorCacheSize", 100);
+			main.setCache(new ConcurrentHashMap<CachedTranslation, Object[]>(100, 0.75f));
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigCacheInvalid"));
 		}
 		// Error Limit Settings

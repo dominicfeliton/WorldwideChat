@@ -74,7 +74,7 @@ public class WorldwideChat extends JavaPlugin {
 	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>();
 	private List<String> playersUsingConfigurationGUI = new CopyOnWriteArrayList<String>();
 	
-	private Map<CachedTranslation, Integer> cache = new ConcurrentHashMap<CachedTranslation, Integer>();
+	private Map<CachedTranslation, Object[]> cache = new ConcurrentHashMap<CachedTranslation, Object[]>(100, 0.75f);
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<String, PlayerRecord>();
 	private Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<String, ActiveTranslator>();
 	
@@ -570,23 +570,37 @@ public class WorldwideChat extends JavaPlugin {
 	public void removePlayerUsingConfigurationGUI(Player p) {
 		removePlayerUsingConfigurationGUI(p.getUniqueId());
 	}
+	
+	public void setCache(Map<CachedTranslation, Object[]> in) {
+		cache = in;
+	}
 
-	public void addCacheTerm(CachedTranslation input) {
+	public void addCacheTerm(CachedTranslation input, String outputPhrase) {
 		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
+			// Term already exists
+			if (cache.get(input) != null) {
+				CommonDefinitions.sendDebugMessage("Term already exists! Incrementing by 1.");
+				cache.put(input, new Object[] {(Integer)cache.get(input)[0]+1, cache.get(input)[1]});
+				return;
+			}
 			if (cache.size() < configurationManager.getMainConfig().getInt("Translator.translatorCacheSize")) {
 				CommonDefinitions.sendDebugMessage("Added new phrase into cache!");
-				cache.put(input, 1);
+				cache.put(input, new Object[] {1, outputPhrase});
 			} else { // cache size is greater than X; let's remove the least used thing
-				Entry<CachedTranslation, Integer> removeEntry = null;
-				for (Map.Entry<CachedTranslation, Integer> eaSet : cache.entrySet()) {
-					if (removeEntry == null || eaSet.getValue() < removeEntry.getValue()) {
+				Entry<CachedTranslation, Object[]> removeEntry = null;
+				for (Map.Entry<CachedTranslation, Object[]> eaSet : cache.entrySet()) {
+					if ((Integer)eaSet.getValue()[0] <= 1) {
+						removeEntry = eaSet;
+						break;
+					}
+					if (removeEntry == null || (Integer)eaSet.getValue()[0] < (Integer)removeEntry.getValue()[0]) {
 						removeEntry = eaSet;
 					}
 				}
 
-				removeCacheTerm(removeEntry.getKey());
+				if (removeEntry != null) removeCacheTerm(removeEntry.getKey());
 				CommonDefinitions.sendDebugMessage("Removed least used phrase in cache, since we are now at the hard limit.");
-				addCacheTerm(input);
+				addCacheTerm(input, outputPhrase);
 			}
 		}
 	}
@@ -669,7 +683,7 @@ public class WorldwideChat extends JavaPlugin {
 		return activeTranslators;
 	}
 
-	public Map<CachedTranslation, Integer> getCache() {
+	public Map<CachedTranslation, Object[]> getCache() {
 		return cache;
 	}
 
