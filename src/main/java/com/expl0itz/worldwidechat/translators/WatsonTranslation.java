@@ -22,30 +22,21 @@ import com.ibm.watson.language_translator.v3.model.Languages;
 import com.ibm.watson.language_translator.v3.model.TranslateOptions;
 import com.ibm.watson.language_translator.v3.model.TranslationResult;
 
-public class WatsonTranslation {
-
-	private WorldwideChat main = WorldwideChat.instance;
-
-	private String textToTranslate = "";
-	private String inputLang = "";
-	private String outputLang = "";
-
-	private boolean isInitializing = false;
+public class WatsonTranslation extends BasicTranslation {
 
 	// For normal translation operation
 	public WatsonTranslation(String textToTranslate, String inputLang, String outputLang) {
-		this.textToTranslate = textToTranslate;
-		this.inputLang = inputLang;
-		this.outputLang = outputLang;
+		super(textToTranslate, inputLang, outputLang);
 	}
 
 	// For initializeConnection
 	public WatsonTranslation(String apikey, String serviceUrl, boolean isInitializing) {
+		super(isInitializing);
 		System.setProperty("WATSON_API_KEY", apikey);
 		System.setProperty("WATSON_SERVICE_URL", serviceUrl);
-		this.isInitializing = isInitializing;
 	}
 
+	@Override
 	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
 		ExecutorService executor = Executors.newSingleThreadExecutor();
 		Future<String> process = executor.submit(new translationTask());

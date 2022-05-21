@@ -3,7 +3,6 @@ package com.expl0itz.worldwidechat.util;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.concurrent.Callable;
@@ -31,7 +30,9 @@ import org.threeten.bp.LocalTime;
 import org.threeten.bp.format.DateTimeFormatter;
 import org.threeten.bp.temporal.ChronoUnit;
 
+import com.amazonaws.services.translate.model.DetectedLanguageLowConfidenceException;
 import com.amazonaws.services.translate.model.InvalidRequestException;
+import com.amazonaws.util.StringUtils;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
@@ -325,7 +326,6 @@ public class CommonDefinitions {
 				currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
 				currPlayerRecord.setLastTranslationTime();
 				String outMessage = (String)storedTranslation[1];
-				if (((String)storedTranslation[1]).equalsIgnoreCase(inMessage)) outMessage += " "; //dont spam user with translation failed if translation actually == inMessage
 				return StringEscapeUtils.unescapeJava(
 						ChatColor.translateAlternateColorCodes('&', outMessage));
 			}
@@ -422,8 +422,8 @@ public class CommonDefinitions {
 			currPlayerRecord.setLastTranslationTime();
 
 			/* Add to cache */
-			if (mainConfig.getInt("Translator.translatorCacheSize") > 0
-					&& !(currActiveTranslator.getInLangCode().equals("None"))) {
+			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
+				//TODO: Why can't we add none? Check this
 				main.addCacheTerm(testTranslation, out);
 			}
 			return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', out));
@@ -436,13 +436,17 @@ public class CommonDefinitions {
 		try {
 			/* Get translation */
 			finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
+			// If the translation we get is actually == our input
+			if (finalOut.equals(inMessage)) {
+				finalOut += " ";
+			}
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			/* Sanitize error before proceeding to write it to errorLog */
 			if (e instanceof InterruptedException || main.getTranslatorName().equals("Starting")) {
 				// If we are getting stopped by onDisable, end this immediately.
 				CommonDefinitions.sendDebugMessage("Interrupted translateText(), or server state is changing...");
 				return inMessage;
-			} else if (e instanceof ExecutionException && isNoConfidenceException(e)) {
+			} else if (e instanceof ExecutionException && (e.getCause() != null) && isNoConfidenceException(e.getCause())) {
 				// If the translator has low confidence
 				CommonDefinitions.sendDebugMessage("Low confidence from current translator!");
 				return inMessage;
@@ -451,6 +455,8 @@ public class CommonDefinitions {
 				sendTimeoutExceptionMessage(currPlayer);
 				return inMessage;
 			}
+			
+			//TODO: Revise confidence exception detection if possible?
 			
 			/* Add 1 to error count */
 			main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
@@ -595,19 +601,38 @@ public class CommonDefinitions {
 	
 	/**
 	  * Checks if a provided exception is a no confidence one from our target translator.
-	  * @param exc - The exception to be checked
+	  * @param throwable - The exception to be checked
 	  * @return Boolean - If exception is no confidence, true; false otherwise
 	  */
-	private static boolean isNoConfidenceException(Exception exc) {
+	private static boolean isNoConfidenceException(Throwable throwable) {
+		
 		Class<?>[] noConfidenceExceptions = new Class<?>[]{
-			InvalidRequestException.class, // Amazon
+			DetectedLanguageLowConfidenceException.class, // Amazon
 			TranslateException.class, // Google
 			NotFoundException.class}; // Watson
-		
-		for (Class<?> eaClass : noConfidenceExceptions) {
-			if (eaClass.isInstance(exc)) {
+		for (Class eaClass : noConfidenceExceptions) {
+			if (eaClass.isInstance(throwable)) {
+				CommonDefinitions.sendDebugMessage("noConfidenceExceptions array is working???");
 				return true;
 			}
+		}
+		
+	    // instanceof() doesn't seem to work here...this sucks, but it works
+		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
+		CommonDefinitions.sendDebugMessage("No confidence exception message: " + exceptionMessage);
+		switch (main.getTranslatorName()) {
+			case "Watson":
+				if (exceptionMessage.contains("confidence") || exceptionMessage.contains("model")) {return true;}
+				break;
+			case "Google Translate":
+				if (exceptionMessage.contains("confidence")) {return true;};
+				break;
+			case "Amazon Translate":
+				if (exceptionMessage.contains("DetectedLanguageLowConfidenceException")) {return true;}
+				break;
+			default:
+				break;
+				
 		}
 		return false;
 	}

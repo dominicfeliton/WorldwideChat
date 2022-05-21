@@ -3,30 +3,20 @@ package com.expl0itz.worldwidechat.translators;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 
-public class TestTranslation {
-
-	private String textToTranslate = "";
-	private String inputLang = "";
-	private String outputLang = "";
-
-	private boolean isInitializing = false;
-
-	private WorldwideChat main = WorldwideChat.instance;
+public class TestTranslation extends BasicTranslation {
 
 	public TestTranslation(String textToTranslate, String inputLang, String outputLang) {
-		this.textToTranslate = textToTranslate;
-		this.inputLang = inputLang;
-		this.outputLang = outputLang;
+		super(textToTranslate, inputLang, outputLang);
 	}
 
 	public TestTranslation(String apikey, boolean isInitializing) {
+		super(isInitializing);
 		System.setProperty("FAKE_API_KEY", apikey);
-		this.isInitializing = isInitializing;
 	}
 
+	@Override
 	public String useTranslator() {
 		if (isInitializing) {
 			/* Generate fake supported langs list */

@@ -123,7 +123,6 @@ public class WorldwideChat extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
-		//TODO: Make common enum for scheduler tasks
 		// Initialize critical instances
 		instance = this; // Static instance of this class
 		adventure = BukkitAudiences.create(this); // Adventure
@@ -144,7 +143,7 @@ public class WorldwideChat extends JavaPlugin {
 		getLogger().info(ChatColor.LIGHT_PURPLE
 				+ CommonDefinitions.getMessage("wwcListenersInitialized"));
 		
-		// Pre-generate hard coded config UIs
+		// Pre-generate hard coded Config UIs
 		MenuGui.genAllConfigUIs();
 
 		// We made it!
