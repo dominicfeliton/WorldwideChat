@@ -147,6 +147,11 @@
             <artifactId>commons-text</artifactId>
             <version>1.9</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+            <version>3.1.1</version>
+        </dependency>
     </dependencies>
 
   <repositories>
@@ -253,6 +258,7 @@
                             <include>com.github.cryptomorin:XSeries</include>
                             <include>com.zaxxer:HikariCP</include>
                             <include>mysql:*</include>
+                            <include>com.github.ben-manes.caffeine:caffeine</include>
                         </includes>
                     </artifactSet>
                     <filters>
@@ -292,6 +298,12 @@
                         </filter>
                         <filter>
                             <artifact>mysql*</artifact>
+                            <includes>
+                                <include>**</include>
+                            </includes>
+                        </filter>
+                        <filter>
+                            <artifact>com.github.ben-manes.caffeine:caffeine</artifact>
                             <includes>
                                 <include>**</include>
                             </includes>
@@ -382,6 +394,10 @@
                         <relocation>
                             <pattern>com.mysql</pattern>
                             <shadedPattern>com.expl0itz.worldwidechat.libs.com.mysql</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.github.benmanes</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.github.benmanes</shadedPattern>
                         </relocation>
                     </relocations>
               </configuration>

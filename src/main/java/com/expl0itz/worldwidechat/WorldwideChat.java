@@ -3,7 +3,6 @@ package com.expl0itz.worldwidechat;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -50,6 +49,8 @@ import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
 import com.expl0itz.worldwidechat.util.SQLUtils;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
+import com.github.benmanes.caffeine.cache.Cache;
+import com.github.benmanes.caffeine.cache.Caffeine;
 
 import fr.minuskube.inv.InventoryManager;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
@@ -74,7 +75,11 @@ public class WorldwideChat extends JavaPlugin {
 	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>();
 	private List<String> playersUsingConfigurationGUI = new CopyOnWriteArrayList<String>();
 	
-	private Map<CachedTranslation, Object[]> cache = new ConcurrentHashMap<CachedTranslation, Object[]>(100, 0.75f);
+	private Cache<CachedTranslation, String> cache = Caffeine.newBuilder()
+			//TODO: Make 24 hours configurable
+			.expireAfterAccess(24, TimeUnit.HOURS)
+			.maximumSize(100)
+			.build();
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<String, PlayerRecord>();
 	private Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<String, ActiveTranslator>();
 	
@@ -368,7 +373,8 @@ public class WorldwideChat extends JavaPlugin {
 		supportedLanguages.clear();
 		playerRecords.clear();
 		activeTranslators.clear();
-		cache.clear();
+		cache.invalidateAll();
+		cache.cleanUp();
 	}
 
 	/* Load Plugin Configs */
@@ -570,42 +576,52 @@ public class WorldwideChat extends JavaPlugin {
 		removePlayerUsingConfigurationGUI(p.getUniqueId());
 	}
 	
-	public void setCache(Map<CachedTranslation, Object[]> in) {
-		cache = in;
+	public void setCacheProperties(int in) {
+		cache = Caffeine.newBuilder()
+				//TODO: Make 24 hours configurable
+				.expireAfterAccess(24, TimeUnit.HOURS)
+				.maximumSize(in)
+				.build();
 	}
 
 	public void addCacheTerm(CachedTranslation input, String outputPhrase) {
-		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
-			// Term already exists
-			if (cache.get(input) != null) {
-				CommonDefinitions.sendDebugMessage("Term already exists! Incrementing by 1.");
-				cache.put(input, new Object[] {(Integer)cache.get(input)[0]+1, cache.get(input)[1]});
-				return;
-			}
-			if (cache.size() < configurationManager.getMainConfig().getInt("Translator.translatorCacheSize")) {
-				CommonDefinitions.sendDebugMessage("Added new phrase into cache!");
-				cache.put(input, new Object[] {1, outputPhrase});
-			} else { // cache size is greater than X; let's remove the least used thing
-				Entry<CachedTranslation, Object[]> removeEntry = null;
-				for (Map.Entry<CachedTranslation, Object[]> eaSet : cache.entrySet()) {
-					if ((Integer)eaSet.getValue()[0] <= 1) {
-						removeEntry = eaSet;
-						break;
-					}
-					if (removeEntry == null || (Integer)eaSet.getValue()[0] < (Integer)removeEntry.getValue()[0]) {
-						removeEntry = eaSet;
-					}
-				}
-
-				if (removeEntry != null) removeCacheTerm(removeEntry.getKey());
-				CommonDefinitions.sendDebugMessage("Removed least used phrase in cache, since we are now at the hard limit.");
-				addCacheTerm(input, outputPhrase);
-			}
+        // No cache
+		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") <= 0) {
+			return;
 		}
+		
+		// Cache found, do not add
+		if (cache.getIfPresent(input) != null) {
+			CommonDefinitions.sendDebugMessage("Term already exists! Not adding.");
+			return;
+		}
+		
+		// Exceeds max size
+		long estimatedCacheSize = getEstimatedCacheSize();
+		CommonDefinitions.sendDebugMessage("Removed least used phrase in cache if at hard limit. Size after removal test: " + estimatedCacheSize);
+		
+		cache.put(input, outputPhrase);
+		CommonDefinitions.sendDebugMessage("Added new phrase into cache! Size after addition: ");
+	}
+	
+	public String getCacheTerm(CachedTranslation in) {
+		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") <= 0) 
+			return null;
+		
+		String out = cache.getIfPresent(in);
+		CommonDefinitions.sendDebugMessage("Cache lookup outcome: " + out);
+		
+		return out;
+	}
+	
+	public long getEstimatedCacheSize() {
+		cache.cleanUp();
+		return cache.estimatedSize();
 	}
 
 	public void removeCacheTerm(CachedTranslation i) {
-		cache.remove(i);
+		cache.cleanUp();
+		cache.invalidate(i);
 	}
 
 	public void addPlayerRecord(PlayerRecord i) {
@@ -682,7 +698,7 @@ public class WorldwideChat extends JavaPlugin {
 		return activeTranslators;
 	}
 
-	public Map<CachedTranslation, Object[]> getCache() {
+	public Cache<CachedTranslation, String> getCache() {
 		return cache;
 	}
 

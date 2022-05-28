@@ -2,6 +2,8 @@ package com.expl0itz.worldwidechat.util;
 
 import java.util.Objects;
 
+import com.expl0itz.worldwidechat.WorldwideChat;
+
 public class CachedTranslation implements Comparable<CachedTranslation> {
 
 	private String inputLang;
@@ -42,8 +44,9 @@ public class CachedTranslation implements Comparable<CachedTranslation> {
 
 	@Override
 	public int compareTo(CachedTranslation o) {
-		int compareResult = inputLang.compareToIgnoreCase(o.getInputLang()) + outputLang.compareToIgnoreCase(o.getOutputLang()) + inputPhrase.compareToIgnoreCase(o.getInputPhrase());
-		return compareResult;
+		return o.getInputLang().compareTo(inputLang) +
+				o.getOutputLang().compareTo(outputLang) +
+				o.getInputPhrase().compareTo(inputPhrase);
 	}
 	
 	@Override
@@ -63,6 +66,8 @@ public class CachedTranslation implements Comparable<CachedTranslation> {
 	
 	@Override
 	public int hashCode() {
+		// TODO: String references may change depending on how Java handles strings
+		//CommonDefinitions.sendDebugMessage(inputLang);
 		return Objects.hash(inputLang, outputLang, inputPhrase);
 	}
 }

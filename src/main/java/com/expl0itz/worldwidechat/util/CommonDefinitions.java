@@ -31,7 +31,6 @@ import org.threeten.bp.format.DateTimeFormatter;
 import org.threeten.bp.temporal.ChronoUnit;
 
 import com.amazonaws.services.translate.model.DetectedLanguageLowConfidenceException;
-import com.amazonaws.services.translate.model.InvalidRequestException;
 import com.amazonaws.util.StringUtils;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
@@ -320,14 +319,13 @@ public class CommonDefinitions {
 			
 			/* Check cache */
 			CachedTranslation testTranslation = new CachedTranslation(currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), inMessage);
-			if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.getCache().containsKey(testTranslation)) {
-				Object[] storedTranslation = main.getCache().get(testTranslation);
-				main.addCacheTerm(testTranslation, (String)storedTranslation[1]);
+			String testCache = main.getCacheTerm(testTranslation);
+			
+			if (testCache != null) {
 				currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
 				currPlayerRecord.setLastTranslationTime();
-				String outMessage = (String)storedTranslation[1];
 				return StringEscapeUtils.unescapeJava(
-						ChatColor.translateAlternateColorCodes('&', outMessage));
+						ChatColor.translateAlternateColorCodes('&', testCache));
 			}
 
 			// Init vars
