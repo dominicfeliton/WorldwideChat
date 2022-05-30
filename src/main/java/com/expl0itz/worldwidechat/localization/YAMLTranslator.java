@@ -47,7 +47,7 @@ public class YAMLTranslator {
 		ArrayList<String> temp = new ArrayList<String>();
 		Document doc;
 		try {
-			doc = Jsoup.connect("https://docs.aws.amazon.com/translate/latest/dg/what-is.html#what-is-languages").get();
+			doc = Jsoup.connect("https://docs.aws.amazon.com/translate/latest/dg/what-is-languages.html").get();
 			Elements tr = doc.select("tr");
 			for (int i = 1; i < tr.size(); i++) {
 				Elements td = tr.get(i).select("td");

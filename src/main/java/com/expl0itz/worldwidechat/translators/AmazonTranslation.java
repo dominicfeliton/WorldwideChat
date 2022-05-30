@@ -81,6 +81,11 @@ public class AmazonTranslation extends BasicTranslation {
 					}
 				}
 				main.setSupportedTranslatorLanguages(supportedLangs);
+				if (supportedLangs.size() == 0) {
+					main.getLogger().warning(CommonDefinitions.getMessage("wwcBackupLangCodesWarning"));
+					CommonDefinitions.sendDebugMessage("---> Using backup codes!!! Fix this!!! <---");
+					setBackupCodes();
+				}
 
 				/* Setup test translation */
 				textToTranslate = "Hi, how are you?";

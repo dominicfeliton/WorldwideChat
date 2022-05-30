@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
+import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -83,6 +84,12 @@ public class WatsonTranslation extends BasicTranslation {
 				/* Set supported translator languages */
 				main.setSupportedTranslatorLanguages(outList);
 
+				if (outList.size() == 0) {
+					main.getLogger().warning(CommonDefinitions.getMessage("wwcBackupLangCodesWarning"));
+					CommonDefinitions.sendDebugMessage("---> Using backup codes!!! Fix this!!! <---");
+					setBackupCodes();
+				}
+				
 				/* Setup test translation */
 				textToTranslate = "Hello, how are you?";
 				inputLang = "en";

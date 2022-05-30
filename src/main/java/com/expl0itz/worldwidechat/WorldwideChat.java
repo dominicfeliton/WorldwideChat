@@ -88,7 +88,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "02162022-2"; // This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "05302022-1"; // This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
@@ -600,6 +600,7 @@ public class WorldwideChat extends JavaPlugin {
 		long estimatedCacheSize = getEstimatedCacheSize();
 		CommonDefinitions.sendDebugMessage("Removed least used phrase in cache if at hard limit. Size after removal test: " + estimatedCacheSize);
 		
+		// Put phrase after (potential) removal
 		cache.put(input, outputPhrase);
 		CommonDefinitions.sendDebugMessage("Added new phrase into cache! Size after addition: ");
 	}

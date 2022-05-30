@@ -354,3 +354,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: تم تعيين مهلة مهمة غير متزامنة بنجاح.
   wwcConfigGUIFatalAsyncAbortButton: تغيير مهلة المهام غير المتزامنة
   wwcTimeoutException: انتهت مهلة الأمر الخاص بك. يرجى المحاولة مرة أخرى.
+  wwcBackupLangCodesWarning: لم يتمكن WorldwideChat من جلب اللغات، وبدلاً من ذلك يستخدم
+    النسخ الاحتياطية. ربما لن يؤثر هذا على سلوك المكون الإضافي، ولكن يرجى الاتصال
+    بالمطور.

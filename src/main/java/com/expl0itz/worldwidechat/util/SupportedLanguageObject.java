@@ -15,6 +15,22 @@ public class SupportedLanguageObject implements Comparable<SupportedLanguageObje
 		this.supportedAsSource = supportedAsSource;
 		this.supportedAsTarget = supportedAsTarget;
 	}
+	
+	public SupportedLanguageObject(String langCode, String langName, String nativeLangName) {
+		this.langCode = langCode;
+		this.langName = langName;
+		this.nativeLangName = nativeLangName;
+		this.supportedAsSource = true;
+		this.supportedAsTarget = true;
+	}
+	
+	public SupportedLanguageObject(String langCode, String langName) {
+		this.langCode = langCode;
+		this.langName = langName;
+		this.nativeLangName = "";
+		this.supportedAsSource = true;
+		this.supportedAsTarget = true;
+	}
 
 	/* Getters */
 	public String getLangCode() {

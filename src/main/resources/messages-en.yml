@@ -30,6 +30,7 @@ Messages:
   wwcTimeoutExceptionConsole: 'Player %i had their most recent request timeout. This error is not fatal, but WorldwideChat should be reloaded if it continues to happen.'
   wwcTimeoutException: 'Your command timed out. Please try again.'
   wwcGUIPageNumber: 'Page Number: %i'
+  wwcBackupLangCodesWarning: 'WorldwideChat was unable to fetch languages, and is instead using backups. This probably will not affect plugin behavior, but please contact the developer.'
   #------------------- Listener Messages -------------------
   wwcChatTranslationFail: 'Failed to translate your message.'
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from %i to %o.'
