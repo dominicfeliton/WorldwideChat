@@ -187,7 +187,10 @@ public class WorldwideChat extends JavaPlugin {
 				// WWC version
 				final TextComponent versionNotice = Component.text()
 						.append((Component.text().content(CommonDefinitions.getMessage("wwcVersion")).color(NamedTextColor.RED))
-						.append((Component.text().content(" " + pluginVersion)).color(NamedTextColor.LIGHT_PURPLE))).build();
+						.append((Component.text().content(" " + pluginVersion)).color(NamedTextColor.LIGHT_PURPLE))
+						.append((Component.text().content(" (Made with love by ")).color(NamedTextColor.GOLD))
+						.append((Component.text().content("3xpl0itz")).color(NamedTextColor.GOLD).decorate(TextDecoration.BOLD))
+						.append((Component.text().content(")").resetStyle()).color(NamedTextColor.GOLD))).build();
 				CommonDefinitions.sendMessage(sender, versionNotice);
 				return true;
 			case "wwcr": 
