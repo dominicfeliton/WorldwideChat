@@ -2,8 +2,6 @@ package com.expl0itz.worldwidechat.util;
 
 import java.util.Objects;
 
-import com.expl0itz.worldwidechat.WorldwideChat;
-
 public class CachedTranslation implements Comparable<CachedTranslation> {
 
 	private String inputLang;

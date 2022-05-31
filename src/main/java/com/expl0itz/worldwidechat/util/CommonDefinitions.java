@@ -30,16 +30,13 @@ import org.threeten.bp.LocalTime;
 import org.threeten.bp.format.DateTimeFormatter;
 import org.threeten.bp.temporal.ChronoUnit;
 
-import com.amazonaws.services.translate.model.DetectedLanguageLowConfidenceException;
 import com.amazonaws.util.StringUtils;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
 import com.expl0itz.worldwidechat.translators.TestTranslation;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
-import com.google.cloud.translate.TranslateException;
 import com.google.common.base.CharMatcher;
-import com.ibm.cloud.sdk.core.service.exception.NotFoundException;
 
 import fr.minuskube.inv.SmartInventory;
 import net.kyori.adventure.audience.Audience;
