@@ -603,34 +603,11 @@ public class CommonDefinitions {
 	  * @return Boolean - If exception is no confidence, true; false otherwise
 	  */
 	private static boolean isNoConfidenceException(Throwable throwable) {
-		
-		Class<?>[] noConfidenceExceptions = new Class<?>[]{
-			DetectedLanguageLowConfidenceException.class, // Amazon
-			TranslateException.class, // Google
-			NotFoundException.class}; // Watson
-		for (Class eaClass : noConfidenceExceptions) {
-			if (eaClass.isInstance(throwable)) {
-				CommonDefinitions.sendDebugMessage("noConfidenceExceptions array is working???");
-				return true;
-			}
-		}
-		
 	    // instanceof() doesn't seem to work here...this sucks, but it works
 		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
 		CommonDefinitions.sendDebugMessage("No confidence exception message: " + exceptionMessage);
-		switch (main.getTranslatorName()) {
-			case "Watson":
-				if (exceptionMessage.contains("confidence") || exceptionMessage.contains("model")) {return true;}
-				break;
-			case "Google Translate":
-				if (exceptionMessage.contains("confidence")) {return true;};
-				break;
-			case "Amazon Translate":
-				if (exceptionMessage.contains("DetectedLanguageLowConfidenceException")) {return true;}
-				break;
-			default:
-				break;
-				
+		if (exceptionMessage.contains("confidence") || exceptionMessage.contains("Confidence")) {
+			return true;
 		}
 		return false;
 	}
