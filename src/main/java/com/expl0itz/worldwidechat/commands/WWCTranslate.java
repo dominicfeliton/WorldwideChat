@@ -9,7 +9,7 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.inventory.wwctranslategui.WWCTranslateGUIMainMenu;
+import com.expl0itz.worldwidechat.inventory.wwctranslategui.WWCTranslateGuiMainMenu;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
@@ -49,16 +49,16 @@ public class WWCTranslate extends BasicCommand {
 
 		/* GUI Checks */
 		if (args.length == 0 && isGlobal && !isConsoleSender) {
-			WWCTranslateGUIMainMenu.getTranslateMainMenu("GLOBAL-TRANSLATE-ENABLED").open((Player) sender);
+			WWCTranslateGuiMainMenu.getTranslateMainMenu("GLOBAL-TRANSLATE-ENABLED").open((Player) sender);
 			return true;
 		} else if (!isConsoleSender) {
 			if ((args.length == 0 && !isGlobal) || (args.length == 1 && !isGlobal && args[0].equalsIgnoreCase(sender.getName()))) { /* User wants to see their own translation session */
-				WWCTranslateGUIMainMenu.getTranslateMainMenu(((Player)sender).getUniqueId().toString()).open((Player) sender);
+				WWCTranslateGuiMainMenu.getTranslateMainMenu(((Player)sender).getUniqueId().toString()).open((Player) sender);
 				return true;
 			} else if (args.length == 1 && !isGlobal
 					&& main.getServer().getPlayerExact(args[0]) != null) {
 				if (sender.hasPermission("worldwidechat.wwct.otherplayers")) {
-					WWCTranslateGUIMainMenu
+					WWCTranslateGuiMainMenu
 							.getTranslateMainMenu(main.getServer().getPlayerExact(args[0]).getUniqueId().toString()).open((Player) sender);
 					return true;
 				} else {

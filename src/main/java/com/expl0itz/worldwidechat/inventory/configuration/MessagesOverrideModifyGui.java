@@ -8,7 +8,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.conversations.configuration.ChatSettingsModifyOverrideTextConversation;
+import com.expl0itz.worldwidechat.conversations.configuration.ChatSettingsConvos;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
@@ -20,19 +20,19 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
-public class MessagesOverrideModifyGUI implements InventoryProvider {
+public class MessagesOverrideModifyGui implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	
 	private String currentOverrideName = "";
 	
-	public MessagesOverrideModifyGUI(String currentOverrideName) {
+	public MessagesOverrideModifyGui(String currentOverrideName) {
 		this.currentOverrideName = currentOverrideName;
 	}
 	
 	public static SmartInventory getModifyCurrentOverride(String currentOverrideName) {
 		return SmartInventory.builder().id("overrideModifyMenu")
-				.provider(new MessagesOverrideModifyGUI(currentOverrideName)).size(3, 9)
+				.provider(new MessagesOverrideModifyGui(currentOverrideName)).size(3, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
 				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatMessagesModifyOverride"))
 				.build();
@@ -45,7 +45,7 @@ public class MessagesOverrideModifyGUI implements InventoryProvider {
 			WWCInventoryManager.setBorders(contents, XMaterial.ORANGE_STAINED_GLASS_PANE);
 
 			/* Middle Option: Change existing text */
-			WWCInventoryManager.genericConversationButton(1, 4, player, contents, new ChatSettingsModifyOverrideTextConversation(getModifyCurrentOverride(currentOverrideName), currentOverrideName), XMaterial.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
+			WWCInventoryManager.genericConversationButton(1, 4, player, contents, new ChatSettingsConvos.ModifyOverrideText(getModifyCurrentOverride(currentOverrideName), currentOverrideName), XMaterial.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
 			
 			/* Right Option: Delete override */
 			ItemStack deleteOverrideButton = XMaterial.BARRIER.parseItem();
@@ -54,7 +54,7 @@ public class MessagesOverrideModifyGUI implements InventoryProvider {
 					+ CommonDefinitions.getMessage("wwcConfigGUIChatMessagesOverrideDeleteButton"));
 			deleteOverrideButton.setItemMeta(deleteOverrideMeta);
 			contents.set(1, 6, ClickableItem.of(deleteOverrideButton, e -> {
-				new BukkitRunnable() {
+				BukkitRunnable saveMessages = new BukkitRunnable() {
 					@Override
 					public void run() {
 						main.getConfigManager().getMessagesConfig().set("Overrides." + currentOverrideName, null);
@@ -65,19 +65,21 @@ public class MessagesOverrideModifyGUI implements InventoryProvider {
 										.color(NamedTextColor.GREEN))
 								.build();
 						CommonDefinitions.sendMessage(player, successfulChange);
-						new BukkitRunnable() {
+						BukkitRunnable out = new BukkitRunnable() {
 							@Override
 							public void run() {
-								MessagesOverrideCurrentListGUI.overrideMessagesSettings.open(player);
+								MessagesOverrideCurrentListGui.overrideMessagesSettings.open(player);
 							}
-						}.runTask(main);
+						};
+						CommonDefinitions.scheduleTask(out);
 					}
-				}.runTaskAsynchronously(WorldwideChat.instance);
+				};
+				CommonDefinitions.scheduleTaskAsynchronously(saveMessages);
 			}));
 			
 			
 			/* Left Option: Previous Page */
-			WWCInventoryManager.setCommonButton(1, 2, player, contents, "Previous", new Object[] {MessagesOverrideCurrentListGUI.overrideMessagesSettings});
+			WWCInventoryManager.setCommonButton(1, 2, player, contents, "Previous", new Object[] {MessagesOverrideCurrentListGui.overrideMessagesSettings});
 		} catch (Exception e) {
 			WWCInventoryManager.inventoryError(player, e);
 		}

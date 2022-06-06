@@ -19,7 +19,7 @@ import com.expl0itz.worldwidechat.commands.WWCTranslateBook;
 import com.expl0itz.worldwidechat.commands.WWCTranslateEntity;
 import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
-import com.expl0itz.worldwidechat.conversations.wwctranslategui.RateLimitConversation;
+import com.expl0itz.worldwidechat.conversations.wwctranslategui.PersonalRateLimitConvo;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
@@ -29,13 +29,13 @@ import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 
-public class WWCTranslateGUIMainMenu implements InventoryProvider {
+public class WWCTranslateGuiMainMenu implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
 	private String targetPlayerUUID = "";
 
-	public WWCTranslateGUIMainMenu(String targetPlayerUUID) {
+	public WWCTranslateGuiMainMenu(String targetPlayerUUID) {
 		this.targetPlayerUUID = targetPlayerUUID;
 	}
 
@@ -48,7 +48,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 			playerTitle = ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUIMainMenuPlayer", new String[] {WorldwideChat.instance.getServer()
 					.getPlayer(UUID.fromString(targetPlayerUUID)).getName()});
 		}
-		return SmartInventory.builder().id("translateMainMenu").provider(new WWCTranslateGUIMainMenu(targetPlayerUUID))
+		return SmartInventory.builder().id("translateMainMenu").provider(new WWCTranslateGuiMainMenu(targetPlayerUUID))
 				.size(5, 9).manager(WorldwideChat.instance.getInventoryManager()).title(playerTitle).build();
 	}
 
@@ -68,7 +68,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 					CommonDefinitions.getMessage("wwctGUITranslationButton"));
 			translationButton.setItemMeta(translationMeta);
 			contents.set(2, 4, ClickableItem.of(translationButton, e -> {
-				WWCTranslateGUISourceLanguage.getSourceLanguageInventory("", targetPlayerUUID).open(player);
+				WWCTranslateGuiSourceLanguage.getSourceLanguageInventory("", targetPlayerUUID).open(player);
 			}));
 
 			/* Set active translator to our current target */
@@ -112,7 +112,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 				if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwctrl")
 						&& (player.hasPermission("worldwidechat.wwctrl.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
 					ConversationFactory rateConvo = new ConversationFactory(main).withModality(true)
-							.withFirstPrompt(new RateLimitConversation(targetTranslator));
+							.withFirstPrompt(new PersonalRateLimitConvo(targetTranslator));
 					ItemStack rateButton = XMaterial.SLIME_BLOCK.parseItem();
 					ItemMeta rateMeta = rateButton.getItemMeta();
 					if (targetTranslator.getRateLimit() > 0) {
@@ -238,7 +238,7 @@ public class WWCTranslateGUIMainMenu implements InventoryProvider {
 					}
 					chatButton.setItemMeta(chatMeta);
 					contents.set(3, 4, ClickableItem.of(chatButton, e -> {
-						WWCTranslateGUIChatMenu.getTranslateChatMenu(targetPlayerUUID).open(player);
+						WWCTranslateGuiChatMenu.getTranslateChatMenu(targetPlayerUUID).open(player);
 					}));
 				}
 			}

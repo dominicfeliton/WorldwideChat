@@ -125,18 +125,17 @@ public class WWCInventoryManager extends InventoryManager {
 		// Ensure that /wwcr is not ran while this is running
 		main.setTranslatorName("Starting");
 		
-		if (!CommonDefinitions.serverIsStopping()) {
-			new BukkitRunnable() {
-				@Override
-				public void run() {
-					// Save config sync/in the same thread because we are already in another thread thanks to Bukkit Scheduler
-					main.getConfigManager().saveMainConfig(false);
-					
-					// Reload
-					main.reload(player);
-				}
-			}.runTaskAsynchronously(main);	
-		}
+		BukkitRunnable out = new BukkitRunnable() {
+			@Override
+			public void run() {
+				// Save config sync/in the same thread because we are already async
+				main.getConfigManager().saveMainConfig(false);
+				
+				// Reload
+				main.reload(player);
+			}
+		};
+		CommonDefinitions.scheduleTaskAsynchronously(out);
 	}
 	
 	public static void setBorders(InventoryContents contents, XMaterial inMaterial) {

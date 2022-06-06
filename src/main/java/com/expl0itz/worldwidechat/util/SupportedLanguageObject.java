@@ -1,6 +1,6 @@
 package com.expl0itz.worldwidechat.util;
 
-public class SupportedLanguageObject implements Comparable<SupportedLanguageObject>{
+public class SupportedLanguageObject implements Comparable<SupportedLanguageObject> {
 	private String langCode = "";
 	private String langName = "";
 	private String nativeLangName = "";
@@ -14,6 +14,22 @@ public class SupportedLanguageObject implements Comparable<SupportedLanguageObje
 		this.nativeLangName = nativeLangName;
 		this.supportedAsSource = supportedAsSource;
 		this.supportedAsTarget = supportedAsTarget;
+	}
+	
+	public SupportedLanguageObject(String langCode, String langName, String nativeLangName) {
+		this.langCode = langCode;
+		this.langName = langName;
+		this.nativeLangName = nativeLangName;
+		this.supportedAsSource = true;
+		this.supportedAsTarget = true;
+	}
+	
+	public SupportedLanguageObject(String langCode, String langName) {
+		this.langCode = langCode;
+		this.langName = langName;
+		this.nativeLangName = "";
+		this.supportedAsSource = true;
+		this.supportedAsTarget = true;
 	}
 
 	/* Getters */
@@ -63,4 +79,6 @@ public class SupportedLanguageObject implements Comparable<SupportedLanguageObje
 		int compareResult = this.langCode.compareTo(o.getLangCode());
 		return compareResult == 0 ? compareResult = this.langName.compareTo(o.getLangName()) : compareResult;
 	}
+	
+	//TODO: Override hashcode if we ever use this class in a hashmap
 }

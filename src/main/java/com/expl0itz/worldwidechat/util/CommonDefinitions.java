@@ -3,7 +3,6 @@ package com.expl0itz.worldwidechat.util;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.concurrent.Callable;
@@ -31,15 +30,13 @@ import org.threeten.bp.LocalTime;
 import org.threeten.bp.format.DateTimeFormatter;
 import org.threeten.bp.temporal.ChronoUnit;
 
-import com.amazonaws.services.translate.model.InvalidRequestException;
+import com.amazonaws.util.StringUtils;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
 import com.expl0itz.worldwidechat.translators.TestTranslation;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
-import com.google.cloud.translate.TranslateException;
 import com.google.common.base.CharMatcher;
-import com.ibm.cloud.sdk.core.service.exception.NotFoundException;
 
 import fr.minuskube.inv.SmartInventory;
 import net.kyori.adventure.audience.Audience;
@@ -64,6 +61,70 @@ public class CommonDefinitions {
 			"sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy" };
 	
 	/* Getters */
+	public static void scheduleTaskAsynchronously(BukkitRunnable in) {
+		scheduleTaskAsynchronously(true, in);
+	}
+	
+	public static void scheduleTaskAsynchronously(boolean serverMustBeRunning, BukkitRunnable in) {
+		scheduleTaskAsynchronously(serverMustBeRunning, 0, in);
+	}
+	
+	public static void scheduleTaskAsynchronously(boolean serverMustBeRunning, int delay, BukkitRunnable in) {
+		if (serverMustBeRunning) {
+			if (!CommonDefinitions.serverIsStopping()) {
+				in.runTaskLaterAsynchronously(main, delay);
+			}
+		} else {
+			in.runTaskLaterAsynchronously(main, delay);
+		}
+	}
+	
+	public static void scheduleTaskAsynchronouslyRepeating(boolean serverMustBeRunning, int delay, int repeatTime, BukkitRunnable in) {
+		if (serverMustBeRunning) {
+			if (!CommonDefinitions.serverIsStopping()) {
+				in.runTaskTimerAsynchronously(main, delay, repeatTime);
+			}
+		} else {
+			in.runTaskTimerAsynchronously(main, delay, repeatTime);
+		}
+	}
+	
+	public static void scheduleTaskAsynchronouslyRepeating(boolean serverMustBeRunning, int repeatTime, BukkitRunnable in) {
+		scheduleTaskAsynchronouslyRepeating(serverMustBeRunning, 0, repeatTime, in);
+	}
+	
+	public static void scheduleTask(BukkitRunnable in) {
+		scheduleTask(true, in);
+	}
+	
+	public static void scheduleTask(boolean serverMustBeRunning, BukkitRunnable in) {
+		scheduleTask(serverMustBeRunning, 0, in);
+	}
+	
+	public static void scheduleTask(boolean serverMustBeRunning, int delay, BukkitRunnable in) {
+		if (serverMustBeRunning) {
+			if (!CommonDefinitions.serverIsStopping()) {
+				in.runTaskLater(main, delay);
+			}
+		} else {
+			in.runTaskLater(main, delay);
+		}
+	}
+	
+	public static void scheduleTaskRepeating(boolean serverMustBeRunning, int delay, int repeatTime, BukkitRunnable in) {
+		if (serverMustBeRunning) {
+			if (!CommonDefinitions.serverIsStopping()) {
+				in.runTaskTimer(main, delay, repeatTime);
+			}
+		} else {
+			in.runTaskTimer(main, delay, repeatTime);
+		}
+	}
+	
+	public static void scheduleTaskRepeating(boolean serverMustBeRunning, int repeatTime, BukkitRunnable in) {
+		scheduleTaskRepeating(serverMustBeRunning, 0, repeatTime, in);
+	}
+	
 	/**
 	  * Compares two strings to check if they are the same language under the current translator.
 	  * @param first - A valid language name
@@ -149,6 +210,8 @@ public class CommonDefinitions {
 	  * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
 	  */
 	public static String getMessage(String messageName, String[] replacements) {
+		//TODO: If the final message is actually the same as inMessage, don't say translation failed...fix behavior POTENTIALLY
+		// EX: Saying Hello with Watson translates to Hello, sucks but w/e
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
 		YamlConfiguration messagesConfig = main.getConfigManager().getMessagesConfig();
@@ -157,8 +220,8 @@ public class CommonDefinitions {
 		} else {
 			convertedOriginalMessage = messagesConfig.getString("Messages." + ChatColor.stripColor(messageName));
 			if (convertedOriginalMessage == null) {
-				main.getLogger().severe("Bad message! Please fix your messages-" + messagesConfig.getString("General.pluginLang") + ".yml.");
-				return ChatColor.RED + "Bad message! Please fix your messages-" + messagesConfig.getString("General.pluginLang") + ".yml.";
+				main.getLogger().severe("Bad message! Please fix your messages-XX.yml.");
+				return ChatColor.RED + "Bad message! Please fix your messages-XX.yml.";
 			}
 		}
 		
@@ -252,21 +315,14 @@ public class CommonDefinitions {
 			}
 			
 			/* Check cache */
-			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
-				// Check cache for inputs, since config says we should
-				for (Map.Entry<CachedTranslation, Integer> currentTerm : main.getCache().entrySet()) {
-					CachedTranslation currKey = currentTerm.getKey();
-					if (currKey.getInputLang().equalsIgnoreCase(currActiveTranslator.getInLangCode())
-							&& (currKey.getOutputLang().equalsIgnoreCase(currActiveTranslator.getOutLangCode()))
-							&& (currKey.getInputPhrase().equalsIgnoreCase(inMessage))) {
-						main.getCache().put(currKey, currentTerm.getValue()+1);
-						// Update stats, return output
-						currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
-						currPlayerRecord.setLastTranslationTime();
-						return StringEscapeUtils.unescapeJava(
-								ChatColor.translateAlternateColorCodes('&', currKey.getOutputPhrase()));
-					}
-				}
+			CachedTranslation testTranslation = new CachedTranslation(currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), inMessage);
+			String testCache = main.getCacheTerm(testTranslation);
+			
+			if (testCache != null) {
+				currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+				currPlayerRecord.setLastTranslationTime();
+				return StringEscapeUtils.unescapeJava(
+						ChatColor.translateAlternateColorCodes('&', testCache));
 			}
 
 			// Init vars
@@ -357,15 +413,13 @@ public class CommonDefinitions {
 			}
 
 			/* Update stats */
-			if (main.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
+			currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
 			currPlayerRecord.setLastTranslationTime();
 
 			/* Add to cache */
-			if (mainConfig.getInt("Translator.translatorCacheSize") > 0
-					&& !(currActiveTranslator.getInLangCode().equals("None"))) {
-				CachedTranslation newTerm = new CachedTranslation(currActiveTranslator.getInLangCode(),
-						currActiveTranslator.getOutLangCode(), inMessage, out);
-				main.addCacheTerm(newTerm);
+			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
+				//TODO: Why can't we add none? Check this
+				main.addCacheTerm(testTranslation, out);
 			}
 			return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', out));
 		};
@@ -377,13 +431,17 @@ public class CommonDefinitions {
 		try {
 			/* Get translation */
 			finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
+			// If the translation we get is actually == our input
+			if (finalOut.equals(inMessage)) {
+				finalOut += " ";
+			}
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			/* Sanitize error before proceeding to write it to errorLog */
 			if (e instanceof InterruptedException || main.getTranslatorName().equals("Starting")) {
 				// If we are getting stopped by onDisable, end this immediately.
 				CommonDefinitions.sendDebugMessage("Interrupted translateText(), or server state is changing...");
 				return inMessage;
-			} else if (e instanceof ExecutionException && isNoConfidenceException(e)) {
+			} else if (e instanceof ExecutionException && (e.getCause() != null) && isNoConfidenceException(e.getCause())) {
 				// If the translator has low confidence
 				CommonDefinitions.sendDebugMessage("Low confidence from current translator!");
 				return inMessage;
@@ -392,6 +450,8 @@ public class CommonDefinitions {
 				sendTimeoutExceptionMessage(currPlayer);
 				return inMessage;
 			}
+			
+			//TODO: Revise confidence exception detection if possible?
 			
 			/* Add 1 to error count */
 			main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
@@ -476,6 +536,7 @@ public class CommonDefinitions {
 	  * @return Boolean - Whether the server is reloading/stopping or not
 	  */
 	public static boolean serverIsStopping() {
+		if (!main.isEnabled()) return true;
 		try {
 			new BukkitRunnable() {
 				@Override
@@ -535,19 +596,15 @@ public class CommonDefinitions {
 	
 	/**
 	  * Checks if a provided exception is a no confidence one from our target translator.
-	  * @param exc - The exception to be checked
+	  * @param throwable - The exception to be checked
 	  * @return Boolean - If exception is no confidence, true; false otherwise
 	  */
-	private static boolean isNoConfidenceException(Exception exc) {
-		Class<?>[] noConfidenceExceptions = new Class<?>[]{
-			InvalidRequestException.class, // Amazon
-			TranslateException.class, // Google
-			NotFoundException.class}; // Watson
-		
-		for (Class<?> eaClass : noConfidenceExceptions) {
-			if (eaClass.isInstance(exc)) {
-				return true;
-			}
+	private static boolean isNoConfidenceException(Throwable throwable) {
+	    // instanceof() doesn't seem to work here...this sucks, but it works
+		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
+		CommonDefinitions.sendDebugMessage("No confidence exception message: " + exceptionMessage);
+		if (exceptionMessage.contains("confidence") || exceptionMessage.contains("Confidence")) {
+			return true;
 		}
 		return false;
 	}

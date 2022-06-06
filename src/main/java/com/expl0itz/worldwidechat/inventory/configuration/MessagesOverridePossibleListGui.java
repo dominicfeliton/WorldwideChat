@@ -13,7 +13,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
-import com.expl0itz.worldwidechat.conversations.configuration.ChatSettingsModifyOverrideTextConversation;
+import com.expl0itz.worldwidechat.conversations.configuration.ChatSettingsConvos;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
@@ -24,12 +24,12 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 
-public class MessagesOverridePossibleListGUI implements InventoryProvider {
+public class MessagesOverridePossibleListGui implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	
 	public static final SmartInventory overrideNewMessageSettings = SmartInventory.builder().id("overridePossibilitiesMenu")
-			.provider(new MessagesOverridePossibleListGUI()).size(6, 9)
+			.provider(new MessagesOverridePossibleListGui()).size(6, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatMessagesPossibleOverrides"))
 	        .build();
@@ -70,7 +70,7 @@ public class MessagesOverridePossibleListGUI implements InventoryProvider {
 				currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {
 					// Start conversation
 					ConversationFactory textConvo = new ConversationFactory(main).withModality(true)
-							.withFirstPrompt(new ChatSettingsModifyOverrideTextConversation(MessagesOverridePossibleListGUI.overrideNewMessageSettings, entry.getKey()));
+							.withFirstPrompt(new ChatSettingsConvos.ModifyOverrideText(MessagesOverridePossibleListGui.overrideNewMessageSettings, entry.getKey()));
 				    textConvo.buildConversation(player).begin();
 				});
 				currSpot++;
@@ -85,7 +85,7 @@ public class MessagesOverridePossibleListGUI implements InventoryProvider {
 			if (!pagination.isFirst()) {
 				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous");
 			} else {
-				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {MessagesOverrideCurrentListGUI.overrideMessagesSettings});
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {MessagesOverrideCurrentListGui.overrideMessagesSettings});
 			}
 			
 			/* Bottom Right Option: Next Page */

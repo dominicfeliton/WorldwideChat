@@ -21,27 +21,18 @@ import com.google.cloud.translate.Translation;
 
 import com.google.cloud.translate.TranslateOptions;
 
-public class GoogleTranslation {
-
-	private String textToTranslate = "";
-	private String inputLang = "";
-	private String outputLang = "";
-
-	private boolean isInitializing = false;
-
-	private WorldwideChat main = WorldwideChat.instance;
+public class GoogleTranslation extends BasicTranslation {
 
 	public GoogleTranslation(String textToTranslate, String inputLang, String outputLang) {
-		this.textToTranslate = textToTranslate;
-		this.inputLang = inputLang;
-		this.outputLang = outputLang;
+		super(textToTranslate, inputLang, outputLang);
 	}
 
 	public GoogleTranslation(String apikey, boolean isInitializing) {
+		super(isInitializing);
 		System.setProperty("GOOGLE_API_KEY", apikey); // we do this because .setApi() spams console :(
-		this.isInitializing = isInitializing;
 	}
 
+	@Override
 	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
 		ExecutorService executor = Executors.newSingleThreadExecutor();
 		Future<String> process = executor.submit(new translationTask());
@@ -80,11 +71,11 @@ public class GoogleTranslation {
 				textToTranslate = "How are you?";
 			}
 			/* Convert input + output lang to lang code because this API is funky, man */
-			if (!(inputLang.equals("None"))
+			if (!isInitializing && !(inputLang.equals("None"))
 					&& !CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode().equals(inputLang)) {
 				inputLang = CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode();
 			}
-			if (!CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
+			if (!isInitializing && !CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
 				outputLang = CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode();
 			}
 

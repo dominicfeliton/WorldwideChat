@@ -22,6 +22,7 @@ import org.threeten.bp.Instant;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
+import com.expl0itz.worldwidechat.translators.BasicTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
 import com.expl0itz.worldwidechat.translators.TestTranslation;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
@@ -223,12 +224,16 @@ public class ConfigurationHandler {
 			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
 				main.getLogger()
 						.info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigCacheEnabled", new String[] {mainConfig.getInt("Translator.translatorCacheSize") + ""}));
+			    // Set cache to size beforehand, so we can avoid expandCapacity :)
+				main.setCacheProperties(mainConfig.getInt("Translator.translatorCacheSize"));
 			} else {
 				mainConfig.set("Translator.translatorCacheSize", 0);
+				main.setCacheProperties(0);
 				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigCacheDisabled"));
 			}
 		} catch (Exception e) {
 			mainConfig.set("Translator.translatorCacheSize", 100);
+			main.setCacheProperties(100);
 			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigCacheInvalid"));
 		}
 		// Error Limit Settings
@@ -273,34 +278,29 @@ public class ConfigurationHandler {
 			if (!CommonDefinitions.serverIsStopping()) {
 				try {
 					main.getLogger().warning(CommonDefinitions.getMessage("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}));
-					if (mainConfig.getBoolean("Translator.useWatsonTranslate")
-							&& (!(mainConfig.getBoolean("Translator.useGoogleTranslate"))
-									&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
+					BasicTranslation test;
+					if (mainConfig.getBoolean("Translator.useWatsonTranslate")) {
 						outName = "Watson";
-						WatsonTranslation test = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
+						test = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
 								mainConfig.getString("Translator.watsonURL"), true);
 						test.useTranslator();
 						break;
-					} else if (mainConfig.getBoolean("Translator.useGoogleTranslate")
-							&& (!(mainConfig.getBoolean("Translator.useWatsonTranslate"))
-									&& (!(mainConfig.getBoolean("Translator.useAmazonTranslate"))))) {
+					} else if (mainConfig.getBoolean("Translator.useGoogleTranslate")) {
 						outName = "Google Translate";
-						GoogleTranslation test = new GoogleTranslation(
+						test = new GoogleTranslation(
 								mainConfig.getString("Translator.googleTranslateAPIKey"), true);
 						test.useTranslator();
 						break;
-					} else if (mainConfig.getBoolean("Translator.useAmazonTranslate")
-							&& (!(mainConfig.getBoolean("Translator.useGoogleTranslate"))
-									&& (!(mainConfig.getBoolean("Translator.useWatsonTranslate"))))) {
+					} else if (mainConfig.getBoolean("Translator.useAmazonTranslate")) {
 						outName = "Amazon Translate";
-						AmazonTranslation test = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
+						test = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
 								mainConfig.getString("Translator.amazonSecretKey"),
 								mainConfig.getString("Translator.amazonRegion"), true);
 						test.useTranslator();
 						break;
 					} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
 						outName = "JUnit/MockBukkit Testing Translator";
-						TestTranslation test = new TestTranslation(
+						test = new TestTranslation(
 								"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu", true);
 						test.useTranslator();
 						break;
@@ -393,14 +393,15 @@ public class ConfigurationHandler {
 	
 	/* Main config save method */
 	public void saveMainConfig(boolean async) {
-		if (async && main.isEnabled()) {
+		if (async) {
 			CommonDefinitions.sendDebugMessage("Saving main config async!");
-			new BukkitRunnable() {
+			BukkitRunnable out = new BukkitRunnable() {
 				@Override
 				public void run() {
 					saveMainConfig(false);
 				}
-			}.runTaskAsynchronously(main);
+			};
+			CommonDefinitions.scheduleTaskAsynchronously(out);
 			return;
 		}
 		CommonDefinitions.sendDebugMessage("Saving main config sync!");
@@ -409,14 +410,15 @@ public class ConfigurationHandler {
 	
 	/* Messages config save method */
 	public void saveMessagesConfig(boolean async) {
-		if (async && main.isEnabled()) {
+		if (async) {
 			CommonDefinitions.sendDebugMessage("Saving messages config async!");
-			new BukkitRunnable() {
+			BukkitRunnable out = new BukkitRunnable() {
 				@Override
 				public void run() {
 					saveMessagesConfig(false);
 				}
-			}.runTaskAsynchronously(main);
+			};
+			CommonDefinitions.scheduleTaskAsynchronously(out);
 			return;
 		}
 		CommonDefinitions.sendDebugMessage("Saving messages config sync!");
@@ -427,12 +429,13 @@ public class ConfigurationHandler {
 	public synchronized void saveCustomConfig(YamlConfiguration inConfig, File dest, boolean async) {
 		if (async && main.isEnabled()) {
 			CommonDefinitions.sendDebugMessage("Saving custom config async!");
-			new BukkitRunnable() {
+			BukkitRunnable out = new BukkitRunnable() {
 				@Override
 				public void run() {
 					saveCustomConfig(inConfig, dest, false);
 				}
-			}.runTaskAsynchronously(main);
+			};
+			CommonDefinitions.scheduleTaskAsynchronously(out);
 			return;
 		}
 		if (inConfig != null && dest != null) {

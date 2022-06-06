@@ -3,7 +3,6 @@ package com.expl0itz.worldwidechat;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -35,6 +34,7 @@ import com.expl0itz.worldwidechat.commands.WWCTranslateItem;
 import com.expl0itz.worldwidechat.commands.WWCTranslateSign;
 import com.expl0itz.worldwidechat.configuration.ConfigurationHandler;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
+import com.expl0itz.worldwidechat.inventory.configuration.MenuGui;
 import com.expl0itz.worldwidechat.listeners.ChatListener;
 import com.expl0itz.worldwidechat.listeners.InventoryListener;
 import com.expl0itz.worldwidechat.listeners.OnPlayerJoinListener;
@@ -49,6 +49,8 @@ import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
 import com.expl0itz.worldwidechat.util.SQLUtils;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
+import com.github.benmanes.caffeine.cache.Cache;
+import com.github.benmanes.caffeine.cache.Caffeine;
 
 import fr.minuskube.inv.InventoryManager;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
@@ -59,8 +61,8 @@ import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 
 public class WorldwideChat extends JavaPlugin {
-	public static final int bStatsID = 10562;
 	public static int translatorFatalAbortSeconds = 10;
+	public static final int bStatsID = 10562;
 	public static final int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
 	public static final int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
 	
@@ -73,7 +75,11 @@ public class WorldwideChat extends JavaPlugin {
 	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>();
 	private List<String> playersUsingConfigurationGUI = new CopyOnWriteArrayList<String>();
 	
-	private Map<CachedTranslation, Integer> cache = new ConcurrentHashMap<CachedTranslation, Integer>();
+	private Cache<CachedTranslation, String> cache = Caffeine.newBuilder()
+			//TODO: Make 24 hours configurable
+			.expireAfterAccess(24, TimeUnit.HOURS)
+			.maximumSize(100)
+			.build();
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<String, PlayerRecord>();
 	private Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<String, ActiveTranslator>();
 	
@@ -82,7 +88,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "02162022-2"; // This is just MM-DD-YYYY-whatever
+	private String currentMessagesConfigVersion = "05302022-1"; // This is just MM-DD-YYYY-whatever
 	private String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
@@ -141,6 +147,9 @@ public class WorldwideChat extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new InventoryListener(), this);
 		getLogger().info(ChatColor.LIGHT_PURPLE
 				+ CommonDefinitions.getMessage("wwcListenersInitialized"));
+		
+		// Pre-generate hard coded Config UIs
+		MenuGui.genAllConfigUIs();
 
 		// We made it!
 		CommonDefinitions.sendDebugMessage("Async tasks running: " + this.getActiveAsyncTasks());
@@ -178,7 +187,10 @@ public class WorldwideChat extends JavaPlugin {
 				// WWC version
 				final TextComponent versionNotice = Component.text()
 						.append((Component.text().content(CommonDefinitions.getMessage("wwcVersion")).color(NamedTextColor.RED))
-						.append((Component.text().content(" " + pluginVersion)).color(NamedTextColor.LIGHT_PURPLE))).build();
+						.append((Component.text().content(" " + pluginVersion)).color(NamedTextColor.LIGHT_PURPLE))
+						.append((Component.text().content(" (Made with love by ")).color(NamedTextColor.GOLD))
+						.append((Component.text().content("3xpl0itz")).color(NamedTextColor.GOLD).decorate(TextDecoration.BOLD))
+						.append((Component.text().content(")").resetStyle()).color(NamedTextColor.GOLD))).build();
 				CommonDefinitions.sendMessage(sender, versionNotice);
 				return true;
 			case "wwcr": 
@@ -274,29 +286,28 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		
 		/* Once it is safe to, cancelBackgroundTasks and loadPluginConfigs async so we don't stall the main thread */
-		if (!CommonDefinitions.serverIsStopping()) {
-			new BukkitRunnable() {
-				@Override
-				public void run() {
-					final long currentDuration = System.nanoTime();
-					cancelBackgroundTasks(true, this.getTaskId());
-					loadPluginConfigs(true);
-					
-					/* Send successfully reloaded message */
-					if (inSender != null) {
-						final TextComponent wwcrSuccess = Component.text()
-								.append(Component.text()
-										.content(CommonDefinitions.getMessage("wwcrSuccess"))
-										.color(NamedTextColor.GREEN))
-								.append(Component.text()
-										.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
-										.color(NamedTextColor.YELLOW))
-								.build();
-						CommonDefinitions.sendMessage(inSender, wwcrSuccess);
-					}
+		BukkitRunnable reload = new BukkitRunnable() {
+			@Override
+			public void run() {
+				final long currentDuration = System.nanoTime();
+				cancelBackgroundTasks(true, this.getTaskId());
+				loadPluginConfigs(true);
+				
+				/* Send successfully reloaded message */
+				if (inSender != null) {
+					final TextComponent wwcrSuccess = Component.text()
+							.append(Component.text()
+									.content(CommonDefinitions.getMessage("wwcrSuccess"))
+									.color(NamedTextColor.GREEN))
+							.append(Component.text()
+									.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
+									.color(NamedTextColor.YELLOW))
+							.build();
+					CommonDefinitions.sendMessage(inSender, wwcrSuccess);
 				}
-			}.runTaskAsynchronously(this);	
-		}
+			}
+		};
+		CommonDefinitions.scheduleTaskAsynchronously(reload);
 	}
 
 	/**
@@ -365,7 +376,8 @@ public class WorldwideChat extends JavaPlugin {
 		supportedLanguages.clear();
 		playerRecords.clear();
 		activeTranslators.clear();
-		cache.clear();
+		cache.invalidateAll();
+		cache.cleanUp();
 	}
 
 	/* Load Plugin Configs */
@@ -385,28 +397,43 @@ public class WorldwideChat extends JavaPlugin {
 
 		/* Run tasks after translator loaded */
 		// Check for updates
-		if (!CommonDefinitions.serverIsStopping()) 
-			Bukkit.getScheduler().runTaskTimerAsynchronously(this, new UpdateChecker(), 0, configurationManager.getMainConfig().getInt("General.updateCheckerDelay") * 20);
+		BukkitRunnable update = new BukkitRunnable() {
+			@Override
+			public void run() {
+				new UpdateChecker().run();
+			}
+		};
+		CommonDefinitions.scheduleTaskAsynchronouslyRepeating(true, 0, configurationManager.getMainConfig().getInt("General.updateCheckerDelay") * 20, update);
 
 		// Schedule automatic user data sync
-		if (!CommonDefinitions.serverIsStopping()) 
-			Bukkit.getScheduler().runTaskTimerAsynchronously(this, new SyncUserData(), configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20, configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20);
-
+		BukkitRunnable sync = new BukkitRunnable() {
+			@Override
+			public void run() {
+				new SyncUserData().run();
+			}
+		};
+        CommonDefinitions.scheduleTaskAsynchronouslyRepeating(true, configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20,  configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20, sync);
+			
 		// Load saved user data
-		if (!CommonDefinitions.serverIsStopping()) new LoadUserData().run();
+		BukkitRunnable loadUserData = new BukkitRunnable() {
+			@Override
+			public void run() {
+				new LoadUserData().run();
+			}
+		};
+		CommonDefinitions.scheduleTask(loadUserData);
 
 		// Enable tab completers
-		if (!CommonDefinitions.serverIsStopping()) {
-			if (isReloading) {
-				new BukkitRunnable() {
-					@Override
-					public void run() {
-						registerTabCompleters();
-					}
-				}.runTask(this);
-			} else {
-				registerTabCompleters();
-			}
+		if (isReloading) {
+			BukkitRunnable tab = new BukkitRunnable() {
+				@Override
+				public void run() {
+					registerTabCompleters();
+				}
+			};
+			CommonDefinitions.scheduleTask(tab);
+		} else {
+			registerTabCompleters();
 		}
 	}
 	
@@ -551,29 +578,54 @@ public class WorldwideChat extends JavaPlugin {
 	public void removePlayerUsingConfigurationGUI(Player p) {
 		removePlayerUsingConfigurationGUI(p.getUniqueId());
 	}
+	
+	public void setCacheProperties(int in) {
+		cache = Caffeine.newBuilder()
+				//TODO: Make 24 hours configurable
+				.expireAfterAccess(24, TimeUnit.HOURS)
+				.maximumSize(in)
+				.build();
+	}
 
-	public void addCacheTerm(CachedTranslation input) {
-		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") > 0) {
-			if (cache.size() < configurationManager.getMainConfig().getInt("Translator.translatorCacheSize")) {
-				CommonDefinitions.sendDebugMessage("Added new phrase into cache!");
-				cache.put(input, 1);
-			} else { // cache size is greater than X; let's remove the least used thing
-				Entry<CachedTranslation, Integer> removeEntry = null;
-				for (Map.Entry<CachedTranslation, Integer> eaSet : cache.entrySet()) {
-					if (removeEntry == null || eaSet.getValue() < removeEntry.getValue()) {
-						removeEntry = eaSet;
-					}
-				}
-
-				removeCacheTerm(removeEntry.getKey());
-				CommonDefinitions.sendDebugMessage("Removed least used phrase in cache, since we are now at the hard limit.");
-				addCacheTerm(input);
-			}
+	public void addCacheTerm(CachedTranslation input, String outputPhrase) {
+        // No cache
+		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") <= 0) {
+			return;
 		}
+		
+		// Cache found, do not add
+		if (cache.getIfPresent(input) != null) {
+			CommonDefinitions.sendDebugMessage("Term already exists! Not adding.");
+			return;
+		}
+		
+		// Exceeds max size
+		long estimatedCacheSize = getEstimatedCacheSize();
+		CommonDefinitions.sendDebugMessage("Removed least used phrase in cache if at hard limit. Size after removal test: " + estimatedCacheSize);
+		
+		// Put phrase after (potential) removal
+		cache.put(input, outputPhrase);
+		CommonDefinitions.sendDebugMessage("Added new phrase into cache! Size after addition: ");
+	}
+	
+	public String getCacheTerm(CachedTranslation in) {
+		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") <= 0) 
+			return null;
+		
+		String out = cache.getIfPresent(in);
+		CommonDefinitions.sendDebugMessage("Cache lookup outcome: " + out);
+		
+		return out;
+	}
+	
+	public long getEstimatedCacheSize() {
+		cache.cleanUp();
+		return cache.estimatedSize();
 	}
 
 	public void removeCacheTerm(CachedTranslation i) {
-		cache.remove(i);
+		cache.cleanUp();
+		cache.invalidate(i);
 	}
 
 	public void addPlayerRecord(PlayerRecord i) {
@@ -650,7 +702,7 @@ public class WorldwideChat extends JavaPlugin {
 		return activeTranslators;
 	}
 
-	public Map<CachedTranslation, Integer> getCache() {
+	public Cache<CachedTranslation, String> getCache() {
 		return cache;
 	}
 

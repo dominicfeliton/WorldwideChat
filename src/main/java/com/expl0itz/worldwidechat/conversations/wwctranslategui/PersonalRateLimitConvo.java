@@ -10,17 +10,17 @@ import org.bukkit.conversations.Prompt;
 import org.bukkit.entity.Player;
 
 import com.expl0itz.worldwidechat.commands.WWCTranslateRateLimit;
-import com.expl0itz.worldwidechat.inventory.wwctranslategui.WWCTranslateGUIMainMenu;
+import com.expl0itz.worldwidechat.inventory.wwctranslategui.WWCTranslateGuiMainMenu;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 
 import net.md_5.bungee.api.ChatColor;
 
-public class RateLimitConversation extends NumericPrompt {
+public class PersonalRateLimitConvo extends NumericPrompt {
 
 	private ActiveTranslator currTranslator;
 
-	public RateLimitConversation(ActiveTranslator inTranslator) {
+	public PersonalRateLimitConvo(ActiveTranslator inTranslator) {
 		currTranslator = inTranslator;
 	}
 
@@ -43,7 +43,7 @@ public class RateLimitConversation extends NumericPrompt {
 					null, new String[] {Bukkit.getPlayer(UUID.fromString(currTranslator.getUUID())).getName()});
 			rateCommand.processCommand();
 		} // Go back
-		WWCTranslateGUIMainMenu.getTranslateMainMenu(currTranslator.getUUID()).open((Player) context.getForWhom());
+		WWCTranslateGuiMainMenu.getTranslateMainMenu(currTranslator.getUUID()).open((Player) context.getForWhom());
 		return END_OF_CONVERSATION;
 	}
 

@@ -1,17 +1,17 @@
 package com.expl0itz.worldwidechat.util;
 
-public class CachedTranslation {
+import java.util.Objects;
+
+public class CachedTranslation implements Comparable<CachedTranslation> {
 
 	private String inputLang;
 	private String outputLang;
 	private String inputPhrase;
-	private String outputPhrase;
-
-	public CachedTranslation(String inputLang, String outputLang, String inputPhrase, String outputPhrase) {
+	
+	public CachedTranslation(String inputLang, String outputLang, String inputPhrase) {
 		this.inputLang = inputLang;
 		this.outputLang = outputLang;
 		this.inputPhrase = inputPhrase;
-		this.outputPhrase = outputPhrase;
 	}
 
 	/* Getters */
@@ -27,10 +27,6 @@ public class CachedTranslation {
 		return inputPhrase;
 	}
 
-	public String getOutputPhrase() {
-		return outputPhrase;
-	}
-
 	/* Setters */
 	public void setInputLang(String i) {
 		inputLang = i;
@@ -44,7 +40,32 @@ public class CachedTranslation {
 		inputPhrase = i;
 	}
 
-	public void setOutputPhrase(String i) {
-		outputPhrase = i;
+	@Override
+	public int compareTo(CachedTranslation o) {
+		return o.getInputLang().compareTo(inputLang) +
+				o.getOutputLang().compareTo(outputLang) +
+				o.getInputPhrase().compareTo(inputPhrase);
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == this) {
+			return true;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		CachedTranslation test = (CachedTranslation) obj;
+		if (test.compareTo(this) == 0) {
+			return true;
+		}
+		return false;
+	}
+	
+	@Override
+	public int hashCode() {
+		// TODO: String references may change depending on how Java handles strings
+		//CommonDefinitions.sendDebugMessage(inputLang);
+		return Objects.hash(inputLang, outputLang, inputPhrase);
 	}
 }

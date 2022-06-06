@@ -4,7 +4,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import com.expl0itz.worldwidechat.inventory.configuration.GeneralSettingsGUI;
+import com.expl0itz.worldwidechat.inventory.configuration.MenuGui;
 
 public class WWCConfiguration extends BasicCommand {
 
@@ -14,7 +14,7 @@ public class WWCConfiguration extends BasicCommand {
 
 	@Override
 	public boolean processCommand() {
-		GeneralSettingsGUI.generalSettings.open((Player)sender);
+		MenuGui.CONFIG_GUI_TAGS.GEN_SET.smartInv.open((Player) sender);
 		return true;
 	}
 
