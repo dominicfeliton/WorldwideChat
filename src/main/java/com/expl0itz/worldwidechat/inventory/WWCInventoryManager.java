@@ -188,7 +188,7 @@ public class WWCInventoryManager extends InventoryManager {
 			main.addPlayerUsingConfigurationGUI(player);
 			main.getConfigManager().getMainConfig().set(configValueName,
 					!(main.getConfigManager().getMainConfig().getBoolean(configValueName)));
-			if (configValsToDisable.length > 0) {
+			if (configValsToDisable != null && configValsToDisable.length > 0) {
 				for (String eaKey : configValsToDisable) {
 					main.getConfigManager().getMainConfig().set(eaKey, false);
 				}
