@@ -25,6 +25,8 @@ import fr.minuskube.inv.content.InventoryProvider;
 
 public class MenuGui implements InventoryProvider {
 	
+	// Thank you, H***** for the help with this class!!
+	
 	public static enum CONFIG_GUI_TAGS {
 		GEN_SET, STORAGE_SET, SQL_SET, CHAT_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET;
 		
