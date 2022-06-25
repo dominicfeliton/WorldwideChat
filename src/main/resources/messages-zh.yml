@@ -163,7 +163,6 @@ Messages:
   wwcItemTranslateLoreDone: 已成功翻译商品传说。
   wwctiOnTarget: 为 %i 启用了商品翻译。
   wwcBookTranslateTitleFail: 无法翻译图书标题。
-  wwcChatTranslationFail: 无法翻译你的消息。
   wwcInvalidTranslator: 翻译器设置无效。请在 config.yml 或使用 /wwcc 中修复此问题以使用此插件。
   wwcConfigGUIEachTranslatorSettings: '%i 配置'
   wwcConfigGUIWatsonButton: 沃森
@@ -236,8 +235,6 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 正在翻译全局聊天，但是你有一个活跃的翻译会话到
     %o。
   wwcConfigGUIChangesNotSaved: 只有在你点击 /wwcc 中的红色屏障后，你的更改才会生效。
-  wwcConfigConversationSendFailedTranslationChatSuccess: 成功切换失败的翻译聊天消息。
-  wwcConfigGUISendFailedTranslationChatButton: 在翻译失败时发送聊天消息
   wwctciOffSender: 传入聊天翻译已禁用。
   wwctGUIChatIncomingButton: 切换传入聊天翻译
   wwctcoOffSender: 已禁用外向聊天翻译。

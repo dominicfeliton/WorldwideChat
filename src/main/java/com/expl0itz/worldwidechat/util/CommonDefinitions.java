@@ -34,6 +34,7 @@ import com.amazonaws.util.StringUtils;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
+import com.expl0itz.worldwidechat.translators.LibreTranslation;
 import com.expl0itz.worldwidechat.translators.TestTranslation;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
 import com.google.common.base.CharMatcher;
@@ -52,7 +53,7 @@ public class CommonDefinitions {
 	/* Important vars */
 	private static WorldwideChat main = WorldwideChat.instance;
 	
-	public static String[] supportedMCVersions = { "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13", "1.12", "1.11", "1.10", "1.9", "1.8" };
+	public static String[] supportedMCVersions = { "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13" };
 
 	public static String[] supportedPluginLangCodes = { "af", "sq", "am", "ar", "hy", "az", "bn", "bs", "bg", "ca",
 			"zh", "zh-TW", "hr", "cs", "da", "fa-AF", "ga", "nl", "en", "et", "fa", "tl", "fi", "fr", "fr-CA", "ka", "de",
@@ -132,7 +133,7 @@ public class CommonDefinitions {
 	  * @return Boolean - Whether languages are the same or not
 	  */
 	public static boolean isSameLang(String first, String second) {
-		return getSupportedTranslatorLang(first).compareTo(getSupportedTranslatorLang(second)) == 0 ? true : false;
+		return getSupportedTranslatorLang(first).getLangCode().equals(getSupportedTranslatorLang(second).getLangCode());
 	}
 
 	/**
@@ -401,13 +402,18 @@ public class CommonDefinitions {
 						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
 				out = amazonTranslateInstance.useTranslator();
 				break;
+			case "Libre Translate":
+				LibreTranslation libreTranslateInstance = new LibreTranslation(inMessage,
+						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
+				out = libreTranslateInstance.useTranslator();
+				break;
 			case "JUnit/MockBukkit Testing Translator":
 				TestTranslation testTranslator = new TestTranslation(inMessage, currActiveTranslator.getInLangCode(),
 						currActiveTranslator.getOutLangCode());
 				out = testTranslator.useTranslator();
 				break;
 			default:
-				// We should never get here...
+				// Get here if we are adding a new translation service
 				CommonDefinitions.sendDebugMessage("No valid translator currently in use, according to translateText(). Returning original message to " + currPlayer.getName() + "...");
 				return inMessage;
 			}
@@ -431,10 +437,6 @@ public class CommonDefinitions {
 		try {
 			/* Get translation */
 			finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
-			// If the translation we get is actually == our input
-			if (finalOut.equals(inMessage)) {
-				finalOut += " ";
-			}
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			/* Sanitize error before proceeding to write it to errorLog */
 			if (e instanceof InterruptedException || main.getTranslatorName().equals("Starting")) {
@@ -602,8 +604,8 @@ public class CommonDefinitions {
 	private static boolean isNoConfidenceException(Throwable throwable) {
 	    // instanceof() doesn't seem to work here...this sucks, but it works
 		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
-		CommonDefinitions.sendDebugMessage("No confidence exception message: " + exceptionMessage);
 		if (exceptionMessage.contains("confidence") || exceptionMessage.contains("Confidence")) {
+			CommonDefinitions.sendDebugMessage("No confidence exception message: " + exceptionMessage);
 			return true;
 		}
 		return false;

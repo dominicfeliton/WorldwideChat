@@ -148,7 +148,6 @@ Messages:
   wwcInvalidTranslator: Definições do tradutor inválidas. Por favor corrija isto na
     sua config.yml ou com /wwcc para utilizar este plugin.
   wwcConfigConversationWatsonAPIKeySuccess: A chave API de Watson definida com êxito.
-  wwcChatTranslationFail: Falha na tradução da sua mensagem.
   wwcConfigCacheEnabled: Cache de tradutor ativada e definida para um limite de %i.
   wwcConfigConversationOverrideDeletionSuccess: A revogação de mensagens personalizada
     foi eliminada.
@@ -309,10 +308,6 @@ Messages:
     com sucesso.
   wwcConfigBadUpdateDelay: Atraso de actualização inválido definido em config.yml.
     Predefinida para 86400 segundos...
-  wwcConfigConversationSendFailedTranslationChatSuccess: A mensagem de chat com falha
-    na tradução alternada com êxito.
-  wwcConfigGUISendFailedTranslationChatButton: Enviar mensagem de chat na tradução
-    falhada
   wwctciOffSender: A tradução do chat recebido desactivada.
   wwctGUIChatIncomingButton: Alternar tradução do Chat de Entrada
   wwctcoOffSender: Tradução de chat de saída desativada.

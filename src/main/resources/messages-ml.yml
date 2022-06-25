@@ -205,7 +205,6 @@ Messages:
   wwcItemTranslateLoreDone: വിവർത്തനം ചെയ്ത ഇനം വിജയകരമായി.
   wwctiOnTarget: ഇനം പരിഭാഷ %i എന്നതിന് പ്രവർത്തനക്ഷമമാക്കി.
   wwcBookTranslateTitleFail: പുസ്തക തലക്കെട്ട് വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.
-  wwcChatTranslationFail: നിങ്ങളുടെ സന്ദേശം വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.
   wwcInvalidTranslator: അസാധുവായ വിവർത്തകൻ ക്രമീകരണങ്ങൾ. ഈ പ്ലഗിൻ ഉപയോഗിക്കുന്നതിന്
     നിങ്ങളുടെ കോൺഫിഗറേഷനിൽ അല്ലെങ്കിൽ /wwcc ഉപയോഗിച്ച് ഇത് പരിഹരിക്കുക.
   wwcConfigGUIEachTranslatorSettings: '%i കോൺഫിഗറേഷൻ'
@@ -298,10 +297,6 @@ Messages:
     ചെയ്യപ്പെടുന്നു, പക്ഷേ നിങ്ങൾക്ക് %o ലേക്ക് ഒരു സജീവ വിവർത്തന സെഷൻ ഉണ്ട്.
   wwcConfigGUIChangesNotSaved: നിങ്ങൾ/വ്വ്ച് ചുവന്ന തടസ്സം ക്ലിക്ക് വരെ നിങ്ങളുടെ
     മാറ്റങ്ങൾ പ്രാബല്യത്തിൽ വരികയില്ല.
-  wwcConfigConversationSendFailedTranslationChatSuccess: പരാജയപ്പെട്ടു വിവർത്തനം ചാറ്റ്
-    സന്ദേശം വിജയകരമായി ടോഗിൾ ചെയ്തു.
-  wwcConfigGUISendFailedTranslationChatButton: പരാജയപ്പെട്ട വിവർത്തനത്തിൽ ചാറ്റ് സന്ദേശം
-    അയയ്ക്കുക
   wwctciOffSender: ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം അപ്രാപ്തമാക്കി.
   wwctGUIChatIncomingButton: ടോഗിൾ ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം
   wwctcoOffSender: ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം അപ്രാപ്തമാക്കി.

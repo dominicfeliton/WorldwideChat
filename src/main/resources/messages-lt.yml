@@ -203,7 +203,6 @@ Messages:
   wwcItemTranslateLoreDone: Išversta prekė kraštotyros sėkmingai.
   wwctiOnTarget: Elemento vertimas įjungtas %i.
   wwcBookTranslateTitleFail: Nepavyko išversti knygos pavadinimo.
-  wwcChatTranslationFail: Nepavyko išversti jūsų žinutės.
   wwcInvalidTranslator: Neteisingas vertėjo nustatymai. Prašome išspręsti šią problemą
     savo config.yml arba su /wwcc naudoti šį įskiepiai.
   wwcConfigGUIEachTranslatorSettings: '%i konfigūracija'
@@ -295,10 +294,6 @@ Messages:
     bet jūs turite aktyvų vertimo seansą %o.
   wwcConfigGUIChangesNotSaved: Jūsų pakeitimai neįsigalios tol, kol spustelėsite raudoną
     barjerą /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Nepavyko vertimo pokalbių
-    pranešimas sėkmingai perėjo.
-  wwcConfigGUISendFailedTranslationChatButton: Siųsti pokalbių pranešimą dėl nepavykusio
-    vertimo
   wwctciOffSender: Gaunamų pokalbių vertimas išjungtas.
   wwctGUIChatIncomingButton: Perjungti Gaunamus Pokalbiai Vertimas
   wwctcoOffSender: Išeinantis pokalbių vertimas išjungtas.

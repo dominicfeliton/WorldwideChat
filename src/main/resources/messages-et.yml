@@ -196,7 +196,6 @@ Messages:
   wwcItemTranslateLoreDone: Tõlgitud kirje pärimuse edukalt.
   wwctiOnTarget: Objekti tõlkimine lubatud %i.
   wwcBookTranslateTitleFail: Raamatu pealkirja tõlkimine nurjus.
-  wwcChatTranslationFail: Sõnumi tõlkimine nurjus.
   wwcInvalidTranslator: Kehtetu tõlkija sätted. Palun parandage see oma config.yml
     või /wwcc kasutada seda pluginat.
   wwcConfigGUIEachTranslatorSettings: '%i konfiguratsioon'
@@ -287,9 +286,6 @@ Messages:
     tõlgitud, kuid teil on aktiivne tõlkesessioon kuni %o.
   wwcConfigGUIChangesNotSaved: Teie muudatused ei jõustu enne, kui klõpsate punasel
     tõkkel /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Nurjus tõlkevestluse sõnum
-    lülitatud edukalt.
-  wwcConfigGUISendFailedTranslationChatButton: Saada vestluse sõnum nurjunud tõlkimine
   wwctciOffSender: Sissetuleva vestluse tõlge keelatud.
   wwctGUIChatIncomingButton: Lülita sissetuleva vestluse tõlge
   wwctcoOffSender: Väljamineva vestluse tõlge keelatud.

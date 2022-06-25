@@ -209,7 +209,6 @@ Messages:
   wwcItemTranslateLoreDone: Dịch mục truyền thuyết thành công.
   wwctiOnTarget: Mục dịch được kích hoạt cho %i.
   wwcBookTranslateTitleFail: Thất bại trong việc dịch tiêu đề sách.
-  wwcChatTranslationFail: Không dịch được thư của bạn.
   wwcInvalidTranslator: Cài đặt dịch không hợp lệ. Vui lòng sửa lỗi này trong config.yml
     của bạn hoặc với /wwccc để sử dụng plugin này.
   wwcConfigGUIEachTranslatorSettings: '%i Cấu hình'
@@ -305,10 +304,6 @@ Messages:
     đang được dịch, nhưng bạn có phiên dịch đang hoạt động đến %o.
   wwcConfigGUIChangesNotSaved: Thay đổi của bạn sẽ không có hiệu lực cho đến khi bạn
     nhấp vào hàng rào màu đỏ trong /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Không thành công tin nhắn
-    trò chuyện dịch chuyển đổi thành công.
-  wwcConfigGUISendFailedTranslationChatButton: Gửi tin nhắn trò chuyện về dịch không
-    thành công
   wwctciOffSender: Bản dịch trò chuyện đến bị vô hiệu hóa.
   wwctGUIChatIncomingButton: Chuyển đổi bản dịch trò chuyện đến
   wwctcoOffSender: Dịch trò chuyện đi bị vô hiệu hóa.

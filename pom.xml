@@ -4,7 +4,7 @@
 
   <groupId>com.expl0itz.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
-  <version>1.11.1-SNAPSHOT</version>
+  <version>1.12.0-SNAPSHOT</version>
 
   <name>WorldwideChat</name>
   <description>Break the blocky language barrier!</description>
@@ -17,7 +17,7 @@
         <dependency>
            <groupId>org.spigotmc</groupId>
            <artifactId>spigot-api</artifactId>
-           <version>1.18.2-R0.1-SNAPSHOT</version>
+           <version>1.19-R0.1-SNAPSHOT</version>
            <scope>provided</scope>
         </dependency>
         <dependency>
@@ -259,6 +259,7 @@
                             <include>com.zaxxer:HikariCP</include>
                             <include>mysql:*</include>
                             <include>com.github.ben-manes.caffeine:caffeine</include>
+                            <include>com.squareup.okio:okio-jvm</include>
                         </includes>
                     </artifactSet>
                     <filters>
@@ -353,7 +354,7 @@
                         </relocation>
                         <relocation>
                             <pattern>okio</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.squareup.okio</shadedPattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.okio</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>okhttp3</pattern>

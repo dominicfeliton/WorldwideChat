@@ -206,7 +206,6 @@ Messages:
   wwcItemTranslateLoreDone: Przetłumaczone legendy przedmiotu pomyślnie.
   wwctiOnTarget: Translacja elementu włączona dla %i.
   wwcBookTranslateTitleFail: Nie udało się przetłumaczyć tytułu książki.
-  wwcChatTranslationFail: Przetłumaczenie wiadomości nie powiodło się.
   wwcInvalidTranslator: Nieprawidłowe ustawienia tłumacza. Proszę to naprawić w swoim
     config.yml lub z /wwcc, aby użyć tej wtyczki.
   wwcConfigGUIEachTranslatorSettings: Konfiguracja %i
@@ -301,10 +300,6 @@ Messages:
     ale masz aktywną sesję tłumaczeniową do %o.
   wwcConfigGUIChangesNotSaved: Zmiany nie wejdą w życie, dopóki nie klikniesz czerwoną
     barierę w /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Nie powiodło się przełączenie
-    komunikatu tłumaczenia pomyślnie.
-  wwcConfigGUISendFailedTranslationChatButton: Wyślij wiadomość czatu na nieudane
-    tłumaczenie
   wwctciOffSender: Tłumaczenie czatu przychodzącego wyłączone.
   wwctGUIChatIncomingButton: Przełącz tłumaczenie czatu przychodzącego
   wwctcoOffSender: Tłumaczenie czatu wychodzącego wyłączone.

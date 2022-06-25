@@ -140,7 +140,6 @@ Messages:
   wwcInvalidTranslator: अवैध अनुवादक सेटिंग्ज. कृपया हे प्लगइन वापरण्यासाठी आपल्या
     config.yml मध्ये किंवा /wwcc सह याचे निराकरण करा.
   wwcConfigConversationWatsonAPIKeySuccess: वॉटसन API की संच यशस्वीरित्या.
-  wwcChatTranslationFail: तुमच्या संदेशाचे भाषांतर करण्यात अयशस्वी.
   wwcConfigCacheEnabled: अनुवादक कॅशे सक्षम केले व %i च्या मर्यादेस सेट केले आहे.
   wwcConfigConversationOverrideDeletionSuccess: सानुकूल संदेश अधिलिखित हटविले गेले
     आहे.
@@ -297,9 +296,6 @@ Messages:
     सेट.
   wwcConfigBadUpdateDelay: कॉन्फिगर करा.yml मध्ये अवैध अद्यतनकर्ता विलंब सेट. 86400
     सेकंद डीफॉल्टिंग...
-  wwcConfigConversationSendFailedTranslationChatSuccess: अयशस्वीपणे भाषांतर केलेले
-    चॅट संदेश अयशस्वी झाले.
-  wwcConfigGUISendFailedTranslationChatButton: अयशस्वी अनुवाद वर गप्पा संदेश पाठवा
   wwctciOffSender: येणारे चॅट भाषांतर अक्षम केले.
   wwctGUIChatIncomingButton: इनकमिंग चॅट भाषांतर टॉगल करा
   wwctcoOffSender: आउटगोइंग चॅट भाषांतर अक्षम केले.

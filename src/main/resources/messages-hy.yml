@@ -209,7 +209,6 @@ Messages:
   wwcItemTranslateLoreDone: Թարգմանված նյութը Lore հաջողությամբ.
   wwctiOnTarget: Նյութի թարգմանությունը միացված է %i համար։
   wwcBookTranslateTitleFail: Չհաջողվեց թարգմանել գրքի կոչումը.
-  wwcChatTranslationFail: 'Չհաջողվեց թարգմանել ձեր հաղորդագրությունը:'
   wwcInvalidTranslator: 'Անվավեր թարգմանիչ պարամետրերը: Խնդրում ենք ամրագրել այս ձեր
     config.yml կամ /wwcc օգտագործել այս plugin.'
   wwcConfigGUIEachTranslatorSettings: '%i կոնֆիգուրացիա'
@@ -306,10 +305,6 @@ Messages:
     է, բայց դուք ունեք ակտիվ թարգմանության նիստ է %o.
   wwcConfigGUIChangesNotSaved: Ձեր փոփոխությունները չեն ուժի մեջ մտնելու, քանի դեռ
     դուք սեղմեք կարմիր արգելքը /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Ձախողված թարգմանությունը
-    Վիճակագրություն հաղորդագրություն toggled հաջողությամբ.
-  wwcConfigGUISendFailedTranslationChatButton: Ուղարկեք Զրուցարան հաղորդագրություն
-    ձախողված թարգմանության մասին
   wwctciOffSender: 'Մուտքային Վիճակագրություն թարգմանությունը անջատված է:'
   wwctGUIChatIncomingButton: Toggle Մուտքային Զրուցարան Թարգմանություն
   wwctcoOffSender: Արտագնա Վիճակագրություն թարգմանություն անջատված.

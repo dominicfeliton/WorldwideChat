@@ -205,7 +205,6 @@ Messages:
   wwcItemTranslateLoreDone: Översatt objekt lore framgångsrikt.
   wwctiOnTarget: Objektöversättning aktiverad för %i.
   wwcBookTranslateTitleFail: Misslyckades översätta bokens titel.
-  wwcChatTranslationFail: Det gick inte att översätta ditt meddelande.
   wwcInvalidTranslator: Ogiltiga översättarinställningar. Rätta detta i din config.yml
     eller med /wwcc för att använda detta insticksprogram.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'
@@ -303,10 +302,6 @@ Messages:
     men du har en aktiv översättningssession till %o.
   wwcConfigGUIChangesNotSaved: Dina ändringar träder inte i kraft förrän du klickar
     på den röda barriären i /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Misslyckades översättningschattmeddelande
-    växlas med lyckat resultat.
-  wwcConfigGUISendFailedTranslationChatButton: Skicka chattmeddelande vid misslyckad
-    översättning
   wwctciOffSender: Översättning av inkommande chatt inaktiverad.
   wwctGUIChatIncomingButton: Växla översättning för inkommande chatt
   wwctcoOffSender: Översättning av utgående chatt inaktiverad.

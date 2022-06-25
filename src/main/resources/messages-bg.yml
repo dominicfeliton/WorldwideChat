@@ -207,7 +207,6 @@ Messages:
   wwcItemTranslateLoreDone: Преведен елемент ерудиция успешно
   wwctiOnTarget: Преводът на елемент е разрешен за %i.
   wwcBookTranslateTitleFail: Неуспешно превеждане на заглавието на книгата.
-  wwcChatTranslationFail: Неуспешно превеждане на съобщението.
   wwcInvalidTranslator: Невалидни настройки на преводача. Моля, поправете това във
     вашия config.yml или с /wwcc, за да използвате този плъгин.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурация'
@@ -305,10 +304,6 @@ Messages:
     чат, но имате активна сесия за превод до %o.
   wwcConfigGUIChangesNotSaved: Вашите промени няма да влязат в сила, докато не кликнете
     върху червената бариера в /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Неуспешно превод чат съобщение
-    прекъсна успешно.
-  wwcConfigGUISendFailedTranslationChatButton: Изпращане на чат съобщение за неуспешен
-    превод
   wwctciOffSender: Входящ чат превод забранено.
   wwctGUIChatIncomingButton: Превключване входящ чат превод
   wwctcoOffSender: Изходящ чат превод забранено.

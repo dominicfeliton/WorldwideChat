@@ -201,7 +201,6 @@ Messages:
   wwcItemTranslateLoreDone: Käännetty kohde Lore onnistuneesti.
   wwctiOnTarget: Kohteen käännös käytössä kohteella %i.
   wwcBookTranslateTitleFail: Kirjan nimen kääntäminen epäonnistui.
-  wwcChatTranslationFail: Viestin kääntäminen epäonnistui.
   wwcInvalidTranslator: Kääntäjän asetukset eivät kelpaa. Korjaa tämä config.yml tai
     /wwcc käyttää tätä plugin.
   wwcConfigGUIEachTranslatorSettings: '%i määritykset'
@@ -294,10 +293,6 @@ Messages:
     käännetään, mutta sinulla on aktiivinen käännösistunto kohteeseen %o.
   wwcConfigGUIChangesNotSaved: Muutokset tulevat voimaan vasta, kun napsautat punaista
     estettä /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Epäonnistui käännöskeskusteluviesti
-    vaihdettiin onnistuneesti.
-  wwcConfigGUISendFailedTranslationChatButton: Lähetä chat-viesti epäonnistuneesta
-    käännöksestä
   wwctciOffSender: Saapuva chat-käännös poistettu käytöstä.
   wwctGUIChatIncomingButton: Vaihda Saapuva Chat Käännös
   wwctcoOffSender: Lähtevä chat-käännös poistettu käytöstä.

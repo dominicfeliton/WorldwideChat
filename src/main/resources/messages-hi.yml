@@ -204,7 +204,6 @@ Messages:
   wwcItemTranslateLoreDone: अनुवादित आइटम विद्या सफलतापूर्वक।
   wwctiOnTarget: आइटम अनुवाद %i के लिए सक्षम है।
   wwcBookTranslateTitleFail: पुस्तक शीर्षक का अनुवाद करने में विफल।
-  wwcChatTranslationFail: आपके संदेश का अनुवाद करने में विफल।
   wwcInvalidTranslator: अमान्य अनुवादक सेटिंग्स। कृपया इस प्लगइन का उपयोग करने के
     लिए इसे अपने config.yml में या /wwcc के साथ ठीक करें।
   wwcConfigGUIEachTranslatorSettings: '%i कॉन्फ़िगरेशन'
@@ -302,9 +301,6 @@ Messages:
     किया जा रहा है, लेकिन आपके पास %o में एक सक्रिय अनुवाद सत्र है।
   wwcConfigGUIChangesNotSaved: जब तक आप /wwcc में लाल बाधा पर क्लिक नहीं करते हैं,
     तब तक आपके परिवर्तन प्रभावी नहीं होंगे।
-  wwcConfigConversationSendFailedTranslationChatSuccess: असफल अनुवाद चैट संदेश सफलतापूर्वक
-    टॉगल किया गया।
-  wwcConfigGUISendFailedTranslationChatButton: असफल अनुवाद पर चैट संदेश भेजें
   wwctciOffSender: इनकमिंग चैट अनुवाद अक्षम।
   wwctGUIChatIncomingButton: इनकमिंग चैट ट्रांसलेशन टॉगल करें
   wwctcoOffSender: जावक चैट अनुवाद अक्षम है।

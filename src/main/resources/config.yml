@@ -27,7 +27,6 @@ Storage:
   sqlOptionalArgs: []
 Chat:
   sendTranslationChat: true
-  sendFailedTranslationChat: true
   sendPluginUpdateChat: true
   sendIncomingHoverTextChat: true
 Translator:
@@ -40,6 +39,9 @@ Translator:
   amazonAccessKey: amazon_translate_key_goes_here
   amazonSecretKey: amazon_translate_secret_goes_here
   amazonRegion: amazon_region_goes_here
+  useLibreTranslate: false
+  libreAPIKey: none
+  libreURL: libre_url_goes_here
   translatorCacheSize: 100
   rateLimit: 0
   messageCharLimit: 255

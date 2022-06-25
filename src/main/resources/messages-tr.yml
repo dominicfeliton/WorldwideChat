@@ -195,7 +195,6 @@ Messages:
   wwcItemTranslateLoreDone: Öğe irfan başarıyla tercüme edildi.
   wwctiOnTarget: '%i için öğe çevirisi etkinleştirildi.'
   wwcBookTranslateTitleFail: Kitap başlığı çevrilemedi.
-  wwcChatTranslationFail: Mesajınız çevrilemedi.
   wwcInvalidTranslator: Geçersiz çevirmen ayarları. Lütfen bu eklentiyi kullanmak
     için config.yml veya /wwcc ile düzeltin.
   wwcConfigGUIEachTranslatorSettings: '%i Yapılandırma'
@@ -287,9 +286,6 @@ Messages:
     ancak %o konumuna etkin bir çeviri oturumunuz var.
   wwcConfigGUIChangesNotSaved: Değişiklikleriniz siz /wwcc'deki kırmızı bariyere tıklayana
     kadar etkili olmayacaktır.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Başarısız çeviri sohbet mesajı
-    başarıyla geçildi.
-  wwcConfigGUISendFailedTranslationChatButton: Başarısız Çeviride Sohbet Mesajı Gönder
   wwctciOffSender: Gelen sohbet çevirisi devre dışı.
   wwctGUIChatIncomingButton: Gelen Sohbet Çevirisi
   wwctcoOffSender: Giden sohbet çevirisi devre dışı.

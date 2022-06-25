@@ -198,7 +198,6 @@ Messages:
   wwcItemTranslateLoreDone: Аударылған тармақ сәтті.
   wwctiOnTarget: Элемент аудармасы %i үшін қосылған.
   wwcBookTranslateTitleFail: Кітап атауын аудара алмады.
-  wwcChatTranslationFail: Хабарламаңызды аудару сәтсіз болды.
   wwcInvalidTranslator: Жарамсыз аудармашы параметрлері. Бұл плагинді пайдалану үшін
     config.yml немесе /wwcc көмегімен түзетіңіз.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурация'
@@ -292,10 +291,6 @@ Messages:
     жатыр, бірақ сіздің %o үшін белсенді аударма сеансы бар.
   wwcConfigGUIChangesNotSaved: /wwcc-дегі қызыл тосқауылды басқанша сіздің өзгертулеріңіз
     күшіне енеді.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Сәтсіз аударма чат хабары
-    сәтті ауыстырылды.
-  wwcConfigGUISendFailedTranslationChatButton: Орындалмаған аударма туралы чат хабарын
-    жіберу
   wwctciOffSender: Кіріс чат аударма өшірілген.
   wwctGUIChatIncomingButton: Toggle Кіріс чат аударма
   wwctcoOffSender: Шығыс чат аудармасы өшірілген.

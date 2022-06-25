@@ -210,7 +210,6 @@ Messages:
   wwcItemTranslateLoreDone: Переведенный предмет успешно завершен.
   wwctiOnTarget: Перевод элементов включен для %i.
   wwcBookTranslateTitleFail: Не удалось перевести название книги.
-  wwcChatTranslationFail: Не удалось перевести сообщение.
   wwcInvalidTranslator: Неверные настройки переводчика. Пожалуйста, исправьте это
     в своем config.yml или с помощью /wwcc, чтобы использовать этот плагин.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурация'
@@ -306,10 +305,6 @@ Messages:
     но у вас есть активный сеанс перевода на %o.
   wwcConfigGUIChangesNotSaved: Ваши изменения не вступят в силу, пока вы не нажмете
     на красный барьер в /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Сообщение в чате с неудачным
-    переводом успешно переключено.
-  wwcConfigGUISendFailedTranslationChatButton: Отправить сообщение в чате о неудачном
-    переводе
   wwctciOffSender: Перевод входящего чата отключен.
   wwctGUIChatIncomingButton: Переключить перевод входящего чата
   wwctcoOffSender: Перевод исходящего чата отключен.

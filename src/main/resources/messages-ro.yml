@@ -212,7 +212,6 @@ Messages:
   wwcItemTranslateLoreDone: Lore articol tradus cu succes.
   wwctiOnTarget: Traducerea elementului este activată pentru %i.
   wwcBookTranslateTitleFail: Nu a reușit să traducă titlul cărții.
-  wwcChatTranslationFail: Nu a reușit să traducă mesajul.
   wwcInvalidTranslator: Setări de traducător nevalide. Vă rugăm să remediați acest
     lucru în config.yml sau cu /wwcc pentru a utiliza acest plugin.
   wwcConfigGUIEachTranslatorSettings: Configurare %i
@@ -310,10 +309,6 @@ Messages:
     dar aveți o sesiune de traducere activă la %o.
   wwcConfigGUIChangesNotSaved: Modificările dvs. nu vor intra în vigoare până când
     nu faceți clic pe bariera roșie în /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Mesaj de chat traducere eșuat
-    comuta cu succes.
-  wwcConfigGUISendFailedTranslationChatButton: Trimite mesaj de chat pentru traducerea
-    eșuată
   wwctciOffSender: Intrare traducere chat dezactivat.
   wwctGUIChatIncomingButton: Comută traducerea conversațiilor primite
   wwctcoOffSender: Traducere chat de ieșire dezactivat.

@@ -203,7 +203,6 @@ Messages:
   wwcItemTranslateLoreDone: Prevedena stavka nauka uspješno.
   wwctiOnTarget: Prevođenje stavke omogućeno za %i.
   wwcBookTranslateTitleFail: Nije uspjelo prevesti naslov knjige.
-  wwcChatTranslationFail: Nije uspjelo prevesti poruku.
   wwcInvalidTranslator: Nevažeća podešavanja prevoditelja. Molimo vas da to popravite
     u svoj config.yml ili s /wwcc koristiti ovaj dodatak.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguracija'
@@ -299,9 +298,6 @@ Messages:
     ali imate aktivnu sesiju prevođenja na %o.
   wwcConfigGUIChangesNotSaved: Vaše promjene neće stupiti na snagu dok ne kliknete
     na crvenu barijeru u/wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Neuspjelo prevođenje chat
-    poruka uspješno prevučena.
-  wwcConfigGUISendFailedTranslationChatButton: Pošalji chat poruku o neuspjelom
   wwctciOffSender: Dolazni chat prijevod onemogućen.
   wwctGUIChatIncomingButton: Prebaci dolazni Chat Prijevod
   wwctcoOffSender: Odlazni chat prijevod onemogućen.

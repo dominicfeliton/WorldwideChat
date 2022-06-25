@@ -217,7 +217,6 @@ Messages:
   wwcItemTranslateLoreDone: Article traduit lore avec succès.
   wwctiOnTarget: Traduction d'élément activée pour %i.
   wwcBookTranslateTitleFail: Impossible de traduire le titre du livre.
-  wwcChatTranslationFail: Impossible de traduire votre message.
   wwcInvalidTranslator: Paramètres de traducteur non valides. S'il vous plaît corriger
     cela dans votre config.yml ou avec /wwcc pour utiliser ce plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Configuration'
@@ -317,10 +316,6 @@ Messages:
     cours de traduction, mais vous avez une session de traduction active à %o.
   wwcConfigGUIChangesNotSaved: Vos modifications n'entreront pas en vigueur tant que
     vous n'aurez pas cliqué sur la barrière rouge dans /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Échec du message de clavardage
-    de traduction a été basculé avec succès.
-  wwcConfigGUISendFailedTranslationChatButton: Envoyer un message de clavardage lors
-    de la traduction
   wwctciOffSender: Traduction de clavardage entrante désactivée.
   wwctGUIChatIncomingButton: Basculer la traduction des clavardages entrants
   wwctcoOffSender: Traduction de clavardage sortante désactivée.

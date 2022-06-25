@@ -207,7 +207,6 @@ Messages:
   wwcItemTranslateLoreDone: Fordított tétel Lore sikeresen.
   wwctiOnTarget: Elemfordítás engedélyezve a %i számára.
   wwcBookTranslateTitleFail: Nem sikerült lefordítani a könyv címét.
-  wwcChatTranslationFail: Nem sikerült lefordítani az üzenetet.
   wwcInvalidTranslator: Érvénytelen fordítói beállítások. Kérjük, javítsa ki ezt a
     config.yml vagy /wwcc segítségével a plugin használatához.
   wwcConfigGUIEachTranslatorSettings: '%i konfiguráció'
@@ -303,10 +302,6 @@ Messages:
     lefordítása folyamatban van, de aktív fordítási munkamenete van a %o.
   wwcConfigGUIChangesNotSaved: A módosítások addig nem lépnek életbe, amíg nem kattint
     a /wwcc-ban található piros korlátra.
-  wwcConfigConversationSendFailedTranslationChatSuccess: A sikertelen fordítási csevegési
-    üzenet sikeresen vált.
-  wwcConfigGUISendFailedTranslationChatButton: Csevegési üzenet küldése sikertelen
-    fordításon
   wwctciOffSender: A bejövő csevegés fordítása letiltva.
   wwctGUIChatIncomingButton: A bejövő csevegés fordításának váltása
   wwctcoOffSender: A kimenő csevegés fordítása letiltva.

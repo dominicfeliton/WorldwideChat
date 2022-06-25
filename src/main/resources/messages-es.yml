@@ -210,7 +210,6 @@ Messages:
   wwcItemTranslateLoreDone: Traducido correctamente la historia del artículo.
   wwctiOnTarget: Traducción de artículos habilitada para %i.
   wwcBookTranslateTitleFail: No se pudo traducir el título del libro.
-  wwcChatTranslationFail: No se ha podido traducir el mensaje.
   wwcInvalidTranslator: Configuración del traductor no válida. Corrija esto en su
     config.yml o con /wwcc para usar este plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Configuración'
@@ -310,10 +309,6 @@ Messages:
     traduciendo, pero tienes una sesión de traducción activa a %o.
   wwcConfigGUIChangesNotSaved: Sus cambios no surtirán efecto hasta que haga clic
     en la barrera roja en /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: El mensaje de chat de traducción
-    fallido se alternó correctamente.
-  wwcConfigGUISendFailedTranslationChatButton: Enviar mensaje de chat en traducción
-    fallida
   wwctciOffSender: Traducción de chat entrante deshabilitada.
   wwctGUIChatIncomingButton: Alternar traducción de chat entrante
   wwctcoOffSender: Traducción de chat saliente deshabilitada.

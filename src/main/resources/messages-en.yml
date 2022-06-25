@@ -32,7 +32,6 @@ Messages:
   wwcGUIPageNumber: 'Page Number: %i'
   wwcBackupLangCodesWarning: 'WorldwideChat was unable to fetch languages, and is instead using backups. This probably will not affect plugin behavior, but please contact the developer.'
   #------------------- Listener Messages -------------------
-  wwcChatTranslationFail: 'Failed to translate your message.'
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from %i to %o.'
   wwcOnJoinTranslationNotificationNoSourceLang: 'You have an active translation session to %o.'
   wwcGlobalOnJoinTranslationNotificationSourceLang: 'Global chat is being translated from %i to %o.'
@@ -121,7 +120,6 @@ Messages:
   wwcConfigGUISQLPasswordButton: 'Change SQL Password'
   wwcConfigGUIToggleSQLSSLButton: 'Toggle SQL SSL'
   wwcConfigGUISQLOptionalArgsButton: 'Change SQL Optional Arguments'
-  wwcConfigGUISendFailedTranslationChatButton: 'Send Chat Message on Failed Translation'
   wwcConfigGUISendTranslationChatButton: 'Send Chat Reminder to Active Translator on Login'
   wwcConfigGUIPluginUpdateChatButton: 'Send Chat Reminder for Plugin Updates'
   wwcConfigGUISendIncomingHoverTextChatButton: 'Add Original Incoming Messages as Hover Text'
@@ -165,7 +163,6 @@ Messages:
   wwcConfigConversationSyncUserDataDelayInput: 'The current delay per sync of user data is %i seconds. Type anything greater than 10 to set a new value, or anything less than 10 to go back.'
   wwcConfigConversationSyncUserDataDelaySuccess: 'User data sync delay set successfully.'
   wwcConfigConversationSendTranslationChatSuccess: 'Active translator chat reminder toggled successfully.'
-  wwcConfigConversationSendFailedTranslationChatSuccess: 'Failed translation chat message toggled successfully.'
   wwcConfigConversationPluginUpdateChatSuccess: 'Plugin update chat reminder toggled successfully.'
   wwcConfigConversationSendIncomingHoverTextChatSuccess: 'Original incoming chat attached to translation as hover text toggled successfully.'
   wwcConfigConversationOverrideTextChange: 'Please type a new message for this override, or type 0 to go back. Remember to include any variables starting with percentage signs you see in the original message.'

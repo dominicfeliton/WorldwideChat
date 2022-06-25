@@ -207,7 +207,6 @@ Messages:
   wwcItemTranslateLoreDone: Орчуулсан зүйл lore амжилттай.
   wwctiOnTarget: Барааны орчуулга %i идэвхжүүлсэн.
   wwcBookTranslateTitleFail: Номын нэрийг орчуулж чадаагүй.
-  wwcChatTranslationFail: Таны захиасыг орчуулж чадаагүй.
   wwcInvalidTranslator: Буруу орчуулагч тохиргоо. Үүнийг өөрийн config.yml эсвэл /wwcc
     ашиглан энэ залгаасыг ашиглана уу.
   wwcConfigGUIEachTranslatorSettings: '%i Тохиргоо'
@@ -303,9 +302,6 @@ Messages:
     байгаа боловч тад %o руу идэвхтэй орчуулгын сесс байна.
   wwcConfigGUIChangesNotSaved: /wwcc дахь улаан саад тотгорыг дарах хүртэл таны өөрчлөлтүүд
     хүчин төгөлдөр болохгүй.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Бүтэлгүй орчуулга чат зурвас
-    амжилттай toggled.
-  wwcConfigGUISendFailedTranslationChatButton: Бүтэлгүй орчуулга дээр чат зурвас илгээх
   wwctciOffSender: Ирж буй чат орчуулга хөгжлийн бэрхшээлтэй.
   wwctGUIChatIncomingButton: Toggle Ирж буй чат орчуулга
   wwctcoOffSender: Гарч байгаа чат орчуулга хөгжлийн бэрхшээлтэй.

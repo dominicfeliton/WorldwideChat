@@ -213,7 +213,6 @@ Messages:
   wwcItemTranslateLoreDone: Преведено точка ученост успешно.
   wwctiOnTarget: Точка превод овозможено за %i.
   wwcBookTranslateTitleFail: Не успеа да преведе насловот на книгата.
-  wwcChatTranslationFail: Не успеа да ја преведе вашата порака.
   wwcInvalidTranslator: Неважечки поставки за преведувач. Ве молиме поправете го ова
     во вашиот config.yml или со /wwcc да го користите овој приклучок.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурација'
@@ -311,10 +310,6 @@ Messages:
     се преведува, но имате активна сесија за превод на %o.
   wwcConfigGUIChangesNotSaved: Вашите промени нема да стапат на сила додека не кликнете
     на црвената бариера во/wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Не успеа превод разговор
-    порака успешно.
-  wwcConfigGUISendFailedTranslationChatButton: Испратете порака за разговор за неуспешен
-    превод
   wwctciOffSender: Дојдовни разговор превод оневозможено.
   wwctGUIChatIncomingButton: Вклучи дојдовни разговор превод
   wwctcoOffSender: Појдовни разговор превод оневозможено.

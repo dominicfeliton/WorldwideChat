@@ -142,7 +142,6 @@ Messages:
   wwcInvalidTranslator: ਗਲਤ ਅਨੁਵਾਦਕ ਸੈਟਿੰਗ. ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਪਲੱਗਇਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਆਪਣੀ
     config.yml ਜਾਂ /wwcc ਨਾਲ ਇਸ ਨੂੰ ਠੀਕ ਕਰੋ.
   wwcConfigConversationWatsonAPIKeySuccess: ਵਾਟਸਨ API ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
-  wwcChatTranslationFail: ਆਪਣੇ ਸੁਨੇਹੇ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
   wwcConfigCacheEnabled: ਅਨੁਵਾਦਕ ਕੈਚੇ ਨੂੰ ਯੋਗ ਕੀਤਾ ਗਿਆ ਹੈ ਅਤੇ %i ਦੀ ਸੀਮਾ ਤੱਕ ਸੈੱਟ
     ਕੀਤਾ ਗਿਆ ਹੈ।
   wwcConfigConversationOverrideDeletionSuccess: ਕਸਟਮ ਸੁਨੇਹਾ ਓਵਰਰਾਈਡ ਨੂੰ ਹਟਾ ਦਿੱਤਾ
@@ -296,9 +295,6 @@ Messages:
     ਸੈੱਟ ਕੀਤਾ.
   wwcConfigBadUpdateDelay: ਗਲਤ ਅਪਡੇਟਰ ਦੇਰੀ config.yml ਵਿੱਚ ਸੈੱਟ ਕੀਤੀ. 86400 ਸਕਿੰਟ
     ਲਈ ਡਿਫਾਲਟ...
-  wwcConfigConversationSendFailedTranslationChatSuccess: ਅਸਫਲ ਅਨੁਵਾਦ ਚੈਟ ਸੁਨੇਹੇ ਨੂੰ
-    ਸਫਲਤਾਪੂਰਕ ਬਦਲ.
-  wwcConfigGUISendFailedTranslationChatButton: ਅਸਫਲ ਅਨੁਵਾਦ 'ਤੇ ਚੈਟ ਸੁਨੇਹਾ ਭੇਜੋ
   wwctciOffSender: ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ ਅਯੋਗ.
   wwctGUIChatIncomingButton: ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ ਬਦਲੋ
   wwctcoOffSender: ਬਾਹਰ ਜਾਣ ਚੈਟ ਅਨੁਵਾਦ ਅਯੋਗ.

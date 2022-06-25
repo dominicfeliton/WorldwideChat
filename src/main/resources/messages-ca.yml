@@ -211,7 +211,6 @@ Messages:
   wwcItemTranslateLoreDone: Lore article traduït amb èxit.
   wwctiOnTarget: La traducció d'elements activada per a %i.
   wwcBookTranslateTitleFail: No s'ha pogut traduir el títol del llibre.
-  wwcChatTranslationFail: No s'ha pogut traduir el missatge.
   wwcInvalidTranslator: Configuració del traductor no vàlid. Si us plau, corregiu
     això a la vostra config.yml o amb /wwcc per utilitzar aquest connector.
   wwcConfigGUIEachTranslatorSettings: '%i Configuració'
@@ -309,10 +308,6 @@ Messages:
     traduint, però teniu una sessió de traducció activa a %o.
   wwcConfigGUIChangesNotSaved: Els canvis no entraran en vigor fins que feu clic a
     la barrera vermella de /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: S'ha produït un missatge
-    de xat de traducció que s'ha produït correctament.
-  wwcConfigGUISendFailedTranslationChatButton: Enviar missatges de xat en traducció
-    fallada
   wwctciOffSender: Traducció de xat entrant desactivat.
   wwctGUIChatIncomingButton: Alterna la traducció de xat entrant
   wwctcoOffSender: Traducció de xat sortint desactivat.

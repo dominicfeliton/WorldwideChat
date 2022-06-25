@@ -32,16 +32,7 @@ public class ChatListener implements Listener {
 			if ((!currTranslator.getUUID().equals("") && currTranslator.getTranslatingChatOutgoing())
 					|| (!main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
 				String outMsg = CommonDefinitions.translateText(event.getMessage(), event.getPlayer());
-				if (!event.getMessage().equals(outMsg)) {
-					event.setMessage(outMsg);
-				} else if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendFailedTranslationChat")) {
-					TextComponent chatTranslationFail = Component.text()
-							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwcChatTranslationFail"))
-									.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
-							.build();
-					CommonDefinitions.sendMessage(event.getPlayer(), chatTranslationFail);
-				}
+				event.setMessage(outMsg);
 			}
 			
 			/* New WWC functionality/Incoming Messages */

@@ -201,7 +201,6 @@ Messages:
   wwcItemTranslateLoreDone: თარგმნა საქონელი მხარეთმცოდნეობის წარმატებით.
   wwctiOnTarget: ელემენტის თარგმანი ჩართულია %i.
   wwcBookTranslateTitleFail: წიგნის სათაურის თარგმნა ვერ მოხერხდა.
-  wwcChatTranslationFail: ვერ მოხერხდა თქვენი წერილის თარგმნა.
   wwcInvalidTranslator: არასწორი თარჯიმანი პარამეტრები. გთხოვთ, დააფიქსიროთ ეს თქვენი
     config.yml ან /wwcc გამოიყენოთ ეს მოდული.
   wwcConfigGUIEachTranslatorSettings: '%i კონფიგურაცია'
@@ -294,10 +293,6 @@ Messages:
     თარგმნილია, მაგრამ თქვენ გაქვთ აქტიური თარგმანის სესია %o.
   wwcConfigGUIChangesNotSaved: თქვენი ცვლილებები ძალაში არ შედის, სანამ არ დააჭერთ
     წითელ ბარიერს /wwccc.- ში.
-  wwcConfigConversationSendFailedTranslationChatSuccess: ვერ მოხერხდა თარგმანი სტატისტიკა
-    გაგზავნა toggled წარმატებით.
-  wwcConfigGUISendFailedTranslationChatButton: ჩატის გაგზავნა ვერ მოხერხდა თარგმანის
-    შესახებ
   wwctciOffSender: შემომავალი სტატისტიკა თარგმანი გამორთულია.
   wwctGUIChatIncomingButton: შემომავალი ჩეთის თარგმანის გადართვა
   wwctcoOffSender: გამავალი სტატისტიკა თარგმანი გამორთულია.

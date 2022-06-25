@@ -219,7 +219,6 @@ Messages:
   wwcItemTranslateLoreDone: Matagumpay na isinalin item tradisyonal na kaalaman
   wwctiOnTarget: Pinagana ang pagsasalin ng item para sa %i.
   wwcBookTranslateTitleFail: Nabigong i-translate ang pamagat ng libro.
-  wwcChatTranslationFail: Nabigong i-translate ang iyong mensahe.
   wwcInvalidTranslator: Di-wastong mga setting ng tagasalin. Mangyaring ayusin ito
     sa iyong config.yml o sa /wwcc upang magamit ang plugin na ito.
   wwcConfigGUIEachTranslatorSettings: '%i Pagsasaayos'
@@ -326,10 +325,6 @@ Messages:
     chat, ngunit mayroon kang aktibong sesyon ng pagsasalin sa %o.
   wwcConfigGUIChangesNotSaved: Ang iyong mga pagbabago ay hindi magkakabisa hanggang
     sa mag-click ka sa pulang hadlang sa /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Matagumpay na na-toggled
-    ang mensahe ng chat sa pagsasalin.
-  wwcConfigGUISendFailedTranslationChatButton: Magpadala ng Chat Message sa Nabigong
-    Pagsasalin
   wwctciOffSender: Hindi pinagana ang pagsasalin ng papasok na chat.
   wwctGUIChatIncomingButton: I-toggle ang Incoming Chat Translation
   wwctcoOffSender: Hindi pinagana ang pagsasalin ng papalabas na chat.

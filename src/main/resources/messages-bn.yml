@@ -197,7 +197,6 @@ Messages:
   wwcItemTranslateLoreDone: অনুবাদ করা আইটেমটি সফলভাবে।
   wwctiOnTarget: আইটেমের অনুবাদ %i জন্য সক্রিয় করা হয়েছে।
   wwcBookTranslateTitleFail: বইয়ের শিরোনাম অনুবাদ করতে ব্যর্থ।
-  wwcChatTranslationFail: আপনার বার্তা অনুবাদ করতে ব্যর্থ।
   wwcInvalidTranslator: অনুবাদক সেটিংস অবৈধ। এই প্লাগইনটি ব্যবহার করার জন্য অনুগ্রহ
     করে আপনার config.yml অথবা /wwcc এর সাথে এটি ঠিক করুন।
   wwcConfigGUIEachTranslatorSettings: '%i কনফিগারেশন'
@@ -294,9 +293,6 @@ Messages:
     করা হচ্ছে, কিন্তু আপনা %o তে একটি সক্রিয় অনুবাদ সেশন আছে।
   wwcConfigGUIChangesNotSaved: আপনার পরিবর্তনগুলি কার্যকর হবে না যতক্ষণ না আপনি /wwcc
     এ লাল বাধা ক্লিক করেন।
-  wwcConfigConversationSendFailedTranslationChatSuccess: অনুবাদ চ্যাটের বার্তা ব্যর্থ
-    হয়েছে সফলভাবে টগল করা হয়েছে।
-  wwcConfigGUISendFailedTranslationChatButton: অনুবাদ ব্যর্থ হলে আড্ডা বার্তা পাঠান
   wwctciOffSender: আগত আড্ডা অনুবাদ অক্ষম।
   wwctGUIChatIncomingButton: আগত আড্ডা অনুবাদ টগল করুন
   wwctcoOffSender: আউটগোয়িং আড্ডা অনুবাদ অক্ষম।

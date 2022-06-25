@@ -166,7 +166,6 @@ Messages:
   wwcItemTranslateLoreDone: アイテムの伝承は正常に翻訳されました。
   wwctiOnTarget: '%i のアイテム翻訳が有効になりました。'
   wwcBookTranslateTitleFail: 本のタイトルの翻訳に失敗しました。
-  wwcChatTranslationFail: メッセージの翻訳に失敗しました。
   wwcInvalidTranslator: トランスレータ設定が無効です。このプラグインを使用するには、config.yml または /wwcc でこれを修正してください。
   wwcConfigGUIEachTranslatorSettings: '%i 構成'
   wwcConfigGUIWatsonButton: ワトソン
@@ -239,8 +238,6 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: グローバルチャットは翻訳中ですが、 %o
     へのアクティブな翻訳セッションがあります。
   wwcConfigGUIChangesNotSaved: 変更内容は /wwcc の赤いバリアをクリックするまで有効になりません。
-  wwcConfigConversationSendFailedTranslationChatSuccess: 翻訳に失敗したチャットメッセージは正常に切り替わりました。
-  wwcConfigGUISendFailedTranslationChatButton: 翻訳失敗時にチャットメッセージを送信する
   wwctciOffSender: 着信チャットの翻訳が無効になりました。
   wwctGUIChatIncomingButton: 着信チャット翻訳の切り替え
   wwctcoOffSender: 発信チャットの翻訳が無効になりました。

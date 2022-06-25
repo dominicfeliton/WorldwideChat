@@ -9,9 +9,6 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
 
 public class BasicTranslation {
-
-	//TODO: Make translators download their languages from out GitHub repo, and not their websites
-	//In case the websites change, we won't break
 	
 	public WorldwideChat main = WorldwideChat.instance;
 	
@@ -172,6 +169,38 @@ public class BasicTranslation {
 			supportedLangs.add(new SupportedLanguageObject("vi", "Vietnamese", "Tiếng Việt"));
 			supportedLangs.add(new SupportedLanguageObject("zh", "Simplified Chinese", "中文"));
 			supportedLangs.add(new SupportedLanguageObject("zh-TW", "Traditional Chinese", "古文"));
+		} else if (this instanceof LibreTranslation) {
+			// https://github.com/argosopentech/argos-translate
+			supportedLangs.add(new SupportedLanguageObject("en", "English"));
+			supportedLangs.add(new SupportedLanguageObject("ar", "Arabic"));
+			supportedLangs.add(new SupportedLanguageObject("az", "Azerbaijani"));
+			supportedLangs.add(new SupportedLanguageObject("zh", "Chinese"));
+			supportedLangs.add(new SupportedLanguageObject("cs", "Czech"));
+			supportedLangs.add(new SupportedLanguageObject("da", "Danish"));
+			supportedLangs.add(new SupportedLanguageObject("nl", "Dutch"));
+			supportedLangs.add(new SupportedLanguageObject("eo", "Esperanto"));
+			supportedLangs.add(new SupportedLanguageObject("fi", "Finnish"));
+			supportedLangs.add(new SupportedLanguageObject("fr", "French"));
+			supportedLangs.add(new SupportedLanguageObject("de", "German"));
+			supportedLangs.add(new SupportedLanguageObject("el", "Greek"));
+			supportedLangs.add(new SupportedLanguageObject("he", "Hebrew"));
+			supportedLangs.add(new SupportedLanguageObject("hi", "Hindi"));
+			supportedLangs.add(new SupportedLanguageObject("hu", "Hungarian"));
+			supportedLangs.add(new SupportedLanguageObject("id", "Indonesian"));
+			supportedLangs.add(new SupportedLanguageObject("ga", "Irish"));
+			supportedLangs.add(new SupportedLanguageObject("it", "Italian"));
+			supportedLangs.add(new SupportedLanguageObject("ja", "Japanese"));
+			supportedLangs.add(new SupportedLanguageObject("ko", "Korean"));
+			supportedLangs.add(new SupportedLanguageObject("fa", "Persian"));
+			supportedLangs.add(new SupportedLanguageObject("pl", "Polish"));
+			supportedLangs.add(new SupportedLanguageObject("pt", "Portuguese"));
+			supportedLangs.add(new SupportedLanguageObject("ru", "Russian"));
+			supportedLangs.add(new SupportedLanguageObject("sk", "Slovak"));
+			supportedLangs.add(new SupportedLanguageObject("es", "Spanish"));
+			supportedLangs.add(new SupportedLanguageObject("sv", "Swedish"));
+			supportedLangs.add(new SupportedLanguageObject("tr", "Turkish"));
+			supportedLangs.add(new SupportedLanguageObject("uk", "Ukranian"));
+			supportedLangs.add(new SupportedLanguageObject("vi", "Vietnamese"));
 		} else {
 			supportedLangs.add(new SupportedLanguageObject("en", "English"));
 			supportedLangs.add(new SupportedLanguageObject("es", "Spanish"));

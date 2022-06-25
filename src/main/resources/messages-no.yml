@@ -198,7 +198,6 @@ Messages:
   wwcItemTranslateLoreDone: Oversatt element lore vellykket.
   wwctiOnTarget: Vareoversettelse aktivert for %i.
   wwcBookTranslateTitleFail: Kan ikke oversette boktittel.
-  wwcChatTranslationFail: Kan ikke oversette meldingen.
   wwcInvalidTranslator: Ugyldige innstillinger for oversetteren. Vennligst reparer
     dette i din config.yml eller med /wwcc for å bruke denne plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurasjon'
@@ -290,9 +289,6 @@ Messages:
     men du har en aktiv oversettelsesøkt til %o.
   wwcConfigGUIChangesNotSaved: Endringene trer ikke i kraft før du klikker på den
     røde barrieren i /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Mislykket oversettelse chat-melding
-    ble slått vellykket.
-  wwcConfigGUISendFailedTranslationChatButton: Send chat-melding om mislykket oversettelse
   wwctciOffSender: Innkommende chat oversettelse deaktivert.
   wwctGUIChatIncomingButton: Veksle Innkommende Chat Oversettelse
   wwctcoOffSender: Utgående chat oversettelse deaktivert.

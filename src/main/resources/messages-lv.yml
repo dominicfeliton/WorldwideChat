@@ -205,7 +205,6 @@ Messages:
   wwcItemTranslateLoreDone: Tulkots vienums mācījās veiksmīgi.
   wwctiOnTarget: Vienuma tulkošana iespējota uz %i.
   wwcBookTranslateTitleFail: Neizdevās tulkot grāmatas nosaukumu.
-  wwcChatTranslationFail: Neizdevās tulkot savu ziņojumu.
   wwcInvalidTranslator: Nederīgi tulkotāja iestatījumi. Lūdzu, salabojiet to savā
     config.yml vai ar /wwcc, lai izmantotu šo spraudni.
   wwcConfigGUIEachTranslatorSettings: '%i konfigurācija'
@@ -299,9 +298,6 @@ Messages:
     tulkota, bet jums ir aktīva tulkošanas sesija uz %o.
   wwcConfigGUIChangesNotSaved: Jūsu izmaiņas nestāsies spēkā, kamēr jūs noklikšķināsit
     uz sarkanās barjeras /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Neizdevās tulkošanas tērzēšanas
-    ziņojums pārslēgts veiksmīgi.
-  wwcConfigGUISendFailedTranslationChatButton: Tērzēšanas ziņojuma sūtīšana par neizdev
   wwctciOffSender: Ienākošais tērzēšanas tulkojums ir
   wwctGUIChatIncomingButton: Pārslēgt ienākošo tērzēšanas tulkojumu
   wwctcoOffSender: Izejošā tērzēšanas tulkošana atspēj

@@ -206,7 +206,6 @@ Messages:
   wwcItemTranslateLoreDone: Перекладений елемент успішно освоєний.
   wwctiOnTarget: Увімкнено переклад елементу для %i.
   wwcBookTranslateTitleFail: Не вдалося перекласти назву книги.
-  wwcChatTranslationFail: Не вдалося перекласти ваше повідомлення.
   wwcInvalidTranslator: Некоректні параметри перекладача. Будь ласка, виправте це
     у вашому config.yml або за допомогою /wwcc, щоб використовувати цей плагін.
   wwcConfigGUIEachTranslatorSettings: '%i Конфігурація'
@@ -300,10 +299,6 @@ Messages:
     перекладається, але у вас є активний сеанс перекладу до %o.
   wwcConfigGUIChangesNotSaved: Ваші зміни не набудуть чинності до тих пір, поки ви
     не натиснете на червоний бар'єр в /wwc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Невдалий переклад повідомлення
-    чату успішно переведено.
-  wwcConfigGUISendFailedTranslationChatButton: Надіслати повідомлення чату при невдалому
-    перекладі
   wwctciOffSender: Вхідний переклад чату вимкнено.
   wwctGUIChatIncomingButton: Перемкнути вхідний переклад чату
   wwctcoOffSender: Вихідний переклад чату вимкнено.

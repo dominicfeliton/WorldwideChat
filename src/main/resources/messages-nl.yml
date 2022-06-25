@@ -206,7 +206,6 @@ Messages:
   wwcItemTranslateLoreDone: Vertaald item lore succesvol.
   wwctiOnTarget: Itemvertaling ingeschakeld voor %i.
   wwcBookTranslateTitleFail: Kan de boektitel niet vertalen.
-  wwcChatTranslationFail: Kan je bericht niet vertalen.
   wwcInvalidTranslator: Ongeldige instellingen voor vertalers. Gelieve dit op te lossen
     in je config.yml of met /wwcc om deze plugin te gebruiken.
   wwcConfigGUIEachTranslatorSettings: '%i Configuratie'
@@ -304,10 +303,6 @@ Messages:
     vertaald, maar je hebt een actieve vertaalsessie naar %o.
   wwcConfigGUIChangesNotSaved: Uw wijzigingen worden pas van kracht als u op de rode
     barrière klikt in /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Mislukt vertaalchatbericht
-    is met succes geschakeld.
-  wwcConfigGUISendFailedTranslationChatButton: Chatbericht verzenden bij mislukte
-    vertaling
   wwctciOffSender: Inkomende chatvertaling uitgeschakeld.
   wwctGUIChatIncomingButton: Toggle Inkomende chatvertaling
   wwctcoOffSender: Uitgaande chatvertaling uitgeschakeld.

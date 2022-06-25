@@ -220,7 +220,6 @@ Messages:
   wwcItemTranslateLoreDone: Μετάφραση αντικειμένων με επιτυχία.
   wwctiOnTarget: Η μετάφραση αντικειμένου ενεργοποιήθηκε για %i.
   wwcBookTranslateTitleFail: Αποτυχία μετάφρασης τίτλου βιβλίου.
-  wwcChatTranslationFail: Απέτυχε η μετάφραση του μηνύματός σας.
   wwcInvalidTranslator: Μη έγκυρες ρυθμίσεις μεταφραστή. Διορθώστε το στο config.yml
     ή στο /wwcc για να χρησιμοποιήσετε αυτό το πρόσθετο.
   wwcConfigGUIEachTranslatorSettings: '%i Ρύθμιση παραμέτρων'
@@ -320,10 +319,6 @@ Messages:
     μεταφράζεται, αλλά έχετε μια ενεργή συνεδρία μετάφρασης σε %o.
   wwcConfigGUIChangesNotSaved: Οι αλλαγές σας δεν θα τεθούν σε ισχύ μέχρι να κάνετε
     κλικ στο κόκκινο φράγμα στο /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Απέτυχε η εναλλαγή μηνύματος
-    συνομιλίας μετάφρασης με επιτυχία.
-  wwcConfigGUISendFailedTranslationChatButton: Αποστολή μηνύματος συνομιλίας σε αποτυχημένη
-    μετάφραση
   wwctciOffSender: Η μετάφραση εισερχόμενης συνομιλίας απενεργοποιήθηκε.
   wwctGUIChatIncomingButton: Εναλλαγή μετάφρασης εισερχόμενης συνομιλίας
   wwctcoOffSender: Η εξερχόμενη μετάφραση συνομιλίας απενεργοποιήθηκε.

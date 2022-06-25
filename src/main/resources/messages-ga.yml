@@ -151,7 +151,6 @@ Messages:
   wwcInvalidTranslator: Suíomhanna aistritheora neamhbhailí. Le do thoil a shocrú
     seo i do config.yml nó le/wwcc a bhaint as an mbreiseán seo.
   wwcConfigConversationWatsonAPIKeySuccess: Watson API eochair leagtha go rathúil.
-  wwcChatTranslationFail: Theip ar aistriú do theachtaireacht.
   wwcConfigCacheEnabled: Taisce Aistritheoir cumasaithe agus a leagtar chun teorainn
     de %i.
   wwcConfigConversationOverrideDeletionSuccess: Scriosadh sárú teachtaireachta saincheaptha.
@@ -320,10 +319,6 @@ Messages:
     go rathúil.
   wwcConfigBadUpdateDelay: Moill updater neamhbhailí atá leagtha síos i config.yml.
     Réamhshocraithe go 86400 soicind...
-  wwcConfigConversationSendFailedTranslationChatSuccess: Theip teachtaireacht comhrá
-    aistriúcháin toggled go rathúil.
-  wwcConfigGUISendFailedTranslationChatButton: Seol Teachtaireacht Comhrá ar Aistriúchán
-    Theip
   wwctciOffSender: Aistriúchán comhrá Isteach faoi mhíchumas.
   wwctGUIChatIncomingButton: Aistriúchán Comhrá Isteach
   wwctcoOffSender: Aistriúchán comhrá amach faoi mhíchumas.

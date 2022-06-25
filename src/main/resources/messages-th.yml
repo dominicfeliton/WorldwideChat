@@ -180,7 +180,6 @@ Messages:
   wwcItemTranslateLoreDone: แปลตำนานรายการประสบความสำเร็จ.
   wwctiOnTarget: เปิดใช้งานการแปลรายการสำหรับ %i
   wwcBookTranslateTitleFail: ล้มเหลวในการแปลชื่อหนังสือ
-  wwcChatTranslationFail: ล้มเหลวในการแปลข้อความของคุณ
   wwcInvalidTranslator: การตั้งค่าตัวแปลไม่ถูกต้องโปรดแก้ไขปัญหานี้ใน config.yml ของคุณหรือกับ
     /wwcc เพื่อใช้ปลั๊กอินนี้
   wwcConfigGUIEachTranslatorSettings: การตั้งค่าคอนฟิก %i
@@ -267,8 +266,6 @@ Messages:
     แต่คุณมีเซสชันการแปลที่ใช้งานอยู่เป็น %o
   wwcConfigGUIChangesNotSaved: การเปลี่ยนแปลงของคุณจะไม่มีผลจนกว่าคุณจะคลิกที่อุปสรรคสีแดงใน
     /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: ล้มเหลวในการแปลข้อความแชทเปลี่ยนเสร็จเรียบร้อยแล้ว
-  wwcConfigGUISendFailedTranslationChatButton: ส่งข้อความแชทเมื่อแปลล้มเหลว
   wwctciOffSender: ปิดการแปลแชทขาเข้า
   wwctGUIChatIncomingButton: สลับการแปลแชทขาเข้า
   wwctcoOffSender: ปิดการแปลแชทขาออก
