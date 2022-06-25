@@ -79,10 +79,8 @@ Messages:
   wwcEntityTranslateStart: लक्ष्य अस्तित्व अनुवादित करीत आहे...
   wwcUpdaterFutureDate: वर्ल्ड वाइडचॅटच्या या घटनेत नवीनतम सार्वजनिक लोकांपेक्षा अधिक
     आवृत्ती आहे.
-  wwcItemTranslateLoreFail: आयटमचे भाषांतर करण्यात अयशस्वी.
   wwcConfigGUIGoogleTranslateAPIKeyButton: गूगल भाषांतर API की बदला
   wwcConfigGUIGlobalRateLimitButton: जागतिक दर मर्यादा बदला
-  wwcItemTranslateTitleFail: आयटमचे नाव भाषांतरित करण्यात अयशस्वी.
   wwctsOnTarget: '%i करीता साइन भाषांतर कार्यान्वीत केले आहे.'
   wwcConfigCacheDisabled: अनुवादक कॅशे अक्षम.
   wwcConfigConversationWatsonURLInput: वर्तमान URL %i आहे कृपया वॉटसनसाठी सेवा URL
@@ -127,8 +125,6 @@ Messages:
   wwctrlRateLimitSetTarget: '%i ते %o सेकंदांची दर मर्यादा निश्चित करा.'
   wwcConfigGUIMessagesOverrideCustomLabel: नवीन संदेश
   wwcGUITempItem: आयटम प्रदर्शन
-  wwcBookTranslationFail: आपल्या लक्ष्य पुस्तकात एक किंवा अधिक पृष्ठे भाषांतरित करण्यात
-    अक्षम.
   wwcConfigConversationGoogleTranslateAPIKeyInput: वर्तमान API की %i आहे. कृपया Google
     Translate करीता API की इनपुट करा, किंवा परत जाण्यासाठी 0 टाइप करा.
   wwcConfigConversationRateLimitInput: वर्तमान वैश्विक दर मर्यादा प्रति भाषांतर %i
@@ -163,8 +159,6 @@ Messages:
   wwcgAutoTranslateStart: आता जागतिक गप्पांचे भाषांतर करा %o वर करा.
   wwcConfigGUIAmazonTranslateAccessKeyButton: ऍमेझॉन प्रवेश की बदला
   wwcrFail: WorldwideChat रीलोड करण्यात अयशस्वी.
-  wwcSignTranslationFail: आपल्या लक्ष्य चिन्हावर एक किंवा अधिक ओळींचे भाषांतर करण्यात
-    अक्षम.
   wwcUpdaterFailedGeneric: WorldwideChat अद्यतने तपासण्यात अक्षम.
   wwcConfigGUIChatMessagesOverrideSettings: डीफॉल्ट संदेश अधिलिखित
   wwctGUIMainMenuGlobal: ग्लोबल भाषांतर मेनू
@@ -214,7 +208,6 @@ Messages:
     प्रभावी होणार नाहीत.
   wwcBookTranslateTitleSuccess: 'भाषांतरित पुस्तकाचे शीर्षक: %i'
   wwcConfigGUINextPageButton: पुढील पृष्ठ
-  wwctbTranslatePageFail: (या पृष्ठाचे भाषांतर करण्यास अपयशी) %i
   wwctiOnSender: आयटम अनुवाद सक्षम. त्याचे भाषांतर करण्यासाठी आपल्या मुख्य हातात असलेल्या
     आयटमसह उजवे-क्लिक करा!
   wwcConfigGUIMessagesOverrideOriginalLabel: मूळ संदेश
@@ -251,7 +244,6 @@ Messages:
     करा!
   wwctGUIAutoDetectButton: स्त्रोत भाषा स्वयं-शोधा
   wwcConfigConversationDebugModeSuccess: डीबग मोड यशस्वीरित्या टॉगल केले.
-  wwcBookTranslateTitleFail: पुस्तक शीर्षक भाषांतरित करण्यात अयशस्वी.
   wwcConfigGUIChatMessagesOverrideDeleteButton: अधिलिखित हटवा
   wwcNoConsole: हा आदेश फक्त एक खेळाडू संपली जाऊ शकते.
   wwcConfigConversationTranslationCacheSuccess: भाषांतर कॅशे मर्यादा यशस्वीरित्या

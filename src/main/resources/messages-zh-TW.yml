@@ -40,7 +40,6 @@ Messages:
   wwctGUISignButton: 切換簽名轉換
   wwcUpdaterOutOfDate: 「全球聊天」已過時。請更新至最新版本 %i。
   wwcConfigGUINextPageButton: 下一頁
-  wwctbTranslatePageFail: (無法翻譯此頁面) %i
   wwcConfigInvalidTranslatorSettings: 無效的翻譯器設定！請在您的配置.yml 中只啟用一個翻譯器。
   wwcConfigGUIQuitButton: 退出並儲存變更
   wwctPlayerNotFound: 玩家 % 我找不到。
@@ -148,13 +147,9 @@ Messages:
   wwcConfigCacheInvalid: 翻譯器快取大小無效。預設為 10...
   wwcInventoryErrorPlayer: 使用您的 GUI 偵測到錯誤。記錄檔已傳送至主控台。
   wwcInventoryError: 使用者 %i 的 GUI 偵測到錯誤。請向開發人員回報此問題。
-  wwcSignTranslationFail: 無法翻譯目標符號上的一或多行。
-  wwcBookTranslationFail: 無法翻譯目標書冊中的一或多個頁面。
   wwctiOffTarget: '%i 已停用項目轉譯。'
   wwctiOffSender: 已停用料號轉譯。
   wwcItemTranslateTitleStock: 無法轉譯預設項目名稱。
-  wwcItemTranslateLoreFail: 翻譯物品傳說失敗。
-  wwcItemTranslateTitleFail: 無法轉譯項目名稱。
   wwctGUIItemButton: 切換項目轉換
   wwcItemTranslateTitleDone: 已成功翻譯物品標題。
   wwcGUITempItem: 料號顯示
@@ -164,7 +159,6 @@ Messages:
   wwcItemTranslateLoreStart: 正在翻譯目標項目的傳說...
   wwcItemTranslateLoreDone: 已翻譯的項目傳說成功。
   wwctiOnTarget: 已啟用 %i 的項目轉譯。
-  wwcBookTranslateTitleFail: 無法翻譯書籍標題。
   wwcInvalidTranslator: 無效的轉換器設定。請在您的配置.yml 或 /wwcc 中修復此問題以使用此插件。
   wwcConfigGUIEachTranslatorSettings: '%i 組態'
   wwcConfigGUIWatsonButton: 華生

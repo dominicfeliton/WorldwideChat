@@ -40,7 +40,6 @@ Messages:
   wwctGUISignButton: 기호 변환 토글
   wwcUpdaterOutOfDate: 월드와이드채팅이 오래되었습니다.최신 버전 %i (으) 로 업데이트하십시오.
   wwcConfigGUINextPageButton: 다음 페이지
-  wwctbTranslatePageFail: (이 페이지를 번역하지 못했습니다) %i
   wwcConfigInvalidTranslatorSettings: 잘못된 번역기 설정!config.yml에서 하나의 번역기만 활성화하십시오.
   wwcConfigGUIQuitButton: 종료 및 변경 사항 저장
   wwctPlayerNotFound: 플레이어 %을 (를) 찾을 수 없습니다.
@@ -151,13 +150,9 @@ Messages:
   wwcConfigCacheInvalid: 변환기 캐시 크기가 잘못되었습니다.기본값 10으로 설정 중...
   wwcInventoryErrorPlayer: GUI에서 오류가 감지되었습니다.로그가 콘솔로 전송되었습니다.
   wwcInventoryError: '%i 사용자의 GUI에서 오류가 발견되었습니다. 이 문제를 개발자에게 보고하십시오.'
-  wwcSignTranslationFail: 대상 기호에서 하나 이상의 줄을 번역할 수 없습니다.
-  wwcBookTranslationFail: 대상 책에서 하나 이상의 페이지를 번역할 수 없습니다.
   wwctiOffTarget: '%i에 대해 항목 번역이 비활성화되었습니다.'
   wwctiOffSender: 항목 번역이 비활성화되었습니다.
   wwcItemTranslateTitleStock: 기본 항목 이름을 번역할 수 없습니다.
-  wwcItemTranslateLoreFail: 항목 로어를 번역하지 못했습니다.
-  wwcItemTranslateTitleFail: 항목 이름을 번역하지 못했습니다.
   wwctGUIItemButton: 항목 번역 토글
   wwcItemTranslateTitleDone: 번역된 항목 제목입니다.
   wwcGUITempItem: 항목 표시
@@ -167,7 +162,6 @@ Messages:
   wwcItemTranslateLoreStart: 대상 항목의 로어 번역 중...
   wwcItemTranslateLoreDone: 번역된 항목 로어가 성공했습니다.
   wwctiOnTarget: '%i에 대해 항목 변환이 활성화되었습니다.'
-  wwcBookTranslateTitleFail: 책 제목을 번역하지 못했습니다.
   wwcInvalidTranslator: 번역기 설정이 잘못되었습니다.이 플러그인을 사용하려면 config.yml 또는 /wwcc에서 수정하십시오.
   wwcConfigGUIEachTranslatorSettings: '%i 구성'
   wwcConfigGUIWatsonButton: 왓슨

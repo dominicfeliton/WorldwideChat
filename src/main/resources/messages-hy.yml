@@ -49,7 +49,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat դուրս օրվանից. Խնդրում ենք թարմացնել վերջին տարբերակը,
     %i.
   wwcConfigGUINextPageButton: Հաջորդ էջը
-  wwctbTranslatePageFail: (Չհաջողվեց թարգմանել այս էջը) %i
   wwcConfigInvalidTranslatorSettings: Անվավեր թարգմանիչ պարամետրերը! Խնդրում ենք միացնել
     միայն մեկ թարգմանիչ Ձեր config.yml.
   wwcConfigGUIQuitButton: Ելք եւ փրկել փոփոխությունները
@@ -191,13 +190,9 @@ Messages:
     մխիթարել.
   wwcInventoryError: '%i օգտագործողի GUI- ի հետ հայտնաբերված սխալը: Խնդրում ենք այս
     հարցը զեկուցել մշակողին:'
-  wwcSignTranslationFail: Անհնար է թարգմանել մեկ կամ ավելի գծեր ձեր թիրախային նշանի.
-  wwcBookTranslationFail: Անհնար է թարգմանել մեկ կամ ավելի էջեր ձեր թիրախային գրքում.
   wwctiOffTarget: Նյութի թարգմանությունը անջատված է համար %i.
   wwctiOffSender: Նյութի թարգմանությունը անջատված.
   wwcItemTranslateTitleStock: Անհնար է թարգմանել լռելյայն տարրերի
-  wwcItemTranslateLoreFail: Չհաջողվեց թարգմանել նյութը Lore.
-  wwcItemTranslateTitleFail: 'Չհաջողվեց թարգմանել տարրի անունը:'
   wwctGUIItemButton: Toggle Նյութի թարգմանություն
   wwcItemTranslateTitleDone: Թարգմանված նյութի վերնագիրը հաջողությամբ
   wwcGUITempItem: Նյութի Ցուցադրել
@@ -208,7 +203,6 @@ Messages:
   wwcItemTranslateLoreStart: Թարգմանություն թիրախային կետի...
   wwcItemTranslateLoreDone: Թարգմանված նյութը Lore հաջողությամբ.
   wwctiOnTarget: Նյութի թարգմանությունը միացված է %i համար։
-  wwcBookTranslateTitleFail: Չհաջողվեց թարգմանել գրքի կոչումը.
   wwcInvalidTranslator: 'Անվավեր թարգմանիչ պարամետրերը: Խնդրում ենք ամրագրել այս ձեր
     config.yml կամ /wwcc օգտագործել այս plugin.'
   wwcConfigGUIEachTranslatorSettings: '%i կոնֆիգուրացիա'

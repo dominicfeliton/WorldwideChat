@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: İmzala Tercümesi
   wwcUpdaterOutOfDate: WorldwideChat güncel değil. Lütfen %i en son sürüme güncelleyin.
   wwcConfigGUINextPageButton: Sonraki Sayfa
-  wwctbTranslatePageFail: (Bu sayfa çevrilemedi) %i
   wwcConfigInvalidTranslatorSettings: Geçersiz çevirmen ayarları! Lütfen config.yml'nizde
     yalnızca bir çevirmen etkinleştirin.
   wwcConfigGUIQuitButton: Değişiklikleri Kaydet
@@ -178,13 +177,9 @@ Messages:
   wwcInventoryErrorPlayer: GUI'niz ile hata algılandı. Konsola bir günlük gönderildi.
   wwcInventoryError: '%i kullanıcısının GUI ile hata tespit edildi. Lütfen bu sorunu
     geliştiriciye bildirin.'
-  wwcSignTranslationFail: Hedef işaretinizde bir veya daha fazla satır çevrilemiyor.
-  wwcBookTranslationFail: Hedef kitabınızda bir veya daha fazla sayfa çevirilemiyor.
   wwctiOffTarget: Öğe çevirisi devre dışı bırakıldı.
   wwctiOffSender: Ürün çevirisi devre dışı.
   wwcItemTranslateTitleStock: Varsayılan öğe adları çevrilemiyor.
-  wwcItemTranslateLoreFail: Öğe ilmi çevrilemedi.
-  wwcItemTranslateTitleFail: Öğe adı çevrilemedi.
   wwctGUIItemButton: Öğe Çevirisi Değiştir
   wwcItemTranslateTitleDone: Öğe başlığı başarıyla çevrildi.
   wwcGUITempItem: Öğe Göstergesi
@@ -194,7 +189,6 @@ Messages:
   wwcItemTranslateLoreStart: Hedef öğenin ilmi çevriliyor...
   wwcItemTranslateLoreDone: Öğe irfan başarıyla tercüme edildi.
   wwctiOnTarget: '%i için öğe çevirisi etkinleştirildi.'
-  wwcBookTranslateTitleFail: Kitap başlığı çevrilemedi.
   wwcInvalidTranslator: Geçersiz çevirmen ayarları. Lütfen bu eklentiyi kullanmak
     için config.yml veya /wwcc ile düzeltin.
   wwcConfigGUIEachTranslatorSettings: '%i Yapılandırma'

@@ -49,7 +49,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat er úrelt. Vinsamlegast uppfærðu í nýjustu útgáfuna,
     %i.
   wwcConfigGUINextPageButton: Næsta síða
-  wwctbTranslatePageFail: (Mistókst að þýða þessa síðu) %i
   wwcConfigInvalidTranslatorSettings: Ógildar stillingar þýðanda! Vinsamlegast virkjaðu
     aðeins einn þýðanda í config.yml þínum.
   wwcConfigGUIQuitButton: Hætta og vista breytingar
@@ -190,15 +189,9 @@ Messages:
     stjórnborðsins.
   wwcInventoryError: Villa greind með GUI notanda %i. Vinsamlegast tilkynna þetta
     mál til framkvæmdaraðila.
-  wwcSignTranslationFail: Ekki er hægt að þýða eina eða fleiri línur á markmerkinu
-    þínu.
-  wwcBookTranslationFail: Ekki er hægt að þýða eina eða fleiri síður í markbókinni
-    þinni.
   wwctiOffTarget: Item þýðing óvirk fyrir %i.
   wwctiOffSender: Item þýðingar óvirk.
   wwcItemTranslateTitleStock: Ekki er hægt að þýða sjálfgefin atriði nöfn.
-  wwcItemTranslateLoreFail: Mistókst að þýða atriði lore.
-  wwcItemTranslateTitleFail: Mistókst að þýða heiti hlutarins.
   wwctGUIItemButton: Skipta Item Þýðing
   wwcItemTranslateTitleDone: Þýtt atriði titil með góðum árangri.
   wwcGUITempItem: Item Sýna
@@ -209,7 +202,6 @@ Messages:
   wwcItemTranslateLoreStart: Þýða lore af miða atriði...
   wwcItemTranslateLoreDone: Þýtt atriði lore með góðum árangri.
   wwctiOnTarget: Item þýðing virkt fyrir %i.
-  wwcBookTranslateTitleFail: Mistókst að þýða bók titil.
   wwcInvalidTranslator: Ógildar stillingar þýðanda. Vinsamlegast lagaðu þetta í config.yml
     eða með/wwcc til að nota þessa tappi.
   wwcConfigGUIEachTranslatorSettings: '%i Stillingar'

@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldWieChat tarix deyil. Xahiş edirik ən son versiyaya yeniləyin,
     %i.
   wwcConfigGUINextPageButton: Növbəti səhifə
-  wwctbTranslatePageFail: (Bu səhifəni tərcümə etmək mümkün deyil) %i
   wwcConfigInvalidTranslatorSettings: Yanlış tərcüməçi parametrləri! Sizin config.yml
     yalnız bir tərcüməçi aktivləşdirin.
   wwcConfigGUIQuitButton: Çıx və dəyişiklikləri saxla
@@ -180,15 +179,9 @@ Messages:
   wwcConfigCacheInvalid: Tərcüməçi önbellek ölçüsü etibarsız. 10 üçün defaulting...
   wwcInventoryErrorPlayer: Hata GUI ilə aşkar. Konsol bir günlük göndərildi.
   wwcInventoryError: İstifadəçi %i GUI ilə aşkarlanan səhv.
-  wwcSignTranslationFail: Hədəf işarənizdə bir və ya daha çox xətt tərcümə etmək mümkün
-    deyil.
-  wwcBookTranslationFail: Hədəf kitabınızdakı bir və ya daha çox səhifəni tərcümə
-    edə bilmir.
   wwctiOffTarget: Item tərcümə %i üçün əlil.
   wwctiOffSender: Item tərcümə əlil.
   wwcItemTranslateTitleStock: Varsayılan maddə adlarını tərcümə etmək mümkün deyil.
-  wwcItemTranslateLoreFail: Maddə irfan tərcümə edə bilmədi.
-  wwcItemTranslateTitleFail: Maddə adını tərcümə edə bilmədi.
   wwctGUIItemButton: Maddə tərcüməsi keçid
   wwcItemTranslateTitleDone: Müvəffəqiyyətlə tərcümə maddə adı.
   wwcGUITempItem: Item Display
@@ -199,7 +192,6 @@ Messages:
   wwcItemTranslateLoreStart: Hədəf maddənin irfan tərcümə...
   wwcItemTranslateLoreDone: Tərcümə maddə irfan uğurla.
   wwctiOnTarget: Item tərcümə %i üçün effektiv.
-  wwcBookTranslateTitleFail: Kitabın adını tərcümə edə bilmədi.
   wwcInvalidTranslator: Yanlış tərcüməçi parametrləri. Bu plugin istifadə etmək üçün
     config.yml və ya /wwcc ilə düzeltmek edin.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiqurasiya'

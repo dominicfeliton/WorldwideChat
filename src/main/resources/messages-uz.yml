@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat eskirgan. Iltimos, eng soʻnggi versiyasini yangilang,
     %i.
   wwcConfigGUINextPageButton: Keyingi sahifa
-  wwctbTranslatePageFail: (Ushbu sahifani tarjima qilib boʻlmadi) %i
   wwcConfigInvalidTranslatorSettings: Tarjimon sozlamalari noto'g'ri! Iltimos, config.yml-da
     faqat bitta tarjimonni yoqing.
   wwcConfigGUIQuitButton: Chiqish & O'zgarishlarni saqlash
@@ -187,15 +186,9 @@ Messages:
   wwcInventoryErrorPlayer: Xato GUI bilan aniqlandi. Konsolga jurnal yuborildi.
   wwcInventoryError: '%i foydalanuvchi GUI bilan aniqlangan xato. Iltimos, ushbu masalani
     ishlab chiquvchiga xabar bering.'
-  wwcSignTranslationFail: Nishon belgisida bir yoki bir nechta satrlarni tarjima qilib
-    bo'lmadi.
-  wwcBookTranslationFail: Maqsadli kitobingizda bir yoki bir nechta sahifani tarjima
-    qilib bo'lmadi.
   wwctiOffTarget: '%i uchun oʻchirilgan element tarjimasi.'
   wwctiOffSender: Ob'ektni tarjima qilish o'chirib qo'yilgan.
   wwcItemTranslateTitleStock: Standart element nomlarini tarjima qilib bo'lmadi.
-  wwcItemTranslateLoreFail: Elementni tarjima qilish muvaffaqiyatsiz tugadi.
-  wwcItemTranslateTitleFail: Element nomini tarjima qilib bo'lmadi.
   wwctGUIItemButton: Toggle Mahsulot Tarjima
   wwcItemTranslateTitleDone: Tarjima element nomi muvaffaqiyatli.
   wwcGUITempItem: Item ko'rsatish
@@ -206,7 +199,6 @@ Messages:
   wwcItemTranslateLoreStart: Maqsadli elementni tarjima qilish...
   wwcItemTranslateLoreDone: Tarjima element muvaffaqiyatli.
   wwctiOnTarget: '%i uchun mahsulot tarjimasi yoqilgan.'
-  wwcBookTranslateTitleFail: Kitob nomini tarjima bo'lmadi.
   wwcInvalidTranslator: Tarjimon sozlamalari noto'g'ri. Iltimos, ushbu plaginni ishlatish
     uchun config.yml yoki /wwcc bilan tuzating.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguratsiya'

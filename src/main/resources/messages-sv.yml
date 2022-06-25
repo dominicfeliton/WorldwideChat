@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat är föråldrad. Uppdatera till den senaste versionen,
     %i.
   wwcConfigGUINextPageButton: Nästa sida
-  wwctbTranslatePageFail: (Det gick inte att översätta den här sidan) %i
   wwcConfigInvalidTranslatorSettings: Ogiltiga översättarinställningar! Aktivera endast
     en översättare i config.yml.
   wwcConfigGUIQuitButton: Avsluta och spara ändringar
@@ -187,13 +186,9 @@ Messages:
     logg har skickats till konsolen.
   wwcInventoryError: Fel som upptäcktes med användaranvändargränssnittet för användaren
     %i. Rapportera problemet till utvecklaren.
-  wwcSignTranslationFail: Det gick inte att översätta en eller flera rader på måltecknet.
-  wwcBookTranslationFail: Det går inte att översätta en eller flera sidor i målboken.
   wwctiOffTarget: Objektöversättning inaktiverad för %i.
   wwctiOffSender: Översättning av objekt inaktiverad
   wwcItemTranslateTitleStock: Det gick inte att översätta standardobjektnamn.
-  wwcItemTranslateLoreFail: Det gick inte att översätta objektet lore.
-  wwcItemTranslateTitleFail: Det gick inte att översätta objektnamn
   wwctGUIItemButton: Växla översättning av objekt
   wwcItemTranslateTitleDone: Översatt objektets titel framgångsrikt.
   wwcGUITempItem: Visning av objekt
@@ -204,7 +199,6 @@ Messages:
   wwcItemTranslateLoreStart: Översätta lore av målobjekt...
   wwcItemTranslateLoreDone: Översatt objekt lore framgångsrikt.
   wwctiOnTarget: Objektöversättning aktiverad för %i.
-  wwcBookTranslateTitleFail: Misslyckades översätta bokens titel.
   wwcInvalidTranslator: Ogiltiga översättarinställningar. Rätta detta i din config.yml
     eller med /wwcc för att använda detta insticksprogram.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'

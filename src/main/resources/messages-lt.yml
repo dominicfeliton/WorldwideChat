@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat yra pavėlęs. Atnaujinkite į naujausią versiją,
     %i.
   wwcConfigGUINextPageButton: Sekantis puslapis
-  wwctbTranslatePageFail: (Nepavyko išversti šio puslapio) %i
   wwcConfigInvalidTranslatorSettings: Neteisingas vertėjo nustatymai! Prašome įjungti
     tik vieną vertėją savo config.yml.
   wwcConfigGUIQuitButton: Išeiti ir išsaugoti pakeitimus
@@ -185,13 +184,9 @@ Messages:
     konsolę.
   wwcInventoryError: Klaida aptikta naudotojo %i GUI. Prašome pranešti apie šią problemą
     kūrėjui.
-  wwcSignTranslationFail: Nepavyko išversti vienos ar kelių eilučių į tikslinį ženklą.
-  wwcBookTranslationFail: Nepavyko išversti vieno ar kelių puslapių tikslinėje knygoje.
   wwctiOffTarget: Elemento vertimas išjungtas %i.
   wwctiOffSender: Prekė vertimas išjungtas.
   wwcItemTranslateTitleStock: Nepavyko išversti numatytųjų elementų pavadinimų.
-  wwcItemTranslateLoreFail: Nepavyko išversti elemento kraštotyros.
-  wwcItemTranslateTitleFail: Nepavyko išversti elemento pavadinimo.
   wwctGUIItemButton: Perjungti elemento vertimą
   wwcItemTranslateTitleDone: Išverstas elemento pavadinimas sėkmingai.
   wwcGUITempItem: Prekė Ekranas
@@ -202,7 +197,6 @@ Messages:
   wwcItemTranslateLoreStart: Vertimas kraštotyros tikslinės elemento...
   wwcItemTranslateLoreDone: Išversta prekė kraštotyros sėkmingai.
   wwctiOnTarget: Elemento vertimas įjungtas %i.
-  wwcBookTranslateTitleFail: Nepavyko išversti knygos pavadinimo.
   wwcInvalidTranslator: Neteisingas vertėjo nustatymai. Prašome išspręsti šią problemą
     savo config.yml arba su /wwcc naudoti šį įskiepiai.
   wwcConfigGUIEachTranslatorSettings: '%i konfigūracija'

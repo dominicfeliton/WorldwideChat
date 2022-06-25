@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat მოძველებულია. გთხოვთ განაახლოთ უახლესი ვერსია,
     %i.
   wwcConfigGUINextPageButton: შემდეგი გვერდი
-  wwctbTranslatePageFail: (ამ გვერდის თარგმნა ვერ მოხერხდა) %i
   wwcConfigInvalidTranslatorSettings: არასწორი თარჯიმანი პარამეტრები! გთხოვთ, ჩართოთ
     მხოლოდ ერთი თარჯიმანი თქვენს config.yml.
   wwcConfigGUIQuitButton: გასვლისა და ცვლილებების შენახვა
@@ -183,13 +182,9 @@ Messages:
   wwcInventoryErrorPlayer: შეცდომა გამოვლინდა თქვენი GUI. ჟურნალი გაიგზავნა კონსოლში.
   wwcInventoryError: '%i მომხმარებლის GUI- სთან აღმოჩენილი შეცდომა. გთხოვთ შეატყობინოთ
     ამ საკითხს დეველოპერს.'
-  wwcSignTranslationFail: შეუძლებელია თქვენი სამიზნე ნიშანზე ერთი ან მეტი ხაზის თარგმნა.
-  wwcBookTranslationFail: შეუძლებელია ერთი ან მეტი გვერდის თარგმნა სამიზნე წიგნში.
   wwctiOffTarget: საქონელი თარგმანი გამორთულია %i.
   wwctiOffSender: საქონელი თარგმანი გამორთულია.
   wwcItemTranslateTitleStock: შეუძლებელია ნაგულისხმევი პუნქტის სახელების თარგმნა.
-  wwcItemTranslateLoreFail: ვერ თარგმნა საქონელი მხარეთმცოდნეობის.
-  wwcItemTranslateTitleFail: ვერ მოხერხდა ნივთის სახელის თარგმნა.
   wwctGUIItemButton: ნივთის თარგმანის გადართვა
   wwcItemTranslateTitleDone: თარგმნილი პუნქტის სათაური წარმატებით.
   wwcGUITempItem: ნივთის ჩვენება
@@ -200,7 +195,6 @@ Messages:
   wwcItemTranslateLoreStart: თარგმნა მხარეთმცოდნეობის სამიზნე ნივთი...
   wwcItemTranslateLoreDone: თარგმნა საქონელი მხარეთმცოდნეობის წარმატებით.
   wwctiOnTarget: ელემენტის თარგმანი ჩართულია %i.
-  wwcBookTranslateTitleFail: წიგნის სათაურის თარგმნა ვერ მოხერხდა.
   wwcInvalidTranslator: არასწორი თარჯიმანი პარამეტრები. გთხოვთ, დააფიქსიროთ ეს თქვენი
     config.yml ან /wwcc გამოიყენოთ ეს მოდული.
   wwcConfigGUIEachTranslatorSettings: '%i კონფიგურაცია'

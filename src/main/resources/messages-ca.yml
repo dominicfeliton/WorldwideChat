@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat està fora de data. Si us plau, actualitzeu a
     l'última versió, %i.
   wwcConfigGUINextPageButton: Pàgina següent
-  wwctbTranslatePageFail: (No s'ha pogut traduir aquesta pàgina) %i
   wwcConfigInvalidTranslatorSettings: Configuració del traductor no vàlid! Si us plau,
     habiliteu només un traductor a la vostra config.yml.
   wwcConfigGUIQuitButton: Sortir i desar els canvis
@@ -193,13 +192,9 @@ Messages:
     a la consola.
   wwcInventoryError: S'ha detectat un error amb la IGU de l'usuari %i, si us plau,
     informeu d'aquest problema al desenvolupador
-  wwcSignTranslationFail: No es pot traduir una o més línies al signe de destinació.
-  wwcBookTranslationFail: No es pot traduir una o més pàgines al llibre de destinació.
   wwctiOffTarget: Traducció d'elements desactivats per %i.
   wwctiOffSender: Traducció d'elements desactivats.
   wwcItemTranslateTitleStock: No es pot traduir els noms d'element predeterminats.
-  wwcItemTranslateLoreFail: No s'ha pogut traduir l'element lore.
-  wwcItemTranslateTitleFail: No s'ha pogut traduir el nom de l'element.
   wwctGUIItemButton: Commuta la traducció de l'element
   wwcItemTranslateTitleDone: Títol de l'article traduït amb èxit.
   wwcGUITempItem: Pantalla de l'article
@@ -210,7 +205,6 @@ Messages:
   wwcItemTranslateLoreStart: Traduint la tradició de l'objecte objectiu...
   wwcItemTranslateLoreDone: Lore article traduït amb èxit.
   wwctiOnTarget: La traducció d'elements activada per a %i.
-  wwcBookTranslateTitleFail: No s'ha pogut traduir el títol del llibre.
   wwcInvalidTranslator: Configuració del traductor no vàlid. Si us plau, corregiu
     això a la vostra config.yml o amb /wwcc per utilitzar aquest connector.
   wwcConfigGUIEachTranslatorSettings: '%i Configuració'

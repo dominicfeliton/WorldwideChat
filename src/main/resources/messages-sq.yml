@@ -49,7 +49,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat është i vjetëruar. Ju lutemi përditësoni versionin
     më të fundit, %i.
   wwcConfigGUINextPageButton: Faqja Tjetër
-  wwctbTranslatePageFail: (Dështoi në përkthimin e kësaj faqeje) %i
   wwcConfigInvalidTranslatorSettings: Cilësimet e pavlefshme të përkthyesit Ju lutemi
     aktivizoni vetëm një përkthyes në config.yml tuaj.
   wwcConfigGUIQuitButton: Dalja & Ruaj Ndryshimet
@@ -195,15 +194,9 @@ Messages:
     në tastierë.
   wwcInventoryError: Gabim u zbulua me GUI të përdoruesit %i. Ju lutemi, raportoni
     këtë problem te zhvilluesi.
-  wwcSignTranslationFail: Nuk mund të përktheni një ose më shumë rreshta në shenjën
-    tuaj të synuar.
-  wwcBookTranslationFail: Nuk mund të përkthehet një ose më shumë faqe në librin tuaj
-    të synuar.
   wwctiOffTarget: Përkthimi i artikullit çaktivizohet për %i.
   wwctiOffSender: Përkthimi artikull i paaftë
   wwcItemTranslateTitleStock: E pamundur për të përkthyer emrat e artikullit
-  wwcItemTranslateLoreFail: Dështoi për të përkthyer artikull dije.
-  wwcItemTranslateTitleFail: Dështoi në përkthimin e emrit të sendit
   wwctGUIItemButton: Përkthimi i artikullit Toggle
   wwcItemTranslateTitleDone: Titulli i përkthyer artikulli me sukses
   wwcGUITempItem: Shfaqja e artikullit
@@ -214,7 +207,6 @@ Messages:
   wwcItemTranslateLoreStart: Përkthimi dije e artikullit të synuar...
   wwcItemTranslateLoreDone: Përkthyer artikull dije me sukses.
   wwctiOnTarget: Përkthimi i artikullit aktivizohet për %i.
-  wwcBookTranslateTitleFail: Dështoi të përkthehet titulli i librit
   wwcInvalidTranslator: Cilësimet e pavlefshme të përkthyesit Ju lutemi rregulloni
     këtë në config.yml ose me /wwcc për të përdorur këtë shtojcë.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurimi'

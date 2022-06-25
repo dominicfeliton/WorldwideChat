@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: वर्ल्डवाइडचैट पुराना है। कृपया नवीनतम संस्करण, %i में अद्यतन
     करें।
   wwcConfigGUINextPageButton: अगला पृष्ठ
-  wwctbTranslatePageFail: (इस पृष्ठ का अनुवाद करने में विफल) %i
   wwcConfigInvalidTranslatorSettings: अवैध अनुवादक सेटिंग्स! कृपया अपने config.yml
     में केवल एक अनुवादक सक्षम करें।
   wwcConfigGUIQuitButton: परिवर्तन से बाहर निकलें (S)
@@ -184,15 +183,9 @@ Messages:
     है।
   wwcInventoryError: उपयोक्ता %i के GUI के साथ त्रुटि मिली. कृपया इस समस्या को डेवलपर
     को रिपोर्ट करें।
-  wwcSignTranslationFail: अपने लक्ष्य चिह्न पर एक या अधिक लाइनों का अनुवाद करने में
-    असमर्थ।
-  wwcBookTranslationFail: अपनी लक्ष्य पुस्तक में एक या अधिक पृष्ठों का अनुवाद करने
-    में असमर्थ।
   wwctiOffTarget: आइटम अनुवाद %i के लिए अक्षम है।
   wwctiOffSender: आइटम अनुवाद अक्षम है।
   wwcItemTranslateTitleStock: डिफ़ॉल्ट आइटम नामों का अनुवाद करने में असमर्थ।
-  wwcItemTranslateLoreFail: आइटम विद्या का अनुवाद करने में विफल।
-  wwcItemTranslateTitleFail: आइटम नाम का अनुवाद करने में विफल।
   wwctGUIItemButton: आइटम अनुवाद टॉगल करें
   wwcItemTranslateTitleDone: अनुवादित आइटम शीर्षक सफलतापूर्वक।
   wwcGUITempItem: आइटम डिस्प्ले
@@ -203,7 +196,6 @@ Messages:
   wwcItemTranslateLoreStart: लक्ष्य आइटम की विद्या का अनुवाद करना...
   wwcItemTranslateLoreDone: अनुवादित आइटम विद्या सफलतापूर्वक।
   wwctiOnTarget: आइटम अनुवाद %i के लिए सक्षम है।
-  wwcBookTranslateTitleFail: पुस्तक शीर्षक का अनुवाद करने में विफल।
   wwcInvalidTranslator: अमान्य अनुवादक सेटिंग्स। कृपया इस प्लगइन का उपयोग करने के
     लिए इसे अपने config.yml में या /wwcc के साथ ठीक करें।
   wwcConfigGUIEachTranslatorSettings: '%i कॉन्फ़िगरेशन'

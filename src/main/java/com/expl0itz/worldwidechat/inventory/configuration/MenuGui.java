@@ -48,7 +48,7 @@ public class MenuGui implements InventoryProvider {
 		CONFIG_GUI_TAGS.CHAT_SET.smartInv = chatSet.genSmartInv("chatSettingsMenu", "wwcConfigGUIChatSettings");
 		
 		MenuGui transSet = new MenuGui();
-		CONFIG_GUI_TAGS.TRANS_SET.smartInv = transSet.genSmartInv("translatorSettingsMenu", "wwcConfigGUITranslatorSettings");
+		CONFIG_GUI_TAGS.TRANS_SET.smartInv = transSet.genSmartInv("translatorSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUITranslatorSettings");
 		
 		MenuGui transWatsonSet = new MenuGui();
 		CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv = transWatsonSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Watson"});
@@ -122,13 +122,13 @@ public class MenuGui implements InventoryProvider {
 		transSet.add(new SubMenuElement(1, 1, WorldwideChat.instance.getTranslatorName().equals("Watson"), "wwcConfigGUIWatsonButton", CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv));
 	    transSet.add(new SubMenuElement(1, 2, WorldwideChat.instance.getTranslatorName().equals("Google Translate"), "wwcConfigGUIGoogleTranslateButton", CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv));
 	    transSet.add(new SubMenuElement(1, 3, WorldwideChat.instance.getTranslatorName().equals("Amazon Translate"), "wwcConfigGUIAmazonTranslateButton", CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv));
-	    transSet.add(new ConvoElement(1, 4, "wwcConfigGUITranslatorCacheButton", XMaterial.NAME_TAG,
+	    transSet.add(new ConvoElement(1, 5, "wwcConfigGUITranslatorCacheButton", XMaterial.NAME_TAG,
 	    		new TranslatorSettingsConvos.TranslationCache()));
-	    transSet.add(new ConvoElement(1, 5, "wwcConfigGUIGlobalRateLimitButton", XMaterial.NAME_TAG,
+	    transSet.add(new ConvoElement(1, 6, "wwcConfigGUIGlobalRateLimitButton", XMaterial.NAME_TAG,
 	    		new TranslatorSettingsConvos.GlobalRateLimit()));
-	    transSet.add(new ConvoElement(1, 6, "wwcConfigGUIErrorLimitButton", XMaterial.NAME_TAG,
+	    transSet.add(new ConvoElement(1, 7, "wwcConfigGUIErrorLimitButton", XMaterial.NAME_TAG,
 	    		new TranslatorSettingsConvos.ErrorLimit()));
-	    transSet.add(new ConvoElement(1, 7, "wwcConfigGUICharacterLimitButton", XMaterial.NAME_TAG,
+	    transSet.add(new ConvoElement(2, 1, "wwcConfigGUICharacterLimitButton", XMaterial.NAME_TAG,
 	    		new TranslatorSettingsConvos.CharacterLimit()));
 	    transSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
 		transSet.add(new CommonElement(2, 4, "Quit"));
@@ -166,6 +166,9 @@ public class MenuGui implements InventoryProvider {
 		transAmazonSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		transAmazonSet.add(new CommonElement(2, 4, "Quit"));
 		transAmazonSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
+		
+		// Libre Translator
+		//TODO
 	}
 	
 	static abstract class Element {

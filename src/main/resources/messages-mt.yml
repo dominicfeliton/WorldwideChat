@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat huwa skadut. Jekk jogħġbok aġġorna l-aħħar verżjoni,
     %i.
   wwcConfigGUINextPageButton: Paġna li jmiss
-  wwctbTranslatePageFail: (Naqas milli tittraduċi din il-paġna) %i
   wwcConfigInvalidTranslatorSettings: Settings traduttur invalidi! Jekk jogħġbok ħalli
     traduttur wieħed biss fil-konfig.yml tiegħek.
   wwcConfigGUIQuitButton: Ħruġ & Save Bidliet
@@ -185,15 +184,9 @@ Messages:
   wwcInventoryErrorPlayer: Żball skopert bil-GUI tiegħek. Ġie mibgħut log lill-console.
   wwcInventoryError: Żball skoperti bil GUI ta 'utent %i. Jekk jogħġbok irrapporta
     din il-kwistjoni lill-iżviluppatur.
-  wwcSignTranslationFail: Kapaċi tittraduċi linja waħda jew aktar fuq is-sinjal fil-mira
-    tiegħek.
-  wwcBookTranslationFail: Kapaċi tittraduċi paġna waħda jew aktar fil-ktieb fil-mira
-    tiegħek.
   wwctiOffTarget: Punt traduzzjoni b'diżabilità għal %i.
   wwctiOffSender: Traduzzjoni oġġett b'diżabilità.
   wwcItemTranslateTitleStock: Ma jistgħux jittraduċu ismijiet ta 'entrati default.
-  wwcItemTranslateLoreFail: Naqas milli tittraduċi oġġett Lore.
-  wwcItemTranslateTitleFail: Naqas milli tittraduċi l-isem tal-oġġett.
   wwctGUIItemButton: Toggle Punt Traduzzjoni
   wwcItemTranslateTitleDone: Titlu oġġett tradott b'suċċess.
   wwcGUITempItem: Punt Display
@@ -204,7 +197,6 @@ Messages:
   wwcItemTranslateLoreStart: Traduzzjoni Lore ta 'oġġett fil-mira...
   wwcItemTranslateLoreDone: Oġġett tradott Lore b'suċċess.
   wwctiOnTarget: traduzzjoni Punt ppermettiet għal %i.
-  wwcBookTranslateTitleFail: Naqas milli jittraduċi titolu ktieb.
   wwcInvalidTranslator: Settings tat-traduttur invalidi. Jekk jogħġbok jiffissaw dan
     fil config.yml tiegħek jew ma '/wwcc għall-użu dan plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurazzjoni'

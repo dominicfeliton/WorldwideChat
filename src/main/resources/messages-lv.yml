@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat ir novecojis. Lūdzu, atjauniniet uz jaunāko versiju,
     %i.
   wwcConfigGUINextPageButton: Nākamā lapa
-  wwctbTranslatePageFail: (Neizdevās tulkot šo lapu) %i
   wwcConfigInvalidTranslatorSettings: Nederīgi tulkotāja iestatījumi! Lūdzu, iespējojiet
     tikai vienu tulkotāju savā config.yml.
   wwcConfigGUIQuitButton: Iziet no & Saglabāt izmaiņas
@@ -187,13 +186,9 @@ Messages:
   wwcInventoryErrorPlayer: Kļūda konstatēta ar jūsu GUI. Uz konsoli ir nosūtīts žurnāls.
   wwcInventoryError: Kļūda konstatēta ar lietotāja GUI ( %i). Lūdzu ziņojiet par šo
     problēmu izstrādātājam.
-  wwcSignTranslationFail: Nespēj tulkot vienu vai vairākas rindiņas jūsu mērķa zīmi.
-  wwcBookTranslationFail: Nespēj tulkot vienu vai vairākas lappuses mērķa grāmatā.
   wwctiOffTarget: Vienuma tulkošana atspējota uz %i.
   wwctiOffSender: Vienuma tulkojums atspējots.
   wwcItemTranslateTitleStock: Nespēj tulkot noklusējuma vienumu nosaukumus.
-  wwcItemTranslateLoreFail: Neizdevās tulkot vienumu mācība.
-  wwcItemTranslateTitleFail: Neizdevās tulkot vienuma nosaukumu.
   wwctGUIItemButton: Pārslēgt vienuma tulkošanu
   wwcItemTranslateTitleDone: Tulkots vienuma nosaukums veiksmīgi.
   wwcGUITempItem: Vienuma displejs
@@ -204,7 +199,6 @@ Messages:
   wwcItemTranslateLoreStart: Tulkojot mācība mērķa posteni...
   wwcItemTranslateLoreDone: Tulkots vienums mācījās veiksmīgi.
   wwctiOnTarget: Vienuma tulkošana iespējota uz %i.
-  wwcBookTranslateTitleFail: Neizdevās tulkot grāmatas nosaukumu.
   wwcInvalidTranslator: Nederīgi tulkotāja iestatījumi. Lūdzu, salabojiet to savā
     config.yml vai ar /wwcc, lai izmantotu šo spraudni.
   wwcConfigGUIEachTranslatorSettings: '%i konfigurācija'

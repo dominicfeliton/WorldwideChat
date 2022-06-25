@@ -44,7 +44,6 @@ Messages:
   wwctGUISignButton: Toggle белгісі аударма
   wwcUpdaterOutOfDate: WorldWidechat күннен тыс. Соңғы нұсқаға жаңартыңыз, %i.
   wwcConfigGUINextPageButton: Келесі бет
-  wwctbTranslatePageFail: (Бұл бетті аудара алмады) %i
   wwcConfigInvalidTranslatorSettings: Жарамсыз аудармашы параметрлері! Сіздің config.yml
     ішіндегі бір ғана аудармашыны қосыңыз.
   wwcConfigGUIQuitButton: Шығу & Өзгерістерді сақтау
@@ -178,15 +177,9 @@ Messages:
   wwcInventoryErrorPlayer: GUI-мен анықталған қате. Консольге журнал жіберілді.
   wwcInventoryError: '%i пайдаланушысының GUI көмегімен анықталған қате, бұл мәселені
     әзірлеушіге хабарлаңыз.'
-  wwcSignTranslationFail: Мақсатты белгіңізде бір немесе бірнеше жолдарды аудару мүмкін
-    емес.
-  wwcBookTranslationFail: Сіздің мақсатты кітабында бір немесе бірнеше беттерді аудару
-    мүмкін емес.
   wwctiOffTarget: Элемент аудармасы %i өшірілген.
   wwctiOffSender: Элемент аударма өшірілген.
   wwcItemTranslateTitleStock: Әдепкі элемент атауларын аудару мүмкін емес.
-  wwcItemTranslateLoreFail: Элемент тану аудару алмады.
-  wwcItemTranslateTitleFail: Элемент атауын аудара алмады.
   wwctGUIItemButton: Toggle тармақ Аударма
   wwcItemTranslateTitleDone: сәтті аударылған элемент атауы.
   wwcGUITempItem: Дисплей элемент
@@ -197,7 +190,6 @@ Messages:
   wwcItemTranslateLoreStart: Мақсатты элементтің аудармасы...
   wwcItemTranslateLoreDone: Аударылған тармақ сәтті.
   wwctiOnTarget: Элемент аудармасы %i үшін қосылған.
-  wwcBookTranslateTitleFail: Кітап атауын аудара алмады.
   wwcInvalidTranslator: Жарамсыз аудармашы параметрлері. Бұл плагинді пайдалану үшін
     config.yml немесе /wwcc көмегімен түзетіңіз.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурация'

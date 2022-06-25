@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat از تاریخ گذشته است. لطفا به آخرین نسخه به‌روزرسانی
     کنید، %i.
   wwcConfigGUINextPageButton: صفحه بعدی
-  wwctbTranslatePageFail: (ترجمه این صفحه شکست خورد) %i
   wwcConfigInvalidTranslatorSettings: تنظیمات مترجم نامعتبر! لطفا تنها یک مترجم را
     در config.yml خود فعال کنید.
   wwcConfigGUIQuitButton: خروج و ذخیره تغییرات
@@ -180,13 +179,9 @@ Messages:
     به سیستم به کنسول ارسال شده است.
   wwcInventoryError: خطا تشخیص داده شده با رابط کاربری گرافیکی از %i لطفا این موضوع
     را به توسعه دهنده گزارش دهید.
-  wwcSignTranslationFail: قادر به ترجمه یک یا چند خط روی علامت هدف شما نیست.
-  wwcBookTranslationFail: قادر به ترجمه یک یا چند صفحه در کتاب مقصد شما نیست.
   wwctiOffTarget: ترجمه مورد برای %i غیرفعال شد.
   wwctiOffSender: ترجمه مورد غیر فعال شد.
   wwcItemTranslateTitleStock: قادر به ترجمه نام آیتم پیش فرض نیست.
-  wwcItemTranslateLoreFail: ترجمه مورد افسانه هاو روایات قومی شکست خورد.
-  wwcItemTranslateTitleFail: ترجمه نام مورد شکست خورد.
   wwctGUIItemButton: ضامن ترجمه مورد
   wwcItemTranslateTitleDone: عنوان آیتم ترجمه شده با موفقیت.
   wwcGUITempItem: نمایش آیتم
@@ -197,7 +192,6 @@ Messages:
   wwcItemTranslateLoreStart: ترجمه افسانه ای از آیتم های هدف...
   wwcItemTranslateLoreDone: ترجمه افسانه هاو روایات قومی مورد موفقیت.
   wwctiOnTarget: ترجمه مورد برای %i فعال شد.
-  wwcBookTranslateTitleFail: ترجمه عنوان کتاب شکست خورد.
   wwcInvalidTranslator: تنظیمات مترجم نامعتبر. لطفا این را در config.yml یا با /wcc
     خود برای استفاده از این افزونه تعمیر کنید.
   wwcConfigGUIEachTranslatorSettings: '%i پیکربندی'

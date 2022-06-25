@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat ni nje ya tarehe. Tafadhali sasisha toleo jipya,
     %i.
   wwcConfigGUINextPageButton: Ukurasa unaofuata
-  wwctbTranslatePageFail: (Imeshindwa kutafsiri ukurasa huu) %i
   wwcConfigInvalidTranslatorSettings: Mipangilio batili translator! Tafadhali kuwawezesha
     translator moja tu katika config.yml yako.
   wwcConfigGUIQuitButton: Toka na Hifadhi Mabadiliko
@@ -180,15 +179,9 @@ Messages:
   wwcInventoryErrorPlayer: Kosa wanaona na GUI yako. Logi imetumwa kwenye console.
   wwcInventoryError: Hitilafu imegunduliwa na GUI ya mtumiaji %i. Tafadhali ripoti
     suala hili kwa
-  wwcSignTranslationFail: Haiwezi kutafsiri mistari moja au zaidi kwenye ishara yako
-    ya lengo.
-  wwcBookTranslationFail: Haiwezi kutafsiri kurasa moja au zaidi katika kitabu chako
-    cha lengo.
   wwctiOffTarget: Item tafsiri walemavu kwa %i.
   wwctiOffSender: Bidhaa tafsiri walemavu.
   wwcItemTranslateTitleStock: Haiwezi kutafsiri majina ya bidhaa default.
-  wwcItemTranslateLoreFail: Imeshindwa kutafsiri bidhaa lore.
-  wwcItemTranslateTitleFail: Imeshindwa kutafsiri jina la bidhaa.
   wwctGUIItemButton: Badilisha tafsiri ya kipengee
   wwcItemTranslateTitleDone: Kutafsiriwa jina bidhaa mafanikio.
   wwcGUITempItem: Onyesha kipengee
@@ -199,7 +192,6 @@ Messages:
   wwcItemTranslateLoreStart: Kutafsiri lore ya bidhaa lengo...
   wwcItemTranslateLoreDone: Tafsiri bidhaa lore mafanikio.
   wwctiOnTarget: Tafsiri ya kipengee imewezeshwa kwa %i.
-  wwcBookTranslateTitleFail: Imeshindwa kutafsiri kichwa cha kitabu.
   wwcInvalidTranslator: Mipangilio ya msanii batili. Tafadhali tengeneza hii katika
     config.yml yako au na/wwcc kutumia Plugin hii.
   wwcConfigGUIEachTranslatorSettings: '%i Usanidi'

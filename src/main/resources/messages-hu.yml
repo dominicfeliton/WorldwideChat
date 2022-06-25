@@ -47,7 +47,6 @@ Messages:
   wwctGUISignButton: Jelfordítás be- és bekapcsolása
   wwcUpdaterOutOfDate: 'A WorldwideChat elavult. Frissítsen a legújabb verzióra: %i.'
   wwcConfigGUINextPageButton: Következő oldal
-  wwctbTranslatePageFail: (Nem sikerült lefordítani ezt az oldalt) %i
   wwcConfigInvalidTranslatorSettings: Érvénytelen fordítói beállítások! Kérjük, csak
     egy fordítót engedélyezzen a config.yml fájlban.
   wwcConfigGUIQuitButton: Kilépés és a módosítások mentése
@@ -189,13 +188,9 @@ Messages:
   wwcInventoryErrorPlayer: Hiba észlelt a GUI. A rendszer egy naplót küldött a konzolnak.
   wwcInventoryError: Hiba történt a (z) %i felhasználó GUI-jával. Jelentse ezt a problémát
     a fejlesztőnek.
-  wwcSignTranslationFail: Nem lehet lefordítani egy vagy több sort a céltáblán.
-  wwcBookTranslationFail: Nem lehet lefordítani egy vagy több oldalt a célkönyvben.
   wwctiOffTarget: 'Elem fordítása le van tiltva: %i'
   wwctiOffSender: Elem fordítása letiltva.
   wwcItemTranslateTitleStock: Nem lehet lefordítani az alapértelmezett elemneveket.
-  wwcItemTranslateLoreFail: Nem sikerült lefordítani az elem lore.
-  wwcItemTranslateTitleFail: Nem sikerült lefordítani az elem nevét.
   wwctGUIItemButton: Elemfordítás be-
   wwcItemTranslateTitleDone: A lefordított tétel címe sikeresen.
   wwcGUITempItem: Elem megjelenítése
@@ -206,7 +201,6 @@ Messages:
   wwcItemTranslateLoreStart: A céltárgy lefordítása...
   wwcItemTranslateLoreDone: Fordított tétel Lore sikeresen.
   wwctiOnTarget: Elemfordítás engedélyezve a %i számára.
-  wwcBookTranslateTitleFail: Nem sikerült lefordítani a könyv címét.
   wwcInvalidTranslator: Érvénytelen fordítói beállítások. Kérjük, javítsa ki ezt a
     config.yml vagy /wwcc segítségével a plugin használatához.
   wwcConfigGUIEachTranslatorSettings: '%i konfiguráció'

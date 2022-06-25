@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat je zastario. Molimo ažurirajte na najnoviju verziju,
     %i.
   wwcConfigGUINextPageButton: Sljedeća stranica
-  wwctbTranslatePageFail: (Nisam uspio prevesti ovu stranicu) %i
   wwcConfigInvalidTranslatorSettings: Neispravne postavke prevoditelja! Molimo omogućite
     samo jedan prevoditelj u svom config.yml.
   wwcConfigGUIQuitButton: Izlaz i spremanje promjena
@@ -184,14 +183,9 @@ Messages:
   wwcInventoryErrorPlayer: Greška otkrivena s GUI-jem. Dnevnik je poslan na konzolu.
   wwcInventoryError: Greška otkrivena s GUI-jem korisnika %i. Prijavite ovaj problem
     razvojnom programeru.
-  wwcSignTranslationFail: Nije moguće prevoditi jednu ili više redaka na ciljnom znaku.
-  wwcBookTranslationFail: Nije moguće prevoditi jednu ili više stranica u ciljnoj
-    knjizi.
   wwctiOffTarget: Prijevod stavke onemogućen za %i.
   wwctiOffSender: Prijevod stavke onemogućen.
   wwcItemTranslateTitleStock: Nije moguće prevoditi zadane nazive stavki.
-  wwcItemTranslateLoreFail: Neuspjelo prevođenje predmeta.
-  wwcItemTranslateTitleFail: Neuspjelo prevođenje naziva stavke.
   wwctGUIItemButton: Uključi prijevod stavke
   wwcItemTranslateTitleDone: Uspješno prevedeno naslov stavke.
   wwcGUITempItem: Prikaz stavke
@@ -202,7 +196,6 @@ Messages:
   wwcItemTranslateLoreStart: Prevođenje predaja ciljne stavke...
   wwcItemTranslateLoreDone: Prevedena stavka predaja uspješno.
   wwctiOnTarget: Prijevod stavke omogućen za %i.
-  wwcBookTranslateTitleFail: Neuspjelo prevođenje naslova knjige.
   wwcInvalidTranslator: Neispravne postavke prevoditelja. Molimo vas da to popravite
     u svom config.yml ili sa /wwcc da biste koristili ovaj dodatak.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguracija'

@@ -81,10 +81,8 @@ Messages:
   wwctGUIStopButton: ਅਨੁਵਾਦ ਕਰਨਾ ਬੰਦ ਕਰੋ
   wwcEntityTranslateStart: ਟੀਚੇ ਦੀ ਇਕਾਈ ਦਾ ਅਨੁਵਾਦ...
   wwcUpdaterFutureDate: ਵਰਲਡਵਿਡਚੈਟ ਦੀ ਇਸ ਉਦਾਹਰਣ ਦਾ ਨਵੀਨਤਮ ਜਨਤਕ ਨਾਲੋਂ ਵੱਡਾ ਸੰਸਕਰਣ ਹੈ.
-  wwcItemTranslateLoreFail: ਇਕਾਈ ਨੂੰ lore ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ.
   wwcConfigGUIGoogleTranslateAPIKeyButton: ਗੂਗਲ ਅਨੁਵਾਦ API ਕੁੰਜੀ ਬਦਲੋ
   wwcConfigGUIGlobalRateLimitButton: ਗਲੋਬਲ ਰੇਟ ਸੀਮਾ ਬਦਲੋ
-  wwcItemTranslateTitleFail: ਇਕਾਈ ਨੂੰ ਨਾਮ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਫੇਲ੍ਹ ਹੈ.
   wwctsOnTarget: '%i ਲਈ ਸਿੰਨ ਅਨੁਵਾਦ ਯੋਗ ਹੈ।'
   wwcConfigCacheDisabled: ਅਨੁਵਾਦਕ ਕੈਸ਼ ਅਯੋਗ.
   wwcConfigConversationWatsonURLInput: ਮੌਜੂਦਾ URL %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਵਾਟਸਨ ਲਈ ਇੱਕ ਸਰਵਿਸ
@@ -129,8 +127,6 @@ Messages:
   wwctrlRateLimitSetTarget: '%i ਤੋਂ %o ਸਕਿੰਟ ਦੀ ਦਰ ਸੀਮਾ ਨਿਰਧਾਰਤ ਕਰੋ.'
   wwcConfigGUIMessagesOverrideCustomLabel: ਨਵਾਂ ਸੁਨੇਹਾ
   wwcGUITempItem: ਆਈਟਮ ਡਿਸਪਲੇਅ
-  wwcBookTranslationFail: ਆਪਣੇ ਟੀਚੇ ਦੀ ਕਿਤਾਬ ਵਿੱਚ ਇੱਕ ਜ ਹੋਰ ਸਫ਼ੇ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ
-    ਅਸਮਰੱਥ ਹੈ.
   wwcConfigConversationGoogleTranslateAPIKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ
     Google ਅਨੁਵਾਦ ਲਈ API ਕੁੰਜੀ ਇੰਪੁੱਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
   wwcConfigConversationRateLimitInput: ਅਨੁਵਾਦ ਪ੍ਰਤੀ ਮੌਜੂਦਾ ਗਲੋਬਲ ਦਰ ਸੀਮਾ %i ਸਕਿੰਟ
@@ -165,8 +161,6 @@ Messages:
   wwcgAutoTranslateStart: ਹੁਣ ਗਲੋਬਲ ਚੈਟ ਦਾ %o ਵਿੱਚ ਅਨੁਵਾਦ ਕਰ ਰਿਹਾ ਹੈ।
   wwcConfigGUIAmazonTranslateAccessKeyButton: ਐਮਾਜ਼ਾਨ ਐਕਸੈਸ ਕੁੰਜੀ ਬਦਲੋ
   wwcrFail: ਵਰਲਡਵਿਡਚੈਟ ਨੂੰ ਮੁੜ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ.
-  wwcSignTranslationFail: ਆਪਣੇ ਟੀਚੇ ਦਾ ਨਿਸ਼ਾਨ 'ਤੇ ਇੱਕ ਜ ਹੋਰ ਲਾਈਨ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ
-    ਅਸਮਰੱਥ ਹੈ.
   wwcUpdaterFailedGeneric: WorldwideChat ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ.
   wwcConfigGUIChatMessagesOverrideSettings: ਮੂਲ ਸੁਨੇਹੇ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰੋ
   wwctGUIMainMenuGlobal: ਗਲੋਬਲ ਅਨੁਵਾਦ ਮੇਨੂ
@@ -216,7 +210,6 @@ Messages:
     ਤੁਸੀਂ /wwcc ਵਿੱਚ ਲਾਲ ਰੁਕਾਵਟ ਤੇ ਕਲਿਕ ਨਹੀਂ ਕਰਦੇ.
   wwcBookTranslateTitleSuccess: 'ਅਨੁਵਾਦਿਤ ਕਿਤਾਬ ਦਾ ਸਿਰਲੇਖ: %i'
   wwcConfigGUINextPageButton: ਅਗਲੇ ਸਫ਼ੇ
-  wwctbTranslatePageFail: (ਇਸ ਸਫ਼ੇ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਅਸਫਲ) %i
   wwctiOnSender: ਆਈਟਮ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਇਸ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਆਪਣੇ ਮੁੱਖ ਹੱਥ ਵਿੱਚ ਇੱਕ ਆਈਟਮ
     ਨਾਲ ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ!
   wwcConfigGUIMessagesOverrideOriginalLabel: ਅਸਲੀ ਸੁਨੇਹਾ
@@ -252,7 +245,6 @@ Messages:
   wwctsOnSender: ਸਾਈਨ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਇਸ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਸਾਈਨ 'ਤੇ ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ!
   wwctGUIAutoDetectButton: ਆਟੋ-ਖੋਜ ਸਰੋਤ ਭਾਸ਼ਾ
   wwcConfigConversationDebugModeSuccess: ਡੀਬੱਗ ਮੋਡ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲ ਦਿੱਤਾ ਗਿਆ ਹੈ।
-  wwcBookTranslateTitleFail: ਕਿਤਾਬ ਦੇ ਸਿਰਲੇਖ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
   wwcConfigGUIChatMessagesOverrideDeleteButton: ਓਵਰਰਾਈਡ ਮਿਟਾਓ
   wwcNoConsole: ਇਹ ਕਮਾਂਡ ਸਿਰਫ ਇੱਕ ਖਿਡਾਰੀ ਦੁਆਰਾ ਚਲਾਇਆ ਜਾ ਸਕਦਾ ਹੈ.
   wwcConfigConversationTranslationCacheSuccess: ਅਨੁਵਾਦ ਕੈਸ਼ ਸੀਮਾ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ

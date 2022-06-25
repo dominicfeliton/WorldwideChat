@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat is verouderd. Werk bij naar de nieuwste versie,
     %i.
   wwcConfigGUINextPageButton: Volgende pagina
-  wwctbTranslatePageFail: (Vertalen van deze pagina is mislukt) %i
   wwcConfigInvalidTranslatorSettings: Ongeldige instellingen voor vertalers! Schakel
     slechts één vertaler in uw config.yml.
   wwcConfigGUIQuitButton: Wijzigingen afsluiten en opslaan
@@ -188,13 +187,9 @@ Messages:
     console verzonden.
   wwcInventoryError: Fout gedetecteerd met GUI van gebruiker %i. Meld dit probleem
     aan de ontwikkelaar.
-  wwcSignTranslationFail: Kan geen of meer regels op je doelbord vertalen.
-  wwcBookTranslationFail: Kan geen of meer pagina's in je doelboek vertalen.
   wwctiOffTarget: Itemvertaling is uitgeschakeld voor %i.
   wwctiOffSender: Itemvertaling is uitgeschakeld.
   wwcItemTranslateTitleStock: Standaardnamen van items kunnen niet worden vertaald.
-  wwcItemTranslateLoreFail: Kan iteminformatie niet vertalen.
-  wwcItemTranslateTitleFail: Kan de naam van het item niet vertalen.
   wwctGUIItemButton: Vertalen van item uitschakelen
   wwcItemTranslateTitleDone: De titel van een vertaald item succesvol.
   wwcGUITempItem: Weergave van item
@@ -205,7 +200,6 @@ Messages:
   wwcItemTranslateLoreStart: Meer over doelitem vertalen...
   wwcItemTranslateLoreDone: Vertaald item lore succesvol.
   wwctiOnTarget: Itemvertaling ingeschakeld voor %i.
-  wwcBookTranslateTitleFail: Kan de boektitel niet vertalen.
   wwcInvalidTranslator: Ongeldige instellingen voor vertalers. Gelieve dit op te lossen
     in je config.yml of met /wwcc om deze plugin te gebruiken.
   wwcConfigGUIEachTranslatorSettings: '%i Configuratie'

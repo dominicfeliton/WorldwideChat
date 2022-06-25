@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: ప్రపంచవ్యాప్తచాట్ తేదీ ముగిసింది. దయచేసి తాజా వర్షన్, %i కు
     నవీకరించండి.
   wwcConfigGUINextPageButton: తదుపరి పేజీ
-  wwctbTranslatePageFail: (ఈ పేజీని అనువదించడంలో విఫలమైంది) %i
   wwcConfigInvalidTranslatorSettings: చెల్లని అనువాదకుడు సెట్టింగులు! దయచేసి మీ config.yml
     లో ఒక అనువాదకుడిని మాత్రమే ప్రారంభించండి.
   wwcConfigGUIQuitButton: నిష్క్రమించు & మార్పులు సేవ్
@@ -183,15 +182,9 @@ Messages:
   wwcInventoryErrorPlayer: లోపం మీ GUI తో కనుగొనబడింది. ఒక లాగ్ కన్సోల్కు పంపబడింది.
   wwcInventoryError: యూజర్ %i యొక్క GUI తో కనుగొనబడిన దోషం దయచేసి ఈ సమస్యను డెవలపర్కు
     నివేదించండి.
-  wwcSignTranslationFail: మీ లక్ష్య చిహ్నంపై ఒకటి లేదా అంతకంటే ఎక్కువ పంక్తులను అనువదించడం
-    సాధ్యం కాదు.
-  wwcBookTranslationFail: మీ లక్ష్య పుస్తకంలో ఒకటి లేదా అంతకంటే ఎక్కువ పేజీలను అనువదించడం
-    సాధ్యం కాదు.
   wwctiOffTarget: అంశం అనువాదం %i కొరకు నిలిపివేయబడింది.
   wwctiOffSender: అంశం అనువాదం డిసేబుల్.
   wwcItemTranslateTitleStock: డిఫాల్ట్ అంశం పేర్లు అనువదించడానికి సాధ్యం.
-  wwcItemTranslateLoreFail: అంశం లోర్ అనువదించడానికి విఫలమైంది.
-  wwcItemTranslateTitleFail: అంశం పేరు అనువదించడానికి విఫలమైంది.
   wwctGUIItemButton: టోగుల్ అంశం అనువాదం
   wwcItemTranslateTitleDone: అంశం శీర్షిక విజయవంతంగా అనువదించబడింది.
   wwcGUITempItem: అంశం డిస్ప్లే
@@ -202,7 +195,6 @@ Messages:
   wwcItemTranslateLoreStart: లక్ష్యం అంశం యొక్క లోర్ అనువదించడం...
   wwcItemTranslateLoreDone: అనువాదం అంశం విజయవంతంగా.
   wwctiOnTarget: అంశం అనువాదం %i కొరకు ప్రారంభించబడింది.
-  wwcBookTranslateTitleFail: పుస్తక శీర్షికను అనువదించడంలో విఫలమైంది.
   wwcInvalidTranslator: చెల్లని అనువాదకుడు సెట్టింగులు. ఈ ప్లగ్ఇన్ ఉపయోగించడానికి
     మీ config.yml లేదా /wwcc తో ఈ పరిష్కరించడానికి దయచేసి.
   wwcConfigGUIEachTranslatorSettings: '%i ఆకృతీకరణ'

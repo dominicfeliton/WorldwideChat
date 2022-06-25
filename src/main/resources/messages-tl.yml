@@ -50,7 +50,6 @@ Messages:
   wwcUpdaterOutOfDate: Ang WorldwideChat ay wala na sa petsa. Paki-update sa pinakabagong
     bersiyon, %i.
   wwcConfigGUINextPageButton: Susunod na Pahina
-  wwctbTranslatePageFail: (Nabigong isalin ang pahinang ito) %i
   wwcConfigInvalidTranslatorSettings: Di-wastong mga setting ng tagasalin! Mangyaring
     paganahin lamang ang isang tagasalin sa iyong config.yml.
   wwcConfigGUIQuitButton: Lumabas at I-save ang Mga Pagbab
@@ -199,15 +198,9 @@ Messages:
     sa console.
   wwcInventoryError: Error na nakita sa GUI ng tagagamit na %i. Pakiulat ang isyung
     ito sa developer.
-  wwcSignTranslationFail: Hindi ma-translate ang isa o higit pang mga linya sa iyong
-    target sign.
-  wwcBookTranslationFail: Hindi ma-translate ang isa o higit pang mga pahina sa iyong
-    target na aklat.
   wwctiOffTarget: Hindi pinagana ang pagsasalin ng item para sa %i.
   wwctiOffSender: Hindi pinagana ang pagsasalin ng item.
   wwcItemTranslateTitleStock: Hindi ma-translate ang mga default na pangalan ng item.
-  wwcItemTranslateLoreFail: Nabigong i-translate ang tradisyon ng item.
-  wwcItemTranslateTitleFail: Nabigong i-translate ang pangalan ng item.
   wwctGUIItemButton: I-toggle ang Pagsasalin ng Item
   wwcItemTranslateTitleDone: Matagumpay na isinalin item pamagat.
   wwcGUITempItem: Item Display
@@ -218,7 +211,6 @@ Messages:
   wwcItemTranslateLoreStart: Pagsasalin ng tradisyonal na kaalaman ng target na item...
   wwcItemTranslateLoreDone: Matagumpay na isinalin item tradisyonal na kaalaman
   wwctiOnTarget: Pinagana ang pagsasalin ng item para sa %i.
-  wwcBookTranslateTitleFail: Nabigong i-translate ang pamagat ng libro.
   wwcInvalidTranslator: Di-wastong mga setting ng tagasalin. Mangyaring ayusin ito
     sa iyong config.yml o sa /wwcc upang magamit ang plugin na ito.
   wwcConfigGUIEachTranslatorSettings: '%i Pagsasaayos'

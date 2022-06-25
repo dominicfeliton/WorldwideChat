@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat er forældet. Opdater venligst til den nyeste
     version, %i.
   wwcConfigGUINextPageButton: Næste side
-  wwctbTranslatePageFail: (Kunne ikke oversætte denne side) %i
   wwcConfigInvalidTranslatorSettings: Ugyldige indstillinger for oversætter! Aktivér
     kun én oversætter i din config.yml.
   wwcConfigGUIQuitButton: Afslut og gem ændringer
@@ -184,13 +183,9 @@ Messages:
   wwcInventoryErrorPlayer: Fejl registreret med din GUI. Der er sendt en log til konsollen.
   wwcInventoryError: Fejl registreret med brugerflade %i GUI. Rapportér dette problem
     til udvikleren.
-  wwcSignTranslationFail: Kan ikke oversætte en eller flere linjer på dit målskilt.
-  wwcBookTranslationFail: Kan ikke oversætte en eller flere sider i din målbog.
   wwctiOffTarget: Oversættelse af elementer deaktiveret for %i.
   wwctiOffSender: Oversættelse af elementer deaktiveret.
   wwcItemTranslateTitleStock: Kunne ikke oversætte standardelementets navne.
-  wwcItemTranslateLoreFail: Kunne ikke oversætte elementets lore.
-  wwcItemTranslateTitleFail: Kunne ikke oversætte elementets navn.
   wwctGUIItemButton: Slå Oversættelse til for element
   wwcItemTranslateTitleDone: Oversat vare titel med succes.
   wwcGUITempItem: Visning af element
@@ -201,7 +196,6 @@ Messages:
   wwcItemTranslateLoreStart: Oversætter lore af målpunkt...
   wwcItemTranslateLoreDone: Oversat vare lore med succes.
   wwctiOnTarget: Oversættelse af elementer aktiveret for %i.
-  wwcBookTranslateTitleFail: Kunne ikke oversætte bogens titel.
   wwcInvalidTranslator: Ugyldige indstillinger for oversætter. Løs venligst dette
     i din config.yml eller med /wwcc for at bruge dette plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'

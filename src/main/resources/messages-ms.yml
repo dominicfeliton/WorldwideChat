@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldWidChat sudah lapuk. Sila kemaskini ke versi terkini,
     %i.
   wwcConfigGUINextPageButton: Halaman Seterusnya
-  wwctbTranslatePageFail: (Gagal menterjemahkan halaman ini) %i
   wwcConfigInvalidTranslatorSettings: Tetapan penterjemah tidak sah! Sila aktifkan
     hanya satu penterjemah dalam config.yml anda.
   wwcConfigGUIQuitButton: Keluar & Simpan Perubahan
@@ -185,15 +184,9 @@ Messages:
   wwcInventoryErrorPlayer: Ralat dikesan dengan GUI anda. Log telah dihantar ke konsol.
   wwcInventoryError: Ralat dikesan dengan GUI pengguna %i. Sila laporkan isu ini kepada
     pembangun.
-  wwcSignTranslationFail: Tidak dapat menterjemahkan satu atau lebih baris pada tanda
-    sasaran anda.
-  wwcBookTranslationFail: Tidak dapat menterjemahkan satu atau lebih halaman dalam
-    buku sasaran anda.
   wwctiOffTarget: Terjemahan item dilumpuhkan untuk %i.
   wwctiOffSender: Terjemahan item dilumpuhkan.
   wwcItemTranslateTitleStock: Tidak boleh menterjemahkan nama item lalai.
-  wwcItemTranslateLoreFail: Gagal menterjemahkan item pengetahuan.
-  wwcItemTranslateTitleFail: Gagal menterjemah nama item.
   wwctGUIItemButton: Togol Terjemahan Item
   wwcItemTranslateTitleDone: Tajuk item yang diterjemahkan berjaya.
   wwcGUITempItem: Paparan Item
@@ -204,7 +197,6 @@ Messages:
   wwcItemTranslateLoreStart: Menterjemahkan pengetahuan item sasaran...
   wwcItemTranslateLoreDone: Maklumat item yang diterjemahkan berjaya.
   wwctiOnTarget: Terjemahan item dibenarkan untuk %i.
-  wwcBookTranslateTitleFail: Gagal menterjemahkan tajuk buku.
   wwcInvalidTranslator: Tetapan penterjemah tidak sah. Sila betulkan ini dalam config.yml
     anda atau dengan /wwcc untuk guna pemalam ini.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurasi'

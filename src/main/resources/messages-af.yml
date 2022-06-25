@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat is verouderd. Dateer asseblief na die nuutste
     weergawe, %i.
   wwcConfigGUINextPageButton: Volgende Bladsy
-  wwctbTranslatePageFail: (Kon nie hierdie bladsy vertaal nie) %i
   wwcConfigInvalidTranslatorSettings: Ongeldige vertaler instellings! Aktiveer asseblief
     net een vertaler in jou config.yml.
   wwcConfigGUIQuitButton: Verlaat en Stoor Veranderinge
@@ -184,13 +183,9 @@ Messages:
     konsole.
   wwcInventoryError: Fout bespeur met GUI van gebruiker %i. Rapporteer asseblief hierdie
     probleem aan die ontwikkelaar.
-  wwcSignTranslationFail: Nie moontlik na vertaal een of meer lyne op jou teiken teken.
-  wwcBookTranslationFail: Kan nie een of meer bladsye in jou teikenboek vertaal nie.
   wwctiOffTarget: Item vertaling gedeaktiveer vir %i.
   wwctiOffSender: Item vertaling gedeaktiveer.
   wwcItemTranslateTitleStock: Nie moontlik na vertaal verstek item name.
-  wwcItemTranslateLoreFail: Misluk om item leersaamhede te vertaal.
-  wwcItemTranslateTitleFail: Misluk om item naam te vertaal.
   wwctGUIItemButton: Wissel Item Vertaling
   wwcItemTranslateTitleDone: Vertaal item titel suksesvol.
   wwcGUITempItem: Item Vertoon
@@ -201,7 +196,6 @@ Messages:
   wwcItemTranslateLoreStart: Vertaling van leersaamhede van teiken item...
   wwcItemTranslateLoreDone: Vertaal item leersaamhede suksesvol.
   wwctiOnTarget: Item vertaling geaktiveer vir %i.
-  wwcBookTranslateTitleFail: Misluk om boektitel te vertaal.
   wwcInvalidTranslator: Ongeldige vertaler instellings. Los dit asseblief in jou config.yml
     of met/wwcc om hierdie inprop te gebruik.
   wwcConfigGUIEachTranslatorSettings: '%i Opstelling'

@@ -114,6 +114,7 @@ public class LibreTranslation extends BasicTranslation {
 				outputLang = "es";
 				textToTranslate = "How are you?";
 			}
+			
 			/* Convert input + output lang to lang code because this API is funky, man */
 			if (!isInitializing && !(inputLang.equals("None"))
 					&& !CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode().equals(inputLang)) {
@@ -187,6 +188,7 @@ public class LibreTranslation extends BasicTranslation {
 	}
 	
 	private void checkError(int in) throws Exception {
+		//TODO: Add localizations for these error messages
 		switch (in) {
 		case 400:
 			throw new Exception("Bad request sent to Libre Translate! Unless you're doing something that you shouldn't, you probably shouldn't get this. Please contact the developer!");

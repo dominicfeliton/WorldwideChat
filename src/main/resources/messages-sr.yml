@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: VorldVideChat je zastario. Molimo vas da ažurirate na najnoviju
     verziju, %i.
   wwcConfigGUINextPageButton: Sledeća stranica
-  wwctbTranslatePageFail: (Nije uspelo prevesti ovu stranicu) %i
   wwcConfigInvalidTranslatorSettings: Nevažeća podešavanja prevodioca! Molimo vas
     da omogućite samo jedan prevodilac u vašem config.iml.
   wwcConfigGUIQuitButton: Izlaz & Sačuvaj promene
@@ -180,15 +179,9 @@ Messages:
   wwcInventoryErrorPlayer: Greška otkrivena sa GUI. Dnevnik je poslat na konzolu.
   wwcInventoryError: Greška otkrivena sa GUI korisnika %i. Molimo prijavite ovaj problem
     programeru.
-  wwcSignTranslationFail: Nije moguće prevesti jednu ili više linija na vašem ciljnom
-    znaku.
-  wwcBookTranslationFail: Nije moguće prevesti jednu ili više stranica u vašoj ciljnoj
-    knjizi.
   wwctiOffTarget: Prevod stavke onemogućen za %i.
   wwctiOffSender: Stavka prevod onemogućen.
   wwcItemTranslateTitleStock: Nije moguće prevesti podrazumevane imena stavki.
-  wwcItemTranslateLoreFail: Nije uspelo da prevede stavku Lore.
-  wwcItemTranslateTitleFail: Nije uspelo prevesti ime stavke.
   wwctGUIItemButton: Prevod stavke Prevod
   wwcItemTranslateTitleDone: Prevedena stavka naslov uspešno.
   wwcGUITempItem: Prikaz stavke
@@ -199,7 +192,6 @@ Messages:
   wwcItemTranslateLoreStart: Prevođenje predavanja ciljne stavke...
   wwcItemTranslateLoreDone: Prevedena stavka Lore uspešno.
   wwctiOnTarget: Prevod stavke omogućen za %i.
-  wwcBookTranslateTitleFail: Nije uspelo prevesti naslov knjige.
   wwcInvalidTranslator: Nevažeća podešavanja prevodioca. Molimo vas da popravite ovo
     u konfiguraciju.iml ili sa /vvcc da koristite ovaj dodatak.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguracija'

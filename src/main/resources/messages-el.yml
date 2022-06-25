@@ -49,7 +49,6 @@ Messages:
   wwcUpdaterOutOfDate: Το WorldwideChat είναι ξεπερμένο. Ενημερώστε την τελευταία
     έκδοση, %i.
   wwcConfigGUINextPageButton: Επόμενη Σελίδα
-  wwctbTranslatePageFail: (Αποτυχία μετάφρασης αυτής της σελίδας) %i
   wwcConfigInvalidTranslatorSettings: Μη έγκυρες ρυθμίσεις μεταφραστή! Παρακαλώ ενεργοποιήστε
     μόνο έναν μεταφραστή στο config.yml σας.
   wwcConfigGUIQuitButton: Έξοδος & αποθήκευση αλλαγών
@@ -199,16 +198,10 @@ Messages:
     έχει σταλεί στην κονσόλα.
   wwcInventoryError: Εντοπίστηκε σφάλμα με το GUI του χρήστη %i. Παρακαλώ αναφέρετε
     αυτό το ζήτημα στον προγραμματιστή.
-  wwcSignTranslationFail: Δεν είναι δυνατή η μετάφραση μιας ή περισσοτέρων γραμμών
-    στο σύμβολο προορισμού.
-  wwcBookTranslationFail: Δεν είναι δυνατή η μετάφραση μιας ή περισσοτέρων σελίδων
-    στο βιβλίο προορισμού σας.
   wwctiOffTarget: Η μετάφραση αντικειμένου απενεργοποιημένη για %i.
   wwctiOffSender: Η μετάφραση αντικειμένου απενεργοποιήθηκε.
   wwcItemTranslateTitleStock: Δεν είναι δυνατή η μετάφραση προεπιλεγμένων ονομάτων
     στοιχείων.
-  wwcItemTranslateLoreFail: Αποτυχία μετάφρασης αντικειμένων.
-  wwcItemTranslateTitleFail: Αποτυχία μετάφρασης ονόματος αντικειμένου.
   wwctGUIItemButton: Εναλλαγή μετάφρασης αντικειμένου
   wwcItemTranslateTitleDone: Μετάφραση τίτλου αντικειμένου με επιτυχία.
   wwcGUITempItem: Οθόνη Στοιχείου
@@ -219,7 +212,6 @@ Messages:
   wwcItemTranslateLoreStart: Μεταφράζοντας την παράδοση του στοχευόμενου αντικειμένου...
   wwcItemTranslateLoreDone: Μετάφραση αντικειμένων με επιτυχία.
   wwctiOnTarget: Η μετάφραση αντικειμένου ενεργοποιήθηκε για %i.
-  wwcBookTranslateTitleFail: Αποτυχία μετάφρασης τίτλου βιβλίου.
   wwcInvalidTranslator: Μη έγκυρες ρυθμίσεις μεταφραστή. Διορθώστε το στο config.yml
     ή στο /wwcc για να χρησιμοποιήσετε αυτό το πρόσθετο.
   wwcConfigGUIEachTranslatorSettings: '%i Ρύθμιση παραμέτρων'

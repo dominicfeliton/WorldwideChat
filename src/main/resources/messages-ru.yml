@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: Переключить перевод знака
   wwcUpdaterOutOfDate: WorldwideChat устарел. Обновите до последней версии %i.
   wwcConfigGUINextPageButton: Следующая страница
-  wwctbTranslatePageFail: (Не удалось перевести эту страницу) %i
   wwcConfigInvalidTranslatorSettings: Недопустимые настройки переводчика! Пожалуйста,
     включите только один переводчик в вашем config.yml.
   wwcConfigGUIQuitButton: Выход и сохранение изменений
@@ -190,15 +189,9 @@ Messages:
     отправлен журнал.
   wwcInventoryError: Обнаружена ошибка с графическим интерфейсом пользователя %i.
     Сообщите об этой проблеме разработчику.
-  wwcSignTranslationFail: Невозможно перевести одну или несколько строк на целевом
-    знаке.
-  wwcBookTranslationFail: Невозможно перевести одну или несколько страниц целевой
-    книги.
   wwctiOffTarget: Перевод элементов отключен для %i.
   wwctiOffSender: Перевод элементов отключен.
   wwcItemTranslateTitleStock: Невозможно перевести имена элементов по умолчанию.
-  wwcItemTranslateLoreFail: Не удалось перевести предметы.
-  wwcItemTranslateTitleFail: Не удалось перевести имя элемента.
   wwctGUIItemButton: Перевод элементов
   wwcItemTranslateTitleDone: Заголовок переведенного элемента успешно.
   wwcGUITempItem: Отображение товара
@@ -209,7 +202,6 @@ Messages:
   wwcItemTranslateLoreStart: Перевод краеведения целевого предмета...
   wwcItemTranslateLoreDone: Переведенный предмет успешно завершен.
   wwctiOnTarget: Перевод элементов включен для %i.
-  wwcBookTranslateTitleFail: Не удалось перевести название книги.
   wwcInvalidTranslator: Неверные настройки переводчика. Пожалуйста, исправьте это
     в своем config.yml или с помощью /wwcc, чтобы использовать этот плагин.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурация'

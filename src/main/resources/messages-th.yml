@@ -41,7 +41,6 @@ Messages:
   wwctGUISignButton: สลับการแปล
   wwcUpdaterOutOfDate: WorldwideChat ล้าสมัยแล้วโปรดอัปเดตเป็นเวอร์ชันล่าสุด %i
   wwcConfigGUINextPageButton: หน้าถัดไป
-  wwctbTranslatePageFail: (ไม่สามารถแปลหน้านี้ได้) %i
   wwcConfigInvalidTranslatorSettings: การตั้งค่าตัวแปลไม่ถูกต้อง!โปรดเปิดใช้งานเพียงหนึ่งแปลใน
     config.yml ของคุณ
   wwcConfigGUIQuitButton: ออกจากการบันทึกการเปลี่ยนแปลง
@@ -163,13 +162,9 @@ Messages:
   wwcConfigCacheInvalid: ขนาดแคชของนักแปลไม่ถูกต้องผิดนัดที่ 10...
   wwcInventoryErrorPlayer: ข้อผิดพลาดที่ตรวจพบกับ GUI ของคุณบันทึกถูกส่งไปยังคอนโซล
   wwcInventoryError: ข้อผิดพลาดที่ตรวจพบกับ GUI ของผู้ใช้ %i โปรดรายงานปัญหานี้ไปยังผู้พัฒนา
-  wwcSignTranslationFail: ไม่สามารถแปลหนึ่งบรรทัดหรือมากกว่าบนเครื่องหมายเป้าหมายของคุณ
-  wwcBookTranslationFail: ไม่สามารถแปลหนึ่งหน้าหรือมากกว่าในหนังสือเป้าหมายของคุณ
   wwctiOffTarget: ปิดการแปลรายการสำหรับ %i
   wwctiOffSender: ปิดการแปลรายการ
   wwcItemTranslateTitleStock: ไม่สามารถแปลชื่อรายการเริ่มต้น
-  wwcItemTranslateLoreFail: ล้มเหลวในการแปลตำนานรายการ
-  wwcItemTranslateTitleFail: ล้มเหลวในการแปลชื่อรายการ
   wwctGUIItemButton: สลับการแปลรายการ
   wwcItemTranslateTitleDone: ชื่อรายการที่แปลเรียบร้อยแล้ว
   wwcGUITempItem: แสดงรายการ
@@ -179,7 +174,6 @@ Messages:
   wwcItemTranslateLoreStart: แปลตำนานของรายการเป้าหมาย...
   wwcItemTranslateLoreDone: แปลตำนานรายการประสบความสำเร็จ.
   wwctiOnTarget: เปิดใช้งานการแปลรายการสำหรับ %i
-  wwcBookTranslateTitleFail: ล้มเหลวในการแปลชื่อหนังสือ
   wwcInvalidTranslator: การตั้งค่าตัวแปลไม่ถูกต้องโปรดแก้ไขปัญหานี้ใน config.yml ของคุณหรือกับ
     /wwcc เพื่อใช้ปลั๊กอินนี้
   wwcConfigGUIEachTranslatorSettings: การตั้งค่าคอนฟิก %i

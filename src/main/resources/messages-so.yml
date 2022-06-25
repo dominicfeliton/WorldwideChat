@@ -50,7 +50,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldWideCat waa mid taariikhda ka baxsan. Fadlan cusbooneysii
     nuqulka ugu dambeeyey, %i.
   wwcConfigGUINextPageButton: Bogga xigta
-  wwctbTranslatePageFail: (Ku guuldareystay inuu turjumo boggan) %i
   wwcConfigInvalidTranslatorSettings: goobaha turjumaan aan sax ahayn! Fadlan awood
     kaliya hal turjumaan in aad config.yml.
   wwcConfigGUIQuitButton: Bixitaanka & Badbaadinta Isbedelada
@@ -188,16 +187,10 @@ Messages:
   wwcInventoryErrorPlayer: Error ogaado aad gui. log A ayaa loo diray Console ah.
   wwcInventoryError: Khalad la ogaaday GUI ee isticmaalaha %i. Fadlan u sheeg arintan
     horumariyaha.
-  wwcSignTranslationFail: Aan awoodin in uu turjumo hal ama ka badan khadadka calaamadaada
-    bartilmaameedka.
-  wwcBookTranslationFail: Awoodi kari waayay in uu turjumo hal ama ka badan bog buuggaaga
-    bartilmaameedka.
   wwctiOffTarget: Turjumaadda Item naafo waayo, %i.
   wwctiOffSender: turjumaad Item naafo.
   wwcItemTranslateTitleStock: Aan awoodin in ay turjumaan magacyada shayga caadiga
     ah.
-  wwcItemTranslateLoreFail: Guuldareystay in ay turjumaan aamminsan item.
-  wwcItemTranslateTitleFail: Ku guuldareystay in ay turjumaan magaca item.
   wwctGUIItemButton: Turjubaan Shayga Toggle
   wwcItemTranslateTitleDone: Horyaalka item turjumay si guul leh.
   wwcGUITempItem: Muujinta shayga
@@ -208,7 +201,6 @@ Messages:
   wwcItemTranslateLoreStart: Tarjumidda aamminsan ee shayga bartilmaameedka...
   wwcItemTranslateLoreDone: aamminsan item turjumay si guul leh.
   wwctiOnTarget: Turjumaad shayga awood u yeelo %i.
-  wwcBookTranslateTitleFail: Ku guuldareystay in ay turjumaan horyaalka buugga.
   wwcInvalidTranslator: Goobaha turjumaan aan sax ahayn. Fadlan hagaajin this in aad
     config.yml ama /wwcc si aad u isticmaasho plugin this.
   wwcConfigGUIEachTranslatorSettings: '%i Hagaajinta'

@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: වර්ල්ඩ්වයිඩ්හාට් දිනය ඉවරයි. කරුණාකර නවතම අනුවාදයට යාවත්කාලීන
     කරන්න, %i.
   wwcConfigGUINextPageButton: ඊළඟ පිටුව
-  wwctbTranslatePageFail: (මෙම පිටුව පරිවර්තනය කිරීමට අසමත් විය) %i
   wwcConfigInvalidTranslatorSettings: වලංගු නොවන පරිවර්තක සැකසුම්! කරුණාකර ඔබගේ config.yml
     තුළ එක් පරිවර්තකයෙකුට පමණක් සක්රීය කරන්න.
   wwcConfigGUIQuitButton: පිටවීමේ සහ සුරකින්න වෙනස්කම්
@@ -186,15 +185,9 @@ Messages:
   wwcInventoryErrorPlayer: ඔබේ GUI සමඟ හඳුනාගත් දෝෂය. ලොගයක් කොන්සෝලය වෙත යවා ඇත.
   wwcInventoryError: '%i පරිශීලකයාගේ GUI සමඟ අනාවරණය වූ දෝෂය. කරුණාකර මෙම ගැටළුව සංවර්ධකයාට
     වාර්තා කරන්න.'
-  wwcSignTranslationFail: ඔබගේ ඉලක්කගත ලකුණෙහි රේඛා එකක් හෝ කිහිපයක් පරිවර්තනය කිරීමට
-    නොහැකි විය.
-  wwcBookTranslationFail: ඔබගේ ඉලක්කගත පොතේ පිටු එකක් හෝ කිහිපයක් පරිවර්තනය කිරීමට
-    නොහැකි විය.
   wwctiOffTarget: අයිතම පරිවර්තනය %i සඳහා අක්රීය කර ඇත.
   wwctiOffSender: අයිතම පරිවර්තනය ආබාධිත.
   wwcItemTranslateTitleStock: පෙරනිමි අයිතම නාම පරිවර්තනය කිරීමට නොහැකි විය.
-  wwcItemTranslateLoreFail: අයිතම ලෝරි පරිවර්තනය කිරීමට අසමත් විය.
-  wwcItemTranslateTitleFail: අයිතමයේ නම පරිවර්තනය කිරීමට අසමත් විය.
   wwctGUIItemButton: ටොගල් කරන්න අයිතමය පරිවර්තනය
   wwcItemTranslateTitleDone: පරිවර්තනය කරන ලද අයිතම මාතෘකාව සාර්ථකව.
   wwcGUITempItem: අයිතමය පෙන්වන්න
@@ -205,7 +198,6 @@ Messages:
   wwcItemTranslateLoreStart: ඉලක්කය අයිතමය ක lore පරිවර්තනය...
   wwcItemTranslateLoreDone: පරිවර්ථනය කරන ලද අයිතමය සාර්ථකව.
   wwctiOnTarget: අයිතම පරිවර්තනය %i සඳහා සබල කර ඇත.
-  wwcBookTranslateTitleFail: පොත් මාතෘකාව පරිවර්තනය කිරීමට අසමත් විය.
   wwcInvalidTranslator: වලංගු නොවන පරිවර්තක සැකසුම්. කරුණාකර මෙම ප්ලගිනය භාවිතා කිරීමට
     ඔබගේ config.yml හෝ /wwcc සමඟ මෙය නිවැරදි කරන්න.
   wwcConfigGUIEachTranslatorSettings: '%i වින්යාසය'

@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat jest nieaktualne. Zaktualizuj do najnowszej wersji,
     %i.
   wwcConfigGUINextPageButton: Następna strona
-  wwctbTranslatePageFail: (Przetłumaczenie tej strony nie powiodło się) %i
   wwcConfigInvalidTranslatorSettings: Nieprawidłowe ustawienia tłumacza! Proszę włączyć
     tylko jednego tłumacza w config.yml.
   wwcConfigGUIQuitButton: Zakończ i zapisz zmiany
@@ -186,15 +185,9 @@ Messages:
   wwcInventoryErrorPlayer: Wykryto błąd w graficznym interfejsie użytkownika. Dziennik
     został wysłany do konsoli.
   wwcInventoryError: Wykryto błąd w GUI użytkownika %i. Zgłoś ten problem programiście.
-  wwcSignTranslationFail: Nie można przetłumaczyć jednego lub więcej wierszy na znaku
-    celu.
-  wwcBookTranslationFail: Nie można przetłumaczyć jednej lub więcej stron w książce
-    docelowej.
   wwctiOffTarget: Tłumaczenie elementu wyłączone dla %i.
   wwctiOffSender: Tłumaczenie elementu wyłączone.
   wwcItemTranslateTitleStock: Nie można przetłumaczyć domyślnych nazw elementów.
-  wwcItemTranslateLoreFail: Przetłumaczenie wiedzy przedmiotu nie powiodło się.
-  wwcItemTranslateTitleFail: Nie można przetłumaczyć nazwy elementu.
   wwctGUIItemButton: Przełącz translację elementu
   wwcItemTranslateTitleDone: Przetłumaczony tytuł elementu pomyślnie.
   wwcGUITempItem: Wyświetlanie pozycji
@@ -205,7 +198,6 @@ Messages:
   wwcItemTranslateLoreStart: Tłumaczenie wiedzy o elemencie docelowym...
   wwcItemTranslateLoreDone: Przetłumaczone legendy przedmiotu pomyślnie.
   wwctiOnTarget: Translacja elementu włączona dla %i.
-  wwcBookTranslateTitleFail: Nie udało się przetłumaczyć tytułu książki.
   wwcInvalidTranslator: Nieprawidłowe ustawienia tłumacza. Proszę to naprawić w swoim
     config.yml lub z /wwcc, aby użyć tej wtyczki.
   wwcConfigGUIEachTranslatorSettings: Konfiguracja %i

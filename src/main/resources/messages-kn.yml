@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ನವೀಕೃತವಾಗಿದೆ. ದಯವಿಟ್ಟು ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗೆ ಅಪ್ಡೇಟ್
     ಮಾಡಿ, %i.
   wwcConfigGUINextPageButton: ಮುಂದಿನ ಪುಟ
-  wwctbTranslatePageFail: (ಈ ಪುಟವನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ) %i
   wwcConfigInvalidTranslatorSettings: ಅಮಾನ್ಯ ಅನುವಾದಕ ಸೆಟ್ಟಿಂಗ್ಗಳು! ದಯವಿಟ್ಟು ನಿಮ್ಮ
     config.yml ನಲ್ಲಿ ಕೇವಲ ಒಂದು ಅನುವಾದಕವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.
   wwcConfigGUIQuitButton: ನಿರ್ಗಮಿಸಿ & ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ
@@ -190,15 +189,9 @@ Messages:
   wwcInventoryErrorPlayer: ನಿಮ್ಮ GUI ಯೊಂದಿಗೆ ದೋಷ ಪತ್ತೆಯಾಗಿದೆ. ಕನ್ಸೋಲ್ಗೆ ಲಾಗ್ ಕಳುಹಿಸಲಾಗಿದೆ.
   wwcInventoryError: '%i ಬಳಕೆದಾರನ GUI ಯೊಂದಿಗೆ ದೋಷ ಕಂಡುಬಂದಿದೆ. ದಯವಿಟ್ಟು ಈ ಸಮಸ್ಯೆಯನ್ನು
     ಡೆವಲಪರ್ಗೆ ವರದಿ ಮಾಡಿ.'
-  wwcSignTranslationFail: ನಿಮ್ಮ ಗುರಿ ಸೈನ್ ಮೇಲೆ ಒಂದು ಅಥವಾ ಹೆಚ್ಚು ಸಾಲುಗಳನ್ನು ಭಾಷಾಂತರಿಸಲು
-    ಸಾಧ್ಯವಿಲ್ಲ.
-  wwcBookTranslationFail: ನಿಮ್ಮ ಗುರಿ ಪುಸ್ತಕದಲ್ಲಿ ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ಪುಟಗಳನ್ನು ಭಾಷಾಂತರಿಸಲು
-    ಸಾಧ್ಯವಿಲ್ಲ.
   wwctiOffTarget: ಐಟಂ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwctiOffSender: ಐಟಂ ಅನುವಾದ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwcItemTranslateTitleStock: ಡೀಫಾಲ್ಟ್ ಐಟಂ ಹೆಸರುಗಳನ್ನು ಭಾಷಾಂತರಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.
-  wwcItemTranslateLoreFail: ಐಟಂ ಅನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
-  wwcItemTranslateTitleFail: ಐಟಂ ಹೆಸರನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
   wwctGUIItemButton: ಟಾಗಲ್ ಐಟಂ ಅನುವಾದ
   wwcItemTranslateTitleDone: ಐಟಂ ಶೀರ್ಷಿಕೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅನುವಾದಿಸಲಾಗಿದೆ.
   wwcGUITempItem: ಐಟಂ ಪ್ರದರ್ಶನ
@@ -209,7 +202,6 @@ Messages:
   wwcItemTranslateLoreStart: ಗುರಿ ಐಟಂನ ಉದ್ದವನ್ನು ಭಾಷಾಂತರಿಸಲಾಗುತ್ತಿದೆ...
   wwcItemTranslateLoreDone: ಅನುವಾದಿಸಿದ ಐಟಂ ಯಶಸ್ವಿಯಾಗಿ.
   wwctiOnTarget: ಐಟಂ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
-  wwcBookTranslateTitleFail: ಪುಸ್ತಕದ ಶೀರ್ಷಿಕೆಯನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
   wwcInvalidTranslator: ಅಮಾನ್ಯ ಅನುವಾದಕ ಸೆಟ್ಟಿಂಗ್ಗಳು. ಈ ಪ್ಲಗ್ಇನ್ ಅನ್ನು ಬಳಸಲು ದಯವಿಟ್ಟು
     ನಿಮ್ಮ config.yml ಅಥವಾ/wwcc ನೊಂದಿಗೆ ಇದನ್ನು ಸರಿಪಡಿಸಿ.
   wwcConfigGUIEachTranslatorSettings: '%i ಸಂರಚನೆ'

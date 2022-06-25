@@ -49,7 +49,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat este expirat. Vă rugăm să actualizați la cea
     mai recentă versiune, %i.
   wwcConfigGUINextPageButton: Pagina următoare
-  wwctbTranslatePageFail: (Eșec la traducerea acestei pagini) %i
   wwcConfigInvalidTranslatorSettings: Setări de traducător nevalide! Vă rugăm să activați
     un singur traducător în config.yml.
   wwcConfigGUIQuitButton: Ieșire și salvare modificări
@@ -193,14 +192,9 @@ Messages:
   wwcInventoryErrorPlayer: Eroare detectată cu GUI. Un jurnal a fost trimis la consolă.
   wwcInventoryError: Eroare detectată cu GUI a utilizatorului %i. Raportați această
     problemă dezvoltatorului.
-  wwcSignTranslationFail: Imposibil de tradus una sau mai multe linii de pe semnul
-    țintă.
-  wwcBookTranslationFail: Imposibil de tradus una sau mai multe pagini în cartea țintă.
   wwctiOffTarget: Traducere articol dezactivat pentru %i.
   wwctiOffSender: Traducere articol dezactivat.
   wwcItemTranslateTitleStock: Imposibil de tradus numele de elemente implicite.
-  wwcItemTranslateLoreFail: Nu a reușit să traducă articolul lore.
-  wwcItemTranslateTitleFail: Nu a reușit să traducă numele elementului.
   wwctGUIItemButton: Comută traducerea elementului
   wwcItemTranslateTitleDone: Titlul articolului tradus cu succes.
   wwcGUITempItem: Afișaj element
@@ -211,7 +205,6 @@ Messages:
   wwcItemTranslateLoreStart: Traducerea lore a obiectului țintă...
   wwcItemTranslateLoreDone: Lore articol tradus cu succes.
   wwctiOnTarget: Traducerea elementului este activată pentru %i.
-  wwcBookTranslateTitleFail: Nu a reușit să traducă titlul cărții.
   wwcInvalidTranslator: Setări de traducător nevalide. Vă rugăm să remediați acest
     lucru în config.yml sau cu /wwcc pentru a utiliza acest plugin.
   wwcConfigGUIEachTranslatorSettings: Configurare %i

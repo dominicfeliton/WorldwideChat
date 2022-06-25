@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat je zastaraný. Aktualizujte na najnovšiu verziu,
     %i.
   wwcConfigGUINextPageButton: Nasledujúca strana
-  wwctbTranslatePageFail: (Nepodarilo sa preložiť túto stránku) %i
   wwcConfigInvalidTranslatorSettings: Neplatné nastavenia prekladateľa! Povoliť iba
     jeden prekladač vo vašom config.yml.
   wwcConfigGUIQuitButton: Ukončiť a uložiť zmeny
@@ -191,15 +190,9 @@ Messages:
     bol odoslaný denník.
   wwcInventoryError: Chyba zistená pomocou grafického rozhrania používateľa %i. Prosím,
     nahláste tento problém vývojárovi.
-  wwcSignTranslationFail: Nie je možné preložiť jeden alebo viac riadkov na cieľovom
-    znamienko.
-  wwcBookTranslationFail: Nie je možné preložiť jednu alebo viac strán v cieľovej
-    knihe.
   wwctiOffTarget: Preklad položiek zakázaný pre %i.
   wwctiOffSender: Preklad položiek vypnutý.
   wwcItemTranslateTitleStock: Nie je možné preložiť predvolené názvy položiek.
-  wwcItemTranslateLoreFail: Nepodarilo sa preložiť položky tradície.
-  wwcItemTranslateTitleFail: Nepodarilo sa preložiť názov položky.
   wwctGUIItemButton: Prepnúť preklad položiek
   wwcItemTranslateTitleDone: Názov položky bol úspešne preložený.
   wwcGUITempItem: Zobrazenie položky
@@ -210,7 +203,6 @@ Messages:
   wwcItemTranslateLoreStart: Preklad tradície cieľovej položky...
   wwcItemTranslateLoreDone: Preložené položky tradície úspešne.
   wwctiOnTarget: Preklad položiek povolený pre %i.
-  wwcBookTranslateTitleFail: Nepodarilo sa preložiť názov knihy.
   wwcInvalidTranslator: Neplatné nastavenia prekladateľa. Opravte to vo vašom config.yml
     alebo /wwcc použiť tento plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurácia'

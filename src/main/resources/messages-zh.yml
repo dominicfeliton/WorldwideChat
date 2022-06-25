@@ -39,7 +39,6 @@ Messages:
   wwctGUISignButton: 切换签名翻译
   wwcUpdaterOutOfDate: WorldwideChat 已经过时了。请更新至最新版本 %i。
   wwcConfigGUINextPageButton: 下一页
-  wwctbTranslatePageFail: （无法翻译此页面） %i
   wwcConfigInvalidTranslatorSettings: 翻译者设置无效！请在 config.yml 中只启用一个翻译器。
   wwcConfigGUIQuitButton: 退出并保存更改
   wwctPlayerNotFound: 玩家 %我没找到。
@@ -146,13 +145,9 @@ Messages:
   wwcConfigCacheInvalid: 转换器缓存大小无效。默认为 10...
   wwcInventoryErrorPlayer: 使用 GUI 检测到错误。日志已发送到控制台。
   wwcInventoryError: 用户 %i 的 GUI 检测到错误。请向开发者报告此问题。
-  wwcSignTranslationFail: 无法翻译目标符号上的一行或多行。
-  wwcBookTranslationFail: 无法翻译目标图书中的一页或多页。
   wwctiOffTarget: '%i 的商品翻译被禁用。'
   wwctiOffSender: 已禁用物品翻译。
   wwcItemTranslateTitleStock: 无法翻译默认商品名称。
-  wwcItemTranslateLoreFail: 无法翻译商品传说。
-  wwcItemTranslateTitleFail: 无法翻译商品名称。
   wwctGUIItemButton: 切换项目翻译
   wwcItemTranslateTitleDone: 已成功翻译商品标题。
   wwcGUITempItem: 物品展示
@@ -162,7 +157,6 @@ Messages:
   wwcItemTranslateLoreStart: 翻译目标物品的更多知识...
   wwcItemTranslateLoreDone: 已成功翻译商品传说。
   wwctiOnTarget: 为 %i 启用了商品翻译。
-  wwcBookTranslateTitleFail: 无法翻译图书标题。
   wwcInvalidTranslator: 翻译器设置无效。请在 config.yml 或使用 /wwcc 中修复此问题以使用此插件。
   wwcConfigGUIEachTranslatorSettings: '%i 配置'
   wwcConfigGUIWatsonButton: 沃森

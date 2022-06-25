@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat له نیټې څخه بهر دی.. مهرباني وکړئ وروستۍ نسخه
     ته اوسمهالول کړئ، %i
   wwcConfigGUINextPageButton: راتلونکی مخ
-  wwctbTranslatePageFail: (د دې مخ په ژباړلو کې پاتې راغی) %i
   wwcConfigInvalidTranslatorSettings: ناسم ژباړونکي امستنې! مهرباني وکړئ یوازې یو
     ژباړونکي په خپل ترتیب کې فعال کړئ.
   wwcConfigGUIQuitButton: بدلونونه وتل & ساتل
@@ -179,13 +178,9 @@ Messages:
     دی.
   wwcInventoryError: د کارن د GUI سره تېروتنه وموندل شوه %i. مهرباني وکړئ دا مسله
     پرمخ وړونکي ته راپور ورکړئ.
-  wwcSignTranslationFail: ستاسو په نښه نښه کې د یو یا ډیرو لینونو ژباړلو توان نلري.
-  wwcBookTranslationFail: د خپل هدف کتاب کې د یو یا ډیرو مخونو ژباړلو توان نلري.
   wwctiOffTarget: .توکی ژباړه د %i لپاره ناتوانول شو
   wwctiOffSender: د توکو ژباړه معلول.
   wwcItemTranslateTitleStock: . د تلواله توکي نومونه نه شي ژباړل
-  wwcItemTranslateLoreFail: د توکو لیور ژباړلو کې پاتې راغی.
-  wwcItemTranslateTitleFail: . د توکو نوم ژباړلو کې پاتې راغی
   wwctGUIItemButton: د توکو ژباړه توګول
   wwcItemTranslateTitleDone: ژباړل شوی توکی عنوان په بریالیتوب سره
   wwcGUITempItem: توکي ښودنه
@@ -196,7 +191,6 @@ Messages:
   wwcItemTranslateLoreStart: د هدف توکي د لور ژباړه...
   wwcItemTranslateLoreDone: ژباړل شوي توکي په بریالیتوب سره.
   wwctiOnTarget: .توکی ژباړل د %i لپاره فعال شو
-  wwcBookTranslateTitleFail: د کتاب سرلیک ژباړلو کې پاتې راغی.
   wwcInvalidTranslator: ناسم ژباړونکي امستنې. مهرباني وکړئ دا په خپل config.yml یا/wwcc
     سره د دې فلګین کارولو لپاره حل کړئ.
   wwcConfigGUIEachTranslatorSettings: '%i سازونه'

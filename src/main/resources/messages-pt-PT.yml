@@ -84,10 +84,8 @@ Messages:
   wwcEntityTranslateStart: A traduzir entidade alvo...
   wwcUpdaterFutureDate: Esta instância do WorldwideChat tem uma versão maior do que
     a versão pública mais recente.
-  wwcItemTranslateLoreFail: Falha na tradução do artigo lore.
   wwcConfigGUIGoogleTranslateAPIKeyButton: Alterar a Chave da API do Google
   wwcConfigGUIGlobalRateLimitButton: Alterar o limite global da taxa
-  wwcItemTranslateTitleFail: Falha na tradução do nome do item.
   wwctsOnTarget: Tradução de sinal activada para %i.
   wwcConfigCacheDisabled: Cache de tradutor desactivada.
   wwcConfigConversationWatsonURLInput: O URL actual é %i. Introduza um URL de serviço
@@ -134,8 +132,6 @@ Messages:
   wwctrlRateLimitSetTarget: Defina o limite de taxa de %i para %o segundos.
   wwcConfigGUIMessagesOverrideCustomLabel: Nova Mensagem
   wwcGUITempItem: Visualização de itens
-  wwcBookTranslationFail: Não é possível traduzir uma ou mais páginas no seu livro
-    de destino.
   wwcConfigConversationGoogleTranslateAPIKeyInput: A chave API atual é %i. Introduza
     uma chave API para o Google Translate ou digite 0 para voltar atrás.
   wwcConfigConversationRateLimitInput: O limite de taxa global atual por tradução
@@ -169,8 +165,6 @@ Messages:
   wwcgAutoTranslateStart: Agora traduzindo bate-papo global para %o.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Alterar chave de acesso da Amazon
   wwcrFail: Falha ao carregar o WorldwideChat.
-  wwcSignTranslationFail: Não é possível traduzir uma ou mais linhas no seu sinal
-    de destino.
   wwcUpdaterFailedGeneric: Não é possível verificar as actualizações do WorldwideChat.
   wwcConfigGUIChatMessagesOverrideSettings: Ignorar Mensagens Predefinidas
   wwctGUIMainMenuGlobal: Menu Tradução Global
@@ -222,7 +216,6 @@ Messages:
     na barreira vermelha em /wwcc.
   wwcBookTranslateTitleSuccess: 'Título do Livro Traduzido: %i'
   wwcConfigGUINextPageButton: Página Seguinte
-  wwctbTranslatePageFail: (Não foi possível traduzir esta página) %i
   wwctiOnSender: Tradução de itens activada. Clique com o botão direito do rato com
     um item na sua mão principal para traduzi-lo!
   wwcConfigGUIMessagesOverrideOriginalLabel: Mensagem Original
@@ -261,7 +254,6 @@ Messages:
     num sinal para o traduzir!
   wwctGUIAutoDetectButton: Detecta automática Idioma
   wwcConfigConversationDebugModeSuccess: Modo de depuração alternado com sucesso.
-  wwcBookTranslateTitleFail: Falhou na tradução do título do livro.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Eliminar Ignorar
   wwcNoConsole: Este comando só pode ser executado por um jogador.
   wwcConfigConversationTranslationCacheSuccess: Limite de cache de tradução definido

@@ -44,7 +44,6 @@ Messages:
   wwctGUISignButton: تبديل تسجيل الترجمة
   wwcUpdaterOutOfDate: وورلدويدتشات هو قديما. الرجاء التحديث إلى أحدث إصدار، %i.
   wwcConfigGUINextPageButton: الصفحة التالية
-  wwctbTranslatePageFail: (فشل ترجمة هذه الصفحة) %i
   wwcConfigInvalidTranslatorSettings: إعدادات مترجم غير صالحة! يرجى تمكين مترجم واحد
     فقط في config.yml الخاص بك.
   wwcConfigGUIQuitButton: الخروج من التغييرات وحفظها
@@ -173,13 +172,9 @@ Messages:
     سجل إلى وحدة التحكم.
   wwcInventoryError: تم اكتشاف خطأ باستخدام واجهة المستخدم الرسومية للمستخدم %i. الرجاء
     إبلاغ المطور عن هذه المشكلة.
-  wwcSignTranslationFail: غير قادر على ترجمة سطر واحد أو أكثر على علامة الهدف.
-  wwcBookTranslationFail: غير قادر على ترجمة صفحة واحدة أو أكثر في كتابك المستهدف.
   wwctiOffTarget: تم تعطيل ترجمة العنصر لـ %i.
   wwctiOffSender: تم تعطيل ترجمة العنصر.
   wwcItemTranslateTitleStock: غير قادر على ترجمة أسماء العناصر الافتراضية.
-  wwcItemTranslateLoreFail: فشل في ترجمة تقاليد العنصر.
-  wwcItemTranslateTitleFail: فشل ترجمة اسم العنصر.
   wwctGUIItemButton: تبديل ترجمة العنصر
   wwcItemTranslateTitleDone: عنوان العنصر المترجم بنجاح.
   wwcGUITempItem: عرض السلعة
@@ -190,7 +185,6 @@ Messages:
   wwcItemTranslateLoreStart: ترجمة تقاليد العنصر المستهدف...
   wwcItemTranslateLoreDone: تقاليد العنصر المترجم بنجاح.
   wwctiOnTarget: تم تمكين ترجمة العنصر لـ %i.
-  wwcBookTranslateTitleFail: فشل ترجمة عنوان الكتاب.
   wwcInvalidTranslator: إعدادات المترجم غير صالحة. يرجى إصلاح هذا في config.yml الخاص
     بك أو مع/wwcc لاستخدام هذا البرنامج المساعد.
   wwcConfigGUIEachTranslatorSettings: تكوين %i

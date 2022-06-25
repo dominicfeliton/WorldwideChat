@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat está desatualizado. Atualize para a versão mais
     recente, %i.
   wwcConfigGUINextPageButton: Próxima página
-  wwctbTranslatePageFail: (Falha ao traduzir esta página) %i
   wwcConfigInvalidTranslatorSettings: Configurações inválidas do tradutor! Ative apenas
     um tradutor no seu config.yml.
   wwcConfigGUIQuitButton: Sair e salvar alterações
@@ -187,14 +186,9 @@ Messages:
   wwcInventoryErrorPlayer: Erro detectado com sua GUI. Um log foi enviado para o console.
   wwcInventoryError: Erro detectado com a GUI do usuário %i. Informe esse problema
     ao desenvolvedor.
-  wwcSignTranslationFail: Não é possível traduzir uma ou mais linhas no sinal de destino.
-  wwcBookTranslationFail: Não é possível traduzir uma ou mais páginas no seu livro
-    de destino.
   wwctiOffTarget: Tradução do item desativada para %i.
   wwctiOffSender: Tradução de itens desativada.
   wwcItemTranslateTitleStock: Não foi possível traduzir nomes de itens padrão.
-  wwcItemTranslateLoreFail: Falha ao traduzir o lore do item.
-  wwcItemTranslateTitleFail: Falha ao traduzir o nome do item.
   wwctGUIItemButton: Alternar tradução de itens
   wwcItemTranslateTitleDone: Título do item traduzido com sucesso.
   wwcGUITempItem: Exibição do item
@@ -205,7 +199,6 @@ Messages:
   wwcItemTranslateLoreStart: Traduzindo o lore do item alvo...
   wwcItemTranslateLoreDone: Lore do item traduzido com sucesso.
   wwctiOnTarget: Tradução de itens ativada para %i.
-  wwcBookTranslateTitleFail: Falha ao traduzir o título do livro.
   wwcInvalidTranslator: Configurações inválidas do tradutor. Corrija isso em seu config.yml
     ou com /wwcc para usar este plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Configuração'

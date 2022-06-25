@@ -102,7 +102,6 @@ public class TranslateInGameListener implements Listener {
 							String outTitle = meta.getTitle();
 							List<String> pages = meta.getPages();
 							List<String> translatedPages = new ArrayList<String>();
-							boolean sameResult = false;
 
 							/* Send message */
 							final TextComponent bookStart = Component.text()
@@ -114,33 +113,20 @@ public class TranslateInGameListener implements Listener {
 
 							/* Translate title */
 							outTitle = CommonDefinitions.translateText(meta.getTitle(), event.getPlayer());
-							if (!outTitle.equals(meta.getTitle())) {
-								final TextComponent bookTitleSuccess = Component.text()
-										.append(Component.text()
-												.content(CommonDefinitions.getMessage("wwcBookTranslateTitleSuccess", new String[] {meta.getTitle()}))
-												.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
-										.build();
-								CommonDefinitions.sendMessage(event.getPlayer(), bookTitleSuccess);
-							} else {
-								final TextComponent bookTitleFail = Component.text()
-										.append(Component.text()
-												.content(CommonDefinitions.getMessage("wwcBookTranslateTitleFail"))
-												.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
-										.build();
-								CommonDefinitions.sendMessage(event.getPlayer(), bookTitleFail);
-							}
+							final TextComponent bookTitleSuccess = Component.text()
+									.append(Component.text()
+											.content(CommonDefinitions.getMessage("wwcBookTranslateTitleSuccess", new String[] {meta.getTitle()}))
+											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
+									.build();
+							CommonDefinitions.sendMessage(event.getPlayer(), bookTitleSuccess);
 
 							/* Translate pages */
 							for (String eaPage : pages) {
 								String out = CommonDefinitions.translateText(eaPage, event.getPlayer());
-								if (out.equals("") || out.equalsIgnoreCase(eaPage)) {
-									sameResult = true;
-									out = CommonDefinitions.getMessage("wwctbTranslatePageFail", new String[] {eaPage});
-								}
 								translatedPages.add(out);
 							}
 
-							if (!sameResult && currentBook != null) {
+							if (currentBook != null) {
 								/* Set completed message */
 								final TextComponent bookDone = Component.text()
 										.append(Component.text()
@@ -148,14 +134,6 @@ public class TranslateInGameListener implements Listener {
 												.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
 										.build();
 								CommonDefinitions.sendMessage(event.getPlayer(), bookDone);
-							} else if (sameResult) {
-								/* If we are here, one or more translations was unsuccessful */
-								final TextComponent translationNoticeMsg = Component.text()
-										.append(Component.text()
-												.content(CommonDefinitions.getMessage("wwcBookTranslationFail"))
-												.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
-										.build();
-								CommonDefinitions.sendMessage(event.getPlayer(), translationNoticeMsg);
 							}
 
 							/* Create the modified book */
@@ -205,7 +183,6 @@ public class TranslateInGameListener implements Listener {
 							String[] signText = currentSign.getLines();
 							String[] changedSignText = new String[signText.length];
 							boolean textLimit = false;
-							boolean oneOrMoreLinesFailed = false;
 
 							/* Send message */
 							final TextComponent signStart = Component.text()
@@ -222,9 +199,6 @@ public class TranslateInGameListener implements Listener {
 								if (eaLine.length() > 15) {
 									textLimit = true;
 								}
-								if (eaLine.equals(signText[i]) && !signText[i].equals("")) {
-									oneOrMoreLinesFailed = true;
-								}
 								changedSignText[i] = eaLine;
 							}
 							
@@ -240,20 +214,12 @@ public class TranslateInGameListener implements Listener {
 							 * Change sign for this user only, if translationNotTooLong and sign still
 							 * exists
 							 */
-							if (!textLimit && !oneOrMoreLinesFailed && currentSign.getLocation() != null) {
+							if (!textLimit && currentSign.getLocation() != null) {
 								/* Set completed message */
 								final TextComponent signDone = Component.text()
 										.append(Component.text()
 												.content(CommonDefinitions.getMessage("wwcSignDone"))
 												.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
-										.build();
-								CommonDefinitions.sendMessage(event.getPlayer(), signDone);
-							} else if (oneOrMoreLinesFailed && !textLimit && currentSign.getLocation() != null) {
-								/* Even though one or more lines failed, set completed message */
-								final TextComponent signDone = Component.text()
-										.append(Component.text()
-												.content(CommonDefinitions.getMessage("wwcSignTranslationFail"))
-												.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
 										.build();
 								CommonDefinitions.sendMessage(event.getPlayer(), signDone);
 							} else {
@@ -315,7 +281,6 @@ public class TranslateInGameListener implements Listener {
 							String translatedName = "";
 							List<String> itemLore = meta.getLore();
 							ArrayList<String> outLore = new ArrayList<String>();
-							boolean sameResult = false;
 
 							/* Send message */
 							final TextComponent itemStart = Component.text()
@@ -328,23 +293,13 @@ public class TranslateInGameListener implements Listener {
 							/* Translate item title */
 							if (meta.hasDisplayName()) {
 								translatedName = CommonDefinitions.translateText(meta.getDisplayName(), event.getPlayer());
-								if (!translatedName.equalsIgnoreCase(meta.getDisplayName())) {
-									/* Set completed message */
-									final TextComponent itemTitleDone = Component.text()
-											.append(Component.text()
-													.content(CommonDefinitions.getMessage("wwcItemTranslateTitleDone"))
-													.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
-											.build();
-									CommonDefinitions.sendMessage(event.getPlayer(), itemTitleDone);
-								} else {
-									translatedName = "";
-									final TextComponent itemTitleFail = Component.text()
-											.append(Component.text()
-													.content(CommonDefinitions.getMessage("wwcItemTranslateTitleFail"))
-													.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
-											.build();
-									CommonDefinitions.sendMessage(event.getPlayer(), itemTitleFail);
-								}
+								/* Set completed message */
+								final TextComponent itemTitleDone = Component.text()
+										.append(Component.text()
+												.content(CommonDefinitions.getMessage("wwcItemTranslateTitleDone"))
+												.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
+										.build();
+								CommonDefinitions.sendMessage(event.getPlayer(), itemTitleDone);
 							} else {
 								final TextComponent itemStockTitleFail = Component.text()
 										.append(Component.text()
@@ -352,12 +307,7 @@ public class TranslateInGameListener implements Listener {
 												.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
 										.build();
 								CommonDefinitions.sendMessage(event.getPlayer(), itemStockTitleFail);
-								// We cannot translate stock items to a custom name, as all item enums are in
-								// English.
-								// If the user is using another language in their respective Minecraft client,
-								// there is no way that
-								// The server can know this. Therefore, vanilla items are not supported for
-								// translation.
+								// Stock items not supported
 							}
 
 							/* Translate item lore */
@@ -371,27 +321,15 @@ public class TranslateInGameListener implements Listener {
 								outLore = new ArrayList<String>();
 								for (String eaLine : itemLore) {
 									String translatedLine = CommonDefinitions.translateText(eaLine, event.getPlayer());
-									if (eaLine.equals(translatedLine)) {
-										sameResult = true;
-									}
 									outLore.add(translatedLine);
 								}
-								if (!sameResult) {
-									/* Set completed message */
-									final TextComponent itemLoreDone = Component.text()
-											.append(Component.text()
-													.content(CommonDefinitions.getMessage("wwcItemTranslateLoreDone"))
-													.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
-											.build();
-									CommonDefinitions.sendMessage(event.getPlayer(), itemLoreDone);
-								} else {
-									final TextComponent itemLoreFail = Component.text()
-											.append(Component.text()
-													.content(CommonDefinitions.getMessage("wwcItemTranslateLoreFail"))
-													.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
-											.build();
-									CommonDefinitions.sendMessage(event.getPlayer(), itemLoreFail);
-								}
+								/* Set completed message */
+								final TextComponent itemLoreDone = Component.text()
+										.append(Component.text()
+												.content(CommonDefinitions.getMessage("wwcItemTranslateLoreDone"))
+												.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
+										.build();
+								CommonDefinitions.sendMessage(event.getPlayer(), itemLoreDone);
 							}
 
 							/* Create "fake" item to be displayed to user */

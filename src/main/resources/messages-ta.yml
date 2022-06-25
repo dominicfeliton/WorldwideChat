@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldWideSat தேதி இல்லை. தயவுசெய்து சமீபத்திய பதிப்பு, %i க்கு
     புதுப்பிக்கவும்.
   wwcConfigGUINextPageButton: அடுத்த பக்கம்
-  wwctbTranslatePageFail: (இந்தப் பக்கத்தை மொழிபெயர்க்க முடியவில்லை) %i
   wwcConfigInvalidTranslatorSettings: தவறான மொழிபெயர்ப்பாளர் அமைப்புகள்! உங்கள் config.yml
     ஒரே ஒரு மொழிபெயர்ப்பாளர் செயல்படுத்த கொள்ளவும்.
   wwcConfigGUIQuitButton: மாற்றங்களை வெளியேறவும் சேமிக்கவும்
@@ -195,15 +194,9 @@ Messages:
     அனுப்பப்பட்டுள்ளது.
   wwcInventoryError: பயனர் %i இன் GUI உடன் கண்டறியப்பட்ட பிழை. இந்த சிக்கலை உருவாக்குநருக்கு
     தெரிவிக்கவும்.
-  wwcSignTranslationFail: உங்கள் இலக்கு அடையாளம் ஒன்று அல்லது அதற்கு மேற்பட்ட வரிகளை
-    மொழிபெயர்க்க முடியவில்லை.
-  wwcBookTranslationFail: உங்கள் இலக்கு புத்தகத்தில் ஒன்று அல்லது அதற்கு மேற்பட்ட
-    பக்கங்களை மொழிபெயர்க்க முடியவில்லை.
   wwctiOffTarget: பொருள் மொழிபெயர்ப்பு %i க்கு முடக்கப்பட்டது.
   wwctiOffSender: பொருள் மொழிபெயர்ப்பு முடக்கப்பட்டுள்ளது
   wwcItemTranslateTitleStock: இயல்புநிலை உருப்படியின் பெயர்களை மொழிபெயர்க்க முடியவில்லை.
-  wwcItemTranslateLoreFail: உருப்படியை லோர் மொழிபெயர்க்க முடியவில்லை.
-  wwcItemTranslateTitleFail: உருப்படிப் பெயரை மொழிபெயர்க்கத் தவறியது
   wwctGUIItemButton: உருப்படி மொழிபெயர்ப்பு
   wwcItemTranslateTitleDone: மொழிபெயர்க்கப்பட்ட உருப்படியை தலைப்பு வெற்றிகரமாக.
   wwcGUITempItem: உருப்படிக் காட்சி
@@ -214,7 +207,6 @@ Messages:
   wwcItemTranslateLoreStart: இலக்கு உருப்படியை லோர் மொழிபெயர்ப்பது...
   wwcItemTranslateLoreDone: மொழிபெயர்க்கப்பட்ட உருப்படியை லோ
   wwctiOnTarget: '%i க்கு உருப்படி மொழிபெயர்ப்பு இயக்கப்பட்டது.'
-  wwcBookTranslateTitleFail: புத்தகத் தலைப்பை மொழிபெயர்க்கத் தவறினார்
   wwcInvalidTranslator: தவறான மொழிபெயர்ப்பாளர் அமைப்புகள். இந்த சொருகி பயன்படுத்த
     உங்கள் config.yml அல்லது wwcc உடன் இதை சரிசெய்யவும்.
   wwcConfigGUIEachTranslatorSettings: '%i உள்ளமைவு'

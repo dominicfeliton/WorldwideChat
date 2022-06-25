@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: ഛത് കാലഹരണപ്പെട്ടതാണ്. ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് ദയവായി അപ്ഡേറ്റുചെയ്യുക,
     %i.
   wwcConfigGUINextPageButton: അടുത്ത പേജ്
-  wwctbTranslatePageFail: (ഈ പേജ് വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു) %i
   wwcConfigInvalidTranslatorSettings: അസാധുവായ വിവർത്തകൻ ക്രമീകരണങ്ങൾ! നിങ്ങളുടെ ചൊന്ഫിഗ്.
     യ്മ്ല് ഒരു വിവർത്തകൻ മാത്രം പ്രവർത്തനക്ഷമമാക്കുക.
   wwcConfigGUIQuitButton: എക്സിറ്റ് & മാറ്റങ്ങൾ സംരക്ഷിക്കുക
@@ -185,15 +184,9 @@ Messages:
     അയച്ചു.
   wwcInventoryError: ഉപയോക്താവിന്റെ %i ന്റെ GUI ഉപയോഗിച്ചുള്ള പിശക് കണ്ടെത്തിയത് %i
     ഈ പ്രശ്നം ഡവലപ്പർക്ക് റിപ്പോർട്ട് ചെയ്യുക.
-  wwcSignTranslationFail: നിങ്ങളുടെ ടാർഗെറ്റ് ചിഹ്നത്തിൽ ഒന്നോ അതിലധികമോ വരികൾ വിവർത്തനം
-    ചെയ്യാൻ കഴിയുന്നില്ല.
-  wwcBookTranslationFail: നിങ്ങളുടെ ടാർഗെറ്റ് പുസ്തകത്തിൽ ഒന്നോ അതിലധികമോ പേജുകൾ
-    വിവർത്തനം ചെയ്യാൻ കഴിയുന്നില്ല.
   wwctiOffTarget: ഇനം പരിഭാഷ %i ന് അപ്രാപ്തമാക്കി.
   wwctiOffSender: ഇനം വിവർത്തനം അപ്രാപ്തമാക്കി.
   wwcItemTranslateTitleStock: സ്ഥിര ഇനം പേരുകൾ വിവർത്തനം ചെയ്യാൻ കഴിയുന്നില്ല.
-  wwcItemTranslateLoreFail: ഇനം നാടാകെ വിവർത്തനം പരാജയപ്പെട്ടു.
-  wwcItemTranslateTitleFail: ഇനത്തിന്റെ പേര് വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.
   wwctGUIItemButton: ഇനം വിവർത്തനം ടോഗിൾ
   wwcItemTranslateTitleDone: വിവർത്തനം ചെയ്ത ഇനം ശീർഷകം വിജയകരമായി.
   wwcGUITempItem: ഇനം പ്രദർശിപ്പിക്കുക
@@ -204,7 +197,6 @@ Messages:
   wwcItemTranslateLoreStart: ലക്ഷ്യം ഇനത്തിന്റെ നാടാകെ വിവർത്തനം...
   wwcItemTranslateLoreDone: വിവർത്തനം ചെയ്ത ഇനം വിജയകരമായി.
   wwctiOnTarget: ഇനം പരിഭാഷ %i എന്നതിന് പ്രവർത്തനക്ഷമമാക്കി.
-  wwcBookTranslateTitleFail: പുസ്തക തലക്കെട്ട് വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.
   wwcInvalidTranslator: അസാധുവായ വിവർത്തകൻ ക്രമീകരണങ്ങൾ. ഈ പ്ലഗിൻ ഉപയോഗിക്കുന്നതിന്
     നിങ്ങളുടെ കോൺഫിഗറേഷനിൽ അല്ലെങ്കിൽ /wwcc ഉപയോഗിച്ച് ഇത് പരിഹരിക്കുക.
   wwcConfigGUIEachTranslatorSettings: '%i കോൺഫിഗറേഷൻ'

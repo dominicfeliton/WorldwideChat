@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: Vaihda allekirjoittaa käännös
   wwcUpdaterOutOfDate: WorldwideChat on vanhentunut. Päivitä uusimpaan versioon, %i.
   wwcConfigGUINextPageButton: Seuraava sivu
-  wwctbTranslatePageFail: (Tämän sivun kääntäminen epäonnistui) %i
   wwcConfigInvalidTranslatorSettings: Virheelliset kääntäjän asetukset! Ota käyttöön
     vain yksi kääntäjä config.yml.
   wwcConfigGUIQuitButton: Poistu ja tallenna muutokset
@@ -183,13 +182,9 @@ Messages:
     lähetetty loki.
   wwcInventoryError: 'Virhe havaittu käyttäjä %i: n käyttöliittymän yhteydessä. Ilmoita
     tästä ongelmasta kehittäjälle.'
-  wwcSignTranslationFail: Yhtä tai useampaa riviä ei voi kääntää kohdemerkissä.
-  wwcBookTranslationFail: Yhtä tai useampaa sivua ei voi kääntää kohderyhmässä.
   wwctiOffTarget: Kohteen käännös käytöstä kohteella %i.
   wwctiOffSender: Kohteen käännös käytöstä.
   wwcItemTranslateTitleStock: Oletusnimien nimiä ei voi kääntää.
-  wwcItemTranslateLoreFail: Kohteen lore kääntäminen epäonnistui.
-  wwcItemTranslateTitleFail: Nimikkeen nimen kääntäminen epäonnistui.
   wwctGUIItemButton: Vaihda kohteen käännös
   wwcItemTranslateTitleDone: Käännetty kohteen otsikko onnistuneesti.
   wwcGUITempItem: Kohteen näyttö
@@ -200,7 +195,6 @@ Messages:
   wwcItemTranslateLoreStart: Kääntäminen Lore kohdekohteen...
   wwcItemTranslateLoreDone: Käännetty kohde Lore onnistuneesti.
   wwctiOnTarget: Kohteen käännös käytössä kohteella %i.
-  wwcBookTranslateTitleFail: Kirjan nimen kääntäminen epäonnistui.
   wwcInvalidTranslator: Kääntäjän asetukset eivät kelpaa. Korjaa tämä config.yml tai
     /wwcc käyttää tätä plugin.
   wwcConfigGUIEachTranslatorSettings: '%i määritykset'

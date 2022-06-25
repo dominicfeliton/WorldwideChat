@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: Дэлхий даяарWedeChat хуучирсан байна. Хамгийн сүүлийн үеийн
     хувилбар руу шинэчлэнэ үү, %i.
   wwcConfigGUINextPageButton: Дараагийн хуудас
-  wwctbTranslatePageFail: (Энэ хуудсыг орчуулж чадаагүй) %i
   wwcConfigInvalidTranslatorSettings: Буруу орчуулагч тохиргоо! Өөрийн config.yml-д
     зөвхөн нэг орчуулагчийг идэвхжүүлнэ үү.
   wwcConfigGUIQuitButton: Гарах & Save өөрчлөлтүүд
@@ -187,15 +186,9 @@ Messages:
     байна.
   wwcInventoryError: Алдаа хэрэглэгч %i нь GUI нь илэрсэн байна. хөгжүүлэгчид энэ
     асуудлыг тайлагнах уу.
-  wwcSignTranslationFail: Таны зорилтот тэмдэг дээр нэг буюу хэд хэдэн мөрийг орчуулах
-    боломжгүй.
-  wwcBookTranslationFail: Таны зорилтот номонд нэг буюу хэд хэдэн хуудсыг орчуулах
-    боломжгүй.
   wwctiOffTarget: Барааны орчуулга %i нь идэвхгүй.
   wwctiOffSender: Барааны орчуулга идэвхгүй.
   wwcItemTranslateTitleStock: Анхдагч зүйл нь нэрийг орчуулах боломжгүй.
-  wwcItemTranslateLoreFail: зүйл lore орчуулж чадаагүй.
-  wwcItemTranslateTitleFail: Зүйлийн нэрийг орчуулж чадаагүй.
   wwctGUIItemButton: Түлхүүр зүйл Орчуулга
   wwcItemTranslateTitleDone: Орчуулсан зүйл нэр амжилттай.
   wwcGUITempItem: Дэлгэц зүйл
@@ -206,7 +199,6 @@ Messages:
   wwcItemTranslateLoreStart: Зорилтот зүйлийн Lore орчуулах...
   wwcItemTranslateLoreDone: Орчуулсан зүйл lore амжилттай.
   wwctiOnTarget: Барааны орчуулга %i идэвхжүүлсэн.
-  wwcBookTranslateTitleFail: Номын нэрийг орчуулж чадаагүй.
   wwcInvalidTranslator: Буруу орчуулагч тохиргоо. Үүнийг өөрийн config.yml эсвэл /wwcc
     ашиглан энэ залгаасыг ашиглана уу.
   wwcConfigGUIEachTranslatorSettings: '%i Тохиргоо'
