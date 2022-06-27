@@ -292,3 +292,17 @@ Messages:
   wwcConfigGUIFatalAsyncAbortButton: 更改异步任务超时
   wwcTimeoutException: 你的命令已超时。请再试一次。
   wwcBackupLangCodesWarning: WorldwideChat 无法获取语言，而是使用备份。这可能不会影响插件的行为，但请联系开发者。
+  libreHttp400: 向 Libre Translate 发送了错误请求除非你正在做一些你不应该做的事情，否则你不应该得到这个。请联系开发者！
+  wwcConfigGUILibreTranslateApiKeyButton: 更改 Libre 翻译 API 密钥
+  libreHttp403: 缺少 Libre 翻译 API 密钥，或者你被禁止进入服务器！
+  wwcConfigConversationLibreURLSuccess: 已成功设置 Libre 网址。
+  wwcConfigConversationLibreTranslateApiKeyInput: 当前的 API 密钥是 %i。请输入 Libre 的 API 密钥，或者键入
+    0 返回。
+  wwcConfigGUILibreTranslateButton: Libre 翻译
+  libreHttp429: 由于服务器的速率限制，没有信心。
+  wwcConfigGUIToggleLibreTranslateButton: 切换 Libre 翻译
+  wwcConfigConversationLibreTranslateToggleSuccess: 成功切换 Libre 翻译。重新加载以使更改生效。
+  wwcConfigConversationLibreTranslateApiKeySuccess: 已成功设置免费 API 密钥。
+  wwcConfigConversationLibreURLInput: 当前的 URL 是 %i。请输入 Libre 的 URL，或者键入 0 返回。
+  libreHttpUnknown: '未知的 http 错误: %i'
+  wwcConfigGUILibreTranslateURLButton: 更改 Libre 翻译网址

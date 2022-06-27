@@ -380,3 +380,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat nie mógł pobierać języków, i zamiast tego
     używa kopii zapasowych. Prawdopodobnie nie wpłynie to na zachowanie wtyczki, ale
     skontaktuj się z programistą.
+  libreHttp400: Zła prośba wysłana do Libre Translate! Chyba że robisz coś, czego
+    nie powinieneś, nie powinieneś tego dostać. Skontaktuj się z deweloperem!
+  wwcConfigGUILibreTranslateApiKeyButton: Zmień klucz API Libre Translate
+  libreHttp403: Brakuje Libre Translate API Key, lub jesteś zbanowany z serwera!
+  wwcConfigConversationLibreURLSuccess: Libre URL ustawiony pomyślnie.
+  wwcConfigConversationLibreTranslateApiKeyInput: Bieżący klucz API to %i. Wprowadź
+    klucz API dla Libre lub wpisz 0, aby wrócić.
+  wwcConfigGUILibreTranslateButton: Libre Przetłumacz
+  libreHttp429: Brak pewności ze względu na limit stawek z serwera.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Przetłumacz
+  wwcConfigConversationLibreTranslateToggleSuccess: Pomyślnie przełączono Libre Translate.
+    Załaduj ponownie, aby zmiany zaczęły obowiązywać.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Klucz Libre API ustawiony pomyślnie.
+  wwcConfigConversationLibreURLInput: Bieżący adres URL to %i. Wprowadź adres URL
+    Libre lub wpisz 0, aby wrócić.
+  libreHttpUnknown: 'Nieznany błąd http: %i'
+  wwcConfigGUILibreTranslateURLButton: Zmień URL Libre Translate

@@ -380,3 +380,22 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat đã không thể lấy ngôn ngữ, và thay vào
     đó là sử dụng bản sao lưu. Điều này có thể sẽ không ảnh hưởng đến hành vi của
     plugin, nhưng vui lòng liên hệ với nhà phát triển.
+  libreHttp400: Yêu cầu xấu gửi đến Libre Dịch! Trừ khi bạn đang làm điều gì đó mà
+    bạn không nên, bạn không nên nhận được điều này. Vui lòng liên hệ với nhà phát
+    triển!
+  wwcConfigGUILibreTranslateApiKeyButton: Thay đổi Libre Translate API Key
+  libreHttp403: Thiếu Libre Dịch API Key, hoặc bạn bị cấm từ máy chủ!
+  wwcConfigConversationLibreURLSuccess: Tự do URL thiết lập thành công.
+  wwcConfigConversationLibreTranslateApiKeyInput: Khóa API hiện tại là %i. Vui lòng
+    nhập một khóa API cho Libre, hoặc gõ 0 để quay lại.
+  wwcConfigGUILibreTranslateButton: Libre Translate
+  libreHttp429: Không tự tin do giới hạn tốc độ từ máy chủ.
+  wwcConfigGUIToggleLibreTranslateButton: Bật tắt Libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Bật thành công Libre Translate.
+    Tải lại để các thay đổi có hiệu lực.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Tự do API khóa thiết lập thành
+    công.
+  wwcConfigConversationLibreURLInput: URL hiện tại là %i. Vui lòng nhập URL cho Libre,
+    hoặc gõ 0 để quay lại.
+  libreHttpUnknown: 'Lỗi http không xác định: %i'
+  wwcConfigGUILibreTranslateURLButton: Thay đổi URL Dịch tự do

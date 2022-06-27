@@ -154,7 +154,6 @@ public class LibreTranslation extends BasicTranslation {
 			}
 
 			/* Actual translation */
-			//TODO: API Keys, proper handling of HTTP error codes (403 == missing API key, 404 == bad url, etc)
 			CloseableHttpClient client = HttpClients.createDefault();
 			
 			CloseableHttpResponse response;
@@ -182,7 +181,6 @@ public class LibreTranslation extends BasicTranslation {
             	checkError(statusCode);
             }
 
-			// Failed translation; throw exceptions for certain error codes? TODO
 			return textToTranslate;
 		}
 	}

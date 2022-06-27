@@ -368,3 +368,21 @@ Messages:
   wwcBackupLangCodesWarning: VorldVideChat nije mogao da donese jezike, i umesto toga
     koristi rezervne kopije. Ovo verovatno neće uticati na ponašanje dodataka, ali
     kontaktirajte programera.
+  libreHttp400: Loš zahtev poslat Libre Translate! Osim ako ne radite nešto što ne
+    biste trebali, ne biste trebali dobiti ovo. Molimo kontaktirajte programera!
+  wwcConfigGUILibreTranslateApiKeyButton: Promena Free Translate API ključ
+  libreHttp403: Nedostaje Libre Translate API ključ, ili ste zabranjeni sa servera!
+  wwcConfigConversationLibreURLSuccess: Free URL uspešno postavljen.
+  wwcConfigConversationLibreTranslateApiKeyInput: Trenutni API ključ je %i. Molimo
+    unesite API ključ za Libre, ili unesite 0 da biste se vratili.
+  wwcConfigGUILibreTranslateButton: Libre Prevod
+  libreHttp429: Nema poverenja zbog ograničenja stope sa servera.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Uspešno toggled Libre Translate.
+    Ponovo učitajte da promene stupe na snagu.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Besplatno API ključ je uspešno
+    postavljen.
+  wwcConfigConversationLibreURLInput: Trenutni URL je %i. Molimo unesite URL za Libre,
+    ili unesite 0 da biste se vratili nazad.
+  libreHttpUnknown: 'Nepoznata http greška: %i'
+  wwcConfigGUILibreTranslateURLButton: Promena Besplatno Prevod URL

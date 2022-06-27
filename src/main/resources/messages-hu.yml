@@ -383,3 +383,20 @@ Messages:
   wwcBackupLangCodesWarning: A WorldwideChat nem tudta letölteni a nyelveket, és ehelyett
     biztonsági mentéseket használ. Ez valószínűleg nem befolyásolja a plugin viselkedését,
     de kérjük, vegye fel a kapcsolatot a fejlesztővel.
+  libreHttp400: Rossz kérés elküldve a Libre Fordítónak! Hacsak nem csinálsz valamit,
+    amit nem szabad, ezt nem szabad megkapnod. Kérjük, lépjen kapcsolatba a fejlesztővel!
+  wwcConfigGUILibreTranslateApiKeyButton: Change Libre Fordítás API Key
+  libreHttp403: Hiányzik a Libre Translate API kulcs, vagy ki van tiltva a szerverről!
+  wwcConfigConversationLibreURLSuccess: Libre URL beállítása sikeresen.
+  wwcConfigConversationLibreTranslateApiKeyInput: Az aktuális API-kulcs %i. Adjon
+    meg egy API-kulcsot a Libre számára, vagy írja be a 0 értéket a visszalépéshez.
+  wwcConfigGUILibreTranslateButton: Libre fordítás
+  libreHttp429: Nincs bizalom a szerver sebességkorlátozása miatt.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Ingyenes fordítás
+  wwcConfigConversationLibreTranslateToggleSuccess: Sikeresen váltotta a Libre Translate
+    programot. Töltse be újra a módosítások életbe lépését.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API kulcs beállítása sikeresen.
+  wwcConfigConversationLibreURLInput: Az aktuális URL %i. Adjon meg egy URL-t a Libre
+    számára, vagy írja be a 0 értéket a visszalépéshez.
+  libreHttpUnknown: 'Ismeretlen http hiba: %i'
+  wwcConfigGUILibreTranslateURLButton: Change Libre Translate

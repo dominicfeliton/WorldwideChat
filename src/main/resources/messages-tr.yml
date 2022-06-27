@@ -366,3 +366,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat dilleri getiremedi, ve bunun yerine yedekleme
     kullanıyor. Bu muhtemelen eklenti davranışını etkilemez, ancak lütfen geliştiriciyle
     iletişime geçin.
+  libreHttp400: Libre Translate"e kötü istek gönderildi! Yapmamanız gereken bir şey
+    yapmıyorsanız, bunu almamalısın. Lütfen geliştiriciyle iletişime geçin!
+  wwcConfigGUILibreTranslateApiKeyButton: Değiştir Ücretsiz API Anahtarı Çevir
+  libreHttp403: Eksiksiz Libre Çevir API Anahtarı, ya da sunucudan yasaklandın!
+  wwcConfigConversationLibreURLSuccess: Libre URL başarıyla ayarlandı.
+  wwcConfigConversationLibreTranslateApiKeyInput: Geçerli API anahtarı %i. Lütfen
+    Libre için bir API anahtarı girin veya geri dönmek için 0 yazın.
+  wwcConfigGUILibreTranslateButton: Libre Çevir
+  libreHttp429: Sunucudan gelen oran sınırı nedeniyle güven yok.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Çevir
+  wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate başarıyla değiştirildi.
+    Değişikliklerin etkili olması için yeniden yükleyin.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API anahtarı başarıyla ayarlandı.
+  wwcConfigConversationLibreURLInput: Geçerli URL %i. Lütfen Libre için bir URL girin
+    veya geri dönmek için 0 yazın.
+  libreHttpUnknown: 'Bilinmeyen http hatası: %i'
+  wwcConfigGUILibreTranslateURLButton: Ücretsiz Çevir URL'sini değiştir

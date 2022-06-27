@@ -372,3 +372,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat ვერ მოიტანონ ენებზე, და ნაცვლად გამოყენებით
     სარეზერვო. ეს, ალბათ, გავლენას არ მოახდენს მოდულის ქცევაზე, მაგრამ გთხოვთ, დაუკავშირდეთ
     დეველოპერს.
+  libreHttp400: ცუდი მოთხოვნა გაიგზავნა Libre Translate! თუ არ აკეთებთ იმას, რაც არ
+    უნდა, არ უნდა მიიღოთ ეს. გთხოვთ, დაუკავშირდეთ დეველოპერს!
+  wwcConfigGUILibreTranslateApiKeyButton: შეცვლა უფასო თარგმნის API გასაღები
+  libreHttp403: დაკარგული უფასო Translate API Key, ან თქვენ აკრძალული სერვერზე!
+  wwcConfigConversationLibreURLSuccess: უფასო URL მითითებული წარმატებით.
+  wwcConfigConversationLibreTranslateApiKeyInput: მიმდინარე API გასაღები არის %i.
+    გთხოვთ შეიყვანოთ API გასაღები Libre, ან აკრიფოთ 0 დაბრუნდეს.
+  wwcConfigGUILibreTranslateButton: უფასო თარგმნა
+  libreHttp429: ნდობის გამო განაკვეთი ლიმიტი სერვერზე.
+  wwcConfigGUIToggleLibreTranslateButton: გადართვა უფასო თარგმნა
+  wwcConfigConversationLibreTranslateToggleSuccess: წარმატებით გადართვა Libre Translate.
+    განაახლეთ ცვლილებები ძალაში.
+  wwcConfigConversationLibreTranslateApiKeySuccess: უფასო API გასაღები კომპლექტი წარმატებით.
+  wwcConfigConversationLibreURLInput: მიმდინარე URL არის %i. გთხოვთ, შეიყვანოთ URL
+    უფასოდ, ან ჩაწერეთ 0 დასაბრუნებლად.
+  libreHttpUnknown: 'უცნობი http შეცდომა: %i'
+  wwcConfigGUILibreTranslateURLButton: შეცვლა უფასო თარგმნის URL

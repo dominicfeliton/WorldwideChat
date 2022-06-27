@@ -404,3 +404,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat n'a pas pu récupérer les langues et utilise
     plutôt des sauvegardes. Cela n'affectera probablement pas le comportement du plugiciel,
     mais veuillez contacter le développeur.
+  libreHttp400: Mauvaise demande envoyée à Libre Translate! À moins que vous ne fassiez
+    quelque chose que vous ne devriez pas faire, vous ne devriez pas l'obtenir. Veuillez
+    contacter le développeur!
+  wwcConfigGUILibreTranslateApiKeyButton: Changer la clé de l'API de traduction libre
+  libreHttp403: La clé API Libre Translate est manquante, ou vous êtes banni du serveur!
+  wwcConfigConversationLibreURLSuccess: URL libre définie avec succès.
+  wwcConfigConversationLibreTranslateApiKeyInput: La clé API actuelle est %i. Saisissez
+    une clé API pour Libre ou tapez 0 pour revenir en arrière.
+  wwcConfigGUILibreTranslateButton: Libre Traduire
+  libreHttp429: Pas de confiance en raison de la limite de débit du serveur.
+  wwcConfigGUIToggleLibreTranslateButton: Basculer la traduction libre
+  wwcConfigConversationLibreTranslateToggleSuccess: La traduction libre a été activée
+    avec succès. Recharger pour que les modifications entrent en vigueur.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Jeu de clés API libre réussi.
+  wwcConfigConversationLibreURLInput: L'URL actuelle est %i. Saisissez une URL pour
+    Libre ou tapez 0 pour revenir en arrière.
+  libreHttpUnknown: 'Erreur HTTP inconnue: %i'
+  wwcConfigGUILibreTranslateURLButton: Changer l'URL de traduction libre

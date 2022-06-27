@@ -376,3 +376,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldChat tidak dapat mengambil bahasa, dan malah menggunakan
     cadangan. Ini mungkin tidak akan mempengaruhi perilaku plugin, tetapi silakan
     hubungi pengembang.
+  libreHttp400: Permintaan buruk dikirim ke Libre Translate! Kecuali Anda melakukan
+    sesuatu yang seharusnya tidak Anda lakukan, Anda seharusnya tidak mendapatkan
+    ini. Silahkan hubungi pengembang!
+  wwcConfigGUILibreTranslateApiKeyButton: Ubah Gratis Terjemahkan Kunci API
+  libreHttp403: Hilang Libre Terjemahkan API Key, atau Anda dilarang dari server!
+  wwcConfigConversationLibreURLSuccess: URL Gratis berhasil diatur.
+  wwcConfigConversationLibreTranslateApiKeyInput: Kunci API saat ini adalah %i. Harap
+    masukan kunci API untuk Libre, atau tipe 0 untuk kembali.
+  wwcConfigGUILibreTranslateButton: Libre Terjemahkan
+  libreHttp429: Tidak percaya diri karena batas tingkat dari server.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Terjemahkan
+  wwcConfigConversationLibreTranslateToggleSuccess: Berhasil toggled Gratis Translate.
+    Muat ulang agar perubahan diterapkan.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Kunci API Libre berhasil ditetapkan.
+  wwcConfigConversationLibreURLInput: URL saat ini adalah %i. Silakan masukan URL
+    untuk Libre, atau ketik 0 untuk kembali.
+  libreHttpUnknown: 'Galat http tidak dikenal: %i'
+  wwcConfigGUILibreTranslateURLButton: Ubah URL Terjemahkan Gratis

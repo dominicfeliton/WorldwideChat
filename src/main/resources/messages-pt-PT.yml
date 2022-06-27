@@ -390,3 +390,22 @@ Messages:
   wwcBackupLangCodesWarning: O WorldwideChat não conseguiu buscar idiomas e, em vez
     disso, está usando backups. Isso provavelmente não afetará o comportamento do
     plugin, mas entre em contato com o desenvolvedor.
+  libreHttp400: Pedido ruim enviado para Libre Translate! A menos que você esteja
+    fazendo algo que não deveria, você não deve entender isso. Entre em contato com
+    o desenvolvedor!
+  wwcConfigGUILibreTranslateApiKeyButton: Change Libre Translate API Key
+  libreHttp403: Faltando Libre Translate API Key, ou você está banido do servidor!
+  wwcConfigConversationLibreURLSuccess: URL livre definido com sucesso.
+  wwcConfigConversationLibreTranslateApiKeyInput: A chave de API atual é %i. Insira
+    uma chave de API para Libre ou digite 0 para voltar.
+  wwcConfigGUILibreTranslateButton: Libre Traduzir
+  libreHttp429: Sem confiança devido ao limite de taxa do servidor.
+  wwcConfigGUIToggleLibreTranslateButton: Alternar Livre Traduzir
+  wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate alternado com
+    sucesso. Recarregue para que as alterações entrem em vigor.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Chave de API livre definida com
+    sucesso.
+  wwcConfigConversationLibreURLInput: O URL atual é %i. Insira um URL para Libre ou
+    digite 0 para voltar.
+  libreHttpUnknown: 'Erro http desconhecido: %i'
+  wwcConfigGUILibreTranslateURLButton: Alterar URL de tradução livre

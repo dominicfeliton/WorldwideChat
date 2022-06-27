@@ -383,3 +383,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat не успя да донесе езици и вместо това използва
     резервни копия. Това вероятно няма да повлияе на поведението на приставките, но
     моля свържете се с разработчика.
+  libreHttp400: Лошо искане изпратено до Libre Translate! Освен ако не правите нещо,
+    което не трябва, не трябва да получавате това. Моля, свържете се с разработчика!
+  wwcConfigGUILibreTranslateApiKeyButton: Промяна на свободен превод на API ключ
+  libreHttp403: Липсва Libre Translate API ключ, или сте забранени от сървъра!
+  wwcConfigConversationLibreURLSuccess: Безплатен URL зададен успешно.
+  wwcConfigConversationLibreTranslateApiKeyInput: Настоящият API ключ е %i. Моля,
+    въведете API ключ за Libre или въведете 0, за да се върнете.
+  wwcConfigGUILibreTranslateButton: Свободен превод
+  libreHttp429: Няма доверие поради ограничение на тарифа от сървъра.
+  wwcConfigGUIToggleLibreTranslateButton: Превключване на безплатен превод
+  wwcConfigConversationLibreTranslateToggleSuccess: Успешно прекъсна Libre Translate.
+    Презареждане, за да влязат в сила промените.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Безплатно API ключ набор успешно.
+  wwcConfigConversationLibreURLInput: Текущият URL адрес е %i. Моля, въведете URL
+    адрес за Libre или въведете 0, за да се върнете.
+  libreHttpUnknown: 'Неизвестна http грешка: %i'
+  wwcConfigGUILibreTranslateURLButton: Промяна на безплатен превод URL

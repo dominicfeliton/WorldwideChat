@@ -298,3 +298,17 @@ Messages:
   wwcConfigGUIFatalAsyncAbortButton: 非同期タスクタイムアウトの変更
   wwcTimeoutException: コマンドがタイムアウトしました。もう一度お試しください。
   wwcBackupLangCodesWarning: WorldwideChatは言語を取得できず、代わりにバックアップを使用しています。これはおそらくプラグインの動作には影響しませんが、開発者に連絡してください。
+  libreHttp400: 不正なリクエストがLibre Translateに送信されました！やるべきでないことをしているのでなければ、これを得てはいけない。開発者に連絡してください！
+  wwcConfigGUILibreTranslateApiKeyButton: リブレ翻訳 API キーを変更
+  libreHttp403: Libre Translate APIキーがないか、サーバーから禁止されています！
+  wwcConfigConversationLibreURLSuccess: Libre URL が正常に設定されました。
+  wwcConfigConversationLibreTranslateApiKeyInput: 現在の API キーは %i です。Libre の API キーを入力するか、0
+    を入力して戻ってください。
+  wwcConfigGUILibreTranslateButton: リブレ翻訳
+  libreHttp429: サーバーからのレート制限のため、信頼性がありません。
+  wwcConfigGUIToggleLibreTranslateButton: リブレ翻訳のトグル
+  wwcConfigConversationLibreTranslateToggleSuccess: リブレ翻訳を正常に切り替えました。リロードして変更を有効にします。
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API キーが正常に設定されました。
+  wwcConfigConversationLibreURLInput: 現在の URL は %i です。Libre の URL を入力するか、0 を入力して戻ってください。
+  libreHttpUnknown: '不明な http エラー: %i'
+  wwcConfigGUILibreTranslateURLButton: リブレ翻訳 URL を変更

@@ -367,3 +367,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat قادر به واکشی زبان بود, و به جای استفاده
     از پشتیبان گیری. این احتمالا بر رفتار پلاگین تاثیر نمی گذارد، اما لطفا با توسعه
     دهنده تماس بگیرید.
+  libreHttp400: درخواست بد ارسال به رایگان ترجمه! مگر اینکه شما کاری را انجام می دهید
+    که نباید انجام دهید، نباید این را دریافت کنید. لطفا با توسعه دهنده تماس بگیرید!
+  wwcConfigGUILibreTranslateApiKeyButton: تغییر رایگان ترجمه API های کلیدی
+  libreHttp403: گمشده رایگان ترجمه API های کلیدی, و یا شما از سرور ممنوع!
+  wwcConfigConversationLibreURLSuccess: URL رایگان با موفقیت تنظیم شده است.
+  wwcConfigConversationLibreTranslateApiKeyInput: کلید API فعلی %i است لطفا یک کلید
+    API برای Libre وارد کنید، یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigGUILibreTranslateButton: رایگان ترجمه
+  libreHttp429: عدم اعتماد به نفس به دلیل محدودیت نرخ از سرور.
+  wwcConfigGUIToggleLibreTranslateButton: تعویض رایگان ترجمه
+  wwcConfigConversationLibreTranslateToggleSuccess: موفقیت جابجا رایگان ترجمه. بازنگری
+    برای تغییرات به اثر.
+  wwcConfigConversationLibreTranslateApiKeySuccess: کلید API رایگان با موفقیت تنظیم
+    شده است.
+  wwcConfigConversationLibreURLInput: آدرس فعلی %i است لطفا یک URL را برای Libre وارد
+    کنید، یا 0 را برای بازگشت تایپ کنید.
+  libreHttpUnknown: 'خطای http ناشناخته: %i'
+  wwcConfigGUILibreTranslateURLButton: تغییر رایگان ترجمه URL

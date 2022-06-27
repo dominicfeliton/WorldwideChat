@@ -377,3 +377,21 @@ Messages:
   wwcTimeoutException: നിങ്ങളുടെ കമാൻഡ് സമയമെടുത്തു. ദയവായി വീണ്ടും ശ്രമിക്കുക.
   wwcBackupLangCodesWarning: WorldwideChat ഭാഷകൾ ലഭ്യമാക്കാൻ കഴിഞ്ഞില്ല, പകരം ബാക്കപ്പുകൾ
     ഉപയോഗിക്കുന്നു. ഇത് ഒരുപക്ഷേ പ്ലഗിൻ സ്വഭാവത്തെ ബാധിക്കില്ല, എന്നാൽ ഡെവലപ്പർ ബന്ധപ്പെടുക.
+  libreHttp400: ലിബ്രെ വിവർത്തനം അയച്ച മോശം അഭ്യർത്ഥന! നിങ്ങൾ പാടില്ലാത്ത എന്തെങ്കിലും
+    ചെയ്യുന്നില്ലെങ്കിൽ, ഈ നേടുകയും പാടില്ല. ഡവലപ്പറെ ബന്ധപ്പെടുക!
+  wwcConfigGUILibreTranslateApiKeyButton: സൗജന്യ വിവർത്തനം API കീ മാറ്റുക
+  libreHttp403: ലിബ്രെ കാണാതായ API കീ വിവർത്തനം, അല്ലെങ്കിൽ നിങ്ങൾ സെർവറിൽ നിന്ന്
+    നിരോധിച്ചിരിക്കുന്നു!
+  wwcConfigConversationLibreURLSuccess: സൗജന്യ URL വിജയകരമായി സജ്ജമാക്കി.
+  wwcConfigConversationLibreTranslateApiKeyInput: നിലവിലെ API കീ %i ആണ്. Libre- നായി
+    ദയവായി ഒരു API കീ ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
+  wwcConfigGUILibreTranslateButton: സൗജന്യ വിവർത്തനം
+  libreHttp429: സെർവറിൽ നിന്ന് നിരക്ക് പരിധി കാരണം ആത്മവിശ്വാസം ഇല്ല.
+  wwcConfigGUIToggleLibreTranslateButton: സൗജന്യ ടോഗിൾ വിവർത്തനം
+  wwcConfigConversationLibreTranslateToggleSuccess: വിജയകരമായി ലിബ്രെ വിവർത്തനം ടോഗിൾ.
+    മാറ്റങ്ങൾ പ്രാബല്യത്തിൽ വരുന്നതിന് വീണ്ടും ലോഡുചെയ്യുക.
+  wwcConfigConversationLibreTranslateApiKeySuccess: വിജയകരമായി സ്വതന്ത്ര API കീ സെറ്റ്.
+  wwcConfigConversationLibreURLInput: നിലവിലെ URL %i ആണ്. Libre- നായി ദയവായി ഒരു URL
+    ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
+  libreHttpUnknown: 'അജ്ഞാതമായ http പിശക്: %i'
+  wwcConfigGUILibreTranslateURLButton: മാറ്റുക സ്വതന്ത്ര URL വിവർത്തനം

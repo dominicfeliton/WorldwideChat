@@ -373,3 +373,20 @@ Messages:
   wwcTimeoutException: Vypršel časový limit vašeho příkazu. Prosím, zkuste to znovu.
   wwcBackupLangCodesWarning: WorldwideChat nebyl schopen načíst jazyky, a místo toho
     používá zálohy. To pravděpodobně neovlivní chování pluginu, ale kontaktujte vývojáře.
+  libreHttp400: Špatný požadavek zaslán Libre Translate! Pokud neděláte něco, co byste
+    neměli, neměli byste to dostat. Kontaktujte vývojáře!
+  wwcConfigGUILibreTranslateApiKeyButton: Změnit zdarma Přeložit API Key
+  libreHttp403: Chybějící Libre Translate API Key, nebo máte ze serveru zakázán!
+  wwcConfigConversationLibreURLSuccess: Knihovna URL byla úspěšně nastavena.
+  wwcConfigConversationLibreTranslateApiKeyInput: Aktuální klíč API je %i. Zadejte
+    prosím klíč API pro Libre, nebo zadejte 0, abyste se vrátili zpět.
+  wwcConfigGUILibreTranslateButton: Libre Přeložit
+  libreHttp429: Žádná důvěra kvůli limitu rychlosti ze serveru.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Přeložit
+  wwcConfigConversationLibreTranslateToggleSuccess: Úspěšně přepnout Libre Translate.
+    Znovu načtěte, aby se změny projevily.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Klíč zdarma API úspěšně nastaven.
+  wwcConfigConversationLibreURLInput: Aktuální URL je %i. Zadejte prosím URL pro Libre,
+    nebo zadejte 0 pro návrat zpět.
+  libreHttpUnknown: 'Neznámá chyba http: %i'
+  wwcConfigGUILibreTranslateURLButton: Změnit zdarma Přeložit URL

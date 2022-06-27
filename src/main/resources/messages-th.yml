@@ -332,3 +332,18 @@ Messages:
   wwcTimeoutException: คำสั่งของคุณหมดเวลาโปรดลองใหม่อีกครั้ง
   wwcBackupLangCodesWarning: WorldwideChat ไม่สามารถดึงข้อมูลภาษาได้ และใช้การสำรองข้อมูลแทนนี้อาจจะไม่ส่งผลกระทบต่อการทำงานของปลั๊กอิน,
     แต่โปรดติดต่อนักพัฒนาซอฟต์แวร์.
+  libreHttp400: คำขอที่ไม่ดีส่งไปยังฟรีแปลภาษา!ถ้าคุณกำลังทำสิ่งที่คุณไม่ควร, คุณไม่ควรจะได้รับนี้.กรุณาติดต่อนักพัฒนา!
+  wwcConfigGUILibreTranslateApiKeyButton: เปลี่ยนคีย์ API แปล Libre
+  libreHttp403: ขาดหายไป Libre แปล API คีย์, หรือคุณถูกห้ามจากเซิร์ฟเวอร์!
+  wwcConfigConversationLibreURLSuccess: ตั้งค่า URL ฟรีเรียบร้อยแล้ว
+  wwcConfigConversationLibreTranslateApiKeyInput: คีย์ API ปัจจุบันคือ %i โปรดป้อนคีย์
+    API สำหรับ Libre หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUILibreTranslateButton: ลิเบร แปลภาษา
+  libreHttp429: ไม่มีความเชื่อมั่นเนื่องจากการ จำกัด อัตราจากเซิร์ฟเวอร์
+  wwcConfigGUIToggleLibreTranslateButton: สลับ ฟรีแปล
+  wwcConfigConversationLibreTranslateToggleSuccess: ประสบความสำเร็จในการสลับฟรีแปลภาษาโหลดใหม่เพื่อให้การเปลี่ยนแปลงมีผล
+  wwcConfigConversationLibreTranslateApiKeySuccess: ชุดคีย์ Libre API เรียบร้อยแล้ว
+  wwcConfigConversationLibreURLInput: URL ปัจจุบันคือ %i โปรดป้อน URL สำหรับ Libre
+    หรือพิมพ์ 0 เพื่อย้อนกลับ
+  libreHttpUnknown: 'ไม่ทราบข้อผิดพลาด http: %i'
+  wwcConfigGUILibreTranslateURLButton: เปลี่ยน URL แปลภาษา Libre

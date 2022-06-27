@@ -385,3 +385,22 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat kon geen talen ophalen en gebruikt in plaats
     daarvan back-ups. Dit heeft waarschijnlijk geen invloed op het gedrag van plug-ins,
     maar neem contact op met de ontwikkelaar.
+  libreHttp400: Slecht verzoek verzonden naar Libre Translate! Tenzij je iets doet
+    wat je niet zou moeten doen, zou je dit niet moeten krijgen. Neem dan contact
+    op met de ontwikkelaar!
+  wwcConfigGUILibreTranslateApiKeyButton: Verander Libre Translate API-sleutel
+  libreHttp403: Ontbrekende Libre Translate API-sleutel, of je bent verbannen van
+    de server!
+  wwcConfigConversationLibreURLSuccess: Libre URL is succesvol ingesteld.
+  wwcConfigConversationLibreTranslateApiKeyInput: De huidige API-sleutel is %i. Voer
+    een API-sleutel in voor Libre, of typ 0 om terug te gaan.
+  wwcConfigGUILibreTranslateButton: Libre Vertalen
+  libreHttp429: Geen vertrouwen vanwege de snelheidslimiet van de server.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Vertalen
+  wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate is succesvol omgeschakeld.
+    Laad opnieuw om de wijzigingen van kracht te laten worden.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API-sleutelset met succes.
+  wwcConfigConversationLibreURLInput: De huidige URL is %i. Voer een URL in voor Libre,
+    of typ 0 om terug te gaan.
+  libreHttpUnknown: 'Onbekende http-fout: %i'
+  wwcConfigGUILibreTranslateURLButton: De URL van Libre Translate wijzigen

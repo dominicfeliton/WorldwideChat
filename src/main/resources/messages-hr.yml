@@ -377,3 +377,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat nije mogao dohvatiti jezike i umjesto toga
     koristi sigurnosne kopije. To vjerojatno neće utjecati na ponašanje dodataka,
     ali obratite se razvojnom programeru.
+  libreHttp400: Loš zahtjev poslan Libre Prijevod Osim ako ne radite nešto što ne
+    biste trebali, ne biste trebali dobiti ovo. Obratite se razvojnom programeru!
+  wwcConfigGUILibreTranslateApiKeyButton: Promjena Besplatno Prevedi API ključ
+  libreHttp403: Nedostaje Libre Translate API ključ, ili ste zabranjeni s poslužitelja!
+  wwcConfigConversationLibreURLSuccess: Besplatni URL uspješno postavljen.
+  wwcConfigConversationLibreTranslateApiKeyInput: Trenutni API ključ je %i. Molimo
+    unesite API ključ za Libre, ili upišite 0 da biste se vratili.
+  wwcConfigGUILibreTranslateButton: Libre Prevedi
+  libreHttp429: Nema povjerenja zbog ograničenja stope od poslužitelja.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Prijevod
+  wwcConfigConversationLibreTranslateToggleSuccess: Uspješno toggled Libre Translate.
+    Učitaj kako bi promjene stupile na snagu.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Besplatno API ključ postavljen
+    uspješno.
+  wwcConfigConversationLibreURLInput: Trenutni URL je %i. Unesite URL za Libre ili
+    upišite 0 da biste se vratili.
+  libreHttpUnknown: 'Nepoznata http pogreška: %i'
+  wwcConfigGUILibreTranslateURLButton: Promijeni Libre URL za prijevod

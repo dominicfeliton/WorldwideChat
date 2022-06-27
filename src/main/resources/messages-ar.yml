@@ -347,3 +347,21 @@ Messages:
   wwcBackupLangCodesWarning: لم يتمكن WorldwideChat من جلب اللغات، وبدلاً من ذلك يستخدم
     النسخ الاحتياطية. ربما لن يؤثر هذا على سلوك المكون الإضافي، ولكن يرجى الاتصال
     بالمطور.
+  libreHttp400: تم إرسال طلب سيء إلى Libre Translate! ما لم تكن تفعل شيئًا لا يجب
+    عليك فعله، فلا يجب أن تحصل عليه. يرجى الاتصال بالمطور!
+  wwcConfigGUILibreTranslateApiKeyButton: تغيير مفتاح واجهة برمجة التطبيقات لترجمة
+    Libre
+  libreHttp403: مفتاح واجهة برمجة تطبيقات Libre Translate مفقود، أو تم حظرك من الخادم!
+  wwcConfigConversationLibreURLSuccess: تم تعيين عنوان URL Libre بنجاح.
+  wwcConfigConversationLibreTranslateApiKeyInput: مفتاح API الحالي هو %i. الرجاء إدخال
+    مفتاح API لـ Libre، أو اكتب 0 للرجوع إليه.
+  wwcConfigGUILibreTranslateButton: ترجمة ليبر
+  libreHttp429: عدم الثقة بسبب حد المعدل من الخادم.
+  wwcConfigGUIToggleLibreTranslateButton: تبديل ليبر ترجمة
+  wwcConfigConversationLibreTranslateToggleSuccess: تم تبديل ترجمة Libre بنجاح. أعد
+    تحميل التغييرات لتصبح نافذة المفعول.
+  wwcConfigConversationLibreTranslateApiKeySuccess: تم تعيين مفتاح Libre API بنجاح.
+  wwcConfigConversationLibreURLInput: عنوان URL الحالي هو %i. الرجاء إدخال عنوان URL
+    لـ Libre، أو اكتب 0 للرجوع إليه.
+  libreHttpUnknown: 'خطأ http غير معروف: %i'
+  wwcConfigGUILibreTranslateURLButton: تغيير عنوان URL لترجمة Libre

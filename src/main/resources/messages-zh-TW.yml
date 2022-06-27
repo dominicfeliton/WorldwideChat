@@ -293,3 +293,17 @@ Messages:
   wwcConfigGUIFatalAsyncAbortButton: 更改異步任務超時
   wwcTimeoutException: 你的命令超時請重試。
   wwcBackupLangCodesWarning: 全球無法獲取語言，而是使用備份。這可能不會影響外掛程式的行為，但請聯絡開發人員。
+  libreHttp400: 錯誤的請求發送到自由翻譯!除非你正在做一些你不應該做的事情，否則你不應該得到這個。請聯繫開發人員！
+  wwcConfigGUILibreTranslateApiKeyButton: 更改自由翻譯 API 密鑰
+  libreHttp403: 缺少免費翻譯 API 密鑰，或者您被禁止從服務器！
+  wwcConfigConversationLibreURLSuccess: 免費網址設定成功。
+  wwcConfigConversationLibreTranslateApiKeyInput: 目前的 API 金鑰是 %i。請輸入自由報的 API 金鑰，或輸入
+    0 返回。
+  wwcConfigGUILibreTranslateButton: 免費翻譯
+  libreHttp429: 由於服務器的速率限制，沒有信心。
+  wwcConfigGUIToggleLibreTranslateButton: 切換免費翻譯
+  wwcConfigConversationLibreTranslateToggleSuccess: 成功切換免費翻譯.重新載入以使變更生效。
+  wwcConfigConversationLibreTranslateApiKeySuccess: 自由 API 密鑰設置成功。
+  wwcConfigConversationLibreURLInput: 目前的網址為 %i。請輸入自由網址，或輸入 0 返回。
+  libreHttpUnknown: 未知的錯誤： %i
+  wwcConfigGUILibreTranslateURLButton: 更改免費翻譯網址

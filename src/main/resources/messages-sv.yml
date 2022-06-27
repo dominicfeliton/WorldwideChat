@@ -383,3 +383,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat kunde inte hämta språk, och använder istället
     säkerhetskopior. Detta kommer förmodligen inte att påverka plugin-beteendet, men
     kontakta utvecklaren.
+  libreHttp400: Dålig begäran skickas till Libre Translate! Om du inte gör något som
+    du inte borde, borde du inte få det här. Kontakta utvecklaren!
+  wwcConfigGUILibreTranslateApiKeyButton: Ändra Ledig Översätt API-nyckel
+  libreHttp403: Saknas Libre Translate API Key, eller så är du förbjuden från servern!
+  wwcConfigConversationLibreURLSuccess: Libre URL har ställts in.
+  wwcConfigConversationLibreTranslateApiKeyInput: Den aktuella API-nyckeln är %i.
+    Ange en API-nyckel för Libre, eller skriv 0 för att gå tillbaka.
+  wwcConfigGUILibreTranslateButton: Libre Översätt
+  libreHttp429: Inget förtroende på grund av räntegräns från servern.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Översätt
+  wwcConfigConversationLibreTranslateToggleSuccess: Framgångsrikt växlade Libre Translate.
+    Ladda om för att ändringarna ska träda i kraft.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API-nyckel har ställts in
+    framgångsrikt.
+  wwcConfigConversationLibreURLInput: Den aktuella webbadressen är %i. Ange en webbadress
+    för Libre, eller skriv 0 för att gå tillbaka.
+  libreHttpUnknown: 'Okänt http-fel: %i'
+  wwcConfigGUILibreTranslateURLButton: Change Libre Översätt URL

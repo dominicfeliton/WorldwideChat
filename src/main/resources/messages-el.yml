@@ -407,3 +407,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat δεν ήταν δυνατή η λήψη γλωσσών, και αντ
     'αυτού χρησιμοποιεί αντίγραφα ασφαλείας. Αυτό πιθανότατα δεν θα επηρεάσει τη συμπεριφορά
     του plugin, αλλά παρακαλούμε επικοινωνήστε με τον προγραμματιστή.
+  libreHttp400: Κακό αίτημα εστάλη στο Libre Μετάφραση! Αν δεν κάνετε κάτι που δεν
+    πρέπει, δεν πρέπει να το πάρετε αυτό. Παρακαλούμε επικοινωνήστε με τον προγραμματιστή!
+  wwcConfigGUILibreTranslateApiKeyButton: Αλλάξτε το κλειδί API μετάφρασης Libre
+  libreHttp403: Λείπει Libre Μετάφραση API Key, ή έχετε απαγορευτεί από το διακομιστή!
+  wwcConfigConversationLibreURLSuccess: Το Libre URL ορίστηκε επιτυχώς.
+  wwcConfigConversationLibreTranslateApiKeyInput: Το τρέχον κλειδί API είναι %i. Παρακαλώ
+    εισάγετε ένα κλειδί API για το Libre, ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUILibreTranslateButton: Ελεύθερη Μετάφραση
+  libreHttp429: Δεν υπάρχει εμπιστοσύνη λόγω ορίου ρυθμού από το διακομιστή.
+  wwcConfigGUIToggleLibreTranslateButton: Εναλλαγή μετάφρασης Libre
+  wwcConfigConversationLibreTranslateToggleSuccess: Επιτυχής ενέγγει το Libre Translate.
+    Επαναφόρτωση για να τεθούν σε ισχύ οι αλλαγές.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Το κλειδί Libre API ορίστηκε με
+    επιτυχία.
+  wwcConfigConversationLibreURLInput: Το τρέχον URL είναι %i. Παρακαλώ εισάγετε ένα
+    URL για το Libre, ή πληκτρολογήστε 0 για να επιστρέψετε.
+  libreHttpUnknown: 'Άγνωστο σφάλμα http: %i'
+  wwcConfigGUILibreTranslateURLButton: Αλλαγή διεύθυνσης URL μετάφρασης Libre

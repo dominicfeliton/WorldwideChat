@@ -336,3 +336,20 @@ Messages:
   wwcTimeoutException: הפקודה שלך מתוזמנת. אנא נסה שוב.
   wwcBackupLangCodesWarning: WorldwideChat לא הצליח להביא שפות, ובמקום זאת הוא משתמש
     בגיבויים. זה כנראה לא ישפיע על התנהגות הפלאגין, אך אנא פנה למפתח.
+  libreHttp400: בקשה גרועה שנשלחה ליברה תרגם! אלא אם כן אתה עושה משהו שאתה לא צריך,
+    אתה לא צריך לקבל את זה. אנא צרו קשר עם היזם!
+  wwcConfigGUILibreTranslateApiKeyButton: שינוי חינם תרגם את מפתח ה- API
+  libreHttp403: חסר Libre תרגום מפתח API, או שאתה מוחרם מהשרת!
+  wwcConfigConversationLibreURLSuccess: URL חינם להגדיר בהצלחה.
+  wwcConfigConversationLibreTranslateApiKeyInput: מפתח ה- API הנוכחי הוא %i. אנא הזן
+    מפתח API עבור Libre, או הקלד 0 כדי לחזור.
+  wwcConfigGUILibreTranslateButton: תרגום חופשי
+  libreHttp429: אין אמון בשל מגבלת שיעור מהשרת.
+  wwcConfigGUIToggleLibreTranslateButton: החלף חינם תרגם
+  wwcConfigConversationLibreTranslateToggleSuccess: בהצלחה עבר ליברה תרגם. טען מחדש
+    כדי שהשינויים ייכנסו לתוקף.
+  wwcConfigConversationLibreTranslateApiKeySuccess: מפתח API חינם להגדיר בהצלחה.
+  wwcConfigConversationLibreURLInput: כתובת האתר הנוכחית היא %i. אנא הזן כתובת URL
+    עבור Libre, או הקלד 0 כדי לחזור.
+  libreHttpUnknown: 'שגיאת HTTP לא ידועה: %i'
+  wwcConfigGUILibreTranslateURLButton: שינוי חינם תרגם את כתובת האתר

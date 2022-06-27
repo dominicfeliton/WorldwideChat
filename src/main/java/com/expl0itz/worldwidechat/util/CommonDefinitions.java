@@ -211,8 +211,6 @@ public class CommonDefinitions {
 	  * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
 	  */
 	public static String getMessage(String messageName, String[] replacements) {
-		//TODO: If the final message is actually the same as inMessage, don't say translation failed...fix behavior POTENTIALLY
-		// EX: Saying Hello with Watson translates to Hello, sucks but w/e
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
 		YamlConfiguration messagesConfig = main.getConfigManager().getMessagesConfig();
@@ -452,8 +450,6 @@ public class CommonDefinitions {
 				sendTimeoutExceptionMessage(currPlayer);
 				return inMessage;
 			}
-			
-			//TODO: Revise confidence exception detection if possible?
 			
 			/* Add 1 to error count */
 			main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);

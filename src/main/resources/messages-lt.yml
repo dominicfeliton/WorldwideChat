@@ -373,3 +373,20 @@ Messages:
   wwcBackupLangCodesWarning: “WorldwideChat” negalėjo atgauti kalbų ir vietoj to naudoja
     atsargines kopijas. Tai tikriausiai neturės įtakos įskiepių elgesiui, tačiau susisiekite
     su kūrėju.
+  libreHttp400: Blogas prašymas išsiųstas Libre Translate! Nebent jūs darote kažką,
+    ko neturėtumėte, neturėtumėte to gauti. Prašome susisiekti su kūrėju!
+  wwcConfigGUILibreTranslateApiKeyButton: Keisti Nemokamai Versti API raktą
+  libreHttp403: Trūksta “Libre Translate API Key”, arba esate uždraustas iš serverio!
+  wwcConfigConversationLibreURLSuccess: Nemokama URL sėkmingai nustatyti.
+  wwcConfigConversationLibreTranslateApiKeyInput: Dabartinis API raktas yra %i. Įveskite
+    API raktą, skirtą “Libre”, arba įveskite 0, kad grįžtumėte.
+  wwcConfigGUILibreTranslateButton: Nemokamai Versti
+  libreHttp429: Nėra pasitikėjimo dėl normos ribos nuo serverio.
+  wwcConfigGUIToggleLibreTranslateButton: Perjungti Nemokamai Versti
+  wwcConfigConversationLibreTranslateToggleSuccess: Sėkmingai perėjo Nemokamai Versti.
+    Perkraukite, kad pakeitimai įsigaliotų.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Nemokamai API raktų rinkinys sėkmingai.
+  wwcConfigConversationLibreURLInput: Dabartinis URL yra %i. Įveskite URL, skirtą
+    “Libre”, arba įveskite 0, kad grįžtumėte atgal.
+  libreHttpUnknown: 'Nežinoma http klaida: %i'
+  wwcConfigGUILibreTranslateURLButton: Keisti Nemokamai Versti URL

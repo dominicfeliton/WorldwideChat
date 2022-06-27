@@ -372,3 +372,22 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat ਭਾਸ਼ਾ ਲਿਆਉਣ ਲਈ ਅਸਮਰੱਥ ਸੀ, ਅਤੇ ਇਸ ਦੀ ਬਜਾਏ
     ਬੈਕਅੱਪ ਵਰਤ ਰਿਹਾ ਹੈ. ਇਹ ਸ਼ਾਇਦ ਪਲੱਗਇਨ ਵਿਵਹਾਰ ਨੂੰ ਪ੍ਰਭਾਵਤ ਨਹੀਂ ਕਰੇਗਾ, ਪਰ ਕਿਰਪਾ ਕਰਕੇ
     ਡਿਵੈਲਪਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ.
+  libreHttp400: Libre ਅਨੁਵਾਦ ਨੂੰ ਭੇਜੀ ਗਈ ਮਾੜੀ ਬੇਨਤੀ! ਜਦ ਤੱਕ ਤੁਸੀਂ ਕੁਝ ਨਹੀਂ ਕਰ ਰਹੇ
+    ਹੋ ਜੋ ਤੁਹਾਨੂੰ ਨਹੀਂ ਕਰਨਾ ਚਾਹੀਦਾ, ਤੁਹਾਨੂੰ ਇਹ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕਰਨਾ ਚਾਹੀਦਾ. ਕਿਰਪਾ ਕਰਕੇ
+    ਡਿਵੈਲਪਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ!
+  wwcConfigGUILibreTranslateApiKeyButton: ਮੁਫਤ ਬਦਲੋ ਅਨੁਵਾਦ API ਕੁੰਜੀ
+  libreHttp403: ਗੁੰਮ Libre ਅਨੁਵਾਦ API ਕੁੰਜੀ, ਜ ਤੁਹਾਨੂੰ ਸਰਵਰ ਤੇ ਪਾਬੰਦੀ ਰਹੇ ਹਨ!
+  wwcConfigConversationLibreURLSuccess: ਮੁਫ਼ਤ URL ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwcConfigConversationLibreTranslateApiKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ
+    Libre ਲਈ ਇੱਕ API ਕੁੰਜੀ ਦਿਓ, ਜਾਂ 0 ਨੂੰ ਵਾਪਸ ਜਾਣ ਲਈ ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUILibreTranslateButton: Libre ਅਨੁਵਾਦ
+  libreHttp429: ਸਰਵਰ ਤੋਂ ਰੇਟ ਸੀਮਾ ਦੇ ਕਾਰਨ ਕੋਈ ਵਿਸ਼ਵਾਸ ਨਹੀਂ.
+  wwcConfigGUIToggleLibreTranslateButton: Libre ਅਨੁਵਾਦ ਬਦਲੋ
+  wwcConfigConversationLibreTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਵਕ Libre ਅਨੁਵਾਦ ਨੂੰ ਚਾਲੂ
+    ਕਰ ਦਿੱਤਾ। ਤਬਦੀਲੀਆਂ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigConversationLibreTranslateApiKeySuccess: ਮੁਫ਼ਤ API ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ
+    ਸੈੱਟ ਕੀਤਾ.
+  wwcConfigConversationLibreURLInput: ਮੌਜੂਦਾ URL %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਲਿਬਰੇ ਲਈ ਇੱਕ URL
+    ਦਿਓ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
+  libreHttpUnknown: 'ਅਣਜਾਣ http ਗਲਤੀ: %i'
+  wwcConfigGUILibreTranslateURLButton: Libre ਅਨੁਵਾਦ URL ਨੂੰ ਬਦਲੋ
