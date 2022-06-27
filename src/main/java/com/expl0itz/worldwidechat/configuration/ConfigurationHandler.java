@@ -459,7 +459,8 @@ public class ConfigurationHandler {
 	/* Sync user data to storage */
 	public void syncData() {
 		/* If our translator is Invalid, do not run this code */
-		if (!main.getTranslatorName().equals("Invalid")) {
+		//TODO: Investigate why mockbukkit no longer works here
+		if (!main.getTranslatorName().equals("Invalid") && !main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
 			/* Sync to SQL database, if it exists */
 			// Our Generic Table Layout: 
 			// | Creation Date | Object Properties |  

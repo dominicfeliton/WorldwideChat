@@ -424,7 +424,7 @@ public class CommonDefinitions {
 
 			/* Add to cache */
 			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
-				//TODO: Why can't we add none? Check this
+				//TODO: Make sure that adding none to the cache does not have any unintended behavior (don't think so...)
 				main.addCacheTerm(testTranslation, out);
 			}
 			return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', out));

@@ -188,16 +188,13 @@ public class LibreTranslation extends BasicTranslation {
 	}
 	
 	private void checkError(int in) throws Exception {
-		//TODO: Add localizations for these error messages
 		switch (in) {
 		case 400:
-			throw new Exception("Bad request sent to Libre Translate! Unless you're doing something that you shouldn't, you probably shouldn't get this. Please contact the developer!");
 		case 403:
-			throw new Exception("Missing Libre Translate API key! (Or you are banned...)");
 		case 429:
-			 throw new Exception("No confidence due to rate limit from server.");
+			throw new Exception(CommonDefinitions.getMessage("libreHttp" + in));
 		default:
-			throw new Exception("Unknown Libre Translate error: " + in);
+			throw new Exception(CommonDefinitions.getMessage("libreHttpUnknown", new String[] {in + ""}));
 		}
 	}
 	

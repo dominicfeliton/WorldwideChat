@@ -34,6 +34,7 @@ public class LoadUserData implements Runnable {
 		CommonDefinitions.sendDebugMessage("Loading user records or /wwcs...");
 		if (!SQLUtils.isConnected()) {
 			for (File eaFile : statsFolder.listFiles()) {
+				// Load current file
 				YamlConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
 				try {
 					Reader currConfigStream = new InputStreamReader(main.getResource("default-player-record.yml"), "UTF-8");
@@ -42,6 +43,8 @@ public class LoadUserData implements Runnable {
 					e.printStackTrace();
 				}
 				currFileConfig.options().copyDefaults(true);
+				
+				// Create new PlayerRecord from current file
 				main.getConfigManager().saveCustomConfig(currFileConfig, eaFile, false);
 				PlayerRecord currRecord = new PlayerRecord(currFileConfig.getString("lastTranslationTime"),
 						eaFile.getName().substring(0, eaFile.getName().indexOf(".")),
@@ -52,6 +55,7 @@ public class LoadUserData implements Runnable {
 			}
 		} else {
 			try {
+				// Load PlayerRecord using SQL
 				ResultSet rs = SQLUtils.getConnection().createStatement().executeQuery("SELECT * FROM playerRecords");
 				while (rs.next()) {
 					PlayerRecord recordToAdd = new PlayerRecord(
@@ -78,6 +82,7 @@ public class LoadUserData implements Runnable {
 		CommonDefinitions.sendDebugMessage("Loading user data or /wwct...");
 		if (!SQLUtils.isConnected()) {
 			for (File eaFile : userDataFolder.listFiles()) {
+				// Load current user translation file
 				YamlConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
 				try {
 					Reader currConfigStream = new InputStreamReader(main.getResource("default-active-translator.yml"), "UTF-8");
@@ -86,15 +91,28 @@ public class LoadUserData implements Runnable {
 					e.printStackTrace();
 				}
 				currFileConfig.options().copyDefaults(true);
-				/* Hopefully temporary check that disables use of none with Amazon Translate until we find a workaround */
-				if ((!currFileConfig.getString("inLang").equalsIgnoreCase("None") && CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("inLang")).getLangCode().equals(""))
-						|| (currFileConfig.getString("inLang").equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
+				
+				/* Sanity checks on inLang and outLang */
+				// If inLang code is not supported with current translator +
+				// If inLang code is equal to none and is amazon translate
+				String inLang = currFileConfig.getString("inLang");
+				String outLang = currFileConfig.getString("outLang");
+				if ((!inLang.equalsIgnoreCase("None") && CommonDefinitions.getSupportedTranslatorLang(inLang).getLangCode().equals(""))
+						|| (inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
 					currFileConfig.set("inLang", "en");
 				}
-				if (CommonDefinitions.getSupportedTranslatorLang(currFileConfig.getString("outLang")).getLangCode().equals("")) {
+				// If outLang code is not supported with current translator
+				if (CommonDefinitions.getSupportedTranslatorLang(outLang).getLangCode().equals("")) {
+					currFileConfig.set("outLang", "es");
+				}
+				// If inLang and outLang codes are equal
+				if (CommonDefinitions.getSupportedTranslatorLang(outLang).getLangCode().equals(CommonDefinitions.getSupportedTranslatorLang(inLang).getLangCode())) {
+					currFileConfig.set("inLang", "en");
 					currFileConfig.set("outLang", "es");
 				}
 				main.getConfigManager().saveCustomConfig(currFileConfig, eaFile, false);
+				
+				// Create new ActiveTranslator with current file data
 				ActiveTranslator currentTranslator = new ActiveTranslator(
 						eaFile.getName().substring(0, eaFile.getName().indexOf(".")), // add active translator to arraylist
 						currFileConfig.getString("inLang"), currFileConfig.getString("outLang"));
@@ -114,6 +132,8 @@ public class LoadUserData implements Runnable {
 			}
 		} else {
 			try {
+				// Load ActiveTranslator using SQL
+				// TODO: Add checks from YAML here too for JIC, make a common method for both methods
 				ResultSet rs = SQLUtils.getConnection().createStatement().executeQuery("SELECT * FROM activeTranslators");
 				while (rs.next()) {
 					ActiveTranslator translatorToAdd = new ActiveTranslator(
