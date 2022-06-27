@@ -150,10 +150,10 @@ public class WWCInventoryManager extends InventoryManager {
 		genericOpenSubmenuButton(x, y, player, contents, null, buttonName, invToOpen);
 	}
 	
-	public static void genericOpenSubmenuButton(int x, int y, Player player, InventoryContents contents, Object preCondition, String buttonName, SmartInventory invToOpen) {
+	public static void genericOpenSubmenuButton(int x, int y, Player player, InventoryContents contents, Boolean preCondition, String buttonName, SmartInventory invToOpen) {
 		ItemStack button;
-		if (preCondition != null && preCondition instanceof Boolean) {
-			if ((Boolean) preCondition) {
+		if (preCondition != null) {
+			if (preCondition.booleanValue()) {
 				button = XMaterial.EMERALD_BLOCK.parseItem();
 			} else {
 				button = XMaterial.REDSTONE_BLOCK.parseItem();

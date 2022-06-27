@@ -147,9 +147,6 @@ public class WorldwideChat extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new InventoryListener(), this);
 		getLogger().info(ChatColor.LIGHT_PURPLE
 				+ CommonDefinitions.getMessage("wwcListenersInitialized"));
-		
-		// Pre-generate hard coded Config UIs
-		MenuGui.genAllConfigUIs();
 
 		// We made it!
 		CommonDefinitions.sendDebugMessage("Async tasks running: " + this.getActiveAsyncTasks());
@@ -396,6 +393,9 @@ public class WorldwideChat extends JavaPlugin {
 		configurationManager.loadTranslatorSettings();
 
 		/* Run tasks after translator loaded */
+		// Pre-generate hard coded Config UIs
+		MenuGui.genAllConfigUIs();
+		
 		// Check for updates
 		BukkitRunnable update = new BukkitRunnable() {
 			@Override

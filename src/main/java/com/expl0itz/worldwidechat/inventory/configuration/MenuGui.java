@@ -288,10 +288,10 @@ public class MenuGui implements InventoryProvider {
 	
 	static class SubMenuElement extends Element {
 
-		public Object preCondition = null;
+		public Boolean preCondition = null;
 		public SmartInventory invToOpen;
 		
-		public SubMenuElement(int x_, int y_, Object preCondition_, String buttonName_, SmartInventory invToOpen_) {
+		public SubMenuElement(int x_, int y_, Boolean preCondition_, String buttonName_, SmartInventory invToOpen_) {
 			super(x_, y_, buttonName_, null);
 			
 			preCondition = preCondition_;
