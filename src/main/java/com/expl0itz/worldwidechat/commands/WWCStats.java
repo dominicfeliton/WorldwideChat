@@ -87,7 +87,6 @@ public class WWCStats extends BasicCommand {
 							CommonDefinitions.sendMessage(sender, playerNotFound);
 							return null;
 						}
-						//TODO: Replace this with a synchronous online player check, and then query the api async if they do not exist
 						inPlayer = Bukkit.getPlayer(inName);
 						if (inPlayer == null) {
 							inPlayer = Bukkit.getOfflinePlayer(inName);

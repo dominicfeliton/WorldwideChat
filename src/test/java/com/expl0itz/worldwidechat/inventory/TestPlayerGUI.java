@@ -63,7 +63,8 @@ public class TestPlayerGUI {
 
 	public void testConfigurationCommandPlayerGUI() {
 		/* User runs /wwcc */
+		playerMock.closeInventory();
 		playerMock.performCommand("worldwidechat:wwcc");
-		assertTrue(plugin.getInventoryManager().getInventory(playerMock).get() instanceof SmartInventory);
+		assertTrue(plugin.getInventoryManager().getInventory(playerMock).isPresent());
 	}
 }

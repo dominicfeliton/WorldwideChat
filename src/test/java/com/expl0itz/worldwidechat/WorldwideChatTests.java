@@ -40,27 +40,8 @@ public class WorldwideChatTests {
 		secondPlayerMock = server.addPlayer("player2");
 
 		/* Add perms */
-		playerMock.addAttachment(plugin, "worldwidechat.wwct", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwct.otherplayers", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwcg", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwctb", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwctb.otherplayers", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwcts", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwcts.otherplayers", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwcti", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwcti.otherplayers", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwcte", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwcte.otherplayers", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwctrl", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwcs", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwctco", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwctco.otherplayers", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwctci", true);
-		playerMock.addAttachment(plugin, "worldwidechat.wwctci.otherplayers", true);
-		
-		secondPlayerMock.addAttachment(plugin, "worldwidechat.wwct", true);
-		secondPlayerMock.addAttachment(plugin, "worldwidechat.wwct.otherplayers", true);
-		
+		playerMock.setOp(true);
+		secondPlayerMock.setOp(true);
 	}
 
 	@AfterAll
