@@ -226,21 +226,12 @@ public class CommonDefinitions {
 		
 		/* Replace any and all %i, %e, %o, etc. */
 		/* This code will only go as far as replacements[] goes. */
-		//TODO: Replace with string.format
-		StringBuilder fixedMessage = new StringBuilder();
-		int replacementsPos = 0;
-		for (int c = 0; c < convertedOriginalMessage.toCharArray().length; c++) {
-			if (replacements != null && replacements.length > 0 && convertedOriginalMessage.toCharArray()[c] == '%' && replacementsPos < replacements.length) {
-				fixedMessage.append(replacements[replacementsPos]);
-				replacementsPos++;
-				c++;
-			} else {
-				fixedMessage.append(convertedOriginalMessage.toCharArray()[c]);
-			}
+		for (int i = 0; i < replacements.length; i++) {
+			convertedOriginalMessage = convertedOriginalMessage.replaceFirst("%[ioeu]", replacements[i]);
 		}
 		
-		/* Return fixedMessage */
-		return fixedMessage.toString();
+ 		/* Return fixedMessage */
+		return convertedOriginalMessage;
 	}
 	
 	/**
@@ -261,10 +252,7 @@ public class CommonDefinitions {
 			} else {
 				adventureSender.sendMessage(outMessage);
 			}
-		} catch (IllegalStateException e) {
-			// This only happens when the plugin/adventure is disabled.
-			// If the plugin/adventure is disabled, no messages should be sent anyways so silently catch this.
-		}
+		} catch (IllegalStateException e) {}
 	}
 	
 	/**
