@@ -76,8 +76,6 @@ public class WorldwideChat extends JavaPlugin {
 	private List<String> playersUsingConfigurationGUI = new CopyOnWriteArrayList<String>();
 	
 	private Cache<CachedTranslation, String> cache = Caffeine.newBuilder()
-			//TODO: Make 24 hours configurable
-			.expireAfterAccess(24, TimeUnit.HOURS)
 			.maximumSize(100)
 			.build();
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<String, PlayerRecord>();
@@ -581,8 +579,6 @@ public class WorldwideChat extends JavaPlugin {
 	
 	public void setCacheProperties(int in) {
 		cache = Caffeine.newBuilder()
-				//TODO: Make 24 hours configurable
-				.expireAfterAccess(24, TimeUnit.HOURS)
 				.maximumSize(in)
 				.build();
 	}

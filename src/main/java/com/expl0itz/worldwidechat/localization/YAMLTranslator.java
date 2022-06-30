@@ -33,8 +33,6 @@ public class YAMLTranslator {
 		String amazonRegion = "us-east-2";
 
 		// Other vars
-		// String supportedLangs[] = new
-		// CommonDefinitions().getSupportedPluginLangCodes();
 		String inputLang = "en";
 		String originalYAMLDir = "";
 		String outputYAMLDir = "";
