@@ -35,7 +35,6 @@ public class ChatListener implements Listener {
 			}
 			
 			/* New WWC functionality/Incoming Messages */
-			CommonDefinitions.sendDebugMessage("Message format: " + event.getFormat());
 			List<Player> unmodifiedMessageRecipients = new ArrayList<Player>();
 			for (Player eaRecipient : event.getRecipients()) {
 				ActiveTranslator testTranslator = main.getActiveTranslator(eaRecipient.getUniqueId());
@@ -55,15 +54,13 @@ public class ChatListener implements Listener {
 							}
 							String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
 							
-							TextComponent hoverOutMessage;
+							TextComponent hoverOutMessage = Component.text()
+									.content(outMessageWithoutHover)
+									.build();
 			                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat") && !(translation.equals(event.getMessage()))) {
 								hoverOutMessage = Component.text()
 										.content(outMessageWithoutHover)
 										.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
-										.build();
-							} else {
-								hoverOutMessage = Component.text()
-										.content(outMessageWithoutHover)
 										.build();
 							}
 							try {
