@@ -49,7 +49,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat está desactualizado. Actualice a la última versión,
     %i.
   wwcConfigGUINextPageButton: Página siguiente
-  wwctbTranslatePageFail: (Error al traducir esta página) %i
   wwcConfigInvalidTranslatorSettings: Configuración del traductor no válida. Por favor,
     habilite solo un traductor en su config.yml.
   wwcConfigGUIQuitButton: Salir y guardar cambios
@@ -192,13 +191,9 @@ Messages:
     a la consola.
   wwcInventoryError: Error detectado con la GUI del usuario %i. Informe de este problema
     al desarrollador.
-  wwcSignTranslationFail: No se puede traducir una o más líneas en el signo de destino.
-  wwcBookTranslationFail: No se puede traducir una o más páginas del libro de destino.
   wwctiOffTarget: Traducción de artículos deshabilitada para %i.
   wwctiOffSender: Traducción de artículos desactivada.
   wwcItemTranslateTitleStock: No se pueden traducir los nombres de elementos predeterminados.
-  wwcItemTranslateLoreFail: No se ha podido traducir la historia del artículo.
-  wwcItemTranslateTitleFail: No se pudo traducir el nombre del artículo.
   wwctGUIItemButton: Alternar traducción de elementos
   wwcItemTranslateTitleDone: Título del artículo traducido correctamente.
   wwcGUITempItem: Visualización del artículo
@@ -209,8 +204,6 @@ Messages:
   wwcItemTranslateLoreStart: Traduciendo la historia del elemento objetivo...
   wwcItemTranslateLoreDone: Traducido correctamente la historia del artículo.
   wwctiOnTarget: Traducción de artículos habilitada para %i.
-  wwcBookTranslateTitleFail: No se pudo traducir el título del libro.
-  wwcChatTranslationFail: No se ha podido traducir el mensaje.
   wwcInvalidTranslator: Configuración del traductor no válida. Corrija esto en su
     config.yml o con /wwcc para usar este plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Configuración'
@@ -310,10 +303,6 @@ Messages:
     traduciendo, pero tienes una sesión de traducción activa a %o.
   wwcConfigGUIChangesNotSaved: Sus cambios no surtirán efecto hasta que haga clic
     en la barrera roja en /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: El mensaje de chat de traducción
-    fallido se alternó correctamente.
-  wwcConfigGUISendFailedTranslationChatButton: Enviar mensaje de chat en traducción
-    fallida
   wwctciOffSender: Traducción de chat entrante deshabilitada.
   wwctGUIChatIncomingButton: Alternar traducción de chat entrante
   wwctcoOffSender: Traducción de chat saliente deshabilitada.
@@ -411,3 +400,23 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat no pudo obtener los idiomas y, en su lugar,
     está utilizando copias de seguridad. Probablemente esto no afecte al comportamiento
     del plugin, pero por favor contacta con el desarrollador.
+  libreHttp400: ¡Solicitud incorrecta enviada a Libre Translate! A menos que estés
+    haciendo algo que no deberías, no deberías recibir esto. ¡Ponte en contacto con
+    el desarrollador!
+  wwcConfigGUILibreTranslateApiKeyButton: Cambiar la clave API de Libre Translate
+  libreHttp403: Falta la clave de API de Libre Translate, o se le prohíbe el acceso
+    al servidor.
+  wwcConfigConversationLibreURLSuccess: La URL libre se estableció correctamente.
+  wwcConfigConversationLibreTranslateApiKeyInput: La clave de API actual es %i. Introduce
+    una clave de API para Libre o escribe 0 para volver atrás.
+  wwcConfigGUILibreTranslateButton: Libre Traducir
+  libreHttp429: Falta de confianza debido al límite de velocidad del servidor.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Se ha conmutado correctamente
+    Libre Translate. Recarga para que los cambios surtan efecto.
+  wwcConfigConversationLibreTranslateApiKeySuccess: La clave de API Libre se estableció
+    correctamente.
+  wwcConfigConversationLibreURLInput: La URL actual es %i. Introduzca una URL para
+    Libre o escriba 0 para volver atrás.
+  libreHttpUnknown: 'Error http desconocido: %i'
+  wwcConfigGUILibreTranslateURLButton: Cambiar URL de Libre Translate

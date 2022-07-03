@@ -52,7 +52,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat ist nicht mehr auf dem neuesten Stand. Bitte
     aktualisieren Sie auf die neueste Version, %i.
   wwcConfigGUINextPageButton: nächste Seite
-  wwctbTranslatePageFail: (Diese Seite konnte nicht übersetzt werden) %i
   wwcConfigInvalidTranslatorSettings: Ungültige Übersetzer-Einstellungen! Bitte aktiviere
     nur einen Übersetzer in deiner config.yml.
   wwcConfigGUIQuitButton: Beenden & Änderungen speichern
@@ -202,15 +201,9 @@ Messages:
     wurde an die Konsole gesendet.
   wwcInventoryError: Fehler bei der GUI von Benutzer %i festgestellt. Bitte melden
     Sie dieses Problem dem Entwickler.
-  wwcSignTranslationFail: Eine oder mehrere Zeilen auf Ihrem Zielzeichen kann nicht
-    übersetzt werden.
-  wwcBookTranslationFail: Eine oder mehrere Seiten in Ihrem Zielbuch können nicht
-    übersetzt werden.
   wwctiOffTarget: Die Artikelübersetzung für %i ist deaktiviert.
   wwctiOffSender: Die Artikelübersetzung ist deaktiviert.
   wwcItemTranslateTitleStock: Standardelemennamen können nicht übersetzt werden.
-  wwcItemTranslateLoreFail: Item Lore konnte nicht übersetzt werden.
-  wwcItemTranslateTitleFail: Der Elementname konnte nicht übersetzt werden.
   wwctGUIItemButton: Artikelübersetzung umschalten
   wwcItemTranslateTitleDone: Der Titel des Artikels wurde erfolgreich übersetzt.
   wwcGUITempItem: Artikel-Display
@@ -221,8 +214,6 @@ Messages:
   wwcItemTranslateLoreStart: Überlieferung des Zielgegenstandes wird übersetzt...
   wwcItemTranslateLoreDone: Übersetzte Item-Überlieferung erfolgreich.
   wwctiOnTarget: Artikelübersetzung für %i aktiviert.
-  wwcBookTranslateTitleFail: Der Buchtitel konnte nicht übersetzt werden.
-  wwcChatTranslationFail: Ihre Nachricht konnte nicht übersetzt werden.
   wwcInvalidTranslator: Ungültige Übersetzereinstellungen. Bitte repariere das in
     deiner config.yml oder mit /wwcc um dieses Plugin zu verwenden.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'
@@ -325,10 +316,6 @@ Messages:
     übersetzt, aber Sie haben eine aktive Übersetzungssitzung nach %o.
   wwcConfigGUIChangesNotSaved: Ihre Änderungen werden erst wirksam, wenn Sie in /wwcc
     auf die rote Barriere klicken.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Fehlgeschlagene Übersetzung
-    der Chat-Nachricht wurde erfolgreich umgeschaltet.
-  wwcConfigGUISendFailedTranslationChatButton: Chat-Nachricht bei fehlgeschlagener
-    Übersetzung senden
   wwctciOffSender: Eingehende Chat-Übersetzung ist deaktiviert.
   wwctGUIChatIncomingButton: Eingehende Chat-Übersetzung umschalten
   wwctcoOffSender: Übersetzung ausgehender Chats ist deaktiviert.
@@ -423,3 +410,23 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat konnte keine Sprachen abrufen und verwendet
     stattdessen Backups. Dies wird wahrscheinlich nicht das Verhalten des Plugins
     beeinflussen, aber bitte kontaktiere den Entwickler.
+  libreHttp400: Schlechte Anfrage an Libre Translate gesendet! Sofern Sie nichts tun,
+    was Sie nicht tun sollten, sollten Sie dies nicht bekommen. Bitte kontaktiere
+    den Entwickler!
+  wwcConfigGUILibreTranslateApiKeyButton: Libre Translate API-Schlüssel ändern
+  libreHttp403: Fehlender Libre Translate API-Schlüssel, oder Sie sind vom Server
+    verbannt!
+  wwcConfigConversationLibreURLSuccess: Die Libre-URL wurde erfolgreich festgelegt.
+  wwcConfigConversationLibreTranslateApiKeyInput: Der aktuelle API-Schlüssel ist %i.
+    Geben Sie einen API-Schlüssel für Libre ein, oder geben Sie 0 ein, um zurückzugehen.
+  wwcConfigGUILibreTranslateButton: Libre Übersetzen
+  libreHttp429: Kein Vertrauen aufgrund der Ratenbegrenzung vom Server.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate wurde erfolgreich
+    umgeschaltet. Laden Sie neu, damit die Änderungen wirksam werden.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Der Libre-API-Schlüssel wurde
+    erfolgreich festgelegt.
+  wwcConfigConversationLibreURLInput: Die aktuelle URL ist %i. Geben Sie eine URL
+    für Libre ein, oder geben Sie 0 ein, um zurückzugehen.
+  libreHttpUnknown: 'Unbekannter HTTP-Fehler: %i'
+  wwcConfigGUILibreTranslateURLButton: Libre Übersetzungs-URL ändern

@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat از تاریخ گذشته است. لطفا به آخرین نسخه به‌روزرسانی
     کنید، %i.
   wwcConfigGUINextPageButton: صفحه بعدی
-  wwctbTranslatePageFail: (ترجمه این صفحه شکست خورد) %i
   wwcConfigInvalidTranslatorSettings: تنظیمات مترجم نامعتبر! لطفا تنها یک مترجم را
     در config.yml خود فعال کنید.
   wwcConfigGUIQuitButton: خروج و ذخیره تغییرات
@@ -180,13 +179,9 @@ Messages:
     به سیستم به کنسول ارسال شده است.
   wwcInventoryError: خطا تشخیص داده شده با رابط کاربری گرافیکی از %i لطفا این موضوع
     را به توسعه دهنده گزارش دهید.
-  wwcSignTranslationFail: قادر به ترجمه یک یا چند خط روی علامت هدف شما نیست.
-  wwcBookTranslationFail: قادر به ترجمه یک یا چند صفحه در کتاب مقصد شما نیست.
   wwctiOffTarget: ترجمه مورد برای %i غیرفعال شد.
   wwctiOffSender: ترجمه مورد غیر فعال شد.
   wwcItemTranslateTitleStock: قادر به ترجمه نام آیتم پیش فرض نیست.
-  wwcItemTranslateLoreFail: ترجمه مورد افسانه هاو روایات قومی شکست خورد.
-  wwcItemTranslateTitleFail: ترجمه نام مورد شکست خورد.
   wwctGUIItemButton: ضامن ترجمه مورد
   wwcItemTranslateTitleDone: عنوان آیتم ترجمه شده با موفقیت.
   wwcGUITempItem: نمایش آیتم
@@ -197,8 +192,6 @@ Messages:
   wwcItemTranslateLoreStart: ترجمه افسانه ای از آیتم های هدف...
   wwcItemTranslateLoreDone: ترجمه افسانه هاو روایات قومی مورد موفقیت.
   wwctiOnTarget: ترجمه مورد برای %i فعال شد.
-  wwcBookTranslateTitleFail: ترجمه عنوان کتاب شکست خورد.
-  wwcChatTranslationFail: ترجمه پیام شما شکست خورد.
   wwcInvalidTranslator: تنظیمات مترجم نامعتبر. لطفا این را در config.yml یا با /wcc
     خود برای استفاده از این افزونه تعمیر کنید.
   wwcConfigGUIEachTranslatorSettings: '%i پیکربندی'
@@ -289,9 +282,6 @@ Messages:
     است، اما شما یک جلسه ترجمه فعال به %o دارید.
   wwcConfigGUIChangesNotSaved: تغییرات شما اثر را تا زمانی که شما بر روی مانع قرمز
     در /wwcc کلیک کنید.
-  wwcConfigConversationSendFailedTranslationChatSuccess: پیام چت ترجمه ناموفق با موفقیت
-    جابجا شد.
-  wwcConfigGUISendFailedTranslationChatButton: ارسال پیام چت در ترجمه ناموفق
   wwctciOffSender: ترجمه چت ورودی غیر فعال.
   wwctGUIChatIncomingButton: ضامن ترجمه چت ورودی
   wwctcoOffSender: ترجمه چت خروجی غیر فعال.
@@ -377,3 +367,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat قادر به واکشی زبان بود, و به جای استفاده
     از پشتیبان گیری. این احتمالا بر رفتار پلاگین تاثیر نمی گذارد، اما لطفا با توسعه
     دهنده تماس بگیرید.
+  libreHttp400: درخواست بد ارسال به رایگان ترجمه! مگر اینکه شما کاری را انجام می دهید
+    که نباید انجام دهید، نباید این را دریافت کنید. لطفا با توسعه دهنده تماس بگیرید!
+  wwcConfigGUILibreTranslateApiKeyButton: تغییر رایگان ترجمه API های کلیدی
+  libreHttp403: گمشده رایگان ترجمه API های کلیدی, و یا شما از سرور ممنوع!
+  wwcConfigConversationLibreURLSuccess: URL رایگان با موفقیت تنظیم شده است.
+  wwcConfigConversationLibreTranslateApiKeyInput: کلید API فعلی %i است لطفا یک کلید
+    API برای Libre وارد کنید، یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigGUILibreTranslateButton: رایگان ترجمه
+  libreHttp429: عدم اعتماد به نفس به دلیل محدودیت نرخ از سرور.
+  wwcConfigGUIToggleLibreTranslateButton: تعویض رایگان ترجمه
+  wwcConfigConversationLibreTranslateToggleSuccess: موفقیت جابجا رایگان ترجمه. بازنگری
+    برای تغییرات به اثر.
+  wwcConfigConversationLibreTranslateApiKeySuccess: کلید API رایگان با موفقیت تنظیم
+    شده است.
+  wwcConfigConversationLibreURLInput: آدرس فعلی %i است لطفا یک URL را برای Libre وارد
+    کنید، یا 0 را برای بازگشت تایپ کنید.
+  libreHttpUnknown: 'خطای http ناشناخته: %i'
+  wwcConfigGUILibreTranslateURLButton: تغییر رایگان ترجمه URL

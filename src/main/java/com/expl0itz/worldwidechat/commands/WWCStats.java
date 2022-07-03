@@ -71,8 +71,6 @@ public class WWCStats extends BasicCommand {
 		BukkitRunnable translatorMessage = new BukkitRunnable() {
 			@Override
 			public void run() {
-				//TODO: Remove callable
-				//TODO: Cache names
 				Callable<?> result = () -> {
 					/* Get OfflinePlayer, this will allow us to get stats even if target is offline */
 					OfflinePlayer inPlayer = null;
@@ -89,10 +87,9 @@ public class WWCStats extends BasicCommand {
 							CommonDefinitions.sendMessage(sender, playerNotFound);
 							return null;
 						}
-						//TODO: Replace this with a synchronous online player check, and then query the api async if they do not exist
 						inPlayer = Bukkit.getPlayer(inName);
 						if (inPlayer == null) {
-							
+							inPlayer = Bukkit.getOfflinePlayer(inName);
 						}
 						/* getOfflinePlayer always returns a player, so we must check if this player has played on this server */
 						if (!inPlayer.hasPlayedBefore()) {
@@ -154,7 +151,6 @@ public class WWCStats extends BasicCommand {
 					/* Get translation */
 					 process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 				} catch (TimeoutException | ExecutionException | InterruptedException e) {
-					CommonDefinitions.sendDebugMessage("/wwcs Timeout!! Either we are reloading or we have lost connection. Abort.");
 					if (e instanceof TimeoutException) {CommonDefinitions.sendTimeoutExceptionMessage(sender);};
 					process.cancel(true);
 					this.cancel();

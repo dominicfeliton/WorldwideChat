@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat se soti nan dat. Tanpri mete ajou vèsyon an dènye,
     % mwen.
   wwcConfigGUINextPageButton: Pwochen paj
-  wwctbTranslatePageFail: (Echwe pou pou tradui paj sa a) % mwen
   wwcConfigInvalidTranslatorSettings: Anviwònman tradiktè envalid! Tanpri pèmèt yon
     sèl tradiktè nan config.yml ou.
   wwcConfigGUIQuitButton: Sòti & Save Chanjman
@@ -178,13 +177,9 @@ Messages:
     bay konsole a.
   wwcInventoryError: Erè detekte ak entèfas nan itilizatè % mwen % Tanpri rapòte pwoblèm
     sa a nan pwomotè
-  wwcSignTranslationFail: Kapab tradui youn oswa plis liy sou siy sib ou.
-  wwcBookTranslationFail: Kapab tradui youn oswa plis paj nan liv sib ou.
   wwctiOffTarget: Tradiksyon atik andikape pou % mwen.
   wwctiOffSender: Tradiksyon atik andikape.
   wwcItemTranslateTitleStock: Kapab tradui non atik default.
-  wwcItemTranslateLoreFail: Echwe pou pou tradwi atik lore.
-  wwcItemTranslateTitleFail: Echwe pou pou tradwi non atik.
   wwctGUIItemButton: Tradiksyon atik activer
   wwcItemTranslateTitleDone: Tradwi atik tit avèk siksè.
   wwcGUITempItem: atik ekspozisyon
@@ -195,8 +190,6 @@ Messages:
   wwcItemTranslateLoreStart: Tradwi lore nan atik sib...
   wwcItemTranslateLoreDone: Tradui atik fè lò avèk siksè.
   wwctiOnTarget: Tradiksyon atik pèmèt pou % mwen.
-  wwcBookTranslateTitleFail: Echwe pou pou tradwi tit liv.
-  wwcChatTranslationFail: Echwe pou pou tradwi mesaj ou a.
   wwcInvalidTranslator: Anviwònman tradiktè envalid. Tanpri ranje sa a nan config.yml
     ou oswa ak/wwcc yo sèvi ak sa a Plugin.
   wwcConfigGUIEachTranslatorSettings: '% mwen konfigirasyon'
@@ -291,9 +284,6 @@ Messages:
     tradui, men ou gen yon sesyon tradiksyon aktif nan %o.
   wwcConfigGUIChangesNotSaved: Chanjman ou yo pa pral pran efè jiskaske ou klike sou
     baryè wouj la nan/wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Echwe mesaj tradiksyon chat
-    baskule avèk siksè.
-  wwcConfigGUISendFailedTranslationChatButton: Voye Chat Mesaj sou Echwe Tradiksyon
   wwctciOffSender: Fèk ap rantre tradiksyon chat enfim.
   wwctGUIChatIncomingButton: Baskile fèk ap rantre Chat tradiksyon
   wwctcoOffSender: Sortan chat tradiksyon enfim.
@@ -376,3 +366,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat te kapab chache lang, ak se olye lè l sèvi
     avèk sovgad. Sa a pwobableman pa pral afekte konpòtman Plugin, men tanpri kontakte
     pwomotè a.
+  libreHttp400: Move demann voye nan Libre Translate! Sòf si w ap fè yon bagay ke
+    ou pa ta dwe, ou pa ta dwe jwenn sa a. Tanpri kontakte pwomotè a!
+  wwcConfigGUILibreTranslateApiKeyButton: Chanje gratis Translate API kle
+  libreHttp403: Ki manke Libre Translate API kle, oswa w ap entèdi nan sèvè a!
+  wwcConfigConversationLibreURLSuccess: Gratis URL mete avèk siksè.
+  wwcConfigConversationLibreTranslateApiKeyInput: Kle API aktyèl la se % mwen. tanpri
+    D 'yon kle API pou gratis, oswa tape 0 yo ale tounen.
+  wwcConfigGUILibreTranslateButton: Libre Translate
+  libreHttp429: Pa gen konfyans akòz pousantaj limit soti nan sèvè.
+  wwcConfigGUIToggleLibreTranslateButton: Baskile gratis tradwir
+  wwcConfigConversationLibreTranslateToggleSuccess: Avèk siksè baskile Libre Translate.
+    Reload pou chanjman yo pran efè.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API kle mete avèk siksè.
+  wwcConfigConversationLibreURLInput: URL la kounye a se % mwen. tanpri D 'yon URL
+    pou gratis, oswa tape 0 yo ale tounen.
+  libreHttpUnknown: 'Unknown http erè: % mwen'
+  wwcConfigGUILibreTranslateURLButton: Chanje gratis Translate URL

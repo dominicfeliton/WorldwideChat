@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: Mae WorldwideChat yn hen. Diweddarwch i'r fersiwn ddiweddaraf,
     %i.
   wwcConfigGUINextPageButton: Tudalen Nesaf
-  wwctbTranslatePageFail: (Methwyd cyfieithu'r dudalen hon) %i
   wwcConfigInvalidTranslatorSettings: Gosodiadau cyfieithydd annilys! Os gwelwch yn
     dda alluogi dim ond un cyfieithydd yn eich config.yml.
   wwcConfigGUIQuitButton: Ymadael ac Arbed Newidiadau
@@ -186,13 +185,9 @@ Messages:
   wwcConfigCacheInvalid: Maint cache Cyfieithydd annilys. Defaulting i 10...
   wwcInventoryErrorPlayer: Gwall canfod gyda'ch GUI. Anfonwyd log at y consol.
   wwcInventoryError: Gwall a ganfuwyd gyda GUI o defnyddiwr %i Rhowch wybod i'r datblygwr.
-  wwcSignTranslationFail: Methu cyfieithu un neu fwy o linellau ar eich arwydd targed.
-  wwcBookTranslationFail: Methu cyfieithu un neu fwy o dudalennau yn eich llyfr targed.
   wwctiOffTarget: Cyfieithu eitem wedi'i analluogi am %i.
   wwctiOffSender: Cyfieithu eitem wedi'i analluogi.
   wwcItemTranslateTitleStock: Methu cyfieithu enwau eitemau diofyn.
-  wwcItemTranslateLoreFail: Methu cyfieithu eitem lore.
-  wwcItemTranslateTitleFail: Methu cyfieithu enw'r eitem.
   wwctGUIItemButton: Toggle Cyfieithu Eitem
   wwcItemTranslateTitleDone: Teitl eitem wedi'i gyfieithu yn llwyddiannus.
   wwcGUITempItem: Arddangos Eitem
@@ -203,8 +198,6 @@ Messages:
   wwcItemTranslateLoreStart: Cyfieithu llên o eitem darged...
   wwcItemTranslateLoreDone: Lore eitem Cyfieithwyd yn llwyddiannus.
   wwctiOnTarget: Cyfieithiad eitem wedi'i alluogi ar gyfer %i.
-  wwcBookTranslateTitleFail: Methu cyfieithu teitl llyfr.
-  wwcChatTranslationFail: Methwyd â chyfieithu eich neges.
   wwcInvalidTranslator: Gosodiadau cyfieithydd annilys. Os gwelwch yn dda atgyweiria
     hon yn eich config.yml neu gyda/wwcc i ddefnyddio'r ategyn hwn.
   wwcConfigGUIEachTranslatorSettings: '%i Ffurfweddiad'
@@ -300,9 +293,6 @@ Messages:
     cael ei gyfieithu, ond mae gennych sesiwn gyfieithu weithredol i %o.
   wwcConfigGUIChangesNotSaved: Ni fydd eich newidiadau yn dod i rym nes i chi glicio
     ar y rhwystr coch yn /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Wedi methu neges sgwrsio
-    cyfieithu toggled llwyddiannus.
-  wwcConfigGUISendFailedTranslationChatButton: Anfon Neges Sgwrs ar Cyfieithu Methedig
   wwctciOffSender: Cyfieithu sgwrsio sy'n dod i mewn anabl.
   wwctGUIChatIncomingButton: Toggle Cyfieithu Sgwrs sy'n dod i mewn
   wwctcoOffSender: Cyfieithiad sgwrsio sy'n mynd allan anabl.
@@ -389,3 +379,22 @@ Messages:
   wwcBackupLangCodesWarning: Nid oedd WorldwideChat yn gallu nôl ieithoedd, ac yn
     lle hynny mae'n defnyddio copïau wrth gefn. Mae'n debyg na fydd hyn yn effeithio
     ar ymddygiad ategyn, ond cysylltwch â'r datblygwr.
+  libreHttp400: Cais gwael wedi'i anfon i Libre Translate! Oni bai eich bod yn gwneud
+    rhywbeth na ddylech, ni ddylech gael hyn. Cysylltwch â'r datblygwr!
+  wwcConfigGUILibreTranslateApiKeyButton: Newid Free Cyfieithu API Allweddol
+  libreHttp403: Ar goll Cyfieithu Allwedd API Libre, neu rydych yn cael eu gwahardd
+    o'r gweinydd!
+  wwcConfigConversationLibreURLSuccess: URL Libre wedi'i osod yn llwyddiannus.
+  wwcConfigConversationLibreTranslateApiKeyInput: Yr allwedd API gyfredol yw %i Mewnbynnwch
+    allwedd API ar gyfer Libre, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUILibreTranslateButton: Libre Cyfieithu
+  libreHttp429: Dim hyder oherwydd terfyn cyfradd o'r gweinydd.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Cyfieithu
+  wwcConfigConversationLibreTranslateToggleSuccess: Toglo Libre Translate yn llwyddiannus.
+    Ail-lwytho er mwyn i'r newidiadau ddod i rym.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Allwedd API Libre wedi'i osod
+    yn llwyddiannus.
+  wwcConfigConversationLibreURLInput: Yr URL cyfredol yw %i, mewnbynnwch URL ar gyfer
+    Libre, neu deipiwch 0 i fynd yn ôl.
+  libreHttpUnknown: 'Gwall http anhysbys: %i'
+  wwcConfigGUILibreTranslateURLButton: Newid Libre Cyfieithu URL

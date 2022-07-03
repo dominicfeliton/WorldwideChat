@@ -50,7 +50,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldWideCat waa mid taariikhda ka baxsan. Fadlan cusbooneysii
     nuqulka ugu dambeeyey, %i.
   wwcConfigGUINextPageButton: Bogga xigta
-  wwctbTranslatePageFail: (Ku guuldareystay inuu turjumo boggan) %i
   wwcConfigInvalidTranslatorSettings: goobaha turjumaan aan sax ahayn! Fadlan awood
     kaliya hal turjumaan in aad config.yml.
   wwcConfigGUIQuitButton: Bixitaanka & Badbaadinta Isbedelada
@@ -188,16 +187,10 @@ Messages:
   wwcInventoryErrorPlayer: Error ogaado aad gui. log A ayaa loo diray Console ah.
   wwcInventoryError: Khalad la ogaaday GUI ee isticmaalaha %i. Fadlan u sheeg arintan
     horumariyaha.
-  wwcSignTranslationFail: Aan awoodin in uu turjumo hal ama ka badan khadadka calaamadaada
-    bartilmaameedka.
-  wwcBookTranslationFail: Awoodi kari waayay in uu turjumo hal ama ka badan bog buuggaaga
-    bartilmaameedka.
   wwctiOffTarget: Turjumaadda Item naafo waayo, %i.
   wwctiOffSender: turjumaad Item naafo.
   wwcItemTranslateTitleStock: Aan awoodin in ay turjumaan magacyada shayga caadiga
     ah.
-  wwcItemTranslateLoreFail: Guuldareystay in ay turjumaan aamminsan item.
-  wwcItemTranslateTitleFail: Ku guuldareystay in ay turjumaan magaca item.
   wwctGUIItemButton: Turjubaan Shayga Toggle
   wwcItemTranslateTitleDone: Horyaalka item turjumay si guul leh.
   wwcGUITempItem: Muujinta shayga
@@ -208,8 +201,6 @@ Messages:
   wwcItemTranslateLoreStart: Tarjumidda aamminsan ee shayga bartilmaameedka...
   wwcItemTranslateLoreDone: aamminsan item turjumay si guul leh.
   wwctiOnTarget: Turjumaad shayga awood u yeelo %i.
-  wwcBookTranslateTitleFail: Ku guuldareystay in ay turjumaan horyaalka buugga.
-  wwcChatTranslationFail: Ku guuldareystay in ay turjumaan aad fariin.
   wwcInvalidTranslator: Goobaha turjumaan aan sax ahayn. Fadlan hagaajin this in aad
     config.yml ama /wwcc si aad u isticmaasho plugin this.
   wwcConfigGUIEachTranslatorSettings: '%i Hagaajinta'
@@ -309,10 +300,6 @@ Messages:
     ayaa la turjumayaa, laakiin waxaad leedahay fadhi tarjumaad firfircoon ee %o.
   wwcConfigGUIChangesNotSaved: isbedel Your ma dhaqangelin doono ilaa aad guji caqabad
     cas ee /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Fashilmay fariin chat turjumaad
-    guul toggled si guul leh.
-  wwcConfigGUISendFailedTranslationChatButton: U dir Fariin Wadahadal ah oo ku saabsan
-    Tarjum
   wwctciOffSender: Soo socda turjumaad chat naafo ah.
   wwctGUIChatIncomingButton: Toggle Tarjumaadda Wadahadalka Soo Socda
   wwctcoOffSender: Turjumaad chat xilka naafada ah.
@@ -408,3 +395,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat ma awoodi weyday inay soo qaadato luuqadaha,
     waxayna bedelkeeda isticmaalaysaa nuqullo. Tani waxay u badan tahay inaysan saameyn
     ku yeelan doonin dhaqanka plugin, laakiin fadlan la xiriir sameeysa.
+  libreHttp400: codsi xun u diray inay libre Translate! Haddii aad samaynayso wax
+    aan waa in aad, waa in aad si aad u hesho this. Fadlan la xiriir sameeysa ee!
+  wwcConfigGUILibreTranslateApiKeyButton: Beddel Libre Translate Key API
+  libreHttp403: Maqan libre Translate Key API, ama aad waxaa laga mamnuucay server!
+  wwcConfigConversationLibreURLSuccess: URL libre si guul dhigay.
+  wwcConfigConversationLibreTranslateApiKeyInput: Furaha API ee hadda jira waa %i.
+    Fadlan geli furaha API ee Libre, ama nooca 0 si aad dib ugu noqoto.
+  wwcConfigGUILibreTranslateButton: Siciid Translate
+  libreHttp429: Kalsooni ma laha sababtoo ah xadiga xadiga ka yimaada server.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Si guul leh toggoliyay libre Translate.
+    Reload isbedelada si ay u dhaqan.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre muhiimka ah API si guul
+    leh dhigay.
+  wwcConfigConversationLibreURLInput: URL hadda jira waa %i. Fadlan geli URL Libre,
+    ama nooca 0 si aad dib ugu noqoto.
+  libreHttpUnknown: 'Qaladka http oo aan la garanayn: %i'
+  wwcConfigGUILibreTranslateURLButton: Beddel libre Translate URL

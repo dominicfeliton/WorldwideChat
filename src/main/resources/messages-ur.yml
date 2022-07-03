@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: ورلڈ وائڈ چیٹ تاریخ سے باہر ہے. برائے مہربانی تازہ ترین ورژن،
     %i میں اپ ڈیٹ کریں۔
   wwcConfigGUINextPageButton: اگلا صفحہ
-  wwctbTranslatePageFail: (اس صفحہ کا ترجمہ کرنے میں ناکام) %i
   wwcConfigInvalidTranslatorSettings: غلط مترجم کی ترتیبات! براہ کرم اپنے config.yml
     میں صرف ایک مترجم کو فعال کریں.
   wwcConfigGUIQuitButton: تبدیلی سے باہر نکلیں اور محفوظ کریں
@@ -181,15 +180,9 @@ Messages:
     گیا ہے۔
   wwcInventoryError: صارف %i کے GUI کے ساتھ غلطی کا پتہ چلا براہ کرم اس مسئلے کو ڈویلپر
     سے رپورٹ کریں۔
-  wwcSignTranslationFail: آپ کے ہدف کے نشان پر ایک یا زیادہ لائنوں کا ترجمہ کرنے کے
-    قابل نہیں.
-  wwcBookTranslationFail: آپ کے ہدف کتاب میں ایک یا ایک سے زیادہ صفحات کا ترجمہ کرنے
-    میں قاصر.
   wwctiOffTarget: آئٹم ترجمہ %i کے لئے غیر فعال.
   wwctiOffSender: آئٹم ترجمہ غیر فعال.
   wwcItemTranslateTitleStock: ڈیفالٹ آئٹم کے ناموں کا ترجمہ کرنے
-  wwcItemTranslateLoreFail: آئٹم لور کا ترجمہ کرنے میں ناکام رہا۔
-  wwcItemTranslateTitleFail: آئٹم کے نام کا ترجمہ کرنے میں ناکام
   wwctGUIItemButton: آئٹم ترجمہ ٹوگل کریں
   wwcItemTranslateTitleDone: ترجمہ کردہ آئٹم عنوان کامیابی سے.
   wwcGUITempItem: آئٹم نمائش
@@ -200,8 +193,6 @@ Messages:
   wwcItemTranslateLoreStart: ہدف شے کی تکرار کا ترجمہ...
   wwcItemTranslateLoreDone: ترجمہ شدہ آئٹم کامیابی سے بھی۔
   wwctiOnTarget: آئٹم ترجمہ %i کے لئے فعال.
-  wwcBookTranslateTitleFail: کتاب کے عنوان کا ترجمہ کرنے میں ناکام رہے۔
-  wwcChatTranslationFail: آپ کے پیغام کا ترجمہ کرنے میں ناکام رہا۔
   wwcInvalidTranslator: غلط مترجم کی ترتیبات. براہ کرم اس پلگ ان کو استعمال کرنے کے
     لئے اپنے config.yml میں یا /wwcc کے ساتھ ٹھیک کریں.
   wwcConfigGUIEachTranslatorSettings: '%i ترتیب'
@@ -296,9 +287,6 @@ Messages:
     جا رہا ہے، لیکن آپ کے پاس ترجمہ کا ایک فعال سیشن ہے %o.
   wwcConfigGUIChangesNotSaved: آپ کی تبدیلیاں اس وقت تک اثر نہیں ہوگی جب تک آپ /wwcc
     میں سرخ رکاوٹ پر کلک نہ کریں.
-  wwcConfigConversationSendFailedTranslationChatSuccess: ناکام ترجمہ چیٹ پیغام کو
-    کامیابی سے ٹوگل کیا گیا۔
-  wwcConfigGUISendFailedTranslationChatButton: ناکام ترجمہ پر چیٹ پیغام بھیجیں
   wwctciOffSender: آنے والی چیٹ ترجمہ معذور.
   wwctGUIChatIncomingButton: آنے والی چیٹ ترجمہ ٹوگل
   wwctcoOffSender: سبکدوش ہونے والے چیٹ ترجمہ معذور.
@@ -386,3 +374,21 @@ Messages:
   wwcBackupLangCodesWarning: ورڈشیٹ زبانوں کو لانے میں قاصر تھا، اور اس کے بجائے بیک
     اپ استعمال کر رہا ہے. یہ شاید پلگ ان کے رویے کو متاثر نہیں کرے گا، لیکن ڈویلپر
     سے رابطہ کریں.
+  libreHttp400: بری درخواست Libri ترجمہ کرنے کے لئے بھیجا! جب تک آپ کچھ ایسا نہیں
+    کر رہے ہیں جو آپ کو نہیں کرنا چاہئے، آپ کو یہ نہیں ملنا چاہئے. ڈویلپر سے رابطہ
+    کریں!
+  wwcConfigGUILibreTranslateApiKeyButton: مفت ترجمہ API کلید کو تبدیل کریں
+  libreHttp403: لاپتہ Libe API کلید ترجمہ کریں، یا آپ سرور سے پابندی عائد کر رہے ہیں!
+  wwcConfigConversationLibreURLSuccess: مفت یو آر ایل کامیابی سے سیٹ کیا گیا ہے.
+  wwcConfigConversationLibreTranslateApiKeyInput: موجودہ API کلید %i ہے براہ کرم Libe
+    کے لئے ایک API کلید ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.
+  wwcConfigGUILibreTranslateButton: مفت ترجمہ
+  libreHttp429: سرور سے شرح کی حد کی وجہ سے کوئی اعتماد نہیں.
+  wwcConfigGUIToggleLibreTranslateButton: ٹوگل مفت ترجمہ کریں
+  wwcConfigConversationLibreTranslateToggleSuccess: کامیابی کے ساتھ مفت ترجمہ ٹوگل.
+    تبدیلیوں کو مؤثر بنانے کے لئے دوبارہ لوڈ کریں.
+  wwcConfigConversationLibreTranslateApiKeySuccess: مفت API کلید کامیابی سے سیٹ.
+  wwcConfigConversationLibreURLInput: موجودہ URL %i ہے، برائے مہربانی Libere کے لئے
+    ایک URL ان پٹ کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  libreHttpUnknown: 'نامعلوم HTTP غلطی: %i'
+  wwcConfigGUILibreTranslateURLButton: مفت تبدیل کریں URL کا ترجمہ کریں

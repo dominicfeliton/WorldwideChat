@@ -76,8 +76,6 @@ public class WorldwideChat extends JavaPlugin {
 	private List<String> playersUsingConfigurationGUI = new CopyOnWriteArrayList<String>();
 	
 	private Cache<CachedTranslation, String> cache = Caffeine.newBuilder()
-			//TODO: Make 24 hours configurable
-			.expireAfterAccess(24, TimeUnit.HOURS)
 			.maximumSize(100)
 			.build();
 	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<String, PlayerRecord>();
@@ -88,8 +86,8 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "05302022-1"; // This is just MM-DD-YYYY-whatever
-	private String translatorName = "Starting";
+	private String currentMessagesConfigVersion = "06262022-3"; // MMDDYYYY-revisionNumber
+	private volatile String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
 			.append(Component.text().content("WWC").color(NamedTextColor.BLUE).decoration(TextDecoration.BOLD, true))
@@ -147,9 +145,6 @@ public class WorldwideChat extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new InventoryListener(), this);
 		getLogger().info(ChatColor.LIGHT_PURPLE
 				+ CommonDefinitions.getMessage("wwcListenersInitialized"));
-		
-		// Pre-generate hard coded Config UIs
-		MenuGui.genAllConfigUIs();
 
 		// We made it!
 		CommonDefinitions.sendDebugMessage("Async tasks running: " + this.getActiveAsyncTasks());
@@ -396,6 +391,9 @@ public class WorldwideChat extends JavaPlugin {
 		configurationManager.loadTranslatorSettings();
 
 		/* Run tasks after translator loaded */
+		// Pre-generate hard coded Config UIs
+		MenuGui.genAllConfigUIs();
+		
 		// Check for updates
 		BukkitRunnable update = new BukkitRunnable() {
 			@Override
@@ -581,8 +579,6 @@ public class WorldwideChat extends JavaPlugin {
 	
 	public void setCacheProperties(int in) {
 		cache = Caffeine.newBuilder()
-				//TODO: Make 24 hours configurable
-				.expireAfterAccess(24, TimeUnit.HOURS)
 				.maximumSize(in)
 				.build();
 	}

@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: ওয়ার্ল্ডউইডচ্যাট ডেট আউট অনুগ্রহ করে সর্বশেষ সংস্করণে আপডেট
     করুন, %i।
   wwcConfigGUINextPageButton: পরবর্তী পৃষ্ঠা
-  wwctbTranslatePageFail: (এই পাতাটি অনুবাদ করতে ব্যর্থ) %i
   wwcConfigInvalidTranslatorSettings: অকার্যকর অনুবাদক সেটিংস! অনুগ্রহ করে আপনার config.yml
     এ শুধুমাত্র একটি অনুবাদক সক্ষম করুন।
   wwcConfigGUIQuitButton: পরিবর্তন থেকে প্রস্থান করো
@@ -179,13 +178,9 @@ Messages:
     লগ পাঠানো হয়েছে।
   wwcInventoryError: ব্যবহারকারী %i এর GUI এর সাথে ত্রুটি সনাক্ত করা হয়েছে। অনুগ্রহ
     করে ডেভেলপারের কাছে এই সমস্যা রিপোর্ট করুন।
-  wwcSignTranslationFail: আপনার টার্গেট সাইন এ এক বা একাধিক লাইন অনুবাদ করতে অক্ষম।
-  wwcBookTranslationFail: আপনার টার্গেট বইয়ের এক বা একাধিক পৃষ্ঠা অনুবাদ করতে ব্যর্থ।
   wwctiOffTarget: '%i এর জন্য আইটেমের অনুবাদ নিষ্ক্রিয় করা হয়েছে।'
   wwctiOffSender: আইটেম অনুবাদ নিষ্ক্রিয় করা হয়েছে।
   wwcItemTranslateTitleStock: ডিফল্ট আইটেমের নাম অনুবাদ করতে ব্যর্থ।
-  wwcItemTranslateLoreFail: আইটেম কাহিনী অনুবাদ করতে ব্যর্থ।
-  wwcItemTranslateTitleFail: আইটেমের নাম অনুবাদ করতে ব্যর্থ।
   wwctGUIItemButton: আইটেম অনুবাদ টগল করুন
   wwcItemTranslateTitleDone: অনুবাদ করা আইটেমের শিরোনাম সফলভাবে।
   wwcGUITempItem: আইটেম ডিসপ্লে
@@ -196,8 +191,6 @@ Messages:
   wwcItemTranslateLoreStart: টার্গেট আইটেমের কাহিনী অনুবাদ করা হচ্ছে...
   wwcItemTranslateLoreDone: অনুবাদ করা আইটেমটি সফলভাবে।
   wwctiOnTarget: আইটেমের অনুবাদ %i জন্য সক্রিয় করা হয়েছে।
-  wwcBookTranslateTitleFail: বইয়ের শিরোনাম অনুবাদ করতে ব্যর্থ।
-  wwcChatTranslationFail: আপনার বার্তা অনুবাদ করতে ব্যর্থ।
   wwcInvalidTranslator: অনুবাদক সেটিংস অবৈধ। এই প্লাগইনটি ব্যবহার করার জন্য অনুগ্রহ
     করে আপনার config.yml অথবা /wwcc এর সাথে এটি ঠিক করুন।
   wwcConfigGUIEachTranslatorSettings: '%i কনফিগারেশন'
@@ -294,9 +287,6 @@ Messages:
     করা হচ্ছে, কিন্তু আপনা %o তে একটি সক্রিয় অনুবাদ সেশন আছে।
   wwcConfigGUIChangesNotSaved: আপনার পরিবর্তনগুলি কার্যকর হবে না যতক্ষণ না আপনি /wwcc
     এ লাল বাধা ক্লিক করেন।
-  wwcConfigConversationSendFailedTranslationChatSuccess: অনুবাদ চ্যাটের বার্তা ব্যর্থ
-    হয়েছে সফলভাবে টগল করা হয়েছে।
-  wwcConfigGUISendFailedTranslationChatButton: অনুবাদ ব্যর্থ হলে আড্ডা বার্তা পাঠান
   wwctciOffSender: আগত আড্ডা অনুবাদ অক্ষম।
   wwctGUIChatIncomingButton: আগত আড্ডা অনুবাদ টগল করুন
   wwctcoOffSender: আউটগোয়িং আড্ডা অনুবাদ অক্ষম।
@@ -380,3 +370,22 @@ Messages:
   wwcBackupLangCodesWarning: ওয়ার্ডলাইডচ্যাট ভাষা আনতে অক্ষম ছিল, এবং এর পরিবর্তে
     ব্যাকআপ ব্যবহার করছে। এটি সম্ভবত প্লাগইন আচরণকে প্রভাবিত করবে না, তবে দয়া করে
     ডেভেলপারের সাথে যোগাযোগ করুন।
+  libreHttp400: Libre অনুবাদ পাঠানো খারাপ অনুরোধ! যতক্ষণ না আপনি এমন কিছু করছেন যা
+    আপনার উচিত নয়, আপনাকে এটি পাওয়া উচিত নয়। বিকাশকারীর সাথে যোগাযোগ করুন!
+  wwcConfigGUILibreTranslateApiKeyButton: বিনামূল্যে অনুবাদ API কী পরিবর্তন করুন
+  libreHttp403: অনুপস্থিত Libre অনুবাদ API কী, অথবা আপনি সার্ভার থেকে নিষিদ্ধ করা
+    হয়!
+  wwcConfigConversationLibreURLSuccess: বিনামূল্যে URL সফলভাবে সেট করা হয়েছে।
+  wwcConfigConversationLibreTranslateApiKeyInput: বর্তমান API কী হল %i। অনুগ্রহ করে
+    Libre এর জন্য একটি API কী ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigGUILibreTranslateButton: বিনামূল্যে অনুবাদ
+  libreHttp429: সার্ভার থেকে হার সীমা কারণে কোন আস্থা।
+  wwcConfigGUIToggleLibreTranslateButton: বিনামূল্যে অনুবাদ টগল করুন
+  wwcConfigConversationLibreTranslateToggleSuccess: সফলভাবে বিনামূল্যে অনুবাদ টগল
+    করা হয়েছে। পরিবর্তনগুলি কার্যকর করার জন্য পুনরায় লোড করুন।
+  wwcConfigConversationLibreTranslateApiKeySuccess: বিনামূল্যে API কী সফলভাবে সেট
+    করুন।
+  wwcConfigConversationLibreURLInput: বর্তমান URL হল %i। অনুগ্রহ করে Libre এর জন্য
+    একটি URL লিখুন, অথবা ফিরে যাওয়ার জন্য ০ টাইপ করুন।
+  libreHttpUnknown: 'অজানা http ত্রুটি: %i'
+  wwcConfigGUILibreTranslateURLButton: বিনামূল্যে পরিবর্তন করুন URL অনুবাদ করুন

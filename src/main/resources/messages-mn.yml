@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: Дэлхий даяарWedeChat хуучирсан байна. Хамгийн сүүлийн үеийн
     хувилбар руу шинэчлэнэ үү, %i.
   wwcConfigGUINextPageButton: Дараагийн хуудас
-  wwctbTranslatePageFail: (Энэ хуудсыг орчуулж чадаагүй) %i
   wwcConfigInvalidTranslatorSettings: Буруу орчуулагч тохиргоо! Өөрийн config.yml-д
     зөвхөн нэг орчуулагчийг идэвхжүүлнэ үү.
   wwcConfigGUIQuitButton: Гарах & Save өөрчлөлтүүд
@@ -187,15 +186,9 @@ Messages:
     байна.
   wwcInventoryError: Алдаа хэрэглэгч %i нь GUI нь илэрсэн байна. хөгжүүлэгчид энэ
     асуудлыг тайлагнах уу.
-  wwcSignTranslationFail: Таны зорилтот тэмдэг дээр нэг буюу хэд хэдэн мөрийг орчуулах
-    боломжгүй.
-  wwcBookTranslationFail: Таны зорилтот номонд нэг буюу хэд хэдэн хуудсыг орчуулах
-    боломжгүй.
   wwctiOffTarget: Барааны орчуулга %i нь идэвхгүй.
   wwctiOffSender: Барааны орчуулга идэвхгүй.
   wwcItemTranslateTitleStock: Анхдагч зүйл нь нэрийг орчуулах боломжгүй.
-  wwcItemTranslateLoreFail: зүйл lore орчуулж чадаагүй.
-  wwcItemTranslateTitleFail: Зүйлийн нэрийг орчуулж чадаагүй.
   wwctGUIItemButton: Түлхүүр зүйл Орчуулга
   wwcItemTranslateTitleDone: Орчуулсан зүйл нэр амжилттай.
   wwcGUITempItem: Дэлгэц зүйл
@@ -206,8 +199,6 @@ Messages:
   wwcItemTranslateLoreStart: Зорилтот зүйлийн Lore орчуулах...
   wwcItemTranslateLoreDone: Орчуулсан зүйл lore амжилттай.
   wwctiOnTarget: Барааны орчуулга %i идэвхжүүлсэн.
-  wwcBookTranslateTitleFail: Номын нэрийг орчуулж чадаагүй.
-  wwcChatTranslationFail: Таны захиасыг орчуулж чадаагүй.
   wwcInvalidTranslator: Буруу орчуулагч тохиргоо. Үүнийг өөрийн config.yml эсвэл /wwcc
     ашиглан энэ залгаасыг ашиглана уу.
   wwcConfigGUIEachTranslatorSettings: '%i Тохиргоо'
@@ -303,9 +294,6 @@ Messages:
     байгаа боловч тад %o руу идэвхтэй орчуулгын сесс байна.
   wwcConfigGUIChangesNotSaved: /wwcc дахь улаан саад тотгорыг дарах хүртэл таны өөрчлөлтүүд
     хүчин төгөлдөр болохгүй.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Бүтэлгүй орчуулга чат зурвас
-    амжилттай toggled.
-  wwcConfigGUISendFailedTranslationChatButton: Бүтэлгүй орчуулга дээр чат зурвас илгээх
   wwctciOffSender: Ирж буй чат орчуулга хөгжлийн бэрхшээлтэй.
   wwctGUIChatIncomingButton: Toggle Ирж буй чат орчуулга
   wwctcoOffSender: Гарч байгаа чат орчуулга хөгжлийн бэрхшээлтэй.
@@ -394,3 +382,22 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat хэлийг татаж авах боломжгүй байсан бөгөөд
     оронд нь нөөцлөлтийг ашиглаж байна. Энэ нь магадгүй залгаас зан нөлөөлөхгүй байх
     болно, Харин хөгжүүлэгч холбоо барина уу!.
+  libreHttp400: Муу хүсэлт Libre илгээсэн Translate! Хэрэв та ямар нэг зүйл хийж байгаа
+    бол та байх ёстой гэж, Хэрэв та энэ авч байх ёстой. Хөгжүүлэгчтэй холбоо барина
+    уу!
+  wwcConfigGUILibreTranslateApiKeyButton: Чөлөөт өөрчлөлт API түлхүүр Translate
+  libreHttp403: Алга болсон Libre API Түлхүүр Translate, эсвэл та серверээс хориглосон
+    байна!
+  wwcConfigConversationLibreURLSuccess: Чөлөөт URL амжилттай тогтоосон.
+  wwcConfigConversationLibreTranslateApiKeyInput: Одоогийн API түлхүүр нь %i байна.
+    оруулах уу Libre нь API түлхүүр, эсвэл төрөл 0 буцах.
+  wwcConfigGUILibreTranslateButton: Үнэгүй орчуулах
+  libreHttp429: улмаас серверээс түвшин хязгаар ямар ч итгэл.
+  wwcConfigGUIToggleLibreTranslateButton: Чөлөөт Toggle орчуулах
+  wwcConfigConversationLibreTranslateToggleSuccess: Амжилттай Translate Libre түлхүүр.
+    Өөрчлөлтийг хүчин төгөлдөр болгохын тулд Дуут хувилбар.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Чөлөөт API түлхүүр амжилттай тогтоосон.
+  wwcConfigConversationLibreURLInput: Одоогийн URL нь %i байна. оруулах уу Libre нь
+    URL, эсвэл төрөл 0 буцах.
+  libreHttpUnknown: 'Үл мэдэгдэх HTTP алдаа: %i'
+  wwcConfigGUILibreTranslateURLButton: Чөлөөт URL Translate өөрчлөх

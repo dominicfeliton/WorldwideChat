@@ -24,6 +24,7 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
 import com.expl0itz.worldwidechat.translators.BasicTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
+import com.expl0itz.worldwidechat.translators.LibreTranslation;
 import com.expl0itz.worldwidechat.translators.TestTranslation;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
@@ -275,44 +276,49 @@ public class ConfigurationHandler {
 		String outName = "Invalid";
 		final int maxTries = 3;
 		for (int tryNumber = 1; tryNumber <= maxTries; tryNumber++) {
-			if (!CommonDefinitions.serverIsStopping()) {
-				try {
-					main.getLogger().warning(CommonDefinitions.getMessage("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}));
-					BasicTranslation test;
-					if (mainConfig.getBoolean("Translator.useWatsonTranslate")) {
-						outName = "Watson";
-						test = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
-								mainConfig.getString("Translator.watsonURL"), true);
-						test.useTranslator();
-						break;
-					} else if (mainConfig.getBoolean("Translator.useGoogleTranslate")) {
-						outName = "Google Translate";
-						test = new GoogleTranslation(
-								mainConfig.getString("Translator.googleTranslateAPIKey"), true);
-						test.useTranslator();
-						break;
-					} else if (mainConfig.getBoolean("Translator.useAmazonTranslate")) {
-						outName = "Amazon Translate";
-						test = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
-								mainConfig.getString("Translator.amazonSecretKey"),
-								mainConfig.getString("Translator.amazonRegion"), true);
-						test.useTranslator();
-						break;
-					} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
-						outName = "JUnit/MockBukkit Testing Translator";
-						test = new TestTranslation(
-								"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu", true);
-						test.useTranslator();
-						break;
-					} else {
-						outName = "Invalid";
-						break;
-					}
-				} catch (Exception e) {
-					main.getLogger().severe("(" + outName + ") " + e.getMessage());
-					e.printStackTrace();
+			if (CommonDefinitions.serverIsStopping()) return;
+			try {
+				main.getLogger().warning(CommonDefinitions.getMessage("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}));
+				BasicTranslation test;
+				if (mainConfig.getBoolean("Translator.useWatsonTranslate")) {
+					outName = "Watson";
+					test = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
+							mainConfig.getString("Translator.watsonURL"), true);
+					test.useTranslator();
+					break;
+				} else if (mainConfig.getBoolean("Translator.useGoogleTranslate")) {
+					outName = "Google Translate";
+					test = new GoogleTranslation(
+							mainConfig.getString("Translator.googleTranslateAPIKey"), true);
+					test.useTranslator();
+					break;
+				} else if (mainConfig.getBoolean("Translator.useAmazonTranslate")) {
+					outName = "Amazon Translate";
+					test = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
+							mainConfig.getString("Translator.amazonSecretKey"),
+							mainConfig.getString("Translator.amazonRegion"), true);
+					test.useTranslator();
+					break;
+				} else if (mainConfig.getBoolean("Translator.useLibreTranslate")) {
+					outName = "Libre Translate";
+					test = new LibreTranslation(mainConfig.getString("Translator.libreAPIKey"),
+							mainConfig.getString("Translator.libreURL"), true);
+					test.useTranslator();
+					break;
+				} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
+					outName = "JUnit/MockBukkit Testing Translator";
+					test = new TestTranslation(
+							"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu", true);
+					test.useTranslator();
+					break;
+				} else {
 					outName = "Invalid";
+					break;
 				}
+			} catch (Exception e) {
+				main.getLogger().severe("(" + outName + ") " + e.getMessage());
+				e.printStackTrace();
+				outName = "Invalid";
 			}
 		}
 		if (outName.equals("Invalid")) {
@@ -453,7 +459,8 @@ public class ConfigurationHandler {
 	/* Sync user data to storage */
 	public void syncData() {
 		/* If our translator is Invalid, do not run this code */
-		if (!main.getTranslatorName().equals("Invalid")) {
+		//TODO: Investigate why mockbukkit no longer works here
+		if (!main.getTranslatorName().equals("Invalid") && !main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
 			/* Sync to SQL database, if it exists */
 			// Our Generic Table Layout: 
 			// | Creation Date | Object Properties |  

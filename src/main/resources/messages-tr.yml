@@ -45,7 +45,6 @@ Messages:
   wwctGUISignButton: İmzala Tercümesi
   wwcUpdaterOutOfDate: WorldwideChat güncel değil. Lütfen %i en son sürüme güncelleyin.
   wwcConfigGUINextPageButton: Sonraki Sayfa
-  wwctbTranslatePageFail: (Bu sayfa çevrilemedi) %i
   wwcConfigInvalidTranslatorSettings: Geçersiz çevirmen ayarları! Lütfen config.yml'nizde
     yalnızca bir çevirmen etkinleştirin.
   wwcConfigGUIQuitButton: Değişiklikleri Kaydet
@@ -178,13 +177,9 @@ Messages:
   wwcInventoryErrorPlayer: GUI'niz ile hata algılandı. Konsola bir günlük gönderildi.
   wwcInventoryError: '%i kullanıcısının GUI ile hata tespit edildi. Lütfen bu sorunu
     geliştiriciye bildirin.'
-  wwcSignTranslationFail: Hedef işaretinizde bir veya daha fazla satır çevrilemiyor.
-  wwcBookTranslationFail: Hedef kitabınızda bir veya daha fazla sayfa çevirilemiyor.
   wwctiOffTarget: Öğe çevirisi devre dışı bırakıldı.
   wwctiOffSender: Ürün çevirisi devre dışı.
   wwcItemTranslateTitleStock: Varsayılan öğe adları çevrilemiyor.
-  wwcItemTranslateLoreFail: Öğe ilmi çevrilemedi.
-  wwcItemTranslateTitleFail: Öğe adı çevrilemedi.
   wwctGUIItemButton: Öğe Çevirisi Değiştir
   wwcItemTranslateTitleDone: Öğe başlığı başarıyla çevrildi.
   wwcGUITempItem: Öğe Göstergesi
@@ -194,8 +189,6 @@ Messages:
   wwcItemTranslateLoreStart: Hedef öğenin ilmi çevriliyor...
   wwcItemTranslateLoreDone: Öğe irfan başarıyla tercüme edildi.
   wwctiOnTarget: '%i için öğe çevirisi etkinleştirildi.'
-  wwcBookTranslateTitleFail: Kitap başlığı çevrilemedi.
-  wwcChatTranslationFail: Mesajınız çevrilemedi.
   wwcInvalidTranslator: Geçersiz çevirmen ayarları. Lütfen bu eklentiyi kullanmak
     için config.yml veya /wwcc ile düzeltin.
   wwcConfigGUIEachTranslatorSettings: '%i Yapılandırma'
@@ -287,9 +280,6 @@ Messages:
     ancak %o konumuna etkin bir çeviri oturumunuz var.
   wwcConfigGUIChangesNotSaved: Değişiklikleriniz siz /wwcc'deki kırmızı bariyere tıklayana
     kadar etkili olmayacaktır.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Başarısız çeviri sohbet mesajı
-    başarıyla geçildi.
-  wwcConfigGUISendFailedTranslationChatButton: Başarısız Çeviride Sohbet Mesajı Gönder
   wwctciOffSender: Gelen sohbet çevirisi devre dışı.
   wwctGUIChatIncomingButton: Gelen Sohbet Çevirisi
   wwctcoOffSender: Giden sohbet çevirisi devre dışı.
@@ -376,3 +366,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat dilleri getiremedi, ve bunun yerine yedekleme
     kullanıyor. Bu muhtemelen eklenti davranışını etkilemez, ancak lütfen geliştiriciyle
     iletişime geçin.
+  libreHttp400: Libre Translate"e kötü istek gönderildi! Yapmamanız gereken bir şey
+    yapmıyorsanız, bunu almamalısın. Lütfen geliştiriciyle iletişime geçin!
+  wwcConfigGUILibreTranslateApiKeyButton: Değiştir Ücretsiz API Anahtarı Çevir
+  libreHttp403: Eksiksiz Libre Çevir API Anahtarı, ya da sunucudan yasaklandın!
+  wwcConfigConversationLibreURLSuccess: Libre URL başarıyla ayarlandı.
+  wwcConfigConversationLibreTranslateApiKeyInput: Geçerli API anahtarı %i. Lütfen
+    Libre için bir API anahtarı girin veya geri dönmek için 0 yazın.
+  wwcConfigGUILibreTranslateButton: Libre Çevir
+  libreHttp429: Sunucudan gelen oran sınırı nedeniyle güven yok.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Çevir
+  wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate başarıyla değiştirildi.
+    Değişikliklerin etkili olması için yeniden yükleyin.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API anahtarı başarıyla ayarlandı.
+  wwcConfigConversationLibreURLInput: Geçerli URL %i. Lütfen Libre için bir URL girin
+    veya geri dönmek için 0 yazın.
+  libreHttpUnknown: 'Bilinmeyen http hatası: %i'
+  wwcConfigGUILibreTranslateURLButton: Ücretsiz Çevir URL'sini değiştir

@@ -41,7 +41,6 @@ Messages:
   wwctGUISignButton: สลับการแปล
   wwcUpdaterOutOfDate: WorldwideChat ล้าสมัยแล้วโปรดอัปเดตเป็นเวอร์ชันล่าสุด %i
   wwcConfigGUINextPageButton: หน้าถัดไป
-  wwctbTranslatePageFail: (ไม่สามารถแปลหน้านี้ได้) %i
   wwcConfigInvalidTranslatorSettings: การตั้งค่าตัวแปลไม่ถูกต้อง!โปรดเปิดใช้งานเพียงหนึ่งแปลใน
     config.yml ของคุณ
   wwcConfigGUIQuitButton: ออกจากการบันทึกการเปลี่ยนแปลง
@@ -163,13 +162,9 @@ Messages:
   wwcConfigCacheInvalid: ขนาดแคชของนักแปลไม่ถูกต้องผิดนัดที่ 10...
   wwcInventoryErrorPlayer: ข้อผิดพลาดที่ตรวจพบกับ GUI ของคุณบันทึกถูกส่งไปยังคอนโซล
   wwcInventoryError: ข้อผิดพลาดที่ตรวจพบกับ GUI ของผู้ใช้ %i โปรดรายงานปัญหานี้ไปยังผู้พัฒนา
-  wwcSignTranslationFail: ไม่สามารถแปลหนึ่งบรรทัดหรือมากกว่าบนเครื่องหมายเป้าหมายของคุณ
-  wwcBookTranslationFail: ไม่สามารถแปลหนึ่งหน้าหรือมากกว่าในหนังสือเป้าหมายของคุณ
   wwctiOffTarget: ปิดการแปลรายการสำหรับ %i
   wwctiOffSender: ปิดการแปลรายการ
   wwcItemTranslateTitleStock: ไม่สามารถแปลชื่อรายการเริ่มต้น
-  wwcItemTranslateLoreFail: ล้มเหลวในการแปลตำนานรายการ
-  wwcItemTranslateTitleFail: ล้มเหลวในการแปลชื่อรายการ
   wwctGUIItemButton: สลับการแปลรายการ
   wwcItemTranslateTitleDone: ชื่อรายการที่แปลเรียบร้อยแล้ว
   wwcGUITempItem: แสดงรายการ
@@ -179,8 +174,6 @@ Messages:
   wwcItemTranslateLoreStart: แปลตำนานของรายการเป้าหมาย...
   wwcItemTranslateLoreDone: แปลตำนานรายการประสบความสำเร็จ.
   wwctiOnTarget: เปิดใช้งานการแปลรายการสำหรับ %i
-  wwcBookTranslateTitleFail: ล้มเหลวในการแปลชื่อหนังสือ
-  wwcChatTranslationFail: ล้มเหลวในการแปลข้อความของคุณ
   wwcInvalidTranslator: การตั้งค่าตัวแปลไม่ถูกต้องโปรดแก้ไขปัญหานี้ใน config.yml ของคุณหรือกับ
     /wwcc เพื่อใช้ปลั๊กอินนี้
   wwcConfigGUIEachTranslatorSettings: การตั้งค่าคอนฟิก %i
@@ -267,8 +260,6 @@ Messages:
     แต่คุณมีเซสชันการแปลที่ใช้งานอยู่เป็น %o
   wwcConfigGUIChangesNotSaved: การเปลี่ยนแปลงของคุณจะไม่มีผลจนกว่าคุณจะคลิกที่อุปสรรคสีแดงใน
     /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: ล้มเหลวในการแปลข้อความแชทเปลี่ยนเสร็จเรียบร้อยแล้ว
-  wwcConfigGUISendFailedTranslationChatButton: ส่งข้อความแชทเมื่อแปลล้มเหลว
   wwctciOffSender: ปิดการแปลแชทขาเข้า
   wwctGUIChatIncomingButton: สลับการแปลแชทขาเข้า
   wwctcoOffSender: ปิดการแปลแชทขาออก
@@ -341,3 +332,18 @@ Messages:
   wwcTimeoutException: คำสั่งของคุณหมดเวลาโปรดลองใหม่อีกครั้ง
   wwcBackupLangCodesWarning: WorldwideChat ไม่สามารถดึงข้อมูลภาษาได้ และใช้การสำรองข้อมูลแทนนี้อาจจะไม่ส่งผลกระทบต่อการทำงานของปลั๊กอิน,
     แต่โปรดติดต่อนักพัฒนาซอฟต์แวร์.
+  libreHttp400: คำขอที่ไม่ดีส่งไปยังฟรีแปลภาษา!ถ้าคุณกำลังทำสิ่งที่คุณไม่ควร, คุณไม่ควรจะได้รับนี้.กรุณาติดต่อนักพัฒนา!
+  wwcConfigGUILibreTranslateApiKeyButton: เปลี่ยนคีย์ API แปล Libre
+  libreHttp403: ขาดหายไป Libre แปล API คีย์, หรือคุณถูกห้ามจากเซิร์ฟเวอร์!
+  wwcConfigConversationLibreURLSuccess: ตั้งค่า URL ฟรีเรียบร้อยแล้ว
+  wwcConfigConversationLibreTranslateApiKeyInput: คีย์ API ปัจจุบันคือ %i โปรดป้อนคีย์
+    API สำหรับ Libre หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUILibreTranslateButton: ลิเบร แปลภาษา
+  libreHttp429: ไม่มีความเชื่อมั่นเนื่องจากการ จำกัด อัตราจากเซิร์ฟเวอร์
+  wwcConfigGUIToggleLibreTranslateButton: สลับ ฟรีแปล
+  wwcConfigConversationLibreTranslateToggleSuccess: ประสบความสำเร็จในการสลับฟรีแปลภาษาโหลดใหม่เพื่อให้การเปลี่ยนแปลงมีผล
+  wwcConfigConversationLibreTranslateApiKeySuccess: ชุดคีย์ Libre API เรียบร้อยแล้ว
+  wwcConfigConversationLibreURLInput: URL ปัจจุบันคือ %i โปรดป้อน URL สำหรับ Libre
+    หรือพิมพ์ 0 เพื่อย้อนกลับ
+  libreHttpUnknown: 'ไม่ทราบข้อผิดพลาด http: %i'
+  wwcConfigGUILibreTranslateURLButton: เปลี่ยน URL แปลภาษา Libre

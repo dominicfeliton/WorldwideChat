@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat är föråldrad. Uppdatera till den senaste versionen,
     %i.
   wwcConfigGUINextPageButton: Nästa sida
-  wwctbTranslatePageFail: (Det gick inte att översätta den här sidan) %i
   wwcConfigInvalidTranslatorSettings: Ogiltiga översättarinställningar! Aktivera endast
     en översättare i config.yml.
   wwcConfigGUIQuitButton: Avsluta och spara ändringar
@@ -187,13 +186,9 @@ Messages:
     logg har skickats till konsolen.
   wwcInventoryError: Fel som upptäcktes med användaranvändargränssnittet för användaren
     %i. Rapportera problemet till utvecklaren.
-  wwcSignTranslationFail: Det gick inte att översätta en eller flera rader på måltecknet.
-  wwcBookTranslationFail: Det går inte att översätta en eller flera sidor i målboken.
   wwctiOffTarget: Objektöversättning inaktiverad för %i.
   wwctiOffSender: Översättning av objekt inaktiverad
   wwcItemTranslateTitleStock: Det gick inte att översätta standardobjektnamn.
-  wwcItemTranslateLoreFail: Det gick inte att översätta objektet lore.
-  wwcItemTranslateTitleFail: Det gick inte att översätta objektnamn
   wwctGUIItemButton: Växla översättning av objekt
   wwcItemTranslateTitleDone: Översatt objektets titel framgångsrikt.
   wwcGUITempItem: Visning av objekt
@@ -204,8 +199,6 @@ Messages:
   wwcItemTranslateLoreStart: Översätta lore av målobjekt...
   wwcItemTranslateLoreDone: Översatt objekt lore framgångsrikt.
   wwctiOnTarget: Objektöversättning aktiverad för %i.
-  wwcBookTranslateTitleFail: Misslyckades översätta bokens titel.
-  wwcChatTranslationFail: Det gick inte att översätta ditt meddelande.
   wwcInvalidTranslator: Ogiltiga översättarinställningar. Rätta detta i din config.yml
     eller med /wwcc för att använda detta insticksprogram.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'
@@ -303,10 +296,6 @@ Messages:
     men du har en aktiv översättningssession till %o.
   wwcConfigGUIChangesNotSaved: Dina ändringar träder inte i kraft förrän du klickar
     på den röda barriären i /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Misslyckades översättningschattmeddelande
-    växlas med lyckat resultat.
-  wwcConfigGUISendFailedTranslationChatButton: Skicka chattmeddelande vid misslyckad
-    översättning
   wwctciOffSender: Översättning av inkommande chatt inaktiverad.
   wwctGUIChatIncomingButton: Växla översättning för inkommande chatt
   wwctcoOffSender: Översättning av utgående chatt inaktiverad.
@@ -394,3 +383,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat kunde inte hämta språk, och använder istället
     säkerhetskopior. Detta kommer förmodligen inte att påverka plugin-beteendet, men
     kontakta utvecklaren.
+  libreHttp400: Dålig begäran skickas till Libre Translate! Om du inte gör något som
+    du inte borde, borde du inte få det här. Kontakta utvecklaren!
+  wwcConfigGUILibreTranslateApiKeyButton: Ändra Ledig Översätt API-nyckel
+  libreHttp403: Saknas Libre Translate API Key, eller så är du förbjuden från servern!
+  wwcConfigConversationLibreURLSuccess: Libre URL har ställts in.
+  wwcConfigConversationLibreTranslateApiKeyInput: Den aktuella API-nyckeln är %i.
+    Ange en API-nyckel för Libre, eller skriv 0 för att gå tillbaka.
+  wwcConfigGUILibreTranslateButton: Libre Översätt
+  libreHttp429: Inget förtroende på grund av räntegräns från servern.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Översätt
+  wwcConfigConversationLibreTranslateToggleSuccess: Framgångsrikt växlade Libre Translate.
+    Ladda om för att ändringarna ska träda i kraft.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API-nyckel har ställts in
+    framgångsrikt.
+  wwcConfigConversationLibreURLInput: Den aktuella webbadressen är %i. Ange en webbadress
+    för Libre, eller skriv 0 för att gå tillbaka.
+  libreHttpUnknown: 'Okänt http-fel: %i'
+  wwcConfigGUILibreTranslateURLButton: Change Libre Översätt URL

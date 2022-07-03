@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat huwa skadut. Jekk jogħġbok aġġorna l-aħħar verżjoni,
     %i.
   wwcConfigGUINextPageButton: Paġna li jmiss
-  wwctbTranslatePageFail: (Naqas milli tittraduċi din il-paġna) %i
   wwcConfigInvalidTranslatorSettings: Settings traduttur invalidi! Jekk jogħġbok ħalli
     traduttur wieħed biss fil-konfig.yml tiegħek.
   wwcConfigGUIQuitButton: Ħruġ & Save Bidliet
@@ -185,15 +184,9 @@ Messages:
   wwcInventoryErrorPlayer: Żball skopert bil-GUI tiegħek. Ġie mibgħut log lill-console.
   wwcInventoryError: Żball skoperti bil GUI ta 'utent %i. Jekk jogħġbok irrapporta
     din il-kwistjoni lill-iżviluppatur.
-  wwcSignTranslationFail: Kapaċi tittraduċi linja waħda jew aktar fuq is-sinjal fil-mira
-    tiegħek.
-  wwcBookTranslationFail: Kapaċi tittraduċi paġna waħda jew aktar fil-ktieb fil-mira
-    tiegħek.
   wwctiOffTarget: Punt traduzzjoni b'diżabilità għal %i.
   wwctiOffSender: Traduzzjoni oġġett b'diżabilità.
   wwcItemTranslateTitleStock: Ma jistgħux jittraduċu ismijiet ta 'entrati default.
-  wwcItemTranslateLoreFail: Naqas milli tittraduċi oġġett Lore.
-  wwcItemTranslateTitleFail: Naqas milli tittraduċi l-isem tal-oġġett.
   wwctGUIItemButton: Toggle Punt Traduzzjoni
   wwcItemTranslateTitleDone: Titlu oġġett tradott b'suċċess.
   wwcGUITempItem: Punt Display
@@ -204,8 +197,6 @@ Messages:
   wwcItemTranslateLoreStart: Traduzzjoni Lore ta 'oġġett fil-mira...
   wwcItemTranslateLoreDone: Oġġett tradott Lore b'suċċess.
   wwctiOnTarget: traduzzjoni Punt ppermettiet għal %i.
-  wwcBookTranslateTitleFail: Naqas milli jittraduċi titolu ktieb.
-  wwcChatTranslationFail: Naqas milli tittraduċi l-messaġġ tiegħek.
   wwcInvalidTranslator: Settings tat-traduttur invalidi. Jekk jogħġbok jiffissaw dan
     fil config.yml tiegħek jew ma '/wwcc għall-użu dan plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurazzjoni'
@@ -302,9 +293,6 @@ Messages:
     jiġi tradott, imma għandek sessjoni ta 'traduzzjoni attiva għal %o.
   wwcConfigGUIChangesNotSaved: Il-bidliet tiegħek mhux se jidħlu fis-seħħ sakemm tikklikkja
     fuq il-barriera ħamra fi/wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Naqas messaġġ chat traduzzjoni
-    toggled b'suċċess.
-  wwcConfigGUISendFailedTranslationChatButton: Ibgħat Messaġġ ta 'Chat fuq Traduzzjoni
   wwctciOffSender: Traduzzjoni chat deħlin b'diżabilità.
   wwctGUIChatIncomingButton: Toggle Traduzzjoni Chat deħlin
   wwctcoOffSender: Traduzzjoni chat ħerġin b'diżabilità.
@@ -390,3 +378,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat ma setax iġib il-lingwi, u minflok juża
     backups. Dan probabbilment mhux se jaffettwa l-imġiba plugin, iżda jekk jogħġbok
     ikkuntattja l-iżviluppatur.
+  libreHttp400: Talba ħażina mibgħuta lil Libre Translate! Sakemm ma tkunx qed tagħmel
+    xi ħaġa li m'għandekx, m'għandekx tikseb dan. Jekk jogħġbok ikkuntattja l-iżviluppatur!
+  wwcConfigGUILibreTranslateApiKeyButton: Bidla Ħieles Ittraduċi API Ewlenin
+  libreHttp403: Nieqsa Libre Ittraduċi API Ewlenin, jew inti huma pprojbiti mis-server!
+  wwcConfigConversationLibreURLSuccess: Free URL stabbiliti b'suċċess.
+  wwcConfigConversationLibreTranslateApiKeyInput: Il-muftieħ API attwali huwa %i.
+    Jekk jogħġbok input ewlenin API għall Libre, jew it-tip 0 li jmorru lura.
+  wwcConfigGUILibreTranslateButton: Free Ittraduċi
+  libreHttp429: L-ebda fiduċja minħabba l-limitu tar-rata mis-server.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Ħieles Ittraduċi
+  wwcConfigConversationLibreTranslateToggleSuccess: B'suċċess toggled Libre Ittraduċi.
+    Reload biex il-bidliet jidħlu fis-seħħ.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Free API sett ewlenin b'suċċess.
+  wwcConfigConversationLibreURLInput: Il-URL attwali huwa %i. Jekk jogħġbok input
+    URL għall Libre, jew tip 0 li jmorru lura.
+  libreHttpUnknown: 'Mhux magħruf żball http: %i'
+  wwcConfigGUILibreTranslateURLButton: Bidla Free Ittraduċi URL

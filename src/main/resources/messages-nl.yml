@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat is verouderd. Werk bij naar de nieuwste versie,
     %i.
   wwcConfigGUINextPageButton: Volgende pagina
-  wwctbTranslatePageFail: (Vertalen van deze pagina is mislukt) %i
   wwcConfigInvalidTranslatorSettings: Ongeldige instellingen voor vertalers! Schakel
     slechts één vertaler in uw config.yml.
   wwcConfigGUIQuitButton: Wijzigingen afsluiten en opslaan
@@ -188,13 +187,9 @@ Messages:
     console verzonden.
   wwcInventoryError: Fout gedetecteerd met GUI van gebruiker %i. Meld dit probleem
     aan de ontwikkelaar.
-  wwcSignTranslationFail: Kan geen of meer regels op je doelbord vertalen.
-  wwcBookTranslationFail: Kan geen of meer pagina's in je doelboek vertalen.
   wwctiOffTarget: Itemvertaling is uitgeschakeld voor %i.
   wwctiOffSender: Itemvertaling is uitgeschakeld.
   wwcItemTranslateTitleStock: Standaardnamen van items kunnen niet worden vertaald.
-  wwcItemTranslateLoreFail: Kan iteminformatie niet vertalen.
-  wwcItemTranslateTitleFail: Kan de naam van het item niet vertalen.
   wwctGUIItemButton: Vertalen van item uitschakelen
   wwcItemTranslateTitleDone: De titel van een vertaald item succesvol.
   wwcGUITempItem: Weergave van item
@@ -205,8 +200,6 @@ Messages:
   wwcItemTranslateLoreStart: Meer over doelitem vertalen...
   wwcItemTranslateLoreDone: Vertaald item lore succesvol.
   wwctiOnTarget: Itemvertaling ingeschakeld voor %i.
-  wwcBookTranslateTitleFail: Kan de boektitel niet vertalen.
-  wwcChatTranslationFail: Kan je bericht niet vertalen.
   wwcInvalidTranslator: Ongeldige instellingen voor vertalers. Gelieve dit op te lossen
     in je config.yml of met /wwcc om deze plugin te gebruiken.
   wwcConfigGUIEachTranslatorSettings: '%i Configuratie'
@@ -304,10 +297,6 @@ Messages:
     vertaald, maar je hebt een actieve vertaalsessie naar %o.
   wwcConfigGUIChangesNotSaved: Uw wijzigingen worden pas van kracht als u op de rode
     barrière klikt in /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Mislukt vertaalchatbericht
-    is met succes geschakeld.
-  wwcConfigGUISendFailedTranslationChatButton: Chatbericht verzenden bij mislukte
-    vertaling
   wwctciOffSender: Inkomende chatvertaling uitgeschakeld.
   wwctGUIChatIncomingButton: Toggle Inkomende chatvertaling
   wwctcoOffSender: Uitgaande chatvertaling uitgeschakeld.
@@ -396,3 +385,22 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat kon geen talen ophalen en gebruikt in plaats
     daarvan back-ups. Dit heeft waarschijnlijk geen invloed op het gedrag van plug-ins,
     maar neem contact op met de ontwikkelaar.
+  libreHttp400: Slecht verzoek verzonden naar Libre Translate! Tenzij je iets doet
+    wat je niet zou moeten doen, zou je dit niet moeten krijgen. Neem dan contact
+    op met de ontwikkelaar!
+  wwcConfigGUILibreTranslateApiKeyButton: Verander Libre Translate API-sleutel
+  libreHttp403: Ontbrekende Libre Translate API-sleutel, of je bent verbannen van
+    de server!
+  wwcConfigConversationLibreURLSuccess: Libre URL is succesvol ingesteld.
+  wwcConfigConversationLibreTranslateApiKeyInput: De huidige API-sleutel is %i. Voer
+    een API-sleutel in voor Libre, of typ 0 om terug te gaan.
+  wwcConfigGUILibreTranslateButton: Libre Vertalen
+  libreHttp429: Geen vertrouwen vanwege de snelheidslimiet van de server.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Vertalen
+  wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate is succesvol omgeschakeld.
+    Laad opnieuw om de wijzigingen van kracht te laten worden.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API-sleutelset met succes.
+  wwcConfigConversationLibreURLInput: De huidige URL is %i. Voer een URL in voor Libre,
+    of typ 0 om terug te gaan.
+  libreHttpUnknown: 'Onbekende http-fout: %i'
+  wwcConfigGUILibreTranslateURLButton: De URL van Libre Translate wijzigen

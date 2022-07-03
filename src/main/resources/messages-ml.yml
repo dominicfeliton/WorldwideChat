@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: ഛത് കാലഹരണപ്പെട്ടതാണ്. ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് ദയവായി അപ്ഡേറ്റുചെയ്യുക,
     %i.
   wwcConfigGUINextPageButton: അടുത്ത പേജ്
-  wwctbTranslatePageFail: (ഈ പേജ് വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു) %i
   wwcConfigInvalidTranslatorSettings: അസാധുവായ വിവർത്തകൻ ക്രമീകരണങ്ങൾ! നിങ്ങളുടെ ചൊന്ഫിഗ്.
     യ്മ്ല് ഒരു വിവർത്തകൻ മാത്രം പ്രവർത്തനക്ഷമമാക്കുക.
   wwcConfigGUIQuitButton: എക്സിറ്റ് & മാറ്റങ്ങൾ സംരക്ഷിക്കുക
@@ -185,15 +184,9 @@ Messages:
     അയച്ചു.
   wwcInventoryError: ഉപയോക്താവിന്റെ %i ന്റെ GUI ഉപയോഗിച്ചുള്ള പിശക് കണ്ടെത്തിയത് %i
     ഈ പ്രശ്നം ഡവലപ്പർക്ക് റിപ്പോർട്ട് ചെയ്യുക.
-  wwcSignTranslationFail: നിങ്ങളുടെ ടാർഗെറ്റ് ചിഹ്നത്തിൽ ഒന്നോ അതിലധികമോ വരികൾ വിവർത്തനം
-    ചെയ്യാൻ കഴിയുന്നില്ല.
-  wwcBookTranslationFail: നിങ്ങളുടെ ടാർഗെറ്റ് പുസ്തകത്തിൽ ഒന്നോ അതിലധികമോ പേജുകൾ
-    വിവർത്തനം ചെയ്യാൻ കഴിയുന്നില്ല.
   wwctiOffTarget: ഇനം പരിഭാഷ %i ന് അപ്രാപ്തമാക്കി.
   wwctiOffSender: ഇനം വിവർത്തനം അപ്രാപ്തമാക്കി.
   wwcItemTranslateTitleStock: സ്ഥിര ഇനം പേരുകൾ വിവർത്തനം ചെയ്യാൻ കഴിയുന്നില്ല.
-  wwcItemTranslateLoreFail: ഇനം നാടാകെ വിവർത്തനം പരാജയപ്പെട്ടു.
-  wwcItemTranslateTitleFail: ഇനത്തിന്റെ പേര് വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.
   wwctGUIItemButton: ഇനം വിവർത്തനം ടോഗിൾ
   wwcItemTranslateTitleDone: വിവർത്തനം ചെയ്ത ഇനം ശീർഷകം വിജയകരമായി.
   wwcGUITempItem: ഇനം പ്രദർശിപ്പിക്കുക
@@ -204,8 +197,6 @@ Messages:
   wwcItemTranslateLoreStart: ലക്ഷ്യം ഇനത്തിന്റെ നാടാകെ വിവർത്തനം...
   wwcItemTranslateLoreDone: വിവർത്തനം ചെയ്ത ഇനം വിജയകരമായി.
   wwctiOnTarget: ഇനം പരിഭാഷ %i എന്നതിന് പ്രവർത്തനക്ഷമമാക്കി.
-  wwcBookTranslateTitleFail: പുസ്തക തലക്കെട്ട് വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.
-  wwcChatTranslationFail: നിങ്ങളുടെ സന്ദേശം വിവർത്തനം ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.
   wwcInvalidTranslator: അസാധുവായ വിവർത്തകൻ ക്രമീകരണങ്ങൾ. ഈ പ്ലഗിൻ ഉപയോഗിക്കുന്നതിന്
     നിങ്ങളുടെ കോൺഫിഗറേഷനിൽ അല്ലെങ്കിൽ /wwcc ഉപയോഗിച്ച് ഇത് പരിഹരിക്കുക.
   wwcConfigGUIEachTranslatorSettings: '%i കോൺഫിഗറേഷൻ'
@@ -298,10 +289,6 @@ Messages:
     ചെയ്യപ്പെടുന്നു, പക്ഷേ നിങ്ങൾക്ക് %o ലേക്ക് ഒരു സജീവ വിവർത്തന സെഷൻ ഉണ്ട്.
   wwcConfigGUIChangesNotSaved: നിങ്ങൾ/വ്വ്ച് ചുവന്ന തടസ്സം ക്ലിക്ക് വരെ നിങ്ങളുടെ
     മാറ്റങ്ങൾ പ്രാബല്യത്തിൽ വരികയില്ല.
-  wwcConfigConversationSendFailedTranslationChatSuccess: പരാജയപ്പെട്ടു വിവർത്തനം ചാറ്റ്
-    സന്ദേശം വിജയകരമായി ടോഗിൾ ചെയ്തു.
-  wwcConfigGUISendFailedTranslationChatButton: പരാജയപ്പെട്ട വിവർത്തനത്തിൽ ചാറ്റ് സന്ദേശം
-    അയയ്ക്കുക
   wwctciOffSender: ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം അപ്രാപ്തമാക്കി.
   wwctGUIChatIncomingButton: ടോഗിൾ ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം
   wwctcoOffSender: ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം അപ്രാപ്തമാക്കി.
@@ -390,3 +377,21 @@ Messages:
   wwcTimeoutException: നിങ്ങളുടെ കമാൻഡ് സമയമെടുത്തു. ദയവായി വീണ്ടും ശ്രമിക്കുക.
   wwcBackupLangCodesWarning: WorldwideChat ഭാഷകൾ ലഭ്യമാക്കാൻ കഴിഞ്ഞില്ല, പകരം ബാക്കപ്പുകൾ
     ഉപയോഗിക്കുന്നു. ഇത് ഒരുപക്ഷേ പ്ലഗിൻ സ്വഭാവത്തെ ബാധിക്കില്ല, എന്നാൽ ഡെവലപ്പർ ബന്ധപ്പെടുക.
+  libreHttp400: ലിബ്രെ വിവർത്തനം അയച്ച മോശം അഭ്യർത്ഥന! നിങ്ങൾ പാടില്ലാത്ത എന്തെങ്കിലും
+    ചെയ്യുന്നില്ലെങ്കിൽ, ഈ നേടുകയും പാടില്ല. ഡവലപ്പറെ ബന്ധപ്പെടുക!
+  wwcConfigGUILibreTranslateApiKeyButton: സൗജന്യ വിവർത്തനം API കീ മാറ്റുക
+  libreHttp403: ലിബ്രെ കാണാതായ API കീ വിവർത്തനം, അല്ലെങ്കിൽ നിങ്ങൾ സെർവറിൽ നിന്ന്
+    നിരോധിച്ചിരിക്കുന്നു!
+  wwcConfigConversationLibreURLSuccess: സൗജന്യ URL വിജയകരമായി സജ്ജമാക്കി.
+  wwcConfigConversationLibreTranslateApiKeyInput: നിലവിലെ API കീ %i ആണ്. Libre- നായി
+    ദയവായി ഒരു API കീ ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
+  wwcConfigGUILibreTranslateButton: സൗജന്യ വിവർത്തനം
+  libreHttp429: സെർവറിൽ നിന്ന് നിരക്ക് പരിധി കാരണം ആത്മവിശ്വാസം ഇല്ല.
+  wwcConfigGUIToggleLibreTranslateButton: സൗജന്യ ടോഗിൾ വിവർത്തനം
+  wwcConfigConversationLibreTranslateToggleSuccess: വിജയകരമായി ലിബ്രെ വിവർത്തനം ടോഗിൾ.
+    മാറ്റങ്ങൾ പ്രാബല്യത്തിൽ വരുന്നതിന് വീണ്ടും ലോഡുചെയ്യുക.
+  wwcConfigConversationLibreTranslateApiKeySuccess: വിജയകരമായി സ്വതന്ത്ര API കീ സെറ്റ്.
+  wwcConfigConversationLibreURLInput: നിലവിലെ URL %i ആണ്. Libre- നായി ദയവായി ഒരു URL
+    ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
+  libreHttpUnknown: 'അജ്ഞാതമായ http പിശക്: %i'
+  wwcConfigGUILibreTranslateURLButton: മാറ്റുക സ്വതന്ത്ര URL വിവർത്തനം

@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldWieChat tarix deyil. Xahiş edirik ən son versiyaya yeniləyin,
     %i.
   wwcConfigGUINextPageButton: Növbəti səhifə
-  wwctbTranslatePageFail: (Bu səhifəni tərcümə etmək mümkün deyil) %i
   wwcConfigInvalidTranslatorSettings: Yanlış tərcüməçi parametrləri! Sizin config.yml
     yalnız bir tərcüməçi aktivləşdirin.
   wwcConfigGUIQuitButton: Çıx və dəyişiklikləri saxla
@@ -180,15 +179,9 @@ Messages:
   wwcConfigCacheInvalid: Tərcüməçi önbellek ölçüsü etibarsız. 10 üçün defaulting...
   wwcInventoryErrorPlayer: Hata GUI ilə aşkar. Konsol bir günlük göndərildi.
   wwcInventoryError: İstifadəçi %i GUI ilə aşkarlanan səhv.
-  wwcSignTranslationFail: Hədəf işarənizdə bir və ya daha çox xətt tərcümə etmək mümkün
-    deyil.
-  wwcBookTranslationFail: Hədəf kitabınızdakı bir və ya daha çox səhifəni tərcümə
-    edə bilmir.
   wwctiOffTarget: Item tərcümə %i üçün əlil.
   wwctiOffSender: Item tərcümə əlil.
   wwcItemTranslateTitleStock: Varsayılan maddə adlarını tərcümə etmək mümkün deyil.
-  wwcItemTranslateLoreFail: Maddə irfan tərcümə edə bilmədi.
-  wwcItemTranslateTitleFail: Maddə adını tərcümə edə bilmədi.
   wwctGUIItemButton: Maddə tərcüməsi keçid
   wwcItemTranslateTitleDone: Müvəffəqiyyətlə tərcümə maddə adı.
   wwcGUITempItem: Item Display
@@ -199,8 +192,6 @@ Messages:
   wwcItemTranslateLoreStart: Hədəf maddənin irfan tərcümə...
   wwcItemTranslateLoreDone: Tərcümə maddə irfan uğurla.
   wwctiOnTarget: Item tərcümə %i üçün effektiv.
-  wwcBookTranslateTitleFail: Kitabın adını tərcümə edə bilmədi.
-  wwcChatTranslationFail: Mesajınızı tərcümə edə bilmədi.
   wwcInvalidTranslator: Yanlış tərcüməçi parametrləri. Bu plugin istifadə etmək üçün
     config.yml və ya /wwcc ilə düzeltmek edin.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiqurasiya'
@@ -294,9 +285,6 @@ Messages:
     olunur, ancaq sizin %o üçün aktiv tərcümə sessiyası var.
   wwcConfigGUIChangesNotSaved: /wwcc qırmızı maneə basın qədər dəyişikliklər qüvvəyə
     minməyəcək.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Uğursuz tərcümə chat mesajı
-    uğurla keçdi.
-  wwcConfigGUISendFailedTranslationChatButton: Uğursuz Tərcümə Chat Mesajı
   wwctciOffSender: Gələn chat tərcümə əlil.
   wwctGUIChatIncomingButton: Gələn Chat Tərcümə keçid
   wwctcoOffSender: Giden chat tərcümə əlil.
@@ -379,3 +367,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat dil almaq iqtidarında idi və əvəzinə yedeklemeler
     istifadə edir. Bu, ehtimal ki, plugin davranışına təsir göstərməyəcək, ancaq geliştirici
     ilə əlaqə saxlayın.
+  libreHttp400: Pulsuz Tərcümə göndərilən Bad sorğu! Siz lazım deyil ki, bir şey bunu
+    halda, Bu almaq lazım deyil. Geliştirici ilə əlaqə saxlayın!
+  wwcConfigGUILibreTranslateApiKeyButton: Pulsuz Tərcümə API Açarını dəyişdirin
+  libreHttp403: Pulsuz Translate API Key itkin, və ya server qadağan!
+  wwcConfigConversationLibreURLSuccess: Pulsuz URL uğurla təyin olundu.
+  wwcConfigConversationLibreTranslateApiKeyInput: Mövcud API açarı %i.Lütfən Pulsuz
+    üçün bir API düyməsini daxil edin və ya geri dönmək üçün 0 yazın.
+  wwcConfigGUILibreTranslateButton: Pulsuz Tərcümə
+  libreHttp429: Serverdən dərəcəsi limitinə görə güvən yoxdur.
+  wwcConfigGUIToggleLibreTranslateButton: Pulsuz Tərcümə keçid
+  wwcConfigConversationLibreTranslateToggleSuccess: Uğurla Pulsuz Tərcümə keçid. Dəyişikliklərin
+    qüvvəyə minməsi üçün yenidən yüklə.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Pulsuz API açarı uğurla təyin
+    olundu.
+  wwcConfigConversationLibreURLInput: Mövcud URL %i.Lütfən Pulsuz üçün URL daxil edin
+    və ya geri qayıtmaq üçün 0 yazın.
+  libreHttpUnknown: 'Bilinməyən http xətası: %i'
+  wwcConfigGUILibreTranslateURLButton: Pulsuz Tərcümə URL'sini dəyişdirin

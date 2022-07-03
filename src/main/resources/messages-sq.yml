@@ -49,7 +49,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat është i vjetëruar. Ju lutemi përditësoni versionin
     më të fundit, %i.
   wwcConfigGUINextPageButton: Faqja Tjetër
-  wwctbTranslatePageFail: (Dështoi në përkthimin e kësaj faqeje) %i
   wwcConfigInvalidTranslatorSettings: Cilësimet e pavlefshme të përkthyesit Ju lutemi
     aktivizoni vetëm një përkthyes në config.yml tuaj.
   wwcConfigGUIQuitButton: Dalja & Ruaj Ndryshimet
@@ -195,15 +194,9 @@ Messages:
     në tastierë.
   wwcInventoryError: Gabim u zbulua me GUI të përdoruesit %i. Ju lutemi, raportoni
     këtë problem te zhvilluesi.
-  wwcSignTranslationFail: Nuk mund të përktheni një ose më shumë rreshta në shenjën
-    tuaj të synuar.
-  wwcBookTranslationFail: Nuk mund të përkthehet një ose më shumë faqe në librin tuaj
-    të synuar.
   wwctiOffTarget: Përkthimi i artikullit çaktivizohet për %i.
   wwctiOffSender: Përkthimi artikull i paaftë
   wwcItemTranslateTitleStock: E pamundur për të përkthyer emrat e artikullit
-  wwcItemTranslateLoreFail: Dështoi për të përkthyer artikull dije.
-  wwcItemTranslateTitleFail: Dështoi në përkthimin e emrit të sendit
   wwctGUIItemButton: Përkthimi i artikullit Toggle
   wwcItemTranslateTitleDone: Titulli i përkthyer artikulli me sukses
   wwcGUITempItem: Shfaqja e artikullit
@@ -214,8 +207,6 @@ Messages:
   wwcItemTranslateLoreStart: Përkthimi dije e artikullit të synuar...
   wwcItemTranslateLoreDone: Përkthyer artikull dije me sukses.
   wwctiOnTarget: Përkthimi i artikullit aktivizohet për %i.
-  wwcBookTranslateTitleFail: Dështoi të përkthehet titulli i librit
-  wwcChatTranslationFail: Dështoi në përkthimin e mesazhit tuaj.
   wwcInvalidTranslator: Cilësimet e pavlefshme të përkthyesit Ju lutemi rregulloni
     këtë në config.yml ose me /wwcc për të përdorur këtë shtojcë.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurimi'
@@ -312,10 +303,6 @@ Messages:
     por ju keni një sesion aktiv përkthimi në %o.
   wwcConfigGUIChangesNotSaved: Ndryshimet tuaja nuk do të hyjnë në fuqi derisa të
     klikoni mbi pengesën e kuqe në /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Mesazhi i bisedës së përkthimit
-    të dështuar u kthye me sukses.
-  wwcConfigGUISendFailedTranslationChatButton: Dërgoni mesazh bisede në përkthimin
-    e dështuar
   wwctciOffSender: Përkthimi në hyrje chat me aftësi të kufizuara.
   wwctGUIChatIncomingButton: Toggle Përkthimi i Bisedës Hyrëse
   wwctcoOffSender: Përkthimi në dalje chat me aftësi të kufizuara.
@@ -407,3 +394,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat nuk ishte në gjendje të shkoj të marr gjuhë,
     dhe në vend të kësaj po përdor kopje rezervë. Kjo ndoshta nuk do të ndikojë në
     sjelljen e shtojcave, por ju lutemi kontaktoni zhvilluesin.
+  libreHttp400: Kërkesa e keqe dërguar Libre Translate! Nëse ju jeni duke bërë diçka
+    që ju nuk duhet, ju nuk duhet të merrni këtë. Ju lutemi kontaktoni zhvilluesin!
+  wwcConfigGUILibreTranslateApiKeyButton: Ndrysho Libre Translate API Key
+  libreHttp403: Mungon Libre Translate API Key, ose ju jeni të ndaluar nga serveri!
+  wwcConfigConversationLibreURLSuccess: Libre URL vendosur me sukses.
+  wwcConfigConversationLibreTranslateApiKeyInput: Kyçi aktual API është %i. Ju lutemi
+    futni një çelës API për Libre, ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigGUILibreTranslateButton: Libre Translate
+  libreHttp429: Nuk ka besim për shkak të kufirit të normës nga serveri.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Me sukses toggled Libre Translate.
+    Rifresko për ndryshimet që do të hyjnë në fuqi.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API kyç vendosur me sukses.
+  wwcConfigConversationLibreURLInput: URL-ja aktuale është %i. Ju lutemi, futni një
+    URL për Libre, ose shkruani 0 për t'u kthyer prapa.
+  libreHttpUnknown: 'Gabim i panjohur http: %i'
+  wwcConfigGUILibreTranslateURLButton: Ndrysho Libre Translate URL

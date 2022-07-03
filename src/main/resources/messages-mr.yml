@@ -79,10 +79,8 @@ Messages:
   wwcEntityTranslateStart: लक्ष्य अस्तित्व अनुवादित करीत आहे...
   wwcUpdaterFutureDate: वर्ल्ड वाइडचॅटच्या या घटनेत नवीनतम सार्वजनिक लोकांपेक्षा अधिक
     आवृत्ती आहे.
-  wwcItemTranslateLoreFail: आयटमचे भाषांतर करण्यात अयशस्वी.
   wwcConfigGUIGoogleTranslateAPIKeyButton: गूगल भाषांतर API की बदला
   wwcConfigGUIGlobalRateLimitButton: जागतिक दर मर्यादा बदला
-  wwcItemTranslateTitleFail: आयटमचे नाव भाषांतरित करण्यात अयशस्वी.
   wwctsOnTarget: '%i करीता साइन भाषांतर कार्यान्वीत केले आहे.'
   wwcConfigCacheDisabled: अनुवादक कॅशे अक्षम.
   wwcConfigConversationWatsonURLInput: वर्तमान URL %i आहे कृपया वॉटसनसाठी सेवा URL
@@ -127,8 +125,6 @@ Messages:
   wwctrlRateLimitSetTarget: '%i ते %o सेकंदांची दर मर्यादा निश्चित करा.'
   wwcConfigGUIMessagesOverrideCustomLabel: नवीन संदेश
   wwcGUITempItem: आयटम प्रदर्शन
-  wwcBookTranslationFail: आपल्या लक्ष्य पुस्तकात एक किंवा अधिक पृष्ठे भाषांतरित करण्यात
-    अक्षम.
   wwcConfigConversationGoogleTranslateAPIKeyInput: वर्तमान API की %i आहे. कृपया Google
     Translate करीता API की इनपुट करा, किंवा परत जाण्यासाठी 0 टाइप करा.
   wwcConfigConversationRateLimitInput: वर्तमान वैश्विक दर मर्यादा प्रति भाषांतर %i
@@ -140,7 +136,6 @@ Messages:
   wwcInvalidTranslator: अवैध अनुवादक सेटिंग्ज. कृपया हे प्लगइन वापरण्यासाठी आपल्या
     config.yml मध्ये किंवा /wwcc सह याचे निराकरण करा.
   wwcConfigConversationWatsonAPIKeySuccess: वॉटसन API की संच यशस्वीरित्या.
-  wwcChatTranslationFail: तुमच्या संदेशाचे भाषांतर करण्यात अयशस्वी.
   wwcConfigCacheEnabled: अनुवादक कॅशे सक्षम केले व %i च्या मर्यादेस सेट केले आहे.
   wwcConfigConversationOverrideDeletionSuccess: सानुकूल संदेश अधिलिखित हटविले गेले
     आहे.
@@ -164,8 +159,6 @@ Messages:
   wwcgAutoTranslateStart: आता जागतिक गप्पांचे भाषांतर करा %o वर करा.
   wwcConfigGUIAmazonTranslateAccessKeyButton: ऍमेझॉन प्रवेश की बदला
   wwcrFail: WorldwideChat रीलोड करण्यात अयशस्वी.
-  wwcSignTranslationFail: आपल्या लक्ष्य चिन्हावर एक किंवा अधिक ओळींचे भाषांतर करण्यात
-    अक्षम.
   wwcUpdaterFailedGeneric: WorldwideChat अद्यतने तपासण्यात अक्षम.
   wwcConfigGUIChatMessagesOverrideSettings: डीफॉल्ट संदेश अधिलिखित
   wwctGUIMainMenuGlobal: ग्लोबल भाषांतर मेनू
@@ -215,7 +208,6 @@ Messages:
     प्रभावी होणार नाहीत.
   wwcBookTranslateTitleSuccess: 'भाषांतरित पुस्तकाचे शीर्षक: %i'
   wwcConfigGUINextPageButton: पुढील पृष्ठ
-  wwctbTranslatePageFail: (या पृष्ठाचे भाषांतर करण्यास अपयशी) %i
   wwctiOnSender: आयटम अनुवाद सक्षम. त्याचे भाषांतर करण्यासाठी आपल्या मुख्य हातात असलेल्या
     आयटमसह उजवे-क्लिक करा!
   wwcConfigGUIMessagesOverrideOriginalLabel: मूळ संदेश
@@ -252,7 +244,6 @@ Messages:
     करा!
   wwctGUIAutoDetectButton: स्त्रोत भाषा स्वयं-शोधा
   wwcConfigConversationDebugModeSuccess: डीबग मोड यशस्वीरित्या टॉगल केले.
-  wwcBookTranslateTitleFail: पुस्तक शीर्षक भाषांतरित करण्यात अयशस्वी.
   wwcConfigGUIChatMessagesOverrideDeleteButton: अधिलिखित हटवा
   wwcNoConsole: हा आदेश फक्त एक खेळाडू संपली जाऊ शकते.
   wwcConfigConversationTranslationCacheSuccess: भाषांतर कॅशे मर्यादा यशस्वीरित्या
@@ -297,9 +288,6 @@ Messages:
     सेट.
   wwcConfigBadUpdateDelay: कॉन्फिगर करा.yml मध्ये अवैध अद्यतनकर्ता विलंब सेट. 86400
     सेकंद डीफॉल्टिंग...
-  wwcConfigConversationSendFailedTranslationChatSuccess: अयशस्वीपणे भाषांतर केलेले
-    चॅट संदेश अयशस्वी झाले.
-  wwcConfigGUISendFailedTranslationChatButton: अयशस्वी अनुवाद वर गप्पा संदेश पाठवा
   wwctciOffSender: येणारे चॅट भाषांतर अक्षम केले.
   wwctGUIChatIncomingButton: इनकमिंग चॅट भाषांतर टॉगल करा
   wwctcoOffSender: आउटगोइंग चॅट भाषांतर अक्षम केले.
@@ -384,3 +372,20 @@ Messages:
   wwcTimeoutException: आपला आदेश कालबाह्य झाला. कृपया पुन्हा प्रयत्न करा.
   wwcBackupLangCodesWarning: वर्ल्डवाइडचॅट भाषा आणण्यात अक्षम होता आणि त्याऐवजी बॅकअप
     वापरत आहे. हे कदाचित प्लगइन वर्तन परिणाम होणार नाही, पण विकसक संपर्क साधा.
+  libreHttp400: खराब विनंती Libre भाषांतर पाठविले! आपण काहीतरी करत नाही तोपर्यंत आपण
+    नये, आपण हे प्राप्त करू नये. विकसक संपर्क साधा!
+  wwcConfigGUILibreTranslateApiKeyButton: मोफत भाषांतर API की बदला
+  libreHttp403: Libre अनुवाद API की गहाळ, किंवा आपण सर्व्हर बंदी घालण्यात आली!
+  wwcConfigConversationLibreURLSuccess: मोफत URL यशस्वीरित्या सेट.
+  wwcConfigConversationLibreTranslateApiKeyInput: वर्तमान API की %i आहे. कृपया Libre
+    करीता API की इनपुट करा, किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigGUILibreTranslateButton: लिब्रे भाषांतर
+  libreHttp429: सर्व्हरवरून दर मर्यादेमुळे कोणताही आत्मविश्वास नाही.
+  wwcConfigGUIToggleLibreTranslateButton: फ्री भाषांतर टॉगल करा
+  wwcConfigConversationLibreTranslateToggleSuccess: यशस्वीरित्या Libre भाषांतर टॉगल
+    केले. बदल प्रभावी होण्यासाठी रीलोड करा.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API की यशस्वीरित्या सेट.
+  wwcConfigConversationLibreURLInput: वर्तमान URL %i आहे. कृपया Libre साठी URL इनपुट
+    करा, किंवा परत जाण्यासाठी 0 टाइप करा.
+  libreHttpUnknown: 'अपरिचीत HTTP त्रुटी: %i'
+  wwcConfigGUILibreTranslateURLButton: विनामूल्य भाषांतर URL बदला

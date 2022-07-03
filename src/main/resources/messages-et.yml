@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat on aegunud. Palun uuenda uusimale versioonile,
     %i.
   wwcConfigGUINextPageButton: Järgmine lehekülg
-  wwctbTranslatePageFail: (Selle lehe tõlkimine nurjus) %i
   wwcConfigInvalidTranslatorSettings: Kehtetu tõlkija seaded! Palun lubage ainult
     üks tõlkija oma config.yml.
   wwcConfigGUIQuitButton: Välju ja salvesta muudatused
@@ -178,13 +177,9 @@ Messages:
   wwcInventoryErrorPlayer: Teie GUI-ga tuvastatud tõrge. Konsoolile on saadetud logi.
   wwcInventoryError: Kasutaja GUI-ga tuvastatud tõrge. Palun teatage sellest probleemist
     arendajale.
-  wwcSignTranslationFail: Ei saa tõlkida ühte või mitut rida oma sihtmärk.
-  wwcBookTranslationFail: Ei saa tõlkida ühte või mitut lehekülge oma sihtraamatus.
   wwctiOffTarget: Üksuse tõlge keelatud %i.
   wwctiOffSender: Üksuse tõlkimine keelatud.
   wwcItemTranslateTitleStock: Vaikeüksuste nimesid ei saa tõlkida.
-  wwcItemTranslateLoreFail: Üksuse pärimuse tõlkimine nurjus.
-  wwcItemTranslateTitleFail: Üksuse nime tõlkimine nurjus.
   wwctGUIItemButton: Lülita üksuse tõlge
   wwcItemTranslateTitleDone: Tõlgitud objekti pealkiri edukalt.
   wwcGUITempItem: Üksuse ekraan
@@ -195,8 +190,6 @@ Messages:
   wwcItemTranslateLoreStart: Sihtpunkti pärimuse tõlkimine...
   wwcItemTranslateLoreDone: Tõlgitud kirje pärimuse edukalt.
   wwctiOnTarget: Objekti tõlkimine lubatud %i.
-  wwcBookTranslateTitleFail: Raamatu pealkirja tõlkimine nurjus.
-  wwcChatTranslationFail: Sõnumi tõlkimine nurjus.
   wwcInvalidTranslator: Kehtetu tõlkija sätted. Palun parandage see oma config.yml
     või /wwcc kasutada seda pluginat.
   wwcConfigGUIEachTranslatorSettings: '%i konfiguratsioon'
@@ -287,9 +280,6 @@ Messages:
     tõlgitud, kuid teil on aktiivne tõlkesessioon kuni %o.
   wwcConfigGUIChangesNotSaved: Teie muudatused ei jõustu enne, kui klõpsate punasel
     tõkkel /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Nurjus tõlkevestluse sõnum
-    lülitatud edukalt.
-  wwcConfigGUISendFailedTranslationChatButton: Saada vestluse sõnum nurjunud tõlkimine
   wwctciOffSender: Sissetuleva vestluse tõlge keelatud.
   wwctGUIChatIncomingButton: Lülita sissetuleva vestluse tõlge
   wwctcoOffSender: Väljamineva vestluse tõlge keelatud.
@@ -370,3 +360,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat ei suutnud keeli tuua ja kasutab selle
     asemel varukoopiaid. See ilmselt ei mõjuta plugin käitumist, kuid võtke ühendust
     arendaja.
+  libreHttp400: Bad taotluse saadetakse Libre Tõlgi! Kui te teete midagi, mida sa
+    ei peaks, sa ei tohiks seda saada. Palun võtke ühendust arendajaga!
+  wwcConfigGUILibreTranslateApiKeyButton: Muuda tasuta tõlkida API võti
+  libreHttp403: Kadunud Libre Tõlgi API Key, või teil on keelatud server!
+  wwcConfigConversationLibreURLSuccess: Libre URL seatud edukalt.
+  wwcConfigConversationLibreTranslateApiKeyInput: Praegune API võti on %i. Sisestage
+    Libre jaoks API võti või tüüp 0, et minna tagasi.
+  wwcConfigGUILibreTranslateButton: Libre Tõlkimine
+  libreHttp429: Serveri määrapiirangu tõttu pole usaldust.
+  wwcConfigGUIToggleLibreTranslateButton: Lülita Libre Tõlgi
+  wwcConfigConversationLibreTranslateToggleSuccess: Edukalt lülitatud Libre Tõlgi.
+    Muudatuste jõustumiseks laadige uuesti.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API võti seatud edukalt.
+  wwcConfigConversationLibreURLInput: Praegune URL on %i. Sisestage Libre URL või
+    tippige 0, et minna tagasi.
+  libreHttpUnknown: 'Tundmatu http viga: %i'
+  wwcConfigGUILibreTranslateURLButton: Muuda Libre Tõlgi URL

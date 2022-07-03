@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat está desatualizado. Atualize para a versão mais
     recente, %i.
   wwcConfigGUINextPageButton: Próxima página
-  wwctbTranslatePageFail: (Falha ao traduzir esta página) %i
   wwcConfigInvalidTranslatorSettings: Configurações inválidas do tradutor! Ative apenas
     um tradutor no seu config.yml.
   wwcConfigGUIQuitButton: Sair e salvar alterações
@@ -187,14 +186,9 @@ Messages:
   wwcInventoryErrorPlayer: Erro detectado com sua GUI. Um log foi enviado para o console.
   wwcInventoryError: Erro detectado com a GUI do usuário %i. Informe esse problema
     ao desenvolvedor.
-  wwcSignTranslationFail: Não é possível traduzir uma ou mais linhas no sinal de destino.
-  wwcBookTranslationFail: Não é possível traduzir uma ou mais páginas no seu livro
-    de destino.
   wwctiOffTarget: Tradução do item desativada para %i.
   wwctiOffSender: Tradução de itens desativada.
   wwcItemTranslateTitleStock: Não foi possível traduzir nomes de itens padrão.
-  wwcItemTranslateLoreFail: Falha ao traduzir o lore do item.
-  wwcItemTranslateTitleFail: Falha ao traduzir o nome do item.
   wwctGUIItemButton: Alternar tradução de itens
   wwcItemTranslateTitleDone: Título do item traduzido com sucesso.
   wwcGUITempItem: Exibição do item
@@ -205,8 +199,6 @@ Messages:
   wwcItemTranslateLoreStart: Traduzindo o lore do item alvo...
   wwcItemTranslateLoreDone: Lore do item traduzido com sucesso.
   wwctiOnTarget: Tradução de itens ativada para %i.
-  wwcBookTranslateTitleFail: Falha ao traduzir o título do livro.
-  wwcChatTranslationFail: Falha ao traduzir sua mensagem.
   wwcInvalidTranslator: Configurações inválidas do tradutor. Corrija isso em seu config.yml
     ou com /wwcc para usar este plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Configuração'
@@ -304,10 +296,6 @@ Messages:
     sendo traduzido, mas você tem uma sessão de tradução ativa para %o.
   wwcConfigGUIChangesNotSaved: Suas alterações não entrarão em vigor até que você
     clique na barreira vermelha em /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: A mensagem de bate-papo com
-    falha na tradução foi alternada com sucesso.
-  wwcConfigGUISendFailedTranslationChatButton: Enviar mensagem de bate-papo na tradução
-    falhada
   wwctciOffSender: Tradução de bate-papo recebida desativada.
   wwctGUIChatIncomingButton: Alternar tradução de bate-papo recebido
   wwctcoOffSender: Tradução de bate-papo de saída desativada.
@@ -396,3 +384,22 @@ Messages:
   wwcBackupLangCodesWarning: O WorldwideChat não conseguiu buscar idiomas e, em vez
     disso, está usando backups. Isso provavelmente não afetará o comportamento do
     plugin, mas entre em contato com o desenvolvedor.
+  libreHttp400: Pedido incorreto enviado para o Libre Translate! A menos que você
+    esteja fazendo algo que não deveria, você não deve entender isso. Entre em contato
+    com o desenvolvedor!
+  wwcConfigGUILibreTranslateApiKeyButton: Alterar chave da API Libre Translate
+  libreHttp403: Falta a chave da API Libre Translate ou você está banido do servidor!
+  wwcConfigConversationLibreURLSuccess: URL livre definida com sucesso.
+  wwcConfigConversationLibreTranslateApiKeyInput: A chave de API atual é %i. Insira
+    uma chave de API para Libre ou digite 0 para voltar.
+  wwcConfigGUILibreTranslateButton: Libre Translate
+  libreHttp429: Sem confiança devido ao limite de taxa do servidor.
+  wwcConfigGUIToggleLibreTranslateButton: Alternar Libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: O Libre Translate foi alternado
+    com sucesso. Recarregue para que as alterações entrem em vigor.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Chave de API livre definida com
+    sucesso.
+  wwcConfigConversationLibreURLInput: A URL atual é %i. Insira uma URL para Libre
+    ou digite 0 para voltar.
+  libreHttpUnknown: 'Erro http desconhecido: %i'
+  wwcConfigGUILibreTranslateURLButton: Alterar URL de tradução livre

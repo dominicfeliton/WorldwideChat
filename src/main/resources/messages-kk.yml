@@ -44,7 +44,6 @@ Messages:
   wwctGUISignButton: Toggle белгісі аударма
   wwcUpdaterOutOfDate: WorldWidechat күннен тыс. Соңғы нұсқаға жаңартыңыз, %i.
   wwcConfigGUINextPageButton: Келесі бет
-  wwctbTranslatePageFail: (Бұл бетті аудара алмады) %i
   wwcConfigInvalidTranslatorSettings: Жарамсыз аудармашы параметрлері! Сіздің config.yml
     ішіндегі бір ғана аудармашыны қосыңыз.
   wwcConfigGUIQuitButton: Шығу & Өзгерістерді сақтау
@@ -178,15 +177,9 @@ Messages:
   wwcInventoryErrorPlayer: GUI-мен анықталған қате. Консольге журнал жіберілді.
   wwcInventoryError: '%i пайдаланушысының GUI көмегімен анықталған қате, бұл мәселені
     әзірлеушіге хабарлаңыз.'
-  wwcSignTranslationFail: Мақсатты белгіңізде бір немесе бірнеше жолдарды аудару мүмкін
-    емес.
-  wwcBookTranslationFail: Сіздің мақсатты кітабында бір немесе бірнеше беттерді аудару
-    мүмкін емес.
   wwctiOffTarget: Элемент аудармасы %i өшірілген.
   wwctiOffSender: Элемент аударма өшірілген.
   wwcItemTranslateTitleStock: Әдепкі элемент атауларын аудару мүмкін емес.
-  wwcItemTranslateLoreFail: Элемент тану аудару алмады.
-  wwcItemTranslateTitleFail: Элемент атауын аудара алмады.
   wwctGUIItemButton: Toggle тармақ Аударма
   wwcItemTranslateTitleDone: сәтті аударылған элемент атауы.
   wwcGUITempItem: Дисплей элемент
@@ -197,8 +190,6 @@ Messages:
   wwcItemTranslateLoreStart: Мақсатты элементтің аудармасы...
   wwcItemTranslateLoreDone: Аударылған тармақ сәтті.
   wwctiOnTarget: Элемент аудармасы %i үшін қосылған.
-  wwcBookTranslateTitleFail: Кітап атауын аудара алмады.
-  wwcChatTranslationFail: Хабарламаңызды аудару сәтсіз болды.
   wwcInvalidTranslator: Жарамсыз аудармашы параметрлері. Бұл плагинді пайдалану үшін
     config.yml немесе /wwcc көмегімен түзетіңіз.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурация'
@@ -292,10 +283,6 @@ Messages:
     жатыр, бірақ сіздің %o үшін белсенді аударма сеансы бар.
   wwcConfigGUIChangesNotSaved: /wwcc-дегі қызыл тосқауылды басқанша сіздің өзгертулеріңіз
     күшіне енеді.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Сәтсіз аударма чат хабары
-    сәтті ауыстырылды.
-  wwcConfigGUISendFailedTranslationChatButton: Орындалмаған аударма туралы чат хабарын
-    жіберу
   wwctciOffSender: Кіріс чат аударма өшірілген.
   wwctGUIChatIncomingButton: Toggle Кіріс чат аударма
   wwctcoOffSender: Шығыс чат аудармасы өшірілген.
@@ -381,3 +368,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat тілдерді алу үшін алмады, және оның орнына
     сақтық көшірмелерін пайдаланып отыр. Бұл плагин мінез-құлқына әсер етпейді, бірақ
     әзірлеушіге хабарласыңыз.
+  libreHttp400: Жаман сұрау Libre Translate жіберілді! Егер сіз қажет емес нәрсе жасамасаңыз,
+    мұны алмауыңыз керек. Әзірлеушіге хабарласыңыз!
+  wwcConfigGUILibreTranslateApiKeyButton: Өзгерту Тегін API кілт аудару
+  libreHttp403: Missing Libre API кілті Translate, немесе сіз серверден тыйым салынған!
+  wwcConfigConversationLibreURLSuccess: Тегін URL сәтті орнатылған.
+  wwcConfigConversationLibreTranslateApiKeyInput: Ағымдағы API кілті %i болып табылады.
+    Libre үшін API кілтін енгізіңіз сұраймыз, немесе кері қайту үшін 0 теріңіз.
+  wwcConfigGUILibreTranslateButton: Тегін Аударма
+  libreHttp429: Серверден мөлшерлеме лимитіне байланысты сенімділік жоқ.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Тегін Аударма
+  wwcConfigConversationLibreTranslateToggleSuccess: Табысты Toggled Libre Аударма.
+    Өзгерістердің күшіне енуі үшін қайта жүктеңіз.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Табысты орнату Тегін API кілті.
+  wwcConfigConversationLibreURLInput: Ағымдағы URL %i болып табылады. Libre үшін URL
+    енгізіңіз сұраймыз, немесе кері қайту үшін 0 теріңіз.
+  libreHttpUnknown: 'Белгісіз http қатесі: %i'
+  wwcConfigGUILibreTranslateURLButton: Өзгерту Тегін Аудару URL

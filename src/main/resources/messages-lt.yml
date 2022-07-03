@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat yra pavėlęs. Atnaujinkite į naujausią versiją,
     %i.
   wwcConfigGUINextPageButton: Sekantis puslapis
-  wwctbTranslatePageFail: (Nepavyko išversti šio puslapio) %i
   wwcConfigInvalidTranslatorSettings: Neteisingas vertėjo nustatymai! Prašome įjungti
     tik vieną vertėją savo config.yml.
   wwcConfigGUIQuitButton: Išeiti ir išsaugoti pakeitimus
@@ -185,13 +184,9 @@ Messages:
     konsolę.
   wwcInventoryError: Klaida aptikta naudotojo %i GUI. Prašome pranešti apie šią problemą
     kūrėjui.
-  wwcSignTranslationFail: Nepavyko išversti vienos ar kelių eilučių į tikslinį ženklą.
-  wwcBookTranslationFail: Nepavyko išversti vieno ar kelių puslapių tikslinėje knygoje.
   wwctiOffTarget: Elemento vertimas išjungtas %i.
   wwctiOffSender: Prekė vertimas išjungtas.
   wwcItemTranslateTitleStock: Nepavyko išversti numatytųjų elementų pavadinimų.
-  wwcItemTranslateLoreFail: Nepavyko išversti elemento kraštotyros.
-  wwcItemTranslateTitleFail: Nepavyko išversti elemento pavadinimo.
   wwctGUIItemButton: Perjungti elemento vertimą
   wwcItemTranslateTitleDone: Išverstas elemento pavadinimas sėkmingai.
   wwcGUITempItem: Prekė Ekranas
@@ -202,8 +197,6 @@ Messages:
   wwcItemTranslateLoreStart: Vertimas kraštotyros tikslinės elemento...
   wwcItemTranslateLoreDone: Išversta prekė kraštotyros sėkmingai.
   wwctiOnTarget: Elemento vertimas įjungtas %i.
-  wwcBookTranslateTitleFail: Nepavyko išversti knygos pavadinimo.
-  wwcChatTranslationFail: Nepavyko išversti jūsų žinutės.
   wwcInvalidTranslator: Neteisingas vertėjo nustatymai. Prašome išspręsti šią problemą
     savo config.yml arba su /wwcc naudoti šį įskiepiai.
   wwcConfigGUIEachTranslatorSettings: '%i konfigūracija'
@@ -295,10 +288,6 @@ Messages:
     bet jūs turite aktyvų vertimo seansą %o.
   wwcConfigGUIChangesNotSaved: Jūsų pakeitimai neįsigalios tol, kol spustelėsite raudoną
     barjerą /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Nepavyko vertimo pokalbių
-    pranešimas sėkmingai perėjo.
-  wwcConfigGUISendFailedTranslationChatButton: Siųsti pokalbių pranešimą dėl nepavykusio
-    vertimo
   wwctciOffSender: Gaunamų pokalbių vertimas išjungtas.
   wwctGUIChatIncomingButton: Perjungti Gaunamus Pokalbiai Vertimas
   wwctcoOffSender: Išeinantis pokalbių vertimas išjungtas.
@@ -384,3 +373,20 @@ Messages:
   wwcBackupLangCodesWarning: “WorldwideChat” negalėjo atgauti kalbų ir vietoj to naudoja
     atsargines kopijas. Tai tikriausiai neturės įtakos įskiepių elgesiui, tačiau susisiekite
     su kūrėju.
+  libreHttp400: Blogas prašymas išsiųstas Libre Translate! Nebent jūs darote kažką,
+    ko neturėtumėte, neturėtumėte to gauti. Prašome susisiekti su kūrėju!
+  wwcConfigGUILibreTranslateApiKeyButton: Keisti Nemokamai Versti API raktą
+  libreHttp403: Trūksta “Libre Translate API Key”, arba esate uždraustas iš serverio!
+  wwcConfigConversationLibreURLSuccess: Nemokama URL sėkmingai nustatyti.
+  wwcConfigConversationLibreTranslateApiKeyInput: Dabartinis API raktas yra %i. Įveskite
+    API raktą, skirtą “Libre”, arba įveskite 0, kad grįžtumėte.
+  wwcConfigGUILibreTranslateButton: Nemokamai Versti
+  libreHttp429: Nėra pasitikėjimo dėl normos ribos nuo serverio.
+  wwcConfigGUIToggleLibreTranslateButton: Perjungti Nemokamai Versti
+  wwcConfigConversationLibreTranslateToggleSuccess: Sėkmingai perėjo Nemokamai Versti.
+    Perkraukite, kad pakeitimai įsigaliotų.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Nemokamai API raktų rinkinys sėkmingai.
+  wwcConfigConversationLibreURLInput: Dabartinis URL yra %i. Įveskite URL, skirtą
+    “Libre”, arba įveskite 0, kad grįžtumėte atgal.
+  libreHttpUnknown: 'Nežinoma http klaida: %i'
+  wwcConfigGUILibreTranslateURLButton: Keisti Nemokamai Versti URL

@@ -44,7 +44,6 @@ Messages:
   wwctGUISignButton: تبديل تسجيل الترجمة
   wwcUpdaterOutOfDate: وورلدويدتشات هو قديما. الرجاء التحديث إلى أحدث إصدار، %i.
   wwcConfigGUINextPageButton: الصفحة التالية
-  wwctbTranslatePageFail: (فشل ترجمة هذه الصفحة) %i
   wwcConfigInvalidTranslatorSettings: إعدادات مترجم غير صالحة! يرجى تمكين مترجم واحد
     فقط في config.yml الخاص بك.
   wwcConfigGUIQuitButton: الخروج من التغييرات وحفظها
@@ -173,13 +172,9 @@ Messages:
     سجل إلى وحدة التحكم.
   wwcInventoryError: تم اكتشاف خطأ باستخدام واجهة المستخدم الرسومية للمستخدم %i. الرجاء
     إبلاغ المطور عن هذه المشكلة.
-  wwcSignTranslationFail: غير قادر على ترجمة سطر واحد أو أكثر على علامة الهدف.
-  wwcBookTranslationFail: غير قادر على ترجمة صفحة واحدة أو أكثر في كتابك المستهدف.
   wwctiOffTarget: تم تعطيل ترجمة العنصر لـ %i.
   wwctiOffSender: تم تعطيل ترجمة العنصر.
   wwcItemTranslateTitleStock: غير قادر على ترجمة أسماء العناصر الافتراضية.
-  wwcItemTranslateLoreFail: فشل في ترجمة تقاليد العنصر.
-  wwcItemTranslateTitleFail: فشل ترجمة اسم العنصر.
   wwctGUIItemButton: تبديل ترجمة العنصر
   wwcItemTranslateTitleDone: عنوان العنصر المترجم بنجاح.
   wwcGUITempItem: عرض السلعة
@@ -190,8 +185,6 @@ Messages:
   wwcItemTranslateLoreStart: ترجمة تقاليد العنصر المستهدف...
   wwcItemTranslateLoreDone: تقاليد العنصر المترجم بنجاح.
   wwctiOnTarget: تم تمكين ترجمة العنصر لـ %i.
-  wwcBookTranslateTitleFail: فشل ترجمة عنوان الكتاب.
-  wwcChatTranslationFail: فشلت ترجمة رسالتك.
   wwcInvalidTranslator: إعدادات المترجم غير صالحة. يرجى إصلاح هذا في config.yml الخاص
     بك أو مع/wwcc لاستخدام هذا البرنامج المساعد.
   wwcConfigGUIEachTranslatorSettings: تكوين %i
@@ -277,9 +270,6 @@ Messages:
     ولكن لديك جلسة ترجمة نشطة إلى %o.
   wwcConfigGUIChangesNotSaved: لن تسري التغييرات الخاصة بك حتى تنقر على الحاجز الأحمر
     في/wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: تم تبديل رسالة دردشة الترجمة
-    الفاشلة بنجاح.
-  wwcConfigGUISendFailedTranslationChatButton: إرسال رسالة دردشة على الترجمة الفاشلة
   wwctciOffSender: تم تعطيل ترجمة الدردشة الواردة.
   wwctGUIChatIncomingButton: تبديل ترجمة الدردشة الواردة
   wwctcoOffSender: تم تعطيل ترجمة الدردشة الصادرة.
@@ -357,3 +347,21 @@ Messages:
   wwcBackupLangCodesWarning: لم يتمكن WorldwideChat من جلب اللغات، وبدلاً من ذلك يستخدم
     النسخ الاحتياطية. ربما لن يؤثر هذا على سلوك المكون الإضافي، ولكن يرجى الاتصال
     بالمطور.
+  libreHttp400: تم إرسال طلب سيء إلى Libre Translate! ما لم تكن تفعل شيئًا لا يجب
+    عليك فعله، فلا يجب أن تحصل عليه. يرجى الاتصال بالمطور!
+  wwcConfigGUILibreTranslateApiKeyButton: تغيير مفتاح واجهة برمجة التطبيقات لترجمة
+    Libre
+  libreHttp403: مفتاح واجهة برمجة تطبيقات Libre Translate مفقود، أو تم حظرك من الخادم!
+  wwcConfigConversationLibreURLSuccess: تم تعيين عنوان URL Libre بنجاح.
+  wwcConfigConversationLibreTranslateApiKeyInput: مفتاح API الحالي هو %i. الرجاء إدخال
+    مفتاح API لـ Libre، أو اكتب 0 للرجوع إليه.
+  wwcConfigGUILibreTranslateButton: ترجمة ليبر
+  libreHttp429: عدم الثقة بسبب حد المعدل من الخادم.
+  wwcConfigGUIToggleLibreTranslateButton: تبديل ليبر ترجمة
+  wwcConfigConversationLibreTranslateToggleSuccess: تم تبديل ترجمة Libre بنجاح. أعد
+    تحميل التغييرات لتصبح نافذة المفعول.
+  wwcConfigConversationLibreTranslateApiKeySuccess: تم تعيين مفتاح Libre API بنجاح.
+  wwcConfigConversationLibreURLInput: عنوان URL الحالي هو %i. الرجاء إدخال عنوان URL
+    لـ Libre، أو اكتب 0 للرجوع إليه.
+  libreHttpUnknown: 'خطأ http غير معروف: %i'
+  wwcConfigGUILibreTranslateURLButton: تغيير عنوان URL لترجمة Libre

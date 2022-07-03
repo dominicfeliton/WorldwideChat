@@ -43,7 +43,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat הוא לא מעודכן. אנא עדכן לגרסה העדכנית ביותר,
     %i.
   wwcConfigGUINextPageButton: העמוד הבא
-  wwctbTranslatePageFail: (נכשל בתרגם דף זה) %i
   wwcConfigInvalidTranslatorSettings: הגדרות מתרגם לא חוקיות! נא הפעל רק מתרגם אחד
     בconfig.yml שלך.
   wwcConfigGUIQuitButton: יציאה ושמור שינויים
@@ -165,13 +164,9 @@ Messages:
   wwcConfigCacheInvalid: גודל המטמון מתרגם לא חוקי. ברירת מחדל ל- 10...
   wwcInventoryErrorPlayer: אירעה שגיאה עם ממשק המשתמש שלך. יומן רישום נשלח לקונסולה.
   wwcInventoryError: אירעה שגיאה עם GUI של המשתמש %i. אנא דווח על בעיה זו למפתח.
-  wwcSignTranslationFail: אין אפשרות לתרגם שורה אחת או יותר על סימן היעד שלך.
-  wwcBookTranslationFail: לא ניתן לתרגם דף אחד או יותר בספר היעד שלך.
   wwctiOffTarget: תרגום פריט מושבת עבור %i.
   wwctiOffSender: תרגום פריט מושבת.
   wwcItemTranslateTitleStock: אין אפשרות לתרגם שמות פריטי ברירת מחדל.
-  wwcItemTranslateLoreFail: לא הצליח לתרגם את תורת הפריט.
-  wwcItemTranslateTitleFail: תרגום שם הפריט נכשל.
   wwctGUIItemButton: החלף תרגום פריט
   wwcItemTranslateTitleDone: כותרת פריט מתורגמת בהצלחה.
   wwcGUITempItem: תצוגת פריט
@@ -182,8 +177,6 @@ Messages:
   wwcItemTranslateLoreStart: תרגום הפולקלור של פריט היעד...
   wwcItemTranslateLoreDone: תורגם פריט תורגם בהצלחה.
   wwctiOnTarget: תרגום פריט מופעל עבור %i.
-  wwcBookTranslateTitleFail: לא הצליח לתרגם את כותרת הספר.
-  wwcChatTranslationFail: לא הצליח לתרגם את ההודעה שלך.
   wwcInvalidTranslator: הגדרות מתרגם לא חוקיות. אנא תקן זאת ב- config.yml שלך או עם
     /wwcc כדי להשתמש בתוסף זה.
   wwcConfigGUIEachTranslatorSettings: '%i תצורה'
@@ -268,9 +261,6 @@ Messages:
     אבל יש לך הפעלת תרגום פעילה אל %o.
   wwcConfigGUIChangesNotSaved: השינויים שלך לא ייכנסו לתוקף עד שתלחץ על המכשול האדום
     ב- /wcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: הודעת צ'אט התרגום נכשלה הועברה
-    בהצלחה.
-  wwcConfigGUISendFailedTranslationChatButton: שלח הודעת צ'אט בתרגום כושל
   wwctciOffSender: תרגום צ'אט נכנס מושבת.
   wwctGUIChatIncomingButton: החלפת תרגום צ'אט נכנס
   wwctcoOffSender: תרגום צ'אט יוצא מושבת.
@@ -346,3 +336,20 @@ Messages:
   wwcTimeoutException: הפקודה שלך מתוזמנת. אנא נסה שוב.
   wwcBackupLangCodesWarning: WorldwideChat לא הצליח להביא שפות, ובמקום זאת הוא משתמש
     בגיבויים. זה כנראה לא ישפיע על התנהגות הפלאגין, אך אנא פנה למפתח.
+  libreHttp400: בקשה גרועה שנשלחה ליברה תרגם! אלא אם כן אתה עושה משהו שאתה לא צריך,
+    אתה לא צריך לקבל את זה. אנא צרו קשר עם היזם!
+  wwcConfigGUILibreTranslateApiKeyButton: שינוי חינם תרגם את מפתח ה- API
+  libreHttp403: חסר Libre תרגום מפתח API, או שאתה מוחרם מהשרת!
+  wwcConfigConversationLibreURLSuccess: URL חינם להגדיר בהצלחה.
+  wwcConfigConversationLibreTranslateApiKeyInput: מפתח ה- API הנוכחי הוא %i. אנא הזן
+    מפתח API עבור Libre, או הקלד 0 כדי לחזור.
+  wwcConfigGUILibreTranslateButton: תרגום חופשי
+  libreHttp429: אין אמון בשל מגבלת שיעור מהשרת.
+  wwcConfigGUIToggleLibreTranslateButton: החלף חינם תרגם
+  wwcConfigConversationLibreTranslateToggleSuccess: בהצלחה עבר ליברה תרגם. טען מחדש
+    כדי שהשינויים ייכנסו לתוקף.
+  wwcConfigConversationLibreTranslateApiKeySuccess: מפתח API חינם להגדיר בהצלחה.
+  wwcConfigConversationLibreURLInput: כתובת האתר הנוכחית היא %i. אנא הזן כתובת URL
+    עבור Libre, או הקלד 0 כדי לחזור.
+  libreHttpUnknown: 'שגיאת HTTP לא ידועה: %i'
+  wwcConfigGUILibreTranslateURLButton: שינוי חינם תרגם את כתובת האתר

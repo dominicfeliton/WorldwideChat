@@ -39,7 +39,6 @@ Messages:
   wwctGUISignButton: 署名翻訳の切り替え
   wwcUpdaterOutOfDate: WorldwideChatは廃れてる最新バージョン %i に更新してください。
   wwcConfigGUINextPageButton: 次のページ
-  wwctbTranslatePageFail: (このページの翻訳に失敗しました) %i
   wwcConfigInvalidTranslatorSettings: トランスレータの設定が無効です！config.yml でトランスレータを 1 つだけ有効にしてください。
   wwcConfigGUIQuitButton: 終了して変更を保存
   wwctPlayerNotFound: プレイヤー %i が見つかりません。
@@ -149,13 +148,9 @@ Messages:
   wwcConfigCacheInvalid: トランスレータキャッシュサイズが無効です。デフォルトは10に設定しています...
   wwcInventoryErrorPlayer: GUI でエラーが検出されました。ログがコンソールに送信されました。
   wwcInventoryError: ユーザー %i の GUI でエラーが検出されました。この問題を開発者に報告してください。
-  wwcSignTranslationFail: ターゲット記号の 1 つ以上の行を翻訳できません。
-  wwcBookTranslationFail: ターゲットブックの 1 つ以上のページを翻訳できません。
   wwctiOffTarget: '%i のアイテムの翻訳が無効です。'
   wwctiOffSender: アイテムの翻訳は無効です。
   wwcItemTranslateTitleStock: 既定のアイテム名を翻訳できません。
-  wwcItemTranslateLoreFail: アイテム伝承の翻訳に失敗しました。
-  wwcItemTranslateTitleFail: アイテム名の翻訳に失敗しました。
   wwctGUIItemButton: アイテム翻訳の切り替え
   wwcItemTranslateTitleDone: アイテムのタイトルが正常に翻訳されました。
   wwcGUITempItem: アイテム表示
@@ -165,8 +160,6 @@ Messages:
   wwcItemTranslateLoreStart: ターゲットアイテムの伝承を翻訳しています...
   wwcItemTranslateLoreDone: アイテムの伝承は正常に翻訳されました。
   wwctiOnTarget: '%i のアイテム翻訳が有効になりました。'
-  wwcBookTranslateTitleFail: 本のタイトルの翻訳に失敗しました。
-  wwcChatTranslationFail: メッセージの翻訳に失敗しました。
   wwcInvalidTranslator: トランスレータ設定が無効です。このプラグインを使用するには、config.yml または /wwcc でこれを修正してください。
   wwcConfigGUIEachTranslatorSettings: '%i 構成'
   wwcConfigGUIWatsonButton: ワトソン
@@ -239,8 +232,6 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: グローバルチャットは翻訳中ですが、 %o
     へのアクティブな翻訳セッションがあります。
   wwcConfigGUIChangesNotSaved: 変更内容は /wwcc の赤いバリアをクリックするまで有効になりません。
-  wwcConfigConversationSendFailedTranslationChatSuccess: 翻訳に失敗したチャットメッセージは正常に切り替わりました。
-  wwcConfigGUISendFailedTranslationChatButton: 翻訳失敗時にチャットメッセージを送信する
   wwctciOffSender: 着信チャットの翻訳が無効になりました。
   wwctGUIChatIncomingButton: 着信チャット翻訳の切り替え
   wwctcoOffSender: 発信チャットの翻訳が無効になりました。
@@ -307,3 +298,17 @@ Messages:
   wwcConfigGUIFatalAsyncAbortButton: 非同期タスクタイムアウトの変更
   wwcTimeoutException: コマンドがタイムアウトしました。もう一度お試しください。
   wwcBackupLangCodesWarning: WorldwideChatは言語を取得できず、代わりにバックアップを使用しています。これはおそらくプラグインの動作には影響しませんが、開発者に連絡してください。
+  libreHttp400: 不正なリクエストがLibre Translateに送信されました！やるべきでないことをしているのでなければ、これを得てはいけない。開発者に連絡してください！
+  wwcConfigGUILibreTranslateApiKeyButton: リブレ翻訳 API キーを変更
+  libreHttp403: Libre Translate APIキーがないか、サーバーから禁止されています！
+  wwcConfigConversationLibreURLSuccess: Libre URL が正常に設定されました。
+  wwcConfigConversationLibreTranslateApiKeyInput: 現在の API キーは %i です。Libre の API キーを入力するか、0
+    を入力して戻ってください。
+  wwcConfigGUILibreTranslateButton: リブレ翻訳
+  libreHttp429: サーバーからのレート制限のため、信頼性がありません。
+  wwcConfigGUIToggleLibreTranslateButton: リブレ翻訳のトグル
+  wwcConfigConversationLibreTranslateToggleSuccess: リブレ翻訳を正常に切り替えました。リロードして変更を有効にします。
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API キーが正常に設定されました。
+  wwcConfigConversationLibreURLInput: 現在の URL は %i です。Libre の URL を入力するか、0 を入力して戻ってください。
+  libreHttpUnknown: '不明な http エラー: %i'
+  wwcConfigGUILibreTranslateURLButton: リブレ翻訳 URL を変更

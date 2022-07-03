@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ನವೀಕೃತವಾಗಿದೆ. ದಯವಿಟ್ಟು ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಗೆ ಅಪ್ಡೇಟ್
     ಮಾಡಿ, %i.
   wwcConfigGUINextPageButton: ಮುಂದಿನ ಪುಟ
-  wwctbTranslatePageFail: (ಈ ಪುಟವನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ) %i
   wwcConfigInvalidTranslatorSettings: ಅಮಾನ್ಯ ಅನುವಾದಕ ಸೆಟ್ಟಿಂಗ್ಗಳು! ದಯವಿಟ್ಟು ನಿಮ್ಮ
     config.yml ನಲ್ಲಿ ಕೇವಲ ಒಂದು ಅನುವಾದಕವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.
   wwcConfigGUIQuitButton: ನಿರ್ಗಮಿಸಿ & ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ
@@ -190,15 +189,9 @@ Messages:
   wwcInventoryErrorPlayer: ನಿಮ್ಮ GUI ಯೊಂದಿಗೆ ದೋಷ ಪತ್ತೆಯಾಗಿದೆ. ಕನ್ಸೋಲ್ಗೆ ಲಾಗ್ ಕಳುಹಿಸಲಾಗಿದೆ.
   wwcInventoryError: '%i ಬಳಕೆದಾರನ GUI ಯೊಂದಿಗೆ ದೋಷ ಕಂಡುಬಂದಿದೆ. ದಯವಿಟ್ಟು ಈ ಸಮಸ್ಯೆಯನ್ನು
     ಡೆವಲಪರ್ಗೆ ವರದಿ ಮಾಡಿ.'
-  wwcSignTranslationFail: ನಿಮ್ಮ ಗುರಿ ಸೈನ್ ಮೇಲೆ ಒಂದು ಅಥವಾ ಹೆಚ್ಚು ಸಾಲುಗಳನ್ನು ಭಾಷಾಂತರಿಸಲು
-    ಸಾಧ್ಯವಿಲ್ಲ.
-  wwcBookTranslationFail: ನಿಮ್ಮ ಗುರಿ ಪುಸ್ತಕದಲ್ಲಿ ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ಪುಟಗಳನ್ನು ಭಾಷಾಂತರಿಸಲು
-    ಸಾಧ್ಯವಿಲ್ಲ.
   wwctiOffTarget: ಐಟಂ ಅನುವಾದ %i ಗಾಗಿ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwctiOffSender: ಐಟಂ ಅನುವಾದ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwcItemTranslateTitleStock: ಡೀಫಾಲ್ಟ್ ಐಟಂ ಹೆಸರುಗಳನ್ನು ಭಾಷಾಂತರಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.
-  wwcItemTranslateLoreFail: ಐಟಂ ಅನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
-  wwcItemTranslateTitleFail: ಐಟಂ ಹೆಸರನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
   wwctGUIItemButton: ಟಾಗಲ್ ಐಟಂ ಅನುವಾದ
   wwcItemTranslateTitleDone: ಐಟಂ ಶೀರ್ಷಿಕೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅನುವಾದಿಸಲಾಗಿದೆ.
   wwcGUITempItem: ಐಟಂ ಪ್ರದರ್ಶನ
@@ -209,8 +202,6 @@ Messages:
   wwcItemTranslateLoreStart: ಗುರಿ ಐಟಂನ ಉದ್ದವನ್ನು ಭಾಷಾಂತರಿಸಲಾಗುತ್ತಿದೆ...
   wwcItemTranslateLoreDone: ಅನುವಾದಿಸಿದ ಐಟಂ ಯಶಸ್ವಿಯಾಗಿ.
   wwctiOnTarget: ಐಟಂ ಅನುವಾದ %i ಗೆ ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
-  wwcBookTranslateTitleFail: ಪುಸ್ತಕದ ಶೀರ್ಷಿಕೆಯನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
-  wwcChatTranslationFail: ನಿಮ್ಮ ಸಂದೇಶವನ್ನು ಭಾಷಾಂತರಿಸಲು ವಿಫಲವಾಗಿದೆ.
   wwcInvalidTranslator: ಅಮಾನ್ಯ ಅನುವಾದಕ ಸೆಟ್ಟಿಂಗ್ಗಳು. ಈ ಪ್ಲಗ್ಇನ್ ಅನ್ನು ಬಳಸಲು ದಯವಿಟ್ಟು
     ನಿಮ್ಮ config.yml ಅಥವಾ/wwcc ನೊಂದಿಗೆ ಇದನ್ನು ಸರಿಪಡಿಸಿ.
   wwcConfigGUIEachTranslatorSettings: '%i ಸಂರಚನೆ'
@@ -303,10 +294,6 @@ Messages:
     ಆದರೆ ನೀವು %o ಗೆ ಸಕ್ರಿಯ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಹೊಂದಿದ್ದೀರಿ.
   wwcConfigGUIChangesNotSaved: ನೀವು /wwccನಲ್ಲಿ ಕೆಂಪು ತಡೆಗೋಡೆ ಕ್ಲಿಕ್ ಮಾಡುವವರೆಗೆ ನಿಮ್ಮ
     ಬದಲಾವಣೆಗಳು ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ.
-  wwcConfigConversationSendFailedTranslationChatSuccess: ವಿಫಲವಾದ ಅನುವಾದ ಚಾಟ್ ಸಂದೇಶವನ್ನು
-    ಯಶಸ್ವಿಯಾಗಿ toggled.
-  wwcConfigGUISendFailedTranslationChatButton: ವಿಫಲವಾದ ಅನುವಾದದಲ್ಲಿ ಚಾಟ್ ಸಂದೇಶವನ್ನು
-    ಕಳುಹಿಸಿ
   wwctciOffSender: ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
   wwctGUIChatIncomingButton: ಒಳಬರುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
   wwctcoOffSender: ಹೊರಹೋಗುವ ಚಾಟ್ ಅನುವಾದವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
@@ -391,3 +378,22 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat ಭಾಷೆಗಳನ್ನು ತರಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ, ಮತ್ತು ಬದಲಿಗೆ
     ಬ್ಯಾಕ್ಅಪ್ ಬಳಸುತ್ತಿದೆ. ಇದು ಬಹುಶಃ ಪ್ಲಗಿನ್ ನಡವಳಿಕೆಯ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ, ಆದರೆ
     ದಯವಿಟ್ಟು ಡೆವಲಪರ್ ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.
+  libreHttp400: ಕೆಟ್ಟ ವಿನಂತಿಯನ್ನು ಲಿಬ್ರೆ ಅನುವಾದಕ್ಕೆ ಕಳುಹಿಸಲಾಗಿದೆ! ನೀವು ಮಾಡಬಾರದು ಎಂದು
+    ನೀವು ಏನನ್ನಾದರೂ ಮಾಡುತ್ತಿಲ್ಲದಿದ್ದರೆ, ನೀವು ಇದನ್ನು ಪಡೆಯಬಾರದು. ದಯವಿಟ್ಟು ಡೆವಲಪರ್ ಅನ್ನು
+    ಸಂಪರ್ಕಿಸಿ!
+  wwcConfigGUILibreTranslateApiKeyButton: ಉಚಿತ API ಕೀ ಭಾಷಾಂತರಿಸಿ ಬದಲಾಯಿಸಿ
+  libreHttp403: ಕಾಣೆಯಾಗಿದೆ ಲಿಬ್ರೆ ಭಾಷಾಂತರಿಸಿ API ಕೀ, ಅಥವಾ ನೀವು ಪರಿಚಾರಕದಿಂದ ನಿಷೇಧಿಸಲಾಗಿದೆ!
+  wwcConfigConversationLibreURLSuccess: ಉಚಿತ URL ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationLibreTranslateApiKeyInput: ಪ್ರಸ್ತುತ API ಕೀಲಿಯು %i ಆಗಿದೆ. ದಯವಿಟ್ಟು
+    ಲಿಬ್ರೆ ಗಾಗಿ API ಕೀಲಿಯನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವ ಹಿಂದಕ್ಕೆ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUILibreTranslateButton: ಲಿಬ್ರೆ ಭಾಷಾಂತರಿಸಿ
+  libreHttp429: ಸರ್ವರ್ನಿಂದ ದರ ಮಿತಿಯಿಂದಾಗಿ ಯಾವುದೇ ವಿಶ್ವಾಸವಿಲ್ಲ.
+  wwcConfigGUIToggleLibreTranslateButton: ಉಚಿತ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwcConfigConversationLibreTranslateToggleSuccess: ಲಿಬ್ರೆ ಅನುವಾದವನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಟಾಗಲ್ ಮಾಡಲಾಗಿದೆ. ಬದಲಾವಣೆಗಳು ಜಾರಿಗೆ ಬರುವಂತೆ ಮರುಲೋಡ್ ಮಾಡಿ.
+  wwcConfigConversationLibreTranslateApiKeySuccess: ಉಚಿತ API ಕೀಲಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಹೊಂದಿಸಲಾಗಿದೆ.
+  wwcConfigConversationLibreURLInput: ಪ್ರಸ್ತುತ URL %i ಆಗಿದೆ. ದಯವಿಟ್ಟು ಲಿಬ್ರೆ ಗಾಗಿ
+    ಒಂದು URL ಅನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವ ಹಿಂತಿರುಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  libreHttpUnknown: 'ಗೊತ್ತಿಲ್ಲದ http ದೋಷ: %i'
+  wwcConfigGUILibreTranslateURLButton: ಉಚಿತ ಭಾಷಾಂತರಿಸಿ URL ಅನ್ನು ಬದಲಾಯಿಸಿ

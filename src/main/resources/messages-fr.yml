@@ -49,7 +49,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat est périmée. Veuillez mettre à jour vers la dernière
     version, %i.
   wwcConfigGUINextPageButton: Page suivante
-  wwctbTranslatePageFail: (Échec de la traduction de cette page) %i
   wwcConfigInvalidTranslatorSettings: Paramètres du traducteur non valides! Veuillez
     activer un seul traducteur dans votre config.yml.
   wwcConfigGUIQuitButton: Quitter et enregistrer les modifications
@@ -195,15 +194,9 @@ Messages:
     a été envoyé à la console.
   wwcInventoryError: Erreur détectée avec l'interface graphique de l'utilisateur %i.
     Veuillez signaler ce problème au développeur.
-  wwcSignTranslationFail: Impossible de traduire une ou plusieurs lignes sur votre
-    signe cible.
-  wwcBookTranslationFail: Impossible de traduire une ou plusieurs pages de votre livre
-    cible.
   wwctiOffTarget: La traduction des éléments est désactivée pour %i.
   wwctiOffSender: La traduction des éléments est désactivée.
   wwcItemTranslateTitleStock: Impossible de traduire les noms d'éléments par défaut.
-  wwcItemTranslateLoreFail: Impossible de traduire le lore des éléments.
-  wwcItemTranslateTitleFail: Impossible de traduire le nom de l'article.
   wwctGUIItemButton: Activer/désactiver la traduction d'éléments
   wwcItemTranslateTitleDone: Titre de l'article traduit avec succès.
   wwcGUITempItem: Affichage de l'article
@@ -214,8 +207,6 @@ Messages:
   wwcItemTranslateLoreStart: Traduire l'histoire de l'objet cible...
   wwcItemTranslateLoreDone: Traduit avec succès la tradition des objets.
   wwctiOnTarget: La traduction des éléments est activée pour %i.
-  wwcBookTranslateTitleFail: Impossible de traduire le titre du livre.
-  wwcChatTranslationFail: Impossible de traduire votre message.
   wwcInvalidTranslator: Paramètres de traducteur non valides. Veuillez corriger cela
     dans votre config.yml ou avec /wwcc pour utiliser ce plugin.
   wwcConfigGUIEachTranslatorSettings: Configuration %i
@@ -315,10 +306,6 @@ Messages:
     cours de traduction, mais vous avez une session de traduction active vers %o.
   wwcConfigGUIChangesNotSaved: Vos modifications n'entreront pas en vigueur tant que
     vous n'aurez pas cliqué sur la barrière rouge dans /wwc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Le message de discussion
-    de traduction a échoué avec succès.
-  wwcConfigGUISendFailedTranslationChatButton: Envoyer un message de discussion en
-    fonction de la traduction
   wwctciOffSender: Traduction du chat entrant désactivée.
   wwctGUIChatIncomingButton: Basculer la traduction du chat
   wwctcoOffSender: Traduction du chat sortant désactivée.
@@ -412,3 +399,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat n'a pas pu récupérer les langues et utilise
     à la place des sauvegardes. Cela n'affectera probablement pas le comportement
     du plugin, mais veuillez contacter le développeur.
+  libreHttp400: Mauvaise demande envoyée à Libre Translate! À moins que vous ne fassiez
+    quelque chose que vous ne devriez pas faire, vous ne devriez pas l'obtenir. Veuillez
+    contacter le développeur!
+  wwcConfigGUILibreTranslateApiKeyButton: Changer la clé API Libre Translate
+  libreHttp403: Clé API Libre Translate manquante, ou vous êtes banni du serveur!
+  wwcConfigConversationLibreURLSuccess: URL libre définie avec succès.
+  wwcConfigConversationLibreTranslateApiKeyInput: La clé API actuelle est %i. Entrez
+    une clé API pour Libre, ou tapez 0 pour revenir en arrière.
+  wwcConfigGUILibreTranslateButton: Libre Traduire
+  libreHttp429: Pas de confiance en raison de la limite de débit du serveur.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Traduire
+  wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate basculé avec succès.
+    Rechargez pour que les modifications prennent effet.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Clé API libre définie avec succès.
+  wwcConfigConversationLibreURLInput: L'URL actuelle est %i. Saisissez une URL pour
+    Libre, ou tapez 0 pour revenir en arrière.
+  libreHttpUnknown: 'Erreur HTTP inconnue: %i'
+  wwcConfigGUILibreTranslateURLButton: Changer l'URL de traduction libre

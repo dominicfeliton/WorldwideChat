@@ -49,7 +49,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat er úrelt. Vinsamlegast uppfærðu í nýjustu útgáfuna,
     %i.
   wwcConfigGUINextPageButton: Næsta síða
-  wwctbTranslatePageFail: (Mistókst að þýða þessa síðu) %i
   wwcConfigInvalidTranslatorSettings: Ógildar stillingar þýðanda! Vinsamlegast virkjaðu
     aðeins einn þýðanda í config.yml þínum.
   wwcConfigGUIQuitButton: Hætta og vista breytingar
@@ -190,15 +189,9 @@ Messages:
     stjórnborðsins.
   wwcInventoryError: Villa greind með GUI notanda %i. Vinsamlegast tilkynna þetta
     mál til framkvæmdaraðila.
-  wwcSignTranslationFail: Ekki er hægt að þýða eina eða fleiri línur á markmerkinu
-    þínu.
-  wwcBookTranslationFail: Ekki er hægt að þýða eina eða fleiri síður í markbókinni
-    þinni.
   wwctiOffTarget: Item þýðing óvirk fyrir %i.
   wwctiOffSender: Item þýðingar óvirk.
   wwcItemTranslateTitleStock: Ekki er hægt að þýða sjálfgefin atriði nöfn.
-  wwcItemTranslateLoreFail: Mistókst að þýða atriði lore.
-  wwcItemTranslateTitleFail: Mistókst að þýða heiti hlutarins.
   wwctGUIItemButton: Skipta Item Þýðing
   wwcItemTranslateTitleDone: Þýtt atriði titil með góðum árangri.
   wwcGUITempItem: Item Sýna
@@ -209,8 +202,6 @@ Messages:
   wwcItemTranslateLoreStart: Þýða lore af miða atriði...
   wwcItemTranslateLoreDone: Þýtt atriði lore með góðum árangri.
   wwctiOnTarget: Item þýðing virkt fyrir %i.
-  wwcBookTranslateTitleFail: Mistókst að þýða bók titil.
-  wwcChatTranslationFail: Mistókst að þýða skilaboðin þín.
   wwcInvalidTranslator: Ógildar stillingar þýðanda. Vinsamlegast lagaðu þetta í config.yml
     eða með/wwcc til að nota þessa tappi.
   wwcConfigGUIEachTranslatorSettings: '%i Stillingar'
@@ -303,9 +294,6 @@ Messages:
     þýtt, en þú ert með virkan þýðingartíma til %o.
   wwcConfigGUIChangesNotSaved: Breytingarnar þínar munu ekki taka gildi fyrr en þú
     smellir á rauða hindrunina í/wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Mistókst þýðingar spjall
-    skilaboð skipta með góðum árangri.
-  wwcConfigGUISendFailedTranslationChatButton: Senda spjallskilaboð á mistókst þýðing
   wwctciOffSender: Komandi spjall þýðing óvirk.
   wwctGUIChatIncomingButton: Skipta um komandi spjall Þýðing
   wwctcoOffSender: Útleið spjall þýðing óvirk.
@@ -389,3 +377,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat var ekki að ná tungumál, og er í staðinn
     að nota afrit. Þetta mun líklega ekki hafa áhrif á hegðun tappi, en vinsamlegast
     hafðu samband við framkvæmdaraðila.
+  libreHttp400: Slæm beiðni send til Libre Translate! Nema þú ert að gera eitthvað
+    sem þú ættir ekki, þú ættir ekki að fá þetta. Vinsamlegast hafðu samband við framkvæmdaraðila!
+  wwcConfigGUILibreTranslateApiKeyButton: Breyta Libre Þýða API Key
+  libreHttp403: Vantar Libre Translate API Key, eða þú ert bönnuð frá þjóninum!
+  wwcConfigConversationLibreURLSuccess: Ókeypis URL sett með góðum árangri.
+  wwcConfigConversationLibreTranslateApiKeyInput: Núverandi API lykill er %i. Vinsamlegast
+    sláðu inn API lykil fyrir Libre, eða tegund 0 til að fara aftur.
+  wwcConfigGUILibreTranslateButton: Libre Þýða
+  libreHttp429: Ekkert traust vegna hámarkshraða frá netþjóni.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Þýða
+  wwcConfigConversationLibreTranslateToggleSuccess: Tókst að skipta um Libre Translate.
+    Endurhlaða til að breytingarnar taki gildi.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Ókeypis API lykill sett með góðum
+    árangri.
+  wwcConfigConversationLibreURLInput: Núverandi vefslóð er %i. Vinsamlegast sláðu
+    inn vefslóð fyrir Libre, eða tegund 0 til að fara til baka.
+  libreHttpUnknown: 'Óþekkt http villa: %i'
+  wwcConfigGUILibreTranslateURLButton: Breyta Libre Þýða URL

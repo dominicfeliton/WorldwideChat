@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat له نیټې څخه بهر دی.. مهرباني وکړئ وروستۍ نسخه
     ته اوسمهالول کړئ، %i
   wwcConfigGUINextPageButton: راتلونکی مخ
-  wwctbTranslatePageFail: (د دې مخ په ژباړلو کې پاتې راغی) %i
   wwcConfigInvalidTranslatorSettings: ناسم ژباړونکي امستنې! مهرباني وکړئ یوازې یو
     ژباړونکي په خپل ترتیب کې فعال کړئ.
   wwcConfigGUIQuitButton: بدلونونه وتل & ساتل
@@ -179,13 +178,9 @@ Messages:
     دی.
   wwcInventoryError: د کارن د GUI سره تېروتنه وموندل شوه %i. مهرباني وکړئ دا مسله
     پرمخ وړونکي ته راپور ورکړئ.
-  wwcSignTranslationFail: ستاسو په نښه نښه کې د یو یا ډیرو لینونو ژباړلو توان نلري.
-  wwcBookTranslationFail: د خپل هدف کتاب کې د یو یا ډیرو مخونو ژباړلو توان نلري.
   wwctiOffTarget: .توکی ژباړه د %i لپاره ناتوانول شو
   wwctiOffSender: د توکو ژباړه معلول.
   wwcItemTranslateTitleStock: . د تلواله توکي نومونه نه شي ژباړل
-  wwcItemTranslateLoreFail: د توکو لیور ژباړلو کې پاتې راغی.
-  wwcItemTranslateTitleFail: . د توکو نوم ژباړلو کې پاتې راغی
   wwctGUIItemButton: د توکو ژباړه توګول
   wwcItemTranslateTitleDone: ژباړل شوی توکی عنوان په بریالیتوب سره
   wwcGUITempItem: توکي ښودنه
@@ -196,8 +191,6 @@ Messages:
   wwcItemTranslateLoreStart: د هدف توکي د لور ژباړه...
   wwcItemTranslateLoreDone: ژباړل شوي توکي په بریالیتوب سره.
   wwctiOnTarget: .توکی ژباړل د %i لپاره فعال شو
-  wwcBookTranslateTitleFail: د کتاب سرلیک ژباړلو کې پاتې راغی.
-  wwcChatTranslationFail: ستاسو پیغام په ژباړلو کې پاتې راغی.
   wwcInvalidTranslator: ناسم ژباړونکي امستنې. مهرباني وکړئ دا په خپل config.yml یا/wwcc
     سره د دې فلګین کارولو لپاره حل کړئ.
   wwcConfigGUIEachTranslatorSettings: '%i سازونه'
@@ -290,9 +283,6 @@ Messages:
     مګر تاسو د ژباړې فعاله ناستې لرئ.
   wwcConfigGUIChangesNotSaved: ستاسو بدلونونه به اغیزه ونکړي تر هغه چې تاسو په /wwcc
     کې په سور خنډ باندې کلیک وکړئ.
-  wwcConfigConversationSendFailedTranslationChatSuccess: ناکام ژباړې چیٹ پیغام په
-    بریالیتوب سره ټګل شو.
-  wwcConfigGUISendFailedTranslationChatButton: په ناکام ژباړه کې د چیٹ پیغام ولیږئ
   wwctciOffSender: راتلونکی چیٹ ژباړه غیر فعال شوی.
   wwctGUIChatIncomingButton: د راتلونکی چیٹ ژباړه
   wwctcoOffSender: د وتلو چیٹ ژباړه معلولیت لري.
@@ -377,3 +367,22 @@ Messages:
   wwcBackupLangCodesWarning: د نړۍ په ګوټ ګوټ کې د ژبو د ترلاسه کولو توان نه درلود،
     او پرځای یې د بیک اپ دا شاید به د فلپین چلند اغیزه ونکړي، مګر مهرباني وکړئ د پراختیایی
     سره اړیکه ونیسئ.
+  libreHttp400: خراب غوښتنه لیبر ژباړل ته لیږل شوې! تر هغه چې تاسو داسې څه نه کوئ
+    چې تاسو باید نه وي، تاسو باید دا ونه ترلاسه کړئ. مهرباني وکړئ د پراختیا ورکوونکي
+    سره اړیکه ونیسئ!
+  wwcConfigGUILibreTranslateApiKeyButton: د لیبر ژباړې API کیلي بدلول
+  libreHttp403: Missing لیبر ژباړل API کیلي، یا تاسو د سرور څخه منع شوي یاست!
+  wwcConfigConversationLibreURLSuccess: لیبر URL په بریالیتوب سره ټاکل شوی.
+  wwcConfigConversationLibreTranslateApiKeyInput: اوسنی API کیلي %i دی. مهرباني وکړئ
+    د لیبر لپاره د API کیلي داخل کړئ، یا د بېرته تلو لپاره 0 ولیکئ.
+  wwcConfigGUILibreTranslateButton: ليبر ژباړل
+  libreHttp429: د سرور څخه د نرخ حد له امله هیڅ باور نشته.
+  wwcConfigGUIToggleLibreTranslateButton: ليګاره ژباړل
+  wwcConfigConversationLibreTranslateToggleSuccess: په بریالیتوب سره لیبر ژباړل شوی.
+    د بدلونونو لپاره بیا ځای پر ځای کړئ ترڅو اغیزمن شي.
+  wwcConfigConversationLibreTranslateApiKeySuccess: لیبر API کیلي په بریالیتوب سره
+    ټاکل شوی.
+  wwcConfigConversationLibreURLInput: اوسنی URL دی %i. مهرباني وکړئ د لیبر لپاره یو
+    URL داخل کړئ، یا د بېرته تګ لپاره 0 ولیکئ.
+  libreHttpUnknown: 'ناپېژندلې http تېروتنه: %i'
+  wwcConfigGUILibreTranslateURLButton: ليبر ژباړل URL بدلول

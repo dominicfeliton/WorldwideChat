@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat ba ta da kwanan wata. Da fatan za a sabunta zuwa
     sabuwar version, %i.
   wwcConfigGUINextPageButton: Shafi na gaba
-  wwctbTranslatePageFail: (An kasa fassara wannan shafi) %i
   wwcConfigInvalidTranslatorSettings: Saitunan fassara mara inganci! Da fatan za a
     taimaka wa mai fassara ɗaya kawai a cikin daidaitawa.yml.
   wwcConfigGUIQuitButton: Fita & Ajiye Canje-canje
@@ -183,15 +182,9 @@ Messages:
     na'ura mai kwakwalwa.
   wwcInventoryError: Kuskuren da aka gano tare da GUI na mai amfani %i. Da fatan za
     a bayar da rahoton wannan batu ga mai
-  wwcSignTranslationFail: Ba za a iya fassara ɗaya ko fiye da layi a kan alamar manufa
-    ba.
-  wwcBookTranslationFail: Ba za a iya fassara ɗaya ko fiye da shafuka a cikin littafinku
-    mai mahimmanci ba.
   wwctiOffTarget: Fassarar abu an kashe da %i.
   wwctiOffSender: Fassarar abu ya nakasa.
   wwcItemTranslateTitleStock: Ba a iya fassara sunayen abubuwa na asali ba.
-  wwcItemTranslateLoreFail: An kasa fassara abu lore.
-  wwcItemTranslateTitleFail: An kasa fassara sunan abu.
   wwctGUIItemButton: Fassarar Abu
   wwcItemTranslateTitleDone: An fassara taken abu cikin nasara.
   wwcGUITempItem: Nunin abu
@@ -202,8 +195,6 @@ Messages:
   wwcItemTranslateLoreStart: Fassara lore na abu mai manufa...
   wwcItemTranslateLoreDone: An fassara abu lore nasara.
   wwctiOnTarget: An kunna fassarar abu da %i.
-  wwcBookTranslateTitleFail: An kasa fassara taken littafin.
-  wwcChatTranslationFail: Kasa fassara sakonka.
   wwcInvalidTranslator: Saitunan fassara mara inganci. Da fatan a gyara wannan a cikin
     daidaitawa.yml ko tare da /wwcc don amfani da wannan plugin.
   wwcConfigGUIEachTranslatorSettings: '%i Configuration'
@@ -297,9 +288,6 @@ Messages:
     duniya, amma kuna da zaman fassara mai aiki zuwa %o.
   wwcConfigGUIChangesNotSaved: Canje-canjen ku ba zai yi tasiri ba har sai kun danna
     kan jan shamaki a /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: An kasa fassara sakon taɗi
-    da aka yi nasara.
-  wwcConfigGUISendFailedTranslationChatButton: Aika Saƙon Hira akan Fassarar Fassarar
   wwctciOffSender: Fassarar hira mai shigowa ta nakasa.
   wwctGUIChatIncomingButton: Tudgle Shigowa Chat
   wwctcoOffSender: Fassarar hira mai fita ta nakasa.
@@ -383,3 +371,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat bai iya samo harsuna ba, kuma yana amfani
     da madadin backups. Wannan mai yiwuwa ba zai shafi halin plugin ba, amma don Allah
     a tuntuɓi mai tasowa.
+  libreHttp400: Bad request aika zuwa Libre Translate! Sai dai idan kana yin wani
+    abu da bai kamata ka yi ba, bai kamata ka samu wannan ba. Da fatan a tuntubi mai
+    gabatarwa!
+  wwcConfigGUILibreTranslateApiKeyButton: Canja Libre Fassara Maɓallin API
+  libreHttp403: Rashin Libre Fassara Maɓallin API, ko an dakatar da ku daga uwar garke!
+  wwcConfigConversationLibreURLSuccess: Libre URL saita nasara.
+  wwcConfigConversationLibreTranslateApiKeyInput: Maɓallin API na yanzu shine %i.
+    Da fatan za a shigar da maɓallin API don Libre, ko rubuta 0 don komawa.
+  wwcConfigGUILibreTranslateButton: Fassara mai tsabta
+  libreHttp429: Babu amincewa saboda iyakacin kuɗi daga uwar garke.
+  wwcConfigGUIToggleLibreTranslateButton: Translate Libre
+  wwcConfigConversationLibreTranslateToggleSuccess: An samu nasarar daidaitawa Fassarar
+    Libre. Sake saukewa don canje-canje don yin tasiri.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API maɓallin saita nasara.
+  wwcConfigConversationLibreURLInput: URL na yanzu shine %i. Da fatan za a shigar
+    da URL don Libre, ko rubuta 0 don komawa.
+  libreHttpUnknown: 'Kuskuren http wanda ba a sani ba: %i'
+  wwcConfigGUILibreTranslateURLButton: Canja adireshin fassara na Libre

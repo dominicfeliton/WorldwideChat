@@ -85,10 +85,8 @@ Messages:
   wwcEntityTranslateStart: Aistriú sprioceintiteas...
   wwcUpdaterFutureDate: Tá leagan níos mó ag an gcás seo de WorldwideChat ná an ceann
     poiblí is déanaí.
-  wwcItemTranslateLoreFail: Theip ar aistriú lore mír.
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google Translate Athraigh API Eochair
   wwcConfigGUIGlobalRateLimitButton: Athraigh Teorainn Ráta Domhanda
-  wwcItemTranslateTitleFail: Theip ar ainm mír a aistriú.
   wwctsOnTarget: Aistriúchán Sínigh cumasaithe le h %i.
   wwcConfigCacheDisabled: Taisce Aistritheoir faoi mhíchumas.
   wwcConfigConversationWatsonURLInput: Is é an URL reatha %i. Cuir ionchur URL seirbhíse
@@ -138,7 +136,6 @@ Messages:
   wwctrlRateLimitSetTarget: Socraigh an teorainn ráta de %i go %o soicind.
   wwcConfigGUIMessagesOverrideCustomLabel: Teachtaireacht Nua
   wwcGUITempItem: Taispeáin Mír
-  wwcBookTranslationFail: Ní féidir leathanaigh amháin nó níos mó a aistriú i do spriocleabhar.
   wwcConfigConversationGoogleTranslateAPIKeyInput: Is é an eochair API reatha %i.
     Cuir isteach eochair API do Google Translate, nó cineál 0 chun dul ar ais.
   wwcConfigConversationRateLimitInput: Is é an teorainn ráta reatha domhanda in aghaidh
@@ -151,7 +148,6 @@ Messages:
   wwcInvalidTranslator: Suíomhanna aistritheora neamhbhailí. Le do thoil a shocrú
     seo i do config.yml nó le/wwcc a bhaint as an mbreiseán seo.
   wwcConfigConversationWatsonAPIKeySuccess: Watson API eochair leagtha go rathúil.
-  wwcChatTranslationFail: Theip ar aistriú do theachtaireacht.
   wwcConfigCacheEnabled: Taisce Aistritheoir cumasaithe agus a leagtar chun teorainn
     de %i.
   wwcConfigConversationOverrideDeletionSuccess: Scriosadh sárú teachtaireachta saincheaptha.
@@ -175,8 +171,6 @@ Messages:
   wwcgAutoTranslateStart: Anois aistriú comhrá domhanda a %o.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Athraigh Amazon Eochair Rochtain
   wwcrFail: Theip ar WorldwideChat a athlódáil.
-  wwcSignTranslationFail: Ní féidir línte amháin nó níos mó a aistriú ar do shíniú
-    sprice.
   wwcUpdaterFailedGeneric: Ní féidir nuashonruithe WorldwideChat a sheiceáil.
   wwcConfigGUIChatMessagesOverrideSettings: Sáraigh Teachtaireachtaí Réamhshocraithe
   wwctGUIMainMenuGlobal: Roghchlár Aistriúcháin Domhanda
@@ -230,7 +224,6 @@ Messages:
     tú ar an mbacainn dhearg i/wwcc.
   wwcBookTranslateTitleSuccess: 'Teideal Leabhar Aistrithe: %i'
   wwcConfigGUINextPageButton: An Chéad Leathanach Eile
-  wwctbTranslatePageFail: (Theip ar aistriú an leathanach seo) %i
   wwctiOnSender: aistriúchán Mír cumasaithe. Right-click le mír i do lámh is mó a
     aistriú é!
   wwcConfigGUIMessagesOverrideOriginalLabel: Teachtaireacht Bunaidh
@@ -270,7 +263,6 @@ Messages:
     a aistriú!
   wwctGUIAutoDetectButton: Auto-bhrath Teanga Foinse
   wwcConfigConversationDebugModeSuccess: Go rathúil toggled mód debug.
-  wwcBookTranslateTitleFail: Theip ar aistriú teideal leabhar.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Scrios Sáraigh
   wwcNoConsole: Is féidir an t-ordú a bheith ar siúl ach amháin ag imreoir.
   wwcConfigConversationTranslationCacheSuccess: Teorainn taisce Aistriúchán leagtha
@@ -320,10 +312,6 @@ Messages:
     go rathúil.
   wwcConfigBadUpdateDelay: Moill updater neamhbhailí atá leagtha síos i config.yml.
     Réamhshocraithe go 86400 soicind...
-  wwcConfigConversationSendFailedTranslationChatSuccess: Theip teachtaireacht comhrá
-    aistriúcháin toggled go rathúil.
-  wwcConfigGUISendFailedTranslationChatButton: Seol Teachtaireacht Comhrá ar Aistriúchán
-    Theip
   wwctciOffSender: Aistriúchán comhrá Isteach faoi mhíchumas.
   wwctGUIChatIncomingButton: Aistriúchán Comhrá Isteach
   wwctcoOffSender: Aistriúchán comhrá amach faoi mhíchumas.
@@ -412,3 +400,22 @@ Messages:
   wwcBackupLangCodesWarning: Ní raibh WorldwideChat in ann teangacha a fháil, agus
     ina ionad sin úsáideann sé cúltacaí. Ní bheidh sé seo difear is dócha iompar plugin,
     ach téigh i dteagmháil leis an bhforbróir.
+  libreHttp400: Droch iarraidh a sheoladh chuig Libre Translate! Mura bhfuil rud éigin
+    á dhéanamh agat nár cheart duit, níor cheart duit é seo a fháil. Téigh i dteagmháil
+    leis an bhforbróir!
+  wwcConfigGUILibreTranslateApiKeyButton: Athraigh Free Translate API Key
+  libreHttp403: Missing Libre Translate API Key, nó má tá tú cosc ar an bhfreastalaí!
+  wwcConfigConversationLibreURLSuccess: URL saor in aisce a leagtar go rathúil.
+  wwcConfigConversationLibreTranslateApiKeyInput: Is é an eochair API atá ann faoi
+    láthair %i. ionchur eochair API do Libre, nó cineál 0 chun dul ar ais.
+  wwcConfigGUILibreTranslateButton: Aistrigh Saor
+  libreHttp429: Gan aon mhuinín mar gheall ar theorainn rátaí ón bhfreastalaí.
+  wwcConfigGUIToggleLibreTranslateButton: Scoránaigh Saor Aistrigh
+  wwcConfigConversationLibreTranslateToggleSuccess: D'éirigh toggled Libre Translate.
+    Athlódáil chun na hathruithe a chur i bhfeidhm.
+  wwcConfigConversationLibreTranslateApiKeySuccess: API saor in aisce eochair leagtha
+    go rathúil.
+  wwcConfigConversationLibreURLInput: Is é an URL atá ann faoi láthair %i. le do thoil
+    ionchur URL do Libre, nó cineál 0 chun dul ar ais.
+  libreHttpUnknown: 'Earráid http anaithnid: %i'
+  wwcConfigGUILibreTranslateURLButton: Athraigh Saor in Aisce Aistrigh URL

@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldWidChat sudah lapuk. Sila kemaskini ke versi terkini,
     %i.
   wwcConfigGUINextPageButton: Halaman Seterusnya
-  wwctbTranslatePageFail: (Gagal menterjemahkan halaman ini) %i
   wwcConfigInvalidTranslatorSettings: Tetapan penterjemah tidak sah! Sila aktifkan
     hanya satu penterjemah dalam config.yml anda.
   wwcConfigGUIQuitButton: Keluar & Simpan Perubahan
@@ -185,15 +184,9 @@ Messages:
   wwcInventoryErrorPlayer: Ralat dikesan dengan GUI anda. Log telah dihantar ke konsol.
   wwcInventoryError: Ralat dikesan dengan GUI pengguna %i. Sila laporkan isu ini kepada
     pembangun.
-  wwcSignTranslationFail: Tidak dapat menterjemahkan satu atau lebih baris pada tanda
-    sasaran anda.
-  wwcBookTranslationFail: Tidak dapat menterjemahkan satu atau lebih halaman dalam
-    buku sasaran anda.
   wwctiOffTarget: Terjemahan item dilumpuhkan untuk %i.
   wwctiOffSender: Terjemahan item dilumpuhkan.
   wwcItemTranslateTitleStock: Tidak boleh menterjemahkan nama item lalai.
-  wwcItemTranslateLoreFail: Gagal menterjemahkan item pengetahuan.
-  wwcItemTranslateTitleFail: Gagal menterjemah nama item.
   wwctGUIItemButton: Togol Terjemahan Item
   wwcItemTranslateTitleDone: Tajuk item yang diterjemahkan berjaya.
   wwcGUITempItem: Paparan Item
@@ -204,8 +197,6 @@ Messages:
   wwcItemTranslateLoreStart: Menterjemahkan pengetahuan item sasaran...
   wwcItemTranslateLoreDone: Maklumat item yang diterjemahkan berjaya.
   wwctiOnTarget: Terjemahan item dibenarkan untuk %i.
-  wwcBookTranslateTitleFail: Gagal menterjemahkan tajuk buku.
-  wwcChatTranslationFail: Gagal menterjemahkan mesej anda.
   wwcInvalidTranslator: Tetapan penterjemah tidak sah. Sila betulkan ini dalam config.yml
     anda atau dengan /wwcc untuk guna pemalam ini.
   wwcConfigGUIEachTranslatorSettings: '%i Konfigurasi'
@@ -299,10 +290,6 @@ Messages:
     diterjemahkan, tetapi anda mempunyai sesi terjemahan aktif ke %o.
   wwcConfigGUIChangesNotSaved: Perubahan anda tidak akan berkuat kuasa sehingga anda
     klik pada halangan merah di /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Mesej sembang terjemahan
-    gagal berjaya ditogol.
-  wwcConfigGUISendFailedTranslationChatButton: Hantar Mesej Sembang pada Terjemahan
-    Gagal
   wwctciOffSender: Terjemahan sembang masuk dilumpuhkan.
   wwctGUIChatIncomingButton: Togol Terjemahan Sembang Masuk
   wwctcoOffSender: Terjemahan sembang keluar dilumpuhkan.
@@ -388,3 +375,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldChat tidak dapat mengambil bahasa, dan sebaliknya
     menggunakan sandaran. Ini mungkin tidak akan menjejaskan tingkah laku plugin,
     tetapi sila hubungi pemaju.
+  libreHttp400: Permintaan buruk dihantar ke Percuma Terjemah! Kecuali anda melakukan
+    sesuatu yang anda tidak sepatutnya, anda tidak sepatutnya mendapatkannya. Sila
+    hubungi pemaju!
+  wwcConfigGUILibreTranslateApiKeyButton: Tukar Percuma Terjemah API Key
+  libreHttp403: Hilang Percuma Terjemah API Key, atau anda diharamkan daripada pelayan!
+  wwcConfigConversationLibreURLSuccess: URL Percuma berjaya ditetapkan.
+  wwcConfigConversationLibreTranslateApiKeyInput: Kunci API semasa adalah %i. Sila
+    masukkan kunci API untuk Percuma, atau taip 0 untuk kembali.
+  wwcConfigGUILibreTranslateButton: Libre Terjemah
+  libreHttp429: Tiada keyakinan kerana had kadar dari pelayan.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Terjemah
+  wwcConfigConversationLibreTranslateToggleSuccess: Berjaya ditogol Percuma Terjemah.
+    Muat semula untuk perubahan berkuatkuasa.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Kunci API Percuma berjaya ditetapkan.
+  wwcConfigConversationLibreURLInput: URL semasa adalah %i. Sila masukkan URL untuk
+    Percuma, atau taip 0 untuk kembali.
+  libreHttpUnknown: 'Ralat http tidak diketahui: %i'
+  wwcConfigGUILibreTranslateURLButton: Tukar Percuma Terjemah URL

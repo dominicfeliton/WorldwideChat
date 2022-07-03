@@ -49,7 +49,6 @@ Messages:
   wwcUpdaterOutOfDate: Το WorldwideChat είναι ξεπερμένο. Ενημερώστε την τελευταία
     έκδοση, %i.
   wwcConfigGUINextPageButton: Επόμενη Σελίδα
-  wwctbTranslatePageFail: (Αποτυχία μετάφρασης αυτής της σελίδας) %i
   wwcConfigInvalidTranslatorSettings: Μη έγκυρες ρυθμίσεις μεταφραστή! Παρακαλώ ενεργοποιήστε
     μόνο έναν μεταφραστή στο config.yml σας.
   wwcConfigGUIQuitButton: Έξοδος & αποθήκευση αλλαγών
@@ -199,16 +198,10 @@ Messages:
     έχει σταλεί στην κονσόλα.
   wwcInventoryError: Εντοπίστηκε σφάλμα με το GUI του χρήστη %i. Παρακαλώ αναφέρετε
     αυτό το ζήτημα στον προγραμματιστή.
-  wwcSignTranslationFail: Δεν είναι δυνατή η μετάφραση μιας ή περισσοτέρων γραμμών
-    στο σύμβολο προορισμού.
-  wwcBookTranslationFail: Δεν είναι δυνατή η μετάφραση μιας ή περισσοτέρων σελίδων
-    στο βιβλίο προορισμού σας.
   wwctiOffTarget: Η μετάφραση αντικειμένου απενεργοποιημένη για %i.
   wwctiOffSender: Η μετάφραση αντικειμένου απενεργοποιήθηκε.
   wwcItemTranslateTitleStock: Δεν είναι δυνατή η μετάφραση προεπιλεγμένων ονομάτων
     στοιχείων.
-  wwcItemTranslateLoreFail: Αποτυχία μετάφρασης αντικειμένων.
-  wwcItemTranslateTitleFail: Αποτυχία μετάφρασης ονόματος αντικειμένου.
   wwctGUIItemButton: Εναλλαγή μετάφρασης αντικειμένου
   wwcItemTranslateTitleDone: Μετάφραση τίτλου αντικειμένου με επιτυχία.
   wwcGUITempItem: Οθόνη Στοιχείου
@@ -219,8 +212,6 @@ Messages:
   wwcItemTranslateLoreStart: Μεταφράζοντας την παράδοση του στοχευόμενου αντικειμένου...
   wwcItemTranslateLoreDone: Μετάφραση αντικειμένων με επιτυχία.
   wwctiOnTarget: Η μετάφραση αντικειμένου ενεργοποιήθηκε για %i.
-  wwcBookTranslateTitleFail: Αποτυχία μετάφρασης τίτλου βιβλίου.
-  wwcChatTranslationFail: Απέτυχε η μετάφραση του μηνύματός σας.
   wwcInvalidTranslator: Μη έγκυρες ρυθμίσεις μεταφραστή. Διορθώστε το στο config.yml
     ή στο /wwcc για να χρησιμοποιήσετε αυτό το πρόσθετο.
   wwcConfigGUIEachTranslatorSettings: '%i Ρύθμιση παραμέτρων'
@@ -320,10 +311,6 @@ Messages:
     μεταφράζεται, αλλά έχετε μια ενεργή συνεδρία μετάφρασης σε %o.
   wwcConfigGUIChangesNotSaved: Οι αλλαγές σας δεν θα τεθούν σε ισχύ μέχρι να κάνετε
     κλικ στο κόκκινο φράγμα στο /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Απέτυχε η εναλλαγή μηνύματος
-    συνομιλίας μετάφρασης με επιτυχία.
-  wwcConfigGUISendFailedTranslationChatButton: Αποστολή μηνύματος συνομιλίας σε αποτυχημένη
-    μετάφραση
   wwctciOffSender: Η μετάφραση εισερχόμενης συνομιλίας απενεργοποιήθηκε.
   wwctGUIChatIncomingButton: Εναλλαγή μετάφρασης εισερχόμενης συνομιλίας
   wwctcoOffSender: Η εξερχόμενη μετάφραση συνομιλίας απενεργοποιήθηκε.
@@ -420,3 +407,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat δεν ήταν δυνατή η λήψη γλωσσών, και αντ
     'αυτού χρησιμοποιεί αντίγραφα ασφαλείας. Αυτό πιθανότατα δεν θα επηρεάσει τη συμπεριφορά
     του plugin, αλλά παρακαλούμε επικοινωνήστε με τον προγραμματιστή.
+  libreHttp400: Κακό αίτημα εστάλη στο Libre Μετάφραση! Αν δεν κάνετε κάτι που δεν
+    πρέπει, δεν πρέπει να το πάρετε αυτό. Παρακαλούμε επικοινωνήστε με τον προγραμματιστή!
+  wwcConfigGUILibreTranslateApiKeyButton: Αλλάξτε το κλειδί API μετάφρασης Libre
+  libreHttp403: Λείπει Libre Μετάφραση API Key, ή έχετε απαγορευτεί από το διακομιστή!
+  wwcConfigConversationLibreURLSuccess: Το Libre URL ορίστηκε επιτυχώς.
+  wwcConfigConversationLibreTranslateApiKeyInput: Το τρέχον κλειδί API είναι %i. Παρακαλώ
+    εισάγετε ένα κλειδί API για το Libre, ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUILibreTranslateButton: Ελεύθερη Μετάφραση
+  libreHttp429: Δεν υπάρχει εμπιστοσύνη λόγω ορίου ρυθμού από το διακομιστή.
+  wwcConfigGUIToggleLibreTranslateButton: Εναλλαγή μετάφρασης Libre
+  wwcConfigConversationLibreTranslateToggleSuccess: Επιτυχής ενέγγει το Libre Translate.
+    Επαναφόρτωση για να τεθούν σε ισχύ οι αλλαγές.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Το κλειδί Libre API ορίστηκε με
+    επιτυχία.
+  wwcConfigConversationLibreURLInput: Το τρέχον URL είναι %i. Παρακαλώ εισάγετε ένα
+    URL για το Libre, ή πληκτρολογήστε 0 για να επιστρέψετε.
+  libreHttpUnknown: 'Άγνωστο σφάλμα http: %i'
+  wwcConfigGUILibreTranslateURLButton: Αλλαγή διεύθυνσης URL μετάφρασης Libre

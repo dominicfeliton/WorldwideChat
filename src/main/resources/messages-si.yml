@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: වර්ල්ඩ්වයිඩ්හාට් දිනය ඉවරයි. කරුණාකර නවතම අනුවාදයට යාවත්කාලීන
     කරන්න, %i.
   wwcConfigGUINextPageButton: ඊළඟ පිටුව
-  wwctbTranslatePageFail: (මෙම පිටුව පරිවර්තනය කිරීමට අසමත් විය) %i
   wwcConfigInvalidTranslatorSettings: වලංගු නොවන පරිවර්තක සැකසුම්! කරුණාකර ඔබගේ config.yml
     තුළ එක් පරිවර්තකයෙකුට පමණක් සක්රීය කරන්න.
   wwcConfigGUIQuitButton: පිටවීමේ සහ සුරකින්න වෙනස්කම්
@@ -186,15 +185,9 @@ Messages:
   wwcInventoryErrorPlayer: ඔබේ GUI සමඟ හඳුනාගත් දෝෂය. ලොගයක් කොන්සෝලය වෙත යවා ඇත.
   wwcInventoryError: '%i පරිශීලකයාගේ GUI සමඟ අනාවරණය වූ දෝෂය. කරුණාකර මෙම ගැටළුව සංවර්ධකයාට
     වාර්තා කරන්න.'
-  wwcSignTranslationFail: ඔබගේ ඉලක්කගත ලකුණෙහි රේඛා එකක් හෝ කිහිපයක් පරිවර්තනය කිරීමට
-    නොහැකි විය.
-  wwcBookTranslationFail: ඔබගේ ඉලක්කගත පොතේ පිටු එකක් හෝ කිහිපයක් පරිවර්තනය කිරීමට
-    නොහැකි විය.
   wwctiOffTarget: අයිතම පරිවර්තනය %i සඳහා අක්රීය කර ඇත.
   wwctiOffSender: අයිතම පරිවර්තනය ආබාධිත.
   wwcItemTranslateTitleStock: පෙරනිමි අයිතම නාම පරිවර්තනය කිරීමට නොහැකි විය.
-  wwcItemTranslateLoreFail: අයිතම ලෝරි පරිවර්තනය කිරීමට අසමත් විය.
-  wwcItemTranslateTitleFail: අයිතමයේ නම පරිවර්තනය කිරීමට අසමත් විය.
   wwctGUIItemButton: ටොගල් කරන්න අයිතමය පරිවර්තනය
   wwcItemTranslateTitleDone: පරිවර්තනය කරන ලද අයිතම මාතෘකාව සාර්ථකව.
   wwcGUITempItem: අයිතමය පෙන්වන්න
@@ -205,8 +198,6 @@ Messages:
   wwcItemTranslateLoreStart: ඉලක්කය අයිතමය ක lore පරිවර්තනය...
   wwcItemTranslateLoreDone: පරිවර්ථනය කරන ලද අයිතමය සාර්ථකව.
   wwctiOnTarget: අයිතම පරිවර්තනය %i සඳහා සබල කර ඇත.
-  wwcBookTranslateTitleFail: පොත් මාතෘකාව පරිවර්තනය කිරීමට අසමත් විය.
-  wwcChatTranslationFail: ඔබගේ පණිවිඩය පරිවර්තනය කිරීමට අසමත් විය.
   wwcInvalidTranslator: වලංගු නොවන පරිවර්තක සැකසුම්. කරුණාකර මෙම ප්ලගිනය භාවිතා කිරීමට
     ඔබගේ config.yml හෝ /wwcc සමඟ මෙය නිවැරදි කරන්න.
   wwcConfigGUIEachTranslatorSettings: '%i වින්යාසය'
@@ -300,10 +291,6 @@ Messages:
     වෙමින් පවතී, නමුත් ඔබට %o වෙත ක්රියාකාරී පරිවර්තන සැසියක් ඇත.
   wwcConfigGUIChangesNotSaved: ඔබ /wwcහි රතු බාධකයක් මත ක්ලික් කරන තුරු ඔබේ වෙනස්කම්
     ක්රියාත්මක නොවනු ඇත.
-  wwcConfigConversationSendFailedTranslationChatSuccess: අසාර්ථක පරිවර්තන චැට් පණිවිඩය
-    සාර්ථකව ටොගල් කර ඇත.
-  wwcConfigGUISendFailedTranslationChatButton: අසාර්ථක පරිවර්තනය පිළිබඳ චැට් පණිවිඩය
-    යවන්න
   wwctciOffSender: පැමිණෙන චැට් පරිවර්තනය අක්රීය කර ඇත.
   wwctGUIChatIncomingButton: ටොගල් කරන්න එන චැට් පරිවර්තනය
   wwctcoOffSender: පිටතට යන චැට් පරිවර්තනය අක්රීය.
@@ -387,3 +374,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat භාෂා ලබා ගැනීමට නොහැකි වූ අතර ඒ වෙනුවට
     උපස්ථ භාවිතා කරයි. මෙය බොහෝ විට ප්ලගින හැසිරීමට බලපාන්නේ නැත, නමුත් කරුණාකර සංවර්ධක
     අමතන්න.
+  libreHttp400: නරක ඉල්ලීමක් ලිබ්රේ පරිවර්තනය වෙත යවන ලදි! ඔබ නොකළ යුතු දෙයක් නොකරන්නේ
+    නම්, ඔබ මෙය ලබා නොගත යුතුය. කරුණාකර සංවර්ධකයා අමතන්න!
+  wwcConfigGUILibreTranslateApiKeyButton: නිදහස් පරිවර්තනය API කී වෙනස්
+  libreHttp403: අතුරුදහන් Libre API කී පරිවර්තනය, හෝ ඔබ සේවාදායකය තහනම්!
+  wwcConfigConversationLibreURLSuccess: නිදහස් URL එක සාර්ථකව සකසා ඇත.
+  wwcConfigConversationLibreTranslateApiKeyInput: වත්මන් API යතුර %i වේ. කරුණාකර Libre
+    සඳහා API යතුරක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
+  wwcConfigGUILibreTranslateButton: නිදහස් පරිවර්තනය
+  libreHttp429: සේවාදායකයෙන් අනුපාත සීමාව නිසා කිසිදු විශ්වාසයක් නැත.
+  wwcConfigGUIToggleLibreTranslateButton: ටොගල් කරන්න නොමිලේ පරිවර්තනය කරන්න
+  wwcConfigConversationLibreTranslateToggleSuccess: සාර්ථකව ටොගල කළ ලිබ්රේ පරිවර්තනය.
+    වෙනස්කම් බලාත්මක කිරීම සඳහා රීලෝඩ් කරන්න.
+  wwcConfigConversationLibreTranslateApiKeySuccess: නිදහස් API ප්රධාන කට්ටලයක් සාර්ථකව.
+  wwcConfigConversationLibreURLInput: වත්මන් URL එක %i වේ. කරුණාකර Libre සඳහා URL
+    එකක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
+  libreHttpUnknown: 'නොදන්නා http දෝෂය: %i'
+  wwcConfigGUILibreTranslateURLButton: නිදහස් පරිවර්තනය URL එක වෙනස්

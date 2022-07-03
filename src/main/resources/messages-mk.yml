@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat е застарен. Ве молиме ажурирајте ја најновата
     верзија, %i.
   wwcConfigGUINextPageButton: Следна страница
-  wwctbTranslatePageFail: (Не успеа да ја преведе оваа страница) %i
   wwcConfigInvalidTranslatorSettings: Неважечки поставки за преведувач! Ве молиме
     вклучете само еден преведувач во вашиот config.yml.
   wwcConfigGUIQuitButton: Излез и зачувување на промените
@@ -193,15 +192,9 @@ Messages:
     конзолата.
   wwcInventoryError: Грешка откриена со GUI на корисник %i. Ве молиме пријавете го
     ова прашање на програмерот.
-  wwcSignTranslationFail: Не можам да преведам една или повеќе линии на вашиот целен
-    знак.
-  wwcBookTranslationFail: Не можам да преведам една или повеќе страници во вашата
-    целна книга.
   wwctiOffTarget: Точка превод оневозможени за %i.
   wwctiOffSender: Точка превод оневозможено.
   wwcItemTranslateTitleStock: Не можам да преведам стандардните имиња на ставки.
-  wwcItemTranslateLoreFail: Не успеа да се преведе ставка ученост.
-  wwcItemTranslateTitleFail: Не успеа да го преведе името на предметот.
   wwctGUIItemButton: Префрли Точка Превод
   wwcItemTranslateTitleDone: Преведено насловот на предметот успешно.
   wwcGUITempItem: точка Покажи
@@ -212,8 +205,6 @@ Messages:
   wwcItemTranslateLoreStart: Преведување на знанија на целната ставка...
   wwcItemTranslateLoreDone: Преведено точка ученост успешно.
   wwctiOnTarget: Точка превод овозможено за %i.
-  wwcBookTranslateTitleFail: Не успеа да преведе насловот на книгата.
-  wwcChatTranslationFail: Не успеа да ја преведе вашата порака.
   wwcInvalidTranslator: Неважечки поставки за преведувач. Ве молиме поправете го ова
     во вашиот config.yml или со /wwcc да го користите овој приклучок.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурација'
@@ -311,10 +302,6 @@ Messages:
     се преведува, но имате активна сесија за превод на %o.
   wwcConfigGUIChangesNotSaved: Вашите промени нема да стапат на сила додека не кликнете
     на црвената бариера во/wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Не успеа превод разговор
-    порака успешно.
-  wwcConfigGUISendFailedTranslationChatButton: Испратете порака за разговор за неуспешен
-    превод
   wwctciOffSender: Дојдовни разговор превод оневозможено.
   wwctGUIChatIncomingButton: Вклучи дојдовни разговор превод
   wwctcoOffSender: Појдовни разговор превод оневозможено.
@@ -402,3 +389,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat не беше во можност да го донесам јазици,
     и е наместо користење на бекап. Ова веројатно нема да влијае на однесувањето на
     приклучокот, но ве молиме контактирајте го инвеститорот.
+  libreHttp400: Лошо барање испратено до Либре Преведете! Освен ако не правите нешто
+    што не треба, не треба да го добиете ова. Ве молиме контактирајте го инвеститорот!
+  wwcConfigGUILibreTranslateApiKeyButton: Промена Слободен Преведете API клуч
+  libreHttp403: Недостасува Libre Преведете API клуч, или сте забранети од серверот!
+  wwcConfigConversationLibreURLSuccess: Слободен URL поставено успешно.
+  wwcConfigConversationLibreTranslateApiKeyInput: Тековниот API клуч е %i Ве молиме
+    внесете API клуч за Libre, или напишете 0 за да се вратите назад.
+  wwcConfigGUILibreTranslateButton: Слободен Преведи
+  libreHttp429: Нема доверба поради ограничување на стапката од серверот.
+  wwcConfigGUIToggleLibreTranslateButton: Вклучи слободен Преведи
+  wwcConfigConversationLibreTranslateToggleSuccess: Успешно префрли Слободен Преведи.
+    Вчитај повторно за промените да стапат на сила.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Слободен API клуч сет успешно.
+  wwcConfigConversationLibreURLInput: Тековната URL адреса е %i Ве молиме внесете
+    URL за Libre, или напишете 0 за да се вратите назад.
+  libreHttpUnknown: 'Непозната http грешка: %i'
+  wwcConfigGUILibreTranslateURLButton: Промена Слободен Преведете URL

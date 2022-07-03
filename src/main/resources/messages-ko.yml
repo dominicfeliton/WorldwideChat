@@ -40,7 +40,6 @@ Messages:
   wwctGUISignButton: 기호 변환 토글
   wwcUpdaterOutOfDate: 월드와이드채팅이 오래되었습니다.최신 버전 %i (으) 로 업데이트하십시오.
   wwcConfigGUINextPageButton: 다음 페이지
-  wwctbTranslatePageFail: (이 페이지를 번역하지 못했습니다) %i
   wwcConfigInvalidTranslatorSettings: 잘못된 번역기 설정!config.yml에서 하나의 번역기만 활성화하십시오.
   wwcConfigGUIQuitButton: 종료 및 변경 사항 저장
   wwctPlayerNotFound: 플레이어 %을 (를) 찾을 수 없습니다.
@@ -151,13 +150,9 @@ Messages:
   wwcConfigCacheInvalid: 변환기 캐시 크기가 잘못되었습니다.기본값 10으로 설정 중...
   wwcInventoryErrorPlayer: GUI에서 오류가 감지되었습니다.로그가 콘솔로 전송되었습니다.
   wwcInventoryError: '%i 사용자의 GUI에서 오류가 발견되었습니다. 이 문제를 개발자에게 보고하십시오.'
-  wwcSignTranslationFail: 대상 기호에서 하나 이상의 줄을 번역할 수 없습니다.
-  wwcBookTranslationFail: 대상 책에서 하나 이상의 페이지를 번역할 수 없습니다.
   wwctiOffTarget: '%i에 대해 항목 번역이 비활성화되었습니다.'
   wwctiOffSender: 항목 번역이 비활성화되었습니다.
   wwcItemTranslateTitleStock: 기본 항목 이름을 번역할 수 없습니다.
-  wwcItemTranslateLoreFail: 항목 로어를 번역하지 못했습니다.
-  wwcItemTranslateTitleFail: 항목 이름을 번역하지 못했습니다.
   wwctGUIItemButton: 항목 번역 토글
   wwcItemTranslateTitleDone: 번역된 항목 제목입니다.
   wwcGUITempItem: 항목 표시
@@ -167,8 +162,6 @@ Messages:
   wwcItemTranslateLoreStart: 대상 항목의 로어 번역 중...
   wwcItemTranslateLoreDone: 번역된 항목 로어가 성공했습니다.
   wwctiOnTarget: '%i에 대해 항목 변환이 활성화되었습니다.'
-  wwcBookTranslateTitleFail: 책 제목을 번역하지 못했습니다.
-  wwcChatTranslationFail: 메시지를 번역하지 못했습니다.
   wwcInvalidTranslator: 번역기 설정이 잘못되었습니다.이 플러그인을 사용하려면 config.yml 또는 /wwcc에서 수정하십시오.
   wwcConfigGUIEachTranslatorSettings: '%i 구성'
   wwcConfigGUIWatsonButton: 왓슨
@@ -243,8 +236,6 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 글로벌 채팅이 번역되고 있지만 %o에
     대한 번역 세션이 활성화되어 있습니다.
   wwcConfigGUIChangesNotSaved: /wwcc에서 빨간색 장벽을 클릭하기 전까지는 변경 사항이 적용되지 않습니다.
-  wwcConfigConversationSendFailedTranslationChatSuccess: 실패한 번역 채팅 메시지가 성공적으로 전환되었습니다.
-  wwcConfigGUISendFailedTranslationChatButton: 번역 실패시 채팅 메시지 보내기
   wwctciOffSender: 수신 채팅 번역이 비활성화되었습니다.
   wwctGUIChatIncomingButton: 수신 채팅 번역 전환
   wwctcoOffSender: 발신 채팅 번역이 비활성화되었습니다.
@@ -319,3 +310,19 @@ Messages:
   wwcTimeoutException: 명령 시간이 초과되었습니다.다시 시도해 주세요.
   wwcBackupLangCodesWarning: WorldwideChat은 언어를 가져올 수 없었고 대신 백업을 사용하고 있습니다.플러그인 동작에는
     영향을 미치지 않을 수 있지만 개발자에게 문의하십시오.
+  libreHttp400: 잘못된 요청이 전송되었습니다. 무료 번역!하지 말아야 할 일을 하지 않는 한, 이걸 얻어서는 안 됩니다.개발자에게 문의하세요!
+  wwcConfigGUILibreTranslateApiKeyButton: 무료 번역 API 키 변경
+  libreHttp403: 무료 번역 API 키가 없거나 서버에서 금지되었습니다!
+  wwcConfigConversationLibreURLSuccess: 자유 URL을 성공적으로 설정했습니다.
+  wwcConfigConversationLibreTranslateApiKeyInput: 현재 API 키는 %i입니다. Libre의 API 키를 입력하거나
+    뒤로 돌아가려면 0을 입력하십시오.
+  wwcConfigGUILibreTranslateButton: 리브레 번역
+  libreHttp429: 서버의 속도 제한으로 인해 확신이 없습니다.
+  wwcConfigGUIToggleLibreTranslateButton: 무료 번역 토글
+  wwcConfigConversationLibreTranslateToggleSuccess: 무료 번역을 토글했습니다.변경 사항을 적용하려면 다시
+    로드합니다.
+  wwcConfigConversationLibreTranslateApiKeySuccess: 자유 API 키가 성공적으로 설정되었습니다.
+  wwcConfigConversationLibreURLInput: 현재 URL은 %i입니다. Libre의 URL을 입력하거나 뒤로 돌아가려면 0을
+    입력하십시오.
+  libreHttpUnknown: '알 수 없는 http 오류: %i'
+  wwcConfigGUILibreTranslateURLButton: 무료 번역 URL 변경

@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: Vaihda allekirjoittaa käännös
   wwcUpdaterOutOfDate: WorldwideChat on vanhentunut. Päivitä uusimpaan versioon, %i.
   wwcConfigGUINextPageButton: Seuraava sivu
-  wwctbTranslatePageFail: (Tämän sivun kääntäminen epäonnistui) %i
   wwcConfigInvalidTranslatorSettings: Virheelliset kääntäjän asetukset! Ota käyttöön
     vain yksi kääntäjä config.yml.
   wwcConfigGUIQuitButton: Poistu ja tallenna muutokset
@@ -183,13 +182,9 @@ Messages:
     lähetetty loki.
   wwcInventoryError: 'Virhe havaittu käyttäjä %i: n käyttöliittymän yhteydessä. Ilmoita
     tästä ongelmasta kehittäjälle.'
-  wwcSignTranslationFail: Yhtä tai useampaa riviä ei voi kääntää kohdemerkissä.
-  wwcBookTranslationFail: Yhtä tai useampaa sivua ei voi kääntää kohderyhmässä.
   wwctiOffTarget: Kohteen käännös käytöstä kohteella %i.
   wwctiOffSender: Kohteen käännös käytöstä.
   wwcItemTranslateTitleStock: Oletusnimien nimiä ei voi kääntää.
-  wwcItemTranslateLoreFail: Kohteen lore kääntäminen epäonnistui.
-  wwcItemTranslateTitleFail: Nimikkeen nimen kääntäminen epäonnistui.
   wwctGUIItemButton: Vaihda kohteen käännös
   wwcItemTranslateTitleDone: Käännetty kohteen otsikko onnistuneesti.
   wwcGUITempItem: Kohteen näyttö
@@ -200,8 +195,6 @@ Messages:
   wwcItemTranslateLoreStart: Kääntäminen Lore kohdekohteen...
   wwcItemTranslateLoreDone: Käännetty kohde Lore onnistuneesti.
   wwctiOnTarget: Kohteen käännös käytössä kohteella %i.
-  wwcBookTranslateTitleFail: Kirjan nimen kääntäminen epäonnistui.
-  wwcChatTranslationFail: Viestin kääntäminen epäonnistui.
   wwcInvalidTranslator: Kääntäjän asetukset eivät kelpaa. Korjaa tämä config.yml tai
     /wwcc käyttää tätä plugin.
   wwcConfigGUIEachTranslatorSettings: '%i määritykset'
@@ -294,10 +287,6 @@ Messages:
     käännetään, mutta sinulla on aktiivinen käännösistunto kohteeseen %o.
   wwcConfigGUIChangesNotSaved: Muutokset tulevat voimaan vasta, kun napsautat punaista
     estettä /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Epäonnistui käännöskeskusteluviesti
-    vaihdettiin onnistuneesti.
-  wwcConfigGUISendFailedTranslationChatButton: Lähetä chat-viesti epäonnistuneesta
-    käännöksestä
   wwctciOffSender: Saapuva chat-käännös poistettu käytöstä.
   wwctGUIChatIncomingButton: Vaihda Saapuva Chat Käännös
   wwctcoOffSender: Lähtevä chat-käännös poistettu käytöstä.
@@ -381,3 +370,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat ei pystynyt hakemaan kieliä, ja käyttää
     sen sijaan varmuuskopioita. Tämä ei todennäköisesti vaikuta laajennuksen käyttäytymiseen,
     mutta ota yhteyttä kehittäjään.
+  libreHttp400: Huono pyyntö lähetetty Libre Translate -sivustolle! Ellet tee jotain,
+    mitä sinun ei pitäisi, sinun ei pitäisi saada tätä. Ota yhteyttä kehittäjään!
+  wwcConfigGUILibreTranslateApiKeyButton: Muuta Libre Käännä API-avain
+  libreHttp403: Missing Libre Translate API Key, tai olet kielletty palvelimelta!
+  wwcConfigConversationLibreURLSuccess: Libre URL asetettu onnistuneesti.
+  wwcConfigConversationLibreTranslateApiKeyInput: Nykyinen API-avain on %i. Anna Libre-sovellusliittymän
+    avain tai kirjoita 0 palataksesi takaisin.
+  wwcConfigGUILibreTranslateButton: Libre Käännä
+  libreHttp429: Ei luottamusta palvelimen nopeusrajan vuoksi.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Käännä
+  wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate onnistui vaihtamaan.
+    Lataa uudelleen, jotta muutokset tulevat voimaan.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API -näppäin asetettu onnistuneesti.
+  wwcConfigConversationLibreURLInput: Nykyinen URL-osoite on %i. Anna Libren URL-osoite
+    tai kirjoita 0 palataksesi takaisin.
+  libreHttpUnknown: 'Tuntematon http-virhe: %i'
+  wwcConfigGUILibreTranslateURLButton: Change Libre Käännä URL

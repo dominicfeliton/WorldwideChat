@@ -46,7 +46,6 @@ Messages:
   wwctGUISignButton: Переключить перевод знака
   wwcUpdaterOutOfDate: WorldwideChat устарел. Обновите до последней версии %i.
   wwcConfigGUINextPageButton: Следующая страница
-  wwctbTranslatePageFail: (Не удалось перевести эту страницу) %i
   wwcConfigInvalidTranslatorSettings: Недопустимые настройки переводчика! Пожалуйста,
     включите только один переводчик в вашем config.yml.
   wwcConfigGUIQuitButton: Выход и сохранение изменений
@@ -190,15 +189,9 @@ Messages:
     отправлен журнал.
   wwcInventoryError: Обнаружена ошибка с графическим интерфейсом пользователя %i.
     Сообщите об этой проблеме разработчику.
-  wwcSignTranslationFail: Невозможно перевести одну или несколько строк на целевом
-    знаке.
-  wwcBookTranslationFail: Невозможно перевести одну или несколько страниц целевой
-    книги.
   wwctiOffTarget: Перевод элементов отключен для %i.
   wwctiOffSender: Перевод элементов отключен.
   wwcItemTranslateTitleStock: Невозможно перевести имена элементов по умолчанию.
-  wwcItemTranslateLoreFail: Не удалось перевести предметы.
-  wwcItemTranslateTitleFail: Не удалось перевести имя элемента.
   wwctGUIItemButton: Перевод элементов
   wwcItemTranslateTitleDone: Заголовок переведенного элемента успешно.
   wwcGUITempItem: Отображение товара
@@ -209,8 +202,6 @@ Messages:
   wwcItemTranslateLoreStart: Перевод краеведения целевого предмета...
   wwcItemTranslateLoreDone: Переведенный предмет успешно завершен.
   wwctiOnTarget: Перевод элементов включен для %i.
-  wwcBookTranslateTitleFail: Не удалось перевести название книги.
-  wwcChatTranslationFail: Не удалось перевести сообщение.
   wwcInvalidTranslator: Неверные настройки переводчика. Пожалуйста, исправьте это
     в своем config.yml или с помощью /wwcc, чтобы использовать этот плагин.
   wwcConfigGUIEachTranslatorSettings: '%i Конфигурация'
@@ -306,10 +297,6 @@ Messages:
     но у вас есть активный сеанс перевода на %o.
   wwcConfigGUIChangesNotSaved: Ваши изменения не вступят в силу, пока вы не нажмете
     на красный барьер в /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Сообщение в чате с неудачным
-    переводом успешно переключено.
-  wwcConfigGUISendFailedTranslationChatButton: Отправить сообщение в чате о неудачном
-    переводе
   wwctciOffSender: Перевод входящего чата отключен.
   wwctGUIChatIncomingButton: Переключить перевод входящего чата
   wwctcoOffSender: Перевод исходящего чата отключен.
@@ -393,3 +380,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat не удалось получить языки и вместо этого
     использует резервные копии. Вероятно, это не повлияет на поведение плагина, но
     обратитесь к разработчику.
+  libreHttp400: Неверный запрос отправлен в Libre Translate! Если вы не делаете то,
+    чего не должны делать, вы не должны этого делать. Обратитесь к разработчику!
+  wwcConfigGUILibreTranslateApiKeyButton: Изменить ключ API перевода Libre
+  libreHttp403: Отсутствует ключ API Libre Translate, или вас забанили на сервере!
+  wwcConfigConversationLibreURLSuccess: URL-адрес Libre успешно установлен.
+  wwcConfigConversationLibreTranslateApiKeyInput: Текущий ключ API %i. Введите ключ
+    API для Libre или введите 0, чтобы вернуться назад.
+  wwcConfigGUILibreTranslateButton: Libre Перевести
+  libreHttp429: Отсутствие доверия из-за ограничения скорости со стороны сервера.
+  wwcConfigGUIToggleLibreTranslateButton: Переключить Libre Перевести
+  wwcConfigConversationLibreTranslateToggleSuccess: Перевод Libre успешно переключен.
+    Перезагрузите, чтобы изменения вступили в силу.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Ключ Libre API успешно установлен.
+  wwcConfigConversationLibreURLInput: Текущий URL-адрес %i. Введите URL-адрес для
+    Libre или введите 0, чтобы вернуться назад.
+  libreHttpUnknown: 'Неизвестная ошибка http: %i'
+  wwcConfigGUILibreTranslateURLButton: Изменить URL-адрес перевода Libre

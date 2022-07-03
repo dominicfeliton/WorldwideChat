@@ -46,7 +46,6 @@ Messages:
   wwcUpdaterOutOfDate: વર્લ્ડવાઇડચેટ આઉટ ઓફ ડેટ છે. મહેરબાની કરીને નવીનતમ સંસ્કરણ
     પર અપડેટ કરો, %i.
   wwcConfigGUINextPageButton: આગલું પૃષ્ઠ
-  wwctbTranslatePageFail: (આ પાનું અનુવાદિત કરવામાં નિષ્ફળ) %i
   wwcConfigInvalidTranslatorSettings: અમાન્ય અનુવાદક સેટિંગ્સ! કૃપા કરીને તમારા config.yml
     માં ફક્ત એક અનુવાદકને સક્ષમ કરો.
   wwcConfigGUIQuitButton: બહાર નીકળો અને ફેરફારો સાચવો
@@ -179,15 +178,9 @@ Messages:
     છે.
   wwcInventoryError: વપરાશકર્તા %i ના GUI સાથે શોધાયેલ ભૂલ કૃપા કરીને વિકાસકર્તાને
     આ સમસ્યાની જાણ કરો.
-  wwcSignTranslationFail: તમારા લક્ષ્ય ચિહ્ન પર એક અથવા વધુ લીટીઓનું અનુવાદ કરવામાં
-    અસમર્થ.
-  wwcBookTranslationFail: તમારા લક્ષ્ય પુસ્તકમાં એક અથવા વધુ પૃષ્ઠોનું અનુવાદ કરવામાં
-    અસમર્થ.
   wwctiOffTarget: આઇટમ અનુવાદ %i માટે અક્ષમ છે.
   wwctiOffSender: આઇટમ અનુવાદ અક્ષમ.
   wwcItemTranslateTitleStock: ડિફૉલ્ટ આઇટમ નામોનું ભાષાંતર કરવામાં અસમર્થ.
-  wwcItemTranslateLoreFail: આઇટમ લૉર અનુવાદિત કરવામાં નિષ્ફળ.
-  wwcItemTranslateTitleFail: આઇટમનું નામ અનુવાદિત કરવામાં નિષ્ફળ થયું.
   wwctGUIItemButton: ટૉગલ આઇટમ અનુવાદ
   wwcItemTranslateTitleDone: અનુવાદિત આઇટમ શીર્ષક સફળતાપૂર્વક.
   wwcGUITempItem: આઇટમ દર્શાવો
@@ -198,8 +191,6 @@ Messages:
   wwcItemTranslateLoreStart: લક્ષ્ય આઇટમની ભાષાંતરની...
   wwcItemTranslateLoreDone: અનુવાદિત આઇટમ સફળતાપૂર્વક.
   wwctiOnTarget: આઇટમ અનુવાદ %i માટે સક્ષમ.
-  wwcBookTranslateTitleFail: પુસ્તક શીર્ષકનું ભાષાંતર કરવામાં નિષ્ફળ થયું.
-  wwcChatTranslationFail: તમારા સંદેશનું ભાષાંતર કરવામાં નિષ્ફળ થયું.
   wwcInvalidTranslator: અમાન્ય અનુવાદક સેટિંગ્સ. કૃપા કરીને આ પલ્ગઇનની વાપરવા માટે
     તમારા config.yml અથવા સાથે/wwcc માં ઠીક કરો.
   wwcConfigGUIEachTranslatorSettings: '%i રૂપરેખાંકન'
@@ -294,9 +285,6 @@ Messages:
     થઈ રહ્યું છે, પરંતુ તમારા %o નું સક્રિય અનુવાદ સત્ર છે.
   wwcConfigGUIChangesNotSaved: જ્યાં સુધી તમે /wwccમાં લાલ અવરોધ પર ક્લિક ન કરો ત્યાં
     સુધી તમારા ફેરફારો પ્રભાવિત થશે નહીં.
-  wwcConfigConversationSendFailedTranslationChatSuccess: નિષ્ફળ અનુવાદ ચેટ સંદેશ સફળતાપૂર્વક
-    ટૉગલ કર્યો.
-  wwcConfigGUISendFailedTranslationChatButton: નિષ્ફળ અનુવાદ પર ચેટ સંદેશ મોકલો
   wwctciOffSender: ઇનકમિંગ ચેટનું ભાષાંતર અક્ષમ કર્યું.
   wwctGUIChatIncomingButton: ઇનકમિંગ ચેટ અનુવાદ ટૉગલ
   wwctcoOffSender: આઉટગોઇંગ ચેટનું ભાષાંતર અક્ષમ કર્યું.
@@ -381,3 +369,22 @@ Messages:
   wwcBackupLangCodesWarning: વિશ્વવિડચેટ ભાષાઓ લાવવામાં અસમર્થ હતું, અને તેના બદલે
     બેકઅપ્સનો ઉપયોગ કરી રહ્યું છે. આ કદાચ પ્લગઇન વર્તનને અસર કરશે નહીં, પરંતુ કૃપા
     કરીને વિકાસકર્તાનો સંપર્ક કરો.
+  libreHttp400: ખરાબ વિનંતી લિબ્રે અનુવાદ મોકલવામાં! જ્યાં સુધી તમે કંઈક કરી રહ્યા
+    ન હોવ જે તમારે ન કરવું જોઈએ, તમારે આ ન મેળવવું જોઈએ. કૃપા કરીને વિકાસકર્તાનો સંપર્ક
+    કરો!
+  wwcConfigGUILibreTranslateApiKeyButton: નિઃશુલ્ક બદલો API કી અનુવાદ
+  libreHttp403: લિબ્રે ભાષાંતર API કી ખૂટે છે, અથવા તમને સર્વરથી પ્રતિબંધિત છે!
+  wwcConfigConversationLibreURLSuccess: નિઃશુલ્ક URL સફળતાપૂર્વક સેટ.
+  wwcConfigConversationLibreTranslateApiKeyInput: વર્તમાન API કી %i છે મહેરબાની કરીને
+    લિબ્રે માટે API કી ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigGUILibreTranslateButton: નિઃશુલ્ક અનુવાદ
+  libreHttp429: સર્વરથી દર મર્યાદાને કારણે કોઈ વિશ્વાસ નથી.
+  wwcConfigGUIToggleLibreTranslateButton: મફત ટૉગલ અનુવાદ
+  wwcConfigConversationLibreTranslateToggleSuccess: સફળતાપૂર્વક લિબ્રે અનુવાદને ટૉગલ
+    કર્યું. ફેરફારોને પ્રભાવમાં લાવવા માટે ફરીથી લોડ કરો.
+  wwcConfigConversationLibreTranslateApiKeySuccess: નિઃશુલ્ક API કી સફળતાપૂર્વક સેટ
+    કરો.
+  wwcConfigConversationLibreURLInput: વર્તમાન URL %i છે મહેરબાની કરીને લિબ્રે માટે
+    URL ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
+  libreHttpUnknown: 'અજ્ઞાત HTTP ભૂલ: %i'
+  wwcConfigGUILibreTranslateURLButton: મફત URL નું ભાષાંતર બદલો

@@ -49,7 +49,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat դուրս օրվանից. Խնդրում ենք թարմացնել վերջին տարբերակը,
     %i.
   wwcConfigGUINextPageButton: Հաջորդ էջը
-  wwctbTranslatePageFail: (Չհաջողվեց թարգմանել այս էջը) %i
   wwcConfigInvalidTranslatorSettings: Անվավեր թարգմանիչ պարամետրերը! Խնդրում ենք միացնել
     միայն մեկ թարգմանիչ Ձեր config.yml.
   wwcConfigGUIQuitButton: Ելք եւ փրկել փոփոխությունները
@@ -191,13 +190,9 @@ Messages:
     մխիթարել.
   wwcInventoryError: '%i օգտագործողի GUI- ի հետ հայտնաբերված սխալը: Խնդրում ենք այս
     հարցը զեկուցել մշակողին:'
-  wwcSignTranslationFail: Անհնար է թարգմանել մեկ կամ ավելի գծեր ձեր թիրախային նշանի.
-  wwcBookTranslationFail: Անհնար է թարգմանել մեկ կամ ավելի էջեր ձեր թիրախային գրքում.
   wwctiOffTarget: Նյութի թարգմանությունը անջատված է համար %i.
   wwctiOffSender: Նյութի թարգմանությունը անջատված.
   wwcItemTranslateTitleStock: Անհնար է թարգմանել լռելյայն տարրերի
-  wwcItemTranslateLoreFail: Չհաջողվեց թարգմանել նյութը Lore.
-  wwcItemTranslateTitleFail: 'Չհաջողվեց թարգմանել տարրի անունը:'
   wwctGUIItemButton: Toggle Նյութի թարգմանություն
   wwcItemTranslateTitleDone: Թարգմանված նյութի վերնագիրը հաջողությամբ
   wwcGUITempItem: Նյութի Ցուցադրել
@@ -208,8 +203,6 @@ Messages:
   wwcItemTranslateLoreStart: Թարգմանություն թիրախային կետի...
   wwcItemTranslateLoreDone: Թարգմանված նյութը Lore հաջողությամբ.
   wwctiOnTarget: Նյութի թարգմանությունը միացված է %i համար։
-  wwcBookTranslateTitleFail: Չհաջողվեց թարգմանել գրքի կոչումը.
-  wwcChatTranslationFail: 'Չհաջողվեց թարգմանել ձեր հաղորդագրությունը:'
   wwcInvalidTranslator: 'Անվավեր թարգմանիչ պարամետրերը: Խնդրում ենք ամրագրել այս ձեր
     config.yml կամ /wwcc օգտագործել այս plugin.'
   wwcConfigGUIEachTranslatorSettings: '%i կոնֆիգուրացիա'
@@ -306,10 +299,6 @@ Messages:
     է, բայց դուք ունեք ակտիվ թարգմանության նիստ է %o.
   wwcConfigGUIChangesNotSaved: Ձեր փոփոխությունները չեն ուժի մեջ մտնելու, քանի դեռ
     դուք սեղմեք կարմիր արգելքը /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Ձախողված թարգմանությունը
-    Վիճակագրություն հաղորդագրություն toggled հաջողությամբ.
-  wwcConfigGUISendFailedTranslationChatButton: Ուղարկեք Զրուցարան հաղորդագրություն
-    ձախողված թարգմանության մասին
   wwctciOffSender: 'Մուտքային Վիճակագրություն թարգմանությունը անջատված է:'
   wwctGUIChatIncomingButton: Toggle Մուտքային Զրուցարան Թարգմանություն
   wwctcoOffSender: Արտագնա Վիճակագրություն թարգմանություն անջատված.
@@ -398,3 +387,20 @@ Messages:
   wwcBackupLangCodesWarning: 'WorldwideChat չի կարողացել ստանալ լեզուներ, եւ դրա փոխարեն,
     օգտագործելով backups. Սա, հավանաբար, չի ազդի plugin վարքի վրա, բայց խնդրում ենք
     կապվել մշակողի հետ:'
+  libreHttp400: 'Վատ խնդրանքը ուղարկվել է Libre Թարգմանել! Եթե դուք անում մի բան,
+    որ դուք չպետք է, Դուք չպետք է ստանալ այս. Խնդրում ենք կապնվել մշակողի հետ:'
+  wwcConfigGUILibreTranslateApiKeyButton: Փոխել ազատ Թարգմանել API Key
+  libreHttp403: Missing Libre Թարգմանել API Key, կամ դուք արգելված է սերվերի!
+  wwcConfigConversationLibreURLSuccess: Ազատ URL սահմանել հաջողությամբ.
+  wwcConfigConversationLibreTranslateApiKeyInput: 'Ներկայիս API ստեղնը %i է: Խնդրում
+    ենք մուտքագրել API ստեղնը Libre- ի համար, կամ մուտքագրել 0, վերադառնալ:'
+  wwcConfigGUILibreTranslateButton: Ազատ Թարգմանել
+  libreHttp429: Վստահություն սերվերից փոխարժեքի սահմանաչափի պատճառով.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle անվճար թարգմանել
+  wwcConfigConversationLibreTranslateToggleSuccess: 'Հաջողությամբ toggled Libre Թարգմանել.
+    Վերբեռնել փոփոխությունների ուժի մեջ մտնելու համար:'
+  wwcConfigConversationLibreTranslateApiKeySuccess: Ազատ API բանալին սահմանվել հաջողությամբ.
+  wwcConfigConversationLibreURLInput: 'Ներկայիս URL- ն %i է: Խնդրում ենք մուտքագրել
+    URL Libre- ի համար, կամ մուտքագրել 0 ՝ վերադառնալու համար:'
+  libreHttpUnknown: 'Անհայտ http սխալ: %i'
+  wwcConfigGUILibreTranslateURLButton: Փոխել ազատ Թարգմանել URL

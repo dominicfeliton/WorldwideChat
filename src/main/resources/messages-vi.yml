@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat đã lỗi thời. Vui lòng cập nhật lên phiên bản
     mới nhất, %i.
   wwcConfigGUINextPageButton: Trang tiếp theo
-  wwctbTranslatePageFail: (Không dịch được trang này) %i
   wwcConfigInvalidTranslatorSettings: Cài đặt dịch giả không hợp lệ! Vui lòng kích
     hoạt chỉ một trình dịch trong config.yml của bạn.
   wwcConfigGUIQuitButton: Thoát & Lưu Thay đổi
@@ -189,15 +188,9 @@ Messages:
     đến giao diện điều khiển.
   wwcInventoryError: Phát hiện lỗi với GUI của người dùng %i. Vui lòng báo cáo vấn
     đề này cho nhà phát triển.
-  wwcSignTranslationFail: Không thể dịch một hoặc nhiều dòng trên dấu hiệu mục tiêu
-    của bạn.
-  wwcBookTranslationFail: Không thể dịch một hoặc nhiều trang trong sách mục tiêu
-    của bạn.
   wwctiOffTarget: Mục dịch vô hiệu hóa cho %i.
   wwctiOffSender: Bản dịch mục bị vô hiệu hóa.
   wwcItemTranslateTitleStock: Không thể dịch tên mục mặc định.
-  wwcItemTranslateLoreFail: Thất bại trong việc dịch mục truyền thuyết.
-  wwcItemTranslateTitleFail: Không thể dịch tên mục.
   wwctGUIItemButton: Chuyển đổi mục dịch
   wwcItemTranslateTitleDone: Đã dịch tiêu đề mục thành công.
   wwcGUITempItem: Mục Hiển thị
@@ -208,8 +201,6 @@ Messages:
   wwcItemTranslateLoreStart: Dịch truyền thuyết của mục tiêu...
   wwcItemTranslateLoreDone: Dịch mục truyền thuyết thành công.
   wwctiOnTarget: Mục dịch được kích hoạt cho %i.
-  wwcBookTranslateTitleFail: Thất bại trong việc dịch tiêu đề sách.
-  wwcChatTranslationFail: Không dịch được thư của bạn.
   wwcInvalidTranslator: Cài đặt dịch không hợp lệ. Vui lòng sửa lỗi này trong config.yml
     của bạn hoặc với /wwccc để sử dụng plugin này.
   wwcConfigGUIEachTranslatorSettings: '%i Cấu hình'
@@ -305,10 +296,6 @@ Messages:
     đang được dịch, nhưng bạn có phiên dịch đang hoạt động đến %o.
   wwcConfigGUIChangesNotSaved: Thay đổi của bạn sẽ không có hiệu lực cho đến khi bạn
     nhấp vào hàng rào màu đỏ trong /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Không thành công tin nhắn
-    trò chuyện dịch chuyển đổi thành công.
-  wwcConfigGUISendFailedTranslationChatButton: Gửi tin nhắn trò chuyện về dịch không
-    thành công
   wwctciOffSender: Bản dịch trò chuyện đến bị vô hiệu hóa.
   wwctGUIChatIncomingButton: Chuyển đổi bản dịch trò chuyện đến
   wwctcoOffSender: Dịch trò chuyện đi bị vô hiệu hóa.
@@ -393,3 +380,22 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat đã không thể lấy ngôn ngữ, và thay vào
     đó là sử dụng bản sao lưu. Điều này có thể sẽ không ảnh hưởng đến hành vi của
     plugin, nhưng vui lòng liên hệ với nhà phát triển.
+  libreHttp400: Yêu cầu xấu gửi đến Libre Dịch! Trừ khi bạn đang làm điều gì đó mà
+    bạn không nên, bạn không nên nhận được điều này. Vui lòng liên hệ với nhà phát
+    triển!
+  wwcConfigGUILibreTranslateApiKeyButton: Thay đổi Libre Translate API Key
+  libreHttp403: Thiếu Libre Dịch API Key, hoặc bạn bị cấm từ máy chủ!
+  wwcConfigConversationLibreURLSuccess: Tự do URL thiết lập thành công.
+  wwcConfigConversationLibreTranslateApiKeyInput: Khóa API hiện tại là %i. Vui lòng
+    nhập một khóa API cho Libre, hoặc gõ 0 để quay lại.
+  wwcConfigGUILibreTranslateButton: Libre Translate
+  libreHttp429: Không tự tin do giới hạn tốc độ từ máy chủ.
+  wwcConfigGUIToggleLibreTranslateButton: Bật tắt Libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Bật thành công Libre Translate.
+    Tải lại để các thay đổi có hiệu lực.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Tự do API khóa thiết lập thành
+    công.
+  wwcConfigConversationLibreURLInput: URL hiện tại là %i. Vui lòng nhập URL cho Libre,
+    hoặc gõ 0 để quay lại.
+  libreHttpUnknown: 'Lỗi http không xác định: %i'
+  wwcConfigGUILibreTranslateURLButton: Thay đổi URL Dịch tự do

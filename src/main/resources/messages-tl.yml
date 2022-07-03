@@ -50,7 +50,6 @@ Messages:
   wwcUpdaterOutOfDate: Ang WorldwideChat ay wala na sa petsa. Paki-update sa pinakabagong
     bersiyon, %i.
   wwcConfigGUINextPageButton: Susunod na Pahina
-  wwctbTranslatePageFail: (Nabigong isalin ang pahinang ito) %i
   wwcConfigInvalidTranslatorSettings: Di-wastong mga setting ng tagasalin! Mangyaring
     paganahin lamang ang isang tagasalin sa iyong config.yml.
   wwcConfigGUIQuitButton: Lumabas at I-save ang Mga Pagbab
@@ -199,15 +198,9 @@ Messages:
     sa console.
   wwcInventoryError: Error na nakita sa GUI ng tagagamit na %i. Pakiulat ang isyung
     ito sa developer.
-  wwcSignTranslationFail: Hindi ma-translate ang isa o higit pang mga linya sa iyong
-    target sign.
-  wwcBookTranslationFail: Hindi ma-translate ang isa o higit pang mga pahina sa iyong
-    target na aklat.
   wwctiOffTarget: Hindi pinagana ang pagsasalin ng item para sa %i.
   wwctiOffSender: Hindi pinagana ang pagsasalin ng item.
   wwcItemTranslateTitleStock: Hindi ma-translate ang mga default na pangalan ng item.
-  wwcItemTranslateLoreFail: Nabigong i-translate ang tradisyon ng item.
-  wwcItemTranslateTitleFail: Nabigong i-translate ang pangalan ng item.
   wwctGUIItemButton: I-toggle ang Pagsasalin ng Item
   wwcItemTranslateTitleDone: Matagumpay na isinalin item pamagat.
   wwcGUITempItem: Item Display
@@ -218,8 +211,6 @@ Messages:
   wwcItemTranslateLoreStart: Pagsasalin ng tradisyonal na kaalaman ng target na item...
   wwcItemTranslateLoreDone: Matagumpay na isinalin item tradisyonal na kaalaman
   wwctiOnTarget: Pinagana ang pagsasalin ng item para sa %i.
-  wwcBookTranslateTitleFail: Nabigong i-translate ang pamagat ng libro.
-  wwcChatTranslationFail: Nabigong i-translate ang iyong mensahe.
   wwcInvalidTranslator: Di-wastong mga setting ng tagasalin. Mangyaring ayusin ito
     sa iyong config.yml o sa /wwcc upang magamit ang plugin na ito.
   wwcConfigGUIEachTranslatorSettings: '%i Pagsasaayos'
@@ -326,10 +317,6 @@ Messages:
     chat, ngunit mayroon kang aktibong sesyon ng pagsasalin sa %o.
   wwcConfigGUIChangesNotSaved: Ang iyong mga pagbabago ay hindi magkakabisa hanggang
     sa mag-click ka sa pulang hadlang sa /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Matagumpay na na-toggled
-    ang mensahe ng chat sa pagsasalin.
-  wwcConfigGUISendFailedTranslationChatButton: Magpadala ng Chat Message sa Nabigong
-    Pagsasalin
   wwctciOffSender: Hindi pinagana ang pagsasalin ng papasok na chat.
   wwctGUIChatIncomingButton: I-toggle ang Incoming Chat Translation
   wwctcoOffSender: Hindi pinagana ang pagsasalin ng papalabas na chat.
@@ -426,3 +413,23 @@ Messages:
   wwcBackupLangCodesWarning: Hindi nakuha ng WorldwideChat ang mga wika, at sa halip
     ay gumagamit ng mga backup. Marahil ito ay hindi makakaapekto sa pag-uugali ng
     plugin, ngunit mangyaring makipag-ugnay sa developer.
+  libreHttp400: Masamang kahilingan ipinadala sa Libre Translate! Maliban kung ikaw
+    ay gumagawa ng isang bagay na hindi mo dapat, hindi mo dapat makuha ito. Mangyaring
+    makipag-ugnay sa developer!
+  wwcConfigGUILibreTranslateApiKeyButton: Baguhin ang Libre Isalin API Key
+  libreHttp403: Nawawalang Libre Translate API Key, o ikaw ay pinagbawalan mula sa
+    server!
+  wwcConfigConversationLibreURLSuccess: Matagumpay na itinakda ang Libreng URL.
+  wwcConfigConversationLibreTranslateApiKeyInput: Ang kasalukuyang API key ay %i.
+    Pakipasok ang API key para sa Libre, o i-type ang 0 upang bumalik.
+  wwcConfigGUILibreTranslateButton: Libre Translate
+  libreHttp429: Walang kumpiyansa dahil sa limitasyon ng rate mula sa server.
+  wwcConfigGUIToggleLibreTranslateButton: I-toggle Libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Matagumpay na toggled Libre Translate.
+    I-reload para magkabisa ang mga pagbabago.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Matagumpay na itinakda ang Libreng
+    API key.
+  wwcConfigConversationLibreURLInput: Ang kasalukuyang URL ay %i. Pakipasok ang URL
+    para sa Libre, o i-type ang 0 upang bumalik.
+  libreHttpUnknown: 'Hindi kilalang http error: %i'
+  wwcConfigGUILibreTranslateURLButton: Baguhin Libre Translate URL

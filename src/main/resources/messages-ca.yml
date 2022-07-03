@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat està fora de data. Si us plau, actualitzeu a
     l'última versió, %i.
   wwcConfigGUINextPageButton: Pàgina següent
-  wwctbTranslatePageFail: (No s'ha pogut traduir aquesta pàgina) %i
   wwcConfigInvalidTranslatorSettings: Configuració del traductor no vàlid! Si us plau,
     habiliteu només un traductor a la vostra config.yml.
   wwcConfigGUIQuitButton: Sortir i desar els canvis
@@ -193,13 +192,9 @@ Messages:
     a la consola.
   wwcInventoryError: S'ha detectat un error amb la IGU de l'usuari %i, si us plau,
     informeu d'aquest problema al desenvolupador
-  wwcSignTranslationFail: No es pot traduir una o més línies al signe de destinació.
-  wwcBookTranslationFail: No es pot traduir una o més pàgines al llibre de destinació.
   wwctiOffTarget: Traducció d'elements desactivats per %i.
   wwctiOffSender: Traducció d'elements desactivats.
   wwcItemTranslateTitleStock: No es pot traduir els noms d'element predeterminats.
-  wwcItemTranslateLoreFail: No s'ha pogut traduir l'element lore.
-  wwcItemTranslateTitleFail: No s'ha pogut traduir el nom de l'element.
   wwctGUIItemButton: Commuta la traducció de l'element
   wwcItemTranslateTitleDone: Títol de l'article traduït amb èxit.
   wwcGUITempItem: Pantalla de l'article
@@ -210,8 +205,6 @@ Messages:
   wwcItemTranslateLoreStart: Traduint la tradició de l'objecte objectiu...
   wwcItemTranslateLoreDone: Lore article traduït amb èxit.
   wwctiOnTarget: La traducció d'elements activada per a %i.
-  wwcBookTranslateTitleFail: No s'ha pogut traduir el títol del llibre.
-  wwcChatTranslationFail: No s'ha pogut traduir el missatge.
   wwcInvalidTranslator: Configuració del traductor no vàlid. Si us plau, corregiu
     això a la vostra config.yml o amb /wwcc per utilitzar aquest connector.
   wwcConfigGUIEachTranslatorSettings: '%i Configuració'
@@ -309,10 +302,6 @@ Messages:
     traduint, però teniu una sessió de traducció activa a %o.
   wwcConfigGUIChangesNotSaved: Els canvis no entraran en vigor fins que feu clic a
     la barrera vermella de /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: S'ha produït un missatge
-    de xat de traducció que s'ha produït correctament.
-  wwcConfigGUISendFailedTranslationChatButton: Enviar missatges de xat en traducció
-    fallada
   wwctciOffSender: Traducció de xat entrant desactivat.
   wwctGUIChatIncomingButton: Alterna la traducció de xat entrant
   wwctcoOffSender: Traducció de xat sortint desactivat.
@@ -406,3 +395,22 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat era incapaç de buscar idiomes, i en canvi
     està utilitzant còpies de seguretat. Això probablement no afectarà el comportament
     del connector, però si us plau poseu-vos en contacte amb el desenvolupador.
+  libreHttp400: Mal petició enviada a Libre Translate! A menys que vostè està fent
+    alguna cosa que vostè no ha, vostè no ha d'aconseguir això. Poseu-vos en contacte
+    amb el desenvolupador!
+  wwcConfigGUILibreTranslateApiKeyButton: Canvia lliure Traduir API Key
+  libreHttp403: Falta Libre Translate API Key, o vostè està prohibit des del servidor!
+  wwcConfigConversationLibreURLSuccess: URL lliure configurat correctament.
+  wwcConfigConversationLibreTranslateApiKeyInput: La clau API actual és %i Si us plau,
+    introduïu una clau API per a Libre, o escriviu 0 per tornar enrere.
+  wwcConfigGUILibreTranslateButton: Libre Traduir
+  libreHttp429: No hi ha confiança a causa del límit de velocitat del servidor.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Traduir
+  wwcConfigConversationLibreTranslateToggleSuccess: Successivament toggled Libre Translate.
+    Torneu a carregar perquè els canvis tinguin efecte.
+  wwcConfigConversationLibreTranslateApiKeySuccess: S'ha establert correctament la
+    tecla API lliure.
+  wwcConfigConversationLibreURLInput: L'URL actual és %i Si us plau, introduïu un
+    URL per a Libre, o escriviu 0 per tornar enrere.
+  libreHttpUnknown: 'Error http desconegut: %i'
+  wwcConfigGUILibreTranslateURLButton: Canvia l'URL de traducció lliure

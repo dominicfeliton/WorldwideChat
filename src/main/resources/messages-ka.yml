@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat მოძველებულია. გთხოვთ განაახლოთ უახლესი ვერსია,
     %i.
   wwcConfigGUINextPageButton: შემდეგი გვერდი
-  wwctbTranslatePageFail: (ამ გვერდის თარგმნა ვერ მოხერხდა) %i
   wwcConfigInvalidTranslatorSettings: არასწორი თარჯიმანი პარამეტრები! გთხოვთ, ჩართოთ
     მხოლოდ ერთი თარჯიმანი თქვენს config.yml.
   wwcConfigGUIQuitButton: გასვლისა და ცვლილებების შენახვა
@@ -183,13 +182,9 @@ Messages:
   wwcInventoryErrorPlayer: შეცდომა გამოვლინდა თქვენი GUI. ჟურნალი გაიგზავნა კონსოლში.
   wwcInventoryError: '%i მომხმარებლის GUI- სთან აღმოჩენილი შეცდომა. გთხოვთ შეატყობინოთ
     ამ საკითხს დეველოპერს.'
-  wwcSignTranslationFail: შეუძლებელია თქვენი სამიზნე ნიშანზე ერთი ან მეტი ხაზის თარგმნა.
-  wwcBookTranslationFail: შეუძლებელია ერთი ან მეტი გვერდის თარგმნა სამიზნე წიგნში.
   wwctiOffTarget: საქონელი თარგმანი გამორთულია %i.
   wwctiOffSender: საქონელი თარგმანი გამორთულია.
   wwcItemTranslateTitleStock: შეუძლებელია ნაგულისხმევი პუნქტის სახელების თარგმნა.
-  wwcItemTranslateLoreFail: ვერ თარგმნა საქონელი მხარეთმცოდნეობის.
-  wwcItemTranslateTitleFail: ვერ მოხერხდა ნივთის სახელის თარგმნა.
   wwctGUIItemButton: ნივთის თარგმანის გადართვა
   wwcItemTranslateTitleDone: თარგმნილი პუნქტის სათაური წარმატებით.
   wwcGUITempItem: ნივთის ჩვენება
@@ -200,8 +195,6 @@ Messages:
   wwcItemTranslateLoreStart: თარგმნა მხარეთმცოდნეობის სამიზნე ნივთი...
   wwcItemTranslateLoreDone: თარგმნა საქონელი მხარეთმცოდნეობის წარმატებით.
   wwctiOnTarget: ელემენტის თარგმანი ჩართულია %i.
-  wwcBookTranslateTitleFail: წიგნის სათაურის თარგმნა ვერ მოხერხდა.
-  wwcChatTranslationFail: ვერ მოხერხდა თქვენი წერილის თარგმნა.
   wwcInvalidTranslator: არასწორი თარჯიმანი პარამეტრები. გთხოვთ, დააფიქსიროთ ეს თქვენი
     config.yml ან /wwcc გამოიყენოთ ეს მოდული.
   wwcConfigGUIEachTranslatorSettings: '%i კონფიგურაცია'
@@ -294,10 +287,6 @@ Messages:
     თარგმნილია, მაგრამ თქვენ გაქვთ აქტიური თარგმანის სესია %o.
   wwcConfigGUIChangesNotSaved: თქვენი ცვლილებები ძალაში არ შედის, სანამ არ დააჭერთ
     წითელ ბარიერს /wwccc.- ში.
-  wwcConfigConversationSendFailedTranslationChatSuccess: ვერ მოხერხდა თარგმანი სტატისტიკა
-    გაგზავნა toggled წარმატებით.
-  wwcConfigGUISendFailedTranslationChatButton: ჩატის გაგზავნა ვერ მოხერხდა თარგმანის
-    შესახებ
   wwctciOffSender: შემომავალი სტატისტიკა თარგმანი გამორთულია.
   wwctGUIChatIncomingButton: შემომავალი ჩეთის თარგმანის გადართვა
   wwctcoOffSender: გამავალი სტატისტიკა თარგმანი გამორთულია.
@@ -383,3 +372,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat ვერ მოიტანონ ენებზე, და ნაცვლად გამოყენებით
     სარეზერვო. ეს, ალბათ, გავლენას არ მოახდენს მოდულის ქცევაზე, მაგრამ გთხოვთ, დაუკავშირდეთ
     დეველოპერს.
+  libreHttp400: ცუდი მოთხოვნა გაიგზავნა Libre Translate! თუ არ აკეთებთ იმას, რაც არ
+    უნდა, არ უნდა მიიღოთ ეს. გთხოვთ, დაუკავშირდეთ დეველოპერს!
+  wwcConfigGUILibreTranslateApiKeyButton: შეცვლა უფასო თარგმნის API გასაღები
+  libreHttp403: დაკარგული უფასო Translate API Key, ან თქვენ აკრძალული სერვერზე!
+  wwcConfigConversationLibreURLSuccess: უფასო URL მითითებული წარმატებით.
+  wwcConfigConversationLibreTranslateApiKeyInput: მიმდინარე API გასაღები არის %i.
+    გთხოვთ შეიყვანოთ API გასაღები Libre, ან აკრიფოთ 0 დაბრუნდეს.
+  wwcConfigGUILibreTranslateButton: უფასო თარგმნა
+  libreHttp429: ნდობის გამო განაკვეთი ლიმიტი სერვერზე.
+  wwcConfigGUIToggleLibreTranslateButton: გადართვა უფასო თარგმნა
+  wwcConfigConversationLibreTranslateToggleSuccess: წარმატებით გადართვა Libre Translate.
+    განაახლეთ ცვლილებები ძალაში.
+  wwcConfigConversationLibreTranslateApiKeySuccess: უფასო API გასაღები კომპლექტი წარმატებით.
+  wwcConfigConversationLibreURLInput: მიმდინარე URL არის %i. გთხოვთ, შეიყვანოთ URL
+    უფასოდ, ან ჩაწერეთ 0 დასაბრუნებლად.
+  libreHttpUnknown: 'უცნობი http შეცდომა: %i'
+  wwcConfigGUILibreTranslateURLButton: შეცვლა უფასო თარგმნის URL

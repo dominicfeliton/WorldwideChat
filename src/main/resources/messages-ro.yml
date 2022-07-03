@@ -49,7 +49,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat este expirat. Vă rugăm să actualizați la cea
     mai recentă versiune, %i.
   wwcConfigGUINextPageButton: Pagina următoare
-  wwctbTranslatePageFail: (Eșec la traducerea acestei pagini) %i
   wwcConfigInvalidTranslatorSettings: Setări de traducător nevalide! Vă rugăm să activați
     un singur traducător în config.yml.
   wwcConfigGUIQuitButton: Ieșire și salvare modificări
@@ -193,14 +192,9 @@ Messages:
   wwcInventoryErrorPlayer: Eroare detectată cu GUI. Un jurnal a fost trimis la consolă.
   wwcInventoryError: Eroare detectată cu GUI a utilizatorului %i. Raportați această
     problemă dezvoltatorului.
-  wwcSignTranslationFail: Imposibil de tradus una sau mai multe linii de pe semnul
-    țintă.
-  wwcBookTranslationFail: Imposibil de tradus una sau mai multe pagini în cartea țintă.
   wwctiOffTarget: Traducere articol dezactivat pentru %i.
   wwctiOffSender: Traducere articol dezactivat.
   wwcItemTranslateTitleStock: Imposibil de tradus numele de elemente implicite.
-  wwcItemTranslateLoreFail: Nu a reușit să traducă articolul lore.
-  wwcItemTranslateTitleFail: Nu a reușit să traducă numele elementului.
   wwctGUIItemButton: Comută traducerea elementului
   wwcItemTranslateTitleDone: Titlul articolului tradus cu succes.
   wwcGUITempItem: Afișaj element
@@ -211,8 +205,6 @@ Messages:
   wwcItemTranslateLoreStart: Traducerea lore a obiectului țintă...
   wwcItemTranslateLoreDone: Lore articol tradus cu succes.
   wwctiOnTarget: Traducerea elementului este activată pentru %i.
-  wwcBookTranslateTitleFail: Nu a reușit să traducă titlul cărții.
-  wwcChatTranslationFail: Nu a reușit să traducă mesajul.
   wwcInvalidTranslator: Setări de traducător nevalide. Vă rugăm să remediați acest
     lucru în config.yml sau cu /wwcc pentru a utiliza acest plugin.
   wwcConfigGUIEachTranslatorSettings: Configurare %i
@@ -310,10 +302,6 @@ Messages:
     dar aveți o sesiune de traducere activă la %o.
   wwcConfigGUIChangesNotSaved: Modificările dvs. nu vor intra în vigoare până când
     nu faceți clic pe bariera roșie în /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Mesaj de chat traducere eșuat
-    comuta cu succes.
-  wwcConfigGUISendFailedTranslationChatButton: Trimite mesaj de chat pentru traducerea
-    eșuată
   wwctciOffSender: Intrare traducere chat dezactivat.
   wwctGUIChatIncomingButton: Comută traducerea conversațiilor primite
   wwctcoOffSender: Traducere chat de ieșire dezactivat.
@@ -406,3 +394,20 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat nu a reușit să preia limbi și, în schimb,
     folosește copii de rezervă. Probabil că acest lucru nu va afecta comportamentul
     pluginului, dar vă rugăm să contactați dezvoltatorul.
+  libreHttp400: Cerere greșită trimisă la Libre Translate! Dacă nu faceți ceva ce
+    nu ar trebui, nu ar trebui să obțineți acest lucru. Vă rugăm să contactați dezvoltatorul!
+  wwcConfigGUILibreTranslateApiKeyButton: Schimbați cheia API pentru traducerea gratuită
+  libreHttp403: Lipsește Libre Traduceți cheia API sau sunteți interzis de pe server
+  wwcConfigConversationLibreURLSuccess: URL-ul gratuit a fost setat cu succes.
+  wwcConfigConversationLibreTranslateApiKeyInput: Cheia API curentă este %i. Introduceți
+    o cheie API pentru Libre sau tastați 0 pentru a reveni.
+  wwcConfigGUILibreTranslateButton: Traducere Libre
+  libreHttp429: Nicio încredere din cauza limitei ratei de la server.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Free Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Comută cu succes Libre Translate.
+    Reîncărcați pentru ca modificările să aibă efect.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Cheia API Libre setată cu succes.
+  wwcConfigConversationLibreURLInput: Adresa URL curentă este %i. Introduceți o adresă
+    URL pentru Libre sau tastați 0 pentru a reveni.
+  libreHttpUnknown: 'Eroare http necunoscută: %i'
+  wwcConfigGUILibreTranslateURLButton: Schimbați URL-ul Traduceți gratuit

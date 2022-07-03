@@ -48,7 +48,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat je zastarel. Prosimo, posodobite na najnovejšo
     različico, %i.
   wwcConfigGUINextPageButton: Naslednja stran
-  wwctbTranslatePageFail: (Te strani ni bilo mogoče prevesti) %i
   wwcConfigInvalidTranslatorSettings: Neveljavne nastavitve prevajalca! Prosimo, omogočite
     samo en prevajalec v vašem config.yml.
   wwcConfigGUIQuitButton: Izhod in shranjevanje sprememb
@@ -188,13 +187,9 @@ Messages:
     do 10...
   wwcInventoryErrorPlayer: Napaka, odkrita z vašim GUI. V konzolo je bil poslan dnevnik.
   wwcInventoryError: Napaka, odkrita z GUI uporabnika %i, to težavo sporočite razvijalcu.
-  wwcSignTranslationFail: V ciljnem znaku ni mogoče prevesti ene ali več vrstic.
-  wwcBookTranslationFail: Ni mogoče prevesti ene ali več strani v ciljni knjigi.
   wwctiOffTarget: Prevod elementa onemogočen za %i.
   wwctiOffSender: Prevod elementa onemogočen.
   wwcItemTranslateTitleStock: Ni mogoče prevesti privzetih imen elementov.
-  wwcItemTranslateLoreFail: Ni uspelo prevesti postavka lore.
-  wwcItemTranslateTitleFail: Ime elementa ni bilo mogoče prevesti.
   wwctGUIItemButton: Preklop prevajanja artiklov
   wwcItemTranslateTitleDone: Preveden naslov predmeta uspešno.
   wwcGUITempItem: Prikaz elementa
@@ -205,8 +200,6 @@ Messages:
   wwcItemTranslateLoreStart: Prevajanje izročilo ciljne postavke...
   wwcItemTranslateLoreDone: Prevedena postavka izročilo uspešno.
   wwctiOnTarget: Prevod elementa je omogočen za %i.
-  wwcBookTranslateTitleFail: Ni bilo mogoče prevesti naslova knjige.
-  wwcChatTranslationFail: Sporočila ni bilo mogoče prevesti.
   wwcInvalidTranslator: Neveljavne nastavitve prevajalca. Prosimo, da to popravite
     v vašem config.yml ali z /wwcc za uporabo tega vtičnika.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguracija'
@@ -301,9 +294,6 @@ Messages:
     vendar imate aktivno prevajanje na %o.
   wwcConfigGUIChangesNotSaved: Vaše spremembe ne bodo začele veljati, dokler ne boste
     kliknili na rdečo pregrado v /wwcc.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Sporočilo za klepet ni uspelo
-    pretoggled uspešno.
-  wwcConfigGUISendFailedTranslationChatButton: Pošlji klepet sporočilo o neuspelem
   wwctciOffSender: Prevod dohodnega klepeta onemogočen.
   wwctGUIChatIncomingButton: Preklop dohodnega klepeta prevajanja
   wwctcoOffSender: Odhodni klepet prevod onemogočen.
@@ -390,3 +380,21 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat ni mogel pridobiti jezikov in namesto tega
     uporablja varnostne kopije. To verjetno ne bo vplivalo na vedenje vtičnikov, vendar
     se obrnite na razvijalca.
+  libreHttp400: Slaba zahteva, poslana Libre Translate! Razen če delaš nekaj, česar
+    ne bi smeli, tega ne bi smeli dobiti. Obrnite se na razvijalca!
+  wwcConfigGUILibreTranslateApiKeyButton: Spremenite brezplačno prevajanje API Key
+  libreHttp403: Manjka Libre Translate API Key, ali ste prepovedani s strežnika!
+  wwcConfigConversationLibreURLSuccess: Prosti URL uspešno nastavljen.
+  wwcConfigConversationLibreTranslateApiKeyInput: Trenutni ključ API je %i. Prosimo,
+    vnesite API ključ za Libre ali vnesite 0, da se vrnete nazaj.
+  wwcConfigGUILibreTranslateButton: Libre Prevedi
+  libreHttp429: Brez zaupanja zaradi omejitve stopnje iz strežnika.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Uspešno preusmerjen Libre Translate.
+    Ponovno naložite, da bodo spremembe začele veljati.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Prosti API ključ je bil uspešno
+    nastavljen.
+  wwcConfigConversationLibreURLInput: Trenutni URL je %i. Prosimo, vnesite URL za
+    Libre ali vnesite 0, da se vrnete nazaj.
+  libreHttpUnknown: 'Neznana napaka http: %i'
+  wwcConfigGUILibreTranslateURLButton: Spremeni URL za brezplačno prevajanje

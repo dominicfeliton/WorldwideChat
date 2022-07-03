@@ -47,7 +47,6 @@ Messages:
   wwcUpdaterOutOfDate: WorldwideChat eskirgan. Iltimos, eng soʻnggi versiyasini yangilang,
     %i.
   wwcConfigGUINextPageButton: Keyingi sahifa
-  wwctbTranslatePageFail: (Ushbu sahifani tarjima qilib boʻlmadi) %i
   wwcConfigInvalidTranslatorSettings: Tarjimon sozlamalari noto'g'ri! Iltimos, config.yml-da
     faqat bitta tarjimonni yoqing.
   wwcConfigGUIQuitButton: Chiqish & O'zgarishlarni saqlash
@@ -187,15 +186,9 @@ Messages:
   wwcInventoryErrorPlayer: Xato GUI bilan aniqlandi. Konsolga jurnal yuborildi.
   wwcInventoryError: '%i foydalanuvchi GUI bilan aniqlangan xato. Iltimos, ushbu masalani
     ishlab chiquvchiga xabar bering.'
-  wwcSignTranslationFail: Nishon belgisida bir yoki bir nechta satrlarni tarjima qilib
-    bo'lmadi.
-  wwcBookTranslationFail: Maqsadli kitobingizda bir yoki bir nechta sahifani tarjima
-    qilib bo'lmadi.
   wwctiOffTarget: '%i uchun oʻchirilgan element tarjimasi.'
   wwctiOffSender: Ob'ektni tarjima qilish o'chirib qo'yilgan.
   wwcItemTranslateTitleStock: Standart element nomlarini tarjima qilib bo'lmadi.
-  wwcItemTranslateLoreFail: Elementni tarjima qilish muvaffaqiyatsiz tugadi.
-  wwcItemTranslateTitleFail: Element nomini tarjima qilib bo'lmadi.
   wwctGUIItemButton: Toggle Mahsulot Tarjima
   wwcItemTranslateTitleDone: Tarjima element nomi muvaffaqiyatli.
   wwcGUITempItem: Item ko'rsatish
@@ -206,8 +199,6 @@ Messages:
   wwcItemTranslateLoreStart: Maqsadli elementni tarjima qilish...
   wwcItemTranslateLoreDone: Tarjima element muvaffaqiyatli.
   wwctiOnTarget: '%i uchun mahsulot tarjimasi yoqilgan.'
-  wwcBookTranslateTitleFail: Kitob nomini tarjima bo'lmadi.
-  wwcChatTranslationFail: Xabaringizni tarjima qilib bo'lmadi.
   wwcInvalidTranslator: Tarjimon sozlamalari noto'g'ri. Iltimos, ushbu plaginni ishlatish
     uchun config.yml yoki /wwcc bilan tuzating.
   wwcConfigGUIEachTranslatorSettings: '%i Konfiguratsiya'
@@ -302,10 +293,6 @@ Messages:
     qilinmoqda, ammo sizda %o ga faol tarjima seansi mavjud.
   wwcConfigGUIChangesNotSaved: /wwcc-da qizil to'siqni bosmaguningizcha o'zgarishlaringiz
     kuchga kirmaydi.
-  wwcConfigConversationSendFailedTranslationChatSuccess: Muvaffaqiyatsiz tarjima chat
-    xabari muvaffaqiyatli o'tdi.
-  wwcConfigGUISendFailedTranslationChatButton: Muvaffaqiyatsiz tarjima haqida chat
-    xabarini yuboring
   wwctciOffSender: Kiruvchi chat tarjimasi o'chirilgan.
   wwctGUIChatIncomingButton: Toggle kiruvchi Chat tarjimasi
   wwctcoOffSender: Chiquvchi chat tarjimasi o'chirilgan.
@@ -395,3 +382,22 @@ Messages:
   wwcBackupLangCodesWarning: WorldwideChat tillarni ololmadi va uning o'rniga zaxira
     nusxalarini ishlatadi. Bu, ehtimol, plagin xatti-harakatlariga ta'sir qilmaydi,
     lekin iltimos, ishlab chiquvchiga murojaat qiling.
+  libreHttp400: Yomon so'rov Libre Translate-ga yuborilgan! Agar siz buni qilmasligingiz
+    kerak bo'lgan biror narsa qilmasangiz, buni olmasligingiz kerak. Iltimos, ishlab
+    chiquvchi bilan bog'laning!
+  wwcConfigGUILibreTranslateApiKeyButton: O'zgartirish Bepul API Kalit Tarjima
+  libreHttp403: Libre Tarjima API kalitini etishmayotgan yoki siz serverdan taqiqlangan!
+  wwcConfigConversationLibreURLSuccess: Libre URL muvaffaqiyatli o'rnatildi.
+  wwcConfigConversationLibreTranslateApiKeyInput: Joriy API kaliti %i. Iltimos, Libre
+    uchun API kalitini kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUILibreTranslateButton: Free Tarjima
+  libreHttp429: Serverdan stavka cheklovi tufayli ishonch yo'q.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Bepul Tarjima
+  wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate-ni muvaffaqiyatli
+    almashtirdi. O'zgarishlar kuchga kirishi uchun qayta yuklang.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API kaliti muvaffaqiyatli
+    o'rnatildi.
+  wwcConfigConversationLibreURLInput: Joriy URL %i. Iltimos, Libre uchun URL manzilini
+    kiriting yoki orqaga qaytish uchun 0 yozing.
+  libreHttpUnknown: 'Nomaʼlum http xatosi: %i'
+  wwcConfigGUILibreTranslateURLButton: Bepul Tarjima URL o'zgartirish

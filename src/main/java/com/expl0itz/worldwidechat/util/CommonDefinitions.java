@@ -34,6 +34,7 @@ import com.amazonaws.util.StringUtils;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.translators.AmazonTranslation;
 import com.expl0itz.worldwidechat.translators.GoogleTranslation;
+import com.expl0itz.worldwidechat.translators.LibreTranslation;
 import com.expl0itz.worldwidechat.translators.TestTranslation;
 import com.expl0itz.worldwidechat.translators.WatsonTranslation;
 import com.google.common.base.CharMatcher;
@@ -52,7 +53,7 @@ public class CommonDefinitions {
 	/* Important vars */
 	private static WorldwideChat main = WorldwideChat.instance;
 	
-	public static String[] supportedMCVersions = { "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13", "1.12", "1.11", "1.10", "1.9", "1.8" };
+	public static String[] supportedMCVersions = { "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13" };
 
 	public static String[] supportedPluginLangCodes = { "af", "sq", "am", "ar", "hy", "az", "bn", "bs", "bg", "ca",
 			"zh", "zh-TW", "hr", "cs", "da", "fa-AF", "ga", "nl", "en", "et", "fa", "tl", "fi", "fr", "fr-CA", "ka", "de",
@@ -132,7 +133,7 @@ public class CommonDefinitions {
 	  * @return Boolean - Whether languages are the same or not
 	  */
 	public static boolean isSameLang(String first, String second) {
-		return getSupportedTranslatorLang(first).compareTo(getSupportedTranslatorLang(second)) == 0 ? true : false;
+		return getSupportedTranslatorLang(first).getLangCode().equals(getSupportedTranslatorLang(second).getLangCode());
 	}
 
 	/**
@@ -210,8 +211,6 @@ public class CommonDefinitions {
 	  * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
 	  */
 	public static String getMessage(String messageName, String[] replacements) {
-		//TODO: If the final message is actually the same as inMessage, don't say translation failed...fix behavior POTENTIALLY
-		// EX: Saying Hello with Watson translates to Hello, sucks but w/e
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
 		YamlConfiguration messagesConfig = main.getConfigManager().getMessagesConfig();
@@ -227,21 +226,12 @@ public class CommonDefinitions {
 		
 		/* Replace any and all %i, %e, %o, etc. */
 		/* This code will only go as far as replacements[] goes. */
-		//TODO: Replace with string.format
-		StringBuilder fixedMessage = new StringBuilder();
-		int replacementsPos = 0;
-		for (int c = 0; c < convertedOriginalMessage.toCharArray().length; c++) {
-			if (replacements != null && replacements.length > 0 && convertedOriginalMessage.toCharArray()[c] == '%' && replacementsPos < replacements.length) {
-				fixedMessage.append(replacements[replacementsPos]);
-				replacementsPos++;
-				c++;
-			} else {
-				fixedMessage.append(convertedOriginalMessage.toCharArray()[c]);
-			}
+		for (int i = 0; i < replacements.length; i++) {
+			convertedOriginalMessage = convertedOriginalMessage.replaceFirst("%[ioeu]", replacements[i]);
 		}
 		
-		/* Return fixedMessage */
-		return fixedMessage.toString();
+ 		/* Return fixedMessage */
+		return convertedOriginalMessage;
 	}
 	
 	/**
@@ -262,10 +252,7 @@ public class CommonDefinitions {
 			} else {
 				adventureSender.sendMessage(outMessage);
 			}
-		} catch (IllegalStateException e) {
-			// This only happens when the plugin/adventure is disabled.
-			// If the plugin/adventure is disabled, no messages should be sent anyways so silently catch this.
-		}
+		} catch (IllegalStateException e) {}
 	}
 	
 	/**
@@ -401,13 +388,18 @@ public class CommonDefinitions {
 						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
 				out = amazonTranslateInstance.useTranslator();
 				break;
+			case "Libre Translate":
+				LibreTranslation libreTranslateInstance = new LibreTranslation(inMessage,
+						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
+				out = libreTranslateInstance.useTranslator();
+				break;
 			case "JUnit/MockBukkit Testing Translator":
 				TestTranslation testTranslator = new TestTranslation(inMessage, currActiveTranslator.getInLangCode(),
 						currActiveTranslator.getOutLangCode());
 				out = testTranslator.useTranslator();
 				break;
 			default:
-				// We should never get here...
+				// Get here if we are adding a new translation service
 				CommonDefinitions.sendDebugMessage("No valid translator currently in use, according to translateText(). Returning original message to " + currPlayer.getName() + "...");
 				return inMessage;
 			}
@@ -418,7 +410,6 @@ public class CommonDefinitions {
 
 			/* Add to cache */
 			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
-				//TODO: Why can't we add none? Check this
 				main.addCacheTerm(testTranslation, out);
 			}
 			return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', out));
@@ -431,10 +422,6 @@ public class CommonDefinitions {
 		try {
 			/* Get translation */
 			finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
-			// If the translation we get is actually == our input
-			if (finalOut.equals(inMessage)) {
-				finalOut += " ";
-			}
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			/* Sanitize error before proceeding to write it to errorLog */
 			if (e instanceof InterruptedException || main.getTranslatorName().equals("Starting")) {
@@ -450,8 +437,6 @@ public class CommonDefinitions {
 				sendTimeoutExceptionMessage(currPlayer);
 				return inMessage;
 			}
-			
-			//TODO: Revise confidence exception detection if possible?
 			
 			/* Add 1 to error count */
 			main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
@@ -602,8 +587,8 @@ public class CommonDefinitions {
 	private static boolean isNoConfidenceException(Throwable throwable) {
 	    // instanceof() doesn't seem to work here...this sucks, but it works
 		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
-		CommonDefinitions.sendDebugMessage("No confidence exception message: " + exceptionMessage);
 		if (exceptionMessage.contains("confidence") || exceptionMessage.contains("Confidence")) {
+			CommonDefinitions.sendDebugMessage("No confidence exception message: " + exceptionMessage);
 			return true;
 		}
 		return false;
