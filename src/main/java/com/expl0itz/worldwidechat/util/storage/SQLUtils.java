@@ -31,7 +31,6 @@ public class SQLUtils {
 		if (list != null) {
 			for (String eaArg : list) {
 				if (eaArg.indexOf("=") != -1) {
-					//TODO: Check if this is valid?
 					testSource.addDataSourceProperty(eaArg.substring(0, eaArg.indexOf("=")), eaArg.substring(eaArg.indexOf("=")+1));
 				    CommonDefinitions.sendDebugMessage(eaArg.substring(0, eaArg.indexOf("=")) + ":" + eaArg.substring(eaArg.indexOf("=")+1));
 				}
