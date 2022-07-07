@@ -18,7 +18,7 @@ import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettings
 import com.expl0itz.worldwidechat.conversations.configuration.WatsonSettingsConvos;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
-import com.expl0itz.worldwidechat.util.SQLUtils;
+import com.expl0itz.worldwidechat.util.storage.SQLUtils;
 
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;

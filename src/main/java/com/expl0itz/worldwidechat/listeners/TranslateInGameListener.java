@@ -36,7 +36,7 @@ import net.kyori.adventure.text.format.TextDecoration;
 public class TranslateInGameListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
-	
+
 	/* Custom Entity Name Translation */
 	@EventHandler(priority = EventPriority.HIGHEST) 
 	public void onInGameEntityTranslateRequest(PlayerInteractEntityEvent event) {

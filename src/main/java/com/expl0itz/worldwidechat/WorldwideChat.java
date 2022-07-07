@@ -47,8 +47,8 @@ import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CachedTranslation;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
-import com.expl0itz.worldwidechat.util.SQLUtils;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
+import com.expl0itz.worldwidechat.util.storage.SQLUtils;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 

@@ -31,7 +31,7 @@ import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.Metrics;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
-import com.expl0itz.worldwidechat.util.SQLUtils;
+import com.expl0itz.worldwidechat.util.storage.SQLUtils;
 
 public class ConfigurationHandler {
 
@@ -461,6 +461,10 @@ public class ConfigurationHandler {
 		/* If our translator is Invalid, do not run this code */
 		//TODO: Investigate why mockbukkit no longer works here
 		if (!main.getTranslatorName().equals("Invalid") && !main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+			/* Sync to MongoDB database, if it exists */
+			//TODO
+			
+			
 			/* Sync to SQL database, if it exists */
 			// Our Generic Table Layout: 
 			// | Creation Date | Object Properties |  

@@ -15,7 +15,7 @@ import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
-import com.expl0itz.worldwidechat.util.SQLUtils;
+import com.expl0itz.worldwidechat.util.storage.SQLUtils;
 
 public class LoadUserData implements Runnable {
 
