@@ -253,8 +253,6 @@ Messages:
   wwcTimeoutExceptionConsole: プレイヤー %i の直近のリクエストタイムアウトが発生しました。このエラーは致命的ではありませんが、引き続き発生する場合は
     WorldwideChat をリロードする必要があります。
   wwcGUIPageNumber: 'ページ番号: %i'
-  wwcConfigSQLFail: SQL に接続できませんでした。
-  wwcConfigSQLSuccess: SQL に正常に接続しました。
   wwcConfigYAMLFallback: YAMLにフォールバック...
   wwcConfigGUIToggleSQLButton: SQL を切り替え
   wwcConfigConversationToggleSQLSuccess: SQL が正常に切り替えられました。リロードして変更を有効にします。
@@ -312,3 +310,4 @@ Messages:
   wwcConfigConversationLibreURLInput: 現在の URL は %i です。Libre の URL を入力するか、0 を入力して戻ってください。
   libreHttpUnknown: '不明な http エラー: %i'
   wwcConfigGUILibreTranslateURLButton: リブレ翻訳 URL を変更
+  wwcConfigConnectionFail: '%i に接続できませんでした。'

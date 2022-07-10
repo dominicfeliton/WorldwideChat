@@ -312,8 +312,6 @@ Messages:
     এই ত্রুটিটি মারাত্মক নয়, তবে বিশ্বব্যাপী চ্যাট পুনরায় লোড করা উচিত যদি এটি ঘটতে
     থাকে।
   wwcGUIPageNumber: 'পৃষ্ঠা সংখ্যা: %i'
-  wwcConfigSQLFail: SQL- র সাথে সংযোগ করতে ব্যর্থ।
-  wwcConfigSQLSuccess: সফলভাবে SQL সাথে সংযুক্ত!
   wwcConfigYAMLFallback: YAML ফিরে পতিত...
   wwcConfigGUIToggleSQLButton: এসকিউএল টগল
   wwcConfigConversationToggleSQLSuccess: এসকিউএল সফলভাবে টগল হয়েছে। পরিবর্তন কার্যকর
@@ -389,3 +387,4 @@ Messages:
     একটি URL লিখুন, অথবা ফিরে যাওয়ার জন্য ০ টাইপ করুন।
   libreHttpUnknown: 'অজানা http ত্রুটি: %i'
   wwcConfigGUILibreTranslateURLButton: বিনামূল্যে পরিবর্তন করুন URL অনুবাদ করুন
+  wwcConfigConnectionFail: '%i- র সাথে সংযোগ করতে ব্যর্থ'

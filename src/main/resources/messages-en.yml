@@ -63,8 +63,8 @@ Messages:
   wwcUpdaterOutOfDateChat: 'WorldwideChat is out of date. Please update to the latest version.'
   #------------------- Configuration Messages -------------------
   wwcConfigYAMLDefault: 'Defaulted to YAML for data storage.'
-  wwcConfigSQLSuccess: 'Successfully connected to SQL!'
-  wwcConfigSQLFail: 'Failed to connect to SQL.'
+  wwcConfigConnectionSuccess: 'Successfully connected to %i!'
+  wwcConfigConnectionFail: 'Failed to connect to %i.'
   wwcConfigYAMLFallback: 'Falling back to YAML...'
   wwcConfigConnectionSuccess: 'Successfully connected to %o!'
   wwcConfigConnectionFailed: 'Failed to connect to %o. Make sure your credentials and firewall are configured correctly!'

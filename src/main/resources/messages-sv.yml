@@ -324,8 +324,6 @@ Messages:
     här felet är inte dödligt, men WorldwideChat bör laddas om om det fortsätter att
     hända.
   wwcGUIPageNumber: 'Sidnummer: %i'
-  wwcConfigSQLFail: Det gick inte att ansluta till SQL.
-  wwcConfigSQLSuccess: Ansluten till SQL!
   wwcConfigYAMLFallback: Att falla tillbaka till YAML...
   wwcConfigGUIToggleSQLButton: Växla SQL
   wwcConfigConversationToggleSQLSuccess: SQL växlas med lyckat resultat. Ladda om
@@ -401,3 +399,4 @@ Messages:
     för Libre, eller skriv 0 för att gå tillbaka.
   libreHttpUnknown: 'Okänt http-fel: %i'
   wwcConfigGUILibreTranslateURLButton: Change Libre Översätt URL
+  wwcConfigConnectionFail: Det gick inte att ansluta till %i.

@@ -22,7 +22,8 @@ public class WWCTabCompleter implements TabCompleter {
 	@Override
 	public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
 		// Init out list
-		// TODO: Revise this whole garbage class
+		// TODO: Revise this whole garbage class, start with replacing getSupportedTranslatorLang.getLangCode() with isSupported, simplify if statements, this is so bad
+		// TODO: Use switch cases as well, combine if statements come on man
 		List<String> out = new ArrayList<String>();
 
 		if (command.getName().equals("wwct") && args.length > 0 && args.length < 4) {

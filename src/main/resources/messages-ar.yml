@@ -292,8 +292,6 @@ Messages:
   wwcTimeoutExceptionConsole: كان لدى اللاعب %i أحدث مهلة طلب. هذا الخطأ ليس قاتلاً،
     ولكن يجب إعادة تحميل WorldwideChat إذا استمر حدوثه.
   wwcGUIPageNumber: 'رقم الصفحة: %i'
-  wwcConfigSQLFail: فشل الاتصال بـ SQL.
-  wwcConfigSQLSuccess: تم الاتصال بنجاح بـ SQL!
   wwcConfigYAMLFallback: العودة إلى YAML...
   wwcConfigGUIToggleSQLButton: تبديل SQL
   wwcConfigConversationToggleSQLSuccess: تم تبديل SQL بنجاح. أعد التحميل حتى يصبح
@@ -365,3 +363,4 @@ Messages:
     لـ Libre، أو اكتب 0 للرجوع إليه.
   libreHttpUnknown: 'خطأ http غير معروف: %i'
   wwcConfigGUILibreTranslateURLButton: تغيير عنوان URL لترجمة Libre
+  wwcConfigConnectionFail: فشل الاتصال بـ %i.

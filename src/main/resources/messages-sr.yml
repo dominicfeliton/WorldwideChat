@@ -309,8 +309,6 @@ Messages:
   wwcTimeoutExceptionConsole: Igrač %imao sam svoj najnoviji zahtev timeout. Ova greška
     nije fatalna, ali širom svetaChat treba ponovo učitati ako se nastavi da se desi.
   wwcGUIPageNumber: 'Broj stranice: %i'
-  wwcConfigSQLFail: Nije uspelo da se poveže sa SKL.
-  wwcConfigSQLSuccess: Uspešno povezan sa SKL!
   wwcConfigYAMLFallback: Padajući nazad u IAML...
   wwcConfigGUIToggleSQLButton: Toggle SKL
   wwcConfigConversationToggleSQLSuccess: SKL uspešno toggled. Reload za promenu da
@@ -386,3 +384,4 @@ Messages:
     ili unesite 0 da biste se vratili nazad.
   libreHttpUnknown: 'Nepoznata http greška: %i'
   wwcConfigGUILibreTranslateURLButton: Promena Besplatno Prevod URL
+  wwcConfigConnectionFail: Neuspešno povezivanje sa %i.

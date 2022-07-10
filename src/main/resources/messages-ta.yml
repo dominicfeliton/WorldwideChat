@@ -332,8 +332,6 @@ Messages:
     முடிந்தது. இந்த பிழை அபாயகரமானது அல்ல, ஆனால் அது தொடர்ந்து நடந்தால் WorldwideChat
     மீண்டும் ஏற்றப்பட வேண்டும்.
   wwcGUIPageNumber: 'பக்க எண்: %i'
-  wwcConfigSQLFail: SQL உடன் இணைக்கத் தவறிவிட்டது.
-  wwcConfigSQLSuccess: வெற்றிகரமாக SQL இணைக்கப்பட்டுள்ளது!
   wwcConfigYAMLFallback: YAML க்கு மீண்டும் வீழ்ச்சி...
   wwcConfigGUIToggleSQLButton: SQL ஐ மாற்று
   wwcConfigConversationToggleSQLSuccess: SQL வெற்றிகரமாக மாறுகிறது. மாற்றம் நடைமுறைக்கு
@@ -412,3 +410,4 @@ Messages:
     செய்து, அல்லது திரும்பி செல்ல 0 தட்டச்சு செய்யவும்.
   libreHttpUnknown: 'தெரியாத http பிழை: %i'
   wwcConfigGUILibreTranslateURLButton: இலவச மொழிபெயர்க்க URL ஐ மாற்றவும்
+  wwcConfigConnectionFail: '%i உடன் இணைக்கத் தவறியது.'

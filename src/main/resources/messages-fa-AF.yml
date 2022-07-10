@@ -308,8 +308,6 @@ Messages:
     خطا کشنده نیست، اما WorldwideChat باید دوباره بارگذاری شود اگر آن را همچنان به
     اتفاق می افتد.
   wwcGUIPageNumber: 'شماره صفحه: %i'
-  wwcConfigSQLFail: اتصال به SQL شکست خورد.
-  wwcConfigSQLSuccess: با موفقیت به SQL متصل!
   wwcConfigYAMLFallback: بازگشت به YAML...
   wwcConfigGUIToggleSQLButton: ضامن SQL
   wwcConfigConversationToggleSQLSuccess: SQL با موفقیت جابجا شد. بازنگری برای تغییر
@@ -385,3 +383,4 @@ Messages:
     کنید، یا 0 را برای بازگشت تایپ کنید.
   libreHttpUnknown: 'خطای http ناشناخته: %i'
   wwcConfigGUILibreTranslateURLButton: تغییر رایگان ترجمه URL
+  wwcConfigConnectionFail: اتصال به %i شکست خورد.

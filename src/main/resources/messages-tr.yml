@@ -306,8 +306,6 @@ Messages:
   wwcTimeoutExceptionConsole: Oyuncu %i en son istek zaman aşımına uğradı. Bu hata
     ölümcül değildir, ancak gerçekleşmeye devam ederse WorldwideChat yeniden yüklenmelidir.
   wwcGUIPageNumber: 'Sayfa Numarası: %i'
-  wwcConfigSQLFail: SQL'e bağlanılamadı.
-  wwcConfigSQLSuccess: SQL'e başarıyla bağlandı!
   wwcConfigYAMLFallback: YAML'ye geri düşmek...
   wwcConfigGUIToggleSQLButton: SQL'i Değiştir
   wwcConfigConversationToggleSQLSuccess: SQL başarıyla geçiş yaptı. Değişikliğin etkili
@@ -383,3 +381,4 @@ Messages:
     veya geri dönmek için 0 yazın.
   libreHttpUnknown: 'Bilinmeyen http hatası: %i'
   wwcConfigGUILibreTranslateURLButton: Ücretsiz Çevir URL'sini değiştir
+  wwcConfigConnectionFail: '%i öğesine bağlanılamadı.'

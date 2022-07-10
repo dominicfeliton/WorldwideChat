@@ -48,6 +48,7 @@ import com.expl0itz.worldwidechat.util.CachedTranslation;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
+import com.expl0itz.worldwidechat.util.storage.MongoDBUtils;
 import com.expl0itz.worldwidechat.util.storage.SQLUtils;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
@@ -86,7 +87,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "06262022-3"; // MMDDYYYY-revisionNumber
+	private String currentMessagesConfigVersion = "07102022-1"; // MMDDYYYY-revisionNumber
 	private volatile String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
@@ -366,6 +367,9 @@ public class WorldwideChat extends JavaPlugin {
 
 		// Disconnect SQL
 		SQLUtils.disconnect();
+		
+		// Disconnect MongoDB
+		MongoDBUtils.disconnect();
 		
 		// Clear all active translating users, cache, playersUsingConfigGUI
 		supportedLanguages.clear();

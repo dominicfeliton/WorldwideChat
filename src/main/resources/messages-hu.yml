@@ -321,8 +321,6 @@ Messages:
     Ez a hiba nem végzetes, de a WorldwideChat-t újra kell tölteni, ha továbbra is
     megtörténik.'
   wwcGUIPageNumber: 'Oldalszám: %i'
-  wwcConfigSQLFail: Nem sikerült csatlakozni az SQL-hez.
-  wwcConfigSQLSuccess: Sikeresen csatlakozik az SQL-hez!
   wwcConfigYAMLFallback: Visszaesik a YAML-hez...
   wwcConfigGUIToggleSQLButton: SQL váltása
   wwcConfigConversationToggleSQLSuccess: Az SQL sikeresen vált. Töltse be újra, hogy
@@ -400,3 +398,4 @@ Messages:
     számára, vagy írja be a 0 értéket a visszalépéshez.
   libreHttpUnknown: 'Ismeretlen http hiba: %i'
   wwcConfigGUILibreTranslateURLButton: Change Libre Translate
+  wwcConfigConnectionFail: 'Nem sikerült csatlakozni a következőhöz: %i.'

@@ -7,6 +7,7 @@ import org.bson.BsonInt64;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 
+import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.mongodb.MongoException;
 import com.mongodb.client.MongoClient;
@@ -15,6 +16,8 @@ import com.mongodb.client.MongoDatabase;
 
 public class MongoDBUtils {
 
+	//TODO: Silence messages in console? Maybe?
+	
 	private static MongoClient mongoClient;
 	
 	public static boolean isConnected() {
@@ -23,6 +26,10 @@ public class MongoDBUtils {
 	
 	public static MongoClient getConnection() {
 		return mongoClient;
+	}
+	
+	public static MongoDatabase getActiveDatabase() {
+		return mongoClient.getDatabase(WorldwideChat.instance.getConfigManager().getMainConfig().getString("Storage.mongoDatabaseName"));
 	}
 	
 	public static void connect(String host, String port, String databaseName, String username, String password, List<String> list) throws MongoException {
@@ -39,7 +46,7 @@ public class MongoDBUtils {
 		MongoClient testClient = MongoClients.create(url);
 		
 		/* Attempt connection, test with ping command */
-		MongoDatabase database = mongoClient.getDatabase(databaseName);
+		MongoDatabase database = testClient.getDatabase(databaseName);
 		Bson command = new BsonDocument("ping", new BsonInt64(1));
         Document commandResult = database.runCommand(command);
 		

@@ -320,8 +320,6 @@ Messages:
   wwcTimeoutExceptionConsole: ಆಟಗಾರ %i ಅವರ ಇತ್ತೀಚಿನ ವಿನಂತಿಯ ಸಮಯವನ್ನು ಹೊಂದಿದ್ದೇನೆ.
     ಈ ದೋಷವು ಮಾರಣಾಂತಿಕವಲ್ಲ, ಆದರೆ ಅದು ಸಂಭವಿಸುತ್ತಲೇ ಹೋದರೆ ವಿಶ್ವವಿಚಾಟ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಬೇಕು.
   wwcGUIPageNumber: 'ಪುಟ ಸಂಖ್ಯೆ: %i'
-  wwcConfigSQLFail: SQL ಗೆ ಸಂಪರ್ಕಿಸಲು ವಿಫಲವಾಗಿದೆ.
-  wwcConfigSQLSuccess: SQL ಗೆ ಯಶಸ್ವಿಯಾಗಿ ಸಂಪರ್ಕ!
   wwcConfigYAMLFallback: YAML ಗೆ ಮತ್ತೆ ಬೀಳುವುದು...
   wwcConfigGUIToggleSQLButton: SQL ಟಾಗಲ್
   wwcConfigConversationToggleSQLSuccess: SQL ಯಶಸ್ವಿಯಾಗಿ toggled. ಬದಲಾವಣೆಗೆ ಮರುಲೋಡ್
@@ -397,3 +395,4 @@ Messages:
     ಒಂದು URL ಅನ್ನು ಇನ್ಪುಟ್ ಮಾಡಿ, ಅಥವ ಹಿಂತಿರುಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
   libreHttpUnknown: 'ಗೊತ್ತಿಲ್ಲದ http ದೋಷ: %i'
   wwcConfigGUILibreTranslateURLButton: ಉಚಿತ ಭಾಷಾಂತರಿಸಿ URL ಅನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigConnectionFail: '%i ಗೆ ಸಂಪರ್ಕ ಕಲ್ಪಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ.'

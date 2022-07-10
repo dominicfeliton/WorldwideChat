@@ -317,8 +317,6 @@ Messages:
   wwcTimeoutExceptionConsole: Spēlētājs %Man bija pēdējais pieprasījuma taimauts.
     Šī kļūda nav letāla, bet WorldwideChat ir jāpārlādē, ja tā turpina notikt.
   wwcGUIPageNumber: 'Lapas numurs: %i'
-  wwcConfigSQLFail: Neizdevās izveidot savienojumu ar SQL.
-  wwcConfigSQLSuccess: Veiksmīgi savienots ar SQL!
   wwcConfigYAMLFallback: Falling atpakaļ uz YAML...
   wwcConfigGUIToggleSQLButton: Pārslēgt SQL
   wwcConfigConversationToggleSQLSuccess: SQL pārslēgts veiksmīgi. Pārlādēt, lai izmaiņas
@@ -395,3 +393,4 @@ Messages:
     URL vai ierakstiet 0, lai atgrieztos.
   libreHttpUnknown: 'Nezināma http kļūda: %i'
   wwcConfigGUILibreTranslateURLButton: Mainīt bezmaksas tulkošanas URL
+  wwcConfigConnectionFail: Neizdevās pieslēgties %i.

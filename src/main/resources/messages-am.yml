@@ -273,8 +273,6 @@ Messages:
   wwcTimeoutExceptionConsole: ተጫዋች %እኔ በጣም የቅርብ ጊዜ ጥያቄ የእረፍት ጊዜ ነበር። ይህ ስህተት ለሞት የሚዳርግ
     አይደለም, ነገር ግን በዓለም አቀፍ ደረጃ መከሰቱን ከቀጠለ ዳግም መጫን አለበት።
   wwcGUIPageNumber: 'የገጽ ቁጥር: %i'
-  wwcConfigSQLFail: ከ SQL ጋር መገናኘት አልተሳካም።
-  wwcConfigSQLSuccess: SQL ጋር በተሳካ ሁኔታ ተገናኝቷል!
   wwcConfigYAMLFallback: ወደ ያምል ተመልሶ መውደቅ...
   wwcConfigGUIToggleSQLButton: SQL ቀያይር
   wwcConfigConversationToggleSQLSuccess: SQL በተሳካ ሁኔታ ቀይሯል። ለውጡ ተግባራዊ እንዲሆን ዳግም ይጫኑ።
@@ -344,3 +342,4 @@ Messages:
     ወደኋላ ለመመለስ 0 ይተይቡ።
   libreHttpUnknown: 'ያልታወቀ http ስህተት: %i'
   wwcConfigGUILibreTranslateURLButton: ሊብሬ ዩአርኤል ተርጉም ይቀይሩ
+  wwcConfigConnectionFail: ከ %i ጋር መገናኘት አልተሳካም።

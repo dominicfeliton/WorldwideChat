@@ -321,8 +321,6 @@ Messages:
     Denne fejl er ikke dødelig, men WorldwideChat skal genindlæses, hvis det fortsætter
     med at ske.
   wwcGUIPageNumber: 'Sidetal: %i'
-  wwcConfigSQLFail: Det lykkedes ikke at oprette forbindelse til SQL.
-  wwcConfigSQLSuccess: Succesfuld tilsluttet SQL!
   wwcConfigYAMLFallback: Falder tilbage til YAML...
   wwcConfigGUIToggleSQLButton: Slå SQL til
   wwcConfigConversationToggleSQLSuccess: SQL skikkede med succes. Genindlæs for ændringen
@@ -394,3 +392,4 @@ Messages:
     URL for Libre, eller skriv 0 for at gå tilbage.
   libreHttpUnknown: 'Ukendt http-fejl: %i'
   wwcConfigGUILibreTranslateURLButton: Skift Libre Oversæt URL
+  wwcConfigConnectionFail: Der kunne ikke oprettes forbindelse til %i.

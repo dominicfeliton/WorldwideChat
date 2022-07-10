@@ -328,8 +328,6 @@ Messages:
     սխալը ճակատագրական չէ, բայց WorldWideHat- ը պետք է վերբեռնվի, եթե այն շարունակում
     է տեղի ունենալ:'
   wwcGUIPageNumber: 'Էջի համարը: %i'
-  wwcConfigSQLFail: 'Չհաջողվեց միանալ SQL- ին:'
-  wwcConfigSQLSuccess: Հաջողությամբ միացված է SQL!
   wwcConfigYAMLFallback: Ընկնում ետ YAML...
   wwcConfigGUIToggleSQLButton: Toggle SQL
   wwcConfigConversationToggleSQLSuccess: 'SQL toggled հաջողությամբ. Վերբեռնել փոփոխության
@@ -404,3 +402,4 @@ Messages:
     URL Libre- ի համար, կամ մուտքագրել 0 ՝ վերադառնալու համար:'
   libreHttpUnknown: 'Անհայտ http սխալ: %i'
   wwcConfigGUILibreTranslateURLButton: Փոխել ազատ Թարգմանել URL
+  wwcConfigConnectionFail: 'Չհաջողվեց միանալ %i- ին:'

@@ -317,8 +317,6 @@ Messages:
     ഉണ്ടായിരുന്നു. ഈ പിശക് മാരകമായ അല്ല, എന്നാൽ വൊര്ല്ദ്വിദെഛത് അത് സംഭവിക്കാൻ തുടരുകയാണെങ്കിൽ
     റീലോഡ് വേണം.
   wwcGUIPageNumber: 'പേജ് നമ്പർ: %i'
-  wwcConfigSQLFail: SQL- ലേക്ക് കണക്റ്റുചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.
-  wwcConfigSQLSuccess: വിജയകരമായി SQL- ലേക്ക് കണക്റ്റുചെയ്തു!
   wwcConfigYAMLFallback: തിരികെ YAML ലേക്ക് വീണു...
   wwcConfigGUIToggleSQLButton: ടോഗിൾ SQL
   wwcConfigConversationToggleSQLSuccess: SQL വിജയകരമായി ടോഗിൾ ചെയ്തു. മാറ്റം പ്രാബല്യത്തിൽ
@@ -395,3 +393,4 @@ Messages:
     ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
   libreHttpUnknown: 'അജ്ഞാതമായ http പിശക്: %i'
   wwcConfigGUILibreTranslateURLButton: മാറ്റുക സ്വതന്ത്ര URL വിവർത്തനം
+  wwcConfigConnectionFail: '%i ലേക്ക് കണക്റ്റുചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.'

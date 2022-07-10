@@ -343,8 +343,6 @@ Messages:
     Dieser Fehler ist nicht schwerwiegend, aber WorldwideChat sollte neu geladen werden,
     falls er weiterhin auftritt.
   wwcGUIPageNumber: 'Seitenzahl: %i'
-  wwcConfigSQLFail: Es konnte keine Verbindung zu SQL hergestellt werden.
-  wwcConfigSQLSuccess: Erfolgreich mit SQL verbunden!
   wwcConfigYAMLFallback: Rückfall auf YAML...
   wwcConfigGUIToggleSQLButton: SQL umschalten
   wwcConfigConversationToggleSQLSuccess: SQL wurde erfolgreich umgeschaltet. Laden
@@ -430,3 +428,4 @@ Messages:
     für Libre ein, oder geben Sie 0 ein, um zurückzugehen.
   libreHttpUnknown: 'Unbekannter HTTP-Fehler: %i'
   wwcConfigGUILibreTranslateURLButton: Libre Übersetzungs-URL ändern
+  wwcConfigConnectionFail: Verbindung mit %i konnte nicht hergestellt werden.

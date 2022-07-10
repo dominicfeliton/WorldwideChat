@@ -303,8 +303,6 @@ Messages:
   wwcTimeoutExceptionConsole: Mängija %Mul oli nende viimane taotluse ajalõpp. See
     viga ei ole surmav, kuid WorldwideChat tuleks uuesti laadida, kui see jätkub.
   wwcGUIPageNumber: 'Lehekülje number: %i'
-  wwcConfigSQLFail: SQL-iga ühenduse loomine nurjus.
-  wwcConfigSQLSuccess: SQL-iga edukalt ühendatud!
   wwcConfigYAMLFallback: Langevad tagasi YAML-i...
   wwcConfigGUIToggleSQLButton: Lülita SQL
   wwcConfigConversationToggleSQLSuccess: SQL lülitati edukalt. Laadige muudatuse jõustumiseks
@@ -377,3 +375,4 @@ Messages:
     tippige 0, et minna tagasi.
   libreHttpUnknown: 'Tundmatu http viga: %i'
   wwcConfigGUILibreTranslateURLButton: Muuda Libre Tõlgi URL
+  wwcConfigConnectionFail: Ühenduse loomine %i nurjus.

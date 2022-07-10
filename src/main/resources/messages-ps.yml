@@ -308,8 +308,6 @@ Messages:
   wwcTimeoutExceptionConsole: لوبغاړي٪ ما د دوی ترټولو وروستي غوښتنې وخت درلود. دا
     تېروتنه وژونکي نه ده، مګر د نړۍ په کچه باید بیا پورته شي که چیرې دا پیښ شي.
   wwcGUIPageNumber: 'د مخ شمېر: %i'
-  wwcConfigSQLFail: د SQL سره نښلول پاتې راغلل.
-  wwcConfigSQLSuccess: په بریالیتوب سره د SQL سره وصل شو!
   wwcConfigYAMLFallback: YAML ته بیرته راوتل...
   wwcConfigGUIToggleSQLButton: غږول SQL
   wwcConfigConversationToggleSQLSuccess: SQL په بریالیتوب سره ټګ شو. د بدلون لپاره
@@ -386,3 +384,4 @@ Messages:
     URL داخل کړئ، یا د بېرته تګ لپاره 0 ولیکئ.
   libreHttpUnknown: 'ناپېژندلې http تېروتنه: %i'
   wwcConfigGUILibreTranslateURLButton: ليبر ژباړل URL بدلول
+  wwcConfigConnectionFail: .په نښلولو کې پاتې راغی %i

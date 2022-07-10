@@ -317,8 +317,6 @@ Messages:
     Ova greška nije fatalna, ali WorldwideChat treba ponovo učitati ako se i dalje
     događa.
   wwcGUIPageNumber: 'Broj stranice: %i'
-  wwcConfigSQLFail: Povezivanje sa SQL nije uspjelo.
-  wwcConfigSQLSuccess: Uspješno povezan sa SQL!
   wwcConfigYAMLFallback: Padajući natrag u YAML...
   wwcConfigGUIToggleSQLButton: Prebaci SQL
   wwcConfigConversationToggleSQLSuccess: SQL uspješno je prevučen. Ponovno učitajte
@@ -395,3 +393,4 @@ Messages:
     ili upišite 0 da biste se vratili.
   libreHttpUnknown: 'Nepoznata http greška: %i'
   wwcConfigGUILibreTranslateURLButton: Promijeni URL za besplatno prevođenje
+  wwcConfigConnectionFail: Povezivanje sa %i nije uspjelo.

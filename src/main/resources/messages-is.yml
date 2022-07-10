@@ -319,8 +319,6 @@ Messages:
     Þessi villa er ekki banvæn, en WorldwideChat ætti að endurhlaða ef það heldur
     áfram að gerast.
   wwcGUIPageNumber: 'Síðu númer: %i'
-  wwcConfigSQLFail: Mistókst að tengjast SQL.
-  wwcConfigSQLSuccess: Tókst tengdur við SQL!
   wwcConfigYAMLFallback: Falla aftur til YAML...
   wwcConfigGUIToggleSQLButton: Skipta SQL
   wwcConfigConversationToggleSQLSuccess: SQL skipta með góðum árangri. Endurhlaða
@@ -395,3 +393,4 @@ Messages:
     inn vefslóð fyrir Libre, eða tegund 0 til að fara til baka.
   libreHttpUnknown: 'Óþekkt http villa: %i'
   wwcConfigGUILibreTranslateURLButton: Breyta Libre Þýða URL
+  wwcConfigConnectionFail: Mistókst að tengjast %i.

@@ -330,8 +330,6 @@ Messages:
     Ky gabim nuk është fatal, por WorldwideChat duhet të rifreskohet nëse vazhdon
     të ndodhë.
   wwcGUIPageNumber: 'Numri i faqes: %i'
-  wwcConfigSQLFail: Dështoi të lidhet me SQL.
-  wwcConfigSQLSuccess: Lidhur me sukses me SQL!
   wwcConfigYAMLFallback: Rënia përsëri në YAML...
   wwcConfigGUIToggleSQLButton: Toggle SQL
   wwcConfigConversationToggleSQLSuccess: SQL toggled me sukses. Rifresko që ndryshimi
@@ -411,3 +409,4 @@ Messages:
     URL për Libre, ose shkruani 0 për t'u kthyer prapa.
   libreHttpUnknown: 'Gabim i panjohur http: %i'
   wwcConfigGUILibreTranslateURLButton: Ndrysho Libre Translate URL
+  wwcConfigConnectionFail: Dështoi të lidhej me %i.

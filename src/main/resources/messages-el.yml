@@ -339,8 +339,6 @@ Messages:
     του. Αυτό το σφάλμα δεν είναι θανατηφόρο, αλλά το WorldwideChat θα πρέπει να επαναφορτωθεί
     εάν εξακολουθεί να συμβαίνει.
   wwcGUIPageNumber: 'Αριθμός σελίδας: %i'
-  wwcConfigSQLFail: Αποτυχία σύνδεσης με SQL.
-  wwcConfigSQLSuccess: Επιτυχής σύνδεση με SQL!
   wwcConfigYAMLFallback: Πέφτει πίσω στο YAML...
   wwcConfigGUIToggleSQLButton: Εναλλαγή SQL
   wwcConfigConversationToggleSQLSuccess: SQL εναλλαγή με επιτυχία. Επαναφόρτωση για
@@ -425,3 +423,4 @@ Messages:
     URL για το Libre, ή πληκτρολογήστε 0 για να επιστρέψετε.
   libreHttpUnknown: 'Άγνωστο σφάλμα http: %i'
   wwcConfigGUILibreTranslateURLButton: Αλλαγή διεύθυνσης URL μετάφρασης Libre
+  wwcConfigConnectionFail: Αποτυχία σύνδεσης με το %i.

@@ -308,8 +308,6 @@ Messages:
     қате өлімге ұшырамайды, бірақ WorldwideChat оны жалғастыра берсе, қайта жүктеу
     керек.
   wwcGUIPageNumber: 'Бет нөмірі: %i'
-  wwcConfigSQLFail: SQL қосылу үшін сәтсіз аяқталды.
-  wwcConfigSQLSuccess: SQL жүйесіне сәтті қосылған!
   wwcConfigYAMLFallback: YAML кері құлап...
   wwcConfigGUIToggleSQLButton: SQL ауыстыру
   wwcConfigConversationToggleSQLSuccess: SQL сәтті болды. Өзгеріс күшіне ену үшін
@@ -385,3 +383,4 @@ Messages:
     енгізіңіз сұраймыз, немесе кері қайту үшін 0 теріңіз.
   libreHttpUnknown: 'Белгісіз http қатесі: %i'
   wwcConfigGUILibreTranslateURLButton: Өзгерту Тегін Аудару URL
+  wwcConfigConnectionFail: '%i қосыла алмады.'

@@ -311,8 +311,6 @@ Messages:
   wwcTimeoutExceptionConsole: Pelaaja %i oli viimeisin pyyntöaikakatkaisu. Tämä virhe
     ei ole kohtalokas, mutta WorldwideChat tulisi ladata uudelleen, jos se jatkuu.
   wwcGUIPageNumber: 'Sivunumero: %i'
-  wwcConfigSQLFail: 'Yhteyden muodostaminen SQL: ään epäonnistui.'
-  wwcConfigSQLSuccess: 'Yhdistetty onnistuneesti SQL: ään!'
   wwcConfigYAMLFallback: 'Putoaminen takaisin YAML: ään...'
   wwcConfigGUIToggleSQLButton: Vaihda SQL
   wwcConfigConversationToggleSQLSuccess: SQL vaihtoi onnistuneesti. Lataa uudelleen,
@@ -387,3 +385,4 @@ Messages:
     tai kirjoita 0 palataksesi takaisin.
   libreHttpUnknown: 'Tuntematon http-virhe: %i'
   wwcConfigGUILibreTranslateURLButton: Change Libre Käännä URL
+  wwcConfigConnectionFail: Yhteyden muodostaminen kohteeseen %i epäonnistui.

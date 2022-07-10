@@ -308,8 +308,6 @@ Messages:
   wwcTimeoutExceptionConsole: بازیکن %من آخرین مهلت درخواست خود را به حال. این خطا
     کشنده نیست، اما WorldwideChat باید دوباره بارگذاری شود اگر ادامه یابد.
   wwcGUIPageNumber: 'شماره صفحه: %i'
-  wwcConfigSQLFail: اتصال به SQL شکست خورد.
-  wwcConfigSQLSuccess: با موفقیت به SQL متصل شد!
   wwcConfigYAMLFallback: برگشتن به يامل
   wwcConfigGUIToggleSQLButton: زدن ضامن اس‌کیوال
   wwcConfigConversationToggleSQLSuccess: SQL با موفقیت پرتاب شد. بارگذاری مجدد برای
@@ -385,3 +383,4 @@ Messages:
     کنید یا 0 را تایپ کنید تا به عقب برگردید.
   libreHttpUnknown: 'خطای HTTP ناشناخته: %i'
   wwcConfigGUILibreTranslateURLButton: تغییر رایگان ترجمه URL
+  wwcConfigConnectionFail: اتصال به %i شکست خورد.

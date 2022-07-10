@@ -333,8 +333,6 @@ Messages:
     Cette erreur n'est pas fatale, mais WorldwideChat doit être rechargé si elle continue
     à se produire.
   wwcGUIPageNumber: 'Numéro de page: %i'
-  wwcConfigSQLFail: Impossible de se connecter à SQL.
-  wwcConfigSQLSuccess: Connexion réussie à SQL!
   wwcConfigYAMLFallback: Revenir à YAML...
   wwcConfigGUIToggleSQLButton: Basculer SQL
   wwcConfigConversationToggleSQLSuccess: SQL a basculé avec succès. Rechargez pour
@@ -417,3 +415,4 @@ Messages:
     Libre, ou tapez 0 pour revenir en arrière.
   libreHttpUnknown: 'Erreur HTTP inconnue: %i'
   wwcConfigGUILibreTranslateURLButton: Changer l'URL de traduction libre
+  wwcConfigConnectionFail: Impossible de se connecter à %i.

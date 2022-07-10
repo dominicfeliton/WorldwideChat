@@ -331,8 +331,6 @@ Messages:
     Această eroare nu este fatală, dar WorldwideChat ar trebui reîncărcată dacă continuă
     să se întâmple.
   wwcGUIPageNumber: 'Număr pagină: %i'
-  wwcConfigSQLFail: Nu a reușit să se conecteze la SQL.
-  wwcConfigSQLSuccess: Conectat cu succes la SQL!
   wwcConfigYAMLFallback: Revenind la YAML...
   wwcConfigGUIToggleSQLButton: Comută SQL
   wwcConfigConversationToggleSQLSuccess: SQL a comuta cu succes. Reîncărcați pentru
@@ -411,3 +409,4 @@ Messages:
     URL pentru Libre sau tastați 0 pentru a reveni.
   libreHttpUnknown: 'Eroare http necunoscută: %i'
   wwcConfigGUILibreTranslateURLButton: Schimbați URL-ul Traduceți gratuit
+  wwcConfigConnectionFail: Conectarea la %i nu a reușit.

@@ -321,8 +321,6 @@ Messages:
     yw'r gwall hwn yn angheuol, ond dylid ail-lwytho WorldwideChat os yw'n parhau
     i ddigwydd.
   wwcGUIPageNumber: 'Rhif Tudalen: %i'
-  wwcConfigSQLFail: Wedi methu â chysylltu â SQL.
-  wwcConfigSQLSuccess: Wedi'i gysylltu'n llwyddiannus â SQL!
   wwcConfigYAMLFallback: Syrthio yn ôl i YAML...
   wwcConfigGUIToggleSQLButton: Toggle SQL
   wwcConfigConversationToggleSQLSuccess: SQL toggled yn llwyddiannus. Ail-lwytho ar
@@ -398,3 +396,4 @@ Messages:
     Libre, neu deipiwch 0 i fynd yn ôl.
   libreHttpUnknown: 'Gwall http anhysbys: %i'
   wwcConfigGUILibreTranslateURLButton: Newid Libre Cyfieithu URL
+  wwcConfigConnectionFail: Methwyd cysylltu â %i.

@@ -327,8 +327,6 @@ Messages:
   wwcTimeoutExceptionConsole: Играчот %Имав нивните најнови барање тајмаут. Оваа грешка
     не е фатална, но WorldwideChat треба да се превчита ако продолжи да се случува.
   wwcGUIPageNumber: 'Број на страница: %i'
-  wwcConfigSQLFail: Не успеа да се поврзе со SQL.
-  wwcConfigSQLSuccess: Успешно поврзан со SQL!
   wwcConfigYAMLFallback: Паѓа назад во YAML...
   wwcConfigGUIToggleSQLButton: Вклучи SQL
   wwcConfigConversationToggleSQLSuccess: SQL успешно се преточи. Вчитајте повторно
@@ -406,3 +404,4 @@ Messages:
     URL за Libre, или напишете 0 за да се вратите назад.
   libreHttpUnknown: 'Непозната http грешка: %i'
   wwcConfigGUILibreTranslateURLButton: Промена Слободен Преведете URL
+  wwcConfigConnectionFail: Не успеав да се поврзам со %i.

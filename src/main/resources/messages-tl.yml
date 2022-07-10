@@ -346,8 +346,6 @@ Messages:
     timeout ng kahilingan. Ang error na ito ay hindi nakamamatay, ngunit dapat i-reload
     ang WorldwideChat kung patuloy itong mangyayari.
   wwcGUIPageNumber: 'Numero ng Pahina: %i'
-  wwcConfigSQLFail: Nabigong kumonekta sa SQL.
-  wwcConfigSQLSuccess: Matagumpay na nakakonekta sa SQL!
   wwcConfigYAMLFallback: Bumabagsak pabalik sa YAML...
   wwcConfigGUIToggleSQLButton: I-toggle ang SQL
   wwcConfigConversationToggleSQLSuccess: Matagumpay na toggled ang SQL. I-reload para
@@ -433,3 +431,4 @@ Messages:
     para sa Libre, o i-type ang 0 upang bumalik.
   libreHttpUnknown: 'Hindi kilalang http error: %i'
   wwcConfigGUILibreTranslateURLButton: Baguhin Libre Translate URL
+  wwcConfigConnectionFail: Nabigong kumonekta sa %i.

@@ -313,8 +313,6 @@ Messages:
     یہ غلطی مہلک نہیں ہے، لیکن ورلڈ چیٹ کو دوبارہ لوڈ کیا جانا چاہئے اگر یہ جاری رہتا
     ہے.
   wwcGUIPageNumber: 'صفحہ نمبر: %i'
-  wwcConfigSQLFail: SQL سے متصل ہونے میں ناکام رہا۔
-  wwcConfigSQLSuccess: کامیابی سے SQL سے منسلک!
   wwcConfigYAMLFallback: YAML واپس گرنے...
   wwcConfigGUIToggleSQLButton: ٹوگل SQL
   wwcConfigConversationToggleSQLSuccess: SQL نے کامیابی سے ٹوگل کیا. اثر انداز کرنے
@@ -392,3 +390,4 @@ Messages:
     ایک URL ان پٹ کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
   libreHttpUnknown: 'نامعلوم HTTP غلطی: %i'
   wwcConfigGUILibreTranslateURLButton: مفت تبدیل کریں URL کا ترجمہ کریں
+  wwcConfigConnectionFail: '%i سے متصل ہونے میں ناکام.'

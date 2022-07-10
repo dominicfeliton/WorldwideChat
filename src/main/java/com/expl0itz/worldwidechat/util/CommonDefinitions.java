@@ -133,11 +133,11 @@ public class CommonDefinitions {
 	  * @return Boolean - Whether languages are the same or not
 	  */
 	public static boolean isSameLang(String first, String second) {
-		return getSupportedTranslatorLang(first).getLangCode().equals(getSupportedTranslatorLang(second).getLangCode());
+		return isSupportedTranslatorLang(first) && isSupportedTranslatorLang(second) && getSupportedTranslatorLang(first).getLangCode().equals(getSupportedTranslatorLang(second).getLangCode());
 	}
 
 	/**
-	  * Checks if string is a supported language under the current translator.
+	  * Gets a supported language under the current translator.
 	  * @param in - A valid language name
 	  * @return SupportedLanguageObject - Will be completely empty if the language is invalid
 	  */
@@ -148,6 +148,15 @@ public class CommonDefinitions {
 			}
 		}
 		return new SupportedLanguageObject("", "", "", false, false);
+	}
+	
+	/**
+	 * Checks if a language is supported under the current translator.
+	 * @param in - A valid language name
+	 * @return true if supported, false otherwise
+	 */
+	public static boolean isSupportedTranslatorLang(String in) {
+		return !getSupportedTranslatorLang(in).getLangCode().equals("");
 	}
 
 	/**

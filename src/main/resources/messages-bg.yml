@@ -321,8 +321,6 @@ Messages:
     грешка не е фатална, но WorldwideChat трябва да се презареди, ако продължава да
     се случва.
   wwcGUIPageNumber: 'Номер на страницата: %i'
-  wwcConfigSQLFail: Неуспешно свързване към SQL.
-  wwcConfigSQLSuccess: Успешно свързан с SQL!
   wwcConfigYAMLFallback: Връщайки се към ЯМЛ...
   wwcConfigGUIToggleSQLButton: Превключване на SQL
   wwcConfigConversationToggleSQLSuccess: SQL прекъсна успешно. Презареждане, за да
@@ -400,3 +398,4 @@ Messages:
     адрес за Libre или въведете 0, за да се върнете.
   libreHttpUnknown: 'Неизвестна http грешка: %i'
   wwcConfigGUILibreTranslateURLButton: Промяна на безплатен превод URL
+  wwcConfigConnectionFail: Неуспешно свързване към %i.

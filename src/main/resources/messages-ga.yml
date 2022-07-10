@@ -338,8 +338,6 @@ Messages:
     Níl an earráid seo marfach, ach ba chóir WorldwideChat a athlódáil má leanann
     sé ag tarlú.
   wwcGUIPageNumber: 'Uimhir Leathanach: %i'
-  wwcConfigSQLFail: Theip ar ceangal le SQL.
-  wwcConfigSQLSuccess: Go rathúil ceangailte le SQL!
   wwcConfigYAMLFallback: Ag titim ar ais go YAML...
   wwcConfigGUIToggleSQLButton: SQL Scoránaigh
   wwcConfigConversationToggleSQLSuccess: SQL toggled go rathúil. Athlódáil don athrú
@@ -419,3 +417,4 @@ Messages:
     ionchur URL do Libre, nó cineál 0 chun dul ar ais.
   libreHttpUnknown: 'Earráid http anaithnid: %i'
   wwcConfigGUILibreTranslateURLButton: Athraigh Saor in Aisce Aistrigh URL
+  wwcConfigConnectionFail: Theip ar ceangal le %i.

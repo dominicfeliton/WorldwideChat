@@ -320,8 +320,6 @@ Messages:
     байсан. Энэ алдаа нь үхлийн аюултай биш юм, гэхдээ WorldwideChat энэ нь юу хэвээр
     байгаа бол дахин ачаалах хэрэгтэй.
   wwcGUIPageNumber: 'Хуудасны дугаар: %i'
-  wwcConfigSQLFail: SQL холбогдож чадаагүй.
-  wwcConfigSQLSuccess: Амжилттай SQL холбогдсон!
   wwcConfigYAMLFallback: YAML руу буцаж унах...
   wwcConfigGUIToggleSQLButton: SQL Toggle
   wwcConfigConversationToggleSQLSuccess: SQL амжилттай toggled. Өөрчлөлтийг хүчин
@@ -401,3 +399,4 @@ Messages:
     URL, эсвэл төрөл 0 буцах.
   libreHttpUnknown: 'Үл мэдэгдэх HTTP алдаа: %i'
   wwcConfigGUILibreTranslateURLButton: Чөлөөт URL Translate өөрчлөх
+  wwcConfigConnectionFail: '%i руу холбогдож чадсангүй.'

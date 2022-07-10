@@ -313,8 +313,6 @@ Messages:
     Tato chyba není fatální, ale WorldwideChat by měl být znovu načten, pokud se tak
     stane.
   wwcGUIPageNumber: 'Číslo stránky: %i'
-  wwcConfigSQLFail: Připojení k SQL se nezdařilo.
-  wwcConfigSQLSuccess: Úspěšně připojen k SQL!
   wwcConfigYAMLFallback: Pád zpět na YAML...
   wwcConfigGUIToggleSQLButton: Přepnout SQL
   wwcConfigConversationToggleSQLSuccess: SQL se úspěšně přepne. Znovu načtěte, aby
@@ -390,3 +388,4 @@ Messages:
     nebo zadejte 0 pro návrat zpět.
   libreHttpUnknown: 'Neznámá chyba http: %i'
   wwcConfigGUILibreTranslateURLButton: Změnit zdarma Přeložit URL
+  wwcConfigConnectionFail: Připojení k %i se nezdařilo.

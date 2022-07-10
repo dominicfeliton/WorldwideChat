@@ -312,8 +312,6 @@ Messages:
   wwcTimeoutExceptionConsole: Žaidėjas %Aš turėjau naujausią užklausą laiko. Ši klaida
     nėra mirtina, bet WorldwideChat turėtų būti perkrautas, jei ji ir toliau įvyks.
   wwcGUIPageNumber: 'Puslapio numeris: %i'
-  wwcConfigSQLFail: Nepavyko prisijungti prie SQL.
-  wwcConfigSQLSuccess: Sėkmingai prijungtas prie SQL!
   wwcConfigYAMLFallback: Sumažėja atgal į YAML...
   wwcConfigGUIToggleSQLButton: Perjungti SQL
   wwcConfigConversationToggleSQLSuccess: SQL sėkmingai perėjo. Perkraukite, kad pakeitimas
@@ -390,3 +388,4 @@ Messages:
     “Libre”, arba įveskite 0, kad grįžtumėte atgal.
   libreHttpUnknown: 'Nežinoma http klaida: %i'
   wwcConfigGUILibreTranslateURLButton: Keisti Nemokamai Versti URL
+  wwcConfigConnectionFail: Nepavyko prisijungti prie %i.

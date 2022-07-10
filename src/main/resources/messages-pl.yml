@@ -320,8 +320,6 @@ Messages:
     błąd nie jest krytyczny, ale WorldwideChat powinien zostać ponownie załadowany,
     jeśli nadal występuje.
   wwcGUIPageNumber: 'Numer strony: %i'
-  wwcConfigSQLFail: Połączenie z SQL nie powiodło się.
-  wwcConfigSQLSuccess: Pomyślnie podłączono do SQL!
   wwcConfigYAMLFallback: Spada z powrotem do YAML...
   wwcConfigGUIToggleSQLButton: Przełącz SQL
   wwcConfigConversationToggleSQLSuccess: SQL został pomyślnie przełączony. Załaduj
@@ -397,3 +395,4 @@ Messages:
     Libre lub wpisz 0, aby wrócić.
   libreHttpUnknown: 'Nieznany błąd http: %i'
   wwcConfigGUILibreTranslateURLButton: Zmień URL Libre Translate
+  wwcConfigConnectionFail: Połączenie z %i nie powiodło się.

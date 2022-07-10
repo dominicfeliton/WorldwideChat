@@ -328,8 +328,6 @@ Messages:
     sol·licitud. Aquest error no és fatal, però s'ha de tornar a carregar WorldwideChat
     si continua succeint.
   wwcGUIPageNumber: 'Número de pàgina: %i'
-  wwcConfigSQLFail: No s'ha pogut connectar a SQL.
-  wwcConfigSQLSuccess: Connectat amb èxit a SQL!
   wwcConfigYAMLFallback: Caient de nou a YAML...
   wwcConfigGUIToggleSQLButton: Commuta SQL
   wwcConfigConversationToggleSQLSuccess: SQL es va torgar amb èxit. Torna a carregar
@@ -414,3 +412,4 @@ Messages:
     URL per a Libre, o escriviu 0 per tornar enrere.
   libreHttpUnknown: 'Error http desconegut: %i'
   wwcConfigGUILibreTranslateURLButton: Canvia l'URL de traducció lliure
+  wwcConfigConnectionFail: No s'ha pogut connectar a %i.

@@ -320,8 +320,6 @@ Messages:
     l-iżball mhuwiex fatali, iżda WorldwideChat għandu jerġa 'jitgħabba jekk jibqa'
     jiġri.
   wwcGUIPageNumber: 'Paġna Numru: %'
-  wwcConfigSQLFail: Naqas milli jgħaqqdu l SQL.
-  wwcConfigSQLSuccess: B'suċċess konnessi ma 'SQL!
   wwcConfigYAMLFallback: Jaqa 'lura għal YAML...
   wwcConfigGUIToggleSQLButton: SQL toggle
   wwcConfigConversationToggleSQLSuccess: SQL toggled b'suċċess. Reload biex il-bidla
@@ -395,3 +393,4 @@ Messages:
     URL għall Libre, jew tip 0 li jmorru lura.
   libreHttpUnknown: 'Mhux magħruf żball http: %i'
   wwcConfigGUILibreTranslateURLButton: Bidla Free Ittraduċi URL
+  wwcConfigConnectionFail: Naqas li jikkonnettja ma %i.

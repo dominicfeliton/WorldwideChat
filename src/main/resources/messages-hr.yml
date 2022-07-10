@@ -316,8 +316,6 @@ Messages:
   wwcTimeoutExceptionConsole: Igrač %imao sam njihov najnoviji zahtjev timeout. Ova
     pogreška nije kobna, ali WorldwideChat treba ponovno učitati ako se nastavi događati.
   wwcGUIPageNumber: 'Broj stranice: %i'
-  wwcConfigSQLFail: Povezivanje na SQL nije uspjelo.
-  wwcConfigSQLSuccess: Uspješno spojen na SQL!
   wwcConfigYAMLFallback: Povratak na YAML...
   wwcConfigGUIToggleSQLButton: Uključi SQL
   wwcConfigConversationToggleSQLSuccess: SQL uspješno prešao. Ponovno učitajte kako
@@ -395,3 +393,4 @@ Messages:
     upišite 0 da biste se vratili.
   libreHttpUnknown: 'Nepoznata http pogreška: %i'
   wwcConfigGUILibreTranslateURLButton: Promijeni Libre URL za prijevod
+  wwcConfigConnectionFail: Povezivanje s %i nije uspjelo.

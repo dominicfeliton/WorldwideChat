@@ -309,8 +309,6 @@ Messages:
   wwcTimeoutExceptionConsole: Jwe Mwen te gen poz demann ki pi resan yo. Erè sa a
     se pa fatal, men WorldwideChat yo ta dwe rechargé si li kontinye ap rive.
   wwcGUIPageNumber: 'Nimewo Paj: %i'
-  wwcConfigSQLFail: Echwe pou konekte avèk SQL.
-  wwcConfigSQLSuccess: Avèk siksè konekte nan SQL!
   wwcConfigYAMLFallback: Tonbe tounen nan YAML...
   wwcConfigGUIToggleSQLButton: SQL baskil
   wwcConfigConversationToggleSQLSuccess: SQL baskile avèk siksè. Reload pou chanjman
@@ -383,3 +381,4 @@ Messages:
     pou gratis, oswa tape 0 yo ale tounen.
   libreHttpUnknown: 'Unknown http erè: % mwen'
   wwcConfigGUILibreTranslateURLButton: Chanje gratis Translate URL
+  wwcConfigConnectionFail: Echwe pou pou konekte pou % mwen.

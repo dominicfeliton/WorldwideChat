@@ -319,8 +319,6 @@ Messages:
     Ta napaka ni usodna, vendar je treba WorldwideChat ponovno naložiti, če se še
     naprej dogaja.
   wwcGUIPageNumber: 'Številka strani: %i'
-  wwcConfigSQLFail: Povezave s SQL ni uspelo.
-  wwcConfigSQLSuccess: Uspešno povezan s SQL!
   wwcConfigYAMLFallback: Padec nazaj na YAML...
   wwcConfigGUIToggleSQLButton: Preklopi SQL
   wwcConfigConversationToggleSQLSuccess: SQL uspešno preklapljanje. Ponovno naložite,
@@ -398,3 +396,4 @@ Messages:
     Libre ali vnesite 0, da se vrnete nazaj.
   libreHttpUnknown: 'Neznana napaka http: %i'
   wwcConfigGUILibreTranslateURLButton: Spremeni URL za brezplačno prevajanje
+  wwcConfigConnectionFail: Povezava z %i ni uspela.

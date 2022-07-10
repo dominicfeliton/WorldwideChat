@@ -313,8 +313,6 @@ Messages:
   wwcTimeoutExceptionConsole: Player %i მქონდა მათი უახლესი მოთხოვნის შეყოვნება. ეს
     შეცდომა არ არის ფატალური, მაგრამ WorldwideChat უნდა გადატვირთული თუ ის გრძელდება.
   wwcGUIPageNumber: 'გვერდის ნომერი: %i'
-  wwcConfigSQLFail: ვერ მოხერხდა SQL- თან დაკავშირება.
-  wwcConfigSQLSuccess: წარმატებით უკავშირდება SQL!
   wwcConfigYAMLFallback: დაცემა უკან YAML...
   wwcConfigGUIToggleSQLButton: გადართვა SQL
   wwcConfigConversationToggleSQLSuccess: SQL toggled წარმატებით. ცვლილებების შეცვლა
@@ -389,3 +387,4 @@ Messages:
     უფასოდ, ან ჩაწერეთ 0 დასაბრუნებლად.
   libreHttpUnknown: 'უცნობი http შეცდომა: %i'
   wwcConfigGUILibreTranslateURLButton: შეცვლა უფასო თარგმნის URL
+  wwcConfigConnectionFail: '%i- სთან დაკავშირება ვერ მოხერხდა.'

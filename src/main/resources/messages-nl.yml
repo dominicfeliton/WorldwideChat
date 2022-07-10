@@ -325,8 +325,6 @@ Messages:
     Deze fout is niet fataal, maar WorldwideChat moet opnieuw worden geladen als het
     blijft gebeuren.
   wwcGUIPageNumber: 'Paginanummer: %i'
-  wwcConfigSQLFail: Kan geen verbinding maken met SQL.
-  wwcConfigSQLSuccess: Succesvol verbonden met SQL!
   wwcConfigYAMLFallback: Terugvallen op YAML...
   wwcConfigGUIToggleSQLButton: SQL schakelen
   wwcConfigConversationToggleSQLSuccess: SQL is succesvol omgeschakeld. Herladen om
@@ -404,3 +402,4 @@ Messages:
     of typ 0 om terug te gaan.
   libreHttpUnknown: 'Onbekende http-fout: %i'
   wwcConfigGUILibreTranslateURLButton: De URL van Libre Translate wijzigen
+  wwcConfigConnectionFail: Kon geen verbinding maken met %i.

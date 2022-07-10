@@ -317,8 +317,6 @@ Messages:
     mereka. Kesalahan ini tidak membawa maut, tetapi WorldwideChat harus dimuat semula
     jika ia terus berlaku.
   wwcGUIPageNumber: 'Nombor Halaman: %i'
-  wwcConfigSQLFail: Gagal menyambung ke SQL.
-  wwcConfigSQLSuccess: Berjaya disambungkan ke SQL!
   wwcConfigYAMLFallback: Jatuh kembali ke YAML...
   wwcConfigGUIToggleSQLButton: Togol SQL
   wwcConfigConversationToggleSQLSuccess: SQL berjaya ditogol. Muat semula untuk perubahan
@@ -393,3 +391,4 @@ Messages:
     Percuma, atau taip 0 untuk kembali.
   libreHttpUnknown: 'Ralat http tidak diketahui: %i'
   wwcConfigGUILibreTranslateURLButton: Tukar Percuma Terjemah URL
+  wwcConfigConnectionFail: Gagal menyambung ke %i.

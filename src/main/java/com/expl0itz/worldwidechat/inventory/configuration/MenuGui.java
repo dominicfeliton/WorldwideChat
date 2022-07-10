@@ -269,7 +269,6 @@ public class MenuGui implements InventoryProvider {
 
 		@Override
 		public void rasterize(Player player, InventoryContents contents) {
-			//DEBUG
 			WWCInventoryManager.setCommonButton(x, y, player, contents, buttonName, args);
 		}
 		

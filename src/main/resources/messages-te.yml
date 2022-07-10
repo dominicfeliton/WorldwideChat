@@ -310,8 +310,6 @@ Messages:
     ఈ లోపం ప్రాణాంతకం కాదు, కానీ అది జరుగుతూనే ఉంటే WorldWideThemes.net చాట్ రీలోడ్
     చేయాలి.
   wwcGUIPageNumber: 'పేజీ సంఖ్య: %i'
-  wwcConfigSQLFail: SQL కు కనెక్ట్ చేయడంలో విఫలమైంది.
-  wwcConfigSQLSuccess: విజయవంతంగా SQL కనెక్ట్!
   wwcConfigYAMLFallback: YAML తిరిగి పడిపోవడం...
   wwcConfigGUIToggleSQLButton: SQL టోగుల్
   wwcConfigConversationToggleSQLSuccess: SQL విజయవంతంగా toggled. మార్పు అమలులోకి రావడానికి
@@ -387,3 +385,4 @@ Messages:
     ఇన్పుట్ చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
   libreHttpUnknown: 'తెలియని http దోషం: %i'
   wwcConfigGUILibreTranslateURLButton: మార్చు ఉచిత అనువదించు URL
+  wwcConfigConnectionFail: '%i కి కనెక్ట్ చేయడంలో విఫలమైంది.'

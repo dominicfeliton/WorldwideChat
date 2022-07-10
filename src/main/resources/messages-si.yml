@@ -317,8 +317,6 @@ Messages:
     මෙම දෝෂය මාරාන්තික නොවේ, නමුත් එය දිගටම සිදු වුවහොත් වර්ල්ඩ්වයිඩෙකැට් නැවත පූරණය
     කළ යුතුය.
   wwcGUIPageNumber: 'පිටු අංකය: %i'
-  wwcConfigSQLFail: SQL වෙත සම්බන්ධ වීමට අසමත් විය.
-  wwcConfigSQLSuccess: SQL සමඟ සාර්ථකව සම්බන්ධ වී ඇත!
   wwcConfigYAMLFallback: YAML වෙත ආපසු වැටීම...
   wwcConfigGUIToggleSQLButton: ටොගල් කරන්න SQL
   wwcConfigConversationToggleSQLSuccess: SQL සාර්ථකව ටොගල කළේය. ක්රියාත්මක වන පරිදි
@@ -391,3 +389,4 @@ Messages:
     එකක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   libreHttpUnknown: 'නොදන්නා http දෝෂය: %i'
   wwcConfigGUILibreTranslateURLButton: නිදහස් පරිවර්තනය URL එක වෙනස්
+  wwcConfigConnectionFail: '%i වෙත සම්බන්ධ වීමට අසමත් විය.'

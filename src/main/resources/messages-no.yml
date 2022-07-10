@@ -308,8 +308,6 @@ Messages:
     Denne feilen er ikke dødelig, men WorldwideChat bør lastes på nytt hvis den fortsetter
     å skje.
   wwcGUIPageNumber: 'Sidetall: %i'
-  wwcConfigSQLFail: Kan ikke koble til SQL.
-  wwcConfigSQLSuccess: Vellykket koblet til SQL!
   wwcConfigYAMLFallback: Faller tilbake til YAML...
   wwcConfigGUIToggleSQLButton: Veksle SQL
   wwcConfigConversationToggleSQLSuccess: SQL slått vellykket. Last inn for at endringen
@@ -382,3 +380,4 @@ Messages:
     eller skriv inn 0 for å gå tilbake.
   libreHttpUnknown: 'Ukjent http-feil: %i'
   wwcConfigGUILibreTranslateURLButton: Endre Libre Oversett URL
+  wwcConfigConnectionFail: Kan ikke koble til %i.

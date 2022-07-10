@@ -249,8 +249,6 @@ Messages:
   wwcTranslatorAttempt: 正在尝试在 config.yml 中连接翻译器...（尝试 %i/ %o）
   wwcTimeoutExceptionConsole: 玩家 %i 最近一次请求超时。这个错误不是致命的，但是如果它继续发生，应该重新加载 WorldwideChat。
   wwcGUIPageNumber: 页码： %i
-  wwcConfigSQLFail: 无法连接到 SQL。
-  wwcConfigSQLSuccess: 已成功连接到 SQL！
   wwcConfigYAMLFallback: 正在回落到 YAML...
   wwcConfigGUIToggleSQLButton: 切换 SQL
   wwcConfigConversationToggleSQLSuccess: SQL 已成功切换。重新加载以使更改生效。
@@ -306,3 +304,4 @@ Messages:
   wwcConfigConversationLibreURLInput: 当前的 URL 是 %i。请输入 Libre 的 URL，或者键入 0 返回。
   libreHttpUnknown: '未知的 http 错误: %i'
   wwcConfigGUILibreTranslateURLButton: 更改 Libre 翻译网址
+  wwcConfigConnectionFail: 连接到 %i 失败。

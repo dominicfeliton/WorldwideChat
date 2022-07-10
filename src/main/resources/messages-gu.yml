@@ -312,8 +312,6 @@ Messages:
     આ ભૂલ જીવલેણ નથી, પરંતુ જો તે થવાનું ચાલુ રહે તો વર્લ્ડવાઇડચેટને ફરીથી લોડ કરવું
     જોઈએ.
   wwcGUIPageNumber: 'પૃષ્ઠ સંખ્યા: %i'
-  wwcConfigSQLFail: એસક્યુએલ સાથે કનેક્ટ કરવામાં નિષ્ફળ.
-  wwcConfigSQLSuccess: સફળતાપૂર્વક એસક્યુએલ સાથે જોડાયેલ!
   wwcConfigYAMLFallback: YAML પર પાછા ફોલિંગ...
   wwcConfigGUIToggleSQLButton: ટૉગલ એસક્યુએલ
   wwcConfigConversationToggleSQLSuccess: એસક્યુએલ સફળતાપૂર્વક toggled. ફેરફારને અસર
@@ -388,3 +386,4 @@ Messages:
     URL ઇનપુટ કરો, અથવા પાછા જવા માટે 0 લખો.
   libreHttpUnknown: 'અજ્ઞાત HTTP ભૂલ: %i'
   wwcConfigGUILibreTranslateURLButton: મફત URL નું ભાષાંતર બદલો
+  wwcConfigConnectionFail: '%i સાથે જોડાવા માટે નિષ્ફળ.'
