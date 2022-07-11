@@ -31,10 +31,8 @@ public class MongoDBUtils {
 	
 	public static void connect(String host, String port, String databaseName, String username, String password, List<String> list) throws MongoException {
 		/* Setup valid mongoDB URL */
-		String url = "mongodb://" + username + ":" + password + "@" + host + ":" + port;
+		String url = "mongodb://" + username + ":" + password + "@" + host + ":" + port + "/?connectTimeoutMS=" + WorldwideChat.translatorFatalAbortSeconds*1000 + "&serverSelectionTimeoutMS=" + WorldwideChat.translatorFatalAbortSeconds*1000;
 		if (list != null && list.size() > 0) {
-			url += "/?" + list.get(0);
-			list.remove(0);
 			for (String eaArg : list) {
 				url += "&" + eaArg.substring(0, eaArg.indexOf("=")) + "=" + eaArg.substring(eaArg.indexOf("=")+1);
 				CommonDefinitions.sendDebugMessage(eaArg.substring(0, eaArg.indexOf("=")) + ":" + eaArg.substring(eaArg.indexOf("=")+1));

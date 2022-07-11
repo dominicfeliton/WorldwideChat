@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
+import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.zaxxer.hikari.HikariDataSource;
 
@@ -28,6 +29,7 @@ public class SQLUtils {
 		testSource.addDataSourceProperty("user", username);
 		testSource.addDataSourceProperty("password", password);
 		testSource.addDataSourceProperty("useSSL", useSSL);
+		testSource.setConnectionTimeout(WorldwideChat.translatorFatalAbortSeconds * 1000);
 		if (list != null) {
 			for (String eaArg : list) {
 				if (eaArg.indexOf("=") != -1) {
