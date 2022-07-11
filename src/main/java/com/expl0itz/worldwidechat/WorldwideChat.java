@@ -88,7 +88,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	private String pluginVersion = this.getDescription().getVersion();
 	private String currentMessagesConfigVersion = "07102022-3"; // MMDDYYYY-revisionNumber
-	private volatile String translatorName = "Starting";
+	private String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
 			.append(Component.text().content("WWC").color(NamedTextColor.BLUE).decoration(TextDecoration.BOLD, true))
@@ -265,10 +265,9 @@ public class WorldwideChat extends JavaPlugin {
 	  */
 	public void reload(CommandSender inSender) {
 		/* Put plugin into a reloading state */
+		//TODO: TranslatorName would not be changed if set to Invalid prior...why did I do that?
+		translatorName = "Starting";
 		translatorErrorCount = 0;
-		if (!translatorName.equals("Invalid")) {
-			translatorName = "Starting";
-		}
 		CommonDefinitions.closeAllInventories();
 		
 		/* Send start reload message */
