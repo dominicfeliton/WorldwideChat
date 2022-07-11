@@ -411,11 +411,16 @@ public class ConfigurationHandler {
 		}
 	}
 	
-	/* Sync user data to storage */
+	/* Sync user data to storage default */
 	public void syncData() {
+		syncData(main.getTranslatorName().equalsIgnoreCase("Invalid"));
+	}
+	
+	/* Sync user data to storage */
+	public void syncData(boolean wasPreviouslyInvalid) {
 		/* If our translator is Invalid, do not run this code */
 		//TODO: Investigate why mockbukkit no longer works here
-		if (main.getTranslatorName().equals("Invalid") || main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+		if (wasPreviouslyInvalid || main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
 			return;
 		}
 		if (SQLUtils.isConnected()) {

@@ -88,7 +88,7 @@ public class WorldwideChat extends JavaPlugin {
 	
 	private String pluginVersion = this.getDescription().getVersion();
 	private String currentMessagesConfigVersion = "07102022-3"; // MMDDYYYY-revisionNumber
-	private String translatorName = "Starting";
+	private volatile String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
 			.append(Component.text().content("WWC").color(NamedTextColor.BLUE).decoration(TextDecoration.BOLD, true))
@@ -256,19 +256,36 @@ public class WorldwideChat extends JavaPlugin {
 	  * Easy way to reload this plugin; call this method anywhere to reload quickly
 	  */
 	public void reload() {
-		reload(null);
+		reload(null, false);
+	}
+	
+	/**
+	 * Reload this plugin with a null sender but can toggle state
+	 * @param invalidState - whether there was a previously functional translator or not
+	 */
+	public void reload(boolean invalidState) {
+		reload(null, invalidState);
+	}
+	
+	/**
+	 * Reload this plugin with a sender and pre-defined state
+	 * @param sender - Valid command sender
+	 */
+	public void reload(CommandSender sender) {
+		reload(sender, translatorName.equalsIgnoreCase("Invalid"));
 	}
 	
 	/**
 	  * Reloads the plugin and sends a message to the caller
 	  * inSender - CommandSender who requested reload
 	  */
-	public void reload(CommandSender inSender) {
+	public void reload(CommandSender inSender, boolean invalidState) {
 		/* Put plugin into a reloading state */
-		//TODO: TranslatorName would not be changed if set to Invalid prior...why did I do that?
+		//TODO: Reloading in an invalid state deletes all saved user data? Is this still the case?
+		CommonDefinitions.sendDebugMessage("Is invalid state???:::" + invalidState);
 		translatorName = "Starting";
-		translatorErrorCount = 0;
 		CommonDefinitions.closeAllInventories();
+		translatorErrorCount = 0;
 		
 		/* Send start reload message */
 		if (inSender != null) {
@@ -285,7 +302,7 @@ public class WorldwideChat extends JavaPlugin {
 			@Override
 			public void run() {
 				final long currentDuration = System.nanoTime();
-				cancelBackgroundTasks(true, this.getTaskId());
+				cancelBackgroundTasks(true, invalidState, this.getTaskId());
 				loadPluginConfigs(true);
 				
 				/* Send successfully reloaded message */
@@ -306,11 +323,20 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/**
-	  * Wait for and cancel background tasks 
+	 * Wait for and cancel background tasks, no taskID to exclude/previously valid translator
+	 * @param isReloading - If this function should accommodate for a plugin reload or not
+	 */
+	public void cancelBackgroundTasks(boolean isReloading) {
+		cancelBackgroundTasks(isReloading, false);
+	}
+	
+	/**
+	  * Wait for and cancel background tasks, no taskID to exclude
 	  * @param isReloading - If this function should accommodate for a plugin reload or not
+	  * @param wasPreviouslyInvalid - If we are reloading from an invalid state to begin with
 	  */
-    public void cancelBackgroundTasks(boolean isReloading) {
-    	cancelBackgroundTasks(isReloading, -1);
+    public void cancelBackgroundTasks(boolean isReloading, boolean wasPreviouslyInvalid) {
+    	cancelBackgroundTasks(isReloading, wasPreviouslyInvalid, -1);
     }
 	
     /**
@@ -318,7 +344,7 @@ public class WorldwideChat extends JavaPlugin {
 	  * @param isReloading - If this function should accommodate for a plugin reload or not
 	  * @param taskID - Task to ignore when cancelling tasks, in case this is being ran async
 	  */
-	public void cancelBackgroundTasks(boolean isReloading, int taskID) {
+	public void cancelBackgroundTasks(boolean isReloading, boolean wasPreviouslyInvalid, int taskID) {
 		// Wait for completion + kill all background tasks
 		// Thanks to:
 		// https://gist.github.com/blablubbabc/e884c114484f34cae316c48290b21d8e#file-someplugin-java-L37
@@ -362,7 +388,7 @@ public class WorldwideChat extends JavaPlugin {
 		this.getServer().getScheduler().cancelTasks(this);
 
 		// Sync activeTranslators, playerRecords to disk
-		configurationManager.syncData();
+		configurationManager.syncData(wasPreviouslyInvalid);
 
 		// Disconnect SQL
 		SQLUtils.disconnect();

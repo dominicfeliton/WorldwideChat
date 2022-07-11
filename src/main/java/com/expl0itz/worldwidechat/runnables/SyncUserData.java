@@ -14,7 +14,7 @@ public class SyncUserData implements Runnable {
 		final long startTime = System.nanoTime();
 		try {
 			CommonDefinitions.sendDebugMessage("Starting SyncUserData!!!");
-			main.getConfigManager().syncData();
+			main.getConfigManager().syncData(false);
 			final long duration = System.nanoTime() - startTime;
 			CommonDefinitions.sendDebugMessage("Automatic user data sync completed in " + TimeUnit.MILLISECONDS.convert(duration, TimeUnit.NANOSECONDS) + " ms.");
 		} catch (Exception e) {
