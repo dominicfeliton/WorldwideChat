@@ -100,7 +100,7 @@ public class WWCStats extends BasicCommand {
 					}
 					
 					/* Process stats of target */
-					if (!main.getPlayerRecord(inPlayer.getUniqueId().toString(), false).getUUID().equals("")) {
+					if (main.isPlayerRecord(inPlayer.getUniqueId())) {
 						// Is on record; continue
 						if (sender instanceof Player) {
 							final String targetUUID = inPlayer.getUniqueId().toString();
@@ -115,7 +115,7 @@ public class WWCStats extends BasicCommand {
 							String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
 							PlayerRecord record = main
 									.getPlayerRecord(inPlayer.getUniqueId().toString(), false);
-							if (!main.getActiveTranslator(inPlayer.getUniqueId().toString()).getUUID().equals("")) {
+							if (main.isActiveTranslator(inPlayer.getUniqueId())) {
 								// Is currently an active translator
 								isActiveTranslator = ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713";
 							}

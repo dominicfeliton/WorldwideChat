@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.bson.BsonDocument;
 import org.bson.BsonInt64;
-import org.bson.Document;
 import org.bson.conversions.Bson;
 
 import com.expl0itz.worldwidechat.WorldwideChat;
@@ -16,8 +15,6 @@ import com.mongodb.client.MongoDatabase;
 
 public class MongoDBUtils {
 
-	//TODO: Silence messages in console? Maybe?
-	
 	private static MongoClient mongoClient;
 	
 	public static boolean isConnected() {
@@ -48,7 +45,7 @@ public class MongoDBUtils {
 		/* Attempt connection, test with ping command */
 		MongoDatabase database = testClient.getDatabase(databaseName);
 		Bson command = new BsonDocument("ping", new BsonInt64(1));
-        Document commandResult = database.runCommand(command);
+        database.runCommand(command);
 		
         /* Set client */
 		mongoClient = testClient;

@@ -40,7 +40,7 @@ public class TranslateInGameListener implements Listener {
 	/* Custom Entity Name Translation */
 	@EventHandler(priority = EventPriority.HIGHEST) 
 	public void onInGameEntityTranslateRequest(PlayerInteractEntityEvent event) {
-		if (!main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("") && checkInventoryHand(event)) {
+		if (main.isActiveTranslator(event.getPlayer()) && checkInventoryHand(event)) {
 			/* Entity Names */
 			try {
 				if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingEntity() && event.getRightClicked().isValid()) {
@@ -87,7 +87,7 @@ public class TranslateInGameListener implements Listener {
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInGameObjTranslateRequest(PlayerInteractEvent event) {
 		try {
-			if (!main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("")) {
+			if (main.isActiveTranslator(event.getPlayer())) {
 				/* Book Translation */
 				if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingBook()
 					&& checkInventoryHand(event) && event.getItem() != null

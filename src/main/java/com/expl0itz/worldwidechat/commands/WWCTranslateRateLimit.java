@@ -82,7 +82,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 		if (inPlayer == null) {
 			playerNotFoundMessage(sender, inName);
 			return false;
-		} else if (main.getActiveTranslator(inPlayer.getUniqueId().toString()).getUUID().equals("")) {
+		} else if (!main.isActiveTranslator(inPlayer)) {
 			/* If translator is null, determine sender and send correct message */
 			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(inName)) {
 				final TextComponent notAPlayer = Component.text()

@@ -558,6 +558,33 @@ public class WorldwideChat extends JavaPlugin {
 		activeTranslators.remove(i.getUUID());
 		CommonDefinitions.sendDebugMessage(i.getUUID() + " has been removed from the internal active translator hashmap.");
 	}
+	
+	/**
+	 * Checks if a given name is a currently active translator.
+	 * @param in - A player
+	 * @return true if ActiveTranslator, false otherwise
+	 */
+	public boolean isActiveTranslator(Player in) {
+		return isActiveTranslator(in.getUniqueId());
+	}
+	
+	/**
+	 * Checks if a given name is a currently active translator.
+	 * @param in - A player UUID
+	 * @return true if ActiveTranslator, false otherwise
+	 */
+	public boolean isActiveTranslator(UUID in) {
+		return isActiveTranslator(in.toString());
+	}
+	
+	/**
+	 * Checks if a given name is a currently active translator.
+	 * @param in - A player UUID as a String
+	 * @return true if ActiveTranslator, false otherwise
+	 */
+	public boolean isActiveTranslator(String in) {
+		return !getActiveTranslator(in).getUUID().equals("");
+	}
 
 	public void addPlayerUsingConfigurationGUI(UUID in) {
 		if (!playersUsingConfigurationGUI.contains(in.toString())) {
@@ -607,21 +634,6 @@ public class WorldwideChat extends JavaPlugin {
 		cache.put(input, outputPhrase);
 		CommonDefinitions.sendDebugMessage("Added new phrase into cache! Size after addition: ");
 	}
-	
-	public String getCacheTerm(CachedTranslation in) {
-		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") <= 0) 
-			return null;
-		
-		String out = cache.getIfPresent(in);
-		CommonDefinitions.sendDebugMessage("Cache lookup outcome: " + out);
-		
-		return out;
-	}
-	
-	public long getEstimatedCacheSize() {
-		cache.cleanUp();
-		return cache.estimatedSize();
-	}
 
 	public void removeCacheTerm(CachedTranslation i) {
 		cache.cleanUp();
@@ -635,6 +647,33 @@ public class WorldwideChat extends JavaPlugin {
 	public void removePlayerRecord(PlayerRecord i) {
 		playerRecords.remove(i.getUUID());
 		CommonDefinitions.sendDebugMessage("Removed player record of " + i.getUUID() + ".");
+	}
+	
+	/**
+	 * Checks if a given player has a player record.
+	 * @param in - A player
+	 * @return true if PlayerRecord, false otherwise
+	 */
+	public boolean isPlayerRecord(Player in) {
+		return isPlayerRecord(in.getUniqueId());
+	}
+	
+	/**
+	 * Checks if a given name has a player record.
+	 * @param in - A player UUID
+	 * @return true if PlayerRecord, false otherwise
+	 */
+	public boolean isPlayerRecord(UUID in) {
+		return isPlayerRecord(in.toString());
+	}
+	
+	/**
+	 * Checks if a given name has a player record.
+	 * @param in - A player UUID as a String
+	 * @return true if PlayerRecord, false otherwise
+	 */
+	public boolean isPlayerRecord(String in) {
+		return !getPlayerRecord(in, false).getUUID().equals("");
 	}
 
 	public void setOutOfDate(boolean i) {
@@ -675,6 +714,21 @@ public class WorldwideChat extends JavaPlugin {
 			return outTranslator;
 		}
 		return new ActiveTranslator("", "", "");
+	}
+	
+	public String getCacheTerm(CachedTranslation in) {
+		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") <= 0) 
+			return null;
+		
+		String out = cache.getIfPresent(in);
+		CommonDefinitions.sendDebugMessage("Cache lookup outcome: " + out);
+		
+		return out;
+	}
+	
+	public long getEstimatedCacheSize() {
+		cache.cleanUp();
+		return cache.estimatedSize();
 	}
 
 	public PlayerRecord getPlayerRecord(String uuid, boolean createNewIfNotExisting) {

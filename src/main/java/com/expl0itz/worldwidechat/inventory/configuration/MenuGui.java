@@ -110,6 +110,9 @@ public class MenuGui implements InventoryProvider {
 		sqlSet.add(new CommonElement(3, 4, "Quit"));
 		sqlSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.STORAGE_SET.ordinal()+1 + ""}));
 		
+		// MongoDB
+		// TODO
+		
 		// Chat 
 		chatSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
 		chatSet.add(new ToggleElement(1, 1, "wwcConfigGUISendTranslationChatButton", "wwcConfigConversationSendTranslationChatSuccess", "Chat.sendTranslationChat"));

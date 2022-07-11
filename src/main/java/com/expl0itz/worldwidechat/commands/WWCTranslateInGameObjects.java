@@ -42,7 +42,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			return CommonDefinitions.sendNoConsoleChatMessage(sender);
 		}
 		if (args.length == 0 || (args.length == 1 && args[0].equalsIgnoreCase(sender.getName()))) {
-			if (!main.getActiveTranslator(((Player)sender).getUniqueId().toString()).getUUID().equals("")) {
+			if (main.isActiveTranslator(((Player)sender))) {
 				return toggleStatus((Player)sender);
 			}
 			// Player is not an active translator
@@ -57,7 +57,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 		
 		/* If there is an argument (another player) */
 		if (args.length == 1) {
-			if (Bukkit.getServer().getPlayerExact(args[0]) != null && !main.getActiveTranslator(Bukkit.getServer().getPlayerExact(args[0]).getUniqueId().toString()).getUUID().equals("")) {
+			if (Bukkit.getServer().getPlayerExact(args[0]) != null && main.isActiveTranslator(Bukkit.getServer().getPlayerExact(args[0]))) {
 				if (this instanceof WWCTranslateBook) {
 					if (sender.hasPermission("worldwidechat.wwctb.otherplayers")) {
 						return toggleStatus(Bukkit.getPlayerExact(args[0]));

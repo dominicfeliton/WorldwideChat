@@ -28,8 +28,8 @@ public class ChatListener implements Listener {
 		try {
 			/* Original WWC functionality/Outgoing Messages */
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
-			if ((!currTranslator.getUUID().equals("") && currTranslator.getTranslatingChatOutgoing())
-					|| (!main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
+			if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
+					|| (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
 				String outMsg = CommonDefinitions.translateText(event.getMessage(), event.getPlayer());
 				event.setMessage(outMsg);
 			}
@@ -39,9 +39,9 @@ public class ChatListener implements Listener {
 			for (Player eaRecipient : event.getRecipients()) {
 				ActiveTranslator testTranslator = main.getActiveTranslator(eaRecipient.getUniqueId());
 				if ((   /* Check if this testTranslator wants their incoming messages to be translated */
-						!currTranslator.getUUID().equals(testTranslator.getUUID()) && !testTranslator.getUUID().equals("") && testTranslator.getTranslatingChatIncoming())
+						!currTranslator.getUUID().equals(testTranslator.getUUID()) && main.isActiveTranslator(eaRecipient) && testTranslator.getTranslatingChatIncoming())
 						/* Check if this testTranslator doesn't already want the current chat message */
-						&& !(!currTranslator.getUUID().equals("") && currTranslator.getInLangCode().equals(testTranslator.getInLangCode())
+						&& !(currTranslator.getInLangCode().equals(testTranslator.getInLangCode())
 								&& currTranslator.getOutLangCode().equals(testTranslator.getOutLangCode()))) {
 					
 					/* Send the message in a new task, to avoid delaying the chat message for others */

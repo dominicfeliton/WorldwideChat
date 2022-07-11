@@ -10,7 +10,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Iterator;
 
-import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bson.Document;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;

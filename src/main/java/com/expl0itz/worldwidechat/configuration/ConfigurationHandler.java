@@ -36,9 +36,6 @@ import com.expl0itz.worldwidechat.util.Metrics;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
 import com.expl0itz.worldwidechat.util.storage.MongoDBUtils;
 import com.expl0itz.worldwidechat.util.storage.SQLUtils;
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBCollection;
-import com.mongodb.DBObject;
 import com.mongodb.MongoException;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
@@ -462,7 +459,7 @@ public class ConfigurationHandler {
 				/* Delete any old ActiveTranslators */
 				ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM activeTranslators");
 				while (rs.next()) {
-					if (main.getActiveTranslator(rs.getString("playerUUID")).getUUID().equals("")) {
+					if (!main.isActiveTranslator(rs.getString("playerUUID"))) {
 						String uuid = rs.getString("playerUUID");
 						PreparedStatement deleteOldItem = sqlConnection.prepareStatement("DELETE FROM activeTranslators WHERE playerUUID = ?");
 						deleteOldItem.setString(1, uuid);
@@ -537,7 +534,7 @@ public class ConfigurationHandler {
 				Iterator<Document> it = iterDoc.iterator();
 				while (it.hasNext()) {
 					Document currDoc = it.next();
-					if (main.getActiveTranslator(currDoc.getString("playerUUID")).getUUID().equals("")) {
+					if (!main.isActiveTranslator(currDoc.getString("playerUUID"))) {
 						String uuid = currDoc.getString("playerUUID");
 						Bson query = Filters.eq("playerUUID", uuid);
 						activeTranslatorCol.deleteOne(query);
@@ -585,8 +582,7 @@ public class ConfigurationHandler {
 			File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
 			for (String eaName : userSettingsDir.list()) {
 				File currFile = new File(userSettingsDir, eaName);
-				if (main.getActiveTranslator(
-						currFile.getName().substring(0, currFile.getName().indexOf("."))).getUUID().equals("")) {
+				if (!main.isActiveTranslator(currFile.getName().substring(0, currFile.getName().indexOf(".")))) {
 					CommonDefinitions.sendDebugMessage("(YAML) Deleted user data config of "
 							+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + ".");
 					currFile.delete();
