@@ -387,3 +387,38 @@ Messages:
   libreHttpUnknown: 'Hitilafu isiyojulikana ya http: %i'
   wwcConfigGUILibreTranslateURLButton: Badilisha Libre Kutafsiri URL
   wwcConfigConnectionFail: Imeshindwa kuungana na %i.
+  wwcConfigGUIMongoSettings: Usanidi wa MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Kubadilisha kwa ufanisi jina la database
+    la MongoDB.
+  wwcConfigGUIMongoHostnameButton: Badilisha jina la Mwenyeji wa MongoDB
+  wwcConfigConversationMongoPasswordInput: Nenosiri la sasa ni %i. Andika kitu chochote
+    isipokuwa 0 ili kuweka nenosiri jipya, au funga 0 ili urejee.
+  wwcConfigConversationMongoPortInput: Bandari ya sasa ni %i. Weka kitu chochote isipokuwa
+    0 ili kuweka bandari mpya, au funga 0 ili urejee.
+  wwcConfigConversationToggleMongoSuccess: MongoDB imeshuka kwa mafanikio. Reload
+    kwa mabadiliko ya kuchukua athari.
+  wwcConfigConversationMongoHostnameInput: Jina la sasa la mwenyeji ni %i. Andika
+    kitu chochote isipokuwa 0 ili kuweka jina jipya la mwenyeji, au funga 0 ili urejee.
+  wwcConfigConversationMongoHostnameSuccess: Ufanisi iliyopita jina la mwenyeji wa
+    MongoDB.
+  wwcConfigGUIMongoMenuButton: Badilisha mipangilio ya MongoDB
+  wwcConfigGUIToggleMongoButton: Badilisha MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Jina la sasa la database ni %i. Andika
+    kitu chochote isipokuwa 0 ili kuweka jina jipya la database, au funga 0 ili urejee.
+  wwcConfigConversationMongoOptionalArgsInput: 'Hoja za sasa za hiari za MongoDB ni:
+    %i. hoja za aina zilizotengwa na comma (ufungu=value, key2=value2), au aina ya
+    wazi kuifuta args ya sasa, au aina ya 0 kurudi nyuma.'
+  wwcConfigGUIMongoDatabaseNameButton: Badilisha Database ya Mongo
+  wwcConfigConversationMongoUsernameInput: Jina la mtumiaji wa sasa ni %i Andika kitu
+    chochote isipokuwa 0 ili kuweka jina la mtumiaji mpya, au aina ya 0 ili urejee.
+  wwcConfigGUIMongoOptionalArgsButton: Badilisha MongoDB Hoja za hiari
+  wwcConfigConversationMongoUsernameSuccess: Imebadilisha mafanikio jina la mtumiaji
+    wa MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Ilibadilisha nenosiri la MongoDB kwa
+    ufanisi.
+  wwcConfigConversationMongoPortSuccess: Imebadilisha bandari ya MongoDB kwa ufanisi.
+  wwcConfigGUIMongoUsernameButton: Badilisha jina la mtumiaji wa Mongo
+  wwcConfigGUIMongoPasswordButton: Badilisha Neno la MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Mafanikio iliyopita hoja hiari MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Hoja hiari kuondolewa kwa mafanikio.
+  wwcConfigGUIMongoPortButton: Badilisha bandari ya MongoDB

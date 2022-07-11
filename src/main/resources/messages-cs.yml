@@ -389,3 +389,39 @@ Messages:
   libreHttpUnknown: 'Neznámá chyba http: %i'
   wwcConfigGUILibreTranslateURLButton: Změnit zdarma Přeložit URL
   wwcConfigConnectionFail: Připojení k %i se nezdařilo.
+  wwcConfigGUIMongoSettings: Konfigurace MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Úspěšně změnil název databáze MongoDB.
+  wwcConfigGUIMongoHostnameButton: Změnit název hostitele MongoDB
+  wwcConfigConversationMongoPasswordInput: Aktuální heslo je %i. Zadejte něco jiného
+    než 0 pro nastavení nového hesla, nebo zadejte 0 pro návrat zpět.
+  wwcConfigConversationMongoPortInput: Aktuální port je %i. Zadejte něco jiného než
+    0 pro nastavení nového portu, nebo zadejte 0 pro návrat zpět.
+  wwcConfigConversationToggleMongoSuccess: MongoDB úspěšně přepnout. Znovu načtěte,
+    aby se změna projevila.
+  wwcConfigConversationMongoHostnameInput: Aktuální název hostitele je %i. Zadejte
+    něco jiného než 0 pro nastavení nového názvu hostitele, nebo zadejte 0 pro návrat
+    zpět.
+  wwcConfigConversationMongoHostnameSuccess: Úspěšně změnil název hostitele MongoDB.
+  wwcConfigGUIMongoMenuButton: Změna nastavení MongoDB
+  wwcConfigGUIToggleMongoButton: Přepnout MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Aktuální název databáze je %i. Zadejte
+    něco jiného než 0 pro nastavení nového názvu databáze, nebo zadejte 0 pro návrat
+    zpět.
+  wwcConfigConversationMongoOptionalArgsInput: 'Aktuální volitelné argumenty MongoDB
+    jsou: %i. Argumenty typu oddělené čárkou (key=value, key2=value2), nebo zadejte
+    clear pro vymazání aktuálních args, nebo zadejte 0 pro návrat zpět.'
+  wwcConfigGUIMongoDatabaseNameButton: Změna databáze MongoDB
+  wwcConfigConversationMongoUsernameInput: Aktuální uživatelské jméno je %i. Zadejte
+    něco jiného než 0 pro nastavení nového uživatelského jména, nebo zadejte 0 pro
+    návrat zpět.
+  wwcConfigGUIMongoOptionalArgsButton: Změna volitelných argumentů MongoDB
+  wwcConfigConversationMongoUsernameSuccess: Úspěšně změnilo uživatelské jméno MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Úspěšně změnilo heslo MongoDB.
+  wwcConfigConversationMongoPortSuccess: Úspěšně změnil port MongoDB.
+  wwcConfigGUIMongoUsernameButton: Změnit uživatelské jméno MongoDB
+  wwcConfigGUIMongoPasswordButton: Změna hesla MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Úspěšně změnil volitelné argumenty
+    MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Volitelné argumenty byly úspěšně
+    vymazány.
+  wwcConfigGUIMongoPortButton: Změnit port MongoDB

@@ -399,3 +399,38 @@ Messages:
   libreHttpUnknown: 'अज्ञात http त्रुटि: %i'
   wwcConfigGUILibreTranslateURLButton: लिब्रे ट्रांसलेट URL बदलें
   wwcConfigConnectionFail: '%i से कनेक्ट करने में विफल।'
+  wwcConfigGUIMongoSettings: MongoDB कॉन्फ़िगरेशन
+  wwcConfigConversationMongoDatabaseNameSuccess: MongoDB डेटाबेस नाम को सफलतापूर्वक
+    बदल दिया।
+  wwcConfigGUIMongoHostnameButton: MongoDB होस्टनाम बदलें
+  wwcConfigConversationMongoPasswordInput: मौज़ूदा कूटशब्द %i है. नया पासवर्ड सेट
+    करने के लिए 0 के अलावा कुछ भी टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationMongoPortInput: वर्तमान पोर्ट %i है. नया पोर्ट सेट करने के
+    लिए 0 के अलावा कुछ भी टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationToggleMongoSuccess: MongoDB सफलतापूर्वक टॉगल किया गया। परिवर्तन
+    को प्रभावी करने के लिए फिर से लोड करें।
+  wwcConfigConversationMongoHostnameInput: मौजूदा होस्टनाम %i है. नया होस्टनाम सेट
+    करने के लिए 0 के अलावा कुछ भी टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationMongoHostnameSuccess: MongoDB होस्टनाम को सफलतापूर्वक बदल दिया।
+  wwcConfigGUIMongoMenuButton: MongoDB सेटिंग्स बदलें
+  wwcConfigGUIToggleMongoButton: MongoDB टॉगल करें
+  wwcConfigConversationMongoDatabaseNameInput: वर्तमान डेटाबेस नाम %i है. नया डेटाबेस
+    नाम सेट करने के लिए 0 के अलावा कुछ भी टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationMongoOptionalArgsInput: 'वर्तमान वैकल्पिक MongoDB तर्क हैं:
+    %i एक अल्पविराम (key=value, key2=value2) से अलग किए गए तर्क टाइप करें, या वर्तमान
+    तर्कों को मिटाने के लिए स्पष्ट टाइप करें, या वापस जाने के लिए 0 टाइप करें।'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB डेटाबेस बदलें
+  wwcConfigConversationMongoUsernameInput: मौजूदा उपयोगकर्ता नाम %i है. नया यूजरनेम
+    सेट करने के लिए 0 के अलावा कुछ भी टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB वैकल्पिक तर्क बदलें
+  wwcConfigConversationMongoUsernameSuccess: MongoDB उपयोगकर्ता नाम को सफलतापूर्वक
+    बदल दिया।
+  wwcConfigConversationMongoPasswordSuccess: MongoDB पासवर्ड को सफलतापूर्वक बदल दिया।
+  wwcConfigConversationMongoPortSuccess: MongoDB पोर्ट को सफलतापूर्वक बदल दिया।
+  wwcConfigGUIMongoUsernameButton: MongoDB उपयोगकर्ता नाम बदलें
+  wwcConfigGUIMongoPasswordButton: MongoDB पासवर्ड बदलें
+  wwcConfigConversationMongoOptionalArgsSuccess: वैकल्पिक MongoDB तर्कों को सफलतापूर्वक
+    बदल दिया।
+  wwcConfigConversationMongoOptionalArgsCleared: वैकल्पिक तर्क सफलतापूर्वक साफ़ हो
+    गए।
+  wwcConfigGUIMongoPortButton: MongoDB पोर्ट बदलें

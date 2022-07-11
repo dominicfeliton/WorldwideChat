@@ -392,3 +392,37 @@ Messages:
   libreHttpUnknown: 'Невідома помилка http: %i'
   wwcConfigGUILibreTranslateURLButton: Змінити Libre Перекласти URL-адресу
   wwcConfigConnectionFail: Не вдалося з' єднатися з %i.
+  wwcConfigGUIMongoSettings: Конфігурація MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Успішно змінено ім'я бази даних MongoDB.
+  wwcConfigGUIMongoHostnameButton: Змінити ім'я хоста MongoDB
+  wwcConfigConversationMongoPasswordInput: Поточний пароль %i. Введіть щось інше,
+    ніж 0, щоб встановити новий пароль, або введіть 0, щоб повернутися назад.
+  wwcConfigConversationMongoPortInput: Поточний порт %i. Введіть щось інше, ніж 0,
+    щоб встановити новий порт, або введіть 0, щоб повернутися назад.
+  wwcConfigConversationToggleMongoSuccess: MongoDB успішно перемикається. Перезавантажте,
+    щоб зміни вступили в силу.
+  wwcConfigConversationMongoHostnameInput: Поточна назва вузла %i. Введіть щось інше,
+    ніж 0, щоб встановити нову назву вузла, або введіть 0, щоб повернутися назад.
+  wwcConfigConversationMongoHostnameSuccess: Успішно змінено ім'я хоста MongoDB.
+  wwcConfigGUIMongoMenuButton: Зміна параметрів MongoDB
+  wwcConfigGUIToggleMongoButton: Перемкнути MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Поточною назвою бази даних є %i. Введіть
+    щось інше, ніж 0, щоб встановити нову назву бази даних, або введіть 0, щоб повернутися
+    назад.
+  wwcConfigConversationMongoOptionalArgsInput: 'Поточними необов''язковими аргументами
+    MongoDB є: %i. Введіть аргументи, розділені комою (key=value, key2=value2), або
+    введіть clear, щоб стерти поточні аргументи, або введіть 0, щоб повернутися назад.'
+  wwcConfigGUIMongoDatabaseNameButton: Змінити базу даних MongoDB
+  wwcConfigConversationMongoUsernameInput: Поточне ім'я користувача %i. Введіть щось
+    інше, ніж 0, щоб встановити нове ім'я користувача, або введіть 0, щоб повернутися
+    назад.
+  wwcConfigGUIMongoOptionalArgsButton: Зміна додаткових аргументів MongoDB
+  wwcConfigConversationMongoUsernameSuccess: Успішно змінено ім'я користувача MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Успішно змінено пароль MongoDB.
+  wwcConfigConversationMongoPortSuccess: Успішно змінено порт MongoDB.
+  wwcConfigGUIMongoUsernameButton: Змінити ім'я користувача MongoDB
+  wwcConfigGUIMongoPasswordButton: Змінити пароль MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Успішно змінено додаткові аргументи
+    MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Необов'язкові аргументи успішно очищені.
+  wwcConfigGUIMongoPortButton: Змінити порт MongoDB

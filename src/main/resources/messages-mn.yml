@@ -400,3 +400,43 @@ Messages:
   libreHttpUnknown: 'Үл мэдэгдэх HTTP алдаа: %i'
   wwcConfigGUILibreTranslateURLButton: Чөлөөт URL Translate өөрчлөх
   wwcConfigConnectionFail: '%i руу холбогдож чадсангүй.'
+  wwcConfigGUIMongoSettings: MongoDB тохиргоо
+  wwcConfigConversationMongoDatabaseNameSuccess: MongoDB өгөгдлийн сангийн нэрийг
+    амжилттай өөрчилсөн.
+  wwcConfigGUIMongoHostnameButton: Өөрчлөлт MongoDB Хостын нэр
+  wwcConfigConversationMongoPasswordInput: Одоогийн нууц үг нь %i байна. 0-ээс өөр
+    ямар нэгэн зүйлийг бичээд шинэ нууц үг тохируулахын тулд эсвэл 0 гэж бичээд буцааж
+    оруулна уу.
+  wwcConfigConversationMongoPortInput: Одоогийн порт нь %i байна. 0-ээс өөр ямар нэгэн
+    зүйлийг шинэ порт тохируулахын тулд бичнэ үү эсвэл буцаж очихын тулд 0 гэж бичнэ
+    үү.
+  wwcConfigConversationToggleMongoSuccess: MongoDB амжилттай шилжүүлэв. Өөрчлөлтийг
+    хүчин төгөлдөр болгохын тулд Дуут хувилбар.
+  wwcConfigConversationMongoHostnameInput: Одоогийн хостын нэр нь %i байна. 0-ээс
+    өөр ямар нэг зүйлийг бичээд шинэ хостын нэрийг тохируулахын тулд эсвэл 0 гэж бичээд
+    буцаана.
+  wwcConfigConversationMongoHostnameSuccess: MongoDB хостын нэрийг амжилттай өөрчилсөн.
+  wwcConfigGUIMongoMenuButton: Өөрчлөлт MongoDB Тохиргоо
+  wwcConfigGUIToggleMongoButton: Toggle MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Одоогийн өгөгдлийн сангийн нэр нь %i
+    байна. 0-ээс өөр ямар нэгэн зүйлийг шинэ өгөгдлийн сангийн нэрийг тохируулахын
+    тулд бичнэ үү эсвэл 0 гэж бичнэ үү.
+  wwcConfigConversationMongoOptionalArgsInput: 'Одоогийн нэмэлт MongoDB аргументууд
+    нь: %i. (key=value, key2=value2) таслалаар тусгаарлагдсан аргументуудыг бичнэ
+    эсвэл одоогийн аргуудыг арчихын тулд тодорхой бичнэ эсвэл 0 гэж бичнэ.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB мэдээллийн санг өөрчлөх
+  wwcConfigConversationMongoUsernameInput: Одоогийн хэрэглэгчийн нэр нь %i байна.
+    0-ээс өөр ямар нэг зүйлийг бичээд шинэ хэрэглэгчийн нэрийг тохируулахын тулд эсвэл
+    0 гэж бичээд буцааж өгнө.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB Нэмэлт нэмэлт өгөгдлүүдийг өөрчлөх
+  wwcConfigConversationMongoUsernameSuccess: MongoDB хэрэглэгчийн нэрийг амжилттай
+    өөрчилсөн.
+  wwcConfigConversationMongoPasswordSuccess: MongoDB нууц үгээ амжилттай сольсон.
+  wwcConfigConversationMongoPortSuccess: MongoDB портыг амжилттай өөрчилсөн.
+  wwcConfigGUIMongoUsernameButton: MongoDB Хэрэглэгчийн нэр өөрчлөх
+  wwcConfigGUIMongoPasswordButton: MongoDB Нууц үг солих
+  wwcConfigConversationMongoOptionalArgsSuccess: Амжилттай нэмэлт MongoDB нэмэлт өгөгдлүүдийг
+    өөрчилсөн.
+  wwcConfigConversationMongoOptionalArgsCleared: Нэмэлт нэмэлт өгөгдлүүд нь амжилттай
+    цэвэрлэгдэж.
+  wwcConfigGUIMongoPortButton: Өөрчлөлт MongoDB Порт

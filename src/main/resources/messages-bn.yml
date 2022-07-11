@@ -388,3 +388,38 @@ Messages:
   libreHttpUnknown: 'অজানা http ত্রুটি: %i'
   wwcConfigGUILibreTranslateURLButton: বিনামূল্যে পরিবর্তন করুন URL অনুবাদ করুন
   wwcConfigConnectionFail: '%i- র সাথে সংযোগ করতে ব্যর্থ'
+  wwcConfigGUIMongoSettings: মোঙ্গোডিবি কনফিগারেশন
+  wwcConfigConversationMongoDatabaseNameSuccess: সফলভাবে MongoDB ডাটাবেস নাম পরিবর্তন।
+  wwcConfigGUIMongoHostnameButton: মোঙ্গোডিবি হোস্টনাম পরিবর্তন করুন
+  wwcConfigConversationMongoPasswordInput: বর্তমান পাসওয়ার্ড হল %i। নতুন পাসওয়ার্ড
+    সেট করতে ০ ছাড়া অন্য কিছু টাইপ করুন অথবা ফিরে যাওয়ার জন্য ০ টাইপ করুন।
+  wwcConfigConversationMongoPortInput: বর্তমান পোর্ট হল %i। একটি নতুন পোর্ট সেট করতে
+    ০ ব্যতীত অন্য কিছু টাইপ করুন, অথবা ফিরে যাওয়ার জন্য ০ টাইপ করুন।
+  wwcConfigConversationToggleMongoSuccess: মোঙ্গোডিবি সফলভাবে টগল করেছে। পরিবর্তন
+    কার্যকর করার জন্য পুনরায় লোড করুন।
+  wwcConfigConversationMongoHostnameInput: বর্তমান হোস্টনাম হল %i। একটি নতুন হোস্টনাম
+    সেট করতে 0 ব্যতীত অন্য কিছু টাইপ করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationMongoHostnameSuccess: সফলভাবে মোঙ্গোডিবি হোস্টনাম পরিবর্তন
+    করা হয়েছে।
+  wwcConfigGUIMongoMenuButton: মোঙ্গোডিবি সেটিংস পরিবর্তন করুন
+  wwcConfigGUIToggleMongoButton: মোঙ্গোডিবি টগল করুন
+  wwcConfigConversationMongoDatabaseNameInput: বর্তমান ডাটাবেসের নাম হল %i। একটি নতুন
+    ডাটাবেস নাম সেট করতে 0 ছাড়া অন্য কিছু টাইপ করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationMongoOptionalArgsInput: 'বর্তমান ঐচ্ছিক MongoDB আর্গুমেন্ট
+    হল: %i। কমা দ্বারা পৃথক আর্গুমেন্ট টাইপ করুন (key=value, key2=value2), অথবা বর্তমান
+    আর্গগুলো মুছে ফেলার জন্য clear টাইপ করুন, অথবা ফিরে যেতে 0 টাইপ করুন।'
+  wwcConfigGUIMongoDatabaseNameButton: মোঙ্গোডিবি ডাটাবেস পরিবর্তন করুন
+  wwcConfigConversationMongoUsernameInput: বর্তমান ইউজারনেম হল %i। নতুন ইউজারনেম সেট
+    করতে ০ ছাড়া অন্য কিছু টাইপ করুন অথবা ফিরে যাওয়ার জন্য ০ টাইপ করুন।
+  wwcConfigGUIMongoOptionalArgsButton: মোঙ্গোডিবি ঐচ্ছিক আর্গুমেন্ট পরিবর্তন
+  wwcConfigConversationMongoUsernameSuccess: সফলভাবে মোঙ্গোডিবি ব্যবহারকারীর নাম পরিবর্তন
+    করা হয়েছে।
+  wwcConfigConversationMongoPasswordSuccess: সফলভাবে মোঙ্গোডিবি পাসওয়ার্ড পরিবর্তন
+    করা হয়েছে।
+  wwcConfigConversationMongoPortSuccess: সফলভাবে মোঙ্গোডিবি পোর্ট পরিবর্তন করা হয়েছে।
+  wwcConfigGUIMongoUsernameButton: মোঙ্গোডিবি ব্যবহারকারীর নাম পরিবর্তন করুন
+  wwcConfigGUIMongoPasswordButton: মোঙ্গোডিবি পাসওয়ার্ড পরিবর্তন করুন
+  wwcConfigConversationMongoOptionalArgsSuccess: সফলভাবে ঐচ্ছিক মোঙ্গোডিবি আর্গুমেন্ট
+    পরিবর্তন করা হয়েছে।
+  wwcConfigConversationMongoOptionalArgsCleared: ঐচ্ছিক আর্গুমেন্ট সফলভাবে মুছে গেছে।
+  wwcConfigGUIMongoPortButton: মোঙ্গোডিবি পোর্ট পরিবর্তন করুন

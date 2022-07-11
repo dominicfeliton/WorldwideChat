@@ -387,3 +387,35 @@ Messages:
   libreHttpUnknown: 'અજ્ઞાત HTTP ભૂલ: %i'
   wwcConfigGUILibreTranslateURLButton: મફત URL નું ભાષાંતર બદલો
   wwcConfigConnectionFail: '%i સાથે જોડાવા માટે નિષ્ફળ.'
+  wwcConfigGUIMongoSettings: MongoDB રૂપરેખાંકન
+  wwcConfigConversationMongoDatabaseNameSuccess: સફળતાપૂર્વક MongoDB ડેટાબેઝ નામ બદલ્યું.
+  wwcConfigGUIMongoHostnameButton: મોંગોડીબી હોસ્ટનામ બદલો
+  wwcConfigConversationMongoPasswordInput: હાલનો પાસવર્ડ %i છે નવો પાસવર્ડ સેટ કરવા
+    માટે 0 સિવાય બીજું કંઈપણ લખો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigConversationMongoPortInput: વર્તમાન પોર્ટ %i છે નવું પોર્ટ સુયોજિત કરવા
+    માટે 0 સિવાય બીજું કંઈપણ લખો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigConversationToggleMongoSuccess: MongoDB સફળતાપૂર્વક toggled. ફેરફારને પ્રભાવમાં
+    લાવવા માટે ફરીથી લોડ કરો.
+  wwcConfigConversationMongoHostnameInput: વર્તમાન યજમાનનામ %i છે નવું યજમાનનામ સુયોજિત
+    કરવા માટે 0 સિવાય કંઈપણ લખો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigConversationMongoHostnameSuccess: મંગોડીબી હોસ્ટનામને સફળતાપૂર્વક બદલ્યું.
+  wwcConfigGUIMongoMenuButton: MongoDB સેટિંગ્સ બદલો
+  wwcConfigGUIToggleMongoButton: ટogગલ મોંગોડીબી
+  wwcConfigConversationMongoDatabaseNameInput: વર્તમાન ડેટાબેઝ નામ %i છે નવું ડેટાબેઝ
+    નામ સુયોજિત કરવા માટે 0 સિવાય કંઈપણ લખો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigConversationMongoOptionalArgsInput: 'વર્તમાન વૈકલ્પિક MongoDB દલીલો છે:
+    %i અલ્પવિરામ (કી = મૂલ્ય, key2 = value2) દ્વારા અલગ દલીલો લખો, અથવા વર્તમાન આર્ગને
+    સાફ કરવા માટે સ્પષ્ટ લખો, અથવા પાછા જવા માટે 0 લખો.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB ડેટાબેઝ બદલો
+  wwcConfigConversationMongoUsernameInput: વર્તમાન વપરાશકર્તાનામ %i છે નવું વપરાશકર્તા
+    નામ સુયોજિત કરવા માટે 0 સિવાય કંઈપણ લખો, અથવા પાછા જવા માટે 0 લખો.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB વૈકલ્પિક દલીલો બદલો
+  wwcConfigConversationMongoUsernameSuccess: સફળતાપૂર્વક MongoDB વપરાશકર્તા નામ બદલ્યું.
+  wwcConfigConversationMongoPasswordSuccess: સફળતાપૂર્વક MongoDB પાસવર્ડ બદલ્યો.
+  wwcConfigConversationMongoPortSuccess: મંગોડીબી બંદરને સફળતાપૂર્વક બદલ્યું.
+  wwcConfigGUIMongoUsernameButton: MongoDB વપરાશકર્તા નામ બદલો
+  wwcConfigGUIMongoPasswordButton: MongoDB પાસવર્ડ બદલો
+  wwcConfigConversationMongoOptionalArgsSuccess: વૈકલ્પિક મંગોડીબી દલીલો સફળતાપૂર્વક
+    બદલી.
+  wwcConfigConversationMongoOptionalArgsCleared: વૈકલ્પિક દલીલો સફળતાપૂર્વક સાફ.
+  wwcConfigGUIMongoPortButton: મોંગોડીબી બંદર બદલો

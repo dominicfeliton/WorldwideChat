@@ -376,3 +376,37 @@ Messages:
   libreHttpUnknown: 'Tundmatu http viga: %i'
   wwcConfigGUILibreTranslateURLButton: Muuda Libre Tõlgi URL
   wwcConfigConnectionFail: Ühenduse loomine %i nurjus.
+  wwcConfigGUIMongoSettings: MongoDB konfiguratsioon
+  wwcConfigConversationMongoDatabaseNameSuccess: Edukalt muutnud MongoDB andmebaasi
+    nime.
+  wwcConfigGUIMongoHostnameButton: Muuda MongoDB hostinime
+  wwcConfigConversationMongoPasswordInput: Praegune parool on %i. Tippige uue parooli
+    määramiseks midagi muud kui 0 või tippige 0, et minna tagasi.
+  wwcConfigConversationMongoPortInput: Praegune port on %i. Tippige midagi muud kui
+    0, et määrata uus port, või tippige 0 tagasi minna.
+  wwcConfigConversationToggleMongoSuccess: MongoDB lülitus edukalt. Muutuse jõustumiseks
+    laadige uuesti.
+  wwcConfigConversationMongoHostnameInput: Praegune hostinimi on %i. Tippige midagi
+    muud kui 0 uue hostinime määramiseks või tippige 0, et minna tagasi.
+  wwcConfigConversationMongoHostnameSuccess: Edukalt muutnud MongoDB hostname.
+  wwcConfigGUIMongoMenuButton: MongoDB sätete muutmine
+  wwcConfigGUIToggleMongoButton: Lülita MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Praeguse andmebaasi nimi on %i. Tippige
+    midagi muud kui 0, et määrata uus andmebaasi nimi, või tippige 0 tagasi minna.
+  wwcConfigConversationMongoOptionalArgsInput: 'Praegused valikulised MongoDB argumendid
+    on: %i. Tippige komaga eraldatud argumendid (võti = väärtus, key2=value2) või
+    tippige praeguste argide pühkimiseks selge või tippige 0, et minna tagasi.'
+  wwcConfigGUIMongoDatabaseNameButton: Muuda MongoDB andmebaasi
+  wwcConfigConversationMongoUsernameInput: Praegune kasutajanimi on %i. Tippige midagi
+    muud kui 0, et määrata uus kasutajanimi, või kirjuta 0 tagasi minna.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB valikuliste argumentide muutmine
+  wwcConfigConversationMongoUsernameSuccess: Edukalt muutunud MongoDB kasutajanimi.
+  wwcConfigConversationMongoPasswordSuccess: Edukalt muudetud MongoDB parooli.
+  wwcConfigConversationMongoPortSuccess: Edukalt muutunud MongoDB port.
+  wwcConfigGUIMongoUsernameButton: Muuda MongoDB kasutajanime
+  wwcConfigGUIMongoPasswordButton: Muuda MongoDB parooli
+  wwcConfigConversationMongoOptionalArgsSuccess: Edukalt muutunud valikuline MongoDB
+    argumendid.
+  wwcConfigConversationMongoOptionalArgsCleared: Valikulised argumendid kustutatakse
+    edukalt.
+  wwcConfigGUIMongoPortButton: Muuda MongoDB porti

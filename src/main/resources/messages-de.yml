@@ -429,3 +429,45 @@ Messages:
   libreHttpUnknown: 'Unbekannter HTTP-Fehler: %i'
   wwcConfigGUILibreTranslateURLButton: Libre Übersetzungs-URL ändern
   wwcConfigConnectionFail: Verbindung mit %i konnte nicht hergestellt werden.
+  wwcConfigGUIMongoSettings: MongoDB-Konfiguration
+  wwcConfigConversationMongoDatabaseNameSuccess: Der Name der MongoDB-Datenbank wurde
+    erfolgreich geändert.
+  wwcConfigGUIMongoHostnameButton: Ändern des MongoDB-Hostnamens
+  wwcConfigConversationMongoPasswordInput: Das aktuelle Kennwort ist %i. Geben Sie
+    einen anderen Wert als 0 ein, um ein neues Kennwort festzulegen, oder geben Sie
+    0 ein, um zurückzugehen.
+  wwcConfigConversationMongoPortInput: Der aktuelle Port ist %i. Geben Sie einen anderen
+    Port als 0 ein, um einen neuen Port festzulegen, oder geben Sie 0 ein, um zurückzugehen.
+  wwcConfigConversationToggleMongoSuccess: MongoDB wurde erfolgreich umgeschaltet.
+    Laden Sie neu, damit die Änderung wirksam wird.
+  wwcConfigConversationMongoHostnameInput: Der aktuelle Hostname ist %i. Geben Sie
+    einen anderen Wert als 0 ein, um einen neuen Hostnamen festzulegen, oder geben
+    Sie 0 ein, um zurückzugehen.
+  wwcConfigConversationMongoHostnameSuccess: Der MongoDB-Hostname wurde erfolgreich
+    geändert.
+  wwcConfigGUIMongoMenuButton: MongoDB-Einstellungen ändern
+  wwcConfigGUIToggleMongoButton: MongoDB umschalten
+  wwcConfigConversationMongoDatabaseNameInput: Der aktuelle Datenbankname ist %i.
+    Geben Sie einen anderen Wert als 0 ein, um einen neuen Datenbanknamen festzulegen,
+    oder geben Sie 0 ein, um zurückzugehen.
+  wwcConfigConversationMongoOptionalArgsInput: 'Die aktuellen optionalen MongoDB-Argumente
+    sind: %i. Geben Sie Argumente ein, die durch ein Komma getrennt sind (key=value,
+    key2=value2), oder geben Sie clear ein, um die aktuellen Argumente zu löschen,
+    oder geben Sie 0 ein, um zurückzugehen.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB-Datenbank ändern
+  wwcConfigConversationMongoUsernameInput: Der aktuelle Benutzername ist %i. Geben
+    Sie einen anderen Wert als 0 ein, um einen neuen Benutzernamen festzulegen, oder
+    geben Sie 0 ein, um zurückzugehen.
+  wwcConfigGUIMongoOptionalArgsButton: Optionale MongoDB-Argumente ändern
+  wwcConfigConversationMongoUsernameSuccess: Der MongoDB-Benutzernamen wurde erfolgreich
+    geändert.
+  wwcConfigConversationMongoPasswordSuccess: Das Passwort für MongoDB wurde erfolgreich
+    geändert.
+  wwcConfigConversationMongoPortSuccess: Der MongoDB-Port wurde erfolgreich geändert.
+  wwcConfigGUIMongoUsernameButton: MongoDB-Benutzernamen ändern
+  wwcConfigGUIMongoPasswordButton: MongoDB Passwort ändern
+  wwcConfigConversationMongoOptionalArgsSuccess: Die optionalen MongoDB-Argumente
+    wurden erfolgreich geändert.
+  wwcConfigConversationMongoOptionalArgsCleared: Optionale Argumente wurden erfolgreich
+    gelöscht.
+  wwcConfigGUIMongoPortButton: MongoDB-Port ändern

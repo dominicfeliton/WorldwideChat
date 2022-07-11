@@ -399,3 +399,41 @@ Messages:
   libreHttpUnknown: 'Неизвестна http грешка: %i'
   wwcConfigGUILibreTranslateURLButton: Промяна на безплатен превод URL
   wwcConfigConnectionFail: Неуспешно свързване към %i.
+  wwcConfigGUIMongoSettings: Конфигурация на MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Успешно промени името на базата данни
+    MongoDB.
+  wwcConfigGUIMongoHostnameButton: Промяна на името на хоста MongoDB
+  wwcConfigConversationMongoPasswordInput: Текущата парола е %i. Въведете нещо различно
+    от 0, за да зададете нова парола или въведете 0, за да се върнете назад.
+  wwcConfigConversationMongoPortInput: Текущият порт е %i. Въведете нещо различно
+    от 0, за да зададете нов порт, или въведете 0, за да се върнете назад.
+  wwcConfigConversationToggleMongoSuccess: MongoDB премина успешно. Презаредете, за
+    да влезе в сила промяната.
+  wwcConfigConversationMongoHostnameInput: Текущото име на хост е %i. Въведете нещо
+    различно от 0, за да зададете ново име на хост или въведете 0, за да се върнете
+    назад.
+  wwcConfigConversationMongoHostnameSuccess: Успешно промени името на хоста MongoDB.
+  wwcConfigGUIMongoMenuButton: Промяна на настройките на MongoDB
+  wwcConfigGUIToggleMongoButton: Превключване на MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Текущото име на базата данни е %i.
+    Въведете нещо различно от 0, за да зададете ново име на база данни или тип 0,
+    за да се върнете.
+  wwcConfigConversationMongoOptionalArgsInput: 'Текущите незадължителни аргументи
+    на MongoDB са: %i. Въведете аргументи, разделени със запетая (key=value, key2
+    = value2), или въведете clear, за да изтриете текущите args, или въведете 0, за
+    да се върнете назад.'
+  wwcConfigGUIMongoDatabaseNameButton: Промяна на базата данни MongoDB
+  wwcConfigConversationMongoUsernameInput: Текущото потребителско име е %i. Въведете
+    нещо различно от 0, за да зададете ново потребителско име, или въведете 0, за
+    да се върнете.
+  wwcConfigGUIMongoOptionalArgsButton: Промяна на MongoDB незадължителни аргументи
+  wwcConfigConversationMongoUsernameSuccess: Успешно промени потребителското име MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Успешно промени паролата MongoDB.
+  wwcConfigConversationMongoPortSuccess: Успешно промени пристанището MongoDB.
+  wwcConfigGUIMongoUsernameButton: Промяна на потребителското име MongoDB
+  wwcConfigGUIMongoPasswordButton: Промяна на паролата MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Успешно промени незадължителните
+    аргументи MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Незадължителните аргументи са изчистени
+    успешно.
+  wwcConfigGUIMongoPortButton: Промяна на пристанището MongoDB

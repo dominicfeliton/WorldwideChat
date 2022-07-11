@@ -388,3 +388,37 @@ Messages:
   libreHttpUnknown: 'अपरिचीत HTTP त्रुटी: %i'
   wwcConfigGUILibreTranslateURLButton: विनामूल्य भाषांतर URL बदला
   wwcConfigConnectionFail: '%i शी कनेक्ट करण्यास अपयशी.'
+  wwcConfigGUIMongoSettings: मोंगोडीबी कॉन्फिगरेशन
+  wwcConfigConversationMongoDatabaseNameSuccess: मोंगोडीबी डेटाबेस नाव यशस्वीरित्या
+    बदलले.
+  wwcConfigGUIMongoHostnameButton: मोंगोडीबी होस्टनाव बदला
+  wwcConfigConversationMongoPasswordInput: वर्तमान पासवर्ड %i आहे. 0 पेक्षा नवीन पासवर्ड
+    सेट करण्यासाठी किंवा परत जाण्यासाठी टाइप 0 पेक्षा इतर काहीही टाइप करा.
+  wwcConfigConversationMongoPortInput: वर्तमान पोर्ट %i आहे. 0 पेक्षा नवीन पोर्ट सेट
+    करण्यासाठी किंवा परत जाण्यासाठी टाइप 0 पेक्षा इतर काहीही टाइप करा.
+  wwcConfigConversationToggleMongoSuccess: मोंगोडीबी यशस्वीरित्या टॉगल केले. बदल प्रभावी
+    होण्यासाठी रीलोड करा.
+  wwcConfigConversationMongoHostnameInput: सध्याचे यजमाननाव %i आहे. 0 शिवाय नविन यजमाननाव
+    निश्चित करण्यासाठी टाइप करा, किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationMongoHostnameSuccess: मोंगोडीबी होस्टनाव यशस्वीरित्या बदलले.
+  wwcConfigGUIMongoMenuButton: मोंगोडीबी सेटिंग्ज बदला
+  wwcConfigGUIToggleMongoButton: टॉगल मोंगोडीबी
+  wwcConfigConversationMongoDatabaseNameInput: वर्तमान डेटाबेस नाव %i आहे. 0 पेक्षा
+    नवीन डेटाबेस नाव निश्चित करण्यासाठी किंवा परत जाण्यासाठी टाइप 0 पेक्षा इतर काहीही
+    टाइप करा.
+  wwcConfigConversationMongoOptionalArgsInput: 'सध्याचे पर्यायी MongoDB वितर्क आहेत:
+    %i स्वल्पविरामाने विभक्त केलेले वितर्क टाइप करा (key=value, key2=value2), किंवा
+    वर्तमान आर्ग्ज पुसण्यासाठी स्पष्ट टाइप करा, किंवा 0 परत जाण्यासाठी टाइप करा.'
+  wwcConfigGUIMongoDatabaseNameButton: मोंगोडीबी डेटाबेस बदला
+  wwcConfigConversationMongoUsernameInput: सध्याचे वापरकर्तानाव %i आहे. 0 पेक्षा इतर
+    काहीही टाइप करा नविन वापरकर्तानाव निश्चित करा, किंवा परत जाण्यासाठी टाइप 0.
+  wwcConfigGUIMongoOptionalArgsButton: मोंगोडीबी पर्यायी वितर्क बदला
+  wwcConfigConversationMongoUsernameSuccess: मोंगोडीबी वापरकर्तानाव यशस्वीरित्या बदलले.
+  wwcConfigConversationMongoPasswordSuccess: मोंगोडीबी संकेतशब्द यशस्वीरित्या बदलला.
+  wwcConfigConversationMongoPortSuccess: मोंगोडीबी पोर्ट यशस्वीरित्या बदलला.
+  wwcConfigGUIMongoUsernameButton: मोंगोडीबी वापरकर्तानाव बदला
+  wwcConfigGUIMongoPasswordButton: मोंगोडीबी संकेतशब्द बदला
+  wwcConfigConversationMongoOptionalArgsSuccess: पर्यायी मोंगोडीबी वितर्क यशस्वीरित्या
+    बदलले.
+  wwcConfigConversationMongoOptionalArgsCleared: पर्यायी वितर्क यशस्वीरित्या साफ.
+  wwcConfigGUIMongoPortButton: मोंगोडीबी पोर्ट बदला

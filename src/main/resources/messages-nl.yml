@@ -403,3 +403,39 @@ Messages:
   libreHttpUnknown: 'Onbekende http-fout: %i'
   wwcConfigGUILibreTranslateURLButton: De URL van Libre Translate wijzigen
   wwcConfigConnectionFail: Kon geen verbinding maken met %i.
+  wwcConfigGUIMongoSettings: MongoDB-configuratie
+  wwcConfigConversationMongoDatabaseNameSuccess: De naam van de MongoDB-database is
+    succesvol gewijzigd.
+  wwcConfigGUIMongoHostnameButton: MongoDB-hostnaam wijzigen
+  wwcConfigConversationMongoPasswordInput: Het huidige wachtwoord is %i. Typ iets
+    anders dan 0 om een nieuw wachtwoord in te stellen, of typ 0 om terug te gaan.
+  wwcConfigConversationMongoPortInput: De huidige poort is %i. Typ iets anders dan
+    0 om een nieuwe poort in te stellen, of typ 0 om terug te gaan.
+  wwcConfigConversationToggleMongoSuccess: MongoDB is succesvol omgeschakeld. Laad
+    opnieuw om de wijziging door te voeren.
+  wwcConfigConversationMongoHostnameInput: De huidige hostnaam is %i. Typ iets anders
+    dan 0 om een nieuwe hostnaam in te stellen, of typ 0 om terug te gaan.
+  wwcConfigConversationMongoHostnameSuccess: De MongoDB-hostnaam is succesvol gewijzigd.
+  wwcConfigGUIMongoMenuButton: MongoDB-instellingen wijzigen
+  wwcConfigGUIToggleMongoButton: Goggle MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: De huidige databasenaam is %i. Typ
+    iets anders dan 0 om een nieuwe databasenaam in te stellen, of typ 0 om terug
+    te gaan.
+  wwcConfigConversationMongoOptionalArgsInput: 'De huidige optionele MongoDB-argumenten
+    zijn: %i. Typ argumenten gescheiden door een komma (key=value, key2=value2), of
+    typ clear om de huidige args te wissen, of typ 0 om terug te gaan.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB-database wijzigen
+  wwcConfigConversationMongoUsernameInput: De huidige gebruikersnaam is %i. Typ iets
+    anders dan 0 om een nieuwe gebruikersnaam in te stellen, of typ 0 om terug te
+    gaan.
+  wwcConfigGUIMongoOptionalArgsButton: Optionele argumenten van MongoDB wijzigen
+  wwcConfigConversationMongoUsernameSuccess: De MongoDB-gebruikersnaam is succesvol
+    gewijzigd.
+  wwcConfigConversationMongoPasswordSuccess: Het MongoDB-wachtwoord is succesvol gewijzigd.
+  wwcConfigConversationMongoPortSuccess: De MongoDB-poort is succesvol gewijzigd.
+  wwcConfigGUIMongoUsernameButton: MongoDB-gebruikersnaam wijzigen
+  wwcConfigGUIMongoPasswordButton: MongoDB-wachtwoord wijzigen
+  wwcConfigConversationMongoOptionalArgsSuccess: De optionele MongoDB-argumenten zijn
+    succesvol gewijzigd.
+  wwcConfigConversationMongoOptionalArgsCleared: Optionele argumenten met succes gewist.
+  wwcConfigGUIMongoPortButton: MongoDB-poort wijzigen

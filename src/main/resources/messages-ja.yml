@@ -311,3 +311,31 @@ Messages:
   libreHttpUnknown: '不明な http エラー: %i'
   wwcConfigGUILibreTranslateURLButton: リブレ翻訳 URL を変更
   wwcConfigConnectionFail: '%i に接続できませんでした。'
+  wwcConfigGUIMongoSettings: MongoDB 設定
+  wwcConfigConversationMongoDatabaseNameSuccess: MongoDB データベース名を正常に変更しました。
+  wwcConfigGUIMongoHostnameButton: MongoDB ホスト名の変更
+  wwcConfigConversationMongoPasswordInput: 現在のパスワードは %i です。0 以外の値を入力して新しいパスワードを設定するか、0
+    を入力して戻ります。
+  wwcConfigConversationMongoPortInput: 現在のポートは %i です。0 以外の値を入力して新しいポートを設定するか、0 を入力して戻ります。
+  wwcConfigConversationToggleMongoSuccess: MongoDB は正常に切り替わりました。リロードして変更を有効にします。
+  wwcConfigConversationMongoHostnameInput: 現在のホスト名は %i です。0 以外の値を入力して新しいホスト名を設定するか、0
+    を入力して戻ります。
+  wwcConfigConversationMongoHostnameSuccess: MongoDB のホスト名を正常に変更しました。
+  wwcConfigGUIMongoMenuButton: MongoDB の設定を変更する
+  wwcConfigGUIToggleMongoButton: MongoDB のトグル
+  wwcConfigConversationMongoDatabaseNameInput: 現在のデータベース名は %i です。0 以外の値を入力して新しいデータベース名を設定するか、0
+    を入力して戻ります。
+  wwcConfigConversationMongoOptionalArgsInput: 現在のオプションの MongoDB 引数は %i です。引数をカンマで区切って入力するか
+    (key=value、key2=value2)、clear と入力して現在の引数を消去するか、0 を入力して戻ります。
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB データベースを変更
+  wwcConfigConversationMongoUsernameInput: 現在のユーザー名は %i です。0 以外の値を入力して新しいユーザー名を設定するか、0
+    を入力して戻ります。
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB のオプション引数の変更
+  wwcConfigConversationMongoUsernameSuccess: MongoDB のユーザー名を正常に変更しました。
+  wwcConfigConversationMongoPasswordSuccess: MongoDB のパスワードを正常に変更しました。
+  wwcConfigConversationMongoPortSuccess: MongoDB ポートが正常に変更されました。
+  wwcConfigGUIMongoUsernameButton: MongoDB ユーザー名の変更
+  wwcConfigGUIMongoPasswordButton: MongoDB パスワードを変更
+  wwcConfigConversationMongoOptionalArgsSuccess: オプションの MongoDB 引数が正常に変更されました。
+  wwcConfigConversationMongoOptionalArgsCleared: オプションの引数は正常にクリアされました。
+  wwcConfigGUIMongoPortButton: MongoDB ポートを変更

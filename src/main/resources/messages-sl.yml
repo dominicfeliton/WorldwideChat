@@ -397,3 +397,39 @@ Messages:
   libreHttpUnknown: 'Neznana napaka http: %i'
   wwcConfigGUILibreTranslateURLButton: Spremeni URL za brezplačno prevajanje
   wwcConfigConnectionFail: Povezava z %i ni uspela.
+  wwcConfigGUIMongoSettings: Konfiguracija MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Uspešno spremenil ime baze podatkov
+    MongoDB.
+  wwcConfigGUIMongoHostnameButton: Spremenite ime gostitelja MongoDB
+  wwcConfigConversationMongoPasswordInput: Trenutno geslo je %i. Vnesite karkoli drugega
+    kot 0, če želite nastaviti novo geslo, ali vnesite 0, da se vrnete nazaj.
+  wwcConfigConversationMongoPortInput: Trenutna vrata so %i. Vnesite karkoli drugega
+    kot 0, če želite nastaviti nova vrata, ali vnesite 0, da se vrnete nazaj.
+  wwcConfigConversationToggleMongoSuccess: MongoDB se je uspešno prepletal. Ponovno
+    naložite, da sprememba začne veljati.
+  wwcConfigConversationMongoHostnameInput: Trenutno ime gostitelja je %i. Vnesite
+    karkoli drugega kot 0, če želite nastaviti novo ime gostitelja, ali vnesite 0,
+    da se vrnete nazaj.
+  wwcConfigConversationMongoHostnameSuccess: Uspešno spremenil ime gostitelja MongoDB.
+  wwcConfigGUIMongoMenuButton: Spremenite nastavitve MongoDB
+  wwcConfigGUIToggleMongoButton: Preklopi MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Trenutno ime zbirke podatkov je %i.
+    Vnesite karkoli drugega kot 0, da nastavite novo ime zbirke podatkov ali vnesite
+    0, da se vrnete nazaj.
+  wwcConfigConversationMongoOptionalArgsInput: 'Trenutni neobvezni argumenti MongoDB
+    so: %i. Argumente vnesite ločene z vejico (key=value, key2=value2) ali vnesite
+    jasno, da obrišete trenutne arge, ali vnesite 0, da se vrnete nazaj.'
+  wwcConfigGUIMongoDatabaseNameButton: Spremeni zbirko podatkov MongoDB
+  wwcConfigConversationMongoUsernameInput: Trenutno uporabniško ime je %i. Vnesite
+    karkoli drugega kot 0, če želite nastaviti novo uporabniško ime, ali vnesite 0,
+    da se vrnete nazaj.
+  wwcConfigGUIMongoOptionalArgsButton: Spremenite MongoDB neobvezne argumente
+  wwcConfigConversationMongoUsernameSuccess: Uspešno spremenilo uporabniško ime MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Uspešno spremenil geslo MongoDB.
+  wwcConfigConversationMongoPortSuccess: Uspešno spremenil vrata MongoDB.
+  wwcConfigGUIMongoUsernameButton: Spremeni MongoDB uporabniško ime
+  wwcConfigGUIMongoPasswordButton: Spremenite geslo MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Uspešno spremenili neobvezne MongoDB
+    argumente.
+  wwcConfigConversationMongoOptionalArgsCleared: Izbirni argumenti uspešno izbrisani.
+  wwcConfigGUIMongoPortButton: Spremenite vrata MongoDB

@@ -410,3 +410,41 @@ Messages:
   libreHttpUnknown: 'Eroare http necunoscută: %i'
   wwcConfigGUILibreTranslateURLButton: Schimbați URL-ul Traduceți gratuit
   wwcConfigConnectionFail: Conectarea la %i nu a reușit.
+  wwcConfigGUIMongoSettings: Configurare MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: A schimbat cu succes numele bazei
+    de date MongoDB.
+  wwcConfigGUIMongoHostnameButton: Schimbați numele de gazdă MongoDB
+  wwcConfigConversationMongoPasswordInput: Parola curentă este %i. Tastați altceva
+    decât 0 pentru a seta o parolă nouă sau tastați 0 pentru a reveni.
+  wwcConfigConversationMongoPortInput: Portul curent este %i. Tastați orice altceva
+    decât 0 pentru a seta un port nou sau tastați 0 pentru a reveni.
+  wwcConfigConversationToggleMongoSuccess: MongoDB comutat cu succes. Reîncărcați
+    pentru ca modificarea să aibă efect.
+  wwcConfigConversationMongoHostnameInput: Numele gazdei curent este %i. Tastați altceva
+    decât 0 pentru a seta un nou nume de gazdă sau tastați 0 pentru a reveni.
+  wwcConfigConversationMongoHostnameSuccess: A schimbat cu succes numele de gazdă
+    MongoDB.
+  wwcConfigGUIMongoMenuButton: Schimbați setările MongoDB
+  wwcConfigGUIToggleMongoButton: Comută MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Numele bazei de date curente este %i.
+    Tastați altceva decât 0 pentru a seta un nou nume de bază de date sau tastați
+    0 pentru a reveni.
+  wwcConfigConversationMongoOptionalArgsInput: 'Argumentele MongoDB opționale curente
+    sunt: %i.Argumente de tip separate printr-o virgulă (cheie = valoare, key2 = value2),
+    sau tastați clar pentru a șterge arg-urile curente sau tastați 0 pentru a reveni.'
+  wwcConfigGUIMongoDatabaseNameButton: Schimbați baza de date MongoDB
+  wwcConfigConversationMongoUsernameInput: Numele de utilizator curent este %i. Tastați
+    altceva decât 0 pentru a seta un nou nume de utilizator sau tastați 0 pentru a
+    reveni.
+  wwcConfigGUIMongoOptionalArgsButton: Schimbați argumentele opționale MongoDB
+  wwcConfigConversationMongoUsernameSuccess: A schimbat cu succes numele de utilizator
+    MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: A schimbat cu succes parola MongoDB.
+  wwcConfigConversationMongoPortSuccess: A schimbat cu succes portul MongoDB.
+  wwcConfigGUIMongoUsernameButton: Schimbați numele de utilizator MongoDB
+  wwcConfigGUIMongoPasswordButton: Schimbați parola MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: A schimbat cu succes argumentele
+    opționale MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Argumentele opționale au fost șterse
+    cu succes.
+  wwcConfigGUIMongoPortButton: Schimbați portul MongoDB

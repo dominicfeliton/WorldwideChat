@@ -399,3 +399,40 @@ Messages:
   libreHttpUnknown: 'Ismeretlen http hiba: %i'
   wwcConfigGUILibreTranslateURLButton: Change Libre Translate
   wwcConfigConnectionFail: 'Nem sikerült csatlakozni a következőhöz: %i.'
+  wwcConfigGUIMongoSettings: MongoDB konfiguráció
+  wwcConfigConversationMongoDatabaseNameSuccess: Sikeresen módosította a MongoDB adatbázis
+    nevét.
+  wwcConfigGUIMongoHostnameButton: MongoDB Hostname módosítása
+  wwcConfigConversationMongoPasswordInput: A jelenlegi jelszó %i. Írja be a 0 kivételével
+    az új jelszó beállításához, vagy írja be a 0 értéket a visszalépéshez.
+  wwcConfigConversationMongoPortInput: Az aktuális port %i. Írja be a 0 kivételével
+    az új port beállításához, vagy írja be a 0 értéket a visszalépéshez.
+  wwcConfigConversationToggleMongoSuccess: A MongoDB sikeresen váltott. A módosítás
+    érvénybe lépéséhez töltse be újra.
+  wwcConfigConversationMongoHostnameInput: A jelenlegi állomásnév %i. Írja be a 0-tól
+    eltérő értéket az új állomásnév beállításához, vagy írja be a 0 értéket a visszalépéshez.
+  wwcConfigConversationMongoHostnameSuccess: Sikeresen megváltoztatta a MongoDB hostname.
+  wwcConfigGUIMongoMenuButton: A MongoDB beállításainak módosítása
+  wwcConfigGUIToggleMongoButton: Toggle MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Az adatbázis jelenlegi neve %i. Írja
+    be a 0-tól eltérő értéket az új adatbázisnév beállításához, vagy írja be a 0 értéket
+    a visszalépéshez.
+  wwcConfigConversationMongoOptionalArgsInput: 'A választható MongoDB argumentumok
+    a következők: %i. Írja be az argumentumokat vesszővel elválasztva (key=value,
+    key2=value2), vagy írja be a clear parancsot az aktuális argok törléséhez, vagy
+    írja be a 0 értéket a visszalépéshez.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB adatbázis módosítása
+  wwcConfigConversationMongoUsernameInput: A jelenlegi felhasználónév %i. Írja be
+    a 0-tól eltérő értéket az új felhasználónév beállításához, vagy írja be a 0 értéket
+    a visszalépéshez.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB opcionális argumentumok módosítása
+  wwcConfigConversationMongoUsernameSuccess: Sikeresen megváltoztatta a MongoDB felhasználónevet.
+  wwcConfigConversationMongoPasswordSuccess: Sikeresen megváltoztatta a MongoDB jelszót.
+  wwcConfigConversationMongoPortSuccess: Sikeresen megváltoztatta a MongoDB portot.
+  wwcConfigGUIMongoUsernameButton: MongoDB felhasználónév módosítása
+  wwcConfigGUIMongoPasswordButton: MongoDB jelszó módosítása
+  wwcConfigConversationMongoOptionalArgsSuccess: Sikeresen módosította az opcionális
+    MongoDB argumentumokat.
+  wwcConfigConversationMongoOptionalArgsCleared: Az opcionális argumentumok sikeresen
+    törlődtek.
+  wwcConfigGUIMongoPortButton: MongoDB port módosítása

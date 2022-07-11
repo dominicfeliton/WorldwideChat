@@ -384,3 +384,38 @@ Messages:
   libreHttpUnknown: 'خطای HTTP ناشناخته: %i'
   wwcConfigGUILibreTranslateURLButton: تغییر رایگان ترجمه URL
   wwcConfigConnectionFail: اتصال به %i شکست خورد.
+  wwcConfigGUIMongoSettings: پیکربندی مانگودی‌بی
+  wwcConfigConversationMongoDatabaseNameSuccess: نام پایگاه داده MongoDB را با موفقیت
+    تغییر داد.
+  wwcConfigGUIMongoHostnameButton: تغییر نام میزبان مانگودیبی
+  wwcConfigConversationMongoPasswordInput: رمز عبور فعلی %i است برای تنظیم یک رمز
+    عبور جدید، هر چیزی غیر از 0 را تایپ کنید یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationMongoPortInput: پورت فعلی٪ i است برای تنظیم یک پورت جدید، هر
+    چیزی غیر از 0 را تایپ کنید یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationToggleMongoSuccess: مانگودیبی با موفقیت جابجا شد. بارگذاری
+    مجدد برای تغییر به اثر.
+  wwcConfigConversationMongoHostnameInput: نام میزبان فعلی %i است برای تنظیم نام میزبان
+    جدید، هر چیزی غیر از 0 را تایپ کنید یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationMongoHostnameSuccess: نام میزبان MongoDB را با موفقیت تغییر
+    داد.
+  wwcConfigGUIMongoMenuButton: تغییر تنظیمات مانگودیبی
+  wwcConfigGUIToggleMongoButton: ضامن مانگودیبی
+  wwcConfigConversationMongoDatabaseNameInput: نام پایگاه داده فعلی %i است برای تنظیم
+    نام پایگاه داده جدید، هر چیزی غیر از 0 را تایپ کنید یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationMongoOptionalArgsInput: 'آرگومانهای MongoDB اختیاری فعلی عبارتند
+    از: %i آرگومانهایی را که با کاما از هم جدا شده اند (key=value, key2=value2)، یا
+    برای پاک کردن آرگ های فعلی، واضح را تایپ کنید یا 0 را تایپ کنید تا به عقب برگردید.'
+  wwcConfigGUIMongoDatabaseNameButton: تغییر پایگاه داده مانگودیبی
+  wwcConfigConversationMongoUsernameInput: نام کاربری فعلی %i است برای تنظیم نام کاربری
+    جدید، هر چیزی غیر از 0 را تایپ کنید یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigGUIMongoOptionalArgsButton: تغییر آرگومانهای اختیاری MongoDB
+  wwcConfigConversationMongoUsernameSuccess: نام کاربری MongoDB را با موفقیت تغییر
+    داد.
+  wwcConfigConversationMongoPasswordSuccess: رمز عبور MongoDB را با موفقیت تغییر داد.
+  wwcConfigConversationMongoPortSuccess: پورت MongoDB را با موفقیت تغییر داد.
+  wwcConfigGUIMongoUsernameButton: تغییر نام کاربری مانگودیبی
+  wwcConfigGUIMongoPasswordButton: تغییر رمز عبور مانگودیبی
+  wwcConfigConversationMongoOptionalArgsSuccess: آرگومانهای MongoDB اختیاری را با
+    موفقیت تغییر داد.
+  wwcConfigConversationMongoOptionalArgsCleared: استدلال اختیاری با موفقیت پاک.
+  wwcConfigGUIMongoPortButton: تغییر بندر مانگودیبی

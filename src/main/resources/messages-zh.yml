@@ -305,3 +305,28 @@ Messages:
   libreHttpUnknown: '未知的 http 错误: %i'
   wwcConfigGUILibreTranslateURLButton: 更改 Libre 翻译网址
   wwcConfigConnectionFail: 连接到 %i 失败。
+  wwcConfigGUIMongoSettings: MongoDB 配置
+  wwcConfigConversationMongoDatabaseNameSuccess: 成功更改了 MongoDB 数据库名称。
+  wwcConfigGUIMongoHostnameButton: 更改 MongoDB 主机名
+  wwcConfigConversationMongoPasswordInput: 当前密码为 %i。请键入 0 以外的任意值来设置新密码，或键入 0 返回。
+  wwcConfigConversationMongoPortInput: 当前端口为 %i。键入 0 以外的任何值来设置新端口，或键入 0 返回端口。
+  wwcConfigConversationToggleMongoSuccess: MongoDB 已成功切换。重新加载以使更改生效。
+  wwcConfigConversationMongoHostnameInput: 当前的主机名是 %i。键入 0 以外的任何名称来设置新主机名，或键入 0 返回。
+  wwcConfigConversationMongoHostnameSuccess: 成功更改了 MongoDB 主机名。
+  wwcConfigGUIMongoMenuButton: 更改 MongoDB 设置
+  wwcConfigGUIToggleMongoButton: 切换 MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: 当前的数据库名是 %i。键入 0 以外的任何名称来设置新的数据库名称，或键入
+    0 返回。
+  wwcConfigConversationMongoOptionalArgsInput: 当前可选的 MongoDB 参数是： %i。键入用逗号分隔的参数（键=值，键2=value2），或者键入
+    clear 来擦除当前参数，或者键入 0 返回。
+  wwcConfigGUIMongoDatabaseNameButton: 更改 MongoDB 数据库
+  wwcConfigConversationMongoUsernameInput: 当前的用户名是 %i。键入 0 以外的任何名称来设置新用户名，或键入 0 返回。
+  wwcConfigGUIMongoOptionalArgsButton: 更改 MongoDB 可选参数
+  wwcConfigConversationMongoUsernameSuccess: 成功更改了 MongoDB 用户名。
+  wwcConfigConversationMongoPasswordSuccess: 成功更改了 MongoDB 密码。
+  wwcConfigConversationMongoPortSuccess: 成功更改了 MongoDB 端口。
+  wwcConfigGUIMongoUsernameButton: 更改 MongoDB 用户名
+  wwcConfigGUIMongoPasswordButton: 更改 MongoDB 密码
+  wwcConfigConversationMongoOptionalArgsSuccess: 成功更改了可选的 MongoDB 参数。
+  wwcConfigConversationMongoOptionalArgsCleared: 可选参数已成功清除。
+  wwcConfigGUIMongoPortButton: 更改 MongoDB 端口

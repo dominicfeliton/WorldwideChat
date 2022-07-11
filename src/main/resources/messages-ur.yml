@@ -391,3 +391,42 @@ Messages:
   libreHttpUnknown: 'نامعلوم HTTP غلطی: %i'
   wwcConfigGUILibreTranslateURLButton: مفت تبدیل کریں URL کا ترجمہ کریں
   wwcConfigConnectionFail: '%i سے متصل ہونے میں ناکام.'
+  wwcConfigGUIMongoSettings: مونگو ڈی بی کی ترتیب
+  wwcConfigConversationMongoDatabaseNameSuccess: کامیابی سے MongoDB ڈیٹا بیس کا نام
+    تبدیل کر دیا.
+  wwcConfigGUIMongoHostnameButton: مونگو ڈی بی میزبان نام تبدیل کریں
+  wwcConfigConversationMongoPasswordInput: موجودہ پاس ورڈ %i ہے نیا پاس ورڈ سیٹ کرنے
+    کے لیے 0 کے علاوہ کوئی اور چیز ٹائپ کریں یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigConversationMongoPortInput: موجودہ بندرگاہ %i ہے ایک نیا پورٹ سیٹ کرنے
+    کے لیے 0 کے علاوہ کوئی اور چیز ٹائپ کریں یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigConversationToggleMongoSuccess: MongoDB کامیابی سے ٹوگل. تبدیلی کو مؤثر
+    بنانے کے لئے دوبارہ لوڈ کریں.
+  wwcConfigConversationMongoHostnameInput: موجودہ میزبان کا نام %i ہے ایک نیا میزبان
+    نام مقرر کرنے کے لئے 0 کے علاوہ کچھ بھی ٹائپ کریں، یا واپس جانے کے لئے 0 ٹائپ
+    کریں.
+  wwcConfigConversationMongoHostnameSuccess: MongoDB میزبان نام کو کامیابی سے تبدیل
+    کر دیا.
+  wwcConfigGUIMongoMenuButton: MongoDB کی ترتیبات کو تبدیل کریں
+  wwcConfigGUIToggleMongoButton: مونگو ڈی بی کو ٹوگل کریں
+  wwcConfigConversationMongoDatabaseNameInput: موجودہ ڈیٹا بیس کا نام %i ہے ایک نیا
+    ڈیٹا بیس نام سیٹ کرنے کے لیے 0 کے علاوہ کچھ بھی ٹائپ کریں یا واپس جانے کے لیے
+    0 ٹائپ کریں۔
+  wwcConfigConversationMongoOptionalArgsInput: 'موجودہ اختیاری MongoDB دلائل ہیں:
+    %i قسم کے دلائل کوما (کلید = قدر، key2 = value2)، یا موجودہ ارگز مسح کرنے کے لئے
+    واضح ٹائپ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB ڈیٹا بیس تبدیل کریں
+  wwcConfigConversationMongoUsernameInput: موجودہ صارف نام %i ہے ایک نیا صارف نام
+    مرتب کرنے کے لیے 0 کے علاوہ کوئی بھی چیز ٹائپ کریں یا واپس جانے کے لیے 0 ٹائپ
+    کریں۔
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB اختیاری دلائل تبدیل کریں
+  wwcConfigConversationMongoUsernameSuccess: MongoDB صارف نام کو کامیابی سے تبدیل
+    کر دیا.
+  wwcConfigConversationMongoPasswordSuccess: MongoDB پاس ورڈ کو کامیابی سے تبدیل کر
+    دیا.
+  wwcConfigConversationMongoPortSuccess: کامیابی سے MongoDB بندرگاہ کو تبدیل کر دیا.
+  wwcConfigGUIMongoUsernameButton: MongoDB صارف نام تبدیل کریں
+  wwcConfigGUIMongoPasswordButton: MongoDB پاس ورڈ تبدیل کریں
+  wwcConfigConversationMongoOptionalArgsSuccess: کامیابی سے اختیاری MongoDB دلائل
+    کو تبدیل کر دیا.
+  wwcConfigConversationMongoOptionalArgsCleared: اختیاری دلائل کامیابی سے صاف ہو گئے۔
+  wwcConfigGUIMongoPortButton: مونگو ڈی بی پورٹ تبدیل کریں

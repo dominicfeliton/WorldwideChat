@@ -385,3 +385,40 @@ Messages:
   libreHttpUnknown: 'ناپېژندلې http تېروتنه: %i'
   wwcConfigGUILibreTranslateURLButton: ليبر ژباړل URL بدلول
   wwcConfigConnectionFail: .په نښلولو کې پاتې راغی %i
+  wwcConfigGUIMongoSettings: MongoDB سازونه
+  wwcConfigConversationMongoDatabaseNameSuccess: په بریالیتوب سره د MongoDB ډیټابیس
+    نوم بدل کړ.
+  wwcConfigGUIMongoHostnameButton: د MongoDB کوربه نوم بدل کړئ
+  wwcConfigConversationMongoPasswordInput: اوسنی تېرنويې %i دی. د نوې تېرنويې د ټاکلو
+    لپاره د 0 څخه پرته بل څه وليکﺉ، يا بېرته تللو لپاره 0 وليکﺉ.
+  wwcConfigConversationMongoPortInput: اوسنی بندر %i دی. د نوي بندر د ټاکلو لپاره
+    له 0 پرته بل هر څه ولیکئ، یا د بېرته تګ لپاره 0 ډول ډول کړئ.
+  wwcConfigConversationToggleMongoSuccess: منګوډ بی په بریالیتوب سره وځپل شو. د بدلون
+    لپاره بیا ځای پر ځای کړئ ترڅو اغیزمن شي.
+  wwcConfigConversationMongoHostnameInput: اوسنی کوربه نوم٪ i دی. د 0 څخه بل څه ولیکئ
+    ترڅو نوی کوربه نوم وټاکئ، یا د بیرته تلو لپاره 0 ډول ډول کړئ.
+  wwcConfigConversationMongoHostnameSuccess: په بریالیتوب سره د MongoDB کوربه نوم
+    بدل کړ.
+  wwcConfigGUIMongoMenuButton: MongoDB امستنې بدلول
+  wwcConfigGUIToggleMongoButton: مانګاوډبی بدلول
+  wwcConfigConversationMongoDatabaseNameInput: اوسنی توکبنسټ نوم دی %i. د 0 څخه بل
+    څه وليکﺉ چې نوی ډاټابیس نوم وټاکﺉ، يا بېرته تللو لپاره 0 وليکﺉ.
+  wwcConfigConversationMongoOptionalArgsInput: 'اوسنی اختیاري MongoDB دلیلونه دا دي:
+    %i. د کاما (key=value, key2=value2) لخوا جلا شوي دلیلونه ولیکئ، یا د اوسني ارګز
+    د پاکولو لپاره واضح ډول کړئ، یا د 0 ټایپ کړئ چې بېرته لاړ شي.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB ډاټابیس بدل کړئ
+  wwcConfigConversationMongoUsernameInput: اوسنی کارن-نوم %i دی. د نوي کارن-نوم د
+    ټاکلو لپاره د 0 څخه پرته بل څه ولیکئ، یا د بېرته تلو لپاره 0 ډول ډول کړئ.
+  wwcConfigGUIMongoOptionalArgsButton: د MongoDB اختیاري بحثونه بدل کړئ
+  wwcConfigConversationMongoUsernameSuccess: په بریالیتوب سره د MongoDB کارن-نوم بدل
+    کړ
+  wwcConfigConversationMongoPasswordSuccess: په بریالیتوب سره د MongoDB پاسورډ بدل
+    شو.
+  wwcConfigConversationMongoPortSuccess: په بریالیتوب سره د MongoDB بندر بدل شو.
+  wwcConfigGUIMongoUsernameButton: MongoDB کارن-نوم بدل کړئ
+  wwcConfigGUIMongoPasswordButton: د MongoDB تېرنويې بدلول
+  wwcConfigConversationMongoOptionalArgsSuccess: په بریالیتوب سره د اختیاري MongoDB
+    دلیلونه بدل کړل.
+  wwcConfigConversationMongoOptionalArgsCleared: اختیاري دلیلونه په بریالیتوب سره
+    پاک شول
+  wwcConfigGUIMongoPortButton: MongoDB بندر بدل کړئ

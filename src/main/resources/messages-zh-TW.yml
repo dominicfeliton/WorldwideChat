@@ -306,3 +306,30 @@ Messages:
   libreHttpUnknown: 未知的錯誤： %i
   wwcConfigGUILibreTranslateURLButton: 更改免費翻譯網址
   wwcConfigConnectionFail: 無法連線至 %i。
+  wwcConfigGUIMongoSettings: 蒙古數據庫配置
+  wwcConfigConversationMongoDatabaseNameSuccess: 成功地更改了 MongoDB 的數據庫名稱。
+  wwcConfigGUIMongoHostnameButton: 更改主機名稱
+  wwcConfigConversationMongoPasswordInput: 目前的密碼為 %i。請輸入 0 以外的任何值來設定新密碼，或輸入 0 返回。
+  wwcConfigConversationMongoPortInput: 目前的通訊埠為 %i。請輸入 0 以外的任何值來設定新的連接埠，或輸入 0 返回。
+  wwcConfigConversationToggleMongoSuccess: 蒙古數據庫切換成功。重新載入以使變更生效。
+  wwcConfigConversationMongoHostnameInput: 目前的主機名稱是 %i。請輸入 0 以外的任何值來設定新的主機名稱，或輸入 0
+    返回。
+  wwcConfigConversationMongoHostnameSuccess: 成功地更改了 MongoDB 的主機名稱。
+  wwcConfigGUIMongoMenuButton: 更改蒙古數據庫設置
+  wwcConfigGUIToggleMongoButton: 切換蒙古數據庫
+  wwcConfigConversationMongoDatabaseNameInput: 目前的資料庫名稱為 %i。請輸入 0 以外的任何值來設定新的資料庫名稱，或輸入
+    0 返回。
+  wwcConfigConversationMongoOptionalArgsInput: 當前可選的 MongoDB 參數是：％i 類型參數用逗號（鍵 = 值，鍵
+    2 = 值 2）分隔，或鍵入清除擦除當前參數，或鍵入 0 返回。
+  wwcConfigGUIMongoDatabaseNameButton: 更改數據庫
+  wwcConfigConversationMongoUsernameInput: 目前的使用者名稱為 %i。請輸入 0 以外的任何值來設定新的使用者名稱，或輸入
+    0 返回。
+  wwcConfigGUIMongoOptionalArgsButton: 更改蒙古數據庫的可選參數
+  wwcConfigConversationMongoUsernameSuccess: 成功地更改了蒙古數據庫的用戶名。
+  wwcConfigConversationMongoPasswordSuccess: 成功地更改了蒙古數據庫的密碼。
+  wwcConfigConversationMongoPortSuccess: 成功地更改了蒙古數據庫端口。
+  wwcConfigGUIMongoUsernameButton: 更改用戶名
+  wwcConfigGUIMongoPasswordButton: 更改蒙古數據庫密碼
+  wwcConfigConversationMongoOptionalArgsSuccess: 成功地改變了可選的 MongoDB 參數。
+  wwcConfigConversationMongoOptionalArgsCleared: 成功清除選擇性引數。
+  wwcConfigGUIMongoPortButton: 變更蒙古資料庫連接埠

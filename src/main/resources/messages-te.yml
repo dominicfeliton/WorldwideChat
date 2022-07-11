@@ -386,3 +386,40 @@ Messages:
   libreHttpUnknown: 'తెలియని http దోషం: %i'
   wwcConfigGUILibreTranslateURLButton: మార్చు ఉచిత అనువదించు URL
   wwcConfigConnectionFail: '%i కి కనెక్ట్ చేయడంలో విఫలమైంది.'
+  wwcConfigGUIMongoSettings: MongoDB ఆకృతీకరణ
+  wwcConfigConversationMongoDatabaseNameSuccess: మొంగోడిబి డేటాబేస్ పేరును విజయవంతంగా
+    మార్చారు.
+  wwcConfigGUIMongoHostnameButton: MongoDB హోస్ట్ పేరు మార్చండి
+  wwcConfigConversationMongoPasswordInput: ప్రస్తుత సంకేతపదం %i. కొత్త సంకేతపదమును
+    అమర్చుటకు 0 కాకుండా ఏదైనా టైప్ చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigConversationMongoPortInput: ప్రస్తుత పోర్ట్ %i. కొత్త పోర్టును అమర్చుటకు
+    0 కాకుండా ఏదైనా టైప్ చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigConversationToggleMongoSuccess: MongoDB విజయవంతంగా టోగుల్ చేయబడింది. మార్పు
+    అమలులోకి రావడానికి రీలోడ్ చేయండి.
+  wwcConfigConversationMongoHostnameInput: ప్రస్తుత హోస్ట్పేరు %i. కొత్త హోస్ట్నామము
+    అమర్చుటకు 0 కాకుండా ఏదైనా టైపు చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigConversationMongoHostnameSuccess: మొంగోడిబి హోస్ట్ పేరును విజయవంతంగా మార్చారు.
+  wwcConfigGUIMongoMenuButton: MongoDB సెట్టింగులను మార్చండి
+  wwcConfigGUIToggleMongoButton: MongoDB ని టోగుల్ చేయండి
+  wwcConfigConversationMongoDatabaseNameInput: ప్రస్తుత డాటాబేస్ పేరు %i. కొత్త డాటాబేస్
+    పేరును సెట్ చేయడానికి 0 కాకుండా ఏదైనా టైప్ చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని
+    టైప్ చేయండి.
+  wwcConfigConversationMongoOptionalArgsInput: 'ప్రస్తుత ఐచ్చిక MongoDB వాదనలు: %i.
+    కామాతో వేరు చేయబడిన వాదనలను టైప్ చేయండి (key=value, key2=value2), లేదా ప్రస్తుత
+    అర్గ్లను తుడిచివేయడానికి స్పష్టంగా టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్
+    చేయండి.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB డేటాబేస్ మార్చండి
+  wwcConfigConversationMongoUsernameInput: ప్రస్తుత వాడుకరిపేరు %i. కొత్త వాడుకరిపేరును
+    సెట్ చేయడానికి 0 కాకుండా ఏదైనా టైప్ చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్
+    చేయండి.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB ఐచ్ఛిక వాదనలు మార్చండి
+  wwcConfigConversationMongoUsernameSuccess: మొంగోడిబి వినియోగదారు పేరును విజయవంతంగా
+    మార్చారు.
+  wwcConfigConversationMongoPasswordSuccess: మొంగోడిబి పాస్వర్డ్ను విజయవంతంగా మార్చారు.
+  wwcConfigConversationMongoPortSuccess: మొంగోడిబి పోర్టును విజయవంతంగా మార్చారు.
+  wwcConfigGUIMongoUsernameButton: MongoDB వినియోగదారు పేరును మార్చండి
+  wwcConfigGUIMongoPasswordButton: MongoDB పాస్వర్డ్ మార్చండి
+  wwcConfigConversationMongoOptionalArgsSuccess: విజయవంతంగా ఐచ్ఛిక MongoDB వాదనలు
+    మార్చబడింది.
+  wwcConfigConversationMongoOptionalArgsCleared: ఐచ్ఛిక వాదనలు విజయవంతంగా క్లియర్.
+  wwcConfigGUIMongoPortButton: MongoDB పోర్ట్ మార్చండి

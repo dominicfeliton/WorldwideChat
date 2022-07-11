@@ -432,3 +432,45 @@ Messages:
   libreHttpUnknown: 'Hindi kilalang http error: %i'
   wwcConfigGUILibreTranslateURLButton: Baguhin Libre Translate URL
   wwcConfigConnectionFail: Nabigong kumonekta sa %i.
+  wwcConfigGUIMongoSettings: Configuration ng MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Matagumpay na binago ang pangalan
+    ng database ng MongoDB.
+  wwcConfigGUIMongoHostnameButton: Baguhin ang MongoDB Hostname
+  wwcConfigConversationMongoPasswordInput: Ang kasalukuyang password ay %i. I-type
+    ang anumang bagay maliban sa 0 upang magtakda ng bagong password, o i-type ang
+    0 upang bumalik.
+  wwcConfigConversationMongoPortInput: Ang kasalukuyang port ay %i. I-type ang anumang
+    bagay maliban sa 0 upang magtakda ng bagong port, o i-type ang 0 upang bumalik.
+  wwcConfigConversationToggleMongoSuccess: Matagumpay na nag-toggle ang MongoDB. I-reload
+    para magkabisa ang pagbabago.
+  wwcConfigConversationMongoHostnameInput: Ang kasalukuyang hostname ay %i. I-type
+    ang anumang bagay maliban sa 0 upang magtakda ng bagong hostname, o i-type ang
+    0 upang bumalik.
+  wwcConfigConversationMongoHostnameSuccess: Matagumpay na binago ang hostname ng
+    MongoDB.
+  wwcConfigGUIMongoMenuButton: Baguhin ang Mga Setting ng MongoDB
+  wwcConfigGUIToggleMongoButton: I-toggle ang MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Ang kasalukuyang pangalan ng database
+    ay %i. I-type ang anumang bagay maliban sa 0 upang magtakda ng bagong pangalan
+    ng database, o i-type ang 0 upang bumalik.
+  wwcConfigConversationMongoOptionalArgsInput: 'Ang kasalukuyang opsyonal na argumento
+    ng MongoDB ay: %i Mag-type ng mga argumento na pinaghihiwalay ng isang kuwit (key=value,
+    key2=value2), o i-type ang malinaw upang punasan ang kasalukuyang mga arg, o i-type
+    ang 0 upang bumalik.'
+  wwcConfigGUIMongoDatabaseNameButton: Baguhin ang MongoDB Database
+  wwcConfigConversationMongoUsernameInput: Ang kasalukuyang username ay %i. I-type
+    ang anumang bagay maliban sa 0 upang magtakda ng bagong username, o i-type ang
+    0 upang bumalik.
+  wwcConfigGUIMongoOptionalArgsButton: Baguhin ang Mga Opsyonal na Argumento ng MongoDB
+  wwcConfigConversationMongoUsernameSuccess: Matagumpay na binago ang username ng
+    MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Matagumpay na binago ang password ng
+    MongoDB.
+  wwcConfigConversationMongoPortSuccess: Matagumpay na binago ang MongoDB port.
+  wwcConfigGUIMongoUsernameButton: Baguhin ang Username ng MongoDB
+  wwcConfigGUIMongoPasswordButton: Baguhin ang Password ng MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Matagumpay na binago ang opsyonal
+    na argumento ng MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Matagumpay na na-clear ang mga opsyonal
+    na argumento.
+  wwcConfigGUIMongoPortButton: Baguhin ang MongoDB Port

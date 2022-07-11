@@ -413,3 +413,44 @@ Messages:
   libreHttpUnknown: 'Error http desconegut: %i'
   wwcConfigGUILibreTranslateURLButton: Canvia l'URL de traducció lliure
   wwcConfigConnectionFail: No s'ha pogut connectar a %i.
+  wwcConfigGUIMongoSettings: Configuració MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: S'ha canviat correctament el nom
+    de la base de dades MongoDB.
+  wwcConfigGUIMongoHostnameButton: Canviar MongoDB Hostname
+  wwcConfigConversationMongoPasswordInput: La contrasenya actual és %i Escriviu qualsevol
+    cosa que no sigui 0 per establir una nova contrasenya, o escriviu 0 per tornar
+    enrere.
+  wwcConfigConversationMongoPortInput: El port actual és %i. escriviu qualsevol cosa
+    que no sigui 0 per establir un port nou, o escriviu 0 per tornar enrere.
+  wwcConfigConversationToggleMongoSuccess: MongoDB va toggled amb èxit. Torneu a carregar
+    perquè el canvi entri en vigor.
+  wwcConfigConversationMongoHostnameInput: El nom d'amfitrió actual és %i Escriviu
+    qualsevol cosa que no sigui 0 per establir un nou nom d'amfitrió, o escriviu 0
+    per tornar enrere.
+  wwcConfigConversationMongoHostnameSuccess: S'ha canviat correctament el nom d'amfitrió
+    de MongoDB.
+  wwcConfigGUIMongoMenuButton: Canviar la configuració MongoDB
+  wwcConfigGUIToggleMongoButton: Commuta MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: El nom actual de la base de dades és
+    %i. escriviu qualsevol cosa que no sigui 0 per establir un nou nom de base de
+    dades, o escriviu 0 per tornar enrere.
+  wwcConfigConversationMongoOptionalArgsInput: 'Els arguments opcionals actuals de
+    MongoDB són: %i. escriviu arguments separats per una coma (key=value, key2=value2),
+    o escriviu clear per esborrar els args actuals, o escriviu 0 per tornar enrere.'
+  wwcConfigGUIMongoDatabaseNameButton: Canvi de base de dades MongoDB
+  wwcConfigConversationMongoUsernameInput: El nom d'usuari actual és %i. escriviu
+    qualsevol cosa que no sigui 0 per establir un nou nom d'usuari, o escriviu 0 per
+    tornar enrere.
+  wwcConfigGUIMongoOptionalArgsButton: Canviar arguments opcionals MongoDB
+  wwcConfigConversationMongoUsernameSuccess: S'ha canviat correctament el nom d'usuari
+    de MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: S'ha canviat correctament la contrasenya
+    MongoDB.
+  wwcConfigConversationMongoPortSuccess: S'ha canviat correctament el port MongoDB.
+  wwcConfigGUIMongoUsernameButton: Canviar el nom d'usuari MongoDB
+  wwcConfigGUIMongoPasswordButton: Canviar contrasenya MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: S'ha canviat correctament els arguments
+    opcionals de MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Els arguments opcionals esborrats
+    amb èxit.
+  wwcConfigGUIMongoPortButton: Canviar el port MongoDB

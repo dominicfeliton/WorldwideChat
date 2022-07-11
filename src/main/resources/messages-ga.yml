@@ -418,3 +418,43 @@ Messages:
   libreHttpUnknown: 'Earráid http anaithnid: %i'
   wwcConfigGUILibreTranslateURLButton: Athraigh Saor in Aisce Aistrigh URL
   wwcConfigConnectionFail: Theip ar ceangal le %i.
+  wwcConfigGUIMongoSettings: Cumraíocht MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: D'éirigh le hainm bunachar MongoDB
+    a athrú.
+  wwcConfigGUIMongoHostnameButton: Athraigh Óstainm MongoDB
+  wwcConfigConversationMongoPasswordInput: Is é an focal faire atá ann faoi láthair
+    %i. rud ar bith Cineál eile seachas 0 a shocrú focal faire nua, nó cineál 0 chun
+    dul ar ais.
+  wwcConfigConversationMongoPortInput: Is é an port atá ann faoi láthair %i. rud ar
+    bith Cineál eile seachas 0 a shocrú le port nua, nó cineál 0 chun dul ar ais.
+  wwcConfigConversationToggleMongoSuccess: MongoDB toggled go rathúil. Athlódáil chun
+    go dtiocfaidh an t-athrú i bhfeidhm.
+  wwcConfigConversationMongoHostnameInput: Is é an óstainm atá ann faoi láthair %i.
+    rud ar bith Cineál eile seachas 0 a shocrú óstainm nua, nó cineál 0 chun dul ar
+    ais.
+  wwcConfigConversationMongoHostnameSuccess: D'éirigh leis an óstainm MongoDB a athrú.
+  wwcConfigGUIMongoMenuButton: Athraigh Socruithe MongoDB
+  wwcConfigGUIToggleMongoButton: Scoránaigh MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Is é an t-ainm bunachar reatha %i.
+    rud ar bith Cineál eile seachas 0 a shocrú le ainm bunachar sonraí nua, nó cineál
+    0 chun dul ar ais.
+  wwcConfigConversationMongoOptionalArgsInput: 'Is iad na hargóintí MongoDB roghnach
+    atá ann faoi láthair: %i. argóintí Cineál scartha le camóg (eochair = luach, eochair
+    2 = value2), nó cineál soiléir a wipe an argóintí atá ann faoi láthair, nó cineál
+    0 chun dul ar ais.'
+  wwcConfigGUIMongoDatabaseNameButton: Athraigh Bunachar Sonraí MongoDB
+  wwcConfigConversationMongoUsernameInput: Is é an t-ainm úsáideora atá ann faoi láthair
+    %i. rud ar bith eile seachas 0 a shocrú le ainm úsáideora nua, nó cineál 0 chun
+    dul ar ais.
+  wwcConfigGUIMongoOptionalArgsButton: Athraigh Argóintí Roghnach MongoDB
+  wwcConfigConversationMongoUsernameSuccess: D'éirigh leis an ainm úsáideora MongoDB
+    a athrú.
+  wwcConfigConversationMongoPasswordSuccess: D'éirigh leis an focal faire MongoDB
+    a athrú.
+  wwcConfigConversationMongoPortSuccess: D'éirigh le calafort MongoDB a athrú.
+  wwcConfigGUIMongoUsernameButton: Athraigh Ainm Úsáideora MongoDB
+  wwcConfigGUIMongoPasswordButton: Athraigh Pasfhocal MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: D'éirigh le hargóintí roghnacha MongoDB
+    a athrú.
+  wwcConfigConversationMongoOptionalArgsCleared: Argóintí roghnacha glanta go rathúil.
+  wwcConfigGUIMongoPortButton: Athraigh Port MongoDB

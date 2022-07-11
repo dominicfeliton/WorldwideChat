@@ -393,3 +393,35 @@ Messages:
   libreHttpUnknown: 'Galat http tidak dikenal: %i'
   wwcConfigGUILibreTranslateURLButton: Ubah URL Terjemahkan Gratis
   wwcConfigConnectionFail: Gagal menyambung ke %i.
+  wwcConfigGUIMongoSettings: MongoDB Konfigurasi
+  wwcConfigConversationMongoDatabaseNameSuccess: Berhasil mengubah nama database MongoDB.
+  wwcConfigGUIMongoHostnameButton: Ubah MongoDB Hostname
+  wwcConfigConversationMongoPasswordInput: Kata sandi saat ini adalah %i. Ketik apa
+    pun selain 0 untuk mengatur kata sandi baru, atau ketik 0 untuk kembali.
+  wwcConfigConversationMongoPortInput: Port saat ini adalah %i. Ketik apa pun selain
+    0 untuk mengatur port baru, atau tipe 0 untuk kembali.
+  wwcConfigConversationToggleMongoSuccess: MongoDB toggled berhasil. Muat ulang agar
+    perubahan diterapkan.
+  wwcConfigConversationMongoHostnameInput: Nama host saat ini adalah %i. Ketik apa
+    pun selain 0 untuk mengatur nama host baru, atau tipe 0 untuk kembali.
+  wwcConfigConversationMongoHostnameSuccess: Berhasil mengubah nama host MongoDB.
+  wwcConfigGUIMongoMenuButton: Ubah Pengaturan MongoDB
+  wwcConfigGUIToggleMongoButton: Beralih MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Nama database saat ini adalah %i. Ketik
+    apa pun selain 0 untuk menetapkan nama database baru, atau tipe 0 untuk kembali.
+  wwcConfigConversationMongoOptionalArgsInput: 'Argumen MongoDB opsional saat ini
+    adalah: %i. argumen ketik dipisahkan oleh koma (key=value, key2=value2), atau
+    ketik clear untuk menghapus args saat ini, atau tipe 0 untuk kembali.'
+  wwcConfigGUIMongoDatabaseNameButton: Ubah MongoDB Database
+  wwcConfigConversationMongoUsernameInput: Nama pengguna saat ini adalah %i. Ketik
+    apa pun selain 0 untuk menetapkan nama pengguna baru, atau ketik 0 untuk kembali.
+  wwcConfigGUIMongoOptionalArgsButton: Ubah MongoDB Argumen Opsional
+  wwcConfigConversationMongoUsernameSuccess: Berhasil mengubah nama pengguna MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Berhasil mengubah kata sandi MongoDB.
+  wwcConfigConversationMongoPortSuccess: Berhasil mengubah port MongoDB.
+  wwcConfigGUIMongoUsernameButton: Ubah Nama Pengguna MongoDB
+  wwcConfigGUIMongoPasswordButton: Ubah Kata Sandi MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Berhasil mengubah argumen MongoDB
+    opsional.
+  wwcConfigConversationMongoOptionalArgsCleared: argumen opsional dihapus berhasil.
+  wwcConfigGUIMongoPortButton: Ubah MongoDB Pelabuhan

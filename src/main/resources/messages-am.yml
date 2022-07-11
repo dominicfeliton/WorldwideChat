@@ -343,3 +343,34 @@ Messages:
   libreHttpUnknown: 'ያልታወቀ http ስህተት: %i'
   wwcConfigGUILibreTranslateURLButton: ሊብሬ ዩአርኤል ተርጉም ይቀይሩ
   wwcConfigConnectionFail: ከ %i ጋር መገናኘት አልተሳካም።
+  wwcConfigGUIMongoSettings: ሞንጎዲቢ ውቅር
+  wwcConfigConversationMongoDatabaseNameSuccess: የ MongoDB የውሂብ ጎታ ስም በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigGUIMongoHostnameButton: MongoDB አስተናጋጅ ስም ይቀይሩ
+  wwcConfigConversationMongoPasswordInput: የአሁኑ የይለፍ ቃል %i ነው። አዲስ የይለፍ ቃል ለማዘጋጀት
+    ከ 0 ሌላ ነገር ይተይቡ ወይም ወደኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigConversationMongoPortInput: የአሁኑ ወደብ %i ነው። አዲስ ወደብ ለማዘጋጀት ከ 0 ሌላ ነገር ይተይቡ
+    ወይም ተመልሰው ለመመለስ 0 ይተይቡ።
+  wwcConfigConversationToggleMongoSuccess: MongoDB በተሳካ ሁኔታ ቀይረዋል። ለውጡ ተግባራዊ እንዲሆን
+    ዳግመኛ ይጫኑ።
+  wwcConfigConversationMongoHostnameInput: የአሁኑ የአስተናጋጅ ስም %i ነው። አዲስ የአስተናጋጅ ስም ለማዘጋጀት
+    ከ 0 ሌላ ነገር ይተይቡ ወይም ወደኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigConversationMongoHostnameSuccess: የ MongoDB አስተናጋጅ ስሙን በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigGUIMongoMenuButton: የ MongoDB ቅንብሮችን ይቀይሩ
+  wwcConfigGUIToggleMongoButton: ሞንጎዴብ መቀያየር
+  wwcConfigConversationMongoDatabaseNameInput: የአሁኑ የውሂብ ጎታ ስም %i ነው። አዲስ የውሂብ ጎታ
+    ስም ለማዘጋጀት ከ 0 ሌላ ነገር ይተይቡ ወይም ወደኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigConversationMongoOptionalArgsInput: 'የአሁኑ አማራጭ MongoDB ክርክሮች የሚከተሉት ናቸው:
+    %i. በኮማ የተለዩ ክርክሮችን ይተይቡ (ቁልፍ = ዋጋ, key2=value2), ወይም የአሁኑን አርግስ ለማጥራት ግልጽ ይተይቡ,
+    ወይም ወደኋላ ለመመለስ 0 ይተይቡ።'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB የውሂብ ጎታ ይቀይሩ
+  wwcConfigConversationMongoUsernameInput: የአሁኑ የተጠቃሚ ስም %i ነው። አዲስ የተጠቃሚ ስም ለማዘጋጀት
+    ከ 0 ሌላ ነገር ይተይቡ ወይም ተመልሶ ለመመለስ 0 ን ይተይቡ።
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB አማራጭ ክርክሮችን ይቀይሩ
+  wwcConfigConversationMongoUsernameSuccess: የ MongoDB የተጠቃሚ ስም በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigConversationMongoPasswordSuccess: የ MongoDB የይለፍ ቃል በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigConversationMongoPortSuccess: የ MongoDB ወደብ በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigGUIMongoUsernameButton: MongoDB የተጠቃሚ ስም ይቀይሩ
+  wwcConfigGUIMongoPasswordButton: MongoDB የይለፍ ቃል ይቀይሩ
+  wwcConfigConversationMongoOptionalArgsSuccess: በተሳካ ሁኔታ አማራጭ MongoDB ክርክሮች ተቀይሯል።
+  wwcConfigConversationMongoOptionalArgsCleared: አማራጭ ክርክሮች በተሳካ ሁኔታ ጸድቷል።
+  wwcConfigGUIMongoPortButton: MongoDB ወደብ ይቀይሩ

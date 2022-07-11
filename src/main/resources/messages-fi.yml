@@ -386,3 +386,39 @@ Messages:
   libreHttpUnknown: 'Tuntematon http-virhe: %i'
   wwcConfigGUILibreTranslateURLButton: Change Libre Käännä URL
   wwcConfigConnectionFail: Yhteyden muodostaminen kohteeseen %i epäonnistui.
+  wwcConfigGUIMongoSettings: MongoDB-kokoonpano
+  wwcConfigConversationMongoDatabaseNameSuccess: MongoDB-tietokannan nimi muuttui
+    onnistuneesti.
+  wwcConfigGUIMongoHostnameButton: Vaihda MongoDB-isäntänimi
+  wwcConfigConversationMongoPasswordInput: Nykyinen salasana on %i. Kirjoita jokin
+    muu kuin 0, jos haluat asettaa uuden salasanan, tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationMongoPortInput: Nykyinen portti on %i. Kirjoita jokin muu kuin
+    0, jos haluat asettaa uuden portin, tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationToggleMongoSuccess: MongoDB vaihtui onnistuneesti. Lataa uudelleen,
+    jotta muutos tulee voimaan.
+  wwcConfigConversationMongoHostnameInput: Nykyinen isäntänimi on %i. Kirjoita jokin
+    muu kuin 0, jos haluat asettaa uuden isäntänimen, tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationMongoHostnameSuccess: Onnistuneesti muuttanut MongoDB isäntänimi.
+  wwcConfigGUIMongoMenuButton: Muuta MongoDB-asetuksia
+  wwcConfigGUIToggleMongoButton: Vaihda MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Nykyinen tietokannan nimi on %i. Kirjoita
+    jokin muu kuin 0, jos haluat määrittää uuden tietokannan nimen, tai kirjoita 0
+    palataksesi takaisin.
+  wwcConfigConversationMongoOptionalArgsInput: 'Nykyiset valinnaiset MongoDB-argumentit
+    ovat: %i. Kirjoita argumentit pilkulla erotettuna (key=value, key2=value2) tai
+    kirjoita selkeä pyyhkimällä nykyiset argit tai kirjoita 0 palataksesi takaisin.'
+  wwcConfigGUIMongoDatabaseNameButton: Vaihda MongoDB-tietokanta
+  wwcConfigConversationMongoUsernameInput: Nykyinen käyttäjänimi on %i. Kirjoita jokin
+    muu kuin 0, jos haluat asettaa uuden käyttäjänimen, tai kirjoita 0 palataksesi
+    takaisin.
+  wwcConfigGUIMongoOptionalArgsButton: Muuta MongoDB valinnaisia argumentteja
+  wwcConfigConversationMongoUsernameSuccess: MongoDB-käyttäjänimi vaihdettiin onnistuneesti.
+  wwcConfigConversationMongoPasswordSuccess: MongoDB-salasanan vaihtaminen onnistuneesti.
+  wwcConfigConversationMongoPortSuccess: MongoDB-porttia muutettiin onnistuneesti.
+  wwcConfigGUIMongoUsernameButton: Vaihda MongoDB-käyttäjänimi
+  wwcConfigGUIMongoPasswordButton: Vaihda MongoDB-salasana
+  wwcConfigConversationMongoOptionalArgsSuccess: Onnistuneesti muuttanut valinnaisia
+    MongoDB argumentteja.
+  wwcConfigConversationMongoOptionalArgsCleared: Valinnaiset argumentit selvitetty
+    onnistuneesti.
+  wwcConfigGUIMongoPortButton: Vaihda MongoDB-portti

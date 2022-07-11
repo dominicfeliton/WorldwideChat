@@ -402,3 +402,40 @@ Messages:
   libreHttpUnknown: 'Erro http desconhecido: %i'
   wwcConfigGUILibreTranslateURLButton: Alterar URL de tradução livre
   wwcConfigConnectionFail: Falha ao conectar-se a %i.
+  wwcConfigGUIMongoSettings: Configuração do MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Nome do banco de dados MongoDB alterado
+    com sucesso.
+  wwcConfigGUIMongoHostnameButton: Alterar nome de host do MongoDB
+  wwcConfigConversationMongoPasswordInput: A senha atual é %i. Digite qualquer coisa
+    diferente de 0 para definir uma nova senha ou digite 0 para voltar.
+  wwcConfigConversationMongoPortInput: A porta atual é %i. Digite qualquer coisa diferente
+    de 0 para definir uma nova porta ou digite 0 para voltar.
+  wwcConfigConversationToggleMongoSuccess: O MongoDB foi alternado com sucesso. Recarregue
+    para que a alteração entre em vigor.
+  wwcConfigConversationMongoHostnameInput: O nome do host atual é %i. Digite qualquer
+    coisa diferente de 0 para definir um novo nome de host ou digite 0 para voltar.
+  wwcConfigConversationMongoHostnameSuccess: O nome de host do MongoDB foi alterado
+    com sucesso.
+  wwcConfigGUIMongoMenuButton: Alterar as configurações do MongoDB
+  wwcConfigGUIToggleMongoButton: Alternar MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: O nome do banco de dados atual é %i.
+    Digite qualquer coisa diferente de 0 para definir um novo nome de banco de dados
+    ou digite 0 para voltar.
+  wwcConfigConversationMongoOptionalArgsInput: 'Os argumentos opcionais atuais do
+    MongoDB são: %i. Digite argumentos separados por uma vírgula (key=value, key2=value2),
+    ou digite clear para limpar os argumentos atuais, ou digite 0 para voltar.'
+  wwcConfigGUIMongoDatabaseNameButton: Alterar banco de dados do MongoDB
+  wwcConfigConversationMongoUsernameInput: O nome de usuário atual é %i. Digite qualquer
+    coisa diferente de 0 para definir um novo nome de usuário ou digite 0 para voltar.
+  wwcConfigGUIMongoOptionalArgsButton: Alterar argumentos opcionais do MongoDB
+  wwcConfigConversationMongoUsernameSuccess: O nome de usuário do MongoDB foi alterado
+    com sucesso.
+  wwcConfigConversationMongoPasswordSuccess: A senha do MongoDB foi alterada com sucesso.
+  wwcConfigConversationMongoPortSuccess: A porta do MongoDB foi alterada com sucesso.
+  wwcConfigGUIMongoUsernameButton: Alterar nome de usuário do MongoDB
+  wwcConfigGUIMongoPasswordButton: Alterar senha do MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Os argumentos opcionais do MongoDB
+    foram alterados com sucesso.
+  wwcConfigConversationMongoOptionalArgsCleared: Argumentos opcionais apagados com
+    êxito.
+  wwcConfigGUIMongoPortButton: Alterar porta do MongoDB

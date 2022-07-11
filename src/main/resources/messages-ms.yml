@@ -392,3 +392,38 @@ Messages:
   libreHttpUnknown: 'Ralat http tidak diketahui: %i'
   wwcConfigGUILibreTranslateURLButton: Tukar Percuma Terjemah URL
   wwcConfigConnectionFail: Gagal menyambung ke %i.
+  wwcConfigGUIMongoSettings: MongoDB Konfigurasi
+  wwcConfigConversationMongoDatabaseNameSuccess: Berjaya menukar nama pangkalan data
+    MongoDB.
+  wwcConfigGUIMongoHostnameButton: Tukar Nama Hos MongoDB
+  wwcConfigConversationMongoPasswordInput: Kata laluan semasa adalah %i. Taip apa-apa
+    selain daripada 0 untuk tetapkan kata laluan baru, atau taip 0 untuk kembali.
+  wwcConfigConversationMongoPortInput: Pelabuhan semasa adalah %i. Taip apa-apa selain
+    daripada 0 untuk tetapkan port baru, atau taip 0 untuk kembali.
+  wwcConfigConversationToggleMongoSuccess: MongoDB berjaya ditogol. Muat semula untuk
+    perubahan untuk berkuatkuasa.
+  wwcConfigConversationMongoHostnameInput: Nama hos semasa adalah %i. Taip apa-apa
+    selain daripada 0 untuk tetapkan nama hos baru, atau taip 0 untuk kembali.
+  wwcConfigConversationMongoHostnameSuccess: Berjaya menukar nama hos MongoDB.
+  wwcConfigGUIMongoMenuButton: Tukar Tetapan MongoDB
+  wwcConfigGUIToggleMongoButton: Togol MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Nama pangkalan data semasa adalah %i.
+    Taip apa-apa selain daripada 0 untuk tetapkan nama pangkalan data baru, atau taip
+    0 untuk kembali.
+  wwcConfigConversationMongoOptionalArgsInput: 'Argumen MongoDB pilihan semasa ialah:
+    %i. Argumen jenis dipisahkan dengan koma (key=value, key2=value2), atau taip clear
+    untuk lap args semasa, atau taip 0 untuk kembali.'
+  wwcConfigGUIMongoDatabaseNameButton: Tukar Pangkalan Data MongoDB
+  wwcConfigConversationMongoUsernameInput: Nama pengguna semasa adalah %i. Taip apa-apa
+    selain daripada 0 untuk tetapkan nama pengguna baru, atau taip 0 untuk kembali.
+  wwcConfigGUIMongoOptionalArgsButton: Tukar MongoDB Argumen Pilihan
+  wwcConfigConversationMongoUsernameSuccess: Berjaya menukar nama pengguna MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Berjaya menukar kata laluan MongoDB.
+  wwcConfigConversationMongoPortSuccess: Berjaya menukar port MongoDB.
+  wwcConfigGUIMongoUsernameButton: Tukar Nama Pengguna MongoDB
+  wwcConfigGUIMongoPasswordButton: Tukar Kata Laluan MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Berjaya mengubah argumen MongoDB
+    pilihan.
+  wwcConfigConversationMongoOptionalArgsCleared: Argumen pilihan dibersihkan dengan
+    jayanya.
+  wwcConfigGUIMongoPortButton: Tukar MongoDB Port
