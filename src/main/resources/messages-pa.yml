@@ -313,8 +313,6 @@ Messages:
     ਨਹੀਂ ਹੈ, ਪਰ ਜੇ ਇਹ ਵਾਪਰਨਾ ਜਾਰੀ ਹੈ ਤਾਂ ਵਰਲਡ ਵਿਡਚੈਟ ਨੂੰ ਮੁੜ ਲੋਡ ਕੀਤਾ ਜਾਣਾ ਚਾਹੀਦਾ
     ਹੈ.
   wwcGUIPageNumber: 'ਪੰਨਾ ਨੰਬਰ: %i'
-  wwcConfigSQLFail: SQL ਨਾਲ ਕੁਨੈਕਟ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
-  wwcConfigSQLSuccess: ਸਫਲਤਾਪੂਰਵਕ SQL ਨਾਲ ਜੁੜਿਆ!
   wwcConfigYAMLFallback: YML ਨੂੰ ਵਾਪਸ ਡਿੱਗਣ...
   wwcConfigGUIToggleSQLButton: SQL ਬਦਲੋ
   wwcConfigConversationToggleSQLSuccess: SQL ਸਫਲਤਾਪੂਰਕ ਬਦਲ ਗਿਆ. ਪ੍ਰਭਾਵ ਨੂੰ ਲੈਣ ਲਈ
@@ -391,3 +389,38 @@ Messages:
     ਦਿਓ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
   libreHttpUnknown: 'ਅਣਜਾਣ http ਗਲਤੀ: %i'
   wwcConfigGUILibreTranslateURLButton: Libre ਅਨੁਵਾਦ URL ਨੂੰ ਬਦਲੋ
+  wwcConfigConnectionFail: '%i ਨਾਲ ਜੁੜਨ ਵਿੱਚ ਅਸਫਲ।'
+  wwcConfigGUIMongoSettings: ਮੰਗੋਡੀਬੀ ਕੌਨਫਿਗਰੇਸ਼ਨ
+  wwcConfigConversationMongoDatabaseNameSuccess: ਮੰਗੋਡੀਬੀ ਡੇਟਾਬੇਸ ਨਾਮ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ
+    ਬਦਲਿਆ.
+  wwcConfigGUIMongoHostnameButton: ਮੰਗੋਡੀਬੀ ਹੋਸਟ-ਨਾਮ ਬਦਲੋ
+  wwcConfigConversationMongoPasswordInput: ਮੌਜੂਦਾ ਪਾਸਵਰਡ %i ਹੈ ਨਵਾਂ ਪਾਸਵਰਡ ਸੈੱਟ ਕਰਨ
+    ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationMongoPortInput: ਮੌਜੂਦਾ ਪੋਰਟ %i ਹੈ ਨਵੀਂ ਪੋਰਟ ਸੈਟ ਕਰਨ ਲਈ 0 ਤੋਂ
+    ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
+  wwcConfigConversationToggleMongoSuccess: ਮੰਗੋਡੀਬੀ ਸਫਲਤਾਪੂਰਵਕ ਚਾਲੂ ਹੋਇਆ. ਤਬਦੀਲੀ ਨੂੰ
+    ਲਾਗੂ ਕਰਨ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigConversationMongoHostnameInput: ਮੌਜੂਦਾ ਹੋਸਟ-ਨਾਂ %i ਹੈ ਨਵਾਂ ਹੋਸਟ-ਨਾਂ ਸੈੱਟ
+    ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationMongoHostnameSuccess: ਸਫਲਤਾਪੂਰਵਕ ਮੰਗੋਡੀਬੀ ਹੋਸਟ-ਨਾਮ ਬਦਲਿਆ.
+  wwcConfigGUIMongoMenuButton: ਮੰਗੋਡੀਬੀ ਸੈਟਿੰਗਜ਼ ਬਦਲੋ
+  wwcConfigGUIToggleMongoButton: ਮੰਗੋਡੀ ਬੀ ਨੂੰ ਬਦਲੋ
+  wwcConfigConversationMongoDatabaseNameInput: ਮੌਜੂਦਾ ਡਾਟਾਬੇਸ ਨਾਂ %i ਹੈ ਨਵਾਂ ਡਾਟਾਬੇਸ
+    ਨਾਂ ਸੈੱਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationMongoOptionalArgsInput: 'ਮੌਜੂਦਾ ਵਿਕਲਪਿਕ ਮੰਗੋਡੀਬੀ ਦਲੀਲਾਂ ਹਨ:
+    %i ਕਾਮੇ ਦੁਆਰਾ ਵੱਖ ਕੀਤੀਆਂ ਦਲੀਲਾਂ ਟਾਈਪ ਕਰੋ (ਕੁੰਜੀ = ਮੁੱਲ, key2 = value2), ਜਾਂ ਮੌਜੂਦਾ
+    ਆਰਗਜ਼ ਨੂੰ ਪੂੰਝਣ ਲਈ ਸਾਫ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.'
+  wwcConfigGUIMongoDatabaseNameButton: ਮੰਗੋਡੀਬੀ ਡਾਟਾਬੇਸ ਬਦਲੋ
+  wwcConfigConversationMongoUsernameInput: ਮੌਜੂਦਾ ਯੂਜ਼ਰਨੇਮ %i ਹੈ ਨਵਾਂ ਯੂਜ਼ਰਨੇਮ ਸੈੱਟ
+    ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
+  wwcConfigGUIMongoOptionalArgsButton: ਮੰਗੋਡੀਬੀ ਵਿਕਲਪਿਕ ਆਰਗੂਮੈਂਟ ਬਦਲੋ
+  wwcConfigConversationMongoUsernameSuccess: ਸਫਲਤਾਪੂਰਵਕ ਮੰਗੋਡੀਬੀ ਉਪਭੋਗਤਾ ਨਾਮ ਬਦਲਿਆ.
+  wwcConfigConversationMongoPasswordSuccess: ਸਫਲਤਾਪੂਰਵਕ ਮੰਗੋਡੀਬੀ ਪਾਸਵਰਡ ਬਦਲਿਆ.
+  wwcConfigConversationMongoPortSuccess: ਸਫਲਤਾਪੂਰਵਕ ਮੰਗੋਡੀਬੀ ਪੋਰਟ ਨੂੰ ਬਦਲਿਆ.
+  wwcConfigGUIMongoUsernameButton: ਮੰਗੋਡੀਬੀ ਯੂਜ਼ਰ ਨਾਂ ਬਦਲੋ
+  wwcConfigGUIMongoPasswordButton: ਮੰਗੋਡੀਬੀ ਪਾਸਵਰਡ ਬਦਲੋ
+  wwcConfigConversationMongoOptionalArgsSuccess: ਸਫਲਤਾਪੂਰਵਕ ਵਿਕਲਪਿਕ ਮੰਗੋਡੀਬੀ ਦਲੀਲਾਂ
+    ਨੂੰ ਬਦਲਿਆ.
+  wwcConfigConversationMongoOptionalArgsCleared: ਵਿਕਲਪਿਕ ਦਲੀਲਾਂ ਸਫਲਤਾਪੂਰਵਕ ਸਾਫ ਹੋ
+    ਗਈਆਂ.
+  wwcConfigGUIMongoPortButton: ਮੰਗੋਡੀਬੀ ਪੋਰਟ ਬਦਲੋ

@@ -308,8 +308,6 @@ Messages:
     خطا کشنده نیست، اما WorldwideChat باید دوباره بارگذاری شود اگر آن را همچنان به
     اتفاق می افتد.
   wwcGUIPageNumber: 'شماره صفحه: %i'
-  wwcConfigSQLFail: اتصال به SQL شکست خورد.
-  wwcConfigSQLSuccess: با موفقیت به SQL متصل!
   wwcConfigYAMLFallback: بازگشت به YAML...
   wwcConfigGUIToggleSQLButton: ضامن SQL
   wwcConfigConversationToggleSQLSuccess: SQL با موفقیت جابجا شد. بازنگری برای تغییر
@@ -385,3 +383,42 @@ Messages:
     کنید، یا 0 را برای بازگشت تایپ کنید.
   libreHttpUnknown: 'خطای http ناشناخته: %i'
   wwcConfigGUILibreTranslateURLButton: تغییر رایگان ترجمه URL
+  wwcConfigConnectionFail: اتصال به %i شکست خورد.
+  wwcConfigGUIMongoSettings: پیکربندی مانگودیبی
+  wwcConfigConversationMongoDatabaseNameSuccess: نام پایگاه داده MongoDB را با موفقیت
+    تغییر داد.
+  wwcConfigGUIMongoHostnameButton: تغییر نام میزبان مانگودیبی
+  wwcConfigConversationMongoPasswordInput: رمز عبور فعلی %i است. چیزی غیر از 0 را
+    تایپ کنید تا رمز عبور جدید تنظیم شود، یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationMongoPortInput: درگاه فعلی %i است. هر چیزی غیر از 0 را تایپ
+    کنید تا یک درگاه جدید تنظیم شود، یا برای بازگشت تایپ 0 تایپ کنید.
+  wwcConfigConversationToggleMongoSuccess: مانگودیبی با موفقیت جابجا شد. بازنگری برای
+    تغییر به اثر.
+  wwcConfigConversationMongoHostnameInput: نام میزبان فعلی %i است. هر چیزی غیر از
+    0 را تایپ کنید تا نام میزبان جدید تنظیم شود، یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationMongoHostnameSuccess: نام میزبان مانگودیبی را با موفقیت تغییر
+    داد.
+  wwcConfigGUIMongoMenuButton: تغییر تنظیمات مانگودیبی
+  wwcConfigGUIToggleMongoButton: ضامن مانگودیبی
+  wwcConfigConversationMongoDatabaseNameInput: نام پایگاه داده فعلی %i است. هر چیزی
+    غیر از 0 را تایپ کنید تا نام پایگاه داده جدید تنظیم شود، یا 0 را برای بازگشت تایپ
+    کنید.
+  wwcConfigConversationMongoOptionalArgsInput: 'آرگومانهای مانگودیبی اختیاری فعلی
+    عبارتند از: %i. نوع آرگومانهای جدا شده با کاما (key=value, key2=value2)، یا نوع
+    clear را برای پاک کردن آرگ های فعلی تایپ کنید، یا نوع 0 را برای بازگشت به عقب
+    تایپ کنید.'
+  wwcConfigGUIMongoDatabaseNameButton: تغییر پایگاه داده مانگودیبی
+  wwcConfigConversationMongoUsernameInput: نام کاربری فعلی %i است. هر چیزی غیر از
+    0 را تایپ کنید تا یک نام کاربری جدید تنظیم شود، یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigGUIMongoOptionalArgsButton: تغییر مانگودیبی اختیاری آرگودیبی
+  wwcConfigConversationMongoUsernameSuccess: نام کاربری مانگودیبی را با موفقیت تغییر
+    داد.
+  wwcConfigConversationMongoPasswordSuccess: رمز عبور مانگودیبی را با موفقیت تغییر
+    داد.
+  wwcConfigConversationMongoPortSuccess: پورت MongodB را با موفقیت تغییر داد.
+  wwcConfigGUIMongoUsernameButton: تغییر نام کاربری مانگودیبی
+  wwcConfigGUIMongoPasswordButton: تغییر رمز عبور مانگودیبی
+  wwcConfigConversationMongoOptionalArgsSuccess: با موفقیت تغییر استدلال مانگودیبی
+    اختیاری است.
+  wwcConfigConversationMongoOptionalArgsCleared: آرگومان اختیاری با موفقیت پاک شد.
+  wwcConfigGUIMongoPortButton: تغییر بندر مانگودیبی

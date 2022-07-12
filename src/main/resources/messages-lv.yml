@@ -317,8 +317,6 @@ Messages:
   wwcTimeoutExceptionConsole: Spēlētājs %Man bija pēdējais pieprasījuma taimauts.
     Šī kļūda nav letāla, bet WorldwideChat ir jāpārlādē, ja tā turpina notikt.
   wwcGUIPageNumber: 'Lapas numurs: %i'
-  wwcConfigSQLFail: Neizdevās izveidot savienojumu ar SQL.
-  wwcConfigSQLSuccess: Veiksmīgi savienots ar SQL!
   wwcConfigYAMLFallback: Falling atpakaļ uz YAML...
   wwcConfigGUIToggleSQLButton: Pārslēgt SQL
   wwcConfigConversationToggleSQLSuccess: SQL pārslēgts veiksmīgi. Pārlādēt, lai izmaiņas
@@ -395,3 +393,40 @@ Messages:
     URL vai ierakstiet 0, lai atgrieztos.
   libreHttpUnknown: 'Nezināma http kļūda: %i'
   wwcConfigGUILibreTranslateURLButton: Mainīt bezmaksas tulkošanas URL
+  wwcConfigConnectionFail: Neizdevās pieslēgties %i.
+  wwcConfigGUIMongoSettings: MongoDB konfigurācija
+  wwcConfigConversationMongoDatabaseNameSuccess: Veiksmīgi mainīts MongoDB datubāzes
+    nosaukums.
+  wwcConfigGUIMongoHostnameButton: Mainīt MongoDB resursdatora nosaukumu
+  wwcConfigConversationMongoPasswordInput: Pašreizējā parole ir %i. Ierakstiet neko
+    citu kā 0, lai iestatītu jaunu paroli, vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationMongoPortInput: Pašreizējais ports ir %i. Ierakstiet neko citu
+    kā 0, lai iestatītu jaunu portu, vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationToggleMongoSuccess: MongoDB veiksmīgi pārgāja. Pārlādēt, lai
+    izmaiņas stātos spēkā.
+  wwcConfigConversationMongoHostnameInput: Pašreizējais resursdatora nosaukums ir
+    %i. Ierakstiet neko citu kā 0, lai iestatītu jaunu resursdatora nosaukumu, vai
+    ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationMongoHostnameSuccess: Veiksmīgi mainīts MongoDB resursdatora
+    nosaukums.
+  wwcConfigGUIMongoMenuButton: Mainīt MongoDB iestatījumus
+  wwcConfigGUIToggleMongoButton: Pārslēgt MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Pašreizējais datu bāzes nosaukums ir
+    %i. Ierakstiet neko citu kā 0, lai iestatītu jaunu datu bāzes nosaukumu, vai ierakstiet
+    0, lai atgrieztos.
+  wwcConfigConversationMongoOptionalArgsInput: 'Pašreizējie neobligātie MongoDB argumenti
+    ir: %i. Ierakstiet argumentus atdalot ar komatu (key=value, key2=value2) vai ierakstiet
+    skaidri, lai notīrītu pašreizējo args, vai ierakstiet 0, lai atgrieztos.'
+  wwcConfigGUIMongoDatabaseNameButton: Mainīt MongoDB datubāzi
+  wwcConfigConversationMongoUsernameInput: Pašreizējais lietotājvārds ir %i. Ierakstiet
+    neko citu kā 0, lai iestatītu jaunu lietotājvārdu, vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIMongoOptionalArgsButton: Mainīt MongoDB neobligātos argumentus
+  wwcConfigConversationMongoUsernameSuccess: Veiksmīgi mainīts MongoDB lietotājvārds.
+  wwcConfigConversationMongoPasswordSuccess: Veiksmīgi nomainīta MongoDB parole.
+  wwcConfigConversationMongoPortSuccess: Veiksmīgi mainīts MongoDB ports.
+  wwcConfigGUIMongoUsernameButton: Mainīt MongoDB lietotājvārdu
+  wwcConfigGUIMongoPasswordButton: Mainīt MongoDB paroli
+  wwcConfigConversationMongoOptionalArgsSuccess: Veiksmīgi mainīti izvēles MongoDB
+    argumenti.
+  wwcConfigConversationMongoOptionalArgsCleared: Neobligātie argumenti veiksmīgi noskaidroti.
+  wwcConfigGUIMongoPortButton: Mainīt MongoDB portu

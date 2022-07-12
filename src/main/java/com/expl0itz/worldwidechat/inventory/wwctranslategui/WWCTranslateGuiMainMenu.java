@@ -57,7 +57,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 		try {
 			/* Default white stained glass borders for inactive */
 			WWCInventoryManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
-			if (!main.getActiveTranslator(targetPlayerUUID).getUUID().equals("")) {
+			if (main.isActiveTranslator(targetPlayerUUID)) {
 				WWCInventoryManager.setBorders(contents, XMaterial.GREEN_STAINED_GLASS_PANE);
 			}
 
@@ -74,7 +74,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 			/* Set active translator to our current target */
 			ActiveTranslator targetTranslator = main.getActiveTranslator(targetPlayerUUID);
 			
-			if (!main.getActiveTranslator(targetPlayerUUID).getUUID().equals("")) {
+			if (main.isActiveTranslator(targetPlayerUUID)) {
 				/* Make compass enchanted */
 				WWCInventoryManager.addGlowEffect(translationMeta);
 				translationMeta.setDisplayName(CommonDefinitions.getMessage("wwctGUIExistingTranslationButton"));

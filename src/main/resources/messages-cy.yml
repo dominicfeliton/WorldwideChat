@@ -321,8 +321,6 @@ Messages:
     yw'r gwall hwn yn angheuol, ond dylid ail-lwytho WorldwideChat os yw'n parhau
     i ddigwydd.
   wwcGUIPageNumber: 'Rhif Tudalen: %i'
-  wwcConfigSQLFail: Wedi methu â chysylltu â SQL.
-  wwcConfigSQLSuccess: Wedi'i gysylltu'n llwyddiannus â SQL!
   wwcConfigYAMLFallback: Syrthio yn ôl i YAML...
   wwcConfigGUIToggleSQLButton: Toggle SQL
   wwcConfigConversationToggleSQLSuccess: SQL toggled yn llwyddiannus. Ail-lwytho ar
@@ -398,3 +396,37 @@ Messages:
     Libre, neu deipiwch 0 i fynd yn ôl.
   libreHttpUnknown: 'Gwall http anhysbys: %i'
   wwcConfigGUILibreTranslateURLButton: Newid Libre Cyfieithu URL
+  wwcConfigConnectionFail: Methwyd cysylltu â %i.
+  wwcConfigGUIMongoSettings: Ffurfweddiad MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Newid enw cronfa ddata MongoDB yn
+    llwyddiannus.
+  wwcConfigGUIMongoHostnameButton: Newid Enw Gwesteiwr MongoDB
+  wwcConfigConversationMongoPasswordInput: Teipiwch unrhyw beth heblaw 0 i osod cyfrinair
+    newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigConversationMongoPortInput: Y porthladd presennol yw %i. teipiwch unrhyw
+    beth heblaw 0 i osod porthladd newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigConversationToggleMongoSuccess: Fe wnaeth MongoDB toglo'n llwyddiannus.
+    Ail-lwytho ar gyfer y newid i ddod i rym.
+  wwcConfigConversationMongoHostnameInput: Teipiwch unrhyw beth heblaw 0 i osod enw
+    gwesteiwr newydd, neu fath 0 i fynd yn ôl.
+  wwcConfigConversationMongoHostnameSuccess: Newid enw gwesteiwr MongoDB yn llwyddiannus.
+  wwcConfigGUIMongoMenuButton: Newid Gosodiadau MongoDB
+  wwcConfigGUIToggleMongoButton: Toggle MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Teipiwch unrhyw beth heblaw 0 i osod
+    enw cronfa ddata newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigConversationMongoOptionalArgsInput: 'Y dadleuon MongoDB dewisol cyfredol
+    yw: %i. teipiwch ddadleuon wedi''u gwahanu gan atalnod (key=value, key2=value2),
+    neu deipiwch yn glir i sychu''r argiau cyfredol, neu deipiwch 0 i fynd yn ôl.'
+  wwcConfigGUIMongoDatabaseNameButton: Newid Cronfa Ddata MongoDB
+  wwcConfigConversationMongoUsernameInput: Teipiwch unrhyw beth heblaw 0 i osod enw
+    defnyddiwr newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIMongoOptionalArgsButton: Newid Dadleuon Dewisol MongoDB
+  wwcConfigConversationMongoUsernameSuccess: Newid enw defnyddiwr MongoDB yn llwyddiannus.
+  wwcConfigConversationMongoPasswordSuccess: Newid cyfrinair MongoDB yn llwyddiannus.
+  wwcConfigConversationMongoPortSuccess: Newid porthladd MongoDB yn llwyddiannus.
+  wwcConfigGUIMongoUsernameButton: Newid Enw Defnyddiwr MongoDB
+  wwcConfigGUIMongoPasswordButton: Newid Cyfrinair MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Wedi newid y dadleuon MongoDB dewisol
+    yn llwyddiannus.
+  wwcConfigConversationMongoOptionalArgsCleared: Cliriwyd dadleuon dewisol yn llwyddiannus.
+  wwcConfigGUIMongoPortButton: Newid Porthladd MongoDB

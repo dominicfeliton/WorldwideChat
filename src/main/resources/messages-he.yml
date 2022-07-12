@@ -283,8 +283,6 @@ Messages:
   wwcTimeoutExceptionConsole: שחקן % היה לי פסק זמן הבקשה האחרון שלהם. שגיאה זו אינה
     קטלנית, אבל WorldwideChat יש לטעון מחדש אם זה ממשיך לקרות.
   wwcGUIPageNumber: 'מספר עמוד: %i'
-  wwcConfigSQLFail: התחברות ל- SQL נכשלה.
-  wwcConfigSQLSuccess: מחובר בהצלחה ל- SQL!
   wwcConfigYAMLFallback: נפילה חזרה ל- YAML...
   wwcConfigGUIToggleSQLButton: החלף SQL
   wwcConfigConversationToggleSQLSuccess: SQL עבר בהצלחה. רענן כדי שהשינוי ייכנס לתוקף.
@@ -353,3 +351,35 @@ Messages:
     עבור Libre, או הקלד 0 כדי לחזור.
   libreHttpUnknown: 'שגיאת HTTP לא ידועה: %i'
   wwcConfigGUILibreTranslateURLButton: שינוי חינם תרגם את כתובת האתר
+  wwcConfigConnectionFail: ההתחברות אל %i נכשלה.
+  wwcConfigGUIMongoSettings: תצורת MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: שינה בהצלחה את שם מסד הנתונים MongoDB.
+  wwcConfigGUIMongoHostnameButton: שינוי שם מארח MongoDB
+  wwcConfigConversationMongoPasswordInput: הסיסמה הנוכחית היא %i. הקלד כל דבר אחר
+    מלבד 0 כדי להגדיר סיסמה חדשה, או הקלד 0 כדי לחזור.
+  wwcConfigConversationMongoPortInput: היציאה הנוכחית היא %i. הקלד כל דבר אחר מלבד
+    0 כדי להגדיר יציאה חדשה, או הקלד 0 כדי לחזור אחורה.
+  wwcConfigConversationToggleMongoSuccess: MongoDB עבר בהצלחה. טען מחדש כדי שהשינוי
+    ייכנס לתוקף.
+  wwcConfigConversationMongoHostnameInput: שם המארח הנוכחי הוא %i. הקלד כל דבר אחר
+    מלבד 0 כדי להגדיר שם מארח חדש, או הקלד 0 כדי לחזור.
+  wwcConfigConversationMongoHostnameSuccess: שינה בהצלחה את שם המארח של MongoDB.
+  wwcConfigGUIMongoMenuButton: שינוי הגדרות MongoDB
+  wwcConfigGUIToggleMongoButton: החלף MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: שם מסד הנתונים הנוכחי הוא %i. הקלד
+    כל דבר אחר מלבד 0 כדי להגדיר שם מסד נתונים חדש, או הקלד 0 לחזור.
+  wwcConfigConversationMongoOptionalArgsInput: 'הארגומנטים האופציונליים הנוכחיים של
+    MongoDB הם: %i. הקלד ארגומנטים מופרדים באמצעות פסיק (key=value, key2=value2),
+    או הקלד clear כדי למחוק את הארגומנטים הנוכחיים, או הקלד 0 כדי לחזור אחורה.'
+  wwcConfigGUIMongoDatabaseNameButton: שינוי מסד הנתונים של Mong
+  wwcConfigConversationMongoUsernameInput: שם המשתמש הנוכחי הוא %i, הקלד כל דבר אחר
+    מלבד 0 כדי להגדיר שם משתמש חדש, או הקלד 0 כדי לחזור.
+  wwcConfigGUIMongoOptionalArgsButton: שינוי ארגומנטים אופציונליים של
+  wwcConfigConversationMongoUsernameSuccess: שינה בהצלחה את שם המשתמש MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: שינה בהצלחה את סיסמת MongoDB.
+  wwcConfigConversationMongoPortSuccess: שינה בהצלחה את יציאת MongoDB.
+  wwcConfigGUIMongoUsernameButton: שינוי שם משתמש Mongo
+  wwcConfigGUIMongoPasswordButton: שינוי סיסמת MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: שינה בהצלחה את טיעוני MongoDB האופציונ
+  wwcConfigConversationMongoOptionalArgsCleared: טיעונים אופציונליים נוקו בהצלחה
+  wwcConfigGUIMongoPortButton: שינוי נמל MongoDB

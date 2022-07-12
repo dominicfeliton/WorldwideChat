@@ -309,8 +309,6 @@ Messages:
   wwcTimeoutExceptionConsole: Jwe Mwen te gen poz demann ki pi resan yo. Erè sa a
     se pa fatal, men WorldwideChat yo ta dwe rechargé si li kontinye ap rive.
   wwcGUIPageNumber: 'Nimewo Paj: %i'
-  wwcConfigSQLFail: Echwe pou konekte avèk SQL.
-  wwcConfigSQLSuccess: Avèk siksè konekte nan SQL!
   wwcConfigYAMLFallback: Tonbe tounen nan YAML...
   wwcConfigGUIToggleSQLButton: SQL baskil
   wwcConfigConversationToggleSQLSuccess: SQL baskile avèk siksè. Reload pou chanjman
@@ -383,3 +381,38 @@ Messages:
     pou gratis, oswa tape 0 yo ale tounen.
   libreHttpUnknown: 'Unknown http erè: % mwen'
   wwcConfigGUILibreTranslateURLButton: Chanje gratis Translate URL
+  wwcConfigConnectionFail: Echwe pou pou konekte pou % mwen.
+  wwcConfigGUIMongoSettings: MongoDB konfigirasyon
+  wwcConfigConversationMongoDatabaseNameSuccess: Avèk siksè chanje non an baz done
+    MongoDB.
+  wwcConfigGUIMongoHostnameButton: Chanje MongoDB Hostname
+  wwcConfigConversationMongoPasswordInput: Modpas la kounye a se % mwen. tape anyen
+    lòt pase 0 yo mete yon nouvo modpas, oswa tape 0 yo ale tounen.
+  wwcConfigConversationMongoPortInput: Pò a kounye a se % mwen. tape anyen lòt pase
+    0 yo mete yon pò nouvo, oswa tape 0 yo ale tounen.
+  wwcConfigConversationToggleMongoSuccess: MongoDB baskile avèk siksè. Reload pou
+    chanjman an yo pran efè.
+  wwcConfigConversationMongoHostnameInput: Hostname aktyèl la se % mwen. tape anyen
+    lòt pase 0 yo mete yon nouvo hostname, oswa tape 0 yo ale tounen.
+  wwcConfigConversationMongoHostnameSuccess: Avèk siksè chanje hostname a MongoDB.
+  wwcConfigGUIMongoMenuButton: Chanje MongoDB Anviwònman
+  wwcConfigGUIToggleMongoButton: Baskile MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Non a baz done kounye a se % mwen.
+    tape anyen lòt pase 0 yo mete yon non baz done nouvo, oswa tape 0 yo ale tounen.
+  wwcConfigConversationMongoOptionalArgsInput: 'Aktyèl si ou vle MongoDB agiman yo
+    se: % mwen. agiman Kalite separe pa yon vigil (kle = valè, key2 = value2), oswa
+    tape klè li siye args yo kounye a, oswa tape 0 yo ale tounen.'
+  wwcConfigGUIMongoDatabaseNameButton: Chanje baz done MongoDB
+  wwcConfigConversationMongoUsernameInput: Non itilizatè a kounye a se % mwen. tape
+    anyen lòt pase 0 yo mete yon nouvo non itilizatè, oswa tape 0 yo ale tounen.
+  wwcConfigGUIMongoOptionalArgsButton: Chanje MongoDB Si ou vle agiman
+  wwcConfigConversationMongoUsernameSuccess: Avèk siksè chanje non itilizatè MongoDB
+    la.
+  wwcConfigConversationMongoPasswordSuccess: Avèk siksè chanje modpas la MongoDB.
+  wwcConfigConversationMongoPortSuccess: Avèk siksè chanje pò a MongoDB.
+  wwcConfigGUIMongoUsernameButton: Chanje MongoDB non itilizatè
+  wwcConfigGUIMongoPasswordButton: Chanje MongoDB Modpas
+  wwcConfigConversationMongoOptionalArgsSuccess: Avèk siksè chanje agiman yo si ou
+    vle MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Si ou vle agiman otorize avèk siksè.
+  wwcConfigGUIMongoPortButton: Chanje MongoDB Port

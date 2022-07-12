@@ -306,8 +306,6 @@ Messages:
   wwcTimeoutExceptionConsole: Oyuncu %i en son istek zaman aşımına uğradı. Bu hata
     ölümcül değildir, ancak gerçekleşmeye devam ederse WorldwideChat yeniden yüklenmelidir.
   wwcGUIPageNumber: 'Sayfa Numarası: %i'
-  wwcConfigSQLFail: SQL'e bağlanılamadı.
-  wwcConfigSQLSuccess: SQL'e başarıyla bağlandı!
   wwcConfigYAMLFallback: YAML'ye geri düşmek...
   wwcConfigGUIToggleSQLButton: SQL'i Değiştir
   wwcConfigConversationToggleSQLSuccess: SQL başarıyla geçiş yaptı. Değişikliğin etkili
@@ -383,3 +381,43 @@ Messages:
     veya geri dönmek için 0 yazın.
   libreHttpUnknown: 'Bilinmeyen http hatası: %i'
   wwcConfigGUILibreTranslateURLButton: Ücretsiz Çevir URL'sini değiştir
+  wwcConfigConnectionFail: '%i öğesine bağlanılamadı.'
+  wwcConfigGUIMongoSettings: MongoDB Yapılandırması
+  wwcConfigConversationMongoDatabaseNameSuccess: MongoDB veritabanı adını başarıyla
+    değiştirdi.
+  wwcConfigGUIMongoHostnameButton: MongoDB Ana Bilgisayar Adını Değiştir
+  wwcConfigConversationMongoPasswordInput: Geçerli parola %i. Yeni bir parola belirlemek
+    için 0 dışında bir şey yazın veya geri dönmek için 0 yazın.
+  wwcConfigConversationMongoPortInput: Geçerli bağlantı noktası %i. Yeni bir bağlantı
+    noktası ayarlamak için 0 dışında bir şey yazın veya geri dönmek için 0 yazın.
+  wwcConfigConversationToggleMongoSuccess: MongoDB başarıyla geçti. Değişikliğin yürürlüğe
+    girmesi için yeniden yükleyin.
+  wwcConfigConversationMongoHostnameInput: Geçerli ana bilgisayar adı %i. Yeni bir
+    ana bilgisayar adı ayarlamak için 0 dışında bir şey yazın veya geri dönmek için
+    0 yazın.
+  wwcConfigConversationMongoHostnameSuccess: MongoDB ana bilgisayar adını başarıyla
+    değiştirdi.
+  wwcConfigGUIMongoMenuButton: MongoDB Ayarlarını Değiştir
+  wwcConfigGUIToggleMongoButton: MongoDB'yi aç/kapat
+  wwcConfigConversationMongoDatabaseNameInput: Geçerli veritabanı adı %i. Yeni bir
+    veritabanı adı ayarlamak için 0 dışında bir şey yazın veya geri dönmek için 0
+    yazın.
+  wwcConfigConversationMongoOptionalArgsInput: 'Mevcut isteğe bağlı MongoDB bağımsız
+    değişkenleri şunlardır: %i. Virgülle ayrılmış bağımsız değişkenler yazın (key=value,
+    key2=value2) veya geçerli arg''ları silmek için clear yazın veya geri dönmek için
+    0 yazın.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB Veritabanını Değiştir
+  wwcConfigConversationMongoUsernameInput: Geçerli kullanıcı adı %i. Yeni bir kullanıcı
+    adı ayarlamak için 0 dışında bir şey yazın veya geri dönmek için 0 yazın.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB İsteğe Bağlı Bağımsız Değişkenleri
+    Değiştir
+  wwcConfigConversationMongoUsernameSuccess: MongoDB kullanıcı adını başarıyla değiştirdi.
+  wwcConfigConversationMongoPasswordSuccess: MongoDB şifresini başarıyla değiştirdi.
+  wwcConfigConversationMongoPortSuccess: MongoDB bağlantı noktasını başarıyla değiştirdi.
+  wwcConfigGUIMongoUsernameButton: MongoDB Kullanıcı Adını Değiştir
+  wwcConfigGUIMongoPasswordButton: MongoDB Şifresini Değiştir
+  wwcConfigConversationMongoOptionalArgsSuccess: İsteğe bağlı MongoDB bağımsız değişkenlerini
+    başarıyla değiştirdi.
+  wwcConfigConversationMongoOptionalArgsCleared: İsteğe bağlı bağımsız değişkenler
+    başarıyla temizlendi.
+  wwcConfigGUIMongoPortButton: MongoDB Bağlantı Noktasını Değiştir

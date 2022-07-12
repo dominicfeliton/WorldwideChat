@@ -25,6 +25,13 @@ Storage:
   sqlPassword: root
   sqlUseSSL: false
   sqlOptionalArgs: []
+  useMongoDB: false
+  mongoHostname: localhost
+  mongoPort: 27017
+  mongoDatabaseName: cooldatabase
+  mongoUsername: admin
+  mongoPassword: password
+  mongoOptionalArgs: []
 Chat:
   sendTranslationChat: true
   sendPluginUpdateChat: true

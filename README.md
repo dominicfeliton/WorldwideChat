@@ -1,10 +1,10 @@
 # WorldwideChat 
 ![](https://github.com/3xpl0itz/WorldwideChat/blob/main/resources/Banner.png)
-## ![Github Workflow Status](https://img.shields.io/github/workflow/status/3xpl0itz/WorldwideChat/Release%20Builds%20(Main%20Branch)?style=for-the-badge) ![Pizza rolls](https://img.shields.io/badge/Mom%20brought%20pizza%20rolls-That's%20awesome-brightgreen?style=for-the-badge)
+## ![Github Workflow Status](https://img.shields.io/github/workflow/status/3xpl0itz/WorldwideChat/Release%20Builds%20(Main%20Branch)?style=for-the-badge) ![Code lines](https://img.shields.io/tokei/lines/github/3xpl0itz/WorldwideChat?style=for-the-badge) ![Repo Size](https://img.shields.io/github/repo-size/3xpl0itz/WorldwideChat?style=for-the-badge) ![Pizza rolls](https://img.shields.io/badge/Mom%20brought%20pizza%20rolls-That's%20awesome-brightgreen?style=for-the-badge)
 ### WorldwideChat is a translation plugin for Bukkit, Spigot, and PaperMC 1.13+.
 It allows you to translate Minecraft live using several Translation APIs.
 Some of its notable features include:
-- IBM Watson, Google Translate, Libre Translate, and Amazon Translate support.
+- IBM Watson, Google Translate, Amazon Translate, and Libre Translate support.
 - An interactive configuration GUI.
 - Translate chat, signs, entities, and written books with an interactive GUI.
 - Translation globally, for other players, or just you.
@@ -13,7 +13,7 @@ Some of its notable features include:
 - Rate limits so your players don't fill up a quota too quickly.
 - Persistent translation options saved per player across server reboots and reloads.
 - Stat tracker to keep track of how your players use this plugin.
-- MySQL Support.
+- SQL (MariaDB/MySQL) + MongoDB Support.
 
 And much more to come! 
 

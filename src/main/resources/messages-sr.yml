@@ -309,8 +309,6 @@ Messages:
   wwcTimeoutExceptionConsole: Igrač %imao sam svoj najnoviji zahtev timeout. Ova greška
     nije fatalna, ali širom svetaChat treba ponovo učitati ako se nastavi da se desi.
   wwcGUIPageNumber: 'Broj stranice: %i'
-  wwcConfigSQLFail: Nije uspelo da se poveže sa SKL.
-  wwcConfigSQLSuccess: Uspešno povezan sa SKL!
   wwcConfigYAMLFallback: Padajući nazad u IAML...
   wwcConfigGUIToggleSQLButton: Toggle SKL
   wwcConfigConversationToggleSQLSuccess: SKL uspešno toggled. Reload za promenu da
@@ -386,3 +384,41 @@ Messages:
     ili unesite 0 da biste se vratili nazad.
   libreHttpUnknown: 'Nepoznata http greška: %i'
   wwcConfigGUILibreTranslateURLButton: Promena Besplatno Prevod URL
+  wwcConfigConnectionFail: Neuspešno povezivanje sa %i.
+  wwcConfigGUIMongoSettings: MongoDB Konfiguracija
+  wwcConfigConversationMongoDatabaseNameSuccess: Uspešno promenio ime MongoDB baze
+    podataka.
+  wwcConfigGUIMongoHostnameButton: Promenite ime hosta MongoDB
+  wwcConfigConversationMongoPasswordInput: Trenutna lozinka je %i. Upišite bilo šta
+    drugo osim 0 da biste postavili novu lozinku ili upišite 0 da biste se vratili
+    nazad.
+  wwcConfigConversationMongoPortInput: Trenutni port je %i. Ukucajte bilo šta drugo
+    osim 0 da biste postavili novi port ili otkucajte 0 da biste se vratili nazad.
+  wwcConfigConversationToggleMongoSuccess: MongoDB se uspešno prebacio. Ponovo učitajte
+    da bi promena stupila na snagu.
+  wwcConfigConversationMongoHostnameInput: Trenutno ime hosta je %i. Ukucajte bilo
+    šta drugo osim 0 da biste postavili novo ime hosta ili otkucajte 0 da biste se
+    vratili nazad.
+  wwcConfigConversationMongoHostnameSuccess: Uspešno promenio ime domaćina MongoDB.
+  wwcConfigGUIMongoMenuButton: Promenite MongoDB podešavanja
+  wwcConfigGUIToggleMongoButton: Toggle MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Trenutno ime baze podataka je %i. Ukucajte
+    bilo šta drugo osim 0 da biste postavili novo ime baze podataka ili upišite 0
+    da biste se vratili nazad.
+  wwcConfigConversationMongoOptionalArgsInput: 'Trenutni opcioni MongoDB argumenti
+    su: %i. argumenti ukucajte odvojene zarezom (key=value, key2=value2), ili unesite
+    jasno da obrišete trenutne argove, ili upišite 0 da biste se vratili nazad.'
+  wwcConfigGUIMongoDatabaseNameButton: Promenite MongoDB bazu podataka
+  wwcConfigConversationMongoUsernameInput: Trenutno korisničko ime je %i. Upišite
+    bilo šta drugo osim 0 da biste postavili novo korisničko ime ili upišite 0 da
+    biste se vratili.
+  wwcConfigGUIMongoOptionalArgsButton: Promenite MongoDB opcione argumente
+  wwcConfigConversationMongoUsernameSuccess: Uspešno promenio MongoDB korisničko ime.
+  wwcConfigConversationMongoPasswordSuccess: Uspešno promenio MongoDB lozinku.
+  wwcConfigConversationMongoPortSuccess: Uspešno je promenio MongoDB port.
+  wwcConfigGUIMongoUsernameButton: Promenite MongoDB korisničko ime
+  wwcConfigGUIMongoPasswordButton: Promenite MongoDB lozinku
+  wwcConfigConversationMongoOptionalArgsSuccess: Uspešno promenio opcione MongoDB
+    argumente.
+  wwcConfigConversationMongoOptionalArgsCleared: Opcioni argumenti uspešno izbrisani.
+  wwcConfigGUIMongoPortButton: Promenite MongoDB Port

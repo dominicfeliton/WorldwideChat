@@ -313,8 +313,6 @@ Messages:
   wwcTimeoutExceptionConsole: Player %i მქონდა მათი უახლესი მოთხოვნის შეყოვნება. ეს
     შეცდომა არ არის ფატალური, მაგრამ WorldwideChat უნდა გადატვირთული თუ ის გრძელდება.
   wwcGUIPageNumber: 'გვერდის ნომერი: %i'
-  wwcConfigSQLFail: ვერ მოხერხდა SQL- თან დაკავშირება.
-  wwcConfigSQLSuccess: წარმატებით უკავშირდება SQL!
   wwcConfigYAMLFallback: დაცემა უკან YAML...
   wwcConfigGUIToggleSQLButton: გადართვა SQL
   wwcConfigConversationToggleSQLSuccess: SQL toggled წარმატებით. ცვლილებების შეცვლა
@@ -389,3 +387,43 @@ Messages:
     უფასოდ, ან ჩაწერეთ 0 დასაბრუნებლად.
   libreHttpUnknown: 'უცნობი http შეცდომა: %i'
   wwcConfigGUILibreTranslateURLButton: შეცვლა უფასო თარგმნის URL
+  wwcConfigConnectionFail: '%i- სთან დაკავშირება ვერ მოხერხდა.'
+  wwcConfigGUIMongoSettings: MongoDB კონფიგურაცია
+  wwcConfigConversationMongoDatabaseNameSuccess: წარმატებით შეიცვალა MongoDB მონაცემთა
+    ბაზის სახელი.
+  wwcConfigGUIMongoHostnameButton: შეცვალეთ MongoDB მასპინძლის სახელი
+  wwcConfigConversationMongoPasswordInput: მიმდინარე პაროლი არის %i. შეიყვანეთ 0-ის
+    გარდა ახალი პაროლის დასაყენებლად, ან ჩაწერეთ 0 დასაბრუნებლად.
+  wwcConfigConversationMongoPortInput: მიმდინარე პორტი არის %i. ახალი პორტის დასაყენებლად
+    შეიყვანეთ არაფერი 0-ის გარდა, ან აკრიფეთ 0 უკან დასაბრუნებლად.
+  wwcConfigConversationToggleMongoSuccess: MongoDB გადართვა წარმატებით. განაახლეთ
+    ცვლილება ძალაში.
+  wwcConfigConversationMongoHostnameInput: ამჟამინდელი ჰოსტის სახელია %i. აკრიფეთ
+    0-ის გარდა ახალი ჰოსტის სახელის დასაყენებლად, ან ჩაწერეთ 0, რომ დაბრუნდეთ.
+  wwcConfigConversationMongoHostnameSuccess: წარმატებით შეიცვალა MongoDB მასპინძლის
+    სახელი.
+  wwcConfigGUIMongoMenuButton: შეცვალეთ MongoDB პარამეტრები
+  wwcConfigGUIToggleMongoButton: მონღოლეთის გადართვა
+  wwcConfigConversationMongoDatabaseNameInput: მონაცემთა ბაზის ამჟამინდელი სახელია
+    %i. აკრიფეთ არაფერი 0-ის გარდა ახალი მონაცემთა ბაზის სახელის დასაყენებლად, ან
+    აკრიფეთ 0 უკან დასაბრუნებლად.
+  wwcConfigConversationMongoOptionalArgsInput: 'მიმდინარე არჩევითი MongoDB არგუმენტებია:
+    %i. ტიპის არგუმენტები, რომლებიც გამოყოფილია მძიმით (გასაღები = მნიშვნელობა, key2
+    = value2), ან ჩაწერეთ ნათელი, რომ გაასუფთაოთ მიმდინარე args, ან აკრიფოთ 0 უკან
+    დასაბრუნებლად.'
+  wwcConfigGUIMongoDatabaseNameButton: მონღოლეთის მონაცემთა ბაზის შეცვლა
+  wwcConfigConversationMongoUsernameInput: მიმდინარე მომხმარებლის სახელია %i. აკრიფეთ
+    არაფერი 0-ის გარდა ახალი მომხმარებლის სახელის დასაყენებლად, ან ჩაწერეთ 0 უკან
+    დასაბრუნებლად.
+  wwcConfigGUIMongoOptionalArgsButton: შეცვალეთ MongoDB არასავალდებულო
+  wwcConfigConversationMongoUsernameSuccess: წარმატებით შეიცვალა MongoDB მომხმარებლის
+    სახელი.
+  wwcConfigConversationMongoPasswordSuccess: წარმატებით შეიცვალა MongoDB პაროლი.
+  wwcConfigConversationMongoPortSuccess: წარმატებით შეიცვალა MongoDB პორტი.
+  wwcConfigGUIMongoUsernameButton: შეცვალეთ MongoDB მომხმარებლის სახელი
+  wwcConfigGUIMongoPasswordButton: შეცვალეთ MongoDB პაროლი
+  wwcConfigConversationMongoOptionalArgsSuccess: წარმატებით შეიცვალა სურვილისამებრ
+    MongoDB არგუმენტები.
+  wwcConfigConversationMongoOptionalArgsCleared: პირობითი არგუმენტები განბაჟებული
+    წარმატებით.
+  wwcConfigGUIMongoPortButton: შეცვალეთ მონღოლეთის პორტი

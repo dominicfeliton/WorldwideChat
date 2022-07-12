@@ -330,8 +330,6 @@ Messages:
     più recente. Questo errore non è fatale, ma WorldwideChat dovrebbe essere ricaricato
     se continua a verificarsi.
   wwcGUIPageNumber: 'Numero pagina: %i'
-  wwcConfigSQLFail: Impossibile connettersi a SQL.
-  wwcConfigSQLSuccess: Connesso con successo a SQL!
   wwcConfigYAMLFallback: Tornando a YAML...
   wwcConfigGUIToggleSQLButton: Commuta SQL
   wwcConfigConversationToggleSQLSuccess: SQL è stato attivato correttamente. Ricarica
@@ -411,3 +409,44 @@ Messages:
     o digita 0 per tornare indietro.
   libreHttpUnknown: 'Errore http sconosciuto: %i'
   wwcConfigGUILibreTranslateURLButton: Cambia URL di traduzione gratuita
+  wwcConfigConnectionFail: Connessione a %i non riuscita.
+  wwcConfigGUIMongoSettings: Configurazione MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Modificato correttamente il nome
+    del database MongoDB.
+  wwcConfigGUIMongoHostnameButton: Cambia il nome host MongoDB
+  wwcConfigConversationMongoPasswordInput: La password corrente è %i. Digitare qualcosa
+    di diverso da 0 per impostare una nuova password o digitare 0 per tornare indietro.
+  wwcConfigConversationMongoPortInput: La porta corrente è %i. Digitare qualcosa di
+    diverso da 0 per impostare una nuova porta o digitare 0 per tornare indietro.
+  wwcConfigConversationToggleMongoSuccess: MongoDB attivato correttamente. Ricarica
+    affinché la modifica abbia effetto.
+  wwcConfigConversationMongoHostnameInput: Il nome host corrente è %i. Digitare qualcosa
+    di diverso da 0 per impostare un nuovo nome host o digitare 0 per tornare indietro.
+  wwcConfigConversationMongoHostnameSuccess: Modificato correttamente il nome host
+    MongoDB.
+  wwcConfigGUIMongoMenuButton: Modifica delle impostazioni di MongoDB
+  wwcConfigGUIToggleMongoButton: Attiva/disattiva MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Il nome del database corrente è %i.
+    Digitare qualcosa di diverso da 0 per impostare un nuovo nome di database o digitare
+    0 per tornare indietro.
+  wwcConfigConversationMongoOptionalArgsInput: 'Gli attuali argomenti opzionali di
+    MongoDB sono: %i. Digitare gli argomenti separati da una virgola (chiave=valore,
+    chiave2=valore2), oppure digitare clear per cancellare gli argomenti correnti
+    o digitare 0 per tornare indietro.'
+  wwcConfigGUIMongoDatabaseNameButton: Cambia database MongoDB
+  wwcConfigConversationMongoUsernameInput: Il nome utente corrente è %i. Digitare
+    qualcosa di diverso da 0 per impostare un nuovo nome utente o digitare 0 per tornare
+    indietro.
+  wwcConfigGUIMongoOptionalArgsButton: Modifica degli argomenti facoltativi di MongoDB
+  wwcConfigConversationMongoUsernameSuccess: Il nome utente MongoDB è stato modificato
+    correttamente.
+  wwcConfigConversationMongoPasswordSuccess: La password MongoDB è stata modificata
+    correttamente.
+  wwcConfigConversationMongoPortSuccess: La porta MongoDB è stata modificata correttamente.
+  wwcConfigGUIMongoUsernameButton: Cambia il nome utente MongoDB
+  wwcConfigGUIMongoPasswordButton: Cambia password MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Sono stati modificati correttamente
+    gli argomenti opzionali di MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Argomenti facoltativi cancellati
+    correttamente.
+  wwcConfigGUIMongoPortButton: Cambia porta MongoDB

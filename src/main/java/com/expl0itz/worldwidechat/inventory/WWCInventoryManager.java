@@ -118,21 +118,20 @@ public class WWCInventoryManager extends InventoryManager {
 	}
 
 	private static void saveMainConfigAndReload(Player player, InventoryContents content) {
-		/* Kick this player out of the GUI */
+		/* Kick this player out of the GUI, set translator name to starting to prevent spam reloads */
+		final boolean invalidState = main.getTranslatorName().equals("Invalid");
+		main.setTranslatorName("Starting");
 		main.removePlayerUsingConfigurationGUI(player);
 		player.closeInventory();
-		
-		// Ensure that /wwcr is not ran while this is running
-		main.setTranslatorName("Starting");
 		
 		BukkitRunnable out = new BukkitRunnable() {
 			@Override
 			public void run() {
-				// Save config sync/in the same thread because we are already async
+				// Save config in same thread
 				main.getConfigManager().saveMainConfig(false);
 				
 				// Reload
-				main.reload(player);
+				main.reload(player, invalidState);
 			}
 		};
 		CommonDefinitions.scheduleTaskAsynchronously(out);

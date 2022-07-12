@@ -313,8 +313,6 @@ Messages:
     Wannan kuskure ba m, amma WorldwideChat ya kamata a sake saukewa idan ya ci gaba
     da faruwa.
   wwcGUIPageNumber: 'Lambar Shafi: %i'
-  wwcConfigSQLFail: An kasa haɗi zuwa SQL.
-  wwcConfigSQLSuccess: An yi nasarar haɗawa da SQL!
   wwcConfigYAMLFallback: Fadowa ta koma YAML...
   wwcConfigGUIToggleSQLButton: toggle SQL
   wwcConfigConversationToggleSQLSuccess: SQL toggled nasara. Sake dawowa don canjin
@@ -389,3 +387,42 @@ Messages:
     da URL don Libre, ko rubuta 0 don komawa.
   libreHttpUnknown: 'Kuskuren http wanda ba a sani ba: %i'
   wwcConfigGUILibreTranslateURLButton: Canja adireshin fassara na Libre
+  wwcConfigConnectionFail: An kasa haɗi zuwa %i.
+  wwcConfigGUIMongoSettings: Tsarin MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: An samu nasarar canza sunan ma'adanar
+    MongoDB.
+  wwcConfigGUIMongoHostnameButton: Canja MongoDB Mai watsa shiri
+  wwcConfigConversationMongoPasswordInput: Kalmar sirri ta yanzu ita ce %i. Rubuta
+    wani abu banda 0 don saita sabon kalmar sirri, ko rubuta 0 don komawa.
+  wwcConfigConversationMongoPortInput: Tashar jiragen ruwa na yanzu ita ce %i. Rubuta
+    wani abu banda 0 don saita sabon tashar jiragen ruwa, ko rubuta 0 don komawa.
+  wwcConfigConversationToggleMongoSuccess: MongoDB toggled nasara. Sake saukewa don
+    canji don yin tasiri.
+  wwcConfigConversationMongoHostnameInput: Sunan mai watsa shiri na yanzu shine %i.
+    Rubuta wani abu banda 0 don saita sabon sunan mai masaukin baki, ko rubuta 0 don
+    komawa.
+  wwcConfigConversationMongoHostnameSuccess: An samu nasarar canza sunan mai watsa
+    shiri na MongoDB.
+  wwcConfigGUIMongoMenuButton: Canja Saitunan MongoD
+  wwcConfigGUIToggleMongoButton: Toggle MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Sunan bayanai na yanzu shine %i. Rubuta
+    wani abu banda 0 don saita sabon sunan bayanai, ko rubuta 0 don komawa.
+  wwcConfigConversationMongoOptionalArgsInput: 'Zaɓuɓɓukan MongoDB na yanzu sune:
+    %i. Nau''in muhawarar da aka raba ta hanyar ƙwararren kalma (key=value, key2=value2),
+    ko rubuta bayyananne don goge args na yanzu, ko rubuta 0 don komawa baya.'
+  wwcConfigGUIMongoDatabaseNameButton: Canja Bayanan MongoDB
+  wwcConfigConversationMongoUsernameInput: Sunan mai amfani na yanzu shine %i. Rubuta
+    wani abu banda 0 don saita sabon sunan mai amfani, ko rubuta 0 don komawa baya.
+  wwcConfigGUIMongoOptionalArgsButton: Canja MongoDB Zabi muhawara
+  wwcConfigConversationMongoUsernameSuccess: An samu nasarar canza sunan mai amfani
+    na MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: An samu nasarar canza kalmar sirri ta
+    MongoDB.
+  wwcConfigConversationMongoPortSuccess: An samu nasarar canza tashar jiragen ruwa
+    ta MongoDB.
+  wwcConfigGUIMongoUsernameButton: Canja sunan MongoDB
+  wwcConfigGUIMongoPasswordButton: Canja Kalmar MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: An samu nasarar canza muhawarar MongoDB
+    na zaɓi.
+  wwcConfigConversationMongoOptionalArgsCleared: Zaɓuɓɓukan muhawara sun share nasara
+  wwcConfigGUIMongoPortButton: Canja tashar MongoDB

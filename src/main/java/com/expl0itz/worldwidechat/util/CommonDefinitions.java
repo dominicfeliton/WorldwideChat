@@ -133,11 +133,11 @@ public class CommonDefinitions {
 	  * @return Boolean - Whether languages are the same or not
 	  */
 	public static boolean isSameLang(String first, String second) {
-		return getSupportedTranslatorLang(first).getLangCode().equals(getSupportedTranslatorLang(second).getLangCode());
+		return isSupportedTranslatorLang(first) && isSupportedTranslatorLang(second) && getSupportedTranslatorLang(first).getLangCode().equals(getSupportedTranslatorLang(second).getLangCode());
 	}
 
 	/**
-	  * Checks if string is a supported language under the current translator.
+	  * Gets a supported language under the current translator.
 	  * @param in - A valid language name
 	  * @return SupportedLanguageObject - Will be completely empty if the language is invalid
 	  */
@@ -148,6 +148,15 @@ public class CommonDefinitions {
 			}
 		}
 		return new SupportedLanguageObject("", "", "", false, false);
+	}
+	
+	/**
+	 * Checks if a language is supported under the current translator.
+	 * @param in - A valid language name
+	 * @return true if supported, false otherwise
+	 */
+	public static boolean isSupportedTranslatorLang(String in) {
+		return !getSupportedTranslatorLang(in).getLangCode().equals("");
 	}
 
 	/**
@@ -280,11 +289,11 @@ public class CommonDefinitions {
 
 			/* Initialize current vars + ActiveTranslator, sanity checks */
 			ActiveTranslator currActiveTranslator;
-			if (main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
-					&& (!main.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals(""))) {
+			if (!main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
+					&& (main.isActiveTranslator(currPlayer))) {
 				currActiveTranslator = main.getActiveTranslator(currPlayer.getUniqueId().toString());
-			} else if (!main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
-					&& (!main.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals(""))) {
+			} else if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
+					&& (main.isActiveTranslator(currPlayer))) {
 				currActiveTranslator = main.getActiveTranslator(currPlayer.getUniqueId().toString());
 			} else {
 				currActiveTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
@@ -350,8 +359,7 @@ public class CommonDefinitions {
 
 			// Get user's personal rate limit, if permission is not set and they are an
 			// active translator.
-			if (!isExempt && !hasPermission && !main
-					.getActiveTranslator(currPlayer.getUniqueId().toString()).getUUID().equals("")) {
+			if (!isExempt && !hasPermission && main.isActiveTranslator(currPlayer)) {
 				personalRateLimit = main
 					.getActiveTranslator(currPlayer.getUniqueId().toString()).getRateLimit();
 			}
@@ -481,7 +489,7 @@ public class CommonDefinitions {
 		/* Return final result */
 		return finalOut;
 	}
-
+	
 	/**
 	 * Sends a message that console cannot have a translation session for itself.
 	 * @param sender - Who will receive the message
@@ -600,7 +608,7 @@ public class CommonDefinitions {
 	  * @param currPlayer - Player that sent the message
 	  */
 	private static void detectColorCodePresence(String inMessage, Player currPlayer) {
-		if ((inMessage.contains("&") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals(""))
+		if ((inMessage.contains("&") && !main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"))
 				&& !(main.getActiveTranslator(currPlayer.getUniqueId().toString())
 						.getCCWarning())) // check if user has already been sent CC warning
 		{

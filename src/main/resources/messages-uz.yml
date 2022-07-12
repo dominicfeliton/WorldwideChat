@@ -320,8 +320,6 @@ Messages:
     bor edi. Bu xato halokatli emas, lekin agar u davom etsa WorldwideChat qayta yuklanishi
     kerak.
   wwcGUIPageNumber: 'Sahifa raqami: %i'
-  wwcConfigSQLFail: SQLga ulanib bo'lmadi.
-  wwcConfigSQLSuccess: SQL ga muvaffaqiyatli ulangan!
   wwcConfigYAMLFallback: YAML qaytib tushib...
   wwcConfigGUIToggleSQLButton: Toggle SQL
   wwcConfigConversationToggleSQLSuccess: SQL muvaffaqiyatli harakat qildi. O'zgarish
@@ -401,3 +399,43 @@ Messages:
     kiriting yoki orqaga qaytish uchun 0 yozing.
   libreHttpUnknown: 'Nomaʼlum http xatosi: %i'
   wwcConfigGUILibreTranslateURLButton: Bepul Tarjima URL o'zgartirish
+  wwcConfigConnectionFail: '%i ga ulanib boʻlmadi.'
+  wwcConfigGUIMongoSettings: MongoDB konfiguratsiya
+  wwcConfigConversationMongoDatabaseNameSuccess: MongoDB ma'lumotlar bazasi nomini
+    muvaffaqiyatli o'zgartirdi.
+  wwcConfigGUIMongoHostnameButton: MongoDB Host nomini o'zgartirish
+  wwcConfigConversationMongoPasswordInput: Joriy parol %i. Yangi parol oʻrnatish uchun
+    0 dan boshqa biror narsani kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationMongoPortInput: Joriy port %i. 0 dan boshqa biror narsani yozing
+    yangi portni oʻrnatish yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationToggleMongoSuccess: MongoDB muvaffaqiyatli o'tdi. O'zgarish
+    kuchga kirishi uchun qayta yuklang.
+  wwcConfigConversationMongoHostnameInput: Joriy xost nomi %i. 0 dan boshqa hech narsa
+    yozing yangi xost nomini belgilash yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationMongoHostnameSuccess: MongoDB hostname nomini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigGUIMongoMenuButton: MongoDB sozlamalarini o'zgartiring
+  wwcConfigGUIToggleMongoButton: Toggle MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Joriy ma'lumotlar bazasi nomi %i. 0
+    dan boshqa hech narsa yozing yangi ma'lumotlar bazasi nomini belgilash yoki orqaga
+    qaytish uchun 0 yozing.
+  wwcConfigConversationMongoOptionalArgsInput: 'Joriy ixtiyoriy MongoDB argumentlari
+    quyidagilardir: %i. vergul bilan ajratilgan argumentlarni kiriting (kalit = qiymat,
+    key2 = value2) yoki joriy argsni artish uchun aniq yozing yoki orqaga qaytish
+    uchun 0 yozing.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB ma'lumotlar bazasini o'zgartirish
+  wwcConfigConversationMongoUsernameInput: Joriy foydalanuvchi nomi %i. Yangi foydalanuvchi
+    nomini belgilash uchun 0 dan boshqa hech narsa yozing yoki orqaga qaytish uchun
+    0 yozing.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB ixtiyoriy argumentlarini o'zgartiring
+  wwcConfigConversationMongoUsernameSuccess: MongoDB foydalanuvchi nomini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigConversationMongoPasswordSuccess: MongoDB parolini muvaffaqiyatli o'zgartirdi.
+  wwcConfigConversationMongoPortSuccess: MongoDB portini muvaffaqiyatli o'zgartirdi.
+  wwcConfigGUIMongoUsernameButton: MongoDB foydalanuvchi nomini o'zgartiring
+  wwcConfigGUIMongoPasswordButton: MongoDB parolini o'zgartiring
+  wwcConfigConversationMongoOptionalArgsSuccess: Muvaffaqiyatli ixtiyoriy MongoDB
+    argumentlarni o'zgartirdi.
+  wwcConfigConversationMongoOptionalArgsCleared: Ixtiyoriy vajlari muvaffaqiyatli
+    tozalandi.
+  wwcConfigGUIMongoPortButton: MongoDB portini o'zgartiring

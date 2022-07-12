@@ -39,8 +39,8 @@ public class OnPlayerJoinListener implements Listener {
 
 		/* Global translate is disabled, and user has a translation config */
 		if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
-				&& main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
-				&& !main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("")) {
+				&& !main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
+				&& main.isActiveTranslator(event.getPlayer())) {
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
 				final TextComponent langToLang = Component.text()
@@ -59,8 +59,8 @@ public class OnPlayerJoinListener implements Listener {
 			}
 		/* Global translate is enabled, and user does not have a translation config */
 		} else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
-				&& !main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
-				&& main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("")) {
+				&& main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
+				&& !main.isActiveTranslator(event.getPlayer())) {
 			ActiveTranslator currTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
 				final TextComponent langToLang = Component.text()
@@ -77,10 +77,10 @@ public class OnPlayerJoinListener implements Listener {
 						.build();
 				CommonDefinitions.sendMessage(event.getPlayer(), noSource);
 			}
-		/* Global translate is enabled, but user has a translation config */
+		/* Global translate is enabled, but user ALSO has a translation config */
 		} else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
-				&& !main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")
-				&& !main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getUUID().equals("")) {
+				&& main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
+				&& main.isActiveTranslator(event.getPlayer())) {
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
 				final TextComponent langToLang = Component.text()

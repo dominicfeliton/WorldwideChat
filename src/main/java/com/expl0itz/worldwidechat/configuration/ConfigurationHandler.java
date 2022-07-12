@@ -11,9 +11,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
+import org.bson.Document;
+import org.bson.conversions.Bson;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -31,7 +34,14 @@ import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.Metrics;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
-import com.expl0itz.worldwidechat.util.SQLUtils;
+import com.expl0itz.worldwidechat.util.storage.MongoDBUtils;
+import com.expl0itz.worldwidechat.util.storage.SQLUtils;
+import com.mongodb.MongoException;
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.Filters;
+import com.mongodb.client.model.ReplaceOptions;
 
 public class ConfigurationHandler {
 
@@ -259,11 +269,23 @@ public class ConfigurationHandler {
 				SQLUtils.connect(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"), 
 						mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"), 
 						(List<String>) mainConfig.getList("Storage.sqlOptionalArgs"), mainConfig.getBoolean("Storage.sqlUseSSL"));
-				main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigSQLSuccess"));
+				main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigConnectionSuccess", new String[] {"SQL"}));
 			} catch (Exception e) {
-				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigSQLFail"));
+				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigConnectionFail", new String[] {"SQL"}));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
 				SQLUtils.disconnect(); // Just in case
+				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigYAMLFallback"));
+			}
+		} else if (mainConfig.getBoolean("Storage.useMongoDB")) {
+			try {
+				MongoDBUtils.connect(mainConfig.getString("Storage.mongoHostname"), mainConfig.getString("Storage.mongoPort"), 
+						mainConfig.getString("Storage.mongoDatabaseName"), mainConfig.getString("Storage.mongoUsername"), 
+						mainConfig.getString("Storage.mongoPassword"), (List<String>) mainConfig.getList("Storage.mongoOptionalArgs"));
+				main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigConnectionSuccess", new String[] {"MongoDB"}));
+			} catch (Exception e) {
+				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigConnectionFail", new String[] {"MongoDB"}));
+				main.getLogger().warning(ExceptionUtils.getMessage(e));
+				MongoDBUtils.disconnect();
 				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigYAMLFallback"));
 			}
 		} else {
@@ -329,7 +351,261 @@ public class ConfigurationHandler {
 		}
 		main.setTranslatorName(outName);
 	}
+	
+	/* Main config save method */
+	public void saveMainConfig(boolean async) {
+		if (async) {
+			CommonDefinitions.sendDebugMessage("Saving main config async!");
+			BukkitRunnable out = new BukkitRunnable() {
+				@Override
+				public void run() {
+					saveMainConfig(false);
+				}
+			};
+			CommonDefinitions.scheduleTaskAsynchronously(out);
+			return;
+		}
+		CommonDefinitions.sendDebugMessage("Saving main config sync!");
+		saveCustomConfig(mainConfig, configFile, false);
+	}
+	
+	/* Messages config save method */
+	public void saveMessagesConfig(boolean async) {
+		if (async) {
+			CommonDefinitions.sendDebugMessage("Saving messages config async!");
+			BukkitRunnable out = new BukkitRunnable() {
+				@Override
+				public void run() {
+					saveMessagesConfig(false);
+				}
+			};
+			CommonDefinitions.scheduleTaskAsynchronously(out);
+			return;
+		}
+		CommonDefinitions.sendDebugMessage("Saving messages config sync!");
+		saveCustomConfig(messagesConfig, messagesFile, false);
+	}
+	
+	/* Custom config save method */
+	public synchronized void saveCustomConfig(YamlConfiguration inConfig, File dest, boolean async) {
+		if (async && main.isEnabled()) {
+			CommonDefinitions.sendDebugMessage("Saving custom config async!");
+			BukkitRunnable out = new BukkitRunnable() {
+				@Override
+				public void run() {
+					saveCustomConfig(inConfig, dest, false);
+				}
+			};
+			CommonDefinitions.scheduleTaskAsynchronously(out);
+			return;
+		}
+		if (inConfig != null && dest != null) {
+			CommonDefinitions.sendDebugMessage("Saving custom config sync!");
+			try {
+				inConfig.save(dest);
+			} catch (IOException e) {
+				e.printStackTrace();
+				Bukkit.getPluginManager().disablePlugin(main);
+				return;
+			}
+		}
+	}
+	
+	/* Sync user data to storage default */
+	public void syncData() {
+		syncData(main.getTranslatorName().equalsIgnoreCase("Invalid"));
+	}
+	
+	/* Sync user data to storage */
+	public void syncData(boolean wasPreviouslyInvalid) {
+		/* If our translator is Invalid, do not run this code */
+		//TODO: Investigate why mockbukkit no longer works here
+		if (wasPreviouslyInvalid || main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+			return;
+		}
+		if (SQLUtils.isConnected()) {
+			// Our Generic Table Layout: 
+			// | Creation Date | Object Properties |  
+			try {
+				Connection sqlConnection = SQLUtils.getConnection();
+				
+				/* Sync ActiveTranslator data to corresponding table */
+				main.getActiveTranslators().entrySet().forEach((entry) -> {
+					CommonDefinitions.sendDebugMessage("(SQL) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				    if (!entry.getValue().getHasBeenSaved()) {
+				    	try {
+				    		ActiveTranslator val = entry.getValue();
+				    		PreparedStatement newActiveTranslator = sqlConnection.prepareStatement("REPLACE activeTranslators"
+					    			+ " (creationDate,playerUUID,inLangCode,outLangCode,rateLimit,rateLimitPreviousTime,translatingChatOutgoing,translatingChatIncoming,translatingBook,translatingSign,translatingItem,translatingEntity)" 
+					    			+ " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
+					    	newActiveTranslator.setString(1, Instant.now().toString());
+					    	newActiveTranslator.setString(2, val.getUUID());
+					    	newActiveTranslator.setString(3, val.getInLangCode());
+					    	newActiveTranslator.setString(4, val.getOutLangCode());
+					    	newActiveTranslator.setInt(5, val.getRateLimit());
+					    	newActiveTranslator.setString(6, val.getRateLimitPreviousTime());
+					    	newActiveTranslator.setBoolean(7, val.getTranslatingChatOutgoing());
+					    	newActiveTranslator.setBoolean(8, val.getTranslatingChatIncoming());
+					    	newActiveTranslator.setBoolean(9, val.getTranslatingBook());
+					    	newActiveTranslator.setBoolean(10, val.getTranslatingSign());
+					    	newActiveTranslator.setBoolean(11, val.getTranslatingItem());
+					    	newActiveTranslator.setBoolean(12, val.getTranslatingEntity());
+					    	newActiveTranslator.executeUpdate();
+					    	newActiveTranslator.close();
+				    	} catch (SQLException e) {
+							e.printStackTrace();
+							return;
+						}
+				    	CommonDefinitions.sendDebugMessage("(SQL) Created/updated unsaved user data config of " + entry.getKey() + ".");
+				    	entry.getValue().setHasBeenSaved(true);
+				    }
+				});
+				
+				/* Delete any old ActiveTranslators */
+				ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM activeTranslators");
+				while (rs.next()) {
+					if (!main.isActiveTranslator(rs.getString("playerUUID"))) {
+						String uuid = rs.getString("playerUUID");
+						PreparedStatement deleteOldItem = sqlConnection.prepareStatement("DELETE FROM activeTranslators WHERE playerUUID = ?");
+						deleteOldItem.setString(1, uuid);
+						deleteOldItem.executeUpdate();
+						deleteOldItem.close();
+						CommonDefinitions.sendDebugMessage("(SQL) Deleted user data config of " + uuid + ".");
+					}
+				}
+				
+				/* Sync PlayerRecord data to corresponding table */
+                main.getPlayerRecords().entrySet().forEach((entry) -> {
+                	CommonDefinitions.sendDebugMessage("(SQL) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+                    if (!entry.getValue().getHasBeenSaved()) {
+                    	try {
+                    		PlayerRecord val = entry.getValue();
+                    		PreparedStatement newPlayerRecord = sqlConnection.prepareStatement("REPLACE playerRecords"
+                    				+ " (creationDate,playerUUID,attemptedTranslations,successfulTranslations,lastTranslationTime) VALUES (?,?,?,?,?)");
+                    		newPlayerRecord.setString(1, Instant.now().toString());
+                    		newPlayerRecord.setString(2, val.getUUID());
+                    		newPlayerRecord.setInt(3, val.getAttemptedTranslations());
+                    		newPlayerRecord.setInt(4, val.getSuccessfulTranslations());
+                    		newPlayerRecord.setString(5, val.getLastTranslationTime());
+                    		newPlayerRecord.executeUpdate();
+                    		newPlayerRecord.close();
+                    	} catch (SQLException e) {
+                    		e.printStackTrace();
+                    		return;
+                    	}
+                    	CommonDefinitions.sendDebugMessage("(SQL) Created/updated unsaved user record of " + entry.getKey() + ".");
+                    	entry.getValue().setHasBeenSaved(true);
+				    }
+				});
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		} else if (MongoDBUtils.isConnected()) {
+			try {
+				/* Initialize collections */
+				MongoDatabase database = MongoDBUtils.getActiveDatabase();
+				MongoCollection<Document> activeTranslatorCol = database.getCollection("ActiveTranslators");
+				MongoCollection<Document> playerRecordCol = database.getCollection("PlayerRecords");
+				
+				/* Write ActiveTranslators to DB */
+				main.getActiveTranslators().entrySet().forEach((entry) -> {
+					CommonDefinitions.sendDebugMessage("(MongoDB) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+					if (!entry.getValue().getHasBeenSaved()) {
+						ActiveTranslator val = entry.getValue();
+						Document currTranslator = new Document()
+								.append("creationDate", Instant.now().toString())
+								.append("playerUUID", val.getUUID())
+								.append("inLangCode", val.getInLangCode())
+								.append("outLangCode", val.getOutLangCode())
+								.append("rateLimit", val.getRateLimit())
+								.append("rateLimitPreviousTime", val.getRateLimitPreviousTime())
+								.append("translatingChatOutgoing", val.getTranslatingChatOutgoing())
+								.append("translatingChatIncoming", val.getTranslatingChatIncoming())
+								.append("translatingBook", val.getTranslatingBook())
+								.append("translatingSign", val.getTranslatingSign())
+								.append("translatingItem", val.getTranslatingItem())
+								.append("translatingEntity", val.getTranslatingEntity());
+						
+						ReplaceOptions opts = new ReplaceOptions().upsert(true);
+						Bson filter = Filters.eq("playerUUID", val.getUUID());
+						activeTranslatorCol.replaceOne(filter, currTranslator, opts);
+						
+						entry.getValue().setHasBeenSaved(true);
+					}
+				});
+				
+				/* Delete old ActiveTranslators from MongoDB */
+				FindIterable<Document> iterDoc = activeTranslatorCol.find();
+				Iterator<Document> it = iterDoc.iterator();
+				while (it.hasNext()) {
+					Document currDoc = it.next();
+					if (!main.isActiveTranslator(currDoc.getString("playerUUID"))) {
+						String uuid = currDoc.getString("playerUUID");
+						Bson query = Filters.eq("playerUUID", uuid);
+						activeTranslatorCol.deleteOne(query);
+						CommonDefinitions.sendDebugMessage("(MongoDB) Deleted user data config of " + uuid + ".");
+					}
+				}
+				
+				/* Write PlayerRecords to DB */
+				main.getPlayerRecords().entrySet().forEach((entry) -> {
+                	CommonDefinitions.sendDebugMessage("(MongoDB) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+                    if (!entry.getValue().getHasBeenSaved()) {
+                    	PlayerRecord val = entry.getValue();
+                		Document currPlayerRecord = new Document()
+                				.append("creationDate", Instant.now().toString())
+                				.append("playerUUID", val.getUUID())
+                				.append("attemptedTranslations", val.getAttemptedTranslations())
+                				.append("successfulTranslations", val.getSuccessfulTranslations())
+                				.append("lastTranslationTime", val.getLastTranslationTime());
 
+                		ReplaceOptions opts = new ReplaceOptions().upsert(true);
+						Bson filter = Filters.eq("playerUUID", val.getUUID());
+						playerRecordCol.replaceOne(filter, currPlayerRecord, opts);
+						
+						entry.getValue().setHasBeenSaved(true);
+                    	CommonDefinitions.sendDebugMessage("(MongoDB) Created/updated unsaved user record of " + entry.getKey() + ".");
+				    }
+				});
+				
+			} catch (MongoException e) {
+				e.printStackTrace();
+			}
+		} else {
+			/* Last resort, sync activeTranslators to disk via YAML */
+			// Save all new activeTranslators
+			main.getActiveTranslators().entrySet().forEach((entry) -> {
+				CommonDefinitions.sendDebugMessage("(YAML) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				if (!entry.getValue().getHasBeenSaved()) {
+					CommonDefinitions.sendDebugMessage("(YAML) Created/updated unsaved user data config of " + entry.getKey() + ".");
+					entry.getValue().setHasBeenSaved(true);
+					createUserDataConfig(entry.getValue());
+				}
+			});
+			
+			// Delete any old activeTranslators
+			File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
+			for (String eaName : userSettingsDir.list()) {
+				File currFile = new File(userSettingsDir, eaName);
+				if (!main.isActiveTranslator(currFile.getName().substring(0, currFile.getName().indexOf(".")))) {
+					CommonDefinitions.sendDebugMessage("(YAML) Deleted user data config of "
+							+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + ".");
+					currFile.delete();
+				}
+			}
+
+			/* Sync playerRecords to disk */
+			main.getPlayerRecords().entrySet().forEach((entry) -> {
+				CommonDefinitions.sendDebugMessage("(YAML) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				if (!entry.getValue().getHasBeenSaved()) {
+					CommonDefinitions.sendDebugMessage("(YAML) Created/updated unsaved user record of " + entry.getKey() + ".");
+					entry.getValue().setHasBeenSaved(true);
+					createStatsConfig(entry.getValue());
+				}
+			});
+		}
+	}
+	
 	/* Translator YAML File Saver */
 	public void createUserDataConfig(ActiveTranslator inTranslator) {
 		File userSettingsFile;
@@ -395,194 +671,6 @@ public class ConfigurationHandler {
 		userStatsConfig.set("successfulTranslations", inRecord.getSuccessfulTranslations());
 
 		saveCustomConfig(userStatsConfig, userStatsFile, false);
-	}
-	
-	/* Main config save method */
-	public void saveMainConfig(boolean async) {
-		if (async) {
-			CommonDefinitions.sendDebugMessage("Saving main config async!");
-			BukkitRunnable out = new BukkitRunnable() {
-				@Override
-				public void run() {
-					saveMainConfig(false);
-				}
-			};
-			CommonDefinitions.scheduleTaskAsynchronously(out);
-			return;
-		}
-		CommonDefinitions.sendDebugMessage("Saving main config sync!");
-		saveCustomConfig(mainConfig, configFile, false);
-	}
-	
-	/* Messages config save method */
-	public void saveMessagesConfig(boolean async) {
-		if (async) {
-			CommonDefinitions.sendDebugMessage("Saving messages config async!");
-			BukkitRunnable out = new BukkitRunnable() {
-				@Override
-				public void run() {
-					saveMessagesConfig(false);
-				}
-			};
-			CommonDefinitions.scheduleTaskAsynchronously(out);
-			return;
-		}
-		CommonDefinitions.sendDebugMessage("Saving messages config sync!");
-		saveCustomConfig(messagesConfig, messagesFile, false);
-	}
-	
-	/* Custom config save method */
-	public synchronized void saveCustomConfig(YamlConfiguration inConfig, File dest, boolean async) {
-		if (async && main.isEnabled()) {
-			CommonDefinitions.sendDebugMessage("Saving custom config async!");
-			BukkitRunnable out = new BukkitRunnable() {
-				@Override
-				public void run() {
-					saveCustomConfig(inConfig, dest, false);
-				}
-			};
-			CommonDefinitions.scheduleTaskAsynchronously(out);
-			return;
-		}
-		if (inConfig != null && dest != null) {
-			CommonDefinitions.sendDebugMessage("Saving custom config sync!");
-			try {
-				inConfig.save(dest);
-			} catch (IOException e) {
-				e.printStackTrace();
-				Bukkit.getPluginManager().disablePlugin(main);
-				return;
-			}
-		}
-	}
-	
-	/* Sync user data to storage */
-	public void syncData() {
-		/* If our translator is Invalid, do not run this code */
-		//TODO: Investigate why mockbukkit no longer works here
-		if (!main.getTranslatorName().equals("Invalid") && !main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
-			/* Sync to SQL database, if it exists */
-			// Our Generic Table Layout: 
-			// | Creation Date | Object Properties |  
-			if (SQLUtils.isConnected()) {
-				try {
-					Connection sqlConnection = SQLUtils.getConnection();
-					
-					/* Create tables if they do not exist already */
-					PreparedStatement initActiveTranslators = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
-							+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),inLangCode VARCHAR(12),outLangCode VARCHAR(12),rateLimit VARCHAR(256),"
-							+ "rateLimitPreviousTime VARCHAR(256),translatingChatOutgoing VARCHAR(12), translatingChatIncoming VARCHAR(12),"
-							+ "translatingBook VARCHAR(12),translatingSign VARCHAR(12),translatingItem VARCHAR(12),translatingEntity VARCHAR(12),PRIMARY KEY (playerUUID))");
-					initActiveTranslators.executeUpdate();
-					initActiveTranslators.close();
-					PreparedStatement initPlayerRecords = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS playerRecords "
-							+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),attemptedTranslations VARCHAR(256),successfulTranslations VARCHAR(256),"
-							+ "lastTranslationTime VARCHAR(256),PRIMARY KEY (playerUUID))");
-					initPlayerRecords.executeUpdate();
-					initPlayerRecords.close();
-					/* Sync ActiveTranslator data to corresponding table */
-					main.getActiveTranslators().entrySet().forEach((entry) -> {
-						CommonDefinitions.sendDebugMessage("(SQL) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
-					    if (!entry.getValue().getHasBeenSaved()) {
-					    	try {
-					    		PreparedStatement newActiveTranslator = sqlConnection.prepareStatement("REPLACE activeTranslators"
-						    			+ " (creationDate,playerUUID,inLangCode,outLangCode,rateLimit,rateLimitPreviousTime,translatingChatOutgoing,translatingChatIncoming,translatingBook,translatingSign,translatingItem,translatingEntity)" 
-						    			+ " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
-						    	newActiveTranslator.setString(1, Instant.now().toString());
-						    	newActiveTranslator.setString(2, entry.getValue().getUUID());
-						    	newActiveTranslator.setString(3, entry.getValue().getInLangCode());
-						    	newActiveTranslator.setString(4, entry.getValue().getOutLangCode());
-						    	newActiveTranslator.setInt(5, entry.getValue().getRateLimit());
-						    	newActiveTranslator.setString(6, entry.getValue().getRateLimitPreviousTime());
-						    	newActiveTranslator.setBoolean(7, entry.getValue().getTranslatingChatOutgoing());
-						    	newActiveTranslator.setBoolean(8, entry.getValue().getTranslatingChatIncoming());
-						    	newActiveTranslator.setBoolean(9, entry.getValue().getTranslatingBook());
-						    	newActiveTranslator.setBoolean(10, entry.getValue().getTranslatingSign());
-						    	newActiveTranslator.setBoolean(11, entry.getValue().getTranslatingItem());
-						    	newActiveTranslator.setBoolean(12, entry.getValue().getTranslatingEntity());
-						    	newActiveTranslator.executeUpdate();
-						    	newActiveTranslator.close();
-					    	} catch (SQLException e) {
-								e.printStackTrace();
-								return;
-							}
-					    	CommonDefinitions.sendDebugMessage("(SQL) Created/updated unsaved user data config of " + entry.getKey() + ".");
-					    	entry.getValue().setHasBeenSaved(true);
-					    }
-					});
-					/* Delete any old ActiveTranslators */
-					ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM activeTranslators");
-					while (rs.next()) {
-						if (main.getActiveTranslator(rs.getString("playerUUID")).getUUID().equals("")) {
-							String uuid = rs.getString("playerUUID");
-							PreparedStatement deleteOldItem = sqlConnection.prepareStatement("DELETE FROM activeTranslators WHERE playerUUID = ?");
-							deleteOldItem.setString(1, uuid);
-							deleteOldItem.executeUpdate();
-							deleteOldItem.close();
-							CommonDefinitions.sendDebugMessage("(SQL) Deleted user data config of " + uuid + ".");
-						}
-					}
-					
-					/* Sync PlayerRecord data to corresponding table */
-                    main.getPlayerRecords().entrySet().forEach((entry) -> {
-                    	CommonDefinitions.sendDebugMessage("(SQL) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
-                        if (!entry.getValue().getHasBeenSaved()) {
-                        	try {
-                        		PreparedStatement newPlayerRecord = sqlConnection.prepareStatement("REPLACE playerRecords"
-                        				+ " (creationDate,playerUUID,attemptedTranslations,successfulTranslations,lastTranslationTime) VALUES (?,?,?,?,?)");
-                        		newPlayerRecord.setString(1, Instant.now().toString());
-                        		newPlayerRecord.setString(2, entry.getValue().getUUID());
-                        		newPlayerRecord.setInt(3, entry.getValue().getAttemptedTranslations());
-                        		newPlayerRecord.setInt(4, entry.getValue().getSuccessfulTranslations());
-                        		newPlayerRecord.setString(5, entry.getValue().getLastTranslationTime());
-                        		newPlayerRecord.executeUpdate();
-                        		newPlayerRecord.close();
-                        	} catch (SQLException e) {
-                        		e.printStackTrace();
-                        		return;
-                        	}
-                        	CommonDefinitions.sendDebugMessage("(SQL) Created/updated unsaved user record of " + entry.getKey() + ".");
-                        	entry.getValue().setHasBeenSaved(true);
-					    }
-					});
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
-				return;
-			}
-			
-			/* Last resort, sync activeTranslators to disk */
-			// Save all new activeTranslators
-			main.getActiveTranslators().entrySet().forEach((entry) -> {
-				CommonDefinitions.sendDebugMessage("(YAML) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
-				if (!entry.getValue().getHasBeenSaved()) {
-					CommonDefinitions.sendDebugMessage("(YAML) Created/updated unsaved user data config of " + entry.getKey() + ".");
-					entry.getValue().setHasBeenSaved(true);
-					createUserDataConfig(entry.getValue());
-				}
-			});
-			// Delete any old activeTranslators
-			File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
-			for (String eaName : userSettingsDir.list()) {
-				File currFile = new File(userSettingsDir, eaName);
-				if (main.getActiveTranslator(
-						currFile.getName().substring(0, currFile.getName().indexOf("."))).getUUID().equals("")) {
-					CommonDefinitions.sendDebugMessage("(YAML) Deleted user data config of "
-							+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + ".");
-					currFile.delete();
-				}
-			}
-
-			/* Sync playerRecords to disk */
-			main.getPlayerRecords().entrySet().forEach((entry) -> {
-				CommonDefinitions.sendDebugMessage("(YAML) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
-				if (!entry.getValue().getHasBeenSaved()) {
-					CommonDefinitions.sendDebugMessage("(YAML) Created/updated unsaved user record of " + entry.getKey() + ".");
-					entry.getValue().setHasBeenSaved(true);
-					createStatsConfig(entry.getValue());
-				}
-			});
-		}
 	}
 
 	/* Getters */

@@ -327,8 +327,6 @@ Messages:
   wwcTimeoutExceptionConsole: Играчот %Имав нивните најнови барање тајмаут. Оваа грешка
     не е фатална, но WorldwideChat треба да се превчита ако продолжи да се случува.
   wwcGUIPageNumber: 'Број на страница: %i'
-  wwcConfigSQLFail: Не успеа да се поврзе со SQL.
-  wwcConfigSQLSuccess: Успешно поврзан со SQL!
   wwcConfigYAMLFallback: Паѓа назад во YAML...
   wwcConfigGUIToggleSQLButton: Вклучи SQL
   wwcConfigConversationToggleSQLSuccess: SQL успешно се преточи. Вчитајте повторно
@@ -406,3 +404,41 @@ Messages:
     URL за Libre, или напишете 0 за да се вратите назад.
   libreHttpUnknown: 'Непозната http грешка: %i'
   wwcConfigGUILibreTranslateURLButton: Промена Слободен Преведете URL
+  wwcConfigConnectionFail: Не успеав да се поврзам со %i.
+  wwcConfigGUIMongoSettings: Конфигурација на MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Успешно го смени името на базата
+    на податоци MongoDB.
+  wwcConfigGUIMongoHostnameButton: Променете го името на домаќинот MongoDB
+  wwcConfigConversationMongoPasswordInput: Моменталната лозинка е %i. Напишете нешто
+    друго освен 0 за да поставите нова лозинка, или напишете 0 за да се вратите назад.
+  wwcConfigConversationMongoPortInput: Тековната порта е %i. Напишете нешто друго
+    освен 0 за да поставите нова порта, или напишете 0 за да се вратите назад.
+  wwcConfigConversationToggleMongoSuccess: MongoDB успешно се преврте. Вчитајте повторно
+    за промената да стапи на сила.
+  wwcConfigConversationMongoHostnameInput: Тековното име на домаќинот е %i. Напишете
+    нешто друго освен 0 за да поставите ново име на хост, или напишете 0 за да се
+    вратите назад.
+  wwcConfigConversationMongoHostnameSuccess: Успешно го смени името на домаќинот MongoDB.
+  wwcConfigGUIMongoMenuButton: Променете ги поставките MongoDB
+  wwcConfigGUIToggleMongoButton: Вклучи МонгоДБ
+  wwcConfigConversationMongoDatabaseNameInput: Сегашното име на базата е %i. Напишете
+    нешто друго освен 0 за да поставите ново име на база на податоци, или напишете
+    0 за да се вратите назад.
+  wwcConfigConversationMongoOptionalArgsInput: 'Тековните опционални MongoDB аргументи
+    се: %i. Тип аргументи одделени со запирка (key=value, key2=value2), или напишете
+    clear за да ги избришете тековните args, или напишете 0 за да се вратите назад.'
+  wwcConfigGUIMongoDatabaseNameButton: Промена на базата на податоци MongoD
+  wwcConfigConversationMongoUsernameInput: Сегашното корисничко име е %i. Напишете
+    нешто друго освен 0 за да поставите ново корисничко име, или напишете 0 за да
+    се вратите назад.
+  wwcConfigGUIMongoOptionalArgsButton: Променете ги опционалните аргументи на MongoDB
+  wwcConfigConversationMongoUsernameSuccess: Успешно го смени корисничкото име MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Успешно ја смени лозинката MongoDB.
+  wwcConfigConversationMongoPortSuccess: Успешно ја смени портата MongoDB.
+  wwcConfigGUIMongoUsernameButton: Променете го корисничкото име на MongoDB
+  wwcConfigGUIMongoPasswordButton: Променете ја лозинката MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Успешно ги смени опционалните MongoDB
+    аргументи.
+  wwcConfigConversationMongoOptionalArgsCleared: Факултативните аргументи успешно
+    се расчистуваат.
+  wwcConfigGUIMongoPortButton: Промена на пристаништето MongoDB

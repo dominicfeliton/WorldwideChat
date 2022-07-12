@@ -332,8 +332,6 @@ Messages:
     முடிந்தது. இந்த பிழை அபாயகரமானது அல்ல, ஆனால் அது தொடர்ந்து நடந்தால் WorldwideChat
     மீண்டும் ஏற்றப்பட வேண்டும்.
   wwcGUIPageNumber: 'பக்க எண்: %i'
-  wwcConfigSQLFail: SQL உடன் இணைக்கத் தவறிவிட்டது.
-  wwcConfigSQLSuccess: வெற்றிகரமாக SQL இணைக்கப்பட்டுள்ளது!
   wwcConfigYAMLFallback: YAML க்கு மீண்டும் வீழ்ச்சி...
   wwcConfigGUIToggleSQLButton: SQL ஐ மாற்று
   wwcConfigConversationToggleSQLSuccess: SQL வெற்றிகரமாக மாறுகிறது. மாற்றம் நடைமுறைக்கு
@@ -412,3 +410,42 @@ Messages:
     செய்து, அல்லது திரும்பி செல்ல 0 தட்டச்சு செய்யவும்.
   libreHttpUnknown: 'தெரியாத http பிழை: %i'
   wwcConfigGUILibreTranslateURLButton: இலவச மொழிபெயர்க்க URL ஐ மாற்றவும்
+  wwcConfigConnectionFail: '%i உடன் இணைக்கத் தவறியது.'
+  wwcConfigGUIMongoSettings: MongoDB கட்டமைப்பு
+  wwcConfigConversationMongoDatabaseNameSuccess: MongoDB தரவுத்தள பெயரை வெற்றிகரமாக
+    மாற்றியது.
+  wwcConfigGUIMongoHostnameButton: MongoDB புரவலன் பெயரை மாற்றவும்
+  wwcConfigConversationMongoPasswordInput: தற்போதைய கடவுச்சொல் %i ஆகும். புதிய கடவுச்சொல்லை
+    அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும் அல்லது திரும்பி செல்ல 0 என்று தட்டச்சு
+    செய்யவும்.
+  wwcConfigConversationMongoPortInput: தற்போதைய துறைமுகம் %i ஆகும். ஒரு புதிய துறைமுகத்தை
+    அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும் அல்லது திரும்பி செல்ல 0 தட்டச்சு
+    செய்யவும்.
+  wwcConfigConversationToggleMongoSuccess: MongoDB வெற்றிகரமாக மாற்றி. மாற்றம் நடைமுறைக்கு
+    ஏற்றவும்.
+  wwcConfigConversationMongoHostnameInput: தற்போதைய புரவலன் பெயர் %i ஆகும். புதிய
+    ஹோஸ்ட்பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும் அல்லது திரும்பி செல்ல
+    0 என்று தட்டச்சு செய்யவும்.
+  wwcConfigConversationMongoHostnameSuccess: MongoDB புரவலன் பெயரை வெற்றிகரமாக மாற்றியது.
+  wwcConfigGUIMongoMenuButton: MongoDB அமைப்புகளை மாற்றவும்
+  wwcConfigGUIToggleMongoButton: மாற்று மாங்கோடிபி
+  wwcConfigConversationMongoDatabaseNameInput: தற்போதைய தரவுத்தள பெயர் %i ஆகும். புதிய
+    தரவுத்தளப் பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும் அல்லது திரும்பி
+    செல்ல 0 தட்டச்சு செய்யவும்.
+  wwcConfigConversationMongoOptionalArgsInput: 'தற்போதைய விருப்ப MongoDB வாதங்கள்:
+    %i. ஒரு கமா (விசை = மதிப்பு, key2=value2) பிரிக்கப்பட்ட வாதங்கள் தட்டச்சு, அல்லது
+    தற்போதைய வளைவுகள் துடைக்க தெளிவான தட்டச்சு, அல்லது திரும்பி செல்ல 0 வகை.'
+  wwcConfigGUIMongoDatabaseNameButton: மாற்ற MongoDB தரவுத்தளம்
+  wwcConfigConversationMongoUsernameInput: தற்போதைய பயனர்பெயர் %i ஆகும். ஒரு புதிய
+    பயனர்பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும் அல்லது திரும்பி செல்ல
+    0 தட்டச்சு செய்யவும்.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB விருப்ப வாதங்கள் மாற்ற
+  wwcConfigConversationMongoUsernameSuccess: MongoDB பயனர்பெயரை வெற்றிகரமாக மாற்றியது.
+  wwcConfigConversationMongoPasswordSuccess: MongoDB கடவுச்சொல்லை வெற்றிகரமாக மாற்றியது.
+  wwcConfigConversationMongoPortSuccess: MongoDB துறைமுகத்தை வெற்றிகரமாக மாற்றியது.
+  wwcConfigGUIMongoUsernameButton: MongoDB பயனர் பெயரை மாற்றவும்
+  wwcConfigGUIMongoPasswordButton: MongoDB கடவுச்சொல்லை
+  wwcConfigConversationMongoOptionalArgsSuccess: விருப்ப MongoDB வாதங்கள் வெற்றிகரமாக
+    மாற்றப்பட்டது.
+  wwcConfigConversationMongoOptionalArgsCleared: விருப்ப வாதங்கள் வெற்றிகரமாக அழிக்கப்படும்.
+  wwcConfigGUIMongoPortButton: மொங்கோடிபி துறைமுகத்தை மாற்றவும்

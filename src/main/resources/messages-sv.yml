@@ -324,8 +324,6 @@ Messages:
     här felet är inte dödligt, men WorldwideChat bör laddas om om det fortsätter att
     hända.
   wwcGUIPageNumber: 'Sidnummer: %i'
-  wwcConfigSQLFail: Det gick inte att ansluta till SQL.
-  wwcConfigSQLSuccess: Ansluten till SQL!
   wwcConfigYAMLFallback: Att falla tillbaka till YAML...
   wwcConfigGUIToggleSQLButton: Växla SQL
   wwcConfigConversationToggleSQLSuccess: SQL växlas med lyckat resultat. Ladda om
@@ -401,3 +399,37 @@ Messages:
     för Libre, eller skriv 0 för att gå tillbaka.
   libreHttpUnknown: 'Okänt http-fel: %i'
   wwcConfigGUILibreTranslateURLButton: Change Libre Översätt URL
+  wwcConfigConnectionFail: Det gick inte att ansluta till %i.
+  wwcConfigGUIMongoSettings: MongoDB-konfiguration
+  wwcConfigConversationMongoDatabaseNameSuccess: Ändrade MongoDB-databasnamnet.
+  wwcConfigGUIMongoHostnameButton: Ändra MongoDB värdnamn
+  wwcConfigConversationMongoPasswordInput: Det aktuella lösenordet är %i. Skriv något
+    annat än 0 för att ange ett nytt lösenord, eller skriv 0 för att gå tillbaka.
+  wwcConfigConversationMongoPortInput: Den aktuella porten är %i. Skriv något annat
+    än 0 för att ställa in en ny port, eller skriv 0 för att gå tillbaka.
+  wwcConfigConversationToggleMongoSuccess: MongoDB växlade framgångsrikt. Ladda om
+    för att ändringen ska träda i kraft.
+  wwcConfigConversationMongoHostnameInput: Det aktuella värddatornamnet är %i. Skriv
+    något annat än 0 för att ange ett nytt värddatornamn, eller skriv 0 för att gå
+    tillbaka.
+  wwcConfigConversationMongoHostnameSuccess: Ändrade MongoDB-värdnamnet.
+  wwcConfigGUIMongoMenuButton: Ändra MongoDB-inställningar
+  wwcConfigGUIToggleMongoButton: Växla MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Det aktuella databasnamnet är %i. Skriv
+    något annat än 0 för att ange ett nytt databasnamn, eller skriv 0 för att gå tillbaka.
+  wwcConfigConversationMongoOptionalArgsInput: 'De nuvarande valfria MongoDB-argumenten
+    är: %i. Skriv argument åtskilda av ett komma (key=value, key2=value2), eller skriv
+    clear för att radera de aktuella argarna, eller skriv 0 för att gå tillbaka.'
+  wwcConfigGUIMongoDatabaseNameButton: Ändra MongoDB-databas
+  wwcConfigConversationMongoUsernameInput: Det nuvarande användarnamnet är %i. Skriv
+    något annat än 0 för att ange ett nytt användarnamn, eller skriv 0 för att gå
+    tillbaka.
+  wwcConfigGUIMongoOptionalArgsButton: Ändra MongoDB Valfria argument
+  wwcConfigConversationMongoUsernameSuccess: Ändrade MongoDB-användarnamnet.
+  wwcConfigConversationMongoPasswordSuccess: Ändrade MongoDB-lösenordet.
+  wwcConfigConversationMongoPortSuccess: Ändrade MongoDB-porten framgångsrikt.
+  wwcConfigGUIMongoUsernameButton: Ändra MongoDB Användarnamn
+  wwcConfigGUIMongoPasswordButton: Ändra MongoDB-lösenord
+  wwcConfigConversationMongoOptionalArgsSuccess: Ändrade de valfria MongoDB-argumenten.
+  wwcConfigConversationMongoOptionalArgsCleared: Valfria argument rensas framgångsrikt.
+  wwcConfigGUIMongoPortButton: Ändra MongoDB Port

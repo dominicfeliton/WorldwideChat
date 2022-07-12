@@ -321,8 +321,6 @@ Messages:
     Denne fejl er ikke dødelig, men WorldwideChat skal genindlæses, hvis det fortsætter
     med at ske.
   wwcGUIPageNumber: 'Sidetal: %i'
-  wwcConfigSQLFail: Det lykkedes ikke at oprette forbindelse til SQL.
-  wwcConfigSQLSuccess: Succesfuld tilsluttet SQL!
   wwcConfigYAMLFallback: Falder tilbage til YAML...
   wwcConfigGUIToggleSQLButton: Slå SQL til
   wwcConfigConversationToggleSQLSuccess: SQL skikkede med succes. Genindlæs for ændringen
@@ -394,3 +392,36 @@ Messages:
     URL for Libre, eller skriv 0 for at gå tilbage.
   libreHttpUnknown: 'Ukendt http-fejl: %i'
   wwcConfigGUILibreTranslateURLButton: Skift Libre Oversæt URL
+  wwcConfigConnectionFail: Der kunne ikke oprettes forbindelse til %i.
+  wwcConfigGUIMongoSettings: MongoDB-konfiguration
+  wwcConfigConversationMongoDatabaseNameSuccess: Succesfuldt ændret MongoDB-databasenavnet.
+  wwcConfigGUIMongoHostnameButton: Skift MongoDB værtsnavn
+  wwcConfigConversationMongoPasswordInput: Den aktuelle adgangskode er %i. Skriv alt
+    andet end 0 for at indstille en ny adgangskode, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationMongoPortInput: Den aktuelle port er %i. Skriv alt andet end
+    0 for at indstille en ny port, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationToggleMongoSuccess: MongoDB skiftes med succes. Genindlæs for
+    at ændringen kan træde i kraft.
+  wwcConfigConversationMongoHostnameInput: Det aktuelle værtsnavn er %i. Skriv alt
+    andet end 0 for at indstille et nyt værtsnavn, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationMongoHostnameSuccess: Succesfuldt ændret MongoDB værtsnavn.
+  wwcConfigGUIMongoMenuButton: Skift MongoDB-indstillinger
+  wwcConfigGUIToggleMongoButton: Skift MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Det nuværende databasenavn er %i. Skriv
+    alt andet end 0 for at indstille et nyt databasenavn, eller skriv 0 for at gå
+    tilbage.
+  wwcConfigConversationMongoOptionalArgsInput: 'De nuværende valgfrie MongoDB-argumenter
+    er: %i. Skriv argumenter adskilt af et komma (key=value, key2=value2), eller skriv
+    clear for at slette de nuværende args, eller skriv 0 for at gå tilbage.'
+  wwcConfigGUIMongoDatabaseNameButton: Skift MongoDB-database
+  wwcConfigConversationMongoUsernameInput: Det nuværende brugernavn er %i. Skriv alt
+    andet end 0 for at indstille et nyt brugernavn, eller skriv 0 for at gå tilbage.
+  wwcConfigGUIMongoOptionalArgsButton: Skift MongoDB Valgfri argumenter
+  wwcConfigConversationMongoUsernameSuccess: Succesfuldt ændret MongoDB brugernavn.
+  wwcConfigConversationMongoPasswordSuccess: Ændret MongoDB-adgangskoden med succes.
+  wwcConfigConversationMongoPortSuccess: Ændret MongoDB-porten.
+  wwcConfigGUIMongoUsernameButton: Skift MongoDB Brugernavn
+  wwcConfigGUIMongoPasswordButton: Skift MongoDB-adgangskode
+  wwcConfigConversationMongoOptionalArgsSuccess: Ændret de valgfri MongoDB-argumenter.
+  wwcConfigConversationMongoOptionalArgsCleared: Valgfrie argumenter ryddet med succes.
+  wwcConfigGUIMongoPortButton: Skift MongoDB-port

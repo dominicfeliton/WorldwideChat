@@ -13,12 +13,14 @@ import com.expl0itz.worldwidechat.conversations.configuration.AmazonSettingsConv
 import com.expl0itz.worldwidechat.conversations.configuration.GeneralSettingsConvos;
 import com.expl0itz.worldwidechat.conversations.configuration.GoogleSettingsConvos;
 import com.expl0itz.worldwidechat.conversations.configuration.LibreSettingsConvos;
+import com.expl0itz.worldwidechat.conversations.configuration.MongoSettingsConvos;
 import com.expl0itz.worldwidechat.conversations.configuration.SQLSettingsConvos;
 import com.expl0itz.worldwidechat.conversations.configuration.TranslatorSettingsConvos;
 import com.expl0itz.worldwidechat.conversations.configuration.WatsonSettingsConvos;
 import com.expl0itz.worldwidechat.inventory.WWCInventoryManager;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
-import com.expl0itz.worldwidechat.util.SQLUtils;
+import com.expl0itz.worldwidechat.util.storage.MongoDBUtils;
+import com.expl0itz.worldwidechat.util.storage.SQLUtils;
 
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
@@ -29,7 +31,7 @@ public class MenuGui implements InventoryProvider {
 	// Thank you, H***** for the help with this class!!
 	
 	public static enum CONFIG_GUI_TAGS {
-		GEN_SET, STORAGE_SET, SQL_SET, CHAT_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET;
+		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, CHAT_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET;
 		
 		public SmartInventory smartInv;
 	}
@@ -44,6 +46,9 @@ public class MenuGui implements InventoryProvider {
 		
 		MenuGui sqlSet = new MenuGui();
 		CONFIG_GUI_TAGS.SQL_SET.smartInv = sqlSet.genSmartInv("sqlSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUISQLSettings");
+		
+		MenuGui mongoSet = new MenuGui();
+		CONFIG_GUI_TAGS.MONGO_SET.smartInv = mongoSet.genSmartInv("mongoSettingsMenu", 3, 9, ChatColor.BLUE, "wwcConfigGUIMongoSettings");
 		
 		MenuGui chatSet = new MenuGui();
 		CONFIG_GUI_TAGS.CHAT_SET.smartInv = chatSet.genSmartInv("chatSettingsMenu", "wwcConfigGUIChatSettings");
@@ -85,6 +90,7 @@ public class MenuGui implements InventoryProvider {
 		// Storage
 		storageSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
 		storageSet.add(new SubMenuElement(1, 1, SQLUtils.isConnected(), "wwcConfigGUISQLMenuButton", CONFIG_GUI_TAGS.SQL_SET.smartInv));
+		storageSet.add(new SubMenuElement(1, 2, MongoDBUtils.isConnected(), "wwcConfigGUIMongoMenuButton", CONFIG_GUI_TAGS.MONGO_SET.smartInv));
 		storageSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.GEN_SET.smartInv}));
 		storageSet.add(new CommonElement(2, 4, "Quit"));
 		storageSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
@@ -92,7 +98,7 @@ public class MenuGui implements InventoryProvider {
 		
 		// SQL
 		sqlSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
-		sqlSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleSQLButton", "wwcConfigConversationToggleSQLSuccess", "Storage.useSQL"));
+		sqlSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleSQLButton", "wwcConfigConversationToggleSQLSuccess", "Storage.useSQL", new String[] {"Storage.useMongoDB"}));
 		sqlSet.add(new ConvoElement(1, 2, "wwcConfigGUISQLHostnameButton", XMaterial.NAME_TAG,
 				new SQLSettingsConvos.Hostname()));
 		sqlSet.add(new ConvoElement(1, 3, "wwcConfigGUISQLPortButton", XMaterial.NAME_TAG,
@@ -109,6 +115,25 @@ public class MenuGui implements InventoryProvider {
 		sqlSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		sqlSet.add(new CommonElement(3, 4, "Quit"));
 		sqlSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.STORAGE_SET.ordinal()+1 + ""}));
+		
+		// MongoDB
+		mongoSet.add(new BorderElement(XMaterial.ORANGE_STAINED_GLASS_PANE));
+		mongoSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleMongoButton", "wwcConfigConversationToggleMongoSuccess", "Storage.useMongoDB", new String[] {"Storage.useSQL"}));
+		mongoSet.add(new ConvoElement(1, 2, "wwcConfigGUIMongoHostnameButton", XMaterial.NAME_TAG,
+				new MongoSettingsConvos.Hostname()));
+		mongoSet.add(new ConvoElement(1, 3, "wwcConfigGUIMongoPortButton", XMaterial.NAME_TAG,
+				new MongoSettingsConvos.Port()));
+		mongoSet.add(new ConvoElement(1, 4, "wwcConfigGUIMongoDatabaseNameButton", XMaterial.NAME_TAG,
+				new MongoSettingsConvos.Database()));
+		mongoSet.add(new ConvoElement(1, 5, "wwcConfigGUIMongoUsernameButton", XMaterial.NAME_TAG,
+				new MongoSettingsConvos.Username()));
+		mongoSet.add(new ConvoElement(1, 6, "wwcConfigGUIMongoPasswordButton", XMaterial.NAME_TAG,
+				new MongoSettingsConvos.Password()));
+		mongoSet.add(new ConvoElement(1, 7, "wwcConfigGUIMongoOptionalArgsButton", XMaterial.NAME_TAG,
+				new MongoSettingsConvos.OptionalArgs()));
+		mongoSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
+		mongoSet.add(new CommonElement(2, 4, "Quit"));
+		mongoSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.STORAGE_SET.ordinal()+1 + ""}));
 		
 		// Chat 
 		chatSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
@@ -269,7 +294,6 @@ public class MenuGui implements InventoryProvider {
 
 		@Override
 		public void rasterize(Player player, InventoryContents contents) {
-			//DEBUG
 			WWCInventoryManager.setCommonButton(x, y, player, contents, buttonName, args);
 		}
 		

@@ -49,7 +49,7 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 			
 			/* Is active translator button */
 			ItemStack isActiveTranslator;
-			if (!main.getActiveTranslator(targetPlayerUUID).getUUID().equals("")) {
+			if (main.isActiveTranslator(targetPlayerUUID)) {
 				isActiveTranslator = XMaterial.GREEN_CONCRETE.parseItem();
 				ItemMeta isActiveTranslatorMeta = isActiveTranslator.getItemMeta();
 				isActiveTranslatorMeta.setDisplayName(CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713"}));

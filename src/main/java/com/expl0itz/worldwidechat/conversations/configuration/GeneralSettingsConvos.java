@@ -49,8 +49,10 @@ public class GeneralSettingsConvos {
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			if (!CommonDefinitions.getSupportedTranslatorLang(input).getLangCode().equals("") || input.equals("0")) {
-				return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationlangSuccess", "General.pluginLang", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
+			for (String eaLangCode : CommonDefinitions.supportedPluginLangCodes) {
+				if (eaLangCode.equalsIgnoreCase(input) || input.equals("0")) {
+					return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationLangSuccess", "General.pluginLang", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
+				}
 			}
 			final TextComponent badChange = Component.text()
 					.append(Component.text()

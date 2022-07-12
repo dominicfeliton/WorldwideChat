@@ -292,8 +292,6 @@ Messages:
   wwcTimeoutExceptionConsole: كان لدى اللاعب %i أحدث مهلة طلب. هذا الخطأ ليس قاتلاً،
     ولكن يجب إعادة تحميل WorldwideChat إذا استمر حدوثه.
   wwcGUIPageNumber: 'رقم الصفحة: %i'
-  wwcConfigSQLFail: فشل الاتصال بـ SQL.
-  wwcConfigSQLSuccess: تم الاتصال بنجاح بـ SQL!
   wwcConfigYAMLFallback: العودة إلى YAML...
   wwcConfigGUIToggleSQLButton: تبديل SQL
   wwcConfigConversationToggleSQLSuccess: تم تبديل SQL بنجاح. أعد التحميل حتى يصبح
@@ -365,3 +363,37 @@ Messages:
     لـ Libre، أو اكتب 0 للرجوع إليه.
   libreHttpUnknown: 'خطأ http غير معروف: %i'
   wwcConfigGUILibreTranslateURLButton: تغيير عنوان URL لترجمة Libre
+  wwcConfigConnectionFail: فشل الاتصال بـ %i.
+  wwcConfigGUIMongoSettings: تكوين مونغودب
+  wwcConfigConversationMongoDatabaseNameSuccess: تم تغيير اسم قاعدة بيانات MongoDB
+    بنجاح.
+  wwcConfigGUIMongoHostnameButton: تغيير اسم مضيف MongoDB
+  wwcConfigConversationMongoPasswordInput: كلمة المرور الحالية هي %i. اكتب أي شيء
+    آخر غير 0 لتعيين كلمة مرور جديدة، أو اكتب 0 للرجوع.
+  wwcConfigConversationMongoPortInput: المنفذ الحالي هو %i. اكتب أي شيء آخر غير 0
+    لتعيين منفذ جديد، أو اكتب 0 للرجوع إليه.
+  wwcConfigConversationToggleMongoSuccess: تم تبديل MongoDB بنجاح. أعد التحميل حتى
+    يصبح التغيير ساري المفعول.
+  wwcConfigConversationMongoHostnameInput: اسم المضيف الحالي هو %i. اكتب أي شيء آخر
+    غير 0 لتعيين اسم مضيف جديد، أو اكتب 0 للرجوع إليه.
+  wwcConfigConversationMongoHostnameSuccess: تم تغيير اسم مضيف MongoDB بنجاح.
+  wwcConfigGUIMongoMenuButton: تغيير إعدادات MongoDB
+  wwcConfigGUIToggleMongoButton: تبديل مونغودب
+  wwcConfigConversationMongoDatabaseNameInput: اسم قاعدة البيانات الحالي هو %i. اكتب
+    أي شيء آخر غير 0 لتعيين اسم قاعدة بيانات جديد، أو اكتب 0 للرجوع إليه.
+  wwcConfigConversationMongoOptionalArgsInput: 'وسيطات MongoDB الاختيارية الحالية
+    هي: %i. اكتب وسيطات مفصولة بفاصلة (key=value, key2=value2)، أو اكتب clear لمسح
+    الوسيطات الحالية، أو اكتب 0 للرجوع.'
+  wwcConfigGUIMongoDatabaseNameButton: تغيير قاعدة بيانات MongoDB
+  wwcConfigConversationMongoUsernameInput: اسم المستخدم الحالي هو %i. اكتب أي شيء
+    آخر غير 0 لتعيين اسم مستخدم جديد، أو اكتب 0 للرجوع إليه.
+  wwcConfigGUIMongoOptionalArgsButton: تغيير الوسائط الاختيارية MongoDB
+  wwcConfigConversationMongoUsernameSuccess: تم تغيير اسم مستخدم MongoDB بنجاح.
+  wwcConfigConversationMongoPasswordSuccess: تم تغيير كلمة مرور MongoDB بنجاح.
+  wwcConfigConversationMongoPortSuccess: تم تغيير منفذ MongoDB بنجاح.
+  wwcConfigGUIMongoUsernameButton: تغيير اسم مستخدم MongoDB
+  wwcConfigGUIMongoPasswordButton: تغيير كلمة مرور MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: تم تغيير وسيطات MongoDB الاختيارية
+    بنجاح.
+  wwcConfigConversationMongoOptionalArgsCleared: تم مسح الوسيطات الاختيارية بنجاح.
+  wwcConfigGUIMongoPortButton: تغيير منفذ MongoDB

@@ -317,8 +317,6 @@ Messages:
     Ova greška nije fatalna, ali WorldwideChat treba ponovo učitati ako se i dalje
     događa.
   wwcGUIPageNumber: 'Broj stranice: %i'
-  wwcConfigSQLFail: Povezivanje sa SQL nije uspjelo.
-  wwcConfigSQLSuccess: Uspješno povezan sa SQL!
   wwcConfigYAMLFallback: Padajući natrag u YAML...
   wwcConfigGUIToggleSQLButton: Prebaci SQL
   wwcConfigConversationToggleSQLSuccess: SQL uspješno je prevučen. Ponovno učitajte
@@ -395,3 +393,40 @@ Messages:
     ili upišite 0 da biste se vratili.
   libreHttpUnknown: 'Nepoznata http greška: %i'
   wwcConfigGUILibreTranslateURLButton: Promijeni URL za besplatno prevođenje
+  wwcConfigConnectionFail: Povezivanje sa %i nije uspjelo.
+  wwcConfigGUIMongoSettings: MongoDB konfiguracija
+  wwcConfigConversationMongoDatabaseNameSuccess: Uspješno promijenio naziv baze podataka
+    MongoDB.
+  wwcConfigGUIMongoHostnameButton: Promijenite ime hosta MongoDB
+  wwcConfigConversationMongoPasswordInput: Trenutna lozinka je %i. Upišite bilo što
+    drugo osim 0 da biste postavili novu lozinku ili upišite 0 da biste se vratili.
+  wwcConfigConversationMongoPortInput: Trenutni port je %i. Upišite bilo šta drugo
+    osim 0 da biste postavili novi port ili upišite 0 da biste se vratili.
+  wwcConfigConversationToggleMongoSuccess: MongoDB se uspješno prebacio. Ponovno učitajte
+    da bi promjena stupila na snagu.
+  wwcConfigConversationMongoHostnameInput: Trenutno ime hosta je %i. Upišite bilo
+    što drugo osim 0 da biste postavili novo ime hosta ili upišite 0 da biste se vratili.
+  wwcConfigConversationMongoHostnameSuccess: Uspješno promijenio ime hosta MongoDB.
+  wwcConfigGUIMongoMenuButton: Promjena MongoDB postavki
+  wwcConfigGUIToggleMongoButton: Prebaci MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Trenutni naziv baze podataka je %i.
+    Upišite bilo što drugo osim 0 da biste postavili novi naziv baze podataka ili
+    upišite 0 da biste se vratili.
+  wwcConfigConversationMongoOptionalArgsInput: 'Trenutni opcionalni MongoDB argumenti
+    su: %i. Upišite argumente odvojene zarezom (key=value, key2=value2), ili upišite
+    jasno da biste izbrisali trenutne argove ili upišite 0 da biste se vratili.'
+  wwcConfigGUIMongoDatabaseNameButton: Promjena MongoDB baze podataka
+  wwcConfigConversationMongoUsernameInput: Trenutno korisničko ime je %i. Upišite
+    bilo što drugo osim 0 da biste postavili novo korisničko ime ili upišite 0 da
+    biste se vratili.
+  wwcConfigGUIMongoOptionalArgsButton: Promijenite MongoDB izborne argumente
+  wwcConfigConversationMongoUsernameSuccess: Uspješno promijenio MongoDB korisničko
+    ime.
+  wwcConfigConversationMongoPasswordSuccess: Uspješno promijenio MongoDB lozinku.
+  wwcConfigConversationMongoPortSuccess: Uspješno je promijenio MongoDB port.
+  wwcConfigGUIMongoUsernameButton: Promijeni MongoDB korisničko ime
+  wwcConfigGUIMongoPasswordButton: Promijeni MongoDB lozinku
+  wwcConfigConversationMongoOptionalArgsSuccess: Uspješno je promijenio opcionalne
+    MongoDB argumente.
+  wwcConfigConversationMongoOptionalArgsCleared: Izborni argumenti uspješno izbrisana.
+  wwcConfigGUIMongoPortButton: Promijeni MongoDB Port

@@ -324,8 +324,6 @@ Messages:
     Táto chyba nie je fatálna, ale WorldwideChat by sa mal znovu načítať, ak sa to
     stane aj naďalej.
   wwcGUIPageNumber: 'Číslo stránky: %i'
-  wwcConfigSQLFail: Nepodarilo sa pripojiť k SQL.
-  wwcConfigSQLSuccess: Úspešne pripojený k SQL!
   wwcConfigYAMLFallback: Padajúc späť do YAML...
   wwcConfigGUIToggleSQLButton: Prepnúť SQL
   wwcConfigConversationToggleSQLSuccess: SQL úspešne prepínala. Znovu načítať, aby
@@ -401,3 +399,40 @@ Messages:
     pre Libre alebo zadajte 0, aby ste sa vrátili späť.
   libreHttpUnknown: 'Neznáma chyba http: %i'
   wwcConfigGUILibreTranslateURLButton: Zmeniť URL prekladu zadarmo
+  wwcConfigConnectionFail: Nepodarilo sa pripojiť k %i.
+  wwcConfigGUIMongoSettings: Konfigurácia MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Úspešne zmenil názov databázy MongoDB.
+  wwcConfigGUIMongoHostnameButton: Zmeniť názov hostiteľa MongoDB
+  wwcConfigConversationMongoPasswordInput: Aktuálne heslo je %i. Zadajte niečo iné
+    ako 0, ak chcete nastaviť nové heslo, alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigConversationMongoPortInput: Aktuálny port je %i. Zadajte niečo iné ako
+    0, ak chcete nastaviť nový port, alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigConversationToggleMongoSuccess: MongoDB úspešne prepínal. Znovu načítať,
+    aby sa zmena prejavila.
+  wwcConfigConversationMongoHostnameInput: Aktuálny názov hostiteľa je %i. Zadajte
+    čokoľvek iné ako 0, ak chcete nastaviť nový názov hostiteľa, alebo zadajte 0,
+    aby ste sa vrátili späť.
+  wwcConfigConversationMongoHostnameSuccess: Úspešne zmenil názov hostiteľa MongoDB.
+  wwcConfigGUIMongoMenuButton: Zmena nastavení MongoDB
+  wwcConfigGUIToggleMongoButton: Prepnúť MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Aktuálny názov databázy je %i. Zadajte
+    čokoľvek iné ako 0, ak chcete nastaviť nový názov databázy, alebo zadajte 0, aby
+    ste sa vrátili späť.
+  wwcConfigConversationMongoOptionalArgsInput: 'Aktuálne voliteľné argumenty MongoDB
+    sú: %i. Zadajte argumenty oddelené čiarkou (key=value, key2=value2) alebo zadajte
+    clear na vymazanie aktuálnych argov alebo zadajte 0, aby ste sa vrátili späť.'
+  wwcConfigGUIMongoDatabaseNameButton: Zmena databázy MongoDB
+  wwcConfigConversationMongoUsernameInput: Aktuálne používateľské meno je %i. Zadajte
+    čokoľvek iné ako 0, ak chcete nastaviť nové používateľské meno, alebo zadajte
+    0 pre návrat späť.
+  wwcConfigGUIMongoOptionalArgsButton: Zmena voliteľných argumentov MongoDB
+  wwcConfigConversationMongoUsernameSuccess: Úspešne zmenil užívateľské meno MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Úspešne zmenilo heslo MongoDB.
+  wwcConfigConversationMongoPortSuccess: Úspešne zmenil port MongoDB.
+  wwcConfigGUIMongoUsernameButton: Zmeniť užívateľské meno MongoDB
+  wwcConfigGUIMongoPasswordButton: Zmena hesla MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Úspešne zmenili voliteľné argumenty
+    MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Voliteľné argumenty boli úspešne
+    vymazané.
+  wwcConfigGUIMongoPortButton: Zmeniť port MongoDB

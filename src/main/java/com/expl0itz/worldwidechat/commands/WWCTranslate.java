@@ -78,7 +78,8 @@ public class WWCTranslate extends BasicCommand {
 		/* Existing translator checks */
 		if (!isGlobal) {
 			/* User wants to exit their own translation session. */
-			if (!isConsoleSender && args.length > 0 && (Bukkit.getServer().getPlayerExact(args[0]) == null || (args[0] instanceof String && args[0].equalsIgnoreCase(sender.getName()))) && !main.getActiveTranslator(((Player)sender).getUniqueId().toString()).getUUID().equals("")) {
+			if (!isConsoleSender && args.length > 0 && (Bukkit.getServer().getPlayerExact(args[0]) == null 
+					|| (args[0] instanceof String && args[0].equalsIgnoreCase(sender.getName()))) && main.isActiveTranslator(((Player)sender))) {
 				ActiveTranslator currTarget = main.getActiveTranslator(((Player)sender).getUniqueId().toString());
 				main.removeActiveTranslator(currTarget);
 				final TextComponent chatTranslationStopped = Component.text()
@@ -91,7 +92,7 @@ public class WWCTranslate extends BasicCommand {
 					return true;
 				}
 			/* User wants to delete another player's translation session. */
-			} else if (args.length > 0 && Bukkit.getServer().getPlayerExact(args[0]) != null && !main.getActiveTranslator(Bukkit.getServer().getPlayerExact(args[0]).getUniqueId().toString()).getUUID().equals("")) {
+			} else if (args.length > 0 && Bukkit.getServer().getPlayerExact(args[0]) != null && main.isActiveTranslator(Bukkit.getServer().getPlayerExact(args[0]))) {
 				Player testPlayer = Bukkit.getServer().getPlayerExact(args[0]);
 				main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
 				final TextComponent chatTranslationStopped = Component.text()
@@ -110,7 +111,7 @@ public class WWCTranslate extends BasicCommand {
 					return true;
 				}
 			}
-		} else if (args.length > 0 && isGlobal && !main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")) {
+		} else if (args.length > 0 && isGlobal && main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")) {
 			main.removeActiveTranslator(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
 			final TextComponent chatTranslationStopped = Component.text()
 					.append(Component.text()
@@ -173,7 +174,7 @@ public class WWCTranslate extends BasicCommand {
 			return false;
 		}
 		/* Do not let users use None inputLang with Amazon Translate, remove this if we ever find a workaround for error */
-		if ((!inLang.equalsIgnoreCase("None") && CommonDefinitions.getSupportedTranslatorLang(inLang).getLangCode().equals("")) || (inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
+		if ((!inLang.equalsIgnoreCase("None") && !CommonDefinitions.isSupportedTranslatorLang(inLang)) || (inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
 							CommonDefinitions.getMessage("wwctInvalidInputLangCode", new String[] {CommonDefinitions.getFormattedValidLangCodes()}))
@@ -182,7 +183,7 @@ public class WWCTranslate extends BasicCommand {
 			CommonDefinitions.sendMessage(sender, sameLangError);
 			return false;
 		}
-		if (CommonDefinitions.getSupportedTranslatorLang(outLang).getLangCode().equals("")) {
+		if (!CommonDefinitions.isSupportedTranslatorLang(outLang)) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
 							CommonDefinitions.getMessage("wwctInvalidOutputLangCode", new String[] {CommonDefinitions.getFormattedValidLangCodes()}))

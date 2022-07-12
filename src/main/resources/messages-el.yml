@@ -339,8 +339,6 @@ Messages:
     του. Αυτό το σφάλμα δεν είναι θανατηφόρο, αλλά το WorldwideChat θα πρέπει να επαναφορτωθεί
     εάν εξακολουθεί να συμβαίνει.
   wwcGUIPageNumber: 'Αριθμός σελίδας: %i'
-  wwcConfigSQLFail: Αποτυχία σύνδεσης με SQL.
-  wwcConfigSQLSuccess: Επιτυχής σύνδεση με SQL!
   wwcConfigYAMLFallback: Πέφτει πίσω στο YAML...
   wwcConfigGUIToggleSQLButton: Εναλλαγή SQL
   wwcConfigConversationToggleSQLSuccess: SQL εναλλαγή με επιτυχία. Επαναφόρτωση για
@@ -425,3 +423,45 @@ Messages:
     URL για το Libre, ή πληκτρολογήστε 0 για να επιστρέψετε.
   libreHttpUnknown: 'Άγνωστο σφάλμα http: %i'
   wwcConfigGUILibreTranslateURLButton: Αλλαγή διεύθυνσης URL μετάφρασης Libre
+  wwcConfigConnectionFail: Αποτυχία σύνδεσης με το %i.
+  wwcConfigGUIMongoSettings: Ρύθμιση παραμέτρων MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Επιτυχής αλλαγή του ονόματος της
+    βάσης δεδομένων MongoDB.
+  wwcConfigGUIMongoHostnameButton: Αλλαγή ονόματος κεντρικού υπολογιστή MongoDB
+  wwcConfigConversationMongoPasswordInput: Ο τρέχων κωδικός πρόσβασης είναι %i. Πληκτρολογήστε
+    οτιδήποτε άλλο εκτός από το 0 για να ορίσετε έναν νέο κωδικό πρόσβασης ή πληκτρολογήστε
+    0 για να επιστρέψετε.
+  wwcConfigConversationMongoPortInput: Η τρέχουσα θύρα είναι %i. Πληκτρολογήστε οτιδήποτε
+    άλλο εκτός από το 0 για να ορίσετε μια νέα θύρα ή πληκτρολογήστε 0 για επιστροφή.
+  wwcConfigConversationToggleMongoSuccess: Το MongoDB εναλλάχτηκε επιτυχώς. Επαναφόρτωση
+    για να τεθεί σε ισχύ η αλλαγή.
+  wwcConfigConversationMongoHostnameInput: Το τρέχον όνομα κεντρικού υπολογιστή είναι
+    %i. Πληκτρολογήστε οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα
+    υπολογιστή ή πληκτρολογήστε 0 για επιστροφή.
+  wwcConfigConversationMongoHostnameSuccess: Επιτυχής αλλαγή του ονόματος κεντρικού
+    υπολογιστή MongoDB.
+  wwcConfigGUIMongoMenuButton: Αλλαγή ρυθμίσεων MongoDB
+  wwcConfigGUIToggleMongoButton: Εναλλαγή MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Το τρέχον όνομα βάσης δεδομένων είναι
+    %i. Πληκτρολογήστε οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα
+    βάσης δεδομένων ή πληκτρολογήστε 0 για επιστροφή.
+  wwcConfigConversationMongoOptionalArgsInput: 'Τα τρέχοντα προαιρετικά ορίσματα MongoDB
+    είναι: %i. Πληκτρολογήστε ορίσματα χωρισμένα με κόμμα (key=value, key2=value2),
+    ή πληκτρολογήστε clear για να σβήσετε τα τρέχοντα args, ή πληκτρολογήστε 0 για
+    να επιστρέψετε.'
+  wwcConfigGUIMongoDatabaseNameButton: Αλλαγή βάσης δεδομένων MongoDB
+  wwcConfigConversationMongoUsernameInput: Το τρέχον όνομα χρήστη είναι %i. Πληκτρολογήστε
+    οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα χρήστη ή πληκτρολογήστε
+    0 για επιστροφή.
+  wwcConfigGUIMongoOptionalArgsButton: Αλλαγή προαιρετικών ορισμάτων MongoDB
+  wwcConfigConversationMongoUsernameSuccess: Επιτυχής αλλαγή του ονόματος χρήστη MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Επιτυχής αλλαγή του κωδικού πρόσβασης
+    MongoDB.
+  wwcConfigConversationMongoPortSuccess: Επιτυχής αλλαγή της θύρας MongoDB.
+  wwcConfigGUIMongoUsernameButton: Αλλαγή ονόματος χρήστη MongoDB
+  wwcConfigGUIMongoPasswordButton: Αλλαγή κωδικού πρόσβασης MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Επιτυχής αλλαγή των προαιρετικών
+    ορισμάτων MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Τα προαιρετικά ορίσματα διαγράφθηκαν
+    με επιτυχία.
+  wwcConfigGUIMongoPortButton: Αλλαγή θύρας MongoDB

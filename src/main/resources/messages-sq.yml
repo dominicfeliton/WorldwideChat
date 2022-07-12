@@ -330,8 +330,6 @@ Messages:
     Ky gabim nuk është fatal, por WorldwideChat duhet të rifreskohet nëse vazhdon
     të ndodhë.
   wwcGUIPageNumber: 'Numri i faqes: %i'
-  wwcConfigSQLFail: Dështoi të lidhet me SQL.
-  wwcConfigSQLSuccess: Lidhur me sukses me SQL!
   wwcConfigYAMLFallback: Rënia përsëri në YAML...
   wwcConfigGUIToggleSQLButton: Toggle SQL
   wwcConfigConversationToggleSQLSuccess: SQL toggled me sukses. Rifresko që ndryshimi
@@ -411,3 +409,44 @@ Messages:
     URL për Libre, ose shkruani 0 për t'u kthyer prapa.
   libreHttpUnknown: 'Gabim i panjohur http: %i'
   wwcConfigGUILibreTranslateURLButton: Ndrysho Libre Translate URL
+  wwcConfigConnectionFail: Dështoi të lidhej me %i.
+  wwcConfigGUIMongoSettings: Konfigurimi MongoDB
+  wwcConfigConversationMongoDatabaseNameSuccess: Ndryshuar me sukses emrin e bazës
+    së të dhënave MongoDB.
+  wwcConfigGUIMongoHostnameButton: Ndrysho emrin e hostit MongoDB
+  wwcConfigConversationMongoPasswordInput: Fjalëkalimi i tanishëm është %i. Shkruani
+    diçka tjetër përveç 0 për të vendosur një fjalëkalim të ri, ose shkruani 0 për
+    t'u kthyer prapa.
+  wwcConfigConversationMongoPortInput: Porti aktual është %i. Shkruani diçka tjetër
+    përveç 0 për të vendosur një port të ri, ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigConversationToggleMongoSuccess: MongoDB ndryshoi me sukses. Rifresko për
+    ndryshimin të hyjë në fuqi.
+  wwcConfigConversationMongoHostnameInput: Emri aktual i hostit është %i. Shkruani
+    diçka tjetër përveç 0 për të vendosur një hostname të ri, ose shkruani 0 për t'u
+    kthyer prapa.
+  wwcConfigConversationMongoHostnameSuccess: Ndryshuar me sukses hostname MongoDB.
+  wwcConfigGUIMongoMenuButton: Ndrysho Cilësimet e MongoDB
+  wwcConfigGUIToggleMongoButton: Toggle MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Emri aktual i bazës së të dhënave është
+    %i. Shkruani diçka tjetër përveç 0 për të vendosur një emër të ri të bazës së
+    të dhënave, ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigConversationMongoOptionalArgsInput: 'Argumentet aktuale opsionale MongoDB
+    janë: %i. argumentet e tipit të ndara nga një presje (key=value, key2=value2),
+    ose lloji i qartë për të fshirë argumentet aktuale, ose shkruani 0 për të shkuar
+    mbrapa.'
+  wwcConfigGUIMongoDatabaseNameButton: Ndrysho bazën e të dhënave MongoDB
+  wwcConfigConversationMongoUsernameInput: Emri i përdoruesit aktual është %i. Shkruani
+    diçka tjetër përveç 0 për të vendosur një emër përdoruesi të ri, ose shkruani
+    0 për t'u kthyer prapa.
+  wwcConfigGUIMongoOptionalArgsButton: Ndrysho MongoDB Argumentet Opsionale
+  wwcConfigConversationMongoUsernameSuccess: Ndryshuar me sukses emrin e përdoruesit
+    MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Ndryshuar me sukses fjalëkalimin MongoDB.
+  wwcConfigConversationMongoPortSuccess: Ndryshuar me sukses portin MongoDB.
+  wwcConfigGUIMongoUsernameButton: Ndrysho emrin e përdoruesit MongoDB
+  wwcConfigGUIMongoPasswordButton: Ndrysho fjalëkalimin MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Ndryshuar me sukses argumentet opsionale
+    MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Argumentet opsionale pastruar me
+    sukses.
+  wwcConfigGUIMongoPortButton: Ndrysho Portin MongoDB

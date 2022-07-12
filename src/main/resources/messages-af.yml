@@ -317,8 +317,6 @@ Messages:
     Hierdie fout is nie noodlottig nie, maar WorldwideChat moet herlaai word as dit
     steeds gebeur.
   wwcGUIPageNumber: 'Bladsy nommer: %i'
-  wwcConfigSQLFail: Kon nie aan SQL koppel nie.
-  wwcConfigSQLSuccess: Suksesvol gekoppel aan SQL!
   wwcConfigYAMLFallback: Val terug na YAML...
   wwcConfigGUIToggleSQLButton: Wissel SQL
   wwcConfigConversationToggleSQLSuccess: SQL omgeskuif suksesvol. Herlaai vir die
@@ -393,3 +391,38 @@ Messages:
     in vir Libre, of tik 0 om terug te gaan.
   libreHttpUnknown: 'Onbekende http fout: %i'
   wwcConfigGUILibreTranslateURLButton: Verander Libre Translate URL
+  wwcConfigConnectionFail: Misluk om aan %i te koppel nie.
+  wwcConfigGUIMongoSettings: MongoDB Konfigurasie
+  wwcConfigConversationMongoDatabaseNameSuccess: Die MongoDB databasis naam suksesvol
+    verander.
+  wwcConfigGUIMongoHostnameButton: Verander MongoDB Hostname
+  wwcConfigConversationMongoPasswordInput: Die huidige wagwoord is %i. Tik enigiets
+    anders as 0 om 'n nuwe wagwoord in te stel, of tik 0 om terug te gaan.
+  wwcConfigConversationMongoPortInput: Die huidige poort is %i. Tik enigiets anders
+    as 0 om 'n nuwe poort te stel, of tik 0 om terug te gaan.
+  wwcConfigConversationToggleMongoSuccess: MongoDB suksesvol geskakel. Herlaai vir
+    die verandering om in werking te tree.
+  wwcConfigConversationMongoHostnameInput: Die huidige masjien naam is %i. Tik enigiets
+    anders as 0 om 'n nuwe masjien naam te stel, of tik 0 om terug te gaan.
+  wwcConfigConversationMongoHostnameSuccess: Die MongoDB masjien naam suksesvol verander.
+  wwcConfigGUIMongoMenuButton: Verander MongoDB Instellings
+  wwcConfigGUIToggleMongoButton: Skakel MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Die huidige databasis naam is %i. Tik
+    enigiets anders as 0 om 'n nuwe databasisnaam te stel, of tik 0 om terug te gaan.
+  wwcConfigConversationMongoOptionalArgsInput: 'Die huidige opsionele MongoDB argumente
+    is: %i. Tik argumente geskei deur ''n komma (sleutel=waarde, sleutel2=waarde2),
+    of tik duidelik om die huidige args uit te vee, of tik 0 om terug te gaan.'
+  wwcConfigGUIMongoDatabaseNameButton: Verander MongoDB Databasis
+  wwcConfigConversationMongoUsernameInput: Die huidige gebruikernaam is %i. Tik enigiets
+    anders as 0 om 'n nuwe gebruikernaam te stel, of tik 0 om terug te gaan.
+  wwcConfigGUIMongoOptionalArgsButton: Verander MongoDB Opsionele Argumente
+  wwcConfigConversationMongoUsernameSuccess: Die MongoDB gebruikersnaam suksesvol
+    verander.
+  wwcConfigConversationMongoPasswordSuccess: Die MongoDB wagwoord suksesvol verander.
+  wwcConfigConversationMongoPortSuccess: Suksesvol verander die MongoDB-poort.
+  wwcConfigGUIMongoUsernameButton: Verander MongoDB Gebruikersnaam
+  wwcConfigGUIMongoPasswordButton: Verander MongoDB Wagwoord
+  wwcConfigConversationMongoOptionalArgsSuccess: Suksesvol verander die opsionele
+    MongoDB argumente.
+  wwcConfigConversationMongoOptionalArgsCleared: Opsionele argumente suksesvol skoongemaak.
+  wwcConfigGUIMongoPortButton: Verander MongoDB-poort

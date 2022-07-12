@@ -22,57 +22,60 @@ public class WWCTabCompleter implements TabCompleter {
 	@Override
 	public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
 		// Init out list
-		// TODO: Revise this whole garbage class
 		List<String> out = new ArrayList<String>();
 
+		/* Commands: /wwct */
 		if (command.getName().equals("wwct") && args.length > 0 && args.length < 4) {
 			if (args[args.length - 1].isEmpty()) {
-				if (args.length == 1) {
-					if (!main.getActiveTranslator(((Player) sender).getUniqueId().toString()).getUUID().equals("")) {
+				switch (args.length) {
+				case 1:
+					if (main.isActiveTranslator(((Player) sender))) {
 						out.add("stop");
 					}
 					for (Player eaPlayer : Bukkit.getServer().getOnlinePlayers()) {
 						out.add(eaPlayer.getName());
 					}
-				}
-				if (args.length == 2 && Bukkit.getPlayerExact(args[0]) != null && !args[0].equalsIgnoreCase(sender.getName())
-						&& !main.getActiveTranslator(Bukkit.getPlayerExact(args[0]).getUniqueId().toString()).getUUID().equals("")) {
-					out.add("stop");
+					break;
+				case 2:
+					if (Bukkit.getPlayerExact(args[0]) != null && !args[0].equalsIgnoreCase(sender.getName())
+						&& main.isActiveTranslator(Bukkit.getPlayerExact(args[0]).getUniqueId())) {
+						out.add("stop");
+					}
+					break;
 				}
 				if (args.length == 1
-						|| (args.length == 2 && (!CommonDefinitions.getSupportedTranslatorLang(args[0]).getLangCode().equals("")
+						|| (args.length == 2 && (CommonDefinitions.isSupportedTranslatorLang(args[0])
 										|| Bukkit.getPlayerExact(args[0]) != null))
-						|| (args.length == 3 && !CommonDefinitions.getSupportedTranslatorLang(args[1]).getLangCode().equals("") && Bukkit.getPlayerExact(args[0]) != null)) {
+						|| (args.length == 3 && CommonDefinitions.isSupportedTranslatorLang(args[1]) && Bukkit.getPlayerExact(args[0]) != null)) {
 					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
 						out.add(eaObj.getLangName());
 						out.add(eaObj.getLangCode());
 					}
 				}
 			} else {
-				if (args.length == 1) {
-					if (!main.getActiveTranslator(((Player) sender).getUniqueId().toString()).getUUID().equals("")) {
-						if ("stop".startsWith(args[0].toLowerCase())) {
-							out.add("stop");
-						}
+				switch (args.length) {
+				case 1:
+					if (main.isActiveTranslator(((Player) sender).getUniqueId()) && "stop".startsWith(args[0].toLowerCase())) {
+						out.add("stop");
 					}
 					for (Player eaPlayer : Bukkit.getServer().getOnlinePlayers()) {
 						if (eaPlayer.getName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
 							out.add(eaPlayer.getName());
 						}
 					}
-				}
-				if (args.length == 2) {
-					if (Bukkit.getPlayerExact(args[0]) != null && !main.getActiveTranslator(Bukkit.getPlayerExact(args[0]).getUniqueId().toString()).getUUID().equals("")) {
-						if ("stop".startsWith(args[args.length - 1].toLowerCase())) {
-							out.add("stop");
-						}
+					break;
+				case 2:
+					if (Bukkit.getPlayerExact(args[0]) != null 
+					&& main.isActiveTranslator(Bukkit.getPlayerExact(args[0]).getUniqueId())
+					&& "stop".startsWith(args[args.length - 1].toLowerCase())) {
+						out.add("stop");
 					}
-
+					break;
 				}
 				if (args.length == 1
-						|| (args.length == 2 && (!CommonDefinitions.getSupportedTranslatorLang(args[0]).getLangCode().equals("")
+						|| (args.length == 2 && (CommonDefinitions.isSupportedTranslatorLang(args[0])
 										|| Bukkit.getPlayerExact(args[0]) != null))
-						|| (args.length == 3 && !CommonDefinitions.getSupportedTranslatorLang(args[1]).getLangCode().equals("") && Bukkit.getPlayerExact(args[0]) != null)) {
+						|| (args.length == 3 && CommonDefinitions.isSupportedTranslatorLang(args[1]) && Bukkit.getPlayerExact(args[0]) != null)) {
 					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
 						if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
 							out.add(eaObj.getLangName());
@@ -83,29 +86,35 @@ public class WWCTabCompleter implements TabCompleter {
 					}
 				}
 			}
+		
+		/* Commands: /wwcg */
 		} else if (command.getName().equals("wwcg") && args.length > 0 && args.length < 3) {
 			if (args[args.length - 1].isEmpty()) {
-				if (args.length == 1) {
-					if (!main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")) {
+				switch (args.length) {
+				case 1:
+					if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")) {
 						out.add("stop");
 					}
+					break;
 				}
 				if (args.length == 1
-						|| (args.length == 2 && !CommonDefinitions.getSupportedTranslatorLang(args[0]).getLangCode().equals(""))) {
+						|| (args.length == 2 && CommonDefinitions.isSupportedTranslatorLang(args[0]))) {
 					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
 						out.add(eaObj.getLangName());
 						out.add(eaObj.getLangCode());
 					}
 				}
 			} else {
-				if (args.length == 1) {
+				switch (args.length) {
+				case 1:
 					if ("stop".startsWith(args[0].toLowerCase())
-							&& !main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getUUID().equals("")) {
+							&& main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")) {
 						out.add("stop");
 					}
+					break;
 				}
 				if (args.length == 1
-						|| (args.length == 2 && !CommonDefinitions.getSupportedTranslatorLang(args[0]).getLangCode().equals(""))) {
+						|| (args.length == 2 && CommonDefinitions.isSupportedTranslatorLang(args[0]))) {
 					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
 						if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
 							out.add(eaObj.getLangName());
@@ -116,6 +125,8 @@ public class WWCTabCompleter implements TabCompleter {
 					}
 				}
 			}
+		
+		/* Commands: /wwcts, /wwctb, /wwcti, /wwcte, /wwctci, /wwctco */
 		} else if ((command.getName().equals("wwcts") || command.getName().equals("wwctb")
 				|| command.getName().equals("wwcti") || command.getName().equals("wwcte")
 				|| command.getName().equals("wwctci") || command.getName().equals("wwctco")) && args.length == 1) {
@@ -136,6 +147,8 @@ public class WWCTabCompleter implements TabCompleter {
 					}
 				}
 			}
+		
+		/* Commands: /wwcs */
 		} else if (command.getName().equals("wwcs") && args.length == 1) {
 			if (args[0].isEmpty()) {
 				for (Player eaPlayer : Bukkit.getServer().getOnlinePlayers()) {
@@ -148,30 +161,28 @@ public class WWCTabCompleter implements TabCompleter {
 					}
 				}
 			}
+		
+		/* Commands: /wwctrl */
 		} else if (command.getName().equals("wwctrl") && args.length > 0 && args.length < 3) {
-			if (args[args.length - 1].isEmpty()) {
-				if (args.length == 1) {
-					for (String eaTranslatorUUID : main.getActiveTranslators().keySet()) {
-						if (!eaTranslatorUUID.equals("GLOBAL-TRANSLATE-ENABLED")
-								&& Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)) != null) {
-							out.add(Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)).getName());
-						}
+			if (args[args.length - 1].isEmpty() && args.length == 1) {
+				for (String eaTranslatorUUID : main.getActiveTranslators().keySet()) {
+					if (!eaTranslatorUUID.equals("GLOBAL-TRANSLATE-ENABLED")
+							&& Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)) != null) {
+						out.add(Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)).getName());
 					}
 				}
-			} else {
-				if (args.length == 1) {
-					for (String eaTranslatorUUID : main.getActiveTranslators().keySet()) {
-						if (!eaTranslatorUUID.equals("GLOBAL-TRANSLATE-ENABLED")
-								&& Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)) != null
-								&& (Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)).getName())
-										.toLowerCase().startsWith(args[0].toLowerCase())) {
-							out.add(Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)).getName());
-						}
+			} else if (args.length == 1) {
+				for (String eaTranslatorUUID : main.getActiveTranslators().keySet()) {
+					if (!eaTranslatorUUID.equals("GLOBAL-TRANSLATE-ENABLED")
+							&& Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)) != null
+							&& (Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)).getName())
+									.toLowerCase().startsWith(args[0].toLowerCase())) {
+						out.add(Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)).getName());
 					}
 				}
 			}
 			if (args.length == 1 || (args.length == 2 && !StringUtils.isNumeric(args[0]) && Bukkit.getPlayerExact(args[0]) != null
-					&& !main.getActiveTranslator(Bukkit.getPlayerExact(args[0]).getUniqueId().toString()).getUUID().equals(""))) {
+					&& main.isActiveTranslator(Bukkit.getPlayerExact(args[0]).getUniqueId()))) {
 				out.add("0");
 				out.add("3");
 				out.add("5");

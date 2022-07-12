@@ -4,7 +4,7 @@
 
   <groupId>com.expl0itz.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
-  <version>1.12.0-SNAPSHOT</version>
+  <version>1.13.0-SNAPSHOT</version>
 
   <name>WorldwideChat</name>
   <description>Break the blocky language barrier!</description>
@@ -18,7 +18,7 @@
         <dependency>
             <groupId>com.github.seeseemelk</groupId>
             <artifactId>MockBukkit-v1.19</artifactId>
-            <version>2.73.0</version>
+            <version>2.85.0</version>
         </dependency>
         <dependency>
            <groupId>org.spigotmc</groupId>
@@ -99,17 +99,17 @@
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-translate</artifactId>
-            <version>1.12.253</version>
+            <version>1.12.258</version>
         </dependency>
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-s3</artifactId>
-            <version>1.12.253</version>
+            <version>1.12.258</version>
         </dependency>
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
-            <version>1.15.1</version>
+            <version>1.15.2</version>
         </dependency>
         <dependency>
             <groupId>fr.minuskube.inv</groupId>
@@ -158,7 +158,11 @@
             <artifactId>caffeine</artifactId>
             <version>3.1.1</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>3.12.11</version>
+        </dependency>
     </dependencies>
 
   <repositories>
@@ -271,6 +275,7 @@
                             <include>mysql:*</include>
                             <include>com.github.ben-manes.caffeine:caffeine</include>
                             <include>com.squareup.okio:okio-jvm</include>
+                            <include>org.mongodb:mongo-java-driver</include>
                         </includes>
                     </artifactSet>
                     <filters>
@@ -410,6 +415,10 @@
                         <relocation>
                             <pattern>com.github.benmanes</pattern>
                             <shadedPattern>com.expl0itz.worldwidechat.libs.com.github.benmanes</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.mongodb</pattern>
+                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.mongodb</shadedPattern>
                         </relocation>
                     </relocations>
               </configuration>

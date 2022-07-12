@@ -312,8 +312,6 @@ Messages:
   wwcTimeoutExceptionConsole: Žaidėjas %Aš turėjau naujausią užklausą laiko. Ši klaida
     nėra mirtina, bet WorldwideChat turėtų būti perkrautas, jei ji ir toliau įvyks.
   wwcGUIPageNumber: 'Puslapio numeris: %i'
-  wwcConfigSQLFail: Nepavyko prisijungti prie SQL.
-  wwcConfigSQLSuccess: Sėkmingai prijungtas prie SQL!
   wwcConfigYAMLFallback: Sumažėja atgal į YAML...
   wwcConfigGUIToggleSQLButton: Perjungti SQL
   wwcConfigConversationToggleSQLSuccess: SQL sėkmingai perėjo. Perkraukite, kad pakeitimas
@@ -390,3 +388,46 @@ Messages:
     “Libre”, arba įveskite 0, kad grįžtumėte atgal.
   libreHttpUnknown: 'Nežinoma http klaida: %i'
   wwcConfigGUILibreTranslateURLButton: Keisti Nemokamai Versti URL
+  wwcConfigConnectionFail: Nepavyko prisijungti prie %i.
+  wwcConfigGUIMongoSettings: MongoDB konfigūracija
+  wwcConfigConversationMongoDatabaseNameSuccess: Sėkmingai pakeitė MongoDB duomenų
+    bazės pavadinimą.
+  wwcConfigGUIMongoHostnameButton: Keisti MongoDB Hostname
+  wwcConfigConversationMongoPasswordInput: Dabartinis slaptažodis yra %i. Įveskite
+    bet ką, išskyrus 0, kad nustatytumėte naują slaptažodį, arba įveskite 0, kad grįžtumėte
+    atgal.
+  wwcConfigConversationMongoPortInput: Dabartinis prievadas yra %i. Įveskite bet ką,
+    išskyrus 0, kad nustatytumėte naują prievadą, arba įveskite 0, kad grįžtumėte
+    atgal.
+  wwcConfigConversationToggleMongoSuccess: MongoDB sėkmingai perėjo. Perkraukite,
+    kad pakeitimas įsigaliotų.
+  wwcConfigConversationMongoHostnameInput: Dabartinis pagrindinio kompiuterio vardas
+    yra %i. Įveskite bet ką, išskyrus 0, kad nustatytumėte naują pagrindinio kompiuterio
+    vardą, arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigConversationMongoHostnameSuccess: Sėkmingai pakeitė “MongoDB” pagrindinio
+    kompiuterio vardą.
+  wwcConfigGUIMongoMenuButton: Keisti MongoDB nustatymus
+  wwcConfigGUIToggleMongoButton: Perjungti MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Dabartinis duomenų bazės pavadinimas
+    yra %i. Įveskite bet ką, išskyrus 0, kad nustatytumėte naują duomenų bazės pavadinimą,
+    arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigConversationMongoOptionalArgsInput: 'Dabartiniai neprivalomi “MongoDB”
+    argumentai yra: %i. Įveskite argumentus, atskirtus kableliu (raktas = reikšmė,
+    raktas2 = reikšmė2) arba įveskite aiškų, kad nuvalytumėte dabartines argas, arba
+    įveskite 0, kad grįžtumėte.'
+  wwcConfigGUIMongoDatabaseNameButton: Keisti MongoDB duomenų bazę
+  wwcConfigConversationMongoUsernameInput: Dabartinis vartotojo vardas yra %i. Įveskite
+    bet ką, išskyrus 0, kad nustatytumėte naują vartotojo vardą, arba įveskite 0,
+    kad grįžtumėte atgal.
+  wwcConfigGUIMongoOptionalArgsButton: Keisti MongoDB neprivalomus argumentus
+  wwcConfigConversationMongoUsernameSuccess: Sėkmingai pakeitė “MongoDB” vartotojo
+    vardą.
+  wwcConfigConversationMongoPasswordSuccess: Sėkmingai pakeitė MongoDB slaptažodį.
+  wwcConfigConversationMongoPortSuccess: Sėkmingai pakeitė MongoDB prievadą.
+  wwcConfigGUIMongoUsernameButton: Pakeisti MongoDB vartotojo vardą
+  wwcConfigGUIMongoPasswordButton: Keisti MongoDB slaptažodį
+  wwcConfigConversationMongoOptionalArgsSuccess: Sėkmingai pakeitė neprivalomus MongoDB
+    argumentus.
+  wwcConfigConversationMongoOptionalArgsCleared: Neprivalomi argumentai sėkmingai
+    išvalytas.
+  wwcConfigGUIMongoPortButton: Pakeisti MongoDB prievadą

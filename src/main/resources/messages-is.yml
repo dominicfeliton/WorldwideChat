@@ -319,8 +319,6 @@ Messages:
     Þessi villa er ekki banvæn, en WorldwideChat ætti að endurhlaða ef það heldur
     áfram að gerast.
   wwcGUIPageNumber: 'Síðu númer: %i'
-  wwcConfigSQLFail: Mistókst að tengjast SQL.
-  wwcConfigSQLSuccess: Tókst tengdur við SQL!
   wwcConfigYAMLFallback: Falla aftur til YAML...
   wwcConfigGUIToggleSQLButton: Skipta SQL
   wwcConfigConversationToggleSQLSuccess: SQL skipta með góðum árangri. Endurhlaða
@@ -395,3 +393,40 @@ Messages:
     inn vefslóð fyrir Libre, eða tegund 0 til að fara til baka.
   libreHttpUnknown: 'Óþekkt http villa: %i'
   wwcConfigGUILibreTranslateURLButton: Breyta Libre Þýða URL
+  wwcConfigConnectionFail: Mistókst að tengjast %i.
+  wwcConfigGUIMongoSettings: MongoDB stillingar
+  wwcConfigConversationMongoDatabaseNameSuccess: Tókst að breyta MongoDB gagnagrunnsheiti.
+  wwcConfigGUIMongoHostnameButton: Breyta MongoDB Hostname
+  wwcConfigConversationMongoPasswordInput: Núverandi aðgangsorð er %i. Sláðu inn eitthvað
+    annað en 0 til að setja nýtt lykilorð, eða sláðu inn 0 til að fara aftur.
+  wwcConfigConversationMongoPortInput: Núverandi tengi er %i. Sláðu inn eitthvað annað
+    en 0 til að stilla nýtt tengi, eða sláðu inn 0 til að fara til baka.
+  wwcConfigConversationToggleMongoSuccess: MongoDB skiptir með góðum árangri. Endurhlaða
+    til að breytingin taki gildi.
+  wwcConfigConversationMongoHostnameInput: Núverandi hýsingarheiti er %i. Sláðu inn
+    eitthvað annað en 0 til að setja nýtt hýsingarheiti, eða sláðu inn 0 til að fara
+    aftur.
+  wwcConfigConversationMongoHostnameSuccess: Tókst að breyta MongoDB hýsingarnafninu.
+  wwcConfigGUIMongoMenuButton: Breyta MongoDB stillingum
+  wwcConfigGUIToggleMongoButton: Skipta MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Núverandi gagnagrunnsheiti er %i. Sláðu
+    inn eitthvað annað en 0 til að setja nýtt gagnagrunnsheiti, eða sláðu inn 0 til
+    að fara aftur.
+  wwcConfigConversationMongoOptionalArgsInput: 'Núverandi valfrjáls MongoDB rök eru:
+    %i. Sláðu rök aðskilin með kommu (lykill = gildi, lykill2=value2), eða tegund
+    skýr til að þurrka núverandi args, eða tegund 0 til að fara til baka.'
+  wwcConfigGUIMongoDatabaseNameButton: Breyta MongoDB gagnagrunni
+  wwcConfigConversationMongoUsernameInput: Núverandi notandanafn er %i. Sláðu inn
+    eitthvað annað en 0 til að setja nýtt notandanafn, eða tegund 0 til að fara til
+    baka.
+  wwcConfigGUIMongoOptionalArgsButton: Breyta MongoDB Valfrjáls rök
+  wwcConfigConversationMongoUsernameSuccess: Tókst að breyta MongoDB notandanafninu.
+  wwcConfigConversationMongoPasswordSuccess: Tókst að breyta MongoDB lykilorðinu.
+  wwcConfigConversationMongoPortSuccess: Tókst að breyta MongoDB höfninni.
+  wwcConfigGUIMongoUsernameButton: Breyta MongoDB notendanafni
+  wwcConfigGUIMongoPasswordButton: Breyta MongoDB lykilorði
+  wwcConfigConversationMongoOptionalArgsSuccess: Tókst að breyta valfrjáls MongoDB
+    rök.
+  wwcConfigConversationMongoOptionalArgsCleared: Valfrjáls rök hreinsuð með góðum
+    árangri.
+  wwcConfigGUIMongoPortButton: Breyta MongoDB höfn

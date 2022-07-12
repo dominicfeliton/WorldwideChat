@@ -328,8 +328,6 @@ Messages:
     սխալը ճակատագրական չէ, բայց WorldWideHat- ը պետք է վերբեռնվի, եթե այն շարունակում
     է տեղի ունենալ:'
   wwcGUIPageNumber: 'Էջի համարը: %i'
-  wwcConfigSQLFail: 'Չհաջողվեց միանալ SQL- ին:'
-  wwcConfigSQLSuccess: Հաջողությամբ միացված է SQL!
   wwcConfigYAMLFallback: Ընկնում ետ YAML...
   wwcConfigGUIToggleSQLButton: Toggle SQL
   wwcConfigConversationToggleSQLSuccess: 'SQL toggled հաջողությամբ. Վերբեռնել փոփոխության
@@ -404,3 +402,43 @@ Messages:
     URL Libre- ի համար, կամ մուտքագրել 0 ՝ վերադառնալու համար:'
   libreHttpUnknown: 'Անհայտ http սխալ: %i'
   wwcConfigGUILibreTranslateURLButton: Փոխել ազատ Թարգմանել URL
+  wwcConfigConnectionFail: 'Չհաջողվեց միանալ %i- ին:'
+  wwcConfigGUIMongoSettings: MongoDB կոնֆիգուրացիա
+  wwcConfigConversationMongoDatabaseNameSuccess: 'Հաջողությամբ փոխեց MongoDB տվյալների
+    բազայի անունը:'
+  wwcConfigGUIMongoHostnameButton: Փոխել MongoDB հյուրընկալողի անունը
+  wwcConfigConversationMongoPasswordInput: 'Ընթացիկ գաղտնաբառը %i է: Մուտքագրեք 0-ից
+    բացի որևէ այլ բան ՝ նոր գաղտնաբառ սահմանելու համար, կամ մուտքագրեք 0 ՝ վերադառնալու
+    համար:'
+  wwcConfigConversationMongoPortInput: 'Ներկայիս պորտը %i է: Մուտքագրեք որևէ այլ բան,
+    քան 0 ՝ նոր պորտ սահմանելու համար, կամ մուտքագրեք 0 ՝ հետ գնալու համար:'
+  wwcConfigConversationToggleMongoSuccess: 'MongoDB- ը հաջողությամբ անցավ: Վերբեռնել
+    փոփոխության ուժի մեջ մտնելու համար:'
+  wwcConfigConversationMongoHostnameInput: 'Ներկայիս հյուրընկալողի անունը %i է: Մուտքագրեք
+    որևէ այլ բան, քան 0 ՝ նոր հոսթանուն սահմանելու համար, կամ մուտքագրեք 0 ՝ վերադառնալու
+    համար:'
+  wwcConfigConversationMongoHostnameSuccess: 'Հաջողությամբ փոխեց MongoDB հյուրընկալողի
+    անունը:'
+  wwcConfigGUIMongoMenuButton: Փոխել MongoDB կարգավորումները
+  wwcConfigGUIToggleMongoButton: Անջատեք Մոնգոդբ
+  wwcConfigConversationMongoDatabaseNameInput: 'Ներկայիս տվյալների բազայի անունը %i
+    է: Մուտքագրեք ցանկացած այլ բան, քան 0- ը, նոր տվյալների բազայի անունը սահմանելու
+    համար կամ մուտքագրեք 0, վերադառնալու համար:'
+  wwcConfigConversationMongoOptionalArgsInput: 'Ներկայիս ընտրովի MongoDB փաստարկներն
+    են ՝ %i: Մուտքագրեք փաստարկները, որոնք առանձնացված են ստորակետով (key=value, key2
+    = value2), կամ մուտքագրեք պարզ ՝ ընթացիկ արգերը սրբելու համար, կամ մուտքագրեք
+    0 ՝ հետ գնալու համար:'
+  wwcConfigGUIMongoDatabaseNameButton: Փոխել MongoDB տվյալների բազան
+  wwcConfigConversationMongoUsernameInput: 'Ներկայիս օգտվողի անունը %i է: Մուտքագրեք
+    0- ից բացի որևէ այլ բան ՝ նոր օգտվողի անուն սահմանելու համար, կամ մուտքագրեք 0
+    ՝ վերադառնալու համար:'
+  wwcConfigGUIMongoOptionalArgsButton: Փոխել MongoDB- ի ընտրովի փաստարկները
+  wwcConfigConversationMongoUsernameSuccess: 'Հաջողությամբ փոխեց MongoDB օգտվողի անունը:'
+  wwcConfigConversationMongoPasswordSuccess: 'Հաջողությամբ փոխեց MongoDB գաղտնաբառը:'
+  wwcConfigConversationMongoPortSuccess: 'Հաջողությամբ փոխեց MongoDB նավահանգիստը:'
+  wwcConfigGUIMongoUsernameButton: Փոխել MongoDB օգտվողի անունը
+  wwcConfigGUIMongoPasswordButton: Փոխել MongoDB գաղտնաբառը
+  wwcConfigConversationMongoOptionalArgsSuccess: 'Հաջողությամբ փոխեց կամընտիր MongoDB
+    փաստարկները:'
+  wwcConfigConversationMongoOptionalArgsCleared: Ընտրովի փաստարկները մաքրվել հաջողությամբ.
+  wwcConfigGUIMongoPortButton: Փոխել MongoDB նավահանգիստը

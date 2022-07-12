@@ -281,8 +281,6 @@ Messages:
   wwcTimeoutExceptionConsole: ผู้เล่น %ฉันมีเวลาหมดเวลาการร้องขอล่าสุดของพวกเขาข้อผิดพลาดนี้ไม่ร้ายแรง
     แต่ WorldwideChat ควรโหลดใหม่หากยังคงเกิดขึ้น
   wwcGUIPageNumber: 'หมายเลขหน้า: %i'
-  wwcConfigSQLFail: ล้มเหลวในการเชื่อมต่อกับ SQL
-  wwcConfigSQLSuccess: เชื่อมต่อกับ SQL สำเร็จแล้ว!
   wwcConfigYAMLFallback: ถอยกลับไป YAML...
   wwcConfigGUIToggleSQLButton: สลับ SQL
   wwcConfigConversationToggleSQLSuccess: SQL สับ เสร็จเรียบร้อยแล้วโหลดใหม่สำหรับการเปลี่ยนแปลงที่มีผล
@@ -347,3 +345,38 @@ Messages:
     หรือพิมพ์ 0 เพื่อย้อนกลับ
   libreHttpUnknown: 'ไม่ทราบข้อผิดพลาด http: %i'
   wwcConfigGUILibreTranslateURLButton: เปลี่ยน URL แปลภาษา Libre
+  wwcConfigConnectionFail: ล้มเหลวในการเชื่อมต่อกับ %i
+  wwcConfigGUIMongoSettings: MongoDB การกำหนดค่า
+  wwcConfigConversationMongoDatabaseNameSuccess: ประสบความสำเร็จในการเปลี่ยนชื่อฐานข้อมูล
+    MongoDB
+  wwcConfigGUIMongoHostnameButton: เปลี่ยนชื่อโฮสต์ MongoDB
+  wwcConfigConversationMongoPasswordInput: รหัสผ่านปัจจุบันคือ %i พิมพ์สิ่งอื่นที่ไม่ใช่
+    0 เพื่อตั้งรหัสผ่านใหม่ หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigConversationMongoPortInput: พอร์ตปัจจุบันคือ %i พิมพ์สิ่งอื่นที่ไม่ใช่
+    0 เพื่อตั้งค่าพอร์ตใหม่หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigConversationToggleMongoSuccess: MongoDB สลับประสบความสำเร็จโหลดใหม่เพื่อให้การเปลี่ยนแปลงมีผล
+  wwcConfigConversationMongoHostnameInput: ชื่อโฮสต์ปัจจุบันคือ %i พิมพ์สิ่งอื่นที่ไม่ใช่
+    0 เพื่อตั้งชื่อโฮสต์ใหม่หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigConversationMongoHostnameSuccess: ประสบความสำเร็จในการเปลี่ยนชื่อโฮสต์
+    MongoDB
+  wwcConfigGUIMongoMenuButton: เปลี่ยนการตั้งค่า MongoDB
+  wwcConfigGUIToggleMongoButton: สลับ MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: ชื่อฐานข้อมูลปัจจุบันคือ %i พิมพ์สิ่งอื่นที่ไม่ใช่
+    0 เพื่อตั้งชื่อฐานข้อมูลใหม่หรือพิมพ์ 0 เพื่อกลับไป
+  wwcConfigConversationMongoOptionalArgsInput: 'อาร์กิวเมนต์ MongoDB ตัวเลือกในปัจจุบันคือ:
+    %i ข้อโต้แย้งประเภทคั่นด้วยเครื่องหมายจุลภาค (คีย์ = ค่าคีย์ 2 = value2) หรือพิมพ์ที่ชัดเจนเพื่อเช็ด
+    args ปัจจุบันหรือพิมพ์ 0 จะกลับไป'
+  wwcConfigGUIMongoDatabaseNameButton: เปลี่ยนฐานข้อมูล MongoDB
+  wwcConfigConversationMongoUsernameInput: ชื่อผู้ใช้ปัจจุบันคือ %i พิมพ์สิ่งอื่นที่ไม่ใช่
+    0 เพื่อตั้งชื่อผู้ใช้ใหม่หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUIMongoOptionalArgsButton: เปลี่ยน MongoDB อาร์กิวเมนต์ตัวเลือก
+  wwcConfigConversationMongoUsernameSuccess: ประสบความสำเร็จในการเปลี่ยนชื่อผู้ใช้
+    MongoDB
+  wwcConfigConversationMongoPasswordSuccess: ประสบความสำเร็จในการเปลี่ยนรหัสผ่าน MongoDB
+  wwcConfigConversationMongoPortSuccess: ประสบความสำเร็จในการเปลี่ยนพอร์ต MongoDB
+  wwcConfigGUIMongoUsernameButton: เปลี่ยนชื่อผู้ใช้ MongoDB
+  wwcConfigGUIMongoPasswordButton: เปลี่ยนรหัสผ่าน MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: ประสบความสำเร็จในการเปลี่ยนแปลงข้อโต้แย้ง
+    MongoDB ตัวเลือก
+  wwcConfigConversationMongoOptionalArgsCleared: อาร์กิวเมนต์ตัวเลือกล้างประสบความสำเร็จ
+  wwcConfigGUIMongoPortButton: เปลี่ยนพอร์ต MongoDB

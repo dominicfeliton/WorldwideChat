@@ -308,8 +308,6 @@ Messages:
     қате өлімге ұшырамайды, бірақ WorldwideChat оны жалғастыра берсе, қайта жүктеу
     керек.
   wwcGUIPageNumber: 'Бет нөмірі: %i'
-  wwcConfigSQLFail: SQL қосылу үшін сәтсіз аяқталды.
-  wwcConfigSQLSuccess: SQL жүйесіне сәтті қосылған!
   wwcConfigYAMLFallback: YAML кері құлап...
   wwcConfigGUIToggleSQLButton: SQL ауыстыру
   wwcConfigConversationToggleSQLSuccess: SQL сәтті болды. Өзгеріс күшіне ену үшін
@@ -385,3 +383,40 @@ Messages:
     енгізіңіз сұраймыз, немесе кері қайту үшін 0 теріңіз.
   libreHttpUnknown: 'Белгісіз http қатесі: %i'
   wwcConfigGUILibreTranslateURLButton: Өзгерту Тегін Аудару URL
+  wwcConfigConnectionFail: '%i қосыла алмады.'
+  wwcConfigGUIMongoSettings: МонгДБ конфигурациясы
+  wwcConfigConversationMongoDatabaseNameSuccess: MongoDB дерекқорының атауын сәтті
+    өзгертті.
+  wwcConfigGUIMongoHostnameButton: MongoDB хост атауын өзгерту
+  wwcConfigConversationMongoPasswordInput: Ағымдағы құпия сөз %i. 0-ден басқа ештеңені
+    жаңа құпия сөзді орнату үшін теріңіз немесе кері қайту үшін 0 деп теріңіз.
+  wwcConfigConversationMongoPortInput: Ағымдағы порт %i болып табылады. 0-ден басқа
+    жаңа портты орнату үшін кез келген нәрсені теріңіз немесе кері қайту үшін 0 теріңіз.
+  wwcConfigConversationToggleMongoSuccess: MongoDB сәтті аяқталды. Өзгеріс күшіне
+    енуі үшін қайта жүктеңіз.
+  wwcConfigConversationMongoHostnameInput: Ағымдағы хост аты %i болып табылады. 0-ден
+    басқа жаңа хост атауын орнату үшін кез келген нәрсені теріңіз немесе кері қайту
+    үшін 0 теріңіз.
+  wwcConfigConversationMongoHostnameSuccess: MongoDB хост атауын сәтті өзгертті.
+  wwcConfigGUIMongoMenuButton: MongoDB параметрлерін өзгерту
+  wwcConfigGUIToggleMongoButton: MongoDB ауыстырып қосу
+  wwcConfigConversationMongoDatabaseNameInput: Ағымдағы дерекқор атауы %i. 0-ден басқа
+    жаңа дерекқор атауын орнату үшін кез келген нәрсені теріңіз немесе кері қайту
+    үшін 0 деп теріңіз.
+  wwcConfigConversationMongoOptionalArgsInput: 'Ағымдағы қосымша MongoDB аргументтері:
+    %i. үтірмен бөлінген аргументтерді теріңіз (кілт = мән, кілт2 = мән2) немесе ағымдағы
+    аргаларды сүрту үшін анық теріңіз немесе кері қайту үшін 0 теріңіз.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB дерекқорын
+  wwcConfigConversationMongoUsernameInput: Ағымдағы пайдаланушы аты %i. 0-ден басқа
+    жаңа пайдаланушы атын орнату үшін кез келген нәрсені теріңіз немесе кері қайту
+    үшін 0 деп теріңіз.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB қосымша дәлелдерін
+  wwcConfigConversationMongoUsernameSuccess: MongoDB пайдаланушы атын сәтті өзгертті.
+  wwcConfigConversationMongoPasswordSuccess: MongoDB құпия сөзін сәтті өзгертті.
+  wwcConfigConversationMongoPortSuccess: MongoDB портын сәтті өзгертті.
+  wwcConfigGUIMongoUsernameButton: MongoDB пайдаланушы атын өзгерту
+  wwcConfigGUIMongoPasswordButton: MongoDB құпия сөзін
+  wwcConfigConversationMongoOptionalArgsSuccess: Қосымша MongoDB дәлелдерін сәтті
+    өзгертті.
+  wwcConfigConversationMongoOptionalArgsCleared: Қосымша дәлелдер сәтті тазартылды.
+  wwcConfigGUIMongoPortButton: MongoDB порты

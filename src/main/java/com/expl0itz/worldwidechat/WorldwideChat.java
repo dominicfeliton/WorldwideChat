@@ -47,8 +47,9 @@ import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CachedTranslation;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.PlayerRecord;
-import com.expl0itz.worldwidechat.util.SQLUtils;
 import com.expl0itz.worldwidechat.util.SupportedLanguageObject;
+import com.expl0itz.worldwidechat.util.storage.MongoDBUtils;
+import com.expl0itz.worldwidechat.util.storage.SQLUtils;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 
@@ -86,7 +87,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "06262022-3"; // MMDDYYYY-revisionNumber
+	private String currentMessagesConfigVersion = "07102022-3"; // MMDDYYYY-revisionNumber
 	private volatile String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
@@ -255,20 +256,35 @@ public class WorldwideChat extends JavaPlugin {
 	  * Easy way to reload this plugin; call this method anywhere to reload quickly
 	  */
 	public void reload() {
-		reload(null);
+		reload(null, false);
+	}
+	
+	/**
+	 * Reload this plugin with a null sender but can toggle state
+	 * @param invalidState - whether there was a previously functional translator or not
+	 */
+	public void reload(boolean invalidState) {
+		reload(null, invalidState);
+	}
+	
+	/**
+	 * Reload this plugin with a sender and pre-defined state
+	 * @param sender - Valid command sender
+	 */
+	public void reload(CommandSender sender) {
+		reload(sender, translatorName.equalsIgnoreCase("Invalid"));
 	}
 	
 	/**
 	  * Reloads the plugin and sends a message to the caller
 	  * inSender - CommandSender who requested reload
 	  */
-	public void reload(CommandSender inSender) {
+	public void reload(CommandSender inSender, boolean invalidState) {
 		/* Put plugin into a reloading state */
-		translatorErrorCount = 0;
-		if (!translatorName.equals("Invalid")) {
-			translatorName = "Starting";
-		}
+		CommonDefinitions.sendDebugMessage("Is invalid state???:::" + invalidState);
+		translatorName = "Starting";
 		CommonDefinitions.closeAllInventories();
+		translatorErrorCount = 0;
 		
 		/* Send start reload message */
 		if (inSender != null) {
@@ -285,7 +301,7 @@ public class WorldwideChat extends JavaPlugin {
 			@Override
 			public void run() {
 				final long currentDuration = System.nanoTime();
-				cancelBackgroundTasks(true, this.getTaskId());
+				cancelBackgroundTasks(true, invalidState, this.getTaskId());
 				loadPluginConfigs(true);
 				
 				/* Send successfully reloaded message */
@@ -306,11 +322,20 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/**
-	  * Wait for and cancel background tasks 
+	 * Wait for and cancel background tasks, no taskID to exclude/previously valid translator
+	 * @param isReloading - If this function should accommodate for a plugin reload or not
+	 */
+	public void cancelBackgroundTasks(boolean isReloading) {
+		cancelBackgroundTasks(isReloading, false);
+	}
+	
+	/**
+	  * Wait for and cancel background tasks, no taskID to exclude
 	  * @param isReloading - If this function should accommodate for a plugin reload or not
+	  * @param wasPreviouslyInvalid - If we are reloading from an invalid state to begin with
 	  */
-    public void cancelBackgroundTasks(boolean isReloading) {
-    	cancelBackgroundTasks(isReloading, -1);
+    public void cancelBackgroundTasks(boolean isReloading, boolean wasPreviouslyInvalid) {
+    	cancelBackgroundTasks(isReloading, wasPreviouslyInvalid, -1);
     }
 	
     /**
@@ -318,7 +343,7 @@ public class WorldwideChat extends JavaPlugin {
 	  * @param isReloading - If this function should accommodate for a plugin reload or not
 	  * @param taskID - Task to ignore when cancelling tasks, in case this is being ran async
 	  */
-	public void cancelBackgroundTasks(boolean isReloading, int taskID) {
+	public void cancelBackgroundTasks(boolean isReloading, boolean wasPreviouslyInvalid, int taskID) {
 		// Wait for completion + kill all background tasks
 		// Thanks to:
 		// https://gist.github.com/blablubbabc/e884c114484f34cae316c48290b21d8e#file-someplugin-java-L37
@@ -362,10 +387,13 @@ public class WorldwideChat extends JavaPlugin {
 		this.getServer().getScheduler().cancelTasks(this);
 
 		// Sync activeTranslators, playerRecords to disk
-		configurationManager.syncData();
+		configurationManager.syncData(wasPreviouslyInvalid);
 
 		// Disconnect SQL
 		SQLUtils.disconnect();
+		
+		// Disconnect MongoDB
+		MongoDBUtils.disconnect();
 		
 		// Clear all active translating users, cache, playersUsingConfigGUI
 		supportedLanguages.clear();
@@ -554,6 +582,33 @@ public class WorldwideChat extends JavaPlugin {
 		activeTranslators.remove(i.getUUID());
 		CommonDefinitions.sendDebugMessage(i.getUUID() + " has been removed from the internal active translator hashmap.");
 	}
+	
+	/**
+	 * Checks if a given name is a currently active translator.
+	 * @param in - A player
+	 * @return true if ActiveTranslator, false otherwise
+	 */
+	public boolean isActiveTranslator(Player in) {
+		return isActiveTranslator(in.getUniqueId());
+	}
+	
+	/**
+	 * Checks if a given name is a currently active translator.
+	 * @param in - A player UUID
+	 * @return true if ActiveTranslator, false otherwise
+	 */
+	public boolean isActiveTranslator(UUID in) {
+		return isActiveTranslator(in.toString());
+	}
+	
+	/**
+	 * Checks if a given name is a currently active translator.
+	 * @param in - A player UUID as a String
+	 * @return true if ActiveTranslator, false otherwise
+	 */
+	public boolean isActiveTranslator(String in) {
+		return !getActiveTranslator(in).getUUID().equals("");
+	}
 
 	public void addPlayerUsingConfigurationGUI(UUID in) {
 		if (!playersUsingConfigurationGUI.contains(in.toString())) {
@@ -603,21 +658,6 @@ public class WorldwideChat extends JavaPlugin {
 		cache.put(input, outputPhrase);
 		CommonDefinitions.sendDebugMessage("Added new phrase into cache! Size after addition: ");
 	}
-	
-	public String getCacheTerm(CachedTranslation in) {
-		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") <= 0) 
-			return null;
-		
-		String out = cache.getIfPresent(in);
-		CommonDefinitions.sendDebugMessage("Cache lookup outcome: " + out);
-		
-		return out;
-	}
-	
-	public long getEstimatedCacheSize() {
-		cache.cleanUp();
-		return cache.estimatedSize();
-	}
 
 	public void removeCacheTerm(CachedTranslation i) {
 		cache.cleanUp();
@@ -631,6 +671,33 @@ public class WorldwideChat extends JavaPlugin {
 	public void removePlayerRecord(PlayerRecord i) {
 		playerRecords.remove(i.getUUID());
 		CommonDefinitions.sendDebugMessage("Removed player record of " + i.getUUID() + ".");
+	}
+	
+	/**
+	 * Checks if a given player has a player record.
+	 * @param in - A player
+	 * @return true if PlayerRecord, false otherwise
+	 */
+	public boolean isPlayerRecord(Player in) {
+		return isPlayerRecord(in.getUniqueId());
+	}
+	
+	/**
+	 * Checks if a given name has a player record.
+	 * @param in - A player UUID
+	 * @return true if PlayerRecord, false otherwise
+	 */
+	public boolean isPlayerRecord(UUID in) {
+		return isPlayerRecord(in.toString());
+	}
+	
+	/**
+	 * Checks if a given name has a player record.
+	 * @param in - A player UUID as a String
+	 * @return true if PlayerRecord, false otherwise
+	 */
+	public boolean isPlayerRecord(String in) {
+		return !getPlayerRecord(in, false).getUUID().equals("");
 	}
 
 	public void setOutOfDate(boolean i) {
@@ -671,6 +738,21 @@ public class WorldwideChat extends JavaPlugin {
 			return outTranslator;
 		}
 		return new ActiveTranslator("", "", "");
+	}
+	
+	public String getCacheTerm(CachedTranslation in) {
+		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") <= 0) 
+			return null;
+		
+		String out = cache.getIfPresent(in);
+		CommonDefinitions.sendDebugMessage("Cache lookup outcome: " + out);
+		
+		return out;
+	}
+	
+	public long getEstimatedCacheSize() {
+		cache.cleanUp();
+		return cache.estimatedSize();
 	}
 
 	public PlayerRecord getPlayerRecord(String uuid, boolean createNewIfNotExisting) {
