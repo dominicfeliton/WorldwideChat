@@ -281,7 +281,6 @@ public class WorldwideChat extends JavaPlugin {
 	  */
 	public void reload(CommandSender inSender, boolean invalidState) {
 		/* Put plugin into a reloading state */
-		//TODO: Reloading in an invalid state deletes all saved user data? Is this still the case?
 		CommonDefinitions.sendDebugMessage("Is invalid state???:::" + invalidState);
 		translatorName = "Starting";
 		CommonDefinitions.closeAllInventories();

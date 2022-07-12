@@ -117,10 +117,8 @@ public class MenuGui implements InventoryProvider {
 		sqlSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.STORAGE_SET.ordinal()+1 + ""}));
 		
 		// MongoDB
-		//TODO: Add conversations, add localizations, run YAMLTranslator
 		mongoSet.add(new BorderElement(XMaterial.ORANGE_STAINED_GLASS_PANE));
 		mongoSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleMongoButton", "wwcConfigConversationToggleMongoSuccess", "Storage.useMongoDB", new String[] {"Storage.useSQL"}));
-		//TODO: Add stuff
 		mongoSet.add(new ConvoElement(1, 2, "wwcConfigGUIMongoHostnameButton", XMaterial.NAME_TAG,
 				new MongoSettingsConvos.Hostname()));
 		mongoSet.add(new ConvoElement(1, 3, "wwcConfigGUIMongoPortButton", XMaterial.NAME_TAG,
