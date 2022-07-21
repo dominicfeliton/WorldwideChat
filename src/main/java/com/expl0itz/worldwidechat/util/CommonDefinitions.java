@@ -595,7 +595,7 @@ public class CommonDefinitions {
 	private static boolean isNoConfidenceException(Throwable throwable) {
 	    // instanceof() doesn't seem to work here...this sucks, but it works
 		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
-		if (exceptionMessage.contains("confidence") || exceptionMessage.contains("Confidence")) {
+		if (exceptionMessage != null && exceptionMessage.contains("confidence")) {
 			CommonDefinitions.sendDebugMessage("No confidence exception message: " + exceptionMessage);
 			return true;
 		}
