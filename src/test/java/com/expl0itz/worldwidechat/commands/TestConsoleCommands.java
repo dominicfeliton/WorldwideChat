@@ -27,7 +27,7 @@ public class TestConsoleCommands {
 		/* Console runs /wwct player1 es */
 		server.executeConsole("wwct", new String[] {"player1", "es"});
 		ActiveTranslator currTranslator = plugin.getActiveTranslator(playerMock.getUniqueId().toString());
-		assertTrue(currTranslator.getInLangCode().equals("en") && currTranslator.getOutLangCode().equals("es"));
+		assertTrue(currTranslator.getInLangCode().equals("None") && currTranslator.getOutLangCode().equals("es"));
 	}
 	
 	public void testTranslateCommandConsoleSourceTargetOther() {
