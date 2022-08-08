@@ -87,7 +87,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "07102022-3"; // MMDDYYYY-revisionNumber
+	private String currentMessagesConfigVersion = "08072022-1"; // MMDDYYYY-revisionNumber
 	private volatile String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
@@ -199,16 +199,7 @@ public class WorldwideChat extends JavaPlugin {
 				return wwcs.processCommand();
 			}
 		}
-		/* Commands that run regardless of translator settings, but not during restarts or as console */
-		if (checkSenderIdentity(sender) && !translatorName.equals("Starting")) {
-			switch (command.getName()) {
-			case "wwcc":
-				// Configuration GUI
-				WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
-				return wwcc.processCommand();
-			}
 		/* Commands that run if translator settings are valid */
-		}
 		if (hasValidTranslatorSettings(sender)) {
 			switch (command.getName()) {
 			case "wwcg":
@@ -247,6 +238,16 @@ public class WorldwideChat extends JavaPlugin {
 				// Rate Limit Command
 				WWCTranslateRateLimit wwctrl = new WWCTranslateRateLimit(sender, command, label, args);
 				return wwctrl.processCommand();
+			}
+		}
+		/* Commands that run regardless of translator settings, but not during restarts or as console */
+		/* Keep these commands down here, otherwise checkSenderIdentity() will send a message when we don't want it to */
+		if (checkSenderIdentity(sender) && !translatorName.equals("Starting")) {
+			switch (command.getName()) {
+			case "wwcc":
+				// Configuration GUI
+				WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
+				return wwcc.processCommand();
 			}
 		}
 		return true;
@@ -510,7 +511,7 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/**
-	  * Checks a sender if they are console
+	  * Checks a sender if they are a player
 	  * @param sender - CommandSender to be checked
 	  * @return Boolean - Whether sender is allowed or not
 	  */
@@ -728,6 +729,10 @@ public class WorldwideChat extends JavaPlugin {
 	}
 	
 	/* Getters */
+	public ActiveTranslator getActiveTranslator(Player in) {
+		return getActiveTranslator(in.getUniqueId());
+	}
+	
 	public ActiveTranslator getActiveTranslator(UUID uuid) {
 		return getActiveTranslator(uuid.toString());
 	}

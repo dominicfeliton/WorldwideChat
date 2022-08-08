@@ -15,6 +15,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.event.player.PlayerLocaleChangeEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
@@ -25,6 +26,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import com.cryptomorin.xseries.XMaterial;
 import com.expl0itz.worldwidechat.WorldwideChat;
 import com.expl0itz.worldwidechat.inventory.TempItemInventory;
+import com.expl0itz.worldwidechat.util.ActiveTranslator;
 import com.expl0itz.worldwidechat.util.CommonDefinitions;
 import com.expl0itz.worldwidechat.util.OldVersionOpenBook;
 
@@ -37,13 +39,15 @@ public class TranslateInGameListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
+	/* PlayerChangedWorldEvent */
+	
 	/* Custom Entity Name Translation */
 	@EventHandler(priority = EventPriority.HIGHEST) 
 	public void onInGameEntityTranslateRequest(PlayerInteractEntityEvent event) {
 		if (main.isActiveTranslator(event.getPlayer()) && checkInventoryHand(event)) {
 			/* Entity Names */
 			try {
-				if (main.getActiveTranslator(event.getPlayer().getUniqueId().toString()).getTranslatingEntity() && event.getRightClicked().isValid()) {
+				if (main.getActiveTranslator(event.getPlayer()).getTranslatingEntity() && event.getRightClicked().isValid()) {
 					final String customName = event.getRightClicked().getCustomName();
 					BukkitRunnable out = new BukkitRunnable() {
 						@Override

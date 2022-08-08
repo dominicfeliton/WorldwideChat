@@ -32,6 +32,7 @@ public class LoadUserData implements Runnable {
 
 	@Override
 	public void run() {
+		//TODO: Sanitize for bad inputs; if data is bad, we definitely shouldn't add it
 		/* Load all saved user data */
 		CommonDefinitions.sendDebugMessage("Starting LoadUserData!!!");
 		File userDataFolder = new File(main.getDataFolder() + File.separator + "data" + File.separator);
