@@ -14,12 +14,16 @@
   </properties>
 
   <dependencies>
-         <!-- https://mvnrepository.com/artifact/com.github.seeseemelk/MockBukkit-v1.19, this dependency must be first -->
+        <!-- https://mvnrepository.com/artifact/com.github.seeseemelk/MockBukkit-v1.19, this dependency must be first 
+        Temp removed because not working properly anymore
+        -->
+        <!--
         <dependency>
             <groupId>com.github.seeseemelk</groupId>
             <artifactId>MockBukkit-v1.19</artifactId>
             <version>2.116.0</version>
         </dependency>
+        -->
         <dependency>
            <groupId>org.spigotmc</groupId>
            <artifactId>spigot-api</artifactId>
