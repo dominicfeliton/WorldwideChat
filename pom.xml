@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.expl0itz.worldwidechat</groupId>
+  <groupId>com.badskater0729.worldwidechat</groupId>
   <artifactId>WorldwideChat</artifactId>
   <version>1.14.0-SNAPSHOT</version>
 
@@ -333,96 +333,96 @@
                     <relocations>
                         <relocation>
                             <pattern>net.kyori.examination</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.net.kyori.examination</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.net.kyori.examination</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>net.kyori.adventure</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.net.kyori.adventure</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.net.kyori.adventure</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>org.apache</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.org.apache</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.org.apache</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.google.gson</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.google.gson</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.com.google.gson</shadedPattern>
                         </relocation>
                         <!-- Removed google cloud relocation. Relocating the API seems to break it...annoying, since another plugin who is using it may hate us but oh well -->
                         <relocation>
                             <pattern>mozilla</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.mozilla</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.mozilla</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.amazonaws</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.amazonaws</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.com.amazonaws</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.ibm</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.ibm</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.com.ibm</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.fasterxml.jackson</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.fasterxml.jackson</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.com.fasterxml.jackson</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>org.jsoup</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.org.jsoup</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.org.jsoup</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>fr.minuskube.inv</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.fr.minuskube.inv</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.fr.minuskube.inv</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>okio</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.okio</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.okio</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>okhttp3</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.okhttp3</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.okhttp3</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>org.joda.time</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.org.joda.time</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.org.joda.time</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>io.grpc</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.io.grpc</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.io.grpc</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>grpc</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.grpc</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.grpc</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>io.opencensus</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.io.opencensus</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.io.opencensus</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>org.threeten</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.org.threeten</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.org.threeten</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>kotlin</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.jetbrains.kotlin</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.jetbrains.kotlin</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.cryptomorin.xseries</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.cryptomorin.xseries</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.com.cryptomorin.xseries</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.zaxxer</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.zaxxer</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.com.zaxxer</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.mysql</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.mysql</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.com.mysql</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.github.benmanes</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.github.benmanes</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.com.github.benmanes</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.mongodb</pattern>
-                            <shadedPattern>com.expl0itz.worldwidechat.libs.com.mongodb</shadedPattern>
+                            <shadedPattern>com.badskater0729.worldwidechat.libs.com.mongodb</shadedPattern>
                         </relocation>
                     </relocations>
               </configuration>

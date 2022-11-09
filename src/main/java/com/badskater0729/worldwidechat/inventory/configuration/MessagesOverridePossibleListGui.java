@@ -1,0 +1,107 @@
+package com.badskater0729.worldwidechat.inventory.configuration;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.bukkit.ChatColor;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.conversations.ConversationFactory;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+
+import com.badskater0729.worldwidechat.WorldwideChat;
+import com.badskater0729.worldwidechat.conversations.configuration.ChatSettingsConvos;
+import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
+import com.badskater0729.worldwidechat.util.CommonDefinitions;
+import com.cryptomorin.xseries.XMaterial;
+
+import fr.minuskube.inv.ClickableItem;
+import fr.minuskube.inv.SmartInventory;
+import fr.minuskube.inv.content.InventoryContents;
+import fr.minuskube.inv.content.InventoryProvider;
+import fr.minuskube.inv.content.Pagination;
+import fr.minuskube.inv.content.SlotIterator;
+
+public class MessagesOverridePossibleListGui implements InventoryProvider {
+
+	private WorldwideChat main = WorldwideChat.instance;
+	
+	public static final SmartInventory overrideNewMessageSettings = SmartInventory.builder().id("overridePossibilitiesMenu")
+			.provider(new MessagesOverridePossibleListGui()).size(6, 9)
+			.manager(WorldwideChat.instance.getInventoryManager())
+			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatMessagesPossibleOverrides"))
+	        .build();
+	
+	@Override
+	public void init(Player player, InventoryContents contents) {
+		try {
+			/* Yellow stained glass borders */
+			WWCInventoryManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
+			
+			/* Pagination */
+			Pagination pagination = contents.pagination();
+			HashMap<String, String> messagesFromConfig = new HashMap<String, String>();
+			ClickableItem[] currentMessages = new ClickableItem[0];
+			FileConfiguration messagesConfig = main.getConfigManager().getMessagesConfig();
+			
+			for (String eaKey : messagesConfig.getConfigurationSection("Messages").getKeys(true)) {
+				messagesFromConfig.put(eaKey, messagesConfig.getString("Messages." + eaKey));
+			}
+			currentMessages = new ClickableItem[messagesFromConfig.size()];
+			
+			int currSpot = 0;
+			CommonDefinitions.sendDebugMessage("Adding all possible messages to inventory! Amount of messages: " + currentMessages.length);
+			for (Map.Entry<String, String> entry : messagesFromConfig.entrySet()) {
+				/* Init item, ensure pre-1.14 compatibility */
+				ItemStack currentEntry = XMaterial.OAK_SIGN.parseItem();
+				ItemMeta currentEntryMeta = currentEntry.getItemMeta();
+				
+				currentEntryMeta.setDisplayName(entry.getKey());
+				ArrayList<String> lore = new ArrayList<>();
+				if (messagesConfig.getString("Overrides." + entry.getKey()) != null) {
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwcConfigGUIMessagesAlreadyOverriden"));
+					WWCInventoryManager.addGlowEffect(currentEntryMeta);
+				}
+				lore.add(CommonDefinitions.getMessage("wwcConfigGUIMessagesOverrideOriginalLabel") + ": " + messagesConfig.getString("Messages." + entry.getKey()));
+				currentEntryMeta.setLore(lore);
+				currentEntry.setItemMeta(currentEntryMeta);
+				currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {
+					// Start conversation
+					ConversationFactory textConvo = new ConversationFactory(main).withModality(true)
+							.withFirstPrompt(new ChatSettingsConvos.ModifyOverrideText(MessagesOverridePossibleListGui.overrideNewMessageSettings, entry.getKey()));
+				    textConvo.buildConversation(player).begin();
+				});
+				currSpot++;
+			}
+			
+			/* 28 messages per page, start at 1, 1 */
+			pagination.setItems(currentMessages);
+			pagination.setItemsPerPage(28);
+			pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 1, 1).allowOverride(false));
+			
+			/* Bottom Left Option: Previous Page */
+			if (!pagination.isFirst()) {
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous");
+			} else {
+				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {MessagesOverrideCurrentListGui.overrideMessagesSettings});
+			}
+			
+			/* Bottom Right Option: Next Page */
+			if (!pagination.isLast()) {
+				WWCInventoryManager.setCommonButton(5, 6, player, contents, "Next");
+			}
+			
+			/* Last Option: Current Page Number */
+			WWCInventoryManager.setCommonButton(5, 8, player, contents, "Page Number", new String[] {pagination.getPage() + 1 + ""});
+			
+		} catch (Exception e) {
+			WWCInventoryManager.inventoryError(player, e);
+		}
+	}
+
+	@Override
+	public void update(Player player, InventoryContents contents) {}
+
+}
