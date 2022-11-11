@@ -168,7 +168,6 @@ public class WorldwideChat extends JavaPlugin {
 		instance = null;
 		CommonDefinitions.supportedMCVersions = null;
 		CommonDefinitions.supportedPluginLangCodes = null;
-		translatorFatalAbortSeconds = 0;
 
 		// All done.
 		getLogger().info("Disabled WorldwideChat version " + pluginVersion + ". Goodbye!");

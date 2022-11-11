@@ -28,36 +28,37 @@ public class ChatListener implements Listener {
 		try {
 			/* Original WWC functionality/Outgoing Messages */
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
+			String currInLang = currTranslator.getInLangCode();
+			String currOutLang = currTranslator.getOutLangCode();
 			if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
 					|| (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
-				String outMsg = CommonDefinitions.translateText(event.getMessage(), event.getPlayer());
-				event.setMessage(outMsg);
+				event.setMessage(CommonDefinitions.translateText(event.getMessage(), event.getPlayer()));
 			}
 			
 			/* New WWC functionality/Incoming Messages */
 			List<Player> unmodifiedMessageRecipients = new ArrayList<Player>();
 			for (Player eaRecipient : event.getRecipients()) {
 				ActiveTranslator testTranslator = main.getActiveTranslator(eaRecipient.getUniqueId());
+				String testInLang = testTranslator.getInLangCode();
+				String testOutLang = testTranslator.getOutLangCode();
 				if ((   /* Check if this testTranslator wants their incoming messages to be translated */
 						!currTranslator.getUUID().equals(testTranslator.getUUID()) && main.isActiveTranslator(eaRecipient) && testTranslator.getTranslatingChatIncoming())
 						/* Check if this testTranslator doesn't already want the current chat message */
-						&& !(currTranslator.getInLangCode().equals(testTranslator.getInLangCode())
-								&& currTranslator.getOutLangCode().equals(testTranslator.getOutLangCode()))) {
-					
+						&& !(currInLang.equals(testInLang) && currOutLang.equals(testOutLang))) {
 					/* Send the message in a new task, to avoid delaying the chat message for others */
 					BukkitRunnable chatHover = new BukkitRunnable() {
 						@Override
 						public void run() {
 							String translation = CommonDefinitions.translateText(event.getMessage() + " (Translated)", eaRecipient);
-							if (translation.contains(event.getMessage())) {
+							/*if (translation.contains(event.getMessage())) {
 								translation = event.getMessage();
-							}
+							}*/
 							String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
 							
 							TextComponent hoverOutMessage = Component.text()
 									.content(outMessageWithoutHover)
 									.build();
-			                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat") && !(translation.equals(event.getMessage()))) {
+			                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
 								hoverOutMessage = Component.text()
 										.content(outMessageWithoutHover)
 										.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))

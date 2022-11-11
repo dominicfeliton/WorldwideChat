@@ -1,5 +1,6 @@
 package com.badskater0729.worldwidechat.listeners;
 
+import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -25,15 +26,16 @@ public class InventoryListener implements Listener {
 		BukkitRunnable out = new BukkitRunnable() {
 			@Override
 			public void run() {
-				if (main.isPlayerUsingGUI(e.getPlayer().getUniqueId().toString()) && e.getPlayer().getOpenInventory().getType() != InventoryType.CHEST
-						&& !((Player) e.getPlayer()).isConversing()) {
+				HumanEntity currPlayer = e.getPlayer();
+				if (main.isPlayerUsingGUI(currPlayer.getUniqueId().toString()) && currPlayer.getOpenInventory().getType() != InventoryType.CHEST
+						&& !((Player) currPlayer).isConversing()) {
 					final TextComponent reloadPlease = Component.text()
 							.append(Component.text()
 									.content(CommonDefinitions.getMessage("wwcConfigGUIChangesNotSaved"))
 									.color(NamedTextColor.YELLOW))
 							.build();
-					CommonDefinitions.sendMessage(e.getPlayer(), reloadPlease);
-					main.removePlayerUsingConfigurationGUI((Player) e.getPlayer());
+					CommonDefinitions.sendMessage(currPlayer, reloadPlease);
+					main.removePlayerUsingConfigurationGUI((Player) currPlayer);
 				}
 			}
 		};

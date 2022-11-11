@@ -100,46 +100,47 @@ public class WWCStats extends BasicCommand {
 					}
 					
 					/* Process stats of target */
-					if (main.isPlayerRecord(inPlayer.getUniqueId())) {
-						// Is on record; continue
-						if (sender instanceof Player) {
-							final String targetUUID = inPlayer.getUniqueId().toString();
-							BukkitRunnable out = new BukkitRunnable() {
-								@Override
-								public void run() {
-									WWCStatsGuiMainMenu.getStatsMainMenu(targetUUID, inName).open((Player)sender);
-								}
-							};
-							CommonDefinitions.scheduleTask(out);
-						} else {
-							String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
-							PlayerRecord record = main
-									.getPlayerRecord(inPlayer.getUniqueId().toString(), false);
-							if (main.isActiveTranslator(inPlayer.getUniqueId())) {
-								// Is currently an active translator
-								isActiveTranslator = ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713";
-							}
-							final TextComponent stats = Component.text()
-									.append(Component.text()
-											.content(CommonDefinitions.getMessage("wwcsTitle", new String[] {inPlayer.getName()}))
-											.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
-									.append(Component.text()
-											.content("\n- " + CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {isActiveTranslator}))
-											.color(NamedTextColor.AQUA))
-									.append(Component.text()
-											.content("\n- " + CommonDefinitions.getMessage("wwcsAttemptedTranslations", new String[] {record.getAttemptedTranslations() + ""}))
-											.color(NamedTextColor.AQUA))
-									.append(Component.text()
-											.content("\n- " + CommonDefinitions.getMessage("wwcsSuccessfulTranslations", new String[] {record.getSuccessfulTranslations() + ""}))
-											.color(NamedTextColor.AQUA))
-									.append(Component.text()
-											.content("\n- " + CommonDefinitions.getMessage("wwcsLastTranslationTime", new String[] {record.getLastTranslationTime()}))
-											.color(NamedTextColor.AQUA))
-									.build();
-							CommonDefinitions.sendMessage(sender, stats);
-						}
-					} else {
+					// Check if PlayerRecord is valid
+					if (!main.isPlayerRecord(inPlayer.getUniqueId())) {
 						noRecordsMessage(inPlayer.getName());
+						return null;
+					}
+					// Is on record; continue
+					if (sender instanceof Player) {
+						final String targetUUID = inPlayer.getUniqueId().toString();
+						BukkitRunnable out = new BukkitRunnable() {
+							@Override
+							public void run() {
+								WWCStatsGuiMainMenu.getStatsMainMenu(targetUUID, inName).open((Player)sender);
+							}
+						};
+						CommonDefinitions.scheduleTask(out);
+					} else {
+						String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
+						PlayerRecord record = main
+								.getPlayerRecord(inPlayer.getUniqueId().toString(), false);
+						if (main.isActiveTranslator(inPlayer.getUniqueId())) {
+							// Is currently an active translator
+							isActiveTranslator = ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713";
+						}
+						final TextComponent stats = Component.text()
+								.append(Component.text()
+										.content(CommonDefinitions.getMessage("wwcsTitle", new String[] {inPlayer.getName()}))
+										.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
+								.append(Component.text()
+										.content("\n- " + CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {isActiveTranslator}))
+										.color(NamedTextColor.AQUA))
+								.append(Component.text()
+										.content("\n- " + CommonDefinitions.getMessage("wwcsAttemptedTranslations", new String[] {record.getAttemptedTranslations() + ""}))
+										.color(NamedTextColor.AQUA))
+								.append(Component.text()
+										.content("\n- " + CommonDefinitions.getMessage("wwcsSuccessfulTranslations", new String[] {record.getSuccessfulTranslations() + ""}))
+										.color(NamedTextColor.AQUA))
+								.append(Component.text()
+										.content("\n- " + CommonDefinitions.getMessage("wwcsLastTranslationTime", new String[] {record.getLastTranslationTime()}))
+										.color(NamedTextColor.AQUA))
+								.build();
+						CommonDefinitions.sendMessage(sender, stats);
 					}
 					return null;
 				};
