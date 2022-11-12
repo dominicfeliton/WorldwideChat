@@ -50,9 +50,6 @@ public class ChatListener implements Listener {
 						@Override
 						public void run() {
 							String translation = CommonDefinitions.translateText(event.getMessage() + " (Translated)", eaRecipient);
-							/*if (translation.contains(event.getMessage())) {
-								translation = event.getMessage();
-							}*/
 							String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
 							
 							TextComponent hoverOutMessage = Component.text()
