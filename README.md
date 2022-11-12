@@ -1,6 +1,6 @@
 # WorldwideChat 
-![](https://github.com/3xpl0itz/WorldwideChat/blob/main/resources/Banner.png)
-## ![Github Workflow Status](https://img.shields.io/github/workflow/status/3xpl0itz/WorldwideChat/Release%20Builds%20(Main%20Branch)?style=for-the-badge) ![Code lines](https://img.shields.io/tokei/lines/github/3xpl0itz/WorldwideChat?style=for-the-badge) ![Repo Size](https://img.shields.io/github/repo-size/3xpl0itz/WorldwideChat?style=for-the-badge) ![Pizza rolls](https://img.shields.io/badge/Mom%20brought%20pizza%20rolls-That's%20awesome-brightgreen?style=for-the-badge)
+![](https://github.com/BadSkater0729/WorldwideChat/blob/main/resources/Banner.png)
+## ![Github Workflow Status](https://img.shields.io/github/workflow/status/BadSkater0729/WorldwideChat/Release%20Builds%20(Main%20Branch)?style=for-the-badge) ![Code lines](https://img.shields.io/tokei/lines/github/BadSkater0729/WorldwideChat?style=for-the-badge) ![Repo Size](https://img.shields.io/github/repo-size/BadSkater0729/WorldwideChat?style=for-the-badge) ![Pizza rolls](https://img.shields.io/badge/Mom%20brought%20pizza%20rolls-That's%20awesome-brightgreen?style=for-the-badge)
 ### WorldwideChat is a translation plugin for Bukkit, Spigot, and PaperMC 1.13+.
 It allows you to translate various parts of Minecraft live using several Translation APIs.
 Some of its notable features include:
@@ -18,7 +18,7 @@ Some of its notable features include:
 And much more to come! 
 
 ## How to Setup
-Read the [Wiki](https://github.com/3xpl0itz/WorldwideChat/wiki). File an issue if you don't think something is working right!
+Read the [Wiki](https://github.com/BadSkater0729/WorldwideChat/wiki). File an issue if you don't think something is working right!
 
 ## Installation
 Download WorldwideChat from the Releases tab. View more info about it on its [SpigotMC](https://www.spigotmc.org/resources/worldwidechat.89910/) page.
