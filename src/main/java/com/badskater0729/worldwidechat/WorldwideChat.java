@@ -174,6 +174,7 @@ public class WorldwideChat extends JavaPlugin {
 	}
 	
 	/* Init all commands */
+	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		/* Commands that run regardless of translator settings, but not during restarts */
 		if (!translatorName.equals("Starting")) {
