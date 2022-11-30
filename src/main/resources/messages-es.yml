@@ -461,3 +461,5 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: Los argumentos opcionales se borraron
     correctamente.
   wwcConfigGUIMongoPortButton: Cambiar puerto de MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Se estableció un tiempo de espera asincrónico
+    fatal no válido. Con un valor predeterminado de 10 segundos...

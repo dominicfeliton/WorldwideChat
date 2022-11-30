@@ -71,6 +71,7 @@ Messages:
   wwcConfigInvalidTranslatorSettings: 'Invalid translator settings! Please enable only one translator in your config.yml.'
   wwcConfigEnabledDebugMode: 'Enabled DEBUG mode. If you are not a developer or troubleshooter, you should turn this off.'
   wwcConfigInvalidPrefixSettings: 'Failed to read your prefix. Using the default...'
+  wwcConfigInvalidFatalAsyncTimeout: 'Invalid fatal async timeout set. Defaulting to 10 seconds...'
   wwcConfigEnabledbStats: 'Enabled bStats.'
   wwcConfigDisabledbStats: 'Disabled bStats.'
   wwcConfigCacheEnabled: 'Translator cache enabled and set to a limit of %i.'
@@ -216,7 +217,6 @@ Messages:
   wwcConfigConversationSQLPortSuccess: 'Successfully changed the SQL port.'
   wwcConfigConversationSQLUsernameInput: 'The current username is %i. Type anything other than 0 to set a new username, or type 0 to go back.'
   wwcConfigConversationSQLUsernameSuccess: 'Successfully changed the SQL username.'
-  
   wwcConfigConversationToggleMongoSuccess: 'MongoDB toggled successfully. Reload for the change to take effect.'
   wwcConfigConversationMongoDatabaseNameInput: 'The current database name is %i. Type anything other than 0 to set a new database name, or type 0 to go back.'
   wwcConfigConversationMongoDatabaseNameSuccess: 'Successfully changed the MongoDB database name.'

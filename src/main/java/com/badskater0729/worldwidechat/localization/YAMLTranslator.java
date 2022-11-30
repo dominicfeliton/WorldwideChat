@@ -22,6 +22,8 @@ import com.amazonaws.services.translate.model.TranslateTextResult;
 
 public class YAMLTranslator {
 
+	// TODO: Common YAMLTranslator tool coming eventually
+	
 	// Local YAMLTranslator used for translating our localization files.
 	// This uses amazon translate exclusively.
 	// The code sucks. May revise it significantly someday, but since it's *only* for translating YAMLs before release who cares?
