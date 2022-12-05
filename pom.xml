@@ -167,6 +167,11 @@
       <artifactId>mongo-java-driver</artifactId>
       <version>3.12.11</version>
     </dependency>
+    <dependency>
+      <groupId>com.github.BadSkater0729</groupId>
+      <artifactId>YAMLTranslator</artifactId>
+      <version>db30244276</version>
+    </dependency>
   </dependencies>
 
   <repositories>
@@ -318,12 +323,6 @@
               </includes>
             </filter>
             <filter>
-              <artifact>mysql*</artifact>
-              <includes>
-                <include>**</include>
-              </includes>
-            </filter>
-            <filter>
               <artifact>com.github.ben-manes.caffeine:caffeine</artifact>
               <includes>
                 <include>**</include>
@@ -447,6 +446,15 @@
             <phase>verify</phase>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <mainClass>com.badskater0729.yamltranslator.YAMLTranslator</mainClass>
+          <cleanupDaemonThreads>false</cleanupDaemonThreads>
+        </configuration>
       </plugin>
     </plugins>
     <sourceDirectory>${basedir}/src/main/java</sourceDirectory>

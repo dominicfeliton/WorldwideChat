@@ -1,0 +1,26 @@
+#
+# __   __              _ _____                    _       _             
+# \ \ / /_ _ _ __ ___ | |_   _| __ __ _ _ __  ___| | __ _| |_ ___  _ __ 
+#  \ V / _` | '_ ` _ \| | | || '__/ _` | '_ \/ __| |/ _` | __/ _ \| '__|
+#   | | (_| | | | | | | | | || | | (_| | | | \__ \ | (_| | || (_) | |    - By BadSkater0729
+#   |_|\__,_|_| |_| |_|_| |_||_|  \__,_|_| |_|___/_|\__,_|\__\___/|_|   
+#  
+# Made mostly for internal use. Anyone is free to use this if they wish. 
+amazonAccessKey: fillinhere
+amazonSecretKey: fillinhere
+amazonRegion: us-east-2
+originalYAMLDir: fillinhere
+outputYAMLDir: fillinhere
+inputLang: en
+replacementValues:
+  (?i)BStats: bStats
+  (?i)WorldWideChat: WorldWideChat
+  (?i)WorldVideChat: WorldWideChat
+  (?i)WorldwideCat: WorldWideChat
+  (?i)WorldWide Chat: WorldWideChat
+  \%I: \%i
+  \%O: \%o
+  \%E: \%e
+  (?i)\% o: \%o
+  (?i)\% e: \%e
+  (?i)\% i: \%i
