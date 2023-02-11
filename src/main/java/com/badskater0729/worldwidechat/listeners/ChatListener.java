@@ -77,8 +77,6 @@ public class ChatListener implements Listener {
 			if (!CommonDefinitions.serverIsStopping()) {
 				throw e;
 			}
-			//CommonDefinitions.sendDebugMessage("We are reloading! Caught exception in ChatListener...");
-			//CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
 		}
 	}
 }

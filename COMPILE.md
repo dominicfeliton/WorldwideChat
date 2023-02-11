@@ -1,6 +1,11 @@
 # Compiling WWC
 
-Compiling this project is very straightforward. Import as a Maven Project in Eclipse/IntelliJ, then use the following Maven configuration for the most optimal compilation environment:
+Compiling this project is very straightforward. 
+
+First, make sure you put a YAMLTranslator configuration file in the root of the project, titled "yt-settings.yml."
+[You can view the default configuration values here.](https://github.com/BadSkater0729/YAMLTranslator/blob/main/src/main/resources/yt-settings.yml)
+
+Import as a Maven Project in Eclipse/IntelliJ, then use the following Maven configuration for the most optimal compilation environment:
 
 <code>com.github.ekryd.sortpom:sortpom-maven-plugin:sort exec:java clean package</code>
 

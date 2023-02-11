@@ -70,12 +70,14 @@ public class GoogleTranslation extends BasicTranslation {
 				outputLang = "es";
 				textToTranslate = "How are you?";
 			}
-			/* Convert input + output lang to lang code because this API is funky, man */
-			if (!isInitializing && !(inputLang.equals("None"))
-					&& !CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode().equals(inputLang)) {
-				inputLang = CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode();
-			}
-			if (!isInitializing && !CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
+			
+			/* Get language code of current input/output language. 
+			 * APIs generally recognize language codes (en, es, etc.)
+			 * instead of full names (English, Spanish) */
+			if (!isInitializing) {
+				if (!inputLang.equals("None")) {
+					inputLang = CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode();
+				}
 				outputLang = CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode();
 			}
 

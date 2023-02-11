@@ -26,6 +26,7 @@ import org.threeten.bp.Instant;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.translators.AmazonTranslation;
 import com.badskater0729.worldwidechat.translators.BasicTranslation;
+import com.badskater0729.worldwidechat.translators.DeepLTranslation;
 import com.badskater0729.worldwidechat.translators.GoogleTranslation;
 import com.badskater0729.worldwidechat.translators.LibreTranslation;
 import com.badskater0729.worldwidechat.translators.TestTranslation;
@@ -325,6 +326,12 @@ public class ConfigurationHandler {
 					outName = "Libre Translate";
 					test = new LibreTranslation(mainConfig.getString("Translator.libreAPIKey"),
 							mainConfig.getString("Translator.libreURL"), true);
+					test.useTranslator();
+					break;
+				} else if (mainConfig.getBoolean("Translator.useDeepLTranslate")) {
+					outName = "DeepL Translate";
+					test = new DeepLTranslation(mainConfig.getString("Translator.deeplAPIKey"),
+							mainConfig.getString("Translator.deeplURL"), true);
 					test.useTranslator();
 					break;
 				} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
