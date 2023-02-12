@@ -14,7 +14,6 @@ import com.badskater0729.worldwidechat.commands.WWCGlobal;
 import com.badskater0729.worldwidechat.commands.WWCTranslate;
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.cryptomorin.xseries.XMaterial;
 
 import fr.minuskube.inv.ClickableItem;
@@ -23,6 +22,8 @@ import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
 
 public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 
@@ -40,7 +41,7 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 		return SmartInventory.builder().id("translateTargetLanguage")
 				.provider(new WWCTranslateGuiTargetLanguage(source, targetPlayerUUID)).size(6, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUINewTranslationTarget"))
+				.title(ChatColor.BLUE + getMsg("wwctGUINewTranslationTarget"))
 				.build();
 	}
 
@@ -72,7 +73,7 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 				/* Add Glow Effect */
 				if (currTranslator.getOutLangCode().equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
 					WWCInventoryManager.addGlowEffect(currentLangMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				currentLangMeta.setDisplayName(main.getSupportedTranslatorLanguages().get(i).getLangName());
 				if (!main.getSupportedTranslatorLanguages().get(i).getNativeLangName().equals("")) {

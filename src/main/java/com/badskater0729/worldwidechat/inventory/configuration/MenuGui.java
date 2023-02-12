@@ -17,7 +17,6 @@ import com.badskater0729.worldwidechat.conversations.configuration.SQLSettingsCo
 import com.badskater0729.worldwidechat.conversations.configuration.TranslatorSettingsConvos;
 import com.badskater0729.worldwidechat.conversations.configuration.WatsonSettingsConvos;
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.badskater0729.worldwidechat.util.storage.MongoDBUtils;
 import com.badskater0729.worldwidechat.util.storage.SQLUtils;
 import com.cryptomorin.xseries.XMaterial;
@@ -25,6 +24,8 @@ import com.cryptomorin.xseries.XMaterial;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
 
 public class MenuGui implements InventoryProvider {
 	
@@ -355,7 +356,7 @@ public class MenuGui implements InventoryProvider {
 		return SmartInventory.builder().id(id)
 				.provider(this).size(x, y)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(col + CommonDefinitions.getMessage(titleTag, args))
+				.title(col + getMsg(titleTag, args))
 				.build();
 	}
 	
@@ -363,7 +364,7 @@ public class MenuGui implements InventoryProvider {
 		return SmartInventory.builder().id(id)
 		.provider(this).size(x, y)
 		.manager(WorldwideChat.instance.getInventoryManager())
-		.title(col + CommonDefinitions.getMessage(titleTag))
+		.title(col + getMsg(titleTag))
 		.build();
 	}
 	

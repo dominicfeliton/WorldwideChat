@@ -13,7 +13,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import com.badskater0729.worldwidechat.inventory.configuration.MenuGui.CONFIG_GUI_TAGS;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.cryptomorin.xseries.XMaterial;
 
 import fr.minuskube.inv.ClickableItem;
@@ -23,6 +22,9 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+
 public class MessagesOverrideCurrentListGui implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
@@ -30,7 +32,7 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 	public static final SmartInventory overrideMessagesSettings = SmartInventory.builder().id("overrideMessagesMenu")
 			.provider(new MessagesOverrideCurrentListGui()).size(6, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
-			.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcConfigGUIChatMessagesOverrideSettings"))
+			.title(ChatColor.BLUE + getMsg("wwcConfigGUIChatMessagesOverrideSettings"))
 	        .build();
 	
 	@Override
@@ -43,7 +45,7 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 			Pagination pagination = contents.pagination();
 			HashMap<String, String> overridesFromConfig = new HashMap<String, String>();
 			ClickableItem[] currentOverrides = new ClickableItem[0];
-			FileConfiguration messagesConfig = main.getConfigManager().getMessagesConfig();
+			FileConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
 			
 			if (messagesConfig.getConfigurationSection("Overrides") != null) {
 				for (String eaKey : messagesConfig.getConfigurationSection("Overrides").getKeys(true)) {
@@ -53,7 +55,7 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 			}
 			
 			if (!overridesFromConfig.isEmpty()) {
-				CommonDefinitions.sendDebugMessage("Adding existing overrides to inventory! Amount of overrides: " + currentOverrides.length);
+				debugMsg("Adding existing overrides to inventory! Amount of overrides: " + currentOverrides.length);
 				int currSpot = 0;
 				for (Map.Entry<String, String> entry : overridesFromConfig.entrySet()) {
 					ItemStack currentEntry = XMaterial.WRITABLE_BOOK.parseItem();
@@ -61,8 +63,8 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 					
 					currentEntryMeta.setDisplayName(entry.getKey());
 					ArrayList<String> lore = new ArrayList<>();
-					lore.add(CommonDefinitions.getMessage("wwcConfigGUIMessagesOverrideOriginalLabel") + ": " + (messagesConfig.getString("Messages." + entry.getKey()) != null ? messagesConfig.getString("Messages." + entry.getKey()) : CommonDefinitions.getMessage("wwcConfigGUIChatMessagesDeadOverride")));
-					lore.add(CommonDefinitions.getMessage("wwcConfigGUIMessagesOverrideCustomLabel") + ": " + entry.getValue());
+					lore.add(getMsg("wwcConfigGUIMessagesOverrideOriginalLabel") + ": " + (messagesConfig.getString("Messages." + entry.getKey()) != null ? messagesConfig.getString("Messages." + entry.getKey()) : getMsg("wwcConfigGUIChatMessagesDeadOverride")));
+					lore.add(getMsg("wwcConfigGUIMessagesOverrideCustomLabel") + ": " + entry.getValue());
 					currentEntryMeta.setLore(lore);
 					currentEntry.setItemMeta(currentEntryMeta);
 					currentOverrides[currSpot] = ClickableItem.of(currentEntry, e -> {

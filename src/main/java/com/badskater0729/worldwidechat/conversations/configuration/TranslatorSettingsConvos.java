@@ -7,9 +7,11 @@ import org.bukkit.entity.Player;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.configuration.MenuGui.CONFIG_GUI_TAGS;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 
 import net.md_5.bungee.api.ChatColor;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.genericConfigConvo;;
 
 public class TranslatorSettingsConvos {
 
@@ -20,12 +22,12 @@ public class TranslatorSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationCharacterLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.messageCharLimit")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationCharacterLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.messageCharLimit")});
 		}
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			return CommonDefinitions.genericConfigConversation(input.intValue() > 0, context, "wwcConfigConversationCharacterLimitSuccess", 
+			return genericConfigConvo(input.intValue() > 0, context, "wwcConfigConversationCharacterLimitSuccess", 
 					"Translator.messageCharLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
 	}
@@ -35,12 +37,12 @@ public class TranslatorSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationErrorLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.errorLimit")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationErrorLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.errorLimit")});
 		}
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			return CommonDefinitions.genericConfigConversation(input.intValue() > 0, context, "wwcConfigConversationErrorLimitSuccess", 
+			return genericConfigConvo(input.intValue() > 0, context, "wwcConfigConversationErrorLimitSuccess", 
 					"Translator.errorLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
 	}
@@ -50,12 +52,12 @@ public class TranslatorSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationRateLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.rateLimit")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationRateLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.rateLimit")});
 		}
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			return CommonDefinitions.genericConfigConversation(input.intValue() > -1, context, "wwcConfigConversationRateLimitSuccess", 
+			return genericConfigConvo(input.intValue() > -1, context, "wwcConfigConversationRateLimitSuccess", 
 					"Translator.rateLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
 	}
@@ -65,12 +67,12 @@ public class TranslatorSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationTranslationCacheInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationTranslationCacheInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize")});
 		}
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			return CommonDefinitions.genericConfigConversation(input.intValue() > -1, context, "wwcConfigConversationTranslationCacheSuccess", 
+			return genericConfigConvo(input.intValue() > -1, context, "wwcConfigConversationTranslationCacheSuccess", 
 					"Translator.translatorCacheSize", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
 	}

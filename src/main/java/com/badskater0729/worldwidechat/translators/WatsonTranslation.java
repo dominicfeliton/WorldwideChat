@@ -11,7 +11,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -22,6 +21,9 @@ import com.ibm.watson.language_translator.v3.LanguageTranslator;
 import com.ibm.watson.language_translator.v3.model.Languages;
 import com.ibm.watson.language_translator.v3.model.TranslateOptions;
 import com.ibm.watson.language_translator.v3.model.TranslationResult;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
 
 public class WatsonTranslation extends BasicTranslation {
 
@@ -85,8 +87,8 @@ public class WatsonTranslation extends BasicTranslation {
 				main.setSupportedTranslatorLanguages(outList);
 
 				if (outList.size() == 0) {
-					main.getLogger().warning(CommonDefinitions.getMessage("wwcBackupLangCodesWarning"));
-					CommonDefinitions.sendDebugMessage("---> Using backup codes!!! Fix this!!! <---");
+					main.getLogger().warning(getMsg("wwcBackupLangCodesWarning"));
+					debugMsg("---> Using backup codes!!! Fix this!!! <---");
 					setBackupCodes();
 				}
 				

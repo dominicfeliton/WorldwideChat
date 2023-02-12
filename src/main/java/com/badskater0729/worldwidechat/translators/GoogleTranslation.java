@@ -11,7 +11,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
 import com.google.cloud.translate.Detection;
 import com.google.cloud.translate.Language;
@@ -20,6 +19,8 @@ import com.google.cloud.translate.Translate.TranslateOption;
 import com.google.cloud.translate.Translation;
 
 import com.google.cloud.translate.TranslateOptions;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 
 public class GoogleTranslation extends BasicTranslation {
 
@@ -76,9 +77,9 @@ public class GoogleTranslation extends BasicTranslation {
 			 * instead of full names (English, Spanish) */
 			if (!isInitializing) {
 				if (!inputLang.equals("None")) {
-					inputLang = CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode();
+					inputLang = getSupportedTranslatorLang(inputLang).getLangCode();
 				}
-				outputLang = CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode();
+				outputLang = getSupportedTranslatorLang(outputLang).getLangCode();
 			}
 
 			/* Detect inputLang */

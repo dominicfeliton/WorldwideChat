@@ -14,7 +14,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.cryptomorin.xseries.XEnchantment;
 import com.cryptomorin.xseries.XMaterial;
 
@@ -28,6 +27,10 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.runAsync;
 
 public class WWCInventoryManager extends InventoryManager {
 	
@@ -43,21 +46,21 @@ public class WWCInventoryManager extends InventoryManager {
 			player.closeInventory();
 			final TextComponent targetPlayerDC = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwctGUITargetPlayerNull"))
+							.content(getMsg("wwctGUITargetPlayerNull"))
 							.color(NamedTextColor.RED).decorate(TextDecoration.ITALIC))
 					.build();
-			CommonDefinitions.sendMessage(player, targetPlayerDC);
+			sendMsg(player, targetPlayerDC);
 		}
 	}
 	
 	public static void inventoryError(Player player, Exception e) {
 		final TextComponent inventoryError = Component.text()
 				.append(Component.text().content(
-						CommonDefinitions.getMessage("wwcInventoryErrorPlayer"))
+						getMsg("wwcInventoryErrorPlayer"))
 						.color(NamedTextColor.RED))
 				.build();
-		CommonDefinitions.sendMessage(player, inventoryError);
-		main.getLogger().severe(CommonDefinitions.getMessage("wwcInventoryError", new String[] {player.getName()}));
+		sendMsg(player, inventoryError);
+		main.getLogger().severe(getMsg("wwcInventoryError", new String[] {player.getName()}));
 		e.printStackTrace();
 		player.closeInventory();
 	}
@@ -72,7 +75,7 @@ public class WWCInventoryManager extends InventoryManager {
 		if (buttonType.equalsIgnoreCase("Previous")) {
 			pageButton = XMaterial.RED_STAINED_GLASS.parseItem();
 			pageMeta.setDisplayName(ChatColor.RED
-					+ CommonDefinitions.getMessage("wwcConfigGUIPreviousPageButton"));
+					+ getMsg("wwcConfigGUIPreviousPageButton"));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
 				if (!contents.pagination().isFirst()) {
@@ -84,7 +87,7 @@ public class WWCInventoryManager extends InventoryManager {
 		} else if (buttonType.equalsIgnoreCase("Next")) {
 			pageButton = XMaterial.GREEN_STAINED_GLASS.parseItem();
 			pageMeta.setDisplayName(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigGUINextPageButton"));
+					+ getMsg("wwcConfigGUINextPageButton"));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
 				if (!contents.pagination().isLast()) {
@@ -96,7 +99,7 @@ public class WWCInventoryManager extends InventoryManager {
 		} else if (buttonType.equalsIgnoreCase("Page Number")) {
 			pageButton = XMaterial.LILY_PAD.parseItem();
 			pageMeta.setDisplayName(ChatColor.AQUA
-					+ CommonDefinitions.getMessage("wwcGUIPageNumber", (Arrays.copyOf(args, args.length, String[].class))));
+					+ getMsg("wwcGUIPageNumber", (Arrays.copyOf(args, args.length, String[].class))));
 			if (args[0].equals("1")) {
 				WWCInventoryManager.addGlowEffect(pageMeta);
 			}
@@ -106,7 +109,7 @@ public class WWCInventoryManager extends InventoryManager {
 			pageButton = XMaterial.BARRIER.parseItem();
 			pageMeta = pageButton.getItemMeta();
 			pageMeta.setDisplayName(ChatColor.RED
-					+ CommonDefinitions.getMessage("wwcConfigGUIQuitButton"));
+					+ getMsg("wwcConfigGUIQuitButton"));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
 				saveMainConfigAndReload(player, contents);
@@ -134,7 +137,7 @@ public class WWCInventoryManager extends InventoryManager {
 				main.reload(player, invalidState);
 			}
 		};
-		CommonDefinitions.scheduleTaskAsynchronously(out);
+		runAsync(out);
 	}
 	
 	public static void setBorders(InventoryContents contents, XMaterial inMaterial) {
@@ -162,7 +165,7 @@ public class WWCInventoryManager extends InventoryManager {
 		}
 		ItemMeta buttonMeta = button.getItemMeta();
 		buttonMeta.setDisplayName(ChatColor.GOLD
-				+ CommonDefinitions.getMessage(buttonName));
+				+ getMsg(buttonName));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			invToOpen.open(player);
@@ -181,7 +184,7 @@ public class WWCInventoryManager extends InventoryManager {
 			button = XMaterial.REDSTONE_BLOCK.parseItem();
 		}
 		ItemMeta buttonMeta = button.getItemMeta();
-		buttonMeta.setDisplayName(ChatColor.GOLD + CommonDefinitions.getMessage(configButtonName));
+		buttonMeta.setDisplayName(ChatColor.GOLD + getMsg(configButtonName));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			main.addPlayerUsingConfigurationGUI(player);
@@ -194,10 +197,10 @@ public class WWCInventoryManager extends InventoryManager {
 			}
 			final TextComponent successfulChange = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage(messageOnChange))
+							.content(getMsg(messageOnChange))
 							.color(NamedTextColor.GREEN))
 					.build();
-			CommonDefinitions.sendMessage(player, successfulChange);
+			sendMsg(player, successfulChange);
 			genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName);
 		}));
 	}
@@ -208,7 +211,7 @@ public class WWCInventoryManager extends InventoryManager {
 		ItemStack button = inMaterial.parseItem();
 		ItemMeta buttonMeta = button.getItemMeta();
 		buttonMeta.setDisplayName(ChatColor.GOLD
-				+ CommonDefinitions.getMessage(buttonName));
+				+ getMsg(buttonName));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			genericConversation.buildConversation(player).begin();

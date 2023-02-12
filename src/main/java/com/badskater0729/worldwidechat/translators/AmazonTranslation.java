@@ -21,8 +21,11 @@ import com.amazonaws.services.translate.AmazonTranslateClient;
 import com.amazonaws.services.translate.model.TranslateTextRequest;
 import com.amazonaws.services.translate.model.TranslateTextResult;
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 
 public class AmazonTranslation extends BasicTranslation {
 
@@ -82,8 +85,8 @@ public class AmazonTranslation extends BasicTranslation {
 				}
 				main.setSupportedTranslatorLanguages(supportedLangs);
 				if (supportedLangs.size() == 0) {
-					main.getLogger().warning(CommonDefinitions.getMessage("wwcBackupLangCodesWarning"));
-					CommonDefinitions.sendDebugMessage("---> Using backup codes!!! Fix this!!! <---");
+					main.getLogger().warning(getMsg("wwcBackupLangCodesWarning"));
+					debugMsg("---> Using backup codes!!! Fix this!!! <---");
 					setBackupCodes();
 				}
 
@@ -98,9 +101,9 @@ public class AmazonTranslation extends BasicTranslation {
 			 * instead of full names (English, Spanish) */
 			if (!isInitializing) {
 				if (!inputLang.equals("None")) {
-					inputLang = CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode();
+					inputLang = getSupportedTranslatorLang(inputLang).getLangCode();
 				}
-				outputLang = CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode();
+				outputLang = getSupportedTranslatorLang(outputLang).getLangCode();
 			}
 			
 			/* Actual translation */

@@ -8,12 +8,15 @@ import org.bukkit.entity.Player;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.configuration.MenuGui.CONFIG_GUI_TAGS;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.md_5.bungee.api.ChatColor;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.genericConfigConvo;;
 
 public class MongoSettingsConvos {
 
@@ -24,12 +27,12 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationMongoDatabaseNameInput", new String[] {main.getConfigManager().getMainConfig().getString("Storage.mongoDatabaseName")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationMongoDatabaseNameInput", new String[] {main.getConfigManager().getMainConfig().getString("Storage.mongoDatabaseName")});
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationMongoDatabaseNameSuccess", 
+			return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoDatabaseNameSuccess", 
 					new String[] {"Storage.mongoDatabaseName"}, new Object[] {input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
 		}
 	}
@@ -39,12 +42,12 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationMongoHostnameInput", new String[] {main.getConfigManager().getMainConfig().getString("Storage.mongoHostname")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationMongoHostnameInput", new String[] {main.getConfigManager().getMainConfig().getString("Storage.mongoHostname")});
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationMongoHostnameSuccess", 
+			return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoHostnameSuccess", 
 					new String[] {"Storage.mongoHostname"}, new Object[] {input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
 		}
 	}
@@ -54,7 +57,7 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationMongoOptionalArgsInput", new String[] {main.getConfigManager().getMainConfig().getList("Storage.mongoOptionalArgs") != null ? main.getConfigManager().getMainConfig().getList("Storage.mongoOptionalArgs").toString() : "empty"});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationMongoOptionalArgsInput", new String[] {main.getConfigManager().getMainConfig().getList("Storage.mongoOptionalArgs") != null ? main.getConfigManager().getMainConfig().getList("Storage.mongoOptionalArgs").toString() : "empty"});
 		}
 
 		@Override
@@ -63,13 +66,13 @@ private static WorldwideChat main = WorldwideChat.instance;
 				main.getConfigManager().getMainConfig().set("Storage.mongoOptionalArgs", new String[0]);
 				final TextComponent badChange = Component.text()
 						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcConfigConversationMongoOptionalArgsCleared"))
+								.content(getMsg("wwcConfigConversationMongoOptionalArgsCleared"))
 								.color(NamedTextColor.YELLOW))
 						.build();
-				CommonDefinitions.sendMessage((Player)context.getForWhom(), badChange);
+				sendMsg((Player)context.getForWhom(), badChange);
 				return this;
 			} else {
-				return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationMongoOptionalArgsSuccess", 
+				return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoOptionalArgsSuccess", 
 						new String[] {"Storage.mongoOptionalArgs"}, new Object[] {input.split(",")}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
 			}
 		}
@@ -80,12 +83,12 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationMongoPasswordInput", new String[] {main.getConfigManager().getMainConfig().getString("Storage.mongoPassword")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationMongoPasswordInput", new String[] {main.getConfigManager().getMainConfig().getString("Storage.mongoPassword")});
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationMongoPasswordSuccess", 
+			return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoPasswordSuccess", 
 					new String[] {"Storage.mongoPassword"}, new Object[] {input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
 		}
 	}
@@ -96,12 +99,12 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationMongoPortInput", new String[] {main.getConfigManager().getMainConfig().getString("Storage.mongoPort")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationMongoPortInput", new String[] {main.getConfigManager().getMainConfig().getString("Storage.mongoPort")});
 		}
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			return CommonDefinitions.genericConfigConversation(input.intValue() != 0, context, "wwcConfigConversationMongoPortSuccess", 
+			return genericConfigConvo(input.intValue() != 0, context, "wwcConfigConversationMongoPortSuccess", 
 					new String[] {"Storage.mongoPort"}, new Object[] {input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
 		}
 		
@@ -112,12 +115,12 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationMongoUsernameInput", new String[] {main.getConfigManager().getMainConfig().getString("Storage.mongoUsername")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationMongoUsernameInput", new String[] {main.getConfigManager().getMainConfig().getString("Storage.mongoUsername")});
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationMongoUsernameSuccess", 
+			return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoUsernameSuccess", 
 					new String[] {"Storage.mongoUsername"}, new Object[] {input}, CONFIG_GUI_TAGS.MONGO_SET.smartInv);
 		}
 	}

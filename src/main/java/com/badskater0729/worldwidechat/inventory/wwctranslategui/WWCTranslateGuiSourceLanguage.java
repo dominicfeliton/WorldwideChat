@@ -10,7 +10,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.cryptomorin.xseries.XMaterial;
 
 import fr.minuskube.inv.ClickableItem;
@@ -19,6 +18,8 @@ import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
 
 public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 
@@ -36,7 +37,7 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 		return SmartInventory.builder().id("translateSourceLanguage")
 				.provider(new WWCTranslateGuiSourceLanguage(s, targetPlayerUUID)).size(6, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUINewTranslationSource"))
+				.title(ChatColor.BLUE + getMsg("wwctGUINewTranslationSource"))
 				.build();
 	}
 
@@ -64,10 +65,10 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 				ArrayList<String> lore = new ArrayList<>();
 				if (selectedSourceLanguage.equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
 					WWCInventoryManager.addGlowEffect(currentLangMeta);
-					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
+					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + getMsg("wwctGUISourceTranslationSelected"));
 				} else if (currTranslator.getInLangCode().equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
 					WWCInventoryManager.addGlowEffect(currentLangMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				currentLangMeta.setDisplayName(main.getSupportedTranslatorLanguages().get(i).getLangName());
 				if (!main.getSupportedTranslatorLanguages().get(i).getNativeLangName().equals("")) {
@@ -94,16 +95,16 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 				ItemStack skipSourceButton = XMaterial.BOOKSHELF.parseItem();
 				ItemMeta skipSourceMeta = skipSourceButton.getItemMeta();
 				skipSourceMeta.setDisplayName(ChatColor.YELLOW
-						+ CommonDefinitions.getMessage("wwctGUIAutoDetectButton"));
+						+ getMsg("wwctGUIAutoDetectButton"));
 				
 				/* Add Glow Effect */
 				ArrayList<String> lore = new ArrayList<>();
 				if ((currTranslator.getInLangCode().equals("None"))) {
 					WWCInventoryManager.addGlowEffect(skipSourceMeta);
-					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
+					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + getMsg("wwctGUISourceTranslationSelected"));
 				} else if (selectedSourceLanguage.equalsIgnoreCase("None")) {
 					WWCInventoryManager.addGlowEffect(skipSourceMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				skipSourceButton.setItemMeta(skipSourceMeta);
 				contents.set(5, 4, ClickableItem.of(skipSourceButton, e -> WWCTranslateGuiTargetLanguage

@@ -25,11 +25,14 @@ import org.apache.http.message.BasicHeader;
 import org.apache.http.protocol.HTTP;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 
 public class LibreTranslation extends BasicTranslation {
 
@@ -104,8 +107,8 @@ public class LibreTranslation extends BasicTranslation {
 				main.setSupportedTranslatorLanguages(outList);
 				
 				if (outList.size() == 0) {
-					main.getLogger().warning(CommonDefinitions.getMessage("wwcBackupLangCodesWarning"));
-					CommonDefinitions.sendDebugMessage("---> Using backup codes!!! Fix this!!! <---");
+					main.getLogger().warning(getMsg("wwcBackupLangCodesWarning"));
+					debugMsg("---> Using backup codes!!! Fix this!!! <---");
 					setBackupCodes();
 				}
 
@@ -120,9 +123,9 @@ public class LibreTranslation extends BasicTranslation {
 			 * instead of full names (English, Spanish) */
 			if (!isInitializing) {
 				if (!inputLang.equals("None")) {
-					inputLang = CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode();
+					inputLang = getSupportedTranslatorLang(inputLang).getLangCode();
 				}
-				outputLang = CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode();
+				outputLang = getSupportedTranslatorLang(outputLang).getLangCode();
 			}
 			
 			/* Detect inputLang */
@@ -149,7 +152,7 @@ public class LibreTranslation extends BasicTranslation {
 	                String result = jsonTree.getAsJsonArray().get(0).getAsJsonObject().get("language").getAsString();
 				    inputLang = result;
 	            } else {
-	            	CommonDefinitions.sendDebugMessage("Failed..." + statusCode);
+	            	debugMsg("Failed..." + statusCode);
 	            	checkError(statusCode);
 	            }
 			}
@@ -178,7 +181,7 @@ public class LibreTranslation extends BasicTranslation {
                 String result = jsonTree.getAsJsonObject().get("translatedText").getAsString();
 			    return result;
             } else {
-            	CommonDefinitions.sendDebugMessage("Failed..." + statusCode);
+            	debugMsg("Failed..." + statusCode);
             	checkError(statusCode);
             }
 
@@ -191,15 +194,15 @@ public class LibreTranslation extends BasicTranslation {
 		case 400:
 		case 403:
 		case 429:
-			throw new Exception(CommonDefinitions.getMessage("libreHttp" + in));
+			throw new Exception(getMsg("libreHttp" + in));
 		default:
-			throw new Exception(CommonDefinitions.getMessage("libreHttpUnknown", new String[] {in + ""}));
+			throw new Exception(getMsg("libreHttpUnknown", new String[] {in + ""}));
 		}
 	}
 	
 	private String appendJsonEnding(String baseJson) {
 		if (System.getProperty("LIBRE_API_KEY") != null && !System.getProperty("LIBRE_API_KEY").equals("")) {
-			CommonDefinitions.sendDebugMessage("Using api key...");
+			debugMsg("Using api key...");
         	baseJson += ",\"api_key\":\"" + System.getProperty("LIBRE_API_KEY") + "\"}";
         } else {
         	baseJson += "}";

@@ -12,8 +12,9 @@ import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.isSupportedTranslatorLang;
 
 public class WWCTabCompleter implements TabCompleter {
 
@@ -44,9 +45,9 @@ public class WWCTabCompleter implements TabCompleter {
 					break;
 				}
 				if (args.length == 1
-						|| (args.length == 2 && (CommonDefinitions.isSupportedTranslatorLang(args[0])
+						|| (args.length == 2 && (isSupportedTranslatorLang(args[0])
 										|| Bukkit.getPlayerExact(args[0]) != null))
-						|| (args.length == 3 && CommonDefinitions.isSupportedTranslatorLang(args[1]) && Bukkit.getPlayerExact(args[0]) != null)) {
+						|| (args.length == 3 && isSupportedTranslatorLang(args[1]) && Bukkit.getPlayerExact(args[0]) != null)) {
 					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
 						out.add(eaObj.getLangName());
 						out.add(eaObj.getLangCode());
@@ -73,9 +74,9 @@ public class WWCTabCompleter implements TabCompleter {
 					break;
 				}
 				if (args.length == 1
-						|| (args.length == 2 && (CommonDefinitions.isSupportedTranslatorLang(args[0])
+						|| (args.length == 2 && (isSupportedTranslatorLang(args[0])
 										|| Bukkit.getPlayerExact(args[0]) != null))
-						|| (args.length == 3 && CommonDefinitions.isSupportedTranslatorLang(args[1]) && Bukkit.getPlayerExact(args[0]) != null)) {
+						|| (args.length == 3 && isSupportedTranslatorLang(args[1]) && Bukkit.getPlayerExact(args[0]) != null)) {
 					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
 						if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
 							out.add(eaObj.getLangName());
@@ -98,7 +99,7 @@ public class WWCTabCompleter implements TabCompleter {
 					break;
 				}
 				if (args.length == 1
-						|| (args.length == 2 && CommonDefinitions.isSupportedTranslatorLang(args[0]))) {
+						|| (args.length == 2 && isSupportedTranslatorLang(args[0]))) {
 					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
 						out.add(eaObj.getLangName());
 						out.add(eaObj.getLangCode());
@@ -114,7 +115,7 @@ public class WWCTabCompleter implements TabCompleter {
 					break;
 				}
 				if (args.length == 1
-						|| (args.length == 2 && CommonDefinitions.isSupportedTranslatorLang(args[0]))) {
+						|| (args.length == 2 && isSupportedTranslatorLang(args[0]))) {
 					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
 						if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
 							out.add(eaObj.getLangName());

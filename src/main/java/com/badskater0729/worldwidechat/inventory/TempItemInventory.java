@@ -5,7 +5,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.cryptomorin.xseries.XMaterial;
 
 import fr.minuskube.inv.ClickableItem;
@@ -13,6 +12,8 @@ import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import net.md_5.bungee.api.ChatColor;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
 
 public class TempItemInventory implements InventoryProvider {
 
@@ -24,7 +25,7 @@ public class TempItemInventory implements InventoryProvider {
 
 	public static SmartInventory getTempItemInventory(ItemStack displayedItem) {
 		return SmartInventory.builder().id("tempItemMenu").provider(new TempItemInventory(displayedItem)).size(5, 9)
-				.manager(WorldwideChat.instance.getInventoryManager()).title(ChatColor.DARK_BLUE + CommonDefinitions.getMessage("wwcGUITempItem"))
+				.manager(WorldwideChat.instance.getInventoryManager()).title(ChatColor.DARK_BLUE + getMsg("wwcGUITempItem"))
 				.build();
 	}
 

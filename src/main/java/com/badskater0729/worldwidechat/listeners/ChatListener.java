@@ -12,12 +12,15 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.event.HoverEvent;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.translateText;
+import static com.badskater0729.worldwidechat.util.CommonRefs.runAsync;
+import static com.badskater0729.worldwidechat.util.CommonRefs.serverIsStopping;
 
 public class ChatListener implements Listener {
 
@@ -32,7 +35,7 @@ public class ChatListener implements Listener {
 			String currOutLang = currTranslator.getOutLangCode();
 			if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
 					|| (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
-				event.setMessage(CommonDefinitions.translateText(event.getMessage(), event.getPlayer()));
+				event.setMessage(translateText(event.getMessage(), event.getPlayer()));
 			}
 			
 			/* New WWC functionality/Incoming Messages */
@@ -49,7 +52,7 @@ public class ChatListener implements Listener {
 					BukkitRunnable chatHover = new BukkitRunnable() {
 						@Override
 						public void run() {
-							String translation = CommonDefinitions.translateText(event.getMessage() + " (Translated)", eaRecipient);
+							String translation = translateText(event.getMessage() + " (Translated)", eaRecipient);
 							String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
 							
 							TextComponent hoverOutMessage = Component.text()
@@ -66,7 +69,7 @@ public class ChatListener implements Listener {
 							} catch (IllegalStateException e) {}
 						}
 					};
-					CommonDefinitions.scheduleTaskAsynchronously(chatHover);
+					runAsync(chatHover);
 				} else {
 					unmodifiedMessageRecipients.add(eaRecipient);
 				}
@@ -74,7 +77,7 @@ public class ChatListener implements Listener {
 			event.getRecipients().clear();
 			event.getRecipients().addAll(unmodifiedMessageRecipients);
 		} catch (Exception e) {
-			if (!CommonDefinitions.serverIsStopping()) {
+			if (!serverIsStopping()) {
 				throw e;
 			}
 		}

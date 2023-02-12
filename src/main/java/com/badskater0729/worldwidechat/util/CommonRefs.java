@@ -48,7 +48,7 @@ import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
 
-public class CommonDefinitions {
+public class CommonRefs {
 
 	/* Important vars */
 	private static WorldwideChat main = WorldwideChat.instance;
@@ -62,17 +62,17 @@ public class CommonDefinitions {
 			"sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy" };
 	
 	/* Getters */
-	public static void scheduleTaskAsynchronously(BukkitRunnable in) {
-		scheduleTaskAsynchronously(true, in);
+	public static void runAsync(BukkitRunnable in) {
+		runAsync(true, in);
 	}
 	
-	public static void scheduleTaskAsynchronously(boolean serverMustBeRunning, BukkitRunnable in) {
-		scheduleTaskAsynchronously(serverMustBeRunning, 0, in);
+	public static void runAsync(boolean serverMustBeRunning, BukkitRunnable in) {
+		runAsync(serverMustBeRunning, 0, in);
 	}
 	
-	public static void scheduleTaskAsynchronously(boolean serverMustBeRunning, int delay, BukkitRunnable in) {
+	public static void runAsync(boolean serverMustBeRunning, int delay, BukkitRunnable in) {
 		if (serverMustBeRunning) {
-			if (!CommonDefinitions.serverIsStopping()) {
+			if (!CommonRefs.serverIsStopping()) {
 				in.runTaskLaterAsynchronously(main, delay);
 			}
 		} else {
@@ -80,9 +80,9 @@ public class CommonDefinitions {
 		}
 	}
 	
-	public static void scheduleTaskAsynchronouslyRepeating(boolean serverMustBeRunning, int delay, int repeatTime, BukkitRunnable in) {
+	public static void runAsyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, BukkitRunnable in) {
 		if (serverMustBeRunning) {
-			if (!CommonDefinitions.serverIsStopping()) {
+			if (!CommonRefs.serverIsStopping()) {
 				in.runTaskTimerAsynchronously(main, delay, repeatTime);
 			}
 		} else {
@@ -90,21 +90,21 @@ public class CommonDefinitions {
 		}
 	}
 	
-	public static void scheduleTaskAsynchronouslyRepeating(boolean serverMustBeRunning, int repeatTime, BukkitRunnable in) {
-		scheduleTaskAsynchronouslyRepeating(serverMustBeRunning, 0, repeatTime, in);
+	public static void runAsyncRepeating(boolean serverMustBeRunning, int repeatTime, BukkitRunnable in) {
+		runAsyncRepeating(serverMustBeRunning, 0, repeatTime, in);
 	}
 	
-	public static void scheduleTask(BukkitRunnable in) {
-		scheduleTask(true, in);
+	public static void runSync(BukkitRunnable in) {
+		runSync(true, in);
 	}
 	
-	public static void scheduleTask(boolean serverMustBeRunning, BukkitRunnable in) {
-		scheduleTask(serverMustBeRunning, 0, in);
+	public static void runSync(boolean serverMustBeRunning, BukkitRunnable in) {
+		runSync(serverMustBeRunning, 0, in);
 	}
 	
-	public static void scheduleTask(boolean serverMustBeRunning, int delay, BukkitRunnable in) {
+	public static void runSync(boolean serverMustBeRunning, int delay, BukkitRunnable in) {
 		if (serverMustBeRunning) {
-			if (!CommonDefinitions.serverIsStopping()) {
+			if (!CommonRefs.serverIsStopping()) {
 				in.runTaskLater(main, delay);
 			}
 		} else {
@@ -112,9 +112,9 @@ public class CommonDefinitions {
 		}
 	}
 	
-	public static void scheduleTaskRepeating(boolean serverMustBeRunning, int delay, int repeatTime, BukkitRunnable in) {
+	public static void runSyncRepeating(boolean serverMustBeRunning, int delay, int repeatTime, BukkitRunnable in) {
 		if (serverMustBeRunning) {
-			if (!CommonDefinitions.serverIsStopping()) {
+			if (!CommonRefs.serverIsStopping()) {
 				in.runTaskTimer(main, delay, repeatTime);
 			}
 		} else {
@@ -122,8 +122,8 @@ public class CommonDefinitions {
 		}
 	}
 	
-	public static void scheduleTaskRepeating(boolean serverMustBeRunning, int repeatTime, BukkitRunnable in) {
-		scheduleTaskRepeating(serverMustBeRunning, 0, repeatTime, in);
+	public static void runSyncRepeating(boolean serverMustBeRunning, int repeatTime, BukkitRunnable in) {
+		runSyncRepeating(serverMustBeRunning, 0, repeatTime, in);
 	}
 	
 	/**
@@ -132,7 +132,7 @@ public class CommonDefinitions {
 	  * @param second - A valid language name
 	  * @return Boolean - Whether languages are the same or not
 	  */
-	public static boolean isSameLang(String first, String second) {
+	public static boolean isSameTranslatorLang(String first, String second) {
 		return isSupportedTranslatorLang(first) && isSupportedTranslatorLang(second) && getSupportedTranslatorLang(first).getLangCode().equals(getSupportedTranslatorLang(second).getLangCode());
 	}
 
@@ -177,7 +177,7 @@ public class CommonDefinitions {
 	/**
 	  * Closes all inventories registered by WorldwideChat.
 	  */
-	public static void closeAllInventories() {
+	public static void closeAllInvs() {
 		// Close all active GUIs
 		main.getPlayersUsingGUI().clear();
 		for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
@@ -198,7 +198,7 @@ public class CommonDefinitions {
 	  * Sends a debug message to console. Will only work when debug mode is set to true in the Console.
 	  * @param inMessage - The debug message that will be sent to the Console.
 	  */
-	public static void sendDebugMessage(String inMessage) {
+	public static void debugMsg(String inMessage) {
 		if (main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
 			main.getLogger().warning("DEBUG: " + inMessage);
 		}
@@ -209,8 +209,8 @@ public class CommonDefinitions {
 	 * @param messageName - The name of the message from messages-XX.yml.
 	 * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
 	 */
-	public static String getMessage(String messageName) {
-		return getMessage(messageName, new String[0]);
+	public static String getMsg(String messageName) {
+		return getMsg(messageName, new String[0]);
 	}
 	
 	/**
@@ -219,10 +219,10 @@ public class CommonDefinitions {
 	  * @param replacements - The list of replacement values that replace variables in the selected message. There is no sorting system; the list must be already sorted.
 	  * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
 	  */
-	public static String getMessage(String messageName, String[] replacements) {
+	public static String getMsg(String messageName, String[] replacements) {
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
-		YamlConfiguration messagesConfig = main.getConfigManager().getMessagesConfig();
+		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
 		if (messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
 			convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
 		} else {
@@ -249,7 +249,7 @@ public class CommonDefinitions {
 	  * @param originalMessage - The unformatted TextComponent that should be sent to sender.
 	  * @return
 	  */
-	public static void sendMessage(CommandSender sender, TextComponent originalMessage) {
+	public static void sendMsg(CommandSender sender, TextComponent originalMessage) {
 		try {
 			Audience adventureSender = main.adventure().sender(sender);
 			final TextComponent outMessage = Component.text().append(main.getPluginPrefix().asComponent())
@@ -272,7 +272,7 @@ public class CommonDefinitions {
 	  */
 	public static String translateText(String inMessage, Player currPlayer) {
 		/* If translator settings are invalid, do not do this... */
-		if (!(inMessage.length() > 0) || CommonDefinitions.serverIsStopping()) {
+		if (!(inMessage.length() > 0) || CommonRefs.serverIsStopping()) {
 			return inMessage;
 		}
 		
@@ -280,7 +280,7 @@ public class CommonDefinitions {
 		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 		Callable<String> result = () -> {
 			/* Detect color codes in message */
-			detectColorCodePresence(inMessage, currPlayer);
+			detectColorCodes(inMessage, currPlayer);
 
 			/* Modify or create new player record */
 			PlayerRecord currPlayerRecord = main
@@ -303,10 +303,10 @@ public class CommonDefinitions {
 			int limit = mainConfig.getInt("Translator.messageCharLimit");
 			if (inMessage.length() > limit) {
 				final TextComponent charLimit = Component.text()
-						.append(Component.text().content(CommonDefinitions.getMessage("wwcCharLimit", new String[] {"" + limit}))
+						.append(Component.text().content(CommonRefs.getMsg("wwcCharLimit", new String[] {"" + limit}))
 								.color(NamedTextColor.YELLOW))
 						.build();
-				CommonDefinitions.sendMessage(currPlayer, charLimit);
+				CommonRefs.sendMsg(currPlayer, charLimit);
 				return inMessage;
 			}
 			
@@ -329,13 +329,13 @@ public class CommonDefinitions {
 
 			// Get permission from Bukkit API synchronously, since we do not want to risk
 			// concurrency problems
-			if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !CommonDefinitions.serverIsStopping()) {
+			if (!main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator") && !CommonRefs.serverIsStopping()) {
 				try {
 					permissionCheck = Bukkit.getScheduler().callSyncMethod(main, () -> {
 						return checkForRateLimitPermissions(currPlayer);
 					}).get(3, TimeUnit.SECONDS);
 				} catch (TimeoutException | InterruptedException e) {
-					CommonDefinitions.sendDebugMessage("Timeout from rate limit permission check should never happen, unless the server is stopping or /reloading. "
+					CommonRefs.debugMsg("Timeout from rate limit permission check should never happen, unless the server is stopping or /reloading. "
 							+ "If it isn't, and we can't fetch a user permission in less than ~2.5 seconds, we have a problem.");
 					return inMessage;
 				}
@@ -378,7 +378,7 @@ public class CommonDefinitions {
 
 			/* Begin actual translation, set message to output */
 			String out = inMessage;
-			CommonDefinitions.sendDebugMessage("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
+			CommonRefs.debugMsg("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
 			switch (main.getTranslatorName()) {
 			case "Watson":
 				WatsonTranslation watsonInstance = new WatsonTranslation(inMessage,
@@ -408,7 +408,7 @@ public class CommonDefinitions {
 				break;
 			default:
 				// Get here if we are adding a new translation service
-				CommonDefinitions.sendDebugMessage("No valid translator currently in use, according to translateText(). Returning original message to " + currPlayer.getName() + "...");
+				CommonRefs.debugMsg("No valid translator currently in use, according to translateText(). Returning original message to " + currPlayer.getName() + "...");
 				return inMessage;
 			}
 
@@ -434,28 +434,28 @@ public class CommonDefinitions {
 			/* Sanitize error before proceeding to write it to errorLog */
 			if (e instanceof InterruptedException || main.getTranslatorName().equals("Starting")) {
 				// If we are getting stopped by onDisable, end this immediately.
-				CommonDefinitions.sendDebugMessage("Interrupted translateText(), or server state is changing...");
+				CommonRefs.debugMsg("Interrupted translateText(), or server state is changing...");
 				return inMessage;
 			} else if (e instanceof ExecutionException && (e.getCause() != null) && isNoConfidenceException(e.getCause())) {
 				// If the translator has low confidence
-				CommonDefinitions.sendDebugMessage("Low confidence from current translator!");
+				CommonRefs.debugMsg("Low confidence from current translator!");
 				return inMessage;
 			} else if (e instanceof TimeoutException) {
 				// If we get a timeoutexception
-				sendTimeoutExceptionMessage(currPlayer);
+				sendTimeoutExceptionMsg(currPlayer);
 				return inMessage;
 			}
 			
 			/* Add 1 to error count */
 			main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
 			final TextComponent playerError = Component.text()
-					.append(Component.text().content(CommonDefinitions.getMessage("wwcTranslatorError"))
+					.append(Component.text().content(CommonRefs.getMsg("wwcTranslatorError"))
 							.color(NamedTextColor.RED))
 					.build();
-			CommonDefinitions.sendMessage(currPlayer, playerError);
+			CommonRefs.sendMsg(currPlayer, playerError);
 			main.getLogger()
-					.severe(CommonDefinitions.getMessage("wwcTranslatorErrorConsole", new String[] {currPlayer.getName()}));
-			CommonDefinitions.sendDebugMessage(ExceptionUtils.getStackTrace(e));
+					.severe(CommonRefs.getMsg("wwcTranslatorErrorConsole", new String[] {currPlayer.getName()}));
+			CommonRefs.debugMsg(ExceptionUtils.getStackTrace(e));
 
 			/* Write to log file */
 			File errorLog = new File(main.getDataFolder(), "errorLog.txt");
@@ -473,12 +473,12 @@ public class CommonDefinitions {
 			} catch (IOException e1) {
 				e1.printStackTrace();
 			}
-			CommonDefinitions.sendDebugMessage("Error Count: " + main.getTranslatorErrorCount());
+			CommonRefs.debugMsg("Error Count: " + main.getTranslatorErrorCount());
 			
 			/* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
 			if (main.getTranslatorErrorCount() >= mainConfig.getInt("Translator.errorLimit")) {
-				main.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReached"));
-				main.getLogger().severe(CommonDefinitions.getMessage("wwcTranslatorErrorThresholdReachedCheckLogs"));
+				main.getLogger().severe(CommonRefs.getMsg("wwcTranslatorErrorThresholdReached"));
+				main.getLogger().severe(CommonRefs.getMsg("wwcTranslatorErrorThresholdReachedCheckLogs"));
 				main.reload();
 			}
 			process.cancel(true);
@@ -495,13 +495,13 @@ public class CommonDefinitions {
 	 * @param sender - Who will receive the message
 	 * @return Returns false, so that a command can return this method.
 	 */
-	public static boolean sendNoConsoleChatMessage(CommandSender sender) {
+	public static boolean sendNoConsoleChatMsg(CommandSender sender) {
 		final TextComponent noConsoleChat = Component.text() // Cannot translate console chat
 				.append(Component.text()
-						.content(CommonDefinitions.getMessage("wwctCannotTranslateConsole", new String[0]))
+						.content(CommonRefs.getMsg("wwctCannotTranslateConsole", new String[0]))
 						.color(NamedTextColor.RED))
 				.build();
-		CommonDefinitions.sendMessage(sender, noConsoleChat);
+		CommonRefs.sendMsg(sender, noConsoleChat);
 		return false;
 	}
 	
@@ -510,16 +510,16 @@ public class CommonDefinitions {
 	 * @param sender - Who will receive the message besides console.
 	 * @return Returns true, so that a command can return this method.
 	 */
-	public static boolean sendTimeoutExceptionMessage(CommandSender sender) {
+	public static boolean sendTimeoutExceptionMsg(CommandSender sender) {
 		if (sender instanceof Player) {
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcTimeoutExceptionConsole", new String[] {sender.getName()}));
+			main.getLogger().warning(CommonRefs.getMsg("wwcTimeoutExceptionConsole", new String[] {sender.getName()}));
 		}
 		final TextComponent timeoutException = Component.text()
 				.append(Component.text()
-						.content(CommonDefinitions.getMessage("wwcTimeoutException"))
+						.content(CommonRefs.getMsg("wwcTimeoutException"))
 						.color(NamedTextColor.YELLOW))
 				.build();
-		CommonDefinitions.sendMessage(sender, timeoutException);
+		CommonRefs.sendMsg(sender, timeoutException);
 		return true;
 	}
 	
@@ -536,7 +536,7 @@ public class CommonDefinitions {
 				public void run() {}
 			}.runTask(main);
 		} catch (Exception e) {
-			CommonDefinitions.sendDebugMessage("Server is stopping! Don't run a task/do any dumb shit.");
+			CommonRefs.debugMsg("Server is stopping! Don't run a task/do any dumb shit.");
 			return true;
 		}
 		return false;
@@ -552,7 +552,7 @@ public class CommonDefinitions {
 	  * @param prevInventory - The previous inventory to open up after the conversation is over
 	  * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation. If the length of configValName != the length of configVal, then null is returned.
 	  */
-	public static Prompt genericConfigConversation(boolean preCheck, ConversationContext context, String successfulChangeMsg, String configValName[], Object[] configVal, SmartInventory prevInventory) {
+	public static Prompt genericConfigConvo(boolean preCheck, ConversationContext context, String successfulChangeMsg, String configValName[], Object[] configVal, SmartInventory prevInventory) {
 		if (configValName.length != configVal.length) {
 			return null;
 		}
@@ -563,10 +563,10 @@ public class CommonDefinitions {
 			main.addPlayerUsingConfigurationGUI(((Player)context.getForWhom()).getUniqueId());
 			final TextComponent successfulChange = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage(successfulChangeMsg))
+							.content(CommonRefs.getMsg(successfulChangeMsg))
 							.color(NamedTextColor.GREEN))
 					.build();
-			CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
+			CommonRefs.sendMsg((Player)context.getForWhom(), successfulChange);
 		}
 		/* Re-open previous GUI */
 		prevInventory.open((Player)context.getForWhom());
@@ -583,8 +583,8 @@ public class CommonDefinitions {
 	  * @param prevInventory - The previous inventory to open up after the conversation is over
 	  * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation.
 	  */
-	public static Prompt genericConfigConversation(boolean preCheck, ConversationContext context, String successfulChangeMsg, String configValName, Object configVal, SmartInventory prevInventory) {
-		return genericConfigConversation(preCheck, context, successfulChangeMsg, new String[] {configValName}, new Object[] {configVal}, prevInventory);
+	public static Prompt genericConfigConvo(boolean preCheck, ConversationContext context, String successfulChangeMsg, String configValName, Object configVal, SmartInventory prevInventory) {
+		return genericConfigConvo(preCheck, context, successfulChangeMsg, new String[] {configValName}, new Object[] {configVal}, prevInventory);
 	}
 	
 	/**
@@ -596,7 +596,7 @@ public class CommonDefinitions {
 	    // instanceof() doesn't seem to work here...this sucks, but it works
 		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
 		if (exceptionMessage != null && exceptionMessage.contains("confidence")) {
-			CommonDefinitions.sendDebugMessage("No confidence exception message: " + exceptionMessage);
+			CommonRefs.debugMsg("No confidence exception message: " + exceptionMessage);
 			return true;
 		}
 		return false;
@@ -607,17 +607,17 @@ public class CommonDefinitions {
 	  * @param inMessage - Message to be checked
 	  * @param currPlayer - Player that sent the message
 	  */
-	private static void detectColorCodePresence(String inMessage, Player currPlayer) {
+	private static void detectColorCodes(String inMessage, Player currPlayer) {
 		if ((inMessage.contains("&") && !main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"))
 				&& !(main.getActiveTranslator(currPlayer.getUniqueId().toString())
 						.getCCWarning())) // check if user has already been sent CC warning
 		{
 			final TextComponent watsonCCWarning = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("watsonColorCodeWarning"))
+							.content(CommonRefs.getMsg("watsonColorCodeWarning"))
 							.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
 					.build();
-			CommonDefinitions.sendMessage(currPlayer, watsonCCWarning);
+			CommonRefs.sendMsg(currPlayer, watsonCCWarning);
 			// Set got CC warning of current translator to true, so that they don't get
 			// spammed by it if they keep using CCs
 			main.getActiveTranslator(currPlayer.getUniqueId().toString())
@@ -639,11 +639,11 @@ public class CommonDefinitions {
 			Instant currTime = Instant.now();
 			if (currTime.compareTo(previous.plus(delay, ChronoUnit.SECONDS)) < 0) {
 				final TextComponent rateLimit = Component.text()
-						.append(Component.text().content(CommonDefinitions.getMessage("wwcRateLimit", new String[] {"" + ChronoUnit.SECONDS.between(currTime,
+						.append(Component.text().content(CommonRefs.getMsg("wwcRateLimit", new String[] {"" + ChronoUnit.SECONDS.between(currTime,
 								previous.plus(delay, ChronoUnit.SECONDS))}))
 								.color(NamedTextColor.YELLOW))
 						.build();
-				CommonDefinitions.sendMessage(sender, rateLimit);
+				CommonRefs.sendMsg(sender, rateLimit);
 				return false;
 			} else {
 				currActiveTranslator.setRateLimitPreviousTime(Instant.now());

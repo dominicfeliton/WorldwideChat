@@ -18,7 +18,6 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.wwcstatsgui.WWCStatsGuiMainMenu;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.badskater0729.worldwidechat.util.PlayerRecord;
 
 import net.kyori.adventure.text.Component;
@@ -26,6 +25,12 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.md_5.bungee.api.ChatColor;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.runAsync;
+import static com.badskater0729.worldwidechat.util.CommonRefs.sendTimeoutExceptionMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.runSync;
 
 public class WWCStats extends BasicCommand {
 
@@ -44,10 +49,10 @@ public class WWCStats extends BasicCommand {
 			// Not enough/too many args
 			final TextComponent invalidArgs = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwctInvalidArgs"))
+							.content(getMsg("wwctInvalidArgs"))
 							.color(NamedTextColor.RED))
 					.build();
-			CommonDefinitions.sendMessage(sender, invalidArgs);
+			sendMsg(sender, invalidArgs);
 		}
 
 		/* Get Sender Stats */
@@ -79,12 +84,12 @@ public class WWCStats extends BasicCommand {
 					} else {
 						final TextComponent playerNotFound = Component.text()
 								.append(Component
-										.text().content(CommonDefinitions.getMessage("wwcPlayerNotFound", new String[] {args[0]}))
+										.text().content(getMsg("wwcPlayerNotFound", new String[] {args[0]}))
 										.color(NamedTextColor.RED))
 								.build();
 						/* Don't run API against invalid long names */
 						if (inName.length() > 16 || inName.length() < 3) {
-							CommonDefinitions.sendMessage(sender, playerNotFound);
+							sendMsg(sender, playerNotFound);
 							return null;
 						}
 						inPlayer = Bukkit.getPlayer(inName);
@@ -94,7 +99,7 @@ public class WWCStats extends BasicCommand {
 						/* getOfflinePlayer always returns a player, so we must check if this player has played on this server */
 						if (!inPlayer.hasPlayedBefore()) {
 							// Target player not found
-							CommonDefinitions.sendMessage(sender, playerNotFound);
+							sendMsg(sender, playerNotFound);
 							return null;
 						}
 					}
@@ -114,7 +119,7 @@ public class WWCStats extends BasicCommand {
 								WWCStatsGuiMainMenu.getStatsMainMenu(targetUUID, inName).open((Player)sender);
 							}
 						};
-						CommonDefinitions.scheduleTask(out);
+						runSync(out);
 					} else {
 						String isActiveTranslator = ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
 						PlayerRecord record = main
@@ -125,22 +130,22 @@ public class WWCStats extends BasicCommand {
 						}
 						final TextComponent stats = Component.text()
 								.append(Component.text()
-										.content(CommonDefinitions.getMessage("wwcsTitle", new String[] {inPlayer.getName()}))
+										.content(getMsg("wwcsTitle", new String[] {inPlayer.getName()}))
 										.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
 								.append(Component.text()
-										.content("\n- " + CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {isActiveTranslator}))
+										.content("\n- " + getMsg("wwcsIsActiveTranslator", new String[] {isActiveTranslator}))
 										.color(NamedTextColor.AQUA))
 								.append(Component.text()
-										.content("\n- " + CommonDefinitions.getMessage("wwcsAttemptedTranslations", new String[] {record.getAttemptedTranslations() + ""}))
+										.content("\n- " + getMsg("wwcsAttemptedTranslations", new String[] {record.getAttemptedTranslations() + ""}))
 										.color(NamedTextColor.AQUA))
 								.append(Component.text()
-										.content("\n- " + CommonDefinitions.getMessage("wwcsSuccessfulTranslations", new String[] {record.getSuccessfulTranslations() + ""}))
+										.content("\n- " + getMsg("wwcsSuccessfulTranslations", new String[] {record.getSuccessfulTranslations() + ""}))
 										.color(NamedTextColor.AQUA))
 								.append(Component.text()
-										.content("\n- " + CommonDefinitions.getMessage("wwcsLastTranslationTime", new String[] {record.getLastTranslationTime()}))
+										.content("\n- " + getMsg("wwcsLastTranslationTime", new String[] {record.getLastTranslationTime()}))
 										.color(NamedTextColor.AQUA))
 								.build();
-						CommonDefinitions.sendMessage(sender, stats);
+						sendMsg(sender, stats);
 					}
 					return null;
 				};
@@ -152,7 +157,7 @@ public class WWCStats extends BasicCommand {
 					/* Get translation */
 					 process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 				} catch (TimeoutException | ExecutionException | InterruptedException e) {
-					if (e instanceof TimeoutException) {CommonDefinitions.sendTimeoutExceptionMessage(sender);};
+					if (e instanceof TimeoutException) {sendTimeoutExceptionMsg(sender);};
 					process.cancel(true);
 					this.cancel();
 					return;
@@ -161,16 +166,16 @@ public class WWCStats extends BasicCommand {
 				}
 			}
 		};
-		CommonDefinitions.scheduleTaskAsynchronously(translatorMessage);
+		runAsync(translatorMessage);
 	}
 	
 	private boolean noRecordsMessage(String name) {
 		final TextComponent playerNotFound = Component.text() // No records found
 				.append(Component
-						.text().content(CommonDefinitions.getMessage("wwcsNotATranslator", new String[] {name}))
+						.text().content(getMsg("wwcsNotATranslator", new String[] {name}))
 						.color(NamedTextColor.RED))
 				.build();
-		CommonDefinitions.sendMessage(sender, playerNotFound);
+		sendMsg(sender, playerNotFound);
 		return true;
 	}
 

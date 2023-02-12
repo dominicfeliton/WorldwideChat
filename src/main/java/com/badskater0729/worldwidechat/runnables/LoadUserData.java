@@ -17,7 +17,6 @@ import org.threeten.bp.Instant;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.badskater0729.worldwidechat.util.PlayerRecord;
 import com.badskater0729.worldwidechat.util.storage.MongoDBUtils;
 import com.badskater0729.worldwidechat.util.storage.SQLUtils;
@@ -26,22 +25,27 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.isSupportedTranslatorLang;
+import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
+
 public class LoadUserData implements Runnable {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
 	@Override
 	public void run() {
-		//TODO: Sanitize for bad inputs; if data is bad, we definitely shouldn't add it
+		//TODO: Sanitize for bad inputs/accommodate for obj upgrades; if data is bad, we definitely shouldn't add it
 		/* Load all saved user data */
-		CommonDefinitions.sendDebugMessage("Starting LoadUserData!!!");
+		debugMsg("Starting LoadUserData!!!");
 		File userDataFolder = new File(main.getDataFolder() + File.separator + "data" + File.separator);
 		File statsFolder = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
 		userDataFolder.mkdir();
 		statsFolder.mkdir();
 
 		/* Load user records (/wwcs) */
-		CommonDefinitions.sendDebugMessage("Loading user records or /wwcs...");
+		debugMsg("Loading user records or /wwcs...");
 		if (SQLUtils.isConnected()) {
 			try {
 				/* Create tables if they do not exist already */
@@ -126,7 +130,7 @@ public class LoadUserData implements Runnable {
 		}
 
 		/* Load user files (last translation session, etc.) */
-		CommonDefinitions.sendDebugMessage("Loading user data or /wwct...");
+		debugMsg("Loading user data or /wwct...");
 		if (SQLUtils.isConnected()) {
 			try {
 				// Load ActiveTranslator using SQL
@@ -234,22 +238,22 @@ public class LoadUserData implements Runnable {
 			}
 		}
 		main.getLogger().info(ChatColor.LIGHT_PURPLE
-				+ CommonDefinitions.getMessage("wwcUserDataReloaded"));
+				+ getMsg("wwcUserDataReloaded"));
 	}
 	
 	private boolean validLangCodes(String inLang, String outLang) {
 		// If inLang is invalid
-		if ((!inLang.equalsIgnoreCase("None") && !CommonDefinitions.isSupportedTranslatorLang(inLang))
+		if ((!inLang.equalsIgnoreCase("None") && !isSupportedTranslatorLang(inLang))
 				|| (inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
 			return false;
 		}
 		// If outLang code is not supported with current translator
-		if (!CommonDefinitions.isSupportedTranslatorLang(outLang)) {
+		if (!isSupportedTranslatorLang(outLang)) {
 			return false;
 		}
 		// If inLang and outLang codes are equal
-		if (CommonDefinitions.getSupportedTranslatorLang(outLang).getLangCode().equals(CommonDefinitions.getSupportedTranslatorLang(inLang).getLangCode())) {
-		    CommonDefinitions.sendDebugMessage("Langs are the same?");
+		if (getSupportedTranslatorLang(outLang).getLangCode().equals(getSupportedTranslatorLang(inLang).getLangCode())) {
+		    debugMsg("Langs are the same?");
 			return false;
 		}
 		return true;

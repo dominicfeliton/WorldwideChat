@@ -10,11 +10,14 @@ import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.runSync;
 
 public class InventoryListener implements Listener {
 
@@ -31,14 +34,14 @@ public class InventoryListener implements Listener {
 						&& !((Player) currPlayer).isConversing()) {
 					final TextComponent reloadPlease = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwcConfigGUIChangesNotSaved"))
+									.content(getMsg("wwcConfigGUIChangesNotSaved"))
 									.color(NamedTextColor.YELLOW))
 							.build();
-					CommonDefinitions.sendMessage(currPlayer, reloadPlease);
+					sendMsg(currPlayer, reloadPlease);
 					main.removePlayerUsingConfigurationGUI((Player) currPlayer);
 				}
 			}
 		};
-		CommonDefinitions.scheduleTask(true, 10, out);
+		runSync(true, 10, out);
 	}
 }

@@ -13,13 +13,14 @@ import com.badskater0729.worldwidechat.commands.WWCTranslateChatIncoming;
 import com.badskater0729.worldwidechat.commands.WWCTranslateChatOutgoing;
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.cryptomorin.xseries.XMaterial;
 
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
 
 public class WWCTranslateGuiChatMenu implements InventoryProvider {
 
@@ -34,7 +35,7 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
 	/* Get translation info */
 	public static SmartInventory getTranslateChatMenu(String targetPlayerUUID) {
 		String playerTitle = "";
-		playerTitle = ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUIChatMenu", new String[] {WorldwideChat.instance.getServer()
+		playerTitle = ChatColor.BLUE + getMsg("wwctGUIChatMenu", new String[] {WorldwideChat.instance.getServer()
 				.getPlayer(UUID.fromString(targetPlayerUUID)).getName()});
 		return SmartInventory.builder().id("translateChatMenu").provider(new WWCTranslateGuiChatMenu(targetPlayerUUID))
 				.size(4, 9).manager(WorldwideChat.instance.getInventoryManager()).title(playerTitle).build();
@@ -59,10 +60,10 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
 				if (targetTranslator.getTranslatingChatOutgoing()) {
 					WWCInventoryManager.addGlowEffect(outgoingChatMeta);
 					outgoingChatMeta.setDisplayName(ChatColor.GREEN
-							+ CommonDefinitions.getMessage("wwctGUIChatOutgoingButton"));
+							+ getMsg("wwctGUIChatOutgoingButton"));
 				} else {
 					outgoingChatMeta.setDisplayName(ChatColor.YELLOW
-							+ CommonDefinitions.getMessage("wwctGUIChatOutgoingButton"));
+							+ getMsg("wwctGUIChatOutgoingButton"));
 				}
 				outgoingChatButton.setItemMeta(outgoingChatMeta);
 				contents.set(1, 3, ClickableItem.of(outgoingChatButton, e -> {
@@ -80,10 +81,10 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
     			if (targetTranslator.getTranslatingChatIncoming()) {
     				WWCInventoryManager.addGlowEffect(incomingChatMeta);
     				incomingChatMeta.setDisplayName(ChatColor.GREEN
-    						+ CommonDefinitions.getMessage("wwctGUIChatIncomingButton"));
+    						+ getMsg("wwctGUIChatIncomingButton"));
     			} else {
     				incomingChatMeta.setDisplayName(ChatColor.YELLOW
-    						+ CommonDefinitions.getMessage("wwctGUIChatIncomingButton"));
+    						+ getMsg("wwctGUIChatIncomingButton"));
     			}
     			incomingChatButton.setItemMeta(incomingChatMeta);
     			contents.set(1, 5, ClickableItem.of(incomingChatButton, e -> {
