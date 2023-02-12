@@ -19,5 +19,5 @@ If you do not want the POM to be sorted automatically, you really only need thes
 
 <code>clean package</code>
 
-Let me know if you have any questions.
-
+Let me know if you have any questions!
+_- BadSkater0729_

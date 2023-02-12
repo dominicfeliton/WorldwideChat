@@ -48,7 +48,7 @@ public class WWCTabCompleter implements TabCompleter {
 						|| (args.length == 2 && (isSupportedTranslatorLang(args[0])
 										|| Bukkit.getPlayerExact(args[0]) != null))
 						|| (args.length == 3 && isSupportedTranslatorLang(args[1]) && Bukkit.getPlayerExact(args[0]) != null)) {
-					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
+					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLangs()) {
 						out.add(eaObj.getLangName());
 						out.add(eaObj.getLangCode());
 					}
@@ -77,7 +77,7 @@ public class WWCTabCompleter implements TabCompleter {
 						|| (args.length == 2 && (isSupportedTranslatorLang(args[0])
 										|| Bukkit.getPlayerExact(args[0]) != null))
 						|| (args.length == 3 && isSupportedTranslatorLang(args[1]) && Bukkit.getPlayerExact(args[0]) != null)) {
-					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
+					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLangs()) {
 						if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
 							out.add(eaObj.getLangName());
 						}
@@ -100,7 +100,7 @@ public class WWCTabCompleter implements TabCompleter {
 				}
 				if (args.length == 1
 						|| (args.length == 2 && isSupportedTranslatorLang(args[0]))) {
-					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
+					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLangs()) {
 						out.add(eaObj.getLangName());
 						out.add(eaObj.getLangCode());
 					}
@@ -116,7 +116,7 @@ public class WWCTabCompleter implements TabCompleter {
 				}
 				if (args.length == 1
 						|| (args.length == 2 && isSupportedTranslatorLang(args[0]))) {
-					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLanguages()) {
+					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLangs()) {
 						if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
 							out.add(eaObj.getLangName());
 						}

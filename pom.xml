@@ -162,6 +162,11 @@
       <artifactId>YAMLTranslator</artifactId>
       <version>edd0ba96da</version>
     </dependency>
+    <dependency>
+      <groupId>com.deepl.api</groupId>
+      <artifactId>deepl-java</artifactId>
+      <version>1.1.0</version>
+    </dependency>
   </dependencies>
 
   <repositories>
@@ -236,7 +241,7 @@
               <include>com.google.api*</include>
               <include>com.google.auth:*</include>
               <include>com.google.cloud:google-cloud-translate</include>
-              <include>org.threeten:threetenbp</include>
+              <include>org.threeten:*</include>
               <include>io.opencensus:opencensus*</include>
               <include>io.grpc:*</include>
               <include>com.ibm.watson:natural-language-classifier</include>
@@ -275,6 +280,7 @@
               <include>com.github.ben-manes.caffeine:caffeine</include>
               <include>com.squareup.okio:okio-jvm</include>
               <include>org.mongodb:mongo-java-driver</include>
+              <include>com.deepl.api:*</include>
             </includes>
           </artifactSet>
           <filters>
@@ -412,6 +418,14 @@
             <relocation>
               <pattern>com.mongodb</pattern>
               <shadedPattern>com.badskater0729.worldwidechat.libs.com.mongodb</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>com.deepl</pattern>
+              <shadedPattern>com.badskater0729.worldwidechat.libs.com.deepl</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>org.bson</pattern>
+              <shadedPattern>com.badskater0729.worldwidechat.libs.org.bson</shadedPattern>
             </relocation>
           </relocations>
         </configuration>

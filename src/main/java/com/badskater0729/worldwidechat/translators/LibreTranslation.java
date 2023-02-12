@@ -16,6 +16,7 @@ import java.util.concurrent.TimeoutException;
 import javax.net.ssl.HttpsURLConnection;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -92,12 +93,13 @@ public class LibreTranslation extends BasicTranslation {
 				    
 				    scanner.close();
 				    
+				    // Get lang code/name, remove spaces from name
 				    JsonElement jsonTree = JsonParser.parseString(inLine);
 					for (JsonElement element : jsonTree.getAsJsonArray()) {
 						JsonObject eaProperty = (JsonObject) element;
 						outList.add(new SupportedLanguageObject(
 								eaProperty.get("code").getAsString(),
-								eaProperty.get("name").getAsString()));
+								StringUtils.deleteWhitespace(eaProperty.get("name").getAsString())));
 					}
 				} else {
 					checkError(listResponseCode);

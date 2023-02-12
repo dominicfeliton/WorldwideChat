@@ -55,29 +55,29 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 			
 			/* Pagination: Lets you generate pages rather than set defined ones */
 			Pagination pagination = contents.pagination();
-			ClickableItem[] listOfAvailableLangs = new ClickableItem[main.getSupportedTranslatorLanguages().size()];
+			ClickableItem[] listOfAvailableLangs = new ClickableItem[main.getSupportedTranslatorLangs().size()];
 
 			/* Add each supported language from each respective translator */
-			for (int i = 0; i < main.getSupportedTranslatorLanguages().size(); i++) {
+			for (int i = 0; i < main.getSupportedTranslatorLangs().size(); i++) {
 				ItemStack currentLang = XMaterial.BOOK.parseItem();
 				ItemMeta currentLangMeta = currentLang.getItemMeta();
 				/* Add Glow Effect */
 				ArrayList<String> lore = new ArrayList<>();
-				if (selectedSourceLanguage.equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
+				if (selectedSourceLanguage.equals(main.getSupportedTranslatorLangs().get(i).getLangCode())) {
 					WWCInventoryManager.addGlowEffect(currentLangMeta);
 					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + getMsg("wwctGUISourceTranslationSelected"));
-				} else if (currTranslator.getInLangCode().equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
+				} else if (currTranslator.getInLangCode().equals(main.getSupportedTranslatorLangs().get(i).getLangCode())) {
 					WWCInventoryManager.addGlowEffect(currentLangMeta);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
-				currentLangMeta.setDisplayName(main.getSupportedTranslatorLanguages().get(i).getLangName());
-				if (!main.getSupportedTranslatorLanguages().get(i).getNativeLangName().equals("")) {
-					lore.add(main.getSupportedTranslatorLanguages().get(i).getNativeLangName());
+				currentLangMeta.setDisplayName(main.getSupportedTranslatorLangs().get(i).getLangName());
+				if (!main.getSupportedTranslatorLangs().get(i).getNativeLangName().equals("")) {
+					lore.add(main.getSupportedTranslatorLangs().get(i).getNativeLangName());
 				}
-				lore.add(main.getSupportedTranslatorLanguages().get(i).getLangCode());
+				lore.add(main.getSupportedTranslatorLangs().get(i).getLangCode());
 				currentLangMeta.setLore(lore);
 				currentLang.setItemMeta(currentLangMeta);
-				String thisLangCode = main.getSupportedTranslatorLanguages().get(i).getLangCode();
+				String thisLangCode = main.getSupportedTranslatorLangs().get(i).getLangCode();
 				listOfAvailableLangs[i] = ClickableItem.of(currentLang, e -> {
 					WWCTranslateGuiTargetLanguage.getTargetLanguageInventory(thisLangCode, targetPlayerUUID)
 							.open(player);

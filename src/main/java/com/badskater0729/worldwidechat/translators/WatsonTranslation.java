@@ -10,6 +10,8 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import org.apache.commons.lang3.StringUtils;
+
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
 import com.google.gson.JsonArray;
@@ -75,9 +77,14 @@ public class WatsonTranslation extends BasicTranslation {
 				for (JsonElement element : dataJson) {
 					if (((JsonObject) element).get("supported_as_source").getAsBoolean()
 							&& ((JsonObject) element).get("supported_as_target").getAsBoolean()) {
+						// TODO: Report bug, Chinese is not supported (but not excluded by IBM)...
+						// For now, exclude:
+						if (((JsonObject) element).get("language_name").getAsString().contains("Chinese")) {
+							continue;
+						}
 						outList.add(new SupportedLanguageObject(((JsonObject) element).get("language").getAsString(),
-								((JsonObject) element).get("language_name").getAsString(),
-								((JsonObject) element).get("native_language_name").getAsString(),
+								StringUtils.deleteWhitespace(((JsonObject) element).get("language_name").getAsString()),
+								StringUtils.deleteWhitespace(((JsonObject) element).get("native_language_name").getAsString()),
 								((JsonObject) element).get("supported_as_source").getAsBoolean(),
 								((JsonObject) element).get("supported_as_target").getAsBoolean()));
 					}

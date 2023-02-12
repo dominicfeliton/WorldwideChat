@@ -72,9 +72,9 @@ import static com.badskater0729.worldwidechat.util.CommonRefs.supportedMCVersion
 
 public class WorldwideChat extends JavaPlugin {
 	public static int translatorFatalAbortSeconds = 10;
+	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
+	public static int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
 	public static final int bStatsID = 10562;
-	public static final int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
-	public static final int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
 	
 	public static WorldwideChat instance;
 	
@@ -806,7 +806,7 @@ public class WorldwideChat extends JavaPlugin {
 		return playersUsingConfigurationGUI;
 	}
 	
-	public List<SupportedLanguageObject> getSupportedTranslatorLanguages() {
+	public List<SupportedLanguageObject> getSupportedTranslatorLangs() {
 		return supportedLanguages;
 	}
 

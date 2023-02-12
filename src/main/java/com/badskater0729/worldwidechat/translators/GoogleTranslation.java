@@ -10,6 +10,8 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import org.apache.commons.lang3.StringUtils;
+
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
 import com.google.cloud.translate.Detection;
@@ -60,7 +62,8 @@ public class GoogleTranslation extends BasicTranslation {
 				/* Parse languages */
 				List<SupportedLanguageObject> outList = new ArrayList<SupportedLanguageObject>();
 				for (Language eaLang : allLanguages) {
-					outList.add(new SupportedLanguageObject(eaLang.getCode(), eaLang.getName(), "", true, true));
+					// Remove spaces from language name
+					outList.add(new SupportedLanguageObject(eaLang.getCode(), StringUtils.deleteWhitespace(eaLang.getName()), "", true, true));
 				}
 
 				/* Set languages list */

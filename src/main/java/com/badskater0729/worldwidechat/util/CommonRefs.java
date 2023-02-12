@@ -27,12 +27,15 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.threeten.bp.Instant;
 import org.threeten.bp.LocalDate;
 import org.threeten.bp.LocalTime;
+import org.threeten.bp.ZoneId;
 import org.threeten.bp.format.DateTimeFormatter;
 import org.threeten.bp.temporal.ChronoUnit;
+import org.threeten.bp.zone.ZoneRulesException;
 
 import com.amazonaws.util.StringUtils;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.translators.AmazonTranslation;
+import com.badskater0729.worldwidechat.translators.DeepLTranslation;
 import com.badskater0729.worldwidechat.translators.GoogleTranslation;
 import com.badskater0729.worldwidechat.translators.LibreTranslation;
 import com.badskater0729.worldwidechat.translators.TestTranslation;
@@ -133,7 +136,8 @@ public class CommonRefs {
 	  * @return Boolean - Whether languages are the same or not
 	  */
 	public static boolean isSameTranslatorLang(String first, String second) {
-		return isSupportedTranslatorLang(first) && isSupportedTranslatorLang(second) && getSupportedTranslatorLang(first).getLangCode().equals(getSupportedTranslatorLang(second).getLangCode());
+		return isSupportedTranslatorLang(first) && isSupportedTranslatorLang(second) 
+				&& getSupportedTranslatorLang(first).getLangCode().equals(getSupportedTranslatorLang(second).getLangCode());
 	}
 
 	/**
@@ -142,8 +146,9 @@ public class CommonRefs {
 	  * @return SupportedLanguageObject - Will be completely empty if the language is invalid
 	  */
 	public static SupportedLanguageObject getSupportedTranslatorLang(String in) {
-		for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
-			if ((eaLang.getLangCode().equalsIgnoreCase(in) || eaLang.getLangName().equalsIgnoreCase(in))) {
+		for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLangs()) {
+			if ((eaLang.getLangCode().equalsIgnoreCase(in) || eaLang.getLangName().equalsIgnoreCase(in))
+					&& eaLang.getSupportedAsSource() && eaLang.getSupportedAsTarget()) {
 				return eaLang;
 			}
 		}
@@ -165,7 +170,7 @@ public class CommonRefs {
 	  */
 	public static String getFormattedValidLangCodes() {
 		String out = "\n";
-		for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLanguages()) {
+		for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLangs()) {
 			out += "(" + eaLang.getLangCode() + " - " + eaLang.getLangName() + "), ";
 		}
 		if (out.indexOf(",") != -1) {
@@ -379,6 +384,7 @@ public class CommonRefs {
 			/* Begin actual translation, set message to output */
 			String out = inMessage;
 			CommonRefs.debugMsg("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
+			//TODO: compress this...
 			switch (main.getTranslatorName()) {
 			case "Watson":
 				WatsonTranslation watsonInstance = new WatsonTranslation(inMessage,
@@ -401,6 +407,11 @@ public class CommonRefs {
 						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
 				out = libreTranslateInstance.useTranslator();
 				break;
+			case "DeepL Translate":
+				DeepLTranslation deeplTranslateInstance = new DeepLTranslation(inMessage,
+						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
+			    out = deeplTranslateInstance.useTranslator();
+			    break;
 			case "JUnit/MockBukkit Testing Translator":
 				TestTranslation testTranslator = new TestTranslation(inMessage, currActiveTranslator.getInLangCode(),
 						currActiveTranslator.getOutLangCode());
@@ -461,10 +472,19 @@ public class CommonRefs {
 			File errorLog = new File(main.getDataFolder(), "errorLog.txt");
 			try {
 				FileWriter fw = new FileWriter(errorLog, true);
-				LocalDate date = LocalDate.now();
-				LocalTime time = LocalTime.now();
-				String dateStr = date.format(DateTimeFormatter.ofPattern("EEEE, MMMM dd, yyyy - "))
+				String dateStr = "";
+				try {
+				    debugMsg(ZoneId.systemDefault().toString());
+				    LocalDate date = LocalDate.now();
+				    LocalTime time = LocalTime.now();
+				    dateStr = date.format(DateTimeFormatter.ofPattern("EEEE, MMMM dd, yyyy - "))
 						+ time.format(DateTimeFormatter.ofPattern("hh:mm:ss a"));
+				} catch (ZoneRulesException noTZ) {
+					// This error occurs when we can't fetch the local TZ for whatever reason.
+					// If this error happens on all machines then it may be something I have to further investigate.
+					// For now, only seems to happen on my macOS device.
+					dateStr = "(Unable to fetch local TZ, so here's an ugly date) - " + Instant.now();
+				}
 
 				fw.write("========== " + dateStr + " ==========");
 				fw.write(System.getProperty("line.separator"));

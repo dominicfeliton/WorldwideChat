@@ -174,6 +174,8 @@ public class ConfigurationHandler {
 		try {
 			if (mainConfig.getInt("General.fatalAsyncTaskTimeout") > 7) {
 				WorldwideChat.translatorFatalAbortSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout");
+				WorldwideChat.translatorConnectionTimeoutSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout") - 2;
+				WorldwideChat.asyncTasksTimeoutSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout") - 2;
 			} else {
 				main.getLogger().warning(getMsg("wwcConfigInvalidFatalAsyncTimeout"));
 			}
@@ -335,8 +337,7 @@ public class ConfigurationHandler {
 					break;
 				} else if (mainConfig.getBoolean("Translator.useDeepLTranslate")) {
 					outName = "DeepL Translate";
-					test = new DeepLTranslation(mainConfig.getString("Translator.deeplAPIKey"),
-							mainConfig.getString("Translator.deeplURL"), true);
+					test = new DeepLTranslation(mainConfig.getString("Translator.deeplAPIKey"), true);
 					test.useTranslator();
 					break;
 				} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {

@@ -49,6 +49,8 @@ Translator:
   useLibreTranslate: false
   libreAPIKey: none
   libreURL: libre_url_goes_here
+  useDeepLTranslate: false
+  deeplAPIKey: deepl_key_goes_here
   translatorCacheSize: 100
   rateLimit: 0
   messageCharLimit: 255

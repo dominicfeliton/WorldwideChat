@@ -133,11 +133,11 @@ public class WWCTranslate extends BasicCommand {
 			}
 		}
 
-		/* Player has given us one argument */
+		/* NEW TRANSLATION SESSION: Player has given us one argument */
 		if (args.length == 1) {
 			/* If the sender is a player */
 			if (!isConsoleSender) {
-				return startNewTranslationSession(isGlobal ? "GLOBAL-TRANSLATE-ENABLED" : ((Player)sender).getUniqueId().toString(), "None", args[0]);
+				return startNewTranslationSession(isGlobal ? "GLOBAL-TRANSLATE-ENABLED" : ((Player)sender).getName(), "None", args[0]);
 			}
 			/* If we are console... */
 			if (isGlobal) {
@@ -152,24 +152,25 @@ public class WWCTranslate extends BasicCommand {
 				/* If we are passing two languages (or attempting to pass two languages) */
 				if (Bukkit.getPlayerExact(args[0]) == null) {
 					if (!isConsoleSender) {
-						return startNewTranslationSession(((Player)sender).getUniqueId().toString(), args[0], args[1]);
+						return startNewTranslationSession(((Player)sender).getName(), args[0], args[1]);
 					}
 					return sendNoConsoleChatMsg(sender);
 				/* If we are attempting to pass a player and an outLang */
 				}
-				return startNewTranslationSession(Bukkit.getPlayer(args[0]).getUniqueId().toString(), "None", args[1]);
+				return startNewTranslationSession(args[0], "None", args[1]);
 			}
 			return startNewTranslationSession("GLOBAL-TRANSLATE-ENABLED", args[0], args[1]);
 		}
 		
 		/* Player has given us three arguments */
 		if (args.length == 3) {
-			return startNewTranslationSession(Bukkit.getPlayer(args[0]).getUniqueId().toString(), args[1], args[2]);
+			return startNewTranslationSession(args[0], args[1], args[2]);
 		}
 		return false;
 	}
 	
-	private boolean startNewTranslationSession(String inUUID, String inLang, String outLang) {
+	private boolean startNewTranslationSession(String inName, String inLang, String outLang) {
+		// Check if inLang/outLang are the same
 		if (isSameTranslatorLang(inLang, outLang)) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
@@ -179,8 +180,12 @@ public class WWCTranslate extends BasicCommand {
 			sendMsg(sender, sameLangError);
 			return false;
 		}
-		/* Do not let users use None inputLang with Amazon Translate, remove this if we ever find a workaround for error */
-		if ((!inLang.equalsIgnoreCase("None") && !isSupportedTranslatorLang(inLang)) || (inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
+		/* NOTICE:
+		 * Do not let users use None inputLang with Amazon Translate. 
+		 * Remove this if we ever find a workaround for each. */
+		// Check if valid inLang
+		if ((!inLang.equalsIgnoreCase("None") && !isSupportedTranslatorLang(inLang)) || 
+				(inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
 							getMsg("wwctInvalidInputLangCode", new String[] {getFormattedValidLangCodes()}))
@@ -189,6 +194,7 @@ public class WWCTranslate extends BasicCommand {
 			sendMsg(sender, sameLangError);
 			return false;
 		}
+		// Check if valid outLang
 		if (!isSupportedTranslatorLang(outLang)) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
@@ -198,18 +204,22 @@ public class WWCTranslate extends BasicCommand {
 			sendMsg(sender, sameLangError);
 			return false;
 		}
+		// Check if target is valid player (if not global)
+		// Set UUID if valid, else exit
+		String inUUID = "";
 		Player targetPlayer = null;
 		if (!isGlobal) {
-			targetPlayer = Bukkit.getPlayer(UUID.fromString(inUUID));
-		}
-		if (!isGlobal && targetPlayer == null) {
-			final TextComponent playerNotFound = Component.text() // Target player not found
-					.append(Component.text()
-							.content(getMsg("wwcPlayerNotFound", new String[] {Bukkit.getPlayer(UUID.fromString(inUUID)).getName()}))
-							.color(NamedTextColor.RED))
-					.build();
-			sendMsg(sender, playerNotFound);
-			return false;
+			targetPlayer = Bukkit.getPlayerExact(inName);
+			if (targetPlayer == null) {
+				final TextComponent playerNotFound = Component.text() // Target player not found
+						.append(Component.text()
+								.content(getMsg("wwcPlayerNotFound", new String[] {Bukkit.getPlayer(UUID.fromString(inUUID)).getName()}))
+								.color(NamedTextColor.RED))
+						.build();
+				sendMsg(sender, playerNotFound);
+				return false;
+			}
+			inUUID = targetPlayer.getUniqueId().toString();
 		}
 		
 		/* Check if user is targetting themselves, which doesn't need this permission (or if we are console) */

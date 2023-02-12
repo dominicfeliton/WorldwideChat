@@ -10,6 +10,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -78,7 +79,8 @@ public class AmazonTranslation extends BasicTranslation {
 					if (td.size() > 0) {
 						// langCode, langName == AmazonLangObj constructor
 						// HTML page starts with langName, then langCode
-						SupportedLanguageObject newObj = new SupportedLanguageObject(td.get(1).html(), td.get(0).html(),
+						// Remove lang name spaces
+						SupportedLanguageObject newObj = new SupportedLanguageObject(td.get(1).html(), StringUtils.deleteWhitespace(td.get(0).html()),
 								"", true, true);
 						supportedLangs.add(newObj);
 					}
