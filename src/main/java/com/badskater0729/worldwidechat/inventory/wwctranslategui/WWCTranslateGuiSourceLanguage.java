@@ -10,6 +10,8 @@ import org.bukkit.inventory.meta.ItemMeta;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
+import com.badskater0729.worldwidechat.util.CommonRefs;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.cryptomorin.xseries.XMaterial;
 
 import fr.minuskube.inv.ClickableItem;
@@ -21,6 +23,7 @@ import fr.minuskube.inv.content.SlotIterator;
 
 import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
 import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 
 public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 
@@ -60,29 +63,29 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 			
 			/* Add each supported language from each respective translator */
 			for (int i = 0; i < main.getSupportedInputLangs().size(); i++) {
-				ItemStack currentLang = XMaterial.BOOK.parseItem();
-				ItemMeta currentLangMeta = currentLang.getItemMeta();
+				ItemStack itemForLang = XMaterial.BOOK.parseItem();
+				ItemMeta itemForLangMeta = itemForLang.getItemMeta();
+				SupportedLang currLang = main.getSupportedInputLangs().get(i);
+				SupportedLang userLang = getSupportedTranslatorLang(currTranslator.getInLangCode(), "in");
 				
 				/* Add Glow Effect */
-				//TODO: Fix if and else if. We are only checking lang codes; get lang obj and check them!!
-				//TODO: Also make this look better. This is unreadable for now...
 				ArrayList<String> lore = new ArrayList<>();
-				if (selectedSourceLanguage.equals(main.getSupportedInputLangs().get(i).getLangCode())) {
-					WWCInventoryManager.addGlowEffect(currentLangMeta);
+				if (selectedSourceLanguage.equalsIgnoreCase(currLang.getLangCode()) || selectedSourceLanguage.equalsIgnoreCase(currLang.getLangName())) {
+					WWCInventoryManager.addGlowEffect(itemForLangMeta);
 					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + getMsg("wwctGUISourceTranslationSelected"));
-				} else if (currTranslator.getInLangCode().equals(main.getSupportedInputLangs().get(i).getLangCode())) {
-					WWCInventoryManager.addGlowEffect(currentLangMeta);
+				} else if (userLang.getLangCode().equalsIgnoreCase(currLang.getLangCode()) || userLang.getLangName().equalsIgnoreCase(currLang.getLangName())) {
+					WWCInventoryManager.addGlowEffect(itemForLangMeta);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
-				currentLangMeta.setDisplayName(main.getSupportedInputLangs().get(i).getLangName());
-				if (!main.getSupportedInputLangs().get(i).getNativeLangName().equals("")) {
-					lore.add(main.getSupportedInputLangs().get(i).getNativeLangName());
+				itemForLangMeta.setDisplayName(currLang.getLangName());
+				if (!currLang.getNativeLangName().equals("")) {
+					lore.add(currLang.getNativeLangName());
 				}
-				lore.add(main.getSupportedInputLangs().get(i).getLangCode());
-				currentLangMeta.setLore(lore);
-				currentLang.setItemMeta(currentLangMeta);
-				String thisLangCode = main.getSupportedInputLangs().get(i).getLangCode();
-				listOfAvailableLangs[i] = ClickableItem.of(currentLang, e -> {
+				lore.add(currLang.getLangCode());
+				itemForLangMeta.setLore(lore);
+				itemForLang.setItemMeta(itemForLangMeta);
+				String thisLangCode = currLang.getLangCode();
+				listOfAvailableLangs[i] = ClickableItem.of(itemForLang, e -> {
 					WWCTranslateGuiTargetLanguage.getTargetLanguageInventory(thisLangCode, targetPlayerUUID)
 							.open(player);
 				});

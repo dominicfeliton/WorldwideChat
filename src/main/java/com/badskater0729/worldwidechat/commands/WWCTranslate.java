@@ -17,6 +17,7 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
 import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
 import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
 import static com.badskater0729.worldwidechat.util.CommonRefs.sendNoConsoleChatMsg;
 import static com.badskater0729.worldwidechat.util.CommonRefs.isSameTranslatorLang;
@@ -163,7 +164,7 @@ public class WWCTranslate extends BasicCommand {
 		}
 		
 		/* Player has given us three arguments */
-		if (args.length == 3) {
+		if (args.length == 3 && !isGlobal) {
 			return startNewTranslationSession(args[0], args[1], args[2]);
 		}
 		return false;
@@ -171,7 +172,7 @@ public class WWCTranslate extends BasicCommand {
 	
 	private boolean startNewTranslationSession(String inName, String inLang, String outLang) {
 		// Check if inLang/outLang are the same
-		if (!inLang.equalsIgnoreCase(outLang) && isSameTranslatorLang(inLang, outLang, "all")) {
+		if (inLang.equalsIgnoreCase(outLang) || isSameTranslatorLang(inLang, outLang, "all")) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
 							getMsg("wwctSameLangError", new String[] {getFormattedValidLangCodes("in")}))
@@ -213,7 +214,7 @@ public class WWCTranslate extends BasicCommand {
 			if (targetPlayer == null) {
 				final TextComponent playerNotFound = Component.text() // Target player not found
 						.append(Component.text()
-								.content(getMsg("wwcPlayerNotFound", new String[] {Bukkit.getPlayer(UUID.fromString(inUUID)).getName()}))
+								.content(getMsg("wwcPlayerNotFound", new String[] {inName}))
 								.color(NamedTextColor.RED))
 						.build();
 				sendMsg(sender, playerNotFound);

@@ -97,7 +97,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "11232022-1"; // MMDDYYYY-revisionNumber
+	private String currentMessagesConfigVersion = "02142022-1"; // MMDDYYYY-revisionNumber
 	private volatile String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)

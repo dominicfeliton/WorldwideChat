@@ -14,6 +14,7 @@ import com.badskater0729.worldwidechat.commands.WWCGlobal;
 import com.badskater0729.worldwidechat.commands.WWCTranslate;
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.cryptomorin.xseries.XMaterial;
 
 import fr.minuskube.inv.ClickableItem;
@@ -24,6 +25,7 @@ import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 
 import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 
 public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 
@@ -63,27 +65,30 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 
 			/* Add each supported language from each respective translator */
 			for (int i = 0; i < main.getSupportedOutputLangs().size(); i++) {
-				ItemStack currentLang = XMaterial.ARROW.parseItem();
+				ItemStack itemForLang = XMaterial.ARROW.parseItem();
 				if (XMaterial.TARGET.parseItem() != null) {
-					currentLang = XMaterial.TARGET.parseItem();
+					itemForLang = XMaterial.TARGET.parseItem();
 				}
-				ItemMeta currentLangMeta = currentLang.getItemMeta();
-				
+				ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 				ArrayList<String> lore = new ArrayList<>();
+				SupportedLang currLang = main.getSupportedInputLangs().get(i);
+				SupportedLang userLang = getSupportedTranslatorLang(currTranslator.getInLangCode(), "out");
+				
 				/* Add Glow Effect */
-				if (currTranslator.getOutLangCode().equals(main.getSupportedOutputLangs().get(i).getLangCode())) {
-					WWCInventoryManager.addGlowEffect(currentLangMeta);
+				if (userLang.getLangCode().equals(currLang.getLangCode()) || userLang.getLangName().equals(currLang.getLangName())) {
+					WWCInventoryManager.addGlowEffect(itemForLangMeta);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
-				currentLangMeta.setDisplayName(main.getSupportedOutputLangs().get(i).getLangName());
-				if (!main.getSupportedOutputLangs().get(i).getNativeLangName().equals("")) {
-					lore.add(main.getSupportedOutputLangs().get(i).getNativeLangName());
+				itemForLangMeta.setDisplayName(currLang.getLangName());
+				if (!currLang.getNativeLangName().equals("")) {
+					lore.add(currLang.getNativeLangName());
 				}
-				lore.add(main.getSupportedOutputLangs().get(i).getLangCode());
-				currentLangMeta.setLore(lore);
-				currentLang.setItemMeta(currentLangMeta);
-				String outLang = main.getSupportedOutputLangs().get(i).getLangCode();
-				listOfAvailableLangs[i] = ClickableItem.of(currentLang, e -> {
+				lore.add(currLang.getLangCode());
+				itemForLangMeta.setLore(lore);
+				itemForLang.setItemMeta(itemForLangMeta);
+				String outLang = currLang.getLangCode();
+				
+				listOfAvailableLangs[i] = ClickableItem.of(itemForLang, e -> {
 					/* Send to /wwct */
 					WWCTranslate translateCommand;
 					if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
