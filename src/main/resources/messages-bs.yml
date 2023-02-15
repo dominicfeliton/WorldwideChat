@@ -373,9 +373,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Aync zadatak timeout postavljen uspješno.
   wwcConfigGUIFatalAsyncAbortButton: Promjena vremena zadatka Aync
   wwcTimeoutException: Vaša komanda je istekao. Molim vas pokušajte ponovo.
-  wwcBackupLangCodesWarning: WorldwideChat nije mogao dohvatiti jezike i umjesto toga
-    koristi sigurnosne kopije. To vjerovatno neće utjecati na ponašanje dodataka,
-    ali kontaktirajte programera.
   libreHttp400: Loš zahtjev poslan Libre Translate! Osim ako ne radite nešto što ne
     biste trebali, ne biste trebali dobiti ovo. Molimo kontaktirajte programera!
   wwcConfigGUILibreTranslateApiKeyButton: Promjena Free Translate API ključ
@@ -432,3 +429,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Promijeni MongoDB Port
   wwcConfigInvalidFatalAsyncTimeout: Nevažeći fatalna async timeout set. Defaulting
     do 10 sekundi...
+  libreHttp500: Odabrani ulazni i izlazni jezični par nije podržan. Molimo odaberite
+    drugi jezički skup!

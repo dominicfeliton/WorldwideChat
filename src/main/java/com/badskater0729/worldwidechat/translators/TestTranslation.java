@@ -3,7 +3,7 @@ package com.badskater0729.worldwidechat.translators;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 
 public class TestTranslation extends BasicTranslation {
 
@@ -20,13 +20,14 @@ public class TestTranslation extends BasicTranslation {
 	public String useTranslator() {
 		if (isInitializing) {
 			/* Generate fake supported langs list */
-			List<SupportedLanguageObject> outList = new ArrayList<SupportedLanguageObject>();
-			outList.add(new SupportedLanguageObject("en", "English", "", true, true));
-			outList.add(new SupportedLanguageObject("es", "Spanish", "", true, true));
-			outList.add(new SupportedLanguageObject("fr", "French", "", true, true));
+			List<SupportedLang> outList = new ArrayList<SupportedLang>();
+			outList.add(new SupportedLang("en", "English", ""));
+			outList.add(new SupportedLang("es", "Spanish", ""));
+			outList.add(new SupportedLang("fr", "French", ""));
 
 			/* Set langList in Main */
-			main.setSupportedTranslatorLanguages(outList);
+			main.setOutputLangs(outList);
+			main.setInputLangs(outList);
 
 			/* Test translation setup */
 			outputLang = "es";

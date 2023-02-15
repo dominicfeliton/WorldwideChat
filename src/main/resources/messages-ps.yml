@@ -362,9 +362,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async دنده مهال ویش په بریالیتوب سره ټاکل.
   wwcConfigGUIFatalAsyncAbortButton: د اسینک ټاسک وخت بدل کړئ
   wwcTimeoutException: ستاسو قوماندې وځنډول شو. مهرباني وکړئ بیا هڅه وکړئ.
-  wwcBackupLangCodesWarning: د نړۍ په ګوټ ګوټ کې د ژبو د ترلاسه کولو توان نه درلود،
-    او پرځای یې د بیک اپ دا شاید به د فلپین چلند اغیزه ونکړي، مګر مهرباني وکړئ د پراختیایی
-    سره اړیکه ونیسئ.
   libreHttp400: خراب غوښتنه لیبر ژباړل ته لیږل شوې! تر هغه چې تاسو داسې څه نه کوئ
     چې تاسو باید نه وي، تاسو باید دا ونه ترلاسه کړئ. مهرباني وکړئ د پراختیا ورکوونکي
     سره اړیکه ونیسئ!
@@ -424,3 +421,5 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB بندر بدل کړئ
   wwcConfigInvalidFatalAsyncTimeout: د ناسم وژونکي async وخت ټاکل شوی. د 10 ثانیو
     ته Defaulting...
+  libreHttp500: ستاسو ټاکل شوي انډول او وتل د ژبې جوړه ملاتړ نه ده شوې مهرباني وکړئ
+    د بلې ژبې سیټ غوره کړئ!

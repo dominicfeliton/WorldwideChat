@@ -362,9 +362,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: ایست وظیفه Async با موفقیت تنظیم شده است.
   wwcConfigGUIFatalAsyncAbortButton: تغییر Async وظیفه ایست
   wwcTimeoutException: فرمان خود را به پایان رسیده است. لطفا دوباره امتحان کنید
-  wwcBackupLangCodesWarning: WorldwideChat قادر به واکشی زبان بود, و به جای استفاده
-    از پشتیبان گیری. این احتمالا بر رفتار پلاگین تاثیر نمی گذارد، اما لطفا با توسعه
-    دهنده تماس بگیرید.
   libreHttp400: درخواست بد ارسال به رایگان ترجمه! مگر اینکه شما کاری را انجام می دهید
     که نباید انجام دهید، نباید این را دریافت کنید. لطفا با توسعه دهنده تماس بگیرید!
   wwcConfigGUILibreTranslateApiKeyButton: تغییر رایگان ترجمه API های کلیدی
@@ -424,3 +421,5 @@ Messages:
   wwcConfigGUIMongoPortButton: تغییر بندر مانگودیبی
   wwcConfigInvalidFatalAsyncTimeout: نامعتبر async کشنده مجموعه ایست. پیش فرض به 10
     ثانیه...
+  libreHttp500: جفت زبان ورودی و خروجی انتخاب شده شما پشتیبانی نمی شود. لطفا یک مجموعه
+    زبان های مختلف را انتخاب کنید!

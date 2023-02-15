@@ -59,10 +59,10 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 			
 			/* Pagination: Lets you generate pages rather than set defined ones */
 			Pagination pagination = contents.pagination();
-			ClickableItem[] listOfAvailableLangs = new ClickableItem[main.getSupportedTranslatorLangs().size()];
+			ClickableItem[] listOfAvailableLangs = new ClickableItem[main.getSupportedOutputLangs().size()];
 
 			/* Add each supported language from each respective translator */
-			for (int i = 0; i < main.getSupportedTranslatorLangs().size(); i++) {
+			for (int i = 0; i < main.getSupportedOutputLangs().size(); i++) {
 				ItemStack currentLang = XMaterial.ARROW.parseItem();
 				if (XMaterial.TARGET.parseItem() != null) {
 					currentLang = XMaterial.TARGET.parseItem();
@@ -71,18 +71,18 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 				
 				ArrayList<String> lore = new ArrayList<>();
 				/* Add Glow Effect */
-				if (currTranslator.getOutLangCode().equals(main.getSupportedTranslatorLangs().get(i).getLangCode())) {
+				if (currTranslator.getOutLangCode().equals(main.getSupportedOutputLangs().get(i).getLangCode())) {
 					WWCInventoryManager.addGlowEffect(currentLangMeta);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
-				currentLangMeta.setDisplayName(main.getSupportedTranslatorLangs().get(i).getLangName());
-				if (!main.getSupportedTranslatorLangs().get(i).getNativeLangName().equals("")) {
-					lore.add(main.getSupportedTranslatorLangs().get(i).getNativeLangName());
+				currentLangMeta.setDisplayName(main.getSupportedOutputLangs().get(i).getLangName());
+				if (!main.getSupportedOutputLangs().get(i).getNativeLangName().equals("")) {
+					lore.add(main.getSupportedOutputLangs().get(i).getNativeLangName());
 				}
-				lore.add(main.getSupportedTranslatorLangs().get(i).getLangCode());
+				lore.add(main.getSupportedOutputLangs().get(i).getLangCode());
 				currentLangMeta.setLore(lore);
 				currentLang.setItemMeta(currentLangMeta);
-				String outLang = main.getSupportedTranslatorLangs().get(i).getLangCode();
+				String outLang = main.getSupportedOutputLangs().get(i).getLangCode();
 				listOfAvailableLangs[i] = ClickableItem.of(currentLang, e -> {
 					/* Send to /wwct */
 					WWCTranslate translateCommand;

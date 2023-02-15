@@ -362,9 +362,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Aync tapşırıq zaman aşımı uğurla müəyyən.
   wwcConfigGUIFatalAsyncAbortButton: Aync Task Timeout Change
   wwcTimeoutException: Sizin komanda həyata vaxtı. Xahiş edirik yenidən cəhd edin.
-  wwcBackupLangCodesWarning: WorldwideChat dil almaq iqtidarında idi və əvəzinə yedeklemeler
-    istifadə edir. Bu, ehtimal ki, plugin davranışına təsir göstərməyəcək, ancaq geliştirici
-    ilə əlaqə saxlayın.
   libreHttp400: Pulsuz Tərcümə göndərilən Bad sorğu! Siz lazım deyil ki, bir şey bunu
     halda, Bu almaq lazım deyil. Geliştirici ilə əlaqə saxlayın!
   wwcConfigGUILibreTranslateApiKeyButton: Pulsuz Tərcümə API Açarını dəyişdirin
@@ -420,3 +417,5 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB portunu dəyişdirin
   wwcConfigInvalidFatalAsyncTimeout: Yanlış ölümcül async zaman aşımı set. 10 saniyəyə
     qədər...
+  libreHttp500: Seçdiyiniz giriş və çıxış dil cütlüyü dəstəklənmir. Xahiş edirik fərqli
+    bir dil dəsti seçin!

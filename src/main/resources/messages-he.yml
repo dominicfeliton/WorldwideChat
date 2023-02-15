@@ -332,8 +332,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: פסק זמן משימת Async מוגדר בהצלחה.
   wwcConfigGUIFatalAsyncAbortButton: שינוי הזמן הקצוב למשימה של Async
   wwcTimeoutException: הפקודה שלך מתוזמנת. אנא נסה שוב.
-  wwcBackupLangCodesWarning: WorldwideChat לא הצליח להביא שפות, ובמקום זאת הוא משתמש
-    בגיבויים. זה כנראה לא ישפיע על התנהגות הפלאגין, אך אנא פנה למפתח.
   libreHttp400: בקשה גרועה שנשלחה ליברה תרגם! אלא אם כן אתה עושה משהו שאתה לא צריך,
     אתה לא צריך לקבל את זה. אנא צרו קשר עם היזם!
   wwcConfigGUILibreTranslateApiKeyButton: שינוי חינם תרגם את מפתח ה- API
@@ -385,3 +383,4 @@ Messages:
   wwcConfigGUIMongoPortButton: שינוי נמל MongoDB
   wwcConfigInvalidFatalAsyncTimeout: סט פסק זמן async קטלני לא חוקי. ברירת מחדל ל
     -10 שניות...
+  libreHttp500: זוג שפת הקלט והפלט שבחרת אינו נתמך. אנא בחר ערכת שפה אחרת!

@@ -373,9 +373,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async timeout kompitu stabbiliti b'suċċess.
   wwcConfigGUIFatalAsyncAbortButton: Bidla Timeout Task Async
   wwcTimeoutException: Il-kmand tiegħek ittajmjat. Jekk jogħġbok erġa pprova.
-  wwcBackupLangCodesWarning: WorldwideChat ma setax iġib il-lingwi, u minflok juża
-    backups. Dan probabbilment mhux se jaffettwa l-imġiba plugin, iżda jekk jogħġbok
-    ikkuntattja l-iżviluppatur.
   libreHttp400: Talba ħażina mibgħuta lil Libre Translate! Sakemm ma tkunx qed tagħmel
     xi ħaġa li m'għandekx, m'għandekx tikseb dan. Jekk jogħġbok ikkuntattja l-iżviluppatur!
   wwcConfigGUILibreTranslateApiKeyButton: Bidla Ħieles Ittraduċi API Ewlenin
@@ -430,3 +427,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Bidla Port MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Sett ta 'timeout fatali invalidu tal-async. Defaulting
     li 10 sekondi...
+  libreHttp500: Il-par tal-lingwa tal-input u l-output magħżul tiegħek mhuwiex appoġġjat.
+    Jekk jogħġbok agħżel sett ta 'lingwi differenti!

@@ -171,10 +171,10 @@ public class WWCTranslate extends BasicCommand {
 	
 	private boolean startNewTranslationSession(String inName, String inLang, String outLang) {
 		// Check if inLang/outLang are the same
-		if (isSameTranslatorLang(inLang, outLang)) {
+		if (!inLang.equalsIgnoreCase(outLang) && isSameTranslatorLang(inLang, outLang, "all")) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
-							getMsg("wwctSameLangError", new String[] {getFormattedValidLangCodes()}))
+							getMsg("wwctSameLangError", new String[] {getFormattedValidLangCodes("in")}))
 							.color(NamedTextColor.RED))
 					.build();
 			sendMsg(sender, sameLangError);
@@ -184,21 +184,21 @@ public class WWCTranslate extends BasicCommand {
 		 * Do not let users use None inputLang with Amazon Translate. 
 		 * Remove this if we ever find a workaround for each. */
 		// Check if valid inLang
-		if ((!inLang.equalsIgnoreCase("None") && !isSupportedTranslatorLang(inLang)) || 
+		if ((!inLang.equalsIgnoreCase("None") && !isSupportedTranslatorLang(inLang, "in")) || 
 				(inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
-							getMsg("wwctInvalidInputLangCode", new String[] {getFormattedValidLangCodes()}))
+							getMsg("wwctInvalidInputLangCode", new String[] {getFormattedValidLangCodes("in")}))
 							.color(NamedTextColor.RED))
 					.build();
 			sendMsg(sender, sameLangError);
 			return false;
 		}
 		// Check if valid outLang
-		if (!isSupportedTranslatorLang(outLang)) {
+		if (!isSupportedTranslatorLang(outLang, "out")) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
-							getMsg("wwctInvalidOutputLangCode", new String[] {getFormattedValidLangCodes()}))
+							getMsg("wwctInvalidOutputLangCode", new String[] {getFormattedValidLangCodes("out")}))
 							.color(NamedTextColor.RED))
 					.build();
 			sendMsg(sender, sameLangError);

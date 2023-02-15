@@ -12,7 +12,7 @@ import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 
 import static com.badskater0729.worldwidechat.util.CommonRefs.isSupportedTranslatorLang;
 
@@ -27,6 +27,8 @@ public class WWCTabCompleter implements TabCompleter {
 
 		/* Commands: /wwct */
 		if (command.getName().equals("wwct") && args.length > 0 && args.length < 4) {
+			// TODO: Rewrite...
+			/*
 			if (args[args.length - 1].isEmpty()) {
 				switch (args.length) {
 				case 1:
@@ -48,7 +50,7 @@ public class WWCTabCompleter implements TabCompleter {
 						|| (args.length == 2 && (isSupportedTranslatorLang(args[0])
 										|| Bukkit.getPlayerExact(args[0]) != null))
 						|| (args.length == 3 && isSupportedTranslatorLang(args[1]) && Bukkit.getPlayerExact(args[0]) != null)) {
-					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLangs()) {
+					for (SupportedLang eaObj : main.getSupportedTranslatorLangs()) {
 						out.add(eaObj.getLangName());
 						out.add(eaObj.getLangCode());
 					}
@@ -77,7 +79,7 @@ public class WWCTabCompleter implements TabCompleter {
 						|| (args.length == 2 && (isSupportedTranslatorLang(args[0])
 										|| Bukkit.getPlayerExact(args[0]) != null))
 						|| (args.length == 3 && isSupportedTranslatorLang(args[1]) && Bukkit.getPlayerExact(args[0]) != null)) {
-					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLangs()) {
+					for (SupportedLang eaObj : main.getSupportedTranslatorLangs()) {
 						if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
 							out.add(eaObj.getLangName());
 						}
@@ -87,9 +89,11 @@ public class WWCTabCompleter implements TabCompleter {
 					}
 				}
 			}
+			*/
 		
 		/* Commands: /wwcg */
 		} else if (command.getName().equals("wwcg") && args.length > 0 && args.length < 3) {
+			/*
 			if (args[args.length - 1].isEmpty()) {
 				switch (args.length) {
 				case 1:
@@ -100,7 +104,7 @@ public class WWCTabCompleter implements TabCompleter {
 				}
 				if (args.length == 1
 						|| (args.length == 2 && isSupportedTranslatorLang(args[0]))) {
-					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLangs()) {
+					for (SupportedLang eaObj : main.getSupportedTranslatorLangs()) {
 						out.add(eaObj.getLangName());
 						out.add(eaObj.getLangCode());
 					}
@@ -116,7 +120,7 @@ public class WWCTabCompleter implements TabCompleter {
 				}
 				if (args.length == 1
 						|| (args.length == 2 && isSupportedTranslatorLang(args[0]))) {
-					for (SupportedLanguageObject eaObj : main.getSupportedTranslatorLangs()) {
+					for (SupportedLang eaObj : main.getSupportedTranslatorLangs()) {
 						if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
 							out.add(eaObj.getLangName());
 						}
@@ -126,6 +130,7 @@ public class WWCTabCompleter implements TabCompleter {
 					}
 				}
 			}
+			*/
 		
 		/* Commands: /wwcts, /wwctb, /wwcti, /wwcte, /wwctci, /wwctco */
 		} else if ((command.getName().equals("wwcts") || command.getName().equals("wwctb")

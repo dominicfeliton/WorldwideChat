@@ -242,17 +242,17 @@ public class LoadUserData implements Runnable {
 	}
 	
 	private boolean validLangCodes(String inLang, String outLang) {
-		// If inLang is invalid
-		if ((!inLang.equalsIgnoreCase("None") && !isSupportedTranslatorLang(inLang))
+		// If inLang is invalid, or None is associated with Amazon Translate
+		if ((!inLang.equalsIgnoreCase("None") && !isSupportedTranslatorLang(inLang, "in"))
 				|| (inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
 			return false;
 		}
 		// If outLang code is not supported with current translator
-		if (!isSupportedTranslatorLang(outLang)) {
+		if (!isSupportedTranslatorLang(outLang, "out")) {
 			return false;
 		}
 		// If inLang and outLang codes are equal
-		if (getSupportedTranslatorLang(outLang).getLangCode().equals(getSupportedTranslatorLang(inLang).getLangCode())) {
+		if (getSupportedTranslatorLang(outLang, "out").getLangCode().equals(getSupportedTranslatorLang(inLang, "in").getLangCode())) {
 		    debugMsg("Langs are the same?");
 			return false;
 		}

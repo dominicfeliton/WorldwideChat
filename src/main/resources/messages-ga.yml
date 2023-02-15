@@ -395,9 +395,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async Teorainn ama tasc atá leagtha go rathúil.
   wwcConfigGUIFatalAsyncAbortButton: Athrú Asynchronc Tasc Teorainn Ama
   wwcTimeoutException: Do ordú uainiú amach. Bain triail eile as.
-  wwcBackupLangCodesWarning: Ní raibh WorldwideChat in ann teangacha a fháil, agus
-    ina ionad sin úsáideann sé cúltacaí. Ní bheidh sé seo difear is dócha iompar plugin,
-    ach téigh i dteagmháil leis an bhforbróir.
   libreHttp400: Droch iarraidh a sheoladh chuig Libre Translate! Mura bhfuil rud éigin
     á dhéanamh agat nár cheart duit, níor cheart duit é seo a fháil. Téigh i dteagmháil
     leis an bhforbróir!
@@ -460,3 +457,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Athraigh Port MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Neamhbhailí marfach leagtha Teorainn ama async.
     Mainneachtana go 10 soicind...
+  libreHttp500: Ní thacaítear le do phéire teanga ionchuir agus aschuir roghnaithe.
+    Roghnaigh tacar teanga difriúil le do thoil!

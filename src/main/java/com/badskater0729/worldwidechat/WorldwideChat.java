@@ -46,7 +46,7 @@ import com.badskater0729.worldwidechat.runnables.UpdateChecker;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
 import com.badskater0729.worldwidechat.util.CachedTranslation;
 import com.badskater0729.worldwidechat.util.PlayerRecord;
-import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.badskater0729.worldwidechat.util.storage.MongoDBUtils;
 import com.badskater0729.worldwidechat.util.storage.SQLUtils;
 import com.github.benmanes.caffeine.cache.Cache;
@@ -82,8 +82,9 @@ public class WorldwideChat extends JavaPlugin {
 	private InventoryManager inventoryManager;
 	private ConfigurationHandler configurationManager;
 	
-	private List<SupportedLanguageObject> supportedLanguages = new CopyOnWriteArrayList<SupportedLanguageObject>();
-	private List<String> playersUsingConfigurationGUI = new CopyOnWriteArrayList<String>();
+	private List<SupportedLang> supportedInputLangs = new CopyOnWriteArrayList<SupportedLang>();
+	private List<SupportedLang> supportedOutputLangs = new CopyOnWriteArrayList<SupportedLang>();
+	private List<String> playersUsingConfigGUI = new CopyOnWriteArrayList<String>();
 	
 	private Cache<CachedTranslation, String> cache = Caffeine.newBuilder()
 			.maximumSize(100)
@@ -406,7 +407,8 @@ public class WorldwideChat extends JavaPlugin {
 		MongoDBUtils.disconnect();
 		
 		// Clear all active translating users, cache, playersUsingConfigGUI
-		supportedLanguages.clear();
+		supportedInputLangs.clear();
+		supportedOutputLangs.clear();
 		playerRecords.clear();
 		activeTranslators.clear();
 		cache.invalidateAll();
@@ -593,6 +595,14 @@ public class WorldwideChat extends JavaPlugin {
 		debugMsg(i.getUUID() + " has been removed from the internal active translator hashmap.");
 	}
 	
+	public void setInputLangs(List<SupportedLang> in) {
+		supportedInputLangs = in;
+	}
+	
+	public void setOutputLangs(List<SupportedLang> in) {
+		supportedOutputLangs = in;
+	}
+	
 	/**
 	 * Checks if a given name is a currently active translator.
 	 * @param in - A player
@@ -621,8 +631,8 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public void addPlayerUsingConfigurationGUI(UUID in) {
-		if (!playersUsingConfigurationGUI.contains(in.toString())) {
-			playersUsingConfigurationGUI.add(in.toString());
+		if (!playersUsingConfigGUI.contains(in.toString())) {
+			playersUsingConfigGUI.add(in.toString());
 			debugMsg("Player " + getServer().getPlayer(in).getName()
 					+ " has been added (or overwrriten) to the internal hashmap of people that are using the configuration GUI.");
 		}
@@ -633,7 +643,7 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public void removePlayerUsingConfigurationGUI(UUID in) {
-		playersUsingConfigurationGUI.remove(in.toString());
+		playersUsingConfigGUI.remove(in.toString());
 		debugMsg("Player " + getServer().getPlayer(in).getName()
 				+ " has been removed from the internal list of people that are using the configuration GUI.");
 	}
@@ -725,10 +735,6 @@ public class WorldwideChat extends JavaPlugin {
 		}
 	}
 
-	public void setSupportedTranslatorLanguages(List<SupportedLanguageObject> in) {
-		supportedLanguages.addAll(in);
-	}
-
 	public void setTranslatorName(String i) {
 		translatorName = i;
 	}
@@ -784,7 +790,7 @@ public class WorldwideChat extends JavaPlugin {
 	}
 	
 	public boolean isPlayerUsingGUI(String uuid) {
-		if (playersUsingConfigurationGUI.contains(uuid)) {
+		if (playersUsingConfigGUI.contains(uuid)) {
 			return true;
 		}
 		return false;
@@ -803,11 +809,15 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public List<String> getPlayersUsingGUI() {
-		return playersUsingConfigurationGUI;
+		return playersUsingConfigGUI;
 	}
 	
-	public List<SupportedLanguageObject> getSupportedTranslatorLangs() {
-		return supportedLanguages;
+	public List<SupportedLang> getSupportedInputLangs() {
+		return supportedInputLangs;
+	}
+	
+	public List<SupportedLang> getSupportedOutputLangs() {
+		return supportedOutputLangs;
 	}
 
 	public TextComponent getPluginPrefix() {

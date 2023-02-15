@@ -369,9 +369,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Aync කාර්ය කාලය සාර්ථකව සකස්.
   wwcConfigGUIFatalAsyncAbortButton: Aync කාර්ය කාලය වෙනස්
   wwcTimeoutException: ඔබේ විධානය කාලය ගත විය. කරුණාකර නැවත උත්සාහ කරන්න.
-  wwcBackupLangCodesWarning: WorldwideChat භාෂා ලබා ගැනීමට නොහැකි වූ අතර ඒ වෙනුවට
-    උපස්ථ භාවිතා කරයි. මෙය බොහෝ විට ප්ලගින හැසිරීමට බලපාන්නේ නැත, නමුත් කරුණාකර සංවර්ධක
-    අමතන්න.
   libreHttp400: නරක ඉල්ලීමක් ලිබ්රේ පරිවර්තනය වෙත යවන ලදි! ඔබ නොකළ යුතු දෙයක් නොකරන්නේ
     නම්, ඔබ මෙය ලබා නොගත යුතුය. කරුණාකර සංවර්ධකයා අමතන්න!
   wwcConfigGUILibreTranslateApiKeyButton: නිදහස් පරිවර්තනය API කී වෙනස්
@@ -428,3 +425,5 @@ Messages:
   wwcConfigGUIMongoPortButton: මොන්ගෝඩ් බී වරාය වෙනස් කරන්න
   wwcConfigInvalidFatalAsyncTimeout: වලංගු නොවන මාරාන්තික async කාල අවුට් කට්ටලයක්.
     තත්පර 10 දක්වා පැහැර හැරීම...
+  libreHttp500: ඔබ තෝරාගත් ආදාන සහ ප්රතිදාන භාෂා යුගලයට සහය නොදක්වයි. කරුණාකර වෙනත්
+    භාෂා කට්ටලයක් තෝරන්න!

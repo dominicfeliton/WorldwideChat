@@ -372,9 +372,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async opgave timeout indstillet med succes.
   wwcConfigGUIFatalAsyncAbortButton: Skift Async-opgavetimeout
   wwcTimeoutException: Din kommando timet ud. Prøv venligst igen.
-  wwcBackupLangCodesWarning: WorldwideChat kunne ikke hente sprog, og bruger i stedet
-    sikkerhedskopier. Dette vil sandsynligvis ikke påvirke plugin-adfærd, men kontakt
-    udvikleren.
   libreHttp400: Dårlig anmodning sendt til Libre Translate! Medmindre du laver noget,
     som du ikke burde, bør du ikke få dette. Kontakt udvikleren!
   wwcConfigGUILibreTranslateApiKeyButton: Skift Libre Oversæt API Key
@@ -427,3 +424,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Skift MongoDB-port
   wwcConfigInvalidFatalAsyncTimeout: Ugyldigt fatalt async timeout-sæt. Standard til
     10 sekunder...
+  libreHttp500: Dit valgte input- og outputsprogpar understøttes ikke. Vælg et andet
+    sprogsæt!

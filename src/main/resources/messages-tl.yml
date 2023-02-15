@@ -408,9 +408,6 @@ Messages:
     ng gawain.
   wwcConfigGUIFatalAsyncAbortButton: Baguhin ang Timeout ng Async Task
   wwcTimeoutException: Ang iyong utos ay nag-time out. Pakisubukang muli.
-  wwcBackupLangCodesWarning: Hindi nakuha ng WorldwideChat ang mga wika, at sa halip
-    ay gumagamit ng mga backup. Marahil ito ay hindi makakaapekto sa pag-uugali ng
-    plugin, ngunit mangyaring makipag-ugnay sa developer.
   libreHttp400: Masamang kahilingan ipinadala sa Libre Translate! Maliban kung ikaw
     ay gumagawa ng isang bagay na hindi mo dapat, hindi mo dapat makuha ito. Mangyaring
     makipag-ugnay sa developer!
@@ -476,3 +473,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Baguhin ang MongoDB Port
   wwcConfigInvalidFatalAsyncTimeout: Di-wastong nakamamatay na hanay ng timeout ng
     async. Pag-default sa 10 segundo...
+  libreHttp500: Ang iyong napiling input at output na pares ng wika ay hindi suportado.
+    Mangyaring pumili ng ibang hanay ng wika!

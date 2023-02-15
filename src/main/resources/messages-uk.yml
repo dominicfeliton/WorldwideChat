@@ -370,9 +370,6 @@ Messages:
     успішно.
   wwcConfigGUIFatalAsyncAbortButton: Змінити час очікування завдання Async
   wwcTimeoutException: Ваша команда тайм-аут. Будь ласка, спробуйте ще раз.
-  wwcBackupLangCodesWarning: WorldwideChat не вдалося отримати мови, і замість цього
-    використовує резервні копії. Ймовірно, це не вплине на поведінку плагіна, але,
-    будь ласка, зв'яжіться з розробником.
   libreHttp400: Поганий запит надіслано до Libre Translate! Якщо ви не робите те,
     чого не слід, ви не повинні цього отримати. Звертайтеся до розробника!
   wwcConfigGUILibreTranslateApiKeyButton: Змінити безкоштовний переклад API ключа
@@ -428,3 +425,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Змінити порт MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Некоректний фатальний асинхронний тайм-аут. За
     замовчуванням до 10 секунд...
+  libreHttp500: Обрана вами мовна пара вхідних і вихідних даних не підтримується.
+    Будь ласка, виберіть інший мовний набір!

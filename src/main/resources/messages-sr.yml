@@ -363,9 +363,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Asinc zadatak timeout set uspešno.
   wwcConfigGUIFatalAsyncAbortButton: Promenite Asinc Task Timeout
   wwcTimeoutException: Vaša komanda istekla. Molim vas pokušajte ponovo.
-  wwcBackupLangCodesWarning: VorldVideChat nije mogao da donese jezike, i umesto toga
-    koristi rezervne kopije. Ovo verovatno neće uticati na ponašanje dodataka, ali
-    kontaktirajte programera.
   libreHttp400: Loš zahtev poslat Libre Translate! Osim ako ne radite nešto što ne
     biste trebali, ne biste trebali dobiti ovo. Molimo kontaktirajte programera!
   wwcConfigGUILibreTranslateApiKeyButton: Promena Free Translate API ključ
@@ -424,3 +421,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Promenite MongoDB Port
   wwcConfigInvalidFatalAsyncTimeout: Nevažeći fatalna asinc timeout set. Defaulting
     do 10 sekundi...
+  libreHttp500: Izabrani ulazni i izlazni jezički par nije podržan. Izaberite drugi
+    jezički skup!

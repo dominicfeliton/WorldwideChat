@@ -368,9 +368,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async užduotis timeout nustatyti sėkmingai.
   wwcConfigGUIFatalAsyncAbortButton: Pakeisti Async Užduočių Laikas
   wwcTimeoutException: Jūsų komanda sulaiko. Pabandykite dar kartą.
-  wwcBackupLangCodesWarning: “WorldwideChat” negalėjo atgauti kalbų ir vietoj to naudoja
-    atsargines kopijas. Tai tikriausiai neturės įtakos įskiepių elgesiui, tačiau susisiekite
-    su kūrėju.
   libreHttp400: Blogas prašymas išsiųstas Libre Translate! Nebent jūs darote kažką,
     ko neturėtumėte, neturėtumėte to gauti. Prašome susisiekti su kūrėju!
   wwcConfigGUILibreTranslateApiKeyButton: Keisti Nemokamai Versti API raktą
@@ -433,3 +430,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Pakeisti MongoDB prievadą
   wwcConfigInvalidFatalAsyncTimeout: Neteisingas mirtinas async timeout rinkinys.
     Numatytasis iki 10 sekundžių...
+  libreHttp500: Pasirinkta įvesties ir išvesties kalbų pora nepalaikoma. Pasirinkite
+    kitą kalbos rinkinį!

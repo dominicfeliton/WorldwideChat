@@ -367,9 +367,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async ამოცანა შეყოვნება მითითებული წარმატებით.
   wwcConfigGUIFatalAsyncAbortButton: ასინკის სამუშაო დროის შეცვლა
   wwcTimeoutException: თქვენი ბრძანება დროული out. სცადეთ კიდევ ერთხელ.
-  wwcBackupLangCodesWarning: WorldwideChat ვერ მოიტანონ ენებზე, და ნაცვლად გამოყენებით
-    სარეზერვო. ეს, ალბათ, გავლენას არ მოახდენს მოდულის ქცევაზე, მაგრამ გთხოვთ, დაუკავშირდეთ
-    დეველოპერს.
   libreHttp400: ცუდი მოთხოვნა გაიგზავნა Libre Translate! თუ არ აკეთებთ იმას, რაც არ
     უნდა, არ უნდა მიიღოთ ეს. გთხოვთ, დაუკავშირდეთ დეველოპერს!
   wwcConfigGUILibreTranslateApiKeyButton: შეცვლა უფასო თარგმნის API გასაღები
@@ -429,3 +426,5 @@ Messages:
   wwcConfigGUIMongoPortButton: შეცვალეთ მონღოლეთის პორტი
   wwcConfigInvalidFatalAsyncTimeout: არასწორი ფატალური async შეყოვნება კომპლექტი.
     დეფოლტირება 10 წამში...
+  libreHttp500: თქვენი შერჩეული შემავალი და გამომავალი ენის წყვილი არ არის მხარდაჭერილი.
+    გთხოვთ, აირჩიოთ სხვა ენის ნაკრები!

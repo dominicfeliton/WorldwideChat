@@ -13,7 +13,7 @@ import java.util.concurrent.TimeoutException;
 import org.apache.commons.lang3.StringUtils;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.google.cloud.translate.Detection;
 import com.google.cloud.translate.Language;
 import com.google.cloud.translate.Translate;
@@ -60,14 +60,19 @@ public class GoogleTranslation extends BasicTranslation {
 				List<Language> allLanguages = translate.listSupportedLanguages();
 
 				/* Parse languages */
-				List<SupportedLanguageObject> outList = new ArrayList<SupportedLanguageObject>();
+				List<SupportedLang> outLangList = new ArrayList<SupportedLang>();
+				List<SupportedLang> inLangList = new ArrayList<SupportedLang>();
+				
 				for (Language eaLang : allLanguages) {
 					// Remove spaces from language name
-					outList.add(new SupportedLanguageObject(eaLang.getCode(), StringUtils.deleteWhitespace(eaLang.getName()), "", true, true));
+					SupportedLang currLang = new SupportedLang(eaLang.getCode(), StringUtils.deleteWhitespace(eaLang.getName()), "");
+					outLangList.add(currLang);
+					inLangList.add(currLang);
 				}
 
 				/* Set languages list */
-				main.setSupportedTranslatorLanguages(outList);
+				main.setOutputLangs(outLangList);
+				main.setInputLangs(inLangList);
 
 				/* Setup test translation */
 				inputLang = "en";
@@ -80,9 +85,9 @@ public class GoogleTranslation extends BasicTranslation {
 			 * instead of full names (English, Spanish) */
 			if (!isInitializing) {
 				if (!inputLang.equals("None")) {
-					inputLang = getSupportedTranslatorLang(inputLang).getLangCode();
+					inputLang = getSupportedTranslatorLang(inputLang, "in").getLangCode();
 				}
-				outputLang = getSupportedTranslatorLang(outputLang).getLangCode();
+				outputLang = getSupportedTranslatorLang(outputLang, "out").getLangCode();
 			}
 
 			/* Detect inputLang */

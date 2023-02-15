@@ -2,6 +2,7 @@ package com.badskater0729.worldwidechat.translators;
 
 import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +19,7 @@ import java.util.stream.Collectors;
 import org.apache.commons.lang3.StringUtils;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.deepl.api.Language;
 import com.deepl.api.TextResult;
 import com.deepl.api.Translator;
@@ -64,31 +65,19 @@ public class DeepLTranslation extends BasicTranslation {
 				/* Get supported languages */
 				List<Language> supportedLangs = translate.getTargetLanguages();
 				
-				/* Copy Language Object Lists to String */
-				// This is to check if current language is in target and source list
-				List<String> sourceToStr = new ArrayList<String>();
+				/* Parse Supported Languages */
+				List<SupportedLang> sourceLangs = new ArrayList<SupportedLang>();
 				for (Language eaLang : translate.getSourceLanguages()) {
-					sourceToStr.add(eaLang.getName());
+					sourceLangs.add(new SupportedLang(eaLang.getCode(), StringUtils.deleteWhitespace(eaLang.getName())));
 				}
-				List<String> targetToStr = new ArrayList<String>();
+				List<SupportedLang> targetLangs = new ArrayList<SupportedLang>();
 				for (Language eaLang : translate.getTargetLanguages()) {
-					targetToStr.add(eaLang.getName());
-				}
-				
-				/* Parse languages */
-				List<SupportedLanguageObject> outList = new ArrayList<SupportedLanguageObject>();
-				for (Language eaLang : supportedLangs) {
-					// Skip lang if not a source or target; let's not deal with this
-					if (!sourceToStr.contains(eaLang.getName()) || !targetToStr.contains(eaLang.getName())) {
-						continue;
-					}
-					// Remove spaces from lang names
-					outList.add(new SupportedLanguageObject(eaLang.getCode(), StringUtils.deleteWhitespace(eaLang.getName()), "", 
-							translate.getSourceLanguages().contains(eaLang), translate.getTargetLanguages().contains(eaLang)));
+					targetLangs.add(new SupportedLang(eaLang.getCode(), StringUtils.deleteWhitespace(eaLang.getName())));
 				}
 
 				/* Set languages list */
-				main.setSupportedTranslatorLanguages(outList);
+				main.setOutputLangs(targetLangs);
+				main.setInputLangs(sourceLangs);
 
 				/* Setup test translation */
 				inputLang = "en";
@@ -101,9 +90,9 @@ public class DeepLTranslation extends BasicTranslation {
 			 * instead of full names (English, Spanish) */
 			if (!isInitializing) {
 				if (!inputLang.equals("None")) {
-					inputLang = getSupportedTranslatorLang(inputLang).getLangCode();
+					inputLang = getSupportedTranslatorLang(inputLang, "in").getLangCode();
 				}
-				outputLang = getSupportedTranslatorLang(outputLang).getLangCode();
+				outputLang = getSupportedTranslatorLang(outputLang, "out").getLangCode();
 			}
 
 			/* If inputLang set to None, set as null for translateText() */

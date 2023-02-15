@@ -370,9 +370,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async tugas tamat masa ditetapkan berjaya.
   wwcConfigGUIFatalAsyncAbortButton: Tukar Async Task Timeout
   wwcTimeoutException: Perintah anda tamat masa. Sila cuba lagi.
-  wwcBackupLangCodesWarning: WorldChat tidak dapat mengambil bahasa, dan sebaliknya
-    menggunakan sandaran. Ini mungkin tidak akan menjejaskan tingkah laku plugin,
-    tetapi sila hubungi pemaju.
   libreHttp400: Permintaan buruk dihantar ke Percuma Terjemah! Kecuali anda melakukan
     sesuatu yang anda tidak sepatutnya, anda tidak sepatutnya mendapatkannya. Sila
     hubungi pemaju!
@@ -429,3 +426,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Tukar MongoDB Port
   wwcConfigInvalidFatalAsyncTimeout: Set tamat tempoh async maut tidak sah. Mungkir
     ke 10 saat...
+  libreHttp500: Pasangan bahasa input dan output pilihan anda tidak disokong. Sila
+    pilih satu set bahasa yang berbeza!

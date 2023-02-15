@@ -328,8 +328,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: หมดเวลางาน Async ตั้งค่าเสร็จเรียบร้อยแล้ว
   wwcConfigGUIFatalAsyncAbortButton: เปลี่ยนหมดเวลางาน Async
   wwcTimeoutException: คำสั่งของคุณหมดเวลาโปรดลองใหม่อีกครั้ง
-  wwcBackupLangCodesWarning: WorldwideChat ไม่สามารถดึงข้อมูลภาษาได้ และใช้การสำรองข้อมูลแทนนี้อาจจะไม่ส่งผลกระทบต่อการทำงานของปลั๊กอิน,
-    แต่โปรดติดต่อนักพัฒนาซอฟต์แวร์.
   libreHttp400: คำขอที่ไม่ดีส่งไปยังฟรีแปลภาษา!ถ้าคุณกำลังทำสิ่งที่คุณไม่ควร, คุณไม่ควรจะได้รับนี้.กรุณาติดต่อนักพัฒนา!
   wwcConfigGUILibreTranslateApiKeyButton: เปลี่ยนคีย์ API แปล Libre
   libreHttp403: ขาดหายไป Libre แปล API คีย์, หรือคุณถูกห้ามจากเซิร์ฟเวอร์!
@@ -382,3 +380,4 @@ Messages:
   wwcConfigGUIMongoPortButton: เปลี่ยนพอร์ต MongoDB
   wwcConfigInvalidFatalAsyncTimeout: ชุดหมดเวลาอะซิงค์ร้ายแรงไม่ถูกต้องเริ่มต้นที่
     10 วินาที...
+  libreHttp500: ไม่รองรับคู่ภาษาอินพุตและเอาต์พุตที่เลือกไว้โปรดเลือกชุดภาษาอื่น!

@@ -3,6 +3,8 @@ package com.badskater0729.worldwidechat.util;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.concurrent.Callable;
@@ -133,44 +135,88 @@ public class CommonRefs {
 	  * Compares two strings to check if they are the same language under the current translator.
 	  * @param first - A valid language name
 	  * @param second - A valid language name
+	  * @param langType - 'out' or 'in' are two valid inputs for this;
+	  * 'out' will check if in is a valid output lang, 'in' will check the input lang list
+	  * 'all' will check both lists
 	  * @return Boolean - Whether languages are the same or not
 	  */
-	public static boolean isSameTranslatorLang(String first, String second) {
-		return isSupportedTranslatorLang(first) && isSupportedTranslatorLang(second) 
-				&& getSupportedTranslatorLang(first).getLangCode().equals(getSupportedTranslatorLang(second).getLangCode());
+	public static boolean isSameTranslatorLang(String first, String second, String langType) {
+		return isSupportedTranslatorLang(first, langType) && isSupportedTranslatorLang(second, langType) 
+				&& getSupportedTranslatorLang(first, langType).getLangCode().equals(getSupportedTranslatorLang(second, langType).getLangCode());
 	}
 
 	/**
 	  * Gets a supported language under the current translator.
-	  * @param in - A valid language name
+	  * @param langName - A valid language name
+	  * @param langType - 'out' or 'in' are two valid inputs for this;
+	  * 'out' will check if in is a valid output lang, 'in' will check the input lang list
+	  * 'all' will check both lists
 	  * @return SupportedLanguageObject - Will be completely empty if the language is invalid
 	  */
-	public static SupportedLanguageObject getSupportedTranslatorLang(String in) {
-		for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLangs()) {
-			if ((eaLang.getLangCode().equalsIgnoreCase(in) || eaLang.getLangName().equalsIgnoreCase(in))
-					&& eaLang.getSupportedAsSource() && eaLang.getSupportedAsTarget()) {
+	public static SupportedLang getSupportedTranslatorLang(String langName, String langType) {
+		/* Setup vars */
+		List<SupportedLang> langList = new ArrayList<SupportedLang>();
+		SupportedLang invalidLang = new SupportedLang("","","");
+		
+		/* Check langType */
+		if (langType.equalsIgnoreCase("in")) {
+			langList.addAll(main.getSupportedInputLangs());
+		} else if (langType.equalsIgnoreCase("out")) {
+			langList.addAll(main.getSupportedOutputLangs());
+		} else if (langType.equalsIgnoreCase("all")) { 
+			langList.addAll(main.getSupportedInputLangs());
+			langList.addAll(main.getSupportedOutputLangs());
+		} else {
+			debugMsg("Invalid langType for getSupportedTranslatorLang()! langType: " + langType + " ...returning invalid, not checking language. Fix this!!!");
+		    return invalidLang;
+		}
+		
+		/* Check selected list for lang */
+		for (SupportedLang eaLang : langList) {
+			if ((eaLang.getLangCode().equalsIgnoreCase(langName) || eaLang.getLangName().equalsIgnoreCase(langName))) {
 				return eaLang;
 			}
 		}
-		return new SupportedLanguageObject("", "", "", false, false);
+		
+		/* Return invalid if nothing is found */
+		return invalidLang;
 	}
 	
 	/**
 	 * Checks if a language is supported under the current translator.
 	 * @param in - A valid language name
+     * @param langType - 'out' or 'in' are two valid inputs for this;
+	 * 'out' will check if in is a valid output lang, 'in' will check the input lang list
+	 * 'all' will check both lists
 	 * @return true if supported, false otherwise
 	 */
-	public static boolean isSupportedTranslatorLang(String in) {
-		return !getSupportedTranslatorLang(in).getLangCode().equals("");
+	public static boolean isSupportedTranslatorLang(String in, String langType) {
+		return !getSupportedTranslatorLang(in, langType).getLangCode().equals("");
 	}
 
 	/**
 	  * Gets a list of properly formatted, supported language codes.
+	  * @param langType - 'out' or 'in' are two valid inputs for this;
+	  * 'out' will check if in is a valid output lang, 'in' will check the input lang list
 	  * @return String - Formatted language codes
+	  * 
 	  */
-	public static String getFormattedValidLangCodes() {
+	public static String getFormattedValidLangCodes(String langType) {
+		/* Setup vars */
+		List<SupportedLang> langList;
 		String out = "\n";
-		for (SupportedLanguageObject eaLang : main.getSupportedTranslatorLangs()) {
+		
+		/* Check langType */
+		if (langType.equalsIgnoreCase("in")) {
+			langList = main.getSupportedInputLangs();
+		} else if (langType.equalsIgnoreCase("out")) {
+			langList = main.getSupportedOutputLangs();
+		} else {
+			debugMsg("Invalid langType for getFormattedValidLangCodes()! langType: " + langType + " ...returning invalid, not checking language. Fix this!!!");
+		    return out;
+		}
+		
+		for (SupportedLang eaLang : langList) {
 			out += "(" + eaLang.getLangCode() + " - " + eaLang.getLangName() + "), ";
 		}
 		if (out.indexOf(",") != -1) {
@@ -442,6 +488,7 @@ public class CommonRefs {
 			/* Get translation */
 			finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
+			// TODO: Properly handle bad language pair, send message to user.
 			/* Sanitize error before proceeding to write it to errorLog */
 			if (e instanceof InterruptedException || main.getTranslatorName().equals("Starting")) {
 				// If we are getting stopped by onDisable, end this immediately.

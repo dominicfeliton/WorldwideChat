@@ -390,9 +390,6 @@ Messages:
     amb èxit.
   wwcConfigGUIFatalAsyncAbortButton: Canviar el temps d'espera de la tasca async
   wwcTimeoutException: La vostra comanda cronometrada. Torneu-ho a provar.
-  wwcBackupLangCodesWarning: WorldwideChat era incapaç de buscar idiomes, i en canvi
-    està utilitzant còpies de seguretat. Això probablement no afectarà el comportament
-    del connector, però si us plau poseu-vos en contacte amb el desenvolupador.
   libreHttp400: Mal petició enviada a Libre Translate! A menys que vostè està fent
     alguna cosa que vostè no ha, vostè no ha d'aconseguir això. Poseu-vos en contacte
     amb el desenvolupador!
@@ -456,3 +453,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Canviar el port MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Conjunt de temps d'espera asínc fatal no vàlid.
     Per defecte a 10 segons...
+  libreHttp500: El parell d'idiomes d'entrada i sortida seleccionat no és compatible.
+    Si us plau, tria un conjunt d'idiomes diferent!

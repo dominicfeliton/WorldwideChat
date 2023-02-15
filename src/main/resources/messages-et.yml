@@ -355,9 +355,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async ülesande ajalõpu seatud edukalt.
   wwcConfigGUIFatalAsyncAbortButton: Asynci ülesande ajalõpu muutmine
   wwcTimeoutException: Teie käsk on ajastatud. Palun proovige uuesti.
-  wwcBackupLangCodesWarning: WorldwideChat ei suutnud keeli tuua ja kasutab selle
-    asemel varukoopiaid. See ilmselt ei mõjuta plugin käitumist, kuid võtke ühendust
-    arendaja.
   libreHttp400: Bad taotluse saadetakse Libre Tõlgi! Kui te teete midagi, mida sa
     ei peaks, sa ei tohiks seda saada. Palun võtke ühendust arendajaga!
   wwcConfigGUILibreTranslateApiKeyButton: Muuda tasuta tõlkida API võti
@@ -412,3 +409,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Muuda MongoDB porti
   wwcConfigInvalidFatalAsyncTimeout: Kehtetu surmaga lõppenud asünc ajalõpu komplekt.
     Defaulting kuni 10 sekundit...
+  libreHttp500: Valitud sisend- ja väljundkeele paari ei toetata. Palun vali teine
+    keelekomplekt!

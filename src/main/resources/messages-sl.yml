@@ -375,9 +375,6 @@ Messages:
     uspešno nastavljena.
   wwcConfigGUIFatalAsyncAbortButton: Spremeni časovno omejitev opravila Async
   wwcTimeoutException: Vaš ukaz je časovno razporejen. Prosimo, poskusite znova.
-  wwcBackupLangCodesWarning: WorldwideChat ni mogel pridobiti jezikov in namesto tega
-    uporablja varnostne kopije. To verjetno ne bo vplivalo na vedenje vtičnikov, vendar
-    se obrnite na razvijalca.
   libreHttp400: Slaba zahteva, poslana Libre Translate! Razen če delaš nekaj, česar
     ne bi smeli, tega ne bi smeli dobiti. Obrnite se na razvijalca!
   wwcConfigGUILibreTranslateApiKeyButton: Spremenite brezplačno prevajanje API Key
@@ -435,3 +432,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Spremenite vrata MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Neveljavna usodna async timeout niz. Defaulting
     do 10 sekund...
+  libreHttp500: Izbrani par vhodnih in izhodnih jezikov ni podprt. Izberite drug nabor
+    jezikov!

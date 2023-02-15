@@ -378,9 +378,6 @@ Messages:
     beállítva.
   wwcConfigGUIFatalAsyncAbortButton: Async Task Timeout módosítása
   wwcTimeoutException: A parancsnoksága időtúllépés volt. Kérem, próbálja újra.
-  wwcBackupLangCodesWarning: A WorldwideChat nem tudta letölteni a nyelveket, és ehelyett
-    biztonsági mentéseket használ. Ez valószínűleg nem befolyásolja a plugin viselkedését,
-    de kérjük, vegye fel a kapcsolatot a fejlesztővel.
   libreHttp400: Rossz kérés elküldve a Libre Fordítónak! Hacsak nem csinálsz valamit,
     amit nem szabad, ezt nem szabad megkapnod. Kérjük, lépjen kapcsolatba a fejlesztővel!
   wwcConfigGUILibreTranslateApiKeyButton: Change Libre Fordítás API Key
@@ -438,3 +435,5 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB port módosítása
   wwcConfigInvalidFatalAsyncTimeout: Érvénytelen halálos aszinkron időtúllépés beállítása.
     Alapértelmezés szerint 10 másodperc...
+  libreHttp500: A kiválasztott bemeneti és kimeneti nyelvpár nem támogatott. Kérjük,
+    válasszon másik nyelvi készletet!

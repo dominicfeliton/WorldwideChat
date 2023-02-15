@@ -371,9 +371,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async taak time-out suksesvol te stel.
   wwcConfigGUIFatalAsyncAbortButton: Verander Async Taak Time-out
   wwcTimeoutException: Jou opdrag snel uit. Probeer asseblief weer.
-  wwcBackupLangCodesWarning: WorldwideChat was nie in staat om tale te haal nie, en
-    gebruik eerder rugsteun. Dit sal waarskynlik geen invloed op die inprop gedrag,
-    maar kontak asseblief die ontwikkelaar.
   libreHttp400: Slegte versoek gestuur na Libre Translate! Tensy jy iets doen wat
     jy nie moet nie, jy moet dit nie kry nie. Kontak asseblief die ontwikkelaar!
   wwcConfigGUILibreTranslateApiKeyButton: Verander Libre Translate API Sleutel
@@ -428,3 +425,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Verander MongoDB-poort
   wwcConfigInvalidFatalAsyncTimeout: Ongeldige noodlottige async tydverstreke stel.
     Verstek na 10 sekondes...
+  libreHttp500: Jou gekose invoer- en uitvoertaalpaar word nie ondersteun nie. Kies
+    asseblief 'n ander taal stel!

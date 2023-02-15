@@ -369,8 +369,6 @@ Messages:
     nastaven.
   wwcConfigGUIFatalAsyncAbortButton: Změna časového limtu asynchronních úloh
   wwcTimeoutException: Vypršel časový limit vašeho příkazu. Prosím, zkuste to znovu.
-  wwcBackupLangCodesWarning: WorldwideChat nebyl schopen načíst jazyky, a místo toho
-    používá zálohy. To pravděpodobně neovlivní chování pluginu, ale kontaktujte vývojáře.
   libreHttp400: Špatný požadavek zaslán Libre Translate! Pokud neděláte něco, co byste
     neměli, neměli byste to dostat. Kontaktujte vývojáře!
   wwcConfigGUILibreTranslateApiKeyButton: Změnit zdarma Přeložit API Key
@@ -427,3 +425,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Změnit port MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Neplatná fatální asynchronní sada časového limitu.
     Výchozí nastavení na 10 sekund...
+  libreHttp500: Váš vybraný vstupní a výstupní jazykový pár není podporován. Zvolte
+    prosím jinou jazykovou sadu!

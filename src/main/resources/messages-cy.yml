@@ -374,9 +374,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Amserlen tasg Async gosod yn llwyddiannus.
   wwcConfigGUIFatalAsyncAbortButton: Newid Amserlen Tasg Async
   wwcTimeoutException: Eich gorchymyn wedi'i amseru allan. Ceisiwch eto.
-  wwcBackupLangCodesWarning: Nid oedd WorldwideChat yn gallu nôl ieithoedd, ac yn
-    lle hynny mae'n defnyddio copïau wrth gefn. Mae'n debyg na fydd hyn yn effeithio
-    ar ymddygiad ategyn, ond cysylltwch â'r datblygwr.
   libreHttp400: Cais gwael wedi'i anfon i Libre Translate! Oni bai eich bod yn gwneud
     rhywbeth na ddylech, ni ddylech gael hyn. Cysylltwch â'r datblygwr!
   wwcConfigGUILibreTranslateApiKeyButton: Newid Free Cyfieithu API Allweddol
@@ -432,3 +429,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Newid Porthladd MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Set amser async angheuol annilys. Yn ddiffygiol
     i 10 eiliad...
+  libreHttp500: Ni chefnogir eich pâr iaith mewnbwn ac allbwn a ddewiswyd. Dewiswch
+    set iaith wahanol!

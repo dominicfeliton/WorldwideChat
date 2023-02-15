@@ -13,7 +13,7 @@ import java.util.concurrent.TimeoutException;
 import org.apache.commons.lang3.StringUtils;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -73,32 +73,33 @@ public class WatsonTranslation extends BasicTranslation {
 
 				/* Parse json */
 				final JsonArray dataJson = jsonObject.getAsJsonArray("languages");
-				List<SupportedLanguageObject> outList = new ArrayList<SupportedLanguageObject>();
+				List<SupportedLang> outLangList = new ArrayList<SupportedLang>();
+				List<SupportedLang> inLangList = new ArrayList<SupportedLang>();
 				for (JsonElement element : dataJson) {
-					if (((JsonObject) element).get("supported_as_source").getAsBoolean()
-							&& ((JsonObject) element).get("supported_as_target").getAsBoolean()) {
-						// TODO: Report bug, Chinese is not supported (but not excluded by IBM)...
-						// For now, exclude:
-						if (((JsonObject) element).get("language_name").getAsString().contains("Chinese")) {
-							continue;
-						}
-						outList.add(new SupportedLanguageObject(((JsonObject) element).get("language").getAsString(),
-								StringUtils.deleteWhitespace(((JsonObject) element).get("language_name").getAsString()),
-								StringUtils.deleteWhitespace(((JsonObject) element).get("native_language_name").getAsString()),
-								((JsonObject) element).get("supported_as_source").getAsBoolean(),
-								((JsonObject) element).get("supported_as_target").getAsBoolean()));
+					// Ignore Chinese, IBM Watson lies and says they support it, but they do not
+					// TODO: File bug report
+					if (((JsonObject) element).get("language_name").getAsString().contains("Chinese")) {
+						continue;
+					}
+					// Generate SupportedLang obj
+					SupportedLang currLang = new SupportedLang(((JsonObject) element).get("language").getAsString(),
+							StringUtils.deleteWhitespace(((JsonObject) element).get("language_name").getAsString()),
+							StringUtils.deleteWhitespace(((JsonObject) element).get("native_language_name").getAsString()));
+					
+					// Add to source list, if supported
+					if (((JsonObject) element).get("supported_as_source").getAsBoolean()) {
+						inLangList.add(currLang);
+					}
+					// Add to target list, if supported
+					if (((JsonObject) element).get("supported_as_target").getAsBoolean()) {
+						outLangList.add(currLang);
 					}
 				}
 
 				/* Set supported translator languages */
-				main.setSupportedTranslatorLanguages(outList);
+				main.setOutputLangs(outLangList);
+				main.setInputLangs(inLangList);
 
-				if (outList.size() == 0) {
-					main.getLogger().warning(getMsg("wwcBackupLangCodesWarning"));
-					debugMsg("---> Using backup codes!!! Fix this!!! <---");
-					setBackupCodes();
-				}
-				
 				/* Setup test translation */
 				textToTranslate = "Hello, how are you?";
 				inputLang = "en";

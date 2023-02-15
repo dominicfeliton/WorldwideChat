@@ -405,9 +405,6 @@ Messages:
   wwcConfigGUIFatalAsyncAbortButton: Async-Aufgaben-Timeout ändern
   wwcTimeoutException: Ihr Befehl hat das Zeitlimit überschritten. Bitte versuche
     es erneut.
-  wwcBackupLangCodesWarning: WorldwideChat konnte keine Sprachen abrufen und verwendet
-    stattdessen Backups. Dies wird wahrscheinlich nicht das Verhalten des Plugins
-    beeinflussen, aber bitte kontaktiere den Entwickler.
   libreHttp400: Schlechte Anfrage an Libre Translate gesendet! Sofern Sie nichts tun,
     was Sie nicht tun sollten, sollten Sie dies nicht bekommen. Bitte kontaktiere
     den Entwickler!
@@ -473,3 +470,5 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB-Port ändern
   wwcConfigInvalidFatalAsyncTimeout: Ungültiger fataler asynchroner Timeout-Satz.
     Standardmäßig 10 Sekunden...
+  libreHttp500: Ihr ausgewähltes Eingabe- und Ausgabesprachenpaar wird nicht unterstützt.
+    Bitte wählen Sie ein anderes Sprachset!

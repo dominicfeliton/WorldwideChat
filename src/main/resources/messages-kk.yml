@@ -363,9 +363,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async тапсырма уақыты сәтті орнатылған.
   wwcConfigGUIFatalAsyncAbortButton: Async тапсырмасының уақытын өзгерту
   wwcTimeoutException: Сіздің командаңыз орайластырылған. Қайтадан көріңіз.
-  wwcBackupLangCodesWarning: WorldwideChat тілдерді алу үшін алмады, және оның орнына
-    сақтық көшірмелерін пайдаланып отыр. Бұл плагин мінез-құлқына әсер етпейді, бірақ
-    әзірлеушіге хабарласыңыз.
   libreHttp400: Жаман сұрау Libre Translate жіберілді! Егер сіз қажет емес нәрсе жасамасаңыз,
     мұны алмауыңыз керек. Әзірлеушіге хабарласыңыз!
   wwcConfigGUILibreTranslateApiKeyButton: Өзгерту Тегін API кілт аудару
@@ -422,3 +419,5 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB порты
   wwcConfigInvalidFatalAsyncTimeout: Жарамсыз өлімге async тайм-аут жиынтығы. 10 секундқа
     дейін дефолт...
+  libreHttp500: Таңдалған кіріс және шығыс тіл жұбына қолдау көрсетілмейді. Басқа
+    тіл жиынтығын таңдаңыз!

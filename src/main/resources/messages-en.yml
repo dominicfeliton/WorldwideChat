@@ -30,7 +30,6 @@ Messages:
   wwcTimeoutExceptionConsole: 'Player %i had their most recent request timeout. This error is not fatal, but WorldwideChat should be reloaded if it continues to happen.'
   wwcTimeoutException: 'Your command timed out. Please try again.'
   wwcGUIPageNumber: 'Page Number: %i'
-  wwcBackupLangCodesWarning: 'WorldwideChat was unable to fetch languages, and is instead using backups. This probably will not affect plugin behavior, but please contact the developer.'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from %i to %o.'
   wwcOnJoinTranslationNotificationNoSourceLang: 'You have an active translation session to %o.'
@@ -333,6 +332,7 @@ Messages:
   libreHttp400: 'Bad request sent to Libre Translate! Unless you are doing something that you should not, you should not get this. Please contact the developer!'
   libreHttp403: 'Missing Libre Translate API Key, or you are banned from the server!'
   libreHttp429: 'No confidence due to rate limit from server.'
+  libreHttp500: 'Your selected input and output language pair is not supported. Please choose a different language set!'
   libreHttpUnknown: 'Unknown http error: %i'
   #------------------- Other Messages -------------------
   wwcExampleMessage: 'This is a dummy message, and is meant to be overriden as an example.'

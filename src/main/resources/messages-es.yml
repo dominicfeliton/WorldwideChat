@@ -395,9 +395,6 @@ Messages:
     ha establecido correctamente
   wwcConfigGUIFatalAsyncAbortButton: Cambiar el tiempo de espera de tareas asíncronas
   wwcTimeoutException: Su comando ha caducado. Inténtelo de nuevo.
-  wwcBackupLangCodesWarning: WorldwideChat no pudo obtener los idiomas y, en su lugar,
-    está utilizando copias de seguridad. Probablemente esto no afecte al comportamiento
-    del plugin, pero por favor contacta con el desarrollador.
   libreHttp400: ¡Solicitud incorrecta enviada a Libre Translate! A menos que estés
     haciendo algo que no deberías, no deberías recibir esto. ¡Ponte en contacto con
     el desarrollador!
@@ -463,3 +460,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Cambiar puerto de MongoDB
   wwcConfigInvalidFatalAsyncTimeout: Se estableció un tiempo de espera asincrónico
     fatal no válido. Con un valor predeterminado de 10 segundos...
+  libreHttp500: No se admite el par de idiomas de entrada y salida seleccionado. ¡Elija
+    un conjunto de idiomas diferente!

@@ -378,9 +378,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Tidsgräns för async aktivitet.
   wwcConfigGUIFatalAsyncAbortButton: Ändra tidsgräns för async aktivitet
   wwcTimeoutException: Ditt kommando tids ut. Försök igen.
-  wwcBackupLangCodesWarning: WorldwideChat kunde inte hämta språk, och använder istället
-    säkerhetskopior. Detta kommer förmodligen inte att påverka plugin-beteendet, men
-    kontakta utvecklaren.
   libreHttp400: Dålig begäran skickas till Libre Translate! Om du inte gör något som
     du inte borde, borde du inte få det här. Kontakta utvecklaren!
   wwcConfigGUILibreTranslateApiKeyButton: Ändra Ledig Översätt API-nyckel
@@ -435,3 +432,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Ändra MongoDB Port
   wwcConfigInvalidFatalAsyncTimeout: Ogiltig dödlig tidsgräns för asynk. Förval till
     10 sekunder...
+  libreHttp500: Det valda inmatnings- och utgångsspråkparet stöds inte. Välj en annan
+    språkuppsättning!

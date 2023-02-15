@@ -365,9 +365,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async-tehtävän aikakatkaisu asetettu onnistuneesti.
   wwcConfigGUIFatalAsyncAbortButton: Muuta Async-tehtävän aikakatkaisu
   wwcTimeoutException: Komentosi aikakatkaistiin. Yritä uudelleen.
-  wwcBackupLangCodesWarning: WorldwideChat ei pystynyt hakemaan kieliä, ja käyttää
-    sen sijaan varmuuskopioita. Tämä ei todennäköisesti vaikuta laajennuksen käyttäytymiseen,
-    mutta ota yhteyttä kehittäjään.
   libreHttp400: Huono pyyntö lähetetty Libre Translate -sivustolle! Ellet tee jotain,
     mitä sinun ei pitäisi, sinun ei pitäisi saada tätä. Ota yhteyttä kehittäjään!
   wwcConfigGUILibreTranslateApiKeyButton: Muuta Libre Käännä API-avain
@@ -424,3 +421,4 @@ Messages:
   wwcConfigGUIMongoPortButton: Vaihda MongoDB-portti
   wwcConfigInvalidFatalAsyncTimeout: Virheellinen kohtalokas asynkronoinnin aikakatkaisu
     asetettu. Oletusarvo 10 sekuntia...
+  libreHttp500: Valitsemaasi tulo- ja lähtökieliparia ei tueta. Valitse toinen kielisarja!

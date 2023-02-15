@@ -377,9 +377,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async ажил хугацаа амжилттай тогтоосон.
   wwcConfigGUIFatalAsyncAbortButton: Async Даалгавар Хугацааны өөрчлөлт
   wwcTimeoutException: Таны тушаал гарч хугацаатай. Дахин оролдоно уу.
-  wwcBackupLangCodesWarning: WorldwideChat хэлийг татаж авах боломжгүй байсан бөгөөд
-    оронд нь нөөцлөлтийг ашиглаж байна. Энэ нь магадгүй залгаас зан нөлөөлөхгүй байх
-    болно, Харин хөгжүүлэгч холбоо барина уу!.
   libreHttp400: Муу хүсэлт Libre илгээсэн Translate! Хэрэв та ямар нэг зүйл хийж байгаа
     бол та байх ёстой гэж, Хэрэв та энэ авч байх ёстой. Хөгжүүлэгчтэй холбоо барина
     уу!
@@ -442,3 +439,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Өөрчлөлт MongoDB Порт
   wwcConfigInvalidFatalAsyncTimeout: Буруу аминд async хугацаа тогтоосон. 10 секунд
     хүртэл анхдагчууд...
+  libreHttp500: Таны сонгосон оролт, гаралтын хэлний хос дэмжигдээгүй байна. Өөр хэлний
+    багцыг сонгоно уу!

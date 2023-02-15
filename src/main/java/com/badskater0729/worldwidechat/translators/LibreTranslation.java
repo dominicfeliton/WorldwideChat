@@ -26,7 +26,7 @@ import org.apache.http.message.BasicHeader;
 import org.apache.http.protocol.HTTP;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -81,7 +81,8 @@ public class LibreTranslation extends BasicTranslation {
 				
 				int listResponseCode = conn.getResponseCode();
 				
-				List<SupportedLanguageObject> outList = new ArrayList<SupportedLanguageObject>();
+				List<SupportedLang> outLangList = new ArrayList<SupportedLang>();
+				List<SupportedLang> inLangList = new ArrayList<SupportedLang>();
 				if (listResponseCode == 200) {
 					// Scan response
 					String inLine = "";
@@ -97,22 +98,19 @@ public class LibreTranslation extends BasicTranslation {
 				    JsonElement jsonTree = JsonParser.parseString(inLine);
 					for (JsonElement element : jsonTree.getAsJsonArray()) {
 						JsonObject eaProperty = (JsonObject) element;
-						outList.add(new SupportedLanguageObject(
+						SupportedLang currLang = new SupportedLang(
 								eaProperty.get("code").getAsString(),
-								StringUtils.deleteWhitespace(eaProperty.get("name").getAsString())));
+								StringUtils.deleteWhitespace(eaProperty.get("name").getAsString()));
+						outLangList.add(currLang);
+						inLangList.add(currLang);
 					}
 				} else {
 					checkError(listResponseCode);
 				}
 				
 				/* Parse languages */
-				main.setSupportedTranslatorLanguages(outList);
-				
-				if (outList.size() == 0) {
-					main.getLogger().warning(getMsg("wwcBackupLangCodesWarning"));
-					debugMsg("---> Using backup codes!!! Fix this!!! <---");
-					setBackupCodes();
-				}
+				main.setOutputLangs(outLangList);
+				main.setInputLangs(inLangList);
 
 				/* Setup test translation */
 				inputLang = "en";
@@ -125,9 +123,9 @@ public class LibreTranslation extends BasicTranslation {
 			 * instead of full names (English, Spanish) */
 			if (!isInitializing) {
 				if (!inputLang.equals("None")) {
-					inputLang = getSupportedTranslatorLang(inputLang).getLangCode();
+					inputLang = getSupportedTranslatorLang(inputLang, "in").getLangCode();
 				}
-				outputLang = getSupportedTranslatorLang(outputLang).getLangCode();
+				outputLang = getSupportedTranslatorLang(outputLang, "out").getLangCode();
 			}
 			
 			/* Detect inputLang */
@@ -196,6 +194,7 @@ public class LibreTranslation extends BasicTranslation {
 		case 400:
 		case 403:
 		case 429:
+		case 500:
 			throw new Exception(getMsg("libreHttp" + in));
 		default:
 			throw new Exception(getMsg("libreHttpUnknown", new String[] {in + ""}));

@@ -377,9 +377,6 @@ Messages:
   wwcConfigGUIFatalAsyncAbortButton: Async Vazifa vaqtini o'zgartirish
   wwcTimeoutException: Sizning buyrug'ingiz amalga oshirildi. Iltimos, yana urinib
     ko'ring.
-  wwcBackupLangCodesWarning: WorldwideChat tillarni ololmadi va uning o'rniga zaxira
-    nusxalarini ishlatadi. Bu, ehtimol, plagin xatti-harakatlariga ta'sir qilmaydi,
-    lekin iltimos, ishlab chiquvchiga murojaat qiling.
   libreHttp400: Yomon so'rov Libre Translate-ga yuborilgan! Agar siz buni qilmasligingiz
     kerak bo'lgan biror narsa qilmasangiz, buni olmasligingiz kerak. Iltimos, ishlab
     chiquvchi bilan bog'laning!
@@ -441,3 +438,5 @@ Messages:
   wwcConfigGUIMongoPortButton: MongoDB portini o'zgartiring
   wwcConfigInvalidFatalAsyncTimeout: Noto'g'ri halokatli async vaqt tugashi to'plami.
     10 soniyagacha defolt...
+  libreHttp500: Tanlangan kirish va chiqish tili juftligi qo'llab-quvvatlanmaydi.
+    Iltimos, boshqa til to'plamini tanlang!

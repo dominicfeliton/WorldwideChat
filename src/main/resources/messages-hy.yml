@@ -382,9 +382,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async խնդիրն timeout սահմանել հաջողությամբ.
   wwcConfigGUIFatalAsyncAbortButton: Փոխել Async Task Ժամկետը
   wwcTimeoutException: 'Ձեր հրամանը ժամանակավրեպ դուրս. Խնդրում ենք կրկին փորձել:'
-  wwcBackupLangCodesWarning: 'WorldwideChat չի կարողացել ստանալ լեզուներ, եւ դրա փոխարեն,
-    օգտագործելով backups. Սա, հավանաբար, չի ազդի plugin վարքի վրա, բայց խնդրում ենք
-    կապվել մշակողի հետ:'
   libreHttp400: 'Վատ խնդրանքը ուղարկվել է Libre Թարգմանել! Եթե դուք անում մի բան,
     որ դուք չպետք է, Դուք չպետք է ստանալ այս. Խնդրում ենք կապնվել մշակողի հետ:'
   wwcConfigGUILibreTranslateApiKeyButton: Փոխել ազատ Թարգմանել API Key
@@ -444,3 +441,5 @@ Messages:
   wwcConfigGUIMongoPortButton: Փոխել MongoDB նավահանգիստը
   wwcConfigInvalidFatalAsyncTimeout: 'Անվավեր ճակատագրական async timeout հավաքածու:
     Defaulting է 10 վայրկյան...'
+  libreHttp500: 'Ձեր ընտրած մուտքային և ելքային լեզվական զույգը չի ապահովվում: Խնդրում
+    ենք ընտրել այլ լեզվական հավաքածու:'

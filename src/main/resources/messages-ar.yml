@@ -342,9 +342,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: تم تعيين مهلة مهمة غير متزامنة بنجاح.
   wwcConfigGUIFatalAsyncAbortButton: تغيير مهلة المهام غير المتزامنة
   wwcTimeoutException: انتهت مهلة الأمر الخاص بك. يرجى المحاولة مرة أخرى.
-  wwcBackupLangCodesWarning: لم يتمكن WorldwideChat من جلب اللغات، وبدلاً من ذلك يستخدم
-    النسخ الاحتياطية. ربما لن يؤثر هذا على سلوك المكون الإضافي، ولكن يرجى الاتصال
-    بالمطور.
   libreHttp400: تم إرسال طلب سيء إلى Libre Translate! ما لم تكن تفعل شيئًا لا يجب
     عليك فعله، فلا يجب أن تحصل عليه. يرجى الاتصال بالمطور!
   wwcConfigGUILibreTranslateApiKeyButton: تغيير مفتاح واجهة برمجة التطبيقات لترجمة
@@ -399,3 +396,5 @@ Messages:
   wwcConfigGUIMongoPortButton: تغيير منفذ MongoDB
   wwcConfigInvalidFatalAsyncTimeout: تم تعيين مهلة غير متزامنة قاتلة غير صالحة. الإعداد
     الافتراضي هو 10 ثوانٍ...
+  libreHttp500: زوج لغات الإدخال والإخراج المحدد غير مدعوم. يرجى اختيار مجموعة لغات
+    مختلفة!
