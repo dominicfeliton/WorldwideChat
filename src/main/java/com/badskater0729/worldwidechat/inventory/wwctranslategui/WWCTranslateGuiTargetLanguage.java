@@ -71,8 +71,8 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 				}
 				ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 				ArrayList<String> lore = new ArrayList<>();
-				SupportedLang currLang = main.getSupportedInputLangs().get(i);
-				SupportedLang userLang = getSupportedTranslatorLang(currTranslator.getInLangCode(), "out");
+				SupportedLang currLang = main.getSupportedOutputLangs().get(i);
+				SupportedLang userLang = getSupportedTranslatorLang(currTranslator.getOutLangCode(), "out");
 				
 				/* Add Glow Effect */
 				if (userLang.getLangCode().equals(currLang.getLangCode()) || userLang.getLangName().equals(currLang.getLangName())) {

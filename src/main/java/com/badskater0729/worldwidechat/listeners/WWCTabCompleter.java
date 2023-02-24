@@ -27,69 +27,102 @@ public class WWCTabCompleter implements TabCompleter {
 
 		/* Commands: /wwct */
 		if (command.getName().equals("wwct") && args.length > 0 && args.length < 4) {
-			// TODO: Rewrite...
-			/*
-			if (args[args.length - 1].isEmpty()) {
-				switch (args.length) {
-				case 1:
-					if (main.isActiveTranslator(((Player) sender))) {
-						out.add("stop");
-					}
-					for (Player eaPlayer : Bukkit.getServer().getOnlinePlayers()) {
+			boolean prevEmptyArg = args[args.length - 1].isEmpty();
+			switch (args.length) {
+			case 1:
+				// Add stop for sender
+				if (main.isActiveTranslator((Player) sender) &&
+						(prevEmptyArg || "stop".startsWith(args[args.length - 1]))) {
+					out.add("stop");
+				}
+				
+				// This argument could be another player
+				// Do not add other players if sender does not have permissions
+				for (Player eaPlayer : Bukkit.getServer().getOnlinePlayers()) {
+					String name = eaPlayer.getName();
+					if ((prevEmptyArg || name.startsWith(args[args.length - 1]))
+							&& (sender.hasPermission("worldwidechat.wwct.otherplayers") || name.equals(sender.getName()))) {
 						out.add(eaPlayer.getName());
 					}
-					break;
-				case 2:
-					if (Bukkit.getPlayerExact(args[0]) != null && !args[0].equalsIgnoreCase(sender.getName())
-						&& main.isActiveTranslator(Bukkit.getPlayerExact(args[0]).getUniqueId())) {
-						out.add("stop");
-					}
-					break;
 				}
-				if (args.length == 1
-						|| (args.length == 2 && (isSupportedTranslatorLang(args[0])
-										|| Bukkit.getPlayerExact(args[0]) != null))
-						|| (args.length == 3 && isSupportedTranslatorLang(args[1]) && Bukkit.getPlayerExact(args[0]) != null)) {
-					for (SupportedLang eaObj : main.getSupportedTranslatorLangs()) {
-						out.add(eaObj.getLangName());
-						out.add(eaObj.getLangCode());
+				
+				// This argument could be an input or outputLang
+				// Add input and output languages
+				// ** Only add if the previous argument is empty OR the user is typing this suggestion
+				for (SupportedLang eaLang : main.getSupportedInputLangs()) {
+					String langName = eaLang.getLangName();
+					String langCode = eaLang.getLangCode();
+					if ((prevEmptyArg || 
+							langName.startsWith(args[args.length - 1]) ||
+							langCode.startsWith(args[args.length - 1]))) {
+						out.add(langName);
+						out.add(langCode);
 					}
 				}
-			} else {
-				switch (args.length) {
-				case 1:
-					if (main.isActiveTranslator(((Player) sender).getUniqueId()) && "stop".startsWith(args[0].toLowerCase())) {
-						out.add("stop");
-					}
-					for (Player eaPlayer : Bukkit.getServer().getOnlinePlayers()) {
-						if (eaPlayer.getName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
-							out.add(eaPlayer.getName());
-						}
-					}
-					break;
-				case 2:
-					if (Bukkit.getPlayerExact(args[0]) != null 
-					&& main.isActiveTranslator(Bukkit.getPlayerExact(args[0]).getUniqueId())
-					&& "stop".startsWith(args[args.length - 1].toLowerCase())) {
-						out.add("stop");
-					}
-					break;
-				}
-				if (args.length == 1
-						|| (args.length == 2 && (isSupportedTranslatorLang(args[0])
-										|| Bukkit.getPlayerExact(args[0]) != null))
-						|| (args.length == 3 && isSupportedTranslatorLang(args[1]) && Bukkit.getPlayerExact(args[0]) != null)) {
-					for (SupportedLang eaObj : main.getSupportedTranslatorLangs()) {
-						if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
-							out.add(eaObj.getLangName());
-						}
-						if (eaObj.getLangCode().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
-							out.add(eaObj.getLangCode());
-						}
+				for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
+					String langName = eaLang.getLangName();
+					String langCode = eaLang.getLangCode();
+					if ((prevEmptyArg || 
+							langName.startsWith(args[args.length - 1]) ||
+							langCode.startsWith(args[args.length - 1]))) {
+						out.add(langName);
+						out.add(langCode);
 					}
 				}
+			    break;
+			case 2:
+				// Add stop for target player
+				// Do not add stop if user does not have permission
+				Player possiblePlayer = Bukkit.getPlayerExact(args[0]);
+				if (main.isActiveTranslator(possiblePlayer) && (sender.hasPermission("worldwidechat.wwct.otherplayers") || args[0].equalsIgnoreCase(sender.getName()))
+						&& (prevEmptyArg || "stop".startsWith(args[args.length - 1]))) {
+					out.add("stop");
+				}
+				
+				// This argument could be an input or outputLang
+				// Add input and output languages
+				// ** Only add if the previous argument is empty OR the user is typing this suggestion
+				for (SupportedLang eaLang : main.getSupportedInputLangs()) {
+					String langName = eaLang.getLangName();
+					String langCode = eaLang.getLangCode();
+					if ((prevEmptyArg || 
+							langName.startsWith(args[args.length - 1]) ||
+							langCode.startsWith(args[args.length - 1]))) {
+						out.add(langName);
+						out.add(langCode);
+					}
+				}
+				for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
+					String langName = eaLang.getLangName();
+					String langCode = eaLang.getLangCode();
+					if ((prevEmptyArg || 
+							langName.startsWith(args[args.length - 1]) ||
+							langCode.startsWith(args[args.length - 1]))) {
+						out.add(langName);
+						out.add(langCode);
+					}
+				}
+				break;
+			case 3:
+				// Don't suggest anything if first arg is not a player...
+				if (Bukkit.getPlayerExact(args[0]) == null) {
+					break;
+				}
+				
+				// The third argument can only be outLang
+				// Therefore, simply add all possible output languages
+				for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
+					String langName = eaLang.getLangName();
+					String langCode = eaLang.getLangCode();
+					if ((prevEmptyArg || 
+							langName.startsWith(args[args.length - 1]) ||
+							langCode.startsWith(args[args.length - 1]))) {
+						out.add(langName);
+						out.add(langCode);
+					}
+				}
+				break;
 			}
-			*/
 		
 		/* Commands: /wwcg */
 		} else if (command.getName().equals("wwcg") && args.length > 0 && args.length < 3) {

@@ -609,6 +609,9 @@ public class WorldwideChat extends JavaPlugin {
 	 * @return true if ActiveTranslator, false otherwise
 	 */
 	public boolean isActiveTranslator(Player in) {
+		if (in == null) {
+			return false;
+		}
 		return isActiveTranslator(in.getUniqueId());
 	}
 	
@@ -618,6 +621,9 @@ public class WorldwideChat extends JavaPlugin {
 	 * @return true if ActiveTranslator, false otherwise
 	 */
 	public boolean isActiveTranslator(UUID in) {
+		if (in == null) {
+			return false;
+		}
 		return isActiveTranslator(in.toString());
 	}
 	
