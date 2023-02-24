@@ -131,7 +131,7 @@ public class WWCTabCompleter implements TabCompleter {
 			case 1:
 				// Add "stop" if global translate is active
 				if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && 
-						(args[args.length - 1].isEmpty() || "stop".startsWith(args[args.length - 1]))) {
+						(prevEmptyArg || "stop".startsWith(args[args.length - 1]))) {
 					out.add("stop");
 				}
 				
