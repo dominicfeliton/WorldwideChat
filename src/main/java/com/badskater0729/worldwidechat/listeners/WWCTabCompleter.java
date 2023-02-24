@@ -126,44 +126,53 @@ public class WWCTabCompleter implements TabCompleter {
 		
 		/* Commands: /wwcg */
 		} else if (command.getName().equals("wwcg") && args.length > 0 && args.length < 3) {
-			/*
-			if (args[args.length - 1].isEmpty()) {
-				switch (args.length) {
-				case 1:
-					if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")) {
-						out.add("stop");
-					}
-					break;
+			boolean prevEmptyArg = args[args.length - 1].isEmpty();
+			switch (args.length) {
+			case 1:
+				// Add "stop" if global translate is active
+				if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && 
+						(args[args.length - 1].isEmpty() || "stop".startsWith(args[args.length - 1]))) {
+					out.add("stop");
 				}
-				if (args.length == 1
-						|| (args.length == 2 && isSupportedTranslatorLang(args[0]))) {
-					for (SupportedLang eaObj : main.getSupportedTranslatorLangs()) {
-						out.add(eaObj.getLangName());
-						out.add(eaObj.getLangCode());
-					}
-				}
-			} else {
-				switch (args.length) {
-				case 1:
-					if ("stop".startsWith(args[0].toLowerCase())
-							&& main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")) {
-						out.add("stop");
-					}
-					break;
-				}
-				if (args.length == 1
-						|| (args.length == 2 && isSupportedTranslatorLang(args[0]))) {
-					for (SupportedLang eaObj : main.getSupportedTranslatorLangs()) {
-						if (eaObj.getLangName().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
-							out.add(eaObj.getLangName());
-						}
-						if (eaObj.getLangCode().toLowerCase().startsWith(args[args.length - 1].toLowerCase())) {
-							out.add(eaObj.getLangCode());
-						}
+				
+				// This argument could be an input or outputLang
+				// Add input and output languages
+				// ** Only add if the previous argument is empty OR the user is typing this suggestion
+				for (SupportedLang eaLang : main.getSupportedInputLangs()) {
+					String langName = eaLang.getLangName();
+					String langCode = eaLang.getLangCode();
+					if ((prevEmptyArg || 
+							langName.startsWith(args[args.length - 1]) ||
+							langCode.startsWith(args[args.length - 1]))) {
+						out.add(langName);
+						out.add(langCode);
 					}
 				}
+				for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
+					String langName = eaLang.getLangName();
+					String langCode = eaLang.getLangCode();
+					if ((prevEmptyArg || 
+							langName.startsWith(args[args.length - 1]) ||
+							langCode.startsWith(args[args.length - 1]))) {
+						out.add(langName);
+						out.add(langCode);
+					}
+				}
+				break;
+			case 2:
+				// This argument can only be an outLang
+				for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
+					String langName = eaLang.getLangName();
+					String langCode = eaLang.getLangCode();
+					if ((prevEmptyArg || 
+							langName.startsWith(args[args.length - 1]) ||
+							langCode.startsWith(args[args.length - 1]))) {
+						out.add(langName);
+						out.add(langCode);
+					}
+				}
+				break;
 			}
-			*/
 		
 		/* Commands: /wwcts, /wwctb, /wwcti, /wwcte, /wwctci, /wwctco */
 		} else if ((command.getName().equals("wwcts") || command.getName().equals("wwctb")

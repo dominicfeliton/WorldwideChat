@@ -221,6 +221,9 @@ public class WWCTranslate extends BasicCommand {
 				return false;
 			}
 			inUUID = targetPlayer.getUniqueId().toString();
+		} else {
+			// If global, set UUID to reflect that
+			inUUID = "GLOBAL-TRANSLATE-ENABLED";
 		}
 		
 		/* Check if user is targetting themselves, which doesn't need this permission (or if we are console) */
