@@ -24,9 +24,10 @@ public class WWCTabCompleter implements TabCompleter {
 	public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
 		// Init out list
 		List<String> out = new ArrayList<String>();
+		String commandName = command.getName();
 
 		/* Commands: /wwct */
-		if (command.getName().equals("wwct") && args.length > 0 && args.length < 4) {
+		if (commandName.equals("wwct") && args.length > 0 && args.length < 4) {
 			boolean prevEmptyArg = args[args.length - 1].isEmpty();
 			switch (args.length) {
 			case 1:
@@ -125,7 +126,7 @@ public class WWCTabCompleter implements TabCompleter {
 			}
 		
 		/* Commands: /wwcg */
-		} else if (command.getName().equals("wwcg") && args.length > 0 && args.length < 3) {
+		} else if (commandName.equals("wwcg") && args.length > 0 && args.length < 3) {
 			boolean prevEmptyArg = args[args.length - 1].isEmpty();
 			switch (args.length) {
 			case 1:
@@ -175,9 +176,9 @@ public class WWCTabCompleter implements TabCompleter {
 			}
 		
 		/* Commands: /wwcts, /wwctb, /wwcti, /wwcte, /wwctci, /wwctco */
-		} else if ((command.getName().equals("wwcts") || command.getName().equals("wwctb")
-				|| command.getName().equals("wwcti") || command.getName().equals("wwcte")
-				|| command.getName().equals("wwctci") || command.getName().equals("wwctco")) && args.length == 1) {
+		} else if ((commandName.equals("wwcts") || commandName.equals("wwctb")
+				|| commandName.equals("wwcti") || commandName.equals("wwcte")
+				|| commandName.equals("wwctci") || commandName.equals("wwctco")) && args.length == 1) {
 			if (args[0].isEmpty()) {
 				for (String eaTranslatorUUID : main.getActiveTranslators().keySet()) {
 					if (!eaTranslatorUUID.equals("GLOBAL-TRANSLATE-ENABLED")
@@ -197,7 +198,7 @@ public class WWCTabCompleter implements TabCompleter {
 			}
 		
 		/* Commands: /wwcs */
-		} else if (command.getName().equals("wwcs") && args.length == 1) {
+		} else if (commandName.equals("wwcs") && args.length == 1) {
 			if (args[0].isEmpty()) {
 				for (Player eaPlayer : Bukkit.getServer().getOnlinePlayers()) {
 					out.add(eaPlayer.getName());
@@ -211,7 +212,7 @@ public class WWCTabCompleter implements TabCompleter {
 			}
 		
 		/* Commands: /wwctrl */
-		} else if (command.getName().equals("wwctrl") && args.length > 0 && args.length < 3) {
+		} else if (commandName.equals("wwctrl") && args.length > 0 && args.length < 3) {
 			if (args[args.length - 1].isEmpty() && args.length == 1) {
 				for (String eaTranslatorUUID : main.getActiveTranslators().keySet()) {
 					if (!eaTranslatorUUID.equals("GLOBAL-TRANSLATE-ENABLED")
