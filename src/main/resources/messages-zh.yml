@@ -331,3 +331,10 @@ Messages:
   wwcConfigGUIMongoPortButton: 更改 MongoDB 端口
   wwcConfigInvalidFatalAsyncTimeout: 设置的致命异步超时无效。默认为 10 秒...
   libreHttp500: 不支持您选择的输入和输出语言对。请选择其他语言集！
+  wwcConfigGUIDeepLTranslateButton: 切换 DeepL 翻译
+  wwcConfigConversationDeepLTranslateToggleSuccess: 成功切换了 DeepL 翻译。重新加载以使更改生效。
+  wwcConfigGUIDeepLTranslateApiKeyButton: 更改 DeepL 翻译 API 密钥
+  wwcConfigGUIToggleDeepLTranslateButton: 切换 DeepL 翻译
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API 密钥设置成功。
+  wwcConfigConversationDeepLTranslateApiKeyInput: 当前 API 密钥是 %i。请输入 DeepL 的 API 密钥，或者键入
+    0 返回。

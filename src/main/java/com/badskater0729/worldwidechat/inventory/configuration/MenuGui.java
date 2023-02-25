@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.conversations.configuration.AmazonSettingsConvos;
+import com.badskater0729.worldwidechat.conversations.configuration.DeepLSettingsConvos;
 import com.badskater0729.worldwidechat.conversations.configuration.GeneralSettingsConvos;
 import com.badskater0729.worldwidechat.conversations.configuration.GoogleSettingsConvos;
 import com.badskater0729.worldwidechat.conversations.configuration.LibreSettingsConvos;
@@ -32,7 +33,7 @@ public class MenuGui implements InventoryProvider {
 	// Thank you, H***** for the help with this class!!
 	
 	public static enum CONFIG_GUI_TAGS {
-		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, CHAT_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET;
+		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, CHAT_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET, DEEP_TRANS_SET;
 		
 		public SmartInventory smartInv;
 	}
@@ -68,6 +69,9 @@ public class MenuGui implements InventoryProvider {
 		
 		MenuGui transLibreSet = new MenuGui();
 		CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv = transLibreSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Libre"});
+		
+		MenuGui transDeepSet = new MenuGui();
+		CONFIG_GUI_TAGS.DEEP_TRANS_SET.smartInv = transDeepSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"DeepL"});
 		
 		/* Generate inventory contents */
 		// General
@@ -153,13 +157,14 @@ public class MenuGui implements InventoryProvider {
 	    transSet.add(new SubMenuElement(1, 2, WorldwideChat.instance.getTranslatorName().equals("Google Translate"), "wwcConfigGUIGoogleTranslateButton", CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv));
 	    transSet.add(new SubMenuElement(1, 3, WorldwideChat.instance.getTranslatorName().equals("Amazon Translate"), "wwcConfigGUIAmazonTranslateButton", CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv));
 	    transSet.add(new SubMenuElement(1, 4, WorldwideChat.instance.getTranslatorName().equals("Libre Translate"), "wwcConfigGUILibreTranslateButton", CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv));
-	    transSet.add(new ConvoElement(1, 5, "wwcConfigGUITranslatorCacheButton", XMaterial.NAME_TAG,
+	    transSet.add(new SubMenuElement(1, 5, WorldwideChat.instance.getTranslatorName().equals("DeepL Translate"), "wwcConfigGUIDeepLTranslateButton", CONFIG_GUI_TAGS.DEEP_TRANS_SET.smartInv));
+	    transSet.add(new ConvoElement(1, 6, "wwcConfigGUITranslatorCacheButton", XMaterial.NAME_TAG,
 	    		new TranslatorSettingsConvos.TranslationCache()));
-	    transSet.add(new ConvoElement(1, 6, "wwcConfigGUIGlobalRateLimitButton", XMaterial.NAME_TAG,
+	    transSet.add(new ConvoElement(1, 7, "wwcConfigGUIGlobalRateLimitButton", XMaterial.NAME_TAG,
 	    		new TranslatorSettingsConvos.GlobalRateLimit()));
-	    transSet.add(new ConvoElement(1, 7, "wwcConfigGUIErrorLimitButton", XMaterial.NAME_TAG,
+	    transSet.add(new ConvoElement(2, 1, "wwcConfigGUIErrorLimitButton", XMaterial.NAME_TAG,
 	    		new TranslatorSettingsConvos.ErrorLimit()));
-	    transSet.add(new ConvoElement(2, 1, "wwcConfigGUICharacterLimitButton", XMaterial.NAME_TAG,
+	    transSet.add(new ConvoElement(2, 2, "wwcConfigGUICharacterLimitButton", XMaterial.NAME_TAG,
 	    		new TranslatorSettingsConvos.CharacterLimit()));
 	    transSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
 		transSet.add(new CommonElement(3, 4, "Quit"));
@@ -208,6 +213,15 @@ public class MenuGui implements InventoryProvider {
 		transLibreSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
 		transLibreSet.add(new CommonElement(2, 4, "Quit"));
 		transLibreSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
+		
+		// DeepL Translator
+		transDeepSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
+		transDeepSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleDeepLTranslateButton", "wwcConfigConversationDeepLTranslateToggleSuccess", "Translator.useDeepLTranslate", new String[] {"Translator.useGoogleTranslate", "Translator.useWatsonTranslate", "Translator.useAmazonTranslate"}));
+		transDeepSet.add(new ConvoElement(1, 2, "wwcConfigGUIDeepLTranslateApiKeyButton", XMaterial.NAME_TAG,
+	    		new DeepLSettingsConvos.ApiKey()));
+		transDeepSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
+		transDeepSet.add(new CommonElement(2, 4, "Quit"));
+		transDeepSet.add(new CommonElement(2, 8, "Page Number", new String[] {"1"}));
 	}
 	
 	static abstract class Element {

@@ -337,7 +337,7 @@ public class ConfigurationHandler {
 					break;
 				} else if (mainConfig.getBoolean("Translator.useDeepLTranslate")) {
 					outName = "DeepL Translate";
-					test = new DeepLTranslation(mainConfig.getString("Translator.deeplAPIKey"), true);
+					test = new DeepLTranslation(mainConfig.getString("Translator.deepLAPIKey"), true);
 					test.useTranslator();
 					break;
 				} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
