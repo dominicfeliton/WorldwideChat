@@ -52,19 +52,10 @@ public class DeepLTranslation extends BasicTranslation {
 	private class translationTask implements Callable<String> {
 		@Override
 		public String call() throws Exception {
-			//TODO: DeepL is currently a bit broken. Langs aren't being recognized properly for some reason...
-			// Additionally, we likely will need to implement lists for supported source langs and target langs...
-			// That sucks.
-			// Because of above, english does not currently show as an option for DeepL.
-			// Fix is imminent.
-			
 			/* Initialize translation object again */
 			Translator translate = new Translator(System.getProperty("DEEPL_API_KEY"));
 
 			if (isInitializing) {
-				/* Get supported languages */
-				List<Language> supportedLangs = translate.getTargetLanguages();
-				
 				/* Parse Supported Languages */
 				List<SupportedLang> sourceLangs = new ArrayList<SupportedLang>();
 				for (Language eaLang : translate.getSourceLanguages()) {

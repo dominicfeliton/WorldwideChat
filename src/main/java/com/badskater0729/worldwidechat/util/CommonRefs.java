@@ -430,7 +430,6 @@ public class CommonRefs {
 			/* Begin actual translation, set message to output */
 			String out = inMessage;
 			CommonRefs.debugMsg("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
-			//TODO: compress this...
 			switch (main.getTranslatorName()) {
 			case "Watson":
 				WatsonTranslation watsonInstance = new WatsonTranslation(inMessage,
@@ -488,7 +487,6 @@ public class CommonRefs {
 			/* Get translation */
 			finalOut = process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
-			// TODO: Properly handle bad language pair, send message to user.
 			/* Sanitize error before proceeding to write it to errorLog */
 			if (e instanceof InterruptedException || main.getTranslatorName().equals("Starting")) {
 				// If we are getting stopped by onDisable, end this immediately.
