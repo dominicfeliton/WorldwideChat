@@ -15,10 +15,23 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.github.seeseemelk</groupId>
+      <artifactId>MockBukkit-v1.19</artifactId>
+      <version>2.141.0</version>
+      <!-- TODO: REPORT; 2.141.1 breaks completely, very unsure as to why; file bug report! -->
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
       <version>1.19.3-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.9.2</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.ibm.watson</groupId>
@@ -109,12 +122,6 @@
       <groupId>fr.minuskube.inv</groupId>
       <artifactId>smart-invs</artifactId>
       <version>1.2.7</version>
-    </dependency>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <version>5.9.2</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
