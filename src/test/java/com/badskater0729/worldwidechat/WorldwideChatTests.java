@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-import com.badskater0729.worldwidechat.commands.TestConsoleCommands;
 import com.badskater0729.worldwidechat.commands.TestCommands;
 import com.badskater0729.worldwidechat.inventory.TestPlayerGUI;
 import com.badskater0729.worldwidechat.util.TestTranslationUtils;
@@ -32,7 +31,6 @@ public class WorldwideChatTests {
 
 	/* Init all test classes */
 	TestCommands testCommands = new TestCommands(server, plugin, player1, player2);
-	TestConsoleCommands testConsoleCommands = new TestConsoleCommands(server, plugin, player1, player2);
 	TestPlayerGUI testPlayerGUI = new TestPlayerGUI(server, plugin, player1, player2);
 	TestTranslationUtils testTranslationUtils = new TestTranslationUtils(server, plugin, player1, player2);
 	ActiveTranslator currTranslator;
@@ -83,57 +81,57 @@ public class WorldwideChatTests {
 		plugin.getLogger().info("=== Test Player Commands ===");
 
 		/* Correct inputs, expect correct outputs */
-		// Runs test command /wwct en es
+		// Player - /wwct en es
 		testCommands.runPlayerTest("wwct en es", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getInLangCode().equals("en") && currTranslator.getOutLangCode().equals("es"));
 
-		// Runs test command /wwct player2 en es
+		// Player - /wwct player2 en es
 		testCommands.runPlayerTest("wwct player2 en es", player1);
 		currTranslator = plugin.getActiveTranslator(player2);
 		assertTrue(currTranslator.getInLangCode().equals("en") && currTranslator.getOutLangCode().equals("es"));
 
-		// Runs test command /wwct es
+		// Player - /wwct es
 		testCommands.runPlayerTest("wwct es", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertEquals("es", currTranslator.getOutLangCode());
 
-		// Runs test command /wwct player2 fr
+		// Player - /wwct player2 fr
 		testCommands.runPlayerTest("wwct player2 fr", player1);
 		currTranslator = plugin.getActiveTranslator(player2);
 		assertEquals("fr", currTranslator.getOutLangCode());
 
-		// Runs test command /wwct player1 fr es
+		// Player - /wwct player1 fr es
 		testCommands.runPlayerTest("wwct player1 fr es", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getInLangCode().equals("fr") && currTranslator.getOutLangCode().equals("es"));
 
-		// Runs test command /wwct stop
+		// Player - /wwct stop
 		testCommands.runPlayerTest("wwct stop", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertFalse(plugin.isActiveTranslator(player1));
 
-		// Runs test command /wwct player2 stop
+		// Player - /wwct player2 stop
 		testCommands.runPlayerTest("wwct player2 stop", player1);
 		currTranslator = plugin.getActiveTranslator(player2);
 		assertFalse(plugin.isActiveTranslator(player2));
 
-		// Runs test command /wwcg en es
+		// Player - /wwcg en es
 		testCommands.runPlayerTest("wwcg en es", player1);
 		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 		assertTrue(currTranslator.getInLangCode().equals("en") && currTranslator.getOutLangCode().equals("es"));
 
-		// Runs test command /wwcg es
+		// Player - /wwcg es
 		testCommands.runPlayerTest("wwcg es", player1);
 		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 		assertEquals("es", currTranslator.getOutLangCode());
 
-		// Runs test command /wwcg stop
+		// Player - /wwcg stop
 		testCommands.runPlayerTest("wwcg stop", player1);
 		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
 
-		// Runs test command /wwctci
+		// Player - /wwctci
 		// (Re-setup /wwct for player1)
 		testCommands.runPlayerTest("wwct en es", player1);
 		toggleStatus = plugin.getActiveTranslator(player1).getTranslatingChatIncoming();
@@ -141,7 +139,7 @@ public class WorldwideChatTests {
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getTranslatingChatIncoming() != toggleStatus);
 
-		// Runs test command /wwctci player2
+		// Player - /wwctci player2
 		// (Re-setup /wwct for player2)
 		testCommands.runPlayerTest("wwct player2 en es", player1);
 		toggleStatus = plugin.getActiveTranslator(player2).getTranslatingChatIncoming();
@@ -149,31 +147,31 @@ public class WorldwideChatTests {
 		currTranslator = plugin.getActiveTranslator(player2);
 		assertTrue(currTranslator.getTranslatingChatIncoming() != toggleStatus);
 
-		// Runs test command /wwctci player1
+		// Player - /wwctci player1
 		toggleStatus = plugin.getActiveTranslator(player1).getTranslatingChatIncoming();
 		testCommands.runPlayerTest("wwctci player1", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getTranslatingChatIncoming() != toggleStatus);
 
-		// Runs test command /wwctco
+		// Player - /wwctco
 		toggleStatus = plugin.getActiveTranslator(player1).getTranslatingChatOutgoing();
 		testCommands.runPlayerTest("wwctco", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getTranslatingChatOutgoing() != toggleStatus);
 
-		// Runs test command /wwctco player2
+		// Player - /wwctco player2
 		toggleStatus = plugin.getActiveTranslator(player2).getTranslatingChatOutgoing();
 		testCommands.runPlayerTest("wwctco player2", player1);
 		currTranslator = plugin.getActiveTranslator(player2);
 		assertTrue(currTranslator.getTranslatingChatOutgoing() != toggleStatus);
 
-		// Runs test command /wwctco player1
+		// Player - /wwctco player1
 		toggleStatus = plugin.getActiveTranslator(player1).getTranslatingChatOutgoing();
 		testCommands.runPlayerTest("wwctco player1", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getTranslatingChatOutgoing() != toggleStatus);
 
-        // Runs test command /wwctb
+        // Player - /wwctb
 		toggleStatus = plugin.getActiveTranslator(player1).getTranslatingBook();
 		testCommands.runPlayerTest("wwctb", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
@@ -185,90 +183,90 @@ public class WorldwideChatTests {
 		currTranslator = plugin.getActiveTranslator(player2);
 		assertTrue(currTranslator.getTranslatingBook() != toggleStatus);
 
-		// Runs test command /wwctb player1
+		// Player - /wwctb player1
 		toggleStatus = plugin.getActiveTranslator(player1).getTranslatingBook();
 		testCommands.runPlayerTest("wwctb player1", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getTranslatingBook() != toggleStatus);
 
-		// Runs test command /wwcts
+		// Player - /wwcts
 		toggleStatus = plugin.getActiveTranslator(player1).getTranslatingSign();
 		testCommands.runPlayerTest("wwcts", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getTranslatingSign() != toggleStatus);
 
-		// Runs test command /wwcts player2
+		// Player - /wwcts player2
 		toggleStatus = plugin.getActiveTranslator(player2).getTranslatingSign();
 		testCommands.runPlayerTest("wwcts player2", player1);
 		currTranslator = plugin.getActiveTranslator(player2);
 		assertTrue(currTranslator.getTranslatingSign() != toggleStatus);
 
-		// Runs test command /wwcts player1
+		// Player - /wwcts player1
 		toggleStatus = plugin.getActiveTranslator(player1).getTranslatingSign();
 		testCommands.runPlayerTest("wwcts player1", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getTranslatingSign() != toggleStatus);
 
-		// Runs test command /wwcti
+		// Player - /wwcti
 		toggleStatus = plugin.getActiveTranslator(player1).getTranslatingItem();
 		testCommands.runPlayerTest("wwcti", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getTranslatingItem() != toggleStatus);
 
-		// Runs test command /wwcti player2
+		// Player - /wwcti player2
 		toggleStatus = plugin.getActiveTranslator(player2).getTranslatingItem();
 		testCommands.runPlayerTest("wwcti player2", player1);
 		currTranslator = plugin.getActiveTranslator(player2);
 		assertTrue(currTranslator.getTranslatingItem() != toggleStatus);
 
-		// Runs test command /wwcti player1
+		// Player - /wwcti player1
 		toggleStatus = plugin.getActiveTranslator(player1).getTranslatingItem();
 		testCommands.runPlayerTest("wwcti player1", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getTranslatingItem() != toggleStatus);
 
-		// Runs test command /wwcte
+		// Player - /wwcte
 		toggleStatus = plugin.getActiveTranslator(player1).getTranslatingEntity();
 		testCommands.runPlayerTest("wwcte", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getTranslatingEntity() != toggleStatus);
 
-		// Runs test command /wwcte player2
+		// Player - /wwcte player2
 		toggleStatus = plugin.getActiveTranslator(player2).getTranslatingEntity();
 		testCommands.runPlayerTest("wwcte player2", player1);
 		currTranslator = plugin.getActiveTranslator(player2);
 		assertTrue(currTranslator.getTranslatingEntity() != toggleStatus);
 
-		// Runs test command /wwcte player1
+		// Player - /wwcte player1
 		toggleStatus = plugin.getActiveTranslator(player1).getTranslatingEntity();
 		testCommands.runPlayerTest("wwcte player1", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertTrue(currTranslator.getTranslatingEntity() != toggleStatus);
 
-		// Runs test command /wwctrl (random number between 1 and 10)
+		// Player - /wwctrl (random number between 1 and 10)
 		int randomLimit = new Random().nextInt(10) + 1;
 		testCommands.runPlayerTest("wwctrl " + randomLimit, player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertEquals(currTranslator.getRateLimit(), randomLimit);
 
-		// Runs test command /wwctrl player2 (random number between 1 and 10)
+		// Player - /wwctrl player2 (random number between 1 and 10)
 		randomLimit = new Random().nextInt(10) + 1;
 		testCommands.runPlayerTest("wwctrl player2 " + randomLimit, player1);
 		currTranslator = plugin.getActiveTranslator(player2);
 		assertEquals(currTranslator.getRateLimit(), randomLimit);
 
-		// Runs test command /wwctrl player1 (random number between 1 and 10)
+		// Player - /wwctrl player1 (random number between 1 and 10)
 		randomLimit = new Random().nextInt(10) + 1;
 		testCommands.runPlayerTest("wwctrl player1 " + randomLimit, player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertEquals(currTranslator.getRateLimit(), randomLimit);
 
-		// Runs test command /wwctrl
+		// Player - /wwctrl
 		testCommands.runPlayerTest("wwctrl", player1);
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertEquals(currTranslator.getRateLimit(), 0);
 
-		// Runs test command /wwctrl player2
+		// Player - /wwctrl player2
 		testCommands.runPlayerTest("wwctrl player2", player1);
 		currTranslator = plugin.getActiveTranslator(player2);
 		assertEquals(currTranslator.getRateLimit(), 0);
@@ -291,25 +289,98 @@ public class WorldwideChatTests {
 		resetWWC();
 		
 		/* Correct inputs, expect correct outputs */
-		testConsoleCommands.testTranslateCommandConsoleTargetOther();
-		testConsoleCommands.testTranslateCommandConsoleSourceTargetOther();
-		testConsoleCommands.testTranslateCommandConsoleStopOther();
-		testConsoleCommands.testGlobalTranslateCommandPlayerTarget();
-		testConsoleCommands.testGlobalTranslateCommandPlayerSourceTarget();
+		// Console - /wwct player1 es
+		testCommands.runConsoleTest("wwct", new String[] {"player1", "es"});
+		ActiveTranslator currTranslator = plugin.getActiveTranslator(player1);
+		assertTrue(currTranslator.getInLangCode().equals("None") && currTranslator.getOutLangCode().equals("es"));
+
+		// Console - /wwct player1 es en
+		testCommands.runConsoleTest("wwct", new String[] {"player1", "es", "en"});
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertTrue(currTranslator.getInLangCode().equals("es") && currTranslator.getOutLangCode().equals("en"));
+
+		// Console - /wwct player1 stop
+		testCommands.runConsoleTest("wwct", new String[] {"player1", "stop"});
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+		
+		// Console - /wwcg en es
+		testCommands.runConsoleTest("wwcg", new String[] {"en", "es"});
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertTrue(currTranslator.getInLangCode().equals("en") && currTranslator.getOutLangCode().equals("es"));
+
+		// Console - /wwcg es
+		testCommands.runConsoleTest("wwcg", new String[] {"es"});
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertTrue(currTranslator.getInLangCode().equals("None") && currTranslator.getOutLangCode().equals("es"));
+
+		// Console - /wwcg stop
+		testCommands.runConsoleTest("wwcg", new String[] {"stop"});
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
 		
 		/* Incorrect inputs, expect correct outputs regardless */
-		testConsoleCommands.testTranslateCommandInvalidAutoLangValidPlayer();
-		testConsoleCommands.testTranslateCommandInvalidTargetLangValidPlayer();
-		testConsoleCommands.testTranslateCommandInvalidSourceLangValidPlayer();
-		testConsoleCommands.testTranslateCommandInvalidLangsValidPlayer();
-		testConsoleCommands.testTranslateCommandSameLangsValidPlayer();
-		testConsoleCommands.testTranslateCommandTooManyArgsValidPlayer();
-		testConsoleCommands.testGlobalCommandInvalidAutoLang();
-		testConsoleCommands.testGlobalCommandInvalidOutLangValidInLang();
-		testConsoleCommands.testGlobalCommandValidOutLangInvalidInLang();
-		testConsoleCommands.testGlobalCommandInvalidLangs();
-		testConsoleCommands.testGlobalCommandSameLangs();
-		testConsoleCommands.testGlobalCommandSameLangsDiffName();
+		// Console - /wwct player1 badlang (Ensure that player1 is stopped first)
+		testCommands.runConsoleTest("wwct", new String[] {"player1", "stop"});
+		testCommands.runConsoleTest("wwct", new String[] {"player1", "badlang"});
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Console - /wwct player1 en badlang
+		testCommands.runConsoleTest("wwct", new String[] {"player1", "en", "badlang"});
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Console - /wwct player1 badlang es
+		testCommands.runConsoleTest("wwct", new String[] {"player1", "badlang", "es"});
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Console - /wwct player1 badlang badlang2
+		testCommands.runConsoleTest("wwct", new String[] {"player1", "badlang", "badlang2"});
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Console - /wwct player1 en en
+		testCommands.runConsoleTest("wwct", new String[] {"player1", "en", "en"});
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Console - /wwct player1 en English
+		testCommands.runConsoleTest("wwct", new String[] {"player1", "en", "English"});
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Console - /wwct player1 en es test3
+		testCommands.runConsoleTest("wwct", new String[] {"player1", "en", "es", "test3"});
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Console - /wwcg badlang
+		testCommands.runConsoleTest("wwcg", new String[] {"stop"});
+		testCommands.runConsoleTest("wwcg", new String[] {"badlang"});
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
+
+		// Console - /wwcg en badlang
+		testCommands.runConsoleTest("wwcg", new String[] {"en", "badlang"});
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
+
+		// Console - /wwcg badlang badlang2
+		testCommands.runConsoleTest("wwcg", new String[] {"badlang", "badlang2"});
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
+
+		// Console - /wwcg en en
+		testCommands.runConsoleTest("wwcg", new String[] {"en", "en"});
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
+
+		// Console - /wwcg English en
+		testCommands.runConsoleTest("wwcg", new String[] {"English", "en"});
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
 		
 		/* Print finished message */
 		sendCompletedMessage();

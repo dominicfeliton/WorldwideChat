@@ -26,9 +26,13 @@ public class TestCommands {
     	player1.performCommand(inCommand);
 	}
     
-    public void runConsoleTest(String inCommand, String[] args, PlayerMock player1) {
+    public void runConsoleTest(String inCommand, String[] args) {
 		// Perform console command
-		server.getLogger().info("RUNNING TEST::: " + inCommand + " " + args.toString());
+		StringBuilder outStr = new StringBuilder();
+		for (String eaArg : args) {
+			outStr.append(eaArg).append(" ");
+		}
+		server.getLogger().info("RUNNING TEST::: " + inCommand + " " + outStr);
     	server.executeConsole(inCommand, args);
 	}
 }
