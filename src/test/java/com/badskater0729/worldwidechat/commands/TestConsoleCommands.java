@@ -24,6 +24,7 @@ public class TestConsoleCommands {
 	}
 	
 	//TODO: Contribute console.hasPermission() to MockBukkit
+	/* Correct inputs, expect correct outputs */
 	public void testTranslateCommandConsoleTargetOther() {
 		/* Console runs /wwct player1 es */
 		server.executeConsole("wwct", new String[] {"player1", "es"});
@@ -58,4 +59,96 @@ public class TestConsoleCommands {
 		assertTrue(currTranslator.getOutLangCode().equals("es"));
 	}
 	
+	/* Incorrect inputs, expect correct outputs regardless */
+	public void testTranslateCommandInvalidAutoLangValidPlayer() {
+		/* Console runs /wwct player1 test1 test2 test3*/
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwct", new String[] {"player1", "badlang"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
+	
+	public void testTranslateCommandInvalidTargetLangValidPlayer() {
+		/* Console runs /wwct player1 test1 test2 test3*/
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwct", new String[] {"player1", "en", "badlang"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
+	
+	public void testTranslateCommandInvalidSourceLangValidPlayer() {
+		/* Console runs /wwct player1 test1 test2 test3*/
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwct", new String[] {"player1", "badlang", "es"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
+	
+	public void testTranslateCommandInvalidLangsValidPlayer() {
+		/* Console runs /wwct player1 test1 test2 test3*/
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwct", new String[] {"player1", "badlang", "badlang2"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
+	
+	public void testTranslateCommandSameLangsValidPlayer() {
+		/* Console runs /wwct player1 en en */
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwct", new String[] {"player1", "en", "en"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
+	
+	public void testTranslateCommandSameLangsDifferentNamesValidPlayer() {
+		/* Console runs /wwct player1 en English*/
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwct", new String[] {"player1", "en", "English"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
+	
+	public void testTranslateCommandTooManyArgsValidPlayer() {
+		/* Console runs /wwct player1 test1 test2 test3*/
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwct", new String[] {"player1", "en", "es", "test3"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
+	
+	public void testGlobalCommandInvalidAutoLang() {
+		/* Console runs /wwcg en badlang */
+		server.executeConsole("wwcg", new String[] {"stop"});
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwcg", new String[] {"badlang"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
+	
+	public void testGlobalCommandInvalidOutLangValidInLang() {
+		/* Console runs /wwcg en badlang */
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwcg", new String[] {"en", "badlang"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
+	
+    public void testGlobalCommandValidOutLangInvalidInLang() {
+    	/* Console runs /wwcg badlang */
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwcg", new String[] {"badlang", "es"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
+    
+    public void testGlobalCommandInvalidLangs() {
+    	/* Console runs /wwcg badlang badlang2 */
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwcg", new String[] {"badlang", "badlang2"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
+    
+    public void testGlobalCommandSameLangs() {
+    	/* Console runs /wwcg en en */
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwcg", new String[] {"en", "en"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
+    
+    public void testGlobalCommandSameLangsDiffName() {
+    	/* Console runs /wwcg English en */
+		int numOfTranslators = plugin.getActiveTranslators().size();
+		server.executeConsole("wwcg", new String[] {"English", "en"});
+		assertTrue(plugin.getActiveTranslators().size() == numOfTranslators);
+	}
 }
