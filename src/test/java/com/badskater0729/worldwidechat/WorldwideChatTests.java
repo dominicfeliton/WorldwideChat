@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
 import com.badskater0729.worldwidechat.commands.TestCommands;
-import com.badskater0729.worldwidechat.inventory.TestPlayerGUI;
 import com.badskater0729.worldwidechat.util.TestTranslationUtils;
 
 import be.seeseemelk.mockbukkit.MockBukkit;
@@ -31,7 +30,6 @@ public class WorldwideChatTests {
 
 	/* Init all test classes */
 	TestCommands testCommands = new TestCommands(server, plugin, player1, player2);
-	TestPlayerGUI testPlayerGUI = new TestPlayerGUI(server, plugin, player1, player2);
 	TestTranslationUtils testTranslationUtils = new TestTranslationUtils(server, plugin, player1, player2);
 	ActiveTranslator currTranslator;
 
@@ -272,7 +270,127 @@ public class WorldwideChatTests {
 		assertEquals(currTranslator.getRateLimit(), 0);
 
 		/* Incorrect inputs, expect correct outputs regardless */
-		// TODO
+		// Player - /wwct badlang
+		// Stop all existing translators before running tests
+		resetWWC();
+		testCommands.runPlayerTest("wwct badlang", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwct badlang badlang
+		testCommands.runPlayerTest("wwct badlang badlang", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwct en badlang
+		testCommands.runPlayerTest("wwct en badlang", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwct badlang en
+		testCommands.runPlayerTest("wwct badlang en", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwct en es es
+		testCommands.runPlayerTest("wwct en es es", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwct en es en badarg1 badarg2 badarg3 en es
+		testCommands.runPlayerTest("wwct en es en badarg1 badarg2 badarg3 en es", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwct player1 badlang
+		testCommands.runPlayerTest("wwct player1 badlang", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwct player1 badlang badlang
+		testCommands.runPlayerTest("wwct player1 badlang badlang", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwct player1 en badlang
+		testCommands.runPlayerTest("wwct player1 en badlang", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwct player1 badlang en
+		testCommands.runPlayerTest("wwct player1 badlang en", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwct player1 en es es
+		testCommands.runPlayerTest("wwct player1 en es es", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwct player2 badlang
+		testCommands.runPlayerTest("wwct player2 badlang", player1);
+		currTranslator = plugin.getActiveTranslator(player2);
+		assertFalse(plugin.isActiveTranslator(player2));
+
+		// Player - /wwct player2 badlang badlang
+		testCommands.runPlayerTest("wwct player2 badlang badlang", player1);
+		currTranslator = plugin.getActiveTranslator(player2);
+		assertFalse(plugin.isActiveTranslator(player2));
+
+		// Player - /wwct player2 en badlang
+		testCommands.runPlayerTest("wwct player2 en badlang", player1);
+		currTranslator = plugin.getActiveTranslator(player2);
+		assertFalse(plugin.isActiveTranslator(player2));
+
+		// Player - /wwct player2 badlang en
+		testCommands.runPlayerTest("wwct player2 badlang en", player1);
+		currTranslator = plugin.getActiveTranslator(player2);
+		assertFalse(plugin.isActiveTranslator(player2));
+
+		// Player - /wwct player2 en es es
+		testCommands.runPlayerTest("wwct player2 en es es", player1);
+		currTranslator = plugin.getActiveTranslator(player2);
+		assertFalse(plugin.isActiveTranslator(player2));
+
+		// Player - /wwct player1 player2
+		testCommands.runPlayerTest("wwct player1 player2", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwcg badlang
+		testCommands.runPlayerTest("wwcg badlang", player1);
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
+
+		// Player - /wwcg badlang badlang
+		testCommands.runPlayerTest("wwcg badlang badlang", player1);
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
+
+		// Player - /wwcg en badlang
+		testCommands.runPlayerTest("wwcg en badlang", player1);
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
+
+		// Player - /wwcg badlang en
+		testCommands.runPlayerTest("wwcg badlang en", player1);
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
+
+		// Player - /wwcg en en en
+		testCommands.runPlayerTest("wwcg en en en", player1);
+		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
+		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
+
+		// Player - /wwcg player1 en
+		testCommands.runPlayerTest("wwcg player1 en", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
+
+		// Player - /wwcg player1 en es
+		testCommands.runPlayerTest("wwcg player1 en es", player1);
+		currTranslator = plugin.getActiveTranslator(player1);
+		assertFalse(plugin.isActiveTranslator(player1));
 		
 		/* Print finished message */
 		sendCompletedMessage();
@@ -321,7 +439,7 @@ public class WorldwideChatTests {
 		
 		/* Incorrect inputs, expect correct outputs regardless */
 		// Console - /wwct player1 badlang (Ensure that player1 is stopped first)
-		testCommands.runConsoleTest("wwct", new String[] {"player1", "stop"});
+		resetWWC();
 		testCommands.runConsoleTest("wwct", new String[] {"player1", "badlang"});
 		currTranslator = plugin.getActiveTranslator(player1);
 		assertFalse(plugin.isActiveTranslator(player1));
@@ -357,7 +475,6 @@ public class WorldwideChatTests {
 		assertFalse(plugin.isActiveTranslator(player1));
 
 		// Console - /wwcg badlang
-		testCommands.runConsoleTest("wwcg", new String[] {"stop"});
 		testCommands.runConsoleTest("wwcg", new String[] {"badlang"});
 		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
@@ -396,14 +513,108 @@ public class WorldwideChatTests {
 		/* Reset */
 		resetWWC();
 
-		/* Run tests */
-		testPlayerGUI.testTranslateCommandPlayerGUI();
-		testPlayerGUI.testTranslateCommandPlayerGUIActive();
-		testPlayerGUI.testTranslateCommandPlayerGUIOther();
-		testPlayerGUI.testTranslateCommandPlayerGUIOtherActive();
-		testPlayerGUI.testGlobalTranslateCommandPlayerGUI();
-		testPlayerGUI.testGlobalTranslateCommandPlayerGUIActive();
-		testPlayerGUI.testConfigurationCommandPlayerGUI();
+		/* Run tests, only players can test GUIs */
+		// User runs /wwct
+		testCommands.runPlayerTest("wwct", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "WHITE_STAINED_GLASS_PANE");
+
+		// User runs /wwct player1
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwct player1", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "WHITE_STAINED_GLASS_PANE");
+
+		// User runs /wwct player1 en es, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwct player1 en es", player1);
+		testCommands.runPlayerTest("wwct", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "GREEN_STAINED_GLASS_PANE");
+
+		// User runs /wwct player1 es, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwct player1 es", player1);
+		testCommands.runPlayerTest("wwct", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "GREEN_STAINED_GLASS_PANE");
+
+		// User runs /wwct player1 en es, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwct player1 en es", player1);
+		testCommands.runPlayerTest("wwct player1", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "GREEN_STAINED_GLASS_PANE");
+
+		// User runs /wwct player1 en es, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwct player1 es", player1);
+		testCommands.runPlayerTest("wwct player1", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "GREEN_STAINED_GLASS_PANE");
+
+		// User runs /wwct player2, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwct player2", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "WHITE_STAINED_GLASS_PANE");
+
+		// User runs /wwct player2 en es, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwct player2 en es", player1);
+		testCommands.runPlayerTest("wwct player2", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "GREEN_STAINED_GLASS_PANE");
+
+		// User runs /wwct player2 es, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwct player2 es", player1);
+		testCommands.runPlayerTest("wwct player2", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "GREEN_STAINED_GLASS_PANE");
+
+		// User runs /wwct stop, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwct player1 en es", player1);
+		testCommands.runPlayerTest("wwct stop", player1);
+		testCommands.runPlayerTest("wwct", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "WHITE_STAINED_GLASS_PANE");
+
+		// User runs /wwct player1 stop, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwct player1 en es", player1);
+		testCommands.runPlayerTest("wwct player1 stop", player1);
+		testCommands.runPlayerTest("wwct", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "WHITE_STAINED_GLASS_PANE");
+
+		// User runs /wwct player2 stop, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwct player2 en es", player1);
+		testCommands.runPlayerTest("wwct player2 stop", player1);
+		testCommands.runPlayerTest("wwct player2", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "WHITE_STAINED_GLASS_PANE");
+
+		// User runs /wwcg, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwcg", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "WHITE_STAINED_GLASS_PANE");
+
+		// User runs /wwcg en es, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwcg en es", player1);
+		testCommands.runPlayerTest("wwcg", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "GREEN_STAINED_GLASS_PANE");
+
+		// User runs /wwcg es, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwcg es", player1);
+		testCommands.runPlayerTest("wwcg", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "GREEN_STAINED_GLASS_PANE");
+
+		// User runs /wwcg stop, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwcg stop", player1);
+		testCommands.runPlayerTest("wwcg", player1);
+		assertEquals(player1.getOpenInventory().getItem(0).getType().name(), "WHITE_STAINED_GLASS_PANE");
+
+		// User runs /wwcc, then opens GUI
+		player1.closeInventory();
+		testCommands.runPlayerTest("wwcc", player1);
+		assertTrue(plugin.getInventoryManager().getInventory(player1).isPresent());
+
+		/* Incorrect inputs, expect correct outputs regardless */
+		// TODO
 
 		/* Print finished message */
 		sendCompletedMessage();
