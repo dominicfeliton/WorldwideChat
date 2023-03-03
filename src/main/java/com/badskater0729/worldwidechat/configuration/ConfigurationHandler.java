@@ -26,12 +26,12 @@ import org.threeten.bp.Instant;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.translators.AmazonTranslation;
 import com.badskater0729.worldwidechat.translators.BasicTranslation;
+import com.badskater0729.worldwidechat.translators.DeepLTranslation;
 import com.badskater0729.worldwidechat.translators.GoogleTranslation;
 import com.badskater0729.worldwidechat.translators.LibreTranslation;
 import com.badskater0729.worldwidechat.translators.TestTranslation;
 import com.badskater0729.worldwidechat.translators.WatsonTranslation;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.badskater0729.worldwidechat.util.Metrics;
 import com.badskater0729.worldwidechat.util.PlayerRecord;
 import com.badskater0729.worldwidechat.util.storage.MongoDBUtils;
@@ -42,6 +42,12 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.ReplaceOptions;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.runAsync;
+import static com.badskater0729.worldwidechat.util.CommonRefs.serverIsStopping;
+import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
 
 public class ConfigurationHandler {
 
@@ -77,8 +83,8 @@ public class ConfigurationHandler {
 		saveMainConfig(false);
 
 		/* Get plugin lang */
-		for (int i = 0; i < CommonDefinitions.supportedPluginLangCodes.length; i++) {
-			if (CommonDefinitions.supportedPluginLangCodes[i]
+		for (int i = 0; i < supportedPluginLangCodes.length; i++) {
+			if (supportedPluginLangCodes[i]
 					.equalsIgnoreCase(mainConfig.getString("General.pluginLang"))) {
 				main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + mainConfig.getString("General.pluginLang") + ".");
 				return;
@@ -150,7 +156,7 @@ public class ConfigurationHandler {
 		/* Get rest of General Settings */
 		// Debug Mode
 		if (mainConfig.getBoolean("General.enableDebugMode")) {
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigEnabledDebugMode"));
+			main.getLogger().warning(getMsg("wwcConfigEnabledDebugMode"));
 		}
 		// Prefix
 		try {
@@ -162,103 +168,105 @@ public class ConfigurationHandler {
 			}
 		} catch (Exception e) {
 			main.setPrefixName("WWC");
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigInvalidPrefixSettings"));
+			main.getLogger().warning(getMsg("wwcConfigInvalidPrefixSettings"));
 		}
 		// Fatal Async Timeout Delay
 		try {
 			if (mainConfig.getInt("General.fatalAsyncTaskTimeout") > 7) {
 				WorldwideChat.translatorFatalAbortSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout");
+				WorldwideChat.translatorConnectionTimeoutSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout") - 2;
+				WorldwideChat.asyncTasksTimeoutSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout") - 2;
 			} else {
-				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigInvalidFatalAsyncTimeout"));
+				main.getLogger().warning(getMsg("wwcConfigInvalidFatalAsyncTimeout"));
 			}
 		} catch (Exception e) {
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigInvalidFatalAsyncTimeout"));
+			main.getLogger().warning(getMsg("wwcConfigInvalidFatalAsyncTimeout"));
 		}
 		// bStats
 		if (mainConfig.getBoolean("General.enablebStats")) {
 			@SuppressWarnings("unused")
 			Metrics metrics = new Metrics(WorldwideChat.instance, WorldwideChat.bStatsID);
 			main.getLogger()
-					.info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigEnabledbStats"));
+					.info(ChatColor.LIGHT_PURPLE + getMsg("wwcConfigEnabledbStats"));
 		} else {
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigDisabledbStats"));
+			main.getLogger().warning(getMsg("wwcConfigDisabledbStats"));
 		}
 		// Update Checker Delay
 		try {
 			if (!(mainConfig.getInt("General.updateCheckerDelay") > 10)) {
 				mainConfig.set("General.updateCheckerDelay", 86400);
-				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigBadUpdateDelay"));
+				main.getLogger().warning(getMsg("wwcConfigBadUpdateDelay"));
 			}
 		} catch (Exception e) {
 			mainConfig.set("General.updateCheckerDelay", 86400);
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigBadUpdateDelay"));
+			main.getLogger().warning(getMsg("wwcConfigBadUpdateDelay"));
 		}
 		// Sync User Data Delay
 		try {
 			if ((mainConfig.getInt("General.syncUserDataDelay") > 10)) {
 				main.getLogger().info(
-						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigSyncDelayEnabled", new String[] {mainConfig.getInt("General.syncUserDataDelay") + ""}));
+						ChatColor.LIGHT_PURPLE + getMsg("wwcConfigSyncDelayEnabled", new String[] {mainConfig.getInt("General.syncUserDataDelay") + ""}));
 			} else {
 				mainConfig.set("General.syncUserDataDelay", 7200);
-				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigSyncDelayInvalid"));
+				main.getLogger().warning(getMsg("wwcConfigSyncDelayInvalid"));
 			}
 		} catch (Exception e) {
 			mainConfig.set("General.syncUserDataDelay", 7200);
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigSyncDelayInvalid"));
+			main.getLogger().warning(getMsg("wwcConfigSyncDelayInvalid"));
 		}
 		// Rate limit Settings
 		try {
 			if (mainConfig.getInt("Translator.rateLimit") >= 0) {
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigRateLimitEnabled", new String[] {"" + mainConfig.getInt("Translator.rateLimit")}));
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + getMsg("wwcConfigRateLimitEnabled", new String[] {"" + mainConfig.getInt("Translator.rateLimit")}));
 			} else {
 				mainConfig.set("Translator.rateLimit", 0);
-				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigRateLimitInvalid"));
+				main.getLogger().warning(getMsg("wwcConfigRateLimitInvalid"));
 			}
 		} catch (Exception e) {
 			mainConfig.set("Translator.rateLimit", 0);
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigRateLimitInvalid"));
+			main.getLogger().warning(getMsg("wwcConfigRateLimitInvalid"));
 		}
 		// Per-message char limit Settings
 		try {
 			if (mainConfig.getInt("Translator.messageCharLimit") >= 0) {
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigMessageCharLimitEnabled", new String[] {"" + mainConfig.getInt("Translator.messageCharLimit")}));
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + getMsg("wwcConfigMessageCharLimitEnabled", new String[] {"" + mainConfig.getInt("Translator.messageCharLimit")}));
 			} else {
 				mainConfig.set("Translator.messageCharLimit", 255);
-				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMessageCharLimitInvalid"));
+				main.getLogger().warning(getMsg("wwcConfigMessageCharLimitInvalid"));
 			}
 		} catch (Exception e) {
 			mainConfig.set("Translator.messageCharLimit", 255);
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigMessageCharLimitInvalid"));
+			main.getLogger().warning(getMsg("wwcConfigMessageCharLimitInvalid"));
 		}
 		// Cache Settings
 		try {
 			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
 				main.getLogger()
-						.info(ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigCacheEnabled", new String[] {mainConfig.getInt("Translator.translatorCacheSize") + ""}));
+						.info(ChatColor.LIGHT_PURPLE + getMsg("wwcConfigCacheEnabled", new String[] {mainConfig.getInt("Translator.translatorCacheSize") + ""}));
 			    // Set cache to size beforehand, so we can avoid expandCapacity :)
 				main.setCacheProperties(mainConfig.getInt("Translator.translatorCacheSize"));
 			} else {
 				mainConfig.set("Translator.translatorCacheSize", 0);
 				main.setCacheProperties(0);
-				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigCacheDisabled"));
+				main.getLogger().warning(getMsg("wwcConfigCacheDisabled"));
 			}
 		} catch (Exception e) {
 			mainConfig.set("Translator.translatorCacheSize", 100);
 			main.setCacheProperties(100);
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigCacheInvalid"));
+			main.getLogger().warning(getMsg("wwcConfigCacheInvalid"));
 		}
 		// Error Limit Settings
 		try {
 			if (mainConfig.getInt("Translator.errorLimit") > 0) {
 				main.getLogger().info(
-						ChatColor.LIGHT_PURPLE + CommonDefinitions.getMessage("wwcConfigErrorLimitEnabled", new String[] {mainConfig.getInt("Translator.errorLimit") + ""}));
+						ChatColor.LIGHT_PURPLE + getMsg("wwcConfigErrorLimitEnabled", new String[] {mainConfig.getInt("Translator.errorLimit") + ""}));
 			} else {
 				mainConfig.set("Translator.errorLimit", 5);
-				main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigErrorLimitInvalid"));
+				main.getLogger().warning(getMsg("wwcConfigErrorLimitInvalid"));
 			}
 		} catch (Exception e) {
 			mainConfig.set("Translator.errorLimit", 5);
-			main.getLogger().warning(CommonDefinitions.getMessage("wwcConfigErrorLimitInvalid"));
+			main.getLogger().warning(getMsg("wwcConfigErrorLimitInvalid"));
 		}
 	}
 	
@@ -269,27 +277,27 @@ public class ConfigurationHandler {
 				SQLUtils.connect(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"), 
 						mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"), 
 						(List<String>) mainConfig.getList("Storage.sqlOptionalArgs"), mainConfig.getBoolean("Storage.sqlUseSSL"));
-				main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigConnectionSuccess", new String[] {"SQL"}));
+				main.getLogger().info(ChatColor.GREEN + getMsg("wwcConfigConnectionSuccess", new String[] {"SQL"}));
 			} catch (Exception e) {
-				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigConnectionFail", new String[] {"SQL"}));
+				main.getLogger().severe(getMsg("wwcConfigConnectionFail", new String[] {"SQL"}));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
 				SQLUtils.disconnect(); // Just in case
-				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigYAMLFallback"));
+				main.getLogger().severe(getMsg("wwcConfigYAMLFallback"));
 			}
 		} else if (mainConfig.getBoolean("Storage.useMongoDB")) {
 			try {
 				MongoDBUtils.connect(mainConfig.getString("Storage.mongoHostname"), mainConfig.getString("Storage.mongoPort"), 
 						mainConfig.getString("Storage.mongoDatabaseName"), mainConfig.getString("Storage.mongoUsername"), 
 						mainConfig.getString("Storage.mongoPassword"), (List<String>) mainConfig.getList("Storage.mongoOptionalArgs"));
-				main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigConnectionSuccess", new String[] {"MongoDB"}));
+				main.getLogger().info(ChatColor.GREEN + getMsg("wwcConfigConnectionSuccess", new String[] {"MongoDB"}));
 			} catch (Exception e) {
-				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigConnectionFail", new String[] {"MongoDB"}));
+				main.getLogger().severe(getMsg("wwcConfigConnectionFail", new String[] {"MongoDB"}));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
 				MongoDBUtils.disconnect();
-				main.getLogger().severe(CommonDefinitions.getMessage("wwcConfigYAMLFallback"));
+				main.getLogger().severe(getMsg("wwcConfigYAMLFallback"));
 			}
 		} else {
-			main.getLogger().info(ChatColor.GREEN + CommonDefinitions.getMessage("wwcConfigYAMLDefault"));
+			main.getLogger().info(ChatColor.GREEN + getMsg("wwcConfigYAMLDefault"));
 		}
 	}
 
@@ -298,9 +306,9 @@ public class ConfigurationHandler {
 		String outName = "Invalid";
 		final int maxTries = 3;
 		for (int tryNumber = 1; tryNumber <= maxTries; tryNumber++) {
-			if (CommonDefinitions.serverIsStopping()) return;
+			if (serverIsStopping()) return;
 			try {
-				main.getLogger().warning(CommonDefinitions.getMessage("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}));
+				main.getLogger().warning(getMsg("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}));
 				BasicTranslation test;
 				if (mainConfig.getBoolean("Translator.useWatsonTranslate")) {
 					outName = "Watson";
@@ -327,6 +335,11 @@ public class ConfigurationHandler {
 							mainConfig.getString("Translator.libreURL"), true);
 					test.useTranslator();
 					break;
+				} else if (mainConfig.getBoolean("Translator.useDeepLTranslate")) {
+					outName = "DeepL Translate";
+					test = new DeepLTranslation(mainConfig.getString("Translator.deepLAPIKey"), true);
+					test.useTranslator();
+					break;
 				} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
 					outName = "JUnit/MockBukkit Testing Translator";
 					test = new TestTranslation(
@@ -344,10 +357,10 @@ public class ConfigurationHandler {
 			}
 		}
 		if (outName.equals("Invalid")) {
-			main.getLogger().severe(CommonDefinitions.getMessage("wwcInvalidTranslator"));
+			main.getLogger().severe(getMsg("wwcInvalidTranslator"));
 		} else {
 			main.getLogger().info(ChatColor.GREEN
-					+ CommonDefinitions.getMessage("wwcConfigConnectionSuccess", new String[] {outName}));
+					+ getMsg("wwcConfigConnectionSuccess", new String[] {outName}));
 		}
 		main.setTranslatorName(outName);
 	}
@@ -355,52 +368,52 @@ public class ConfigurationHandler {
 	/* Main config save method */
 	public void saveMainConfig(boolean async) {
 		if (async) {
-			CommonDefinitions.sendDebugMessage("Saving main config async!");
+			debugMsg("Saving main config async!");
 			BukkitRunnable out = new BukkitRunnable() {
 				@Override
 				public void run() {
 					saveMainConfig(false);
 				}
 			};
-			CommonDefinitions.scheduleTaskAsynchronously(out);
+			runAsync(out);
 			return;
 		}
-		CommonDefinitions.sendDebugMessage("Saving main config sync!");
+		debugMsg("Saving main config sync!");
 		saveCustomConfig(mainConfig, configFile, false);
 	}
 	
 	/* Messages config save method */
 	public void saveMessagesConfig(boolean async) {
 		if (async) {
-			CommonDefinitions.sendDebugMessage("Saving messages config async!");
+			debugMsg("Saving messages config async!");
 			BukkitRunnable out = new BukkitRunnable() {
 				@Override
 				public void run() {
 					saveMessagesConfig(false);
 				}
 			};
-			CommonDefinitions.scheduleTaskAsynchronously(out);
+			runAsync(out);
 			return;
 		}
-		CommonDefinitions.sendDebugMessage("Saving messages config sync!");
+		debugMsg("Saving messages config sync!");
 		saveCustomConfig(messagesConfig, messagesFile, false);
 	}
 	
 	/* Custom config save method */
 	public synchronized void saveCustomConfig(YamlConfiguration inConfig, File dest, boolean async) {
 		if (async && main.isEnabled()) {
-			CommonDefinitions.sendDebugMessage("Saving custom config async!");
+			debugMsg("Saving custom config async!");
 			BukkitRunnable out = new BukkitRunnable() {
 				@Override
 				public void run() {
 					saveCustomConfig(inConfig, dest, false);
 				}
 			};
-			CommonDefinitions.scheduleTaskAsynchronously(out);
+			runAsync(out);
 			return;
 		}
 		if (inConfig != null && dest != null) {
-			CommonDefinitions.sendDebugMessage("Saving custom config sync!");
+			debugMsg("Saving custom config sync!");
 			try {
 				inConfig.save(dest);
 			} catch (IOException e) {
@@ -431,7 +444,7 @@ public class ConfigurationHandler {
 				
 				/* Sync ActiveTranslator data to corresponding table */
 				main.getActiveTranslators().entrySet().forEach((entry) -> {
-					CommonDefinitions.sendDebugMessage("(SQL) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+					debugMsg("(SQL) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
 				    if (!entry.getValue().getHasBeenSaved()) {
 				    	try {
 				    		ActiveTranslator val = entry.getValue();
@@ -456,7 +469,7 @@ public class ConfigurationHandler {
 							e.printStackTrace();
 							return;
 						}
-				    	CommonDefinitions.sendDebugMessage("(SQL) Created/updated unsaved user data config of " + entry.getKey() + ".");
+				    	debugMsg("(SQL) Created/updated unsaved user data config of " + entry.getKey() + ".");
 				    	entry.getValue().setHasBeenSaved(true);
 				    }
 				});
@@ -470,13 +483,13 @@ public class ConfigurationHandler {
 						deleteOldItem.setString(1, uuid);
 						deleteOldItem.executeUpdate();
 						deleteOldItem.close();
-						CommonDefinitions.sendDebugMessage("(SQL) Deleted user data config of " + uuid + ".");
+						debugMsg("(SQL) Deleted user data config of " + uuid + ".");
 					}
 				}
 				
 				/* Sync PlayerRecord data to corresponding table */
                 main.getPlayerRecords().entrySet().forEach((entry) -> {
-                	CommonDefinitions.sendDebugMessage("(SQL) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+                	debugMsg("(SQL) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
                     if (!entry.getValue().getHasBeenSaved()) {
                     	try {
                     		PlayerRecord val = entry.getValue();
@@ -493,7 +506,7 @@ public class ConfigurationHandler {
                     		e.printStackTrace();
                     		return;
                     	}
-                    	CommonDefinitions.sendDebugMessage("(SQL) Created/updated unsaved user record of " + entry.getKey() + ".");
+                    	debugMsg("(SQL) Created/updated unsaved user record of " + entry.getKey() + ".");
                     	entry.getValue().setHasBeenSaved(true);
 				    }
 				});
@@ -509,7 +522,7 @@ public class ConfigurationHandler {
 				
 				/* Write ActiveTranslators to DB */
 				main.getActiveTranslators().entrySet().forEach((entry) -> {
-					CommonDefinitions.sendDebugMessage("(MongoDB) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+					debugMsg("(MongoDB) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
 					if (!entry.getValue().getHasBeenSaved()) {
 						ActiveTranslator val = entry.getValue();
 						Document currTranslator = new Document()
@@ -543,13 +556,13 @@ public class ConfigurationHandler {
 						String uuid = currDoc.getString("playerUUID");
 						Bson query = Filters.eq("playerUUID", uuid);
 						activeTranslatorCol.deleteOne(query);
-						CommonDefinitions.sendDebugMessage("(MongoDB) Deleted user data config of " + uuid + ".");
+						debugMsg("(MongoDB) Deleted user data config of " + uuid + ".");
 					}
 				}
 				
 				/* Write PlayerRecords to DB */
 				main.getPlayerRecords().entrySet().forEach((entry) -> {
-                	CommonDefinitions.sendDebugMessage("(MongoDB) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+                	debugMsg("(MongoDB) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
                     if (!entry.getValue().getHasBeenSaved()) {
                     	PlayerRecord val = entry.getValue();
                 		Document currPlayerRecord = new Document()
@@ -564,7 +577,7 @@ public class ConfigurationHandler {
 						playerRecordCol.replaceOne(filter, currPlayerRecord, opts);
 						
 						entry.getValue().setHasBeenSaved(true);
-                    	CommonDefinitions.sendDebugMessage("(MongoDB) Created/updated unsaved user record of " + entry.getKey() + ".");
+                    	debugMsg("(MongoDB) Created/updated unsaved user record of " + entry.getKey() + ".");
 				    }
 				});
 				
@@ -575,9 +588,9 @@ public class ConfigurationHandler {
 			/* Last resort, sync activeTranslators to disk via YAML */
 			// Save all new activeTranslators
 			main.getActiveTranslators().entrySet().forEach((entry) -> {
-				CommonDefinitions.sendDebugMessage("(YAML) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				debugMsg("(YAML) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
 				if (!entry.getValue().getHasBeenSaved()) {
-					CommonDefinitions.sendDebugMessage("(YAML) Created/updated unsaved user data config of " + entry.getKey() + ".");
+					debugMsg("(YAML) Created/updated unsaved user data config of " + entry.getKey() + ".");
 					entry.getValue().setHasBeenSaved(true);
 					createUserDataConfig(entry.getValue());
 				}
@@ -588,7 +601,7 @@ public class ConfigurationHandler {
 			for (String eaName : userSettingsDir.list()) {
 				File currFile = new File(userSettingsDir, eaName);
 				if (!main.isActiveTranslator(currFile.getName().substring(0, currFile.getName().indexOf(".")))) {
-					CommonDefinitions.sendDebugMessage("(YAML) Deleted user data config of "
+					debugMsg("(YAML) Deleted user data config of "
 							+ currFile.getName().substring(0, currFile.getName().indexOf(".")) + ".");
 					currFile.delete();
 				}
@@ -596,9 +609,9 @@ public class ConfigurationHandler {
 
 			/* Sync playerRecords to disk */
 			main.getPlayerRecords().entrySet().forEach((entry) -> {
-				CommonDefinitions.sendDebugMessage("(YAML) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
+				debugMsg("(YAML) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
 				if (!entry.getValue().getHasBeenSaved()) {
-					CommonDefinitions.sendDebugMessage("(YAML) Created/updated unsaved user record of " + entry.getKey() + ".");
+					debugMsg("(YAML) Created/updated unsaved user record of " + entry.getKey() + ".");
 					entry.getValue().setHasBeenSaved(true);
 					createStatsConfig(entry.getValue());
 				}
@@ -678,7 +691,7 @@ public class ConfigurationHandler {
 		return mainConfig;
 	}
 
-	public YamlConfiguration getMessagesConfig() {
+	public YamlConfiguration getMsgsConfig() {
 		return messagesConfig;
 	}
 
@@ -686,7 +699,7 @@ public class ConfigurationHandler {
 		return configFile;
 	}
 
-	public File getMessagesFile() {
+	public File getMsgsFile() {
 		return messagesFile;
 	}
 }

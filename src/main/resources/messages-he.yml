@@ -332,8 +332,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: פסק זמן משימת Async מוגדר בהצלחה.
   wwcConfigGUIFatalAsyncAbortButton: שינוי הזמן הקצוב למשימה של Async
   wwcTimeoutException: הפקודה שלך מתוזמנת. אנא נסה שוב.
-  wwcBackupLangCodesWarning: WorldwideChat לא הצליח להביא שפות, ובמקום זאת הוא משתמש
-    בגיבויים. זה כנראה לא ישפיע על התנהגות הפלאגין, אך אנא פנה למפתח.
   libreHttp400: בקשה גרועה שנשלחה ליברה תרגם! אלא אם כן אתה עושה משהו שאתה לא צריך,
     אתה לא צריך לקבל את זה. אנא צרו קשר עם היזם!
   wwcConfigGUILibreTranslateApiKeyButton: שינוי חינם תרגם את מפתח ה- API
@@ -383,3 +381,14 @@ Messages:
   wwcConfigConversationMongoOptionalArgsSuccess: שינה בהצלחה את טיעוני MongoDB האופציונ
   wwcConfigConversationMongoOptionalArgsCleared: טיעונים אופציונליים נוקו בהצלחה
   wwcConfigGUIMongoPortButton: שינוי נמל MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: סט פסק זמן async קטלני לא חוקי. ברירת מחדל ל
+    -10 שניות...
+  libreHttp500: זוג שפת הקלט והפלט שבחרת אינו נתמך. אנא בחר ערכת שפה אחרת!
+  wwcConfigGUIDeepLTranslateButton: החלף את DeepL תרגם
+  wwcConfigConversationDeepLTranslateToggleSuccess: בהצלחה עבר DeepL תרגם. טען מחדש
+    כדי שהשינויים ייכנסו לתוקף.
+  wwcConfigGUIDeepLTranslateApiKeyButton: שינוי DeepL תרגם את מפתח ה- API
+  wwcConfigGUIToggleDeepLTranslateButton: החלף את DeepL תרגם
+  wwcConfigConversationDeepLTranslateApiKeySuccess: מפתח ה- API של Deepl מוגדר בהצלחה.
+  wwcConfigConversationDeepLTranslateApiKeyInput: מפתח ה- API הנוכחי הוא %i. אנא הזן
+    מפתח API עבור DeepL, או הקלד 0 כדי לחזור.

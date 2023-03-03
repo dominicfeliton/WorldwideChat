@@ -362,9 +362,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Aync tapşırıq zaman aşımı uğurla müəyyən.
   wwcConfigGUIFatalAsyncAbortButton: Aync Task Timeout Change
   wwcTimeoutException: Sizin komanda həyata vaxtı. Xahiş edirik yenidən cəhd edin.
-  wwcBackupLangCodesWarning: WorldwideChat dil almaq iqtidarında idi və əvəzinə yedeklemeler
-    istifadə edir. Bu, ehtimal ki, plugin davranışına təsir göstərməyəcək, ancaq geliştirici
-    ilə əlaqə saxlayın.
   libreHttp400: Pulsuz Tərcümə göndərilən Bad sorğu! Siz lazım deyil ki, bir şey bunu
     halda, Bu almaq lazım deyil. Geliştirici ilə əlaqə saxlayın!
   wwcConfigGUILibreTranslateApiKeyButton: Pulsuz Tərcümə API Açarını dəyişdirin
@@ -418,3 +415,15 @@ Messages:
     uğurla dəyişdi.
   wwcConfigConversationMongoOptionalArgsCleared: Könüllü dəlilləri uğurla rəsmiləşdirilib.
   wwcConfigGUIMongoPortButton: MongoDB portunu dəyişdirin
+  wwcConfigInvalidFatalAsyncTimeout: Yanlış ölümcül async zaman aşımı set. 10 saniyəyə
+    qədər...
+  libreHttp500: Seçdiyiniz giriş və çıxış dil cütlüyü dəstəklənmir. Xahiş edirik fərqli
+    bir dil dəsti seçin!
+  wwcConfigGUIDeepLTranslateButton: Deepl Translate keçid
+  wwcConfigConversationDeepLTranslateToggleSuccess: Müvəffəqiyyətlə DeepL Translate
+    keçid. Dəyişikliklərin qüvvəyə minməsi üçün yenidən yüklə.
+  wwcConfigGUIDeepLTranslateApiKeyButton: DeepL Translate API Açarını dəyişdirin
+  wwcConfigGUIToggleDeepLTranslateButton: Deepl Translate keçid
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API açarı uğurla təyin olundu.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Mövcud API açarı %i. DeepL üçün
+    bir API düyməsini daxil edin və ya geri dönmək üçün 0 yazın.

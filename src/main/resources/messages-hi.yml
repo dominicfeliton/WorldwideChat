@@ -375,9 +375,6 @@ Messages:
     गया।
   wwcConfigGUIFatalAsyncAbortButton: Async टास्क टाइमआउट बदलें
   wwcTimeoutException: आपकी आज्ञा का समय समाप्त हो गया। कृपया फिर से कोशिश करें।
-  wwcBackupLangCodesWarning: WorldwideChat भाषाओं को लाने में असमर्थ था, और इसके बजाय
-    बैकअप का उपयोग कर रहा है। यह शायद प्लगइन व्यवहार को प्रभावित नहीं करेगा, लेकिन
-    कृपया डेवलपर से संपर्क करें।
   libreHttp400: Libre Translate को भेजा गया बुरा अनुरोध! जब तक आप ऐसा कुछ नहीं कर
     रहे हैं जो आपको नहीं करना चाहिए, आपको यह नहीं मिलना चाहिए। कृपया डेवलपर से संपर्क
     करें!
@@ -434,3 +431,16 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: वैकल्पिक तर्क सफलतापूर्वक साफ़ हो
     गए।
   wwcConfigGUIMongoPortButton: MongoDB पोर्ट बदलें
+  wwcConfigInvalidFatalAsyncTimeout: अमान्य घातक एसिंक टाइमआउट सेट। 10 सेकंड के लिए
+    डिफ़ॉल्ट किया जा रहा है...
+  libreHttp500: आपकी चुनी गई इनपुट और आउटपुट भाषा जोड़ी समर्थित नहीं है। कृपया एक
+    अलग भाषा सेट चुनें!
+  wwcConfigGUIDeepLTranslateButton: डीपएल ट्रांसलेट टॉगल करें
+  wwcConfigConversationDeepLTranslateToggleSuccess: डीपएल ट्रांसलेट को सफलतापूर्वक
+    टॉगल किया गया। परिवर्तनों को प्रभावी करने के लिए पुनः लोड करें।
+  wwcConfigGUIDeepLTranslateApiKeyButton: डीपएल ट्रांसलेट एपीआई कुंजी बदलें
+  wwcConfigGUIToggleDeepLTranslateButton: डीपएल ट्रांसलेट टॉगल करें
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API कुंजी सफलतापूर्वक सेट
+    हो गई।
+  wwcConfigConversationDeepLTranslateApiKeyInput: वर्तमान API कुंजी %i है. कृपया DeepL
+    के लिए API कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।

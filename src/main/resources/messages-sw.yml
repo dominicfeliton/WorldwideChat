@@ -366,9 +366,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Timeout kazi ya Async imewekwa kwa mafanikio.
   wwcConfigGUIFatalAsyncAbortButton: Badilisha Muda wa Kazi ya Async
   wwcTimeoutException: Amri yako wakati muafaka nje. Tafadhali jaribu tena.
-  wwcBackupLangCodesWarning: WorldwideChat haikuweza kuchota lugha, na badala yake
-    hutumia salama. Hii pengine haitaathiri tabia Plugin, lakini tafadhali wasiliana
-    developer.
   libreHttp400: Ombi mbaya alimtuma Libre Tafsiri! Isipokuwa unafanya kitu ambacho
     haipaswi, unapaswa kupata hii. Tafadhali wasiliana developer!
   wwcConfigGUILibreTranslateApiKeyButton: Badilisha Libre Kutafsiri API muhimu
@@ -422,3 +419,15 @@ Messages:
   wwcConfigConversationMongoOptionalArgsSuccess: Mafanikio iliyopita hoja hiari MongoDB.
   wwcConfigConversationMongoOptionalArgsCleared: Hoja hiari kuondolewa kwa mafanikio.
   wwcConfigGUIMongoPortButton: Badilisha bandari ya MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Batili mbaya async umeisha kuweka. Kushuka kwa
+    sekunde 10...
+  libreHttp500: Jozi yako ya pembejeo na lugha ya pato haijaungwa mkono. Tafadhali
+    chagua lugha tofauti!
+  wwcConfigGUIDeepLTranslateButton: Badilisha DeepL Kutafsiri
+  wwcConfigConversationDeepLTranslateToggleSuccess: Mafanikio toggled DeepL Tafsiri.
+    Reload kwa mabadiliko ya kuchukua athari.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Badilisha DeepL Kutafsiri API muhimu
+  wwcConfigGUIToggleDeepLTranslateButton: Badilisha DeepL Kutafsiri
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API muhimu kuweka mafanikio.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Kitufe cha sasa cha API ni %i Tafadhali
+    ingiza ufunguo wa API kwa DeepL, au funga 0 ili urejee.

@@ -373,9 +373,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async timeout kompitu stabbiliti b'suċċess.
   wwcConfigGUIFatalAsyncAbortButton: Bidla Timeout Task Async
   wwcTimeoutException: Il-kmand tiegħek ittajmjat. Jekk jogħġbok erġa pprova.
-  wwcBackupLangCodesWarning: WorldwideChat ma setax iġib il-lingwi, u minflok juża
-    backups. Dan probabbilment mhux se jaffettwa l-imġiba plugin, iżda jekk jogħġbok
-    ikkuntattja l-iżviluppatur.
   libreHttp400: Talba ħażina mibgħuta lil Libre Translate! Sakemm ma tkunx qed tagħmel
     xi ħaġa li m'għandekx, m'għandekx tikseb dan. Jekk jogħġbok ikkuntattja l-iżviluppatur!
   wwcConfigGUILibreTranslateApiKeyButton: Bidla Ħieles Ittraduċi API Ewlenin
@@ -428,3 +425,15 @@ Messages:
     MongoDB.
   wwcConfigConversationMongoOptionalArgsCleared: Argumenti fakultattivi kklerjaw b'suċċess.
   wwcConfigGUIMongoPortButton: Bidla Port MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Sett ta 'timeout fatali invalidu tal-async. Defaulting
+    li 10 sekondi...
+  libreHttp500: Il-par tal-lingwa tal-input u l-output magħżul tiegħek mhuwiex appoġġjat.
+    Jekk jogħġbok agħżel sett ta 'lingwi differenti!
+  wwcConfigGUIDeepLTranslateButton: Ittraduċi DeepL Ittraduċi
+  wwcConfigConversationDeepLTranslateToggleSuccess: B'suċċess toggled DeepL Translate.
+    Reload biex il-bidliet jidħlu fis-seħħ.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Bidla DeepL Ittraduċi API Ewlenin
+  wwcConfigGUIToggleDeepLTranslateButton: Ittraduċi DeepL Ittraduċi
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API key issettjat b'suċċess.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Iċ-ċavetta API attwali huwa %i.
+    Jekk jogħġbok daħħal ċavetta API għal DeepL, jew tip 0 biex tmur lura.

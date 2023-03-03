@@ -389,9 +389,6 @@ Messages:
   wwcConfigGUIFatalAsyncAbortButton: Modificarea timpului de expirare a activității
     async
   wwcTimeoutException: Comanda ta a expirat. Vă rugăm să încercați din nou.
-  wwcBackupLangCodesWarning: WorldwideChat nu a reușit să preia limbi și, în schimb,
-    folosește copii de rezervă. Probabil că acest lucru nu va afecta comportamentul
-    pluginului, dar vă rugăm să contactați dezvoltatorul.
   libreHttp400: Cerere greșită trimisă la Libre Translate! Dacă nu faceți ceva ce
     nu ar trebui, nu ar trebui să obțineți acest lucru. Vă rugăm să contactați dezvoltatorul!
   wwcConfigGUILibreTranslateApiKeyButton: Schimbați cheia API pentru traducerea gratuită
@@ -448,3 +445,15 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: Argumentele opționale au fost șterse
     cu succes.
   wwcConfigGUIMongoPortButton: Schimbați portul MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Set de expirare asincronă fatală nevalidă. Implicit
+    la 10 secunde...
+  libreHttp500: Perechea de limbi de intrare și ieșire selectată nu este acceptată.
+    Vă rugăm să alegeți un alt set de limbi!
+  wwcConfigGUIDeepLTranslateButton: Comutați traducerea DeepL
+  wwcConfigConversationDeepLTranslateToggleSuccess: A fost comutată cu succes DeepL
+    Translate. Reîncărcați pentru ca modificările să aibă efect.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Schimbați cheia API DeepL Traduceți
+  wwcConfigGUIToggleDeepLTranslateButton: Comutați traducerea DeepL
+  wwcConfigConversationDeepLTranslateApiKeySuccess: Cheia DeepL API setată cu succes.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Cheia API curentă este %i. Introduceți
+    o cheie API pentru DeepL sau tastați 0 pentru a reveni.

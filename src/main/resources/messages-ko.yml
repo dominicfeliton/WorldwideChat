@@ -306,8 +306,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: 비동기 작업 시간 초과가 성공적으로 설정되었습니다.
   wwcConfigGUIFatalAsyncAbortButton: 비동기 작업 시간 초과 변경
   wwcTimeoutException: 명령 시간이 초과되었습니다.다시 시도해 주세요.
-  wwcBackupLangCodesWarning: WorldwideChat은 언어를 가져올 수 없었고 대신 백업을 사용하고 있습니다.플러그인 동작에는
-    영향을 미치지 않을 수 있지만 개발자에게 문의하십시오.
   libreHttp400: 잘못된 요청이 전송되었습니다. 무료 번역!하지 말아야 할 일을 하지 않는 한, 이걸 얻어서는 안 됩니다.개발자에게 문의하세요!
   wwcConfigGUILibreTranslateApiKeyButton: 무료 번역 API 키 변경
   libreHttp403: 무료 번역 API 키가 없거나 서버에서 금지되었습니다!
@@ -355,3 +353,13 @@ Messages:
   wwcConfigConversationMongoOptionalArgsSuccess: 선택적 MongoDB 인수를 성공적으로 변경했습니다.
   wwcConfigConversationMongoOptionalArgsCleared: 선택적 인수가 성공적으로 지워졌습니다.
   wwcConfigGUIMongoPortButton: 몽고DB 포트 변경
+  wwcConfigInvalidFatalAsyncTimeout: 치명적인 비동기 타임아웃 설정이 잘못되었습니다.기본값은 10초로 설정 중...
+  libreHttp500: 선택한 입력 및 출력 언어 쌍이 지원되지 않습니다.다른 언어 세트를 선택해 주세요!
+  wwcConfigGUIDeepLTranslateButton: 딥L 트랜슬레이트를 전환하세요
+  wwcConfigConversationDeepLTranslateToggleSuccess: DeepL 번역을 성공적으로 전환했습니다.변경 사항을
+    적용하려면 다시 로드하십시오.
+  wwcConfigGUIDeepLTranslateApiKeyButton: 딥엘 번역 API 키 변경
+  wwcConfigGUIToggleDeepLTranslateButton: 딥L 트랜슬레이트를 전환하세요
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API 키가 성공적으로 설정되었습니다.
+  wwcConfigConversationDeepLTranslateApiKeyInput: 현재 API 키는 %i입니다. DeepL의 API 키를 입력하거나
+    뒤로 돌아가려면 0을 입력하십시오.

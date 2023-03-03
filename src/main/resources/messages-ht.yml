@@ -361,9 +361,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async delè travay mete avèk siksè.
   wwcConfigGUIFatalAsyncAbortButton: Chanje Async Objektif Travay la Timeout
   wwcTimeoutException: Kòmandman ou kwonometre soti. Tanpri eseye ankò.
-  wwcBackupLangCodesWarning: WorldwideChat te kapab chache lang, ak se olye lè l sèvi
-    avèk sovgad. Sa a pwobableman pa pral afekte konpòtman Plugin, men tanpri kontakte
-    pwomotè a.
   libreHttp400: Move demann voye nan Libre Translate! Sòf si w ap fè yon bagay ke
     ou pa ta dwe, ou pa ta dwe jwenn sa a. Tanpri kontakte pwomotè a!
   wwcConfigGUILibreTranslateApiKeyButton: Chanje gratis Translate API kle
@@ -416,3 +413,15 @@ Messages:
     vle MongoDB.
   wwcConfigConversationMongoOptionalArgsCleared: Si ou vle agiman otorize avèk siksè.
   wwcConfigGUIMongoPortButton: Chanje MongoDB Port
+  wwcConfigInvalidFatalAsyncTimeout: Envalid fatal async poz mete. Defaulting a 10
+    segonn...
+  libreHttp500: D 'chwazi ou ak pè lang pwodiksyon pa sipòte. Tanpri chwazi yon seri
+    lang diferan!
+  wwcConfigGUIDeepLTranslateButton: Translate DeepL baskil
+  wwcConfigConversationDeepLTranslateToggleSuccess: Avèk siksè baskile DeepL Translate.
+    Reload pou chanjman yo pran efè.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Chanje DeepL Translate API kle
+  wwcConfigGUIToggleDeepLTranslateButton: Translate DeepL baskil
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API kle mete avèk siksè.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Kle API aktyèl la se % mwen.Tanpri
+    antre yon kle API pou DeepL, oswa tape 0 pou tounen.

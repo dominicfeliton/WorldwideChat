@@ -295,7 +295,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: 非同期タスクのタイムアウトが正常に設定されました。
   wwcConfigGUIFatalAsyncAbortButton: 非同期タスクタイムアウトの変更
   wwcTimeoutException: コマンドがタイムアウトしました。もう一度お試しください。
-  wwcBackupLangCodesWarning: WorldwideChatは言語を取得できず、代わりにバックアップを使用しています。これはおそらくプラグインの動作には影響しませんが、開発者に連絡してください。
   libreHttp400: 不正なリクエストがLibre Translateに送信されました！やるべきでないことをしているのでなければ、これを得てはいけない。開発者に連絡してください！
   wwcConfigGUILibreTranslateApiKeyButton: リブレ翻訳 API キーを変更
   libreHttp403: Libre Translate APIキーがないか、サーバーから禁止されています！
@@ -339,3 +338,12 @@ Messages:
   wwcConfigConversationMongoOptionalArgsSuccess: オプションの MongoDB 引数が正常に変更されました。
   wwcConfigConversationMongoOptionalArgsCleared: オプションの引数は正常にクリアされました。
   wwcConfigGUIMongoPortButton: MongoDB ポートを変更
+  wwcConfigInvalidFatalAsyncTimeout: 致命的な非同期タイムアウトセットが無効です。デフォルトは 10 秒です...
+  libreHttp500: 選択した入出力言語ペアはサポートされていません。別の言語セットを選択してください!
+  wwcConfigGUIDeepLTranslateButton: DeepL 翻訳を切り替え
+  wwcConfigConversationDeepLTranslateToggleSuccess: DeepL翻訳が正常に切り替わりました。リロードして変更を有効にします。
+  wwcConfigGUIDeepLTranslateApiKeyButton: DeepL翻訳APIキーを変更
+  wwcConfigGUIToggleDeepLTranslateButton: DeepL 翻訳を切り替え
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API キーが正常に設定されました。
+  wwcConfigConversationDeepLTranslateApiKeyInput: 現在の API キーは %i です。DeepL の API キーを入力するか、0
+    を入力して戻ってください。

@@ -366,9 +366,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Lokacin aiki na Async ya saita nasara.
   wwcConfigGUIFatalAsyncAbortButton: Canja lokaci na Async
   wwcTimeoutException: Umurninka ya ƙare. Da fatan za a sake gwadawa.
-  wwcBackupLangCodesWarning: WorldwideChat bai iya samo harsuna ba, kuma yana amfani
-    da madadin backups. Wannan mai yiwuwa ba zai shafi halin plugin ba, amma don Allah
-    a tuntuɓi mai tasowa.
   libreHttp400: Bad request aika zuwa Libre Translate! Sai dai idan kana yin wani
     abu da bai kamata ka yi ba, bai kamata ka samu wannan ba. Da fatan a tuntubi mai
     gabatarwa!
@@ -426,3 +423,15 @@ Messages:
     na zaɓi.
   wwcConfigConversationMongoOptionalArgsCleared: Zaɓuɓɓukan muhawara sun share nasara
   wwcConfigGUIMongoPortButton: Canja tashar MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Saitin lokaci mara kyau na async. Defaulting
+    zuwa 10 seconds...
+  libreHttp500: Ba a tallafa wa shigarwar da aka zaɓa da harshen fitarwa ba. Da fatan
+    za a zabi wani harshe daban!
+  wwcConfigGUIDeepLTranslateButton: Fassara DeepL
+  wwcConfigConversationDeepLTranslateToggleSuccess: An samu nasarar toggled DeepL
+    Fassara. Sake saukewa don canje-canje don yin tasiri.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Canja DeepL Fassara Maɓallin API
+  wwcConfigGUIToggleDeepLTranslateButton: Fassara DeepL
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API maɓallin saita nasara.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Maɓallin API na yanzu shine %i.
+    Da fatan za a shigar da maɓallin API don DeepL, ko rubuta 0 don komawa.

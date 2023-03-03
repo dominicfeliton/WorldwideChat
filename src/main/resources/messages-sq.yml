@@ -389,9 +389,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Asinkron detyrë timeout vendosur me sukses.
   wwcConfigGUIFatalAsyncAbortButton: Ndrysho Async Task Timeout
   wwcTimeoutException: Komanda juaj në kohën e duhur. Ju lutemi provoni përsëri.
-  wwcBackupLangCodesWarning: WorldwideChat nuk ishte në gjendje të shkoj të marr gjuhë,
-    dhe në vend të kësaj po përdor kopje rezervë. Kjo ndoshta nuk do të ndikojë në
-    sjelljen e shtojcave, por ju lutemi kontaktoni zhvilluesin.
   libreHttp400: Kërkesa e keqe dërguar Libre Translate! Nëse ju jeni duke bërë diçka
     që ju nuk duhet, ju nuk duhet të merrni këtë. Ju lutemi kontaktoni zhvilluesin!
   wwcConfigGUILibreTranslateApiKeyButton: Ndrysho Libre Translate API Key
@@ -450,3 +447,15 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: Argumentet opsionale pastruar me
     sukses.
   wwcConfigGUIMongoPortButton: Ndrysho Portin MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Invalid fatale async timeout set. Parazgjedhja
+    në 10 sekonda...
+  libreHttp500: Çifti juaj i zgjedhur i gjuhës së hyrjes dhe daljes nuk mbështetet.
+    Ju lutemi zgjidhni një grup tjetër gjuhësh!
+  wwcConfigGUIDeepLTranslateButton: Toggle DeepL Translate
+  wwcConfigConversationDeepLTranslateToggleSuccess: Me sukses toggled DeepL Translate.
+    Rifresko për ndryshimet që do të hyjnë në fuqi.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Ndrysho DeepL Translate API Key
+  wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Translate
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API kyç vendosur me sukses.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Kyçi aktual API është %i. Ju lutemi
+    futni një çelës API për DeepL, ose shkruani 0 për t'u kthyer prapa.

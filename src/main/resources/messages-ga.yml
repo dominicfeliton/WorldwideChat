@@ -395,9 +395,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async Teorainn ama tasc atá leagtha go rathúil.
   wwcConfigGUIFatalAsyncAbortButton: Athrú Asynchronc Tasc Teorainn Ama
   wwcTimeoutException: Do ordú uainiú amach. Bain triail eile as.
-  wwcBackupLangCodesWarning: Ní raibh WorldwideChat in ann teangacha a fháil, agus
-    ina ionad sin úsáideann sé cúltacaí. Ní bheidh sé seo difear is dócha iompar plugin,
-    ach téigh i dteagmháil leis an bhforbróir.
   libreHttp400: Droch iarraidh a sheoladh chuig Libre Translate! Mura bhfuil rud éigin
     á dhéanamh agat nár cheart duit, níor cheart duit é seo a fháil. Téigh i dteagmháil
     leis an bhforbróir!
@@ -458,3 +455,15 @@ Messages:
     a athrú.
   wwcConfigConversationMongoOptionalArgsCleared: Argóintí roghnacha glanta go rathúil.
   wwcConfigGUIMongoPortButton: Athraigh Port MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Neamhbhailí marfach leagtha Teorainn ama async.
+    Mainneachtana go 10 soicind...
+  libreHttp500: Ní thacaítear le do phéire teanga ionchuir agus aschuir roghnaithe.
+    Roghnaigh tacar teanga difriúil le do thoil!
+  wwcConfigGUIDeepLTranslateButton: Scoránaigh DeepL Aistrigh
+  wwcConfigConversationDeepLTranslateToggleSuccess: D'éirigh le DeepL Translate a
+    scoráil. Athlódáil chun na hathruithe a chur i bhfeidhm.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Athraigh Eochair API Translate DeepL
+  wwcConfigGUIToggleDeepLTranslateButton: Scoránaigh DeepL Aistrigh
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API eochair leagtha go rathúil.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Is é an eochair API atá ann faoi
+    láthair %i. ionchur eochair API do DeepL, nó cineál 0 chun dul ar ais.

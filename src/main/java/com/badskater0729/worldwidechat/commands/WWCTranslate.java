@@ -11,11 +11,18 @@ import org.bukkit.entity.Player;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.wwctranslategui.WWCTranslateGuiMainMenu;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.sendNoConsoleChatMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.isSameTranslatorLang;
+import static com.badskater0729.worldwidechat.util.CommonRefs.getFormattedValidLangCodes;
+import static com.badskater0729.worldwidechat.util.CommonRefs.isSupportedTranslatorLang;
 
 public class WWCTranslate extends BasicCommand {
 
@@ -30,7 +37,7 @@ public class WWCTranslate extends BasicCommand {
 
 	/*
 	 * Correct Syntax: /wwct <id-in> <id-out> EX for id: en, ar, cs, nl, etc. id
-	 * MUST be valid, we will check with CommonDefinitions class
+	 * MUST be valid, we will check with CommonRefs class
 	 */
 
 	@Override
@@ -40,10 +47,10 @@ public class WWCTranslate extends BasicCommand {
 			// Too many args
 			final TextComponent invalidArgs = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwctInvalidArgs"))
+							.content(getMsg("wwctInvalidArgs"))
 							.color(NamedTextColor.RED))
 					.build();
-			CommonDefinitions.sendMessage(sender, invalidArgs);
+			sendMsg(sender, invalidArgs);
 			return false;
 		}
 
@@ -64,12 +71,12 @@ public class WWCTranslate extends BasicCommand {
 				} else {
 					final TextComponent badPerms = Component.text() // Bad perms
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwcBadPerms"))
+									.content(getMsg("wwcBadPerms"))
 									.color(NamedTextColor.RED))
 							.append(Component.text().content(" (" + "worldwidechat.wwct.otherplayers" + ")")
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage(sender, badPerms);
+					sendMsg(sender, badPerms);
 					return false;
 				}
 			}
@@ -84,10 +91,10 @@ public class WWCTranslate extends BasicCommand {
 				main.removeActiveTranslator(currTarget);
 				final TextComponent chatTranslationStopped = Component.text()
 						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwctTranslationStopped"))
+								.content(getMsg("wwctTranslationStopped"))
 								.color(NamedTextColor.LIGHT_PURPLE))
 						.build();
-				CommonDefinitions.sendMessage(sender, chatTranslationStopped);
+				sendMsg(sender, chatTranslationStopped);
 				if ((args.length >= 1 && args[0].equalsIgnoreCase("Stop")) || (args.length >= 2 && args[1].equalsIgnoreCase("Stop"))) {
 					return true;
 				}
@@ -97,16 +104,16 @@ public class WWCTranslate extends BasicCommand {
 				main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
 				final TextComponent chatTranslationStopped = Component.text()
 						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwctTranslationStopped"))
+								.content(getMsg("wwctTranslationStopped"))
 								.color(NamedTextColor.LIGHT_PURPLE))
 						.build();
-				CommonDefinitions.sendMessage(testPlayer, chatTranslationStopped);
+				sendMsg(testPlayer, chatTranslationStopped);
 				final TextComponent chatTranslationStoppedOtherPlayer = Component.text()
 						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwctTranslationStoppedOtherPlayer", new String[] {args[0]}))
+								.content(getMsg("wwctTranslationStoppedOtherPlayer", new String[] {args[0]}))
 								.color(NamedTextColor.LIGHT_PURPLE))
 						.build();
-				CommonDefinitions.sendMessage(sender, chatTranslationStoppedOtherPlayer);
+				sendMsg(sender, chatTranslationStoppedOtherPlayer);
 				if ((isConsoleSender && args.length == 1) || (args.length >= 2 && args[1] instanceof String && args[1].equalsIgnoreCase("Stop"))) {
 					return true;
 				}
@@ -115,29 +122,29 @@ public class WWCTranslate extends BasicCommand {
 			main.removeActiveTranslator(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
 			final TextComponent chatTranslationStopped = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcgTranslationStopped"))
+							.content(getMsg("wwcgTranslationStopped"))
 							.color(NamedTextColor.LIGHT_PURPLE))
 					.build();
 			for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
-				CommonDefinitions.sendMessage(eaPlayer, chatTranslationStopped);
+				sendMsg(eaPlayer, chatTranslationStopped);
 			}
-			CommonDefinitions.sendMessage(WorldwideChat.instance.getServer().getConsoleSender(), chatTranslationStopped);
+			sendMsg(WorldwideChat.instance.getServer().getConsoleSender(), chatTranslationStopped);
 			if (args.length >= 1 && args[0] instanceof String && args[0].equalsIgnoreCase("Stop")) {
 				return true;
 			}
 		}
 
-		/* Player has given us one argument */
+		/* NEW TRANSLATION SESSION: Player has given us one argument */
 		if (args.length == 1) {
 			/* If the sender is a player */
 			if (!isConsoleSender) {
-				return startNewTranslationSession(isGlobal ? "GLOBAL-TRANSLATE-ENABLED" : ((Player)sender).getUniqueId().toString(), "None", args[0]);
+				return startNewTranslationSession(isGlobal ? "GLOBAL-TRANSLATE-ENABLED" : ((Player)sender).getName(), "None", args[0]);
 			}
 			/* If we are console... */
 			if (isGlobal) {
 				return startNewTranslationSession("GLOBAL-TRANSLATE-ENABLED", "None", args[0]);
 			}
-			return CommonDefinitions.sendNoConsoleChatMessage(sender);
+			return sendNoConsoleChatMsg(sender);
 		}
 		
 		/* Player has given us two arguments */
@@ -146,64 +153,77 @@ public class WWCTranslate extends BasicCommand {
 				/* If we are passing two languages (or attempting to pass two languages) */
 				if (Bukkit.getPlayerExact(args[0]) == null) {
 					if (!isConsoleSender) {
-						return startNewTranslationSession(((Player)sender).getUniqueId().toString(), args[0], args[1]);
+						return startNewTranslationSession(((Player)sender).getName(), args[0], args[1]);
 					}
-					return CommonDefinitions.sendNoConsoleChatMessage(sender);
+					return sendNoConsoleChatMsg(sender);
 				/* If we are attempting to pass a player and an outLang */
 				}
-				return startNewTranslationSession(Bukkit.getPlayer(args[0]).getUniqueId().toString(), "None", args[1]);
+				return startNewTranslationSession(args[0], "None", args[1]);
 			}
 			return startNewTranslationSession("GLOBAL-TRANSLATE-ENABLED", args[0], args[1]);
 		}
 		
 		/* Player has given us three arguments */
-		if (args.length == 3) {
-			return startNewTranslationSession(Bukkit.getPlayer(args[0]).getUniqueId().toString(), args[1], args[2]);
+		if (args.length == 3 && !isGlobal) {
+			return startNewTranslationSession(args[0], args[1], args[2]);
 		}
 		return false;
 	}
 	
-	private boolean startNewTranslationSession(String inUUID, String inLang, String outLang) {
-		if (CommonDefinitions.isSameLang(inLang, outLang)) {
+	private boolean startNewTranslationSession(String inName, String inLang, String outLang) {
+		// Check if inLang/outLang are the same
+		if (inLang.equalsIgnoreCase(outLang) || isSameTranslatorLang(inLang, outLang, "all")) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
-							CommonDefinitions.getMessage("wwctSameLangError", new String[] {CommonDefinitions.getFormattedValidLangCodes()}))
+							getMsg("wwctSameLangError", new String[] {getFormattedValidLangCodes("in")}))
 							.color(NamedTextColor.RED))
 					.build();
-			CommonDefinitions.sendMessage(sender, sameLangError);
+			sendMsg(sender, sameLangError);
 			return false;
 		}
-		/* Do not let users use None inputLang with Amazon Translate, remove this if we ever find a workaround for error */
-		if ((!inLang.equalsIgnoreCase("None") && !CommonDefinitions.isSupportedTranslatorLang(inLang)) || (inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
+		/* NOTICE:
+		 * Do not let users use None inputLang with Amazon Translate. 
+		 * Remove this if we ever find a workaround for each. */
+		// Check if valid inLang
+		if ((!inLang.equalsIgnoreCase("None") && !isSupportedTranslatorLang(inLang, "in")) || 
+				(inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
-							CommonDefinitions.getMessage("wwctInvalidInputLangCode", new String[] {CommonDefinitions.getFormattedValidLangCodes()}))
+							getMsg("wwctInvalidInputLangCode", new String[] {getFormattedValidLangCodes("in")}))
 							.color(NamedTextColor.RED))
 					.build();
-			CommonDefinitions.sendMessage(sender, sameLangError);
+			sendMsg(sender, sameLangError);
 			return false;
 		}
-		if (!CommonDefinitions.isSupportedTranslatorLang(outLang)) {
+		// Check if valid outLang
+		if (!isSupportedTranslatorLang(outLang, "out")) {
 			final TextComponent sameLangError = Component.text()
 					.append(Component.text().content(
-							CommonDefinitions.getMessage("wwctInvalidOutputLangCode", new String[] {CommonDefinitions.getFormattedValidLangCodes()}))
+							getMsg("wwctInvalidOutputLangCode", new String[] {getFormattedValidLangCodes("out")}))
 							.color(NamedTextColor.RED))
 					.build();
-			CommonDefinitions.sendMessage(sender, sameLangError);
+			sendMsg(sender, sameLangError);
 			return false;
 		}
+		// Check if target is valid player (if not global)
+		// Set UUID if valid, else exit
+		String inUUID = "";
 		Player targetPlayer = null;
 		if (!isGlobal) {
-			targetPlayer = Bukkit.getPlayer(UUID.fromString(inUUID));
-		}
-		if (!isGlobal && targetPlayer == null) {
-			final TextComponent playerNotFound = Component.text() // Target player not found
-					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcPlayerNotFound", new String[] {Bukkit.getPlayer(UUID.fromString(inUUID)).getName()}))
-							.color(NamedTextColor.RED))
-					.build();
-			CommonDefinitions.sendMessage(sender, playerNotFound);
-			return false;
+			targetPlayer = Bukkit.getPlayerExact(inName);
+			if (targetPlayer == null) {
+				final TextComponent playerNotFound = Component.text() // Target player not found
+						.append(Component.text()
+								.content(getMsg("wwcPlayerNotFound", new String[] {inName}))
+								.color(NamedTextColor.RED))
+						.build();
+				sendMsg(sender, playerNotFound);
+				return false;
+			}
+			inUUID = targetPlayer.getUniqueId().toString();
+		} else {
+			// If global, set UUID to reflect that
+			inUUID = "GLOBAL-TRANSLATE-ENABLED";
 		}
 		
 		/* Check if user is targetting themselves, which doesn't need this permission (or if we are console) */
@@ -211,12 +231,12 @@ public class WWCTranslate extends BasicCommand {
 		if (!isGlobal && !targetIsSelf && !sender.hasPermission("worldwidechat.wwct.otherplayers")) {
 			final TextComponent badPerms = Component.text()
 					.append(Component.text()
-							.content(CommonDefinitions.getMessage("wwcBadPerms"))
+							.content(getMsg("wwcBadPerms"))
 							.color(NamedTextColor.RED))
 					.append(Component.text().content(" (" + "worldwidechat.wwct.otherplayers" + ")")
 							.color(NamedTextColor.LIGHT_PURPLE))
 					.build();
-			CommonDefinitions.sendMessage(sender, badPerms);
+			sendMsg(sender, badPerms);
 			return false;
 		}
 		
@@ -226,68 +246,68 @@ public class WWCTranslate extends BasicCommand {
 				if (targetIsSelf) {
 					final TextComponent autoTranslate = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctAutoTranslateStart", new String[] {outLang}))
+									.content(getMsg("wwctAutoTranslateStart", new String[] {outLang}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage(sender, autoTranslate);
+					sendMsg(sender, autoTranslate);
 				} else {
 					final TextComponent autoTranslateOtherPlayer = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctAutoTranslateStartOtherPlayer", new String[] {targetPlayer.getName(), outLang}))
+									.content(getMsg("wwctAutoTranslateStartOtherPlayer", new String[] {targetPlayer.getName(), outLang}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage(sender, autoTranslateOtherPlayer);
+					sendMsg(sender, autoTranslateOtherPlayer);
 					final TextComponent autoTranslate = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctAutoTranslateStart", new String[] {outLang}))
+									.content(getMsg("wwctAutoTranslateStart", new String[] {outLang}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage(Bukkit.getPlayer(UUID.fromString(inUUID)), autoTranslate);
+					sendMsg(Bukkit.getPlayer(UUID.fromString(inUUID)), autoTranslate);
 				}
 			} else {
                 if (targetIsSelf) {
                 	final TextComponent langToLang = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctLangToLangStart", new String[] {inLang, outLang}))
+									.content(getMsg("wwctLangToLangStart", new String[] {inLang, outLang}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage(sender, langToLang);
+					sendMsg(sender, langToLang);
 				} else {
 					final TextComponent langToLangOtherPlayer = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctLangToLangStartOtherPlayer", new String[] {targetPlayer.getName(), inLang, outLang}))
+									.content(getMsg("wwctLangToLangStartOtherPlayer", new String[] {targetPlayer.getName(), inLang, outLang}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage(sender, langToLangOtherPlayer);
+					sendMsg(sender, langToLangOtherPlayer);
 					final TextComponent langToLang = Component.text()
 							.append(Component.text()
-									.content(CommonDefinitions.getMessage("wwctLangToLangStart", new String[] {inLang, outLang}))
+									.content(getMsg("wwctLangToLangStart", new String[] {inLang, outLang}))
 									.color(NamedTextColor.LIGHT_PURPLE))
 							.build();
-					CommonDefinitions.sendMessage(Bukkit.getPlayer(UUID.fromString(inUUID)), langToLang);
+					sendMsg(Bukkit.getPlayer(UUID.fromString(inUUID)), langToLang);
 				}
 			}
 		} else {
 			if (inLang.equalsIgnoreCase("None")) {
 				final TextComponent autoTranslate = Component.text()
 						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcgAutoTranslateStart", new String[] {outLang}))
+								.content(getMsg("wwcgAutoTranslateStart", new String[] {outLang}))
 								.color(NamedTextColor.LIGHT_PURPLE))
 						.build();
 				for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
-					CommonDefinitions.sendMessage(eaPlayer, autoTranslate);
+					sendMsg(eaPlayer, autoTranslate);
 				}
-				CommonDefinitions.sendMessage(WorldwideChat.instance.getServer().getConsoleSender(), autoTranslate);
+				sendMsg(WorldwideChat.instance.getServer().getConsoleSender(), autoTranslate);
 			} else {
 				final TextComponent langToLang = Component.text()
 						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcgLangToLangStart", new String[] {inLang, outLang}))
+								.content(getMsg("wwcgLangToLangStart", new String[] {inLang, outLang}))
 								.color(NamedTextColor.LIGHT_PURPLE))
 						.build();
 				for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
-					CommonDefinitions.sendMessage(eaPlayer, langToLang);
+					sendMsg(eaPlayer, langToLang);
 				}
-				CommonDefinitions.sendMessage(WorldwideChat.instance.getServer().getConsoleSender(), langToLang);
+				sendMsg(WorldwideChat.instance.getServer().getConsoleSender(), langToLang);
 			}
 		}
 		ActiveTranslator newTranslator = new ActiveTranslator(inUUID, "None", outLang);

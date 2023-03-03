@@ -365,9 +365,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async పని సమయం ముగిసింది విజయవంతంగా సెట్.
   wwcConfigGUIFatalAsyncAbortButton: Async టాస్క్ టైమ్అవుట్ మార్చండి
   wwcTimeoutException: మీ ఆదేశం ముగిసింది. దయచేసి మళ్ళీ ప్రయత్నించండి.
-  wwcBackupLangCodesWarning: వరల్డ్వైడ్చాట్ భాషలను పొందలేకపోయింది మరియు బదులుగా బ్యాకప్లను
-    ఉపయోగిస్తోంది. ఇది బహుశా ప్లగ్ఇన్ ప్రవర్తనను ప్రభావితం చేయదు, కానీ దయచేసి డెవలపర్ను
-    సంప్రదించండి.
   libreHttp400: చెడు అభ్యర్థన లిబ్రే అనువదించు పంపిన! మీరు చేయకూడని పని చేస్తుంటే
     తప్ప, మీరు దీన్ని పొందకూడదు. దయచేసి డెవలపర్ను సంప్రదించండి!
   wwcConfigGUILibreTranslateApiKeyButton: మార్చు ఉచిత అనువదించు API కీ
@@ -423,3 +420,16 @@ Messages:
     మార్చబడింది.
   wwcConfigConversationMongoOptionalArgsCleared: ఐచ్ఛిక వాదనలు విజయవంతంగా క్లియర్.
   wwcConfigGUIMongoPortButton: MongoDB పోర్ట్ మార్చండి
+  wwcConfigInvalidFatalAsyncTimeout: చెల్లని ప్రాణాంతకం async సమయం ముగిసింది సెట్.
+    10 సెకన్లకు డిఫాల్టింగ్...
+  libreHttp500: మీరు ఎంచుకున్న ఇన్పుట్ మరియు అవుట్పుట్ భాషా జతకు మద్దతు లేదు. దయచేసి
+    వేరే భాషా సెట్ను ఎంచుకోండి!
+  wwcConfigGUIDeepLTranslateButton: డీప్ఎల్ ట్రాన్స్లేట్ను టోగుల్ చేయండి
+  wwcConfigConversationDeepLTranslateToggleSuccess: డీప్ఎల్ ట్రాన్స్లేట్ విజయవంతంగా
+    టోగుల్ చేయబడింది. మార్పులు అమలులోకి రావడానికి రీలోడ్ చేయండి.
+  wwcConfigGUIDeepLTranslateApiKeyButton: DeepL అనువదించు API కీ మార్చండి
+  wwcConfigGUIToggleDeepLTranslateButton: డీప్ఎల్ ట్రాన్స్లేట్ను టోగుల్ చేయండి
+  wwcConfigConversationDeepLTranslateApiKeySuccess: డీప్ఎల్ API కీ విజయవంతంగా సెట్
+    చేయబడింది.
+  wwcConfigConversationDeepLTranslateApiKeyInput: ప్రస్తుత API కీ %i. DeepL కొరకు
+    దయచేసి API కీని ఇన్పుట్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.

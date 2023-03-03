@@ -16,6 +16,7 @@ import java.util.concurrent.TimeoutException;
 import javax.net.ssl.HttpsURLConnection;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -25,11 +26,14 @@ import org.apache.http.message.BasicHeader;
 import org.apache.http.protocol.HTTP;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
-import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 
 public class LibreTranslation extends BasicTranslation {
 
@@ -77,7 +81,8 @@ public class LibreTranslation extends BasicTranslation {
 				
 				int listResponseCode = conn.getResponseCode();
 				
-				List<SupportedLanguageObject> outList = new ArrayList<SupportedLanguageObject>();
+				List<SupportedLang> outLangList = new ArrayList<SupportedLang>();
+				List<SupportedLang> inLangList = new ArrayList<SupportedLang>();
 				if (listResponseCode == 200) {
 					// Scan response
 					String inLine = "";
@@ -89,25 +94,23 @@ public class LibreTranslation extends BasicTranslation {
 				    
 				    scanner.close();
 				    
+				    // Get lang code/name, remove spaces from name
 				    JsonElement jsonTree = JsonParser.parseString(inLine);
 					for (JsonElement element : jsonTree.getAsJsonArray()) {
 						JsonObject eaProperty = (JsonObject) element;
-						outList.add(new SupportedLanguageObject(
+						SupportedLang currLang = new SupportedLang(
 								eaProperty.get("code").getAsString(),
-								eaProperty.get("name").getAsString()));
+								StringUtils.deleteWhitespace(eaProperty.get("name").getAsString()));
+						outLangList.add(currLang);
+						inLangList.add(currLang);
 					}
 				} else {
 					checkError(listResponseCode);
 				}
 				
 				/* Parse languages */
-				main.setSupportedTranslatorLanguages(outList);
-				
-				if (outList.size() == 0) {
-					main.getLogger().warning(CommonDefinitions.getMessage("wwcBackupLangCodesWarning"));
-					CommonDefinitions.sendDebugMessage("---> Using backup codes!!! Fix this!!! <---");
-					setBackupCodes();
-				}
+				main.setOutputLangs(outLangList);
+				main.setInputLangs(inLangList);
 
 				/* Setup test translation */
 				inputLang = "en";
@@ -115,15 +118,16 @@ public class LibreTranslation extends BasicTranslation {
 				textToTranslate = "How are you?";
 			}
 			
-			/* Convert input + output lang to lang code because this API is funky, man */
-			if (!isInitializing && !(inputLang.equals("None"))
-					&& !CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode().equals(inputLang)) {
-				inputLang = CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode();
+			/* Get language code of current input/output language. 
+			 * APIs generally recognize language codes (en, es, etc.)
+			 * instead of full names (English, Spanish) */
+			if (!isInitializing) {
+				if (!inputLang.equals("None")) {
+					inputLang = getSupportedTranslatorLang(inputLang, "in").getLangCode();
+				}
+				outputLang = getSupportedTranslatorLang(outputLang, "out").getLangCode();
 			}
-			if (!isInitializing && !CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
-				outputLang = CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode();
-			}
-
+			
 			/* Detect inputLang */
 			if (inputLang.equals("None")) { // if we do not know the input
 				/* Craft detection request */
@@ -148,7 +152,7 @@ public class LibreTranslation extends BasicTranslation {
 	                String result = jsonTree.getAsJsonArray().get(0).getAsJsonObject().get("language").getAsString();
 				    inputLang = result;
 	            } else {
-	            	CommonDefinitions.sendDebugMessage("Failed..." + statusCode);
+	            	debugMsg("Failed..." + statusCode);
 	            	checkError(statusCode);
 	            }
 			}
@@ -177,7 +181,7 @@ public class LibreTranslation extends BasicTranslation {
                 String result = jsonTree.getAsJsonObject().get("translatedText").getAsString();
 			    return result;
             } else {
-            	CommonDefinitions.sendDebugMessage("Failed..." + statusCode);
+            	debugMsg("Failed..." + statusCode);
             	checkError(statusCode);
             }
 
@@ -190,15 +194,16 @@ public class LibreTranslation extends BasicTranslation {
 		case 400:
 		case 403:
 		case 429:
-			throw new Exception(CommonDefinitions.getMessage("libreHttp" + in));
+		case 500:
+			throw new Exception(getMsg("libreHttp" + in));
 		default:
-			throw new Exception(CommonDefinitions.getMessage("libreHttpUnknown", new String[] {in + ""}));
+			throw new Exception(getMsg("libreHttpUnknown", new String[] {in + ""}));
 		}
 	}
 	
 	private String appendJsonEnding(String baseJson) {
 		if (System.getProperty("LIBRE_API_KEY") != null && !System.getProperty("LIBRE_API_KEY").equals("")) {
-			CommonDefinitions.sendDebugMessage("Using api key...");
+			debugMsg("Using api key...");
         	baseJson += ",\"api_key\":\"" + System.getProperty("LIBRE_API_KEY") + "\"}";
         } else {
         	baseJson += "}";

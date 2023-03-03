@@ -7,7 +7,9 @@ import org.bukkit.entity.Player;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.configuration.MenuGui.CONFIG_GUI_TAGS;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.genericConfigConvo;
 
 import net.md_5.bungee.api.ChatColor;
 
@@ -20,12 +22,12 @@ public class GoogleSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationGoogleTranslateAPIKeyInput", new String[] {main.getConfigManager().getMainConfig().getString("Translator.googleTranslateAPIKey")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationGoogleTranslateAPIKeyInput", new String[] {main.getConfigManager().getMainConfig().getString("Translator.googleTranslateAPIKey")});
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return CommonDefinitions.genericConfigConversation(!input.equals("0"), context, "wwcConfigConversationGoogleTranslateAPIKeySuccess", 
+			return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationGoogleTranslateAPIKeySuccess", 
 					new String[] {"Translator.googleTranslateAPIKey", "Translator.useGoogleTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv);
 		}
 	}

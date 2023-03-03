@@ -379,9 +379,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Časový údaj úlohy Async úspešne nastavený.
   wwcConfigGUIFatalAsyncAbortButton: Zmeniť časový interval úloh Async
   wwcTimeoutException: Čas vášho velenia vypršal. Prosím, skúste to znova.
-  wwcBackupLangCodesWarning: WorldwideChat nebol schopný načítať jazyky a namiesto
-    toho používa zálohy. To pravdepodobne nebude mať vplyv na správanie pluginu, ale
-    obráťte sa na vývojára.
   libreHttp400: Zlá požiadavka zaslaná Libre Translate! Ak nerobíte niečo, čo by ste
     nemali, nemali by ste to dostať. Kontaktujte vývojára!
   wwcConfigGUILibreTranslateApiKeyButton: Zmena bezplatného prekladu API kľúča
@@ -436,3 +433,15 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: Voliteľné argumenty boli úspešne
     vymazané.
   wwcConfigGUIMongoPortButton: Zmeniť port MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Neplatný fatálny async timeout set. Predvolené
+    na 10 sekúnd...
+  libreHttp500: Váš vybraný vstupný a výstupný jazykový pár nie je podporovaný. Prosím,
+    vyberte inú jazykovú sadu!
+  wwcConfigGUIDeepLTranslateButton: Toggle DeepL Preložiť
+  wwcConfigConversationDeepLTranslateToggleSuccess: Úspešne prepínal DeepL Translate.
+    Znovu načítať, aby sa zmeny prejavili.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Zmeniť DeepL Translate API kľúč
+  wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Preložiť
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API kľúč úspešne nastaviť.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Aktuálny kľúč API je %i. Zadajte
+    prosím kľúč API pre DeepL alebo zadajte 0, aby ste sa vrátili späť.

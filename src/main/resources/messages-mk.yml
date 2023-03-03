@@ -384,9 +384,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async задача тајмаут постави успешно.
   wwcConfigGUIFatalAsyncAbortButton: Промена Async Задача тајмаут
   wwcTimeoutException: Вашата команда темпирана. Ве молиме обидете се повторно.
-  wwcBackupLangCodesWarning: WorldwideChat не беше во можност да го донесам јазици,
-    и е наместо користење на бекап. Ова веројатно нема да влијае на однесувањето на
-    приклучокот, но ве молиме контактирајте го инвеститорот.
   libreHttp400: Лошо барање испратено до Либре Преведете! Освен ако не правите нешто
     што не треба, не треба да го добиете ова. Ве молиме контактирајте го инвеститорот!
   wwcConfigGUILibreTranslateApiKeyButton: Промена Слободен Преведете API клуч
@@ -442,3 +439,15 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: Факултативните аргументи успешно
     се расчистуваат.
   wwcConfigGUIMongoPortButton: Промена на пристаништето MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Неважечки фатални async тајмаут сет. Неисправување
+    до 10 секунди...
+  libreHttp500: Вашиот избран влезен и излезен јазичен пар не е поддржан. Ве молиме
+    изберете друг јазик во собата!
+  wwcConfigGUIDeepLTranslateButton: Префрли DeepL Преведи
+  wwcConfigConversationDeepLTranslateToggleSuccess: Успешно префрли DeepL Преведи.
+    Вчитај повторно за промените да стапат на сила.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Промена DeepL Преведете API клуч
+  wwcConfigGUIToggleDeepLTranslateButton: Префрли DeepL Преведи
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API клуч сет успешно.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Тековниот API клуч е %i Ве молиме
+    внесете API клуч за DeepL, или напишете 0 за да се вратите назад.

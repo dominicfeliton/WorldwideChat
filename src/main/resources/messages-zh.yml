@@ -289,7 +289,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: 异步任务超时设置成功。
   wwcConfigGUIFatalAsyncAbortButton: 更改异步任务超时
   wwcTimeoutException: 你的命令已超时。请再试一次。
-  wwcBackupLangCodesWarning: WorldwideChat 无法获取语言，而是使用备份。这可能不会影响插件的行为，但请联系开发者。
   libreHttp400: 向 Libre Translate 发送了错误请求除非你正在做一些你不应该做的事情，否则你不应该得到这个。请联系开发者！
   wwcConfigGUILibreTranslateApiKeyButton: 更改 Libre 翻译 API 密钥
   libreHttp403: 缺少 Libre 翻译 API 密钥，或者你被禁止进入服务器！
@@ -330,3 +329,12 @@ Messages:
   wwcConfigConversationMongoOptionalArgsSuccess: 成功更改了可选的 MongoDB 参数。
   wwcConfigConversationMongoOptionalArgsCleared: 可选参数已成功清除。
   wwcConfigGUIMongoPortButton: 更改 MongoDB 端口
+  wwcConfigInvalidFatalAsyncTimeout: 设置的致命异步超时无效。默认为 10 秒...
+  libreHttp500: 不支持您选择的输入和输出语言对。请选择其他语言集！
+  wwcConfigGUIDeepLTranslateButton: 切换 DeepL 翻译
+  wwcConfigConversationDeepLTranslateToggleSuccess: 成功切换了 DeepL 翻译。重新加载以使更改生效。
+  wwcConfigGUIDeepLTranslateApiKeyButton: 更改 DeepL 翻译 API 密钥
+  wwcConfigGUIToggleDeepLTranslateButton: 切换 DeepL 翻译
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API 密钥设置成功。
+  wwcConfigConversationDeepLTranslateApiKeyInput: 当前 API 密钥是 %i。请输入 DeepL 的 API 密钥，或者键入
+    0 返回。

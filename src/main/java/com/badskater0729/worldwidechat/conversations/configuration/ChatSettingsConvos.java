@@ -6,13 +6,15 @@ import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Player;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 
 import fr.minuskube.inv.SmartInventory;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.md_5.bungee.api.ChatColor;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
 
 public class ChatSettingsConvos {
 
@@ -32,20 +34,20 @@ public class ChatSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + CommonDefinitions.getMessage("wwcConfigConversationOverrideTextChange");
+			return ChatColor.AQUA + getMsg("wwcConfigConversationOverrideTextChange");
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
 			if (!input.equals("0")) {
-				main.getConfigManager().getMessagesConfig().set("Overrides." + currentOverrideName, input);
+				main.getConfigManager().getMsgsConfig().set("Overrides." + currentOverrideName, input);
 				main.addPlayerUsingConfigurationGUI(((Player) context.getForWhom()).getUniqueId());
 				final TextComponent successfulChange = Component.text()
 						.append(Component.text()
-								.content(CommonDefinitions.getMessage("wwcConfigConversationOverrideTextChangeSuccess"))
+								.content(getMsg("wwcConfigConversationOverrideTextChangeSuccess"))
 								.color(NamedTextColor.GREEN))
 						.build();
-				CommonDefinitions.sendMessage((Player)context.getForWhom(), successfulChange);
+				sendMsg((Player)context.getForWhom(), successfulChange);
 				main.getConfigManager().saveMessagesConfig(true);
 			}
 			previousInventory.open((Player)context.getForWhom());

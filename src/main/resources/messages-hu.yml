@@ -378,9 +378,6 @@ Messages:
     beállítva.
   wwcConfigGUIFatalAsyncAbortButton: Async Task Timeout módosítása
   wwcTimeoutException: A parancsnoksága időtúllépés volt. Kérem, próbálja újra.
-  wwcBackupLangCodesWarning: A WorldwideChat nem tudta letölteni a nyelveket, és ehelyett
-    biztonsági mentéseket használ. Ez valószínűleg nem befolyásolja a plugin viselkedését,
-    de kérjük, vegye fel a kapcsolatot a fejlesztővel.
   libreHttp400: Rossz kérés elküldve a Libre Fordítónak! Hacsak nem csinálsz valamit,
     amit nem szabad, ezt nem szabad megkapnod. Kérjük, lépjen kapcsolatba a fejlesztővel!
   wwcConfigGUILibreTranslateApiKeyButton: Change Libre Fordítás API Key
@@ -436,3 +433,15 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: Az opcionális argumentumok sikeresen
     törlődtek.
   wwcConfigGUIMongoPortButton: MongoDB port módosítása
+  wwcConfigInvalidFatalAsyncTimeout: Érvénytelen halálos aszinkron időtúllépés beállítása.
+    Alapértelmezés szerint 10 másodperc...
+  libreHttp500: A kiválasztott bemeneti és kimeneti nyelvpár nem támogatott. Kérjük,
+    válasszon másik nyelvi készletet!
+  wwcConfigGUIDeepLTranslateButton: Toggle DeepL fordítás
+  wwcConfigConversationDeepLTranslateToggleSuccess: Sikeresen váltotta DeepL Translate.
+    Töltse be újra a módosítások életbe lépését.
+  wwcConfigGUIDeepLTranslateApiKeyButton: DeepL Translate API kulcs módosítása
+  wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL fordítás
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API kulcs beállítása sikeresen.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Az aktuális API-kulcs %i. Adjon
+    meg egy API-kulcsot a DeepL-hez, vagy írja be a 0 értéket a visszalépéshez.

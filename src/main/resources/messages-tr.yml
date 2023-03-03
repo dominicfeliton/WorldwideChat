@@ -361,9 +361,6 @@ Messages:
     ayarlandı.
   wwcConfigGUIFatalAsyncAbortButton: Zaman Eşzamanzamanlama Görev Zaman Aşımı Değiştir
   wwcTimeoutException: Komutunuz zaman aşımına uğradı Lütfen tekrar deneyin.
-  wwcBackupLangCodesWarning: WorldwideChat dilleri getiremedi, ve bunun yerine yedekleme
-    kullanıyor. Bu muhtemelen eklenti davranışını etkilemez, ancak lütfen geliştiriciyle
-    iletişime geçin.
   libreHttp400: Libre Translate"e kötü istek gönderildi! Yapmamanız gereken bir şey
     yapmıyorsanız, bunu almamalısın. Lütfen geliştiriciyle iletişime geçin!
   wwcConfigGUILibreTranslateApiKeyButton: Değiştir Ücretsiz API Anahtarı Çevir
@@ -421,3 +418,15 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: İsteğe bağlı bağımsız değişkenler
     başarıyla temizlendi.
   wwcConfigGUIMongoPortButton: MongoDB Bağlantı Noktasını Değiştir
+  wwcConfigInvalidFatalAsyncTimeout: Geçersiz ölümcül zaman aşımı ayarlandı. Varsayılan
+    olarak 10 saniye...
+  libreHttp500: Seçtiğiniz giriş ve çıkış dili çifti desteklenmiyor. Lütfen farklı
+    bir dil seti seçin!
+  wwcConfigGUIDeepLTranslateButton: Toggle DeepL Çevir
+  wwcConfigConversationDeepLTranslateToggleSuccess: DeepL Translate başarıyla değiştirildi.
+    Değişikliklerin etkili olması için yeniden yükleyin.
+  wwcConfigGUIDeepLTranslateApiKeyButton: DeepL Çevir API Anahtarını Değiştir
+  wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Çevir
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API anahtarı başarıyla ayarlandı.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Geçerli API anahtarı %i. Lütfen
+    DeepL için bir API anahtarı girin veya geri dönmek için 0 yazın.

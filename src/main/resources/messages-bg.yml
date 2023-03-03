@@ -378,9 +378,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async задача изчакване настроен успешно.
   wwcConfigGUIFatalAsyncAbortButton: Промяна на изчакване на задачи за асинхрон
   wwcTimeoutException: Командата ти е изчерпана. Моля, опитайте отново.
-  wwcBackupLangCodesWarning: WorldwideChat не успя да донесе езици и вместо това използва
-    резервни копия. Това вероятно няма да повлияе на поведението на приставките, но
-    моля свържете се с разработчика.
   libreHttp400: Лошо искане изпратено до Libre Translate! Освен ако не правите нещо,
     което не трябва, не трябва да получавате това. Моля, свържете се с разработчика!
   wwcConfigGUILibreTranslateApiKeyButton: Промяна на свободен превод на API ключ
@@ -437,3 +434,15 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: Незадължителните аргументи са изчистени
     успешно.
   wwcConfigGUIMongoPortButton: Промяна на пристанището MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Невалиден фатален асинхронен комплект за изчакване.
+    Неизпълнение до 10 секунди...
+  libreHttp500: Избраната от Вас двойка език за въвеждане и изход не се поддържа.
+    Моля, изберете различен набор от езици!
+  wwcConfigGUIDeepLTranslateButton: Превключване на DeepL Превод
+  wwcConfigConversationDeepLTranslateToggleSuccess: Успешно прекъсна DeepL Превод.
+    Презареждане, за да влязат в сила промените.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Промяна на DeepL Превод API ключ
+  wwcConfigGUIToggleDeepLTranslateButton: Превключване на DeepL Превод
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API ключ набор успешно.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Текущият API ключ е %i. Моля, въведете
+    API ключ за DeepL или въведете 0, за да се върнете.

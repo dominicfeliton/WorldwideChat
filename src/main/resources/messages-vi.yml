@@ -375,9 +375,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async task timeout thiết lập thành công.
   wwcConfigGUIFatalAsyncAbortButton: Thay đổi Async Task Timeout
   wwcTimeoutException: Lệnh của bạn đã hết thời gian. Vui lòng thử lại.
-  wwcBackupLangCodesWarning: WorldwideChat đã không thể lấy ngôn ngữ, và thay vào
-    đó là sử dụng bản sao lưu. Điều này có thể sẽ không ảnh hưởng đến hành vi của
-    plugin, nhưng vui lòng liên hệ với nhà phát triển.
   libreHttp400: Yêu cầu xấu gửi đến Libre Dịch! Trừ khi bạn đang làm điều gì đó mà
     bạn không nên, bạn không nên nhận được điều này. Vui lòng liên hệ với nhà phát
     triển!
@@ -432,3 +429,16 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: Các đối số tùy chọn đã xóa thành
     công.
   wwcConfigGUIMongoPortButton: Thay đổi cổng MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Không hợp lệ gây tử vong async thời gian chờ
+    đặt. Mặc định đến 10 giây...
+  libreHttp500: Cặp ngôn ngữ nhập và đầu ra đã chọn của bạn không được hỗ trợ. Vui
+    lòng chọn một bộ ngôn ngữ khác!
+  wwcConfigGUIDeepLTranslateButton: Bật tắt DeepL Translate
+  wwcConfigConversationDeepLTranslateToggleSuccess: Đã bật thành công DeepL Translate.
+    Tải lại để các thay đổi có hiệu lực.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Thay đổi DeepL Translate API Key
+  wwcConfigGUIToggleDeepLTranslateButton: Bật tắt DeepL Translate
+  wwcConfigConversationDeepLTranslateApiKeySuccess: Thiết lập khóa DeepL API thành
+    công.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Khoá API hiện tại là %i. Vui lòng
+    nhập khóa API cho DeepL, hoặc gõ 0 để quay lại.

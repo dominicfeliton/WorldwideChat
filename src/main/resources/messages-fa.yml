@@ -362,9 +362,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: زمان کار Async با موفقیت تنظیم.
   wwcConfigGUIFatalAsyncAbortButton: تغییر زمان تکلیف Async
   wwcTimeoutException: فرمان شما به پایان رسید. لطفا دوباره امتحان کنید
-  wwcBackupLangCodesWarning: WorldwideChat قادر به واکشی زبان بود، و به جای آن با
-    استفاده از پشتیبان گیری. این احتمالا بر رفتار پلاگین تاثیر نمی گذارد، اما لطفا
-    با توسعه دهنده تماس بگیرید.
   libreHttp400: درخواست بد به Libre Translate ارسال شد! مگر اینکه شما در حال انجام
     کاری است که شما نباید, شما باید این را دریافت نمی. لطفا با توسعه دهنده تماس بگیرید!
   wwcConfigGUILibreTranslateApiKeyButton: تغییر رایگان ترجمه کلید API
@@ -419,3 +416,16 @@ Messages:
     موفقیت تغییر داد.
   wwcConfigConversationMongoOptionalArgsCleared: استدلال اختیاری با موفقیت پاک.
   wwcConfigGUIMongoPortButton: تغییر بندر مانگودیبی
+  wwcConfigInvalidFatalAsyncTimeout: نامعتبر مجموعه ایست async کشنده. پیش فرض به 10
+    ثانیه...
+  libreHttp500: جفت زبان ورودی و خروجی انتخاب شده شما پشتیبانی نمی شود. لطفا مجموعه
+    ای از زبان های مختلف را انتخاب کنید!
+  wwcConfigGUIDeepLTranslateButton: تعویض ترجمه DeepL
+  wwcConfigConversationDeepLTranslateToggleSuccess: DeepL ترجمه را با موفقیت جابجا
+    کرد. بازنگری برای تغییرات به اثر.
+  wwcConfigGUIDeepLTranslateApiKeyButton: تغییر کلید API ترجمه DeepL
+  wwcConfigGUIToggleDeepLTranslateButton: تعویض ترجمه DeepL
+  wwcConfigConversationDeepLTranslateApiKeySuccess: کلید DeepL API با موفقیت تنظیم
+    شد.
+  wwcConfigConversationDeepLTranslateApiKeyInput: کلید API فعلی٪ i است لطفا یک کلید
+    API برای DeepL وارد کنید، یا برای بازگشت به عقب، 0 را تایپ کنید.

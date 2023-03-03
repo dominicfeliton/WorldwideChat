@@ -363,9 +363,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async тапсырма уақыты сәтті орнатылған.
   wwcConfigGUIFatalAsyncAbortButton: Async тапсырмасының уақытын өзгерту
   wwcTimeoutException: Сіздің командаңыз орайластырылған. Қайтадан көріңіз.
-  wwcBackupLangCodesWarning: WorldwideChat тілдерді алу үшін алмады, және оның орнына
-    сақтық көшірмелерін пайдаланып отыр. Бұл плагин мінез-құлқына әсер етпейді, бірақ
-    әзірлеушіге хабарласыңыз.
   libreHttp400: Жаман сұрау Libre Translate жіберілді! Егер сіз қажет емес нәрсе жасамасаңыз,
     мұны алмауыңыз керек. Әзірлеушіге хабарласыңыз!
   wwcConfigGUILibreTranslateApiKeyButton: Өзгерту Тегін API кілт аудару
@@ -420,3 +417,15 @@ Messages:
     өзгертті.
   wwcConfigConversationMongoOptionalArgsCleared: Қосымша дәлелдер сәтті тазартылды.
   wwcConfigGUIMongoPortButton: MongoDB порты
+  wwcConfigInvalidFatalAsyncTimeout: Жарамсыз өлімге async тайм-аут жиынтығы. 10 секундқа
+    дейін дефолт...
+  libreHttp500: Таңдалған кіріс және шығыс тіл жұбына қолдау көрсетілмейді. Басқа
+    тіл жиынтығын таңдаңыз!
+  wwcConfigGUIDeepLTranslateButton: DeepL аудармасын ауыстырыңыз
+  wwcConfigConversationDeepLTranslateToggleSuccess: DeepL аудармасын сәтті ауыстырды.
+    Өзгерістердің күшіне енуі үшін қайта жүктеңіз.
+  wwcConfigGUIDeepLTranslateApiKeyButton: DeepL аудару API кілтін өзгерту
+  wwcConfigGUIToggleDeepLTranslateButton: DeepL аудармасын ауыстырыңыз
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API кілті сәтті орнатылды.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Ағымдағы API кілті %i болып табылады.
+    DeepL үшін API кілтін енгізіңіз немесе кері қайту үшін 0 теріңіз.

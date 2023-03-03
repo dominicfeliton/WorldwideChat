@@ -17,7 +17,7 @@ public class PlayerRecord {
 			int successfulTranslations) {
 		this.attemptedTranslations = attemptedTranslations;
 		this.successfulTranslations = successfulTranslations;
-		this.lastTranslationTime = lastTranslationTime;
+		this.lastTranslationTime = lastTranslationTime;  
 		this.playerUUID = playerUUID;
 	}
 

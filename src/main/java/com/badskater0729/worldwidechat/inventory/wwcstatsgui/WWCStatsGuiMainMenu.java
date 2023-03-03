@@ -6,7 +6,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.badskater0729.worldwidechat.util.PlayerRecord;
 import com.cryptomorin.xseries.XMaterial;
 
@@ -15,6 +14,8 @@ import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import net.md_5.bungee.api.ChatColor;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
 
 public class WWCStatsGuiMainMenu implements InventoryProvider {
 
@@ -30,7 +31,7 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 		return SmartInventory.builder().id("statsMainMenu")
 				.provider(new WWCStatsGuiMainMenu(targetPlayerUUID)).size(5, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwcsTitle", new String[] {targetPlayerName}))
+				.title(ChatColor.BLUE + getMsg("wwcsTitle", new String[] {targetPlayerName}))
 				.build();
 	}
 	
@@ -52,12 +53,12 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 			if (main.isActiveTranslator(targetPlayerUUID)) {
 				isActiveTranslator = XMaterial.GREEN_CONCRETE.parseItem();
 				ItemMeta isActiveTranslatorMeta = isActiveTranslator.getItemMeta();
-				isActiveTranslatorMeta.setDisplayName(CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713"}));
+				isActiveTranslatorMeta.setDisplayName(getMsg("wwcsIsActiveTranslator", new String[] {ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713"}));
 				isActiveTranslator.setItemMeta(isActiveTranslatorMeta);
 			} else {
 				isActiveTranslator = XMaterial.RED_CONCRETE.parseItem();
 				ItemMeta isActiveTranslatorMeta = isActiveTranslator.getItemMeta();
-				isActiveTranslatorMeta.setDisplayName(CommonDefinitions.getMessage("wwcsIsActiveTranslator", new String[] {ChatColor.BOLD + "" + ChatColor.RED + "\u2717"}));
+				isActiveTranslatorMeta.setDisplayName(getMsg("wwcsIsActiveTranslator", new String[] {ChatColor.BOLD + "" + ChatColor.RED + "\u2717"}));
 				isActiveTranslator.setItemMeta(isActiveTranslatorMeta);
 			}
 			contents.set(2, 1, ClickableItem.empty(isActiveTranslator));
@@ -65,21 +66,21 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 			/* Attempted translations button */
 			ItemStack attemptedTranslations = XMaterial.WRITABLE_BOOK.parseItem();
 			ItemMeta attemptedTranslationsMeta = attemptedTranslations.getItemMeta();
-			attemptedTranslationsMeta.setDisplayName(CommonDefinitions.getMessage("wwcsAttemptedTranslations", new String[] {ChatColor.AQUA + "" + currRecord.getAttemptedTranslations()}));
+			attemptedTranslationsMeta.setDisplayName(getMsg("wwcsAttemptedTranslations", new String[] {ChatColor.AQUA + "" + currRecord.getAttemptedTranslations()}));
 			attemptedTranslations.setItemMeta(attemptedTranslationsMeta);
 			contents.set(2, 3, ClickableItem.empty(attemptedTranslations));
 			
 			/* Successful translations button */
 			ItemStack successfulTranslations = XMaterial.WRITTEN_BOOK.parseItem();
 			ItemMeta successfulTranslationsMeta = successfulTranslations.getItemMeta();
-			successfulTranslationsMeta.setDisplayName(CommonDefinitions.getMessage("wwcsSuccessfulTranslations", new String[] {ChatColor.AQUA + "" + currRecord.getSuccessfulTranslations()}));
+			successfulTranslationsMeta.setDisplayName(getMsg("wwcsSuccessfulTranslations", new String[] {ChatColor.AQUA + "" + currRecord.getSuccessfulTranslations()}));
 			successfulTranslations.setItemMeta(successfulTranslationsMeta);
 			contents.set(2, 5, ClickableItem.empty(successfulTranslations));
 			
 			/* Last translation time button */
 			ItemStack lastTranslationTime = XMaterial.CLOCK.parseItem();
 			ItemMeta lastTranslationTimeMeta = lastTranslationTime.getItemMeta();
-			lastTranslationTimeMeta.setDisplayName(CommonDefinitions.getMessage("wwcsLastTranslationTime", new String[] {ChatColor.AQUA + "" + currRecord.getLastTranslationTime()}));
+			lastTranslationTimeMeta.setDisplayName(getMsg("wwcsLastTranslationTime", new String[] {ChatColor.AQUA + "" + currRecord.getLastTranslationTime()}));
 			lastTranslationTime.setItemMeta(lastTranslationTimeMeta);
 			contents.set(2, 7, ClickableItem.empty(lastTranslationTime));
 	    } catch (Exception e) {

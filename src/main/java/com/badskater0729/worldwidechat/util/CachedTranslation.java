@@ -65,7 +65,7 @@ public class CachedTranslation implements Comparable<CachedTranslation> {
 	@Override
 	public int hashCode() {
 		// TODO: String references may change depending on how Java handles strings
-		//CommonDefinitions.sendDebugMessage(inputLang);
+		//CommonRefs.debugMsg(inputLang);
 		return Objects.hash(inputLang, outputLang, inputPhrase);
 	}
 }

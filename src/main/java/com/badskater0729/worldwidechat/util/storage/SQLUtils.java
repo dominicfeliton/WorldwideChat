@@ -5,8 +5,9 @@ import java.sql.SQLException;
 import java.util.List;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.zaxxer.hikari.HikariDataSource;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
 
 public class SQLUtils {
 	
@@ -34,7 +35,7 @@ public class SQLUtils {
 			for (String eaArg : list) {
 				if (eaArg.indexOf("=") != -1) {
 					testSource.addDataSourceProperty(eaArg.substring(0, eaArg.indexOf("=")), eaArg.substring(eaArg.indexOf("=")+1));
-				    CommonDefinitions.sendDebugMessage(eaArg.substring(0, eaArg.indexOf("=")) + ":" + eaArg.substring(eaArg.indexOf("=")+1));
+				    debugMsg(eaArg.substring(0, eaArg.indexOf("=")) + ":" + eaArg.substring(eaArg.indexOf("=")+1));
 				}
 			}
 		}

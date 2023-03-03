@@ -367,9 +367,6 @@ Messages:
     ਗਿਆ.
   wwcConfigGUIFatalAsyncAbortButton: ਅਸਿੰਕ ਟਾਸਕ ਟਾਈਮਆਉਟ ਬਦਲੋ
   wwcTimeoutException: ਤੁਹਾਡਾ ਹੁਕਮ ਬਾਹਰ ਸਮਾਪਤ. ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.
-  wwcBackupLangCodesWarning: WorldwideChat ਭਾਸ਼ਾ ਲਿਆਉਣ ਲਈ ਅਸਮਰੱਥ ਸੀ, ਅਤੇ ਇਸ ਦੀ ਬਜਾਏ
-    ਬੈਕਅੱਪ ਵਰਤ ਰਿਹਾ ਹੈ. ਇਹ ਸ਼ਾਇਦ ਪਲੱਗਇਨ ਵਿਵਹਾਰ ਨੂੰ ਪ੍ਰਭਾਵਤ ਨਹੀਂ ਕਰੇਗਾ, ਪਰ ਕਿਰਪਾ ਕਰਕੇ
-    ਡਿਵੈਲਪਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ.
   libreHttp400: Libre ਅਨੁਵਾਦ ਨੂੰ ਭੇਜੀ ਗਈ ਮਾੜੀ ਬੇਨਤੀ! ਜਦ ਤੱਕ ਤੁਸੀਂ ਕੁਝ ਨਹੀਂ ਕਰ ਰਹੇ
     ਹੋ ਜੋ ਤੁਹਾਨੂੰ ਨਹੀਂ ਕਰਨਾ ਚਾਹੀਦਾ, ਤੁਹਾਨੂੰ ਇਹ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕਰਨਾ ਚਾਹੀਦਾ. ਕਿਰਪਾ ਕਰਕੇ
     ਡਿਵੈਲਪਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ!
@@ -424,3 +421,16 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: ਵਿਕਲਪਿਕ ਦਲੀਲਾਂ ਸਫਲਤਾਪੂਰਵਕ ਸਾਫ ਹੋ
     ਗਈਆਂ.
   wwcConfigGUIMongoPortButton: ਮੰਗੋਡੀਬੀ ਪੋਰਟ ਬਦਲੋ
+  wwcConfigInvalidFatalAsyncTimeout: ਗਲਤ ਘਾਤਕ ਅਸਿੰਕ ਟਾਈਮਆਉਟ ਸੈਟ. 10 ਸਕਿੰਟ ਤੱਕ ਡਿਫੌਲਟ
+    ਕਰਨਾ...
+  libreHttp500: ਤੁਹਾਡਾ ਚੁਣਿਆ ਇੰਪੁੱਟ ਅਤੇ ਆਉਟਪੁੱਟ ਭਾਸ਼ਾ ਜੋੜਾ ਸਹਿਯੋਗੀ ਨਹੀਂ ਹੈ. ਕਿਰਪਾ
+    ਕਰਕੇ ਇੱਕ ਵੱਖਰੀ ਭਾਸ਼ਾ ਸੈੱਟ ਚੁਣੋ!
+  wwcConfigGUIDeepLTranslateButton: ਬਦਲੋ DeepL ਅਨੁਵਾਦ
+  wwcConfigConversationDeepLTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਵਕ ਡੀਪੋਲ ਅਨੁਵਾਦ ਨੂੰ ਚਾਲੂ
+    ਕੀਤਾ. ਤਬਦੀਲੀਆਂ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigGUIDeepLTranslateApiKeyButton: ਦੀਪਐਲ ਦਾ ਅਨੁਵਾਦ API ਕੁੰਜੀ ਬਦਲੋ
+  wwcConfigGUIToggleDeepLTranslateButton: ਬਦਲੋ DeepL ਅਨੁਵਾਦ
+  wwcConfigConversationDeepLTranslateApiKeySuccess: ਡੀਪੋਲ ਏਪੀਆਈ ਕੁੰਜੀ ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ
+    ਕੀਤੀ ਗਈ.
+  wwcConfigConversationDeepLTranslateApiKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ
+    DepL ਲਈ ਇੱਕ API ਕੁੰਜੀ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।

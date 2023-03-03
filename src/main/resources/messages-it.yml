@@ -389,9 +389,6 @@ Messages:
     correttamente.
   wwcConfigGUIFatalAsyncAbortButton: Modifica timeout attività asincrona
   wwcTimeoutException: Il tuo comando è scaduto. Per favore riprova.
-  wwcBackupLangCodesWarning: WorldwideChat non è stato in grado di recuperare le lingue
-    e utilizza invece i backup. Questo probabilmente non influirà sul comportamento
-    del plugin, ma si prega di contattare lo sviluppatore.
   libreHttp400: Richiesta errata inviata a Libre Translate! A meno che tu non stia
     facendo qualcosa che non dovresti fare, non dovresti ottenerlo. Contatta lo sviluppatore!
   wwcConfigGUILibreTranslateApiKeyButton: Cambia chiave API Libre Translate
@@ -450,3 +447,15 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: Argomenti facoltativi cancellati
     correttamente.
   wwcConfigGUIMongoPortButton: Cambia porta MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Timeout asincrono fatale non valido. L'impostazione
+    predefinita è 10 secondi...
+  libreHttp500: La combinazione linguistica di input e output selezionata non è supportata.
+    Scegli un set di lingue diverso!
+  wwcConfigGUIDeepLTranslateButton: Attiva DeepL Translate
+  wwcConfigConversationDeepLTranslateToggleSuccess: DeepL Translate è stato attivato
+    con successo. Ricarica per rendere effettive le modifiche.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Cambia la chiave API di DeepL Translate
+  wwcConfigGUIToggleDeepLTranslateButton: Attiva DeepL Translate
+  wwcConfigConversationDeepLTranslateApiKeySuccess: Chiave API DeepL impostata correttamente.
+  wwcConfigConversationDeepLTranslateApiKeyInput: La chiave API corrente è %i. Inserisci
+    una chiave API per DeepL o digita 0 per tornare indietro.

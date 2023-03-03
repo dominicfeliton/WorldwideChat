@@ -375,9 +375,6 @@ Messages:
   wwcConfigGUIFatalAsyncAbortButton: Zmiana limitu czasu zadania asynchronnego
   wwcTimeoutException: Upłynnął limit czasu twojego polecenia. Proszę spróbować jeszcze
     raz.
-  wwcBackupLangCodesWarning: WorldwideChat nie mógł pobierać języków, i zamiast tego
-    używa kopii zapasowych. Prawdopodobnie nie wpłynie to na zachowanie wtyczki, ale
-    skontaktuj się z programistą.
   libreHttp400: Zła prośba wysłana do Libre Translate! Chyba że robisz coś, czego
     nie powinieneś, nie powinieneś tego dostać. Skontaktuj się z deweloperem!
   wwcConfigGUILibreTranslateApiKeyButton: Zmień klucz API Libre Translate
@@ -431,3 +428,16 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: Opcjonalne argumenty zostały pomyślnie
     usunięte.
   wwcConfigGUIMongoPortButton: Zmień port MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Nieprawidłowy krytyczny asynchroniczny limit
+    czasu ustawiony. Domyślnie 10 sekund...
+  libreHttp500: Wybrana para języków wejściowych i wyjściowych nie jest obsługiwana.
+    Proszę wybrać inny zestaw językowy!
+  wwcConfigGUIDeepLTranslateButton: Toggle DeepL Przetłumacz
+  wwcConfigConversationDeepLTranslateToggleSuccess: Pomyślnie przełączono DeepL Translate.
+    Załaduj ponownie, aby zmiany zaczęły obowiązywać.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Zmień klucz API DeepL Translate
+  wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Przetłumacz
+  wwcConfigConversationDeepLTranslateApiKeySuccess: Klucz API DeepL został pomyślnie
+    ustawiony.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Bieżący klucz API to %i. Wprowadź
+    klucz API dla DeepL lub wpisz 0, aby wrócić.

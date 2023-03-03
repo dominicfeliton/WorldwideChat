@@ -10,9 +10,10 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import org.apache.commons.lang3.StringUtils;
+
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
-import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.google.cloud.translate.Detection;
 import com.google.cloud.translate.Language;
 import com.google.cloud.translate.Translate;
@@ -20,6 +21,8 @@ import com.google.cloud.translate.Translate.TranslateOption;
 import com.google.cloud.translate.Translation;
 
 import com.google.cloud.translate.TranslateOptions;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 
 public class GoogleTranslation extends BasicTranslation {
 
@@ -57,26 +60,34 @@ public class GoogleTranslation extends BasicTranslation {
 				List<Language> allLanguages = translate.listSupportedLanguages();
 
 				/* Parse languages */
-				List<SupportedLanguageObject> outList = new ArrayList<SupportedLanguageObject>();
+				List<SupportedLang> outLangList = new ArrayList<SupportedLang>();
+				List<SupportedLang> inLangList = new ArrayList<SupportedLang>();
+				
 				for (Language eaLang : allLanguages) {
-					outList.add(new SupportedLanguageObject(eaLang.getCode(), eaLang.getName(), "", true, true));
+					// Remove spaces from language name
+					SupportedLang currLang = new SupportedLang(eaLang.getCode(), StringUtils.deleteWhitespace(eaLang.getName()), "");
+					outLangList.add(currLang);
+					inLangList.add(currLang);
 				}
 
 				/* Set languages list */
-				main.setSupportedTranslatorLanguages(outList);
+				main.setOutputLangs(outLangList);
+				main.setInputLangs(inLangList);
 
 				/* Setup test translation */
 				inputLang = "en";
 				outputLang = "es";
 				textToTranslate = "How are you?";
 			}
-			/* Convert input + output lang to lang code because this API is funky, man */
-			if (!isInitializing && !(inputLang.equals("None"))
-					&& !CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode().equals(inputLang)) {
-				inputLang = CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode();
-			}
-			if (!isInitializing && !CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
-				outputLang = CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode();
+			
+			/* Get language code of current input/output language. 
+			 * APIs generally recognize language codes (en, es, etc.)
+			 * instead of full names (English, Spanish) */
+			if (!isInitializing) {
+				if (!inputLang.equals("None")) {
+					inputLang = getSupportedTranslatorLang(inputLang, "in").getLangCode();
+				}
+				outputLang = getSupportedTranslatorLang(outputLang, "out").getLangCode();
 			}
 
 			/* Detect inputLang */

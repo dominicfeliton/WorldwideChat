@@ -7,11 +7,12 @@ import org.bson.BsonInt64;
 import org.bson.conversions.Bson;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
 import com.mongodb.MongoException;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
 
 public class MongoDBUtils {
 
@@ -35,7 +36,7 @@ public class MongoDBUtils {
 		if (list != null && list.size() > 0) {
 			for (String eaArg : list) {
 				url += "&" + eaArg.substring(0, eaArg.indexOf("=")) + "=" + eaArg.substring(eaArg.indexOf("=")+1);
-				CommonDefinitions.sendDebugMessage(eaArg.substring(0, eaArg.indexOf("=")) + ":" + eaArg.substring(eaArg.indexOf("=")+1));
+				debugMsg(eaArg.substring(0, eaArg.indexOf("=")) + ":" + eaArg.substring(eaArg.indexOf("=")+1));
 			}
 		}
 		MongoClient testClient = MongoClients.create(url);

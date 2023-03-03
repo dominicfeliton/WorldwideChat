@@ -10,7 +10,8 @@ import org.bukkit.inventory.meta.ItemMeta;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
+import com.badskater0729.worldwidechat.util.CommonRefs;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.cryptomorin.xseries.XMaterial;
 
 import fr.minuskube.inv.ClickableItem;
@@ -19,6 +20,10 @@ import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 
 public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 
@@ -36,7 +41,7 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 		return SmartInventory.builder().id("translateSourceLanguage")
 				.provider(new WWCTranslateGuiSourceLanguage(s, targetPlayerUUID)).size(6, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + CommonDefinitions.getMessage("wwctGUINewTranslationSource"))
+				.title(ChatColor.BLUE + getMsg("wwctGUINewTranslationSource"))
 				.build();
 	}
 
@@ -54,30 +59,33 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 			
 			/* Pagination: Lets you generate pages rather than set defined ones */
 			Pagination pagination = contents.pagination();
-			ClickableItem[] listOfAvailableLangs = new ClickableItem[main.getSupportedTranslatorLanguages().size()];
-
+			ClickableItem[] listOfAvailableLangs = new ClickableItem[main.getSupportedInputLangs().size()];
+			
 			/* Add each supported language from each respective translator */
-			for (int i = 0; i < main.getSupportedTranslatorLanguages().size(); i++) {
-				ItemStack currentLang = XMaterial.BOOK.parseItem();
-				ItemMeta currentLangMeta = currentLang.getItemMeta();
+			for (int i = 0; i < main.getSupportedInputLangs().size(); i++) {
+				ItemStack itemForLang = XMaterial.BOOK.parseItem();
+				ItemMeta itemForLangMeta = itemForLang.getItemMeta();
+				SupportedLang currLang = main.getSupportedInputLangs().get(i);
+				SupportedLang userLang = getSupportedTranslatorLang(currTranslator.getInLangCode(), "in");
+				
 				/* Add Glow Effect */
 				ArrayList<String> lore = new ArrayList<>();
-				if (selectedSourceLanguage.equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
-					WWCInventoryManager.addGlowEffect(currentLangMeta);
-					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
-				} else if (currTranslator.getInLangCode().equals(main.getSupportedTranslatorLanguages().get(i).getLangCode())) {
-					WWCInventoryManager.addGlowEffect(currentLangMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
+				if (selectedSourceLanguage.equalsIgnoreCase(currLang.getLangCode()) || selectedSourceLanguage.equalsIgnoreCase(currLang.getLangName())) {
+					WWCInventoryManager.addGlowEffect(itemForLangMeta);
+					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + getMsg("wwctGUISourceTranslationSelected"));
+				} else if (userLang.getLangCode().equalsIgnoreCase(currLang.getLangCode()) || userLang.getLangName().equalsIgnoreCase(currLang.getLangName())) {
+					WWCInventoryManager.addGlowEffect(itemForLangMeta);
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
-				currentLangMeta.setDisplayName(main.getSupportedTranslatorLanguages().get(i).getLangName());
-				if (!main.getSupportedTranslatorLanguages().get(i).getNativeLangName().equals("")) {
-					lore.add(main.getSupportedTranslatorLanguages().get(i).getNativeLangName());
+				itemForLangMeta.setDisplayName(currLang.getLangName());
+				if (!currLang.getNativeLangName().equals("")) {
+					lore.add(currLang.getNativeLangName());
 				}
-				lore.add(main.getSupportedTranslatorLanguages().get(i).getLangCode());
-				currentLangMeta.setLore(lore);
-				currentLang.setItemMeta(currentLangMeta);
-				String thisLangCode = main.getSupportedTranslatorLanguages().get(i).getLangCode();
-				listOfAvailableLangs[i] = ClickableItem.of(currentLang, e -> {
+				lore.add(currLang.getLangCode());
+				itemForLangMeta.setLore(lore);
+				itemForLang.setItemMeta(itemForLangMeta);
+				String thisLangCode = currLang.getLangCode();
+				listOfAvailableLangs[i] = ClickableItem.of(itemForLang, e -> {
 					WWCTranslateGuiTargetLanguage.getTargetLanguageInventory(thisLangCode, targetPlayerUUID)
 							.open(player);
 				});
@@ -94,16 +102,16 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 				ItemStack skipSourceButton = XMaterial.BOOKSHELF.parseItem();
 				ItemMeta skipSourceMeta = skipSourceButton.getItemMeta();
 				skipSourceMeta.setDisplayName(ChatColor.YELLOW
-						+ CommonDefinitions.getMessage("wwctGUIAutoDetectButton"));
+						+ getMsg("wwctGUIAutoDetectButton"));
 				
 				/* Add Glow Effect */
 				ArrayList<String> lore = new ArrayList<>();
 				if ((currTranslator.getInLangCode().equals("None"))) {
 					WWCInventoryManager.addGlowEffect(skipSourceMeta);
-					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceTranslationSelected"));
+					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + getMsg("wwctGUISourceTranslationSelected"));
 				} else if (selectedSourceLanguage.equalsIgnoreCase("None")) {
 					WWCInventoryManager.addGlowEffect(skipSourceMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + CommonDefinitions.getMessage("wwctGUISourceOrTargetTranslationAlreadyActive"));
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				skipSourceButton.setItemMeta(skipSourceMeta);
 				contents.set(5, 4, ClickableItem.of(skipSourceButton, e -> WWCTranslateGuiTargetLanguage

@@ -36,7 +36,7 @@ public class OldVersionOpenBook {
 	        Bukkit.getServer().getLogger().warning("Cannot force open book!");
 	        initialised = false;
 	    }
-	    if (CommonDefinitions.serverIsStopping()) initialised = false;
+	    if (CommonRefs.serverIsStopping()) initialised = false;
     }  
 	   
 	/**

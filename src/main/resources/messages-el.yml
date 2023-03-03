@@ -402,9 +402,6 @@ Messages:
     ασύγχρονης εργασίας.
   wwcConfigGUIFatalAsyncAbortButton: Αλλαγή χρονικού ορίου εργασίας ασύγχρονη
   wwcTimeoutException: Η εντολή σου έληξε. Παρακαλώ προσπαθήστε ξανά.
-  wwcBackupLangCodesWarning: WorldwideChat δεν ήταν δυνατή η λήψη γλωσσών, και αντ
-    'αυτού χρησιμοποιεί αντίγραφα ασφαλείας. Αυτό πιθανότατα δεν θα επηρεάσει τη συμπεριφορά
-    του plugin, αλλά παρακαλούμε επικοινωνήστε με τον προγραμματιστή.
   libreHttp400: Κακό αίτημα εστάλη στο Libre Μετάφραση! Αν δεν κάνετε κάτι που δεν
     πρέπει, δεν πρέπει να το πάρετε αυτό. Παρακαλούμε επικοινωνήστε με τον προγραμματιστή!
   wwcConfigGUILibreTranslateApiKeyButton: Αλλάξτε το κλειδί API μετάφρασης Libre
@@ -465,3 +462,15 @@ Messages:
   wwcConfigConversationMongoOptionalArgsCleared: Τα προαιρετικά ορίσματα διαγράφθηκαν
     με επιτυχία.
   wwcConfigGUIMongoPortButton: Αλλαγή θύρας MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Μη έγκυρο χρονικό όριο ανεπανόρθωτου ασύγχρονος.
+    Προεπιλογή σε 10 δευτερόλεπτα...
+  libreHttp500: Το επιλεγμένο ζεύγος γλωσσών εισόδου και εξόδου δεν υποστηρίζεται.
+    Παρακαλώ επιλέξτε ένα διαφορετικό σύνολο γλωσσών!
+  wwcConfigGUIDeepLTranslateButton: Εναλλαγή μετάφρασης DeepL
+  wwcConfigConversationDeepLTranslateToggleSuccess: Επιτυχής ενέγγει τη μετάφραση
+    DeepL. Επαναφόρτωση για να τεθούν σε ισχύ οι αλλαγές.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Αλλαγή κλειδιού API μετάφρασης DeepL
+  wwcConfigGUIToggleDeepLTranslateButton: Εναλλαγή μετάφρασης DeepL
+  wwcConfigConversationDeepLTranslateApiKeySuccess: Το κλειδί DeepL API ορίστηκε επιτυχώς.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Το τρέχον κλειδί API είναι %i. Εισαγάγετε
+    ένα κλειδί API για το DeepL ή πληκτρολογήστε 0 για να επιστρέψετε.

@@ -10,6 +10,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -18,11 +19,16 @@ import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.translate.AmazonTranslate;
 import com.amazonaws.services.translate.AmazonTranslateClient;
+import com.amazonaws.services.translate.model.Language;
+import com.amazonaws.services.translate.model.ListLanguagesRequest;
 import com.amazonaws.services.translate.model.TranslateTextRequest;
 import com.amazonaws.services.translate.model.TranslateTextResult;
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.CommonDefinitions;
-import com.badskater0729.worldwidechat.util.SupportedLanguageObject;
+import com.badskater0729.worldwidechat.util.SupportedLang;
+
+import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 
 public class AmazonTranslation extends BasicTranslation {
 
@@ -62,30 +68,24 @@ public class AmazonTranslation extends BasicTranslation {
 					.withRegion(System.getProperty("AMAZON_REGION")).build();
 
 			if (isInitializing) {
-				/* Get supported languages from AWS docs and set them */
-				List<SupportedLanguageObject> supportedLangs = new ArrayList<SupportedLanguageObject>();
-				//WARNING:
-				//IF YOU GET A MARSHALL RESPONSE ERROR, CHECK THIS LINK AND MAKE SURE IT IS NOT BROKEN!
-				Document doc = Jsoup
-						.connect("https://docs.aws.amazon.com/translate/latest/dg/what-is-languages.html")
-						.get();
-				Elements tr = doc.select("tr");
-				for (int i = 1; i < tr.size(); i++) {
-					Elements td = tr.get(i).select("td");
-					if (td.size() > 0) {
-						// langCode, langName == AmazonLangObj constructor
-						// HTML page starts with langName, then langCode
-						SupportedLanguageObject newObj = new SupportedLanguageObject(td.get(1).html(), td.get(0).html(),
-								"", true, true);
-						supportedLangs.add(newObj);
+				/* Get supported languages from AWS and set them */
+				ListLanguagesRequest langRequest = new ListLanguagesRequest();
+				List<Language> awsLangs = translate.listLanguages(langRequest).getLanguages();
+				debugMsg(awsLangs.size() + "");
+				
+				/* Convert supportedLangs to our own SupportedLang objs */
+				List<SupportedLang> supportedLangs = new ArrayList<SupportedLang>();
+				for (Language eaLang : awsLangs) {
+					// Don't add auto
+					if (eaLang.getLanguageCode().equals("auto") || eaLang.getLanguageName().equals("auto")) {
+						continue;
 					}
+					supportedLangs.add(new SupportedLang(eaLang.getLanguageCode(), eaLang.getLanguageName()));
 				}
-				main.setSupportedTranslatorLanguages(supportedLangs);
-				if (supportedLangs.size() == 0) {
-					main.getLogger().warning(CommonDefinitions.getMessage("wwcBackupLangCodesWarning"));
-					CommonDefinitions.sendDebugMessage("---> Using backup codes!!! Fix this!!! <---");
-					setBackupCodes();
-				}
+
+				/* Set supported translator langs */
+				main.setInputLangs(supportedLangs);
+				main.setOutputLangs(supportedLangs);
 
 				/* Setup test translation */
 				textToTranslate = "Hi, how are you?";
@@ -93,13 +93,14 @@ public class AmazonTranslation extends BasicTranslation {
 				outputLang = "es";
 			}
 
-			/* Convert input + output lang to lang code because this API is funky, man */
-			if (!isInitializing && !(inputLang.equals("None"))
-					&& !CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode().equals(inputLang)) {
-				inputLang = CommonDefinitions.getSupportedTranslatorLang(inputLang).getLangCode();
-			}
-			if (!isInitializing && !CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode().equals(outputLang)) {
-				outputLang = CommonDefinitions.getSupportedTranslatorLang(outputLang).getLangCode();
+			/* Get language code of current input/output language. 
+			 * APIs generally recognize language codes (en, es, etc.)
+			 * instead of full names (English, Spanish) */
+			if (!isInitializing) {
+				if (!inputLang.equals("None")) {
+					inputLang = getSupportedTranslatorLang(inputLang, "in").getLangCode();
+				}
+				outputLang = getSupportedTranslatorLang(outputLang, "out").getLangCode();
 			}
 			
 			/* Actual translation */
