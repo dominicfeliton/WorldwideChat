@@ -613,9 +613,6 @@ public class WorldwideChatTests {
 		testCommands.runPlayerTest("wwcc", player1);
 		assertTrue(plugin.getInventoryManager().getInventory(player1).isPresent());
 
-		/* Incorrect inputs, expect correct outputs regardless */
-		// TODO
-
 		/* Print finished message */
 		sendCompletedMessage();
 	}
