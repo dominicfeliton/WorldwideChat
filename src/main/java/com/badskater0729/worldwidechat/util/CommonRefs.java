@@ -544,7 +544,12 @@ public class CommonRefs {
 			if (main.getTranslatorErrorCount() >= mainConfig.getInt("Translator.errorLimit")) {
 				main.getLogger().severe(CommonRefs.getMsg("wwcTranslatorErrorThresholdReached"));
 				main.getLogger().severe(CommonRefs.getMsg("wwcTranslatorErrorThresholdReachedCheckLogs"));
-				main.reload();
+				runSync(new BukkitRunnable() {
+					@Override
+					public void run() {
+						main.reload();
+					}
+				});
 			}
 			process.cancel(true);
 		} finally {
@@ -658,11 +663,17 @@ public class CommonRefs {
 	  * @return Boolean - If exception is no confidence, true; false otherwise
 	  */
 	private static boolean isNoConfidenceException(Throwable throwable) {
-	    // instanceof() doesn't seem to work here...this sucks, but it works
 		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
-		if (exceptionMessage != null && exceptionMessage.contains("confidence")) {
-			CommonRefs.debugMsg("No confidence exception message: " + exceptionMessage);
-			return true;
+		//TODO: Make this configurable, in case we miss some errors
+		String[] lowConfidenceDict = {"confidence", "same as target", "detect the source language"};
+		// same as target == Watson
+		// detect the source language == Watson
+
+		for (String eaStr : lowConfidenceDict) {
+			if (exceptionMessage.contains(eaStr)) {
+				CommonRefs.debugMsg("No confidence exception message: " + exceptionMessage);
+				return true;
+			}
 		}
 		return false;
 	}

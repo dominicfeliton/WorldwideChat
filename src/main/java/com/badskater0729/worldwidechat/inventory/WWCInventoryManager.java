@@ -112,32 +112,12 @@ public class WWCInventoryManager extends InventoryManager {
 					+ getMsg("wwcConfigGUIQuitButton"));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
-				saveMainConfigAndReload(player, contents);
+				main.reload(player, true);
 			}));
 		} else {
 			pageMeta.setDisplayName(ChatColor.RED + "Not a valid button! This is a bug, please report it.");
 			pageButton.setItemMeta(pageMeta);
 		}
-	}
-
-	private static void saveMainConfigAndReload(Player player, InventoryContents content) {
-		/* Kick this player out of the GUI, set translator name to starting to prevent spam reloads */
-		final boolean invalidState = main.getTranslatorName().equals("Invalid");
-		main.setTranslatorName("Starting");
-		main.removePlayerUsingConfigurationGUI(player);
-		player.closeInventory();
-		
-		BukkitRunnable out = new BukkitRunnable() {
-			@Override
-			public void run() {
-				// Save config in same thread
-				main.getConfigManager().saveMainConfig(false);
-				
-				// Reload
-				main.reload(player, invalidState);
-			}
-		};
-		runAsync(out);
 	}
 	
 	public static void setBorders(InventoryContents contents, XMaterial inMaterial) {
