@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -72,19 +73,15 @@ public class ConfigurationHandler {
 		mainConfig = YamlConfiguration.loadConfiguration(configFile);
 
 		/* Add default options, if they do not exist */
-		try {
-			Reader mainConfigStream = new InputStreamReader(main.getResource("config.yml"), "UTF-8");
-			mainConfig.setDefaults(YamlConfiguration.loadConfiguration(mainConfigStream));
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+		Reader mainConfigStream = new InputStreamReader(main.getResource("config.yml"), StandardCharsets.UTF_8);
+		mainConfig.setDefaults(YamlConfiguration.loadConfiguration(mainConfigStream));
 
 		mainConfig.options().copyDefaults(true);
 		saveMainConfig(false);
 
 		/* Get plugin lang */
-		for (int i = 0; i < supportedPluginLangCodes.length; i++) {
-			if (supportedPluginLangCodes[i]
+		for (String supportedPluginLangCode : supportedPluginLangCodes) {
+			if (supportedPluginLangCode
 					.equalsIgnoreCase(mainConfig.getString("General.pluginLang"))) {
 				main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + mainConfig.getString("General.pluginLang") + ".");
 				return;
@@ -119,7 +116,7 @@ public class ConfigurationHandler {
 		
 		if (messagesConfig.getString("DoNotTouchThis.Version") == null || !messagesConfig.getString("DoNotTouchThis.Version").equals(currentMessagesConfigVersion)) {
 			main.getLogger().warning("Upgrading out-of-date messages config!");
-			HashMap<String, String> oldOverrides = new HashMap<String, String>();
+			HashMap<String, String> oldOverrides = new HashMap<>();
 			
 			/* Copy overrides section */
 			if (messagesConfig.getConfigurationSection("Overrides") != null) {
@@ -449,7 +446,7 @@ public class ConfigurationHandler {
 				    	try {
 				    		ActiveTranslator val = entry.getValue();
 				    		PreparedStatement newActiveTranslator = sqlConnection.prepareStatement("REPLACE activeTranslators"
-					    			+ " (creationDate,playerUUID,inLangCode,outLangCode,rateLimit,rateLimitPreviousTime,translatingChatOutgoing,translatingChatIncoming,translatingBook,translatingSign,translatingItem,translatingEntity)" 
+					    			+ " (creationDate,playerUUID,inLangCode,outLangCode,rateLimit,rateLimitPreviousTime,translatingChatOutgoing,translatingChatIncoming,translatingBook,translatingSign,translatingItem,translatingEntity)"
 					    			+ " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
 					    	newActiveTranslator.setString(1, Instant.now().toString());
 					    	newActiveTranslator.setString(2, val.getUUID());
@@ -473,7 +470,7 @@ public class ConfigurationHandler {
 				    	entry.getValue().setHasBeenSaved(true);
 				    }
 				});
-				
+
 				/* Delete any old ActiveTranslators */
 				ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM activeTranslators");
 				while (rs.next()) {

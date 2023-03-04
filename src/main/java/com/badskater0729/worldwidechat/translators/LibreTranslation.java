@@ -1,7 +1,10 @@
 package com.badskater0729.worldwidechat.translators;
 
 import java.io.InputStream;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,15 +18,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import javax.net.ssl.HttpsURLConnection;
 
-import org.apache.commons.io.IOUtils;
+import com.google.gson.Gson;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.message.BasicHeader;
-import org.apache.http.protocol.HTTP;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.util.SupportedLang;
@@ -55,7 +51,7 @@ public class LibreTranslation extends BasicTranslation {
 	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
 		ExecutorService executor = Executors.newSingleThreadExecutor();
 		Future<String> process = executor.submit(new translationTask());
-		String finalOut = "";
+		String finalOut;
 		
 		/* Get translation */
 		finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
@@ -68,6 +64,9 @@ public class LibreTranslation extends BasicTranslation {
 	private class translationTask implements Callable<String> {
 		@Override
 		public String call() throws Exception {
+			// Init vars
+			Gson gson = new Gson();
+
 			if (isInitializing) {
 				/* Get languages */
 				URL url = new URL(System.getProperty("LIBRE_SERVICE_URL") + "/languages");
@@ -75,27 +74,25 @@ public class LibreTranslation extends BasicTranslation {
 				HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 				conn.setRequestMethod("GET");
 				conn.setRequestProperty("Content-Type", "application/json");
-				conn.setReadTimeout(WorldwideChat.translatorConnectionTimeoutSeconds*1000);
-				conn.setConnectTimeout(WorldwideChat.translatorFatalAbortSeconds*1000);
 				conn.connect();
 				
 				int listResponseCode = conn.getResponseCode();
 				
-				List<SupportedLang> outLangList = new ArrayList<SupportedLang>();
-				List<SupportedLang> inLangList = new ArrayList<SupportedLang>();
+				List<SupportedLang> outLangList = new ArrayList<>();
+				List<SupportedLang> inLangList = new ArrayList<>();
 				if (listResponseCode == 200) {
 					// Scan response
-					String inLine = "";
+					StringBuilder inLine = new StringBuilder();
 				    Scanner scanner = new Scanner(url.openStream());
 				  
 				    while (scanner.hasNext()) {
-				       inLine += scanner.nextLine();
+				       inLine.append(scanner.nextLine());
 				    }
 				    
 				    scanner.close();
 				    
 				    // Get lang code/name, remove spaces from name
-				    JsonElement jsonTree = JsonParser.parseString(inLine);
+				    JsonElement jsonTree = JsonParser.parseString(inLine.toString());
 					for (JsonElement element : jsonTree.getAsJsonArray()) {
 						JsonObject eaProperty = (JsonObject) element;
 						SupportedLang currLang = new SupportedLang(
@@ -131,60 +128,66 @@ public class LibreTranslation extends BasicTranslation {
 			/* Detect inputLang */
 			if (inputLang.equals("None")) { // if we do not know the input
 				/* Craft detection request */
-				CloseableHttpClient client = HttpClients.createDefault();
-				CloseableHttpResponse response;
-				
-		        HttpPost post = new HttpPost(System.getProperty("LIBRE_SERVICE_URL") + "/detect");
-				String baseJson = "{\"q\":\"" + textToTranslate + "\"";
-				baseJson = appendJsonEnding(baseJson);
-				StringEntity se = new StringEntity(baseJson);
-	            se.setContentType(new BasicHeader(HTTP.CONTENT_TYPE, "application/json"));
-	            post.setEntity(se);
-	            
-	            response = client.execute(post);
-	            int statusCode = response.getStatusLine().getStatusCode();
-	            
+				URL url = new URL(System.getProperty("LIBRE_SERVICE_URL") + "/detect");
+				HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
+				httpConn.setRequestMethod("POST");
+
+				httpConn.setRequestProperty("accept", "application/json");
+				httpConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+
+				httpConn.setDoOutput(true);
+
+				OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
+
+				writer.write("q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8));
+				writer.flush();
+				writer.close();
+				httpConn.getOutputStream().close();
+
 	            /* Process response */
-	            if (response != null && statusCode == 200) {
-	                InputStream in = response.getEntity().getContent(); //Get the data in the entity
-	                String unparsedResult = IOUtils.toString(in, StandardCharsets.UTF_8);
-	                JsonElement jsonTree = JsonParser.parseString(unparsedResult);
-	                String result = jsonTree.getAsJsonArray().get(0).getAsJsonObject().get("language").getAsString();
-				    inputLang = result;
-	            } else {
-	            	debugMsg("Failed..." + statusCode);
-	            	checkError(statusCode);
-	            }
+				int statusCode = httpConn.getResponseCode();
+				if (statusCode == 200) {
+					InputStream responseStream = httpConn.getInputStream();
+					Scanner s = new Scanner(responseStream).useDelimiter("\\A");
+					String response = s.hasNext() ? s.next() : "";
+
+					DetectResponse[] outArray = gson.fromJson(response, DetectResponse[].class);
+					inputLang = outArray[0].getLanguage();
+				} else {
+					debugMsg("Failed..." + statusCode);
+					checkError(statusCode);
+				}
 			}
 
 			/* Actual translation */
-			CloseableHttpClient client = HttpClients.createDefault();
-			
-			CloseableHttpResponse response;
-	        HttpPost post = new HttpPost(System.getProperty("LIBRE_SERVICE_URL") + "/translate");
-	        String baseJson = "{\"q\":\"" + textToTranslate + 
-					"\",\"source\":\"" + inputLang + 
-					"\",\"target\":\"" + outputLang + 
-					"\",\"format\":\"text\"";
-	        baseJson = appendJsonEnding(baseJson);
-	        StringEntity se = new StringEntity(baseJson);
-            se.setContentType(new BasicHeader(HTTP.CONTENT_TYPE, "application/json"));
-            post.setEntity(se);
-            response = client.execute(post);
-            int statusCode = response.getStatusLine().getStatusCode();
+			URL url = new URL(System.getProperty("LIBRE_SERVICE_URL") + "/translate");
+			HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
+			httpConn.setRequestMethod("POST");
 
-            /* Checking response */
-            if (response != null && statusCode == 200) {
-                InputStream in = response.getEntity().getContent(); //Get the data in the entity
-                String unparsedResult = IOUtils.toString(in, StandardCharsets.UTF_8);
-                JsonElement jsonTree = JsonParser.parseString(unparsedResult);
-                String result = jsonTree.getAsJsonObject().get("translatedText").getAsString();
-			    return result;
-            } else {
-            	debugMsg("Failed..." + statusCode);
-            	checkError(statusCode);
-            }
+			httpConn.setRequestProperty("accept", "application/json");
+			httpConn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
 
+			httpConn.setDoOutput(true);
+
+			OutputStreamWriter writer = new OutputStreamWriter(httpConn.getOutputStream());
+
+			writer.write("q=" + URLEncoder.encode(textToTranslate, StandardCharsets.UTF_8) + "&source=" + inputLang + "&target=" + outputLang + "&format=text");
+			writer.flush();
+			writer.close();
+			httpConn.getOutputStream().close();
+
+			/* Checking response */
+			int statusCode = httpConn.getResponseCode();
+			if (statusCode == 200) {
+				InputStream responseStream = httpConn.getInputStream();
+				Scanner s = new Scanner(responseStream).useDelimiter("\\A");
+				String response = s.hasNext() ? s.next() : "";
+
+				return gson.fromJson(response, TranslateResponse.class).getTranslatedText();
+			} else {
+				debugMsg("Failed..." + statusCode);
+				checkError(statusCode);
+			}
 			return textToTranslate;
 		}
 	}
@@ -200,15 +203,22 @@ public class LibreTranslation extends BasicTranslation {
 			throw new Exception(getMsg("libreHttpUnknown", new String[] {in + ""}));
 		}
 	}
-	
-	private String appendJsonEnding(String baseJson) {
-		if (System.getProperty("LIBRE_API_KEY") != null && !System.getProperty("LIBRE_API_KEY").equals("")) {
-			debugMsg("Using api key...");
-        	baseJson += ",\"api_key\":\"" + System.getProperty("LIBRE_API_KEY") + "\"}";
-        } else {
-        	baseJson += "}";
-        }
-		return baseJson;
-	}
+}
 
+class TranslateResponse {
+	String translatedText;
+
+	public String getTranslatedText() {
+		return translatedText;
+	}
+}
+
+class DetectResponse {
+	private String language;
+
+	private double confidenceLevel;
+
+	public String getLanguage() { return language; }
+
+	public Double getConfidenceLevel() { return confidenceLevel; }
 }

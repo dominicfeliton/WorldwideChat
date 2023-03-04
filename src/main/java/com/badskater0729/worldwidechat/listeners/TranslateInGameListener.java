@@ -126,7 +126,7 @@ public class TranslateInGameListener implements Listener {
 						outTitle = translateText(meta.getTitle(), event.getPlayer());
 						final TextComponent bookTitleSuccess = Component.text()
 								.append(Component.text()
-										.content(getMsg("wwcBookTranslateTitleSuccess", new String[] {meta.getTitle()}))
+										.content(getMsg("wwcBookTranslateTitleSuccess", new String[] {outTitle}))
 										.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
 								.build();
 						sendMsg(event.getPlayer(), bookTitleSuccess);

@@ -78,7 +78,7 @@ public class WWCStats extends BasicCommand {
 			public void run() {
 				Callable<?> result = () -> {
 					/* Get OfflinePlayer, this will allow us to get stats even if target is offline */
-					OfflinePlayer inPlayer = null;
+					OfflinePlayer inPlayer;
 					if (sender.getName().equals(inName)) {
 						inPlayer = (Player)sender;
 					} else {
@@ -157,10 +157,9 @@ public class WWCStats extends BasicCommand {
 					/* Get translation */
 					 process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 				} catch (TimeoutException | ExecutionException | InterruptedException e) {
-					if (e instanceof TimeoutException) {sendTimeoutExceptionMsg(sender);};
+					if (e instanceof TimeoutException) {sendTimeoutExceptionMsg(sender);}
 					process.cancel(true);
 					this.cancel();
-					return;
 				} finally {
 					executor.shutdownNow();
 				}

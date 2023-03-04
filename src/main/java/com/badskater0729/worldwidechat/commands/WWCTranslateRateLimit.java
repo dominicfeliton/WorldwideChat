@@ -63,12 +63,12 @@ public class WWCTranslateRateLimit extends BasicCommand {
 		}
 
 		/* Disable another user's existing rate limit */
-		if (args.length == 1 && args[0] instanceof String) {
+		if (args.length == 1 && args[0] != null) {
 			return changeRateLimit(args[0], 0);
 		}
 
 		/* Set rate limit for another user */
-		if (args.length == 2 && args[0] instanceof String) {
+		if (args.length == 2 && args[0] != null) {
 			if (StringUtils.isNumeric(args[1])) {
 				return changeRateLimit(args[0], Integer.parseInt(args[1]));
 			}
