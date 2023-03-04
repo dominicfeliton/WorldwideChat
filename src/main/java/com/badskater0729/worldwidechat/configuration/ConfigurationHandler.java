@@ -73,12 +73,8 @@ public class ConfigurationHandler {
 		mainConfig = YamlConfiguration.loadConfiguration(configFile);
 
 		/* Add default options, if they do not exist */
-		try {
-			Reader mainConfigStream = new InputStreamReader(main.getResource("config.yml"), StandardCharsets.UTF_8);
-			mainConfig.setDefaults(YamlConfiguration.loadConfiguration(mainConfigStream));
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+		Reader mainConfigStream = new InputStreamReader(main.getResource("config.yml"), StandardCharsets.UTF_8);
+		mainConfig.setDefaults(YamlConfiguration.loadConfiguration(mainConfigStream));
 
 		mainConfig.options().copyDefaults(true);
 		saveMainConfig(false);
