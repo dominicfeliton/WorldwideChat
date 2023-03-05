@@ -424,3 +424,12 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Vellykket registrert oversetter feil å ignorere.
   wwcConfigErrorsToIgnoreInvalid: Ugyldige oversetterfeil å ignorere satt i config.yml.
     Registrering av standardinnstillinger...
+  wwcConfigConversationIgnoreErrorsSuccess: Vellykket endret oversetterfeilene for
+    å ignorere setninger.
+  wwcConfigGUIIgnoreErrorsButton: Endre feil å ignorere
+  wwcConfigConversationIgnoreErrorsInput: 'Den gjeldende listen over setninger i oversetterfeil
+    å ignorere er: %i. Skriv inn argumenter atskilt med komma (key=value, key2=value2),
+    eller skriv inn clear for å slette gjeldende args, eller skriv 0 for å gå tilbake.
+    I tillegg vil det å skrive «*» føre til at pluginet ikke sjekker noen oversetterfeil.'
+  wwcConfigConversationIgnoreErrorsCleared: Oversetterfeil for å ignorere setninger
+    ryddet vellykket.

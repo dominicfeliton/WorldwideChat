@@ -435,3 +435,13 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: উপেক্ষা করার জন্য সফলভাবে নিবন্ধিত অনুবাদক ত্রুটি
   wwcConfigErrorsToIgnoreInvalid: config.yml এ সেট উপেক্ষা করতে অকার্যকর অনুবাদক ত্রুটি।
     ডিফল্ট নিবন্ধন করা হচ্ছে...
+  wwcConfigConversationIgnoreErrorsSuccess: বাক্যাংশগুলি উপেক্ষা করতে অনুবাদক ত্রুটিগুলি
+    সফলভাবে পরিবর্তিত হয়েছে।
+  wwcConfigGUIIgnoreErrorsButton: উপেক্ষা করার জন্য ত্রুটি পরিবর্তন করুন
+  wwcConfigConversationIgnoreErrorsInput: 'অনুবাদক ত্রুটির মধ্যে উপেক্ষা করার জন্য
+    বাক্যাংশগুলির বর্তমান তালিকা হল: %i। কমা দ্বারা পৃথক করা আর্গুমেন্ট টাইপ করুন
+    (key=value, key2=value2), অথবা বর্তমান আর্গ মুছতে clear টাইপ করুন, অথবা ফিরে যেতে
+    ০ টাইপ করুন। উপরন্তু, “*” টাইপ করলে প্লাগইনটি কোন অনুবাদক ত্রুটি পরীক্ষা করবে
+    না।'
+  wwcConfigConversationIgnoreErrorsCleared: অনুবাদক ত্রুটিগুলি উপেক্ষা করতে বাক্যাংশগুলি
+    সফলভাবে সাফ করা হয়েছে

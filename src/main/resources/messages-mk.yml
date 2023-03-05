@@ -454,3 +454,12 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Успешно регистрирани грешки преведувач да се игнорира.
   wwcConfigErrorsToIgnoreInvalid: Неважечки грешки преведувач да се игнорира поставени
     во config.yml. Регистрирање стандарден...
+  wwcConfigConversationIgnoreErrorsSuccess: Успешно ги смени грешките на преведувачот
+    за да ги игнорира фразите.
+  wwcConfigGUIIgnoreErrorsButton: Променете ги грешките за да ги игнорирате
+  wwcConfigConversationIgnoreErrorsInput: 'Тековната листа на фрази во преведувачот
+    грешки да се игнорира се: %i. тип аргументи одделени со запирка (key=value, key2=value2),
+    или тип clear за да ги избрише тековните args, или тип 0 да се врати назад. Дополнително,
+    пишувањето “*” ќе предизвика приклучокот да не проверува грешки на преведувачот.'
+  wwcConfigConversationIgnoreErrorsCleared: Преведувач грешки да се игнорира фрази
+    исчистени успешно.

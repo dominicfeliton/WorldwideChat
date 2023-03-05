@@ -449,3 +449,13 @@ Messages:
     kívül hagyni.
   wwcConfigErrorsToIgnoreInvalid: Érvénytelen fordítói hibák figyelmen kívül hagyni
     set config.yml. Alapértelmezések regisztrálása...
+  wwcConfigConversationIgnoreErrorsSuccess: Sikeresen megváltoztatta a fordítói hibákat,
+    hogy figyelmen kívül hagyja a kifejezéseket.
+  wwcConfigGUIIgnoreErrorsButton: Hibák módosítása figyelmen kívül hagyásra
+  wwcConfigConversationIgnoreErrorsInput: 'A fordítói hibákban jelenleg figyelmen
+    kívül hagyandó kifejezések listája: %i. Írja be az argumentumokat vesszővel elválasztva
+    (key=value, key2=value2), vagy írja be a clear parancsot az aktuális argok törléséhez,
+    vagy írja be a 0 értéket a visszalépéshez. Ezenkívül a „*” beírása miatt a plugin
+    nem ellenőrzi a fordítói hibákat.'
+  wwcConfigConversationIgnoreErrorsCleared: Fordító hibák figyelmen kívül hagyni mondatok
+    sikeresen törölve.

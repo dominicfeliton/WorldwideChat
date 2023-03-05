@@ -438,3 +438,12 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Úspěšně registrované chyby překladatele ignorovat.
   wwcConfigErrorsToIgnoreInvalid: Neplatné chyby překladače pro ignorování nastavené
     v config.yml. Registrace výchozích nastavení...
+  wwcConfigConversationIgnoreErrorsSuccess: Úspěšně změnil chyby překladatele ignorovat
+    fráze.
+  wwcConfigGUIIgnoreErrorsButton: Změna chyb na ignorování
+  wwcConfigConversationIgnoreErrorsInput: 'Aktuální seznam frází v chybách překladače,
+    které je třeba ignorovat, je: %i. Argumenty typu oddělené čárkou (key=value, key2=value2),
+    nebo zadejte clear pro vymazání aktuálních arg, nebo zadejte 0 pro návrat zpět.
+    Navíc zadání „*“ způsobí, že plugin nebude kontrolovat žádné chyby překladatele.'
+  wwcConfigConversationIgnoreErrorsCleared: Chyby překladatele ignorovat fráze úspěšně
+    vymazány.

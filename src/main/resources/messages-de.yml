@@ -485,3 +485,13 @@ Messages:
     registriert.
   wwcConfigErrorsToIgnoreInvalid: Ungültige Übersetzungsfehler zum Ignorieren sind
     in config.yml festgelegt. Standardeinstellungen werden registriert...
+  wwcConfigConversationIgnoreErrorsSuccess: Die Übersetzerfehler wurden erfolgreich
+    geändert, sodass Phrasen ignoriert wurden.
+  wwcConfigGUIIgnoreErrorsButton: Fehler auf Ignorieren ändern
+  wwcConfigConversationIgnoreErrorsInput: 'Die aktuelle Liste der Ausdrücke in Übersetzerfehlern,
+    die ignoriert werden sollten, lautet: %i. Geben Sie Argumente ein, die durch ein
+    Komma getrennt sind (key=value, key2=value2), oder geben Sie clear ein, um die
+    aktuellen Argumente zu löschen, oder geben Sie 0 ein, um zurückzugehen. Zusätzlich
+    führt die Eingabe von „*“ dazu, dass das Plugin keine Übersetzungsfehler überprüft.'
+  wwcConfigConversationIgnoreErrorsCleared: Übersetzungsfehler beim Ignorieren von
+    Phrasen wurden erfolgreich gelöscht.

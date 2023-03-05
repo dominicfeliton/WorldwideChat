@@ -445,3 +445,12 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Đã đăng ký thành công lỗi dịch để bỏ qua.
   wwcConfigErrorsToIgnoreInvalid: Lỗi dịch không hợp lệ để bỏ qua thiết lập trong
     config.yml. Đăng ký mặc định...
+  wwcConfigConversationIgnoreErrorsSuccess: Thay đổi thành công các lỗi dịch để bỏ
+    qua các cụm từ.
+  wwcConfigGUIIgnoreErrorsButton: Thay đổi lỗi để bỏ qua
+  wwcConfigConversationIgnoreErrorsInput: 'Danh sách cụm từ hiện tại trong lỗi dịch
+    để bỏ qua là: %i. nhập đối số được phân tách bởi dấu phẩy (key=value, key2=value2),
+    hoặc gõ clear để xóa các tham số hiện tại, hoặc gõ 0 để quay lại. Ngoài ra, gõ
+    “*” sẽ khiến plugin không kiểm tra bất kỳ lỗi trình dịch nào.'
+  wwcConfigConversationIgnoreErrorsCleared: Lỗi Translator để bỏ qua các cụm từ đã
+    xóa thành công.

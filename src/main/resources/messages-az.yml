@@ -430,3 +430,13 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Müvəffəqiyyətlə qeydiyyatdan tərcüməçi səhvlər ignore.
   wwcConfigErrorsToIgnoreInvalid: Yanlış tərcüməçi səhvlər config.yml müəyyən ignore.
     Varsayılmazlıqlar qeydiyyatdan keçir...
+  wwcConfigConversationIgnoreErrorsSuccess: Tərcüməçi səhvlərini ifadələrə məhəl qoymamaq
+    üçün uğurla dəyişdi.
+  wwcConfigGUIIgnoreErrorsButton: Yoksaymaq üçün səhvləri dəyişdirin
+  wwcConfigConversationIgnoreErrorsInput: 'Tərcüməçi səhvlərindəki ifadələrin mövcud
+    siyahısı aşağıdakılardır: %i. vergüllə ayrılmış arqumentləri yazın (key=value,
+    key2=value2) və ya cari args silmək üçün təmiz yazın və ya geri dönmək üçün 0
+    yazın. Bundan əlavə, “*” yazmaq plugin hər hansı bir tərcüməçi səhvini yoxlamağa
+    səbəb olacaq.'
+  wwcConfigConversationIgnoreErrorsCleared: Tərcüməçi səhvlər ifadələr ignore uğurla
+    rəsmiləşdirilmiş.

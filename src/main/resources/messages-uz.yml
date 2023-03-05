@@ -453,3 +453,13 @@ Messages:
     uchun.
   wwcConfigErrorsToIgnoreInvalid: Config.yml da o'rnatilgan e'tiborsizlik uchun noto'g'ri
     tarjimon xatolar. Standartni ro'yxatdan o'tkazish...
+  wwcConfigConversationIgnoreErrorsSuccess: Tarjimon xatolarini iboralarni e'tiborsiz
+    qoldirish uchun muvaffaqiyatli o'zgartirdi.
+  wwcConfigGUIIgnoreErrorsButton: Xatolarni e'tiborsiz qoldirish uchun o'zgartiring
+  wwcConfigConversationIgnoreErrorsInput: 'E''tibor bermaslik uchun tarjimon xatolaridagi
+    iboralarning joriy ro''yxati quyidagilardir: %i. vergul bilan ajratilgan argumentlarni
+    kiriting (kalit = qiymat, key2 = value2) yoki joriy args artib aniq yozing, yoki
+    orqaga qaytish uchun 0 kiriting. Bundan tashqari, “*” ni yozish plaginning tarjimon
+    xatolarini tekshirmasligiga olib keladi.'
+  wwcConfigConversationIgnoreErrorsCleared: Tarjimon xatolar muvaffaqiyatli tozalandi
+    iboralar e'tiborsizlik uchun.

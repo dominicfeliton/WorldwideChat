@@ -438,3 +438,12 @@ Messages:
     diabaikan.
   wwcConfigErrorsToIgnoreInvalid: Kesalahan penerjemah tidak valid untuk diabaikan
     disetel di config.yhtml. Mendaftarkan default...
+  wwcConfigConversationIgnoreErrorsSuccess: Berhasil mengubah kesalahan penerjemah
+    untuk mengabaikan frasa.
+  wwcConfigGUIIgnoreErrorsButton: Ubah Kesalahan untuk Diabaikan
+  wwcConfigConversationIgnoreErrorsInput: 'Daftar frasa saat ini dalam kesalahan penerjemah
+    untuk diabaikan adalah: %i. Ketik argumen dipisahkan dengan koma (key=value, key2=value2),
+    atau ketik clear untuk menghapus args saat ini, atau tipe 0 untuk kembali. Selain
+    itu, mengetik “*” akan menyebabkan plugin tidak memeriksa kesalahan penerjemah.'
+  wwcConfigConversationIgnoreErrorsCleared: Kesalahan penerjemah untuk mengabaikan
+    frasa dihapus berhasil.

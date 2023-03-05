@@ -443,3 +443,13 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Sėkmingai užregistruotos vertėjo klaidos ignoruoti.
   wwcConfigErrorsToIgnoreInvalid: Neteisingas vertėjas klaidų ignoruoti nustatyti
     config.yml. Numatytųjų įregistravimas...
+  wwcConfigConversationIgnoreErrorsSuccess: Sėkmingai pakeitė vertėjo klaidas, kad
+    ignoruotų frazes.
+  wwcConfigGUIIgnoreErrorsButton: Keisti klaidas ignoruoti
+  wwcConfigConversationIgnoreErrorsInput: 'Dabartinis vertėjo klaidų, kurias reikia
+    ignoruoti, frazių sąrašas yra: %i. Įveskite argumentus, atskirtus kableliu (raktas
+    = reikšmė, raktas2 = reikšmė2) arba įveskite aiškų, kad nuvalytumėte dabartines
+    argas, arba įveskite 0, kad grįžtumėte. Be to, įvesdami “*”, įskiepiai netikrins
+    jokių vertėjo klaidų.'
+  wwcConfigConversationIgnoreErrorsCleared: Vertėjas klaidų ignoruoti frazes išvalytas
+    sėkmingai.

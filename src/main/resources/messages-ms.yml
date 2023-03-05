@@ -440,3 +440,12 @@ Messages:
     diabaikan.
   wwcConfigErrorsToIgnoreInvalid: Ralat penterjemah tidak sah untuk diabaikan ditetapkan
     dalam config.yml. Mendaftarkan lalai...
+  wwcConfigConversationIgnoreErrorsSuccess: Berjaya mengubah ralat penterjemah untuk
+    mengabaikan frasa.
+  wwcConfigGUIIgnoreErrorsButton: Ubah Ralat untuk Abaikan
+  wwcConfigConversationIgnoreErrorsInput: 'Senarai frasa semasa dalam ralat penterjemah
+    untuk diabaikan ialah: %i. Argumen jenis dipisahkan dengan koma (key=value, key2=value2),
+    atau taip clear untuk lap args semasa, atau taip 0 untuk kembali. Selain itu,
+    menaip “*” akan menyebabkan plugin tidak memeriksa sebarang kesilapan penterjemah.'
+  wwcConfigConversationIgnoreErrorsCleared: Kesilapan penterjemah untuk mengabaikan
+    frasa dibersihkan dengan jayanya.

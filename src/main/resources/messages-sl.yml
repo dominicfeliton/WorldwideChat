@@ -446,3 +446,13 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Uspešno registrirane napake prevajalec prezreti.
   wwcConfigErrorsToIgnoreInvalid: Neveljavne napake prevajalca prezreti nastavljen
     v config.yml. Privzete privzete nastavitve...
+  wwcConfigConversationIgnoreErrorsSuccess: Uspešno spremenili napake prevajalca prezreti
+    besedne zveze.
+  wwcConfigGUIIgnoreErrorsButton: Spremeni napake za prezreti
+  wwcConfigConversationIgnoreErrorsInput: 'Trenutni seznam stavkov pri prevajalskih
+    napakah, ki jih je treba prezreti, je: %i. Vnesite argumente, ločene z vejico
+    (key=value, key2=value2), ali vnesite jasno, da izbrišete trenutne arge, ali vnesite
+    0, da se vrnete nazaj. Poleg tega tipkanje »*« povzroči, da vtičnik ne preveri
+    nobenih napak prevajalca.'
+  wwcConfigConversationIgnoreErrorsCleared: Prevajalec napake prezreti besedne zveze
+    uspešno izbrisani.

@@ -441,3 +441,13 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: کامیابی سے رجسٹرڈ مترجم کی غلطیوں کو نظر انداز کرنے.
   wwcConfigErrorsToIgnoreInvalid: config.yml میں سیٹ کو نظر انداز کرنے کے لئے غلط
     مترجم کی غلطیاں. ڈیفالٹ رجسٹر کر رہا ہے...
+  wwcConfigConversationIgnoreErrorsSuccess: جملے کو نظر انداز کرنے کے لئے مترجم کی
+    غلطیوں کو کامیابی سے تبدیل کردیا.
+  wwcConfigGUIIgnoreErrorsButton: نظر انداز کرنے کے لئے غلطیوں کو تبدیل کریں
+  wwcConfigConversationIgnoreErrorsInput: 'مترجم کی غلطیوں کو نظر انداز کرنے کے لیے
+    جملے کی موجودہ فہرست یہ ہے: %i کسی کوما (key=value، key2=value2) کے ذریعہ علیحدہ
+    دلائل ٹائپ کریں، یا موجودہ ارگز کو مسح کرنے کے لئے واضح ٹائپ کریں، یا واپس جانے
+    کے لئے 0 ٹائپ کریں۔ اس کے علاوہ، “*” ٹائپ کرنے سے پلگ ان کسی بھی مترجم کی غلطیوں
+    کی جانچ پڑتال نہیں ہوگی.'
+  wwcConfigConversationIgnoreErrorsCleared: مترجم کی غلطیاں کامیابی سے صاف جملے کو
+    نظر انداز کرنے کے لئے.

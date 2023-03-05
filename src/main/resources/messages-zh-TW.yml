@@ -343,3 +343,8 @@ Messages:
     0 返回。
   wwcConfigErrorsToIgnoreSuccess: 成功註冊的翻譯錯誤忽略。
   wwcConfigErrorsToIgnoreInvalid: 在組態.yml 中忽略設定的無效轉換程式錯誤。正在註冊預設...
+  wwcConfigConversationIgnoreErrorsSuccess: 成功將翻譯器錯誤變更為忽略詞組。
+  wwcConfigGUIIgnoreErrorsButton: 將錯誤變更為忽略
+  wwcConfigConversationIgnoreErrorsInput: 目前要忽略的翻譯器錯誤片語清單為： %i。輸入以逗號分隔的引數 (鍵 = 值，key2=value2)，或者輸入
+    clear 以清除目前的參數，或輸入 0 返回。此外，輸入「*」將導致插件無法檢查任何翻譯錯誤。
+  wwcConfigConversationIgnoreErrorsCleared: 翻譯器錯誤忽略詞組成功清除。

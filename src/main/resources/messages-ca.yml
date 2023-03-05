@@ -467,3 +467,13 @@ Messages:
     per ignorar.
   wwcConfigErrorsToIgnoreInvalid: Errors del traductor no vàlids per ignorar establerts
     en config.yml. Registrar els valors predeterminats...
+  wwcConfigConversationIgnoreErrorsSuccess: S'ha canviat correctament els errors del
+    traductor per ignorar frases.
+  wwcConfigGUIIgnoreErrorsButton: Canviar els errors per ignorar
+  wwcConfigConversationIgnoreErrorsInput: 'La llista actual de frases en errors del
+    traductor a ignorar són: %i. escriu arguments separats per una coma (key=value,
+    key2=value2), o escriviu clear per esborrar els args actuals, o escriviu 0 per
+    tornar enrere. Addicionalment, escriure “*” farà que el connector no comprovi
+    cap error del traductor.'
+  wwcConfigConversationIgnoreErrorsCleared: Errors del traductor per ignorar frases
+    esborrades amb èxit.

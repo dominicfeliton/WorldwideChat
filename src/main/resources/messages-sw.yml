@@ -434,3 +434,12 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Mafanikio kusajiliwa translator makosa kupuuza.
   wwcConfigErrorsToIgnoreInvalid: makosa batili translator kupuuza kuweka katika config.yml.
     Kusajili chaguo-msingi...
+  wwcConfigConversationIgnoreErrorsSuccess: Mafanikio iliyopita makosa translator
+    kupuuza misemo.
+  wwcConfigGUIIgnoreErrorsButton: Badilisha Hitilafu ili kupuuza
+  wwcConfigConversationIgnoreErrorsInput: 'Orodha ya sasa ya misemo katika makosa
+    ya translator kupuuza ni: %i. aina hoja kutengwa na comma (key=value, key2=value2),
+    au aina wazi kuifuta args sasa, au aina 0 kurudi nyuma. Zaidi ya hayo, kuandika
+    “*” itasababisha Plugin kutoangalia makosa yoyote ya translator.'
+  wwcConfigConversationIgnoreErrorsCleared: Makosa ya Translator kupuuza misemo kufutwa
+    kwa mafanikio.

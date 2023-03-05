@@ -463,3 +463,13 @@ Messages:
     të injoruar.
   wwcConfigErrorsToIgnoreInvalid: Gabimet e përkthyesit të pavlefshëm për të injoruar
     vendosur në config.yml. Regjistrimi i parazgjedhur...
+  wwcConfigConversationIgnoreErrorsSuccess: Ndryshuar me sukses gabimet e përkthyesit
+    për të injoruar frazat.
+  wwcConfigGUIIgnoreErrorsButton: Ndrysho gabimet për të injoruar
+  wwcConfigConversationIgnoreErrorsInput: 'Lista aktuale e frazave në gabimet e përkthyesit
+    që duhet injoruar janë: %i. argumentet e tipit të ndara me një presje (key=value,
+    key2=value2), ose shkruani qartë për të fshirë argumentet aktuale, ose shkruani
+    0 për të kthyer mbrapa. Përveç kësaj, shtypja “*” do të bëjë që shtojca të mos
+    kontrollojë ndonjë gabim përkthyes.'
+  wwcConfigConversationIgnoreErrorsCleared: Gabimet e përkthyesit për të injoruar
+    frazat pastruar me sukses.

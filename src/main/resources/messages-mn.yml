@@ -452,3 +452,12 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Амжилттай хэрэгсэхгүй орчуулагч алдаа бүртгэгдсэн.
   wwcConfigErrorsToIgnoreInvalid: Буруу орчуулагч алдаа config.yml тогтоосон хэрэгсэхгүй
     болгох. Анхдагчуудыг бүртгэх...
+  wwcConfigConversationIgnoreErrorsSuccess: Амжилттай хэллэгийг үл тоомсорлох орчуулагч
+    алдааг өөрчилсөн.
+  wwcConfigGUIIgnoreErrorsButton: Үл тоомсорлохын тулд алдааг өөрчлөх
+  wwcConfigConversationIgnoreErrorsInput: 'Орчуулагч алдаа үл тоомсорлох хэллэгийг
+    одоогийн жагсаалт нь: %i байна. таслалаар тусгаарлагдсан аргумент бичнэ (key=value,
+    key2=value2), эсвэл одоогийн args арчина тодорхой бичнэ, эсвэл төрөл 0 буцаж явах.
+    Үүнээс гадна, бичин “*” залгаас ямар ч орчуулагч алдааг шалгаж байх нь хүргэнэ.'
+  wwcConfigConversationIgnoreErrorsCleared: Орчуулагч алдаа амжилттай цэвэрлэгдэж
+    хэллэгийг үл тоомсорлох.

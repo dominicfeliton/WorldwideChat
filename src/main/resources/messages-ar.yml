@@ -410,3 +410,10 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: تم تسجيل أخطاء المترجم بنجاح لتجاهلها.
   wwcConfigErrorsToIgnoreInvalid: أخطاء مترجم غير صالحة لتجاهل المجموعة في config.yml.
     جاري تسجيل الإعدادات الافتراضية...
+  wwcConfigConversationIgnoreErrorsSuccess: تم تغيير أخطاء المترجم بنجاح لتجاهل العبارات.
+  wwcConfigGUIIgnoreErrorsButton: تغيير الأخطاء لتجاهلها
+  wwcConfigConversationIgnoreErrorsInput: 'قائمة العبارات الحالية في أخطاء المترجم
+    التي يجب تجاهلها هي: %i. اكتب وسيطات مفصولة بفاصلة (key=value، key2=value2)، أو
+    اكتب clear لمسح args الحالية، أو اكتب 0 للرجوع. بالإضافة إلى ذلك، ستؤدي كتابة
+    «*» إلى عدم تحقق المكون الإضافي من أي أخطاء في المترجم.'
+  wwcConfigConversationIgnoreErrorsCleared: تم مسح أخطاء المترجم لتجاهل العبارات بنجاح.

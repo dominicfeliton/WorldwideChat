@@ -438,3 +438,12 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Suksesvol geregistreerde vertaler foute om te ignoreer.
   wwcConfigErrorsToIgnoreInvalid: Ongeldige vertaler fouten om te ignoreer set in
     config.yml. Registreer verstek...
+  wwcConfigConversationIgnoreErrorsSuccess: Die vertaler foute suksesvol verander
+    om frases te ignoreer.
+  wwcConfigGUIIgnoreErrorsButton: Verander foute om te ignoreer
+  wwcConfigConversationIgnoreErrorsInput: 'Die huidige lys frases in vertalerfoute
+    om te ignoreer is: %i. Tik argumente geskei deur ''n komma (sleutel=waarde, sleutel2=waarde2),
+    of tik duidelik om die huidige args uit te vee, of tik 0 om terug te gaan. Daarbenewens
+    sal tik “*” veroorsaak dat die prop nie enige vertalerfoute nagaan nie.'
+  wwcConfigConversationIgnoreErrorsCleared: Vertaler foute om frases te ignoreer suksesvol
+    skoongemaak.

@@ -443,3 +443,12 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Veiksmīgi reģistrētas tulkotāju kļūdas ignorēt.
   wwcConfigErrorsToIgnoreInvalid: Nederīgs tulkotājs kļūdas ignorēt iestatīts config.yml.
     Reģistrējot noklusējumus...
+  wwcConfigConversationIgnoreErrorsSuccess: Veiksmīgi mainījis tulkotāja kļūdas, lai
+    ignorētu frāzes.
+  wwcConfigGUIIgnoreErrorsButton: Mainīt kļūdas, lai ignorētu
+  wwcConfigConversationIgnoreErrorsInput: 'Pašreizējais ignorējamo tulkotāju kļūdu
+    frāžu saraksts ir: %i. Ierakstiet argumentus, atdalot ar komatu (key=value, key2=value2),
+    vai ierakstiet skaidri, lai noslaucītu pašreizējo args, vai ierakstiet 0, lai
+    atgrieztos. Turklāt, ierakstot “*”, spraudnis nepārbaudīs tulkotāju kļūdas.'
+  wwcConfigConversationIgnoreErrorsCleared: Tulkotājs kļūdas ignorēt frāzes notīrīti
+    veiksmīgi.

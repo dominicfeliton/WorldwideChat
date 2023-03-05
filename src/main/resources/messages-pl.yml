@@ -444,3 +444,12 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Pomyślnie zarejestrowano błędy tłumacza do zignorowania.
   wwcConfigErrorsToIgnoreInvalid: Nieprawidłowe błędy tłumacza ignorować ustawione
     w config.yml. Rejestrowanie wartości domyślnych...
+  wwcConfigConversationIgnoreErrorsSuccess: Pomyślnie zmieniono błędy tłumacza, aby
+    zignorować frazy.
+  wwcConfigGUIIgnoreErrorsButton: Zmień błędy, aby zignorować
+  wwcConfigConversationIgnoreErrorsInput: 'Aktualna lista wyrażeń w błędach tłumacza
+    do zignorowania to: %i. Wpisz argumenty oddzielone przecinkiem (key=value, key2=value2)
+    lub wpisz clear, aby wyczyścić bieżące argumenty, lub wpisz 0, aby wrócić. Dodatkowo
+    wpisanie „*” spowoduje, że wtyczka nie sprawdza żadnych błędów tłumacza.'
+  wwcConfigConversationIgnoreErrorsCleared: Błędy tłumacza, aby zignorować frazy wyczyszczone
+    pomyślnie.

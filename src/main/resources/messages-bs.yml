@@ -442,3 +442,12 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Uspješno registrovani prevodilac greške ignorirati.
   wwcConfigErrorsToIgnoreInvalid: Nevažeće pogreške prevoditelja za zanemarivanje
     postavljene u config.yml. Registracija zadana...
+  wwcConfigConversationIgnoreErrorsSuccess: Uspješno je promijenio pogreške prevoditelja
+    kako bi ignorirao fraze.
+  wwcConfigGUIIgnoreErrorsButton: Promjena pogrešaka za zanemarivanje
+  wwcConfigConversationIgnoreErrorsInput: 'Trenutni popis fraza u pogreškama prevoditelja
+    koje treba zanemariti je: %i. Upišite argumente odvojene zarezom (key=value, key2=value2)
+    ili upišite jasno da biste izbrisali trenutne argove ili upišite 0 za povratak.
+    Uz to, tipkanje “*” uzrokovat će da dodatak ne provjerava pogreške prevoditelja.'
+  wwcConfigConversationIgnoreErrorsCleared: Prevoditelj greške ignorirati fraze uspješno
+    izbrisani.

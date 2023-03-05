@@ -455,3 +455,13 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Հաջողությամբ գրանցված թարգմանիչ սխալները անտեսել.
   wwcConfigErrorsToIgnoreInvalid: Անվավեր թարգմանիչ սխալներ է անտեսել սահմանված config.yml.
     Գրանցում Նախնականը...
+  wwcConfigConversationIgnoreErrorsSuccess: Հաջողությամբ փոխվել է թարգմանիչ սխալներ
+    է անտեսել արտահայտություններ.
+  wwcConfigGUIIgnoreErrorsButton: Փոխել սխալները `անտեսելու համար
+  wwcConfigConversationIgnoreErrorsInput: 'Անտեսել թարգմանչի սխալների արտահայտությունների
+    ներկայիս ցանկը ` %i: Մուտքագրեք փաստարկները, որոնք առանձնացված են ստորակետով (key=
+    value, key2 = value2), կամ մուտքագրեք պարզ ՝ ընթացիկ արգերը սրբելու համար, կամ
+    մուտքագրեք 0 ՝ հետ գնալու համար: Բացի այդ, մուտքագրում “*” կհանգեցնի plugin չի
+    ստուգել որեւէ թարգմանիչ սխալներ.'
+  wwcConfigConversationIgnoreErrorsCleared: Թարգմանիչ սխալներ է անտեսել արտահայտություններ
+    մաքրվել հաջողությամբ.
