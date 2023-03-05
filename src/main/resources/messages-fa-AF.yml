@@ -432,3 +432,16 @@ Messages:
     شد.
   wwcConfigConversationDeepLTranslateApiKeyInput: کلید API فعلی %i است لطفا یک کلید
     API برای DeepL وارد کنید، یا 0 را تایپ کنید تا به عقب برگردید.
+  wwcConfigErrorsToIgnoreSuccess: موفقیت ثبت نام اشتباهات ترجمه به چشم پوشی.
+  wwcConfigErrorsToIgnoreInvalid: خطاهای ترجمه نامعتبر به چشم پوشی در config.yml تنظیم
+    شده است. ثبت پیش فرض...
+  wwcConfigConversationIgnoreErrorsSuccess: موفقیت تغییر اشتباهات ترجمه به چشم پوشی
+    از عبارات.
+  wwcConfigGUIIgnoreErrorsButton: تغییر خطاها برای نادیده گرفتن
+  wwcConfigConversationIgnoreErrorsInput: 'لیست فعلی عبارات در خطاهای مترجم که باید
+    نادیده گرفته شود عبارتند از: %i. آرگومانهای جدا شده با کاما (key=value, key2=value2)
+    را تایپ کنید، یا برای پاک کردن آرگ های فعلی، کلید را تایپ کنید یا برای بازگشت
+    تایپ 0 را تایپ کنید. علاوه بر این، تایپ کردن «*» باعث می شود که افزونه هیچ خطای
+    مترجم را بررسی نکند.'
+  wwcConfigConversationIgnoreErrorsCleared: اشتباهات مترجم به چشم پوشی از عبارات با
+    موفقیت پاک.

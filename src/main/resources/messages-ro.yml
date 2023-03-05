@@ -457,3 +457,17 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: Cheia DeepL API setată cu succes.
   wwcConfigConversationDeepLTranslateApiKeyInput: Cheia API curentă este %i. Introduceți
     o cheie API pentru DeepL sau tastați 0 pentru a reveni.
+  wwcConfigErrorsToIgnoreSuccess: Erori de traducător înregistrate cu succes pentru
+    a ignora.
+  wwcConfigErrorsToIgnoreInvalid: Erori de traducător nevalide pentru a ignora setate
+    în config.yml. Înregistrarea valorilor implicite...
+  wwcConfigConversationIgnoreErrorsSuccess: A schimbat cu succes erorile traducătorului
+    pentru a ignora frazele.
+  wwcConfigGUIIgnoreErrorsButton: Modificați erorile pentru a ignora
+  wwcConfigConversationIgnoreErrorsInput: 'Lista curentă de fraze din erorile traducătorului
+    de ignorat este: %i. Argumente de tip separate printr-o virgulă (cheie = valoare,
+    key2=value2), sau tastați clar pentru a șterge arg-urile curente sau tastați 0
+    pentru a reveni. În plus, tastarea „*” va determina pluginul să nu verifice erorile
+    traducătorului.'
+  wwcConfigConversationIgnoreErrorsCleared: Erori de traducător pentru a ignora frazele
+    șterse cu succes.

@@ -434,3 +434,17 @@ Messages:
     ਕੀਤੀ ਗਈ.
   wwcConfigConversationDeepLTranslateApiKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ %i ਹੈ ਕਿਰਪਾ ਕਰਕੇ
     DepL ਲਈ ਇੱਕ API ਕੁੰਜੀ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigErrorsToIgnoreSuccess: ਸਫਲਤਾਪੂਰਕ ਰਜਿਸਟਰ ਅਨੁਵਾਦਕ ਗਲਤੀ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼ ਕਰਨ
+    ਲਈ.
+  wwcConfigErrorsToIgnoreInvalid: ਗਲਤ ਅਨੁਵਾਦਕ ਗਲਤੀ config.yml ਵਿੱਚ ਸੈੱਟ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼
+    ਕਰਨ ਲਈ. ਡਿਫੌਲਟਸ ਰਜਿਸਟਰ ਕਰਨਾ...
+  wwcConfigConversationIgnoreErrorsSuccess: ਸਫਲਤਾਪੂਰਵਕ ਅਨੁਵਾਦਕ ਦੀਆਂ ਗਲਤੀਆਂ ਨੂੰ ਵਾਕਾਂਸ਼ਾਂ
+    ਨੂੰ ਨਜ਼ਰ ਅੰਦਾਜ਼ ਕਰਨ ਲਈ ਬਦਲ ਦਿੱਤਾ.
+  wwcConfigGUIIgnoreErrorsButton: ਅਣਡਿੱਠ ਕਰਨ ਲਈ ਗਲਤੀਆਂ ਬਦਲੋ
+  wwcConfigConversationIgnoreErrorsInput: 'ਅਣਡਿੱਠ ਕਰਨ ਲਈ ਅਨੁਵਾਦਕ ਗਲਤੀਆਂ ਵਿੱਚ ਵਾਕਾਂਸ਼ਾਂ
+    ਦੀ ਮੌਜੂਦਾ ਸੂਚੀ ਇਹ ਹਨ: %i ਇੱਕ ਕਾਮੇ (ਕੁੰਜੀ = ਮੁੱਲ, key2 = value2) ਦੁਆਰਾ ਵੱਖ ਕੀਤੇ
+    ਦਲੀਲਾਂ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਮੌਜੂਦਾ args ਨੂੰ ਪੂੰਝਣ ਲਈ ਸਾਫ ਟਾਈਪ ਕਰੋ, ਜਾਂ 0 ਵਾਪਸ ਜਾਣ ਲਈ
+    ਟਾਈਪ ਕਰੋ. ਇਸ ਤੋਂ ਇਲਾਵਾ, “*” ਟਾਈਪ ਕਰਨ ਨਾਲ ਪਲੱਗਇਨ ਕਿਸੇ ਅਨੁਵਾਦਕ ਦੀਆਂ ਗਲਤੀਆਂ ਦੀ ਜਾਂਚ
+    ਨਹੀਂ ਕਰੇਗੀ.'
+  wwcConfigConversationIgnoreErrorsCleared: ਵਾਕਾਂਸ਼ਾਂ ਨੂੰ ਨਜ਼ਰ ਅੰਦਾਜ਼ ਕਰਨ ਲਈ ਅਨੁਵਾਦਕ
+    ਗਲਤੀਆਂ ਸਫਲਤਾਪੂਰਵਕ ਸਾਫ ਹੋ ਗਈਆਂ.

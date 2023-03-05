@@ -430,3 +430,16 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API anahtarı başarıyla ayarlandı.
   wwcConfigConversationDeepLTranslateApiKeyInput: Geçerli API anahtarı %i. Lütfen
     DeepL için bir API anahtarı girin veya geri dönmek için 0 yazın.
+  wwcConfigErrorsToIgnoreSuccess: Başarıyla kayıtlı çevirmen hataları yok sayılır.
+  wwcConfigErrorsToIgnoreInvalid: Config.yml kümesinde yoksayılan geçersiz çevirmen
+    hataları. Varsayılanlar kaydediliyor...
+  wwcConfigConversationIgnoreErrorsSuccess: İfadeleri yok saymak için çevirmen hatalarını
+    başarıyla değiştirdi.
+  wwcConfigGUIIgnoreErrorsButton: Hataları Yoksaymak için Değiştir
+  wwcConfigConversationIgnoreErrorsInput: 'Çevirmen hatalarının yoksayılması gereken
+    ifadelerin geçerli listesi şunlardır: %i. Virgülle ayrılmış bağımsız değişkenler
+    yazın (key=value, key2=value2) veya geçerli arg''ları silmek için clear yazın
+    veya geri dönmek için 0 yazın. Ek olarak, “*” yazmak eklentinin çevirmen hatalarını
+    kontrol etmemesine neden olur.'
+  wwcConfigConversationIgnoreErrorsCleared: Başarıyla temizlenen ifadeleri yok saymak
+    için çevirmen hataları.

@@ -440,3 +440,16 @@ Messages:
     árangri.
   wwcConfigConversationDeepLTranslateApiKeyInput: Núverandi API lykill er %i. Vinsamlegast
     sláðu inn API lykil fyrir DeepL, eða tegund 0 til að fara aftur.
+  wwcConfigErrorsToIgnoreSuccess: Tókst skráð þýðandi villur til að hunsa.
+  wwcConfigErrorsToIgnoreInvalid: Ógild þýðandi villur til að hunsa sett í config.yml.
+    Skráning vanskila...
+  wwcConfigConversationIgnoreErrorsSuccess: Tókst að breyta þýðandi villum til að
+    hunsa setningar.
+  wwcConfigGUIIgnoreErrorsButton: Breyta villum til að hunsa
+  wwcConfigConversationIgnoreErrorsInput: 'Núverandi listi yfir orðasambönd í þýðandi
+    villum til að hunsa eru: %i. Sláðu inn rök aðskilin með kommu (lykill = gildi,
+    lykill2=value2), eða skrifaðu skýrt til að þurrka núverandi args, eða tegund 0
+    til að fara til baka. Að auki, slá “*” mun valda því að tappi til að athuga ekki
+    neinar þýðandi villur.'
+  wwcConfigConversationIgnoreErrorsCleared: Þýðandi villur til að hunsa setningar
+    hreinsaðar með góðum árangri.

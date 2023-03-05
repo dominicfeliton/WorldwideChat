@@ -440,3 +440,17 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: Ключ DeepL API успешно установлен.
   wwcConfigConversationDeepLTranslateApiKeyInput: Текущий ключ API — %i. Введите ключ
     API для DeepL или введите 0, чтобы вернуться назад.
+  wwcConfigErrorsToIgnoreSuccess: Успешно зарегистрированные ошибки переводчика, которые
+    следует игнорировать.
+  wwcConfigErrorsToIgnoreInvalid: Неверные ошибки переводчика, которые следует игнорировать,
+    заданы в config.yml. Регистрация значений по умолчанию...
+  wwcConfigConversationIgnoreErrorsSuccess: Успешно исправлены ошибки переводчика,
+    позволяющие игнорировать фразы.
+  wwcConfigGUIIgnoreErrorsButton: Измените ошибки на игнорирование
+  wwcConfigConversationIgnoreErrorsInput: 'Текущий список фраз в ошибках переводчика,
+    которые следует игнорировать: %i. Введите аргументы, разделенные запятой (key=value,
+    key2=value2), или clear, чтобы стереть текущие аргументы, или введите 0, чтобы
+    вернуться назад. Кроме того, ввод «*» приведет к тому, что плагин не будет проверять
+    ошибки переводчика.'
+  wwcConfigConversationIgnoreErrorsCleared: Ошибки переводчика при игнорировании фраз
+    успешно устранены.

@@ -431,3 +431,16 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API ključ je uspešno postavljen.
   wwcConfigConversationDeepLTranslateApiKeyInput: Trenutni API ključ je %i. Molimo
     unesite API ključ za DeepL, ili unesite 0 da biste se vratili.
+  wwcConfigErrorsToIgnoreSuccess: Uspešno registrovani prevodilac greške ignorisati.
+  wwcConfigErrorsToIgnoreInvalid: Nevažeći prevodilac greške ignorisati set in config.iml.
+    Registrovanje podrazumevanih vrednosti...
+  wwcConfigConversationIgnoreErrorsSuccess: Uspešno promenio greške prevodioca da
+    ignoriše fraze.
+  wwcConfigGUIIgnoreErrorsButton: Promenite greške da biste ignorisali
+  wwcConfigConversationIgnoreErrorsInput: 'Trenutna lista fraza u prevodilačkim greškama
+    koje treba ignorisati je: %i. Upišite argumente odvojene zarezom (key=value, key2=value2),
+    ili ukucajte jasno da obrišete trenutne argove, ili unesite 0 da biste se vratili
+    nazad. Pored toga, kucanje „*“ će dovesti do toga da dodatak ne proverava greške
+    prevodioca.'
+  wwcConfigConversationIgnoreErrorsCleared: Prevodilac greške ignorisati fraze uspešno
+    izbrisani.

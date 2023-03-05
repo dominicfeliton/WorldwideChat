@@ -392,3 +392,14 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: מפתח ה- API של Deepl מוגדר בהצלחה.
   wwcConfigConversationDeepLTranslateApiKeyInput: מפתח ה- API הנוכחי הוא %i. אנא הזן
     מפתח API עבור DeepL, או הקלד 0 כדי לחזור.
+  wwcConfigErrorsToIgnoreSuccess: שגיאות מתורגמן נרשמו בהצלחה להתעלם.
+  wwcConfigErrorsToIgnoreInvalid: שגיאות מתורגמן לא חוקיות להתעלם להגדיר config.yml.
+    רישום ברירות מחדל...
+  wwcConfigConversationIgnoreErrorsSuccess: שינה בהצלחה את שגיאות המתרגם כדי להתעלם
+    מביטויים.
+  wwcConfigGUIIgnoreErrorsButton: שינוי שגיאות כדי להתעלם
+  wwcConfigConversationIgnoreErrorsInput: 'הרשימה הנוכחית של ביטויים בשגיאות מתרגם
+    להתעלם הם: %i. הקלד ארגומנטים המופרדים באמצעות פסיק (key=value, key2=value2),
+    או הקלד clear כדי למחוק את הארגומנטים הנוכחיים, או הקלד 0 כדי לחזור אחורה. בנוסף,
+    הקלדת "*" תגרום לתוסף לא לבדוק שגיאות מתורגמן.'
+  wwcConfigConversationIgnoreErrorsCleared: שגיאות מתרגם להתעלם ביטויים ניקו בהצלחה.

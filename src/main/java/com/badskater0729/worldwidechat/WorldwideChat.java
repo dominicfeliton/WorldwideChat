@@ -97,7 +97,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean outOfDate = false;
 	
 	private String pluginVersion = this.getDescription().getVersion();
-	private String currentMessagesConfigVersion = "02242022-2"; // MMDDYYYY-revisionNumber
+	private String currentMessagesConfigVersion = "03052022-1"; // MMDDYYYY-revisionNumber
 	private volatile String translatorName = "Starting";
 
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
@@ -272,31 +272,45 @@ public class WorldwideChat extends JavaPlugin {
 	
 	/**
 	 * Reload this plugin with a null sender but can toggle state
-	 * @param invalidState - whether there was a previously functional translator or not
+	 * @param saveMainConfig - whether to save the main config or not
 	 */
-	public void reload(boolean invalidState) {
-		reload(null, invalidState);
+	public void reload(boolean saveMainConfig) {
+		reload(null, saveMainConfig);
 	}
 	
 	/**
-	 * Reload this plugin with a sender and pre-defined state
+	 * Reload this plugin with a sender and choose whether to save main config
 	 * @param sender - Valid command sender
 	 */
 	public void reload(CommandSender sender) {
-		reload(sender, translatorName.equalsIgnoreCase("Invalid"));
+		reload(sender, false);
 	}
 	
 	/**
 	  * Reloads the plugin and sends a message to the caller
-	  * inSender - CommandSender who requested reload
+	  * @param inSender - CommandSender who requested reload, null if none
+	  * @param saveMainConfig - whether to save the main config or not
+	  * THIS METHOD MUST BE RUN SYNCED TO MAIN THREAD
 	  */
-	public void reload(CommandSender inSender, boolean invalidState) {
+	public void reload(CommandSender inSender, boolean saveMainConfig) {
 		/* Put plugin into a reloading state */
+		// Check if plugin was previously "disabled" or "invalid"
+		boolean invalidState = translatorName.equalsIgnoreCase("Invalid");
 		debugMsg("Is invalid state???:::" + invalidState);
+
+		if (translatorName.equals("Starting")) {
+			debugMsg("Cannot reload while reloading!");
+			return;
+		}
 		translatorName = "Starting";
 		closeAllInvs();
 		translatorErrorCount = 0;
-		
+
+		/* Save main config on current thread */
+		if (saveMainConfig) {
+			getConfigManager().saveMainConfig(false);
+		}
+
 		/* Send start reload message */
 		if (inSender != null) {
 			final TextComponent wwcrBegin = Component.text()

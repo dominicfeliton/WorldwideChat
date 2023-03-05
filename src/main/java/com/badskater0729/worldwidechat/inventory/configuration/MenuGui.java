@@ -166,6 +166,8 @@ public class MenuGui implements InventoryProvider {
 	    		new TranslatorSettingsConvos.ErrorLimit()));
 	    transSet.add(new ConvoElement(2, 2, "wwcConfigGUICharacterLimitButton", XMaterial.NAME_TAG,
 	    		new TranslatorSettingsConvos.CharacterLimit()));
+		transSet.add(new ConvoElement(2, 3, "wwcConfigGUIIgnoreErrorsButton", XMaterial.NAME_TAG,
+						new TranslatorSettingsConvos.IgnoreErrors()));
 	    transSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
 		transSet.add(new CommonElement(3, 4, "Quit"));
 		transSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));

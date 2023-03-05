@@ -434,3 +434,16 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API-nøglesæt med succes.
   wwcConfigConversationDeepLTranslateApiKeyInput: Den nuværende API-nøgle er %i. Indtast
     venligst en API-nøgle for DeepL, eller skriv 0 for at gå tilbage.
+  wwcConfigErrorsToIgnoreSuccess: Succesfuldt registrerede oversætterfejl at ignorere.
+  wwcConfigErrorsToIgnoreInvalid: Ugyldige oversætter fejl at ignorere sæt i config.yml.
+    Registrering af standardindstillinger...
+  wwcConfigConversationIgnoreErrorsSuccess: Succesfuldt ændret oversætterfejlene for
+    at ignorere sætninger.
+  wwcConfigGUIIgnoreErrorsButton: Ændre fejl for at ignorere
+  wwcConfigConversationIgnoreErrorsInput: 'Den aktuelle liste over sætninger i oversætterfejl
+    at ignorere er: %i. Skriv argumenter adskilt af et komma (key=value, key2=value2),
+    eller skriv clear for at slette de nuværende args, eller skriv 0 for at gå tilbage.
+    Derudover vil indtastning af „*“ medføre, at pluginet ikke kontrollerer nogen
+    oversætterfejl.'
+  wwcConfigConversationIgnoreErrorsCleared: Oversætter fejl for at ignorere sætninger
+    ryddet med succes.

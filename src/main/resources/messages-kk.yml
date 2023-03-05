@@ -429,3 +429,16 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API кілті сәтті орнатылды.
   wwcConfigConversationDeepLTranslateApiKeyInput: Ағымдағы API кілті %i болып табылады.
     DeepL үшін API кілтін енгізіңіз немесе кері қайту үшін 0 теріңіз.
+  wwcConfigErrorsToIgnoreSuccess: Елемеу үшін сәтті тіркелген аудармашы қателері.
+  wwcConfigErrorsToIgnoreInvalid: Config.yml орнатылған елемеу үшін жарамсыз аудармашы
+    қателер. Дефолттарды тіркеу...
+  wwcConfigConversationIgnoreErrorsSuccess: Фразаларды елемеу үшін аудармашы қателерін
+    сәтті өзгертті.
+  wwcConfigGUIIgnoreErrorsButton: Қателерді елемеу үшін өзгертіңіз
+  wwcConfigConversationIgnoreErrorsInput: 'елемеуге аудармашы қателер сөз тіркестерінің
+    ағымдағы тізімі болып табылады: %i. үтірмен бөлінген түрі аргументтер (кілт =
+    мән, key2 = value2), немесе ағымдағы args сүртіңіз анық теріңіз, немесе кері қайту
+    үшін 0 теріңіз. Сонымен қатар, “*” теру плагиннің аудармашы қателерін тексермеуіне
+    әкеледі.'
+  wwcConfigConversationIgnoreErrorsCleared: Аудармашы қателер сәтті тазартылды фразаларды
+    елемеуге.

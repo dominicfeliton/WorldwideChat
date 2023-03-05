@@ -433,3 +433,17 @@ Messages:
     చేయబడింది.
   wwcConfigConversationDeepLTranslateApiKeyInput: ప్రస్తుత API కీ %i. DeepL కొరకు
     దయచేసి API కీని ఇన్పుట్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigErrorsToIgnoreSuccess: విస్మరించడానికి విజయవంతంగా నమోదు చేసిన అనువాదకుడు
+    లోపాలు.
+  wwcConfigErrorsToIgnoreInvalid: config.yml లో సెట్ విస్మరించడానికి చెల్లని అనువాదకుడు
+    లోపాలు. డిఫాల్ట్లను నమోదు చేస్తోంది...
+  wwcConfigConversationIgnoreErrorsSuccess: విజయవంతంగా పదబంధాలు విస్మరించడానికి అనువాదకుడు
+    లోపాలు మార్చబడింది.
+  wwcConfigGUIIgnoreErrorsButton: విస్మరించడానికి లోపాలను మార్చండి
+  wwcConfigConversationIgnoreErrorsInput: 'విస్మరించడానికి అనువాదకుడు లోపాలలో ఉన్న
+    పదబంధాల ప్రస్తుత జాబితా: %i. కామాతో వేరు చేయబడిన వాదనలను టైప్ చేయండి (key=value,
+    key2=value2), లేదా ప్రస్తుత అర్జీలను తుడిచివేయడానికి స్పష్టంగా టైప్ చేయండి లేదా
+    తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి. అదనంగా, “*” అని టైప్ చేయడం వల్ల ప్లగ్ఇన్
+    అనువాదకుల లోపాలను తనిఖీ చేయదు.'
+  wwcConfigConversationIgnoreErrorsCleared: విజయవంతంగా క్లియర్ పదబంధాలు విస్మరించడానికి
+    అనువాదకుడు లోపాలు.

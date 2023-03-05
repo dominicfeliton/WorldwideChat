@@ -363,3 +363,11 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API 키가 성공적으로 설정되었습니다.
   wwcConfigConversationDeepLTranslateApiKeyInput: 현재 API 키는 %i입니다. DeepL의 API 키를 입력하거나
     뒤로 돌아가려면 0을 입력하십시오.
+  wwcConfigErrorsToIgnoreSuccess: 무시할 번역기 오류를 성공적으로 등록했습니다.
+  wwcConfigErrorsToIgnoreInvalid: config.yml에 설정된 무시할 번역기 오류가 잘못되었습니다.기본값 등록 중...
+  wwcConfigConversationIgnoreErrorsSuccess: 번역기 오류가 구문을 무시하도록 성공적으로 변경되었습니다.
+  wwcConfigGUIIgnoreErrorsButton: 오류를 무시하도록 변경
+  wwcConfigConversationIgnoreErrorsInput: 현재 무시할 번역기 오류의 문구 목록은 다음과 같습니다. %i. 쉼표로
+    구분된 인수 (key=value, key2=value2) 를 입력하거나 현재 인수를 지우려면 clear를 입력하고 이전 인수를 지우려면 0을
+    입력하십시오.또한 “*”를 입력하면 플러그인이 번역기 오류를 확인하지 않습니다.
+  wwcConfigConversationIgnoreErrorsCleared: 문구를 무시하는 번역기 오류가 성공적으로 지워졌습니다.

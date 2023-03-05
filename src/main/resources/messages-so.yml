@@ -460,3 +460,16 @@ Messages:
     guul leh.
   wwcConfigConversationDeepLTranslateApiKeyInput: Furaha API ee hadda jira waa %i.
     Fadlan geli furaha API ee DeepL, ama nooca 0 si aad dib ugu noqoto.
+  wwcConfigErrorsToIgnoreSuccess: Si guul leh u diiwaan gashan khaladaad turjumaan
+  wwcConfigErrorsToIgnoreInvalid: khaladaad turjumaan aan sax ahayn in ay iska indha
+    dhigay config.yml. Diiwaangelinta asalka ah...
+  wwcConfigConversationIgnoreErrorsSuccess: Si guul leh u bedelay qaladaad turjumaan
+    in ay iska indha tiraan
+  wwcConfigGUIIgnoreErrorsButton: Isbeddel khaladaadka si aad u
+  wwcConfigConversationIgnoreErrorsInput: 'Liiska hadda ee weedhaha turjumaanka khaladaadka
+    ah ee la iska indha tirayo waa: %i. Nooca doodaha kala soocaya comma (furah=qiimaha,
+    key2=value2), ama nooca cad si aad u tirtirto args hadda, ama nooca 0 si aad dib
+    ugu noqoto. Intaa waxaa dheer, qorista “*” waxay keeni doontaa plugin in aysan
+    hubin wixii khaladaad ah turjumaan.'
+  wwcConfigConversationIgnoreErrorsCleared: khaladaadka Translator in ay iska indha
+    weedho si guul

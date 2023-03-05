@@ -430,3 +430,15 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API -näppäin asetettu onnistuneesti.
   wwcConfigConversationDeepLTranslateApiKeyInput: Nykyinen API-avain on %i. Anna DeepL-sovellusliittymän
     avain tai kirjoita 0 palataksesi takaisin.
+  wwcConfigErrorsToIgnoreSuccess: Onnistuneesti rekisteröity kääntäjä virheitä sivuuttaa.
+  wwcConfigErrorsToIgnoreInvalid: Virheellinen kääntäjä virheitä ohittaa asetettu
+    config.yml. Oletusarvojen rekisteröinti...
+  wwcConfigConversationIgnoreErrorsSuccess: Onnistuneesti muuttanut kääntäjän virheitä
+    sivuuttaa lauseita.
+  wwcConfigGUIIgnoreErrorsButton: Muuta virheitä sivuuttaa
+  wwcConfigConversationIgnoreErrorsInput: 'Ohittavien kääntäjävirheiden nykyinen luettelo
+    on: %i. Kirjoita argumentit pilkulla erotettuna (key=value, key2=value2) tai kirjoita
+    selkeä pyyhkimällä nykyiset argit tai kirjoita 0 palataksesi takaisin. Lisäksi
+    kirjoittamalla ”*” aiheuttaa sen, että laajennus ei tarkista kääntäjän virheitä.'
+  wwcConfigConversationIgnoreErrorsCleared: Kääntäjä virheitä sivuuttaa lauseita tyhjennetty
+    onnistuneesti.

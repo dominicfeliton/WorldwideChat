@@ -432,3 +432,16 @@ Messages:
     ټاکل شوی.
   wwcConfigConversationDeepLTranslateApiKeyInput: اوسنی API کیلي %i دی. مهرباني وکړئ
     د ډیپ L لپاره د API کیلي داخل کړئ، یا د بېرته تګ لپاره 0 ډول کړئ.
+  wwcConfigErrorsToIgnoreSuccess: په بریالیتوب سره راجستر شوي ژباړونکي غلطی له پامه
+    غورځول.
+  wwcConfigErrorsToIgnoreInvalid: د ناسم ژباړونکي تېروتنې چې په config.yml کې د سیټ
+    څخه سترګې پټې شي.... ړنګونه ثبتول
+  wwcConfigConversationIgnoreErrorsSuccess: په بریالیتوب سره د ژباړونکي غلطی بدل کړ
+    ترڅو د جملې څخه سترګې پټې کړي.
+  wwcConfigGUIIgnoreErrorsButton: تېروتنې بدلول چې له پامه غورځول شي
+  wwcConfigConversationIgnoreErrorsInput: 'د ژباړونکي تېروتنې په تېروتنو کې د جملې
+    اوسنی لړ دا دي: %i. د کاما (key=value, key2=value2) لخوا جلا شوي مباحثې ولیکئ،
+    یا د اوسني args د پاکولو لپاره واضح ډول کړئ، یا د بېرته تللو لپاره 0 ټایپ کړئ.
+    برسیره پردې، «*» ټایپ کول به د فلپین سبب شي چې د ژباړونکي غلطی ونه ګوري.'
+  wwcConfigConversationIgnoreErrorsCleared: د ژباړونکي غلطی چې په بریالیتوب سره پاک
+    شوي عبارتونه سترګې پټې کړي.

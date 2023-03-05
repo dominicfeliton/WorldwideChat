@@ -55,3 +55,7 @@ Translator:
   rateLimit: 0
   messageCharLimit: 255
   errorLimit: 5
+  errorsToIgnore:
+  - "confidence"
+  - "same as target"
+  - "detect the source language"

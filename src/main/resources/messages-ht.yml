@@ -425,3 +425,15 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API kle mete avèk siksè.
   wwcConfigConversationDeepLTranslateApiKeyInput: Kle API aktyèl la se % mwen.Tanpri
     antre yon kle API pou DeepL, oswa tape 0 pou tounen.
+  wwcConfigErrorsToIgnoreSuccess: Avèk siksè anrejistre erè tradiktè ki inyore.
+  wwcConfigErrorsToIgnoreInvalid: Envalid erè tradiktè ki inyore mete nan config.yml.
+    Enskri défaut...
+  wwcConfigConversationIgnoreErrorsSuccess: Avèk siksè chanje erè yo ki tradiktè inyore
+    fraz.
+  wwcConfigGUIIgnoreErrorsButton: Chanje Erè pou inyore
+  wwcConfigConversationIgnoreErrorsInput: 'Lis aktyèl la nan fraz nan erè tradiktè
+    ki inyore yo se: % mwen. agiman Kalite separe pa yon vigil (kle = valè, key2 =
+    value2), oswa tape klè li siye args yo kounye a, oswa tape 0 yo ale tounen. Anplis
+    de sa, sezisman “*” ap lakòz Plugin a pa tcheke nenpòt ki erè tradiktè.'
+  wwcConfigConversationIgnoreErrorsCleared: Erè tradiktè inyore fraz otorize avèk
+    siksè.

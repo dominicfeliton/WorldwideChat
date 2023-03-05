@@ -107,9 +107,10 @@ public class WatsonTranslation extends BasicTranslation {
 			}
 			/* Actual translation */
 			TranslateOptions options = new TranslateOptions.Builder().addText(textToTranslate)
-					.source(inputLang.equals("None") ? "" : inputLang).target(outputLang).build();
+					.source(inputLang.equalsIgnoreCase("None") ? "" : inputLang).target(outputLang).build();
 
 			/* Process final output */
+			// TODO: This works, but rewrite with Gson
 			TranslationResult translationResult = translatorService.translate(options).execute().getResult();
 			JsonElement jsonTree = JsonParser.parseString(translationResult.toString());
 			JsonObject jsonObject = jsonTree.getAsJsonObject();

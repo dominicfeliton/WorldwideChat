@@ -419,3 +419,15 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API võti seatud edukalt.
   wwcConfigConversationDeepLTranslateApiKeyInput: Praegune API võti on %i. Sisestage
     DeepL-i jaoks API võti või tüüp 0, et minna tagasi.
+  wwcConfigErrorsToIgnoreSuccess: Edukalt registreeritud tõlkija vigu ignoreerida.
+  wwcConfigErrorsToIgnoreInvalid: Sobimatu tõlkija tõrked ignoreerida seatud config.yml.
+    Vaikesätete registreerimine...
+  wwcConfigConversationIgnoreErrorsSuccess: Edukalt muutnud tõlkija vigu ignoreerida
+    fraase.
+  wwcConfigGUIIgnoreErrorsButton: Muuda eiratavaid tõrkeid
+  wwcConfigConversationIgnoreErrorsInput: 'Praegune tõlkija tõrgete fraaside loend
+    on: %i. Tippige komaga eraldatud argumendid (võti = väärtus, key2=value2) või
+    tippige praeguste argide pühkimiseks tühjendage või tippige 0, et minna tagasi.
+    Lisaks kirjutades „*” põhjustab plugin ei kontrolli tõlkija vigu.'
+  wwcConfigConversationIgnoreErrorsCleared: Tõlkija vead ignoreerida fraase kustutatud
+    edukalt.

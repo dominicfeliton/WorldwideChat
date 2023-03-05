@@ -383,3 +383,12 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL ኤ ፒ አይ ቁልፍ በተሳካ ሁኔታ ተዘጋጅቷል።
   wwcConfigConversationDeepLTranslateApiKeyInput: የአሁኑ ኤ ፒ አይ ቁልፍ %i ነው። እባክዎ ለ DeepL
     ኤ ፒ አይ ቁልፍ ያስገቡ ወይም ወደኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigErrorsToIgnoreSuccess: ችላ በተሳካ ሁኔታ ተርጓሚ ስህተቶች የተመዘገቡ።
+  wwcConfigErrorsToIgnoreInvalid: በ config.yml ውስጥ ተዘጋጅቷል ችላ ለማለት ልክ ያልሆነ ተርጓሚ ስህተቶች።
+    ነባሪዎች በመመዝገብ ላይ...
+  wwcConfigConversationIgnoreErrorsSuccess: ሐረጎችን ችላ ለማለት የተርጓሚውን ስህተቶች በተሳካ ሁኔታ ቀይረዋል።
+  wwcConfigGUIIgnoreErrorsButton: ችላ ለማለት ስህተቶችን ይቀይሩ
+  wwcConfigConversationIgnoreErrorsInput: 'በአስተርጓሚ ስህተቶች ውስጥ አሁን ያሉት የሐረጎች ዝርዝር የሚከተሉት
+    ናቸው: %i. በኮማ የተለዩ ክርክሮችን ይተይቡ (ቁልፍ = ዋጋ, key2=value2), ወይም የአሁኑን አርግጎች ለማጥራት ግልጽ
+    ይተይቡ, ወይም ወደኋላ ለመመለስ 0 ይተይቡ። በተጨማሪም «*» መተየብ ተሰኪው ማንኛውንም ተርጓሚ ስህተቶች እንዳያረጋግጥ ያደርገዋል።'
+  wwcConfigConversationIgnoreErrorsCleared: በተሳካ ሁኔታ ጸድቷል ሐረጎች ችላ ተርጓሚ ስህተቶች።

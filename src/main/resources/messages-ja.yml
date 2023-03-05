@@ -347,3 +347,10 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API キーが正常に設定されました。
   wwcConfigConversationDeepLTranslateApiKeyInput: 現在の API キーは %i です。DeepL の API キーを入力するか、0
     を入力して戻ってください。
+  wwcConfigErrorsToIgnoreSuccess: 無視できるトランスレータエラーが正常に登録されました。
+  wwcConfigErrorsToIgnoreInvalid: config.yml に設定されている無視すべきトランスレータエラーが無効です。デフォルトを登録中...
+  wwcConfigConversationIgnoreErrorsSuccess: 翻訳者のエラーがフレーズを無視するように正常に変更されました。
+  wwcConfigGUIIgnoreErrorsButton: エラーを無視するように変更
+  wwcConfigConversationIgnoreErrorsInput: 無視するトランスレータエラーに含まれる現在のフレーズのリストは次のとおりです。引数をカンマで区切って入力するか
+    (key=value、key2=value2)、clear と入力して現在の引数を消去するか、0 を入力して戻ります。さらに、「*」を入力すると、プラグインはトランスレータエラーをチェックしなくなります。
+  wwcConfigConversationIgnoreErrorsCleared: フレーズを無視する翻訳者エラーは正常にクリアされました。

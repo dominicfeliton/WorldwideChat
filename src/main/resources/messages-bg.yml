@@ -446,3 +446,17 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API ключ набор успешно.
   wwcConfigConversationDeepLTranslateApiKeyInput: Текущият API ключ е %i. Моля, въведете
     API ключ за DeepL или въведете 0, за да се върнете.
+  wwcConfigErrorsToIgnoreSuccess: Успешно регистрирани грешки на преводача, които
+    трябва да се игнорират.
+  wwcConfigErrorsToIgnoreInvalid: Невалидни грешки на преводача, за да игнорирате
+    зададени в config.yml. Регистриране по подразбиране...
+  wwcConfigConversationIgnoreErrorsSuccess: Успешно променя грешките на преводача,
+    за да игнорира фрази.
+  wwcConfigGUIIgnoreErrorsButton: Промяна на грешки, за да игнорирате
+  wwcConfigConversationIgnoreErrorsInput: 'Текущият списък с фрази в грешките на преводача,
+    които трябва да игнорирате, са: %i. Въведете аргументи, разделени със запетая
+    (key=value, key2=value2), или въведете clear, за да изтриете текущите args, или
+    въведете 0, за да се върнете назад. Освен това въвеждането на „*“ ще накара приставката
+    да не проверява грешките на преводача.'
+  wwcConfigConversationIgnoreErrorsCleared: Грешки на преводача, за да игнорират фрази
+    изчистени успешно.

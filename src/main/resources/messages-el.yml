@@ -474,3 +474,16 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: Το κλειδί DeepL API ορίστηκε επιτυχώς.
   wwcConfigConversationDeepLTranslateApiKeyInput: Το τρέχον κλειδί API είναι %i. Εισαγάγετε
     ένα κλειδί API για το DeepL ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigErrorsToIgnoreSuccess: Επιτυχής καταχώρηση σφαλμάτων μεταφραστή προς αγνόηση.
+  wwcConfigErrorsToIgnoreInvalid: Μη έγκυρα σφάλματα μετάφρασης για παράβλεψη που
+    ορίστηκαν στο config.yml. Καταχώρηση προεπιλογών...
+  wwcConfigConversationIgnoreErrorsSuccess: Επιτυχής αλλαγή των σφαλμάτων μεταφραστή
+    για να αγνοήσει φράσεις.
+  wwcConfigGUIIgnoreErrorsButton: Αλλαγή σφαλμάτων για Παράβλεψη
+  wwcConfigConversationIgnoreErrorsInput: 'Η τρέχουσα λίστα φράσεων σε σφάλματα μεταφραστή
+    προς παράβλεψη είναι: %i. Πληκτρολογήστε ορίσματα χωρισμένα με κόμμα (key=value,
+    key2=value2), ή πληκτρολογήστε clear για να σβήσετε τα τρέχοντα args, ή πληκτρολογήστε
+    0 για να επιστρέψετε. Επιπλέον, πληκτρολογώντας «*» θα έχει ως αποτέλεσμα το πρόσθετο
+    να μην ελέγχει τυχόν σφάλματα μεταφραστή.'
+  wwcConfigConversationIgnoreErrorsCleared: Σφάλματα μεταφραστή για να αγνοήσετε φράσεις
+    που εκκαθαρίζονται με επιτυχία.

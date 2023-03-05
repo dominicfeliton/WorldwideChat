@@ -443,3 +443,16 @@ Messages:
     framgångsrikt.
   wwcConfigConversationDeepLTranslateApiKeyInput: Den aktuella API-nyckeln är %i.
     Ange en API-nyckel för DeepL, eller skriv 0 för att gå tillbaka.
+  wwcConfigErrorsToIgnoreSuccess: Framgångsrikt registrerade översättarfel att ignorera.
+  wwcConfigErrorsToIgnoreInvalid: Ogiltiga översättningsfel att ignorera anges i config.yml.
+    Registrerar standardvärden...
+  wwcConfigConversationIgnoreErrorsSuccess: Ändrade översättarens fel framgångsrikt
+    för att ignorera fraser.
+  wwcConfigGUIIgnoreErrorsButton: Ändra fel för att ignorera
+  wwcConfigConversationIgnoreErrorsInput: 'Den aktuella listan med fraser i översättningsfel
+    att ignorera är: %i. Skriv argument åtskilda av ett kommatecken (key=value, key2=value2),
+    eller skriv clear för att radera aktuella args, eller skriv 0 för att gå tillbaka.
+    Dessutom, att skriva ”*” kommer att orsaka plugin för att inte kontrollera några
+    översättare fel.'
+  wwcConfigConversationIgnoreErrorsCleared: Översättarfel för att ignorera fraser
+    rensas framgångsrikt.

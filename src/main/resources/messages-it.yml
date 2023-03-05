@@ -459,3 +459,17 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: Chiave API DeepL impostata correttamente.
   wwcConfigConversationDeepLTranslateApiKeyInput: La chiave API corrente è %i. Inserisci
     una chiave API per DeepL o digita 0 per tornare indietro.
+  wwcConfigErrorsToIgnoreSuccess: Errori del traduttore registrati con successo da
+    ignorare.
+  wwcConfigErrorsToIgnoreInvalid: Errori di traduzione non validi da ignorare impostati
+    in config.yml. Registrazione delle impostazioni predefinite...
+  wwcConfigConversationIgnoreErrorsSuccess: Sono stati modificati correttamente gli
+    errori del traduttore per ignorare le frasi.
+  wwcConfigGUIIgnoreErrorsButton: Modifica gli errori da ignorare
+  wwcConfigConversationIgnoreErrorsInput: 'L''attuale elenco di frasi negli errori
+    di traduzione da ignorare è: %i. Digita gli argomenti separati da una virgola
+    (key=value, key2=value2) oppure digita clear per cancellare gli argomenti correnti
+    oppure digita 0 per tornare indietro. Inoltre, digitando «*» il plugin non verificherà
+    alcun errore del traduttore.'
+  wwcConfigConversationIgnoreErrorsCleared: Gli errori del traduttore per ignorare
+    le frasi sono stati cancellati con successo.

@@ -105,6 +105,7 @@ public class WWCStats extends BasicCommand {
 					}
 					
 					/* Process stats of target */
+					// TODO::: Show stats of ActiveTranslator as well
 					// Check if PlayerRecord is valid
 					if (!main.isPlayerRecord(inPlayer.getUniqueId())) {
 						noRecordsMessage(inPlayer.getName());

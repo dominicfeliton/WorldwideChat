@@ -484,3 +484,18 @@ Messages:
     ng DeepL API.
   wwcConfigConversationDeepLTranslateApiKeyInput: Ang kasalukuyang API key ay %i.
     Mangyaring mag-input ng API key para sa DeepL, o i-type ang 0 upang bumalik.
+  wwcConfigErrorsToIgnoreSuccess: Matagumpay na nakarehistro ang mga error sa tagasalin
+    upang huwag pansinin.
+  wwcConfigErrorsToIgnoreInvalid: Di-wastong mga error sa tagasalin upang huwag pansinin
+    ang itinakda sa config.yml. Pagrerehistro ng mga default...
+  wwcConfigConversationIgnoreErrorsSuccess: Matagumpay na binago ang mga error sa
+    tagasalin upang huwag pansinin ang mga parirala
+  wwcConfigGUIIgnoreErrorsButton: Baguhin ang Mga Error upang Huwag pansinin
+  wwcConfigConversationIgnoreErrorsInput: 'Ang kasalukuyang listahan ng mga parirala
+    sa mga error sa tagasalin na huwag pansinin ay: %i. I-type ang mga argumento na
+    pinaghihiwalay ng isang kuwit (key = halaga, key2 = value2), o i-type ang malinaw
+    upang punasan ang kasalukuyang args, o i-type ang 0 upang bumalik. Bukod pa rito,
+    ang pag-type ng “*” ay magiging sanhi ng plugin na hindi suriin ang anumang mga
+    error sa tagasalin.'
+  wwcConfigConversationIgnoreErrorsCleared: Mga error sa tagasalin upang huwag pansinin
+    ang mga parirala na matagumpay na nabura.

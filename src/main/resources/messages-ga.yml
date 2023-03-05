@@ -467,3 +467,17 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API eochair leagtha go rathúil.
   wwcConfigConversationDeepLTranslateApiKeyInput: Is é an eochair API atá ann faoi
     láthair %i. ionchur eochair API do DeepL, nó cineál 0 chun dul ar ais.
+  wwcConfigErrorsToIgnoreSuccess: Earráidí aistritheoir cláraithe go rathúil neamhaird
+    a dhéanamh.
+  wwcConfigErrorsToIgnoreInvalid: Earráidí aistritheoir neamhbhailí neamhaird a leagan
+    síos i config.yml. mainneachtainí Clárú...
+  wwcConfigConversationIgnoreErrorsSuccess: D'éirigh le hearráidí an aistritheora
+    a athrú chun neamhaird a dhéanamh ar fhrásaí.
+  wwcConfigGUIIgnoreErrorsButton: Athraigh Earráidí chun Neamhaird a dhéanamh
+  wwcConfigConversationIgnoreErrorsInput: 'Tá an liosta atá ann faoi láthair de frásaí
+    i earráidí aistritheoir neamhaird a dhéanamh: %i. argóintí Cineál scartha le camóg
+    (eochair = luach, eochair 2 = value2), nó cineál soiléir a wipe an args atá ann
+    faoi láthair, nó cineál 0 chun dul ar ais. Ina theannta sin, clóscríobh “*” a
+    chur faoi deara nach bhfuil an breiseán a sheiceáil aon earráidí aistritheoir.'
+  wwcConfigConversationIgnoreErrorsCleared: Earráidí aistritheora chun neamhaird a
+    dhéanamh ar fhrásaí glanta go rathúil.

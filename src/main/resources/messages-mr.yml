@@ -432,3 +432,16 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: दीपएल एपीआय की यशस्वीरित्या सेट.
   wwcConfigConversationDeepLTranslateApiKeyInput: सद्य API की %i आहे. कृपया DeepL
     करीता API की इनपुट करा, किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigErrorsToIgnoreSuccess: यशस्वीरित्या नोंदणीकृत अनुवादक त्रुटी दुर्लक्ष.
+  wwcConfigErrorsToIgnoreInvalid: config.yml मध्ये सेट दुर्लक्ष करण्यासाठी अवैध अनुवादक
+    त्रुटी. डीफॉल्ट नोंदणी करीत आहे...
+  wwcConfigConversationIgnoreErrorsSuccess: वाक्यांशांकडे दुर्लक्ष करण्यासाठी अनुवादक
+    त्रुटी यशस्वीरित्या बदलल्या.
+  wwcConfigGUIIgnoreErrorsButton: दुर्लक्ष करण्यासाठी त्रुटी बदला
+  wwcConfigConversationIgnoreErrorsInput: 'दुर्लक्षित करण्यासाठी अनुवादक त्रुटींमधील
+    वाक्यांशांची सद्य यादी अशी आहे: %i. स्वल्पविरामाने विभक्त केलेले वितर्क टाइप करा
+    (key=value, key2=value2), किंवा वर्तमान आर्ग्ज पुसण्यासाठी स्पष्ट टाइप करा, किंवा
+    परत जाण्यासाठी टाइप 0. याव्यतिरिक्त, टाइप “*” प्लगइन कोणत्याही अनुवादक त्रुटी
+    तपासा नाही देईन.'
+  wwcConfigConversationIgnoreErrorsCleared: वाक्यांशांकडे दुर्लक्ष करण्यासाठी अनुवादक
+    त्रुटी यशस्वीरित्या साफ केल्या.
