@@ -85,6 +85,8 @@ Messages:
   wwcConfigSyncDelayInvalid: 'Invalid user data sync delay set in config.yml. Defaulting to 7200 seconds...'
   wwcConfigErrorLimitEnabled: 'Translator error limit set to %i.'
   wwcConfigErrorLimitInvalid: 'Invalid translator error limit set in config.yml. Defaulting to 5...'
+  wwcConfigErrorsToIgnoreSuccess: 'Successfully registered translator errors to ignore.'
+  wwcConfigErrorsToIgnoreInvalid: 'Invalid translator errors to ignore set in config.yml. Registering defaults...'
   wwcConfigGUIGeneralSettings: 'General Configuration'
   wwcConfigGUIStorageSettings: 'Storage Configuration'
   wwcConfigGUISQLSettings: 'SQL Configuration'

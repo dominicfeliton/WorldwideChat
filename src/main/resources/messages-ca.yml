@@ -463,3 +463,7 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API clau establerta correctament.
   wwcConfigConversationDeepLTranslateApiKeyInput: La clau API actual és %i Si us plau,
     introduïu una clau API per DeepL, o escriviu 0 per tornar enrere.
+  wwcConfigErrorsToIgnoreSuccess: S'ha registrat correctament els errors del traductor
+    per ignorar.
+  wwcConfigErrorsToIgnoreInvalid: Errors del traductor no vàlids per ignorar establerts
+    en config.yml. Registrar els valors predeterminats...

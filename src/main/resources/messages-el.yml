@@ -474,3 +474,6 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: Το κλειδί DeepL API ορίστηκε επιτυχώς.
   wwcConfigConversationDeepLTranslateApiKeyInput: Το τρέχον κλειδί API είναι %i. Εισαγάγετε
     ένα κλειδί API για το DeepL ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigErrorsToIgnoreSuccess: Επιτυχής καταχώρηση σφαλμάτων μεταφραστή προς αγνόηση.
+  wwcConfigErrorsToIgnoreInvalid: Μη έγκυρα σφάλματα μετάφρασης για παράβλεψη που
+    ορίστηκαν στο config.yml. Καταχώρηση προεπιλογών...

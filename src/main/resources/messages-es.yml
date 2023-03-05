@@ -472,3 +472,7 @@ Messages:
     correctamente.
   wwcConfigConversationDeepLTranslateApiKeyInput: La clave de API actual es %i. Introduzca
     una clave de API para DeepL o escriba 0 para volver atrás.
+  wwcConfigErrorsToIgnoreSuccess: Se han registrado correctamente los errores del
+    traductor que se deben ignorar.
+  wwcConfigErrorsToIgnoreInvalid: Errores de traductor no válidos para ignorar establecidos
+    en config.yml. Registrando valores predeterminados...

@@ -492,7 +492,7 @@ public class CommonRefs {
 				// If we are getting stopped by onDisable, end this immediately.
 				CommonRefs.debugMsg("Interrupted translateText(), or server state is changing...");
 				return inMessage;
-			} else if (e instanceof ExecutionException && (e.getCause() != null) && isNoConfidenceException(e.getCause())) {
+			} else if (e instanceof ExecutionException && (e.getCause() != null) && isErrorToIgnore(e.getCause())) {
 				// If the translator has low confidence
 				CommonRefs.debugMsg("Low confidence from current translator!");
 				return inMessage;
@@ -658,20 +658,24 @@ public class CommonRefs {
 	}
 	
 	/**
-	  * Checks if a provided exception is a no confidence one from our target translator.
+	  * Checks if a provided exception is a no confidence one/one to be ignored from our target translator.
 	  * @param throwable - The exception to be checked
 	  * @return Boolean - If exception is no confidence, true; false otherwise
 	  */
-	private static boolean isNoConfidenceException(Throwable throwable) {
-		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
-		//TODO: Make this configurable, in case we miss some errors
-		String[] lowConfidenceDict = {"confidence", "same as target", "detect the source language"};
+	private static boolean isErrorToIgnore(Throwable throwable) {
+		//String[] lowConfidenceDict = {"confidence", "same as target", "detect the source language"};
 		// same as target == Watson
 		// detect the source language == Watson
+		ArrayList<String> lowConfidenceDict = (ArrayList<String>) main.getConfigManager().getMainConfig().getList("Translator.errorsToIgnore");
+		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
 
+		// This is a special character. If the user puts this character, then we ignore all errors.
+		if (lowConfidenceDict.contains("*")) return true;
+
+		// Check if the exception message contains any of the strings in our low confidence dictionary
 		for (String eaStr : lowConfidenceDict) {
 			if (exceptionMessage.contains(eaStr)) {
-				CommonRefs.debugMsg("No confidence exception message: " + exceptionMessage);
+				debugMsg("Ignoring error thrown by translator: " + exceptionMessage);
 				return true;
 			}
 		}

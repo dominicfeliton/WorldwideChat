@@ -430,3 +430,6 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API anahtarı başarıyla ayarlandı.
   wwcConfigConversationDeepLTranslateApiKeyInput: Geçerli API anahtarı %i. Lütfen
     DeepL için bir API anahtarı girin veya geri dönmek için 0 yazın.
+  wwcConfigErrorsToIgnoreSuccess: Başarıyla kayıtlı çevirmen hataları yok sayılır.
+  wwcConfigErrorsToIgnoreInvalid: Config.yml kümesinde yoksayılan geçersiz çevirmen
+    hataları. Varsayılanlar kaydediliyor...

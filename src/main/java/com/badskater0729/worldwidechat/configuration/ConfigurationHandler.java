@@ -10,10 +10,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bson.Document;
@@ -264,6 +261,15 @@ public class ConfigurationHandler {
 		} catch (Exception e) {
 			mainConfig.set("Translator.errorLimit", 5);
 			main.getLogger().warning(getMsg("wwcConfigErrorLimitInvalid"));
+		}
+		// List of Errors to Ignore Settings
+		try {
+			ArrayList<String> errorsToIgnore = (ArrayList<String>) mainConfig.getList("Storage.errorsToIgnore");
+			main.getLogger().info(
+					ChatColor.LIGHT_PURPLE + getMsg("wwcConfigErrorsToIgnoreSuccess"));
+		} catch (Exception e) {
+			mainConfig.set("Storage.errorsToIgnore", Arrays.asList("confidence", "same as target", "detect the source language"));
+			main.getLogger().warning(getMsg("wwcConfigErrorsToIgnoreInvalid"));
 		}
 	}
 	

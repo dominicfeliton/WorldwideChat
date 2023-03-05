@@ -448,3 +448,6 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API-sleutel succesvol ingesteld.
   wwcConfigConversationDeepLTranslateApiKeyInput: De huidige API-sleutel is %i. Voer
     een API-sleutel in voor DeepL, of typ 0 om terug te gaan.
+  wwcConfigErrorsToIgnoreSuccess: Succesvol geregistreerde vertaalfouten om te negeren.
+  wwcConfigErrorsToIgnoreInvalid: Ongeldige vertaalfouten om te negeren ingesteld
+    in config.yml. Standaardinstellingen registreren...

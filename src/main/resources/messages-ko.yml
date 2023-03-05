@@ -363,3 +363,5 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API 키가 성공적으로 설정되었습니다.
   wwcConfigConversationDeepLTranslateApiKeyInput: 현재 API 키는 %i입니다. DeepL의 API 키를 입력하거나
     뒤로 돌아가려면 0을 입력하십시오.
+  wwcConfigErrorsToIgnoreSuccess: 무시할 번역기 오류를 성공적으로 등록했습니다.
+  wwcConfigErrorsToIgnoreInvalid: config.yml에 설정된 무시할 번역기 오류가 잘못되었습니다.기본값 등록 중...

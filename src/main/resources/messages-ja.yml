@@ -347,3 +347,5 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API キーが正常に設定されました。
   wwcConfigConversationDeepLTranslateApiKeyInput: 現在の API キーは %i です。DeepL の API キーを入力するか、0
     を入力して戻ってください。
+  wwcConfigErrorsToIgnoreSuccess: 無視できるトランスレータエラーが正常に登録されました。
+  wwcConfigErrorsToIgnoreInvalid: config.yml に設定されている無視すべきトランスレータエラーが無効です。デフォルトを登録中...

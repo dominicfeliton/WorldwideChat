@@ -421,3 +421,6 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API-nøkkel sett vellykket.
   wwcConfigConversationDeepLTranslateApiKeyInput: Gjeldende API-nøkkel er %i. Skriv
     inn en API-nøkkel for DeepL, eller skriv 0 for å gå tilbake.
+  wwcConfigErrorsToIgnoreSuccess: Vellykket registrert oversetter feil å ignorere.
+  wwcConfigErrorsToIgnoreInvalid: Ugyldige oversetterfeil å ignorere satt i config.yml.
+    Registrering av standardinnstillinger...

@@ -338,3 +338,5 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API 密钥设置成功。
   wwcConfigConversationDeepLTranslateApiKeyInput: 当前 API 密钥是 %i。请输入 DeepL 的 API 密钥，或者键入
     0 返回。
+  wwcConfigErrorsToIgnoreSuccess: 已成功注册要忽略的翻译错误。
+  wwcConfigErrorsToIgnoreInvalid: 在 config.yml 中设置的不可忽略的无效转换器错误。正在注册默认值...

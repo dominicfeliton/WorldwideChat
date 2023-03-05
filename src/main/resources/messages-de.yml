@@ -481,3 +481,7 @@ Messages:
     erfolgreich gesetzt.
   wwcConfigConversationDeepLTranslateApiKeyInput: Der aktuelle API-Schlüssel ist %i.
     Bitte geben Sie einen API-Schlüssel für DeepL ein, oder geben Sie 0 ein, um zurückzukehren.
+  wwcConfigErrorsToIgnoreSuccess: Übersetzerfehler zum Ignorieren wurden erfolgreich
+    registriert.
+  wwcConfigErrorsToIgnoreInvalid: Ungültige Übersetzungsfehler zum Ignorieren sind
+    in config.yml festgelegt. Standardeinstellungen werden registriert...

@@ -440,3 +440,7 @@ Messages:
   wwcConfigConversationDeepLTranslateApiKeySuccess: Ключ DeepL API успешно установлен.
   wwcConfigConversationDeepLTranslateApiKeyInput: Текущий ключ API — %i. Введите ключ
     API для DeepL или введите 0, чтобы вернуться назад.
+  wwcConfigErrorsToIgnoreSuccess: Успешно зарегистрированные ошибки переводчика, которые
+    следует игнорировать.
+  wwcConfigErrorsToIgnoreInvalid: Неверные ошибки переводчика, которые следует игнорировать,
+    заданы в config.yml. Регистрация значений по умолчанию...
