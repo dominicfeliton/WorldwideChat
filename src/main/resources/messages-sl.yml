@@ -446,7 +446,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Uspešno registrirane napake prevajalec prezreti.
   wwcConfigErrorsToIgnoreInvalid: Neveljavne napake prevajalca prezreti nastavljen
     v config.yml. Privzete privzete nastavitve...
-<<<<<<< Updated upstream
+
   wwcConfigConversationIgnoreErrorsSuccess: Uspešno spremenili napake prevajalca prezreti
     besedne zveze.
   wwcConfigGUIIgnoreErrorsButton: Spremeni napake za prezreti
@@ -457,7 +457,7 @@ Messages:
     nobenih napak prevajalca.'
   wwcConfigConversationIgnoreErrorsCleared: Prevajalec napake prezreti besedne zveze
     uspešno izbrisani.
-=======
+
   wwcsActiveTransPrevRate: 'Predhodni rok omejitve hitrosti aktivnega prevajalca:
     %i'
   wwcsActiveTransSaved: 'Aktivni prevajalec shranjen na disk: %i'
@@ -472,4 +472,4 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktivni prevajalec Prevajanje Odhodni Klepet: %i'
   wwcsActiveTransItem: 'Aktivni prevajalec Prevajanje Artikel: %i'
   wwcsActiveTransEntity: 'Aktivni prevajalec, ki prevaja entiteto: %i'
->>>>>>> Stashed changes
+

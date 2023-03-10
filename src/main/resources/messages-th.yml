@@ -391,7 +391,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: ข้อผิดพลาดในการแปลที่ลงทะเบียนเรียบร้อยแล้วที่จะละเว้น
   wwcConfigErrorsToIgnoreInvalid: ข้อผิดพลาดในการแปลที่ไม่ถูกต้องเพื่อละเว้นการตั้งค่าใน
     config.ymlกำลังลงทะเบียนค่าเริ่มต้น...
-<<<<<<< Updated upstream
+
   wwcConfigConversationIgnoreErrorsSuccess: ประสบความสำเร็จในการเปลี่ยนข้อผิดพลาดของนักแปลเพื่อละเว้นวลี
   wwcConfigGUIIgnoreErrorsButton: เปลี่ยนข้อผิดพลาดเพื่อละเว้น
   wwcConfigConversationIgnoreErrorsInput: 'รายการปัจจุบันของวลีในข้อผิดพลาดของโปรแกรมแปลที่ควรละเว้นคือ:
@@ -399,7 +399,7 @@ Messages:
     clear เพื่อล้างอาร์กเมนต์ปัจจุบัน หรือพิมพ์ 0 เพื่อย้อนกลับนอกจากนี้ การพิมพ์
     “*” จะทำให้ปลั๊กอินไม่ตรวจสอบข้อผิดพลาดใด ๆ ของตัวแปล'
   wwcConfigConversationIgnoreErrorsCleared: นักแปลข้อผิดพลาดในการละเว้นวลีที่ถูกล้างเรียบร้อยแล้ว
-=======
+
   wwcsActiveTransPrevRate: 'เวลาจำกัดอัตราก่อนหน้านี้สำหรับนักแปลที่ใช้งานอยู่: %i'
   wwcsActiveTransSaved: 'ตัวแปลที่ใช้งานถูกบันทึกไว้ในดิสก์: %i'
   wwcsActiveTransIncoming: 'ตัวแปลที่ใช้งานอยู่กำลังแปลการสนทนาเข้ามา: %i'
@@ -413,4 +413,4 @@ Messages:
   wwcsActiveTransOutgoing: 'ตัวแปลที่ใช้งานอยู่แปลแชทขาออก: %i'
   wwcsActiveTransItem: 'รายการแปลที่ใช้งานอยู่: %i'
   wwcsActiveTransEntity: 'เอนทิตีแปลที่ใช้งานอยู่: %i'
->>>>>>> Stashed changes
+

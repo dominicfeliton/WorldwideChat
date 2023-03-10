@@ -65,7 +65,6 @@ Messages:
   wwcConfigConnectionSuccess: 'Successfully connected to %i!'
   wwcConfigConnectionFail: 'Failed to connect to %i.'
   wwcConfigYAMLFallback: 'Falling back to YAML...'
-  wwcConfigConnectionSuccess: 'Successfully connected to %o!'
   wwcConfigConnectionFailed: 'Failed to connect to %o. Make sure your credentials and firewall are configured correctly!'
   wwcConfigInvalidTranslatorSettings: 'Invalid translator settings! Please enable only one translator in your config.yml.'
   wwcConfigEnabledDebugMode: 'Enabled DEBUG mode. If you are not a developer or troubleshooter, you should turn this off.'

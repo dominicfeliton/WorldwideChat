@@ -477,7 +477,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Επιτυχής καταχώρηση σφαλμάτων μεταφραστή προς αγνόηση.
   wwcConfigErrorsToIgnoreInvalid: Μη έγκυρα σφάλματα μετάφρασης για παράβλεψη που
     ορίστηκαν στο config.yml. Καταχώρηση προεπιλογών...
-<<<<<<< Updated upstream
+
   wwcConfigConversationIgnoreErrorsSuccess: Επιτυχής αλλαγή των σφαλμάτων μεταφραστή
     για να αγνοήσει φράσεις.
   wwcConfigGUIIgnoreErrorsButton: Αλλαγή σφαλμάτων για Παράβλεψη
@@ -488,7 +488,7 @@ Messages:
     να μην ελέγχει τυχόν σφάλματα μεταφραστή.'
   wwcConfigConversationIgnoreErrorsCleared: Σφάλματα μεταφραστή για να αγνοήσετε φράσεις
     που εκκαθαρίζονται με επιτυχία.
-=======
+
   wwcsActiveTransPrevRate: 'Χρόνος προηγούμενης βαθμολογίας ενεργού μεταφραστή: %i'
   wwcsActiveTransSaved: 'Ενεργός μεταφραστής αποθηκεύτηκε στο δίσκο: %i'
   wwcsActiveTransIncoming: 'Ενεργός Μεταφραστής Μεταφράζει Εισερχόμενη συνομιλία:
@@ -505,4 +505,4 @@ Messages:
     %i'
   wwcsActiveTransItem: 'Ενεργός Μεταφραστής Μεταφράζει Στοιχείο: %i'
   wwcsActiveTransEntity: 'Ενεργός Μεταφραστής Μεταφράζει Οντότητα: %i'
->>>>>>> Stashed changes
+
