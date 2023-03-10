@@ -395,6 +395,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: שגיאות מתורגמן נרשמו בהצלחה להתעלם.
   wwcConfigErrorsToIgnoreInvalid: שגיאות מתורגמן לא חוקיות להתעלם להגדיר config.yml.
     רישום ברירות מחדל...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: שינה בהצלחה את שגיאות המתרגם כדי להתעלם
     מביטויים.
   wwcConfigGUIIgnoreErrorsButton: שינוי שגיאות כדי להתעלם
@@ -403,3 +404,18 @@ Messages:
     או הקלד clear כדי למחוק את הארגומנטים הנוכחיים, או הקלד 0 כדי לחזור אחורה. בנוסף,
     הקלדת "*" תגרום לתוסף לא לבדוק שגיאות מתורגמן.'
   wwcConfigConversationIgnoreErrorsCleared: שגיאות מתרגם להתעלם ביטויים ניקו בהצלחה.
+=======
+  wwcsActiveTransPrevRate: 'מתרגם פעיל קודם מגבלת קצב זמן: %i'
+  wwcsActiveTransSaved: 'מתרגם פעיל נשמר בדיסק: %i'
+  wwcsActiveTransIncoming: 'מתרגם פעיל מתרגם צ''אט נכנס: %i'
+  wwcsActiveTransOutLang: 'שפת פלט מתורגמן פעילה: %i'
+  wwcsActiveTransInLang: 'שפת קלט מתורגמן פעילה: %i'
+  wwcsActiveTransBook: 'מתרגם פעיל תרגום ספר: %i'
+  wwcsActiveTransSign: 'סימן תרגום מתרגם פעיל: %i'
+  wwcsActiveTransUUID: 'מתרגם פעיל UUID: %i'
+  wwcsActiveTransRateLimit: 'מגבלת שיעור מתרגם פעיל: %i'
+  wwcsActiveTransColorWarning: 'מתרגם פעיל קיבל אזהרת צבע: %i'
+  wwcsActiveTransOutgoing: 'מתרגם פעיל מתרגם צ''אט יוצא: %i'
+  wwcsActiveTransItem: 'מתרגם פעיל תרגום פריט: %i'
+  wwcsActiveTransEntity: 'מתרגם פעיל תרגום ישות: %i'
+>>>>>>> Stashed changes

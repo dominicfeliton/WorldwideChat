@@ -439,6 +439,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: წარმატებით რეგისტრირებული თარჯიმანი შეცდომები იგნორირება.
   wwcConfigErrorsToIgnoreInvalid: არასწორი თარჯიმანი შეცდომები იგნორირება მითითებული
     config.yml. დეფოლტის რეგისტრაცია...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: წარმატებით შეიცვალა თარჯიმნის შეცდომები
     ფრაზების უგულებელყოფისთვის.
   wwcConfigGUIIgnoreErrorsButton: შეცვალეთ შეცდომები უგულებელყოფისთვის
@@ -449,3 +450,18 @@ Messages:
     გამოიწვევს მოდული არ შეამოწმოთ ნებისმიერი თარჯიმანი შეცდომები.'
   wwcConfigConversationIgnoreErrorsCleared: მთარგმნელი შეცდომები იგნორირება ფრაზები
     განბაჟებული წარმატებით.
+=======
+  wwcsActiveTransPrevRate: 'აქტიური მთარგმნელი წინა განაკვეთის ლიმიტის დრო: %i'
+  wwcsActiveTransSaved: 'აქტიური თარჯიმანი შენახულია დისკზე: %i'
+  wwcsActiveTransIncoming: 'აქტიური თარჯიმანი შემომავალი ჩეთის თარგმნა: %i'
+  wwcsActiveTransOutLang: 'მთარგმნელის აქტიური გამოყვანის ენა: %i'
+  wwcsActiveTransInLang: 'მთარგმნელის აქტიური შეყვანის ენა: %i'
+  wwcsActiveTransBook: 'მთარგმნელის აქტიური მთარგმნელი: %i'
+  wwcsActiveTransSign: 'მთარგმნელის აქტიური თარგმანის ნიშანი: %i'
+  wwcsActiveTransUUID: 'აქტიური მთარგმნელი UUID: %i'
+  wwcsActiveTransRateLimit: 'აქტიური თარჯიმნის განაკვეთის ლიმიტი: %i'
+  wwcsActiveTransColorWarning: 'აქტიური მთარგმნელი მიღებულია ფერის გაფრთხილება: %i'
+  wwcsActiveTransOutgoing: 'აქტიური მთარგმნელი თარგმნა გამავალი ჩეთი: %i'
+  wwcsActiveTransItem: 'მთარგმნელის აქტიური მთარგმნელი: %i'
+  wwcsActiveTransEntity: 'მთარგმნელის აქტიური მთარგმნელი პირი: %i'
+>>>>>>> Stashed changes

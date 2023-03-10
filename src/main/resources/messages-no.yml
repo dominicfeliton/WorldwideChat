@@ -424,6 +424,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Vellykket registrert oversetter feil å ignorere.
   wwcConfigErrorsToIgnoreInvalid: Ugyldige oversetterfeil å ignorere satt i config.yml.
     Registrering av standardinnstillinger...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Vellykket endret oversetterfeilene for
     å ignorere setninger.
   wwcConfigGUIIgnoreErrorsButton: Endre feil å ignorere
@@ -433,3 +434,18 @@ Messages:
     I tillegg vil det å skrive «*» føre til at pluginet ikke sjekker noen oversetterfeil.'
   wwcConfigConversationIgnoreErrorsCleared: Oversetterfeil for å ignorere setninger
     ryddet vellykket.
+=======
+  wwcsActiveTransPrevRate: 'Aktiv oversetter Forrige satsgrense: %i'
+  wwcsActiveTransSaved: 'Aktiv oversetter lagret på disk: %i'
+  wwcsActiveTransIncoming: 'Aktiv oversetter som oversetter innkommende chat: %i'
+  wwcsActiveTransOutLang: 'Aktiv Translator Output Språk: %i'
+  wwcsActiveTransInLang: 'Aktiv oversetter Input Språk: %i'
+  wwcsActiveTransBook: 'Aktiv oversetter oversetter bok: %i'
+  wwcsActiveTransSign: 'Aktiv oversetter oversetter tegn: %i'
+  wwcsActiveTransUUID: 'Aktiv oversetter UUID: %i'
+  wwcsActiveTransRateLimit: 'Aktiv Translator Rate Limit: %i'
+  wwcsActiveTransColorWarning: 'Aktiv oversetter mottatt farge Advarsel: %i'
+  wwcsActiveTransOutgoing: 'Aktiv oversetter som oversetter utgående chat: %i'
+  wwcsActiveTransItem: 'Aktiv oversetter oversetter element: %i'
+  wwcsActiveTransEntity: 'Active Translator Translating Entity: %i'
+>>>>>>> Stashed changes

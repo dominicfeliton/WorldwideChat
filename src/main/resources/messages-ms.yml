@@ -440,6 +440,7 @@ Messages:
     diabaikan.
   wwcConfigErrorsToIgnoreInvalid: Ralat penterjemah tidak sah untuk diabaikan ditetapkan
     dalam config.yml. Mendaftarkan lalai...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Berjaya mengubah ralat penterjemah untuk
     mengabaikan frasa.
   wwcConfigGUIIgnoreErrorsButton: Ubah Ralat untuk Abaikan
@@ -449,3 +450,18 @@ Messages:
     menaip “*” akan menyebabkan plugin tidak memeriksa sebarang kesilapan penterjemah.'
   wwcConfigConversationIgnoreErrorsCleared: Kesilapan penterjemah untuk mengabaikan
     frasa dibersihkan dengan jayanya.
+=======
+  wwcsActiveTransPrevRate: 'Penterjemah Aktif Masa Had Kadar Sebelumnya: %i'
+  wwcsActiveTransSaved: 'Penterjemah Aktif Disimpan ke Cakera: %i'
+  wwcsActiveTransIncoming: 'Penterjemah Aktif Menterjemah Sembang Masuk: %i'
+  wwcsActiveTransOutLang: 'Bahasa Output Penterjemah Aktif: %i'
+  wwcsActiveTransInLang: 'Bahasa Input Penterjemah Aktif: %i'
+  wwcsActiveTransBook: 'Penterjemah Aktif Menterjemah Buku: %i'
+  wwcsActiveTransSign: 'Tanda Terjemahan Penterjemah Aktif: %i'
+  wwcsActiveTransUUID: 'UUID Penterjemah Aktif: %i'
+  wwcsActiveTransRateLimit: 'Had Kadar Penterjemah Aktif: %i'
+  wwcsActiveTransColorWarning: 'Penterjemah Aktif Menerima Amaran Warna: %i'
+  wwcsActiveTransOutgoing: 'Penterjemah Aktif Menterjemah Sembang Keluar: %i'
+  wwcsActiveTransItem: 'Item Penterjemah Aktif: %i'
+  wwcsActiveTransEntity: 'Entiti Penterjemah Aktif: %i'
+>>>>>>> Stashed changes

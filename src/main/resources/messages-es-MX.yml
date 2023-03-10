@@ -467,6 +467,7 @@ Messages:
     ignorar.
   wwcConfigErrorsToIgnoreInvalid: Errores de traductor no válidos para ignorar establecidos
     en configura yml. Registrar incumplimientos...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Se cambiaron satisfactoriamente los errores
     del traductor para ignorar las frases.
   wwcConfigGUIIgnoreErrorsButton: Cambiar errores para ignorar
@@ -477,3 +478,18 @@ Messages:
     error del traductor.'
   wwcConfigConversationIgnoreErrorsCleared: Los errores del traductor para ignorar
     frases se borraron con éxito.
+=======
+  wwcsActiveTransPrevRate: 'Traductor activo Tarifa anterior Tiempo límite: %i'
+  wwcsActiveTransSaved: 'Traductor activo guardado en disco: %i'
+  wwcsActiveTransIncoming: 'Traductor activo traduciendo el chat entrante: %i'
+  wwcsActiveTransOutLang: 'Lenguaje de salida del traductor activo: %i'
+  wwcsActiveTransInLang: 'Idioma de entrada del traductor activo: %i'
+  wwcsActiveTransBook: 'Traductor Activo Traduciendo Libro: %i'
+  wwcsActiveTransSign: 'Traductor Activo Translating Signo: %i'
+  wwcsActiveTransUUID: 'Traductor activo UUID: %i'
+  wwcsActiveTransRateLimit: 'Límite de tasa de traductor activo: %i'
+  wwcsActiveTransColorWarning: 'Traductor Activo Recibido Advertencia de Color: %i'
+  wwcsActiveTransOutgoing: 'Traductor Activo Traduciendo Chat Saliente: %i'
+  wwcsActiveTransItem: 'Traductor Activo Traduciendo Artículo: %i'
+  wwcsActiveTransEntity: 'Entidad de traducción del traductor activo: %i'
+>>>>>>> Stashed changes

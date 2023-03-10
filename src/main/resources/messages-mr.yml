@@ -435,6 +435,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: यशस्वीरित्या नोंदणीकृत अनुवादक त्रुटी दुर्लक्ष.
   wwcConfigErrorsToIgnoreInvalid: config.yml मध्ये सेट दुर्लक्ष करण्यासाठी अवैध अनुवादक
     त्रुटी. डीफॉल्ट नोंदणी करीत आहे...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: वाक्यांशांकडे दुर्लक्ष करण्यासाठी अनुवादक
     त्रुटी यशस्वीरित्या बदलल्या.
   wwcConfigGUIIgnoreErrorsButton: दुर्लक्ष करण्यासाठी त्रुटी बदला
@@ -445,3 +446,18 @@ Messages:
     तपासा नाही देईन.'
   wwcConfigConversationIgnoreErrorsCleared: वाक्यांशांकडे दुर्लक्ष करण्यासाठी अनुवादक
     त्रुटी यशस्वीरित्या साफ केल्या.
+=======
+  wwcsActiveTransPrevRate: 'सक्रिय अनुवादक मागील दर मर्यादा वेळ: %i'
+  wwcsActiveTransSaved: 'सक्रिय अनुवादक डिस्कवर जतन केले: %i'
+  wwcsActiveTransIncoming: 'सक्रिय अनुवादक इनकमिंग चॅटचे भाषांतर करीत आहे: %i'
+  wwcsActiveTransOutLang: 'सक्रीय अनुवादक आऊटपुट भाषा: %i'
+  wwcsActiveTransInLang: 'सक्रीय अनुवादक इनपुट भाषा: %i'
+  wwcsActiveTransBook: 'सक्रीय अनुवादक भाषांतरकार पुस्तक: %i'
+  wwcsActiveTransSign: 'सक्रिय अनुवादक भाषांतरकार अनुवादक चिन्ह: %i'
+  wwcsActiveTransUUID: 'सक्रिय अनुवादक UUID: %i'
+  wwcsActiveTransRateLimit: 'सक्रिय अनुवादक दर मर्यादा: %i'
+  wwcsActiveTransColorWarning: 'सक्रिय अनुवादक प्राप्त रंग चेतावणी: %i'
+  wwcsActiveTransOutgoing: 'सक्रिय अनुवादक आउटगोइंग चॅटचे भाषांतर करीत आहे: %i'
+  wwcsActiveTransItem: 'सक्रिय अनुवादक अनुवादक घटक: %i'
+  wwcsActiveTransEntity: 'सक्रिय अनुवादक भाषांतर करणारे अस्तित्व: %i'
+>>>>>>> Stashed changes

@@ -447,6 +447,7 @@ Messages:
     പിശകുകൾ.
   wwcConfigErrorsToIgnoreInvalid: config.yml ൽ സജ്ജമാക്കിയ അവഗണിക്കാൻ അസാധുവായ പരിഭാഷകൻ
     പിശകുകൾ. സ്ഥിരസ്ഥിതികൾ രജിസ്റ്റർ ചെയ്യുന്നു...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: ശൈലികൾ അവഗണിക്കാൻ വിവർത്തകൻ പിശകുകൾ വിജയകരമായി
     മാറ്റി.
   wwcConfigGUIIgnoreErrorsButton: അവഗണിക്കാൻ പിശകുകൾ മാറ്റുക
@@ -458,3 +459,19 @@ Messages:
     ഇടയാക്കും.'
   wwcConfigConversationIgnoreErrorsCleared: വിജയകരമായി മായ്ച്ചു ശൈലികൾ അവഗണിക്കാൻ
     വിവർത്തകൻ പിശകുകൾ.
+=======
+  wwcsActiveTransPrevRate: 'സജീവ വിവർത്തകൻ മുമ്പത്തെ നിരക്ക് പരിധി സമയം: %i'
+  wwcsActiveTransSaved: 'സജീവ പരിഭാഷകന് ഡിസ്കിലേക്ക് സംരക്ഷിച്ചു: %i'
+  wwcsActiveTransIncoming: 'സജീവ പരിഭാഷകൻ ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം ചെയ്യുന്നു: %i'
+  wwcsActiveTransOutLang: 'സജീവ പരിഭാഷകന് ഔട്ട്പുട്ട് ഭാഷ: %i'
+  wwcsActiveTransInLang: 'സജീവ പരിഭാഷകന് ഇൻപുട്ട് ഭാഷ: %i'
+  wwcsActiveTransBook: 'സജീവ പരിഭാഷകൻ വിവർത്തനം ചെയ്യുന്ന പുസ്തകം: %i'
+  wwcsActiveTransSign: 'സജീവ പരിഭാഷകൻ വിവർത്തനം ചെയ്യുന്ന അടയാളം: %i'
+  wwcsActiveTransUUID: 'സജീവ പരിഭാഷകൻ UUID: %i'
+  wwcsActiveTransRateLimit: 'സജീവ വിവർത്തക നിരക്ക് പരിധി: %i'
+  wwcsActiveTransColorWarning: 'സജീവ പരിഭാഷകന് വർണ്ണ മുന്നറിയിപ്പ് ലഭിച്ചു: %i'
+  wwcsActiveTransOutgoing: 'സജീവ വിവർത്തകൻ ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം ചെയ്യുന്നു:
+    %i'
+  wwcsActiveTransItem: 'സജീവ വിവർത്തകൻ വിവർത്തനം ചെയ്യുന്ന ഇനം: %i'
+  wwcsActiveTransEntity: 'സജീവ പരിഭാഷകൻ വിവർത്തനം ചെയ്യുന്ന എന്റിറ്റി: %i'
+>>>>>>> Stashed changes
