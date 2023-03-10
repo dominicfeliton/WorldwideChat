@@ -422,6 +422,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Edukalt registreeritud tõlkija vigu ignoreerida.
   wwcConfigErrorsToIgnoreInvalid: Sobimatu tõlkija tõrked ignoreerida seatud config.yml.
     Vaikesätete registreerimine...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Edukalt muutnud tõlkija vigu ignoreerida
     fraase.
   wwcConfigGUIIgnoreErrorsButton: Muuda eiratavaid tõrkeid
@@ -431,3 +432,18 @@ Messages:
     Lisaks kirjutades „*” põhjustab plugin ei kontrolli tõlkija vigu.'
   wwcConfigConversationIgnoreErrorsCleared: Tõlkija vead ignoreerida fraase kustutatud
     edukalt.
+=======
+  wwcsActiveTransPrevRate: 'Aktiivse tõlkija eelmise määra piirangu aeg: %i'
+  wwcsActiveTransSaved: 'Aktiivne tõlkija kettale salvestatud: %i'
+  wwcsActiveTransIncoming: 'Aktiivne tõlkija tõlkimine sissetuleva vestluse: %i'
+  wwcsActiveTransOutLang: 'Aktiivse tõlkija väljundkeel: %i'
+  wwcsActiveTransInLang: 'Aktiivse tõlkija sisestuskeel: %i'
+  wwcsActiveTransBook: 'Aktiivne tõlkija tõlkimine raamat: %i'
+  wwcsActiveTransSign: 'Aktiivne tõlkija tõlkimise märk: %i'
+  wwcsActiveTransUUID: 'Aktiivne tõlkija UUID: %i'
+  wwcsActiveTransRateLimit: 'Aktiivse tõlkija kiiruse piirang: %i'
+  wwcsActiveTransColorWarning: 'Aktiivse tõlkija vastuvõetud värvihoiatus: %i'
+  wwcsActiveTransOutgoing: 'Aktiivne tõlkija väljamineva vestluse tõlkimine: %i'
+  wwcsActiveTransItem: 'Aktiivne tõlkija tõlkimise üksus: %i'
+  wwcsActiveTransEntity: 'Aktiivne tõlkija tõlkimise üksus: %i'
+>>>>>>> Stashed changes

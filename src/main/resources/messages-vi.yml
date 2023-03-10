@@ -445,6 +445,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Đã đăng ký thành công lỗi dịch để bỏ qua.
   wwcConfigErrorsToIgnoreInvalid: Lỗi dịch không hợp lệ để bỏ qua thiết lập trong
     config.yml. Đăng ký mặc định...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Thay đổi thành công các lỗi dịch để bỏ
     qua các cụm từ.
   wwcConfigGUIIgnoreErrorsButton: Thay đổi lỗi để bỏ qua
@@ -454,3 +455,18 @@ Messages:
     “*” sẽ khiến plugin không kiểm tra bất kỳ lỗi trình dịch nào.'
   wwcConfigConversationIgnoreErrorsCleared: Lỗi Translator để bỏ qua các cụm từ đã
     xóa thành công.
+=======
+  wwcsActiveTransPrevRate: 'Thời gian giới hạn tỷ lệ trước Active Translator: %i'
+  wwcsActiveTransSaved: 'Active Translator đã lưu vào đĩa: %i'
+  wwcsActiveTransIncoming: 'Translator đang hoạt động dịch trò chuyện đến: %i'
+  wwcsActiveTransOutLang: 'Ngôn ngữ xuất dịch hiện hoạt: %i'
+  wwcsActiveTransInLang: 'Ngôn ngữ nhập phiên dịch hiện hoạt: %i'
+  wwcsActiveTransBook: 'Active Translator Translator Book: %i'
+  wwcsActiveTransSign: 'Dấu hiệu dịch đang hoạt động: %i'
+  wwcsActiveTransUUID: 'Trình dịch hiện hoạt UUID: %i'
+  wwcsActiveTransRateLimit: 'Giới hạn tốc độ Translator Active: %i'
+  wwcsActiveTransColorWarning: 'Active Translator nhận được màu cảnh báo: %i'
+  wwcsActiveTransOutgoing: 'Translator Active Translator Dịch trò chuyện đi: %i'
+  wwcsActiveTransItem: 'Dịch hiện hoạt dịch mục: %i'
+  wwcsActiveTransEntity: 'Active Translator dịch thực thể: %i'
+>>>>>>> Stashed changes

@@ -454,6 +454,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Успешно регистрирани грешки преведувач да се игнорира.
   wwcConfigErrorsToIgnoreInvalid: Неважечки грешки преведувач да се игнорира поставени
     во config.yml. Регистрирање стандарден...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Успешно ги смени грешките на преведувачот
     за да ги игнорира фразите.
   wwcConfigGUIIgnoreErrorsButton: Променете ги грешките за да ги игнорирате
@@ -463,3 +464,19 @@ Messages:
     пишувањето “*” ќе предизвика приклучокот да не проверува грешки на преведувачот.'
   wwcConfigConversationIgnoreErrorsCleared: Преведувач грешки да се игнорира фрази
     исчистени успешно.
+=======
+  wwcsActiveTransPrevRate: 'Активен преведувач Претходна стапка на ограничување на
+    времето: %i'
+  wwcsActiveTransSaved: 'Активен преведувач зачуван на диск: %i'
+  wwcsActiveTransIncoming: 'Активен Преведувач Преведување Дојдовни Разговор: %i'
+  wwcsActiveTransOutLang: 'Активен јазик на излез на преведувачот: %i'
+  wwcsActiveTransInLang: 'Активен јазик за внесување на преведувач: %i'
+  wwcsActiveTransBook: 'Активни Преведувач Преведување Книга: %i'
+  wwcsActiveTransSign: 'Активен Преведувач Преведувачки Знак: %i'
+  wwcsActiveTransUUID: 'Активен преведувач UUID: %i'
+  wwcsActiveTransRateLimit: 'Ограничување на стапката на активен преведувач: %i'
+  wwcsActiveTransColorWarning: 'Активен преведувач доби предупредување во боја: %i'
+  wwcsActiveTransOutgoing: 'Активен Преведувач Преведувач Појдовни Разговор: %i'
+  wwcsActiveTransItem: 'Активен преведувач Преведување Точка: %i'
+  wwcsActiveTransEntity: 'Активен преведувач преведувачки субјект: %i'
+>>>>>>> Stashed changes

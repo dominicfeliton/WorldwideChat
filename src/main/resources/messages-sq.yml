@@ -463,6 +463,7 @@ Messages:
     të injoruar.
   wwcConfigErrorsToIgnoreInvalid: Gabimet e përkthyesit të pavlefshëm për të injoruar
     vendosur në config.yml. Regjistrimi i parazgjedhur...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Ndryshuar me sukses gabimet e përkthyesit
     për të injoruar frazat.
   wwcConfigGUIIgnoreErrorsButton: Ndrysho gabimet për të injoruar
@@ -473,3 +474,19 @@ Messages:
     kontrollojë ndonjë gabim përkthyes.'
   wwcConfigConversationIgnoreErrorsCleared: Gabimet e përkthyesit për të injoruar
     frazat pastruar me sukses.
+=======
+  wwcsActiveTransPrevRate: 'Përkthyes aktiv i mëparshëm koha e kufizimit të normës:
+    %i'
+  wwcsActiveTransSaved: 'Përkthyes aktiv i ruajtur në Disk: %i'
+  wwcsActiveTransIncoming: 'Përkthyes aktiv që përkthen bisedën hyrëse: %i'
+  wwcsActiveTransOutLang: 'Gjuha e daljes së përkthyesit aktiv: %i'
+  wwcsActiveTransInLang: 'Gjuha e hyrjes së përkthyesit aktiv: %i'
+  wwcsActiveTransBook: 'Libri i Përkthimit të Përkthimit Aktiv: %i'
+  wwcsActiveTransSign: 'Shenjë përkthimi i përkthimit të përkthimit aktiv: %i'
+  wwcsActiveTransUUID: 'UUID Përkthyes Aktiv: %i'
+  wwcsActiveTransRateLimit: 'Kufiri i shkallës së përkthyesit aktiv: %i'
+  wwcsActiveTransColorWarning: 'Përkthyesi aktiv mori paralajmërimin e ngjyrave: %i'
+  wwcsActiveTransOutgoing: 'Përkthyes aktiv që përkthen bisedën dalëse: %i'
+  wwcsActiveTransItem: 'Artikulli i Përkthimit të Përkthimit Aktiv: %i'
+  wwcsActiveTransEntity: 'Enti Përkthyes Aktiv i Përkthimit: %i'
+>>>>>>> Stashed changes

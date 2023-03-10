@@ -457,6 +457,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Erros do tradutor registrados com êxito para ignorar.
   wwcConfigErrorsToIgnoreInvalid: Erros inválidos do tradutor para ignorar o conjunto
     em config.yml. A registar predefinições...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Os erros do tradutor foram alterados com
     êxito para ignorar frases.
   wwcConfigGUIIgnoreErrorsButton: Alterar Erros para Ignorar
@@ -466,3 +467,18 @@ Messages:
     Além disso, digitar “*” fará com que o plugin não verifique nenhum erro do tradutor.'
   wwcConfigConversationIgnoreErrorsCleared: Erros do tradutor para ignorar frases
     eliminadas com êxito.
+=======
+  wwcsActiveTransPrevRate: 'Tempo Limite de Taxa Anterior do Tradutor Ativo: %i'
+  wwcsActiveTransSaved: 'Tradutor ativo salvo em disco: %i'
+  wwcsActiveTransIncoming: 'Tradutor ativo Traduzindo bate-papo de entrada: %i'
+  wwcsActiveTransOutLang: 'Idioma de Saída do Tradutor Ativo: %i'
+  wwcsActiveTransInLang: 'Linguagem de Entrada do Tradutor Ativo: %i'
+  wwcsActiveTransBook: 'Livro de Tradução Activa: %i'
+  wwcsActiveTransSign: 'Sinal de Tradutor Ativo: %i'
+  wwcsActiveTransUUID: 'Tradutor Ativo UUID: %i'
+  wwcsActiveTransRateLimit: 'Limite de Velocidade do Tradutor Ativo: %i'
+  wwcsActiveTransColorWarning: 'Aviso de cor recebido tradutor ativo: %i'
+  wwcsActiveTransOutgoing: 'Tradutor Ativo Traduzindo Chat de Saída: %i'
+  wwcsActiveTransItem: 'Item Tradutor Ativo: %i'
+  wwcsActiveTransEntity: 'Entidade Tradutora Ativa: %i'
+>>>>>>> Stashed changes

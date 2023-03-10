@@ -438,6 +438,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Успішно зареєстровані помилки перекладача ігнорувати.
   wwcConfigErrorsToIgnoreInvalid: Некоректні помилки перекладача для ігнорування встановлених
     у config.yml. Реєстрація типових...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Успішно змінені помилки перекладача, щоб
     ігнорувати фрази.
   wwcConfigGUIIgnoreErrorsButton: Змінити помилки на ігнорування
@@ -448,3 +449,20 @@ Messages:
     помилок перекладача.'
   wwcConfigConversationIgnoreErrorsCleared: Помилки перекладача, щоб ігнорувати фрази
     успішно очищені.
+=======
+  wwcsActiveTransPrevRate: 'Активний перекладач Попередній час обмеження швидкості:
+    %i'
+  wwcsActiveTransSaved: 'Активний перекладач, збережений на диск: %i'
+  wwcsActiveTransIncoming: 'Активний перекладач, що переводить вхідний чат: %i'
+  wwcsActiveTransOutLang: 'Активний перекладач вихідної мови: %i'
+  wwcsActiveTransInLang: 'Активний перекладач Мова введення: %i'
+  wwcsActiveTransBook: 'Активний перекладач, що перекладає книгу: %i'
+  wwcsActiveTransSign: 'Активний перекладач, що перекладає знак: %i'
+  wwcsActiveTransUUID: 'UUID активного перекладача: %i'
+  wwcsActiveTransRateLimit: 'Обмеження швидкості активного перекладача: %i'
+  wwcsActiveTransColorWarning: 'Активний перекладач отримав попередження кольору:
+    %i'
+  wwcsActiveTransOutgoing: 'Активний перекладач Переклад вихідного чату: %i'
+  wwcsActiveTransItem: 'Активний перекладач, що перекладає елемент: %i'
+  wwcsActiveTransEntity: 'Активний перекладач, що перекладає сутність: %i'
+>>>>>>> Stashed changes

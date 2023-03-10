@@ -340,8 +340,24 @@ Messages:
     0 返回。
   wwcConfigErrorsToIgnoreSuccess: 已成功注册要忽略的翻译错误。
   wwcConfigErrorsToIgnoreInvalid: 在 config.yml 中设置的不可忽略的无效转换器错误。正在注册默认值...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: 成功将翻译器错误更改为忽略短语。
   wwcConfigGUIIgnoreErrorsButton: 将错误更改为忽略
   wwcConfigConversationIgnoreErrorsInput: 翻译器错误中当前要忽略的短语列表是： %i。键入参数以逗号（key=value，key2=value，key2=value2）分隔，或者键入
     clear 以擦除当前参数，或者键入 0 返回。此外，键入 “*” 将导致插件无法检查任何翻译器错误。
   wwcConfigConversationIgnoreErrorsCleared: 已成功清除忽略短语的翻译错误。
+=======
+  wwcsActiveTransPrevRate: 活跃转换器之前的速率限制时间： %i
+  wwcsActiveTransSaved: '活动转换器已保存到磁盘: %i'
+  wwcsActiveTransIncoming: 活跃翻译器正在翻译传入的聊天： %i
+  wwcsActiveTransOutLang: 主动翻译器输出语言： %i
+  wwcsActiveTransInLang: 主动翻译器输入语言： %i
+  wwcsActiveTransBook: 活跃翻译者正在翻译图书： %i
+  wwcsActiveTransSign: 活跃翻译器翻译符号： %i
+  wwcsActiveTransUUID: '活动翻译器 UUID: %i'
+  wwcsActiveTransRateLimit: 活跃转换器速率限制： %i
+  wwcsActiveTransColorWarning: 活动转换器收到颜色警告： %i
+  wwcsActiveTransOutgoing: 活跃翻译器正在翻译外发聊天： %i
+  wwcsActiveTransItem: 活跃翻译器正在翻译项目： %i
+  wwcsActiveTransEntity: 活跃翻译器翻译实体： %i
+>>>>>>> Stashed changes

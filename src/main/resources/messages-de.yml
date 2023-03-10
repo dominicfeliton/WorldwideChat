@@ -485,6 +485,7 @@ Messages:
     registriert.
   wwcConfigErrorsToIgnoreInvalid: Ungültige Übersetzungsfehler zum Ignorieren sind
     in config.yml festgelegt. Standardeinstellungen werden registriert...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Die Übersetzerfehler wurden erfolgreich
     geändert, sodass Phrasen ignoriert wurden.
   wwcConfigGUIIgnoreErrorsButton: Fehler auf Ignorieren ändern
@@ -495,3 +496,20 @@ Messages:
     führt die Eingabe von „*“ dazu, dass das Plugin keine Übersetzungsfehler überprüft.'
   wwcConfigConversationIgnoreErrorsCleared: Übersetzungsfehler beim Ignorieren von
     Phrasen wurden erfolgreich gelöscht.
+=======
+  wwcsActiveTransPrevRate: 'Gültigkeitsdauer des vorherigen Ratenlimits für den aktiven
+    Übersetzer: %i'
+  wwcsActiveTransSaved: 'Aktiver Übersetzer auf Festplatte gespeichert: %i'
+  wwcsActiveTransIncoming: 'Aktiver Übersetzer übersetzt eingehenden Chat: %i'
+  wwcsActiveTransOutLang: 'Aktive Übersetzer-Ausgabesprache: %i'
+  wwcsActiveTransInLang: 'Eingabesprache des aktiven Übersetzers: %i'
+  wwcsActiveTransBook: 'Aktiver Übersetzer, der das Buch übersetzt: %i'
+  wwcsActiveTransSign: 'Aktiver Übersetzer übersetzt Zeichen: %i'
+  wwcsActiveTransUUID: 'Aktiver Übersetzer-UUID: %i'
+  wwcsActiveTransRateLimit: 'Ratenlimit für aktive Übersetzer: %i'
+  wwcsActiveTransColorWarning: 'Aktiver Übersetzer hat eine Farbwarnung erhalten:
+    %i'
+  wwcsActiveTransOutgoing: 'Aktiver Übersetzer übersetzt ausgehenden Chat: %i'
+  wwcsActiveTransItem: 'Aktiver Übersetzer übersetzt Artikel: %i'
+  wwcsActiveTransEntity: 'Aktive Entität, die den Übersetzer übersetzt: %i'
+>>>>>>> Stashed changes

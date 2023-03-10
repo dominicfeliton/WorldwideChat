@@ -437,6 +437,7 @@ Messages:
     లోపాలు.
   wwcConfigErrorsToIgnoreInvalid: config.yml లో సెట్ విస్మరించడానికి చెల్లని అనువాదకుడు
     లోపాలు. డిఫాల్ట్లను నమోదు చేస్తోంది...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: విజయవంతంగా పదబంధాలు విస్మరించడానికి అనువాదకుడు
     లోపాలు మార్చబడింది.
   wwcConfigGUIIgnoreErrorsButton: విస్మరించడానికి లోపాలను మార్చండి
@@ -447,3 +448,20 @@ Messages:
     అనువాదకుల లోపాలను తనిఖీ చేయదు.'
   wwcConfigConversationIgnoreErrorsCleared: విజయవంతంగా క్లియర్ పదబంధాలు విస్మరించడానికి
     అనువాదకుడు లోపాలు.
+=======
+  wwcsActiveTransPrevRate: 'క్రియాశీల అనువాదకుడు మునుపటి రేటు పరిమితి సమయం: %i'
+  wwcsActiveTransSaved: 'క్రియాశీల అనువాదకుడు డిస్కునకు సేవ్ చేయబడినది: %i'
+  wwcsActiveTransIncoming: 'క్రియాశీల అనువాదకుడు ఇన్కమింగ్ చాట్ను అనువదిస్తోంది: %i'
+  wwcsActiveTransOutLang: 'క్రియాశీల అనువాదకుడు అవుట్పుట్ భాష: %i'
+  wwcsActiveTransInLang: 'క్రియాశీల అనువాదకుడు ఇన్పుట్ భాష: %i'
+  wwcsActiveTransBook: 'క్రియాశీల అనువాదకుడు అనువాదక పుస్తకం: %i'
+  wwcsActiveTransSign: 'క్రియాశీల అనువాదకుడు అనువాదక సంకేతం: %i'
+  wwcsActiveTransUUID: 'క్రియాశీల అనువాదకుడు UUID: %i'
+  wwcsActiveTransRateLimit: 'క్రియాశీల అనువాదకుడు రేటు పరిమితి: %i'
+  wwcsActiveTransColorWarning: 'క్రియాశీల అనువాదకుడు రంగు హెచ్చరికను స్వీకరించారు:
+    %i'
+  wwcsActiveTransOutgoing: 'క్రియాశీల అనువాదకుడు అవుట్గోయింగ్ చాట్ అనువదిస్తోంది:
+    %i'
+  wwcsActiveTransItem: 'క్రియాశీల అనువాదకుడు అనువాదక అంశం: %i'
+  wwcsActiveTransEntity: 'క్రియాశీల అనువాదకుడు అనువాదక ఎంటిటీ: %i'
+>>>>>>> Stashed changes

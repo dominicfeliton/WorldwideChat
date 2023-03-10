@@ -442,6 +442,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Uspješno registrovani prevodilac greške ignorirati.
   wwcConfigErrorsToIgnoreInvalid: Nevažeće pogreške prevoditelja za zanemarivanje
     postavljene u config.yml. Registracija zadana...
+<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Uspješno je promijenio pogreške prevoditelja
     kako bi ignorirao fraze.
   wwcConfigGUIIgnoreErrorsButton: Promjena pogrešaka za zanemarivanje
@@ -451,3 +452,19 @@ Messages:
     Uz to, tipkanje “*” uzrokovat će da dodatak ne provjerava pogreške prevoditelja.'
   wwcConfigConversationIgnoreErrorsCleared: Prevoditelj greške ignorirati fraze uspješno
     izbrisani.
+=======
+  wwcsActiveTransPrevRate: 'Vrijeme prethodnog ograničenja brzine aktivnog prevoditelja:
+    %i'
+  wwcsActiveTransSaved: 'Aktivni prevodilac spremljen na disk: %i'
+  wwcsActiveTransIncoming: 'Aktivni Prevoditelj Prevođenje Dolazni Chat: %i'
+  wwcsActiveTransOutLang: 'Izlazni jezik aktivnog prevoditelja: %i'
+  wwcsActiveTransInLang: 'Jezik unosa aktivnog prevoditelja: %i'
+  wwcsActiveTransBook: 'Aktivni prevodilac Prevođenje Knjiga: %i'
+  wwcsActiveTransSign: 'Aktivni prevodilac Prevođenje Znak: %i'
+  wwcsActiveTransUUID: 'Aktivni prevodilac UUID: %i'
+  wwcsActiveTransRateLimit: 'Ograničenje brzine aktivnog prevoditelja: %i'
+  wwcsActiveTransColorWarning: 'Aktivni prevodilac primio upozorenje u boji: %i'
+  wwcsActiveTransOutgoing: 'Aktivni prevodilac Prevođenje Odlazni Chat: %i'
+  wwcsActiveTransItem: 'Aktivni prevodilac Prevođenje Stavka: %i'
+  wwcsActiveTransEntity: 'Aktivni prevodilac koji prevodi entitet: %i'
+>>>>>>> Stashed changes
