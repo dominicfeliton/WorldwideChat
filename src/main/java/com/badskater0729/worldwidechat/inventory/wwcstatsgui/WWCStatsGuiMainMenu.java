@@ -83,13 +83,6 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 			lastTranslationTimeMeta.setDisplayName(getMsg("wwcsLastTranslationTime", new String[] {ChatColor.AQUA + "" + currRecord.getLastTranslationTime()}));
 			lastTranslationTime.setItemMeta(lastTranslationTimeMeta);
 			contents.set(2, 7, ClickableItem.empty(lastTranslationTime));
-
-			/* Current translator stats button */
-			ItemStack currentTranslatorStats = XMaterial.PAPER.parseItem();
-			ItemMeta currentTranslatorStatsMeta = currentTranslatorStats.getItemMeta();
-			//currentTranslatorStatsMeta.setDisplayName(getMsg("wwcsCurrentTranslatorStats", new String[] {}));
-			// TODO: Open submenu for stats, if active translator
-
 	    } catch (Exception e) {
 		    WWCInventoryManager.inventoryError(player, e);
 	    }

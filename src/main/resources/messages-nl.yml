@@ -451,7 +451,6 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Succesvol geregistreerde vertaalfouten om te negeren.
   wwcConfigErrorsToIgnoreInvalid: Ongeldige vertaalfouten om te negeren ingesteld
     in config.yml. Standaardinstellingen registreren...
-<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: De vertaalfouten zijn succesvol gewijzigd
     om zinnen te negeren.
   wwcConfigGUIIgnoreErrorsButton: Fouten wijzigen om ze te negeren
@@ -462,19 +461,3 @@ Messages:
     controleert.'
   wwcConfigConversationIgnoreErrorsCleared: Vertaalfouten bij het negeren van zinnen
     die met succes zijn gewist.
-=======
-  wwcsActiveTransPrevRate: 'Active Translator: vorige maximumsnelheid: %i'
-  wwcsActiveTransSaved: 'Active Translator opgeslagen op schijf: %i'
-  wwcsActiveTransIncoming: 'Actieve vertaler die binnenkomende chat vertaalt: %i'
-  wwcsActiveTransOutLang: 'Uitvoertaal van Active Translator: %i'
-  wwcsActiveTransInLang: 'Invoertaal voor actieve vertaler: %i'
-  wwcsActiveTransBook: 'Active Translator vertaalt het boek: %i'
-  wwcsActiveTransSign: 'Active Translator vertaalt teken: %i'
-  wwcsActiveTransUUID: 'UUID voor actieve vertaler: %i'
-  wwcsActiveTransRateLimit: 'Snelheidslimiet voor actieve vertalers: %i'
-  wwcsActiveTransColorWarning: 'Active Translator heeft kleurwaarschuwing ontvangen:
-    %i'
-  wwcsActiveTransOutgoing: 'Actieve vertaler die uitgaande chat vertaalt: %i'
-  wwcsActiveTransItem: 'Active Translator vertaalt item: %i'
-  wwcsActiveTransEntity: 'Entiteit voor het vertalen van Active Translator: %i'
->>>>>>> Stashed changes

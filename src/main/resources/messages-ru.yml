@@ -444,7 +444,6 @@ Messages:
     следует игнорировать.
   wwcConfigErrorsToIgnoreInvalid: Неверные ошибки переводчика, которые следует игнорировать,
     заданы в config.yml. Регистрация значений по умолчанию...
-<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Успешно исправлены ошибки переводчика,
     позволяющие игнорировать фразы.
   wwcConfigGUIIgnoreErrorsButton: Измените ошибки на игнорирование
@@ -455,20 +454,3 @@ Messages:
     ошибки переводчика.'
   wwcConfigConversationIgnoreErrorsCleared: Ошибки переводчика при игнорировании фраз
     успешно устранены.
-=======
-  wwcsActiveTransPrevRate: 'Прежнее время ограничения скорости при активном переводчике:
-    %i'
-  wwcsActiveTransSaved: 'Активный транслятор, сохраненный на диске: %i'
-  wwcsActiveTransIncoming: 'Активный переводчик, переводящий входящий чат: %i'
-  wwcsActiveTransOutLang: 'Выходной язык активного переводчика: %i'
-  wwcsActiveTransInLang: 'Активный язык ввода переводчика: %i'
-  wwcsActiveTransBook: 'Активный переводчик, переводящий книгу: %i'
-  wwcsActiveTransSign: 'Активный переводчик, переводящий знак: %i'
-  wwcsActiveTransUUID: 'UUID активного переводчика: %i'
-  wwcsActiveTransRateLimit: 'Ограничение скорости работы активных переводчиков: %i'
-  wwcsActiveTransColorWarning: 'Активный переводчик получил цветовое предупреждение:
-    %i'
-  wwcsActiveTransOutgoing: 'Активный переводчик, переводящий исходящий чат: %i'
-  wwcsActiveTransItem: 'Активный переводчик, переводящий элемент: %i'
-  wwcsActiveTransEntity: 'Активный переводчик, переводящий объект: %i'
->>>>>>> Stashed changes

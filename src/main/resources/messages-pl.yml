@@ -444,7 +444,6 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Pomyślnie zarejestrowano błędy tłumacza do zignorowania.
   wwcConfigErrorsToIgnoreInvalid: Nieprawidłowe błędy tłumacza ignorować ustawione
     w config.yml. Rejestrowanie wartości domyślnych...
-<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Pomyślnie zmieniono błędy tłumacza, aby
     zignorować frazy.
   wwcConfigGUIIgnoreErrorsButton: Zmień błędy, aby zignorować
@@ -454,19 +453,3 @@ Messages:
     wpisanie „*” spowoduje, że wtyczka nie sprawdza żadnych błędów tłumacza.'
   wwcConfigConversationIgnoreErrorsCleared: Błędy tłumacza, aby zignorować frazy wyczyszczone
     pomyślnie.
-=======
-  wwcsActiveTransPrevRate: 'Aktywny tłumacz Poprzednia stawka Limit czasu: %i'
-  wwcsActiveTransSaved: 'Aktywny tłumacz zapisany na dysku: %i'
-  wwcsActiveTransIncoming: 'Aktywny tłumacz Tłumacz Przychodzący czat: %i'
-  wwcsActiveTransOutLang: 'Aktywny język wyjściowy tłumacza: %i'
-  wwcsActiveTransInLang: 'Aktywny język wprowadzania tłumacza: %i'
-  wwcsActiveTransBook: 'Active Translator Translating Book: %i'
-  wwcsActiveTransSign: 'Znak tłumaczenia aktywnego tłumacza: %i'
-  wwcsActiveTransUUID: 'Aktywny identyfikator UUID tłumacza: %i'
-  wwcsActiveTransRateLimit: 'Limit szybkości aktywnego tłumacza: %i'
-  wwcsActiveTransColorWarning: 'Ostrzeżenie dotyczące koloru otrzymanego aktywnego
-    tłumacza: %i'
-  wwcsActiveTransOutgoing: 'Aktywny tłumacz tłumaczący czat wychodzący: %i'
-  wwcsActiveTransItem: 'Aktywny Translator Translator Translating Item: %i'
-  wwcsActiveTransEntity: 'Aktywny podmiot tłumaczący tłumacz: %i'
->>>>>>> Stashed changes

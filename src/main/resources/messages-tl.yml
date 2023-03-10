@@ -488,7 +488,6 @@ Messages:
     upang huwag pansinin.
   wwcConfigErrorsToIgnoreInvalid: Di-wastong mga error sa tagasalin upang huwag pansinin
     ang itinakda sa config.yml. Pagrerehistro ng mga default...
-<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Matagumpay na binago ang mga error sa
     tagasalin upang huwag pansinin ang mga parirala
   wwcConfigGUIIgnoreErrorsButton: Baguhin ang Mga Error upang Huwag pansinin
@@ -500,21 +499,3 @@ Messages:
     error sa tagasalin.'
   wwcConfigConversationIgnoreErrorsCleared: Mga error sa tagasalin upang huwag pansinin
     ang mga parirala na matagumpay na nabura.
-=======
-  wwcsActiveTransPrevRate: 'Aktibong Tagasalin Nakaraang Oras ng Limitasyon sa Rate:
-    %i'
-  wwcsActiveTransSaved: 'Aktibong Tagasalin Nai-save sa Disk: %i'
-  wwcsActiveTransIncoming: 'Aktibong Tagasalin sa Pagsasalin ng Papasok na Chat: %i'
-  wwcsActiveTransOutLang: 'Wika ng Output ng Aktibong Tagasalin: %i'
-  wwcsActiveTransInLang: 'Wika ng Input ng Aktibong Tagasalin: %i'
-  wwcsActiveTransBook: 'Aktibong Tagasalin sa Pagsasalin ng Aklat: %i'
-  wwcsActiveTransSign: 'Pag-sign ng Pagsasalin ng Aktibong Tagasalin: %i'
-  wwcsActiveTransUUID: 'Aktibong Tagasalin UUID: %i'
-  wwcsActiveTransRateLimit: 'Limitasyon sa Rate ng Aktibong Tagasalin: %i'
-  wwcsActiveTransColorWarning: 'Nakatanggap ang Aktibong Tagasalin ng Babala ng Kulay:
-    %i'
-  wwcsActiveTransOutgoing: 'Aktibong Tagasalin sa Pagsasalin ng Papalabas na Chat:
-    %i'
-  wwcsActiveTransItem: 'Aktibong Tagasalin sa Pagsasalin ng Item: %i'
-  wwcsActiveTransEntity: 'Entity ng Pagsasalin ng Aktibong Tagasalin: %i'
->>>>>>> Stashed changes

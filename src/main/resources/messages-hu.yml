@@ -449,7 +449,6 @@ Messages:
     kívül hagyni.
   wwcConfigErrorsToIgnoreInvalid: Érvénytelen fordítói hibák figyelmen kívül hagyni
     set config.yml. Alapértelmezések regisztrálása...
-<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Sikeresen megváltoztatta a fordítói hibákat,
     hogy figyelmen kívül hagyja a kifejezéseket.
   wwcConfigGUIIgnoreErrorsButton: Hibák módosítása figyelmen kívül hagyásra
@@ -460,18 +459,3 @@ Messages:
     nem ellenőrzi a fordítói hibákat.'
   wwcConfigConversationIgnoreErrorsCleared: Fordító hibák figyelmen kívül hagyni mondatok
     sikeresen törölve.
-=======
-  wwcsActiveTransPrevRate: 'Aktív fordító Korábbi sebességkorlátozási idő: %i'
-  wwcsActiveTransSaved: 'Aktív fordító lemezre mentve: %i'
-  wwcsActiveTransIncoming: 'Aktív fordító Bejövő Chat fordítása: %i'
-  wwcsActiveTransOutLang: 'Aktív fordító kimeneti nyelve: %i'
-  wwcsActiveTransInLang: 'Aktív fordító beviteli nyelve: %i'
-  wwcsActiveTransBook: 'Aktív fordító fordító könyv: %i'
-  wwcsActiveTransSign: 'Aktív fordító fordító jel: %i'
-  wwcsActiveTransUUID: 'Aktív fordító UUID: %i'
-  wwcsActiveTransRateLimit: 'Aktív fordítói sebességkorlátozás: %i'
-  wwcsActiveTransColorWarning: 'Aktív fordító kapott színes figyelmeztetés: %i'
-  wwcsActiveTransOutgoing: 'Aktív fordító Kimenő csevegés fordítása: %i'
-  wwcsActiveTransItem: 'Aktív fordító fordító elem: %i'
-  wwcsActiveTransEntity: 'Aktív fordító fordító entitás: %i'
->>>>>>> Stashed changes

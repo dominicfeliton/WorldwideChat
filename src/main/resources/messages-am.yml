@@ -386,25 +386,9 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: ችላ በተሳካ ሁኔታ ተርጓሚ ስህተቶች የተመዘገቡ።
   wwcConfigErrorsToIgnoreInvalid: በ config.yml ውስጥ ተዘጋጅቷል ችላ ለማለት ልክ ያልሆነ ተርጓሚ ስህተቶች።
     ነባሪዎች በመመዝገብ ላይ...
-<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: ሐረጎችን ችላ ለማለት የተርጓሚውን ስህተቶች በተሳካ ሁኔታ ቀይረዋል።
   wwcConfigGUIIgnoreErrorsButton: ችላ ለማለት ስህተቶችን ይቀይሩ
   wwcConfigConversationIgnoreErrorsInput: 'በአስተርጓሚ ስህተቶች ውስጥ አሁን ያሉት የሐረጎች ዝርዝር የሚከተሉት
     ናቸው: %i. በኮማ የተለዩ ክርክሮችን ይተይቡ (ቁልፍ = ዋጋ, key2=value2), ወይም የአሁኑን አርግጎች ለማጥራት ግልጽ
     ይተይቡ, ወይም ወደኋላ ለመመለስ 0 ይተይቡ። በተጨማሪም «*» መተየብ ተሰኪው ማንኛውንም ተርጓሚ ስህተቶች እንዳያረጋግጥ ያደርገዋል።'
   wwcConfigConversationIgnoreErrorsCleared: በተሳካ ሁኔታ ጸድቷል ሐረጎች ችላ ተርጓሚ ስህተቶች።
-=======
-  wwcsActiveTransPrevRate: 'ንቁ ተርጓሚ ቀዳሚ ተመን ገደብ ጊዜ: %i'
-  wwcsActiveTransSaved: 'ንቁ ተርጓሚ ወደ ዲስክ ተቀምጧል: %i'
-  wwcsActiveTransIncoming: 'ንቁ ተርጓሚ ገቢ ውይይት በመተርጎም ላይ: %i'
-  wwcsActiveTransOutLang: 'አክቲቭ ተርጓሚ የውጤት ቋንቋ: %i'
-  wwcsActiveTransInLang: 'ንቁ ተርጓሚ የግቤት ቋንቋ: %i'
-  wwcsActiveTransBook: 'ንቁ ተርጓሚ መተርጎም መጽሐፍ: %i'
-  wwcsActiveTransSign: 'ንቁ ተርጓሚ የትርጉም ምልክት: %i'
-  wwcsActiveTransUUID: 'ንቁ ተርጓሚ UUID: %i'
-  wwcsActiveTransRateLimit: 'ንቁ ተርጓሚ ተመን ገደብ: %i'
-  wwcsActiveTransColorWarning: 'ንቁ ተርጓሚ የቀለም ማስጠንቀቂያ ተቀብሏል: %i'
-  wwcsActiveTransOutgoing: 'ንቁ ተርጓሚ ወጪ ውይይት መተርጎም: %i'
-  wwcsActiveTransItem: 'ንቁ ተርጓሚ መተርጎም ንጥል: %i'
-  wwcsActiveTransEntity: 'ንቁ ተርጓሚ የትርጉም አካል: %i'
->>>>>>> Stashed changes

@@ -410,7 +410,6 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: تم تسجيل أخطاء المترجم بنجاح لتجاهلها.
   wwcConfigErrorsToIgnoreInvalid: أخطاء مترجم غير صالحة لتجاهل المجموعة في config.yml.
     جاري تسجيل الإعدادات الافتراضية...
-<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: تم تغيير أخطاء المترجم بنجاح لتجاهل العبارات.
   wwcConfigGUIIgnoreErrorsButton: تغيير الأخطاء لتجاهلها
   wwcConfigConversationIgnoreErrorsInput: 'قائمة العبارات الحالية في أخطاء المترجم
@@ -418,18 +417,3 @@ Messages:
     اكتب clear لمسح args الحالية، أو اكتب 0 للرجوع. بالإضافة إلى ذلك، ستؤدي كتابة
     «*» إلى عدم تحقق المكون الإضافي من أي أخطاء في المترجم.'
   wwcConfigConversationIgnoreErrorsCleared: تم مسح أخطاء المترجم لتجاهل العبارات بنجاح.
-=======
-  wwcsActiveTransPrevRate: 'الحد الزمني للمعدل السابق للمترجم النشط: %i'
-  wwcsActiveTransSaved: 'تم حفظ المترجم النشط على القرص: %i'
-  wwcsActiveTransIncoming: 'مترجم نشط يترجم الدردشة الواردة: %i'
-  wwcsActiveTransOutLang: 'لغة إخراج المترجم النشط: %i'
-  wwcsActiveTransInLang: 'لغة إدخال المترجم النشط: %i'
-  wwcsActiveTransBook: 'كتاب ترجمة المترجم النشط: %i'
-  wwcsActiveTransSign: 'علامة الترجمة النشطة للمترجم: %i'
-  wwcsActiveTransUUID: 'UUID للمترجم النشط: %i'
-  wwcsActiveTransRateLimit: 'حد معدل المترجم النشط: %i'
-  wwcsActiveTransColorWarning: 'تلقى المترجم النشط تحذيرًا ملونًا: %i'
-  wwcsActiveTransOutgoing: 'مترجم نشط يترجم الدردشة الصادرة: %i'
-  wwcsActiveTransItem: 'عنصر ترجمة المترجم النشط: %i'
-  wwcsActiveTransEntity: 'كيان ترجمة المترجم النشط: %i'
->>>>>>> Stashed changes

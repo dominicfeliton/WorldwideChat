@@ -443,7 +443,6 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Veiksmīgi reģistrētas tulkotāju kļūdas ignorēt.
   wwcConfigErrorsToIgnoreInvalid: Nederīgs tulkotājs kļūdas ignorēt iestatīts config.yml.
     Reģistrējot noklusējumus...
-<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Veiksmīgi mainījis tulkotāja kļūdas, lai
     ignorētu frāzes.
   wwcConfigGUIIgnoreErrorsButton: Mainīt kļūdas, lai ignorētu
@@ -453,19 +452,3 @@ Messages:
     atgrieztos. Turklāt, ierakstot “*”, spraudnis nepārbaudīs tulkotāju kļūdas.'
   wwcConfigConversationIgnoreErrorsCleared: Tulkotājs kļūdas ignorēt frāzes notīrīti
     veiksmīgi.
-=======
-  wwcsActiveTransPrevRate: 'Aktīvā tulkotāja iepriekšējā ātruma ierobežojuma laiks:
-    %i'
-  wwcsActiveTransSaved: 'Aktīvais tulkotājs Saglabāts diskā: %i'
-  wwcsActiveTransIncoming: 'Aktīvais tulkotājs Tulkojot Ienākošie tērzēšana: %i'
-  wwcsActiveTransOutLang: 'Aktīvā tulkotāja izvades valoda: %i'
-  wwcsActiveTransInLang: 'Aktīvā tulkotāja ievades valoda: %i'
-  wwcsActiveTransBook: 'Aktīvā tulkotāja tulkošanas grāmata: %i'
-  wwcsActiveTransSign: 'Aktīvā tulkotāja tulkošanas zīme: %i'
-  wwcsActiveTransUUID: 'Aktīvais tulkotājs UUID: %i'
-  wwcsActiveTransRateLimit: 'Aktīvā tulkotāja ātruma ierobežojums: %i'
-  wwcsActiveTransColorWarning: 'Aktīvais tulkotājs saņēma krāsu brīdinājumu: %i'
-  wwcsActiveTransOutgoing: 'Aktīvais tulkotājs Tulkojot izejošo tērzēšanu: %i'
-  wwcsActiveTransItem: 'Aktīvais tulkotājs tulkojot vienumu: %i'
-  wwcsActiveTransEntity: 'Aktīvā tulkotāja tulkošanas entītija: %i'
->>>>>>> Stashed changes

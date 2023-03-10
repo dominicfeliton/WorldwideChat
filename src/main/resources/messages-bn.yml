@@ -435,7 +435,6 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: উপেক্ষা করার জন্য সফলভাবে নিবন্ধিত অনুবাদক ত্রুটি
   wwcConfigErrorsToIgnoreInvalid: config.yml এ সেট উপেক্ষা করতে অকার্যকর অনুবাদক ত্রুটি।
     ডিফল্ট নিবন্ধন করা হচ্ছে...
-<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: বাক্যাংশগুলি উপেক্ষা করতে অনুবাদক ত্রুটিগুলি
     সফলভাবে পরিবর্তিত হয়েছে।
   wwcConfigGUIIgnoreErrorsButton: উপেক্ষা করার জন্য ত্রুটি পরিবর্তন করুন
@@ -446,18 +445,3 @@ Messages:
     না।'
   wwcConfigConversationIgnoreErrorsCleared: অনুবাদক ত্রুটিগুলি উপেক্ষা করতে বাক্যাংশগুলি
     সফলভাবে সাফ করা হয়েছে
-=======
-  wwcsActiveTransPrevRate: 'সক্রিয় অনুবাদক পূর্ববর্তী হারের সীমা: %i'
-  wwcsActiveTransSaved: 'সক্রিয় অনুবাদক ডিস্কে সংরক্ষিত: %i'
-  wwcsActiveTransIncoming: 'সক্রিয় অনুবাদক ইনকামিং চ্যাট অনুবাদ করা হচ্ছে: %i'
-  wwcsActiveTransOutLang: 'সক্রিয় অনুবাদক আউটপুট ভাষা: %i'
-  wwcsActiveTransInLang: 'সক্রিয় অনুবাদক ইনপুট ভাষা: %i'
-  wwcsActiveTransBook: 'সক্রিয় অনুবাদক অনুবাদক বই: %i'
-  wwcsActiveTransSign: 'সক্রিয় অনুবাদক অনুবাদক চিহ্ন: %i'
-  wwcsActiveTransUUID: 'সক্রিয় অনুবাদক UUID: %i'
-  wwcsActiveTransRateLimit: 'সক্রিয় অনুবাদকের হারের সীমা: %i'
-  wwcsActiveTransColorWarning: 'সক্রিয় অনুবাদক প্রাপ্ত রং সতর্কবার্তা: %i'
-  wwcsActiveTransOutgoing: 'সক্রিয় অনুবাদক, বহির্গামী চ্যাট অনুবাদ করা হচ্ছে: %i'
-  wwcsActiveTransItem: 'সক্রিয় অনুবাদক অনুবাদক বস্তু: %i'
-  wwcsActiveTransEntity: 'সক্রিয় অনুবাদক অনুবাদক সত্তা: %i'
->>>>>>> Stashed changes

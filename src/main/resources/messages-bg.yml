@@ -450,7 +450,6 @@ Messages:
     трябва да се игнорират.
   wwcConfigErrorsToIgnoreInvalid: Невалидни грешки на преводача, за да игнорирате
     зададени в config.yml. Регистриране по подразбиране...
-<<<<<<< Updated upstream
   wwcConfigConversationIgnoreErrorsSuccess: Успешно променя грешките на преводача,
     за да игнорира фрази.
   wwcConfigGUIIgnoreErrorsButton: Промяна на грешки, за да игнорирате
@@ -461,18 +460,3 @@ Messages:
     да не проверява грешките на преводача.'
   wwcConfigConversationIgnoreErrorsCleared: Грешки на преводача, за да игнорират фрази
     изчистени успешно.
-=======
-  wwcsActiveTransPrevRate: 'Активен преводач Предишен Ограничен Срок: %i'
-  wwcsActiveTransSaved: 'Активен преводач, записан на диск: %i'
-  wwcsActiveTransIncoming: 'Активен преводач, превеждащ входящ чат: %i'
-  wwcsActiveTransOutLang: 'Активен език на изхода на преводача: %i'
-  wwcsActiveTransInLang: 'Активен език за въвеждане на преводач: %i'
-  wwcsActiveTransBook: 'Активен преводач Превод Книга: %i'
-  wwcsActiveTransSign: 'Активен преводач Превод Знак: %i'
-  wwcsActiveTransUUID: 'Активен преводач UUID: %i'
-  wwcsActiveTransRateLimit: 'Ограничение на скоростта на активния преводач: %i'
-  wwcsActiveTransColorWarning: 'Активен преводач получи предупреждение за цвят: %i'
-  wwcsActiveTransOutgoing: 'Активен преводач, превеждащ изходящ чат: %i'
-  wwcsActiveTransItem: 'Активен преводач, превеждащ артикул: %i'
-  wwcsActiveTransEntity: 'Активен преводач, превеждащ субект: %i'
->>>>>>> Stashed changes
