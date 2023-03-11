@@ -198,17 +198,10 @@ public class WWCStats extends BasicCommand {
 												.content("\n  - " + getMsg("wwcsActiveTransPrevRate", new String[] {currTrans.getRateLimitPreviousTime()}))
 												.color(NamedTextColor.LIGHT_PURPLE))
 										.build();
-								isActiveTranslator = Component.text()
-										.append(isActiveTranslator)
-										.append(debugInfo)
-										.build();
+								isActiveTranslator = isActiveTranslator.append(debugInfo);
 							}
 						}
-						//isActiveTranslator = stats.append(isActiveTranslator);
-						stats = Component.text()
-								.append(stats)
-								.append(isActiveTranslator)
-								.build();
+						stats = stats.append(isActiveTranslator);
 						sendMsg(sender, stats);
 					}
 					return null;
