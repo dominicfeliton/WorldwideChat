@@ -43,9 +43,8 @@ public class ChatSettingsConvos {
 				main.getConfigManager().getMsgsConfig().set("Overrides." + currentOverrideName, input);
 				main.addPlayerUsingConfigurationGUI(((Player) context.getForWhom()).getUniqueId());
 				final TextComponent successfulChange = Component.text()
-						.append(Component.text()
 								.content(getMsg("wwcConfigConversationOverrideTextChangeSuccess"))
-								.color(NamedTextColor.GREEN))
+								.color(NamedTextColor.GREEN)
 						.build();
 				sendMsg((Player)context.getForWhom(), successfulChange);
 				main.getConfigManager().saveMessagesConfig(true);

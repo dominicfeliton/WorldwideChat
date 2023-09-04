@@ -9,7 +9,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import net.kyori.adventure.text.ComponentBuilder;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.Command;
@@ -50,9 +49,8 @@ public class WWCStats extends BasicCommand {
 		if (args.length > 1) {
 			// Not enough/too many args
 			final TextComponent invalidArgs = Component.text()
-					.append(Component.text()
 							.content(getMsg("wwctInvalidArgs"))
-							.color(NamedTextColor.RED))
+							.color(NamedTextColor.RED)
 					.build();
 			sendMsg(sender, invalidArgs);
 		}
@@ -84,10 +82,9 @@ public class WWCStats extends BasicCommand {
 					if (sender.getName().equals(inName)) {
 						inPlayer = (Player)sender;
 					} else {
-						final TextComponent playerNotFound = Component.text()
-								.append(Component
+						final TextComponent playerNotFound = Component
 										.text().content(getMsg("wwcPlayerNotFound", new String[] {args[0]}))
-										.color(NamedTextColor.RED))
+										.color(NamedTextColor.RED)
 								.build();
 						/* Don't run API against invalid long names */
 						if (inName.length() > 16 || inName.length() < 3) {
@@ -127,9 +124,8 @@ public class WWCStats extends BasicCommand {
 						PlayerRecord record = main
 								.getPlayerRecord(inPlayer.getUniqueId().toString(), false);
 						TextComponent stats = Component.text()
-								.append(Component.text()
 										.content(getMsg("wwcsTitle", new String[] {inPlayer.getName()}))
-										.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true))
+										.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true)
 								.append(Component.text()
 										.content("\n- " + getMsg("wwcsAttemptedTranslations", new String[] {record.getAttemptedTranslations() + ""}))
 										.color(NamedTextColor.AQUA))
@@ -142,18 +138,16 @@ public class WWCStats extends BasicCommand {
 								.build();
 						// Add current translator stats if user is ActiveTranslator
 						TextComponent isActiveTranslator = Component.text()
-								.append(Component.text()
 										.content("\n- " + getMsg("wwcsIsActiveTranslator", new String[] {ChatColor.BOLD + "" + ChatColor.RED + "\u2717"}))
-										.color(NamedTextColor.AQUA))
+										.color(NamedTextColor.AQUA)
 								.build();
 						if (main.isActiveTranslator(inPlayer.getUniqueId())) {
 							// Is currently an active translator
 							// Therefore, append active translator stats
 							ActiveTranslator currTrans = main.getActiveTranslator(inPlayer.getUniqueId());
 							isActiveTranslator = Component.text()
-									.append(Component.text()
 											.content("\n- " + getMsg("wwcsIsActiveTranslator", new String[] {ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713"}))
-											.color(NamedTextColor.AQUA))
+											.color(NamedTextColor.AQUA)
 									.append(Component.text()
 											.content("\n  - " + getMsg("wwcsActiveTransUUID", new String[] {currTrans.getUUID()}))
 											.color(NamedTextColor.LIGHT_PURPLE))
@@ -188,9 +182,8 @@ public class WWCStats extends BasicCommand {
 							// If debug, append extra vars
 							if (main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
 								TextComponent debugInfo = Component.text()
-										.append(Component.text()
 												.content("\n  - " + getMsg("wwcsActiveTransColorWarning", new String[] {currTrans.getCCWarning() + ""}))
-												.color(NamedTextColor.LIGHT_PURPLE))
+												.color(NamedTextColor.LIGHT_PURPLE)
 										.append(Component.text()
 												.content("\n  - " + getMsg("wwcsActiveTransSaved", new String[] {currTrans.getHasBeenSaved() + ""}))
 												.color(NamedTextColor.LIGHT_PURPLE))
@@ -227,9 +220,8 @@ public class WWCStats extends BasicCommand {
 	
 	private boolean noRecordsMessage(String name) {
 		final TextComponent playerNotFound = Component.text() // No records found
-				.append(Component
-						.text().content(getMsg("wwcsNotATranslator", new String[] {name}))
-						.color(NamedTextColor.RED))
+						.content(getMsg("wwcsNotATranslator", new String[] {name}))
+						.color(NamedTextColor.RED)
 				.build();
 		sendMsg(sender, playerNotFound);
 		return true;

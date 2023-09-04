@@ -33,9 +33,8 @@ public class InventoryListener implements Listener {
 				if (main.isPlayerUsingGUI(currPlayer.getUniqueId().toString()) && currPlayer.getOpenInventory().getType() != InventoryType.CHEST
 						&& !((Player) currPlayer).isConversing()) {
 					final TextComponent reloadPlease = Component.text()
-							.append(Component.text()
 									.content(getMsg("wwcConfigGUIChangesNotSaved"))
-									.color(NamedTextColor.YELLOW))
+									.color(NamedTextColor.YELLOW)
 							.build();
 					sendMsg(currPlayer, reloadPlease);
 					main.removePlayerUsingConfigurationGUI((Player) currPlayer);

@@ -10,7 +10,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import com.badskater0729.worldwidechat.util.CommonRefs;
 import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.cryptomorin.xseries.XMaterial;
 
@@ -22,7 +21,6 @@ import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 
 import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
 import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 
 public class WWCTranslateGuiSourceLanguage implements InventoryProvider {

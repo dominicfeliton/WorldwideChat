@@ -194,11 +194,11 @@ public class WorldwideChat extends JavaPlugin {
 			case "wwc": 
 				// WWC version
 				final TextComponent versionNotice = Component.text()
-						.append((Component.text().content(getMsg("wwcVersion")).color(NamedTextColor.RED))
+						.content(getMsg("wwcVersion")).color(NamedTextColor.RED)
 						.append((Component.text().content(" " + pluginVersion)).color(NamedTextColor.LIGHT_PURPLE))
 						.append((Component.text().content(" (Made with love by ")).color(NamedTextColor.GOLD))
 						.append((Component.text().content("BadSkater0729")).color(NamedTextColor.GOLD).decorate(TextDecoration.BOLD))
-						.append((Component.text().content(")").resetStyle()).color(NamedTextColor.GOLD))).build();
+						.append((Component.text().content(")").resetStyle()).color(NamedTextColor.GOLD)).build();
 				sendMsg(sender, versionNotice);
 				return true;
 			case "wwcr": 
@@ -316,9 +316,8 @@ public class WorldwideChat extends JavaPlugin {
 		/* Send start reload message */
 		if (inSender != null) {
 			final TextComponent wwcrBegin = Component.text()
-					.append(Component.text()
 							.content(getMsg("wwcrBegin"))
-							.color(NamedTextColor.YELLOW))
+							.color(NamedTextColor.YELLOW)
 					.build();
 			sendMsg(inSender, wwcrBegin);
 		}
@@ -334,9 +333,8 @@ public class WorldwideChat extends JavaPlugin {
 				/* Send successfully reloaded message */
 				if (inSender != null) {
 					final TextComponent wwcrSuccess = Component.text()
-							.append(Component.text()
 									.content(getMsg("wwcrSuccess"))
-									.color(NamedTextColor.GREEN))
+									.color(NamedTextColor.GREEN)
 							.append(Component.text()
 									.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
 									.color(NamedTextColor.YELLOW))
@@ -545,9 +543,8 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean checkSenderIdentity(CommandSender sender) {
 		if (!(sender instanceof Player)) {
 			final TextComponent consoleNotice = Component.text()
-					.append(Component.text()
 							.content(getMsg("wwcNoConsole"))
-							.color(NamedTextColor.RED))
+							.color(NamedTextColor.RED)
 					.build();
 			sendMsg(sender, consoleNotice);
 			return false;
@@ -563,17 +560,15 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean hasValidTranslatorSettings(CommandSender sender) {
 		if (getTranslatorName().equals("Starting")) {
 			final TextComponent notDone = Component.text()
-					.append(Component.text()
 							.content("WorldwideChat is still initializing, please try again shortly.")
-							.color(NamedTextColor.YELLOW))
+							.color(NamedTextColor.YELLOW)
 					.build();
 			sendMsg(sender, notDone);
 			return false;
 		} else if (getTranslatorName().equals("Invalid")) {
 			final TextComponent invalid = Component.text()
-					.append(Component.text()
 							.content(getMsg("wwcInvalidTranslator"))
-							.color(NamedTextColor.RED))
+							.color(NamedTextColor.RED)
 					.build();
 			sendMsg(sender, invalid);
 			return false;

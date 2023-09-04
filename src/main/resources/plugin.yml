@@ -1,7 +1,7 @@
 name: WorldwideChat
-version: 1.15.0
+version: ${project.version}
 api-version: 1.13
-description: Break the blocky language barrier!
+description: ${project.description}
 author: BadSkater0729
 main: com.badskater0729.worldwidechat.WorldwideChat
 commands:

@@ -59,9 +59,8 @@ public class GeneralSettingsConvos {
 				}
 			}
 			final TextComponent badChange = Component.text()
-					.append(Component.text()
 							.content(getMsg("wwcConfigConversationLangInvalid"))
-							.color(NamedTextColor.RED))
+							.color(NamedTextColor.RED)
 					.build();
 			sendMsg((Player)context.getForWhom(), badChange);
 			return this;

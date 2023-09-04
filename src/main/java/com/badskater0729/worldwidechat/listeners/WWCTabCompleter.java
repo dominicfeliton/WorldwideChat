@@ -14,8 +14,6 @@ import org.bukkit.entity.Player;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.util.SupportedLang;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.isSupportedTranslatorLang;
-
 public class WWCTabCompleter implements TabCompleter {
 
 	private WorldwideChat main = WorldwideChat.instance;

@@ -57,23 +57,20 @@ public class TranslateInGameListener implements Listener {
 						@Override
 						public void run() {
 							final TextComponent entityStart = Component.text()
-									.append(Component.text()
 											.content(getMsg("wwcEntityTranslateStart"))
-											.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
+											.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
 									.build();
 							sendMsg(event.getPlayer(), entityStart);
 							if (customName != null) {
 								final TextComponent entityDone = Component.text()
-										.append(Component.text()
 												.content(getMsg("wwcEntityTranslateDone", new String[] {translateText(customName, event.getPlayer())}))
-												.color(NamedTextColor.GREEN))
+												.color(NamedTextColor.GREEN)
 										.build();
 								sendMsg(event.getPlayer(), entityDone);
 							} else {
 								final TextComponent entityStock = Component.text()
-										.append(Component.text()
 												.content(getMsg("wwcEntityTranslateNoName"))
-												.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
+												.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true)
 										.build();
 								sendMsg(event.getPlayer(), entityStock);
 							}
@@ -116,18 +113,16 @@ public class TranslateInGameListener implements Listener {
 
 						/* Send message */
 						final TextComponent bookStart = Component.text()
-								.append(Component.text()
 										.content(getMsg("wwcBookTranslateStart"))
-										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
+										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
 								.build();
 						sendMsg(event.getPlayer(), bookStart);
 
 						/* Translate title */
 						outTitle = translateText(meta.getTitle(), event.getPlayer());
 						final TextComponent bookTitleSuccess = Component.text()
-								.append(Component.text()
 										.content(getMsg("wwcBookTranslateTitleSuccess", new String[] {outTitle}))
-										.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
+										.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
 								.build();
 						sendMsg(event.getPlayer(), bookTitleSuccess);
 
@@ -140,9 +135,8 @@ public class TranslateInGameListener implements Listener {
 						if (currentBook != null) {
 							/* Set completed message */
 							final TextComponent bookDone = Component.text()
-									.append(Component.text()
 											.content(getMsg("wwcBookDone"))
-											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
+											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
 									.build();
 							sendMsg(event.getPlayer(), bookDone);
 						}
@@ -197,9 +191,8 @@ public class TranslateInGameListener implements Listener {
 
 						/* Send message */
 						final TextComponent signStart = Component.text()
-								.append(Component.text()
 										.content(getMsg("wwcSignTranslateStart"))
-										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
+										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
 								.build();
 						sendMsg(event.getPlayer(), signStart);
 
@@ -228,9 +221,8 @@ public class TranslateInGameListener implements Listener {
 						if (!textLimit && currentSign.getLocation() != null) {
 							/* Set completed message */
 							final TextComponent signDone = Component.text()
-									.append(Component.text()
 											.content(getMsg("wwcSignDone"))
-											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
+											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
 									.build();
 							sendMsg(event.getPlayer(), signDone);
 						} else {
@@ -246,10 +238,9 @@ public class TranslateInGameListener implements Listener {
 
 							/* If we are here, sign is too long or deleted msg */
 							final TextComponent translationNoticeMsg = Component.text()
-									.append(Component.text()
 											.content(getMsg("wwcSignDeletedOrTooLong"))
 											.color(NamedTextColor.LIGHT_PURPLE)
-											.decoration(TextDecoration.ITALIC, true))
+											.decoration(TextDecoration.ITALIC, true)
 									.append(Component.text().content("\n" + "---------------")
 											.color(NamedTextColor.GOLD)
 											.append(Component.text().content(out).color(NamedTextColor.WHITE))
@@ -295,9 +286,8 @@ public class TranslateInGameListener implements Listener {
 
 						/* Send message */
 						final TextComponent itemStart = Component.text()
-								.append(Component.text()
 										.content(getMsg("wwcItemTranslateStart"))
-										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
+										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
 								.build();
 						sendMsg(event.getPlayer(), itemStart);
 
@@ -306,16 +296,14 @@ public class TranslateInGameListener implements Listener {
 							translatedName = translateText(meta.getDisplayName(), event.getPlayer());
 							/* Set completed message */
 							final TextComponent itemTitleDone = Component.text()
-									.append(Component.text()
 											.content(getMsg("wwcItemTranslateTitleDone"))
-											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
+											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
 									.build();
 							sendMsg(event.getPlayer(), itemTitleDone);
 						} else {
 							final TextComponent itemStockTitleFail = Component.text()
-									.append(Component.text()
 											.content(getMsg("wwcItemTranslateTitleStock"))
-											.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true))
+											.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true)
 									.build();
 							sendMsg(event.getPlayer(), itemStockTitleFail);
 							// Stock items not supported
@@ -324,9 +312,8 @@ public class TranslateInGameListener implements Listener {
 						/* Translate item lore */
 						if (meta.hasLore()) {
 							final TextComponent itemLoreStart = Component.text()
-									.append(Component.text()
 											.content(getMsg("wwcItemTranslateLoreStart"))
-											.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
+											.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
 									.build();
 							sendMsg(event.getPlayer(), itemLoreStart);
 							outLore = new ArrayList<String>();
@@ -336,9 +323,8 @@ public class TranslateInGameListener implements Listener {
 							}
 							/* Set completed message */
 							final TextComponent itemLoreDone = Component.text()
-									.append(Component.text()
 											.content(getMsg("wwcItemTranslateLoreDone"))
-											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true))
+											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
 									.build();
 							sendMsg(event.getPlayer(), itemLoreDone);
 						}

@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static com.badskater0729.worldwidechat.util.CommonRefs.translateText;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.WorldwideChatTests;
 
 import be.seeseemelk.mockbukkit.ServerMock;
 import be.seeseemelk.mockbukkit.entity.PlayerMock;
@@ -45,6 +44,8 @@ public class TestTranslationUtils {
 		assertTrue(translateText("How many diamonds do you have?", secondPlayerMock)
 				.equals("Cuantos diamantes tienes?"));
 	}
+
+
 
 	public void testPluginDataRetention() {
 		/*

@@ -64,9 +64,8 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 						main.getConfigManager().getMsgsConfig().set("Overrides." + currentOverrideName, null);
 						main.getConfigManager().saveMessagesConfig(false);
 						final TextComponent successfulChange = Component.text()
-								.append(Component.text()
 										.content(getMsg("wwcConfigConversationOverrideDeletionSuccess"))
-										.color(NamedTextColor.GREEN))
+										.color(NamedTextColor.GREEN)
 								.build();
 						sendMsg(player, successfulChange);
 						BukkitRunnable out = new BukkitRunnable() {

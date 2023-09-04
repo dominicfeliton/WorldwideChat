@@ -263,7 +263,15 @@ public class CommonRefs {
 	public static String getMsg(String messageName) {
 		return getMsg(messageName, new String[0]);
 	}
-	
+
+	/**
+	 * Gets a message from the currently selected messages-XX.yml.
+	 * @param messageName - The name of the message from messages-XX.yml.
+	 * @param replacement - The replacement value for the selected message.
+	 * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
+	 */
+	public static String getMsg(String messageName, String replacement) { return getMsg(messageName, new String[] {replacement}); }
+
 	/**
 	  * Gets a message from the currently selected messages-XX.yml.
 	  * @param messageName - The name of the message from messages-XX.yml.
@@ -354,8 +362,8 @@ public class CommonRefs {
 			int limit = mainConfig.getInt("Translator.messageCharLimit");
 			if (inMessage.length() > limit) {
 				final TextComponent charLimit = Component.text()
-						.append(Component.text().content(CommonRefs.getMsg("wwcCharLimit", new String[] {"" + limit}))
-								.color(NamedTextColor.YELLOW))
+								.content(CommonRefs.getMsg("wwcCharLimit", new String[] {"" + limit}))
+								.color(NamedTextColor.YELLOW)
 						.build();
 				CommonRefs.sendMsg(currPlayer, charLimit);
 				return inMessage;
@@ -505,8 +513,8 @@ public class CommonRefs {
 			/* Add 1 to error count */
 			main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
 			final TextComponent playerError = Component.text()
-					.append(Component.text().content(CommonRefs.getMsg("wwcTranslatorError"))
-							.color(NamedTextColor.RED))
+							.content(CommonRefs.getMsg("wwcTranslatorError"))
+							.color(NamedTextColor.RED)
 					.build();
 			CommonRefs.sendMsg(currPlayer, playerError);
 			main.getLogger()
@@ -567,9 +575,8 @@ public class CommonRefs {
 	 */
 	public static boolean sendNoConsoleChatMsg(CommandSender sender) {
 		final TextComponent noConsoleChat = Component.text() // Cannot translate console chat
-				.append(Component.text()
 						.content(CommonRefs.getMsg("wwctCannotTranslateConsole", new String[0]))
-						.color(NamedTextColor.RED))
+						.color(NamedTextColor.RED)
 				.build();
 		CommonRefs.sendMsg(sender, noConsoleChat);
 		return false;
@@ -585,9 +592,8 @@ public class CommonRefs {
 			main.getLogger().warning(CommonRefs.getMsg("wwcTimeoutExceptionConsole", new String[] {sender.getName()}));
 		}
 		final TextComponent timeoutException = Component.text()
-				.append(Component.text()
 						.content(CommonRefs.getMsg("wwcTimeoutException"))
-						.color(NamedTextColor.YELLOW))
+						.color(NamedTextColor.YELLOW)
 				.build();
 		CommonRefs.sendMsg(sender, timeoutException);
 		return true;
@@ -632,9 +638,8 @@ public class CommonRefs {
 			}
 			main.addPlayerUsingConfigurationGUI(((Player)context.getForWhom()).getUniqueId());
 			final TextComponent successfulChange = Component.text()
-					.append(Component.text()
 							.content(CommonRefs.getMsg(successfulChangeMsg))
-							.color(NamedTextColor.GREEN))
+							.color(NamedTextColor.GREEN)
 					.build();
 			CommonRefs.sendMsg((Player)context.getForWhom(), successfulChange);
 		}
@@ -693,9 +698,8 @@ public class CommonRefs {
 						.getCCWarning())) // check if user has already been sent CC warning
 		{
 			final TextComponent watsonCCWarning = Component.text()
-					.append(Component.text()
 							.content(CommonRefs.getMsg("watsonColorCodeWarning"))
-							.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true))
+							.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
 					.build();
 			CommonRefs.sendMsg(currPlayer, watsonCCWarning);
 			// Set got CC warning of current translator to true, so that they don't get
@@ -719,9 +723,9 @@ public class CommonRefs {
 			Instant currTime = Instant.now();
 			if (currTime.compareTo(previous.plus(delay, ChronoUnit.SECONDS)) < 0) {
 				final TextComponent rateLimit = Component.text()
-						.append(Component.text().content(CommonRefs.getMsg("wwcRateLimit", new String[] {"" + ChronoUnit.SECONDS.between(currTime,
+						.content(CommonRefs.getMsg("wwcRateLimit", new String[] {"" + ChronoUnit.SECONDS.between(currTime,
 								previous.plus(delay, ChronoUnit.SECONDS))}))
-								.color(NamedTextColor.YELLOW))
+								.color(NamedTextColor.YELLOW)
 						.build();
 				CommonRefs.sendMsg(sender, rateLimit);
 				return false;

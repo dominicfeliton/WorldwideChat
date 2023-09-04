@@ -17,8 +17,6 @@ import com.badskater0729.worldwidechat.WorldwideChat;
 import com.cryptomorin.xseries.XEnchantment;
 import com.cryptomorin.xseries.XMaterial;
 
-import org.bukkit.scheduler.BukkitRunnable;
-
 import fr.minuskube.inv.ClickableItem;
 import fr.minuskube.inv.InventoryManager;
 import fr.minuskube.inv.SmartInventory;
@@ -45,9 +43,8 @@ public class WWCInventoryManager extends InventoryManager {
 			// Target player no longer online
 			player.closeInventory();
 			final TextComponent targetPlayerDC = Component.text()
-					.append(Component.text()
 							.content(getMsg("wwctGUITargetPlayerNull"))
-							.color(NamedTextColor.RED).decorate(TextDecoration.ITALIC))
+							.color(NamedTextColor.RED).decorate(TextDecoration.ITALIC)
 					.build();
 			sendMsg(player, targetPlayerDC);
 		}
@@ -55,9 +52,8 @@ public class WWCInventoryManager extends InventoryManager {
 	
 	public static void inventoryError(Player player, Exception e) {
 		final TextComponent inventoryError = Component.text()
-				.append(Component.text().content(
-						getMsg("wwcInventoryErrorPlayer"))
-						.color(NamedTextColor.RED))
+						.content(getMsg("wwcInventoryErrorPlayer"))
+						.color(NamedTextColor.RED)
 				.build();
 		sendMsg(player, inventoryError);
 		main.getLogger().severe(getMsg("wwcInventoryError", new String[] {player.getName()}));
@@ -176,9 +172,8 @@ public class WWCInventoryManager extends InventoryManager {
 				}
 			}
 			final TextComponent successfulChange = Component.text()
-					.append(Component.text()
 							.content(getMsg(messageOnChange))
-							.color(NamedTextColor.GREEN))
+							.color(NamedTextColor.GREEN)
 					.build();
 			sendMsg(player, successfulChange);
 			genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName);

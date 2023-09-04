@@ -93,9 +93,8 @@ public class TranslatorSettingsConvos {
 			if (input.equalsIgnoreCase("clear")) {
 				main.getConfigManager().getMainConfig().set("Translator.errorsToIgnore", new String[0]);
 				final TextComponent clearChange = Component.text()
-						.append(Component.text()
 								.content(getMsg("wwcConfigConversationIgnoreErrorsCleared"))
-								.color(NamedTextColor.YELLOW))
+								.color(NamedTextColor.YELLOW)
 						.build();
 				sendMsg((Player)context.getForWhom(), clearChange);
 				return this;

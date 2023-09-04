@@ -65,9 +65,8 @@ public class SQLSettingsConvos {
 			if (input.equalsIgnoreCase("clear")) {
 				main.getConfigManager().getMainConfig().set("Storage.sqlOptionalArgs", new String[0]);
 				final TextComponent badChange = Component.text()
-						.append(Component.text()
 								.content(getMsg("wwcConfigConversationSQLOptionalArgsCleared"))
-								.color(NamedTextColor.YELLOW))
+								.color(NamedTextColor.YELLOW)
 						.build();
 				sendMsg((Player)context.getForWhom(), badChange);
 				return this;

@@ -65,9 +65,8 @@ private static WorldwideChat main = WorldwideChat.instance;
 			if (input.equalsIgnoreCase("clear")) {
 				main.getConfigManager().getMainConfig().set("Storage.mongoOptionalArgs", new String[0]);
 				final TextComponent badChange = Component.text()
-						.append(Component.text()
 								.content(getMsg("wwcConfigConversationMongoOptionalArgsCleared"))
-								.color(NamedTextColor.YELLOW))
+								.color(NamedTextColor.YELLOW)
 						.build();
 				sendMsg((Player)context.getForWhom(), badChange);
 				return this;

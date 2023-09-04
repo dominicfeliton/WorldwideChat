@@ -27,9 +27,8 @@ public class OnPlayerJoinListener implements Listener {
 		if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) && (main.getOutOfDate())
 				&& (event.getPlayer().hasPermission("worldwidechat.chatupdate"))) {
 			final TextComponent outOfDate = Component.text()
-					.append(Component.text()
 							.content(getMsg("wwcUpdaterOutOfDateChat"))
-							.color(NamedTextColor.YELLOW))
+							.color(NamedTextColor.YELLOW)
 					.append(Component.text().content(" (").color(NamedTextColor.GOLD))
 					.append(Component.text().content("https://github.com/BadSkater0729/WorldwideChat/releases")
 							.color(NamedTextColor.GOLD)
@@ -46,16 +45,14 @@ public class OnPlayerJoinListener implements Listener {
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
 				final TextComponent langToLang = Component.text()
-						.append(Component.text()
 								.content(getMsg("wwcOnJoinTranslationNotificationSourceLang", new String[] {currTranslator.getInLangCode(), currTranslator.getOutLangCode()}))
-								.color(NamedTextColor.LIGHT_PURPLE))
+								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
 				sendMsg(event.getPlayer(), langToLang);
 			} else {
 				final TextComponent noSource = Component.text()
-						.append(Component.text()
 								.content(getMsg("wwcOnJoinTranslationNotificationNoSourceLang", new String[] {currTranslator.getOutLangCode()}))
-								.color(NamedTextColor.LIGHT_PURPLE))
+								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
 				sendMsg(event.getPlayer(), noSource);
 			}
@@ -66,16 +63,14 @@ public class OnPlayerJoinListener implements Listener {
 			ActiveTranslator currTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
 				final TextComponent langToLang = Component.text()
-						.append(Component.text()
 								.content(getMsg("wwcGlobalOnJoinTranslationNotificationSourceLang", new String[] {currTranslator.getInLangCode(), currTranslator.getOutLangCode()}))
-								.color(NamedTextColor.LIGHT_PURPLE))
+								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
 				sendMsg(event.getPlayer(), langToLang);
 			} else {
 				final TextComponent noSource = Component.text()
-						.append(Component.text()
 								.content(getMsg("wwcGlobalOnJoinTranslationNotificationNoSourceLang", new String[] {currTranslator.getOutLangCode()}))
-								.color(NamedTextColor.LIGHT_PURPLE))
+								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
 				sendMsg(event.getPlayer(), noSource);
 			}
@@ -86,16 +81,14 @@ public class OnPlayerJoinListener implements Listener {
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
 				final TextComponent langToLang = Component.text()
-						.append(Component.text()
 								.content(getMsg("wwcOverrideGlobalOnJoinTranslationNotificationSourceLang", new String[] {currTranslator.getInLangCode(), currTranslator.getOutLangCode()}))
-								.color(NamedTextColor.LIGHT_PURPLE))
+								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
 				sendMsg(event.getPlayer(), langToLang);
 			} else {
 				final TextComponent noSource = Component.text()
-						.append(Component.text()
 								.content(getMsg("wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang", new String[] {currTranslator.getOutLangCode()}))
-								.color(NamedTextColor.LIGHT_PURPLE))
+								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
 				sendMsg(event.getPlayer(), noSource);
 			}

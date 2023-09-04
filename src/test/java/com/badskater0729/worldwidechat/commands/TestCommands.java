@@ -6,7 +6,6 @@ import com.badskater0729.worldwidechat.WorldwideChat;
 
 import be.seeseemelk.mockbukkit.ServerMock;
 import be.seeseemelk.mockbukkit.entity.PlayerMock;
-import com.badskater0729.worldwidechat.util.ActiveTranslator;
 
 public class TestCommands {
 
