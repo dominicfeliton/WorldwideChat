@@ -99,7 +99,7 @@ public class ConfigurationHandler {
 			
 			YamlConfiguration tempConfig = YamlConfiguration.loadConfiguration(messagesFile);
 			
-			tempConfig.set("DoNotTouchThis.Version", main.getCurrentMessagesConfigVersion());
+			tempConfig.set("DoNotTouchThis.Version", WorldwideChat.messagesConfigVersion);
 			
 			saveCustomConfig(tempConfig, messagesFile, false);
 		}
@@ -108,9 +108,7 @@ public class ConfigurationHandler {
 		messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
 		
 		/* Check if version value is out of date...*/
-		String currentMessagesConfigVersion = main.getCurrentMessagesConfigVersion();
-		
-		if (messagesConfig.getString("DoNotTouchThis.Version") == null || !messagesConfig.getString("DoNotTouchThis.Version").equals(currentMessagesConfigVersion)) {
+		if (messagesConfig.getString("DoNotTouchThis.Version") == null || !messagesConfig.getString("DoNotTouchThis.Version").equals(WorldwideChat.messagesConfigVersion)) {
 			main.getLogger().warning("Upgrading out-of-date messages config!");
 			HashMap<String, String> oldOverrides = new HashMap<>();
 			
@@ -127,7 +125,7 @@ public class ConfigurationHandler {
 			/* Copy newest config */
 			main.saveResource("messages-" + mainConfig.getString("General.pluginLang") + ".yml", true);
 			messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
-			messagesConfig.set("DoNotTouchThis.Version", main.getCurrentMessagesConfigVersion());
+			messagesConfig.set("DoNotTouchThis.Version", WorldwideChat.messagesConfigVersion);
 			
 			/* Paste overrides section */
 			if (!oldOverrides.isEmpty()) {
