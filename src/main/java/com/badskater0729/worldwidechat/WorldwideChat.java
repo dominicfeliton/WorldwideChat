@@ -4,6 +4,8 @@ import java.io.File;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+import java.util.ArrayList;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
@@ -580,19 +582,13 @@ public class WorldwideChat extends JavaPlugin {
 	  * Registers tab autocomplete for all valid commands 
 	  */
 	private void registerTabCompleters() {
-		getCommand("wwcg").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwct").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwcti").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwctb").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwcte").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwctco").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwctci").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwcts").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwcs").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwctrl").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwc").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwcr").setTabCompleter(new WWCTabCompleter());
-		getCommand("wwcc").setTabCompleter(new WWCTabCompleter());
+		List<String> commandList = new ArrayList<>();
+
+		Set<String> myPluginCommands = getDescription().getCommands().keySet();
+
+		for (String commandName : myPluginCommands) {
+			getCommand(commandName).setTabCompleter(new WWCTabCompleter());
+		}
 	}
 
 	/* Setters */
@@ -676,6 +672,8 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public void addCacheTerm(CachedTranslation input, String outputPhrase) {
+		// TODO: Ensure that cache size changes take effect
+
         // No cache
 		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") <= 0) {
 			return;
