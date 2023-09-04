@@ -178,6 +178,9 @@ public class TranslateInGameListener implements Listener {
 			    && event.getClickedBlock().getType().name().contains("SIGN")
 			    && checkInventoryHand(event)
 			    && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
+				/* Cancel sign edit event */
+				// TODO: Implement PlayerOpenSignEvent on paper with modules
+
 				/* Start sign translation */
 				Sign currentSign = (Sign) event.getClickedBlock().getState();
 
