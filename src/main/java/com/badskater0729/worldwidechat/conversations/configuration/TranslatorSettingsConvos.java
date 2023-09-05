@@ -25,7 +25,7 @@ public class TranslatorSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationCharacterLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.messageCharLimit")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationCharacterLimitInput", "" + main.getConfigManager().getMainConfig().getInt("Translator.messageCharLimit"));
 		}
 
 		@Override
@@ -40,7 +40,7 @@ public class TranslatorSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationErrorLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.errorLimit")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationErrorLimitInput", "" + main.getConfigManager().getMainConfig().getInt("Translator.errorLimit"));
 		}
 
 		@Override
@@ -55,7 +55,7 @@ public class TranslatorSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationRateLimitInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.rateLimit")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationRateLimitInput", "" + main.getConfigManager().getMainConfig().getInt("Translator.rateLimit"));
 		}
 
 		@Override
@@ -70,7 +70,7 @@ public class TranslatorSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationTranslationCacheInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationTranslationCacheInput", "" + main.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize"));
 		}
 
 		@Override
@@ -85,7 +85,7 @@ public class TranslatorSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationIgnoreErrorsInput", new String[] {main.getConfigManager().getMainConfig().getList("Translator.errorsToIgnore") != null ? main.getConfigManager().getMainConfig().getList("Translator.errorsToIgnore").toString() : "empty"});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationIgnoreErrorsInput", main.getConfigManager().getMainConfig().getList("Translator.errorsToIgnore") != null ? main.getConfigManager().getMainConfig().getList("Translator.errorsToIgnore").toString() : "empty");
 		}
 
 		@Override

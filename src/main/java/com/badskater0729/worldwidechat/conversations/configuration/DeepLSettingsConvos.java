@@ -22,7 +22,7 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationDeepLTranslateApiKeyInput", new String[] {main.getConfigManager().getMainConfig().getString("Translator.deepLAPIKey")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationDeepLTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.deepLAPIKey"));
 		}
 
 		@Override

@@ -362,7 +362,7 @@ public class CommonRefs {
 			int limit = mainConfig.getInt("Translator.messageCharLimit");
 			if (inMessage.length() > limit) {
 				final TextComponent charLimit = Component.text()
-								.content(CommonRefs.getMsg("wwcCharLimit", new String[] {"" + limit}))
+								.content(CommonRefs.getMsg("wwcCharLimit", "" + limit))
 								.color(NamedTextColor.YELLOW)
 						.build();
 				CommonRefs.sendMsg(currPlayer, charLimit);
@@ -518,7 +518,7 @@ public class CommonRefs {
 					.build();
 			CommonRefs.sendMsg(currPlayer, playerError);
 			main.getLogger()
-					.severe(CommonRefs.getMsg("wwcTranslatorErrorConsole", new String[] {currPlayer.getName()}));
+					.severe(CommonRefs.getMsg("wwcTranslatorErrorConsole", currPlayer.getName()));
 			CommonRefs.debugMsg(ExceptionUtils.getStackTrace(e));
 
 			/* Write to log file */
@@ -589,7 +589,7 @@ public class CommonRefs {
 	 */
 	public static boolean sendTimeoutExceptionMsg(CommandSender sender) {
 		if (sender instanceof Player) {
-			main.getLogger().warning(CommonRefs.getMsg("wwcTimeoutExceptionConsole", new String[] {sender.getName()}));
+			main.getLogger().warning(CommonRefs.getMsg("wwcTimeoutExceptionConsole", sender.getName()));
 		}
 		final TextComponent timeoutException = Component.text()
 						.content(CommonRefs.getMsg("wwcTimeoutException"))
@@ -723,8 +723,8 @@ public class CommonRefs {
 			Instant currTime = Instant.now();
 			if (currTime.compareTo(previous.plus(delay, ChronoUnit.SECONDS)) < 0) {
 				final TextComponent rateLimit = Component.text()
-						.content(CommonRefs.getMsg("wwcRateLimit", new String[] {"" + ChronoUnit.SECONDS.between(currTime,
-								previous.plus(delay, ChronoUnit.SECONDS))}))
+						.content(CommonRefs.getMsg("wwcRateLimit", "" + ChronoUnit.SECONDS.between(currTime,
+								previous.plus(delay, ChronoUnit.SECONDS))))
 								.color(NamedTextColor.YELLOW)
 						.build();
 				CommonRefs.sendMsg(sender, rateLimit);

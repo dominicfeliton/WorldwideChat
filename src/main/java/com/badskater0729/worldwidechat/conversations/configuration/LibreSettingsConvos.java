@@ -22,7 +22,7 @@ public class LibreSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationLibreTranslateApiKeyInput", new String[] {main.getConfigManager().getMainConfig().getString("Translator.libreAPIKey")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationLibreTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.libreAPIKey"));
 		}
 
 		@Override
@@ -37,7 +37,7 @@ public class LibreSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationLibreURLInput", new String[] {main.getConfigManager().getMainConfig().getString("Translator.libreURL")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationLibreURLInput", main.getConfigManager().getMainConfig().getString("Translator.libreURL"));
 		}
 
 		@Override

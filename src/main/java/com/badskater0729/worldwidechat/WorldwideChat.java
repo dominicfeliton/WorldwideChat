@@ -203,6 +203,7 @@ public class WorldwideChat extends JavaPlugin {
                 case "wwcr" -> {
                     // Reload command
                     reload(sender);
+					// TODO: Send diff message if translator fails to player
                     return true;
                 }
                 case "wwcs" -> {
@@ -653,14 +654,10 @@ public class WorldwideChat extends JavaPlugin {
 
 	public void addPlayerUsingConfigurationGUI(UUID in) {
 		if (!playersUsingConfigGUI.contains(in.toString())) {
-			Player currPlayer = getServer().getPlayer(in);
-			if (currPlayer != null) {
-				playersUsingConfigGUI.add(in.toString());
-				debugMsg("Player " + currPlayer.getName()
-						+ " has been added (or overwrriten) to the internal hashmap of people that are using the configuration GUI.");
-				return;
-			}
-			debugMsg("WEIRD::: UUID " + in + " is not a valid Player, CANNOT add to internal hashmap of people that are using the configuration GUI.");
+			playersUsingConfigGUI.add(in.toString());
+			debugMsg("UUID " + in
+					+ " has been added (or overwrriten) to the internal hashmap of people that are using the configuration GUI.");
+			return;
 		}
 	}
 	
@@ -669,13 +666,9 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public void removePlayerUsingConfigurationGUI(UUID in) {
-		Player currPlayer = getServer().getPlayer(in);
-		if (currPlayer != null) {
-			playersUsingConfigGUI.remove(in.toString());
-			debugMsg("Player " + currPlayer.getName()
-					+ " has been removed from the internal list of people that are using the configuration GUI.");
-		}
-		debugMsg("WEIRD::: UUID " + in + " is not a valid Player, CANNOT remove from internal hashmap of people that are using the configuration GUI.");
+		playersUsingConfigGUI.remove(in.toString());
+		debugMsg("Player " + in
+				+ " has been removed from the internal list of people that are using the configuration GUI.");
 	}
 	
 	public void removePlayerUsingConfigurationGUI(Player p) {

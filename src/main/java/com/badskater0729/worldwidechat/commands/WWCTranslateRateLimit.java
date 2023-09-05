@@ -136,7 +136,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 				if (!(currTranslator.getRateLimit() > 0)) {
 					/* Rate limit already disabled */
 					final TextComponent rateLimitAlreadyOff = Component.text()
-									.content(getMsg("wwctrlRateLimitAlreadyOffTarget", new String[] {inPlayer.getName()}))
+									.content(getMsg("wwctrlRateLimitAlreadyOffTarget", inPlayer.getName()))
 									.color(NamedTextColor.YELLOW)
 							.build();
 					sendMsg(sender, rateLimitAlreadyOff);
@@ -144,7 +144,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 					/* Disable rate limit */
 					currTranslator.setRateLimit(0);
 					final TextComponent rateLimitOffReceiver = Component.text()
-									.content(getMsg("wwctrlRateLimitOffTarget", new String[] {inPlayer.getName()}))
+									.content(getMsg("wwctrlRateLimitOffTarget", inPlayer.getName()))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, rateLimitOffReceiver);
@@ -165,7 +165,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 	
 	private void enableRateLimitMessage(Player inPlayer, int limit) {
 		final TextComponent rateLimitSet = Component.text()
-						.content(getMsg("wwctrlRateLimitSetSender", new String[] {limit + ""}))
+						.content(getMsg("wwctrlRateLimitSetSender", limit + ""))
 						.color(NamedTextColor.LIGHT_PURPLE)
 				.build();
 		sendMsg(inPlayer, rateLimitSet);
@@ -181,7 +181,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 	
 	private void playerNotFoundMessage(CommandSender sender, String inName) {
 		final TextComponent notAPlayer = Component.text()
-						.content(getMsg("wwctrlPlayerNotFound", new String[] {inName}))
+						.content(getMsg("wwctrlPlayerNotFound", inName))
 						.color(NamedTextColor.RED)
 				.build();
 		sendMsg(sender, notAPlayer);

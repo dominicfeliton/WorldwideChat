@@ -200,7 +200,7 @@ public class LibreTranslation extends BasicTranslation {
 		case 500:
 			throw new Exception(getMsg("libreHttp" + in));
 		default:
-			throw new Exception(getMsg("libreHttpUnknown", new String[] {in + ""}));
+			throw new Exception(getMsg("libreHttpUnknown", in + ""));
 		}
 	}
 }

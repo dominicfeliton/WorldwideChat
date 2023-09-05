@@ -1,5 +1,6 @@
 package com.badskater0729.worldwidechat.inventory;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.UUID;
 
@@ -26,9 +27,7 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.runAsync;
+import static com.badskater0729.worldwidechat.util.CommonRefs.*;
 
 public class WWCInventoryManager extends InventoryManager {
 	
@@ -56,7 +55,7 @@ public class WWCInventoryManager extends InventoryManager {
 						.color(NamedTextColor.RED)
 				.build();
 		sendMsg(player, inventoryError);
-		main.getLogger().severe(getMsg("wwcInventoryError", new String[] {player.getName()}));
+		main.getLogger().severe(getMsg("wwcInventoryError", player.getName()));
 		e.printStackTrace();
 		player.closeInventory();
 	}
@@ -131,7 +130,7 @@ public class WWCInventoryManager extends InventoryManager {
 	public static void genericOpenSubmenuButton(int x, int y, Player player, InventoryContents contents, Boolean preCondition, String buttonName, SmartInventory invToOpen) {
 		ItemStack button;
 		if (preCondition != null) {
-			if (preCondition.booleanValue()) {
+			if (preCondition) {
 				button = XMaterial.EMERALD_BLOCK.parseItem();
 			} else {
 				button = XMaterial.REDSTONE_BLOCK.parseItem();
@@ -149,10 +148,10 @@ public class WWCInventoryManager extends InventoryManager {
 	}
 	
 	public static void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName) {
-		genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, new String[0]);
+		genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, new ArrayList<>());
 	}
 	
-	public static void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName, String[] configValsToDisable) {
+	public static void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName, ArrayList<String> configValsToDisable) {
 		ItemStack button = XMaterial.BEDROCK.parseItem();
 		if (main.getConfigManager().getMainConfig().getBoolean(configValueName)) {
 			button = XMaterial.EMERALD_BLOCK.parseItem();
@@ -166,17 +165,17 @@ public class WWCInventoryManager extends InventoryManager {
 			main.addPlayerUsingConfigurationGUI(player);
 			main.getConfigManager().getMainConfig().set(configValueName,
 					!(main.getConfigManager().getMainConfig().getBoolean(configValueName)));
-			if (configValsToDisable != null && configValsToDisable.length > 0) {
-				for (String eaKey : configValsToDisable) {
-					main.getConfigManager().getMainConfig().set(eaKey, false);
-				}
-			}
-			final TextComponent successfulChange = Component.text()
+            for (String eaKey : configValsToDisable) {
+				if (eaKey.equals(configValueName)) continue;
+                debugMsg("Disabling " + eaKey + "!");
+                main.getConfigManager().getMainConfig().set(eaKey, false);
+            }
+            final TextComponent successfulChange = Component.text()
 							.content(getMsg(messageOnChange))
 							.color(NamedTextColor.GREEN)
 					.build();
 			sendMsg(player, successfulChange);
-			genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName);
+			genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, configValsToDisable);
 		}));
 	}
 	

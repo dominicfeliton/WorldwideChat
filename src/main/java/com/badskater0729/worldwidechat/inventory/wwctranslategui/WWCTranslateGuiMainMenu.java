@@ -46,8 +46,8 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 		if (targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
 			playerTitle = ChatColor.BLUE + getMsg("wwctGUIMainMenuGlobal");
 		} else {
-			playerTitle = ChatColor.BLUE + getMsg("wwctGUIMainMenuPlayer", new String[] {WorldwideChat.instance.getServer()
-					.getPlayer(UUID.fromString(targetPlayerUUID)).getName()});
+			playerTitle = ChatColor.BLUE + getMsg("wwctGUIMainMenuPlayer", WorldwideChat.instance.getServer()
+					.getPlayer(UUID.fromString(targetPlayerUUID)).getName());
 		}
 		return SmartInventory.builder().id("translateMainMenu").provider(new WWCTranslateGuiMainMenu(targetPlayerUUID))
 				.size(5, 9).manager(WorldwideChat.instance.getInventoryManager()).title(playerTitle).build();
@@ -80,8 +80,8 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 				WWCInventoryManager.addGlowEffect(translationMeta);
 				translationMeta.setDisplayName(getMsg("wwctGUIExistingTranslationButton"));
 				List<String> outLore = new ArrayList<>();
-				outLore.add(ChatColor.LIGHT_PURPLE + getMsg("wwctGUIExistingTranslationInput", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getInLangCode()}));
-				outLore.add(ChatColor.LIGHT_PURPLE + getMsg("wwctGUIExistingTranslationOutput", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getOutLangCode()}));
+				outLore.add(ChatColor.LIGHT_PURPLE + getMsg("wwctGUIExistingTranslationInput", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getInLangCode()));
+				outLore.add(ChatColor.LIGHT_PURPLE + getMsg("wwctGUIExistingTranslationOutput", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getOutLangCode()));
 				translationMeta.setLore(outLore);
 				translationButton.setItemMeta(translationMeta);
 
@@ -228,8 +228,8 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 					if (targetTranslator.getTranslatingChatOutgoing() || targetTranslator.getTranslatingChatIncoming()) {
 						WWCInventoryManager.addGlowEffect(chatMeta);
 						List<String> outLoreChat = new ArrayList<>();
-						outLoreChat.add(ChatColor.LIGHT_PURPLE + getMsg("wwctGUIExistingChatIncomingEnabled", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getTranslatingChatIncoming()}));
-						outLoreChat.add(ChatColor.LIGHT_PURPLE + getMsg("wwctGUIExistingChatOutgoingEnabled", new String[] {ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getTranslatingChatOutgoing()}));
+						outLoreChat.add(ChatColor.LIGHT_PURPLE + getMsg("wwctGUIExistingChatIncomingEnabled", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getTranslatingChatIncoming()));
+						outLoreChat.add(ChatColor.LIGHT_PURPLE + getMsg("wwctGUIExistingChatOutgoingEnabled", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getTranslatingChatOutgoing()));
 						chatMeta.setLore(outLoreChat);
 						chatMeta.setDisplayName(ChatColor.GREEN
 								+ getMsg("wwctGUIChatButton"));

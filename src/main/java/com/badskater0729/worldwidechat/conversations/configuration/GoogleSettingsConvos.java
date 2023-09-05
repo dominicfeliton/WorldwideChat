@@ -22,7 +22,7 @@ public class GoogleSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationGoogleTranslateAPIKeyInput", new String[] {main.getConfigManager().getMainConfig().getString("Translator.googleTranslateAPIKey")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationGoogleTranslateAPIKeyInput", main.getConfigManager().getMainConfig().getString("Translator.googleTranslateAPIKey"));
 		}
 
 		@Override

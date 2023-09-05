@@ -196,7 +196,7 @@ public class ConfigurationHandler {
 		try {
 			if ((mainConfig.getInt("General.syncUserDataDelay") > 10)) {
 				main.getLogger().info(
-						ChatColor.LIGHT_PURPLE + getMsg("wwcConfigSyncDelayEnabled", new String[] {mainConfig.getInt("General.syncUserDataDelay") + ""}));
+						ChatColor.LIGHT_PURPLE + getMsg("wwcConfigSyncDelayEnabled", mainConfig.getInt("General.syncUserDataDelay") + ""));
 			} else {
 				mainConfig.set("General.syncUserDataDelay", 7200);
 				main.getLogger().warning(getMsg("wwcConfigSyncDelayInvalid"));
@@ -208,7 +208,7 @@ public class ConfigurationHandler {
 		// Rate limit Settings
 		try {
 			if (mainConfig.getInt("Translator.rateLimit") >= 0) {
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + getMsg("wwcConfigRateLimitEnabled", new String[] {"" + mainConfig.getInt("Translator.rateLimit")}));
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + getMsg("wwcConfigRateLimitEnabled", "" + mainConfig.getInt("Translator.rateLimit")));
 			} else {
 				mainConfig.set("Translator.rateLimit", 0);
 				main.getLogger().warning(getMsg("wwcConfigRateLimitInvalid"));
@@ -220,7 +220,7 @@ public class ConfigurationHandler {
 		// Per-message char limit Settings
 		try {
 			if (mainConfig.getInt("Translator.messageCharLimit") >= 0) {
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + getMsg("wwcConfigMessageCharLimitEnabled", new String[] {"" + mainConfig.getInt("Translator.messageCharLimit")}));
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + getMsg("wwcConfigMessageCharLimitEnabled", "" + mainConfig.getInt("Translator.messageCharLimit")));
 			} else {
 				mainConfig.set("Translator.messageCharLimit", 255);
 				main.getLogger().warning(getMsg("wwcConfigMessageCharLimitInvalid"));
@@ -233,7 +233,7 @@ public class ConfigurationHandler {
 		try {
 			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
 				main.getLogger()
-						.info(ChatColor.LIGHT_PURPLE + getMsg("wwcConfigCacheEnabled", new String[] {mainConfig.getInt("Translator.translatorCacheSize") + ""}));
+						.info(ChatColor.LIGHT_PURPLE + getMsg("wwcConfigCacheEnabled", mainConfig.getInt("Translator.translatorCacheSize") + ""));
 			    // Set cache to size beforehand, so we can avoid expandCapacity :)
 				main.setCacheProperties(mainConfig.getInt("Translator.translatorCacheSize"));
 			} else {
@@ -250,7 +250,7 @@ public class ConfigurationHandler {
 		try {
 			if (mainConfig.getInt("Translator.errorLimit") > 0) {
 				main.getLogger().info(
-						ChatColor.LIGHT_PURPLE + getMsg("wwcConfigErrorLimitEnabled", new String[] {mainConfig.getInt("Translator.errorLimit") + ""}));
+						ChatColor.LIGHT_PURPLE + getMsg("wwcConfigErrorLimitEnabled", mainConfig.getInt("Translator.errorLimit") + ""));
 			} else {
 				mainConfig.set("Translator.errorLimit", 5);
 				main.getLogger().warning(getMsg("wwcConfigErrorLimitInvalid"));
@@ -277,9 +277,9 @@ public class ConfigurationHandler {
 				SQLUtils.connect(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"), 
 						mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"), 
 						(List<String>) mainConfig.getList("Storage.sqlOptionalArgs"), mainConfig.getBoolean("Storage.sqlUseSSL"));
-				main.getLogger().info(ChatColor.GREEN + getMsg("wwcConfigConnectionSuccess", new String[] {"SQL"}));
+				main.getLogger().info(ChatColor.GREEN + getMsg("wwcConfigConnectionSuccess", "SQL"));
 			} catch (Exception e) {
-				main.getLogger().severe(getMsg("wwcConfigConnectionFail", new String[] {"SQL"}));
+				main.getLogger().severe(getMsg("wwcConfigConnectionFail", "SQL"));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
 				SQLUtils.disconnect(); // Just in case
 				main.getLogger().severe(getMsg("wwcConfigYAMLFallback"));
@@ -289,9 +289,9 @@ public class ConfigurationHandler {
 				MongoDBUtils.connect(mainConfig.getString("Storage.mongoHostname"), mainConfig.getString("Storage.mongoPort"), 
 						mainConfig.getString("Storage.mongoDatabaseName"), mainConfig.getString("Storage.mongoUsername"), 
 						mainConfig.getString("Storage.mongoPassword"), (List<String>) mainConfig.getList("Storage.mongoOptionalArgs"));
-				main.getLogger().info(ChatColor.GREEN + getMsg("wwcConfigConnectionSuccess", new String[] {"MongoDB"}));
+				main.getLogger().info(ChatColor.GREEN + getMsg("wwcConfigConnectionSuccess", "MongoDB"));
 			} catch (Exception e) {
-				main.getLogger().severe(getMsg("wwcConfigConnectionFail", new String[] {"MongoDB"}));
+				main.getLogger().severe(getMsg("wwcConfigConnectionFail", "MongoDB"));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
 				MongoDBUtils.disconnect();
 				main.getLogger().severe(getMsg("wwcConfigYAMLFallback"));
@@ -360,7 +360,7 @@ public class ConfigurationHandler {
 			main.getLogger().severe(getMsg("wwcInvalidTranslator"));
 		} else {
 			main.getLogger().info(ChatColor.GREEN
-					+ getMsg("wwcConfigConnectionSuccess", new String[] {outName}));
+					+ getMsg("wwcConfigConnectionSuccess", outName));
 		}
 		main.setTranslatorName(outName);
 	}

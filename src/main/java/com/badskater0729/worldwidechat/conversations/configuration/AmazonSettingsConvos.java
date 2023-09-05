@@ -22,7 +22,7 @@ public class AmazonSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationAmazonTranslateAccessKeyInput", new String[] {main.getConfigManager().getMainConfig().getString("Translator.amazonAccessKey")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationAmazonTranslateAccessKeyInput", main.getConfigManager().getMainConfig().getString("Translator.amazonAccessKey"));
 		}
 
 		@Override
@@ -37,7 +37,7 @@ public class AmazonSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationAmazonTranslateRegionInput", new String[] {main.getConfigManager().getMainConfig().getString("Translator.amazonRegion")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationAmazonTranslateRegionInput", main.getConfigManager().getMainConfig().getString("Translator.amazonRegion"));
 		}
 
 		@Override
@@ -52,7 +52,7 @@ public class AmazonSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationAmazonTranslateSecretKeyInput", new String[] {main.getConfigManager().getMainConfig().getString("Translator.amazonSecretKey")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationAmazonTranslateSecretKeyInput", main.getConfigManager().getMainConfig().getString("Translator.amazonSecretKey"));
 		}
 
 		@Override

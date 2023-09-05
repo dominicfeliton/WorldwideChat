@@ -51,7 +51,7 @@ public class OnPlayerJoinListener implements Listener {
 				sendMsg(event.getPlayer(), langToLang);
 			} else {
 				final TextComponent noSource = Component.text()
-								.content(getMsg("wwcOnJoinTranslationNotificationNoSourceLang", new String[] {currTranslator.getOutLangCode()}))
+								.content(getMsg("wwcOnJoinTranslationNotificationNoSourceLang", currTranslator.getOutLangCode()))
 								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
 				sendMsg(event.getPlayer(), noSource);
@@ -69,7 +69,7 @@ public class OnPlayerJoinListener implements Listener {
 				sendMsg(event.getPlayer(), langToLang);
 			} else {
 				final TextComponent noSource = Component.text()
-								.content(getMsg("wwcGlobalOnJoinTranslationNotificationNoSourceLang", new String[] {currTranslator.getOutLangCode()}))
+								.content(getMsg("wwcGlobalOnJoinTranslationNotificationNoSourceLang", currTranslator.getOutLangCode()))
 								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
 				sendMsg(event.getPlayer(), noSource);
@@ -87,7 +87,7 @@ public class OnPlayerJoinListener implements Listener {
 				sendMsg(event.getPlayer(), langToLang);
 			} else {
 				final TextComponent noSource = Component.text()
-								.content(getMsg("wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang", new String[] {currTranslator.getOutLangCode()}))
+								.content(getMsg("wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang", currTranslator.getOutLangCode()))
 								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
 				sendMsg(event.getPlayer(), noSource);

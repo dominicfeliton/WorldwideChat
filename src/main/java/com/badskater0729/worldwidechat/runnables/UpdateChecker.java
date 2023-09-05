@@ -54,9 +54,9 @@ public class UpdateChecker implements Runnable {
 					log.info(ChatColor.LIGHT_PURPLE
 							+ getMsg("wwcUpdaterUpToDate"));
 				} else if (new ComparableVersion(main.getPluginVersion()).compareTo(new ComparableVersion(latest)) > 0) {
-					log.warning(getMsg("wwcUpdaterFutureDate", new String[] {latest}));
+					log.warning(getMsg("wwcUpdaterFutureDate", latest));
 				} else {
-					log.warning(getMsg("wwcUpdaterOutOfDate", new String[] {latest}));
+					log.warning(getMsg("wwcUpdaterOutOfDate", latest));
 					log.warning("https://github.com/BadSkater0729/WorldwideChat/releases");
 					main.setOutOfDate(true);
 				}

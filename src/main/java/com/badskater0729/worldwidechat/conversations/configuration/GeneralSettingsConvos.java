@@ -32,7 +32,7 @@ public class GeneralSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationFatalAsyncAbort", new String[] {main.getConfigManager().getMainConfig().getString("General.fatalAsyncTaskTimeout")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationFatalAsyncAbort", main.getConfigManager().getMainConfig().getString("General.fatalAsyncTaskTimeout"));
 		}
 
 		@Override
@@ -74,7 +74,7 @@ public class GeneralSettingsConvos {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
 			return ChatColor.AQUA
-					+ getMsg("wwcConfigConversationPrefixInput", new String[] {LegacyComponentSerializer.legacyAmpersand().serialize(main.getPluginPrefix())});
+					+ getMsg("wwcConfigConversationPrefixInput", LegacyComponentSerializer.legacyAmpersand().serialize(main.getPluginPrefix()));
 		}
 
 		@Override
@@ -88,7 +88,7 @@ public class GeneralSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationSyncUserDataDelayInput", new String[] {"" + main.getConfigManager().getMainConfig().getInt("General.syncUserDataDelay")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationSyncUserDataDelayInput", "" + main.getConfigManager().getMainConfig().getInt("General.syncUserDataDelay"));
 		}
 
 		@Override
@@ -102,7 +102,7 @@ public class GeneralSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationUpdateCheckerInput", new String[] {main.getConfigManager().getMainConfig().getInt("General.updateCheckerDelay") + ""});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationUpdateCheckerInput", main.getConfigManager().getMainConfig().getInt("General.updateCheckerDelay") + "");
 		}
 
 		@Override

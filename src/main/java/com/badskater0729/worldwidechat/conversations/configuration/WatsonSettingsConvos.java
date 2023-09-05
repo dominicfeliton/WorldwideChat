@@ -22,7 +22,7 @@ public class WatsonSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationWatsonAPIKeyInput", new String[] {main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationWatsonAPIKeyInput", main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"));
 		}
 
 		@Override
@@ -37,7 +37,7 @@ public class WatsonSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationWatsonURLInput", new String[] {main.getConfigManager().getMainConfig().getString("Translator.watsonURL")});
+			return ChatColor.AQUA + getMsg("wwcConfigConversationWatsonURLInput", main.getConfigManager().getMainConfig().getString("Translator.watsonURL"));
 		}
 
 		@Override

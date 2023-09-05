@@ -100,7 +100,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			} else {
 				// If target is not a string or active translator:
 				final TextComponent notAPlayer = Component.text()
-								.content(getMsg("wwctbPlayerNotFound", new String[] {args[0]}))
+								.content(getMsg("wwctbPlayerNotFound", args[0]))
 								.color(NamedTextColor.RED)
 						.build();
 				sendMsg(sender, notAPlayer);
@@ -137,7 +137,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			} else {
 				if (currentTranslator.getTranslatingBook()) {
 					final TextComponent toggleTranslation = Component.text()
-									.content(getMsg("wwctbOnTarget", new String[] {args[0]}))
+									.content(getMsg("wwctbOnTarget", args[0]))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, toggleTranslation);
@@ -149,7 +149,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 					debugMsg("Book translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					final TextComponent toggleTranslation = Component.text()
-									.content(getMsg("wwctbOffTarget", new String[] {args[0]}))
+									.content(getMsg("wwctbOffTarget", args[0]))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, toggleTranslation);
@@ -185,7 +185,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			} else {
 				if (currentTranslator.getTranslatingSign()) {
 					final TextComponent toggleTranslation = Component.text()
-									.content(getMsg("wwctsOnTarget", new String[] {args[0]}))
+									.content(getMsg("wwctsOnTarget", args[0]))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, toggleTranslation);
@@ -197,7 +197,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 					debugMsg("Book translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					final TextComponent toggleTranslation = Component.text()
-									.content(getMsg("wwctsOffTarget", new String[] {args[0]}))
+									.content(getMsg("wwctsOffTarget", args[0]))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, toggleTranslation);
@@ -233,7 +233,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			} else {
 				if (currentTranslator.getTranslatingItem()) {
 					final TextComponent toggleTranslation = Component.text()
-									.content(getMsg("wwctiOnTarget", new String[] {args[0]}))
+									.content(getMsg("wwctiOnTarget", args[0]))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, toggleTranslation);
@@ -245,7 +245,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 					debugMsg("Item translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					final TextComponent toggleTranslation = Component.text()
-									.content(getMsg("wwctiOffTarget", new String[] {args[0]}))
+									.content(getMsg("wwctiOffTarget", args[0]))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, toggleTranslation);
@@ -281,7 +281,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			} else {
 				if (currentTranslator.getTranslatingEntity()) {
 					final TextComponent toggleTranslation = Component.text()
-									.content(getMsg("wwcteOnTarget", new String[] {args[0]}))
+									.content(getMsg("wwcteOnTarget", args[0]))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, toggleTranslation);
@@ -293,7 +293,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 					debugMsg("Entity translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					final TextComponent toggleTranslation = Component.text()
-									.content(getMsg("wwcteOffTarget", new String[] {args[0]}))
+									.content(getMsg("wwcteOffTarget", args[0]))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, toggleTranslation);
@@ -329,7 +329,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			} else {
 				if (currentTranslator.getTranslatingChatOutgoing()) {
 					final TextComponent toggleTranslation = Component.text()
-									.content(getMsg("wwctcoOnTarget", new String[] {args[0]}))
+									.content(getMsg("wwctcoOnTarget", args[0]))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, toggleTranslation);
@@ -341,7 +341,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 					debugMsg("Outgoing chat translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					final TextComponent toggleTranslation = Component.text()
-									.content(getMsg("wwctcoOffTarget", new String[] {args[0]}))
+									.content(getMsg("wwctcoOffTarget", args[0]))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, toggleTranslation);
@@ -377,7 +377,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			} else {
 				if (currentTranslator.getTranslatingChatIncoming()) {
 					final TextComponent toggleTranslation = Component.text()
-									.content(getMsg("wwctciOnTarget", new String[] {args[0]}))
+									.content(getMsg("wwctciOnTarget", args[0]))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, toggleTranslation);
@@ -389,7 +389,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 					debugMsg("Incoming chat translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					final TextComponent toggleTranslation = Component.text()
-									.content(getMsg("wwctciOffTarget", new String[] {args[0]}))
+									.content(getMsg("wwctciOffTarget", args[0]))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
 					sendMsg(sender, toggleTranslation);

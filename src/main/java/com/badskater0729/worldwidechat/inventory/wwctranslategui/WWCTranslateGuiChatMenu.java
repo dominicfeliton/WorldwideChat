@@ -35,8 +35,8 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
 	/* Get translation info */
 	public static SmartInventory getTranslateChatMenu(String targetPlayerUUID) {
 		String playerTitle = "";
-		playerTitle = ChatColor.BLUE + getMsg("wwctGUIChatMenu", new String[] {WorldwideChat.instance.getServer()
-				.getPlayer(UUID.fromString(targetPlayerUUID)).getName()});
+		playerTitle = ChatColor.BLUE + getMsg("wwctGUIChatMenu", WorldwideChat.instance.getServer()
+				.getPlayer(UUID.fromString(targetPlayerUUID)).getName());
 		return SmartInventory.builder().id("translateChatMenu").provider(new WWCTranslateGuiChatMenu(targetPlayerUUID))
 				.size(4, 9).manager(WorldwideChat.instance.getInventoryManager()).title(playerTitle).build();
 	}

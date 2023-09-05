@@ -43,7 +43,7 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 			
 			/* Pagination */
 			Pagination pagination = contents.pagination();
-			HashMap<String, String> overridesFromConfig = new HashMap<String, String>();
+			HashMap<String, String> overridesFromConfig = new HashMap<>();
 			ClickableItem[] currentOverrides = new ClickableItem[0];
 			FileConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
 			
