@@ -15,9 +15,5 @@ If you cannot run YAMLTranslator because you do not have access to AWS, use this
 
 <code>clean package -Dyamltranslator.skip=true</code>
 
-If you do not want the POM to be sorted automatically, you really only need these two phrases:
-
-<code>clean package</code>
-
 Let me know if you have any questions!
 _- BadSkater0729_
