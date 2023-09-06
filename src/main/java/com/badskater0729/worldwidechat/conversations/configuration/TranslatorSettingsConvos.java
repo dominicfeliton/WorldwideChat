@@ -14,7 +14,7 @@ import com.badskater0729.worldwidechat.inventory.configuration.MenuGui.CONFIG_GU
 
 import net.md_5.bungee.api.ChatColor;
 
-;import static com.badskater0729.worldwidechat.util.CommonRefs.*;
+import static com.badskater0729.worldwidechat.util.CommonRefs.*;
 
 public class TranslatorSettingsConvos {
 
