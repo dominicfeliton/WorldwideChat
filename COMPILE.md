@@ -7,13 +7,13 @@ First, make sure you put a YAMLTranslator configuration file in the root of the 
 
 Import as a Maven Project in Eclipse/IntelliJ, then use the following Maven configuration for the most optimal compilation environment:
 
-<code>com.github.ekryd.sortpom:sortpom-maven-plugin:sort exec:java clean package</code>
+<code>clean package</code>
 
 This cleans our POM, runs YAMLTranslator, and then cleans/exports WWC.
 
 If you cannot run YAMLTranslator because you do not have access to AWS, use this command instead:
 
-<code>com.github.ekryd.sortpom:sortpom-maven-plugin:sort clean package</code>
+<code>clean package -Dyamltranslator.skip=true</code>
 
 If you do not want the POM to be sorted automatically, you really only need these two phrases:
 

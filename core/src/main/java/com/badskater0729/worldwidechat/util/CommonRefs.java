@@ -14,6 +14,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
+import java.util.regex.Matcher;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.commons.text.StringEscapeUtils;
@@ -295,7 +296,7 @@ public class CommonRefs {
 		/* Replace any and all %i, %e, %o, etc. */
 		/* This code will only go as far as replacements[] goes. */
 		for (int i = 0; i < replacements.length; i++) {
-			convertedOriginalMessage = convertedOriginalMessage.replaceFirst("%[ioeu]", replacements[i]);
+			convertedOriginalMessage = convertedOriginalMessage.replaceFirst("%[ioeu]", Matcher.quoteReplacement(replacements[i]));
 		}
 		
  		/* Return fixedMessage */
