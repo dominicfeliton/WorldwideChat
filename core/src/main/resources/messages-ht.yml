@@ -1,7 +1,7 @@
 Messages:
-  wwcgAutoTranslateStart: Koulye a, tradui chat mondyal nan %o.
+  wwcgAutoTranslateStart: Koulye a, tradui chat mondyal nan {0}.
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: Global chat se ke yo te tradui
-    nan %o.
+    nan {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Chanje Amazon Aksè kle
   wwcrFail: Echwe pou pou Reload WorldwideChat.
   wwcConfigGUIUpdateCheckerButton: Chanje Tcheke pou Updates Reta
@@ -16,12 +16,12 @@ Messages:
   wwcsNotATranslator: Pa gen okenn dosye ankò disponib pou % mwen.
   wwcConfigGUIbStatsButton: BStat baskil
   wwctGUINewTranslationSource: Chwazi yon lang Sous
-  wwcConfigConnectionFailed: Echwe pou pou konekte nan %o. asire w ke kalifikasyon
+  wwcConfigConnectionFailed: Echwe pou pou konekte nan {0}. asire w ke kalifikasyon
     ou ak firewall yo configuré kòrèkteman!
   wwcConfigEnabledbStats: Pèmèt BStat.
   wwctGUIMainMenuPlayer: Meni tradiksyon nan % mwen
   wwctGUIBookButton: Baskile Tradiksyon Liv
-  wwcLangDetected: Detekte lang %o.
+  wwcLangDetected: Detekte lang {0}.
   wwcBookTranslateStart: Tradwi liv sib...
   wwcConfigDisabledbStats: BStat ki andikape.
   wwctsOffSender: Siyen tradiksyon andikape.
@@ -52,11 +52,11 @@ Messages:
   wwctPlayerNotFound: Jwè mwen pa jwenn.
   wwcConfigGUIAmazonTranslateRegionButton: Chanje Amazon Rejyon
   wwcConfigConversationLangInput: 'Plugin lang aktyèl la se % mwen % Tanpri antre
-    yon kòd lang ki valab, oswa tape 0 anile. kòd lang valab: %o'
+    yon kòd lang ki valab, oswa tape 0 anile. kòd lang valab: {0}'
   wwcConfigConversationLangInvalid: Envalid kòd lang!
   wwcConfigGUIWatsonAPIKeyButton: Chanje Watson API kle
   wwcEnabled: Pèmèt WorldwideChat vèsyon % mwen.
-  wwcgLangToLangStart: Koulye a, tradui chat mondyal soti nan % mwen nan %o.
+  wwcgLangToLangStart: Koulye a, tradui chat mondyal soti nan % mwen nan {0}.
   wwctbOnSender: Tradiksyon liv pèmèt. Dwa-klike sou pandan y ap kenbe yon liv tradui
     li!
   wwcListenersInitialized: Koute inisyalizèd.
@@ -103,7 +103,7 @@ Messages:
   wwcConfigGUIPrefixButton: Chanje Plugin Prefiks
   wwctSameLangError: Ou pa ka tradui nan menm lang lan!
   wwctGUINewTranslationTarget: Chwazi yon lang sib
-  wwcConfigConnectionSuccess: Siksè konekte nan %o!
+  wwcConfigConnectionSuccess: Siksè konekte nan {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Èske tradiktè aktif: % mwen'
   wwcConfigConversationPrefixInput: Prefiks aktyèl la se % mwen % Tanpri tape yon
@@ -122,7 +122,7 @@ Messages:
   wwcUnsupportedVersion: 'Ou ap kouri yon vèsyon suporte nan Bukkit, Spigot, oswa
     Papye. Sipòte vèsyon:'
   wwcGlobalOnJoinTranslationNotificationSourceLang: Global chat se ke yo te tradui
-    soti nan % mwen nan %o.
+    soti nan % mwen nan {0}.
   wwcConfigGUITranslatorSettings: Konfigirasyon tradiktè
   wwcConfigConversationGoogleTranslateAPIKeyInput: Kle API aktyèl la se % mwen % Tanpri
     D 'yon kle API pou Google Translate, oswa kalite 0 ale tounen.
@@ -155,7 +155,7 @@ Messages:
   wwctrlPlayerNotFound: Jwè mwen swa pa jwenn, oswa se pa yon tradiktè aktif.
   wwctrlRateLimitSetSender: Mete limit pousantaj ou a % mwen segonn.
   wwctrlRateLimitOffTarget: Etenn limit la pousantaj nan % mwen.
-  wwctrlRateLimitSetTarget: Mete limit la pousantaj nan % mwen nan %o segonn.
+  wwctrlRateLimitSetTarget: Mete limit la pousantaj nan % mwen nan {0} segonn.
   wwctrlNotATranslator: Ou pa yon tradiktè aktif! Asire ou ke ou te mete sa a ak/wwct.
   wwctrlRateLimitAlreadyOffSender: Limit pousantaj ou deja enfim.
   wwctGUIRateButton: Mete Limite pousantaj
@@ -184,7 +184,7 @@ Messages:
   wwcItemTranslateTitleDone: Tradwi atik tit avèk siksè.
   wwcGUITempItem: atik ekspozisyon
   wwcItemTranslateStart: Tradwi atik sib...
-  wwcBookTranslateTitleSuccess: 'Tradwi Tit Liv: %i'
+  wwcBookTranslateTitleSuccess: 'Tradwi Tit Liv: {0}'
   wwctiOnSender: Tradiksyon atik pèmèt. Dwa-klike sou ak yon atik nan men prensipal
     ou a tradui li!
   wwcItemTranslateLoreStart: Tradwi lore nan atik sib...
@@ -207,9 +207,9 @@ Messages:
     pou 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Tanpri tcheke errorLog.txt nan folder
     nan Plugin WorldwideChat pou plis enfòmasyon.
-  wwctInvalidInputLangCode: 'Envalid kòd lang opinyon bay! kòd lang valab: %o'
+  wwctInvalidInputLangCode: 'Envalid kòd lang opinyon bay! kòd lang valab: {0}'
   wwcsTitle: Dosye nan % mwen
-  wwctInvalidOutputLangCode: 'Envalid kòd lang pwodiksyon bay! kòd lang valab: %o'
+  wwctInvalidOutputLangCode: 'Envalid kòd lang pwodiksyon bay! kòd lang valab: {0}'
   wwctGUISourceTranslationSelected: Ou te chwazi lang sa a.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Efase pase sou desizyon
   wwcConfigConversationOverrideTextChange: Tanpri tape yon nouvo mesaj pou sa a pase
@@ -267,21 +267,21 @@ Messages:
   wwcrBegin: Reloading WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Tradiksyon sesyon pou % mwen te sispann.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat se ke yo te
-    tradui, men ou gen yon sesyon tradiksyon aktif soti nan % mwen nan %o.
+    tradui, men ou gen yon sesyon tradiksyon aktif soti nan % mwen nan {0}.
   wwctCannotTranslateConsole: Ou pa ka kòmanse yon sesyon tradiksyon pou konsole!
-  wwctLangToLangStart: Kòmanse yon sesyon tradiksyon nouvo soti nan % mwen nan %o.
+  wwctLangToLangStart: Kòmanse yon sesyon tradiksyon nouvo soti nan % mwen nan {0}.
   wwcOnJoinTranslationNotificationSourceLang: Ou gen yon sesyon tradiksyon aktif soti
-    nan % mwen nan %o.
+    nan % mwen nan {0}.
   wwctAutoTranslateStartOtherPlayer: Kòmanse yon sesyon tradiksyon nouvo pou % mwen
-    %o.
+    {0}.
   wwctTranslationStopped: Te sesyon tradiksyon ou te sispann.
-  wwctLangToLangStartOtherPlayer: Kòmanse yon sesyon tradiksyon nouvo pou %o soti
-    nan % mwen nan %e.
-  wwctAutoTranslateStart: Kòmanse yon sesyon tradiksyon nouvo nan %o.
+  wwctLangToLangStartOtherPlayer: Kòmanse yon sesyon tradiksyon nouvo pou {0} soti
+    nan % mwen nan {0}.
+  wwctAutoTranslateStart: Kòmanse yon sesyon tradiksyon nouvo nan {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Ou gen yon sesyon tradiksyon aktif
-    nan %o.
+    nan {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat ke yo te
-    tradui, men ou gen yon sesyon tradiksyon aktif nan %o.
+    tradui, men ou gen yon sesyon tradiksyon aktif nan {0}.
   wwcConfigGUIChangesNotSaved: Chanjman ou yo pa pral pran efè jiskaske ou klike sou
     baryè wouj la nan/wwcc.
   wwctciOffSender: Fèk ap rantre tradiksyon chat enfim.
@@ -305,10 +305,10 @@ Messages:
   wwctGUIExistingChatIncomingEnabled: 'Fèk ap rantre Tradiksyon Chat pèmèt: % mwen'
   wwctGUIExistingTranslationOutput: 'Sòti Lang: % mwen'
   wwcTranslatorAttempt: Eseye pou konekte avèk tradiktè nan config.yml... (Tantativ
-    mwen/ %o)
+    mwen/ {0})
   wwcTimeoutExceptionConsole: Jwe Mwen te gen poz demann ki pi resan yo. Erè sa a
     se pa fatal, men WorldwideChat yo ta dwe rechargé si li kontinye ap rive.
-  wwcGUIPageNumber: 'Nimewo Paj: %i'
+  wwcGUIPageNumber: 'Nimewo Paj: {0}'
   wwcConfigYAMLFallback: Tonbe tounen nan YAML...
   wwcConfigGUIToggleSQLButton: SQL baskil
   wwcConfigConversationToggleSQLSuccess: SQL baskile avèk siksè. Reload pou chanjman
@@ -440,7 +440,7 @@ Messages:
     siksè.
 
   wwcsActiveTransPrevRate: 'Aktif tradiktè Previous To Limite Tan: % mwen'
-  wwcsActiveTransSaved: 'Aktif tradiktè te sove pou Diskèt: %i'
+  wwcsActiveTransSaved: 'Aktif tradiktè te sove pou Diskèt: {0}'
   wwcsActiveTransIncoming: 'Aktif tradiktè Tradiksyon fèk ap rantre Chat: % mwen'
   wwcsActiveTransOutLang: 'Aktif tradiktè Sòti Lang: % mwen'
   wwcsActiveTransInLang: 'Aktif Tradiktè Antre Lang: % mwen'
@@ -448,7 +448,7 @@ Messages:
   wwcsActiveTransSign: 'Aktif Tradiktè Tradiksyon Siyen: % mwen'
   wwcsActiveTransUUID: 'Aktif tradiktè UUID: % mwen'
   wwcsActiveTransRateLimit: 'Limit pousantaj tradiktè aktif: % mwen'
-  wwcsActiveTransColorWarning: 'Aktif tradiktè te resevwa avètisman koulè: %i'
+  wwcsActiveTransColorWarning: 'Aktif tradiktè te resevwa avètisman koulè: {0}'
   wwcsActiveTransOutgoing: 'Aktif Tradiktè Tradiksyon Sortan Chat: % mwen'
   wwcsActiveTransItem: 'Aktif Tradiktè Tradiksyon Atik: % mwen'
   wwcsActiveTransEntity: 'Aktif tradiktè Tradiksyon Antite: % mwen'

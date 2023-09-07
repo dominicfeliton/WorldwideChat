@@ -1,62 +1,62 @@
 Messages:
-  wwcgAutoTranslateStart: اوس د نړېوالې چیٹ ژباړه %o ته.
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ګلوبل چیٹ د %o لپاره ژباړل کیږي.
+  wwcgAutoTranslateStart: اوس د نړېوالې چیٹ ژباړه {0} ته.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ګلوبل چیٹ د {0} لپاره ژباړل کیږي.
   wwcConfigGUIAmazonTranslateAccessKeyButton: د ایمیزون لاسرسی کلیدي بدل کړئ
   wwcrFail: WorldWiDeChat بیا پورته کولو کې پاتې راغلی.
   wwcConfigGUIUpdateCheckerButton: د اوسمهالونو ځنډ لپاره چیک
   wwcUpdaterFailedGeneric: د WorldWieChat تازه معلوماتو لپاره د کتلو توان نلري.
-  wwcConfigConversationUpdateCheckerInput: په اوسمهالول چیکر کې اوسنی ځنډ %i ثانیې
+  wwcConfigConversationUpdateCheckerInput: په اوسمهالول چیکر کې اوسنی ځنډ {0} ثانیې
     دی. د نوي ارزښت ټاکلو لپاره د 10 څخه ډیر څه ولیکئ، یا د 10 څخه لږ څه چې بیرته
     لاړ شئ.
   wwctGUIMainMenuGlobal: د ژباړې نړيوال غورنۍ
   wwcConfigConversationPluginUpdateChatSuccess: د پلگ ان تازه چیٹ یادونه په بریالیتوب
     سره په ټګ شوی.
-  wwctbOnTarget: .د کتاب ژباړه توانې %i لپاره
-  wwcsNotATranslator: . %i لپاره تر اوسه کوم ریکارډ نشته
+  wwctbOnTarget: .د کتاب ژباړه توانې {0} لپاره
+  wwcsNotATranslator: . {0} لپاره تر اوسه کوم ریکارډ نشته
   wwcConfigGUIbStatsButton: د bStats توګول
   wwctGUINewTranslationSource: يوه سرچينه ژبه غوره کړئ
-  wwcConfigConnectionFailed: '%o سره نښلولو کې پاتې راغی. ډاډ ترلاسه کړئ چې ستاسو
+  wwcConfigConnectionFailed: '{0} سره نښلولو کې پاتې راغی. ډاډ ترلاسه کړئ چې ستاسو
     باورلیک او فایروال په سمه توګه ترتیب شوی دی!'
   wwcConfigEnabledbStats: فعال شوي bStats.
-  wwctGUIMainMenuPlayer: د %i ژباړه غورنۍ
+  wwctGUIMainMenuPlayer: د {0} ژباړه غورنۍ
   wwctGUIBookButton: د کتاب ژباړې توګول
-  wwcLangDetected: . ژبې وموندل شو %o
+  wwcLangDetected: . ژبې وموندل شو {0}
   wwcBookTranslateStart: د هدف کتاب ژباړه...
   wwcConfigDisabledbStats: معلولین bStats.
   wwctsOffSender: د ژباړې معلول لاسليک کړئ.
   wwcUpdaterParserFailed: له Github څخه د تازه معلوماتو د تجزولو کې پاتې راغلی.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: اوسنی پټ کیل %i دی. مهرباني
+  wwcConfigConversationAmazonTranslateSecretKeyInput: اوسنی پټ کیل {0} دی. مهرباني
     وکړئ د ایمیزون لپاره یو پټ کیلي ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
   wwctbOffSender: د کتاب ژباړې معلول.
   wwcConfigGUIAmazonTranslateButton: ایمیزون ژباړه
   wwcConfigConversationLangSuccess: د پلگ ان ژبه په بریالیتوب سره بدل
-  wwcsSuccessfulTranslations: 'بريالي ژباړل: %i'
-  wwcConfigConversationTranslationCacheInput: .د ژباړې اوسنۍ زیرمه حدود %i عبارتونه
+  wwcsSuccessfulTranslations: 'بريالي ژباړل: {0}'
+  wwcConfigConversationTranslationCacheInput: .د ژباړې اوسنۍ زیرمه حدود {0} عبارتونه
     دي د نوي ارزښت ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د ژباړې کیچ غیر فعال کولو
     لپاره 0 ډول کړئ. د 0 څخه لږ څه ولیکئ چې بیرته لاړ شئ.
-  wwctbOffTarget: .د کتاب ژباړه ناتوانول شو %i لپاره
+  wwctbOffTarget: .د کتاب ژباړه ناتوانول شو {0} لپاره
   wwcConfigGUIGeneralSettings: عمومي سازونه
   wwcInvalidLang: ستاسو په config.yml کې ناسم ژبه.... ته تلل
   wwcConfigConversationAmazonTranslateRegionSuccess: د ایمیزون سیمې په بریالیتوب سره
     وټاکل
-  wwcConfigRateLimitEnabled: د نړیوال نرخ حد فعال شوی او %i ثانیو ته یې وټاکه.
+  wwcConfigRateLimitEnabled: د نړیوال نرخ حد فعال شوی او {0} ثانیو ته یې وټاکه.
   wwcBadPerms: تاسو د دې کمانډ د اجرا کولو لپاره اړین اجازې نلرئ!
   wwcConfigGUILangButton: لګون ژبه بدلول
   wwctGUISignButton: لاسليک ژباړل
   wwcUpdaterOutOfDate: WorldwideChat له نیټې څخه بهر دی.. مهرباني وکړئ وروستۍ نسخه
-    ته اوسمهالول کړئ، %i
+    ته اوسمهالول کړئ، {0}
   wwcConfigGUINextPageButton: راتلونکی مخ
   wwcConfigInvalidTranslatorSettings: ناسم ژباړونکي امستنې! مهرباني وکړئ یوازې یو
     ژباړونکي په خپل ترتیب کې فعال کړئ.
   wwcConfigGUIQuitButton: بدلونونه وتل & ساتل
   wwctPlayerNotFound: . لوبغاړي ونه موندل شو
   wwcConfigGUIAmazonTranslateRegionButton: د ایمیزون سیمه بدل کړئ
-  wwcConfigConversationLangInput: 'د اوسني فلګن ژبه ده %i. مهرباني وکړئ د اعتبار وړ
-    ژبې کوډ داخل کړئ، یا د فسخه کولو لپاره 0 ډول کړئ. د اعتبار وړ ژبې کوډونه: %o'
+  wwcConfigConversationLangInput: 'د اوسني فلګن ژبه ده {0}. مهرباني وکړئ د اعتبار وړ
+    ژبې کوډ داخل کړئ، یا د فسخه کولو لپاره 0 ډول کړئ. د اعتبار وړ ژبې کوډونه: {0}'
   wwcConfigConversationLangInvalid: ناسم ژبه کوډ!
   wwcConfigGUIWatsonAPIKeyButton: د واټسن API کیلي بدل کړئ
-  wwcEnabled: فعال شوی WorldWieChat نسخه %i.
-  wwcgLangToLangStart: اوس د نړېوالې خبرې له %i څخه ژباړل.
+  wwcEnabled: فعال شوی WorldWieChat نسخه {0}.
+  wwcgLangToLangStart: اوس د نړېوالې خبرې له {0} څخه ژباړل.
   wwctbOnSender: د کتاب ژباړې فعال شو. د هغې د ژباړې لپاره د کتاب ساتلو په وخت کې
     ښي کلیک وکړئ!
   wwcListenersInitialized: ابتدايي اوریدونکي.
@@ -66,7 +66,7 @@ Messages:
   wwctsOffTarget: .I لپاره ژباړه ناتوانول شوی
   wwcUpdaterConnectionFailed: په ګیتاب کې د وروستیو اوسمهالونو لپاره د کتلو توان نلري.
   watsonNotFoundExceptionNotification: نور ستاسو د انډول ژباړلو توان نلري.
-  wwcConfigConversationWatsonAPIKeyInput: اوسنی API کیلۍ %i دی. مهرباني وکړئ د واټسن
+  wwcConfigConversationWatsonAPIKeyInput: اوسنی API کیلۍ {0} دی. مهرباني وکړئ د واټسن
     لپاره د API کیلي ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
   wwctGUIStopButton: ژباړل ودرول
   wwcgTranslationStopped: د ګلوبل چیٹ ژباړه ودرول شوې.
@@ -77,7 +77,7 @@ Messages:
   wwcSignDeletedOrTooLong: 'د هدف نښه یا له منځه تللې وه یا ژباړه ډیره اوږده وه. ژباړه:'
   wwctsOnTarget: .د ژباړې لاسليک کړﺉ
   wwcConfigCacheDisabled: ژباړونکي کیچ معلول شو.
-  wwcConfigConversationWatsonURLInput: اوسنی URL دی %i. مهرباني وکړئ د واټسن لپاره
+  wwcConfigConversationWatsonURLInput: اوسنی URL دی {0}. مهرباني وکړئ د واټسن لپاره
     د خدمت URL ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
   wwcBookDone: په بریالیتوب سره ژباړل شوی کتاب
   wwctsOnSender: د ژباړې لاسليک فعال شو. د ژباړلو لپاره په نښه باندې ښی کلیک وکړئ!
@@ -85,7 +85,7 @@ Messages:
   wwctGUITranslationButton: ژباړل پیل کړئ
   wwctGUIAutoDetectButton: د سرچينې ژبه اتومات کشف
   wwcUpdaterUpToDate: WorldwideChat تر اوسه پورې دی!
-  wwcConfigConversationAmazonTranslateRegionInput: اوسنی سیمه %i ده. مهرباني وکړئ
+  wwcConfigConversationAmazonTranslateRegionInput: اوسنی سیمه {0} ده. مهرباني وکړئ
     د ایمیزون لپاره سیمه ولیکئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
   wwcNoConsole: دا کمانډ یوازې د یو لوبغاړي لخوا پرمخ وړل کیدی شي.
   wwcInitializationFail: WorldWiDeChat پیل کولو کې پاتې راغلل.
@@ -95,17 +95,17 @@ Messages:
     ته تازه کړئ.
   wwcConfigConversationRateLimitSuccess: د نرخ حد په بریالیتوب سره ټاکل شوی.
   wwcConfigConversationWatsonURLSuccess: واټسن URL په بریالیتوب سره وټاکل شو.
-  wwctbPlayerNotFound: لوبغاړي %i یا نه موندل شوی، یا فعال ژباړونکی نه دی.
+  wwctbPlayerNotFound: لوبغاړي {0} یا نه موندل شوی، یا فعال ژباړونکی نه دی.
   wwcConfigConversationTranslationCacheSuccess: د ژباړې کیچ حد په بریالیتوب سره وټاکل
     شو
   wwctInvalidArgs: ناسم دلیلونه برابر شوي!
   wwcConfigGUIPrefixButton: لګون مختاړی بدلول
   wwctSameLangError: تاسې همغه ژبې ته ژباړئ نه شئ!
   wwctGUINewTranslationTarget: موخه ژبه غوره کړئ
-  wwcConfigConnectionSuccess: په برياليتوب سره نښلول شو %o!
+  wwcConfigConnectionSuccess: په برياليتوب سره نښلول شو {0}!
   wwcConfigGUIGoogleTranslateButton: ګوګل ژباړل
-  wwcsIsActiveTranslator: ': %i فعاله ژباړونکی دی'
-  wwcConfigConversationPrefixInput: اوسنی مختاړی ده %i دی. مهرباني وکړئ یو نوی ولیکئ،
+  wwcsIsActiveTranslator: ': {0} فعاله ژباړونکی دی'
+  wwcConfigConversationPrefixInput: اوسنی مختاړی ده {0} دی. مهرباني وکړئ یو نوی ولیکئ،
     یا 0 ډول کړئ چې بېرته لاړ شئ.
   wwcConfigGUIPreviousPageButton: مخکنی مخ
   wwcConfigGUITranslatorCacheButton: د ژباړې کیچ حد بدل کړئ
@@ -120,55 +120,55 @@ Messages:
     کړئ.
   wwcUnsupportedVersion: 'تاسو د بکیټ، سپیګټ، یا کاغذ یوه نا ملاتړ شوې نسخه پرمخ بوځي.
     ملاتړي شوې نسخې:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: ګلوبل چیٹ د %i څخه تر %o پورې
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ګلوبل چیٹ د {0} څخه تر {1} پورې
     ژباړل کیږي.
   wwcConfigGUITranslatorSettings: ژباړونکي سازونه
-  wwcConfigConversationGoogleTranslateAPIKeyInput: د اوسني API کیلي دی %i. مهرباني
+  wwcConfigConversationGoogleTranslateAPIKeyInput: د اوسني API کیلي دی {0}. مهرباني
     وکړئ د ګوګل ژباړنې لپاره د API کیلي ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
-  wwcConfigConversationRateLimitInput: د ژباړې د اوسني نړیوال شرح حد %i ثانیې دی.
+  wwcConfigConversationRateLimitInput: د ژباړې د اوسني نړیوال شرح حد {0} ثانیې دی.
     د نوي ارزښت ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د حد غیر فعالولو لپاره 0 ټایپ
     کړئ. د 0 څخه لږ څه ولیکئ چې بیرته لاړ شئ.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: ګوګل ژباړل API کلیدي سیټ په بریالیتوب
     سره.
   wwcConfigGUIAmazonTranslateSecretKeyButton: ایمیزون پټ کیلي بدل کړئ
   wwcVersion: WorldwideChat، نسخه
-  wwcsAttemptedTranslations: 'ژباړنې هڅه: %i'
+  wwcsAttemptedTranslations: 'ژباړنې هڅه: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: د ایمیزون پټ کیلي په بریالیتوب
     سره.
   wwcConfigConversationWatsonAPIKeySuccess: د واټسن API کیلي په بریالیتوب سره.
-  wwcRateLimit: ستاسو ژباړې کچه محدود ده. مهرباني وکړئ نور څه انتظار وکړئ %i ثانیو.
-  wwcConfigCacheEnabled: ژباړونکي کیچ فعال او د %i حد ته یې وټاکه.
+  wwcRateLimit: ستاسو ژباړې کچه محدود ده. مهرباني وکړئ نور څه انتظار وکړئ {0} ثانیو.
+  wwcConfigCacheEnabled: ژباړونکي کیچ فعال او د {0} حد ته یې وټاکه.
   wwctGUIExistingTranslationButton: د ژباړې اوسنۍ ناسته بیا لیکل
   wwcUserDataReloaded: ټول خوندي شوي کارن ډاټا لوډ کړئ.
   wwcConfigGUISendTranslationChatButton: په ننوت کې فعال ژباړونکي ته د چیٹ یادښت واستوئ
-  wwcsLastTranslationTime: 'وروستی (بریالۍ) د ژباړې وخت: %i'
+  wwcsLastTranslationTime: 'وروستی (بریالۍ) د ژباړې وخت: {0}'
   wwctbNotATranslator: تاسو فعال ژباړن نه یاست! ډاډ ترلاسه کړئ چې تاسو دا د /wwct
     سره ترتیب کړی دی.
-  wwcConfigConversationAmazonTranslateAccessKeyInput: د لاسرسي اوسنۍ کیلۍ %i دی. مهرباني
+  wwcConfigConversationAmazonTranslateAccessKeyInput: د لاسرسي اوسنۍ کیلۍ {0} دی. مهرباني
     وکړئ د ایمیزون لپاره د لاسرسي کیلي ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: د ایمیزون لاسرسی کیلي په بریالیتوب
     سره.
   wwcConfigBadUpdateDelay: ناسم تازه کونکي ځنډ په config.yml کې ټاکل شوی. 86400 ثانیو
     ته تلل...
   wwctrlRateLimitOffSender: ستاسو د نرخ حد بند کړ.
-  wwctrlRateLimitAlreadyOffTarget: .د شرح حد د مخکې نه غیر فعاله ده %i
-  wwctrlPlayerNotFound: لوبغاړي %i یا نه موندل شوی، یا فعال ژباړونکی نه دی.
-  wwctrlRateLimitSetSender: د خپل نرخ حد وټا %i ثانیو ته.
-  wwctrlRateLimitOffTarget: .د نرخ حد بندول د %i.
-  wwctrlRateLimitSetTarget: . %i د نرخ حد وټا %o ثانیو ته.
+  wwctrlRateLimitAlreadyOffTarget: .د شرح حد د مخکې نه غیر فعاله ده {0}
+  wwctrlPlayerNotFound: لوبغاړي {0} یا نه موندل شوی، یا فعال ژباړونکی نه دی.
+  wwctrlRateLimitSetSender: د خپل نرخ حد وټا {0} ثانیو ته.
+  wwctrlRateLimitOffTarget: .د نرخ حد بندول د {0}.
+  wwctrlRateLimitSetTarget: . {0} د نرخ حد وټا {1} ثانیو ته.
   wwctrlNotATranslator: تاسو فعال ژباړن نه یاست! ډاډ ترلاسه کړئ چې تاسو دا د /wwct
     سره ترتیب کړی دی.
   wwctrlRateLimitAlreadyOffSender: ستاسو د نرخ حد لا دمخه معلول دی.
   wwctGUIRateButton: د نرخ حد ټاکل
-  wwctGUIConversationRateLimit: د ژباړې د نرخ حد په ټولې %i ثانیو کې دی. د نوي ارزښت
+  wwctGUIConversationRateLimit: د ژباړې د نرخ حد په ټولې {0} ثانیو کې دی. د نوي ارزښت
     ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د حد غیر فعالولو لپاره 0 ټایپ کړئ. د 0 څخه
     لږ څه ولیکئ چې بیرته لاړ شئ.
   wwctGUITargetPlayerNull: هدف لوبغاړی د پالنګر څخه منحل شوی.
   wwcConfigConversationSyncUserDataDelayInput: د کارن ډاټا په هر ترکیب کې اوسنی ځنډ
-    %i ثانیې دی. د نوي ارزښت ټاکلو لپاره د 10 څخه ډیر څه ولیکئ، یا د 10 څخه لږ څه
+    {0} ثانیې دی. د نوي ارزښت ټاکلو لپاره د 10 څخه ډیر څه ولیکئ، یا د 10 څخه لږ څه
     چې بیرته لاړ شئ.
   wwcConfigGUISyncUserDataButton: د کارن ډاټا سنک ځنډیدل بدلول
-  wwcConfigSyncDelayEnabled: د کارن د ډیټا سنک سیټ د %i ثانیو ته ځنډول.
+  wwcConfigSyncDelayEnabled: د کارن د ډیټا سنک سیټ د {0} ثانیو ته ځنډول.
   wwcConfigConversationSyncUserDataDelaySuccess: د کارن ډاټا هماهنګ ځنډ په بریالیتوب
     سره ټاکل شوی.
   wwcConfigSyncDelayInvalid: ناسم کارن ډاټا د همدغه ځنډ په config.yml کې ټاکل شوی.
@@ -176,24 +176,24 @@ Messages:
   wwcConfigCacheInvalid: ژباړونکي کیچ اندازه ناباوره ده. 10 ته تلل...
   wwcInventoryErrorPlayer: ستاسو د GUI سره ستونزه کشف شوه. یو لوګو کنسول ته لېږل شوی
     دی.
-  wwcInventoryError: د کارن د GUI سره تېروتنه وموندل شوه %i. مهرباني وکړئ دا مسله
+  wwcInventoryError: د کارن د GUI سره تېروتنه وموندل شوه {0}. مهرباني وکړئ دا مسله
     پرمخ وړونکي ته راپور ورکړئ.
-  wwctiOffTarget: .توکی ژباړه د %i لپاره ناتوانول شو
+  wwctiOffTarget: .توکی ژباړه د {0} لپاره ناتوانول شو
   wwctiOffSender: د توکو ژباړه معلول.
   wwcItemTranslateTitleStock: . د تلواله توکي نومونه نه شي ژباړل
   wwctGUIItemButton: د توکو ژباړه توګول
   wwcItemTranslateTitleDone: ژباړل شوی توکی عنوان په بریالیتوب سره
   wwcGUITempItem: توکي ښودنه
   wwcItemTranslateStart: د هدف توکي ژباړل...
-  wwcBookTranslateTitleSuccess: 'د ژباړل شوي کتاب سرليک: %i'
+  wwcBookTranslateTitleSuccess: 'د ژباړل شوي کتاب سرليک: {0}'
   wwctiOnSender: د توکو ژباړه فعاله شوه. په خپل اصلي لاس کې د یو توکي سره ښی کلیک
     وکړئ ترڅو دا ژباړئ!
   wwcItemTranslateLoreStart: د هدف توکي د لور ژباړه...
   wwcItemTranslateLoreDone: ژباړل شوي توکي په بریالیتوب سره.
-  wwctiOnTarget: .توکی ژباړل د %i لپاره فعال شو
+  wwctiOnTarget: .توکی ژباړل د {0} لپاره فعال شو
   wwcInvalidTranslator: ناسم ژباړونکي امستنې. مهرباني وکړئ دا په خپل config.yml یا/wwcc
     سره د دې فلګین کارولو لپاره حل کړئ.
-  wwcConfigGUIEachTranslatorSettings: '%i سازونه'
+  wwcConfigGUIEachTranslatorSettings: '{0} سازونه'
   wwcConfigGUIWatsonButton: واټسن
   wwcServerReloadWarning: WorldwideChat د/بیا لوټ کولو کارولو څخه مننه نه کوي. مهرباني
     وکړئ د احتیاط سره مخ شئ.
@@ -201,7 +201,7 @@ Messages:
     یاست، نو تاسو باید دا بند کړئ.
   wwcTranslatorErrorThresholdReached: . تېروتنه حد ته ورسېده دا فلګن به اوس بیا پورته
     کړي، او ټول ژباړونکي غیر فعال کړي.
-  wwcConfigErrorLimitEnabled: .ژباړونکي تېروتنه حد وټا %i ته.
+  wwcConfigErrorLimitEnabled: .ژباړونکي تېروتنه حد وټا {0} ته.
   wwcTranslatorError: ستاسو د ژباړې د هڅه کولو پر مهال ستونزه رامنځته شوه. مهرباني
     وکړئ بیا هڅه وکړئ.
   wwcConfigErrorLimitInvalid: ناسم ژباړونکي تېروتنه حد په config.yml کې ټاکل شوی.
@@ -209,10 +209,10 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: مهرباني وکړئ د نورو معلوماتو لپاره
     د WorldwideChat پلگ ان فولډر کې errorLog.txt وګورئ.
   wwctInvalidInputLangCode: 'ناسم انډول ژبې کوډ برابر شو! د اعتبار وړ لینګ کوډونه:
-    %o'
-  wwcsTitle: '%i ثبتول'
+    {0}'
+  wwcsTitle: '{0} ثبتول'
   wwctInvalidOutputLangCode: 'ناسم محصول د ژبې کوډ برابر شو! د اعتبار وړ لینګ کوډونه:
-    %o'
+    {0}'
   wwctGUISourceTranslationSelected: تاسو دا ژبه غوره کړې ده.
   wwcConfigGUIChatMessagesOverrideDeleteButton: ړنګول
   wwcConfigConversationOverrideTextChange: مهرباني وکړئ د دې لپاره نوی پیغام ولیکئ،
@@ -243,42 +243,42 @@ Messages:
   wwcConfigMessageCharLimitInvalid: په config.yml کې د هر پیغام ټاکل ناسم حد 255 چرو
     ته تلل...
   wwcConfigConversationCharacterLimitSuccess: د کرکټر حد په بریالیتوب سره ټاکل شو
-  wwcteOnTarget: .د بنسټ ژباړل %i لپاره فعال شو
-  wwcEntityTranslateDone: 'ژباړل شوي بنسټ نوم: %i'
+  wwcteOnTarget: .د بنسټ ژباړل {0} لپاره فعال شو
+  wwcEntityTranslateDone: 'ژباړل شوي بنسټ نوم: {0}'
   wwcEntityTranslateNoName: اداره دوديز نوم نلري.
   wwcConfigConversationErrorLimitInput: د هر ژباړونکي لپاره د اوسني تېروتنه محدودیت
-    %i دی. له 0 څخه ډیر څه ولیکئ چې نوی ارزښت وټاکئ، یا له 0 څخه کم یا مساوي څه ولیکئ
+    {0} دی. له 0 څخه ډیر څه ولیکئ چې نوی ارزښت وټاکئ، یا له 0 څخه کم یا مساوي څه ولیکئ
     چې بیرته لاړ شئ.
   wwcConfigGUIGlobalRateLimitButton: د نړیوال نرخ محدودیت بدل کړئ
   wwcteOnSender: د بنسټ ژباړه فعاله شوه. د خپل نوم د ژباړلو لپاره په یوه اداره باندې
     ښی کلیک وکړئ!
   wwcConfigGUIResponseLimitButton: د ژباړونکي غبرګون وخت بدل کړئ
-  wwcConfigMessageCharLimitEnabled: .د استوزې په ټولې %i حروفونو ته د توري حد
-  wwcteOffTarget: .د بنسټ ژباړه ناتوانول شو %i لپاره
+  wwcConfigMessageCharLimitEnabled: .د استوزې په ټولې {0} حروفونو ته د توري حد
+  wwcteOffTarget: .د بنسټ ژباړه ناتوانول شو {0} لپاره
   wwcCharLimit: ستاسو پیغام ډیر اوږد دی! مهرباني وکړئ ډاډ ترلاسه کړئ چې ستاسو پیغام
-    په اوږدوالي کې له %i څخه کم دی.
-  wwcConfigConversationCharacterLimitInput: .په پیغام کې د اوسني کرکټر حد %i حروفونه
+    په اوږدوالي کې له {0} څخه کم دی.
+  wwcConfigConversationCharacterLimitInput: .په پیغام کې د اوسني کرکټر حد {0} حروفونه
     دي د نوي ارزښت ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د 0 څخه کم یا مساوي څه ولیکئ
     چې بیرته لاړ شئ.
   wwcteOffSender: د بنسټ ژباړه معلول.
   wwctGUIEntityButton: د بنسټ ژباړه توګول
   wwctrlRateLimitBadInt: ستاسو د نرخ حد یو باوري عدد نه دی.
-  wwcTranslatorErrorConsole: کومه ستونزه رامنځته شوه کله چې کارن- %i د خپلې ژباړې
+  wwcTranslatorErrorConsole: کومه ستونزه رامنځته شوه کله چې کارن- {0} د خپلې ژباړې
     هڅه کوله. مهرباني وکړئ د نورو جزیاتو لپاره errorLog.txt وګورئ.
   wwctGUIChatButton: د چیٹ ژباړه توګول
   wwcrBegin: د WorldWieChat بیا ځلي کول...
-  wwctTranslationStoppedOtherPlayer: .د ژباړې ناستې لپاره درول شو %i
+  wwctTranslationStoppedOtherPlayer: .د ژباړې ناستې لپاره درول شو {0}
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ګلوبل چیٹ ژباړل کیږي،
-    مګر تاسو له %i څخه تر %o پورې د ژباړې فعاله ناسته لرئ.
+    مګر تاسو له {0} څخه تر {1} پورې د ژباړې فعاله ناسته لرئ.
   wwctCannotTranslateConsole: تاسو د کنسول لپاره د ژباړې ناستې نه شي پیل کولی!
-  wwctLangToLangStart: . %i څخه تر %o پورې د ژباړې نوې ناسته پیلول
-  wwcOnJoinTranslationNotificationSourceLang: تاسو له %i څخه تر %o پورې د ژباړې فعاله
+  wwctLangToLangStart: . {0} څخه تر {1} پورې د ژباړې نوې ناسته پیلول
+  wwcOnJoinTranslationNotificationSourceLang: تاسو له {0} څخه تر {1} پورې د ژباړې فعاله
     ناسته لرئ.
-  wwctAutoTranslateStartOtherPlayer: . %i ته د ژباړې نوې ناستې پیلول
+  wwctAutoTranslateStartOtherPlayer: . {0} ته د ژباړې نوې ناستې پیلول
   wwctTranslationStopped: ستاسو د ژباړې ناسته ودرول شوې ده.
-  wwctLangToLangStartOtherPlayer: د ژباړې نوې ناستې پیلول %o له %i څخه %e ته.
+  wwctLangToLangStartOtherPlayer: د ژباړې نوې ناستې پیلول {0} له {1} څخه {2} ته.
   wwctAutoTranslateStart: .o ته د ژباړې نوې ناستې پیلول
-  wwcOnJoinTranslationNotificationNoSourceLang: . ت %o ته د ژباړې فعاله ناسته لرﺉ
+  wwcOnJoinTranslationNotificationNoSourceLang: . ت {0} ته د ژباړې فعاله ناسته لرﺉ
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ګلوبل چیٹ ژباړل کیږي،
     مګر تاسو د ژباړې فعاله ناستې لرئ.
   wwcConfigGUIChangesNotSaved: ستاسو بدلونونه به اغیزه ونکړي تر هغه چې تاسو په /wwcc
@@ -290,24 +290,24 @@ Messages:
   wwctciOnSender: راتلونکی چیٹ ژباړه فعاله شوه. هر څه چې تاسو ترلاسه کوئ به ژباړل
     شي!
   wwctGUIChatMenu: د ژباړې غورنۍ چټ غږول
-  wwctcoOnTarget: د وتلي چیٹ ژباړې د %i لپاره فعال شو.
-  wwctcoOffTarget: د وتلي چیٹ ژباړه د %i لپاره معلول شوه.
+  wwctcoOnTarget: د وتلي چیٹ ژباړې د {0} لپاره فعال شو.
+  wwctcoOffTarget: د وتلي چیٹ ژباړه د {0} لپاره معلول شوه.
   wwctGUIChatOutgoingButton: د بهر تلونکي چیٹ ژباړه
-  wwctciOnTarget: راتلونکی چیٹ ژباړه د %i لپاره فعاله شوه.
-  wwctciOffTarget: راتلونکی چیٹ ژباړه د %i لپاره ناتوان شو.
+  wwctciOnTarget: راتلونکی چیٹ ژباړه د {0} لپاره فعاله شوه.
+  wwctciOffTarget: راتلونکی چیٹ ژباړه د {0} لپاره ناتوان شو.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: اصلي راتلونکی چیٹ د ژباړې
     سره تړل شوی لکه څنګه چې د هور متن په بریالیتوب سره ټګ شوی.
   wwcConfigGUISendIncomingHoverTextChatButton: اصلي راتلونکی پیغامونه د هور متن په
     توګه اضافه کړئ
-  wwctGUIExistingChatOutgoingEnabled: 'د وتلو چیٹ ژباړه فعال شوی: %i'
-  wwctGUIExistingTranslationInput: 'ننوتۍ ژبه: %i'
-  wwctGUIExistingChatIncomingEnabled: 'راتلونکی چیٹ ژباړه فعال شوی: %i'
-  wwctGUIExistingTranslationOutput: 'د محصول ژبه: %i'
+  wwctGUIExistingChatOutgoingEnabled: 'د وتلو چیٹ ژباړه فعال شوی: {0}'
+  wwctGUIExistingTranslationInput: 'ننوتۍ ژبه: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'راتلونکی چیٹ ژباړه فعال شوی: {0}'
+  wwctGUIExistingTranslationOutput: 'د محصول ژبه: {0}'
   wwcTranslatorAttempt: په config.yml کې د ژباړونکي سره د نښلولو هڅه کول... (هټ٪ I/٪
     O)
   wwcTimeoutExceptionConsole: لوبغاړي٪ ما د دوی ترټولو وروستي غوښتنې وخت درلود. دا
     تېروتنه وژونکي نه ده، مګر د نړۍ په کچه باید بیا پورته شي که چیرې دا پیښ شي.
-  wwcGUIPageNumber: 'د مخ شمېر: %i'
+  wwcGUIPageNumber: 'د مخ شمېر: {0}'
   wwcConfigYAMLFallback: YAML ته بیرته راوتل...
   wwcConfigGUIToggleSQLButton: غږول SQL
   wwcConfigConversationToggleSQLSuccess: SQL په بریالیتوب سره ټګ شو. د بدلون لپاره
@@ -338,26 +338,26 @@ Messages:
   wwcConfigConversationSQLOptionalArgsSuccess: په بریالیتوب سره د اختیاري SQL دلیلونه
     بدل کړل.
   wwcConfigConversationSQLPasswordSuccess: په بریالیتوب سره د SQL پټنوم بدل کړ.
-  wwcConfigConversationSQLPasswordInput: اوسنی پاسورډ %i دی. د 0 څخه بل څه ټایپ کړئ
+  wwcConfigConversationSQLPasswordInput: اوسنی پاسورډ {0} دی. د 0 څخه بل څه ټایپ کړئ
     ترڅو نوی پټنوم ترتیب کړئ، یا بیرته لاړ شئ 0 ټایپ کړئ.
   wwcConfigGUIToggleSQLSSLButton: د ایس ایس ایل ایس ایل ټوګل
   wwcConfigConversationSQLUsernameSuccess: په بریالیتوب سره د SQL کارن نوم بدل کړ.
-  wwcConfigConversationSQLUsernameInput: اوسنی کارن-نوم %i دی. د نوي کارن-نوم تنظیم
+  wwcConfigConversationSQLUsernameInput: اوسنی کارن-نوم {0} دی. د نوي کارن-نوم تنظیم
     کولو لپاره د 0 څخه بل څه ټایپ کړئ، یا بیرته لاړ شئ 0 ټایپ کړئ.
   wwcConfigConversationSQLPortSuccess: په بریالیتوب سره د SQL بندر بدل کړ.
   wwcConfigGUISQLUsernameButton: د SQL کارن نوم بدل کړئ
   wwcConfigConversationSQLOptionalArgsCleared: اختیاري دلیلونه په بریالیتوب سره پاک
     شول.
-  wwcConfigConversationSQLOptionalArgsInput: 'د اوسني اختیاري SQL دلیلونه دي: %i.
+  wwcConfigConversationSQLOptionalArgsInput: 'د اوسني اختیاري SQL دلیلونه دي: {0}.
     د کوما لخوا جلا شوي دلیلونه ټایپ کړئ (key=value، key2 = value2)، یا د اوسني ارګز
     مسح کولو لپاره واضح ډول کړئ، یا د بیرته تلو لپاره 0 ټایپ کړئ.'
-  wwcConfigConversationSQLDatabaseNameInput: د اوسني ډیټابیس نوم %i دی. د نوي ډیټابیس
+  wwcConfigConversationSQLDatabaseNameInput: د اوسني ډیټابیس نوم {0} دی. د نوي ډیټابیس
     نوم ترتیب کولو لپاره د 0 پرته بل څه ټایپ کړئ، یا بیرته لاړ شئ 0 ټایپ کړئ.
   wwcConfigGUISQLDatabaseNameButton: د SQL ډیټابیس بدل کړئ
   wwcConfigConversationSQLDatabaseNameSuccess: په بریالیتوب سره د SQL ډیټابیس نوم
     بدل کړ.
   wwcConfigConversationFatalAsyncAbort: د ASYNC ټولو دندو د لغوه کولو لپاره اوسنی
-    وخت د %i ثانیو دی. د 7 څخه پورته هر څه ټایپ کړئ ترڅو یو نوی وخت وټاکئ، یا د دې
+    وخت د {0} ثانیو دی. د 7 څخه پورته هر څه ټایپ کړئ ترڅو یو نوی وخت وټاکئ، یا د دې
     لاندې هرڅه بیرته لاړ شئ.
   wwcConfigConversationFatalAsyncSuccess: Async دنده مهال ویش په بریالیتوب سره ټاکل.
   wwcConfigGUIFatalAsyncAbortButton: د اسینک ټاسک وخت بدل کړئ
@@ -368,7 +368,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: د لیبر ژباړې API کیلي بدلول
   libreHttp403: Missing لیبر ژباړل API کیلي، یا تاسو د سرور څخه منع شوي یاست!
   wwcConfigConversationLibreURLSuccess: لیبر URL په بریالیتوب سره ټاکل شوی.
-  wwcConfigConversationLibreTranslateApiKeyInput: اوسنی API کیلي %i دی. مهرباني وکړئ
+  wwcConfigConversationLibreTranslateApiKeyInput: اوسنی API کیلي {0} دی. مهرباني وکړئ
     د لیبر لپاره د API کیلي داخل کړئ، یا د بېرته تلو لپاره 0 ولیکئ.
   wwcConfigGUILibreTranslateButton: ليبر ژباړل
   libreHttp429: د سرور څخه د نرخ حد له امله هیڅ باور نشته.
@@ -377,18 +377,18 @@ Messages:
     د بدلونونو لپاره بیا ځای پر ځای کړئ ترڅو اغیزمن شي.
   wwcConfigConversationLibreTranslateApiKeySuccess: لیبر API کیلي په بریالیتوب سره
     ټاکل شوی.
-  wwcConfigConversationLibreURLInput: اوسنی URL دی %i. مهرباني وکړئ د لیبر لپاره یو
+  wwcConfigConversationLibreURLInput: اوسنی URL دی {0}. مهرباني وکړئ د لیبر لپاره یو
     URL داخل کړئ، یا د بېرته تګ لپاره 0 ولیکئ.
-  libreHttpUnknown: 'ناپېژندلې http تېروتنه: %i'
+  libreHttpUnknown: 'ناپېژندلې http تېروتنه: {0}'
   wwcConfigGUILibreTranslateURLButton: ليبر ژباړل URL بدلول
-  wwcConfigConnectionFail: .په نښلولو کې پاتې راغی %i
+  wwcConfigConnectionFail: .په نښلولو کې پاتې راغی {0}
   wwcConfigGUIMongoSettings: MongoDB سازونه
   wwcConfigConversationMongoDatabaseNameSuccess: په بریالیتوب سره د MongoDB ډیټابیس
     نوم بدل کړ.
   wwcConfigGUIMongoHostnameButton: د MongoDB کوربه نوم بدل کړئ
-  wwcConfigConversationMongoPasswordInput: اوسنی تېرنويې %i دی. د نوې تېرنويې د ټاکلو
+  wwcConfigConversationMongoPasswordInput: اوسنی تېرنويې {0} دی. د نوې تېرنويې د ټاکلو
     لپاره د 0 څخه پرته بل څه وليکﺉ، يا بېرته تللو لپاره 0 وليکﺉ.
-  wwcConfigConversationMongoPortInput: اوسنی بندر %i دی. د نوي بندر د ټاکلو لپاره
+  wwcConfigConversationMongoPortInput: اوسنی بندر {0} دی. د نوي بندر د ټاکلو لپاره
     له 0 پرته بل هر څه ولیکئ، یا د بېرته تګ لپاره 0 ډول ډول کړئ.
   wwcConfigConversationToggleMongoSuccess: منګوډ بی په بریالیتوب سره وځپل شو. د بدلون
     لپاره بیا ځای پر ځای کړئ ترڅو اغیزمن شي.
@@ -398,13 +398,13 @@ Messages:
     بدل کړ.
   wwcConfigGUIMongoMenuButton: MongoDB امستنې بدلول
   wwcConfigGUIToggleMongoButton: مانګاوډبی بدلول
-  wwcConfigConversationMongoDatabaseNameInput: اوسنی توکبنسټ نوم دی %i. د 0 څخه بل
+  wwcConfigConversationMongoDatabaseNameInput: اوسنی توکبنسټ نوم دی {0}. د 0 څخه بل
     څه وليکﺉ چې نوی ډاټابیس نوم وټاکﺉ، يا بېرته تللو لپاره 0 وليکﺉ.
   wwcConfigConversationMongoOptionalArgsInput: 'اوسنی اختیاري MongoDB دلیلونه دا دي:
-    %i. د کاما (key=value, key2=value2) لخوا جلا شوي دلیلونه ولیکئ، یا د اوسني ارګز
+    {0}. د کاما (key=value, key2=value2) لخوا جلا شوي دلیلونه ولیکئ، یا د اوسني ارګز
     د پاکولو لپاره واضح ډول کړئ، یا د 0 ټایپ کړئ چې بېرته لاړ شي.'
   wwcConfigGUIMongoDatabaseNameButton: MongoDB ډاټابیس بدل کړئ
-  wwcConfigConversationMongoUsernameInput: اوسنی کارن-نوم %i دی. د نوي کارن-نوم د
+  wwcConfigConversationMongoUsernameInput: اوسنی کارن-نوم {0} دی. د نوي کارن-نوم د
     ټاکلو لپاره د 0 څخه پرته بل څه ولیکئ، یا د بېرته تلو لپاره 0 ډول ډول کړئ.
   wwcConfigGUIMongoOptionalArgsButton: د MongoDB اختیاري بحثونه بدل کړئ
   wwcConfigConversationMongoUsernameSuccess: په بریالیتوب سره د MongoDB کارن-نوم بدل
@@ -430,7 +430,7 @@ Messages:
   wwcConfigGUIToggleDeepLTranslateButton: ژباړل ژباړل
   wwcConfigConversationDeepLTranslateApiKeySuccess: د ډیپل API کیلي په بریالیتوب سره
     ټاکل شوی.
-  wwcConfigConversationDeepLTranslateApiKeyInput: اوسنی API کیلي %i دی. مهرباني وکړئ
+  wwcConfigConversationDeepLTranslateApiKeyInput: اوسنی API کیلي {0} دی. مهرباني وکړئ
     د ډیپ L لپاره د API کیلي داخل کړئ، یا د بېرته تګ لپاره 0 ډول کړئ.
   wwcConfigErrorsToIgnoreSuccess: په بریالیتوب سره راجستر شوي ژباړونکي غلطی له پامه
     غورځول.
@@ -441,23 +441,23 @@ Messages:
     ترڅو د جملې څخه سترګې پټې کړي.
   wwcConfigGUIIgnoreErrorsButton: تېروتنې بدلول چې له پامه غورځول شي
   wwcConfigConversationIgnoreErrorsInput: 'د ژباړونکي تېروتنې په تېروتنو کې د جملې
-    اوسنی لړ دا دي: %i. د کاما (key=value, key2=value2) لخوا جلا شوي مباحثې ولیکئ،
+    اوسنی لړ دا دي: {0}. د کاما (key=value, key2=value2) لخوا جلا شوي مباحثې ولیکئ،
     یا د اوسني args د پاکولو لپاره واضح ډول کړئ، یا د بېرته تللو لپاره 0 ټایپ کړئ.
     برسیره پردې، «*» ټایپ کول به د فلپین سبب شي چې د ژباړونکي غلطی ونه ګوري.'
   wwcConfigConversationIgnoreErrorsCleared: د ژباړونکي غلطی چې په بریالیتوب سره پاک
     شوي عبارتونه سترګې پټې کړي.
 
-  wwcsActiveTransPrevRate: 'فعاله ژباړونکي د پخواني نرخ حد وخت: %i'
-  wwcsActiveTransSaved: '%i: فعاله ژباړونکی په ډیسک کې خوندي شو'
-  wwcsActiveTransIncoming: 'فعاله ژباړونکی راتلونکی چیٹ ژباړل: %i'
-  wwcsActiveTransOutLang: '%i: فعاله ژباړونکي وتلونه ژبه'
-  wwcsActiveTransInLang: 'فعالې ژباړونکي ننوتنې ژبه: %i'
-  wwcsActiveTransBook: 'کتاب ژباړونکی ژباړونکی: %i'
-  wwcsActiveTransSign: 'د فعالې ژباړونکي لاسليک: %i'
-  wwcsActiveTransUUID: 'فعاله ژباړونکی UUID: %i'
-  wwcsActiveTransRateLimit: 'د فعالې ژباړونکي کچه حد: %i'
-  wwcsActiveTransColorWarning: 'فعالې ژباړونکي د رنګ خبرداری ترلاسه کړ: %i'
-  wwcsActiveTransOutgoing: 'فعالې ژباړونکي د وتلو چیٹ ژباړل: %i'
-  wwcsActiveTransItem: 'د ژباړونکي ژباړونکي توکي: %i'
-  wwcsActiveTransEntity: 'فعالې ژباړونکي ارګان: %i'
+  wwcsActiveTransPrevRate: 'فعاله ژباړونکي د پخواني نرخ حد وخت: {0}'
+  wwcsActiveTransSaved: '{0}: فعاله ژباړونکی په ډیسک کې خوندي شو'
+  wwcsActiveTransIncoming: 'فعاله ژباړونکی راتلونکی چیٹ ژباړل: {0}'
+  wwcsActiveTransOutLang: '{0}: فعاله ژباړونکي وتلونه ژبه'
+  wwcsActiveTransInLang: 'فعالې ژباړونکي ننوتنې ژبه: {0}'
+  wwcsActiveTransBook: 'کتاب ژباړونکی ژباړونکی: {0}'
+  wwcsActiveTransSign: 'د فعالې ژباړونکي لاسليک: {0}'
+  wwcsActiveTransUUID: 'فعاله ژباړونکی UUID: {0}'
+  wwcsActiveTransRateLimit: 'د فعالې ژباړونکي کچه حد: {0}'
+  wwcsActiveTransColorWarning: 'فعالې ژباړونکي د رنګ خبرداری ترلاسه کړ: {0}'
+  wwcsActiveTransOutgoing: 'فعالې ژباړونکي د وتلو چیٹ ژباړل: {0}'
+  wwcsActiveTransItem: 'د ژباړونکي ژباړونکي توکي: {0}'
+  wwcsActiveTransEntity: 'فعالې ژباړونکي ارګان: {0}'
 

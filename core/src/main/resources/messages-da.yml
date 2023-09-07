@@ -1,73 +1,73 @@
 Messages:
-  wwcgAutoTranslateStart: Oversætter nu global chat til %o.
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Global chat oversættes til %o.
+  wwcgAutoTranslateStart: Oversætter nu global chat til {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Global chat oversættes til {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Skift Amazon Access Key
   wwcrFail: Det lykkedes ikke at genindlæse WorldwideChat.
   wwcConfigGUIUpdateCheckerButton: Skift Søg efter opdateringsforsinkelse
   wwcUpdaterFailedGeneric: Kunne ikke søge efter WorldwideChat-opdateringer.
   wwcConfigConversationUpdateCheckerInput: Den aktuelle forsinkelse på opdateringscheckeren
-    er %i sekunder. Skriv noget større end 10 for at indstille en ny værdi, eller
+    er {0} sekunder. Skriv noget større end 10 for at indstille en ny værdi, eller
     noget mindre end 10 for at gå tilbage.
   wwctGUIMainMenuGlobal: Global Oversættelsesmenu
   wwcConfigConversationPluginUpdateChatSuccess: Plugin opdatering chat påmindelse
     skiftede med succes.
-  wwctbOnTarget: Bogoversættelse aktiveret for %i.
-  wwcsNotATranslator: Der er endnu ingen poster tilgængelige for %i.
+  wwctbOnTarget: Bogoversættelse aktiveret for {0}.
+  wwcsNotATranslator: Der er endnu ingen poster tilgængelige for {0}.
   wwcConfigGUIbStatsButton: Slå bStats til/ fra
   wwctGUINewTranslationSource: Vælg et kildesprog
-  wwcConfigConnectionFailed: Kunne ikke oprette forbindelse til %o. Sørg for at dine
+  wwcConfigConnectionFailed: Kunne ikke oprette forbindelse til {0}. Sørg for at dine
     legitimationsoplysninger og firewall er konfigureret korrekt!
   wwcConfigEnabledbStats: Aktiverede bStats.
-  wwctGUIMainMenuPlayer: Oversættelsesmenuen af %i
+  wwctGUIMainMenuPlayer: Oversættelsesmenuen af {0}
   wwctGUIBookButton: Slå bogoversættelse til/ fra
-  wwcLangDetected: Findes sprog %o.
+  wwcLangDetected: Findes sprog {0}.
   wwcBookTranslateStart: Oversætter målbog...
   wwcConfigDisabledbStats: Handicappede bStats.
   wwctsOffSender: Signer oversættelse deaktiveret.
   wwcUpdaterParserFailed: Det lykkedes ikke at fortolke opdateringsdata fra Github.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Den nuværende hemmelige nøgle
-    er %i. Indtast venligst en hemmelig nøgle til Amazon, eller skriv 0 for at gå
+    er {0}. Indtast venligst en hemmelig nøgle til Amazon, eller skriv 0 for at gå
     tilbage.
   wwctbOffSender: Oversættelse af bøger deaktiveret.
   wwcConfigGUIAmazonTranslateButton: Amazon oversætte
   wwcConfigConversationLangSuccess: Plugin sprog ændret med succes.
-  wwcsSuccessfulTranslations: 'Vellykkede oversættelser: %i'
+  wwcsSuccessfulTranslations: 'Vellykkede oversættelser: {0}'
   wwcConfigConversationTranslationCacheInput: Den aktuelle grænse for oversættelsescachen
-    er %i sætninger. Skriv noget større end 0 for at angive en ny værdi, eller skriv
+    er {0} sætninger. Skriv noget større end 0 for at angive en ny værdi, eller skriv
     0 for at deaktivere oversættelsescachen. Skriv noget mindre end 0 for at gå tilbage.
-  wwctbOffTarget: Oversættelse af bøger deaktiveret for %i.
+  wwctbOffTarget: Oversættelse af bøger deaktiveret for {0}.
   wwcConfigGUIGeneralSettings: Generel konfiguration
   wwcInvalidLang: Ugyldigt sprog i din config.yml. Defaulerer til en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon-regionen sat med succes.
-  wwcConfigRateLimitEnabled: Global hastighedsgrænse aktiveret og indstillet til %i
+  wwcConfigRateLimitEnabled: Global hastighedsgrænse aktiveret og indstillet til {0}
     sekunder.
   wwcBadPerms: Du har ikke de nødvendige tilladelser til at udføre denne kommando!
   wwcConfigGUILangButton: Skift plugin- sprog
   wwctGUISignButton: Slå Oversættelse af underskrift
   wwcUpdaterOutOfDate: WorldwideChat er forældet. Opdater venligst til den nyeste
-    version, %i.
+    version, {0}.
   wwcConfigGUINextPageButton: Næste side
   wwcConfigInvalidTranslatorSettings: Ugyldige indstillinger for oversætter! Aktivér
     kun én oversætter i din config.yml.
   wwcConfigGUIQuitButton: Afslut og gem ændringer
   wwctPlayerNotFound: Spilleren % jeg blev ikke fundet.
   wwcConfigGUIAmazonTranslateRegionButton: Ændre Amazon-regionen
-  wwcConfigConversationLangInput: 'Det aktuelle udvidelsessprog er %i. Indtast en
-    gyldig sprogkode, eller skriv 0 for at annullere. Gyldige sprogkoder: %o'
+  wwcConfigConversationLangInput: 'Det aktuelle udvidelsessprog er {0}. Indtast en
+    gyldig sprogkode, eller skriv 0 for at annullere. Gyldige sprogkoder: {0}'
   wwcConfigConversationLangInvalid: Ugyldig sprogkode!
   wwcConfigGUIWatsonAPIKeyButton: Skift Watson API-nøgle
-  wwcEnabled: Aktiveret WorldwideChat version %i.
-  wwcgLangToLangStart: Oversætter nu global chat fra %i til %o.
+  wwcEnabled: Aktiveret WorldwideChat version {0}.
+  wwcgLangToLangStart: Oversætter nu global chat fra {0} til {1}.
   wwctbOnSender: Bogoversættelse aktiveret. Højreklik mens du holder en bog for at
     oversætte den!
   wwcListenersInitialized: Initialiserede lyttere.
   wwcConfigGUIPluginUpdateChatButton: Send Chat påmindelse om plugin opdateringer
   wwcConfigConversationSendTranslationChatSuccess: Chat påmindelse om aktiv oversætter
     skiftede med succes.
-  wwctsOffTarget: Signering af oversættelse deaktiveret for %i.
+  wwctsOffTarget: Signering af oversættelse deaktiveret for {0}.
   wwcUpdaterConnectionFailed: Kunne ikke søge efter seneste opdateringer på Github.
   watsonNotFoundExceptionNotification: Kunne ikke oversætte dit input yderligere.
-  wwcConfigConversationWatsonAPIKeyInput: Den nuværende API nøgle er %i. Indtast en
+  wwcConfigConversationWatsonAPIKeyInput: Den nuværende API nøgle er {0}. Indtast en
     API nøgle til Watson, eller skriv 0 for at gå tilbage.
   wwctGUIStopButton: Stop med at oversætte
   wwcgTranslationStopped: Global chat oversættelse er blevet stoppet.
@@ -77,9 +77,9 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Skift Google Translate API Key
   wwcSignDeletedOrTooLong: 'Måltegnet blev enten slettet, eller oversættelsen var
     for lang. Oversættelse:'
-  wwctsOnTarget: Signer oversættelse aktiveret for %i.
+  wwctsOnTarget: Signer oversættelse aktiveret for {0}.
   wwcConfigCacheDisabled: Oversætter cache deaktiveret.
-  wwcConfigConversationWatsonURLInput: Den nuværende URL er %i. Indtast venligst en
+  wwcConfigConversationWatsonURLInput: Den nuværende URL er {0}. Indtast venligst en
     service- URL for Watson, eller skriv 0 for at gå tilbage.
   wwcBookDone: Bog oversat med succes.
   wwctsOnSender: Signer oversættelse aktiveret. Højreklik på et tegn for at oversætte
@@ -88,7 +88,7 @@ Messages:
   wwctGUITranslationButton: Begynd at oversætte
   wwctGUIAutoDetectButton: Registrer kildesprog automatisk
   wwcUpdaterUpToDate: WorldwideChat er opdateret!
-  wwcConfigConversationAmazonTranslateRegionInput: Det aktuelle område er %i. Indtast
+  wwcConfigConversationAmazonTranslateRegionInput: Det aktuelle område er {0}. Indtast
     venligst et område for Amazon, eller skriv 0 for at gå tilbage.
   wwcNoConsole: Denne kommando kan kun køres af en spiller.
   wwcInitializationFail: Det lykkedes ikke at initialisere WorldwideChat.
@@ -98,17 +98,17 @@ Messages:
     version.
   wwcConfigConversationRateLimitSuccess: Rate grænse sat med succes.
   wwcConfigConversationWatsonURLSuccess: Watson URL sat med succes.
-  wwctbPlayerNotFound: Spilleren %i findes enten ikke, eller er ikke en aktiv oversætter.
+  wwctbPlayerNotFound: Spilleren {0} findes enten ikke, eller er ikke en aktiv oversætter.
   wwcConfigConversationTranslationCacheSuccess: Oversættelse cache grænse sat med
     succes.
   wwctInvalidArgs: Ugyldige argumenter givet!
   wwcConfigGUIPrefixButton: Skift plugin- præfiks
   wwctSameLangError: Du kan ikke oversætte til det samme sprog!
   wwctGUINewTranslationTarget: Vælg et målsprog
-  wwcConfigConnectionSuccess: Succesfuld forbindelse til %o!
+  wwcConfigConnectionSuccess: Succesfuld forbindelse til {0}!
   wwcConfigGUIGoogleTranslateButton: Google Oversæt
-  wwcsIsActiveTranslator: 'Er aktiv oversætter: %i'
-  wwcConfigConversationPrefixInput: Det aktuelle præfiks er %i. Skriv et nyt, eller
+  wwcsIsActiveTranslator: 'Er aktiv oversætter: {0}'
+  wwcConfigConversationPrefixInput: Det aktuelle præfiks er {0}. Skriv et nyt, eller
     skriv 0 for at gå tilbage.
   wwcConfigGUIPreviousPageButton: Forrige side
   wwcConfigGUITranslatorCacheButton: Skift grænse for oversættelse
@@ -124,81 +124,81 @@ Messages:
     korrekt.
   wwcUnsupportedVersion: 'Du kører en ikke-understøttet version af Bukkit, Spigot
     eller Paper. Understøttede versioner:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: Global chat oversættes fra %i
-    til %o.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Global chat oversættes fra {0}
+    til {0}.
   wwcConfigGUITranslatorSettings: Konfiguration af oversætter
-  wwcConfigConversationGoogleTranslateAPIKeyInput: Den nuværende API nøgle er %i.
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Den nuværende API nøgle er {0}.
     Indtast en API nøgle til Google Translate, eller skriv 0 for at gå tilbage.
   wwcConfigConversationRateLimitInput: Den aktuelle globale hastighedsgrænse pr. oversættelse
-    er %i sekunder. Skriv noget større end 0 for at angive en ny værdi, eller skriv
+    er {0} sekunder. Skriv noget større end 0 for at angive en ny værdi, eller skriv
     0 for at deaktivere grænsen. Skriv noget mindre end 0 for at gå tilbage.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API nøglesæt
     med succes.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Skift Amazon Secret Key
   wwcVersion: WorldwideChat, version
-  wwcsAttemptedTranslations: 'Forsøg på oversættelser: %i'
+  wwcsAttemptedTranslations: 'Forsøg på oversættelser: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon hemmelige nøgle sæt
     med succes.
   wwcConfigConversationWatsonAPIKeySuccess: Watson API nøglesæt med succes.
-  wwcRateLimit: Dine oversættelser er begrænset. Vent venligst et anden %i sekunder.
-  wwcConfigCacheEnabled: Translator cache aktiveret og sat til en grænse på %i.
+  wwcRateLimit: Dine oversættelser er begrænset. Vent venligst et anden {0} sekunder.
+  wwcConfigCacheEnabled: Translator cache aktiveret og sat til en grænse på {0}.
   wwctGUIExistingTranslationButton: Overskriv nuværende oversættelsessession
   wwcUserDataReloaded: Indlæst alle gemte brugerdata.
   wwcConfigGUISendTranslationChatButton: Send Chat påmindelse til aktiv oversætter
     ved login
-  wwcsLastTranslationTime: 'Sidste (vellykket) oversættelsestid: %i'
+  wwcsLastTranslationTime: 'Sidste (vellykket) oversættelsestid: {0}'
   wwctbNotATranslator: Du er ikke en aktiv oversætter! Sørg for at du har indstillet
     denne med /wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Den nuværende adgangsnøgle er
-    %i. Indtast en adgangsnøgle for Amazon, eller skriv 0 for at gå tilbage.
+    {0}. Indtast en adgangsnøgle for Amazon, eller skriv 0 for at gå tilbage.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon adgang nøgle sæt med
     succes.
   wwcConfigBadUpdateDelay: Ugyldig opdateringsforsinkelse indstillet i config.yml.
     Default til 86400 sekunder...
   wwctrlRateLimitOffSender: Slåede din takst fra.
-  wwctrlRateLimitAlreadyOffTarget: Satgrænsen på %i er allerede deaktiveret.
-  wwctrlPlayerNotFound: Spilleren %i findes enten ikke, eller er ikke en aktiv oversætter.
-  wwctrlRateLimitSetSender: Indstil din hastighedsgrænse til %i sekunder.
-  wwctrlRateLimitOffTarget: Slåede hastighedsgrænsen på %i fra.
-  wwctrlRateLimitSetTarget: Indstil hastighedsgrænsen på %i til %o sekunder.
+  wwctrlRateLimitAlreadyOffTarget: Satgrænsen på {0} er allerede deaktiveret.
+  wwctrlPlayerNotFound: Spilleren {0} findes enten ikke, eller er ikke en aktiv oversætter.
+  wwctrlRateLimitSetSender: Indstil din hastighedsgrænse til {0} sekunder.
+  wwctrlRateLimitOffTarget: Slåede hastighedsgrænsen på {0} fra.
+  wwctrlRateLimitSetTarget: Indstil hastighedsgrænsen på {0} til {1} sekunder.
   wwctrlNotATranslator: Du er ikke en aktiv oversætter! Sørg for at du har indstillet
     denne med /wwct.
   wwctrlRateLimitAlreadyOffSender: Din takst grænse er allerede deaktiveret.
   wwctGUIRateButton: Indstil hastighedsgrænse
-  wwctGUIConversationRateLimit: Hastighedsgrænsen pr. oversættelse er aktuelt %i sekunder.
+  wwctGUIConversationRateLimit: Hastighedsgrænsen pr. oversættelse er aktuelt {0} sekunder.
     Skriv noget større end 0 for at angive en ny værdi, eller skriv 0 for at deaktivere
     grænsen. Skriv noget mindre end 0 for at gå tilbage.
   wwctGUITargetPlayerNull: Målspilleren blev afbrudt fra serveren.
   wwcConfigConversationSyncUserDataDelayInput: Den aktuelle forsinkelse pr. synkronisering
-    af brugerdata er %i sekunder. Skriv noget større end 10 for at indstille en ny
+    af brugerdata er {0} sekunder. Skriv noget større end 10 for at indstille en ny
     værdi, eller noget mindre end 10 for at gå tilbage.
   wwcConfigGUISyncUserDataButton: Skift forsinkelse af synkronisering af brugerdata
   wwcConfigSyncDelayEnabled: Forsinkelse pr. brugerdatasynkronisering indstillet til
-    %i sekunder.
+    {0} sekunder.
   wwcConfigConversationSyncUserDataDelaySuccess: Forsinkelse af brugerdata indstillet
     med succes.
   wwcConfigSyncDelayInvalid: Ugyldig synkroniseringsforsinkelse for brugerdata angivet
     i config.yml. Defaulerer til 7200 sekunder...
   wwcConfigCacheInvalid: Oversætter cache størrelse ugyldig. Default til 10...
   wwcInventoryErrorPlayer: Fejl registreret med din GUI. Der er sendt en log til konsollen.
-  wwcInventoryError: Fejl registreret med brugerflade %i GUI. Rapportér dette problem
+  wwcInventoryError: Fejl registreret med brugerflade {0} GUI. Rapportér dette problem
     til udvikleren.
-  wwctiOffTarget: Oversættelse af elementer deaktiveret for %i.
+  wwctiOffTarget: Oversættelse af elementer deaktiveret for {0}.
   wwctiOffSender: Oversættelse af elementer deaktiveret.
   wwcItemTranslateTitleStock: Kunne ikke oversætte standardelementets navne.
   wwctGUIItemButton: Slå Oversættelse til for element
   wwcItemTranslateTitleDone: Oversat vare titel med succes.
   wwcGUITempItem: Visning af element
   wwcItemTranslateStart: Oversætter målpunkt...
-  wwcBookTranslateTitleSuccess: 'Oversat bogs titel: %i'
+  wwcBookTranslateTitleSuccess: 'Oversat bogs titel: {0}'
   wwctiOnSender: Oversættelse af elementer aktiveret. Højreklik med et element i din
     hovedhånd for at oversætte det!
   wwcItemTranslateLoreStart: Oversætter lore af målpunkt...
   wwcItemTranslateLoreDone: Oversat vare lore med succes.
-  wwctiOnTarget: Oversættelse af elementer aktiveret for %i.
+  wwctiOnTarget: Oversættelse af elementer aktiveret for {0}.
   wwcInvalidTranslator: Ugyldige indstillinger for oversætter. Løs venligst dette
     i din config.yml eller med /wwcc for at bruge dette plugin.
-  wwcConfigGUIEachTranslatorSettings: '%i Konfiguration'
+  wwcConfigGUIEachTranslatorSettings: '{0} Konfiguration'
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat tolererer ikke brugen af /genindlæsning. Fortsæt
     venligst med forsigtighed.
@@ -206,7 +206,7 @@ Messages:
     eller fejlfindingsværktøj, skal du slå dette fra.
   wwcTranslatorErrorThresholdReached: Fejltærsklen nået. Dette plugin vil nu genindlæse,
     og deaktivere alle oversættere.
-  wwcConfigErrorLimitEnabled: Oversætter fejlgrænse indstillet til %i.
+  wwcConfigErrorLimitEnabled: Oversætter fejlgrænse indstillet til {0}.
   wwcTranslatorError: Der opstod et problem under forsøget på din oversættelse. Prøv
     venligst igen.
   wwcConfigErrorLimitInvalid: Ugyldig oversætterfejlgrænse angivet i config.yml. Defaulerer
@@ -214,10 +214,10 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: Tjek errorLog.txt i mappen WorldwideChat
     plugin for mere information.
   wwctInvalidInputLangCode: 'Ugyldig indtastningssprogkode angivet! Gyldige langkoder:
-    %o'
-  wwcsTitle: Optegnelser af %i
+    {0}'
+  wwcsTitle: Optegnelser af {0}
   wwctInvalidOutputLangCode: 'Ugyldig output-sprogkode angivet! Gyldige langkoder:
-    %o'
+    {0}'
   wwctGUISourceTranslationSelected: Du har valgt dette sprog.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Slet tilsidesættelse
   wwcConfigConversationOverrideTextChange: Skriv en ny meddelelse for denne tilsidesættelse,
@@ -250,48 +250,48 @@ Messages:
   wwcConfigMessageCharLimitInvalid: Ugyldig grænse pr. meddelelse angivet i config.yml.
     Default til 255 tegn...
   wwcConfigConversationCharacterLimitSuccess: Tegngrænse sat med succes.
-  wwcteOnTarget: Enhedsoversættelse aktiveret for %i.
-  wwcEntityTranslateDone: 'Navn på oversat enhed: %i'
+  wwcteOnTarget: Enhedsoversættelse aktiveret for {0}.
+  wwcEntityTranslateDone: 'Navn på oversat enhed: {0}'
   wwcEntityTranslateNoName: Objekt har ikke et brugerdefineret navn.
   wwcConfigConversationErrorLimitInput: Den aktuelle fejlgrænse for hver oversætter
-    er %i. Skriv noget større end 0 for at sætte en ny værdi, eller skriv noget mindre
+    er {0}. Skriv noget større end 0 for at sætte en ny værdi, eller skriv noget mindre
     end eller lig med 0 for at gå tilbage.
   wwcConfigGUIGlobalRateLimitButton: Ændre global kursgrænse
   wwcteOnSender: Oversættelse af enhed aktiveret. Højreklik på en enhed for at oversætte
     dens navn!
   wwcConfigGUIResponseLimitButton: Skift timeout for oversætteren
-  wwcConfigMessageCharLimitEnabled: Tegngrænse pr. meddelelse sat til %i tegn.
-  wwcteOffTarget: Oversættelse af enheder deaktiveret for %i.
-  wwcCharLimit: Din besked er for lang! Sørg for, at din besked er mindre end %i tegn
+  wwcConfigMessageCharLimitEnabled: Tegngrænse pr. meddelelse sat til {0} tegn.
+  wwcteOffTarget: Oversættelse af enheder deaktiveret for {0}.
+  wwcCharLimit: Din besked er for lang! Sørg for, at din besked er mindre end {0} tegn
     i længden.
   wwcConfigConversationCharacterLimitInput: Den aktuelle tegngrænse pr. meddelelse
-    er %i tegn. Skriv noget større end 0 for at angive en ny værdi, eller skriv noget
+    er {0} tegn. Skriv noget større end 0 for at angive en ny værdi, eller skriv noget
     mindre end eller lig med 0 for at gå tilbage.
   wwcteOffSender: Oversættelse af enheder deaktiveret.
   wwctGUIEntityButton: Skift objektoversættelse til/ fra
   wwctrlRateLimitBadInt: Din takst grænse er ikke et gyldigt heltal.
-  wwcTranslatorErrorConsole: Der opstod et problem, mens bruger %i forsøgte at oversætte
+  wwcTranslatorErrorConsole: Der opstod et problem, mens bruger {0} forsøgte at oversætte
     deres. Tjek venligst errorLog.txt for flere detaljer.
   wwctGUIChatButton: Slå chatoversættelse til/ fra
   wwcrBegin: Genindlæser WorldwideChat...
-  wwctTranslationStoppedOtherPlayer: Oversættelsessessessessionen for %i er blevet
+  wwctTranslationStoppedOtherPlayer: Oversættelsessessessessionen for {0} er blevet
     stoppet.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat bliver oversat,
-    men du har en aktiv oversættelsessession fra %i til %o.
+    men du har en aktiv oversættelsessession fra {0} til {1}.
   wwctCannotTranslateConsole: Du kan ikke starte en oversættelsessession for konsol!
-  wwctLangToLangStart: Start af en ny oversættelsessession fra %i til %o.
+  wwctLangToLangStart: Start af en ny oversættelsessession fra {0} til {1}.
   wwcOnJoinTranslationNotificationSourceLang: Du har en aktiv oversættelsessession
-    fra %i til %o.
-  wwctAutoTranslateStartOtherPlayer: Start af en ny oversættelsessession for %i til
-    %o.
+    fra {0} til {1}.
+  wwctAutoTranslateStartOtherPlayer: Start af en ny oversættelsessession for {0} til
+    {0}.
   wwctTranslationStopped: Din oversættelsessession er blevet stoppet.
-  wwctLangToLangStartOtherPlayer: Starter en ny oversættelsessession for %o fra %i
-    til %e.
-  wwctAutoTranslateStart: Start af en ny oversættelsessession til %o.
+  wwctLangToLangStartOtherPlayer: Starter en ny oversættelsessession for {0} fra {1}
+    til {0}.
+  wwctAutoTranslateStart: Start af en ny oversættelsessession til {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Du har en aktiv oversættelsessession
-    til %o.
+    til {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat bliver oversat,
-    men du har en aktiv oversættelsessession til %o.
+    men du har en aktiv oversættelsessession til {0}.
   wwcConfigGUIChangesNotSaved: Dine ændringer træder ikke i kraft, før du klikker
     på den røde barriere i /wwcc.
   wwctciOffSender: Indgående chat oversættelse deaktiveret.
@@ -302,25 +302,25 @@ Messages:
   wwctciOnSender: Indgående chat oversættelse aktiveret. Alt, hvad du modtager, vil
     blive oversat!
   wwctGUIChatMenu: Toggle Chat Oversættelse Menu
-  wwctcoOnTarget: Udgående chat oversættelse aktiveret for %i.
-  wwctcoOffTarget: Udgående chat oversættelse deaktiveret for %i.
+  wwctcoOnTarget: Udgående chat oversættelse aktiveret for {0}.
+  wwctcoOffTarget: Udgående chat oversættelse deaktiveret for {0}.
   wwctGUIChatOutgoingButton: Toggle Udgående Chat Oversættelse
-  wwctciOnTarget: Indgående chat oversættelse aktiveret for %i.
-  wwctciOffTarget: Indgående chat oversættelse deaktiveret for %i.
+  wwctciOnTarget: Indgående chat oversættelse aktiveret for {0}.
+  wwctciOffTarget: Indgående chat oversættelse deaktiveret for {0}.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: Original indgående chat knyttet
     til oversættelse som hover tekst skiftede med succes.
   wwcConfigGUISendIncomingHoverTextChatButton: Tilføj originale indgående meddelelser
     som Hold markøren tekst
-  wwctGUIExistingChatOutgoingEnabled: 'Udgående chat Oversættelse Aktiveret: %i'
-  wwctGUIExistingTranslationInput: 'Indtastningssprog: %i'
-  wwctGUIExistingChatIncomingEnabled: 'Indgående chat Oversættelse Aktiveret: %i'
-  wwctGUIExistingTranslationOutput: 'Output-sprog: %i'
+  wwctGUIExistingChatOutgoingEnabled: 'Udgående chat Oversættelse Aktiveret: {0}'
+  wwctGUIExistingTranslationInput: 'Indtastningssprog: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Indgående chat Oversættelse Aktiveret: {0}'
+  wwctGUIExistingTranslationOutput: 'Output-sprog: {0}'
   wwcTranslatorAttempt: Forsøger at oprette forbindelse til oversætter i config.yml...
-    (forsøg %i/ %o)
-  wwcTimeoutExceptionConsole: Spiller %Jeg havde deres seneste timeout for anmodningen.
+    (forsøg {0}/ {1})
+  wwcTimeoutExceptionConsole: Spiller {0} havde deres seneste timeout for anmodningen.
     Denne fejl er ikke dødelig, men WorldwideChat skal genindlæses, hvis det fortsætter
     med at ske.
-  wwcGUIPageNumber: 'Sidetal: %i'
+  wwcGUIPageNumber: 'Sidetal: {0}'
   wwcConfigYAMLFallback: Falder tilbage til YAML...
   wwcConfigGUIToggleSQLButton: Slå SQL til
   wwcConfigConversationToggleSQLSuccess: SQL skikkede med succes. Genindlæs for ændringen
@@ -341,33 +341,33 @@ Messages:
   wwcConfigGUISQLPortButton: Skift SQL Port
   wwcConfigGUISQLOptionalArgsButton: Ændre SQL valgfrie argumenter
   wwcConfigConversationToggleSQLSSLSuccess: SSL til SQL har slået med succes.
-  wwcConfigConversationSQLPortInput: Den aktuelle port er %i. Skriv andet end 0 for
+  wwcConfigConversationSQLPortInput: Den aktuelle port er {0}. Skriv andet end 0 for
     at indstille en ny port, eller skriv 0 for at gå tilbage.
   wwcConfigGUISQLPasswordButton: Skift SQL-adgangskode
   wwcConfigConversationSQLHostnameSuccess: Har ændret SQL værtsnavn.
-  wwcConfigConversationSQLHostnameInput: Det aktuelle værtsnavn er %i. Skriv andet
+  wwcConfigConversationSQLHostnameInput: Det aktuelle værtsnavn er {0}. Skriv andet
     end 0 for at indstille et nyt værtsnavn, eller skriv 0 for at gå tilbage.
   wwcConfigGUISQLHostnameButton: Skift SQL-værtsnavn
   wwcConfigConversationSQLOptionalArgsSuccess: Har ændret de valgfrie SQL-argumenter.
   wwcConfigConversationSQLPasswordSuccess: Har ændret SQL-adgangskoden.
-  wwcConfigConversationSQLPasswordInput: Den aktuelle adgangskode er %i. Skriv andet
+  wwcConfigConversationSQLPasswordInput: Den aktuelle adgangskode er {0}. Skriv andet
     end 0 for at indstille en ny adgangskode, eller skriv 0 for at gå tilbage.
   wwcConfigGUIToggleSQLSSLButton: Slå SQL SSL til
   wwcConfigConversationSQLUsernameSuccess: Har ændret SQL-brugernavnet.
-  wwcConfigConversationSQLUsernameInput: Det aktuelle brugernavn er %i. Skriv andet
+  wwcConfigConversationSQLUsernameInput: Det aktuelle brugernavn er {0}. Skriv andet
     end 0 for at indstille et nyt brugernavn, eller skriv 0 for at gå tilbage.
   wwcConfigConversationSQLPortSuccess: Har ændret SQL-porten.
   wwcConfigGUISQLUsernameButton: Skift SQL-brugernavn
   wwcConfigConversationSQLOptionalArgsCleared: Valgfrie argumenter ryddet med succes.
   wwcConfigConversationSQLOptionalArgsInput: 'De aktuelle valgfrie SQL-argumenter
-    er: %i. Skriv argumenter adskilt af et komma (key=value, key2=value2), eller skriv
+    er: {0}. Skriv argumenter adskilt af et komma (key=value, key2=value2), eller skriv
     klar for at slette de aktuelle args, eller skriv 0 for at gå tilbage.'
-  wwcConfigConversationSQLDatabaseNameInput: Det aktuelle databasenavn er %i. Skriv
+  wwcConfigConversationSQLDatabaseNameInput: Det aktuelle databasenavn er {0}. Skriv
     andet end 0 for at indstille et nyt databasenavn, eller skriv 0 for at gå tilbage.
   wwcConfigGUISQLDatabaseNameButton: Skift SQL Database
   wwcConfigConversationSQLDatabaseNameSuccess: Har ændret SQL-databasenavnet.
   wwcConfigConversationFatalAsyncAbort: Den aktuelle timeout for at afbryde alle async
-    opgaver er %i sekunder. Skriv noget over 7 for at indstille en ny timeout, eller
+    opgaver er {0} sekunder. Skriv noget over 7 for at indstille en ny timeout, eller
     noget under det for at gå tilbage.
   wwcConfigConversationFatalAsyncSuccess: Async opgave timeout indstillet med succes.
   wwcConfigGUIFatalAsyncAbortButton: Skift Async-opgavetimeout
@@ -377,7 +377,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Skift Libre Oversæt API Key
   libreHttp403: Mangler Libre Translate API Key, eller du er forbudt fra serveren!
   wwcConfigConversationLibreURLSuccess: Libre URL indstillet med succes.
-  wwcConfigConversationLibreTranslateApiKeyInput: Den nuværende API-nøgle er %i. Indtast
+  wwcConfigConversationLibreTranslateApiKeyInput: Den nuværende API-nøgle er {0}. Indtast
     venligst en API-nøgle for Libre, eller skriv 0 for at gå tilbage.
   wwcConfigGUILibreTranslateButton: Libre Oversæt
   libreHttp429: Ingen tillid på grund af hastighedsgrænse fra serveren.
@@ -385,33 +385,33 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: Succesfuldt slået Libre Translate.
     Genindlæs for at ændringerne træder i kraft.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API-nøgle sæt med succes.
-  wwcConfigConversationLibreURLInput: Den nuværende URL er %i. Indtast venligst en
+  wwcConfigConversationLibreURLInput: Den nuværende URL er {0}. Indtast venligst en
     URL for Libre, eller skriv 0 for at gå tilbage.
-  libreHttpUnknown: 'Ukendt http-fejl: %i'
+  libreHttpUnknown: 'Ukendt http-fejl: {0}'
   wwcConfigGUILibreTranslateURLButton: Skift Libre Oversæt URL
-  wwcConfigConnectionFail: Der kunne ikke oprettes forbindelse til %i.
+  wwcConfigConnectionFail: Der kunne ikke oprettes forbindelse til {0}.
   wwcConfigGUIMongoSettings: MongoDB-konfiguration
   wwcConfigConversationMongoDatabaseNameSuccess: Succesfuldt ændret MongoDB-databasenavnet.
   wwcConfigGUIMongoHostnameButton: Skift MongoDB værtsnavn
-  wwcConfigConversationMongoPasswordInput: Den aktuelle adgangskode er %i. Skriv alt
+  wwcConfigConversationMongoPasswordInput: Den aktuelle adgangskode er {0}. Skriv alt
     andet end 0 for at indstille en ny adgangskode, eller skriv 0 for at gå tilbage.
-  wwcConfigConversationMongoPortInput: Den aktuelle port er %i. Skriv alt andet end
+  wwcConfigConversationMongoPortInput: Den aktuelle port er {0}. Skriv alt andet end
     0 for at indstille en ny port, eller skriv 0 for at gå tilbage.
   wwcConfigConversationToggleMongoSuccess: MongoDB skiftes med succes. Genindlæs for
     at ændringen kan træde i kraft.
-  wwcConfigConversationMongoHostnameInput: Det aktuelle værtsnavn er %i. Skriv alt
+  wwcConfigConversationMongoHostnameInput: Det aktuelle værtsnavn er {0}. Skriv alt
     andet end 0 for at indstille et nyt værtsnavn, eller skriv 0 for at gå tilbage.
   wwcConfigConversationMongoHostnameSuccess: Succesfuldt ændret MongoDB værtsnavn.
   wwcConfigGUIMongoMenuButton: Skift MongoDB-indstillinger
   wwcConfigGUIToggleMongoButton: Skift MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Det nuværende databasenavn er %i. Skriv
+  wwcConfigConversationMongoDatabaseNameInput: Det nuværende databasenavn er {0}. Skriv
     alt andet end 0 for at indstille et nyt databasenavn, eller skriv 0 for at gå
     tilbage.
   wwcConfigConversationMongoOptionalArgsInput: 'De nuværende valgfrie MongoDB-argumenter
-    er: %i. Skriv argumenter adskilt af et komma (key=value, key2=value2), eller skriv
+    er: {0}. Skriv argumenter adskilt af et komma (key=value, key2=value2), eller skriv
     clear for at slette de nuværende args, eller skriv 0 for at gå tilbage.'
   wwcConfigGUIMongoDatabaseNameButton: Skift MongoDB-database
-  wwcConfigConversationMongoUsernameInput: Det nuværende brugernavn er %i. Skriv alt
+  wwcConfigConversationMongoUsernameInput: Det nuværende brugernavn er {0}. Skriv alt
     andet end 0 for at indstille et nyt brugernavn, eller skriv 0 for at gå tilbage.
   wwcConfigGUIMongoOptionalArgsButton: Skift MongoDB Valgfri argumenter
   wwcConfigConversationMongoUsernameSuccess: Succesfuldt ændret MongoDB brugernavn.
@@ -432,7 +432,7 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Skift DeepL Oversæt API-nøgle
   wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Oversæt
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API-nøglesæt med succes.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Den nuværende API-nøgle er %i. Indtast
+  wwcConfigConversationDeepLTranslateApiKeyInput: Den nuværende API-nøgle er {0}. Indtast
     venligst en API-nøgle for DeepL, eller skriv 0 for at gå tilbage.
   wwcConfigErrorsToIgnoreSuccess: Succesfuldt registrerede oversætterfejl at ignorere.
   wwcConfigErrorsToIgnoreInvalid: Ugyldige oversætter fejl at ignorere sæt i config.yml.
@@ -442,24 +442,24 @@ Messages:
     at ignorere sætninger.
   wwcConfigGUIIgnoreErrorsButton: Ændre fejl for at ignorere
   wwcConfigConversationIgnoreErrorsInput: 'Den aktuelle liste over sætninger i oversætterfejl
-    at ignorere er: %i. Skriv argumenter adskilt af et komma (key=value, key2=value2),
+    at ignorere er: {0}. Skriv argumenter adskilt af et komma (key=value, key2=value2),
     eller skriv clear for at slette de nuværende args, eller skriv 0 for at gå tilbage.
     Derudover vil indtastning af „*“ medføre, at pluginet ikke kontrollerer nogen
     oversætterfejl.'
   wwcConfigConversationIgnoreErrorsCleared: Oversætter fejl for at ignorere sætninger
     ryddet med succes.
 
-  wwcsActiveTransPrevRate: 'Aktiv oversætter Tidligere tidsgrænse for takst: %i'
-  wwcsActiveTransSaved: 'Aktiv oversætter gemt på disk: %i'
-  wwcsActiveTransIncoming: 'Aktiv oversætter, der oversætter indgående chat: %i'
-  wwcsActiveTransOutLang: 'Udgangssprog for aktiv oversætter: %i'
-  wwcsActiveTransInLang: 'Aktiv Translator Input Language: %i'
-  wwcsActiveTransBook: 'Aktiv oversætter oversætter bog: %i'
-  wwcsActiveTransSign: 'Active Translator Translating Sign: %i'
-  wwcsActiveTransUUID: 'Aktiv oversætter UUID: %i'
-  wwcsActiveTransRateLimit: 'Aktiv Translator Rate Grænse: %i'
-  wwcsActiveTransColorWarning: 'Aktiv oversætter modtaget farve Advarsel: %i'
-  wwcsActiveTransOutgoing: 'Aktiv oversætter oversætter udgående chat: %i'
-  wwcsActiveTransItem: 'Active Translator Translating Item: %i'
-  wwcsActiveTransEntity: 'Active Translator Translating Entity: %i'
+  wwcsActiveTransPrevRate: 'Aktiv oversætter Tidligere tidsgrænse for takst: {0}'
+  wwcsActiveTransSaved: 'Aktiv oversætter gemt på disk: {0}'
+  wwcsActiveTransIncoming: 'Aktiv oversætter, der oversætter indgående chat: {0}'
+  wwcsActiveTransOutLang: 'Udgangssprog for aktiv oversætter: {0}'
+  wwcsActiveTransInLang: 'Aktiv Translator Input Language: {0}'
+  wwcsActiveTransBook: 'Aktiv oversætter oversætter bog: {0}'
+  wwcsActiveTransSign: 'Active Translator Translating Sign: {0}'
+  wwcsActiveTransUUID: 'Aktiv oversætter UUID: {0}'
+  wwcsActiveTransRateLimit: 'Aktiv Translator Rate Grænse: {0}'
+  wwcsActiveTransColorWarning: 'Aktiv oversætter modtaget farve Advarsel: {0}'
+  wwcsActiveTransOutgoing: 'Aktiv oversætter oversætter udgående chat: {0}'
+  wwcsActiveTransItem: 'Active Translator Translating Item: {0}'
+  wwcsActiveTransEntity: 'Active Translator Translating Entity: {0}'
 

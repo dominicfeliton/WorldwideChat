@@ -1,73 +1,73 @@
 Messages:
-  wwcgAutoTranslateStart: Sasa kutafsiri mazungumzo ya kimataifa kwa %o.
+  wwcgAutoTranslateStart: Sasa kutafsiri mazungumzo ya kimataifa kwa {0}.
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: Soga ya kimataifa inatafsiriwa
-    kwa %o.
+    kwa {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Badilisha ufunguo wa Amazon
   wwcrFail: Imeshindwa kurejesha WorldwideChat.
   wwcConfigGUIUpdateCheckerButton: Badilisha Angalia kwa Sasisho Kuchelewa
   wwcUpdaterFailedGeneric: Haiwezi kuangalia sasisho za WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Ucheleweshaji wa sasa kwenye checker ya
-    sasisho ni %i seconds. Andika kitu chochote zaidi ya 10 ili kuweka thamani mpya,
+    sasisho ni {0} seconds. Andika kitu chochote zaidi ya 10 ili kuweka thamani mpya,
     au kitu chochote chini ya 10 kurudi nyuma.
   wwctGUIMainMenuGlobal: Orodha ya Tafsiri ya Kimataifa
   wwcConfigConversationPluginUpdateChatSuccess: Plugin update chat ukumbusho ilibadilishwa
     kwa mafanikio
-  wwctbOnTarget: Tafsiri ya kitabu imewezeshwa kwa %i.
-  wwcsNotATranslator: Hakuna rekodi bado zinazopatikana kwa %i.
+  wwctbOnTarget: Tafsiri ya kitabu imewezeshwa kwa {0}.
+  wwcsNotATranslator: Hakuna rekodi bado zinazopatikana kwa {0}.
   wwcConfigGUIbStatsButton: Badilisha bStats
   wwctGUINewTranslationSource: Chagua lugha ya Chanzo
-  wwcConfigConnectionFailed: Imeshindwa kuungana na %o Hakikisha sifa zako na firewall
+  wwcConfigConnectionFailed: Imeshindwa kuungana na {0} Hakikisha sifa zako na firewall
     vimeundwa kwa usahihi!
   wwcConfigEnabledbStats: bStats imewezeshwa.
-  wwctGUIMainMenuPlayer: Menyu ya Tafsiri ya %i
+  wwctGUIMainMenuPlayer: Menyu ya Tafsiri ya {0}
   wwctGUIBookButton: Badilisha Tafsiri ya Kitabu
-  wwcLangDetected: Imegunduliwa lugha %o.
+  wwcLangDetected: Imegunduliwa lugha {0}.
   wwcBookTranslateStart: Kutafsiri kitabu cha lengo...
   wwcConfigDisabledbStats: bStats walemavu.
   wwctsOffSender: Tafsiri ya ishara walemavu.
   wwcUpdaterParserFailed: Imeshindwa kupitisha data ya sasisho kutoka Github.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: Funguo la siri la sasa ni %i.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Funguo la siri la sasa ni {0}.
     tafadhali ingiza ufunguo wa siri kwa Amazon, au funga 0 kurudi nyuma.
   wwctbOffSender: Kitabu tafsiri walemavu.
   wwcConfigGUIAmazonTranslateButton: Amazon Tafsiri
   wwcConfigConversationLangSuccess: Lugha ya Plugin iliyopita kwa mafanikio
-  wwcsSuccessfulTranslations: 'Tafsiri zilizofanikiwa: %i'
+  wwcsSuccessfulTranslations: 'Tafsiri zilizofanikiwa: {0}'
   wwcConfigConversationTranslationCacheInput: Kikomo cha sasa cha tafsiri ya cache
-    ni %i misemo. Weka kitu chochote zaidi kuliko 0 kuweka thamani mpya, au aina ya
+    ni {0} misemo. Weka kitu chochote zaidi kuliko 0 kuweka thamani mpya, au aina ya
     0 ili kuzima cache ya tafsiri. Andika kitu chochote chini ya 0 kurudi nyuma.
-  wwctbOffTarget: Tafsiri ya kitabu imezimwa kwa %i.
+  wwctbOffTarget: Tafsiri ya kitabu imezimwa kwa {0}.
   wwcConfigGUIGeneralSettings: Usanidi Mkuu
   wwcInvalidLang: Lugha batili katika config.yml yako. Defaulting kwa sw...
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon mkoa kuweka mafanikio.
   wwcConfigRateLimitEnabled: Kikomo cha kiwango cha kimataifa kimewezeshwa na kuweka
-    kwa %i sekunde.
+    kwa {0} sekunde.
   wwcBadPerms: Huna ruhusa zinazohitajika kutekeleza amri hii!
   wwcConfigGUILangButton: Badilisha lugha ya Plugin
   wwctGUISignButton: Badilisha Tafsiri ya Ishara
   wwcUpdaterOutOfDate: WorldwideChat ni nje ya tarehe. Tafadhali sasisha toleo jipya,
-    %i.
+    {0}.
   wwcConfigGUINextPageButton: Ukurasa unaofuata
   wwcConfigInvalidTranslatorSettings: Mipangilio batili translator! Tafadhali kuwawezesha
     translator moja tu katika config.yml yako.
   wwcConfigGUIQuitButton: Toka na Hifadhi Mabadiliko
-  wwctPlayerNotFound: Mchezaji %sijaipata.
+  wwctPlayerNotFound: Mchezaji {0}.
   wwcConfigGUIAmazonTranslateRegionButton: Badilisha Mkoa wa Amazon
-  wwcConfigConversationLangInput: 'Lugha ya sasa ya Plugin ni %i. Tafadhali ingiza
-    msimbo halali wa lugha, au weka 0 ili kughairi. Misimbo halali ya lugha: %o'
+  wwcConfigConversationLangInput: 'Lugha ya sasa ya Plugin ni {0}. Tafadhali ingiza
+    msimbo halali wa lugha, au weka 0 ili kughairi. Misimbo halali ya lugha: {0}'
   wwcConfigConversationLangInvalid: Msimbo wa lugha batili!
   wwcConfigGUIWatsonAPIKeyButton: Badilisha ufunguo wa API wa Watson
-  wwcEnabled: Imewezeshwa toleo la WorldwideChat %i.
-  wwcgLangToLangStart: Sasa kutafsiri mazungumzo ya kimataifa kutoka %i hadi %o.
+  wwcEnabled: Imewezeshwa toleo la WorldwideChat {0}.
+  wwcgLangToLangStart: Sasa kutafsiri mazungumzo ya kimataifa kutoka {0} hadi {1}.
   wwctbOnSender: Tafsiri ya kitabu imewezeshwa. Bonyeza-click wakati ameshika kitabu
     cha kutafsiri!
   wwcListenersInitialized: Wasikilizaji walioanzishwa.
   wwcConfigGUIPluginUpdateChatButton: Tuma Mawaidha ya Ongea kwa Mipangilio
   wwcConfigConversationSendTranslationChatSuccess: Active translator chat ukumbusho
     ilibadilisha kwa mafanikio.
-  wwctsOffTarget: Tafsiri ya ishara imezimwa kwa %i.
+  wwctsOffTarget: Tafsiri ya ishara imezimwa kwa {0}.
   wwcUpdaterConnectionFailed: Haiwezi kuangalia sasisho za hivi karibuni kwenye Github.
   watsonNotFoundExceptionNotification: Haiwezi kutafsiri pembejeo yako yoyote zaidi.
-  wwcConfigConversationWatsonAPIKeyInput: Kitufe cha sasa cha API ni %i. tafadhali
+  wwcConfigConversationWatsonAPIKeyInput: Kitufe cha sasa cha API ni {0}. tafadhali
     ingiza ufunguo wa API kwa Watson, au funga 0 kurudi nyuma.
   wwctGUIStopButton: Acha kutafsiri
   wwcgTranslationStopped: Tafsiri ya mazungumzo ya kimataifa imesimamishwa.
@@ -77,9 +77,9 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Badilisha Google Tafsiri ufunguo wa API
   wwcSignDeletedOrTooLong: 'Ishara ya Target ilikuwa ama ilifutwa au tafsiri ilikuwa
     ndefu sana. Tafsiri:'
-  wwctsOnTarget: Tafsiri ya ishara imewezeshwa kwa %i.
+  wwctsOnTarget: Tafsiri ya ishara imewezeshwa kwa {0}.
   wwcConfigCacheDisabled: Cache ya Translator imezimwa
-  wwcConfigConversationWatsonURLInput: URL ya sasa ni %i. Tafadhali ingiza URL ya
+  wwcConfigConversationWatsonURLInput: URL ya sasa ni {0}. Tafadhali ingiza URL ya
     huduma kwa Watson, au funga 0 kurudi nyuma.
   wwcBookDone: Kitabu kutafsiriwa kwa mafanikio.
   wwctsOnSender: Tafsiri ya ishara imewezeshwa. Bonyeza-click juu ya ishara ya kutafsiri!
@@ -87,26 +87,26 @@ Messages:
   wwctGUITranslationButton: Anza Kutafsiri
   wwctGUIAutoDetectButton: Kuchunguza kiotomatiki lugha
   wwcUpdaterUpToDate: WorldwideChat ni hadi sasa!
-  wwcConfigConversationAmazonTranslateRegionInput: Eneo la sasa ni %i. Tafadhali ingiza
+  wwcConfigConversationAmazonTranslateRegionInput: Eneo la sasa ni {0}. Tafadhali ingiza
     eneo la Amazon, au funga 0 kurudi nyuma.
   wwcNoConsole: Amri hii inaweza tu kukimbia na mchezaji.
   wwcInitializationFail: Imeshindwa kuanzisha WorldwideChat.
   wwcrSuccess: Mafanikio ya kupakia WorldwideChat.
-  wwcPlayerNotFound: Mchezaji %sijaipata.
+  wwcPlayerNotFound: Mchezaji {0}.
   wwcUpdaterOutOfDateChat: WorldwideChat ni nje ya tarehe. Tafadhali sasisha toleo
     la karibuni.
   wwcConfigConversationRateLimitSuccess: Kiwango cha kikomo kuweka mafanikio.
   wwcConfigConversationWatsonURLSuccess: Watson URL imewekwa kwa mafanikio.
-  wwctbPlayerNotFound: Mchezaji %i haipatikani, au si translator hai.
+  wwctbPlayerNotFound: Mchezaji {0} haipatikani, au si translator hai.
   wwcConfigConversationTranslationCacheSuccess: Tafsiri cache kikomo kuweka mafanikio.
   wwctInvalidArgs: hoja batili zinazotolewa!
   wwcConfigGUIPrefixButton: Badilisha Kiambatisho cha Plug
   wwctSameLangError: Huwezi kutafsiri kwa lugha moja!
   wwctGUINewTranslationTarget: Chagua Lugha ya Target
-  wwcConfigConnectionSuccess: Imeunganishwa kwa ufanisi na %o!
+  wwcConfigConnectionSuccess: Imeunganishwa kwa ufanisi na {0}!
   wwcConfigGUIGoogleTranslateButton: Google Tafsiri
-  wwcsIsActiveTranslator: 'Ni Mtafsiri wa Active: %i'
-  wwcConfigConversationPrefixInput: Kiambishi awali cha sasa ni %i. Tafadhali andika
+  wwcsIsActiveTranslator: 'Ni Mtafsiri wa Active: {0}'
+  wwcConfigConversationPrefixInput: Kiambishi awali cha sasa ni {0}. Tafadhali andika
     mpya, au andika 0 ili urejee.
   wwcConfigGUIPreviousPageButton: Ukurasa uliopita
   wwcConfigGUITranslatorCacheButton: Badilisha Kikomo cha Cache cha
@@ -123,63 +123,63 @@ Messages:
   wwcUnsupportedVersion: 'Unaendesha toleo lisiloungwa mkono la Bukkit, Spigot, au
     Karatasi. Matoleo yaliyosaidiwa:'
   wwcGlobalOnJoinTranslationNotificationSourceLang: Soga ya kimataifa inatafsiriwa
-    kutoka %i hadi %o.
+    kutoka {0} hadi {1}.
   wwcConfigGUITranslatorSettings: Usanidi wa Mtafsiri
-  wwcConfigConversationGoogleTranslateAPIKeyInput: Funguo la sasa la API ni %i. Tafadhali
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Funguo la sasa la API ni {0}. Tafadhali
     ingiza ufunguo wa API kwa Google Tafsiri, au funga 0 ili urejee.
   wwcConfigConversationRateLimitInput: Kikomo cha sasa cha kiwango cha kimataifa kwa
-    tafsiri ni %i sekunde. Weka kitu chochote zaidi kuliko 0 kuweka thamani mpya,
+    tafsiri ni {0} sekunde. Weka kitu chochote zaidi kuliko 0 kuweka thamani mpya,
     au funga 0 ili kuzima kikomo. Andika kitu chochote chini ya 0 kurudi nyuma.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Tafsiri API muhimu kuweka
     mafanikio.
   wwcConfigGUIAmazonTranslateSecretKeyButton: mabadiliko ya siri Amazon
   wwcVersion: WorldwideChat, toleo
-  wwcsAttemptedTranslations: 'Tafsiri zilizojaribiwa: %i'
+  wwcsAttemptedTranslations: 'Tafsiri zilizojaribiwa: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon siri muhimu kuweka
     mafanikio.
   wwcConfigConversationWatsonAPIKeySuccess: Watson API muhimu kuweka mafanikio.
-  wwcRateLimit: Tafsiri yako ni kiwango mdogo. Tafadhali subiri sekunde nyingine %i.
-  wwcConfigCacheEnabled: Cache ya Translator imewezeshwa na kuweka kikomo cha %i.
+  wwcRateLimit: Tafsiri yako ni kiwango mdogo. Tafadhali subiri sekunde nyingine {0}.
+  wwcConfigCacheEnabled: Cache ya Translator imewezeshwa na kuweka kikomo cha {0}.
   wwctGUIExistingTranslationButton: Andika tena Tafsiri Kikao
   wwcUserDataReloaded: Imebeba data zote za mtumiaji zilizohifadhiwa.
   wwcConfigGUISendTranslationChatButton: Tuma Makumbusho ya Ongea kwa Mtafsiri wa
     Kazi
-  wwcsLastTranslationTime: 'Muda wa Tafsiri wa Mwisho (Ufanikiwa): %i'
+  wwcsLastTranslationTime: 'Muda wa Tafsiri wa Mwisho (Ufanikiwa): {0}'
   wwctbNotATranslator: Wewe si translator kazi! Hakikisha umeweka hii na/wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Funguo la sasa la ufikiaji ni
-    %i. Tafadhali ingiza ufunguo wa kufikia kwa Amazon, au funga 0 ili urejee.
+    {0}. Tafadhali ingiza ufunguo wa kufikia kwa Amazon, au funga 0 ili urejee.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon upatikanaji muhimu
     kuweka mafanikio.
   wwcConfigBadUpdateDelay: Kuchelewa kwa updater batili kuweka katika config.yml.
     Defaulting kwa sekunde 86400...
   wwctrlRateLimitOffSender: Ilizima kikomo chako cha kiwango.
-  wwctrlRateLimitAlreadyOffTarget: Kikomo cha kiwango cha %i tayari kimezimwa.
-  wwctrlPlayerNotFound: Mchezaji %i haipatikani, au si translator hai.
-  wwctrlRateLimitSetSender: Weka kikomo cha kiwango chako kwa %i sekunde.
-  wwctrlRateLimitOffTarget: Ilizima kikomo cha kiwango cha %i.
-  wwctrlRateLimitSetTarget: Weka kikomo cha kiwango cha %i hadi %o sekunde.
+  wwctrlRateLimitAlreadyOffTarget: Kikomo cha kiwango cha {0} tayari kimezimwa.
+  wwctrlPlayerNotFound: Mchezaji {0} haipatikani, au si translator hai.
+  wwctrlRateLimitSetSender: Weka kikomo cha kiwango chako kwa {0} sekunde.
+  wwctrlRateLimitOffTarget: Ilizima kikomo cha kiwango cha {0}.
+  wwctrlRateLimitSetTarget: Weka kikomo cha kiwango cha {0} hadi {1} sekunde.
   wwctrlNotATranslator: Wewe si translator kazi! Hakikisha umeweka hii na/wwct.
   wwctrlRateLimitAlreadyOffSender: Kikomo chako cha kiwango tayari kimezimwa.
   wwctGUIRateButton: Weka Kiwango cha Limit
-  wwctGUIConversationRateLimit: Kikomo cha kiwango kwa kila tafsiri ni sasa %i sekunde.
+  wwctGUIConversationRateLimit: Kikomo cha kiwango kwa kila tafsiri ni sasa {0} sekunde.
     Weka kitu chochote zaidi kuliko 0 kuweka thamani mpya, au funga 0 ili kuzima kikomo.
     Andika kitu chochote chini ya 0 kurudi nyuma.
   wwctGUITargetPlayerNull: Mchezaji wa lengo ameunganishwa kutoka kwenye seva.
   wwcConfigConversationSyncUserDataDelayInput: Ucheleweshaji wa sasa kwa usawazishaji
-    wa data ya mtumiaji ni %i sekunde. Andika kitu chochote zaidi ya 10 ili kuweka
+    wa data ya mtumiaji ni {0} sekunde. Andika kitu chochote zaidi ya 10 ili kuweka
     thamani mpya, au kitu chochote chini ya 10 kurudi nyuma.
   wwcConfigGUISyncUserDataButton: Badilisha Kuchelewa kwa Data ya Mtumiaji
   wwcConfigSyncDelayEnabled: Kuchelewesha kwa usawazishaji wa data ya mtumiaji kuweka
-    kwa %i sekunde.
+    kwa {0} sekunde.
   wwcConfigConversationSyncUserDataDelaySuccess: Usawazishaji wa data ya mtumiaji
     umewekwa kwa ufanisi
   wwcConfigSyncDelayInvalid: Ucheleweshaji wa data ya mtumiaji usio sahihi uliowekwa
     katika usanidi. Defaulting kwa sekunde 7200...
   wwcConfigCacheInvalid: Translator cache ukubwa batili. Defaulting kwa 10...
   wwcInventoryErrorPlayer: Kosa wanaona na GUI yako. Logi imetumwa kwenye console.
-  wwcInventoryError: Hitilafu imegunduliwa na GUI ya mtumiaji %i. Tafadhali ripoti
+  wwcInventoryError: Hitilafu imegunduliwa na GUI ya mtumiaji {0}. Tafadhali ripoti
     suala hili kwa
-  wwctiOffTarget: Item tafsiri walemavu kwa %i.
+  wwctiOffTarget: Item tafsiri walemavu kwa {0}.
   wwctiOffSender: Bidhaa tafsiri walemavu.
   wwcItemTranslateTitleStock: Haiwezi kutafsiri majina ya bidhaa default.
   wwctGUIItemButton: Badilisha tafsiri ya kipengee
@@ -191,10 +191,10 @@ Messages:
     wako kuu ili kutafsiri!
   wwcItemTranslateLoreStart: Kutafsiri lore ya bidhaa lengo...
   wwcItemTranslateLoreDone: Tafsiri bidhaa lore mafanikio.
-  wwctiOnTarget: Tafsiri ya kipengee imewezeshwa kwa %i.
+  wwctiOnTarget: Tafsiri ya kipengee imewezeshwa kwa {0}.
   wwcInvalidTranslator: Mipangilio ya msanii batili. Tafadhali tengeneza hii katika
     config.yml yako au na/wwcc kutumia Plugin hii.
-  wwcConfigGUIEachTranslatorSettings: '%i Usanidi'
+  wwcConfigGUIEachTranslatorSettings: '{0} Usanidi'
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat haina kukubali matumizi ya/reloaded. Tafadhali
     endelea kwa tahadhari.
@@ -202,7 +202,7 @@ Messages:
     au shida ya matatizo, unapaswa kuzima hii.
   wwcTranslatorErrorThresholdReached: Kizingiti cha hitilafu Plugin hii sasa upya,
     na afya watafsiri wote.
-  wwcConfigErrorLimitEnabled: Kikomo cha hitilafu ya Mtafsiri imewekwa kwa %i.
+  wwcConfigErrorLimitEnabled: Kikomo cha hitilafu ya Mtafsiri imewekwa kwa {0}.
   wwcTranslatorError: Tatizo limetokea wakati wa kujaribu tafsiri yako. Tafadhali
     jaribu tena.
   wwcConfigErrorLimitInvalid: batili translator makosa kikomo kuweka katika config.yml.
@@ -210,10 +210,10 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: Tafadhali angalia errorLog.txt katika
     folda ya Plugin ya WorldwideChat kwa maelezo zaidi.
   wwctInvalidInputLangCode: 'Batili pembejeo lugha code zinazotolewa! Nambari za lang
-    halali: %o'
-  wwcsTitle: Rekodi ya %i
+    halali: {0}'
+  wwcsTitle: Rekodi ya {0}
   wwctInvalidOutputLangCode: 'Batili pato lugha code zinazotolewa! Nambari za lang
-    halali: %o'
+    halali: {0}'
   wwctGUISourceTranslationSelected: Umechagua lugha hii.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Futa Uhangishaji
   wwcConfigConversationOverrideTextChange: Tafadhali andika ujumbe mpya kwa ajili
@@ -243,47 +243,47 @@ Messages:
   wwcConfigMessageCharLimitInvalid: Kikomo batili kwa ujumbe kuweka katika config.yml.
     Defaulting kwa 255 chars...
   wwcConfigConversationCharacterLimitSuccess: Kikomo cha tabia kinawekwa kwa ufanisi.
-  wwcteOnTarget: Tafsiri ya chombo imewezeshwa kwa %i.
-  wwcEntityTranslateDone: 'Jina la Chombo cha Tafsiri: %i'
+  wwcteOnTarget: Tafsiri ya chombo imewezeshwa kwa {0}.
+  wwcEntityTranslateDone: 'Jina la Chombo cha Tafsiri: {0}'
   wwcEntityTranslateNoName: Chombo haina jina la desturi.
   wwcConfigConversationErrorLimitInput: Hitilafu ya sasa kikomo kwa kila translator
-    ni %i. aina kitu chochote kubwa kuliko 0 kuweka thamani mpya, au aina kitu chochote
+    ni {0}. aina kitu chochote kubwa kuliko 0 kuweka thamani mpya, au aina kitu chochote
     chini ya au sawa na 0 kurudi nyuma.
   wwcConfigGUIGlobalRateLimitButton: Badilisha kikomo cha Kiwango cha Global
   wwcteOnSender: Tafsiri ya chombo imewezeshwa. Bonyeza-click kwenye chombo cha kutafsiri
     jina lake!
   wwcConfigGUIResponseLimitButton: Badilisha Mwitikio wa Mtafsiri
   wwcConfigMessageCharLimitEnabled: Kikomo cha tabia kwa kila ujumbe umewekwa kwa
-    %i herufi.
-  wwcteOffTarget: Tafsiri ya chombo imezimwa kwa %i.
+    {0} herufi.
+  wwcteOffTarget: Tafsiri ya chombo imezimwa kwa {0}.
   wwcCharLimit: Ujumbe wako ni mrefu sana! Tafadhali hakikisha ujumbe wako uko chini
-    ya herufi ya %i kwa urefu.
+    ya herufi ya {0} kwa urefu.
   wwcConfigConversationCharacterLimitInput: Kikomo cha tabia ya sasa kwa kila ujumbe
-    ni %i herufi. Andika kitu chochote zaidi kuliko 0 kuweka thamani mpya, au aina
+    ni {0} herufi. Andika kitu chochote zaidi kuliko 0 kuweka thamani mpya, au aina
     kitu chochote chini ya au sawa na 0 kurudi nyuma.
   wwcteOffSender: Chombo tafsiri walemavu.
   wwctGUIEntityButton: Badilisha Tafsiri ya Chombo
   wwctrlRateLimitBadInt: Kiwango chako cha kikomo si integer halali.
-  wwcTranslatorErrorConsole: Tatizo lilitokea wakati mtumiaji %i alikuwa akijaribu
+  wwcTranslatorErrorConsole: Tatizo lilitokea wakati mtumiaji {0} alikuwa akijaribu
     tafsiri yao. Tafadhali angalia errorLog.txt kwa maelezo zaidi.
   wwctGUIChatButton: Badilisha Tafsiri ya Soga
   wwcrBegin: Kurejesha upya WorldwideChat...
-  wwctTranslationStoppedOtherPlayer: Kikao cha tafsiri kwa %i kimesimamishwa.
+  wwctTranslationStoppedOtherPlayer: Kikao cha tafsiri kwa {0} kimesimamishwa.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Mazungumzo ya kimataifa
-    yanatafsiriwa, lakini una kikao cha kutafsiri cha kazi kutoka %i hadi %o.
+    yanatafsiriwa, lakini una kikao cha kutafsiri cha kazi kutoka {0} hadi {1}.
   wwctCannotTranslateConsole: Huwezi kuanza kikao cha tafsiri kwa console!
-  wwctLangToLangStart: Kuanzia kikao kipya cha tafsiri kutoka %i hadi %o.
+  wwctLangToLangStart: Kuanzia kikao kipya cha tafsiri kutoka {0} hadi {1}.
   wwcOnJoinTranslationNotificationSourceLang: Una kikao cha tafsiri cha kazi kutoka
-    %i hadi %o.
-  wwctAutoTranslateStartOtherPlayer: Kuanzia kikao kipya cha tafsiri kwa %i kwa %o.
+    {0} hadi {1}.
+  wwctAutoTranslateStartOtherPlayer: Kuanzia kikao kipya cha tafsiri kwa {0} kwa {1}.
   wwctTranslationStopped: Kikao chako cha tafsiri kimesimamishwa.
-  wwctLangToLangStartOtherPlayer: Kuanzia kikao kipya cha tafsiri kwa %o kutoka %i
-    hadi %e.
-  wwctAutoTranslateStart: Kuanzia kikao kipya cha tafsiri kwa %o.
+  wwctLangToLangStartOtherPlayer: Kuanzia kikao kipya cha tafsiri kwa {0} kutoka {1}
+    hadi {0}.
+  wwctAutoTranslateStart: Kuanzia kikao kipya cha tafsiri kwa {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Una kikao cha tafsiri cha kazi kwa
-    %o.
+    {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Mazungumzo ya kimataifa
-    yanatafsiriwa, lakini una kikao cha kutafsiri cha kazi kwa %o.
+    yanatafsiriwa, lakini una kikao cha kutafsiri cha kazi kwa {0}.
   wwcConfigGUIChangesNotSaved: Mabadiliko yako hayatachukua athari mpaka bonyeza kizuizi
     nyekundu katika/wwcc.
   wwctciOffSender: Tafsiri zinazoingia chat walemavu
@@ -292,25 +292,25 @@ Messages:
   wwctcoOnSender: Kutoka chat tafsiri kuwezeshwa. Kitu chochote unachosema kitatafsiriwa!
   wwctciOnSender: Tafsiri zinazoingia chat kuwezeshwa Kitu chochote kupokea kitatafsiriwa!
   wwctGUIChatMenu: Badilisha Menyu ya tafsiri ya Ongea
-  wwctcoOnTarget: Tafsiri ya mazungumzo inayotoka imewezeshwa kwa %i.
-  wwctcoOffTarget: Kutoka chat tafsiri walemavu kwa %i.
+  wwctcoOnTarget: Tafsiri ya mazungumzo inayotoka imewezeshwa kwa {0}.
+  wwctcoOffTarget: Kutoka chat tafsiri walemavu kwa {0}.
   wwctGUIChatOutgoingButton: Badilisha tafsiri ya Ongea Zinazoondoka
-  wwctciOnTarget: Tafsiri ya mazungumzo inayoingia imewezeshwa kwa %i.
-  wwctciOffTarget: Tafsiri ya mazungumzo inayoingia imezimwa kwa %i.
+  wwctciOnTarget: Tafsiri ya mazungumzo inayoingia imewezeshwa kwa {0}.
+  wwctciOffTarget: Tafsiri ya mazungumzo inayoingia imezimwa kwa {0}.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: Original zinazoingia chat
     masharti ya tafsiri kama hover maandishi kugeuzwa kwa mafanikio.
   wwcConfigGUISendIncomingHoverTextChatButton: Ongeza Ujumbe wa awali unaoingia kama
     Hover Nakala
   wwctGUIExistingChatOutgoingEnabled: 'Tafsiri ya Soga inayotoka Imewezeshwa: %'
-  wwctGUIExistingTranslationInput: 'Lugha ya Ingiza: %i'
+  wwctGUIExistingTranslationInput: 'Lugha ya Ingiza: {0}'
   wwctGUIExistingChatIncomingEnabled: 'Tafsiri ya Ongea inayoingia Imewezeshwa: %'
-  wwctGUIExistingTranslationOutput: 'Lugha ya Pato: %i'
+  wwctGUIExistingTranslationOutput: 'Lugha ya Pato: {0}'
   wwcTranslatorAttempt: Kujaribu kuungana na translator katika config.yml... (jaribio
-    %i/ %o)
-  wwcTimeoutExceptionConsole: mchezaji %Nilikuwa na ombi yao ya hivi karibuni umeisha.
+    {0}/ {1})
+  wwcTimeoutExceptionConsole: mchezaji {0} na ombi yao ya hivi karibuni umeisha.
     Hitilafu hii sio mbaya, lakini WorldwideChat inapaswa kupakiwa tena ikiwa inaendelea
     kutokea.
-  wwcGUIPageNumber: 'Idadi ya Ukurasa: %i'
+  wwcGUIPageNumber: 'Idadi ya Ukurasa: {0}'
   wwcConfigYAMLFallback: Kuanguka nyuma YAML...
   wwcConfigGUIToggleSQLButton: Badilisha SQL
   wwcConfigConversationToggleSQLSuccess: SQL ilibadilisha kwa mafanikio. Reload kwa
@@ -331,37 +331,37 @@ Messages:
   wwcConfigGUISQLPortButton: Badilisha bandari ya SQL
   wwcConfigGUISQLOptionalArgsButton: Badilisha Hoja za hiari za SQL
   wwcConfigConversationToggleSQLSSLSuccess: SSL kwa SQL kugeuzwa kwa mafanikio.
-  wwcConfigConversationSQLPortInput: Bandari ya sasa ni %i. aina kitu chochote mbali
+  wwcConfigConversationSQLPortInput: Bandari ya sasa ni {0}. aina kitu chochote mbali
     na 0 kuweka bandari mpya, au aina 0 kurudi nyuma.
   wwcConfigGUISQLPasswordButton: Badilisha nenosiri la SQL
   wwcConfigConversationSQLHostnameSuccess: Imebadilishwa kwa ufanisi jina la mwenyeji
     wa SQL.
-  wwcConfigConversationSQLHostnameInput: Jina la mwenyeji wa sasa ni %i Weka kitu
+  wwcConfigConversationSQLHostnameInput: Jina la mwenyeji wa sasa ni {0} Weka kitu
     chochote isipokuwa 0 ili kuweka jina jipya la mwenyeji, au aina ya 0 kurudi nyuma.
   wwcConfigGUISQLHostnameButton: Badilisha Jina la Mwenyeji wa SQL
   wwcConfigConversationSQLOptionalArgsSuccess: Mafanikio iliyopita hoja hiari SQL.
   wwcConfigConversationSQLPasswordSuccess: Imebadilisha nenosiri la SQL kwa ufanisi.
-  wwcConfigConversationSQLPasswordInput: Nenosiri la sasa ni %i Andika kitu chochote
+  wwcConfigConversationSQLPasswordInput: Nenosiri la sasa ni {0} Andika kitu chochote
     isipokuwa 0 ili kuweka nenosiri jipya, au funga 0 kurudi nyuma.
   wwcConfigGUIToggleSQLSSLButton: Badilisha SQL SSL
   wwcConfigConversationSQLUsernameSuccess: Ilibadilisha kwa ufanisi jina la mtumiaji
     wa SQL.
-  wwcConfigConversationSQLUsernameInput: Jina la mtumiaji sasa ni %i. aina kitu chochote
+  wwcConfigConversationSQLUsernameInput: Jina la mtumiaji sasa ni {0}. aina kitu chochote
     mbali na 0 kuweka jina jipya la mtumiaji, au aina 0 kurudi nyuma.
   wwcConfigConversationSQLPortSuccess: Imebadilishwa kwa ufanisi bandari ya SQL.
   wwcConfigGUISQLUsernameButton: Badilisha Jina la mtumiaji wa SQL
   wwcConfigConversationSQLOptionalArgsCleared: Hoja za hiari zimeondolewa kwa mafanikio.
-  wwcConfigConversationSQLOptionalArgsInput: 'Hoja za sasa za hiari za SQL ni: %i.
+  wwcConfigConversationSQLOptionalArgsInput: 'Hoja za sasa za hiari za SQL ni: {0}.
     hoja za aina zilizotengwa na comma (key=thamani, key2= value2), au aina ya wazi
     kuifuta args sasa, au aina 0 kurudi nyuma.'
-  wwcConfigConversationSQLDatabaseNameInput: Jina la sasa la database ni %i Andika
+  wwcConfigConversationSQLDatabaseNameInput: Jina la sasa la database ni {0} Andika
     kitu chochote isipokuwa 0 ili kuweka jina jipya la database, au aina ya 0 kurudi
     nyuma.
   wwcConfigGUISQLDatabaseNameButton: Badilisha database ya SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Imebadilishwa kwa ufanisi jina la database
     ya SQL.
   wwcConfigConversationFatalAsyncAbort: Muda wa sasa wa kuazima kazi zote za async
-    ni %i sekunde. Andika kitu chochote juu ya 7 ili kuweka umeisha mpya, au kitu
+    ni {0} sekunde. Andika kitu chochote juu ya 7 ili kuweka umeisha mpya, au kitu
     chochote chini yake ili kurudi nyuma.
   wwcConfigConversationFatalAsyncSuccess: Timeout kazi ya Async imewekwa kwa mafanikio.
   wwcConfigGUIFatalAsyncAbortButton: Badilisha Muda wa Kazi ya Async
@@ -371,7 +371,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Badilisha Libre Kutafsiri API muhimu
   libreHttp403: Kukosa Libre Tafsiri API Key, au wewe ni marufuku kutoka server!
   wwcConfigConversationLibreURLSuccess: URL ya Libre imewekwa kwa mafanikio.
-  wwcConfigConversationLibreTranslateApiKeyInput: Kitufe cha sasa cha API ni %i. Tafadhali
+  wwcConfigConversationLibreTranslateApiKeyInput: Kitufe cha sasa cha API ni {0}. Tafadhali
     ingiza ufunguo wa API kwa Libre, au funga 0 ili urejee.
   wwcConfigGUILibreTranslateButton: Libre Tafsiri
   libreHttp429: Hakuna kujiamini kutokana na kiwango cha kikomo kutoka server.
@@ -379,34 +379,34 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: Mafanikio toggled Libre Tafsiri.
     Reload kwa mabadiliko ya kuchukua athari.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API muhimu kuweka mafanikio.
-  wwcConfigConversationLibreURLInput: URL ya sasa ni %i. Tafadhali ingiza URL ya Libre,
+  wwcConfigConversationLibreURLInput: URL ya sasa ni {0}. Tafadhali ingiza URL ya Libre,
     au funga 0 ili urejee.
-  libreHttpUnknown: 'Hitilafu isiyojulikana ya http: %i'
+  libreHttpUnknown: 'Hitilafu isiyojulikana ya http: {0}'
   wwcConfigGUILibreTranslateURLButton: Badilisha Libre Kutafsiri URL
-  wwcConfigConnectionFail: Imeshindwa kuungana na %i.
+  wwcConfigConnectionFail: Imeshindwa kuungana na {0}.
   wwcConfigGUIMongoSettings: Usanidi wa MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Kubadilisha kwa ufanisi jina la database
     la MongoDB.
   wwcConfigGUIMongoHostnameButton: Badilisha jina la Mwenyeji wa MongoDB
-  wwcConfigConversationMongoPasswordInput: Nenosiri la sasa ni %i. Andika kitu chochote
+  wwcConfigConversationMongoPasswordInput: Nenosiri la sasa ni {0}. Andika kitu chochote
     isipokuwa 0 ili kuweka nenosiri jipya, au funga 0 ili urejee.
-  wwcConfigConversationMongoPortInput: Bandari ya sasa ni %i. Weka kitu chochote isipokuwa
+  wwcConfigConversationMongoPortInput: Bandari ya sasa ni {0}. Weka kitu chochote isipokuwa
     0 ili kuweka bandari mpya, au funga 0 ili urejee.
   wwcConfigConversationToggleMongoSuccess: MongoDB imeshuka kwa mafanikio. Reload
     kwa mabadiliko ya kuchukua athari.
-  wwcConfigConversationMongoHostnameInput: Jina la sasa la mwenyeji ni %i. Andika
+  wwcConfigConversationMongoHostnameInput: Jina la sasa la mwenyeji ni {0}. Andika
     kitu chochote isipokuwa 0 ili kuweka jina jipya la mwenyeji, au funga 0 ili urejee.
   wwcConfigConversationMongoHostnameSuccess: Ufanisi iliyopita jina la mwenyeji wa
     MongoDB.
   wwcConfigGUIMongoMenuButton: Badilisha mipangilio ya MongoDB
   wwcConfigGUIToggleMongoButton: Badilisha MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Jina la sasa la database ni %i. Andika
+  wwcConfigConversationMongoDatabaseNameInput: Jina la sasa la database ni {0}. Andika
     kitu chochote isipokuwa 0 ili kuweka jina jipya la database, au funga 0 ili urejee.
   wwcConfigConversationMongoOptionalArgsInput: 'Hoja za sasa za hiari za MongoDB ni:
-    %i. hoja za aina zilizotengwa na comma (ufungu=value, key2=value2), au aina ya
+    {0}. hoja za aina zilizotengwa na comma (ufungu=value, key2=value2), au aina ya
     wazi kuifuta args ya sasa, au aina ya 0 kurudi nyuma.'
   wwcConfigGUIMongoDatabaseNameButton: Badilisha Database ya Mongo
-  wwcConfigConversationMongoUsernameInput: Jina la mtumiaji wa sasa ni %i Andika kitu
+  wwcConfigConversationMongoUsernameInput: Jina la mtumiaji wa sasa ni {0} Andika kitu
     chochote isipokuwa 0 ili kuweka jina la mtumiaji mpya, au aina ya 0 ili urejee.
   wwcConfigGUIMongoOptionalArgsButton: Badilisha MongoDB Hoja za hiari
   wwcConfigConversationMongoUsernameSuccess: Imebadilisha mafanikio jina la mtumiaji
@@ -429,7 +429,7 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Badilisha DeepL Kutafsiri API muhimu
   wwcConfigGUIToggleDeepLTranslateButton: Badilisha DeepL Kutafsiri
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API muhimu kuweka mafanikio.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Kitufe cha sasa cha API ni %i Tafadhali
+  wwcConfigConversationDeepLTranslateApiKeyInput: Kitufe cha sasa cha API ni {0} Tafadhali
     ingiza ufunguo wa API kwa DeepL, au funga 0 ili urejee.
   wwcConfigErrorsToIgnoreSuccess: Mafanikio kusajiliwa translator makosa kupuuza.
   wwcConfigErrorsToIgnoreInvalid: makosa batili translator kupuuza kuweka katika config.yml.
@@ -439,24 +439,24 @@ Messages:
     kupuuza misemo.
   wwcConfigGUIIgnoreErrorsButton: Badilisha Hitilafu ili kupuuza
   wwcConfigConversationIgnoreErrorsInput: 'Orodha ya sasa ya misemo katika makosa
-    ya translator kupuuza ni: %i. aina hoja kutengwa na comma (key=value, key2=value2),
+    ya translator kupuuza ni: {0}. aina hoja kutengwa na comma (key=value, key2=value2),
     au aina wazi kuifuta args sasa, au aina 0 kurudi nyuma. Zaidi ya hayo, kuandika
     “*” itasababisha Plugin kutoangalia makosa yoyote ya translator.'
   wwcConfigConversationIgnoreErrorsCleared: Makosa ya Translator kupuuza misemo kufutwa
     kwa mafanikio.
 
   wwcsActiveTransPrevRate: 'Mtafsiri wa Kazi Muda wa Kikomo cha Kiwango cha awali:
-    %i'
-  wwcsActiveTransSaved: 'Mtafsiri wa Active Imehifadhiwa kwenye Disk: %i'
-  wwcsActiveTransIncoming: 'Translator Active Kutafsiri Chat Incoming: %i'
-  wwcsActiveTransOutLang: 'Lugha ya Pato la Translator Active: %i'
-  wwcsActiveTransInLang: 'Lugha ya Input Translator Active: %i'
-  wwcsActiveTransBook: 'Kitabu cha Tafsiri cha Tafsiri cha Mtafsiri: %i'
-  wwcsActiveTransSign: 'Ishara ya kutafsiri Tafsiri ya Mtafsiri: %i'
-  wwcsActiveTransUUID: 'Mtafsiri mwenye kazi UUID: %i'
-  wwcsActiveTransRateLimit: 'Kikomo cha Kiwango cha Mtafsiri wa Active: %i'
-  wwcsActiveTransColorWarning: 'Mtafsiri wa Active Alipokea Onyo la Rangi: %i'
-  wwcsActiveTransOutgoing: 'Active Translator Kutafsiri Chat zinazotoka: %i'
-  wwcsActiveTransItem: 'Mtafsiri mwenye kazi Tafsiri Kipengee: %i'
-  wwcsActiveTransEntity: 'Chombo cha Tafsiri cha Tafsiri cha Mtafsiri: %i'
+    {0}'
+  wwcsActiveTransSaved: 'Mtafsiri wa Active Imehifadhiwa kwenye Disk: {0}'
+  wwcsActiveTransIncoming: 'Translator Active Kutafsiri Chat Incoming: {0}'
+  wwcsActiveTransOutLang: 'Lugha ya Pato la Translator Active: {0}'
+  wwcsActiveTransInLang: 'Lugha ya Input Translator Active: {0}'
+  wwcsActiveTransBook: 'Kitabu cha Tafsiri cha Tafsiri cha Mtafsiri: {0}'
+  wwcsActiveTransSign: 'Ishara ya kutafsiri Tafsiri ya Mtafsiri: {0}'
+  wwcsActiveTransUUID: 'Mtafsiri mwenye kazi UUID: {0}'
+  wwcsActiveTransRateLimit: 'Kikomo cha Kiwango cha Mtafsiri wa Active: {0}'
+  wwcsActiveTransColorWarning: 'Mtafsiri wa Active Alipokea Onyo la Rangi: {0}'
+  wwcsActiveTransOutgoing: 'Active Translator Kutafsiri Chat zinazotoka: {0}'
+  wwcsActiveTransItem: 'Mtafsiri mwenye kazi Tafsiri Kipengee: {0}'
+  wwcsActiveTransEntity: 'Chombo cha Tafsiri cha Tafsiri cha Mtafsiri: {0}'
 

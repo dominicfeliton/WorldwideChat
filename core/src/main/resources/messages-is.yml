@@ -1,76 +1,76 @@
 Messages:
-  wwcgAutoTranslateStart: Nú þýða alþjóðlegt spjall til %o.
+  wwcgAutoTranslateStart: Nú þýða alþjóðlegt spjall til {0}.
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: Alþjóðlegt spjall er þýtt í
-    %o.
+    {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Breyta Amazon Aðgangur Key
   wwcrFail: Mistókst að endurhlaða WorldwideChat.
   wwcConfigGUIUpdateCheckerButton: Breyta Athuga fyrir seinkun uppfærslna
   wwcUpdaterFailedGeneric: Ekki er hægt að athuga WorldwideChat uppfærslur.
   wwcConfigConversationUpdateCheckerInput: Núverandi töf á uppfærslu afgreiðslumaður
-    er %i sekúndur. Sláðu inn neitt stærra en 10 til að setja nýtt gildi, eða eitthvað
+    er {0} sekúndur. Sláðu inn neitt stærra en 10 til að setja nýtt gildi, eða eitthvað
     minna en 10 til að fara aftur.
   wwctGUIMainMenuGlobal: Global Translation Valmynd
   wwcConfigConversationPluginUpdateChatSuccess: Plugin uppfærsla spjall áminning skipta
     með góðum árangri.
-  wwctbOnTarget: Bók þýðing virkt fyrir %i.
-  wwcsNotATranslator: Það eru engar færslur enn tiltækar fyrir %i.
+  wwctbOnTarget: Bók þýðing virkt fyrir {0}.
+  wwcsNotATranslator: Það eru engar færslur enn tiltækar fyrir {0}.
   wwcConfigGUIbStatsButton: Skipta bStats
   wwctGUINewTranslationSource: Veldu Heimild Tungumál
-  wwcConfigConnectionFailed: Mistókst að tengjast við %o. Gakktu úr skugga um að persónuskilríki
+  wwcConfigConnectionFailed: Mistókst að tengjast við {0}. Gakktu úr skugga um að persónuskilríki
     og eldveggur séu stilltir rétt!
   wwcConfigEnabledbStats: Virkt bStats.
-  wwctGUIMainMenuPlayer: Þýðing Valmynd af %i
+  wwctGUIMainMenuPlayer: Þýðing Valmynd af {0}
   wwctGUIBookButton: Skipta Book Þýðing
-  wwcLangDetected: Grein tungumál %o.
+  wwcLangDetected: Grein tungumál {0}.
   wwcBookTranslateStart: Þýða miða bók...
   wwcConfigDisabledbStats: Fatlaðir bStats.
   wwctsOffSender: Sign þýðing óvirk.
   wwcUpdaterParserFailed: Mistókst að flokka uppfærslugögn frá Github.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Núverandi leyndarmál lykill
-    er %i. Vinsamlegast sláðu inn leyndarmál lykill fyrir Amazon, eða tegund 0 til
+    er {0}. Vinsamlegast sláðu inn leyndarmál lykill fyrir Amazon, eða tegund 0 til
     að fara aftur.
   wwctbOffSender: Bókaþýðing óvirk.
   wwcConfigGUIAmazonTranslateButton: Amazon Þýða
   wwcConfigConversationLangSuccess: Plugin tungumál breytt með góðum árangri.
-  wwcsSuccessfulTranslations: 'Árangursrík þýðingar: %i'
+  wwcsSuccessfulTranslations: 'Árangursrík þýðingar: {0}'
   wwcConfigConversationTranslationCacheInput: Núverandi þýðing skyndiminni takmörk
-    er %i setningar. Sláðu inn neitt stærra en 0 til að setja nýtt gildi, eða tegund
+    er {0} setningar. Sláðu inn neitt stærra en 0 til að setja nýtt gildi, eða tegund
     0 til að slökkva á þýðingarskyndiminni. Sláðu eitthvað minna en 0 til að fara
     aftur.
-  wwctbOffTarget: Bók þýðing óvirk fyrir %i.
+  wwctbOffTarget: Bók þýðing óvirk fyrir {0}.
   wwcConfigGUIGeneralSettings: Almennar stillingar
   wwcInvalidLang: Ógilt tungumál í config.yml. Vanskil til en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon svæðinu sett með góðum
     árangri.
-  wwcConfigRateLimitEnabled: Global hlutfall takmörk virkt og stillt á %i sekúndur.
+  wwcConfigRateLimitEnabled: Global hlutfall takmörk virkt og stillt á {0} sekúndur.
   wwcBadPerms: Þú hefur ekki nauðsynlegar heimildir til að framkvæma þessa skipun!
   wwcConfigGUILangButton: Breyta Plugin Tungumál
   wwctGUISignButton: Skipta Sign Þýðing
   wwcUpdaterOutOfDate: WorldwideChat er úrelt. Vinsamlegast uppfærðu í nýjustu útgáfuna,
-    %i.
+    {0}.
   wwcConfigGUINextPageButton: Næsta síða
   wwcConfigInvalidTranslatorSettings: Ógildar stillingar þýðanda! Vinsamlegast virkjaðu
     aðeins einn þýðanda í config.yml þínum.
   wwcConfigGUIQuitButton: Hætta og vista breytingar
   wwctPlayerNotFound: Leikmaður %Ég fann ekki.
   wwcConfigGUIAmazonTranslateRegionButton: Breyta Amazon svæðinu
-  wwcConfigConversationLangInput: 'Núverandi tappi tungumál er %i. Vinsamlegast sláðu
+  wwcConfigConversationLangInput: 'Núverandi tappi tungumál er {0}. Vinsamlegast sláðu
     inn gilt tungumál kóða, eða tegund 0 til að hætta við. Gildir tungumálakóðar:
-    %o'
+    {0}'
   wwcConfigConversationLangInvalid: Ógildur tungumálakóði!
   wwcConfigGUIWatsonAPIKeyButton: Breyta Watson API Lykill
-  wwcEnabled: Virkja WorldwideChat útgáfa %i.
-  wwcgLangToLangStart: Nú þýða alþjóðlegt spjall frá %i til %o.
+  wwcEnabled: Virkja WorldwideChat útgáfa {0}.
+  wwcgLangToLangStart: Nú þýða alþjóðlegt spjall frá {0} til {1}.
   wwctbOnSender: Bók þýðing virkt. Hægrismelltu á meðan þú heldur bók til að þýða
     það!
   wwcListenersInitialized: Frumstilla hlustendur.
   wwcConfigGUIPluginUpdateChatButton: Senda spjall áminning fyrir Plugin uppfærslur
   wwcConfigConversationSendTranslationChatSuccess: Virk þýðandi spjall áminning skipta
     með góðum árangri.
-  wwctsOffTarget: Sign þýðing óvirk fyrir %i.
+  wwctsOffTarget: Sign þýðing óvirk fyrir {0}.
   wwcUpdaterConnectionFailed: Ekki er hægt að athuga nýjustu uppfærslur á Github.
   watsonNotFoundExceptionNotification: Ekki er hægt að þýða inntakið þitt lengra.
-  wwcConfigConversationWatsonAPIKeyInput: Núverandi API lykill er %i. Vinsamlegast
+  wwcConfigConversationWatsonAPIKeyInput: Núverandi API lykill er {0}. Vinsamlegast
     sláðu inn API lykil fyrir Watson, eða tegund 0 til að fara aftur.
   wwctGUIStopButton: Hættu að þýða
   wwcgTranslationStopped: Global spjall þýðing hefur verið hætt.
@@ -80,9 +80,9 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Breyta Google Þýða API lykill
   wwcSignDeletedOrTooLong: 'Markmerki var annað hvort eytt eða þýðingin var of löng.
     Þýðing:'
-  wwctsOnTarget: Sign þýðing virkt fyrir %i.
+  wwctsOnTarget: Sign þýðing virkt fyrir {0}.
   wwcConfigCacheDisabled: Þýðandi skyndiminni óvirk.
-  wwcConfigConversationWatsonURLInput: Núverandi vefslóð er %i. Vinsamlegast sláðu
+  wwcConfigConversationWatsonURLInput: Núverandi vefslóð er {0}. Vinsamlegast sláðu
     inn þjónustuslóð fyrir Watson, eða tegund 0 til að fara aftur.
   wwcBookDone: Bókin þýdd með góðum árangri.
   wwctsOnSender: Skilti þýðing virkt. Hægrismelltu á skilti til að þýða það!
@@ -90,7 +90,7 @@ Messages:
   wwctGUITranslationButton: Byrja að þýða
   wwctGUIAutoDetectButton: Auto-uppgötva Heimild Tungumál
   wwcUpdaterUpToDate: WorldwideChat er upp til dagsetning!
-  wwcConfigConversationAmazonTranslateRegionInput: Núverandi svæði er %i. Vinsamlegast
+  wwcConfigConversationAmazonTranslateRegionInput: Núverandi svæði er {0}. Vinsamlegast
     sláðu inn svæði fyrir Amazon, eða tegund 0 til að fara aftur.
   wwcNoConsole: Þessi skipun er aðeins hægt að hlaupa af leikmanni.
   wwcInitializationFail: Mistókst að frumstilla WorldwideChat.
@@ -108,10 +108,10 @@ Messages:
   wwcConfigGUIPrefixButton: Breyta Plugin forskeyti
   wwctSameLangError: Þú getur ekki þýtt á sama tungumál!
   wwctGUINewTranslationTarget: Veldu markmál
-  wwcConfigConnectionSuccess: Tókst tengdur til %o!
+  wwcConfigConnectionSuccess: Tókst tengdur til {0}!
   wwcConfigGUIGoogleTranslateButton: Google Þýða
-  wwcsIsActiveTranslator: 'Er virkur þýðandi: %i'
-  wwcConfigConversationPrefixInput: Núverandi forskeyti er %i. Sláðu inn nýjan, eða
+  wwcsIsActiveTranslator: 'Er virkur þýðandi: {0}'
+  wwcConfigConversationPrefixInput: Núverandi forskeyti er {0}. Sláðu inn nýjan, eða
     sláðu inn 0 til að fara aftur.
   wwcConfigGUIPreviousPageButton: fyrri síða
   wwcConfigGUITranslatorCacheButton: Breyta Þýðing skyndiminni Tak
@@ -127,59 +127,59 @@ Messages:
     góðum árangri.
   wwcUnsupportedVersion: 'Þú ert að keyra óstudda útgáfu af Bukkit, Spigot eða Pappír.
     Styður útgáfur:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: Global spjall er þýtt frá %i til
-    %o.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Global spjall er þýtt frá {0} til
+    {0}.
   wwcConfigGUITranslatorSettings: Þýðandi Stillingar
-  wwcConfigConversationGoogleTranslateAPIKeyInput: Núverandi API lykill er %i. Vinsamlegast
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Núverandi API lykill er {0}. Vinsamlegast
     inntak API lykill fyrir Google Translate, eða tegund 0 til að fara aftur.
   wwcConfigConversationRateLimitInput: Núverandi alþjóðlegt hlutfall takmörk á þýðingu
-    er %i sekúndur. Sláðu inn eitthvað sem er stærra en 0 til að setja nýtt gildi,
+    er {0} sekúndur. Sláðu inn eitthvað sem er stærra en 0 til að setja nýtt gildi,
     eða tegund 0 til að slökkva á takmörkunum. Sláðu eitthvað minna en 0 til að fara
     aftur.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API lykill sett
     með góðum árangri.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Breyting Amazon Secret Key
   wwcVersion: WorldwideChat, útgáfa
-  wwcsAttemptedTranslations: 'Tilraun Þýðingar: %i'
+  wwcsAttemptedTranslations: 'Tilraun Þýðingar: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon leyndarmál lykill sett
     með góðum árangri.
   wwcConfigConversationWatsonAPIKeySuccess: Watson API lykill sett með góðum árangri.
-  wwcRateLimit: Þýðingar þínar eru hlutfall takmörkuð. Vinsamlegast bíðið annað %i
+  wwcRateLimit: Þýðingar þínar eru hlutfall takmörkuð. Vinsamlegast bíðið annað {0}
     sekúndur.
-  wwcConfigCacheEnabled: Þýðandi skyndiminni virkt og stillt á takmörk af %i.
+  wwcConfigCacheEnabled: Þýðandi skyndiminni virkt og stillt á takmörk af {0}.
   wwctGUIExistingTranslationButton: Yfirskrifa núverandi Þýðing Session
   wwcUserDataReloaded: Hlaðinn öllum vistaðar notendagögnum
   wwcConfigGUISendTranslationChatButton: Senda spjall áminning til Active Translator
     á Innskráning
-  wwcsLastTranslationTime: 'Síðasta (Árangursrík) Þýðing Tími: %i'
+  wwcsLastTranslationTime: 'Síðasta (Árangursrík) Þýðing Tími: {0}'
   wwctbNotATranslator: Þú ert ekki virkur þýðandi! Gakktu úr skugga um að þú hafir
     sett þetta með/wwct.
-  wwcConfigConversationAmazonTranslateAccessKeyInput: Núverandi aðgangslykill er %i.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Núverandi aðgangslykill er {0}.
     Vinsamlegast sláðu inn aðgangslykil fyrir Amazon, eða tegund 0 til að fara aftur.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon aðgang lykill sett
     með góðum árangri.
   wwcConfigBadUpdateDelay: Ógild uppfærsla töf sett í config.yml. Vanskil til 86400
     sekúndur...
   wwctrlRateLimitOffSender: Slökktu á takmörk hlutfall þitt.
-  wwctrlRateLimitAlreadyOffTarget: The hlutfall takmörk af %i er nú þegar óvirk.
+  wwctrlRateLimitAlreadyOffTarget: The hlutfall takmörk af {0} er nú þegar óvirk.
   wwctrlPlayerNotFound: Leikmaður %Ég er annað hvort ekki að finna, eða er ekki virkur
     þýðandi.
-  wwctrlRateLimitSetSender: Stilltu hlutfall takmörk til %i sekúndur.
-  wwctrlRateLimitOffTarget: Slökktu á hlutfall takmörk af %i.
-  wwctrlRateLimitSetTarget: Stilltu hlutfall takmörk af %i til %o sekúndur.
+  wwctrlRateLimitSetSender: Stilltu hlutfall takmörk til {0} sekúndur.
+  wwctrlRateLimitOffTarget: Slökktu á hlutfall takmörk af {0}.
+  wwctrlRateLimitSetTarget: Stilltu hlutfall takmörk af {0} til {1} sekúndur.
   wwctrlNotATranslator: Þú ert ekki virkur þýðandi! Gakktu úr skugga um að þú hafir
     sett þetta með/wwct.
   wwctrlRateLimitAlreadyOffSender: Hlutfall þitt er nú þegar óvirkt.
   wwctGUIRateButton: Setja Rate Limit
-  wwctGUIConversationRateLimit: Hlutfall takmörk á þýðingu er núverand %i sekúndur.
+  wwctGUIConversationRateLimit: Hlutfall takmörk á þýðingu er núverand {0} sekúndur.
     Sláðu inn eitthvað sem er stærra en 0 til að setja nýtt gildi, eða tegund 0 til
     að slökkva á takmörkunum. Sláðu eitthvað minna en 0 til að fara aftur.
   wwctGUITargetPlayerNull: Markspilarinn ótengdur frá þjóninum.
   wwcConfigConversationSyncUserDataDelayInput: Núverandi seinkun á samstillingu notendagagna
-    er %i sekúndur. Sláðu inn neitt stærra en 10 til að setja nýtt gildi, eða eitthvað
+    er {0} sekúndur. Sláðu inn neitt stærra en 10 til að setja nýtt gildi, eða eitthvað
     minna en 10 til að fara aftur.
   wwcConfigGUISyncUserDataButton: Breyta notendagögnum Sync Delay
-  wwcConfigSyncDelayEnabled: Töf á notanda gögn samstillingu stillt á %i sekúndur.
+  wwcConfigSyncDelayEnabled: Töf á notanda gögn samstillingu stillt á {0} sekúndur.
   wwcConfigConversationSyncUserDataDelaySuccess: Notandagögn samstilla seinkun stillt
     með góðum árangri.
   wwcConfigSyncDelayInvalid: Ógild notendagögn samstilla töf sett í config.yml. Vanskil
@@ -187,24 +187,24 @@ Messages:
   wwcConfigCacheInvalid: Þýðandi skyndiminni stærð ógild. Vanskil til 10...
   wwcInventoryErrorPlayer: Villa fannst með GUI þínum. Log hefur verið sendur til
     stjórnborðsins.
-  wwcInventoryError: Villa greind með GUI notanda %i. Vinsamlegast tilkynna þetta
+  wwcInventoryError: Villa greind með GUI notanda {0}. Vinsamlegast tilkynna þetta
     mál til framkvæmdaraðila.
-  wwctiOffTarget: Item þýðing óvirk fyrir %i.
+  wwctiOffTarget: Item þýðing óvirk fyrir {0}.
   wwctiOffSender: Item þýðingar óvirk.
   wwcItemTranslateTitleStock: Ekki er hægt að þýða sjálfgefin atriði nöfn.
   wwctGUIItemButton: Skipta Item Þýðing
   wwcItemTranslateTitleDone: Þýtt atriði titil með góðum árangri.
   wwcGUITempItem: Item Sýna
   wwcItemTranslateStart: Þýða miða atriði...
-  wwcBookTranslateTitleSuccess: 'Þýtt Book Titill: %i'
+  wwcBookTranslateTitleSuccess: 'Þýtt Book Titill: {0}'
   wwctiOnSender: Item þýðing virkt. Hægrismelltu með hlut í aðalhendinni til að þýða
     það!
   wwcItemTranslateLoreStart: Þýða lore af miða atriði...
   wwcItemTranslateLoreDone: Þýtt atriði lore með góðum árangri.
-  wwctiOnTarget: Item þýðing virkt fyrir %i.
+  wwctiOnTarget: Item þýðing virkt fyrir {0}.
   wwcInvalidTranslator: Ógildar stillingar þýðanda. Vinsamlegast lagaðu þetta í config.yml
     eða með/wwcc til að nota þessa tappi.
-  wwcConfigGUIEachTranslatorSettings: '%i Stillingar'
+  wwcConfigGUIEachTranslatorSettings: '{0} Stillingar'
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ekki condone notkun/endurhlaða. Vinsamlegast
     haltu áfram með varúð.
@@ -212,7 +212,7 @@ Messages:
     ættir þú að slökkva á þessu.
   wwcTranslatorErrorThresholdReached: Villa þröskuldur náð. Þessi tappi mun nú endurhlaða,
     og slökkva á öllum þýðendum.
-  wwcConfigErrorLimitEnabled: Þýðandi villa takmörk sett á %i.
+  wwcConfigErrorLimitEnabled: Þýðandi villa takmörk sett á {0}.
   wwcTranslatorError: A vandamál occured á meðan að reyna þýðingu þína. Vinsamlegast
     reyndu aftur.
   wwcConfigErrorLimitInvalid: Ógild þýðandi villa takmörk sett í config.yml. Vanskil
@@ -220,10 +220,10 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: Vinsamlegast athugaðu errorLog.txt
     í WorldwideChat tappi möppunni fyrir frekari upplýsingar.
   wwctInvalidInputLangCode: 'Ógild inntak tungumál kóða veitt! Gildir langur kóða:
-    %o'
-  wwcsTitle: Upptaka af %i
+    {0}'
+  wwcsTitle: Upptaka af {0}
   wwctInvalidOutputLangCode: 'Ógild framleiðsla tungumál kóða veitt! Gildir langur
-    kóða: %o'
+    kóða: {0}'
   wwctGUISourceTranslationSelected: Þú hefur valið þetta tungumál.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Eyða hnekkja
   wwcConfigConversationOverrideTextChange: Sláðu inn nýtt skeyti fyrir þessa hnekkju
@@ -254,20 +254,20 @@ Messages:
   wwcConfigMessageCharLimitInvalid: Ógild takmörk á skeyti sett í config.yml. Vanskil
     á 255 bleikju...
   wwcConfigConversationCharacterLimitSuccess: Eðli mörk sett með góðum árangri.
-  wwcteOnTarget: Entity þýðing virkt fyrir %i.
-  wwcEntityTranslateDone: 'Þýtt nafn Entity: %i'
+  wwcteOnTarget: Entity þýðing virkt fyrir {0}.
+  wwcEntityTranslateDone: 'Þýtt nafn Entity: {0}'
   wwcEntityTranslateNoName: Entity hefur ekki sérsniðið nafn.
   wwcConfigConversationErrorLimitInput: Núverandi villumörk fyrir hvern þýðanda er
-    %i. Sláðu inn neitt stærra en 0 til að setja nýtt gildi, eða sláðu inn neitt minna
+    {0}. Sláðu inn neitt stærra en 0 til að setja nýtt gildi, eða sláðu inn neitt minna
     en eða jafnt og 0 til að fara aftur.
   wwcConfigGUIGlobalRateLimitButton: Breyta Global Rate Limit
   wwcteOnSender: Entity þýðing virkt. Hægrismelltu á aðila til að þýða nafn sitt!
   wwcConfigGUIResponseLimitButton: Breyta Response Timeout
-  wwcConfigMessageCharLimitEnabled: Eðli takmörk á skeyti stillt á %i stafi.
-  wwcteOffTarget: Entity þýðing óvirk fyrir %i.
+  wwcConfigMessageCharLimitEnabled: Eðli takmörk á skeyti stillt á {0} stafi.
+  wwcteOffTarget: Entity þýðing óvirk fyrir {0}.
   wwcCharLimit: Skilaboðin þín eru of löng! Gakktu úr skugga um að skilaboðin þín
-    séu minna en %i stafir að lengd.
-  wwcConfigConversationCharacterLimitInput: Núverandi stafatakmörk á skeyti er %i
+    séu minna en {0} stafir að lengd.
+  wwcConfigConversationCharacterLimitInput: Núverandi stafatakmörk á skeyti er {0}
     stafir. Sláðu eitthvað sem er stærra en 0 til að setja nýtt gildi, eða sláðu inn
     neitt minna en eða jafnt og 0 til að fara aftur.
   wwcteOffSender: Entity þýðingar óvirk.
@@ -277,21 +277,21 @@ Messages:
     þeirra. Vinsamlegast athugaðu errorLog.txt fyrir frekari upplýsingar.
   wwctGUIChatButton: Skipta Spjall Þýðing
   wwcrBegin: Endurhlaða WorldwideChat...
-  wwctTranslationStoppedOtherPlayer: Þýðing fundur fyrir %i hefur verið hætt.
+  wwctTranslationStoppedOtherPlayer: Þýðing fundur fyrir {0} hefur verið hætt.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global spjall er þýtt,
-    en þú ert með virkan þýðing fundur frá %i til %o.
+    en þú ert með virkan þýðing fundur frá {0} til {1}.
   wwctCannotTranslateConsole: Þú getur ekki byrjað þýðing fundur fyrir hugga!
-  wwctLangToLangStart: Byrja nýja þýðingu fundur frá %i til %o.
+  wwctLangToLangStart: Byrja nýja þýðingu fundur frá {0} til {1}.
   wwcOnJoinTranslationNotificationSourceLang: Þú ert með virkan þýðing fundur frá
-    %i til %o.
-  wwctAutoTranslateStartOtherPlayer: Byrja nýja þýðingu fundur fyrir %i til %o.
+    {0} til {1}.
+  wwctAutoTranslateStartOtherPlayer: Byrja nýja þýðingu fundur fyrir {0} til {1}.
   wwctTranslationStopped: Þýðing fundur þinn hefur verið hætt.
-  wwctLangToLangStartOtherPlayer: Byrja nýja þýðingu fundur fyrir %o frá %i til %e.
-  wwctAutoTranslateStart: Byrja nýja þýðingu fundur til %o.
+  wwctLangToLangStartOtherPlayer: Byrja nýja þýðingu fundur fyrir {0} frá {1} til {2}.
+  wwctAutoTranslateStart: Byrja nýja þýðingu fundur til {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Þú ert með virkan þýðing fundur til
-    %o.
+    {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Alþjóðlegt spjall er
-    þýtt, en þú ert með virkan þýðingartíma til %o.
+    þýtt, en þú ert með virkan þýðingartíma til {0}.
   wwcConfigGUIChangesNotSaved: Breytingarnar þínar munu ekki taka gildi fyrr en þú
     smellir á rauða hindrunina í/wwcc.
   wwctciOffSender: Komandi spjall þýðing óvirk.
@@ -300,25 +300,25 @@ Messages:
   wwctcoOnSender: Outgoing spjall þýðing virkt. Allt sem þú segir verður þýtt!
   wwctciOnSender: Komandi spjall þýðing virkt. Allt sem þú færð verður þýtt!
   wwctGUIChatMenu: Skipta Chat Þýðing Valmynd
-  wwctcoOnTarget: Outgoing spjall þýðing virkt fyrir %i.
-  wwctcoOffTarget: Outgoing spjall þýðing óvirk fyrir %i.
+  wwctcoOnTarget: Outgoing spjall þýðing virkt fyrir {0}.
+  wwctcoOffTarget: Outgoing spjall þýðing óvirk fyrir {0}.
   wwctGUIChatOutgoingButton: Skipta á sendan spjall Þýðing
-  wwctciOnTarget: Komandi spjall þýðing virkt fyrir %i.
-  wwctciOffTarget: Komandi spjall þýðing óvirk fyrir %i.
+  wwctciOnTarget: Komandi spjall þýðing virkt fyrir {0}.
+  wwctciOffTarget: Komandi spjall þýðing óvirk fyrir {0}.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: Upprunalega komandi spjall
     fest við þýðingu sem sveima texta skipta með góðum árangri.
   wwcConfigGUISendIncomingHoverTextChatButton: Bæta við upprunalegu komandi skilaboðum
     sem sveima texta
-  wwctGUIExistingChatOutgoingEnabled: 'Outgoing Chat Þýðing Virkt: %i'
-  wwctGUIExistingTranslationInput: 'Inntak Tungumál: %i'
-  wwctGUIExistingChatIncomingEnabled: 'Komandi spjall Þýðing Virkt: %i'
-  wwctGUIExistingTranslationOutput: 'Output Tungumál: %i'
-  wwcTranslatorAttempt: Tilraun til að tengjast þýðanda í config.yml... (Reynta %i/
-    %o)
+  wwctGUIExistingChatOutgoingEnabled: 'Outgoing Chat Þýðing Virkt: {0}'
+  wwctGUIExistingTranslationInput: 'Inntak Tungumál: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Komandi spjall Þýðing Virkt: {0}'
+  wwctGUIExistingTranslationOutput: 'Output Tungumál: {0}'
+  wwcTranslatorAttempt: Tilraun til að tengjast þýðanda í config.yml... (Reynta {0}/
+    {0})
   wwcTimeoutExceptionConsole: Leikmaður %Ég hafði nýjustu beiðni tímamörk þeirra.
     Þessi villa er ekki banvæn, en WorldwideChat ætti að endurhlaða ef það heldur
     áfram að gerast.
-  wwcGUIPageNumber: 'Síðu númer: %i'
+  wwcGUIPageNumber: 'Síðu númer: {0}'
   wwcConfigYAMLFallback: Falla aftur til YAML...
   wwcConfigGUIToggleSQLButton: Skipta SQL
   wwcConfigConversationToggleSQLSuccess: SQL skipta með góðum árangri. Endurhlaða
@@ -339,35 +339,35 @@ Messages:
   wwcConfigGUISQLPortButton: Breyta SQL höfn
   wwcConfigGUISQLOptionalArgsButton: Breyta SQL valfrjálst rök
   wwcConfigConversationToggleSQLSSLSuccess: SSL fyrir SQL skipti með góðum árangri.
-  wwcConfigConversationSQLPortInput: Núverandi höfn er %i. tegund eitthvað annað en
+  wwcConfigConversationSQLPortInput: Núverandi höfn er {0}. tegund eitthvað annað en
     0 til að setja nýja höfn, eða tegund 0 til að fara aftur.
   wwcConfigGUISQLPasswordButton: Breyta SQL lykilorð
   wwcConfigConversationSQLHostnameSuccess: Tókst að breyta SQL hostname.
-  wwcConfigConversationSQLHostnameInput: Núverandi hostname er %i. tegund eitthvað
+  wwcConfigConversationSQLHostnameInput: Núverandi hostname er {0}. tegund eitthvað
     annað en 0 til að setja nýtt hostname, eða tegund 0 til að fara aftur.
   wwcConfigGUISQLHostnameButton: Breyta SQL Hostname
   wwcConfigConversationSQLOptionalArgsSuccess: Tókst að breyta valfrjáls SQL rök.
   wwcConfigConversationSQLPasswordSuccess: Tókst að breyta SQL lykilorðinu.
-  wwcConfigConversationSQLPasswordInput: Núverandi lykilorð er %i Sláðu inn eitthvað
+  wwcConfigConversationSQLPasswordInput: Núverandi lykilorð er {0} Sláðu inn eitthvað
     annað en 0 til að setja nýtt lykilorð, eða tegund 0 til að fara aftur.
   wwcConfigGUIToggleSQLSSLButton: Skipta SQL SSL
   wwcConfigConversationSQLUsernameSuccess: Tókst að breyta SQL notandanafninu.
-  wwcConfigConversationSQLUsernameInput: Núverandi notandanafn er %i. tegund eitthvað
+  wwcConfigConversationSQLUsernameInput: Núverandi notandanafn er {0}. tegund eitthvað
     annað en 0 til að setja nýtt notandanafn, eða tegund 0 til að fara aftur.
   wwcConfigConversationSQLPortSuccess: Tókst að breyta SQL höfn.
   wwcConfigGUISQLUsernameButton: Breyta SQL notendanafni
   wwcConfigConversationSQLOptionalArgsCleared: Valfrjálst rök hreinsaðar með góðum
     árangri.
-  wwcConfigConversationSQLOptionalArgsInput: 'Núverandi valfrjáls SQL rök eru: %i.
+  wwcConfigConversationSQLOptionalArgsInput: 'Núverandi valfrjáls SQL rök eru: {0}.
     tegund rök aðskilin með kommu (lykill = gildi, key2 = value2), eða tegund skýr
     til að þurrka núverandi args, eða tegund 0 til að fara aftur.'
-  wwcConfigConversationSQLDatabaseNameInput: Núverandi nafn gagnagrunns er %i. tegund
+  wwcConfigConversationSQLDatabaseNameInput: Núverandi nafn gagnagrunns er {0}. tegund
     eitthvað annað en 0 til að setja nýtt nafn gagnagrunns, eða tegund 0 til að fara
     aftur.
   wwcConfigGUISQLDatabaseNameButton: Breyta SQL gagnagrunni
   wwcConfigConversationSQLDatabaseNameSuccess: Tókst að breyta SQL gagnagrunnsheiti.
   wwcConfigConversationFatalAsyncAbort: Núverandi tímamörk til að fella niður öll
-    async verkefni er %i sekúndur. Sláðu inn eitthvað fyrir ofan 7 til að setja nýtt
+    async verkefni er {0} sekúndur. Sláðu inn eitthvað fyrir ofan 7 til að setja nýtt
     tímamörk, eða eitthvað fyrir neðan það til að fara aftur.
   wwcConfigConversationFatalAsyncSuccess: Async verkefni timeout sett með góðum árangri.
   wwcConfigGUIFatalAsyncAbortButton: Breyta Async Task Timeout
@@ -377,7 +377,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Breyta Libre Þýða API Key
   libreHttp403: Vantar Libre Translate API Key, eða þú ert bönnuð frá þjóninum!
   wwcConfigConversationLibreURLSuccess: Ókeypis URL sett með góðum árangri.
-  wwcConfigConversationLibreTranslateApiKeyInput: Núverandi API lykill er %i. Vinsamlegast
+  wwcConfigConversationLibreTranslateApiKeyInput: Núverandi API lykill er {0}. Vinsamlegast
     sláðu inn API lykil fyrir Libre, eða tegund 0 til að fara aftur.
   wwcConfigGUILibreTranslateButton: Libre Þýða
   libreHttp429: Ekkert traust vegna hámarkshraða frá netþjóni.
@@ -386,34 +386,34 @@ Messages:
     Endurhlaða til að breytingarnar taki gildi.
   wwcConfigConversationLibreTranslateApiKeySuccess: Ókeypis API lykill sett með góðum
     árangri.
-  wwcConfigConversationLibreURLInput: Núverandi vefslóð er %i. Vinsamlegast sláðu
+  wwcConfigConversationLibreURLInput: Núverandi vefslóð er {0}. Vinsamlegast sláðu
     inn vefslóð fyrir Libre, eða tegund 0 til að fara til baka.
-  libreHttpUnknown: 'Óþekkt http villa: %i'
+  libreHttpUnknown: 'Óþekkt http villa: {0}'
   wwcConfigGUILibreTranslateURLButton: Breyta Libre Þýða URL
-  wwcConfigConnectionFail: Mistókst að tengjast %i.
+  wwcConfigConnectionFail: Mistókst að tengjast {0}.
   wwcConfigGUIMongoSettings: MongoDB stillingar
   wwcConfigConversationMongoDatabaseNameSuccess: Tókst að breyta MongoDB gagnagrunnsheiti.
   wwcConfigGUIMongoHostnameButton: Breyta MongoDB Hostname
-  wwcConfigConversationMongoPasswordInput: Núverandi aðgangsorð er %i. Sláðu inn eitthvað
+  wwcConfigConversationMongoPasswordInput: Núverandi aðgangsorð er {0}. Sláðu inn eitthvað
     annað en 0 til að setja nýtt lykilorð, eða sláðu inn 0 til að fara aftur.
-  wwcConfigConversationMongoPortInput: Núverandi tengi er %i. Sláðu inn eitthvað annað
+  wwcConfigConversationMongoPortInput: Núverandi tengi er {0}. Sláðu inn eitthvað annað
     en 0 til að stilla nýtt tengi, eða sláðu inn 0 til að fara til baka.
   wwcConfigConversationToggleMongoSuccess: MongoDB skiptir með góðum árangri. Endurhlaða
     til að breytingin taki gildi.
-  wwcConfigConversationMongoHostnameInput: Núverandi hýsingarheiti er %i. Sláðu inn
+  wwcConfigConversationMongoHostnameInput: Núverandi hýsingarheiti er {0}. Sláðu inn
     eitthvað annað en 0 til að setja nýtt hýsingarheiti, eða sláðu inn 0 til að fara
     aftur.
   wwcConfigConversationMongoHostnameSuccess: Tókst að breyta MongoDB hýsingarnafninu.
   wwcConfigGUIMongoMenuButton: Breyta MongoDB stillingum
   wwcConfigGUIToggleMongoButton: Skipta MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Núverandi gagnagrunnsheiti er %i. Sláðu
+  wwcConfigConversationMongoDatabaseNameInput: Núverandi gagnagrunnsheiti er {0}. Sláðu
     inn eitthvað annað en 0 til að setja nýtt gagnagrunnsheiti, eða sláðu inn 0 til
     að fara aftur.
   wwcConfigConversationMongoOptionalArgsInput: 'Núverandi valfrjáls MongoDB rök eru:
-    %i. Sláðu rök aðskilin með kommu (lykill = gildi, lykill2=value2), eða tegund
+    {0}. Sláðu rök aðskilin með kommu (lykill = gildi, lykill2=value2), eða tegund
     skýr til að þurrka núverandi args, eða tegund 0 til að fara til baka.'
   wwcConfigGUIMongoDatabaseNameButton: Breyta MongoDB gagnagrunni
-  wwcConfigConversationMongoUsernameInput: Núverandi notandanafn er %i. Sláðu inn
+  wwcConfigConversationMongoUsernameInput: Núverandi notandanafn er {0}. Sláðu inn
     eitthvað annað en 0 til að setja nýtt notandanafn, eða tegund 0 til að fara til
     baka.
   wwcConfigGUIMongoOptionalArgsButton: Breyta MongoDB Valfrjáls rök
@@ -438,7 +438,7 @@ Messages:
   wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Þýða
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API lykill sett með góðum
     árangri.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Núverandi API lykill er %i. Vinsamlegast
+  wwcConfigConversationDeepLTranslateApiKeyInput: Núverandi API lykill er {0}. Vinsamlegast
     sláðu inn API lykil fyrir DeepL, eða tegund 0 til að fara aftur.
   wwcConfigErrorsToIgnoreSuccess: Tókst skráð þýðandi villur til að hunsa.
   wwcConfigErrorsToIgnoreInvalid: Ógild þýðandi villur til að hunsa sett í config.yml.
@@ -448,24 +448,24 @@ Messages:
     hunsa setningar.
   wwcConfigGUIIgnoreErrorsButton: Breyta villum til að hunsa
   wwcConfigConversationIgnoreErrorsInput: 'Núverandi listi yfir orðasambönd í þýðandi
-    villum til að hunsa eru: %i. Sláðu inn rök aðskilin með kommu (lykill = gildi,
+    villum til að hunsa eru: {0}. Sláðu inn rök aðskilin með kommu (lykill = gildi,
     lykill2=value2), eða skrifaðu skýrt til að þurrka núverandi args, eða tegund 0
     til að fara til baka. Að auki, slá “*” mun valda því að tappi til að athuga ekki
     neinar þýðandi villur.'
   wwcConfigConversationIgnoreErrorsCleared: Þýðandi villur til að hunsa setningar
     hreinsaðar með góðum árangri.
 
-  wwcsActiveTransPrevRate: 'Virkur þýðandi Fyrri tímamörk: %i'
-  wwcsActiveTransSaved: 'Virkur þýðandi vistaður á disk: %i'
-  wwcsActiveTransIncoming: 'Virkur þýðandi Þýðir komandi spjall: %i'
-  wwcsActiveTransOutLang: 'Virk þýðandi Output Tungumál: %i'
-  wwcsActiveTransInLang: 'Virkt tungumál þýðanda: %i'
-  wwcsActiveTransBook: 'Þýðandi bók þýðanda: %i'
-  wwcsActiveTransSign: 'Virkur þýðandi Þýðandi Sign: %i'
-  wwcsActiveTransUUID: 'Virkur þýðandi UUID: %i'
-  wwcsActiveTransRateLimit: 'Hlutfall virkra þýðanda: %i'
-  wwcsActiveTransColorWarning: 'Virkur þýðandi fékk litaviðvörun: %i'
-  wwcsActiveTransOutgoing: 'Virkur þýðandi Þýðir Outgoing Chat: %i'
-  wwcsActiveTransItem: 'Virkur þýðandi Þýðandi atriði: %i'
-  wwcsActiveTransEntity: 'Virkur þýðandi þýðandi: %i'
+  wwcsActiveTransPrevRate: 'Virkur þýðandi Fyrri tímamörk: {0}'
+  wwcsActiveTransSaved: 'Virkur þýðandi vistaður á disk: {0}'
+  wwcsActiveTransIncoming: 'Virkur þýðandi Þýðir komandi spjall: {0}'
+  wwcsActiveTransOutLang: 'Virk þýðandi Output Tungumál: {0}'
+  wwcsActiveTransInLang: 'Virkt tungumál þýðanda: {0}'
+  wwcsActiveTransBook: 'Þýðandi bók þýðanda: {0}'
+  wwcsActiveTransSign: 'Virkur þýðandi Þýðandi Sign: {0}'
+  wwcsActiveTransUUID: 'Virkur þýðandi UUID: {0}'
+  wwcsActiveTransRateLimit: 'Hlutfall virkra þýðanda: {0}'
+  wwcsActiveTransColorWarning: 'Virkur þýðandi fékk litaviðvörun: {0}'
+  wwcsActiveTransOutgoing: 'Virkur þýðandi Þýðir Outgoing Chat: {0}'
+  wwcsActiveTransItem: 'Virkur þýðandi Þýðandi atriði: {0}'
+  wwcsActiveTransEntity: 'Virkur þýðandi þýðandi: {0}'
 

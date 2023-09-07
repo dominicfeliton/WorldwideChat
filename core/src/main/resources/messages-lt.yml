@@ -1,73 +1,73 @@
 Messages:
-  wwcgAutoTranslateStart: Dabar verčiant pasaulinį pokalbį į %o.
+  wwcgAutoTranslateStart: Dabar verčiant pasaulinį pokalbį į {0}.
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: Pasaulinis pokalbis yra išverstas
-    į %o.
+    į {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Pakeisti “Amazon” prieigos raktą
   wwcrFail: Nepavyko iš naujo įkelti WorldwideChat.
   wwcConfigGUIUpdateCheckerButton: Keisti Tikrinti naujinimų vėl
   wwcUpdaterFailedGeneric: Nepavyko patikrinti WorldwideChat naujinimų.
   wwcConfigConversationUpdateCheckerInput: Dabartinis naujinimo tikrintuvo vėlavimas
-    yra %i sekundes. Įveskite viską, kas didesnė nei 10, kad nustatytumėte naują vertę,
+    yra {0} sekundes. Įveskite viską, kas didesnė nei 10, kad nustatytumėte naują vertę,
     arba nieko mažiau nei 10, kad grįžtumėte atgal.
   wwctGUIMainMenuGlobal: Pasaulinis vertimo meniu
   wwcConfigConversationPluginUpdateChatSuccess: Įskiepis atnaujinimas pokalbiai priminimas
     perjungtas sėkmingai.
-  wwctbOnTarget: Įgalintas knygos vertimas %i.
-  wwcsNotATranslator: Kol kas nėra įrašų %i.
+  wwctbOnTarget: Įgalintas knygos vertimas {0}.
+  wwcsNotATranslator: Kol kas nėra įrašų {0}.
   wwcConfigGUIbStatsButton: Perjungti bStats
   wwctGUINewTranslationSource: Pasirinkti šaltinio kalbą
-  wwcConfigConnectionFailed: Nepavyko prisijungti prie %o. Įsitikinkite, kad kredencialai
+  wwcConfigConnectionFailed: Nepavyko prisijungti prie {0}. Įsitikinkite, kad kredencialai
     ir užkarda yra tinkamai sukonfigūruoti!
   wwcConfigEnabledbStats: Įgalinta bStats.
-  wwctGUIMainMenuPlayer: Vertimo meniu %i
+  wwctGUIMainMenuPlayer: Vertimo meniu {0}
   wwctGUIBookButton: Perjungti knygų vertimą
-  wwcLangDetected: Aptikta kalba %o.
+  wwcLangDetected: Aptikta kalba {0}.
   wwcBookTranslateStart: Vertimas tikslinė knyga...
   wwcConfigDisabledbStats: Neįgalūs bStats.
   wwctsOffSender: Ženklas vertimas išjungtas.
   wwcUpdaterParserFailed: Nepavyko išanalizuoti naujinimo duomenų iš “Github”.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Dabartinis slaptasis raktas
-    yra %i. Prašome įvesti slaptą raktą “Amazon” arba įveskite 0, kad grįžtumėte.
+    yra {0}. Prašome įvesti slaptą raktą “Amazon” arba įveskite 0, kad grįžtumėte.
   wwctbOffSender: Knygų vertimas išjungtas.
   wwcConfigGUIAmazonTranslateButton: Amazon Išversti
   wwcConfigConversationLangSuccess: Įskiepių kalba sėkmingai pasikeitė.
-  wwcsSuccessfulTranslations: 'Sėkmingi vertimai: %i'
+  wwcsSuccessfulTranslations: 'Sėkmingi vertimai: {0}'
   wwcConfigConversationTranslationCacheInput: Dabartinė vertimo talpyklos riba yra
-    %i frazės. Įveskite viską, kas didesnė nei 0, kad nustatytumėte naują vertę, arba
+    {0} frazės. Įveskite viską, kas didesnė nei 0, kad nustatytumėte naują vertę, arba
     įveskite 0, kad išjungtumėte vertimo talpyklą. Įveskite ką nors mažiau nei 0,
     kad grįžtumėte atgal.
-  wwctbOffTarget: Knygos vertimas išjungtas %i.
+  wwctbOffTarget: Knygos vertimas išjungtas {0}.
   wwcConfigGUIGeneralSettings: Bendra konfigūracija
   wwcInvalidLang: Neteisinga kalba jūsų config.yml. Numatytinas į en...
   wwcConfigConversationAmazonTranslateRegionSuccess: “Amazon” regionas sėkmingai nustatyti.
-  wwcConfigRateLimitEnabled: Įgalinta visuotinė normos riba ir nustatyta %i sekundes.
+  wwcConfigRateLimitEnabled: Įgalinta visuotinė normos riba ir nustatyta {0} sekundes.
   wwcBadPerms: Jūs neturite reikiamų leidimų vykdyti šią komandą!
   wwcConfigGUILangButton: Keisti įskiepių kalbą
   wwctGUISignButton: Perjungti gestų vertimą
   wwcUpdaterOutOfDate: WorldwideChat yra pavėlęs. Atnaujinkite į naujausią versiją,
-    %i.
+    {0}.
   wwcConfigGUINextPageButton: Sekantis puslapis
   wwcConfigInvalidTranslatorSettings: Neteisingas vertėjo nustatymai! Prašome įjungti
     tik vieną vertėją savo config.yml.
   wwcConfigGUIQuitButton: Išeiti ir išsaugoti pakeitimus
-  wwctPlayerNotFound: Žaidėjas %neradau.
+  wwctPlayerNotFound: Žaidėjas {0}.
   wwcConfigGUIAmazonTranslateRegionButton: Keisti Amazon regioną
-  wwcConfigConversationLangInput: 'Dabartinė įskiepio kalba yra %i. Įveskite galiojantį
-    kalbos kodą arba įveskite 0, kad atšauktumėte. Galiojantys kalbos kodai: %o'
+  wwcConfigConversationLangInput: 'Dabartinė įskiepio kalba yra {0}. Įveskite galiojantį
+    kalbos kodą arba įveskite 0, kad atšauktumėte. Galiojantys kalbos kodai: {0}'
   wwcConfigConversationLangInvalid: Neteisingas kalbos kodas!
   wwcConfigGUIWatsonAPIKeyButton: Pakeisti Watson API raktas
-  wwcEnabled: Įgalinta WorldwideChat versija %i.
-  wwcgLangToLangStart: Dabar verčiate globalinius pokalbius iš %i į %o.
+  wwcEnabled: Įgalinta WorldwideChat versija {0}.
+  wwcgLangToLangStart: Dabar verčiate globalinius pokalbius iš {0} į {1}.
   wwctbOnSender: Knygų vertimas įjungtas. Dešiniuoju pelės mygtuku spustelėkite laikydami
     knygą ją išversti!
   wwcListenersInitialized: Inicijuoti klausytojai.
   wwcConfigGUIPluginUpdateChatButton: Siųsti pokalbių priminimą dėl papildinių atnaujinimų
   wwcConfigConversationSendTranslationChatSuccess: Aktyvus vertėjas pokalbių priminimas
     sėkmingai perjungtas.
-  wwctsOffTarget: Pasirašyti vertimas išjungtas %i.
+  wwctsOffTarget: Pasirašyti vertimas išjungtas {0}.
   wwcUpdaterConnectionFailed: Nepavyko patikrinti naujausių “Github” naujinimų.
   watsonNotFoundExceptionNotification: Nepavyko toliau išversti savo įvesties.
-  wwcConfigConversationWatsonAPIKeyInput: Dabartinis API raktas yra %i. Prašome įvesti
+  wwcConfigConversationWatsonAPIKeyInput: Dabartinis API raktas yra {0}. Prašome įvesti
     “Watson” API raktą arba įveskite 0, kad grįžtumėte.
   wwctGUIStopButton: Sustabdyti vertimą
   wwcgTranslationStopped: Pasaulinis pokalbių vertimas buvo sustabdytas.
@@ -77,9 +77,9 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Pakeisti “Google Translate API raktą
   wwcSignDeletedOrTooLong: 'Tikslinė ženklas buvo arba ištrintas, arba vertimas buvo
     per ilgas. Vertimas:'
-  wwctsOnTarget: Įgalinta pasirašyti vertimą %i.
+  wwctsOnTarget: Įgalinta pasirašyti vertimą {0}.
   wwcConfigCacheDisabled: Vertėjas talpyklos išjungtas.
-  wwcConfigConversationWatsonURLInput: Dabartinis URL yra %i. Prašome įvesti “Watson”
+  wwcConfigConversationWatsonURLInput: Dabartinis URL yra {0}. Prašome įvesti “Watson”
     paslaugos URL arba įveskite 0, kad grįžtumėte.
   wwcBookDone: Knyga sėkmingai išversta.
   wwctsOnSender: Įgalintas pasirašyti vertimą. Dešiniuoju pelės mygtuku spustelėkite
@@ -88,12 +88,12 @@ Messages:
   wwctGUITranslationButton: Pradėti versti
   wwctGUIAutoDetectButton: Automatinio aptikimo šaltinio kalba
   wwcUpdaterUpToDate: WorldwideChat yra iki šiol!
-  wwcConfigConversationAmazonTranslateRegionInput: Dabartinis regionas yra %i. Prašome
+  wwcConfigConversationAmazonTranslateRegionInput: Dabartinis regionas yra {0}. Prašome
     įvesti regioną “Amazon” arba įveskite 0, kad grįžtumėte atgal.
   wwcNoConsole: Šią komandą gali vykdyti tik žaidėjas.
   wwcInitializationFail: Nepavyko inicijuoti WorldwideChat.
   wwcrSuccess: Sėkmingai perkrautas WorldwideChat.
-  wwcPlayerNotFound: Žaidėjas %neradau.
+  wwcPlayerNotFound: Žaidėjas {0}.
   wwcUpdaterOutOfDateChat: WorldwideChat yra pavėlęs. Prašome atnaujinti į naujausią
     versiją.
   wwcConfigConversationRateLimitSuccess: Norma riba nustatyti sėkmingai.
@@ -104,10 +104,10 @@ Messages:
   wwcConfigGUIPrefixButton: Pakeisti Plugin Priešdėlis
   wwctSameLangError: Jūs negalite išversti į tą pačią kalbą!
   wwctGUINewTranslationTarget: Pasirinkti tikslinę kalbą
-  wwcConfigConnectionSuccess: Sėkmingai prijungtas su %o!
+  wwcConfigConnectionSuccess: Sėkmingai prijungtas su {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Ar aktyvus vertėjas: %i'
-  wwcConfigConversationPrefixInput: Dabartinis priešdėlis yra %i. Prašome įvesti naują
+  wwcsIsActiveTranslator: 'Ar aktyvus vertėjas: {0}'
+  wwcConfigConversationPrefixInput: Dabartinis priešdėlis yra {0}. Prašome įvesti naują
     arba įveskite 0, kad grįžtumėte atgal.
   wwcConfigGUIPreviousPageButton: Ankstesnis puslapis
   wwcConfigGUITranslatorCacheButton: Keisti vertimo talpyklos limitą
@@ -124,57 +124,57 @@ Messages:
   wwcUnsupportedVersion: 'Jūs paleidžiate nepalaikomą versiją Bukkit, Spigot, arba
     Paper. Palaikomos versijos:'
   wwcGlobalOnJoinTranslationNotificationSourceLang: Pasaulinis pokalbis yra išverstas
-    iš %i į %o.
+    iš {0} į {1}.
   wwcConfigGUITranslatorSettings: Vertėjo konfigūracija
-  wwcConfigConversationGoogleTranslateAPIKeyInput: Dabartinis API raktas yra %i. Prašome
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Dabartinis API raktas yra {0}. Prašome
     įvesti “Google Translate” API raktą arba įveskite 0, kad grįžtumėte.
   wwcConfigConversationRateLimitInput: Dabartinis visuotinis vertimo kurso limitas
-    yra %i sekundes. Įveskite bet ką daugiau nei 0, kad nustatytumėte naują vertę,
+    yra {0} sekundes. Įveskite bet ką daugiau nei 0, kad nustatytumėte naują vertę,
     arba įveskite 0, kad išjungtumėte ribą. Įveskite ką nors mažiau nei 0, kad grįžtumėte
     atgal.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: “Google Translate API raktų rinkinys
     sėkmingai.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Keisti Amazon slaptą raktą
   wwcVersion: WorldwideChat, versija
-  wwcsAttemptedTranslations: 'Bandė vertimai: %i'
+  wwcsAttemptedTranslations: 'Bandė vertimai: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: “Amazon” slaptas raktas rinkinys
     sėkmingai.
   wwcConfigConversationWatsonAPIKeySuccess: Watson API raktas rinkinys sėkmingai.
-  wwcRateLimit: Jūsų vertimai yra ribotas. Prašome palaukti kitą %i sekundes.
-  wwcConfigCacheEnabled: Vertėjo talpykla įjungta ir nustatyti %i ribą.
+  wwcRateLimit: Jūsų vertimai yra ribotas. Prašome palaukti kitą {0} sekundes.
+  wwcConfigCacheEnabled: Vertėjo talpykla įjungta ir nustatyti {0} ribą.
   wwctGUIExistingTranslationButton: Perrašyti dabartinę vertimo sesiją
   wwcUserDataReloaded: Įkelti visus išsaugotus naudotojo duomenis.
   wwcConfigGUISendTranslationChatButton: Siųsti Pokalbių priminimą Active Translator
     on Login
-  wwcsLastTranslationTime: 'Paskutinis (sėkmingas) vertimo laikas: %i'
+  wwcsLastTranslationTime: 'Paskutinis (sėkmingas) vertimo laikas: {0}'
   wwctbNotATranslator: Jūs nesate aktyvus vertėjas! Įsitikinkite, kad jūs turite nustatyti
     tai su /wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Dabartinis prieigos raktas yra
-    %i. Prašome įvesti prieigos raktą “Amazon” arba įveskite 0, kad grįžtumėte.
+    {0}. Prašome įvesti prieigos raktą “Amazon” arba įveskite 0, kad grįžtumėte.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: “Amazon” prieigos raktų rinkinys
     sėkmingai.
   wwcConfigBadUpdateDelay: Neteisingas atnaujinimo vėlavimas nustatytas config.yml.
     Numatytinas 86400 sekundžių...
   wwctrlRateLimitOffSender: Išjungtas jūsų normos ribą.
-  wwctrlRateLimitAlreadyOffTarget: '%i normos riba jau yra išjungta.'
+  wwctrlRateLimitAlreadyOffTarget: '{0} normos riba jau yra išjungta.'
   wwctrlPlayerNotFound: Žaidėjas % aš nerastas arba nėra aktyvus vertėjas.
-  wwctrlRateLimitSetSender: Nustatykite normos limitą į %i sekundes.
-  wwctrlRateLimitOffTarget: Išjungta %i normos ribą.
-  wwctrlRateLimitSetTarget: Nustatykite normos ribą %i į %o sekundes.
+  wwctrlRateLimitSetSender: Nustatykite normos limitą į {0} sekundes.
+  wwctrlRateLimitOffTarget: Išjungta {0} normos ribą.
+  wwctrlRateLimitSetTarget: Nustatykite normos ribą {0} į {1} sekundes.
   wwctrlNotATranslator: Jūs nesate aktyvus vertėjas! Įsitikinkite, kad jūs turite
     nustatyti tai su /wwct.
   wwctrlRateLimitAlreadyOffSender: Jūsų normos limitas jau yra išjungtas.
   wwctGUIRateButton: Nustatyti normos ribą
-  wwctGUIConversationRateLimit: Vertimo normos riba yra dabar %i sekundes. Įveskite
+  wwctGUIConversationRateLimit: Vertimo normos riba yra dabar {0} sekundes. Įveskite
     bet ką daugiau nei 0, kad nustatytumėte naują vertę, arba įveskite 0, kad išjungtumėte
     ribą. Įveskite ką nors mažiau nei 0, kad grįžtumėte atgal.
   wwctGUITargetPlayerNull: Tikslinis žaidėjas atjungtas nuo serverio.
   wwcConfigConversationSyncUserDataDelayInput: Dabartinis delsimas sinchronizuojant
-    naudotojo duomenis yra %i sekundes. Įveskite viską, kas didesnė nei 10, kad nustatytumėte
+    naudotojo duomenis yra {0} sekundes. Įveskite viską, kas didesnė nei 10, kad nustatytumėte
     naują vertę, arba nieko mažiau nei 10, kad grįžtumėte atgal.
   wwcConfigGUISyncUserDataButton: Keisti vartotojo duomenų sinchronizavimo vėlavimą
   wwcConfigSyncDelayEnabled: Delsimas vienam vartotojo duomenų sinchronizavimui nustatyti
-    %i sekundes.
+    {0} sekundes.
   wwcConfigConversationSyncUserDataDelaySuccess: Vartotojo duomenų sinchronizavimo
     vėlavimo nustatyti sėkmingai.
   wwcConfigSyncDelayInvalid: Neteisingas vartotojo duomenų sinchronizavimo vėlavimas
@@ -182,24 +182,24 @@ Messages:
   wwcConfigCacheInvalid: Vertėjas talpyklos dydis negaliojantis. Numatytinas iki 10...
   wwcInventoryErrorPlayer: Klaida aptikta naudojant GUI. Žurnalas buvo išsiųstas į
     konsolę.
-  wwcInventoryError: Klaida aptikta naudotojo %i GUI. Prašome pranešti apie šią problemą
+  wwcInventoryError: Klaida aptikta naudotojo {0} GUI. Prašome pranešti apie šią problemą
     kūrėjui.
-  wwctiOffTarget: Elemento vertimas išjungtas %i.
+  wwctiOffTarget: Elemento vertimas išjungtas {0}.
   wwctiOffSender: Prekė vertimas išjungtas.
   wwcItemTranslateTitleStock: Nepavyko išversti numatytųjų elementų pavadinimų.
   wwctGUIItemButton: Perjungti elemento vertimą
   wwcItemTranslateTitleDone: Išverstas elemento pavadinimas sėkmingai.
   wwcGUITempItem: Prekė Ekranas
   wwcItemTranslateStart: Vertimas tikslinę prekę...
-  wwcBookTranslateTitleSuccess: 'Išverstas knygos pavadinimas: %i'
+  wwcBookTranslateTitleSuccess: 'Išverstas knygos pavadinimas: {0}'
   wwctiOnSender: Prekė vertimas įjungtas. Dešiniuoju pelės mygtuku spustelėkite su
     elementu jūsų pagrindinėje rankoje jį išversti!
   wwcItemTranslateLoreStart: Vertimas kraštotyros tikslinės elemento...
   wwcItemTranslateLoreDone: Išversta prekė kraštotyros sėkmingai.
-  wwctiOnTarget: Elemento vertimas įjungtas %i.
+  wwctiOnTarget: Elemento vertimas įjungtas {0}.
   wwcInvalidTranslator: Neteisingas vertėjo nustatymai. Prašome išspręsti šią problemą
     savo config.yml arba su /wwcc naudoti šį įskiepiai.
-  wwcConfigGUIEachTranslatorSettings: '%i konfigūracija'
+  wwcConfigGUIEachTranslatorSettings: '{0} konfigūracija'
   wwcConfigGUIWatsonButton: Watsonas
   wwcServerReloadWarning: WorldwideChat nėra nusiraminti naudojimo/reload. Prašome
     elgtis atsargiai.
@@ -207,17 +207,17 @@ Messages:
     šalinimo priemonė, turėtumėte tai išjungti.
   wwcTranslatorErrorThresholdReached: Pasiekta klaidos riba. Šis įskiepis dabar iš
     naujo įkels ir išjungs visus vertėjus.
-  wwcConfigErrorLimitEnabled: Vertėjo klaidos limitas nustatytas į %i.
+  wwcConfigErrorLimitEnabled: Vertėjo klaidos limitas nustatytas į {0}.
   wwcTranslatorError: Problema kilo bandant vertimą. Bandykite dar kartą.
   wwcConfigErrorLimitInvalid: Neteisingas vertėjo klaidos limitas nustatytas config.yml.
     Numatytinas iki 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Prašome patikrinti errorLog.txt WorldwideChat
     įskiepiai aplanke daugiau informacijos.
   wwctInvalidInputLangCode: 'Pateiktas neteisingas įvesties kalbos kodas! Galiojantys
-    lang kodai: %o'
-  wwcsTitle: Įrašas %i
+    lang kodai: {0}'
+  wwcsTitle: Įrašas {0}
   wwctInvalidOutputLangCode: 'Pateiktas neteisingas išvesties kalbos kodas! Galiojantys
-    lang kodai: %o'
+    lang kodai: {0}'
   wwctGUISourceTranslationSelected: Jūs pasirinkote šią kalbą.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Ištrinti nepaisyti
   wwcConfigConversationOverrideTextChange: Įveskite naują pranešimą apie šį nepaisymą
@@ -248,44 +248,44 @@ Messages:
   wwcConfigMessageCharLimitInvalid: Neteisingas apribojimas vienam pranešimui, nustatytam
     config.yml. Numatytieji 255 chars...
   wwcConfigConversationCharacterLimitSuccess: Simbolių limitas sėkmingai nustatytas.
-  wwcteOnTarget: Subjekto vertimas įgalintas į %i.
-  wwcEntityTranslateDone: 'Išverstas subjekto pavadinimas: %i'
+  wwcteOnTarget: Subjekto vertimas įgalintas į {0}.
+  wwcEntityTranslateDone: 'Išverstas subjekto pavadinimas: {0}'
   wwcEntityTranslateNoName: Subjektas neturi pasirinktinio pavadinimo.
   wwcConfigConversationErrorLimitInput: Dabartinis kiekvieno vertėjo klaidos apribojimas
-    yra %i. Įveskite bet ką didesnį nei 0, kad nustatytumėte naują vertę, arba įveskite
+    yra {0}. Įveskite bet ką didesnį nei 0, kad nustatytumėte naują vertę, arba įveskite
     bet ką mažesnį arba lygesnį 0, kad grįžtumėte atgal.
   wwcConfigGUIGlobalRateLimitButton: Keisti pasaulinę normos ribą
   wwcteOnSender: Subjekto vertimas įjungtas. Dešiniuoju pelės mygtuku spustelėkite
     subjektą, norėdami išversti jo pavadinimą!
   wwcConfigGUIResponseLimitButton: Pakeisti Vertėjas Atsakas Timeout
-  wwcConfigMessageCharLimitEnabled: Simbolių limitas pranešimui nustatytas į %i simbolius.
-  wwcteOffTarget: Subjekto vertimas išjungtas %i.
+  wwcConfigMessageCharLimitEnabled: Simbolių limitas pranešimui nustatytas į {0} simbolius.
+  wwcteOffTarget: Subjekto vertimas išjungtas {0}.
   wwcCharLimit: Jūsų žinutė yra per ilga! Įsitikinkite, kad jūsų žinutė yra mažesnė
-    nei %i simbolių ilgio.
+    nei {0} simbolių ilgio.
   wwcConfigConversationCharacterLimitInput: Dabartinis simbolių limitas vienam pranešimui
-    yra %i simboliai. Įveskite viską, kas yra didesnė nei 0, kad nustatytumėte naują
+    yra {0} simboliai. Įveskite viską, kas yra didesnė nei 0, kad nustatytumėte naują
     vertę, arba įveskite viską, kas yra mažesnė arba lygi 0, kad grįžtumėte atgal.
   wwcteOffSender: Subjekto vertimas išjungtas.
   wwctGUIEntityButton: Perjungti subjekto vertimą
   wwctrlRateLimitBadInt: Jūsų normos limitas nėra tinkamas sveikasis skaičius.
-  wwcTranslatorErrorConsole: Problema kilo, kai vartotojas %i bandė jų vertimą. Prašome
+  wwcTranslatorErrorConsole: Problema kilo, kai vartotojas {0} bandė jų vertimą. Prašome
     patikrinti errorLog.txt daugiau informacijos.
   wwctGUIChatButton: Perjungti Pokalbių Vertimas
   wwcrBegin: Perkrovimas WorldwideChat...
-  wwctTranslationStoppedOtherPlayer: Vertimo sesija %i buvo sustabdyta.
+  wwctTranslationStoppedOtherPlayer: Vertimo sesija {0} buvo sustabdyta.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat yra verčiamas,
-    bet jūs turite aktyvų vertimo seansą iš %i į %o.
+    bet jūs turite aktyvų vertimo seansą iš {0} į {1}.
   wwctCannotTranslateConsole: Jūs negalite pradėti vertimo sesijos konsolės!
-  wwctLangToLangStart: Pradedama nauja vertimo sesija nuo %i iki %o.
-  wwcOnJoinTranslationNotificationSourceLang: Turite aktyvų vertimo seansą iš %i iki
-    %o.
-  wwctAutoTranslateStartOtherPlayer: Pradedama nauja vertimo sesija %i į %o.
+  wwctLangToLangStart: Pradedama nauja vertimo sesija nuo {0} iki {1}.
+  wwcOnJoinTranslationNotificationSourceLang: Turite aktyvų vertimo seansą iš {0} iki
+    {0}.
+  wwctAutoTranslateStartOtherPlayer: Pradedama nauja vertimo sesija {0} į {1}.
   wwctTranslationStopped: Jūsų vertimo sesija buvo sustabdyta.
-  wwctLangToLangStartOtherPlayer: Pradedama nauja vertimo sesija %o nuo %i iki %e.
-  wwctAutoTranslateStart: Pradedama nauja vertimo sesija į %o.
-  wwcOnJoinTranslationNotificationNoSourceLang: Turite aktyvų vertimo seansą %o.
+  wwctLangToLangStartOtherPlayer: Pradedama nauja vertimo sesija {0} nuo {1} iki {2}.
+  wwctAutoTranslateStart: Pradedama nauja vertimo sesija į {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Turite aktyvų vertimo seansą {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat yra išverstas,
-    bet jūs turite aktyvų vertimo seansą %o.
+    bet jūs turite aktyvų vertimo seansą {0}.
   wwcConfigGUIChangesNotSaved: Jūsų pakeitimai neįsigalios tol, kol spustelėsite raudoną
     barjerą /wwcc.
   wwctciOffSender: Gaunamų pokalbių vertimas išjungtas.
@@ -294,24 +294,24 @@ Messages:
   wwctcoOnSender: Išeinantis pokalbių vertimas įjungtas. Viskas, ką sakote, bus išversta!
   wwctciOnSender: Įjungtas įeinantis pokalbių vertimas. Viskas, ką gausite, bus išversta!
   wwctGUIChatMenu: Perjungti Pokalbių vertimo meniu
-  wwctcoOnTarget: Išeinančio pokalbio vertimas įjungtas %i.
-  wwctcoOffTarget: Išeinančio pokalbio vertimas išjungtas %i.
+  wwctcoOnTarget: Išeinančio pokalbio vertimas įjungtas {0}.
+  wwctcoOffTarget: Išeinančio pokalbio vertimas išjungtas {0}.
   wwctGUIChatOutgoingButton: Perjungti Išeinantis Pokalbių Vertimas
-  wwctciOnTarget: Gaunamų pokalbių vertimas įjungtas %i.
-  wwctciOffTarget: Gaunamų pokalbių vertimas išjungtas %i.
+  wwctciOnTarget: Gaunamų pokalbių vertimas įjungtas {0}.
+  wwctciOffTarget: Gaunamų pokalbių vertimas išjungtas {0}.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: Originalus įeinantis pokalbis
     pridedamas prie vertimo kaip užveskite pelės žymeklį tekstą sėkmingai perjungtas.
   wwcConfigGUISendIncomingHoverTextChatButton: Pridėti originalius gaunamus pranešimus
     kaip užvesties tekstą
-  wwctGUIExistingChatOutgoingEnabled: 'Išeinantis pokalbių vertimas Įgalintas: %i'
-  wwctGUIExistingTranslationInput: 'Įvesties kalba: %i'
-  wwctGUIExistingChatIncomingEnabled: 'Įgalintas gaunamų pokalbių vertimas: %i'
-  wwctGUIExistingTranslationOutput: 'Išvesties kalba: %i'
+  wwctGUIExistingChatOutgoingEnabled: 'Išeinantis pokalbių vertimas Įgalintas: {0}'
+  wwctGUIExistingTranslationInput: 'Įvesties kalba: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Įgalintas gaunamų pokalbių vertimas: {0}'
+  wwctGUIExistingTranslationOutput: 'Išvesties kalba: {0}'
   wwcTranslatorAttempt: Bandymas prisijungti prie vertėjo konfig.yml... (Bandymas
-    %i/ %o)
-  wwcTimeoutExceptionConsole: Žaidėjas %Aš turėjau naujausią užklausą laiko. Ši klaida
+    {0}/ {1})
+  wwcTimeoutExceptionConsole: Žaidėjas {0}š turėjau naujausią užklausą laiko. Ši klaida
     nėra mirtina, bet WorldwideChat turėtų būti perkrautas, jei ji ir toliau įvyks.
-  wwcGUIPageNumber: 'Puslapio numeris: %i'
+  wwcGUIPageNumber: 'Puslapio numeris: {0}'
   wwcConfigYAMLFallback: Sumažėja atgal į YAML...
   wwcConfigGUIToggleSQLButton: Perjungti SQL
   wwcConfigConversationToggleSQLSuccess: SQL sėkmingai perėjo. Perkraukite, kad pakeitimas
@@ -332,38 +332,38 @@ Messages:
   wwcConfigGUISQLPortButton: Pakeisti SQL prievadą
   wwcConfigGUISQLOptionalArgsButton: Keisti SQL pasirinktinius argumentus
   wwcConfigConversationToggleSQLSSLSuccess: SSL SQL sėkmingai perėjo.
-  wwcConfigConversationSQLPortInput: Dabartinis prievadas yra %i. Įveskite bet ką,
+  wwcConfigConversationSQLPortInput: Dabartinis prievadas yra {0}. Įveskite bet ką,
     išskyrus 0, kad nustatytumėte naują prievadą, arba įveskite 0, kad grįžtumėte
     atgal.
   wwcConfigGUISQLPasswordButton: Keisti SQL slaptažodį
   wwcConfigConversationSQLHostnameSuccess: Sėkmingai pakeistas SQL hostname.
-  wwcConfigConversationSQLHostnameInput: Dabartinis hostname yra %i. Įveskite bet
+  wwcConfigConversationSQLHostnameInput: Dabartinis hostname yra {0}. Įveskite bet
     ką, išskyrus 0, kad nustatytumėte naują hostname, arba įveskite 0, kad grįžtumėte.
   wwcConfigGUISQLHostnameButton: Keisti SQL Hostname
   wwcConfigConversationSQLOptionalArgsSuccess: Sėkmingai pakeitė neprivalomus SQL
     argumentus.
   wwcConfigConversationSQLPasswordSuccess: Sėkmingai pakeistas SQL slaptažodis.
-  wwcConfigConversationSQLPasswordInput: Dabartinis slaptažodis yra %i. Įveskite bet
+  wwcConfigConversationSQLPasswordInput: Dabartinis slaptažodis yra {0}. Įveskite bet
     ką, išskyrus 0, kad nustatytumėte naują slaptažodį, arba įveskite 0, kad grįžtumėte.
   wwcConfigGUIToggleSQLSSLButton: Perjungti SQL SSL
   wwcConfigConversationSQLUsernameSuccess: Sėkmingai pakeistas SQL vartotojo vardas.
-  wwcConfigConversationSQLUsernameInput: Dabartinis vartotojo vardas yra %i. Įveskite
+  wwcConfigConversationSQLUsernameInput: Dabartinis vartotojo vardas yra {0}. Įveskite
     bet ką, išskyrus 0, kad nustatytumėte naują vartotojo vardą, arba įveskite 0,
     kad grįžtumėte.
   wwcConfigConversationSQLPortSuccess: Sėkmingai pakeitė SQL prievadą.
   wwcConfigGUISQLUsernameButton: Keisti SQL vartotojo vardą
   wwcConfigConversationSQLOptionalArgsCleared: Neprivalomi argumentai sėkmingai išvalytas.
   wwcConfigConversationSQLOptionalArgsInput: 'Dabartiniai neprivalomi SQL argumentai
-    yra: %i. Įveskite argumentus, atskirtus kableliu (key=value, key2 = value2) arba
+    yra: {0}. Įveskite argumentus, atskirtus kableliu (key=value, key2 = value2) arba
     įveskite aiškų, kad nuvalytumėte dabartinius argus, arba įveskite 0 grįžti.'
   wwcConfigConversationSQLDatabaseNameInput: Dabartinis duomenų bazės pavadinimas
-    yra %i. Įveskite bet ką, išskyrus 0, kad nustatytumėte naują duomenų bazės pavadinimą,
+    yra {0}. Įveskite bet ką, išskyrus 0, kad nustatytumėte naują duomenų bazės pavadinimą,
     arba įveskite 0, kad grįžtumėte.
   wwcConfigGUISQLDatabaseNameButton: Keisti SQL duomenų bazę
   wwcConfigConversationSQLDatabaseNameSuccess: Sėkmingai pakeistas SQL duomenų bazės
     pavadinimas.
   wwcConfigConversationFatalAsyncAbort: Dabartinis laikas nutraukti visas async užduotis
-    yra %i sekundės. Įveskite ką nors aukščiau 7, kad nustatytumėte naują timeout,
+    yra {0} sekundės. Įveskite ką nors aukščiau 7, kad nustatytumėte naują timeout,
     arba ką nors žemiau jo grįžti.
   wwcConfigConversationFatalAsyncSuccess: Async užduotis timeout nustatyti sėkmingai.
   wwcConfigGUIFatalAsyncAbortButton: Pakeisti Async Užduočių Laikas
@@ -373,7 +373,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Keisti Nemokamai Versti API raktą
   libreHttp403: Trūksta “Libre Translate API Key”, arba esate uždraustas iš serverio!
   wwcConfigConversationLibreURLSuccess: Nemokama URL sėkmingai nustatyti.
-  wwcConfigConversationLibreTranslateApiKeyInput: Dabartinis API raktas yra %i. Įveskite
+  wwcConfigConversationLibreTranslateApiKeyInput: Dabartinis API raktas yra {0}. Įveskite
     API raktą, skirtą “Libre”, arba įveskite 0, kad grįžtumėte.
   wwcConfigGUILibreTranslateButton: Nemokamai Versti
   libreHttp429: Nėra pasitikėjimo dėl normos ribos nuo serverio.
@@ -381,39 +381,39 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: Sėkmingai perėjo Nemokamai Versti.
     Perkraukite, kad pakeitimai įsigaliotų.
   wwcConfigConversationLibreTranslateApiKeySuccess: Nemokamai API raktų rinkinys sėkmingai.
-  wwcConfigConversationLibreURLInput: Dabartinis URL yra %i. Įveskite URL, skirtą
+  wwcConfigConversationLibreURLInput: Dabartinis URL yra {0}. Įveskite URL, skirtą
     “Libre”, arba įveskite 0, kad grįžtumėte atgal.
-  libreHttpUnknown: 'Nežinoma http klaida: %i'
+  libreHttpUnknown: 'Nežinoma http klaida: {0}'
   wwcConfigGUILibreTranslateURLButton: Keisti Nemokamai Versti URL
-  wwcConfigConnectionFail: Nepavyko prisijungti prie %i.
+  wwcConfigConnectionFail: Nepavyko prisijungti prie {0}.
   wwcConfigGUIMongoSettings: MongoDB konfigūracija
   wwcConfigConversationMongoDatabaseNameSuccess: Sėkmingai pakeitė MongoDB duomenų
     bazės pavadinimą.
   wwcConfigGUIMongoHostnameButton: Keisti MongoDB Hostname
-  wwcConfigConversationMongoPasswordInput: Dabartinis slaptažodis yra %i. Įveskite
+  wwcConfigConversationMongoPasswordInput: Dabartinis slaptažodis yra {0}. Įveskite
     bet ką, išskyrus 0, kad nustatytumėte naują slaptažodį, arba įveskite 0, kad grįžtumėte
     atgal.
-  wwcConfigConversationMongoPortInput: Dabartinis prievadas yra %i. Įveskite bet ką,
+  wwcConfigConversationMongoPortInput: Dabartinis prievadas yra {0}. Įveskite bet ką,
     išskyrus 0, kad nustatytumėte naują prievadą, arba įveskite 0, kad grįžtumėte
     atgal.
   wwcConfigConversationToggleMongoSuccess: MongoDB sėkmingai perėjo. Perkraukite,
     kad pakeitimas įsigaliotų.
   wwcConfigConversationMongoHostnameInput: Dabartinis pagrindinio kompiuterio vardas
-    yra %i. Įveskite bet ką, išskyrus 0, kad nustatytumėte naują pagrindinio kompiuterio
+    yra {0}. Įveskite bet ką, išskyrus 0, kad nustatytumėte naują pagrindinio kompiuterio
     vardą, arba įveskite 0, kad grįžtumėte atgal.
   wwcConfigConversationMongoHostnameSuccess: Sėkmingai pakeitė “MongoDB” pagrindinio
     kompiuterio vardą.
   wwcConfigGUIMongoMenuButton: Keisti MongoDB nustatymus
   wwcConfigGUIToggleMongoButton: Perjungti MongoDB
   wwcConfigConversationMongoDatabaseNameInput: Dabartinis duomenų bazės pavadinimas
-    yra %i. Įveskite bet ką, išskyrus 0, kad nustatytumėte naują duomenų bazės pavadinimą,
+    yra {0}. Įveskite bet ką, išskyrus 0, kad nustatytumėte naują duomenų bazės pavadinimą,
     arba įveskite 0, kad grįžtumėte atgal.
   wwcConfigConversationMongoOptionalArgsInput: 'Dabartiniai neprivalomi “MongoDB”
-    argumentai yra: %i. Įveskite argumentus, atskirtus kableliu (raktas = reikšmė,
+    argumentai yra: {0}. Įveskite argumentus, atskirtus kableliu (raktas = reikšmė,
     raktas2 = reikšmė2) arba įveskite aiškų, kad nuvalytumėte dabartines argas, arba
     įveskite 0, kad grįžtumėte.'
   wwcConfigGUIMongoDatabaseNameButton: Keisti MongoDB duomenų bazę
-  wwcConfigConversationMongoUsernameInput: Dabartinis vartotojo vardas yra %i. Įveskite
+  wwcConfigConversationMongoUsernameInput: Dabartinis vartotojo vardas yra {0}. Įveskite
     bet ką, išskyrus 0, kad nustatytumėte naują vartotojo vardą, arba įveskite 0,
     kad grįžtumėte atgal.
   wwcConfigGUIMongoOptionalArgsButton: Keisti MongoDB neprivalomus argumentus
@@ -438,7 +438,7 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Keisti DeepL Versti API raktą
   wwcConfigGUIToggleDeepLTranslateButton: Perjungti DeepL versti
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API raktas sėkmingai nustatytas.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Dabartinis API raktas yra %i. Įveskite
+  wwcConfigConversationDeepLTranslateApiKeyInput: Dabartinis API raktas yra {0}. Įveskite
     API raktą DeepL arba įveskite 0, jei norite grįžti.
   wwcConfigErrorsToIgnoreSuccess: Sėkmingai užregistruotos vertėjo klaidos ignoruoti.
   wwcConfigErrorsToIgnoreInvalid: Neteisingas vertėjas klaidų ignoruoti nustatyti
@@ -448,24 +448,24 @@ Messages:
     ignoruotų frazes.
   wwcConfigGUIIgnoreErrorsButton: Keisti klaidas ignoruoti
   wwcConfigConversationIgnoreErrorsInput: 'Dabartinis vertėjo klaidų, kurias reikia
-    ignoruoti, frazių sąrašas yra: %i. Įveskite argumentus, atskirtus kableliu (raktas
+    ignoruoti, frazių sąrašas yra: {0}. Įveskite argumentus, atskirtus kableliu (raktas
     = reikšmė, raktas2 = reikšmė2) arba įveskite aiškų, kad nuvalytumėte dabartines
     argas, arba įveskite 0, kad grįžtumėte. Be to, įvesdami “*”, įskiepiai netikrins
     jokių vertėjo klaidų.'
   wwcConfigConversationIgnoreErrorsCleared: Vertėjas klaidų ignoruoti frazes išvalytas
     sėkmingai.
 
-  wwcsActiveTransPrevRate: 'Aktyvus vertėjas Ankstesnis normos limito laikas: %i'
-  wwcsActiveTransSaved: 'Aktyvus vertėjas, įrašytas į diską: %i'
-  wwcsActiveTransIncoming: 'Aktyvus Vertėjas Vertimas Gaunamus Pokalbius: %i'
-  wwcsActiveTransOutLang: 'Aktyvaus vertėjo išvesties kalba: %i'
-  wwcsActiveTransInLang: 'Aktyvaus vertėjo įvesties kalba: %i'
-  wwcsActiveTransBook: 'Aktyvaus vertėjo vertimo knyga: %i'
-  wwcsActiveTransSign: 'Aktyvus vertėjo vertimo ženklas: %i'
-  wwcsActiveTransUUID: 'Aktyvus vertėjas UUID: %i'
-  wwcsActiveTransRateLimit: 'Aktyvaus vertėjo normos riba: %i'
-  wwcsActiveTransColorWarning: 'Aktyvus vertėjas gavo spalvotą įspėjimą: %i'
-  wwcsActiveTransOutgoing: 'Aktyvus vertėjas, verčiantis išeinančius pokalbius: %i'
-  wwcsActiveTransItem: 'Aktyvus vertėjas Vertimo punktas: %i'
-  wwcsActiveTransEntity: 'Aktyvus vertėjas Vertimo subjektas: %i'
+  wwcsActiveTransPrevRate: 'Aktyvus vertėjas Ankstesnis normos limito laikas: {0}'
+  wwcsActiveTransSaved: 'Aktyvus vertėjas, įrašytas į diską: {0}'
+  wwcsActiveTransIncoming: 'Aktyvus Vertėjas Vertimas Gaunamus Pokalbius: {0}'
+  wwcsActiveTransOutLang: 'Aktyvaus vertėjo išvesties kalba: {0}'
+  wwcsActiveTransInLang: 'Aktyvaus vertėjo įvesties kalba: {0}'
+  wwcsActiveTransBook: 'Aktyvaus vertėjo vertimo knyga: {0}'
+  wwcsActiveTransSign: 'Aktyvus vertėjo vertimo ženklas: {0}'
+  wwcsActiveTransUUID: 'Aktyvus vertėjas UUID: {0}'
+  wwcsActiveTransRateLimit: 'Aktyvaus vertėjo normos riba: {0}'
+  wwcsActiveTransColorWarning: 'Aktyvus vertėjas gavo spalvotą įspėjimą: {0}'
+  wwcsActiveTransOutgoing: 'Aktyvus vertėjas, verčiantis išeinančius pokalbius: {0}'
+  wwcsActiveTransItem: 'Aktyvus vertėjas Vertimo punktas: {0}'
+  wwcsActiveTransEntity: 'Aktyvus vertėjas Vertimo subjektas: {0}'
 

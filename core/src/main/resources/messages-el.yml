@@ -1,66 +1,66 @@
 Messages:
-  wwcgAutoTranslateStart: Μεταφράζω τώρα την παγκόσμια συνομιλία σε %o.
+  wwcgAutoTranslateStart: Μεταφράζω τώρα την παγκόσμια συνομιλία σε {0}.
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: Η καθολική συνομιλία μεταφράζεται
-    σε %o.
+    σε {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Αλλαγή κλειδιού πρόσβασης Amazon
   wwcrFail: Η επαναφόρτωση του WorldwideChat
   wwcConfigGUIUpdateCheckerButton: Αλλαγή ελέγχου για καθυστέρηση ενημερώσεων
   wwcUpdaterFailedGeneric: Δεν είναι δυνατός ο έλεγχος για ενημερώσεις WorldwideChat
   wwcConfigConversationUpdateCheckerInput: Η τρέχουσα καθυστέρηση στον έλεγχο ενημέρωσης
-    είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 10 για να ορίσετε
+    είναι {0} δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 10 για να ορίσετε
     μια νέα τιμή ή οτιδήποτε λιγότερο από 10 για να επιστρέψετε.
   wwctGUIMainMenuGlobal: Μενού καθολικής μετάφρασης
   wwcConfigConversationPluginUpdateChatSuccess: Ενημέρωση plugin υπενθύμιση συνομιλίας
     εναλλαγή με επιτυχία.
-  wwctbOnTarget: Η μετάφραση του βιβλίου είναι ενεργοποιημένη για %i.
-  wwcsNotATranslator: Δεν υπάρχουν ακόμα διαθέσιμες εγγραφές για %i.
+  wwctbOnTarget: Η μετάφραση του βιβλίου είναι ενεργοποιημένη για {0}.
+  wwcsNotATranslator: Δεν υπάρχουν ακόμα διαθέσιμες εγγραφές για {0}.
   wwcConfigGUIbStatsButton: Εναλλαγή bStats
   wwctGUINewTranslationSource: Επιλέξτε μια γλώσσα προέλευσης
-  wwcConfigConnectionFailed: Αποτυχία σύνδεσης στο %o. Βεβαιωθείτε ότι τα διαπιστευτήριά
+  wwcConfigConnectionFailed: Αποτυχία σύνδεσης στο {0}. Βεβαιωθείτε ότι τα διαπιστευτήριά
     σας και το τείχος προστασίας έχουν ρυθμιστεί σωστά!
   wwcConfigEnabledbStats: Ενεργοποιημένα bStats.
-  wwctGUIMainMenuPlayer: Μενού μετάφρασης του %i
+  wwctGUIMainMenuPlayer: Μενού μετάφρασης του {0}
   wwctGUIBookButton: Εναλλαγή μετάφρασης βιβλίου
-  wwcLangDetected: Εντοπίστηκε γλώσσα %o.
+  wwcLangDetected: Εντοπίστηκε γλώσσα {0}.
   wwcBookTranslateStart: Μεταφράζω το βιβλίο στόχου...
   wwcConfigDisabledbStats: Απενεργοποιημένη bStats.
   wwctsOffSender: Η μετάφραση υπογραφής απενεργοποιήθηκε.
   wwcUpdaterParserFailed: Αποτυχία ανάλυσης δεδομένων ενημέρωσης από το Github.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Το τρέχον μυστικό κλειδί είναι
-    %i. Εισαγάγετε ένα μυστικό κλειδί για το Amazon ή πληκτρολογήστε 0 για να επιστρέψετε.
+    {0}. Εισαγάγετε ένα μυστικό κλειδί για το Amazon ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwctbOffSender: Η μετάφραση του βιβλίου απενεργοποιημένη.
   wwcConfigGUIAmazonTranslateButton: Amazon μετάφραση
   wwcConfigConversationLangSuccess: Η γλώσσα του προσθέτου άλλαξε με επιτυχία.
-  wwcsSuccessfulTranslations: 'Επιτυχημένες μεταφράσεις: %i'
+  wwcsSuccessfulTranslations: 'Επιτυχημένες μεταφράσεις: {0}'
   wwcConfigConversationTranslationCacheInput: Το τρέχον όριο προσωρινής μνήμης μετάφρασης
-    είναι %i φράσεις. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια
+    είναι {0} φράσεις. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια
     νέα τιμή ή πληκτρολογήστε 0 για να απενεργοποιήσετε τη μνήμη cache μετάφρασης.
     Πληκτρολογήστε οτιδήποτε λιγότερο από 0 για να πάει πίσω.
-  wwctbOffTarget: Η μετάφραση του βιβλίου απενεργοποιημένη για %i.
+  wwctbOffTarget: Η μετάφραση του βιβλίου απενεργοποιημένη για {0}.
   wwcConfigGUIGeneralSettings: Γενικές ρυθμίσεις
   wwcInvalidLang: Μη έγκυρη γλώσσα στο config.yml. Προεπιλογές σε en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Περιοχή Amazon έχει οριστεί με
     επιτυχία.
   wwcConfigRateLimitEnabled: Το καθολικό όριο ρυθμού ενεργοποιήθηκε και ρυθμίστηκε
-    σε %i δευτερόλεπτα.
+    σε {0} δευτερόλεπτα.
   wwcBadPerms: Δεν έχετε τα απαιτούμενα δικαιώματα για να εκτελέσετε αυτήν την εντολή!
   wwcConfigGUILangButton: Αλλαγή γλώσσας προσθέτου
   wwctGUISignButton: Εναλλαγή Μετάφρασης Υπογραφών
   wwcUpdaterOutOfDate: Το WorldwideChat είναι ξεπερμένο. Ενημερώστε την τελευταία
-    έκδοση, %i.
+    έκδοση, {0}.
   wwcConfigGUINextPageButton: Επόμενη Σελίδα
   wwcConfigInvalidTranslatorSettings: Μη έγκυρες ρυθμίσεις μεταφραστή! Παρακαλώ ενεργοποιήστε
     μόνο έναν μεταφραστή στο config.yml σας.
   wwcConfigGUIQuitButton: Έξοδος & αποθήκευση αλλαγών
   wwctPlayerNotFound: Παίχτης %Δεν βρέθηκε.
   wwcConfigGUIAmazonTranslateRegionButton: Αλλαγή περιοχής του Αμαζονίου
-  wwcConfigConversationLangInput: 'Η τρέχουσα γλώσσα πρόσθετου είναι %i. Εισαγάγετε
+  wwcConfigConversationLangInput: 'Η τρέχουσα γλώσσα πρόσθετου είναι {0}. Εισαγάγετε
     έναν έγκυρο κωδικό γλώσσας ή πληκτρολογήστε 0 για ακύρωση. Κωδικοί έγκυρης γλώσσας:
-    %o'
+    {0}'
   wwcConfigConversationLangInvalid: Μη έγκυρος κωδικός γλώσσας!
   wwcConfigGUIWatsonAPIKeyButton: Αλλαγή κλειδιού API Watson
-  wwcEnabled: Ενεργοποιημένη έκδοση %i WorldwideChat
-  wwcgLangToLangStart: Τώρα μεταφράζεται η παγκόσμια συνομιλία από %i σε %o.
+  wwcEnabled: Ενεργοποιημένη έκδοση {0} WorldwideChat
+  wwcgLangToLangStart: Τώρα μεταφράζεται η παγκόσμια συνομιλία από {0} σε {1}.
   wwctbOnSender: Η μετάφραση του βιβλίου είναι ενεργοποιημένη. Κάντε δεξί κλικ κρατώντας
     ένα βιβλίο για να το μεταφράσετε!
   wwcListenersInitialized: Αρχικοποιημένοι ακροατές.
@@ -68,12 +68,12 @@ Messages:
     plugin
   wwcConfigConversationSendTranslationChatSuccess: Ενεργή υπενθύμιση συνομιλίας μεταφραστή
     μεταβλήθηκε με επιτυχία.
-  wwctsOffTarget: Η μετάφραση υπογραφής απενεργοποιημένη για %i.
+  wwctsOffTarget: Η μετάφραση υπογραφής απενεργοποιημένη για {0}.
   wwcUpdaterConnectionFailed: Δεν είναι δυνατός ο έλεγχος για τις τελευταίες ενημερώσεις
     στο Github.
   watsonNotFoundExceptionNotification: Δεν είναι δυνατή η περαιτέρω μετάφραση της
     εισόδου σας.
-  wwcConfigConversationWatsonAPIKeyInput: Το τρέχον κλειδί API είναι %i. Εισαγάγετε
+  wwcConfigConversationWatsonAPIKeyInput: Το τρέχον κλειδί API είναι {0}. Εισαγάγετε
     ένα κλειδί API για το Watson ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwctGUIStopButton: Σταματήστε τη μετάφραση
   wwcgTranslationStopped: Η μετάφραση της παγκόσμιας συνομιλίας έχει διακοπεί.
@@ -83,9 +83,9 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Αλλαγή του κλειδιού API μετάφρασης Google
   wwcSignDeletedOrTooLong: 'Το σύμβολο προορισμού είτε διαγράφηκε είτε η μετάφραση
     ήταν πολύ μεγάλη. Μετάφραση:'
-  wwctsOnTarget: Ενεργοποίηση μετάφρασης υπογραφής για %i.
+  wwctsOnTarget: Ενεργοποίηση μετάφρασης υπογραφής για {0}.
   wwcConfigCacheDisabled: Η μνήμη cache του μεταφραστή απενεργοποιήθηκε.
-  wwcConfigConversationWatsonURLInput: Η τρέχουσα διεύθυνση URL είναι %i. Εισαγάγετε
+  wwcConfigConversationWatsonURLInput: Η τρέχουσα διεύθυνση URL είναι {0}. Εισαγάγετε
     μια διεύθυνση URL υπηρεσίας για το Watson ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcBookDone: Το βιβλίο μεταφράστηκε με επιτυχία.
   wwctsOnSender: Ενεργοποίηση μετάφρασης υπογραφής. Κάντε δεξί κλικ σε μια πινακίδα
@@ -95,7 +95,7 @@ Messages:
   wwctGUITranslationButton: Έναρξη μετάφρασης
   wwctGUIAutoDetectButton: Αυτόματος εντοπισμός γλώσσας προέλευσης
   wwcUpdaterUpToDate: Το WorldwideChat είναι ενημερωμένο!
-  wwcConfigConversationAmazonTranslateRegionInput: Η τρέχουσα περιοχή είναι %i. Εισαγάγετε
+  wwcConfigConversationAmazonTranslateRegionInput: Η τρέχουσα περιοχή είναι {0}. Εισαγάγετε
     μια περιοχή για το Amazon ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcNoConsole: Αυτή η εντολή μπορεί να τρέξει μόνο από έναν παίκτη.
   wwcInitializationFail: Η προετοιμασία του WorldwideChat απέτυχε.
@@ -105,17 +105,17 @@ Messages:
     έκδοση.
   wwcConfigConversationRateLimitSuccess: Το όριο βαθμολογίας ορίστηκε με επιτυχία.
   wwcConfigConversationWatsonURLSuccess: Η διεύθυνση URL Watson ορίστηκε με επιτυχία.
-  wwctbPlayerNotFound: Ο αναπαραγωγής %i είτε δεν βρέθηκε είτε δεν είναι ενεργός μεταφραστής.
+  wwctbPlayerNotFound: Ο αναπαραγωγής {0} είτε δεν βρέθηκε είτε δεν είναι ενεργός μεταφραστής.
   wwcConfigConversationTranslationCacheSuccess: Το όριο cache μετάφρασης ορίστηκε
     με επιτυχία.
   wwctInvalidArgs: Μη έγκυρα ορίσματα!
   wwcConfigGUIPrefixButton: Αλλαγή προθέματος πρόσθετου
   wwctSameLangError: Δεν μπορείτε να μεταφράσετε στην ίδια γλώσσα!
   wwctGUINewTranslationTarget: Επιλογή γλώσσας προορισμού
-  wwcConfigConnectionSuccess: Επιτυχής σύνδεση στο %o!
+  wwcConfigConnectionSuccess: Επιτυχής σύνδεση στο {0}!
   wwcConfigGUIGoogleTranslateButton: Μετάφραση Google
-  wwcsIsActiveTranslator: 'Είναι ενεργός μεταφραστής: %i'
-  wwcConfigConversationPrefixInput: Το τρέχον πρόθεμα είναι %i. Πληκτρολογήστε ένα
+  wwcsIsActiveTranslator: 'Είναι ενεργός μεταφραστής: {0}'
+  wwcConfigConversationPrefixInput: Το τρέχον πρόθεμα είναι {0}. Πληκτρολογήστε ένα
     νέο ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigGUIPreviousPageButton: Προηγούμενη σελίδα
   wwcConfigGUITranslatorCacheButton: Αλλαγή του ορίου προσωρινής μνήμης μετάφρασης
@@ -133,61 +133,61 @@ Messages:
   wwcUnsupportedVersion: 'Εκτελείτε μια μη υποστηριζόμενη έκδοση του Bukkit, Spigot
     ή Paper. Υποστηριζόμενες εκδόσεις:'
   wwcGlobalOnJoinTranslationNotificationSourceLang: Η καθολική συνομιλία μεταφράζεται
-    από %i σε %o.
+    από {0} σε {1}.
   wwcConfigGUITranslatorSettings: Διαμόρφωση μεταφραστή
-  wwcConfigConversationGoogleTranslateAPIKeyInput: Το τρέχον κλειδί API είναι %i.
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Το τρέχον κλειδί API είναι {0}.
     Εισαγάγετε ένα κλειδί API για το Google Translate ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigConversationRateLimitInput: Το τρέχον όριο καθολικού ρυθμού ανά μετάφραση
-    είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε
+    είναι {0} δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε
     μια νέα τιμή ή πληκτρολογήστε 0 για να απενεργοποιήσετε το όριο. Πληκτρολογήστε
     οτιδήποτε λιγότερο από 0 για να πάει πίσω.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Το κλειδί API Μετάφραση Google
     έχει οριστεί με επιτυχία.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Αλλαγή μυστικού κλειδιού Amazon
   wwcVersion: Παγκόσμια συνομιλία, έκδοση
-  wwcsAttemptedTranslations: 'Απόπειρα μεταφράσεων: %i'
+  wwcsAttemptedTranslations: 'Απόπειρα μεταφράσεων: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Το μυστικό κλειδί Amazon που
     με επιτυχία.
   wwcConfigConversationWatsonAPIKeySuccess: Το κλειδί Watson API ορίστηκε με επιτυχία.
-  wwcRateLimit: Οι μεταφράσεις σας είναι περιορισμένες. Παρακαλώ περιμένετε άλλο %i
+  wwcRateLimit: Οι μεταφράσεις σας είναι περιορισμένες. Παρακαλώ περιμένετε άλλο {0}
     δευτερόλεπτα.
   wwcConfigCacheEnabled: Η μνήμη cache του μεταφραστή είναι ενεργοποιημένη και έχει
-    οριστεί σε ένα όριο του %i.
+    οριστεί σε ένα όριο του {0}.
   wwctGUIExistingTranslationButton: Αντικατάσταση τρέχουσας συνεδρίας μετάφρασης
   wwcUserDataReloaded: Φόρτωσε όλα τα αποθηκευμένα δεδομένα χρήστη.
   wwcConfigGUISendTranslationChatButton: Αποστολή υπενθύμισης συνομιλίας στον ενεργό
     μεταφραστή κατά τη σύνδεση
-  wwcsLastTranslationTime: 'Τελευταία (επιτυχής) Χρόνος μετάφρασης: %i'
+  wwcsLastTranslationTime: 'Τελευταία (επιτυχής) Χρόνος μετάφρασης: {0}'
   wwctbNotATranslator: Δεν είσαι ενεργός μεταφραστής! Βεβαιωθείτε ότι έχετε ρυθμίσει
     αυτό με /wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Το τρέχον κλειδί πρόσβασης είναι
-    %i. Εισαγάγετε ένα κλειδί πρόσβασης για το Amazon ή πληκτρολογήστε 0 για να επιστρέψετε.
+    {0}. Εισαγάγετε ένα κλειδί πρόσβασης για το Amazon ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: Κλειδί πρόσβασης Amazon που
     με επιτυχία.
   wwcConfigBadUpdateDelay: Η μη έγκυρη καθυστέρηση του προγράμματος ενημέρωσης έχει
     οριστεί στο config.yml. Προεπιλογές σε 86400 δευτερόλεπτα...
   wwctrlRateLimitOffSender: Απενεργοποίησε το όριο τιμών.
-  wwctrlRateLimitAlreadyOffTarget: Το όριο ποσοστού του %i είναι ήδη απενεργοποιημένο.
-  wwctrlPlayerNotFound: Ο αναπαραγωγής %i είτε δεν βρέθηκε είτε δεν είναι ενεργός
+  wwctrlRateLimitAlreadyOffTarget: Το όριο ποσοστού του {0} είναι ήδη απενεργοποιημένο.
+  wwctrlPlayerNotFound: Ο αναπαραγωγής {0} είτε δεν βρέθηκε είτε δεν είναι ενεργός
     μεταφραστής.
-  wwctrlRateLimitSetSender: Ορίστε το όριο ταχύτητας σε %i δευτερόλεπτα.
-  wwctrlRateLimitOffTarget: Απενεργοποίησε το όριο ρυθμού του %i.
-  wwctrlRateLimitSetTarget: Ορίστε το όριο ταχύτητας του %i σε %o δευτερόλεπτα.
+  wwctrlRateLimitSetSender: Ορίστε το όριο ταχύτητας σε {0} δευτερόλεπτα.
+  wwctrlRateLimitOffTarget: Απενεργοποίησε το όριο ρυθμού του {0}.
+  wwctrlRateLimitSetTarget: Ορίστε το όριο ταχύτητας του {0} σε {1} δευτερόλεπτα.
   wwctrlNotATranslator: Δεν είσαι ενεργός μεταφραστής! Βεβαιωθείτε ότι έχετε ρυθμίσει
     αυτό με /wwct.
   wwctrlRateLimitAlreadyOffSender: Το όριο τιμών σας είναι ήδη απενεργοποιημένο.
   wwctGUIRateButton: Ορισμός ορίου ρυθμού
   wwctGUIConversationRateLimit: Το όριο ταχύτητας ανά μετάφραση είναι επί του παρόντος
-    %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια
+    {0} δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια
     νέα τιμή ή πληκτρολογήστε 0 για να απενεργοποιήσετε το όριο. Πληκτρολογήστε οτιδήποτε
     λιγότερο από 0 για να πάει πίσω.
   wwctGUITargetPlayerNull: Ο παίκτης προορισμού αποσυνδέθηκε από το διακομιστή.
   wwcConfigConversationSyncUserDataDelayInput: Η τρέχουσα καθυστέρηση ανά συγχρονισμό
-    δεδομένων χρήστη είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από
+    δεδομένων χρήστη είναι {0} δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από
     10 για να ορίσετε μια νέα τιμή ή οτιδήποτε λιγότερο από 10 για να επιστρέψετε.
   wwcConfigGUISyncUserDataButton: Αλλαγή καθυστέρησης συγχρονισμού δεδομένων χρήστη
   wwcConfigSyncDelayEnabled: Καθυστέρηση ανά χρήστη συγχρονισμού δεδομένων έχει οριστεί
-    σε %i δευτερόλεπτα.
+    σε {0} δευτερόλεπτα.
   wwcConfigConversationSyncUserDataDelaySuccess: Η καθυστέρηση συγχρονισμού δεδομένων
     χρήστη ορίστηκε με επιτυχία.
   wwcConfigSyncDelayInvalid: Ορισμός καθυστέρησης συγχρονισμού δεδομένων χρήστη στο
@@ -196,9 +196,9 @@ Messages:
     Προεπιλογές σε 10...
   wwcInventoryErrorPlayer: Εντοπίστηκε σφάλμα με το GUI σας. Ένα αρχείο καταγραφής
     έχει σταλεί στην κονσόλα.
-  wwcInventoryError: Εντοπίστηκε σφάλμα με το GUI του χρήστη %i. Παρακαλώ αναφέρετε
+  wwcInventoryError: Εντοπίστηκε σφάλμα με το GUI του χρήστη {0}. Παρακαλώ αναφέρετε
     αυτό το ζήτημα στον προγραμματιστή.
-  wwctiOffTarget: Η μετάφραση αντικειμένου απενεργοποιημένη για %i.
+  wwctiOffTarget: Η μετάφραση αντικειμένου απενεργοποιημένη για {0}.
   wwctiOffSender: Η μετάφραση αντικειμένου απενεργοποιήθηκε.
   wwcItemTranslateTitleStock: Δεν είναι δυνατή η μετάφραση προεπιλεγμένων ονομάτων
     στοιχείων.
@@ -206,15 +206,15 @@ Messages:
   wwcItemTranslateTitleDone: Μετάφραση τίτλου αντικειμένου με επιτυχία.
   wwcGUITempItem: Οθόνη Στοιχείου
   wwcItemTranslateStart: Μετάφραση στοχευόμενου αντικειμένου...
-  wwcBookTranslateTitleSuccess: 'Τίτλος μεταφρασμένου βιβλίου: %i'
+  wwcBookTranslateTitleSuccess: 'Τίτλος μεταφρασμένου βιβλίου: {0}'
   wwctiOnSender: Ενεργοποίηση μετάφρασης αντικειμένου. Κάντε δεξί κλικ με ένα στοιχείο
     στο κύριο χέρι σας για να το μεταφράσετε!
   wwcItemTranslateLoreStart: Μεταφράζοντας την παράδοση του στοχευόμενου αντικειμένου...
   wwcItemTranslateLoreDone: Μετάφραση αντικειμένων με επιτυχία.
-  wwctiOnTarget: Η μετάφραση αντικειμένου ενεργοποιήθηκε για %i.
+  wwctiOnTarget: Η μετάφραση αντικειμένου ενεργοποιήθηκε για {0}.
   wwcInvalidTranslator: Μη έγκυρες ρυθμίσεις μεταφραστή. Διορθώστε το στο config.yml
     ή στο /wwcc για να χρησιμοποιήσετε αυτό το πρόσθετο.
-  wwcConfigGUIEachTranslatorSettings: '%i Ρύθμιση παραμέτρων'
+  wwcConfigGUIEachTranslatorSettings: '{0} Ρύθμιση παραμέτρων'
   wwcConfigGUIWatsonButton: Γουάτσον
   wwcServerReloadWarning: Το WorldwideChat δεν επιτρέπει τη χρήση του /reload. Παρακαλώ
     προχωρήστε με προσοχή.
@@ -223,7 +223,7 @@ Messages:
     απενεργοποιήσετε.
   wwcTranslatorErrorThresholdReached: Έφτασε το όριο σφάλματος. Αυτό το πρόσθετο θα
     επαναφορτώσει τώρα και θα απενεργοποιήσει όλους τους μεταφραστές.
-  wwcConfigErrorLimitEnabled: Το όριο σφάλματος μεταφραστή έχει οριστεί σε %i.
+  wwcConfigErrorLimitEnabled: Το όριο σφάλματος μεταφραστή έχει οριστεί σε {0}.
   wwcTranslatorError: Παρουσιάστηκε ένα πρόβλημα κατά την προσπάθεια μετάφρασής σας.
     Παρακαλώ προσπαθήστε ξανά.
   wwcConfigErrorLimitInvalid: Μη έγκυρο όριο σφάλματος μεταφραστή που έχει οριστεί
@@ -231,10 +231,10 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: Ελέγξτε το errorLog.txt στο φάκελο
     πρόσθετων WorldwideChat για περισσότερες πληροφορίες.
   wwctInvalidInputLangCode: 'Μη έγκυρος κωδικός γλώσσας εισαγωγής που παρέχεται! Έγκυροι
-    κωδικοί lang: %o'
-  wwcsTitle: Εγγραφή του %i
+    κωδικοί lang: {0}'
+  wwcsTitle: Εγγραφή του {0}
   wwctInvalidOutputLangCode: 'Μη έγκυρος κωδικός γλώσσας εξόδου που παρέχεται! Έγκυροι
-    κωδικοί lang: %o'
+    κωδικοί lang: {0}'
   wwctGUISourceTranslationSelected: Έχετε επιλέξει αυτή τη γλώσσα.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Διαγραφή παράκαμψης
   wwcConfigConversationOverrideTextChange: Πληκτρολογήστε ένα νέο μήνυμα για αυτήν
@@ -266,49 +266,49 @@ Messages:
   wwcConfigMessageCharLimitInvalid: Μη έγκυρο όριο ανά μήνυμα που έχει οριστεί στο
     config.yml. Προεπιλογές σε 255 χαρακτήρες...
   wwcConfigConversationCharacterLimitSuccess: Το όριο χαρακτήρων ορίστηκε με επιτυχία.
-  wwcteOnTarget: Η μετάφραση της οντότητας είναι ενεργοποιημένη για %i.
-  wwcEntityTranslateDone: 'Όνομα μεταφρασμένης οντότητας: %i'
+  wwcteOnTarget: Η μετάφραση της οντότητας είναι ενεργοποιημένη για {0}.
+  wwcEntityTranslateDone: 'Όνομα μεταφρασμένης οντότητας: {0}'
   wwcEntityTranslateNoName: Η οντότητα δεν έχει προσαρμοσμένο όνομα.
   wwcConfigConversationErrorLimitInput: Το τρέχον όριο σφάλματος για κάθε μεταφραστή
-    είναι %i. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια νέα τιμή
+    είναι {0}. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια νέα τιμή
     ή πληκτρολογήστε οτιδήποτε μικρότερο ή ίσο με 0 για να επιστρέψετε.
   wwcConfigGUIGlobalRateLimitButton: Αλλαγή ορίου καθολικού ρυθμού
   wwcteOnSender: Ενεργοποίηση μετάφρασης οντότητας. Κάντε δεξί κλικ σε μια οντότητα
     για να μεταφράσετε το όνομά της!
   wwcConfigGUIResponseLimitButton: Αλλαγή χρονικού ορίου απόκρισης μεταφραστή
   wwcConfigMessageCharLimitEnabled: Όριο χαρακτήρων ανά μήνυμα που έχει οριστεί σε
-    %i χαρακτήρες.
-  wwcteOffTarget: Η μετάφραση οντότητας απενεργοποιημένη για %i.
+    {0} χαρακτήρες.
+  wwcteOffTarget: Η μετάφραση οντότητας απενεργοποιημένη για {0}.
   wwcCharLimit: Το μήνυμά σου είναι πολύ μεγάλο! Βεβαιωθείτε ότι το μήνυμά σας είναι
-    μικρότερο από το %i χαρακτήρες σε μήκος.
+    μικρότερο από το {0} χαρακτήρες σε μήκος.
   wwcConfigConversationCharacterLimitInput: Το τρέχον όριο χαρακτήρων ανά μήνυμα είναι
-    %i χαρακτήρες. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια νέα
+    {0} χαρακτήρες. Πληκτρολογήστε οτιδήποτε μεγαλύτερο από 0 για να ορίσετε μια νέα
     τιμή ή πληκτρολογήστε οτιδήποτε μικρότερο ή ίσο με 0 για να επιστρέψετε.
   wwcteOffSender: Η μετάφραση οντότητας απενεργοποιημένη.
   wwctGUIEntityButton: Εναλλαγή μετάφρασης οντοτήτων
   wwctrlRateLimitBadInt: Το όριο τιμών σας δεν είναι έγκυρος ακέραιος.
-  wwcTranslatorErrorConsole: Παρουσιάστηκε ένα πρόβλημα ενώ ο χρήστης %i προσπαθούσε
+  wwcTranslatorErrorConsole: Παρουσιάστηκε ένα πρόβλημα ενώ ο χρήστης {0} προσπαθούσε
     τη μετάφρασή του. Παρακαλούμε ελέγξτε το errorLog.txt για περισσότερες λεπτομέρειες.
   wwctGUIChatButton: Εναλλαγή μετάφρασης συνομιλίας
   wwcrBegin: Επαναφόρτωση Worldwide
-  wwctTranslationStoppedOtherPlayer: Διακόπηκε η συνεδρία μετάφρασης για %i.
+  wwctTranslationStoppedOtherPlayer: Διακόπηκε η συνεδρία μετάφρασης για {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Η παγκόσμια συνομιλία
-    μεταφράζεται, αλλά έχετε μια ενεργή συνεδρία μετάφρασης από %i σε %o.
+    μεταφράζεται, αλλά έχετε μια ενεργή συνεδρία μετάφρασης από {0} σε {1}.
   wwctCannotTranslateConsole: Δεν μπορείτε να ξεκινήσετε μια συνεδρία μετάφρασης για
     την κονσόλα!
-  wwctLangToLangStart: Έναρξη νέας περιόδου λειτουργίας μετάφρασης από %i έως %o.
+  wwctLangToLangStart: Έναρξη νέας περιόδου λειτουργίας μετάφρασης από {0} έως {1}.
   wwcOnJoinTranslationNotificationSourceLang: Έχετε μια ενεργή συνεδρία μετάφρασης
-    από %i έως %o.
+    από {0} έως {1}.
   wwctAutoTranslateStartOtherPlayer: Έναρξη νέας περιόδου λειτουργίας μετάφρασης για
-    %i σε %o.
+    {0} σε {1}.
   wwctTranslationStopped: Η συνεδρία μετάφρασής σας έχει διακοπεί.
   wwctLangToLangStartOtherPlayer: Έναρξη νέας περιόδου λειτουργίας μετάφρασης για
-    το %o από %i έως %e.
-  wwctAutoTranslateStart: Έναρξη νέας περιόδου λειτουργίας μετάφρασης σε %o.
+    το {0} από {1} έως {2}.
+  wwctAutoTranslateStart: Έναρξη νέας περιόδου λειτουργίας μετάφρασης σε {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Έχετε μια ενεργή συνεδρία μετάφρασης
-    σε %o.
+    σε {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Η καθολική συνομιλία
-    μεταφράζεται, αλλά έχετε μια ενεργή συνεδρία μετάφρασης σε %o.
+    μεταφράζεται, αλλά έχετε μια ενεργή συνεδρία μετάφρασης σε {0}.
   wwcConfigGUIChangesNotSaved: Οι αλλαγές σας δεν θα τεθούν σε ισχύ μέχρι να κάνετε
     κλικ στο κόκκινο φράγμα στο /wwcc.
   wwctciOffSender: Η μετάφραση εισερχόμενης συνομιλίας απενεργοποιήθηκε.
@@ -318,27 +318,27 @@ Messages:
   wwctciOnSender: Εισερχόμενη μετάφραση συνομιλίας ενεργοποιημένη. Ό, τι λάβετε θα
     μεταφραστεί!
   wwctGUIChatMenu: Εναλλαγή μενού μετάφρασης συνομιλίας
-  wwctcoOnTarget: Ενεργοποιήθηκε η μετάφραση εξερχόμενης συνομιλίας για το %i.
-  wwctcoOffTarget: Η μετάφραση εξερχόμενης συνομιλίας απενεργοποιήθηκε για %i.
+  wwctcoOnTarget: Ενεργοποιήθηκε η μετάφραση εξερχόμενης συνομιλίας για το {0}.
+  wwctcoOffTarget: Η μετάφραση εξερχόμενης συνομιλίας απενεργοποιήθηκε για {0}.
   wwctGUIChatOutgoingButton: Εναλλαγή μετάφρασης εξερχόμενης συνομιλίας
-  wwctciOnTarget: Η μετάφραση εισερχόμενης συνομιλίας ενεργοποιήθηκε για %i.
-  wwctciOffTarget: Η μετάφραση εισερχόμενης συνομιλίας απενεργοποιήθηκε για %i.
+  wwctciOnTarget: Η μετάφραση εισερχόμενης συνομιλίας ενεργοποιήθηκε για {0}.
+  wwctciOffTarget: Η μετάφραση εισερχόμενης συνομιλίας απενεργοποιήθηκε για {0}.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: Αρχική εισερχόμενη συνομιλία
     που επισυνάπτεται στη μετάφραση καθώς το κείμενο του δείκτη εναλλαγής με επιτυχία.
   wwcConfigGUISendIncomingHoverTextChatButton: Προσθήκη αρχικών εισερχόμενων μηνυμάτων
     ως κειμένου του ποντικιού
   wwctGUIExistingChatOutgoingEnabled: 'Ενεργοποιημένη μετάφραση εξερχόμενης συνομιλίας:
-    %i'
-  wwctGUIExistingTranslationInput: 'Γλώσσα εισόδου: %i'
+    {0}'
+  wwctGUIExistingTranslationInput: 'Γλώσσα εισόδου: {0}'
   wwctGUIExistingChatIncomingEnabled: 'Ενεργοποιημένη μετάφραση εισερχόμενης συνομιλίας:
-    %i'
-  wwctGUIExistingTranslationOutput: 'Γλώσσα εξόδου: %i'
+    {0}'
+  wwctGUIExistingTranslationOutput: 'Γλώσσα εξόδου: {0}'
   wwcTranslatorAttempt: Προσπάθεια σύνδεσης με μεταφραστή στο config.yml... (Προσπάθεια
-    του %i/ %o)
+    του {0}/ {1})
   wwcTimeoutExceptionConsole: Παίχτης %Είχα το χρονικό όριο της πιο πρόσφατης αίτησής
     του. Αυτό το σφάλμα δεν είναι θανατηφόρο, αλλά το WorldwideChat θα πρέπει να επαναφορτωθεί
     εάν εξακολουθεί να συμβαίνει.
-  wwcGUIPageNumber: 'Αριθμός σελίδας: %i'
+  wwcGUIPageNumber: 'Αριθμός σελίδας: {0}'
   wwcConfigYAMLFallback: Πέφτει πίσω στο YAML...
   wwcConfigGUIToggleSQLButton: Εναλλαγή SQL
   wwcConfigConversationToggleSQLSuccess: SQL εναλλαγή με επιτυχία. Επαναφόρτωση για
@@ -359,26 +359,26 @@ Messages:
   wwcConfigGUISQLPortButton: Αλλαγή θύρας SQL
   wwcConfigGUISQLOptionalArgsButton: Αλλαγή προαιρετικών ορρισμάτων SQL
   wwcConfigConversationToggleSQLSSLSuccess: Το SSL για SQL εναλλαγή με επιτυχία.
-  wwcConfigConversationSQLPortInput: Η τρέχουσα θύρα είναι %i. Πληκτρολογήστε οτιδήποτε
+  wwcConfigConversationSQLPortInput: Η τρέχουσα θύρα είναι {0}. Πληκτρολογήστε οτιδήποτε
     άλλο εκτός από το 0 για να ορίσετε μια νέα θύρα ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigGUISQLPasswordButton: Αλλαγή κωδικού πρόσβασης SQL
   wwcConfigConversationSQLHostnameSuccess: Τροποποιήθηκε με επιτυχία το όνομα κεντρικού
     υπολογιστή SQL.
   wwcConfigConversationSQLHostnameInput: Το τρέχον όνομα κεντρικού υπολογιστή είναι
-    %i. Πληκτρολογήστε οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα
+    {0}. Πληκτρολογήστε οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα
     κεντρικού υπολογιστή ή πληκτρολογήστε 0 για επιστροφή.
   wwcConfigGUISQLHostnameButton: Αλλαγή ονόματος κεντρικού υπολογιστή SQL
   wwcConfigConversationSQLOptionalArgsSuccess: Αλλάξατε με επιτυχία τα προαιρετικά
     ορίσματα SQL.
   wwcConfigConversationSQLPasswordSuccess: Αλλάξατε με επιτυχία τον κωδικό πρόσβασης
     SQL.
-  wwcConfigConversationSQLPasswordInput: Ο τρέχων κωδικός πρόσβασης είναι %i. Πληκτρολογήστε
+  wwcConfigConversationSQLPasswordInput: Ο τρέχων κωδικός πρόσβασης είναι {0}. Πληκτρολογήστε
     οτιδήποτε άλλο εκτός από το 0 για να ορίσετε έναν νέο κωδικό πρόσβασης ή πληκτρολογήστε
     0 για να επιστρέψετε.
   wwcConfigGUIToggleSQLSSLButton: Εναλλαγή SQL SSL
   wwcConfigConversationSQLUsernameSuccess: Τροποποιήθηκε με επιτυχία το όνομα χρήστη
     SQL.
-  wwcConfigConversationSQLUsernameInput: Το τρέχον όνομα χρήστη είναι %i. Πληκτρολογήστε
+  wwcConfigConversationSQLUsernameInput: Το τρέχον όνομα χρήστη είναι {0}. Πληκτρολογήστε
     οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα χρήστη ή πληκτρολογήστε
     0 για να επιστρέψετε.
   wwcConfigConversationSQLPortSuccess: Αλλάξατε με επιτυχία τη θύρα SQL.
@@ -386,17 +386,17 @@ Messages:
   wwcConfigConversationSQLOptionalArgsCleared: Τα προαιρετικά ορίσματα καταργήθηκαν
     με επιτυχία.
   wwcConfigConversationSQLOptionalArgsInput: 'Τα τρέχοντα προαιρετικά ορίσματα SQL
-    είναι: %i. Πληκτρολογήστε ορίσματα διαχωρισμένα με κόμμα (key=value, key2=value2)
+    είναι: {0}. Πληκτρολογήστε ορίσματα διαχωρισμένα με κόμμα (key=value, key2=value2)
     ή πληκτρολογήστε clear για να διαγράψετε τα τρέχοντα args ή πληκτρολογήστε 0 για
     να επιστρέψετε.'
   wwcConfigConversationSQLDatabaseNameInput: Το τρέχον όνομα βάσης δεδομένων είναι
-    %i. Πληκτρολογήστε οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα
+    {0}. Πληκτρολογήστε οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα
     βάσης δεδομένων ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigGUISQLDatabaseNameButton: Αλλαγή βάσης δεδομένων SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Τροποποιήθηκε με επιτυχία το όνομα
     της βάσης δεδομένων SQL.
   wwcConfigConversationFatalAsyncAbort: Το τρέχον χρονικό όριο για να ματαιώσετε όλες
-    τις ασύγχρονες εργασίες είναι %i δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε πάνω από
+    τις ασύγχρονες εργασίες είναι {0} δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε πάνω από
     το 7 για να ορίσετε ένα νέο χρονικό όριο, ή οτιδήποτε κάτω από αυτό για να επιστρέψετε.
   wwcConfigConversationFatalAsyncSuccess: Καθορίστηκε με επιτυχία το χρονικό όριο
     ασύγχρονης εργασίας.
@@ -407,7 +407,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Αλλάξτε το κλειδί API μετάφρασης Libre
   libreHttp403: Λείπει Libre Μετάφραση API Key, ή έχετε απαγορευτεί από το διακομιστή!
   wwcConfigConversationLibreURLSuccess: Το Libre URL ορίστηκε επιτυχώς.
-  wwcConfigConversationLibreTranslateApiKeyInput: Το τρέχον κλειδί API είναι %i. Παρακαλώ
+  wwcConfigConversationLibreTranslateApiKeyInput: Το τρέχον κλειδί API είναι {0}. Παρακαλώ
     εισάγετε ένα κλειδί API για το Libre, ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigGUILibreTranslateButton: Ελεύθερη Μετάφραση
   libreHttp429: Δεν υπάρχει εμπιστοσύνη λόγω ορίου ρυθμού από το διακομιστή.
@@ -416,38 +416,38 @@ Messages:
     Επαναφόρτωση για να τεθούν σε ισχύ οι αλλαγές.
   wwcConfigConversationLibreTranslateApiKeySuccess: Το κλειδί Libre API ορίστηκε με
     επιτυχία.
-  wwcConfigConversationLibreURLInput: Το τρέχον URL είναι %i. Παρακαλώ εισάγετε ένα
+  wwcConfigConversationLibreURLInput: Το τρέχον URL είναι {0}. Παρακαλώ εισάγετε ένα
     URL για το Libre, ή πληκτρολογήστε 0 για να επιστρέψετε.
-  libreHttpUnknown: 'Άγνωστο σφάλμα http: %i'
+  libreHttpUnknown: 'Άγνωστο σφάλμα http: {0}'
   wwcConfigGUILibreTranslateURLButton: Αλλαγή διεύθυνσης URL μετάφρασης Libre
-  wwcConfigConnectionFail: Αποτυχία σύνδεσης με το %i.
+  wwcConfigConnectionFail: Αποτυχία σύνδεσης με το {0}.
   wwcConfigGUIMongoSettings: Ρύθμιση παραμέτρων MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Επιτυχής αλλαγή του ονόματος της
     βάσης δεδομένων MongoDB.
   wwcConfigGUIMongoHostnameButton: Αλλαγή ονόματος κεντρικού υπολογιστή MongoDB
-  wwcConfigConversationMongoPasswordInput: Ο τρέχων κωδικός πρόσβασης είναι %i. Πληκτρολογήστε
+  wwcConfigConversationMongoPasswordInput: Ο τρέχων κωδικός πρόσβασης είναι {0}. Πληκτρολογήστε
     οτιδήποτε άλλο εκτός από το 0 για να ορίσετε έναν νέο κωδικό πρόσβασης ή πληκτρολογήστε
     0 για να επιστρέψετε.
-  wwcConfigConversationMongoPortInput: Η τρέχουσα θύρα είναι %i. Πληκτρολογήστε οτιδήποτε
+  wwcConfigConversationMongoPortInput: Η τρέχουσα θύρα είναι {0}. Πληκτρολογήστε οτιδήποτε
     άλλο εκτός από το 0 για να ορίσετε μια νέα θύρα ή πληκτρολογήστε 0 για επιστροφή.
   wwcConfigConversationToggleMongoSuccess: Το MongoDB εναλλάχτηκε επιτυχώς. Επαναφόρτωση
     για να τεθεί σε ισχύ η αλλαγή.
   wwcConfigConversationMongoHostnameInput: Το τρέχον όνομα κεντρικού υπολογιστή είναι
-    %i. Πληκτρολογήστε οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα
+    {0}. Πληκτρολογήστε οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα
     υπολογιστή ή πληκτρολογήστε 0 για επιστροφή.
   wwcConfigConversationMongoHostnameSuccess: Επιτυχής αλλαγή του ονόματος κεντρικού
     υπολογιστή MongoDB.
   wwcConfigGUIMongoMenuButton: Αλλαγή ρυθμίσεων MongoDB
   wwcConfigGUIToggleMongoButton: Εναλλαγή MongoDB
   wwcConfigConversationMongoDatabaseNameInput: Το τρέχον όνομα βάσης δεδομένων είναι
-    %i. Πληκτρολογήστε οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα
+    {0}. Πληκτρολογήστε οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα
     βάσης δεδομένων ή πληκτρολογήστε 0 για επιστροφή.
   wwcConfigConversationMongoOptionalArgsInput: 'Τα τρέχοντα προαιρετικά ορίσματα MongoDB
-    είναι: %i. Πληκτρολογήστε ορίσματα χωρισμένα με κόμμα (key=value, key2=value2),
+    είναι: {0}. Πληκτρολογήστε ορίσματα χωρισμένα με κόμμα (key=value, key2=value2),
     ή πληκτρολογήστε clear για να σβήσετε τα τρέχοντα args, ή πληκτρολογήστε 0 για
     να επιστρέψετε.'
   wwcConfigGUIMongoDatabaseNameButton: Αλλαγή βάσης δεδομένων MongoDB
-  wwcConfigConversationMongoUsernameInput: Το τρέχον όνομα χρήστη είναι %i. Πληκτρολογήστε
+  wwcConfigConversationMongoUsernameInput: Το τρέχον όνομα χρήστη είναι {0}. Πληκτρολογήστε
     οτιδήποτε άλλο εκτός από το 0 για να ορίσετε ένα νέο όνομα χρήστη ή πληκτρολογήστε
     0 για επιστροφή.
   wwcConfigGUIMongoOptionalArgsButton: Αλλαγή προαιρετικών ορισμάτων MongoDB
@@ -472,7 +472,7 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Αλλαγή κλειδιού API μετάφρασης DeepL
   wwcConfigGUIToggleDeepLTranslateButton: Εναλλαγή μετάφρασης DeepL
   wwcConfigConversationDeepLTranslateApiKeySuccess: Το κλειδί DeepL API ορίστηκε επιτυχώς.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Το τρέχον κλειδί API είναι %i. Εισαγάγετε
+  wwcConfigConversationDeepLTranslateApiKeyInput: Το τρέχον κλειδί API είναι {0}. Εισαγάγετε
     ένα κλειδί API για το DeepL ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigErrorsToIgnoreSuccess: Επιτυχής καταχώρηση σφαλμάτων μεταφραστή προς αγνόηση.
   wwcConfigErrorsToIgnoreInvalid: Μη έγκυρα σφάλματα μετάφρασης για παράβλεψη που
@@ -482,27 +482,27 @@ Messages:
     για να αγνοήσει φράσεις.
   wwcConfigGUIIgnoreErrorsButton: Αλλαγή σφαλμάτων για Παράβλεψη
   wwcConfigConversationIgnoreErrorsInput: 'Η τρέχουσα λίστα φράσεων σε σφάλματα μεταφραστή
-    προς παράβλεψη είναι: %i. Πληκτρολογήστε ορίσματα χωρισμένα με κόμμα (key=value,
+    προς παράβλεψη είναι: {0}. Πληκτρολογήστε ορίσματα χωρισμένα με κόμμα (key=value,
     key2=value2), ή πληκτρολογήστε clear για να σβήσετε τα τρέχοντα args, ή πληκτρολογήστε
     0 για να επιστρέψετε. Επιπλέον, πληκτρολογώντας «*» θα έχει ως αποτέλεσμα το πρόσθετο
     να μην ελέγχει τυχόν σφάλματα μεταφραστή.'
   wwcConfigConversationIgnoreErrorsCleared: Σφάλματα μεταφραστή για να αγνοήσετε φράσεις
     που εκκαθαρίζονται με επιτυχία.
 
-  wwcsActiveTransPrevRate: 'Χρόνος προηγούμενης βαθμολογίας ενεργού μεταφραστή: %i'
-  wwcsActiveTransSaved: 'Ενεργός μεταφραστής αποθηκεύτηκε στο δίσκο: %i'
+  wwcsActiveTransPrevRate: 'Χρόνος προηγούμενης βαθμολογίας ενεργού μεταφραστή: {0}'
+  wwcsActiveTransSaved: 'Ενεργός μεταφραστής αποθηκεύτηκε στο δίσκο: {0}'
   wwcsActiveTransIncoming: 'Ενεργός Μεταφραστής Μεταφράζει Εισερχόμενη συνομιλία:
-    %i'
-  wwcsActiveTransOutLang: 'Γλώσσα εξόδου ενεργού μεταφραστή: %i'
-  wwcsActiveTransInLang: 'Γλώσσα εισόδου ενεργού μεταφραστή: %i'
-  wwcsActiveTransBook: 'Ενεργό βιβλίο μετάφρασης μεταφραστή: %i'
-  wwcsActiveTransSign: 'Ενεργός Μεταφραστής Μετάφραση Υπογραφή: %i'
-  wwcsActiveTransUUID: 'UUID ενεργού μεταφραστή: %i'
-  wwcsActiveTransRateLimit: 'Όριο ρυθμού ενεργού μεταφραστή: %i'
+    {0}'
+  wwcsActiveTransOutLang: 'Γλώσσα εξόδου ενεργού μεταφραστή: {0}'
+  wwcsActiveTransInLang: 'Γλώσσα εισόδου ενεργού μεταφραστή: {0}'
+  wwcsActiveTransBook: 'Ενεργό βιβλίο μετάφρασης μεταφραστή: {0}'
+  wwcsActiveTransSign: 'Ενεργός Μεταφραστής Μετάφραση Υπογραφή: {0}'
+  wwcsActiveTransUUID: 'UUID ενεργού μεταφραστή: {0}'
+  wwcsActiveTransRateLimit: 'Όριο ρυθμού ενεργού μεταφραστή: {0}'
   wwcsActiveTransColorWarning: 'Ο ενεργός μεταφραστής έλαβε προειδοποίηση χρώματος:
-    %i'
+    {0}'
   wwcsActiveTransOutgoing: 'Ενεργός μεταφραστής μετάφραση εξερχόμενης συνομιλίας:
-    %i'
-  wwcsActiveTransItem: 'Ενεργός Μεταφραστής Μεταφράζει Στοιχείο: %i'
-  wwcsActiveTransEntity: 'Ενεργός Μεταφραστής Μεταφράζει Οντότητα: %i'
+    {0}'
+  wwcsActiveTransItem: 'Ενεργός Μεταφραστής Μεταφράζει Στοιχείο: {0}'
+  wwcsActiveTransEntity: 'Ενεργός Μεταφραστής Μεταφράζει Οντότητα: {0}'
 

@@ -1,6 +1,6 @@
 Messages:
-  wwcgAutoTranslateStart: දැන් ගෝලීය කතාබස් %o වෙත පරිවර්තනය කිරීම.
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ගෝලීය කතාබස් %o වෙත පරිවර්තනය
+  wwcgAutoTranslateStart: දැන් ගෝලීය කතාබස් {0} වෙත පරිවර්තනය කිරීම.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ගෝලීය කතාබස් {0} වෙත පරිවර්තනය
     වෙමින් පවතී.
   wwcConfigGUIAmazonTranslateAccessKeyButton: ඇමේසන් ප්රවේශ යතුර වෙනස්
   wwcrFail: වර්ල්ඩ්වයිඩ්හාට් රීලෝඩ් කිරීමට අසමත් විය.
@@ -12,63 +12,63 @@ Messages:
   wwctGUIMainMenuGlobal: ගෝලීය පරිවර්තන මෙනුව
   wwcConfigConversationPluginUpdateChatSuccess: ප්ලගිනය යාවත්කාලීන චැට් මතක් සාර්ථකව
     ටොගල.
-  wwctbOnTarget: '%i සඳහා පොත් පරිවර්තනය සක්රීය කර ඇත.'
-  wwcsNotATranslator: '%i සඳහා තවමත් වාර්තා නොමැත.'
+  wwctbOnTarget: '{0} සඳහා පොත් පරිවර්තනය සක්රීය කර ඇත.'
+  wwcsNotATranslator: '{0} සඳහා තවමත් වාර්තා නොමැත.'
   wwcConfigGUIbStatsButton: bStats ටොගල් කරන්න
   wwctGUINewTranslationSource: ප්රභව භාෂාවක් තෝරන්න
-  wwcConfigConnectionFailed: '%o වෙත සම්බන්ධ වීමට අසමත් විය. ඔබගේ අක්තපත්ර සහ ෆයර්වෝලය
+  wwcConfigConnectionFailed: '{0} වෙත සම්බන්ධ වීමට අසමත් විය. ඔබගේ අක්තපත්ර සහ ෆයර්වෝලය
     නිවැරදිව සකසා ඇති බවට වග බලා ගන්න!'
   wwcConfigEnabledbStats: bStats සක්රීය කර ඇත.
-  wwctGUIMainMenuPlayer: '%i පරිවර්තන මෙනුව'
+  wwctGUIMainMenuPlayer: '{0} පරිවර්තන මෙනුව'
   wwctGUIBookButton: ටොගල් කරන්න පොත් පරිවර්තන
-  wwcLangDetected: හදුනාගත් භාෂාව %o.
+  wwcLangDetected: හදුනාගත් භාෂාව {0}.
   wwcBookTranslateStart: ඉලක්කගත පොත පරිවර්තනය කිරීම...
   wwcConfigDisabledbStats: ආබාධිත bStats.
   wwctsOffSender: සංඥා පරිවර්තනය අක්රීය.
   wwcUpdaterParserFailed: Github වෙතින් යාවත්කාලීන දත්ත විග්රහ කිරීමට අපොහොසත් විය.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: වත්මන් රහස් යතුර %i වේ. කරුණාකර
+  wwcConfigConversationAmazonTranslateSecretKeyInput: වත්මන් රහස් යතුර {0} වේ. කරුණාකර
     ඇමේසන් සඳහා රහස් යතුරක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwctbOffSender: පොත් පරිවර්තනය අක්රීය කර ඇත.
   wwcConfigGUIAmazonTranslateButton: ඇමේසන් පරිවර්තනය
   wwcConfigConversationLangSuccess: ප්ලගින භාෂාව සාර්ථකව වෙනස්.
-  wwcsSuccessfulTranslations: 'සාර්ථක පරිවර්තන: %i'
-  wwcConfigConversationTranslationCacheInput: වර්තමාන පරිවර්තන හැඹිලි සීමා %i වාක්ය
+  wwcsSuccessfulTranslations: 'සාර්ථක පරිවර්තන: {0}'
+  wwcConfigConversationTranslationCacheInput: වර්තමාන පරිවර්තන හැඹිලි සීමා {0} වාක්ය
     ඛණ්ඩ වේ. වඩා වැඩි දෙයක් ටයිප් 0 නව අගය නියම කිරීමට, හෝ ටයිප් 0 පරිවර්තනය හැඹිලි
     අක්රිය කිරීමට. ආපසු යාමට 0 ට වඩා අඩු දෙයක් ටයිප් කරන්න.
-  wwctbOffTarget: '%i සඳහා පොත් පරිවර්තනය අක්‍රීය විය.'
+  wwctbOffTarget: '{0} සඳහා පොත් පරිවර්තනය අක්‍රීය විය.'
   wwcConfigGUIGeneralSettings: සාමාන්ය වින්යාසය
   wwcInvalidLang: ඔබගේ config.yml හි වලංගු නොවන භාෂාව. en කිරීමට පැහැර හැරීම...
   wwcConfigConversationAmazonTranslateRegionSuccess: ඇමේසන් කලාපය සාර්ථකව සකසා ඇත.
-  wwcConfigRateLimitEnabled: ගෝලීය අනුපාත සීමාව සක්‍රීය කර තත්පරය %i දක්වා සකසන්න.
+  wwcConfigRateLimitEnabled: ගෝලීය අනුපාත සීමාව සක්‍රීය කර තත්පරය {0} දක්වා සකසන්න.
   wwcBadPerms: මෙම විධානය ක්රියාත්මක කිරීමට ඔබට අවශ්ය අවසර නොමැත!
   wwcConfigGUILangButton: ප්ලගින භාෂාව වෙනස් කරන්න
   wwctGUISignButton: ටොගල් කරන්න ලියාපදිංචි වන්න
   wwcUpdaterOutOfDate: වර්ල්ඩ්වයිඩ්හාට් දිනය ඉවරයි. කරුණාකර නවතම අනුවාදයට යාවත්කාලීන
-    කරන්න, %i.
+    කරන්න, {0}.
   wwcConfigGUINextPageButton: ඊළඟ පිටුව
   wwcConfigInvalidTranslatorSettings: වලංගු නොවන පරිවර්තක සැකසුම්! කරුණාකර ඔබගේ config.yml
     තුළ එක් පරිවර්තකයෙකුට පමණක් සක්රීය කරන්න.
   wwcConfigGUIQuitButton: පිටවීමේ සහ සුරකින්න වෙනස්කම්
   wwctPlayerNotFound: ක්රීඩකයා සොයාගත්තේ නැත.
   wwcConfigGUIAmazonTranslateRegionButton: ඇමසන් කලාපය වෙනස් කරන්න
-  wwcConfigConversationLangInput: 'වත්මන් ප්ලගින භාෂාව %i වේ. කරුණාකර වලංගු භාෂා කේතයක්
-    ඇතුලත් කරන්න, නැතහොත් අවලංගු කිරීමට 0 ටයිප් කරන්න. වලංගු භාෂා කේත: %o'
+  wwcConfigConversationLangInput: 'වත්මන් ප්ලගින භාෂාව {0} වේ. කරුණාකර වලංගු භාෂා කේතයක්
+    ඇතුලත් කරන්න, නැතහොත් අවලංගු කිරීමට 0 ටයිප් කරන්න. වලංගු භාෂා කේත: {0}'
   wwcConfigConversationLangInvalid: වලංගු නොවන භාෂා කේතය!
   wwcConfigGUIWatsonAPIKeyButton: වොට්සන් API කී වෙනස්
-  wwcEnabled: සක්‍රීය වර්ල්වයිඩ්හාට් අනුවාදය %i.
-  wwcgLangToLangStart: දැන් ගෝලීය කතාබස් %i සිට %o වෙත පරිවර්තනය කිරීම.
+  wwcEnabled: සක්‍රීය වර්ල්වයිඩ්හාට් අනුවාදය {0}.
+  wwcgLangToLangStart: දැන් ගෝලීය කතාබස් {0} සිට {1} වෙත පරිවර්තනය කිරීම.
   wwctbOnSender: පොත් පරිවර්තනය සක්රීය කර ඇත. එය පරිවර්තනය කිරීම සඳහා පොතක් තබා ගන්නා
     අතරතුර දකුණු-ක්ලික් කරන්න!
   wwcListenersInitialized: ආරම්භකල සවන්දෙන්නන්.
   wwcConfigGUIPluginUpdateChatButton: ප්ලගින යාවත්කාලීන සඳහා චැට් මතක් යවන්න
   wwcConfigConversationSendTranslationChatSuccess: ක්රියාකාරී පරිවර්තක චැට් මතක් කිරීම
     සාර්ථකව ටොගල කළේය.
-  wwctsOffTarget: '%i සඳහා පරිවර්තනය අක්‍රීය කරන්න.'
+  wwctsOffTarget: '{0} සඳහා පරිවර්තනය අක්‍රීය කරන්න.'
   wwcUpdaterConnectionFailed: Github හි නවතම යාවත්කාලීන කිරීම් සඳහා පරීක්ෂා කිරීමට
     නොහැකි විය.
   watsonNotFoundExceptionNotification: ඔබගේ ආදානය තවදුරටත් පරිවර්තනය කිරීමට නොහැකි
     විය.
-  wwcConfigConversationWatsonAPIKeyInput: වත්මන් API යතුර %i වේ. කරුණාකර වොට්සන් සඳහා
+  wwcConfigConversationWatsonAPIKeyInput: වත්මන් API යතුර {0} වේ. කරුණාකර වොට්සන් සඳහා
     API යතුරක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwctGUIStopButton: පරිවර්තනය නවත්වන්න
   wwcgTranslationStopped: ගෝලීය චැට් පරිවර්තනය නතර කර ඇත.
@@ -77,9 +77,9 @@ Messages:
   wwcConfigConversationPrefixSuccess: උපසර්ගය සාර්ථකව වෙනස් විය.
   wwcConfigGUIGoogleTranslateAPIKeyButton: ගූගල් වෙනස් API යතුර පරිවර්තනය කරන්න
   wwcSignDeletedOrTooLong: 'ඉලක්ක ලකුණ එක්කෝ මකා දමන ලදී හෝ පරිවර්තනය දිගු විය. පරිවර්තනය:'
-  wwctsOnTarget: '%i සඳහා සංඥා පරිවර්තනය සක්රීය කර ඇත.'
+  wwctsOnTarget: '{0} සඳහා සංඥා පරිවර්තනය සක්රීය කර ඇත.'
   wwcConfigCacheDisabled: පරිවර්තක හැඹිලි අක්රීය කර ඇත.
-  wwcConfigConversationWatsonURLInput: වත්මන් URL එක %i වේ. කරුණාකර වොට්සන් සඳහා සේවා
+  wwcConfigConversationWatsonURLInput: වත්මන් URL එක {0} වේ. කරුණාකර වොට්සන් සඳහා සේවා
     URL එකක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcBookDone: පොත සාර්ථකව පරිවර්තනය කර ඇත.
   wwctsOnSender: සංඥා පරිවර්තනය සක්රීය කර ඇත. එය පරිවර්තනය කිරීම සඳහා ලකුණක් මත දකුණු-ක්ලික්
@@ -88,7 +88,7 @@ Messages:
   wwctGUITranslationButton: පරිවර්තනය ආරම්භ කරන්න
   wwctGUIAutoDetectButton: ස්වයංක්රීය-හඳුනා මූලාශ්රය භාෂාව
   wwcUpdaterUpToDate: වර්ල්ඩ්වයිඩ්හාට් යාවත්කාලීනව පවතී!
-  wwcConfigConversationAmazonTranslateRegionInput: වත්මන් කලාපය %i වේ. කරුණාකර ඇමේසන්
+  wwcConfigConversationAmazonTranslateRegionInput: වත්මන් කලාපය {0} වේ. කරුණාකර ඇමේසන්
     සඳහා කලාපයක් ආදානය කරන්න, නැතහොත් නැවත යන්න 0 ටයිප් කරන්න.
   wwcNoConsole: මෙම විධානය ධාවනය කළ හැක්කේ ක්රීඩකයෙකුට පමණි.
   wwcInitializationFail: වර්ල්ඩ්වයිඩ්හාට් ආරම්භ කිරීමට අසමත් විය.
@@ -106,10 +106,10 @@ Messages:
   wwcConfigGUIPrefixButton: ප්ලගින උපසර්ගය වෙනස් කරන්න
   wwctSameLangError: ඔබට එකම භාෂාවට පරිවර්තනය කළ නොහැක!
   wwctGUINewTranslationTarget: ඉලක්කගත භාෂාවක් තෝරන්න
-  wwcConfigConnectionSuccess: '%o වෙත සාර්ථකව සම්බන්ධ විය!'
+  wwcConfigConnectionSuccess: '{0} වෙත සාර්ථකව සම්බන්ධ විය!'
   wwcConfigGUIGoogleTranslateButton: ගූගල් පරිවර්තනය
-  wwcsIsActiveTranslator: 'ක්රියාකාරී පරිවර්තක වේ: %i'
-  wwcConfigConversationPrefixInput: වත්මන් උපසර්ගය %i වේ. කරුණාකර අලුත් එකක් ටයිප්
+  wwcsIsActiveTranslator: 'ක්රියාකාරී පරිවර්තක වේ: {0}'
+  wwcConfigConversationPrefixInput: වත්මන් උපසර්ගය {0} වේ. කරුණාකර අලුත් එකක් ටයිප්
     කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigGUIPreviousPageButton: පෙර පිටුව
   wwcConfigGUITranslatorCacheButton: පරිවර්තනය හැඹිලි සීමාව වෙනස් කරන්න
@@ -126,54 +126,54 @@ Messages:
     සකසා ඇත.
   wwcUnsupportedVersion: 'ඔබ බුකිට්, ස්පයිගොට් හෝ කඩදාසි හි සහාය නොදක්වන අනුවාදයක්
     ධාවනය කරයි. අනුග්රාහක අනුවාද:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: ගෝලීය කතාබස් %i සිට %o වෙත පරිවර්තනය
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ගෝලීය කතාබස් {0} සිට {1} වෙත පරිවර්තනය
     වෙමින් පවතී.
   wwcConfigGUITranslatorSettings: පරිවර්තක වින්යාසය
-  wwcConfigConversationGoogleTranslateAPIKeyInput: වත්මන් API යතුර %i වේ. කරුණාකර
+  wwcConfigConversationGoogleTranslateAPIKeyInput: වත්මන් API යතුර {0} වේ. කරුණාකර
     Google පරිවර්තනය සඳහා API යතුරක් ආදානය කරන්න, නැතහොත් නැවත යන්න 0 ටයිප් කරන්න.
   wwcConfigConversationRateLimitInput: පරිවර්තනයක් සඳහා වර්තමාන ගෝලීය අනුපාත සීමාව
-    තත්පරය %i වේ. නව අගයක් සැකසීමට 0 ට වඩා වැඩි යමක් ටයිප් කරන්න, නැතහොත් සීමාව අක්රිය
+    තත්පරය {0} වේ. නව අගයක් සැකසීමට 0 ට වඩා වැඩි යමක් ටයිප් කරන්න, නැතහොත් සීමාව අක්රිය
     කිරීමට 0 ටයිප් කරන්න. ආපසු යාමට 0 ට වඩා අඩු දෙයක් ටයිප් කරන්න.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: ගූගල් API ප්රධාන කට්ටලයක් සාර්ථකව
     පරිවර්තනය කරන්න.
   wwcConfigGUIAmazonTranslateSecretKeyButton: ඇමේසන් රහස් යතුර වෙනස් කරන්න
   wwcVersion: වර්ල්ඩ්වයිඩ්හාට්, අනුවාදය
-  wwcsAttemptedTranslations: 'පරිවර්තන සඳහා උත්සාහ කරන ලදී: %i'
+  wwcsAttemptedTranslations: 'පරිවර්තන සඳහා උත්සාහ කරන ලදී: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: ඇමේසන් රහස් යතුර සාර්ථකව සකසා
     ඇත.
   wwcConfigConversationWatsonAPIKeySuccess: වොට්සන් API ප්රධාන සාර්ථකව සකසා ඇත.
   wwcRateLimit: ඔබගේ පරිවර්තන අනුපාතය සීමිතය. කරුණාකර තත්පර ගණනක් බලා සිටින්න.
-  wwcConfigCacheEnabled: පරිවර්තක හැඹිලි සක්රීය කර %i සීමාවකට සකසා ඇත.
+  wwcConfigCacheEnabled: පරිවර්තක හැඹිලි සක්රීය කර {0} සීමාවකට සකසා ඇත.
   wwctGUIExistingTranslationButton: වත්මන් පරිවර්තන සැසිය ලියන්න
   wwcUserDataReloaded: සියලු සුරකින ලද පරිශීලක දත්ත පටවා.
   wwcConfigGUISendTranslationChatButton: ලොගින් වන්න මත ක්රියාකාරී පරිවර්තකයාට චැට්
     මතක් කිරීම යවන්න
-  wwcsLastTranslationTime: 'අවසන් (සාර්ථක) පරිවර්තන කාලය: %i'
+  wwcsLastTranslationTime: 'අවසන් (සාර්ථක) පරිවර්තන කාලය: {0}'
   wwctbNotATranslator: ඔබ ක්රියාකාරී පරිවර්තකයෙකු නොවේ! ඔබ/wwct සමඟ මෙය සකසා ඇති බවට
     වග බලා ගන්න.
-  wwcConfigConversationAmazonTranslateAccessKeyInput: දැනට පවතින ප්රවේශ යතුර %i වේ.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: දැනට පවතින ප්රවේශ යතුර {0} වේ.
     කරුණාකර ඇමේසන් සඳහා ප්රවේශ යතුරක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: ඇමේසන් ප්රවේශ ප්රධාන සාර්ථකව
     කට්ටලයක්.
   wwcConfigBadUpdateDelay: config.yml හි තබා ඇති වලංගු නොවන updater ප්රමාදය. තත්පර
     86400 ක් පැහැර හැරීම...
   wwctrlRateLimitOffSender: ඔබේ අනුපාත සීමාව අක්රිය කළා.
-  wwctrlRateLimitAlreadyOffTarget: '%i හි අනුපාත සීමාව දැනටමත් අක්රීය කර ඇත.'
+  wwctrlRateLimitAlreadyOffTarget: '{0} හි අනුපාත සීමාව දැනටමත් අක්රීය කර ඇත.'
   wwctrlPlayerNotFound: '% ප්ලේයර් % මම එක්කෝ සොයාගත නොහැක, නැතහොත් ක්රියාකාරී පරිවර්තකයෙකු
     නොවේ.'
   wwctrlRateLimitSetSender: ඔබගේ අනුපාත සීමාව තත්පරයට සකසන්න.
-  wwctrlRateLimitOffTarget: '%i අනුපාත සීමාව අක්රිය කළා.'
-  wwctrlRateLimitSetTarget: '%i සිට තත්පරය %o දක්වා අනුපාත සීමාව සකසන්න.'
+  wwctrlRateLimitOffTarget: '{0} අනුපාත සීමාව අක්රිය කළා.'
+  wwctrlRateLimitSetTarget: '{0} සිට තත්පරය {1} දක්වා අනුපාත සීමාව සකසන්න.'
   wwctrlNotATranslator: ඔබ ක්රියාකාරී පරිවර්තකයෙකු නොවේ! ඔබ/wwct සමඟ මෙය සකසා ඇති
     බවට වග බලා ගන්න.
   wwctrlRateLimitAlreadyOffSender: ඔබගේ අනුපාත සීමාව දැනටමත් අක්රීය කර ඇත.
   wwctGUIRateButton: අනුපාත සීමාව සකසන්න
-  wwctGUIConversationRateLimit: පරිවර්තනයක් සඳහා අනුපාත සීමාව තත්පරය %i වේ. නව අගයක්
+  wwctGUIConversationRateLimit: පරිවර්තනයක් සඳහා අනුපාත සීමාව තත්පරය {0} වේ. නව අගයක්
     සැකසීමට 0 ට වඩා වැඩි යමක් ටයිප් කරන්න, නැතහොත් සීමාව අක්රිය කිරීමට 0 ටයිප් කරන්න.
     ආපසු යාමට 0 ට වඩා අඩු දෙයක් ටයිප් කරන්න.
   wwctGUITargetPlayerNull: ඉලක්කගත ක්රීඩකයා සේවාදායකයෙන් විසන්ධි විය.
   wwcConfigConversationSyncUserDataDelayInput: පරිශීලක දත්ත සමමුහුර්ත කිරීම සඳහා දැනට
-    පවතින ප්රමාදය තත්පරය %i වේ. නව වටිනාකමක් සැකසීමට 10 ට වඩා වැඩි යමක් ටයිප් කරන්න,
+    පවතින ප්රමාදය තත්පරය {0} වේ. නව වටිනාකමක් සැකසීමට 10 ට වඩා වැඩි යමක් ටයිප් කරන්න,
     නැතහොත් ආපසු යාමට 10 ට වඩා අඩු දෙයක්.
   wwcConfigGUISyncUserDataButton: පරිශීලක දත්ත සමමුහුර්ත කරන්න ප්රමාද වෙනස්
   wwcConfigSyncDelayEnabled: තත්පර 1 දක්වා පරිශීලක දත්ත සමමුහුර්තකරණය ප්රමාද කිරීම.
@@ -183,24 +183,24 @@ Messages:
     ප්රමාදය. තත්පර 7200 ක් පැහැර හැරීම...
   wwcConfigCacheInvalid: පරිවර්තක හැඹිලි ප්රමාණය වලංගු නොවේ. 10 වෙත ගෙවීම පැහැර හැරීම...
   wwcInventoryErrorPlayer: ඔබේ GUI සමඟ හඳුනාගත් දෝෂය. ලොගයක් කොන්සෝලය වෙත යවා ඇත.
-  wwcInventoryError: '%i පරිශීලකයාගේ GUI සමඟ අනාවරණය වූ දෝෂය. කරුණාකර මෙම ගැටළුව සංවර්ධකයාට
+  wwcInventoryError: '{0} පරිශීලකයාගේ GUI සමඟ අනාවරණය වූ දෝෂය. කරුණාකර මෙම ගැටළුව සංවර්ධකයාට
     වාර්තා කරන්න.'
-  wwctiOffTarget: අයිතම පරිවර්තනය %i සඳහා අක්රීය කර ඇත.
+  wwctiOffTarget: අයිතම පරිවර්තනය {0} සඳහා අක්රීය කර ඇත.
   wwctiOffSender: අයිතම පරිවර්තනය ආබාධිත.
   wwcItemTranslateTitleStock: පෙරනිමි අයිතම නාම පරිවර්තනය කිරීමට නොහැකි විය.
   wwctGUIItemButton: ටොගල් කරන්න අයිතමය පරිවර්තනය
   wwcItemTranslateTitleDone: පරිවර්තනය කරන ලද අයිතම මාතෘකාව සාර්ථකව.
   wwcGUITempItem: අයිතමය පෙන්වන්න
   wwcItemTranslateStart: ඉලක්කගත අයිතමය පරිවර්තනය කිරීම...
-  wwcBookTranslateTitleSuccess: 'පරිවර්තනය කළ පොත් මාතෘකාව: %i'
+  wwcBookTranslateTitleSuccess: 'පරිවර්තනය කළ පොත් මාතෘකාව: {0}'
   wwctiOnSender: අයිතම පරිවර්තනය සක්රීය කර ඇත. එය පරිවර්තනය කිරීම සඳහා ඔබේ ප්රධාන
     අතේ ඇති අයිතමයක් සමඟ දකුණු-ක්ලික් කරන්න!
   wwcItemTranslateLoreStart: ඉලක්කය අයිතමය ක lore පරිවර්තනය...
   wwcItemTranslateLoreDone: පරිවර්ථනය කරන ලද අයිතමය සාර්ථකව.
-  wwctiOnTarget: අයිතම පරිවර්තනය %i සඳහා සබල කර ඇත.
+  wwctiOnTarget: අයිතම පරිවර්තනය {0} සඳහා සබල කර ඇත.
   wwcInvalidTranslator: වලංගු නොවන පරිවර්තක සැකසුම්. කරුණාකර මෙම ප්ලගිනය භාවිතා කිරීමට
     ඔබගේ config.yml හෝ /wwcc සමඟ මෙය නිවැරදි කරන්න.
-  wwcConfigGUIEachTranslatorSettings: '%i වින්යාසය'
+  wwcConfigGUIEachTranslatorSettings: '{0} වින්යාසය'
   wwcConfigGUIWatsonButton: වොට්සන්
   wwcServerReloadWarning: වර්ල්ඩ්වයිඩ්හාට් භාවිතා කිරීම/රීලෝඩ් කිරීම සඳහා අනුකූල නොවේ.
     කරුණාකර පරෙස්සමින් ඉදිරියට යන්න.
@@ -208,7 +208,7 @@ Messages:
     නොවේ නම්, ඔබ මෙය අක්රිය කළ යුතුය.
   wwcTranslatorErrorThresholdReached: දෝෂ සීමාව ළඟා විය. මෙම ප්ලගිනය දැන් නැවත පූරණය
     කරනු ඇත, සහ සියලු පරිවර්තකයන් අක්රීය.
-  wwcConfigErrorLimitEnabled: පරිවර්තක දෝෂ සීමාව %i ලෙස සකසා ඇත.
+  wwcConfigErrorLimitEnabled: පරිවර්තක දෝෂ සීමාව {0} ලෙස සකසා ඇත.
   wwcTranslatorError: ඔබේ පරිවර්තනයට උත්සාහ කරන අතරතුර ගැටළුවක් ඇති විය. කරුණාකර නැවත
     උත්සාහ කරන්න.
   wwcConfigErrorLimitInvalid: වලංගු නොවන පරිවර්තක දෝෂ සීමාව config.yml හි දක්වා ඇත.
@@ -216,10 +216,10 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: වැඩි විස්තර සඳහා කරුණාකර WorldwideChat
     ප්ලගින ෆෝල්ඩරයේ errorLog.txt පරීක්ෂා කරන්න.
   wwctInvalidInputLangCode: 'වලංගු නොවන ආදාන භාෂා කේතය ලබා දී ඇත! වලංගු දිගු කේත:
-    %o'
-  wwcsTitle: '%i වාර්තාව'
+    {0}'
+  wwcsTitle: '{0} වාර්තාව'
   wwctInvalidOutputLangCode: 'වලංගු නොවන ප්රතිදාන භාෂා කේතය ලබා දී ඇත! වලංගු දිගු
-    කේත: %o'
+    කේත: {0}'
   wwctGUISourceTranslationSelected: ඔබ මෙම භාෂාව තෝරාගෙන ඇත.
   wwcConfigGUIChatMessagesOverrideDeleteButton: අභිබවා යන්න මකන්න
   wwcConfigConversationOverrideTextChange: කරුණාකර මෙම අභිබවා යාම සඳහා නව පණිවිඩයක්
@@ -249,21 +249,21 @@ Messages:
   wwcConfigMessageCharLimitInvalid: config.yml හි ඇති පණිවිඩයක් අනුව වලංගු නොවන සීමාවක්.
     භාජන 255 ක් පැහැර හැරීම...
   wwcConfigConversationCharacterLimitSuccess: අක්ෂර සීමාව සාර්ථකව සකසා ඇත.
-  wwcteOnTarget: '%i සඳහා ආයතන පරිවර්තනය සක්රීය කර ඇත.'
-  wwcEntityTranslateDone: 'පරිවර්ථනය කරන ලද ආයතන නම: %i'
+  wwcteOnTarget: '{0} සඳහා ආයතන පරිවර්තනය සක්රීය කර ඇත.'
+  wwcEntityTranslateDone: 'පරිවර්ථනය කරන ලද ආයතන නම: {0}'
   wwcEntityTranslateNoName: ආයතනයට අභිරුචි නමක් නොමැත.
   wwcConfigConversationErrorLimitInput: එක් එක් පරිවර්තකයා සඳහා වර්තමාන දෝෂ සීමාව
-    %i වේ. නව අගයක් සැකසීම සඳහා 0 ට වඩා වැඩි යමක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0
+    {0} වේ. නව අගයක් සැකසීම සඳහා 0 ට වඩා වැඩි යමක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0
     ට වඩා අඩු හෝ සමාන දෙයක් ටයිප් කරන්න.
   wwcConfigGUIGlobalRateLimitButton: ගෝලීය අනුපාත සීමාව වෙනස් කිරීම
   wwcteOnSender: ආයතන පරිවර්තනය සක්රීය කර ඇත. එහි නම පරිවර්තනය කිරීම සඳහා ආයතනයක්
     මත දකුණු-ක්ලික් කරන්න!
   wwcConfigGUIResponseLimitButton: පරිවර්තක ප්රතිචාර කාලය වෙනස් කරන්න
-  wwcConfigMessageCharLimitEnabled: පණිවුඩයකට අක්ෂර සීමාව %i අක්ෂර දක්වා සකසා ඇත.
-  wwcteOffTarget: ආයතන පරිවර්ථනය %i සඳහා අක්‍රීය විය.
-  wwcCharLimit: ඔබේ පණිවිඩය දිගු වේ! කරුණාකර ඔබගේ පණිවිඩය %i අක්ෂරවලට වඩා අඩුවෙන්
+  wwcConfigMessageCharLimitEnabled: පණිවුඩයකට අක්ෂර සීමාව {0} අක්ෂර දක්වා සකසා ඇත.
+  wwcteOffTarget: ආයතන පරිවර්ථනය {0} සඳහා අක්‍රීය විය.
+  wwcCharLimit: ඔබේ පණිවිඩය දිගු වේ! කරුණාකර ඔබගේ පණිවිඩය {0} අක්ෂරවලට වඩා අඩුවෙන්
     ඇති බවට වග බලා ගන්න.
-  wwcConfigConversationCharacterLimitInput: පණිවිඩයකට වර්තමාන අක්ෂර සීමාව %i අක්ෂර
+  wwcConfigConversationCharacterLimitInput: පණිවිඩයකට වර්තමාන අක්ෂර සීමාව {0} අක්ෂර
     වේ. නව වටිනාකමක් සැකසීමට 0 ට වඩා වැඩි දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ට
     වඩා අඩු හෝ සමාන දෙයක් ටයිප් කරන්න.
   wwcteOffSender: ආයතන පරිවර්තනය අක්රීය කර ඇත.
@@ -273,22 +273,22 @@ Messages:
     ගැටළුවක් ඇති විය. වැඩි විස්තර සඳහා errorLog.txt පරීක්ෂා කරන්න.
   wwctGUIChatButton: ටොගල් කරන්න චැට් පරිවර්තනය
   wwcrBegin: නැවත පූරණය කිරීම ලෝක වයිඩෙහාට්...
-  wwctTranslationStoppedOtherPlayer: '%i සඳහා පරිවර්තන සැසිය නතර කර ඇත.'
+  wwctTranslationStoppedOtherPlayer: '{0} සඳහා පරිවර්තන සැසිය නතර කර ඇත.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ගෝලීය කතාබස් පරිවර්තනය
-    වෙමින් පවතී, නමුත් ඔබට %i සිට %o සිට ක්රියාකාරී පරිවර්තන සැසියක් ඇත.
+    වෙමින් පවතී, නමුත් ඔබට {0} සිට {1} සිට ක්රියාකාරී පරිවර්තන සැසියක් ඇත.
   wwctCannotTranslateConsole: ඔබට කොන්සෝලය සඳහා පරිවර්තන සැසියක් ආරම්භ කළ නොහැක!
-  wwctLangToLangStart: '%i සිට %o දක්වා නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
-  wwcOnJoinTranslationNotificationSourceLang: ඔබට %i සිට සක්‍රීය පරිවර්තන සැසියක්
+  wwctLangToLangStart: '{0} සිට {1} දක්වා නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
+  wwcOnJoinTranslationNotificationSourceLang: ඔබට {0} සිට සක්‍රීය පරිවර්තන සැසියක්
     ඇත.
-  wwctAutoTranslateStartOtherPlayer: '%i to %o සඳහා නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
+  wwctAutoTranslateStartOtherPlayer: '{0} to {1} සඳහා නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
   wwctTranslationStopped: ඔබගේ පරිවර්තන සැසිය නතර කර ඇත.
-  wwctLangToLangStartOtherPlayer: '%o සඳහා නව පරිවර්තන සැසියක් ආරම්භ කිරීම %i සිට
-    %e.'
-  wwctAutoTranslateStart: '%o වෙත නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
-  wwcOnJoinTranslationNotificationNoSourceLang: ඔබට %o වෙත ක්රියාකාරී පරිවර්තන සැසියක්
+  wwctLangToLangStartOtherPlayer: '{0} සඳහා නව පරිවර්තන සැසියක් ආරම්භ කිරීම {1} සිට
+    {0}.'
+  wwctAutoTranslateStart: '{0} වෙත නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
+  wwcOnJoinTranslationNotificationNoSourceLang: ඔබට {0} වෙත ක්රියාකාරී පරිවර්තන සැසියක්
     ඇත.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ගෝලීය චැට් පරිවර්තනය
-    වෙමින් පවතී, නමුත් ඔබට %o වෙත ක්රියාකාරී පරිවර්තන සැසියක් ඇත.
+    වෙමින් පවතී, නමුත් ඔබට {0} වෙත ක්රියාකාරී පරිවර්තන සැසියක් ඇත.
   wwcConfigGUIChangesNotSaved: ඔබ /wwcහි රතු බාධකයක් මත ක්ලික් කරන තුරු ඔබේ වෙනස්කම්
     ක්රියාත්මක නොවනු ඇත.
   wwctciOffSender: පැමිණෙන චැට් පරිවර්තනය අක්රීය කර ඇත.
@@ -299,24 +299,24 @@ Messages:
   wwctciOnSender: ලැබෙන චැට් පරිවර්තනය සක්රීය කර ඇත. ඔබට ලැබෙන ඕනෑම දෙයක් පරිවර්තනය
     කරනු ඇත!
   wwctGUIChatMenu: ටොගල් කරන්න භාෂා පරිවර්තන මෙනුව
-  wwctcoOnTarget: පිටතට යන චැට් පරිවර්තනය %i සඳහා සක්රීය කර ඇත.
-  wwctcoOffTarget: '%i සඳහා පිටතට යන චැට් පරිවර්තනය අක්රීය කර ඇත.'
+  wwctcoOnTarget: පිටතට යන චැට් පරිවර්තනය {0} සඳහා සක්රීය කර ඇත.
+  wwctcoOffTarget: '{0} සඳහා පිටතට යන චැට් පරිවර්තනය අක්රීය කර ඇත.'
   wwctGUIChatOutgoingButton: ටොගල් කරන්න පිටතට යන චැට් පරිවර්තනය
-  wwctciOnTarget: '%i සඳහා පැමිණෙන චැට් පරිවර්තනය සක්රීය කර ඇත.'
-  wwctciOffTarget: '%i සඳහා පැමිණෙන චැට් පරිවර්තනය අක්රීය කර ඇත.'
+  wwctciOnTarget: '{0} සඳහා පැමිණෙන චැට් පරිවර්තනය සක්රීය කර ඇත.'
+  wwctciOffTarget: '{0} සඳහා පැමිණෙන චැට් පරිවර්තනය අක්රීය කර ඇත.'
   wwcConfigConversationSendIncomingHoverTextChatSuccess: පරිවර්තනයට අමුණා ඇති මුල්
     පිටපත සාර්ථකව ටොගල් කර ඇත.
   wwcConfigGUISendIncomingHoverTextChatButton: මුල් එන පණිවිඩ Hover පෙළ ලෙස එක් කරන්න
-  wwctGUIExistingChatOutgoingEnabled: 'පිටතට යන චැට් පරිවර්තනය සක්රීය කර ඇත: %i'
-  wwctGUIExistingTranslationInput: 'ආදාන භාෂාව: %i'
-  wwctGUIExistingChatIncomingEnabled: 'ලැබෙන චැට් පරිවර්තනය සක්රීය කර ඇත: %i'
-  wwctGUIExistingTranslationOutput: 'ප්රතිදාන භාෂාව: %i'
+  wwctGUIExistingChatOutgoingEnabled: 'පිටතට යන චැට් පරිවර්තනය සක්රීය කර ඇත: {0}'
+  wwctGUIExistingTranslationInput: 'ආදාන භාෂාව: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'ලැබෙන චැට් පරිවර්තනය සක්රීය කර ඇත: {0}'
+  wwctGUIExistingTranslationOutput: 'ප්රතිදාන භාෂාව: {0}'
   wwcTranslatorAttempt: config.yml හි පරිවර්තක සමඟ සම්බන්ධ වීමට උත්සාහ කිරීම... (
-    %i/ %o)
+    {0}/ {1})
   wwcTimeoutExceptionConsole: සෙල්ලම් කරන්න % මට ඔවුන්ගේ නවතම ඉල්ලීම කාලය තිබුණි.
     මෙම දෝෂය මාරාන්තික නොවේ, නමුත් එය දිගටම සිදු වුවහොත් වර්ල්ඩ්වයිඩෙකැට් නැවත පූරණය
     කළ යුතුය.
-  wwcGUIPageNumber: 'පිටු අංකය: %i'
+  wwcGUIPageNumber: 'පිටු අංකය: {0}'
   wwcConfigYAMLFallback: YAML වෙත ආපසු වැටීම...
   wwcConfigGUIToggleSQLButton: ටොගල් කරන්න SQL
   wwcConfigConversationToggleSQLSuccess: SQL සාර්ථකව ටොගල කළේය. ක්රියාත්මක වන පරිදි
@@ -337,34 +337,34 @@ Messages:
   wwcConfigGUISQLPortButton: SQL වරාය වෙනස්
   wwcConfigGUISQLOptionalArgsButton: SQL විකල්ප තර්ක වෙනස්
   wwcConfigConversationToggleSQLSSLSuccess: SQL සඳහා SSL සාර්ථකව ටොගල කර ඇත.
-  wwcConfigConversationSQLPortInput: වත්මන් වරාය %i වේ. නව වරායක් සැකසීමට 0 හැර වෙනත්
+  wwcConfigConversationSQLPortInput: වත්මන් වරාය {0} වේ. නව වරායක් සැකසීමට 0 හැර වෙනත්
     ඕනෑම දෙයක් ටයිප් කරන්න, නැතහොත් නැවත යාමට 0 ටයිප් කරන්න.
   wwcConfigGUISQLPasswordButton: SQL මුරපදය වෙනස් කරන්න
   wwcConfigConversationSQLHostnameSuccess: SQL සත්කාරකනාමය සාර්ථකව වෙනස් කළේය.
-  wwcConfigConversationSQLHostnameInput: වත්මන් හොස්ට්නාමය %i වේ. නව නේවාසිකාගාර නාමයක්
+  wwcConfigConversationSQLHostnameInput: වත්මන් හොස්ට්නාමය {0} වේ. නව නේවාසිකාගාර නාමයක්
     සැකසීමට 0 හැර වෙනත් කිසිවක් ටයිප් කරන්න, නැතහොත් නැවත යාමට 0 ටයිප් කරන්න.
   wwcConfigGUISQLHostnameButton: SQL Hostname වෙනස්
   wwcConfigConversationSQLOptionalArgsSuccess: විකල්ප SQL තර්ක සාර්ථකව වෙනස්.
   wwcConfigConversationSQLPasswordSuccess: SQL මුරපදය සාර්ථකව වෙනස් කළේය.
-  wwcConfigConversationSQLPasswordInput: වත්මන් මුරපදය %i වේ. නව මුරපදයක් සැකසීමට
+  wwcConfigConversationSQLPasswordInput: වත්මන් මුරපදය {0} වේ. නව මුරපදයක් සැකසීමට
     0 හැර වෙනත් කිසිවක් ටයිප් කරන්න, නැතහොත් නැවත යාමට 0 ටයිප් කරන්න.
   wwcConfigGUIToggleSQLSSLButton: SQL SSL ටොගල් කරන්න
   wwcConfigConversationSQLUsernameSuccess: SQL පරිශීලක නාමය සාර්ථකව වෙනස් කළේය.
-  wwcConfigConversationSQLUsernameInput: වත්මන් පරිශීලක නාමය %i වේ. නව පරිශීලක නාමයක්
+  wwcConfigConversationSQLUsernameInput: වත්මන් පරිශීලක නාමය {0} වේ. නව පරිශීලක නාමයක්
     සැකසීමට 0 හැර වෙනත් කිසිවක් ටයිප් කරන්න, නැතහොත් නැවත යාමට 0 ටයිප් කරන්න.
   wwcConfigConversationSQLPortSuccess: SQL වරාය සාර්ථකව වෙනස් කළේය.
   wwcConfigGUISQLUsernameButton: SQL පරිශීලක නාමය වෙනස්
   wwcConfigConversationSQLOptionalArgsCleared: විකල්ප තර්ක සාර්ථකව ඉවත් කර ඇත.
-  wwcConfigConversationSQLOptionalArgsInput: 'වත්මන් විකල්ප SQL තර්ක නම්: %i. කොමාවකින්
+  wwcConfigConversationSQLOptionalArgsInput: 'වත්මන් විකල්ප SQL තර්ක නම්: {0}. කොමාවකින්
     වෙන් කරන ලද තර්ක ටයිප් කරන්න (යතුර = අගය, key2= value2), හෝ වත්මන් ආග පිස දැමීමට
     පැහැදිලි ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.'
-  wwcConfigConversationSQLDatabaseNameInput: වත්මන් දත්ත සමුදා නාමය %i වේ. නව දත්ත
+  wwcConfigConversationSQLDatabaseNameInput: වත්මන් දත්ත සමුදා නාමය {0} වේ. නව දත්ත
     සමුදා නාමයක් සැකසීමට 0 හැර වෙනත් කිසිවක් ටයිප් කරන්න, නැතහොත් නැවත යාමට 0 ටයිප්
     කරන්න.
   wwcConfigGUISQLDatabaseNameButton: SQL දත්ත සමුදාය වෙනස්
   wwcConfigConversationSQLDatabaseNameSuccess: SQL දත්ත සමුදා නාමය සාර්ථකව වෙනස් කළේය.
   wwcConfigConversationFatalAsyncAbort: සියලු අසමමිතික කාර්යයන් ඉවත් කිරීම සඳහා වර්තමාන
-    කාලය %i තත්පර වේ. නව කාල සටහනක් සැකසීමට 7 ට වඩා ඉහළින් ඕනෑම දෙයක් ටයිප් කරන්න,
+    කාලය {0} තත්පර වේ. නව කාල සටහනක් සැකසීමට 7 ට වඩා ඉහළින් ඕනෑම දෙයක් ටයිප් කරන්න,
     නැතහොත් ආපසු යාමට පහළින් ඕනෑම දෙයක් ටයිප් කරන්න.
   wwcConfigConversationFatalAsyncSuccess: Aync කාර්ය කාලය සාර්ථකව සකස්.
   wwcConfigGUIFatalAsyncAbortButton: Aync කාර්ය කාලය වෙනස්
@@ -374,7 +374,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: නිදහස් පරිවර්තනය API කී වෙනස්
   libreHttp403: අතුරුදහන් Libre API කී පරිවර්තනය, හෝ ඔබ සේවාදායකය තහනම්!
   wwcConfigConversationLibreURLSuccess: නිදහස් URL එක සාර්ථකව සකසා ඇත.
-  wwcConfigConversationLibreTranslateApiKeyInput: වත්මන් API යතුර %i වේ. කරුණාකර Libre
+  wwcConfigConversationLibreTranslateApiKeyInput: වත්මන් API යතුර {0} වේ. කරුණාකර Libre
     සඳහා API යතුරක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigGUILibreTranslateButton: නිදහස් පරිවර්තනය
   libreHttp429: සේවාදායකයෙන් අනුපාත සීමාව නිසා කිසිදු විශ්වාසයක් නැත.
@@ -382,35 +382,35 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: සාර්ථකව ටොගල කළ ලිබ්රේ පරිවර්තනය.
     වෙනස්කම් බලාත්මක කිරීම සඳහා රීලෝඩ් කරන්න.
   wwcConfigConversationLibreTranslateApiKeySuccess: නිදහස් API ප්රධාන කට්ටලයක් සාර්ථකව.
-  wwcConfigConversationLibreURLInput: වත්මන් URL එක %i වේ. කරුණාකර Libre සඳහා URL
+  wwcConfigConversationLibreURLInput: වත්මන් URL එක {0} වේ. කරුණාකර Libre සඳහා URL
     එකක් ආදානය කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
-  libreHttpUnknown: 'නොදන්නා http දෝෂය: %i'
+  libreHttpUnknown: 'නොදන්නා http දෝෂය: {0}'
   wwcConfigGUILibreTranslateURLButton: නිදහස් පරිවර්තනය URL එක වෙනස්
-  wwcConfigConnectionFail: '%i වෙත සම්බන්ධ වීමට අසමත් විය.'
+  wwcConfigConnectionFail: '{0} වෙත සම්බන්ධ වීමට අසමත් විය.'
   wwcConfigGUIMongoSettings: මොන්ගෝඩ් බී වින්යාසය
   wwcConfigConversationMongoDatabaseNameSuccess: මොන්ගෝඩ්බී දත්ත සමුදා නාමය සාර්ථකව
     වෙනස් කරන ලදී.
   wwcConfigGUIMongoHostnameButton: මොන්ගොඩ් බී සත්කාරක නාමය වෙනස් කරන්න
-  wwcConfigConversationMongoPasswordInput: වත්මන් මුරපදය %i වේ. නව මුරපදයක් සැකසීමට
+  wwcConfigConversationMongoPasswordInput: වත්මන් මුරපදය {0} වේ. නව මුරපදයක් සැකසීමට
     0 හැර වෙනත් ඕනෑම දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
-  wwcConfigConversationMongoPortInput: වත්මන් වරාය %i වේ. නව වරායක් සැකසීමට 0 හැර
+  wwcConfigConversationMongoPortInput: වත්මන් වරාය {0} වේ. නව වරායක් සැකසීමට 0 හැර
     වෙනත් ඕනෑම දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigConversationToggleMongoSuccess: මොන්ගෝඩ් බී සාර්ථකව ටොගල කළේය. වෙනස් කිරීම
     සඳහා නැවත පූරණය කරන්න.
-  wwcConfigConversationMongoHostnameInput: වත්මන් සත්කාරක නාමය %i වේ. නව සත්කාරක නාමයක්
+  wwcConfigConversationMongoHostnameInput: වත්මන් සත්කාරක නාමය {0} වේ. නව සත්කාරක නාමයක්
     සැකසීමට 0 හැර වෙනත් ඕනෑම දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigConversationMongoHostnameSuccess: මොන්ගෝඩ් බී සත්කාරක නාමය සාර්ථකව වෙනස්
     කරන ලදී.
   wwcConfigGUIMongoMenuButton: මොන්ගෝඩ්බී සැකසුම් වෙනස් කරන්න
   wwcConfigGUIToggleMongoButton: මොන්ගෝඩ් බී ටොගල කරන්න
-  wwcConfigConversationMongoDatabaseNameInput: වත්මන් දත්ත සමුදා නාමය %i වේ. නව දත්ත
+  wwcConfigConversationMongoDatabaseNameInput: වත්මන් දත්ත සමුදා නාමය {0} වේ. නව දත්ත
     සමුදා නාමයක් සැකසීමට 0 හැර වෙනත් ඕනෑම දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප්
     කරන්න.
-  wwcConfigConversationMongoOptionalArgsInput: 'වත්මන් විකල්ප MONGODB තර්ක නම්: %i.
+  wwcConfigConversationMongoOptionalArgsInput: 'වත්මන් විකල්ප MONGODB තර්ක නම්: {0}.
     කොමාවකින් වෙන් කරන ලද තර්ක ටයිප් කරන්න (key=value, key2 = value2), හෝ වත්මන් අගයන්
     පිස දැමීමට පැහැදිලි ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.'
   wwcConfigGUIMongoDatabaseNameButton: මොන්ගොඩ් දත්ත සමුදාය වෙනස් කරන්න
-  wwcConfigConversationMongoUsernameInput: වත්මන් පරිශීලක නාමය %i වේ. නව පරිශීලක නාමයක්
+  wwcConfigConversationMongoUsernameInput: වත්මන් පරිශීලක නාමය {0} වේ. නව පරිශීලක නාමයක්
     සැකසීමට 0 හැර වෙනත් ඕනෑම දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigGUIMongoOptionalArgsButton: මොන්ගොඩ් බී විකල්ප තර්ක වෙනස් කරන්න
   wwcConfigConversationMongoUsernameSuccess: මොන්ගෝඩ්බී පරිශීලක නාමය සාර්ථකව වෙනස්
@@ -433,7 +433,7 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: DeepL පරිවර්තනය API යතුර වෙනස් කරන්න
   wwcConfigGUIToggleDeepLTranslateButton: DeepL පරිවර්තනය ටොගල් කරන්න
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API ප්රධාන කට්ටලයක් සාර්ථකව.
-  wwcConfigConversationDeepLTranslateApiKeyInput: වත්මන් API යතුර %i වේ. කරුණාකර DeepL
+  wwcConfigConversationDeepLTranslateApiKeyInput: වත්මන් API යතුර {0} වේ. කරුණාකර DeepL
     සඳහා API යතුරක් ඇතුළත් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigErrorsToIgnoreSuccess: නොසලකා හැරීම සඳහා සාර්ථකව ලියාපදිංචි පරිවර්තක දෝෂ.
   wwcConfigErrorsToIgnoreInvalid: වින්යාස කර ඇති නොසලකා හැරීම සඳහා වලංගු නොවන පරිවර්තක
@@ -443,24 +443,24 @@ Messages:
     වෙනස් කළේය.
   wwcConfigGUIIgnoreErrorsButton: නොසලකා හැරීමට දෝෂ වෙනස් කරන්න
   wwcConfigConversationIgnoreErrorsInput: 'නොසලකා හැරීම සඳහා පරිවර්තක දෝෂ වල වර්තමාන
-    වාක්ය ලැයිස්තුව: %i. කොමාවකින් වෙන් කරන ලද තර්ක ටයිප් කරන්න (key=value, key2 =
+    වාක්ය ලැයිස්තුව: {0}. කොමාවකින් වෙන් කරන ලද තර්ක ටයිප් කරන්න (key=value, key2 =
     value2), හෝ වත්මන් අග්ර පිස දැමීමට පැහැදිලි ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප්
     කරන්න. මීට අමතරව, “*” ටයිප් කිරීමෙන් ප්ලගිනය පරිවර්තක දෝෂ පරීක්ෂා නොකිරීමට හේතු
     වේ.'
   wwcConfigConversationIgnoreErrorsCleared: සාර්ථකව නිෂ්කාශනය කරන ලද වාක්ය නොසලකා
     හැරීම පරිවර්තක දෝෂ.
 
-  wwcsActiveTransPrevRate: 'සක්රීය පරිවර්තක පෙර අනුපාත සීමාව වේලාව: %i'
-  wwcsActiveTransSaved: 'සක්‍රීය පරිවර්තක තැටියට සුරකින ලදි: %i'
-  wwcsActiveTransIncoming: 'එන කතාබස් පරිවර්තනය සක්රීය පරිවර්තක: %i'
-  wwcsActiveTransOutLang: 'සක්‍රීය පරිවර්තක ප්රතිදාන භාෂාව: %i'
-  wwcsActiveTransInLang: 'සක්‍රීය පරිවර්තක ආදාන භාෂාව: %i'
-  wwcsActiveTransBook: 'ක්රියාකාරී පරිවර්තක පරිවර්තන පොත: %i'
-  wwcsActiveTransSign: 'සක්‍රීය පරිවර්තක පරිවර්තන ලකුණ: %i'
-  wwcsActiveTransUUID: 'සක්රීය පරිවර්තක UUID: %i'
-  wwcsActiveTransRateLimit: 'සක්රීය පරිවර්තක අනුපාත සීමාව: %i'
-  wwcsActiveTransColorWarning: 'සක්රීය පරිවර්තකයාට වර්ණ අනතුරු ඇඟවීම ලැබුණි: %i'
-  wwcsActiveTransOutgoing: 'ක්රියාකාරී පරිවර්තක පරිවර්තන පිටතට යන කතාබස්: %i'
-  wwcsActiveTransItem: 'සක්‍රීය පරිවර්තක පරිවර්තන අයිතමය: %i'
-  wwcsActiveTransEntity: 'සක්රීය පරිවර්තක පරිවර්තන ආයතනය: %i'
+  wwcsActiveTransPrevRate: 'සක්රීය පරිවර්තක පෙර අනුපාත සීමාව වේලාව: {0}'
+  wwcsActiveTransSaved: 'සක්‍රීය පරිවර්තක තැටියට සුරකින ලදි: {0}'
+  wwcsActiveTransIncoming: 'එන කතාබස් පරිවර්තනය සක්රීය පරිවර්තක: {0}'
+  wwcsActiveTransOutLang: 'සක්‍රීය පරිවර්තක ප්රතිදාන භාෂාව: {0}'
+  wwcsActiveTransInLang: 'සක්‍රීය පරිවර්තක ආදාන භාෂාව: {0}'
+  wwcsActiveTransBook: 'ක්රියාකාරී පරිවර්තක පරිවර්තන පොත: {0}'
+  wwcsActiveTransSign: 'සක්‍රීය පරිවර්තක පරිවර්තන ලකුණ: {0}'
+  wwcsActiveTransUUID: 'සක්රීය පරිවර්තක UUID: {0}'
+  wwcsActiveTransRateLimit: 'සක්රීය පරිවර්තක අනුපාත සීමාව: {0}'
+  wwcsActiveTransColorWarning: 'සක්රීය පරිවර්තකයාට වර්ණ අනතුරු ඇඟවීම ලැබුණි: {0}'
+  wwcsActiveTransOutgoing: 'ක්රියාකාරී පරිවර්තක පරිවර්තන පිටතට යන කතාබස්: {0}'
+  wwcsActiveTransItem: 'සක්‍රීය පරිවර්තක පරිවර්තන අයිතමය: {0}'
+  wwcsActiveTransEntity: 'සක්රීය පරිවර්තක පරිවර්තන ආයතනය: {0}'
 

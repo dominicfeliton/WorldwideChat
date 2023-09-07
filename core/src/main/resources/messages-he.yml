@@ -1,67 +1,67 @@
 Messages:
-  wwcgAutoTranslateStart: כעת מתרגם צ'אט גלובלי אל %o.
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: צ'אט גלובלי מתורגם אל %o.
+  wwcgAutoTranslateStart: כעת מתרגם צ'אט גלובלי אל {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: צ'אט גלובלי מתורגם אל {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: שינוי מפתח גישה לאמזון
   wwcrFail: טעינת WorldwideChat נכשלה.
   wwcConfigGUIUpdateCheckerButton: שינוי בדוק אם קיימים עיכוב עדכונים
   wwcUpdaterFailedGeneric: אין אפשרות לחפש עדכונים של WorldwideChat.
-  wwcConfigConversationUpdateCheckerInput: ההשהיה הנוכחית על בודק העדכון היא %i שניות.
+  wwcConfigConversationUpdateCheckerInput: ההשהיה הנוכחית על בודק העדכון היא {0} שניות.
     הקלד כל דבר גדול מ- 10 כדי להגדיר ערך חדש, או כל דבר פחות מ- 10 כדי לחזור אחורה.
   wwctGUIMainMenuGlobal: תפריט תרגום גלובלי
   wwcConfigConversationPluginUpdateChatSuccess: עדכון תוסף צ'אט תזכורת חצה בהצלחה.
-  wwctbOnTarget: תרגום ספרים מופעל עבור %i.
-  wwcsNotATranslator: עדיין אין רשומות זמינות עבור %i.
+  wwctbOnTarget: תרגום ספרים מופעל עבור {0}.
+  wwcsNotATranslator: עדיין אין רשומות זמינות עבור {0}.
   wwcConfigGUIbStatsButton: החלפת bStats
   wwctGUINewTranslationSource: בחר שפת מקור
-  wwcConfigConnectionFailed: התחברות אל %o נכשלה. ודא שהאישורים וחומת האש שלך מוגדרים
+  wwcConfigConnectionFailed: התחברות אל {0} נכשלה. ודא שהאישורים וחומת האש שלך מוגדרים
     כהלכה!
   wwcConfigEnabledbStats: bStats מופעל.
-  wwctGUIMainMenuPlayer: תפריט התרגום של %i
+  wwctGUIMainMenuPlayer: תפריט התרגום של {0}
   wwctGUIBookButton: החלפת תרגום ספרים
-  wwcLangDetected: זוהתה שפה %o.
+  wwcLangDetected: זוהתה שפה {0}.
   wwcBookTranslateStart: מתרגם את ספר היעד...
   wwcConfigDisabledbStats: bStats נכים.
   wwctsOffSender: תרגום הסימנים מושבת.
   wwcUpdaterParserFailed: ניתוח נתוני עדכון מ- Github נכשלה.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: המפתח הסודי הנוכחי הוא %i. הזן
+  wwcConfigConversationAmazonTranslateSecretKeyInput: המפתח הסודי הנוכחי הוא {0}. הזן
     מפתח סודי עבור Amazon, או הקלד 0 כדי לחזור אחורה.
   wwctbOffSender: תרגום ספרים מנוטרל.
   wwcConfigGUIAmazonTranslateButton: אמזון לתרגם
   wwcConfigConversationLangSuccess: שפת התוספים השתנתה בהצלחה.
-  wwcsSuccessfulTranslations: 'תרגומים מוצלחים: %i'
+  wwcsSuccessfulTranslations: 'תרגומים מוצלחים: {0}'
   wwcConfigConversationTranslationCacheInput: מגבלת מטמון התרגום הנוכחית היא ביטויים
-    %i. הקלד דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד 0 כדי להשבית את מטמון התרגום.
+    {0}. הקלד דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד 0 כדי להשבית את מטמון התרגום.
     הקלד כל דבר פחות מ-0 כדי לחזור.
-  wwctbOffTarget: תרגום ספרים מושבת עבור %i.
+  wwctbOffTarget: תרגום ספרים מושבת עבור {0}.
   wwcConfigGUIGeneralSettings: הגדרת תצורה כללית
   wwcInvalidLang: שפה לא חוקית בconfig.yml שלך. ברירת מחדל כדי en...
   wwcConfigConversationAmazonTranslateRegionSuccess: אזור אמזון מוגדר בהצלחה.
-  wwcConfigRateLimitEnabled: מגבלת קצב גלובלית מופעלת ומוגדרת ל %i שניות.
+  wwcConfigRateLimitEnabled: מגבלת קצב גלובלית מופעלת ומוגדרת ל {0} שניות.
   wwcBadPerms: אין לך את ההרשאות הדרושות כדי להפעיל פקודה זו!
   wwcConfigGUILangButton: שינוי שפת התוספים
   wwctGUISignButton: החלפת סימן לתרגום
   wwcUpdaterOutOfDate: WorldwideChat הוא לא מעודכן. אנא עדכן לגרסה העדכנית ביותר,
-    %i.
+    {0}.
   wwcConfigGUINextPageButton: העמוד הבא
   wwcConfigInvalidTranslatorSettings: הגדרות מתרגם לא חוקיות! נא הפעל רק מתרגם אחד
     בconfig.yml שלך.
   wwcConfigGUIQuitButton: יציאה ושמור שינויים
   wwctPlayerNotFound: שחקן %לא מצאתי.
   wwcConfigGUIAmazonTranslateRegionButton: שינוי אזור אמזון
-  wwcConfigConversationLangInput: 'שפת התוסף הנוכחית היא %i. הזן קוד שפה חוקי, או
-    הקלד 0 כדי לבטל. קודי שפה תקפים: %o'
+  wwcConfigConversationLangInput: 'שפת התוסף הנוכחית היא {0}. הזן קוד שפה חוקי, או
+    הקלד 0 כדי לבטל. קודי שפה תקפים: {0}'
   wwcConfigConversationLangInvalid: קוד שפה לא חוקי!
   wwcConfigGUIWatsonAPIKeyButton: שינוי מפתח API של ווטסון
   wwcEnabled: גרסת WorldwideChat מופעלת. i.
-  wwcgLangToLangStart: כעת מתרגם צ'אט גלובלי מ %i אל %o.
+  wwcgLangToLangStart: כעת מתרגם צ'אט גלובלי מ {0} אל {1}.
   wwctbOnSender: תרגום ספרים מופעל. לחץ לחיצה ימנית תוך החזקת ספר לתרגם אותו!
   wwcListenersInitialized: מאזינים אותחלו.
   wwcConfigGUIPluginUpdateChatButton: שלח תזכורת צ'אט עבור עדכוני פלאגין
   wwcConfigConversationSendTranslationChatSuccess: תזכורת צ'אט מתרגם פעיל בהצלחה.
-  wwctsOffTarget: תרגום כניסה מושבת עבור %i.
+  wwctsOffTarget: תרגום כניסה מושבת עבור {0}.
   wwcUpdaterConnectionFailed: אין אפשרות לבדוק אם קיימים עדכונים אחרונים ב- Github.
   watsonNotFoundExceptionNotification: לא ניתן לתרגם את הקלט שלך יותר.
-  wwcConfigConversationWatsonAPIKeyInput: מפתח ה-API הנוכחי הוא %i. הזן מפתח API עבור
+  wwcConfigConversationWatsonAPIKeyInput: מפתח ה-API הנוכחי הוא {0}. הזן מפתח API עבור
     Watson, או הקלד 0 כדי לחזור אחורה.
   wwctGUIStopButton: הפסק לתרגם
   wwcgTranslationStopped: תרגום צ'אט גלובלי הופסק.
@@ -70,9 +70,9 @@ Messages:
   wwcConfigConversationPrefixSuccess: הקידומת השתנתה בהצלחה.
   wwcConfigGUIGoogleTranslateAPIKeyButton: שינוי מפתח API לתרגם גוגל
   wwcSignDeletedOrTooLong: 'סימן היעד נמחק או שהתרגום היה ארוך מדי. תרגום:'
-  wwctsOnTarget: תרגום החתימה מופעל עבור %i.
+  wwctsOnTarget: תרגום החתימה מופעל עבור {0}.
   wwcConfigCacheDisabled: מטמון מתרגם מנוטרל.
-  wwcConfigConversationWatsonURLInput: כתובת האתר הנוכחית היא %i. הזן כתובת URL של
+  wwcConfigConversationWatsonURLInput: כתובת האתר הנוכחית היא {0}. הזן כתובת URL של
     שירות עבור ווטסון, או הקלד 0 כדי לחזור.
   wwcBookDone: הספר תורגם בהצלחה.
   wwctsOnSender: תרגום החתימה מופעל. לחץ לחיצה ימנית על שלט כדי לתרגם אותו!
@@ -80,7 +80,7 @@ Messages:
   wwctGUITranslationButton: התחל לתרגם
   wwctGUIAutoDetectButton: זיהוי אוטומטי של שפת מקור
   wwcUpdaterUpToDate: WorldwideChat מעודכן!
-  wwcConfigConversationAmazonTranslateRegionInput: האזור הנוכחי הוא %i. אנא הכנס אזור
+  wwcConfigConversationAmazonTranslateRegionInput: האזור הנוכחי הוא {0}. אנא הכנס אזור
     עבור אמזון, או הקלד 0 כדי לחזור אחורה.
   wwcNoConsole: פקודה זו יכולה להיות מופעלת רק על ידי שחקן.
   wwcInitializationFail: אתחול WorldwideChat נכשל.
@@ -89,16 +89,16 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat הוא לא מעודכן. אנא עדכן לגרסה העדכנית ביותר.
   wwcConfigConversationRateLimitSuccess: מגבלת שער מוגדרת בהצלחה.
   wwcConfigConversationWatsonURLSuccess: כתובת ה-URL של ווטסון
-  wwctbPlayerNotFound: השחקן %i הוא גם לא נמצא, או אינו מתרגם פעיל.
+  wwctbPlayerNotFound: השחקן {0} הוא גם לא נמצא, או אינו מתרגם פעיל.
   wwcConfigConversationTranslationCacheSuccess: מגבלת מטמון תרגום מוגדרת בהצלחה
   wwctInvalidArgs: טיעונים לא חוקיים סיפקו!
   wwcConfigGUIPrefixButton: שינוי קידומת תוסף
   wwctSameLangError: אתה לא יכול לתרגם לאותה שפה!
   wwctGUINewTranslationTarget: בחר שפת יעד
-  wwcConfigConnectionSuccess: מחובר בהצלחה אל %o!
+  wwcConfigConnectionSuccess: מחובר בהצלחה אל {0}!
   wwcConfigGUIGoogleTranslateButton: גוגל תרגום
-  wwcsIsActiveTranslator: 'הוא מתרגם פעיל: %i'
-  wwcConfigConversationPrefixInput: הקידומת הנוכחית היא %i. הקלד קידומת חדשה, או הקלד
+  wwcsIsActiveTranslator: 'הוא מתרגם פעיל: {0}'
+  wwcConfigConversationPrefixInput: הקידומת הנוכחית היא {0}. הקלד קידומת חדשה, או הקלד
     0 כדי לחזור אחורה.
   wwcConfigGUIPreviousPageButton: העמוד הקודם
   wwcConfigGUITranslatorCacheButton: שינוי הגבלת מטמון התרגום
@@ -112,74 +112,74 @@ Messages:
   wwcConfigConversationUpdateCheckerSuccess: עדכון עיכוב בודק הוגדר בהצלחה.
   wwcUnsupportedVersion: 'אתה מפעיל גרסה לא נתמכת של Bukkit, ברז, או נייר. גרסאות
     נתמכות:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: צ'אט גלובלי מתורגם מ %i אל %o.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: צ'אט גלובלי מתורגם מ {0} אל {1}.
   wwcConfigGUITranslatorSettings: תצורת המתרגם
-  wwcConfigConversationGoogleTranslateAPIKeyInput: מפתח ה-API הנוכחי הוא %i. הזן מפתח
+  wwcConfigConversationGoogleTranslateAPIKeyInput: מפתח ה-API הנוכחי הוא {0}. הזן מפתח
     API עבור Google Translate, או הקלד 0 כדי לחזור אחורה.
-  wwcConfigConversationRateLimitInput: מגבלת התעריף הגלובלי הנוכחית לתרגום היא %i
+  wwcConfigConversationRateLimitInput: מגבלת התעריף הגלובלי הנוכחית לתרגום היא {0}
     שניות. הקלד דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד 0 כדי לבטל את המגבלה. הקלד
     כל דבר פחות מ-0 כדי לחזור.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate מפתח API להגדיר
     בהצלחה.
   wwcConfigGUIAmazonTranslateSecretKeyButton: שינוי המפתח הסודי של אמזון
   wwcVersion: העולם WideChat, גרסה
-  wwcsAttemptedTranslations: 'ניסיון תרגומים: %i'
+  wwcsAttemptedTranslations: 'ניסיון תרגומים: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: המפתח הסודי של אמזון הוגדר
     בהצלחה.
   wwcConfigConversationWatsonAPIKeySuccess: מפתח API של ווטסון הוגדר בהצלחה.
   wwcRateLimit: התרגומים שלך מוגבלים בשיעור. אנא המתן עוד שניות.
-  wwcConfigCacheEnabled: מטמון המתרגם מופעל והוגדר למגבלה של %i.
+  wwcConfigCacheEnabled: מטמון המתרגם מופעל והוגדר למגבלה של {0}.
   wwctGUIExistingTranslationButton: החלף את הפעלת התרגום הנוכחית
   wwcUserDataReloaded: טען את כל נתוני המשתמש השמורים.
   wwcConfigGUISendTranslationChatButton: שליחת תזכורת צ'אט למתרגם פעיל בהתחברות
-  wwcsLastTranslationTime: 'זמן התרגום האחרון (מוצלח): %i'
+  wwcsLastTranslationTime: 'זמן התרגום האחרון (מוצלח): {0}'
   wwctbNotATranslator: אתה לא מתרגם פעיל! ודא שהגדרת את זה עם /wwct.
-  wwcConfigConversationAmazonTranslateAccessKeyInput: מפתח הגישה הנוכחי הוא %i. הזן
+  wwcConfigConversationAmazonTranslateAccessKeyInput: מפתח הגישה הנוכחי הוא {0}. הזן
     מפתח גישה עבור Amazon, או הקלד 0 כדי לחזור.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: מפתח גישה אמזון מוגדר בהצלחה.
   wwcConfigBadUpdateDelay: השהיה לא חוקי של עדכון מוגדר ב- config.yml. ברירת מחדל
     ל-86400 שניות...
   wwctrlRateLimitOffSender: כיבית את מגבלת התעריף.
-  wwctrlRateLimitAlreadyOffTarget: מגבלת התעריף של %i כבר מושבתת.
-  wwctrlPlayerNotFound: השחקן %i הוא גם לא נמצא, או אינו מתרגם פעיל.
-  wwctrlRateLimitSetSender: הגדר את מגבלת התעריף %i שניות.
-  wwctrlRateLimitOffTarget: ביטל את מגבלת התעריף של %i.
-  wwctrlRateLimitSetTarget: הגדר את מגבלת התעריף של %i אל %o שניות.
+  wwctrlRateLimitAlreadyOffTarget: מגבלת התעריף של {0} כבר מושבתת.
+  wwctrlPlayerNotFound: השחקן {0} הוא גם לא נמצא, או אינו מתרגם פעיל.
+  wwctrlRateLimitSetSender: הגדר את מגבלת התעריף {0} שניות.
+  wwctrlRateLimitOffTarget: ביטל את מגבלת התעריף של {0}.
+  wwctrlRateLimitSetTarget: הגדר את מגבלת התעריף של {0} אל {1} שניות.
   wwctrlNotATranslator: אתה לא מתרגם פעיל! ודא שהגדרת את זה עם /wwct.
   wwctrlRateLimitAlreadyOffSender: מגבלת התעריף שלך כבר מושבתת.
   wwctGUIRateButton: הגדרת מגבלת קצב
-  wwctGUIConversationRateLimit: מגבלת התעריף לתרגום היא נוכחי %i שניות. הקלד דבר גדול
+  wwctGUIConversationRateLimit: מגבלת התעריף לתרגום היא נוכחי {0} שניות. הקלד דבר גדול
     מ- 0 כדי להגדיר ערך חדש, או הקלד 0 כדי לבטל את המגבלה. הקלד כל דבר פחות מ-0 כדי
     לחזור.
   wwctGUITargetPlayerNull: שחקן היעד מנותק מהשרת.
   wwcConfigConversationSyncUserDataDelayInput: ההשהיה הנוכחית לכל סינכרון של נתוני
-    המשתמש הוא %i שניות. הקלד כל דבר גדול מ- 10 כדי להגדיר ערך חדש, או כל דבר פחות
+    המשתמש הוא {0} שניות. הקלד כל דבר גדול מ- 10 כדי להגדיר ערך חדש, או כל דבר פחות
     מ- 10 כדי לחזור אחורה.
   wwcConfigGUISyncUserDataButton: שינוי שיהוי סינכרון נתוני משתמש
-  wwcConfigSyncDelayEnabled: השהיה לכל סינכרון נתוני המשתמש מוגדר אל %i שניות.
+  wwcConfigSyncDelayEnabled: השהיה לכל סינכרון נתוני המשתמש מוגדר אל {0} שניות.
   wwcConfigConversationSyncUserDataDelaySuccess: עיכוב סינכרון נתוני המשתמש הוגדר
     בהצלחה.
   wwcConfigSyncDelayInvalid: עיכוב סינכרון נתוני משתמש לא חוקי מוגדר ב- config.yml.
     ברירת מחדל ל-7200 שניות...
   wwcConfigCacheInvalid: גודל המטמון מתרגם לא חוקי. ברירת מחדל ל- 10...
   wwcInventoryErrorPlayer: אירעה שגיאה עם ממשק המשתמש שלך. יומן רישום נשלח לקונסולה.
-  wwcInventoryError: אירעה שגיאה עם GUI של המשתמש %i. אנא דווח על בעיה זו למפתח.
-  wwctiOffTarget: תרגום פריט מושבת עבור %i.
+  wwcInventoryError: אירעה שגיאה עם GUI של המשתמש {0}. אנא דווח על בעיה זו למפתח.
+  wwctiOffTarget: תרגום פריט מושבת עבור {0}.
   wwctiOffSender: תרגום פריט מושבת.
   wwcItemTranslateTitleStock: אין אפשרות לתרגם שמות פריטי ברירת מחדל.
   wwctGUIItemButton: החלף תרגום פריט
   wwcItemTranslateTitleDone: כותרת פריט מתורגמת בהצלחה.
   wwcGUITempItem: תצוגת פריט
   wwcItemTranslateStart: מתרגם פריט יעד...
-  wwcBookTranslateTitleSuccess: 'כותרת הספר מתורגמת: %i'
+  wwcBookTranslateTitleSuccess: 'כותרת הספר מתורגמת: {0}'
   wwctiOnSender: תרגום פריט מופעל. לחץ לחיצה ימנית עם פריט ביד הראשית שלך כדי לתרגם
     אותו!
   wwcItemTranslateLoreStart: תרגום הפולקלור של פריט היעד...
   wwcItemTranslateLoreDone: תורגם פריט תורגם בהצלחה.
-  wwctiOnTarget: תרגום פריט מופעל עבור %i.
+  wwctiOnTarget: תרגום פריט מופעל עבור {0}.
   wwcInvalidTranslator: הגדרות מתרגם לא חוקיות. אנא תקן זאת ב- config.yml שלך או עם
     /wwcc כדי להשתמש בתוסף זה.
-  wwcConfigGUIEachTranslatorSettings: '%i תצורה'
+  wwcConfigGUIEachTranslatorSettings: '{0} תצורה'
   wwcConfigGUIWatsonButton: ווטסון
   wwcServerReloadWarning: WorldwideChat אינו מגנה על השימוש ב/reloade. אנא המשיכו
     בזהירות.
@@ -187,15 +187,15 @@ Messages:
     לכבות את האפשרות הזו.
   wwcTranslatorErrorThresholdReached: הגיע לסף השגיאות. תוסף זה יהיה עכשיו לטעון מחדש,
     ולהשבית את כל המתרגמים.
-  wwcConfigErrorLimitEnabled: מגבלת שגיאת המתרגם מוגדרת אל %i
+  wwcConfigErrorLimitEnabled: מגבלת שגיאת המתרגם מוגדרת אל {0}
   wwcTranslatorError: אירעה בעיה בעת ניסיון התרגום שלך. אנא נסה שוב.
   wwcConfigErrorLimitInvalid: מגבלת שגיאת מתרגם לא חוקית מוגדרת ב- config.yml. ברירת
     מחדל ל 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: לקבלת מידע נוסף, בדוק את errorLog.txt
     בתיקיית התוספים WorldwideChat.
-  wwctInvalidInputLangCode: 'קוד שפת קלט לא חוקי מסופק! קודי lang תקפים: %o'
-  wwcsTitle: רשומה של %i
-  wwctInvalidOutputLangCode: 'קוד שפת פלט לא חוקי מסופק! קודי lang תקפים: %o'
+  wwctInvalidInputLangCode: 'קוד שפת קלט לא חוקי מסופק! קודי lang תקפים: {0}'
+  wwcsTitle: רשומה של {0}
+  wwctInvalidOutputLangCode: 'קוד שפת פלט לא חוקי מסופק! קודי lang תקפים: {0}'
   wwctGUISourceTranslationSelected: בחרת בשפה זו.
   wwcConfigGUIChatMessagesOverrideDeleteButton: מחק דריסה
   wwcConfigConversationOverrideTextChange: אנא הקלד הודעה חדשה עבור עקיפה זו, או הקלד
@@ -224,41 +224,41 @@ Messages:
   wwcConfigMessageCharLimitInvalid: מגבלה לא חוקית לכל הודעה מוגדרת ב- config.yml.
     ברירת מחדל ל 255 תווים...
   wwcConfigConversationCharacterLimitSuccess: מגבלת תווים מוגדרת בהצלחה.
-  wwcteOnTarget: תרגום היישות זמין עבור %i.
-  wwcEntityTranslateDone: 'שם ישות מתורגם: %i'
+  wwcteOnTarget: תרגום היישות זמין עבור {0}.
+  wwcEntityTranslateDone: 'שם ישות מתורגם: {0}'
   wwcEntityTranslateNoName: ישות אין שם מותאם אישית.
-  wwcConfigConversationErrorLimitInput: מגבלת השגיאה הנוכחית עבור כל מתרגם הוא %i.
+  wwcConfigConversationErrorLimitInput: מגבלת השגיאה הנוכחית עבור כל מתרגם הוא {0}.
     הקלד דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד כל דבר פחות או שווה ל- 0 כדי לחזור
     אחורה.
   wwcConfigGUIGlobalRateLimitButton: שינוי מגבלת קצב גלובלי
   wwcteOnSender: תרגום הישות מופעל. לחץ לחיצה ימנית על ישות כדי לתרגם את שמה!
   wwcConfigGUIResponseLimitButton: שנה את הזמן הקצוב לתגובת
-  wwcConfigMessageCharLimitEnabled: מגבלת תווים לכל הודעה שהוגדרה לתווי %i.
-  wwcteOffTarget: תרגום היישות מושבת עבור %i.
-  wwcCharLimit: המסר שלך ארוך מדי! אנא ודא שההודעה שלך היא פחות מ- %i תווים באורך.
+  wwcConfigMessageCharLimitEnabled: מגבלת תווים לכל הודעה שהוגדרה לתווי {0}.
+  wwcteOffTarget: תרגום היישות מושבת עבור {0}.
+  wwcCharLimit: המסר שלך ארוך מדי! אנא ודא שההודעה שלך היא פחות מ- {0} תווים באורך.
   wwcConfigConversationCharacterLimitInput: מגבלת התווים הנוכחית לכל הודעה היא תווי
-    %i. הקלד כל דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד כל דבר קטן מ- 0 או שווה
+    {0}. הקלד כל דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד כל דבר קטן מ- 0 או שווה
     ל- 0 כדי לחזור אחורה.
   wwcteOffSender: תרגום הישות מושבת.
   wwctGUIEntityButton: החלפת תרגום ישות
   wwctrlRateLimitBadInt: מגבלת התעריף אינה מספר שלם חוקי.
-  wwcTranslatorErrorConsole: אירעה בעיה בזמן שהמשתמש %i ניסה את התרגום שלהם. אנא בדוק
+  wwcTranslatorErrorConsole: אירעה בעיה בזמן שהמשתמש {0} ניסה את התרגום שלהם. אנא בדוק
     errorLog.txt לפרטים נוספים.
   wwctGUIChatButton: החלף תרגום צ'אט
   wwcrBegin: טוען מחדש את וורלד-ווידצ...
-  wwctTranslationStoppedOtherPlayer: הפעלת התרגום עבור %i הופסקה.
+  wwctTranslationStoppedOtherPlayer: הפעלת התרגום עבור {0} הופסקה.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: צ'אט גלובלי מתורגם, אבל
-    יש לך הפעלת תרגום פעילה מ %i ל %o.
+    יש לך הפעלת תרגום פעילה מ {0} ל {1}.
   wwctCannotTranslateConsole: לא ניתן להתחיל הפעלת תרגום עבור מסוף!
-  wwctLangToLangStart: מתחיל הפעלת תרגום חדשה מ- %i אל %o.
-  wwcOnJoinTranslationNotificationSourceLang: יש לך הפעלת תרגום פעילה מ- %i אל %o.
-  wwctAutoTranslateStartOtherPlayer: מתחיל הפעלת תרגום חדשה עבור %i אל %o.
+  wwctLangToLangStart: מתחיל הפעלת תרגום חדשה מ- {0} אל {1}.
+  wwcOnJoinTranslationNotificationSourceLang: יש לך הפעלת תרגום פעילה מ- {0} אל {1}.
+  wwctAutoTranslateStartOtherPlayer: מתחיל הפעלת תרגום חדשה עבור {0} אל {1}.
   wwctTranslationStopped: התרגום שלך הופסק.
-  wwctLangToLangStartOtherPlayer: מתחיל הפעלת תרגום חדשה עבור %o מ- %i אל %e.
-  wwctAutoTranslateStart: מתחיל הפעלת תרגום חדשה אל %o.
-  wwcOnJoinTranslationNotificationNoSourceLang: יש לך הפעלת תרגום פעילה אל %o.
+  wwctLangToLangStartOtherPlayer: מתחיל הפעלת תרגום חדשה עבור {0} מ- {1} אל {2}.
+  wwctAutoTranslateStart: מתחיל הפעלת תרגום חדשה אל {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: יש לך הפעלת תרגום פעילה אל {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: צ'אט גלובלי מתורגם,
-    אבל יש לך הפעלת תרגום פעילה אל %o.
+    אבל יש לך הפעלת תרגום פעילה אל {0}.
   wwcConfigGUIChangesNotSaved: השינויים שלך לא ייכנסו לתוקף עד שתלחץ על המכשול האדום
     ב- /wcc.
   wwctciOffSender: תרגום צ'אט נכנס מושבת.
@@ -267,22 +267,22 @@ Messages:
   wwctcoOnSender: תרגום צ'אט יוצא מופעל. כל מה שתגיד יתורגם!
   wwctciOnSender: תרגום צ'אט נכנס מופעל. כל דבר שתקבלו יתורגם!
   wwctGUIChatMenu: החלפת תפריט תרגום צ'אט
-  wwctcoOnTarget: תרגום צ'אט יוצא מופעל עבור %i.
-  wwctcoOffTarget: תרגום צ'אט יוצא מושבת עבור %i.
+  wwctcoOnTarget: תרגום צ'אט יוצא מופעל עבור {0}.
+  wwctcoOffTarget: תרגום צ'אט יוצא מושבת עבור {0}.
   wwctGUIChatOutgoingButton: החלפת תרגום צ'אט יוצא
-  wwctciOnTarget: תרגום צ'אט נכנס מופעל עבור %i.
-  wwctciOffTarget: תרגום צ'אט נכנס מושבת עבור %i.
+  wwctciOnTarget: תרגום צ'אט נכנס מופעל עבור {0}.
+  wwctciOffTarget: תרגום צ'אט נכנס מושבת עבור {0}.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: צ'אט נכנס מקורי המצורף לתרגום
     כטקסט לרחף הועבר בהצלחה.
   wwcConfigGUISendIncomingHoverTextChatButton: הוספת הודעות נכנסות מקוריות כטקסט לרחף
-  wwctGUIExistingChatOutgoingEnabled: 'תרגום צ''אט יוצא מופעל: %i'
-  wwctGUIExistingTranslationInput: 'שפת קלט: %i'
-  wwctGUIExistingChatIncomingEnabled: 'תרגום צ''אט נכנס מופעל: %i'
-  wwctGUIExistingTranslationOutput: 'שפת פלט: %i'
-  wwcTranslatorAttempt: מנסה להתחבר למתרגם ב config.yml... (ניסיון % אני/ %o)
+  wwctGUIExistingChatOutgoingEnabled: 'תרגום צ''אט יוצא מופעל: {0}'
+  wwctGUIExistingTranslationInput: 'שפת קלט: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'תרגום צ''אט נכנס מופעל: {0}'
+  wwctGUIExistingTranslationOutput: 'שפת פלט: {0}'
+  wwcTranslatorAttempt: מנסה להתחבר למתרגם ב config.yml... (ניסיון % אני/ {0})
   wwcTimeoutExceptionConsole: שחקן % היה לי פסק זמן הבקשה האחרון שלהם. שגיאה זו אינה
     קטלנית, אבל WorldwideChat יש לטעון מחדש אם זה ממשיך לקרות.
-  wwcGUIPageNumber: 'מספר עמוד: %i'
+  wwcGUIPageNumber: 'מספר עמוד: {0}'
   wwcConfigYAMLFallback: נפילה חזרה ל- YAML...
   wwcConfigGUIToggleSQLButton: החלף SQL
   wwcConfigConversationToggleSQLSuccess: SQL עבר בהצלחה. רענן כדי שהשינוי ייכנס לתוקף.
@@ -302,33 +302,33 @@ Messages:
   wwcConfigGUISQLPortButton: שינוי יציאת SQL
   wwcConfigGUISQLOptionalArgsButton: שינוי ארגומנטים אופציונליים SQL
   wwcConfigConversationToggleSQLSSLSuccess: SSL עבור SQL החלף בהצלחה.
-  wwcConfigConversationSQLPortInput: היציאה הנוכחית היא %i. הקלד כל דבר אחר מאשר 0
+  wwcConfigConversationSQLPortInput: היציאה הנוכחית היא {0}. הקלד כל דבר אחר מאשר 0
     כדי להגדיר יציאה חדשה, או הקלד 0 כדי לחזור.
   wwcConfigGUISQLPasswordButton: שינוי סיסמת SQL
   wwcConfigConversationSQLHostnameSuccess: שינה בהצלחה את שם המארח של SQL.
-  wwcConfigConversationSQLHostnameInput: שם המארח הנוכחי הוא %i. הקלד כל דבר אחר מאשר
+  wwcConfigConversationSQLHostnameInput: שם המארח הנוכחי הוא {0}. הקלד כל דבר אחר מאשר
     0 כדי להגדיר שם מארח חדש, או הקלד 0 כדי לחזור.
   wwcConfigGUISQLHostnameButton: שינוי שם מארח SQL
   wwcConfigConversationSQLOptionalArgsSuccess: שינה בהצלחה את הארגומנטים SQL האופציונליים.
   wwcConfigConversationSQLPasswordSuccess: שינה בהצלחה את סיסמת SQL.
-  wwcConfigConversationSQLPasswordInput: הסיסמה הנוכחית היא %i. הקלד כל דבר אחר מאשר
+  wwcConfigConversationSQLPasswordInput: הסיסמה הנוכחית היא {0}. הקלד כל דבר אחר מאשר
     0 כדי להגדיר סיסמה חדשה, או הקלד 0 כדי לחזור.
   wwcConfigGUIToggleSQLSSLButton: החלפת SSL של SQL
   wwcConfigConversationSQLUsernameSuccess: שינה בהצלחה את שם המשתמש של SQL.
-  wwcConfigConversationSQLUsernameInput: שם המשתמש הנוכחי הוא %i. הקלד כל דבר אחר
+  wwcConfigConversationSQLUsernameInput: שם המשתמש הנוכחי הוא {0}. הקלד כל דבר אחר
     מאשר 0 כדי להגדיר שם משתמש חדש, או הקלד 0 כדי לחזור.
   wwcConfigConversationSQLPortSuccess: שינה בהצלחה את יציאת SQL.
   wwcConfigGUISQLUsernameButton: שינוי שם משתמש של SQL
   wwcConfigConversationSQLOptionalArgsCleared: טיעונים אופציונליים ניקו בהצלחה
   wwcConfigConversationSQLOptionalArgsInput: 'הארגומנטים הנוכחיים האופציונליים של
-    SQL הם: %i סוג ארגומנטים מופרדים באמצעות פסיק (key=value, key2 = value2), או הקלד
+    SQL הם: {0} סוג ארגומנטים מופרדים באמצעות פסיק (key=value, key2 = value2), או הקלד
     נקה כדי למחוק את args הנוכחי, או הקלד 0 כדי לחזור.'
-  wwcConfigConversationSQLDatabaseNameInput: שם מסד הנתונים הנוכחי הוא %i. הקלד כל
+  wwcConfigConversationSQLDatabaseNameInput: שם מסד הנתונים הנוכחי הוא {0}. הקלד כל
     דבר אחר מאשר 0 כדי להגדיר שם מסד נתונים חדש, או הקלד 0 כדי לחזור.
   wwcConfigGUISQLDatabaseNameButton: שינוי מסד הנתונים של SQL
   wwcConfigConversationSQLDatabaseNameSuccess: שינה בהצלחה את שם מסד הנתונים של SQL.
   wwcConfigConversationFatalAsyncAbort: הזמן הקצוב הנוכחי לביטול כל המשימות async
-    הוא %i שניות. הקלד כל דבר מעל 7 כדי להגדיר פסק זמן חדש, או כל דבר מתחתיו כדי לחזור.
+    הוא {0} שניות. הקלד כל דבר מעל 7 כדי להגדיר פסק זמן חדש, או כל דבר מתחתיו כדי לחזור.
   wwcConfigConversationFatalAsyncSuccess: פסק זמן משימת Async מוגדר בהצלחה.
   wwcConfigGUIFatalAsyncAbortButton: שינוי הזמן הקצוב למשימה של Async
   wwcTimeoutException: הפקודה שלך מתוזמנת. אנא נסה שוב.
@@ -337,7 +337,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: שינוי חינם תרגם את מפתח ה- API
   libreHttp403: חסר Libre תרגום מפתח API, או שאתה מוחרם מהשרת!
   wwcConfigConversationLibreURLSuccess: URL חינם להגדיר בהצלחה.
-  wwcConfigConversationLibreTranslateApiKeyInput: מפתח ה- API הנוכחי הוא %i. אנא הזן
+  wwcConfigConversationLibreTranslateApiKeyInput: מפתח ה- API הנוכחי הוא {0}. אנא הזן
     מפתח API עבור Libre, או הקלד 0 כדי לחזור.
   wwcConfigGUILibreTranslateButton: תרגום חופשי
   libreHttp429: אין אמון בשל מגבלת שיעור מהשרת.
@@ -345,32 +345,32 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: בהצלחה עבר ליברה תרגם. טען מחדש
     כדי שהשינויים ייכנסו לתוקף.
   wwcConfigConversationLibreTranslateApiKeySuccess: מפתח API חינם להגדיר בהצלחה.
-  wwcConfigConversationLibreURLInput: כתובת האתר הנוכחית היא %i. אנא הזן כתובת URL
+  wwcConfigConversationLibreURLInput: כתובת האתר הנוכחית היא {0}. אנא הזן כתובת URL
     עבור Libre, או הקלד 0 כדי לחזור.
-  libreHttpUnknown: 'שגיאת HTTP לא ידועה: %i'
+  libreHttpUnknown: 'שגיאת HTTP לא ידועה: {0}'
   wwcConfigGUILibreTranslateURLButton: שינוי חינם תרגם את כתובת האתר
-  wwcConfigConnectionFail: ההתחברות אל %i נכשלה.
+  wwcConfigConnectionFail: ההתחברות אל {0} נכשלה.
   wwcConfigGUIMongoSettings: תצורת MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: שינה בהצלחה את שם מסד הנתונים MongoDB.
   wwcConfigGUIMongoHostnameButton: שינוי שם מארח MongoDB
-  wwcConfigConversationMongoPasswordInput: הסיסמה הנוכחית היא %i. הקלד כל דבר אחר
+  wwcConfigConversationMongoPasswordInput: הסיסמה הנוכחית היא {0}. הקלד כל דבר אחר
     מלבד 0 כדי להגדיר סיסמה חדשה, או הקלד 0 כדי לחזור.
-  wwcConfigConversationMongoPortInput: היציאה הנוכחית היא %i. הקלד כל דבר אחר מלבד
+  wwcConfigConversationMongoPortInput: היציאה הנוכחית היא {0}. הקלד כל דבר אחר מלבד
     0 כדי להגדיר יציאה חדשה, או הקלד 0 כדי לחזור אחורה.
   wwcConfigConversationToggleMongoSuccess: MongoDB עבר בהצלחה. טען מחדש כדי שהשינוי
     ייכנס לתוקף.
-  wwcConfigConversationMongoHostnameInput: שם המארח הנוכחי הוא %i. הקלד כל דבר אחר
+  wwcConfigConversationMongoHostnameInput: שם המארח הנוכחי הוא {0}. הקלד כל דבר אחר
     מלבד 0 כדי להגדיר שם מארח חדש, או הקלד 0 כדי לחזור.
   wwcConfigConversationMongoHostnameSuccess: שינה בהצלחה את שם המארח של MongoDB.
   wwcConfigGUIMongoMenuButton: שינוי הגדרות MongoDB
   wwcConfigGUIToggleMongoButton: החלף MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: שם מסד הנתונים הנוכחי הוא %i. הקלד
+  wwcConfigConversationMongoDatabaseNameInput: שם מסד הנתונים הנוכחי הוא {0}. הקלד
     כל דבר אחר מלבד 0 כדי להגדיר שם מסד נתונים חדש, או הקלד 0 לחזור.
   wwcConfigConversationMongoOptionalArgsInput: 'הארגומנטים האופציונליים הנוכחיים של
-    MongoDB הם: %i. הקלד ארגומנטים מופרדים באמצעות פסיק (key=value, key2=value2),
+    MongoDB הם: {0}. הקלד ארגומנטים מופרדים באמצעות פסיק (key=value, key2=value2),
     או הקלד clear כדי למחוק את הארגומנטים הנוכחיים, או הקלד 0 כדי לחזור אחורה.'
   wwcConfigGUIMongoDatabaseNameButton: שינוי מסד הנתונים של Mong
-  wwcConfigConversationMongoUsernameInput: שם המשתמש הנוכחי הוא %i, הקלד כל דבר אחר
+  wwcConfigConversationMongoUsernameInput: שם המשתמש הנוכחי הוא {0}, הקלד כל דבר אחר
     מלבד 0 כדי להגדיר שם משתמש חדש, או הקלד 0 כדי לחזור.
   wwcConfigGUIMongoOptionalArgsButton: שינוי ארגומנטים אופציונליים של
   wwcConfigConversationMongoUsernameSuccess: שינה בהצלחה את שם המשתמש MongoDB.
@@ -390,7 +390,7 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: שינוי DeepL תרגם את מפתח ה- API
   wwcConfigGUIToggleDeepLTranslateButton: החלף את DeepL תרגם
   wwcConfigConversationDeepLTranslateApiKeySuccess: מפתח ה- API של Deepl מוגדר בהצלחה.
-  wwcConfigConversationDeepLTranslateApiKeyInput: מפתח ה- API הנוכחי הוא %i. אנא הזן
+  wwcConfigConversationDeepLTranslateApiKeyInput: מפתח ה- API הנוכחי הוא {0}. אנא הזן
     מפתח API עבור DeepL, או הקלד 0 כדי לחזור.
   wwcConfigErrorsToIgnoreSuccess: שגיאות מתורגמן נרשמו בהצלחה להתעלם.
   wwcConfigErrorsToIgnoreInvalid: שגיאות מתורגמן לא חוקיות להתעלם להגדיר config.yml.
@@ -400,22 +400,22 @@ Messages:
     מביטויים.
   wwcConfigGUIIgnoreErrorsButton: שינוי שגיאות כדי להתעלם
   wwcConfigConversationIgnoreErrorsInput: 'הרשימה הנוכחית של ביטויים בשגיאות מתרגם
-    להתעלם הם: %i. הקלד ארגומנטים המופרדים באמצעות פסיק (key=value, key2=value2),
+    להתעלם הם: {0}. הקלד ארגומנטים המופרדים באמצעות פסיק (key=value, key2=value2),
     או הקלד clear כדי למחוק את הארגומנטים הנוכחיים, או הקלד 0 כדי לחזור אחורה. בנוסף,
     הקלדת "*" תגרום לתוסף לא לבדוק שגיאות מתורגמן.'
   wwcConfigConversationIgnoreErrorsCleared: שגיאות מתרגם להתעלם ביטויים ניקו בהצלחה.
 
-  wwcsActiveTransPrevRate: 'מתרגם פעיל קודם מגבלת קצב זמן: %i'
-  wwcsActiveTransSaved: 'מתרגם פעיל נשמר בדיסק: %i'
-  wwcsActiveTransIncoming: 'מתרגם פעיל מתרגם צ''אט נכנס: %i'
-  wwcsActiveTransOutLang: 'שפת פלט מתורגמן פעילה: %i'
-  wwcsActiveTransInLang: 'שפת קלט מתורגמן פעילה: %i'
-  wwcsActiveTransBook: 'מתרגם פעיל תרגום ספר: %i'
-  wwcsActiveTransSign: 'סימן תרגום מתרגם פעיל: %i'
-  wwcsActiveTransUUID: 'מתרגם פעיל UUID: %i'
-  wwcsActiveTransRateLimit: 'מגבלת שיעור מתרגם פעיל: %i'
-  wwcsActiveTransColorWarning: 'מתרגם פעיל קיבל אזהרת צבע: %i'
-  wwcsActiveTransOutgoing: 'מתרגם פעיל מתרגם צ''אט יוצא: %i'
-  wwcsActiveTransItem: 'מתרגם פעיל תרגום פריט: %i'
-  wwcsActiveTransEntity: 'מתרגם פעיל תרגום ישות: %i'
+  wwcsActiveTransPrevRate: 'מתרגם פעיל קודם מגבלת קצב זמן: {0}'
+  wwcsActiveTransSaved: 'מתרגם פעיל נשמר בדיסק: {0}'
+  wwcsActiveTransIncoming: 'מתרגם פעיל מתרגם צ''אט נכנס: {0}'
+  wwcsActiveTransOutLang: 'שפת פלט מתורגמן פעילה: {0}'
+  wwcsActiveTransInLang: 'שפת קלט מתורגמן פעילה: {0}'
+  wwcsActiveTransBook: 'מתרגם פעיל תרגום ספר: {0}'
+  wwcsActiveTransSign: 'סימן תרגום מתרגם פעיל: {0}'
+  wwcsActiveTransUUID: 'מתרגם פעיל UUID: {0}'
+  wwcsActiveTransRateLimit: 'מגבלת שיעור מתרגם פעיל: {0}'
+  wwcsActiveTransColorWarning: 'מתרגם פעיל קיבל אזהרת צבע: {0}'
+  wwcsActiveTransOutgoing: 'מתרגם פעיל מתרגם צ''אט יוצא: {0}'
+  wwcsActiveTransItem: 'מתרגם פעיל תרגום פריט: {0}'
+  wwcsActiveTransEntity: 'מתרגם פעיל תרגום ישות: {0}'
 

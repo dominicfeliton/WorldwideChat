@@ -1,61 +1,61 @@
 Messages:
-  wwcgAutoTranslateStart: 现在将全球聊天翻译为 %o。
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 全球聊天正在被翻译为 %o。
+  wwcgAutoTranslateStart: 现在将全球聊天翻译为 {0}。
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: 全球聊天正在被翻译为 {0}。
   wwcConfigGUIAmazonTranslateAccessKeyButton: 更改亚马逊访问密钥
   wwcrFail: 无法重新加载 WorldwideChat。
   wwcConfigGUIUpdateCheckerButton: 更改检查更新延迟
   wwcUpdaterFailedGeneric: 无法检查 WorldwideChat 的更新。
-  wwcConfigConversationUpdateCheckerInput: 更新检查器上的当前延迟为 %i 秒。键入大于 10 的任何值以设置新值，或者键入小于
+  wwcConfigConversationUpdateCheckerInput: 更新检查器上的当前延迟为 {0} 秒。键入大于 10 的任何值以设置新值，或者键入小于
     10 的任何值以返回。
   wwctGUIMainMenuGlobal: 全球翻译菜单
   wwcConfigConversationPluginUpdateChatSuccess: 插件更新聊天提醒已成功切换。
-  wwctbOnTarget: 已为 %i 启用图书翻译。
-  wwcsNotATranslator: 目前还没有可用于 %i 的记录。
+  wwctbOnTarget: 已为 {0} 启用图书翻译。
+  wwcsNotATranslator: 目前还没有可用于 {0} 的记录。
   wwcConfigGUIbStatsButton: 切换 bStats
   wwctGUINewTranslationSource: 选择源语言
-  wwcConfigConnectionFailed: 无法连接到 %o。请确保您的凭据和防火墙配置正确！
+  wwcConfigConnectionFailed: 无法连接到 {0}。请确保您的凭据和防火墙配置正确！
   wwcConfigEnabledbStats: 已启用 bStats。
-  wwctGUIMainMenuPlayer: '%i 的翻译菜单'
+  wwctGUIMainMenuPlayer: '{0} 的翻译菜单'
   wwctGUIBookButton: 切换图书翻译
-  wwcLangDetected: 检测到语言 %o。
+  wwcLangDetected: 检测到语言 {0}。
   wwcBookTranslateStart: 正在翻译目标书...
   wwcConfigDisabledbStats: 已禁用 bStats。
   wwctsOffSender: 已禁用签名翻译。
   wwcUpdaterParserFailed: 无法解析来自 Github 的更新数据。
-  wwcConfigConversationAmazonTranslateSecretKeyInput: 当前密钥为 %i。请输入亚马逊的私有密钥，或键入 0 返回。
+  wwcConfigConversationAmazonTranslateSecretKeyInput: 当前密钥为 {0}。请输入亚马逊的私有密钥，或键入 0 返回。
   wwctbOffSender: 图书翻译已禁用。
   wwcConfigGUIAmazonTranslateButton: 亚马逊翻译
   wwcConfigConversationLangSuccess: 插件语言更改成功。
-  wwcsSuccessfulTranslations: 成功翻译： %i
-  wwcConfigConversationTranslationCacheInput: 当前的翻译缓存限制为 %i 短语。键入大于 0 的任何值以设置新值，或者键入
+  wwcsSuccessfulTranslations: 成功翻译： {0}
+  wwcConfigConversationTranslationCacheInput: 当前的翻译缓存限制为 {0} 短语。键入大于 0 的任何值以设置新值，或者键入
     0 以禁用翻译缓存。键入小于 0 的任何内容以返回。
-  wwctbOffTarget: '%i 已禁用图书翻译。'
+  wwctbOffTarget: '{0} 已禁用图书翻译。'
   wwcConfigGUIGeneralSettings: 常规配置
   wwcInvalidLang: config.yml 中的语言无效。默认为 en...
   wwcConfigConversationAmazonTranslateRegionSuccess: 亚马逊区域设置成功。
-  wwcConfigRateLimitEnabled: 已启用全局速率限制并将其设置为 %i 秒。
+  wwcConfigRateLimitEnabled: 已启用全局速率限制并将其设置为 {0} 秒。
   wwcBadPerms: 您没有执行此命令所需的权限！
   wwcConfigGUILangButton: 更改插件语言
   wwctGUISignButton: 切换签名翻译
-  wwcUpdaterOutOfDate: WorldwideChat 已经过时了。请更新至最新版本 %i。
+  wwcUpdaterOutOfDate: WorldwideChat 已经过时了。请更新至最新版本 {0}。
   wwcConfigGUINextPageButton: 下一页
   wwcConfigInvalidTranslatorSettings: 翻译者设置无效！请在 config.yml 中只启用一个翻译器。
   wwcConfigGUIQuitButton: 退出并保存更改
   wwctPlayerNotFound: 玩家 %我没找到。
   wwcConfigGUIAmazonTranslateRegionButton: 更改亚马逊地区
-  wwcConfigConversationLangInput: 当前插件语言为 %i。请输入有效的语言代码，或键入 0 以取消。有效的语言代码： %o
+  wwcConfigConversationLangInput: 当前插件语言为 {0}。请输入有效的语言代码，或键入 0 以取消。有效的语言代码： {1}
   wwcConfigConversationLangInvalid: 语言代码无效！
   wwcConfigGUIWatsonAPIKeyButton: 更改沃森 API 密钥
-  wwcEnabled: 已启用 WorldwideChat 版本 %i。
-  wwcgLangToLangStart: 现在将全球聊天从 %i 翻译为 %o。
+  wwcEnabled: 已启用 WorldwideChat 版本 {0}。
+  wwcgLangToLangStart: 现在将全球聊天从 {0} 翻译为 {1}。
   wwctbOnSender: 已启用图书翻译。拿着书的同时右键单击即可翻译它！
   wwcListenersInitialized: 初始化的监听器。
   wwcConfigGUIPluginUpdateChatButton: 为插件更新发送聊天提醒
   wwcConfigConversationSendTranslationChatSuccess: 活动翻译聊天提醒已成功切换。
-  wwctsOffTarget: '%i 禁用签名翻译。'
+  wwctsOffTarget: '{0} 禁用签名翻译。'
   wwcUpdaterConnectionFailed: 无法在 Github 上检查最新更新。
   watsonNotFoundExceptionNotification: 无法进一步翻译您的输入。
-  wwcConfigConversationWatsonAPIKeyInput: 当前 API 密钥为 %i。请输入 Watson 的 API 密钥，或键入 0
+  wwcConfigConversationWatsonAPIKeyInput: 当前 API 密钥为 {0}。请输入 Watson 的 API 密钥，或键入 0
     返回。
   wwctGUIStopButton: 停止翻译
   wwcgTranslationStopped: 全球聊天翻译已停止。
@@ -63,16 +63,16 @@ Messages:
   wwcConfigConversationPrefixSuccess: 前缀已成功更改。
   wwcConfigGUIGoogleTranslateAPIKeyButton: 更改谷歌翻译 API 密钥
   wwcSignDeletedOrTooLong: 目标标志要么被删除，要么翻译过长。翻译：
-  wwctsOnTarget: 已为 %i 启用签名翻译。
+  wwctsOnTarget: 已为 {0} 启用签名翻译。
   wwcConfigCacheDisabled: 翻译器缓存已禁用。
-  wwcConfigConversationWatsonURLInput: 当前 URL 为 %i。请输入 Watson 的服务 URL，或键入 0 返回。
+  wwcConfigConversationWatsonURLInput: 当前 URL 为 {0}。请输入 Watson 的服务 URL，或键入 0 返回。
   wwcBookDone: 已成功翻译图书。
   wwctsOnSender: 已启用签名翻译。右键单击标志即可翻译它！
   watsonColorCodeWarning: 使用颜色代码可能会给你不可预测的结果。
   wwctGUITranslationButton: 开始翻译
   wwctGUIAutoDetectButton: 自动检测源语言
   wwcUpdaterUpToDate: WorldwideChat 是最新的！
-  wwcConfigConversationAmazonTranslateRegionInput: 当前区域为 %i。请输入亚马逊的区域，或键入 0 返回。
+  wwcConfigConversationAmazonTranslateRegionInput: 当前区域为 {0}。请输入亚马逊的区域，或键入 0 返回。
   wwcNoConsole: 此命令只能由玩家运行。
   wwcInitializationFail: 无法初始化 WorldwideChat。
   wwcrSuccess: 已成功重新加载 WorldwideChat。
@@ -80,16 +80,16 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldwideChat 已经过时了。请更新至最新版本。
   wwcConfigConversationRateLimitSuccess: 成功设置速率限制。
   wwcConfigConversationWatsonURLSuccess: Watson URL 设置成功。
-  wwctbPlayerNotFound: 玩家 %i 要么找不到，要么不是活跃的翻译者。
+  wwctbPlayerNotFound: 玩家 {0} 要么找不到，要么不是活跃的翻译者。
   wwcConfigConversationTranslationCacheSuccess: 已成功设置翻译缓存限制。
   wwctInvalidArgs: 提供的参数无效！
   wwcConfigGUIPrefixButton: 更改插件前缀
   wwctSameLangError: 你不能翻译成同一种语言！
   wwctGUINewTranslationTarget: 选择目标语言
-  wwcConfigConnectionSuccess: 已成功连接到 %o!
+  wwcConfigConnectionSuccess: 已成功连接到 {0}!
   wwcConfigGUIGoogleTranslateButton: 谷歌翻译
-  wwcsIsActiveTranslator: 是否活跃翻译： %i
-  wwcConfigConversationPrefixInput: 当前前缀为 %i。请键入新的前缀，或键入 0 返回。
+  wwcsIsActiveTranslator: 是否活跃翻译： {0}
+  wwcConfigConversationPrefixInput: 当前前缀为 {0}。请键入新的前缀，或键入 0 返回。
   wwcConfigGUIPreviousPageButton: 上一页
   wwcConfigGUITranslatorCacheButton: 更改翻译缓存限制
   wwcConfigConversationbStatsSuccess: 已成功切换 bStats。
@@ -101,76 +101,76 @@ Messages:
   wwcConfigGUIWatsonURLButton: 更改 Watson 服务 URL
   wwcConfigConversationUpdateCheckerSuccess: 已成功设置更新检查器延迟。
   wwcUnsupportedVersion: 您运行的是不受支持的 Bukkit、Spigot 或 Paper 版本。支持的版本：
-  wwcGlobalOnJoinTranslationNotificationSourceLang: 全球聊天正在从 %i 翻译为 %o。
+  wwcGlobalOnJoinTranslationNotificationSourceLang: 全球聊天正在从 {0} 翻译为 {1}。
   wwcConfigGUITranslatorSettings: 翻译器配置
-  wwcConfigConversationGoogleTranslateAPIKeyInput: 当前 API 密钥为 %i。请为谷歌翻译输入 API 密钥，或键入
+  wwcConfigConversationGoogleTranslateAPIKeyInput: 当前 API 密钥为 {0}。请为谷歌翻译输入 API 密钥，或键入
     0 返回。
-  wwcConfigConversationRateLimitInput: 当前每次翻译的全局速率限制为 %i 秒。键入大于 0 的任何值以设置新值，或者键入 0
+  wwcConfigConversationRateLimitInput: 当前每次翻译的全局速率限制为 {0} 秒。键入大于 0 的任何值以设置新值，或者键入 0
     以禁用限制。键入小于 0 的任何内容以返回。
   wwcConfigConversationGoogleTranslateAPIKeySuccess: 谷歌翻译 API 密钥设置成功。
   wwcConfigGUIAmazonTranslateSecretKeyButton: 更改亚马逊密钥
   wwcVersion: WorldwideChat，版本
-  wwcsAttemptedTranslations: 尝试翻译： %i
+  wwcsAttemptedTranslations: 尝试翻译： {0}
   wwcConfigConversationAmazonTranslateSecretKeySuccess: 亚马逊密钥设置成功。
   wwcConfigConversationWatsonAPIKeySuccess: Watson API 密钥设置成功。
-  wwcRateLimit: 你的翻译费率有限。请再等 %i 秒钟。
-  wwcConfigCacheEnabled: 已启用翻译者缓存并设置为 %i 的限制。
+  wwcRateLimit: 你的翻译费率有限。请再等 {0} 秒钟。
+  wwcConfigCacheEnabled: 已启用翻译者缓存并设置为 {0} 的限制。
   wwctGUIExistingTranslationButton: 覆盖当前翻译会话
   wwcUserDataReloaded: 加载所有保存的用户数据。
   wwcConfigGUISendTranslationChatButton: 登录时向活跃翻译员发送聊天提醒
-  wwcsLastTranslationTime: 上次（成功）翻译时间： %i
+  wwcsLastTranslationTime: 上次（成功）翻译时间： {0}
   wwctbNotATranslator: 你不是活跃的翻译人员！确保你已经使用 /wwct对此进行了设置。
-  wwcConfigConversationAmazonTranslateAccessKeyInput: 当前访问密钥为 %i。请输入 Amazon 的访问密钥，或键入
+  wwcConfigConversationAmazonTranslateAccessKeyInput: 当前访问密钥为 {0}。请输入 Amazon 的访问密钥，或键入
     0 返回。
   wwcConfigConversationAmazonTranslateAccessKeySuccess: 亚马逊访问密钥设置成功。
   wwcConfigBadUpdateDelay: config.yml 中设置的更新程序延迟无效。默认为 86400 秒...
   wwctrlRateLimitOffSender: 关闭了你的费率限制。
-  wwctrlRateLimitAlreadyOffTarget: '%i 的速率限制已被禁用。'
-  wwctrlPlayerNotFound: 玩家 %i 要么找不到，要么不是活跃的翻译者。
-  wwctrlRateLimitSetSender: 将您的费率限制设置为 %i 秒。
-  wwctrlRateLimitOffTarget: 关闭了 %i 的速率限制。
-  wwctrlRateLimitSetTarget: 将 %i 的速率限制设置为 %o 秒。
+  wwctrlRateLimitAlreadyOffTarget: '{0} 的速率限制已被禁用。'
+  wwctrlPlayerNotFound: 玩家 {0} 要么找不到，要么不是活跃的翻译者。
+  wwctrlRateLimitSetSender: 将您的费率限制设置为 {0} 秒。
+  wwctrlRateLimitOffTarget: 关闭了 {0} 的速率限制。
+  wwctrlRateLimitSetTarget: 将 {0} 的速率限制设置为 {1} 秒。
   wwctrlNotATranslator: 你不是活跃的翻译人员！确保你已经使用 /wwct对此进行了设置。
   wwctrlRateLimitAlreadyOffSender: 您的费率限制已被禁用。
   wwctGUIRateButton: 设置费率限制
-  wwctGUIConversationRateLimit: 每次翻译的速率限制目前为 %i 秒。键入大于 0 的任何值以设置新值，或者键入 0 以禁用限制。键入小于
+  wwctGUIConversationRateLimit: 每次翻译的速率限制目前为 {0} 秒。键入大于 0 的任何值以设置新值，或者键入 0 以禁用限制。键入小于
     0 的任何内容以返回。
   wwctGUITargetPlayerNull: 目标玩家已断开与服务器的连接。
-  wwcConfigConversationSyncUserDataDelayInput: 每次同步用户数据的当前延迟为 %i 秒。键入大于 10 的任何值以设置新值，或者键入小于
+  wwcConfigConversationSyncUserDataDelayInput: 每次同步用户数据的当前延迟为 {0} 秒。键入大于 10 的任何值以设置新值，或者键入小于
     10 的任何值以返回。
   wwcConfigGUISyncUserDataButton: 更改用户数据同步延迟
-  wwcConfigSyncDelayEnabled: 每个用户数据同步的延迟设置为 %i 秒。
+  wwcConfigSyncDelayEnabled: 每个用户数据同步的延迟设置为 {0} 秒。
   wwcConfigConversationSyncUserDataDelaySuccess: 成功设置用户数据同步延迟。
   wwcConfigSyncDelayInvalid: config.yml 中设置的用户数据同步延迟无效。默认为 7200 秒...
   wwcConfigCacheInvalid: 转换器缓存大小无效。默认为 10...
   wwcInventoryErrorPlayer: 使用 GUI 检测到错误。日志已发送到控制台。
-  wwcInventoryError: 用户 %i 的 GUI 检测到错误。请向开发者报告此问题。
-  wwctiOffTarget: '%i 的商品翻译被禁用。'
+  wwcInventoryError: 用户 {0} 的 GUI 检测到错误。请向开发者报告此问题。
+  wwctiOffTarget: '{0} 的商品翻译被禁用。'
   wwctiOffSender: 已禁用物品翻译。
   wwcItemTranslateTitleStock: 无法翻译默认商品名称。
   wwctGUIItemButton: 切换项目翻译
   wwcItemTranslateTitleDone: 已成功翻译商品标题。
   wwcGUITempItem: 物品展示
   wwcItemTranslateStart: 正在翻译目标物品...
-  wwcBookTranslateTitleSuccess: 翻译的图书标题： %i
+  wwcBookTranslateTitleSuccess: 翻译的图书标题： {0}
   wwctiOnSender: 已启用商品翻译。用主手中的物品右键单击以翻译它！
   wwcItemTranslateLoreStart: 翻译目标物品的更多知识...
   wwcItemTranslateLoreDone: 已成功翻译商品传说。
-  wwctiOnTarget: 为 %i 启用了商品翻译。
+  wwctiOnTarget: 为 {0} 启用了商品翻译。
   wwcInvalidTranslator: 翻译器设置无效。请在 config.yml 或使用 /wwcc 中修复此问题以使用此插件。
-  wwcConfigGUIEachTranslatorSettings: '%i 配置'
+  wwcConfigGUIEachTranslatorSettings: '{0} 配置'
   wwcConfigGUIWatsonButton: 沃森
   wwcServerReloadWarning: WorldwideChat 不宽恕 /reload 的使用。请谨慎行事。
   wwcConfigEnabledDebugMode: 已启用调试模式。如果你不是开发人员或疑难解答者，你应该关闭此功能。
   wwcTranslatorErrorThresholdReached: 已达到错误阈值。此插件现在将重新加载，并禁用所有翻译人员。
-  wwcConfigErrorLimitEnabled: 翻译器错误限制设置为 %i。
+  wwcConfigErrorLimitEnabled: 翻译器错误限制设置为 {0}。
   wwcTranslatorError: 尝试翻译时出现问题。请再试一次。
   wwcConfigErrorLimitInvalid: config.yml 中设置的转换器错误限制无效。默认为 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: 请查看 WorldwideChat 插件文件夹中的 errorLog.txt
     以了解更多信息。
-  wwctInvalidInputLangCode: 提供的输入语言代码无效！有效的郎代码： %o
-  wwcsTitle: '%i 的记录'
-  wwctInvalidOutputLangCode: 提供的输出语言代码无效！有效的郎代码： %o
+  wwctInvalidInputLangCode: 提供的输入语言代码无效！有效的郎代码： {0}
+  wwcsTitle: '{0} 的记录'
+  wwctInvalidOutputLangCode: 提供的输出语言代码无效！有效的郎代码： {0}
   wwctGUISourceTranslationSelected: 你选择了这种语言。
   wwcConfigGUIChatMessagesOverrideDeleteButton: 删除覆盖
   wwcConfigConversationOverrideTextChange: 请为此覆盖输入新消息，或者输入 0 返回。记得包括任何以原始消息中看到的百分号开头的变量。
@@ -196,38 +196,38 @@ Messages:
   wwcConfigGUICharacterLimitButton: 更改留言字符数限制
   wwcConfigMessageCharLimitInvalid: config.yml 中设置的每条消息的限制无效。默认为 255 个字符...
   wwcConfigConversationCharacterLimitSuccess: 已成功设置字符数限制。
-  wwcteOnTarget: 为 %i 启用了实体转换。
-  wwcEntityTranslateDone: 已翻译的实体名称： %i
+  wwcteOnTarget: 为 {0} 启用了实体转换。
+  wwcEntityTranslateDone: 已翻译的实体名称： {0}
   wwcEntityTranslateNoName: 实体没有自定义名称。
-  wwcConfigConversationErrorLimitInput: 每个转换器的当前错误限制为 %i。键入任何大于 0 的值可设置新值，或键入小于或等于
+  wwcConfigConversationErrorLimitInput: 每个转换器的当前错误限制为 {0}。键入任何大于 0 的值可设置新值，或键入小于或等于
     0 的任何内容返回。
   wwcConfigGUIGlobalRateLimitButton: 更改全局速率限制
   wwcteOnSender: 已启用实体翻译。右键单击一个实体以翻译其名称！
   wwcConfigGUIResponseLimitButton: 更改转换器响应超时
-  wwcConfigMessageCharLimitEnabled: 每封邮件的字符数限制设置为 %i 个字符。
-  wwcteOffTarget: 已为 %i 禁用实体转换。
-  wwcCharLimit: 你的留言太长了！请确保您的消息长度少于 %i 个字符。
-  wwcConfigConversationCharacterLimitInput: 每封邮件的当前字符数限制为 %i 个字符。键入大于 0 的任何内容以设置新值，或键入小于或等于
+  wwcConfigMessageCharLimitEnabled: 每封邮件的字符数限制设置为 {0} 个字符。
+  wwcteOffTarget: 已为 {0} 禁用实体转换。
+  wwcCharLimit: 你的留言太长了！请确保您的消息长度少于 {0} 个字符。
+  wwcConfigConversationCharacterLimitInput: 每封邮件的当前字符数限制为 {0} 个字符。键入大于 0 的任何内容以设置新值，或键入小于或等于
     0 的任何值以返回。
   wwcteOffSender: 实体翻译已禁用。
   wwctGUIEntityButton: 切换实体翻译
   wwctrlRateLimitBadInt: 您的速率限制不是有效的整数。
-  wwcTranslatorErrorConsole: 用户 %i 尝试翻译时出现问题。有关更多详细信息，请查看 errorLog.txt。
+  wwcTranslatorErrorConsole: 用户 {0} 尝试翻译时出现问题。有关更多详细信息，请查看 errorLog.txt。
   wwctGUIChatButton: 切换聊天翻译
   wwcrBegin: 正在重新加载 WorldwideChat...
-  wwctTranslationStoppedOtherPlayer: '%i 的翻译会话已停止。'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 全局聊天正在进行翻译，但是您有一个从 %i
-    到 %o 的活动翻译会话。
+  wwctTranslationStoppedOtherPlayer: '{0} 的翻译会话已停止。'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 全局聊天正在进行翻译，但是您有一个从 {0}
+    到 {0} 的活动翻译会话。
   wwctCannotTranslateConsole: 你不能启动控制台的翻译会话！
-  wwctLangToLangStart: 从 %i 到 %o 开始新的翻译会话。
-  wwcOnJoinTranslationNotificationSourceLang: 您有一个从 %i 到 %o 的活动翻译会话。
-  wwctAutoTranslateStartOtherPlayer: 为 %i 到 %o 启动新的翻译会话。
+  wwctLangToLangStart: 从 {0} 到 {1} 开始新的翻译会话。
+  wwcOnJoinTranslationNotificationSourceLang: 您有一个从 {0} 到 {1} 的活动翻译会话。
+  wwctAutoTranslateStartOtherPlayer: 为 {0} 到 {1} 启动新的翻译会话。
   wwctTranslationStopped: 您的翻译会话已停止。
-  wwctLangToLangStartOtherPlayer: 启动 %o 的新翻译会话，从 %i 到 %e。
-  wwctAutoTranslateStart: 正在向 %o 开始新的翻译会话。
-  wwcOnJoinTranslationNotificationNoSourceLang: 你有一个正在进行的翻译会话到 %o。
+  wwctLangToLangStartOtherPlayer: 启动 {0} 的新翻译会话，从 {1} 到 {2}。
+  wwctAutoTranslateStart: 正在向 {0} 开始新的翻译会话。
+  wwcOnJoinTranslationNotificationNoSourceLang: 你有一个正在进行的翻译会话到 {0}。
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 正在翻译全局聊天，但是你有一个活跃的翻译会话到
-    %o。
+    {0}。
   wwcConfigGUIChangesNotSaved: 只有在你点击 /wwcc 中的红色屏障后，你的更改才会生效。
   wwctciOffSender: 传入聊天翻译已禁用。
   wwctGUIChatIncomingButton: 切换传入聊天翻译
@@ -235,20 +235,20 @@ Messages:
   wwctcoOnSender: 启用了外向聊天翻译。你说的任何话都会被翻译！
   wwctciOnSender: 已启用传入聊天翻译。你收到的任何东西都会被翻译！
   wwctGUIChatMenu: 切换聊天翻译菜单
-  wwctcoOnTarget: 为 %i 启用了外发聊天翻译。
-  wwctcoOffTarget: '%i 禁用了外发聊天翻译。'
+  wwctcoOnTarget: 为 {0} 启用了外发聊天翻译。
+  wwctcoOffTarget: '{0} 禁用了外发聊天翻译。'
   wwctGUIChatOutgoingButton: 切换外向聊天翻译
-  wwctciOnTarget: 为 %i 启用了传入聊天翻译。
-  wwctciOffTarget: '%i 禁用了传入聊天翻译。'
+  wwctciOnTarget: 为 {0} 启用了传入聊天翻译。
+  wwctciOffTarget: '{0} 禁用了传入聊天翻译。'
   wwcConfigConversationSendIncomingHoverTextChatSuccess: 当悬停文本成功切换时，原始传入聊天附加到翻译。
   wwcConfigGUISendIncomingHoverTextChatButton: 将原始传入消息添加为悬停文本
-  wwctGUIExistingChatOutgoingEnabled: 已启用传出聊天翻译： %i
-  wwctGUIExistingTranslationInput: 输入语言： %i
-  wwctGUIExistingChatIncomingEnabled: 已启用传入聊天翻译： %i
-  wwctGUIExistingTranslationOutput: 输出语言： %i
-  wwcTranslatorAttempt: 正在尝试在 config.yml 中连接翻译器...（尝试 %i/ %o）
-  wwcTimeoutExceptionConsole: 玩家 %i 最近一次请求超时。这个错误不是致命的，但是如果它继续发生，应该重新加载 WorldwideChat。
-  wwcGUIPageNumber: 页码： %i
+  wwctGUIExistingChatOutgoingEnabled: 已启用传出聊天翻译： {0}
+  wwctGUIExistingTranslationInput: 输入语言： {0}
+  wwctGUIExistingChatIncomingEnabled: 已启用传入聊天翻译： {0}
+  wwctGUIExistingTranslationOutput: 输出语言： {0}
+  wwcTranslatorAttempt: 正在尝试在 config.yml 中连接翻译器...（尝试 {0}/ {1}）
+  wwcTimeoutExceptionConsole: 玩家 {0} 最近一次请求超时。这个错误不是致命的，但是如果它继续发生，应该重新加载 WorldwideChat。
+  wwcGUIPageNumber: 页码： {0}
   wwcConfigYAMLFallback: 正在回落到 YAML...
   wwcConfigGUIToggleSQLButton: 切换 SQL
   wwcConfigConversationToggleSQLSuccess: SQL 已成功切换。重新加载以使更改生效。
@@ -265,27 +265,27 @@ Messages:
   wwcConfigGUISQLPortButton: 更改 SQL 端口
   wwcConfigGUISQLOptionalArgsButton: 更改 SQL 可选参数
   wwcConfigConversationToggleSQLSSLSuccess: 已成功切换用于 SQL 的 SSL。
-  wwcConfigConversationSQLPortInput: 当前端口为 %i。键入 0 以外的任意值可设置新端口，或键入 0 返回。
+  wwcConfigConversationSQLPortInput: 当前端口为 {0}。键入 0 以外的任意值可设置新端口，或键入 0 返回。
   wwcConfigGUISQLPasswordButton: 更改 SQL 密码
   wwcConfigConversationSQLHostnameSuccess: 已成功更改 SQL 主机名。
-  wwcConfigConversationSQLHostnameInput: 当前的主机名是 %i。键入 0 以外的任意名称可设置新主机名，或键入 0 返回。
+  wwcConfigConversationSQLHostnameInput: 当前的主机名是 {0}。键入 0 以外的任意名称可设置新主机名，或键入 0 返回。
   wwcConfigGUISQLHostnameButton: 更改 SQL 主机名
   wwcConfigConversationSQLOptionalArgsSuccess: 已成功更改可选 SQL 参数。
   wwcConfigConversationSQLPasswordSuccess: 已成功更改 SQL 密码。
-  wwcConfigConversationSQLPasswordInput: 当前密码为 %i。键入 0 以外的任何密码可设置新密码，或键入 0 以返回。
+  wwcConfigConversationSQLPasswordInput: 当前密码为 {0}。键入 0 以外的任何密码可设置新密码，或键入 0 以返回。
   wwcConfigGUIToggleSQLSSLButton: 切换 SQL
   wwcConfigConversationSQLUsernameSuccess: 已成功更改 SQL 用户名。
-  wwcConfigConversationSQLUsernameInput: 当前用户名为 %i。键入 0 以外的任何内容可设置新用户名，或键入 0 返回。
+  wwcConfigConversationSQLUsernameInput: 当前用户名为 {0}。键入 0 以外的任何内容可设置新用户名，或键入 0 返回。
   wwcConfigConversationSQLPortSuccess: 已成功更改 SQL 端口。
   wwcConfigGUISQLUsernameButton: 更改 SQL 用户名
   wwcConfigConversationSQLOptionalArgsCleared: 已成功清除可选参数。
-  wwcConfigConversationSQLOptionalArgsInput: 当前可选的 SQL 参数是： %i。键入用逗号分隔的参数（key=value，key2=value2），或者键入
+  wwcConfigConversationSQLOptionalArgsInput: 当前可选的 SQL 参数是： {0}。键入用逗号分隔的参数（key=value，key2=value2），或者键入
     clear 来擦除当前参数，或键入 0 返回。
-  wwcConfigConversationSQLDatabaseNameInput: 当前数据库名称为 %i。键入 0 以外的任意名称可设置新的数据库名称，或键入
+  wwcConfigConversationSQLDatabaseNameInput: 当前数据库名称为 {0}。键入 0 以外的任意名称可设置新的数据库名称，或键入
     0 以返回。
   wwcConfigGUISQLDatabaseNameButton: 更改 SQL 数据库
   wwcConfigConversationSQLDatabaseNameSuccess: 已成功更改 SQL 数据库名称。
-  wwcConfigConversationFatalAsyncAbort: 当前中止所有异步任务的超时时间为 %i 秒。键入大于7的任何内容以设置新的超时，或键入低于此值的任何内容以返回。
+  wwcConfigConversationFatalAsyncAbort: 当前中止所有异步任务的超时时间为 {0} 秒。键入大于7的任何内容以设置新的超时，或键入低于此值的任何内容以返回。
   wwcConfigConversationFatalAsyncSuccess: 异步任务超时设置成功。
   wwcConfigGUIFatalAsyncAbortButton: 更改异步任务超时
   wwcTimeoutException: 你的命令已超时。请再试一次。
@@ -293,33 +293,33 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: 更改 Libre 翻译 API 密钥
   libreHttp403: 缺少 Libre 翻译 API 密钥，或者你被禁止进入服务器！
   wwcConfigConversationLibreURLSuccess: 已成功设置 Libre 网址。
-  wwcConfigConversationLibreTranslateApiKeyInput: 当前的 API 密钥是 %i。请输入 Libre 的 API 密钥，或者键入
+  wwcConfigConversationLibreTranslateApiKeyInput: 当前的 API 密钥是 {0}。请输入 Libre 的 API 密钥，或者键入
     0 返回。
   wwcConfigGUILibreTranslateButton: Libre 翻译
   libreHttp429: 由于服务器的速率限制，没有信心。
   wwcConfigGUIToggleLibreTranslateButton: 切换 Libre 翻译
   wwcConfigConversationLibreTranslateToggleSuccess: 成功切换 Libre 翻译。重新加载以使更改生效。
   wwcConfigConversationLibreTranslateApiKeySuccess: 已成功设置免费 API 密钥。
-  wwcConfigConversationLibreURLInput: 当前的 URL 是 %i。请输入 Libre 的 URL，或者键入 0 返回。
-  libreHttpUnknown: '未知的 http 错误: %i'
+  wwcConfigConversationLibreURLInput: 当前的 URL 是 {0}。请输入 Libre 的 URL，或者键入 0 返回。
+  libreHttpUnknown: '未知的 http 错误: {0}'
   wwcConfigGUILibreTranslateURLButton: 更改 Libre 翻译网址
-  wwcConfigConnectionFail: 连接到 %i 失败。
+  wwcConfigConnectionFail: 连接到 {0} 失败。
   wwcConfigGUIMongoSettings: MongoDB 配置
   wwcConfigConversationMongoDatabaseNameSuccess: 成功更改了 MongoDB 数据库名称。
   wwcConfigGUIMongoHostnameButton: 更改 MongoDB 主机名
-  wwcConfigConversationMongoPasswordInput: 当前密码为 %i。请键入 0 以外的任意值来设置新密码，或键入 0 返回。
-  wwcConfigConversationMongoPortInput: 当前端口为 %i。键入 0 以外的任何值来设置新端口，或键入 0 返回端口。
+  wwcConfigConversationMongoPasswordInput: 当前密码为 {0}。请键入 0 以外的任意值来设置新密码，或键入 0 返回。
+  wwcConfigConversationMongoPortInput: 当前端口为 {0}。键入 0 以外的任何值来设置新端口，或键入 0 返回端口。
   wwcConfigConversationToggleMongoSuccess: MongoDB 已成功切换。重新加载以使更改生效。
-  wwcConfigConversationMongoHostnameInput: 当前的主机名是 %i。键入 0 以外的任何名称来设置新主机名，或键入 0 返回。
+  wwcConfigConversationMongoHostnameInput: 当前的主机名是 {0}。键入 0 以外的任何名称来设置新主机名，或键入 0 返回。
   wwcConfigConversationMongoHostnameSuccess: 成功更改了 MongoDB 主机名。
   wwcConfigGUIMongoMenuButton: 更改 MongoDB 设置
   wwcConfigGUIToggleMongoButton: 切换 MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: 当前的数据库名是 %i。键入 0 以外的任何名称来设置新的数据库名称，或键入
+  wwcConfigConversationMongoDatabaseNameInput: 当前的数据库名是 {0}。键入 0 以外的任何名称来设置新的数据库名称，或键入
     0 返回。
-  wwcConfigConversationMongoOptionalArgsInput: 当前可选的 MongoDB 参数是： %i。键入用逗号分隔的参数（键=值，键2=value2），或者键入
+  wwcConfigConversationMongoOptionalArgsInput: 当前可选的 MongoDB 参数是： {0}。键入用逗号分隔的参数（键=值，键2=value2），或者键入
     clear 来擦除当前参数，或者键入 0 返回。
   wwcConfigGUIMongoDatabaseNameButton: 更改 MongoDB 数据库
-  wwcConfigConversationMongoUsernameInput: 当前的用户名是 %i。键入 0 以外的任何名称来设置新用户名，或键入 0 返回。
+  wwcConfigConversationMongoUsernameInput: 当前的用户名是 {0}。键入 0 以外的任何名称来设置新用户名，或键入 0 返回。
   wwcConfigGUIMongoOptionalArgsButton: 更改 MongoDB 可选参数
   wwcConfigConversationMongoUsernameSuccess: 成功更改了 MongoDB 用户名。
   wwcConfigConversationMongoPasswordSuccess: 成功更改了 MongoDB 密码。
@@ -336,28 +336,28 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: 更改 DeepL 翻译 API 密钥
   wwcConfigGUIToggleDeepLTranslateButton: 切换 DeepL 翻译
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API 密钥设置成功。
-  wwcConfigConversationDeepLTranslateApiKeyInput: 当前 API 密钥是 %i。请输入 DeepL 的 API 密钥，或者键入
+  wwcConfigConversationDeepLTranslateApiKeyInput: 当前 API 密钥是 {0}。请输入 DeepL 的 API 密钥，或者键入
     0 返回。
   wwcConfigErrorsToIgnoreSuccess: 已成功注册要忽略的翻译错误。
   wwcConfigErrorsToIgnoreInvalid: 在 config.yml 中设置的不可忽略的无效转换器错误。正在注册默认值...
 
   wwcConfigConversationIgnoreErrorsSuccess: 成功将翻译器错误更改为忽略短语。
   wwcConfigGUIIgnoreErrorsButton: 将错误更改为忽略
-  wwcConfigConversationIgnoreErrorsInput: 翻译器错误中当前要忽略的短语列表是： %i。键入参数以逗号（key=value，key2=value，key2=value2）分隔，或者键入
+  wwcConfigConversationIgnoreErrorsInput: 翻译器错误中当前要忽略的短语列表是： {0}。键入参数以逗号（key=value，key2=value，key2=value2）分隔，或者键入
     clear 以擦除当前参数，或者键入 0 返回。此外，键入 “*” 将导致插件无法检查任何翻译器错误。
   wwcConfigConversationIgnoreErrorsCleared: 已成功清除忽略短语的翻译错误。
 
-  wwcsActiveTransPrevRate: 活跃转换器之前的速率限制时间： %i
-  wwcsActiveTransSaved: '活动转换器已保存到磁盘: %i'
-  wwcsActiveTransIncoming: 活跃翻译器正在翻译传入的聊天： %i
-  wwcsActiveTransOutLang: 主动翻译器输出语言： %i
-  wwcsActiveTransInLang: 主动翻译器输入语言： %i
-  wwcsActiveTransBook: 活跃翻译者正在翻译图书： %i
-  wwcsActiveTransSign: 活跃翻译器翻译符号： %i
-  wwcsActiveTransUUID: '活动翻译器 UUID: %i'
-  wwcsActiveTransRateLimit: 活跃转换器速率限制： %i
-  wwcsActiveTransColorWarning: 活动转换器收到颜色警告： %i
-  wwcsActiveTransOutgoing: 活跃翻译器正在翻译外发聊天： %i
-  wwcsActiveTransItem: 活跃翻译器正在翻译项目： %i
-  wwcsActiveTransEntity: 活跃翻译器翻译实体： %i
+  wwcsActiveTransPrevRate: 活跃转换器之前的速率限制时间： {0}
+  wwcsActiveTransSaved: '活动转换器已保存到磁盘: {0}'
+  wwcsActiveTransIncoming: 活跃翻译器正在翻译传入的聊天： {0}
+  wwcsActiveTransOutLang: 主动翻译器输出语言： {0}
+  wwcsActiveTransInLang: 主动翻译器输入语言： {0}
+  wwcsActiveTransBook: 活跃翻译者正在翻译图书： {0}
+  wwcsActiveTransSign: 活跃翻译器翻译符号： {0}
+  wwcsActiveTransUUID: '活动翻译器 UUID: {0}'
+  wwcsActiveTransRateLimit: 活跃转换器速率限制： {0}
+  wwcsActiveTransColorWarning: 活动转换器收到颜色警告： {0}
+  wwcsActiveTransOutgoing: 活跃翻译器正在翻译外发聊天： {0}
+  wwcsActiveTransItem: 活跃翻译器正在翻译项目： {0}
+  wwcsActiveTransEntity: 活跃翻译器翻译实体： {0}
 

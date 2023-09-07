@@ -1,14 +1,12 @@
 package com.badskater0729.worldwidechat;
 
 import java.io.File;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang3.tuple.Pair;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -70,13 +68,14 @@ import static com.badskater0729.worldwidechat.util.CommonRefs.runAsyncRepeating;
 import static com.badskater0729.worldwidechat.util.CommonRefs.runSync;
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedMCVersions;
+import static com.badskater0729.worldwidechat.util.CommonRefs.getServerInfo;
 
 public class WorldwideChat extends JavaPlugin {
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
 	public static int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "03102022-2"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "09072023-1"; // MMDDYYYY-revisionNumber
 	
 	public static WorldwideChat instance;
 	
@@ -528,31 +527,38 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/**
-	  * Check MC version, print to console if unsupported 
-	  */
+	 * Check server type/version, print to console if unsupported
+	 */
 	private void checkMCVersion() {
 		/* MC Version check */
-		String supportedVersions = "";
-		for (int i = 0; i < supportedMCVersions.length; i++) {
-			if (i+1 != supportedMCVersions.length) {
-				supportedVersions += supportedMCVersions[i] + ", ";
+		// TODO
+		Pair<String, String> serverInfo = getServerInfo();
+		String type = serverInfo.getKey();
+		String version = serverInfo.getValue();
+		if (type.equals("Bukkit") || type.equals("Spigot") || type.equals("Paper")) {
+			// TODO
+			getLogger().info(getMsg("wwcSupportedServer", type));
+			if (Arrays.asList(supportedMCVersions).contains(version)) {
+				getLogger().info(getMsg("wwcSupportedVersion"));
 			} else {
-				supportedVersions += supportedMCVersions[i];
+				getLogger().warning(getMsg("wwcUnsupportedVersion"));
+				getLogger().warning(Arrays.toString(supportedMCVersions));
 			}
-			if (Bukkit.getVersion().contains(supportedMCVersions[i])) {
-				return;
-			}
+			return;
 		}
-		// Not running a supported version of Bukkit, Spigot, or Paper
-		getLogger().warning(getMsg("wwcUnsupportedVersion"));
-		getLogger().warning(supportedVersions);
+
+		// Not running a supported server type, default to Bukkit
+		getLogger().warning(getMsg("wwcUnsupportedServer"));
 	}
 
-	/**
-	  * Checks a sender if they are a player
-	  * @param sender - CommandSender to be checked
-	  * @return Boolean - Whether sender is allowed or not
-	  */
+
+
+
+		/**
+          * Checks a sender if they are a player
+          * @param sender - CommandSender to be checked
+          * @return Boolean - Whether sender is allowed or not
+          */
 	private boolean checkSenderIdentity(CommandSender sender) {
 		if (!(sender instanceof Player)) {
 			final TextComponent consoleNotice = Component.text()

@@ -1,66 +1,66 @@
 Messages:
-  wwcgAutoTranslateStart: አሁን ዓለም አቀፍ ውይይት ወደ %o በመተርጎም ላይ።
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ግሎባል ውይይት ወደ %o እየተተረጎመ ነው።
+  wwcgAutoTranslateStart: አሁን ዓለም አቀፍ ውይይት ወደ {0} በመተርጎም ላይ።
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ግሎባል ውይይት ወደ {0} እየተተረጎመ ነው።
   wwcConfigGUIAmazonTranslateAccessKeyButton: የአማዞን መዳረሻ ቁልፍ ይቀይሩ
   wwcrFail: WorldWidechat ን ዳግም መጫን አልተሳካም።
   wwcConfigGUIUpdateCheckerButton: የዝማኔ መዘግየት ቼክ ይቀይሩ
   wwcUpdaterFailedGeneric: የዓለም WideChat ዝማኔዎችን ማረጋገጥ አልተቻለም።
-  wwcConfigConversationUpdateCheckerInput: የዝማኔ ቼከር ላይ ያለው የአሁኑ መዘግየት %i ሰከንዶች ነው።
+  wwcConfigConversationUpdateCheckerInput: የዝማኔ ቼከር ላይ ያለው የአሁኑ መዘግየት {0} ሰከንዶች ነው።
     አዲስ እሴት ለማዘጋጀት ከ 10 በላይ የሆነ ነገር ይተይቡ, ወይም ከ 10 ያነሰ ማንኛውም ነገር ወደ ኋላ ለመመለስ።
   wwctGUIMainMenuGlobal: ዓለም አቀፍ የትርጉም ምናሌ
   wwcConfigConversationPluginUpdateChatSuccess: ተሰኪ ዝማኔ ውይይት አስታዋሽ በተሳካ ሁኔታ ተለዋውጧል።
-  wwctbOnTarget: መጽሐፍ ትርጉም ነቅቷል ለ %i።
-  wwcsNotATranslator: ለ %i ገና ምንም መዝገቦች የሉም።
+  wwctbOnTarget: መጽሐፍ ትርጉም ነቅቷል ለ {0}።
+  wwcsNotATranslator: ለ {0} ገና ምንም መዝገቦች የሉም።
   wwcConfigGUIbStatsButton: BSTAs ይቀያይሩ
   wwctGUINewTranslationSource: የምንጭ ቋንቋ ይምረጡ
-  wwcConfigConnectionFailed: ወደ %o መገናኘት አልተሳካም። የእርስዎ ምስክርነቶች እና ፋየርዎል በትክክል መዋቀሩን
+  wwcConfigConnectionFailed: ወደ {0} መገናኘት አልተሳካም። የእርስዎ ምስክርነቶች እና ፋየርዎል በትክክል መዋቀሩን
     ያረጋግጡ!
   wwcConfigEnabledbStats: የነቃ BSTAs።
-  wwctGUIMainMenuPlayer: የትርጉም ዝርዝር የ %i
+  wwctGUIMainMenuPlayer: የትርጉም ዝርዝር የ {0}
   wwctGUIBookButton: የመጽሐፍ ትርጉም ቀያይር
-  wwcLangDetected: የተገኘው ቋንቋ %o።
+  wwcLangDetected: የተገኘው ቋንቋ {0}።
   wwcBookTranslateStart: ዒላማ መጽሐፍ በመተርጎም ላይ...
   wwcConfigDisabledbStats: የተሰናከሉ bStats።
   wwctsOffSender: የትርጉም ምልክት ተሰናክሏል።
   wwcUpdaterParserFailed: የዘመነ ውሂብ ከ Github መተንተን አልተሳካም።
-  wwcConfigConversationAmazonTranslateSecretKeyInput: የአሁኑ ሚስጥራዊ ቁልፍ ነው %i. እባክዎን
+  wwcConfigConversationAmazonTranslateSecretKeyInput: የአሁኑ ሚስጥራዊ ቁልፍ ነው {0}. እባክዎን
     ለ አማዞን ሚስጥራዊ ቁልፍ ያስገቡ ወይም ተይብ 0 ወደ ኋላ ለመመለስ።
   wwctbOffSender: መጽሐፍ ትርጉም ተሰናክሏል።
   wwcConfigGUIAmazonTranslateButton: አማዞን ተርጉም
   wwcConfigConversationLangSuccess: ተሰኪ ቋንቋ በተሳካ ሁኔታ ተቀይሯል።
-  wwcsSuccessfulTranslations: 'ስኬታማ ትርጉሞች: %i'
-  wwcConfigConversationTranslationCacheInput: የአሁኑ የትርጉም መሸጎጫ ገደብ %i ሐረጎች ነው። አዲስ
+  wwcsSuccessfulTranslations: 'ስኬታማ ትርጉሞች: {0}'
+  wwcConfigConversationTranslationCacheInput: የአሁኑ የትርጉም መሸጎጫ ገደብ {0} ሐረጎች ነው። አዲስ
     እሴት ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም የትርጉም መሸጎጫውን ለማሰናከል 0 ይተይቡ። ወደ ኋላ ለመመለስ ከ
     0 በታች የሆነ ነገር ይተይቡ።
-  wwctbOffTarget: መጽሐፍ ትርጉም ተሰናክሏል ለ %i።
+  wwctbOffTarget: መጽሐፍ ትርጉም ተሰናክሏል ለ {0}።
   wwcConfigGUIGeneralSettings: አጠቃላይ ውቅር
   wwcInvalidLang: በእርስዎ config.yml ውስጥ ልክ ያልሆነ ቋንቋ። en ወደ ነባር...
   wwcConfigConversationAmazonTranslateRegionSuccess: የአማዞን ክልል በተሳካ ሁኔታ ማዘጋጀት።
-  wwcConfigRateLimitEnabled: አለምአቀፍ ደረጃ ገደብ ነቅቷል እና ወደ %i ሰከንዶች ተዘጋጅቷል።
+  wwcConfigRateLimitEnabled: አለምአቀፍ ደረጃ ገደብ ነቅቷል እና ወደ {0} ሰከንዶች ተዘጋጅቷል።
   wwcBadPerms: ይህን ትዕዛዝ ለማስፈጸም የሚያስፈልጉ ፍቃዶች የሉዎትም!
   wwcConfigGUILangButton: ተሰኪ ቋንቋን ይቀይሩ
   wwctGUISignButton: የምልክት ትርጉም ይቀያይሩ
-  wwcUpdaterOutOfDate: WorldWidechat ጊዜው ያለፈበት ነው። እባክዎን ወደ ቅርብ ጊዜው ስሪት ያዘምኑ, %i።
+  wwcUpdaterOutOfDate: WorldWidechat ጊዜው ያለፈበት ነው። እባክዎን ወደ ቅርብ ጊዜው ስሪት ያዘምኑ, {0}።
   wwcConfigGUINextPageButton: ቀጣይ ገጽ
   wwcConfigInvalidTranslatorSettings: ልክ ያልሆነ ተርጓሚ ቅንብሮች! እባክዎ በእርስዎ config.yml ውስጥ
     አንድ ተርጓሚ ብቻ ያንቁ።
   wwcConfigGUIQuitButton: ለውጦችን ውጣ እና አስቀምጥ
   wwctPlayerNotFound: ተጫዋች %እኔ አልተገኘም።
   wwcConfigGUIAmazonTranslateRegionButton: የአማዞን ክልል ቀይር
-  wwcConfigConversationLangInput: 'አሁን ያለው ተሰኪ ቋንቋ %i ነው። እባክዎ ትክክለኛ የሆነ የቋንቋ ኮድ ያስገቡ
-    ወይም ለመሰረዝ 0 ይተይቡ። ትክክለኛ የቋንቋ ኮዶች: %o'
+  wwcConfigConversationLangInput: 'አሁን ያለው ተሰኪ ቋንቋ {0} ነው። እባክዎ ትክክለኛ የሆነ የቋንቋ ኮድ ያስገቡ
+    ወይም ለመሰረዝ 0 ይተይቡ። ትክክለኛ የቋንቋ ኮዶች: {0}'
   wwcConfigConversationLangInvalid: ልክ ያልሆነ የቋንቋ ኮድ!
   wwcConfigGUIWatsonAPIKeyButton: ዋትሰን ኤፒአይ ቁልፍ ይቀይሩ
-  wwcEnabled: የነቃ የዓለም WideChat ስሪት %i።
-  wwcgLangToLangStart: አሁን ዓለም አቀፍ ውይይት መተርጎም ከ %i ወደ %o።
+  wwcEnabled: የነቃ የዓለም WideChat ስሪት {0}።
+  wwcgLangToLangStart: አሁን ዓለም አቀፍ ውይይት መተርጎም ከ {0} ወደ {1}።
   wwctbOnSender: መጽሐፍ ትርጉም ነቅቷል። ለመተርጎም አንድ መጽሐፍ ይዞ ሳለ ቀኝ-ጠቅ ያድርጉ!
   wwcListenersInitialized: አልተነሳም አድማጮች።
   wwcConfigGUIPluginUpdateChatButton: ለተሰኪ ዝማኔዎች የውይይት አስታዋሽ ይላኩ
   wwcConfigConversationSendTranslationChatSuccess: ንቁ ተርጓሚ ውይይት አስታዋሽ በተሳካ ሁኔታ ተለዋውጧል።
-  wwctsOffTarget: የምልክት ትርጉም ተሰናክሏል ለ %i።
+  wwctsOffTarget: የምልክት ትርጉም ተሰናክሏል ለ {0}።
   wwcUpdaterConnectionFailed: Github ላይ የቅርብ ጊዜ ዝማኔዎችን ማረጋገጥ አልተቻለም።
   watsonNotFoundExceptionNotification: የእርስዎን ግብዓት ማንኛውም ተጨማሪ መተርጎም አልተቻለም።
-  wwcConfigConversationWatsonAPIKeyInput: የአሁኑ ኤፒአይ ቁልፍ %i ነው። እባክዎ ለ ዋትሰን API ቁልፍ
+  wwcConfigConversationWatsonAPIKeyInput: የአሁኑ ኤፒአይ ቁልፍ {0} ነው። እባክዎ ለ ዋትሰን API ቁልፍ
     ያስገቡ ወይም 0 ተይብ ለመመለስ።
   wwctGUIStopButton: መተርጎም አቁም
   wwcgTranslationStopped: ግሎባል የውይይት ትርጉም ቆሟል።
@@ -68,9 +68,9 @@ Messages:
   wwcConfigConversationPrefixSuccess: ቅድመ-ቅጥያ በተሳካ ሁኔታ ተቀ
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google ተርጉም ኤፒአይ ቁልፍ ይቀይሩ
   wwcSignDeletedOrTooLong: 'የዒላማ ምልክት ተሰርዟል ወይም ትርጉሙ በጣም ረጅም ነበር። ትርጉም:'
-  wwctsOnTarget: የምልክት ትርጉም ነቅቷል ለ %i።
+  wwctsOnTarget: የምልክት ትርጉም ነቅቷል ለ {0}።
   wwcConfigCacheDisabled: ተርጓሚ መሸጎጫ ተሰናክሏል።
-  wwcConfigConversationWatsonURLInput: የአሁኑ ዩ አር ኤል %i ነው። እባክዎ ዋትሰን የአገልግሎት ዩአርኤል
+  wwcConfigConversationWatsonURLInput: የአሁኑ ዩ አር ኤል {0} ነው። እባክዎ ዋትሰን የአገልግሎት ዩአርኤል
     ያስገቡ፣ ወይም ተይብ 0 ወደ ኋላ ለመመለስ።
   wwcBookDone: መጽሐፍ በተሳካ ሁኔታ ተተርጉሟል
   wwctsOnSender: የምልክት ትርጉም ነቅቷል። ለመተርጎም ምልክት ላይ ቀኝ-ጠቅ ያድርጉ!
@@ -78,7 +78,7 @@ Messages:
   wwctGUITranslationButton: መተርጎም ይጀምሩ
   wwctGUIAutoDetectButton: የራስ-ፈልጎ ምንጭ ቋንቋ
   wwcUpdaterUpToDate: WorldwideChat ወቅታዊ ነው!
-  wwcConfigConversationAmazonTranslateRegionInput: አሁን ያለው ክልል %i ነው። እባክዎን አንድ ክልል
+  wwcConfigConversationAmazonTranslateRegionInput: አሁን ያለው ክልል {0} ነው። እባክዎን አንድ ክልል
     ለ አማዞን ግቤት፣ ወይም ተይብ 0 ወደ ኋላ ለመመለስ።
   wwcNoConsole: ይህ ትዕዛዝ በአንድ ተጫዋች ብቻ ሊሮጥ ይችላል።
   wwcInitializationFail: WorldwideChat ማስጀመር አልተሳካም።
@@ -87,16 +87,16 @@ Messages:
   wwcUpdaterOutOfDateChat: WorldWidechat ጊዜው ያለፈበት ነው። እባክዎ ወደ የቅርብ ጊዜው ስሪት ያዘምኑ።
   wwcConfigConversationRateLimitSuccess: ተመን ገደብ በተሳካ ሁኔታ ማዘጋጀት።
   wwcConfigConversationWatsonURLSuccess: ዋትሰን ዩአርኤል በተሳካ ሁኔታ ማዘጋጀት።
-  wwctbPlayerNotFound: ተጫዋች %i ወይ አልተገኘም ነው, ወይም ንቁ ተርጓሚ አይደለም።
+  wwctbPlayerNotFound: ተጫዋች {0} ወይ አልተገኘም ነው, ወይም ንቁ ተርጓሚ አይደለም።
   wwcConfigConversationTranslationCacheSuccess: የትርጉም መሸጎጫ ገደብ በተሳካ ሁኔታ
   wwctInvalidArgs: ልክ ያልሆነ ክርክሮች የቀረቡ!
   wwcConfigGUIPrefixButton: ተሰኪ ቅድመ ቅጥያ ይቀይሩ
   wwctSameLangError: ወደ ተመሳሳይ ቋንቋ መተርጎም አይችሉም!
   wwctGUINewTranslationTarget: ዒላማ ቋንቋ ይምረጡ
-  wwcConfigConnectionSuccess: በተሳካ ሁኔታ ወደ %o ተገናኝቷል!
+  wwcConfigConnectionSuccess: በተሳካ ሁኔታ ወደ {0} ተገናኝቷል!
   wwcConfigGUIGoogleTranslateButton: ጉግል ተርጉም
-  wwcsIsActiveTranslator: 'ንቁ ተርጓሚ ነው: %i'
-  wwcConfigConversationPrefixInput: አሁን ያለው ቅድመ ቅጥያ %i ነው እባክዎ አዲስ ይተይቡ ወይም 0 ይተይቡ
+  wwcsIsActiveTranslator: 'ንቁ ተርጓሚ ነው: {0}'
+  wwcConfigConversationPrefixInput: አሁን ያለው ቅድመ ቅጥያ {0} ነው እባክዎ አዲስ ይተይቡ ወይም 0 ይተይቡ
     ወደ ኋላ ይመለሱ።
   wwcConfigGUIPreviousPageButton: ቀዳሚ ገጽ
   wwcConfigGUITranslatorCacheButton: የትርጉም መሸጎጫ ገደብ ለውጥ
@@ -110,84 +110,84 @@ Messages:
   wwcConfigGUIWatsonURLButton: ዋትሰን አገልግሎት ዩአርኤል ይቀይሩ
   wwcConfigConversationUpdateCheckerSuccess: አዘምን ቼከር መዘግየት በተሳካ ሁኔታ ማዘጋጀት።
   wwcUnsupportedVersion: 'የማይደገፍ የ Bukkit ስሪት, Spigot, ወይም ወረቀት እያሄዱ ነው። የሚደገፉ ስሪቶች:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: ግሎባል ውይይት ከ %i ወደ %o እየተተረጎመ ነው።
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ግሎባል ውይይት ከ {0} ወደ {1} እየተተረጎመ ነው።
   wwcConfigGUITranslatorSettings: ተርጓሚ ውቅር
-  wwcConfigConversationGoogleTranslateAPIKeyInput: የአሁኑ ኤፒአይ ቁልፍ %i ነው። እባክዎ የኤ ፒ
+  wwcConfigConversationGoogleTranslateAPIKeyInput: የአሁኑ ኤፒአይ ቁልፍ {0} ነው። እባክዎ የኤ ፒ
     አይ ቁልፍ ለGoogle ተርጉም፣ ወይም ተይብ 0 ተመልሰው ይሂዱ።
-  wwcConfigConversationRateLimitInput: የአሁኑ ዓለም አቀፍ ደረጃ ገደብ በአንድ ትርጉም %i ሰከንዶች ነው።
+  wwcConfigConversationRateLimitInput: የአሁኑ ዓለም አቀፍ ደረጃ ገደብ በአንድ ትርጉም {0} ሰከንዶች ነው።
     አዲስ እሴት ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ገደቡን ለማሰናከል 0 ይተይቡ። ወደ ኋላ ለመመለስ ከ 0 በታች
     የሆነ ነገር ይተይቡ።
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google ኤፒአይ ቁልፍ በተሳካ ሁኔታ ማዘጋጀት
     ተርጉም።
   wwcConfigGUIAmazonTranslateSecretKeyButton: የአማዞን ሚስጥራዊ ቁልፍ ይቀይሩ
   wwcVersion: የዓለም አቀፍ ዊዲቻት፣ ስሪት
-  wwcsAttemptedTranslations: 'የተሞክሩ ትርጉሞች: %i'
+  wwcsAttemptedTranslations: 'የተሞክሩ ትርጉሞች: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: የአማዞን ሚስጥር ቁልፍ በተሳካ ሁኔታ ተዘጋጅቷል
   wwcConfigConversationWatsonAPIKeySuccess: ዋትሰን ኤ ቁልፍ በተሳካ ሁኔታ ተዘጋጅቷል።
-  wwcRateLimit: የእርስዎ ትርጉሞች መጠን ውስን ናቸው። እባክዎ ሌላ %i ሰከንዶች ይጠብቁ
-  wwcConfigCacheEnabled: ተርጓሚ መሸጎጫ ነቅቶ ወደ ገደብ ተዘጋጅቷል %i።
+  wwcRateLimit: የእርስዎ ትርጉሞች መጠን ውስን ናቸው። እባክዎ ሌላ {0} ሰከንዶች ይጠብቁ
+  wwcConfigCacheEnabled: ተርጓሚ መሸጎጫ ነቅቶ ወደ ገደብ ተዘጋጅቷል {0}።
   wwctGUIExistingTranslationButton: የአሁኑን የትርጉም ክፍለ ጊዜ ተጻፈ
   wwcUserDataReloaded: ሁሉም የተቀመጡ የተጠቃሚ ውሂብ ተጭኗል።
   wwcConfigGUISendTranslationChatButton: መግቢያ ላይ ገባሪ ተርጓሚ የውይይት አስታዋሽ ላክ
-  wwcsLastTranslationTime: 'የመጨረሻ (ስኬታማ) የትርጉም ጊዜ: %i'
+  wwcsLastTranslationTime: 'የመጨረሻ (ስኬታማ) የትርጉም ጊዜ: {0}'
   wwctbNotATranslator: ንቁ ተርጓሚ አይደለህም! ይህንን በ /wwctላይ ማዋቀሩን ያረጋግጡ።
-  wwcConfigConversationAmazonTranslateAccessKeyInput: የአሁኑ የመዳረሻ ቁልፍ %i ነው። እባክዎን
+  wwcConfigConversationAmazonTranslateAccessKeyInput: የአሁኑ የመዳረሻ ቁልፍ {0} ነው። እባክዎን
     ለ አማዞን የመዳረሻ ቁልፍ ያስገቡ ወይም ተይብ 0 ወደ ኋላ ለመመለስ።
   wwcConfigConversationAmazonTranslateAccessKeySuccess: የአማዞን መዳረሻ ቁልፍ በተሳካ ሁኔታ ማዘጋጀት።
   wwcConfigBadUpdateDelay: ልክ ያልሆነ የማዘመኛ መዘግየት በ config.yml ውስጥ ተዘጋጅቷል። ወደ 86400 ሰከንዶች
     ነባር በመሆን ላይ...
   wwctrlRateLimitOffSender: የእርስዎ ተመን ገደብ አጥፋ።
-  wwctrlRateLimitAlreadyOffTarget: የ %i ተመን ገደብ አስቀድሞ ተሰናክሏል
-  wwctrlPlayerNotFound: ተጫዋች %i ወይ አልተገኘም ነው, ወይም ንቁ ተርጓሚ አይደለም።
-  wwctrlRateLimitSetSender: የእርስዎ ተመን ገደብ ወደ %i ሰከንዶች ያዘጋጁ።
-  wwctrlRateLimitOffTarget: የ %i ተመን ገደብ አጥፍቷል።
-  wwctrlRateLimitSetTarget: የ %i ወደ %o ሰከንዶች የፍጥነት ገደብ ያዘጋጁ።
+  wwctrlRateLimitAlreadyOffTarget: የ {0} ተመን ገደብ አስቀድሞ ተሰናክሏል
+  wwctrlPlayerNotFound: ተጫዋች {0} ወይ አልተገኘም ነው, ወይም ንቁ ተርጓሚ አይደለም።
+  wwctrlRateLimitSetSender: የእርስዎ ተመን ገደብ ወደ {0} ሰከንዶች ያዘጋጁ።
+  wwctrlRateLimitOffTarget: የ {0} ተመን ገደብ አጥፍቷል።
+  wwctrlRateLimitSetTarget: የ {0} ወደ {1} ሰከንዶች የፍጥነት ገደብ ያዘጋጁ።
   wwctrlNotATranslator: ንቁ ተርጓሚ አይደለህም! ይህንን በ /wwctላይ ማዋቀሩን ያረጋግጡ።
   wwctrlRateLimitAlreadyOffSender: የእርስዎ ተመን ገደብ አስቀድሞ ተሰናክሏል።
   wwctGUIRateButton: የደረጃ ገደብ አዘጋጅ
-  wwctGUIConversationRateLimit: በትርጉሙ ውስጥ ያለው የፍጥነት ገደብ በአሁኑ ጊዜ ነው %i ሰከንዶች። አዲስ እሴት
+  wwctGUIConversationRateLimit: በትርጉሙ ውስጥ ያለው የፍጥነት ገደብ በአሁኑ ጊዜ ነው {0} ሰከንዶች። አዲስ እሴት
     ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ገደቡን ለማሰናከል 0 ይተይቡ። ወደ ኋላ ለመመለስ ከ 0 በታች የሆነ ነገር
     ይተይቡ።
   wwctGUITargetPlayerNull: ዒላማው አጫዋች ከአገልጋዩ ተለያይቷል።
-  wwcConfigConversationSyncUserDataDelayInput: የአሁኑ መዘግየት የተጠቃሚ ውሂብ ማመሳሰል የ %i ሰከንዶች
+  wwcConfigConversationSyncUserDataDelayInput: የአሁኑ መዘግየት የተጠቃሚ ውሂብ ማመሳሰል የ {0} ሰከንዶች
     ነው። አዲስ እሴት ለማዘጋጀት ከ 10 በላይ የሆነ ነገር ይተይቡ, ወይም ከ 10 ያነሰ ማንኛውም ነገር ወደ ኋላ ለመመለስ።
   wwcConfigGUISyncUserDataButton: የተጠቃሚ ውሂብ ማመሳሰል መዘግየት ለውጥ
-  wwcConfigSyncDelayEnabled: በአንድ የተጠቃሚ ውሂብ ማመሳሰል መዘግየት ወደ %i ሰከንዶች።
+  wwcConfigSyncDelayEnabled: በአንድ የተጠቃሚ ውሂብ ማመሳሰል መዘግየት ወደ {0} ሰከንዶች።
   wwcConfigConversationSyncUserDataDelaySuccess: የተጠቃሚ ውሂብ ማመሳሰል መዘግየት በተሳካ ሁኔታ ማዘጋጀት
   wwcConfigSyncDelayInvalid: ልክ ያልሆነ የተጠቃሚ ውሂብ ማመሳሰል መዘግየት config.yml ውስጥ ተዘጋጅቷል።
     ወደ 7200 ሰከንዶች ነባር በመሆን ላይ...
   wwcConfigCacheInvalid: ተርጓሚ መሸጎጫ መጠን ልክ ያልሆነ። ወደ ነባር 10...
   wwcInventoryErrorPlayer: ስህተት በእርስዎ GUI ጋር ተገኝቷል። አንድ ምዝግብ ወደ መሥሪያው ተልኳል።
-  wwcInventoryError: በተጠቃሚ %i GUI ላይ ስህተት ተገኝቷል። እባክዎ ይህን ችግር ለገንቢው ሪፖርት ያድርጉ።
-  wwctiOffTarget: ንጥል ትርጉም ተሰናክሏል ለ %i።
+  wwcInventoryError: በተጠቃሚ {0} GUI ላይ ስህተት ተገኝቷል። እባክዎ ይህን ችግር ለገንቢው ሪፖርት ያድርጉ።
+  wwctiOffTarget: ንጥል ትርጉም ተሰናክሏል ለ {0}።
   wwctiOffSender: ንጥል ትርጉም ተሰናክሏል።
   wwcItemTranslateTitleStock: ነባሪ ንጥል ስሞችን መተርጎም አልተቻለም
   wwctGUIItemButton: የንጥል ትርጉም መቀያየሪያ
   wwcItemTranslateTitleDone: የተተረጎመው ንጥል ርዕስ በተሳካ ሁኔታ
   wwcGUITempItem: ንጥል ማሳያ
   wwcItemTranslateStart: ዒላማ ንጥል መተርጎም...
-  wwcBookTranslateTitleSuccess: 'የተተረጎመ መጽሐፍ ርዕስ: %i'
+  wwcBookTranslateTitleSuccess: 'የተተረጎመ መጽሐፍ ርዕስ: {0}'
   wwctiOnSender: ንጥል ትርጉም ነቅቷል። ለመተርጎም በዋናው እጅዎ ውስጥ አንድ ንጥል በቀኝ-ጠቅ ያድርጉ!
   wwcItemTranslateLoreStart: የዒላማ ንጥል መተርጎም በርዝዴዎች...
   wwcItemTranslateLoreDone: የተተረጎመው ንጥል በርዝዴይስ በተ
-  wwctiOnTarget: ንጥል ትርጉም ነቅቷል ለ %i።
+  wwctiOnTarget: ንጥል ትርጉም ነቅቷል ለ {0}።
   wwcInvalidTranslator: ልክ ያልሆነ ተርጓሚ ቅንብሮች። እባክዎ ይህን ፕለጊን ለመጠቀም በ config.yml ወይም በ
     /wwcc ውስጥ ያስተካክሉት።
-  wwcConfigGUIEachTranslatorSettings: '%i ውቅር'
+  wwcConfigGUIEachTranslatorSettings: '{0} ውቅር'
   wwcConfigGUIWatsonButton: ዋትሰን
   wwcServerReloadWarning: WorldwideChat የ /ዳግም ጫን አጠቃቀም ኮንዶም አይደለም። እባክዎ በጥንቃቄ ይቀጥሉ።
   wwcConfigEnabledDebugMode: ነቅቷል የማረም ሁነታ ገንቢ ወይም መላ መፈለጊያ ካልሆኑ ይህን ማጥፋት አለብዎት።
   wwcTranslatorErrorThresholdReached: የስህተት ጣራ ደርሷል። ይህ ተሰኪ አሁን እንደገና ይጫናል, እና ሁሉንም
     ተርጓሚዎች ያሰናክላል።
-  wwcConfigErrorLimitEnabled: የተርጓሚ ስህተት ገደብ ተዘጋጅቷል ለ %i።
+  wwcConfigErrorLimitEnabled: የተርጓሚ ስህተት ገደብ ተዘጋጅቷል ለ {0}።
   wwcTranslatorError: የእርስዎን ትርጉም በመሞከር ላይ ሳለ አንድ ችግር ተፈጠረ። እባክዎ እንደገና ይሞክሩ።
   wwcConfigErrorLimitInvalid: ልክ ያልሆነ ተርጓሚ ስህተት ገደብ config.yml ውስጥ ተዘጋጅቷል። ወደ 5 ነባር
     በመሆን ላይ...
   wwcTranslatorErrorThresholdReachedCheckLogs: ተጨማሪ መረጃ ለማግኘት WorldwideChat ተሰኪ አቃፊ
     ውስጥ errorLog.txt ይመልከቱ።
-  wwctInvalidInputLangCode: 'ልክ ያልሆነ የግቤት ቋንቋ ኮድ የቀረበ! የሚሰራ ላንግ ኮዶች: %o'
-  wwcsTitle: ቅዳሴ %i
-  wwctInvalidOutputLangCode: 'ልክ ያልሆነ ውፅዓት ቋንቋ ኮድ የቀረበ! የሚሰራ ላንግ ኮዶች: %o'
+  wwctInvalidInputLangCode: 'ልክ ያልሆነ የግቤት ቋንቋ ኮድ የቀረበ! የሚሰራ ላንግ ኮዶች: {0}'
+  wwcsTitle: ቅዳሴ {0}
+  wwctInvalidOutputLangCode: 'ልክ ያልሆነ ውፅዓት ቋንቋ ኮድ የቀረበ! የሚሰራ ላንግ ኮዶች: {0}'
   wwctGUISourceTranslationSelected: ይህን ቋንቋ መርጠዋል።
   wwcConfigGUIChatMessagesOverrideDeleteButton: ሽር ሰርዝ
   wwcConfigConversationOverrideTextChange: ይህ መሻር አዲስ መልዕክት ይተይቡ, ወይም ተይብ 0 ወደ ኋላ
@@ -216,39 +216,39 @@ Messages:
   wwcConfigMessageCharLimitInvalid: በ config.yml ውስጥ ከተዋቀረ መልዕክት ልክ ያልሆነ ገደብ። ወደ 255
     ቻርስ ነባር በመሆን ላይ...
   wwcConfigConversationCharacterLimitSuccess: የቁምፊ ገደብ በተሳካ ሁኔታ ማዘጋጀት
-  wwcteOnTarget: የአካል ትርጉም ነቅቷል ለ %i።
-  wwcEntityTranslateDone: 'የተተረጎመው የህጋዊ ስም: %i'
+  wwcteOnTarget: የአካል ትርጉም ነቅቷል ለ {0}።
+  wwcEntityTranslateDone: 'የተተረጎመው የህጋዊ ስም: {0}'
   wwcEntityTranslateNoName: አካል ብጁ ስም የለውም።
-  wwcConfigConversationErrorLimitInput: የአሁኑ የስህተት ገደብ ለእያንዳንዱ ተርጓሚ ነው %i. አዲስ እሴት
+  wwcConfigConversationErrorLimitInput: የአሁኑ የስህተት ገደብ ለእያንዳንዱ ተርጓሚ ነው {0}. አዲስ እሴት
     ለማዘጋጀት ከ 0 የሚበልጥ ነገር ይተይቡ ወይም ከ 0 ያነሰ ወይም እኩል የሆነ ነገር ይተይቡ።
   wwcConfigGUIGlobalRateLimitButton: ዓለም አቀፍ ደረጃ ገደብ ለውጥ
   wwcteOnSender: አካል ትርጉም ነቅቷል። ስሙን ለመተርጎም በአንድ አካል ላይ በቀኝ-ጠቅ ያድርጉ!
   wwcConfigGUIResponseLimitButton: የተርጓሚ ምላሽ ጊዜ ማብቂያ ይቀይሩ
-  wwcConfigMessageCharLimitEnabled: የቁምፊ ገደብ በአንድ መልዕክት ተዘጋጅቷል ወደ %i ቁምፊዎች
-  wwcteOffTarget: የአካል ትርጉም ተሰናክሏል ለ %i።
-  wwcCharLimit: መልዕክትዎ በጣም ረጅም ነው! እባክዎ መልዕክትዎ ርዝመት %i ቁምፊዎች ያነሰ መሆኑን ያረጋግጡ።
-  wwcConfigConversationCharacterLimitInput: አሁን ያለው የቁምፊ ገደብ በአንድ መልዕክት %i ቁምፊዎች ነው።
+  wwcConfigMessageCharLimitEnabled: የቁምፊ ገደብ በአንድ መልዕክት ተዘጋጅቷል ወደ {0} ቁምፊዎች
+  wwcteOffTarget: የአካል ትርጉም ተሰናክሏል ለ {0}።
+  wwcCharLimit: መልዕክትዎ በጣም ረጅም ነው! እባክዎ መልዕክትዎ ርዝመት {0} ቁምፊዎች ያነሰ መሆኑን ያረጋግጡ።
+  wwcConfigConversationCharacterLimitInput: አሁን ያለው የቁምፊ ገደብ በአንድ መልዕክት {0} ቁምፊዎች ነው።
     አዲስ እሴት ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ወደ ኋላ ለመመለስ ከ 0 ያነሰ ወይም እኩል የሆነ ነገር ይተይቡ።
   wwcteOffSender: የአካል ትርጉም ተሰናክሏል።
   wwctGUIEntityButton: የመቀያየሪያ አካል ትርጉም
   wwctrlRateLimitBadInt: የእርስዎ ተመን ገደብ ትክክለኛ ኢንቲጀር አይደለም።
-  wwcTranslatorErrorConsole: ተጠቃሚው %i ትርጉማቸውን እየሞከረ ሳለ ችግር ተፈጥሯል። ተጨማሪ ዝርዝሮችን ለማግኘት
+  wwcTranslatorErrorConsole: ተጠቃሚው {0} ትርጉማቸውን እየሞከረ ሳለ ችግር ተፈጥሯል። ተጨማሪ ዝርዝሮችን ለማግኘት
     errorLog.txt ይመልከቱ።
   wwctGUIChatButton: የውይይት ትርጉም ይቀያይሩ
   wwcrBegin: WorldwideChat ን ዳግም በመጫን ላይ...
-  wwctTranslationStoppedOtherPlayer: የትርጉም ክፍለ ጊዜ ለ %i ቆሟል።
+  wwctTranslationStoppedOtherPlayer: የትርጉም ክፍለ ጊዜ ለ {0} ቆሟል።
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ግሎባል ውይይት እየተተረጎመ ነው,
-    ነገር ግን ከ %i ወደ %o ንቁ የትርጉም ክፍለ ጊዜ አለዎት።
+    ነገር ግን ከ {0} ወደ {1} ንቁ የትርጉም ክፍለ ጊዜ አለዎት።
   wwctCannotTranslateConsole: ለኮንሶል የትርጉም ክፍለ ጊዜ መጀመር አይችሉም!
-  wwctLangToLangStart: አዲስ የትርጉም ክፍለ ጊዜ ጀምሮ ከ %i ወደ %o።
-  wwcOnJoinTranslationNotificationSourceLang: ንቁ የትርጉም ክፍለ ጊዜ አለዎት ከ %i ወደ %o።
-  wwctAutoTranslateStartOtherPlayer: አዲስ የትርጉም ክፍለ ጊዜ መጀመር ለ %i ወደ %o።
+  wwctLangToLangStart: አዲስ የትርጉም ክፍለ ጊዜ ጀምሮ ከ {0} ወደ {1}።
+  wwcOnJoinTranslationNotificationSourceLang: ንቁ የትርጉም ክፍለ ጊዜ አለዎት ከ {0} ወደ {1}።
+  wwctAutoTranslateStartOtherPlayer: አዲስ የትርጉም ክፍለ ጊዜ መጀመር ለ {0} ወደ {1}።
   wwctTranslationStopped: የእርስዎ የትርጉም ክፍለ ጊዜ ቆሟል።
-  wwctLangToLangStartOtherPlayer: አዲስ የትርጉም ክፍለ ጊዜ መጀመር ለ %o ከ %i ወደ %e።
-  wwctAutoTranslateStart: አዲስ የትርጉም ክፍለ ጊዜ መጀመር ወደ %o።
-  wwcOnJoinTranslationNotificationNoSourceLang: ንቁ የትርጉም ክፍለ ጊዜ አለዎት ወደ %o።
+  wwctLangToLangStartOtherPlayer: አዲስ የትርጉም ክፍለ ጊዜ መጀመር ለ {0} ከ {1} ወደ {2}።
+  wwctAutoTranslateStart: አዲስ የትርጉም ክፍለ ጊዜ መጀመር ወደ {0}።
+  wwcOnJoinTranslationNotificationNoSourceLang: ንቁ የትርጉም ክፍለ ጊዜ አለዎት ወደ {0}።
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ዓለም አቀፍ ውይይት እየተተረጎመ
-    ነው, ነገር ግን ንቁ የትርጉም ክፍለ ጊዜ ወደ %o አለዎት።
+    ነው, ነገር ግን ንቁ የትርጉም ክፍለ ጊዜ ወደ {0} አለዎት።
   wwcConfigGUIChangesNotSaved: በ /wwccc ውስጥ ቀይ ግርዶሽ ላይ ጠቅ እስኪያደርጉ ድረስ የእርስዎ ለውጦች ተግባራዊ
     አይሆንም።
   wwctciOffSender: ገቢ የውይይት ትርጉም ተሰናክሏል።
@@ -257,22 +257,22 @@ Messages:
   wwctcoOnSender: ወጪ የውይይት ትርጉም ነቅቷል። የምትሉት ማንኛውም ነገር ይተረጎማል!
   wwctciOnSender: ገቢ የውይይት ትርጉም ነቅቷል። የሚቀበሉት ማንኛውም ነገር ይተረጎማል!
   wwctGUIChatMenu: የውይይት የትርጉም ምናሌ ቀያይር
-  wwctcoOnTarget: ወጪ የውይይት ትርጉም ነቅለ %i።
-  wwctcoOffTarget: ወጪ የውይይት ትርጉም ተሰናክሏል ለ %i።
+  wwctcoOnTarget: ወጪ የውይይት ትርጉም ነቅለ {0}።
+  wwctcoOffTarget: ወጪ የውይይት ትርጉም ተሰናክሏል ለ {0}።
   wwctGUIChatOutgoingButton: ወጪ የውይይት ትርጉም ቀያይር
-  wwctciOnTarget: ገቢ የውይይት ትርጉም ነቅለ %i።
-  wwctciOffTarget: ገቢ የውይይት ትርጉም ተሰናክሏል ለ %i።
+  wwctciOnTarget: ገቢ የውይይት ትርጉም ነቅለ {0}።
+  wwctciOffTarget: ገቢ የውይይት ትርጉም ተሰናክሏል ለ {0}።
   wwcConfigConversationSendIncomingHoverTextChatSuccess: አንዣብቧል ጽሑፍ እንደ ትርጉም ጋር ተያይዟል
     የመጀመሪያው ገቢ ውይይት በተሳካ ሁኔታ ቀይረዋል።
   wwcConfigGUISendIncomingHoverTextChatButton: ኦርጅናል ገቢ መልዕክቶችን እንደ ማንዣበብ ጽሑፍ ያክሉ
-  wwctGUIExistingChatOutgoingEnabled: 'ወጪ የውይይት ትርጉም ነቅቷል: %i'
-  wwctGUIExistingTranslationInput: 'የግቤት ቋንቋ: %i'
-  wwctGUIExistingChatIncomingEnabled: 'ገቢ የውይይት ትርጉም ነቅቷል: %i'
-  wwctGUIExistingTranslationOutput: 'የውጤት ቋንቋ: %i'
-  wwcTranslatorAttempt: በ config.yml ውስጥ ተርጓሚ ጋር ለመገናኘት በመሞከር ላይ... (ሙከር %እኔ/ %o)
+  wwctGUIExistingChatOutgoingEnabled: 'ወጪ የውይይት ትርጉም ነቅቷል: {0}'
+  wwctGUIExistingTranslationInput: 'የግቤት ቋንቋ: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'ገቢ የውይይት ትርጉም ነቅቷል: {0}'
+  wwctGUIExistingTranslationOutput: 'የውጤት ቋንቋ: {0}'
+  wwcTranslatorAttempt: በ config.yml ውስጥ ተርጓሚ ጋር ለመገናኘት በመሞከር ላይ... (ሙከር %እኔ/ {0})
   wwcTimeoutExceptionConsole: ተጫዋች %እኔ በጣም የቅርብ ጊዜ ጥያቄ የእረፍት ጊዜ ነበር። ይህ ስህተት ለሞት የሚዳርግ
     አይደለም, ነገር ግን በዓለም አቀፍ ደረጃ መከሰቱን ከቀጠለ ዳግም መጫን አለበት።
-  wwcGUIPageNumber: 'የገጽ ቁጥር: %i'
+  wwcGUIPageNumber: 'የገጽ ቁጥር: {0}'
   wwcConfigYAMLFallback: ወደ ያምል ተመልሶ መውደቅ...
   wwcConfigGUIToggleSQLButton: SQL ቀያይር
   wwcConfigConversationToggleSQLSuccess: SQL በተሳካ ሁኔታ ቀይሯል። ለውጡ ተግባራዊ እንዲሆን ዳግም ይጫኑ።
@@ -292,33 +292,33 @@ Messages:
   wwcConfigGUISQLPortButton: SQL ወደብ ይቀይሩ
   wwcConfigGUISQLOptionalArgsButton: የ SQL አማራጭ ክርክሮችን ይቀይሩ
   wwcConfigConversationToggleSQLSSLSuccess: SSL ለ SQL በተሳካ ሁኔታ ቀይረዋል።
-  wwcConfigConversationSQLPortInput: የአሁኑ ወደብ ነው %i ነው። አዲስ ወደብ ለማዘጋጀት ከ 0 ሌላ ማንኛውንም
+  wwcConfigConversationSQLPortInput: የአሁኑ ወደብ ነው {0} ነው። አዲስ ወደብ ለማዘጋጀት ከ 0 ሌላ ማንኛውንም
     ነገር ይተይቡ፣ ወይም ወደ ኋላ ለመመለስ 0 ይተይቡ።
   wwcConfigGUISQLPasswordButton: የ SQL ይለፍ ቃል ይቀይሩ
   wwcConfigConversationSQLHostnameSuccess: የ SQL አስተናጋጅ ስም በተሳካ ሁኔታ ቀይሯል።
-  wwcConfigConversationSQLHostnameInput: የአሁኑ የአስተናጋጅ ስም ነው %i አዲስ የአስተናጋጅ ስም ለማዘጋጀት
+  wwcConfigConversationSQLHostnameInput: የአሁኑ የአስተናጋጅ ስም ነው {0} አዲስ የአስተናጋጅ ስም ለማዘጋጀት
     ከ 0 ሌላ ማንኛውንም ነገር ይተይቡ, ወይም ወደ ኋላ ለመመለስ 0 ይተይቡ።
   wwcConfigGUISQLHostnameButton: SQL አስተናጋጅ ስም ይቀይሩ
   wwcConfigConversationSQLOptionalArgsSuccess: በተሳካ ሁኔታ አማራጭ SQL እሴቶች ተለውጧል።
   wwcConfigConversationSQLPasswordSuccess: የ SQL ይለፍ ቃል በተሳካ ሁኔታ ቀይሯል።
-  wwcConfigConversationSQLPasswordInput: የአሁኑ የይለፍ ቃል ነው %i አዲስ የይለፍ ቃል ለማዘጋጀት ከ 0
+  wwcConfigConversationSQLPasswordInput: የአሁኑ የይለፍ ቃል ነው {0} አዲስ የይለፍ ቃል ለማዘጋጀት ከ 0
     ሌላ ማንኛውንም ነገር ይተይቡ ወይም ወደ ኋላ ለመመለስ 0 ይተይቡ።
   wwcConfigGUIToggleSQLSSLButton: SQL SSL ን ቀይር
   wwcConfigConversationSQLUsernameSuccess: የ SQL የተጠቃሚ ስም በተሳካ ሁኔታ ቀይሯል።
-  wwcConfigConversationSQLUsernameInput: የአሁኑ የተጠቃሚ ስም ነው %i ነው። አዲስ የተጠቃሚ ስም ለማዘጋጀት
+  wwcConfigConversationSQLUsernameInput: የአሁኑ የተጠቃሚ ስም ነው {0} ነው። አዲስ የተጠቃሚ ስም ለማዘጋጀት
     ከ 0 ሌላ ነገር ይተይቡ፣ ወይም ተይብ 0 ተይቡ።
   wwcConfigConversationSQLPortSuccess: የ SQL ወደብ በተሳካ ሁኔታ ቀይሯል።
   wwcConfigGUISQLUsernameButton: የ SQL የተጠቃሚ ስም ይቀይሩ
   wwcConfigConversationSQLOptionalArgsCleared: አማራጭ ክርክሮች በተሳካ ሁኔታ ጸድቷል።
-  wwcConfigConversationSQLOptionalArgsInput: 'የአሁኑ አማራጭ የ SQL ክርክሮች የሚከተሉት ናቸው: %i.
+  wwcConfigConversationSQLOptionalArgsInput: 'የአሁኑ አማራጭ የ SQL ክርክሮች የሚከተሉት ናቸው: {0}.
     በኮማ የተለዩ ክርክሮች (ቁልፍ =ዋጋ, key2=value2) ወይም የአሁኑን አርግስ ለማጥራት ግልጽ ይተይቡ, ወይም ወደ ኋላ
     ለመመለስ 0 ይተይቡ።'
-  wwcConfigConversationSQLDatabaseNameInput: የአሁኑ የውሂብ ጎታ ስም ነው %i። አዲስ የውሂብ ጎታ ስም
+  wwcConfigConversationSQLDatabaseNameInput: የአሁኑ የውሂብ ጎታ ስም ነው {0}። አዲስ የውሂብ ጎታ ስም
     ለማዘጋጀት ከ 0 ሌላ ማንኛውንም ነገር ይተይቡ፣ ወይም ተይብ 0 ተይቡ።
   wwcConfigGUISQLDatabaseNameButton: SQL ዳታቤዝ ይቀይሩ
   wwcConfigConversationSQLDatabaseNameSuccess: የ SQL የውሂብ ጎታ ስም በተሳካ ሁኔታ ቀይሯል
   wwcConfigConversationFatalAsyncAbort: ሁሉንም የአሲንስ ተግባራት ለማስቀረት አሁን ያለው ጊዜ ያለፈበት ጊዜ
-    %i ሰከንዶች ነው። አዲስ የእረፍት ጊዜ ለማዘጋጀት, ወይም ከዚያ በታች የሆነ ነገር ለመመለስ ከ 7 በላይ ማንኛውንም ነገር
+    {0} ሰከንዶች ነው። አዲስ የእረፍት ጊዜ ለማዘጋጀት, ወይም ከዚያ በታች የሆነ ነገር ለመመለስ ከ 7 በላይ ማንኛውንም ነገር
     ይተይቡ።
   wwcConfigConversationFatalAsyncSuccess: የተሳሳተ ተግባር የእረፍት ጊዜ በተሳካ ሁኔታ ተዘጋጅቷል።
   wwcConfigGUIFatalAsyncAbortButton: አሲንክ የተግባር ጊዜ ማብቂያ ይቀይሩ
@@ -328,7 +328,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: ሊብሬ ለውጥ ኤፒአይ ቁልፍ ተርጉም
   libreHttp403: ሊብሬ ኤ ፒ አይ ቁልፍ ተርጉም ይጎድላል, ወይም ከአገልጋዩ ታግደዋል!
   wwcConfigConversationLibreURLSuccess: ሊብሬ ዩአርኤል በተሳካ ሁኔታ ተዘጋጅቷል።
-  wwcConfigConversationLibreTranslateApiKeyInput: የአሁኑ የኤፒአይ ቁልፍ %i ነው። እባክዎን ለ Libre
+  wwcConfigConversationLibreTranslateApiKeyInput: የአሁኑ የኤፒአይ ቁልፍ {0} ነው። እባክዎን ለ Libre
     ኤ ፒ አይ ቁልፍን ያስገቡ፣ ወይም ተመልሶ ለመመለስ 0 ይተይቡ።
   wwcConfigGUILibreTranslateButton: ሊብሬ ተርጉም
   libreHttp429: ምክንያት አገልጋይ ከ ተመን ገደብ ምንም መተማመን።
@@ -336,32 +336,32 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: በተሳካ ሁኔታ ሊብሬ ተርጉም ቀይረዋል። ለውጦቹ
     ተግባራዊ እንዲሆኑ ዳግመኛ ይጫኑ።
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre ኤ ፒ አይ ቁልፍ በተሳካ ሁኔታ ተዘጋጅቷል።
-  wwcConfigConversationLibreURLInput: የአሁኑ ዩአርኤል %i ነው። እባክዎን ለሊብሬ ዩ አር ኤል ያስገቡ ወይም
+  wwcConfigConversationLibreURLInput: የአሁኑ ዩአርኤል {0} ነው። እባክዎን ለሊብሬ ዩ አር ኤል ያስገቡ ወይም
     ወደኋላ ለመመለስ 0 ይተይቡ።
-  libreHttpUnknown: 'ያልታወቀ http ስህተት: %i'
+  libreHttpUnknown: 'ያልታወቀ http ስህተት: {0}'
   wwcConfigGUILibreTranslateURLButton: ሊብሬ ዩአርኤል ተርጉም ይቀይሩ
-  wwcConfigConnectionFail: ከ %i ጋር መገናኘት አልተሳካም።
+  wwcConfigConnectionFail: ከ {0} ጋር መገናኘት አልተሳካም።
   wwcConfigGUIMongoSettings: ሞንጎዲቢ ውቅር
   wwcConfigConversationMongoDatabaseNameSuccess: የ MongoDB የውሂብ ጎታ ስም በተሳካ ሁኔታ ቀይሯል።
   wwcConfigGUIMongoHostnameButton: MongoDB አስተናጋጅ ስም ይቀይሩ
-  wwcConfigConversationMongoPasswordInput: የአሁኑ የይለፍ ቃል %i ነው። አዲስ የይለፍ ቃል ለማዘጋጀት
+  wwcConfigConversationMongoPasswordInput: የአሁኑ የይለፍ ቃል {0} ነው። አዲስ የይለፍ ቃል ለማዘጋጀት
     ከ 0 ሌላ ነገር ይተይቡ ወይም ወደኋላ ለመመለስ 0 ይተይቡ።
-  wwcConfigConversationMongoPortInput: የአሁኑ ወደብ %i ነው። አዲስ ወደብ ለማዘጋጀት ከ 0 ሌላ ነገር ይተይቡ
+  wwcConfigConversationMongoPortInput: የአሁኑ ወደብ {0} ነው። አዲስ ወደብ ለማዘጋጀት ከ 0 ሌላ ነገር ይተይቡ
     ወይም ተመልሰው ለመመለስ 0 ይተይቡ።
   wwcConfigConversationToggleMongoSuccess: MongoDB በተሳካ ሁኔታ ቀይረዋል። ለውጡ ተግባራዊ እንዲሆን
     ዳግመኛ ይጫኑ።
-  wwcConfigConversationMongoHostnameInput: የአሁኑ የአስተናጋጅ ስም %i ነው። አዲስ የአስተናጋጅ ስም ለማዘጋጀት
+  wwcConfigConversationMongoHostnameInput: የአሁኑ የአስተናጋጅ ስም {0} ነው። አዲስ የአስተናጋጅ ስም ለማዘጋጀት
     ከ 0 ሌላ ነገር ይተይቡ ወይም ወደኋላ ለመመለስ 0 ይተይቡ።
   wwcConfigConversationMongoHostnameSuccess: የ MongoDB አስተናጋጅ ስሙን በተሳካ ሁኔታ ቀይሯል።
   wwcConfigGUIMongoMenuButton: የ MongoDB ቅንብሮችን ይቀይሩ
   wwcConfigGUIToggleMongoButton: ሞንጎዴብ መቀያየር
-  wwcConfigConversationMongoDatabaseNameInput: የአሁኑ የውሂብ ጎታ ስም %i ነው። አዲስ የውሂብ ጎታ
+  wwcConfigConversationMongoDatabaseNameInput: የአሁኑ የውሂብ ጎታ ስም {0} ነው። አዲስ የውሂብ ጎታ
     ስም ለማዘጋጀት ከ 0 ሌላ ነገር ይተይቡ ወይም ወደኋላ ለመመለስ 0 ይተይቡ።
   wwcConfigConversationMongoOptionalArgsInput: 'የአሁኑ አማራጭ MongoDB ክርክሮች የሚከተሉት ናቸው:
-    %i. በኮማ የተለዩ ክርክሮችን ይተይቡ (ቁልፍ = ዋጋ, key2=value2), ወይም የአሁኑን አርግስ ለማጥራት ግልጽ ይተይቡ,
+    {0}. በኮማ የተለዩ ክርክሮችን ይተይቡ (ቁልፍ = ዋጋ, key2=value2), ወይም የአሁኑን አርግስ ለማጥራት ግልጽ ይተይቡ,
     ወይም ወደኋላ ለመመለስ 0 ይተይቡ።'
   wwcConfigGUIMongoDatabaseNameButton: MongoDB የውሂብ ጎታ ይቀይሩ
-  wwcConfigConversationMongoUsernameInput: የአሁኑ የተጠቃሚ ስም %i ነው። አዲስ የተጠቃሚ ስም ለማዘጋጀት
+  wwcConfigConversationMongoUsernameInput: የአሁኑ የተጠቃሚ ስም {0} ነው። አዲስ የተጠቃሚ ስም ለማዘጋጀት
     ከ 0 ሌላ ነገር ይተይቡ ወይም ተመልሶ ለመመለስ 0 ን ይተይቡ።
   wwcConfigGUIMongoOptionalArgsButton: MongoDB አማራጭ ክርክሮችን ይቀይሩ
   wwcConfigConversationMongoUsernameSuccess: የ MongoDB የተጠቃሚ ስም በተሳካ ሁኔታ ቀይሯል።
@@ -381,7 +381,7 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: DeepL ተርጉም ኤ ፒ አይ ቁልፍ ይቀይሩ
   wwcConfigGUIToggleDeepLTranslateButton: ቀያይር DeepL ተርጉም
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL ኤ ፒ አይ ቁልፍ በተሳካ ሁኔታ ተዘጋጅቷል።
-  wwcConfigConversationDeepLTranslateApiKeyInput: የአሁኑ ኤ ፒ አይ ቁልፍ %i ነው። እባክዎ ለ DeepL
+  wwcConfigConversationDeepLTranslateApiKeyInput: የአሁኑ ኤ ፒ አይ ቁልፍ {0} ነው። እባክዎ ለ DeepL
     ኤ ፒ አይ ቁልፍ ያስገቡ ወይም ወደኋላ ለመመለስ 0 ይተይቡ።
   wwcConfigErrorsToIgnoreSuccess: ችላ በተሳካ ሁኔታ ተርጓሚ ስህተቶች የተመዘገቡ።
   wwcConfigErrorsToIgnoreInvalid: በ config.yml ውስጥ ተዘጋጅቷል ችላ ለማለት ልክ ያልሆነ ተርጓሚ ስህተቶች።
@@ -390,21 +390,21 @@ Messages:
   wwcConfigConversationIgnoreErrorsSuccess: ሐረጎችን ችላ ለማለት የተርጓሚውን ስህተቶች በተሳካ ሁኔታ ቀይረዋል።
   wwcConfigGUIIgnoreErrorsButton: ችላ ለማለት ስህተቶችን ይቀይሩ
   wwcConfigConversationIgnoreErrorsInput: 'በአስተርጓሚ ስህተቶች ውስጥ አሁን ያሉት የሐረጎች ዝርዝር የሚከተሉት
-    ናቸው: %i. በኮማ የተለዩ ክርክሮችን ይተይቡ (ቁልፍ = ዋጋ, key2=value2), ወይም የአሁኑን አርግጎች ለማጥራት ግልጽ
+    ናቸው: {0}. በኮማ የተለዩ ክርክሮችን ይተይቡ (ቁልፍ = ዋጋ, key2=value2), ወይም የአሁኑን አርግጎች ለማጥራት ግልጽ
     ይተይቡ, ወይም ወደኋላ ለመመለስ 0 ይተይቡ። በተጨማሪም «*» መተየብ ተሰኪው ማንኛውንም ተርጓሚ ስህተቶች እንዳያረጋግጥ ያደርገዋል።'
   wwcConfigConversationIgnoreErrorsCleared: በተሳካ ሁኔታ ጸድቷል ሐረጎች ችላ ተርጓሚ ስህተቶች።
 
-  wwcsActiveTransPrevRate: 'ንቁ ተርጓሚ ቀዳሚ ተመን ገደብ ጊዜ: %i'
-  wwcsActiveTransSaved: 'ንቁ ተርጓሚ ወደ ዲስክ ተቀምጧል: %i'
-  wwcsActiveTransIncoming: 'ንቁ ተርጓሚ ገቢ ውይይት በመተርጎም ላይ: %i'
-  wwcsActiveTransOutLang: 'አክቲቭ ተርጓሚ የውጤት ቋንቋ: %i'
-  wwcsActiveTransInLang: 'ንቁ ተርጓሚ የግቤት ቋንቋ: %i'
-  wwcsActiveTransBook: 'ንቁ ተርጓሚ መተርጎም መጽሐፍ: %i'
-  wwcsActiveTransSign: 'ንቁ ተርጓሚ የትርጉም ምልክት: %i'
-  wwcsActiveTransUUID: 'ንቁ ተርጓሚ UUID: %i'
-  wwcsActiveTransRateLimit: 'ንቁ ተርጓሚ ተመን ገደብ: %i'
-  wwcsActiveTransColorWarning: 'ንቁ ተርጓሚ የቀለም ማስጠንቀቂያ ተቀብሏል: %i'
-  wwcsActiveTransOutgoing: 'ንቁ ተርጓሚ ወጪ ውይይት መተርጎም: %i'
-  wwcsActiveTransItem: 'ንቁ ተርጓሚ መተርጎም ንጥል: %i'
-  wwcsActiveTransEntity: 'ንቁ ተርጓሚ የትርጉም አካል: %i'
+  wwcsActiveTransPrevRate: 'ንቁ ተርጓሚ ቀዳሚ ተመን ገደብ ጊዜ: {0}'
+  wwcsActiveTransSaved: 'ንቁ ተርጓሚ ወደ ዲስክ ተቀምጧል: {0}'
+  wwcsActiveTransIncoming: 'ንቁ ተርጓሚ ገቢ ውይይት በመተርጎም ላይ: {0}'
+  wwcsActiveTransOutLang: 'አክቲቭ ተርጓሚ የውጤት ቋንቋ: {0}'
+  wwcsActiveTransInLang: 'ንቁ ተርጓሚ የግቤት ቋንቋ: {0}'
+  wwcsActiveTransBook: 'ንቁ ተርጓሚ መተርጎም መጽሐፍ: {0}'
+  wwcsActiveTransSign: 'ንቁ ተርጓሚ የትርጉም ምልክት: {0}'
+  wwcsActiveTransUUID: 'ንቁ ተርጓሚ UUID: {0}'
+  wwcsActiveTransRateLimit: 'ንቁ ተርጓሚ ተመን ገደብ: {0}'
+  wwcsActiveTransColorWarning: 'ንቁ ተርጓሚ የቀለም ማስጠንቀቂያ ተቀብሏል: {0}'
+  wwcsActiveTransOutgoing: 'ንቁ ተርጓሚ ወጪ ውይይት መተርጎም: {0}'
+  wwcsActiveTransItem: 'ንቁ ተርጓሚ መተርጎም ንጥል: {0}'
+  wwcsActiveTransEntity: 'ንቁ ተርጓሚ የትርጉም አካል: {0}'
 

@@ -1,73 +1,73 @@
 Messages:
-  wwcgAutoTranslateStart: Одоо дэлхийн чатыг орчуулж байна %o.
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Глобал чат %o руу орчуулагдаж
+  wwcgAutoTranslateStart: Одоо дэлхийн чатыг орчуулж байна {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Глобал чат {0} руу орчуулагдаж
     байна.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Амазоны хандалтын түлхүүр өөрчлөх
   wwcrFail: WorldWedeChat дахин ачаалж чадаагүй.
   wwcConfigGUIUpdateCheckerButton: Шинэчлэлтүүдийг хойшлуулах шалгах
   wwcUpdaterFailedGeneric: WorldWwidechat шинэчлэлтүүдийг шалгах боломжгүй.
   wwcConfigConversationUpdateCheckerInput: Шинэчлэх шалгагч дээрх одоогийн саатал
-    нь %i секунд байна. 10-ээс их зүйлийг шинэ утгыг тохируулах эсвэл 10-аас бага
+    нь {0} секунд байна. 10-ээс их зүйлийг шинэ утгыг тохируулах эсвэл 10-аас бага
     зүйлийг буцааж өгнө үү.
   wwctGUIMainMenuGlobal: Олон улсын орчуулгын цэс
   wwcConfigConversationPluginUpdateChatSuccess: Plugin шинэчлэх чат сануулах амжилттай
     сольсон.
   wwctbOnTarget: ОУХДНС орчуулга идэвхжсэн.
-  wwcsNotATranslator: '%i -д хараахан бүртгэл байхгүй байна.'
+  wwcsNotATranslator: '{0} -д хараахан бүртгэл байхгүй байна.'
   wwcConfigGUIbStatsButton: Toggle bStats
   wwctGUINewTranslationSource: Эх сурвалж хэл сонгоно уу
   wwcConfigConnectionFailed: Таны итгэмжлэлүүд болон галт хана зөв тохируулагдсан
     эсэхийг шалгаарай!
   wwcConfigEnabledbStats: Идэвхжүүлсэн bStats.
-  wwctGUIMainMenuPlayer: '%i орчуулгын цэс'
+  wwctGUIMainMenuPlayer: '{0} орчуулгын цэс'
   wwctGUIBookButton: Toggle Номын орчуулга
-  wwcLangDetected: Илэрсэн хэл %o.
+  wwcLangDetected: Илэрсэн хэл {0}.
   wwcBookTranslateStart: Зорилтот номыг орчуулах...
   wwcConfigDisabledbStats: Хөгжлийн бэрхшээлтэй bStats.
   wwctsOffSender: Дансаа ашиглах орчуулга идэвхгүй.
   wwcUpdaterParserFailed: Github-аас шинэчлэх өгөгдлийг задлан ялгалт хийж чадаагүй.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: Одоогийн нууц түлхүүр %i байна.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Одоогийн нууц түлхүүр {0} байна.
     оруулах уу Амазон нь нууц түлхүүр, эсвэл төрөл 0 буцаж явах.
   wwctbOffSender: Ном орчуулга тахир дутуу.
   wwcConfigGUIAmazonTranslateButton: Амазоны орчуулга
   wwcConfigConversationLangSuccess: Залгаасын хэл амжилттай өөрчлөгдсөн.
-  wwcsSuccessfulTranslations: 'Амжилттай Орчуулга: %i'
-  wwcConfigConversationTranslationCacheInput: Одоогийн орчуулгын кэш хязгаар %i хэлц
+  wwcsSuccessfulTranslations: 'Амжилттай Орчуулга: {0}'
+  wwcConfigConversationTranslationCacheInput: Одоогийн орчуулгын кэш хязгаар {0} хэлц
     байна. Шинэ утгыг тохируулахын тулд 0-ээс их зүйлийг бичээрэй, эсвэл орчуулгын
     кэшийг идэвхгүй болгохын тулд 0 бичнэ үү. 0-ээс бага зүйлийг бичнэ үү.
   wwctbOffTarget: ОУХДНС орчуулга нь идэвхгүй.
   wwcConfigGUIGeneralSettings: Ерөнхий тохиргоо
   wwcInvalidLang: Таны config.yml буруу хэл. EN нь анхдагч...
   wwcConfigConversationAmazonTranslateRegionSuccess: Амазоны бүс амжилттай тогтоосон.
-  wwcConfigRateLimitEnabled: Глобал үнийн хязгаар идэвхжсэн болон %i секунд тохируулагдсан
+  wwcConfigRateLimitEnabled: Глобал үнийн хязгаар идэвхжсэн болон {0} секунд тохируулагдсан
   wwcBadPerms: Та энэ тушаалыг ажиллуулах шаардлагатай зөвшөөрөл байхгүй байна!
   wwcConfigGUILangButton: Өөрчлөлт залгаас хэл
   wwctGUISignButton: Түлхүүр гарын үсэг зурах орчуулга
   wwcUpdaterOutOfDate: Дэлхий даяарWedeChat хуучирсан байна. Хамгийн сүүлийн үеийн
-    хувилбар руу шинэчлэнэ үү, %i.
+    хувилбар руу шинэчлэнэ үү, {0}.
   wwcConfigGUINextPageButton: Дараагийн хуудас
   wwcConfigInvalidTranslatorSettings: Буруу орчуулагч тохиргоо! Өөрийн config.yml-д
     зөвхөн нэг орчуулагчийг идэвхжүүлнэ үү.
   wwcConfigGUIQuitButton: Гарах & Save өөрчлөлтүүд
   wwctPlayerNotFound: Тоглогч % Би олж чадаагүй.
   wwcConfigGUIAmazonTranslateRegionButton: Амазоны бүсийг өөрчлөх
-  wwcConfigConversationLangInput: 'Одоогийн залгаас хэл %i байна. хүчинтэй хэлний
-    кодыг оруулна уу, эсвэл төрөл 0 цуцлах. Хүчинтэй хэлний код: %o'
+  wwcConfigConversationLangInput: 'Одоогийн залгаас хэл {0} байна. хүчинтэй хэлний
+    кодыг оруулна уу, эсвэл төрөл 0 цуцлах. Хүчинтэй хэлний код: {0}'
   wwcConfigConversationLangInvalid: Хэлний код буруу байна!
   wwcConfigGUIWatsonAPIKeyButton: Ватсон API Түлхүүр өөрчлөлт
-  wwcEnabled: Идэвхтэй WorldWedeChat хувилбар %i.
-  wwcgLangToLangStart: Одоо дэлхийн чатыг %i нь %o руу орчуулж байна.
+  wwcEnabled: Идэвхтэй WorldWedeChat хувилбар {0}.
+  wwcgLangToLangStart: Одоо дэлхийн чатыг {0} нь {1} руу орчуулж байна.
   wwctbOnSender: Ном орчуулга идэвхжүүлсэн. Үүнийг орчуулахын тулд ном барьж байхдаа
     баруун товшино уу!
   wwcListenersInitialized: Эхэлж сонсогчид.
   wwcConfigGUIPluginUpdateChatButton: Plugin Шинэчлэлтүүдийн хувьд чат сануулах илгээх
   wwcConfigConversationSendTranslationChatSuccess: Идэвхтэй орчуулагч чат сануулах
     амжилттай сольсон.
-  wwctsOffTarget: '%i нь идэвхгүй орчуулга гарын үсэг зурах.'
+  wwctsOffTarget: '{0} нь идэвхгүй орчуулга гарын үсэг зурах.'
   wwcUpdaterConnectionFailed: Github дээр хамгийн сүүлийн үеийн шинэчлэлтүүдийг шалгах
     боломжгүй.
   watsonNotFoundExceptionNotification: Таны оролтыг ямар ч цаашид орчуулах боломжгүй.
-  wwcConfigConversationWatsonAPIKeyInput: Одоогийн API түлхүүр %i байна. оролтын Ватсон
+  wwcConfigConversationWatsonAPIKeyInput: Одоогийн API түлхүүр {0} байна. оролтын Ватсон
     нь API түлхүүр уу, эсвэл төрөл 0 буцаж явах.
   wwctGUIStopButton: Орчуулгыг зогсоох
   wwcgTranslationStopped: Глобал чат орчуулга зогссон байна.
@@ -77,9 +77,9 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google-ийн өөрчлөлт API түлхүүр орчуулах
   wwcSignDeletedOrTooLong: 'Зорилтот тэмдэг устгагдсан эсвэл орчуулга хэтэрхий урт
     байсан юм. Орчуулга:'
-  wwctsOnTarget: Дансаа ашиглах орчуулга идэвхжсэн %i.
+  wwctsOnTarget: Дансаа ашиглах орчуулга идэвхжсэн {0}.
   wwcConfigCacheDisabled: Орчуулагч кэш идэвхгүй.
-  wwcConfigConversationWatsonURLInput: Одоогийн URL байна %i. оролтын Ватсон нь үйлчилгээний
+  wwcConfigConversationWatsonURLInput: Одоогийн URL байна {0}. оролтын Ватсон нь үйлчилгээний
     URL уу, эсвэл төрөл 0 буцаж явах.
   wwcBookDone: Ном амжилттай орчуулсан.
   wwctsOnSender: Дансаа ашиглах орчуулга идэвхтэй. Үүнийг орчуулах тэмдэг дээр хулганы
@@ -89,7 +89,7 @@ Messages:
   wwctGUITranslationButton: Орчуулгыг эхлүүлэх
   wwctGUIAutoDetectButton: Авто илрүүлэх эх сурвалж хэл
   wwcUpdaterUpToDate: ДэлхийдWedeChat шинэчлэгдэж байна!
-  wwcConfigConversationAmazonTranslateRegionInput: Одоогийн бүс %i байна. оруулах
+  wwcConfigConversationAmazonTranslateRegionInput: Одоогийн бүс {0} байна. оруулах
     уу Амазон нь бүс нутаг, эсвэл төрөл 0 буцаж явах.
   wwcNoConsole: Энэ тушаалыг зөвхөн тоглогч ажиллуулж болно.
   wwcInitializationFail: WorldWwidechat эхлүүлж чадаагүй.
@@ -106,10 +106,10 @@ Messages:
   wwcConfigGUIPrefixButton: Өөрчлөлт залгаас угтвар
   wwctSameLangError: Та ижил хэл рүү орчуулж чадахгүй!
   wwctGUINewTranslationTarget: Зорилтот хэл сонгоно уу
-  wwcConfigConnectionSuccess: Амжилттай холбогдсон %o!
+  wwcConfigConnectionSuccess: Амжилттай холбогдсон {0}!
   wwcConfigGUIGoogleTranslateButton: Google-ийн орчуулга
-  wwcsIsActiveTranslator: 'Идэвхтэй Орчуулагч байна: %i'
-  wwcConfigConversationPrefixInput: Одоогийн угтвар нь %i байна. шинийг бичнэ үү,
+  wwcsIsActiveTranslator: 'Идэвхтэй Орчуулагч байна: {0}'
+  wwcConfigConversationPrefixInput: Одоогийн угтвар нь {0} байна. шинийг бичнэ үү,
     эсвэл 0 бичнэ үү.
   wwcConfigGUIPreviousPageButton: өмнөх хуудас
   wwcConfigGUITranslatorCacheButton: Орчуулга Cache хязгаарыг өөрчлөх
@@ -124,59 +124,59 @@ Messages:
   wwcConfigConversationUpdateCheckerSuccess: Шинэчлэх шалгагч саатал амжилттай тогтоосон.
   wwcUnsupportedVersion: 'Та Bukkit нь дэмжигдээгүй хувилбарыг ажиллуулж байна, хийн
     хоолой, эсвэл баримт бичиг. Дэмждэг хувилбарууд:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: Глобал чат %i нь %o руу орчуулагдаж
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Глобал чат {0} нь {1} руу орчуулагдаж
     байна.
   wwcConfigGUITranslatorSettings: Орчуулагчийн тохиргоо
   wwcConfigConversationGoogleTranslateAPIKeyInput: Одоогийн API түлхүүр % би байна.
     оруулах уу Google Translate нь API түлхүүр, эсвэл төрөл 0 буцаж явах.
   wwcConfigConversationRateLimitInput: Орчуулгын өнөөгийн дэлхийн ханшийн хязгаар
-    %i секунд байна. Шинэ утгыг тохируулахын тулд 0-ээс их зүйлийг бичнэ үү, эсвэл
+    {0} секунд байна. Шинэ утгыг тохируулахын тулд 0-ээс их зүйлийг бичнэ үү, эсвэл
     хязгаарыг идэвхгүй болгохын тулд 0 бичнэ үү. 0-ээс бага зүйлийг бичнэ үү.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google-ийн амжилттай API гол
     багц Translate.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Амазоны нууц түлхүүр өөрчлөх
   wwcVersion: Дэлхий даяарWichat, хувилбар
-  wwcsAttemptedTranslations: 'Оролдсон Орчуулгууд: %i'
+  wwcsAttemptedTranslations: 'Оролдсон Орчуулгууд: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Амазоны нууц түлхүүр амжилттай
     тогтоосон.
   wwcConfigConversationWatsonAPIKeySuccess: Ватсон API гол амжилттай тогтоосон.
-  wwcRateLimit: Таны орчуулга үнэ хязгаарлагдмал байна. өөр нэг түр хүлээнэ үү %i
+  wwcRateLimit: Таны орчуулга үнэ хязгаарлагдмал байна. өөр нэг түр хүлээнэ үү {0}
     секунд.
-  wwcConfigCacheEnabled: Орчуулагч кэш идэвхжүүлж, %i нь хязгаар тогтоосон.
+  wwcConfigCacheEnabled: Орчуулагч кэш идэвхжүүлж, {0} нь хязгаар тогтоосон.
   wwctGUIExistingTranslationButton: Одоогийн орчуулга хуралдааныг дарж бичих
   wwcUserDataReloaded: Бүх хадгалсан хэрэглэгчийн өгөгдлийг ачаалагдсан.
   wwcConfigGUISendTranslationChatButton: Нэвтрэх дээр Идэвхтэй Орчуулагч руу чат сануулах
     илгээх
-  wwcsLastTranslationTime: 'Сүүлийн (Амжилттай) Орчуулгын цаг: %i'
+  wwcsLastTranslationTime: 'Сүүлийн (Амжилттай) Орчуулгын цаг: {0}'
   wwctbNotATranslator: Та бол идэвхитэй орчуулагч биш! Үүнийг /wwct-ээр тохируулсан
     эсэхээ шалгаарай.
-  wwcConfigConversationAmazonTranslateAccessKeyInput: Одоогийн хандалтын түлхүүр %i
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Одоогийн хандалтын түлхүүр {0}
     байна. оролтын Амазон нь хандалтын түлхүүр уу, эсвэл төрөл 0 буцах.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: Амазоны хандалтын түлхүүр
     амжилттай тогтоосон.
   wwcConfigBadUpdateDelay: Буруу Updater саатал config.yml заасан. 86400 секунд хүртэл
     анхдагч...
   wwctrlRateLimitOffSender: Таны ханшийн хязгаарыг унтраасан.
-  wwctrlRateLimitAlreadyOffTarget: '%i ханшийн хязгаар нь аль хэдийн тахир дутуу болсон
+  wwctrlRateLimitAlreadyOffTarget: '{0} ханшийн хязгаар нь аль хэдийн тахир дутуу болсон
     байна.'
   wwctrlPlayerNotFound: Тоглогч % би бас олж чадаагүй байна, эсвэл идэвхтэй орчуулагч
     биш юм.
-  wwctrlRateLimitSetSender: '%i секунд нь таны ханшийн хязгаарыг тохируулна.'
-  wwctrlRateLimitOffTarget: '%i ханшийн хязгаарыг унтраасан.'
-  wwctrlRateLimitSetTarget: '%i нь %o секунд ханшийн хязгаарыг тохируулна.'
+  wwctrlRateLimitSetSender: '{0} секунд нь таны ханшийн хязгаарыг тохируулна.'
+  wwctrlRateLimitOffTarget: '{0} ханшийн хязгаарыг унтраасан.'
+  wwctrlRateLimitSetTarget: '{0} нь {1} секунд ханшийн хязгаарыг тохируулна.'
   wwctrlNotATranslator: Та бол идэвхитэй орчуулагч биш! Үүнийг /wwct-ээр тохируулсан
     эсэхээ шалгаарай.
   wwctrlRateLimitAlreadyOffSender: Таны ханшийн хязгаар нь аль хэдийн идэвхгүй болсон.
   wwctGUIRateButton: Тодорхой ханш хязгаар
-  wwctGUIConversationRateLimit: Орчуулгын ханшийн хязгаар нь одоогийн %i секунд байна.
+  wwctGUIConversationRateLimit: Орчуулгын ханшийн хязгаар нь одоогийн {0} секунд байна.
     Шинэ утгыг тохируулахын тулд 0-ээс их зүйлийг бичнэ үү, эсвэл хязгаарыг идэвхгүй
     болгохын тулд 0 бичнэ үү. 0-ээс бага зүйлийг бичнэ үү.
   wwctGUITargetPlayerNull: зорилтот тоглогч серверээс салгасан.
   wwcConfigConversationSyncUserDataDelayInput: Хэрэглэгчийн өгөгдлийн синхрончлолын
-    одоогийн саатал нь %i секунд байна. 10-ээс их зүйлийг шинэ утгыг тохируулах эсвэл
+    одоогийн саатал нь {0} секунд байна. 10-ээс их зүйлийг шинэ утгыг тохируулах эсвэл
     10-аас бага зүйлийг буцааж өгнө үү.
   wwcConfigGUISyncUserDataButton: Хэрэглэгчийн мэдээлэл Sync саатал өөрчлөх
-  wwcConfigSyncDelayEnabled: Хэрэглэгчийн өгөгдлийн синхрон тутамд саатал нь %i секунд
+  wwcConfigSyncDelayEnabled: Хэрэглэгчийн өгөгдлийн синхрон тутамд саатал нь {0} секунд
   wwcConfigConversationSyncUserDataDelaySuccess: Хэрэглэгчийн өгөгдлийн синхрон саатал
     амжилттай тогтоосон.
   wwcConfigSyncDelayInvalid: Хэрэглэгчийн өгөгдлийн синхрон саатал config.yml-д заасан
@@ -184,24 +184,24 @@ Messages:
   wwcConfigCacheInvalid: Орчуулагч кэш хэмжээ хүчин төгөлдөр бус. 10 руу анхдагч...
   wwcInventoryErrorPlayer: Алдаа таны GUI нь илэрсэн. Бүртгэлийг консол руу илгээсэн
     байна.
-  wwcInventoryError: Алдаа хэрэглэгч %i нь GUI нь илэрсэн байна. хөгжүүлэгчид энэ
+  wwcInventoryError: Алдаа хэрэглэгч {0} нь GUI нь илэрсэн байна. хөгжүүлэгчид энэ
     асуудлыг тайлагнах уу.
-  wwctiOffTarget: Барааны орчуулга %i нь идэвхгүй.
+  wwctiOffTarget: Барааны орчуулга {0} нь идэвхгүй.
   wwctiOffSender: Барааны орчуулга идэвхгүй.
   wwcItemTranslateTitleStock: Анхдагч зүйл нь нэрийг орчуулах боломжгүй.
   wwctGUIItemButton: Түлхүүр зүйл Орчуулга
   wwcItemTranslateTitleDone: Орчуулсан зүйл нэр амжилттай.
   wwcGUITempItem: Дэлгэц зүйл
   wwcItemTranslateStart: Зорилтот зүйлийг орчуулах...
-  wwcBookTranslateTitleSuccess: 'Орчуулсан Номын гарчиг: %i'
+  wwcBookTranslateTitleSuccess: 'Орчуулсан Номын гарчиг: {0}'
   wwctiOnSender: Барааны орчуулга идэвхжүүлсэн. Үүнийг орчуулахын тулд таны гол гарт
     байгаа зүйл нь баруун товшино уу!
   wwcItemTranslateLoreStart: Зорилтот зүйлийн Lore орчуулах...
   wwcItemTranslateLoreDone: Орчуулсан зүйл lore амжилттай.
-  wwctiOnTarget: Барааны орчуулга %i идэвхжүүлсэн.
+  wwctiOnTarget: Барааны орчуулга {0} идэвхжүүлсэн.
   wwcInvalidTranslator: Буруу орчуулагч тохиргоо. Үүнийг өөрийн config.yml эсвэл /wwcc
     ашиглан энэ залгаасыг ашиглана уу.
-  wwcConfigGUIEachTranslatorSettings: '%i Тохиргоо'
+  wwcConfigGUIEachTranslatorSettings: '{0} Тохиргоо'
   wwcConfigGUIWatsonButton: Ватсон
   wwcServerReloadWarning: WorldWedeChat нь /reload-ийн хэрэглээг зөвшөөрдөггүй. болгоомжтой
     үргэлжлүүлнэ үү.
@@ -209,17 +209,17 @@ Messages:
     олж засварлагч биш бол үүнийг унтраах хэрэгтэй.
   wwcTranslatorErrorThresholdReached: Алдаа босго хүрсэн байна. Энэ залгаас нь одоо
     дахин ачаалах болно, бүх орчуулагчдыг идэвхгүй.
-  wwcConfigErrorLimitEnabled: Орчуулагч алдааны хязгаар %i гэж тохируулагдсан.
+  wwcConfigErrorLimitEnabled: Орчуулагч алдааны хязгаар {0} гэж тохируулагдсан.
   wwcTranslatorError: Таны орчуулгыг оролдох үед асуудал гарсан. Дахин оролдоно уу.
   wwcConfigErrorLimitInvalid: Буруу орчуулагч алдааны хязгаар config.yml тогтоосон.
     5 руу анхдагч...
   wwcTranslatorErrorThresholdReachedCheckLogs: Дэлгэрэнгүй мэдээллийг WorldWidDechat
     залгаас хавтсанд errorLog.txt шалгана уу.
   wwctInvalidInputLangCode: 'Оролтын хэлний код буруу байна! Хүчинтэй урт кодууд:
-    %o'
-  wwcsTitle: '%i Бичлэг'
+    {0}'
+  wwcsTitle: '{0} Бичлэг'
   wwctInvalidOutputLangCode: 'Буруу гаралт хэлний код өгсөн! Хүчинтэй урт кодууд:
-    %o'
+    {0}'
   wwctGUISourceTranslationSelected: Та энэ хэлийг сонгосон.
   wwcConfigGUIChatMessagesOverrideDeleteButton: үл ойшоох устгах
   wwcConfigConversationOverrideTextChange: Энэ үл ойшоох шинэ мессеж бичнэ үү, эсвэл
@@ -252,46 +252,46 @@ Messages:
   wwcConfigMessageCharLimitInvalid: config.yml-д заасан зурваст тутамд хүчингүй хязгаар.
     255 chars нь анхдагч...
   wwcConfigConversationCharacterLimitSuccess: Тэмдэгтийн хязгаар амжилттай тогтоосон.
-  wwcteOnTarget: Байгууллагын хөрвүүлэх %i идэвхжсэн.
-  wwcEntityTranslateDone: 'Орчуулсан аж ахуйн нэгжийн нэр: %i'
+  wwcteOnTarget: Байгууллагын хөрвүүлэх {0} идэвхжсэн.
+  wwcEntityTranslateDone: 'Орчуулсан аж ахуйн нэгжийн нэр: {0}'
   wwcEntityTranslateNoName: Аж ахуйн нэгж нь өөрчлөн нэртэй байх албагүй.
   wwcConfigConversationErrorLimitInput: Орчуулагч бүрийн одоогийн алдааны хязгаар
-    %i байна. 0-ээс их зүйлийг бичиж, шинэ утгыг тохируулахын тулд эсвэл 0-ээс бага
+    {0} байна. 0-ээс их зүйлийг бичиж, шинэ утгыг тохируулахын тулд эсвэл 0-ээс бага
     эсвэл тэнцүү зүйлийг бичих хэрэгтэй.
   wwcConfigGUIGlobalRateLimitButton: Глобал ханшийн хязгаарыг өөрчлөх
   wwcteOnSender: Аж ахуйн нэгжийн орчуулга идэвхжсэн. Нэрээ орчуулахын тулд аж ахуйн
     нэгж дээр хулганы баруун товчийг дараад
   wwcConfigGUIResponseLimitButton: Орчуулагч хариу Хугацаа өөрчлөх
-  wwcConfigMessageCharLimitEnabled: Зурвас бүрт тэмдэгтийн хязгаар нь %i тэмдэгтүүд.
-  wwcteOffTarget: Аж ахуйн нэгжийн орчуулга %i нь идэвхгүй.
-  wwcCharLimit: Таны мессеж хэтэрхий урт байна! Таны мессеж урт %i тэмдэгтээс бага
+  wwcConfigMessageCharLimitEnabled: Зурвас бүрт тэмдэгтийн хязгаар нь {0} тэмдэгтүүд.
+  wwcteOffTarget: Аж ахуйн нэгжийн орчуулга {0} нь идэвхгүй.
+  wwcCharLimit: Таны мессеж хэтэрхий урт байна! Таны мессеж урт {0} тэмдэгтээс бага
     байгаа эсэхийг шалгана уу.
   wwcConfigConversationCharacterLimitInput: Мессеж дэх одоогийн тэмдэгтийн хязгаар
-    нь %i тэмдэгтүүд байна. 0-ээс их зүйлийг шинэ утгыг тохируулахын тулд эсвэл 0-ээс
+    нь {0} тэмдэгтүүд байна. 0-ээс их зүйлийг шинэ утгыг тохируулахын тулд эсвэл 0-ээс
     бага эсвэл тэнцүү зүйлийг бичиж өгнө үү.
   wwcteOffSender: Аж ахуйн нэгж орчуулга тахир дутуу.
   wwctGUIEntityButton: Түлхүүр аж ахуйн нэгжийн орчуулга
   wwctrlRateLimitBadInt: Таны ханшийн хязгаар нь хүчин төгөлдөр бүхэл тоо биш юм.
-  wwcTranslatorErrorConsole: Хэрэглэгч %i тэдний орчуулгыг оролдож байх үед асуудал
+  wwcTranslatorErrorConsole: Хэрэглэгч {0} тэдний орчуулгыг оролдож байх үед асуудал
     гарсан. Илүү дэлгэрэнгүйг errorLog.txt шалгана уу.
   wwctGUIChatButton: Toggle чат орчуулга
   wwcrBegin: Дэлхийцийг дахин ачаалж байна...
-  wwctTranslationStoppedOtherPlayer: '%i нь орчуулга сесс зогссон байна.'
+  wwctTranslationStoppedOtherPlayer: '{0} нь орчуулга сесс зогссон байна.'
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобал чат орчуулагдаж
-    байгаа боловч тад %i -аас %o руу идэвхтэй орчуулгын сесс байна.
+    байгаа боловч тад {0} -аас {1} руу идэвхтэй орчуулгын сесс байна.
   wwctCannotTranslateConsole: Та консол нь орчуулга сесс эхлүүлж чадахгүй байна!
-  wwctLangToLangStart: '%i -аас %o руу шинэ орчуулгын сессийг эхлүүлэх.'
-  wwcOnJoinTranslationNotificationSourceLang: Танд %i -ээс %o гэсэн идэвхтэй орчуулгын
+  wwctLangToLangStart: '{0} -аас {1} руу шинэ орчуулгын сессийг эхлүүлэх.'
+  wwcOnJoinTranslationNotificationSourceLang: Танд {0} -ээс {1} гэсэн идэвхтэй орчуулгын
     сесс байна.
-  wwctAutoTranslateStartOtherPlayer: '%i - %o руу шинэ орчуулгын сесс эхлүүлэх.'
+  wwctAutoTranslateStartOtherPlayer: '{0} - {1} руу шинэ орчуулгын сесс эхлүүлэх.'
   wwctTranslationStopped: Таны орчуулгын сесс зогссон байна.
-  wwctLangToLangStartOtherPlayer: '%o гэсэн шинэ орчуулгын сессийг эхлүүлэх нь %i
-    to %e.'
-  wwctAutoTranslateStart: Шинэ орчуулгын сесс эхлүүлэх %o.
-  wwcOnJoinTranslationNotificationNoSourceLang: Тан %o гэсэн идэвхтэй орчуулгын сесс
+  wwctLangToLangStartOtherPlayer: '{0} гэсэн шинэ орчуулгын сессийг эхлүүлэх нь {1}
+    to {0}.'
+  wwctAutoTranslateStart: Шинэ орчуулгын сесс эхлүүлэх {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Тан {0} гэсэн идэвхтэй орчуулгын сесс
     байна.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Глобал чат орчуулагдаж
-    байгаа боловч тад %o руу идэвхтэй орчуулгын сесс байна.
+    байгаа боловч тад {0} руу идэвхтэй орчуулгын сесс байна.
   wwcConfigGUIChangesNotSaved: /wwcc дахь улаан саад тотгорыг дарах хүртэл таны өөрчлөлтүүд
     хүчин төгөлдөр болохгүй.
   wwctciOffSender: Ирж буй чат орчуулга хөгжлийн бэрхшээлтэй.
@@ -302,24 +302,24 @@ Messages:
   wwctciOnSender: Ирж буй чат орчуулга идэвхжсэн. Та хүлээн авсан аливаа зүйл орчуулагдах
     болно!
   wwctGUIChatMenu: Toggle чат орчуулгын цэс
-  wwctcoOnTarget: Гарч байгаа чат орчуулга идэвхжсэн %i.
-  wwctcoOffTarget: Гарч байгаа чат орчуулга идэвхгүй нь %i.
+  wwctcoOnTarget: Гарч байгаа чат орчуулга идэвхжсэн {0}.
+  wwctcoOffTarget: Гарч байгаа чат орчуулга идэвхгүй нь {0}.
   wwctGUIChatOutgoingButton: Toggle гарч буй чат орчуулга
-  wwctciOnTarget: Ирж буй чат орчуулга идэвхжсэн %i.
-  wwctciOffTarget: Ирж буй чат орчуулга идэвхгүй нь %i.
+  wwctciOnTarget: Ирж буй чат орчуулга идэвхжсэн {0}.
+  wwctciOffTarget: Ирж буй чат орчуулга идэвхгүй нь {0}.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: Hover текст амжилттай toggled
     зэрэг орчуулгын хавсаргасан эх ирж байгаа чат.
   wwcConfigGUISendIncomingHoverTextChatButton: Hover текст гэж эх Ирж буй Мессеж
-  wwctGUIExistingChatOutgoingEnabled: 'Гарч байгаа чат Орчуулга идэвхжсэн: %i'
-  wwctGUIExistingTranslationInput: 'Оролтын хэл: %i'
-  wwctGUIExistingChatIncomingEnabled: 'Ирж буй чат Орчуулга идэвхжсэн: %i'
-  wwctGUIExistingTranslationOutput: 'Гаралтын Хэл: %i'
-  wwcTranslatorAttempt: config.yml орчуулагчтай холбогдохыг оролдох... ( %i/ %o оролдох
+  wwctGUIExistingChatOutgoingEnabled: 'Гарч байгаа чат Орчуулга идэвхжсэн: {0}'
+  wwctGUIExistingTranslationInput: 'Оролтын хэл: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Ирж буй чат Орчуулга идэвхжсэн: {0}'
+  wwctGUIExistingTranslationOutput: 'Гаралтын Хэл: {0}'
+  wwcTranslatorAttempt: config.yml орчуулагчтай холбогдохыг оролдох... ( {0}/ {1} оролдох
     %)
   wwcTimeoutExceptionConsole: Тоглогчийн % Би тэдний хамгийн сүүлийн хүсэлт хугацаа
     байсан. Энэ алдаа нь үхлийн аюултай биш юм, гэхдээ WorldwideChat энэ нь юу хэвээр
     байгаа бол дахин ачаалах хэрэгтэй.
-  wwcGUIPageNumber: 'Хуудасны дугаар: %i'
+  wwcGUIPageNumber: 'Хуудасны дугаар: {0}'
   wwcConfigYAMLFallback: YAML руу буцаж унах...
   wwcConfigGUIToggleSQLButton: SQL Toggle
   wwcConfigConversationToggleSQLSuccess: SQL амжилттай toggled. Өөрчлөлтийг хүчин
@@ -340,22 +340,22 @@ Messages:
   wwcConfigGUISQLPortButton: SQL Порт өөрчлөлт
   wwcConfigGUISQLOptionalArgsButton: SQL Нэмэлт нэмэлт өгөгдлүүдийг өөрчлөх
   wwcConfigConversationToggleSQLSSLSuccess: SQL нь SSL амжилттай toggled.
-  wwcConfigConversationSQLPortInput: Одоогийн порт нь %i байна. 0-ээс өөр ямар нэг
+  wwcConfigConversationSQLPortInput: Одоогийн порт нь {0} байна. 0-ээс өөр ямар нэг
     зүйлийг бичнэ үү шинэ порт тохируулахын тулд эсвэл 0-г бичнэ үү.
   wwcConfigGUISQLPasswordButton: SQL Нууц үг өөрчлөх
   wwcConfigConversationSQLHostnameSuccess: Амжилттай SQL хостын нэрийг өөрчилсөн.
-  wwcConfigConversationSQLHostnameInput: Одоогийн хостын нэр нь %i байна. 0-ээс өөр
+  wwcConfigConversationSQLHostnameInput: Одоогийн хостын нэр нь {0} байна. 0-ээс өөр
     зүйлийг бичнэ үү шинэ хостын нэр тохируулахын тулд эсвэл 0-г бичнэ үү.
   wwcConfigGUISQLHostnameButton: SQL хостын нэрийг өөрчлөх
   wwcConfigConversationSQLOptionalArgsSuccess: Амжилттай нэмэлт SQL нэмэлт өгөгдлүүдийг
     өөрчилсөн.
   wwcConfigConversationSQLPasswordSuccess: Амжилттай SQL нууц үгээ өөрчилсөн.
-  wwcConfigConversationSQLPasswordInput: Одоогийн нууц үг нь %i байна. 0-ээс бусад
+  wwcConfigConversationSQLPasswordInput: Одоогийн нууц үг нь {0} байна. 0-ээс бусад
     зүйлийг бичнэ үү шинэ нууц үг тохируулахын тулд эсвэл 0-ийг бичээд буцаж очихыг
     бичнэ үү.
   wwcConfigGUIToggleSQLSSLButton: SQL SSL түлхүүр
   wwcConfigConversationSQLUsernameSuccess: Амжилттай SQL хэрэглэгчийн нэрийг өөрчилсөн.
-  wwcConfigConversationSQLUsernameInput: Одоогийн хэрэглэгчийн нэр нь %i байна. 0-ээс
+  wwcConfigConversationSQLUsernameInput: Одоогийн хэрэглэгчийн нэр нь {0} байна. 0-ээс
     өөр ямар нэг зүйлийг бичнэ үү шинэ хэрэглэгчийн нэр тохируулахын тулд эсвэл 0-г
     бичнэ үү.
   wwcConfigConversationSQLPortSuccess: Амжилттай SQL портыг өөрчилсөн.
@@ -363,16 +363,16 @@ Messages:
   wwcConfigConversationSQLOptionalArgsCleared: Нэмэлт нэмэлт өгөгдлүүд нь амжилттай
     цэвэрлэсэн.
   wwcConfigConversationSQLOptionalArgsInput: 'Одоогийн нэмэлт SQL аргументууд нь:
-    %i байна. таслалаар тусгаарлагдсан аргументуудыг бичнэ (key=value, key2=value2),
+    {0} байна. таслалаар тусгаарлагдсан аргументуудыг бичнэ (key=value, key2=value2),
     эсвэл одоогийн аргануудыг арчихын тулд тодорхой бичнэ үү, эсвэл 0-г бичнэ үү.'
-  wwcConfigConversationSQLDatabaseNameInput: Одоогийн өгөгдлийн сангийн нэр нь %i
+  wwcConfigConversationSQLDatabaseNameInput: Одоогийн өгөгдлийн сангийн нэр нь {0}
     байна. 0-ээс өөр ямар нэг зүйлийг бичнэ үү өгөгдлийн сангийн шинэ нэрийг тохируулах
     эсвэл 0-ийг бичээд буцаж яваарай.
   wwcConfigGUISQLDatabaseNameButton: SQL мэдээллийн санг өөрчлөх
   wwcConfigConversationSQLDatabaseNameSuccess: Амжилттай SQL мэдээллийн сангийн нэрийг
     өөрчилсөн.
   wwcConfigConversationFatalAsyncAbort: Бүх async ажлуудыг зогсоох одоогийн хугацаа
-    нь %i секунд байна. 7-аас дээш зүйлийг бичнэ үү шинэ цагийг тохируулах, эсвэл
+    нь {0} секунд байна. 7-аас дээш зүйлийг бичнэ үү шинэ цагийг тохируулах, эсвэл
     доор нь ямар нэгэн зүйл буцааж яваарай.
   wwcConfigConversationFatalAsyncSuccess: Async ажил хугацаа амжилттай тогтоосон.
   wwcConfigGUIFatalAsyncAbortButton: Async Даалгавар Хугацааны өөрчлөлт
@@ -384,7 +384,7 @@ Messages:
   libreHttp403: Алга болсон Libre API Түлхүүр Translate, эсвэл та серверээс хориглосон
     байна!
   wwcConfigConversationLibreURLSuccess: Чөлөөт URL амжилттай тогтоосон.
-  wwcConfigConversationLibreTranslateApiKeyInput: Одоогийн API түлхүүр нь %i байна.
+  wwcConfigConversationLibreTranslateApiKeyInput: Одоогийн API түлхүүр нь {0} байна.
     оруулах уу Libre нь API түлхүүр, эсвэл төрөл 0 буцах.
   wwcConfigGUILibreTranslateButton: Үнэгүй орчуулах
   libreHttp429: улмаас серверээс түвшин хязгаар ямар ч итгэл.
@@ -392,37 +392,37 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: Амжилттай Translate Libre түлхүүр.
     Өөрчлөлтийг хүчин төгөлдөр болгохын тулд Дуут хувилбар.
   wwcConfigConversationLibreTranslateApiKeySuccess: Чөлөөт API түлхүүр амжилттай тогтоосон.
-  wwcConfigConversationLibreURLInput: Одоогийн URL нь %i байна. оруулах уу Libre нь
+  wwcConfigConversationLibreURLInput: Одоогийн URL нь {0} байна. оруулах уу Libre нь
     URL, эсвэл төрөл 0 буцах.
-  libreHttpUnknown: 'Үл мэдэгдэх HTTP алдаа: %i'
+  libreHttpUnknown: 'Үл мэдэгдэх HTTP алдаа: {0}'
   wwcConfigGUILibreTranslateURLButton: Чөлөөт URL Translate өөрчлөх
-  wwcConfigConnectionFail: '%i руу холбогдож чадсангүй.'
+  wwcConfigConnectionFail: '{0} руу холбогдож чадсангүй.'
   wwcConfigGUIMongoSettings: MongoDB тохиргоо
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB өгөгдлийн сангийн нэрийг
     амжилттай өөрчилсөн.
   wwcConfigGUIMongoHostnameButton: Өөрчлөлт MongoDB Хостын нэр
-  wwcConfigConversationMongoPasswordInput: Одоогийн нууц үг нь %i байна. 0-ээс өөр
+  wwcConfigConversationMongoPasswordInput: Одоогийн нууц үг нь {0} байна. 0-ээс өөр
     ямар нэгэн зүйлийг бичээд шинэ нууц үг тохируулахын тулд эсвэл 0 гэж бичээд буцааж
     оруулна уу.
-  wwcConfigConversationMongoPortInput: Одоогийн порт нь %i байна. 0-ээс өөр ямар нэгэн
+  wwcConfigConversationMongoPortInput: Одоогийн порт нь {0} байна. 0-ээс өөр ямар нэгэн
     зүйлийг шинэ порт тохируулахын тулд бичнэ үү эсвэл буцаж очихын тулд 0 гэж бичнэ
     үү.
   wwcConfigConversationToggleMongoSuccess: MongoDB амжилттай шилжүүлэв. Өөрчлөлтийг
     хүчин төгөлдөр болгохын тулд Дуут хувилбар.
-  wwcConfigConversationMongoHostnameInput: Одоогийн хостын нэр нь %i байна. 0-ээс
+  wwcConfigConversationMongoHostnameInput: Одоогийн хостын нэр нь {0} байна. 0-ээс
     өөр ямар нэг зүйлийг бичээд шинэ хостын нэрийг тохируулахын тулд эсвэл 0 гэж бичээд
     буцаана.
   wwcConfigConversationMongoHostnameSuccess: MongoDB хостын нэрийг амжилттай өөрчилсөн.
   wwcConfigGUIMongoMenuButton: Өөрчлөлт MongoDB Тохиргоо
   wwcConfigGUIToggleMongoButton: Toggle MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Одоогийн өгөгдлийн сангийн нэр нь %i
+  wwcConfigConversationMongoDatabaseNameInput: Одоогийн өгөгдлийн сангийн нэр нь {0}
     байна. 0-ээс өөр ямар нэгэн зүйлийг шинэ өгөгдлийн сангийн нэрийг тохируулахын
     тулд бичнэ үү эсвэл 0 гэж бичнэ үү.
   wwcConfigConversationMongoOptionalArgsInput: 'Одоогийн нэмэлт MongoDB аргументууд
-    нь: %i. (key=value, key2=value2) таслалаар тусгаарлагдсан аргументуудыг бичнэ
+    нь: {0}. (key=value, key2=value2) таслалаар тусгаарлагдсан аргументуудыг бичнэ
     эсвэл одоогийн аргуудыг арчихын тулд тодорхой бичнэ эсвэл 0 гэж бичнэ.'
   wwcConfigGUIMongoDatabaseNameButton: MongoDB мэдээллийн санг өөрчлөх
-  wwcConfigConversationMongoUsernameInput: Одоогийн хэрэглэгчийн нэр нь %i байна.
+  wwcConfigConversationMongoUsernameInput: Одоогийн хэрэглэгчийн нэр нь {0} байна.
     0-ээс өөр ямар нэг зүйлийг бичээд шинэ хэрэглэгчийн нэрийг тохируулахын тулд эсвэл
     0 гэж бичээд буцааж өгнө.
   wwcConfigGUIMongoOptionalArgsButton: MongoDB Нэмэлт нэмэлт өгөгдлүүдийг өөрчлөх
@@ -447,7 +447,7 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Өөрчлөлт DeepL API түлхүүр Translate
   wwcConfigGUIToggleDeepLTranslateButton: DeepL орчуулах түлхүүр
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API түлхүүр амжилттай тогтоосон.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Одоогийн API түлхүүр нь %i байна.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Одоогийн API түлхүүр нь {0} байна.
     оруулах уу DeepL нь API түлхүүр, эсвэл төрөл 0 буцах.
   wwcConfigErrorsToIgnoreSuccess: Амжилттай хэрэгсэхгүй орчуулагч алдаа бүртгэгдсэн.
   wwcConfigErrorsToIgnoreInvalid: Буруу орчуулагч алдаа config.yml тогтоосон хэрэгсэхгүй
@@ -457,24 +457,24 @@ Messages:
     алдааг өөрчилсөн.
   wwcConfigGUIIgnoreErrorsButton: Үл тоомсорлохын тулд алдааг өөрчлөх
   wwcConfigConversationIgnoreErrorsInput: 'Орчуулагч алдаа үл тоомсорлох хэллэгийг
-    одоогийн жагсаалт нь: %i байна. таслалаар тусгаарлагдсан аргумент бичнэ (key=value,
+    одоогийн жагсаалт нь: {0} байна. таслалаар тусгаарлагдсан аргумент бичнэ (key=value,
     key2=value2), эсвэл одоогийн args арчина тодорхой бичнэ, эсвэл төрөл 0 буцаж явах.
     Үүнээс гадна, бичин “*” залгаас ямар ч орчуулагч алдааг шалгаж байх нь хүргэнэ.'
   wwcConfigConversationIgnoreErrorsCleared: Орчуулагч алдаа амжилттай цэвэрлэгдэж
     хэллэгийг үл тоомсорлох.
 
-  wwcsActiveTransPrevRate: 'Идэвхтэй Орчуулагч Өмнөх Rate хязгаар хугацаа: %i'
-  wwcsActiveTransSaved: 'Идэвхтэй Орчуулагч Дискнд Хадгалсан: %i'
-  wwcsActiveTransIncoming: 'Идэвхтэй Орчуулагч Орчуулах Ирж Чат: %i'
-  wwcsActiveTransOutLang: 'Идэвхтэй Орчуулагч Гаралтын Хэл: %i'
-  wwcsActiveTransInLang: 'Идэвхтэй Орчуулагч Оролтын хэл: %i'
-  wwcsActiveTransBook: 'Идэвхтэй Орчуулагч Орчуулагч Ном: %i'
-  wwcsActiveTransSign: 'Идэвхтэй Орчуулагч Орчуулах Дансаа ашиглах: %i'
+  wwcsActiveTransPrevRate: 'Идэвхтэй Орчуулагч Өмнөх Rate хязгаар хугацаа: {0}'
+  wwcsActiveTransSaved: 'Идэвхтэй Орчуулагч Дискнд Хадгалсан: {0}'
+  wwcsActiveTransIncoming: 'Идэвхтэй Орчуулагч Орчуулах Ирж Чат: {0}'
+  wwcsActiveTransOutLang: 'Идэвхтэй Орчуулагч Гаралтын Хэл: {0}'
+  wwcsActiveTransInLang: 'Идэвхтэй Орчуулагч Оролтын хэл: {0}'
+  wwcsActiveTransBook: 'Идэвхтэй Орчуулагч Орчуулагч Ном: {0}'
+  wwcsActiveTransSign: 'Идэвхтэй Орчуулагч Орчуулах Дансаа ашиглах: {0}'
   wwcsActiveTransUUID: 'Идэвхтэй Орчуулагч UUID: % би'
-  wwcsActiveTransRateLimit: 'Идэвхтэй Орчуулагч Rate хязгаар: %i'
+  wwcsActiveTransRateLimit: 'Идэвхтэй Орчуулагч Rate хязгаар: {0}'
   wwcsActiveTransColorWarning: 'Идэвхтэй Орчуулагч Өнгө Анхааруулга хүлээн авсан:
-    %i'
-  wwcsActiveTransOutgoing: 'Идэвхтэй Орчуулагч Орчуулах Гарч байгаа Чат: %i'
-  wwcsActiveTransItem: 'Идэвхтэй Орчуулагч Орчуулагч зүйл: %i'
-  wwcsActiveTransEntity: 'Идэвхтэй Орчуулагч Орчуулагч Орчуулагч: %i'
+    {0}'
+  wwcsActiveTransOutgoing: 'Идэвхтэй Орчуулагч Орчуулах Гарч байгаа Чат: {0}'
+  wwcsActiveTransItem: 'Идэвхтэй Орчуулагч Орчуулагч зүйл: {0}'
+  wwcsActiveTransEntity: 'Идэвхтэй Орчуулагч Орчуулагч Орчуулагч: {0}'
 

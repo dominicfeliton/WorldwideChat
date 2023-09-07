@@ -1,63 +1,63 @@
 Messages:
-  wwcgAutoTranslateStart: Сега превежда глобален чат на %o.
+  wwcgAutoTranslateStart: Сега превежда глобален чат на {0}.
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: Глобалният чат се превежда на
-    %o.
+    {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Промяна на Amazon ключ за
   wwcrFail: Неуспешно зареждане на WorldwideChat.
   wwcConfigGUIUpdateCheckerButton: Промяна на проверка за забавяне на актуализациите
   wwcUpdaterFailedGeneric: Не можете да проверите за актуализации на WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Текущото забавяне на проверката за актуализиране
-    е %i секунди. Въведете нещо по-голямо от 10, за да зададете нова стойност, или
+    е {0} секунди. Въведете нещо по-голямо от 10, за да зададете нова стойност, или
     нещо по-малко от 10, за да се върнете.
   wwctGUIMainMenuGlobal: Глобално меню за преводи
   wwcConfigConversationPluginUpdateChatSuccess: Plugin актуализация чат напомняне
     превключи успешно.
-  wwctbOnTarget: Преводът на книги е разрешен за %i.
-  wwcsNotATranslator: Все още няма налични записи за %i.
+  wwctbOnTarget: Преводът на книги е разрешен за {0}.
+  wwcsNotATranslator: Все още няма налични записи за {0}.
   wwcConfigGUIbStatsButton: Превключване на bStats
   wwctGUINewTranslationSource: Избор на изходен език
-  wwcConfigConnectionFailed: Неуспешно свързване към %o. Уверете се, че вашите идентификационни
+  wwcConfigConnectionFailed: Неуспешно свързване към {0}. Уверете се, че вашите идентификационни
     данни и защитната стена са конфигурирани правилно!
   wwcConfigEnabledbStats: Активирани bStats.
-  wwctGUIMainMenuPlayer: Меню за превод на %i
+  wwctGUIMainMenuPlayer: Меню за превод на {0}
   wwctGUIBookButton: Превключване на превод на книги
-  wwcLangDetected: Открит език %o.
+  wwcLangDetected: Открит език {0}.
   wwcBookTranslateStart: Превеждане на учебника...
   wwcConfigDisabledbStats: БСТАТС за инвалиди.
   wwctsOffSender: Преводът е изключен.
   wwcUpdaterParserFailed: Неуспешно анализиране на данни за актуализация от GitHub.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: Настоящият таен ключ е %i. Моля,
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Настоящият таен ключ е {0}. Моля,
     въведете таен ключ за Amazon или въведете 0, за да се върнете.
   wwctbOffSender: Преводът на книги забранен.
   wwcConfigGUIAmazonTranslateButton: Амазонка превод
   wwcConfigConversationLangSuccess: Езикът на приставката се промени успешно.
-  wwcsSuccessfulTranslations: 'Успешни преводи: %i'
-  wwcConfigConversationTranslationCacheInput: Текущият кеш лимит за превод е %i фрази.
+  wwcsSuccessfulTranslations: 'Успешни преводи: {0}'
+  wwcConfigConversationTranslationCacheInput: Текущият кеш лимит за превод е {0} фрази.
     Въведете нещо по-голямо от 0, за да зададете нова стойност, или въведете 0, за
     да забраните кеша за превод. Напиши нещо по-малко от 0, за да се върнеш.
-  wwctbOffTarget: Преводът на книги е забранен за %i.
+  wwctbOffTarget: Преводът на книги е забранен за {0}.
   wwcConfigGUIGeneralSettings: Обща конфигурация
   wwcInvalidLang: Невалиден език във вашия config.yml. Противоизпълнение на един...
   wwcConfigConversationAmazonTranslateRegionSuccess: Амазонският регион е поставен
     успешно.
-  wwcConfigRateLimitEnabled: Глобалният лимит е активиран и зададен на %i секунди.
+  wwcConfigRateLimitEnabled: Глобалният лимит е активиран и зададен на {0} секунди.
   wwcBadPerms: Нямате необходимите разрешения за изпълнение на тази команда!
   wwcConfigGUILangButton: Промяна на езика на приставката
   wwctGUISignButton: Превключване на превод на знаци
   wwcUpdaterOutOfDate: WorldwideChat е остарял. Моля, актуализирайте до последната
-    версия, %i.
+    версия, {0}.
   wwcConfigGUINextPageButton: Следваща страница
   wwcConfigInvalidTranslatorSettings: Невалидни настройки на преводача! Моля, включете
     само един преводач във вашия config.yml.
   wwcConfigGUIQuitButton: Изход и записване на промените
   wwctPlayerNotFound: Играч % Не съм намерил.
   wwcConfigGUIAmazonTranslateRegionButton: Промяна на Амазон
-  wwcConfigConversationLangInput: 'Текущият език на приставката е %i. Моля, въведете
-    валиден език или въведете 0, за да отмените. Валидни кодове на езика: %o'
+  wwcConfigConversationLangInput: 'Текущият език на приставката е {0}. Моля, въведете
+    валиден език или въведете 0, за да отмените. Валидни кодове на езика: {0}'
   wwcConfigConversationLangInvalid: Невалиден езиков код!
   wwcConfigGUIWatsonAPIKeyButton: Промяна на API ключа на Уотсън
-  wwcEnabled: Разрешена версия на WorldwideChat %i.
-  wwcgLangToLangStart: Сега превежда глобален чат от %i към %o.
+  wwcEnabled: Разрешена версия на WorldwideChat {0}.
+  wwcgLangToLangStart: Сега превежда глобален чат от {0} към {1}.
   wwctbOnSender: Преводът на книги е разрешен Щракнете с десния бутон, докато държите
     книга, за да я преведете!
   wwcListenersInitialized: Инициализирани слушатели.
@@ -65,11 +65,11 @@ Messages:
     приставките
   wwcConfigConversationSendTranslationChatSuccess: Активно напомняне за чат на преводача
     превключи успешно.
-  wwctsOffTarget: Преводът е забранен за %i.
+  wwctsOffTarget: Преводът е забранен за {0}.
   wwcUpdaterConnectionFailed: Не може да се провери за най-новите актуализации на
     Github.
   watsonNotFoundExceptionNotification: Не можете да преведете вашия вход по-нататък.
-  wwcConfigConversationWatsonAPIKeyInput: Текущият API ключ е %i. Моля, въведете API
+  wwcConfigConversationWatsonAPIKeyInput: Текущият API ключ е {0}. Моля, въведете API
     ключ за Уотсън или въведете 0 за връщане.
   wwctGUIStopButton: Спиране на превода
   wwcgTranslationStopped: Глобалният чат превод е спрян.
@@ -79,9 +79,9 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Промяна на API ключа за превод на Google
   wwcSignDeletedOrTooLong: 'Знакът за целта е бил изтрит или преводът е бил твърде
     дълъг. Превод:'
-  wwctsOnTarget: Подписване на превода е разрешен за %i.
+  wwctsOnTarget: Подписване на превода е разрешен за {0}.
   wwcConfigCacheDisabled: Кеш на преводача забранен.
-  wwcConfigConversationWatsonURLInput: Настоящият URL адрес е %i. Моля, въведете URL
+  wwcConfigConversationWatsonURLInput: Настоящият URL адрес е {0}. Моля, въведете URL
     адрес на услугата за Уотсън или въведете 0, за да се върнете.
   wwcBookDone: Книгата е преведена успешно.
   wwctsOnSender: Разрешено е преводът. Щракнете с десния бутон върху знак, за да го
@@ -91,7 +91,7 @@ Messages:
   wwctGUITranslationButton: Започване на превода
   wwctGUIAutoDetectButton: Автоматично откриване на езика на източника
   wwcUpdaterUpToDate: WorldwideChat е актуален!
-  wwcConfigConversationAmazonTranslateRegionInput: Настоящият регион е %i. Моля, въведете
+  wwcConfigConversationAmazonTranslateRegionInput: Настоящият регион е {0}. Моля, въведете
     регион за Amazon или въведете 0, за да се върнете.
   wwcNoConsole: Тази команда може да бъде управлявана само от играч.
   wwcInitializationFail: Не успя да инициализира WorldwideChat.
@@ -101,17 +101,17 @@ Messages:
     версия.
   wwcConfigConversationRateLimitSuccess: Лимитът е зададен успешно.
   wwcConfigConversationWatsonURLSuccess: Уотсън URL зададен успешно.
-  wwctbPlayerNotFound: Играчът %i или не е намерен, или не е активен преводач.
+  wwctbPlayerNotFound: Играчът {0} или не е намерен, или не е активен преводач.
   wwcConfigConversationTranslationCacheSuccess: Ограничението на кеша за превод зададено
     успешно.
   wwctInvalidArgs: Невалидни аргументи са предоставени!
   wwcConfigGUIPrefixButton: Промяна на представката на приставката
   wwctSameLangError: Не можете да превеждате на един и същ език!
   wwctGUINewTranslationTarget: Избор на целеви език
-  wwcConfigConnectionSuccess: Успешно свързан към %o!
+  wwcConfigConnectionSuccess: Успешно свързан към {0}!
   wwcConfigGUIGoogleTranslateButton: Превод на Google
-  wwcsIsActiveTranslator: 'Активен преводач: %i'
-  wwcConfigConversationPrefixInput: Текущият префикс е %i. Моля, въведете нов или
+  wwcsIsActiveTranslator: 'Активен преводач: {0}'
+  wwcConfigConversationPrefixInput: Текущият префикс е {0}. Моля, въведете нов или
     въведете 0, за да се върнете.
   wwcConfigGUIPreviousPageButton: Предишна страница
   wwcConfigGUITranslatorCacheButton: Промяна на кеша за превод
@@ -129,79 +129,79 @@ Messages:
   wwcUnsupportedVersion: 'Работите с неподдържана версия на Bukkit, Кран или Хартия.
     Поддържани версии:'
   wwcGlobalOnJoinTranslationNotificationSourceLang: Глобалният чат се превежда от
-    %i към %o.
+    {0} към {1}.
   wwcConfigGUITranslatorSettings: Конфигурация на преводач
-  wwcConfigConversationGoogleTranslateAPIKeyInput: Настоящият API ключ е %i. Моля,
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Настоящият API ключ е {0}. Моля,
     въведете API ключ за Google Translate или въведете 0, за да се върнете.
-  wwcConfigConversationRateLimitInput: Настоящият глобален лимит за превод е %i секунди.
+  wwcConfigConversationRateLimitInput: Настоящият глобален лимит за превод е {0} секунди.
     Въведете нещо по-голямо от 0, за да зададете нова стойност, или въведете 0, за
     да забраните ограничението. Напиши нещо по-малко от 0, за да се върнеш.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API ключ успешно.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Промяна на таен ключ на Ама
   wwcVersion: WorldwideChat, версия
-  wwcsAttemptedTranslations: 'Опит за превод: %i'
+  wwcsAttemptedTranslations: 'Опит за превод: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Амазонка таен ключ набор успешно.
   wwcConfigConversationWatsonAPIKeySuccess: Уотсън API ключ комплект успешно.
-  wwcRateLimit: Преводите ви са ограничени. Моля, изчакайте друг %i секунди.
-  wwcConfigCacheEnabled: Кеш на преводача е активиран и зададен на лимит от %i.
+  wwcRateLimit: Преводите ви са ограничени. Моля, изчакайте друг {0} секунди.
+  wwcConfigCacheEnabled: Кеш на преводача е активиран и зададен на лимит от {0}.
   wwctGUIExistingTranslationButton: Презаписване на текущата сесия за превод
   wwcUserDataReloaded: Заредени всички запазени потребителски данни.
   wwcConfigGUISendTranslationChatButton: Изпращане на напомняне за чат на активен
     преводач при влизане
-  wwcsLastTranslationTime: 'Последно (успешно) време за превод: %i'
+  wwcsLastTranslationTime: 'Последно (успешно) време за превод: {0}'
   wwctbNotATranslator: Ти не си активен преводач! Уверете се, че сте настроили това
     с /wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Настоящият ключ за достъп е
-    %i. Моля, въведете ключ за достъп за Amazon или въведете 0 за връщане.
+    {0}. Моля, въведете ключ за достъп за Amazon или въведете 0 за връщане.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: Клавишите за достъп Amazon
     успешно.
   wwcConfigBadUpdateDelay: Невалидно закъснение за обновяване, зададено в config.yml.
     Провал е 86400 секунди...
   wwctrlRateLimitOffSender: Изключих лимита на скоростта.
-  wwctrlRateLimitAlreadyOffTarget: Ограничението на скоростта на %i вече е деактивирано.
-  wwctrlPlayerNotFound: Играчът %i или не е намерен, или не е активен преводач.
-  wwctrlRateLimitSetSender: Задайте лимита на скоростта на %i секунди.
-  wwctrlRateLimitOffTarget: Изключено е ограничението на скоростта на %i.
-  wwctrlRateLimitSetTarget: Задайте ограничението на скоростта на %i на %o секунди.
+  wwctrlRateLimitAlreadyOffTarget: Ограничението на скоростта на {0} вече е деактивирано.
+  wwctrlPlayerNotFound: Играчът {0} или не е намерен, или не е активен преводач.
+  wwctrlRateLimitSetSender: Задайте лимита на скоростта на {0} секунди.
+  wwctrlRateLimitOffTarget: Изключено е ограничението на скоростта на {0}.
+  wwctrlRateLimitSetTarget: Задайте ограничението на скоростта на {0} на {1} секунди.
   wwctrlNotATranslator: Ти не си активен преводач! Уверете се, че сте настроили това
     с /wwct.
   wwctrlRateLimitAlreadyOffSender: Вашият лимит вече е деактивиран.
   wwctGUIRateButton: Задаване на лимит
-  wwctGUIConversationRateLimit: Ограничението на скоростта за превод е текущо %i секунди.
+  wwctGUIConversationRateLimit: Ограничението на скоростта за превод е текущо {0} секунди.
     Въведете нещо по-голямо от 0, за да зададете нова стойност, или въведете 0, за
     да забраните ограничението. Напиши нещо по-малко от 0, за да се върнеш.
   wwctGUITargetPlayerNull: Целевият играч е изключен от сървъра.
   wwcConfigConversationSyncUserDataDelayInput: Текущото забавяне за синхронизиране
-    на потребителските данни е %i секунди. Въведете нещо по-голямо от 10, за да зададете
+    на потребителските данни е {0} секунди. Въведете нещо по-голямо от 10, за да зададете
     нова стойност, или нещо по-малко от 10, за да се върнете.
   wwcConfigGUISyncUserDataButton: Промяна на закъснението за синхронизиране на потребителски
     данни
   wwcConfigSyncDelayEnabled: Закъснение за синхронизиране на данни от потребител до
-    %i секунди.
+    {0} секунди.
   wwcConfigConversationSyncUserDataDelaySuccess: Задаване на закъснение за синхронизиране
     на потребителски данни успешно.
   wwcConfigSyncDelayInvalid: Невалидно забавяне за синхронизиране на потребителски
     данни, зададено в config.yml. Пропускате 7200 секунди...
   wwcConfigCacheInvalid: Размер на кеша на преводача невалиден. Протичане на 10...
   wwcInventoryErrorPlayer: Грешка е открита с вашия GUI. В конзолата е изпратен дневник.
-  wwcInventoryError: Грешка при GUI на потребител %i. Моля, съобщете за този проблем
+  wwcInventoryError: Грешка при GUI на потребител {0}. Моля, съобщете за този проблем
     на разработчика.
-  wwctiOffTarget: Преводът на елемент е забранен за %i.
+  wwctiOffTarget: Преводът на елемент е забранен за {0}.
   wwctiOffSender: Преводът на елемента е забранен
   wwcItemTranslateTitleStock: Не може да се преведат имена на елементи по подразбиране.
   wwctGUIItemButton: Превключване на превода на артикули
   wwcItemTranslateTitleDone: Преведено заглавие на артикул успешно.
   wwcGUITempItem: Показване на артикул
   wwcItemTranslateStart: Превеждане на целеви елемент...
-  wwcBookTranslateTitleSuccess: 'Преведено заглавие на книгата: %i'
+  wwcBookTranslateTitleSuccess: 'Преведено заглавие на книгата: {0}'
   wwctiOnSender: Активиран превод на елемент. Щракнете с десния бутон с елемент в
     основната си ръка, за да го преведете!
   wwcItemTranslateLoreStart: Превеждане на легендата за целта...
   wwcItemTranslateLoreDone: Преведен елемент ерудиция успешно
-  wwctiOnTarget: Преводът на елемент е разрешен за %i.
+  wwctiOnTarget: Преводът на елемент е разрешен за {0}.
   wwcInvalidTranslator: Невалидни настройки на преводача. Моля, поправете това във
     вашия config.yml или с /wwcc, за да използвате този плъгин.
-  wwcConfigGUIEachTranslatorSettings: '%i Конфигурация'
+  wwcConfigGUIEachTranslatorSettings: '{0} Конфигурация'
   wwcConfigGUIWatsonButton: Уотсън
   wwcServerReloadWarning: WorldwideChat не одобрява използването на /презареди. Моля,
     продължете с повишено внимание.
@@ -209,17 +209,17 @@ Messages:
     разработчик или отстраняване на неизправности, трябва да изключите това.
   wwcTranslatorErrorThresholdReached: Достигнат е прага за грешка. Този плъгин сега
     ще се презареди и ще деактивира всички преводачи.
-  wwcConfigErrorLimitEnabled: Ограничението за грешка на преводача е зададено на %i.
+  wwcConfigErrorLimitEnabled: Ограничението за грешка на преводача е зададено на {0}.
   wwcTranslatorError: Появи се проблем при опит за превод. Моля те, опитай отново.
   wwcConfigErrorLimitInvalid: Невалиден преводач ограничение за грешка, зададено в
     config.yml. Протичане на 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: Моля, проверете errorLog.txt в папката
     WorldwideChat плъгин за повече информация.
   wwctInvalidInputLangCode: 'Предоставя се невалиден код на езика за въвеждане! Валидни
-    кодове на lang: %o'
-  wwcsTitle: Запис на %i
+    кодове на lang: {0}'
+  wwcsTitle: Запис на {0}
   wwctInvalidOutputLangCode: 'Невалиден код на изходния език е предоставен! Валидни
-    кодове на lang: %o'
+    кодове на lang: {0}'
   wwctGUISourceTranslationSelected: Вие сте избрали този език.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Изтриване на отмяна
   wwcConfigConversationOverrideTextChange: Моля, въведете ново съобщение за това отменяне
@@ -254,46 +254,46 @@ Messages:
     Противоизпълнение на 255 белега...
   wwcConfigConversationCharacterLimitSuccess: Ограничението на знаците е зададено
     успешно
-  wwcteOnTarget: Преводът на обект е разрешен за %i.
-  wwcEntityTranslateDone: 'Преведено име на обект: %i'
+  wwcteOnTarget: Преводът на обект е разрешен за {0}.
+  wwcEntityTranslateDone: 'Преведено име на обект: {0}'
   wwcEntityTranslateNoName: Субектът няма потребителско име.
   wwcConfigConversationErrorLimitInput: Текущото ограничение за грешка за всеки преводач
-    е %i. Въведете нещо по-голямо от 0, за да зададете нова стойност, или въведете
+    е {0}. Въведете нещо по-голямо от 0, за да зададете нова стойност, или въведете
     нещо по-малко или равно на 0, за да се върнете.
   wwcConfigGUIGlobalRateLimitButton: Промяна на глобалния лимит
   wwcteOnSender: Превод на обект е разрешен. Щракнете с десния бутон върху обект,
     за да преведете името му!
   wwcConfigGUIResponseLimitButton: Промяна на времето за отговор на преводача
   wwcConfigMessageCharLimitEnabled: Ограничение на знаците за всяко съобщение, зададено
-    на %i знаци.
-  wwcteOffTarget: Преводът на обект е забранен за %i.
+    на {0} знаци.
+  wwcteOffTarget: Преводът на обект е забранен за {0}.
   wwcCharLimit: Съобщението ти е твърде дълго! Моля, уверете се, че съобщението ви
-    е с дължина по-малко от %i знаци.
+    е с дължина по-малко от {0} знаци.
   wwcConfigConversationCharacterLimitInput: Текущото ограничение на символите за всяко
-    съобщение е %i знаци. Въведете нещо по-голямо от 0, за да зададете нова стойност,
+    съобщение е {0} знаци. Въведете нещо по-голямо от 0, за да зададете нова стойност,
     или въведете нещо по-малко от или равно на 0, за да се върнете.
   wwcteOffSender: Преводът на субект е
   wwctGUIEntityButton: Превключване на превод на обект
   wwctrlRateLimitBadInt: Вашият лимит на скоростта не е валидно цяло число.
-  wwcTranslatorErrorConsole: Проблем възникна при опит за превод на потребител %i.
+  wwcTranslatorErrorConsole: Проблем възникна при опит за превод на потребител {0}.
     Моля, проверете errorLog.txt за повече подробности.
   wwctGUIChatButton: Превключване на чат превод
   wwcrBegin: Презареждане на WorldwideChat...
-  wwctTranslationStoppedOtherPlayer: Сесията за превод за %i беше спряна.
+  wwctTranslationStoppedOtherPlayer: Сесията за превод за {0} беше спряна.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобалният чат се превежда,
-    но имате активна сесия за превод от %i до %o.
+    но имате активна сесия за превод от {0} до {1}.
   wwctCannotTranslateConsole: Не можете да започнете сесия за превод за конзола!
-  wwctLangToLangStart: Започване на нова сесия за превод от %i до %o.
-  wwcOnJoinTranslationNotificationSourceLang: Имате активна сесия за превод от %i
-    до %o.
-  wwctAutoTranslateStartOtherPlayer: Започване на нова сесия за превод за %i до %o.
+  wwctLangToLangStart: Започване на нова сесия за превод от {0} до {1}.
+  wwcOnJoinTranslationNotificationSourceLang: Имате активна сесия за превод от {0}
+    до {0}.
+  wwctAutoTranslateStartOtherPlayer: Започване на нова сесия за превод за {0} до {1}.
   wwctTranslationStopped: Преводаческата ви сесия беше спряна.
-  wwctLangToLangStartOtherPlayer: Започване на нова сесия за превод за %o от %i до
-    %e.
-  wwctAutoTranslateStart: Започване на нова сесия за превод на %o.
-  wwcOnJoinTranslationNotificationNoSourceLang: Имате активна сесия за превод до %o.
+  wwctLangToLangStartOtherPlayer: Започване на нова сесия за превод за {0} от {1} до
+    {0}.
+  wwctAutoTranslateStart: Започване на нова сесия за превод на {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Имате активна сесия за превод до {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Превежда се глобален
-    чат, но имате активна сесия за превод до %o.
+    чат, но имате активна сесия за превод до {0}.
   wwcConfigGUIChangesNotSaved: Вашите промени няма да влязат в сила, докато не кликнете
     върху червената бариера в /wwcc.
   wwctciOffSender: Входящ чат превод забранено.
@@ -302,25 +302,25 @@ Messages:
   wwctcoOnSender: Изходящ чат превод активиран. Всичко, което кажете, ще бъде преведено!
   wwctciOnSender: Входящ чат превод активиран. Всичко, което получите, ще бъде преведено!
   wwctGUIChatMenu: Превключване на менюто за превод на чат
-  wwctcoOnTarget: Изходящ превод на чат е активиран за %i.
-  wwctcoOffTarget: Изходящ превод на чат е забранен за %i.
+  wwctcoOnTarget: Изходящ превод на чат е активиран за {0}.
+  wwctcoOffTarget: Изходящ превод на чат е забранен за {0}.
   wwctGUIChatOutgoingButton: Превключване на изходящи чат превод
-  wwctciOnTarget: Входящ чат превод е активиран за %i.
-  wwctciOffTarget: Преводът на входящ чат е забранен за %i.
+  wwctciOnTarget: Входящ чат превод е активиран за {0}.
+  wwctciOffTarget: Преводът на входящ чат е забранен за {0}.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: Оригинален входящ чат прикрепен
     към превода като мишката текст прекъсна успешно.
   wwcConfigGUISendIncomingHoverTextChatButton: Добавяне на оригинални входящи съобщения
     като текст на мишката
-  wwctGUIExistingChatOutgoingEnabled: 'Изходящ чат Превод Активиран: %i'
-  wwctGUIExistingTranslationInput: 'Език на въвеждане: %i'
-  wwctGUIExistingChatIncomingEnabled: 'Входящ чат Превод Активиран: %i'
-  wwctGUIExistingTranslationOutput: 'Език на изхода: %i'
+  wwctGUIExistingChatOutgoingEnabled: 'Изходящ чат Превод Активиран: {0}'
+  wwctGUIExistingTranslationInput: 'Език на въвеждане: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Входящ чат Превод Активиран: {0}'
+  wwctGUIExistingTranslationOutput: 'Език на изхода: {0}'
   wwcTranslatorAttempt: Опитвайки се да се свържете с преводач в config.yml... (Опит
-    %i/ %o)
+    {0}/ {1})
   wwcTimeoutExceptionConsole: Играч % имах последното изчакване на заявката. Тази
     грешка не е фатална, но WorldwideChat трябва да се презареди, ако продължава да
     се случва.
-  wwcGUIPageNumber: 'Номер на страницата: %i'
+  wwcGUIPageNumber: 'Номер на страницата: {0}'
   wwcConfigYAMLFallback: Връщайки се към ЯМЛ...
   wwcConfigGUIToggleSQLButton: Превключване на SQL
   wwcConfigConversationToggleSQLSuccess: SQL прекъсна успешно. Презареждане, за да
@@ -341,39 +341,39 @@ Messages:
   wwcConfigGUISQLPortButton: Промяна на SQL порт
   wwcConfigGUISQLOptionalArgsButton: Промяна на SQL допълнителни аргументи
   wwcConfigConversationToggleSQLSSLSuccess: SSL за SQL прекъсна успешно.
-  wwcConfigConversationSQLPortInput: Настоящият порт е %i. Въведете нещо различно
+  wwcConfigConversationSQLPortInput: Настоящият порт е {0}. Въведете нещо различно
     от 0, за да зададете нов порт, или въведете 0, за да се върнете.
   wwcConfigGUISQLPasswordButton: Промяна на паролата на SQL
   wwcConfigConversationSQLHostnameSuccess: Успешно промени името на хост на SQL.
-  wwcConfigConversationSQLHostnameInput: Настоящото име на хоста е %i. Въведете нещо
+  wwcConfigConversationSQLHostnameInput: Настоящото име на хоста е {0}. Въведете нещо
     различно от 0, за да зададете ново име на хост, или въведете 0, за да се върнете.
   wwcConfigGUISQLHostnameButton: Промяна на SQL име на хост
   wwcConfigConversationSQLOptionalArgsSuccess: Успешно промени опционалните аргументи
     на SQL.
   wwcConfigConversationSQLPasswordSuccess: Успешно промени паролата на SQL.
-  wwcConfigConversationSQLPasswordInput: Текущата парола е %i. Въведете нещо различно
+  wwcConfigConversationSQLPasswordInput: Текущата парола е {0}. Въведете нещо различно
     от 0, за да зададете нова парола, или въведете 0, за да се върнете.
   wwcConfigGUIToggleSQLSSLButton: Превключване на SQL SSL
   wwcConfigConversationSQLUsernameSuccess: Успешно промени потребителското име на
     SQL.
-  wwcConfigConversationSQLUsernameInput: Настоящото потребителско име е %i. Въведете
+  wwcConfigConversationSQLUsernameInput: Настоящото потребителско име е {0}. Въведете
     нещо различно от 0, за да зададете ново потребителско име, или въведете 0, за
     да се върнете.
   wwcConfigConversationSQLPortSuccess: Успешно промени SQL порта.
   wwcConfigGUISQLUsernameButton: Промяна на SQL потребителско име
   wwcConfigConversationSQLOptionalArgsCleared: Допълнителни аргументи изчистени успешно.
   wwcConfigConversationSQLOptionalArgsInput: 'Текущите незадължителни аргументи на
-    SQL са: %i. Въведете аргументи, разделени със запетая (ключ = стойност, key2 =
+    SQL са: {0}. Въведете аргументи, разделени със запетая (ключ = стойност, key2 =
     value2), или въведете ясно, за да изтриете текущите арги, или въведете 0, за да
     се върнете.'
-  wwcConfigConversationSQLDatabaseNameInput: Настоящото име на базата данни е %i.
+  wwcConfigConversationSQLDatabaseNameInput: Настоящото име на базата данни е {0}.
     Въведете нещо различно от 0, за да зададете ново име на база данни, или въведете
     0, за да се върнете.
   wwcConfigGUISQLDatabaseNameButton: Промяна на SQL база данни
   wwcConfigConversationSQLDatabaseNameSuccess: Успешно промени името на базата данни
     на SQL.
   wwcConfigConversationFatalAsyncAbort: Текущото изчакване за прекратяване на всички
-    задачи на асинхрон е %i секунди. Въведете нещо над 7, за да зададете нов изчакване,
+    задачи на асинхрон е {0} секунди. Въведете нещо над 7, за да зададете нов изчакване,
     или нещо под него, за да се върнете.
   wwcConfigConversationFatalAsyncSuccess: Async задача изчакване настроен успешно.
   wwcConfigGUIFatalAsyncAbortButton: Промяна на изчакване на задачи за асинхрон
@@ -383,7 +383,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Промяна на свободен превод на API ключ
   libreHttp403: Липсва Libre Translate API ключ, или сте забранени от сървъра!
   wwcConfigConversationLibreURLSuccess: Безплатен URL зададен успешно.
-  wwcConfigConversationLibreTranslateApiKeyInput: Настоящият API ключ е %i. Моля,
+  wwcConfigConversationLibreTranslateApiKeyInput: Настоящият API ключ е {0}. Моля,
     въведете API ключ за Libre или въведете 0, за да се върнете.
   wwcConfigGUILibreTranslateButton: Свободен превод
   libreHttp429: Няма доверие поради ограничение на тарифа от сървъра.
@@ -391,36 +391,36 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: Успешно прекъсна Libre Translate.
     Презареждане, за да влязат в сила промените.
   wwcConfigConversationLibreTranslateApiKeySuccess: Безплатно API ключ набор успешно.
-  wwcConfigConversationLibreURLInput: Текущият URL адрес е %i. Моля, въведете URL
+  wwcConfigConversationLibreURLInput: Текущият URL адрес е {0}. Моля, въведете URL
     адрес за Libre или въведете 0, за да се върнете.
-  libreHttpUnknown: 'Неизвестна http грешка: %i'
+  libreHttpUnknown: 'Неизвестна http грешка: {0}'
   wwcConfigGUILibreTranslateURLButton: Промяна на безплатен превод URL
-  wwcConfigConnectionFail: Неуспешно свързване към %i.
+  wwcConfigConnectionFail: Неуспешно свързване към {0}.
   wwcConfigGUIMongoSettings: Конфигурация на MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Успешно промени името на базата данни
     MongoDB.
   wwcConfigGUIMongoHostnameButton: Промяна на името на хоста MongoDB
-  wwcConfigConversationMongoPasswordInput: Текущата парола е %i. Въведете нещо различно
+  wwcConfigConversationMongoPasswordInput: Текущата парола е {0}. Въведете нещо различно
     от 0, за да зададете нова парола или въведете 0, за да се върнете назад.
-  wwcConfigConversationMongoPortInput: Текущият порт е %i. Въведете нещо различно
+  wwcConfigConversationMongoPortInput: Текущият порт е {0}. Въведете нещо различно
     от 0, за да зададете нов порт, или въведете 0, за да се върнете назад.
   wwcConfigConversationToggleMongoSuccess: MongoDB премина успешно. Презаредете, за
     да влезе в сила промяната.
-  wwcConfigConversationMongoHostnameInput: Текущото име на хост е %i. Въведете нещо
+  wwcConfigConversationMongoHostnameInput: Текущото име на хост е {0}. Въведете нещо
     различно от 0, за да зададете ново име на хост или въведете 0, за да се върнете
     назад.
   wwcConfigConversationMongoHostnameSuccess: Успешно промени името на хоста MongoDB.
   wwcConfigGUIMongoMenuButton: Промяна на настройките на MongoDB
   wwcConfigGUIToggleMongoButton: Превключване на MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Текущото име на базата данни е %i.
+  wwcConfigConversationMongoDatabaseNameInput: Текущото име на базата данни е {0}.
     Въведете нещо различно от 0, за да зададете ново име на база данни или тип 0,
     за да се върнете.
   wwcConfigConversationMongoOptionalArgsInput: 'Текущите незадължителни аргументи
-    на MongoDB са: %i. Въведете аргументи, разделени със запетая (key=value, key2
+    на MongoDB са: {0}. Въведете аргументи, разделени със запетая (key=value, key2
     = value2), или въведете clear, за да изтриете текущите args, или въведете 0, за
     да се върнете назад.'
   wwcConfigGUIMongoDatabaseNameButton: Промяна на базата данни MongoDB
-  wwcConfigConversationMongoUsernameInput: Текущото потребителско име е %i. Въведете
+  wwcConfigConversationMongoUsernameInput: Текущото потребителско име е {0}. Въведете
     нещо различно от 0, за да зададете ново потребителско име, или въведете 0, за
     да се върнете.
   wwcConfigGUIMongoOptionalArgsButton: Промяна на MongoDB незадължителни аргументи
@@ -444,7 +444,7 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Промяна на DeepL Превод API ключ
   wwcConfigGUIToggleDeepLTranslateButton: Превключване на DeepL Превод
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API ключ набор успешно.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Текущият API ключ е %i. Моля, въведете
+  wwcConfigConversationDeepLTranslateApiKeyInput: Текущият API ключ е {0}. Моля, въведете
     API ключ за DeepL или въведете 0, за да се върнете.
   wwcConfigErrorsToIgnoreSuccess: Успешно регистрирани грешки на преводача, които
     трябва да се игнорират.
@@ -455,24 +455,24 @@ Messages:
     за да игнорира фрази.
   wwcConfigGUIIgnoreErrorsButton: Промяна на грешки, за да игнорирате
   wwcConfigConversationIgnoreErrorsInput: 'Текущият списък с фрази в грешките на преводача,
-    които трябва да игнорирате, са: %i. Въведете аргументи, разделени със запетая
+    които трябва да игнорирате, са: {0}. Въведете аргументи, разделени със запетая
     (key=value, key2=value2), или въведете clear, за да изтриете текущите args, или
     въведете 0, за да се върнете назад. Освен това въвеждането на „*“ ще накара приставката
     да не проверява грешките на преводача.'
   wwcConfigConversationIgnoreErrorsCleared: Грешки на преводача, за да игнорират фрази
     изчистени успешно.
 
-  wwcsActiveTransPrevRate: 'Активен преводач Предишен Ограничен Срок: %i'
-  wwcsActiveTransSaved: 'Активен преводач, записан на диск: %i'
-  wwcsActiveTransIncoming: 'Активен преводач, превеждащ входящ чат: %i'
-  wwcsActiveTransOutLang: 'Активен език на изхода на преводача: %i'
-  wwcsActiveTransInLang: 'Активен език за въвеждане на преводач: %i'
-  wwcsActiveTransBook: 'Активен преводач Превод Книга: %i'
-  wwcsActiveTransSign: 'Активен преводач Превод Знак: %i'
-  wwcsActiveTransUUID: 'Активен преводач UUID: %i'
-  wwcsActiveTransRateLimit: 'Ограничение на скоростта на активния преводач: %i'
-  wwcsActiveTransColorWarning: 'Активен преводач получи предупреждение за цвят: %i'
-  wwcsActiveTransOutgoing: 'Активен преводач, превеждащ изходящ чат: %i'
-  wwcsActiveTransItem: 'Активен преводач, превеждащ артикул: %i'
-  wwcsActiveTransEntity: 'Активен преводач, превеждащ субект: %i'
+  wwcsActiveTransPrevRate: 'Активен преводач Предишен Ограничен Срок: {0}'
+  wwcsActiveTransSaved: 'Активен преводач, записан на диск: {0}'
+  wwcsActiveTransIncoming: 'Активен преводач, превеждащ входящ чат: {0}'
+  wwcsActiveTransOutLang: 'Активен език на изхода на преводача: {0}'
+  wwcsActiveTransInLang: 'Активен език за въвеждане на преводач: {0}'
+  wwcsActiveTransBook: 'Активен преводач Превод Книга: {0}'
+  wwcsActiveTransSign: 'Активен преводач Превод Знак: {0}'
+  wwcsActiveTransUUID: 'Активен преводач UUID: {0}'
+  wwcsActiveTransRateLimit: 'Ограничение на скоростта на активния преводач: {0}'
+  wwcsActiveTransColorWarning: 'Активен преводач получи предупреждение за цвят: {0}'
+  wwcsActiveTransOutgoing: 'Активен преводач, превеждащ изходящ чат: {0}'
+  wwcsActiveTransItem: 'Активен преводач, превеждащ артикул: {0}'
+  wwcsActiveTransEntity: 'Активен преводач, превеждащ субект: {0}'
 

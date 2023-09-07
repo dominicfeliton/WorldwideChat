@@ -1,76 +1,76 @@
 Messages:
-  wwcgAutoTranslateStart: Acum traducem chatul global la %o.
+  wwcgAutoTranslateStart: Acum traducem chatul global la {0}.
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: Chatul global este tradus la
-    %o.
+    {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Modificarea cheii de acces Amazon
   wwcrFail: Nu a reușit să reîncărcați WorldwideChat.
   wwcConfigGUIUpdateCheckerButton: Modificare verificare pentru întârzierea actualizărilor
   wwcUpdaterFailedGeneric: Imposibil de verificat pentru actualizări WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Întârzierea curentă a verificatorului de
-    actualizare este %i secunde. Tastați ceva mai mare de 10 pentru a seta o valoare
+    actualizare este {0} secunde. Tastați ceva mai mare de 10 pentru a seta o valoare
     nouă sau ceva mai mic de 10 pentru a reveni.
   wwctGUIMainMenuGlobal: Meniu global de traducere
   wwcConfigConversationPluginUpdateChatSuccess: Memento-ul de actualizare a plugin-ului
     a fost comitat cu succes.
-  wwctbOnTarget: Traducerea cărții este activată pentru %i.
-  wwcsNotATranslator: Nu există încă înregistrări disponibile pentru %i.
+  wwctbOnTarget: Traducerea cărții este activată pentru {0}.
+  wwcsNotATranslator: Nu există încă înregistrări disponibile pentru {0}.
   wwcConfigGUIbStatsButton: Comutare bStats
   wwctGUINewTranslationSource: Alegeți o limbă sursă
-  wwcConfigConnectionFailed: Nu a reușit conectarea la %o. Asigurați-vă că acreditările
+  wwcConfigConnectionFailed: Nu a reușit conectarea la {0}. Asigurați-vă că acreditările
     și paravanul de protecție sunt configurate corect!
   wwcConfigEnabledbStats: bStats activate.
-  wwctGUIMainMenuPlayer: Meniu de traducere la %i
+  wwctGUIMainMenuPlayer: Meniu de traducere la {0}
   wwctGUIBookButton: Comută traducerea cărții
-  wwcLangDetected: Limba detectat %o.
+  wwcLangDetected: Limba detectat {0}.
   wwcBookTranslateStart: Traduc cartea ţintă...
   wwcConfigDisabledbStats: BSTAT-uri dezactivate.
   wwctsOffSender: Semnează traducerea dezactivată.
   wwcUpdaterParserFailed: Nu a reușit să analizeze datele de actualizare de la Github.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: Cheia secretă curentă este %i.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Cheia secretă curentă este {0}.
     Introduceți o cheie secretă pentru Amazon sau tastați 0 pentru a reveni.
   wwctbOffSender: Traducere carte dezactivat.
   wwcConfigGUIAmazonTranslateButton: Amazon Traduce
   wwcConfigConversationLangSuccess: Limba plugin-ului s-a schimbat cu succes.
-  wwcsSuccessfulTranslations: 'Traduceri reușite: %i'
+  wwcsSuccessfulTranslations: 'Traduceri reușite: {0}'
   wwcConfigConversationTranslationCacheInput: Limita cache de traducere curentă este
-    %i fraze. Tastați ceva mai mare decât 0 pentru a seta o valoare nouă sau tastați
+    {0} fraze. Tastați ceva mai mare decât 0 pentru a seta o valoare nouă sau tastați
     0 pentru a dezactiva memoria cache de traducere. Tastați ceva mai puțin de 0 pentru
     a merge înapoi.
-  wwctbOffTarget: Traducerea cărții dezactivată pentru %i.
+  wwctbOffTarget: Traducerea cărții dezactivată pentru {0}.
   wwcConfigGUIGeneralSettings: Configurare generală
   wwcInvalidLang: Limbă nevalidă în config.yml. Inîndeplinire a obligațiilor de plată
     la ro...
   wwcConfigConversationAmazonTranslateRegionSuccess: Regiunea Amazon a stabilit cu
     succes.
-  wwcConfigRateLimitEnabled: Limita globală a ratei activată și setată la %i secunde.
+  wwcConfigRateLimitEnabled: Limita globală a ratei activată și setată la {0} secunde.
   wwcBadPerms: Nu aveți permisiunile necesare pentru a executa această comandă!
   wwcConfigGUILangButton: Schimbă limba pluginului
   wwctGUISignButton: Comută traducerea semnelor
   wwcUpdaterOutOfDate: WorldwideChat este expirat. Vă rugăm să actualizați la cea
-    mai recentă versiune, %i.
+    mai recentă versiune, {0}.
   wwcConfigGUINextPageButton: Pagina următoare
   wwcConfigInvalidTranslatorSettings: Setări de traducător nevalide! Vă rugăm să activați
     un singur traducător în config.yml.
   wwcConfigGUIQuitButton: Ieșire și salvare modificări
-  wwctPlayerNotFound: Jucătorul %nu am găsit.
+  wwctPlayerNotFound: Jucătorul {0} am găsit.
   wwcConfigGUIAmazonTranslateRegionButton: Schimbă regiunea Amazon
-  wwcConfigConversationLangInput: 'Limba curentă a pluginului este %i. Introduceți
-    un cod de limbă valid sau tastați 0 pentru a anula. Coduri de limbă valide: %o'
+  wwcConfigConversationLangInput: 'Limba curentă a pluginului este {0}. Introduceți
+    un cod de limbă valid sau tastați 0 pentru a anula. Coduri de limbă valide: {0}'
   wwcConfigConversationLangInvalid: Cod de limbă nevalid!
   wwcConfigGUIWatsonAPIKeyButton: Modificare cheie API Watson
   wwcEnabled: Versiune WorldwideChat activată.
-  wwcgLangToLangStart: Acum traducem chatul global de la %i la %o.
+  wwcgLangToLangStart: Acum traducem chatul global de la {0} la {1}.
   wwctbOnSender: Traducerea cărţii activată. Faceți clic dreapta în timp ce țineți
     o carte pentru ao traduce!
   wwcListenersInitialized: Ascultători iniţializaţi.
   wwcConfigGUIPluginUpdateChatButton: Trimiteți Memento Chat pentru actualizări plugin-uri
   wwcConfigConversationSendTranslationChatSuccess: Memento-ul de chat al traducătorului
     activ a fost activat cu succes.
-  wwctsOffTarget: Semnează traducerea dezactivată pentru %i.
+  wwctsOffTarget: Semnează traducerea dezactivată pentru {0}.
   wwcUpdaterConnectionFailed: Imposibil de verificat pentru cele mai recente actualizări
     pe Github.
   watsonNotFoundExceptionNotification: Imposibil de tradus intrările dvs. mai departe.
-  wwcConfigConversationWatsonAPIKeyInput: Tasta API curentă este %i. Introduceți o
+  wwcConfigConversationWatsonAPIKeyInput: Tasta API curentă este {0}. Introduceți o
     cheie API pentru Watson sau tastați 0 pentru a reveni.
   wwctGUIStopButton: Opriți traducerea
   wwcgTranslationStopped: Traducerea globală a chat-ului a fost oprită.
@@ -80,9 +80,9 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Schimbarea Google Translate API cheie
   wwcSignDeletedOrTooLong: 'Semnul țintă a fost fie șters, fie traducerea a fost prea
     lungă. Traducere:'
-  wwctsOnTarget: Semnează traducerea activată pentru %i.
+  wwctsOnTarget: Semnează traducerea activată pentru {0}.
   wwcConfigCacheDisabled: Cache traducător dezactivat.
-  wwcConfigConversationWatsonURLInput: Adresa URL curentă este %i. Introduceți un
+  wwcConfigConversationWatsonURLInput: Adresa URL curentă este {0}. Introduceți un
     URL de serviciu pentru Watson sau tastați 0 pentru a reveni.
   wwcBookDone: Cartea tradusă cu succes.
   wwctsOnSender: Traducerea semnelor activată. Faceți clic dreapta pe un semn pentru
@@ -92,27 +92,27 @@ Messages:
   wwctGUITranslationButton: Începeți traducerea
   wwctGUIAutoDetectButton: Detectare automată limbă sursă
   wwcUpdaterUpToDate: WorldwideChat este la zi!
-  wwcConfigConversationAmazonTranslateRegionInput: Regiunea curentă este %i. Introduceți
+  wwcConfigConversationAmazonTranslateRegionInput: Regiunea curentă este {0}. Introduceți
     o regiune pentru Amazon sau tastați 0 pentru a reveni.
   wwcNoConsole: Această comandă poate fi rulată numai de un jucător.
   wwcInitializationFail: Nu a reușit să inițializeze WorldwideChat.
   wwcrSuccess: Reîncărcat cu succes WorldwideChat.
-  wwcPlayerNotFound: Jucătorul %nu am găsit.
+  wwcPlayerNotFound: Jucătorul {0} am găsit.
   wwcUpdaterOutOfDateChat: WorldwideChat este expirat. Vă rugăm să actualizați la
     cea mai recentă versiune.
   wwcConfigConversationRateLimitSuccess: Limita de rată stabilită cu succes.
   wwcConfigConversationWatsonURLSuccess: Watson URL setat cu succes.
-  wwctbPlayerNotFound: Jucătorul %i fie nu este găsit, fie nu este un traducător activ.
+  wwctbPlayerNotFound: Jucătorul {0} fie nu este găsit, fie nu este un traducător activ.
   wwcConfigConversationTranslationCacheSuccess: Limita cache de traducere setată cu
     succes.
   wwctInvalidArgs: Argumente nevalide furnizate!
   wwcConfigGUIPrefixButton: Schimbare prefixul plugin-ului
   wwctSameLangError: Nu puteți traduce în aceeași limbă!
   wwctGUINewTranslationTarget: Alegeți o limbă țintă
-  wwcConfigConnectionSuccess: Conectat cu succes la %o!
+  wwcConfigConnectionSuccess: Conectat cu succes la {0}!
   wwcConfigGUIGoogleTranslateButton: Traducere în Google
-  wwcsIsActiveTranslator: 'Este un translator activ: %i'
-  wwcConfigConversationPrefixInput: Prefixul curent este %i. Introduceți unul nou
+  wwcsIsActiveTranslator: 'Este un translator activ: {0}'
+  wwcConfigConversationPrefixInput: Prefixul curent este {0}. Introduceți unul nou
     sau tastați 0 pentru a reveni.
   wwcConfigGUIPreviousPageButton: Pagina precedentă
   wwcConfigGUITranslatorCacheButton: Modificare limită cache traducere
@@ -129,60 +129,60 @@ Messages:
   wwcUnsupportedVersion: 'Executați o versiune neacceptată de Bukkit, Spigot sau hârtie.
     Versiuni acceptate:'
   wwcGlobalOnJoinTranslationNotificationSourceLang: Chatul global este tradus din
-    %i la %o.
+    {0} la {1}.
   wwcConfigGUITranslatorSettings: Configurare traducător
-  wwcConfigConversationGoogleTranslateAPIKeyInput: Tasta API curentă este %i. Introduceți
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Tasta API curentă este {0}. Introduceți
     o cheie API pentru Google Translate sau tastați 0 pentru a reveni.
   wwcConfigConversationRateLimitInput: Limita actuală globală a ratei per traducere
-    este %i secunde. Tastați ceva mai mare decât 0 pentru a seta o valoare nouă sau
+    este {0} secunde. Tastați ceva mai mare decât 0 pentru a seta o valoare nouă sau
     tastați 0 pentru a dezactiva limita. Tastați ceva mai puțin de 0 pentru a merge
     înapoi.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate cheie API set
     cu succes.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Schimbă cheia secretă Amazon
   wwcVersion: WorldwideChat, versiune
-  wwcsAttemptedTranslations: 'Tentative de traduceri: %i'
+  wwcsAttemptedTranslations: 'Tentative de traduceri: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Cheia secretă Amazon a fost
     stabilită cu succes.
   wwcConfigConversationWatsonAPIKeySuccess: Watson API a fost setată cu succes.
   wwcRateLimit: Traducerile dvs. sunt limitate la tarife. Vă rugăm să așteptați un
-    alt %i secunde.
+    alt {0} secunde.
   wwcConfigCacheEnabled: Memoria cache a traducătorului este activată și setată la
-    o limită de %i.
+    o limită de {0}.
   wwctGUIExistingTranslationButton: Suprascriere sesiune de traducere curentă
   wwcUserDataReloaded: Încărcat toate datele de utilizator salvate.
   wwcConfigGUISendTranslationChatButton: Trimiteți Memento Chat către Translatorul
     Activ la conectare
-  wwcsLastTranslationTime: 'Ultima (reușită) Timp de traducere: %i'
+  wwcsLastTranslationTime: 'Ultima (reușită) Timp de traducere: {0}'
   wwctbNotATranslator: Nu eşti un traducător activ! Asigurați-vă că ați setat acest
     lucru cu /wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Cheia de acces curentă este
-    %i. Introduceți o cheie de acces pentru Amazon sau tastați 0 pentru a reveni.
+    {0}. Introduceți o cheie de acces pentru Amazon sau tastați 0 pentru a reveni.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: Cheia de acces Amazon setată
     cu succes.
   wwcConfigBadUpdateDelay: Invalid update întârziere setată în config.yml. Inimplicită
     la 86400 de secunde...
   wwctrlRateLimitOffSender: Dezactivat limita tarifului.
-  wwctrlRateLimitAlreadyOffTarget: Limita de tarifă %i este deja dezactivată.
-  wwctrlPlayerNotFound: Jucătorul %i fie nu este găsit, fie nu este un traducător
+  wwctrlRateLimitAlreadyOffTarget: Limita de tarifă {0} este deja dezactivată.
+  wwctrlPlayerNotFound: Jucătorul {0} fie nu este găsit, fie nu este un traducător
     activ.
-  wwctrlRateLimitSetSender: Setați limita ratei la %i secunde.
-  wwctrlRateLimitOffTarget: Dezactivat limita ratei de %i.
-  wwctrlRateLimitSetTarget: Setați limita de rată de %i la %o secunde.
+  wwctrlRateLimitSetSender: Setați limita ratei la {0} secunde.
+  wwctrlRateLimitOffTarget: Dezactivat limita ratei de {0}.
+  wwctrlRateLimitSetTarget: Setați limita de rată de {0} la {1} secunde.
   wwctrlNotATranslator: Nu eşti un traducător activ! Asigurați-vă că ați setat acest
     lucru cu /wwct.
   wwctrlRateLimitAlreadyOffSender: Limita tarifului dvs. este deja dezactivată.
   wwctGUIRateButton: Stabilește limita ratei
-  wwctGUIConversationRateLimit: Limita de rată per traducere este actual %i secunde.
+  wwctGUIConversationRateLimit: Limita de rată per traducere este actual {0} secunde.
     Tastați ceva mai mare decât 0 pentru a seta o valoare nouă sau tastați 0 pentru
     a dezactiva limita. Tastați ceva mai puțin de 0 pentru a merge înapoi.
   wwctGUITargetPlayerNull: Jucătorul țintă deconectat de la server.
   wwcConfigConversationSyncUserDataDelayInput: Întârzierea curentă per sincronizare
-    a datelor utilizatorului este %i secunde. Tastați ceva mai mare de 10 pentru a
+    a datelor utilizatorului este {0} secunde. Tastați ceva mai mare de 10 pentru a
     seta o valoare nouă sau ceva mai mic de 10 pentru a reveni.
   wwcConfigGUISyncUserDataButton: Modificarea întârzierii sincronizării datelor utilizatorului
   wwcConfigSyncDelayEnabled: Întârziere pentru sincronizarea datelor utilizatorului
-    setată la %i secunde.
+    setată la {0} secunde.
   wwcConfigConversationSyncUserDataDelaySuccess: Întârziere sincronizare date utilizator
     setat cu succes.
   wwcConfigSyncDelayInvalid: Întârziere de sincronizare date utilizator nevalidă setată
@@ -190,24 +190,24 @@ Messages:
   wwcConfigCacheInvalid: Dimensiunea memoriei cache traducător nevalidă. Inîndeplinire
     a obligațiilor de plată la 10...
   wwcInventoryErrorPlayer: Eroare detectată cu GUI. Un jurnal a fost trimis la consolă.
-  wwcInventoryError: Eroare detectată cu GUI a utilizatorului %i. Raportați această
+  wwcInventoryError: Eroare detectată cu GUI a utilizatorului {0}. Raportați această
     problemă dezvoltatorului.
-  wwctiOffTarget: Traducere articol dezactivat pentru %i.
+  wwctiOffTarget: Traducere articol dezactivat pentru {0}.
   wwctiOffSender: Traducere articol dezactivat.
   wwcItemTranslateTitleStock: Imposibil de tradus numele de elemente implicite.
   wwctGUIItemButton: Comută traducerea elementului
   wwcItemTranslateTitleDone: Titlul articolului tradus cu succes.
   wwcGUITempItem: Afișaj element
   wwcItemTranslateStart: Traducerea obiectului țintă...
-  wwcBookTranslateTitleSuccess: 'Titlul cărții traduse: %i'
+  wwcBookTranslateTitleSuccess: 'Titlul cărții traduse: {0}'
   wwctiOnSender: Traducerea elementului activată. Faceți clic dreapta cu un element
     în mâna principală pentru a-l traduce!
   wwcItemTranslateLoreStart: Traducerea lore a obiectului țintă...
   wwcItemTranslateLoreDone: Lore articol tradus cu succes.
-  wwctiOnTarget: Traducerea elementului este activată pentru %i.
+  wwctiOnTarget: Traducerea elementului este activată pentru {0}.
   wwcInvalidTranslator: Setări de traducător nevalide. Vă rugăm să remediați acest
     lucru în config.yml sau cu /wwcc pentru a utiliza acest plugin.
-  wwcConfigGUIEachTranslatorSettings: Configurare %i
+  wwcConfigGUIEachTranslatorSettings: Configurare {0}
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat nu acceptă utilizarea /reload. Vă rugăm să
     procedați cu prudență
@@ -215,7 +215,7 @@ Messages:
     depanator, ar trebui să dezactivați acest lucru.
   wwcTranslatorErrorThresholdReached: Pragul de eroare atins. Acest plugin va reîncărca
     acum și va dezactiva toți traducătorii.
-  wwcConfigErrorLimitEnabled: Limita de eroare a traducătorului setată la %i.
+  wwcConfigErrorLimitEnabled: Limita de eroare a traducătorului setată la {0}.
   wwcTranslatorError: A apărut o problemă în timpul încercării traducerii. Vă rugăm
     să încercați din nou.
   wwcConfigErrorLimitInvalid: Limita de eroare de traducător nevalidă setată în config.yml.
@@ -223,10 +223,10 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: Verificați errorLog.txt în folderul
     plugin WorldwideChat pentru mai multe informații.
   wwctInvalidInputLangCode: 'Codul de limbă de intrare nevalid furnizat! Coduri valide
-    lang: %o'
-  wwcsTitle: Înregistrarea de %i
+    lang: {0}'
+  wwcsTitle: Înregistrarea de {0}
   wwctInvalidOutputLangCode: 'Cod de limbă de ieșire nevalid furnizat! Coduri valide
-    lang: %o'
+    lang: {0}'
   wwctGUISourceTranslationSelected: Ați selectat această limbă.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Șterge suprascriere
   wwcConfigConversationOverrideTextChange: Vă rugăm să tastați un mesaj nou pentru
@@ -258,48 +258,48 @@ Messages:
   wwcConfigMessageCharLimitInvalid: Limită nevalidă per mesaj setată în config.yml.
     În mod neîndeplinire a obligațiilor la 255 de caractere...
   wwcConfigConversationCharacterLimitSuccess: Limita de caractere stabilită cu succes.
-  wwcteOnTarget: Traducerea entității activată pentru %i.
-  wwcEntityTranslateDone: 'Denumirea entității traduse: %i'
+  wwcteOnTarget: Traducerea entității activată pentru {0}.
+  wwcEntityTranslateDone: 'Denumirea entității traduse: {0}'
   wwcEntityTranslateNoName: Entitatea nu are un nume particularizat.
   wwcConfigConversationErrorLimitInput: Limita de eroare curentă pentru fiecare traducător
-    este %i. Tastați ceva mai mare decât 0 pentru a seta o valoare nouă sau tastați
+    este {0}. Tastați ceva mai mare decât 0 pentru a seta o valoare nouă sau tastați
     ceva mai mic sau egal cu 0 pentru a reveni.
   wwcConfigGUIGlobalRateLimitButton: Modificarea limitei globale a ratei
   wwcteOnSender: Entitate traducere activat. Faceți clic dreapta pe o entitate pentru
     a-i traduce numele!
   wwcConfigGUIResponseLimitButton: Modificare expirare răspuns traducător
   wwcConfigMessageCharLimitEnabled: Limita de caractere pentru fiecare mesaj setată
-    la %i caractere.
-  wwcteOffTarget: Traducerea entității dezactivată pentru %i.
+    la {0} caractere.
+  wwcteOffTarget: Traducerea entității dezactivată pentru {0}.
   wwcCharLimit: Mesajul tău e prea lung! Vă rugăm să vă asigurați că mesajul dvs.
-    este mai mic de %i caracterele.
+    este mai mic de {0} caracterele.
   wwcConfigConversationCharacterLimitInput: Limita curentă de caractere pentru fiecare
-    mesaj este %i caractere. Tastați ceva mai mare decât 0 pentru a seta o valoare
+    mesaj este {0} caractere. Tastați ceva mai mare decât 0 pentru a seta o valoare
     nouă sau tastați ceva mai mic sau egal cu 0 pentru a reveni.
   wwcteOffSender: Entitate traducere dezactivată.
   wwctGUIEntityButton: Comută traducerea entității
   wwctrlRateLimitBadInt: Limita dvs. de rată nu este un număr întreg valid.
-  wwcTranslatorErrorConsole: A apărut o problemă în timp ce utilizatorul %i încerca
+  wwcTranslatorErrorConsole: A apărut o problemă în timp ce utilizatorul {0} încerca
     traducerea lor. Vă rugăm să verificați errorLog.txt pentru mai multe detalii.
   wwctGUIChatButton: Comută traducerea conversațiilor
   wwcrBegin: Reîncarcă WorldwideChat...
-  wwctTranslationStoppedOtherPlayer: Sesiunea de traducere pentru %i a fost oprită.
+  wwctTranslationStoppedOtherPlayer: Sesiunea de traducere pentru {0} a fost oprită.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Chat global este tradus,
-    dar aveți o sesiune de traducere activă de la %i la %o.
+    dar aveți o sesiune de traducere activă de la {0} la {1}.
   wwctCannotTranslateConsole: Nu puteți începe o sesiune de traducere pentru consola!
-  wwctLangToLangStart: Începerea unei noi sesiuni de traducere de la %i la %o.
+  wwctLangToLangStart: Începerea unei noi sesiuni de traducere de la {0} la {1}.
   wwcOnJoinTranslationNotificationSourceLang: Aveți o sesiune de traducere activă
-    de la %i la %o.
-  wwctAutoTranslateStartOtherPlayer: Începem o nouă sesiune de traducere pentru %i
-    la %o.
+    de la {0} la {1}.
+  wwctAutoTranslateStartOtherPlayer: Începem o nouă sesiune de traducere pentru {0}
+    la {0}.
   wwctTranslationStopped: Sesiunea de traducere a fost oprită.
-  wwctLangToLangStartOtherPlayer: Începem o nouă sesiune de traducere pentru %o de
-    la %i la %e.
-  wwctAutoTranslateStart: Începem o nouă sesiune de traducere la %o.
+  wwctLangToLangStartOtherPlayer: Începem o nouă sesiune de traducere pentru {0} de
+    la {0} la {1}.
+  wwctAutoTranslateStart: Începem o nouă sesiune de traducere la {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Aveți o sesiune de traducere activă
-    la %o.
+    la {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Chat global este tradus,
-    dar aveți o sesiune de traducere activă la %o.
+    dar aveți o sesiune de traducere activă la {0}.
   wwcConfigGUIChangesNotSaved: Modificările dvs. nu vor intra în vigoare până când
     nu faceți clic pe bariera roșie în /wwcc.
   wwctciOffSender: Intrare traducere chat dezactivat.
@@ -310,27 +310,27 @@ Messages:
   wwctciOnSender: Traducerea conversațiilor primite activată. Orice veţi primi va
     fi tradus!
   wwctGUIChatMenu: Comutare Meniu Traducere Chat
-  wwctcoOnTarget: Traducerea conversațiilor de ieșire activată pentru %i.
-  wwctcoOffTarget: Traducere chat de ieșire dezactivat pentru %i.
+  wwctcoOnTarget: Traducerea conversațiilor de ieșire activată pentru {0}.
+  wwctcoOffTarget: Traducere chat de ieșire dezactivat pentru {0}.
   wwctGUIChatOutgoingButton: Comută traducerea conversațiilor de ieșire
-  wwctciOnTarget: Traducerea conversațiilor primite este activată pentru %i.
-  wwctciOffTarget: Traducerea chat-ului de intrare dezactivată pentru %i.
+  wwctciOnTarget: Traducerea conversațiilor primite este activată pentru {0}.
+  wwctciOffTarget: Traducerea chat-ului de intrare dezactivată pentru {0}.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: Chatul original de intrare
     atașat la traducere ca text hover comuta cu succes.
   wwcConfigGUISendIncomingHoverTextChatButton: Adăugarea mesajelor primite originale
     ca text de trecere
   wwctGUIExistingChatOutgoingEnabled: 'Traducerea conversațiilor de ieșire activată:
-    %i'
-  wwctGUIExistingTranslationInput: 'Limba de intrare: %i'
+    {0}'
+  wwctGUIExistingTranslationInput: 'Limba de intrare: {0}'
   wwctGUIExistingChatIncomingEnabled: 'Traducerea conversațiilor primite activată:
-    %i'
-  wwctGUIExistingTranslationOutput: 'Limba de ieșire: %i'
+    {0}'
+  wwctGUIExistingTranslationOutput: 'Limba de ieșire: {0}'
   wwcTranslatorAttempt: Încercarea de a vă conecta la traducător în config.yml...
-    (Încercare %i/ %o)
-  wwcTimeoutExceptionConsole: Jucătorul %i a avut cea mai recentă expirare a solicitărilor.
+    (Încercare {0}/ {1})
+  wwcTimeoutExceptionConsole: Jucătorul {0} a avut cea mai recentă expirare a solicitărilor.
     Această eroare nu este fatală, dar WorldwideChat ar trebui reîncărcată dacă continuă
     să se întâmple.
-  wwcGUIPageNumber: 'Număr pagină: %i'
+  wwcGUIPageNumber: 'Număr pagină: {0}'
   wwcConfigYAMLFallback: Revenind la YAML...
   wwcConfigGUIToggleSQLButton: Comută SQL
   wwcConfigConversationToggleSQLSuccess: SQL a comuta cu succes. Reîncărcați pentru
@@ -351,22 +351,22 @@ Messages:
   wwcConfigGUISQLPortButton: Modificarea portului SQL
   wwcConfigGUISQLOptionalArgsButton: Modificarea argumentelor opționale SQL
   wwcConfigConversationToggleSQLSSLSuccess: SSL pentru SQL comuta cu succes.
-  wwcConfigConversationSQLPortInput: Portul curent este %i. Tastați orice altceva
+  wwcConfigConversationSQLPortInput: Portul curent este {0}. Tastați orice altceva
     decât 0 pentru a seta un port nou sau tastați 0 pentru a reveni.
   wwcConfigGUISQLPasswordButton: Modificarea parolei SQL
   wwcConfigConversationSQLHostnameSuccess: A schimbat cu succes numele de gazdă SQL.
-  wwcConfigConversationSQLHostnameInput: Numele gazdei curente este %i. Tastați orice
+  wwcConfigConversationSQLHostnameInput: Numele gazdei curente este {0}. Tastați orice
     altceva decât 0 pentru a seta un nume nou de gazdă sau tastați 0 pentru a reveni.
   wwcConfigGUISQLHostnameButton: Modificarea numelui de gazdă SQL
   wwcConfigConversationSQLOptionalArgsSuccess: Modificat cu succes argumentele SQL
     opționale.
   wwcConfigConversationSQLPasswordSuccess: A schimbat cu succes parola SQL.
-  wwcConfigConversationSQLPasswordInput: Parola curentă este %i. Introduceți orice
+  wwcConfigConversationSQLPasswordInput: Parola curentă este {0}. Introduceți orice
     altceva decât 0 pentru a seta o nouă parolă sau tastați 0 pentru a reveni.
   wwcConfigGUIToggleSQLSSLButton: Comută SSL SQL
   wwcConfigConversationSQLUsernameSuccess: A schimbat cu succes numele de utilizator
     SQL.
-  wwcConfigConversationSQLUsernameInput: Numele de utilizator curent este %i. Tastați
+  wwcConfigConversationSQLUsernameInput: Numele de utilizator curent este {0}. Tastați
     orice altceva decât 0 pentru a seta un nou nume de utilizator sau tastați 0 pentru
     a reveni.
   wwcConfigConversationSQLPortSuccess: A schimbat cu succes portul SQL.
@@ -374,16 +374,16 @@ Messages:
   wwcConfigConversationSQLOptionalArgsCleared: Argumentele opționale eliminate cu
     succes
   wwcConfigConversationSQLOptionalArgsInput: 'Argumentele SQL opționale actuale sunt:
-    %i. Argumentele de tip separate printr-o virgulă (cheie = valoare, key2=value2),
+    {0}. Argumentele de tip separate printr-o virgulă (cheie = valoare, key2=value2),
     sau tastați clar pentru a șterge args curent, sau tastați 0 pentru a reveni.'
-  wwcConfigConversationSQLDatabaseNameInput: Numele actual al bazei de date este %i.
+  wwcConfigConversationSQLDatabaseNameInput: Numele actual al bazei de date este {0}.
     Tastați orice altceva decât 0 pentru a seta un nume nou al bazei de date sau tastați
     0 pentru a reveni.
   wwcConfigGUISQLDatabaseNameButton: Schimbarea bazei de date SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Modificat cu succes numele bazei de
     date SQL.
   wwcConfigConversationFatalAsyncAbort: Timpul de expirare curent pentru a anula toate
-    sarcinile asincronice este %i secunde. Tastați orice peste 7 pentru a seta un
+    sarcinile asincronice este {0} secunde. Tastați orice peste 7 pentru a seta un
     nou timeout, sau orice sub el pentru a merge înapoi.
   wwcConfigConversationFatalAsyncSuccess: Timeout activitate async setat cu succes.
   wwcConfigGUIFatalAsyncAbortButton: Modificarea timpului de expirare a activității
@@ -394,7 +394,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Schimbați cheia API pentru traducerea gratuită
   libreHttp403: Lipsește Libre Traduceți cheia API sau sunteți interzis de pe server
   wwcConfigConversationLibreURLSuccess: URL-ul gratuit a fost setat cu succes.
-  wwcConfigConversationLibreTranslateApiKeyInput: Cheia API curentă este %i. Introduceți
+  wwcConfigConversationLibreTranslateApiKeyInput: Cheia API curentă este {0}. Introduceți
     o cheie API pentru Libre sau tastați 0 pentru a reveni.
   wwcConfigGUILibreTranslateButton: Traducere Libre
   libreHttp429: Nicio încredere din cauza limitei ratei de la server.
@@ -402,35 +402,35 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: Comută cu succes Libre Translate.
     Reîncărcați pentru ca modificările să aibă efect.
   wwcConfigConversationLibreTranslateApiKeySuccess: Cheia API Libre setată cu succes.
-  wwcConfigConversationLibreURLInput: Adresa URL curentă este %i. Introduceți o adresă
+  wwcConfigConversationLibreURLInput: Adresa URL curentă este {0}. Introduceți o adresă
     URL pentru Libre sau tastați 0 pentru a reveni.
-  libreHttpUnknown: 'Eroare http necunoscută: %i'
+  libreHttpUnknown: 'Eroare http necunoscută: {0}'
   wwcConfigGUILibreTranslateURLButton: Schimbați URL-ul Traduceți gratuit
-  wwcConfigConnectionFail: Conectarea la %i nu a reușit.
+  wwcConfigConnectionFail: Conectarea la {0} nu a reușit.
   wwcConfigGUIMongoSettings: Configurare MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: A schimbat cu succes numele bazei
     de date MongoDB.
   wwcConfigGUIMongoHostnameButton: Schimbați numele de gazdă MongoDB
-  wwcConfigConversationMongoPasswordInput: Parola curentă este %i. Tastați altceva
+  wwcConfigConversationMongoPasswordInput: Parola curentă este {0}. Tastați altceva
     decât 0 pentru a seta o parolă nouă sau tastați 0 pentru a reveni.
-  wwcConfigConversationMongoPortInput: Portul curent este %i. Tastați orice altceva
+  wwcConfigConversationMongoPortInput: Portul curent este {0}. Tastați orice altceva
     decât 0 pentru a seta un port nou sau tastați 0 pentru a reveni.
   wwcConfigConversationToggleMongoSuccess: MongoDB comutat cu succes. Reîncărcați
     pentru ca modificarea să aibă efect.
-  wwcConfigConversationMongoHostnameInput: Numele gazdei curent este %i. Tastați altceva
+  wwcConfigConversationMongoHostnameInput: Numele gazdei curent este {0}. Tastați altceva
     decât 0 pentru a seta un nou nume de gazdă sau tastați 0 pentru a reveni.
   wwcConfigConversationMongoHostnameSuccess: A schimbat cu succes numele de gazdă
     MongoDB.
   wwcConfigGUIMongoMenuButton: Schimbați setările MongoDB
   wwcConfigGUIToggleMongoButton: Comută MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Numele bazei de date curente este %i.
+  wwcConfigConversationMongoDatabaseNameInput: Numele bazei de date curente este {0}.
     Tastați altceva decât 0 pentru a seta un nou nume de bază de date sau tastați
     0 pentru a reveni.
   wwcConfigConversationMongoOptionalArgsInput: 'Argumentele MongoDB opționale curente
-    sunt: %i.Argumente de tip separate printr-o virgulă (cheie = valoare, key2 = value2),
+    sunt: {0}.Argumente de tip separate printr-o virgulă (cheie = valoare, key2 = value2),
     sau tastați clar pentru a șterge arg-urile curente sau tastați 0 pentru a reveni.'
   wwcConfigGUIMongoDatabaseNameButton: Schimbați baza de date MongoDB
-  wwcConfigConversationMongoUsernameInput: Numele de utilizator curent este %i. Tastați
+  wwcConfigConversationMongoUsernameInput: Numele de utilizator curent este {0}. Tastați
     altceva decât 0 pentru a seta un nou nume de utilizator sau tastați 0 pentru a
     reveni.
   wwcConfigGUIMongoOptionalArgsButton: Schimbați argumentele opționale MongoDB
@@ -455,7 +455,7 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Schimbați cheia API DeepL Traduceți
   wwcConfigGUIToggleDeepLTranslateButton: Comutați traducerea DeepL
   wwcConfigConversationDeepLTranslateApiKeySuccess: Cheia DeepL API setată cu succes.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Cheia API curentă este %i. Introduceți
+  wwcConfigConversationDeepLTranslateApiKeyInput: Cheia API curentă este {0}. Introduceți
     o cheie API pentru DeepL sau tastați 0 pentru a reveni.
   wwcConfigErrorsToIgnoreSuccess: Erori de traducător înregistrate cu succes pentru
     a ignora.
@@ -466,24 +466,24 @@ Messages:
     pentru a ignora frazele.
   wwcConfigGUIIgnoreErrorsButton: Modificați erorile pentru a ignora
   wwcConfigConversationIgnoreErrorsInput: 'Lista curentă de fraze din erorile traducătorului
-    de ignorat este: %i. Argumente de tip separate printr-o virgulă (cheie = valoare,
+    de ignorat este: {0}. Argumente de tip separate printr-o virgulă (cheie = valoare,
     key2=value2), sau tastați clar pentru a șterge arg-urile curente sau tastați 0
     pentru a reveni. În plus, tastarea „*” va determina pluginul să nu verifice erorile
     traducătorului.'
   wwcConfigConversationIgnoreErrorsCleared: Erori de traducător pentru a ignora frazele
     șterse cu succes.
 
-  wwcsActiveTransPrevRate: 'Translator activ Timp limită de rată anterioară: %i'
-  wwcsActiveTransSaved: 'Traducător activ salvat pe disc: %i'
-  wwcsActiveTransIncoming: 'Traducător activ care traduce chatul de intrare: %i'
-  wwcsActiveTransOutLang: 'Limba de ieșire a traducătorului activ: %i'
-  wwcsActiveTransInLang: 'Limbă de introducere activă a traducătorului: %i'
-  wwcsActiveTransBook: 'Carte de traducere activă a traducătorului: %i'
-  wwcsActiveTransSign: 'Semn activ de traducere a traducătorului: %i'
-  wwcsActiveTransUUID: 'Traducător activ UUID: %i'
-  wwcsActiveTransRateLimit: 'Limita activă a ratei traducătorului: %i'
-  wwcsActiveTransColorWarning: 'Traducător activ primit avertizare culoare: %i'
-  wwcsActiveTransOutgoing: 'Traducător activ care traduce chat-ul de ieșire: %i'
-  wwcsActiveTransItem: 'Traducător activ Traducător Articol: %i'
-  wwcsActiveTransEntity: 'Entitate de traducere activă a traducătorului: %i'
+  wwcsActiveTransPrevRate: 'Translator activ Timp limită de rată anterioară: {0}'
+  wwcsActiveTransSaved: 'Traducător activ salvat pe disc: {0}'
+  wwcsActiveTransIncoming: 'Traducător activ care traduce chatul de intrare: {0}'
+  wwcsActiveTransOutLang: 'Limba de ieșire a traducătorului activ: {0}'
+  wwcsActiveTransInLang: 'Limbă de introducere activă a traducătorului: {0}'
+  wwcsActiveTransBook: 'Carte de traducere activă a traducătorului: {0}'
+  wwcsActiveTransSign: 'Semn activ de traducere a traducătorului: {0}'
+  wwcsActiveTransUUID: 'Traducător activ UUID: {0}'
+  wwcsActiveTransRateLimit: 'Limita activă a ratei traducătorului: {0}'
+  wwcsActiveTransColorWarning: 'Traducător activ primit avertizare culoare: {0}'
+  wwcsActiveTransOutgoing: 'Traducător activ care traduce chat-ul de ieșire: {0}'
+  wwcsActiveTransItem: 'Traducător activ Traducător Articol: {0}'
+  wwcsActiveTransEntity: 'Entitate de traducere activă a traducătorului: {0}'
 

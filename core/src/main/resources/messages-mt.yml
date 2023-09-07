@@ -1,27 +1,27 @@
 Messages:
-  wwcgAutoTranslateStart: Issa traduzzjoni chat globali għal %o.
+  wwcgAutoTranslateStart: Issa traduzzjoni chat globali għal {0}.
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: Iċ-chat globali qed jiġi tradott
-    għal %o.
+    għal {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Bidla Amażonja Ewlenin Aċċess
   wwcrFail: Naqas milli jerġa 'jitgħabba WorldIdeChat.
   wwcConfigGUIUpdateCheckerButton: Iċċekkja Bidla għal Dewmien Aġġornamenti
   wwcUpdaterFailedGeneric: Mhux possibbli li tiċċekkja għal aġġornamenti WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Id-dewmien kurrenti fuq il-kontrollur aġġornament
-    huwa %i sekondi. Tip xi ħaġa akbar minn 10 biex tistabbilixxi valur ġdid, jew
+    huwa {0} sekondi. Tip xi ħaġa akbar minn 10 biex tistabbilixxi valur ġdid, jew
     xi ħaġa inqas minn 10 biex tmur lura.
   wwctGUIMainMenuGlobal: Traduzzjoni Globali
   wwcConfigConversationPluginUpdateChatSuccess: Plugin aġġornament chat tfakkira toggled
     b'suċċess.
-  wwctbOnTarget: traduzzjoni ktieb ppermettiet għal %i.
-  wwcsNotATranslator: Għad m'hemmx rekords disponibbli għal %i.
+  wwctbOnTarget: traduzzjoni ktieb ppermettiet għal {0}.
+  wwcsNotATranslator: Għad m'hemmx rekords disponibbli għal {0}.
   wwcConfigGUIbStatsButton: Toggle bStats
   wwctGUINewTranslationSource: Agħżel Lingwa Sors
-  wwcConfigConnectionFailed: Naqas milli jgħaqqdu lil %o. Kun żgur kredenzjali tiegħek
+  wwcConfigConnectionFailed: Naqas milli jgħaqqdu lil {0}. Kun żgur kredenzjali tiegħek
     u firewall huma kkonfigurati b'mod korrett!
   wwcConfigEnabledbStats: bStats attivati.
   wwctGUIMainMenuPlayer: Traduzzjoni Menu ta'%
   wwctGUIBookButton: Traduzzjoni Toggle Ktieb
-  wwcLangDetected: Lingwa skoperta %o.
+  wwcLangDetected: Lingwa skoperta {0}.
   wwcBookTranslateStart: Traduzzjoni ktieb mira...
   wwcConfigDisabledbStats: bStats b'diżabbiltà.
   wwctsOffSender: Sinjal traduzzjoni b'diżabilità.
@@ -31,40 +31,40 @@ Messages:
   wwctbOffSender: Ktieb traduzzjoni b'diżabilità.
   wwcConfigGUIAmazonTranslateButton: Ittraduċi Amazon
   wwcConfigConversationLangSuccess: Lingwa Plugin mibdula b'suċċess.
-  wwcsSuccessfulTranslations: 'Traduzzjonijiet b''suċċess: %i'
+  wwcsSuccessfulTranslations: 'Traduzzjonijiet b''suċċess: {0}'
   wwcConfigConversationTranslationCacheInput: Il-limitu cache traduzzjoni attwali
     huwa % frażijiet i. Tip xejn akbar minn 0 biex tistabbilixxi valur ġdid, jew tip
     0 biex jiskonnettja l-cache traduzzjoni. Tip xejn inqas minn 0 biex tmur lura.
-  wwctbOffTarget: Ktieb traduzzjoni b'diżabilità għal %i.
+  wwctbOffTarget: Ktieb traduzzjoni b'diżabilità għal {0}.
   wwcConfigGUIGeneralSettings: Konfigurazzjoni Ġenerali
   wwcInvalidLang: Lingwa invalida fil-konfig.yml tiegħek. Inadempjenti biex en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Ir-reġjun tal-Amazon stabbilixxa
     b'suċċess.
-  wwcConfigRateLimitEnabled: Il-limitu tar-rata globali ppermettiet u ssettja %i sekondi.
+  wwcConfigRateLimitEnabled: Il-limitu tar-rata globali ppermettiet u ssettja {0} sekondi.
   wwcBadPerms: M'għandekx il-permessi meħtieġa biex tesegwixxi dan il-kmand!
   wwcConfigGUILangButton: Bidla Lingwa Plugin
   wwctGUISignButton: Toggle Sinjal Traduzzjoni
   wwcUpdaterOutOfDate: WorldwideChat huwa skadut. Jekk jogħġbok aġġorna l-aħħar verżjoni,
-    %i.
+    {0}.
   wwcConfigGUINextPageButton: Paġna li jmiss
   wwcConfigInvalidTranslatorSettings: Settings traduttur invalidi! Jekk jogħġbok ħalli
     traduttur wieħed biss fil-konfig.yml tiegħek.
   wwcConfigGUIQuitButton: Ħruġ & Save Bidliet
-  wwctPlayerNotFound: Player %i ma nstabx.
+  wwctPlayerNotFound: Player {0} ma nstabx.
   wwcConfigGUIAmazonTranslateRegionButton: Bidla Reġjun Amazon
   wwcConfigConversationLangInput: 'Jekk jogħġbok ikteb kodiċi tal-lingwa valida, jew
-    tip 0 biex tikkanċella. Kodiċijiet validi tal-lingwa: %o'
+    tip 0 biex tikkanċella. Kodiċijiet validi tal-lingwa: {0}'
   wwcConfigConversationLangInvalid: Kodiċi tal-lingwa invalidu!
   wwcConfigGUIWatsonAPIKeyButton: Bidla Watson API Ewlenin
-  wwcEnabled: Enabled verżjoni WorldwideChat %i.
-  wwcgLangToLangStart: Issa traduzzjoni chat globali minn %i sa %o.
+  wwcEnabled: Enabled verżjoni WorldwideChat {0}.
+  wwcgLangToLangStart: Issa traduzzjoni chat globali minn {0} sa {1}.
   wwctbOnSender: Ktieb traduzzjoni ppermettiet. Ikklikkja lemin waqt li żżomm ktieb
     biex tittraduċih!
   wwcListenersInitialized: Semmiegħa inizjalizzati.
   wwcConfigGUIPluginUpdateChatButton: Ibgħat it-Tifkira taċ-Chat għal Aġġornamenti
   wwcConfigConversationSendTranslationChatSuccess: Tifkira ta 'chat traduttur attiv
     toggled b'suċċess.
-  wwctsOffTarget: Traduzzjoni Sign b'diżabilità għal %i.
+  wwctsOffTarget: Traduzzjoni Sign b'diżabilità għal {0}.
   wwcUpdaterConnectionFailed: Mhux possibbli li tiċċekkja għall-aħħar aġġornamenti
     fuq Github.
   watsonNotFoundExceptionNotification: Kapaċi tittraduċi l-input tiegħek aktar.
@@ -78,7 +78,7 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Bidla Google Ittraduċi API Ewlenin
   wwcSignDeletedOrTooLong: Is-sinjal fil-mira kien jew imħassar jew it-traduzzjoni
     kienet twila wisq. Traduzzjoni
-  wwctsOnTarget: traduzzjoni Sign ppermettiet għal %i.
+  wwctsOnTarget: traduzzjoni Sign ppermettiet għal {0}.
   wwcConfigCacheDisabled: Cache tat-traduttur b'diżabilità.
   wwcConfigConversationWatsonURLInput: Jekk jogħġbok input URL servizz URL għall Watson,
     jew tip 0 li jmorru lura.
@@ -93,21 +93,21 @@ Messages:
   wwcNoConsole: Dan il-kmand jista 'jitmexxa biss minn plejer.
   wwcInitializationFail: Naqas milli jinizjalizza WorldwideChat.
   wwcrSuccess: B'suċċess mgħobbija WorldwideChat.
-  wwcPlayerNotFound: Player %i ma nstabx.
+  wwcPlayerNotFound: Player {0} ma nstabx.
   wwcUpdaterOutOfDateChat: WorldwideChat huwa skadut. Jekk jogħġbok aġġorna l-aħħar
     verżjoni.
   wwcConfigConversationRateLimitSuccess: Limitu tar-rata stabbilit b'suċċess.
   wwcConfigConversationWatsonURLSuccess: URL Watson stabbiliti b'suċċess.
-  wwctbPlayerNotFound: Player %i jew ma jinstabx, jew mhuwiex traduttur attiv.
+  wwctbPlayerNotFound: Player {0} jew ma jinstabx, jew mhuwiex traduttur attiv.
   wwcConfigConversationTranslationCacheSuccess: Limitu cache Traduzzjoni stabbilit
     b'suċċess.
   wwctInvalidArgs: Argumenti invalidi pprovduti!
   wwcConfigGUIPrefixButton: Bidla Plugin Prefiss
   wwctSameLangError: Ma tistax tittraduċi għall-istess lingwa!
   wwctGUINewTranslationTarget: Agħżel Lingwa tal-Mira
-  wwcConfigConnectionSuccess: Konnessi b'suċċess għal %o!
+  wwcConfigConnectionSuccess: Konnessi b'suċċess għal {0}!
   wwcConfigGUIGoogleTranslateButton: Google Ittraduċi
-  wwcsIsActiveTranslator: 'Huwa Traduttur Attiv: %i'
+  wwcsIsActiveTranslator: 'Huwa Traduttur Attiv: {0}'
   wwcConfigConversationPrefixInput: Jekk jogħġbok tip waħda ġdida, jew tip 0 li jmorru
     lura.
   wwcConfigGUIPreviousPageButton: Paġna ta'qabel
@@ -125,29 +125,29 @@ Messages:
   wwcUnsupportedVersion: 'Inti qed taħdem verżjoni mhux appoġġjati ta Bukkit, Spigot,
     jew Paper. Verżjonijiet appoġġjati:'
   wwcGlobalOnJoinTranslationNotificationSourceLang: Iċ-chat globali qed jiġi tradott
-    minn %i sa %o.
+    minn {0} sa {1}.
   wwcConfigGUITranslatorSettings: Konfigurazzjoni traduttur
   wwcConfigConversationGoogleTranslateAPIKeyInput: Jekk jogħġbok input ewlieni API
     għall Google Translate, jew tip 0 li jmorru lura.
   wwcConfigConversationRateLimitInput: Il-limitu attwali rata globali għal kull traduzzjoni
-    huwa %i sekondi. Tip xi ħaġa akbar minn 0 biex tistabbilixxi valur ġdid, jew tip
+    huwa {0} sekondi. Tip xi ħaġa akbar minn 0 biex tistabbilixxi valur ġdid, jew tip
     0 biex jiskonnettja l-limitu. Tip xejn inqas minn 0 biex tmur lura.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Ittraduċi API ewlenin
     stabbiliti b'suċċess.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Bidla Amażonja Ewlenin Sigriet
   wwcVersion: WorldwideChat, verżjoni
-  wwcsAttemptedTranslations: 'Attentat Traduzzjonijiet: %i'
+  wwcsAttemptedTranslations: 'Attentat Traduzzjonijiet: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon ċavetta sigrieta sett
     b'suċċess.
   wwcConfigConversationWatsonAPIKeySuccess: Watson API ewlenin stabbiliti b'suċċess.
   wwcRateLimit: Traduzzjonijiet tiegħek huma rata limitata. Jekk jogħġbok stenna oħra
-    %i sekondi.
+    {0} sekondi.
   wwcConfigCacheEnabled: Cache traduttur ppermettiet u stabbiliti għal limitu ta '
-    %i.
+    {0}.
   wwctGUIExistingTranslationButton: Traduzzjoni Sessjoni Kurrenti
   wwcUserDataReloaded: Mgħobbija data kollha utent ffrankati.
   wwcConfigGUISendTranslationChatButton: Ibgħat Tfakkira Chat biex Traduttur Attiv
-  wwcsLastTranslationTime: 'L-aħħar Ħin tat-Traduzzjoni (Suċċess): %i'
+  wwcsLastTranslationTime: 'L-aħħar Ħin tat-Traduzzjoni (Suċċess): {0}'
   wwctbNotATranslator: Inti mhux traduttur attiv! Kun żgur li stabbilixxejt dan ma
     '/wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: Jekk jogħġbok input ċavetta
@@ -157,24 +157,24 @@ Messages:
   wwcConfigBadUpdateDelay: Dewmien ta 'updater invalidu stabbilit f'konfig.yml. Inadempjenti
     għal 86400 sekonda...
   wwctrlRateLimitOffSender: Itfi l-limitu tar-rata tiegħek.
-  wwctrlRateLimitAlreadyOffTarget: Il-limitu tar-rata ta '%i diġà huwa diżattivat.
-  wwctrlPlayerNotFound: Player %i jew ma jinstabx, jew mhuwiex traduttur attiv.
-  wwctrlRateLimitSetSender: Issettja l-limitu tar-rata tiegħek għal %i sekondi.
-  wwctrlRateLimitOffTarget: Itfi l-limitu tar-rata ta '%i.
-  wwctrlRateLimitSetTarget: Issettja l-limitu tar-rata ta '%i sa %o sekondi.
+  wwctrlRateLimitAlreadyOffTarget: Il-limitu tar-rata ta '{0} diġà huwa diżattivat.
+  wwctrlPlayerNotFound: Player {0} jew ma jinstabx, jew mhuwiex traduttur attiv.
+  wwctrlRateLimitSetSender: Issettja l-limitu tar-rata tiegħek għal {0} sekondi.
+  wwctrlRateLimitOffTarget: Itfi l-limitu tar-rata ta '{0}.
+  wwctrlRateLimitSetTarget: Issettja l-limitu tar-rata ta '{0} sa {1} sekondi.
   wwctrlNotATranslator: Inti mhux traduttur attiv! Kun żgur li stabbilixxejt dan ma
     '/wwct.
   wwctrlRateLimitAlreadyOffSender: Il-limitu tar-rata tiegħek huwa diġà b'diżabilità.
   wwctGUIRateButton: Limitu tar-Rata Set
-  wwctGUIConversationRateLimit: Il-limitu tar-rata għal kull traduzzjoni huwa ju %i
+  wwctGUIConversationRateLimit: Il-limitu tar-rata għal kull traduzzjoni huwa ju {0}
     sekondi. Tip xi ħaġa akbar minn 0 biex tistabbilixxi valur ġdid, jew tip 0 biex
     jiskonnettja l-limitu. Tip xejn inqas minn 0 biex tmur lura.
   wwctGUITargetPlayerNull: Il-plejer fil-mira skonnettjat mis-server.
   wwcConfigConversationSyncUserDataDelayInput: Id-dewmien kurrenti għal kull sinkronizzazzjoni
-    ta 'data utent huwa %i sekondi. Tip xi ħaġa akbar minn 10 biex tistabbilixxi valur
+    ta 'data utent huwa {0} sekondi. Tip xi ħaġa akbar minn 10 biex tistabbilixxi valur
     ġdid, jew xi ħaġa inqas minn 10 biex tmur lura.
   wwcConfigGUISyncUserDataButton: Bidla Utent Data sync Dewmien
-  wwcConfigSyncDelayEnabled: Dewmien għal kull utent sett sync data għal %i sekondi.
+  wwcConfigSyncDelayEnabled: Dewmien għal kull utent sett sync data għal {0} sekondi.
   wwcConfigConversationSyncUserDataDelaySuccess: Utent data sync dewmien stabbiliti
     b'suċċess.
   wwcConfigSyncDelayInvalid: Dewmien invalidu tas-sinkronizzazzjoni tad-dejta tal-utent
@@ -182,24 +182,24 @@ Messages:
   wwcConfigCacheInvalid: Id-daqs tal-cache tat-traduttur invalidu. Inadempjenti sa
     10...
   wwcInventoryErrorPlayer: Żball skopert bil-GUI tiegħek. Ġie mibgħut log lill-console.
-  wwcInventoryError: Żball skoperti bil GUI ta 'utent %i. Jekk jogħġbok irrapporta
+  wwcInventoryError: Żball skoperti bil GUI ta 'utent {0}. Jekk jogħġbok irrapporta
     din il-kwistjoni lill-iżviluppatur.
-  wwctiOffTarget: Punt traduzzjoni b'diżabilità għal %i.
+  wwctiOffTarget: Punt traduzzjoni b'diżabilità għal {0}.
   wwctiOffSender: Traduzzjoni oġġett b'diżabilità.
   wwcItemTranslateTitleStock: Ma jistgħux jittraduċu ismijiet ta 'entrati default.
   wwctGUIItemButton: Toggle Punt Traduzzjoni
   wwcItemTranslateTitleDone: Titlu oġġett tradott b'suċċess.
   wwcGUITempItem: Punt Display
   wwcItemTranslateStart: Traduzzjoni oġġett mira...
-  wwcBookTranslateTitleSuccess: 'Titlu tal-Ktieb Tradott: %i'
+  wwcBookTranslateTitleSuccess: 'Titlu tal-Ktieb Tradott: {0}'
   wwctiOnSender: traduzzjoni oġġett ppermettiet. Ikklikkja dritt ma 'oġġett fl-idejn
     prinċipali tiegħek biex tittraduċiha!
   wwcItemTranslateLoreStart: Traduzzjoni Lore ta 'oġġett fil-mira...
   wwcItemTranslateLoreDone: Oġġett tradott Lore b'suċċess.
-  wwctiOnTarget: traduzzjoni Punt ppermettiet għal %i.
+  wwctiOnTarget: traduzzjoni Punt ppermettiet għal {0}.
   wwcInvalidTranslator: Settings tat-traduttur invalidi. Jekk jogħġbok jiffissaw dan
     fil config.yml tiegħek jew ma '/wwcc għall-użu dan plugin.
-  wwcConfigGUIEachTranslatorSettings: '%i Konfigurazzjoni'
+  wwcConfigGUIEachTranslatorSettings: '{0} Konfigurazzjoni'
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat ma jikkonformax l-użu ta '/tagħbija mill-ġdid.
     Jekk jogħġbok ipproċedi b'kawtela.
@@ -207,7 +207,7 @@ Messages:
     jew troubleshooter, għandek itfi dan.
   wwcTranslatorErrorThresholdReached: Il-limitu ta'żball milħuq. Dan plugin issa se
     jerġgħu jitgħabbew, u jiskonnettja tradutturi kollha.
-  wwcConfigErrorLimitEnabled: Traduttur limitu ta 'żball stabbilit għal %i.
+  wwcConfigErrorLimitEnabled: Traduttur limitu ta 'żball stabbilit għal {0}.
   wwcTranslatorError: Problema tqum waqt li tipprova t-traduzzjoni tiegħek. Jekk jogħġbok
     erġa'pprova.
   wwcConfigErrorLimitInvalid: Limitu ta 'żball traduttur invalidu stabbilit f'konfig.yml.
@@ -215,10 +215,10 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: Jekk jogħġbok iċċekkja errorLog.txt
     fil-folder plugin WorldwideChat għal aktar informazzjoni.
   wwctInvalidInputLangCode: 'Invalidu kodiċi lingwa input pprovduta! Kodiċijiet ta
-    ''terminu validi: %o'
-  wwcsTitle: Rekord ta'%i
+    ''terminu validi: {0}'
+  wwcsTitle: Rekord ta'{0}
   wwctInvalidOutputLangCode: 'Kodiċi tal-lingwa output invalidu pprovdut! Kodiċijiet
-    ta ''terminu validi: %o'
+    ta ''terminu validi: {0}'
   wwctGUISourceTranslationSelected: Int għażilt din il-lingwa.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Ħassar Override
   wwcConfigConversationOverrideTextChange: Jekk jogħġbok ittajpja messaġġ ġdid għal
@@ -249,48 +249,48 @@ Messages:
   wwcConfigMessageCharLimitInvalid: Limitu invalidu għal kull messaġġ stabbilit f'konfig.yml.
     Inadempjenti għal 255 chars...
   wwcConfigConversationCharacterLimitSuccess: Limitu tal-karattru stabbilit b'suċċess.
-  wwcteOnTarget: It-traduzzjoni tal-entità ppermettiet għal %i.
-  wwcEntityTranslateDone: 'Isem ta'' Entità Tradott: %i'
+  wwcteOnTarget: It-traduzzjoni tal-entità ppermettiet għal {0}.
+  wwcEntityTranslateDone: 'Isem ta'' Entità Tradott: {0}'
   wwcEntityTranslateNoName: Entità m'għandhiex isem tad-dwana.
   wwcConfigConversationErrorLimitInput: Il-limitu ta 'żball attwali għal kull traduttur
-    hija %i. tip xejn akbar minn 0 li jiġi stabbilit valur ġdid, jew tip xejn inqas
+    hija {0}. tip xejn akbar minn 0 li jiġi stabbilit valur ġdid, jew tip xejn inqas
     minn jew ugwali għal 0 li jmorru lura.
   wwcConfigGUIGlobalRateLimitButton: Bidla tal-Limitu tar-Rata Globali
   wwcteOnSender: Entità traduzzjoni ppermettiet. Ikklikkja fuq il-lemin fuq entità
     biex tittraduċi isimha!
   wwcConfigGUIResponseLimitButton: Bidla timeout Rispons Translator
   wwcConfigMessageCharLimitEnabled: Limitu Karattru għal kull messaġġ stabbilit għal
-    %i karattri.
-  wwcteOffTarget: Entità traduzzjoni b'diżabilità għal %i.
+    {0} karattri.
+  wwcteOffTarget: Entità traduzzjoni b'diżabilità għal {0}.
   wwcCharLimit: Il-messaġġ tiegħek huwa twil wisq! Jekk jogħġbok kun żgur messaġġ
     tiegħek huwa inqas minn % karattri i fit-tul.
   wwcConfigConversationCharacterLimitInput: Il-limitu attwali tal-karattru għal kull
-    messaġġ hija %i karattri. Tip xejn akbar minn 0 biex tistabbilixxi valur ġdid,
+    messaġġ hija {0} karattri. Tip xejn akbar minn 0 biex tistabbilixxi valur ġdid,
     jew tip xejn inqas minn jew ugwali għal 0 li jmorru lura.
   wwcteOffSender: Entità traduzzjoni b'diżabilità.
   wwctGUIEntityButton: Traduzzjoni ta 'Entità
   wwctrlRateLimitBadInt: Il-limitu tar-rata tiegħek mhuwiex numru sħiħ validu.
-  wwcTranslatorErrorConsole: Problema seħħet waqt l-utent %i kien jippruvaw traduzzjoni
+  wwcTranslatorErrorConsole: Problema seħħet waqt l-utent {0} kien jippruvaw traduzzjoni
     tagħhom. Jekk jogħġbok iċċekkja errorLog.txt għal aktar dettalji.
   wwctGUIChatButton: Traduzzjoni Toggle Chat
   wwcrBegin: Reloading WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Sessjoni ta 'traduzzjoni għal % twaqqfet.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Chat globali qed jiġi
-    tradott, imma inti għandek sessjoni ta 'traduzzjoni attiva minn %i sa %o.
+    tradott, imma inti għandek sessjoni ta 'traduzzjoni attiva minn {0} sa {1}.
   wwctCannotTranslateConsole: Inti ma tistax tibda sessjoni ta 'traduzzjoni għall-console!
-  wwctLangToLangStart: Tibda sessjoni ġdida ta 'traduzzjoni minn %i sa %o.
+  wwctLangToLangStart: Tibda sessjoni ġdida ta 'traduzzjoni minn {0} sa {1}.
   wwcOnJoinTranslationNotificationSourceLang: Għandek sessjoni ta 'traduzzjoni attiva
-    minn %i sa %o.
-  wwctAutoTranslateStartOtherPlayer: Tibda sessjoni ġdida ta 'traduzzjoni għal %i
-    sa %o.
+    minn {0} sa {1}.
+  wwctAutoTranslateStartOtherPlayer: Tibda sessjoni ġdida ta 'traduzzjoni għal {0}
+    sa {0}.
   wwctTranslationStopped: Is-sessjoni tat-traduzzjoni tiegħek twaqqfet.
-  wwctLangToLangStartOtherPlayer: Tibda sessjoni ġdida ta 'traduzzjoni għal %o minn
-    %i sa %e.
-  wwctAutoTranslateStart: Tibda sessjoni ġdida ta 'traduzzjoni għal %o.
+  wwctLangToLangStartOtherPlayer: Tibda sessjoni ġdida ta 'traduzzjoni għal {0} minn
+    {0} sa {1}.
+  wwctAutoTranslateStart: Tibda sessjoni ġdida ta 'traduzzjoni għal {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Għandek sessjoni ta 'traduzzjoni attiva
-    għal %o.
+    għal {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Iċ-chat globali qed
-    jiġi tradott, imma għandek sessjoni ta 'traduzzjoni attiva għal %o.
+    jiġi tradott, imma għandek sessjoni ta 'traduzzjoni attiva għal {0}.
   wwcConfigGUIChangesNotSaved: Il-bidliet tiegħek mhux se jidħlu fis-seħħ sakemm tikklikkja
     fuq il-barriera ħamra fi/wwcc.
   wwctciOffSender: Traduzzjoni chat deħlin b'diżabilità.
@@ -301,22 +301,22 @@ Messages:
   wwctciOnSender: Traduzzjoni chat deħlin ppermettiet. Kull ħaġa li tirċievi se tkun
     tradotta!
   wwctGUIChatMenu: Toggle Chat Menu Traduzzjoni
-  wwctcoOnTarget: Ħierġa chat traduzzjoni ppermettiet għal %i.
-  wwctcoOffTarget: Ħierġa chat traduzzjoni b'diżabilità għal %i.
+  wwctcoOnTarget: Ħierġa chat traduzzjoni ppermettiet għal {0}.
+  wwctcoOffTarget: Ħierġa chat traduzzjoni b'diżabilità għal {0}.
   wwctGUIChatOutgoingButton: Toggle Outgoing Chat Traduzzjoni
-  wwctciOnTarget: Traduzzjoni chat deħlin ppermettiet għal %i.
-  wwctciOffTarget: Traduzzjoni chat deħlin b'diżabilità għal %i.
+  wwctciOnTarget: Traduzzjoni chat deħlin ppermettiet għal {0}.
+  wwctciOffTarget: Traduzzjoni chat deħlin b'diżabilità għal {0}.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: Chat oriġinali deħlin mehmuża
     mat-traduzzjoni bħala test jerġgħu toggled b'suċċess.
   wwcConfigGUISendIncomingHoverTextChatButton: Żid Messaġġi oriġinali li deħlin bħala
     Hover Test
-  wwctGUIExistingChatOutgoingEnabled: 'Ħierġa Chat Traduzzjoni ppermettiet: %i'
-  wwctGUIExistingTranslationInput: 'Lingwa Input: %i'
-  wwctGUIExistingChatIncomingEnabled: 'Traduzzjoni Chat deħlin ppermettiet: %i'
-  wwctGUIExistingTranslationOutput: 'Output Lingwa: %i'
+  wwctGUIExistingChatOutgoingEnabled: 'Ħierġa Chat Traduzzjoni ppermettiet: {0}'
+  wwctGUIExistingTranslationInput: 'Lingwa Input: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Traduzzjoni Chat deħlin ppermettiet: {0}'
+  wwctGUIExistingTranslationOutput: 'Output Lingwa: {0}'
   wwcTranslatorAttempt: Jippruvaw jgħaqqdu lill traduttur fil config.yml... (ATTEMPT
-    %i/ %o)
-  wwcTimeoutExceptionConsole: Player %i kellhom ħin talba aktar riċenti tagħhom. Dan
+    {0}/ {1})
+  wwcTimeoutExceptionConsole: Player {0} kellhom ħin talba aktar riċenti tagħhom. Dan
     l-iżball mhuwiex fatali, iżda WorldwideChat għandu jerġa 'jitgħabba jekk jibqa'
     jiġri.
   wwcGUIPageNumber: 'Paġna Numru: %'
@@ -340,35 +340,35 @@ Messages:
   wwcConfigGUISQLPortButton: Bidla SQL Port
   wwcConfigGUISQLOptionalArgsButton: Bidla SQL Fakultattiv
   wwcConfigConversationToggleSQLSSLSuccess: SSL għall SQL toggled b'suċċess.
-  wwcConfigConversationSQLPortInput: Il-port attwali huwa %i. Tip xi ħaġa oħra għajr
+  wwcConfigConversationSQLPortInput: Il-port attwali huwa {0}. Tip xi ħaġa oħra għajr
     0 li jistabbilixxu port ġdid, jew it-tip 0 li jmorru lura.
   wwcConfigGUISQLPasswordButton: Bidla Password SQL
   wwcConfigConversationSQLHostnameSuccess: Biddel b'suċċess il-hostname SQL.
-  wwcConfigConversationSQLHostnameInput: Il hostname attwali huwa %i. Tip xi ħaġa
+  wwcConfigConversationSQLHostnameInput: Il hostname attwali huwa {0}. Tip xi ħaġa
     oħra għajr 0 li jistabbilixxu hostname ġdid, jew it-tip 0 li jmorru lura.
   wwcConfigGUISQLHostnameButton: Bidla SQL Hostname
   wwcConfigConversationSQLOptionalArgsSuccess: Biddel b'suċċess l-argumenti SQL fakultattivi.
   wwcConfigConversationSQLPasswordSuccess: Biddel b'suċċess il-password SQL.
-  wwcConfigConversationSQLPasswordInput: Il-password attwali huwa %i. Ittajpja xi
+  wwcConfigConversationSQLPasswordInput: Il-password attwali huwa {0}. Ittajpja xi
     ħaġa oħra għajr 0 biex tissettja password ġdida, jew it-tip 0 biex tmur lura.
   wwcConfigGUIToggleSQLSSLButton: Toggle SQL SSL
   wwcConfigConversationSQLUsernameSuccess: B'suċċess biddel il-username SQL.
-  wwcConfigConversationSQLUsernameInput: Il-username attwali huwa %i. Tip xi ħaġa
+  wwcConfigConversationSQLUsernameInput: Il-username attwali huwa {0}. Tip xi ħaġa
     oħra għajr 0 li jistabbilixxu username ġdid, jew it-tip 0 li jmorru lura.
   wwcConfigConversationSQLPortSuccess: B'suċċess biddel il-port SQL.
   wwcConfigGUISQLUsernameButton: Bidla SQL Username
   wwcConfigConversationSQLOptionalArgsCleared: Argumenti fakultattivi kklerjati b'suċċess.
   wwcConfigConversationSQLOptionalArgsInput: 'L-argumenti attwali SQL fakultattivi
-    huma: %i. argumenti Tip separati minn virgola (ċavetta = valur, key2 = value2),
+    huma: {0}. argumenti Tip separati minn virgola (ċavetta = valur, key2 = value2),
     jew tip ċara biex timsaħ il-args attwali, jew it-tip 0 li jmorru lura.'
-  wwcConfigConversationSQLDatabaseNameInput: L-isem database attwali hija %i. Tip
+  wwcConfigConversationSQLDatabaseNameInput: L-isem database attwali hija {0}. Tip
     xi ħaġa oħra għajr 0 li jiġi stabbilit isem database ġdid, jew it-tip 0 li jmorru
     lura.
   wwcConfigGUISQLDatabaseNameButton: Bidla Database SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Biddel b'suċċess l-isem tad-database
     SQL.
   wwcConfigConversationFatalAsyncAbort: Il timeout attwali biex abort kompiti kollha
-    async huwa %i sekondi. Ittajpja xi ħaġa 'l fuq minn 7 biex tissettja timeout ġdid,
+    async huwa {0} sekondi. Ittajpja xi ħaġa 'l fuq minn 7 biex tissettja timeout ġdid,
     jew xi ħaġa taħtha biex tmur lura.
   wwcConfigConversationFatalAsyncSuccess: Async timeout kompitu stabbiliti b'suċċess.
   wwcConfigGUIFatalAsyncAbortButton: Bidla Timeout Task Async
@@ -378,7 +378,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Bidla Ħieles Ittraduċi API Ewlenin
   libreHttp403: Nieqsa Libre Ittraduċi API Ewlenin, jew inti huma pprojbiti mis-server!
   wwcConfigConversationLibreURLSuccess: Free URL stabbiliti b'suċċess.
-  wwcConfigConversationLibreTranslateApiKeyInput: Il-muftieħ API attwali huwa %i.
+  wwcConfigConversationLibreTranslateApiKeyInput: Il-muftieħ API attwali huwa {0}.
     Jekk jogħġbok input ewlenin API għall Libre, jew it-tip 0 li jmorru lura.
   wwcConfigGUILibreTranslateButton: Free Ittraduċi
   libreHttp429: L-ebda fiduċja minħabba l-limitu tar-rata mis-server.
@@ -386,34 +386,34 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: B'suċċess toggled Libre Ittraduċi.
     Reload biex il-bidliet jidħlu fis-seħħ.
   wwcConfigConversationLibreTranslateApiKeySuccess: Free API sett ewlenin b'suċċess.
-  wwcConfigConversationLibreURLInput: Il-URL attwali huwa %i. Jekk jogħġbok input
+  wwcConfigConversationLibreURLInput: Il-URL attwali huwa {0}. Jekk jogħġbok input
     URL għall Libre, jew tip 0 li jmorru lura.
-  libreHttpUnknown: 'Mhux magħruf żball http: %i'
+  libreHttpUnknown: 'Mhux magħruf żball http: {0}'
   wwcConfigGUILibreTranslateURLButton: Bidla Free Ittraduċi URL
-  wwcConfigConnectionFail: Naqas li jikkonnettja ma %i.
+  wwcConfigConnectionFail: Naqas li jikkonnettja ma {0}.
   wwcConfigGUIMongoSettings: Konfigurazzjoni MongODB
   wwcConfigConversationMongoDatabaseNameSuccess: Biddel b'suċċess l-isem tad-database
     MongoDB.
   wwcConfigGUIMongoHostnameButton: Bidla MongoDB hostname
-  wwcConfigConversationMongoPasswordInput: Il-password attwali hija %i. Tip xi ħaġa
+  wwcConfigConversationMongoPasswordInput: Il-password attwali hija {0}. Tip xi ħaġa
     oħra għajr 0 li jiġi stabbilit password ġdida, jew tip 0 li jmorru lura.
-  wwcConfigConversationMongoPortInput: Il-port attwali huwa %i. Tip xi ħaġa oħra għajr
+  wwcConfigConversationMongoPortInput: Il-port attwali huwa {0}. Tip xi ħaġa oħra għajr
     0 li jiġi stabbilit port ġdid, jew it-tip 0 li jmorru lura.
   wwcConfigConversationToggleMongoSuccess: MongoDB toggled b'suċċess. Reload biex
     il-bidla tidħol fis-seħħ.
-  wwcConfigConversationMongoHostnameInput: Il hostname attwali huwa %i. Tip xi ħaġa
+  wwcConfigConversationMongoHostnameInput: Il hostname attwali huwa {0}. Tip xi ħaġa
     oħra għajr 0 li jiġu stabbiliti hostname ġdid, jew it-tip 0 li jmorru lura.
   wwcConfigConversationMongoHostnameSuccess: Biddel b'suċċess il-hostname MongoDB.
   wwcConfigGUIMongoMenuButton: Bidla Settings MongoDB
   wwcConfigGUIToggleMongoButton: Toggle MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: L-isem database kurrenti huwa %i. Tip
+  wwcConfigConversationMongoDatabaseNameInput: L-isem database kurrenti huwa {0}. Tip
     xi ħaġa oħra għajr 0 li jiġi stabbilit isem database ġdid, jew it-tip 0 li jmorru
     lura.
   wwcConfigConversationMongoOptionalArgsInput: 'L-argumenti attwali MongoDB fakultattivi
-    huma: %i. argumenti tip separati minn virgola (ċavetta = valur, key2 = value2),
+    huma: {0}. argumenti tip separati minn virgola (ċavetta = valur, key2 = value2),
     jew tip ċar biex timsaħ l-args attwali, jew it-tip 0 li jmorru lura.'
   wwcConfigGUIMongoDatabaseNameButton: Bidla Database MongoDB
-  wwcConfigConversationMongoUsernameInput: Il-username attwali huwa %i. Tip xi ħaġa
+  wwcConfigConversationMongoUsernameInput: Il-username attwali huwa {0}. Tip xi ħaġa
     oħra għajr 0 li jiġi stabbilit username ġdid, jew it-tip 0 li jmorru lura.
   wwcConfigGUIMongoOptionalArgsButton: Bidla MongODB Argumenti
   wwcConfigConversationMongoUsernameSuccess: Biddel b'suċċess il-username MongoDB.
@@ -435,7 +435,7 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Bidla DeepL Ittraduċi API Ewlenin
   wwcConfigGUIToggleDeepLTranslateButton: Ittraduċi DeepL Ittraduċi
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API key issettjat b'suċċess.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Iċ-ċavetta API attwali huwa %i.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Iċ-ċavetta API attwali huwa {0}.
     Jekk jogħġbok daħħal ċavetta API għal DeepL, jew tip 0 biex tmur lura.
   wwcConfigErrorsToIgnoreSuccess: Żbalji tat-traduttur irreġistrati b'suċċess biex
     jinjoraw.
@@ -446,24 +446,24 @@ Messages:
     biex jinjora frażijiet.
   wwcConfigGUIIgnoreErrorsButton: Ibdel Żbalji biex Tinjora
   wwcConfigConversationIgnoreErrorsInput: 'Il-lista attwali ta ''frażijiet fl-iżbalji
-    traduttur li jinjora huma: %i. argumenti Tip separati minn virgola (ewlenin =
+    traduttur li jinjora huma: {0}. argumenti Tip separati minn virgola (ewlenin =
     valur, key2 = value2), jew tip ċar biex timsaħ l-args attwali, jew tip 0 li jmorru
     lura. Barra minn hekk, ittajpjar “*” se jikkawżaw l-plugin li ma jiċċekkjaw xi
     żbalji traduttur.'
   wwcConfigConversationIgnoreErrorsCleared: Żbalji tat-traduttur biex jinjoraw frażijiet
     ikklerjati b'suċċess.
 
-  wwcsActiveTransPrevRate: 'Traduttur Attiv Preċedenti Rata Limitu Ħin: %i'
-  wwcsActiveTransSaved: 'Traduttur Attiv Ssejvjat fuq Disk: %i'
-  wwcsActiveTransIncoming: 'Traduttur Attiv li Jittraduċi Chat Incoming: %i'
-  wwcsActiveTransOutLang: 'Attiva Traduttur Output Lingwa: %i'
-  wwcsActiveTransInLang: 'Attiva Traduttur Input Lingwa: %i'
-  wwcsActiveTransBook: 'Attiva Traduttur Ktieb Traduttur: %i'
-  wwcsActiveTransSign: 'Sinjal tat-Traduzzjoni tat-Traduttur Attiv: %i'
-  wwcsActiveTransUUID: 'Traduttur Attiv UUID: %i'
-  wwcsActiveTransRateLimit: 'Limitu tar-Rata tat-Traduttur Attiv: %i'
-  wwcsActiveTransColorWarning: 'Traduttur Attiv Irċieva Twissija tal-Kulur: %i'
-  wwcsActiveTransOutgoing: 'Traduttur Attiv li Jittraduċi Chat ħiereġ: %i'
-  wwcsActiveTransItem: 'Attiva Traduttur Traduttur Punt: %i'
-  wwcsActiveTransEntity: 'Attiva Traduttur Translator Entità: %i'
+  wwcsActiveTransPrevRate: 'Traduttur Attiv Preċedenti Rata Limitu Ħin: {0}'
+  wwcsActiveTransSaved: 'Traduttur Attiv Ssejvjat fuq Disk: {0}'
+  wwcsActiveTransIncoming: 'Traduttur Attiv li Jittraduċi Chat Incoming: {0}'
+  wwcsActiveTransOutLang: 'Attiva Traduttur Output Lingwa: {0}'
+  wwcsActiveTransInLang: 'Attiva Traduttur Input Lingwa: {0}'
+  wwcsActiveTransBook: 'Attiva Traduttur Ktieb Traduttur: {0}'
+  wwcsActiveTransSign: 'Sinjal tat-Traduzzjoni tat-Traduttur Attiv: {0}'
+  wwcsActiveTransUUID: 'Traduttur Attiv UUID: {0}'
+  wwcsActiveTransRateLimit: 'Limitu tar-Rata tat-Traduttur Attiv: {0}'
+  wwcsActiveTransColorWarning: 'Traduttur Attiv Irċieva Twissija tal-Kulur: {0}'
+  wwcsActiveTransOutgoing: 'Traduttur Attiv li Jittraduċi Chat ħiereġ: {0}'
+  wwcsActiveTransItem: 'Attiva Traduttur Traduttur Punt: {0}'
+  wwcsActiveTransEntity: 'Attiva Traduttur Translator Entità: {0}'
 

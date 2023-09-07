@@ -1,75 +1,75 @@
 Messages:
-  wwcgAutoTranslateStart: 'Most a globális csevegés fordítása erre: %o.'
+  wwcgAutoTranslateStart: 'Most a globális csevegés fordítása erre: {0}.'
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: 'A globális csevegés lefordítása
-    a következőre történik: %o.'
+    a következőre történik: {0}.'
   wwcConfigGUIAmazonTranslateAccessKeyButton: Az Amazon hozzáférési kulcs módosítása
   wwcrFail: Nem sikerült újratölteni a WorldwideChat.
   wwcConfigGUIUpdateCheckerButton: Frissítések ellenőrzésének módosítása késleltetés
   wwcUpdaterFailedGeneric: Nem sikerült ellenőrizni a WorldwideChat frissítéseket.
-  wwcConfigConversationUpdateCheckerInput: A frissítésellenőrző aktuális késése %i
+  wwcConfigConversationUpdateCheckerInput: A frissítésellenőrző aktuális késése {0}
     másodperc. Írja be a 10-nél nagyobb értéket az új érték beállításához, vagy 10-nél
     kevesebbet a visszatéréshez.
   wwctGUIMainMenuGlobal: Globális fordítás
   wwcConfigConversationPluginUpdateChatSuccess: A beépülő modul frissítési csevegési
     emlékeztető sikeresen váltott.
-  wwctbOnTarget: Könyvfordítás engedélyezve a %i számára.
-  wwcsNotATranslator: A (z) %i számára még nem állnak rendelkezésre rekordok.
+  wwctbOnTarget: Könyvfordítás engedélyezve a {0} számára.
+  wwcsNotATranslator: A (z) {0} számára még nem állnak rendelkezésre rekordok.
   wwcConfigGUIbStatsButton: bStats ki- és bekapcsolása
   wwctGUINewTranslationSource: Forrásnyelv kiválasztása
-  wwcConfigConnectionFailed: Nem sikerült csatlakozni a %o-hoz. Ellenőrizze, hogy
+  wwcConfigConnectionFailed: Nem sikerült csatlakozni a {0}-hoz. Ellenőrizze, hogy
     a hitelesítő adatok és a tűzfal megfelelően van-e beállítva!
   wwcConfigEnabledbStats: Engedélyezett bStats.
-  wwctGUIMainMenuPlayer: '%i fordítási menüje'
+  wwctGUIMainMenuPlayer: '{0} fordítási menüje'
   wwctGUIBookButton: Könyvfordítás be- és bekapcsolása
-  wwcLangDetected: 'Észlelt nyelv: %o.'
+  wwcLangDetected: 'Észlelt nyelv: {0}.'
   wwcBookTranslateStart: Célkönyv fordítása...
   wwcConfigDisabledbStats: Fogyatékos bStats.
   wwctsOffSender: Aláírás fordítás letiltva.
   wwcUpdaterParserFailed: Nem sikerült elemezni a Github adatainak frissítését.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: 'Az aktuális titkos kulcs: %i.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: 'Az aktuális titkos kulcs: {0}.
     Adjon meg egy titkos kulcsot az Amazonhoz, vagy írja be a 0 értéket a visszatéréshez.'
   wwctbOffSender: Könyv fordítás letiltva.
   wwcConfigGUIAmazonTranslateButton: Amazon fordítás
   wwcConfigConversationLangSuccess: A bővítmény nyelve sikeresen megváltozott.
-  wwcsSuccessfulTranslations: 'Sikeres fordítások: %i'
+  wwcsSuccessfulTranslations: 'Sikeres fordítások: {0}'
   wwcConfigConversationTranslationCacheInput: Az aktuális fordítási gyorsítótárkorlát
-    a %i kifejezések. Írja be a 0-nál nagyobb értéket az új érték beállításához, vagy
+    a {0} kifejezések. Írja be a 0-nál nagyobb értéket az új érték beállításához, vagy
     írja be a 0 értéket a fordítási gyorsítótár letiltásához. Írja be a 0-nál kevesebbet,
     hogy visszamenjen.
-  wwctbOffTarget: 'A könyv fordítása letiltva ehhez: %i.'
+  wwctbOffTarget: 'A könyv fordítása letiltva ehhez: {0}.'
   wwcConfigGUIGeneralSettings: Általános konfiguráció
   wwcInvalidLang: Érvénytelen nyelv a config.yml fájlban. Nem teljesíti a...
   wwcConfigConversationAmazonTranslateRegionSuccess: Az Amazon régió sikeresen beállítva.
-  wwcConfigRateLimitEnabled: Globális sebességkorlát engedélyezve és a %i másodpercre
+  wwcConfigRateLimitEnabled: Globális sebességkorlát engedélyezve és a {0} másodpercre
     van beállítva.
   wwcBadPerms: Nem rendelkezik a szükséges engedélyekkel a parancs végrehajtásához!
   wwcConfigGUILangButton: Plugin nyelv módosítása
   wwctGUISignButton: Jelfordítás be- és bekapcsolása
-  wwcUpdaterOutOfDate: 'A WorldwideChat elavult. Frissítsen a legújabb verzióra: %i.'
+  wwcUpdaterOutOfDate: 'A WorldwideChat elavult. Frissítsen a legújabb verzióra: {0}.'
   wwcConfigGUINextPageButton: Következő oldal
   wwcConfigInvalidTranslatorSettings: Érvénytelen fordítói beállítások! Kérjük, csak
     egy fordítót engedélyezzen a config.yml fájlban.
   wwcConfigGUIQuitButton: Kilépés és a módosítások mentése
-  wwctPlayerNotFound: A (z) %i játékos nem található.
+  wwctPlayerNotFound: A (z) {0} játékos nem található.
   wwcConfigGUIAmazonTranslateRegionButton: Az Amazon régió megváltoztatása
-  wwcConfigConversationLangInput: 'A beépülő modul jelenlegi nyelve: %i. Adjon meg
+  wwcConfigConversationLangInput: 'A beépülő modul jelenlegi nyelve: {0}. Adjon meg
     egy érvényes nyelvi kódot, vagy írja be a 0 értéket a törléshez. Érvényes nyelvkódok:
-    %o'
+    {0}'
   wwcConfigConversationLangInvalid: Érvénytelen nyelvkód!
   wwcConfigGUIWatsonAPIKeyButton: Watson API-kulcs módosítása
-  wwcEnabled: 'Engedélyezett WorldwideChat verzió: %i.'
-  wwcgLangToLangStart: Most fordítod le a globális csevegést a %i -ról a %o címre.
+  wwcEnabled: 'Engedélyezett WorldwideChat verzió: {0}.'
+  wwcgLangToLangStart: Most fordítod le a globális csevegést a {0} -ról a {1} címre.
   wwctbOnSender: Könyv fordítás engedélyezve. Kattintson a jobb gombbal, miközben
     tartja a könyvet, hogy lefordítsa!
   wwcListenersInitialized: Inicializált hallgatók.
   wwcConfigGUIPluginUpdateChatButton: Csevegési emlékeztető küldése beépülő modulfrissítésekhez
   wwcConfigConversationSendTranslationChatSuccess: Az aktív fordítói csevegés emlékeztető
     sikeresen váltott.
-  wwctsOffTarget: 'Aláírási fordítás letiltva: %i.'
+  wwctsOffTarget: 'Aláírási fordítás letiltva: {0}.'
   wwcUpdaterConnectionFailed: Nem sikerült ellenőrizni a legújabb frissítéseket a
     Github-on.
   watsonNotFoundExceptionNotification: Nem lehet tovább lefordítani a bemenetet.
-  wwcConfigConversationWatsonAPIKeyInput: 'Az aktuális API-kulcs: %i. Adjon meg egy
+  wwcConfigConversationWatsonAPIKeyInput: 'Az aktuális API-kulcs: {0}. Adjon meg egy
     API-kulcsot a Watson számára, vagy írja be a 0 értéket a visszatéréshez.'
   wwctGUIStopButton: Fordítás leállítása
   wwcgTranslationStopped: A globális chat fordítás leállt.
@@ -79,9 +79,9 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: A Google Translate API-kulcs módosítása
   wwcSignDeletedOrTooLong: 'A céltáblát törölték, vagy a fordítás túl hosszú volt.
     Fordítás:'
-  wwctsOnTarget: Aláírás fordítás engedélyezve a %i.
+  wwctsOnTarget: Aláírás fordítás engedélyezve a {0}.
   wwcConfigCacheDisabled: A fordítói gyorsítótár letiltva.
-  wwcConfigConversationWatsonURLInput: 'Az aktuális URL: %i. Adjon meg egy szolgáltatás
+  wwcConfigConversationWatsonURLInput: 'Az aktuális URL: {0}. Adjon meg egy szolgáltatás
     URL-jét a Watson számára, vagy írja be a 0 értéket a visszatéréshez.'
   wwcBookDone: A könyv sikeresen lefordítva.
   wwctsOnSender: Aláírás fordítás engedélyezve. Kattintson a jobb gombbal egy jelre,
@@ -90,27 +90,27 @@ Messages:
   wwctGUITranslationButton: Fordítás indítása
   wwctGUIAutoDetectButton: Forrásnyelv automatikus észlelése
   wwcUpdaterUpToDate: A WorldwideChat naprakész!
-  wwcConfigConversationAmazonTranslateRegionInput: Az aktuális régió %i. Adjon meg
+  wwcConfigConversationAmazonTranslateRegionInput: Az aktuális régió {0}. Adjon meg
     egy régiót az Amazonhoz, vagy írja be a 0 értéket a visszatéréshez.
   wwcNoConsole: Ezt a parancsot csak egy játékos futtathatja.
   wwcInitializationFail: Nem sikerült inicializálni a WorldwideChat.
   wwcrSuccess: Sikeresen újratöltött WorldwideChat.
-  wwcPlayerNotFound: A (z) %i játékos nem található.
+  wwcPlayerNotFound: A (z) {0} játékos nem található.
   wwcUpdaterOutOfDateChat: A WorldwideChat elavult. Kérjük, frissítsen a legújabb
     verzióra.
   wwcConfigConversationRateLimitSuccess: A sebességkorlát sikeresen beállítva.
   wwcConfigConversationWatsonURLSuccess: A Watson URL sikeresen beállítva.
-  wwctbPlayerNotFound: A (z) %i játékos nem található, vagy nem aktív fordító.
+  wwctbPlayerNotFound: A (z) {0} játékos nem található, vagy nem aktív fordító.
   wwcConfigConversationTranslationCacheSuccess: A fordítási gyorsítótár korlát sikeresen
     beállítva.
   wwctInvalidArgs: Érvénytelen argumentumok megadva!
   wwcConfigGUIPrefixButton: Plugin előtagának módosítása
   wwctSameLangError: Nem fordíthatsz ugyanarra a nyelvre!
   wwctGUINewTranslationTarget: Válasszon célnyelvet
-  wwcConfigConnectionSuccess: 'Sikeresen csatlakozott ehhez: %o!'
+  wwcConfigConnectionSuccess: 'Sikeresen csatlakozott ehhez: {0}!'
   wwcConfigGUIGoogleTranslateButton: Google Fordító
-  wwcsIsActiveTranslator: 'Aktív fordító: %i'
-  wwcConfigConversationPrefixInput: 'Az aktuális előtag: %i. Írjon be egy újat, vagy
+  wwcsIsActiveTranslator: 'Aktív fordító: {0}'
+  wwcConfigConversationPrefixInput: 'Az aktuális előtag: {0}. Írjon be egy újat, vagy
     írja be a 0 értéket a visszatéréshez.'
   wwcConfigGUIPreviousPageButton: Előző oldal
   wwcConfigGUITranslatorCacheButton: Fordítási gyorsítótár korlát módosítása
@@ -128,57 +128,57 @@ Messages:
   wwcUnsupportedVersion: 'A Bukkit, a Spigot vagy a Paper nem támogatott verzióját
     futtatja. Támogatott verziók:'
   wwcGlobalOnJoinTranslationNotificationSourceLang: A globális csevegés lefordítása
-    a %i -ról a %o címre történik.
+    a {0} -ról a {1} címre történik.
   wwcConfigGUITranslatorSettings: Fordító konfigurálása
-  wwcConfigConversationGoogleTranslateAPIKeyInput: 'Az aktuális API-kulcs: %i. Adjon
+  wwcConfigConversationGoogleTranslateAPIKeyInput: 'Az aktuális API-kulcs: {0}. Adjon
     meg egy API-kulcsot a Google Translate szolgáltatáshoz, vagy írja be a 0 értéket
     a visszatéréshez.'
   wwcConfigConversationRateLimitInput: Az aktuális globális díjkorlát fordításonként
-    %i másodperc. Írja be a 0-nál nagyobb értéket az új érték beállításához, vagy
+    {0} másodperc. Írja be a 0-nál nagyobb értéket az új érték beállításához, vagy
     írja be a 0 értéket a korlát letiltásához. Írja be a 0-nál kevesebbet, hogy visszamenjen.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: A Google Translate API kulcskészlet
     sikeresen.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon titkos kulcs megváltoztatása
   wwcVersion: WorldwideChat, változat
-  wwcsAttemptedTranslations: 'Fordítási kísérlet: %i'
+  wwcsAttemptedTranslations: 'Fordítási kísérlet: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Az Amazon titkos kulcskészlet
     sikeresen.
   wwcConfigConversationWatsonAPIKeySuccess: A Watson API kulcs beállítása sikeresen
     megtörtént.
-  wwcRateLimit: A fordításaid aránya korlátozott. Várjon még egy %i másodpercet.
-  wwcConfigCacheEnabled: A fordítói gyorsítótár engedélyezve van, és a (z) %i értékre
+  wwcRateLimit: A fordításaid aránya korlátozott. Várjon még egy {0} másodpercet.
+  wwcConfigCacheEnabled: A fordítói gyorsítótár engedélyezve van, és a (z) {0} értékre
     van állítva.
   wwctGUIExistingTranslationButton: Aktuális fordítási munkamenet felülbír
   wwcUserDataReloaded: Betöltötte az összes mentett felhasználói adatot.
   wwcConfigGUISendTranslationChatButton: Emlékeztető küldése az aktív fordítónak bejelentkezéskor
-  wwcsLastTranslationTime: 'Utolsó (sikeres) fordítási idő: %i'
+  wwcsLastTranslationTime: 'Utolsó (sikeres) fordítási idő: {0}'
   wwctbNotATranslator: Ön nem aktív fordító! Győződjön meg róla, hogy ezt a /wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: 'Az aktuális hozzáférési kulcs:
-    %i. Adjon meg egy hozzáférési kulcsot az Amazonhoz, vagy írja be a 0 értéket a
+    {0}. Adjon meg egy hozzáférési kulcsot az Amazonhoz, vagy írja be a 0 értéket a
     visszatéréshez.'
   wwcConfigConversationAmazonTranslateAccessKeySuccess: Az Amazon hozzáférési kulcs
     beállítása sikeresen megtörtént.
   wwcConfigBadUpdateDelay: 'Érvénytelen frissítő késleltetés beállítása config.yml.
     Alapértelmezés: 86400 másodperc...'
   wwctrlRateLimitOffSender: Kikapcsolta a díjkorlát.
-  wwctrlRateLimitAlreadyOffTarget: A (z) %i sebességkorlát már le van tiltva.
-  wwctrlPlayerNotFound: A (z) %i játékos nem található, vagy nem aktív fordító.
-  wwctrlRateLimitSetSender: Állítsa be a sebességkorlátot a %i másodpercre.
-  wwctrlRateLimitOffTarget: Kikapcsolta a (z) %i sebességhatárt.
-  wwctrlRateLimitSetTarget: Állítsa be a (z) %i értékhatárt a %o másodpercre.
+  wwctrlRateLimitAlreadyOffTarget: A (z) {0} sebességkorlát már le van tiltva.
+  wwctrlPlayerNotFound: A (z) {0} játékos nem található, vagy nem aktív fordító.
+  wwctrlRateLimitSetSender: Állítsa be a sebességkorlátot a {0} másodpercre.
+  wwctrlRateLimitOffTarget: Kikapcsolta a (z) {0} sebességhatárt.
+  wwctrlRateLimitSetTarget: Állítsa be a (z) {0} értékhatárt a {1} másodpercre.
   wwctrlNotATranslator: Ön nem aktív fordító! Győződjön meg róla, hogy ezt a /wwct.
   wwctrlRateLimitAlreadyOffSender: A díjkorlát már le van tiltva.
   wwctGUIRateButton: Korlát beállítása
-  wwctGUIConversationRateLimit: A fordításonkénti sebességhatár aktual %i másodperc.
+  wwctGUIConversationRateLimit: A fordításonkénti sebességhatár aktual {0} másodperc.
     Írja be a 0-nál nagyobb értéket az új érték beállításához, vagy írja be a 0 értéket
     a korlát letiltásához. Írja be a 0-nál kevesebbet, hogy visszamenjen.
   wwctGUITargetPlayerNull: A céljátékos lekapcsolódott a kiszolgálóról.
   wwcConfigConversationSyncUserDataDelayInput: A felhasználói adatok szinkronizálásonkénti
-    aktuális késleltetése %i másodperc. Írja be a 10-nél nagyobb értéket az új érték
+    aktuális késleltetése {0} másodperc. Írja be a 10-nél nagyobb értéket az új érték
     beállításához, vagy 10-nél kevesebbet a visszatéréshez.
   wwcConfigGUISyncUserDataButton: Felhasználói adatok szinkronizálásának késleltetése
   wwcConfigSyncDelayEnabled: 'A felhasználói adatok szinkronizálásának késleltetése:
-    %i másodperc.'
+    {0} másodperc.'
   wwcConfigConversationSyncUserDataDelaySuccess: A felhasználói adatok szinkronizálási
     késleltetése sikeresen beállítva.
   wwcConfigSyncDelayInvalid: 'Érvénytelen felhasználói adatok szinkronizálási késleltetése
@@ -186,24 +186,24 @@ Messages:
   wwcConfigCacheInvalid: Érvénytelen a fordítói gyorsítótár mérete. Alapértelmezés
     10...
   wwcInventoryErrorPlayer: Hiba észlelt a GUI. A rendszer egy naplót küldött a konzolnak.
-  wwcInventoryError: Hiba történt a (z) %i felhasználó GUI-jával. Jelentse ezt a problémát
+  wwcInventoryError: Hiba történt a (z) {0} felhasználó GUI-jával. Jelentse ezt a problémát
     a fejlesztőnek.
-  wwctiOffTarget: 'Elem fordítása le van tiltva: %i'
+  wwctiOffTarget: 'Elem fordítása le van tiltva: {0}'
   wwctiOffSender: Elem fordítása letiltva.
   wwcItemTranslateTitleStock: Nem lehet lefordítani az alapértelmezett elemneveket.
   wwctGUIItemButton: Elemfordítás be-
   wwcItemTranslateTitleDone: A lefordított tétel címe sikeresen.
   wwcGUITempItem: Elem megjelenítése
   wwcItemTranslateStart: Célelem lefordítása...
-  wwcBookTranslateTitleSuccess: 'Fordított könyv címe: %i'
+  wwcBookTranslateTitleSuccess: 'Fordított könyv címe: {0}'
   wwctiOnSender: Elem fordítás engedélyezve. Kattintson a jobb gombbal egy tételre
     a fő kezében, hogy lefordítsa!
   wwcItemTranslateLoreStart: A céltárgy lefordítása...
   wwcItemTranslateLoreDone: Fordított tétel Lore sikeresen.
-  wwctiOnTarget: Elemfordítás engedélyezve a %i számára.
+  wwctiOnTarget: Elemfordítás engedélyezve a {0} számára.
   wwcInvalidTranslator: Érvénytelen fordítói beállítások. Kérjük, javítsa ki ezt a
     config.yml vagy /wwcc segítségével a plugin használatához.
-  wwcConfigGUIEachTranslatorSettings: '%i konfiguráció'
+  wwcConfigGUIEachTranslatorSettings: '{0} konfiguráció'
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: A WorldwideChat nem nézi meg a /reload használatát. Kérem,
     óvatosan járjanak el.
@@ -211,7 +211,7 @@ Messages:
     akkor ezt ki kell kapcsolnia.
   wwcTranslatorErrorThresholdReached: Hibaküszöb elérve. Ez a plugin most újratölti,
     és letiltja az összes fordítót.
-  wwcConfigErrorLimitEnabled: A fordítói hibahatárt a %i értékre állítjuk be.
+  wwcConfigErrorLimitEnabled: A fordítói hibahatárt a {0} értékre állítjuk be.
   wwcTranslatorError: Probléma merült fel a fordítás kísérlete közben. Kérem, próbálja
     meg újra.
   wwcConfigErrorLimitInvalid: 'Érvénytelen fordítási hiba korlát beállítása config.yml.
@@ -219,10 +219,10 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: Kérjük, ellenőrizze a errorLog.txt
     fájlt a WorldwideChat bővítmény mappájában további információért.
   wwctInvalidInputLangCode: 'Érvénytelen beviteli nyelvkód biztosított! Érvényes lang
-    kódok: %o'
-  wwcsTitle: '%i rekordja'
+    kódok: {0}'
+  wwcsTitle: '{0} rekordja'
   wwctInvalidOutputLangCode: 'Érvénytelen kimeneti nyelvkód biztosított! Érvényes
-    lang kódok: %o'
+    lang kódok: {0}'
   wwctGUISourceTranslationSelected: Ön ezt a nyelvet választotta.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Felülírás törlése
   wwcConfigConversationOverrideTextChange: Írjon be egy új üzenetet ehhez a felülíráshoz,
@@ -253,47 +253,47 @@ Messages:
   wwcConfigMessageCharLimitInvalid: A config.yml fájlban megadott üzenetenkénti korlát
     érvénytelen. Nem teljesítve 255 Charm...
   wwcConfigConversationCharacterLimitSuccess: Karakterkorlát sikeresen beállítva.
-  wwcteOnTarget: Entitásfordítás engedélyezve a %i.
-  wwcEntityTranslateDone: 'Fordított entitás neve: %i'
+  wwcteOnTarget: Entitásfordítás engedélyezve a {0}.
+  wwcEntityTranslateDone: 'Fordított entitás neve: {0}'
   wwcEntityTranslateNoName: Az entitás nem rendelkezik egyéni névvel.
   wwcConfigConversationErrorLimitInput: 'Az aktuális hibahatár minden fordítónál:
-    %i. Írjon be minden 0-nál nagyobb értéket egy új érték beállításához, vagy írjon
+    {0}. Írjon be minden 0-nál nagyobb értéket egy új érték beállításához, vagy írjon
     be egy nullánál kisebb vagy egyenlő értéket a visszalépéshez.'
   wwcConfigGUIGlobalRateLimitButton: Globális díjkorlát módosítása
   wwcteOnSender: Entitásfordítás engedélyezve Kattintson a jobb gombbal egy entitásra,
     hogy lefordítsa a nevét!
   wwcConfigGUIResponseLimitButton: Fordítói válasz időtúllépése
-  wwcConfigMessageCharLimitEnabled: Karakterkorlát üzenetenként %i karakterre állítva.
-  wwcteOffTarget: 'Entitásfordítás letiltva: %i.'
+  wwcConfigMessageCharLimitEnabled: Karakterkorlát üzenetenként {0} karakterre állítva.
+  wwcteOffTarget: 'Entitásfordítás letiltva: {0}.'
   wwcCharLimit: Túl hosszú az üzeneted! Győződjön meg arról, hogy az üzenet hossza
-    kevesebb, mint a %i karakter.
+    kevesebb, mint a {0} karakter.
   wwcConfigConversationCharacterLimitInput: Az üzenetenkénti aktuális karakterkorlát
-    %i karakter. Ha új értéket szeretne beállítani, írjon be egy 0-nál nagyobb értéket,
+    {0} karakter. Ha új értéket szeretne beállítani, írjon be egy 0-nál nagyobb értéket,
     vagy írjon be egy nullánál kisebb vagy egyenlő értéket a visszatéréshez.
   wwcteOffSender: Az entitásfordítás letiltva
   wwctGUIEntityButton: Entitásfordítás be-
   wwctrlRateLimitBadInt: A díjkorlát nem érvényes egész szám.
-  wwcTranslatorErrorConsole: Probléma merült fel, amikor a (z) %i felhasználó megpróbálta
+  wwcTranslatorErrorConsole: Probléma merült fel, amikor a (z) {0} felhasználó megpróbálta
     a fordítást. Kérjük, tekintse meg a errorLog.txt fájlt további részletekért.
   wwctGUIChatButton: Csevegés fordítás be-
   wwcrBegin: WorldwideChat újratöltése...
-  wwctTranslationStoppedOtherPlayer: A (z) %i fordítási munkamenet le lett állítva.
+  wwctTranslationStoppedOtherPlayer: A (z) {0} fordítási munkamenet le lett állítva.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: A globális csevegés lefordítása
-    folyamatban van, de aktív fordítási munkamenete van a %i és %o között.
+    folyamatban van, de aktív fordítási munkamenete van a {0} és {1} között.
   wwctCannotTranslateConsole: Nem indítható el fordítási munkamenet a konzolhoz!
-  wwctLangToLangStart: 'Új fordítási munkamenet indítása innen: %i ide: %o.'
-  wwcOnJoinTranslationNotificationSourceLang: Aktív fordítási munkamenete van a %i
-    és %o között.
-  wwctAutoTranslateStartOtherPlayer: 'Új fordítási munkamenet indítása erre: %i ide:
-    %o.'
+  wwctLangToLangStart: 'Új fordítási munkamenet indítása innen: {0} ide: {1}.'
+  wwcOnJoinTranslationNotificationSourceLang: Aktív fordítási munkamenete van a {0}
+    és {0} között.
+  wwctAutoTranslateStartOtherPlayer: 'Új fordítási munkamenet indítása erre: {0} ide:
+    {0}.'
   wwctTranslationStopped: A fordítási munkamenetet leállították.
   wwctLangToLangStartOtherPlayer: 'Új fordítási munkamenet indítása a következőre:
-    %i ide: %e.'
-  wwctAutoTranslateStart: 'Új fordítási munkamenet indítása erre: %o.'
+    {0} ide: {1}.'
+  wwctAutoTranslateStart: 'Új fordítási munkamenet indítása erre: {0}.'
   wwcOnJoinTranslationNotificationNoSourceLang: 'Aktív fordítási munkamenete van erre:
-    %o.'
+    {0}.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: A globális csevegés
-    lefordítása folyamatban van, de aktív fordítási munkamenete van a %o.
+    lefordítása folyamatban van, de aktív fordítási munkamenete van a {0}.
   wwcConfigGUIChangesNotSaved: A módosítások addig nem lépnek életbe, amíg nem kattint
     a /wwcc-ban található piros korlátra.
   wwctciOffSender: A bejövő csevegés fordítása letiltva.
@@ -302,25 +302,25 @@ Messages:
   wwctcoOnSender: Kimenő csevegés fordítás engedélyezve. Bármit, amit mondasz, lefordítják!
   wwctciOnSender: Bejövő csevegés fordítás engedélyezve. Bármit, amit kap, lefordítják!
   wwctGUIChatMenu: Toggle Chat fordítás menü
-  wwctcoOnTarget: A kimenő csevegés fordítása engedélyezve van %i.
-  wwctcoOffTarget: A kimenő csevegés fordítása le van tiltva %i.
+  wwctcoOnTarget: A kimenő csevegés fordítása engedélyezve van {0}.
+  wwctcoOffTarget: A kimenő csevegés fordítása le van tiltva {0}.
   wwctGUIChatOutgoingButton: A kimenő csevegés fordításának váltása
-  wwctciOnTarget: A bejövő csevegés fordítása engedélyezve van %i.
-  wwctciOffTarget: A bejövő csevegés fordítása le van tiltva %i.
+  wwctciOnTarget: A bejövő csevegés fordítása engedélyezve van {0}.
+  wwctciOffTarget: A bejövő csevegés fordítása le van tiltva {0}.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: Eredeti bejövő csevegés a
     fordításhoz csatolva, mivel a lebegő szöveg sikeresen vált.
   wwcConfigGUISendIncomingHoverTextChatButton: Eredeti bejövő üzenetek hozzáadása
     Hover szövegként
-  wwctGUIExistingChatOutgoingEnabled: 'Kimenő csevegés fordítás engedélyezve: %i'
-  wwctGUIExistingTranslationInput: 'Beviteli nyelv: %i'
-  wwctGUIExistingChatIncomingEnabled: 'Bejövő csevegés fordítás engedélyezve: %i'
-  wwctGUIExistingTranslationOutput: 'Kimeneti nyelv: %i'
-  wwcTranslatorAttempt: Megpróbál csatlakozni fordító config.yml... (Kísérlet %i/
-    %o)
-  wwcTimeoutExceptionConsole: '%i játékos nála volt a legutóbbi kérési időtúlcselése.
+  wwctGUIExistingChatOutgoingEnabled: 'Kimenő csevegés fordítás engedélyezve: {0}'
+  wwctGUIExistingTranslationInput: 'Beviteli nyelv: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Bejövő csevegés fordítás engedélyezve: {0}'
+  wwctGUIExistingTranslationOutput: 'Kimeneti nyelv: {0}'
+  wwcTranslatorAttempt: Megpróbál csatlakozni fordító config.yml... (Kísérlet {0}/
+    {0})
+  wwcTimeoutExceptionConsole: '{0} játékos nála volt a legutóbbi kérési időtúlcselése.
     Ez a hiba nem végzetes, de a WorldwideChat-t újra kell tölteni, ha továbbra is
     megtörténik.'
-  wwcGUIPageNumber: 'Oldalszám: %i'
+  wwcGUIPageNumber: 'Oldalszám: {0}'
   wwcConfigYAMLFallback: Visszaesik a YAML-hez...
   wwcConfigGUIToggleSQLButton: SQL váltása
   wwcConfigConversationToggleSQLSuccess: Az SQL sikeresen vált. Töltse be újra, hogy
@@ -341,38 +341,38 @@ Messages:
   wwcConfigGUISQLPortButton: SQL port módosítása
   wwcConfigGUISQLOptionalArgsButton: SQL opcionális argumentumok módosítása
   wwcConfigConversationToggleSQLSSLSuccess: Az SQL SSL-je sikeresen vált.
-  wwcConfigConversationSQLPortInput: Az aktuális port %i. Írjon be bármi mást, mint
+  wwcConfigConversationSQLPortInput: Az aktuális port {0}. Írjon be bármi mást, mint
     0 új portot, vagy írja be a 0 billentyűt, hogy visszatérjen.
   wwcConfigGUISQLPasswordButton: SQL jelszó módosítása
   wwcConfigConversationSQLHostnameSuccess: Sikeresen megváltoztatta az SQL gazdagépnevét.
-  wwcConfigConversationSQLHostnameInput: Az aktuális hosztnév %i. Írjon be bármi mást,
+  wwcConfigConversationSQLHostnameInput: Az aktuális hosztnév {0}. Írjon be bármi mást,
     mint 0 új gazdagépnév beállításához, vagy írja be a 0 betűt a visszalépéshez.
   wwcConfigGUISQLHostnameButton: SQL Hostname módosítása
   wwcConfigConversationSQLOptionalArgsSuccess: Sikeresen megváltoztatta az opcionális
     SQL argumentumokat.
   wwcConfigConversationSQLPasswordSuccess: Sikeresen megváltoztatta az SQL jelszót.
-  wwcConfigConversationSQLPasswordInput: 'Az aktuális jelszó: %i. Írjon be bármi mást,
+  wwcConfigConversationSQLPasswordInput: 'Az aktuális jelszó: {0}. Írjon be bármi mást,
     mint 0 új jelszó beállításához, vagy írja be a 0 betűt a visszalépéshez.'
   wwcConfigGUIToggleSQLSSLButton: SQL SSL váltása
   wwcConfigConversationSQLUsernameSuccess: Sikeresen megváltoztatta az SQL felhasználónevet.
-  wwcConfigConversationSQLUsernameInput: A jelenlegi felhasználónév %i. Írjon be bármi
+  wwcConfigConversationSQLUsernameInput: A jelenlegi felhasználónév {0}. Írjon be bármi
     mást, mint 0 új felhasználónév beállításához, vagy írja be a 0 betűt, hogy visszatérjen.
   wwcConfigConversationSQLPortSuccess: Sikeresen megváltoztatta az SQL portot.
   wwcConfigGUISQLUsernameButton: SQL felhasználónév módosítása
   wwcConfigConversationSQLOptionalArgsCleared: Az opcionális argumentumok sikeresen
     törlődtek.
   wwcConfigConversationSQLOptionalArgsInput: 'Az aktuális opcionális SQL argumentumok
-    a következők: %i. Írja be az argumentumokat vesszővel elválasztva (key=value,
+    a következők: {0}. Írja be az argumentumokat vesszővel elválasztva (key=value,
     key2=value2), vagy írja be a Clear parancsot az aktuális args törléséhez, vagy
     írja be a 0 betűt a visszalépéshez.'
-  wwcConfigConversationSQLDatabaseNameInput: 'Az adatbázis aktuális neve: %i. Írjon
+  wwcConfigConversationSQLDatabaseNameInput: 'Az adatbázis aktuális neve: {0}. Írjon
     be bármi mást, mint 0 új adatbázisnév beállításához, vagy írja be a 0 betűt a
     visszalépéshez.'
   wwcConfigGUISQLDatabaseNameButton: SQL adatbázis módosítása
   wwcConfigConversationSQLDatabaseNameSuccess: Sikeresen megváltoztatta az SQL adatbázis
     nevét.
   wwcConfigConversationFatalAsyncAbort: Az összes aszinkron feladat megszakítására
-    vonatkozó aktuális időtúllát %i másodperc. Írjon be bármit a fenti 7 új időtúllépéshez,
+    vonatkozó aktuális időtúllát {0} másodperc. Írjon be bármit a fenti 7 új időtúllépéshez,
     vagy bármi alatta, hogy visszatérjen.
   wwcConfigConversationFatalAsyncSuccess: Az aszinkron feladat időtúltolása sikeresen
     beállítva.
@@ -383,7 +383,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Change Libre Fordítás API Key
   libreHttp403: Hiányzik a Libre Translate API kulcs, vagy ki van tiltva a szerverről!
   wwcConfigConversationLibreURLSuccess: Libre URL beállítása sikeresen.
-  wwcConfigConversationLibreTranslateApiKeyInput: Az aktuális API-kulcs %i. Adjon
+  wwcConfigConversationLibreTranslateApiKeyInput: Az aktuális API-kulcs {0}. Adjon
     meg egy API-kulcsot a Libre számára, vagy írja be a 0 értéket a visszalépéshez.
   wwcConfigGUILibreTranslateButton: Libre fordítás
   libreHttp429: Nincs bizalom a szerver sebességkorlátozása miatt.
@@ -391,35 +391,35 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: Sikeresen váltotta a Libre Translate
     programot. Töltse be újra a módosítások életbe lépését.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API kulcs beállítása sikeresen.
-  wwcConfigConversationLibreURLInput: Az aktuális URL %i. Adjon meg egy URL-t a Libre
+  wwcConfigConversationLibreURLInput: Az aktuális URL {0}. Adjon meg egy URL-t a Libre
     számára, vagy írja be a 0 értéket a visszalépéshez.
-  libreHttpUnknown: 'Ismeretlen http hiba: %i'
+  libreHttpUnknown: 'Ismeretlen http hiba: {0}'
   wwcConfigGUILibreTranslateURLButton: Change Libre Translate
-  wwcConfigConnectionFail: 'Nem sikerült csatlakozni a következőhöz: %i.'
+  wwcConfigConnectionFail: 'Nem sikerült csatlakozni a következőhöz: {0}.'
   wwcConfigGUIMongoSettings: MongoDB konfiguráció
   wwcConfigConversationMongoDatabaseNameSuccess: Sikeresen módosította a MongoDB adatbázis
     nevét.
   wwcConfigGUIMongoHostnameButton: MongoDB Hostname módosítása
-  wwcConfigConversationMongoPasswordInput: A jelenlegi jelszó %i. Írja be a 0 kivételével
+  wwcConfigConversationMongoPasswordInput: A jelenlegi jelszó {0}. Írja be a 0 kivételével
     az új jelszó beállításához, vagy írja be a 0 értéket a visszalépéshez.
-  wwcConfigConversationMongoPortInput: Az aktuális port %i. Írja be a 0 kivételével
+  wwcConfigConversationMongoPortInput: Az aktuális port {0}. Írja be a 0 kivételével
     az új port beállításához, vagy írja be a 0 értéket a visszalépéshez.
   wwcConfigConversationToggleMongoSuccess: A MongoDB sikeresen váltott. A módosítás
     érvénybe lépéséhez töltse be újra.
-  wwcConfigConversationMongoHostnameInput: A jelenlegi állomásnév %i. Írja be a 0-tól
+  wwcConfigConversationMongoHostnameInput: A jelenlegi állomásnév {0}. Írja be a 0-tól
     eltérő értéket az új állomásnév beállításához, vagy írja be a 0 értéket a visszalépéshez.
   wwcConfigConversationMongoHostnameSuccess: Sikeresen megváltoztatta a MongoDB hostname.
   wwcConfigGUIMongoMenuButton: A MongoDB beállításainak módosítása
   wwcConfigGUIToggleMongoButton: Toggle MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Az adatbázis jelenlegi neve %i. Írja
+  wwcConfigConversationMongoDatabaseNameInput: Az adatbázis jelenlegi neve {0}. Írja
     be a 0-tól eltérő értéket az új adatbázisnév beállításához, vagy írja be a 0 értéket
     a visszalépéshez.
   wwcConfigConversationMongoOptionalArgsInput: 'A választható MongoDB argumentumok
-    a következők: %i. Írja be az argumentumokat vesszővel elválasztva (key=value,
+    a következők: {0}. Írja be az argumentumokat vesszővel elválasztva (key=value,
     key2=value2), vagy írja be a clear parancsot az aktuális argok törléséhez, vagy
     írja be a 0 értéket a visszalépéshez.'
   wwcConfigGUIMongoDatabaseNameButton: MongoDB adatbázis módosítása
-  wwcConfigConversationMongoUsernameInput: A jelenlegi felhasználónév %i. Írja be
+  wwcConfigConversationMongoUsernameInput: A jelenlegi felhasználónév {0}. Írja be
     a 0-tól eltérő értéket az új felhasználónév beállításához, vagy írja be a 0 értéket
     a visszalépéshez.
   wwcConfigGUIMongoOptionalArgsButton: MongoDB opcionális argumentumok módosítása
@@ -443,7 +443,7 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: DeepL Translate API kulcs módosítása
   wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL fordítás
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API kulcs beállítása sikeresen.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Az aktuális API-kulcs %i. Adjon
+  wwcConfigConversationDeepLTranslateApiKeyInput: Az aktuális API-kulcs {0}. Adjon
     meg egy API-kulcsot a DeepL-hez, vagy írja be a 0 értéket a visszalépéshez.
   wwcConfigErrorsToIgnoreSuccess: Sikeresen regisztrált fordítói hibákat figyelmen
     kívül hagyni.
@@ -454,24 +454,24 @@ Messages:
     hogy figyelmen kívül hagyja a kifejezéseket.
   wwcConfigGUIIgnoreErrorsButton: Hibák módosítása figyelmen kívül hagyásra
   wwcConfigConversationIgnoreErrorsInput: 'A fordítói hibákban jelenleg figyelmen
-    kívül hagyandó kifejezések listája: %i. Írja be az argumentumokat vesszővel elválasztva
+    kívül hagyandó kifejezések listája: {0}. Írja be az argumentumokat vesszővel elválasztva
     (key=value, key2=value2), vagy írja be a clear parancsot az aktuális argok törléséhez,
     vagy írja be a 0 értéket a visszalépéshez. Ezenkívül a „*” beírása miatt a plugin
     nem ellenőrzi a fordítói hibákat.'
   wwcConfigConversationIgnoreErrorsCleared: Fordító hibák figyelmen kívül hagyni mondatok
     sikeresen törölve.
 
-  wwcsActiveTransPrevRate: 'Aktív fordító Korábbi sebességkorlátozási idő: %i'
-  wwcsActiveTransSaved: 'Aktív fordító lemezre mentve: %i'
-  wwcsActiveTransIncoming: 'Aktív fordító Bejövő Chat fordítása: %i'
-  wwcsActiveTransOutLang: 'Aktív fordító kimeneti nyelve: %i'
-  wwcsActiveTransInLang: 'Aktív fordító beviteli nyelve: %i'
-  wwcsActiveTransBook: 'Aktív fordító fordító könyv: %i'
-  wwcsActiveTransSign: 'Aktív fordító fordító jel: %i'
-  wwcsActiveTransUUID: 'Aktív fordító UUID: %i'
-  wwcsActiveTransRateLimit: 'Aktív fordítói sebességkorlátozás: %i'
-  wwcsActiveTransColorWarning: 'Aktív fordító kapott színes figyelmeztetés: %i'
-  wwcsActiveTransOutgoing: 'Aktív fordító Kimenő csevegés fordítása: %i'
-  wwcsActiveTransItem: 'Aktív fordító fordító elem: %i'
-  wwcsActiveTransEntity: 'Aktív fordító fordító entitás: %i'
+  wwcsActiveTransPrevRate: 'Aktív fordító Korábbi sebességkorlátozási idő: {0}'
+  wwcsActiveTransSaved: 'Aktív fordító lemezre mentve: {0}'
+  wwcsActiveTransIncoming: 'Aktív fordító Bejövő Chat fordítása: {0}'
+  wwcsActiveTransOutLang: 'Aktív fordító kimeneti nyelve: {0}'
+  wwcsActiveTransInLang: 'Aktív fordító beviteli nyelve: {0}'
+  wwcsActiveTransBook: 'Aktív fordító fordító könyv: {0}'
+  wwcsActiveTransSign: 'Aktív fordító fordító jel: {0}'
+  wwcsActiveTransUUID: 'Aktív fordító UUID: {0}'
+  wwcsActiveTransRateLimit: 'Aktív fordítói sebességkorlátozás: {0}'
+  wwcsActiveTransColorWarning: 'Aktív fordító kapott színes figyelmeztetés: {0}'
+  wwcsActiveTransOutgoing: 'Aktív fordító Kimenő csevegés fordítása: {0}'
+  wwcsActiveTransItem: 'Aktív fordító fordító elem: {0}'
+  wwcsActiveTransEntity: 'Aktív fordító fordító entitás: {0}'
 

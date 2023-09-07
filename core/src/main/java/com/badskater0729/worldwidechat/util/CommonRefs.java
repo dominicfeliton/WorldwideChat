@@ -3,10 +3,8 @@ package com.badskater0729.worldwidechat.util;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Set;
+import java.text.MessageFormat;
+import java.util.*;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -17,6 +15,7 @@ import java.util.concurrent.TimeoutException;
 import java.util.regex.Matcher;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
+import org.apache.commons.lang3.tuple.Pair;
 import org.apache.commons.text.StringEscapeUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
@@ -68,6 +67,59 @@ public class CommonRefs {
 			"sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy" };
 	
 	/* Getters */
+	/**
+	 * Check server type/version, print to console if unsupported
+	 */
+	public static Pair<String, String> getServerInfo() {
+		String serverPlatform = "Unknown";
+		String serverVersion = "";
+
+		/* Find specific server */
+		HashMap<String, String> serverTypes = new HashMap<>();
+		serverTypes.put("Bukkit", "org.bukkit.Bukkit");
+		serverTypes.put("Spigot", "org.spigotmc.SpigotConfig");
+		serverTypes.put("Paper", "com.destroystokyo.paper.PaperWorldConfig");
+
+		serverTypes.put("BungeeCord", "net.md_5.bungee.api.ProxyServer");
+		serverTypes.put("Velocity", "com.velocitypowered.proxy.Velocity");
+
+		for (Map.Entry<String, String> entry : serverTypes.entrySet()) {
+			try {
+				Class.forName(entry.getValue());
+
+				// We found class but continue loop, may be a fork (Bukkit -> Spigot -> Paper)
+				serverPlatform = entry.getKey();
+			} catch (ClassNotFoundException e) {
+			}
+		}
+
+		/* Version check */
+		switch (serverPlatform) {
+			case "Bukkit":
+			case "Spigot":
+			case "Paper":
+				serverVersion = Bukkit.getServer().getVersion();
+				break;
+			case "BungeeCord":
+				// TODO
+				serverVersion = "";
+				break;
+			case "Velocity":
+				// TODO
+				serverVersion = "";
+				break;
+			case "Folia":
+				// TODO
+				serverVersion = "";
+				break;
+			default:
+				serverVersion = "";
+				break;
+		}
+
+		return Pair.of(serverPlatform, serverVersion);
+	}
+
 	public static void runAsync(BukkitRunnable in) {
 		runAsync(true, in);
 	}
@@ -192,7 +244,7 @@ public class CommonRefs {
 	 * @return true if supported, false otherwise
 	 */
 	public static boolean isSupportedTranslatorLang(String in, String langType) {
-		return !getSupportedTranslatorLang(in, langType).getLangCode().equals("");
+		return !getSupportedTranslatorLang(in, langType).getLangCode().isEmpty();
 	}
 
 	/**
@@ -293,14 +345,8 @@ public class CommonRefs {
 			}
 		}
 		
-		/* Replace any and all %i, %e, %o, etc. */
-		/* This code will only go as far as replacements[] goes. */
-		for (int i = 0; i < replacements.length; i++) {
-			convertedOriginalMessage = convertedOriginalMessage.replaceFirst("%[ioeu]", Matcher.quoteReplacement(replacements[i]));
-		}
-		
- 		/* Return fixedMessage */
-		return convertedOriginalMessage;
+ 		/* Return fixedMessage with replaced vars */
+		return MessageFormat.format(convertedOriginalMessage, (Object[])replacements);
 	}
 	
 	/**
@@ -629,7 +675,7 @@ public class CommonRefs {
 	  * @param prevInventory - The previous inventory to open up after the conversation is over
 	  * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation. If the length of configValName != the length of configVal, then null is returned.
 	  */
-	public static Prompt genericConfigConvo(boolean preCheck, ConversationContext context, String successfulChangeMsg, String configValName[], Object[] configVal, SmartInventory prevInventory) {
+	public static Prompt genericConfigConvo(boolean preCheck, ConversationContext context, String successfulChangeMsg, String[] configValName, Object[] configVal, SmartInventory prevInventory) {
 		if (configValName.length != configVal.length) {
 			return null;
 		}

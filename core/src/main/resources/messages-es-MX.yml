@@ -1,66 +1,66 @@
 Messages:
-  wwcgAutoTranslateStart: Ahora traduciendo chat global a %o.
+  wwcgAutoTranslateStart: Ahora traduciendo chat global a {0}.
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: El chat global se está traduciendo
-    a %o.
+    a {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Cambiar clave de acceso de Amazon
   wwcrFail: Error al volver a cargar WorldWIDEChat.
   wwcConfigGUIUpdateCheckerButton: Cambio Comprobar si hay actualizaciones Retraso
   wwcUpdaterFailedGeneric: Imposible comprobar si hay actualizaciones de WorldWIDEChat.
   wwcConfigConversationUpdateCheckerInput: El retraso actual en el verificador de
-    actualizaciones es %i segundos. Escriba cualquier cosa mayor que 10 para establecer
+    actualizaciones es {0} segundos. Escriba cualquier cosa mayor que 10 para establecer
     un nuevo valor, o cualquier cosa menor que 10 para volver atrás.
   wwctGUIMainMenuGlobal: Menú Global de Traducción
   wwcConfigConversationPluginUpdateChatSuccess: Recordatorio de chat de actualización
     de plugins se ha toggled
-  wwctbOnTarget: Traducción de libros habilitada para %i.
-  wwcsNotATranslator: Aún no hay registros disponibles para %i.
+  wwctbOnTarget: Traducción de libros habilitada para {0}.
+  wwcsNotATranslator: Aún no hay registros disponibles para {0}.
   wwcConfigGUIbStatsButton: Toggle bStats
   wwctGUINewTranslationSource: Elegir un Lenguaje de Origen
-  wwcConfigConnectionFailed: Error al conectarse a %o ¡Asegúrate de que tus credenciales
+  wwcConfigConnectionFailed: Error al conectarse a {0} ¡Asegúrate de que tus credenciales
     y firewall estén configurados correctamente!
   wwcConfigEnabledbStats: Habilitado bStats.
-  wwctGUIMainMenuPlayer: Menú de Traducción de %i
+  wwctGUIMainMenuPlayer: Menú de Traducción de {0}
   wwctGUIBookButton: Toggle Traducción de libros
-  wwcLangDetected: Lenguaje detecto %o.
+  wwcLangDetected: Lenguaje detecto {0}.
   wwcBookTranslateStart: Traducir libro objetivo...
   wwcConfigDisabledbStats: bStats Discapacitados.
   wwctsOffSender: Traducción de firmas desactivada.
   wwcUpdaterParserFailed: No se pudo realizar el uso de datos de actualización de
     Github.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: La clave secreta actual es %i.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: La clave secreta actual es {0}.
     Por favor, ingrese una clave secreta para Amazon, o escriba 0 para volver atrás.
   wwctbOffSender: Traducción de libros desactivada.
   wwcConfigGUIAmazonTranslateButton: Traducir Amazon
   wwcConfigConversationLangSuccess: El lenguaje del plugin ha cambiado con éxito.
-  wwcsSuccessfulTranslations: 'Traducciones exitosas: %i'
+  wwcsSuccessfulTranslations: 'Traducciones exitosas: {0}'
   wwcConfigConversationTranslationCacheInput: El límite actual de caché de traducción
-    es %i frases. Escriba cualquier cosa mayor que 0 para establecer un nuevo valor,
+    es {0} frases. Escriba cualquier cosa mayor que 0 para establecer un nuevo valor,
     o escriba 0 para deshabilitar la caché de traducción. Escriba algo menos de 0
     para volver atrás.
-  wwctbOffTarget: Traducción de libros desactivada para %i.
+  wwctbOffTarget: Traducción de libros desactivada para {0}.
   wwcConfigGUIGeneralSettings: Configuración General
   wwcInvalidLang: Idioma no válido en tu config.yml. Incumpliendo a en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Región de Amazon establecida
     con éxito.
-  wwcConfigRateLimitEnabled: Límite de tasa global habilitado y establecido a %i segundos.
+  wwcConfigRateLimitEnabled: Límite de tasa global habilitado y establecido a {0} segundos.
   wwcBadPerms: ¡No tienes los permisos requeridos para ejecutar este comando!
   wwcConfigGUILangButton: Cambiar Lenguaje de Plugin
   wwctGUISignButton: Toggle Traducción de Signo
   wwcUpdaterOutOfDate: WorldWIDEChat está desactualizado. Por favor, actualice a la
-    última versión, %i.
+    última versión, {0}.
   wwcConfigGUINextPageButton: Página Siguiente
   wwcConfigInvalidTranslatorSettings: ¡Configuración de traductor no válida! Por favor
     habilite sólo un traductor en su config.yml.
   wwcConfigGUIQuitButton: Salir y guardar cambios
-  wwctPlayerNotFound: Player %No he encontrado.
+  wwctPlayerNotFound: Player {0} he encontrado.
   wwcConfigGUIAmazonTranslateRegionButton: Cambiar región Amazon
-  wwcConfigConversationLangInput: 'El lenguaje del plugin actual es %i Por favor,
+  wwcConfigConversationLangInput: 'El lenguaje del plugin actual es {0} Por favor,
     introduce un código de idioma válido, o escribe 0 para cancelar. Códigos de idioma
-    válidos: %o'
+    válidos: {0}'
   wwcConfigConversationLangInvalid: ¡Código de idioma no válido!
   wwcConfigGUIWatsonAPIKeyButton: Cambiar clave API Watson
-  wwcEnabled: Habilitado la versión WorldWIDEChat %i.
-  wwcgLangToLangStart: Ahora traduciendo chat global de %i a %o.
+  wwcEnabled: Habilitado la versión WorldWIDEChat {0}.
+  wwcgLangToLangStart: Ahora traduciendo chat global de {0} a {1}.
   wwctbOnSender: Traducción de libros habilitada. Haga clic con el botón derecho mientras
     sostiene un libro para traducirlo!
   wwcListenersInitialized: Los oyentes inicializados.
@@ -68,10 +68,10 @@ Messages:
     de plugins
   wwcConfigConversationSendTranslationChatSuccess: Recordatorio de chat traductor
     activo se activó con éxito.
-  wwctsOffTarget: Traducción de firmas desactivada para %i.
+  wwctsOffTarget: Traducción de firmas desactivada para {0}.
   wwcUpdaterConnectionFailed: Imposible consultar las últimas actualizaciones en Github.
   watsonNotFoundExceptionNotification: No se puede traducir más tu insumo.
-  wwcConfigConversationWatsonAPIKeyInput: La clave API actual es %i. Por favor, ingrese
+  wwcConfigConversationWatsonAPIKeyInput: La clave API actual es {0}. Por favor, ingrese
     una clave API para Watson, o escriba 0 para volver atrás.
   wwctGUIStopButton: Dejar de Traducir
   wwcgTranslationStopped: Se ha detenido la traducción global del chat.
@@ -81,9 +81,9 @@ Messages:
   wwcConfigGUIGoogleTranslateAPIKeyButton: Cambiar Google Traducir Clave API
   wwcSignDeletedOrTooLong: 'El signo de destino se eliminó o la traducción fue demasiado
     larga. Traducción:'
-  wwctsOnTarget: Traducción de firmas habilitada para %i.
+  wwctsOnTarget: Traducción de firmas habilitada para {0}.
   wwcConfigCacheDisabled: Caché del traductor deshabilitado
-  wwcConfigConversationWatsonURLInput: El URL actual es %i. Por favor, ingrese una
+  wwcConfigConversationWatsonURLInput: El URL actual es {0}. Por favor, ingrese una
     URL de servicio para Watson, o escriba 0 para volver atrás.
   wwcBookDone: Libro traducido con éxito.
   wwctsOnSender: Traducción de firmas habilitada. Haga clic derecho en un cartel para
@@ -92,17 +92,17 @@ Messages:
   wwctGUITranslationButton: Empezar a Traducir
   wwctGUIAutoDetectButton: Auto-detectar Lenguaje de Origen
   wwcUpdaterUpToDate: ¡WorldWIDEChat está al día!
-  wwcConfigConversationAmazonTranslateRegionInput: La región actual es %i. Por favor,
+  wwcConfigConversationAmazonTranslateRegionInput: La región actual es {0}. Por favor,
     ingrese una región para Amazon, o escriba 0 para volver atrás.
   wwcNoConsole: Este comando sólo puede ser corrido por un jugador.
   wwcInitializationFail: Error al inicializar WorldWIDEChat.
   wwcrSuccess: Se recargó con éxito WorldWIDEChat.
-  wwcPlayerNotFound: Player %No he encontrado.
+  wwcPlayerNotFound: Player {0} he encontrado.
   wwcUpdaterOutOfDateChat: WorldWIDEChat está desactualizado. Por favor, actualice
     a la última versión.
   wwcConfigConversationRateLimitSuccess: Límite de tarifa establecido con éxito.
   wwcConfigConversationWatsonURLSuccess: Watson URL configurada con éxito.
-  wwctbPlayerNotFound: El jugador %i o bien no se encuentra, o no es un traductor
+  wwctbPlayerNotFound: El jugador {0} o bien no se encuentra, o no es un traductor
     activo.
   wwcConfigConversationTranslationCacheSuccess: Límite de caché de traducción establecido
     con éxito.
@@ -110,10 +110,10 @@ Messages:
   wwcConfigGUIPrefixButton: Cambiar prefijo de plugin
   wwctSameLangError: ¡No se puede traducir al mismo idioma!
   wwctGUINewTranslationTarget: Elegir un Lenguaje Target
-  wwcConfigConnectionSuccess: Conectado con éxito a %o!
+  wwcConfigConnectionSuccess: Conectado con éxito a {0}!
   wwcConfigGUIGoogleTranslateButton: Google Traducir
-  wwcsIsActiveTranslator: 'Es Traductor Activo: %i'
-  wwcConfigConversationPrefixInput: El prefijo actual es %i. Por favor, escriba uno
+  wwcsIsActiveTranslator: 'Es Traductor Activo: {0}'
+  wwcConfigConversationPrefixInput: El prefijo actual es {0}. Por favor, escriba uno
     nuevo, o escriba 0 para volver atrás.
   wwcConfigGUIPreviousPageButton: Página Anterior
   wwcConfigGUITranslatorCacheButton: Cambiar límite de caché de traducción
@@ -130,59 +130,59 @@ Messages:
   wwcUnsupportedVersion: 'Estás ejecutando una versión no compatible de Bukkit, Spigot
     o Paper. Versiones soportadas:'
   wwcGlobalOnJoinTranslationNotificationSourceLang: El chat global se está traduciendo
-    de %i a %o.
+    de {0} a {1}.
   wwcConfigGUITranslatorSettings: Configuración del Traductor
-  wwcConfigConversationGoogleTranslateAPIKeyInput: La clave API actual es %i. Por
+  wwcConfigConversationGoogleTranslateAPIKeyInput: La clave API actual es {0}. Por
     favor, ingrese una clave API para Google Translate, o escriba 0 para volver atrás.
   wwcConfigConversationRateLimitInput: El límite de tasa global actual por traducción
-    es %i segundos. Escriba cualquier cosa mayor que 0 para establecer un nuevo valor,
+    es {0} segundos. Escriba cualquier cosa mayor que 0 para establecer un nuevo valor,
     o escriba 0 para desactivar el límite. Escriba algo menos de 0 para volver atrás.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Traducir API conjunto
     de claves con éxito.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Cambiar clave secreta de Amazon
   wwcVersion: WorldWIDEChat, versión
-  wwcsAttemptedTranslations: 'Traducciones intentadas: %i'
+  wwcsAttemptedTranslations: 'Traducciones intentadas: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Conjunto de claves secretas
     de Amazon con éxito.
   wwcConfigConversationWatsonAPIKeySuccess: Set de claves API Watson con éxito.
-  wwcRateLimit: Tus traducciones son tarifa limitada. Espere otro %i segundos.
+  wwcRateLimit: Tus traducciones son tarifa limitada. Espere otro {0} segundos.
   wwcConfigCacheEnabled: La caché del traductor habilitada y establecida en un límite
-    de %i.
+    de {0}.
   wwctGUIExistingTranslationButton: Sobrescribir sesión de traducción actual
   wwcUserDataReloaded: Cargado todos los datos de usuario guardados.
   wwcConfigGUISendTranslationChatButton: Enviar recordatorio de chat al traductor
     activo al iniciar sesión
-  wwcsLastTranslationTime: 'Último (Exitoso) Tiempo de Traducción: %i'
+  wwcsLastTranslationTime: 'Último (Exitoso) Tiempo de Traducción: {0}'
   wwctbNotATranslator: ¡No eres un traductor activo! Asegúrate de haber configurado
     esto con /wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: La clave de acceso actual es
-    %i. Por favor, ingrese una clave de acceso para Amazon, o escriba 0 para volver
+    {0}. Por favor, ingrese una clave de acceso para Amazon, o escriba 0 para volver
     atrás.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: Conjunto de claves de acceso
     de Amazon con éxito.
   wwcConfigBadUpdateDelay: Retraso del actualizador no válido establecido en config.yml.
     Defendiendo a 86400 segundos...
   wwctrlRateLimitOffSender: Desactivado tu límite de tarifas.
-  wwctrlRateLimitAlreadyOffTarget: El límite de tarifas de %i ya está deshabilitado.
-  wwctrlPlayerNotFound: El jugador %i o bien no se encuentra, o no es un traductor
+  wwctrlRateLimitAlreadyOffTarget: El límite de tarifas de {0} ya está deshabilitado.
+  wwctrlPlayerNotFound: El jugador {0} o bien no se encuentra, o no es un traductor
     activo.
-  wwctrlRateLimitSetSender: Establece tu límite de tarifa a %i segundos.
-  wwctrlRateLimitOffTarget: Desactivado el límite de tarifas de %i.
-  wwctrlRateLimitSetTarget: Establece el límite de velocidad de %i a %o segundos.
+  wwctrlRateLimitSetSender: Establece tu límite de tarifa a {0} segundos.
+  wwctrlRateLimitOffTarget: Desactivado el límite de tarifas de {0}.
+  wwctrlRateLimitSetTarget: Establece el límite de velocidad de {0} a {1} segundos.
   wwctrlNotATranslator: ¡No eres un traductor activo! Asegúrate de haber configurado
     esto con /wwct.
   wwctrlRateLimitAlreadyOffSender: Tu límite de tarifas ya está deshabilitado.
   wwctGUIRateButton: Establecer límite de tasa
   wwctGUIConversationRateLimit: El límite de tasa por traducción es en la acentemente
-    %i segundos. Escriba cualquier cosa mayor que 0 para establecer un nuevo valor,
+    {0} segundos. Escriba cualquier cosa mayor que 0 para establecer un nuevo valor,
     o escriba 0 para desactivar el límite. Escriba algo menos de 0 para volver atrás.
   wwctGUITargetPlayerNull: El jugador objetivo se desconectó del servidor.
   wwcConfigConversationSyncUserDataDelayInput: El retraso actual por sincronización
-    de datos de usuario es %i segundos. Escriba cualquier cosa mayor que 10 para establecer
+    de datos de usuario es {0} segundos. Escriba cualquier cosa mayor que 10 para establecer
     un nuevo valor, o cualquier cosa menor que 10 para volver atrás.
   wwcConfigGUISyncUserDataButton: Cambiar retraso de sincronización de datos de usuario
   wwcConfigSyncDelayEnabled: Retraso por usuario sincronización de datos establecida
-    a %i segundos.
+    a {0} segundos.
   wwcConfigConversationSyncUserDataDelaySuccess: Retraso de sincronización de datos
     del usuario establecido correctamente.
   wwcConfigSyncDelayInvalid: Retraso de sincronización de datos de usuario no válido
@@ -190,24 +190,24 @@ Messages:
   wwcConfigCacheInvalid: Tamaño de caché del traductor no válido. Incumpliendo a 10...
   wwcInventoryErrorPlayer: Error detectado con tu GUI. Se ha enviado un registro a
     la consola.
-  wwcInventoryError: Error detectado con GUI del usuario %i Por favor reportar este
+  wwcInventoryError: Error detectado con GUI del usuario {0} Por favor reportar este
     problema al desarrollador.
-  wwctiOffTarget: Traducción de artículos desactivada para %i.
+  wwctiOffTarget: Traducción de artículos desactivada para {0}.
   wwctiOffSender: Traducción de artículos desactivada.
   wwcItemTranslateTitleStock: No se pueden traducir los nombres de los elementos predeterminados.
   wwctGUIItemButton: Toggle Traducción de ítem
   wwcItemTranslateTitleDone: Título del artículo traducido con éxito.
   wwcGUITempItem: Display de Artículo
   wwcItemTranslateStart: Traducir elemento objetivo...
-  wwcBookTranslateTitleSuccess: 'Título del libro traducido: %i'
+  wwcBookTranslateTitleSuccess: 'Título del libro traducido: {0}'
   wwctiOnSender: Traducción de artículos habilitada. ¡Haga clic derecho con un artículo
     en su mano principal para traducirlo!
   wwcItemTranslateLoreStart: Traducir la lore del artículo objetivo...
   wwcItemTranslateLoreDone: Traducido artículo lore con éxito.
-  wwctiOnTarget: Traducción de artículos habilitada para %i.
+  wwctiOnTarget: Traducción de artículos habilitada para {0}.
   wwcInvalidTranslator: Configuración de traductor no válida. Por favor arregla esto
     en tu config.yml o con /wwcc para usar este plugin.
-  wwcConfigGUIEachTranslatorSettings: '%i Configuración'
+  wwcConfigGUIEachTranslatorSettings: '{0} Configuración'
   wwcConfigGUIWatsonButton: Watson
   wwcServerReloadWarning: WorldwideChat no condona el uso de /reload. Por favor procedan
     con cautela.
@@ -215,7 +215,7 @@ Messages:
     o Solutor de problemas, deberías desactivarlo.
   wwcTranslatorErrorThresholdReached: Se alcanzó el umbral de error. Este plugin ahora
     se volverá a cargar, y deshabilitará a todos los traductores.
-  wwcConfigErrorLimitEnabled: Límite de error del traductor establecido a %i.
+  wwcConfigErrorLimitEnabled: Límite de error del traductor establecido a {0}.
   wwcTranslatorError: Ocuparon un problema al intentar tu traducción. Por favor inténtalo
     de nuevo.
   wwcConfigErrorLimitInvalid: Límite de error de traductor no válido establecido en
@@ -223,10 +223,10 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: Por favor, consulte errorLog.txt en
     la carpeta del plugin WorldwideChat para obtener más información.
   wwctInvalidInputLangCode: '¡Se proporciona código de idioma de entrada no válido!
-    Códigos de lang válidos: %o'
-  wwcsTitle: Registro de %i
+    Códigos de lang válidos: {0}'
+  wwcsTitle: Registro de {0}
   wwctInvalidOutputLangCode: '¡Se proporciona código de idioma de salida no válido!
-    Códigos de lang válidos: %o'
+    Códigos de lang válidos: {0}'
   wwctGUISourceTranslationSelected: Ha seleccionado este idioma.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Eliminar Anulación
   wwcConfigConversationOverrideTextChange: Escriba un nuevo mensaje para esta anulación,
@@ -259,48 +259,48 @@ Messages:
     Defendiendo a 255 chars...
   wwcConfigConversationCharacterLimitSuccess: Límite de caracteres establecido con
     éxito.
-  wwcteOnTarget: Traducción de entidad habilitada para %i.
-  wwcEntityTranslateDone: 'Nombre de la entidad traducida: %i'
+  wwcteOnTarget: Traducción de entidad habilitada para {0}.
+  wwcEntityTranslateDone: 'Nombre de la entidad traducida: {0}'
   wwcEntityTranslateNoName: Entidad no tiene un nombre personalizado.
   wwcConfigConversationErrorLimitInput: El límite de error actual para cada traductor
-    es %i. Escriba algo mayor que 0 para establecer un nuevo valor, o escriba algo
+    es {0}. Escriba algo mayor que 0 para establecer un nuevo valor, o escriba algo
     menor o igual a 0 para volver atrás.
   wwcConfigGUIGlobalRateLimitButton: Cambiar límite global de tasa
   wwcteOnSender: Traducción de entidad habilitada. Haga clic derecho en una entidad
     para traducir su nombre!
   wwcConfigGUIResponseLimitButton: Cambio traductor Tiempo de espera de respuesta
   wwcConfigMessageCharLimitEnabled: Límite de caracteres por mensaje establecido a
-    %i caracteres.
-  wwcteOffTarget: Traducción de entidad desactivada para %i.
+    {0} caracteres.
+  wwcteOffTarget: Traducción de entidad desactivada para {0}.
   wwcCharLimit: ¡Tu mensaje es demasiado largo! Por favor, asegúrate de que tu mensaje
-    tenga menos de %i caracteres de longitud.
+    tenga menos de {0} caracteres de longitud.
   wwcConfigConversationCharacterLimitInput: El límite de caracteres actual por mensaje
-    es %i caracteres. Escriba algo mayor que 0 para establecer un nuevo valor, o escriba
+    es {0} caracteres. Escriba algo mayor que 0 para establecer un nuevo valor, o escriba
     algo menor o igual a 0 para volver atrás.
   wwcteOffSender: Traducción de entidad desactivada.
   wwctGUIEntityButton: Alternar Entidad Traducción
   wwctrlRateLimitBadInt: Tu límite de tasa no es un entero válido.
-  wwcTranslatorErrorConsole: Ocupa un problema mientras el usuario %i intentaba su
+  wwcTranslatorErrorConsole: Ocupa un problema mientras el usuario {0} intentaba su
     traducción. Por favor, consulte errorLog.txt para obtener más detalles.
   wwctGUIChatButton: Toggle Chat Traducción
   wwcrBegin: Reccargando WorldwideChat...
-  wwctTranslationStoppedOtherPlayer: Se ha detenido la sesión de traducción para %i.
+  wwctTranslationStoppedOtherPlayer: Se ha detenido la sesión de traducción para {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Se está traduciendo el
-    chat global, pero tienes una sesión de traducción activa de %i a %o.
+    chat global, pero tienes una sesión de traducción activa de {0} a {1}.
   wwctCannotTranslateConsole: ¡No se puede iniciar una sesión de traducción para consola!
-  wwctLangToLangStart: Iniciando una nueva sesión de traducción de %i a %o.
+  wwctLangToLangStart: Iniciando una nueva sesión de traducción de {0} a {1}.
   wwcOnJoinTranslationNotificationSourceLang: Tienes una sesión de traducción activa
-    de %i a %o.
+    de {0} a {1}.
   wwctAutoTranslateStartOtherPlayer: Iniciando una nueva sesión de traducción para
-    %i a %o.
+    {0} a {1}.
   wwctTranslationStopped: Tu sesión de traducción ha sido detenida.
-  wwctLangToLangStartOtherPlayer: Iniciando una nueva sesión de traducción para %o
-    de %i a %e.
-  wwctAutoTranslateStart: Iniciando una nueva sesión de traducción a %o.
+  wwctLangToLangStartOtherPlayer: Iniciando una nueva sesión de traducción para {0}
+    de {0} a {1}.
+  wwctAutoTranslateStart: Iniciando una nueva sesión de traducción a {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Tienes una sesión de traducción activa
-    a %o.
+    a {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Se está traduciendo
-    el chat global, pero tienes una sesión de traducción activa a %o.
+    el chat global, pero tienes una sesión de traducción activa a {0}.
   wwcConfigGUIChangesNotSaved: Tus cambios no surtirán efecto hasta que hagas clic
     en la barrera roja en /wwcc.
   wwctciOffSender: Traducción de chat entrante deshabilitada.
@@ -311,25 +311,25 @@ Messages:
   wwctciOnSender: Traducción de chat entrante habilitada. ¡Cualquier cosa que recibas
     será traducida!
   wwctGUIChatMenu: Toggle Menú de traducción de chat
-  wwctcoOnTarget: Traducción de chat saliente habilitada para %i.
-  wwctcoOffTarget: Traducción de chat saliente deshabilitada para %i.
+  wwctcoOnTarget: Traducción de chat saliente habilitada para {0}.
+  wwctcoOffTarget: Traducción de chat saliente deshabilitada para {0}.
   wwctGUIChatOutgoingButton: Toggle Traducción de chat saliente
-  wwctciOnTarget: Traducción de chat entrante habilitada para %i.
-  wwctciOffTarget: Traducción de chat entrante deshabilitada para %i.
+  wwctciOnTarget: Traducción de chat entrante habilitada para {0}.
+  wwctciOffTarget: Traducción de chat entrante deshabilitada para {0}.
   wwcConfigConversationSendIncomingHoverTextChatSuccess: Chat entrante original adjunto
     a la traducción como texto de hover se movía con éxito.
   wwcConfigGUISendIncomingHoverTextChatButton: Agregar mensajes entrantes originales
     como texto de Hover
-  wwctGUIExistingChatOutgoingEnabled: 'Traducción de chat saliente habilitada: %i'
-  wwctGUIExistingTranslationInput: 'Idioma de entrada: %i'
-  wwctGUIExistingChatIncomingEnabled: 'Traducción de chat entrante habilitada: %i'
-  wwctGUIExistingTranslationOutput: 'Idioma de salida: %i'
+  wwctGUIExistingChatOutgoingEnabled: 'Traducción de chat saliente habilitada: {0}'
+  wwctGUIExistingTranslationInput: 'Idioma de entrada: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Traducción de chat entrante habilitada: {0}'
+  wwctGUIExistingTranslationOutput: 'Idioma de salida: {0}'
   wwcTranslatorAttempt: Intentando conectarse al traductor en config.yml... (Intento
-    %i/ %o)
-  wwcTimeoutExceptionConsole: El jugador %i tuvo su tiempo de espera de solicitud
+    {0}/ {1})
+  wwcTimeoutExceptionConsole: El jugador {0} tuvo su tiempo de espera de solicitud
     más reciente. Este error no es fatal, pero WorldwideChat debería ser recargado
     si sigue ocurriendo.
-  wwcGUIPageNumber: 'Número de página: %i'
+  wwcGUIPageNumber: 'Número de página: {0}'
   wwcConfigYAMLFallback: Cayendo de nuevo a YAML...
   wwcConfigGUIToggleSQLButton: Toggle SQL
   wwcConfigConversationToggleSQLSuccess: SQL se ha deseleccionado con éxito. Recarga
@@ -350,40 +350,40 @@ Messages:
   wwcConfigGUISQLPortButton: Cambiar puerto SQL
   wwcConfigGUISQLOptionalArgsButton: Cambiar argumentos opcionales SQL
   wwcConfigConversationToggleSQLSSLSuccess: SSL para SQL se ha mandado con éxito.
-  wwcConfigConversationSQLPortInput: El puerto actual es %i. Escriba cualquier cosa
+  wwcConfigConversationSQLPortInput: El puerto actual es {0}. Escriba cualquier cosa
     que no sea 0 para establecer un nuevo puerto, o escriba 0 para volver.
   wwcConfigGUISQLPasswordButton: Cambiar contraseña SQL
   wwcConfigConversationSQLHostnameSuccess: Se cambió correctamente el nombre de host
     SQL.
-  wwcConfigConversationSQLHostnameInput: El nombre de host actual es %i. Escriba cualquier
+  wwcConfigConversationSQLHostnameInput: El nombre de host actual es {0}. Escriba cualquier
     cosa que no sea 0 para establecer un nuevo nombre de host, o escriba 0 para volver.
   wwcConfigGUISQLHostnameButton: Cambiar el nombre de host SQL
   wwcConfigConversationSQLOptionalArgsSuccess: Se modificaron correctamente los argumentos
     SQL opcionales.
   wwcConfigConversationSQLPasswordSuccess: Se cambió correctamente la contraseña SQL.
-  wwcConfigConversationSQLPasswordInput: La contraseña actual es %i. Escriba cualquier
+  wwcConfigConversationSQLPasswordInput: La contraseña actual es {0}. Escriba cualquier
     otra cosa que no sea 0 para establecer una nueva contraseña, o escriba 0 para
     volver.
   wwcConfigGUIToggleSQLSSLButton: Toggle SQL SSL
   wwcConfigConversationSQLUsernameSuccess: Se cambió correctamente el nombre de usuario
     SQL.
-  wwcConfigConversationSQLUsernameInput: El nombre de usuario actual es %i. Escriba
+  wwcConfigConversationSQLUsernameInput: El nombre de usuario actual es {0}. Escriba
     cualquier cosa que no sea 0 para establecer un nuevo nombre de usuario, o escriba
     0 para volver.
   wwcConfigConversationSQLPortSuccess: Se cambió correctamente el puerto SQL.
   wwcConfigGUISQLUsernameButton: Cambiar nombre de usuario SQL
   wwcConfigConversationSQLOptionalArgsCleared: Argumentos opcionales borrados correctamente.
   wwcConfigConversationSQLOptionalArgsInput: 'Los argumentos SQL opcionales actuales
-    son: %i. Argumentos de tipo separados por una coma (key=value, key2=value2), o
+    son: {0}. Argumentos de tipo separados por una coma (key=value, key2=value2), o
     escriba clear para borrar los args actuales, o escriba 0 para volver.'
   wwcConfigConversationSQLDatabaseNameInput: El nombre actual de la base de datos
-    es %i. Escriba cualquier cosa que no sea 0 para establecer un nuevo nombre de
+    es {0}. Escriba cualquier cosa que no sea 0 para establecer un nuevo nombre de
     base de datos, o escriba 0 para volver.
   wwcConfigGUISQLDatabaseNameButton: Cambiar base de datos SQL
   wwcConfigConversationSQLDatabaseNameSuccess: Se cambió correctamente el nombre de
     la base de datos SQL.
   wwcConfigConversationFatalAsyncAbort: El tiempo de espera actual para abortar todas
-    las tareas asíncrona es de %i segundos. Escriba cualquier cosa por encima de 7
+    las tareas asíncrona es de {0} segundos. Escriba cualquier cosa por encima de 7
     para establecer un nuevo tiempo de espera, o cualquier cosa debajo de él para
     volver atrás.
   wwcConfigConversationFatalAsyncSuccess: El tiempo de espera de tarea asincrónica
@@ -395,7 +395,7 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Cambiar Clave de API de Libre Translate
   libreHttp403: Falta la clave API de Libre Translate, o estás prohibido en el servidor.
   wwcConfigConversationLibreURLSuccess: Libre URL establecida correctamente.
-  wwcConfigConversationLibreTranslateApiKeyInput: La clave API actual es %i. Por favor,
+  wwcConfigConversationLibreTranslateApiKeyInput: La clave API actual es {0}. Por favor,
     ingrese una clave API para Libre, o escriba 0 para regresar.
   wwcConfigGUILibreTranslateButton: Libre Traducir
   libreHttp429: Sin confianza debido al límite de velocidad del servidor.
@@ -404,23 +404,23 @@ Messages:
     Recargar para que los cambios surtan efecto.
   wwcConfigConversationLibreTranslateApiKeySuccess: La clave de API Libre se ha establecido
     correctamente.
-  wwcConfigConversationLibreURLInput: La URL actual es %i. Por favor, ingrese una
+  wwcConfigConversationLibreURLInput: La URL actual es {0}. Por favor, ingrese una
     URL para Libre, o escriba 0 para regresar.
-  libreHttpUnknown: 'Error http desconocido: %i'
+  libreHttpUnknown: 'Error http desconocido: {0}'
   wwcConfigGUILibreTranslateURLButton: Cambiar Libre Traducir URL
-  wwcConfigConnectionFail: Error al conectarse a %i.
+  wwcConfigConnectionFail: Error al conectarse a {0}.
   wwcConfigGUIMongoSettings: Configuración de MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Se cambió correctamente el nombre
     de la base de datos MongoDB.
   wwcConfigGUIMongoHostnameButton: Cambiar el nombre de host de MongoDB
-  wwcConfigConversationMongoPasswordInput: La contraseña actual es %i. Escriba cualquier
+  wwcConfigConversationMongoPasswordInput: La contraseña actual es {0}. Escriba cualquier
     otra cosa que no sea 0 para establecer una nueva contraseña, o escriba 0 para
     volver atrás.
-  wwcConfigConversationMongoPortInput: El puerto actual es %i. Escriba cualquier cosa
+  wwcConfigConversationMongoPortInput: El puerto actual es {0}. Escriba cualquier cosa
     que no sea 0 para establecer un nuevo puerto, o escriba 0 para volver atrás.
   wwcConfigConversationToggleMongoSuccess: MongoDB se ha desalteado correctamente.
     Recargar para que el cambio surta efecto.
-  wwcConfigConversationMongoHostnameInput: El nombre de host actual es %i. Escriba
+  wwcConfigConversationMongoHostnameInput: El nombre de host actual es {0}. Escriba
     cualquier cosa que no sea 0 para establecer un nuevo nombre de host, o escriba
     0 para regresar.
   wwcConfigConversationMongoHostnameSuccess: Se cambió correctamente el nombre de
@@ -428,13 +428,13 @@ Messages:
   wwcConfigGUIMongoMenuButton: Cambiar la configuración de MongoDB
   wwcConfigGUIToggleMongoButton: Toggle MongoDB
   wwcConfigConversationMongoDatabaseNameInput: El nombre actual de la base de datos
-    es %i. Escriba cualquier cosa que no sea 0 para establecer un nuevo nombre de
+    es {0}. Escriba cualquier cosa que no sea 0 para establecer un nuevo nombre de
     base de datos o escriba 0 para volver atrás.
   wwcConfigConversationMongoOptionalArgsInput: 'Los argumentos opcionales actuales
-    de MongoDB son: %i. Escriba argumentos separados por una coma (key=value, key2=value2),
+    de MongoDB son: {0}. Escriba argumentos separados por una coma (key=value, key2=value2),
     o escriba clear para borrar los args actuales, o escriba 0 para volver atrás.'
   wwcConfigGUIMongoDatabaseNameButton: Cambiar base de datos MongoDB
-  wwcConfigConversationMongoUsernameInput: El nombre de usuario actual es %i. Escriba
+  wwcConfigConversationMongoUsernameInput: El nombre de usuario actual es {0}. Escriba
     cualquier cosa que no sea 0 para establecer un nuevo nombre de usuario, o escriba
     0 para volver atrás.
   wwcConfigGUIMongoOptionalArgsButton: Cambiar los argumentos opcionales de MongoDB
@@ -461,7 +461,7 @@ Messages:
   wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Traducir
   wwcConfigConversationDeepLTranslateApiKeySuccess: La clave de la API DeepL se ha
     establecido correctamente.
-  wwcConfigConversationDeepLTranslateApiKeyInput: La clave API actual es %i. Por favor,
+  wwcConfigConversationDeepLTranslateApiKeyInput: La clave API actual es {0}. Por favor,
     ingrese una clave API para DeepL o escriba 0 para volver atrás.
   wwcConfigErrorsToIgnoreSuccess: Errores de traductor registrados con éxito para
     ignorar.
@@ -472,24 +472,24 @@ Messages:
     del traductor para ignorar las frases.
   wwcConfigGUIIgnoreErrorsButton: Cambiar errores para ignorar
   wwcConfigConversationIgnoreErrorsInput: 'La lista actual de frases en los errores
-    del traductor a ignorar son: %i. Escriba argumentos separados por una coma (key=value,
+    del traductor a ignorar son: {0}. Escriba argumentos separados por una coma (key=value,
     key2=value2), o escriba clear para borrar los args actuales, o escriba 0 para
     volver atrás. Además, escribir “*” provocará que el plugin no verifique ningún
     error del traductor.'
   wwcConfigConversationIgnoreErrorsCleared: Los errores del traductor para ignorar
     frases se borraron con éxito.
 
-  wwcsActiveTransPrevRate: 'Traductor activo Tarifa anterior Tiempo límite: %i'
-  wwcsActiveTransSaved: 'Traductor activo guardado en disco: %i'
-  wwcsActiveTransIncoming: 'Traductor activo traduciendo el chat entrante: %i'
-  wwcsActiveTransOutLang: 'Lenguaje de salida del traductor activo: %i'
-  wwcsActiveTransInLang: 'Idioma de entrada del traductor activo: %i'
-  wwcsActiveTransBook: 'Traductor Activo Traduciendo Libro: %i'
-  wwcsActiveTransSign: 'Traductor Activo Translating Signo: %i'
-  wwcsActiveTransUUID: 'Traductor activo UUID: %i'
-  wwcsActiveTransRateLimit: 'Límite de tasa de traductor activo: %i'
-  wwcsActiveTransColorWarning: 'Traductor Activo Recibido Advertencia de Color: %i'
-  wwcsActiveTransOutgoing: 'Traductor Activo Traduciendo Chat Saliente: %i'
-  wwcsActiveTransItem: 'Traductor Activo Traduciendo Artículo: %i'
-  wwcsActiveTransEntity: 'Entidad de traducción del traductor activo: %i'
+  wwcsActiveTransPrevRate: 'Traductor activo Tarifa anterior Tiempo límite: {0}'
+  wwcsActiveTransSaved: 'Traductor activo guardado en disco: {0}'
+  wwcsActiveTransIncoming: 'Traductor activo traduciendo el chat entrante: {0}'
+  wwcsActiveTransOutLang: 'Lenguaje de salida del traductor activo: {0}'
+  wwcsActiveTransInLang: 'Idioma de entrada del traductor activo: {0}'
+  wwcsActiveTransBook: 'Traductor Activo Traduciendo Libro: {0}'
+  wwcsActiveTransSign: 'Traductor Activo Translating Signo: {0}'
+  wwcsActiveTransUUID: 'Traductor activo UUID: {0}'
+  wwcsActiveTransRateLimit: 'Límite de tasa de traductor activo: {0}'
+  wwcsActiveTransColorWarning: 'Traductor Activo Recibido Advertencia de Color: {0}'
+  wwcsActiveTransOutgoing: 'Traductor Activo Traduciendo Chat Saliente: {0}'
+  wwcsActiveTransItem: 'Traductor Activo Traduciendo Artículo: {0}'
+  wwcsActiveTransEntity: 'Entidad de traducción del traductor activo: {0}'
 
