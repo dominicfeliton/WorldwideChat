@@ -70,6 +70,11 @@ public class WWCTabCompleter implements TabCompleter {
 				}
 			    break;
 			case 2:
+				// Do not say anything if first arg is stop
+				if (args[0].equalsIgnoreCase("stop")) {
+					break;
+				}
+
 				// Add stop for target player
 				// Do not add stop if user does not have permission
 				Player possiblePlayer = Bukkit.getPlayerExact(args[0]);
@@ -159,6 +164,11 @@ public class WWCTabCompleter implements TabCompleter {
 				}
 				break;
 			case 2:
+				// Do not say anything if first arg is stop
+				if (args[0].equalsIgnoreCase("stop")) {
+					break;
+				}
+
 				// This argument can only be an outLang
 				for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
 					String langName = eaLang.getLangName();
