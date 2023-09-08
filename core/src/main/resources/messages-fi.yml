@@ -89,8 +89,8 @@ Messages:
   wwctGUITranslationButton: Aloita kääntäminen
   wwctGUIAutoDetectButton: Automaattinen tunnistus lähdekieli
   wwcUpdaterUpToDate: WorldwideChat on ajan tasalla!
-  wwcConfigConversationAmazonTranslateRegionInput: Nykyinen alue on {0}. Kirjoita alue
-    Amazonille tai kirjoita 0 palaaksesi takaisin.
+  wwcConfigConversationAmazonTranslateRegionInput: Nykyinen alue on {0}. Kirjoita
+    alue Amazonille tai kirjoita 0 palaaksesi takaisin.
   wwcNoConsole: Tätä komentoa voi suorittaa vain pelaaja.
   wwcInitializationFail: WorldwideChatin alustus epäonnistui.
   wwcrSuccess: WorldwideChat ladattu onnistuneesti uudelleen.
@@ -341,8 +341,8 @@ Messages:
   wwcConfigConversationSQLOptionalArgsSuccess: Onnistuneesti muuttanut valinnaisia
     SQL-argumentteja.
   wwcConfigConversationSQLPasswordSuccess: Vaihtoi SQL-salasanan onnistuneesti.
-  wwcConfigConversationSQLPasswordInput: Nykyinen salasana on {0}. Kirjoita jokin muu
-    kuin 0 asettaaksesi uuden salasanan tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationSQLPasswordInput: Nykyinen salasana on {0}. Kirjoita jokin
+    muu kuin 0 asettaaksesi uuden salasanan tai kirjoita 0 palataksesi takaisin.
   wwcConfigGUIToggleSQLSSLButton: Vaihda SQL SSL
   wwcConfigConversationSQLUsernameSuccess: Vaihtoi SQL-käyttäjänimen onnistuneesti.
   wwcConfigConversationSQLUsernameInput: Nykyinen käyttäjänimi on {0}. Kirjoita jokin
@@ -370,8 +370,8 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Muuta Libre Käännä API-avain
   libreHttp403: Missing Libre Translate API Key, tai olet kielletty palvelimelta!
   wwcConfigConversationLibreURLSuccess: Libre URL asetettu onnistuneesti.
-  wwcConfigConversationLibreTranslateApiKeyInput: Nykyinen API-avain on {0}. Anna Libre-sovellusliittymän
-    avain tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationLibreTranslateApiKeyInput: Nykyinen API-avain on {0}. Anna
+    Libre-sovellusliittymän avain tai kirjoita 0 palataksesi takaisin.
   wwcConfigGUILibreTranslateButton: Libre Käännä
   libreHttp429: Ei luottamusta palvelimen nopeusrajan vuoksi.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Käännä
@@ -389,8 +389,8 @@ Messages:
   wwcConfigGUIMongoHostnameButton: Vaihda MongoDB-isäntänimi
   wwcConfigConversationMongoPasswordInput: Nykyinen salasana on {0}. Kirjoita jokin
     muu kuin 0, jos haluat asettaa uuden salasanan, tai kirjoita 0 palataksesi takaisin.
-  wwcConfigConversationMongoPortInput: Nykyinen portti on {0}. Kirjoita jokin muu kuin
-    0, jos haluat asettaa uuden portin, tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationMongoPortInput: Nykyinen portti on {0}. Kirjoita jokin muu
+    kuin 0, jos haluat asettaa uuden portin, tai kirjoita 0 palataksesi takaisin.
   wwcConfigConversationToggleMongoSuccess: MongoDB vaihtui onnistuneesti. Lataa uudelleen,
     jotta muutos tulee voimaan.
   wwcConfigConversationMongoHostnameInput: Nykyinen isäntänimi on {0}. Kirjoita jokin
@@ -405,8 +405,8 @@ Messages:
     ovat: {0}. Kirjoita argumentit pilkulla erotettuna (key=value, key2=value2) tai
     kirjoita selkeä pyyhkimällä nykyiset argit tai kirjoita 0 palataksesi takaisin.'
   wwcConfigGUIMongoDatabaseNameButton: Vaihda MongoDB-tietokanta
-  wwcConfigConversationMongoUsernameInput: Nykyinen käyttäjänimi on {0}. Kirjoita jokin
-    muu kuin 0, jos haluat asettaa uuden käyttäjänimen, tai kirjoita 0 palataksesi
+  wwcConfigConversationMongoUsernameInput: Nykyinen käyttäjänimi on {0}. Kirjoita
+    jokin muu kuin 0, jos haluat asettaa uuden käyttäjänimen, tai kirjoita 0 palataksesi
     takaisin.
   wwcConfigGUIMongoOptionalArgsButton: Muuta MongoDB valinnaisia argumentteja
   wwcConfigConversationMongoUsernameSuccess: MongoDB-käyttäjänimi vaihdettiin onnistuneesti.
@@ -428,22 +428,23 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Muuta DeepL Käännä API Key
   wwcConfigGUIToggleDeepLTranslateButton: Vaihda DeepL Käännä
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API -näppäin asetettu onnistuneesti.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Nykyinen API-avain on {0}. Anna DeepL-sovellusliittymän
-    avain tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Nykyinen API-avain on {0}. Anna
+    DeepL-sovellusliittymän avain tai kirjoita 0 palataksesi takaisin.
   wwcConfigErrorsToIgnoreSuccess: Onnistuneesti rekisteröity kääntäjä virheitä sivuuttaa.
   wwcConfigErrorsToIgnoreInvalid: Virheellinen kääntäjä virheitä ohittaa asetettu
     config.yml. Oletusarvojen rekisteröinti...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Onnistuneesti muuttanut kääntäjän virheitä
     sivuuttaa lauseita.
   wwcConfigGUIIgnoreErrorsButton: Muuta virheitä sivuuttaa
   wwcConfigConversationIgnoreErrorsInput: 'Ohittavien kääntäjävirheiden nykyinen luettelo
-    on: {0}. Kirjoita argumentit pilkulla erotettuna (key=value, key2=value2) tai kirjoita
-    selkeä pyyhkimällä nykyiset argit tai kirjoita 0 palataksesi takaisin. Lisäksi
-    kirjoittamalla ”*” aiheuttaa sen, että laajennus ei tarkista kääntäjän virheitä.'
+    on: {0}. Kirjoita argumentit pilkulla erotettuna (key=value, key2=value2) tai
+    kirjoita selkeä pyyhkimällä nykyiset argit tai kirjoita 0 palataksesi takaisin.
+    Lisäksi kirjoittamalla ”*” aiheuttaa sen, että laajennus ei tarkista kääntäjän
+    virheitä.'
   wwcConfigConversationIgnoreErrorsCleared: Kääntäjä virheitä sivuuttaa lauseita tyhjennetty
     onnistuneesti.
-
+  
   wwcsActiveTransPrevRate: 'Aktiivisen kääntäjän aiemman nopeuden raja-aika: {0}'
   wwcsActiveTransSaved: 'Aktiivinen kääntäjä tallennettu levylle: {0}'
   wwcsActiveTransIncoming: 'Aktiivinen kääntäjä saapuvan keskustelun kääntäminen:
@@ -459,4 +460,6 @@ Messages:
     {0}'
   wwcsActiveTransItem: 'Aktiivinen kääntäjä kohteen kääntäminen: {0}'
   wwcsActiveTransEntity: 'Aktiivisen kääntäjän kääntäjäyksikkö: {0}'
+  wwcSupportedServer: WorldwideChatin alustaminen {0}...
+  wwcSupportedVersion: Ominaisuuksien käyttöönotto versiolle {0}...
 

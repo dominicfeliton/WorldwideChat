@@ -51,9 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: Fita & Ajiye Canje-canje
   wwctPlayerNotFound: Mai wasa {0} samu ba.
   wwcConfigGUIAmazonTranslateRegionButton: Canja Yankin Amazon
-  wwcConfigConversationLangInput: 'Harshen plugin na yanzu shine {0}. Da fatan za a
-    shigar da lambar harshe mai inganci, ko rubuta 0 don sokewa. Lambobin harshe masu
-    inganci: {0}'
+  wwcConfigConversationLangInput: 'Harshen plugin na yanzu shine {0}. Da fatan za
+    a shigar da lambar harshe mai inganci, ko rubuta 0 don sokewa. Lambobin harshe
+    masu inganci: {0}'
   wwcConfigConversationLangInvalid: Lambar harshe mara inganci!
   wwcConfigGUIWatsonAPIKeyButton: Canja Maɓallin Watson API
   wwcEnabled: An kunna versionWideChat na Duniya {0}.
@@ -97,8 +97,8 @@ Messages:
     zuwa sabuwar version.
   wwcConfigConversationRateLimitSuccess: Ƙididdigar iyaka da aka saita nasara.
   wwcConfigConversationWatsonURLSuccess: Watson URL saita nasara.
-  wwctbPlayerNotFound: Mai wasan {0} dai ba a samu shi ba, ko kuma ba mai fassara mai
-    aiki ba ne.
+  wwctbPlayerNotFound: Mai wasan {0} dai ba a samu shi ba, ko kuma ba mai fassara
+    mai aiki ba ne.
   wwcConfigConversationTranslationCacheSuccess: Fassara cache iyaka saita nasara.
   wwctInvalidArgs: An bayar da muhawara mara inganci!
   wwcConfigGUIPrefixButton: Canja Prefix Plugin
@@ -107,8 +107,8 @@ Messages:
   wwcConfigConnectionSuccess: An haɗa nasarar zuwa {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Shin Mai Aiki Mai Fassara: {0}'
-  wwcConfigConversationPrefixInput: Shafin farko na yanzu shi ne {0}. Da fatan za a
-    rubuta sabon abu, ko rubuta 0 don komawa.
+  wwcConfigConversationPrefixInput: Shafin farko na yanzu shi ne {0}. Da fatan za
+    a rubuta sabon abu, ko rubuta 0 don komawa.
   wwcConfigGUIPreviousPageButton: Shafin baya
   wwcConfigGUITranslatorCacheButton: Canja Ƙayyadadden Fassara
   wwcConfigConversationbStatsSuccess: An samu nasarar haifar da bStats.
@@ -180,8 +180,8 @@ Messages:
   wwcConfigCacheInvalid: Girman cache mara inganci. Cefaulting zuwa 10...
   wwcInventoryErrorPlayer: Kuskuren da aka gano tare da GUI. An aika log ɗin zuwa
     na'ura mai kwakwalwa.
-  wwcInventoryError: Kuskuren da aka gano tare da GUI na mai amfani {0}. Da fatan za
-    a bayar da rahoton wannan batu ga mai
+  wwcInventoryError: Kuskuren da aka gano tare da GUI na mai amfani {0}. Da fatan
+    za a bayar da rahoton wannan batu ga mai
   wwctiOffTarget: Fassarar abu an kashe da {0}.
   wwctiOffSender: Fassarar abu ya nakasa.
   wwcItemTranslateTitleStock: Ba a iya fassara sunayen abubuwa na asali ba.
@@ -354,8 +354,8 @@ Messages:
   wwcConfigGUISQLUsernameButton: Canja mai amfani na SQL
   wwcConfigConversationSQLOptionalArgsCleared: Muhawarar zaɓi ta share nasara.
   wwcConfigConversationSQLOptionalArgsInput: 'Muhawarar SQL da aka zaɓa yanzu sune:
-    {0}. Rubuta muhawarar da aka raba ta hanyar waƙafi (key=darajar, key2=darajar 2),
-    ko rubuta bayyane don goge rags na yanzu, ko rubuta 0 don komawa.'
+    {0}. Rubuta muhawarar da aka raba ta hanyar waƙafi (key=darajar, key2=darajar
+    2), ko rubuta bayyane don goge rags na yanzu, ko rubuta 0 don komawa.'
   wwcConfigConversationSQLDatabaseNameInput: Sunan bayanai na yanzu shine {0}. Rubuta
     wani abu banda 0 don saita sabon sunan bayanai, ko rubuta 0 don komawa.
   wwcConfigGUISQLDatabaseNameButton: Canja SQL database
@@ -439,7 +439,7 @@ Messages:
     da shi.
   wwcConfigErrorsToIgnoreInvalid: Kuskuren fassara mara inganci don watsi da saiti
     a config.yml. Yin rajistar fayiloli...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Nasarar canza kurakurai masu fassara don
     watsi da kalmomi.
   wwcConfigGUIIgnoreErrorsButton: Canja Kurakurai don Watsi
@@ -450,7 +450,7 @@ Messages:
     kurakurai mai fassara ba.'
   wwcConfigConversationIgnoreErrorsCleared: Kurakurai masu fassara don watsi da kalmomin
     da aka cire nasara.
-
+  
   wwcsActiveTransPrevRate: 'Mai fassara Mai aiki na baya Ƙididdigar Lokaci: {0}'
   wwcsActiveTransSaved: 'Mai fassara mai aiki da aka ajiye zuwa Disk: {0}'
   wwcsActiveTransIncoming: 'Mai fassara mai aiki yana fassara hira mai shigowa: {0}'
@@ -464,4 +464,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Mai fassara mai aiki Fassara Taɗi mai fita: {0}'
   wwcsActiveTransItem: 'Abubuwan Fassara Mai Fassara Mai Aiki: {0}'
   wwcsActiveTransEntity: 'Fassara Mai Fassara Mai Aiki: {0}'
+  wwcSupportedServer: Farawa da Haɗin Duniya don {0}...
+  wwcSupportedVersion: Ƙarin fasali don version {0}...
 

@@ -16,8 +16,8 @@ Messages:
   wwcsNotATranslator: Það eru engar færslur enn tiltækar fyrir {0}.
   wwcConfigGUIbStatsButton: Skipta bStats
   wwctGUINewTranslationSource: Veldu Heimild Tungumál
-  wwcConfigConnectionFailed: Mistókst að tengjast við {0}. Gakktu úr skugga um að persónuskilríki
-    og eldveggur séu stilltir rétt!
+  wwcConfigConnectionFailed: Mistókst að tengjast við {0}. Gakktu úr skugga um að
+    persónuskilríki og eldveggur séu stilltir rétt!
   wwcConfigEnabledbStats: Virkt bStats.
   wwctGUIMainMenuPlayer: Þýðing Valmynd af {0}
   wwctGUIBookButton: Skipta Book Þýðing
@@ -127,8 +127,8 @@ Messages:
     góðum árangri.
   wwcUnsupportedVersion: 'Þú ert að keyra óstudda útgáfu af Bukkit, Spigot eða Pappír.
     Styður útgáfur:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: Global spjall er þýtt frá {0} til
-    {0}.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Global spjall er þýtt frá {0}
+    til {0}.
   wwcConfigGUITranslatorSettings: Þýðandi Stillingar
   wwcConfigConversationGoogleTranslateAPIKeyInput: Núverandi API lykill er {0}. Vinsamlegast
     inntak API lykill fyrir Google Translate, eða tegund 0 til að fara aftur.
@@ -258,8 +258,8 @@ Messages:
   wwcEntityTranslateDone: 'Þýtt nafn Entity: {0}'
   wwcEntityTranslateNoName: Entity hefur ekki sérsniðið nafn.
   wwcConfigConversationErrorLimitInput: Núverandi villumörk fyrir hvern þýðanda er
-    {0}. Sláðu inn neitt stærra en 0 til að setja nýtt gildi, eða sláðu inn neitt minna
-    en eða jafnt og 0 til að fara aftur.
+    {0}. Sláðu inn neitt stærra en 0 til að setja nýtt gildi, eða sláðu inn neitt
+    minna en eða jafnt og 0 til að fara aftur.
   wwcConfigGUIGlobalRateLimitButton: Breyta Global Rate Limit
   wwcteOnSender: Entity þýðing virkt. Hægrismelltu á aðila til að þýða nafn sitt!
   wwcConfigGUIResponseLimitButton: Breyta Response Timeout
@@ -286,7 +286,8 @@ Messages:
     {0} til {1}.
   wwctAutoTranslateStartOtherPlayer: Byrja nýja þýðingu fundur fyrir {0} til {1}.
   wwctTranslationStopped: Þýðing fundur þinn hefur verið hætt.
-  wwctLangToLangStartOtherPlayer: Byrja nýja þýðingu fundur fyrir {0} frá {1} til {2}.
+  wwctLangToLangStartOtherPlayer: Byrja nýja þýðingu fundur fyrir {0} frá {1} til
+    {2}.
   wwctAutoTranslateStart: Byrja nýja þýðingu fundur til {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Þú ert með virkan þýðing fundur til
     {0}.
@@ -339,8 +340,8 @@ Messages:
   wwcConfigGUISQLPortButton: Breyta SQL höfn
   wwcConfigGUISQLOptionalArgsButton: Breyta SQL valfrjálst rök
   wwcConfigConversationToggleSQLSSLSuccess: SSL fyrir SQL skipti með góðum árangri.
-  wwcConfigConversationSQLPortInput: Núverandi höfn er {0}. tegund eitthvað annað en
-    0 til að setja nýja höfn, eða tegund 0 til að fara aftur.
+  wwcConfigConversationSQLPortInput: Núverandi höfn er {0}. tegund eitthvað annað
+    en 0 til að setja nýja höfn, eða tegund 0 til að fara aftur.
   wwcConfigGUISQLPasswordButton: Breyta SQL lykilorð
   wwcConfigConversationSQLHostnameSuccess: Tókst að breyta SQL hostname.
   wwcConfigConversationSQLHostnameInput: Núverandi hostname er {0}. tegund eitthvað
@@ -394,10 +395,10 @@ Messages:
   wwcConfigGUIMongoSettings: MongoDB stillingar
   wwcConfigConversationMongoDatabaseNameSuccess: Tókst að breyta MongoDB gagnagrunnsheiti.
   wwcConfigGUIMongoHostnameButton: Breyta MongoDB Hostname
-  wwcConfigConversationMongoPasswordInput: Núverandi aðgangsorð er {0}. Sláðu inn eitthvað
-    annað en 0 til að setja nýtt lykilorð, eða sláðu inn 0 til að fara aftur.
-  wwcConfigConversationMongoPortInput: Núverandi tengi er {0}. Sláðu inn eitthvað annað
-    en 0 til að stilla nýtt tengi, eða sláðu inn 0 til að fara til baka.
+  wwcConfigConversationMongoPasswordInput: Núverandi aðgangsorð er {0}. Sláðu inn
+    eitthvað annað en 0 til að setja nýtt lykilorð, eða sláðu inn 0 til að fara aftur.
+  wwcConfigConversationMongoPortInput: Núverandi tengi er {0}. Sláðu inn eitthvað
+    annað en 0 til að stilla nýtt tengi, eða sláðu inn 0 til að fara til baka.
   wwcConfigConversationToggleMongoSuccess: MongoDB skiptir með góðum árangri. Endurhlaða
     til að breytingin taki gildi.
   wwcConfigConversationMongoHostnameInput: Núverandi hýsingarheiti er {0}. Sláðu inn
@@ -406,9 +407,9 @@ Messages:
   wwcConfigConversationMongoHostnameSuccess: Tókst að breyta MongoDB hýsingarnafninu.
   wwcConfigGUIMongoMenuButton: Breyta MongoDB stillingum
   wwcConfigGUIToggleMongoButton: Skipta MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Núverandi gagnagrunnsheiti er {0}. Sláðu
-    inn eitthvað annað en 0 til að setja nýtt gagnagrunnsheiti, eða sláðu inn 0 til
-    að fara aftur.
+  wwcConfigConversationMongoDatabaseNameInput: Núverandi gagnagrunnsheiti er {0}.
+    Sláðu inn eitthvað annað en 0 til að setja nýtt gagnagrunnsheiti, eða sláðu inn
+    0 til að fara aftur.
   wwcConfigConversationMongoOptionalArgsInput: 'Núverandi valfrjáls MongoDB rök eru:
     {0}. Sláðu rök aðskilin með kommu (lykill = gildi, lykill2=value2), eða tegund
     skýr til að þurrka núverandi args, eða tegund 0 til að fara til baka.'
@@ -443,7 +444,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Tókst skráð þýðandi villur til að hunsa.
   wwcConfigErrorsToIgnoreInvalid: Ógild þýðandi villur til að hunsa sett í config.yml.
     Skráning vanskila...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Tókst að breyta þýðandi villum til að
     hunsa setningar.
   wwcConfigGUIIgnoreErrorsButton: Breyta villum til að hunsa
@@ -454,7 +455,7 @@ Messages:
     neinar þýðandi villur.'
   wwcConfigConversationIgnoreErrorsCleared: Þýðandi villur til að hunsa setningar
     hreinsaðar með góðum árangri.
-
+  
   wwcsActiveTransPrevRate: 'Virkur þýðandi Fyrri tímamörk: {0}'
   wwcsActiveTransSaved: 'Virkur þýðandi vistaður á disk: {0}'
   wwcsActiveTransIncoming: 'Virkur þýðandi Þýðir komandi spjall: {0}'
@@ -468,4 +469,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Virkur þýðandi Þýðir Outgoing Chat: {0}'
   wwcsActiveTransItem: 'Virkur þýðandi Þýðandi atriði: {0}'
   wwcsActiveTransEntity: 'Virkur þýðandi þýðandi: {0}'
+  wwcSupportedServer: Frumstilla WorldwideChat fyrir {0}...
+  wwcSupportedVersion: Virkja eiginleika fyrir útgáfu {0}...
 

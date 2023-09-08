@@ -271,8 +271,8 @@ Messages:
   wwcCharLimit: Ваше сообщение слишком длинное! Убедитесь, что длина сообщения не
     превышает {0} символов.
   wwcConfigConversationCharacterLimitInput: Текущее ограничение количества символов
-    на сообщение составляет {0} символов. Введите значение больше 0, чтобы задать новое
-    значение, или введите значение меньше или равно 0, чтобы вернуться назад.
+    на сообщение составляет {0} символов. Введите значение больше 0, чтобы задать
+    новое значение, или введите значение меньше или равно 0, чтобы вернуться назад.
   wwcteOffSender: Перевод сущностей отключен.
   wwctGUIEntityButton: Переключить перевод сущностей
   wwctrlRateLimitBadInt: Ограничение скорости не является допустимым целым числом.
@@ -361,8 +361,9 @@ Messages:
   wwcConfigGUISQLUsernameButton: Изменить имя пользователя SQL
   wwcConfigConversationSQLOptionalArgsCleared: Необязательные аргументы успешно очищены.
   wwcConfigConversationSQLOptionalArgsInput: 'Текущие необязательные аргументы SQL:
-    {0}. Введите аргументы, разделенные запятой (ключ=значение, key2=value2), или введите
-    clear, чтобы стереть текущие аргументы, или введите 0, чтобы вернуться назад.'
+    {0}. Введите аргументы, разделенные запятой (ключ=значение, key2=value2), или
+    введите clear, чтобы стереть текущие аргументы, или введите 0, чтобы вернуться
+    назад.'
   wwcConfigConversationSQLDatabaseNameInput: 'Текущее имя базы данных: {0}. Введите
     любое другое имя, кроме 0, чтобы задать новое имя базы данных, или 0, чтобы вернуться
     назад.'
@@ -402,8 +403,8 @@ Messages:
     кроме 0, чтобы установить новый порт, или 0 для возврата назад.
   wwcConfigConversationToggleMongoSuccess: MongoDB успешно переключился. Перезарядите,
     чтобы изменения вступили в силу.
-  wwcConfigConversationMongoHostnameInput: Текущее имя хоста — {0}. Введите любое другое
-    имя, кроме 0, чтобы задать новое имя хоста, или 0, чтобы вернуться назад.
+  wwcConfigConversationMongoHostnameInput: Текущее имя хоста — {0}. Введите любое
+    другое имя, кроме 0, чтобы задать новое имя хоста, или 0, чтобы вернуться назад.
   wwcConfigConversationMongoHostnameSuccess: Имя хоста MongoDB успешно изменено.
   wwcConfigGUIMongoMenuButton: Изменение настроек MongoDB
   wwcConfigGUIToggleMongoButton: Переключить MongoD
@@ -438,13 +439,13 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Измените ключ API перевода DeepL
   wwcConfigGUIToggleDeepLTranslateButton: Включить перевод DeepL
   wwcConfigConversationDeepLTranslateApiKeySuccess: Ключ DeepL API успешно установлен.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Текущий ключ API — {0}. Введите ключ
-    API для DeepL или введите 0, чтобы вернуться назад.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Текущий ключ API — {0}. Введите
+    ключ API для DeepL или введите 0, чтобы вернуться назад.
   wwcConfigErrorsToIgnoreSuccess: Успешно зарегистрированные ошибки переводчика, которые
     следует игнорировать.
   wwcConfigErrorsToIgnoreInvalid: Неверные ошибки переводчика, которые следует игнорировать,
     заданы в config.yml. Регистрация значений по умолчанию...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Успешно исправлены ошибки переводчика,
     позволяющие игнорировать фразы.
   wwcConfigGUIIgnoreErrorsButton: Измените ошибки на игнорирование
@@ -455,7 +456,7 @@ Messages:
     ошибки переводчика.'
   wwcConfigConversationIgnoreErrorsCleared: Ошибки переводчика при игнорировании фраз
     успешно устранены.
-
+  
   wwcsActiveTransPrevRate: 'Прежнее время ограничения скорости при активном переводчике:
     {0}'
   wwcsActiveTransSaved: 'Активный транслятор, сохраненный на диске: {0}'
@@ -471,4 +472,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Активный переводчик, переводящий исходящий чат: {0}'
   wwcsActiveTransItem: 'Активный переводчик, переводящий элемент: {0}'
   wwcsActiveTransEntity: 'Активный переводчик, переводящий объект: {0}'
+  wwcSupportedServer: Инициализация WorldwideChat для {0}...
+  wwcSupportedVersion: Включение функций для версии {0}...
 

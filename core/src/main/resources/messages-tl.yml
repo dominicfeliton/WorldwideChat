@@ -34,8 +34,8 @@ Messages:
   wwcConfigConversationLangSuccess: Matagumpay na nagbago ang wika ng plugin.
   wwcsSuccessfulTranslations: 'Mga Matagumpay na Pagsasalin: {0}'
   wwcConfigConversationTranslationCacheInput: Ang kasalukuyang limitasyon ng cache
-    ng pagsasalin ay {0} parirala. I-type ang anumang mas malaki kaysa sa 0 upang magtakda
-    ng bagong halaga, o i-type ang 0 upang huwag paganahin ang cache ng pagsasalin.
+    ng pagsasalin ay {0} parirala. I-type ang anumang mas malaki kaysa sa 0 upang
+    magtakda ng bagong halaga, o i-type ang 0 upang huwag paganahin ang cache ng pagsasalin.
     I-type ang anumang mas mababa sa 0 upang bumalik.
   wwctbOffTarget: Hindi pinagana ang pagsasalin ng libro para sa {0}.
   wwcConfigGUIGeneralSettings: Pangkalahatang Configuration
@@ -84,8 +84,8 @@ Messages:
     masyadong mahaba. Pagsasalin:'
   wwctsOnTarget: Pinagana ang pagsasalin ng pag-sign para sa {0}.
   wwcConfigCacheDisabled: Hindi pinagana ang cache ng tagasalin.
-  wwcConfigConversationWatsonURLInput: Ang kasalukuyang URL ay {0}. Pakipasok ang URL
-    ng serbisyo para sa Watson, o i-type ang 0 upang bumalik.
+  wwcConfigConversationWatsonURLInput: Ang kasalukuyang URL ay {0}. Pakipasok ang
+    URL ng serbisyo para sa Watson, o i-type ang 0 upang bumalik.
   wwcBookDone: Book matagumpay na isinalin.
   wwctsOnSender: Pinagana ang pagsasalin ng pag-sign. Mag-right-click sa isang senyas
     upang isalin ito!
@@ -105,8 +105,8 @@ Messages:
   wwcConfigConversationRateLimitSuccess: Matagumpay na itinakda ang limitasyon ng
     rate
   wwcConfigConversationWatsonURLSuccess: Matagumpay na itinakda ang URL ng Watson.
-  wwctbPlayerNotFound: Ang manlalarong {0} ay alinman sa hindi natagpuan, o hindi isang
-    aktibong tagasalin.
+  wwctbPlayerNotFound: Ang manlalarong {0} ay alinman sa hindi natagpuan, o hindi
+    isang aktibong tagasalin.
   wwcConfigConversationTranslationCacheSuccess: Matagumpay na itinakda ang limitasyon
     ng cache ng pagsasalin
   wwctInvalidArgs: Di-wastong argumento na ibinigay!
@@ -116,8 +116,8 @@ Messages:
   wwcConfigConnectionSuccess: Matagumpay na nakakonekta sa {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Ay Aktibong Tagasalin: {0}'
-  wwcConfigConversationPrefixInput: Ang kasalukuyang prefix ay {0}. Paki-type ang bago,
-    o i-type ang 0 upang bumalik.
+  wwcConfigConversationPrefixInput: Ang kasalukuyang prefix ay {0}. Paki-type ang
+    bago, o i-type ang 0 upang bumalik.
   wwcConfigGUIPreviousPageButton: Nakaraang Pahina
   wwcConfigGUITranslatorCacheButton: Baguhin ang Limitasyon ng Cache
   wwcConfigConversationbStatsSuccess: Matagumpay na na-toggled ang bStats.
@@ -451,9 +451,9 @@ Messages:
     ay {0}. I-type ang anumang bagay maliban sa 0 upang magtakda ng bagong pangalan
     ng database, o i-type ang 0 upang bumalik.
   wwcConfigConversationMongoOptionalArgsInput: 'Ang kasalukuyang opsyonal na argumento
-    ng MongoDB ay: {0} Mag-type ng mga argumento na pinaghihiwalay ng isang kuwit (key=value,
-    key2=value2), o i-type ang malinaw upang punasan ang kasalukuyang mga arg, o i-type
-    ang 0 upang bumalik.'
+    ng MongoDB ay: {0} Mag-type ng mga argumento na pinaghihiwalay ng isang kuwit
+    (key=value, key2=value2), o i-type ang malinaw upang punasan ang kasalukuyang
+    mga arg, o i-type ang 0 upang bumalik.'
   wwcConfigGUIMongoDatabaseNameButton: Baguhin ang MongoDB Database
   wwcConfigConversationMongoUsernameInput: Ang kasalukuyang username ay {0}. I-type
     ang anumang bagay maliban sa 0 upang magtakda ng bagong username, o i-type ang
@@ -488,19 +488,19 @@ Messages:
     upang huwag pansinin.
   wwcConfigErrorsToIgnoreInvalid: Di-wastong mga error sa tagasalin upang huwag pansinin
     ang itinakda sa config.yml. Pagrerehistro ng mga default...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Matagumpay na binago ang mga error sa
     tagasalin upang huwag pansinin ang mga parirala
   wwcConfigGUIIgnoreErrorsButton: Baguhin ang Mga Error upang Huwag pansinin
   wwcConfigConversationIgnoreErrorsInput: 'Ang kasalukuyang listahan ng mga parirala
-    sa mga error sa tagasalin na huwag pansinin ay: {0}. I-type ang mga argumento na
-    pinaghihiwalay ng isang kuwit (key = halaga, key2 = value2), o i-type ang malinaw
+    sa mga error sa tagasalin na huwag pansinin ay: {0}. I-type ang mga argumento
+    na pinaghihiwalay ng isang kuwit (key = halaga, key2 = value2), o i-type ang malinaw
     upang punasan ang kasalukuyang args, o i-type ang 0 upang bumalik. Bukod pa rito,
     ang pag-type ng “*” ay magiging sanhi ng plugin na hindi suriin ang anumang mga
     error sa tagasalin.'
   wwcConfigConversationIgnoreErrorsCleared: Mga error sa tagasalin upang huwag pansinin
     ang mga parirala na matagumpay na nabura.
-
+  
   wwcsActiveTransPrevRate: 'Aktibong Tagasalin Nakaraang Oras ng Limitasyon sa Rate:
     {0}'
   wwcsActiveTransSaved: 'Aktibong Tagasalin Nai-save sa Disk: {0}'
@@ -517,4 +517,6 @@ Messages:
     {0}'
   wwcsActiveTransItem: 'Aktibong Tagasalin sa Pagsasalin ng Item: {0}'
   wwcsActiveTransEntity: 'Entity ng Pagsasalin ng Aktibong Tagasalin: {0}'
+  wwcSupportedServer: Pagsisimula ng WorldwideChat para sa {0}...
+  wwcSupportedVersion: Pagpapagana ng mga tampok para sa bersyon {0}...
 

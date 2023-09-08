@@ -128,8 +128,8 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationSourceLang: Global chat {0} dan {1} ga tarjima
     qilinmoqda.
   wwcConfigGUITranslatorSettings: Translator konfiguratsiyasi
-  wwcConfigConversationGoogleTranslateAPIKeyInput: Joriy API kaliti {0}. Iltimos, Google
-    Translate uchun API kalitini kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Joriy API kaliti {0}. Iltimos,
+    Google Translate uchun API kalitini kiriting yoki orqaga qaytish uchun 0 yozing.
   wwcConfigConversationRateLimitInput: Tarjima bo'yicha joriy global stavka chegarasi
     {0} sekunddir. Yangi qiymatni belgilash uchun 0 dan katta narsani kiriting yoki
     cheklovni o'chirish uchun 0 yozing. Orqaga qaytish uchun 0 dan kamroq narsa yozing.
@@ -184,8 +184,8 @@ Messages:
     sinxronlash kechiktirilishi noto'g'ri. 7200 soniyagacha defaulting...
   wwcConfigCacheInvalid: Tarjimon kesh hajmi yaroqsiz. 10 uchun standart...
   wwcInventoryErrorPlayer: Xato GUI bilan aniqlandi. Konsolga jurnal yuborildi.
-  wwcInventoryError: '{0} foydalanuvchi GUI bilan aniqlangan xato. Iltimos, ushbu masalani
-    ishlab chiquvchiga xabar bering.'
+  wwcInventoryError: '{0} foydalanuvchi GUI bilan aniqlangan xato. Iltimos, ushbu
+    masalani ishlab chiquvchiga xabar bering.'
   wwctiOffTarget: '{0} uchun oʻchirilgan element tarjimasi.'
   wwctiOffSender: Ob'ektni tarjima qilish o'chirib qo'yilgan.
   wwcItemTranslateTitleStock: Standart element nomlarini tarjima qilib bo'lmadi.
@@ -350,8 +350,8 @@ Messages:
   wwcConfigConversationSQLOptionalArgsSuccess: Ixtiyoriy SQL argumentlarini muvaffaqiyatli
     o'zgartirdi.
   wwcConfigConversationSQLPasswordSuccess: SQL parolini muvaffaqiyatli o'zgartirdi.
-  wwcConfigConversationSQLPasswordInput: Joriy parol {0}. Yangi parolni o'rnatish uchun
-    0 dan boshqa hech narsa yozing yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationSQLPasswordInput: Joriy parol {0}. Yangi parolni o'rnatish
+    uchun 0 dan boshqa hech narsa yozing yoki orqaga qaytish uchun 0 yozing.
   wwcConfigGUIToggleSQLSSLButton: SQL SSL Toggle
   wwcConfigConversationSQLUsernameSuccess: SQL foydalanuvchi nomini muvaffaqiyatli
     o'zgartirdi.
@@ -364,8 +364,8 @@ Messages:
   wwcConfigConversationSQLOptionalArgsInput: 'Joriy ixtiyoriy SQL argumentlari quyidagilardir:
     {0}. vergul bilan ajratilgan argumentlarni yozing (kalit = qiymat, key2=value2)
     yoki joriy argsni o''chirish uchun aniq yozing yoki orqaga qaytish uchun 0 yozing.'
-  wwcConfigConversationSQLDatabaseNameInput: Joriy ma'lumotlar bazasi nomi {0}. 0 dan
-    boshqa hech narsa yozing yangi ma'lumotlar bazasi nomini o'rnatish yoki orqaga
+  wwcConfigConversationSQLDatabaseNameInput: Joriy ma'lumotlar bazasi nomi {0}. 0
+    dan boshqa hech narsa yozing yangi ma'lumotlar bazasi nomini o'rnatish yoki orqaga
     qaytish uchun 0 yozing.
   wwcConfigGUISQLDatabaseNameButton: SQL ma'lumotlar bazasini o'zgartirish
   wwcConfigConversationSQLDatabaseNameSuccess: SQL ma'lumotlar bazasi nomini muvaffaqiyatli
@@ -401,21 +401,21 @@ Messages:
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB ma'lumotlar bazasi nomini
     muvaffaqiyatli o'zgartirdi.
   wwcConfigGUIMongoHostnameButton: MongoDB Host nomini o'zgartirish
-  wwcConfigConversationMongoPasswordInput: Joriy parol {0}. Yangi parol oʻrnatish uchun
-    0 dan boshqa biror narsani kiriting yoki orqaga qaytish uchun 0 yozing.
-  wwcConfigConversationMongoPortInput: Joriy port {0}. 0 dan boshqa biror narsani yozing
-    yangi portni oʻrnatish yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationMongoPasswordInput: Joriy parol {0}. Yangi parol oʻrnatish
+    uchun 0 dan boshqa biror narsani kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationMongoPortInput: Joriy port {0}. 0 dan boshqa biror narsani
+    yozing yangi portni oʻrnatish yoki orqaga qaytish uchun 0 yozing.
   wwcConfigConversationToggleMongoSuccess: MongoDB muvaffaqiyatli o'tdi. O'zgarish
     kuchga kirishi uchun qayta yuklang.
-  wwcConfigConversationMongoHostnameInput: Joriy xost nomi {0}. 0 dan boshqa hech narsa
-    yozing yangi xost nomini belgilash yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationMongoHostnameInput: Joriy xost nomi {0}. 0 dan boshqa hech
+    narsa yozing yangi xost nomini belgilash yoki orqaga qaytish uchun 0 yozing.
   wwcConfigConversationMongoHostnameSuccess: MongoDB hostname nomini muvaffaqiyatli
     o'zgartirdi.
   wwcConfigGUIMongoMenuButton: MongoDB sozlamalarini o'zgartiring
   wwcConfigGUIToggleMongoButton: Toggle MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Joriy ma'lumotlar bazasi nomi {0}. 0
-    dan boshqa hech narsa yozing yangi ma'lumotlar bazasi nomini belgilash yoki orqaga
-    qaytish uchun 0 yozing.
+  wwcConfigConversationMongoDatabaseNameInput: Joriy ma'lumotlar bazasi nomi {0}.
+    0 dan boshqa hech narsa yozing yangi ma'lumotlar bazasi nomini belgilash yoki
+    orqaga qaytish uchun 0 yozing.
   wwcConfigConversationMongoOptionalArgsInput: 'Joriy ixtiyoriy MongoDB argumentlari
     quyidagilardir: {0}. vergul bilan ajratilgan argumentlarni kiriting (kalit = qiymat,
     key2 = value2) yoki joriy argsni artish uchun aniq yozing yoki orqaga qaytish
@@ -453,7 +453,7 @@ Messages:
     uchun.
   wwcConfigErrorsToIgnoreInvalid: Config.yml da o'rnatilgan e'tiborsizlik uchun noto'g'ri
     tarjimon xatolar. Standartni ro'yxatdan o'tkazish...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Tarjimon xatolarini iboralarni e'tiborsiz
     qoldirish uchun muvaffaqiyatli o'zgartirdi.
   wwcConfigGUIIgnoreErrorsButton: Xatolarni e'tiborsiz qoldirish uchun o'zgartiring
@@ -464,7 +464,7 @@ Messages:
     xatolarini tekshirmasligiga olib keladi.'
   wwcConfigConversationIgnoreErrorsCleared: Tarjimon xatolar muvaffaqiyatli tozalandi
     iboralar e'tiborsizlik uchun.
-
+  
   wwcsActiveTransPrevRate: 'Faol tarjimonning oldingi stavkasini cheklash vaqti: {0}'
   wwcsActiveTransSaved: 'Diskka saqlangan faol tarjimon: {0}'
   wwcsActiveTransIncoming: 'Kiruvchi chatni tarjima qiluvchi faol tarjimon: {0}'
@@ -478,4 +478,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Chiquvchi chatni tarjima qiluvchi faol tarjimon: {0}'
   wwcsActiveTransItem: 'Mahsulotni tarjima qiluvchi faol tarjimon: {0}'
   wwcsActiveTransEntity: 'Faol tarjimon tarjima qiluvchi shaxs: {0}'
+  wwcSupportedServer: WorldwideChat-ni {0} uchun ishga tushirish...
+  wwcSupportedVersion: '{0} versiyasi uchun funksiyalarni yoqish...'
 

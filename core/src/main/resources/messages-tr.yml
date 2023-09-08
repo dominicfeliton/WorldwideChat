@@ -65,8 +65,8 @@ Messages:
   wwctsOffTarget: '{0} için çeviri devre dışı bırakıldı.'
   wwcUpdaterConnectionFailed: Github hakkında en son güncellemeler denetlenemiyor.
   watsonNotFoundExceptionNotification: Girdilerinizi daha fazla tercüme edemiyor.
-  wwcConfigConversationWatsonAPIKeyInput: Geçerli API anahtarı {0}. Lütfen Watson için
-    bir API anahtarı girin veya geri dönmek için 0 yazın.
+  wwcConfigConversationWatsonAPIKeyInput: Geçerli API anahtarı {0}. Lütfen Watson
+    için bir API anahtarı girin veya geri dönmek için 0 yazın.
   wwctGUIStopButton: Çevirmeyi Durdur
   wwcgTranslationStopped: Küresel sohbet çevirisi durduruldu.
   wwcUpdaterFutureDate: WorldwideChat'in bu örneği, en son halka açık olandan daha
@@ -164,8 +164,8 @@ Messages:
     için 0 yazın. Geri dönmek için 0'dan az bir şey yazın.
   wwctGUITargetPlayerNull: Hedef oynatıcının sunucudan bağlantısı kesildi.
   wwcConfigConversationSyncUserDataDelayInput: Kullanıcı verilerinin eşitleme başına
-    geçerli gecikme {0} saniyedir. Yeni bir değer ayarlamak için 10'dan büyük bir şey
-    yazın veya geri dönmek için 10'dan küçük bir şey yazın.
+    geçerli gecikme {0} saniyedir. Yeni bir değer ayarlamak için 10'dan büyük bir
+    şey yazın veya geri dönmek için 10'dan küçük bir şey yazın.
   wwcConfigGUISyncUserDataButton: Kullanıcı Veri Eşitleme Gecikmesini Değiştir
   wwcConfigSyncDelayEnabled: Kullanıcı veri eşitleme başına gecikme {0} saniye olarak
     ayarlanır.
@@ -330,8 +330,8 @@ Messages:
     noktası ayarlamak için 0'dan başka bir şey yazın veya geri dönmek için 0 yazın.
   wwcConfigGUISQLPasswordButton: SQL Parolası Değiştir
   wwcConfigConversationSQLHostnameSuccess: SQL ana bilgisayar adını başarıyla değiştirdi.
-  wwcConfigConversationSQLHostnameInput: Geçerli ana bilgisayar adı {0}. Yeni bir ana
-    bilgisayar adı ayarlamak için 0'dan başka bir şey yazın veya geri dönmek için
+  wwcConfigConversationSQLHostnameInput: Geçerli ana bilgisayar adı {0}. Yeni bir
+    ana bilgisayar adı ayarlamak için 0'dan başka bir şey yazın veya geri dönmek için
     0 yazın.
   wwcConfigGUISQLHostnameButton: SQL Ana Bilgisayar Adını Değiştir
   wwcConfigConversationSQLOptionalArgsSuccess: İsteğe bağlı SQL bağımsız değişkenlerini
@@ -350,8 +350,9 @@ Messages:
   wwcConfigConversationSQLOptionalArgsInput: 'Geçerli isteğe bağlı SQL bağımsız değişkenleri
     şunlardır: {0}. Virgülle ayrılmış argümanlar yazın (key=value, key2=value2) veya
     geçerli arg''ları silmek için clear yazın veya geri dönmek için 0 yazın.'
-  wwcConfigConversationSQLDatabaseNameInput: Geçerli veritabanı adı {0}. Yeni bir veritabanı
-    adı ayarlamak için 0'dan başka bir şey yazın veya geri dönmek için 0 yazın.
+  wwcConfigConversationSQLDatabaseNameInput: Geçerli veritabanı adı {0}. Yeni bir
+    veritabanı adı ayarlamak için 0'dan başka bir şey yazın veya geri dönmek için
+    0 yazın.
   wwcConfigGUISQLDatabaseNameButton: SQL Veritabanını
   wwcConfigConversationSQLDatabaseNameSuccess: SQL veritabanı adı başarıyla değiştirildi.
   wwcConfigConversationFatalAsyncAbort: Tüm zaman uyumsuz görevleri iptal etmek için
@@ -433,7 +434,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Başarıyla kayıtlı çevirmen hataları yok sayılır.
   wwcConfigErrorsToIgnoreInvalid: Config.yml kümesinde yoksayılan geçersiz çevirmen
     hataları. Varsayılanlar kaydediliyor...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: İfadeleri yok saymak için çevirmen hatalarını
     başarıyla değiştirdi.
   wwcConfigGUIIgnoreErrorsButton: Hataları Yoksaymak için Değiştir
@@ -444,7 +445,7 @@ Messages:
     kontrol etmemesine neden olur.'
   wwcConfigConversationIgnoreErrorsCleared: Başarıyla temizlenen ifadeleri yok saymak
     için çevirmen hataları.
-
+  
   wwcsActiveTransPrevRate: 'Aktif Çevirmen Önceki Oranı Sınır Süresi: {0}'
   wwcsActiveTransSaved: 'Diske Kaydedilen Etkin Çevirmen: {0}'
   wwcsActiveTransIncoming: 'Gelen Sohbeti Çeviren Etkin Çevirmen: {0}'
@@ -458,4 +459,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Giden Sohbeti Çeviren Etkin Çevirmen: {0}'
   wwcsActiveTransItem: 'Etkin Çevirmen Çeviri Öğesi: {0}'
   wwcsActiveTransEntity: 'Etkin Çevirmen Çevirmen Varlığı: {0}'
+  wwcSupportedServer: WorldwideChat {0} için başlatılıyor...
+  wwcSupportedVersion: '{0} sürümü için özellikler etkinleştiriliyor...'
 

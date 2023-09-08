@@ -67,8 +67,8 @@ Messages:
   wwctsOffTarget: Signering af oversættelse deaktiveret for {0}.
   wwcUpdaterConnectionFailed: Kunne ikke søge efter seneste opdateringer på Github.
   watsonNotFoundExceptionNotification: Kunne ikke oversætte dit input yderligere.
-  wwcConfigConversationWatsonAPIKeyInput: Den nuværende API nøgle er {0}. Indtast en
-    API nøgle til Watson, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationWatsonAPIKeyInput: Den nuværende API nøgle er {0}. Indtast
+    en API nøgle til Watson, eller skriv 0 for at gå tilbage.
   wwctGUIStopButton: Stop med at oversætte
   wwcgTranslationStopped: Global chat oversættelse er blevet stoppet.
   wwcUpdaterFutureDate: Denne forekomst af WorldwideChat har en større version end
@@ -79,8 +79,8 @@ Messages:
     for lang. Oversættelse:'
   wwctsOnTarget: Signer oversættelse aktiveret for {0}.
   wwcConfigCacheDisabled: Oversætter cache deaktiveret.
-  wwcConfigConversationWatsonURLInput: Den nuværende URL er {0}. Indtast venligst en
-    service- URL for Watson, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationWatsonURLInput: Den nuværende URL er {0}. Indtast venligst
+    en service- URL for Watson, eller skriv 0 for at gå tilbage.
   wwcBookDone: Bog oversat med succes.
   wwctsOnSender: Signer oversættelse aktiveret. Højreklik på et tegn for at oversætte
     det!
@@ -165,9 +165,9 @@ Messages:
     denne med /wwct.
   wwctrlRateLimitAlreadyOffSender: Din takst grænse er allerede deaktiveret.
   wwctGUIRateButton: Indstil hastighedsgrænse
-  wwctGUIConversationRateLimit: Hastighedsgrænsen pr. oversættelse er aktuelt {0} sekunder.
-    Skriv noget større end 0 for at angive en ny værdi, eller skriv 0 for at deaktivere
-    grænsen. Skriv noget mindre end 0 for at gå tilbage.
+  wwctGUIConversationRateLimit: Hastighedsgrænsen pr. oversættelse er aktuelt {0}
+    sekunder. Skriv noget større end 0 for at angive en ny værdi, eller skriv 0 for
+    at deaktivere grænsen. Skriv noget mindre end 0 for at gå tilbage.
   wwctGUITargetPlayerNull: Målspilleren blev afbrudt fra serveren.
   wwcConfigConversationSyncUserDataDelayInput: Den aktuelle forsinkelse pr. synkronisering
     af brugerdata er {0} sekunder. Skriv noget større end 10 for at indstille en ny
@@ -262,8 +262,8 @@ Messages:
   wwcConfigGUIResponseLimitButton: Skift timeout for oversætteren
   wwcConfigMessageCharLimitEnabled: Tegngrænse pr. meddelelse sat til {0} tegn.
   wwcteOffTarget: Oversættelse af enheder deaktiveret for {0}.
-  wwcCharLimit: Din besked er for lang! Sørg for, at din besked er mindre end {0} tegn
-    i længden.
+  wwcCharLimit: Din besked er for lang! Sørg for, at din besked er mindre end {0}
+    tegn i længden.
   wwcConfigConversationCharacterLimitInput: Den aktuelle tegngrænse pr. meddelelse
     er {0} tegn. Skriv noget større end 0 for at angive en ny værdi, eller skriv noget
     mindre end eller lig med 0 for at gå tilbage.
@@ -360,8 +360,8 @@ Messages:
   wwcConfigGUISQLUsernameButton: Skift SQL-brugernavn
   wwcConfigConversationSQLOptionalArgsCleared: Valgfrie argumenter ryddet med succes.
   wwcConfigConversationSQLOptionalArgsInput: 'De aktuelle valgfrie SQL-argumenter
-    er: {0}. Skriv argumenter adskilt af et komma (key=value, key2=value2), eller skriv
-    klar for at slette de aktuelle args, eller skriv 0 for at gå tilbage.'
+    er: {0}. Skriv argumenter adskilt af et komma (key=value, key2=value2), eller
+    skriv klar for at slette de aktuelle args, eller skriv 0 for at gå tilbage.'
   wwcConfigConversationSQLDatabaseNameInput: Det aktuelle databasenavn er {0}. Skriv
     andet end 0 for at indstille et nyt databasenavn, eller skriv 0 for at gå tilbage.
   wwcConfigGUISQLDatabaseNameButton: Skift SQL Database
@@ -377,8 +377,8 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Skift Libre Oversæt API Key
   libreHttp403: Mangler Libre Translate API Key, eller du er forbudt fra serveren!
   wwcConfigConversationLibreURLSuccess: Libre URL indstillet med succes.
-  wwcConfigConversationLibreTranslateApiKeyInput: Den nuværende API-nøgle er {0}. Indtast
-    venligst en API-nøgle for Libre, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationLibreTranslateApiKeyInput: Den nuværende API-nøgle er {0}.
+    Indtast venligst en API-nøgle for Libre, eller skriv 0 for at gå tilbage.
   wwcConfigGUILibreTranslateButton: Libre Oversæt
   libreHttp429: Ingen tillid på grund af hastighedsgrænse fra serveren.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Oversæt
@@ -393,8 +393,8 @@ Messages:
   wwcConfigGUIMongoSettings: MongoDB-konfiguration
   wwcConfigConversationMongoDatabaseNameSuccess: Succesfuldt ændret MongoDB-databasenavnet.
   wwcConfigGUIMongoHostnameButton: Skift MongoDB værtsnavn
-  wwcConfigConversationMongoPasswordInput: Den aktuelle adgangskode er {0}. Skriv alt
-    andet end 0 for at indstille en ny adgangskode, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationMongoPasswordInput: Den aktuelle adgangskode er {0}. Skriv
+    alt andet end 0 for at indstille en ny adgangskode, eller skriv 0 for at gå tilbage.
   wwcConfigConversationMongoPortInput: Den aktuelle port er {0}. Skriv alt andet end
     0 for at indstille en ny port, eller skriv 0 for at gå tilbage.
   wwcConfigConversationToggleMongoSuccess: MongoDB skiftes med succes. Genindlæs for
@@ -404,15 +404,15 @@ Messages:
   wwcConfigConversationMongoHostnameSuccess: Succesfuldt ændret MongoDB værtsnavn.
   wwcConfigGUIMongoMenuButton: Skift MongoDB-indstillinger
   wwcConfigGUIToggleMongoButton: Skift MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Det nuværende databasenavn er {0}. Skriv
-    alt andet end 0 for at indstille et nyt databasenavn, eller skriv 0 for at gå
-    tilbage.
+  wwcConfigConversationMongoDatabaseNameInput: Det nuværende databasenavn er {0}.
+    Skriv alt andet end 0 for at indstille et nyt databasenavn, eller skriv 0 for
+    at gå tilbage.
   wwcConfigConversationMongoOptionalArgsInput: 'De nuværende valgfrie MongoDB-argumenter
-    er: {0}. Skriv argumenter adskilt af et komma (key=value, key2=value2), eller skriv
-    clear for at slette de nuværende args, eller skriv 0 for at gå tilbage.'
+    er: {0}. Skriv argumenter adskilt af et komma (key=value, key2=value2), eller
+    skriv clear for at slette de nuværende args, eller skriv 0 for at gå tilbage.'
   wwcConfigGUIMongoDatabaseNameButton: Skift MongoDB-database
-  wwcConfigConversationMongoUsernameInput: Det nuværende brugernavn er {0}. Skriv alt
-    andet end 0 for at indstille et nyt brugernavn, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationMongoUsernameInput: Det nuværende brugernavn er {0}. Skriv
+    alt andet end 0 for at indstille et nyt brugernavn, eller skriv 0 for at gå tilbage.
   wwcConfigGUIMongoOptionalArgsButton: Skift MongoDB Valgfri argumenter
   wwcConfigConversationMongoUsernameSuccess: Succesfuldt ændret MongoDB brugernavn.
   wwcConfigConversationMongoPasswordSuccess: Ændret MongoDB-adgangskoden med succes.
@@ -432,12 +432,12 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Skift DeepL Oversæt API-nøgle
   wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Oversæt
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API-nøglesæt med succes.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Den nuværende API-nøgle er {0}. Indtast
-    venligst en API-nøgle for DeepL, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Den nuværende API-nøgle er {0}.
+    Indtast venligst en API-nøgle for DeepL, eller skriv 0 for at gå tilbage.
   wwcConfigErrorsToIgnoreSuccess: Succesfuldt registrerede oversætterfejl at ignorere.
   wwcConfigErrorsToIgnoreInvalid: Ugyldige oversætter fejl at ignorere sæt i config.yml.
     Registrering af standardindstillinger...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Succesfuldt ændret oversætterfejlene for
     at ignorere sætninger.
   wwcConfigGUIIgnoreErrorsButton: Ændre fejl for at ignorere
@@ -448,7 +448,7 @@ Messages:
     oversætterfejl.'
   wwcConfigConversationIgnoreErrorsCleared: Oversætter fejl for at ignorere sætninger
     ryddet med succes.
-
+  
   wwcsActiveTransPrevRate: 'Aktiv oversætter Tidligere tidsgrænse for takst: {0}'
   wwcsActiveTransSaved: 'Aktiv oversætter gemt på disk: {0}'
   wwcsActiveTransIncoming: 'Aktiv oversætter, der oversætter indgående chat: {0}'
@@ -462,4 +462,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktiv oversætter oversætter udgående chat: {0}'
   wwcsActiveTransItem: 'Active Translator Translating Item: {0}'
   wwcsActiveTransEntity: 'Active Translator Translating Entity: {0}'
+  wwcSupportedServer: Initialisering af WorldwideChat til {0}...
+  wwcSupportedVersion: Aktivering af funktioner til version {0}...
 

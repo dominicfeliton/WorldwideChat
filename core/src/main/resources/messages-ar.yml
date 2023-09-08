@@ -6,8 +6,8 @@ Messages:
   wwcrFail: فشل في إعادة تحميل وورلدويدتشات.
   wwcConfigGUIUpdateCheckerButton: تغيير التحقق من تأخر التحديثات
   wwcUpdaterFailedGeneric: غير قادر على التحقق من وجود تحديثات وورلدويدتشات.
-  wwcConfigConversationUpdateCheckerInput: التأخير الحالي على مدقق التحديث هو {0} ثانية.
-    اكتب أي شيء أكبر من 10 لتعيين قيمة جديدة، أو أي شيء أقل من 10 للعودة.
+  wwcConfigConversationUpdateCheckerInput: التأخير الحالي على مدقق التحديث هو {0}
+    ثانية. اكتب أي شيء أكبر من 10 لتعيين قيمة جديدة، أو أي شيء أقل من 10 للعودة.
   wwctGUIMainMenuGlobal: قائمة الترجمة العالمية
   wwcConfigConversationPluginUpdateChatSuccess: البرنامج المساعد تحديث الدردشة تذكير
     مثبت بنجاح.
@@ -82,8 +82,8 @@ Messages:
   wwctGUITranslationButton: بدء الترجمة
   wwctGUIAutoDetectButton: لصناعة السيارات في الكشف عن لغة المصدر
   wwcUpdaterUpToDate: وورلدويدتشات هو ما يصل إلى الآن!
-  wwcConfigConversationAmazonTranslateRegionInput: المنطقة الحالية هو {0}. الرجاء إدخال
-    منطقة لـ Amazon، أو اكتب 0 للعودة.
+  wwcConfigConversationAmazonTranslateRegionInput: المنطقة الحالية هو {0}. الرجاء
+    إدخال منطقة لـ Amazon، أو اكتب 0 للعودة.
   wwcNoConsole: لا يمكن تشغيل هذا الأمر إلا من قبل لاعب.
   wwcInitializationFail: فشل في تهيئة ورلدويدتشات.
   wwcrSuccess: إعادة تحميل وورلدويدتشات بنجاح.
@@ -140,8 +140,8 @@ Messages:
     تسجيل الدخول
   wwcsLastTranslationTime: 'آخر (ناجح) وقت الترجمة: {0}'
   wwctbNotATranslator: أنت لست مترجم نشط! تأكد من تعيين هذا مع/wwct.
-  wwcConfigConversationAmazonTranslateAccessKeyInput: مفتاح الوصول الحالي هو {0}. الرجاء
-    إدخال مفتاح وصول لـ Amazon، أو اكتب 0 للعودة.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: مفتاح الوصول الحالي هو {0}.
+    الرجاء إدخال مفتاح وصول لـ Amazon، أو اكتب 0 للعودة.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: تعيين مفتاح الوصول الأمازون
     بنجاح.
   wwcConfigBadUpdateDelay: تم تعيين تأخير تحديث غير صالح في config.yml. التخلف عن
@@ -170,8 +170,8 @@ Messages:
   wwcConfigCacheInvalid: حجم مخبأ المترجم غير صالح. التخلف عن السداد إلى 10...
   wwcInventoryErrorPlayer: تم اكتشاف خطأ باستخدام واجهة المستخدم الرسومية. تم إرسال
     سجل إلى وحدة التحكم.
-  wwcInventoryError: تم اكتشاف خطأ باستخدام واجهة المستخدم الرسومية للمستخدم {0}. الرجاء
-    إبلاغ المطور عن هذه المشكلة.
+  wwcInventoryError: تم اكتشاف خطأ باستخدام واجهة المستخدم الرسومية للمستخدم {0}.
+    الرجاء إبلاغ المطور عن هذه المشكلة.
   wwctiOffTarget: تم تعطيل ترجمة العنصر لـ {0}.
   wwctiOffSender: تم تعطيل ترجمة العنصر.
   wwcItemTranslateTitleStock: غير قادر على ترجمة أسماء العناصر الافتراضية.
@@ -238,8 +238,8 @@ Messages:
   wwcteOnTarget: تم تمكين ترجمة الكيان لـ {0}.
   wwcEntityTranslateDone: 'اسم الكيان المترجم: {0}'
   wwcEntityTranslateNoName: لا يحتوي الكيان على اسم مخصص.
-  wwcConfigConversationErrorLimitInput: حد الخطأ الحالي لكل مترجم هو {0}. اكتب أي شيء
-    أكبر من 0 لتعيين قيمة جديدة، أو اكتب أي شيء أقل من أو يساوي 0 للعودة.
+  wwcConfigConversationErrorLimitInput: حد الخطأ الحالي لكل مترجم هو {0}. اكتب أي
+    شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب أي شيء أقل من أو يساوي 0 للعودة.
   wwcConfigGUIGlobalRateLimitButton: تغيير حد السعر العالمي
   wwcteOnSender: تم تمكين ترجمة الكيان. انقر بزر الماوس الأيمن على كيان لترجمة اسمه!
   wwcConfigGUIResponseLimitButton: تغيير مهلة استجابة المترجم
@@ -348,16 +348,16 @@ Messages:
     Libre
   libreHttp403: مفتاح واجهة برمجة تطبيقات Libre Translate مفقود، أو تم حظرك من الخادم!
   wwcConfigConversationLibreURLSuccess: تم تعيين عنوان URL Libre بنجاح.
-  wwcConfigConversationLibreTranslateApiKeyInput: مفتاح API الحالي هو {0}. الرجاء إدخال
-    مفتاح API لـ Libre، أو اكتب 0 للرجوع إليه.
+  wwcConfigConversationLibreTranslateApiKeyInput: مفتاح API الحالي هو {0}. الرجاء
+    إدخال مفتاح API لـ Libre، أو اكتب 0 للرجوع إليه.
   wwcConfigGUILibreTranslateButton: ترجمة ليبر
   libreHttp429: عدم الثقة بسبب حد المعدل من الخادم.
   wwcConfigGUIToggleLibreTranslateButton: تبديل ليبر ترجمة
   wwcConfigConversationLibreTranslateToggleSuccess: تم تبديل ترجمة Libre بنجاح. أعد
     تحميل التغييرات لتصبح نافذة المفعول.
   wwcConfigConversationLibreTranslateApiKeySuccess: تم تعيين مفتاح Libre API بنجاح.
-  wwcConfigConversationLibreURLInput: عنوان URL الحالي هو {0}. الرجاء إدخال عنوان URL
-    لـ Libre، أو اكتب 0 للرجوع إليه.
+  wwcConfigConversationLibreURLInput: عنوان URL الحالي هو {0}. الرجاء إدخال عنوان
+    URL لـ Libre، أو اكتب 0 للرجوع إليه.
   libreHttpUnknown: 'خطأ http غير معروف: {0}'
   wwcConfigGUILibreTranslateURLButton: تغيير عنوان URL لترجمة Libre
   wwcConfigConnectionFail: فشل الاتصال بـ {0}.
@@ -405,20 +405,20 @@ Messages:
     DeepL
   wwcConfigGUIToggleDeepLTranslateButton: تبديل ترجمة DeepL
   wwcConfigConversationDeepLTranslateApiKeySuccess: تم تعيين مفتاح DeepL API بنجاح.
-  wwcConfigConversationDeepLTranslateApiKeyInput: مفتاح API الحالي هو {0}. الرجاء إدخال
-    مفتاح API لـ DeepL، أو اكتب 0 للعودة.
+  wwcConfigConversationDeepLTranslateApiKeyInput: مفتاح API الحالي هو {0}. الرجاء
+    إدخال مفتاح API لـ DeepL، أو اكتب 0 للعودة.
   wwcConfigErrorsToIgnoreSuccess: تم تسجيل أخطاء المترجم بنجاح لتجاهلها.
   wwcConfigErrorsToIgnoreInvalid: أخطاء مترجم غير صالحة لتجاهل المجموعة في config.yml.
     جاري تسجيل الإعدادات الافتراضية...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: تم تغيير أخطاء المترجم بنجاح لتجاهل العبارات.
   wwcConfigGUIIgnoreErrorsButton: تغيير الأخطاء لتجاهلها
   wwcConfigConversationIgnoreErrorsInput: 'قائمة العبارات الحالية في أخطاء المترجم
-    التي يجب تجاهلها هي: {0}. اكتب وسيطات مفصولة بفاصلة (key=value، key2=value2)، أو
-    اكتب clear لمسح args الحالية، أو اكتب 0 للرجوع. بالإضافة إلى ذلك، ستؤدي كتابة
+    التي يجب تجاهلها هي: {0}. اكتب وسيطات مفصولة بفاصلة (key=value، key2=value2)،
+    أو اكتب clear لمسح args الحالية، أو اكتب 0 للرجوع. بالإضافة إلى ذلك، ستؤدي كتابة
     «*» إلى عدم تحقق المكون الإضافي من أي أخطاء في المترجم.'
   wwcConfigConversationIgnoreErrorsCleared: تم مسح أخطاء المترجم لتجاهل العبارات بنجاح.
-
+  
   wwcsActiveTransPrevRate: 'الحد الزمني للمعدل السابق للمترجم النشط: {0}'
   wwcsActiveTransSaved: 'تم حفظ المترجم النشط على القرص: {0}'
   wwcsActiveTransIncoming: 'مترجم نشط يترجم الدردشة الواردة: {0}'
@@ -432,4 +432,6 @@ Messages:
   wwcsActiveTransOutgoing: 'مترجم نشط يترجم الدردشة الصادرة: {0}'
   wwcsActiveTransItem: 'عنصر ترجمة المترجم النشط: {0}'
   wwcsActiveTransEntity: 'كيان ترجمة المترجم النشط: {0}'
+  wwcSupportedServer: بدء تشغيل WorldwideChat لـ {0}...
+  wwcSupportedVersion: تمكين الميزات للإصدار {0}...
 

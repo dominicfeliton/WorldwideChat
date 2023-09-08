@@ -242,9 +242,9 @@ Messages:
   wwcteOnTarget: Olemi tõlge lubatud {0}.
   wwcEntityTranslateDone: 'Tõlgitud olemi nimi: {0}'
   wwcEntityTranslateNoName: Olemil pole kohandatud nime.
-  wwcConfigConversationErrorLimitInput: Iga tõlkija praegune tõrkepiirang on {0}. Uue
-    väärtuse määramiseks tippige midagi suuremat kui 0, või tippige midagi, mis on
-    väiksem või võrdne 0, et minna tagasi.
+  wwcConfigConversationErrorLimitInput: Iga tõlkija praegune tõrkepiirang on {0}.
+    Uue väärtuse määramiseks tippige midagi suuremat kui 0, või tippige midagi, mis
+    on väiksem või võrdne 0, et minna tagasi.
   wwcConfigGUIGlobalRateLimitButton: Muuda globaalse määra limiiti
   wwcteOnSender: Olemi tõlkimine on lubatud. Paremklõpsake üksusel oma nime tõlkimiseks!
   wwcConfigGUIResponseLimitButton: Muuda tõlkija reageerimise ajalõpp
@@ -271,8 +271,8 @@ Messages:
     {0} kuni {1}.
   wwctAutoTranslateStartOtherPlayer: Uue tõlkeseansi alustamine jaoks {0} kuni {1}.
   wwctTranslationStopped: Teie tõlkeseanss on lõpetatud.
-  wwctLangToLangStartOtherPlayer: Uue tõlkeseansi alustamine kohta {0} alates {1} kuni
-    {0}.
+  wwctLangToLangStartOtherPlayer: Uue tõlkeseansi alustamine kohta {0} alates {1}
+    kuni {0}.
   wwctAutoTranslateStart: Uue tõlkeseansi alustamine kuni {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Teil on aktiivne tõlkeseanss kuni
     {0}.
@@ -327,8 +327,8 @@ Messages:
     midagi muud kui 0 või tippige tagasi minemiseks 0.
   wwcConfigGUISQLPasswordButton: Muuda SQL-i parooli
   wwcConfigConversationSQLHostnameSuccess: SQL-i hostinime edukalt muutnud.
-  wwcConfigConversationSQLHostnameInput: Praegune hostinimi on {0}. Uue hostinime määramiseks
-    tippige midagi muud kui 0 või tippige tagasi minemiseks 0.
+  wwcConfigConversationSQLHostnameInput: Praegune hostinimi on {0}. Uue hostinime
+    määramiseks tippige midagi muud kui 0 või tippige tagasi minemiseks 0.
   wwcConfigGUISQLHostnameButton: Muuda SQL-i hostinime
   wwcConfigConversationSQLOptionalArgsSuccess: Muudetud edukalt valikuline SQL argumendid.
   wwcConfigConversationSQLPasswordSuccess: SQL-i parooli edukalt muudetud.
@@ -345,8 +345,9 @@ Messages:
   wwcConfigConversationSQLOptionalArgsInput: 'Praegused valikulised SQL-argumendid
     on: {0}. Tippige komaga eraldatud argumendid (võti = väärtus, klahv2 = väärtus2)
     või tippige tühjendage praegused argid või tippige tagasi minemiseks 0.'
-  wwcConfigConversationSQLDatabaseNameInput: Praegune andmebaasi nimi on {0}. Uue andmebaasi
-    nime määramiseks tippige midagi muud kui 0 või tippige tagasi minemiseks 0.
+  wwcConfigConversationSQLDatabaseNameInput: Praegune andmebaasi nimi on {0}. Uue
+    andmebaasi nime määramiseks tippige midagi muud kui 0 või tippige tagasi minemiseks
+    0.
   wwcConfigGUISQLDatabaseNameButton: Muuda SQL-andmebaasi
   wwcConfigConversationSQLDatabaseNameSuccess: SQL-i andmebaasi nime edukalt muutnud.
   wwcConfigConversationFatalAsyncAbort: Praegune ajalõpp kõigi asünkroonitoimingute
@@ -422,7 +423,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Edukalt registreeritud tõlkija vigu ignoreerida.
   wwcConfigErrorsToIgnoreInvalid: Sobimatu tõlkija tõrked ignoreerida seatud config.yml.
     Vaikesätete registreerimine...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Edukalt muutnud tõlkija vigu ignoreerida
     fraase.
   wwcConfigGUIIgnoreErrorsButton: Muuda eiratavaid tõrkeid
@@ -432,7 +433,7 @@ Messages:
     Lisaks kirjutades „*” põhjustab plugin ei kontrolli tõlkija vigu.'
   wwcConfigConversationIgnoreErrorsCleared: Tõlkija vead ignoreerida fraase kustutatud
     edukalt.
-
+  
   wwcsActiveTransPrevRate: 'Aktiivse tõlkija eelmise määra piirangu aeg: {0}'
   wwcsActiveTransSaved: 'Aktiivne tõlkija kettale salvestatud: {0}'
   wwcsActiveTransIncoming: 'Aktiivne tõlkija tõlkimine sissetuleva vestluse: {0}'
@@ -446,4 +447,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktiivne tõlkija väljamineva vestluse tõlkimine: {0}'
   wwcsActiveTransItem: 'Aktiivne tõlkija tõlkimise üksus: {0}'
   wwcsActiveTransEntity: 'Aktiivne tõlkija tõlkimise üksus: {0}'
+  wwcSupportedServer: WorldwideChat lähtestamine {0}...
+  wwcSupportedVersion: Funktsioonide lubamine versiooni {0}...
 

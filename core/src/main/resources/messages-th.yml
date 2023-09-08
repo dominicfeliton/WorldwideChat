@@ -224,8 +224,8 @@ Messages:
   wwcEntityTranslateDone: 'ชื่อเอนทิตีที่แปลแล้ว: %'
   wwcEntityTranslateNoName: เอนทิตีไม่มีชื่อที่กำหนดเอง
   wwcConfigConversationErrorLimitInput: ขีด จำกัด ข้อผิดพลาดปัจจุบันสำหรับนักแปลแต่ละคนเป็น
-    {0} พิมพ์อะไรที่มากกว่า 0 เพื่อตั้งค่าใหม่หรือพิมพ์อะไรที่น้อยกว่าหรือเท่ากับ 0
-    เพื่อย้อนกลับ
+    {0} พิมพ์อะไรที่มากกว่า 0 เพื่อตั้งค่าใหม่หรือพิมพ์อะไรที่น้อยกว่าหรือเท่ากับ
+    0 เพื่อย้อนกลับ
   wwcConfigGUIGlobalRateLimitButton: เปลี่ยนวงเงินอัตราทั่วโลก
   wwcteOnSender: เปิดใช้งานการแปลเอนทิตีคลิกขวาที่นิติบุคคลเพื่อแปลชื่อ!
   wwcConfigGUIResponseLimitButton: เปลี่ยนหมดเวลาการตอบสนองของนักแปล
@@ -391,7 +391,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: ข้อผิดพลาดในการแปลที่ลงทะเบียนเรียบร้อยแล้วที่จะละเว้น
   wwcConfigErrorsToIgnoreInvalid: ข้อผิดพลาดในการแปลที่ไม่ถูกต้องเพื่อละเว้นการตั้งค่าใน
     config.ymlกำลังลงทะเบียนค่าเริ่มต้น...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: ประสบความสำเร็จในการเปลี่ยนข้อผิดพลาดของนักแปลเพื่อละเว้นวลี
   wwcConfigGUIIgnoreErrorsButton: เปลี่ยนข้อผิดพลาดเพื่อละเว้น
   wwcConfigConversationIgnoreErrorsInput: 'รายการปัจจุบันของวลีในข้อผิดพลาดของโปรแกรมแปลที่ควรละเว้นคือ:
@@ -399,7 +399,7 @@ Messages:
     clear เพื่อล้างอาร์กเมนต์ปัจจุบัน หรือพิมพ์ 0 เพื่อย้อนกลับนอกจากนี้ การพิมพ์
     “*” จะทำให้ปลั๊กอินไม่ตรวจสอบข้อผิดพลาดใด ๆ ของตัวแปล'
   wwcConfigConversationIgnoreErrorsCleared: นักแปลข้อผิดพลาดในการละเว้นวลีที่ถูกล้างเรียบร้อยแล้ว
-
+  
   wwcsActiveTransPrevRate: 'เวลาจำกัดอัตราก่อนหน้านี้สำหรับนักแปลที่ใช้งานอยู่: {0}'
   wwcsActiveTransSaved: 'ตัวแปลที่ใช้งานถูกบันทึกไว้ในดิสก์: {0}'
   wwcsActiveTransIncoming: 'ตัวแปลที่ใช้งานอยู่กำลังแปลการสนทนาเข้ามา: {0}'
@@ -413,4 +413,6 @@ Messages:
   wwcsActiveTransOutgoing: 'ตัวแปลที่ใช้งานอยู่แปลแชทขาออก: {0}'
   wwcsActiveTransItem: 'รายการแปลที่ใช้งานอยู่: {0}'
   wwcsActiveTransEntity: 'เอนทิตีแปลที่ใช้งานอยู่: {0}'
+  wwcSupportedServer: เริ่มต้นใช้งาน WorldwideChat สำหรับ {0}...
+  wwcSupportedVersion: เปิดใช้คุณลักษณะสำหรับรุ่น {0}...
 

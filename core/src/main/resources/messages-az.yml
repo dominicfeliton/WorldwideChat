@@ -16,8 +16,8 @@ Messages:
   wwcsNotATranslator: '{0} üçün hələ heç bir qeydlər yoxdur.'
   wwcConfigGUIbStatsButton: bStats keçid
   wwctGUINewTranslationSource: Mənbə dilini seçin
-  wwcConfigConnectionFailed: '{0}''ya qoşulmaq mümkün olmadı. Etimadnamələrinizin və
-    firewall düzgün konfiqurasiya olunduğundan əmin olun!'
+  wwcConfigConnectionFailed: '{0}''ya qoşulmaq mümkün olmadı. Etimadnamələrinizin
+    və firewall düzgün konfiqurasiya olunduğundan əmin olun!'
   wwcConfigEnabledbStats: bStats effektiv.
   wwctGUIMainMenuPlayer: '{0} tərcümə menyusu'
   wwctGUIBookButton: Toggle Book Tərcümə
@@ -32,14 +32,16 @@ Messages:
   wwcConfigGUIAmazonTranslateButton: Amazon Tərcümə
   wwcConfigConversationLangSuccess: Plugin dili uğurla dəyişdi.
   wwcsSuccessfulTranslations: 'Uğurlu Tərcümələr: {0}'
-  wwcConfigConversationTranslationCacheInput: Mövcud tərcümə önbellek limitin {0} ifadələridir.
-    Yeni bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın və ya tərcümə önbelleğini
-    aradan qaldırmaq üçün 0 yazın. Geri dönmək üçün 0'dan az bir şey yazın.
+  wwcConfigConversationTranslationCacheInput: Mövcud tərcümə önbellek limitin {0}
+    ifadələridir. Yeni bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın və
+    ya tərcümə önbelleğini aradan qaldırmaq üçün 0 yazın. Geri dönmək üçün 0'dan az
+    bir şey yazın.
   wwctbOffTarget: '{0} üçün kitab tərcüməsi əlil oldu.'
   wwcConfigGUIGeneralSettings: Ümumi Konfiqurasiya
   wwcInvalidLang: Sizin config.yml etibarsız dil. en Defaulting...
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon regionu uğurla qurdu.
-  wwcConfigRateLimitEnabled: Qlobal məzənnə limiti effektiv və {0} saniyəyə təyin edildi.
+  wwcConfigRateLimitEnabled: Qlobal məzənnə limiti effektiv və {0} saniyəyə təyin
+    edildi.
   wwcBadPerms: Bu əmri yerinə yetirmək üçün tələb olunan icazələriniz yoxdur!
   wwcConfigGUILangButton: Plugin dilini dəyişdirin
   wwctGUISignButton: İşarə tərcüməsi
@@ -87,8 +89,8 @@ Messages:
   wwctGUITranslationButton: Tərcüməyə Başla
   wwctGUIAutoDetectButton: Mənbə dilini avtomatik aşkar etmək
   wwcUpdaterUpToDate: WorldWieChat bu günə qədər!
-  wwcConfigConversationAmazonTranslateRegionInput: Hazırkı bölgə {0}. Amazon üçün bir
-    bölgəni daxil edin və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigConversationAmazonTranslateRegionInput: Hazırkı bölgə {0}. Amazon üçün
+    bir bölgəni daxil edin və ya geri qayıtmaq üçün 0 yazın.
   wwcNoConsole: Bu komanda yalnız bir oyunçu tərəfindən qaça bilər.
   wwcInitializationFail: WorldwideChat-ı başlatmaq mümkün olmadı.
   wwcrSuccess: WorldWireChat uğurla yenidən yükləndi.
@@ -126,8 +128,9 @@ Messages:
   wwcConfigConversationGoogleTranslateAPIKeyInput: Mövcud API açarı {0}. Google Translate
     üçün bir API düyməsini daxil edin və ya geri qayıtmaq üçün 0 yazın.
   wwcConfigConversationRateLimitInput: Tərcümə başına mövcud qlobal məzənnə həddi
-    {0} saniyədir. Yeni bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın və
-    ya limiti aradan qaldırmaq üçün 0 yazın. Geri dönmək üçün 0'dan az bir şey yazın.
+    {0} saniyədir. Yeni bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın
+    və ya limiti aradan qaldırmaq üçün 0 yazın. Geri dönmək üçün 0'dan az bir şey
+    yazın.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API düyməsini
     müvəffəqiyyətlə təyin etdi.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon Secret Key Change
@@ -138,7 +141,8 @@ Messages:
   wwcConfigConversationWatsonAPIKeySuccess: Watson API əsas uğurla müəyyən.
   wwcRateLimit: Sizin tərcümələr dərəcəsi məhduddur. Zəhmət olmasa başqa bir {0} saniyə
     gözləyin.
-  wwcConfigCacheEnabled: Tərcüməçi önbelleğini aktivləşdirdi və {0} həddinə təyin etdi.
+  wwcConfigCacheEnabled: Tərcüməçi önbelleğini aktivləşdirdi və {0} həddinə təyin
+    etdi.
   wwctGUIExistingTranslationButton: Cari Tərcümə Sessiyasının yazılması
   wwcUserDataReloaded: Bütün saxlanılan istifadəçi məlumatlarını yüklədi.
   wwcConfigGUISendTranslationChatButton: Girişdə Aktiv Tərcüməçiyə Chat Xatırlatma
@@ -274,7 +278,8 @@ Messages:
   wwctLangToLangStart: '{0}-dən {1}''ya yeni tərcümə sessiyasının başlanması.'
   wwcOnJoinTranslationNotificationSourceLang: '{0}-dən {1}-a qədər aktiv tərcümə sessiyasınız
     var.'
-  wwctAutoTranslateStartOtherPlayer: '{0} üçün {1} üçün yeni tərcümə sessiyasının başlanması.'
+  wwctAutoTranslateStartOtherPlayer: '{0} üçün {1} üçün yeni tərcümə sessiyasının
+    başlanması.'
   wwctTranslationStopped: Tərcümə sessiyanız dayandırılıb.
   wwctLangToLangStartOtherPlayer: '{0} üçün {1}-dən {2}-ə qədər yeni tərcümə sessiyasının
     başlanması.'
@@ -376,8 +381,8 @@ Messages:
     qüvvəyə minməsi üçün yenidən yüklə.
   wwcConfigConversationLibreTranslateApiKeySuccess: Pulsuz API açarı uğurla təyin
     olundu.
-  wwcConfigConversationLibreURLInput: Mövcud URL {0}.Lütfən Pulsuz üçün URL daxil edin
-    və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigConversationLibreURLInput: Mövcud URL {0}.Lütfən Pulsuz üçün URL daxil
+    edin və ya geri qayıtmaq üçün 0 yazın.
   libreHttpUnknown: 'Bilinməyən http xətası: {0}'
   wwcConfigGUILibreTranslateURLButton: Pulsuz Tərcümə URL'sini dəyişdirin
   wwcConfigConnectionFail: '{0} şəbəkəsinə qoşulmaq mümkün olmadı.'
@@ -430,7 +435,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Müvəffəqiyyətlə qeydiyyatdan tərcüməçi səhvlər ignore.
   wwcConfigErrorsToIgnoreInvalid: Yanlış tərcüməçi səhvlər config.yml müəyyən ignore.
     Varsayılmazlıqlar qeydiyyatdan keçir...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Tərcüməçi səhvlərini ifadələrə məhəl qoymamaq
     üçün uğurla dəyişdi.
   wwcConfigGUIIgnoreErrorsButton: Yoksaymaq üçün səhvləri dəyişdirin
@@ -441,7 +446,7 @@ Messages:
     səbəb olacaq.'
   wwcConfigConversationIgnoreErrorsCleared: Tərcüməçi səhvlər ifadələr ignore uğurla
     rəsmiləşdirilmiş.
-
+  
   wwcsActiveTransPrevRate: 'Aktiv Tərcüməçi Əvvəlki Məzənnə Limit Vaxtı: {0}'
   wwcsActiveTransSaved: 'Aktiv Tərcüməçi Diskə Saxlanılır: {0}'
   wwcsActiveTransIncoming: 'Daxil olan söhbətləri tərcümə edən aktiv tərcüməçi: {0}'
@@ -455,4 +460,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Gedən söhbətləri tərcümə edən aktiv tərcüməçi: {0}'
   wwcsActiveTransItem: 'Məzmunu tərcümə edən aktiv tərcüməçi: {0}'
   wwcsActiveTransEntity: 'Aktiv Tərcüməçi Tərcümə edən Müəssisə: {0}'
+  wwcSupportedServer: '{0} üçün WorldwideChat başlamaq...'
+  wwcSupportedVersion: Versiya {0} üçün xüsusiyyətləri təmin edir...
 

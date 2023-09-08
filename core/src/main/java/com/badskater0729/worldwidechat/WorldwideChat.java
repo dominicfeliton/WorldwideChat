@@ -75,8 +75,8 @@ public class WorldwideChat extends JavaPlugin {
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
 	public static int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "09072023-1"; // MMDDYYYY-revisionNumber
-	
+	public static final String messagesConfigVersion = "09082023-2"; // MMDDYYYY-revisionNumber
+
 	public static WorldwideChat instance;
 	
 	private BukkitAudiences adventure;
@@ -535,20 +535,24 @@ public class WorldwideChat extends JavaPlugin {
 		Pair<String, String> serverInfo = getServerInfo();
 		String type = serverInfo.getKey();
 		String version = serverInfo.getValue();
+		debugMsg("Server type: " + type);
+		debugMsg("Server version: " + version);
 		if (type.equals("Bukkit") || type.equals("Spigot") || type.equals("Paper")) {
 			// TODO
-			getLogger().info(getMsg("wwcSupportedServer", type));
-			if (Arrays.asList(supportedMCVersions).contains(version)) {
-				getLogger().info(getMsg("wwcSupportedVersion"));
-			} else {
-				getLogger().warning(getMsg("wwcUnsupportedVersion"));
-				getLogger().warning(Arrays.toString(supportedMCVersions));
+			getLogger().info("##### " + getMsg("wwcSupportedServer", type) + " #####");
+			for (String eaVer: supportedMCVersions) {
+				if (version.contains(eaVer)) {
+					getLogger().info("##### " + getMsg("wwcSupportedVersion", eaVer) + " #####");
+					return;
+				}
 			}
+			getLogger().warning("##### " + getMsg("wwcUnsupportedVersion") + " #####");
+			getLogger().warning("##### " + Arrays.toString(supportedMCVersions) + " #####");
 			return;
 		}
 
 		// Not running a supported server type, default to Bukkit
-		getLogger().warning(getMsg("wwcUnsupportedServer"));
+		getLogger().warning("##### " + getMsg("wwcUnsupportedServer") + " #####");
 	}
 
 

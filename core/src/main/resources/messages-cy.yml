@@ -128,8 +128,8 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationSourceLang: Mae sgwrs fyd-eang yn cael ei
     gyfieithu o {0} i {1}.
   wwcConfigGUITranslatorSettings: Cyfluniad Cyfieithydd
-  wwcConfigConversationGoogleTranslateAPIKeyInput: Yr allwedd API cyfredol yw {0} mewnbynnu
-    allwedd API ar gyfer Google Translate, neu deipio 0 i fynd yn ôl.
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Yr allwedd API cyfredol yw {0}
+    mewnbynnu allwedd API ar gyfer Google Translate, neu deipio 0 i fynd yn ôl.
   wwcConfigConversationRateLimitInput: Y terfyn cyfradd fyd-eang ar hyn o bryd fesul
     cyfieithiad yw {0} eiliad. Teipiwch unrhyw beth sy'n fwy na 0 i osod gwerth newydd,
     neu deipio 0 i analluoga 'r terfyn. Teipiwch unrhyw beth llai na 0 i fynd yn ôl.
@@ -281,8 +281,8 @@ Messages:
   wwctLangToLangStart: Dechrau sesiwn gyfieithu newydd o {0} i {1}.
   wwcOnJoinTranslationNotificationSourceLang: Mae gennych sesiwn gyfieithu weithredol
     o {0} i {1}.
-  wwctAutoTranslateStartOtherPlayer: Dechrau sesiwn gyfieithu newydd ar gyfer {0} i
-    {0}.
+  wwctAutoTranslateStartOtherPlayer: Dechrau sesiwn gyfieithu newydd ar gyfer {0}
+    i {0}.
   wwctTranslationStopped: Mae eich sesiwn gyfieithu wedi cael ei stopio.
   wwctLangToLangStartOtherPlayer: Dechrau sesiwn gyfieithu newydd ar gyfer {0} o {1}
     i {0}.
@@ -444,7 +444,7 @@ Messages:
     hanwybyddu.
   wwcConfigErrorsToIgnoreInvalid: Gwallau cyfieithydd annilys i anwybyddu gosod yn
     config.yml. Cofrestru rhagosodiadau...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Newid gwallau cyfieithydd yn llwyddiannus
     i anwybyddu ymadroddion.
   wwcConfigGUIIgnoreErrorsButton: Newid Gwallau i Anwybyddu
@@ -455,7 +455,7 @@ Messages:
     beidio gwirio unrhyw wallau cyfieithydd.'
   wwcConfigConversationIgnoreErrorsCleared: Gwallau cyfieithydd i anwybyddu ymadroddion
     a gliriwyd yn llwyddiannus.
-
+  
   wwcsActiveTransPrevRate: 'Cyfieithydd Gweithredol Amser Terfyn Cyfradd Blaenorol:
     {0}'
   wwcsActiveTransSaved: 'Cyfieithydd Gweithredol Cadw i Disg: {0}'
@@ -471,4 +471,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Cyfieithydd Gweithredol Cyfieithu Sgwrs Ymadawol: {0}'
   wwcsActiveTransItem: 'Cyfieithydd Gweithredol Eitem Cyfieithu: {0}'
   wwcsActiveTransEntity: 'Cyfieithu Cyfieithu Gweithredol Endid: {0}'
+  wwcSupportedServer: Ymgychwyn WorldwideChat ar gyfer {0}...
+  wwcSupportedVersion: Nodweddion galluogi ar gyfer fersiwn {0}...
 

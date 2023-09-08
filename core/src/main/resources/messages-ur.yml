@@ -16,8 +16,8 @@ Messages:
   wwcsNotATranslator: '{0} کے لئے ابھی تک کوئی ریکارڈ دستیاب نہیں ہے۔'
   wwcConfigGUIbStatsButton: bStats ٹوگل کریں
   wwctGUINewTranslationSource: ماخذ زبان کا انتخاب کریں
-  wwcConfigConnectionFailed: '{0} سے منسلک ہونے میں ناکامی. یقینی بنائیں کہ آپ کی اسناد
-    اور فائر وال درست طریقے سے ترتیب دیے گئے ہیں!'
+  wwcConfigConnectionFailed: '{0} سے منسلک ہونے میں ناکامی. یقینی بنائیں کہ آپ کی
+    اسناد اور فائر وال درست طریقے سے ترتیب دیے گئے ہیں!'
   wwcConfigEnabledbStats: فعال bStats.
   wwctGUIMainMenuPlayer: '{0} کا ترجمہ مینو'
   wwctGUIBookButton: کتاب ترجمہ ٹوگل کریں
@@ -107,8 +107,8 @@ Messages:
   wwcConfigConnectionSuccess: کامیابی کے ساتھ {0} سے جڑا ہوا!
   wwcConfigGUIGoogleTranslateButton: گوگل ترجمہ
   wwcsIsActiveTranslator: 'فعال مترجم ہے: {0}'
-  wwcConfigConversationPrefixInput: موجودہ سابق {0} ہے براہ مہربانی نیا ٹائپ کریں یا
-    واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigConversationPrefixInput: موجودہ سابق {0} ہے براہ مہربانی نیا ٹائپ کریں
+    یا واپس جانے کے لیے 0 ٹائپ کریں۔
   wwcConfigGUIPreviousPageButton: پچھلا صفحہ
   wwcConfigGUITranslatorCacheButton: ترجمہ کیش کی حد تبدیل کریں
   wwcConfigConversationbStatsSuccess: کامیابی سے bStats ٹوگل کر دیا.
@@ -122,8 +122,8 @@ Messages:
   wwcConfigConversationUpdateCheckerSuccess: چیکر تاخیر سیٹ کامیابی سے اپ ڈیٹ کریں.
   wwcUnsupportedVersion: 'آپ بککٹ، سپگٹ یا کاغذ کا غیر معاون ورژن چلا رہے ہیں۔ سپورٹ
     ورژن:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: گلوبل چیٹ کا ترجمہ {0} سے {1} تک
-    کیا جا رہا ہے۔
+  wwcGlobalOnJoinTranslationNotificationSourceLang: گلوبل چیٹ کا ترجمہ {0} سے {1}
+    تک کیا جا رہا ہے۔
   wwcConfigGUITranslatorSettings: مترجم ترتیب
   wwcConfigConversationGoogleTranslateAPIKeyInput: موجودہ API کلید {0} ہے گوگل ترجمہ
     کے لئے ایک API کلید ان پٹ براہ مہربانی، یا 0 ٹائپ واپس جانے کے لئے.
@@ -178,8 +178,8 @@ Messages:
   wwcConfigCacheInvalid: مترجم کیش کا سائز غلط ہے۔ 10 کے لئے ناقص...
   wwcInventoryErrorPlayer: آپ کے GUI کے ساتھ غلطی کا پتہ چلا. کنسول کو ایک لاگ بھیجا
     گیا ہے۔
-  wwcInventoryError: صارف {0} کے GUI کے ساتھ غلطی کا پتہ چلا براہ کرم اس مسئلے کو ڈویلپر
-    سے رپورٹ کریں۔
+  wwcInventoryError: صارف {0} کے GUI کے ساتھ غلطی کا پتہ چلا براہ کرم اس مسئلے کو
+    ڈویلپر سے رپورٹ کریں۔
   wwctiOffTarget: آئٹم ترجمہ {0} کے لئے غیر فعال.
   wwctiOffSender: آئٹم ترجمہ غیر فعال.
   wwcItemTranslateTitleStock: ڈیفالٹ آئٹم کے ناموں کا ترجمہ کرنے
@@ -279,8 +279,8 @@ Messages:
   wwctAutoTranslateStartOtherPlayer: '{0} کے لیے {1} کے لیے ایک نیا ترجمہ سیشن شروع
     کر رہا ہے۔'
   wwctTranslationStopped: آپ کا ترجمہ سیشن روک دیا گیا ہے۔
-  wwctLangToLangStartOtherPlayer: '{0} کے لئے ایک نیا ترجمہ سیشن شروع کررہا ہے {1} سے
-    {0}'
+  wwctLangToLangStartOtherPlayer: '{0} کے لئے ایک نیا ترجمہ سیشن شروع کررہا ہے {1}
+    سے {0}'
   wwctAutoTranslateStart: ترجمہ کا ایک نیا سیشن {0} پر شروع کیا جا رہا ہے۔
   wwcOnJoinTranslationNotificationNoSourceLang: آپ کے پاس ایک فعال ترجمہ سیشن ہے {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: گلوبل چیٹ کا ترجمہ کیا
@@ -337,18 +337,19 @@ Messages:
     کرنے کے لئے 0 کے علاوہ کچھ ٹائپ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.
   wwcConfigGUISQLPasswordButton: SQL پاس ورڈ تبدیل کریں
   wwcConfigConversationSQLHostnameSuccess: SQL میزبان نام کو کامیابی سے تبدیل کر دیا.
-  wwcConfigConversationSQLHostnameInput: موجودہ میزبان نام ہے {0}. 0 کے علاوہ کچھ بھی
-    ٹائپ کریں ایک نیا میزبان نام مقرر کرنے کے لئے، یا واپس جانے کے لئے 0 ٹائپ کریں.
+  wwcConfigConversationSQLHostnameInput: موجودہ میزبان نام ہے {0}. 0 کے علاوہ کچھ
+    بھی ٹائپ کریں ایک نیا میزبان نام مقرر کرنے کے لئے، یا واپس جانے کے لئے 0 ٹائپ
+    کریں.
   wwcConfigGUISQLHostnameButton: SQL ہوسٹنام تبدیل کریں
   wwcConfigConversationSQLOptionalArgsSuccess: اختیاری SQL دلائل کو کامیابی سے تبدیل
     کر دیا.
   wwcConfigConversationSQLPasswordSuccess: SQL پاس ورڈ کو کامیابی سے تبدیل کر دیا.
-  wwcConfigConversationSQLPasswordInput: موجودہ پاسورڈ {0} ہے ایک نیا پاس ورڈ سیٹ کرنے
-    کے لیے 0 کے علاوہ کوئی اور چیز ٹائپ کریں یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigConversationSQLPasswordInput: موجودہ پاسورڈ {0} ہے ایک نیا پاس ورڈ سیٹ
+    کرنے کے لیے 0 کے علاوہ کوئی اور چیز ٹائپ کریں یا واپس جانے کے لیے 0 ٹائپ کریں۔
   wwcConfigGUIToggleSQLSSLButton: SQL SSL ٹوگل کریں
   wwcConfigConversationSQLUsernameSuccess: SQL صارف نام کو کامیابی سے تبدیل کر دیا.
-  wwcConfigConversationSQLUsernameInput: موجودہ صارف نام {0} ہے، نیا صارف نام سیٹ کرنے
-    کے لئے 0 کے علاوہ کچھ ٹائپ کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
+  wwcConfigConversationSQLUsernameInput: موجودہ صارف نام {0} ہے، نیا صارف نام سیٹ
+    کرنے کے لئے 0 کے علاوہ کچھ ٹائپ کریں، یا واپس جانے کے لیے 0 ٹائپ کریں۔
   wwcConfigConversationSQLPortSuccess: SQL پورٹ کو کامیابی سے تبدیل کر دیا.
   wwcConfigGUISQLUsernameButton: SQL صارف نام تبدیل کریں
   wwcConfigConversationSQLOptionalArgsCleared: اختیاری دلائل کامیابی سے صاف کر دیے
@@ -375,8 +376,8 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: مفت ترجمہ API کلید کو تبدیل کریں
   libreHttp403: لاپتہ Libe API کلید ترجمہ کریں، یا آپ سرور سے پابندی عائد کر رہے ہیں!
   wwcConfigConversationLibreURLSuccess: مفت یو آر ایل کامیابی سے سیٹ کیا گیا ہے.
-  wwcConfigConversationLibreTranslateApiKeyInput: موجودہ API کلید {0} ہے براہ کرم Libe
-    کے لئے ایک API کلید ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.
+  wwcConfigConversationLibreTranslateApiKeyInput: موجودہ API کلید {0} ہے براہ کرم
+    Libe کے لئے ایک API کلید ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.
   wwcConfigGUILibreTranslateButton: مفت ترجمہ
   libreHttp429: سرور سے شرح کی حد کی وجہ سے کوئی اعتماد نہیں.
   wwcConfigGUIToggleLibreTranslateButton: ٹوگل مفت ترجمہ کریں
@@ -409,8 +410,8 @@ Messages:
     ڈیٹا بیس نام سیٹ کرنے کے لیے 0 کے علاوہ کچھ بھی ٹائپ کریں یا واپس جانے کے لیے
     0 ٹائپ کریں۔
   wwcConfigConversationMongoOptionalArgsInput: 'موجودہ اختیاری MongoDB دلائل ہیں:
-    {0} قسم کے دلائل کوما (کلید = قدر، key2 = value2)، یا موجودہ ارگز مسح کرنے کے لئے
-    واضح ٹائپ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.'
+    {0} قسم کے دلائل کوما (کلید = قدر، key2 = value2)، یا موجودہ ارگز مسح کرنے کے
+    لئے واضح ٹائپ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.'
   wwcConfigGUIMongoDatabaseNameButton: MongoDB ڈیٹا بیس تبدیل کریں
   wwcConfigConversationMongoUsernameInput: موجودہ صارف نام {0} ہے ایک نیا صارف نام
     مرتب کرنے کے لیے 0 کے علاوہ کوئی بھی چیز ٹائپ کریں یا واپس جانے کے لیے 0 ٹائپ
@@ -436,12 +437,12 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: DeepL ترجمہ API کلید تبدیل کریں
   wwcConfigGUIToggleDeepLTranslateButton: دیپ ایل کا ترجمہ ٹوگل
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API کلید کامیابی سے سیٹ.
-  wwcConfigConversationDeepLTranslateApiKeyInput: موجودہ API کلید {0} ہے براہ کرم DeepL
-    کے لئے ایک API کلید ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.
+  wwcConfigConversationDeepLTranslateApiKeyInput: موجودہ API کلید {0} ہے براہ کرم
+    DeepL کے لئے ایک API کلید ان پٹ کریں، یا واپس جانے کے لئے 0 ٹائپ کریں.
   wwcConfigErrorsToIgnoreSuccess: کامیابی سے رجسٹرڈ مترجم کی غلطیوں کو نظر انداز کرنے.
   wwcConfigErrorsToIgnoreInvalid: config.yml میں سیٹ کو نظر انداز کرنے کے لئے غلط
     مترجم کی غلطیاں. ڈیفالٹ رجسٹر کر رہا ہے...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: جملے کو نظر انداز کرنے کے لئے مترجم کی
     غلطیوں کو کامیابی سے تبدیل کردیا.
   wwcConfigGUIIgnoreErrorsButton: نظر انداز کرنے کے لئے غلطیوں کو تبدیل کریں
@@ -452,7 +453,7 @@ Messages:
     کی جانچ پڑتال نہیں ہوگی.'
   wwcConfigConversationIgnoreErrorsCleared: مترجم کی غلطیاں کامیابی سے صاف جملے کو
     نظر انداز کرنے کے لئے.
-
+  
   wwcsActiveTransPrevRate: 'فعال مترجم سابقہ شرح کی حد وقت: {0}'
   wwcsActiveTransSaved: 'فعال مترجم ڈسک میں محفوظ: {0}'
   wwcsActiveTransIncoming: 'آنے والی چیٹ کا ترجمہ فعال مترجم: {0}'
@@ -466,4 +467,6 @@ Messages:
   wwcsActiveTransOutgoing: 'فعال مترجم کا ترجمہ سبکدوش ہونے والی چیٹ: {0}'
   wwcsActiveTransItem: 'فعال مترجم کا ترجمہ آئٹم: {0}'
   wwcsActiveTransEntity: 'فعال مترجم ترجمہ ادارے: {0}'
+  wwcSupportedServer: '{0} کے لئے دنیا بھر میں چیٹ شروع کر رہا ہے...'
+  wwcSupportedVersion: ورژن {0} کے لئے خصوصیات کو فعال کر رہا ہے...
 

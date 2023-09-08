@@ -33,9 +33,9 @@ Messages:
   wwcConfigConversationLangSuccess: Bahasa plugin berhasil diubah.
   wwcsSuccessfulTranslations: 'Terjemahan Berhasil: {0}'
   wwcConfigConversationTranslationCacheInput: Batas tembolok terjemahan saat ini adalah
-    {0} frase. Ketik apa pun yang lebih besar dari 0 untuk menetapkan nilai baru, atau
-    ketik 0 untuk menonaktifkan tembolok terjemahan. Ketik apa pun kurang dari 0 untuk
-    kembali.
+    {0} frase. Ketik apa pun yang lebih besar dari 0 untuk menetapkan nilai baru,
+    atau ketik 0 untuk menonaktifkan tembolok terjemahan. Ketik apa pun kurang dari
+    0 untuk kembali.
   wwctbOffTarget: Terjemahan buku dinonaktifkan untuk {0}.
   wwcConfigGUIGeneralSettings: Konfigurasi Umum
   wwcInvalidLang: Bahasa tidak valid dalam config.ymlmu. Defaulting to en...
@@ -82,8 +82,8 @@ Messages:
     Terjemahan:'
   wwctsOnTarget: Penerjemahan tanda diaktifkan untuk {0}.
   wwcConfigCacheDisabled: Cache penerjemah dinonaktifkan.
-  wwcConfigConversationWatsonURLInput: URL saat ini adalah {0}. Harap masukan URL layanan
-    untuk Watson, atau ketik 0 untuk kembali.
+  wwcConfigConversationWatsonURLInput: URL saat ini adalah {0}. Harap masukan URL
+    layanan untuk Watson, atau ketik 0 untuk kembali.
   wwcBookDone: Buku berhasil diterjemahkan.
   wwctsOnSender: Menandatangani terjemahan diaktifkan. Klik kanan pada tanda untuk
     menerjemahkannya!
@@ -129,8 +129,8 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationSourceLang: Obrolan global sedang diterjemahkan
     dari {0} ke {1}.
   wwcConfigGUITranslatorSettings: Konfigurasi Penerjemah
-  wwcConfigConversationGoogleTranslateAPIKeyInput: Kunci API saat ini adalah {0}. Harap
-    masukan kunci API untuk Google Translate, atau ketik 0 untuk kembali.
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Kunci API saat ini adalah {0}.
+    Harap masukan kunci API untuk Google Translate, atau ketik 0 untuk kembali.
   wwcConfigConversationRateLimitInput: Batas tingkat global saat ini per terjemahan
     adalah {0} detik. Ketik apa pun yang lebih besar dari 0 untuk menetapkan nilai
     baru, atau ketik 0 untuk menonaktifkan batas. Ketik apa pun kurang dari 0 untuk
@@ -284,8 +284,8 @@ Messages:
     dari {0} ke {1}.
   wwctAutoTranslateStartOtherPlayer: Memulai sesi terjemahan baru untuk {0} ke {1}.
   wwctTranslationStopped: Sesi terjemahan Anda telah dihentikan.
-  wwctLangToLangStartOtherPlayer: Memulai sesi terjemahan baru untuk {0} dari {1} ke
-    {0}.
+  wwctLangToLangStartOtherPlayer: Memulai sesi terjemahan baru untuk {0} dari {1}
+    ke {0}.
   wwctAutoTranslateStart: Memulai sesi terjemahan baru ke {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Anda memiliki sesi terjemahan aktif
     ke {0}.
@@ -344,8 +344,8 @@ Messages:
     mengatur port baru, atau ketik 0 untuk kembali.
   wwcConfigGUISQLPasswordButton: Ubah Kata Sandi SQL
   wwcConfigConversationSQLHostnameSuccess: Berhasil mengubah nama host SQL.
-  wwcConfigConversationSQLHostnameInput: Nama host saat ini adalah {0}. Ketik apa pun
-    selain 0 untuk menetapkan nama host baru, atau ketik 0 untuk kembali.
+  wwcConfigConversationSQLHostnameInput: Nama host saat ini adalah {0}. Ketik apa
+    pun selain 0 untuk menetapkan nama host baru, atau ketik 0 untuk kembali.
   wwcConfigGUISQLHostnameButton: Ubah SQL Hostname
   wwcConfigConversationSQLOptionalArgsSuccess: Berhasil mengubah argumen SQL opsional.
   wwcConfigConversationSQLPasswordSuccess: Berhasil mengubah kata sandi SQL.
@@ -353,14 +353,14 @@ Messages:
     pun selain 0 untuk mengatur kata sandi baru, atau ketik 0 untuk kembali.
   wwcConfigGUIToggleSQLSSLButton: Beralih SQL SSL
   wwcConfigConversationSQLUsernameSuccess: Berhasil mengubah nama pengguna SQL.
-  wwcConfigConversationSQLUsernameInput: Nama pengguna saat ini adalah {0}. Ketik apa
-    pun selain 0 untuk menetapkan nama pengguna baru, atau ketik 0 untuk kembali.
+  wwcConfigConversationSQLUsernameInput: Nama pengguna saat ini adalah {0}. Ketik
+    apa pun selain 0 untuk menetapkan nama pengguna baru, atau ketik 0 untuk kembali.
   wwcConfigConversationSQLPortSuccess: Berhasil mengubah port SQL.
   wwcConfigGUISQLUsernameButton: Ubah Nama Pengguna SQL
   wwcConfigConversationSQLOptionalArgsCleared: Argumen opsional dihapus berhasil.
   wwcConfigConversationSQLOptionalArgsInput: 'Argumen SQL opsional saat ini adalah:
-    {0}. Argumen tipe dipisahkan dengan koma (key=value, key2=value2), atau ketik clear
-    untuk menghapus args saat ini, atau tipe 0 untuk kembali.'
+    {0}. Argumen tipe dipisahkan dengan koma (key=value, key2=value2), atau ketik
+    clear untuk menghapus args saat ini, atau tipe 0 untuk kembali.'
   wwcConfigConversationSQLDatabaseNameInput: Nama database saat ini adalah {0}. Ketik
     apa pun selain 0 untuk menetapkan nama database baru, atau ketik 0 untuk kembali.
   wwcConfigGUISQLDatabaseNameButton: Ubah Database SQL
@@ -404,8 +404,9 @@ Messages:
   wwcConfigConversationMongoHostnameSuccess: Berhasil mengubah nama host MongoDB.
   wwcConfigGUIMongoMenuButton: Ubah Pengaturan MongoDB
   wwcConfigGUIToggleMongoButton: Beralih MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Nama database saat ini adalah {0}. Ketik
-    apa pun selain 0 untuk menetapkan nama database baru, atau tipe 0 untuk kembali.
+  wwcConfigConversationMongoDatabaseNameInput: Nama database saat ini adalah {0}.
+    Ketik apa pun selain 0 untuk menetapkan nama database baru, atau tipe 0 untuk
+    kembali.
   wwcConfigConversationMongoOptionalArgsInput: 'Argumen MongoDB opsional saat ini
     adalah: {0}. argumen ketik dipisahkan oleh koma (key=value, key2=value2), atau
     ketik clear untuk menghapus args saat ini, atau tipe 0 untuk kembali.'
@@ -438,17 +439,18 @@ Messages:
     diabaikan.
   wwcConfigErrorsToIgnoreInvalid: Kesalahan penerjemah tidak valid untuk diabaikan
     disetel di config.yhtml. Mendaftarkan default...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Berhasil mengubah kesalahan penerjemah
     untuk mengabaikan frasa.
   wwcConfigGUIIgnoreErrorsButton: Ubah Kesalahan untuk Diabaikan
   wwcConfigConversationIgnoreErrorsInput: 'Daftar frasa saat ini dalam kesalahan penerjemah
-    untuk diabaikan adalah: {0}. Ketik argumen dipisahkan dengan koma (key=value, key2=value2),
-    atau ketik clear untuk menghapus args saat ini, atau tipe 0 untuk kembali. Selain
-    itu, mengetik “*” akan menyebabkan plugin tidak memeriksa kesalahan penerjemah.'
+    untuk diabaikan adalah: {0}. Ketik argumen dipisahkan dengan koma (key=value,
+    key2=value2), atau ketik clear untuk menghapus args saat ini, atau tipe 0 untuk
+    kembali. Selain itu, mengetik “*” akan menyebabkan plugin tidak memeriksa kesalahan
+    penerjemah.'
   wwcConfigConversationIgnoreErrorsCleared: Kesalahan penerjemah untuk mengabaikan
     frasa dihapus berhasil.
-
+  
   wwcsActiveTransPrevRate: 'Penerjemah Aktif Waktu Batas Tarif Sebelumnya: {0}'
   wwcsActiveTransSaved: 'Penerjemah Aktif Disimpan ke Disk: {0}'
   wwcsActiveTransIncoming: 'Penerjemah Aktif Menerjemahkan Obrolan Masuk: {0}'
@@ -462,4 +464,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Penerjemah Aktif Menerjemahkan Obrolan Keluar: {0}'
   wwcsActiveTransItem: 'Butir Penerjemah Aktif Penerjemah: {0}'
   wwcsActiveTransEntity: 'Entitas Penerjemah Aktif Penerjemah: {0}'
+  wwcSupportedServer: Menginisialisasi WorldwideChat untuk {0}...
+  wwcSupportedVersion: Mengaktifkan fitur untuk versi {0}...
 

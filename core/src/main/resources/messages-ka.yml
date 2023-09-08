@@ -124,8 +124,8 @@ Messages:
     წარმატებით.
   wwcUnsupportedVersion: 'თქვენ გაშვებული მხარდამჭერი ვერსია Bukkit, Spigot, ან ქაღალდის.
     მხარდაჭერილი ვერსიები:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: გლობალური ჩეთი თარგმნილია {0} დან
-    {0}.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: გლობალური ჩეთი თარგმნილია {0}
+    დან {0}.
   wwcConfigGUITranslatorSettings: მთარგმნელთა კონფიგურაცია
   wwcConfigConversationGoogleTranslateAPIKeyInput: მიმდინარე API გასაღები არის {0}.
     გთხოვთ, შეიყვანოთ API გასაღები Google Translate- ისთვის, ან ტიპის 0 დასაბრუნებლად.
@@ -168,8 +168,8 @@ Messages:
     ჩაწერეთ 0-ზე ნაკლები დაბრუნება.
   wwctGUITargetPlayerNull: სამიზნე მოთამაშე გათიშული სერვერიდან.
   wwcConfigConversationSyncUserDataDelayInput: მომხმარებლის მონაცემების სინქრონიზაციის
-    მიმდინარე შეფერხება {0} წამი. აკრიფეთ 10-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა,
-    ან არაფერი ნაკლებია, ვიდრე 10 დაბრუნდეს.
+    მიმდინარე შეფერხება {0} წამი. აკრიფეთ 10-ზე მეტი არაფერი, რათა შეიქმნას ახალი
+    მნიშვნელობა, ან არაფერი ნაკლებია, ვიდრე 10 დაბრუნდეს.
   wwcConfigGUISyncUserDataButton: მომხმარებლის მონაცემთა სინქრონიზაციის შეფერხების
     შეცვლა
   wwcConfigSyncDelayEnabled: გადადება მომხმარებლის მონაცემების სინქრონიზაცია დაყენებულია
@@ -310,8 +310,8 @@ Messages:
   wwctGUIExistingTranslationOutput: 'გამოყვანის ენა: {0}'
   wwcTranslatorAttempt: თარჯიმანთან დაკავშირების მცდელობა config.yml... (მცდელობა
     {0}/ {1})
-  wwcTimeoutExceptionConsole: Player {0} მქონდა მათი უახლესი მოთხოვნის შეყოვნება. ეს
-    შეცდომა არ არის ფატალური, მაგრამ WorldwideChat უნდა გადატვირთული თუ ის გრძელდება.
+  wwcTimeoutExceptionConsole: Player {0} მქონდა მათი უახლესი მოთხოვნის შეყოვნება.
+    ეს შეცდომა არ არის ფატალური, მაგრამ WorldwideChat უნდა გადატვირთული თუ ის გრძელდება.
   wwcGUIPageNumber: 'გვერდის ნომერი: {0}'
   wwcConfigYAMLFallback: დაცემა უკან YAML...
   wwcConfigGUIToggleSQLButton: გადართვა SQL
@@ -337,8 +337,8 @@ Messages:
     0-ის სხვა რამეს ტიპი, ან 0-ის დასაბრუნებლად.
   wwcConfigGUISQLPasswordButton: SQL პაროლის შეცვლა
   wwcConfigConversationSQLHostnameSuccess: წარმატებით შეიცვალა SQL ჰოსტის სახელი.
-  wwcConfigConversationSQLHostnameInput: ახლანდელი ჰოსტსახელი არის {0}. 0-ის სხვა რამეს
-    ტიპი ახალი ჰოსტის სახელის დასაყენებლად, ან 0 ტიპის დასაბრუნებლად.
+  wwcConfigConversationSQLHostnameInput: ახლანდელი ჰოსტსახელი არის {0}. 0-ის სხვა
+    რამეს ტიპი ახალი ჰოსტის სახელის დასაყენებლად, ან 0 ტიპის დასაბრუნებლად.
   wwcConfigGUISQLHostnameButton: SQL ჰოსტსახელის შეცვლა
   wwcConfigConversationSQLOptionalArgsSuccess: წარმატებით შეიცვალა სურვილისამებრ SQL
     არგუმენტები.
@@ -439,7 +439,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: წარმატებით რეგისტრირებული თარჯიმანი შეცდომები იგნორირება.
   wwcConfigErrorsToIgnoreInvalid: არასწორი თარჯიმანი შეცდომები იგნორირება მითითებული
     config.yml. დეფოლტის რეგისტრაცია...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: წარმატებით შეიცვალა თარჯიმნის შეცდომები
     ფრაზების უგულებელყოფისთვის.
   wwcConfigGUIIgnoreErrorsButton: შეცვალეთ შეცდომები უგულებელყოფისთვის
@@ -450,7 +450,7 @@ Messages:
     გამოიწვევს მოდული არ შეამოწმოთ ნებისმიერი თარჯიმანი შეცდომები.'
   wwcConfigConversationIgnoreErrorsCleared: მთარგმნელი შეცდომები იგნორირება ფრაზები
     განბაჟებული წარმატებით.
-
+  
   wwcsActiveTransPrevRate: 'აქტიური მთარგმნელი წინა განაკვეთის ლიმიტის დრო: {0}'
   wwcsActiveTransSaved: 'აქტიური თარჯიმანი შენახულია დისკზე: {0}'
   wwcsActiveTransIncoming: 'აქტიური თარჯიმანი შემომავალი ჩეთის თარგმნა: {0}'
@@ -464,4 +464,6 @@ Messages:
   wwcsActiveTransOutgoing: 'აქტიური მთარგმნელი თარგმნა გამავალი ჩეთი: {0}'
   wwcsActiveTransItem: 'მთარგმნელის აქტიური მთარგმნელი: {0}'
   wwcsActiveTransEntity: 'მთარგმნელის აქტიური მთარგმნელი პირი: {0}'
+  wwcSupportedServer: WorldwideChat— ის ინიციალიზაცია {0} — ისთვის...
+  wwcSupportedVersion: ფუნქციების ჩართვა {0} ვერსიისთვის...
 

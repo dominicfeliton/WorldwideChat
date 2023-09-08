@@ -15,8 +15,8 @@ Messages:
   wwcsNotATranslator: '{0} க்கு இதுவரை பதிவுகள் எதுவும் கிடைக்கவில்லை.'
   wwcConfigGUIbStatsButton: மாற்று bStats
   wwctGUINewTranslationSource: மூல மொழியைத் தேர்வு செய்க
-  wwcConfigConnectionFailed: '{0} உடன் இணைக்கத் தவறியது. உங்கள் சான்றுகள் மற்றும் ஃபயர்வால்
-    சரியாக உள்ளமைக்கப்பட்டுள்ளதா என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள்!'
+  wwcConfigConnectionFailed: '{0} உடன் இணைக்கத் தவறியது. உங்கள் சான்றுகள் மற்றும்
+    ஃபயர்வால் சரியாக உள்ளமைக்கப்பட்டுள்ளதா என்பதை உறுதிப்படுத்திக் கொள்ளுங்கள்!'
   wwcConfigEnabledbStats: BStATகளை இயக்கினார்.
   wwctGUIMainMenuPlayer: '{0} இன் மொழிபெயர்ப்பு பட்டி'
   wwctGUIBookButton: மாற்று நூல் மொழிபெயர்ப்பு
@@ -45,8 +45,8 @@ Messages:
   wwcBadPerms: இந்த கட்டளையை இயக்க தேவையான அனுமதிகள் உங்களுக்கு இல்லை!
   wwcConfigGUILangButton: சொருகி மொழியை மாற்ற
   wwctGUISignButton: மாற்று சைகை மொழிபெயர்ப்பு
-  wwcUpdaterOutOfDate: WorldWideSat தேதி இல்லை. தயவுசெய்து சமீபத்திய பதிப்பு, {0} க்கு
-    புதுப்பிக்கவும்.
+  wwcUpdaterOutOfDate: WorldWideSat தேதி இல்லை. தயவுசெய்து சமீபத்திய பதிப்பு, {0}
+    க்கு புதுப்பிக்கவும்.
   wwcConfigGUINextPageButton: அடுத்த பக்கம்
   wwcConfigInvalidTranslatorSettings: தவறான மொழிபெயர்ப்பாளர் அமைப்புகள்! உங்கள் config.yml
     ஒரே ஒரு மொழிபெயர்ப்பாளர் செயல்படுத்த கொள்ளவும்.
@@ -148,7 +148,8 @@ Messages:
   wwcConfigConversationWatsonAPIKeySuccess: வாட்சன் ஏபிஐ விசையை வெற்றிகரமாக அமைக்க.
   wwcRateLimit: உங்கள் மொழிபெயர்ப்பு விகிதம் குறைவாக உள்ளன. தயவுசெய்து மற்ற {0} வினாடிகள்
     காத்திருக்கவும்.
-  wwcConfigCacheEnabled: மொழிபெயர்ப்பாளர் கேச் செயல்படுத்தப்பட்டு, {0} வரம்புக்கு அமைக்கப்பட்டது.
+  wwcConfigCacheEnabled: மொழிபெயர்ப்பாளர் கேச் செயல்படுத்தப்பட்டு, {0} வரம்புக்கு
+    அமைக்கப்பட்டது.
   wwctGUIExistingTranslationButton: தற்போதைய மொழிபெயர்ப்புக் கூட்டத்தை மேலெழுத
   wwcUserDataReloaded: அனைத்து சேமிக்கப்பட்ட பயனர் தரவு ஏற்றப்பட்டது.
   wwcConfigGUISendTranslationChatButton: உள்நுழைவில் செயலில் மொழிபெயர்ப்பாளருக்கு
@@ -281,8 +282,8 @@ Messages:
   wwcteOffSender: நிறுவனம் மொழிபெயர்ப்பு முடக்கப்பட்டது.
   wwctGUIEntityButton: மாற்று நிறுவனம் மொழிபெயர்ப்பு
   wwctrlRateLimitBadInt: உங்கள் வீத வரம்பு செல்லுபடியாகும் முழு எண் அல்ல.
-  wwcTranslatorErrorConsole: பயனர் {0} அவர்களின் மொழிபெயர்ப்பை முயற்சிக்கும் போது ஒரு
-    சிக்கல் ஏற்பட்டது. மேலும் விவரங்களுக்கு errorLog.txt சரிபார்க்கவும்.
+  wwcTranslatorErrorConsole: பயனர் {0} அவர்களின் மொழிபெயர்ப்பை முயற்சிக்கும் போது
+    ஒரு சிக்கல் ஏற்பட்டது. மேலும் விவரங்களுக்கு errorLog.txt சரிபார்க்கவும்.
   wwctGUIChatButton: அரட்டை மொழிபெயர்ப்பு
   wwcrBegin: WorldWideSat மீண்டும் ஏற்றுகிறது...
   wwctTranslationStoppedOtherPlayer: '{0} க்கு மொழிபெயர்ப்பு அமர்வு நிறுத்தப்பட்டுள்ளது.'
@@ -368,9 +369,9 @@ Messages:
     0 என தட்டச்சு செய்க.
   wwcConfigGUIToggleSQLSSLButton: SQL SSL ஐ மாற்று
   wwcConfigConversationSQLUsernameSuccess: வெற்றிகரமாக SQL பயனர்பெயர் மாற்றப்பட்டது.
-  wwcConfigConversationSQLUsernameInput: தற்போதைய பயனர்பெயர் {0} ஆகும். ஒரு புதிய பயனர்பெயரை
-    அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும், அல்லது திரும்பி செல்ல 0 தட்டச்சு
-    செய்யவும்.
+  wwcConfigConversationSQLUsernameInput: தற்போதைய பயனர்பெயர் {0} ஆகும். ஒரு புதிய
+    பயனர்பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும், அல்லது திரும்பி செல்ல
+    0 தட்டச்சு செய்யவும்.
   wwcConfigConversationSQLPortSuccess: SQL துறைமுகத்தை வெற்றிகரமாக மாற்றியது.
   wwcConfigGUISQLUsernameButton: SQL பயனர்பெயரை மாற்றவும்
   wwcConfigConversationSQLOptionalArgsCleared: விருப்ப வாதங்கள் வெற்றிகரமாக அழிக்கப்படும்.
@@ -426,8 +427,8 @@ Messages:
   wwcConfigConversationMongoHostnameSuccess: MongoDB புரவலன் பெயரை வெற்றிகரமாக மாற்றியது.
   wwcConfigGUIMongoMenuButton: MongoDB அமைப்புகளை மாற்றவும்
   wwcConfigGUIToggleMongoButton: மாற்று மாங்கோடிபி
-  wwcConfigConversationMongoDatabaseNameInput: தற்போதைய தரவுத்தள பெயர் {0} ஆகும். புதிய
-    தரவுத்தளப் பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும் அல்லது திரும்பி
+  wwcConfigConversationMongoDatabaseNameInput: தற்போதைய தரவுத்தள பெயர் {0} ஆகும்.
+    புதிய தரவுத்தளப் பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்யவும் அல்லது திரும்பி
     செல்ல 0 தட்டச்சு செய்யவும்.
   wwcConfigConversationMongoOptionalArgsInput: 'தற்போதைய விருப்ப MongoDB வாதங்கள்:
     {0}. ஒரு கமா (விசை = மதிப்பு, key2=value2) பிரிக்கப்பட்ட வாதங்கள் தட்டச்சு, அல்லது
@@ -462,7 +463,7 @@ Messages:
     பிழைகள்.
   wwcConfigErrorsToIgnoreInvalid: தவறான மொழிபெயர்ப்பாளர் பிழைகள் config.yml அமைக்க
     புறக்கணிக்க. இயல்புநிலைக்கு பதிவு செய்தல்...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: சொற்றொடர்களை புறக்கணிக்க மொழிபெயர்ப்பாளர்
     பிழைகளை வெற்றிகரமாக மாற்றினார்.
   wwcConfigGUIIgnoreErrorsButton: புறக்கணிப்பதற்கு பிழைகளை மாற்றுக
@@ -473,7 +474,7 @@ Messages:
     சொருகி எந்த மொழிபெயர்ப்பாளர் பிழைகள் சரிபார்க்க முடியாது ஏற்படுத்தும்.'
   wwcConfigConversationIgnoreErrorsCleared: மொழிபெயர்ப்பாளர் பிழைகள் வெற்றிகரமாக
     அழிக்கப்படும் சொற்றொடர்களை புறக்கணிக்க.
-
+  
   wwcsActiveTransPrevRate: 'செயல்மிகு மொழிபெயர்ப்பாளர் முந்தைய விகித வரம்பு நேரம்:
     {0}'
   wwcsActiveTransSaved: 'செயலில் மொழிபெயர்ப்பாளர் வட்டுக்கு சேமிக்கப்பட்டது: {0}'
@@ -491,4 +492,6 @@ Messages:
     {0}'
   wwcsActiveTransItem: 'செயல்மிகு மொழிபெயர்ப்பாளர் பொருள்: {0}'
   wwcsActiveTransEntity: 'செயல்மிகு மொழிபெயர்ப்பாளர் மொழிபெயர்ப்பாளர் நிறுவனம்: {0}'
+  wwcSupportedServer: '{0} க்கான WorldWideSat துவக்குதல்...'
+  wwcSupportedVersion: பதிப்பு அம்சங்களை செயல்படுத்துதல் {0}...
 

@@ -1,6 +1,7 @@
 Messages:
   wwcgAutoTranslateStart: اوس د نړېوالې چیٹ ژباړه {0} ته.
-  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ګلوبل چیٹ د {0} لپاره ژباړل کیږي.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ګلوبل چیٹ د {0} لپاره ژباړل
+    کیږي.
   wwcConfigGUIAmazonTranslateAccessKeyButton: د ایمیزون لاسرسی کلیدي بدل کړئ
   wwcrFail: WorldWiDeChat بیا پورته کولو کې پاتې راغلی.
   wwcConfigGUIUpdateCheckerButton: د اوسمهالونو ځنډ لپاره چیک
@@ -51,8 +52,8 @@ Messages:
   wwcConfigGUIQuitButton: بدلونونه وتل & ساتل
   wwctPlayerNotFound: . لوبغاړي ونه موندل شو
   wwcConfigGUIAmazonTranslateRegionButton: د ایمیزون سیمه بدل کړئ
-  wwcConfigConversationLangInput: 'د اوسني فلګن ژبه ده {0}. مهرباني وکړئ د اعتبار وړ
-    ژبې کوډ داخل کړئ، یا د فسخه کولو لپاره 0 ډول کړئ. د اعتبار وړ ژبې کوډونه: {0}'
+  wwcConfigConversationLangInput: 'د اوسني فلګن ژبه ده {0}. مهرباني وکړئ د اعتبار
+    وړ ژبې کوډ داخل کړئ، یا د فسخه کولو لپاره 0 ډول کړئ. د اعتبار وړ ژبې کوډونه: {0}'
   wwcConfigConversationLangInvalid: ناسم ژبه کوډ!
   wwcConfigGUIWatsonAPIKeyButton: د واټسن API کیلي بدل کړئ
   wwcEnabled: فعال شوی WorldWieChat نسخه {0}.
@@ -144,8 +145,8 @@ Messages:
   wwcsLastTranslationTime: 'وروستی (بریالۍ) د ژباړې وخت: {0}'
   wwctbNotATranslator: تاسو فعال ژباړن نه یاست! ډاډ ترلاسه کړئ چې تاسو دا د /wwct
     سره ترتیب کړی دی.
-  wwcConfigConversationAmazonTranslateAccessKeyInput: د لاسرسي اوسنۍ کیلۍ {0} دی. مهرباني
-    وکړئ د ایمیزون لپاره د لاسرسي کیلي ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: د لاسرسي اوسنۍ کیلۍ {0} دی.
+    مهرباني وکړئ د ایمیزون لپاره د لاسرسي کیلي ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
   wwcConfigConversationAmazonTranslateAccessKeySuccess: د ایمیزون لاسرسی کیلي په بریالیتوب
     سره.
   wwcConfigBadUpdateDelay: ناسم تازه کونکي ځنډ په config.yml کې ټاکل شوی. 86400 ثانیو
@@ -272,8 +273,8 @@ Messages:
     مګر تاسو له {0} څخه تر {1} پورې د ژباړې فعاله ناسته لرئ.
   wwctCannotTranslateConsole: تاسو د کنسول لپاره د ژباړې ناستې نه شي پیل کولی!
   wwctLangToLangStart: . {0} څخه تر {1} پورې د ژباړې نوې ناسته پیلول
-  wwcOnJoinTranslationNotificationSourceLang: تاسو له {0} څخه تر {1} پورې د ژباړې فعاله
-    ناسته لرئ.
+  wwcOnJoinTranslationNotificationSourceLang: تاسو له {0} څخه تر {1} پورې د ژباړې
+    فعاله ناسته لرئ.
   wwctAutoTranslateStartOtherPlayer: . {0} ته د ژباړې نوې ناستې پیلول
   wwctTranslationStopped: ستاسو د ژباړې ناسته ودرول شوې ده.
   wwctLangToLangStartOtherPlayer: د ژباړې نوې ناستې پیلول {0} له {1} څخه {2} ته.
@@ -377,8 +378,8 @@ Messages:
     د بدلونونو لپاره بیا ځای پر ځای کړئ ترڅو اغیزمن شي.
   wwcConfigConversationLibreTranslateApiKeySuccess: لیبر API کیلي په بریالیتوب سره
     ټاکل شوی.
-  wwcConfigConversationLibreURLInput: اوسنی URL دی {0}. مهرباني وکړئ د لیبر لپاره یو
-    URL داخل کړئ، یا د بېرته تګ لپاره 0 ولیکئ.
+  wwcConfigConversationLibreURLInput: اوسنی URL دی {0}. مهرباني وکړئ د لیبر لپاره
+    یو URL داخل کړئ، یا د بېرته تګ لپاره 0 ولیکئ.
   libreHttpUnknown: 'ناپېژندلې http تېروتنه: {0}'
   wwcConfigGUILibreTranslateURLButton: ليبر ژباړل URL بدلول
   wwcConfigConnectionFail: .په نښلولو کې پاتې راغی {0}
@@ -436,7 +437,7 @@ Messages:
     غورځول.
   wwcConfigErrorsToIgnoreInvalid: د ناسم ژباړونکي تېروتنې چې په config.yml کې د سیټ
     څخه سترګې پټې شي.... ړنګونه ثبتول
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: په بریالیتوب سره د ژباړونکي غلطی بدل کړ
     ترڅو د جملې څخه سترګې پټې کړي.
   wwcConfigGUIIgnoreErrorsButton: تېروتنې بدلول چې له پامه غورځول شي
@@ -446,7 +447,7 @@ Messages:
     برسیره پردې، «*» ټایپ کول به د فلپین سبب شي چې د ژباړونکي غلطی ونه ګوري.'
   wwcConfigConversationIgnoreErrorsCleared: د ژباړونکي غلطی چې په بریالیتوب سره پاک
     شوي عبارتونه سترګې پټې کړي.
-
+  
   wwcsActiveTransPrevRate: 'فعاله ژباړونکي د پخواني نرخ حد وخت: {0}'
   wwcsActiveTransSaved: '{0}: فعاله ژباړونکی په ډیسک کې خوندي شو'
   wwcsActiveTransIncoming: 'فعاله ژباړونکی راتلونکی چیٹ ژباړل: {0}'
@@ -460,4 +461,6 @@ Messages:
   wwcsActiveTransOutgoing: 'فعالې ژباړونکي د وتلو چیٹ ژباړل: {0}'
   wwcsActiveTransItem: 'د ژباړونکي ژباړونکي توکي: {0}'
   wwcsActiveTransEntity: 'فعالې ژباړونکي ارګان: {0}'
+  wwcSupportedServer: د {0} لپاره د نړۍ په نړۍ کې چیټ پیل کول...
+  wwcSupportedVersion: د نسخې لپاره ځانګړتیاوې فعالول {0}...
 

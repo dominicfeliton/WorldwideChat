@@ -39,7 +39,8 @@ Messages:
   wwcInvalidLang: زبان نامعتبر در config.yml شما. قصور به
   wwcConfigConversationAmazonTranslateRegionSuccess: منطقه آمازون با موفقیت تنظیم
     شد.
-  wwcConfigRateLimitEnabled: محدودیت نرخ جهانی فعال شده و روی {0} ثانیه تنظیم شده است.
+  wwcConfigRateLimitEnabled: محدودیت نرخ جهانی فعال شده و روی {0} ثانیه تنظیم شده
+    است.
   wwcBadPerms: شما مجوزهای لازم برای اجرای این فرمان را ندارید!
   wwcConfigGUILangButton: تغییر زبان وصله
   wwctGUISignButton: ضامن ترجمه امضا
@@ -106,8 +107,8 @@ Messages:
   wwcConfigConnectionSuccess: با موفقیت به {0} وصل شد!
   wwcConfigGUIGoogleTranslateButton: گوگل ترجمه
   wwcsIsActiveTranslator: 'مترجم فعال است: {0}'
-  wwcConfigConversationPrefixInput: پیشوند فعلی {0} است. لطفا یک پیشوند جدید تایپ کنید،
-    یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationPrefixInput: پیشوند فعلی {0} است. لطفا یک پیشوند جدید تایپ
+    کنید، یا 0 را برای بازگشت تایپ کنید.
   wwcConfigGUIPreviousPageButton: صفحه قبلی
   wwcConfigGUITranslatorCacheButton: تغییر محدودیت نهانگاه ترجمه
   wwcConfigConversationbStatsSuccess: bStats با موفقیت ضبدر.
@@ -121,14 +122,14 @@ Messages:
     تنظیم شده است.
   wwcUnsupportedVersion: 'شما در حال اجرای یک نسخه پشتیبانی نشده از Bukkit، Spugote،
     یا Paper هستید. نسخه های پشتیبانی شده:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: چت سراسری از {0} به {1} ترجمه می
-    شود.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: چت سراسری از {0} به {1} ترجمه
+    می شود.
   wwcConfigGUITranslatorSettings: پیکربندی مترجم
-  wwcConfigConversationGoogleTranslateAPIKeyInput: کلید فعلی API است {0}. لطفا یک کلید
-    API برای ترجمه گوگل وارد کنید، یا برای بازگشت به عقب، 0 را تایپ کنید.
-  wwcConfigConversationRateLimitInput: حد فعلی نرخ جهانی برای هر ترجمه، {0} ثانیه است.
-    هر چیزی بزرگتر از 0 را تایپ کنید تا مقدار جدید تنظیم شود، یا 0 را برای غیر فعال
-    کردن حد تایپ کنید. هر چیزی کمتر از 0 را تایپ کنید تا به عقب برگردید.
+  wwcConfigConversationGoogleTranslateAPIKeyInput: کلید فعلی API است {0}. لطفا یک
+    کلید API برای ترجمه گوگل وارد کنید، یا برای بازگشت به عقب، 0 را تایپ کنید.
+  wwcConfigConversationRateLimitInput: حد فعلی نرخ جهانی برای هر ترجمه، {0} ثانیه
+    است. هر چیزی بزرگتر از 0 را تایپ کنید تا مقدار جدید تنظیم شود، یا 0 را برای غیر
+    فعال کردن حد تایپ کنید. هر چیزی کمتر از 0 را تایپ کنید تا به عقب برگردید.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: گوگل ترجمه کلید API مجموعه موفقیت.
   wwcConfigGUIAmazonTranslateSecretKeyButton: تغییر کلید مخفی آمازون
   wwcVersion: ورژن WorldwideChat
@@ -165,8 +166,8 @@ Messages:
     تایپ کنید. هر چیزی کمتر از 0 را تایپ کنید تا به عقب برگردید.
   wwctGUITargetPlayerNull: بازیکن هدف از سرور قطع شده است.
   wwcConfigConversationSyncUserDataDelayInput: تاخیر فعلی در هر همگام سازی داده های
-    کاربر {0} ثانیه است. هر چیزی بزرگتر از 10 را تایپ کنید تا یک مقدار جدید یا هر چیزی
-    کمتر از 10 را تنظیم کنید تا به عقب برگردید.
+    کاربر {0} ثانیه است. هر چیزی بزرگتر از 10 را تایپ کنید تا یک مقدار جدید یا هر
+    چیزی کمتر از 10 را تنظیم کنید تا به عقب برگردید.
   wwcConfigGUISyncUserDataButton: تغییر تاخیر همگام سازی داده های کاربر
   wwcConfigSyncDelayEnabled: تاخیر در همگام سازی داده های کاربر روی {0} ثانیه تنظیم
     می شود.
@@ -247,13 +248,14 @@ Messages:
   wwcteOnTarget: ترجمه موجودیت برای {0} فعال شد.
   wwcEntityTranslateDone: 'نام نهاد ترجمه شده: {0}'
   wwcEntityTranslateNoName: موجودیت یک نام سفارشی ندارد.
-  wwcConfigConversationErrorLimitInput: حد خطای فعلی برای هر مترجم عبارت است {0}. هر
-    چیزی بزرگتر از 0 را تایپ کنید تا یک مقدار جدید تعیین شود، یا چیزی را کمتر یا مساوی
-    با 0 برای بازگشت تایپ کنید.
+  wwcConfigConversationErrorLimitInput: حد خطای فعلی برای هر مترجم عبارت است {0}.
+    هر چیزی بزرگتر از 0 را تایپ کنید تا یک مقدار جدید تعیین شود، یا چیزی را کمتر یا
+    مساوی با 0 برای بازگشت تایپ کنید.
   wwcConfigGUIGlobalRateLimitButton: تغییر حد نرخ جهانی
   wwcteOnSender: ترجمه موجودیت فعال شد. برای ترجمه نام، بر روی یک نهاد کلیک راست کنید!
   wwcConfigGUIResponseLimitButton: تغییر زمان پاسخ مترجم
-  wwcConfigMessageCharLimitEnabled: حد کاراکتر در هر پیام روی نویسه {0} تنظیم شده است.
+  wwcConfigMessageCharLimitEnabled: حد کاراکتر در هر پیام روی نویسه {0} تنظیم شده
+    است.
   wwcteOffTarget: ترجمه موجودیت برای {0} غیرفعال شد.
   wwcCharLimit: پیام شما بیش از حد طولانی است! لطفا اطمینان حاصل کنید که پیام شما
     کمتر از {0} نویسه باشد.
@@ -272,7 +274,8 @@ Messages:
     است، اما شما یک جلسه ترجمه فعال از {0} تا {1} دارید.
   wwctCannotTranslateConsole: شما نمی توانید جلسه ترجمه را برای کنسول شروع کنید!
   wwctLangToLangStart: شروع یک جلسه ترجمه جدید از {0} تا {1}.
-  wwcOnJoinTranslationNotificationSourceLang: شما یک جلسه ترجمه فعال از {0} تا {1} دارید.
+  wwcOnJoinTranslationNotificationSourceLang: شما یک جلسه ترجمه فعال از {0} تا {1}
+    دارید.
   wwctAutoTranslateStartOtherPlayer: شروع یک نشست ترجمه جدید برای {0} به {1}.
   wwctTranslationStopped: جلسه ترجمه شما متوقف شده است.
   wwctLangToLangStartOtherPlayer: شروع یک نشست ترجمه جدید برای {0} از {1} به {2}.
@@ -376,8 +379,8 @@ Messages:
     برای تغییرات به اثر.
   wwcConfigConversationLibreTranslateApiKeySuccess: کلید API رایگان با موفقیت تنظیم
     شده است.
-  wwcConfigConversationLibreURLInput: آدرس فعلی {0} است لطفا یک URL را برای Libre وارد
-    کنید، یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationLibreURLInput: آدرس فعلی {0} است لطفا یک URL را برای Libre
+    وارد کنید، یا 0 را برای بازگشت تایپ کنید.
   libreHttpUnknown: 'خطای http ناشناخته: {0}'
   wwcConfigGUILibreTranslateURLButton: تغییر رایگان ترجمه URL
   wwcConfigConnectionFail: اتصال به {0} شکست خورد.
@@ -435,7 +438,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: موفقیت ثبت نام اشتباهات ترجمه به چشم پوشی.
   wwcConfigErrorsToIgnoreInvalid: خطاهای ترجمه نامعتبر به چشم پوشی در config.yml تنظیم
     شده است. ثبت پیش فرض...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: موفقیت تغییر اشتباهات ترجمه به چشم پوشی
     از عبارات.
   wwcConfigGUIIgnoreErrorsButton: تغییر خطاها برای نادیده گرفتن
@@ -446,7 +449,7 @@ Messages:
     مترجم را بررسی نکند.'
   wwcConfigConversationIgnoreErrorsCleared: اشتباهات مترجم به چشم پوشی از عبارات با
     موفقیت پاک.
-
+  
   wwcsActiveTransPrevRate: 'مترجم فعال قبلی نرخ محدود زمان: {0}'
   wwcsActiveTransSaved: 'مترجم فعال در دیسک ذخیره شد: {0}'
   wwcsActiveTransIncoming: 'مترجم فعال در حال ترجمه چت ورودی: {0}'
@@ -460,4 +463,6 @@ Messages:
   wwcsActiveTransOutgoing: 'مترجم فعال در حال ترجمه چت خروجی: {0}'
   wwcsActiveTransItem: 'مترجم فعال ترجمه مورد: {0}'
   wwcsActiveTransEntity: 'مترجم فعال ترجمه نهاد: {0}'
+  wwcSupportedServer: مقداردهی اولیه چت جهانی برای {0}...
+  wwcSupportedVersion: فعال کردن ویژگی های نسخه {0}...
 

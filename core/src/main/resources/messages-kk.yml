@@ -77,8 +77,8 @@ Messages:
     не. Аударма:'
   wwctsOnTarget: Белгілеу аудармасы {0} үшін қосылған.
   wwcConfigCacheDisabled: Аудармашы кэш мүгедек
-  wwcConfigConversationWatsonURLInput: Ағымдағы URL мекенжайы {0} болып табылады, Watson
-    үшін қызмет URL мекенжайын енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigConversationWatsonURLInput: Ағымдағы URL мекенжайы {0} болып табылады,
+    Watson үшін қызмет URL мекенжайын енгізіңіз немесе кері оралу үшін 0 теріңіз.
   wwcBookDone: Кітап сәтті аударылған.
   wwctsOnSender: Сымдау аудармасы қосылған. Оны аудару үшін белгіні тінтуірдің оң
     жақ түймешігімен нұқыңыз!
@@ -119,8 +119,8 @@ Messages:
   wwcConfigConversationUpdateCheckerSuccess: Жаңарту тексеру кешігу сәтті орнатыңыз.
   wwcUnsupportedVersion: 'Сіз Bukkit, Spigot немесе Қағаз қолдау көрсетілмейтін нұсқасын
     іске қосасыз. Қолдау нұсқалары:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: Ғаламдық чат {0} дегенмен {1} дейін
-    аударылады.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Ғаламдық чат {0} дегенмен {1}
+    дейін аударылады.
   wwcConfigGUITranslatorSettings: аудармашы Конфигурация
   wwcConfigConversationGoogleTranslateAPIKeyInput: Ағымдағы API кілті {0} болып табылады,
     Google Translate үшін API кілтін енгізіңіз немесе кері оралу үшін 0 теріңіз.
@@ -245,8 +245,8 @@ Messages:
   wwcEntityTranslateDone: 'Аударылған субъект атауы: {0}'
   wwcEntityTranslateNoName: Субъектінің теңшелетін атауы жоқ.
   wwcConfigConversationErrorLimitInput: Әрбір аудармашы үшін ағымдағы қате шектеуі
-    {0} болып табылады. жаңа мәнді орнату үшін 0-ден артық нәрсені теріңіз немесе кері
-    қайту үшін 0-ден кем немесе тең нәрсені теріңіз.
+    {0} болып табылады. жаңа мәнді орнату үшін 0-ден артық нәрсені теріңіз немесе
+    кері қайту үшін 0-ден кем немесе тең нәрсені теріңіз.
   wwcConfigGUIGlobalRateLimitButton: Әлемдік мөлшерлеме лимитін
   wwcteOnSender: Субъект аудармасы қосылған. Өз атын аудару үшін ұйымды тінтуірдің
     оң жақ түймешігімен нұқыңыз!
@@ -302,8 +302,8 @@ Messages:
   wwctGUIExistingTranslationInput: 'Кіріс тілі: {0}'
   wwctGUIExistingChatIncomingEnabled: 'Кіріс чат аудармасы қосылған: {0}'
   wwctGUIExistingTranslationOutput: 'Шығу тілі: {0}'
-  wwcTranslatorAttempt: Config.yml ішіндегі аудармашыға қосылуға әрекет... ( {0}/ {1}
-    әрекеті)
+  wwcTranslatorAttempt: Config.yml ішіндегі аудармашыға қосылуға әрекет... ( {0}/
+    {1} әрекеті)
   wwcTimeoutExceptionConsole: Player % Мен олардың ең соңғы сұрау уақыты болды. Бұл
     қате өлімге ұшырамайды, бірақ WorldwideChat оны жалғастыра берсе, қайта жүктеу
     керек.
@@ -358,8 +358,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: SQL дерекқорын өзгерту
   wwcConfigConversationSQLDatabaseNameSuccess: SQL дерекқорының атауын сәтті өзгертті.
   wwcConfigConversationFatalAsyncAbort: Барлық async тапсырмаларын орындау үшін ағымдағы
-    уақыт - {0} секунд. Жаңа таймаут орнату үшін 7-ден жоғары нәрсені немесе кері оралу
-    үшін төмендегі нәрсені теріңіз.
+    уақыт - {0} секунд. Жаңа таймаут орнату үшін 7-ден жоғары нәрсені немесе кері
+    оралу үшін төмендегі нәрсені теріңіз.
   wwcConfigConversationFatalAsyncSuccess: Async тапсырма уақыты сәтті орнатылған.
   wwcConfigGUIFatalAsyncAbortButton: Async тапсырмасының уақытын өзгерту
   wwcTimeoutException: Сіздің командаңыз орайластырылған. Қайтадан көріңіз.
@@ -376,8 +376,8 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: Табысты Toggled Libre Аударма.
     Өзгерістердің күшіне енуі үшін қайта жүктеңіз.
   wwcConfigConversationLibreTranslateApiKeySuccess: Табысты орнату Тегін API кілті.
-  wwcConfigConversationLibreURLInput: Ағымдағы URL {0} болып табылады. Libre үшін URL
-    енгізіңіз сұраймыз, немесе кері қайту үшін 0 теріңіз.
+  wwcConfigConversationLibreURLInput: Ағымдағы URL {0} болып табылады. Libre үшін
+    URL енгізіңіз сұраймыз, немесе кері қайту үшін 0 теріңіз.
   libreHttpUnknown: 'Белгісіз http қатесі: {0}'
   wwcConfigGUILibreTranslateURLButton: Өзгерту Тегін Аудару URL
   wwcConfigConnectionFail: '{0} қосыла алмады.'
@@ -397,12 +397,12 @@ Messages:
   wwcConfigConversationMongoHostnameSuccess: MongoDB хост атауын сәтті өзгертті.
   wwcConfigGUIMongoMenuButton: MongoDB параметрлерін өзгерту
   wwcConfigGUIToggleMongoButton: MongoDB ауыстырып қосу
-  wwcConfigConversationMongoDatabaseNameInput: Ағымдағы дерекқор атауы {0}. 0-ден басқа
-    жаңа дерекқор атауын орнату үшін кез келген нәрсені теріңіз немесе кері қайту
-    үшін 0 деп теріңіз.
+  wwcConfigConversationMongoDatabaseNameInput: Ағымдағы дерекқор атауы {0}. 0-ден
+    басқа жаңа дерекқор атауын орнату үшін кез келген нәрсені теріңіз немесе кері
+    қайту үшін 0 деп теріңіз.
   wwcConfigConversationMongoOptionalArgsInput: 'Ағымдағы қосымша MongoDB аргументтері:
-    {0}. үтірмен бөлінген аргументтерді теріңіз (кілт = мән, кілт2 = мән2) немесе ағымдағы
-    аргаларды сүрту үшін анық теріңіз немесе кері қайту үшін 0 теріңіз.'
+    {0}. үтірмен бөлінген аргументтерді теріңіз (кілт = мән, кілт2 = мән2) немесе
+    ағымдағы аргаларды сүрту үшін анық теріңіз немесе кері қайту үшін 0 теріңіз.'
   wwcConfigGUIMongoDatabaseNameButton: MongoDB дерекқорын
   wwcConfigConversationMongoUsernameInput: Ағымдағы пайдаланушы аты {0}. 0-ден басқа
     жаңа пайдаланушы атын орнату үшін кез келген нәрсені теріңіз немесе кері қайту
@@ -432,7 +432,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Елемеу үшін сәтті тіркелген аудармашы қателері.
   wwcConfigErrorsToIgnoreInvalid: Config.yml орнатылған елемеу үшін жарамсыз аудармашы
     қателер. Дефолттарды тіркеу...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Фразаларды елемеу үшін аудармашы қателерін
     сәтті өзгертті.
   wwcConfigGUIIgnoreErrorsButton: Қателерді елемеу үшін өзгертіңіз
@@ -443,7 +443,7 @@ Messages:
     әкеледі.'
   wwcConfigConversationIgnoreErrorsCleared: Аудармашы қателер сәтті тазартылды фразаларды
     елемеуге.
-
+  
   wwcsActiveTransPrevRate: 'Белсенді аудармашының алдыңғы жылдамдығының шекті уақыты:
     {0}'
   wwcsActiveTransSaved: 'Белсенді аудармашы дискіге сақталған: {0}'
@@ -458,4 +458,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Шығыс чатты аударатын белсенді аудармашы: {0}'
   wwcsActiveTransItem: 'Белсенді аудармашының аудармасы: {0}'
   wwcsActiveTransEntity: 'Белсенді аудармашы аударма субъектісі: {0}'
+  wwcSupportedServer: WorldwideChat-ты {0} үшін инициализациялау...
+  wwcSupportedVersion: '{0} нұсқасының мүмкіндіктерін қосу...'
 

@@ -67,8 +67,8 @@ Messages:
   wwctsOffTarget: Potpišite prevod onemogućen za {0}.
   wwcUpdaterConnectionFailed: Nije moguće proveriti najnovije ispravke na Github.
   watsonNotFoundExceptionNotification: Nije moguće da prevedete svoj ulaz dalje.
-  wwcConfigConversationWatsonAPIKeyInput: Trenutni API taster je {0}. Unesite API ključ
-    za Vatson ili upišite 0 da biste se vratili.
+  wwcConfigConversationWatsonAPIKeyInput: Trenutni API taster je {0}. Unesite API
+    ključ za Vatson ili upišite 0 da biste se vratili.
   wwctGUIStopButton: Stop prevođenje
   wwcgTranslationStopped: Globalni prevod za ćaskanje je zaustavljen.
   wwcUpdaterFutureDate: Ova instanca WorldwideChat ima veću verziju od najnovije javne.
@@ -78,8 +78,8 @@ Messages:
     Prevod:'
   wwctsOnTarget: Potpisni prevod omogućen za {0}.
   wwcConfigCacheDisabled: Prevodilac keš onemogućen.
-  wwcConfigConversationWatsonURLInput: Trenutni URL je {0}. Unesite URL usluge za Vatson
-    ili upišite 0 da biste se vratili.
+  wwcConfigConversationWatsonURLInput: Trenutni URL je {0}. Unesite URL usluge za
+    Vatson ili upišite 0 da biste se vratili.
   wwcBookDone: Knjiga uspešno prevedena.
   wwctsOnSender: Potpisni prevod omogućen. Kliknite desnim tasterom miša na znak da
     ga prevede!
@@ -177,8 +177,8 @@ Messages:
     postavljeno u config.iml. Defaulting do 7200 sekundi...
   wwcConfigCacheInvalid: Prevodilac keš veličina nevažeći. Defaulting do 10...
   wwcInventoryErrorPlayer: Greška otkrivena sa GUI. Dnevnik je poslat na konzolu.
-  wwcInventoryError: Greška otkrivena sa GUI korisnika {0}. Molimo prijavite ovaj problem
-    programeru.
+  wwcInventoryError: Greška otkrivena sa GUI korisnika {0}. Molimo prijavite ovaj
+    problem programeru.
   wwctiOffTarget: Prevod stavke onemogućen za {0}.
   wwctiOffSender: Stavka prevod onemogućen.
   wwcItemTranslateTitleStock: Nije moguće prevesti podrazumevane imena stavki.
@@ -260,8 +260,8 @@ Messages:
   wwcCharLimit: Vaša poruka je preduga! Molimo vas da budete sigurni da je vaša poruka
     manja od {0} znakova u dužini.
   wwcConfigConversationCharacterLimitInput: Trenutni ograničenje karaktera po poruci
-    je {0} znakova. Ukucajte bilo što veće od 0 da biste postavili novu vrednost, ili
-    upišite nešto manje od ili jednako 0 da biste se vratili.
+    je {0} znakova. Ukucajte bilo što veće od 0 da biste postavili novu vrednost,
+    ili upišite nešto manje od ili jednako 0 da biste se vratili.
   wwcteOffSender: Entitetski prevod onemogućen.
   wwctGUIEntityButton: Prebacivanje entitetskog prevoda
   wwctrlRateLimitBadInt: Vaša stopa ograničenje nije važeći ceo broj.
@@ -274,11 +274,12 @@ Messages:
     ali imate aktivnu sesiju prevođenja od {0} do {1}.
   wwctCannotTranslateConsole: Ne možete da započnete sesiju prevoda za konzolu!
   wwctLangToLangStart: Pokretanje nove sesije prevoda od {0} do {1}.
-  wwcOnJoinTranslationNotificationSourceLang: Imate aktivnu sesiju prevoda od {0} do
-    {0}.
+  wwcOnJoinTranslationNotificationSourceLang: Imate aktivnu sesiju prevoda od {0}
+    do {0}.
   wwctAutoTranslateStartOtherPlayer: Pokretanje nove sesije prevoda za {0} do {1}.
   wwctTranslationStopped: Vaša sesija prevoda je zaustavljena.
-  wwctLangToLangStartOtherPlayer: Pokretanje nove sesije prevoda za {0} od {1} do {2}.
+  wwctLangToLangStartOtherPlayer: Pokretanje nove sesije prevoda za {0} od {1} do
+    {2}.
   wwctAutoTranslateStart: Pokretanje nove sesije prevoda na {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Imate aktivnu sesiju prevoda na {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globalno ćaskanje se
@@ -329,12 +330,12 @@ Messages:
   wwcConfigGUISQLPortButton: Promenite SKL Port
   wwcConfigGUISQLOptionalArgsButton: Promenite SKL Opcioni argumenti
   wwcConfigConversationToggleSQLSSLSuccess: SSL za SKL toggled uspešno.
-  wwcConfigConversationSQLPortInput: Trenutni port je {0}. Upišite bilo šta drugo osim
-    0 da biste postavili novi port, ili tip 0 da se vratite nazad.
+  wwcConfigConversationSQLPortInput: Trenutni port je {0}. Upišite bilo šta drugo
+    osim 0 da biste postavili novi port, ili tip 0 da se vratite nazad.
   wwcConfigGUISQLPasswordButton: Promenite SKL lozinku
   wwcConfigConversationSQLHostnameSuccess: Uspešno je promenio naziv SKL hosta.
-  wwcConfigConversationSQLHostnameInput: Trenutno ime hosta je {0}. Ukucajte bilo šta
-    drugo osim 0 da biste postavili novo ime hosta ili tip 0 da biste se vratili.
+  wwcConfigConversationSQLHostnameInput: Trenutno ime hosta je {0}. Ukucajte bilo
+    šta drugo osim 0 da biste postavili novo ime hosta ili tip 0 da biste se vratili.
   wwcConfigGUISQLHostnameButton: Promenite SKL Hostname
   wwcConfigConversationSQLOptionalArgsSuccess: Uspešno promenio opcione SKL argumente.
   wwcConfigConversationSQLPasswordSuccess: Uspešno promenio SKL lozinku.
@@ -399,9 +400,9 @@ Messages:
   wwcConfigConversationMongoHostnameSuccess: Uspešno promenio ime domaćina MongoDB.
   wwcConfigGUIMongoMenuButton: Promenite MongoDB podešavanja
   wwcConfigGUIToggleMongoButton: Toggle MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Trenutno ime baze podataka je {0}. Ukucajte
-    bilo šta drugo osim 0 da biste postavili novo ime baze podataka ili upišite 0
-    da biste se vratili nazad.
+  wwcConfigConversationMongoDatabaseNameInput: Trenutno ime baze podataka je {0}.
+    Ukucajte bilo šta drugo osim 0 da biste postavili novo ime baze podataka ili upišite
+    0 da biste se vratili nazad.
   wwcConfigConversationMongoOptionalArgsInput: 'Trenutni opcioni MongoDB argumenti
     su: {0}. argumenti ukucajte odvojene zarezom (key=value, key2=value2), ili unesite
     jasno da obrišete trenutne argove, ili upišite 0 da biste se vratili nazad.'
@@ -434,18 +435,18 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Uspešno registrovani prevodilac greške ignorisati.
   wwcConfigErrorsToIgnoreInvalid: Nevažeći prevodilac greške ignorisati set in config.iml.
     Registrovanje podrazumevanih vrednosti...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Uspešno promenio greške prevodioca da
     ignoriše fraze.
   wwcConfigGUIIgnoreErrorsButton: Promenite greške da biste ignorisali
   wwcConfigConversationIgnoreErrorsInput: 'Trenutna lista fraza u prevodilačkim greškama
-    koje treba ignorisati je: {0}. Upišite argumente odvojene zarezom (key=value, key2=value2),
-    ili ukucajte jasno da obrišete trenutne argove, ili unesite 0 da biste se vratili
-    nazad. Pored toga, kucanje „*“ će dovesti do toga da dodatak ne proverava greške
-    prevodioca.'
+    koje treba ignorisati je: {0}. Upišite argumente odvojene zarezom (key=value,
+    key2=value2), ili ukucajte jasno da obrišete trenutne argove, ili unesite 0 da
+    biste se vratili nazad. Pored toga, kucanje „*“ će dovesti do toga da dodatak
+    ne proverava greške prevodioca.'
   wwcConfigConversationIgnoreErrorsCleared: Prevodilac greške ignorisati fraze uspešno
     izbrisani.
-
+  
   wwcsActiveTransPrevRate: 'Aktivni prevodilac Prethodno vreme ograničenja brzine:
     {0}'
   wwcsActiveTransSaved: 'Aktivni prevodilac sačuvan na disku: {0}'
@@ -460,4 +461,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktivni prevodilac Prevođenje Odlazni Chat: {0}'
   wwcsActiveTransItem: 'Aktivni prevodilac Prevođenje Predmet: {0}'
   wwcsActiveTransEntity: 'Aktivni prevodilac Prevođenje entiteta: {0}'
+  wwcSupportedServer: Inicijalizacija VorldVideChat za {0}...
+  wwcSupportedVersion: Omogućavanje funkcija za verziju {0}...
 

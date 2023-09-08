@@ -164,7 +164,8 @@ Messages:
     Par défaut, 86400 secondes...
   wwctrlRateLimitOffSender: Désactivé votre limite tarifaire.
   wwctrlRateLimitAlreadyOffTarget: La limite de débit de {0} est déjà désactivée.
-  wwctrlPlayerNotFound: Le joueur {0} n'est pas trouvé ou n'est pas un traducteur actif.
+  wwctrlPlayerNotFound: Le joueur {0} n'est pas trouvé ou n'est pas un traducteur
+    actif.
   wwctrlRateLimitSetSender: Définissez votre limite de taux à {0} secondes.
   wwctrlRateLimitOffTarget: Désactivez la limite de débit de {0}.
   wwctrlRateLimitSetTarget: Définissez la limite de débit de {0} à {1} secondes.
@@ -265,8 +266,8 @@ Messages:
   wwcEntityTranslateDone: 'Nom de l''entité traduite: {0}'
   wwcEntityTranslateNoName: L'entité n'a pas de nom personnalisé.
   wwcConfigConversationErrorLimitInput: La limite d'erreur actuelle pour chaque traducteur
-    est {0}. Tapez une valeur supérieure à 0 pour définir une nouvelle valeur, ou tapez
-    une valeur inférieure ou égale à 0 pour revenir en arrière.
+    est {0}. Tapez une valeur supérieure à 0 pour définir une nouvelle valeur, ou
+    tapez une valeur inférieure ou égale à 0 pour revenir en arrière.
   wwcConfigGUIGlobalRateLimitButton: Modifier la limite de taux globale
   wwcteOnSender: La traduction des entités est activée. Cliquez avec le bouton droit
     de la souris sur une entité pour traduire son nom!
@@ -288,10 +289,12 @@ Messages:
   wwcrBegin: Rechargement de WorldwideChat en cours...
   wwctTranslationStoppedOtherPlayer: La session de traduction de {0} a été arrêtée.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Le chat global est en
-    cours de traduction, mais vous avez une session de traduction active de {0} à {1}.
+    cours de traduction, mais vous avez une session de traduction active de {0} à
+    {1}.
   wwctCannotTranslateConsole: Vous ne pouvez pas démarrer une session de traduction
     pour la console!
-  wwctLangToLangStart: Démarrage d'une nouvelle session de traduction de {0} vers {1}.
+  wwctLangToLangStart: Démarrage d'une nouvelle session de traduction de {0} vers
+    {1}.
   wwcOnJoinTranslationNotificationSourceLang: Vous disposez d'une session de traduction
     active de {0} à {1}.
   wwctAutoTranslateStartOtherPlayer: Démarrage d'une nouvelle session de traduction
@@ -471,7 +474,7 @@ Messages:
     ignorer.
   wwcConfigErrorsToIgnoreInvalid: Erreurs de traduction non valides à ignorer définies
     dans config.yml. Enregistrement des valeurs par défaut...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Les erreurs de traduction ont été modifiées
     avec succès pour ignorer les phrases.
   wwcConfigGUIIgnoreErrorsButton: Modifier les erreurs pour les ignorer
@@ -482,7 +485,7 @@ Messages:
     plugin ne vérifiera aucune erreur de traduction.'
   wwcConfigConversationIgnoreErrorsCleared: Des erreurs de traduction ont été effacées
     avec succès pour ignorer des phrases.
-
+  
   wwcsActiveTransPrevRate: 'Durée limite de débit précédente d''Active Translator:
     {0}'
   wwcsActiveTransSaved: 'Traducteur actif enregistré sur le disque: {0}'
@@ -498,4 +501,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Traducteur actif traduisant le chat sortant: {0}'
   wwcsActiveTransItem: 'Active Translator traduit un élément: {0}'
   wwcsActiveTransEntity: 'Entité de traduction Active Translator: {0}'
+  wwcSupportedServer: Initialisation de WorldwideChat pour {0}...
+  wwcSupportedVersion: Fonctionnalités d'activation pour la version {0}...
 

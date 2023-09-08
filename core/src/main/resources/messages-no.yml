@@ -16,8 +16,8 @@ Messages:
   wwcsNotATranslator: Det er ingen poster ennå tilgjengelig for {0}.
   wwcConfigGUIbStatsButton: Veksle bStats
   wwctGUINewTranslationSource: Velg kildespråk
-  wwcConfigConnectionFailed: Kan ikke koble til {0}. Kontroller at legitimasjonen og
-    brannmuren er riktig konfigurert.
+  wwcConfigConnectionFailed: Kan ikke koble til {0}. Kontroller at legitimasjonen
+    og brannmuren er riktig konfigurert.
   wwcConfigEnabledbStats: Aktiverte bStats.
   wwctGUIMainMenuPlayer: Oversettelsesmeny på {0}
   wwctGUIBookButton: Toggle Book Oversettelse
@@ -33,8 +33,9 @@ Messages:
   wwcConfigConversationLangSuccess: Plugin språk endret vellykket.
   wwcsSuccessfulTranslations: 'Vellykkede oversettelser: {0}'
   wwcConfigConversationTranslationCacheInput: Gjeldende grense for oversettelse er
-    {0}-setninger. Skriv inn noe større enn 0 for å angi en ny verdi, eller skriv 0
-    for å deaktivere oversettelsesbufferen. Skriv inn noe mindre enn 0 for å gå tilbake.
+    {0}-setninger. Skriv inn noe større enn 0 for å angi en ny verdi, eller skriv
+    0 for å deaktivere oversettelsesbufferen. Skriv inn noe mindre enn 0 for å gå
+    tilbake.
   wwctbOffTarget: Bokoversettelse deaktivert for {0}.
   wwcConfigGUIGeneralSettings: Generell konfigurasjon
   wwcInvalidLang: Ugyldig språk i config.yml. Defaulting til en...
@@ -78,8 +79,8 @@ Messages:
     lang. Oversettelse:'
   wwctsOnTarget: Signeroversettelse aktivert for {0}.
   wwcConfigCacheDisabled: Translator-buffer deaktivert.
-  wwcConfigConversationWatsonURLInput: Gjeldende URL-adresse er {0}. Skriv inn en service-URL
-    for Watson, eller skriv 0 for å gå tilbake.
+  wwcConfigConversationWatsonURLInput: Gjeldende URL-adresse er {0}. Skriv inn en
+    service-URL for Watson, eller skriv 0 for å gå tilbake.
   wwcBookDone: Bok oversatt med hell.
   wwctsOnSender: Signer oversettelse aktivert. Høyreklikk på et skilt for å oversette
     det!
@@ -349,9 +350,9 @@ Messages:
   wwcConfigConversationSQLOptionalArgsInput: 'De gjeldende valgfrie SQL-argumentene
     er: {0}. Skriv argumenter atskilt med et komma (key=verdi, key2=value2), eller
     skriv inn klar for å tørke de gjeldende argene, eller skriv 0 for å gå tilbake.'
-  wwcConfigConversationSQLDatabaseNameInput: Det gjeldende databasenavnet er {0}. Skriv
-    inn noe annet enn 0 for å angi et nytt databasenavn, eller skriv inn 0 for å gå
-    tilbake.
+  wwcConfigConversationSQLDatabaseNameInput: Det gjeldende databasenavnet er {0}.
+    Skriv inn noe annet enn 0 for å angi et nytt databasenavn, eller skriv inn 0 for
+    å gå tilbake.
   wwcConfigGUISQLDatabaseNameButton: Endre SQL Database
   wwcConfigConversationSQLDatabaseNameSuccess: Endret SQL-databasenavnet ble endret.
   wwcConfigConversationFatalAsyncAbort: Gjeldende tidsavbrudd for å avbryte alle async-oppgaver
@@ -383,8 +384,8 @@ Messages:
   wwcConfigGUIMongoHostnameButton: Endre MongoDB-vertsnavn
   wwcConfigConversationMongoPasswordInput: Gjeldende passord er {0}. Skriv inn noe
     annet enn 0 for å angi et nytt passord, eller skriv inn 0 for å gå tilbake.
-  wwcConfigConversationMongoPortInput: Gjeldende port er {0}. Skriv inn noe annet enn
-    0 for å angi en ny port, eller skriv 0 for å gå tilbake.
+  wwcConfigConversationMongoPortInput: Gjeldende port er {0}. Skriv inn noe annet
+    enn 0 for å angi en ny port, eller skriv 0 for å gå tilbake.
   wwcConfigConversationToggleMongoSuccess: MongoDB vekslet vellykket. Last på nytt
     for at endringen skal tre i kraft.
   wwcConfigConversationMongoHostnameInput: Gjeldende vertsnavn er {0}. Skriv inn noe
@@ -398,8 +399,8 @@ Messages:
     er: {0}. Skriv inn argumenter atskilt med et komma (nøkkel=verdi, key2=verdi2),
     eller skriv inn clear for å slette gjeldende args, eller skriv 0 for å gå tilbake.'
   wwcConfigGUIMongoDatabaseNameButton: Endre MongoDB-database
-  wwcConfigConversationMongoUsernameInput: Gjeldende brukernavn er {0}. Skriv inn noe
-    annet enn 0 for å angi et nytt brukernavn, eller skriv 0 for å gå tilbake.
+  wwcConfigConversationMongoUsernameInput: Gjeldende brukernavn er {0}. Skriv inn
+    noe annet enn 0 for å angi et nytt brukernavn, eller skriv 0 for å gå tilbake.
   wwcConfigGUIMongoOptionalArgsButton: Endre MongoDB Valgfrie argumenter
   wwcConfigConversationMongoUsernameSuccess: Vellykket endret MongoDB-brukernavnet.
   wwcConfigConversationMongoPasswordSuccess: Vellykket endret MongoDB-passordet.
@@ -424,7 +425,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Vellykket registrert oversetter feil å ignorere.
   wwcConfigErrorsToIgnoreInvalid: Ugyldige oversetterfeil å ignorere satt i config.yml.
     Registrering av standardinnstillinger...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Vellykket endret oversetterfeilene for
     å ignorere setninger.
   wwcConfigGUIIgnoreErrorsButton: Endre feil å ignorere
@@ -434,7 +435,7 @@ Messages:
     I tillegg vil det å skrive «*» føre til at pluginet ikke sjekker noen oversetterfeil.'
   wwcConfigConversationIgnoreErrorsCleared: Oversetterfeil for å ignorere setninger
     ryddet vellykket.
-
+  
   wwcsActiveTransPrevRate: 'Aktiv oversetter Forrige satsgrense: {0}'
   wwcsActiveTransSaved: 'Aktiv oversetter lagret på disk: {0}'
   wwcsActiveTransIncoming: 'Aktiv oversetter som oversetter innkommende chat: {0}'
@@ -448,4 +449,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktiv oversetter som oversetter utgående chat: {0}'
   wwcsActiveTransItem: 'Aktiv oversetter oversetter element: {0}'
   wwcsActiveTransEntity: 'Active Translator Translating Entity: {0}'
+  wwcSupportedServer: Initialiserer WorldwideChat for {0}...
+  wwcSupportedVersion: Aktiverer funksjoner for versjon {0}...
 

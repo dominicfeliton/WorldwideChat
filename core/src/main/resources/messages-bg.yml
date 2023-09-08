@@ -26,8 +26,8 @@ Messages:
   wwcConfigDisabledbStats: БСТАТС за инвалиди.
   wwctsOffSender: Преводът е изключен.
   wwcUpdaterParserFailed: Неуспешно анализиране на данни за актуализация от GitHub.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: Настоящият таен ключ е {0}. Моля,
-    въведете таен ключ за Amazon или въведете 0, за да се върнете.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Настоящият таен ключ е {0}.
+    Моля, въведете таен ключ за Amazon или въведете 0, за да се върнете.
   wwctbOffSender: Преводът на книги забранен.
   wwcConfigGUIAmazonTranslateButton: Амазонка превод
   wwcConfigConversationLangSuccess: Езикът на приставката се промени успешно.
@@ -69,8 +69,8 @@ Messages:
   wwcUpdaterConnectionFailed: Не може да се провери за най-новите актуализации на
     Github.
   watsonNotFoundExceptionNotification: Не можете да преведете вашия вход по-нататък.
-  wwcConfigConversationWatsonAPIKeyInput: Текущият API ключ е {0}. Моля, въведете API
-    ключ за Уотсън или въведете 0 за връщане.
+  wwcConfigConversationWatsonAPIKeyInput: Текущият API ключ е {0}. Моля, въведете
+    API ключ за Уотсън или въведете 0 за връщане.
   wwctGUIStopButton: Спиране на превода
   wwcgTranslationStopped: Глобалният чат превод е спрян.
   wwcUpdaterFutureDate: Този екземпляр на WorldwideChat има по-голяма версия от последната
@@ -81,8 +81,8 @@ Messages:
     дълъг. Превод:'
   wwctsOnTarget: Подписване на превода е разрешен за {0}.
   wwcConfigCacheDisabled: Кеш на преводача забранен.
-  wwcConfigConversationWatsonURLInput: Настоящият URL адрес е {0}. Моля, въведете URL
-    адрес на услугата за Уотсън или въведете 0, за да се върнете.
+  wwcConfigConversationWatsonURLInput: Настоящият URL адрес е {0}. Моля, въведете
+    URL адрес на услугата за Уотсън или въведете 0, за да се върнете.
   wwcBookDone: Книгата е преведена успешно.
   wwctsOnSender: Разрешено е преводът. Щракнете с десния бутон върху знак, за да го
     преведете!
@@ -91,8 +91,8 @@ Messages:
   wwctGUITranslationButton: Започване на превода
   wwctGUIAutoDetectButton: Автоматично откриване на езика на източника
   wwcUpdaterUpToDate: WorldwideChat е актуален!
-  wwcConfigConversationAmazonTranslateRegionInput: Настоящият регион е {0}. Моля, въведете
-    регион за Amazon или въведете 0, за да се върнете.
+  wwcConfigConversationAmazonTranslateRegionInput: Настоящият регион е {0}. Моля,
+    въведете регион за Amazon или въведете 0, за да се върнете.
   wwcNoConsole: Тази команда може да бъде управлявана само от играч.
   wwcInitializationFail: Не успя да инициализира WorldwideChat.
   wwcrSuccess: Успешно презареди WorldwideChat
@@ -167,9 +167,9 @@ Messages:
     с /wwct.
   wwctrlRateLimitAlreadyOffSender: Вашият лимит вече е деактивиран.
   wwctGUIRateButton: Задаване на лимит
-  wwctGUIConversationRateLimit: Ограничението на скоростта за превод е текущо {0} секунди.
-    Въведете нещо по-голямо от 0, за да зададете нова стойност, или въведете 0, за
-    да забраните ограничението. Напиши нещо по-малко от 0, за да се върнеш.
+  wwctGUIConversationRateLimit: Ограничението на скоростта за превод е текущо {0}
+    секунди. Въведете нещо по-голямо от 0, за да зададете нова стойност, или въведете
+    0, за да забраните ограничението. Напиши нещо по-малко от 0, за да се върнеш.
   wwctGUITargetPlayerNull: Целевият играч е изключен от сървъра.
   wwcConfigConversationSyncUserDataDelayInput: Текущото забавяне за синхронизиране
     на потребителските данни е {0} секунди. Въведете нещо по-голямо от 10, за да зададете
@@ -288,8 +288,8 @@ Messages:
     до {0}.
   wwctAutoTranslateStartOtherPlayer: Започване на нова сесия за превод за {0} до {1}.
   wwctTranslationStopped: Преводаческата ви сесия беше спряна.
-  wwctLangToLangStartOtherPlayer: Започване на нова сесия за превод за {0} от {1} до
-    {0}.
+  wwctLangToLangStartOtherPlayer: Започване на нова сесия за превод за {0} от {1}
+    до {0}.
   wwctAutoTranslateStart: Започване на нова сесия за превод на {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Имате активна сесия за превод до {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Превежда се глобален
@@ -363,9 +363,9 @@ Messages:
   wwcConfigGUISQLUsernameButton: Промяна на SQL потребителско име
   wwcConfigConversationSQLOptionalArgsCleared: Допълнителни аргументи изчистени успешно.
   wwcConfigConversationSQLOptionalArgsInput: 'Текущите незадължителни аргументи на
-    SQL са: {0}. Въведете аргументи, разделени със запетая (ключ = стойност, key2 =
-    value2), или въведете ясно, за да изтриете текущите арги, или въведете 0, за да
-    се върнете.'
+    SQL са: {0}. Въведете аргументи, разделени със запетая (ключ = стойност, key2
+    = value2), или въведете ясно, за да изтриете текущите арги, или въведете 0, за
+    да се върнете.'
   wwcConfigConversationSQLDatabaseNameInput: Настоящото име на базата данни е {0}.
     Въведете нещо различно от 0, за да зададете ново име на база данни, или въведете
     0, за да се върнете.
@@ -450,7 +450,7 @@ Messages:
     трябва да се игнорират.
   wwcConfigErrorsToIgnoreInvalid: Невалидни грешки на преводача, за да игнорирате
     зададени в config.yml. Регистриране по подразбиране...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Успешно променя грешките на преводача,
     за да игнорира фрази.
   wwcConfigGUIIgnoreErrorsButton: Промяна на грешки, за да игнорирате
@@ -461,7 +461,7 @@ Messages:
     да не проверява грешките на преводача.'
   wwcConfigConversationIgnoreErrorsCleared: Грешки на преводача, за да игнорират фрази
     изчистени успешно.
-
+  
   wwcsActiveTransPrevRate: 'Активен преводач Предишен Ограничен Срок: {0}'
   wwcsActiveTransSaved: 'Активен преводач, записан на диск: {0}'
   wwcsActiveTransIncoming: 'Активен преводач, превеждащ входящ чат: {0}'
@@ -475,4 +475,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Активен преводач, превеждащ изходящ чат: {0}'
   wwcsActiveTransItem: 'Активен преводач, превеждащ артикул: {0}'
   wwcsActiveTransEntity: 'Активен преводач, превеждащ субект: {0}'
+  wwcSupportedServer: Инициализиране на WorldwideChat за {0}...
+  wwcSupportedVersion: Активиране на функции за версия {0}...
 

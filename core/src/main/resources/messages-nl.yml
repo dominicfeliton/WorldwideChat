@@ -68,8 +68,8 @@ Messages:
   wwctsOffTarget: Vertaling voor ondertekenen uitgeschakeld voor {0}.
   wwcUpdaterConnectionFailed: Kan niet controleren op de nieuwste updates voor Github.
   watsonNotFoundExceptionNotification: Kan uw invoer niet verder vertalen.
-  wwcConfigConversationWatsonAPIKeyInput: De huidige API-sleutel is {0}. Voer een API-sleutel
-    in voor Watson of typ 0 om terug te gaan.
+  wwcConfigConversationWatsonAPIKeyInput: De huidige API-sleutel is {0}. Voer een
+    API-sleutel in voor Watson of typ 0 om terug te gaan.
   wwctGUIStopButton: Stoppen met vertalen
   wwcgTranslationStopped: Wereldwijde chat-vertaling is gestopt.
   wwcUpdaterFutureDate: Dit exemplaar van WorldwideChat heeft een grotere versie dan
@@ -108,8 +108,8 @@ Messages:
   wwcConfigConnectionSuccess: Succesvol verbonden met {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Is actieve vertaler: {0}'
-  wwcConfigConversationPrefixInput: Het huidige voorvoegsel is {0}. Typ een nieuw voorvoegsel
-    of typ 0 om terug te gaan.
+  wwcConfigConversationPrefixInput: Het huidige voorvoegsel is {0}. Typ een nieuw
+    voorvoegsel of typ 0 om terug te gaan.
   wwcConfigGUIPreviousPageButton: Vorige pagina
   wwcConfigGUITranslatorCacheButton: Limiet vertaalcache wijzigen
   wwcConfigConversationbStatsSuccess: BSTAT's zijn in- en uitgeschakeld.
@@ -128,8 +128,8 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationSourceLang: Globale chat wordt vertaald van
     {0} naar {1}.
   wwcConfigGUITranslatorSettings: Configuratie vertaler
-  wwcConfigConversationGoogleTranslateAPIKeyInput: De huidige API-sleutel is {0}. Voer
-    een API-sleutel in voor Google Translate of typ 0 om terug te gaan.
+  wwcConfigConversationGoogleTranslateAPIKeyInput: De huidige API-sleutel is {0}.
+    Voer een API-sleutel in voor Google Translate of typ 0 om terug te gaan.
   wwcConfigConversationRateLimitInput: De huidige globale limiet voor koersen per
     vertaling is {0} seconden. Typ iets groter dan 0 om een nieuwe waarde in te stellen
     of typ 0 om de limiet uit te schakelen. Typ iets minder dan 0 om terug te gaan.
@@ -345,8 +345,8 @@ Messages:
   wwcConfigGUISQLPortButton: SQL-poort wijzigen
   wwcConfigGUISQLOptionalArgsButton: Optionele SQL-argumenten wijzigen
   wwcConfigConversationToggleSQLSSLSuccess: SSL voor SQL is succesvol geschakeld.
-  wwcConfigConversationSQLPortInput: De huidige poort is {0}. Typ iets anders dan 0
-    om een nieuwe poort in te stellen, of typ 0 om terug te gaan.
+  wwcConfigConversationSQLPortInput: De huidige poort is {0}. Typ iets anders dan
+    0 om een nieuwe poort in te stellen, of typ 0 om terug te gaan.
   wwcConfigGUISQLPasswordButton: SQL-wachtwoord wijzigen
   wwcConfigConversationSQLHostnameSuccess: De SQL-hostnaam is succesvol gewijzigd.
   wwcConfigConversationSQLHostnameInput: De huidige hostnaam is {0}. Typ iets anders
@@ -367,8 +367,8 @@ Messages:
   wwcConfigConversationSQLOptionalArgsCleared: Optionele argumenten zijn succesvol
     gewist.
   wwcConfigConversationSQLOptionalArgsInput: 'De huidige optionele SQL-argumenten
-    zijn: {0}. Typ argumenten gescheiden door een komma (key=value, key2=value2), of
-    typ clear om de huidige args te wissen, of typ 0 om terug te gaan.'
+    zijn: {0}. Typ argumenten gescheiden door een komma (key=value, key2=value2),
+    of typ clear om de huidige args te wissen, of typ 0 om terug te gaan.'
   wwcConfigConversationSQLDatabaseNameInput: De huidige databasenaam is {0}. Typ iets
     anders dan 0 om een nieuwe databasenaam in te stellen, of typ 0 om terug te gaan.
   wwcConfigGUISQLDatabaseNameButton: SQL Database wijzigen
@@ -395,8 +395,8 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate is succesvol omgeschakeld.
     Laad opnieuw om de wijzigingen van kracht te laten worden.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API-sleutelset met succes.
-  wwcConfigConversationLibreURLInput: De huidige URL is {0}. Voer een URL in voor Libre,
-    of typ 0 om terug te gaan.
+  wwcConfigConversationLibreURLInput: De huidige URL is {0}. Voer een URL in voor
+    Libre, of typ 0 om terug te gaan.
   libreHttpUnknown: 'Onbekende http-fout: {0}'
   wwcConfigGUILibreTranslateURLButton: De URL van Libre Translate wijzigen
   wwcConfigConnectionFail: Kon geen verbinding maken met {0}.
@@ -419,8 +419,8 @@ Messages:
     iets anders dan 0 om een nieuwe databasenaam in te stellen, of typ 0 om terug
     te gaan.
   wwcConfigConversationMongoOptionalArgsInput: 'De huidige optionele MongoDB-argumenten
-    zijn: {0}. Typ argumenten gescheiden door een komma (key=value, key2=value2), of
-    typ clear om de huidige args te wissen, of typ 0 om terug te gaan.'
+    zijn: {0}. Typ argumenten gescheiden door een komma (key=value, key2=value2),
+    of typ clear om de huidige args te wissen, of typ 0 om terug te gaan.'
   wwcConfigGUIMongoDatabaseNameButton: MongoDB-database wijzigen
   wwcConfigConversationMongoUsernameInput: De huidige gebruikersnaam is {0}. Typ iets
     anders dan 0 om een nieuwe gebruikersnaam in te stellen, of typ 0 om terug te
@@ -451,18 +451,18 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Succesvol geregistreerde vertaalfouten om te negeren.
   wwcConfigErrorsToIgnoreInvalid: Ongeldige vertaalfouten om te negeren ingesteld
     in config.yml. Standaardinstellingen registreren...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: De vertaalfouten zijn succesvol gewijzigd
     om zinnen te negeren.
   wwcConfigGUIIgnoreErrorsButton: Fouten wijzigen om ze te negeren
   wwcConfigConversationIgnoreErrorsInput: 'De huidige lijst met zinnen in vertaalfouten
-    die genegeerd moeten worden is: {0}. Typ argumenten gescheiden door een komma (key=value,
-    key2=waarde2), of typ clear om de huidige args te wissen, of typ 0 om terug te
-    gaan. Bovendien zorgt het typen van „*” ervoor dat de plug-in geen vertaalfouten
-    controleert.'
+    die genegeerd moeten worden is: {0}. Typ argumenten gescheiden door een komma
+    (key=value, key2=waarde2), of typ clear om de huidige args te wissen, of typ 0
+    om terug te gaan. Bovendien zorgt het typen van „*” ervoor dat de plug-in geen
+    vertaalfouten controleert.'
   wwcConfigConversationIgnoreErrorsCleared: Vertaalfouten bij het negeren van zinnen
     die met succes zijn gewist.
-
+  
   wwcsActiveTransPrevRate: 'Active Translator: vorige maximumsnelheid: {0}'
   wwcsActiveTransSaved: 'Active Translator opgeslagen op schijf: {0}'
   wwcsActiveTransIncoming: 'Actieve vertaler die binnenkomende chat vertaalt: {0}'
@@ -477,4 +477,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Actieve vertaler die uitgaande chat vertaalt: {0}'
   wwcsActiveTransItem: 'Active Translator vertaalt item: {0}'
   wwcsActiveTransEntity: 'Entiteit voor het vertalen van Active Translator: {0}'
+  wwcSupportedServer: WorldwideChat initialiseren voor {0}...
+  wwcSupportedVersion: Functies inschakelen voor versie {0}...
 

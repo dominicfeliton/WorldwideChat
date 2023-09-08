@@ -84,8 +84,8 @@ Messages:
     larga. Traducción:'
   wwctsOnTarget: Traducción de firmas habilitada para {0}.
   wwcConfigCacheDisabled: Caché del traductor deshabilitada
-  wwcConfigConversationWatsonURLInput: La dirección URL actual es {0}. Introduzca una
-    dirección URL de servicio para Watson o escriba 0 para volver atrás.
+  wwcConfigConversationWatsonURLInput: La dirección URL actual es {0}. Introduzca
+    una dirección URL de servicio para Watson o escriba 0 para volver atrás.
   wwcBookDone: Libro traducido correctamente.
   wwctsOnSender: Traducción de signos habilitada. Haga clic derecho en un cartel para
     traducirlo!
@@ -113,8 +113,8 @@ Messages:
   wwcConfigConnectionSuccess: Conectado correctamente a {0}!
   wwcConfigGUIGoogleTranslateButton: Traducir Google
   wwcsIsActiveTranslator: 'Es el traductor activo: {0}'
-  wwcConfigConversationPrefixInput: El prefijo actual es {0}. Escriba uno nuevo o escriba
-    0 para volver atrás.
+  wwcConfigConversationPrefixInput: El prefijo actual es {0}. Escriba uno nuevo o
+    escriba 0 para volver atrás.
   wwcConfigGUIPreviousPageButton: Página anterior
   wwcConfigGUITranslatorCacheButton: Cambiar límite de caché de traducción
   wwcConfigConversationbStatsSuccess: Se ha alternado correctamente los bStats.
@@ -132,8 +132,8 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationSourceLang: El chat global se está traduciendo
     de {0} a {1}.
   wwcConfigGUITranslatorSettings: Configuración del traductor
-  wwcConfigConversationGoogleTranslateAPIKeyInput: La clave de API actual es {0}. Introduzca
-    una clave API para Google Translate o escriba 0 para volver atrás.
+  wwcConfigConversationGoogleTranslateAPIKeyInput: La clave de API actual es {0}.
+    Introduzca una clave API para Google Translate o escriba 0 para volver atrás.
   wwcConfigConversationRateLimitInput: El límite de velocidad global actual por traducción
     es {0} segundos. Escriba algo mayor que 0 para establecer un nuevo valor, o escriba
     0 para deshabilitar el límite. Escriba cualquier cosa inferior a 0 para volver.
@@ -263,8 +263,8 @@ Messages:
   wwcEntityTranslateDone: 'Nombre de entidad traducido: {0}'
   wwcEntityTranslateNoName: La entidad no tiene un nombre personalizado.
   wwcConfigConversationErrorLimitInput: El límite de error actual para cada traductor
-    es {0}. Escriba cualquier valor superior a 0 para establecer un nuevo valor o escriba
-    cualquier valor inferior o igual a 0 para volver atrás.
+    es {0}. Escriba cualquier valor superior a 0 para establecer un nuevo valor o
+    escriba cualquier valor inferior o igual a 0 para volver atrás.
   wwcConfigGUIGlobalRateLimitButton: Cambiar límite de tasa global
   wwcteOnSender: Traducción de entidades habilitada. Haga clic con el botón derecho
     en una entidad para traducir su nombre.
@@ -294,8 +294,8 @@ Messages:
   wwctAutoTranslateStartOtherPlayer: Iniciar una nueva sesión de traducción de {0}
     a {0}.
   wwctTranslationStopped: Se ha detenido la sesión de traducción.
-  wwctLangToLangStartOtherPlayer: Iniciar una nueva sesión de traducción para {0} de
-    {0} a {1}.
+  wwctLangToLangStartOtherPlayer: Iniciar una nueva sesión de traducción para {0}
+    de {0} a {1}.
   wwctAutoTranslateStart: Iniciar una nueva sesión de traducción a {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Tienes una sesión de traducción activa
     a {0}.
@@ -326,9 +326,9 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Idioma de salida: {0}'
   wwcTranslatorAttempt: Intentando conectarse al traductor en config.yml... (Intento
     {0}/ {1})
-  wwcTimeoutExceptionConsole: El jugador {0} ha agotado el tiempo de espera de su solicitud
-    más reciente. Este error no es grave, pero WorldwideChat debería volver a cargarse
-    si continúa ocurriendo.
+  wwcTimeoutExceptionConsole: El jugador {0} ha agotado el tiempo de espera de su
+    solicitud más reciente. Este error no es grave, pero WorldwideChat debería volver
+    a cargarse si continúa ocurriendo.
   wwcGUIPageNumber: 'Número de página: {0}'
   wwcConfigYAMLFallback: Volviendo a YAML...
   wwcConfigGUIToggleSQLButton: Alternar SQL
@@ -357,9 +357,9 @@ Messages:
   wwcConfigGUISQLPasswordButton: Cambiar contraseña de SQL
   wwcConfigConversationSQLHostnameSuccess: Se cambió correctamente el nombre de host
     de SQL.
-  wwcConfigConversationSQLHostnameInput: El nombre de host actual es {0}. Escriba cualquier
-    cosa que no sea 0 para establecer un nombre de host nuevo o escriba 0 para volver
-    atrás.
+  wwcConfigConversationSQLHostnameInput: El nombre de host actual es {0}. Escriba
+    cualquier cosa que no sea 0 para establecer un nombre de host nuevo o escriba
+    0 para volver atrás.
   wwcConfigGUISQLHostnameButton: Cambiar el nombre de host de SQL
   wwcConfigConversationSQLOptionalArgsSuccess: Se cambiaron correctamente los argumentos
     SQL opcionales.
@@ -423,8 +423,8 @@ Messages:
   wwcConfigConversationMongoPasswordInput: La contraseña actual es {0}. Escriba cualquier
     cosa que no sea 0 para establecer una nueva contraseña o escriba 0 para volver
     atrás.
-  wwcConfigConversationMongoPortInput: El puerto actual es {0}. Escriba cualquier cosa
-    que no sea 0 para establecer un puerto nuevo o escriba 0 para volver atrás.
+  wwcConfigConversationMongoPortInput: El puerto actual es {0}. Escriba cualquier
+    cosa que no sea 0 para establecer un puerto nuevo o escriba 0 para volver atrás.
   wwcConfigConversationToggleMongoSuccess: MongoDB se activó correctamente. Recarga
     para que el cambio surta efecto.
   wwcConfigConversationMongoHostnameInput: El nombre de host actual es {0}. Escriba
@@ -476,7 +476,7 @@ Messages:
     traductor que se deben ignorar.
   wwcConfigErrorsToIgnoreInvalid: Errores de traductor no válidos para ignorar establecidos
     en config.yml. Registrando valores predeterminados...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Se han cambiado correctamente los errores
     del traductor para omitir las frases.
   wwcConfigGUIIgnoreErrorsButton: Cambiar los errores a ignorar
@@ -487,7 +487,7 @@ Messages:
     ningún error del traductor.'
   wwcConfigConversationIgnoreErrorsCleared: Errores del traductor al ignorar frases
     borrados correctamente.
-
+  
   wwcsActiveTransPrevRate: 'Tiempo límite de tarifa anterior de Active Translator:
     {0}'
   wwcsActiveTransSaved: 'Traductor activo guardado en disco: {0}'
@@ -503,4 +503,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Traductor activo traduciendo el chat saliente: {0}'
   wwcsActiveTransItem: 'Traductor activo traduciendo el elemento: {0}'
   wwcsActiveTransEntity: 'Entidad de traducción de Active Translator: {0}'
+  wwcSupportedServer: Inicializando WorldwideChat para {0}...
+  wwcSupportedVersion: Habilitando funciones para la versión {0}...
 

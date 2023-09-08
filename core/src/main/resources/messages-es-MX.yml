@@ -42,7 +42,8 @@ Messages:
   wwcInvalidLang: Idioma no válido en tu config.yml. Incumpliendo a en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Región de Amazon establecida
     con éxito.
-  wwcConfigRateLimitEnabled: Límite de tasa global habilitado y establecido a {0} segundos.
+  wwcConfigRateLimitEnabled: Límite de tasa global habilitado y establecido a {0}
+    segundos.
   wwcBadPerms: ¡No tienes los permisos requeridos para ejecutar este comando!
   wwcConfigGUILangButton: Cambiar Lenguaje de Plugin
   wwctGUISignButton: Toggle Traducción de Signo
@@ -178,8 +179,8 @@ Messages:
     o escriba 0 para desactivar el límite. Escriba algo menos de 0 para volver atrás.
   wwctGUITargetPlayerNull: El jugador objetivo se desconectó del servidor.
   wwcConfigConversationSyncUserDataDelayInput: El retraso actual por sincronización
-    de datos de usuario es {0} segundos. Escriba cualquier cosa mayor que 10 para establecer
-    un nuevo valor, o cualquier cosa menor que 10 para volver atrás.
+    de datos de usuario es {0} segundos. Escriba cualquier cosa mayor que 10 para
+    establecer un nuevo valor, o cualquier cosa menor que 10 para volver atrás.
   wwcConfigGUISyncUserDataButton: Cambiar retraso de sincronización de datos de usuario
   wwcConfigSyncDelayEnabled: Retraso por usuario sincronización de datos establecida
     a {0} segundos.
@@ -275,8 +276,8 @@ Messages:
   wwcCharLimit: ¡Tu mensaje es demasiado largo! Por favor, asegúrate de que tu mensaje
     tenga menos de {0} caracteres de longitud.
   wwcConfigConversationCharacterLimitInput: El límite de caracteres actual por mensaje
-    es {0} caracteres. Escriba algo mayor que 0 para establecer un nuevo valor, o escriba
-    algo menor o igual a 0 para volver atrás.
+    es {0} caracteres. Escriba algo mayor que 0 para establecer un nuevo valor, o
+    escriba algo menor o igual a 0 para volver atrás.
   wwcteOffSender: Traducción de entidad desactivada.
   wwctGUIEntityButton: Alternar Entidad Traducción
   wwctrlRateLimitBadInt: Tu límite de tasa no es un entero válido.
@@ -355,8 +356,9 @@ Messages:
   wwcConfigGUISQLPasswordButton: Cambiar contraseña SQL
   wwcConfigConversationSQLHostnameSuccess: Se cambió correctamente el nombre de host
     SQL.
-  wwcConfigConversationSQLHostnameInput: El nombre de host actual es {0}. Escriba cualquier
-    cosa que no sea 0 para establecer un nuevo nombre de host, o escriba 0 para volver.
+  wwcConfigConversationSQLHostnameInput: El nombre de host actual es {0}. Escriba
+    cualquier cosa que no sea 0 para establecer un nuevo nombre de host, o escriba
+    0 para volver.
   wwcConfigGUISQLHostnameButton: Cambiar el nombre de host SQL
   wwcConfigConversationSQLOptionalArgsSuccess: Se modificaron correctamente los argumentos
     SQL opcionales.
@@ -374,8 +376,8 @@ Messages:
   wwcConfigGUISQLUsernameButton: Cambiar nombre de usuario SQL
   wwcConfigConversationSQLOptionalArgsCleared: Argumentos opcionales borrados correctamente.
   wwcConfigConversationSQLOptionalArgsInput: 'Los argumentos SQL opcionales actuales
-    son: {0}. Argumentos de tipo separados por una coma (key=value, key2=value2), o
-    escriba clear para borrar los args actuales, o escriba 0 para volver.'
+    son: {0}. Argumentos de tipo separados por una coma (key=value, key2=value2),
+    o escriba clear para borrar los args actuales, o escriba 0 para volver.'
   wwcConfigConversationSQLDatabaseNameInput: El nombre actual de la base de datos
     es {0}. Escriba cualquier cosa que no sea 0 para establecer un nuevo nombre de
     base de datos, o escriba 0 para volver.
@@ -383,8 +385,8 @@ Messages:
   wwcConfigConversationSQLDatabaseNameSuccess: Se cambió correctamente el nombre de
     la base de datos SQL.
   wwcConfigConversationFatalAsyncAbort: El tiempo de espera actual para abortar todas
-    las tareas asíncrona es de {0} segundos. Escriba cualquier cosa por encima de 7
-    para establecer un nuevo tiempo de espera, o cualquier cosa debajo de él para
+    las tareas asíncrona es de {0} segundos. Escriba cualquier cosa por encima de
+    7 para establecer un nuevo tiempo de espera, o cualquier cosa debajo de él para
     volver atrás.
   wwcConfigConversationFatalAsyncSuccess: El tiempo de espera de tarea asincrónica
     se estableció correctamente.
@@ -395,8 +397,8 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Cambiar Clave de API de Libre Translate
   libreHttp403: Falta la clave API de Libre Translate, o estás prohibido en el servidor.
   wwcConfigConversationLibreURLSuccess: Libre URL establecida correctamente.
-  wwcConfigConversationLibreTranslateApiKeyInput: La clave API actual es {0}. Por favor,
-    ingrese una clave API para Libre, o escriba 0 para regresar.
+  wwcConfigConversationLibreTranslateApiKeyInput: La clave API actual es {0}. Por
+    favor, ingrese una clave API para Libre, o escriba 0 para regresar.
   wwcConfigGUILibreTranslateButton: Libre Traducir
   libreHttp429: Sin confianza debido al límite de velocidad del servidor.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Traducir
@@ -416,8 +418,8 @@ Messages:
   wwcConfigConversationMongoPasswordInput: La contraseña actual es {0}. Escriba cualquier
     otra cosa que no sea 0 para establecer una nueva contraseña, o escriba 0 para
     volver atrás.
-  wwcConfigConversationMongoPortInput: El puerto actual es {0}. Escriba cualquier cosa
-    que no sea 0 para establecer un nuevo puerto, o escriba 0 para volver atrás.
+  wwcConfigConversationMongoPortInput: El puerto actual es {0}. Escriba cualquier
+    cosa que no sea 0 para establecer un nuevo puerto, o escriba 0 para volver atrás.
   wwcConfigConversationToggleMongoSuccess: MongoDB se ha desalteado correctamente.
     Recargar para que el cambio surta efecto.
   wwcConfigConversationMongoHostnameInput: El nombre de host actual es {0}. Escriba
@@ -461,13 +463,13 @@ Messages:
   wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Traducir
   wwcConfigConversationDeepLTranslateApiKeySuccess: La clave de la API DeepL se ha
     establecido correctamente.
-  wwcConfigConversationDeepLTranslateApiKeyInput: La clave API actual es {0}. Por favor,
-    ingrese una clave API para DeepL o escriba 0 para volver atrás.
+  wwcConfigConversationDeepLTranslateApiKeyInput: La clave API actual es {0}. Por
+    favor, ingrese una clave API para DeepL o escriba 0 para volver atrás.
   wwcConfigErrorsToIgnoreSuccess: Errores de traductor registrados con éxito para
     ignorar.
   wwcConfigErrorsToIgnoreInvalid: Errores de traductor no válidos para ignorar establecidos
     en configura yml. Registrar incumplimientos...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Se cambiaron satisfactoriamente los errores
     del traductor para ignorar las frases.
   wwcConfigGUIIgnoreErrorsButton: Cambiar errores para ignorar
@@ -478,7 +480,7 @@ Messages:
     error del traductor.'
   wwcConfigConversationIgnoreErrorsCleared: Los errores del traductor para ignorar
     frases se borraron con éxito.
-
+  
   wwcsActiveTransPrevRate: 'Traductor activo Tarifa anterior Tiempo límite: {0}'
   wwcsActiveTransSaved: 'Traductor activo guardado en disco: {0}'
   wwcsActiveTransIncoming: 'Traductor activo traduciendo el chat entrante: {0}'
@@ -492,4 +494,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Traductor Activo Traduciendo Chat Saliente: {0}'
   wwcsActiveTransItem: 'Traductor Activo Traduciendo Artículo: {0}'
   wwcsActiveTransEntity: 'Entidad de traducción del traductor activo: {0}'
+  wwcSupportedServer: Inicializando el chat de todo el mundo para {0}...
+  wwcSupportedVersion: Habilitando funciones para la versión {0}...
 

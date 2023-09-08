@@ -18,8 +18,8 @@ Messages:
     ਨੂੰ ਰਿਪੋਰਟ ਕਰੋ।
   wwctbOnTarget: '{0} ਲਈ ਬੁੱਕ ਅਨੁਵਾਦ ਯੋਗ ਹੈ।'
   wwctrlRateLimitAlreadyOffTarget: '{0} ਦੀ ਦਰ ਸੀਮਾ ਪਹਿਲਾਂ ਹੀ ਅਯੋਗ ਹੋ ਗਈ ਹੈ।'
-  wwcConfigConnectionFailed: '{0} ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਇਹ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ ਕ੍ਰੇਡੇੰਸ਼ਿਅਲ
-    ਅਤੇ ਫਾਇਰਵਾਲ ਸਹੀ ਢੰਗ ਨਾਲ ਸੰਰਚਿਤ ਕੀਤੇ ਗਏ ਹਨ!'
+  wwcConfigConnectionFailed: '{0} ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਇਹ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ
+    ਕ੍ਰੇਡੇੰਸ਼ਿਅਲ ਅਤੇ ਫਾਇਰਵਾਲ ਸਹੀ ਢੰਗ ਨਾਲ ਸੰਰਚਿਤ ਕੀਤੇ ਗਏ ਹਨ!'
   wwcConfigEnabledbStats: ਸਮਰਥਿਤ ਬੀਐਸਟੀਟਸ.
   wwctGUIConversationRateLimit: ਅਨੁਵਾਦ ਪ੍ਰਤੀ ਰੇਟ ਸੀਮਾ ਇਸ ਸਮੇਂ {0} ਸਕਿੰਟ ਹੈ। ਇੱਕ ਨਵਾਂ
     ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਸੀਮਾ ਨੂੰ ਅਯੋਗ ਕਰਨ ਲਈ 0 ਟਾਈਪ
@@ -194,13 +194,14 @@ Messages:
   wwctiOnTarget: ਆਈਟਮ ਅਨੁਵਾਦ {0} ਲਈ ਯੋਗ ਹੈ।
   wwcConfigGUIAmazonTranslateButton: Amazon ਅਨੁਵਾਦ
   wwcConfigConversationLangSuccess: ਪਲੱਗਇਨ ਭਾਸ਼ਾ ਸਫਲਤਾਪੂਰਕ ਬਦਲ ਗਈ.
-  wwcConfigConversationTranslationCacheInput: ਮੌਜੂਦਾ ਅਨੁਵਾਦ ਕੈਚੇ ਸੀਮਾ {0} ਵਾਕ ਹੈ। ਵੱਧ
-    ਕੁਝ ਵੀ ਟਾਈਪ 0 ਇੱਕ ਨਵ ਮੁੱਲ ਸੈੱਟ ਕਰਨ ਲਈ, ਜ ਟਾਈਪ 0 ਅਨੁਵਾਦ ਕੈਸ਼ ਨੂੰ ਆਯੋਗ ਕਰਨ ਲਈ. ਵਾਪਸ
-    ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ.
+  wwcConfigConversationTranslationCacheInput: ਮੌਜੂਦਾ ਅਨੁਵਾਦ ਕੈਚੇ ਸੀਮਾ {0} ਵਾਕ ਹੈ।
+    ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ 0 ਇੱਕ ਨਵ ਮੁੱਲ ਸੈੱਟ ਕਰਨ ਲਈ, ਜ ਟਾਈਪ 0 ਅਨੁਵਾਦ ਕੈਸ਼ ਨੂੰ ਆਯੋਗ ਕਰਨ ਲਈ.
+    ਵਾਪਸ ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ.
   wwcConfigGUIChatMessagesModifyOverride: ਮੌਜੂਦਾ ਓਵਰਰਾਈਡ ਨੂੰ ਸੰਸ਼ੋਧਿਤ ਕਰੋ
   wwcConfigConversationAmazonTranslateRegionSuccess: ਐਮਾਜ਼ਾਨ ਖੇਤਰ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ
     ਕੀਤਾ.
-  wwcConfigRateLimitEnabled: ਗਲੋਬਲ ਰੇਟ ਸੀਮਾ ਯੋਗ ਹੈ ਅਤੇ {0} ਸਕਿੰਟ ਤੱਕ ਸੈੱਟ ਕੀਤੀ ਗਈ ਹੈ।
+  wwcConfigRateLimitEnabled: ਗਲੋਬਲ ਰੇਟ ਸੀਮਾ ਯੋਗ ਹੈ ਅਤੇ {0} ਸਕਿੰਟ ਤੱਕ ਸੈੱਟ ਕੀਤੀ ਗਈ
+    ਹੈ।
   wwcConfigGUIChatMessagesOverrideNewButton: ਇੱਕ ਨਵਾਂ ਓਵਰਰਾਈਡ ਸ਼ਾਮਲ ਕਰੋ
   wwcUpdaterOutOfDate: ਵਰਲਡਵਿਡਚੈਟ ਤਾਰੀਖ ਤੋਂ ਬਾਹਰ ਹੈ. ਕਿਰਪਾ ਕਰਕੇ ਨਵੀਨਤਮ ਵਰਜਨ, {0} ਲਈ
     ਅੱਪਡੇਟ ਕਰੋ।
@@ -238,8 +239,8 @@ Messages:
   wwcSignDeletedOrTooLong: 'ਟੀਚੇ ਦਾ ਚਿੰਨ੍ਹ ਜਾਂ ਤਾਂ ਹਟਾਇਆ ਗਿਆ ਸੀ ਜਾਂ ਅਨੁਵਾਦ ਬਹੁਤ ਲੰਮਾ
     ਸੀ. ਅਨੁਵਾਦ:'
   wwcItemTranslateStart: ਟੀਚੇ ਦਾ ਆਈਟਮ ਅਨੁਵਾਦ...
-  wwcOnJoinTranslationNotificationSourceLang: ਤੁਹਾਡੇ ਕੋਲ {0} ਤੋਂ {1} ਤੱਕ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦ
-    ਸੈਸ਼ਨ ਹੈ।
+  wwcOnJoinTranslationNotificationSourceLang: ਤੁਹਾਡੇ ਕੋਲ {0} ਤੋਂ {1} ਤੱਕ ਇੱਕ ਸਰਗਰਮ
+    ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਹੈ।
   wwcConfigEnabledDebugMode: ਯੋਗ ਡੀਬੱਗ ਮੋਡ. ਜੇ ਤੁਸੀਂ ਡਿਵੈਲਪਰ ਜਾਂ ਸਮੱਸਿਆ ਨਿਪਟਾਰੇ ਨਹੀਂ
     ਹੋ, ਤਾਂ ਤੁਹਾਨੂੰ ਇਸ ਨੂੰ ਬੰਦ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ.
   wwctsOnSender: ਸਾਈਨ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਇਸ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਸਾਈਨ 'ਤੇ ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ!
@@ -438,7 +439,7 @@ Messages:
     ਲਈ.
   wwcConfigErrorsToIgnoreInvalid: ਗਲਤ ਅਨੁਵਾਦਕ ਗਲਤੀ config.yml ਵਿੱਚ ਸੈੱਟ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼
     ਕਰਨ ਲਈ. ਡਿਫੌਲਟਸ ਰਜਿਸਟਰ ਕਰਨਾ...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: ਸਫਲਤਾਪੂਰਵਕ ਅਨੁਵਾਦਕ ਦੀਆਂ ਗਲਤੀਆਂ ਨੂੰ ਵਾਕਾਂਸ਼ਾਂ
     ਨੂੰ ਨਜ਼ਰ ਅੰਦਾਜ਼ ਕਰਨ ਲਈ ਬਦਲ ਦਿੱਤਾ.
   wwcConfigGUIIgnoreErrorsButton: ਅਣਡਿੱਠ ਕਰਨ ਲਈ ਗਲਤੀਆਂ ਬਦਲੋ
@@ -449,7 +450,7 @@ Messages:
     ਨਹੀਂ ਕਰੇਗੀ.'
   wwcConfigConversationIgnoreErrorsCleared: ਵਾਕਾਂਸ਼ਾਂ ਨੂੰ ਨਜ਼ਰ ਅੰਦਾਜ਼ ਕਰਨ ਲਈ ਅਨੁਵਾਦਕ
     ਗਲਤੀਆਂ ਸਫਲਤਾਪੂਰਵਕ ਸਾਫ ਹੋ ਗਈਆਂ.
-
+  
   wwcsActiveTransPrevRate: 'ਕਿਰਿਆਸ਼ੀਲ ਅਨੁਵਾਦਕ ਪਿਛਲੀ ਦਰ ਸੀਮਾ ਸਮਾਂ: {0}'
   wwcsActiveTransSaved: 'ਐਕਟਿਵ ਅਨੁਵਾਦਕ ਡਿਸਕ ਤੇ ਸੁਰੱਖਿਅਤ: {0}'
   wwcsActiveTransIncoming: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਇਨਕਿਮੰਗ ਚੈਟ ਦਾ ਅਨੁਵਾਦ: {0}'
@@ -463,4 +464,6 @@ Messages:
   wwcsActiveTransOutgoing: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਅਨੁਵਾਦ ਬਾਹਰ ਜਾਣ ਵਾਲੀ ਚੈਟ: {0}'
   wwcsActiveTransItem: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਅਨੁਵਾਦ ਆਈਟਮ: {0}'
   wwcsActiveTransEntity: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਅਨੁਵਾਦਕ ਇਕਾਈ: {0}'
+  wwcSupportedServer: '{0} ਲਈ ਵਰਲਡਵਾਈਡਚੈਟ ਸ਼ੁਰੂ ਕਰ ਰਿਹਾ ਹੈ...'
+  wwcSupportedVersion: ਵਰਜਨ ਲਈ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਨੂੰ ਸਮਰੱਥ ਕਰਨਾ {0}...
 

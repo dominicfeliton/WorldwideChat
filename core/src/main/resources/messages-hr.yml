@@ -53,8 +53,8 @@ Messages:
   wwcConfigGUIQuitButton: Izlaz i spremanje promjena
   wwctPlayerNotFound: Igrač % nisam pronašao.
   wwcConfigGUIAmazonTranslateRegionButton: Promijeni Amazonsku regiju
-  wwcConfigConversationLangInput: 'Trenutni jezik dodatka je {0}. Unesite valjani jezični
-    kôd ili upišite 0 za otkazivanje. Važeći jezični kodovi: {0}'
+  wwcConfigConversationLangInput: 'Trenutni jezik dodatka je {0}. Unesite valjani
+    jezični kôd ili upišite 0 za otkazivanje. Važeći jezični kodovi: {0}'
   wwcConfigConversationLangInvalid: Nevažeći jezični kod!
   wwcConfigGUIWatsonAPIKeyButton: Promijeni Watson API ključ
   wwcEnabled: Omogućena WorldwideChat inačica {0}.
@@ -88,8 +88,8 @@ Messages:
   wwctGUITranslationButton: Pokreni prevođenje
   wwctGUIAutoDetectButton: Automatsko otkrivanje izvornog jezika
   wwcUpdaterUpToDate: WorldwideChat je ažuriran!
-  wwcConfigConversationAmazonTranslateRegionInput: Trenutna regija je {0}. Molimo unesite
-    regiju za Amazon, ili upišite 0 da biste se vratili.
+  wwcConfigConversationAmazonTranslateRegionInput: Trenutna regija je {0}. Molimo
+    unesite regiju za Amazon, ili upišite 0 da biste se vratili.
   wwcNoConsole: Ovu naredbu može upravljati samo igrač.
   wwcInitializationFail: Nije uspjelo inicijalizirati WorldwideChat.
   wwcrSuccess: Uspješno ponovno učitan WorldwideChat.
@@ -283,8 +283,8 @@ Messages:
     do {0}.
   wwctAutoTranslateStartOtherPlayer: Pokretanje nove sesije prijevoda za {0} do {1}.
   wwctTranslationStopped: Prevoditeljska sesija je zaustavljena.
-  wwctLangToLangStartOtherPlayer: Pokretanje nove sesije prevođenja za {0} od {1} do
-    {0}.
+  wwctLangToLangStartOtherPlayer: Pokretanje nove sesije prevođenja za {0} od {1}
+    do {0}.
   wwctAutoTranslateStart: Pokretanje nove sesije prijevoda na {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Imate aktivnu sesiju prijevoda na
     {0}.
@@ -336,12 +336,12 @@ Messages:
   wwcConfigGUISQLPortButton: Promjena SQL priključka
   wwcConfigGUISQLOptionalArgsButton: Promjena SQL neobaveznih argumenata
   wwcConfigConversationToggleSQLSSLSuccess: SSL za SQL uspješno prešao.
-  wwcConfigConversationSQLPortInput: Trenutni priključak je {0}. Upišite bilo što osim
-    0 da biste postavili novi priključak ili upišite 0 da biste se vratili.
+  wwcConfigConversationSQLPortInput: Trenutni priključak je {0}. Upišite bilo što
+    osim 0 da biste postavili novi priključak ili upišite 0 da biste se vratili.
   wwcConfigGUISQLPasswordButton: Promjena SQL lozinke
   wwcConfigConversationSQLHostnameSuccess: Uspješno je promijenio SQL naziv hosta.
-  wwcConfigConversationSQLHostnameInput: Trenutni naziv hosta je {0}. Upišite sve osim
-    0 da biste postavili novi naziv hosta ili upišite 0 da biste se vratili.
+  wwcConfigConversationSQLHostnameInput: Trenutni naziv hosta je {0}. Upišite sve
+    osim 0 da biste postavili novi naziv hosta ili upišite 0 da biste se vratili.
   wwcConfigGUISQLHostnameButton: Promijeni SQL naziv hosta
   wwcConfigConversationSQLOptionalArgsSuccess: Uspješno je promijenio izborne SQL
     argumente.
@@ -359,9 +359,9 @@ Messages:
   wwcConfigConversationSQLOptionalArgsInput: 'Trenutni neobavezni SQL argumenti su:
     {0}. Upišite argumente odvojene zarezom (ključ=vrijednost, key2=value2) ili upišite
     jasno da biste obrisali trenutne argove ili upišite 0 da biste se vratili.'
-  wwcConfigConversationSQLDatabaseNameInput: Trenutni naziv baze podataka je {0}. Upišite
-    sve osim 0 da biste postavili novi naziv baze podataka ili upišite 0 da biste
-    se vratili.
+  wwcConfigConversationSQLDatabaseNameInput: Trenutni naziv baze podataka je {0}.
+    Upišite sve osim 0 da biste postavili novi naziv baze podataka ili upišite 0 da
+    biste se vratili.
   wwcConfigGUISQLDatabaseNameButton: Promijeni SQL bazu podataka
   wwcConfigConversationSQLDatabaseNameSuccess: Uspješno je promijenio naziv SQL baze
     podataka.
@@ -401,8 +401,8 @@ Messages:
     drugo osim 0 da biste postavili novi port ili upišite 0 za povratak.
   wwcConfigConversationToggleMongoSuccess: MongoDB se uspješno ukložio. Ponovno učitaj
     da bi promjena stupila na snagu.
-  wwcConfigConversationMongoHostnameInput: Trenutačni naziv hosta je {0}. Upišite bilo
-    što drugo osim 0 da biste postavili novo ime hosta ili upišite 0 za povratak.
+  wwcConfigConversationMongoHostnameInput: Trenutačni naziv hosta je {0}. Upišite
+    bilo što drugo osim 0 da biste postavili novo ime hosta ili upišite 0 za povratak.
   wwcConfigConversationMongoHostnameSuccess: Uspješno je promijenio ime hosta MongoDB.
   wwcConfigGUIMongoMenuButton: Promjena MongoDB postavki
   wwcConfigGUIToggleMongoButton: Prebaci MongoDB
@@ -442,17 +442,18 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Uspješno registrirani prevoditelj pogreške ignorirati.
   wwcConfigErrorsToIgnoreInvalid: Nevažeći prevoditelj pogreške ignorirati postaviti
     u config.yml. Registracija zadanih postavki...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Uspješno promijenio pogreške prevoditelja
     ignorirati fraze.
   wwcConfigGUIIgnoreErrorsButton: Promjena pogrešaka za zanemarivanje
   wwcConfigConversationIgnoreErrorsInput: 'Trenutni popis fraza u pogreškama prevoditelja
-    koje treba zanemariti je: {0}. Upišite argumente odvojene zarezom (key=value, key2=value2)
-    ili upišite jasno da biste izbrisali trenutne argove ili upišite 0 za povratak.
-    Uz to, tipkanje "*" uzrokovat će da dodatak ne provjerava pogreške prevoditelja.'
+    koje treba zanemariti je: {0}. Upišite argumente odvojene zarezom (key=value,
+    key2=value2) ili upišite jasno da biste izbrisali trenutne argove ili upišite
+    0 za povratak. Uz to, tipkanje "*" uzrokovat će da dodatak ne provjerava pogreške
+    prevoditelja.'
   wwcConfigConversationIgnoreErrorsCleared: Prevoditelj pogreške ignorirati fraze
     izbrisani uspješno.
-
+  
   wwcsActiveTransPrevRate: 'Prethodno ograničenje brzine aktivnog prevoditelja: {0}'
   wwcsActiveTransSaved: 'Aktivni prevoditelj spremljen na disk: {0}'
   wwcsActiveTransIncoming: 'Aktivni Prevoditelj Prevođenje Dolazni Chat: {0}'
@@ -466,4 +467,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktivni Prevoditelj Prevođenje Odlazni Chat: {0}'
   wwcsActiveTransItem: 'Aktivni prevoditelj Prevođenje Stavka: {0}'
   wwcsActiveTransEntity: 'Aktivni prevoditelj Prevođenje entiteta: {0}'
+  wwcSupportedServer: Inicijalizacija WorldwideChat za {0}...
+  wwcSupportedVersion: Omogućavanje značajki za verziju {0}...
 

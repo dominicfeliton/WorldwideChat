@@ -52,8 +52,9 @@ Messages:
   wwcConfigGUIQuitButton: എക്സിറ്റ് & മാറ്റങ്ങൾ സംരക്ഷിക്കുക
   wwctPlayerNotFound: കളിക്കാരന് % ഞാൻ കണ്ടെത്തിയില്ല.
   wwcConfigGUIAmazonTranslateRegionButton: ആമസോൺ റീജിയൺ മാറ്റുക
-  wwcConfigConversationLangInput: 'നിലവിലെ പ്ലഗിൻ ഭാഷ {0} ആണ്, ദയവായി ഒരു സാധുവായ ഭാഷാ
-    കോഡ് നൽകുക, അല്ലെങ്കിൽ റദ്ദാക്കാൻ 0 ടൈപ്പ് ചെയ്യുക. സാധുവായ ഭാഷാ കോഡുകൾ: {0}'
+  wwcConfigConversationLangInput: 'നിലവിലെ പ്ലഗിൻ ഭാഷ {0} ആണ്, ദയവായി ഒരു സാധുവായ
+    ഭാഷാ കോഡ് നൽകുക, അല്ലെങ്കിൽ റദ്ദാക്കാൻ 0 ടൈപ്പ് ചെയ്യുക. സാധുവായ ഭാഷാ കോഡുകൾ:
+    {0}'
   wwcConfigConversationLangInvalid: അസാധുവായ ഭാഷാ കോഡ്!
   wwcConfigGUIWatsonAPIKeyButton: വാട്സൺ എപിഐ കീ മാറ്റുക
   wwcEnabled: പ്രാപ്തമാക്കി ചാറ്റ് പതിപ്പ് {0}.
@@ -79,8 +80,8 @@ Messages:
     ദൈർഘ്യമേറിയതാണ്. പരിഭാഷ:'
   wwctsOnTarget: സൈൻ വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി {0}.
   wwcConfigCacheDisabled: പരിഭാഷകൻ കാഷെ അപ്രാപ്തമാക്കി.
-  wwcConfigConversationWatsonURLInput: നിലവിലെ URL {0} ആണ് വാട്സണിലെ ഒരു സേവന URL ഇൻപുട്ട്
-    ചെയ്യുക അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigConversationWatsonURLInput: നിലവിലെ URL {0} ആണ് വാട്സണിലെ ഒരു സേവന URL
+    ഇൻപുട്ട് ചെയ്യുക അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
   wwcBookDone: പുസ്തകം വിജയകരമായി വിവർത്തനം ചെയ്തു.
   wwctsOnSender: സൈൻ വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. ഇത് വിവർത്തനം ചെയ്യുന്നതിന് ഒരു
     ചിഹ്നത്തിൽ വലത്-ക്ലിക്കുചെയ്യുക!
@@ -127,8 +128,9 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationSourceLang: ആഗോള ചാറ്റിൽ {0} മുതൽ {1} ലേക്ക്
     വിവർത്തനം ചെയ്യപ്പെടുന്നു.
   wwcConfigGUITranslatorSettings: പരിഭാഷകൻ കോൺഫിഗറേഷൻ
-  wwcConfigConversationGoogleTranslateAPIKeyInput: നിലവിലെ API കീ {0} ആണ്, Google വിവർത്തനത്തിനായുള്ള
-    ഒരു API കീ ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigConversationGoogleTranslateAPIKeyInput: നിലവിലെ API കീ {0} ആണ്, Google
+    വിവർത്തനത്തിനായുള്ള ഒരു API കീ ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ്
+    ചെയ്യുക.
   wwcConfigConversationRateLimitInput: ഓരോ വിവർത്തനത്തിനും നിലവിലെ ആഗോള നിരക്ക് പരിധിയെ
     {0} സെക്കൻഡ് ആണ്. ഒരു പുതിയ മൂല്യം സജ്ജമാക്കുന്നതിന് 0 ൽ കൂടുതലുള്ള എന്തും ടൈപ്പുചെയ്യുക,
     അല്ലെങ്കിൽ പരിധി അപ്രാപ്തമാക്കാൻ 0 ടൈപ്പ് ചെയ്യുക. തിരികെ പോകാൻ 0 കുറവ് ഒന്നും
@@ -182,8 +184,8 @@ Messages:
   wwcConfigCacheInvalid: പരിഭാഷകൻ കാഷെ വലുപ്പം അസാധുവാണ്. 10 ലേക്ക് സ്ഥിരസ്ഥിതിയായി...
   wwcInventoryErrorPlayer: നിങ്ങളുടെ ജിയുഐ ഉപയോഗിച്ച് പിശക് കണ്ടെത്തി. ഒരു ലോഗ് കൺസോളിലേക്ക്
     അയച്ചു.
-  wwcInventoryError: ഉപയോക്താവിന്റെ {0} ന്റെ GUI ഉപയോഗിച്ചുള്ള പിശക് കണ്ടെത്തിയത് {1}
-    ഈ പ്രശ്നം ഡവലപ്പർക്ക് റിപ്പോർട്ട് ചെയ്യുക.
+  wwcInventoryError: ഉപയോക്താവിന്റെ {0} ന്റെ GUI ഉപയോഗിച്ചുള്ള പിശക് കണ്ടെത്തിയത്
+    {1} ഈ പ്രശ്നം ഡവലപ്പർക്ക് റിപ്പോർട്ട് ചെയ്യുക.
   wwctiOffTarget: ഇനം പരിഭാഷ {0} ന് അപ്രാപ്തമാക്കി.
   wwctiOffSender: ഇനം വിവർത്തനം അപ്രാപ്തമാക്കി.
   wwcItemTranslateTitleStock: സ്ഥിര ഇനം പേരുകൾ വിവർത്തനം ചെയ്യാൻ കഴിയുന്നില്ല.
@@ -257,7 +259,8 @@ Messages:
   wwcteOnSender: എന്റിറ്റി വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. അതിന്റെ പേര് വിവർത്തനം ചെയ്യുന്നതിന്
     ഒരു എന്റിറ്റിയിൽ റൈറ്റ് ക്ലിക്ക് ചെയ്യുക!
   wwcConfigGUIResponseLimitButton: വിവർത്തകന്റെ പ്രതികരണ സമയപരിധി മാറ്റുക
-  wwcConfigMessageCharLimitEnabled: ഓരോ സന്ദേശത്തിനും പ്രതീക പരിധി {0} പ്രതീകങ്ങൾ സജ്ജമാക്കി.
+  wwcConfigMessageCharLimitEnabled: ഓരോ സന്ദേശത്തിനും പ്രതീക പരിധി {0} പ്രതീകങ്ങൾ
+    സജ്ജമാക്കി.
   wwcteOffTarget: എന്റിറ്റി വിവർത്തനം {0} ന് അപ്രാപ്തമാക്കി.
   wwcCharLimit: നിങ്ങളുടെ സന്ദേശം ദൈർഘ്യമേറിയതാണ്! നിങ്ങളുടെ സന്ദേശം {0} പ്രതീകങ്ങളേക്കാൾ
     കുറവാണെന്ന് ഉറപ്പുവരുത്തുക.
@@ -278,7 +281,8 @@ Messages:
   wwctLangToLangStart: '{0} മുതൽ {1} മുതൽ {2} ലേക്ക് ഒരു പുതിയ പരിഭാഷാ സെഷൻ ആരംഭിക്കുന്നു.'
   wwcOnJoinTranslationNotificationSourceLang: നിങ്ങൾ {0} മുതൽ {1} ൽ നിന്ന് ഒരു സജീവ
     പരിഭാഷാ സെഷൻ ഉണ്ട്.
-  wwctAutoTranslateStartOtherPlayer: '{0} ലേക്ക് {1} ലേക്ക് ഒരു പുതിയ പരിഭാഷാ സെഷൻ ആരംഭിക്കുന്നു.'
+  wwctAutoTranslateStartOtherPlayer: '{0} ലേക്ക് {1} ലേക്ക് ഒരു പുതിയ പരിഭാഷാ സെഷൻ
+    ആരംഭിക്കുന്നു.'
   wwctTranslationStopped: നിങ്ങളുടെ വിവർത്തന സെഷൻ നിർത്തി.
   wwctLangToLangStartOtherPlayer: '{0} മുതൽ {1} മുതൽ {2} എന്നതിനായി ഒരു പുതിയ പരിഭാഷാ
     സെഷൻ ആരംഭിക്കുന്നു.'
@@ -341,9 +345,9 @@ Messages:
     0 അല്ലാതെ മറ്റൊന്നും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
   wwcConfigGUISQLPasswordButton: SQL പാസ്വേഡ് മാറ്റുക
   wwcConfigConversationSQLHostnameSuccess: വിജയകരമായി SQL ഹോസ്റ്റ്നെയിം മാറ്റി.
-  wwcConfigConversationSQLHostnameInput: നിലവിലെ ഹോസ്റ്റ്നെയിം {0} ആണ്. ഒരു പുതിയ ഹോസ്റ്റ്നെയിം
-    സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റൊന്നും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ്
-    ചെയ്യുക.
+  wwcConfigConversationSQLHostnameInput: നിലവിലെ ഹോസ്റ്റ്നെയിം {0} ആണ്. ഒരു പുതിയ
+    ഹോസ്റ്റ്നെയിം സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റൊന്നും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ
+    പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
   wwcConfigGUISQLHostnameButton: SQL ഹോസ്റ്റ്നെയിം മാറ്റുക
   wwcConfigConversationSQLOptionalArgsSuccess: വിജയകരമായി ഓപ്ഷണൽ SQL വാദങ്ങൾ മാറ്റി.
   wwcConfigConversationSQLPasswordSuccess: SQL പാസ്വേഡ് വിജയകരമായി മാറ്റി.
@@ -362,8 +366,8 @@ Messages:
     ഒരു കോമ (key=value, key2=value2) ഉപയോഗിച്ച് വേർതിരിച്ച വാദങ്ങൾ ടൈപ്പ് ചെയ്യുക,
     അല്ലെങ്കിൽ നിലവിലെ ആർഗുകൾ തുടച്ചുമാറ്റാൻ ക്ലിയർ ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ
     പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.'
-  wwcConfigConversationSQLDatabaseNameInput: നിലവിലെ ഡാറ്റാബേസിന്റെ പേര് {0} ആണ്. ഒരു
-    പുതിയ ഡാറ്റാബേസ് നാമം സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റൊന്നും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ
+  wwcConfigConversationSQLDatabaseNameInput: നിലവിലെ ഡാറ്റാബേസിന്റെ പേര് {0} ആണ്.
+    ഒരു പുതിയ ഡാറ്റാബേസ് നാമം സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റൊന്നും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ
     തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
   wwcConfigGUISQLDatabaseNameButton: SQL ഡാറ്റാബേസ് മാറ്റുക
   wwcConfigConversationSQLDatabaseNameSuccess: SQL ഡാറ്റാബേസ് നാമം വിജയകരമായി മാറ്റി.
@@ -387,8 +391,8 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: വിജയകരമായി ലിബ്രെ വിവർത്തനം ടോഗിൾ.
     മാറ്റങ്ങൾ പ്രാബല്യത്തിൽ വരുന്നതിന് വീണ്ടും ലോഡുചെയ്യുക.
   wwcConfigConversationLibreTranslateApiKeySuccess: വിജയകരമായി സ്വതന്ത്ര API കീ സെറ്റ്.
-  wwcConfigConversationLibreURLInput: നിലവിലെ URL {0} ആണ്. Libre- നായി ദയവായി ഒരു URL
-    ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
+  wwcConfigConversationLibreURLInput: നിലവിലെ URL {0} ആണ്. Libre- നായി ദയവായി ഒരു
+    URL ഇൻപുട്ട് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
   libreHttpUnknown: 'അജ്ഞാതമായ http പിശക്: {0}'
   wwcConfigGUILibreTranslateURLButton: മാറ്റുക സ്വതന്ത്ര URL വിവർത്തനം
   wwcConfigConnectionFail: '{0} ലേക്ക് കണക്റ്റുചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.'
@@ -447,7 +451,7 @@ Messages:
     പിശകുകൾ.
   wwcConfigErrorsToIgnoreInvalid: config.yml ൽ സജ്ജമാക്കിയ അവഗണിക്കാൻ അസാധുവായ പരിഭാഷകൻ
     പിശകുകൾ. സ്ഥിരസ്ഥിതികൾ രജിസ്റ്റർ ചെയ്യുന്നു...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: ശൈലികൾ അവഗണിക്കാൻ വിവർത്തകൻ പിശകുകൾ വിജയകരമായി
     മാറ്റി.
   wwcConfigGUIIgnoreErrorsButton: അവഗണിക്കാൻ പിശകുകൾ മാറ്റുക
@@ -459,7 +463,7 @@ Messages:
     ഇടയാക്കും.'
   wwcConfigConversationIgnoreErrorsCleared: വിജയകരമായി മായ്ച്ചു ശൈലികൾ അവഗണിക്കാൻ
     വിവർത്തകൻ പിശകുകൾ.
-
+  
   wwcsActiveTransPrevRate: 'സജീവ വിവർത്തകൻ മുമ്പത്തെ നിരക്ക് പരിധി സമയം: {0}'
   wwcsActiveTransSaved: 'സജീവ പരിഭാഷകന് ഡിസ്കിലേക്ക് സംരക്ഷിച്ചു: {0}'
   wwcsActiveTransIncoming: 'സജീവ പരിഭാഷകൻ ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം ചെയ്യുന്നു: {0}'
@@ -474,4 +478,6 @@ Messages:
     {0}'
   wwcsActiveTransItem: 'സജീവ വിവർത്തകൻ വിവർത്തനം ചെയ്യുന്ന ഇനം: {0}'
   wwcsActiveTransEntity: 'സജീവ പരിഭാഷകൻ വിവർത്തനം ചെയ്യുന്ന എന്റിറ്റി: {0}'
+  wwcSupportedServer: '{0} എന്നതിനായി വേൾഡ്വൈഡ് ചാറ്റ് ആരംഭിക്കുക...'
+  wwcSupportedVersion: പതിപ്പ് {0} സവിശേഷതകൾ പ്രാപ്തമാക്കുന്നു...
 

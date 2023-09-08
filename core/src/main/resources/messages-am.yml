@@ -47,8 +47,8 @@ Messages:
   wwcConfigGUIQuitButton: ለውጦችን ውጣ እና አስቀምጥ
   wwctPlayerNotFound: ተጫዋች %እኔ አልተገኘም።
   wwcConfigGUIAmazonTranslateRegionButton: የአማዞን ክልል ቀይር
-  wwcConfigConversationLangInput: 'አሁን ያለው ተሰኪ ቋንቋ {0} ነው። እባክዎ ትክክለኛ የሆነ የቋንቋ ኮድ ያስገቡ
-    ወይም ለመሰረዝ 0 ይተይቡ። ትክክለኛ የቋንቋ ኮዶች: {0}'
+  wwcConfigConversationLangInput: 'አሁን ያለው ተሰኪ ቋንቋ {0} ነው። እባክዎ ትክክለኛ የሆነ የቋንቋ ኮድ
+    ያስገቡ ወይም ለመሰረዝ 0 ይተይቡ። ትክክለኛ የቋንቋ ኮዶች: {0}'
   wwcConfigConversationLangInvalid: ልክ ያልሆነ የቋንቋ ኮድ!
   wwcConfigGUIWatsonAPIKeyButton: ዋትሰን ኤፒአይ ቁልፍ ይቀይሩ
   wwcEnabled: የነቃ የዓለም WideChat ስሪት {0}።
@@ -110,7 +110,8 @@ Messages:
   wwcConfigGUIWatsonURLButton: ዋትሰን አገልግሎት ዩአርኤል ይቀይሩ
   wwcConfigConversationUpdateCheckerSuccess: አዘምን ቼከር መዘግየት በተሳካ ሁኔታ ማዘጋጀት።
   wwcUnsupportedVersion: 'የማይደገፍ የ Bukkit ስሪት, Spigot, ወይም ወረቀት እያሄዱ ነው። የሚደገፉ ስሪቶች:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: ግሎባል ውይይት ከ {0} ወደ {1} እየተተረጎመ ነው።
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ግሎባል ውይይት ከ {0} ወደ {1} እየተተረጎመ
+    ነው።
   wwcConfigGUITranslatorSettings: ተርጓሚ ውቅር
   wwcConfigConversationGoogleTranslateAPIKeyInput: የአሁኑ ኤፒአይ ቁልፍ {0} ነው። እባክዎ የኤ ፒ
     አይ ቁልፍ ለGoogle ተርጉም፣ ወይም ተይብ 0 ተመልሰው ይሂዱ።
@@ -145,9 +146,9 @@ Messages:
   wwctrlNotATranslator: ንቁ ተርጓሚ አይደለህም! ይህንን በ /wwctላይ ማዋቀሩን ያረጋግጡ።
   wwctrlRateLimitAlreadyOffSender: የእርስዎ ተመን ገደብ አስቀድሞ ተሰናክሏል።
   wwctGUIRateButton: የደረጃ ገደብ አዘጋጅ
-  wwctGUIConversationRateLimit: በትርጉሙ ውስጥ ያለው የፍጥነት ገደብ በአሁኑ ጊዜ ነው {0} ሰከንዶች። አዲስ እሴት
-    ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ገደቡን ለማሰናከል 0 ይተይቡ። ወደ ኋላ ለመመለስ ከ 0 በታች የሆነ ነገር
-    ይተይቡ።
+  wwctGUIConversationRateLimit: በትርጉሙ ውስጥ ያለው የፍጥነት ገደብ በአሁኑ ጊዜ ነው {0} ሰከንዶች። አዲስ
+    እሴት ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ገደቡን ለማሰናከል 0 ይተይቡ። ወደ ኋላ ለመመለስ ከ 0 በታች የሆነ
+    ነገር ይተይቡ።
   wwctGUITargetPlayerNull: ዒላማው አጫዋች ከአገልጋዩ ተለያይቷል።
   wwcConfigConversationSyncUserDataDelayInput: የአሁኑ መዘግየት የተጠቃሚ ውሂብ ማመሳሰል የ {0} ሰከንዶች
     ነው። አዲስ እሴት ለማዘጋጀት ከ 10 በላይ የሆነ ነገር ይተይቡ, ወይም ከ 10 ያነሰ ማንኛውም ነገር ወደ ኋላ ለመመለስ።
@@ -227,8 +228,9 @@ Messages:
   wwcConfigMessageCharLimitEnabled: የቁምፊ ገደብ በአንድ መልዕክት ተዘጋጅቷል ወደ {0} ቁምፊዎች
   wwcteOffTarget: የአካል ትርጉም ተሰናክሏል ለ {0}።
   wwcCharLimit: መልዕክትዎ በጣም ረጅም ነው! እባክዎ መልዕክትዎ ርዝመት {0} ቁምፊዎች ያነሰ መሆኑን ያረጋግጡ።
-  wwcConfigConversationCharacterLimitInput: አሁን ያለው የቁምፊ ገደብ በአንድ መልዕክት {0} ቁምፊዎች ነው።
-    አዲስ እሴት ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ወደ ኋላ ለመመለስ ከ 0 ያነሰ ወይም እኩል የሆነ ነገር ይተይቡ።
+  wwcConfigConversationCharacterLimitInput: አሁን ያለው የቁምፊ ገደብ በአንድ መልዕክት {0} ቁምፊዎች
+    ነው። አዲስ እሴት ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ወደ ኋላ ለመመለስ ከ 0 ያነሰ ወይም እኩል የሆነ ነገር
+    ይተይቡ።
   wwcteOffSender: የአካል ትርጉም ተሰናክሏል።
   wwctGUIEntityButton: የመቀያየሪያ አካል ትርጉም
   wwctrlRateLimitBadInt: የእርስዎ ተመን ገደብ ትክክለኛ ኢንቲጀር አይደለም።
@@ -301,8 +303,8 @@ Messages:
   wwcConfigGUISQLHostnameButton: SQL አስተናጋጅ ስም ይቀይሩ
   wwcConfigConversationSQLOptionalArgsSuccess: በተሳካ ሁኔታ አማራጭ SQL እሴቶች ተለውጧል።
   wwcConfigConversationSQLPasswordSuccess: የ SQL ይለፍ ቃል በተሳካ ሁኔታ ቀይሯል።
-  wwcConfigConversationSQLPasswordInput: የአሁኑ የይለፍ ቃል ነው {0} አዲስ የይለፍ ቃል ለማዘጋጀት ከ 0
-    ሌላ ማንኛውንም ነገር ይተይቡ ወይም ወደ ኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigConversationSQLPasswordInput: የአሁኑ የይለፍ ቃል ነው {0} አዲስ የይለፍ ቃል ለማዘጋጀት ከ
+    0 ሌላ ማንኛውንም ነገር ይተይቡ ወይም ወደ ኋላ ለመመለስ 0 ይተይቡ።
   wwcConfigGUIToggleSQLSSLButton: SQL SSL ን ቀይር
   wwcConfigConversationSQLUsernameSuccess: የ SQL የተጠቃሚ ስም በተሳካ ሁኔታ ቀይሯል።
   wwcConfigConversationSQLUsernameInput: የአሁኑ የተጠቃሚ ስም ነው {0} ነው። አዲስ የተጠቃሚ ስም ለማዘጋጀት
@@ -346,12 +348,12 @@ Messages:
   wwcConfigGUIMongoHostnameButton: MongoDB አስተናጋጅ ስም ይቀይሩ
   wwcConfigConversationMongoPasswordInput: የአሁኑ የይለፍ ቃል {0} ነው። አዲስ የይለፍ ቃል ለማዘጋጀት
     ከ 0 ሌላ ነገር ይተይቡ ወይም ወደኋላ ለመመለስ 0 ይተይቡ።
-  wwcConfigConversationMongoPortInput: የአሁኑ ወደብ {0} ነው። አዲስ ወደብ ለማዘጋጀት ከ 0 ሌላ ነገር ይተይቡ
-    ወይም ተመልሰው ለመመለስ 0 ይተይቡ።
+  wwcConfigConversationMongoPortInput: የአሁኑ ወደብ {0} ነው። አዲስ ወደብ ለማዘጋጀት ከ 0 ሌላ ነገር
+    ይተይቡ ወይም ተመልሰው ለመመለስ 0 ይተይቡ።
   wwcConfigConversationToggleMongoSuccess: MongoDB በተሳካ ሁኔታ ቀይረዋል። ለውጡ ተግባራዊ እንዲሆን
     ዳግመኛ ይጫኑ።
-  wwcConfigConversationMongoHostnameInput: የአሁኑ የአስተናጋጅ ስም {0} ነው። አዲስ የአስተናጋጅ ስም ለማዘጋጀት
-    ከ 0 ሌላ ነገር ይተይቡ ወይም ወደኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigConversationMongoHostnameInput: የአሁኑ የአስተናጋጅ ስም {0} ነው። አዲስ የአስተናጋጅ ስም
+    ለማዘጋጀት ከ 0 ሌላ ነገር ይተይቡ ወይም ወደኋላ ለመመለስ 0 ይተይቡ።
   wwcConfigConversationMongoHostnameSuccess: የ MongoDB አስተናጋጅ ስሙን በተሳካ ሁኔታ ቀይሯል።
   wwcConfigGUIMongoMenuButton: የ MongoDB ቅንብሮችን ይቀይሩ
   wwcConfigGUIToggleMongoButton: ሞንጎዴብ መቀያየር
@@ -386,14 +388,15 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: ችላ በተሳካ ሁኔታ ተርጓሚ ስህተቶች የተመዘገቡ።
   wwcConfigErrorsToIgnoreInvalid: በ config.yml ውስጥ ተዘጋጅቷል ችላ ለማለት ልክ ያልሆነ ተርጓሚ ስህተቶች።
     ነባሪዎች በመመዝገብ ላይ...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: ሐረጎችን ችላ ለማለት የተርጓሚውን ስህተቶች በተሳካ ሁኔታ ቀይረዋል።
   wwcConfigGUIIgnoreErrorsButton: ችላ ለማለት ስህተቶችን ይቀይሩ
   wwcConfigConversationIgnoreErrorsInput: 'በአስተርጓሚ ስህተቶች ውስጥ አሁን ያሉት የሐረጎች ዝርዝር የሚከተሉት
-    ናቸው: {0}. በኮማ የተለዩ ክርክሮችን ይተይቡ (ቁልፍ = ዋጋ, key2=value2), ወይም የአሁኑን አርግጎች ለማጥራት ግልጽ
-    ይተይቡ, ወይም ወደኋላ ለመመለስ 0 ይተይቡ። በተጨማሪም «*» መተየብ ተሰኪው ማንኛውንም ተርጓሚ ስህተቶች እንዳያረጋግጥ ያደርገዋል።'
+    ናቸው: {0}. በኮማ የተለዩ ክርክሮችን ይተይቡ (ቁልፍ = ዋጋ, key2=value2), ወይም የአሁኑን አርግጎች ለማጥራት
+    ግልጽ ይተይቡ, ወይም ወደኋላ ለመመለስ 0 ይተይቡ። በተጨማሪም «*» መተየብ ተሰኪው ማንኛውንም ተርጓሚ ስህተቶች እንዳያረጋግጥ
+    ያደርገዋል።'
   wwcConfigConversationIgnoreErrorsCleared: በተሳካ ሁኔታ ጸድቷል ሐረጎች ችላ ተርጓሚ ስህተቶች።
-
+  
   wwcsActiveTransPrevRate: 'ንቁ ተርጓሚ ቀዳሚ ተመን ገደብ ጊዜ: {0}'
   wwcsActiveTransSaved: 'ንቁ ተርጓሚ ወደ ዲስክ ተቀምጧል: {0}'
   wwcsActiveTransIncoming: 'ንቁ ተርጓሚ ገቢ ውይይት በመተርጎም ላይ: {0}'
@@ -407,4 +410,6 @@ Messages:
   wwcsActiveTransOutgoing: 'ንቁ ተርጓሚ ወጪ ውይይት መተርጎም: {0}'
   wwcsActiveTransItem: 'ንቁ ተርጓሚ መተርጎም ንጥል: {0}'
   wwcsActiveTransEntity: 'ንቁ ተርጓሚ የትርጉም አካል: {0}'
+  wwcSupportedServer: በዓለም ዙሪያ ውይይት ለ {0} በማስጀመር ላይ...
+  wwcSupportedVersion: ለስሪት {0} ባህሪያትን ማንቃት...
 

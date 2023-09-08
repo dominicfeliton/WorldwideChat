@@ -6,9 +6,9 @@ Messages:
   wwcrFail: بارگیری مجدد WorldWidechat شکست خورد.
   wwcConfigGUIUpdateCheckerButton: بررسی تغییر برای تاخیر به روز رسانی
   wwcUpdaterFailedGeneric: قادر به بررسی به روز رسانی WorldWidechat نیست.
-  wwcConfigConversationUpdateCheckerInput: تاخیر فعلی در جستجوگر به روز رسانی {0} ثانیه
-    است. هر چیزی بزرگتر از ۱۰ را تایپ کنید تا مقدار جدید تعیین شود، یا هر چیزی کمتر
-    از ۱۰ برای بازگشت به عقب.
+  wwcConfigConversationUpdateCheckerInput: تاخیر فعلی در جستجوگر به روز رسانی {0}
+    ثانیه است. هر چیزی بزرگتر از ۱۰ را تایپ کنید تا مقدار جدید تعیین شود، یا هر چیزی
+    کمتر از ۱۰ برای بازگشت به عقب.
   wwctGUIMainMenuGlobal: منوی ترجمه جهانی
   wwcConfigConversationPluginUpdateChatSuccess: یادآوری چت به روز رسانی پلاگین با
     موفقیت togggled.
@@ -33,14 +33,15 @@ Messages:
   wwcConfigConversationLangSuccess: زبان افزونه با موفقیت تغییر کرد.
   wwcsSuccessfulTranslations: 'ترجمه های موفق: {0}'
   wwcConfigConversationTranslationCacheInput: محدودیت حافظه نهان ترجمه فعلی عبارت
-    {0} است. برای تنظیم مقدار جدید، هر چیزی بیشتر از ۰ تایپ کنید، یا برای غیرفعال کردن
-    حافظه پنهان ترجمه، تایپ ۰ کنید. هر چیزی کمتر از 0 تایپ کنید تا به عقب برگردید.
+    {0} است. برای تنظیم مقدار جدید، هر چیزی بیشتر از ۰ تایپ کنید، یا برای غیرفعال
+    کردن حافظه پنهان ترجمه، تایپ ۰ کنید. هر چیزی کمتر از 0 تایپ کنید تا به عقب برگردید.
   wwctbOffTarget: ترجمه کتاب برای {0} غیرفعال شد.
   wwcConfigGUIGeneralSettings: پیکربندی عمومی
   wwcInvalidLang: زبان نامعتبر در config.yml شما. قصور به EN...
   wwcConfigConversationAmazonTranslateRegionSuccess: منطقه آمازون با موفقیت تنظیم
     شد.
-  wwcConfigRateLimitEnabled: محدودیت نرخ جهانی فعال شده و روی {0} ثانیه تنظیم شده است.
+  wwcConfigRateLimitEnabled: محدودیت نرخ جهانی فعال شده و روی {0} ثانیه تنظیم شده
+    است.
   wwcBadPerms: شما مجوزهای لازم برای اجرای این فرمان را ندارید!
   wwcConfigGUILangButton: تغییر زبان وصله
   wwctGUISignButton: ضامن ترجمه امضا
@@ -67,8 +68,8 @@ Messages:
   wwctsOffTarget: ترجمه امضا برای {0} غیرفعال شد.
   wwcUpdaterConnectionFailed: قادر به بررسی آخرین به روز رسانی در Github نیست.
   watsonNotFoundExceptionNotification: دیگر قادر به ترجمه ورودی شما نیست.
-  wwcConfigConversationWatsonAPIKeyInput: کلید API فعلی {0} است. لطفا یک کلید API برای
-    واتسون وارد کنید، یا برای بازگشت به عقب تایپ 0 کنید.
+  wwcConfigConversationWatsonAPIKeyInput: کلید API فعلی {0} است. لطفا یک کلید API
+    برای واتسون وارد کنید، یا برای بازگشت به عقب تایپ 0 کنید.
   wwctGUIStopButton: توقف ترجمه
   wwcgTranslationStopped: ترجمه جهانی چت متوقف شده است.
   wwcUpdaterFutureDate: این نمونه از WorldWidechat دارای یک نسخه بزرگتر از آخرین نسخه
@@ -107,8 +108,8 @@ Messages:
   wwcConfigConnectionSuccess: با موفقیت به {0} متصل شد!
   wwcConfigGUIGoogleTranslateButton: گوگل ترجمه
   wwcsIsActiveTranslator: 'مترجم فعال است: {0}'
-  wwcConfigConversationPrefixInput: پیشوند فعلی {0} است. لطفا یک پیشوند جدید تایپ کنید،
-    یا برای بازگشت تایپ 0 کنید.
+  wwcConfigConversationPrefixInput: پیشوند فعلی {0} است. لطفا یک پیشوند جدید تایپ
+    کنید، یا برای بازگشت تایپ 0 کنید.
   wwcConfigGUIPreviousPageButton: صفحه قبلی
   wwcConfigGUITranslatorCacheButton: تغییر محدودیت حافظه پنهان ترجمه
   wwcConfigConversationbStatsSuccess: bStats را با موفقیت به کار برد.
@@ -123,8 +124,8 @@ Messages:
     تنظیم.
   wwcUnsupportedVersion: 'شما در حال اجرا یک نسخه پشتیبانی نشده از Bukkit، Spiget،
     و یا کاغذ. نسخه‌های پشتیبانی شده:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: گپ جهانی از {0} به {1} در حال ترجمه
-    است.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: گپ جهانی از {0} به {1} در حال
+    ترجمه است.
   wwcConfigGUITranslatorSettings: پیکربندی مترجم
   wwcConfigConversationGoogleTranslateAPIKeyInput: کلید API فعلی {0} است. لطفا کلید
     API را برای Google Translate وارد کنید، یا برای بازگشت به آن تایپ 0 کنید.
@@ -265,8 +266,8 @@ Messages:
   wwcteOffSender: ترجمه موجودیت غیرفعال شد.
   wwctGUIEntityButton: ضامن ترجمه موجودیت
   wwctrlRateLimitBadInt: محدودیت نرخ شما یک عدد صحیح معتبر نیست.
-  wwcTranslatorErrorConsole: هنگامی که کاربر {0} در حال تلاش برای ترجمه آنها بود، یک
-    مشکل رخ داد. لطفا errorLog.txt را برای جزئیات بیشتر بررسی کنید.
+  wwcTranslatorErrorConsole: هنگامی که کاربر {0} در حال تلاش برای ترجمه آنها بود،
+    یک مشکل رخ داد. لطفا errorLog.txt را برای جزئیات بیشتر بررسی کنید.
   wwctGUIChatButton: زدن ضامن ترجمه گپ
   wwcrBegin: بارگیری مجدد WorldwideChat...
   wwctTranslationStoppedOtherPlayer: جلسه ترجمه برای {0} متوقف شده است.
@@ -274,7 +275,8 @@ Messages:
     است، اما شما یک جلسه ترجمه فعال از {0} به {1} دارید.
   wwctCannotTranslateConsole: شما نمی توانید یک جلسه ترجمه را برای کنسول شروع کنید!
   wwctLangToLangStart: شروع یک جلسه ترجمه جدید از {0} به {1}.
-  wwcOnJoinTranslationNotificationSourceLang: شما یک جلسه فعال ترجمه از {0} به {1} دارید.
+  wwcOnJoinTranslationNotificationSourceLang: شما یک جلسه فعال ترجمه از {0} به {1}
+    دارید.
   wwctAutoTranslateStartOtherPlayer: شروع یک نشست ترجمه جدید برای {0} به {1}.
   wwctTranslationStopped: جلسه ترجمه شما متوقف شده است.
   wwctLangToLangStartOtherPlayer: شروع یک جلسه ترجمه جدید برای {0} از {1} به {2}.
@@ -328,8 +330,8 @@ Messages:
   wwcConfigGUISQLPortButton: تغییر درگاه SQL
   wwcConfigGUISQLOptionalArgsButton: تغییر آرگومان‌های اختیاری SQL
   wwcConfigConversationToggleSQLSSLSuccess: SSL برای SQL با موفقیت toggled.
-  wwcConfigConversationSQLPortInput: درگاه فعلی {0} است. هر چیزی غیر از 0 را برای تنظیم
-    یک پورت جدید تایپ کنید یا برای برگشت تایپ کنید.
+  wwcConfigConversationSQLPortInput: درگاه فعلی {0} است. هر چیزی غیر از 0 را برای
+    تنظیم یک پورت جدید تایپ کنید یا برای برگشت تایپ کنید.
   wwcConfigGUISQLPasswordButton: تغییر رمز عبور SQL
   wwcConfigConversationSQLHostnameSuccess: نام میزبان SQL را با موفقیت تغییر داد.
   wwcConfigConversationSQLHostnameInput: نام میزبان فعلی {0} است. هر چیزی غیر از 0
@@ -391,8 +393,8 @@ Messages:
     چیزی غیر از 0 را تایپ کنید یا 0 را برای بازگشت تایپ کنید.
   wwcConfigConversationToggleMongoSuccess: مانگودیبی با موفقیت جابجا شد. بارگذاری
     مجدد برای تغییر به اثر.
-  wwcConfigConversationMongoHostnameInput: نام میزبان فعلی {0} است برای تنظیم نام میزبان
-    جدید، هر چیزی غیر از 0 را تایپ کنید یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationMongoHostnameInput: نام میزبان فعلی {0} است برای تنظیم نام
+    میزبان جدید، هر چیزی غیر از 0 را تایپ کنید یا 0 را برای بازگشت تایپ کنید.
   wwcConfigConversationMongoHostnameSuccess: نام میزبان MongoDB را با موفقیت تغییر
     داد.
   wwcConfigGUIMongoMenuButton: تغییر تنظیمات مانگودیبی
@@ -400,11 +402,11 @@ Messages:
   wwcConfigConversationMongoDatabaseNameInput: نام پایگاه داده فعلی {0} است برای تنظیم
     نام پایگاه داده جدید، هر چیزی غیر از 0 را تایپ کنید یا 0 را برای بازگشت تایپ کنید.
   wwcConfigConversationMongoOptionalArgsInput: 'آرگومانهای MongoDB اختیاری فعلی عبارتند
-    از: {0} آرگومانهایی را که با کاما از هم جدا شده اند (key=value, key2=value2)، یا
-    برای پاک کردن آرگ های فعلی، واضح را تایپ کنید یا 0 را تایپ کنید تا به عقب برگردید.'
+    از: {0} آرگومانهایی را که با کاما از هم جدا شده اند (key=value, key2=value2)،
+    یا برای پاک کردن آرگ های فعلی، واضح را تایپ کنید یا 0 را تایپ کنید تا به عقب برگردید.'
   wwcConfigGUIMongoDatabaseNameButton: تغییر پایگاه داده مانگودیبی
-  wwcConfigConversationMongoUsernameInput: نام کاربری فعلی {0} است برای تنظیم نام کاربری
-    جدید، هر چیزی غیر از 0 را تایپ کنید یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationMongoUsernameInput: نام کاربری فعلی {0} است برای تنظیم نام
+    کاربری جدید، هر چیزی غیر از 0 را تایپ کنید یا 0 را برای بازگشت تایپ کنید.
   wwcConfigGUIMongoOptionalArgsButton: تغییر آرگومانهای اختیاری MongoDB
   wwcConfigConversationMongoUsernameSuccess: نام کاربری MongoDB را با موفقیت تغییر
     داد.
@@ -433,18 +435,18 @@ Messages:
     شود.
   wwcConfigErrorsToIgnoreInvalid: خطاهای ترجمه نامعتبر به چشم پوشی در config.yml تنظیم
     شده است. ثبت پیش فرض...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: خطاهای مترجم را با موفقیت تغییر داد تا
     عبارات را نادیده بگیرد.
   wwcConfigGUIIgnoreErrorsButton: تغییر خطاها برای نادیده گرفتن
   wwcConfigConversationIgnoreErrorsInput: 'لیست فعلی عبارات در خطاهای مترجم که باید
-    نادیده گرفته شوند عبارتند از: {0} آرگومانهایی را که با کاما از هم جدا شده اند (key=value,
-    key2=value2)، یا برای پاک کردن آرگ های فعلی پاک کنید، یا برای بازگشت به عقب، 0
-    را تایپ کنید. علاوه بر این، تایپ کردن «*» باعث می شود که افزونه هیچ خطای مترجم
-    را بررسی نکند.'
+    نادیده گرفته شوند عبارتند از: {0} آرگومانهایی را که با کاما از هم جدا شده اند
+    (key=value, key2=value2)، یا برای پاک کردن آرگ های فعلی پاک کنید، یا برای بازگشت
+    به عقب، 0 را تایپ کنید. علاوه بر این، تایپ کردن «*» باعث می شود که افزونه هیچ
+    خطای مترجم را بررسی نکند.'
   wwcConfigConversationIgnoreErrorsCleared: خطاهای مترجم برای نادیده گرفتن عبارات
     با موفقیت پاک شد.
-
+  
   wwcsActiveTransPrevRate: 'مترجم فعال زمان محدودیت نرخ قبلی: {0}'
   wwcsActiveTransSaved: 'مترجم فعال ذخیره شده در دیسک: {0}'
   wwcsActiveTransIncoming: 'مترجم فعال در حال ترجمه گفتگوی ورودی: {0}'
@@ -458,4 +460,6 @@ Messages:
   wwcsActiveTransOutgoing: 'مترجم فعال در حال ترجمه گفتگوی خروجی: {0}'
   wwcsActiveTransItem: 'ترجمه فعال مورد ترجمه: {0}'
   wwcsActiveTransEntity: 'نهاد ترجمه کننده فعال: {0}'
+  wwcSupportedServer: مقداردهی اولیه WorldwideChat برای {0}...
+  wwcSupportedVersion: فعال کردن ویژگی های نسخه {0}...
 

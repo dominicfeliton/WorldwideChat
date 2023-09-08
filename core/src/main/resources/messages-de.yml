@@ -28,8 +28,8 @@ Messages:
   wwctsOffSender: Übersetzung signieren ist deaktiviert.
   wwcUpdaterParserFailed: Fehler beim Analysieren von Aktualisierungsdaten von Github.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Der aktuelle geheime Schlüssel
-    {0}. Bitte geben Sie einen geheimen Schlüssel für Amazon ein oder geben Sie 0 ein,
-    um zurückzukehren.
+    {0}. Bitte geben Sie einen geheimen Schlüssel für Amazon ein oder geben Sie 0
+    ein, um zurückzukehren.
   wwctbOffSender: Buchübersetzung deaktiviert.
   wwcConfigGUIAmazonTranslateButton: Amazon übersetzen
   wwcConfigConversationLangSuccess: Die Pluginsprache wurde erfolgreich geändert.
@@ -134,8 +134,8 @@ Messages:
     wurde erfolgreich.
   wwcUnsupportedVersion: 'Du betreibst eine nicht unterstützte Version von Bukkit,
     Spigot oder Paper. Unterstützte Versionen:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: Der globale Chat wird von {0} nach
-    {0} übersetzt.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Der globale Chat wird von {0}
+    nach {0} übersetzt.
   wwcConfigGUITranslatorSettings: Konfiguration des Übersetzers
   wwcConfigConversationGoogleTranslateAPIKeyInput: Der aktuelle API-Schlüssel {0}.
     Geben Sie einen API-Schlüssel für Google Translate ein oder geben Sie 0 ein, um
@@ -187,8 +187,8 @@ Messages:
     geben Sie 0 ein, um das Limit zu deaktivieren. Tippe alles weniger als 0, um zurückzukehren.
   wwctGUITargetPlayerNull: Der Zielspieler hat die Verbindung zum Server getrennt.
   wwcConfigConversationSyncUserDataDelayInput: Die aktuelle Verzögerung pro Synchronisierung
-    von Benutzerdaten beträgt {0} Sekunden. Geben Sie etwas größer als 10 ein, um einen
-    neuen Wert festzulegen, oder etwas weniger als 10, um zurückzukehren.
+    von Benutzerdaten beträgt {0} Sekunden. Geben Sie etwas größer als 10 ein, um
+    einen neuen Wert festzulegen, oder etwas weniger als 10, um zurückzukehren.
   wwcConfigGUISyncUserDataButton: Verzögerung der Benutzerdatensynchronisierung ändern
   wwcConfigSyncDelayEnabled: Verzögerung pro Benutzerdatensynchronisierung ist auf
     {0} Sekunden eingestellt.
@@ -307,8 +307,8 @@ Messages:
   wwctAutoTranslateStartOtherPlayer: Starten einer neuen Übersetzungssitzung für {0}
     bis {0}.
   wwctTranslationStopped: Ihre Übersetzungssitzung wurde abgebrochen.
-  wwctLangToLangStartOtherPlayer: Starten einer neuen Übersetzungssitzung für {0} von
-    {0} bis {1}.
+  wwctLangToLangStartOtherPlayer: Starten einer neuen Übersetzungssitzung für {0}
+    von {0} bis {1}.
   wwctAutoTranslateStart: Starten einer neuen Übersetzungssitzung nach {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Sie haben eine aktive Übersetzungssitzung
     nach {0}.
@@ -367,22 +367,22 @@ Messages:
     Port als 0 ein, um einen neuen Port festzulegen, oder geben Sie 0 ein, um zurückzukehren.
   wwcConfigGUISQLPasswordButton: SQL-Passwort ändern
   wwcConfigConversationSQLHostnameSuccess: Der SQL-Hostname wurde erfolgreich geändert.
-  wwcConfigConversationSQLHostnameInput: Der aktuelle Hostname ist {0}. Geben Sie einen
-    anderen Wert als 0 ein, um einen neuen Hostnamen festzulegen, oder geben Sie 0
-    ein, um zurückzugehen.
+  wwcConfigConversationSQLHostnameInput: Der aktuelle Hostname ist {0}. Geben Sie
+    einen anderen Wert als 0 ein, um einen neuen Hostnamen festzulegen, oder geben
+    Sie 0 ein, um zurückzugehen.
   wwcConfigGUISQLHostnameButton: Ändern Sie den SQL-Hostnamen
   wwcConfigConversationSQLOptionalArgsSuccess: Die optionalen SQL-Argumente wurden
     erfolgreich geändert.
   wwcConfigConversationSQLPasswordSuccess: Das SQL-Passwort wurde erfolgreich geändert.
-  wwcConfigConversationSQLPasswordInput: Das aktuelle Kennwort ist {0}. Geben Sie einen
-    anderen Wert als 0 ein, um ein neues Kennwort festzulegen, oder geben Sie 0 ein,
-    um zurückzugehen.
+  wwcConfigConversationSQLPasswordInput: Das aktuelle Kennwort ist {0}. Geben Sie
+    einen anderen Wert als 0 ein, um ein neues Kennwort festzulegen, oder geben Sie
+    0 ein, um zurückzugehen.
   wwcConfigGUIToggleSQLSSLButton: SQL SSL umschalten
   wwcConfigConversationSQLUsernameSuccess: Der SQL-Benutzername wurde erfolgreich
     geändert.
-  wwcConfigConversationSQLUsernameInput: Der aktuelle Benutzername ist {0}. Geben Sie
-    einen anderen Wert als 0 ein, um einen neuen Benutzernamen festzulegen, oder geben
-    Sie 0 ein, um zurückzukehren.
+  wwcConfigConversationSQLUsernameInput: Der aktuelle Benutzername ist {0}. Geben
+    Sie einen anderen Wert als 0 ein, um einen neuen Benutzernamen festzulegen, oder
+    geben Sie 0 ein, um zurückzukehren.
   wwcConfigConversationSQLPortSuccess: Der SQL-Port wurde erfolgreich geändert.
   wwcConfigGUISQLUsernameButton: Ändern Sie den SQL-Benutzernamen
   wwcConfigConversationSQLOptionalArgsCleared: Optionale Argumente wurden erfolgreich
@@ -398,8 +398,8 @@ Messages:
   wwcConfigConversationSQLDatabaseNameSuccess: Der Name der SQL-Datenbank wurde erfolgreich
     geändert.
   wwcConfigConversationFatalAsyncAbort: Die aktuelle Zeitüberschreitung für den Abbruch
-    aller Async-Aufgaben beträgt {0} Sekunden. Geben Sie etwas über 7 ein, um ein neues
-    Timeout festzulegen, oder etwas darunter, um zurückzugehen.
+    aller Async-Aufgaben beträgt {0} Sekunden. Geben Sie etwas über 7 ein, um ein
+    neues Timeout festzulegen, oder etwas darunter, um zurückzugehen.
   wwcConfigConversationFatalAsyncSuccess: Zeitüberschreitung für asynchrone Aufgaben
     wurde erfolgreich festgelegt.
   wwcConfigGUIFatalAsyncAbortButton: Async-Aufgaben-Timeout ändern
@@ -433,8 +433,9 @@ Messages:
   wwcConfigConversationMongoPasswordInput: Das aktuelle Kennwort ist {0}. Geben Sie
     einen anderen Wert als 0 ein, um ein neues Kennwort festzulegen, oder geben Sie
     0 ein, um zurückzugehen.
-  wwcConfigConversationMongoPortInput: Der aktuelle Port ist {0}. Geben Sie einen anderen
-    Port als 0 ein, um einen neuen Port festzulegen, oder geben Sie 0 ein, um zurückzugehen.
+  wwcConfigConversationMongoPortInput: Der aktuelle Port ist {0}. Geben Sie einen
+    anderen Port als 0 ein, um einen neuen Port festzulegen, oder geben Sie 0 ein,
+    um zurückzugehen.
   wwcConfigConversationToggleMongoSuccess: MongoDB wurde erfolgreich umgeschaltet.
     Laden Sie neu, damit die Änderung wirksam wird.
   wwcConfigConversationMongoHostnameInput: Der aktuelle Hostname ist {0}. Geben Sie
@@ -485,18 +486,18 @@ Messages:
     registriert.
   wwcConfigErrorsToIgnoreInvalid: Ungültige Übersetzungsfehler zum Ignorieren sind
     in config.yml festgelegt. Standardeinstellungen werden registriert...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Die Übersetzerfehler wurden erfolgreich
     geändert, sodass Phrasen ignoriert wurden.
   wwcConfigGUIIgnoreErrorsButton: Fehler auf Ignorieren ändern
   wwcConfigConversationIgnoreErrorsInput: 'Die aktuelle Liste der Ausdrücke in Übersetzerfehlern,
-    die ignoriert werden sollten, lautet: {0}. Geben Sie Argumente ein, die durch ein
-    Komma getrennt sind (key=value, key2=value2), oder geben Sie clear ein, um die
-    aktuellen Argumente zu löschen, oder geben Sie 0 ein, um zurückzugehen. Zusätzlich
+    die ignoriert werden sollten, lautet: {0}. Geben Sie Argumente ein, die durch
+    ein Komma getrennt sind (key=value, key2=value2), oder geben Sie clear ein, um
+    die aktuellen Argumente zu löschen, oder geben Sie 0 ein, um zurückzugehen. Zusätzlich
     führt die Eingabe von „*“ dazu, dass das Plugin keine Übersetzungsfehler überprüft.'
   wwcConfigConversationIgnoreErrorsCleared: Übersetzungsfehler beim Ignorieren von
     Phrasen wurden erfolgreich gelöscht.
-
+  
   wwcsActiveTransPrevRate: 'Gültigkeitsdauer des vorherigen Ratenlimits für den aktiven
     Übersetzer: {0}'
   wwcsActiveTransSaved: 'Aktiver Übersetzer auf Festplatte gespeichert: {0}'
@@ -512,4 +513,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktiver Übersetzer übersetzt ausgehenden Chat: {0}'
   wwcsActiveTransItem: 'Aktiver Übersetzer übersetzt Artikel: {0}'
   wwcsActiveTransEntity: 'Aktive Entität, die den Übersetzer übersetzt: {0}'
+  wwcSupportedServer: WorldwideChat für {0} wird initialisiert...
+  wwcSupportedVersion: Funktionen für Version {0} werden aktiviert...
 

@@ -123,7 +123,8 @@ Messages:
   wwcConfigConversationUpdateCheckerSuccess: నవీకరణ చెకర్ ఆలస్యం విజయవంతంగా సెట్.
   wwcUnsupportedVersion: 'మీరు Bukkit, Spigot, లేదా పేపర్ యొక్క మద్దతు లేని సంస్కరణను
     నడుపుతున్నారు. మద్దతు వెర్షన్లు:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: గ్లోబల్ చాట్ {0} నుండి {1} కు అనువదించబడుతోంది.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: గ్లోబల్ చాట్ {0} నుండి {1} కు
+    అనువదించబడుతోంది.
   wwcConfigGUITranslatorSettings: అనువాదకుడు ఆకృతీకరణ
   wwcConfigConversationGoogleTranslateAPIKeyInput: ప్రస్తుత API కీ {0}. దయచేసి Google
     Translate కోసం ఒక API కీని ఇన్పుట్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
@@ -165,9 +166,9 @@ Messages:
     నిర్ధారించుకోండి.
   wwctrlRateLimitAlreadyOffSender: మీ రేటు పరిమితి ఇప్పటికే నిలిపివేయబడింది.
   wwctGUIRateButton: రేటు పరిమితిని సెట్ చేయండి
-  wwctGUIConversationRateLimit: అనువాదానికి రేటు పరిమితి ప్రస్తుత {0} సెకన్లు. ఒక కొత్త
-    విలువ సెట్ 0 కంటే ఎక్కువ ఏదైనా టైప్, లేదా పరిమితి డిసేబుల్ 0 టైప్. తిరిగి వెళ్ళడానికి
-    0 కన్నా తక్కువ ఏదైనా టైప్ చేయండి.
+  wwctGUIConversationRateLimit: అనువాదానికి రేటు పరిమితి ప్రస్తుత {0} సెకన్లు. ఒక
+    కొత్త విలువ సెట్ 0 కంటే ఎక్కువ ఏదైనా టైప్, లేదా పరిమితి డిసేబుల్ 0 టైప్. తిరిగి
+    వెళ్ళడానికి 0 కన్నా తక్కువ ఏదైనా టైప్ చేయండి.
   wwctGUITargetPlayerNull: లక్ష్యం ఆటగాడు సర్వర్ నుండి డిస్కనెక్ట్.
   wwcConfigConversationSyncUserDataDelayInput: వాడుకరి డేటా యొక్క సమకాలీకరణ కు ప్రస్తుత
     ఆలస్యం {0} సెకన్లు. ఒక కొత్త విలువ సెట్ 10 కంటే ఎక్కువ ఏదైనా టైప్, లేదా 10 కంటే
@@ -258,9 +259,9 @@ Messages:
   wwcteOffTarget: ఎంటిటీ అనువాదం {0} కోసం నిలిపివేయబడింది.
   wwcCharLimit: మీ సందేశం చాలా పొడవుగా ఉంది! దయచేసి మీ సందేశం పొడవు ఉన్న {0} అక్షరాల
     కంటే తక్కువగా ఉందని నిర్ధారించుకోండి.
-  wwcConfigConversationCharacterLimitInput: సందేశానికి ప్రస్తుత అక్షర పరిమితి {0} అక్షరాలు.
-    క్రొత్త విలువను సెట్ చేయడానికి 0 కన్నా ఎక్కువ ఏదైనా టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి
-    0 కంటే తక్కువ లేదా సమానమైన ఏదైనా టైప్ చేయండి.
+  wwcConfigConversationCharacterLimitInput: సందేశానికి ప్రస్తుత అక్షర పరిమితి {0}
+    అక్షరాలు. క్రొత్త విలువను సెట్ చేయడానికి 0 కన్నా ఎక్కువ ఏదైనా టైప్ చేయండి లేదా
+    తిరిగి వెళ్ళడానికి 0 కంటే తక్కువ లేదా సమానమైన ఏదైనా టైప్ చేయండి.
   wwcteOffSender: ఎంటిటీ అనువాదం నిలిపివేయబడింది.
   wwctGUIEntityButton: టోగుల్ ఎంటిటీ అనువాదం
   wwctrlRateLimitBadInt: మీ రేటు పరిమితి చెల్లుబాటు అయ్యే పూర్ణాంకం కాదు.
@@ -277,7 +278,8 @@ Messages:
     సెషన్ ఉంది.
   wwctAutoTranslateStartOtherPlayer: '{0} కు కొత్త అనువాద సెషన్ ప్రారంభిస్తోంది.'
   wwctTranslationStopped: మీ అనువాద సెషన్ నిలిపివేయబడింది.
-  wwctLangToLangStartOtherPlayer: '{0} నుండి {1} నుండి {2} కొరకు కొత్త అనువాద సెషన్ ప్రారంభిస్తోంది.'
+  wwctLangToLangStartOtherPlayer: '{0} నుండి {1} నుండి {2} కొరకు కొత్త అనువాద సెషన్
+    ప్రారంభిస్తోంది.'
   wwctAutoTranslateStart: '{0} కు కొత్త అనువాద సెషన్ ప్రారంభిస్తోంది.'
   wwcOnJoinTranslationNotificationNoSourceLang: మీరు {0} కు చురుకైన అనువాద సెషన్ ఉంది.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: గ్లోబల్ చాట్ అనువదించబడుతోంది,
@@ -360,8 +362,8 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: SQL డేటాబేస్ మార్చండి
   wwcConfigConversationSQLDatabaseNameSuccess: విజయవంతంగా SQL డేటాబేస్ పేరు మార్చబడింది.
   wwcConfigConversationFatalAsyncAbort: అన్ని అసైన్క్ పనులను అబార్ట్ చేయడానికి ప్రస్తుత
-    కాలవ్యవధిని {0} సెకన్లు. క్రొత్త సమయ వ్యవధిని సెట్ చేయడానికి 7 పైన ఉన్న ఏదైనా టైప్
-    చేయండి లేదా తిరిగి వెళ్ళడానికి దాని క్రింద ఉన్న ఏదైనా.
+    కాలవ్యవధిని {0} సెకన్లు. క్రొత్త సమయ వ్యవధిని సెట్ చేయడానికి 7 పైన ఉన్న ఏదైనా
+    టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి దాని క్రింద ఉన్న ఏదైనా.
   wwcConfigConversationFatalAsyncSuccess: Async పని సమయం ముగిసింది విజయవంతంగా సెట్.
   wwcConfigGUIFatalAsyncAbortButton: Async టాస్క్ టైమ్అవుట్ మార్చండి
   wwcTimeoutException: మీ ఆదేశం ముగిసింది. దయచేసి మళ్ళీ ప్రయత్నించండి.
@@ -437,7 +439,7 @@ Messages:
     లోపాలు.
   wwcConfigErrorsToIgnoreInvalid: config.yml లో సెట్ విస్మరించడానికి చెల్లని అనువాదకుడు
     లోపాలు. డిఫాల్ట్లను నమోదు చేస్తోంది...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: విజయవంతంగా పదబంధాలు విస్మరించడానికి అనువాదకుడు
     లోపాలు మార్చబడింది.
   wwcConfigGUIIgnoreErrorsButton: విస్మరించడానికి లోపాలను మార్చండి
@@ -448,7 +450,7 @@ Messages:
     అనువాదకుల లోపాలను తనిఖీ చేయదు.'
   wwcConfigConversationIgnoreErrorsCleared: విజయవంతంగా క్లియర్ పదబంధాలు విస్మరించడానికి
     అనువాదకుడు లోపాలు.
-
+  
   wwcsActiveTransPrevRate: 'క్రియాశీల అనువాదకుడు మునుపటి రేటు పరిమితి సమయం: {0}'
   wwcsActiveTransSaved: 'క్రియాశీల అనువాదకుడు డిస్కునకు సేవ్ చేయబడినది: {0}'
   wwcsActiveTransIncoming: 'క్రియాశీల అనువాదకుడు ఇన్కమింగ్ చాట్ను అనువదిస్తోంది: {0}'
@@ -464,4 +466,6 @@ Messages:
     {0}'
   wwcsActiveTransItem: 'క్రియాశీల అనువాదకుడు అనువాదక అంశం: {0}'
   wwcsActiveTransEntity: 'క్రియాశీల అనువాదకుడు అనువాదక ఎంటిటీ: {0}'
+  wwcSupportedServer: '{0} కోసం ప్రపంచవ్యాప్త చాట్ను ప్రారంభించడం...'
+  wwcSupportedVersion: వెర్షన్ {0} కోసం లక్షణాలను ప్రారంభించడం...
 

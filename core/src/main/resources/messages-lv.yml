@@ -127,8 +127,9 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationSourceLang: Globālā tērzēšana tiek tulkota
     no {0} uz {1}.
   wwcConfigGUITranslatorSettings: Tulkotāja konfigurācija
-  wwcConfigConversationGoogleTranslateAPIKeyInput: Pašreizējā API atslēga ir {0}. Lūdzu
-    ievadiet API atslēgu pakalpojumam Google Translate vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Pašreizējā API atslēga ir {0}.
+    Lūdzu ievadiet API atslēgu pakalpojumam Google Translate vai ierakstiet 0, lai
+    atgrieztos.
   wwcConfigConversationRateLimitInput: Pašreizējais globālais kursa ierobežojums uz
     tulkojumu ir {0} sekundes. Ierakstiet visu, kas lielāks par 0, lai iestatītu jaunu
     vērtību, vai ierakstiet 0, lai atspējotu ierobežojumu. Ierakstiet kaut ko mazāk
@@ -184,8 +185,8 @@ Messages:
   wwcConfigCacheInvalid: Tulkotāja kešatmiņas izmērs nederīgs. Noklusējuma neizpilde
     līdz 10...
   wwcInventoryErrorPlayer: Kļūda konstatēta ar jūsu GUI. Uz konsoli ir nosūtīts žurnāls.
-  wwcInventoryError: Kļūda konstatēta ar lietotāja GUI ( {0}). Lūdzu ziņojiet par šo
-    problēmu izstrādātājam.
+  wwcInventoryError: Kļūda konstatēta ar lietotāja GUI ( {0}). Lūdzu ziņojiet par
+    šo problēmu izstrādātājam.
   wwctiOffTarget: Vienuma tulkošana atspējota uz {0}.
   wwctiOffSender: Vienuma tulkojums atspējots.
   wwcItemTranslateTitleStock: Nespēj tulkot noklusējuma vienumu nosaukumus.
@@ -271,8 +272,8 @@ Messages:
   wwcteOffSender: Entītiju tulkošana ir
   wwctGUIEntityButton: Pārslēgt entītijas tulkošanu
   wwctrlRateLimitBadInt: Jūsu likmes ierobežojums nav derīgs vesels skaitlis.
-  wwcTranslatorErrorConsole: Problēma radās, kamēr lietotājs {0} mēģināja tulkot. Lūdzu,
-    pārbaudiet errorLog.txt, lai iegūtu sīkāku informāciju.
+  wwcTranslatorErrorConsole: Problēma radās, kamēr lietotājs {0} mēģināja tulkot.
+    Lūdzu, pārbaudiet errorLog.txt, lai iegūtu sīkāku informāciju.
   wwctGUIChatButton: Pārslēgt tērzēšanas tulkošanu
   wwcrBegin: Pārlādēšana WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Tulkošanas sesija priekš {0} ir apturēta.
@@ -314,8 +315,8 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Izvades valoda: {0}'
   wwcTranslatorAttempt: Mēģinot izveidot savienojumu ar tulkotāju config.yml... (Mēģinājums
     {0}/ {1})
-  wwcTimeoutExceptionConsole: Spēlētājs {0} bija pēdējais pieprasījuma taimauts.
-    Šī kļūda nav letāla, bet WorldwideChat ir jāpārlādē, ja tā turpina notikt.
+  wwcTimeoutExceptionConsole: Spēlētājs {0} bija pēdējais pieprasījuma taimauts. Šī
+    kļūda nav letāla, bet WorldwideChat ir jāpārlādē, ja tā turpina notikt.
   wwcGUIPageNumber: 'Lapas numurs: {0}'
   wwcConfigYAMLFallback: Falling atpakaļ uz YAML...
   wwcConfigGUIToggleSQLButton: Pārslēgt SQL
@@ -361,8 +362,8 @@ Messages:
     vai ierakstiet skaidru, lai notīrītu pašreizējās argas, vai ierakstiet 0, lai
     atgrieztos.'
   wwcConfigConversationSQLDatabaseNameInput: Pašreizējais datu bāzes nosaukums ir
-    {0}. Ierakstiet neko citu kā 0, lai iestatītu jaunu datu bāzes nosaukumu, vai ierakstiet
-    0, lai atgrieztos.
+    {0}. Ierakstiet neko citu kā 0, lai iestatītu jaunu datu bāzes nosaukumu, vai
+    ierakstiet 0, lai atgrieztos.
   wwcConfigGUISQLDatabaseNameButton: Mainīt SQL datu bāzi
   wwcConfigConversationSQLDatabaseNameSuccess: Veiksmīgi mainīts SQL datu bāzes nosaukums.
   wwcConfigConversationFatalAsyncAbort: Pašreizējais taimauts, lai pārtrauktu visus
@@ -397,8 +398,8 @@ Messages:
   wwcConfigGUIMongoHostnameButton: Mainīt MongoDB resursdatora nosaukumu
   wwcConfigConversationMongoPasswordInput: Pašreizējā parole ir {0}. Ierakstiet neko
     citu kā 0, lai iestatītu jaunu paroli, vai ierakstiet 0, lai atgrieztos.
-  wwcConfigConversationMongoPortInput: Pašreizējais ports ir {0}. Ierakstiet neko citu
-    kā 0, lai iestatītu jaunu portu, vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationMongoPortInput: Pašreizējais ports ir {0}. Ierakstiet neko
+    citu kā 0, lai iestatītu jaunu portu, vai ierakstiet 0, lai atgrieztos.
   wwcConfigConversationToggleMongoSuccess: MongoDB veiksmīgi pārgāja. Pārlādēt, lai
     izmaiņas stātos spēkā.
   wwcConfigConversationMongoHostnameInput: Pašreizējais resursdatora nosaukums ir
@@ -409,11 +410,11 @@ Messages:
   wwcConfigGUIMongoMenuButton: Mainīt MongoDB iestatījumus
   wwcConfigGUIToggleMongoButton: Pārslēgt MongoDB
   wwcConfigConversationMongoDatabaseNameInput: Pašreizējais datu bāzes nosaukums ir
-    {0}. Ierakstiet neko citu kā 0, lai iestatītu jaunu datu bāzes nosaukumu, vai ierakstiet
-    0, lai atgrieztos.
+    {0}. Ierakstiet neko citu kā 0, lai iestatītu jaunu datu bāzes nosaukumu, vai
+    ierakstiet 0, lai atgrieztos.
   wwcConfigConversationMongoOptionalArgsInput: 'Pašreizējie neobligātie MongoDB argumenti
-    ir: {0}. Ierakstiet argumentus atdalot ar komatu (key=value, key2=value2) vai ierakstiet
-    skaidri, lai notīrītu pašreizējo args, vai ierakstiet 0, lai atgrieztos.'
+    ir: {0}. Ierakstiet argumentus atdalot ar komatu (key=value, key2=value2) vai
+    ierakstiet skaidri, lai notīrītu pašreizējo args, vai ierakstiet 0, lai atgrieztos.'
   wwcConfigGUIMongoDatabaseNameButton: Mainīt MongoDB datubāzi
   wwcConfigConversationMongoUsernameInput: Pašreizējais lietotājvārds ir {0}. Ierakstiet
     neko citu kā 0, lai iestatītu jaunu lietotājvārdu, vai ierakstiet 0, lai atgrieztos.
@@ -443,7 +444,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Veiksmīgi reģistrētas tulkotāju kļūdas ignorēt.
   wwcConfigErrorsToIgnoreInvalid: Nederīgs tulkotājs kļūdas ignorēt iestatīts config.yml.
     Reģistrējot noklusējumus...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Veiksmīgi mainījis tulkotāja kļūdas, lai
     ignorētu frāzes.
   wwcConfigGUIIgnoreErrorsButton: Mainīt kļūdas, lai ignorētu
@@ -453,7 +454,7 @@ Messages:
     atgrieztos. Turklāt, ierakstot “*”, spraudnis nepārbaudīs tulkotāju kļūdas.'
   wwcConfigConversationIgnoreErrorsCleared: Tulkotājs kļūdas ignorēt frāzes notīrīti
     veiksmīgi.
-
+  
   wwcsActiveTransPrevRate: 'Aktīvā tulkotāja iepriekšējā ātruma ierobežojuma laiks:
     {0}'
   wwcsActiveTransSaved: 'Aktīvais tulkotājs Saglabāts diskā: {0}'
@@ -468,4 +469,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktīvais tulkotājs Tulkojot izejošo tērzēšanu: {0}'
   wwcsActiveTransItem: 'Aktīvais tulkotājs tulkojot vienumu: {0}'
   wwcsActiveTransEntity: 'Aktīvā tulkotāja tulkošanas entītija: {0}'
+  wwcSupportedServer: Inicializējot WorldwideChat par {0}...
+  wwcSupportedVersion: Iespējojot funkcijas versijai {0}...
 

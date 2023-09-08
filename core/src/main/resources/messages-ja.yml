@@ -219,8 +219,8 @@ Messages:
   wwctGUIChatButton: チャット翻訳の切り替え
   wwcrBegin: ワールドワイドチャットをリロード中...
   wwctTranslationStoppedOtherPlayer: '{0} の変換セッションが停止しました。'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: グローバルチャットは翻訳中ですが、 {0} から
-    {0} のアクティブな翻訳セッションがあります。
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: グローバルチャットは翻訳中ですが、 {0}
+    から {0} のアクティブな翻訳セッションがあります。
   wwctCannotTranslateConsole: コンソールの翻訳セッションを開始できません。
   wwctLangToLangStart: '{0} から {1} への新しい変換セッションを開始します。'
   wwcOnJoinTranslationNotificationSourceLang: '{0} から {1} までのアクティブな変換セッションがあります。'
@@ -272,7 +272,8 @@ Messages:
   wwcConfigConversationSQLPortInput: 現在のポートは {0} です。0 以外の値を入力すると新しいポートが設定され、0 を入力すると元に戻ります。
   wwcConfigGUISQLPasswordButton: SQL パスワードの変更
   wwcConfigConversationSQLHostnameSuccess: SQL ホスト名が正常に変更されました。
-  wwcConfigConversationSQLHostnameInput: 現在のホスト名は {0} です。0 以外を入力すると新しいホスト名が設定され、0 を入力すると元に戻ります。
+  wwcConfigConversationSQLHostnameInput: 現在のホスト名は {0} です。0 以外を入力すると新しいホスト名が設定され、0
+    を入力すると元に戻ります。
   wwcConfigGUISQLHostnameButton: SQL ホスト名の変更
   wwcConfigConversationSQLOptionalArgsSuccess: オプションの SQL 引数が正常に変更されました。
   wwcConfigConversationSQLPasswordSuccess: SQL パスワードが正常に変更されました。
@@ -349,13 +350,13 @@ Messages:
     を入力して戻ってください。
   wwcConfigErrorsToIgnoreSuccess: 無視できるトランスレータエラーが正常に登録されました。
   wwcConfigErrorsToIgnoreInvalid: config.yml に設定されている無視すべきトランスレータエラーが無効です。デフォルトを登録中...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: 翻訳者のエラーがフレーズを無視するように正常に変更されました。
   wwcConfigGUIIgnoreErrorsButton: エラーを無視するように変更
   wwcConfigConversationIgnoreErrorsInput: 無視するトランスレータエラーに含まれる現在のフレーズのリストは次のとおりです。引数をカンマで区切って入力するか
     (key=value、key2=value2)、clear と入力して現在の引数を消去するか、0 を入力して戻ります。さらに、「*」を入力すると、プラグインはトランスレータエラーをチェックしなくなります。
   wwcConfigConversationIgnoreErrorsCleared: フレーズを無視する翻訳者エラーは正常にクリアされました。
-
+  
   wwcsActiveTransPrevRate: 'アクティブなトランスレータの以前の翻訳制限時間: {0}'
   wwcsActiveTransSaved: 'アクティブなトランスレータがディスクに保存されました: {0}'
   wwcsActiveTransIncoming: '受信したチャットを翻訳中のアクティブな翻訳者: {0}'
@@ -369,4 +370,6 @@ Messages:
   wwcsActiveTransOutgoing: '発信チャットを翻訳中のアクティブな翻訳者: {0}'
   wwcsActiveTransItem: '現在翻訳中の翻訳者アイテム: {0}'
   wwcsActiveTransEntity: 'アクティブな翻訳者翻訳エンティティ: {0}'
+  wwcSupportedServer: '{0} のワールドワイドチャットを初期化中...'
+  wwcSupportedVersion: バージョン {0} の機能を有効化中...
 

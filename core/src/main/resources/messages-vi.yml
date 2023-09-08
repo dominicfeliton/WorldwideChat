@@ -53,8 +53,8 @@ Messages:
   wwcConfigGUIQuitButton: Thoát & Lưu Thay đổi
   wwctPlayerNotFound: Người chơi {0}ôi không tìm thấy.
   wwcConfigGUIAmazonTranslateRegionButton: Thay đổi Vùng Amazon
-  wwcConfigConversationLangInput: 'Ngôn ngữ plugin hiện tại là {0}. Vui lòng nhập mã
-    ngôn ngữ hợp lệ, hoặc nhập 0 để hủy. Mã ngôn ngữ hợp lệ: {0}'
+  wwcConfigConversationLangInput: 'Ngôn ngữ plugin hiện tại là {0}. Vui lòng nhập
+    mã ngôn ngữ hợp lệ, hoặc nhập 0 để hủy. Mã ngôn ngữ hợp lệ: {0}'
   wwcConfigConversationLangInvalid: Mã ngôn ngữ không hợp lệ!
   wwcConfigGUIWatsonAPIKeyButton: Thay đổi khóa API Watson
   wwcEnabled: Đã bật phiên bản WorldwideChat {0}.
@@ -68,8 +68,8 @@ Messages:
   wwctsOffTarget: Đăng dịch bị vô hiệu hóa cho {0}.
   wwcUpdaterConnectionFailed: Không thể kiểm tra các bản cập nhật mới nhất trên Github.
   watsonNotFoundExceptionNotification: Không thể dịch đầu vào của bạn thêm nữa.
-  wwcConfigConversationWatsonAPIKeyInput: Khóa API hiện tại là {0}. Vui lòng nhập khóa
-    API cho Watson, hoặc nhập 0 để quay lại.
+  wwcConfigConversationWatsonAPIKeyInput: Khóa API hiện tại là {0}. Vui lòng nhập
+    khóa API cho Watson, hoặc nhập 0 để quay lại.
   wwctGUIStopButton: Dừng dịch
   wwcgTranslationStopped: Dịch trò chuyện toàn cầu đã bị dừng lại.
   wwcUpdaterFutureDate: Phiên bản WorldwideChat này có phiên bản lớn hơn phiên bản
@@ -88,8 +88,8 @@ Messages:
   wwctGUITranslationButton: Bắt đầu Translating
   wwctGUIAutoDetectButton: Ngôn ngữ nguồn tự động phát hiện
   wwcUpdaterUpToDate: WorldwideChat được cập nhật!
-  wwcConfigConversationAmazonTranslateRegionInput: Vùng hiện tại là {0}. Vui lòng nhập
-    một vùng cho Amazon, hoặc nhập 0 để quay lại.
+  wwcConfigConversationAmazonTranslateRegionInput: Vùng hiện tại là {0}. Vui lòng
+    nhập một vùng cho Amazon, hoặc nhập 0 để quay lại.
   wwcNoConsole: Lệnh này chỉ có thể được chạy bởi một người chơi.
   wwcInitializationFail: Thất bại trong việc khởi tạo WorldwideChat.
   wwcrSuccess: Nạp lại thành công WorldwideChat.
@@ -159,8 +159,8 @@ Messages:
     định đến 86400 giây...
   wwctrlRateLimitOffSender: Tắt giới hạn mức giá của bạn.
   wwctrlRateLimitAlreadyOffTarget: Giới hạn tỷ lệ của {0} đã bị vô hiệu hóa.
-  wwctrlPlayerNotFound: Người chơi {0} hoặc là không tìm thấy, hoặc không phải là một
-    dịch giả đang hoạt động.
+  wwctrlPlayerNotFound: Người chơi {0} hoặc là không tìm thấy, hoặc không phải là
+    một dịch giả đang hoạt động.
   wwctrlRateLimitSetSender: Đặt giới hạn tỷ lệ của bạn thành {0} giây.
   wwctrlRateLimitOffTarget: Tắt giới hạn tỷ lệ của {0}.
   wwctrlRateLimitSetTarget: Đặt giới hạn tỷ lệ của {0} đến {1} giây.
@@ -173,8 +173,8 @@ Messages:
     giới hạn. Nhập bất cứ điều gì nhỏ hơn 0 để quay trở lại.
   wwctGUITargetPlayerNull: Người chơi mục tiêu bị ngắt kết nối khỏi máy chủ.
   wwcConfigConversationSyncUserDataDelayInput: Sự chậm trễ hiện tại cho mỗi đồng bộ
-    hóa dữ liệu người dùng là {0} giây. Nhập bất cứ điều gì lớn hơn 10 để đặt một giá
-    trị mới, hoặc bất cứ điều gì nhỏ hơn 10 để quay lại.
+    hóa dữ liệu người dùng là {0} giây. Nhập bất cứ điều gì lớn hơn 10 để đặt một
+    giá trị mới, hoặc bất cứ điều gì nhỏ hơn 10 để quay lại.
   wwcConfigGUISyncUserDataButton: Thay đổi độ trễ đồng bộ hóa dữ liệu người dùng
   wwcConfigSyncDelayEnabled: Trì hoãn cho mỗi người dùng đồng bộ hóa dữ liệu đặt thành
     {0} giây.
@@ -362,8 +362,8 @@ Messages:
   wwcConfigGUISQLUsernameButton: Thay đổi tên người dùng SQL
   wwcConfigConversationSQLOptionalArgsCleared: Các đối số tùy chọn đã xóa thành công.
   wwcConfigConversationSQLOptionalArgsInput: 'Các đối số SQL tùy chọn hiện tại là:
-    {0}. Đối số kiểu cách nhau bằng dấu phẩy (key=value, key2=value2), hoặc gõ rõ ràng
-    để xóa các args hiện tại, hoặc gõ 0 để quay lại.'
+    {0}. Đối số kiểu cách nhau bằng dấu phẩy (key=value, key2=value2), hoặc gõ rõ
+    ràng để xóa các args hiện tại, hoặc gõ 0 để quay lại.'
   wwcConfigConversationSQLDatabaseNameInput: Tên cơ sở dữ liệu hiện tại là {0}. Gõ
     bất cứ thứ gì khác hơn 0 để đặt tên cơ sở dữ liệu mới, hoặc gõ 0 để quay lại.
   wwcConfigGUISQLDatabaseNameButton: Thay đổi cơ sở dữ liệu SQL
@@ -410,8 +410,8 @@ Messages:
   wwcConfigConversationMongoHostnameSuccess: Thay đổi thành công tên máy chủ MongoDB.
   wwcConfigGUIMongoMenuButton: Thay đổi cài đặt MongoDB
   wwcConfigGUIToggleMongoButton: Chuyển đổi MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Tên cơ sở dữ liệu hiện tại là {0}. Nhập
-    bất cứ thứ gì khác 0 để đặt tên cơ sở dữ liệu mới hoặc nhập 0 để quay lại.
+  wwcConfigConversationMongoDatabaseNameInput: Tên cơ sở dữ liệu hiện tại là {0}.
+    Nhập bất cứ thứ gì khác 0 để đặt tên cơ sở dữ liệu mới hoặc nhập 0 để quay lại.
   wwcConfigConversationMongoOptionalArgsInput: 'Các đối số MongoDB tùy chọn hiện tại
     là: {0}. loại đối số được phân tách bởi dấu phẩy (key=value, key2=value2), hoặc
     gõ rõ ràng để xóa các tham số hiện tại, hoặc gõ 0 để quay lại.'
@@ -445,7 +445,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Đã đăng ký thành công lỗi dịch để bỏ qua.
   wwcConfigErrorsToIgnoreInvalid: Lỗi dịch không hợp lệ để bỏ qua thiết lập trong
     config.yml. Đăng ký mặc định...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Thay đổi thành công các lỗi dịch để bỏ
     qua các cụm từ.
   wwcConfigGUIIgnoreErrorsButton: Thay đổi lỗi để bỏ qua
@@ -455,7 +455,7 @@ Messages:
     “*” sẽ khiến plugin không kiểm tra bất kỳ lỗi trình dịch nào.'
   wwcConfigConversationIgnoreErrorsCleared: Lỗi Translator để bỏ qua các cụm từ đã
     xóa thành công.
-
+  
   wwcsActiveTransPrevRate: 'Thời gian giới hạn tỷ lệ trước Active Translator: {0}'
   wwcsActiveTransSaved: 'Active Translator đã lưu vào đĩa: {0}'
   wwcsActiveTransIncoming: 'Translator đang hoạt động dịch trò chuyện đến: {0}'
@@ -469,4 +469,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Translator Active Translator Dịch trò chuyện đi: {0}'
   wwcsActiveTransItem: 'Dịch hiện hoạt dịch mục: {0}'
   wwcsActiveTransEntity: 'Active Translator dịch thực thể: {0}'
+  wwcSupportedServer: Khởi tạo WorldwideChat cho {0}...
+  wwcSupportedVersion: Bật tính năng cho phiên bản {0}...
 

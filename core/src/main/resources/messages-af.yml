@@ -27,7 +27,8 @@ Messages:
   wwctsOffSender: Teken vertaling gedeaktiveer.
   wwcUpdaterParserFailed: Misluk om opdateringsdata van GitHub te ontleed.
   wwcConfigConversationAmazonTranslateSecretKeyInput: Die huidige geheime sleutel
-    is {0}. Voer asseblief 'n geheime sleutel in vir Amazon, of tik 0 om terug te gaan.
+    is {0}. Voer asseblief 'n geheime sleutel in vir Amazon, of tik 0 om terug te
+    gaan.
   wwctbOffSender: Boekvertaling gedeaktiveer.
   wwcConfigGUIAmazonTranslateButton: Amazon Vertaal
   wwcConfigConversationLangSuccess: Inprop taal suksesvol verander.
@@ -51,8 +52,8 @@ Messages:
   wwcConfigGUIQuitButton: Verlaat en Stoor Veranderinge
   wwctPlayerNotFound: Speler {0} nie gevind nie.
   wwcConfigGUIAmazonTranslateRegionButton: Verander Amazon Streek
-  wwcConfigConversationLangInput: 'Die huidige inprop taal is {0}. Voer asseblief ''n
-    geldige taalkode in, of tik 0 om te kanselleer. Geldige taalkodes: {0}'
+  wwcConfigConversationLangInput: 'Die huidige inprop taal is {0}. Voer asseblief
+    ''n geldige taalkode in, of tik 0 om te kanselleer. Geldige taalkodes: {0}'
   wwcConfigConversationLangInvalid: Ongeldige taal kode!
   wwcConfigGUIWatsonAPIKeyButton: Verander Watson API Sleutel
   wwcEnabled: Geaktiveer WorldwideChat weergawe {0}.
@@ -107,8 +108,8 @@ Messages:
   wwcConfigConnectionSuccess: Suksesvol verbind na {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Is Aktief Vertaler: {0}'
-  wwcConfigConversationPrefixInput: Die huidige voorvoegsel is {0}. Tik asseblief 'n
-    nuwe een, of tik 0 om terug te gaan.
+  wwcConfigConversationPrefixInput: Die huidige voorvoegsel is {0}. Tik asseblief
+    'n nuwe een, of tik 0 om terug te gaan.
   wwcConfigGUIPreviousPageButton: Vorige Bladsy
   wwcConfigGUITranslatorCacheButton: Verander Vertaling Cache Limiet
   wwcConfigConversationbStatsSuccess: Suksesvol geskakel bStats.
@@ -181,8 +182,8 @@ Messages:
   wwcConfigCacheInvalid: Vertaler kas grootte ongeldig. Verstek na 10...
   wwcInventoryErrorPlayer: Fout bespeur met jou GUI. 'N Logboek is gestuur om die
     konsole.
-  wwcInventoryError: Fout bespeur met GUI van gebruiker {0}. Rapporteer asseblief hierdie
-    probleem aan die ontwikkelaar.
+  wwcInventoryError: Fout bespeur met GUI van gebruiker {0}. Rapporteer asseblief
+    hierdie probleem aan die ontwikkelaar.
   wwctiOffTarget: Item vertaling gedeaktiveer vir {0}.
   wwctiOffSender: Item vertaling gedeaktiveer.
   wwcItemTranslateTitleStock: Nie moontlik na vertaal verstek item name.
@@ -268,8 +269,8 @@ Messages:
   wwcteOffSender: Entiteit vertaling gedeaktiveer.
   wwctGUIEntityButton: Wissel Entiteit Vertaling
   wwctrlRateLimitBadInt: Jou koersbeperking is nie 'n geldige heelgetal nie.
-  wwcTranslatorErrorConsole: '''n Probleem het ondervind terwyl gebruiker {0} hul vertaling
-    probeer het. Gaan asseblief errorLog.txt vir meer besonderhede.'
+  wwcTranslatorErrorConsole: '''n Probleem het ondervind terwyl gebruiker {0} hul
+    vertaling probeer het. Gaan asseblief errorLog.txt vir meer besonderhede.'
   wwctGUIChatButton: Toggle Chat Vertaling
   wwcrBegin: Herlaai WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Vertaalsessie vir {0} is gestop.
@@ -376,8 +377,8 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Verander Libre Translate API Sleutel
   libreHttp403: Ontbreek Libre Translate API Sleutel, of jy verban uit die bediener!
   wwcConfigConversationLibreURLSuccess: Gratis URL stel suksesvol.
-  wwcConfigConversationLibreTranslateApiKeyInput: Die huidige API sleutel is {0}. Voer
-    asseblief 'n API sleutel in vir Libre, of tik 0 om terug te gaan.
+  wwcConfigConversationLibreTranslateApiKeyInput: Die huidige API sleutel is {0}.
+    Voer asseblief 'n API sleutel in vir Libre, of tik 0 om terug te gaan.
   wwcConfigGUILibreTranslateButton: Gratis Vertaal
   libreHttp429: Geen vertroue as gevolg van koers limiet van bediener.
   wwcConfigGUIToggleLibreTranslateButton: Skakel Libre Vertaal
@@ -404,8 +405,9 @@ Messages:
   wwcConfigConversationMongoHostnameSuccess: Die MongoDB masjien naam suksesvol verander.
   wwcConfigGUIMongoMenuButton: Verander MongoDB Instellings
   wwcConfigGUIToggleMongoButton: Skakel MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Die huidige databasis naam is {0}. Tik
-    enigiets anders as 0 om 'n nuwe databasisnaam te stel, of tik 0 om terug te gaan.
+  wwcConfigConversationMongoDatabaseNameInput: Die huidige databasis naam is {0}.
+    Tik enigiets anders as 0 om 'n nuwe databasisnaam te stel, of tik 0 om terug te
+    gaan.
   wwcConfigConversationMongoOptionalArgsInput: 'Die huidige opsionele MongoDB argumente
     is: {0}. Tik argumente geskei deur ''n komma (sleutel=waarde, sleutel2=waarde2),
     of tik duidelik om die huidige args uit te vee, of tik 0 om terug te gaan.'
@@ -433,12 +435,12 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Verander DeepL Translate API Sleutel
   wwcConfigGUIToggleDeepLTranslateButton: Skakel DeepL Vertaal
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API sleutel stel suksesvol.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Die huidige API sleutel is {0}. Voer
-    asseblief 'n API sleutel in vir DeepL, of tik 0 om terug te gaan.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Die huidige API sleutel is {0}.
+    Voer asseblief 'n API sleutel in vir DeepL, of tik 0 om terug te gaan.
   wwcConfigErrorsToIgnoreSuccess: Suksesvol geregistreerde vertaler foute om te ignoreer.
   wwcConfigErrorsToIgnoreInvalid: Ongeldige vertaler fouten om te ignoreer set in
     config.yml. Registreer verstek...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Die vertaler foute suksesvol verander
     om frases te ignoreer.
   wwcConfigGUIIgnoreErrorsButton: Verander foute om te ignoreer
@@ -448,7 +450,7 @@ Messages:
     sal tik “*” veroorsaak dat die prop nie enige vertalerfoute nagaan nie.'
   wwcConfigConversationIgnoreErrorsCleared: Vertaler foute om frases te ignoreer suksesvol
     skoongemaak.
-
+  
   wwcsActiveTransPrevRate: 'Aktiewe Vertaler Vorige Tempo perk Tyd: {0}'
   wwcsActiveTransSaved: 'Aktiewe Vertaler Gestoor na Disk: {0}'
   wwcsActiveTransIncoming: 'Aktiewe Vertaler Vertaal Inkomende Chat: {0}'
@@ -462,4 +464,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktiewe Vertaler Vertaal Uitgaande Chat: {0}'
   wwcsActiveTransItem: 'Aktiewe Vertaler Vertaal Item: {0}'
   wwcsActiveTransEntity: 'Aktiewe Vertaler Vertalende Entiteit: {0}'
+  wwcSupportedServer: Inisialiseer WorldwideChat vir {0}...
+  wwcSupportedVersion: Aktiveer funksies vir weergawe {0}...
 

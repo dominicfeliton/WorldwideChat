@@ -40,7 +40,8 @@ Messages:
   wwcConfigGUIGeneralSettings: Allmän konfiguration
   wwcInvalidLang: Ogiltigt språk i config.yml. Faulting till en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon regionen satt framgångsrikt.
-  wwcConfigRateLimitEnabled: Global hastighetsgräns aktiverad och inställd på {0} sekunder.
+  wwcConfigRateLimitEnabled: Global hastighetsgräns aktiverad och inställd på {0}
+    sekunder.
   wwcBadPerms: Du har inte de behörigheter som krävs för att köra det här kommandot!
   wwcConfigGUILangButton: Ändra plugin-språk
   wwctGUISignButton: Växla signera översättning
@@ -109,8 +110,8 @@ Messages:
   wwcConfigConnectionSuccess: Ansluten till {0}!
   wwcConfigGUIGoogleTranslateButton: Google Översätt
   wwcsIsActiveTranslator: 'Är aktiv översättare: {0}'
-  wwcConfigConversationPrefixInput: Det aktuella prefixet är {0}. Skriv ett nytt, eller
-    skriv 0 för att gå tillbaka.
+  wwcConfigConversationPrefixInput: Det aktuella prefixet är {0}. Skriv ett nytt,
+    eller skriv 0 för att gå tillbaka.
   wwcConfigGUIPreviousPageButton: Föregående sida
   wwcConfigGUITranslatorCacheButton: Ändra cachegräns för översättning
   wwcConfigConversationbStatsSuccess: Framgångsrikt bytt bStats.
@@ -159,7 +160,8 @@ Messages:
     Defaulerar till 86400 sekunder...
   wwctrlRateLimitOffSender: Stängde av din prisgräns.
   wwctrlRateLimitAlreadyOffTarget: Hastighetsbegränsning {0} är redan inaktiverad.
-  wwctrlPlayerNotFound: Spelaren {0} hittas antingen inte, eller är inte en aktiv översättare.
+  wwctrlPlayerNotFound: Spelaren {0} hittas antingen inte, eller är inte en aktiv
+    översättare.
   wwctrlRateLimitSetSender: Ställ in din hastighetsgräns till {0} sekunder.
   wwctrlRateLimitOffTarget: Inaktiverade hastighetsbegränsning {0}.
   wwctrlRateLimitSetTarget: Ställ in hastighetsbegränsning {0} till {1} sekunder.
@@ -320,9 +322,9 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Utdataspråk: {0}'
   wwcTranslatorAttempt: Försöker ansluta till översättaren i config.yml... (försök
     {0}/ {1})
-  wwcTimeoutExceptionConsole: Spelare {0} hade sin senaste tidsgräns för begäran. Det
-    här felet är inte dödligt, men WorldwideChat bör laddas om om det fortsätter att
-    hända.
+  wwcTimeoutExceptionConsole: Spelare {0} hade sin senaste tidsgräns för begäran.
+    Det här felet är inte dödligt, men WorldwideChat bör laddas om om det fortsätter
+    att hända.
   wwcGUIPageNumber: 'Sidnummer: {0}'
   wwcConfigYAMLFallback: Att falla tillbaka till YAML...
   wwcConfigGUIToggleSQLButton: Växla SQL
@@ -412,11 +414,12 @@ Messages:
   wwcConfigConversationMongoHostnameSuccess: Ändrade MongoDB-värdnamnet.
   wwcConfigGUIMongoMenuButton: Ändra MongoDB-inställningar
   wwcConfigGUIToggleMongoButton: Växla MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Det aktuella databasnamnet är {0}. Skriv
-    något annat än 0 för att ange ett nytt databasnamn, eller skriv 0 för att gå tillbaka.
+  wwcConfigConversationMongoDatabaseNameInput: Det aktuella databasnamnet är {0}.
+    Skriv något annat än 0 för att ange ett nytt databasnamn, eller skriv 0 för att
+    gå tillbaka.
   wwcConfigConversationMongoOptionalArgsInput: 'De nuvarande valfria MongoDB-argumenten
-    är: {0}. Skriv argument åtskilda av ett komma (key=value, key2=value2), eller skriv
-    clear för att radera de aktuella argarna, eller skriv 0 för att gå tillbaka.'
+    är: {0}. Skriv argument åtskilda av ett komma (key=value, key2=value2), eller
+    skriv clear för att radera de aktuella argarna, eller skriv 0 för att gå tillbaka.'
   wwcConfigGUIMongoDatabaseNameButton: Ändra MongoDB-databas
   wwcConfigConversationMongoUsernameInput: Det nuvarande användarnamnet är {0}. Skriv
     något annat än 0 för att ange ett nytt användarnamn, eller skriv 0 för att gå
@@ -446,7 +449,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Framgångsrikt registrerade översättarfel att ignorera.
   wwcConfigErrorsToIgnoreInvalid: Ogiltiga översättningsfel att ignorera anges i config.yml.
     Registrerar standardvärden...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Ändrade översättarens fel framgångsrikt
     för att ignorera fraser.
   wwcConfigGUIIgnoreErrorsButton: Ändra fel för att ignorera
@@ -457,7 +460,7 @@ Messages:
     översättare fel.'
   wwcConfigConversationIgnoreErrorsCleared: Översättarfel för att ignorera fraser
     rensas framgångsrikt.
-
+  
   wwcsActiveTransPrevRate: 'Aktiv översättare Föregående tidsgräns för hastighet:
     {0}'
   wwcsActiveTransSaved: 'Aktiv översättare sparad på disk: {0}'
@@ -472,4 +475,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktiv översättare som översätter utgående chatt: {0}'
   wwcsActiveTransItem: 'Aktiv översättare Översättning Objekt: {0}'
   wwcsActiveTransEntity: 'Active Translator Translating Entitet: {0}'
+  wwcSupportedServer: Initierar WorldwideChat för {0}...
+  wwcSupportedVersion: Aktivera funktioner för version {0}...
 

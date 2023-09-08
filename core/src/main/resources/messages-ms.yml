@@ -53,8 +53,8 @@ Messages:
   wwcConfigGUIQuitButton: Keluar & Simpan Perubahan
   wwctPlayerNotFound: Pemain {0} tidak ditemui.
   wwcConfigGUIAmazonTranslateRegionButton: Ubah Wilayah Amazon
-  wwcConfigConversationLangInput: 'Bahasa pemalam semasa ialah {0}. Sila masukkan kod
-    bahasa yang sah, atau taip 0 untuk dibatalkan. Kod bahasa yang sah: {0}'
+  wwcConfigConversationLangInput: 'Bahasa pemalam semasa ialah {0}. Sila masukkan
+    kod bahasa yang sah, atau taip 0 untuk dibatalkan. Kod bahasa yang sah: {0}'
   wwcConfigConversationLangInvalid: Kod bahasa tidak sah!
   wwcConfigGUIWatsonAPIKeyButton: Ubah Kunci API Watson
   wwcEnabled: Dibenarkan WorldwideChat versi {0}.
@@ -108,8 +108,8 @@ Messages:
   wwcConfigConnectionSuccess: Berjaya disambungkan ke {0}!
   wwcConfigGUIGoogleTranslateButton: Google Terjemah
   wwcsIsActiveTranslator: 'Adalah Penterjemah Aktif: {0}'
-  wwcConfigConversationPrefixInput: Awalan semasa ialah {0}. Sila taip yang baru, atau
-    taip 0 untuk kembali.
+  wwcConfigConversationPrefixInput: Awalan semasa ialah {0}. Sila taip yang baru,
+    atau taip 0 untuk kembali.
   wwcConfigGUIPreviousPageButton: Halaman Sebelumnya
   wwcConfigGUITranslatorCacheButton: Ubah Had Cache Terjemahan
   wwcConfigConversationbStatsSuccess: Berjaya togol bStats.
@@ -158,7 +158,8 @@ Messages:
     Lalai kepada 86400 saat...
   wwctrlRateLimitOffSender: Mematikan had kadar anda.
   wwctrlRateLimitAlreadyOffTarget: Had kadar {0} sudah dilumpuhkan.
-  wwctrlPlayerNotFound: Pemain {0} sama ada tidak ditemui, atau bukan penterjemah aktif.
+  wwctrlPlayerNotFound: Pemain {0} sama ada tidak ditemui, atau bukan penterjemah
+    aktif.
   wwctrlRateLimitSetSender: Tetapkan had kadar anda ke {0} saat.
   wwctrlRateLimitOffTarget: Mematikan had kadar {0}.
   wwctrlRateLimitSetTarget: Tetapkan had kadar {0} ke {1} saat.
@@ -182,8 +183,8 @@ Messages:
     config.yml. Lalai kepada 7200 saat...
   wwcConfigCacheInvalid: Saiz cache penterjemah tidak sah. Defaulting kepada 10...
   wwcInventoryErrorPlayer: Ralat dikesan dengan GUI anda. Log telah dihantar ke konsol.
-  wwcInventoryError: Ralat dikesan dengan GUI pengguna {0}. Sila laporkan isu ini kepada
-    pembangun.
+  wwcInventoryError: Ralat dikesan dengan GUI pengguna {0}. Sila laporkan isu ini
+    kepada pembangun.
   wwctiOffTarget: Terjemahan item dilumpuhkan untuk {0}.
   wwctiOffSender: Terjemahan item dilumpuhkan.
   wwcItemTranslateTitleStock: Tidak boleh menterjemahkan nama item lalai.
@@ -252,8 +253,8 @@ Messages:
   wwcEntityTranslateDone: 'Nama Entiti Diterjemahkan: {0}'
   wwcEntityTranslateNoName: Entiti tidak mempunyai nama tersuai.
   wwcConfigConversationErrorLimitInput: Had ralat semasa bagi setiap penterjemah adalah
-    {0}. Taipkan apa-apa yang lebih besar daripada 0 untuk menetapkan nilai baru, atau
-    taip apa-apa yang kurang atau sama dengan 0 untuk kembali.
+    {0}. Taipkan apa-apa yang lebih besar daripada 0 untuk menetapkan nilai baru,
+    atau taip apa-apa yang kurang atau sama dengan 0 untuk kembali.
   wwcConfigGUIGlobalRateLimitButton: Ubah Had Kadar Global
   wwcteOnSender: Terjemahan entiti dibenarkan. Klik kanan pada entiti untuk menterjemahkan
     namanya!
@@ -341,8 +342,8 @@ Messages:
     untuk tetapkan port baru, atau taip 0 untuk kembali.
   wwcConfigGUISQLPasswordButton: Tukar Kata Laluan SQL
   wwcConfigConversationSQLHostnameSuccess: Berjaya menukar nama hos SQL.
-  wwcConfigConversationSQLHostnameInput: Nama hos semasa adalah {0}. Taip apa-apa selain
-    0 untuk tetapkan nama hos baru, atau taip 0 untuk kembali.
+  wwcConfigConversationSQLHostnameInput: Nama hos semasa adalah {0}. Taip apa-apa
+    selain 0 untuk tetapkan nama hos baru, atau taip 0 untuk kembali.
   wwcConfigGUISQLHostnameButton: Tukar Nama Hos SQL
   wwcConfigConversationSQLOptionalArgsSuccess: Berjaya menukar argumen SQL pilihan.
   wwcConfigConversationSQLPasswordSuccess: Berjaya menukar kata laluan SQL.
@@ -408,8 +409,8 @@ Messages:
     Taip apa-apa selain daripada 0 untuk tetapkan nama pangkalan data baru, atau taip
     0 untuk kembali.
   wwcConfigConversationMongoOptionalArgsInput: 'Argumen MongoDB pilihan semasa ialah:
-    {0}. Argumen jenis dipisahkan dengan koma (key=value, key2=value2), atau taip clear
-    untuk lap args semasa, atau taip 0 untuk kembali.'
+    {0}. Argumen jenis dipisahkan dengan koma (key=value, key2=value2), atau taip
+    clear untuk lap args semasa, atau taip 0 untuk kembali.'
   wwcConfigGUIMongoDatabaseNameButton: Tukar Pangkalan Data MongoDB
   wwcConfigConversationMongoUsernameInput: Nama pengguna semasa adalah {0}. Taip apa-apa
     selain daripada 0 untuk tetapkan nama pengguna baru, atau taip 0 untuk kembali.
@@ -440,7 +441,7 @@ Messages:
     diabaikan.
   wwcConfigErrorsToIgnoreInvalid: Ralat penterjemah tidak sah untuk diabaikan ditetapkan
     dalam config.yml. Mendaftarkan lalai...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Berjaya mengubah ralat penterjemah untuk
     mengabaikan frasa.
   wwcConfigGUIIgnoreErrorsButton: Ubah Ralat untuk Abaikan
@@ -450,7 +451,7 @@ Messages:
     menaip “*” akan menyebabkan plugin tidak memeriksa sebarang kesilapan penterjemah.'
   wwcConfigConversationIgnoreErrorsCleared: Kesilapan penterjemah untuk mengabaikan
     frasa dibersihkan dengan jayanya.
-
+  
   wwcsActiveTransPrevRate: 'Penterjemah Aktif Masa Had Kadar Sebelumnya: {0}'
   wwcsActiveTransSaved: 'Penterjemah Aktif Disimpan ke Cakera: {0}'
   wwcsActiveTransIncoming: 'Penterjemah Aktif Menterjemah Sembang Masuk: {0}'
@@ -464,4 +465,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Penterjemah Aktif Menterjemah Sembang Keluar: {0}'
   wwcsActiveTransItem: 'Item Penterjemah Aktif: {0}'
   wwcsActiveTransEntity: 'Entiti Penterjemah Aktif: {0}'
+  wwcSupportedServer: Memulakan WorldwideChat untuk {0}...
+  wwcSupportedVersion: Membolehkan ciri untuk versi {0}...
 

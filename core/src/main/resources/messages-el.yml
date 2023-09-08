@@ -105,7 +105,8 @@ Messages:
     έκδοση.
   wwcConfigConversationRateLimitSuccess: Το όριο βαθμολογίας ορίστηκε με επιτυχία.
   wwcConfigConversationWatsonURLSuccess: Η διεύθυνση URL Watson ορίστηκε με επιτυχία.
-  wwctbPlayerNotFound: Ο αναπαραγωγής {0} είτε δεν βρέθηκε είτε δεν είναι ενεργός μεταφραστής.
+  wwctbPlayerNotFound: Ο αναπαραγωγής {0} είτε δεν βρέθηκε είτε δεν είναι ενεργός
+    μεταφραστής.
   wwcConfigConversationTranslationCacheSuccess: Το όριο cache μετάφρασης ορίστηκε
     με επιτυχία.
   wwctInvalidArgs: Μη έγκυρα ορίσματα!
@@ -396,8 +397,9 @@ Messages:
   wwcConfigConversationSQLDatabaseNameSuccess: Τροποποιήθηκε με επιτυχία το όνομα
     της βάσης δεδομένων SQL.
   wwcConfigConversationFatalAsyncAbort: Το τρέχον χρονικό όριο για να ματαιώσετε όλες
-    τις ασύγχρονες εργασίες είναι {0} δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε πάνω από
-    το 7 για να ορίσετε ένα νέο χρονικό όριο, ή οτιδήποτε κάτω από αυτό για να επιστρέψετε.
+    τις ασύγχρονες εργασίες είναι {0} δευτερόλεπτα. Πληκτρολογήστε οτιδήποτε πάνω
+    από το 7 για να ορίσετε ένα νέο χρονικό όριο, ή οτιδήποτε κάτω από αυτό για να
+    επιστρέψετε.
   wwcConfigConversationFatalAsyncSuccess: Καθορίστηκε με επιτυχία το χρονικό όριο
     ασύγχρονης εργασίας.
   wwcConfigGUIFatalAsyncAbortButton: Αλλαγή χρονικού ορίου εργασίας ασύγχρονη
@@ -407,8 +409,8 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Αλλάξτε το κλειδί API μετάφρασης Libre
   libreHttp403: Λείπει Libre Μετάφραση API Key, ή έχετε απαγορευτεί από το διακομιστή!
   wwcConfigConversationLibreURLSuccess: Το Libre URL ορίστηκε επιτυχώς.
-  wwcConfigConversationLibreTranslateApiKeyInput: Το τρέχον κλειδί API είναι {0}. Παρακαλώ
-    εισάγετε ένα κλειδί API για το Libre, ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationLibreTranslateApiKeyInput: Το τρέχον κλειδί API είναι {0}.
+    Παρακαλώ εισάγετε ένα κλειδί API για το Libre, ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigGUILibreTranslateButton: Ελεύθερη Μετάφραση
   libreHttp429: Δεν υπάρχει εμπιστοσύνη λόγω ορίου ρυθμού από το διακομιστή.
   wwcConfigGUIToggleLibreTranslateButton: Εναλλαγή μετάφρασης Libre
@@ -472,12 +474,12 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Αλλαγή κλειδιού API μετάφρασης DeepL
   wwcConfigGUIToggleDeepLTranslateButton: Εναλλαγή μετάφρασης DeepL
   wwcConfigConversationDeepLTranslateApiKeySuccess: Το κλειδί DeepL API ορίστηκε επιτυχώς.
-  wwcConfigConversationDeepLTranslateApiKeyInput: Το τρέχον κλειδί API είναι {0}. Εισαγάγετε
-    ένα κλειδί API για το DeepL ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Το τρέχον κλειδί API είναι {0}.
+    Εισαγάγετε ένα κλειδί API για το DeepL ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigErrorsToIgnoreSuccess: Επιτυχής καταχώρηση σφαλμάτων μεταφραστή προς αγνόηση.
   wwcConfigErrorsToIgnoreInvalid: Μη έγκυρα σφάλματα μετάφρασης για παράβλεψη που
     ορίστηκαν στο config.yml. Καταχώρηση προεπιλογών...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Επιτυχής αλλαγή των σφαλμάτων μεταφραστή
     για να αγνοήσει φράσεις.
   wwcConfigGUIIgnoreErrorsButton: Αλλαγή σφαλμάτων για Παράβλεψη
@@ -488,7 +490,7 @@ Messages:
     να μην ελέγχει τυχόν σφάλματα μεταφραστή.'
   wwcConfigConversationIgnoreErrorsCleared: Σφάλματα μεταφραστή για να αγνοήσετε φράσεις
     που εκκαθαρίζονται με επιτυχία.
-
+  
   wwcsActiveTransPrevRate: 'Χρόνος προηγούμενης βαθμολογίας ενεργού μεταφραστή: {0}'
   wwcsActiveTransSaved: 'Ενεργός μεταφραστής αποθηκεύτηκε στο δίσκο: {0}'
   wwcsActiveTransIncoming: 'Ενεργός Μεταφραστής Μεταφράζει Εισερχόμενη συνομιλία:
@@ -505,4 +507,6 @@ Messages:
     {0}'
   wwcsActiveTransItem: 'Ενεργός Μεταφραστής Μεταφράζει Στοιχείο: {0}'
   wwcsActiveTransEntity: 'Ενεργός Μεταφραστής Μεταφράζει Οντότητα: {0}'
+  wwcSupportedServer: Αρχικοποίηση του WorldwideChat για {0}...
+  wwcSupportedVersion: Ενεργοποίηση λειτουργιών για την έκδοση {0}...
 

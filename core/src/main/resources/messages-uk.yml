@@ -34,8 +34,8 @@ Messages:
   wwcConfigConversationLangSuccess: Мова плагіна успішно змінилася.
   wwcsSuccessfulTranslations: 'Успішні переклади: {0}'
   wwcConfigConversationTranslationCacheInput: Обмеження поточного кешу перекладу складає
-    {0} фраз. Введіть щось більше за 0, щоб встановити нове значення, або введіть 0,
-    щоб вимкнути кеш перекладу. Введіть що-небудь менше 0, щоб повернутися назад.
+    {0} фраз. Введіть щось більше за 0, щоб встановити нове значення, або введіть
+    0, щоб вимкнути кеш перекладу. Введіть що-небудь менше 0, щоб повернутися назад.
   wwctbOffTarget: Переклад книжки вимкнено для {0}.
   wwcConfigGUIGeneralSettings: Загальні налаштування
   wwcInvalidLang: Некоректна мова у вашому config.yml. За нефолт для ан...
@@ -172,8 +172,8 @@ Messages:
     обмеження. Введіть що-небудь менше 0, щоб повернутися назад.
   wwctGUITargetPlayerNull: Цільовий гравець від'єднано від сервера.
   wwcConfigConversationSyncUserDataDelayInput: Поточна затримка на синхронізацію даних
-    користувача становить {0} секунд. Введіть щось більше 10, щоб встановити нове значення,
-    або щось менше 10, щоб повернутися назад.
+    користувача становить {0} секунд. Введіть щось більше 10, щоб встановити нове
+    значення, або щось менше 10, щоб повернутися назад.
   wwcConfigGUISyncUserDataButton: Змінення затримки синхронізації даних користувача
   wwcConfigSyncDelayEnabled: Затримка для синхронізації даних користувача на {0} секунд.
   wwcConfigConversationSyncUserDataDelaySuccess: Затримка синхронізації даних користувача
@@ -265,8 +265,8 @@ Messages:
   wwcCharLimit: Ваше повідомлення занадто довге! Будь ласка, переконайтеся, що ваше
     повідомлення менше, ніж у {0} символів.
   wwcConfigConversationCharacterLimitInput: Поточне обмеження символів на повідомлення
-    складає {0} символів. Введіть щось більше за 0, щоб встановити нове значення, або
-    введіть щось менше або рівне 0, щоб повернутися назад.
+    складає {0} символів. Введіть щось більше за 0, щоб встановити нове значення,
+    або введіть щось менше або рівне 0, щоб повернутися назад.
   wwcteOffSender: Переклад сутності вимкнено.
   wwctGUIEntityButton: Переключити переклад сутності
   wwctrlRateLimitBadInt: Обмеження ставки не є дійсним цілим числом.
@@ -283,7 +283,8 @@ Messages:
     до {0}.
   wwctAutoTranslateStartOtherPlayer: Запуск нового сеансу перекладу для {0} до {1}.
   wwctTranslationStopped: Ваш сеанс перекладу було зупинено.
-  wwctLangToLangStartOtherPlayer: Запуск нового сеансу перекладу для {0} з {1} до {2}.
+  wwctLangToLangStartOtherPlayer: Запуск нового сеансу перекладу для {0} з {1} до
+    {2}.
   wwctAutoTranslateStart: Запуск нового сеансу перекладу до {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: У вас є активний сеанс перекладу до
     {0}.
@@ -312,8 +313,9 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Мова виводу: {0}'
   wwcTranslatorAttempt: Спроба підключення до перекладача в config.yml... (Спроб {0}/
     {0})
-  wwcTimeoutExceptionConsole: Програвач {0} мав свій останній тайм-аут запиту. Ця помилка
-    не є фатальною, але WorldwideChat слід перезавантажити, якщо вона продовжує відбуватися.
+  wwcTimeoutExceptionConsole: Програвач {0} мав свій останній тайм-аут запиту. Ця
+    помилка не є фатальною, але WorldwideChat слід перезавантажити, якщо вона продовжує
+    відбуватися.
   wwcGUIPageNumber: 'Номер сторінки: {0}'
   wwcConfigYAMLFallback: Повертаючись до YAML...
   wwcConfigGUIToggleSQLButton: Перемкнути SQL
@@ -384,8 +386,8 @@ Messages:
     Перезавантажте, щоб зміни вступили в силу.
   wwcConfigConversationLibreTranslateApiKeySuccess: Безкоштовний ключ API успішно
     встановлений.
-  wwcConfigConversationLibreURLInput: Поточна URL-адреса {0}. Будь ласка, введіть URL-адресу
-    для Libre або введіть 0, щоб повернутися назад.
+  wwcConfigConversationLibreURLInput: Поточна URL-адреса {0}. Будь ласка, введіть
+    URL-адресу для Libre або введіть 0, щоб повернутися назад.
   libreHttpUnknown: 'Невідома помилка http: {0}'
   wwcConfigGUILibreTranslateURLButton: Змінити Libre Перекласти URL-адресу
   wwcConfigConnectionFail: Не вдалося з' єднатися з {0}.
@@ -438,7 +440,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Успішно зареєстровані помилки перекладача ігнорувати.
   wwcConfigErrorsToIgnoreInvalid: Некоректні помилки перекладача для ігнорування встановлених
     у config.yml. Реєстрація типових...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Успішно змінені помилки перекладача, щоб
     ігнорувати фрази.
   wwcConfigGUIIgnoreErrorsButton: Змінити помилки на ігнорування
@@ -449,7 +451,7 @@ Messages:
     помилок перекладача.'
   wwcConfigConversationIgnoreErrorsCleared: Помилки перекладача, щоб ігнорувати фрази
     успішно очищені.
-
+  
   wwcsActiveTransPrevRate: 'Активний перекладач Попередній час обмеження швидкості:
     {0}'
   wwcsActiveTransSaved: 'Активний перекладач, збережений на диск: {0}'
@@ -465,4 +467,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Активний перекладач Переклад вихідного чату: {0}'
   wwcsActiveTransItem: 'Активний перекладач, що перекладає елемент: {0}'
   wwcsActiveTransEntity: 'Активний перекладач, що перекладає сутність: {0}'
+  wwcSupportedServer: Ініціалізація всесвітнього чату для {0}...
+  wwcSupportedVersion: Увімкнення функцій для версії {0}...
 

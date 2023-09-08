@@ -67,8 +67,8 @@ Messages:
   wwcUpdaterConnectionFailed: Github дээр хамгийн сүүлийн үеийн шинэчлэлтүүдийг шалгах
     боломжгүй.
   watsonNotFoundExceptionNotification: Таны оролтыг ямар ч цаашид орчуулах боломжгүй.
-  wwcConfigConversationWatsonAPIKeyInput: Одоогийн API түлхүүр {0} байна. оролтын Ватсон
-    нь API түлхүүр уу, эсвэл төрөл 0 буцаж явах.
+  wwcConfigConversationWatsonAPIKeyInput: Одоогийн API түлхүүр {0} байна. оролтын
+    Ватсон нь API түлхүүр уу, эсвэл төрөл 0 буцаж явах.
   wwctGUIStopButton: Орчуулгыг зогсоох
   wwcgTranslationStopped: Глобал чат орчуулга зогссон байна.
   wwcUpdaterFutureDate: WorldWichat энэ жишээ нь хамгийн сүүлийн үеийн олон нийтэд
@@ -157,8 +157,8 @@ Messages:
   wwcConfigBadUpdateDelay: Буруу Updater саатал config.yml заасан. 86400 секунд хүртэл
     анхдагч...
   wwctrlRateLimitOffSender: Таны ханшийн хязгаарыг унтраасан.
-  wwctrlRateLimitAlreadyOffTarget: '{0} ханшийн хязгаар нь аль хэдийн тахир дутуу болсон
-    байна.'
+  wwctrlRateLimitAlreadyOffTarget: '{0} ханшийн хязгаар нь аль хэдийн тахир дутуу
+    болсон байна.'
   wwctrlPlayerNotFound: Тоглогч % би бас олж чадаагүй байна, эсвэл идэвхтэй орчуулагч
     биш юм.
   wwctrlRateLimitSetSender: '{0} секунд нь таны ханшийн хязгаарыг тохируулна.'
@@ -314,8 +314,8 @@ Messages:
   wwctGUIExistingTranslationInput: 'Оролтын хэл: {0}'
   wwctGUIExistingChatIncomingEnabled: 'Ирж буй чат Орчуулга идэвхжсэн: {0}'
   wwctGUIExistingTranslationOutput: 'Гаралтын Хэл: {0}'
-  wwcTranslatorAttempt: config.yml орчуулагчтай холбогдохыг оролдох... ( {0}/ {1} оролдох
-    %)
+  wwcTranslatorAttempt: config.yml орчуулагчтай холбогдохыг оролдох... ( {0}/ {1}
+    оролдох %)
   wwcTimeoutExceptionConsole: Тоглогчийн % Би тэдний хамгийн сүүлийн хүсэлт хугацаа
     байсан. Энэ алдаа нь үхлийн аюултай биш юм, гэхдээ WorldwideChat энэ нь юу хэвээр
     байгаа бол дахин ачаалах хэрэгтэй.
@@ -392,8 +392,8 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: Амжилттай Translate Libre түлхүүр.
     Өөрчлөлтийг хүчин төгөлдөр болгохын тулд Дуут хувилбар.
   wwcConfigConversationLibreTranslateApiKeySuccess: Чөлөөт API түлхүүр амжилттай тогтоосон.
-  wwcConfigConversationLibreURLInput: Одоогийн URL нь {0} байна. оруулах уу Libre нь
-    URL, эсвэл төрөл 0 буцах.
+  wwcConfigConversationLibreURLInput: Одоогийн URL нь {0} байна. оруулах уу Libre
+    нь URL, эсвэл төрөл 0 буцах.
   libreHttpUnknown: 'Үл мэдэгдэх HTTP алдаа: {0}'
   wwcConfigGUILibreTranslateURLButton: Чөлөөт URL Translate өөрчлөх
   wwcConfigConnectionFail: '{0} руу холбогдож чадсангүй.'
@@ -404,9 +404,9 @@ Messages:
   wwcConfigConversationMongoPasswordInput: Одоогийн нууц үг нь {0} байна. 0-ээс өөр
     ямар нэгэн зүйлийг бичээд шинэ нууц үг тохируулахын тулд эсвэл 0 гэж бичээд буцааж
     оруулна уу.
-  wwcConfigConversationMongoPortInput: Одоогийн порт нь {0} байна. 0-ээс өөр ямар нэгэн
-    зүйлийг шинэ порт тохируулахын тулд бичнэ үү эсвэл буцаж очихын тулд 0 гэж бичнэ
-    үү.
+  wwcConfigConversationMongoPortInput: Одоогийн порт нь {0} байна. 0-ээс өөр ямар
+    нэгэн зүйлийг шинэ порт тохируулахын тулд бичнэ үү эсвэл буцаж очихын тулд 0 гэж
+    бичнэ үү.
   wwcConfigConversationToggleMongoSuccess: MongoDB амжилттай шилжүүлэв. Өөрчлөлтийг
     хүчин төгөлдөр болгохын тулд Дуут хувилбар.
   wwcConfigConversationMongoHostnameInput: Одоогийн хостын нэр нь {0} байна. 0-ээс
@@ -452,7 +452,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Амжилттай хэрэгсэхгүй орчуулагч алдаа бүртгэгдсэн.
   wwcConfigErrorsToIgnoreInvalid: Буруу орчуулагч алдаа config.yml тогтоосон хэрэгсэхгүй
     болгох. Анхдагчуудыг бүртгэх...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Амжилттай хэллэгийг үл тоомсорлох орчуулагч
     алдааг өөрчилсөн.
   wwcConfigGUIIgnoreErrorsButton: Үл тоомсорлохын тулд алдааг өөрчлөх
@@ -462,7 +462,7 @@ Messages:
     Үүнээс гадна, бичин “*” залгаас ямар ч орчуулагч алдааг шалгаж байх нь хүргэнэ.'
   wwcConfigConversationIgnoreErrorsCleared: Орчуулагч алдаа амжилттай цэвэрлэгдэж
     хэллэгийг үл тоомсорлох.
-
+  
   wwcsActiveTransPrevRate: 'Идэвхтэй Орчуулагч Өмнөх Rate хязгаар хугацаа: {0}'
   wwcsActiveTransSaved: 'Идэвхтэй Орчуулагч Дискнд Хадгалсан: {0}'
   wwcsActiveTransIncoming: 'Идэвхтэй Орчуулагч Орчуулах Ирж Чат: {0}'
@@ -477,4 +477,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Идэвхтэй Орчуулагч Орчуулах Гарч байгаа Чат: {0}'
   wwcsActiveTransItem: 'Идэвхтэй Орчуулагч Орчуулагч зүйл: {0}'
   wwcsActiveTransEntity: 'Идэвхтэй Орчуулагч Орчуулагч Орчуулагч: {0}'
+  wwcSupportedServer: Эхлүүлэх WorldwideChat нь {0}...
+  wwcSupportedVersion: хувилбар {0} боломжуудыг идэвхжүүлэх...
 

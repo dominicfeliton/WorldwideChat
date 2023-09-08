@@ -33,8 +33,8 @@ Messages:
   wwcConfigConversationLangSuccess: Lugha ya Plugin iliyopita kwa mafanikio
   wwcsSuccessfulTranslations: 'Tafsiri zilizofanikiwa: {0}'
   wwcConfigConversationTranslationCacheInput: Kikomo cha sasa cha tafsiri ya cache
-    ni {0} misemo. Weka kitu chochote zaidi kuliko 0 kuweka thamani mpya, au aina ya
-    0 ili kuzima cache ya tafsiri. Andika kitu chochote chini ya 0 kurudi nyuma.
+    ni {0} misemo. Weka kitu chochote zaidi kuliko 0 kuweka thamani mpya, au aina
+    ya 0 ili kuzima cache ya tafsiri. Andika kitu chochote chini ya 0 kurudi nyuma.
   wwctbOffTarget: Tafsiri ya kitabu imezimwa kwa {0}.
   wwcConfigGUIGeneralSettings: Usanidi Mkuu
   wwcInvalidLang: Lugha batili katika config.yml yako. Defaulting kwa sw...
@@ -87,8 +87,8 @@ Messages:
   wwctGUITranslationButton: Anza Kutafsiri
   wwctGUIAutoDetectButton: Kuchunguza kiotomatiki lugha
   wwcUpdaterUpToDate: WorldwideChat ni hadi sasa!
-  wwcConfigConversationAmazonTranslateRegionInput: Eneo la sasa ni {0}. Tafadhali ingiza
-    eneo la Amazon, au funga 0 kurudi nyuma.
+  wwcConfigConversationAmazonTranslateRegionInput: Eneo la sasa ni {0}. Tafadhali
+    ingiza eneo la Amazon, au funga 0 kurudi nyuma.
   wwcNoConsole: Amri hii inaweza tu kukimbia na mchezaji.
   wwcInitializationFail: Imeshindwa kuanzisha WorldwideChat.
   wwcrSuccess: Mafanikio ya kupakia WorldwideChat.
@@ -307,9 +307,8 @@ Messages:
   wwctGUIExistingTranslationOutput: 'Lugha ya Pato: {0}'
   wwcTranslatorAttempt: Kujaribu kuungana na translator katika config.yml... (jaribio
     {0}/ {1})
-  wwcTimeoutExceptionConsole: mchezaji {0} na ombi yao ya hivi karibuni umeisha.
-    Hitilafu hii sio mbaya, lakini WorldwideChat inapaswa kupakiwa tena ikiwa inaendelea
-    kutokea.
+  wwcTimeoutExceptionConsole: mchezaji {0} na ombi yao ya hivi karibuni umeisha. Hitilafu
+    hii sio mbaya, lakini WorldwideChat inapaswa kupakiwa tena ikiwa inaendelea kutokea.
   wwcGUIPageNumber: 'Idadi ya Ukurasa: {0}'
   wwcConfigYAMLFallback: Kuanguka nyuma YAML...
   wwcConfigGUIToggleSQLButton: Badilisha SQL
@@ -371,16 +370,16 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Badilisha Libre Kutafsiri API muhimu
   libreHttp403: Kukosa Libre Tafsiri API Key, au wewe ni marufuku kutoka server!
   wwcConfigConversationLibreURLSuccess: URL ya Libre imewekwa kwa mafanikio.
-  wwcConfigConversationLibreTranslateApiKeyInput: Kitufe cha sasa cha API ni {0}. Tafadhali
-    ingiza ufunguo wa API kwa Libre, au funga 0 ili urejee.
+  wwcConfigConversationLibreTranslateApiKeyInput: Kitufe cha sasa cha API ni {0}.
+    Tafadhali ingiza ufunguo wa API kwa Libre, au funga 0 ili urejee.
   wwcConfigGUILibreTranslateButton: Libre Tafsiri
   libreHttp429: Hakuna kujiamini kutokana na kiwango cha kikomo kutoka server.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Kutafsiri
   wwcConfigConversationLibreTranslateToggleSuccess: Mafanikio toggled Libre Tafsiri.
     Reload kwa mabadiliko ya kuchukua athari.
   wwcConfigConversationLibreTranslateApiKeySuccess: Libre API muhimu kuweka mafanikio.
-  wwcConfigConversationLibreURLInput: URL ya sasa ni {0}. Tafadhali ingiza URL ya Libre,
-    au funga 0 ili urejee.
+  wwcConfigConversationLibreURLInput: URL ya sasa ni {0}. Tafadhali ingiza URL ya
+    Libre, au funga 0 ili urejee.
   libreHttpUnknown: 'Hitilafu isiyojulikana ya http: {0}'
   wwcConfigGUILibreTranslateURLButton: Badilisha Libre Kutafsiri URL
   wwcConfigConnectionFail: Imeshindwa kuungana na {0}.
@@ -390,8 +389,8 @@ Messages:
   wwcConfigGUIMongoHostnameButton: Badilisha jina la Mwenyeji wa MongoDB
   wwcConfigConversationMongoPasswordInput: Nenosiri la sasa ni {0}. Andika kitu chochote
     isipokuwa 0 ili kuweka nenosiri jipya, au funga 0 ili urejee.
-  wwcConfigConversationMongoPortInput: Bandari ya sasa ni {0}. Weka kitu chochote isipokuwa
-    0 ili kuweka bandari mpya, au funga 0 ili urejee.
+  wwcConfigConversationMongoPortInput: Bandari ya sasa ni {0}. Weka kitu chochote
+    isipokuwa 0 ili kuweka bandari mpya, au funga 0 ili urejee.
   wwcConfigConversationToggleMongoSuccess: MongoDB imeshuka kwa mafanikio. Reload
     kwa mabadiliko ya kuchukua athari.
   wwcConfigConversationMongoHostnameInput: Jina la sasa la mwenyeji ni {0}. Andika
@@ -406,8 +405,8 @@ Messages:
     {0}. hoja za aina zilizotengwa na comma (ufungu=value, key2=value2), au aina ya
     wazi kuifuta args ya sasa, au aina ya 0 kurudi nyuma.'
   wwcConfigGUIMongoDatabaseNameButton: Badilisha Database ya Mongo
-  wwcConfigConversationMongoUsernameInput: Jina la mtumiaji wa sasa ni {0} Andika kitu
-    chochote isipokuwa 0 ili kuweka jina la mtumiaji mpya, au aina ya 0 ili urejee.
+  wwcConfigConversationMongoUsernameInput: Jina la mtumiaji wa sasa ni {0} Andika
+    kitu chochote isipokuwa 0 ili kuweka jina la mtumiaji mpya, au aina ya 0 ili urejee.
   wwcConfigGUIMongoOptionalArgsButton: Badilisha MongoDB Hoja za hiari
   wwcConfigConversationMongoUsernameSuccess: Imebadilisha mafanikio jina la mtumiaji
     wa MongoDB.
@@ -434,7 +433,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Mafanikio kusajiliwa translator makosa kupuuza.
   wwcConfigErrorsToIgnoreInvalid: makosa batili translator kupuuza kuweka katika config.yml.
     Kusajili chaguo-msingi...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Mafanikio iliyopita makosa translator
     kupuuza misemo.
   wwcConfigGUIIgnoreErrorsButton: Badilisha Hitilafu ili kupuuza
@@ -444,7 +443,7 @@ Messages:
     “*” itasababisha Plugin kutoangalia makosa yoyote ya translator.'
   wwcConfigConversationIgnoreErrorsCleared: Makosa ya Translator kupuuza misemo kufutwa
     kwa mafanikio.
-
+  
   wwcsActiveTransPrevRate: 'Mtafsiri wa Kazi Muda wa Kikomo cha Kiwango cha awali:
     {0}'
   wwcsActiveTransSaved: 'Mtafsiri wa Active Imehifadhiwa kwenye Disk: {0}'
@@ -459,4 +458,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Active Translator Kutafsiri Chat zinazotoka: {0}'
   wwcsActiveTransItem: 'Mtafsiri mwenye kazi Tafsiri Kipengee: {0}'
   wwcsActiveTransEntity: 'Chombo cha Tafsiri cha Tafsiri cha Mtafsiri: {0}'
+  wwcSupportedServer: Kuanzisha WorldwideChat kwa {0}...
+  wwcSupportedVersion: Inawezesha vipengele vya toleo {0}...
 

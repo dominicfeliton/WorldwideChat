@@ -39,7 +39,8 @@ Messages:
   wwcConfigGUIGeneralSettings: সাধারণ কনফিগারেশন
   wwcInvalidLang: আপনার config.yml এ অবৈধ ভাষা। ডিফল্ট থেকে...
   wwcConfigConversationAmazonTranslateRegionSuccess: আমাজন অঞ্চল সফলভাবে সেট।
-  wwcConfigRateLimitEnabled: গ্লোবাল রেট সীমা সক্রিয় এবং {0} সেকেন্ড নির্ধারণ করা হবে।
+  wwcConfigRateLimitEnabled: গ্লোবাল রেট সীমা সক্রিয় এবং {0} সেকেন্ড নির্ধারণ করা
+    হবে।
   wwcBadPerms: এই কমান্ডটি চালানোর জন্য আপনার কাছে প্রয়োজনীয় অনুমতি নেই!
   wwcConfigGUILangButton: প্লাগইন ভাষা পরিবর্তন করুন
   wwctGUISignButton: সাইন অনুবাদ টগল করুন
@@ -51,12 +52,13 @@ Messages:
   wwcConfigGUIQuitButton: পরিবর্তন থেকে প্রস্থান করো
   wwctPlayerNotFound: খেলোয়াড় {0} পাওয়া যায়নি।
   wwcConfigGUIAmazonTranslateRegionButton: আমাজন অঞ্চল পরিবর্তন করুন
-  wwcConfigConversationLangInput: 'বর্তমান প্লাগইন ভাষা {0}। অনুগ্রহ করে একটি বৈধ ভাষা
-    কোড লিখুন, অথবা বাতিল করার জন্য 0 টাইপ করুন। বৈধ ভাষা কোড: {0}'
+  wwcConfigConversationLangInput: 'বর্তমান প্লাগইন ভাষা {0}। অনুগ্রহ করে একটি বৈধ
+    ভাষা কোড লিখুন, অথবা বাতিল করার জন্য 0 টাইপ করুন। বৈধ ভাষা কোড: {0}'
   wwcConfigConversationLangInvalid: ভাষা কোড অবৈধ!
   wwcConfigGUIWatsonAPIKeyButton: ওয়াটসন এপিআই কী পরিবর্তন করুন
   wwcEnabled: ওয়ার্ল্ডউইডচ্যাট সংস্করণ {0} সক্রিয় করা হয়েছে।
-  wwcgLangToLangStart: এখন {0} থেকে {1} থেকে {2} পর্যন্ত গ্লোবাল চ্যাট অনুবাদ করা হচ্ছে।
+  wwcgLangToLangStart: এখন {0} থেকে {1} থেকে {2} পর্যন্ত গ্লোবাল চ্যাট অনুবাদ করা
+    হচ্ছে।
   wwctbOnSender: বইয়ের অনুবাদ সক্রিয় করা হয়েছে। এটি অনুবাদ করার জন্য একটি বই ধরে রাখার
     সময় ডান-ক্লিক করুন!
   wwcListenersInitialized: আরম্ভ করা শ্রোতা।
@@ -78,8 +80,8 @@ Messages:
     অনুবাদ:'
   wwctsOnTarget: '{0} এর জন্য সাইন অনুবাদ সক্রিয় করা হয়েছে।'
   wwcConfigCacheDisabled: অনুবাদক ক্যাশে নিষ্ক্রিয়
-  wwcConfigConversationWatsonURLInput: বর্তমান URL {0}। অনুগ্রহ করে ওয়াটসনের জন্য একটি
-    পরিষেবা URL ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationWatsonURLInput: বর্তমান URL {0}। অনুগ্রহ করে ওয়াটসনের জন্য
+    একটি পরিষেবা URL ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
   wwcBookDone: বইটি সফলভাবে অনুবাদ করেছে।
   wwctsOnSender: অনুবাদ সক্রিয় সাইন ইন করুন। এটি অনুবাদ করতে একটি সাইন উপর ডান-ক্লিক
     করুন!
@@ -87,8 +89,8 @@ Messages:
   wwctGUITranslationButton: অনুবাদ শুরু করুন
   wwctGUIAutoDetectButton: উৎস ভাষা স্বয়ংক্রিয় সনাক্ত করো
   wwcUpdaterUpToDate: ওয়ার্ল্ডউইডচ্যাট আপ টু ডেট!
-  wwcConfigConversationAmazonTranslateRegionInput: বর্তমান অঞ্চল {0}। অনুগ্রহ করে আমাজনের
-    জন্য একটি অঞ্চল ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationAmazonTranslateRegionInput: বর্তমান অঞ্চল {0}। অনুগ্রহ করে
+    আমাজনের জন্য একটি অঞ্চল ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
   wwcNoConsole: এই কমান্ডটি শুধুমাত্র একটি প্লেয়ার দ্বারা চালানো যাবে।
   wwcInitializationFail: ওয়ার্ল্ডউইডচ্যাট আরম্ভ করতে ব্যর্থ।
   wwcrSuccess: ওয়ার্ল্ডউইডচ্যাট সফলভাবে পুনরায় লোড করা হয়েছে।
@@ -123,8 +125,8 @@ Messages:
   wwcConfigConversationUpdateCheckerSuccess: পরীক্ষক বিলম্ব সেট সফলভাবে আপডেট করুন
   wwcUnsupportedVersion: 'আপনি বুককিট, স্পাইগট বা পেপারের অসমর্থিত সংস্করণ চালাচ্ছেন।
     সমর্থিত সংস্করণ:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: গ্লোবাল চ্যাট {0} থেকে {1} তে অনুবাদ
-    করা হচ্ছে।
+  wwcGlobalOnJoinTranslationNotificationSourceLang: গ্লোবাল চ্যাট {0} থেকে {1} তে
+    অনুবাদ করা হচ্ছে।
   wwcConfigGUITranslatorSettings: অনুবাদক কনফিগার
   wwcConfigConversationGoogleTranslateAPIKeyInput: বর্তমান API কী {0}। অনুগ্রহ করে
     Google অনুবাদের জন্য একটি API কী ইনপুট করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
@@ -160,9 +162,9 @@ Messages:
     দিয়ে সেট করেছেন।
   wwctrlRateLimitAlreadyOffSender: আপনার রেট সীমা ইতোমধ্যে নিষ্ক্রিয় করা হয়েছে।
   wwctGUIRateButton: রেট সীমা নির্ধারণ করো
-  wwctGUIConversationRateLimit: প্রতি অনুবাদের হার সীমা বর্তমান {0} সেকেন্ড। একটি নতুন
-    মান নির্ধারণ করতে 0 এর চেয়ে বড় কিছু টাইপ করুন, অথবা সীমা নিষ্ক্রিয় করতে 0 টাইপ
-    করুন। ফিরে যেতে 0 এর চেয়ে কম কিছু টাইপ করুন।
+  wwctGUIConversationRateLimit: প্রতি অনুবাদের হার সীমা বর্তমান {0} সেকেন্ড। একটি
+    নতুন মান নির্ধারণ করতে 0 এর চেয়ে বড় কিছু টাইপ করুন, অথবা সীমা নিষ্ক্রিয় করতে
+    0 টাইপ করুন। ফিরে যেতে 0 এর চেয়ে কম কিছু টাইপ করুন।
   wwctGUITargetPlayerNull: টার্গেট প্লেয়ার সার্ভার থেকে সংযোগ বিচ্ছিন্ন।
   wwcConfigConversationSyncUserDataDelayInput: ব্যবহারকারীর ডাটা সিঙ্ক প্রতি বর্তমান
     বিলম্ব হল {0} সেকেন্ড। একটি নতুন মান সেট করার জন্য 10 এর চেয়ে বড় কিছু টাইপ করুন,
@@ -341,8 +343,8 @@ Messages:
   wwcConfigGUISQLHostnameButton: এসকিউএল হোস্টনাম পরিবর্তন করুন
   wwcConfigConversationSQLOptionalArgsSuccess: সফলভাবে ঐচ্ছিক SQL আর্গুমেন্ট পরিবর্তন।
   wwcConfigConversationSQLPasswordSuccess: সফলভাবে SQL পাসওয়ার্ড পরিবর্তন।
-  wwcConfigConversationSQLPasswordInput: বর্তমান পাসওয়ার্ড হল {0}। নতুন পাসওয়ার্ড নির্ধারণের
-    জন্য ০ ছাড়া অন্য কিছু টাইপ করুন অথবা ফিরে যেতে ০ টাইপ করুন।
+  wwcConfigConversationSQLPasswordInput: বর্তমান পাসওয়ার্ড হল {0}। নতুন পাসওয়ার্ড
+    নির্ধারণের জন্য ০ ছাড়া অন্য কিছু টাইপ করুন অথবা ফিরে যেতে ০ টাইপ করুন।
   wwcConfigGUIToggleSQLSSLButton: এসকিউএল এসএসএল টগল করুন
   wwcConfigConversationSQLUsernameSuccess: সফলভাবে এসকিউএল ইউজারনেম পরিবর্তন করেছে।
   wwcConfigConversationSQLUsernameInput: বর্তমান ইউজারনের {0}। নতুন ব্যবহারকারীর নাম
@@ -400,14 +402,14 @@ Messages:
     করা হয়েছে।
   wwcConfigGUIMongoMenuButton: মোঙ্গোডিবি সেটিংস পরিবর্তন করুন
   wwcConfigGUIToggleMongoButton: মোঙ্গোডিবি টগল করুন
-  wwcConfigConversationMongoDatabaseNameInput: বর্তমান ডাটাবেসের নাম হল {0}। একটি নতুন
-    ডাটাবেস নাম সেট করতে 0 ছাড়া অন্য কিছু টাইপ করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationMongoDatabaseNameInput: বর্তমান ডাটাবেসের নাম হল {0}। একটি
+    নতুন ডাটাবেস নাম সেট করতে 0 ছাড়া অন্য কিছু টাইপ করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
   wwcConfigConversationMongoOptionalArgsInput: 'বর্তমান ঐচ্ছিক MongoDB আর্গুমেন্ট
     হল: {0}। কমা দ্বারা পৃথক আর্গুমেন্ট টাইপ করুন (key=value, key2=value2), অথবা বর্তমান
     আর্গগুলো মুছে ফেলার জন্য clear টাইপ করুন, অথবা ফিরে যেতে 0 টাইপ করুন।'
   wwcConfigGUIMongoDatabaseNameButton: মোঙ্গোডিবি ডাটাবেস পরিবর্তন করুন
-  wwcConfigConversationMongoUsernameInput: বর্তমান ইউজারনেম হল {0}। নতুন ইউজারনেম সেট
-    করতে ০ ছাড়া অন্য কিছু টাইপ করুন অথবা ফিরে যাওয়ার জন্য ০ টাইপ করুন।
+  wwcConfigConversationMongoUsernameInput: বর্তমান ইউজারনেম হল {0}। নতুন ইউজারনেম
+    সেট করতে ০ ছাড়া অন্য কিছু টাইপ করুন অথবা ফিরে যাওয়ার জন্য ০ টাইপ করুন।
   wwcConfigGUIMongoOptionalArgsButton: মোঙ্গোডিবি ঐচ্ছিক আর্গুমেন্ট পরিবর্তন
   wwcConfigConversationMongoUsernameSuccess: সফলভাবে মোঙ্গোডিবি ব্যবহারকারীর নাম পরিবর্তন
     করা হয়েছে।
@@ -435,7 +437,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: উপেক্ষা করার জন্য সফলভাবে নিবন্ধিত অনুবাদক ত্রুটি
   wwcConfigErrorsToIgnoreInvalid: config.yml এ সেট উপেক্ষা করতে অকার্যকর অনুবাদক ত্রুটি।
     ডিফল্ট নিবন্ধন করা হচ্ছে...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: বাক্যাংশগুলি উপেক্ষা করতে অনুবাদক ত্রুটিগুলি
     সফলভাবে পরিবর্তিত হয়েছে।
   wwcConfigGUIIgnoreErrorsButton: উপেক্ষা করার জন্য ত্রুটি পরিবর্তন করুন
@@ -446,7 +448,7 @@ Messages:
     না।'
   wwcConfigConversationIgnoreErrorsCleared: অনুবাদক ত্রুটিগুলি উপেক্ষা করতে বাক্যাংশগুলি
     সফলভাবে সাফ করা হয়েছে
-
+  
   wwcsActiveTransPrevRate: 'সক্রিয় অনুবাদক পূর্ববর্তী হারের সীমা: {0}'
   wwcsActiveTransSaved: 'সক্রিয় অনুবাদক ডিস্কে সংরক্ষিত: {0}'
   wwcsActiveTransIncoming: 'সক্রিয় অনুবাদক ইনকামিং চ্যাট অনুবাদ করা হচ্ছে: {0}'
@@ -460,4 +462,6 @@ Messages:
   wwcsActiveTransOutgoing: 'সক্রিয় অনুবাদক, বহির্গামী চ্যাট অনুবাদ করা হচ্ছে: {0}'
   wwcsActiveTransItem: 'সক্রিয় অনুবাদক অনুবাদক বস্তু: {0}'
   wwcsActiveTransEntity: 'সক্রিয় অনুবাদক অনুবাদক সত্তা: {0}'
+  wwcSupportedServer: '{0} এর জন্য বিশ্বব্যাপী চ্যাট আরম্ভ করা হচ্ছে...'
+  wwcSupportedVersion: '{0} সংস্করণের জন্য বৈশিষ্ট্য সক্রিয় করা হচ্ছে...'
 

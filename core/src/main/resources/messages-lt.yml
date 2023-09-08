@@ -7,8 +7,8 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Keisti Tikrinti naujinimų vėl
   wwcUpdaterFailedGeneric: Nepavyko patikrinti WorldwideChat naujinimų.
   wwcConfigConversationUpdateCheckerInput: Dabartinis naujinimo tikrintuvo vėlavimas
-    yra {0} sekundes. Įveskite viską, kas didesnė nei 10, kad nustatytumėte naują vertę,
-    arba nieko mažiau nei 10, kad grįžtumėte atgal.
+    yra {0} sekundes. Įveskite viską, kas didesnė nei 10, kad nustatytumėte naują
+    vertę, arba nieko mažiau nei 10, kad grįžtumėte atgal.
   wwctGUIMainMenuGlobal: Pasaulinis vertimo meniu
   wwcConfigConversationPluginUpdateChatSuccess: Įskiepis atnaujinimas pokalbiai priminimas
     perjungtas sėkmingai.
@@ -33,9 +33,9 @@ Messages:
   wwcConfigConversationLangSuccess: Įskiepių kalba sėkmingai pasikeitė.
   wwcsSuccessfulTranslations: 'Sėkmingi vertimai: {0}'
   wwcConfigConversationTranslationCacheInput: Dabartinė vertimo talpyklos riba yra
-    {0} frazės. Įveskite viską, kas didesnė nei 0, kad nustatytumėte naują vertę, arba
-    įveskite 0, kad išjungtumėte vertimo talpyklą. Įveskite ką nors mažiau nei 0,
-    kad grįžtumėte atgal.
+    {0} frazės. Įveskite viską, kas didesnė nei 0, kad nustatytumėte naują vertę,
+    arba įveskite 0, kad išjungtumėte vertimo talpyklą. Įveskite ką nors mažiau nei
+    0, kad grįžtumėte atgal.
   wwctbOffTarget: Knygos vertimas išjungtas {0}.
   wwcConfigGUIGeneralSettings: Bendra konfigūracija
   wwcInvalidLang: Neteisinga kalba jūsų config.yml. Numatytinas į en...
@@ -107,8 +107,8 @@ Messages:
   wwcConfigConnectionSuccess: Sėkmingai prijungtas su {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
   wwcsIsActiveTranslator: 'Ar aktyvus vertėjas: {0}'
-  wwcConfigConversationPrefixInput: Dabartinis priešdėlis yra {0}. Prašome įvesti naują
-    arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigConversationPrefixInput: Dabartinis priešdėlis yra {0}. Prašome įvesti
+    naują arba įveskite 0, kad grįžtumėte atgal.
   wwcConfigGUIPreviousPageButton: Ankstesnis puslapis
   wwcConfigGUITranslatorCacheButton: Keisti vertimo talpyklos limitą
   wwcConfigConversationbStatsSuccess: Sėkmingai perėjo bStats.
@@ -126,8 +126,8 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationSourceLang: Pasaulinis pokalbis yra išverstas
     iš {0} į {1}.
   wwcConfigGUITranslatorSettings: Vertėjo konfigūracija
-  wwcConfigConversationGoogleTranslateAPIKeyInput: Dabartinis API raktas yra {0}. Prašome
-    įvesti “Google Translate” API raktą arba įveskite 0, kad grįžtumėte.
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Dabartinis API raktas yra {0}.
+    Prašome įvesti “Google Translate” API raktą arba įveskite 0, kad grįžtumėte.
   wwcConfigConversationRateLimitInput: Dabartinis visuotinis vertimo kurso limitas
     yra {0} sekundes. Įveskite bet ką daugiau nei 0, kad nustatytumėte naują vertę,
     arba įveskite 0, kad išjungtumėte ribą. Įveskite ką nors mažiau nei 0, kad grįžtumėte
@@ -277,8 +277,8 @@ Messages:
     bet jūs turite aktyvų vertimo seansą iš {0} į {1}.
   wwctCannotTranslateConsole: Jūs negalite pradėti vertimo sesijos konsolės!
   wwctLangToLangStart: Pradedama nauja vertimo sesija nuo {0} iki {1}.
-  wwcOnJoinTranslationNotificationSourceLang: Turite aktyvų vertimo seansą iš {0} iki
-    {0}.
+  wwcOnJoinTranslationNotificationSourceLang: Turite aktyvų vertimo seansą iš {0}
+    iki {0}.
   wwctAutoTranslateStartOtherPlayer: Pradedama nauja vertimo sesija {0} į {1}.
   wwctTranslationStopped: Jūsų vertimo sesija buvo sustabdyta.
   wwctLangToLangStartOtherPlayer: Pradedama nauja vertimo sesija {0} nuo {1} iki {2}.
@@ -343,8 +343,8 @@ Messages:
   wwcConfigConversationSQLOptionalArgsSuccess: Sėkmingai pakeitė neprivalomus SQL
     argumentus.
   wwcConfigConversationSQLPasswordSuccess: Sėkmingai pakeistas SQL slaptažodis.
-  wwcConfigConversationSQLPasswordInput: Dabartinis slaptažodis yra {0}. Įveskite bet
-    ką, išskyrus 0, kad nustatytumėte naują slaptažodį, arba įveskite 0, kad grįžtumėte.
+  wwcConfigConversationSQLPasswordInput: Dabartinis slaptažodis yra {0}. Įveskite
+    bet ką, išskyrus 0, kad nustatytumėte naują slaptažodį, arba įveskite 0, kad grįžtumėte.
   wwcConfigGUIToggleSQLSSLButton: Perjungti SQL SSL
   wwcConfigConversationSQLUsernameSuccess: Sėkmingai pakeistas SQL vartotojo vardas.
   wwcConfigConversationSQLUsernameInput: Dabartinis vartotojo vardas yra {0}. Įveskite
@@ -393,8 +393,8 @@ Messages:
   wwcConfigConversationMongoPasswordInput: Dabartinis slaptažodis yra {0}. Įveskite
     bet ką, išskyrus 0, kad nustatytumėte naują slaptažodį, arba įveskite 0, kad grįžtumėte
     atgal.
-  wwcConfigConversationMongoPortInput: Dabartinis prievadas yra {0}. Įveskite bet ką,
-    išskyrus 0, kad nustatytumėte naują prievadą, arba įveskite 0, kad grįžtumėte
+  wwcConfigConversationMongoPortInput: Dabartinis prievadas yra {0}. Įveskite bet
+    ką, išskyrus 0, kad nustatytumėte naują prievadą, arba įveskite 0, kad grįžtumėte
     atgal.
   wwcConfigConversationToggleMongoSuccess: MongoDB sėkmingai perėjo. Perkraukite,
     kad pakeitimas įsigaliotų.
@@ -443,7 +443,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Sėkmingai užregistruotos vertėjo klaidos ignoruoti.
   wwcConfigErrorsToIgnoreInvalid: Neteisingas vertėjas klaidų ignoruoti nustatyti
     config.yml. Numatytųjų įregistravimas...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Sėkmingai pakeitė vertėjo klaidas, kad
     ignoruotų frazes.
   wwcConfigGUIIgnoreErrorsButton: Keisti klaidas ignoruoti
@@ -454,7 +454,7 @@ Messages:
     jokių vertėjo klaidų.'
   wwcConfigConversationIgnoreErrorsCleared: Vertėjas klaidų ignoruoti frazes išvalytas
     sėkmingai.
-
+  
   wwcsActiveTransPrevRate: 'Aktyvus vertėjas Ankstesnis normos limito laikas: {0}'
   wwcsActiveTransSaved: 'Aktyvus vertėjas, įrašytas į diską: {0}'
   wwcsActiveTransIncoming: 'Aktyvus Vertėjas Vertimas Gaunamus Pokalbius: {0}'
@@ -468,4 +468,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktyvus vertėjas, verčiantis išeinančius pokalbius: {0}'
   wwcsActiveTransItem: 'Aktyvus vertėjas Vertimo punktas: {0}'
   wwcsActiveTransEntity: 'Aktyvus vertėjas Vertimo subjektas: {0}'
+  wwcSupportedServer: Inicijuoti WorldwideChat už {0}...
+  wwcSupportedVersion: Įgalinti funkcijas versijai {0}...
 

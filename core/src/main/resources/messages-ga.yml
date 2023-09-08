@@ -14,8 +14,8 @@ Messages:
     le luach nua, nó rud ar bith níos lú ná 10 chun dul ar ais.
   wwcCharLimit: Tá do theachtaireacht ró-fhada! Déan cinnte go bhfuil do theachtaireacht
     níos lú ná carachtair {0} fad.
-  wwcInventoryError: Earráid braitheadh le GUI úsáide {0}. Tabhair tuairisc ar an gceist
-    seo don bhforbróir.
+  wwcInventoryError: Earráid braitheadh le GUI úsáide {0}. Tabhair tuairisc ar an
+    gceist seo don bhforbróir.
   wwctbOnTarget: Aistriúchán leabhar cumasaithe le h {0}.
   wwctrlRateLimitAlreadyOffTarget: Tá teorainn ráta {0} faoi mhíchumas cheana féin.
   wwcConfigConnectionFailed: Theip ar ceangal le {0}. Bí cinnte go bhfuil do dintiúir
@@ -362,8 +362,9 @@ Messages:
     rud ar bith eile seachas 0 a shocrú le port nua, nó cineál 0 chun dul ar ais.
   wwcConfigGUISQLPasswordButton: Athraigh SQL Pasfhocal
   wwcConfigConversationSQLHostnameSuccess: D'éirigh leis an óstainm SQL a athrú.
-  wwcConfigConversationSQLHostnameInput: Is é an óstainm atá ann faoi láthair {0} Cineál
-    rud ar bith eile seachas 0 a shocrú óstainm nua, nó cineál 0 chun dul ar ais.
+  wwcConfigConversationSQLHostnameInput: Is é an óstainm atá ann faoi láthair {0}
+    Cineál rud ar bith eile seachas 0 a shocrú óstainm nua, nó cineál 0 chun dul ar
+    ais.
   wwcConfigGUISQLHostnameButton: Athraigh SQL Óstainm
   wwcConfigConversationSQLOptionalArgsSuccess: D'éirigh leis na hargóintí SQL roghnach
     a athrú.
@@ -389,9 +390,9 @@ Messages:
   wwcConfigGUISQLDatabaseNameButton: Athraigh Bunachar Sonraí SQL
   wwcConfigConversationSQLDatabaseNameSuccess: D'athraigh sé ainm bunachar sonraí
     SQL go rathúil.
-  wwcConfigConversationFatalAsyncAbort: Is é {0} soicind an t-am reatha chun gach tasc
-    async a chur ar ceal. Cineál rud ar bith os cionn 7 a shocrú Teorainn ama nua,
-    nó aon rud thíos é chun dul ar ais.
+  wwcConfigConversationFatalAsyncAbort: Is é {0} soicind an t-am reatha chun gach
+    tasc async a chur ar ceal. Cineál rud ar bith os cionn 7 a shocrú Teorainn ama
+    nua, nó aon rud thíos é chun dul ar ais.
   wwcConfigConversationFatalAsyncSuccess: Async Teorainn ama tasc atá leagtha go rathúil.
   wwcConfigGUIFatalAsyncAbortButton: Athrú Asynchronc Tasc Teorainn Ama
   wwcTimeoutException: Do ordú uainiú amach. Bain triail eile as.
@@ -410,8 +411,8 @@ Messages:
     Athlódáil chun na hathruithe a chur i bhfeidhm.
   wwcConfigConversationLibreTranslateApiKeySuccess: API saor in aisce eochair leagtha
     go rathúil.
-  wwcConfigConversationLibreURLInput: Is é an URL atá ann faoi láthair {0}. le do thoil
-    ionchur URL do Libre, nó cineál 0 chun dul ar ais.
+  wwcConfigConversationLibreURLInput: Is é an URL atá ann faoi láthair {0}. le do
+    thoil ionchur URL do Libre, nó cineál 0 chun dul ar ais.
   libreHttpUnknown: 'Earráid http anaithnid: {0}'
   wwcConfigGUILibreTranslateURLButton: Athraigh Saor in Aisce Aistrigh URL
   wwcConfigConnectionFail: Theip ar ceangal le {0}.
@@ -422,8 +423,8 @@ Messages:
   wwcConfigConversationMongoPasswordInput: Is é an focal faire atá ann faoi láthair
     {0}. rud ar bith Cineál eile seachas 0 a shocrú focal faire nua, nó cineál 0 chun
     dul ar ais.
-  wwcConfigConversationMongoPortInput: Is é an port atá ann faoi láthair {0}. rud ar
-    bith Cineál eile seachas 0 a shocrú le port nua, nó cineál 0 chun dul ar ais.
+  wwcConfigConversationMongoPortInput: Is é an port atá ann faoi láthair {0}. rud
+    ar bith Cineál eile seachas 0 a shocrú le port nua, nó cineál 0 chun dul ar ais.
   wwcConfigConversationToggleMongoSuccess: MongoDB toggled go rathúil. Athlódáil chun
     go dtiocfaidh an t-athrú i bhfeidhm.
   wwcConfigConversationMongoHostnameInput: Is é an óstainm atá ann faoi láthair {0}.
@@ -436,9 +437,9 @@ Messages:
     rud ar bith Cineál eile seachas 0 a shocrú le ainm bunachar sonraí nua, nó cineál
     0 chun dul ar ais.
   wwcConfigConversationMongoOptionalArgsInput: 'Is iad na hargóintí MongoDB roghnach
-    atá ann faoi láthair: {0}. argóintí Cineál scartha le camóg (eochair = luach, eochair
-    2 = value2), nó cineál soiléir a wipe an argóintí atá ann faoi láthair, nó cineál
-    0 chun dul ar ais.'
+    atá ann faoi láthair: {0}. argóintí Cineál scartha le camóg (eochair = luach,
+    eochair 2 = value2), nó cineál soiléir a wipe an argóintí atá ann faoi láthair,
+    nó cineál 0 chun dul ar ais.'
   wwcConfigGUIMongoDatabaseNameButton: Athraigh Bunachar Sonraí MongoDB
   wwcConfigConversationMongoUsernameInput: Is é an t-ainm úsáideora atá ann faoi láthair
     {0}. rud ar bith eile seachas 0 a shocrú le ainm úsáideora nua, nó cineál 0 chun
@@ -471,18 +472,18 @@ Messages:
     a dhéanamh.
   wwcConfigErrorsToIgnoreInvalid: Earráidí aistritheoir neamhbhailí neamhaird a leagan
     síos i config.yml. mainneachtainí Clárú...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: D'éirigh le hearráidí an aistritheora
     a athrú chun neamhaird a dhéanamh ar fhrásaí.
   wwcConfigGUIIgnoreErrorsButton: Athraigh Earráidí chun Neamhaird a dhéanamh
   wwcConfigConversationIgnoreErrorsInput: 'Tá an liosta atá ann faoi láthair de frásaí
-    i earráidí aistritheoir neamhaird a dhéanamh: {0}. argóintí Cineál scartha le camóg
-    (eochair = luach, eochair 2 = value2), nó cineál soiléir a wipe an args atá ann
-    faoi láthair, nó cineál 0 chun dul ar ais. Ina theannta sin, clóscríobh “*” a
-    chur faoi deara nach bhfuil an breiseán a sheiceáil aon earráidí aistritheoir.'
+    i earráidí aistritheoir neamhaird a dhéanamh: {0}. argóintí Cineál scartha le
+    camóg (eochair = luach, eochair 2 = value2), nó cineál soiléir a wipe an args
+    atá ann faoi láthair, nó cineál 0 chun dul ar ais. Ina theannta sin, clóscríobh
+    “*” a chur faoi deara nach bhfuil an breiseán a sheiceáil aon earráidí aistritheoir.'
   wwcConfigConversationIgnoreErrorsCleared: Earráidí aistritheora chun neamhaird a
     dhéanamh ar fhrásaí glanta go rathúil.
-
+  
   wwcsActiveTransPrevRate: 'Aistritheoir Gníomhach Roimhe Seo Teorainn Ráta Am: {0}'
   wwcsActiveTransSaved: 'Aistritheoir Gníomhach Sábháilte a Diosca: {0}'
   wwcsActiveTransIncoming: 'Aistritheoir Gníomhacha ag Aistriú Comhrá Isteach: {0}'
@@ -496,4 +497,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aistritheoir Gníomhach ag Aistriú Comhrá Amach: {0}'
   wwcsActiveTransItem: 'Aistritheoir Gníomhach Aistriú Mír: {0}'
   wwcsActiveTransEntity: 'Aistritheoir Gníomhach Aistrithe Aonán: {0}'
+  wwcSupportedServer: Initializing WorldwideChat do {0}...
+  wwcSupportedVersion: Cumasú gnéithe le haghaidh leagan {0}...
 

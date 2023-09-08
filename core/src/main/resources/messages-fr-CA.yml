@@ -102,7 +102,8 @@ Messages:
     vers la dernière version.
   wwcConfigConversationRateLimitSuccess: Limite de taux définie avec succès.
   wwcConfigConversationWatsonURLSuccess: Adresse URL Watson définie avec succès.
-  wwctbPlayerNotFound: Le joueur {0} n'est pas trouvé, ou n'est pas un traducteur actif.
+  wwctbPlayerNotFound: Le joueur {0} n'est pas trouvé, ou n'est pas un traducteur
+    actif.
   wwcConfigConversationTranslationCacheSuccess: Limite de cache de traduction définie
     avec succès.
   wwctInvalidArgs: Arguments invalides fournis!
@@ -267,8 +268,8 @@ Messages:
   wwcEntityTranslateDone: 'Nom de l''entité traduite: {0}'
   wwcEntityTranslateNoName: Entité n'a pas de nom personnalisé.
   wwcConfigConversationErrorLimitInput: La limite d'erreur actuelle pour chaque traducteur
-    est {0}. Tapez une valeur supérieure à 0 pour définir une nouvelle valeur, ou tapez
-    une valeur inférieure ou égale à 0 pour revenir en arrière.
+    est {0}. Tapez une valeur supérieure à 0 pour définir une nouvelle valeur, ou
+    tapez une valeur inférieure ou égale à 0 pour revenir en arrière.
   wwcConfigGUIGlobalRateLimitButton: Modifier la limite de taux global
   wwcteOnSender: Traduction d'entité activée. Faites un clic droit sur une entité
     pour traduire son nom!
@@ -290,7 +291,8 @@ Messages:
   wwcrBegin: Rechargement WorldwideChat...
   wwctTranslationStoppedOtherPlayer: La session de traduction pour {0} a été arrêtée.
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Le chat global est en
-    cours de traduction, mais vous avez une session de traduction active de {0} à {1}.
+    cours de traduction, mais vous avez une session de traduction active de {0} à
+    {1}.
   wwctCannotTranslateConsole: Vous ne pouvez pas démarrer une session de traduction
     pour la console!
   wwctLangToLangStart: Démarrage d'une nouvelle session de traduction de {0} à {1}.
@@ -473,18 +475,18 @@ Messages:
     succès à ignorer.
   wwcConfigErrorsToIgnoreInvalid: Erreurs de traducteur non valides à ignorer dans
     config.yml. Enregistrement des valeurs par défaut...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Vous avez réussi à modifier les erreurs
     du traducteur pour ignorer les phrases.
   wwcConfigGUIIgnoreErrorsButton: Modifier les erreurs pour ignorer
   wwcConfigConversationIgnoreErrorsInput: 'La liste actuelle des phrases dans les
-    erreurs du traducteur à ignorer est: {0}. Tapez les arguments séparés par une virgule
-    (clé=valeur, clé2=valeur2), ou tapez clear pour effacer les arguments actuels,
-    ou tapez 0 pour revenir en arrière. De plus, si vous tapez « * », le plugiciel
-    ne vérifiera pas les erreurs du traducteur.'
+    erreurs du traducteur à ignorer est: {0}. Tapez les arguments séparés par une
+    virgule (clé=valeur, clé2=valeur2), ou tapez clear pour effacer les arguments
+    actuels, ou tapez 0 pour revenir en arrière. De plus, si vous tapez « * », le
+    plugiciel ne vérifiera pas les erreurs du traducteur.'
   wwcConfigConversationIgnoreErrorsCleared: Les erreurs du traducteur pour ignorer
     les phrases ont été effacées avec succès.
-
+  
   wwcsActiveTransPrevRate: 'Temps limite de taux antérieur du traducteur actif: {0}'
   wwcsActiveTransSaved: 'Traducteur actif enregistré sur disque: {0}'
   wwcsActiveTransIncoming: 'Traducteur actif traduisant le clavardage entrant: {0}'
@@ -499,4 +501,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Traducteur actif traduisant le clavardage sortant: {0}'
   wwcsActiveTransItem: 'Élément traducteur actif: {0}'
   wwcsActiveTransEntity: 'Entité traductrice active: {0}'
+  wwcSupportedServer: Initialisation de WorldwideChat pour {0}...
+  wwcSupportedVersion: Activation des fonctionnalités pour la version {0}...
 

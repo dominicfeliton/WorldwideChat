@@ -82,8 +82,8 @@ Messages:
     երկար է. Թարգմանություն՝
   wwctsOnTarget: Նշեք թարգմանությունը միացված է {0} համար։
   wwcConfigCacheDisabled: Թարգմանիչ քեշը անջատված.
-  wwcConfigConversationWatsonURLInput: 'Ընթացիկ URL {0} է: Խնդրում ենք մուտքագրել ծառայության
-    URL- ը Watson կամ մուտքագրեք 0 վերադառնալ:'
+  wwcConfigConversationWatsonURLInput: 'Ընթացիկ URL {0} է: Խնդրում ենք մուտքագրել
+    ծառայության URL- ը Watson կամ մուտքագրեք 0 վերադառնալ:'
   wwcBookDone: Գիրք թարգմանվել հաջողությամբ.
   wwctsOnSender: 'Ստորագրել թարգմանությունը միացված. Աջ սեղմեք նշանի վրա, այն թարգմանելու
     համար:'
@@ -348,8 +348,8 @@ Messages:
   wwcConfigGUISQLPortButton: Փոխել SQL նավահանգիստ
   wwcConfigGUISQLOptionalArgsButton: Փոխել SQL կամընտիր փաստարկները
   wwcConfigConversationToggleSQLSSLSuccess: SSL համար SQL toggled հաջողությամբ.
-  wwcConfigConversationSQLPortInput: 'Ներկայիս նավահանգիստը {0} է: Մուտքագրեք այլ բան,
-    քան 0 նոր նավահանգիստ սահմանելու համար, կամ տեսակը 0 վերադառնալ:'
+  wwcConfigConversationSQLPortInput: 'Ներկայիս նավահանգիստը {0} է: Մուտքագրեք այլ
+    բան, քան 0 նոր նավահանգիստ սահմանելու համար, կամ տեսակը 0 վերադառնալ:'
   wwcConfigGUISQLPasswordButton: Փոխել SQL գաղտնաբառը
   wwcConfigConversationSQLHostnameSuccess: 'Հաջողությամբ փոխվել է SQL հոսթանունը:'
   wwcConfigConversationSQLHostnameInput: 'Ներկայիս hostname- ը ` {0}: Մուտքագրեք 0-ից
@@ -407,8 +407,8 @@ Messages:
   wwcConfigConversationMongoPasswordInput: 'Ընթացիկ գաղտնաբառը {0} է: Մուտքագրեք 0-ից
     բացի որևէ այլ բան ՝ նոր գաղտնաբառ սահմանելու համար, կամ մուտքագրեք 0 ՝ վերադառնալու
     համար:'
-  wwcConfigConversationMongoPortInput: 'Ներկայիս պորտը {0} է: Մուտքագրեք որևէ այլ բան,
-    քան 0 ՝ նոր պորտ սահմանելու համար, կամ մուտքագրեք 0 ՝ հետ գնալու համար:'
+  wwcConfigConversationMongoPortInput: 'Ներկայիս պորտը {0} է: Մուտքագրեք որևէ այլ
+    բան, քան 0 ՝ նոր պորտ սահմանելու համար, կամ մուտքագրեք 0 ՝ հետ գնալու համար:'
   wwcConfigConversationToggleMongoSuccess: 'MongoDB- ը հաջողությամբ անցավ: Վերբեռնել
     փոփոխության ուժի մեջ մտնելու համար:'
   wwcConfigConversationMongoHostnameInput: 'Ներկայիս հյուրընկալողի անունը {0} է: Մուտքագրեք
@@ -422,8 +422,8 @@ Messages:
     է: Մուտքագրեք ցանկացած այլ բան, քան 0- ը, նոր տվյալների բազայի անունը սահմանելու
     համար կամ մուտքագրեք 0, վերադառնալու համար:'
   wwcConfigConversationMongoOptionalArgsInput: 'Ներկայիս ընտրովի MongoDB փաստարկներն
-    են ՝ {0}: Մուտքագրեք փաստարկները, որոնք առանձնացված են ստորակետով (key=value, key2
-    = value2), կամ մուտքագրեք պարզ ՝ ընթացիկ արգերը սրբելու համար, կամ մուտքագրեք
+    են ՝ {0}: Մուտքագրեք փաստարկները, որոնք առանձնացված են ստորակետով (key=value,
+    key2 = value2), կամ մուտքագրեք պարզ ՝ ընթացիկ արգերը սրբելու համար, կամ մուտքագրեք
     0 ՝ հետ գնալու համար:'
   wwcConfigGUIMongoDatabaseNameButton: Փոխել MongoDB տվյալների բազան
   wwcConfigConversationMongoUsernameInput: 'Ներկայիս օգտվողի անունը {0} է: Մուտքագրեք
@@ -455,18 +455,18 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Հաջողությամբ գրանցված թարգմանիչ սխալները անտեսել.
   wwcConfigErrorsToIgnoreInvalid: Անվավեր թարգմանիչ սխալներ է անտեսել սահմանված config.yml.
     Գրանցում Նախնականը...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Հաջողությամբ փոխվել է թարգմանիչ սխալներ
     է անտեսել արտահայտություններ.
   wwcConfigGUIIgnoreErrorsButton: Փոխել սխալները `անտեսելու համար
   wwcConfigConversationIgnoreErrorsInput: 'Անտեսել թարգմանչի սխալների արտահայտությունների
-    ներկայիս ցանկը ` {0}: Մուտքագրեք փաստարկները, որոնք առանձնացված են ստորակետով (key=
-    value, key2 = value2), կամ մուտքագրեք պարզ ՝ ընթացիկ արգերը սրբելու համար, կամ
-    մուտքագրեք 0 ՝ հետ գնալու համար: Բացի այդ, մուտքագրում “*” կհանգեցնի plugin չի
-    ստուգել որեւէ թարգմանիչ սխալներ.'
+    ներկայիս ցանկը ` {0}: Մուտքագրեք փաստարկները, որոնք առանձնացված են ստորակետով
+    (key= value, key2 = value2), կամ մուտքագրեք պարզ ՝ ընթացիկ արգերը սրբելու համար,
+    կամ մուտքագրեք 0 ՝ հետ գնալու համար: Բացի այդ, մուտքագրում “*” կհանգեցնի plugin
+    չի ստուգել որեւէ թարգմանիչ սխալներ.'
   wwcConfigConversationIgnoreErrorsCleared: Թարգմանիչ սխալներ է անտեսել արտահայտություններ
     մաքրվել հաջողությամբ.
-
+  
   wwcsActiveTransPrevRate: Ակտիվ թարգմանիչ Նախորդ դրույքաչափի սահմանափակման ժամանակը
     ՝ {0}
   wwcsActiveTransSaved: 'Ակտիվ թարգմանիչ Պահպանվել է սկավառակի: {0}'
@@ -482,4 +482,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Ակտիվ թարգմանիչ Թարգմանիչ Արտագնա Զրուցարան: {0}'
   wwcsActiveTransItem: 'Ակտիվ թարգմանիչ Նյութի: {0}'
   wwcsActiveTransEntity: Ակտիվ թարգմանիչ թարգմանող կազմակերպություն` {0}
+  wwcSupportedServer: Նախաստորագրելով աշխարհըWideCat- ը {0 }- ի համար...
+  wwcSupportedVersion: Հնարավորություններ {0} տարբերակի համար...
 

@@ -279,8 +279,8 @@ Messages:
   wwcteOffSender: Entitat de traducció desactivada.
   wwctGUIEntityButton: Commuta la traducció de l'entitat
   wwctrlRateLimitBadInt: El seu límit de tarifa no és un nombre enter vàlid.
-  wwcTranslatorErrorConsole: Es va produir un problema mentre l'usuari {0} estava intentant
-    la seva traducció. Si us plau, comproveu errorLog.txt per a més detalls.
+  wwcTranslatorErrorConsole: Es va produir un problema mentre l'usuari {0} estava
+    intentant la seva traducció. Si us plau, comproveu errorLog.txt per a més detalls.
   wwctGUIChatButton: Toggle Traducció de Xat
   wwcrBegin: Recarregar WorldwideChat...
   wwctTranslationStoppedOtherPlayer: La sessió de traducció per {0} s'ha aturat.
@@ -293,8 +293,8 @@ Messages:
   wwctAutoTranslateStartOtherPlayer: Iniciar una nova sessió de traducció per a {0}
     a {0}.
   wwctTranslationStopped: La vostra sessió de traducció s'ha aturat.
-  wwctLangToLangStartOtherPlayer: Iniciar una nova sessió de traducció per {0} de {1}
-    a {0}.
+  wwctLangToLangStartOtherPlayer: Iniciar una nova sessió de traducció per {0} de
+    {1} a {0}.
   wwctAutoTranslateStart: Iniciar una nova sessió de traducció a {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Teniu una sessió de traducció activa
     a {0}.
@@ -353,9 +353,9 @@ Messages:
   wwcConfigGUISQLPasswordButton: Canviar contrasenya SQL
   wwcConfigConversationSQLHostnameSuccess: S'ha canviat correctament el nom d'amfitrió
     SQL.
-  wwcConfigConversationSQLHostnameInput: El nom d'amfitrió actual és {0} Escriviu qualsevol
-    cosa que no sigui 0 per establir un nou nom d'amfitrió, o escriviu 0 per tornar
-    enrere.
+  wwcConfigConversationSQLHostnameInput: El nom d'amfitrió actual és {0} Escriviu
+    qualsevol cosa que no sigui 0 per establir un nou nom d'amfitrió, o escriviu 0
+    per tornar enrere.
   wwcConfigGUISQLHostnameButton: Canviar SQL Hostname
   wwcConfigConversationSQLOptionalArgsSuccess: S'ha canviat correctament els arguments
     SQL opcionals.
@@ -378,8 +378,8 @@ Messages:
     són: {0} Escriviu els arguments separats per una coma (clau=valor, clau2=valor2),
     o escriviu clar per netejar les args actuals, o escriviu 0 per tornar enrere.'
   wwcConfigConversationSQLDatabaseNameInput: El nom de la base de dades actual és
-    {0} Escriviu qualsevol cosa que no sigui 0 per establir un nou nom de base de dades,
-    o escriviu 0 per tornar enrere.
+    {0} Escriviu qualsevol cosa que no sigui 0 per establir un nou nom de base de
+    dades, o escriviu 0 per tornar enrere.
   wwcConfigGUISQLDatabaseNameButton: Canviar la base de dades
   wwcConfigConversationSQLDatabaseNameSuccess: S'ha canviat correctament el nom de
     base de dades SQL.
@@ -396,8 +396,8 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: Canvia lliure Traduir API Key
   libreHttp403: Falta Libre Translate API Key, o vostè està prohibit des del servidor!
   wwcConfigConversationLibreURLSuccess: URL lliure configurat correctament.
-  wwcConfigConversationLibreTranslateApiKeyInput: La clau API actual és {0} Si us plau,
-    introduïu una clau API per a Libre, o escriviu 0 per tornar enrere.
+  wwcConfigConversationLibreTranslateApiKeyInput: La clau API actual és {0} Si us
+    plau, introduïu una clau API per a Libre, o escriviu 0 per tornar enrere.
   wwcConfigGUILibreTranslateButton: Libre Traduir
   libreHttp429: No hi ha confiança a causa del límit de velocitat del servidor.
   wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Traduir
@@ -461,13 +461,13 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: Canviar DeepL Traduir API Key
   wwcConfigGUIToggleDeepLTranslateButton: Commuta DeepL Traduir
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API clau establerta correctament.
-  wwcConfigConversationDeepLTranslateApiKeyInput: La clau API actual és {0} Si us plau,
-    introduïu una clau API per DeepL, o escriviu 0 per tornar enrere.
+  wwcConfigConversationDeepLTranslateApiKeyInput: La clau API actual és {0} Si us
+    plau, introduïu una clau API per DeepL, o escriviu 0 per tornar enrere.
   wwcConfigErrorsToIgnoreSuccess: S'ha registrat correctament els errors del traductor
     per ignorar.
   wwcConfigErrorsToIgnoreInvalid: Errors del traductor no vàlids per ignorar establerts
     en config.yml. Registrar els valors predeterminats...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: S'ha canviat correctament els errors del
     traductor per ignorar frases.
   wwcConfigGUIIgnoreErrorsButton: Canviar els errors per ignorar
@@ -478,7 +478,7 @@ Messages:
     cap error del traductor.'
   wwcConfigConversationIgnoreErrorsCleared: Errors del traductor per ignorar frases
     esborrades amb èxit.
-
+  
   wwcsActiveTransPrevRate: 'Traductor Actiu Temps límit de tarifa anterior: {0}'
   wwcsActiveTransSaved: 'Traductor actiu desat al disc: {0}'
   wwcsActiveTransIncoming: 'Traductor actiu Traducció de xat entrant: {0}'
@@ -492,4 +492,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Traductor actiu Traducció de xat de sortida: {0}'
   wwcsActiveTransItem: 'Traductor Actiu Traducció Item: {0}'
   wwcsActiveTransEntity: 'Traductor actiu Traductor Entitat Traducció: {0}'
+  wwcSupportedServer: Inicialitzant WorldwideChat per {0}...
+  wwcSupportedVersion: Habilitació de característiques per a la versió {0}...
 

@@ -33,8 +33,8 @@ Messages:
   wwcConfigConversationLangSuccess: Jezik vtičnika se je uspešno spremenil.
   wwcsSuccessfulTranslations: 'Uspešni prevodi: {0}'
   wwcConfigConversationTranslationCacheInput: Trenutna omejitev predpomnilnika prevajanja
-    je {0} besedne zveze. Če želite nastaviti novo vrednost, vnesite kar je večje od
-    0, ali pa vnesite 0, da onemogočite predpomnilnik prevajanja. Vnesite karkoli
+    je {0} besedne zveze. Če želite nastaviti novo vrednost, vnesite kar je večje
+    od 0, ali pa vnesite 0, da onemogočite predpomnilnik prevajanja. Vnesite karkoli
     manj kot 0, da se vrnete nazaj.
   wwctbOffTarget: Prevajanje knjige onemogočeno za {0}.
   wwcConfigGUIGeneralSettings: Splošna konfiguracija
@@ -90,8 +90,8 @@ Messages:
   wwctGUITranslationButton: Začni prevajanje
   wwctGUIAutoDetectButton: Samodejno zaznavanje izvornega jezika
   wwcUpdaterUpToDate: WorldwideChat je posodobljen!
-  wwcConfigConversationAmazonTranslateRegionInput: Trenutna regija je {0}. prosim vnesite
-    regijo za Amazon ali vnesite 0, da se vrnete nazaj.
+  wwcConfigConversationAmazonTranslateRegionInput: Trenutna regija je {0}. prosim
+    vnesite regijo za Amazon ali vnesite 0, da se vrnete nazaj.
   wwcNoConsole: Ta ukaz lahko izvaja samo igralec.
   wwcInitializationFail: Ni uspelo inicializirati WorldwideChat.
   wwcrSuccess: Uspešno ponovno naložen WorldwideChat.
@@ -256,8 +256,8 @@ Messages:
   wwcEntityTranslateDone: 'Ime prevedene entitete: {0}'
   wwcEntityTranslateNoName: Entiteta nima imena po meri.
   wwcConfigConversationErrorLimitInput: Trenutna omejitev napake za vsakega prevajalca
-    je {0}. vnesite karkoli, ki je večje od 0, če želite nastaviti novo vrednost, ali
-    pa vnesite kaj manj ali enako 0, da se vrnete nazaj.
+    je {0}. vnesite karkoli, ki je večje od 0, če želite nastaviti novo vrednost,
+    ali pa vnesite kaj manj ali enako 0, da se vrnete nazaj.
   wwcConfigGUIGlobalRateLimitButton: Spremeni omejitev globalne stopnje
   wwcteOnSender: Prevod entitete omogočen. Z desno tipko miške kliknite entiteto,
     da prevedete svoje ime!
@@ -268,8 +268,8 @@ Messages:
   wwcCharLimit: Vaše sporočilo je predolgo! Prosimo, poskrbite, da je vaše sporočilo
     manjše od {0} znakov v dolžino.
   wwcConfigConversationCharacterLimitInput: Trenutna omejitev znakov na sporočilo
-    je {0} znakov. Vnesite karkoli večje od 0, če želite nastaviti novo vrednost, ali
-    pa vnesite karkoli, ki je manjša ali enaka 0, da se vrnete nazaj.
+    je {0} znakov. Vnesite karkoli večje od 0, če želite nastaviti novo vrednost,
+    ali pa vnesite karkoli, ki je manjša ali enaka 0, da se vrnete nazaj.
   wwcteOffSender: Prevod entitete onemogočen.
   wwctGUIEntityButton: Preklop prevodov entitete
   wwctrlRateLimitBadInt: Vaša omejitev stopnje ni veljavno celo število.
@@ -369,8 +369,8 @@ Messages:
   wwcConfigConversationSQLDatabaseNameSuccess: Uspešno spremenil ime zbirke podatkov
     SQL.
   wwcConfigConversationFatalAsyncAbort: Trenutna časovna omejitev za prekinitev vseh
-    async opravil je {0} sekund. Vnesite karkoli nad 7, da nastavite novo časovno omejitev
-    ali kaj pod njim, da se vrnete nazaj.
+    async opravil je {0} sekund. Vnesite karkoli nad 7, da nastavite novo časovno
+    omejitev ali kaj pod njim, da se vrnete nazaj.
   wwcConfigConversationFatalAsyncSuccess: Async časovna omejitev opravila je bila
     uspešno nastavljena.
   wwcConfigGUIFatalAsyncAbortButton: Spremeni časovno omejitev opravila Async
@@ -398,8 +398,8 @@ Messages:
   wwcConfigConversationMongoDatabaseNameSuccess: Uspešno spremenil ime baze podatkov
     MongoDB.
   wwcConfigGUIMongoHostnameButton: Spremenite ime gostitelja MongoDB
-  wwcConfigConversationMongoPasswordInput: Trenutno geslo je {0}. Vnesite karkoli drugega
-    kot 0, če želite nastaviti novo geslo, ali vnesite 0, da se vrnete nazaj.
+  wwcConfigConversationMongoPasswordInput: Trenutno geslo je {0}. Vnesite karkoli
+    drugega kot 0, če želite nastaviti novo geslo, ali vnesite 0, da se vrnete nazaj.
   wwcConfigConversationMongoPortInput: Trenutna vrata so {0}. Vnesite karkoli drugega
     kot 0, če želite nastaviti nova vrata, ali vnesite 0, da se vrnete nazaj.
   wwcConfigConversationToggleMongoSuccess: MongoDB se je uspešno prepletal. Ponovno
@@ -446,7 +446,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Uspešno registrirane napake prevajalec prezreti.
   wwcConfigErrorsToIgnoreInvalid: Neveljavne napake prevajalca prezreti nastavljen
     v config.yml. Privzete privzete nastavitve...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Uspešno spremenili napake prevajalca prezreti
     besedne zveze.
   wwcConfigGUIIgnoreErrorsButton: Spremeni napake za prezreti
@@ -457,7 +457,7 @@ Messages:
     nobenih napak prevajalca.'
   wwcConfigConversationIgnoreErrorsCleared: Prevajalec napake prezreti besedne zveze
     uspešno izbrisani.
-
+  
   wwcsActiveTransPrevRate: 'Predhodni rok omejitve hitrosti aktivnega prevajalca:
     {0}'
   wwcsActiveTransSaved: 'Aktivni prevajalec shranjen na disk: {0}'
@@ -472,4 +472,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktivni prevajalec Prevajanje Odhodni Klepet: {0}'
   wwcsActiveTransItem: 'Aktivni prevajalec Prevajanje Artikel: {0}'
   wwcsActiveTransEntity: 'Aktivni prevajalec, ki prevaja entiteto: {0}'
+  wwcSupportedServer: Inicializacija WorldwideChat za {0}...
+  wwcSupportedVersion: Omogočanje funkcij za različico {0}...
 

@@ -210,8 +210,8 @@ Messages:
   wwcConfigGUIChatMessagesOverrideNewButton: Adicionar uma nova Ignoração
   wwcUpdaterOutOfDate: WorldwideChat está desatualizado. Actualize para a versão mais
     recente, {0}.
-  wwcTranslatorErrorConsole: Ocorreu um problema enquanto o utilizador {0} estava a
-    tentar a sua tradução. Consulte o ficheiro errorLog.txt para obter mais detalhes.
+  wwcTranslatorErrorConsole: Ocorreu um problema enquanto o utilizador {0} estava
+    a tentar a sua tradução. Consulte o ficheiro errorLog.txt para obter mais detalhes.
   wwcConfigGUIChangesNotSaved: As suas alterações só entrarão em vigor quando clicar
     na barreira vermelha em /wwcc.
   wwcBookTranslateTitleSuccess: 'Título do Livro Traduzido: {0}'
@@ -233,8 +233,8 @@ Messages:
     plugin
   wwcsTitle: Registo de {0}
   wwcConfigGUIErrorLimitButton: Alterar limite de erro do tradutor
-  wwcConfigConversationWatsonAPIKeyInput: A chave API actual é {0}. Introduza uma chave
-    API para o Watson ou introduza 0 para voltar atrás.
+  wwcConfigConversationWatsonAPIKeyInput: A chave API actual é {0}. Introduza uma
+    chave API para o Watson ou introduza 0 para voltar atrás.
   wwcgTranslationStopped: A tradução global do chat foi interrompida.
   wwcConfigConversationCharacterLimitSuccess: Limite de caracteres definido com sucesso.
   wwctAutoTranslateStartOtherPlayer: Início de uma nova sessão de tradução para {0}
@@ -263,8 +263,8 @@ Messages:
     consola!
   wwctSameLangError: 'Não se pode traduzir para a mesma língua! Códigos lang válidos:
     {0}'
-  wwctLangToLangStartOtherPlayer: Iniciar uma nova sessão de tradução para {0} de {1}
-    para {0}.
+  wwctLangToLangStartOtherPlayer: Iniciar uma nova sessão de tradução para {0} de
+    {1} para {0}.
   wwcConfigGUICharacterLimitButton: Alterar o limite de caracter
   wwctLangToLangStart: Início de uma nova sessão de tradução de {0} para {1}.
   wwctGUISourceOrTargetTranslationAlreadyActive: Esta linguagem já está ativa!
@@ -349,8 +349,8 @@ Messages:
     que não 0 para definir uma nova porta ou digite 0 para voltar atrás.
   wwcConfigGUISQLPasswordButton: Alterar senha SQL
   wwcConfigConversationSQLHostnameSuccess: Alterado com sucesso o hostname do SQL.
-  wwcConfigConversationSQLHostnameInput: O nome do sistema anfitrião atual é {0}. Digite
-    qualquer outra coisa que não 0 para definir um novo nome do sistema anfitrião
+  wwcConfigConversationSQLHostnameInput: O nome do sistema anfitrião atual é {0}.
+    Digite qualquer outra coisa que não 0 para definir um novo nome do sistema anfitrião
     ou digite 0 para voltar atrás.
   wwcConfigGUISQLHostnameButton: Alterar SQL Hostname
   wwcConfigConversationSQLOptionalArgsSuccess: Alterados com sucesso os argumentos
@@ -379,8 +379,8 @@ Messages:
   wwcConfigConversationSQLDatabaseNameSuccess: Alterado com sucesso o nome do banco
     de dados SQL
   wwcConfigConversationFatalAsyncAbort: O tempo de espera atual para abortar todas
-    as tarefas assínicas é de {0} segundos. Digite qualquer coisa acima de 7 para definir
-    um novo tempo de espera, ou qualquer coisa abaixo dele para voltar atrás.
+    as tarefas assínicas é de {0} segundos. Digite qualquer coisa acima de 7 para
+    definir um novo tempo de espera, ou qualquer coisa abaixo dele para voltar atrás.
   wwcConfigConversationFatalAsyncSuccess: Tempo de espera da tarefa assincronização
     definido com sucesso.
   wwcConfigGUIFatalAsyncAbortButton: Alterar Tempo de espera de tarefas assíncronas
@@ -400,8 +400,8 @@ Messages:
     sucesso. Recarregue para que as alterações entrem em vigor.
   wwcConfigConversationLibreTranslateApiKeySuccess: Chave de API livre definida com
     sucesso.
-  wwcConfigConversationLibreURLInput: O URL atual é {0}. Insira um URL para Libre ou
-    digite 0 para voltar.
+  wwcConfigConversationLibreURLInput: O URL atual é {0}. Insira um URL para Libre
+    ou digite 0 para voltar.
   libreHttpUnknown: 'Erro http desconhecido: {0}'
   wwcConfigGUILibreTranslateURLButton: Alterar URL de tradução livre
   wwcConfigConnectionFail: Falha ao conectar a {0}.
@@ -411,8 +411,8 @@ Messages:
   wwcConfigGUIMongoHostnameButton: Alterar o nome do host do MongoDB
   wwcConfigConversationMongoPasswordInput: A senha atual é {0}. Digite qualquer coisa
     diferente de 0 para definir uma nova senha ou digite 0 para voltar.
-  wwcConfigConversationMongoPortInput: A porta atual é {0}. Digite qualquer coisa diferente
-    de 0 para definir uma nova porta ou digite 0 para voltar.
+  wwcConfigConversationMongoPortInput: A porta atual é {0}. Digite qualquer coisa
+    diferente de 0 para definir uma nova porta ou digite 0 para voltar.
   wwcConfigConversationToggleMongoSuccess: MongoDB alternado com sucesso. Recarregue
     para que a alteração entre em vigor.
   wwcConfigConversationMongoHostnameInput: O nome do host atual é {0}. Digite qualquer
@@ -457,7 +457,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Erros do tradutor registrados com êxito para ignorar.
   wwcConfigErrorsToIgnoreInvalid: Erros inválidos do tradutor para ignorar o conjunto
     em config.yml. A registar predefinições...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Os erros do tradutor foram alterados com
     êxito para ignorar frases.
   wwcConfigGUIIgnoreErrorsButton: Alterar Erros para Ignorar
@@ -467,7 +467,7 @@ Messages:
     Além disso, digitar “*” fará com que o plugin não verifique nenhum erro do tradutor.'
   wwcConfigConversationIgnoreErrorsCleared: Erros do tradutor para ignorar frases
     eliminadas com êxito.
-
+  
   wwcsActiveTransPrevRate: 'Tempo Limite de Taxa Anterior do Tradutor Ativo: {0}'
   wwcsActiveTransSaved: 'Tradutor ativo salvo em disco: {0}'
   wwcsActiveTransIncoming: 'Tradutor ativo Traduzindo bate-papo de entrada: {0}'
@@ -481,4 +481,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Tradutor Ativo Traduzindo Chat de Saída: {0}'
   wwcsActiveTransItem: 'Item Tradutor Ativo: {0}'
   wwcsActiveTransEntity: 'Entidade Tradutora Ativa: {0}'
+  wwcSupportedServer: A inicializar WorldwideChat para {0}...
+  wwcSupportedVersion: Activando funcionalidades para a versão {0}...
 

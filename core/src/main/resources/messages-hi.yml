@@ -6,9 +6,9 @@ Messages:
   wwcrFail: WorldwideChat पुनः लोड करने में विफल।
   wwcConfigGUIUpdateCheckerButton: अपडेट विलंब के लिए चेक बदलें
   wwcUpdaterFailedGeneric: WorldwideChat अद्यतन के लिए जाँच करने में असमर्थ।
-  wwcConfigConversationUpdateCheckerInput: अद्यतन परीक्षक पर वर्तमान विलंब है {0} सेकंड।
-    एक नया मान सेट करने के लिए 10 से अधिक कुछ भी टाइप करें, या वापस जाने के लिए 10
-    से कम कुछ भी टाइप करें।
+  wwcConfigConversationUpdateCheckerInput: अद्यतन परीक्षक पर वर्तमान विलंब है {0}
+    सेकंड। एक नया मान सेट करने के लिए 10 से अधिक कुछ भी टाइप करें, या वापस जाने के
+    लिए 10 से कम कुछ भी टाइप करें।
   wwctGUIMainMenuGlobal: वैश्विक अनुवाद मेनू
   wwcConfigConversationPluginUpdateChatSuccess: प्लगइन अद्यतन चैट अनुस्मारक सफलतापूर्वक
     टॉगल किया गया।
@@ -26,8 +26,8 @@ Messages:
   wwcConfigDisabledbStats: अक्षम बीएसटीएएस।
   wwctsOffSender: हस्ताक्षर अनुवाद अक्षम।
   wwcUpdaterParserFailed: Github से अद्यतन डेटा पार्स करने में विफल।
-  wwcConfigConversationAmazonTranslateSecretKeyInput: वर्तमान गुप्त कुंजी {0} है. कृपया
-    अमेज़ॅन के लिए एक गुप्त कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationAmazonTranslateSecretKeyInput: वर्तमान गुप्त कुंजी {0} है.
+    कृपया अमेज़ॅन के लिए एक गुप्त कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
   wwctbOffSender: पुस्तक अनुवाद अक्षम।
   wwcConfigGUIAmazonTranslateButton: अमेज़न में अनुवाद
   wwcConfigConversationLangSuccess: प्लगइन भाषा सफलतापूर्वक बदल गई।
@@ -52,8 +52,8 @@ Messages:
   wwcConfigGUIQuitButton: परिवर्तन से बाहर निकलें (S)
   wwctPlayerNotFound: खिलाड़ी %मैं नहीं मिला।
   wwcConfigGUIAmazonTranslateRegionButton: अमेज़ॅन क्षेत्र बदलें
-  wwcConfigConversationLangInput: 'मौज़ूदा प्लगइन भाषा {0} है. कृपया वैध भाषा कोड भरें,
-    या रद्द करने के लिए 0 टाइप करें। वैध भाषा कोड: {0}'
+  wwcConfigConversationLangInput: 'मौज़ूदा प्लगइन भाषा {0} है. कृपया वैध भाषा कोड
+    भरें, या रद्द करने के लिए 0 टाइप करें। वैध भाषा कोड: {0}'
   wwcConfigConversationLangInvalid: अवैध भाषा कोड!
   wwcConfigGUIWatsonAPIKeyButton: वाटसन एपीआई कुंजी बदलें
   wwcEnabled: वर्ल्डवाइडचैट संस्करण {0} सक्षम किया गया
@@ -149,8 +149,8 @@ Messages:
   wwcsLastTranslationTime: 'अंतिम (सफल) अनुवाद समय: {0}'
   wwctbNotATranslator: आप एक सक्रिय अनुवादक नहीं हैं! सुनिश्चित करें कि आपने इसे/wwct
     के साथ सेट किया है।
-  wwcConfigConversationAmazonTranslateAccessKeyInput: वर्तमान एक्सेस कुंजी {0} है कृपया
-    अमेज़ॅन के लिए एक्सेस कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationAmazonTranslateAccessKeyInput: वर्तमान एक्सेस कुंजी {0} है
+    कृपया अमेज़ॅन के लिए एक्सेस कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
   wwcConfigConversationAmazonTranslateAccessKeySuccess: अमेज़ॅन एक्सेस कुंजी सफलतापूर्वक
     सेट।
   wwcConfigBadUpdateDelay: config.yml में अमान्य अद्यतनकर्ता विलंब सेट। 86400 सेकेंड
@@ -259,8 +259,8 @@ Messages:
   wwcteOnSender: इकाई अनुवाद सक्षम किया गया। अपने नाम का अनुवाद करने के लिए किसी इकाई
     पर राइट-क्लिक करें!
   wwcConfigGUIResponseLimitButton: ट्रांसलेटर रिस्पांस टाइमआउट बदलें
-  wwcConfigMessageCharLimitEnabled: प्रति संदेश की वर्ण सीमा {0} वर्णों पर सेट की गई
-    है।
+  wwcConfigMessageCharLimitEnabled: प्रति संदेश की वर्ण सीमा {0} वर्णों पर सेट की
+    गई है।
   wwcteOffTarget: '{0} के लिए इकाई अनुवाद अक्षम किया गया।'
   wwcCharLimit: आपका संदेश बहुत लंबा है! कृपया सुनिश्चित करें कि आपका संदेश लंबाई
     में {0} वर्णों से कम है।
@@ -281,14 +281,14 @@ Messages:
   wwctLangToLangStart: एक नया अनुवाद सत्र {0} से {1} तक प्रारंभ कर रहा है।
   wwcOnJoinTranslationNotificationSourceLang: आपके पास {0} से {1} तक एक सक्रिय अनुवाद
     सत्र है।
-  wwctAutoTranslateStartOtherPlayer: '{0} से {1} के लिए एक नया अनुवाद सत्र शुरू कर रहा
-    है।'
-  wwctTranslationStopped: आपका अनुवाद सत्र रोक दिया गया है।
-  wwctLangToLangStartOtherPlayer: '{0} के लिए {1} से {2} तक एक नया अनुवाद सत्र शुरू कर
+  wwctAutoTranslateStartOtherPlayer: '{0} से {1} के लिए एक नया अनुवाद सत्र शुरू कर
     रहा है।'
+  wwctTranslationStopped: आपका अनुवाद सत्र रोक दिया गया है।
+  wwctLangToLangStartOtherPlayer: '{0} के लिए {1} से {2} तक एक नया अनुवाद सत्र शुरू
+    कर रहा है।'
   wwctAutoTranslateStart: एक नया अनुवाद सत्र {0} से प्रारंभ कर रहा है।
-  wwcOnJoinTranslationNotificationNoSourceLang: आपके पास {0} में एक सक्रिय अनुवाद सत्र
-    है।
+  wwcOnJoinTranslationNotificationNoSourceLang: आपके पास {0} में एक सक्रिय अनुवाद
+    सत्र है।
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ग्लोबल चैट का अनुवाद
     किया जा रहा है, लेकिन आपके पास {0} में एक सक्रिय अनुवाद सत्र है।
   wwcConfigGUIChangesNotSaved: जब तक आप /wwcc में लाल बाधा पर क्लिक नहीं करते हैं,
@@ -316,9 +316,9 @@ Messages:
   wwctGUIExistingTranslationOutput: 'आउटपुट भाषा: {0}'
   wwcTranslatorAttempt: Config.yml में अनुवादक से कनेक्ट करने का प्रयास किया जा रहा
     है... (प्रयास {0}/ {1})
-  wwcTimeoutExceptionConsole: प्लेयर {0} के पास सबसे हाल का अनुरोध टाइमआउट था। यह त्रुटि
-    घातक नहीं है, लेकिन अगर ऐसा होता रहता है तो WorldwideChat को पुनः लोड किया जाना
-    चाहिए।
+  wwcTimeoutExceptionConsole: प्लेयर {0} के पास सबसे हाल का अनुरोध टाइमआउट था। यह
+    त्रुटि घातक नहीं है, लेकिन अगर ऐसा होता रहता है तो WorldwideChat को पुनः लोड किया
+    जाना चाहिए।
   wwcGUIPageNumber: 'पृष्ठ क्रमांक: {0}'
   wwcConfigYAMLFallback: YAML पर वापस गिरना...
   wwcConfigGUIToggleSQLButton: SQL टॉगल करें
@@ -369,8 +369,8 @@ Messages:
   wwcConfigConversationSQLDatabaseNameSuccess: SQL डेटाबेस नाम को सफलतापूर्वक बदल
     दिया।
   wwcConfigConversationFatalAsyncAbort: सभी async कार्यों को निरस्त करने के लिए वर्तमान
-    समयबाह्य {0} सेकंड है। नया टाइमआउट सेट करने के लिए 7 से ऊपर कुछ भी टाइप करें, या
-    वापस जाने के लिए इसके नीचे कुछ भी टाइप करें।
+    समयबाह्य {0} सेकंड है। नया टाइमआउट सेट करने के लिए 7 से ऊपर कुछ भी टाइप करें,
+    या वापस जाने के लिए इसके नीचे कुछ भी टाइप करें।
   wwcConfigConversationFatalAsyncSuccess: Async कार्य समयबाह्य सफलतापूर्वक सेट किया
     गया।
   wwcConfigGUIFatalAsyncAbortButton: Async टास्क टाइमआउट बदलें
@@ -382,8 +382,8 @@ Messages:
   libreHttp403: लापता लिब्रे ट्रांसलेट एपीआई कुंजी, या आपको सर्वर से प्रतिबंधित कर
     दिया गया है!
   wwcConfigConversationLibreURLSuccess: लिबर URL सफलतापूर्वक सेट किया गया है।
-  wwcConfigConversationLibreTranslateApiKeyInput: वर्तमान API कुंजी {0} है. कृपया Libre
-    के लिए एक API कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationLibreTranslateApiKeyInput: वर्तमान API कुंजी {0} है. कृपया
+    Libre के लिए एक API कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
   wwcConfigGUILibreTranslateButton: लिब्रे ट्रांसलेट
   libreHttp429: सर्वर से दर सीमा के कारण कोई आत्मविश्वास नहीं।
   wwcConfigGUIToggleLibreTranslateButton: लिब्रे ट्रांसलेट टॉगल करें
@@ -442,13 +442,13 @@ Messages:
   wwcConfigGUIToggleDeepLTranslateButton: डीपएल ट्रांसलेट टॉगल करें
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API कुंजी सफलतापूर्वक सेट
     हो गई।
-  wwcConfigConversationDeepLTranslateApiKeyInput: वर्तमान API कुंजी {0} है. कृपया DeepL
-    के लिए API कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationDeepLTranslateApiKeyInput: वर्तमान API कुंजी {0} है. कृपया
+    DeepL के लिए API कुंजी इनपुट करें, या वापस जाने के लिए 0 टाइप करें।
   wwcConfigErrorsToIgnoreSuccess: अनदेखा करने के लिए अनुवादक त्रुटियों को सफलतापूर्वक
     पंजीकृत किया गया।
   wwcConfigErrorsToIgnoreInvalid: config.yml में सेट को अनदेखा करने के लिए अमान्य
     अनुवादक त्रुटियां। डिफ़ॉल्ट रजिस्टर किया जा रहा है...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: वाक्यांशों को अनदेखा करने के लिए अनुवादक
     त्रुटियों को सफलतापूर्वक बदल दिया।
   wwcConfigGUIIgnoreErrorsButton: त्रुटियों को अनदेखा करने के लिए बदलें
@@ -459,7 +459,7 @@ Messages:
     अनुवादक त्रुटियों की जांच नहीं करेगा।'
   wwcConfigConversationIgnoreErrorsCleared: सफलतापूर्वक साफ़ किए गए वाक्यांशों को
     अनदेखा करने के लिए अनुवादक त्रुटियां।
-
+  
   wwcsActiveTransPrevRate: 'सक्रिय अनुवादक पिछला दर सीमा समय: {0}'
   wwcsActiveTransSaved: 'सक्रिय अनुवादक डिस्क में सहेजा गया: {0}'
   wwcsActiveTransIncoming: 'आने वाली चैट का अनुवाद करने वाला सक्रिय अनुवादक: {0}'
@@ -473,4 +473,6 @@ Messages:
   wwcsActiveTransOutgoing: 'आउटगोइंग चैट का अनुवाद करने वाला सक्रिय अनुवादक: {0}'
   wwcsActiveTransItem: 'सक्रिय अनुवादक अनुवाद करने वाला आइटम: {0}'
   wwcsActiveTransEntity: 'सक्रिय अनुवादक अनुवाद इकाई: {0}'
+  wwcSupportedServer: '{0} के लिए WorldwideChat को प्रारंभ किया जा रहा है...'
+  wwcSupportedVersion: '{0} संस्करण के लिए सुविधाओं को सक्षम किया जा रहा है...'
 

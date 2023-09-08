@@ -22,8 +22,8 @@ Messages:
   wwcConfigDisabledbStats: bStats 비활성화.
   wwctsOffSender: 서명 번역이 비활성화되었습니다.
   wwcUpdaterParserFailed: Github에서 업데이트 데이터를 구문 분석하지 못했습니다.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: 현재 비밀 키는 {0}입니다. Amazon의 보안 키를
-    입력하거나 0을 입력하여 돌아가십시오.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: 현재 비밀 키는 {0}입니다. Amazon의 보안
+    키를 입력하거나 0을 입력하여 돌아가십시오.
   wwctbOffSender: 도서 번역이 비활성화되었습니다.
   wwcConfigGUIAmazonTranslateButton: 아마존 번역
   wwcConfigConversationLangSuccess: 플러그인 언어가 성공적으로 변경되었습니다.
@@ -109,8 +109,8 @@ Messages:
   wwcConfigGUITranslatorSettings: 번역기 구성
   wwcConfigConversationGoogleTranslateAPIKeyInput: 현재 API 키는 {0}입니다. Google 번역을 위한
     API 키를 입력하거나 0을 입력하여 돌아가십시오.
-  wwcConfigConversationRateLimitInput: 번역당 현재 글로벌 속도 제한은 {0} 초입니다.0보다 큰 값을 입력하여 새 값을
-    설정하거나 0을 입력하여 제한을 사용하지 않도록 설정합니다.돌아가려면 0보다 작은 값을 입력하십시오.
+  wwcConfigConversationRateLimitInput: 번역당 현재 글로벌 속도 제한은 {0} 초입니다.0보다 큰 값을 입력하여 새
+    값을 설정하거나 0을 입력하여 제한을 사용하지 않도록 설정합니다.돌아가려면 0보다 작은 값을 입력하십시오.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google 번역 API 키가 성공적으로 설정되었습니다.
   wwcConfigGUIAmazonTranslateSecretKeyButton: 아마존 보안 키 변경
   wwcVersion: 월드와이드 채팅, 버전
@@ -223,8 +223,8 @@ Messages:
   wwctGUIChatButton: 채팅 번역 토글
   wwcrBegin: 월드와이드채팅을 다시 불러오는 중...
   wwctTranslationStoppedOtherPlayer: '{0}에 대한 번역 세션이 중지되었습니다.'
-  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 글로벌 채팅이 번역 중이지만 {0}에서 {1}
-    (으) 로 번역 세션이 활성화되어 있습니다.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 글로벌 채팅이 번역 중이지만 {0}에서
+    {1} (으) 로 번역 세션이 활성화되어 있습니다.
   wwctCannotTranslateConsole: 콘솔에 대한 번역 세션을 시작할 수 없습니다!
   wwctLangToLangStart: '{0}에서 {1} (으) 로 새 번역 세션을 시작합니다.'
   wwcOnJoinTranslationNotificationSourceLang: '{0}에서 {1} (으) 로 활성 번역 세션이 있습니다.'
@@ -277,8 +277,8 @@ Messages:
   wwcConfigGUISQLPortButton: SQL 포트 변경
   wwcConfigGUISQLOptionalArgsButton: SQL 선택적 인수 변경
   wwcConfigConversationToggleSQLSSLSuccess: SQL용 SSL이 성공적으로 전환되었습니다.
-  wwcConfigConversationSQLPortInput: 현재 포트는 {0}입니다. 0 이외의 다른 항목을 입력하여 새 포트를 설정하거나 0을
-    입력하여 되돌립니다.
+  wwcConfigConversationSQLPortInput: 현재 포트는 {0}입니다. 0 이외의 다른 항목을 입력하여 새 포트를 설정하거나
+    0을 입력하여 되돌립니다.
   wwcConfigGUISQLPasswordButton: SQL 비밀번호 변경
   wwcConfigConversationSQLHostnameSuccess: SQL 호스트 이름을 성공적으로 변경했습니다.
   wwcConfigConversationSQLHostnameInput: 현재 호스트 이름은 {0}입니다. 0 이외의 다른 항목을 입력하여 새 호스트
@@ -310,8 +310,8 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: 무료 번역 API 키 변경
   libreHttp403: 무료 번역 API 키가 없거나 서버에서 금지되었습니다!
   wwcConfigConversationLibreURLSuccess: 자유 URL을 성공적으로 설정했습니다.
-  wwcConfigConversationLibreTranslateApiKeyInput: 현재 API 키는 {0}입니다. Libre의 API 키를 입력하거나
-    뒤로 돌아가려면 0을 입력하십시오.
+  wwcConfigConversationLibreTranslateApiKeyInput: 현재 API 키는 {0}입니다. Libre의 API 키를
+    입력하거나 뒤로 돌아가려면 0을 입력하십시오.
   wwcConfigGUILibreTranslateButton: 리브레 번역
   libreHttp429: 서버의 속도 제한으로 인해 확신이 없습니다.
   wwcConfigGUIToggleLibreTranslateButton: 무료 번역 토글
@@ -332,18 +332,18 @@ Messages:
     입력하여 이전 포트로 돌아갑니다.
   wwcConfigConversationToggleMongoSuccess: MongoDB가 성공적으로 전환되었습니다.변경 사항을 적용하려면 다시
     로드합니다.
-  wwcConfigConversationMongoHostnameInput: 현재 호스트 이름은 {0}입니다. 0이 아닌 다른 이름을 입력하여 새 호스트
-    이름을 설정하거나 0을 입력하여 뒤로 돌아갑니다.
+  wwcConfigConversationMongoHostnameInput: 현재 호스트 이름은 {0}입니다. 0이 아닌 다른 이름을 입력하여 새
+    호스트 이름을 설정하거나 0을 입력하여 뒤로 돌아갑니다.
   wwcConfigConversationMongoHostnameSuccess: MongoDB 호스트 이름을 성공적으로 변경했습니다.
   wwcConfigGUIMongoMenuButton: 몽고DB 설정 변경하기
   wwcConfigGUIToggleMongoButton: 몽고DB 토글
-  wwcConfigConversationMongoDatabaseNameInput: 현재 데이터베이스 이름은 {0}입니다. 0이 아닌 다른 이름을 입력하여
-    새 데이터베이스 이름을 설정하거나 0을 입력하여 이전 이름으로 돌아갑니다.
-  wwcConfigConversationMongoOptionalArgsInput: 현재 선택적 MongoDB 인수는 {0}입니다. 쉼표로 구분된 인수를
-    입력하거나 (키=값, 키2=값2), clear를 입력하여 현재 인수를 지우거나, 0을 입력하여 뒤로 돌아갑니다.
+  wwcConfigConversationMongoDatabaseNameInput: 현재 데이터베이스 이름은 {0}입니다. 0이 아닌 다른 이름을
+    입력하여 새 데이터베이스 이름을 설정하거나 0을 입력하여 이전 이름으로 돌아갑니다.
+  wwcConfigConversationMongoOptionalArgsInput: 현재 선택적 MongoDB 인수는 {0}입니다. 쉼표로 구분된
+    인수를 입력하거나 (키=값, 키2=값2), clear를 입력하여 현재 인수를 지우거나, 0을 입력하여 뒤로 돌아갑니다.
   wwcConfigGUIMongoDatabaseNameButton: 몽고DB 데이터베이스 변경
-  wwcConfigConversationMongoUsernameInput: 현재 사용자 이름은 {0}입니다. 0이 아닌 다른 이름을 입력하여 새 사용자
-    이름을 설정하거나 0을 입력하여 뒤로 돌아갑니다.
+  wwcConfigConversationMongoUsernameInput: 현재 사용자 이름은 {0}입니다. 0이 아닌 다른 이름을 입력하여 새
+    사용자 이름을 설정하거나 0을 입력하여 뒤로 돌아갑니다.
   wwcConfigGUIMongoOptionalArgsButton: MongoDB의 선택적 인수 변경하기
   wwcConfigConversationMongoUsernameSuccess: MongoDB 사용자 이름을 성공적으로 변경했습니다.
   wwcConfigConversationMongoPasswordSuccess: MongoDB 암호를 성공적으로 변경했습니다.
@@ -361,18 +361,18 @@ Messages:
   wwcConfigGUIDeepLTranslateApiKeyButton: 딥엘 번역 API 키 변경
   wwcConfigGUIToggleDeepLTranslateButton: 딥L 트랜슬레이트를 전환하세요
   wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API 키가 성공적으로 설정되었습니다.
-  wwcConfigConversationDeepLTranslateApiKeyInput: 현재 API 키는 {0}입니다. DeepL의 API 키를 입력하거나
-    뒤로 돌아가려면 0을 입력하십시오.
+  wwcConfigConversationDeepLTranslateApiKeyInput: 현재 API 키는 {0}입니다. DeepL의 API 키를
+    입력하거나 뒤로 돌아가려면 0을 입력하십시오.
   wwcConfigErrorsToIgnoreSuccess: 무시할 번역기 오류를 성공적으로 등록했습니다.
   wwcConfigErrorsToIgnoreInvalid: config.yml에 설정된 무시할 번역기 오류가 잘못되었습니다.기본값 등록 중...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: 번역기 오류가 구문을 무시하도록 성공적으로 변경되었습니다.
   wwcConfigGUIIgnoreErrorsButton: 오류를 무시하도록 변경
   wwcConfigConversationIgnoreErrorsInput: 현재 무시할 번역기 오류의 문구 목록은 다음과 같습니다. {0}. 쉼표로
     구분된 인수 (key=value, key2=value2) 를 입력하거나 현재 인수를 지우려면 clear를 입력하고 이전 인수를 지우려면 0을
     입력하십시오.또한 “*”를 입력하면 플러그인이 번역기 오류를 확인하지 않습니다.
   wwcConfigConversationIgnoreErrorsCleared: 문구를 무시하는 번역기 오류가 성공적으로 지워졌습니다.
-
+  
   wwcsActiveTransPrevRate: '활성 번역기 이전 속도 제한 시간: {0}'
   wwcsActiveTransSaved: '활성 번역기가 디스크에 저장됨: {0}'
   wwcsActiveTransIncoming: '수신 채팅을 번역하는 활성 번역자: {0}'
@@ -386,4 +386,6 @@ Messages:
   wwcsActiveTransOutgoing: '발신 채팅을 번역하는 액티브 번역가: {0}'
   wwcsActiveTransItem: '활성 번역기 번역 항목: {0}'
   wwcsActiveTransEntity: '액티브 트랜슬레이터 번역 엔티티: {0}'
+  wwcSupportedServer: '{0} 에 대한 월드와이드챗 초기화 중...'
+  wwcSupportedVersion: '{0} 버전의 기능 활성화 중...'
 

@@ -26,8 +26,8 @@ Messages:
   wwcConfigDisabledbStats: Zakázané Bstaty.
   wwctsOffSender: Překlad podepsat zakázán.
   wwcUpdaterParserFailed: Nepodařilo se analyzovat data aktualizace z Githubu.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: Aktuální tajný klíč je {0}. Zadejte
-    prosím tajný klíč pro Amazon, nebo zadejte 0 pro návrat.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Aktuální tajný klíč je {0}.
+    Zadejte prosím tajný klíč pro Amazon, nebo zadejte 0 pro návrat.
   wwctbOffSender: Překlad knih zakázán.
   wwcConfigGUIAmazonTranslateButton: Amazon Translate
   wwcConfigConversationLangSuccess: Jazyk pluginu se úspěšně změnil.
@@ -78,8 +78,8 @@ Messages:
     dlouhý. Překlad:'
   wwctsOnTarget: Podepsat překlad povolen pro {0}.
   wwcConfigCacheDisabled: Cache překladatele zakázána.
-  wwcConfigConversationWatsonURLInput: Aktuální URL je {0}. Zadejte prosím adresu URL
-    služby pro Watson, nebo zadejte 0 pro návrat.
+  wwcConfigConversationWatsonURLInput: Aktuální URL je {0}. Zadejte prosím adresu
+    URL služby pro Watson, nebo zadejte 0 pro návrat.
   wwcBookDone: Kniha úspěšně přeložena.
   wwctsOnSender: Podepsat překlad povolen. Pravým tlačítkem myši na znamení přeložit!
   watsonColorCodeWarning: Použití barevných kódů vám může poskytnout nepředvídatelné
@@ -130,8 +130,8 @@ Messages:
   wwcConfigConversationGoogleTranslateAPIKeyInput: Aktuální klíč API je {0}. Zadejte
     prosím klíč API pro Google Translate nebo zadejte 0 pro návrat.
   wwcConfigConversationRateLimitInput: Aktuální globální limit rychlosti na překlad
-    je {0} sekund. Zadejte hodnotu větší než 0, chcete-li nastavit novou hodnotu, nebo
-    zadejte 0, chcete-li limit zakázat. Napište něco méně než 0, abyste se vrátili.
+    je {0} sekund. Zadejte hodnotu větší než 0, chcete-li nastavit novou hodnotu,
+    nebo zadejte 0, chcete-li limit zakázat. Napište něco méně než 0, abyste se vrátili.
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API klíč nastaven
     úspěšně.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Změna tajného klíče Amazon
@@ -252,8 +252,8 @@ Messages:
   wwcEntityTranslateDone: 'Název přeložené entity: {0}'
   wwcEntityTranslateNoName: Entita nemá vlastní název.
   wwcConfigConversationErrorLimitInput: Aktuální limit chyb pro každý překladač je
-    {0}. Zadejte něco většího než 0 pro nastavení nové hodnoty, nebo zadejte něco menší
-    než nebo rovno 0, abyste se vrátili zpět.
+    {0}. Zadejte něco většího než 0 pro nastavení nové hodnoty, nebo zadejte něco
+    menší než nebo rovno 0, abyste se vrátili zpět.
   wwcConfigGUIGlobalRateLimitButton: Změna globálního limitu sazeb
   wwcteOnSender: Převod entit povolen. Pravým tlačítkem myši na entitu přeložte její
     název!
@@ -262,14 +262,14 @@ Messages:
   wwcteOffTarget: Překlad entit zakázán pro {0}.
   wwcCharLimit: Vaše zpráva je příliš dlouhá! Ujistěte se, že vaše zpráva má menší
     než {0} znaků.
-  wwcConfigConversationCharacterLimitInput: Aktuální limit znaků na zprávu je {0} znaků.
-    Zadejte něco většího než 0 pro nastavení nové hodnoty nebo zadejte něco menší
-    než nebo rovno 0 a vraťte se zpět.
+  wwcConfigConversationCharacterLimitInput: Aktuální limit znaků na zprávu je {0}
+    znaků. Zadejte něco většího než 0 pro nastavení nové hodnoty nebo zadejte něco
+    menší než nebo rovno 0 a vraťte se zpět.
   wwcteOffSender: Převod entit zakázán.
   wwctGUIEntityButton: Přepnout překlad entit
   wwctrlRateLimitBadInt: Váš limit sazeb není platné celé číslo.
-  wwcTranslatorErrorConsole: Vyskytl se problém, když se uživatele {0} pokoušel o jejich
-    překlad. Další podrobnosti zkontrolujte errorLog.txt.
+  wwcTranslatorErrorConsole: Vyskytl se problém, když se uživatele {0} pokoušel o
+    jejich překlad. Další podrobnosti zkontrolujte errorLog.txt.
   wwctGUIChatButton: Přepnout chat překlad
   wwcrBegin: Znovu načtení WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Relace překladu pro {0} byla zastavena.
@@ -277,11 +277,12 @@ Messages:
     ale máte aktivní relaci překladu z {0} do {1}.
   wwctCannotTranslateConsole: Nelze spustit relaci překladu pro konzoli!
   wwctLangToLangStart: Spuštění nové relace překladu z {0} do {1}.
-  wwcOnJoinTranslationNotificationSourceLang: Máte aktivní relaci překladu od {0} do
-    {0}.
+  wwcOnJoinTranslationNotificationSourceLang: Máte aktivní relaci překladu od {0}
+    do {0}.
   wwctAutoTranslateStartOtherPlayer: Spuštění nové relace překladu pro {0} do {1}.
   wwctTranslationStopped: Vaše relace překladu byla zastavena.
-  wwctLangToLangStartOtherPlayer: Spuštění nové relace překladu pro {0} od {1} do {2}.
+  wwctLangToLangStartOtherPlayer: Spuštění nové relace překladu pro {0} od {1} do
+    {2}.
   wwctAutoTranslateStart: Spuštění nové relace překladu na {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Máte aktivní relaci překladu na {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globální chat je překládán,
@@ -337,9 +338,9 @@ Messages:
     0 pro nastavení nového portu, nebo zadejte 0, abyste se vrátili.
   wwcConfigGUISQLPasswordButton: Změna hesla SQL
   wwcConfigConversationSQLHostnameSuccess: Úspěšně změnil název hostitele SQL.
-  wwcConfigConversationSQLHostnameInput: Aktuální název hostitele je {0}. Zadejte cokoli
-    jiného než 0, chcete-li nastavit nový název hostitele, nebo zadejte 0, který chcete
-    vrátit.
+  wwcConfigConversationSQLHostnameInput: Aktuální název hostitele je {0}. Zadejte
+    cokoli jiného než 0, chcete-li nastavit nový název hostitele, nebo zadejte 0,
+    který chcete vrátit.
   wwcConfigGUISQLHostnameButton: Změna názvu hostitele SQL
   wwcConfigConversationSQLOptionalArgsSuccess: Úspěšně změnil volitelné argumenty
     SQL.
@@ -355,8 +356,8 @@ Messages:
   wwcConfigGUISQLUsernameButton: Změna uživatelského jména SQL
   wwcConfigConversationSQLOptionalArgsCleared: Volitelné argumenty byly úspěšně vymazány.
   wwcConfigConversationSQLOptionalArgsInput: 'Aktuální volitelné argumenty SQL jsou:
-    {0}. Zadejte argumenty oddělené čárkou (key=value, key2=value2), nebo zadejte clear
-    pro vymazání aktuálních oblouků nebo zadejte 0, abyste se vrátili.'
+    {0}. Zadejte argumenty oddělené čárkou (key=value, key2=value2), nebo zadejte
+    clear pro vymazání aktuálních oblouků nebo zadejte 0, abyste se vrátili.'
   wwcConfigConversationSQLDatabaseNameInput: Název aktuální databáze je {0}. Zadejte
     cokoli jiného než 0, chcete-li nastavit nový název databáze, nebo zadejte 0, abyste
     se vrátili.
@@ -382,8 +383,8 @@ Messages:
   wwcConfigConversationLibreTranslateToggleSuccess: Úspěšně přepnout Libre Translate.
     Znovu načtěte, aby se změny projevily.
   wwcConfigConversationLibreTranslateApiKeySuccess: Klíč zdarma API úspěšně nastaven.
-  wwcConfigConversationLibreURLInput: Aktuální URL je {0}. Zadejte prosím URL pro Libre,
-    nebo zadejte 0 pro návrat zpět.
+  wwcConfigConversationLibreURLInput: Aktuální URL je {0}. Zadejte prosím URL pro
+    Libre, nebo zadejte 0 pro návrat zpět.
   libreHttpUnknown: 'Neznámá chyba http: {0}'
   wwcConfigGUILibreTranslateURLButton: Změnit zdarma Přeložit URL
   wwcConfigConnectionFail: Připojení k {0} se nezdařilo.
@@ -438,17 +439,18 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Úspěšně registrované chyby překladatele ignorovat.
   wwcConfigErrorsToIgnoreInvalid: Neplatné chyby překladače pro ignorování nastavené
     v config.yml. Registrace výchozích nastavení...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Úspěšně změnil chyby překladatele ignorovat
     fráze.
   wwcConfigGUIIgnoreErrorsButton: Změna chyb na ignorování
   wwcConfigConversationIgnoreErrorsInput: 'Aktuální seznam frází v chybách překladače,
-    které je třeba ignorovat, je: {0}. Argumenty typu oddělené čárkou (key=value, key2=value2),
-    nebo zadejte clear pro vymazání aktuálních arg, nebo zadejte 0 pro návrat zpět.
-    Navíc zadání „*“ způsobí, že plugin nebude kontrolovat žádné chyby překladatele.'
+    které je třeba ignorovat, je: {0}. Argumenty typu oddělené čárkou (key=value,
+    key2=value2), nebo zadejte clear pro vymazání aktuálních arg, nebo zadejte 0 pro
+    návrat zpět. Navíc zadání „*“ způsobí, že plugin nebude kontrolovat žádné chyby
+    překladatele.'
   wwcConfigConversationIgnoreErrorsCleared: Chyby překladatele ignorovat fráze úspěšně
     vymazány.
-
+  
   wwcsActiveTransPrevRate: 'Aktivní překladatel Předchozí sazba Limit Čas: {0}'
   wwcsActiveTransSaved: 'Aktivní překladač uložený na disk: {0}'
   wwcsActiveTransIncoming: 'Aktivní překladatel Překládání příchozího chatu: {0}'
@@ -462,4 +464,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktivní překladatel Překlad Odchozí Chat: {0}'
   wwcsActiveTransItem: 'Aktivní překladatel Překladatel položky: {0}'
   wwcsActiveTransEntity: 'Aktivní překladatel překládající entitu: {0}'
+  wwcSupportedServer: Inicializace WorldwideChat pro {0}...
+  wwcSupportedVersion: Povolení funkcí pro verzi {0}...
 

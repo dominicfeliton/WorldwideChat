@@ -30,6 +30,8 @@ Messages:
   wwcTimeoutExceptionConsole: 'Player {0} had their most recent request timeout. This error is not fatal, but WorldwideChat should be reloaded if it continues to happen.'
   wwcTimeoutException: 'Your command timed out. Please try again.'
   wwcGUIPageNumber: 'Page Number: {0}'
+  wwcSupportedServer: 'Initializing WorldwideChat for {0}...'
+  wwcSupportedVersion: 'Enabling features for version {0}...'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from {0} to {1}.'
   wwcOnJoinTranslationNotificationNoSourceLang: 'You have an active translation session to {0}.'

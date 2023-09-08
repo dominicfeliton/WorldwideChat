@@ -22,7 +22,8 @@ Messages:
   wwcConfigDisabledbStats: 已禁用 bStats。
   wwctsOffSender: 已禁用签名翻译。
   wwcUpdaterParserFailed: 无法解析来自 Github 的更新数据。
-  wwcConfigConversationAmazonTranslateSecretKeyInput: 当前密钥为 {0}。请输入亚马逊的私有密钥，或键入 0 返回。
+  wwcConfigConversationAmazonTranslateSecretKeyInput: 当前密钥为 {0}。请输入亚马逊的私有密钥，或键入 0
+    返回。
   wwctbOffSender: 图书翻译已禁用。
   wwcConfigGUIAmazonTranslateButton: 亚马逊翻译
   wwcConfigConversationLangSuccess: 插件语言更改成功。
@@ -105,8 +106,8 @@ Messages:
   wwcConfigGUITranslatorSettings: 翻译器配置
   wwcConfigConversationGoogleTranslateAPIKeyInput: 当前 API 密钥为 {0}。请为谷歌翻译输入 API 密钥，或键入
     0 返回。
-  wwcConfigConversationRateLimitInput: 当前每次翻译的全局速率限制为 {0} 秒。键入大于 0 的任何值以设置新值，或者键入 0
-    以禁用限制。键入小于 0 的任何内容以返回。
+  wwcConfigConversationRateLimitInput: 当前每次翻译的全局速率限制为 {0} 秒。键入大于 0 的任何值以设置新值，或者键入
+    0 以禁用限制。键入小于 0 的任何内容以返回。
   wwcConfigConversationGoogleTranslateAPIKeySuccess: 谷歌翻译 API 密钥设置成功。
   wwcConfigGUIAmazonTranslateSecretKeyButton: 更改亚马逊密钥
   wwcVersion: WorldwideChat，版本
@@ -293,8 +294,8 @@ Messages:
   wwcConfigGUILibreTranslateApiKeyButton: 更改 Libre 翻译 API 密钥
   libreHttp403: 缺少 Libre 翻译 API 密钥，或者你被禁止进入服务器！
   wwcConfigConversationLibreURLSuccess: 已成功设置 Libre 网址。
-  wwcConfigConversationLibreTranslateApiKeyInput: 当前的 API 密钥是 {0}。请输入 Libre 的 API 密钥，或者键入
-    0 返回。
+  wwcConfigConversationLibreTranslateApiKeyInput: 当前的 API 密钥是 {0}。请输入 Libre 的 API
+    密钥，或者键入 0 返回。
   wwcConfigGUILibreTranslateButton: Libre 翻译
   libreHttp429: 由于服务器的速率限制，没有信心。
   wwcConfigGUIToggleLibreTranslateButton: 切换 Libre 翻译
@@ -340,13 +341,13 @@ Messages:
     0 返回。
   wwcConfigErrorsToIgnoreSuccess: 已成功注册要忽略的翻译错误。
   wwcConfigErrorsToIgnoreInvalid: 在 config.yml 中设置的不可忽略的无效转换器错误。正在注册默认值...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: 成功将翻译器错误更改为忽略短语。
   wwcConfigGUIIgnoreErrorsButton: 将错误更改为忽略
   wwcConfigConversationIgnoreErrorsInput: 翻译器错误中当前要忽略的短语列表是： {0}。键入参数以逗号（key=value，key2=value，key2=value2）分隔，或者键入
     clear 以擦除当前参数，或者键入 0 返回。此外，键入 “*” 将导致插件无法检查任何翻译器错误。
   wwcConfigConversationIgnoreErrorsCleared: 已成功清除忽略短语的翻译错误。
-
+  
   wwcsActiveTransPrevRate: 活跃转换器之前的速率限制时间： {0}
   wwcsActiveTransSaved: '活动转换器已保存到磁盘: {0}'
   wwcsActiveTransIncoming: 活跃翻译器正在翻译传入的聊天： {0}
@@ -360,4 +361,6 @@ Messages:
   wwcsActiveTransOutgoing: 活跃翻译器正在翻译外发聊天： {0}
   wwcsActiveTransItem: 活跃翻译器正在翻译项目： {0}
   wwcsActiveTransEntity: 活跃翻译器翻译实体： {0}
+  wwcSupportedServer: 正在为 {0} 初始化 WorldwideChat...
+  wwcSupportedVersion: 正在启用 {0} 版本的功能...
 

@@ -16,8 +16,8 @@ Messages:
     अहवाल द्या.
   wwctbOnTarget: '{0} करीता पुस्तक भाषांतर कार्यान्वीत केले आहे.'
   wwctrlRateLimitAlreadyOffTarget: '{0} ची दर मर्यादा आधीच अकार्यान्वीत केली आहे.'
-  wwcConfigConnectionFailed: '{0} शी कनेक्ट करण्यात अयशस्वी. तुमची क्रेडेन्शियल्स व
-    फायरवॉल योग्यरित्या कॉन्फिगर केले असल्याची खात्री करा!'
+  wwcConfigConnectionFailed: '{0} शी कनेक्ट करण्यात अयशस्वी. तुमची क्रेडेन्शियल्स
+    व फायरवॉल योग्यरित्या कॉन्फिगर केले असल्याची खात्री करा!'
   wwcConfigEnabledbStats: सक्षम bStats.
   wwctGUIConversationRateLimit: प्रति भाषांतर दर मर्यादा सध्या {0} सेकंद आहे. नवीन
     मूल्य सेट करण्यासाठी 0 पेक्षा जास्त काहीही टाइप करा, किंवा मर्यादा अक्षम करण्यासाठी
@@ -197,8 +197,8 @@ Messages:
     टाइप करा, किंवा 0 टाइप करा. परत जाण्यासाठी 0 पेक्षा कमी काहीही टाइप करा.
   wwcConfigGUIChatMessagesModifyOverride: विद्यमान अधिलिखित सुधारित करा
   wwcConfigConversationAmazonTranslateRegionSuccess: ऍमेझॉन प्रदेश यशस्वीरित्या सेट.
-  wwcConfigRateLimitEnabled: वैश्विक दर मर्यादा कार्यान्वीत व {0} सेकंद करीता सेट केले
-    आहे.
+  wwcConfigRateLimitEnabled: वैश्विक दर मर्यादा कार्यान्वीत व {0} सेकंद करीता सेट
+    केले आहे.
   wwcConfigGUIChatMessagesOverrideNewButton: एक नवीन अधिलिखित जोडा
   wwcUpdaterOutOfDate: WorldwideChat कालबाह्य आहे. कृपया नवीनतम आवृत्ती, {0} वर अपडेट
     करा.
@@ -224,11 +224,12 @@ Messages:
   wwcConfigGUIPluginUpdateChatButton: प्लगइन अद्यतनांसाठी चॅट रिमाइंडर पाठवा
   wwcsTitle: '{0} ची नोंद'
   wwcConfigGUIErrorLimitButton: अनुवादक त्रुटी मर्यादा बदला
-  wwcConfigConversationWatsonAPIKeyInput: वर्तमान API कि {0} आहे. कृपया वॉटसनसाठी API
-    की इनपुट करा, किंवा परत जाण्यासाठी टाइप करा 0.
+  wwcConfigConversationWatsonAPIKeyInput: वर्तमान API कि {0} आहे. कृपया वॉटसनसाठी
+    API की इनपुट करा, किंवा परत जाण्यासाठी टाइप करा 0.
   wwcgTranslationStopped: ग्लोबल चॅट भाषांतर थांबविले गेले आहे.
   wwcConfigConversationCharacterLimitSuccess: अक्षर मर्यादा यशस्वीरित्या सेट.
-  wwctAutoTranslateStartOtherPlayer: '{0} ते {1} करीता नविन भाषांतर सत्र सुरू करत आहे.'
+  wwctAutoTranslateStartOtherPlayer: '{0} ते {1} करीता नविन भाषांतर सत्र सुरू करत
+    आहे.'
   wwcItemTranslateTitleStock: मुलभूत आयटम नावे अनुवाद करण्यास असमर्थ.
   wwcConfigConversationSyncUserDataDelaySuccess: वापरकर्ता डेटा समक्रमण विलंब यशस्वीरित्या
     सेट.
@@ -264,8 +265,8 @@ Messages:
   wwcteOffTarget: '{0} करीता अस्तित्व भाषांतर अकार्यान्वीत केले आहे.'
   wwcUnsupportedVersion: 'आपण Bukkit एक असमर्थित आवृत्ती चालवत आहेत, झाकणे, किंवा
     पेपर. समर्थित आवृत्ती:'
-  wwcGlobalOnJoinTranslationNotificationSourceLang: वैश्विक चॅट {0} पासून {1} वरून भाषांतरित
-    केले जात आहे.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: वैश्विक चॅट {0} पासून {1} वरून
+    भाषांतरित केले जात आहे.
   wwcConfigGUITranslatorSettings: अनुवादक संरचना
   wwcExampleMessage: हा एक डमी संदेश आहे, आणि एक उदाहरण म्हणून अधिलिखित करणे खेळायचा
     आहे.
@@ -390,14 +391,14 @@ Messages:
   wwcConfigConversationMongoDatabaseNameSuccess: मोंगोडीबी डेटाबेस नाव यशस्वीरित्या
     बदलले.
   wwcConfigGUIMongoHostnameButton: मोंगोडीबी होस्टनाव बदला
-  wwcConfigConversationMongoPasswordInput: वर्तमान पासवर्ड {0} आहे. 0 पेक्षा नवीन पासवर्ड
+  wwcConfigConversationMongoPasswordInput: वर्तमान पासवर्ड {0} आहे. 0 पेक्षा नवीन
+    पासवर्ड सेट करण्यासाठी किंवा परत जाण्यासाठी टाइप 0 पेक्षा इतर काहीही टाइप करा.
+  wwcConfigConversationMongoPortInput: वर्तमान पोर्ट {0} आहे. 0 पेक्षा नवीन पोर्ट
     सेट करण्यासाठी किंवा परत जाण्यासाठी टाइप 0 पेक्षा इतर काहीही टाइप करा.
-  wwcConfigConversationMongoPortInput: वर्तमान पोर्ट {0} आहे. 0 पेक्षा नवीन पोर्ट सेट
-    करण्यासाठी किंवा परत जाण्यासाठी टाइप 0 पेक्षा इतर काहीही टाइप करा.
   wwcConfigConversationToggleMongoSuccess: मोंगोडीबी यशस्वीरित्या टॉगल केले. बदल प्रभावी
     होण्यासाठी रीलोड करा.
-  wwcConfigConversationMongoHostnameInput: सध्याचे यजमाननाव {0} आहे. 0 शिवाय नविन यजमाननाव
-    निश्चित करण्यासाठी टाइप करा, किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationMongoHostnameInput: सध्याचे यजमाननाव {0} आहे. 0 शिवाय नविन
+    यजमाननाव निश्चित करण्यासाठी टाइप करा, किंवा परत जाण्यासाठी 0 टाइप करा.
   wwcConfigConversationMongoHostnameSuccess: मोंगोडीबी होस्टनाव यशस्वीरित्या बदलले.
   wwcConfigGUIMongoMenuButton: मोंगोडीबी सेटिंग्ज बदला
   wwcConfigGUIToggleMongoButton: टॉगल मोंगोडीबी
@@ -408,8 +409,8 @@ Messages:
     {0} स्वल्पविरामाने विभक्त केलेले वितर्क टाइप करा (key=value, key2=value2), किंवा
     वर्तमान आर्ग्ज पुसण्यासाठी स्पष्ट टाइप करा, किंवा 0 परत जाण्यासाठी टाइप करा.'
   wwcConfigGUIMongoDatabaseNameButton: मोंगोडीबी डेटाबेस बदला
-  wwcConfigConversationMongoUsernameInput: सध्याचे वापरकर्तानाव {0} आहे. 0 पेक्षा इतर
-    काहीही टाइप करा नविन वापरकर्तानाव निश्चित करा, किंवा परत जाण्यासाठी टाइप 0.
+  wwcConfigConversationMongoUsernameInput: सध्याचे वापरकर्तानाव {0} आहे. 0 पेक्षा
+    इतर काहीही टाइप करा नविन वापरकर्तानाव निश्चित करा, किंवा परत जाण्यासाठी टाइप 0.
   wwcConfigGUIMongoOptionalArgsButton: मोंगोडीबी पर्यायी वितर्क बदला
   wwcConfigConversationMongoUsernameSuccess: मोंगोडीबी वापरकर्तानाव यशस्वीरित्या बदलले.
   wwcConfigConversationMongoPasswordSuccess: मोंगोडीबी संकेतशब्द यशस्वीरित्या बदलला.
@@ -435,18 +436,18 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: यशस्वीरित्या नोंदणीकृत अनुवादक त्रुटी दुर्लक्ष.
   wwcConfigErrorsToIgnoreInvalid: config.yml मध्ये सेट दुर्लक्ष करण्यासाठी अवैध अनुवादक
     त्रुटी. डीफॉल्ट नोंदणी करीत आहे...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: वाक्यांशांकडे दुर्लक्ष करण्यासाठी अनुवादक
     त्रुटी यशस्वीरित्या बदलल्या.
   wwcConfigGUIIgnoreErrorsButton: दुर्लक्ष करण्यासाठी त्रुटी बदला
   wwcConfigConversationIgnoreErrorsInput: 'दुर्लक्षित करण्यासाठी अनुवादक त्रुटींमधील
-    वाक्यांशांची सद्य यादी अशी आहे: {0}. स्वल्पविरामाने विभक्त केलेले वितर्क टाइप करा
-    (key=value, key2=value2), किंवा वर्तमान आर्ग्ज पुसण्यासाठी स्पष्ट टाइप करा, किंवा
-    परत जाण्यासाठी टाइप 0. याव्यतिरिक्त, टाइप “*” प्लगइन कोणत्याही अनुवादक त्रुटी
+    वाक्यांशांची सद्य यादी अशी आहे: {0}. स्वल्पविरामाने विभक्त केलेले वितर्क टाइप
+    करा (key=value, key2=value2), किंवा वर्तमान आर्ग्ज पुसण्यासाठी स्पष्ट टाइप करा,
+    किंवा परत जाण्यासाठी टाइप 0. याव्यतिरिक्त, टाइप “*” प्लगइन कोणत्याही अनुवादक त्रुटी
     तपासा नाही देईन.'
   wwcConfigConversationIgnoreErrorsCleared: वाक्यांशांकडे दुर्लक्ष करण्यासाठी अनुवादक
     त्रुटी यशस्वीरित्या साफ केल्या.
-
+  
   wwcsActiveTransPrevRate: 'सक्रिय अनुवादक मागील दर मर्यादा वेळ: {0}'
   wwcsActiveTransSaved: 'सक्रिय अनुवादक डिस्कवर जतन केले: {0}'
   wwcsActiveTransIncoming: 'सक्रिय अनुवादक इनकमिंग चॅटचे भाषांतर करीत आहे: {0}'
@@ -460,4 +461,6 @@ Messages:
   wwcsActiveTransOutgoing: 'सक्रिय अनुवादक आउटगोइंग चॅटचे भाषांतर करीत आहे: {0}'
   wwcsActiveTransItem: 'सक्रिय अनुवादक अनुवादक घटक: {0}'
   wwcsActiveTransEntity: 'सक्रिय अनुवादक भाषांतर करणारे अस्तित्व: {0}'
+  wwcSupportedServer: '{0} साठी वर्ल्डवाइडचॅट प्रारंभ करीत आहे...'
+  wwcSupportedVersion: आवृत्तीसाठी वैशिष्ट्ये सक्षम करणे {0}...
 

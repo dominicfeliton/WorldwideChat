@@ -7,8 +7,8 @@ Messages:
   wwcConfigGUIUpdateCheckerButton: Isbeddel Hubi Cusbooneysiinta Dib
   wwcUpdaterFailedGeneric: Awoodin in la hubiyo cusbooneysiinta WorldwideChat.
   wwcConfigConversationUpdateCheckerInput: Dib u dhaca imika ee hubiyaha cusbooneysiinta
-    waa {0} ilbiriqsi. Ku qor wax ka weyn 10 si aad u dejiso qiimo cusub, ama wax ka
-    yar 10 si aad dib ugu noqoto.
+    waa {0} ilbiriqsi. Ku qor wax ka weyn 10 si aad u dejiso qiimo cusub, ama wax
+    ka yar 10 si aad dib ugu noqoto.
   wwctGUIMainMenuGlobal: Menu-ka Turjumaadda Adduunka
   wwcConfigConversationPluginUpdateChatSuccess: Plugin update xasuusin chat casriyeeyay
     si guul leh.
@@ -285,7 +285,8 @@ Messages:
     la turjumayaa, laakiin waxaad leedahay fadhi tarjumaad firfircoon oo ka bilaaban
     {0} ilaa {1}.
   wwctCannotTranslateConsole: Ma bilaabi kartid fadhiga turjumaadda ee Console!
-  wwctLangToLangStart: Laga bilaabo fadhiga turjumaad cusub laga bilaabo {0} ilaa {1}.
+  wwctLangToLangStart: Laga bilaabo fadhiga turjumaad cusub laga bilaabo {0} ilaa
+    {1}.
   wwcOnJoinTranslationNotificationSourceLang: Waxaad leedahay fadhi tarjumaad firfircoon
     oo laga bilaabay {0} ilaa {1}.
   wwctAutoTranslateStartOtherPlayer: Bilaabidda fadhiga turjumaad cusub ee loogu talagalay
@@ -361,9 +362,9 @@ Messages:
     ee ikhtiyaariga ah.
   wwcConfigConversationSQLPasswordSuccess: Si guul leh u beddelay lambarka sirta ah
     ee SQL.
-  wwcConfigConversationSQLPasswordInput: Lambarka sirta ah ee hadda jira waa {0}. ku
-    qor wax kasta oo aan ahayn 0 si aad u dejiso erey cusub, ama ku qor 0 si aad dib
-    ugu noqoto.
+  wwcConfigConversationSQLPasswordInput: Lambarka sirta ah ee hadda jira waa {0}.
+    ku qor wax kasta oo aan ahayn 0 si aad u dejiso erey cusub, ama ku qor 0 si aad
+    dib ugu noqoto.
   wwcConfigGUIToggleSQLSSLButton: Toggle SQL SSL
   wwcConfigConversationSQLUsernameSuccess: Si guul leh ayaa loo beddelay magaca isticmaalaha
     SQL.
@@ -413,22 +414,22 @@ Messages:
   wwcConfigConversationMongoDatabaseNameSuccess: Si guul leh u bedelay magaca xogta
     MongoDB.
   wwcConfigGUIMongoHostnameButton: Beddel Magaca MongoDB Hostname
-  wwcConfigConversationMongoPasswordInput: Baaswoodhka hadda jira waa {0}. Ku qor wax
-    kasta oo aan ahayn 0 si aad u sameysid erey cusub, ama nooca 0 si aad dib ugu
-    noqoto.
-  wwcConfigConversationMongoPortInput: Dekedda imika waa {0}. Ku qor wax kasta oo aan
-    ahayn 0 si aad u dejiso dekad cusub, ama nooca 0 si aad dib ugu noqoto.
+  wwcConfigConversationMongoPasswordInput: Baaswoodhka hadda jira waa {0}. Ku qor
+    wax kasta oo aan ahayn 0 si aad u sameysid erey cusub, ama nooca 0 si aad dib
+    ugu noqoto.
+  wwcConfigConversationMongoPortInput: Dekedda imika waa {0}. Ku qor wax kasta oo
+    aan ahayn 0 si aad u dejiso dekad cusub, ama nooca 0 si aad dib ugu noqoto.
   wwcConfigConversationToggleMongoSuccess: MongoDB si guul leh u toggledey. Reload
     isbedelka si uu u dhaqan geliyo.
-  wwcConfigConversationMongoHostnameInput: Magaca martigeliyaha hadda waa {0}. Ku qor
-    wax kasta oo aan ahayn 0 si aad u sameysid hostname cusub, ama nooca 0 si aad
-    dib ugu noqoto.
+  wwcConfigConversationMongoHostnameInput: Magaca martigeliyaha hadda waa {0}. Ku
+    qor wax kasta oo aan ahayn 0 si aad u sameysid hostname cusub, ama nooca 0 si
+    aad dib ugu noqoto.
   wwcConfigConversationMongoHostnameSuccess: Si guul leh u bedelay hostname MongoDB.
   wwcConfigGUIMongoMenuButton: Beddel Settings MongoDB
   wwcConfigGUIToggleMongoButton: Toggle MongoDB
-  wwcConfigConversationMongoDatabaseNameInput: Magaca xogta hadda waa {0}. Ku qor wax
-    kasta oo aan ahayn 0 si aad u sameysid magaca xogta cusub, ama nooca 0 si aad
-    dib ugu noqoto.
+  wwcConfigConversationMongoDatabaseNameInput: Magaca xogta hadda waa {0}. Ku qor
+    wax kasta oo aan ahayn 0 si aad u sameysid magaca xogta cusub, ama nooca 0 si
+    aad dib ugu noqoto.
   wwcConfigConversationMongoOptionalArgsInput: 'Doodaha ikhtiyaariga ah ee hadda jira
     ee MongoDB waa: {0}. Nooca doodaha kala soocaya comma (furah=qiime, key2=value2),
     ama nooca cad si aad u tirtirto args hadda, ama nooca 0 si aad dib ugu noqoto.'
@@ -463,7 +464,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Si guul leh u diiwaan gashan khaladaad turjumaan
   wwcConfigErrorsToIgnoreInvalid: khaladaad turjumaan aan sax ahayn in ay iska indha
     dhigay config.yml. Diiwaangelinta asalka ah...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Si guul leh u bedelay qaladaad turjumaan
     in ay iska indha tiraan
   wwcConfigGUIIgnoreErrorsButton: Isbeddel khaladaadka si aad u
@@ -474,7 +475,7 @@ Messages:
     hubin wixii khaladaad ah turjumaan.'
   wwcConfigConversationIgnoreErrorsCleared: khaladaadka Translator in ay iska indha
     weedho si guul
-
+  
   wwcsActiveTransPrevRate: 'Turjumaan firfircoon Heerka Hore Xaddidan Waqtiga: {0}'
   wwcsActiveTransSaved: 'Turjumaan firfircoon oo lagu keydiyay Disk: {0}'
   wwcsActiveTransIncoming: 'Turjumaan firfircoon Tarjumida Chat soo socda: {0}'
@@ -489,4 +490,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Turjumaan firfircoon Tarjumida Sheekada Xilka: {0}'
   wwcsActiveTransItem: 'Turjumaan firfircoon Shayga Tarjumida: {0}'
   wwcsActiveTransEntity: 'Turjumaan firfircoon oo Turjumaad ah: {0}'
+  wwcSupportedServer: Bilaabida WorldwideChat ee {0}...
+  wwcSupportedVersion: Awood u siinta astaamaha nooca {0}...
 

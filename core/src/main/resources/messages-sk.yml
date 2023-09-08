@@ -26,21 +26,22 @@ Messages:
   wwcConfigDisabledbStats: Zakázané Bstaty.
   wwctsOffSender: Preklad podpísať vypnutý.
   wwcUpdaterParserFailed: Nepodarilo sa analyzovať aktualizačné údaje z Githubu.
-  wwcConfigConversationAmazonTranslateSecretKeyInput: Aktuálny tajný kľúč je {0}. Prosím,
-    zadajte tajný kľúč pre Amazon, alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Aktuálny tajný kľúč je {0}.
+    Prosím, zadajte tajný kľúč pre Amazon, alebo zadajte 0, aby ste sa vrátili späť.
   wwctbOffSender: Preklad kníh zakázaný.
   wwcConfigGUIAmazonTranslateButton: Amazon Preložiť
   wwcConfigConversationLangSuccess: Jazyk pluginu sa úspešne zmenil.
   wwcsSuccessfulTranslations: 'Úspešné preklady: {0}'
   wwcConfigConversationTranslationCacheInput: Aktuálny limit vyrovnávacej pamäte prekladu
-    je {0} frázy. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu, alebo
-    zadaním 0 vypnite vyrovnávaciu pamäť prekladu. Zadajte čokoľvek menej ako 0, aby
-    ste sa vrátili späť.
+    je {0} frázy. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu,
+    alebo zadaním 0 vypnite vyrovnávaciu pamäť prekladu. Zadajte čokoľvek menej ako
+    0, aby ste sa vrátili späť.
   wwctbOffTarget: Preklad knihy zakázaný pre {0}.
   wwcConfigGUIGeneralSettings: Všeobecná konfigurácia
   wwcInvalidLang: Neplatný jazyk vo vašom config.yml. Predvolené na en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Oblasť Amazon bola úspešne nastavená.
-  wwcConfigRateLimitEnabled: Globálny limit rýchlosti povolený a nastavený na {0} sekúnd.
+  wwcConfigRateLimitEnabled: Globálny limit rýchlosti povolený a nastavený na {0}
+    sekúnd.
   wwcBadPerms: Nemáte požadované povolenia na vykonanie tohto príkazu!
   wwcConfigGUILangButton: Zmeniť jazyk doplnku
   wwctGUISignButton: Prepnúť preklad znakov
@@ -109,8 +110,8 @@ Messages:
   wwcConfigConnectionSuccess: Úspešne pripojený k {0}!
   wwcConfigGUIGoogleTranslateButton: Prekladač Google
   wwcsIsActiveTranslator: 'Je aktívny prekladateľ: {0}'
-  wwcConfigConversationPrefixInput: Aktuálna predpona je {0}. Prosím zadajte novú alebo
-    zadajte 0, aby ste sa vrátili späť.
+  wwcConfigConversationPrefixInput: Aktuálna predpona je {0}. Prosím zadajte novú
+    alebo zadajte 0, aby ste sa vrátili späť.
   wwcConfigGUIPreviousPageButton: Predchádzajúca strana
   wwcConfigGUITranslatorCacheButton: Zmeniť limit vyrovnávacej pamäte prekladu
   wwcConfigConversationbStatsSuccess: Úspešne prepínal bStats.
@@ -258,8 +259,8 @@ Messages:
   wwcEntityTranslateDone: 'Preložený názov entity: {0}'
   wwcEntityTranslateNoName: Entita nemá vlastný názov.
   wwcConfigConversationErrorLimitInput: Aktuálny limit chýb pre každého prekladateľa
-    je {0}. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu, alebo zadajte
-    niečo menšie alebo rovnajúce sa 0, aby ste sa vrátili späť.
+    je {0}. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu, alebo
+    zadajte niečo menšie alebo rovnajúce sa 0, aby ste sa vrátili späť.
   wwcConfigGUIGlobalRateLimitButton: Zmena globálneho limitu rýchlosti
   wwcteOnSender: Preklad entít povolený. Kliknite pravým tlačidlom myši na entitu
     a preložte jej názov!
@@ -274,8 +275,8 @@ Messages:
   wwcteOffSender: Preklad entít vypnutý.
   wwctGUIEntityButton: Prepnúť preklad entity
   wwctrlRateLimitBadInt: Váš limit sadzby nie je platné celé číslo.
-  wwcTranslatorErrorConsole: Vyskytol sa problém, keď používateľ {0} sa pokúšal o ich
-    preklad. Skontrolujte, prosím, errorLog.txt pre viac informácií.
+  wwcTranslatorErrorConsole: Vyskytol sa problém, keď používateľ {0} sa pokúšal o
+    ich preklad. Skontrolujte, prosím, errorLog.txt pre viac informácií.
   wwctGUIChatButton: Prepnúť preklad konverzácie
   wwcrBegin: Opätovné načítanie WorldwideChat...
   wwctTranslationStoppedOtherPlayer: Prekladateľská relácia pre {0} bola zastavená.
@@ -287,8 +288,8 @@ Messages:
     do {0}.
   wwctAutoTranslateStartOtherPlayer: Spustenie novej relácie prekladu pre {0} do {1}.
   wwctTranslationStopped: Vaša relácia prekladu bola zastavená.
-  wwctLangToLangStartOtherPlayer: Spustenie novej relácie prekladu pre {0} od {1} do
-    {0}.
+  wwctLangToLangStartOtherPlayer: Spustenie novej relácie prekladu pre {0} od {1}
+    do {0}.
   wwctAutoTranslateStart: Spustenie novej relácie prekladu na {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Máte aktívnu reláciu prekladu do {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globálny chat je prekladaný,
@@ -348,15 +349,15 @@ Messages:
     ak chcete nastaviť nový port, alebo zadajte 0, aby ste sa vrátili späť.
   wwcConfigGUISQLPasswordButton: Zmeniť heslo SQL
   wwcConfigConversationSQLHostnameSuccess: Úspešne zmenil názov hostiteľa SQL.
-  wwcConfigConversationSQLHostnameInput: Aktuálny názov hostiteľa je {0}. Zadajte niečo
-    iné ako 0, aby ste nastavili nový názov hostiteľa alebo zadajte 0, aby ste sa
-    vrátili späť.
+  wwcConfigConversationSQLHostnameInput: Aktuálny názov hostiteľa je {0}. Zadajte
+    niečo iné ako 0, aby ste nastavili nový názov hostiteľa alebo zadajte 0, aby ste
+    sa vrátili späť.
   wwcConfigGUISQLHostnameButton: Zmeniť názov hostiteľa SQL
   wwcConfigConversationSQLOptionalArgsSuccess: Úspešne zmenil voliteľné argumenty
     SQL.
   wwcConfigConversationSQLPasswordSuccess: Úspešne zmenil heslo SQL.
-  wwcConfigConversationSQLPasswordInput: Aktuálne heslo je {0}. Zadajte niečo iné ako
-    0 pre nastavenie nového hesla alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigConversationSQLPasswordInput: Aktuálne heslo je {0}. Zadajte niečo iné
+    ako 0 pre nastavenie nového hesla alebo zadajte 0, aby ste sa vrátili späť.
   wwcConfigGUIToggleSQLSSLButton: Prepnúť SQL SSL
   wwcConfigConversationSQLUsernameSuccess: Úspešne zmenil používateľské meno SQL.
   wwcConfigConversationSQLUsernameInput: Aktuálne používateľské meno je {0}. Zadajte
@@ -448,7 +449,7 @@ Messages:
   wwcConfigErrorsToIgnoreSuccess: Úspešne zaregistrované chyby prekladateľa ignorovať.
   wwcConfigErrorsToIgnoreInvalid: Neplatné chyby prekladateľa ignorovať nastavené
     v config.yml. Registrácia predvolených...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Úspešne zmenili chyby prekladateľa ignorovať
     frázy.
   wwcConfigGUIIgnoreErrorsButton: Zmena chýb ignorovať
@@ -459,7 +460,7 @@ Messages:
     žiadne chyby prekladateľa.'
   wwcConfigConversationIgnoreErrorsCleared: Chyby prekladateľa ignorovať frázy úspešne
     vymazané.
-
+  
   wwcsActiveTransPrevRate: 'Aktívny prekladateľ Predošlá miera Limit Čas: {0}'
   wwcsActiveTransSaved: 'Aktívny prekladač uložený na disk: {0}'
   wwcsActiveTransIncoming: 'Aktívny prekladateľ Preklad prichádzajúceho chatu: {0}'
@@ -473,4 +474,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktívny prekladateľ Preklad Odchádzajúci rozhovor: {0}'
   wwcsActiveTransItem: 'Aktívny prekladateľ Prekladanie položky: {0}'
   wwcsActiveTransEntity: 'Aktívny prekladateľ prekladá entitu: {0}'
+  wwcSupportedServer: Inicializácia WorldwideChat pre {0}...
+  wwcSupportedVersion: Povolenie funkcií pre verziu {0}...
 

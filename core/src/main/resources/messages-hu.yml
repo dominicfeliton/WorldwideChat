@@ -33,9 +33,9 @@ Messages:
   wwcConfigConversationLangSuccess: A bővítmény nyelve sikeresen megváltozott.
   wwcsSuccessfulTranslations: 'Sikeres fordítások: {0}'
   wwcConfigConversationTranslationCacheInput: Az aktuális fordítási gyorsítótárkorlát
-    a {0} kifejezések. Írja be a 0-nál nagyobb értéket az új érték beállításához, vagy
-    írja be a 0 értéket a fordítási gyorsítótár letiltásához. Írja be a 0-nál kevesebbet,
-    hogy visszamenjen.
+    a {0} kifejezések. Írja be a 0-nál nagyobb értéket az új érték beállításához,
+    vagy írja be a 0 értéket a fordítási gyorsítótár letiltásához. Írja be a 0-nál
+    kevesebbet, hogy visszamenjen.
   wwctbOffTarget: 'A könyv fordítása letiltva ehhez: {0}.'
   wwcConfigGUIGeneralSettings: Általános konfiguráció
   wwcInvalidLang: Érvénytelen nyelv a config.yml fájlban. Nem teljesíti a...
@@ -154,8 +154,8 @@ Messages:
   wwcsLastTranslationTime: 'Utolsó (sikeres) fordítási idő: {0}'
   wwctbNotATranslator: Ön nem aktív fordító! Győződjön meg róla, hogy ezt a /wwct.
   wwcConfigConversationAmazonTranslateAccessKeyInput: 'Az aktuális hozzáférési kulcs:
-    {0}. Adjon meg egy hozzáférési kulcsot az Amazonhoz, vagy írja be a 0 értéket a
-    visszatéréshez.'
+    {0}. Adjon meg egy hozzáférési kulcsot az Amazonhoz, vagy írja be a 0 értéket
+    a visszatéréshez.'
   wwcConfigConversationAmazonTranslateAccessKeySuccess: Az Amazon hozzáférési kulcs
     beállítása sikeresen megtörtént.
   wwcConfigBadUpdateDelay: 'Érvénytelen frissítő késleltetés beállítása config.yml.
@@ -186,8 +186,8 @@ Messages:
   wwcConfigCacheInvalid: Érvénytelen a fordítói gyorsítótár mérete. Alapértelmezés
     10...
   wwcInventoryErrorPlayer: Hiba észlelt a GUI. A rendszer egy naplót küldött a konzolnak.
-  wwcInventoryError: Hiba történt a (z) {0} felhasználó GUI-jával. Jelentse ezt a problémát
-    a fejlesztőnek.
+  wwcInventoryError: Hiba történt a (z) {0} felhasználó GUI-jával. Jelentse ezt a
+    problémát a fejlesztőnek.
   wwctiOffTarget: 'Elem fordítása le van tiltva: {0}'
   wwctiOffSender: Elem fordítása letiltva.
   wwcItemTranslateTitleStock: Nem lehet lefordítani az alapértelmezett elemneveket.
@@ -345,18 +345,19 @@ Messages:
     0 új portot, vagy írja be a 0 billentyűt, hogy visszatérjen.
   wwcConfigGUISQLPasswordButton: SQL jelszó módosítása
   wwcConfigConversationSQLHostnameSuccess: Sikeresen megváltoztatta az SQL gazdagépnevét.
-  wwcConfigConversationSQLHostnameInput: Az aktuális hosztnév {0}. Írjon be bármi mást,
-    mint 0 új gazdagépnév beállításához, vagy írja be a 0 betűt a visszalépéshez.
+  wwcConfigConversationSQLHostnameInput: Az aktuális hosztnév {0}. Írjon be bármi
+    mást, mint 0 új gazdagépnév beállításához, vagy írja be a 0 betűt a visszalépéshez.
   wwcConfigGUISQLHostnameButton: SQL Hostname módosítása
   wwcConfigConversationSQLOptionalArgsSuccess: Sikeresen megváltoztatta az opcionális
     SQL argumentumokat.
   wwcConfigConversationSQLPasswordSuccess: Sikeresen megváltoztatta az SQL jelszót.
-  wwcConfigConversationSQLPasswordInput: 'Az aktuális jelszó: {0}. Írjon be bármi mást,
-    mint 0 új jelszó beállításához, vagy írja be a 0 betűt a visszalépéshez.'
+  wwcConfigConversationSQLPasswordInput: 'Az aktuális jelszó: {0}. Írjon be bármi
+    mást, mint 0 új jelszó beállításához, vagy írja be a 0 betűt a visszalépéshez.'
   wwcConfigGUIToggleSQLSSLButton: SQL SSL váltása
   wwcConfigConversationSQLUsernameSuccess: Sikeresen megváltoztatta az SQL felhasználónevet.
-  wwcConfigConversationSQLUsernameInput: A jelenlegi felhasználónév {0}. Írjon be bármi
-    mást, mint 0 új felhasználónév beállításához, vagy írja be a 0 betűt, hogy visszatérjen.
+  wwcConfigConversationSQLUsernameInput: A jelenlegi felhasználónév {0}. Írjon be
+    bármi mást, mint 0 új felhasználónév beállításához, vagy írja be a 0 betűt, hogy
+    visszatérjen.
   wwcConfigConversationSQLPortSuccess: Sikeresen megváltoztatta az SQL portot.
   wwcConfigGUISQLUsernameButton: SQL felhasználónév módosítása
   wwcConfigConversationSQLOptionalArgsCleared: Az opcionális argumentumok sikeresen
@@ -449,7 +450,7 @@ Messages:
     kívül hagyni.
   wwcConfigErrorsToIgnoreInvalid: Érvénytelen fordítói hibák figyelmen kívül hagyni
     set config.yml. Alapértelmezések regisztrálása...
-
+  
   wwcConfigConversationIgnoreErrorsSuccess: Sikeresen megváltoztatta a fordítói hibákat,
     hogy figyelmen kívül hagyja a kifejezéseket.
   wwcConfigGUIIgnoreErrorsButton: Hibák módosítása figyelmen kívül hagyásra
@@ -460,7 +461,7 @@ Messages:
     nem ellenőrzi a fordítói hibákat.'
   wwcConfigConversationIgnoreErrorsCleared: Fordító hibák figyelmen kívül hagyni mondatok
     sikeresen törölve.
-
+  
   wwcsActiveTransPrevRate: 'Aktív fordító Korábbi sebességkorlátozási idő: {0}'
   wwcsActiveTransSaved: 'Aktív fordító lemezre mentve: {0}'
   wwcsActiveTransIncoming: 'Aktív fordító Bejövő Chat fordítása: {0}'
@@ -474,4 +475,6 @@ Messages:
   wwcsActiveTransOutgoing: 'Aktív fordító Kimenő csevegés fordítása: {0}'
   wwcsActiveTransItem: 'Aktív fordító fordító elem: {0}'
   wwcsActiveTransEntity: 'Aktív fordító fordító entitás: {0}'
+  wwcSupportedServer: A WorldwideChat inicializálása {0}...
+  wwcSupportedVersion: A {0} verzió funkcióinak engedélyezése...
 
