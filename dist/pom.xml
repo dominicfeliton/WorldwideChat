@@ -26,15 +26,21 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>com.badskater0729.worldwidechat</groupId>
+      <artifactId>WorldwideChat-paper</artifactId>
+      <version>${project.parent.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
-      <version>1.20.1-R0.1-SNAPSHOT</version>
+      <version>1.20.2-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>io.papermc.paper</groupId>
       <artifactId>paper-api</artifactId>
-      <version>1.20.1-R0.1-SNAPSHOT</version>
+      <version>1.20.2-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -155,6 +161,12 @@
             </filter>
             <filter>
               <artifact>com.github.ben-manes.caffeine:caffeine</artifact>
+              <includes>
+                <include>**</include>
+              </includes>
+            </filter>
+            <filter>
+              <artifact>com.badskater0729.worldwidechat:WorldwideChat-paper</artifact>
               <includes>
                 <include>**</include>
               </includes>

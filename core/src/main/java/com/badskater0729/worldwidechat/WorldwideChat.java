@@ -541,12 +541,9 @@ public class WorldwideChat extends JavaPlugin {
 		String type = serverInfo.getKey();
 		String version = serverInfo.getValue();
 
-
 		// Get adapter class name
 		String outputVersion = "";
 		String adapterClassName = "Bukkit";
-		getLogger().info("Server type: " + type);
-		getLogger().info("Server version: " + version);
 		switch (type) {
 			case "Bukkit", "Paper", "Spigot" -> {
 				adapterClassName = "com.badskater0729.worldwidechat." + type + "Adapter";
@@ -578,7 +575,7 @@ public class WorldwideChat extends JavaPlugin {
 			e.printStackTrace();
 			getLogger().severe("Failed to initialize the adapter for type: " + type);
 			getLogger().severe("Please contact the developer if your server platform is supported!");
-			Bukkit.getPluginManager().disablePlugin(this);
+			Bukkit.getPluginManager().disablePlugin(this); // Attempt to disable
 		}
 	}
 
