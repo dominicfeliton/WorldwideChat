@@ -67,30 +67,35 @@ public class CommonRefs {
 			"sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy" };
 	
 	/* Getters */
+	public static LinkedHashMap<String, String> getSupportedServerTypes() {
+		// ALWAYS KEEP NEWEST FORKS FIRST
+		// EX: Bukkit -> Spigot -> Paper
+		LinkedHashMap<String, String> serverTypes = new LinkedHashMap<>();
+		serverTypes.put("Bukkit", "org.bukkit.Bukkit");
+		serverTypes.put("Spigot", "org.spigotmc.SpigotConfig");
+		serverTypes.put("Paper", "com.destroystokyo.paper.PaperWorldConfig");
+
+		//serverTypes.put("BungeeCord", "net.md_5.bungee.api.ProxyServer");
+		//serverTypes.put("Velocity", "com.velocitypowered.proxy.Velocity");
+
+		return serverTypes;
+	}
+
 	/**
-	 * Check server type/version, print to console if unsupported
+	 * Check server type/version
 	 */
 	public static Pair<String, String> getServerInfo() {
 		String serverPlatform = "Unknown";
 		String serverVersion = "";
 
 		/* Find specific server */
-		HashMap<String, String> serverTypes = new HashMap<>();
-		serverTypes.put("Bukkit", "org.bukkit.Bukkit");
-		serverTypes.put("Spigot", "org.spigotmc.SpigotConfig");
-		serverTypes.put("Paper", "com.destroystokyo.paper.PaperWorldConfig");
-
-		serverTypes.put("BungeeCord", "net.md_5.bungee.api.ProxyServer");
-		serverTypes.put("Velocity", "com.velocitypowered.proxy.Velocity");
-
-		for (Map.Entry<String, String> entry : serverTypes.entrySet()) {
+		for (Map.Entry<String, String> entry : getSupportedServerTypes().entrySet()) {
 			try {
 				Class.forName(entry.getValue());
 
 				// We found class but continue loop, may be a fork (Bukkit -> Spigot -> Paper)
 				serverPlatform = entry.getKey();
-			} catch (ClassNotFoundException e) {
-			}
+			} catch (ClassNotFoundException e) {}
 		}
 
 		/* Version check */
@@ -99,14 +104,6 @@ public class CommonRefs {
 			case "Spigot":
 			case "Paper":
 				serverVersion = Bukkit.getServer().getVersion();
-				break;
-			case "BungeeCord":
-				// TODO
-				serverVersion = "";
-				break;
-			case "Velocity":
-				// TODO
-				serverVersion = "";
 				break;
 			case "Folia":
 				// TODO

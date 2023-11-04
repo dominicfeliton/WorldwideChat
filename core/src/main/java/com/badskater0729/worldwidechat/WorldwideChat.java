@@ -1,6 +1,8 @@
 package com.badskater0729.worldwidechat;
 
 import java.io.File;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -75,9 +77,11 @@ public class WorldwideChat extends JavaPlugin {
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
 	public static int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "09082023-2"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "11042023-1"; // MMDDYYYY-revisionNumber
 
 	public static WorldwideChat instance;
+
+	public static ServerAdapter adapter;
 	
 	private BukkitAudiences adventure;
 	private InventoryManager inventoryManager;
@@ -142,11 +146,11 @@ public class WorldwideChat extends JavaPlugin {
 		inventoryManager = new WWCInventoryManager(this); // InventoryManager for SmartInvs API
 		inventoryManager.init(); // Init InventoryManager
 
-		// Load plugin configs, check if they successfully initialized
-		loadPluginConfigs(false);
-
 		// Check current server version
 		checkMCVersion();
+
+		// Load plugin configs, check if they successfully initialized
+		loadPluginConfigs(false);
 
 		// EventHandlers + check for plugins
 		getServer().getPluginManager().registerEvents(new ChatListener(), this);
@@ -177,6 +181,7 @@ public class WorldwideChat extends JavaPlugin {
 		instance = null;
 		supportedMCVersions = null;
 		supportedPluginLangCodes = null;
+		adapter = null;
 
 		// All done.
 		getLogger().info("Disabled WorldwideChat version " + getPluginVersion() + ". Goodbye!");
@@ -531,32 +536,51 @@ public class WorldwideChat extends JavaPlugin {
 	 */
 	private void checkMCVersion() {
 		/* MC Version check */
-		// TODO
+		// Init vars
 		Pair<String, String> serverInfo = getServerInfo();
 		String type = serverInfo.getKey();
 		String version = serverInfo.getValue();
-		debugMsg("Server type: " + type);
-		debugMsg("Server version: " + version);
-		if (type.equals("Bukkit") || type.equals("Spigot") || type.equals("Paper")) {
-			// TODO
-			getLogger().info("##### " + getMsg("wwcSupportedServer", type) + " #####");
-			for (String eaVer: supportedMCVersions) {
-				if (version.contains(eaVer)) {
-					getLogger().info("##### " + getMsg("wwcSupportedVersion", eaVer) + " #####");
-					return;
-				}
+
+
+		// Get adapter class name
+		String outputVersion = "";
+		String adapterClassName = "Bukkit";
+		getLogger().info("Server type: " + type);
+		getLogger().info("Server version: " + version);
+		switch (type) {
+			case "Bukkit", "Paper", "Spigot" -> {
+				adapterClassName = "com.badskater0729.worldwidechat." + type + "Adapter";
+				getLogger().info("##### Detected supported platform: " + type + "... #####");
 			}
-			getLogger().warning("##### " + getMsg("wwcUnsupportedVersion") + " #####");
-			getLogger().warning("##### " + Arrays.toString(supportedMCVersions) + " #####");
-			return;
+			default -> getLogger().warning("##### You are running an unsupported server platform. Defaulting to Bukkit... #####");
 		}
 
-		// Not running a supported server type, default to Bukkit
-		getLogger().warning("##### " + getMsg("wwcUnsupportedServer") + " #####");
+		for (String eaVer: supportedMCVersions) {
+			if (version.contains(eaVer)) {
+				outputVersion = eaVer;
+				getLogger().info("##### Detected supported MC version: " + outputVersion + " #####");
+			}
+		}
+
+		// Not running a supported server version, default to latest
+		if (outputVersion.isEmpty()) {
+			outputVersion = supportedMCVersions[supportedMCVersions.length-1];
+			getLogger().warning("##### Unsupported MC version: " + version + ". Defaulting to " + outputVersion + "... #####");
+		}
+
+		// Load interface
+		try {
+			Class<?> clazz = Class.forName(adapterClassName);
+			Constructor<?> ctor = clazz.getConstructor(String.class); // Assuming the constructor takes a String for eaVer
+			adapter = (ServerAdapter) ctor.newInstance(outputVersion); // Cast to your ServerAdapter interface or appropriate type
+		} catch (ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException |
+				 InvocationTargetException e) {
+			e.printStackTrace();
+			getLogger().severe("Failed to initialize the adapter for type: " + type);
+			getLogger().severe("Please contact the developer if your server platform is supported!");
+			Bukkit.getPluginManager().disablePlugin(this);
+		}
 	}
-
-
-
 
 		/**
           * Checks a sender if they are a player
