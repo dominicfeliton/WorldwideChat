@@ -22,13 +22,19 @@
     <dependency>
       <groupId>com.badskater0729.worldwidechat</groupId>
       <artifactId>WorldwideChat-core</artifactId>
-      <version>${project.parent.version}</version>
+      <version>1.15.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.badskater0729.worldwidechat</groupId>
       <artifactId>WorldwideChat-paper</artifactId>
-      <version>${project.parent.version}</version>
+      <version>1.15.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.badskater0729.worldwidechat</groupId>
+      <artifactId>WorldwideChat-spigot</artifactId>
+      <version>1.15.0</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -167,6 +173,12 @@
             </filter>
             <filter>
               <artifact>com.badskater0729.worldwidechat:WorldwideChat-paper</artifact>
+              <includes>
+                <include>**</include>
+              </includes>
+            </filter>
+            <filter>
+              <artifact>com.badskater0729.worldwidechat:WorldwideChat-spigot</artifact>
               <includes>
                 <include>**</include>
               </includes>
