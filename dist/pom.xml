@@ -70,7 +70,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>3.5.1</version>
         <configuration>
           <minimizeJar>true</minimizeJar>
           <createDependencyReducedPom>false</createDependencyReducedPom>
@@ -120,7 +120,7 @@
               <include>mysql:*</include>
               <include>com.github.ben-manes.caffeine:caffeine</include>
               <include>com.squareup.okio:okio-jvm</include>
-              <include>org.mongodb:mongo-java-driver</include>
+              <include>org.mongodb:*</include>
               <include>com.deepl.api:*</include>
             </includes>
           </artifactSet>

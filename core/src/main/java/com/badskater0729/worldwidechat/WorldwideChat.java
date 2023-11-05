@@ -547,7 +547,7 @@ public class WorldwideChat extends JavaPlugin {
 		switch (type) {
 			case "Bukkit", "Paper", "Spigot" -> {
 				adapterClassName = "com.badskater0729.worldwidechat." + type + "Adapter";
-				getLogger().info("##### Detected supported platform: " + type + "... #####");
+				getLogger().info("##### Detected supported platform: " + type + " #####");
 			}
 			default -> getLogger().warning("##### You are running an unsupported server platform. Defaulting to Bukkit... #####");
 		}

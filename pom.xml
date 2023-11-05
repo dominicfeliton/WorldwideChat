@@ -30,12 +30,12 @@
     <dependency>
       <groupId>com.ibm.watson</groupId>
       <artifactId>ibm-watson</artifactId>
-      <version>10.1.0</version>
+      <version>11.0.1</version>
     </dependency>
     <dependency>
       <groupId>com.ibm.cloud</groupId>
       <artifactId>sdk-core</artifactId>
-      <version>9.17.6</version>
+      <version>9.18.7</version>
     </dependency>
     <dependency>
       <groupId>com.google.code.gson</groupId>
@@ -45,32 +45,32 @@
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
-      <version>2.13.0</version>
+      <version>2.15.0</version>
     </dependency>
     <dependency>
       <groupId>com.google.cloud</groupId>
       <artifactId>google-cloud-translate</artifactId>
-      <version>2.14.0</version>
+      <version>2.29.0</version>
     </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-java-sdk-translate</artifactId>
-      <version>1.12.448</version>
+      <version>1.12.580</version>
     </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-java-sdk-s3</artifactId>
-      <version>1.12.448</version>
+      <version>1.12.580</version>
     </dependency>
     <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>
-      <version>1.16.1</version>
+      <version>1.16.2</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-artifact</artifactId>
-      <version>3.9.4</version>
+      <version>3.9.5</version>
     </dependency>
     <dependency>
       <groupId>commons-lang</groupId>
@@ -86,12 +86,12 @@
     <dependency>
       <groupId>com.mysql</groupId>
       <artifactId>mysql-connector-j</artifactId>
-      <version>8.1.0</version>
+      <version>8.2.0</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-text</artifactId>
-      <version>1.10.0</version>
+      <version>1.11.0</version>
     </dependency>
     <dependency>
       <groupId>com.github.ben-manes.caffeine</groupId>
@@ -100,13 +100,13 @@
     </dependency>
     <dependency>
       <groupId>org.mongodb</groupId>
-      <artifactId>mongo-java-driver</artifactId>
-      <version>3.12.13</version>
+      <artifactId>mongodb-driver-sync</artifactId>
+      <version>4.11.0</version>
     </dependency>
     <dependency>
       <groupId>com.deepl.api</groupId>
       <artifactId>deepl-java</artifactId>
-      <version>1.3.0</version>
+      <version>1.4.0</version>
     </dependency>
   </dependencies>
 
