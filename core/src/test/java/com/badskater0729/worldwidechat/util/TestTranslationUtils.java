@@ -1,7 +1,6 @@
 package com.badskater0729.worldwidechat.util;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static com.badskater0729.worldwidechat.util.CommonRefs.translateText;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
 
@@ -15,6 +14,8 @@ public class TestTranslationUtils {
 	private PlayerMock playerMock;
 	private PlayerMock secondPlayerMock;
 
+	private CommonRefs refs = new CommonRefs();
+
 	public TestTranslationUtils(ServerMock server, WorldwideChat plugin, PlayerMock p1, PlayerMock p2) {
 		this.server = server;
 		this.plugin = plugin;
@@ -24,24 +25,24 @@ public class TestTranslationUtils {
 
 	public void testTranslationFunctionSourceTarget() {
 		playerMock.performCommand("worldwidechat:wwct en es");
-		assertTrue(translateText("Hello, how are you?", playerMock).equals("Hola, como estas?"));
+		assertTrue(refs.translateText("Hello, how are you?", playerMock).equals("Hola, como estas?"));
 	}
 
 	public void testTranslationFunctionTarget() {
 		playerMock.performCommand("worldwidechat:wwct es");
-		assertTrue(translateText("How many diamonds do you have?", playerMock)
+		assertTrue(refs.translateText("How many diamonds do you have?", playerMock)
 				.equals("Cuantos diamantes tienes?"));
 	}
 
 	public void testTranslationFunctionSourceTargetOther() {
 		playerMock.performCommand("worldwidechat:wwct player2 en es");
 		assertTrue(
-				translateText("Hello, how are you?", secondPlayerMock).equals("Hola, como estas?"));
+				refs.translateText("Hello, how are you?", secondPlayerMock).equals("Hola, como estas?"));
 	}
 
 	public void testTranslationFunctionTargetOther() {
 		playerMock.performCommand("worldwidechat:wwct player2 es");
-		assertTrue(translateText("How many diamonds do you have?", secondPlayerMock)
+		assertTrue(refs.translateText("How many diamonds do you have?", secondPlayerMock)
 				.equals("Cuantos diamantes tienes?"));
 	}
 

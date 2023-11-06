@@ -18,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import javax.net.ssl.HttpsURLConnection;
 
+import com.badskater0729.worldwidechat.util.CommonRefs;
 import com.google.gson.Gson;
 import org.apache.commons.lang3.StringUtils;
 
@@ -27,12 +28,9 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
-
 public class LibreTranslation extends BasicTranslation {
 
+	CommonRefs refs = new CommonRefs();
 	public LibreTranslation(String textToTranslate, String inputLang, String outputLang) {
 		super(textToTranslate, inputLang, outputLang);
 	}
@@ -120,9 +118,9 @@ public class LibreTranslation extends BasicTranslation {
 			 * instead of full names (English, Spanish) */
 			if (!isInitializing) {
 				if (!inputLang.equals("None")) {
-					inputLang = getSupportedTranslatorLang(inputLang, "in").getLangCode();
+					inputLang = refs.getSupportedTranslatorLang(inputLang, "in").getLangCode();
 				}
-				outputLang = getSupportedTranslatorLang(outputLang, "out").getLangCode();
+				outputLang = refs.getSupportedTranslatorLang(outputLang, "out").getLangCode();
 			}
 			
 			/* Detect inputLang */
@@ -154,7 +152,7 @@ public class LibreTranslation extends BasicTranslation {
 					DetectResponse[] outArray = gson.fromJson(response, DetectResponse[].class);
 					inputLang = outArray[0].getLanguage();
 				} else {
-					debugMsg("Failed..." + statusCode);
+					refs.debugMsg("Failed..." + statusCode);
 					checkError(statusCode);
 				}
 			}
@@ -185,7 +183,7 @@ public class LibreTranslation extends BasicTranslation {
 
 				return gson.fromJson(response, TranslateResponse.class).getTranslatedText();
 			} else {
-				debugMsg("Failed..." + statusCode);
+				refs.debugMsg("Failed..." + statusCode);
 				checkError(statusCode);
 			}
 			return textToTranslate;
@@ -198,9 +196,9 @@ public class LibreTranslation extends BasicTranslation {
 		case 403:
 		case 429:
 		case 500:
-			throw new Exception(getMsg("libreHttp" + in));
+			throw new Exception(refs.getMsg("libreHttp" + in));
 		default:
-			throw new Exception(getMsg("libreHttpUnknown", in + ""));
+			throw new Exception(refs.getMsg("libreHttpUnknown", in + ""));
 		}
 	}
 }

@@ -14,13 +14,11 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.sendNoConsoleChatMsg;
-
+import com.badskater0729.worldwidechat.util.CommonRefs;
 public class WWCTranslateRateLimit extends BasicCommand {
 
 	private WorldwideChat main = WorldwideChat.instance;
+	private CommonRefs refs = new CommonRefs();
 
 	private boolean isConsoleSender = sender instanceof ConsoleCommandSender;
 	
@@ -34,16 +32,16 @@ public class WWCTranslateRateLimit extends BasicCommand {
 		if (args.length > 2) {
 			// Not enough/too many args
 			final TextComponent invalidArgs = Component.text()
-							.content(getMsg("wwctInvalidArgs"))
+							.content(refs.getMsg("wwctInvalidArgs"))
 							.color(NamedTextColor.RED)
 					.build();
-			sendMsg(sender, invalidArgs);
+			refs.sendMsg(sender, invalidArgs);
 			return false;
 		}
 
 		/* Disable existing personal rate limit */
 		if (args.length == 0 && isConsoleSender) {
-			return sendNoConsoleChatMsg(sender);
+			return refs.sendNoConsoleChatMsg(sender);
 		} else if ((args.length == 0 || (args.length == 1 && args[0].equalsIgnoreCase(sender.getName())))) {
 			return changeRateLimit(sender.getName(), 0);
 		}
@@ -51,7 +49,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 		/* Set personal rate limit */
 		if (args.length == 1 && StringUtils.isNumeric(args[0])) {
 			if (isConsoleSender) {
-				return sendNoConsoleChatMsg(sender);
+				return refs.sendNoConsoleChatMsg(sender);
 			}
 			if (StringUtils.isNumeric(args[0])) {
 				return changeRateLimit(sender.getName(), Integer.parseInt(args[0]));
@@ -88,10 +86,10 @@ public class WWCTranslateRateLimit extends BasicCommand {
 			/* If translator is null, determine sender and send correct message */
 			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(inName)) {
 				final TextComponent notAPlayer = Component.text()
-								.content(getMsg("wwctrlNotATranslator"))
+								.content(refs.getMsg("wwctrlNotATranslator"))
 								.color(NamedTextColor.RED)
 						.build();
-				sendMsg(sender, notAPlayer);
+				refs.sendMsg(sender, notAPlayer);
 				return false;
 			}
 			playerNotFoundMessage(sender, inName);
@@ -109,10 +107,10 @@ public class WWCTranslateRateLimit extends BasicCommand {
 				if (!(currTranslator.getRateLimit() > 0)) {
 					/* Rate limit already disabled */
 					final TextComponent rateLimitAlreadyOff = Component.text()
-									.content(getMsg("wwctrlRateLimitAlreadyOffSender"))
+									.content(refs.getMsg("wwctrlRateLimitAlreadyOffSender"))
 									.color(NamedTextColor.YELLOW)
 							.build();
-					sendMsg(inPlayer, rateLimitAlreadyOff);
+					refs.sendMsg(inPlayer, rateLimitAlreadyOff);
 				} else {
 					/* Disable rate limit */
 					currTranslator.setRateLimit(0);
@@ -126,28 +124,28 @@ public class WWCTranslateRateLimit extends BasicCommand {
 				/* Enable rate limit */
 				currTranslator.setRateLimit(newLimit);
 				final TextComponent rateLimitSet = Component.text()
-								.content(getMsg("wwctrlRateLimitSetTarget", new String[] {inPlayer.getName(), newLimit + ""}))
+								.content(refs.getMsg("wwctrlRateLimitSetTarget", new String[] {inPlayer.getName(), newLimit + ""}))
 								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
-				sendMsg(sender, rateLimitSet);
+				refs.sendMsg(sender, rateLimitSet);
 				enableRateLimitMessage(inPlayer, newLimit);
 			} else {
 				/* Disable rate limit */
 				if (!(currTranslator.getRateLimit() > 0)) {
 					/* Rate limit already disabled */
 					final TextComponent rateLimitAlreadyOff = Component.text()
-									.content(getMsg("wwctrlRateLimitAlreadyOffTarget", inPlayer.getName()))
+									.content(refs.getMsg("wwctrlRateLimitAlreadyOffTarget", inPlayer.getName()))
 									.color(NamedTextColor.YELLOW)
 							.build();
-					sendMsg(sender, rateLimitAlreadyOff);
+					refs.sendMsg(sender, rateLimitAlreadyOff);
 				} else {
 					/* Disable rate limit */
 					currTranslator.setRateLimit(0);
 					final TextComponent rateLimitOffReceiver = Component.text()
-									.content(getMsg("wwctrlRateLimitOffTarget", inPlayer.getName()))
+									.content(refs.getMsg("wwctrlRateLimitOffTarget", inPlayer.getName()))
 									.color(NamedTextColor.LIGHT_PURPLE)
 							.build();
-					sendMsg(sender, rateLimitOffReceiver);
+					refs.sendMsg(sender, rateLimitOffReceiver);
 					disableRateLimitMessage(inPlayer);
 				}
 			}
@@ -157,34 +155,34 @@ public class WWCTranslateRateLimit extends BasicCommand {
 	
 	private void disableRateLimitMessage(Player inPlayer) {
 		final TextComponent rateLimitOffReceiver = Component.text()
-						.content(getMsg("wwctrlRateLimitOffSender"))
+						.content(refs.getMsg("wwctrlRateLimitOffSender"))
 						.color(NamedTextColor.LIGHT_PURPLE)
 				.build();
-		sendMsg(inPlayer, rateLimitOffReceiver);
+		refs.sendMsg(inPlayer, rateLimitOffReceiver);
 	}
 	
 	private void enableRateLimitMessage(Player inPlayer, int limit) {
 		final TextComponent rateLimitSet = Component.text()
-						.content(getMsg("wwctrlRateLimitSetSender", limit + ""))
+						.content(refs.getMsg("wwctrlRateLimitSetSender", limit + ""))
 						.color(NamedTextColor.LIGHT_PURPLE)
 				.build();
-		sendMsg(inPlayer, rateLimitSet);
+		refs.sendMsg(inPlayer, rateLimitSet);
 	}
 	
 	private void rateLimitBadIntMessage(CommandSender sender) {
 		final TextComponent rateLimitOffReceiver = Component.text()
-						.content(getMsg("wwctrlRateLimitBadInt"))
+						.content(refs.getMsg("wwctrlRateLimitBadInt"))
 						.color(NamedTextColor.RED)
 				.build();
-		sendMsg(sender, rateLimitOffReceiver);
+		refs.sendMsg(sender, rateLimitOffReceiver);
 	}
 	
 	private void playerNotFoundMessage(CommandSender sender, String inName) {
 		final TextComponent notAPlayer = Component.text()
-						.content(getMsg("wwctrlPlayerNotFound", inName))
+						.content(refs.getMsg("wwctrlPlayerNotFound", inName))
 						.color(NamedTextColor.RED)
 				.build();
-		sendMsg(sender, notAPlayer);
+		refs.sendMsg(sender, notAPlayer);
 	}
 	
 }

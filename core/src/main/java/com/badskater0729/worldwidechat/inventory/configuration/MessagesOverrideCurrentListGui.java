@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -22,24 +23,26 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+import com.badskater0729.worldwidechat.util.CommonRefs;
 
 public class MessagesOverrideCurrentListGui implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
+	private CommonRefs refs = new CommonRefs();
+
+	private WWCInventoryManager invManager = main.getInventoryManager();
 	
-	public static final SmartInventory overrideMessagesSettings = SmartInventory.builder().id("overrideMessagesMenu")
-			.provider(new MessagesOverrideCurrentListGui()).size(6, 9)
-			.manager(WorldwideChat.instance.getInventoryManager())
-			.title(ChatColor.BLUE + getMsg("wwcConfigGUIChatMessagesOverrideSettings"))
+	public final SmartInventory overrideMessagesSettings = SmartInventory.builder().id("overrideMessagesMenu")
+			.provider(this).size(6, 9)
+			.manager(invManager)
+			.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettings"))
 	        .build();
 	
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		try {
 			/* Green stained glass borders */
-			WWCInventoryManager.setBorders(contents, XMaterial.GREEN_STAINED_GLASS_PANE);
+			invManager.setBorders(contents, XMaterial.GREEN_STAINED_GLASS_PANE);
 			
 			/* Pagination */
 			Pagination pagination = contents.pagination();
@@ -55,7 +58,7 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 			}
 			
 			if (!overridesFromConfig.isEmpty()) {
-				debugMsg("Adding existing overrides to inventory! Amount of overrides: " + currentOverrides.length);
+				refs.debugMsg("Adding existing overrides to inventory! Amount of overrides: " + currentOverrides.length);
 				int currSpot = 0;
 				for (Map.Entry<String, String> entry : overridesFromConfig.entrySet()) {
 					ItemStack currentEntry = XMaterial.WRITABLE_BOOK.parseItem();
@@ -63,13 +66,13 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 					
 					currentEntryMeta.setDisplayName(entry.getKey());
 					ArrayList<String> lore = new ArrayList<>();
-					lore.add(getMsg("wwcConfigGUIMessagesOverrideOriginalLabel") + ": " + (messagesConfig.getString("Messages." + entry.getKey()) != null ? messagesConfig.getString("Messages." + entry.getKey()) : getMsg("wwcConfigGUIChatMessagesDeadOverride")));
-					lore.add(getMsg("wwcConfigGUIMessagesOverrideCustomLabel") + ": " + entry.getValue());
+					lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideOriginalLabel") + ": " + (messagesConfig.getString("Messages." + entry.getKey()) != null ? messagesConfig.getString("Messages." + entry.getKey()) : refs.getMsg("wwcConfigGUIChatMessagesDeadOverride")));
+					lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideCustomLabel") + ": " + entry.getValue());
 					currentEntryMeta.setLore(lore);
 					currentEntry.setItemMeta(currentEntryMeta);
 					currentOverrides[currSpot] = ClickableItem.of(currentEntry, e -> {
 						// Open Specific Override GUI
-						MessagesOverrideModifyGui.getModifyCurrentOverride(entry.getKey()).open(player);
+						new MessagesOverrideModifyGui(entry.getKey()).getModifyCurrentOverride().open(player);
 					});
 					currSpot++;
 				}
@@ -82,23 +85,23 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 			
 			/* Bottom Left Option: Previous Page */
 			if (!pagination.isFirst()) {
-				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous");
+				invManager.setCommonButton(5, 2, player, contents, "Previous");
 			} else {
-				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv});
+				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv});
 			}
 			
 			/* Bottom Middle Option: Add new override */
-			WWCInventoryManager.genericOpenSubmenuButton(5, 4, player, contents, "wwcConfigGUIChatMessagesOverrideNewButton", MessagesOverridePossibleListGui.overrideNewMessageSettings);
+			invManager.genericOpenSubmenuButton(5, 4, player, contents, "wwcConfigGUIChatMessagesOverrideNewButton", new MessagesOverridePossibleListGui().overrideNewMessageSettings);
 			
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {
-				WWCInventoryManager.setCommonButton(5, 6, player, contents, "Next");
+				invManager.setCommonButton(5, 6, player, contents, "Next");
 			}
 			
 			/* Last Option: Page Number */
-			WWCInventoryManager.setCommonButton(5, 8, player, contents, "Page Number", new String[] {pagination.getPage() + 1 + ""});
+			invManager.setCommonButton(5, 8, player, contents, "Page Number", new String[] {pagination.getPage() + 1 + ""});
 		} catch (Exception e) {
-			WWCInventoryManager.inventoryError(player, e);
+			invManager.inventoryError(player, e);
 		}
 	}
 

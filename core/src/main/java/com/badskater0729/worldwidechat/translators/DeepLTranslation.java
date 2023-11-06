@@ -1,8 +1,5 @@
 package com.badskater0729.worldwidechat.translators;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -13,6 +10,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.apache.commons.lang3.StringUtils;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
@@ -47,6 +45,7 @@ public class DeepLTranslation extends BasicTranslation {
 	}
 
 	private class translationTask implements Callable<String> {
+		CommonRefs refs = new CommonRefs();
 		@Override
 		public String call() throws Exception {
 			/* Initialize translation object again */
@@ -78,9 +77,9 @@ public class DeepLTranslation extends BasicTranslation {
 			 * instead of full names (English, Spanish) */
 			if (!isInitializing) {
 				if (!inputLang.equals("None")) {
-					inputLang = getSupportedTranslatorLang(inputLang, "in").getLangCode();
+					inputLang = refs.getSupportedTranslatorLang(inputLang, "in").getLangCode();
 				}
-				outputLang = getSupportedTranslatorLang(outputLang, "out").getLangCode();
+				outputLang = refs.getSupportedTranslatorLang(outputLang, "out").getLangCode();
 			}
 
 			/* If inputLang set to None, set as null for translateText() */

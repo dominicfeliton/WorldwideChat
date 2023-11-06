@@ -18,27 +18,26 @@ import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.event.HoverEvent;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.translateText;
-import static com.badskater0729.worldwidechat.util.CommonRefs.runAsync;
-import static com.badskater0729.worldwidechat.util.CommonRefs.serverIsStopping;
+import com.badskater0729.worldwidechat.util.CommonRefs;
 
 public class ChatListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
+	private CommonRefs refs = new CommonRefs();
 	
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
 		try {
-			/* Original WWC functionality/Outgoing Messages */
+			/* Original WWC functionality/Translate Outgoing Messages */
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
 			String currInLang = currTranslator.getInLangCode();
 			String currOutLang = currTranslator.getOutLangCode();
 			if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
 					|| (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
-				event.setMessage(translateText(event.getMessage(), event.getPlayer()));
+				event.setMessage(refs.translateText(event.getMessage(), event.getPlayer()));
 			}
 			
-			/* New WWC functionality/Incoming Messages */
+			/* New WWC functionality/Translate Incoming Messages */
 			List<Player> unmodifiedMessageRecipients = new ArrayList<Player>();
 			for (Player eaRecipient : event.getRecipients()) {
 				ActiveTranslator testTranslator = main.getActiveTranslator(eaRecipient.getUniqueId());
@@ -52,7 +51,7 @@ public class ChatListener implements Listener {
 					BukkitRunnable chatHover = new BukkitRunnable() {
 						@Override
 						public void run() {
-							String translation = translateText(event.getMessage() + " (Translated)", eaRecipient);
+							String translation = refs.translateText(event.getMessage() + " (Translated)", eaRecipient);
 							String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
 							
 							TextComponent hoverOutMessage = Component.text()
@@ -69,7 +68,7 @@ public class ChatListener implements Listener {
 							} catch (IllegalStateException e) {}
 						}
 					};
-					runAsync(chatHover);
+					refs.runAsync(chatHover);
 				} else {
 					unmodifiedMessageRecipients.add(eaRecipient);
 				}
@@ -77,7 +76,7 @@ public class ChatListener implements Listener {
 			event.getRecipients().clear();
 			event.getRecipients().addAll(unmodifiedMessageRecipients);
 		} catch (Exception e) {
-			if (!serverIsStopping()) {
+			if (!refs.serverIsStopping()) {
 				throw e;
 			}
 		}

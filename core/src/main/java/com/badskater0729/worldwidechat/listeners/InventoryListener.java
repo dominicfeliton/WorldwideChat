@@ -1,5 +1,6 @@
 package com.badskater0729.worldwidechat.listeners;
 
+import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -15,13 +16,11 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.runSync;
-
 public class InventoryListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
+
+	private CommonRefs refs = new CommonRefs();
 
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInventoryCloseEvent(InventoryCloseEvent e) {
@@ -33,14 +32,14 @@ public class InventoryListener implements Listener {
 				if (main.isPlayerUsingGUI(currPlayer.getUniqueId().toString()) && currPlayer.getOpenInventory().getType() != InventoryType.CHEST
 						&& !((Player) currPlayer).isConversing()) {
 					final TextComponent reloadPlease = Component.text()
-									.content(getMsg("wwcConfigGUIChangesNotSaved"))
+									.content(refs.getMsg("wwcConfigGUIChangesNotSaved"))
 									.color(NamedTextColor.YELLOW)
 							.build();
-					sendMsg(currPlayer, reloadPlease);
+					refs.sendMsg(currPlayer, reloadPlease);
 					main.removePlayerUsingConfigurationGUI((Player) currPlayer);
 				}
 			}
 		};
-		runSync(true, 10, out);
+		refs.runSync(true, 10, out);
 	}
 }

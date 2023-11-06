@@ -10,8 +10,7 @@ import com.badskater0729.worldwidechat.inventory.configuration.MenuGui.CONFIG_GU
 
 import net.md_5.bungee.api.ChatColor;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.genericConfigConvo;;
+import com.badskater0729.worldwidechat.util.CommonRefs;
 
 public class LibreSettingsConvos {
 
@@ -21,13 +20,15 @@ public class LibreSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
+			CommonRefs refs = new CommonRefs();
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationLibreTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.libreAPIKey"));
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationLibreTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.libreAPIKey"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLibreTranslateApiKeySuccess", 
+			CommonRefs refs = new CommonRefs();
+			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLibreTranslateApiKeySuccess",
 					new String[] {"Translator.libreAPIKey", "Translator.useLibreTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv);
 		}
 	}
@@ -36,13 +37,15 @@ public class LibreSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
+			CommonRefs refs = new CommonRefs();
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationLibreURLInput", main.getConfigManager().getMainConfig().getString("Translator.libreURL"));
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationLibreURLInput", main.getConfigManager().getMainConfig().getString("Translator.libreURL"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLibreURLSuccess", 
+			CommonRefs refs = new CommonRefs();
+			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLibreURLSuccess",
 					new String[] {"Translator.libreURL", "Translator.useLibreTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv);
 		}
 	}

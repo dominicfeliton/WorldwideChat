@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.UUID;
 
+import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.conversations.ConversationFactory;
@@ -27,50 +28,49 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.*;
-
 public class WWCInventoryManager extends InventoryManager {
 	
 	private static WorldwideChat main = WorldwideChat.instance;
+	private CommonRefs refs = new CommonRefs();
 	
-	public WWCInventoryManager(JavaPlugin plugin) {
-		super(plugin);
+	public WWCInventoryManager() {
+		super(main);
 	}
 	
-	public static void checkIfPlayerIsMissing(Player player, String targetPlayerUUID) {
+	public void checkIfPlayerIsMissing(Player player, String targetPlayerUUID) {
 		if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && Bukkit.getPlayer(UUID.fromString(targetPlayerUUID)) == null) {
 			// Target player no longer online
 			player.closeInventory();
 			final TextComponent targetPlayerDC = Component.text()
-							.content(getMsg("wwctGUITargetPlayerNull"))
+							.content(refs.getMsg("wwctGUITargetPlayerNull"))
 							.color(NamedTextColor.RED).decorate(TextDecoration.ITALIC)
 					.build();
-			sendMsg(player, targetPlayerDC);
+			refs.sendMsg(player, targetPlayerDC);
 		}
 	}
 	
-	public static void inventoryError(Player player, Exception e) {
+	public void inventoryError(Player player, Exception e) {
 		final TextComponent inventoryError = Component.text()
-						.content(getMsg("wwcInventoryErrorPlayer"))
+						.content(refs.getMsg("wwcInventoryErrorPlayer"))
 						.color(NamedTextColor.RED)
 				.build();
-		sendMsg(player, inventoryError);
-		main.getLogger().severe(getMsg("wwcInventoryError", player.getName()));
+		refs. sendMsg(player, inventoryError);
+		main.getLogger().severe(refs.getMsg("wwcInventoryError", player.getName()));
 		e.printStackTrace();
 		player.closeInventory();
 	}
 	
-	public static void setCommonButton(int x, int y, Player player, InventoryContents contents, String buttonType) {
+	public void setCommonButton(int x, int y, Player player, InventoryContents contents, String buttonType) {
 		setCommonButton(x, y, player, contents, buttonType, new String[0]);
 	}
 	
-	public static void setCommonButton(int x, int y, Player player, InventoryContents contents, String buttonType, Object[] args) {
+	public void setCommonButton(int x, int y, Player player, InventoryContents contents, String buttonType, Object[] args) {
 		ItemStack pageButton = XMaterial.WHITE_STAINED_GLASS.parseItem();
 		ItemMeta pageMeta = pageButton.getItemMeta();
 		if (buttonType.equalsIgnoreCase("Previous")) {
 			pageButton = XMaterial.RED_STAINED_GLASS.parseItem();
 			pageMeta.setDisplayName(ChatColor.RED
-					+ getMsg("wwcConfigGUIPreviousPageButton"));
+					+ refs.getMsg("wwcConfigGUIPreviousPageButton"));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
 				if (!contents.pagination().isFirst()) {
@@ -82,7 +82,7 @@ public class WWCInventoryManager extends InventoryManager {
 		} else if (buttonType.equalsIgnoreCase("Next")) {
 			pageButton = XMaterial.GREEN_STAINED_GLASS.parseItem();
 			pageMeta.setDisplayName(ChatColor.GREEN
-					+ getMsg("wwcConfigGUINextPageButton"));
+					+ refs.getMsg("wwcConfigGUINextPageButton"));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
 				if (!contents.pagination().isLast()) {
@@ -94,9 +94,9 @@ public class WWCInventoryManager extends InventoryManager {
 		} else if (buttonType.equalsIgnoreCase("Page Number")) {
 			pageButton = XMaterial.LILY_PAD.parseItem();
 			pageMeta.setDisplayName(ChatColor.AQUA
-					+ getMsg("wwcGUIPageNumber", (Arrays.copyOf(args, args.length, String[].class))));
+					+ refs.getMsg("wwcGUIPageNumber", (Arrays.copyOf(args, args.length, String[].class))));
 			if (args[0].equals("1")) {
-				WWCInventoryManager.addGlowEffect(pageMeta);
+				addGlowEffect(pageMeta);
 			}
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.empty(pageButton));
@@ -104,7 +104,7 @@ public class WWCInventoryManager extends InventoryManager {
 			pageButton = XMaterial.BARRIER.parseItem();
 			pageMeta = pageButton.getItemMeta();
 			pageMeta.setDisplayName(ChatColor.RED
-					+ getMsg("wwcConfigGUIQuitButton"));
+					+ refs.getMsg("wwcConfigGUIQuitButton"));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
 				main.reload(player, true);
@@ -115,7 +115,7 @@ public class WWCInventoryManager extends InventoryManager {
 		}
 	}
 	
-	public static void setBorders(InventoryContents contents, XMaterial inMaterial) {
+	public void setBorders(InventoryContents contents, XMaterial inMaterial) {
 		ItemStack customBorders = inMaterial.parseItem();
 		ItemMeta borderMeta = customBorders.getItemMeta();
 		borderMeta.setDisplayName(" ");
@@ -123,11 +123,11 @@ public class WWCInventoryManager extends InventoryManager {
 		contents.fillBorders(ClickableItem.empty(customBorders));
 	}
 	
-	public static void genericOpenSubmenuButton(int x, int y, Player player, InventoryContents contents, String buttonName, SmartInventory invToOpen) {
+	public void genericOpenSubmenuButton(int x, int y, Player player, InventoryContents contents, String buttonName, SmartInventory invToOpen) {
 		genericOpenSubmenuButton(x, y, player, contents, null, buttonName, invToOpen);
 	}
 	
-	public static void genericOpenSubmenuButton(int x, int y, Player player, InventoryContents contents, Boolean preCondition, String buttonName, SmartInventory invToOpen) {
+	public void genericOpenSubmenuButton(int x, int y, Player player, InventoryContents contents, Boolean preCondition, String buttonName, SmartInventory invToOpen) {
 		ItemStack button;
 		if (preCondition != null) {
 			if (preCondition) {
@@ -140,18 +140,18 @@ public class WWCInventoryManager extends InventoryManager {
 		}
 		ItemMeta buttonMeta = button.getItemMeta();
 		buttonMeta.setDisplayName(ChatColor.GOLD
-				+ getMsg(buttonName));
+				+ refs.getMsg(buttonName));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			invToOpen.open(player);
 		}));
 	}
 	
-	public static void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName) {
+	public void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName) {
 		genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, new ArrayList<>());
 	}
 	
-	public static void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName, ArrayList<String> configValsToDisable) {
+	public void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName, ArrayList<String> configValsToDisable) {
 		ItemStack button = XMaterial.BEDROCK.parseItem();
 		if (main.getConfigManager().getMainConfig().getBoolean(configValueName)) {
 			button = XMaterial.EMERALD_BLOCK.parseItem();
@@ -159,7 +159,7 @@ public class WWCInventoryManager extends InventoryManager {
 			button = XMaterial.REDSTONE_BLOCK.parseItem();
 		}
 		ItemMeta buttonMeta = button.getItemMeta();
-		buttonMeta.setDisplayName(ChatColor.GOLD + getMsg(configButtonName));
+		buttonMeta.setDisplayName(ChatColor.GOLD + refs.getMsg(configButtonName));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			main.addPlayerUsingConfigurationGUI(player);
@@ -167,32 +167,32 @@ public class WWCInventoryManager extends InventoryManager {
 					!(main.getConfigManager().getMainConfig().getBoolean(configValueName)));
             for (String eaKey : configValsToDisable) {
 				if (eaKey.equals(configValueName)) continue;
-                debugMsg("Disabling " + eaKey + "!");
+                refs.debugMsg("Disabling " + eaKey + "!");
                 main.getConfigManager().getMainConfig().set(eaKey, false);
             }
             final TextComponent successfulChange = Component.text()
-							.content(getMsg(messageOnChange))
+							.content(refs.getMsg(messageOnChange))
 							.color(NamedTextColor.GREEN)
 					.build();
-			sendMsg(player, successfulChange);
+			refs.sendMsg(player, successfulChange);
 			genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, configValsToDisable);
 		}));
 	}
 	
-	public static void genericConversationButton(int x, int y, Player player, InventoryContents contents, Prompt inPrompt, XMaterial inMaterial, String buttonName) {
+	public void genericConversationButton(int x, int y, Player player, InventoryContents contents, Prompt inPrompt, XMaterial inMaterial, String buttonName) {
 		ConversationFactory genericConversation = new ConversationFactory(main).withModality(true).withTimeout(600)
 				.withFirstPrompt(inPrompt);
 		ItemStack button = inMaterial.parseItem();
 		ItemMeta buttonMeta = button.getItemMeta();
 		buttonMeta.setDisplayName(ChatColor.GOLD
-				+ getMsg(buttonName));
+				+ refs.getMsg(buttonName));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			genericConversation.buildConversation(player).begin();
 		}));
 	}
 	
-	public static void addGlowEffect(ItemMeta meta) {
+	public void addGlowEffect(ItemMeta meta) {
 		meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 		meta.addEnchant(XEnchantment.matchXEnchantment("power").get().getEnchant(), 1, false);
 	}

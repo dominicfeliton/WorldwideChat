@@ -10,54 +10,57 @@ import com.badskater0729.worldwidechat.inventory.configuration.MenuGui.CONFIG_GU
 
 import net.md_5.bungee.api.ChatColor;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.genericConfigConvo;
+import com.badskater0729.worldwidechat.util.CommonRefs;
 
 public class AmazonSettingsConvos {
 
 	private static WorldwideChat main = WorldwideChat.instance;
 	
 	public static class AccessKey extends StringPrompt {
+		private CommonRefs refs = new CommonRefs();
+
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationAmazonTranslateAccessKeyInput", main.getConfigManager().getMainConfig().getString("Translator.amazonAccessKey"));
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAmazonTranslateAccessKeyInput", main.getConfigManager().getMainConfig().getString("Translator.amazonAccessKey"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateAccessKeySuccess", 
+			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateAccessKeySuccess",
 					new String[] {"Translator.amazonAccessKey", "Translator.useAmazonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv);
 		}
 	}
 	
 	public static class Region extends StringPrompt {
+		private CommonRefs refs = new CommonRefs();
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationAmazonTranslateRegionInput", main.getConfigManager().getMainConfig().getString("Translator.amazonRegion"));
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAmazonTranslateRegionInput", main.getConfigManager().getMainConfig().getString("Translator.amazonRegion"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateRegionSuccess", 
+			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateRegionSuccess",
 					new String[] {"Translator.amazonRegion", "Translator.useAmazonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv);
 		}
 	}
 	
 	public static class SecretKey extends StringPrompt {
+		private CommonRefs refs = new CommonRefs();
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationAmazonTranslateSecretKeyInput", main.getConfigManager().getMainConfig().getString("Translator.amazonSecretKey"));
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAmazonTranslateSecretKeyInput", main.getConfigManager().getMainConfig().getString("Translator.amazonSecretKey"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateSecretKeySuccess", 
+			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationAmazonTranslateSecretKeySuccess",
 					new String[] {"Translator.amazonSecretKey", "Translator.useAmazonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv);
 		}
 	}

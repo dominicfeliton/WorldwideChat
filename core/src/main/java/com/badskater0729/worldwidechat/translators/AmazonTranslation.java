@@ -19,11 +19,8 @@ import com.amazonaws.services.translate.model.ListLanguagesRequest;
 import com.amazonaws.services.translate.model.TranslateTextRequest;
 import com.amazonaws.services.translate.model.TranslateTextResult;
 import com.badskater0729.worldwidechat.WorldwideChat;
+import com.badskater0729.worldwidechat.util.CommonRefs;
 import com.badskater0729.worldwidechat.util.SupportedLang;
-
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 
 public class AmazonTranslation extends BasicTranslation {
 
@@ -53,6 +50,8 @@ public class AmazonTranslation extends BasicTranslation {
 	}
 
 	private class translationTask implements Callable<String> {
+
+		CommonRefs refs = new CommonRefs();
 		@Override
 		public String call() throws Exception {
 			/* Initialize AWS Creds + Translation Object */
@@ -66,7 +65,7 @@ public class AmazonTranslation extends BasicTranslation {
 				/* Get supported languages from AWS and set them */
 				ListLanguagesRequest langRequest = new ListLanguagesRequest();
 				List<Language> awsLangs = translate.listLanguages(langRequest).getLanguages();
-				debugMsg(awsLangs.size() + "");
+				refs.debugMsg(awsLangs.size() + "");
 				
 				/* Convert supportedLangs to our own SupportedLang objs */
 				List<SupportedLang> supportedLangs = new ArrayList<SupportedLang>();
@@ -93,9 +92,9 @@ public class AmazonTranslation extends BasicTranslation {
 			 * instead of full names (English, Spanish) */
 			if (!isInitializing) {
 				if (!inputLang.equals("None")) {
-					inputLang = getSupportedTranslatorLang(inputLang, "in").getLangCode();
+					inputLang = refs.getSupportedTranslatorLang(inputLang, "in").getLangCode();
 				}
-				outputLang = getSupportedTranslatorLang(outputLang, "out").getLangCode();
+				outputLang = refs.getSupportedTranslatorLang(outputLang, "out").getLangCode();
 			}
 			
 			/* Actual translation */

@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Iterator;
 
+import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.bson.Document;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -25,31 +26,32 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.isSupportedTranslatorLang;
-import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
-
 public class LoadUserData implements Runnable {
 
 	private WorldwideChat main = WorldwideChat.instance;
+	
+	private CommonRefs refs = new CommonRefs();
+
+	private MongoDBUtils mongo = main.getMongoSession();
+
+	private SQLUtils sql = main.getSqlSession();
 
 	@Override
 	public void run() {
 		//TODO: Sanitize for bad inputs/accommodate for obj upgrades; if data is bad, we definitely shouldn't add it
 		/* Load all saved user data */
-		debugMsg("Starting LoadUserData!!!");
+		refs.debugMsg("Starting LoadUserData!!!");
 		File userDataFolder = new File(main.getDataFolder() + File.separator + "data" + File.separator);
 		File statsFolder = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
 		userDataFolder.mkdir();
 		statsFolder.mkdir();
 
 		/* Load user records (/wwcs) */
-		debugMsg("Loading user records or /wwcs...");
-		if (SQLUtils.isConnected()) {
+		refs.debugMsg("Loading user records or /wwcs...");
+		if (sql != null && sql.isConnected()) {
 			try {
 				/* Create tables if they do not exist already */
-				Connection sqlConnection = SQLUtils.getConnection();
+				Connection sqlConnection = sql.getConnection();
 				PreparedStatement initActiveTranslators = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
 						+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),inLangCode VARCHAR(12),outLangCode VARCHAR(12),rateLimit VARCHAR(256),"
 						+ "rateLimitPreviousTime VARCHAR(256),translatingChatOutgoing VARCHAR(12), translatingChatIncoming VARCHAR(12),"
@@ -63,7 +65,7 @@ public class LoadUserData implements Runnable {
 				initPlayerRecords.close();
 				
 				// Load PlayerRecord using SQL
-				ResultSet rs = SQLUtils.getConnection().createStatement().executeQuery("SELECT * FROM playerRecords");
+				ResultSet rs = sql.getConnection().createStatement().executeQuery("SELECT * FROM playerRecords");
 				while (rs.next()) {
 					PlayerRecord recordToAdd = new PlayerRecord(
 							rs.getString("lastTranslationTime"),
@@ -78,9 +80,9 @@ public class LoadUserData implements Runnable {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} else if (MongoDBUtils.isConnected()) {
+		} else if (mongo != null && mongo.isConnected()) {
 			/* Initialize collections, create if they do not exist */
-			MongoDatabase database = MongoDBUtils.getActiveDatabase();
+			MongoDatabase database = mongo.getActiveDatabase();
 			try {
 				database.createCollection("ActiveTranslators");
 				database.createCollection("PlayerRecords");
@@ -130,11 +132,11 @@ public class LoadUserData implements Runnable {
 		}
 
 		/* Load user files (last translation session, etc.) */
-		debugMsg("Loading user data or /wwct...");
-		if (SQLUtils.isConnected()) {
+		refs.debugMsg("Loading user data or /wwct...");
+		if (sql != null && sql.isConnected()) {
 			try {
 				// Load ActiveTranslator using SQL
-				ResultSet rs = SQLUtils.getConnection().createStatement().executeQuery("SELECT * FROM activeTranslators");
+				ResultSet rs = sql.getConnection().createStatement().executeQuery("SELECT * FROM activeTranslators");
 				while (rs.next()) {
 					String inLang = rs.getString("inLangCode");
 					String outLang = rs.getString("outLangCode");
@@ -164,9 +166,9 @@ public class LoadUserData implements Runnable {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} else if (MongoDBUtils.isConnected()) {
+		} else if (mongo != null && mongo.isConnected()) {
 			// Load Active Translator using MongoDB
-			MongoDatabase database = MongoDBUtils.getActiveDatabase();
+			MongoDatabase database = mongo.getActiveDatabase();
 			MongoCollection<Document> activeTranslatorCol = database.getCollection("ActiveTranslators");
 			FindIterable<Document> iterDoc = activeTranslatorCol.find();
 			Iterator<Document> it = iterDoc.iterator();
@@ -238,22 +240,22 @@ public class LoadUserData implements Runnable {
 			}
 		}
 		main.getLogger().info(ChatColor.LIGHT_PURPLE
-				+ getMsg("wwcUserDataReloaded"));
+				+ refs.getMsg("wwcUserDataReloaded"));
 	}
 	
 	private boolean validLangCodes(String inLang, String outLang) {
 		// If inLang is invalid, or None is associated with Amazon Translate
-		if ((!inLang.equalsIgnoreCase("None") && !isSupportedTranslatorLang(inLang, "in"))
+		if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedTranslatorLang(inLang, "in"))
 				|| (inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
 			return false;
 		}
 		// If outLang code is not supported with current translator
-		if (!isSupportedTranslatorLang(outLang, "out")) {
+		if (!refs.isSupportedTranslatorLang(outLang, "out")) {
 			return false;
 		}
 		// If inLang and outLang codes are equal
-		if (getSupportedTranslatorLang(outLang, "out").getLangCode().equals(getSupportedTranslatorLang(inLang, "in").getLangCode())) {
-		    debugMsg("Langs are the same?");
+		if (refs.getSupportedTranslatorLang(outLang, "out").getLangCode().equals(refs.getSupportedTranslatorLang(inLang, "in").getLangCode())) {
+		    refs.debugMsg("Langs are the same?");
 			return false;
 		}
 		return true;

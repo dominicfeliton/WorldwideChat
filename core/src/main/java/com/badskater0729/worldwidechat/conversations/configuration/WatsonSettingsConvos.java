@@ -10,8 +10,7 @@ import com.badskater0729.worldwidechat.inventory.configuration.MenuGui.CONFIG_GU
 
 import net.md_5.bungee.api.ChatColor;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.genericConfigConvo;;
+import com.badskater0729.worldwidechat.util.CommonRefs;
 
 public class WatsonSettingsConvos {
 
@@ -21,13 +20,15 @@ public class WatsonSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
+			CommonRefs refs = new CommonRefs();
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationWatsonAPIKeyInput", main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"));
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationWatsonAPIKeyInput", main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationWatsonAPIKeySuccess", 
+			CommonRefs refs = new CommonRefs();
+			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationWatsonAPIKeySuccess",
 					new String[] {"Translator.watsonAPIKey", "Translator.useWatsonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv);
 		}
 	}
@@ -36,13 +37,15 @@ public class WatsonSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
+			CommonRefs refs = new CommonRefs();
 			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + getMsg("wwcConfigConversationWatsonURLInput", main.getConfigManager().getMainConfig().getString("Translator.watsonURL"));
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationWatsonURLInput", main.getConfigManager().getMainConfig().getString("Translator.watsonURL"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			return genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationWatsonURLSuccess", 
+			CommonRefs refs = new CommonRefs();
+			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationWatsonURLSuccess",
 					new String[] {"Translator.watsonURL", "Translator.useWatsonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv);
 		}
 	}

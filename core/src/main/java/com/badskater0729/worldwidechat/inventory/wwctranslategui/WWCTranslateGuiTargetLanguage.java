@@ -3,6 +3,8 @@ package com.badskater0729.worldwidechat.inventory.wwctranslategui;
 import java.util.ArrayList;
 import java.util.UUID;
 
+import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
+import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -24,26 +26,26 @@ import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
-
 public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
+	private CommonRefs refs = new CommonRefs();
+
+	private WWCInventoryManager invManager = main.getInventoryManager();
 
 	private String selectedSourceLanguage = "";
 	private String targetPlayerUUID = "";
 	
-	public WWCTranslateGuiTargetLanguage(String source, String targetPlayerUUID) {
-		selectedSourceLanguage = source;
+	public WWCTranslateGuiTargetLanguage(String selectedSourceLanguage, String targetPlayerUUID) {
+		this.selectedSourceLanguage = selectedSourceLanguage;
 		this.targetPlayerUUID = targetPlayerUUID;
 	}
 
-	public static SmartInventory getTargetLanguageInventory(String source, String targetPlayerUUID) {
+	public SmartInventory getTargetLanguageInventory() {
 		return SmartInventory.builder().id("translateTargetLanguage")
-				.provider(new WWCTranslateGuiTargetLanguage(source, targetPlayerUUID)).size(6, 9)
+				.provider(new WWCTranslateGuiTargetLanguage(selectedSourceLanguage, targetPlayerUUID)).size(6, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + getMsg("wwctGUINewTranslationTarget"))
+				.title(ChatColor.BLUE + refs.getMsg("wwctGUINewTranslationTarget"))
 				.build();
 	}
 
@@ -51,9 +53,9 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 	public void init(Player player, InventoryContents contents) {
 		try {
 			/* Default white stained glass borders for inactive, yellow if player has existing translation session */
-			WWCInventoryManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
+			invManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
 			if (!main.getActiveTranslator(targetPlayerUUID).getInLangCode().equals("")) {
-				WWCInventoryManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
+				invManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
 			}
 			
 			/* Init current active translator */
@@ -72,12 +74,12 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 				ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 				ArrayList<String> lore = new ArrayList<>();
 				SupportedLang currLang = main.getSupportedOutputLangs().get(i);
-				SupportedLang userLang = getSupportedTranslatorLang(currTranslator.getOutLangCode(), "out");
+				SupportedLang userLang = refs.getSupportedTranslatorLang(currTranslator.getOutLangCode(), "out");
 				
 				/* Add Glow Effect */
 				if (userLang.getLangCode().equals(currLang.getLangCode()) || userLang.getLangName().equals(currLang.getLangName())) {
-					WWCInventoryManager.addGlowEffect(itemForLangMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
+					invManager.addGlowEffect(itemForLangMeta);
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
 				}
 				itemForLangMeta.setDisplayName(currLang.getLangName());
 				if (!currLang.getNativeLangName().equals("")) {
@@ -108,26 +110,26 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 
 			/* Bottom Left Option: Previous Page */
 			if (!pagination.isFirst()) {
-				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID)});
+				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {getTargetLanguageInventory()});
 			} else {
-				WWCInventoryManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {WWCTranslateGuiSourceLanguage.getSourceLanguageInventory(selectedSourceLanguage, targetPlayerUUID)});
+				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {new WWCTranslateGuiSourceLanguage(selectedSourceLanguage, targetPlayerUUID).getSourceLanguageInventory()});
 			}
 
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {
-				WWCInventoryManager.setCommonButton(5, 6, player, contents, "Next", new Object[] {getTargetLanguageInventory(selectedSourceLanguage, targetPlayerUUID)});
+				invManager.setCommonButton(5, 6, player, contents, "Next", new Object[] {getTargetLanguageInventory()});
 			}
 			
 			/* Last Option: Page Number */
-			WWCInventoryManager.setCommonButton(5, 8, player, contents, "Page Number", new String[] {pagination.getPage() + 1 + ""});
+			invManager.setCommonButton(5, 8, player, contents, "Page Number", new String[] {pagination.getPage() + 1 + ""});
 		} catch (Exception e) {
-			WWCInventoryManager.inventoryError(player, e);
+			invManager.inventoryError(player, e);
 		}
 	}
 
 	@Override
 	public void update(Player player, InventoryContents contents) {
-		WWCInventoryManager.checkIfPlayerIsMissing(player, targetPlayerUUID);
+		invManager.checkIfPlayerIsMissing(player, targetPlayerUUID);
 	}
 
 }

@@ -1,5 +1,6 @@
 package com.badskater0729.worldwidechat.listeners;
 
+import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -14,12 +15,11 @@ import net.kyori.adventure.text.event.ClickEvent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
-
 public class OnPlayerJoinListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
+
+	private CommonRefs refs = new CommonRefs();
 
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerJoinListener(PlayerJoinEvent event) {
@@ -27,7 +27,7 @@ public class OnPlayerJoinListener implements Listener {
 		if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) && (main.getOutOfDate())
 				&& (event.getPlayer().hasPermission("worldwidechat.chatupdate"))) {
 			final TextComponent outOfDate = Component.text()
-							.content(getMsg("wwcUpdaterOutOfDateChat"))
+							.content(refs.getMsg("wwcUpdaterOutOfDateChat"))
 							.color(NamedTextColor.YELLOW)
 					.append(Component.text().content(" (").color(NamedTextColor.GOLD))
 					.append(Component.text().content("https://github.com/BadSkater0729/WorldwideChat/releases")
@@ -35,7 +35,7 @@ public class OnPlayerJoinListener implements Listener {
 							.clickEvent(ClickEvent.openUrl("https://github.com/BadSkater0729/WorldwideChat/releases"))
 							.decoration(TextDecoration.UNDERLINED, true))
 					.append(Component.text().content(")").color(NamedTextColor.GOLD)).build();
-			sendMsg(event.getPlayer(), outOfDate);
+			refs.sendMsg(event.getPlayer(), outOfDate);
 		}
 
 		/* Global translate is disabled, and user has a translation config */
@@ -45,16 +45,16 @@ public class OnPlayerJoinListener implements Listener {
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
 				final TextComponent langToLang = Component.text()
-								.content(getMsg("wwcOnJoinTranslationNotificationSourceLang", new String[] {currTranslator.getInLangCode(), currTranslator.getOutLangCode()}))
+								.content(refs.getMsg("wwcOnJoinTranslationNotificationSourceLang", new String[] {currTranslator.getInLangCode(), currTranslator.getOutLangCode()}))
 								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
-				sendMsg(event.getPlayer(), langToLang);
+				refs.sendMsg(event.getPlayer(), langToLang);
 			} else {
 				final TextComponent noSource = Component.text()
-								.content(getMsg("wwcOnJoinTranslationNotificationNoSourceLang", currTranslator.getOutLangCode()))
+								.content(refs.getMsg("wwcOnJoinTranslationNotificationNoSourceLang", currTranslator.getOutLangCode()))
 								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
-				sendMsg(event.getPlayer(), noSource);
+				refs.sendMsg(event.getPlayer(), noSource);
 			}
 		/* Global translate is enabled, and user does not have a translation config */
 		} else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
@@ -63,16 +63,16 @@ public class OnPlayerJoinListener implements Listener {
 			ActiveTranslator currTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
 				final TextComponent langToLang = Component.text()
-								.content(getMsg("wwcGlobalOnJoinTranslationNotificationSourceLang", new String[] {currTranslator.getInLangCode(), currTranslator.getOutLangCode()}))
+								.content(refs.getMsg("wwcGlobalOnJoinTranslationNotificationSourceLang", new String[] {currTranslator.getInLangCode(), currTranslator.getOutLangCode()}))
 								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
-				sendMsg(event.getPlayer(), langToLang);
+				refs.sendMsg(event.getPlayer(), langToLang);
 			} else {
 				final TextComponent noSource = Component.text()
-								.content(getMsg("wwcGlobalOnJoinTranslationNotificationNoSourceLang", currTranslator.getOutLangCode()))
+								.content(refs. getMsg("wwcGlobalOnJoinTranslationNotificationNoSourceLang", currTranslator.getOutLangCode()))
 								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
-				sendMsg(event.getPlayer(), noSource);
+				refs. sendMsg(event.getPlayer(), noSource);
 			}
 		/* Global translate is enabled, but user ALSO has a translation config */
 		} else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
@@ -81,16 +81,16 @@ public class OnPlayerJoinListener implements Listener {
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
 				final TextComponent langToLang = Component.text()
-								.content(getMsg("wwcOverrideGlobalOnJoinTranslationNotificationSourceLang", new String[] {currTranslator.getInLangCode(), currTranslator.getOutLangCode()}))
+								.content(refs.getMsg("wwcOverrideGlobalOnJoinTranslationNotificationSourceLang", new String[] {currTranslator.getInLangCode(), currTranslator.getOutLangCode()}))
 								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
-				sendMsg(event.getPlayer(), langToLang);
+				refs.sendMsg(event.getPlayer(), langToLang);
 			} else {
 				final TextComponent noSource = Component.text()
-								.content(getMsg("wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang", currTranslator.getOutLangCode()))
+								.content(refs.getMsg("wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang", currTranslator.getOutLangCode()))
 								.color(NamedTextColor.LIGHT_PURPLE)
 						.build();
-				sendMsg(event.getPlayer(), noSource);
+				refs.sendMsg(event.getPlayer(), noSource);
 			}
 		}
 	}

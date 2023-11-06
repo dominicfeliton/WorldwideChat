@@ -1,5 +1,6 @@
 package com.badskater0729.worldwidechat.inventory.configuration;
 
+import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -19,14 +20,14 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.runSync;
-import static com.badskater0729.worldwidechat.util.CommonRefs.runAsync;
+import com.badskater0729.worldwidechat.util.CommonRefs;
 
 public class MessagesOverrideModifyGui implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
+	private CommonRefs refs = new CommonRefs();
+
+	private WWCInventoryManager invManager = main.getInventoryManager();
 	
 	private String currentOverrideName = "";
 	
@@ -34,11 +35,11 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 		this.currentOverrideName = currentOverrideName;
 	}
 	
-	public static SmartInventory getModifyCurrentOverride(String currentOverrideName) {
+	public SmartInventory getModifyCurrentOverride() {
 		return SmartInventory.builder().id("overrideModifyMenu")
 				.provider(new MessagesOverrideModifyGui(currentOverrideName)).size(3, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + getMsg("wwcConfigGUIChatMessagesModifyOverride"))
+				.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesModifyOverride"))
 				.build();
 	}
 	
@@ -46,16 +47,16 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 	public void init(Player player, InventoryContents contents) {
 		try {
 			/* Set borders to orange */
-			WWCInventoryManager.setBorders(contents, XMaterial.ORANGE_STAINED_GLASS_PANE);
+			invManager.setBorders(contents, XMaterial.ORANGE_STAINED_GLASS_PANE);
 
 			/* Middle Option: Change existing text */
-			WWCInventoryManager.genericConversationButton(1, 4, player, contents, new ChatSettingsConvos.ModifyOverrideText(getModifyCurrentOverride(currentOverrideName), currentOverrideName), XMaterial.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
+			invManager.genericConversationButton(1, 4, player, contents, new ChatSettingsConvos.ModifyOverrideText(getModifyCurrentOverride(), currentOverrideName), XMaterial.WRITABLE_BOOK, "wwcConfigGUIChatMessagesOverrideChangeButton");
 			
 			/* Right Option: Delete override */
 			ItemStack deleteOverrideButton = XMaterial.BARRIER.parseItem();
 			ItemMeta deleteOverrideMeta = deleteOverrideButton.getItemMeta();
 			deleteOverrideMeta.setDisplayName(ChatColor.RED
-					+ getMsg("wwcConfigGUIChatMessagesOverrideDeleteButton"));
+					+ refs.getMsg("wwcConfigGUIChatMessagesOverrideDeleteButton"));
 			deleteOverrideButton.setItemMeta(deleteOverrideMeta);
 			contents.set(1, 6, ClickableItem.of(deleteOverrideButton, e -> {
 				BukkitRunnable saveMessages = new BukkitRunnable() {
@@ -64,27 +65,27 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 						main.getConfigManager().getMsgsConfig().set("Overrides." + currentOverrideName, null);
 						main.getConfigManager().saveMessagesConfig(false);
 						final TextComponent successfulChange = Component.text()
-										.content(getMsg("wwcConfigConversationOverrideDeletionSuccess"))
+										.content(refs.getMsg("wwcConfigConversationOverrideDeletionSuccess"))
 										.color(NamedTextColor.GREEN)
 								.build();
-						sendMsg(player, successfulChange);
+						refs.sendMsg(player, successfulChange);
 						BukkitRunnable out = new BukkitRunnable() {
 							@Override
 							public void run() {
-								MessagesOverrideCurrentListGui.overrideMessagesSettings.open(player);
+								new MessagesOverrideCurrentListGui().overrideMessagesSettings.open(player);
 							}
 						};
-						runSync(out);
+						refs.runSync(out);
 					}
 				};
-				runAsync(saveMessages);
+				refs.runAsync(saveMessages);
 			}));
 			
 			
 			/* Left Option: Previous Page */
-			WWCInventoryManager.setCommonButton(1, 2, player, contents, "Previous", new Object[] {MessagesOverrideCurrentListGui.overrideMessagesSettings});
+			invManager.setCommonButton(1, 2, player, contents, "Previous", new Object[] {new MessagesOverrideCurrentListGui().overrideMessagesSettings});
 		} catch (Exception e) {
-			WWCInventoryManager.inventoryError(player, e);
+			invManager.inventoryError(player, e);
 		}
 	}
 

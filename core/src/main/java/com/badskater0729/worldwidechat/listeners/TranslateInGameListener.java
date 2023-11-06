@@ -4,6 +4,8 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
+import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bukkit.Location;
 
@@ -33,17 +35,11 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.translateText;
-import static com.badskater0729.worldwidechat.util.CommonRefs.runSync;
-import static com.badskater0729.worldwidechat.util.CommonRefs.runAsync;
-import static com.badskater0729.worldwidechat.util.CommonRefs.serverIsStopping;
-
 public class TranslateInGameListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
+	
+	private CommonRefs refs = new CommonRefs();
 	
 	/* Custom Entity Name Translation */
 	@EventHandler(priority = EventPriority.HIGHEST) 
@@ -57,33 +53,33 @@ public class TranslateInGameListener implements Listener {
 						@Override
 						public void run() {
 							final TextComponent entityStart = Component.text()
-											.content(getMsg("wwcEntityTranslateStart"))
+											.content(refs.getMsg("wwcEntityTranslateStart"))
 											.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
 									.build();
-							sendMsg(event.getPlayer(), entityStart);
+							refs.sendMsg(event.getPlayer(), entityStart);
 							if (customName != null) {
 								final TextComponent entityDone = Component.text()
-												.content(getMsg("wwcEntityTranslateDone", new String[] {translateText(customName, event.getPlayer())}))
+												.content(refs.getMsg("wwcEntityTranslateDone", new String[] {refs.translateText(customName, event.getPlayer())}))
 												.color(NamedTextColor.GREEN)
 										.build();
-								sendMsg(event.getPlayer(), entityDone);
+								refs.sendMsg(event.getPlayer(), entityDone);
 							} else {
 								final TextComponent entityStock = Component.text()
-												.content(getMsg("wwcEntityTranslateNoName"))
+												.content(refs.getMsg("wwcEntityTranslateNoName"))
 												.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true)
 										.build();
-								sendMsg(event.getPlayer(), entityStock);
+								refs.sendMsg(event.getPlayer(), entityStock);
 							}
 						}
 					};
-					runAsync(out);
+					refs.runAsync(out);
 				}
 			} catch (Exception e) {
-				if (!serverIsStopping()) {
+				if (!refs.serverIsStopping()) {
 					throw e;
 				}
-				//debugMsg("We are reloading! Caught exception in Entity Translation...");
-				//debugMsg(ExceptionUtils.getStackTrace(e));
+				//refs.debugMsg("We are reloading! Caught exception in Entity Translation...");
+				//refs.debugMsg(ExceptionUtils.getStackTrace(e));
 			}
 		}
 	}
@@ -113,32 +109,32 @@ public class TranslateInGameListener implements Listener {
 
 						/* Send message */
 						final TextComponent bookStart = Component.text()
-										.content(getMsg("wwcBookTranslateStart"))
+										.content(refs.getMsg("wwcBookTranslateStart"))
 										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
 								.build();
-						sendMsg(event.getPlayer(), bookStart);
+						refs.sendMsg(event.getPlayer(), bookStart);
 
 						/* Translate title */
-						outTitle = translateText(meta.getTitle(), event.getPlayer());
+						outTitle = refs.translateText(meta.getTitle(), event.getPlayer());
 						final TextComponent bookTitleSuccess = Component.text()
-										.content(getMsg("wwcBookTranslateTitleSuccess", outTitle))
+										.content(refs.getMsg("wwcBookTranslateTitleSuccess", outTitle))
 										.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
 								.build();
-						sendMsg(event.getPlayer(), bookTitleSuccess);
+						refs.sendMsg(event.getPlayer(), bookTitleSuccess);
 
 						/* Translate pages */
 						for (String eaPage : pages) {
-							String out = translateText(eaPage, event.getPlayer());
+							String out = refs.translateText(eaPage, event.getPlayer());
 							translatedPages.add(out);
 						}
 
 						if (currentBook != null) {
 							/* Set completed message */
 							final TextComponent bookDone = Component.text()
-											.content(getMsg("wwcBookDone"))
+											.content(refs.getMsg("wwcBookDone"))
 											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
 									.build();
-							sendMsg(event.getPlayer(), bookDone);
+							refs.sendMsg(event.getPlayer(), bookDone);
 						}
 
 						/* Create the modified book */
@@ -166,10 +162,10 @@ public class TranslateInGameListener implements Listener {
 								}
 							}
 						};
-						runSync(open);
+						refs.runSync(open);
 					}
 				};
-				runAsync(out);
+				refs.runAsync(out);
 			}
 			
 			/* Sign Translation */
@@ -194,14 +190,14 @@ public class TranslateInGameListener implements Listener {
 
 						/* Send message */
 						final TextComponent signStart = Component.text()
-										.content(getMsg("wwcSignTranslateStart"))
+										.content(refs.getMsg("wwcSignTranslateStart"))
 										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
 								.build();
-						sendMsg(event.getPlayer(), signStart);
+						refs.sendMsg(event.getPlayer(), signStart);
 
 						/* Translate each line of sign */
 						for (int i = 0; i < changedSignText.length; i++) {
-							String eaLine = translateText(signText[i], event.getPlayer());
+							String eaLine = refs.translateText(signText[i], event.getPlayer());
 							/* Save translated line */
 							if (eaLine.length() > 15) {
 								textLimit = true;
@@ -224,10 +220,10 @@ public class TranslateInGameListener implements Listener {
 						if (!textLimit && currentSign.getLocation() != null) {
 							/* Set completed message */
 							final TextComponent signDone = Component.text()
-											.content(getMsg("wwcSignDone"))
+											.content(refs.getMsg("wwcSignDone"))
 											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
 									.build();
-							sendMsg(event.getPlayer(), signDone);
+							refs.sendMsg(event.getPlayer(), signDone);
 						} else {
 							/*
 							 * Format sign for chat, if translation exceeds 15 chars or sign was already
@@ -241,7 +237,7 @@ public class TranslateInGameListener implements Listener {
 
 							/* If we are here, sign is too long or deleted msg */
 							final TextComponent translationNoticeMsg = Component.text()
-											.content(getMsg("wwcSignDeletedOrTooLong"))
+											.content(refs.getMsg("wwcSignDeletedOrTooLong"))
 											.color(NamedTextColor.LIGHT_PURPLE)
 											.decoration(TextDecoration.ITALIC, true)
 									.append(Component.text().content("\n" + "---------------")
@@ -251,12 +247,12 @@ public class TranslateInGameListener implements Listener {
 													.color(NamedTextColor.GOLD)))
 									.build();
 
-							sendMsg(event.getPlayer(), translationNoticeMsg);
+							refs.sendMsg(event.getPlayer(), translationNoticeMsg);
 							changedSignText = null;
 						}
 						
 						/* Get update status */
-						if (changedSignText != null && !serverIsStopping()) {
+						if (changedSignText != null && !refs.serverIsStopping()) {
 							final String[] finalText = changedSignText;
 							BukkitRunnable sign = new BukkitRunnable() {
 								@Override
@@ -264,11 +260,11 @@ public class TranslateInGameListener implements Listener {
 									event.getPlayer().sendSignChange(currentSign.getLocation(), finalText);
 								}
 							};
-							runSync(sign);
+							refs.runSync(sign);
 						}
 					}
 				};
-				runAsync(out);
+				refs.runAsync(out);
 			}
 			
 			/* Item Translation */
@@ -289,47 +285,47 @@ public class TranslateInGameListener implements Listener {
 
 						/* Send message */
 						final TextComponent itemStart = Component.text()
-										.content(getMsg("wwcItemTranslateStart"))
+										.content(refs.getMsg("wwcItemTranslateStart"))
 										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
 								.build();
-						sendMsg(event.getPlayer(), itemStart);
+						refs.sendMsg(event.getPlayer(), itemStart);
 
 						/* Translate item title */
 						if (meta.hasDisplayName()) {
-							translatedName = translateText(meta.getDisplayName(), event.getPlayer());
+							translatedName = refs.translateText(meta.getDisplayName(), event.getPlayer());
 							/* Set completed message */
 							final TextComponent itemTitleDone = Component.text()
-											.content(getMsg("wwcItemTranslateTitleDone"))
+											.content(refs.getMsg("wwcItemTranslateTitleDone"))
 											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
 									.build();
-							sendMsg(event.getPlayer(), itemTitleDone);
+							refs.sendMsg(event.getPlayer(), itemTitleDone);
 						} else {
 							final TextComponent itemStockTitleFail = Component.text()
-											.content(getMsg("wwcItemTranslateTitleStock"))
+											.content(refs.getMsg("wwcItemTranslateTitleStock"))
 											.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true)
 									.build();
-							sendMsg(event.getPlayer(), itemStockTitleFail);
+							refs.sendMsg(event.getPlayer(), itemStockTitleFail);
 							// Stock items not supported
 						}
 
 						/* Translate item lore */
 						if (meta.hasLore()) {
 							final TextComponent itemLoreStart = Component.text()
-											.content(getMsg("wwcItemTranslateLoreStart"))
+											.content(refs.getMsg("wwcItemTranslateLoreStart"))
 											.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
 									.build();
-							sendMsg(event.getPlayer(), itemLoreStart);
+							refs.sendMsg(event.getPlayer(), itemLoreStart);
 							outLore = new ArrayList<String>();
 							for (String eaLine : itemLore) {
-								String translatedLine = translateText(eaLine, event.getPlayer());
+								String translatedLine = refs.translateText(eaLine, event.getPlayer());
 								outLore.add(translatedLine);
 							}
 							/* Set completed message */
 							final TextComponent itemLoreDone = Component.text()
-											.content(getMsg("wwcItemTranslateLoreDone"))
+											.content(refs.getMsg("wwcItemTranslateLoreDone"))
 											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
 									.build();
-							sendMsg(event.getPlayer(), itemLoreDone);
+							refs.sendMsg(event.getPlayer(), itemLoreDone);
 						}
 
 						/* Create "fake" item to be displayed to user */
@@ -344,21 +340,21 @@ public class TranslateInGameListener implements Listener {
 							BukkitRunnable open = new BukkitRunnable() {
 								@Override
 								public void run() {
-									TempItemInventory.getTempItemInventory(translatedItem).open(event.getPlayer());
+									new TempItemInventory(translatedItem).getTempItemInventory().open(event.getPlayer());
 								}
 							};
-							runSync(open);
+							refs.runSync(open);
 						}
 					}
 				};
-				runAsync(out);
+				refs.runAsync(out);
 			}
 		} catch (Exception e) {
-			if (!serverIsStopping()) {
+			if (!refs.serverIsStopping()) {
 				throw e;
 			}
-			debugMsg("We are reloading! Caught exception in Object Translation...");
-			debugMsg(ExceptionUtils.getStackTrace(e));
+			refs.debugMsg("We are reloading! Caught exception in Object Translation...");
+			refs.debugMsg(ExceptionUtils.getStackTrace(e));
 		}
 	}
 	
@@ -371,11 +367,11 @@ public class TranslateInGameListener implements Listener {
 				}
 				return false;
 			} catch (NoSuchMethodException e) {
-				debugMsg("getHand() method not found in PlayerInteractEvent!");
+				refs.debugMsg("getHand() method not found in PlayerInteractEvent!");
 				return true;
 			}
 		} catch (Exception e) {
-			debugMsg(ExceptionUtils.getStackTrace(e));
+			refs.debugMsg(ExceptionUtils.getStackTrace(e));
 			return false;
 		}
 	}
@@ -389,11 +385,11 @@ public class TranslateInGameListener implements Listener {
 				}
 				return false;
 			} catch (NoSuchMethodException e) {
-				debugMsg("getHand() method not found in PlayerInteractEntityEvent!");
+				refs.debugMsg("getHand() method not found in PlayerInteractEntityEvent!");
 				return true;
 			}
 		} catch (Exception e) {
-			debugMsg(ExceptionUtils.getStackTrace(e));
+			refs.debugMsg(ExceptionUtils.getStackTrace(e));
 			return false;
 		}
 	}
@@ -412,7 +408,7 @@ public class TranslateInGameListener implements Listener {
 						return null;
 					}
 				} catch (NoSuchMethodException e) {
-					debugMsg("getItemInMainHand() does not exist in PlayerInventory!");
+					refs.debugMsg("getItemInMainHand() does not exist in PlayerInventory!");
 					Method getItemInHand = PlayerInventory.class.getMethod("getItemInHand");
 					Object getItemInHandObj = getItemInHand.invoke(event.getPlayer().getInventory());
 					Object itemType = getItemInHandObj.getClass().getMethod("getType").invoke(getItemInHandObj);
@@ -424,7 +420,7 @@ public class TranslateInGameListener implements Listener {
 					return null;
 				}
 			} catch (Exception e) {
-				debugMsg(ExceptionUtils.getStackTrace(e));
+				refs.debugMsg(ExceptionUtils.getStackTrace(e));
 				return null;
 			}
 		}

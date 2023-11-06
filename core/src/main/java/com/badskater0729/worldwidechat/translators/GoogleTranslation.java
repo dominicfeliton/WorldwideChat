@@ -10,6 +10,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.apache.commons.lang3.StringUtils;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
@@ -21,8 +22,6 @@ import com.google.cloud.translate.Translate.TranslateOption;
 import com.google.cloud.translate.Translation;
 
 import com.google.cloud.translate.TranslateOptions;
-
-import static com.badskater0729.worldwidechat.util.CommonRefs.getSupportedTranslatorLang;
 
 public class GoogleTranslation extends BasicTranslation {
 
@@ -50,6 +49,7 @@ public class GoogleTranslation extends BasicTranslation {
 	}
 
 	private class translationTask implements Callable<String> {
+		CommonRefs refs = new CommonRefs();
 		@Override
 		public String call() throws Exception {
 			/* Initialize translation object again */
@@ -85,9 +85,9 @@ public class GoogleTranslation extends BasicTranslation {
 			 * instead of full names (English, Spanish) */
 			if (!isInitializing) {
 				if (!inputLang.equals("None")) {
-					inputLang = getSupportedTranslatorLang(inputLang, "in").getLangCode();
+					inputLang = refs.getSupportedTranslatorLang(inputLang, "in").getLangCode();
 				}
-				outputLang = getSupportedTranslatorLang(outputLang, "out").getLangCode();
+				outputLang = refs.getSupportedTranslatorLang(outputLang, "out").getLangCode();
 			}
 
 			/* Detect inputLang */

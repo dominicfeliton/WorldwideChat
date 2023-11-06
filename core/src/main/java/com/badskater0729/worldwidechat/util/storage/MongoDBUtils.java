@@ -2,6 +2,7 @@ package com.badskater0729.worldwidechat.util.storage;
 
 import java.util.List;
 
+import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.bson.BsonDocument;
 import org.bson.BsonInt64;
 import org.bson.conversions.Bson;
@@ -12,31 +13,40 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
-
 public class MongoDBUtils {
 
-	private static MongoClient mongoClient;
-	
-	public static boolean isConnected() {
-		return (mongoClient == null ? false : true);
+	private CommonRefs refs = new CommonRefs();
+	private String host;
+	private String port;
+	private String databaseName;
+	private String username;
+	private String password;
+	private List<String> argList;
+
+	private MongoClient client;
+
+	public MongoDBUtils(String host, String port, String databaseName, String username, String password, List<String> argList) {
+		this.host = host;
+		this.port = port;
+		this.databaseName = databaseName;
+		this.username = username;
+		this.password = password;
+		this.argList = argList;
 	}
 	
-	public static MongoClient getConnection() {
-		return mongoClient;
-	}
-	
-	public static MongoDatabase getActiveDatabase() {
-		return mongoClient.getDatabase(WorldwideChat.instance.getConfigManager().getMainConfig().getString("Storage.mongoDatabaseName"));
-	}
-	
-	public static void connect(String host, String port, String databaseName, String username, String password, List<String> list) throws MongoException {
+	public void connect() throws MongoException {
+		/* Check */
+		if (client != null) {
+			refs.debugMsg("Already connected???");
+			return;
+		}
+
 		/* Setup valid mongoDB URL */
 		String url = "mongodb://" + username + ":" + password + "@" + host + ":" + port + "/?connectTimeoutMS=" + WorldwideChat.translatorFatalAbortSeconds*1000 + "&serverSelectionTimeoutMS=" + WorldwideChat.translatorFatalAbortSeconds*1000;
-		if (list != null && list.size() > 0) {
-			for (String eaArg : list) {
+		if (argList != null && argList.size() > 0) {
+			for (String eaArg : argList) {
 				url += "&" + eaArg.substring(0, eaArg.indexOf("=")) + "=" + eaArg.substring(eaArg.indexOf("=")+1);
-				debugMsg(eaArg.substring(0, eaArg.indexOf("=")) + ":" + eaArg.substring(eaArg.indexOf("=")+1));
+				refs.debugMsg(eaArg.substring(0, eaArg.indexOf("=")) + ":" + eaArg.substring(eaArg.indexOf("=")+1));
 			}
 		}
 		MongoClient testClient = MongoClients.create(url);
@@ -47,14 +57,26 @@ public class MongoDBUtils {
         database.runCommand(command);
 		
         /* Set client */
-		mongoClient = testClient;
+		client = testClient;
 	}
-	
-	public static void disconnect() {
+
+	public void disconnect() {
 		if (isConnected()) {
-			mongoClient.close();
-			mongoClient = null;
+			client.close();
+			client = null;
 		}
+	}
+
+	public MongoClient getClient() {
+		return client;
+	}
+
+	public boolean isConnected() {
+		return client != null;
+	}
+
+	public MongoDatabase getActiveDatabase() {
+		return client.getDatabase(WorldwideChat.instance.getConfigManager().getMainConfig().getString("Storage.mongoDatabaseName"));
 	}
 	
 }

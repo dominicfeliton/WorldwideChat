@@ -27,14 +27,16 @@ import fr.minuskube.inv.SmartInventory;
 import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 
-import static com.badskater0729.worldwidechat.WorldwideChat.instance;
+import com.badskater0729.worldwidechat.util.CommonRefs;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import static com.badskater0729.worldwidechat.WorldwideChat.instance;
 
 public class MenuGui implements InventoryProvider {
 	
 	// Thank you, H***** for the help with this class!!
+	private CommonRefs refs = new CommonRefs();
+
+	private WWCInventoryManager invManager = instance.getInventoryManager();
 
 	public static enum CONFIG_GUI_TAGS {
 		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, CHAT_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET, DEEP_TRANS_SET;
@@ -44,6 +46,10 @@ public class MenuGui implements InventoryProvider {
 	
 	public static void genAllConfigUIs() {
 		/* Generate inventories */
+		MongoDBUtils mongo = instance.getMongoSession();
+		SQLUtils sql = instance.getSqlSession();
+
+
 		MenuGui generalSet = new MenuGui();
 		CONFIG_GUI_TAGS.GEN_SET.smartInv = generalSet.genSmartInv("generalSettingsMenu", "wwcConfigGUIGeneralSettings");
 		
@@ -100,8 +106,8 @@ public class MenuGui implements InventoryProvider {
 		ArrayList<String> storageToggles = new ArrayList<>(Arrays.asList("Storage.useSQL", "Storage.useMongoDB"));
 
 		storageSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
-		storageSet.add(new SubMenuElement(1, 1, SQLUtils.isConnected(), "wwcConfigGUISQLMenuButton", CONFIG_GUI_TAGS.SQL_SET.smartInv));
-		storageSet.add(new SubMenuElement(1, 2, MongoDBUtils.isConnected(), "wwcConfigGUIMongoMenuButton", CONFIG_GUI_TAGS.MONGO_SET.smartInv));
+		storageSet.add(new SubMenuElement(1, 1, sql != null && sql.isConnected(), "wwcConfigGUISQLMenuButton", CONFIG_GUI_TAGS.SQL_SET.smartInv));
+		storageSet.add(new SubMenuElement(1, 2, mongo != null && mongo.isConnected(), "wwcConfigGUIMongoMenuButton", CONFIG_GUI_TAGS.MONGO_SET.smartInv));
 		storageSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.GEN_SET.smartInv}));
 		storageSet.add(new CommonElement(2, 4, "Quit"));
 		storageSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
@@ -153,7 +159,7 @@ public class MenuGui implements InventoryProvider {
 		chatSet.add(new ToggleElement(1, 1, "wwcConfigGUISendTranslationChatButton", "wwcConfigConversationSendTranslationChatSuccess", "Chat.sendTranslationChat"));
 		chatSet.add(new ToggleElement(1, 2, "wwcConfigGUIPluginUpdateChatButton", "wwcConfigConversationPluginUpdateChatSuccess", "Chat.sendPluginUpdateChat"));
 		chatSet.add(new ToggleElement(1, 3, "wwcConfigGUISendIncomingHoverTextChatButton", "wwcConfigConversationSendIncomingHoverTextChatSuccess", "Chat.sendIncomingHoverTextChat"));
-		chatSet.add(new SubMenuElement(1, 4, "wwcConfigGUIMessagesOverrideChatButton", MessagesOverrideCurrentListGui.overrideMessagesSettings));
+		chatSet.add(new SubMenuElement(1, 4, "wwcConfigGUIMessagesOverrideChatButton", new MessagesOverrideCurrentListGui().overrideMessagesSettings));
 		chatSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		chatSet.add(new CommonElement(2, 4, "Quit"));
 		chatSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));
@@ -209,7 +215,7 @@ public class MenuGui implements InventoryProvider {
 		transAmazonSet.add(new BorderElement(XMaterial.YELLOW_STAINED_GLASS_PANE));
 		transAmazonSet.add(new ToggleElement(1, 1, "wwcConfigGUIToggleAmazonTranslateButton", "wwcConfigConversationAmazonTranslateToggleSuccess",
 				"Translator.useAmazonTranslate", translatorToggles));
-		transAmazonSet.add(new ConvoElement(1, 2, "wwcConfigGUIAmazonTranslateAccessKeyButton", XMaterial.NAME_TAG, 
+		transAmazonSet.add(new ConvoElement(1, 2, "wwcConfigGUIAmazonTranslateAccessKeyButton", XMaterial.NAME_TAG,
 				new AmazonSettingsConvos.AccessKey()));
 		transAmazonSet.add(new ConvoElement(1, 3, "wwcConfigGUIAmazonTranslateSecretKeyButton", XMaterial.NAME_TAG, 
 				new AmazonSettingsConvos.SecretKey()));
@@ -267,6 +273,8 @@ public class MenuGui implements InventoryProvider {
 	static class ConvoElement extends Element {
 		
 		public Prompt prompt;
+
+		private WWCInventoryManager invManager = instance.getInventoryManager();
 		
 		public ConvoElement(int x_, int y_, String buttonName_, XMaterial blockIcon_, Prompt prompt_) {
 			super(x_, y_, buttonName_, blockIcon_);
@@ -276,7 +284,7 @@ public class MenuGui implements InventoryProvider {
 		
 		@Override
 		public void rasterize(Player player, InventoryContents contents) {
-			WWCInventoryManager.genericConversationButton(x, y, player, contents, prompt, blockIcon, buttonName);
+			invManager.genericConversationButton(x, y, player, contents, prompt, blockIcon, buttonName);
 		}
 		
 	}
@@ -286,6 +294,8 @@ public class MenuGui implements InventoryProvider {
 		public String onSuccess;
 		public String configName;
 		public ArrayList<String> configValsToDisable = new ArrayList<>();
+
+		private WWCInventoryManager invManager = instance.getInventoryManager();
 		
 		public ToggleElement(int x_, int y_, String buttonName_, String onSuccess_, String configName_) {
 			this(x_, y_, buttonName_, onSuccess_, configName_, null);
@@ -304,7 +314,7 @@ public class MenuGui implements InventoryProvider {
 		
 		@Override
 		public void rasterize(Player player, InventoryContents contents) {
-			WWCInventoryManager.genericToggleButton(x, y, player, contents, buttonName, 
+			invManager.genericToggleButton(x, y, player, contents, buttonName,
 					onSuccess, configName, configValsToDisable);
 		}
 		
@@ -313,6 +323,8 @@ public class MenuGui implements InventoryProvider {
 	static class CommonElement extends Element {
 		
 		public Object[] args = new String[0];
+
+		private WWCInventoryManager invManager = instance.getInventoryManager();
 		
 		public CommonElement(int x_, int y_, String buttonName_, Object[] args_) {
 			super(x_, y_, buttonName_, null);
@@ -328,19 +340,21 @@ public class MenuGui implements InventoryProvider {
 
 		@Override
 		public void rasterize(Player player, InventoryContents contents) {
-			WWCInventoryManager.setCommonButton(x, y, player, contents, buttonName, args);
+			invManager.setCommonButton(x, y, player, contents, buttonName, args);
 		}
 		
 	}
 	
 	static class BorderElement extends Element {
+
+		private WWCInventoryManager invManager = instance.getInventoryManager();
 		public BorderElement(XMaterial blockIcon_) {
 			super(0, 0, "", blockIcon_);
 		}
 
 		@Override
 		public void rasterize(Player player, InventoryContents contents) {
-			WWCInventoryManager.setBorders(contents, blockIcon);
+			invManager.setBorders(contents, blockIcon);
 		}
 	}
 	
@@ -348,6 +362,8 @@ public class MenuGui implements InventoryProvider {
 
 		public Boolean preCondition = null;
 		public SmartInventory invToOpen;
+
+		private WWCInventoryManager invManager = instance.getInventoryManager();
 		
 		public SubMenuElement(int x_, int y_, Boolean preCondition_, String buttonName_, SmartInventory invToOpen_) {
 			super(x_, y_, buttonName_, null);
@@ -364,7 +380,7 @@ public class MenuGui implements InventoryProvider {
 
 		@Override
 		public void rasterize(Player player, InventoryContents contents) {
-			WWCInventoryManager.genericOpenSubmenuButton(x, y, player, contents, preCondition, buttonName, invToOpen);
+			invManager.genericOpenSubmenuButton(x, y, player, contents, preCondition, buttonName, invToOpen);
 		}
 		
 	}
@@ -375,10 +391,11 @@ public class MenuGui implements InventoryProvider {
 	
 	@Override
 	public void init(Player player, InventoryContents contents) {
+
 		try {
 			for (Element e : elements) e.rasterize(player, contents);
 		} catch (Exception e) {
-			WWCInventoryManager.inventoryError(player, e);
+			invManager.inventoryError(player, e);
 		}
 	}
 
@@ -386,18 +403,20 @@ public class MenuGui implements InventoryProvider {
 	public void update(Player player, InventoryContents contents) {}
 	
 	private SmartInventory genSmartInv(String id, int x, int y, ChatColor col, String titleTag, String[] args) {
+		CommonRefs refs = new CommonRefs();
 		return SmartInventory.builder().id(id)
 				.provider(this).size(x, y)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(col + getMsg(titleTag, args))
+				.title(col + refs.getMsg(titleTag, args))
 				.build();
 	}
 	
 	private SmartInventory genSmartInv(String id, int x, int y, ChatColor col, String titleTag) {
+		CommonRefs refs = new CommonRefs();
 		return SmartInventory.builder().id(id)
 		.provider(this).size(x, y)
 		.manager(WorldwideChat.instance.getInventoryManager())
-		.title(col + getMsg(titleTag))
+		.title(col + refs.getMsg(titleTag))
 		.build();
 	}
 	

@@ -3,21 +3,22 @@ package com.badskater0729.worldwidechat.runnables;
 import java.util.concurrent.TimeUnit;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-
-import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
+import com.badskater0729.worldwidechat.util.CommonRefs;
 
 public class SyncUserData implements Runnable {
 
 	private WorldwideChat main = WorldwideChat.instance;
+
+	private CommonRefs refs = new CommonRefs();
 	
 	@Override
 	public void run() {
 		final long startTime = System.nanoTime();
 		try {
-			debugMsg("Starting SyncUserData!!!");
+			refs.debugMsg("Starting SyncUserData!!!");
 			main.getConfigManager().syncData();
 			final long duration = System.nanoTime() - startTime;
-			debugMsg("Automatic user data sync completed in " + TimeUnit.MILLISECONDS.convert(duration, TimeUnit.NANOSECONDS) + " ms.");
+			refs.debugMsg("Automatic user data sync completed in " + TimeUnit.MILLISECONDS.convert(duration, TimeUnit.NANOSECONDS) + " ms.");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

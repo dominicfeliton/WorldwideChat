@@ -24,8 +24,6 @@ import com.ibm.watson.language_translator.v3.model.Languages;
 import com.ibm.watson.language_translator.v3.model.TranslateOptions;
 import com.ibm.watson.language_translator.v3.model.TranslationResult;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-
 public class WatsonTranslation extends BasicTranslation {
 
 	// For normal translation operation

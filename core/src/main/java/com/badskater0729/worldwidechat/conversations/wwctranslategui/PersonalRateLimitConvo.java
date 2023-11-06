@@ -15,7 +15,7 @@ import com.badskater0729.worldwidechat.util.ActiveTranslator;
 
 import net.md_5.bungee.api.ChatColor;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
+import com.badskater0729.worldwidechat.util.CommonRefs;
 
 public class PersonalRateLimitConvo extends NumericPrompt {
 
@@ -28,8 +28,9 @@ public class PersonalRateLimitConvo extends NumericPrompt {
 	@Override
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
+		CommonRefs refs = new CommonRefs();
 		((Player) context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + getMsg("wwctGUIConversationRateLimit", currTranslator.getRateLimit() + "");
+		return ChatColor.AQUA + refs.getMsg("wwctGUIConversationRateLimit", currTranslator.getRateLimit() + "");
 	}
 
 	@Override
@@ -44,7 +45,7 @@ public class PersonalRateLimitConvo extends NumericPrompt {
 					null, new String[] {Bukkit.getPlayer(UUID.fromString(currTranslator.getUUID())).getName()});
 			rateCommand.processCommand();
 		} // Go back
-		WWCTranslateGuiMainMenu.getTranslateMainMenu(currTranslator.getUUID()).open((Player) context.getForWhom());
+		new WWCTranslateGuiMainMenu(currTranslator.getUUID()).getTranslateMainMenu().open((Player) context.getForWhom());
 		return END_OF_CONVERSATION;
 	}
 

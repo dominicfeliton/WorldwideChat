@@ -8,6 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.TimeUnit;
 
+import com.badskater0729.worldwidechat.util.*;
 import org.apache.commons.lang3.tuple.Pair;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -44,10 +45,6 @@ import com.badskater0729.worldwidechat.listeners.WWCTabCompleter;
 import com.badskater0729.worldwidechat.runnables.LoadUserData;
 import com.badskater0729.worldwidechat.runnables.SyncUserData;
 import com.badskater0729.worldwidechat.runnables.UpdateChecker;
-import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import com.badskater0729.worldwidechat.util.CachedTranslation;
-import com.badskater0729.worldwidechat.util.PlayerRecord;
-import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.badskater0729.worldwidechat.util.storage.MongoDBUtils;
 import com.badskater0729.worldwidechat.util.storage.SQLUtils;
 import com.github.benmanes.caffeine.cache.Cache;
@@ -61,16 +58,10 @@ import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 
-import static com.badskater0729.worldwidechat.util.CommonRefs.getMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.sendMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.closeAllInvs;
-import static com.badskater0729.worldwidechat.util.CommonRefs.debugMsg;
-import static com.badskater0729.worldwidechat.util.CommonRefs.runAsync;
-import static com.badskater0729.worldwidechat.util.CommonRefs.runAsyncRepeating;
-import static com.badskater0729.worldwidechat.util.CommonRefs.runSync;
+import com.badskater0729.worldwidechat.util.CommonRefs;
+
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedMCVersions;
-import static com.badskater0729.worldwidechat.util.CommonRefs.getServerInfo;
 
 public class WorldwideChat extends JavaPlugin {
 	public static int translatorFatalAbortSeconds = 10;
@@ -81,11 +72,20 @@ public class WorldwideChat extends JavaPlugin {
 
 	public static WorldwideChat instance;
 
-	public static ServerAdapter adapter;
+	private ServerAdapter adapter;
 	
 	private BukkitAudiences adventure;
-	private InventoryManager inventoryManager;
+	private WWCInventoryManager inventoryManager;
+
 	private ConfigurationHandler configurationManager;
+
+	private MongoDBUtils mongoSession;
+
+	private SQLUtils sqlSession;
+
+	private CommonRefs refs;
+
+	private ServerAdapterFactory serverFactory;
 	
 	private List<SupportedLang> supportedInputLangs = new CopyOnWriteArrayList<>();
 	private List<SupportedLang> supportedOutputLangs = new CopyOnWriteArrayList<>();
@@ -126,7 +126,7 @@ public class WorldwideChat extends JavaPlugin {
 		return adventure;
 	}
 	
-	public InventoryManager getInventoryManager() {
+	public WWCInventoryManager getInventoryManager() {
 		return inventoryManager;
 	}
 	
@@ -142,8 +142,10 @@ public class WorldwideChat extends JavaPlugin {
 	public void onEnable() {
 		// Initialize critical instances
 		instance = this; // Static instance of this class
+		serverFactory = new ServerAdapterFactory();
+		// TODO: Move BukkitAudiences to Adapters (therefore all of this)
 		adventure = BukkitAudiences.create(this); // Adventure
-		inventoryManager = new WWCInventoryManager(this); // InventoryManager for SmartInvs API
+		inventoryManager = new WWCInventoryManager(); // InventoryManager for SmartInvs API
 		inventoryManager.init(); // Init InventoryManager
 
 		// Check current server version
@@ -158,11 +160,11 @@ public class WorldwideChat extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new TranslateInGameListener(), this);
 		getServer().getPluginManager().registerEvents(new InventoryListener(), this);
 		getLogger().info(ChatColor.LIGHT_PURPLE
-				+ getMsg("wwcListenersInitialized"));
+				+ refs.getMsg("wwcListenersInitialized"));
 
 		// We made it!
-		debugMsg("Async tasks running: " + this.getActiveAsyncTasks());
-		getLogger().info(ChatColor.GREEN + getMsg("wwcEnabled", getPluginVersion()));
+		refs.debugMsg("Async tasks running: " + this.getActiveAsyncTasks());
+		getLogger().info(ChatColor.GREEN + refs.getMsg("wwcEnabled", getPluginVersion()));
 	}
 
 	@Override
@@ -181,6 +183,7 @@ public class WorldwideChat extends JavaPlugin {
 		instance = null;
 		supportedMCVersions = null;
 		supportedPluginLangCodes = null;
+		serverFactory = null;
 		adapter = null;
 
 		// All done.
@@ -196,12 +199,12 @@ public class WorldwideChat extends JavaPlugin {
                 case "wwc" -> {
                     // WWC version
                     final TextComponent versionNotice = Component.text()
-                            .content(getMsg("wwcVersion")).color(NamedTextColor.RED)
+                            .content(refs.getMsg("wwcVersion")).color(NamedTextColor.RED)
                             .append((Component.text().content(" " + getPluginVersion())).color(NamedTextColor.LIGHT_PURPLE))
                             .append((Component.text().content(" (Made with love by ")).color(NamedTextColor.GOLD))
                             .append((Component.text().content("BadSkater0729")).color(NamedTextColor.GOLD).decorate(TextDecoration.BOLD))
                             .append((Component.text().content(")").resetStyle()).color(NamedTextColor.GOLD)).build();
-                    sendMsg(sender, versionNotice);
+                    serverFactory.getCommonRefs().sendMsg(sender, versionNotice);
                     return true;
                 }
                 case "wwcr" -> {
@@ -314,14 +317,14 @@ public class WorldwideChat extends JavaPlugin {
 		/* Put plugin into a reloading state */
 		// Check if plugin was previously "disabled" or "invalid"
 		boolean invalidState = translatorName.equalsIgnoreCase("Invalid");
-		debugMsg("Is invalid state???:::" + invalidState);
+		refs.debugMsg("Is invalid state???:::" + invalidState);
 
 		if (translatorName.equals("Starting")) {
-			debugMsg("Cannot reload while reloading!");
+			refs.debugMsg("Cannot reload while reloading!");
 			return;
 		}
 		translatorName = "Starting";
-		closeAllInvs();
+		refs.closeAllInvs();
 		translatorErrorCount = 0;
 
 		/* Save main config on current thread */
@@ -332,10 +335,10 @@ public class WorldwideChat extends JavaPlugin {
 		/* Send start reload message */
 		if (inSender != null) {
 			final TextComponent wwcrBegin = Component.text()
-							.content(getMsg("wwcrBegin"))
+							.content(refs.getMsg("wwcrBegin"))
 							.color(NamedTextColor.YELLOW)
 					.build();
-			sendMsg(inSender, wwcrBegin);
+			serverFactory.getCommonRefs().sendMsg(inSender, wwcrBegin);
 		}
 		
 		/* Once it is safe to, cancelBackgroundTasks and loadPluginConfigs async so we don't stall the main thread */
@@ -349,17 +352,17 @@ public class WorldwideChat extends JavaPlugin {
 				/* Send successfully reloaded message */
 				if (inSender != null) {
 					final TextComponent wwcrSuccess = Component.text()
-									.content(getMsg("wwcrSuccess"))
+									.content(refs.getMsg("wwcrSuccess"))
 									.color(NamedTextColor.GREEN)
 							.append(Component.text()
 									.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
 									.color(NamedTextColor.YELLOW))
 							.build();
-					sendMsg(inSender, wwcrSuccess);
+					serverFactory.getCommonRefs().sendMsg(inSender, wwcrSuccess);
 				}
 			}
 		};
-		runAsync(reload);
+		refs.runAsync(reload);
 	}
 
 	/**
@@ -397,20 +400,20 @@ public class WorldwideChat extends JavaPlugin {
 				try {
 					for (BukkitWorker worker : Bukkit.getScheduler().getActiveWorkers()) {
 						if (worker.getOwner().equals(this) && worker.getTaskId() != taskID) {
-							debugMsg("Sending interrupt to task with ID " + worker.getTaskId() + "...");
+							refs.debugMsg("Sending interrupt to task with ID " + worker.getTaskId() + "...");
 							worker.getThread().interrupt();
 						}
 					}
 					// TODO: Replace with poll instead of sleep (somehow?)
 					Thread.sleep(100);
 				} catch (InterruptedException e) {
-					debugMsg("Thread successfully aborted and threw an InterruptedException.");
+					refs.debugMsg("Thread successfully aborted and threw an InterruptedException.");
 				}
 
 				// Disable once we reach timeout
 				if (System.currentTimeMillis() - asyncTasksStart > asyncTasksTimeoutMillis) {
 					asyncTasksTimeout = true;
-					debugMsg(
+					refs.debugMsg(
 							"Waited " + asyncTasksTimeoutSeconds + " seconds for " + this.getActiveAsyncTasks()
 									+ " remaining async tasks to complete. Disabling/reloading regardless...");
 					break;
@@ -418,12 +421,12 @@ public class WorldwideChat extends JavaPlugin {
 			}
 			final long asyncTasksTimeWaited = System.currentTimeMillis() - asyncTasksStart;
 			if (!asyncTasksTimeout && asyncTasksTimeWaited > 1) {
-				debugMsg("Waited " + asyncTasksTimeWaited + " ms for async tasks to finish.");
+				refs.debugMsg("Waited " + asyncTasksTimeWaited + " ms for async tasks to finish.");
 			}
 		}
 		
 		// Close all inventories
-		if (!isReloading) closeAllInvs();
+		if (!isReloading) refs.closeAllInvs();
 
 		// Cancel + remove all tasks
 		this.getServer().getScheduler().cancelTasks(this);
@@ -432,10 +435,10 @@ public class WorldwideChat extends JavaPlugin {
 		configurationManager.syncData(wasPreviouslyInvalid);
 
 		// Disconnect SQL
-		SQLUtils.disconnect();
+		if (sqlSession != null) sqlSession.disconnect();
 		
 		// Disconnect MongoDB
-		MongoDBUtils.disconnect();
+		if (mongoSession != null) mongoSession.disconnect();
 		
 		// Clear all active translating users, cache, playersUsingConfigGUI
 		supportedInputLangs.clear();
@@ -472,7 +475,7 @@ public class WorldwideChat extends JavaPlugin {
 				new UpdateChecker().run();
 			}
 		};
-		runAsyncRepeating(true, 0, configurationManager.getMainConfig().getInt("General.updateCheckerDelay") * 20, update);
+		refs.runAsyncRepeating(true, 0, configurationManager.getMainConfig().getInt("General.updateCheckerDelay") * 20, update);
 
 		// Schedule automatic user data sync
 		BukkitRunnable sync = new BukkitRunnable() {
@@ -481,7 +484,7 @@ public class WorldwideChat extends JavaPlugin {
 				new SyncUserData().run();
 			}
 		};
-        runAsyncRepeating(true, configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20,  configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20, sync);
+        refs.runAsyncRepeating(true, configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20,  configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20, sync);
 			
 		// Load saved user data
 		BukkitRunnable loadUserData = new BukkitRunnable() {
@@ -490,7 +493,7 @@ public class WorldwideChat extends JavaPlugin {
 				new LoadUserData().run();
 			}
 		};
-		runSync(loadUserData);
+		refs.runSync(loadUserData);
 
 		// Enable tab completers
 		if (isReloading) {
@@ -500,12 +503,12 @@ public class WorldwideChat extends JavaPlugin {
 					registerTabCompleters();
 				}
 			};
-			runSync(tab);
+			refs.runSync(tab);
 		} else {
 			registerTabCompleters();
 		}
 	}
-	
+
 	/**
 	  * Get active asynchronous tasks 
 	  * @return int - Number of active async tasks
@@ -537,7 +540,7 @@ public class WorldwideChat extends JavaPlugin {
 	private void checkMCVersion() {
 		/* MC Version check */
 		// Init vars
-		Pair<String, String> serverInfo = getServerInfo();
+		Pair<String, String> serverInfo = new CommonRefs().getServerInfo();
 		String type = serverInfo.getKey();
 		String version = serverInfo.getValue();
 
@@ -577,6 +580,7 @@ public class WorldwideChat extends JavaPlugin {
 			Class<?> clazz = Class.forName(adapterClassName);
 			Constructor<?> ctor = clazz.getConstructor(String.class); // Assuming the constructor takes a String for eaVer
 			adapter = (ServerAdapter) ctor.newInstance(outputVersion); // Cast to your ServerAdapter interface or appropriate type
+			refs = serverFactory.getCommonRefs();
 		} catch (ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException |
 				 InvocationTargetException e) {
 			e.printStackTrace();
@@ -594,10 +598,10 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean checkSenderIdentity(CommandSender sender) {
 		if (!(sender instanceof Player)) {
 			final TextComponent consoleNotice = Component.text()
-							.content(getMsg("wwcNoConsole"))
+							.content(refs.getMsg("wwcNoConsole"))
 							.color(NamedTextColor.RED)
 					.build();
-			sendMsg(sender, consoleNotice);
+			serverFactory.getCommonRefs().sendMsg(sender, consoleNotice);
 			return false;
 		}
 		return true;
@@ -614,14 +618,14 @@ public class WorldwideChat extends JavaPlugin {
 							.content("WorldwideChat is still initializing, please try again shortly.")
 							.color(NamedTextColor.YELLOW)
 					.build();
-			sendMsg(sender, notDone);
+			serverFactory.getCommonRefs().sendMsg(sender, notDone);
 			return false;
 		} else if (getTranslatorName().equals("Invalid")) {
 			final TextComponent invalid = Component.text()
-							.content(getMsg("wwcInvalidTranslator"))
+							.content(refs.getMsg("wwcInvalidTranslator"))
 							.color(NamedTextColor.RED)
 					.build();
-			sendMsg(sender, invalid);
+			serverFactory.getCommonRefs().sendMsg(sender, invalid);
 			return false;
 		}
 		return true;
@@ -639,14 +643,22 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/* Setters */
+	public void setMongoSession(MongoDBUtils i) {
+		mongoSession = i;
+	}
+
+	public void setSqlSession(SQLUtils i) {
+		sqlSession = i;
+	}
+
 	public void addActiveTranslator(ActiveTranslator i) {
 		activeTranslators.put(i.getUUID(), i);
-		debugMsg(i.getUUID() + " has been added (or overwrriten) to the internal active translator hashmap.");
+		refs.debugMsg(i.getUUID() + " has been added (or overwrriten) to the internal active translator hashmap.");
 	}
 
 	public void removeActiveTranslator(ActiveTranslator i) {
 		activeTranslators.remove(i.getUUID());
-		debugMsg(i.getUUID() + " has been removed from the internal active translator hashmap.");
+		refs.debugMsg(i.getUUID() + " has been removed from the internal active translator hashmap.");
 	}
 	
 	public void setInputLangs(List<SupportedLang> in) {
@@ -693,7 +705,7 @@ public class WorldwideChat extends JavaPlugin {
 	public void addPlayerUsingConfigurationGUI(UUID in) {
 		if (!playersUsingConfigGUI.contains(in.toString())) {
 			playersUsingConfigGUI.add(in.toString());
-			debugMsg("UUID " + in
+			refs.debugMsg("UUID " + in
 					+ " has been added (or overwrriten) to the internal hashmap of people that are using the configuration GUI.");
 			return;
 		}
@@ -705,7 +717,7 @@ public class WorldwideChat extends JavaPlugin {
 
 	public void removePlayerUsingConfigurationGUI(UUID in) {
 		playersUsingConfigGUI.remove(in.toString());
-		debugMsg("Player " + in
+		refs.debugMsg("Player " + in
 				+ " has been removed from the internal list of people that are using the configuration GUI.");
 	}
 	
@@ -729,17 +741,17 @@ public class WorldwideChat extends JavaPlugin {
 		
 		// Cache found, do not add
 		if (cache.getIfPresent(input) != null) {
-			debugMsg("Term already exists! Not adding.");
+			refs.debugMsg("Term already exists! Not adding.");
 			return;
 		}
 		
 		// Exceeds max size
 		long estimatedCacheSize = getEstimatedCacheSize();
-		debugMsg("Removed least used phrase in cache if at hard limit. Size after removal test: " + estimatedCacheSize);
+		refs.debugMsg("Removed least used phrase in cache if at hard limit. Size after removal test: " + estimatedCacheSize);
 		
 		// Put phrase after (potential) removal
 		cache.put(input, outputPhrase);
-		debugMsg("Added new phrase into cache! Size after addition: ");
+		refs.debugMsg("Added new phrase into cache! Size after addition: ");
 	}
 
 	public void removeCacheTerm(CachedTranslation i) {
@@ -754,7 +766,7 @@ public class WorldwideChat extends JavaPlugin {
 
 	public void removePlayerRecord(PlayerRecord i) {
 		playerRecords.remove(i.getUUID());
-		debugMsg("Removed player record of " + i.getUUID() + ".");
+		refs.debugMsg("Removed player record of " + i.getUUID() + ".");
 	}
 	
 	/**
@@ -808,6 +820,17 @@ public class WorldwideChat extends JavaPlugin {
 	}
 	
 	/* Getters */
+	public ServerAdapter getAdapter() {
+		return adapter;
+	}
+	public MongoDBUtils getMongoSession() {
+		return mongoSession;
+	}
+
+	public SQLUtils getSqlSession() {
+		return sqlSession;
+	}
+
 	public ActiveTranslator getActiveTranslator(Player in) {
 		return getActiveTranslator(in.getUniqueId());
 	}
@@ -829,7 +852,7 @@ public class WorldwideChat extends JavaPlugin {
 			return null;
 		
 		String out = cache.getIfPresent(in);
-		debugMsg("Cache lookup outcome: " + out);
+		refs.debugMsg("Cache lookup outcome: " + out);
 		
 		return out;
 	}

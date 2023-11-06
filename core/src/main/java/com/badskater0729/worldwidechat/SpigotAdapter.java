@@ -6,6 +6,11 @@ public class SpigotAdapter implements ServerAdapter {
         this.version = version;
     }
 
+    @Override
+    public String getVersion() {
+        return version;
+    }
+
     // TODO: DO NOT MODIFY THIS FILE. THIS IS A TEMP PLACEHOLDER.
     // ONCE PAPER ADAPTER HAS BEEN FULLY IMPLEMENTED, THE SPIGOT MODULE
     // WILL BE IMPLEMENTED AS THOROUGHLY AS PAPER.
