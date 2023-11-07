@@ -14,7 +14,8 @@ public class TestTranslationUtils {
 	private PlayerMock playerMock;
 	private PlayerMock secondPlayerMock;
 
-	private CommonRefs refs = new CommonRefs();
+	private WorldwideChat main = WorldwideChat.instance;
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 	public TestTranslationUtils(ServerMock server, WorldwideChat plugin, PlayerMock p1, PlayerMock p2) {
 		this.server = server;

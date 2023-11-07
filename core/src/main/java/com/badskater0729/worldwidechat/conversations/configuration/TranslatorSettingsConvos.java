@@ -25,14 +25,14 @@ public class TranslatorSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			((Player) context.getForWhom()).closeInventory();
 			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationCharacterLimitInput", "" + main.getConfigManager().getMainConfig().getInt("Translator.messageCharLimit"));
 		}
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			return refs.genericConfigConvo(input.intValue() > 0, context, "wwcConfigConversationCharacterLimitSuccess",
 					"Translator.messageCharLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
@@ -42,14 +42,14 @@ public class TranslatorSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			((Player) context.getForWhom()).closeInventory();
 			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationErrorLimitInput", "" + main.getConfigManager().getMainConfig().getInt("Translator.errorLimit"));
 		}
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			return refs.genericConfigConvo(input.intValue() > 0, context, "wwcConfigConversationErrorLimitSuccess",
 					"Translator.errorLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
@@ -59,14 +59,14 @@ public class TranslatorSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			((Player) context.getForWhom()).closeInventory();
 			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationRateLimitInput", "" + main.getConfigManager().getMainConfig().getInt("Translator.rateLimit"));
 		}
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			return refs.genericConfigConvo(input.intValue() > -1, context, "wwcConfigConversationRateLimitSuccess",
 					"Translator.rateLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
@@ -76,14 +76,14 @@ public class TranslatorSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			((Player) context.getForWhom()).closeInventory();
 			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationTranslationCacheInput", "" + main.getConfigManager().getMainConfig().getInt("Translator.translatorCacheSize"));
 		}
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			return refs.genericConfigConvo(input.intValue() > -1, context, "wwcConfigConversationTranslationCacheSuccess",
 					"Translator.translatorCacheSize", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
@@ -93,14 +93,14 @@ public class TranslatorSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			((Player) context.getForWhom()).closeInventory();
 			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationIgnoreErrorsInput", main.getConfigManager().getMainConfig().getList("Translator.errorsToIgnore") != null ? main.getConfigManager().getMainConfig().getList("Translator.errorsToIgnore").toString() : "empty");
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			if (input.equalsIgnoreCase("clear")) {
 				main.getConfigManager().getMainConfig().set("Translator.errorsToIgnore", new String[0]);
 				final TextComponent clearChange = Component.text()

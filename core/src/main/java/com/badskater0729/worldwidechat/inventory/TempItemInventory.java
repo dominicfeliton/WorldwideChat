@@ -17,7 +17,8 @@ import net.md_5.bungee.api.ChatColor;
 public class TempItemInventory implements InventoryProvider {
 
 	private ItemStack displayedItem;
-	private CommonRefs refs = new CommonRefs();
+	private WorldwideChat main = WorldwideChat.instance;
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 	public TempItemInventory(ItemStack displayedItem) {
 		this.displayedItem = displayedItem;

@@ -30,7 +30,7 @@ import com.google.gson.JsonParser;
 
 public class LibreTranslation extends BasicTranslation {
 
-	CommonRefs refs = new CommonRefs();
+	CommonRefs refs = main.getServerFactory().getCommonRefs();
 	public LibreTranslation(String textToTranslate, String inputLang, String outputLang) {
 		super(textToTranslate, inputLang, outputLang);
 	}

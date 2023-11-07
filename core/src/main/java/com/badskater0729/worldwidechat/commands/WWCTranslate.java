@@ -21,7 +21,7 @@ import com.badskater0729.worldwidechat.util.CommonRefs;
 public class WWCTranslate extends BasicCommand {
 
 	private WorldwideChat main = WorldwideChat.instance;
-	private CommonRefs refs = new CommonRefs();
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 	
 	private boolean isGlobal = this instanceof WWCGlobal;
 	private boolean isConsoleSender = sender instanceof ConsoleCommandSender;

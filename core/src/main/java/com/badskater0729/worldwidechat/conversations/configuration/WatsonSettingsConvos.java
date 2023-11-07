@@ -20,14 +20,14 @@ public class WatsonSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			((Player) context.getForWhom()).closeInventory();
 			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationWatsonAPIKeyInput", main.getConfigManager().getMainConfig().getString("Translator.watsonAPIKey"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationWatsonAPIKeySuccess",
 					new String[] {"Translator.watsonAPIKey", "Translator.useWatsonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv);
 		}
@@ -37,14 +37,14 @@ public class WatsonSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			((Player) context.getForWhom()).closeInventory();
 			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationWatsonURLInput", main.getConfigManager().getMainConfig().getString("Translator.watsonURL"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationWatsonURLSuccess",
 					new String[] {"Translator.watsonURL", "Translator.useWatsonTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv);
 		}

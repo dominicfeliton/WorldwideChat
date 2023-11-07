@@ -29,12 +29,12 @@ import com.badskater0729.worldwidechat.util.CommonRefs;
 public class MessagesOverridePossibleListGui implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
-	private CommonRefs refs = new CommonRefs();
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 	private WWCInventoryManager invManager = main.getInventoryManager();
 	
 	public SmartInventory overrideNewMessageSettings = SmartInventory.builder().id("overridePossibilitiesMenu")
-			.provider(new MessagesOverridePossibleListGui()).size(6, 9)
+			.provider(this).size(6, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
 			.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesPossibleOverrides"))
 	        .build();

@@ -20,14 +20,14 @@ public class LibreSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			((Player) context.getForWhom()).closeInventory();
 			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationLibreTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.libreAPIKey"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLibreTranslateApiKeySuccess",
 					new String[] {"Translator.libreAPIKey", "Translator.useLibreTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv);
 		}
@@ -37,14 +37,14 @@ public class LibreSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			((Player) context.getForWhom()).closeInventory();
 			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationLibreURLInput", main.getConfigManager().getMainConfig().getString("Translator.libreURL"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLibreURLSuccess",
 					new String[] {"Translator.libreURL", "Translator.useLibreTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv);
 		}

@@ -9,7 +9,7 @@ public class SyncUserData implements Runnable {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
-	private CommonRefs refs = new CommonRefs();
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 	
 	@Override
 	public void run() {

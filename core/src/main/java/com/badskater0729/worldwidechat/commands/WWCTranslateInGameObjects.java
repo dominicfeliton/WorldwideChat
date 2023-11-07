@@ -24,7 +24,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 	private boolean isConsoleSender = sender instanceof ConsoleCommandSender;
 	
 	private WorldwideChat main = WorldwideChat.instance;
-	private CommonRefs refs = new CommonRefs();
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 	
 	/* Process command */
 	@Override

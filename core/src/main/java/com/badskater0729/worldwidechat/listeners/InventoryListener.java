@@ -20,7 +20,7 @@ public class InventoryListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
 
-	private CommonRefs refs = new CommonRefs();
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInventoryCloseEvent(InventoryCloseEvent e) {

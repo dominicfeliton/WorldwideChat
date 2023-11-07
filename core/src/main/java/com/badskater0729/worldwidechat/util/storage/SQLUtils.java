@@ -10,7 +10,8 @@ import com.zaxxer.hikari.HikariDataSource;
 
 public class SQLUtils {
 
-	private CommonRefs refs = new CommonRefs();
+	private WorldwideChat main = WorldwideChat.instance;
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 	private HikariDataSource hikari;
 	private String host;
 	private String port;

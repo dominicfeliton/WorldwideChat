@@ -14,8 +14,6 @@ import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
 
 public class MongoDBUtils {
-
-	private CommonRefs refs = new CommonRefs();
 	private String host;
 	private String port;
 	private String databaseName;
@@ -24,6 +22,9 @@ public class MongoDBUtils {
 	private List<String> argList;
 
 	private MongoClient client;
+
+	private WorldwideChat main = WorldwideChat.instance;
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 	public MongoDBUtils(String host, String port, String databaseName, String username, String password, List<String> argList) {
 		this.host = host;

@@ -1,8 +1,6 @@
 package com.badskater0729.worldwidechat;
 
 import java.io.File;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -50,7 +48,6 @@ import com.badskater0729.worldwidechat.util.storage.SQLUtils;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 
-import fr.minuskube.inv.InventoryManager;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
@@ -71,10 +68,10 @@ public class WorldwideChat extends JavaPlugin {
 	public static final String messagesConfigVersion = "11042023-1"; // MMDDYYYY-revisionNumber
 
 	public static WorldwideChat instance;
-
-	private ServerAdapter adapter;
 	
 	private BukkitAudiences adventure;
+
+	private WorldwideChatHelper wwcHelper;
 	private WWCInventoryManager inventoryManager;
 
 	private ConfigurationHandler configurationManager;
@@ -83,9 +80,9 @@ public class WorldwideChat extends JavaPlugin {
 
 	private SQLUtils sqlSession;
 
-	private CommonRefs refs;
-
 	private ServerAdapterFactory serverFactory;
+
+	private CommonRefs refs;
 	
 	private List<SupportedLang> supportedInputLangs = new CopyOnWriteArrayList<>();
 	private List<SupportedLang> supportedOutputLangs = new CopyOnWriteArrayList<>();
@@ -143,24 +140,23 @@ public class WorldwideChat extends JavaPlugin {
 		// Initialize critical instances
 		instance = this; // Static instance of this class
 		serverFactory = new ServerAdapterFactory();
+
+		// Check current server version + set adapters
+		checkAndInitAdapters();
+
 		// TODO: Move BukkitAudiences to Adapters (therefore all of this)
-		adventure = BukkitAudiences.create(this); // Adventure
+		String currPlatform = serverFactory.getServerInfo().getKey();
+		if (currPlatform.equals("Bukkit") || currPlatform.equals("Spigot")) {
+			adventure = BukkitAudiences.create(this); // Adventure
+		}
 		inventoryManager = new WWCInventoryManager(); // InventoryManager for SmartInvs API
 		inventoryManager.init(); // Init InventoryManager
-
-		// Check current server version
-		checkMCVersion();
 
 		// Load plugin configs, check if they successfully initialized
 		loadPluginConfigs(false);
 
-		// EventHandlers + check for plugins
-		getServer().getPluginManager().registerEvents(new ChatListener(), this);
-		getServer().getPluginManager().registerEvents(new OnPlayerJoinListener(), this);
-		getServer().getPluginManager().registerEvents(new TranslateInGameListener(), this);
-		getServer().getPluginManager().registerEvents(new InventoryListener(), this);
-		getLogger().info(ChatColor.LIGHT_PURPLE
-				+ refs.getMsg("wwcListenersInitialized"));
+		// Register event handlers
+		wwcHelper.registerEventHandlers();
 
 		// We made it!
 		refs.debugMsg("Async tasks running: " + this.getActiveAsyncTasks());
@@ -184,7 +180,6 @@ public class WorldwideChat extends JavaPlugin {
 		supportedMCVersions = null;
 		supportedPluginLangCodes = null;
 		serverFactory = null;
-		adapter = null;
 
 		// All done.
 		getLogger().info("Disabled WorldwideChat version " + getPluginVersion() + ". Goodbye!");
@@ -204,7 +199,7 @@ public class WorldwideChat extends JavaPlugin {
                             .append((Component.text().content(" (Made with love by ")).color(NamedTextColor.GOLD))
                             .append((Component.text().content("BadSkater0729")).color(NamedTextColor.GOLD).decorate(TextDecoration.BOLD))
                             .append((Component.text().content(")").resetStyle()).color(NamedTextColor.GOLD)).build();
-                    serverFactory.getCommonRefs().sendMsg(sender, versionNotice);
+                    refs.sendMsg(sender, versionNotice);
                     return true;
                 }
                 case "wwcr" -> {
@@ -338,7 +333,7 @@ public class WorldwideChat extends JavaPlugin {
 							.content(refs.getMsg("wwcrBegin"))
 							.color(NamedTextColor.YELLOW)
 					.build();
-			serverFactory.getCommonRefs().sendMsg(inSender, wwcrBegin);
+			refs.sendMsg(inSender, wwcrBegin);
 		}
 		
 		/* Once it is safe to, cancelBackgroundTasks and loadPluginConfigs async so we don't stall the main thread */
@@ -358,7 +353,7 @@ public class WorldwideChat extends JavaPlugin {
 									.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
 									.color(NamedTextColor.YELLOW))
 							.build();
-					serverFactory.getCommonRefs().sendMsg(inSender, wwcrSuccess);
+					refs.sendMsg(inSender, wwcrSuccess);
 				}
 			}
 		};
@@ -447,6 +442,8 @@ public class WorldwideChat extends JavaPlugin {
 		activeTranslators.clear();
 		cache.invalidateAll();
 		cache.cleanUp();
+		// TODO: Check that cache works with Chat on Paper
+		// TODO: Add a function to get various debug info, such as cache contents/clear it
 	}
 
 	/* Load Plugin Configs */
@@ -535,27 +532,21 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	/**
-	 * Check server type/version, print to console if unsupported
+	 * Initialize adapters and check MC version/platform
 	 */
-	private void checkMCVersion() {
-		/* MC Version check */
+	private void checkAndInitAdapters() {
+		// TODO: Move this to WWCHelper
+
 		// Init vars
-		Pair<String, String> serverInfo = new CommonRefs().getServerInfo();
+		Pair<String, String> serverInfo = serverFactory.getServerInfo();
 		String type = serverInfo.getKey();
 		String version = serverInfo.getValue();
 
 		// Get adapter class name
 		String outputVersion = "";
-		String adapterClassName = "Bukkit";
 		switch (type) {
-			case "Bukkit", "Spigot" -> {
+			case "Bukkit", "Spigot", "Paper" -> {
 				// Raw Bukkit (not spigot) is not *explicitly* supported but should work
-				adapterClassName = "com.badskater0729.worldwidechat.SpigotAdapter";
-				getLogger().info("##### Detected supported platform: " + type + " #####");
-			}
-
-			case "Paper" -> {
-				adapterClassName = "com.badskater0729.worldwidechat." + type + "Adapter";
 				getLogger().info("##### Detected supported platform: " + type + " #####");
 			}
 
@@ -575,33 +566,23 @@ public class WorldwideChat extends JavaPlugin {
 			getLogger().warning("##### Unsupported MC version: " + version + ". Defaulting to " + outputVersion + "... #####");
 		}
 
-		// Load interface
-		try {
-			Class<?> clazz = Class.forName(adapterClassName);
-			Constructor<?> ctor = clazz.getConstructor(String.class); // Assuming the constructor takes a String for eaVer
-			adapter = (ServerAdapter) ctor.newInstance(outputVersion); // Cast to your ServerAdapter interface or appropriate type
-			refs = serverFactory.getCommonRefs();
-		} catch (ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException |
-				 InvocationTargetException e) {
-			e.printStackTrace();
-			getLogger().severe("Failed to initialize the adapter for type: " + type);
-			getLogger().severe("Please contact the developer if your server platform is supported!");
-			Bukkit.getPluginManager().disablePlugin(this); // Attempt to disable
-		}
+		// Load methods
+		refs = serverFactory.getCommonRefs();
+		wwcHelper = serverFactory.getWWCHelper();
 	}
 
-		/**
-          * Checks a sender if they are a player
-          * @param sender - CommandSender to be checked
-          * @return Boolean - Whether sender is allowed or not
-          */
+	/**
+	  * Checks a sender if they are a player
+	  * @param sender - CommandSender to be checked
+	  * @return Boolean - Whether sender is allowed or not
+	  */
 	private boolean checkSenderIdentity(CommandSender sender) {
 		if (!(sender instanceof Player)) {
 			final TextComponent consoleNotice = Component.text()
 							.content(refs.getMsg("wwcNoConsole"))
 							.color(NamedTextColor.RED)
 					.build();
-			serverFactory.getCommonRefs().sendMsg(sender, consoleNotice);
+			refs.sendMsg(sender, consoleNotice);
 			return false;
 		}
 		return true;
@@ -618,14 +599,14 @@ public class WorldwideChat extends JavaPlugin {
 							.content("WorldwideChat is still initializing, please try again shortly.")
 							.color(NamedTextColor.YELLOW)
 					.build();
-			serverFactory.getCommonRefs().sendMsg(sender, notDone);
+			refs.sendMsg(sender, notDone);
 			return false;
 		} else if (getTranslatorName().equals("Invalid")) {
 			final TextComponent invalid = Component.text()
 							.content(refs.getMsg("wwcInvalidTranslator"))
 							.color(NamedTextColor.RED)
 					.build();
-			serverFactory.getCommonRefs().sendMsg(sender, invalid);
+			refs.sendMsg(sender, invalid);
 			return false;
 		}
 		return true;
@@ -820,9 +801,8 @@ public class WorldwideChat extends JavaPlugin {
 	}
 	
 	/* Getters */
-	public ServerAdapter getAdapter() {
-		return adapter;
-	}
+	public ServerAdapterFactory getServerFactory() { return serverFactory; }
+
 	public MongoDBUtils getMongoSession() {
 		return mongoSession;
 	}

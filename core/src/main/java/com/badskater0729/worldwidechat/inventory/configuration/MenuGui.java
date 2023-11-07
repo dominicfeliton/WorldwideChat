@@ -34,7 +34,8 @@ import static com.badskater0729.worldwidechat.WorldwideChat.instance;
 public class MenuGui implements InventoryProvider {
 	
 	// Thank you, H***** for the help with this class!!
-	private CommonRefs refs = new CommonRefs();
+	private WorldwideChat main = WorldwideChat.instance;
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 	private WWCInventoryManager invManager = instance.getInventoryManager();
 
@@ -403,7 +404,7 @@ public class MenuGui implements InventoryProvider {
 	public void update(Player player, InventoryContents contents) {}
 	
 	private SmartInventory genSmartInv(String id, int x, int y, ChatColor col, String titleTag, String[] args) {
-		CommonRefs refs = new CommonRefs();
+		CommonRefs refs = main.getServerFactory().getCommonRefs();
 		return SmartInventory.builder().id(id)
 				.provider(this).size(x, y)
 				.manager(WorldwideChat.instance.getInventoryManager())
@@ -412,7 +413,7 @@ public class MenuGui implements InventoryProvider {
 	}
 	
 	private SmartInventory genSmartInv(String id, int x, int y, ChatColor col, String titleTag) {
-		CommonRefs refs = new CommonRefs();
+		CommonRefs refs = main.getServerFactory().getCommonRefs();
 		return SmartInventory.builder().id(id)
 		.provider(this).size(x, y)
 		.manager(WorldwideChat.instance.getInventoryManager())

@@ -20,14 +20,14 @@ public class GoogleSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			((Player) context.getForWhom()).closeInventory();
 			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationGoogleTranslateAPIKeyInput", main.getConfigManager().getMainConfig().getString("Translator.googleTranslateAPIKey"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationGoogleTranslateAPIKeySuccess",
 					new String[] {"Translator.googleTranslateAPIKey", "Translator.useGoogleTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv);
 		}

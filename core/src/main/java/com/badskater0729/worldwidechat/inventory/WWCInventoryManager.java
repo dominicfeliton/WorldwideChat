@@ -31,7 +31,7 @@ import net.kyori.adventure.text.format.TextDecoration;
 public class WWCInventoryManager extends InventoryManager {
 	
 	private static WorldwideChat main = WorldwideChat.instance;
-	private CommonRefs refs = new CommonRefs();
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 	
 	public WWCInventoryManager() {
 		super(main);

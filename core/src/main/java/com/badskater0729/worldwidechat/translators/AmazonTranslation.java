@@ -51,7 +51,7 @@ public class AmazonTranslation extends BasicTranslation {
 
 	private class translationTask implements Callable<String> {
 
-		CommonRefs refs = new CommonRefs();
+		CommonRefs refs = main.getServerFactory().getCommonRefs();
 		@Override
 		public String call() throws Exception {
 			/* Initialize AWS Creds + Translation Object */

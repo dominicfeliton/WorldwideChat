@@ -20,14 +20,14 @@ private static WorldwideChat main = WorldwideChat.instance;
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			((Player) context.getForWhom()).closeInventory();
 			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationDeepLTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.deepLAPIKey"));
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
-			CommonRefs refs = new CommonRefs();
+			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationDeepLTranslateApiKeySuccess",
 					new String[] {"Translator.deepLAPIKey", "Translator.useDeepLTranslate"}, new Object[] {input, false}, CONFIG_GUI_TAGS.DEEP_TRANS_SET.smartInv);
 		}

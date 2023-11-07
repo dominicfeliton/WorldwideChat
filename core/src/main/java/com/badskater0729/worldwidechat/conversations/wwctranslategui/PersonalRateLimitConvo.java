@@ -2,6 +2,7 @@ package com.badskater0729.worldwidechat.conversations.wwctranslategui;
 
 import java.util.UUID;
 
+import com.badskater0729.worldwidechat.WorldwideChat;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.conversations.ConversationContext;
@@ -21,6 +22,8 @@ public class PersonalRateLimitConvo extends NumericPrompt {
 
 	private ActiveTranslator currTranslator;
 
+	private WorldwideChat main = WorldwideChat.instance;
+
 	public PersonalRateLimitConvo(ActiveTranslator inTranslator) {
 		currTranslator = inTranslator;
 	}
@@ -28,7 +31,7 @@ public class PersonalRateLimitConvo extends NumericPrompt {
 	@Override
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
-		CommonRefs refs = new CommonRefs();
+		CommonRefs refs = main.getServerFactory().getCommonRefs();
 		((Player) context.getForWhom()).closeInventory();
 		return ChatColor.AQUA + refs.getMsg("wwctGUIConversationRateLimit", currTranslator.getRateLimit() + "");
 	}

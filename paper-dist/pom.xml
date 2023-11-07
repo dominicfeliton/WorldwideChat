@@ -8,7 +8,7 @@
     <version>1.15.0</version>
   </parent>
 
-  <artifactId>WorldwideChat-dist</artifactId>
+  <artifactId>WorldwideChat-paper-dist</artifactId>
   <version>${project.parent.version}</version>
   <packaging>jar</packaging>
 
@@ -19,6 +19,12 @@
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>io.papermc.paper</groupId>
+      <artifactId>paper-api</artifactId>
+      <version>1.20.2-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
     <dependency>
       <groupId>com.badskater0729.worldwidechat</groupId>
       <artifactId>WorldwideChat-core</artifactId>
@@ -31,29 +37,11 @@
       <version>1.15.0</version>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>com.badskater0729.worldwidechat</groupId>
-      <artifactId>WorldwideChat-spigot</artifactId>
-      <version>1.15.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.spigotmc</groupId>
-      <artifactId>spigot-api</artifactId>
-      <version>1.20.2-R0.1-SNAPSHOT</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.papermc.paper</groupId>
-      <artifactId>paper-api</artifactId>
-      <version>1.20.2-R0.1-SNAPSHOT</version>
-      <scope>provided</scope>
-    </dependency>
   </dependencies>
 
   <build>
-    <directory>../target</directory>
-    <finalName>${project.parent.artifactId}</finalName>
+    <directory>../paper-target</directory>
+    <finalName>${project.parent.artifactId}-paper</finalName>
     <resources>
       <resource>
         <targetPath>.</targetPath>
@@ -110,7 +98,6 @@
               <include>org.apache.commons:commons-lang3</include>
               <include>org.apache.commons:commons-text</include>
               <include>commons-lang:commons-lang</include>
-              <include>net.kyori:*</include>
               <include>org.jetbrains.kotlin:kotlin-stdlib</include>
               <include>com.squareup.okio:okio</include>
               <include>com.amazonaws:*</include>
@@ -177,22 +164,8 @@
                 <include>**</include>
               </includes>
             </filter>
-            <filter>
-              <artifact>com.badskater0729.worldwidechat:WorldwideChat-spigot</artifact>
-              <includes>
-                <include>**</include>
-              </includes>
-            </filter>
           </filters>
           <relocations>
-            <relocation>
-              <pattern>net.kyori.examination</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.net.kyori.examination</shadedPattern>
-            </relocation>
-            <relocation>
-              <pattern>net.kyori.adventure</pattern>
-              <shadedPattern>com.badskater0729.worldwidechat.libs.net.kyori.adventure</shadedPattern>
-            </relocation>
             <relocation>
               <pattern>org.apache</pattern>
               <shadedPattern>com.badskater0729.worldwidechat.libs.org.apache</shadedPattern>
@@ -297,7 +270,6 @@
           </execution>
         </executions>
       </plugin>
-
     </plugins>
     <sourceDirectory>${basedir}/../core/src/main/java</sourceDirectory>
   </build>

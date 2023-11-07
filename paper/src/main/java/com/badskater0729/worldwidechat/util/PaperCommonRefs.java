@@ -18,7 +18,7 @@ public class PaperCommonRefs extends CommonRefs {
         try {
             //Audience adventureSender = main.adventure().sender(sender);
             //TODO: Why doesn't debugMsg call work here?
-            main.getLogger().info("PAPER!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            debugMsg("Paper sendMsg");
             final TextComponent outMessage = Component.text().append(main.getPluginPrefix().asComponent())
                     .append(Component.text().content(" "))
                     .append(originalMessage.asComponent())

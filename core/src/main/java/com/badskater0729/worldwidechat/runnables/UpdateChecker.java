@@ -29,7 +29,7 @@ public class UpdateChecker implements Runnable {
 	
 	private WorldwideChat main = WorldwideChat.instance;
 
-	private CommonRefs refs = new CommonRefs();
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 	private Logger log = main.getLogger();
 	
 	@Override

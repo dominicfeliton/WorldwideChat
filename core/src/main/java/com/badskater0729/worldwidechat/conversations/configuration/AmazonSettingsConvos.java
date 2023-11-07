@@ -17,7 +17,7 @@ public class AmazonSettingsConvos {
 	private static WorldwideChat main = WorldwideChat.instance;
 	
 	public static class AccessKey extends StringPrompt {
-		private CommonRefs refs = new CommonRefs();
+		private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 		@Override
 		public String getPromptText(ConversationContext context) {
@@ -34,7 +34,7 @@ public class AmazonSettingsConvos {
 	}
 	
 	public static class Region extends StringPrompt {
-		private CommonRefs refs = new CommonRefs();
+		private CommonRefs refs = main.getServerFactory().getCommonRefs();
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
@@ -50,7 +50,7 @@ public class AmazonSettingsConvos {
 	}
 	
 	public static class SecretKey extends StringPrompt {
-		private CommonRefs refs = new CommonRefs();
+		private CommonRefs refs = main.getServerFactory().getCommonRefs();
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */

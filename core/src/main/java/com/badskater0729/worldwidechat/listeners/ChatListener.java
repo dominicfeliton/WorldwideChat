@@ -23,7 +23,7 @@ import com.badskater0729.worldwidechat.util.CommonRefs;
 public class ChatListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
-	private CommonRefs refs = new CommonRefs();
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 	
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerChat(AsyncPlayerChatEvent event) {

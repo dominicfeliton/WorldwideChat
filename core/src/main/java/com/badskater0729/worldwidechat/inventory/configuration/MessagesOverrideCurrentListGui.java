@@ -28,7 +28,7 @@ import com.badskater0729.worldwidechat.util.CommonRefs;
 public class MessagesOverrideCurrentListGui implements InventoryProvider {
 
 	private WorldwideChat main = WorldwideChat.instance;
-	private CommonRefs refs = new CommonRefs();
+	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 	private WWCInventoryManager invManager = main.getInventoryManager();
 	

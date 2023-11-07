@@ -65,57 +65,6 @@ public class CommonRefs {
 			"el", "gu", "ht", "ha", "he", "hi", "hu", "is", "id", "it", "ja", "kn", "kk", "ko", "lv", "lt", "mk", "mr", "ms",
 			"ml", "mt", "mn", "no", "fa", "pa", "ps", "pl", "pt", "pt-PT", "ro", "ru", "sr", "si", "sk", "sl", "so", "es", "es-MX",
 			"sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy" };
-	
-	/* Getters */
-	public LinkedHashMap<String, String> getSupportedServerTypes() {
-		// ALWAYS KEEP NEWEST FORKS FIRST
-		// EX: Bukkit -> Spigot -> Paper
-		LinkedHashMap<String, String> serverTypes = new LinkedHashMap<>();
-		serverTypes.put("Bukkit", "org.bukkit.Bukkit");
-		serverTypes.put("Spigot", "org.spigotmc.SpigotConfig");
-		serverTypes.put("Paper", "com.destroystokyo.paper.PaperWorldConfig");
-
-		//serverTypes.put("BungeeCord", "net.md_5.bungee.api.ProxyServer");
-		//serverTypes.put("Velocity", "com.velocitypowered.proxy.Velocity");
-
-		return serverTypes;
-	}
-
-	/**
-	 * Check server type/version
-	 */
-	public Pair<String, String> getServerInfo() {
-		String serverPlatform = "Unknown";
-		String serverVersion = "";
-
-		/* Find specific server */
-		for (Map.Entry<String, String> entry : getSupportedServerTypes().entrySet()) {
-			try {
-				Class.forName(entry.getValue());
-
-				// We found class but continue loop, may be a fork (Bukkit -> Spigot -> Paper)
-				serverPlatform = entry.getKey();
-			} catch (ClassNotFoundException e) {}
-		}
-
-		/* Version check */
-		switch (serverPlatform) {
-			case "Bukkit":
-			case "Spigot":
-			case "Paper":
-				serverVersion = Bukkit.getServer().getVersion();
-				break;
-			case "Folia":
-				// TODO
-				serverVersion = "";
-				break;
-			default:
-				serverVersion = "";
-				break;
-		}
-
-		return Pair.of(serverPlatform, serverVersion);
-	}
 
 	public void runAsync(BukkitRunnable in) {
 		runAsync(true, in);
@@ -354,7 +303,6 @@ public class CommonRefs {
 	  */
 	public void sendMsg(CommandSender sender, TextComponent originalMessage) {
 		try {
-			main.getLogger().info("SPIGOT :(");
 			Audience adventureSender = main.adventure().sender(sender);
 			final TextComponent outMessage = Component.text().append(main.getPluginPrefix().asComponent())
 					.append(Component.text().content(" "))
