@@ -18,7 +18,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PaperChatListener extends ChatListener implements Listener {
+public class PaperChatListener implements Listener {
 
     private WorldwideChat main = WorldwideChat.instance;
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
@@ -27,6 +27,12 @@ public class PaperChatListener extends ChatListener implements Listener {
     public void onPlayerChat(AsyncChatEvent event) {
         try {
             // TODO: This does not work verify why
+            for (Audience eaRecipient : event.viewers()) {
+                if (eaRecipient instanceof Player) {
+                    refs.debugMsg("Test::: " + ((Player)eaRecipient).getName());
+                }
+            }
+
             String originalText = LegacyComponentSerializer.legacyAmpersand().serialize(event.message());
 
             /* Original WWC functionality/Translate Outgoing Messages */
@@ -54,11 +60,12 @@ public class PaperChatListener extends ChatListener implements Listener {
                 ActiveTranslator testTranslator = main.getActiveTranslator(currPlayer.getUniqueId());
                 String testInLang = testTranslator.getInLangCode();
                 String testOutLang = testTranslator.getOutLangCode();
-                if ((   /* Check if this testTranslator wants their incoming messages to be translated */
+                if ((   // Check if this testTranslator wants their incoming messages to be translated
                         !currTranslator.getUUID().equals(testTranslator.getUUID()) && main.isActiveTranslator(currPlayer) && testTranslator.getTranslatingChatIncoming())
-                        /* Check if this testTranslator doesn't already want the current chat message */
+                        // Check if this testTranslator doesn't already want the current chat message
                         && !(currInLang.equals(testInLang) && currOutLang.equals(testOutLang))) {
-                    /* Send the message in a new task, to avoid delaying the chat message for others */
+                    // Send the message in a new task, to avoid delaying the chat message for others
+                    refs.debugMsg("???");
                     BukkitRunnable chatHover = new BukkitRunnable() {
                         @Override
                         public void run() {

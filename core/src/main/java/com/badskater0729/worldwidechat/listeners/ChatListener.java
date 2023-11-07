@@ -27,8 +27,9 @@ public class ChatListener implements Listener {
 	
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
+
 		try {
-			/* Original WWC functionality/Translate Outgoing Messages */
+			// Original WWC functionality/Translate Outgoing Messages
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
 			String currInLang = currTranslator.getInLangCode();
 			String currOutLang = currTranslator.getOutLangCode();
@@ -37,17 +38,17 @@ public class ChatListener implements Listener {
 				event.setMessage(refs.translateText(event.getMessage(), event.getPlayer()));
 			}
 			
-			/* New WWC functionality/Translate Incoming Messages */
+			// New WWC functionality/Translate Incoming Messages
 			List<Player> unmodifiedMessageRecipients = new ArrayList<Player>();
 			for (Player eaRecipient : event.getRecipients()) {
 				ActiveTranslator testTranslator = main.getActiveTranslator(eaRecipient.getUniqueId());
 				String testInLang = testTranslator.getInLangCode();
 				String testOutLang = testTranslator.getOutLangCode();
-				if ((   /* Check if this testTranslator wants their incoming messages to be translated */
+				if ((   // Check if this testTranslator wants their incoming messages to be translated
 						!currTranslator.getUUID().equals(testTranslator.getUUID()) && main.isActiveTranslator(eaRecipient) && testTranslator.getTranslatingChatIncoming())
-						/* Check if this testTranslator doesn't already want the current chat message */
+						// Check if this testTranslator doesn't already want the current chat message
 						&& !(currInLang.equals(testInLang) && currOutLang.equals(testOutLang))) {
-					/* Send the message in a new task, to avoid delaying the chat message for others */
+					// Send the message in a new task, to avoid delaying the chat message for others
 					BukkitRunnable chatHover = new BukkitRunnable() {
 						@Override
 						public void run() {

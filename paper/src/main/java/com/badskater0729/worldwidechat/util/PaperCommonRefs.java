@@ -23,11 +23,7 @@ public class PaperCommonRefs extends CommonRefs {
                     .append(Component.text().content(" "))
                     .append(originalMessage.asComponent())
                     .build();
-            if (sender instanceof ConsoleCommandSender) {
-                main.getServer().getConsoleSender().sendMessage((ChatColor.translateAlternateColorCodes('&', LegacyComponentSerializer.legacyAmpersand().serialize(outMessage))));
-            } else {
-                sender.sendMessage(outMessage);
-            }
+            sender.sendMessage(outMessage);
         } catch (IllegalStateException e) {}
     }
 
