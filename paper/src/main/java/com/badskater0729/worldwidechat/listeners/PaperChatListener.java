@@ -26,12 +26,7 @@ public class PaperChatListener implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPlayerChat(AsyncChatEvent event) {
         try {
-            // TODO: This does not work verify why
-            for (Audience eaRecipient : event.viewers()) {
-                if (eaRecipient instanceof Player) {
-                    refs.debugMsg("Test::: " + ((Player)eaRecipient).getName());
-                }
-            }
+            // TODO: Revisit and check if we are running async, do not spawn new task if we are (for both listeners)
 
             String originalText = LegacyComponentSerializer.legacyAmpersand().serialize(event.message());
 
