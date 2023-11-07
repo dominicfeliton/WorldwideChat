@@ -29,5 +29,5 @@ jobs:
       run: mkdir staging && cp spigot-target/WorldwideChat-spigot.jar staging/WorldwideChat-spigot.jar && cp paper-target/WorldwideChat-paper.jar staging/WorldwideChat-paper.jar
     - uses: actions/upload-artifact@v3
       with:
-        name: Upload Final WWC JARs
+        name: WWC JARs
         path: staging
