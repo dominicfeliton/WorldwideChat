@@ -77,6 +77,7 @@ public class PaperChatListener implements Listener {
                                         .hoverEvent(HoverEvent.showText(Component.text(originalText).decorate(TextDecoration.ITALIC)));
                             }
                             try {
+                                // TODO for both listeners: check if player still exists before sending message
                                 currPlayer.sendMessage(hoverOutMessage);
                             } catch (IllegalStateException e) {}
                         }
