@@ -3,6 +3,7 @@ package com.badskater0729.worldwidechat.listeners;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
 import com.badskater0729.worldwidechat.util.CommonRefs;
+import io.papermc.paper.chat.ChatRenderer;
 import io.papermc.paper.event.player.AsyncChatEvent;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
@@ -27,8 +28,7 @@ public class PaperChatListener implements Listener {
     public void onPlayerChat(AsyncChatEvent event) {
         try {
             // TODO: Revisit and check if we are running async, do not spawn new task if we are (for both listeners)
-
-            String originalText = LegacyComponentSerializer.legacyAmpersand().serialize(event.message());
+            String originalText = LegacyComponentSerializer.legacyAmpersand().serialize(event.originalMessage());
 
             /* Original WWC functionality/Translate Outgoing Messages */
             ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
@@ -41,12 +41,16 @@ public class PaperChatListener implements Listener {
             }
 
             /* New WWC functionality/Translate Incoming Messages */
+            Component formattedMessage = event.renderer().render(event.getPlayer(), event.getPlayer().displayName(), event.message(), Audience.audience(event.viewers()));
+            String formattedOriginalText = LegacyComponentSerializer.legacyAmpersand().serialize(formattedMessage);
+
             List<Audience> unmodifiedMessageRecipients = new ArrayList<Audience>();
             for (Audience eaRecipient : event.viewers()) {
                 refs.debugMsg("Checking recipient");
                 // Do not handle non-players
                 if (!(eaRecipient instanceof Player)) {
                     refs.debugMsg("Recipient is not a player");
+                    unmodifiedMessageRecipients.add(eaRecipient);
                     continue;
                 }
 
@@ -64,12 +68,12 @@ public class PaperChatListener implements Listener {
                     BukkitRunnable chatHover = new BukkitRunnable() {
                         @Override
                         public void run() {
-                            String translation = refs.translateText(originalText + " (Translated)", currPlayer);
+                            String translation = refs.translateText(formattedOriginalText + " (Translated)", currPlayer);
                             Component hoverOutMessage = LegacyComponentSerializer.legacyAmpersand().deserialize(translation);
 
                             if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
                                 hoverOutMessage = hoverOutMessage
-                                        .hoverEvent(HoverEvent.showText(Component.text(originalText).decorate(TextDecoration.ITALIC)));
+                                        .hoverEvent(HoverEvent.showText(Component.text(formattedOriginalText).decorate(TextDecoration.ITALIC)));
                             }
                             try {
                                 // TODO for both listeners: check if player still exists before sending message
