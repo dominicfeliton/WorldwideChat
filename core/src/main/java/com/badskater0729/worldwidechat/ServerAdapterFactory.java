@@ -98,14 +98,11 @@ public class ServerAdapterFactory {
                     Class clazz = Class.forName(entry.getValue());
                     Constructor<?> constClazz = clazz.getConstructor(parameterTypes);
                     return constClazz.newInstance();
-                } else {
-                    // Return a class with no parameters in constructor
-                    if (entry.getKey().equals(currPlatform)) {
-                        main.getLogger().info("Going with: " + entry.getKey() + " and " + entry.getValue());
-                        Class clazz = Class.forName(entry.getValue());
-                        Constructor<?> constClazz = clazz.getConstructor();
-                        return constClazz.newInstance();
-                    }
+                // Return a class with no parameters in constructor (parameterTypes == null)
+                } else if (entry.getKey().equals(currPlatform)) {
+                    Class clazz = Class.forName(entry.getValue());
+                    Constructor<?> constClazz = clazz.getConstructor();
+                    return constClazz.newInstance();
                 }
             }
         } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException |

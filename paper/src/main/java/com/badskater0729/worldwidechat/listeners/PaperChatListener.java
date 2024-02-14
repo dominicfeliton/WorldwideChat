@@ -41,21 +41,18 @@ public class PaperChatListener implements Listener {
             }
 
             /* New WWC functionality/Translate Incoming Messages */
-            Component formattedMessage = event.renderer().render(event.getPlayer(), event.getPlayer().displayName(), event.message(), Audience.audience(event.viewers()));
-            String formattedOriginalText = LegacyComponentSerializer.legacyAmpersand().serialize(formattedMessage);
+            Component formattedMsg = event.renderer().render(event.getPlayer(), event.getPlayer().displayName(), event.message(), Audience.audience(event.viewers()));
+            String formattedMsgStr = LegacyComponentSerializer.legacyAmpersand().serialize(formattedMsg);
 
             List<Audience> unmodifiedMessageRecipients = new ArrayList<Audience>();
             for (Audience eaRecipient : event.viewers()) {
-                refs.debugMsg("Checking recipient");
                 // Do not handle non-players
-                if (!(eaRecipient instanceof Player)) {
-                    refs.debugMsg("Recipient is not a player");
+                if (!(eaRecipient instanceof Player currPlayer)) {
+                    refs.debugMsg("Ignoring Console");
                     unmodifiedMessageRecipients.add(eaRecipient);
                     continue;
                 }
 
-                Player currPlayer = (Player) eaRecipient;
-                refs.debugMsg("Checks passed " + currPlayer.getName());
                 ActiveTranslator testTranslator = main.getActiveTranslator(currPlayer.getUniqueId());
                 String testInLang = testTranslator.getInLangCode();
                 String testOutLang = testTranslator.getOutLangCode();
@@ -64,21 +61,18 @@ public class PaperChatListener implements Listener {
                         // Check if this testTranslator doesn't already want the current chat message
                         && !(currInLang.equals(testInLang) && currOutLang.equals(testOutLang))) {
                     // Send the message in a new task, to avoid delaying the chat message for others
-                    refs.debugMsg("???");
                     BukkitRunnable chatHover = new BukkitRunnable() {
                         @Override
                         public void run() {
-                            String translation = refs.translateText(formattedOriginalText + " (Translated)", currPlayer);
+                            String translation = refs.translateText(formattedMsgStr + " (Translated)", currPlayer);
                             Component hoverOutMessage = LegacyComponentSerializer.legacyAmpersand().deserialize(translation);
 
+                            // TODO: Make this a translator feature alongside a config option
                             if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
                                 hoverOutMessage = hoverOutMessage
-                                        .hoverEvent(HoverEvent.showText(Component.text(formattedOriginalText).decorate(TextDecoration.ITALIC)));
+                                        .hoverEvent(HoverEvent.showText(Component.text(formattedMsgStr).decorate(TextDecoration.ITALIC)));
                             }
-                            try {
-                                // TODO for both listeners: check if player still exists before sending message
-                                currPlayer.sendMessage(hoverOutMessage);
-                            } catch (IllegalStateException e) {}
+                            if (currPlayer.isOnline()) currPlayer.sendMessage(hoverOutMessage);
                         }
                     };
                     refs.runAsync(chatHover);

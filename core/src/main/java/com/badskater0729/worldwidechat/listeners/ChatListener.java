@@ -65,7 +65,7 @@ public class ChatListener implements Listener {
 										.build();
 							}
 							try {
-							    main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
+								if (eaRecipient.isOnline()) main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
 							} catch (IllegalStateException e) {}
 						}
 					};

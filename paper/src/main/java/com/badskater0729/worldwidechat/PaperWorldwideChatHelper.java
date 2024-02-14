@@ -20,7 +20,7 @@ public class PaperWorldwideChatHelper extends WorldwideChatHelper {
     public void registerEventHandlers() {
         // EventHandlers + check for plugins
         PluginManager pluginManager = main.getServer().getPluginManager();
-        main.getLogger().info("Registering paper chat listener...");
+        main.getLogger().info("Registering Paper chat listener...");
         pluginManager.registerEvents(new PaperChatListener(), main);
         pluginManager.registerEvents(new OnPlayerJoinListener(), main);
         pluginManager.registerEvents(new TranslateInGameListener(), main);
