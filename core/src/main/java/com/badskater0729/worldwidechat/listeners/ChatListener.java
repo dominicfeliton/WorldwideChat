@@ -29,6 +29,11 @@ public class ChatListener implements Listener {
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
 
 		try {
+			if (!event.isAsynchronous()) {
+				refs.debugMsg("chat event not async, skipping");
+				return;
+			}
+
 			// Original WWC functionality/Translate Outgoing Messages
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
 			String currInLang = currTranslator.getInLangCode();
@@ -44,32 +49,28 @@ public class ChatListener implements Listener {
 				ActiveTranslator testTranslator = main.getActiveTranslator(eaRecipient.getUniqueId());
 				String testInLang = testTranslator.getInLangCode();
 				String testOutLang = testTranslator.getOutLangCode();
-				if ((   // Check if this testTranslator wants their incoming messages to be translated
+				if ((   // Check if this translator wants their incoming messages to be translated
 						!currTranslator.getUUID().equals(testTranslator.getUUID()) && main.isActiveTranslator(eaRecipient) && testTranslator.getTranslatingChatIncoming())
-						// Check if this testTranslator doesn't already want the current chat message
+						// Check if a previously outgoing translation was NOT what this user wants
 						&& !(currInLang.equals(testInLang) && currOutLang.equals(testOutLang))) {
-					// Send the message in a new task, to avoid delaying the chat message for others
-					BukkitRunnable chatHover = new BukkitRunnable() {
-						@Override
-						public void run() {
-							String translation = refs.translateText(event.getMessage() + " (Translated)", eaRecipient);
-							String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
-							
-							TextComponent hoverOutMessage = Component.text()
-									.content(outMessageWithoutHover)
-									.build();
-			                if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
-								hoverOutMessage = Component.text()
-										.content(outMessageWithoutHover)
-										.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
-										.build();
-							}
-							try {
-								if (eaRecipient.isOnline()) main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
-							} catch (IllegalStateException e) {}
-						}
-					};
-					refs.runAsync(chatHover);
+
+					// Translate message + get original format
+					String translation = refs.translateText(event.getMessage() + " (Translated)", eaRecipient);
+					String outMessageWithoutHover = String.format(event.getFormat(), event.getPlayer().getDisplayName(), translation);
+
+					// Convert to TextComponent
+					TextComponent hoverOutMessage = Component.text()
+							.content(outMessageWithoutHover)
+							.build();
+					if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
+						hoverOutMessage = Component.text()
+								.content(outMessageWithoutHover)
+								.hoverEvent(HoverEvent.showText(Component.text(event.getMessage()).decorate(TextDecoration.ITALIC)))
+								.build();
+					}
+					try {
+						main.adventure().sender(eaRecipient).sendMessage(hoverOutMessage);
+					} catch (IllegalStateException e) {}
 				} else {
 					unmodifiedMessageRecipients.add(eaRecipient);
 				}
