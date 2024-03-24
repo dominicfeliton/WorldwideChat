@@ -39,7 +39,6 @@ Messages:
   wwcInvalidLang: Сіздің config.yml ішіндегі жарамсыз тіл. EN үшін дефолт...
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon облысы сәтті орнату.
   wwcConfigRateLimitEnabled: Жаһандық мөлшерлеме лимиті қосылып, {0} секундқа орнатылды.
-  wwcBadPerms: Сізде бұл пәрменді орындау үшін қажетті рұқсаттар жоқ!
   wwcConfigGUILangButton: Плагин тілін өзгерту
   wwctGUISignButton: Toggle белгісі аударма
   wwcUpdaterOutOfDate: WorldWidechat күннен тыс. Соңғы нұсқаға жаңартыңыз, {0}.
@@ -458,4 +457,5 @@ Messages:
   wwcsActiveTransEntity: 'Белсенді аудармашы аударма субъектісі: {0}'
   wwcSupportedServer: WorldwideChat-ты {0} үшін инициализациялау...
   wwcSupportedVersion: '{0} нұсқасының мүмкіндіктерін қосу...'
+  wwcBadPerms: 'Сізде осы пәрменді орындау үшін қажетті рұқсаттар жоқ: {0}'
 

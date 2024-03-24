@@ -65,7 +65,7 @@ public class WorldwideChat extends JavaPlugin {
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
 	public static int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "11042023-1"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "03242024-1"; // MMDDYYYY-revisionNumber
 
 	public static WorldwideChat instance;
 	

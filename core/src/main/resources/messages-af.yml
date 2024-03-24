@@ -41,7 +41,6 @@ Messages:
   wwcInvalidLang: Ongeldige taal in jou config.yml. Versuim om af...
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon-streek suksesvol gestel.
   wwcConfigRateLimitEnabled: Globale koers limiet geaktiveer en stel na {0} sekondes.
-  wwcBadPerms: Jy het nie die nodige regte om hierdie opdrag uit te voer nie!
   wwcConfigGUILangButton: Verander Plugin Taal
   wwctGUISignButton: Toggle Teken Vertaling
   wwcUpdaterOutOfDate: WorldwideChat is verouderd. Dateer asseblief na die nuutste
@@ -464,4 +463,6 @@ Messages:
   wwcsActiveTransEntity: 'Aktiewe Vertaler Vertalende Entiteit: {0}'
   wwcSupportedServer: Inisialiseer WorldwideChat vir {0}...
   wwcSupportedVersion: Aktiveer funksies vir weergawe {0}...
+  wwcBadPerms: 'U het nie die vereiste toestemmings om hierdie opdrag uit te voer
+    nie: {0}'
 

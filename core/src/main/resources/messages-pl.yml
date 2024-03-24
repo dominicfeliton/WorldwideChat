@@ -41,7 +41,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Region Amazon ustawiony pomyślnie.
   wwcConfigRateLimitEnabled: Globalny limit szybkości włączony i ustawiony na {0}
     sekund.
-  wwcBadPerms: Nie masz wymaganych uprawnień do wykonania tego polecenia!
   wwcConfigGUILangButton: Zmień język wtyczki
   wwctGUISignButton: Przełącz tłumaczenie podpisu
   wwcUpdaterOutOfDate: WorldwideChat jest nieaktualne. Zaktualizuj do najnowszej wersji,
@@ -470,4 +469,5 @@ Messages:
   wwcsActiveTransEntity: 'Aktywny podmiot tłumaczący tłumacz: {0}'
   wwcSupportedServer: Inicjowanie WorldwideChat dla {0}...
   wwcSupportedVersion: Włączanie funkcji dla wersji {0}...
+  wwcBadPerms: 'Nie masz uprawnień wymaganych do wykonania tego polecenia: {0}'
 

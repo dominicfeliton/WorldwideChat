@@ -40,7 +40,6 @@ Messages:
   wwcInvalidLang: Таны config.yml буруу хэл. EN нь анхдагч...
   wwcConfigConversationAmazonTranslateRegionSuccess: Амазоны бүс амжилттай тогтоосон.
   wwcConfigRateLimitEnabled: Глобал үнийн хязгаар идэвхжсэн болон {0} секунд тохируулагдсан
-  wwcBadPerms: Та энэ тушаалыг ажиллуулах шаардлагатай зөвшөөрөл байхгүй байна!
   wwcConfigGUILangButton: Өөрчлөлт залгаас хэл
   wwctGUISignButton: Түлхүүр гарын үсэг зурах орчуулга
   wwcUpdaterOutOfDate: Дэлхий даяарWedeChat хуучирсан байна. Хамгийн сүүлийн үеийн
@@ -477,4 +476,6 @@ Messages:
   wwcsActiveTransEntity: 'Идэвхтэй Орчуулагч Орчуулагч Орчуулагч: {0}'
   wwcSupportedServer: Эхлүүлэх WorldwideChat нь {0}...
   wwcSupportedVersion: хувилбар {0} боломжуудыг идэвхжүүлэх...
+  wwcBadPerms: 'Энэ тушаалыг гүйцэтгэхэд шаардагдах зөвшөөрлүүд танд байхгүй байна:
+    {0}'
 

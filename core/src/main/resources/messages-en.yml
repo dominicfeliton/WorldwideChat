@@ -10,7 +10,7 @@ Messages:
   wwcLangDetected: 'Detected language {0}.'
   wwcInvalidLang: 'Invalid language in your config.yml. Defaulting to en...'
   wwcListenersInitialized: 'Initialized listeners.'
-  wwcBadPerms: 'You do not have the required permissions to execute this command!'
+  wwcBadPerms: 'You do not have the required permissions to execute this command: {0}'
   wwcPlayerNotFound: 'Player {0} not found.'
   wwcInitializationFail: 'Failed to initialize WorldwideChat.'
   wwcUserDataReloaded: 'Loaded all saved user data.'

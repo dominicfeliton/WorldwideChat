@@ -41,7 +41,6 @@ Messages:
   wwcInvalidLang: Ugyldig språk i config.yml. Defaulting til en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon regionen satt vellykket.
   wwcConfigRateLimitEnabled: Global satsgrense aktivert og satt til {0} sekunder.
-  wwcBadPerms: Du har ikke de nødvendige tillatelsene for å utføre denne kommandoen!
   wwcConfigGUILangButton: Endre plugin-språk
   wwctGUISignButton: Toggle Sign Oversettelse
   wwcUpdaterOutOfDate: WorldwideChat er utdatert. Oppdater til den nyeste versjonen,
@@ -449,4 +448,6 @@ Messages:
   wwcsActiveTransEntity: 'Active Translator Translating Entity: {0}'
   wwcSupportedServer: Initialiserer WorldwideChat for {0}...
   wwcSupportedVersion: Aktiverer funksjoner for versjon {0}...
+  wwcBadPerms: 'Du har ikke de nødvendige tillatelsene for å utføre denne kommandoen:
+    {0}'
 

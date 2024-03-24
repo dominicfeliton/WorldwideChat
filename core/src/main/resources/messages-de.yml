@@ -45,8 +45,6 @@ Messages:
     festgelegt.
   wwcConfigRateLimitEnabled: Globales Zinderungslimit aktiviert und auf {0} Sekunden
     festgelegt.
-  wwcBadPerms: Sie haben nicht die erforderlichen Berechtigungen, um diesen Befehl
-    auszuführen!
   wwcConfigGUILangButton: Plugin-Sprache ändern
   wwctGUISignButton: Toggle Sign Übersetzung
   wwcUpdaterOutOfDate: WorldwideChat ist nicht mehr auf dem neuesten Stand. Bitte
@@ -513,4 +511,6 @@ Messages:
   wwcsActiveTransEntity: 'Aktive Entität, die den Übersetzer übersetzt: {0}'
   wwcSupportedServer: WorldwideChat für {0} wird initialisiert...
   wwcSupportedVersion: Funktionen für Version {0} werden aktiviert...
+  wwcBadPerms: 'Sie haben nicht die erforderlichen Berechtigungen, um diesen Befehl
+    auszuführen: {0}'
 

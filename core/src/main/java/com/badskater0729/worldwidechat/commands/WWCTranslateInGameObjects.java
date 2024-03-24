@@ -55,37 +55,37 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 					if (sender.hasPermission("worldwidechat.wwctb.otherplayers")) {
 						return toggleStatus(Bukkit.getPlayerExact(args[0]));
 					} else {
-						badPermsMessage("worldwidechat.wwctb.otherplayers");
+						refs.badPermsMessage("worldwidechat.wwctb.otherplayers", sender);
 					}
 				} else if (this instanceof WWCTranslateItem) {
 					if (sender.hasPermission("worldwidechat.wwcti.otherplayers")) {
 						return toggleStatus(Bukkit.getPlayerExact(args[0]));
 					} else {
-						badPermsMessage("worldwidechat.wwcti.otherplayers");
+						refs.badPermsMessage("worldwidechat.wwcti.otherplayers", sender);
 					}
 				} else if (this instanceof WWCTranslateSign) {
 					if (sender.hasPermission("worldwidechat.wwcts.otherplayers")) {
 						return toggleStatus(Bukkit.getPlayerExact(args[0]));
 					} else {
-						badPermsMessage("worldwidechat.wwcts.otherplayers");
+						refs.badPermsMessage("worldwidechat.wwcts.otherplayers", sender);
 					}
 				} else if (this instanceof WWCTranslateEntity) {
 					if (sender.hasPermission("worldwidechat.wwcte.otherplayers")) {
 						return toggleStatus(Bukkit.getPlayerExact(args[0]));
 					} else {
-						badPermsMessage("worldwidechat.wwcte.otherplayers");
+						refs.badPermsMessage("worldwidechat.wwcte.otherplayers", sender);
 					}
 				} else if (this instanceof WWCTranslateChatOutgoing) {
 					if (sender.hasPermission("worldwidechat.wwctco.otherplayers")) {
 						return toggleStatus(Bukkit.getPlayerExact(args[0]));
 					} else {
-						badPermsMessage("worldwidechat.wwctco.otherplayers");
+						refs.badPermsMessage("worldwidechat.wwctco.otherplayers", sender);
 					}
 				} else if (this instanceof WWCTranslateChatIncoming) {
 					if (sender.hasPermission("worldwidechat.wwctci.otherplayers")) {
 						return toggleStatus(Bukkit.getPlayerExact(args[0]));
 					} else {
-						badPermsMessage("worldwidechat.wwctci.otherplayers");
+						refs.badPermsMessage("worldwidechat.wwctci.otherplayers", sender);
 					}
 				}
 			} else {
@@ -247,10 +247,5 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			return true;
 		}
 		return false;
-	}
-
-	private void badPermsMessage(String correctPerm) {
-		// TODO: Fix wwcBadPerms, use in WWCTranslate (move this to commonrefs)
-		refs.sendFancyMsg("wwcBadPerms", "&6" + correctPerm, "&c", sender);
 	}
 }

@@ -42,7 +42,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: regió d'Amazon s'ha establert
     amb èxit.
   wwcConfigRateLimitEnabled: Límit de tarifa global activat i establert a {0} segons.
-  wwcBadPerms: No teniu els permisos necessaris per executar aquesta comanda!
   wwcConfigGUILangButton: Canviar l'idioma del connector
   wwctGUISignButton: Commuta la traducció de signes
   wwcUpdaterOutOfDate: WorldwideChat està fora de data. Si us plau, actualitzeu a
@@ -492,4 +491,5 @@ Messages:
   wwcsActiveTransEntity: 'Traductor actiu Traductor Entitat Traducció: {0}'
   wwcSupportedServer: Inicialitzant WorldwideChat per {0}...
   wwcSupportedVersion: Habilitació de característiques per a la versió {0}...
+  wwcBadPerms: 'No teniu els permisos necessaris per executar aquesta comanda: {0}'
 

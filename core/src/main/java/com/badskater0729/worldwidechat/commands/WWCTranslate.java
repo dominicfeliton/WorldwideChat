@@ -37,6 +37,9 @@ public class WWCTranslate extends BasicCommand {
 
 	@Override
 	public boolean processCommand() {
+		// TODO: Add two test-cases.
+		// 1) Add a ton of perm checks (such as making sure another user without perms cannot change/disable trans sessions
+		// 2) Make sure that when you stop a different translation session yours is not stopped as well
 		/* Sanitize args */
 		if ((isGlobal && args.length > 2) || (!isGlobal && args.length > 3)) {
 			// Too many args
@@ -59,13 +62,7 @@ public class WWCTranslate extends BasicCommand {
 							.getTranslateMainMenu().open((Player) sender);
 					return true;
 				} else {
-					final TextComponent badPerms = Component.text() // Bad Perms
-									.content(refs.getMsg("wwcBadPerms"))
-									.color(NamedTextColor.RED)
-							.append(Component.text().content(" (" + "worldwidechat.wwct.otherplayers" + ")")
-									.color(NamedTextColor.LIGHT_PURPLE))
-							.build();
-					refs.sendMsg(sender, badPerms);
+					refs.badPermsMessage("worldwidechat.wwct.otherplayers", sender);
 					return false;
 				}
 			}
@@ -84,14 +81,20 @@ public class WWCTranslate extends BasicCommand {
 				}
 			// User wants to delete another player's translation session.
 			} else if (args.length > 0 && Bukkit.getServer().getPlayerExact(args[0]) != null && main.isActiveTranslator(Bukkit.getServer().getPlayerExact(args[0]))) {
+				if (!sender.hasPermission("worldwidechat.wwct.otherplayers")) {
+					refs.badPermsMessage("worldwidechat.wwct.otherplayers", sender);
+					return false;
+				}
+
 				Player testPlayer = Bukkit.getServer().getPlayerExact(args[0]);
 				main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
-				refs.sendFancyMsg("wwctTranslationStopped", sender);
+				refs.sendFancyMsg("wwctTranslationStopped", testPlayer);
 				refs.sendFancyMsg("wwctTranslationStoppedOtherPlayer", "&6"+args[0], sender);
 				if ((isConsoleSender && args.length == 1) || (args.length >= 2 && args[1] instanceof String && args[1].equalsIgnoreCase("Stop"))) {
 					return true;
 				}
 			}
+		// User wants to delete global translation session
 		} else if (args.length > 0 && isGlobal && main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")) {
 			main.removeActiveTranslator(main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
 			for (Player eaPlayer : Bukkit.getOnlinePlayers()) {
@@ -179,13 +182,7 @@ public class WWCTranslate extends BasicCommand {
 		/* Check if user is targetting themselves, which doesn't need this permission (or if we are console) */
 		boolean targetIsSelf = !isConsoleSender && inUUID.equals((((Player) sender)).getUniqueId().toString());
 		if (!isGlobal && !targetIsSelf && !sender.hasPermission("worldwidechat.wwct.otherplayers")) {
-			final TextComponent badPerms = Component.text()
-							.content(refs.getMsg("wwcBadPerms"))
-							.color(NamedTextColor.RED)
-					.append(Component.text().content(" (" + "worldwidechat.wwct.otherplayers" + ")")
-							.color(NamedTextColor.LIGHT_PURPLE))
-					.build();
-			refs.sendMsg(sender, badPerms);
+			refs.badPermsMessage("worldwidechat.wwct.otherplayers", sender);
 			return false;
 		}
 		

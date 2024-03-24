@@ -44,7 +44,6 @@ Messages:
     con éxito.
   wwcConfigRateLimitEnabled: Límite de tasa global habilitado y establecido a {0}
     segundos.
-  wwcBadPerms: ¡No tienes los permisos requeridos para ejecutar este comando!
   wwcConfigGUILangButton: Cambiar Lenguaje de Plugin
   wwctGUISignButton: Toggle Traducción de Signo
   wwcUpdaterOutOfDate: WorldWIDEChat está desactualizado. Por favor, actualice a la
@@ -494,4 +493,5 @@ Messages:
   wwcsActiveTransEntity: 'Entidad de traducción del traductor activo: {0}'
   wwcSupportedServer: Inicializando el chat de todo el mundo para {0}...
   wwcSupportedVersion: Habilitando funciones para la versión {0}...
+  wwcBadPerms: 'No tiene los permisos necesarios para ejecutar este comando: {0}'
 

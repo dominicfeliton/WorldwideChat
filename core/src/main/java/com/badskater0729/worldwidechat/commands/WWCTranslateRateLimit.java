@@ -81,7 +81,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 			return false;
 		} else if (!main.isActiveTranslator(inPlayer)) {
 			/* If translator is null, determine sender and send correct message */
-			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(inName)) {
+			if (!isConsoleSender && inName.equalsIgnoreCase(sender.getName())) {
 				refs.sendFancyMsg("wwctrlNotATranslator", "&c", sender);
 				return false;
 			}

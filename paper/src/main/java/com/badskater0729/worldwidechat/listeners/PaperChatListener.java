@@ -7,6 +7,7 @@ import io.papermc.paper.chat.ChatRenderer;
 import io.papermc.paper.event.player.AsyncChatEvent;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.event.HoverEvent;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
@@ -32,21 +33,17 @@ public class PaperChatListener implements Listener {
                 refs.debugMsg("chat event not async, skipping");
                 return;
             }
-            String originalText = LegacyComponentSerializer.legacyAmpersand().serialize(event.originalMessage());
-
             /* Original WWC functionality/Translate Outgoing Messages */
             ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
             String currInLang = currTranslator.getInLangCode();
             String currOutLang = currTranslator.getOutLangCode();
             if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
                     || (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
-                Component newText = LegacyComponentSerializer.legacyAmpersand().deserialize(refs.translateText(originalText, event.getPlayer()));
-                event.message(newText);
+                Component originalText = refs.deserial(refs.translateText(refs.serial(event.originalMessage()), event.getPlayer()));
+                event.message(originalText);
             }
 
             /* New WWC functionality/Translate Incoming Messages */
-            //String strMsgContent = LegacyComponentSerializer.legacyAmpersand().serialize(event.message());
-
             List<Audience> unmodifiedMessageRecipients = new ArrayList<Audience>();
             for (Audience eaRecipient : event.viewers()) {
                 // Do not handle non-players
@@ -56,6 +53,7 @@ public class PaperChatListener implements Listener {
                     continue;
                 }
 
+                refs.debugMsg("Looking at " + currPlayer.getName());
                 ActiveTranslator testTranslator = main.getActiveTranslator(currPlayer.getUniqueId());
                 String testInLang = testTranslator.getInLangCode();
                 String testOutLang = testTranslator.getOutLangCode();
@@ -65,6 +63,7 @@ public class PaperChatListener implements Listener {
                         && !(currInLang.equals(testInLang) && currOutLang.equals(testOutLang))) {
 
                     // Translate message + convert to Component
+                    String originalText = refs.serial(event.message());
                     String translation = refs.translateText(originalText + " (Translated)", currPlayer);
                     Component hoverOutMessage = LegacyComponentSerializer.legacyAmpersand().deserialize(translation);
 

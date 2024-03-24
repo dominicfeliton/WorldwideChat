@@ -35,7 +35,6 @@ Messages:
   wwcInvalidLang: config.yml 中的语言无效。默认为 en...
   wwcConfigConversationAmazonTranslateRegionSuccess: 亚马逊区域设置成功。
   wwcConfigRateLimitEnabled: 已启用全局速率限制并将其设置为 {0} 秒。
-  wwcBadPerms: 您没有执行此命令所需的权限！
   wwcConfigGUILangButton: 更改插件语言
   wwctGUISignButton: 切换签名翻译
   wwcUpdaterOutOfDate: WorldwideChat 已经过时了。请更新至最新版本 {0}。
@@ -362,4 +361,5 @@ Messages:
   wwcsActiveTransEntity: 活跃翻译器翻译实体： {0}
   wwcSupportedServer: 正在为 {0} 初始化 WorldwideChat...
   wwcSupportedVersion: 正在启用 {0} 版本的功能...
+  wwcBadPerms: 您没有执行此命令所需的权限：{0}
 

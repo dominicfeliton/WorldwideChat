@@ -373,7 +373,7 @@ public class CommonRefs {
 	 * @param comp - TextComponent
 	 * @return string version
 	 */
-	public String serial(TextComponent comp) {
+	public String serial(Component comp) {
 		return LegacyComponentSerializer.legacyAmpersand().serialize(comp);
 	}
 
@@ -382,7 +382,7 @@ public class CommonRefs {
 	 * @param str
 	 * @return textcomponent version
 	 */
-	public TextComponent deserial(String str) {
+	public Component deserial(String str) {
 		return LegacyComponentSerializer.legacyAmpersand().deserialize(str);
 	}
 	
@@ -814,5 +814,9 @@ public class CommonRefs {
 			}
 		}
 		return "";
+	}
+
+	public void badPermsMessage(String correctPerm, CommandSender sender) {
+		sendFancyMsg("wwcBadPerms", "&6" + correctPerm, "&c", sender);
 	}
 }

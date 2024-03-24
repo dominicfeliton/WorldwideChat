@@ -35,7 +35,6 @@ Messages:
   wwcInvalidLang: 您的配置.yml 中的語言無效。預設為連接...
   wwcConfigConversationAmazonTranslateRegionSuccess: 亞馬遜地區設置成功。
   wwcConfigRateLimitEnabled: 啟用全域匯率限制並設定為 {0} 秒。
-  wwcBadPerms: 您沒有執行此命令所需的權限！
   wwcConfigGUILangButton: 變更外掛程式語言
   wwctGUISignButton: 切換簽名轉換
   wwcUpdaterOutOfDate: 「全球聊天」已過時。請更新至最新版本 {0}。
@@ -364,4 +363,5 @@ Messages:
   wwcsActiveTransEntity: '使用中轉譯器轉譯實體: {0}'
   wwcSupportedServer: 正在初始化 {0} 的全球客服...
   wwcSupportedVersion: 正在啟用版本 {0} 的功能...
+  wwcBadPerms: 您沒有執行此命令所需的權限：{0}
 

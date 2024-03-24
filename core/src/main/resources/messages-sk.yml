@@ -42,7 +42,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Oblasť Amazon bola úspešne nastavená.
   wwcConfigRateLimitEnabled: Globálny limit rýchlosti povolený a nastavený na {0}
     sekúnd.
-  wwcBadPerms: Nemáte požadované povolenia na vykonanie tohto príkazu!
   wwcConfigGUILangButton: Zmeniť jazyk doplnku
   wwctGUISignButton: Prepnúť preklad znakov
   wwcUpdaterOutOfDate: WorldwideChat je zastaraný. Aktualizujte na najnovšiu verziu,
@@ -474,4 +473,5 @@ Messages:
   wwcsActiveTransEntity: 'Aktívny prekladateľ prekladá entitu: {0}'
   wwcSupportedServer: Inicializácia WorldwideChat pre {0}...
   wwcSupportedVersion: Povolenie funkcií pre verziu {0}...
+  wwcBadPerms: 'Nemáte požadované povolenia na vykonanie tohto príkazu: {0}'
 

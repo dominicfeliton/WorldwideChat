@@ -42,7 +42,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Az Amazon régió sikeresen beállítva.
   wwcConfigRateLimitEnabled: Globális sebességkorlát engedélyezve és a {0} másodpercre
     van beállítva.
-  wwcBadPerms: Nem rendelkezik a szükséges engedélyekkel a parancs végrehajtásához!
   wwcConfigGUILangButton: Plugin nyelv módosítása
   wwctGUISignButton: Jelfordítás be- és bekapcsolása
   wwcUpdaterOutOfDate: 'A WorldwideChat elavult. Frissítsen a legújabb verzióra: {0}.'
@@ -475,4 +474,5 @@ Messages:
   wwcsActiveTransEntity: 'Aktív fordító fordító entitás: {0}'
   wwcSupportedServer: A WorldwideChat inicializálása {0}...
   wwcSupportedVersion: A {0} verzió funkcióinak engedélyezése...
+  wwcBadPerms: 'A parancs végrehajtásához nincs szükséges engedélye: {0}'
 

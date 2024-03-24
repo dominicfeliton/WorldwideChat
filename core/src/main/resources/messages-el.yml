@@ -43,7 +43,6 @@ Messages:
     επιτυχία.
   wwcConfigRateLimitEnabled: Το καθολικό όριο ρυθμού ενεργοποιήθηκε και ρυθμίστηκε
     σε {0} δευτερόλεπτα.
-  wwcBadPerms: Δεν έχετε τα απαιτούμενα δικαιώματα για να εκτελέσετε αυτήν την εντολή!
   wwcConfigGUILangButton: Αλλαγή γλώσσας προσθέτου
   wwctGUISignButton: Εναλλαγή Μετάφρασης Υπογραφών
   wwcUpdaterOutOfDate: Το WorldwideChat είναι ξεπερμένο. Ενημερώστε την τελευταία
@@ -507,4 +506,6 @@ Messages:
   wwcsActiveTransEntity: 'Ενεργός Μεταφραστής Μεταφράζει Οντότητα: {0}'
   wwcSupportedServer: Αρχικοποίηση του WorldwideChat για {0}...
   wwcSupportedVersion: Ενεργοποίηση λειτουργιών για την έκδοση {0}...
+  wwcBadPerms: 'Δεν έχετε τα απαιτούμενα δικαιώματα για να εκτελέσετε αυτήν την εντολή:
+    {0}'
 

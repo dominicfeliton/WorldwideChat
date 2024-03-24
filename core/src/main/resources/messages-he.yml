@@ -37,7 +37,6 @@ Messages:
   wwcInvalidLang: שפה לא חוקית בconfig.yml שלך. ברירת מחדל כדי en...
   wwcConfigConversationAmazonTranslateRegionSuccess: אזור אמזון מוגדר בהצלחה.
   wwcConfigRateLimitEnabled: מגבלת קצב גלובלית מופעלת ומוגדרת ל {0} שניות.
-  wwcBadPerms: אין לך את ההרשאות הדרושות כדי להפעיל פקודה זו!
   wwcConfigGUILangButton: שינוי שפת התוספים
   wwctGUISignButton: החלפת סימן לתרגום
   wwcUpdaterOutOfDate: WorldwideChat הוא לא מעודכן. אנא עדכן לגרסה העדכנית ביותר,
@@ -419,4 +418,5 @@ Messages:
   wwcsActiveTransEntity: 'מתרגם פעיל תרגום ישות: {0}'
   wwcSupportedServer: אתחול WorldwideChat עבור {0}...
   wwcSupportedVersion: הפעלת תכונות לגרסה {0}...
+  wwcBadPerms: 'אין לך את ההרשאות הנדרשות לביצוע פקודה זו: {0}'
 

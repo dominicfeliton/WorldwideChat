@@ -35,7 +35,6 @@ Messages:
   wwcInvalidLang: 설정.yml의 언어가 잘못되었습니다.기본값으로 설정 중...
   wwcConfigConversationAmazonTranslateRegionSuccess: 아마존 리전을 성공적으로 설정했습니다.
   wwcConfigRateLimitEnabled: 글로벌 속도 제한을 활성화하고 {0} 초로 설정합니다.
-  wwcBadPerms: 이 명령을 실행하는 데 필요한 권한이 없습니다!
   wwcConfigGUILangButton: 플러그인 언어 변경
   wwctGUISignButton: 기호 변환 토글
   wwcUpdaterOutOfDate: 월드와이드채팅이 오래되었습니다.최신 버전 {0} (으) 로 업데이트하십시오.
@@ -387,4 +386,5 @@ Messages:
   wwcsActiveTransEntity: '액티브 트랜슬레이터 번역 엔티티: {0}'
   wwcSupportedServer: '{0} 에 대한 월드와이드챗 초기화 중...'
   wwcSupportedVersion: '{0} 버전의 기능 활성화 중...'
+  wwcBadPerms: 이 명령을 실행하는 데 필요한 권한이 없습니다. {0}
 

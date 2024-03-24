@@ -41,7 +41,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon reģions noteikti veiksmīgi.
   wwcConfigRateLimitEnabled: Globālais likmes ierobežojums ir iespējots un iestatīts
     uz {0} sekundes.
-  wwcBadPerms: Jums nav nepieciešamo atļauju, lai izpildītu šo komandu!
   wwcConfigGUILangButton: Mainīt spraudņa valodu
   wwctGUISignButton: Pārslēgt zīmju tulkošanu
   wwcUpdaterOutOfDate: WorldwideChat ir novecojis. Lūdzu, atjauniniet uz jaunāko versiju,
@@ -469,4 +468,5 @@ Messages:
   wwcsActiveTransEntity: 'Aktīvā tulkotāja tulkošanas entītija: {0}'
   wwcSupportedServer: Inicializējot WorldwideChat par {0}...
   wwcSupportedVersion: Iespējojot funkcijas versijai {0}...
+  wwcBadPerms: 'Jums nav nepieciešamo atļauju, lai izpildītu šo komandu: {0}'
 

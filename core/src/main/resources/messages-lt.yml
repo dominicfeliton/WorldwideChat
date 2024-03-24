@@ -41,7 +41,6 @@ Messages:
   wwcInvalidLang: Neteisinga kalba jūsų config.yml. Numatytinas į en...
   wwcConfigConversationAmazonTranslateRegionSuccess: “Amazon” regionas sėkmingai nustatyti.
   wwcConfigRateLimitEnabled: Įgalinta visuotinė normos riba ir nustatyta {0} sekundes.
-  wwcBadPerms: Jūs neturite reikiamų leidimų vykdyti šią komandą!
   wwcConfigGUILangButton: Keisti įskiepių kalbą
   wwctGUISignButton: Perjungti gestų vertimą
   wwcUpdaterOutOfDate: WorldwideChat yra pavėlęs. Atnaujinkite į naujausią versiją,
@@ -468,4 +467,5 @@ Messages:
   wwcsActiveTransEntity: 'Aktyvus vertėjas Vertimo subjektas: {0}'
   wwcSupportedServer: Inicijuoti WorldwideChat už {0}...
   wwcSupportedVersion: Įgalinti funkcijas versijai {0}...
+  wwcBadPerms: 'Jūs neturite reikiamų teisių šiai komandai vykdyti: {0}'
 

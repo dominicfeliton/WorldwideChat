@@ -42,7 +42,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Регіон Амазонки успішно налаштований.
   wwcConfigRateLimitEnabled: Обмеження глобальної швидкості увімкнено і встановлено
     на {0} секунд.
-  wwcBadPerms: У вас немає необхідних дозволів для виконання цієї команди!
   wwcConfigGUILangButton: Змінити мову додатка
   wwctGUISignButton: Увімкнути або вимкнути переклад підпису
   wwcUpdaterOutOfDate: WorldwideChat застаріла. Будь ласка, оновіть до останньої версії,
@@ -467,4 +466,5 @@ Messages:
   wwcsActiveTransEntity: 'Активний перекладач, що перекладає сутність: {0}'
   wwcSupportedServer: Ініціалізація всесвітнього чату для {0}...
   wwcSupportedVersion: Увімкнення функцій для версії {0}...
+  wwcBadPerms: 'У вас немає необхідних дозволів для виконання цієї команди: {0}'
 

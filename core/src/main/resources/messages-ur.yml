@@ -40,7 +40,6 @@ Messages:
   wwcInvalidLang: آپ کے config.yml میں غلط زبان. حادثے کے لئے...
   wwcConfigConversationAmazonTranslateRegionSuccess: ایمیزون علاقے کامیابی سے سیٹ.
   wwcConfigRateLimitEnabled: گلوبل ریٹ کی حد فعال اور {0} سیکنڈ پر مقرر کی گئی
-  wwcBadPerms: آپ کے پاس اس کمانڈ کو عملدرآمد کرنے کے لئے ضروری اجازت نہیں ہے!
   wwcConfigGUILangButton: پلگ ان زبان تبدیل کریں
   wwctGUISignButton: سائن ترجمہ ٹوگل کریں
   wwcUpdaterOutOfDate: ورلڈ وائڈ چیٹ تاریخ سے باہر ہے. برائے مہربانی تازہ ترین ورژن،
@@ -467,4 +466,6 @@ Messages:
   wwcsActiveTransEntity: 'فعال مترجم ترجمہ ادارے: {0}'
   wwcSupportedServer: '{0} کے لئے دنیا بھر میں چیٹ شروع کر رہا ہے...'
   wwcSupportedVersion: ورژن {0} کے لئے خصوصیات کو فعال کر رہا ہے...
+  wwcBadPerms: 'آپ کے پاس اس کمانڈ پر عمل درآمد کرنے کے لئے مطلوبہ اجازتیں نہیں ہیں:
+    {0}'
 

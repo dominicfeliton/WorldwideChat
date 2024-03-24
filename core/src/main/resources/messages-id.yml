@@ -41,8 +41,6 @@ Messages:
   wwcInvalidLang: Bahasa tidak valid dalam config.ymlmu. Defaulting to en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Wilayah Amazon ditetapkan berhasil.
   wwcConfigRateLimitEnabled: Batas tingkat global diaktifkan dan disetel ke {0} detik.
-  wwcBadPerms: Anda tidak memiliki izin yang diperlukan untuk menjalankan perintah
-    ini!
   wwcConfigGUILangButton: Ubah Bahasa Plugin
   wwctGUISignButton: Toggle Penerjemahan Tanda
   wwcUpdaterOutOfDate: WorldWidChat sudah kedaluwarsa. Mohon perbarui ke versi terbaru,
@@ -464,4 +462,6 @@ Messages:
   wwcsActiveTransEntity: 'Entitas Penerjemah Aktif Penerjemah: {0}'
   wwcSupportedServer: Menginisialisasi WorldwideChat untuk {0}...
   wwcSupportedVersion: Mengaktifkan fitur untuk versi {0}...
+  wwcBadPerms: 'Anda tidak memiliki izin yang diperlukan untuk menjalankan perintah
+    ini: {0}'
 

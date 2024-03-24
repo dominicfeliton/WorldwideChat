@@ -41,7 +41,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon region uspešno postavljen.
   wwcConfigRateLimitEnabled: Ograničenje globalnog stopa omogućeno i postavljeno na
     {0} sekundi.
-  wwcBadPerms: Nemate potrebne dozvole za izvršavanje ove komande!
   wwcConfigGUILangButton: Promenite jezik plugina
   wwctGUISignButton: Prevod na znak
   wwcUpdaterOutOfDate: VorldVideChat je zastario. Molimo vas da ažurirate na najnoviju
@@ -461,4 +460,5 @@ Messages:
   wwcsActiveTransEntity: 'Aktivni prevodilac Prevođenje entiteta: {0}'
   wwcSupportedServer: Inicijalizacija VorldVideChat za {0}...
   wwcSupportedVersion: Omogućavanje funkcija za verziju {0}...
+  wwcBadPerms: 'Nemate potrebne dozvole za izvršavanje ove naredbe: {0}'
 

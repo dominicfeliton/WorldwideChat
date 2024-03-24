@@ -36,7 +36,6 @@ Messages:
   wwcInvalidLang: ภาษาที่ไม่ถูกต้องใน config.yml ของคุณผิดนัดที่ en...
   wwcConfigConversationAmazonTranslateRegionSuccess: ตั้งค่าภูมิภาคอเมซอนเรียบร้อยแล้ว
   wwcConfigRateLimitEnabled: ขีดจำกัดอัตราทั่วโลกเปิดใช้งานและตั้งค่าเป็น {0} วินาที
-  wwcBadPerms: คุณไม่มีสิทธิ์ที่จำเป็นในการดำเนินการคำสั่งนี้!
   wwcConfigGUILangButton: เปลี่ยนภาษาปลั๊กอิน
   wwctGUISignButton: สลับการแปล
   wwcUpdaterOutOfDate: WorldwideChat ล้าสมัยแล้วโปรดอัปเดตเป็นเวอร์ชันล่าสุด {0}
@@ -413,4 +412,5 @@ Messages:
   wwcsActiveTransEntity: 'เอนทิตีแปลที่ใช้งานอยู่: {0}'
   wwcSupportedServer: เริ่มต้นใช้งาน WorldwideChat สำหรับ {0}...
   wwcSupportedVersion: เปิดใช้คุณลักษณะสำหรับรุ่น {0}...
+  wwcBadPerms: 'คุณไม่มีสิทธิ์ที่จำเป็นในการดำเนินการคำสั่งนี้: {0}'
 

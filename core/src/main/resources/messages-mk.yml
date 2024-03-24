@@ -42,7 +42,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Амазон регионот постави успешно.
   wwcConfigRateLimitEnabled: Ограничувањето на глобалната стапка е овозможено и поставено
     на {0} секунди.
-  wwcBadPerms: Немате потребни дозволи да ја извршите оваа команда!
   wwcConfigGUILangButton: Промена на јазикот на приклучокот
   wwctGUISignButton: Префрли Превод на знаци
   wwcUpdaterOutOfDate: WorldwideChat е застарен. Ве молиме ажурирајте ја најновата
@@ -480,4 +479,5 @@ Messages:
   wwcsActiveTransEntity: 'Активен преведувач преведувачки субјект: {0}'
   wwcSupportedServer: Иницијализирање на WorldwideChat за {0}...
   wwcSupportedVersion: Овозможување на функции за верзијата {0}...
+  wwcBadPerms: 'Немате потребни дозволи за извршување на оваа команда: {0}'
 

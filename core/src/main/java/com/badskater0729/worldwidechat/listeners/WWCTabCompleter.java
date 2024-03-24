@@ -186,7 +186,7 @@ public class WWCTabCompleter implements TabCompleter {
 		/* Commands: /wwcts, /wwctb, /wwcti, /wwcte, /wwctci, /wwctco */
 		} else if ((commandName.equals("wwcts") || commandName.equals("wwctb")
 				|| commandName.equals("wwcti") || commandName.equals("wwcte")
-				|| commandName.equals("wwctci") || commandName.equals("wwctco")) && args.length == 1) {
+				|| commandName.equals("wwctci") || commandName.equals("wwctco")) && args.length == 1 && sender.hasPermission("worldwidechat.wwct.otherplayers")) {
 			if (args[0].isEmpty()) {
 				for (String eaTranslatorUUID : main.getActiveTranslators().keySet()) {
 					if (!eaTranslatorUUID.equals("GLOBAL-TRANSLATE-ENABLED")

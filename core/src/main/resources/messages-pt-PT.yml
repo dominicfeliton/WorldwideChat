@@ -44,7 +44,6 @@ Messages:
   wwcInvalidLang: Idioma inválido no seu config.yml. Predefinições para a pt...
   wwcteOnSender: Tradução de entidade habilitada. Clique com o botão direito do rato
     numa entidade para traduzir o seu nome!
-  wwcBadPerms: Não tem as permissões necessárias para executar este comando!
   wwcConfigGUILangButton: Alterar idioma do plugin
   wwctGUISignButton: Alternar Tradução
   wwcTranslatorErrorThresholdReached: Limiar de erro atingido. Este plugin vai agora
@@ -481,4 +480,5 @@ Messages:
   wwcsActiveTransEntity: 'Entidade Tradutora Ativa: {0}'
   wwcSupportedServer: A inicializar WorldwideChat para {0}...
   wwcSupportedVersion: Activando funcionalidades para a versão {0}...
+  wwcBadPerms: 'Não tem as permissões necessárias para executar este comando: {0}'
 

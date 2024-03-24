@@ -40,7 +40,6 @@ Messages:
   wwcInvalidLang: Neplatný jazyk ve vašem config.yml. Výchozí na en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Oblast Amazon byla úspěšně nastavena.
   wwcConfigRateLimitEnabled: Globální limit rychlosti povolen a nastaven na {0} sekund.
-  wwcBadPerms: Nemáte požadovaná oprávnění ke spuštění tohoto příkazu!
   wwcConfigGUILangButton: Změnit jazyk pluginu
   wwctGUISignButton: Přepnout překlad znaků
   wwcUpdaterOutOfDate: WorldwideChat je zastaralý. Aktualizujte prosím na nejnovější
@@ -464,4 +463,5 @@ Messages:
   wwcsActiveTransEntity: 'Aktivní překladatel překládající entitu: {0}'
   wwcSupportedServer: Inicializace WorldwideChat pro {0}...
   wwcSupportedVersion: Povolení funkcí pro verzi {0}...
+  wwcBadPerms: 'Nemáte potřebná oprávnění k provedení tohoto příkazu: {0}'
 

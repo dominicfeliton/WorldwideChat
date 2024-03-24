@@ -42,7 +42,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Conjunto de regiões da Amazon
     com êxito.
   wwcConfigRateLimitEnabled: Limite de taxa global ativado e definido para {0} segundos.
-  wwcBadPerms: Você não tem as permissões necessárias para executar este comando!
   wwcConfigGUILangButton: Alterar idioma do plugin
   wwctGUISignButton: Alternar tradução de sinal
   wwcUpdaterOutOfDate: WorldwideChat está desatualizado. Atualize para a versão mais
@@ -477,4 +476,6 @@ Messages:
   wwcsActiveTransEntity: 'Entidade de tradução do Active Translator: {0}'
   wwcSupportedServer: Inicializando o WorldwideChat para {0}...
   wwcSupportedVersion: Ativando recursos para a versão {0}...
+  wwcBadPerms: 'Você não tem as permissões necessárias para executar este comando:
+    {0}'
 

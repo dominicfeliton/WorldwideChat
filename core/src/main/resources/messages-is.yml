@@ -43,7 +43,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon svæðinu sett með góðum
     árangri.
   wwcConfigRateLimitEnabled: Global hlutfall takmörk virkt og stillt á {0} sekúndur.
-  wwcBadPerms: Þú hefur ekki nauðsynlegar heimildir til að framkvæma þessa skipun!
   wwcConfigGUILangButton: Breyta Plugin Tungumál
   wwctGUISignButton: Skipta Sign Þýðing
   wwcUpdaterOutOfDate: WorldwideChat er úrelt. Vinsamlegast uppfærðu í nýjustu útgáfuna,
@@ -469,4 +468,6 @@ Messages:
   wwcsActiveTransEntity: 'Virkur þýðandi þýðandi: {0}'
   wwcSupportedServer: Frumstilla WorldwideChat fyrir {0}...
   wwcSupportedVersion: Virkja eiginleika fyrir útgáfu {0}...
+  wwcBadPerms: 'Þú hefur ekki nauðsynlegar heimildir til að framkvæma þessa skipun:
+    {0}'
 

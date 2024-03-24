@@ -42,7 +42,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon regionen satt framgångsrikt.
   wwcConfigRateLimitEnabled: Global hastighetsgräns aktiverad och inställd på {0}
     sekunder.
-  wwcBadPerms: Du har inte de behörigheter som krävs för att köra det här kommandot!
   wwcConfigGUILangButton: Ändra plugin-språk
   wwctGUISignButton: Växla signera översättning
   wwcUpdaterOutOfDate: WorldwideChat är föråldrad. Uppdatera till den senaste versionen,
@@ -475,4 +474,6 @@ Messages:
   wwcsActiveTransEntity: 'Active Translator Translating Entitet: {0}'
   wwcSupportedServer: Initierar WorldwideChat för {0}...
   wwcSupportedVersion: Aktivera funktioner för version {0}...
+  wwcBadPerms: 'Du har inte de behörigheter som krävs för att utföra det här kommandot:
+    {0}'
 

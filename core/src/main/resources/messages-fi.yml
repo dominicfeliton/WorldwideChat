@@ -41,7 +41,6 @@ Messages:
   wwcInvalidLang: Virheellinen kieli config.yml. Defaulting fi...
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazonin alue asetettu onnistuneesti.
   wwcConfigRateLimitEnabled: Yleinen nopeusraja käytössä ja aseta {0} sekuntia.
-  wwcBadPerms: Sinulla ei ole vaadittuja oikeuksia tämän komennon suorittamiseen!
   wwcConfigGUILangButton: Vaihda liitännäisen kieli
   wwctGUISignButton: Vaihda allekirjoittaa käännös
   wwcUpdaterOutOfDate: WorldwideChat on vanhentunut. Päivitä uusimpaan versioon, {0}.
@@ -460,4 +459,6 @@ Messages:
   wwcsActiveTransEntity: 'Aktiivisen kääntäjän kääntäjäyksikkö: {0}'
   wwcSupportedServer: WorldwideChatin alustaminen {0}...
   wwcSupportedVersion: Ominaisuuksien käyttöönotto versiolle {0}...
+  wwcBadPerms: 'Sinulla ei ole vaadittuja oikeuksia tämän komennon suorittamiseen:
+    {0}'
 

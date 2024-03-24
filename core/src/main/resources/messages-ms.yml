@@ -41,8 +41,6 @@ Messages:
   wwcInvalidLang: Bahasa tidak sah dalam config.yml anda. Defaulting to en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Rantau Amazon berjaya ditetapkan.
   wwcConfigRateLimitEnabled: Had kadar global dibenarkan dan ditetapkan ke {0} saat.
-  wwcBadPerms: Anda tidak mempunyai keizinan yang diperlukan untuk melaksanakan arahan
-    ini!
   wwcConfigGUILangButton: Ubah Bahasa Pemalam
   wwctGUISignButton: Togol Terjemahan Tanda
   wwcUpdaterOutOfDate: WorldWidChat sudah lapuk. Sila kemaskini ke versi terkini,
@@ -465,4 +463,6 @@ Messages:
   wwcsActiveTransEntity: 'Entiti Penterjemah Aktif: {0}'
   wwcSupportedServer: Memulakan WorldwideChat untuk {0}...
   wwcSupportedVersion: Membolehkan ciri untuk versi {0}...
+  wwcBadPerms: 'Anda tidak mempunyai keizinan yang diperlukan untuk melaksanakan arahan
+    ini: {0}'
 

@@ -44,7 +44,6 @@ Messages:
   wwcInvalidLang: Teanga neamhbhailí i do config.yml. Mainneachtain a en...
   wwcteOnSender: Aistriúchán Aonán cumasaithe. Deaschliceáil ar aonán chun a ainm
     a aistriú!
-  wwcBadPerms: Ní gá duit na ceadanna is gá a fhorghníomhú an t-ordú!
   wwcConfigGUILangButton: Athraigh Teanga Plugin
   wwctGUISignButton: Aistriúchán Sínigh Scoránaigh
   wwcTranslatorErrorThresholdReached: Tairseach earráide bainte amach. Beidh an mbreiseán
@@ -497,4 +496,6 @@ Messages:
   wwcsActiveTransEntity: 'Aistritheoir Gníomhach Aistrithe Aonán: {0}'
   wwcSupportedServer: Initializing WorldwideChat do {0}...
   wwcSupportedVersion: Cumasú gnéithe le haghaidh leagan {0}...
+  wwcBadPerms: 'Níl na ceadanna riachtanacha agat chun an t-ordú seo a fhorghníomhú:
+    {0}'
 

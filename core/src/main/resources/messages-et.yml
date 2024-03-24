@@ -40,7 +40,6 @@ Messages:
   wwcInvalidLang: Kehtetu keel oma config.yml. Defaulting en...
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazonase piirkonnas seatud edukalt.
   wwcConfigRateLimitEnabled: Globaalne piirmäär lubatud ja seadistada {0} sekundit.
-  wwcBadPerms: Teil pole selle käsu käivitamiseks vajalikke õigusi!
   wwcConfigGUILangButton: Muuda plugina keelt
   wwctGUISignButton: Lülita viipetõlge
   wwcUpdaterOutOfDate: WorldwideChat on aegunud. Palun uuenda uusimale versioonile,
@@ -447,4 +446,5 @@ Messages:
   wwcsActiveTransEntity: 'Aktiivne tõlkija tõlkimise üksus: {0}'
   wwcSupportedServer: WorldwideChat lähtestamine {0}...
   wwcSupportedVersion: Funktsioonide lubamine versiooni {0}...
+  wwcBadPerms: 'Teil pole selle käsu täitmiseks vajalikke õigusi: {0}'
 

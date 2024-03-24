@@ -42,7 +42,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon regija uspešno nastavljena.
   wwcConfigRateLimitEnabled: Omogočena je globalna omejitev hitrosti in nastavljena
     na {0} sekund.
-  wwcBadPerms: Nimate potrebnih dovoljenj za izvedbo tega ukaza!
   wwcConfigGUILangButton: Spremeni jezik vtičnika
   wwctGUISignButton: Preklapljanje znakovnih prevodov
   wwcUpdaterOutOfDate: WorldwideChat je zastarel. Prosimo, posodobite na najnovejšo
@@ -472,4 +471,5 @@ Messages:
   wwcsActiveTransEntity: 'Aktivni prevajalec, ki prevaja entiteto: {0}'
   wwcSupportedServer: Inicializacija WorldwideChat za {0}...
   wwcSupportedVersion: Omogočanje funkcij za različico {0}...
+  wwcBadPerms: 'Za izvedbo tega ukaza nimate potrebnih dovoljenj: {0}'
 

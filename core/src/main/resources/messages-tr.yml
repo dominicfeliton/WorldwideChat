@@ -40,7 +40,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon bölgesi başarıyla ayarlandı.
   wwcConfigRateLimitEnabled: Genel hız sınırı etkinleştirildi ve {0} saniye olarak
     ayarlandı.
-  wwcBadPerms: Bu komutu çalıştırmak için gerekli izinlere sahip değilsiniz!
   wwcConfigGUILangButton: Eklenti Dili Değiştir
   wwctGUISignButton: İmzala Tercümesi
   wwcUpdaterOutOfDate: WorldwideChat güncel değil. Lütfen {0} en son sürüme güncelleyin.
@@ -459,4 +458,5 @@ Messages:
   wwcsActiveTransEntity: 'Etkin Çevirmen Çevirmen Varlığı: {0}'
   wwcSupportedServer: WorldwideChat {0} için başlatılıyor...
   wwcSupportedVersion: '{0} sürümü için özellikler etkinleştiriliyor...'
+  wwcBadPerms: 'Bu komutu yürütmek için gerekli izinlere sahip değilsiniz: {0}'
 

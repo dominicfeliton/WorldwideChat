@@ -34,7 +34,6 @@ Messages:
   wwcInvalidLang: config.yml の言語が無効です。デフォルトで...
   wwcConfigConversationAmazonTranslateRegionSuccess: Amazon リージョンが正常に設定されました。
   wwcConfigRateLimitEnabled: グローバルレート制限が有効になり、 {0} 秒に設定されます。
-  wwcBadPerms: このコマンドを実行するのに必要な権限がありません！
   wwcConfigGUILangButton: プラグイン言語の変更
   wwctGUISignButton: 署名翻訳の切り替え
   wwcUpdaterOutOfDate: WorldwideChatは廃れてる最新バージョン {0} に更新してください。
@@ -371,4 +370,5 @@ Messages:
   wwcsActiveTransEntity: 'アクティブな翻訳者翻訳エンティティ: {0}'
   wwcSupportedServer: '{0} のワールドワイドチャットを初期化中...'
   wwcSupportedVersion: バージョン {0} の機能を有効化中...
+  wwcBadPerms: このコマンドを実行するのに必要な権限がありません:{0}
 

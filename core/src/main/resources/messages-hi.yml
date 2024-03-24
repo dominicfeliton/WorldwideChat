@@ -41,7 +41,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: अमेज़ॅन क्षेत्र सफलतापूर्वक सेट
     किया गया।
   wwcConfigRateLimitEnabled: वैश्विक दर सीमा सक्षम और {0} सेकेंड पर सेट करें।
-  wwcBadPerms: आपके पास इस आदेश को निष्पादित करने के लिए आवश्यक अनुमतियाँ नहीं हैं!
   wwcConfigGUILangButton: प्लगइन भाषा बदलें
   wwctGUISignButton: साइन अनुवाद टॉगल करें
   wwcUpdaterOutOfDate: वर्ल्डवाइडचैट पुराना है। कृपया नवीनतम संस्करण, {0} में अद्यतन
@@ -473,4 +472,6 @@ Messages:
   wwcsActiveTransEntity: 'सक्रिय अनुवादक अनुवाद इकाई: {0}'
   wwcSupportedServer: '{0} के लिए WorldwideChat को प्रारंभ किया जा रहा है...'
   wwcSupportedVersion: '{0} संस्करण के लिए सुविधाओं को सक्षम किया जा रहा है...'
+  wwcBadPerms: 'इस कमांड को निष्पादित करने के लिए आपके पास आवश्यक अनुमतियां नहीं हैं:
+    {0}'
 

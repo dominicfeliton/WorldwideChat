@@ -42,7 +42,6 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionSuccess: Khu vực Amazon được thiết lập
     thành công.
   wwcConfigRateLimitEnabled: Giới hạn tốc độ toàn cầu được bật và đặt thành {0} giây.
-  wwcBadPerms: Bạn không có quyền yêu cầu để thực hiện lệnh này!
   wwcConfigGUILangButton: Thay đổi ngôn ngữ Plugin
   wwctGUISignButton: Chuyển đổi Đăng dịch
   wwcUpdaterOutOfDate: WorldwideChat đã lỗi thời. Vui lòng cập nhật lên phiên bản
@@ -469,4 +468,5 @@ Messages:
   wwcsActiveTransEntity: 'Active Translator dịch thực thể: {0}'
   wwcSupportedServer: Khởi tạo WorldwideChat cho {0}...
   wwcSupportedVersion: Bật tính năng cho phiên bản {0}...
+  wwcBadPerms: 'Bạn không có quyền cần thiết để thực hiện lệnh này: {0}'
 
