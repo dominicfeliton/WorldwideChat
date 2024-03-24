@@ -33,7 +33,7 @@ public class WWCStats extends BasicCommand {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
-	
+
 	private boolean isConsoleSender = sender instanceof ConsoleCommandSender;
 
 	public WWCStats(CommandSender sender, Command command, String label, String[] args) {
@@ -45,11 +45,7 @@ public class WWCStats extends BasicCommand {
 		/* Sanitize args */
 		if (args.length > 1) {
 			// Not enough/too many args
-			final TextComponent invalidArgs = Component.text()
-							.content(refs.getMsg("wwctInvalidArgs"))
-							.color(NamedTextColor.RED)
-					.build();
-			refs.sendMsg(sender, invalidArgs);
+			refs.sendFancyMsg("wwctInvalidArgs", "&c", sender);
 		}
 
 		/* Get Sender Stats */
@@ -68,7 +64,7 @@ public class WWCStats extends BasicCommand {
 		}
 		return false;
 	}
-	
+
 	private void translatorMessage(String inName) {
 		BukkitRunnable translatorMessage = new BukkitRunnable() {
 			@Override
@@ -79,13 +75,9 @@ public class WWCStats extends BasicCommand {
 					if (sender.getName().equals(inName)) {
 						inPlayer = (Player)sender;
 					} else {
-						final TextComponent playerNotFound = Component
-										.text().content(refs.getMsg("wwcPlayerNotFound", args[0]))
-										.color(NamedTextColor.RED)
-								.build();
 						/* Don't run API against invalid long names */
 						if (inName.length() > 16 || inName.length() < 3) {
-							refs.sendMsg(sender, playerNotFound);
+							refs.sendFancyMsg("wwcPlayerNotFound", "&6" + args[0], "&c", sender);
 							return null;
 						}
 						inPlayer = Bukkit.getPlayer(inName);
@@ -95,13 +87,12 @@ public class WWCStats extends BasicCommand {
 						/* getOfflinePlayer always returns a player, so we must check if this player has played on this server */
 						if (!inPlayer.hasPlayedBefore()) {
 							// Target player not found
-							refs.sendMsg(sender, playerNotFound);
+							refs.sendFancyMsg("wwcPlayerNotFound", "&6" + args[0], "&c", sender);
 							return null;
 						}
 					}
-					
+
 					/* Process stats of target */
-					// TODO::: Show stats of ActiveTranslator as well
 					// Check if PlayerRecord is valid
 					if (!main.isPlayerRecord(inPlayer.getUniqueId())) {
 						noRecordsMessage(inPlayer.getName());
@@ -121,8 +112,8 @@ public class WWCStats extends BasicCommand {
 						PlayerRecord record = main
 								.getPlayerRecord(inPlayer.getUniqueId().toString(), false);
 						TextComponent stats = Component.text()
-										.content(refs.getMsg("wwcsTitle", inPlayer.getName()))
-										.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true)
+								.content(refs.getMsg("wwcsTitle", inPlayer.getName()))
+								.color(NamedTextColor.GOLD).decoration(TextDecoration.BOLD, true)
 								.append(Component.text()
 										.content("\n- " + refs.getMsg("wwcsAttemptedTranslations", record.getAttemptedTranslations() + ""))
 										.color(NamedTextColor.AQUA))
@@ -135,16 +126,16 @@ public class WWCStats extends BasicCommand {
 								.build();
 						// Add current translator stats if user is ActiveTranslator
 						TextComponent isActiveTranslator = Component.text()
-										.content("\n- " + refs.getMsg("wwcsIsActiveTranslator", ChatColor.BOLD + "" + ChatColor.RED + "\u2717"))
-										.color(NamedTextColor.AQUA)
+								.content("\n- " + refs.getMsg("wwcsIsActiveTranslator", ChatColor.BOLD + "" + ChatColor.RED + "\u2717"))
+								.color(NamedTextColor.AQUA)
 								.build();
 						if (main.isActiveTranslator(inPlayer.getUniqueId())) {
 							// Is currently an active translator
 							// Therefore, append active translator stats
 							ActiveTranslator currTrans = main.getActiveTranslator(inPlayer.getUniqueId());
 							isActiveTranslator = Component.text()
-											.content("\n- " + refs.getMsg("wwcsIsActiveTranslator", ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713"))
-											.color(NamedTextColor.AQUA)
+									.content("\n- " + refs.getMsg("wwcsIsActiveTranslator", ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713"))
+									.color(NamedTextColor.AQUA)
 									.append(Component.text()
 											.content("\n  - " + refs.getMsg("wwcsActiveTransUUID", currTrans.getUUID()))
 											.color(NamedTextColor.LIGHT_PURPLE))
@@ -179,8 +170,8 @@ public class WWCStats extends BasicCommand {
 							// If debug, append extra vars
 							if (main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
 								TextComponent debugInfo = Component.text()
-												.content("\n  - " + refs.getMsg("wwcsActiveTransColorWarning", currTrans.getCCWarning() + ""))
-												.color(NamedTextColor.LIGHT_PURPLE)
+										.content("\n  - " + refs.getMsg("wwcsActiveTransColorWarning", currTrans.getCCWarning() + ""))
+										.color(NamedTextColor.LIGHT_PURPLE)
 										.append(Component.text()
 												.content("\n  - " + refs.getMsg("wwcsActiveTransSaved", currTrans.getHasBeenSaved() + ""))
 												.color(NamedTextColor.LIGHT_PURPLE))
@@ -196,13 +187,13 @@ public class WWCStats extends BasicCommand {
 					}
 					return null;
 				};
-				
+
 				/* Start Callback Process */
 				ExecutorService executor = Executors.newSingleThreadExecutor();
 				Future<?> process = executor.submit(result);
 				try {
 					/* Get translation */
-					 process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
+					process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 				} catch (TimeoutException | ExecutionException | InterruptedException e) {
 					if (e instanceof TimeoutException) {refs.sendTimeoutExceptionMsg(sender);}
 					process.cancel(true);
@@ -214,13 +205,9 @@ public class WWCStats extends BasicCommand {
 		};
 		refs.runAsync(translatorMessage);
 	}
-	
+
 	private boolean noRecordsMessage(String name) {
-		final TextComponent playerNotFound = Component.text() // No records found
-						.content(refs.getMsg("wwcsNotATranslator", name))
-						.color(NamedTextColor.RED)
-				.build();
-		refs.sendMsg(sender, playerNotFound);
+		refs.sendFancyMsg("wwcsNotATranslator", "&6" + name, "&c", sender);
 		return true;
 	}
 

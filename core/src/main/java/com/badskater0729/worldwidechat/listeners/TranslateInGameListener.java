@@ -38,11 +38,11 @@ import net.kyori.adventure.text.format.TextDecoration;
 public class TranslateInGameListener implements Listener {
 
 	private WorldwideChat main = WorldwideChat.instance;
-	
+
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
-	
+
 	/* Custom Entity Name Translation */
-	@EventHandler(priority = EventPriority.HIGHEST) 
+	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInGameEntityTranslateRequest(PlayerInteractEntityEvent event) {
 		if (main.isActiveTranslator(event.getPlayer()) && checkInventoryHand(event)) {
 			/* Entity Names */
@@ -52,23 +52,11 @@ public class TranslateInGameListener implements Listener {
 					BukkitRunnable out = new BukkitRunnable() {
 						@Override
 						public void run() {
-							final TextComponent entityStart = Component.text()
-											.content(refs.getMsg("wwcEntityTranslateStart"))
-											.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
-									.build();
-							refs.sendMsg(event.getPlayer(), entityStart);
+							refs.sendFancyMsg("wwcEntityTranslateStart", "&d&l", event.getPlayer());
 							if (customName != null) {
-								final TextComponent entityDone = Component.text()
-												.content(refs.getMsg("wwcEntityTranslateDone", new String[] {refs.translateText(customName, event.getPlayer())}))
-												.color(NamedTextColor.GREEN)
-										.build();
-								refs.sendMsg(event.getPlayer(), entityDone);
+								refs.sendFancyMsg("wwcEntityTranslateDone", "&a&o" + refs.translateText(customName, event.getPlayer()), "&2&l", event.getPlayer());
 							} else {
-								final TextComponent entityStock = Component.text()
-												.content(refs.getMsg("wwcEntityTranslateNoName"))
-												.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true)
-										.build();
-								refs.sendMsg(event.getPlayer(), entityStock);
+								refs.sendFancyMsg("wwcEntityTranslateNoName", "&e&o", event.getPlayer());
 							}
 						}
 					};
@@ -83,7 +71,7 @@ public class TranslateInGameListener implements Listener {
 			}
 		}
 	}
-	
+
 	/* Items (+ Lore), Books, Signs Translation */
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onInGameObjTranslateRequest(PlayerInteractEvent event) {
@@ -94,9 +82,9 @@ public class TranslateInGameListener implements Listener {
 			/* Book Translation */
 			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
 			if (currTranslator.getTranslatingBook()
-				&& checkInventoryHand(event) && event.getItem() != null
-				&& XMaterial.WRITTEN_BOOK.parseItem().getType() == event.getItem().getType()
-				&& (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
+					&& checkInventoryHand(event) && event.getItem() != null
+					&& XMaterial.WRITTEN_BOOK.parseItem().getType() == event.getItem().getType()
+					&& (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
 				ItemStack currentBook = event.getItem().clone();
 				BukkitRunnable out = new BukkitRunnable() {
 					@Override
@@ -108,19 +96,11 @@ public class TranslateInGameListener implements Listener {
 						List<String> translatedPages = new ArrayList<String>();
 
 						/* Send message */
-						final TextComponent bookStart = Component.text()
-										.content(refs.getMsg("wwcBookTranslateStart"))
-										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
-								.build();
-						refs.sendMsg(event.getPlayer(), bookStart);
+						refs.sendFancyMsg("wwcBookTranslateStart", "&d&l", event.getPlayer());
 
 						/* Translate title */
 						outTitle = refs.translateText(meta.getTitle(), event.getPlayer());
-						final TextComponent bookTitleSuccess = Component.text()
-										.content(refs.getMsg("wwcBookTranslateTitleSuccess", outTitle))
-										.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
-								.build();
-						refs.sendMsg(event.getPlayer(), bookTitleSuccess);
+						refs.sendFancyMsg("wwcBookTranslateTitleSuccess", "&a&o" + outTitle, "&2&l", event.getPlayer());
 
 						/* Translate pages */
 						for (String eaPage : pages) {
@@ -130,11 +110,7 @@ public class TranslateInGameListener implements Listener {
 
 						if (currentBook != null) {
 							/* Set completed message */
-							final TextComponent bookDone = Component.text()
-											.content(refs.getMsg("wwcBookDone"))
-											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
-									.build();
-							refs.sendMsg(event.getPlayer(), bookDone);
+							refs.sendFancyMsg("wwcBookDone", "&a&o", event.getPlayer());
 						}
 
 						/* Create the modified book */
@@ -143,12 +119,12 @@ public class TranslateInGameListener implements Listener {
 						newMeta.setAuthor(meta.getAuthor());
 						try {
 							/* Older MC versions do not have generation data */
-						    newMeta.setGeneration(meta.getGeneration());
+							newMeta.setGeneration(meta.getGeneration());
 						} catch (NoSuchMethodError e) {}
 						newMeta.setTitle(outTitle);
 						newMeta.setPages(translatedPages);
 						newBook.setItemMeta(newMeta);
-						
+
 						/* Get update status */
 						BukkitRunnable open = new BukkitRunnable() {
 							@Override
@@ -167,13 +143,13 @@ public class TranslateInGameListener implements Listener {
 				};
 				refs.runAsync(out);
 			}
-			
+
 			/* Sign Translation */
 			else if (currTranslator.getTranslatingSign()
-			    && event.getClickedBlock() != null 
-			    && event.getClickedBlock().getType().name().contains("SIGN")
-			    && checkInventoryHand(event)
-			    && event.getAction() == Action.RIGHT_CLICK_BLOCK) {
+					&& event.getClickedBlock() != null
+					&& event.getClickedBlock().getType().name().contains("SIGN")
+					&& checkInventoryHand(event)
+					&& event.getAction() == Action.RIGHT_CLICK_BLOCK) {
 				/* Cancel sign edit event */
 				// TODO: Implement PlayerOpenSignEvent on paper with modules
 
@@ -189,11 +165,7 @@ public class TranslateInGameListener implements Listener {
 						boolean textLimit = false;
 
 						/* Send message */
-						final TextComponent signStart = Component.text()
-										.content(refs.getMsg("wwcSignTranslateStart"))
-										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
-								.build();
-						refs.sendMsg(event.getPlayer(), signStart);
+						refs.sendFancyMsg("wwcSignTranslateStart", "&d&l", event.getPlayer());
 
 						/* Translate each line of sign */
 						for (int i = 0; i < changedSignText.length; i++) {
@@ -204,7 +176,7 @@ public class TranslateInGameListener implements Listener {
 							}
 							changedSignText[i] = eaLine;
 						}
-						
+
 						/* Version Check: For 1.13 and below compatibility */
 						try {
 							Player.class.getMethod("sendSignChange", Location.class, String[].class);
@@ -212,18 +184,14 @@ public class TranslateInGameListener implements Listener {
 							textLimit = true;
 							// Always send the user the result via chat. sendSignChange() does not exist in Player.class before 1.14.
 						}
-						
+
 						/*
 						 * Change sign for this user only, if translationNotTooLong and sign still
 						 * exists
 						 */
 						if (!textLimit && currentSign.getLocation() != null) {
 							/* Set completed message */
-							final TextComponent signDone = Component.text()
-											.content(refs.getMsg("wwcSignDone"))
-											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
-									.build();
-							refs.sendMsg(event.getPlayer(), signDone);
+							refs.sendFancyMsg("wwcSignDone", "&a&o", event.getPlayer());
 						} else {
 							/*
 							 * Format sign for chat, if translation exceeds 15 chars or sign was already
@@ -237,9 +205,9 @@ public class TranslateInGameListener implements Listener {
 
 							/* If we are here, sign is too long or deleted msg */
 							final TextComponent translationNoticeMsg = Component.text()
-											.content(refs.getMsg("wwcSignDeletedOrTooLong"))
-											.color(NamedTextColor.LIGHT_PURPLE)
-											.decoration(TextDecoration.ITALIC, true)
+									.content(refs.getMsg("wwcSignDeletedOrTooLong"))
+									.color(NamedTextColor.LIGHT_PURPLE)
+									.decoration(TextDecoration.ITALIC, true)
 									.append(Component.text().content("\n" + "---------------")
 											.color(NamedTextColor.GOLD)
 											.append(Component.text().content(out).color(NamedTextColor.WHITE))
@@ -250,7 +218,7 @@ public class TranslateInGameListener implements Listener {
 							refs.sendMsg(event.getPlayer(), translationNoticeMsg);
 							changedSignText = null;
 						}
-						
+
 						/* Get update status */
 						if (changedSignText != null && !refs.serverIsStopping()) {
 							final String[] finalText = changedSignText;
@@ -266,11 +234,11 @@ public class TranslateInGameListener implements Listener {
 				};
 				refs.runAsync(out);
 			}
-			
+
 			/* Item Translation */
 			else if (currTranslator.getTranslatingItem()
-				&& getItemInMainHand(event) != null
-				&& (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
+					&& getItemInMainHand(event) != null
+					&& (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
 				/* Start item translation */
 				ItemStack currentItem = (ItemStack) getItemInMainHand(event);
 
@@ -284,48 +252,28 @@ public class TranslateInGameListener implements Listener {
 						ArrayList<String> outLore = new ArrayList<String>();
 
 						/* Send message */
-						final TextComponent itemStart = Component.text()
-										.content(refs.getMsg("wwcItemTranslateStart"))
-										.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
-								.build();
-						refs.sendMsg(event.getPlayer(), itemStart);
+						refs.sendFancyMsg("wwcItemTranslateStart", "&d&l", event.getPlayer());
 
 						/* Translate item title */
 						if (meta.hasDisplayName()) {
 							translatedName = refs.translateText(meta.getDisplayName(), event.getPlayer());
 							/* Set completed message */
-							final TextComponent itemTitleDone = Component.text()
-											.content(refs.getMsg("wwcItemTranslateTitleDone"))
-											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
-									.build();
-							refs.sendMsg(event.getPlayer(), itemTitleDone);
+							refs.sendFancyMsg("wwcItemTranslateTitleDone", "&a&o", event.getPlayer());
 						} else {
-							final TextComponent itemStockTitleFail = Component.text()
-											.content(refs.getMsg("wwcItemTranslateTitleStock"))
-											.color(NamedTextColor.YELLOW).decoration(TextDecoration.ITALIC, true)
-									.build();
-							refs.sendMsg(event.getPlayer(), itemStockTitleFail);
+							refs.sendFancyMsg("wwcItemTranslateTitleStock", "&e&o", event.getPlayer());
 							// Stock items not supported
 						}
 
 						/* Translate item lore */
 						if (meta.hasLore()) {
-							final TextComponent itemLoreStart = Component.text()
-											.content(refs.getMsg("wwcItemTranslateLoreStart"))
-											.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
-									.build();
-							refs.sendMsg(event.getPlayer(), itemLoreStart);
+							refs.sendFancyMsg("wwcItemTranslateLoreStart", "&d&l", event.getPlayer());
 							outLore = new ArrayList<String>();
 							for (String eaLine : itemLore) {
 								String translatedLine = refs.translateText(eaLine, event.getPlayer());
 								outLore.add(translatedLine);
 							}
 							/* Set completed message */
-							final TextComponent itemLoreDone = Component.text()
-											.content(refs.getMsg("wwcItemTranslateLoreDone"))
-											.color(NamedTextColor.GREEN).decoration(TextDecoration.ITALIC, true)
-									.build();
-							refs.sendMsg(event.getPlayer(), itemLoreDone);
+							refs.sendFancyMsg("wwcItemTranslateLoreDone", "&a&o", event.getPlayer());
 						}
 
 						/* Create "fake" item to be displayed to user */
@@ -357,7 +305,7 @@ public class TranslateInGameListener implements Listener {
 			refs.debugMsg(ExceptionUtils.getStackTrace(e));
 		}
 	}
-	
+
 	private boolean checkInventoryHand(PlayerInteractEvent event) {
 		try {
 			try {
@@ -375,7 +323,7 @@ public class TranslateInGameListener implements Listener {
 			return false;
 		}
 	}
-	
+
 	private boolean checkInventoryHand(PlayerInteractEntityEvent event) {
 		try {
 			try {

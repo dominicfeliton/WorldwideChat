@@ -1,6 +1,7 @@
 package com.badskater0729.worldwidechat.inventory.wwcstatsgui;
 
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
+import com.badskater0729.worldwidechat.util.ActiveTranslator;
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -18,6 +19,8 @@ import fr.minuskube.inv.content.InventoryProvider;
 import net.md_5.bungee.api.ChatColor;
 
 import java.util.UUID;
+import java.util.ArrayList;
+import java.util.List;
 
 public class WWCStatsGuiMainMenu implements InventoryProvider {
 
@@ -59,9 +62,31 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 			/* Is active translator button */
 			ItemStack isActiveTranslator;
 			if (main.isActiveTranslator(targetPlayerUUID)) {
+				ActiveTranslator currTrans = main.getActiveTranslator(targetPlayerUUID);
 				isActiveTranslator = XMaterial.GREEN_CONCRETE.parseItem();
 				ItemMeta isActiveTranslatorMeta = isActiveTranslator.getItemMeta();
 				isActiveTranslatorMeta.setDisplayName(refs.getMsg("wwcsIsActiveTranslator", ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713"));
+
+				List<String> lore = new ArrayList<>();
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransUUID", ChatColor.GOLD + currTrans.getUUID()));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransRateLimit", ChatColor.GOLD + "" + currTrans.getRateLimit()));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransInLang", ChatColor.GOLD + currTrans.getInLangCode()));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransOutLang", ChatColor.GOLD + currTrans.getOutLangCode()));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransOutgoing", ChatColor.GOLD + "" + currTrans.getTranslatingChatOutgoing()));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransIncoming", ChatColor.GOLD + "" + currTrans.getTranslatingChatIncoming()));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransBook", ChatColor.GOLD + "" + currTrans.getTranslatingBook()));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransSign", ChatColor.GOLD + "" + currTrans.getTranslatingSign()));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransItem", ChatColor.GOLD + "" + currTrans.getTranslatingItem()));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransEntity", ChatColor.GOLD + "" + currTrans.getTranslatingEntity()));
+
+// If debug, append extra vars
+				if (main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
+					lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransColorWarning", ChatColor.GOLD +  "" + currTrans.getCCWarning()));
+					lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransSaved", ChatColor.GOLD + "" + currTrans.getHasBeenSaved()));
+					lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransPrevRate", ChatColor.GOLD + currTrans.getRateLimitPreviousTime()));
+				}
+				isActiveTranslatorMeta.setLore(lore);
+
 				isActiveTranslator.setItemMeta(isActiveTranslatorMeta);
 			} else {
 				isActiveTranslator = XMaterial.RED_CONCRETE.parseItem();
@@ -91,12 +116,6 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 			lastTranslationTimeMeta.setDisplayName(refs.getMsg("wwcsLastTranslationTime", ChatColor.AQUA + "" + currRecord.getLastTranslationTime()));
 			lastTranslationTime.setItemMeta(lastTranslationTimeMeta);
 			contents.set(2, 7, ClickableItem.empty(lastTranslationTime));
-
-			/* Current translator stats button */
-			ItemStack currentTranslatorStats = XMaterial.PAPER.parseItem();
-			ItemMeta currentTranslatorStatsMeta = currentTranslatorStats.getItemMeta();
-			//currentTranslatorStatsMeta.setDisplayName(getMsg("wwcsCurrentTranslatorStats", ));
-			// TODO: Open submenu for stats, if active translator
 
 	    } catch (Exception e) {
 		    invManager.inventoryError(player, e);

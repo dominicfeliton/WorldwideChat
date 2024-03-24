@@ -15,13 +15,14 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
+
 public class WWCTranslateRateLimit extends BasicCommand {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 	private boolean isConsoleSender = sender instanceof ConsoleCommandSender;
-	
+
 	public WWCTranslateRateLimit(CommandSender sender, Command command, String label, String[] args) {
 		super(sender, command, label, args);
 	}
@@ -31,11 +32,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 		/* Sanitize args */
 		if (args.length > 2) {
 			// Not enough/too many args
-			final TextComponent invalidArgs = Component.text()
-							.content(refs.getMsg("wwctInvalidArgs"))
-							.color(NamedTextColor.RED)
-					.build();
-			refs.sendMsg(sender, invalidArgs);
+			refs.sendFancyMsg("wwctInvalidArgs", new String[] {}, "&c", sender);
 			return false;
 		}
 
@@ -69,12 +66,12 @@ public class WWCTranslateRateLimit extends BasicCommand {
 			if (StringUtils.isNumeric(args[1])) {
 				return changeRateLimit(args[0], Integer.parseInt(args[1]));
 			}
-            rateLimitBadIntMessage(sender);
+			rateLimitBadIntMessage(sender);
 			return false;
 		}
 		return false;
 	}
-	
+
 	private boolean changeRateLimit(String inName, int newLimit) {
 		/* Player check, translator check */
 		Player inPlayer = Bukkit.getPlayerExact(inName);
@@ -85,11 +82,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 		} else if (!main.isActiveTranslator(inPlayer)) {
 			/* If translator is null, determine sender and send correct message */
 			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(inName)) {
-				final TextComponent notAPlayer = Component.text()
-								.content(refs.getMsg("wwctrlNotATranslator"))
-								.color(NamedTextColor.RED)
-						.build();
-				refs.sendMsg(sender, notAPlayer);
+				refs.sendFancyMsg("wwctrlNotATranslator", "&c", sender);
 				return false;
 			}
 			playerNotFoundMessage(sender, inName);
@@ -106,11 +99,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 				/* Disable rate limit */
 				if (!(currTranslator.getRateLimit() > 0)) {
 					/* Rate limit already disabled */
-					final TextComponent rateLimitAlreadyOff = Component.text()
-									.content(refs.getMsg("wwctrlRateLimitAlreadyOffSender"))
-									.color(NamedTextColor.YELLOW)
-							.build();
-					refs.sendMsg(inPlayer, rateLimitAlreadyOff);
+					refs.sendFancyMsg("wwctrlRateLimitAlreadyOffSender", "&e", inPlayer);
 				} else {
 					/* Disable rate limit */
 					currTranslator.setRateLimit(0);
@@ -123,67 +112,38 @@ public class WWCTranslateRateLimit extends BasicCommand {
 			if (newLimit > 0) {
 				/* Enable rate limit */
 				currTranslator.setRateLimit(newLimit);
-				final TextComponent rateLimitSet = Component.text()
-								.content(refs.getMsg("wwctrlRateLimitSetTarget", new String[] {inPlayer.getName(), newLimit + ""}))
-								.color(NamedTextColor.LIGHT_PURPLE)
-						.build();
-				refs.sendMsg(sender, rateLimitSet);
+				refs.sendFancyMsg("wwctrlRateLimitSetTarget", new String[] {"&6"+inPlayer.getName(), "&6"+newLimit}, "&d", sender);
 				enableRateLimitMessage(inPlayer, newLimit);
 			} else {
 				/* Disable rate limit */
 				if (!(currTranslator.getRateLimit() > 0)) {
 					/* Rate limit already disabled */
-					final TextComponent rateLimitAlreadyOff = Component.text()
-									.content(refs.getMsg("wwctrlRateLimitAlreadyOffTarget", inPlayer.getName()))
-									.color(NamedTextColor.YELLOW)
-							.build();
-					refs.sendMsg(sender, rateLimitAlreadyOff);
+					refs.sendFancyMsg("wwctrlRateLimitAlreadyOffTarget", "&6"+inPlayer.getName(), "&e", sender);
 				} else {
 					/* Disable rate limit */
 					currTranslator.setRateLimit(0);
-					final TextComponent rateLimitOffReceiver = Component.text()
-									.content(refs.getMsg("wwctrlRateLimitOffTarget", inPlayer.getName()))
-									.color(NamedTextColor.LIGHT_PURPLE)
-							.build();
-					refs.sendMsg(sender, rateLimitOffReceiver);
+					refs.sendFancyMsg("wwctrlRateLimitOffTarget", "&6"+inPlayer.getName(), "&d", sender);
 					disableRateLimitMessage(inPlayer);
 				}
 			}
 			return true;
 		}
 	}
-	
-	private void disableRateLimitMessage(Player inPlayer) {
-		final TextComponent rateLimitOffReceiver = Component.text()
-						.content(refs.getMsg("wwctrlRateLimitOffSender"))
-						.color(NamedTextColor.LIGHT_PURPLE)
-				.build();
-		refs.sendMsg(inPlayer, rateLimitOffReceiver);
-	}
-	
-	private void enableRateLimitMessage(Player inPlayer, int limit) {
-		final TextComponent rateLimitSet = Component.text()
-						.content(refs.getMsg("wwctrlRateLimitSetSender", limit + ""))
-						.color(NamedTextColor.LIGHT_PURPLE)
-				.build();
-		refs.sendMsg(inPlayer, rateLimitSet);
-	}
-	
-	private void rateLimitBadIntMessage(CommandSender sender) {
-		final TextComponent rateLimitOffReceiver = Component.text()
-						.content(refs.getMsg("wwctrlRateLimitBadInt"))
-						.color(NamedTextColor.RED)
-				.build();
-		refs.sendMsg(sender, rateLimitOffReceiver);
-	}
-	
-	private void playerNotFoundMessage(CommandSender sender, String inName) {
-		final TextComponent notAPlayer = Component.text()
-						.content(refs.getMsg("wwctrlPlayerNotFound", inName))
-						.color(NamedTextColor.RED)
-				.build();
-		refs.sendMsg(sender, notAPlayer);
-	}
-	
-}
 
+	private void disableRateLimitMessage(Player inPlayer) {
+		refs.sendFancyMsg("wwctrlRateLimitOffSender", "&d", inPlayer);
+	}
+
+	private void enableRateLimitMessage(Player inPlayer, int limit) {
+		refs.sendFancyMsg("wwctrlRateLimitSetSender", "&6"+limit, "&d", inPlayer);
+	}
+
+	private void rateLimitBadIntMessage(CommandSender sender) {
+		refs.sendFancyMsg("wwctrlRateLimitBadInt", "&c", sender);
+	}
+
+	private void playerNotFoundMessage(CommandSender sender, String inName) {
+		refs.sendFancyMsg("wwctrlPlayerNotFound", "&6"+inName, "&c", sender);
+	}
+
+}

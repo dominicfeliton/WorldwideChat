@@ -31,11 +31,7 @@ public class InventoryListener implements Listener {
 				HumanEntity currPlayer = e.getPlayer();
 				if (main.isPlayerUsingGUI(currPlayer.getUniqueId().toString()) && currPlayer.getOpenInventory().getType() != InventoryType.CHEST
 						&& !((Player) currPlayer).isConversing()) {
-					final TextComponent reloadPlease = Component.text()
-									.content(refs.getMsg("wwcConfigGUIChangesNotSaved"))
-									.color(NamedTextColor.YELLOW)
-							.build();
-					refs.sendMsg(currPlayer, reloadPlease);
+					refs.sendFancyMsg("wwcConfigGUIChangesNotSaved", "&e", currPlayer);
 					main.removePlayerUsingConfigurationGUI((Player) currPlayer);
 				}
 			}
