@@ -16,9 +16,6 @@ public class PaperCommonRefs extends CommonRefs {
     @Override
     public void sendMsg(CommandSender sender, TextComponent originalMessage) {
         try {
-            //Audience adventureSender = main.adventure().sender(sender);
-            //TODO: Why doesn't debugMsg call work here?
-            debugMsg("Paper sendMsg");
             final TextComponent outMessage = Component.text().append(main.getPluginPrefix().asComponent())
                     .append(Component.text().content(" "))
                     .append(originalMessage.asComponent())

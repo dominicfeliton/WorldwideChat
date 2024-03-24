@@ -285,14 +285,66 @@ public class CommonRefs {
 			convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
 		} else {
 			convertedOriginalMessage = messagesConfig.getString("Messages." + ChatColor.stripColor(messageName));
-			if (convertedOriginalMessage == null) {
-				main.getLogger().severe("Bad message! Please fix your messages-XX.yml.");
-				return ChatColor.RED + "Bad message! Please fix your messages-XX.yml.";
-			}
 		}
-		
- 		/* Return fixedMessage with replaced vars */
-		return MessageFormat.format(convertedOriginalMessage, (Object[])replacements);
+
+		if (convertedOriginalMessage == null) {
+			main.getLogger().severe("Bad message! Please fix your messages-XX.yml.");
+			return ChatColor.RED + "Bad message! Please fix your messages-XX.yml.";
+		}
+
+		// Translate color codes in the original message
+		convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', convertedOriginalMessage);
+
+		// Return fixedMessage with replaced vars
+		return MessageFormat.format(convertedOriginalMessage, (Object[]) replacements);
+	}
+
+	public TextComponent getFancyMsg(String messageName, String[] replacements, String resetCode) {
+		for (int i = 0; i < replacements.length; i++) {
+			// Translate color codes in replacements
+			replacements[i] = ChatColor.translateAlternateColorCodes('&', replacements[i] + resetCode);
+		}
+
+		/* Get message from messages.yml */
+		String convertedOriginalMessage = resetCode;
+		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
+		if (messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
+			convertedOriginalMessage += ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
+		} else {
+			convertedOriginalMessage += messagesConfig.getString("Messages." + ChatColor.stripColor(messageName));
+		}
+
+		if (convertedOriginalMessage == null) {
+			main.getLogger().severe("Bad message! Please fix your messages-XX.yml.");
+			return Component.text().content(ChatColor.RED + "Bad message! Please fix your messages-XX.yml.").build();
+		}
+
+		// Translate color codes in the original message
+		convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', convertedOriginalMessage);
+
+		// Return fixedMessage with replaced vars
+		return Component.text().content(MessageFormat.format(convertedOriginalMessage, (Object[]) replacements)).build();
+	}
+
+	public void sendFancyMsg(String messageName, CommandSender sender) {
+		sendMsg(sender, getFancyMsg(messageName, new String[]{}, "&r&d"));
+	}
+
+	public void sendFancyMsg(String messageName, String[] replacements, CommandSender sender) {
+		// Default WWC color is usually LIGHT_PURPLE (&d)
+		sendMsg(sender, getFancyMsg(messageName, replacements, "&r&d"));
+	}
+
+	public void sendFancyMsg(String messageName, String replacement, CommandSender sender) {
+		sendMsg(sender, getFancyMsg(messageName, new String[] {replacement}, "&r&d"));
+	}
+
+	public void sendFancyMsg(String messageName, String replacement, String resetCode, CommandSender sender) {
+		sendMsg(sender, getFancyMsg(messageName, new String[] {replacement}, "&r"+resetCode));
+	}
+
+	public void sendFancyMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
+		sendMsg(sender, getFancyMsg(messageName, replacements, "&r"+resetCode));
 	}
 	
 	/**
@@ -314,6 +366,24 @@ public class CommonRefs {
 				adventureSender.sendMessage(outMessage);
 			}
 		} catch (IllegalStateException e) {}
+	}
+
+	/**
+	 * Shorthand for component to str
+	 * @param comp - TextComponent
+	 * @return string version
+	 */
+	public String serial(TextComponent comp) {
+		return LegacyComponentSerializer.legacyAmpersand().serialize(comp);
+	}
+
+	/**
+	 * Shorthand for str to component
+	 * @param str
+	 * @return textcomponent version
+	 */
+	public TextComponent deserial(String str) {
+		return LegacyComponentSerializer.legacyAmpersand().deserialize(str);
 	}
 	
 	/**
