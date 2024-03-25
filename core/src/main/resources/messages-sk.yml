@@ -108,7 +108,6 @@ Messages:
   wwctGUINewTranslationTarget: Vyberte cieľový jazyk
   wwcConfigConnectionSuccess: Úspešne pripojený k {0}!
   wwcConfigGUIGoogleTranslateButton: Prekladač Google
-  wwcsIsActiveTranslator: 'Je aktívny prekladateľ: {0}'
   wwcConfigConversationPrefixInput: Aktuálna predpona je {0}. Prosím zadajte novú
     alebo zadajte 0, aby ste sa vrátili späť.
   wwcConfigGUIPreviousPageButton: Predchádzajúca strana
@@ -220,7 +219,6 @@ Messages:
     WorldwideChat plugin pre viac informácií.
   wwctInvalidInputLangCode: 'Zadaný neplatný kód zadávacieho jazyka! Platné kódy lang:
     {0}'
-  wwcsTitle: Záznam {0}
   wwctInvalidOutputLangCode: 'Neplatný kód výstupného jazyka je k dispozícii! Platné
     kódy lang: {0}'
   wwctGUISourceTranslationSelected: Vybrali ste tento jazyk.
@@ -457,21 +455,24 @@ Messages:
     žiadne chyby prekladateľa.'
   wwcConfigConversationIgnoreErrorsCleared: Chyby prekladateľa ignorovať frázy úspešne
     vymazané.
-  
-  wwcsActiveTransPrevRate: 'Aktívny prekladateľ Predošlá miera Limit Čas: {0}'
-  wwcsActiveTransSaved: 'Aktívny prekladač uložený na disk: {0}'
-  wwcsActiveTransIncoming: 'Aktívny prekladateľ Preklad prichádzajúceho chatu: {0}'
-  wwcsActiveTransOutLang: 'Jazyk výstupu aktívneho prekladateľa: {0}'
-  wwcsActiveTransInLang: 'Jazyk vstupu aktívneho prekladateľa: {0}'
-  wwcsActiveTransBook: 'Aktívny prekladateľ Prekladateľ Book: {0}'
-  wwcsActiveTransSign: 'Aktívny prekladateľ prekladanie znamienko: {0}'
-  wwcsActiveTransUUID: 'UUID aktívneho prekladateľa: {0}'
-  wwcsActiveTransRateLimit: 'Limit rýchlosti aktívneho prekladateľa: {0}'
-  wwcsActiveTransColorWarning: 'Aktívny prekladateľ dostal farebné upozornenie: {0}'
-  wwcsActiveTransOutgoing: 'Aktívny prekladateľ Preklad Odchádzajúci rozhovor: {0}'
-  wwcsActiveTransItem: 'Aktívny prekladateľ Prekladanie položky: {0}'
-  wwcsActiveTransEntity: 'Aktívny prekladateľ prekladá entitu: {0}'
   wwcSupportedServer: Inicializácia WorldwideChat pre {0}...
   wwcSupportedVersion: Povolenie funkcií pre verziu {0}...
   wwcBadPerms: 'Nemáte požadované povolenia na vykonanie tohto príkazu: {0}'
+  wwcsIsActiveTranslator: 'Je aktívny prekladateľ: {0}'
+  wwcsActiveTransPrevRate: 'Predchádzajúci časový limit sadzby: {0}'
+  wwcsActiveTransSaved: 'Uložené na disk: {0}'
+  wwcsActiveTransIncoming: 'Preklad prichádzajúceho chatu: {0}'
+  wwcsActiveTransOutLang: 'Výstupný jazyk: {0}'
+  wwcsActiveTransInLang: 'Jazyk vstupu: {0}'
+  wwcsActiveTransBook: 'Preklad knihy: {0}'
+  wwcsActiveTransSign: 'Prekladové znamenie: {0}'
+  wwcsActiveTransUUID: 'HODNOTA: {0}'
+  wwcsActiveTransRateLimit: 'Limit sadzby: {0}'
+  wwcsActiveTransColorWarning: 'Prijaté farebné upozornenie: {0}'
+  wwcsActiveTransSignWarning: 'Upozornenie na úpravu prijatého znamienka: {0}'
+  wwcsTitle: Záznam {0}
+  wwcsActiveTransOutgoing: 'Preklad odchádzajúceho chatu: {0}'
+  wwcsActiveTransItem: 'Preklad položky: {0}'
+  wwcsActiveTransEntity: 'Prekladajúca entita: {0}'
+  wwctsWarning: Úprava znakov je zakázaná počas prekladu znakov.
 

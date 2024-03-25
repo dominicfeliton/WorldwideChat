@@ -107,7 +107,6 @@ Messages:
   wwctGUINewTranslationTarget: Chọn một ngôn ngữ mục tiêu
   wwcConfigConnectionSuccess: Kết nối thành công vào {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Đang hoạt động Translator: {0}'
   wwcConfigConversationPrefixInput: Tiền tố hiện tại là {0}. Vui lòng nhập một tiền
     tố mới, hoặc nhập 0 để quay lại.
   wwcConfigGUIPreviousPageButton: Trang trước
@@ -217,7 +216,6 @@ Messages:
     thư mục plugin WorldwideChat để biết thêm thông tin.
   wwctInvalidInputLangCode: 'Mã ngôn ngữ nhập không hợp lệ được cung cấp! Mã lang
     hợp lệ: {0}'
-  wwcsTitle: Bản ghi của {0}
   wwctInvalidOutputLangCode: 'Mã ngôn ngữ xuất không hợp lệ được cung cấp! Mã lang
     hợp lệ: {0}'
   wwctGUISourceTranslationSelected: Bạn đã chọn ngôn ngữ này.
@@ -452,21 +450,24 @@ Messages:
     “*” sẽ khiến plugin không kiểm tra bất kỳ lỗi trình dịch nào.'
   wwcConfigConversationIgnoreErrorsCleared: Lỗi Translator để bỏ qua các cụm từ đã
     xóa thành công.
-  
-  wwcsActiveTransPrevRate: 'Thời gian giới hạn tỷ lệ trước Active Translator: {0}'
-  wwcsActiveTransSaved: 'Active Translator đã lưu vào đĩa: {0}'
-  wwcsActiveTransIncoming: 'Translator đang hoạt động dịch trò chuyện đến: {0}'
-  wwcsActiveTransOutLang: 'Ngôn ngữ xuất dịch hiện hoạt: {0}'
-  wwcsActiveTransInLang: 'Ngôn ngữ nhập phiên dịch hiện hoạt: {0}'
-  wwcsActiveTransBook: 'Active Translator Translator Book: {0}'
-  wwcsActiveTransSign: 'Dấu hiệu dịch đang hoạt động: {0}'
-  wwcsActiveTransUUID: 'Trình dịch hiện hoạt UUID: {0}'
-  wwcsActiveTransRateLimit: 'Giới hạn tốc độ Translator Active: {0}'
-  wwcsActiveTransColorWarning: 'Active Translator nhận được màu cảnh báo: {0}'
-  wwcsActiveTransOutgoing: 'Translator Active Translator Dịch trò chuyện đi: {0}'
-  wwcsActiveTransItem: 'Dịch hiện hoạt dịch mục: {0}'
-  wwcsActiveTransEntity: 'Active Translator dịch thực thể: {0}'
   wwcSupportedServer: Khởi tạo WorldwideChat cho {0}...
   wwcSupportedVersion: Bật tính năng cho phiên bản {0}...
   wwcBadPerms: 'Bạn không có quyền cần thiết để thực hiện lệnh này: {0}'
+  wwcsIsActiveTranslator: 'Có phải phiên dịch đang hoạt động: {0}'
+  wwcsActiveTransPrevRate: 'Thời gian giới hạn tỷ lệ trước: {0}'
+  wwcsActiveTransSaved: 'Đã lưu vào đĩa: {0}'
+  wwcsActiveTransIncoming: 'Dịch cuộc trò chuyện đến: {0}'
+  wwcsActiveTransOutLang: 'Ngôn ngữ đầu ra: {0}'
+  wwcsActiveTransInLang: 'Ngôn ngữ đầu vào: {0}'
+  wwcsActiveTransBook: 'Sách dịch: {0}'
+  wwcsActiveTransSign: 'Dấu hiệu dịch: {0}'
+  wwcsActiveTransUUID: 'MỚI: {0}'
+  wwcsActiveTransRateLimit: 'Giới hạn tỷ lệ: {0}'
+  wwcsActiveTransColorWarning: 'Nhận cảnh báo màu sắc: {0}'
+  wwcsActiveTransSignWarning: 'Đã nhận được cảnh báo chỉnh sửa dấu hiệu: {0}'
+  wwcsTitle: Kỷ lục của {0}
+  wwcsActiveTransOutgoing: 'Dịch Trò chuyện đi: {0}'
+  wwcsActiveTransItem: 'Mục dịch: {0}'
+  wwcsActiveTransEntity: 'Thực thể dịch: {0}'
+  wwctsWarning: Sửa đổi dấu hiệu bị vô hiệu hóa trong khi bạn đang dịch các dấu hiệu.
 

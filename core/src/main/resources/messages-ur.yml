@@ -105,7 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: ہدف کی زبان کا انتخاب کریں
   wwcConfigConnectionSuccess: کامیابی کے ساتھ {0} سے جڑا ہوا!
   wwcConfigGUIGoogleTranslateButton: گوگل ترجمہ
-  wwcsIsActiveTranslator: 'فعال مترجم ہے: {0}'
   wwcConfigConversationPrefixInput: موجودہ سابق {0} ہے براہ مہربانی نیا ٹائپ کریں
     یا واپس جانے کے لیے 0 ٹائپ کریں۔
   wwcConfigGUIPreviousPageButton: پچھلا صفحہ
@@ -208,7 +207,6 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: مزید معلومات کے لئے براہ کرم WorldwideChat
     پلگ ان فولڈر میں errorLog.txt چیک کریں.
   wwctInvalidInputLangCode: 'غلط ان پٹ زبان کوڈ فراہم کی! درست لنگ کوڈ: {0}'
-  wwcsTitle: '{0} کا ریکارڈ'
   wwctInvalidOutputLangCode: 'غلط آؤٹ پٹ زبان کوڈ فراہم کی! درست لنگ کوڈ: {0}'
   wwctGUISourceTranslationSelected: آپ نے یہ زبان منتخب کی ہے۔
   wwcConfigGUIChatMessagesOverrideDeleteButton: اووررائڈ حذف
@@ -450,22 +448,25 @@ Messages:
     کی جانچ پڑتال نہیں ہوگی.'
   wwcConfigConversationIgnoreErrorsCleared: مترجم کی غلطیاں کامیابی سے صاف جملے کو
     نظر انداز کرنے کے لئے.
-  
-  wwcsActiveTransPrevRate: 'فعال مترجم سابقہ شرح کی حد وقت: {0}'
-  wwcsActiveTransSaved: 'فعال مترجم ڈسک میں محفوظ: {0}'
-  wwcsActiveTransIncoming: 'آنے والی چیٹ کا ترجمہ فعال مترجم: {0}'
-  wwcsActiveTransOutLang: 'فعال مترجم آؤٹ پٹ زبان: {0}'
-  wwcsActiveTransInLang: 'فعال مترجم ان پٹ زبان: {0}'
-  wwcsActiveTransBook: 'فعال مترجم کا ترجمہ کتاب: {0}'
-  wwcsActiveTransSign: 'فعال مترجم کا ترجمہ علامت: {0}'
-  wwcsActiveTransUUID: 'فعال مترجم UUID: {0}'
-  wwcsActiveTransRateLimit: 'فعال مترجم کی شرح کی حد: {0}'
-  wwcsActiveTransColorWarning: 'فعال مترجم نے رنگ کی انتباہ موصول کی: {0}'
-  wwcsActiveTransOutgoing: 'فعال مترجم کا ترجمہ سبکدوش ہونے والی چیٹ: {0}'
-  wwcsActiveTransItem: 'فعال مترجم کا ترجمہ آئٹم: {0}'
-  wwcsActiveTransEntity: 'فعال مترجم ترجمہ ادارے: {0}'
   wwcSupportedServer: '{0} کے لئے دنیا بھر میں چیٹ شروع کر رہا ہے...'
   wwcSupportedVersion: ورژن {0} کے لئے خصوصیات کو فعال کر رہا ہے...
   wwcBadPerms: 'آپ کے پاس اس کمانڈ پر عمل درآمد کرنے کے لئے مطلوبہ اجازتیں نہیں ہیں:
     {0}'
+  wwcsIsActiveTranslator: 'فعال مترجم ہے: {0}'
+  wwcsActiveTransPrevRate: 'پچھلی شرح کی حد وقت: {0}'
+  wwcsActiveTransSaved: 'ڈسک پر محفوظ کیا گیا: {0}'
+  wwcsActiveTransIncoming: 'آنے والی چیٹ کا ترجمہ: {0}'
+  wwcsActiveTransOutLang: 'آؤٹ پٹ زبان: {0}'
+  wwcsActiveTransInLang: 'ان پٹ زبان: {0}'
+  wwcsActiveTransBook: 'ترجمہ کتاب: {0}'
+  wwcsActiveTransSign: 'ترجمہ علامت: {0}'
+  wwcsActiveTransUUID: 'آئی ڈی: {0}'
+  wwcsActiveTransRateLimit: 'شرح کی حد: {0}'
+  wwcsActiveTransColorWarning: 'موصول رنگین انتباہ: {0}'
+  wwcsActiveTransSignWarning: 'موصول شدہ سائن میں ترمیم کی انتباہ: {0}'
+  wwcsTitle: '{0} کا ریکارڈ'
+  wwcsActiveTransOutgoing: 'باہر جانے والی چیٹ کا ترجمہ: {0}'
+  wwcsActiveTransItem: 'ترجمہ شدہ شے: {0}'
+  wwcsActiveTransEntity: 'ترجمہ کرنے والا ادارہ: {0}'
+  wwctsWarning: جب آپ علامات کا ترجمہ کر رہے ہو تو اشارے میں ترمیم غیر فعال ہے۔
 

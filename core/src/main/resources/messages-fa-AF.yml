@@ -105,7 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: انتخاب زبان هدف
   wwcConfigConnectionSuccess: با موفقیت به {0} وصل شد!
   wwcConfigGUIGoogleTranslateButton: گوگل ترجمه
-  wwcsIsActiveTranslator: 'مترجم فعال است: {0}'
   wwcConfigConversationPrefixInput: پیشوند فعلی {0} است. لطفا یک پیشوند جدید تایپ
     کنید، یا 0 را برای بازگشت تایپ کنید.
   wwcConfigGUIPreviousPageButton: صفحه قبلی
@@ -209,7 +208,6 @@ Messages:
     WorldwideChat برای اطلاعات بیشتر بررسی کنید.
   wwctInvalidInputLangCode: 'کد زبان ورودی نامعتبر ارائه شده است! کدهای زبان معتبر:
     {0}'
-  wwcsTitle: ضبط {0}
   wwctInvalidOutputLangCode: 'کد زبان خروجی نامعتبر ارائه شده است! کدهای زبان معتبر:
     {0}'
   wwctGUISourceTranslationSelected: شما این زبان را انتخاب کرده اید.
@@ -446,21 +444,24 @@ Messages:
     مترجم را بررسی نکند.'
   wwcConfigConversationIgnoreErrorsCleared: اشتباهات مترجم به چشم پوشی از عبارات با
     موفقیت پاک.
-  
-  wwcsActiveTransPrevRate: 'مترجم فعال قبلی نرخ محدود زمان: {0}'
-  wwcsActiveTransSaved: 'مترجم فعال در دیسک ذخیره شد: {0}'
-  wwcsActiveTransIncoming: 'مترجم فعال در حال ترجمه چت ورودی: {0}'
-  wwcsActiveTransOutLang: 'زبان خروجی مترجم فعال: {0}'
-  wwcsActiveTransInLang: 'زبان ورودی مترجم فعال: {0}'
-  wwcsActiveTransBook: 'ترجمه کتاب مترجم فعال: {0}'
-  wwcsActiveTransSign: 'مترجم فعال ترجمه نشانه: {0}'
-  wwcsActiveTransUUID: 'UUID مترجم فعال: {0}'
-  wwcsActiveTransRateLimit: 'حد مجاز نرخ مترجم فعال: {0}'
-  wwcsActiveTransColorWarning: 'فعال مترجم دریافت هشدار رنگ: {0}'
-  wwcsActiveTransOutgoing: 'مترجم فعال در حال ترجمه چت خروجی: {0}'
-  wwcsActiveTransItem: 'مترجم فعال ترجمه مورد: {0}'
-  wwcsActiveTransEntity: 'مترجم فعال ترجمه نهاد: {0}'
   wwcSupportedServer: مقداردهی اولیه چت جهانی برای {0}...
   wwcSupportedVersion: فعال کردن ویژگی های نسخه {0}...
   wwcBadPerms: 'شما مجوزهای لازم برای اجرای این دستور ندارید: {0}'
+  wwcsIsActiveTranslator: 'مترجم فعال است: {0}'
+  wwcsActiveTransPrevRate: 'زمان محدودیت نرخ قبلی: {0}'
+  wwcsActiveTransSaved: 'ذخیره شده در دیسک: {0}'
+  wwcsActiveTransIncoming: 'ترجمه چت ورودی: {0}'
+  wwcsActiveTransOutLang: 'زبان خروجی: {0}'
+  wwcsActiveTransInLang: 'زبان ورودی: {0}'
+  wwcsActiveTransBook: 'ترجمه کتاب: {0}'
+  wwcsActiveTransSign: 'علامت ترجمه: {0}'
+  wwcsActiveTransUUID: 'جدید: {0}'
+  wwcsActiveTransRateLimit: 'محدودیت نرخ: {0}'
+  wwcsActiveTransColorWarning: 'هشدار رنگ دریافت شده: {0}'
+  wwcsActiveTransSignWarning: 'هشدار ویرایش علامت دریافت شده: {0}'
+  wwcsTitle: رکورد {0}
+  wwcsActiveTransOutgoing: 'ترجمه چت خروجی: {0}'
+  wwcsActiveTransItem: 'مورد ترجمه: {0}'
+  wwcsActiveTransEntity: 'نهاد ترجمه: {0}'
+  wwctsWarning: هنگام ترجمه علائم، اصلاح علامت غیرفعال است.
 

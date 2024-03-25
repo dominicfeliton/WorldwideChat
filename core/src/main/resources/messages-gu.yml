@@ -103,7 +103,6 @@ Messages:
   wwctGUINewTranslationTarget: લક્ષ્ય ભાષા પસંદ કરો
   wwcConfigConnectionSuccess: સફળતાપૂર્વક {0} સાથે જોડાયેલ!
   wwcConfigGUIGoogleTranslateButton: ગૂગલ ટ્રાન્સલેટ
-  wwcsIsActiveTranslator: 'સક્રિય અનુવાદક છે: {0}'
   wwcConfigConversationPrefixInput: વર્તમાન ઉપસર્ગ {0} છે કૃપા કરીને નવું લખો, અથવા
     પાછા જવા માટે 0 લખો.
   wwcConfigGUIPreviousPageButton: અગાઉના પૃષ્ઠ
@@ -207,7 +206,6 @@ Messages:
     પ્લગઇન ફોલ્ડરમાં errorLog.txt તપાસો.
   wwctInvalidInputLangCode: 'અમાન્ય ઇનપુટ ભાષા કોડ પ્રદાન કરવામાં આવે છે! માન્ય લાંબા
     કોડ: {0}'
-  wwcsTitle: '{0} નો રેકોર્ડ'
   wwctInvalidOutputLangCode: 'અમાન્ય આઉટપુટ ભાષા કોડ પ્રદાન કરવામાં આવે છે! માન્ય
     લાંબા કોડ: {0}'
   wwctGUISourceTranslationSelected: તમે આ ભાષા પસંદ કરી છે.
@@ -438,21 +436,25 @@ Messages:
     “*” ટાઇપ કરવાથી પ્લગઇન કોઈપણ અનુવાદક ભૂલોને તપાસશે નહીં.'
   wwcConfigConversationIgnoreErrorsCleared: સફળતાપૂર્વક સાફ કરેલા શબ્દસમૂહોને અવગણવા
     માટે અનુવાદક ભૂલો.
-  
-  wwcsActiveTransPrevRate: 'સક્રિય અનુવાદક પાછલા દર મર્યાદા સમય: {0}'
-  wwcsActiveTransSaved: 'સક્રિય અનુવાદક ડિસ્કમાં સાચવેલ: {0}'
-  wwcsActiveTransIncoming: 'સક્રિય અનુવાદક ઇનકમિંગ ચેટનું ભાષાંતર: {0}'
-  wwcsActiveTransOutLang: 'સક્રિય અનુવાદક આઉટપુટ લેંગ્વેજ: {0}'
-  wwcsActiveTransInLang: 'સક્રિય અનુવાદક ઇનપુટ ભાષા: {0}'
-  wwcsActiveTransBook: 'સક્રિય અનુવાદક પુસ્તક અનુવાદક: {0}'
-  wwcsActiveTransSign: 'સક્રિય અનુવાદક ભાષાંતર ચિહ્ન: {0}'
-  wwcsActiveTransUUID: 'સક્રિય અનુવાદક યુયુઆઈડી: {0}'
-  wwcsActiveTransRateLimit: 'સક્રિય અનુવાદક દર મર્યાદા: {0}'
-  wwcsActiveTransColorWarning: 'સક્રિય અનુવાદકને રંગ ચેતવણી પ્રાપ્ત થઈ: {0}'
-  wwcsActiveTransOutgoing: 'સક્રિય અનુવાદક આઉટગોઇંગ ચેટનો અનુવાદ: {0}'
-  wwcsActiveTransItem: 'સક્રિય અનુવાદક અનુવાદક આઇટમ: {0}'
-  wwcsActiveTransEntity: 'સક્રિય અનુવાદક અનુવાદક એન્ટિટી: {0}'
   wwcSupportedServer: '{0} માટે વિશ્વવિડચેટનો પ્રારંભ કરી રહ્યું છે...'
   wwcSupportedVersion: આવૃત્તિ {0} માટે સુવિધાઓને સક્ષમ કરી રહ્યું છે...
   wwcBadPerms: 'આ આદેશ ચલાવવા માટે તમારી પાસે આવશ્યક પરવાનગીઓ નથી: {0}'
+  wwcsIsActiveTranslator: 'સક્રિય અનુવાદક છે: {0}'
+  wwcsActiveTransPrevRate: 'અગાઉના દર મર્યાદા સમય: {0}'
+  wwcsActiveTransSaved: 'ડિસ્ક પર સાચવેલું: {0}'
+  wwcsActiveTransIncoming: 'ઇનકમિંગ ચેટનું અનુવાદ: {0}'
+  wwcsActiveTransOutLang: 'આઉટપુટ ભાષા: {0}'
+  wwcsActiveTransInLang: 'ઇનપુટ ભાષા: {0}'
+  wwcsActiveTransBook: 'પુસ્તકનું અનુવાદ: {0}'
+  wwcsActiveTransSign: 'અનુવાદિત ચિહ્ન: {0}'
+  wwcsActiveTransUUID: 'ન્યૂડ: {0}'
+  wwcsActiveTransRateLimit: 'દર મર્યાદા: {0}'
+  wwcsActiveTransColorWarning: 'પ્રાપ્ત રંગ ચેતવણી: {0}'
+  wwcsActiveTransSignWarning: 'પ્રાપ્ત સાઇન એડિટ ચેતવણી: {0}'
+  wwcsTitle: '{0} નો રેકોર્ડ'
+  wwcsActiveTransOutgoing: 'આઉટગોઇંગ ચેટનું અનુવાદ: {0}'
+  wwcsActiveTransItem: 'અનુવાદિત આઇટમ: {0}'
+  wwcsActiveTransEntity: 'અનુવાદિત એન્ટિટી: {0}'
+  wwctsWarning: જ્યારે તમે ચિહ્નોનું અનુવાદ કરી રહ્યા હો ત્યારે સાઇન ફેરફાર અક્ષમ
+    છે.
 

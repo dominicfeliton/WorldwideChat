@@ -104,7 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: موخه ژبه غوره کړئ
   wwcConfigConnectionSuccess: په برياليتوب سره نښلول شو {0}!
   wwcConfigGUIGoogleTranslateButton: ګوګل ژباړل
-  wwcsIsActiveTranslator: ': {0} فعاله ژباړونکی دی'
   wwcConfigConversationPrefixInput: اوسنی مختاړی ده {0} دی. مهرباني وکړئ یو نوی ولیکئ،
     یا 0 ډول کړئ چې بېرته لاړ شئ.
   wwcConfigGUIPreviousPageButton: مخکنی مخ
@@ -208,7 +207,6 @@ Messages:
     د WorldwideChat پلگ ان فولډر کې errorLog.txt وګورئ.
   wwctInvalidInputLangCode: 'ناسم انډول ژبې کوډ برابر شو! د اعتبار وړ لینګ کوډونه:
     {0}'
-  wwcsTitle: '{0} ثبتول'
   wwctInvalidOutputLangCode: 'ناسم محصول د ژبې کوډ برابر شو! د اعتبار وړ لینګ کوډونه:
     {0}'
   wwctGUISourceTranslationSelected: تاسو دا ژبه غوره کړې ده.
@@ -444,21 +442,24 @@ Messages:
     برسیره پردې، «*» ټایپ کول به د فلپین سبب شي چې د ژباړونکي غلطی ونه ګوري.'
   wwcConfigConversationIgnoreErrorsCleared: د ژباړونکي غلطی چې په بریالیتوب سره پاک
     شوي عبارتونه سترګې پټې کړي.
-  
-  wwcsActiveTransPrevRate: 'فعاله ژباړونکي د پخواني نرخ حد وخت: {0}'
-  wwcsActiveTransSaved: '{0}: فعاله ژباړونکی په ډیسک کې خوندي شو'
-  wwcsActiveTransIncoming: 'فعاله ژباړونکی راتلونکی چیٹ ژباړل: {0}'
-  wwcsActiveTransOutLang: '{0}: فعاله ژباړونکي وتلونه ژبه'
-  wwcsActiveTransInLang: 'فعالې ژباړونکي ننوتنې ژبه: {0}'
-  wwcsActiveTransBook: 'کتاب ژباړونکی ژباړونکی: {0}'
-  wwcsActiveTransSign: 'د فعالې ژباړونکي لاسليک: {0}'
-  wwcsActiveTransUUID: 'فعاله ژباړونکی UUID: {0}'
-  wwcsActiveTransRateLimit: 'د فعالې ژباړونکي کچه حد: {0}'
-  wwcsActiveTransColorWarning: 'فعالې ژباړونکي د رنګ خبرداری ترلاسه کړ: {0}'
-  wwcsActiveTransOutgoing: 'فعالې ژباړونکي د وتلو چیٹ ژباړل: {0}'
-  wwcsActiveTransItem: 'د ژباړونکي ژباړونکي توکي: {0}'
-  wwcsActiveTransEntity: 'فعالې ژباړونکي ارګان: {0}'
   wwcSupportedServer: د {0} لپاره د نړۍ په نړۍ کې چیټ پیل کول...
   wwcSupportedVersion: د نسخې لپاره ځانګړتیاوې فعالول {0}...
   wwcBadPerms: 'تاسو د دې حکم اجرا کولو لپاره اړین اجازتونه نه لرئ: {0}'
+  wwcsIsActiveTranslator: 'ایا فعال ژباړه: {0}'
+  wwcsActiveTransPrevRate: 'د تېر نرخ محدودیت وخت: {0}'
+  wwcsActiveTransSaved: 'ډیسک ته خوندي کړی شو: {0}'
+  wwcsActiveTransIncoming: 'د راتلونکي چیټ ژباړه کول: {0}'
+  wwcsActiveTransOutLang: 'د تولید ژبه: {0}'
+  wwcsActiveTransInLang: 'د ننوتلو ژبه: {0}'
+  wwcsActiveTransBook: 'ژباړه کتاب: {0}'
+  wwcsActiveTransSign: 'ژباړه نښه: {0}'
+  wwcsActiveTransUUID: 'نوي: {0}'
+  wwcsActiveTransRateLimit: 'د نرخ محدودیت: {0}'
+  wwcsActiveTransColorWarning: 'ترلاسه شوي رنګ خبرتیا: {0}'
+  wwcsActiveTransSignWarning: 'ترلاسه شوي نښې سمبالول خبرتیا: {0}'
+  wwcsTitle: د {0} ریکارډ
+  wwcsActiveTransOutgoing: 'د راتلونکي چیټ ژباړه کول: {0}'
+  wwcsActiveTransItem: 'توکي ژباړه: {0}'
+  wwcsActiveTransEntity: 'ژباړه سازمان: {0}'
+  wwctsWarning: په داسې حال کې چې تاسو د نښې ژباړه کوئ د نښې
 

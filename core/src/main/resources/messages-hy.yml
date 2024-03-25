@@ -109,7 +109,6 @@ Messages:
   wwctGUINewTranslationTarget: Ընտրեք թիրախային լեզու
   wwcConfigConnectionSuccess: Հաջողությամբ կապված է {0}!
   wwcConfigGUIGoogleTranslateButton: Google Թարգմանել
-  wwcsIsActiveTranslator: 'Ակտիվ թարգմանիչ է: {0}'
   wwcConfigConversationPrefixInput: 'Ընթացիկ նախածանցը է {0}: Խնդրում ենք մուտքագրել
     նորը կամ մուտքագրեք 0 ետ վերադառնալու համար:'
   wwcConfigGUIPreviousPageButton: Նախորդ էջ
@@ -219,7 +218,6 @@ Messages:
     WorldwideChat plugin թղթապանակում լրացուցիչ տեղեկությունների համար.
   wwctInvalidInputLangCode: 'Անվավեր մուտքագրման լեզվի կոդը տրամադրված! Վավեր lang
     կոդեր: {0}'
-  wwcsTitle: '{0} ռեկորդային'
   wwctInvalidOutputLangCode: 'Անվավեր ելքային լեզվի կոդը տրամադրված! Վավեր lang կոդեր:
     {0}'
   wwctGUISourceTranslationSelected: Դուք ընտրել եք այս լեզուն.
@@ -463,24 +461,25 @@ Messages:
     չի ստուգել որեւէ թարգմանիչ սխալներ.'
   wwcConfigConversationIgnoreErrorsCleared: Թարգմանիչ սխալներ է անտեսել արտահայտություններ
     մաքրվել հաջողությամբ.
-  
-  wwcsActiveTransPrevRate: Ակտիվ թարգմանիչ Նախորդ դրույքաչափի սահմանափակման ժամանակը
-    ՝ {0}
-  wwcsActiveTransSaved: 'Ակտիվ թարգմանիչ Պահպանվել է սկավառակի: {0}'
-  wwcsActiveTransIncoming: 'Ակտիվ թարգմանիչ Թարգմանիչ Մուտքային Զրուցարան: {0}'
-  wwcsActiveTransOutLang: 'Ակտիվ թարգմանիչ Արդյունք Լեզուն: {0}'
-  wwcsActiveTransInLang: 'Ակտիվ թարգմանիչ մուտքագրման լեզու: {0}'
-  wwcsActiveTransBook: 'Ակտիվ թարգմանիչ Գիրք թարգմանող: {0}'
-  wwcsActiveTransSign: 'Ակտիվ թարգմանիչ Գրանցվել: {0}'
-  wwcsActiveTransUUID: 'Ակտիվ թարգմանիչ UUID: {0}'
-  wwcsActiveTransRateLimit: Ակտիվ թարգմանչի դրույքաչափի սահմանափակում. {0}
-  wwcsActiveTransColorWarning: Ակտիվ թարգմանիչը ստացել է գունավոր նախազգուշացում.
-    {0}
-  wwcsActiveTransOutgoing: 'Ակտիվ թարգմանիչ Թարգմանիչ Արտագնա Զրուցարան: {0}'
-  wwcsActiveTransItem: 'Ակտիվ թարգմանիչ Նյութի: {0}'
-  wwcsActiveTransEntity: Ակտիվ թարգմանիչ թարգմանող կազմակերպություն` {0}
   wwcSupportedServer: Նախաստորագրելով աշխարհըWideCat- ը {0 }- ի համար...
   wwcSupportedVersion: Հնարավորություններ {0} տարբերակի համար...
   wwcBadPerms: Դուք չունեք պահանջվող թույլտվությունները այս հրամանը կատարելու համար.
     {0}
+  wwcsIsActiveTranslator: 'Ակտիվ թարգմանիչն է: {0}'
+  wwcsActiveTransPrevRate: 'Նախորդ դրույքաչափի սահմանաչափի ժամանակը: {0}'
+  wwcsActiveTransSaved: 'Պահված է սկավառակում: {0}'
+  wwcsActiveTransIncoming: 'Թարգմանելով մուտքային զրույցը: {0}'
+  wwcsActiveTransOutLang: 'Արդյունքի լեզու: {0}'
+  wwcsActiveTransInLang: 'Մուտքագրման լեզու: {0}'
+  wwcsActiveTransBook: 'Գիրքի թարգմանություն: {0}'
+  wwcsActiveTransSign: 'Թարգմանչական նշան: {0}'
+  wwcsActiveTransUUID: 'ԼՐԱՑՈՒՄ: {0}'
+  wwcsActiveTransRateLimit: 'Փոխարժեքի սահմանափակում: {0}'
+  wwcsActiveTransColorWarning: 'Ստացված գունային նախազգուշացում: {0}'
+  wwcsActiveTransSignWarning: Ստացված նշանի խմբագրման նախազգուշացում. {0}
+  wwcsTitle: '{0} -ի գրառում'
+  wwcsActiveTransOutgoing: Արտագնա զրույցի թարգմանություն` {0}
+  wwcsActiveTransItem: 'Թարգմանչական նյութ: {0}'
+  wwcsActiveTransEntity: 'Թարգմանող կազմակերպություն: {0}'
+  wwctsWarning: 'Նշանների փոփոխումն անջատված է նշաններ թարգմանելիս:'
 

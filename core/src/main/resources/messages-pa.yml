@@ -112,7 +112,6 @@ Messages:
   wwcConfigConnectionSuccess: ਸਫਲਤਾਪੂਰਕ {0} ਨਾਲ ਜੁੜਿਆ!
   wwctGUIRateButton: ਸੈੱਟ ਦਰ ਸੀਮਾ
   wwcConfigGUIGoogleTranslateButton: ਗੂਗਲ ਅਨੁਵਾਦ
-  wwcsIsActiveTranslator: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਹੈ: {0}'
   wwcConfigConversationPrefixInput: ਮੌਜੂਦਾ ਅਗੇਤਰ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਨਵਾਂ ਟਾਈਪ ਕਰੋ,
     ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ.
   wwctInvalidInputLangCode: 'ਗਲਤ ਇੰਪੁੱਟ ਭਾਸ਼ਾ ਕੋਡ ਦਿੱਤਾ ਗਿਆ! ਵੈਧ ਲੰਬੇ ਕੋਡ: {0}'
@@ -224,7 +223,6 @@ Messages:
   wwcEnabled: ਸਮਰੱਥ ਵਰਲਡਵਿਡਚੈਟ ਵਰਜਨ {0}.
   wwcgLangToLangStart: ਹੁਣ {0} ਤੋਂ {1} ਤੱਕ ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ ਕਰ ਰਿਹਾ ਹੈ।
   wwcConfigGUIPluginUpdateChatButton: ਪਲੱਗਇਨ ਅੱਪਡੇਟ ਲਈ ਚੈਟ ਯਾਦ ਭੇਜੋ
-  wwcsTitle: '{0} ਦਾ ਰਿਕਾਰਡ'
   wwcConfigGUIErrorLimitButton: ਬਦਲੋ ਅਨੁਵਾਦਕ ਗਲਤੀ ਸੀਮਾ
   wwcConfigConversationWatsonAPIKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਵਾਟਸਨ
     ਲਈ ਇੱਕ API ਕੁੰਜੀ ਇੰਪੁੱਟ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ।
@@ -447,21 +445,24 @@ Messages:
     ਨਹੀਂ ਕਰੇਗੀ.'
   wwcConfigConversationIgnoreErrorsCleared: ਵਾਕਾਂਸ਼ਾਂ ਨੂੰ ਨਜ਼ਰ ਅੰਦਾਜ਼ ਕਰਨ ਲਈ ਅਨੁਵਾਦਕ
     ਗਲਤੀਆਂ ਸਫਲਤਾਪੂਰਵਕ ਸਾਫ ਹੋ ਗਈਆਂ.
-  
-  wwcsActiveTransPrevRate: 'ਕਿਰਿਆਸ਼ੀਲ ਅਨੁਵਾਦਕ ਪਿਛਲੀ ਦਰ ਸੀਮਾ ਸਮਾਂ: {0}'
-  wwcsActiveTransSaved: 'ਐਕਟਿਵ ਅਨੁਵਾਦਕ ਡਿਸਕ ਤੇ ਸੁਰੱਖਿਅਤ: {0}'
-  wwcsActiveTransIncoming: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਇਨਕਿਮੰਗ ਚੈਟ ਦਾ ਅਨੁਵਾਦ: {0}'
-  wwcsActiveTransOutLang: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਆਉਟਪੁੱਟ ਭਾਸ਼ਾ: {0}'
-  wwcsActiveTransInLang: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਇੰਪੁੱਟ ਭਾਸ਼ਾ: {0}'
-  wwcsActiveTransBook: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਅਨੁਵਾਦਕ ਕਿਤਾਬ: {0}'
-  wwcsActiveTransSign: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਟ੍ਰਾਂਸਲੇਟਿੰਗ ਸਾਈਨ: {0}'
-  wwcsActiveTransUUID: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ UUID: {0}'
-  wwcsActiveTransRateLimit: 'ਕਿਰਿਆਸ਼ੀਲ ਅਨੁਵਾਦਕ ਦਰ ਸੀਮਾ: {0}'
-  wwcsActiveTransColorWarning: 'ਐਕਟਿਵ ਅਨੁਵਾਦਕ ਨੂੰ ਰੰਗ ਦੀ ਚੇਤਾਵਨੀ ਮਿਲੀ: {0}'
-  wwcsActiveTransOutgoing: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਅਨੁਵਾਦ ਬਾਹਰ ਜਾਣ ਵਾਲੀ ਚੈਟ: {0}'
-  wwcsActiveTransItem: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਅਨੁਵਾਦ ਆਈਟਮ: {0}'
-  wwcsActiveTransEntity: 'ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਅਨੁਵਾਦਕ ਇਕਾਈ: {0}'
   wwcSupportedServer: '{0} ਲਈ ਵਰਲਡਵਾਈਡਚੈਟ ਸ਼ੁਰੂ ਕਰ ਰਿਹਾ ਹੈ...'
   wwcSupportedVersion: ਵਰਜਨ ਲਈ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਨੂੰ ਸਮਰੱਥ ਕਰਨਾ {0}...
   wwcBadPerms: 'ਇਸ ਕਮਾਂਡ ਨੂੰ ਚਲਾਉਣ ਲਈ ਤੁਹਾਡੇ ਕੋਲ ਲੋੜੀਂਦੀਆਂ ਇਜਾਜ਼ਤਾਂ ਨਹੀਂ ਹਨ: {0}'
+  wwcsIsActiveTranslator: 'ਕਿਰਿਆਸ਼ੀਲ ਅਨੁਵਾਦਕ ਹੈ: {0}'
+  wwcsActiveTransPrevRate: 'ਪਿਛਲੀ ਰੇਟ ਸੀਮਾ ਸਮਾਂ: {0}'
+  wwcsActiveTransSaved: 'ਡਿਸਕ ਤੇ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ: {0}'
+  wwcsActiveTransIncoming: 'ਆਉਣ ਵਾਲੀ ਚੈਟ ਦਾ ਅਨੁਵਾਦ ਕਰਨਾ: {0}'
+  wwcsActiveTransOutLang: 'ਆਉਟਪੁੱਟ ਭਾਸ਼ਾ: {0}'
+  wwcsActiveTransInLang: 'ਇੰਪੁੱਟ ਭਾਸ਼ਾ: {0}'
+  wwcsActiveTransBook: 'ਕਿਤਾਬ ਦਾ ਅਨੁਵਾਦ: {0}'
+  wwcsActiveTransSign: 'ਅਨੁਵਾਦ ਕਰਨ ਵਾਲਾ ਚਿੰਨ੍ਹ: {0}'
+  wwcsActiveTransUUID: 'ਨਵੀਨਤਾ: {0}'
+  wwcsActiveTransRateLimit: 'ਰੇਟ ਸੀਮਾ: {0}'
+  wwcsActiveTransColorWarning: 'ਪ੍ਰਾਪਤ ਕੀਤਾ ਰੰਗ ਚੇਤਾਵਨੀ: {0}'
+  wwcsActiveTransSignWarning: 'ਪ੍ਰਾਪਤ ਚਿੰਨ੍ਹ ਸੰਪਾਦਨ ਚੇਤਾਵਨੀ: {0}'
+  wwcsTitle: '{0} ਦਾ ਰਿਕਾਰਡ'
+  wwcsActiveTransOutgoing: 'ਆਉਟਗੋਇੰਗ ਚੈਟ ਦਾ ਅਨੁਵਾਦ ਕਰਨਾ: {0}'
+  wwcsActiveTransItem: 'ਆਈਟਮ ਦਾ ਅਨੁਵਾਦ ਕਰਨਾ: {0}'
+  wwcsActiveTransEntity: 'ਅਨੁਵਾਦਕ ਹਸਤੀ: {0}'
+  wwctsWarning: ਜਦੋਂ ਤੁਸੀਂ ਚਿੰਨ੍ਹ ਦਾ ਅਨੁਵਾਦ ਕਰ ਰਹੇ ਹੋ ਤਾਂ ਸਾਈਨ ਸੋਧ ਅਯੋਗ ਹੈ।
 

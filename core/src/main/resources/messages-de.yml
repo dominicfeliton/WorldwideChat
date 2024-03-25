@@ -114,7 +114,6 @@ Messages:
   wwctGUINewTranslationTarget: Wähle eine Zielsprache
   wwcConfigConnectionSuccess: Erfolgreich verbunden mit {0}!
   wwcConfigGUIGoogleTranslateButton: Google übersetzen
-  wwcsIsActiveTranslator: 'Ist aktiver Übersetzer: {0}'
   wwcConfigConversationPrefixInput: Das aktuelle Präfix ist {0}. Geben Sie ein neues
     ein oder geben Sie 0 ein, um zurückzukehren.
   wwcConfigGUIPreviousPageButton: Vorherige Seite
@@ -229,7 +228,6 @@ Messages:
     errorLog.txt im WorldwideChat-Plugin-Ordner.
   wwctInvalidInputLangCode: 'Ungültiger Code für Eingabesprache Gültige Lang-Codes:
     {0}'
-  wwcsTitle: Datensatz von {0}
   wwctInvalidOutputLangCode: 'Ungültiger Code für Ausgabesprache angegeben! Gültige
     Lang-Codes: {0}'
   wwctGUISourceTranslationSelected: Sie haben diese Sprache gewählt.
@@ -493,24 +491,25 @@ Messages:
     führt die Eingabe von „*“ dazu, dass das Plugin keine Übersetzungsfehler überprüft.'
   wwcConfigConversationIgnoreErrorsCleared: Übersetzungsfehler beim Ignorieren von
     Phrasen wurden erfolgreich gelöscht.
-  
-  wwcsActiveTransPrevRate: 'Gültigkeitsdauer des vorherigen Ratenlimits für den aktiven
-    Übersetzer: {0}'
-  wwcsActiveTransSaved: 'Aktiver Übersetzer auf Festplatte gespeichert: {0}'
-  wwcsActiveTransIncoming: 'Aktiver Übersetzer übersetzt eingehenden Chat: {0}'
-  wwcsActiveTransOutLang: 'Aktive Übersetzer-Ausgabesprache: {0}'
-  wwcsActiveTransInLang: 'Eingabesprache des aktiven Übersetzers: {0}'
-  wwcsActiveTransBook: 'Aktiver Übersetzer, der das Buch übersetzt: {0}'
-  wwcsActiveTransSign: 'Aktiver Übersetzer übersetzt Zeichen: {0}'
-  wwcsActiveTransUUID: 'Aktiver Übersetzer-UUID: {0}'
-  wwcsActiveTransRateLimit: 'Ratenlimit für aktive Übersetzer: {0}'
-  wwcsActiveTransColorWarning: 'Aktiver Übersetzer hat eine Farbwarnung erhalten:
-    {0}'
-  wwcsActiveTransOutgoing: 'Aktiver Übersetzer übersetzt ausgehenden Chat: {0}'
-  wwcsActiveTransItem: 'Aktiver Übersetzer übersetzt Artikel: {0}'
-  wwcsActiveTransEntity: 'Aktive Entität, die den Übersetzer übersetzt: {0}'
   wwcSupportedServer: WorldwideChat für {0} wird initialisiert...
   wwcSupportedVersion: Funktionen für Version {0} werden aktiviert...
   wwcBadPerms: 'Sie haben nicht die erforderlichen Berechtigungen, um diesen Befehl
     auszuführen: {0}'
+  wwcsIsActiveTranslator: 'Ist aktiver Übersetzer: {0}'
+  wwcsActiveTransPrevRate: 'Bisherige Ratenbegrenzungszeit: {0}'
+  wwcsActiveTransSaved: 'Auf Festplatte gespeichert: {0}'
+  wwcsActiveTransIncoming: 'Eingehenden Chat übersetzen: {0}'
+  wwcsActiveTransOutLang: 'Ausgabesprache: {0}'
+  wwcsActiveTransInLang: 'Eingabesprache: {0}'
+  wwcsActiveTransBook: 'Buch übersetzen: {0}'
+  wwcsActiveTransSign: 'Zeichen übersetzen: {0}'
+  wwcsActiveTransUUID: 'UUID: {0}'
+  wwcsActiveTransRateLimit: 'Ratenlimit: {0}'
+  wwcsActiveTransColorWarning: 'Farbwarnung erhalten: {0}'
+  wwcsActiveTransSignWarning: 'Warnung zur Zeichenbearbeitung erhalten: {0}'
+  wwcsTitle: Datensatz von {0}
+  wwcsActiveTransOutgoing: 'Outgoing Chat übersetzen: {0}'
+  wwcsActiveTransItem: 'Artikel wird übersetzt: {0}'
+  wwcsActiveTransEntity: 'Übersetzende Entität: {0}'
+  wwctsWarning: Die Zeichenänderung ist deaktiviert, während Sie Zeichen übersetzen.
 

@@ -51,18 +51,18 @@ public class TestTranslationUtils {
 
 	public void testPluginDataRetention() {
 		/*
-		assertTrue(plugin.getActiveTranslator(playerMock.getUniqueId().toString()).getOutLangCode().equals("es")
-				&& plugin.getPlayerRecord(playerMock.getUniqueId().toString(), false).getAttemptedTranslations() > 0);
-		assertTrue(plugin.getActiveTranslator(secondPlayerMock.getUniqueId().toString()).getOutLangCode().equals("es")
-				&& plugin.getPlayerRecord(secondPlayerMock.getUniqueId().toString(), false)
+		assertTrue(plugin.getActiveTranslator(playerMock).getOutLangCode().equals("es")
+				&& plugin.getPlayerRecord(playerMock, false).getAttemptedTranslations() > 0);
+		assertTrue(plugin.getActiveTranslator(secondPlayerMock).getOutLangCode().equals("es")
+				&& plugin.getPlayerRecord(secondPlayerMock, false)
 						.getAttemptedTranslations() > 0);
 		playerMock.performCommand("worldwidechat:wwct en fr");
 		secondPlayerMock.performCommand("worldwidechat:wwct es en");
 		WorldwideChatTests.reloadWWC();
-		assertTrue(plugin.getActiveTranslator(playerMock.getUniqueId().toString()).getInLangCode().equals("en")
-				&& plugin.getActiveTranslator(playerMock.getUniqueId().toString()).getOutLangCode().equals("fr"));
-		assertTrue(plugin.getActiveTranslator(secondPlayerMock.getUniqueId().toString()).getInLangCode().equals("es")
-				&& plugin.getActiveTranslator(secondPlayerMock.getUniqueId().toString()).getOutLangCode().equals("en"));
+		assertTrue(plugin.getActiveTranslator(playerMock).getInLangCode().equals("en")
+				&& plugin.getActiveTranslator(playerMock).getOutLangCode().equals("fr"));
+		assertTrue(plugin.getActiveTranslator(secondPlayerMock).getInLangCode().equals("es")
+				&& plugin.getActiveTranslator(secondPlayerMock).getOutLangCode().equals("en"));
 	    */
 		
 		//TODO: Rewrite

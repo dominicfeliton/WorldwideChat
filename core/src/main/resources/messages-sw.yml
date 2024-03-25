@@ -104,7 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: Chagua Lugha ya Target
   wwcConfigConnectionSuccess: Imeunganishwa kwa ufanisi na {0}!
   wwcConfigGUIGoogleTranslateButton: Google Tafsiri
-  wwcsIsActiveTranslator: 'Ni Mtafsiri wa Active: {0}'
   wwcConfigConversationPrefixInput: Kiambishi awali cha sasa ni {0}. Tafadhali andika
     mpya, au andika 0 ili urejee.
   wwcConfigGUIPreviousPageButton: Ukurasa uliopita
@@ -208,7 +207,6 @@ Messages:
     folda ya Plugin ya WorldwideChat kwa maelezo zaidi.
   wwctInvalidInputLangCode: 'Batili pembejeo lugha code zinazotolewa! Nambari za lang
     halali: {0}'
-  wwcsTitle: Rekodi ya {0}
   wwctInvalidOutputLangCode: 'Batili pato lugha code zinazotolewa! Nambari za lang
     halali: {0}'
   wwctGUISourceTranslationSelected: Umechagua lugha hii.
@@ -440,22 +438,24 @@ Messages:
     “*” itasababisha Plugin kutoangalia makosa yoyote ya translator.'
   wwcConfigConversationIgnoreErrorsCleared: Makosa ya Translator kupuuza misemo kufutwa
     kwa mafanikio.
-  
-  wwcsActiveTransPrevRate: 'Mtafsiri wa Kazi Muda wa Kikomo cha Kiwango cha awali:
-    {0}'
-  wwcsActiveTransSaved: 'Mtafsiri wa Active Imehifadhiwa kwenye Disk: {0}'
-  wwcsActiveTransIncoming: 'Translator Active Kutafsiri Chat Incoming: {0}'
-  wwcsActiveTransOutLang: 'Lugha ya Pato la Translator Active: {0}'
-  wwcsActiveTransInLang: 'Lugha ya Input Translator Active: {0}'
-  wwcsActiveTransBook: 'Kitabu cha Tafsiri cha Tafsiri cha Mtafsiri: {0}'
-  wwcsActiveTransSign: 'Ishara ya kutafsiri Tafsiri ya Mtafsiri: {0}'
-  wwcsActiveTransUUID: 'Mtafsiri mwenye kazi UUID: {0}'
-  wwcsActiveTransRateLimit: 'Kikomo cha Kiwango cha Mtafsiri wa Active: {0}'
-  wwcsActiveTransColorWarning: 'Mtafsiri wa Active Alipokea Onyo la Rangi: {0}'
-  wwcsActiveTransOutgoing: 'Active Translator Kutafsiri Chat zinazotoka: {0}'
-  wwcsActiveTransItem: 'Mtafsiri mwenye kazi Tafsiri Kipengee: {0}'
-  wwcsActiveTransEntity: 'Chombo cha Tafsiri cha Tafsiri cha Mtafsiri: {0}'
   wwcSupportedServer: Kuanzisha WorldwideChat kwa {0}...
   wwcSupportedVersion: Inawezesha vipengele vya toleo {0}...
   wwcBadPerms: 'Huna ruhusa zinazohitajika kutekeleza amri hii: {0}'
+  wwcsIsActiveTranslator: 'Je! Mtafsiri Anayefanya kazi: {0}'
+  wwcsActiveTransPrevRate: 'Wakati wa Kikomo cha Kiwango cha Awali: {0}'
+  wwcsActiveTransSaved: 'Imehifadhiwa kwenye Diski: {0}'
+  wwcsActiveTransIncoming: 'Kutafsiri Mazungumzo yanayoingia: {0}'
+  wwcsActiveTransOutLang: 'Lugha ya Pato: {0}'
+  wwcsActiveTransInLang: 'Lugha ya kuingiza: {0}'
+  wwcsActiveTransBook: 'Kitabu kutafsiri: {0}'
+  wwcsActiveTransSign: 'Ishara ya kutafsiri: {0}'
+  wwcsActiveTransUUID: 'UUDIO: {0}'
+  wwcsActiveTransRateLimit: 'Kikomo cha Kiwango: {0}'
+  wwcsActiveTransColorWarning: 'Onyo ya Rangi yaliyopokelewa: {0}'
+  wwcsActiveTransSignWarning: 'Onyo ya Kuhariri Ishara Iliyopokelewa: {0}'
+  wwcsTitle: Rekodi ya {0}
+  wwcsActiveTransOutgoing: 'Kutafsiri Mazungumzo ya Kutoka: {0}'
+  wwcsActiveTransItem: 'Kipengele cha kutafsiri: {0}'
+  wwcsActiveTransEntity: 'Kitengo cha kutafsiri: {0}'
+  wwctsWarning: Marekebisho ya ishara yamezimwa wakati unatafsiri ishara.
 

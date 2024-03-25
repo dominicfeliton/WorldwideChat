@@ -100,7 +100,6 @@ Messages:
   wwctGUINewTranslationTarget: Hedef Dil Seçin
   wwcConfigConnectionSuccess: '{0}!'
   wwcConfigGUIGoogleTranslateButton: Google Çevir
-  wwcsIsActiveTranslator: 'Etkin Çevirmen: {0}'
   wwcConfigConversationPrefixInput: Geçerli önek {0}. Lütfen yeni bir tane yazın veya
     geri dönmek için 0 yazın.
   wwcConfigGUIPreviousPageButton: Önceki Sayfa
@@ -204,7 +203,6 @@ Messages:
     eklentisi klasöründeki errorLog.txt dosyasını kontrol edin.
   wwctInvalidInputLangCode: 'Geçersiz giriş dili kodu sağlandı! Geçerli lang kodları:
     {0}'
-  wwcsTitle: '{0} kaydı'
   wwctInvalidOutputLangCode: 'Geçersiz çıktı dili kodu sağlandı! Geçerli lang kodları:
     {0}'
   wwctGUISourceTranslationSelected: Bu dili seçtiniz.
@@ -442,21 +440,24 @@ Messages:
     kontrol etmemesine neden olur.'
   wwcConfigConversationIgnoreErrorsCleared: Başarıyla temizlenen ifadeleri yok saymak
     için çevirmen hataları.
-  
-  wwcsActiveTransPrevRate: 'Aktif Çevirmen Önceki Oranı Sınır Süresi: {0}'
-  wwcsActiveTransSaved: 'Diske Kaydedilen Etkin Çevirmen: {0}'
-  wwcsActiveTransIncoming: 'Gelen Sohbeti Çeviren Etkin Çevirmen: {0}'
-  wwcsActiveTransOutLang: 'Etkin Çevirmen Çıktı Dili: {0}'
-  wwcsActiveTransInLang: 'Etkin Çevirmen Giriş Dili: {0}'
-  wwcsActiveTransBook: 'Etkin Çevirmen Çeviri Kitabı: {0}'
-  wwcsActiveTransSign: 'Etkin Çevirmen Tercüme İşareti: {0}'
-  wwcsActiveTransUUID: 'Etkin Çevirmen UUID: {0}'
-  wwcsActiveTransRateLimit: 'Etkin Çevirmen Oranı Sınırı: {0}'
-  wwcsActiveTransColorWarning: 'Etkin Çevirmen Alınan Renk Uyarısı: {0}'
-  wwcsActiveTransOutgoing: 'Giden Sohbeti Çeviren Etkin Çevirmen: {0}'
-  wwcsActiveTransItem: 'Etkin Çevirmen Çeviri Öğesi: {0}'
-  wwcsActiveTransEntity: 'Etkin Çevirmen Çevirmen Varlığı: {0}'
   wwcSupportedServer: WorldwideChat {0} için başlatılıyor...
   wwcSupportedVersion: '{0} sürümü için özellikler etkinleştiriliyor...'
   wwcBadPerms: 'Bu komutu yürütmek için gerekli izinlere sahip değilsiniz: {0}'
+  wwcsIsActiveTranslator: 'Aktif Çevirmen mi: {0}'
+  wwcsActiveTransPrevRate: 'Önceki Oran Sınır Süresi: {0}'
+  wwcsActiveTransSaved: 'Diske Kaydedildi: {0}'
+  wwcsActiveTransIncoming: 'Gelen Sohbeti Çevirme: {0}'
+  wwcsActiveTransOutLang: 'Çıktı Dili: {0}'
+  wwcsActiveTransInLang: 'Giriş Dili: {0}'
+  wwcsActiveTransBook: 'Kitap Çeviri: {0}'
+  wwcsActiveTransSign: 'Tercüme İşareti: {0}'
+  wwcsActiveTransUUID: 'YENİ: {0}'
+  wwcsActiveTransRateLimit: 'Oran Sınırı: {0}'
+  wwcsActiveTransColorWarning: 'Alınan Renk Uyarısı: {0}'
+  wwcsActiveTransSignWarning: 'Alınan İşaret Düzenleme Uyarısı: {0}'
+  wwcsTitle: '{0} ''in kaydı'
+  wwcsActiveTransOutgoing: 'Giden Sohbeti Çevirme: {0}'
+  wwcsActiveTransItem: 'Tercüme Öğesi: {0}'
+  wwcsActiveTransEntity: 'Çeviri Varlığı: {0}'
+  wwctsWarning: İşaretleri çevirirken işaret değişikliği devre dışı bırakılır.
 

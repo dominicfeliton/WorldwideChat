@@ -90,7 +90,6 @@ Messages:
   wwctGUINewTranslationTarget: ターゲット言語の選択
   wwcConfigConnectionSuccess: '{0}に正常に接続されました！'
   wwcConfigGUIGoogleTranslateButton: グーグル翻訳
-  wwcsIsActiveTranslator: 'アクティブなトランスレータか: {0}'
   wwcConfigConversationPrefixInput: 現在の接頭辞は {0}です。新しい接頭辞を入力するか、0を入力して戻してください。
   wwcConfigGUIPreviousPageButton: 前のページ
   wwcConfigGUITranslatorCacheButton: 変換キャッシュ制限の変更
@@ -170,7 +169,6 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: 詳細については、WorldwideChat プラグインフォルダの errorLog.txt
     をチェックしてください。
   wwctInvalidInputLangCode: '無効な入力言語コードが提供されました。有効なラングコード: {0}'
-  wwcsTitle: '{0} のレコード'
   wwctInvalidOutputLangCode: '無効な出力言語コードが提供されました。有効なラングコード: {0}'
   wwctGUISourceTranslationSelected: この言語を選択しました。
   wwcConfigGUIChatMessagesOverrideDeleteButton: オーバーライドを削除
@@ -354,21 +352,24 @@ Messages:
   wwcConfigConversationIgnoreErrorsInput: 無視するトランスレータエラーに含まれる現在のフレーズのリストは次のとおりです。引数をカンマで区切って入力するか
     (key=value、key2=value2)、clear と入力して現在の引数を消去するか、0 を入力して戻ります。さらに、「*」を入力すると、プラグインはトランスレータエラーをチェックしなくなります。
   wwcConfigConversationIgnoreErrorsCleared: フレーズを無視する翻訳者エラーは正常にクリアされました。
-  
-  wwcsActiveTransPrevRate: 'アクティブなトランスレータの以前の翻訳制限時間: {0}'
-  wwcsActiveTransSaved: 'アクティブなトランスレータがディスクに保存されました: {0}'
-  wwcsActiveTransIncoming: '受信したチャットを翻訳中のアクティブな翻訳者: {0}'
-  wwcsActiveTransOutLang: 'アクティブトランスレータ出力言語: {0}'
-  wwcsActiveTransInLang: 'アクティブな翻訳者入力言語: {0}'
-  wwcsActiveTransBook: '本を翻訳中のアクティブな翻訳者: {0}'
-  wwcsActiveTransSign: '翻訳中の翻訳者サイン: {0}'
-  wwcsActiveTransUUID: 'アクティブトランスレータ UUID: {0}'
-  wwcsActiveTransRateLimit: 'アクティブトランスレータのレート制限: {0}'
-  wwcsActiveTransColorWarning: 'アクティブなトランスレータがカラー警告を受け取りました: {0}'
-  wwcsActiveTransOutgoing: '発信チャットを翻訳中のアクティブな翻訳者: {0}'
-  wwcsActiveTransItem: '現在翻訳中の翻訳者アイテム: {0}'
-  wwcsActiveTransEntity: 'アクティブな翻訳者翻訳エンティティ: {0}'
   wwcSupportedServer: '{0} のワールドワイドチャットを初期化中...'
   wwcSupportedVersion: バージョン {0} の機能を有効化中...
   wwcBadPerms: このコマンドを実行するのに必要な権限がありません:{0}
+  wwcsIsActiveTranslator: アクティブなトランスレータですか:{0}
+  wwcsActiveTransPrevRate: 前回のレート制限時間:{0}
+  wwcsActiveTransSaved: ディスクに保存:{0}
+  wwcsActiveTransIncoming: 受信チャットを翻訳中:{0}
+  wwcsActiveTransOutLang: 出力言語:{0}
+  wwcsActiveTransInLang: 入力言語:{0}
+  wwcsActiveTransBook: 翻訳中の本:{0}
+  wwcsActiveTransSign: 翻訳中の記号:{0}
+  wwcsActiveTransUUID: 'UUID: {0}'
+  wwcsActiveTransRateLimit: レート制限:{0}
+  wwcsActiveTransColorWarning: 色に関する警告を受け取りました:{0}
+  wwcsActiveTransSignWarning: 署名編集警告を受信しました:{0}
+  wwcsTitle: '{0} のレコード'
+  wwcsActiveTransOutgoing: 送信チャットを翻訳中:{0}
+  wwcsActiveTransItem: 翻訳アイテム:{0}
+  wwcsActiveTransEntity: 翻訳中のエンティティ:{0}
+  wwctsWarning: 標識を翻訳している間は、標識の変更は無効になっています。
 

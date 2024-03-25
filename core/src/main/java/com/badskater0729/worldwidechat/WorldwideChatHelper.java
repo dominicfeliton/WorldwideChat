@@ -1,9 +1,6 @@
 package com.badskater0729.worldwidechat;
 
-import com.badskater0729.worldwidechat.listeners.ChatListener;
-import com.badskater0729.worldwidechat.listeners.InventoryListener;
-import com.badskater0729.worldwidechat.listeners.OnPlayerJoinListener;
-import com.badskater0729.worldwidechat.listeners.TranslateInGameListener;
+import com.badskater0729.worldwidechat.listeners.*;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginManager;
 

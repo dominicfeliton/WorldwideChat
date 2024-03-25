@@ -108,7 +108,6 @@ Messages:
   wwctGUINewTranslationTarget: Dewiswch Iaith Darged
   wwcConfigConnectionSuccess: Wedi cysylltu yn llwyddiannus i {0}!
   wwcConfigGUIGoogleTranslateButton: Google Cyfieithu
-  wwcsIsActiveTranslator: 'A yw Cyfieithydd Actif: {0}'
   wwcConfigConversationPrefixInput: Y rhagddodiad cyfredol yw {0} Teipiwch un newydd,
     neu teipiwch 0 i fynd yn ôl.
   wwcConfigGUIPreviousPageButton: Tudalen Blaenorol
@@ -214,7 +213,6 @@ Messages:
     ategyn WorldwideChat am fwy o wybodaeth.
   wwctInvalidInputLangCode: 'Cod iaith mewnbwn annilys a ddarperir! Codau lang dilys:
     {0}'
-  wwcsTitle: Cofnod o {0}
   wwctInvalidOutputLangCode: 'Cod iaith allbwn annilys a ddarperir! Codau lang dilys:
     {0}'
   wwctGUISourceTranslationSelected: Rydych wedi dewis yr iaith hon.
@@ -452,24 +450,25 @@ Messages:
     beidio gwirio unrhyw wallau cyfieithydd.'
   wwcConfigConversationIgnoreErrorsCleared: Gwallau cyfieithydd i anwybyddu ymadroddion
     a gliriwyd yn llwyddiannus.
-  
-  wwcsActiveTransPrevRate: 'Cyfieithydd Gweithredol Amser Terfyn Cyfradd Blaenorol:
-    {0}'
-  wwcsActiveTransSaved: 'Cyfieithydd Gweithredol Cadw i Disg: {0}'
-  wwcsActiveTransIncoming: 'Cyfieithydd Gweithredol Cyfieithu Sgwrs sy''n Dod i mewn:
-    {0}'
-  wwcsActiveTransOutLang: 'Iaith Allbwn Cyfieithydd Gweithredol: {0}'
-  wwcsActiveTransInLang: 'Cyfieithydd Active Mewnbwn Iaith: {0}'
-  wwcsActiveTransBook: 'Cyfieithydd Llyfr Cyfieithu Gweithredol: {0}'
-  wwcsActiveTransSign: 'Cyfieithu Arwydd Cyfieithu Gweithredol: {0}'
-  wwcsActiveTransUUID: 'Cyfieithydd Gweithredol UUID: {0}'
-  wwcsActiveTransRateLimit: 'Terfyn Cyfradd Cyfieithydd Gweithredol: {0}'
-  wwcsActiveTransColorWarning: 'Derbyniodd Cyfieithydd Gweithredol Rhybudd Lliw: {0}'
-  wwcsActiveTransOutgoing: 'Cyfieithydd Gweithredol Cyfieithu Sgwrs Ymadawol: {0}'
-  wwcsActiveTransItem: 'Cyfieithydd Gweithredol Eitem Cyfieithu: {0}'
-  wwcsActiveTransEntity: 'Cyfieithu Cyfieithu Gweithredol Endid: {0}'
   wwcSupportedServer: Ymgychwyn WorldwideChat ar gyfer {0}...
   wwcSupportedVersion: Nodweddion galluogi ar gyfer fersiwn {0}...
   wwcBadPerms: 'Nid oes gennych y caniatâd gofynnol i weithredu''r gorchymyn hwn:
     {0}'
+  wwcsIsActiveTranslator: 'A yw Cyfieithydd Gweithredol: {0}'
+  wwcsActiveTransPrevRate: 'Amser Terfyn Cyfradd Blaenorol: {0}'
+  wwcsActiveTransSaved: 'Cadwyd i''r ddisg: {0}'
+  wwcsActiveTransIncoming: 'Cyfieithu Sgwrs sy''n dod i mewn: {0}'
+  wwcsActiveTransOutLang: 'Iaith Allbwn: {0}'
+  wwcsActiveTransInLang: 'Iaith Mewnbwn: {0}'
+  wwcsActiveTransBook: 'Llyfr Cyfieithu: {0}'
+  wwcsActiveTransSign: 'Arwydd Cyfieithu: {0}'
+  wwcsActiveTransUUID: 'NEWYDD: {0}'
+  wwcsActiveTransRateLimit: 'Terfyn Cyfradd: {0}'
+  wwcsActiveTransColorWarning: 'Rhybudd Lliw a Dderbyniwyd: {0}'
+  wwcsActiveTransSignWarning: 'Rhybudd Golygu Arwydd a Dderbyniwyd: {0}'
+  wwcsTitle: Cofnod o {0}
+  wwcsActiveTransOutgoing: 'Cyfieithu Sgwrs Allawol: {0}'
+  wwcsActiveTransItem: 'Eitem cyfieithu: {0}'
+  wwcsActiveTransEntity: 'Endid Cyfieithu: {0}'
+  wwctsWarning: Mae addasu arwyddion yn anabl tra byddwch yn cyfieithu arwyddion.
 

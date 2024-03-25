@@ -111,7 +111,6 @@ Messages:
   wwctGUINewTranslationTarget: Alegeți o limbă țintă
   wwcConfigConnectionSuccess: Conectat cu succes la {0}!
   wwcConfigGUIGoogleTranslateButton: Traducere în Google
-  wwcsIsActiveTranslator: 'Este un translator activ: {0}'
   wwcConfigConversationPrefixInput: Prefixul curent este {0}. Introduceți unul nou
     sau tastați 0 pentru a reveni.
   wwcConfigGUIPreviousPageButton: Pagina precedentă
@@ -222,7 +221,6 @@ Messages:
     plugin WorldwideChat pentru mai multe informații.
   wwctInvalidInputLangCode: 'Codul de limbă de intrare nevalid furnizat! Coduri valide
     lang: {0}'
-  wwcsTitle: Înregistrarea de {0}
   wwctInvalidOutputLangCode: 'Cod de limbă de ieșire nevalid furnizat! Coduri valide
     lang: {0}'
   wwctGUISourceTranslationSelected: Ați selectat această limbă.
@@ -471,21 +469,24 @@ Messages:
     traducătorului.'
   wwcConfigConversationIgnoreErrorsCleared: Erori de traducător pentru a ignora frazele
     șterse cu succes.
-  
-  wwcsActiveTransPrevRate: 'Translator activ Timp limită de rată anterioară: {0}'
-  wwcsActiveTransSaved: 'Traducător activ salvat pe disc: {0}'
-  wwcsActiveTransIncoming: 'Traducător activ care traduce chatul de intrare: {0}'
-  wwcsActiveTransOutLang: 'Limba de ieșire a traducătorului activ: {0}'
-  wwcsActiveTransInLang: 'Limbă de introducere activă a traducătorului: {0}'
-  wwcsActiveTransBook: 'Carte de traducere activă a traducătorului: {0}'
-  wwcsActiveTransSign: 'Semn activ de traducere a traducătorului: {0}'
-  wwcsActiveTransUUID: 'Traducător activ UUID: {0}'
-  wwcsActiveTransRateLimit: 'Limita activă a ratei traducătorului: {0}'
-  wwcsActiveTransColorWarning: 'Traducător activ primit avertizare culoare: {0}'
-  wwcsActiveTransOutgoing: 'Traducător activ care traduce chat-ul de ieșire: {0}'
-  wwcsActiveTransItem: 'Traducător activ Traducător Articol: {0}'
-  wwcsActiveTransEntity: 'Entitate de traducere activă a traducătorului: {0}'
   wwcSupportedServer: Inițializarea WorldwideChat pentru {0}...
   wwcSupportedVersion: Activarea funcțiilor pentru versiunea {0}...
   wwcBadPerms: 'Nu aveți permisiunile necesare pentru a executa această comandă: {0}'
+  wwcsIsActiveTranslator: 'Este traducător activ: {0}'
+  wwcsActiveTransPrevRate: 'Timpul limită al ratei anterioare: {0}'
+  wwcsActiveTransSaved: 'Salvat pe disc: {0}'
+  wwcsActiveTransIncoming: 'Traducerea chat-ului primit: {0}'
+  wwcsActiveTransOutLang: 'Limba de ieșire: {0}'
+  wwcsActiveTransInLang: 'Limba de intrare: {0}'
+  wwcsActiveTransBook: 'Traducere carte: {0}'
+  wwcsActiveTransSign: 'Semn de traducere: {0}'
+  wwcsActiveTransUUID: 'NOU: {0}'
+  wwcsActiveTransRateLimit: 'Limita tarifului: {0}'
+  wwcsActiveTransColorWarning: 'Avertizare de culoare primită: {0}'
+  wwcsActiveTransSignWarning: 'Avertizare de modificare a semnului primit: {0}'
+  wwcsTitle: Înregistrare de {0}
+  wwcsActiveTransOutgoing: 'Traducerea chat-ului de ieșire: {0}'
+  wwcsActiveTransItem: 'Articol de traducere: {0}'
+  wwcsActiveTransEntity: 'Entitate de traducere: {0}'
+  wwctsWarning: Modificarea semnelor este dezactivată în timp ce traduceți semnele.
 

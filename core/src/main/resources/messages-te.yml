@@ -107,7 +107,6 @@ Messages:
   wwctGUINewTranslationTarget: లక్ష్య భాషను ఎంచుకోండి
   wwcConfigConnectionSuccess: విజయవంతంగా కనెక్ట్ చేయబడి {0}!
   wwcConfigGUIGoogleTranslateButton: Google అనువదించు
-  wwcsIsActiveTranslator: 'క్రియాశీల అనువాదకుడు: {0}'
   wwcConfigConversationPrefixInput: ప్రస్తుత ఉపసర్గ {0}. దయచేసి క్రొత్తదాన్ని టైప్
     చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
   wwcConfigGUIPreviousPageButton: మునుపటి పేజీ
@@ -212,7 +211,6 @@ Messages:
     ప్లగ్ఇన్ ఫోల్డర్లో errorLog.txt ను తనిఖీ చేయండి.
   wwctInvalidInputLangCode: 'చెల్లని ఇన్పుట్ భాష కోడ్ అందించబడింది! చెల్లుబాటు అయ్యే
     లాంగ్ సంకేతాలు: {0}'
-  wwcsTitle: '{0} రికార్డు'
   wwctInvalidOutputLangCode: 'చెల్లని అవుట్పుట్ భాష కోడ్ అందించబడింది! చెల్లుబాటు
     అయ్యే లాంగ్ సంకేతాలు: {0}'
   wwctGUISourceTranslationSelected: మీరు ఈ భాషను ఎంచుకున్నారు.
@@ -447,23 +445,24 @@ Messages:
     అనువాదకుల లోపాలను తనిఖీ చేయదు.'
   wwcConfigConversationIgnoreErrorsCleared: విజయవంతంగా క్లియర్ పదబంధాలు విస్మరించడానికి
     అనువాదకుడు లోపాలు.
-  
-  wwcsActiveTransPrevRate: 'క్రియాశీల అనువాదకుడు మునుపటి రేటు పరిమితి సమయం: {0}'
-  wwcsActiveTransSaved: 'క్రియాశీల అనువాదకుడు డిస్కునకు సేవ్ చేయబడినది: {0}'
-  wwcsActiveTransIncoming: 'క్రియాశీల అనువాదకుడు ఇన్కమింగ్ చాట్ను అనువదిస్తోంది: {0}'
-  wwcsActiveTransOutLang: 'క్రియాశీల అనువాదకుడు అవుట్పుట్ భాష: {0}'
-  wwcsActiveTransInLang: 'క్రియాశీల అనువాదకుడు ఇన్పుట్ భాష: {0}'
-  wwcsActiveTransBook: 'క్రియాశీల అనువాదకుడు అనువాదక పుస్తకం: {0}'
-  wwcsActiveTransSign: 'క్రియాశీల అనువాదకుడు అనువాదక సంకేతం: {0}'
-  wwcsActiveTransUUID: 'క్రియాశీల అనువాదకుడు UUID: {0}'
-  wwcsActiveTransRateLimit: 'క్రియాశీల అనువాదకుడు రేటు పరిమితి: {0}'
-  wwcsActiveTransColorWarning: 'క్రియాశీల అనువాదకుడు రంగు హెచ్చరికను స్వీకరించారు:
-    {0}'
-  wwcsActiveTransOutgoing: 'క్రియాశీల అనువాదకుడు అవుట్గోయింగ్ చాట్ అనువదిస్తోంది:
-    {0}'
-  wwcsActiveTransItem: 'క్రియాశీల అనువాదకుడు అనువాదక అంశం: {0}'
-  wwcsActiveTransEntity: 'క్రియాశీల అనువాదకుడు అనువాదక ఎంటిటీ: {0}'
   wwcSupportedServer: '{0} కోసం ప్రపంచవ్యాప్త చాట్ను ప్రారంభించడం...'
   wwcSupportedVersion: వెర్షన్ {0} కోసం లక్షణాలను ప్రారంభించడం...
   wwcBadPerms: 'ఈ ఆదేశాన్ని అమలు చేయడానికి మీకు అవసరమైన అనుమతులు లేవు: {0}'
+  wwcsIsActiveTranslator: 'క్రియాశీల అనువాదకుడు: {0}'
+  wwcsActiveTransPrevRate: 'మునుపటి రేటు పరిమితి సమయం: {0}'
+  wwcsActiveTransSaved: 'డిస్క్లో సేవ్ చేయబడింది: {0}'
+  wwcsActiveTransIncoming: 'ఇన్కమింగ్ చాట్ను అనువదించడం: {0}'
+  wwcsActiveTransOutLang: 'అవుట్పుట్ భాష: {0}'
+  wwcsActiveTransInLang: 'ఇన్పుట్ భాష: {0}'
+  wwcsActiveTransBook: 'అనువదించే పుస్తకం: {0}'
+  wwcsActiveTransSign: 'అనువాద సంకేతం: {0}'
+  wwcsActiveTransUUID: 'నవీకరణ: {0}'
+  wwcsActiveTransRateLimit: 'రేటు పరిమితి: {0}'
+  wwcsActiveTransColorWarning: 'అందుకున్న రంగు హెచ్చరిక: {0}'
+  wwcsActiveTransSignWarning: 'అందుకున్న సైన్ ఎడిట్ హెచ్చరిక: {0}'
+  wwcsTitle: '{0} రికార్డ్'
+  wwcsActiveTransOutgoing: 'అవుట్గోయింగ్ చాట్ను అనువదించడం: {0}'
+  wwcsActiveTransItem: 'అనువదించే అంశం: {0}'
+  wwcsActiveTransEntity: 'అనువదించే ఎంటిటీ: {0}'
+  wwctsWarning: మీరు సంకేతాలను అనువదించేటప్పుడు సైన్ సవరణ నిలిపివేయబడింది.
 

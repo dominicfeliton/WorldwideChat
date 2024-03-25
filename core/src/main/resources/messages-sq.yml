@@ -112,7 +112,6 @@ Messages:
   wwctGUINewTranslationTarget: Zgjidhni një gjuhë të synuar
   wwcConfigConnectionSuccess: Lidhur me sukses në {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Është Përkthyes Aktiv: {0}'
   wwcConfigConversationPrefixInput: Prefiksi i tanishëm është {0}. Ju lutemi shkruani
     një të re, ose shkruani 0 për t'u kthyer prapa.
   wwcConfigGUIPreviousPageButton: Faqja e mëparshme
@@ -223,7 +222,6 @@ Messages:
     dosjen e plugin WorldwideChat për më shumë informacion.
   wwctInvalidInputLangCode: 'Kodi i pavlefshëm i gjuhës së hyrjes dhënë! Kodet e vlefshme
     lang: {0}'
-  wwcsTitle: Regjistrimi prej {0}
   wwctInvalidOutputLangCode: 'Kodi i pavlefshëm i gjuhës së prodhimit dhënë! Kodet
     e vlefshme lang: {0}'
   wwctGUISourceTranslationSelected: Ju keni zgjedhur këtë gjuhë.
@@ -471,22 +469,25 @@ Messages:
     kontrollojë ndonjë gabim përkthyes.'
   wwcConfigConversationIgnoreErrorsCleared: Gabimet e përkthyesit për të injoruar
     frazat pastruar me sukses.
-  
-  wwcsActiveTransPrevRate: 'Përkthyes aktiv i mëparshëm koha e kufizimit të normës:
-    {0}'
-  wwcsActiveTransSaved: 'Përkthyes aktiv i ruajtur në Disk: {0}'
-  wwcsActiveTransIncoming: 'Përkthyes aktiv që përkthen bisedën hyrëse: {0}'
-  wwcsActiveTransOutLang: 'Gjuha e daljes së përkthyesit aktiv: {0}'
-  wwcsActiveTransInLang: 'Gjuha e hyrjes së përkthyesit aktiv: {0}'
-  wwcsActiveTransBook: 'Libri i Përkthimit të Përkthimit Aktiv: {0}'
-  wwcsActiveTransSign: 'Shenjë përkthimi i përkthimit të përkthimit aktiv: {0}'
-  wwcsActiveTransUUID: 'UUID Përkthyes Aktiv: {0}'
-  wwcsActiveTransRateLimit: 'Kufiri i shkallës së përkthyesit aktiv: {0}'
-  wwcsActiveTransColorWarning: 'Përkthyesi aktiv mori paralajmërimin e ngjyrave: {0}'
-  wwcsActiveTransOutgoing: 'Përkthyes aktiv që përkthen bisedën dalëse: {0}'
-  wwcsActiveTransItem: 'Artikulli i Përkthimit të Përkthimit Aktiv: {0}'
-  wwcsActiveTransEntity: 'Enti Përkthyes Aktiv i Përkthimit: {0}'
   wwcSupportedServer: Fillimi i WorldwideChat për {0}...
   wwcSupportedVersion: Aktivizimi i veçorive për versionin {0}...
   wwcBadPerms: 'Ju nuk keni lejet e kërkuara për të ekzekutuar këtë komandë: {0}'
+  wwcsIsActiveTranslator: 'Është përkthyes aktiv: {0}'
+  wwcsActiveTransPrevRate: 'Koha e kufizimit të normës së mëparshme: {0}'
+  wwcsActiveTransSaved: 'Ruajtur në disk: {0}'
+  wwcsActiveTransIncoming: 'Përkthimi i bisedës hyrëse: {0}'
+  wwcsActiveTransOutLang: 'Gjuha e daljes: {0}'
+  wwcsActiveTransInLang: 'Gjuha e hyrjes: {0}'
+  wwcsActiveTransBook: 'Përkthimi i librit: {0}'
+  wwcsActiveTransSign: 'Shenja përkthimi: {0}'
+  wwcsActiveTransUUID: 'NUMRI I RI: {0}'
+  wwcsActiveTransRateLimit: 'Kufiri i normës: {0}'
+  wwcsActiveTransColorWarning: 'Paralajmërim për ngjyrën e marrë: {0}'
+  wwcsActiveTransSignWarning: 'Paralajmërim për redaktimin e shenjës së marrë: {0}'
+  wwcsTitle: Regjistrimi i {0}
+  wwcsActiveTransOutgoing: 'Përkthimi i Bisedës Dalëse: {0}'
+  wwcsActiveTransItem: 'Artikulli i përkthimit: {0}'
+  wwcsActiveTransEntity: 'Entiteti përkthyes: {0}'
+  wwctsWarning: Modifikimi i shenjave është i çaktivizuar ndërsa jeni duke përkthyer
+    shenjat.
 

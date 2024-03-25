@@ -105,7 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: Zvolte cílový jazyk
   wwcConfigConnectionSuccess: Úspěšně připojeno k {0}!
   wwcConfigGUIGoogleTranslateButton: Překladač Google
-  wwcsIsActiveTranslator: 'Je aktivní Překladatel: {0}'
   wwcConfigConversationPrefixInput: Aktuální předpona je {0}. Zadejte prosím novou,
     nebo zadejte 0 pro návrat.
   wwcConfigGUIPreviousPageButton: Předchozí stránka
@@ -213,7 +212,6 @@ Messages:
     ve složce plugin WorldwideChat.
   wwctInvalidInputLangCode: 'Neplatný kód vstupního jazyka je k dispozici! Platné
     kódy lang: {0}'
-  wwcsTitle: Záznam {0}
   wwctInvalidOutputLangCode: 'Neplatný kód výstupního jazyka je k dispozici! Platné
     kódy lang: {0}'
   wwctGUISourceTranslationSelected: Vybrali jste tento jazyk.
@@ -447,21 +445,24 @@ Messages:
     překladatele.'
   wwcConfigConversationIgnoreErrorsCleared: Chyby překladatele ignorovat fráze úspěšně
     vymazány.
-  
-  wwcsActiveTransPrevRate: 'Aktivní překladatel Předchozí sazba Limit Čas: {0}'
-  wwcsActiveTransSaved: 'Aktivní překladač uložený na disk: {0}'
-  wwcsActiveTransIncoming: 'Aktivní překladatel Překládání příchozího chatu: {0}'
-  wwcsActiveTransOutLang: 'Výstupní jazyk aktivního překladače: {0}'
-  wwcsActiveTransInLang: 'Jazyk vstupu aktivního překladatele: {0}'
-  wwcsActiveTransBook: 'Aktivní překladatel Překladatelská kniha: {0}'
-  wwcsActiveTransSign: 'Aktivní překladatel Překladatel znamení: {0}'
-  wwcsActiveTransUUID: 'Aktivní překladač UUID: {0}'
-  wwcsActiveTransRateLimit: 'Limit rychlosti aktivního překladatele: {0}'
-  wwcsActiveTransColorWarning: 'Aktivní překladač přijatý barevný varování: {0}'
-  wwcsActiveTransOutgoing: 'Aktivní překladatel Překlad Odchozí Chat: {0}'
-  wwcsActiveTransItem: 'Aktivní překladatel Překladatel položky: {0}'
-  wwcsActiveTransEntity: 'Aktivní překladatel překládající entitu: {0}'
   wwcSupportedServer: Inicializace WorldwideChat pro {0}...
   wwcSupportedVersion: Povolení funkcí pro verzi {0}...
   wwcBadPerms: 'Nemáte potřebná oprávnění k provedení tohoto příkazu: {0}'
+  wwcsIsActiveTranslator: 'Je aktivní překladatel: {0}'
+  wwcsActiveTransPrevRate: 'Předchozí časový limit sazby: {0}'
+  wwcsActiveTransSaved: 'Uloženo na disk: {0}'
+  wwcsActiveTransIncoming: 'Překlad příchozího chatu: {0}'
+  wwcsActiveTransOutLang: 'Výstupní jazyk: {0}'
+  wwcsActiveTransInLang: 'Vstupní jazyk: {0}'
+  wwcsActiveTransBook: 'Překlad knihy: {0}'
+  wwcsActiveTransSign: 'Překladatelský znak: {0}'
+  wwcsActiveTransUUID: 'NOVÝ: {0}'
+  wwcsActiveTransRateLimit: 'Limit sazby: {0}'
+  wwcsActiveTransColorWarning: 'Přijaté barevné varování: {0}'
+  wwcsActiveTransSignWarning: 'Upozornění na úpravu obdrženého znaku: {0}'
+  wwcsTitle: Záznam {0}
+  wwcsActiveTransOutgoing: 'Překlad odchozího chatu: {0}'
+  wwcsActiveTransItem: 'Překládající položka: {0}'
+  wwcsActiveTransEntity: 'Překládající entita: {0}'
+  wwctsWarning: Při překládání znaků je úprava znaků zakázána.
 

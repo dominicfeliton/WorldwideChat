@@ -107,7 +107,6 @@ Messages:
   wwctGUINewTranslationTarget: Изберете целен јазик
   wwcConfigConnectionSuccess: Успешно поврзан со {0}!
   wwcConfigGUIGoogleTranslateButton: Преведи на Google
-  wwcsIsActiveTranslator: 'Дали е активен преведувач: {0}'
   wwcConfigConversationPrefixInput: Тековниот префикс е {0}. Ве молиме напишете нов,
     или напишете 0 за да се вратите назад.
   wwcConfigGUIPreviousPageButton: Претходна страница
@@ -223,7 +222,6 @@ Messages:
     папката WorldwideChat приклучок за повеќе информации.
   wwctInvalidInputLangCode: 'Невалиден код за внесување јазик обезбеден! Валидни кодови
     за ланг: {0}'
-  wwcsTitle: Рекорд на {0}
   wwctInvalidOutputLangCode: 'Неважечки код за излез јазик обезбеден! Валидни кодови
     за ланг: {0}'
   wwctGUISourceTranslationSelected: Го избравте овој јазик.
@@ -462,22 +460,24 @@ Messages:
     пишувањето “*” ќе предизвика приклучокот да не проверува грешки на преведувачот.'
   wwcConfigConversationIgnoreErrorsCleared: Преведувач грешки да се игнорира фрази
     исчистени успешно.
-  
-  wwcsActiveTransPrevRate: 'Активен преведувач Претходна стапка на ограничување на
-    времето: {0}'
-  wwcsActiveTransSaved: 'Активен преведувач зачуван на диск: {0}'
-  wwcsActiveTransIncoming: 'Активен Преведувач Преведување Дојдовни Разговор: {0}'
-  wwcsActiveTransOutLang: 'Активен јазик на излез на преведувачот: {0}'
-  wwcsActiveTransInLang: 'Активен јазик за внесување на преведувач: {0}'
-  wwcsActiveTransBook: 'Активни Преведувач Преведување Книга: {0}'
-  wwcsActiveTransSign: 'Активен Преведувач Преведувачки Знак: {0}'
-  wwcsActiveTransUUID: 'Активен преведувач UUID: {0}'
-  wwcsActiveTransRateLimit: 'Ограничување на стапката на активен преведувач: {0}'
-  wwcsActiveTransColorWarning: 'Активен преведувач доби предупредување во боја: {0}'
-  wwcsActiveTransOutgoing: 'Активен Преведувач Преведувач Појдовни Разговор: {0}'
-  wwcsActiveTransItem: 'Активен преведувач Преведување Точка: {0}'
-  wwcsActiveTransEntity: 'Активен преведувач преведувачки субјект: {0}'
   wwcSupportedServer: Иницијализирање на WorldwideChat за {0}...
   wwcSupportedVersion: Овозможување на функции за верзијата {0}...
   wwcBadPerms: 'Немате потребни дозволи за извршување на оваа команда: {0}'
+  wwcsIsActiveTranslator: 'Дали е активен преведувач: {0}'
+  wwcsActiveTransPrevRate: 'Време за ограничување на претходната стапка: {0}'
+  wwcsActiveTransSaved: 'Зачуван на диск: {0}'
+  wwcsActiveTransIncoming: 'Преведување на дојдовен разговор: {0}'
+  wwcsActiveTransOutLang: 'Јазик на излез: {0}'
+  wwcsActiveTransInLang: 'Јазик на внесување: {0}'
+  wwcsActiveTransBook: 'Преведувачка книга: {0}'
+  wwcsActiveTransSign: 'Знак за преведување: {0}'
+  wwcsActiveTransUUID: 'ВЕРЗИЈА: {0}'
+  wwcsActiveTransRateLimit: 'Ограничување на стапката: {0}'
+  wwcsActiveTransColorWarning: 'Примено предупредување за боја: {0}'
+  wwcsActiveTransSignWarning: 'Предупредување за уредување на примениот знак: {0}'
+  wwcsTitle: Запис на {0}
+  wwcsActiveTransOutgoing: 'Преведување на појдовен разговор: {0}'
+  wwcsActiveTransItem: 'Преведувачка ставка: {0}'
+  wwcsActiveTransEntity: 'Преведувачки субјект: {0}'
+  wwctsWarning: Модификацијата на знакот е оневозможена додека преведувате знаци.
 

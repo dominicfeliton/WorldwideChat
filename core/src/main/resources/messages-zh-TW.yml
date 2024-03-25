@@ -89,7 +89,6 @@ Messages:
   wwctGUINewTranslationTarget: 選擇目標語言
   wwcConfigConnectionSuccess: 成功連線到 {0}!
   wwcConfigGUIGoogleTranslateButton: 谷歌翻譯
-  wwcsIsActiveTranslator: '為作用中的轉換器: {0}'
   wwcConfigConversationPrefixInput: 目前的前置碼是 {0}。請輸入新字首，或輸入 0 返回。
   wwcConfigGUIPreviousPageButton: 上一頁
   wwcConfigGUITranslatorCacheButton: 變更翻譯快取限制
@@ -168,7 +167,6 @@ Messages:
   wwcConfigErrorLimitInvalid: 在 config.yml 中設定的轉換器錯誤限制無效。預設為 5...
   wwcTranslatorErrorThresholdReachedCheckLogs: 如需詳細資訊，請檢查「全球聊天」外掛程式資料夾中的 errorLog.txt。
   wwctInvalidInputLangCode: 提供的輸入語言代碼無效！有效的語言代碼： {0}
-  wwcsTitle: '{0} 的記錄'
   wwctInvalidOutputLangCode: 提供的輸出語言代碼無效！有效的語言代碼： {0}
   wwctGUISourceTranslationSelected: 您已選擇此語言。
   wwcConfigGUIChatMessagesOverrideDeleteButton: 刪除覆寫
@@ -347,21 +345,24 @@ Messages:
   wwcConfigConversationIgnoreErrorsInput: 目前要忽略的翻譯器錯誤片語清單為： {0}。輸入以逗號分隔的引數 (鍵 = 值，key2=value2)，或者輸入
     clear 以清除目前的參數，或輸入 0 返回。此外，輸入「*」將導致插件無法檢查任何翻譯錯誤。
   wwcConfigConversationIgnoreErrorsCleared: 翻譯器錯誤忽略詞組成功清除。
-  
-  wwcsActiveTransPrevRate: '作用中轉譯器先前的頻率限制時間: {0}'
-  wwcsActiveTransSaved: '使用中轉換器已儲存至磁碟: {0}'
-  wwcsActiveTransIncoming: '現役翻譯翻譯傳入聊天: {0}'
-  wwcsActiveTransOutLang: '使用中轉換器輸出語言: {0}'
-  wwcsActiveTransInLang: '作用中翻譯器輸入語言: {0}'
-  wwcsActiveTransBook: '活躍譯者翻譯書: {0}'
-  wwcsActiveTransSign: '活躍翻譯器翻譯符號: {0}'
-  wwcsActiveTransUUID: '作用中轉換器 UUID: {0}'
-  wwcsActiveTransRateLimit: '作用中轉譯器頻率限制: {0}'
-  wwcsActiveTransColorWarning: '作用中轉譯器收到色彩警告: {0}'
-  wwcsActiveTransOutgoing: '活躍翻譯翻譯傳出聊天: {0}'
-  wwcsActiveTransItem: '作用中譯者翻譯項目: {0}'
-  wwcsActiveTransEntity: '使用中轉譯器轉譯實體: {0}'
   wwcSupportedServer: 正在初始化 {0} 的全球客服...
   wwcSupportedVersion: 正在啟用版本 {0} 的功能...
   wwcBadPerms: 您沒有執行此命令所需的權限：{0}
+  wwcsIsActiveTranslator: 是有效的翻譯器：{0}
+  wwcsActiveTransPrevRate: 以前的費率限制時間：{0}
+  wwcsActiveTransSaved: 儲存至磁碟:{0}
+  wwcsActiveTransIncoming: 翻譯傳入聊天：{0}
+  wwcsActiveTransOutLang: 輸出語言:{0}
+  wwcsActiveTransInLang: 輸入語言:{0}
+  wwcsActiveTransBook: 翻譯書籍:{0}
+  wwcsActiveTransSign: 翻譯標誌:{0}
+  wwcsActiveTransUUID: 新編號:{0}
+  wwcsActiveTransRateLimit: 費率限制：{0}
+  wwcsActiveTransColorWarning: 收到的顏色警告：{0}
+  wwcsActiveTransSignWarning: 收到的標誌編輯警告：{0}
+  wwcsTitle: '{0} 的記錄'
+  wwcsActiveTransOutgoing: 翻譯外出聊天：{0}
+  wwcsActiveTransItem: 翻譯項目：{0}
+  wwcsActiveTransEntity: 翻譯實體：{0}
+  wwctsWarning: 當您翻譯符號時，會停用標誌修改。
 

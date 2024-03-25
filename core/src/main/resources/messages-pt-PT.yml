@@ -115,7 +115,6 @@ Messages:
   wwcConfigConnectionSuccess: Conectado com sucesso ao {0}!
   wwctGUIRateButton: Definir limite de taxa
   wwcConfigGUIGoogleTranslateButton: Google Traduzir
-  wwcsIsActiveTranslator: 'É Tradutor Activo: {0}'
   wwcConfigConversationPrefixInput: O prefixo atual é {0}. Digite um novo ou escreva
     0 para voltar atrás.
   wwctInvalidInputLangCode: 'Código de linguagem de entrada inválido fornecido! Códigos
@@ -230,7 +229,6 @@ Messages:
   wwcgLangToLangStart: Agora traduzir bate-papo global de {0} para {1}.
   wwcConfigGUIPluginUpdateChatButton: Enviar lembrete de chat para atualizações de
     plugin
-  wwcsTitle: Registo de {0}
   wwcConfigGUIErrorLimitButton: Alterar limite de erro do tradutor
   wwcConfigConversationWatsonAPIKeyInput: A chave API actual é {0}. Introduza uma
     chave API para o Watson ou introduza 0 para voltar atrás.
@@ -464,21 +462,24 @@ Messages:
     Além disso, digitar “*” fará com que o plugin não verifique nenhum erro do tradutor.'
   wwcConfigConversationIgnoreErrorsCleared: Erros do tradutor para ignorar frases
     eliminadas com êxito.
-  
-  wwcsActiveTransPrevRate: 'Tempo Limite de Taxa Anterior do Tradutor Ativo: {0}'
-  wwcsActiveTransSaved: 'Tradutor ativo salvo em disco: {0}'
-  wwcsActiveTransIncoming: 'Tradutor ativo Traduzindo bate-papo de entrada: {0}'
-  wwcsActiveTransOutLang: 'Idioma de Saída do Tradutor Ativo: {0}'
-  wwcsActiveTransInLang: 'Linguagem de Entrada do Tradutor Ativo: {0}'
-  wwcsActiveTransBook: 'Livro de Tradução Activa: {0}'
-  wwcsActiveTransSign: 'Sinal de Tradutor Ativo: {0}'
-  wwcsActiveTransUUID: 'Tradutor Ativo UUID: {0}'
-  wwcsActiveTransRateLimit: 'Limite de Velocidade do Tradutor Ativo: {0}'
-  wwcsActiveTransColorWarning: 'Aviso de cor recebido tradutor ativo: {0}'
-  wwcsActiveTransOutgoing: 'Tradutor Ativo Traduzindo Chat de Saída: {0}'
-  wwcsActiveTransItem: 'Item Tradutor Ativo: {0}'
-  wwcsActiveTransEntity: 'Entidade Tradutora Ativa: {0}'
   wwcSupportedServer: A inicializar WorldwideChat para {0}...
   wwcSupportedVersion: Activando funcionalidades para a versão {0}...
   wwcBadPerms: 'Não tem as permissões necessárias para executar este comando: {0}'
+  wwcsIsActiveTranslator: 'É Tradutor Ativo: {0}'
+  wwcsActiveTransPrevRate: 'Prazo Limite da Taxa Anterior: {0}'
+  wwcsActiveTransSaved: 'Guardado no Disco: {0}'
+  wwcsActiveTransIncoming: 'Traduzindo o Chat de Entrada: {0}'
+  wwcsActiveTransOutLang: 'Idioma de saída: {0}'
+  wwcsActiveTransInLang: 'Idioma de entrada: {0}'
+  wwcsActiveTransBook: 'Traduzir Livro: {0}'
+  wwcsActiveTransSign: 'Sinal de Tradução: {0}'
+  wwcsActiveTransUUID: 'UUID: {0}'
+  wwcsActiveTransRateLimit: 'Limite de Taxa: {0}'
+  wwcsActiveTransColorWarning: 'Aviso de cor recebido: {0}'
+  wwcsActiveTransSignWarning: 'Aviso de edição do sinal recebido: {0}'
+  wwcsTitle: Registo de {0}
+  wwcsActiveTransOutgoing: 'Traduzindo o Chat de Saída: {0}'
+  wwcsActiveTransItem: 'Traduzir Item: {0}'
+  wwcsActiveTransEntity: 'Entidade Tradutora: {0}'
+  wwctsWarning: A modificação do sinal está desactivada enquanto traduz sinais.
 

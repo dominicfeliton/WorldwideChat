@@ -105,7 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: Zabi Harshen Target
   wwcConfigConnectionSuccess: An haɗa nasarar zuwa {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Shin Mai Aiki Mai Fassara: {0}'
   wwcConfigConversationPrefixInput: Shafin farko na yanzu shi ne {0}. Da fatan za
     a rubuta sabon abu, ko rubuta 0 don komawa.
   wwcConfigGUIPreviousPageButton: Shafin baya
@@ -211,7 +210,6 @@ Messages:
     babban fayil na WorldwideChat don ƙarin bayani.
   wwctInvalidInputLangCode: 'An ba da lambar harshe mai shigar da inganci! Lambobin
     lang masu inganci: {0}'
-  wwcsTitle: rikodin na {0}
   wwctInvalidOutputLangCode: 'An samar da lambar harshe mara inganci! Lambobin lang
     masu inganci: {0}'
   wwctGUISourceTranslationSelected: Ka zabi wannan harshe.
@@ -447,21 +445,24 @@ Messages:
     kurakurai mai fassara ba.'
   wwcConfigConversationIgnoreErrorsCleared: Kurakurai masu fassara don watsi da kalmomin
     da aka cire nasara.
-  
-  wwcsActiveTransPrevRate: 'Mai fassara Mai aiki na baya Ƙididdigar Lokaci: {0}'
-  wwcsActiveTransSaved: 'Mai fassara mai aiki da aka ajiye zuwa Disk: {0}'
-  wwcsActiveTransIncoming: 'Mai fassara mai aiki yana fassara hira mai shigowa: {0}'
-  wwcsActiveTransOutLang: 'Harshen Fitarwa Mai Fassara Mai Aiki: {0}'
-  wwcsActiveTransInLang: 'Harshen Shigar da Mai Fassara Mai Aiki: {0}'
-  wwcsActiveTransBook: 'Littafin Fassara Mai Fassara Mai Aiki: {0}'
-  wwcsActiveTransSign: 'Alamar Fassara Mai Fassara Mai Aiki: {0}'
-  wwcsActiveTransUUID: 'Mai fassara mai aiki UUID: {0}'
-  wwcsActiveTransRateLimit: 'Ƙayyadadden Ƙimar Fassara Mai Aiki: {0}'
-  wwcsActiveTransColorWarning: 'Mai fassara Mai Aiki Ya Karɓi Gargaɗi Launi: {0}'
-  wwcsActiveTransOutgoing: 'Mai fassara mai aiki Fassara Taɗi mai fita: {0}'
-  wwcsActiveTransItem: 'Abubuwan Fassara Mai Fassara Mai Aiki: {0}'
-  wwcsActiveTransEntity: 'Fassara Mai Fassara Mai Aiki: {0}'
   wwcSupportedServer: Farawa da Haɗin Duniya don {0}...
   wwcSupportedVersion: Ƙarin fasali don version {0}...
   wwcBadPerms: 'Ba ku da izinin da ake buƙata don aiwatar da wannan umarni: {0}'
+  wwcsIsActiveTranslator: 'Yana mai fassara mai aiki: {0}'
+  wwcsActiveTransPrevRate: 'Lokacin iyakance ƙimar da ya gabata: {0}'
+  wwcsActiveTransSaved: 'An adana zuwa Disk: {0}'
+  wwcsActiveTransIncoming: 'Fassara Tattaunawa mai shigowa: {0}'
+  wwcsActiveTransOutLang: 'Harshen fitarwa: {0}'
+  wwcsActiveTransInLang: 'Harshen shigarwa: {0}'
+  wwcsActiveTransBook: 'Littafin fassara: {0}'
+  wwcsActiveTransSign: 'Alamar fassara: {0}'
+  wwcsActiveTransUUID: 'UPDATE: {0}'
+  wwcsActiveTransRateLimit: 'Iyakar ƙimar: {0}'
+  wwcsActiveTransColorWarning: 'Gargaɗin Launi da aka karɓa: {0}'
+  wwcsActiveTransSignWarning: 'Gargaɗin gyara alamar da aka karɓa: {0}'
+  wwcsTitle: Rikodin {0}
+  wwcsActiveTransOutgoing: 'Fassara Tattaunawar Fita: {0}'
+  wwcsActiveTransItem: 'Fassarar Abu: {0}'
+  wwcsActiveTransEntity: 'Ƙungiyar fassara: {0}'
+  wwctsWarning: An nakasa gyaran alamar yayin da kake fassara alamun.
 

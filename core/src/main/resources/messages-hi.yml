@@ -106,7 +106,6 @@ Messages:
   wwctGUINewTranslationTarget: एक लक्ष्य भाषा चुनें
   wwcConfigConnectionSuccess: '{0} से सफलतापूर्वक जुड़ा हुआ है!'
   wwcConfigGUIGoogleTranslateButton: गूगल अनुवाद
-  wwcsIsActiveTranslator: 'सक्रिय अनुवादक है: {0}'
   wwcConfigConversationPrefixInput: वर्तमान उपसर्ग {0} है. कृपया एक नया टाइप करें,
     या वापस जाने के लिए 0 टाइप करें।
   wwcConfigGUIPreviousPageButton: पिछला पृष्ठ
@@ -212,7 +211,6 @@ Messages:
     प्लगइन फ़ोल्डर में errorLog.txt की जांच करें।
   wwctInvalidInputLangCode: 'अमान्य इनपुट भाषा कोड प्रदान किया गया! वैध लैंग कोड:
     {0}'
-  wwcsTitle: '{0} का रिकॉर्ड'
   wwctInvalidOutputLangCode: 'अमान्य आउटपुट भाषा कोड प्रदान किया गया! वैध लैंग कोड:
     {0}'
   wwctGUISourceTranslationSelected: आपने यह भाषा चुनी है।
@@ -456,22 +454,26 @@ Messages:
     अनुवादक त्रुटियों की जांच नहीं करेगा।'
   wwcConfigConversationIgnoreErrorsCleared: सफलतापूर्वक साफ़ किए गए वाक्यांशों को
     अनदेखा करने के लिए अनुवादक त्रुटियां।
-  
-  wwcsActiveTransPrevRate: 'सक्रिय अनुवादक पिछला दर सीमा समय: {0}'
-  wwcsActiveTransSaved: 'सक्रिय अनुवादक डिस्क में सहेजा गया: {0}'
-  wwcsActiveTransIncoming: 'आने वाली चैट का अनुवाद करने वाला सक्रिय अनुवादक: {0}'
-  wwcsActiveTransOutLang: 'सक्रिय अनुवादक आउटपुट भाषा: {0}'
-  wwcsActiveTransInLang: 'सक्रिय अनुवादक इनपुट भाषा: {0}'
-  wwcsActiveTransBook: 'सक्रिय अनुवादक अनुवाद पुस्तक: {0}'
-  wwcsActiveTransSign: 'सक्रिय अनुवादक अनुवाद चिह्न: {0}'
-  wwcsActiveTransUUID: 'सक्रिय अनुवादक UUID: {0}'
-  wwcsActiveTransRateLimit: 'सक्रिय अनुवादक दर सीमा: {0}'
-  wwcsActiveTransColorWarning: 'सक्रिय अनुवादक को रंग चेतावनी मिली: {0}'
-  wwcsActiveTransOutgoing: 'आउटगोइंग चैट का अनुवाद करने वाला सक्रिय अनुवादक: {0}'
-  wwcsActiveTransItem: 'सक्रिय अनुवादक अनुवाद करने वाला आइटम: {0}'
-  wwcsActiveTransEntity: 'सक्रिय अनुवादक अनुवाद इकाई: {0}'
   wwcSupportedServer: '{0} के लिए WorldwideChat को प्रारंभ किया जा रहा है...'
   wwcSupportedVersion: '{0} संस्करण के लिए सुविधाओं को सक्षम किया जा रहा है...'
   wwcBadPerms: 'इस कमांड को निष्पादित करने के लिए आपके पास आवश्यक अनुमतियां नहीं हैं:
     {0}'
+  wwcsIsActiveTranslator: 'क्या सक्रिय अनुवादक है: {0}'
+  wwcsActiveTransPrevRate: 'पिछली दर सीमा समय: {0}'
+  wwcsActiveTransSaved: 'डिस्क पर सहेजा गया: {0}'
+  wwcsActiveTransIncoming: 'इनकमिंग चैट का अनुवाद करना: {0}'
+  wwcsActiveTransOutLang: 'आउटपुट भाषा: {0}'
+  wwcsActiveTransInLang: 'इनपुट भाषा: {0}'
+  wwcsActiveTransBook: 'अनुवाद करने वाली किताब: {0}'
+  wwcsActiveTransSign: 'अनुवाद चिह्न: {0}'
+  wwcsActiveTransUUID: 'यूयूआईडी: {0}'
+  wwcsActiveTransRateLimit: 'दर सीमा: {0}'
+  wwcsActiveTransColorWarning: 'प्राप्त रंग चेतावनी: {0}'
+  wwcsActiveTransSignWarning: 'प्राप्त साइन संपादन चेतावनी: {0}'
+  wwcsTitle: '{0} का रिकॉर्ड'
+  wwcsActiveTransOutgoing: 'आउटगोइंग चैट का अनुवाद करना: {0}'
+  wwcsActiveTransItem: 'आइटम का अनुवाद करना: {0}'
+  wwcsActiveTransEntity: 'अनुवाद करने वाली इकाई: {0}'
+  wwctsWarning: जब आप संकेतों का अनुवाद कर रहे होते हैं तो साइन संशोधन अक्षम होता
+    है।
 

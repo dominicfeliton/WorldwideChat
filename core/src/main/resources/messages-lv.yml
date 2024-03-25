@@ -106,7 +106,6 @@ Messages:
   wwctGUINewTranslationTarget: Izvēlēties mērķa valodu
   wwcConfigConnectionSuccess: Veiksmīgi savienots ar {0}!
   wwcConfigGUIGoogleTranslateButton: Google tulkot
-  wwcsIsActiveTranslator: 'Ir aktīvs tulkotājs: {0}'
   wwcConfigConversationPrefixInput: Pašreizējais prefikss ir {0}. Lūdzu ierakstiet
     jaunu vai ierakstiet 0, lai atgrieztos.
   wwcConfigGUIPreviousPageButton: Iepriekšējā lapa
@@ -215,7 +214,6 @@ Messages:
     spraudnis mapē, lai iegūtu vairāk informācijas.
   wwctInvalidInputLangCode: 'Norādīts nederīgs ievades valodas kods! Derīgi lang kodi:
     {0}'
-  wwcsTitle: Ierakstīt {0}
   wwctInvalidOutputLangCode: 'Norādīts nederīgs izvades valodas kods! Derīgi lang
     kodi: {0}'
   wwctGUISourceTranslationSelected: Jūs esat izvēlējies šo valodu.
@@ -451,22 +449,24 @@ Messages:
     atgrieztos. Turklāt, ierakstot “*”, spraudnis nepārbaudīs tulkotāju kļūdas.'
   wwcConfigConversationIgnoreErrorsCleared: Tulkotājs kļūdas ignorēt frāzes notīrīti
     veiksmīgi.
-  
-  wwcsActiveTransPrevRate: 'Aktīvā tulkotāja iepriekšējā ātruma ierobežojuma laiks:
-    {0}'
-  wwcsActiveTransSaved: 'Aktīvais tulkotājs Saglabāts diskā: {0}'
-  wwcsActiveTransIncoming: 'Aktīvais tulkotājs Tulkojot Ienākošie tērzēšana: {0}'
-  wwcsActiveTransOutLang: 'Aktīvā tulkotāja izvades valoda: {0}'
-  wwcsActiveTransInLang: 'Aktīvā tulkotāja ievades valoda: {0}'
-  wwcsActiveTransBook: 'Aktīvā tulkotāja tulkošanas grāmata: {0}'
-  wwcsActiveTransSign: 'Aktīvā tulkotāja tulkošanas zīme: {0}'
-  wwcsActiveTransUUID: 'Aktīvais tulkotājs UUID: {0}'
-  wwcsActiveTransRateLimit: 'Aktīvā tulkotāja ātruma ierobežojums: {0}'
-  wwcsActiveTransColorWarning: 'Aktīvais tulkotājs saņēma krāsu brīdinājumu: {0}'
-  wwcsActiveTransOutgoing: 'Aktīvais tulkotājs Tulkojot izejošo tērzēšanu: {0}'
-  wwcsActiveTransItem: 'Aktīvais tulkotājs tulkojot vienumu: {0}'
-  wwcsActiveTransEntity: 'Aktīvā tulkotāja tulkošanas entītija: {0}'
   wwcSupportedServer: Inicializējot WorldwideChat par {0}...
   wwcSupportedVersion: Iespējojot funkcijas versijai {0}...
   wwcBadPerms: 'Jums nav nepieciešamo atļauju, lai izpildītu šo komandu: {0}'
+  wwcsIsActiveTranslator: 'Vai aktīvs tulkotājs: {0}'
+  wwcsActiveTransPrevRate: 'Iepriekšējais likmes ierobežojuma laiks: {0}'
+  wwcsActiveTransSaved: 'Saglabāts diskā: {0}'
+  wwcsActiveTransIncoming: 'Ienākošās tērzēšanas tulkošana: {0}'
+  wwcsActiveTransOutLang: 'Izejas valoda: {0}'
+  wwcsActiveTransInLang: 'Ievades valoda: {0}'
+  wwcsActiveTransBook: 'Tulkošanas grāmata: {0}'
+  wwcsActiveTransSign: 'Tulkošanas zīme: {0}'
+  wwcsActiveTransUUID: 'JAUNUMS: {0}'
+  wwcsActiveTransRateLimit: 'Likmes ierobežojums: {0}'
+  wwcsActiveTransColorWarning: 'Saņemtais krāsu brīdinājums: {0}'
+  wwcsActiveTransSignWarning: 'Saņemtās zīmes rediģēšanas brīdinājums: {0}'
+  wwcsTitle: Ieraksts {0}
+  wwcsActiveTransOutgoing: 'Izejošās tērzēšanas tulkošana: {0}'
+  wwcsActiveTransItem: 'Tulkošanas vienums: {0}'
+  wwcsActiveTransEntity: 'Tulkošanas vienība: {0}'
+  wwctsWarning: Zīmju modifikācija ir atspējota, kamēr tulkojat zīmes.
 

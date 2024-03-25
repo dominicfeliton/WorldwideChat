@@ -109,7 +109,6 @@ Messages:
   wwctGUINewTranslationTarget: Вибір мови призначення
   wwcConfigConnectionSuccess: Успішно з'єднано з {0}
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Є активним перекладачем: {0}'
   wwcConfigConversationPrefixInput: Поточний префікс є {0}. Будь ласка, введіть новий
     або введіть 0, щоб повернутися назад.
   wwcConfigGUIPreviousPageButton: Попередня сторінка
@@ -213,7 +212,6 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: Будь ласка, перевірте errorLog.txt
     в папці плагінів WorldwideChat для отримання додаткової інформації.
   wwctInvalidInputLangCode: 'Некоректний код мови вводу! Допустимі коди ленг: {0}'
-  wwcsTitle: Запис з {0}
   wwctInvalidOutputLangCode: 'Некоректний код мови виведення! Допустимі коди ленг:
     {0}'
   wwctGUISourceTranslationSelected: Ви вибрали цю мову.
@@ -448,23 +446,24 @@ Messages:
     помилок перекладача.'
   wwcConfigConversationIgnoreErrorsCleared: Помилки перекладача, щоб ігнорувати фрази
     успішно очищені.
-  
-  wwcsActiveTransPrevRate: 'Активний перекладач Попередній час обмеження швидкості:
-    {0}'
-  wwcsActiveTransSaved: 'Активний перекладач, збережений на диск: {0}'
-  wwcsActiveTransIncoming: 'Активний перекладач, що переводить вхідний чат: {0}'
-  wwcsActiveTransOutLang: 'Активний перекладач вихідної мови: {0}'
-  wwcsActiveTransInLang: 'Активний перекладач Мова введення: {0}'
-  wwcsActiveTransBook: 'Активний перекладач, що перекладає книгу: {0}'
-  wwcsActiveTransSign: 'Активний перекладач, що перекладає знак: {0}'
-  wwcsActiveTransUUID: 'UUID активного перекладача: {0}'
-  wwcsActiveTransRateLimit: 'Обмеження швидкості активного перекладача: {0}'
-  wwcsActiveTransColorWarning: 'Активний перекладач отримав попередження кольору:
-    {0}'
-  wwcsActiveTransOutgoing: 'Активний перекладач Переклад вихідного чату: {0}'
-  wwcsActiveTransItem: 'Активний перекладач, що перекладає елемент: {0}'
-  wwcsActiveTransEntity: 'Активний перекладач, що перекладає сутність: {0}'
   wwcSupportedServer: Ініціалізація всесвітнього чату для {0}...
   wwcSupportedVersion: Увімкнення функцій для версії {0}...
   wwcBadPerms: 'У вас немає необхідних дозволів для виконання цієї команди: {0}'
+  wwcsIsActiveTranslator: 'Є активним перекладачем: {0}'
+  wwcsActiveTransPrevRate: 'Попередній час обмеження ставки: {0}'
+  wwcsActiveTransSaved: 'Збережено на диск: {0}'
+  wwcsActiveTransIncoming: 'Переклад вхідного чату: {0}'
+  wwcsActiveTransOutLang: 'Мова виводу: {0}'
+  wwcsActiveTransInLang: 'Мова введення: {0}'
+  wwcsActiveTransBook: 'Переклад книги: {0}'
+  wwcsActiveTransSign: 'Перекладацький знак: {0}'
+  wwcsActiveTransUUID: 'НОВИЙ: {0}'
+  wwcsActiveTransRateLimit: 'Обмеження ставки: {0}'
+  wwcsActiveTransColorWarning: 'Отримано попередження про колір: {0}'
+  wwcsActiveTransSignWarning: 'Отримано попередження про редагування знака: {0}'
+  wwcsTitle: Рекорд {0}
+  wwcsActiveTransOutgoing: 'Переклад вихідного чату: {0}'
+  wwcsActiveTransItem: 'Елемент перекладу: {0}'
+  wwcsActiveTransEntity: 'Об''єкт перекладу: {0}'
+  wwctsWarning: Модифікація знаків вимкнена під час перекладу знаків.
 

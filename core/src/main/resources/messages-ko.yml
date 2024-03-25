@@ -91,7 +91,6 @@ Messages:
   wwctGUINewTranslationTarget: 대상 언어 선택
   wwcConfigConnectionSuccess: '{0}에 성공적으로 연결되었습니다!'
   wwcConfigGUIGoogleTranslateButton: 구글 번역
-  wwcsIsActiveTranslator: '활성 번역기: {0}'
   wwcConfigConversationPrefixInput: 현재 접두어는 {0}입니다. 새 접두어를 입력하거나 0을 입력하여 돌아가십시오.
   wwcConfigGUIPreviousPageButton: 이전 페이지
   wwcConfigGUITranslatorCacheButton: 변환 캐시 제한 변경
@@ -172,7 +171,6 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: 자세한 내용은 WorldwideChat 플러그인 폴더에서 errorLog.txt
     를 확인하십시오.
   wwctInvalidInputLangCode: '잘못된 입력 언어 코드가 제공되었습니다!유효한 랭 코드: {0}'
-  wwcsTitle: '{0} 레코드'
   wwctInvalidOutputLangCode: '잘못된 출력 언어 코드가 제공되었습니다!유효한 랭 코드: {0}'
   wwctGUISourceTranslationSelected: 이 언어를 선택했습니다.
   wwcConfigGUIChatMessagesOverrideDeleteButton: 재정의 삭제
@@ -370,21 +368,24 @@ Messages:
     구분된 인수 (key=value, key2=value2) 를 입력하거나 현재 인수를 지우려면 clear를 입력하고 이전 인수를 지우려면 0을
     입력하십시오.또한 “*”를 입력하면 플러그인이 번역기 오류를 확인하지 않습니다.
   wwcConfigConversationIgnoreErrorsCleared: 문구를 무시하는 번역기 오류가 성공적으로 지워졌습니다.
-  
-  wwcsActiveTransPrevRate: '활성 번역기 이전 속도 제한 시간: {0}'
-  wwcsActiveTransSaved: '활성 번역기가 디스크에 저장됨: {0}'
-  wwcsActiveTransIncoming: '수신 채팅을 번역하는 활성 번역자: {0}'
-  wwcsActiveTransOutLang: '활성 번역기 출력 언어: {0}'
-  wwcsActiveTransInLang: '활성 번역기 입력 언어: {0}'
-  wwcsActiveTransBook: '액티브 번역가 번역 중: {0}'
-  wwcsActiveTransSign: '액티브 트랜슬레이터 번역 로그인: {0}'
-  wwcsActiveTransUUID: '액티브 트랜슬레이터 UUID: {0}'
-  wwcsActiveTransRateLimit: '활성 번역기 속도 제한: {0}'
-  wwcsActiveTransColorWarning: '활성 번역기 수신 색상 경고: {0}'
-  wwcsActiveTransOutgoing: '발신 채팅을 번역하는 액티브 번역가: {0}'
-  wwcsActiveTransItem: '활성 번역기 번역 항목: {0}'
-  wwcsActiveTransEntity: '액티브 트랜슬레이터 번역 엔티티: {0}'
   wwcSupportedServer: '{0} 에 대한 월드와이드챗 초기화 중...'
   wwcSupportedVersion: '{0} 버전의 기능 활성화 중...'
   wwcBadPerms: 이 명령을 실행하는 데 필요한 권한이 없습니다. {0}
+  wwcsIsActiveTranslator: '현재 번역가: {0}'
+  wwcsActiveTransPrevRate: '이전 속도 제한 시간: {0}'
+  wwcsActiveTransSaved: '디스크에 저장: {0}'
+  wwcsActiveTransIncoming: '수신 채팅 번역: {0}'
+  wwcsActiveTransOutLang: '출력 언어: {0}'
+  wwcsActiveTransInLang: '입력 언어: {0}'
+  wwcsActiveTransBook: '책 번역하기: {0}'
+  wwcsActiveTransSign: '번역 기호: {0}'
+  wwcsActiveTransUUID: '음량: {0}'
+  wwcsActiveTransRateLimit: '속도 제한: {0}'
+  wwcsActiveTransColorWarning: '색상 경고 수신: {0}'
+  wwcsActiveTransSignWarning: '서명 편집 경고 수신: {0}'
+  wwcsTitle: '{0} 의 기록'
+  wwcsActiveTransOutgoing: '발신 채팅 번역: {0}'
+  wwcsActiveTransItem: '번역 항목: {0}'
+  wwcsActiveTransEntity: '번역 엔티티: {0}'
+  wwctsWarning: 표지판을 번역하는 동안에는 기호 수정이 비활성화됩니다.
 

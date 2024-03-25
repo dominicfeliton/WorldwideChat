@@ -106,7 +106,6 @@ Messages:
   wwctGUINewTranslationTarget: Valitse kohdekieli
   wwcConfigConnectionSuccess: Yhteys onnistui kohteeseen {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Onko aktiivinen kääntäjä: {0}'
   wwcConfigConversationPrefixInput: Nykyinen etuliite on {0}. Kirjoita uusi tai kirjoita
     0 palataksesi takaisin.
   wwcConfigGUIPreviousPageButton: Edellinen sivu
@@ -210,7 +209,6 @@ Messages:
     -kansiossa errorLog.txt.
   wwctInvalidInputLangCode: 'Virheellinen syöttökielikoodi toimitetaan! Kelvolliset
     lang-koodit: {0}'
-  wwcsTitle: Tiedon {0} tietue
   wwctInvalidOutputLangCode: 'Virheellinen tulostuskielikoodi toimitetaan! Kelvolliset
     lang-koodit: {0}'
   wwctGUISourceTranslationSelected: Olet valinnut tämän kielen.
@@ -441,24 +439,25 @@ Messages:
     virheitä.'
   wwcConfigConversationIgnoreErrorsCleared: Kääntäjä virheitä sivuuttaa lauseita tyhjennetty
     onnistuneesti.
-  
-  wwcsActiveTransPrevRate: 'Aktiivisen kääntäjän aiemman nopeuden raja-aika: {0}'
-  wwcsActiveTransSaved: 'Aktiivinen kääntäjä tallennettu levylle: {0}'
-  wwcsActiveTransIncoming: 'Aktiivinen kääntäjä saapuvan keskustelun kääntäminen:
-    {0}'
-  wwcsActiveTransOutLang: 'Aktiivisen kääntäjän tulostuskieli: {0}'
-  wwcsActiveTransInLang: 'Aktiivisen kääntäjän syöttökieli: {0}'
-  wwcsActiveTransBook: 'Aktiivisen kääntäjän kääntäjäkirja: {0}'
-  wwcsActiveTransSign: 'Aktiivisen kääntäjän kääntämismerkki: {0}'
-  wwcsActiveTransUUID: 'Aktiivinen kääntäjä UUID: {0}'
-  wwcsActiveTransRateLimit: 'Aktiivisen kääntäjän nopeusraja: {0}'
-  wwcsActiveTransColorWarning: 'Aktiivinen kääntäjä sai värivaroituksen: {0}'
-  wwcsActiveTransOutgoing: 'Aktiivinen kääntäjä Lähtevän keskustelun kääntäminen:
-    {0}'
-  wwcsActiveTransItem: 'Aktiivinen kääntäjä kohteen kääntäminen: {0}'
-  wwcsActiveTransEntity: 'Aktiivisen kääntäjän kääntäjäyksikkö: {0}'
   wwcSupportedServer: WorldwideChatin alustaminen {0}...
   wwcSupportedVersion: Ominaisuuksien käyttöönotto versiolle {0}...
   wwcBadPerms: 'Sinulla ei ole vaadittuja oikeuksia tämän komennon suorittamiseen:
     {0}'
+  wwcsIsActiveTranslator: 'Onko aktiivinen kääntäjä: {0}'
+  wwcsActiveTransPrevRate: 'Edellinen hintarajoitusaika: {0}'
+  wwcsActiveTransSaved: 'Tallennettu levylle: {0}'
+  wwcsActiveTransIncoming: 'Saapuvan keskustelun kääntäminen: {0}'
+  wwcsActiveTransOutLang: 'Tulostuskieli: {0}'
+  wwcsActiveTransInLang: 'Syöttökieli: {0}'
+  wwcsActiveTransBook: 'Kirjan kääntäminen: {0}'
+  wwcsActiveTransSign: 'Kääntämismerkki: {0}'
+  wwcsActiveTransUUID: 'UUSI: {0}'
+  wwcsActiveTransRateLimit: 'Hintaraja: {0}'
+  wwcsActiveTransColorWarning: 'Vastaanotettu värivaroitus: {0}'
+  wwcsActiveTransSignWarning: 'Vastaanotetun merkin muokkausvaroitus: {0}'
+  wwcsTitle: Ennätys {0}
+  wwcsActiveTransOutgoing: 'Lähtevän keskustelun kääntäminen: {0}'
+  wwcsActiveTransItem: 'Kääntäjäkohta: {0}'
+  wwcsActiveTransEntity: 'Kääntämisentiteetti: {0}'
+  wwctsWarning: Merkkien muokkaaminen on poistettu käytöstä, kun käännät merkkejä.
 

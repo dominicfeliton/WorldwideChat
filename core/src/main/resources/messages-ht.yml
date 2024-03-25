@@ -104,7 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: Chwazi yon lang sib
   wwcConfigConnectionSuccess: Siksè konekte nan {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Èske tradiktè aktif: % mwen'
   wwcConfigConversationPrefixInput: Prefiks aktyèl la se % mwen % Tanpri tape yon
     nouvo, oswa kalite 0 ale tounen.
   wwcConfigGUIPreviousPageButton: anvan paj
@@ -205,7 +204,6 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: Tanpri tcheke errorLog.txt nan folder
     nan Plugin WorldwideChat pou plis enfòmasyon.
   wwctInvalidInputLangCode: 'Envalid kòd lang opinyon bay! kòd lang valab: {0}'
-  wwcsTitle: Dosye nan % mwen
   wwctInvalidOutputLangCode: 'Envalid kòd lang pwodiksyon bay! kòd lang valab: {0}'
   wwctGUISourceTranslationSelected: Ou te chwazi lang sa a.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Efase pase sou desizyon
@@ -435,21 +433,24 @@ Messages:
     de sa, sezisman “*” ap lakòz Plugin a pa tcheke nenpòt ki erè tradiktè.'
   wwcConfigConversationIgnoreErrorsCleared: Erè tradiktè inyore fraz otorize avèk
     siksè.
-  
-  wwcsActiveTransPrevRate: 'Aktif tradiktè Previous To Limite Tan: % mwen'
-  wwcsActiveTransSaved: 'Aktif tradiktè te sove pou Diskèt: {0}'
-  wwcsActiveTransIncoming: 'Aktif tradiktè Tradiksyon fèk ap rantre Chat: % mwen'
-  wwcsActiveTransOutLang: 'Aktif tradiktè Sòti Lang: % mwen'
-  wwcsActiveTransInLang: 'Aktif Tradiktè Antre Lang: % mwen'
-  wwcsActiveTransBook: 'Aktif tradiktè Tradiksyon Liv: % mwen'
-  wwcsActiveTransSign: 'Aktif Tradiktè Tradiksyon Siyen: % mwen'
-  wwcsActiveTransUUID: 'Aktif tradiktè UUID: % mwen'
-  wwcsActiveTransRateLimit: 'Limit pousantaj tradiktè aktif: % mwen'
-  wwcsActiveTransColorWarning: 'Aktif tradiktè te resevwa avètisman koulè: {0}'
-  wwcsActiveTransOutgoing: 'Aktif Tradiktè Tradiksyon Sortan Chat: % mwen'
-  wwcsActiveTransItem: 'Aktif Tradiktè Tradiksyon Atik: % mwen'
-  wwcsActiveTransEntity: 'Aktif tradiktè Tradiksyon Antite: % mwen'
   wwcSupportedServer: Inisyalize WorldwideChat pou {0}...
   wwcSupportedVersion: Pèmèt karakteristik pou vèsyon {0}...
   wwcBadPerms: 'Ou pa gen autorisations yo mande pou egzekite lòd sa a: {0}'
+  wwcsIsActiveTranslator: 'Èske tradiktè aktif: {0}'
+  wwcsActiveTransPrevRate: 'Tan limit pousantaj anvan: {0}'
+  wwcsActiveTransSaved: 'Sove nan Disk: {0}'
+  wwcsActiveTransIncoming: 'Tradui Chat fèk ap rantre: {0}'
+  wwcsActiveTransOutLang: 'Lang pwodiksyon: {0}'
+  wwcsActiveTransInLang: 'Lang Antre: {0}'
+  wwcsActiveTransBook: 'Tradui liv: {0}'
+  wwcsActiveTransSign: 'Siy tradui: {0}'
+  wwcsActiveTransUUID: 'NOUVÈL: {0}'
+  wwcsActiveTransRateLimit: 'Limit pousantaj: {0}'
+  wwcsActiveTransColorWarning: 'Avètisman Koulè Resevwa: {0}'
+  wwcsActiveTransSignWarning: 'Resevwa Siy Edite Avètisman: {0}'
+  wwcsTitle: Dosye nan {0}
+  wwcsActiveTransOutgoing: 'Tradui Sòtan Chat: {0}'
+  wwcsActiveTransItem: 'Tradui atik: {0}'
+  wwcsActiveTransEntity: 'Tradui antite: {0}'
+  wwctsWarning: Modifikasyon siy ki enfim pandan w ap tradui siy.
 

@@ -106,7 +106,6 @@ Messages:
   wwctGUINewTranslationTarget: Vælg et målsprog
   wwcConfigConnectionSuccess: Succesfuld forbindelse til {0}!
   wwcConfigGUIGoogleTranslateButton: Google Oversæt
-  wwcsIsActiveTranslator: 'Er aktiv oversætter: {0}'
   wwcConfigConversationPrefixInput: Det aktuelle præfiks er {0}. Skriv et nyt, eller
     skriv 0 for at gå tilbage.
   wwcConfigGUIPreviousPageButton: Forrige side
@@ -212,7 +211,6 @@ Messages:
     plugin for mere information.
   wwctInvalidInputLangCode: 'Ugyldig indtastningssprogkode angivet! Gyldige langkoder:
     {0}'
-  wwcsTitle: Optegnelser af {0}
   wwctInvalidOutputLangCode: 'Ugyldig output-sprogkode angivet! Gyldige langkoder:
     {0}'
   wwctGUISourceTranslationSelected: Du har valgt dette sprog.
@@ -445,22 +443,25 @@ Messages:
     oversætterfejl.'
   wwcConfigConversationIgnoreErrorsCleared: Oversætter fejl for at ignorere sætninger
     ryddet med succes.
-  
-  wwcsActiveTransPrevRate: 'Aktiv oversætter Tidligere tidsgrænse for takst: {0}'
-  wwcsActiveTransSaved: 'Aktiv oversætter gemt på disk: {0}'
-  wwcsActiveTransIncoming: 'Aktiv oversætter, der oversætter indgående chat: {0}'
-  wwcsActiveTransOutLang: 'Udgangssprog for aktiv oversætter: {0}'
-  wwcsActiveTransInLang: 'Aktiv Translator Input Language: {0}'
-  wwcsActiveTransBook: 'Aktiv oversætter oversætter bog: {0}'
-  wwcsActiveTransSign: 'Active Translator Translating Sign: {0}'
-  wwcsActiveTransUUID: 'Aktiv oversætter UUID: {0}'
-  wwcsActiveTransRateLimit: 'Aktiv Translator Rate Grænse: {0}'
-  wwcsActiveTransColorWarning: 'Aktiv oversætter modtaget farve Advarsel: {0}'
-  wwcsActiveTransOutgoing: 'Aktiv oversætter oversætter udgående chat: {0}'
-  wwcsActiveTransItem: 'Active Translator Translating Item: {0}'
-  wwcsActiveTransEntity: 'Active Translator Translating Entity: {0}'
   wwcSupportedServer: Initialisering af WorldwideChat til {0}...
   wwcSupportedVersion: Aktivering af funktioner til version {0}...
   wwcBadPerms: 'Du har ikke de nødvendige tilladelser til at udføre denne kommando:
     {0}'
+  wwcsIsActiveTranslator: 'Er aktiv oversætter: {0}'
+  wwcsActiveTransPrevRate: 'Tidligere takstbegrænsningstid: {0}'
+  wwcsActiveTransSaved: 'Gemt på disk: {0}'
+  wwcsActiveTransIncoming: 'Oversættelse af indgående chat: {0}'
+  wwcsActiveTransOutLang: 'Outputsprog: {0}'
+  wwcsActiveTransInLang: 'Indtastningssprog: {0}'
+  wwcsActiveTransBook: 'Oversættelse af bog: {0}'
+  wwcsActiveTransSign: 'Oversættelsestegn: {0}'
+  wwcsActiveTransUUID: 'NYT: {0}'
+  wwcsActiveTransRateLimit: 'Satsgrænse: {0}'
+  wwcsActiveTransColorWarning: 'Modtaget farveadvarsel: {0}'
+  wwcsActiveTransSignWarning: 'Advarsel om redigering af modtaget tegn: {0}'
+  wwcsTitle: Rekord for {0}
+  wwcsActiveTransOutgoing: 'Oversættelse af udgående chat: {0}'
+  wwcsActiveTransItem: 'Oversættelseselement: {0}'
+  wwcsActiveTransEntity: 'Oversættelsesenhed: {0}'
+  wwctsWarning: Tegnændring er deaktiveret, mens du oversætter tegn.
 

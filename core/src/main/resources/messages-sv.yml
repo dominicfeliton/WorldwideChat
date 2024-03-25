@@ -108,7 +108,6 @@ Messages:
   wwctGUINewTranslationTarget: Välj ett målspråk
   wwcConfigConnectionSuccess: Ansluten till {0}!
   wwcConfigGUIGoogleTranslateButton: Google Översätt
-  wwcsIsActiveTranslator: 'Är aktiv översättare: {0}'
   wwcConfigConversationPrefixInput: Det aktuella prefixet är {0}. Skriv ett nytt,
     eller skriv 0 för att gå tillbaka.
   wwcConfigGUIPreviousPageButton: Föregående sida
@@ -217,7 +216,6 @@ Messages:
     plugin för mer information.
   wwctInvalidInputLangCode: 'Ogiltig språkkod för inmatning tillhandahålls! Giltiga
     langkoder: {0}'
-  wwcsTitle: Post av {0}
   wwctInvalidOutputLangCode: 'Ogiltig språkkod för utmatning tillhandahålls! Giltiga
     langkoder: {0}'
   wwctGUISourceTranslationSelected: Du har valt det här språket.
@@ -457,23 +455,25 @@ Messages:
     översättare fel.'
   wwcConfigConversationIgnoreErrorsCleared: Översättarfel för att ignorera fraser
     rensas framgångsrikt.
-  
-  wwcsActiveTransPrevRate: 'Aktiv översättare Föregående tidsgräns för hastighet:
-    {0}'
-  wwcsActiveTransSaved: 'Aktiv översättare sparad på disk: {0}'
-  wwcsActiveTransIncoming: 'Aktiv översättare som översätter inkommande chatt: {0}'
-  wwcsActiveTransOutLang: 'Utmatningsspråk för aktiv översättare: {0}'
-  wwcsActiveTransInLang: 'Inmatningsspråk för aktiv översättare: {0}'
-  wwcsActiveTransBook: 'Aktiv översättare översätter bok: {0}'
-  wwcsActiveTransSign: 'Active Translator Translating Sign: {0}'
-  wwcsActiveTransUUID: 'UUID för aktiv översättare: {0}'
-  wwcsActiveTransRateLimit: 'Gräns för aktiv översättare: {0}'
-  wwcsActiveTransColorWarning: 'Aktiv översättare mottagen färgvarning: {0}'
-  wwcsActiveTransOutgoing: 'Aktiv översättare som översätter utgående chatt: {0}'
-  wwcsActiveTransItem: 'Aktiv översättare Översättning Objekt: {0}'
-  wwcsActiveTransEntity: 'Active Translator Translating Entitet: {0}'
   wwcSupportedServer: Initierar WorldwideChat för {0}...
   wwcSupportedVersion: Aktivera funktioner för version {0}...
   wwcBadPerms: 'Du har inte de behörigheter som krävs för att utföra det här kommandot:
     {0}'
+  wwcsIsActiveTranslator: 'Är aktiv översättare: {0}'
+  wwcsActiveTransPrevRate: 'Tidigare räntebegränsningstid: {0}'
+  wwcsActiveTransSaved: 'Sparad på disk: {0}'
+  wwcsActiveTransIncoming: 'Översätta inkommande chatt: {0}'
+  wwcsActiveTransOutLang: 'Utgångsspråk: {0}'
+  wwcsActiveTransInLang: 'Inmatningsspråk: {0}'
+  wwcsActiveTransBook: 'Översätta bok: {0}'
+  wwcsActiveTransSign: 'Översättningstecken: {0}'
+  wwcsActiveTransUUID: 'NYTT: {0}'
+  wwcsActiveTransRateLimit: 'Hastighetsgräns: {0}'
+  wwcsActiveTransColorWarning: 'Mottagen färgvarning: {0}'
+  wwcsActiveTransSignWarning: 'Varning för ändring av mottagna tecken: {0}'
+  wwcsTitle: Rekord av {0}
+  wwcsActiveTransOutgoing: 'Översätta utgående chatt: {0}'
+  wwcsActiveTransItem: 'Översättningsobjekt: {0}'
+  wwcsActiveTransEntity: 'Översättningsenhet: {0}'
+  wwctsWarning: Teckenmodifiering är inaktiverad när du översätter tecken.
 

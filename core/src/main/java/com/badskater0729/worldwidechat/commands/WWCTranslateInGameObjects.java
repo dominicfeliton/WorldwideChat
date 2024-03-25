@@ -31,7 +31,7 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 	public boolean processCommand() {
 		/* Check args */
 		if (args.length > 1) {
-			refs.sendFancyMsg("wwctInvalidArgs", "&c", sender);
+			refs.sendFancyMsg("wwctInvalidArgs", "", "&c", sender);
 		}
 
 		/* If no args are provided */
@@ -39,12 +39,11 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			return refs.sendNoConsoleChatMsg(sender);
 		}
 		if (args.length == 0 || (args.length == 1 && args[0].equalsIgnoreCase(sender.getName()))) {
-			if (main.isActiveTranslator(((Player)sender))) {
+			if (main.isActiveTranslator((Player)sender)) {
 				return toggleStatus((Player)sender);
 			}
 			// Player is not an active translator
-			// TODO: include name in wwctbNot msg?
-			refs.sendFancyMsg("wwctbNotATranslator", "&c", sender);
+			refs.sendFancyMsg("wwctbNotATranslator", "", "&c", sender);
 			return true;
 		}
 
@@ -99,28 +98,28 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 	/* Toggle Each Class's Status */
 	private boolean toggleStatus(Player inPlayer) {
 		ActiveTranslator currentTranslator = main
-				.getActiveTranslator((inPlayer.getUniqueId().toString()));
+				.getActiveTranslator((inPlayer));
 		/* If we are book translation... */
 		if (this instanceof WWCTranslateBook) {
 			currentTranslator.setTranslatingBook(!currentTranslator.getTranslatingBook());
 			/* Toggle book translation for sender! */
 			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 				if (currentTranslator.getTranslatingBook()) {
-					refs.sendFancyMsg("wwctbOnSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctbOnSender", inPlayer);
 					refs.debugMsg("Book translation enabled for " + inPlayer.getName() + ".");
 				} else {
-					refs.sendFancyMsg("wwctbOffSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctbOffSender", inPlayer);
 					refs.debugMsg("Book translation disabled for " + inPlayer.getName() + ".");
 				}
 				/* Toggle book translation for target! */
 			} else {
 				if (currentTranslator.getTranslatingBook()) {
 					refs.sendFancyMsg("wwctbOnTarget", "&6"+args[0], "&d", sender);
-					refs.sendFancyMsg("wwctbOnSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctbOnSender", inPlayer);
 					refs.debugMsg("Book translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					refs.sendFancyMsg("wwctbOffTarget", "&6"+args[0], "&d", sender);
-					refs.sendFancyMsg("wwctbOffSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctbOffSender", inPlayer);
 					refs.debugMsg("Book translation disabled for " + inPlayer.getName() + ".");
 				}
 			}
@@ -130,21 +129,21 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			/* Toggle sign translation for sender! */
 			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 				if (currentTranslator.getTranslatingSign()) {
-					refs.sendFancyMsg("wwctsOnSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctsOnSender", inPlayer);
 					refs.debugMsg("Sign translation enabled for " + inPlayer.getName() + ".");
 				} else {
-					refs.sendFancyMsg("wwctsOffSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctsOffSender", inPlayer);
 					refs.debugMsg("Sign translation disabled for " + inPlayer.getName() + ".");
 				}
 				/* Toggle sign translation for target! */
 			} else {
 				if (currentTranslator.getTranslatingSign()) {
 					refs.sendFancyMsg("wwctsOnTarget", "&6"+args[0], "&d", sender);
-					refs.sendFancyMsg("wwctsOnSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctsOnSender", inPlayer);
 					refs.debugMsg("Sign translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					refs.sendFancyMsg("wwctsOffTarget", "&6"+args[0], "&d", sender);
-					refs.sendFancyMsg("wwctsOffSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctsOffSender", inPlayer);
 					refs.debugMsg("Sign translation disabled for " + inPlayer.getName() + ".");
 				}
 			}
@@ -154,21 +153,21 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			/* Toggle item translation for sender! */
 			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 				if (currentTranslator.getTranslatingItem()) {
-					refs.sendFancyMsg("wwctiOnSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctiOnSender", inPlayer);
 					refs.debugMsg("Item translation enabled for " + inPlayer.getName() + ".");
 				} else {
-					refs.sendFancyMsg("wwctiOffSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctiOffSender", inPlayer);
 					refs.debugMsg("Item translation disabled for " + inPlayer.getName() + ".");
 				}
 				/* Toggle item translation for target! */
 			} else {
 				if (currentTranslator.getTranslatingItem()) {
 					refs.sendFancyMsg("wwctiOnTarget", "&6"+args[0], "&d", sender);
-					refs.sendFancyMsg("wwctiOnSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctiOnSender", inPlayer);
 					refs.debugMsg("Item translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					refs.sendFancyMsg("wwctiOffTarget", "&6"+args[0], "&d", sender);
-					refs.sendFancyMsg("wwctiOffSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctiOffSender", inPlayer);
 					refs.debugMsg("Item translation disabled for " + inPlayer.getName() + ".");
 				}
 			}
@@ -178,21 +177,21 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			currentTranslator.setTranslatingEntity(!currentTranslator.getTranslatingEntity());
 			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 				if (currentTranslator.getTranslatingEntity()) {
-					refs.sendFancyMsg("wwcteOnSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwcteOnSender", inPlayer);
 					refs.debugMsg("Entity translation enabled for " + inPlayer.getName() + ".");
 				} else {
-					refs.sendFancyMsg("wwcteOffSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwcteOffSender", inPlayer);
 					refs.debugMsg("Entity translation disabled for " + inPlayer.getName() + ".");
 				}
 				/* Toggle entity translation for target! */
 			} else {
 				if (currentTranslator.getTranslatingEntity()) {
 					refs.sendFancyMsg("wwcteOnTarget", "&6"+args[0], "&d", sender);
-					refs.sendFancyMsg("wwcteOnSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwcteOnSender", inPlayer);
 					refs.debugMsg("Entity translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					refs.sendFancyMsg("wwcteOffTarget", "&6"+args[0], "&d", sender);
-					refs.sendFancyMsg("wwcteOffSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwcteOffSender", inPlayer);
 					refs.debugMsg("Entity translation disabled for " + inPlayer.getName() + ".");
 				}
 			}
@@ -202,21 +201,21 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			/* Toggle chat translation for sender! */
 			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 				if (currentTranslator.getTranslatingChatOutgoing()) {
-					refs.sendFancyMsg("wwctcoOnSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctcoOnSender", inPlayer);
 					refs.debugMsg("Outgoing chat translation enabled for " + inPlayer.getName() + ".");
 				} else {
-					refs.sendFancyMsg("wwctcoOffSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctcoOffSender", inPlayer);
 					refs.debugMsg("Outgoing chat translation disabled for " + inPlayer.getName() + ".");
 				}
 				/* Toggle chat translation for target! */
 			} else {
 				if (currentTranslator.getTranslatingChatOutgoing()) {
 					refs.sendFancyMsg("wwctcoOnTarget", "&6"+args[0], "&d", sender);
-					refs.sendFancyMsg("wwctcoOnSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctcoOnSender", inPlayer);
 					refs.debugMsg("Outgoing chat translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					refs.sendFancyMsg("wwctcoOffTarget", "&6"+args[0], "&d", sender);
-					refs.sendFancyMsg("wwctcoOffSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctcoOffSender", inPlayer);
 					refs.debugMsg("Outgoing chat translation disabled for " + inPlayer.getName() + ".");
 				}
 			}
@@ -226,21 +225,21 @@ public class WWCTranslateInGameObjects extends BasicCommand {
 			/* Toggle chat translation for sender! */
 			if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 				if (currentTranslator.getTranslatingChatIncoming()) {
-					refs.sendFancyMsg("wwctciOnSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctciOnSender", inPlayer);
 					refs.debugMsg("Incoming chat translation enabled for " + inPlayer.getName() + ".");
 				} else {
-					refs.sendFancyMsg("wwctciOffSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctciOffSender", inPlayer);
 					refs.debugMsg("Incoming chat translation disabled for " + inPlayer.getName() + ".");
 				}
 				/* Toggle chat translation for target! */
 			} else {
 				if (currentTranslator.getTranslatingChatIncoming()) {
 					refs.sendFancyMsg("wwctciOnTarget", "&6"+args[0], "&d", sender);
-					refs.sendFancyMsg("wwctciOnSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctciOnSender", inPlayer);
 					refs.debugMsg("Incoming chat translation enabled for " + inPlayer.getName() + ".");
 				} else {
 					refs.sendFancyMsg("wwctciOffTarget", "&6"+args[0], "&d", sender);
-					refs.sendFancyMsg("wwctciOffSender", "&d", inPlayer);
+					refs.sendFancyMsg("wwctciOffSender", inPlayer);
 					refs.debugMsg("Incoming chat translation disabled for " + inPlayer.getName() + ".");
 				}
 			}

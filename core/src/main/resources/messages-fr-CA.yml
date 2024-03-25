@@ -111,7 +111,6 @@ Messages:
   wwctGUINewTranslationTarget: Choisir une langue cible
   wwcConfigConnectionSuccess: Connexion réussie à {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Est le traducteur actif: {0}'
   wwcConfigConversationPrefixInput: Le préfixe actuel est {0}. Saisissez un nouveau
     préfixe ou tapez 0 pour revenir en arrière.
   wwcConfigGUIPreviousPageButton: Page précédente
@@ -226,7 +225,6 @@ Messages:
     le dossier du plugin WorldwideChat pour plus d'informations.
   wwctInvalidInputLangCode: 'Code de langue d''entrée non valide fourni! Codes lang
     valides: {0}'
-  wwcsTitle: Enregistrement de {0}
   wwctInvalidOutputLangCode: 'Code de langue de sortie non valide fourni! Codes lang
     valides: {0}'
   wwctGUISourceTranslationSelected: Vous avez sélectionné cette langue.
@@ -483,23 +481,26 @@ Messages:
     plugiciel ne vérifiera pas les erreurs du traducteur.'
   wwcConfigConversationIgnoreErrorsCleared: Les erreurs du traducteur pour ignorer
     les phrases ont été effacées avec succès.
-  
-  wwcsActiveTransPrevRate: 'Temps limite de taux antérieur du traducteur actif: {0}'
-  wwcsActiveTransSaved: 'Traducteur actif enregistré sur disque: {0}'
-  wwcsActiveTransIncoming: 'Traducteur actif traduisant le clavardage entrant: {0}'
-  wwcsActiveTransOutLang: 'Langue de sortie du traducteur actif: {0}'
-  wwcsActiveTransInLang: 'Langue d''entrée du traducteur actif: {0}'
-  wwcsActiveTransBook: 'Livre de traduction actif du traducteur: {0}'
-  wwcsActiveTransSign: 'Enseigne de traduction du traducteur actif: {0}'
-  wwcsActiveTransUUID: 'UUID du traducteur actif: {0}'
-  wwcsActiveTransRateLimit: 'Limite de tarif du traducteur actif: {0}'
-  wwcsActiveTransColorWarning: 'Avertissement de couleur reçu par le traducteur actif:
-    {0}'
-  wwcsActiveTransOutgoing: 'Traducteur actif traduisant le clavardage sortant: {0}'
-  wwcsActiveTransItem: 'Élément traducteur actif: {0}'
-  wwcsActiveTransEntity: 'Entité traductrice active: {0}'
   wwcSupportedServer: Initialisation de WorldwideChat pour {0}...
   wwcSupportedVersion: Activation des fonctionnalités pour la version {0}...
   wwcBadPerms: 'Vous ne disposez pas des autorisations requises pour exécuter cette
     commande: {0}'
+  wwcsIsActiveTranslator: 'Traducteur actif: {0}'
+  wwcsActiveTransPrevRate: 'Date limite de tarification précédente: {0}'
+  wwcsActiveTransSaved: 'Enregistré sur le disque: {0}'
+  wwcsActiveTransIncoming: 'Traduction du chat entrant: {0}'
+  wwcsActiveTransOutLang: 'Langue de sortie: {0}'
+  wwcsActiveTransInLang: 'Langue d''entrée: {0}'
+  wwcsActiveTransBook: 'Traduction du livre: {0}'
+  wwcsActiveTransSign: 'Panneau de traduction: {0}'
+  wwcsActiveTransUUID: 'UUID: {0}'
+  wwcsActiveTransRateLimit: 'Limite de taux: {0}'
+  wwcsActiveTransColorWarning: 'Avertissement de couleur reçu: {0}'
+  wwcsActiveTransSignWarning: 'Avertissement de modification du panneau reçu: {0}'
+  wwcsTitle: Enregistrement de {0}
+  wwcsActiveTransOutgoing: 'Traduction du chat sortant: {0}'
+  wwcsActiveTransItem: 'Traduction de l''objet: {0}'
+  wwcsActiveTransEntity: 'Entité traductrice: {0}'
+  wwctsWarning: La modification des panneaux est désactivée pendant que vous traduisez
+    des panneaux.
 

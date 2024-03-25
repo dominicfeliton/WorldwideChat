@@ -33,8 +33,9 @@ public class PaperChatListener implements Listener {
                 refs.debugMsg("chat event not async, skipping");
                 return;
             }
+
             /* Original WWC functionality/Translate Outgoing Messages */
-            ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
+            ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
             String currInLang = currTranslator.getInLangCode();
             String currOutLang = currTranslator.getOutLangCode();
             if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
@@ -54,7 +55,7 @@ public class PaperChatListener implements Listener {
                 }
 
                 refs.debugMsg("Looking at " + currPlayer.getName());
-                ActiveTranslator testTranslator = main.getActiveTranslator(currPlayer.getUniqueId());
+                ActiveTranslator testTranslator = main.getActiveTranslator(currPlayer);
                 String testInLang = testTranslator.getInLangCode();
                 String testOutLang = testTranslator.getOutLangCode();
                 if ((   // Check if this translator wants their incoming messages to be translated

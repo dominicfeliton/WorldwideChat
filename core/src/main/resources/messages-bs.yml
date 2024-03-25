@@ -106,7 +106,6 @@ Messages:
   wwctGUINewTranslationTarget: Odabir ciljnog jezika
   wwcConfigConnectionSuccess: Uspješno povezan na {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Je li aktivan prevoditelj: {0}'
   wwcConfigConversationPrefixInput: Trenutni prefiks je {0}. Molimo upišite novi ili
     upišite 0 da biste se vratili.
   wwcConfigGUIPreviousPageButton: Prethodna stranica
@@ -213,7 +212,6 @@ Messages:
     plugin folder za više informacija.
   wwctInvalidInputLangCode: 'Nevažeći unos jezični kod pod uvjetom! Važeći lang kodovi:
     {0}'
-  wwcsTitle: Snimanje od {0}
   wwctInvalidOutputLangCode: 'Nevažeći izlazni jezični kod pod uvjetom! Važeći lang
     kodovi: {0}'
   wwctGUISourceTranslationSelected: Odabrali ste ovaj jezik.
@@ -450,22 +448,24 @@ Messages:
     prevoditelja.'
   wwcConfigConversationIgnoreErrorsCleared: Prevoditelj greške ignorirati fraze uspješno
     izbrisani.
-  
-  wwcsActiveTransPrevRate: 'Vrijeme prethodnog ograničenja brzine aktivnog prevoditelja:
-    {0}'
-  wwcsActiveTransSaved: 'Aktivni prevodilac spremljen na disk: {0}'
-  wwcsActiveTransIncoming: 'Aktivni Prevoditelj Prevođenje Dolazni Chat: {0}'
-  wwcsActiveTransOutLang: 'Izlazni jezik aktivnog prevoditelja: {0}'
-  wwcsActiveTransInLang: 'Jezik unosa aktivnog prevoditelja: {0}'
-  wwcsActiveTransBook: 'Aktivni prevodilac Prevođenje Knjiga: {0}'
-  wwcsActiveTransSign: 'Aktivni prevodilac Prevođenje Znak: {0}'
-  wwcsActiveTransUUID: 'Aktivni prevodilac UUID: {0}'
-  wwcsActiveTransRateLimit: 'Ograničenje brzine aktivnog prevoditelja: {0}'
-  wwcsActiveTransColorWarning: 'Aktivni prevodilac primio upozorenje u boji: {0}'
-  wwcsActiveTransOutgoing: 'Aktivni prevodilac Prevođenje Odlazni Chat: {0}'
-  wwcsActiveTransItem: 'Aktivni prevodilac Prevođenje Stavka: {0}'
-  wwcsActiveTransEntity: 'Aktivni prevodilac koji prevodi entitet: {0}'
   wwcSupportedServer: Inicijalizacija WorldwideChat za {0}...
   wwcSupportedVersion: Omogućavanje značajki za verziju {0}...
   wwcBadPerms: 'Nemate potrebne dozvole za izvršavanje ove naredbe: {0}'
+  wwcsIsActiveTranslator: 'Je aktivan prevoditelj: {0}'
+  wwcsActiveTransPrevRate: 'Vrijeme ograničenja prethodne stope: {0}'
+  wwcsActiveTransSaved: 'Spremljen na disk: {0}'
+  wwcsActiveTransIncoming: 'Prevođenje dolaznog četa: {0}'
+  wwcsActiveTransOutLang: 'Izlazni jezik: {0}'
+  wwcsActiveTransInLang: 'Jezik unosa: {0}'
+  wwcsActiveTransBook: 'Knjiga za prijevod: {0}'
+  wwcsActiveTransSign: 'Znak za prijevod: {0}'
+  wwcsActiveTransUUID: 'NOVOST: {0}'
+  wwcsActiveTransRateLimit: 'Ograničenje stope: {0}'
+  wwcsActiveTransColorWarning: 'Primljeno upozorenje u boji: {0}'
+  wwcsActiveTransSignWarning: 'Upozorenje o uređivanju primljenog znaka: {0}'
+  wwcsTitle: Zapis od {0}
+  wwcsActiveTransOutgoing: 'Prevođenje odlaznog četa: {0}'
+  wwcsActiveTransItem: 'Prevodna stavka: {0}'
+  wwcsActiveTransEntity: 'Prevodilački entitet: {0}'
+  wwctsWarning: Izmjena znakova je onemogućena dok prevodite znakove.
 

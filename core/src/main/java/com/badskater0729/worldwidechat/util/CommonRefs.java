@@ -406,17 +406,17 @@ public class CommonRefs {
 
 			/* Modify or create new player record */
 			PlayerRecord currPlayerRecord = main
-					.getPlayerRecord(currPlayer.getUniqueId().toString(), true);
+					.getPlayerRecord(currPlayer, true);
 			if (main.getServer().getPluginManager().getPlugin("DeluxeChat") == null) currPlayerRecord.setAttemptedTranslations(currPlayerRecord.getAttemptedTranslations() + 1);
 
 			/* Initialize current vars + ActiveTranslator, sanity checks */
 			ActiveTranslator currActiveTranslator;
 			if (!main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
 					&& (main.isActiveTranslator(currPlayer))) {
-				currActiveTranslator = main.getActiveTranslator(currPlayer.getUniqueId().toString());
+				currActiveTranslator = main.getActiveTranslator(currPlayer);
 			} else if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
 					&& (main.isActiveTranslator(currPlayer))) {
-				currActiveTranslator = main.getActiveTranslator(currPlayer.getUniqueId().toString());
+				currActiveTranslator = main.getActiveTranslator(currPlayer);
 			} else {
 				currActiveTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 			}
@@ -483,7 +483,7 @@ public class CommonRefs {
 			// active translator.
 			if (!isExempt && !hasPermission && main.isActiveTranslator(currPlayer)) {
 				personalRateLimit = main
-					.getActiveTranslator(currPlayer.getUniqueId().toString()).getRateLimit();
+					.getActiveTranslator(currPlayer).getRateLimit();
 			}
 
 			// Personal Limits (Override Global)
@@ -757,17 +757,11 @@ public class CommonRefs {
 	  */
 	private void detectColorCodes(String inMessage, Player currPlayer) {
 		if ((inMessage.contains("&") && !main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"))
-				&& !(main.getActiveTranslator(currPlayer.getUniqueId().toString())
+				&& !(main.getActiveTranslator(currPlayer)
 						.getCCWarning())) // check if user has already been sent CC warning
 		{
-			final TextComponent watsonCCWarning = Component.text()
-							.content(getMsg("watsonColorCodeWarning"))
-							.color(NamedTextColor.LIGHT_PURPLE).decoration(TextDecoration.ITALIC, true)
-					.build();
-			sendMsg(currPlayer, watsonCCWarning);
-			// Set got CC warning of current translator to true, so that they don't get
-			// spammed by it if they keep using CCs
-			main.getActiveTranslator(currPlayer.getUniqueId().toString())
+			sendFancyMsg("watsonColorCodeWarning", "", "&d&o", currPlayer);
+			main.getActiveTranslator(currPlayer)
 					.setCCWarning(true);
 			// we're still gonna translate it but it won't look pretty
 		}

@@ -106,7 +106,6 @@ Messages:
   wwctGUINewTranslationTarget: Kies 'n teikentaal
   wwcConfigConnectionSuccess: Suksesvol verbind na {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Is Aktief Vertaler: {0}'
   wwcConfigConversationPrefixInput: Die huidige voorvoegsel is {0}. Tik asseblief
     'n nuwe een, of tik 0 om terug te gaan.
   wwcConfigGUIPreviousPageButton: Vorige Bladsy
@@ -213,7 +212,6 @@ Messages:
     gids WorldwideChat plugin vir meer inligting.
   wwctInvalidInputLangCode: 'Ongeldige invoer taal kode verskaf! Geldige lang kodes:
     {0}'
-  wwcsTitle: Rekord van {0}
   wwctInvalidOutputLangCode: 'Ongeldige uitvoer taal kode verskaf! Geldige lang kodes:
     {0}'
   wwctGUISourceTranslationSelected: Jy het hierdie taal gekies.
@@ -447,22 +445,25 @@ Messages:
     sal tik “*” veroorsaak dat die prop nie enige vertalerfoute nagaan nie.'
   wwcConfigConversationIgnoreErrorsCleared: Vertaler foute om frases te ignoreer suksesvol
     skoongemaak.
-  
-  wwcsActiveTransPrevRate: 'Aktiewe Vertaler Vorige Tempo perk Tyd: {0}'
-  wwcsActiveTransSaved: 'Aktiewe Vertaler Gestoor na Disk: {0}'
-  wwcsActiveTransIncoming: 'Aktiewe Vertaler Vertaal Inkomende Chat: {0}'
-  wwcsActiveTransOutLang: 'Aktiewe Vertaler Uitset Taal: {0}'
-  wwcsActiveTransInLang: 'Aktiewe Vertaler Invoer Taal: {0}'
-  wwcsActiveTransBook: 'Aktiewe vertaler Vertaal Boek: {0}'
-  wwcsActiveTransSign: 'Aktiewe Vertaler Vertaal Teken: {0}'
-  wwcsActiveTransUUID: 'Aktiewe Vertaler UUID: {0}'
-  wwcsActiveTransRateLimit: 'Aktiewe Vertaler Tempo Limiet: {0}'
-  wwcsActiveTransColorWarning: 'Aktiewe Vertaler Ontvang Kleur Waarskuwing: {0}'
-  wwcsActiveTransOutgoing: 'Aktiewe Vertaler Vertaal Uitgaande Chat: {0}'
-  wwcsActiveTransItem: 'Aktiewe Vertaler Vertaal Item: {0}'
-  wwcsActiveTransEntity: 'Aktiewe Vertaler Vertalende Entiteit: {0}'
   wwcSupportedServer: Inisialiseer WorldwideChat vir {0}...
   wwcSupportedVersion: Aktiveer funksies vir weergawe {0}...
   wwcBadPerms: 'U het nie die vereiste toestemmings om hierdie opdrag uit te voer
     nie: {0}'
+  wwcsIsActiveTranslator: 'Is aktiewe vertaler: {0}'
+  wwcsActiveTransPrevRate: 'Vorige tariefbeperkingstyd: {0}'
+  wwcsActiveTransSaved: 'Gestoor op skyf: {0}'
+  wwcsActiveTransIncoming: 'Vertaling van Inkomende Chat: {0}'
+  wwcsActiveTransOutLang: 'Uitsettaal: {0}'
+  wwcsActiveTransInLang: 'Invoertaal: {0}'
+  wwcsActiveTransBook: 'Vertaalboek: {0}'
+  wwcsActiveTransSign: 'Vertaalteken: {0}'
+  wwcsActiveTransUUID: 'NOUDE: {0}'
+  wwcsActiveTransRateLimit: 'Tarieflimiet: {0}'
+  wwcsActiveTransColorWarning: 'Ontvangde kleurwaarskuwing: {0}'
+  wwcsActiveTransSignWarning: 'Ontvangde tekenwysigwaarskuwing: {0}'
+  wwcsTitle: Rekord van {0}
+  wwcsActiveTransOutgoing: 'Vertaal Uitgaande Chat: {0}'
+  wwcsActiveTransItem: 'Vertaalitem: {0}'
+  wwcsActiveTransEntity: 'Vertaalentiteit: {0}'
+  wwctsWarning: Tekenwysiging is gedeaktiveer terwyl u tekens vertaal.
 

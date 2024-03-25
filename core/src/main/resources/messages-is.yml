@@ -109,7 +109,6 @@ Messages:
   wwctGUINewTranslationTarget: Veldu markmál
   wwcConfigConnectionSuccess: Tókst tengdur til {0}!
   wwcConfigGUIGoogleTranslateButton: Google Þýða
-  wwcsIsActiveTranslator: 'Er virkur þýðandi: {0}'
   wwcConfigConversationPrefixInput: Núverandi forskeyti er {0}. Sláðu inn nýjan, eða
     sláðu inn 0 til að fara aftur.
   wwcConfigGUIPreviousPageButton: fyrri síða
@@ -218,7 +217,6 @@ Messages:
     í WorldwideChat tappi möppunni fyrir frekari upplýsingar.
   wwctInvalidInputLangCode: 'Ógild inntak tungumál kóða veitt! Gildir langur kóða:
     {0}'
-  wwcsTitle: Upptaka af {0}
   wwctInvalidOutputLangCode: 'Ógild framleiðsla tungumál kóða veitt! Gildir langur
     kóða: {0}'
   wwctGUISourceTranslationSelected: Þú hefur valið þetta tungumál.
@@ -452,22 +450,25 @@ Messages:
     neinar þýðandi villur.'
   wwcConfigConversationIgnoreErrorsCleared: Þýðandi villur til að hunsa setningar
     hreinsaðar með góðum árangri.
-  
-  wwcsActiveTransPrevRate: 'Virkur þýðandi Fyrri tímamörk: {0}'
-  wwcsActiveTransSaved: 'Virkur þýðandi vistaður á disk: {0}'
-  wwcsActiveTransIncoming: 'Virkur þýðandi Þýðir komandi spjall: {0}'
-  wwcsActiveTransOutLang: 'Virk þýðandi Output Tungumál: {0}'
-  wwcsActiveTransInLang: 'Virkt tungumál þýðanda: {0}'
-  wwcsActiveTransBook: 'Þýðandi bók þýðanda: {0}'
-  wwcsActiveTransSign: 'Virkur þýðandi Þýðandi Sign: {0}'
-  wwcsActiveTransUUID: 'Virkur þýðandi UUID: {0}'
-  wwcsActiveTransRateLimit: 'Hlutfall virkra þýðanda: {0}'
-  wwcsActiveTransColorWarning: 'Virkur þýðandi fékk litaviðvörun: {0}'
-  wwcsActiveTransOutgoing: 'Virkur þýðandi Þýðir Outgoing Chat: {0}'
-  wwcsActiveTransItem: 'Virkur þýðandi Þýðandi atriði: {0}'
-  wwcsActiveTransEntity: 'Virkur þýðandi þýðandi: {0}'
   wwcSupportedServer: Frumstilla WorldwideChat fyrir {0}...
   wwcSupportedVersion: Virkja eiginleika fyrir útgáfu {0}...
   wwcBadPerms: 'Þú hefur ekki nauðsynlegar heimildir til að framkvæma þessa skipun:
     {0}'
+  wwcsIsActiveTranslator: 'Er virkur þýðandi: {0}'
+  wwcsActiveTransPrevRate: 'Fyrri takmörkunartími hlutfalls: {0}'
+  wwcsActiveTransSaved: 'Vistað á diskinn: {0}'
+  wwcsActiveTransIncoming: 'Þýða komandi spjall: {0}'
+  wwcsActiveTransOutLang: 'Útgangsmál: {0}'
+  wwcsActiveTransInLang: 'Tungumál inntaks: {0}'
+  wwcsActiveTransBook: 'Þýðingarbók: {0}'
+  wwcsActiveTransSign: 'Þýðingarmerki: {0}'
+  wwcsActiveTransUUID: 'UPDATE: {0}'
+  wwcsActiveTransRateLimit: 'Verðtakmörk: {0}'
+  wwcsActiveTransColorWarning: 'Móttekin litaviðvörun: {0}'
+  wwcsActiveTransSignWarning: 'Viðvörun um breytingu á mótteknum skiltum: {0}'
+  wwcsTitle: Skrá yfir {0}
+  wwcsActiveTransOutgoing: 'Þýða útspjall: {0}'
+  wwcsActiveTransItem: 'Þýðingaratriði: {0}'
+  wwcsActiveTransEntity: 'Þýðandi eining: {0}'
+  wwctsWarning: Breyting á skilti er óvirk á meðan þú ert að þýða skilti.
 

@@ -101,7 +101,6 @@ Messages:
   wwctGUINewTranslationTarget: Vali sihtkeel
   wwcConfigConnectionSuccess: Edukalt ühendatud {0}!
   wwcConfigGUIGoogleTranslateButton: Google Tõlgi
-  wwcsIsActiveTranslator: 'Kas aktiivne tõlkija: {0}'
   wwcConfigConversationPrefixInput: Praegune eesliide on {0}. Palun tippige uus või
     tippige tagasi minemiseks 0.
   wwcConfigGUIPreviousPageButton: Eelmine lehekülg
@@ -205,7 +204,6 @@ Messages:
     plugin kaustas rohkem teavet.
   wwctInvalidInputLangCode: 'Kehtetu sisestuskeele kood ette! Kehtivad lang koodid:
     {0}'
-  wwcsTitle: Salvesta {0}
   wwctInvalidOutputLangCode: 'Kehtetu väljundi keele kood! Kehtivad lang koodid: {0}'
   wwctGUISourceTranslationSelected: Olete valinud selle keele.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Kustuta alistamine
@@ -430,21 +428,24 @@ Messages:
     Lisaks kirjutades „*” põhjustab plugin ei kontrolli tõlkija vigu.'
   wwcConfigConversationIgnoreErrorsCleared: Tõlkija vead ignoreerida fraase kustutatud
     edukalt.
-  
-  wwcsActiveTransPrevRate: 'Aktiivse tõlkija eelmise määra piirangu aeg: {0}'
-  wwcsActiveTransSaved: 'Aktiivne tõlkija kettale salvestatud: {0}'
-  wwcsActiveTransIncoming: 'Aktiivne tõlkija tõlkimine sissetuleva vestluse: {0}'
-  wwcsActiveTransOutLang: 'Aktiivse tõlkija väljundkeel: {0}'
-  wwcsActiveTransInLang: 'Aktiivse tõlkija sisestuskeel: {0}'
-  wwcsActiveTransBook: 'Aktiivne tõlkija tõlkimine raamat: {0}'
-  wwcsActiveTransSign: 'Aktiivne tõlkija tõlkimise märk: {0}'
-  wwcsActiveTransUUID: 'Aktiivne tõlkija UUID: {0}'
-  wwcsActiveTransRateLimit: 'Aktiivse tõlkija kiiruse piirang: {0}'
-  wwcsActiveTransColorWarning: 'Aktiivse tõlkija vastuvõetud värvihoiatus: {0}'
-  wwcsActiveTransOutgoing: 'Aktiivne tõlkija väljamineva vestluse tõlkimine: {0}'
-  wwcsActiveTransItem: 'Aktiivne tõlkija tõlkimise üksus: {0}'
-  wwcsActiveTransEntity: 'Aktiivne tõlkija tõlkimise üksus: {0}'
   wwcSupportedServer: WorldwideChat lähtestamine {0}...
   wwcSupportedVersion: Funktsioonide lubamine versiooni {0}...
   wwcBadPerms: 'Teil pole selle käsu täitmiseks vajalikke õigusi: {0}'
+  wwcsIsActiveTranslator: 'Kas aktiivne tõlkija: {0}'
+  wwcsActiveTransPrevRate: 'Eelmise määra piirangu aeg: {0}'
+  wwcsActiveTransSaved: 'Salvestatud kettale: {0}'
+  wwcsActiveTransIncoming: 'Sissetuleva vestluse tõlkimine: {0}'
+  wwcsActiveTransOutLang: 'Väljundkeel: {0}'
+  wwcsActiveTransInLang: 'Sisendkeel: {0}'
+  wwcsActiveTransBook: 'Raamatu tõlkimine: {0}'
+  wwcsActiveTransSign: 'Tõlkimärk: {0}'
+  wwcsActiveTransUUID: 'UUDUS: {0}'
+  wwcsActiveTransRateLimit: 'Hinnapiir: {0}'
+  wwcsActiveTransColorWarning: 'Vastuvõetud värvihoiatus: {0}'
+  wwcsActiveTransSignWarning: 'Vastuvõetud märgi redigeerimise hoiatus: {0}'
+  wwcsTitle: Kirje {0}
+  wwcsActiveTransOutgoing: 'Väljava vestluse tõlkimine: {0}'
+  wwcsActiveTransItem: 'Tõlkimine: {0}'
+  wwcsActiveTransEntity: 'Tõlkiv üksus: {0}'
+  wwctsWarning: Märkide muutmine on märkide tõlkimise ajal keelatud.
 

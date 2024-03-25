@@ -105,7 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: აირჩიეთ სამიზნე ენა
   wwcConfigConnectionSuccess: წარმატებით დაკავშირებულია {0}!
   wwcConfigGUIGoogleTranslateButton: Google თარგმნა
-  wwcsIsActiveTranslator: 'არის აქტიური მთარგმნელი: {0}'
   wwcConfigConversationPrefixInput: მიმდინარე პრეფიქსი არის {0}. გთხოვთ აკრიფოთ ახალი
     ან ტიპი 0, რომ დაბრუნდეთ.
   wwcConfigGUIPreviousPageButton: წინა გვერდი
@@ -211,7 +210,6 @@ Messages:
     მოდულის საქაღალდეში დამატებითი ინფორმაციისთვის.
   wwctInvalidInputLangCode: 'არასწორი შეყვანის ენის კოდი გათვალისწინებული! მოქმედი
     lang კოდები: {0}'
-  wwcsTitle: '{0} - ის ჩანაწერი'
   wwctInvalidOutputLangCode: 'არასწორი გამომავალი ენის კოდი გათვალისწინებული! მოქმედი
     lang კოდები: {0}'
   wwctGUISourceTranslationSelected: თქვენ შეარჩიეთ ეს ენა.
@@ -447,21 +445,24 @@ Messages:
     გამოიწვევს მოდული არ შეამოწმოთ ნებისმიერი თარჯიმანი შეცდომები.'
   wwcConfigConversationIgnoreErrorsCleared: მთარგმნელი შეცდომები იგნორირება ფრაზები
     განბაჟებული წარმატებით.
-  
-  wwcsActiveTransPrevRate: 'აქტიური მთარგმნელი წინა განაკვეთის ლიმიტის დრო: {0}'
-  wwcsActiveTransSaved: 'აქტიური თარჯიმანი შენახულია დისკზე: {0}'
-  wwcsActiveTransIncoming: 'აქტიური თარჯიმანი შემომავალი ჩეთის თარგმნა: {0}'
-  wwcsActiveTransOutLang: 'მთარგმნელის აქტიური გამოყვანის ენა: {0}'
-  wwcsActiveTransInLang: 'მთარგმნელის აქტიური შეყვანის ენა: {0}'
-  wwcsActiveTransBook: 'მთარგმნელის აქტიური მთარგმნელი: {0}'
-  wwcsActiveTransSign: 'მთარგმნელის აქტიური თარგმანის ნიშანი: {0}'
-  wwcsActiveTransUUID: 'აქტიური მთარგმნელი UUID: {0}'
-  wwcsActiveTransRateLimit: 'აქტიური თარჯიმნის განაკვეთის ლიმიტი: {0}'
-  wwcsActiveTransColorWarning: 'აქტიური მთარგმნელი მიღებულია ფერის გაფრთხილება: {0}'
-  wwcsActiveTransOutgoing: 'აქტიური მთარგმნელი თარგმნა გამავალი ჩეთი: {0}'
-  wwcsActiveTransItem: 'მთარგმნელის აქტიური მთარგმნელი: {0}'
-  wwcsActiveTransEntity: 'მთარგმნელის აქტიური მთარგმნელი პირი: {0}'
   wwcSupportedServer: WorldwideChat— ის ინიციალიზაცია {0} — ისთვის...
   wwcSupportedVersion: ფუნქციების ჩართვა {0} ვერსიისთვის...
   wwcBadPerms: 'თქვენ არ გაქვთ საჭირო ნებართვები ამ ბრძანების შესასრულებლად: {0}'
+  wwcsIsActiveTranslator: 'აქტიური მთარგმნელია: {0}'
+  wwcsActiveTransPrevRate: 'წინა განაკვეთის ლიმიტის დრო: {0}'
+  wwcsActiveTransSaved: 'დისკზე შენახულია: {0}'
+  wwcsActiveTransIncoming: 'შემომავალი ჩატის თარგმნა: {0}'
+  wwcsActiveTransOutLang: 'გამომავალი ენა: {0}'
+  wwcsActiveTransInLang: 'შეყვანის ენა: {0}'
+  wwcsActiveTransBook: 'წიგნის თარგმანი: {0}'
+  wwcsActiveTransSign: 'თარგმნის ნიშანი: {0}'
+  wwcsActiveTransUUID: 'ვაიდი: {0}'
+  wwcsActiveTransRateLimit: 'განაკვეთის ლიმიტი: {0}'
+  wwcsActiveTransColorWarning: 'მიღებული ფერის გაფრთხილება: {0}'
+  wwcsActiveTransSignWarning: 'მიღებული ნიშნის რედაქტირების გაფრთხილება: {0'
+  wwcsTitle: ჩანაწერი {0}
+  wwcsActiveTransOutgoing: 'გამავალი ჩატის თარგმნა: {0}'
+  wwcsActiveTransItem: 'ნივთის თარგმნა: {0}'
+  wwcsActiveTransEntity: 'თარგმანი ერთეული: {0}'
+  wwctsWarning: ნიშნების თარგმნის დროს ნიშნების მოდიფიკაცია გამორთულია.
 

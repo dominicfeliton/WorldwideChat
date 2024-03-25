@@ -29,9 +29,9 @@ public class InventoryListener implements Listener {
 			@Override
 			public void run() {
 				HumanEntity currPlayer = e.getPlayer();
-				if (main.isPlayerUsingGUI(currPlayer.getUniqueId().toString()) && currPlayer.getOpenInventory().getType() != InventoryType.CHEST
+				if (main.isPlayerUsingGUI((Player)currPlayer) && currPlayer.getOpenInventory().getType() != InventoryType.CHEST
 						&& !((Player) currPlayer).isConversing()) {
-					refs.sendFancyMsg("wwcConfigGUIChangesNotSaved", "&e", currPlayer);
+					refs.sendFancyMsg("wwcConfigGUIChangesNotSaved", "", "&e", currPlayer);
 					main.removePlayerUsingConfigurationGUI((Player) currPlayer);
 				}
 			}

@@ -110,7 +110,6 @@ Messages:
   wwctGUINewTranslationTarget: இலக்கு மொழியைத் தேர்வுசெய்க
   wwcConfigConnectionSuccess: வெற்றிகரமாக இணைக்கப்பட்டது {0}!
   wwcConfigGUIGoogleTranslateButton: கூகிள் மொழிபெயர்ப்பு
-  wwcsIsActiveTranslator: 'இயல் மொழிபெயர்ப்பாளர்: {0}'
   wwcConfigConversationPrefixInput: தற்போதைய முன்னொட்டு {0} ஆகும். தயவுசெய்து புதிய
     ஒன்றை தட்டச்சு செய்யவும் அல்லது திரும்பி செல்ல 0 ஐ தட்டச்சு செய்யவும்.
   wwcConfigGUIPreviousPageButton: முந்தைய பக்கம்
@@ -224,7 +223,6 @@ Messages:
     கோப்புறையில் errorLog.txt சரிபார்க்கவும்.
   wwctInvalidInputLangCode: 'செல்லுபடியாகும் உள்ளீடு மொழி குறியீடு வழங்கப்படும்!
     செல்லுபடியாகும் லாங் குறியீடுகள்: {0}'
-  wwcsTitle: '{0} பதிவு'
   wwctInvalidOutputLangCode: 'செல்லுபடியாகும் வெளியீடு மொழி குறியீடு வழங்கப்படும்!
     செல்லுபடியாகும் லாங் குறியீடுகள்: {0}'
   wwctGUISourceTranslationSelected: இந்த மொழியை நீங்கள் தேர்ந்தெடுத்துள்ளீர்கள்.
@@ -471,25 +469,24 @@ Messages:
     சொருகி எந்த மொழிபெயர்ப்பாளர் பிழைகள் சரிபார்க்க முடியாது ஏற்படுத்தும்.'
   wwcConfigConversationIgnoreErrorsCleared: மொழிபெயர்ப்பாளர் பிழைகள் வெற்றிகரமாக
     அழிக்கப்படும் சொற்றொடர்களை புறக்கணிக்க.
-  
-  wwcsActiveTransPrevRate: 'செயல்மிகு மொழிபெயர்ப்பாளர் முந்தைய விகித வரம்பு நேரம்:
-    {0}'
-  wwcsActiveTransSaved: 'செயலில் மொழிபெயர்ப்பாளர் வட்டுக்கு சேமிக்கப்பட்டது: {0}'
-  wwcsActiveTransIncoming: 'செயலில் மொழிபெயர்ப்பாளர் உள்வரும் அரட்டை மொழிபெயர்த்தல்:
-    {0}'
-  wwcsActiveTransOutLang: 'செயல்மிகு மொழிபெயர்ப்பாளர் வெளியீட்டு மொழி: {0}'
-  wwcsActiveTransInLang: 'செயல்மிகு மொழிபெயர்ப்பாளர் உள்ளீட்டு மொழி: {0}'
-  wwcsActiveTransBook: 'செயல்மிகு மொழிபெயர்ப்பாளர் மொழிபெயர்ப்பாளர் நூல்: {0}'
-  wwcsActiveTransSign: 'செயல்மிகு மொழிபெயர்ப்பாளர் மொழிபெயர்ப்பாளர் அடையாளம்: {0}'
-  wwcsActiveTransUUID: 'செயலில் மொழிபெயர்ப்பாளர் UUID: {0}'
-  wwcsActiveTransRateLimit: 'செயல்மிகு மொழிபெயர்ப்பாளர் வீத வரம்பு: {0}'
-  wwcsActiveTransColorWarning: 'செயல்மிகு மொழிபெயர்ப்பாளர் வண்ண எச்சரிக்கை பெறப்பட்டது:
-    {0}'
-  wwcsActiveTransOutgoing: 'செயலில் மொழிபெயர்ப்பாளர் வெளிச்செல்லும் அரட்டை மொழிபெயர்த்தல்:
-    {0}'
-  wwcsActiveTransItem: 'செயல்மிகு மொழிபெயர்ப்பாளர் பொருள்: {0}'
-  wwcsActiveTransEntity: 'செயல்மிகு மொழிபெயர்ப்பாளர் மொழிபெயர்ப்பாளர் நிறுவனம்: {0}'
   wwcSupportedServer: '{0} க்கான WorldWideSat துவக்குதல்...'
   wwcSupportedVersion: பதிப்பு அம்சங்களை செயல்படுத்துதல் {0}...
   wwcBadPerms: 'இந்த கட்டளையை செயல்படுத்த தேவையான அனுமதிகள் உங்களிடம் இல்லை: {0}'
+  wwcsIsActiveTranslator: 'செயலில் உள்ள மொழிபெயர்ப்பாளரா: {0}'
+  wwcsActiveTransPrevRate: 'முந்தைய விகித வரம்பு நேரம்: {0}'
+  wwcsActiveTransSaved: 'வட்டில் சேமிக்கப்பட்டது: {0}'
+  wwcsActiveTransIncoming: 'உள்வரும் அரட்டை மொழிபெயர்ப்பது: {0}'
+  wwcsActiveTransOutLang: 'வெளியீட்டு மொழி: {0}'
+  wwcsActiveTransInLang: 'உள்ளீட்டு மொழி: {0}'
+  wwcsActiveTransBook: 'மொழிபெயர்ப்பு புத்தகம்: {0}'
+  wwcsActiveTransSign: 'மொழிபெயர்ப்பு அடையாளம்: {0}'
+  wwcsActiveTransUUID: 'வீட்: {0}'
+  wwcsActiveTransRateLimit: 'விகித வரம்பு: {0}'
+  wwcsActiveTransColorWarning: 'பெறப்பட்ட வண்ண எச்சரிக்கை: {0}'
+  wwcsActiveTransSignWarning: 'பெறப்பட்ட அடையாளத்தைத் திருத்து எச்சரிக்கை: {0}'
+  wwcsTitle: '{0} பதிவு'
+  wwcsActiveTransOutgoing: 'வெளியேறும் அரட்டை மொழிபெயர்ப்பது: {0}'
+  wwcsActiveTransItem: 'மொழிபெயர்க்கும் பொருள்: {0}'
+  wwcsActiveTransEntity: 'மொழிபெயர்க்கும் நிறுவனம்: {0}'
+  wwctsWarning: நீங்கள் அறிகுறிகளை மொழிபெயர்க்கும்போது அடையாளம் மாற்றம் முடக்கப்படுகிறது.
 

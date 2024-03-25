@@ -108,7 +108,6 @@ Messages:
   wwctGUINewTranslationTarget: Pilih Bahasa Target
   wwcConfigConnectionSuccess: Berhasil terhubung ke {0}!
   wwcConfigGUIGoogleTranslateButton: Google Terjemahkan
-  wwcsIsActiveTranslator: 'Adalah Penerjemah Aktif: {0}'
   wwcConfigConversationPrefixInput: Awalan saat ini adalah {0}. Harap ketik yang baru,
     atau ketik 0 untuk kembali.
   wwcConfigGUIPreviousPageButton: Halaman Sebelumnya
@@ -214,7 +213,6 @@ Messages:
     plugin WorldwideChat untuk informasi lebih lanjut.
   wwctInvalidInputLangCode: 'Kode bahasa masukan tidak valid yang disediakan! Kode
     lang valid: {0}'
-  wwcsTitle: Rekam dari {0}
   wwctInvalidOutputLangCode: 'Kode bahasa keluaran tidak valid yang disediakan! Kode
     lang valid: {0}'
   wwctGUISourceTranslationSelected: Anda telah memilih bahasa ini.
@@ -446,22 +444,25 @@ Messages:
     penerjemah.'
   wwcConfigConversationIgnoreErrorsCleared: Kesalahan penerjemah untuk mengabaikan
     frasa dihapus berhasil.
-  
-  wwcsActiveTransPrevRate: 'Penerjemah Aktif Waktu Batas Tarif Sebelumnya: {0}'
-  wwcsActiveTransSaved: 'Penerjemah Aktif Disimpan ke Disk: {0}'
-  wwcsActiveTransIncoming: 'Penerjemah Aktif Menerjemahkan Obrolan Masuk: {0}'
-  wwcsActiveTransOutLang: 'Bahasa Output Penerjemah Aktif: {0}'
-  wwcsActiveTransInLang: 'Bahasa Input Penerjemah Aktif: {0}'
-  wwcsActiveTransBook: 'Penerjemah Aktif Menerjemahkan Buku: {0}'
-  wwcsActiveTransSign: 'Penerjemah Aktif Menerjemahkan Tanda: {0}'
-  wwcsActiveTransUUID: 'UUID Penerjemah Aktif: {0}'
-  wwcsActiveTransRateLimit: 'Batas Tarif Penerjemah Aktif: {0}'
-  wwcsActiveTransColorWarning: 'Penerjemah Aktif Menerima Peringatan Warna: {0}'
-  wwcsActiveTransOutgoing: 'Penerjemah Aktif Menerjemahkan Obrolan Keluar: {0}'
-  wwcsActiveTransItem: 'Butir Penerjemah Aktif Penerjemah: {0}'
-  wwcsActiveTransEntity: 'Entitas Penerjemah Aktif Penerjemah: {0}'
   wwcSupportedServer: Menginisialisasi WorldwideChat untuk {0}...
   wwcSupportedVersion: Mengaktifkan fitur untuk versi {0}...
   wwcBadPerms: 'Anda tidak memiliki izin yang diperlukan untuk menjalankan perintah
     ini: {0}'
+  wwcsIsActiveTranslator: 'Apakah Penerjemah Aktif: {0}'
+  wwcsActiveTransPrevRate: 'Waktu Batas Tarif Sebelumnya: {0}'
+  wwcsActiveTransSaved: 'Disimpan ke Disk: {0}'
+  wwcsActiveTransIncoming: 'Menerjemahkan Obrolan Masuk: {0}'
+  wwcsActiveTransOutLang: 'Bahasa keluaran: {0}'
+  wwcsActiveTransInLang: 'Bahasa Masukan: {0}'
+  wwcsActiveTransBook: 'Menerjemahkan Buku: {0}'
+  wwcsActiveTransSign: 'Tanda Menerjemahkan: {0}'
+  wwcsActiveTransUUID: 'NEW: {0}'
+  wwcsActiveTransRateLimit: 'Batas Tarif: {0}'
+  wwcsActiveTransColorWarning: 'Menerima Peringatan Warna: {0}'
+  wwcsActiveTransSignWarning: 'Peringatan Sunting Tanda yang Diterima: {0}'
+  wwcsTitle: Rekor dari {0}
+  wwcsActiveTransOutgoing: 'Menerjemahkan Obrolan Keluar: {0}'
+  wwcsActiveTransItem: 'Item Terjemahan: {0}'
+  wwcsActiveTransEntity: 'Entitas Menerjemahkan: {0}'
+  wwctsWarning: Modifikasi tanda dinonaktifkan saat Anda menerjemahkan tanda.
 

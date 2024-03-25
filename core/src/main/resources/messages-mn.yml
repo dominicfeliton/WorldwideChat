@@ -107,7 +107,6 @@ Messages:
   wwctGUINewTranslationTarget: Зорилтот хэл сонгоно уу
   wwcConfigConnectionSuccess: Амжилттай холбогдсон {0}!
   wwcConfigGUIGoogleTranslateButton: Google-ийн орчуулга
-  wwcsIsActiveTranslator: 'Идэвхтэй Орчуулагч байна: {0}'
   wwcConfigConversationPrefixInput: Одоогийн угтвар нь {0} байна. шинийг бичнэ үү,
     эсвэл 0 бичнэ үү.
   wwcConfigGUIPreviousPageButton: өмнөх хуудас
@@ -214,7 +213,6 @@ Messages:
     залгаас хавтсанд errorLog.txt шалгана уу.
   wwctInvalidInputLangCode: 'Оролтын хэлний код буруу байна! Хүчинтэй урт кодууд:
     {0}'
-  wwcsTitle: '{0} Бичлэг'
   wwctInvalidOutputLangCode: 'Буруу гаралт хэлний код өгсөн! Хүчинтэй урт кодууд:
     {0}'
   wwctGUISourceTranslationSelected: Та энэ хэлийг сонгосон.
@@ -459,23 +457,25 @@ Messages:
     Үүнээс гадна, бичин “*” залгаас ямар ч орчуулагч алдааг шалгаж байх нь хүргэнэ.'
   wwcConfigConversationIgnoreErrorsCleared: Орчуулагч алдаа амжилттай цэвэрлэгдэж
     хэллэгийг үл тоомсорлох.
-  
-  wwcsActiveTransPrevRate: 'Идэвхтэй Орчуулагч Өмнөх Rate хязгаар хугацаа: {0}'
-  wwcsActiveTransSaved: 'Идэвхтэй Орчуулагч Дискнд Хадгалсан: {0}'
-  wwcsActiveTransIncoming: 'Идэвхтэй Орчуулагч Орчуулах Ирж Чат: {0}'
-  wwcsActiveTransOutLang: 'Идэвхтэй Орчуулагч Гаралтын Хэл: {0}'
-  wwcsActiveTransInLang: 'Идэвхтэй Орчуулагч Оролтын хэл: {0}'
-  wwcsActiveTransBook: 'Идэвхтэй Орчуулагч Орчуулагч Ном: {0}'
-  wwcsActiveTransSign: 'Идэвхтэй Орчуулагч Орчуулах Дансаа ашиглах: {0}'
-  wwcsActiveTransUUID: 'Идэвхтэй Орчуулагч UUID: % би'
-  wwcsActiveTransRateLimit: 'Идэвхтэй Орчуулагч Rate хязгаар: {0}'
-  wwcsActiveTransColorWarning: 'Идэвхтэй Орчуулагч Өнгө Анхааруулга хүлээн авсан:
-    {0}'
-  wwcsActiveTransOutgoing: 'Идэвхтэй Орчуулагч Орчуулах Гарч байгаа Чат: {0}'
-  wwcsActiveTransItem: 'Идэвхтэй Орчуулагч Орчуулагч зүйл: {0}'
-  wwcsActiveTransEntity: 'Идэвхтэй Орчуулагч Орчуулагч Орчуулагч: {0}'
   wwcSupportedServer: Эхлүүлэх WorldwideChat нь {0}...
   wwcSupportedVersion: хувилбар {0} боломжуудыг идэвхжүүлэх...
   wwcBadPerms: 'Энэ тушаалыг гүйцэтгэхэд шаардагдах зөвшөөрлүүд танд байхгүй байна:
     {0}'
+  wwcsIsActiveTranslator: 'Орчуулагч идэвхтэй байна уу: {0}'
+  wwcsActiveTransPrevRate: 'Өмнөх ханшийн хязгаарлалтын хугацаа: {0}'
+  wwcsActiveTransSaved: 'Дискэнд хадгалагдсан: {0}'
+  wwcsActiveTransIncoming: 'Ирж буй чатыг орчуулах: {0}'
+  wwcsActiveTransOutLang: 'Гаралтын хэл: {0}'
+  wwcsActiveTransInLang: 'Оролтын хэл: {0}'
+  wwcsActiveTransBook: 'Ном орчуулах: {0}'
+  wwcsActiveTransSign: 'Орчуулгын тэмдэг: {0}'
+  wwcsActiveTransUUID: 'ХЭМЖЭЭ: {0}'
+  wwcsActiveTransRateLimit: 'Ханшийн хязгаар: {0}'
+  wwcsActiveTransColorWarning: 'Хүлээн авсан өнгөт анхааруулга: {0}'
+  wwcsActiveTransSignWarning: 'Хүлээн авсан тэмдгийн засварлах анхааруулга: {0}'
+  wwcsTitle: '{0} -ийн бичлэг'
+  wwcsActiveTransOutgoing: 'Гадагш чатыг орчуулах: {0}'
+  wwcsActiveTransItem: 'Орчуулах зүйл: {0}'
+  wwcsActiveTransEntity: 'Орчуулах байгууллага: {0}'
+  wwctsWarning: Та тэмдгийг орчуулж байх үед тэмдгийн өөрчлөлтийг идэвхгүй болгоно.
 

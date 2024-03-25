@@ -35,7 +35,7 @@ public class ChatListener implements Listener {
 			}
 
 			// Original WWC functionality/Translate Outgoing Messages
-			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
+			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
 			String currInLang = currTranslator.getInLangCode();
 			String currOutLang = currTranslator.getOutLangCode();
 			if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())

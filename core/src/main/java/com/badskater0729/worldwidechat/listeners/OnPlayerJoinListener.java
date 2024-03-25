@@ -5,6 +5,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.entity.Player;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
@@ -23,6 +24,8 @@ public class OnPlayerJoinListener implements Listener {
 
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerJoinListener(PlayerJoinEvent event) {
+		Player currPlayer = event.getPlayer();
+
 		// Check if plugin has updates
 		if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendPluginUpdateChat")) && (main.getOutOfDate())
 				&& (event.getPlayer().hasPermission("worldwidechat.chatupdate"))) {
@@ -35,18 +38,18 @@ public class OnPlayerJoinListener implements Listener {
 							.clickEvent(ClickEvent.openUrl("https://github.com/BadSkater0729/WorldwideChat/releases"))
 							.decoration(TextDecoration.UNDERLINED, true))
 					.append(Component.text().content(")").color(NamedTextColor.GOLD)).build();
-			refs.sendMsg(event.getPlayer(), outOfDate);
+			refs.sendMsg(currPlayer, outOfDate);
 		}
 
 		/* Global translate is disabled, and user has a translation config */
 		if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
 				&& !main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
-				&& main.isActiveTranslator(event.getPlayer())) {
-			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
+				&& main.isActiveTranslator(currPlayer)) {
+			ActiveTranslator currTranslator = main.getActiveTranslator(currPlayer);
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
-				refs.sendFancyMsg("wwcOnJoinTranslationNotificationSourceLang", new String[] {"&6"+currTranslator.getInLangCode(), "&6"+currTranslator.getOutLangCode()}, "&d", event.getPlayer());
+				refs.sendFancyMsg("wwcOnJoinTranslationNotificationSourceLang", new String[] {"&6"+currTranslator.getInLangCode(), "&6"+currTranslator.getOutLangCode()}, "&d", currPlayer);
 			} else {
-				refs.sendFancyMsg("wwcOnJoinTranslationNotificationNoSourceLang", "&6"+currTranslator.getOutLangCode(), "&d", event.getPlayer());
+				refs.sendFancyMsg("wwcOnJoinTranslationNotificationNoSourceLang", "&6"+currTranslator.getOutLangCode(), "&d", currPlayer);
 			}
 			/* Global translate is enabled, and user does not have a translation config */
 		} else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
@@ -54,19 +57,19 @@ public class OnPlayerJoinListener implements Listener {
 				&& !main.isActiveTranslator(event.getPlayer())) {
 			ActiveTranslator currTranslator = main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
-				refs.sendFancyMsg("wwcGlobalOnJoinTranslationNotificationSourceLang", new String[] {"&6"+currTranslator.getInLangCode(), "&6"+currTranslator.getOutLangCode()}, "&d", event.getPlayer());
+				refs.sendFancyMsg("wwcGlobalOnJoinTranslationNotificationSourceLang", new String[] {"&6"+currTranslator.getInLangCode(), "&6"+currTranslator.getOutLangCode()}, "&d", currPlayer);
 			} else {
-				refs.sendFancyMsg("wwcGlobalOnJoinTranslationNotificationNoSourceLang", "&6"+currTranslator.getOutLangCode(), "&d", event.getPlayer());
+				refs.sendFancyMsg("wwcGlobalOnJoinTranslationNotificationNoSourceLang", "&6"+currTranslator.getOutLangCode(), "&d", currPlayer);
 			}
 			/* Global translate is enabled, but user ALSO has a translation config */
 		} else if ((main.getConfigManager().getMainConfig().getBoolean("Chat.sendTranslationChat"))
 				&& main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")
 				&& main.isActiveTranslator(event.getPlayer())) {
-			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
+			ActiveTranslator currTranslator = main.getActiveTranslator(currPlayer);
 			if (!currTranslator.getInLangCode().equalsIgnoreCase("None")) {
-				refs.sendFancyMsg("wwcOverrideGlobalOnJoinTranslationNotificationSourceLang", new String[] {"&6"+currTranslator.getInLangCode(), "&6"+currTranslator.getOutLangCode()}, "&d", event.getPlayer());
+				refs.sendFancyMsg("wwcOverrideGlobalOnJoinTranslationNotificationSourceLang", new String[] {"&6"+currTranslator.getInLangCode(), "&6"+currTranslator.getOutLangCode()}, "&d", currPlayer);
 			} else {
-				refs.sendFancyMsg("wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang", "&6"+currTranslator.getOutLangCode(), "&d", event.getPlayer());
+				refs.sendFancyMsg("wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang", "&6"+currTranslator.getOutLangCode(), "&d", currPlayer);
 			}
 		}
 	}

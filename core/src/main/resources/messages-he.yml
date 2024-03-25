@@ -96,7 +96,6 @@ Messages:
   wwctGUINewTranslationTarget: בחר שפת יעד
   wwcConfigConnectionSuccess: מחובר בהצלחה אל {0}!
   wwcConfigGUIGoogleTranslateButton: גוגל תרגום
-  wwcsIsActiveTranslator: 'הוא מתרגם פעיל: {0}'
   wwcConfigConversationPrefixInput: הקידומת הנוכחית היא {0}. הקלד קידומת חדשה, או
     הקלד 0 כדי לחזור אחורה.
   wwcConfigGUIPreviousPageButton: העמוד הקודם
@@ -191,7 +190,6 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: לקבלת מידע נוסף, בדוק את errorLog.txt
     בתיקיית התוספים WorldwideChat.
   wwctInvalidInputLangCode: 'קוד שפת קלט לא חוקי מסופק! קודי lang תקפים: {0}'
-  wwcsTitle: רשומה של {0}
   wwctInvalidOutputLangCode: 'קוד שפת פלט לא חוקי מסופק! קודי lang תקפים: {0}'
   wwctGUISourceTranslationSelected: בחרת בשפה זו.
   wwcConfigGUIChatMessagesOverrideDeleteButton: מחק דריסה
@@ -402,21 +400,24 @@ Messages:
     או הקלד clear כדי למחוק את הארגומנטים הנוכחיים, או הקלד 0 כדי לחזור אחורה. בנוסף,
     הקלדת "*" תגרום לתוסף לא לבדוק שגיאות מתורגמן.'
   wwcConfigConversationIgnoreErrorsCleared: שגיאות מתרגם להתעלם ביטויים ניקו בהצלחה.
-  
-  wwcsActiveTransPrevRate: 'מתרגם פעיל קודם מגבלת קצב זמן: {0}'
-  wwcsActiveTransSaved: 'מתרגם פעיל נשמר בדיסק: {0}'
-  wwcsActiveTransIncoming: 'מתרגם פעיל מתרגם צ''אט נכנס: {0}'
-  wwcsActiveTransOutLang: 'שפת פלט מתורגמן פעילה: {0}'
-  wwcsActiveTransInLang: 'שפת קלט מתורגמן פעילה: {0}'
-  wwcsActiveTransBook: 'מתרגם פעיל תרגום ספר: {0}'
-  wwcsActiveTransSign: 'סימן תרגום מתרגם פעיל: {0}'
-  wwcsActiveTransUUID: 'מתרגם פעיל UUID: {0}'
-  wwcsActiveTransRateLimit: 'מגבלת שיעור מתרגם פעיל: {0}'
-  wwcsActiveTransColorWarning: 'מתרגם פעיל קיבל אזהרת צבע: {0}'
-  wwcsActiveTransOutgoing: 'מתרגם פעיל מתרגם צ''אט יוצא: {0}'
-  wwcsActiveTransItem: 'מתרגם פעיל תרגום פריט: {0}'
-  wwcsActiveTransEntity: 'מתרגם פעיל תרגום ישות: {0}'
   wwcSupportedServer: אתחול WorldwideChat עבור {0}...
   wwcSupportedVersion: הפעלת תכונות לגרסה {0}...
   wwcBadPerms: 'אין לך את ההרשאות הנדרשות לביצוע פקודה זו: {0}'
+  wwcsIsActiveTranslator: 'האם מתרגם פעיל: {0}'
+  wwcsActiveTransPrevRate: 'זמן הגבלת תעריף קודם: {0}'
+  wwcsActiveTransSaved: 'נשמר בדיסק: {0}'
+  wwcsActiveTransIncoming: 'תרגום צ''אט נכנס: {0}'
+  wwcsActiveTransOutLang: 'שפת פלט: {0}'
+  wwcsActiveTransInLang: 'שפת קלט: {0}'
+  wwcsActiveTransBook: 'תרגום ספר: {0}'
+  wwcsActiveTransSign: 'שלט תרגום: {0}'
+  wwcsActiveTransUUID: 'חדש: {0}'
+  wwcsActiveTransRateLimit: 'מגבלת תעריף: {0}'
+  wwcsActiveTransColorWarning: 'אזהרת צבע שהתקבלה: {0}'
+  wwcsActiveTransSignWarning: 'אזהרת עריכת שלט שהתקבלה: {0}'
+  wwcsTitle: שיא של {0}
+  wwcsActiveTransOutgoing: 'תרגום צ''אט יוצא: {0}'
+  wwcsActiveTransItem: 'פריט תרגום: {0}'
+  wwcsActiveTransEntity: 'ישות תרגום: {0}'
+  wwctsWarning: שינוי הסימנים מושבת בזמן שאתה מתרגם סימנים.
 

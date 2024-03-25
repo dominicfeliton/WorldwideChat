@@ -107,7 +107,6 @@ Messages:
   wwctGUINewTranslationTarget: Agħżel Lingwa tal-Mira
   wwcConfigConnectionSuccess: Konnessi b'suċċess għal {0}!
   wwcConfigGUIGoogleTranslateButton: Google Ittraduċi
-  wwcsIsActiveTranslator: 'Huwa Traduttur Attiv: {0}'
   wwcConfigConversationPrefixInput: Jekk jogħġbok tip waħda ġdida, jew tip 0 li jmorru
     lura.
   wwcConfigGUIPreviousPageButton: Paġna ta'qabel
@@ -214,7 +213,6 @@ Messages:
     fil-folder plugin WorldwideChat għal aktar informazzjoni.
   wwctInvalidInputLangCode: 'Invalidu kodiċi lingwa input pprovduta! Kodiċijiet ta
     ''terminu validi: {0}'
-  wwcsTitle: Rekord ta'{0}
   wwctInvalidOutputLangCode: 'Kodiċi tal-lingwa output invalidu pprovdut! Kodiċijiet
     ta ''terminu validi: {0}'
   wwctGUISourceTranslationSelected: Int għażilt din il-lingwa.
@@ -450,21 +448,25 @@ Messages:
     żbalji traduttur.'
   wwcConfigConversationIgnoreErrorsCleared: Żbalji tat-traduttur biex jinjoraw frażijiet
     ikklerjati b'suċċess.
-  
-  wwcsActiveTransPrevRate: 'Traduttur Attiv Preċedenti Rata Limitu Ħin: {0}'
-  wwcsActiveTransSaved: 'Traduttur Attiv Ssejvjat fuq Disk: {0}'
-  wwcsActiveTransIncoming: 'Traduttur Attiv li Jittraduċi Chat Incoming: {0}'
-  wwcsActiveTransOutLang: 'Attiva Traduttur Output Lingwa: {0}'
-  wwcsActiveTransInLang: 'Attiva Traduttur Input Lingwa: {0}'
-  wwcsActiveTransBook: 'Attiva Traduttur Ktieb Traduttur: {0}'
-  wwcsActiveTransSign: 'Sinjal tat-Traduzzjoni tat-Traduttur Attiv: {0}'
-  wwcsActiveTransUUID: 'Traduttur Attiv UUID: {0}'
-  wwcsActiveTransRateLimit: 'Limitu tar-Rata tat-Traduttur Attiv: {0}'
-  wwcsActiveTransColorWarning: 'Traduttur Attiv Irċieva Twissija tal-Kulur: {0}'
-  wwcsActiveTransOutgoing: 'Traduttur Attiv li Jittraduċi Chat ħiereġ: {0}'
-  wwcsActiveTransItem: 'Attiva Traduttur Traduttur Punt: {0}'
-  wwcsActiveTransEntity: 'Attiva Traduttur Translator Entità: {0}'
   wwcSupportedServer: Inizjalizzazzjoni WorldwideChat għal {0}...
   wwcSupportedVersion: Karatteristiċi li jippermettu għall-verżjoni {0}...
   wwcBadPerms: 'M''għandekx il-permessi meħtieġa biex tesegwixxi dan il-kmand: {0}'
+  wwcsIsActiveTranslator: 'Huwa Traduttur Attiv: {0}'
+  wwcsActiveTransPrevRate: 'Ħin tal-Limitu tar-Rata Preċedenti: {0}'
+  wwcsActiveTransSaved: 'Salvat fid-Disk: {0}'
+  wwcsActiveTransIncoming: 'Traduzzjoni taċ-Chat li jidħol: {0}'
+  wwcsActiveTransOutLang: 'Lingwa tal-Ħruġ: {0}'
+  wwcsActiveTransInLang: 'Lingwa tad-dħul: {0}'
+  wwcsActiveTransBook: 'Ktieb tat-Traduzzjoni: {0}'
+  wwcsActiveTransSign: 'Sinjal tat-Traduzzjoni: {0}'
+  wwcsActiveTransUUID: 'NUMBER: {0}'
+  wwcsActiveTransRateLimit: 'Limitu tar-Rata: {0}'
+  wwcsActiveTransColorWarning: 'Twissija tal-Kulur Riċevuta: {0}'
+  wwcsActiveTransSignWarning: 'Twissija tal-Editja tas-Sinjal Riċevut: {0}'
+  wwcsTitle: Rekord ta' {0}
+  wwcsActiveTransOutgoing: 'Traduzzjoni tal-Outgoing Chat: {0}'
+  wwcsActiveTransItem: 'Oġġett tat-Traduzzjoni: {0}'
+  wwcsActiveTransEntity: 'Entità tat-Traduzzjoni: {0}'
+  wwctsWarning: Il-modifika tas-sinjali hija diżattivata waqt li tkun qed tittraduċi
+    s-sinjali.
 

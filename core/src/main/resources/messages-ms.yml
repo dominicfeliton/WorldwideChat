@@ -105,7 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: Pilih Bahasa Sasaran
   wwcConfigConnectionSuccess: Berjaya disambungkan ke {0}!
   wwcConfigGUIGoogleTranslateButton: Google Terjemah
-  wwcsIsActiveTranslator: 'Adalah Penterjemah Aktif: {0}'
   wwcConfigConversationPrefixInput: Awalan semasa ialah {0}. Sila taip yang baru,
     atau taip 0 untuk kembali.
   wwcConfigGUIPreviousPageButton: Halaman Sebelumnya
@@ -212,7 +211,6 @@ Messages:
     plugin WorldwideChat untuk maklumat lanjut.
   wwctInvalidInputLangCode: 'Kod bahasa input tidak sah disediakan! Kod lang sah:
     {0}'
-  wwcsTitle: Rekod dari {0}
   wwctInvalidOutputLangCode: 'Kod bahasa output tidak sah disediakan! Kod lang sah:
     {0}'
   wwctGUISourceTranslationSelected: Anda telah memilih bahasa ini.
@@ -447,22 +445,25 @@ Messages:
     menaip “*” akan menyebabkan plugin tidak memeriksa sebarang kesilapan penterjemah.'
   wwcConfigConversationIgnoreErrorsCleared: Kesilapan penterjemah untuk mengabaikan
     frasa dibersihkan dengan jayanya.
-  
-  wwcsActiveTransPrevRate: 'Penterjemah Aktif Masa Had Kadar Sebelumnya: {0}'
-  wwcsActiveTransSaved: 'Penterjemah Aktif Disimpan ke Cakera: {0}'
-  wwcsActiveTransIncoming: 'Penterjemah Aktif Menterjemah Sembang Masuk: {0}'
-  wwcsActiveTransOutLang: 'Bahasa Output Penterjemah Aktif: {0}'
-  wwcsActiveTransInLang: 'Bahasa Input Penterjemah Aktif: {0}'
-  wwcsActiveTransBook: 'Penterjemah Aktif Menterjemah Buku: {0}'
-  wwcsActiveTransSign: 'Tanda Terjemahan Penterjemah Aktif: {0}'
-  wwcsActiveTransUUID: 'UUID Penterjemah Aktif: {0}'
-  wwcsActiveTransRateLimit: 'Had Kadar Penterjemah Aktif: {0}'
-  wwcsActiveTransColorWarning: 'Penterjemah Aktif Menerima Amaran Warna: {0}'
-  wwcsActiveTransOutgoing: 'Penterjemah Aktif Menterjemah Sembang Keluar: {0}'
-  wwcsActiveTransItem: 'Item Penterjemah Aktif: {0}'
-  wwcsActiveTransEntity: 'Entiti Penterjemah Aktif: {0}'
   wwcSupportedServer: Memulakan WorldwideChat untuk {0}...
   wwcSupportedVersion: Membolehkan ciri untuk versi {0}...
   wwcBadPerms: 'Anda tidak mempunyai keizinan yang diperlukan untuk melaksanakan arahan
     ini: {0}'
+  wwcsIsActiveTranslator: 'Adakah Penterjemah Aktif: {0}'
+  wwcsActiveTransPrevRate: 'Masa Had Kadar Sebelumnya: {0}'
+  wwcsActiveTransSaved: 'Disimpan ke cakera: {0}'
+  wwcsActiveTransIncoming: 'Menterjemahkan Sembang Masuk: {0}'
+  wwcsActiveTransOutLang: 'Bahasa Keluaran: {0}'
+  wwcsActiveTransInLang: 'Bahasa Input: {0}'
+  wwcsActiveTransBook: 'Penterjemahan Buku: {0}'
+  wwcsActiveTransSign: 'Tanda Terjemahan: {0}'
+  wwcsActiveTransUUID: 'UUE: {0}'
+  wwcsActiveTransRateLimit: 'Had Kadar: {0}'
+  wwcsActiveTransColorWarning: 'Amaran Warna yang Diterima: {0}'
+  wwcsActiveTransSignWarning: 'Amaran Suntingan Tanda Diterima: {0}'
+  wwcsTitle: Rekod {0}
+  wwcsActiveTransOutgoing: 'Menterjemahkan Sembang Keluar: {0}'
+  wwcsActiveTransItem: 'Item Terjemahan: {0}'
+  wwcsActiveTransEntity: 'Entiti menterjemah: {0}'
+  wwctsWarning: Pengubahsuaian tanda dilumpuhkan semasa anda menterjemahkan tanda.
 

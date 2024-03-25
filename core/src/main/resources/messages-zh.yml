@@ -88,7 +88,6 @@ Messages:
   wwctGUINewTranslationTarget: 选择目标语言
   wwcConfigConnectionSuccess: 已成功连接到 {0}!
   wwcConfigGUIGoogleTranslateButton: 谷歌翻译
-  wwcsIsActiveTranslator: 是否活跃翻译： {0}
   wwcConfigConversationPrefixInput: 当前前缀为 {0}。请键入新的前缀，或键入 0 返回。
   wwcConfigGUIPreviousPageButton: 上一页
   wwcConfigGUITranslatorCacheButton: 更改翻译缓存限制
@@ -168,7 +167,6 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: 请查看 WorldwideChat 插件文件夹中的 errorLog.txt
     以了解更多信息。
   wwctInvalidInputLangCode: 提供的输入语言代码无效！有效的郎代码： {0}
-  wwcsTitle: '{0} 的记录'
   wwctInvalidOutputLangCode: 提供的输出语言代码无效！有效的郎代码： {0}
   wwctGUISourceTranslationSelected: 你选择了这种语言。
   wwcConfigGUIChatMessagesOverrideDeleteButton: 删除覆盖
@@ -345,21 +343,24 @@ Messages:
   wwcConfigConversationIgnoreErrorsInput: 翻译器错误中当前要忽略的短语列表是： {0}。键入参数以逗号（key=value，key2=value，key2=value2）分隔，或者键入
     clear 以擦除当前参数，或者键入 0 返回。此外，键入 “*” 将导致插件无法检查任何翻译器错误。
   wwcConfigConversationIgnoreErrorsCleared: 已成功清除忽略短语的翻译错误。
-  
-  wwcsActiveTransPrevRate: 活跃转换器之前的速率限制时间： {0}
-  wwcsActiveTransSaved: '活动转换器已保存到磁盘: {0}'
-  wwcsActiveTransIncoming: 活跃翻译器正在翻译传入的聊天： {0}
-  wwcsActiveTransOutLang: 主动翻译器输出语言： {0}
-  wwcsActiveTransInLang: 主动翻译器输入语言： {0}
-  wwcsActiveTransBook: 活跃翻译者正在翻译图书： {0}
-  wwcsActiveTransSign: 活跃翻译器翻译符号： {0}
-  wwcsActiveTransUUID: '活动翻译器 UUID: {0}'
-  wwcsActiveTransRateLimit: 活跃转换器速率限制： {0}
-  wwcsActiveTransColorWarning: 活动转换器收到颜色警告： {0}
-  wwcsActiveTransOutgoing: 活跃翻译器正在翻译外发聊天： {0}
-  wwcsActiveTransItem: 活跃翻译器正在翻译项目： {0}
-  wwcsActiveTransEntity: 活跃翻译器翻译实体： {0}
   wwcSupportedServer: 正在为 {0} 初始化 WorldwideChat...
   wwcSupportedVersion: 正在启用 {0} 版本的功能...
   wwcBadPerms: 您没有执行此命令所需的权限：{0}
+  wwcsIsActiveTranslator: 是否为活跃的翻译器：{0}
+  wwcsActiveTransPrevRate: 之前的速率限制时间：{0}
+  wwcsActiveTransSaved: 已保存到磁盘：{0}
+  wwcsActiveTransIncoming: 翻译传入的聊天：{0}
+  wwcsActiveTransOutLang: 输出语言：{0}
+  wwcsActiveTransInLang: 输入语言：{0}
+  wwcsActiveTransBook: 翻译书籍：{0}
+  wwcsActiveTransSign: 翻译标志：{0}
+  wwcsActiveTransUUID: 'UUID: {0}'
+  wwcsActiveTransRateLimit: 速率限制：{0}
+  wwcsActiveTransColorWarning: 收到的颜色警告：{0}
+  wwcsActiveTransSignWarning: 收到的标志编辑警告：{0}
+  wwcsTitle: '{0} 的记录'
+  wwcsActiveTransOutgoing: 翻译外发聊天：{0}
+  wwcsActiveTransItem: 翻译项目：{0}
+  wwcsActiveTransEntity: 翻译实体：{0}
+  wwctsWarning: 翻译符号时，签名修改被禁用。
 

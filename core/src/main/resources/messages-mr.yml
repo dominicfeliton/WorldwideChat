@@ -110,7 +110,6 @@ Messages:
   wwcConfigConnectionSuccess: '{0} शी यशस्वीपणे कनेक्ट केलेले!'
   wwctGUIRateButton: दर मर्यादा सेट करा
   wwcConfigGUIGoogleTranslateButton: गूगल भाषांतर
-  wwcsIsActiveTranslator: 'सक्रिय अनुवादक आहे: {0}'
   wwcConfigConversationPrefixInput: वर्तमान उपसर्ग {0} आहे. कृपया नवीन टाइप करा किंवा
     परत जाण्यासाठी 0 टाइप करा.
   wwctInvalidInputLangCode: 'अवैध इनपुट भाषा कोड प्रदान! वैध लांब कोड: {0}'
@@ -221,7 +220,6 @@ Messages:
   wwcEnabled: वर्ल्डवाइडचॅट आवृत्ती {0} सक्षम केले.
   wwcgLangToLangStart: आता जागतिक गप्पांचे भाषांतर {0} पासून {1} पर्यंत केले आहे.
   wwcConfigGUIPluginUpdateChatButton: प्लगइन अद्यतनांसाठी चॅट रिमाइंडर पाठवा
-  wwcsTitle: '{0} ची नोंद'
   wwcConfigGUIErrorLimitButton: अनुवादक त्रुटी मर्यादा बदला
   wwcConfigConversationWatsonAPIKeyInput: वर्तमान API कि {0} आहे. कृपया वॉटसनसाठी
     API की इनपुट करा, किंवा परत जाण्यासाठी टाइप करा 0.
@@ -444,21 +442,24 @@ Messages:
     तपासा नाही देईन.'
   wwcConfigConversationIgnoreErrorsCleared: वाक्यांशांकडे दुर्लक्ष करण्यासाठी अनुवादक
     त्रुटी यशस्वीरित्या साफ केल्या.
-  
-  wwcsActiveTransPrevRate: 'सक्रिय अनुवादक मागील दर मर्यादा वेळ: {0}'
-  wwcsActiveTransSaved: 'सक्रिय अनुवादक डिस्कवर जतन केले: {0}'
-  wwcsActiveTransIncoming: 'सक्रिय अनुवादक इनकमिंग चॅटचे भाषांतर करीत आहे: {0}'
-  wwcsActiveTransOutLang: 'सक्रीय अनुवादक आऊटपुट भाषा: {0}'
-  wwcsActiveTransInLang: 'सक्रीय अनुवादक इनपुट भाषा: {0}'
-  wwcsActiveTransBook: 'सक्रीय अनुवादक भाषांतरकार पुस्तक: {0}'
-  wwcsActiveTransSign: 'सक्रिय अनुवादक भाषांतरकार अनुवादक चिन्ह: {0}'
-  wwcsActiveTransUUID: 'सक्रिय अनुवादक UUID: {0}'
-  wwcsActiveTransRateLimit: 'सक्रिय अनुवादक दर मर्यादा: {0}'
-  wwcsActiveTransColorWarning: 'सक्रिय अनुवादक प्राप्त रंग चेतावणी: {0}'
-  wwcsActiveTransOutgoing: 'सक्रिय अनुवादक आउटगोइंग चॅटचे भाषांतर करीत आहे: {0}'
-  wwcsActiveTransItem: 'सक्रिय अनुवादक अनुवादक घटक: {0}'
-  wwcsActiveTransEntity: 'सक्रिय अनुवादक भाषांतर करणारे अस्तित्व: {0}'
   wwcSupportedServer: '{0} साठी वर्ल्डवाइडचॅट प्रारंभ करीत आहे...'
   wwcSupportedVersion: आवृत्तीसाठी वैशिष्ट्ये सक्षम करणे {0}...
   wwcBadPerms: 'आपल्याकडे ही कमांड कार्यरत करण्यासाठी आवश्यक परवानगी नाहीत: {0}'
+  wwcsIsActiveTranslator: 'सक्रिय अनुवादक आहे: {0}'
+  wwcsActiveTransPrevRate: 'मागील दर मर्यादा वेळ: {0}'
+  wwcsActiveTransSaved: 'डिस्कवर जतन केलेले: {0}'
+  wwcsActiveTransIncoming: 'इनकमेंट चॅटचे भाषांतर करणे:'
+  wwcsActiveTransOutLang: 'आउटपुट भाषा: {0}'
+  wwcsActiveTransInLang: 'इनपुट भाषा: {0}'
+  wwcsActiveTransBook: 'पुस्तक भाषांतर: {0}'
+  wwcsActiveTransSign: 'भाषांतर चिन्ह: {0}'
+  wwcsActiveTransUUID: 'उत्पादन: {0}'
+  wwcsActiveTransRateLimit: 'दर मर्यादा: {0}'
+  wwcsActiveTransColorWarning: 'प्राप्त रंग चेतावणी: {0}'
+  wwcsActiveTransSignWarning: 'प्राप्त साइन संपादन चेतावणी: {0'
+  wwcsTitle: '{0} चा रेकॉर्ड'
+  wwcsActiveTransOutgoing: आउटगोगिंग चॅटचे भाषांतर करणे
+  wwcsActiveTransItem: 'भाषांतर आयटम: {0}'
+  wwcsActiveTransEntity: 'भाषांतर अस्तित्व: {0}'
+  wwctsWarning: आपण चिन्हे भाषांतर करत असताना साइन बदल अक्षम
 

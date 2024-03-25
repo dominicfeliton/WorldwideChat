@@ -102,7 +102,6 @@ Messages:
   wwctGUINewTranslationTarget: Мақсатты тілді таңдаңыз
   wwcConfigConnectionSuccess: '{0} сәтті қосылған!'
   wwcConfigGUIGoogleTranslateButton: Google Аудару
-  wwcsIsActiveTranslator: 'Белсенді аудармашы: {0}'
   wwcConfigConversationPrefixInput: Ағымдағы префикс {0} болып табылады, қайту үшін
     жаңасын теріңіз немесе 0 теріңіз.
   wwcConfigGUIPreviousPageButton: алдыңғы бет
@@ -205,7 +204,6 @@ Messages:
     плагин қалтасында errorLog.txt тексеріңіз.
   wwctInvalidInputLangCode: 'Жарамсыз енгізу тілінің коды берілген! Жарамды кодтары:
     {0}'
-  wwcsTitle: '{0} жазбасы'
   wwctInvalidOutputLangCode: 'Жарамсыз шығыс тілінің коды берілген! Жарамды кодтары:
     {0}'
   wwctGUISourceTranslationSelected: Сіз бұл тілді таңдадыңыз.
@@ -440,22 +438,24 @@ Messages:
     әкеледі.'
   wwcConfigConversationIgnoreErrorsCleared: Аудармашы қателер сәтті тазартылды фразаларды
     елемеуге.
-  
-  wwcsActiveTransPrevRate: 'Белсенді аудармашының алдыңғы жылдамдығының шекті уақыты:
-    {0}'
-  wwcsActiveTransSaved: 'Белсенді аудармашы дискіге сақталған: {0}'
-  wwcsActiveTransIncoming: 'Кіріс чатын аударатын белсенді аудармашы: {0}'
-  wwcsActiveTransOutLang: 'Белсенді аудармашының шығыс тілі: {0}'
-  wwcsActiveTransInLang: 'Белсенді аудармашының кіріс тілі: {0}'
-  wwcsActiveTransBook: 'Аудармашының белсенді аудармасы: {0}'
-  wwcsActiveTransSign: 'Белсенді аудармашы аударма белгісі: {0}'
-  wwcsActiveTransUUID: 'Белсенді аудармашы UUID: {0}'
-  wwcsActiveTransRateLimit: 'Белсенді аудармашы жылдамдығының шегі: {0}'
-  wwcsActiveTransColorWarning: 'Белсенді аудармашы түсті ескерту алды: {0}'
-  wwcsActiveTransOutgoing: 'Шығыс чатты аударатын белсенді аудармашы: {0}'
-  wwcsActiveTransItem: 'Белсенді аудармашының аудармасы: {0}'
-  wwcsActiveTransEntity: 'Белсенді аудармашы аударма субъектісі: {0}'
   wwcSupportedServer: WorldwideChat-ты {0} үшін инициализациялау...
   wwcSupportedVersion: '{0} нұсқасының мүмкіндіктерін қосу...'
   wwcBadPerms: 'Сізде осы пәрменді орындау үшін қажетті рұқсаттар жоқ: {0}'
+  wwcsIsActiveTranslator: 'Белсенді аудармашы ма: {0}'
+  wwcsActiveTransPrevRate: 'Алдыңғы тарифтік шектеу уақыты: {0}'
+  wwcsActiveTransSaved: 'Дискіге сақталған: {0}'
+  wwcsActiveTransIncoming: 'Кіріс чатын аудару: {0}'
+  wwcsActiveTransOutLang: 'Шығару тілі: {0}'
+  wwcsActiveTransInLang: 'Кіріс тілі: {0}'
+  wwcsActiveTransBook: 'Кітапты аудару: {0}'
+  wwcsActiveTransSign: 'Аударма белгісі: {0}'
+  wwcsActiveTransUUID: 'АУД: {0}'
+  wwcsActiveTransRateLimit: 'Тарифтің шегі: {0}'
+  wwcsActiveTransColorWarning: 'Алынған түс туралы ескерту: {0}'
+  wwcsActiveTransSignWarning: 'Алынған белгіні өңдеу туралы ескерту: {0}'
+  wwcsTitle: '{0} жазбасы'
+  wwcsActiveTransOutgoing: 'Шығу чатын аудару: {0}'
+  wwcsActiveTransItem: 'Аударма тармағы: {0}'
+  wwcsActiveTransEntity: 'Аударма субъектісі: {0}'
+  wwctsWarning: Белгілерді аудару кезінде белгіні өзгерту өшіріледі.
 

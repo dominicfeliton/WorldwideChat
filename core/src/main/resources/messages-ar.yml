@@ -99,7 +99,6 @@ Messages:
   wwctGUINewTranslationTarget: اختر لغة الهدف
   wwcConfigConnectionSuccess: تم الاتصال بنجاح بـ {0}!
   wwcConfigGUIGoogleTranslateButton: ترجمة جوجل
-  wwcsIsActiveTranslator: 'مترجم نشط: {0}'
   wwcConfigConversationPrefixInput: البادئة الحالية هو {0}. الرجاء كتابة واحدة جديدة،
     أو اكتب 0 للعودة.
   wwcConfigGUIPreviousPageButton: الصفحة السابقة
@@ -200,7 +199,6 @@ Messages:
     البرنامج المساعد WorldwideChat لمزيد من المعلومات.
   wwctInvalidInputLangCode: 'تم توفير رمز لغة الإدخال غير صالح! رموز اللغة الصالحة:
     {0}'
-  wwcsTitle: سجل {0}
   wwctInvalidOutputLangCode: 'تم توفير رمز لغة الإخراج غير صالح! رموز اللغة الصالحة:
     {0}'
   wwctGUISourceTranslationSelected: لقد حددت هذه اللغة.
@@ -415,21 +413,24 @@ Messages:
     أو اكتب clear لمسح args الحالية، أو اكتب 0 للرجوع. بالإضافة إلى ذلك، ستؤدي كتابة
     «*» إلى عدم تحقق المكون الإضافي من أي أخطاء في المترجم.'
   wwcConfigConversationIgnoreErrorsCleared: تم مسح أخطاء المترجم لتجاهل العبارات بنجاح.
-  
-  wwcsActiveTransPrevRate: 'الحد الزمني للمعدل السابق للمترجم النشط: {0}'
-  wwcsActiveTransSaved: 'تم حفظ المترجم النشط على القرص: {0}'
-  wwcsActiveTransIncoming: 'مترجم نشط يترجم الدردشة الواردة: {0}'
-  wwcsActiveTransOutLang: 'لغة إخراج المترجم النشط: {0}'
-  wwcsActiveTransInLang: 'لغة إدخال المترجم النشط: {0}'
-  wwcsActiveTransBook: 'كتاب ترجمة المترجم النشط: {0}'
-  wwcsActiveTransSign: 'علامة الترجمة النشطة للمترجم: {0}'
-  wwcsActiveTransUUID: 'UUID للمترجم النشط: {0}'
-  wwcsActiveTransRateLimit: 'حد معدل المترجم النشط: {0}'
-  wwcsActiveTransColorWarning: 'تلقى المترجم النشط تحذيرًا ملونًا: {0}'
-  wwcsActiveTransOutgoing: 'مترجم نشط يترجم الدردشة الصادرة: {0}'
-  wwcsActiveTransItem: 'عنصر ترجمة المترجم النشط: {0}'
-  wwcsActiveTransEntity: 'كيان ترجمة المترجم النشط: {0}'
   wwcSupportedServer: بدء تشغيل WorldwideChat لـ {0}...
   wwcSupportedVersion: تمكين الميزات للإصدار {0}...
   wwcBadPerms: 'ليس لديك الأذونات المطلوبة لتنفيذ هذا الأمر: {0}'
+  wwcsIsActiveTranslator: 'هل المترجم النشط: {0}'
+  wwcsActiveTransPrevRate: 'الوقت المحدد للمعدل السابق: {0}'
+  wwcsActiveTransSaved: 'تم الحفظ على القرص: {0}'
+  wwcsActiveTransIncoming: 'ترجمة الدردشة الواردة: {0}'
+  wwcsActiveTransOutLang: 'لغة الإخراج: {0}'
+  wwcsActiveTransInLang: 'لغة الإدخال: {0}'
+  wwcsActiveTransBook: 'كتاب الترجمة: {0}'
+  wwcsActiveTransSign: 'علامة الترجمة: {0}'
+  wwcsActiveTransUUID: 'اسم المستخدم: {0}'
+  wwcsActiveTransRateLimit: 'حد السعر: {0}'
+  wwcsActiveTransColorWarning: 'تحذير اللون المستلم: {0}'
+  wwcsActiveTransSignWarning: 'تحذير تحرير التوقيع المستلم: {0}'
+  wwcsTitle: سجل {0}
+  wwcsActiveTransOutgoing: 'ترجمة الدردشة الصادرة: {0}'
+  wwcsActiveTransItem: 'ترجمة العنصر: {0}'
+  wwcsActiveTransEntity: 'الكيان المترجم: {0}'
+  wwctsWarning: تم تعطيل تعديل التوقيع أثناء ترجمة العلامات.
 

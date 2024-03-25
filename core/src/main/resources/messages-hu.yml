@@ -108,7 +108,6 @@ Messages:
   wwctGUINewTranslationTarget: Válasszon célnyelvet
   wwcConfigConnectionSuccess: 'Sikeresen csatlakozott ehhez: {0}!'
   wwcConfigGUIGoogleTranslateButton: Google Fordító
-  wwcsIsActiveTranslator: 'Aktív fordító: {0}'
   wwcConfigConversationPrefixInput: 'Az aktuális előtag: {0}. Írjon be egy újat, vagy
     írja be a 0 értéket a visszatéréshez.'
   wwcConfigGUIPreviousPageButton: Előző oldal
@@ -217,7 +216,6 @@ Messages:
     fájlt a WorldwideChat bővítmény mappájában további információért.
   wwctInvalidInputLangCode: 'Érvénytelen beviteli nyelvkód biztosított! Érvényes lang
     kódok: {0}'
-  wwcsTitle: '{0} rekordja'
   wwctInvalidOutputLangCode: 'Érvénytelen kimeneti nyelvkód biztosított! Érvényes
     lang kódok: {0}'
   wwctGUISourceTranslationSelected: Ön ezt a nyelvet választotta.
@@ -458,21 +456,24 @@ Messages:
     nem ellenőrzi a fordítói hibákat.'
   wwcConfigConversationIgnoreErrorsCleared: Fordító hibák figyelmen kívül hagyni mondatok
     sikeresen törölve.
-  
-  wwcsActiveTransPrevRate: 'Aktív fordító Korábbi sebességkorlátozási idő: {0}'
-  wwcsActiveTransSaved: 'Aktív fordító lemezre mentve: {0}'
-  wwcsActiveTransIncoming: 'Aktív fordító Bejövő Chat fordítása: {0}'
-  wwcsActiveTransOutLang: 'Aktív fordító kimeneti nyelve: {0}'
-  wwcsActiveTransInLang: 'Aktív fordító beviteli nyelve: {0}'
-  wwcsActiveTransBook: 'Aktív fordító fordító könyv: {0}'
-  wwcsActiveTransSign: 'Aktív fordító fordító jel: {0}'
-  wwcsActiveTransUUID: 'Aktív fordító UUID: {0}'
-  wwcsActiveTransRateLimit: 'Aktív fordítói sebességkorlátozás: {0}'
-  wwcsActiveTransColorWarning: 'Aktív fordító kapott színes figyelmeztetés: {0}'
-  wwcsActiveTransOutgoing: 'Aktív fordító Kimenő csevegés fordítása: {0}'
-  wwcsActiveTransItem: 'Aktív fordító fordító elem: {0}'
-  wwcsActiveTransEntity: 'Aktív fordító fordító entitás: {0}'
   wwcSupportedServer: A WorldwideChat inicializálása {0}...
   wwcSupportedVersion: A {0} verzió funkcióinak engedélyezése...
   wwcBadPerms: 'A parancs végrehajtásához nincs szükséges engedélye: {0}'
+  wwcsIsActiveTranslator: 'Aktív fordító: {0}'
+  wwcsActiveTransPrevRate: 'Korábbi díjkorlát ideje: {0}'
+  wwcsActiveTransSaved: 'Lemezre mentve: {0}'
+  wwcsActiveTransIncoming: 'Bejövő csevegés fordítása: {0}'
+  wwcsActiveTransOutLang: 'Kimeneti nyelv: {0}'
+  wwcsActiveTransInLang: 'Bemeneti nyelv: {0}'
+  wwcsActiveTransBook: 'Könyv fordítása: {0}'
+  wwcsActiveTransSign: 'Fordítási jel: {0}'
+  wwcsActiveTransUUID: 'TELJESÍTMÉNY: {0}'
+  wwcsActiveTransRateLimit: 'Árkorlát: {0}'
+  wwcsActiveTransColorWarning: 'Fogadott színes figyelmeztetés: {0}'
+  wwcsActiveTransSignWarning: 'Fogadott jelszerkesztési figyelmeztetés: {0}'
+  wwcsTitle: '{0} rekordja'
+  wwcsActiveTransOutgoing: 'Kimenő csevegés fordítása: {0}'
+  wwcsActiveTransItem: 'Elem fordítása: {0}'
+  wwcsActiveTransEntity: 'Fordító entitás: {0}'
+  wwctsWarning: A jelek módosítása le van tiltva a jelek fordítása közben.
 

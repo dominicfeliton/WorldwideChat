@@ -105,7 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: Hədəf Dil Seçin
   wwcConfigConnectionSuccess: Uğurla bağlıdır {0}!
   wwcConfigGUIGoogleTranslateButton: Google Tərcümə
-  wwcsIsActiveTranslator: 'Aktiv Tərcüməçi: {0}'
   wwcConfigConversationPrefixInput: Mövcud prefiksi {0}. Yenisini yazın və ya geri
     qayıtmaq üçün 0 yazın.
   wwcConfigGUIPreviousPageButton: Əvvəlki səhifə
@@ -211,7 +210,6 @@ Messages:
     plugin qovluğunda errorLog.txt yoxlayın.
   wwctInvalidInputLangCode: 'Yanlış giriş dili kodu təqdim edildi! etibarlı lang kodları:
     {0}'
-  wwcsTitle: '{0} rekordu'
   wwctInvalidOutputLangCode: 'Yanlış çıxış dili kodu təqdim edildi! etibarlı lang
     kodları: {0}'
   wwctGUISourceTranslationSelected: Siz bu dili seçdiniz.
@@ -443,21 +441,24 @@ Messages:
     səbəb olacaq.'
   wwcConfigConversationIgnoreErrorsCleared: Tərcüməçi səhvlər ifadələr ignore uğurla
     rəsmiləşdirilmiş.
-  
-  wwcsActiveTransPrevRate: 'Aktiv Tərcüməçi Əvvəlki Məzənnə Limit Vaxtı: {0}'
-  wwcsActiveTransSaved: 'Aktiv Tərcüməçi Diskə Saxlanılır: {0}'
-  wwcsActiveTransIncoming: 'Daxil olan söhbətləri tərcümə edən aktiv tərcüməçi: {0}'
-  wwcsActiveTransOutLang: 'Aktiv Tərcüməçinin Çıxış Dili: {0}'
-  wwcsActiveTransInLang: 'Aktiv Tərcüməçinin Giriş Dili: {0}'
-  wwcsActiveTransBook: 'Aktiv Tərcüməçi Kitab: {0}'
-  wwcsActiveTransSign: 'Aktiv Tərcüməçi İşarəsi: {0}'
-  wwcsActiveTransUUID: 'Aktiv tərcüməçi UUID: {0}'
-  wwcsActiveTransRateLimit: 'Aktiv Tərcüməçi Məzənnəsi Limiti: {0}'
-  wwcsActiveTransColorWarning: 'Aktiv Tərcüməçi Rəng Xəbərdarlığı: {0}'
-  wwcsActiveTransOutgoing: 'Gedən söhbətləri tərcümə edən aktiv tərcüməçi: {0}'
-  wwcsActiveTransItem: 'Məzmunu tərcümə edən aktiv tərcüməçi: {0}'
-  wwcsActiveTransEntity: 'Aktiv Tərcüməçi Tərcümə edən Müəssisə: {0}'
   wwcSupportedServer: '{0} üçün WorldwideChat başlamaq...'
   wwcSupportedVersion: Versiya {0} üçün xüsusiyyətləri təmin edir...
   wwcBadPerms: 'Bu əmri yerinə yetirmək üçün tələb olunan icazələriniz yoxdur: {0}'
+  wwcsIsActiveTranslator: 'Aktiv Tərcüməçidir: {0}'
+  wwcsActiveTransPrevRate: 'Əvvəlki dərəcəsi məhdudiyyəti vaxtı: {0}'
+  wwcsActiveTransSaved: 'Diskdə saxlanılır: {0}'
+  wwcsActiveTransIncoming: 'Gələn söhbətin tərcüməsi: {0}'
+  wwcsActiveTransOutLang: 'Çıxış dili: {0}'
+  wwcsActiveTransInLang: 'Giriş dili: {0}'
+  wwcsActiveTransBook: 'Kitab tərcüməsi: {0}'
+  wwcsActiveTransSign: 'Tərcümə işarəsi: {0}'
+  wwcsActiveTransUUID: 'VERSİON: {0}'
+  wwcsActiveTransRateLimit: 'Qiymət Limiti: {0}'
+  wwcsActiveTransColorWarning: 'Alınan Rəng Xəbərdarlığı: {0}'
+  wwcsActiveTransSignWarning: 'Alınan işarə redaktəsi xəbərdarlığı: {0}'
+  wwcsTitle: '{0} qeydi'
+  wwcsActiveTransOutgoing: 'Gələn söhbətin tərcüməsi: {0}'
+  wwcsActiveTransItem: 'Tərcümə maddəsi: {0}'
+  wwcsActiveTransEntity: 'Tərcümə edən müəssisə: {0}'
+  wwctsWarning: İşarələri tərcümə edərkən işarənin dəyişdirilməsi deaktiv edilir.
 

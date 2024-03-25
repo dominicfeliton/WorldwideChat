@@ -119,7 +119,6 @@ Messages:
   wwcConfigConnectionSuccess: Go rathúil ceangailte le {0}!
   wwctGUIRateButton: Socraigh Ráta Teorainn
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'An bhfuil Aistritheoir Gníomhach: {0}'
   wwcConfigConversationPrefixInput: Is é an réimír reatha {0}. Clóscríobh ceann nua,
     nó cineál 0 le dul ar ais.
   wwctInvalidInputLangCode: 'Cód teanga ionchuir neamhbhailí ar fáil! Cóid lang Bailí:
@@ -238,7 +237,6 @@ Messages:
   wwcgLangToLangStart: Anois aistriú comhrá domhanda ó {0} go {1}.
   wwcConfigGUIPluginUpdateChatButton: Seol Meabhrúchán Comhrá le haghaidh Nuashonruithe
     Breiseán
-  wwcsTitle: Taifead de {0}
   wwcConfigGUIErrorLimitButton: Athraigh Teorainn Earráid Aistritheoir
   wwcConfigConversationWatsonAPIKeyInput: Is é an eochair API atá ann faoi láthair
     {0}. Cuir isteach eochair API do Watson, nó cineál 0 chun dul ar ais.
@@ -480,22 +478,25 @@ Messages:
     “*” a chur faoi deara nach bhfuil an breiseán a sheiceáil aon earráidí aistritheoir.'
   wwcConfigConversationIgnoreErrorsCleared: Earráidí aistritheora chun neamhaird a
     dhéanamh ar fhrásaí glanta go rathúil.
-  
-  wwcsActiveTransPrevRate: 'Aistritheoir Gníomhach Roimhe Seo Teorainn Ráta Am: {0}'
-  wwcsActiveTransSaved: 'Aistritheoir Gníomhach Sábháilte a Diosca: {0}'
-  wwcsActiveTransIncoming: 'Aistritheoir Gníomhacha ag Aistriú Comhrá Isteach: {0}'
-  wwcsActiveTransOutLang: 'Aistritheoir Gníomhach Teanga Aschur: {0}'
-  wwcsActiveTransInLang: 'Aistritheoir Gníomhach Teanga Ionchur: {0}'
-  wwcsActiveTransBook: 'Aistritheoir Gníomhach Leabhar Aistriúcháin: {0}'
-  wwcsActiveTransSign: 'Aistritheoir Gníomhach Aistriúcháin Cláraigh: {0}'
-  wwcsActiveTransUUID: 'Aistritheoir Gníomhach UUID: {0}'
-  wwcsActiveTransRateLimit: 'Teorainn Ráta Aistritheoir Gníomhach: {0}'
-  wwcsActiveTransColorWarning: 'Aistritheoir Gníomhach Faighte Dath Rabhadh: {0}'
-  wwcsActiveTransOutgoing: 'Aistritheoir Gníomhach ag Aistriú Comhrá Amach: {0}'
-  wwcsActiveTransItem: 'Aistritheoir Gníomhach Aistriú Mír: {0}'
-  wwcsActiveTransEntity: 'Aistritheoir Gníomhach Aistrithe Aonán: {0}'
   wwcSupportedServer: Initializing WorldwideChat do {0}...
   wwcSupportedVersion: Cumasú gnéithe le haghaidh leagan {0}...
   wwcBadPerms: 'Níl na ceadanna riachtanacha agat chun an t-ordú seo a fhorghníomhú:
     {0}'
+  wwcsIsActiveTranslator: 'An bhfuil Aistritheoir Gníomhach: {0}'
+  wwcsActiveTransPrevRate: 'Am Teorainn Ráta Roimhe Seo: {0}'
+  wwcsActiveTransSaved: 'Sábháilte ar an Diosca: {0}'
+  wwcsActiveTransIncoming: 'Aistriú Comhrá Isteach: {0}'
+  wwcsActiveTransOutLang: 'Teanga Aschur: {0}'
+  wwcsActiveTransInLang: 'Teanga Ionchuir: {0}'
+  wwcsActiveTransBook: 'Leabhar Aistriúcháin: {0}'
+  wwcsActiveTransSign: 'Comhartha Aistriúcháin: {0}'
+  wwcsActiveTransUUID: 'UID: {0}'
+  wwcsActiveTransRateLimit: 'Teorainn Ráta: {0}'
+  wwcsActiveTransColorWarning: 'Rabhadh Dath Faighte: {0}'
+  wwcsActiveTransSignWarning: 'Rabhadh Eagarthóireachta Comhartha Fuarthas: {0}'
+  wwcsTitle: Taifead de {0}
+  wwcsActiveTransOutgoing: 'Aistriú Comhrá Easghabhálach: {0}'
+  wwcsActiveTransItem: 'Mír Aistriúcháin: {0}'
+  wwcsActiveTransEntity: 'Aonán Aistriúcháin: {0}'
+  wwctsWarning: Tá modhnú comharthaí díchumasaithe agus tú ag aistriú comharthaí.
 

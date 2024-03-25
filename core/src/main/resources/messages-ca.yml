@@ -110,7 +110,6 @@ Messages:
   wwctGUINewTranslationTarget: Trieu una llengua de destinació
   wwcConfigConnectionSuccess: Connectat amb èxit a {0}!
   wwcConfigGUIGoogleTranslateButton: Traduir per Google
-  wwcsIsActiveTranslator: 'És traductor actiu: {0}'
   wwcConfigConversationPrefixInput: El prefix actual és {0} Si us plau, escriviu un
     de nou, o escriviu 0 per tornar enrere.
   wwcConfigGUIPreviousPageButton: Pàgina anterior
@@ -221,7 +220,6 @@ Messages:
     al WorldwideChat plugin carpeta per a més informació.
   wwctInvalidInputLangCode: 'Codi d''idioma d''entrada no vàlid proporcionat! Codis
     vàlids: {0}'
-  wwcsTitle: Registre de {0}
   wwctInvalidOutputLangCode: 'Codi d''idioma de sortida no vàlid proporcionat! Codis
     vàlids: {0}'
   wwctGUISourceTranslationSelected: Heu seleccionat aquest idioma.
@@ -475,21 +473,25 @@ Messages:
     cap error del traductor.'
   wwcConfigConversationIgnoreErrorsCleared: Errors del traductor per ignorar frases
     esborrades amb èxit.
-  
-  wwcsActiveTransPrevRate: 'Traductor Actiu Temps límit de tarifa anterior: {0}'
-  wwcsActiveTransSaved: 'Traductor actiu desat al disc: {0}'
-  wwcsActiveTransIncoming: 'Traductor actiu Traducció de xat entrant: {0}'
-  wwcsActiveTransOutLang: 'Idioma de sortida del traductor actiu: {0}'
-  wwcsActiveTransInLang: 'Idioma d''entrada del traductor actiu: {0}'
-  wwcsActiveTransBook: 'Traductor Actiu Traductor Traductor Llibre: {0}'
-  wwcsActiveTransSign: 'Traductor actiu Traductor Traductor Signe: {0}'
-  wwcsActiveTransUUID: 'Traductor Actiu UUID: {0}'
-  wwcsActiveTransRateLimit: 'Límit de taxa de traductor actiu: {0}'
-  wwcsActiveTransColorWarning: 'Traductor actiu rebut advertència de color: {0}'
-  wwcsActiveTransOutgoing: 'Traductor actiu Traducció de xat de sortida: {0}'
-  wwcsActiveTransItem: 'Traductor Actiu Traducció Item: {0}'
-  wwcsActiveTransEntity: 'Traductor actiu Traductor Entitat Traducció: {0}'
   wwcSupportedServer: Inicialitzant WorldwideChat per {0}...
   wwcSupportedVersion: Habilitació de característiques per a la versió {0}...
   wwcBadPerms: 'No teniu els permisos necessaris per executar aquesta comanda: {0}'
+  wwcsIsActiveTranslator: 'És traductor actiu: {0}'
+  wwcsActiveTransPrevRate: 'Temps límit de tarifa anterior: {0}'
+  wwcsActiveTransSaved: 'Desat al disc: {0}'
+  wwcsActiveTransIncoming: 'Traducció del xat entrant: {0}'
+  wwcsActiveTransOutLang: 'Idioma de sortida: {0}'
+  wwcsActiveTransInLang: 'Idioma d''entrada: {0}'
+  wwcsActiveTransBook: 'Traducció del llibre: {0}'
+  wwcsActiveTransSign: 'Signe de traducció: {0}'
+  wwcsActiveTransUUID: 'UID: {0}'
+  wwcsActiveTransRateLimit: 'Límit de tarifes: {0}'
+  wwcsActiveTransColorWarning: 'Avís de color rebut: {0}'
+  wwcsActiveTransSignWarning: 'Avís d''edició del signe rebut: {0}'
+  wwcsTitle: Registre de {0}
+  wwcsActiveTransOutgoing: 'Traducció del xat sortint: {0}'
+  wwcsActiveTransItem: 'Article traduït: {0}'
+  wwcsActiveTransEntity: 'Entitat traduïdora: {0}'
+  wwctsWarning: La modificació dels signes està desactivada mentre esteu traduint
+    signes.
 

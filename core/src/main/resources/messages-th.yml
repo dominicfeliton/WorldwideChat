@@ -93,7 +93,6 @@ Messages:
   wwctGUINewTranslationTarget: เลือกภาษาเป้าหมาย
   wwcConfigConnectionSuccess: เชื่อมต่อกับ {0} สำเร็จแล้ว!
   wwcConfigGUIGoogleTranslateButton: กูเกิล แปลภาษา
-  wwcsIsActiveTranslator: 'คือตัวแปลที่ใช้งานอยู่: {0}'
   wwcConfigConversationPrefixInput: คำนำหน้าปัจจุบันคือ {0} โปรดพิมพ์คำใหม่ หรือพิมพ์
     0 เพื่อย้อนกลับ
   wwcConfigGUIPreviousPageButton: หน้าก่อนหน้า
@@ -187,7 +186,6 @@ Messages:
     WorldwideChat สำหรับข้อมูลเพิ่มเติม.
   wwctInvalidInputLangCode: 'รหัสภาษาสำหรับการป้อนข้อมูลไม่ถูกต้อง!รหัส lang ที่ถูกต้อง:
     {0}'
-  wwcsTitle: บันทึกของ {0}
   wwctInvalidOutputLangCode: 'รหัสภาษาที่ส่งออกไม่ถูกต้องให้!รหัส lang ที่ถูกต้อง:
     {0}'
   wwctGUISourceTranslationSelected: คุณได้เลือกภาษานี้
@@ -396,21 +394,24 @@ Messages:
     clear เพื่อล้างอาร์กเมนต์ปัจจุบัน หรือพิมพ์ 0 เพื่อย้อนกลับนอกจากนี้ การพิมพ์
     “*” จะทำให้ปลั๊กอินไม่ตรวจสอบข้อผิดพลาดใด ๆ ของตัวแปล'
   wwcConfigConversationIgnoreErrorsCleared: นักแปลข้อผิดพลาดในการละเว้นวลีที่ถูกล้างเรียบร้อยแล้ว
-  
-  wwcsActiveTransPrevRate: 'เวลาจำกัดอัตราก่อนหน้านี้สำหรับนักแปลที่ใช้งานอยู่: {0}'
-  wwcsActiveTransSaved: 'ตัวแปลที่ใช้งานถูกบันทึกไว้ในดิสก์: {0}'
-  wwcsActiveTransIncoming: 'ตัวแปลที่ใช้งานอยู่กำลังแปลการสนทนาเข้ามา: {0}'
-  wwcsActiveTransOutLang: 'ภาษาที่แปลที่ใช้งานอยู่: {0}'
-  wwcsActiveTransInLang: 'ภาษาสำหรับการป้อนข้อมูลการแปลที่ใช้งานอยู่: {0}'
-  wwcsActiveTransBook: 'สมุดแปลภาษาที่ใช้งานอยู่: {0}'
-  wwcsActiveTransSign: 'เครื่องหมายแปลที่ใช้งานอยู่: {0}'
-  wwcsActiveTransUUID: 'UUID ตัวแปลที่ใช้งานอยู่: {0}'
-  wwcsActiveTransRateLimit: 'ขีดจำกัดอัตราการแปลที่ใช้งานอยู่: {0}'
-  wwcsActiveTransColorWarning: 'ตัวแปลที่ใช้งานอยู่ได้รับคำเตือนสี: {0}'
-  wwcsActiveTransOutgoing: 'ตัวแปลที่ใช้งานอยู่แปลแชทขาออก: {0}'
-  wwcsActiveTransItem: 'รายการแปลที่ใช้งานอยู่: {0}'
-  wwcsActiveTransEntity: 'เอนทิตีแปลที่ใช้งานอยู่: {0}'
   wwcSupportedServer: เริ่มต้นใช้งาน WorldwideChat สำหรับ {0}...
   wwcSupportedVersion: เปิดใช้คุณลักษณะสำหรับรุ่น {0}...
   wwcBadPerms: 'คุณไม่มีสิทธิ์ที่จำเป็นในการดำเนินการคำสั่งนี้: {0}'
+  wwcsIsActiveTranslator: 'นักแปลที่ใช้งานอยู่: {0}'
+  wwcsActiveTransPrevRate: 'เวลาจำกัดอัตราก่อนหน้า: {0}'
+  wwcsActiveTransSaved: 'บันทึกไว้ในดิสก์: {0}'
+  wwcsActiveTransIncoming: 'การแปลแชทขาเข้า: {0}'
+  wwcsActiveTransOutLang: 'ภาษาเอาต์พุต: {0}'
+  wwcsActiveTransInLang: 'ภาษาที่ป้อนข้อมูล: {0}'
+  wwcsActiveTransBook: 'การแปล หนังสือ: {0}'
+  wwcsActiveTransSign: 'เครื่องหมายการแปล: {0}'
+  wwcsActiveTransUUID: 'เวอร์ชัน: {0}'
+  wwcsActiveTransRateLimit: 'ขีดจำกัดอัตรา: {0}'
+  wwcsActiveTransColorWarning: 'คำเตือนสีที่ได้รับแล้ว: {0}'
+  wwcsActiveTransSignWarning: 'คำเตือนแก้ไขป้ายที่ได้รับ: {0}'
+  wwcsTitle: บันทึกของ {0}
+  wwcsActiveTransOutgoing: 'การแปลแชทขาออก: {0}'
+  wwcsActiveTransItem: 'รายการการแปล: {0}'
+  wwcsActiveTransEntity: 'เอนทิตีการแปล: {0}'
+  wwctsWarning: การแก้ไขป้ายถูกปิดใช้งานขณะที่คุณกำลังแปลเครื่องหมาย
 

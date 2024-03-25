@@ -88,7 +88,7 @@ public class WWCTranslateRateLimit extends BasicCommand {
 			playerNotFoundMessage(sender, inName);
 			return false;
 		}
-		ActiveTranslator currTranslator = main.getActiveTranslator((inPlayer).getUniqueId().toString());
+		ActiveTranslator currTranslator = main.getActiveTranslator(inPlayer);
 		if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
 			/* If we are changing our own rate limit */
 			if (newLimit > 0) {

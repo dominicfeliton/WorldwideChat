@@ -52,11 +52,11 @@ public class TranslateInGameListener implements Listener {
 					BukkitRunnable out = new BukkitRunnable() {
 						@Override
 						public void run() {
-							refs.sendFancyMsg("wwcEntityTranslateStart", "&d&l", event.getPlayer());
+							refs.sendFancyMsg("wwcEntityTranslateStart", "", "&d&l", event.getPlayer());
 							if (customName != null) {
 								refs.sendFancyMsg("wwcEntityTranslateDone", "&a&o" + refs.translateText(customName, event.getPlayer()), "&2&l", event.getPlayer());
 							} else {
-								refs.sendFancyMsg("wwcEntityTranslateNoName", "&e&o", event.getPlayer());
+								refs.sendFancyMsg("wwcEntityTranslateNoName", "", "&e&o", event.getPlayer());
 							}
 						}
 					};
@@ -80,7 +80,7 @@ public class TranslateInGameListener implements Listener {
 				return;
 			}
 			/* Book Translation */
-			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer().getUniqueId().toString());
+			ActiveTranslator currTranslator = main.getActiveTranslator(event.getPlayer());
 			if (currTranslator.getTranslatingBook()
 					&& checkInventoryHand(event) && event.getItem() != null
 					&& XMaterial.WRITTEN_BOOK.parseItem().getType() == event.getItem().getType()
@@ -96,7 +96,7 @@ public class TranslateInGameListener implements Listener {
 						List<String> translatedPages = new ArrayList<String>();
 
 						/* Send message */
-						refs.sendFancyMsg("wwcBookTranslateStart", "&d&l", event.getPlayer());
+						refs.sendFancyMsg("wwcBookTranslateStart", "", "&d&l", event.getPlayer());
 
 						/* Translate title */
 						outTitle = refs.translateText(meta.getTitle(), event.getPlayer());
@@ -110,7 +110,7 @@ public class TranslateInGameListener implements Listener {
 
 						if (currentBook != null) {
 							/* Set completed message */
-							refs.sendFancyMsg("wwcBookDone", "&a&o", event.getPlayer());
+							refs.sendFancyMsg("wwcBookDone", "", "&a&o", event.getPlayer());
 						}
 
 						/* Create the modified book */
@@ -165,7 +165,7 @@ public class TranslateInGameListener implements Listener {
 						boolean textLimit = false;
 
 						/* Send message */
-						refs.sendFancyMsg("wwcSignTranslateStart", "&d&l", event.getPlayer());
+						refs.sendFancyMsg("wwcSignTranslateStart", "", "&d&l", event.getPlayer());
 
 						/* Translate each line of sign */
 						for (int i = 0; i < changedSignText.length; i++) {
@@ -191,7 +191,7 @@ public class TranslateInGameListener implements Listener {
 						 */
 						if (!textLimit && currentSign.getLocation() != null) {
 							/* Set completed message */
-							refs.sendFancyMsg("wwcSignDone", "&a&o", event.getPlayer());
+							refs.sendFancyMsg("wwcSignDone", "", "&a&o", event.getPlayer());
 						} else {
 							/*
 							 * Format sign for chat, if translation exceeds 15 chars or sign was already
@@ -252,28 +252,28 @@ public class TranslateInGameListener implements Listener {
 						ArrayList<String> outLore = new ArrayList<String>();
 
 						/* Send message */
-						refs.sendFancyMsg("wwcItemTranslateStart", "&d&l", event.getPlayer());
+						refs.sendFancyMsg("wwcItemTranslateStart", "", "&d&l", event.getPlayer());
 
 						/* Translate item title */
 						if (meta.hasDisplayName()) {
 							translatedName = refs.translateText(meta.getDisplayName(), event.getPlayer());
 							/* Set completed message */
-							refs.sendFancyMsg("wwcItemTranslateTitleDone", "&a&o", event.getPlayer());
+							refs.sendFancyMsg("wwcItemTranslateTitleDone","", "&a&o", event.getPlayer());
 						} else {
-							refs.sendFancyMsg("wwcItemTranslateTitleStock", "&e&o", event.getPlayer());
+							refs.sendFancyMsg("wwcItemTranslateTitleStock","", "&e&o", event.getPlayer());
 							// Stock items not supported
 						}
 
 						/* Translate item lore */
 						if (meta.hasLore()) {
-							refs.sendFancyMsg("wwcItemTranslateLoreStart", "&d&l", event.getPlayer());
+							refs.sendFancyMsg("wwcItemTranslateLoreStart","", "&d&l", event.getPlayer());
 							outLore = new ArrayList<String>();
 							for (String eaLine : itemLore) {
 								String translatedLine = refs.translateText(eaLine, event.getPlayer());
 								outLore.add(translatedLine);
 							}
 							/* Set completed message */
-							refs.sendFancyMsg("wwcItemTranslateLoreDone", "&a&o", event.getPlayer());
+							refs.sendFancyMsg("wwcItemTranslateLoreDone", "", "&a&o", event.getPlayer());
 						}
 
 						/* Create "fake" item to be displayed to user */

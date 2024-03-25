@@ -114,7 +114,6 @@ Messages:
   wwctGUINewTranslationTarget: Επιλογή γλώσσας προορισμού
   wwcConfigConnectionSuccess: Επιτυχής σύνδεση στο {0}!
   wwcConfigGUIGoogleTranslateButton: Μετάφραση Google
-  wwcsIsActiveTranslator: 'Είναι ενεργός μεταφραστής: {0}'
   wwcConfigConversationPrefixInput: Το τρέχον πρόθεμα είναι {0}. Πληκτρολογήστε ένα
     νέο ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigGUIPreviousPageButton: Προηγούμενη σελίδα
@@ -230,7 +229,6 @@ Messages:
     πρόσθετων WorldwideChat για περισσότερες πληροφορίες.
   wwctInvalidInputLangCode: 'Μη έγκυρος κωδικός γλώσσας εισαγωγής που παρέχεται! Έγκυροι
     κωδικοί lang: {0}'
-  wwcsTitle: Εγγραφή του {0}
   wwctInvalidOutputLangCode: 'Μη έγκυρος κωδικός γλώσσας εξόδου που παρέχεται! Έγκυροι
     κωδικοί lang: {0}'
   wwctGUISourceTranslationSelected: Έχετε επιλέξει αυτή τη γλώσσα.
@@ -487,25 +485,25 @@ Messages:
     να μην ελέγχει τυχόν σφάλματα μεταφραστή.'
   wwcConfigConversationIgnoreErrorsCleared: Σφάλματα μεταφραστή για να αγνοήσετε φράσεις
     που εκκαθαρίζονται με επιτυχία.
-  
-  wwcsActiveTransPrevRate: 'Χρόνος προηγούμενης βαθμολογίας ενεργού μεταφραστή: {0}'
-  wwcsActiveTransSaved: 'Ενεργός μεταφραστής αποθηκεύτηκε στο δίσκο: {0}'
-  wwcsActiveTransIncoming: 'Ενεργός Μεταφραστής Μεταφράζει Εισερχόμενη συνομιλία:
-    {0}'
-  wwcsActiveTransOutLang: 'Γλώσσα εξόδου ενεργού μεταφραστή: {0}'
-  wwcsActiveTransInLang: 'Γλώσσα εισόδου ενεργού μεταφραστή: {0}'
-  wwcsActiveTransBook: 'Ενεργό βιβλίο μετάφρασης μεταφραστή: {0}'
-  wwcsActiveTransSign: 'Ενεργός Μεταφραστής Μετάφραση Υπογραφή: {0}'
-  wwcsActiveTransUUID: 'UUID ενεργού μεταφραστή: {0}'
-  wwcsActiveTransRateLimit: 'Όριο ρυθμού ενεργού μεταφραστή: {0}'
-  wwcsActiveTransColorWarning: 'Ο ενεργός μεταφραστής έλαβε προειδοποίηση χρώματος:
-    {0}'
-  wwcsActiveTransOutgoing: 'Ενεργός μεταφραστής μετάφραση εξερχόμενης συνομιλίας:
-    {0}'
-  wwcsActiveTransItem: 'Ενεργός Μεταφραστής Μεταφράζει Στοιχείο: {0}'
-  wwcsActiveTransEntity: 'Ενεργός Μεταφραστής Μεταφράζει Οντότητα: {0}'
   wwcSupportedServer: Αρχικοποίηση του WorldwideChat για {0}...
   wwcSupportedVersion: Ενεργοποίηση λειτουργιών για την έκδοση {0}...
   wwcBadPerms: 'Δεν έχετε τα απαιτούμενα δικαιώματα για να εκτελέσετε αυτήν την εντολή:
     {0}'
+  wwcsIsActiveTranslator: 'Είναι ενεργός μεταφραστής: {0}'
+  wwcsActiveTransPrevRate: 'Προηγούμενος χρόνος ορίου τιμών: {0}'
+  wwcsActiveTransSaved: 'Αποθηκεύτηκε στο δίσκο: {0}'
+  wwcsActiveTransIncoming: 'Μετάφραση εισερχόμενης συνομιλίας: {0}'
+  wwcsActiveTransOutLang: 'Γλώσσα εξόδου: {0}'
+  wwcsActiveTransInLang: 'Γλώσσα εισαγωγής: {0}'
+  wwcsActiveTransBook: 'Μετάφραση βιβλίου: {0}'
+  wwcsActiveTransSign: 'Σημάδι μετάφρασης: {0}'
+  wwcsActiveTransUUID: 'ΝΈΑ: {0}'
+  wwcsActiveTransRateLimit: 'Όριο τιμής: {0}'
+  wwcsActiveTransColorWarning: 'Λήψη προειδοποίησης χρώματος: {0}'
+  wwcsActiveTransSignWarning: 'Λήψη προειδοποίησης επεξεργασίας σήματος: {0}'
+  wwcsTitle: Ρεκόρ {0}
+  wwcsActiveTransOutgoing: 'Μετάφραση εξερχόμενης συνομιλίας: {0}'
+  wwcsActiveTransItem: 'Αντικείμενο μετάφρασης: {0}'
+  wwcsActiveTransEntity: 'Μεταφραστική οντότητα: {0}'
+  wwctsWarning: Η τροποποίηση σημείων είναι απενεργοποιημένη κατά τη μετάφραση πινακίδων.
 

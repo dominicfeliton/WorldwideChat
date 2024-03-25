@@ -107,7 +107,6 @@ Messages:
   wwctGUINewTranslationTarget: Maqsadli tilni tanlang
   wwcConfigConnectionSuccess: '{0} ga muvaffaqiyatli ulandi!'
   wwcConfigGUIGoogleTranslateButton: Google Tarjima
-  wwcsIsActiveTranslator: 'Faol tarjimon: {0}'
   wwcConfigConversationPrefixInput: Joriy prefiks {0}. Iltimos, yangisini yozing yoki
     orqaga qaytish uchun 0 yozing.
   wwcConfigGUIPreviousPageButton: Oldingi sahifa
@@ -214,7 +213,6 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: Qo'shimcha ma'lumot olish uchun WorldwideChat
     plagin papkasida errorLog.txt tekshiring.
   wwctInvalidInputLangCode: 'Kirish tili kodi noto''g''ri! Amaldagi uzoq kodlar: {0}'
-  wwcsTitle: '{0} yozuvi %'
   wwctInvalidOutputLangCode: 'Yaroqsiz chiqish tili kodi taqdim! Amaldagi uzoq kodlar:
     {0}'
   wwctGUISourceTranslationSelected: Siz bu tilni tanladingiz.
@@ -461,21 +459,25 @@ Messages:
     xatolarini tekshirmasligiga olib keladi.'
   wwcConfigConversationIgnoreErrorsCleared: Tarjimon xatolar muvaffaqiyatli tozalandi
     iboralar e'tiborsizlik uchun.
-  
-  wwcsActiveTransPrevRate: 'Faol tarjimonning oldingi stavkasini cheklash vaqti: {0}'
-  wwcsActiveTransSaved: 'Diskka saqlangan faol tarjimon: {0}'
-  wwcsActiveTransIncoming: 'Kiruvchi chatni tarjima qiluvchi faol tarjimon: {0}'
-  wwcsActiveTransOutLang: 'Faol tarjimonning chiqish tili: {0}'
-  wwcsActiveTransInLang: 'Faol tarjimonni kiritish tili: {0}'
-  wwcsActiveTransBook: 'Kitobni tarjima qiluvchi faol tarjimon: {0}'
-  wwcsActiveTransSign: 'Faol tarjimon tarjima belgisi: {0}'
-  wwcsActiveTransUUID: 'Faol tarjimon UUID: {0}'
-  wwcsActiveTransRateLimit: 'Faol tarjimon darajasi chegarasi: {0}'
-  wwcsActiveTransColorWarning: 'Faol tarjimon rang haqida ogohlantirish oldi: {0}'
-  wwcsActiveTransOutgoing: 'Chiquvchi chatni tarjima qiluvchi faol tarjimon: {0}'
-  wwcsActiveTransItem: 'Mahsulotni tarjima qiluvchi faol tarjimon: {0}'
-  wwcsActiveTransEntity: 'Faol tarjimon tarjima qiluvchi shaxs: {0}'
   wwcSupportedServer: WorldwideChat-ni {0} uchun ishga tushirish...
   wwcSupportedVersion: '{0} versiyasi uchun funksiyalarni yoqish...'
   wwcBadPerms: 'Ushbu buyruqni bajarish uchun kerakli ruxsatnomangiz yo''q: {0}'
+  wwcsIsActiveTranslator: 'Faol tarjimon: {0}'
+  wwcsActiveTransPrevRate: 'Oldingi stavkani cheklash vaqti: {0}'
+  wwcsActiveTransSaved: 'Diskda saqlangan: {0}'
+  wwcsActiveTransIncoming: 'Kiruvchi suhbatni tarjima qilish: {0}'
+  wwcsActiveTransOutLang: 'Chiqish tili: {0}'
+  wwcsActiveTransInLang: 'Kirish tili: {0}'
+  wwcsActiveTransBook: 'Kitobni tarjima qilish: {0}'
+  wwcsActiveTransSign: 'Tarjima belgisi: {0}'
+  wwcsActiveTransUUID: 'QIYMATI: {0}'
+  wwcsActiveTransRateLimit: 'Qiymat chegarasi: {0}'
+  wwcsActiveTransColorWarning: 'Qabul qilingan rangli ogohlantirish: {0}'
+  wwcsActiveTransSignWarning: 'Qabul qilingan belgini tahrirlash haqida ogohlantirish:
+    {0}'
+  wwcsTitle: '{0} yozuvi'
+  wwcsActiveTransOutgoing: 'Chiquvchi suhbatni tarjima qilish: {0}'
+  wwcsActiveTransItem: 'Tarjima qilingan element: {0}'
+  wwcsActiveTransEntity: 'Tarjima qiluvchi shaxs: {0}'
+  wwctsWarning: Belgilarni tarjima qilayotganda belgini o'zgartirish o'chirib qo'yiladi.
 

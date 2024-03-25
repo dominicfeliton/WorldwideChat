@@ -73,7 +73,7 @@ public class WWCTranslate extends BasicCommand {
 			// User wants to exit their own translation session.
 			if (!isConsoleSender && args.length > 0 && (Bukkit.getServer().getPlayerExact(args[0]) == null 
 					|| (args[0] instanceof String && args[0].equalsIgnoreCase(sender.getName()))) && main.isActiveTranslator(((Player)sender))) {
-				ActiveTranslator currTarget = main.getActiveTranslator(((Player)sender).getUniqueId().toString());
+				ActiveTranslator currTarget = main.getActiveTranslator(((Player)sender));
 				main.removeActiveTranslator(currTarget);
 				refs.sendFancyMsg("wwctTranslationStopped", sender);
 				if ((args.length >= 1 && args[0].equalsIgnoreCase("Stop")) || (args.length >= 2 && args[1].equalsIgnoreCase("Stop"))) {
@@ -87,7 +87,7 @@ public class WWCTranslate extends BasicCommand {
 				}
 
 				Player testPlayer = Bukkit.getServer().getPlayerExact(args[0]);
-				main.removeActiveTranslator(main.getActiveTranslator(testPlayer.getUniqueId().toString()));
+				main.removeActiveTranslator(main.getActiveTranslator(testPlayer));
 				refs.sendFancyMsg("wwctTranslationStopped", testPlayer);
 				refs.sendFancyMsg("wwctTranslationStoppedOtherPlayer", "&6"+args[0], sender);
 				if ((isConsoleSender && args.length == 1) || (args.length >= 2 && args[1] instanceof String && args[1].equalsIgnoreCase("Stop"))) {

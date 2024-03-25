@@ -94,7 +94,6 @@ Messages:
   wwctGUINewTranslationTarget: ዒላማ ቋንቋ ይምረጡ
   wwcConfigConnectionSuccess: በተሳካ ሁኔታ ወደ {0} ተገናኝቷል!
   wwcConfigGUIGoogleTranslateButton: ጉግል ተርጉም
-  wwcsIsActiveTranslator: 'ንቁ ተርጓሚ ነው: {0}'
   wwcConfigConversationPrefixInput: አሁን ያለው ቅድመ ቅጥያ {0} ነው እባክዎ አዲስ ይተይቡ ወይም 0 ይተይቡ
     ወደ ኋላ ይመለሱ።
   wwcConfigGUIPreviousPageButton: ቀዳሚ ገጽ
@@ -185,7 +184,6 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: ተጨማሪ መረጃ ለማግኘት WorldwideChat ተሰኪ አቃፊ
     ውስጥ errorLog.txt ይመልከቱ።
   wwctInvalidInputLangCode: 'ልክ ያልሆነ የግቤት ቋንቋ ኮድ የቀረበ! የሚሰራ ላንግ ኮዶች: {0}'
-  wwcsTitle: ቅዳሴ {0}
   wwctInvalidOutputLangCode: 'ልክ ያልሆነ ውፅዓት ቋንቋ ኮድ የቀረበ! የሚሰራ ላንግ ኮዶች: {0}'
   wwctGUISourceTranslationSelected: ይህን ቋንቋ መርጠዋል።
   wwcConfigGUIChatMessagesOverrideDeleteButton: ሽር ሰርዝ
@@ -394,21 +392,24 @@ Messages:
     ግልጽ ይተይቡ, ወይም ወደኋላ ለመመለስ 0 ይተይቡ። በተጨማሪም «*» መተየብ ተሰኪው ማንኛውንም ተርጓሚ ስህተቶች እንዳያረጋግጥ
     ያደርገዋል።'
   wwcConfigConversationIgnoreErrorsCleared: በተሳካ ሁኔታ ጸድቷል ሐረጎች ችላ ተርጓሚ ስህተቶች።
-  
-  wwcsActiveTransPrevRate: 'ንቁ ተርጓሚ ቀዳሚ ተመን ገደብ ጊዜ: {0}'
-  wwcsActiveTransSaved: 'ንቁ ተርጓሚ ወደ ዲስክ ተቀምጧል: {0}'
-  wwcsActiveTransIncoming: 'ንቁ ተርጓሚ ገቢ ውይይት በመተርጎም ላይ: {0}'
-  wwcsActiveTransOutLang: 'አክቲቭ ተርጓሚ የውጤት ቋንቋ: {0}'
-  wwcsActiveTransInLang: 'ንቁ ተርጓሚ የግቤት ቋንቋ: {0}'
-  wwcsActiveTransBook: 'ንቁ ተርጓሚ መተርጎም መጽሐፍ: {0}'
-  wwcsActiveTransSign: 'ንቁ ተርጓሚ የትርጉም ምልክት: {0}'
-  wwcsActiveTransUUID: 'ንቁ ተርጓሚ UUID: {0}'
-  wwcsActiveTransRateLimit: 'ንቁ ተርጓሚ ተመን ገደብ: {0}'
-  wwcsActiveTransColorWarning: 'ንቁ ተርጓሚ የቀለም ማስጠንቀቂያ ተቀብሏል: {0}'
-  wwcsActiveTransOutgoing: 'ንቁ ተርጓሚ ወጪ ውይይት መተርጎም: {0}'
-  wwcsActiveTransItem: 'ንቁ ተርጓሚ መተርጎም ንጥል: {0}'
-  wwcsActiveTransEntity: 'ንቁ ተርጓሚ የትርጉም አካል: {0}'
   wwcSupportedServer: በዓለም ዙሪያ ውይይት ለ {0} በማስጀመር ላይ...
   wwcSupportedVersion: ለስሪት {0} ባህሪያትን ማንቃት...
   wwcBadPerms: ይህንን ትዕዛዝ ለማከናወን አስፈላጊ ፈቃዶች የሉዎት፡ {0}
+  wwcsIsActiveTranslator: 'ንቁ ተርጓሚ ነው: {0}'
+  wwcsActiveTransPrevRate: 'የቀድሞው ተመን ገደብ ጊዜ: {0}'
+  wwcsActiveTransSaved: 'ወደ ዲስክ የተቀመጠ: {0}'
+  wwcsActiveTransIncoming: 'የሚመጣውን ውይይት መተርጎም: {0}'
+  wwcsActiveTransOutLang: 'የውጤት ቋንቋ: {0}'
+  wwcsActiveTransInLang: 'የግብዓት ቋንቋ: {0}'
+  wwcsActiveTransBook: 'መጽሐፍ መተርጎም: {0}'
+  wwcsActiveTransSign: 'የመተርጎም ምልክት: {0}'
+  wwcsActiveTransUUID: 'አውድ: {0}'
+  wwcsActiveTransRateLimit: 'የዋጋ ገደብ: {0}'
+  wwcsActiveTransColorWarning: 'የተቀበለ የቀለም ማስጠንቀቂያ: {0}'
+  wwcsActiveTransSignWarning: የተቀበለ የምልክት ማስተካከያ ማስጠንቀቂያ
+  wwcsTitle: የ {0} መዝገብ
+  wwcsActiveTransOutgoing: 'የሚወጣውን ውይይት መተርጎም: {0}'
+  wwcsActiveTransItem: 'ንጥል መተርጎም: {0}'
+  wwcsActiveTransEntity: 'መተርጎም አካል: {0}'
+  wwctsWarning: ምልክቶችን በሚተርጉሙበት ጊዜ የምልክት ማስተካከያ ነው።
 

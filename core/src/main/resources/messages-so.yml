@@ -111,7 +111,6 @@ Messages:
   wwctGUINewTranslationTarget: Dooro Luqad Bartilmaameed
   wwcConfigConnectionSuccess: Si guul leh ugu xiran {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Turjumaan firfircoon: {0}'
   wwcConfigConversationPrefixInput: Horgalaha imika waa {0}. Fadlan qor mid cusub,
     ama nooca 0 si aad dib ugu noqoto.
   wwcConfigGUIPreviousPageButton: Bogga hore
@@ -217,7 +216,6 @@ Messages:
     plugin WorldwideChat wixii macluumaad dheeraad ah.
   wwctInvalidInputLangCode: 'Baadil code luqadda aqbasho bixiyo! Koodhadhka lang ee
     saxda ah: {0}'
-  wwcsTitle: Diiwaanka {0}
   wwctInvalidOutputLangCode: 'code luqadda wax soo saarka aan sax ahayn bixiyo! Koodhadhka
     lang ee saxda ah: {0}'
   wwctGUISourceTranslationSelected: Waxaad dooratay luqaddan.
@@ -472,22 +470,24 @@ Messages:
     hubin wixii khaladaad ah turjumaan.'
   wwcConfigConversationIgnoreErrorsCleared: khaladaadka Translator in ay iska indha
     weedho si guul
-  
-  wwcsActiveTransPrevRate: 'Turjumaan firfircoon Heerka Hore Xaddidan Waqtiga: {0}'
-  wwcsActiveTransSaved: 'Turjumaan firfircoon oo lagu keydiyay Disk: {0}'
-  wwcsActiveTransIncoming: 'Turjumaan firfircoon Tarjumida Chat soo socda: {0}'
-  wwcsActiveTransOutLang: 'Luqadda Soo saarista Turjumaanka firfircoon: {0}'
-  wwcsActiveTransInLang: 'Turjumaan firfircoon Luqadda Soo galinta: {0}'
-  wwcsActiveTransBook: 'Turjumaan firfircoon oo buug tarjumaad ah:'
-  wwcsActiveTransSign: Turjumaan firfircoon oo Turjumaan Saxiixa
-  wwcsActiveTransUUID: 'Turjumaan firfircoon UUID: {0}'
-  wwcsActiveTransRateLimit: 'Xadiga Heerka Turjumaanka firfircoon: {0}'
-  wwcsActiveTransColorWarning: 'Turjumaan firfircoon ayaa helay Digniin midab leh:
-    {0}'
-  wwcsActiveTransOutgoing: 'Turjumaan firfircoon Tarjumida Sheekada Xilka: {0}'
-  wwcsActiveTransItem: 'Turjumaan firfircoon Shayga Tarjumida: {0}'
-  wwcsActiveTransEntity: 'Turjumaan firfircoon oo Turjumaad ah: {0}'
   wwcSupportedServer: Bilaabida WorldwideChat ee {0}...
   wwcSupportedVersion: Awood u siinta astaamaha nooca {0}...
   wwcBadPerms: 'Ma hayn gaasiinta loo baahan yahay si aad u fuliso amarkan: {0}'
+  wwcsIsActiveTranslator: 'Waa tarjimaha firfirsan: {0}'
+  wwcsActiveTransPrevRate: 'Waqtiga xadka qiimaha hore: {0}'
+  wwcsActiveTransSaved: 'Lagu badbaaday Disk: {0}'
+  wwcsActiveTransIncoming: 'Tarjuminta Xadhadalka soo gaaraya: {0}'
+  wwcsActiveTransOutLang: 'Luqadda saarka: {0}'
+  wwcsActiveTransInLang: 'Luuqda Galinta: {0}'
+  wwcsActiveTransBook: 'Buugga Tarjuminta: {0}'
+  wwcsActiveTransSign: 'Tarjuminta Asaxiga: {0}'
+  wwcsActiveTransUUID: 'UUID: {0}'
+  wwcsActiveTransRateLimit: 'Xadka Qiimaha: {0}'
+  wwcsActiveTransColorWarning: 'Digniin Midabka la Helay: {0}'
+  wwcsActiveTransSignWarning: 'Saxiixa Helay Digniin Edit: {0}'
+  wwcsTitle: Diiwaanka {0}
+  wwcsActiveTransOutgoing: 'Tarjuminta Chat Baxda: {0}'
+  wwcsActiveTransItem: 'Shayga Tarjuminta: {0}'
+  wwcsActiveTransEntity: 'Heybta Tarjuminta: {0}'
+  wwctsWarning: Beddelka saxiga waa naaftaa iyadoo aad tarjumaadaan calaamaha
 

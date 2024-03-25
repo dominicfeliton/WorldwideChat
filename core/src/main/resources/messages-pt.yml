@@ -109,7 +109,6 @@ Messages:
   wwctGUINewTranslationTarget: Escolha um idioma de destino
   wwcConfigConnectionSuccess: Conectado com sucesso a {0}!
   wwcConfigGUIGoogleTranslateButton: Google Tradutor
-  wwcsIsActiveTranslator: 'É o Tradutor Ativo: {0}'
   wwcConfigConversationPrefixInput: O prefixo atual é {0}. Digite um novo ou digite
     0 para voltar.
   wwcConfigGUIPreviousPageButton: Página Anterior
@@ -215,7 +214,6 @@ Messages:
     pasta de plugins WorldwideChat para obter mais informações.
   wwctInvalidInputLangCode: 'Código de idioma de entrada inválido fornecido! Códigos
     lang válidos: {0}'
-  wwcsTitle: Registro de {0}
   wwctInvalidOutputLangCode: 'Código de idioma de saída inválido fornecido! Códigos
     lang válidos: {0}'
   wwctGUISourceTranslationSelected: Você selecionou esse idioma.
@@ -460,22 +458,26 @@ Messages:
     erro do tradutor.'
   wwcConfigConversationIgnoreErrorsCleared: Erros do tradutor para ignorar frases
     apagadas com sucesso.
-  
-  wwcsActiveTransPrevRate: 'Tempo limite da taxa anterior do Active Translator: {0}'
-  wwcsActiveTransSaved: 'Tradutor ativo salvo em disco: {0}'
-  wwcsActiveTransIncoming: 'Tradutor ativo traduzindo o bate-papo recebido: {0}'
-  wwcsActiveTransOutLang: 'Idioma de saída do Active Translator: {0}'
-  wwcsActiveTransInLang: 'Idioma de entrada do tradutor ativo: {0}'
-  wwcsActiveTransBook: 'Tradutor ativo traduzindo livro: {0}'
-  wwcsActiveTransSign: 'Sinal de tradução do Active Translator: {0}'
-  wwcsActiveTransUUID: 'UUID do tradutor ativo: {0}'
-  wwcsActiveTransRateLimit: 'Limite de taxa de tradutor ativo: {0}'
-  wwcsActiveTransColorWarning: 'Aviso de cor recebido pelo tradutor ativo: {0}'
-  wwcsActiveTransOutgoing: 'Tradutor ativo traduzindo o bate-papo de saída: {0}'
-  wwcsActiveTransItem: 'Tradutor ativo traduzindo o item: {0}'
-  wwcsActiveTransEntity: 'Entidade de tradução do Active Translator: {0}'
   wwcSupportedServer: Inicializando o WorldwideChat para {0}...
   wwcSupportedVersion: Ativando recursos para a versão {0}...
   wwcBadPerms: 'Você não tem as permissões necessárias para executar este comando:
     {0}'
+  wwcsIsActiveTranslator: 'É tradutor ativo: {0}'
+  wwcsActiveTransPrevRate: 'Tempo limite de tarifa anterior: {0}'
+  wwcsActiveTransSaved: 'Salvo em disco: {0}'
+  wwcsActiveTransIncoming: 'Traduzindo o bate-papo recebido: {0}'
+  wwcsActiveTransOutLang: 'Idioma de saída: {0}'
+  wwcsActiveTransInLang: 'Idioma de entrada: {0}'
+  wwcsActiveTransBook: 'Traduzindo o livro: {0}'
+  wwcsActiveTransSign: 'Sinal de tradução: {0}'
+  wwcsActiveTransUUID: 'UUID: {0}'
+  wwcsActiveTransRateLimit: 'Limite de taxa: {0}'
+  wwcsActiveTransColorWarning: 'Aviso de cor recebido: {0}'
+  wwcsActiveTransSignWarning: 'Aviso de edição de sinal recebido: {0}'
+  wwcsTitle: Registro de {0}
+  wwcsActiveTransOutgoing: 'Traduzindo o bate-papo de saída: {0}'
+  wwcsActiveTransItem: 'Traduzindo o item: {0}'
+  wwcsActiveTransEntity: 'Entidade tradutora: {0}'
+  wwctsWarning: A modificação de sinais é desativada enquanto você está traduzindo
+    sinais.
 

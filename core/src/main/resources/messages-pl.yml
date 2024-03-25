@@ -107,7 +107,6 @@ Messages:
   wwctGUINewTranslationTarget: Wybierz język docelowy
   wwcConfigConnectionSuccess: Pomyślnie nawiązano połączenie z {0}!
   wwcConfigGUIGoogleTranslateButton: Tłumacz Google
-  wwcsIsActiveTranslator: 'Jest aktywnym translatorem: {0}'
   wwcConfigConversationPrefixInput: Bieżący przedrostek to {0}. Wpisz nowy lub wpisz
     0, aby wrócić.
   wwcConfigGUIPreviousPageButton: Poprzednia strona
@@ -215,7 +214,6 @@ Messages:
     WorldwideChat, aby uzyskać więcej informacji.
   wwctInvalidInputLangCode: 'Podano nieprawidłowy kod języka wejściowego! Prawidłowe
     kody lang: {0}'
-  wwcsTitle: Zapis z {0}
   wwctInvalidOutputLangCode: 'Podano nieprawidłowy kod języka wyjściowego! Prawidłowe
     kody lang: {0}'
   wwctGUISourceTranslationSelected: Wybrałeś ten język.
@@ -452,22 +450,24 @@ Messages:
     wpisanie „*” spowoduje, że wtyczka nie sprawdza żadnych błędów tłumacza.'
   wwcConfigConversationIgnoreErrorsCleared: Błędy tłumacza, aby zignorować frazy wyczyszczone
     pomyślnie.
-  
-  wwcsActiveTransPrevRate: 'Aktywny tłumacz Poprzednia stawka Limit czasu: {0}'
-  wwcsActiveTransSaved: 'Aktywny tłumacz zapisany na dysku: {0}'
-  wwcsActiveTransIncoming: 'Aktywny tłumacz Tłumacz Przychodzący czat: {0}'
-  wwcsActiveTransOutLang: 'Aktywny język wyjściowy tłumacza: {0}'
-  wwcsActiveTransInLang: 'Aktywny język wprowadzania tłumacza: {0}'
-  wwcsActiveTransBook: 'Active Translator Translating Book: {0}'
-  wwcsActiveTransSign: 'Znak tłumaczenia aktywnego tłumacza: {0}'
-  wwcsActiveTransUUID: 'Aktywny identyfikator UUID tłumacza: {0}'
-  wwcsActiveTransRateLimit: 'Limit szybkości aktywnego tłumacza: {0}'
-  wwcsActiveTransColorWarning: 'Ostrzeżenie dotyczące koloru otrzymanego aktywnego
-    tłumacza: {0}'
-  wwcsActiveTransOutgoing: 'Aktywny tłumacz tłumaczący czat wychodzący: {0}'
-  wwcsActiveTransItem: 'Aktywny Translator Translator Translating Item: {0}'
-  wwcsActiveTransEntity: 'Aktywny podmiot tłumaczący tłumacz: {0}'
   wwcSupportedServer: Inicjowanie WorldwideChat dla {0}...
   wwcSupportedVersion: Włączanie funkcji dla wersji {0}...
   wwcBadPerms: 'Nie masz uprawnień wymaganych do wykonania tego polecenia: {0}'
+  wwcsIsActiveTranslator: 'Czy jest aktywnym tłumaczem: {0}'
+  wwcsActiveTransPrevRate: 'Czas limitu poprzedniego stawki: {0}'
+  wwcsActiveTransSaved: 'Zapisane na dysku: {0}'
+  wwcsActiveTransIncoming: 'Tłumaczenie czatu przychodzącego: {0}'
+  wwcsActiveTransOutLang: 'Język wyjściowy: {0}'
+  wwcsActiveTransInLang: 'Język wprowadzania: {0}'
+  wwcsActiveTransBook: 'Tłumaczenie książki: {0}'
+  wwcsActiveTransSign: 'Znak tłumaczenia: {0}'
+  wwcsActiveTransUUID: 'NOWY: {0}'
+  wwcsActiveTransRateLimit: 'Limit stawki: {0}'
+  wwcsActiveTransColorWarning: 'Otrzymane ostrzeżenie o kolorze: {0}'
+  wwcsActiveTransSignWarning: 'Otrzymany znak Edycja Ostrzeżenie: {0}'
+  wwcsTitle: Rekord {0}
+  wwcsActiveTransOutgoing: 'Tłumaczenie czatu wychodzącego: {0}'
+  wwcsActiveTransItem: 'Przetłumacz: {0}'
+  wwcsActiveTransEntity: 'Jednostka tłumaczeniowa: {0}'
+  wwctsWarning: Modyfikacja znaków jest wyłączona podczas tłumaczenia znaków.
 

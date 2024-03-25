@@ -113,7 +113,6 @@ Messages:
   wwctGUINewTranslationTarget: Pumili ng isang Target na Wika
   wwcConfigConnectionSuccess: Matagumpay na nakakonekta sa {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Ay Aktibong Tagasalin: {0}'
   wwcConfigConversationPrefixInput: Ang kasalukuyang prefix ay {0}. Paki-type ang
     bago, o i-type ang 0 upang bumalik.
   wwcConfigGUIPreviousPageButton: Nakaraang Pahina
@@ -227,7 +226,6 @@ Messages:
     sa folder ng WorldwideChat plugin para sa karagdagang impormasyon.
   wwctInvalidInputLangCode: 'Di-wastong input code ng wika na ibinigay! Valid lang
     mga code: {0}'
-  wwcsTitle: Record ng {0}
   wwctInvalidOutputLangCode: 'Di-wastong code ng wika ng output na ibinigay! Valid
     lang mga code: {0}'
   wwctGUISourceTranslationSelected: Pinili mo ang wikang ito.
@@ -496,25 +494,25 @@ Messages:
     error sa tagasalin.'
   wwcConfigConversationIgnoreErrorsCleared: Mga error sa tagasalin upang huwag pansinin
     ang mga parirala na matagumpay na nabura.
-  
-  wwcsActiveTransPrevRate: 'Aktibong Tagasalin Nakaraang Oras ng Limitasyon sa Rate:
-    {0}'
-  wwcsActiveTransSaved: 'Aktibong Tagasalin Nai-save sa Disk: {0}'
-  wwcsActiveTransIncoming: 'Aktibong Tagasalin sa Pagsasalin ng Papasok na Chat: {0}'
-  wwcsActiveTransOutLang: 'Wika ng Output ng Aktibong Tagasalin: {0}'
-  wwcsActiveTransInLang: 'Wika ng Input ng Aktibong Tagasalin: {0}'
-  wwcsActiveTransBook: 'Aktibong Tagasalin sa Pagsasalin ng Aklat: {0}'
-  wwcsActiveTransSign: 'Pag-sign ng Pagsasalin ng Aktibong Tagasalin: {0}'
-  wwcsActiveTransUUID: 'Aktibong Tagasalin UUID: {0}'
-  wwcsActiveTransRateLimit: 'Limitasyon sa Rate ng Aktibong Tagasalin: {0}'
-  wwcsActiveTransColorWarning: 'Nakatanggap ang Aktibong Tagasalin ng Babala ng Kulay:
-    {0}'
-  wwcsActiveTransOutgoing: 'Aktibong Tagasalin sa Pagsasalin ng Papalabas na Chat:
-    {0}'
-  wwcsActiveTransItem: 'Aktibong Tagasalin sa Pagsasalin ng Item: {0}'
-  wwcsActiveTransEntity: 'Entity ng Pagsasalin ng Aktibong Tagasalin: {0}'
   wwcSupportedServer: Pagsisimula ng WorldwideChat para sa {0}...
   wwcSupportedVersion: Pagpapagana ng mga tampok para sa bersyon {0}...
   wwcBadPerms: 'Wala kang mga kinakailangang pahintulot upang maisagawa ang utos na
     ito: {0}'
+  wwcsIsActiveTranslator: 'Aktibong Tagasalin: {0}'
+  wwcsActiveTransPrevRate: 'Nakaraang Oras ng Limitasyon ng Rate: {0}'
+  wwcsActiveTransSaved: 'Naka-save sa Disk: {0}'
+  wwcsActiveTransIncoming: 'Pagsasalin ng Papasok na Chat: {0}'
+  wwcsActiveTransOutLang: 'Output Wika: {0}'
+  wwcsActiveTransInLang: 'Wika ng Pag-input: {0}'
+  wwcsActiveTransBook: 'Pagsasalin ng Aklat: {0}'
+  wwcsActiveTransSign: 'Pagsasalin ng Sign: {0}'
+  wwcsActiveTransUUID: 'UUDIO: {0}'
+  wwcsActiveTransRateLimit: 'Limitasyon ng Rate: {0}'
+  wwcsActiveTransColorWarning: 'Natanggap na Babala ng Kulay: {0}'
+  wwcsActiveTransSignWarning: 'Natanggap na Babala sa Pag-edit ng Signa: {0}'
+  wwcsTitle: Talaan ng {0}
+  wwcsActiveTransOutgoing: 'Pagsasalin ng Outgoing Chat: {0}'
+  wwcsActiveTransItem: 'Pagsasalin ng Item: {0}'
+  wwcsActiveTransEntity: 'Pagsasalin ng Entidad: {0}'
+  wwctsWarning: Hindi pinagana ang pagbabago ng sign habang nagsasalin ka ng mga palatandaan.
 

@@ -106,7 +106,6 @@ Messages:
   wwctGUINewTranslationTarget: Kies een doeltaal
   wwcConfigConnectionSuccess: Succesvol verbonden met {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Is actieve vertaler: {0}'
   wwcConfigConversationPrefixInput: Het huidige voorvoegsel is {0}. Typ een nieuw
     voorvoegsel of typ 0 om terug te gaan.
   wwcConfigGUIPreviousPageButton: Vorige pagina
@@ -216,7 +215,6 @@ Messages:
     voor meer informatie.
   wwctInvalidInputLangCode: 'Ongeldige invoertaalcode meegeleverd! Geldige lange codes:
     {0}'
-  wwcsTitle: Record van {0}
   wwctInvalidOutputLangCode: 'Ongeldige uitvoertaalcode meegeleverd! Geldige lange
     codes: {0}'
   wwctGUISourceTranslationSelected: Je hebt deze taal geselecteerd.
@@ -459,22 +457,26 @@ Messages:
     vertaalfouten controleert.'
   wwcConfigConversationIgnoreErrorsCleared: Vertaalfouten bij het negeren van zinnen
     die met succes zijn gewist.
-  
-  wwcsActiveTransPrevRate: 'Active Translator: vorige maximumsnelheid: {0}'
-  wwcsActiveTransSaved: 'Active Translator opgeslagen op schijf: {0}'
-  wwcsActiveTransIncoming: 'Actieve vertaler die binnenkomende chat vertaalt: {0}'
-  wwcsActiveTransOutLang: 'Uitvoertaal van Active Translator: {0}'
-  wwcsActiveTransInLang: 'Invoertaal voor actieve vertaler: {0}'
-  wwcsActiveTransBook: 'Active Translator vertaalt het boek: {0}'
-  wwcsActiveTransSign: 'Active Translator vertaalt teken: {0}'
-  wwcsActiveTransUUID: 'UUID voor actieve vertaler: {0}'
-  wwcsActiveTransRateLimit: 'Snelheidslimiet voor actieve vertalers: {0}'
-  wwcsActiveTransColorWarning: 'Active Translator heeft kleurwaarschuwing ontvangen:
-    {0}'
-  wwcsActiveTransOutgoing: 'Actieve vertaler die uitgaande chat vertaalt: {0}'
-  wwcsActiveTransItem: 'Active Translator vertaalt item: {0}'
-  wwcsActiveTransEntity: 'Entiteit voor het vertalen van Active Translator: {0}'
   wwcSupportedServer: WorldwideChat initialiseren voor {0}...
   wwcSupportedVersion: Functies inschakelen voor versie {0}...
   wwcBadPerms: 'Je hebt niet de vereiste rechten om deze opdracht uit te voeren: {0}'
+  wwcsIsActiveTranslator: 'Is een actieve vertaler: {0}'
+  wwcsActiveTransPrevRate: 'Vorige tarieflimiettijd: {0}'
+  wwcsActiveTransSaved: 'Op schijf opgeslagen: {0}'
+  wwcsActiveTransIncoming: 'Inkomende chat vertalen: {0}'
+  wwcsActiveTransOutLang: 'Taal van de uitvoer: {0}'
+  wwcsActiveTransInLang: 'Invoertaal: {0}'
+  wwcsActiveTransBook: 'Boek vertalen: {0}'
+  wwcsActiveTransSign: 'Sign vertalen: {0}'
+  wwcsActiveTransUUID: 'UID: {0}'
+  wwcsActiveTransRateLimit: 'Tarieflimiet: {0}'
+  wwcsActiveTransColorWarning: 'Kleurwaarschuwing ontvangen: {0}'
+  wwcsActiveTransSignWarning: 'Waarschuwing voor het bewerken van het teken ontvangen:
+    {0}'
+  wwcsTitle: Record van {0}
+  wwcsActiveTransOutgoing: 'Uitgaande chat vertalen: {0}'
+  wwcsActiveTransItem: 'Item vertalen: {0}'
+  wwcsActiveTransEntity: 'Entiteit voor het vertalen: {0}'
+  wwctsWarning: Het wijzigen van tekens is uitgeschakeld tijdens het vertalen van
+    tekens.
 

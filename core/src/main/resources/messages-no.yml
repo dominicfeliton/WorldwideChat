@@ -104,7 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: Velg et målspråk
   wwcConfigConnectionSuccess: Tilkoblet til {0}!
   wwcConfigGUIGoogleTranslateButton: Google Oversett
-  wwcsIsActiveTranslator: 'Er aktiv oversetter: {0}'
   wwcConfigConversationPrefixInput: Gjeldende prefiks er {0}. Skriv inn et nytt, eller
     skriv inn 0 for å gå tilbake.
   wwcConfigGUIPreviousPageButton: Forrige side
@@ -207,7 +206,6 @@ Messages:
   wwcTranslatorErrorThresholdReachedCheckLogs: Vennligst sjekk errorLog.txt i WorldwideChat
     plugin-mappen for mer informasjon.
   wwctInvalidInputLangCode: 'Ugyldig inndataspråkkode oppgitt Gyldige langkoder: {0}'
-  wwcsTitle: Opptak av {0}
   wwctInvalidOutputLangCode: 'Ugyldig kode for utdata gitt! Gyldige langkoder: {0}'
   wwctGUISourceTranslationSelected: Du har valgt dette språket.
   wwcConfigGUIChatMessagesOverrideDeleteButton: Slett overstyring
@@ -432,22 +430,25 @@ Messages:
     I tillegg vil det å skrive «*» føre til at pluginet ikke sjekker noen oversetterfeil.'
   wwcConfigConversationIgnoreErrorsCleared: Oversetterfeil for å ignorere setninger
     ryddet vellykket.
-  
-  wwcsActiveTransPrevRate: 'Aktiv oversetter Forrige satsgrense: {0}'
-  wwcsActiveTransSaved: 'Aktiv oversetter lagret på disk: {0}'
-  wwcsActiveTransIncoming: 'Aktiv oversetter som oversetter innkommende chat: {0}'
-  wwcsActiveTransOutLang: 'Aktiv Translator Output Språk: {0}'
-  wwcsActiveTransInLang: 'Aktiv oversetter Input Språk: {0}'
-  wwcsActiveTransBook: 'Aktiv oversetter oversetter bok: {0}'
-  wwcsActiveTransSign: 'Aktiv oversetter oversetter tegn: {0}'
-  wwcsActiveTransUUID: 'Aktiv oversetter UUID: {0}'
-  wwcsActiveTransRateLimit: 'Aktiv Translator Rate Limit: {0}'
-  wwcsActiveTransColorWarning: 'Aktiv oversetter mottatt farge Advarsel: {0}'
-  wwcsActiveTransOutgoing: 'Aktiv oversetter som oversetter utgående chat: {0}'
-  wwcsActiveTransItem: 'Aktiv oversetter oversetter element: {0}'
-  wwcsActiveTransEntity: 'Active Translator Translating Entity: {0}'
   wwcSupportedServer: Initialiserer WorldwideChat for {0}...
   wwcSupportedVersion: Aktiverer funksjoner for versjon {0}...
   wwcBadPerms: 'Du har ikke de nødvendige tillatelsene for å utføre denne kommandoen:
     {0}'
+  wwcsIsActiveTranslator: 'Er aktiv oversetter: {0}'
+  wwcsActiveTransPrevRate: 'Tidligere takstbegrensningstid: {0}'
+  wwcsActiveTransSaved: 'Lagret på disk: {0}'
+  wwcsActiveTransIncoming: 'Oversettelse av innkommende chat: {0}'
+  wwcsActiveTransOutLang: 'Utgangsspråk: {0}'
+  wwcsActiveTransInLang: 'Inngangsspråk: {0}'
+  wwcsActiveTransBook: 'Oversettelse av bok: {0}'
+  wwcsActiveTransSign: 'Oversettelseskilt: {0}'
+  wwcsActiveTransUUID: 'NYTT: {0}'
+  wwcsActiveTransRateLimit: 'Satsgrense: {0}'
+  wwcsActiveTransColorWarning: 'Mottatt fargeadvarsel: {0}'
+  wwcsActiveTransSignWarning: 'Advarsel om redigering av mottatt skilt: {0}'
+  wwcsTitle: Rekord av {0}
+  wwcsActiveTransOutgoing: 'Oversettelse av utgående chat: {0}'
+  wwcsActiveTransItem: 'Oversettelseselement: {0}'
+  wwcsActiveTransEntity: 'Oversettelsesenhet: {0}'
+  wwctsWarning: Signendring er deaktivert mens du oversetter tegn.
 

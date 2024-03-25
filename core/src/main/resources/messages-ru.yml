@@ -107,7 +107,6 @@ Messages:
   wwctGUINewTranslationTarget: Выберите целевой язык
   wwcConfigConnectionSuccess: Успешно подключено к {0}!
   wwcConfigGUIGoogleTranslateButton: Google Перевести
-  wwcsIsActiveTranslator: 'Активный переводчик: {0}'
   wwcConfigConversationPrefixInput: 'Текущий префикс: {0}. Введите новый или введите
     0, чтобы вернуться.'
   wwcConfigGUIPreviousPageButton: Предыдущая страница
@@ -217,7 +216,6 @@ Messages:
     в папке плагинов WorldwideChat для получения дополнительной информации.
   wwctInvalidInputLangCode: 'Указан неверный код языка ввода! Допустимые коды lang:
     {0}'
-  wwcsTitle: Запись из {0}
   wwctInvalidOutputLangCode: 'Указан неверный код выходного языка! Допустимые коды
     lang: {0}'
   wwctGUISourceTranslationSelected: Вы выбрали этот язык.
@@ -453,23 +451,24 @@ Messages:
     ошибки переводчика.'
   wwcConfigConversationIgnoreErrorsCleared: Ошибки переводчика при игнорировании фраз
     успешно устранены.
-  
-  wwcsActiveTransPrevRate: 'Прежнее время ограничения скорости при активном переводчике:
-    {0}'
-  wwcsActiveTransSaved: 'Активный транслятор, сохраненный на диске: {0}'
-  wwcsActiveTransIncoming: 'Активный переводчик, переводящий входящий чат: {0}'
-  wwcsActiveTransOutLang: 'Выходной язык активного переводчика: {0}'
-  wwcsActiveTransInLang: 'Активный язык ввода переводчика: {0}'
-  wwcsActiveTransBook: 'Активный переводчик, переводящий книгу: {0}'
-  wwcsActiveTransSign: 'Активный переводчик, переводящий знак: {0}'
-  wwcsActiveTransUUID: 'UUID активного переводчика: {0}'
-  wwcsActiveTransRateLimit: 'Ограничение скорости работы активных переводчиков: {0}'
-  wwcsActiveTransColorWarning: 'Активный переводчик получил цветовое предупреждение:
-    {0}'
-  wwcsActiveTransOutgoing: 'Активный переводчик, переводящий исходящий чат: {0}'
-  wwcsActiveTransItem: 'Активный переводчик, переводящий элемент: {0}'
-  wwcsActiveTransEntity: 'Активный переводчик, переводящий объект: {0}'
   wwcSupportedServer: Инициализация WorldwideChat для {0}...
   wwcSupportedVersion: Включение функций для версии {0}...
   wwcBadPerms: 'У вас нет необходимых разрешений для выполнения этой команды: {0}'
+  wwcsIsActiveTranslator: 'Активный ли переводчик: {0}'
+  wwcsActiveTransPrevRate: 'Прежнее время ограничения тарифа: {0}'
+  wwcsActiveTransSaved: 'Сохранено на диске: {0}'
+  wwcsActiveTransIncoming: 'Перевод входящего чата: {0}'
+  wwcsActiveTransOutLang: 'Язык вывода: {0}'
+  wwcsActiveTransInLang: 'Язык ввода: {0}'
+  wwcsActiveTransBook: 'Перевод книги: {0}'
+  wwcsActiveTransSign: 'Знак перевода: {0}'
+  wwcsActiveTransUUID: 'ТЕКУЧЕСТЬ: {0}'
+  wwcsActiveTransRateLimit: 'Ограничение скорости: {0}'
+  wwcsActiveTransColorWarning: 'Получено цветовое предупреждение: {0}'
+  wwcsActiveTransSignWarning: 'Получено предупреждение об изменении знака: {0}'
+  wwcsTitle: Запись {0}
+  wwcsActiveTransOutgoing: 'Перевод исходящего чата: {0}'
+  wwcsActiveTransItem: 'Перевод товара: {0}'
+  wwcsActiveTransEntity: 'Объект перевода: {0}'
+  wwctsWarning: Модификация знаков отключена во время перевода знаков.
 

@@ -105,7 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: Pasirinkti tikslinę kalbą
   wwcConfigConnectionSuccess: Sėkmingai prijungtas su {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Ar aktyvus vertėjas: {0}'
   wwcConfigConversationPrefixInput: Dabartinis priešdėlis yra {0}. Prašome įvesti
     naują arba įveskite 0, kad grįžtumėte atgal.
   wwcConfigGUIPreviousPageButton: Ankstesnis puslapis
@@ -212,7 +211,6 @@ Messages:
     įskiepiai aplanke daugiau informacijos.
   wwctInvalidInputLangCode: 'Pateiktas neteisingas įvesties kalbos kodas! Galiojantys
     lang kodai: {0}'
-  wwcsTitle: Įrašas {0}
   wwctInvalidOutputLangCode: 'Pateiktas neteisingas išvesties kalbos kodas! Galiojantys
     lang kodai: {0}'
   wwctGUISourceTranslationSelected: Jūs pasirinkote šią kalbą.
@@ -451,21 +449,24 @@ Messages:
     jokių vertėjo klaidų.'
   wwcConfigConversationIgnoreErrorsCleared: Vertėjas klaidų ignoruoti frazes išvalytas
     sėkmingai.
-  
-  wwcsActiveTransPrevRate: 'Aktyvus vertėjas Ankstesnis normos limito laikas: {0}'
-  wwcsActiveTransSaved: 'Aktyvus vertėjas, įrašytas į diską: {0}'
-  wwcsActiveTransIncoming: 'Aktyvus Vertėjas Vertimas Gaunamus Pokalbius: {0}'
-  wwcsActiveTransOutLang: 'Aktyvaus vertėjo išvesties kalba: {0}'
-  wwcsActiveTransInLang: 'Aktyvaus vertėjo įvesties kalba: {0}'
-  wwcsActiveTransBook: 'Aktyvaus vertėjo vertimo knyga: {0}'
-  wwcsActiveTransSign: 'Aktyvus vertėjo vertimo ženklas: {0}'
-  wwcsActiveTransUUID: 'Aktyvus vertėjas UUID: {0}'
-  wwcsActiveTransRateLimit: 'Aktyvaus vertėjo normos riba: {0}'
-  wwcsActiveTransColorWarning: 'Aktyvus vertėjas gavo spalvotą įspėjimą: {0}'
-  wwcsActiveTransOutgoing: 'Aktyvus vertėjas, verčiantis išeinančius pokalbius: {0}'
-  wwcsActiveTransItem: 'Aktyvus vertėjas Vertimo punktas: {0}'
-  wwcsActiveTransEntity: 'Aktyvus vertėjas Vertimo subjektas: {0}'
   wwcSupportedServer: Inicijuoti WorldwideChat už {0}...
   wwcSupportedVersion: Įgalinti funkcijas versijai {0}...
   wwcBadPerms: 'Jūs neturite reikiamų teisių šiai komandai vykdyti: {0}'
+  wwcsIsActiveTranslator: 'Ar aktyvus vertėjas: {0}'
+  wwcsActiveTransPrevRate: 'Ankstesnis tarifo limito laikas: {0}'
+  wwcsActiveTransSaved: 'Išsaugota diske: {0}'
+  wwcsActiveTransIncoming: 'Gaunamo pokalbio vertimas: {0}'
+  wwcsActiveTransOutLang: 'Išvesties kalba: {0}'
+  wwcsActiveTransInLang: 'Įvesties kalba: {0}'
+  wwcsActiveTransBook: 'Knygos vertimas: {0}'
+  wwcsActiveTransSign: 'Vertimo ženklas: {0}'
+  wwcsActiveTransUUID: 'NUMERIS: {0}'
+  wwcsActiveTransRateLimit: 'Tarifo limitas: {0}'
+  wwcsActiveTransColorWarning: 'Gautas įspėjimas apie spalvą: {0}'
+  wwcsActiveTransSignWarning: 'Gauto ženklo redagavimo įspėjimas: {0}'
+  wwcsTitle: Įrašas {0}
+  wwcsActiveTransOutgoing: 'Išeinančio pokalbio vertimas: {0}'
+  wwcsActiveTransItem: 'Verčiama prekė: {0}'
+  wwcsActiveTransEntity: 'Verčiantis subjektas: {0}'
+  wwctsWarning: Ženklų modifikavimas yra išjungtas, kol verčiate ženklus.
 

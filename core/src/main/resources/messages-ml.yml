@@ -106,7 +106,6 @@ Messages:
   wwctGUINewTranslationTarget: ഒരു ടാർഗെറ്റ് ഭാഷ തിരഞ്ഞെടുക്കുക
   wwcConfigConnectionSuccess: '{0} ലേക്ക് വിജയകരമായി കണക്റ്റുചെയ്തു!'
   wwcConfigGUIGoogleTranslateButton: Google വിവർത്തനം
-  wwcsIsActiveTranslator: 'സജീവ പരിഭാഷകൻ: {0}'
   wwcConfigConversationPrefixInput: നിലവിലെ പ്രിഫിക്സ് {0} ആണ്, ദയവായി പുതിയതൊന്ന്
     ടൈപ്പുചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
   wwcConfigGUIPreviousPageButton: മുൻപത്തെ പേജ്
@@ -214,7 +213,6 @@ Messages:
     errorLog.txt പരിശോധിക്കുക.
   wwctInvalidInputLangCode: 'അസാധുവായ ഇൻപുട്ട് ഭാഷാ കോഡ് നൽകി! സാധുവായ നീണ്ട കോഡുകൾ:
     {0}'
-  wwcsTitle: '% ഇ റെക്കോർഡ്'
   wwctInvalidOutputLangCode: 'അസാധുവായ output ട്ട്പുട്ട് ഭാഷാ കോഡ് നൽകി! സാധുവായ നീണ്ട
     കോഡുകൾ: {0}'
   wwctGUISourceTranslationSelected: നിങ്ങൾ ഈ ഭാഷ തിരഞ്ഞെടുത്തു.
@@ -460,23 +458,25 @@ Messages:
     ഇടയാക്കും.'
   wwcConfigConversationIgnoreErrorsCleared: വിജയകരമായി മായ്ച്ചു ശൈലികൾ അവഗണിക്കാൻ
     വിവർത്തകൻ പിശകുകൾ.
-  
-  wwcsActiveTransPrevRate: 'സജീവ വിവർത്തകൻ മുമ്പത്തെ നിരക്ക് പരിധി സമയം: {0}'
-  wwcsActiveTransSaved: 'സജീവ പരിഭാഷകന് ഡിസ്കിലേക്ക് സംരക്ഷിച്ചു: {0}'
-  wwcsActiveTransIncoming: 'സജീവ പരിഭാഷകൻ ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം ചെയ്യുന്നു: {0}'
-  wwcsActiveTransOutLang: 'സജീവ പരിഭാഷകന് ഔട്ട്പുട്ട് ഭാഷ: {0}'
-  wwcsActiveTransInLang: 'സജീവ പരിഭാഷകന് ഇൻപുട്ട് ഭാഷ: {0}'
-  wwcsActiveTransBook: 'സജീവ പരിഭാഷകൻ വിവർത്തനം ചെയ്യുന്ന പുസ്തകം: {0}'
-  wwcsActiveTransSign: 'സജീവ പരിഭാഷകൻ വിവർത്തനം ചെയ്യുന്ന അടയാളം: {0}'
-  wwcsActiveTransUUID: 'സജീവ പരിഭാഷകൻ UUID: {0}'
-  wwcsActiveTransRateLimit: 'സജീവ വിവർത്തക നിരക്ക് പരിധി: {0}'
-  wwcsActiveTransColorWarning: 'സജീവ പരിഭാഷകന് വർണ്ണ മുന്നറിയിപ്പ് ലഭിച്ചു: {0}'
-  wwcsActiveTransOutgoing: 'സജീവ വിവർത്തകൻ ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം ചെയ്യുന്നു:
-    {0}'
-  wwcsActiveTransItem: 'സജീവ വിവർത്തകൻ വിവർത്തനം ചെയ്യുന്ന ഇനം: {0}'
-  wwcsActiveTransEntity: 'സജീവ പരിഭാഷകൻ വിവർത്തനം ചെയ്യുന്ന എന്റിറ്റി: {0}'
   wwcSupportedServer: '{0} എന്നതിനായി വേൾഡ്വൈഡ് ചാറ്റ് ആരംഭിക്കുക...'
   wwcSupportedVersion: പതിപ്പ് {0} സവിശേഷതകൾ പ്രാപ്തമാക്കുന്നു...
   wwcBadPerms: 'ഈ കമാൻഡ് എക്സിക്യൂട്ട് ചെയ്യുന്നതിന് ആവശ്യമായ അനുമതികൾ നിങ്ങൾക്ക്
     ഇല്ല: {0}'
+  wwcsIsActiveTranslator: 'സജീവ പരിഭാഷകനാണോ: {0}'
+  wwcsActiveTransPrevRate: 'മുമ്പത്തെ നിരക്ക് പരിധി സമയം: {0}'
+  wwcsActiveTransSaved: 'ഡിസ്കിൽ സംരക്ഷിച്ചു: {0}'
+  wwcsActiveTransIncoming: 'ഇൻകമിംഗ് ചാറ്റ് വിവർത്തനം ചെയ്യുന്നു: {0}'
+  wwcsActiveTransOutLang: 'ഔട്ട്പുട്ട് ഭാഷ: {0}'
+  wwcsActiveTransInLang: 'ഇൻപുട്ട് ഭാഷ: {0}'
+  wwcsActiveTransBook: 'വിവർത്തനം ചെയ്യുന്ന പുസ്തകം: {0}'
+  wwcsActiveTransSign: 'വിവർത്തന ചിഹ്നം: {0}'
+  wwcsActiveTransUUID: 'പുതുമ: {0}'
+  wwcsActiveTransRateLimit: 'നിരക്ക് പരിധി: {0}'
+  wwcsActiveTransColorWarning: 'ലഭിച്ചു കളർ മുന്നറിയിപ്പ്: {0}'
+  wwcsActiveTransSignWarning: 'സ്വീകരിച്ച സൈൻ എഡിറ്റ് മുന്നറിയിപ്പ്: {0}'
+  wwcsTitle: '{0} ന്റെ റെക്കോർഡ്'
+  wwcsActiveTransOutgoing: 'ഔട്ട്ഗോയിംഗ് ചാറ്റ് വിവർത്തനം ചെയ്യുന്നു: {0}'
+  wwcsActiveTransItem: 'വിവർത്തനം ചെയ്യുന്ന ഇനം: {0}'
+  wwcsActiveTransEntity: 'വിവർത്തനം ചെയ്യുന്ന എന്റിറ്റി: {0}'
+  wwctsWarning: നിങ്ങൾ അടയാളങ്ങൾ വിവർത്തനം ചെയ്യുമ്പോൾ സൈൻ പരിഷ്ക്കരണം പ്രവർത്തനരഹിതമാണ്.
 

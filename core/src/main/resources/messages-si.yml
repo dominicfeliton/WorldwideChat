@@ -107,7 +107,6 @@ Messages:
   wwctGUINewTranslationTarget: ඉලක්කගත භාෂාවක් තෝරන්න
   wwcConfigConnectionSuccess: '{0} වෙත සාර්ථකව සම්බන්ධ විය!'
   wwcConfigGUIGoogleTranslateButton: ගූගල් පරිවර්තනය
-  wwcsIsActiveTranslator: 'ක්රියාකාරී පරිවර්තක වේ: {0}'
   wwcConfigConversationPrefixInput: වත්මන් උපසර්ගය {0} වේ. කරුණාකර අලුත් එකක් ටයිප්
     කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigGUIPreviousPageButton: පෙර පිටුව
@@ -214,7 +213,6 @@ Messages:
     ප්ලගින ෆෝල්ඩරයේ errorLog.txt පරීක්ෂා කරන්න.
   wwctInvalidInputLangCode: 'වලංගු නොවන ආදාන භාෂා කේතය ලබා දී ඇත! වලංගු දිගු කේත:
     {0}'
-  wwcsTitle: '{0} වාර්තාව'
   wwctInvalidOutputLangCode: 'වලංගු නොවන ප්රතිදාන භාෂා කේතය ලබා දී ඇත! වලංගු දිගු
     කේත: {0}'
   wwctGUISourceTranslationSelected: ඔබ මෙම භාෂාව තෝරාගෙන ඇත.
@@ -446,21 +444,24 @@ Messages:
     හේතු වේ.'
   wwcConfigConversationIgnoreErrorsCleared: සාර්ථකව නිෂ්කාශනය කරන ලද වාක්ය නොසලකා
     හැරීම පරිවර්තක දෝෂ.
-  
-  wwcsActiveTransPrevRate: 'සක්රීය පරිවර්තක පෙර අනුපාත සීමාව වේලාව: {0}'
-  wwcsActiveTransSaved: 'සක්‍රීය පරිවර්තක තැටියට සුරකින ලදි: {0}'
-  wwcsActiveTransIncoming: 'එන කතාබස් පරිවර්තනය සක්රීය පරිවර්තක: {0}'
-  wwcsActiveTransOutLang: 'සක්‍රීය පරිවර්තක ප්රතිදාන භාෂාව: {0}'
-  wwcsActiveTransInLang: 'සක්‍රීය පරිවර්තක ආදාන භාෂාව: {0}'
-  wwcsActiveTransBook: 'ක්රියාකාරී පරිවර්තක පරිවර්තන පොත: {0}'
-  wwcsActiveTransSign: 'සක්‍රීය පරිවර්තක පරිවර්තන ලකුණ: {0}'
-  wwcsActiveTransUUID: 'සක්රීය පරිවර්තක UUID: {0}'
-  wwcsActiveTransRateLimit: 'සක්රීය පරිවර්තක අනුපාත සීමාව: {0}'
-  wwcsActiveTransColorWarning: 'සක්රීය පරිවර්තකයාට වර්ණ අනතුරු ඇඟවීම ලැබුණි: {0}'
-  wwcsActiveTransOutgoing: 'ක්රියාකාරී පරිවර්තක පරිවර්තන පිටතට යන කතාබස්: {0}'
-  wwcsActiveTransItem: 'සක්‍රීය පරිවර්තක පරිවර්තන අයිතමය: {0}'
-  wwcsActiveTransEntity: 'සක්රීය පරිවර්තක පරිවර්තන ආයතනය: {0}'
   wwcSupportedServer: '{0} සඳහා ලෝක විඩ්චැට් ආරම්භ කිරීම...'
   wwcSupportedVersion: අනුවාදය සඳහා විශේෂාංග සක්රීය කිරීම {0}...
   wwcBadPerms: 'මෙම විධානය ක්රියාත්මක කිරීමට ඔබට අවශ්ය අවසරයන් නොමැත: {0}'
+  wwcsIsActiveTranslator: 'ක්රියාකාරී පරිවර්තකයාද: {0}'
+  wwcsActiveTransPrevRate: 'පෙර අනුපාත සීමා කාලය: {0}'
+  wwcsActiveTransSaved: 'තැටියට සුරකින: {0}'
+  wwcsActiveTransIncoming: 'එන චැට් පරිවර්තනය කිරීම: {0}'
+  wwcsActiveTransOutLang: 'ප්රතිදාන භාෂාව: {0}'
+  wwcsActiveTransInLang: 'ආදාන භාෂාව: {0}'
+  wwcsActiveTransBook: 'පරිවර්තන පොත: {0}'
+  wwcsActiveTransSign: 'පරිවර්තන ලකුණ: {0}'
+  wwcsActiveTransUUID: 'අලුත්වැඩියා: {0}'
+  wwcsActiveTransRateLimit: 'අනුපාත සීමාව: {0}'
+  wwcsActiveTransColorWarning: 'ලැබුණු වර්ණ අනතුරු ඇඟවීම: {0}'
+  wwcsActiveTransSignWarning: 'ලැබුණු ලකුණ සංස්කරණ අනතුරු ඇඟවීම: {0}'
+  wwcsTitle: '{0} වාර්තාව'
+  wwcsActiveTransOutgoing: 'පිටතට යන චැට් පරිවර්තනය කිරීම: {0}'
+  wwcsActiveTransItem: 'පරිවර්තන අයිතමය: {0}'
+  wwcsActiveTransEntity: 'පරිවර්තන ආයතනය: {0}'
+  wwctsWarning: ඔබ සංඥා පරිවර්තනය කරන අතරතුර ලකුණ වෙනස් කිරීම අක්රීය වේ.
 

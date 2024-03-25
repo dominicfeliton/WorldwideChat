@@ -110,7 +110,6 @@ Messages:
   wwctGUINewTranslationTarget: Scegli una lingua di destinazione
   wwcConfigConnectionSuccess: Connesso a {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcsIsActiveTranslator: 'Traduttore attivo: {0}'
   wwcConfigConversationPrefixInput: Il prefisso corrente è {0}. Digitare uno nuovo
     oppure digitare 0 per tornare indietro.
   wwcConfigGUIPreviousPageButton: Pagina precedente
@@ -222,7 +221,6 @@ Messages:
     dei plugin WorldwideChat per ulteriori informazioni.
   wwctInvalidInputLangCode: 'Codice lingua di input non valido fornito! Codici lang
     validi: {0}'
-  wwcsTitle: Record di {0}
   wwctInvalidOutputLangCode: 'Codice lingua di output non valido fornito! Codici lang
     validi: {0}'
   wwctGUISourceTranslationSelected: Hai selezionato questa lingua.
@@ -472,23 +470,25 @@ Messages:
     alcun errore del traduttore.'
   wwcConfigConversationIgnoreErrorsCleared: Gli errori del traduttore per ignorare
     le frasi sono stati cancellati con successo.
-  
-  wwcsActiveTransPrevRate: 'Tempo limite di tariffa precedente per Active Translator:
-    {0}'
-  wwcsActiveTransSaved: 'Traduttore attivo salvato su disco: {0}'
-  wwcsActiveTransIncoming: 'Traduttore attivo che traduce la chat in arrivo: {0}'
-  wwcsActiveTransOutLang: 'Lingua di output del traduttore attivo: {0}'
-  wwcsActiveTransInLang: 'Lingua di input attiva del traduttore: {0}'
-  wwcsActiveTransBook: 'Traduttore attivo che traduce il libro: {0}'
-  wwcsActiveTransSign: 'Traduttore attivo che traduce il segno: {0}'
-  wwcsActiveTransUUID: 'UUID del traduttore attivo: {0}'
-  wwcsActiveTransRateLimit: 'Limite di velocità per traduttori attivi: {0}'
-  wwcsActiveTransColorWarning: 'Avviso di colore ricevuto dal traduttore attivo: {0}'
-  wwcsActiveTransOutgoing: 'Traduttore attivo che traduce la chat in uscita: {0}'
-  wwcsActiveTransItem: 'Traduttore attivo che traduce l''articolo: {0}'
-  wwcsActiveTransEntity: 'Entità traduttrice attiva: {0}'
   wwcSupportedServer: Inizializzazione di WorldwideChat per {0}...
   wwcSupportedVersion: Abilitazione delle funzionalità per la versione {0}...
   wwcBadPerms: 'Non disponi delle autorizzazioni necessarie per eseguire questo comando:
     {0}'
+  wwcsIsActiveTranslator: 'Traduttore attivo: {0}'
+  wwcsActiveTransPrevRate: 'Tempo limite di tariffa precedente: {0}'
+  wwcsActiveTransSaved: 'Salvato su disco: {0}'
+  wwcsActiveTransIncoming: 'Traduzione della chat in arrivo: {0}'
+  wwcsActiveTransOutLang: 'Lingua di output: {0}'
+  wwcsActiveTransInLang: 'Lingua di input: {0}'
+  wwcsActiveTransBook: 'Libro di traduzione: {0}'
+  wwcsActiveTransSign: 'Segno di traduzione: {0}'
+  wwcsActiveTransUUID: 'UUID: {0}'
+  wwcsActiveTransRateLimit: 'Limite di velocità: {0}'
+  wwcsActiveTransColorWarning: 'Avviso sul colore ricevuto: {0}'
+  wwcsActiveTransSignWarning: 'Avviso di modifica della firma ricevuto: {0}'
+  wwcsTitle: Record di {0}
+  wwcsActiveTransOutgoing: 'Traduzione della chat in uscita: {0}'
+  wwcsActiveTransItem: 'Elemento da tradurre: {0}'
+  wwcsActiveTransEntity: 'Entità di traduzione: {0}'
+  wwctsWarning: La modifica dei segni è disattivata durante la traduzione dei segni.
 

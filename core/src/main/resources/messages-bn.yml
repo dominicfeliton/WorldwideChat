@@ -107,7 +107,6 @@ Messages:
   wwctGUINewTranslationTarget: একটি লক্ষ্যবস্তু ভাষা বেছে নিন
   wwcConfigConnectionSuccess: '{0} এর সাথে সফলভাবে সংযুক্ত হয়েছে!'
   wwcConfigGUIGoogleTranslateButton: গুগল অনুবাদ
-  wwcsIsActiveTranslator: 'সক্রিয় অনুবাদক: {0}'
   wwcConfigConversationPrefixInput: বর্তমান উপসর্গ {0}। অনুগ্রহ করে একটি নতুন টাইপ
     করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
   wwcConfigGUIPreviousPageButton: পূর্ববর্তী পৃষ্ঠা
@@ -209,7 +208,6 @@ Messages:
     প্লাগইন ফোল্ডারে errorLog.txt চেক করুন।
   wwctInvalidInputLangCode: 'অবৈধ ইনপুট ভাষা কোড প্রদান করা হয়েছে! বৈধ ল্যাং কোড:
     {0}'
-  wwcsTitle: '{0} এর রেকর্ড'
   wwctInvalidOutputLangCode: 'অবৈধ আউটপুট ভাষা কোড প্রদান করা হয়েছে! বৈধ ল্যাং কোড:
     {0}'
   wwctGUISourceTranslationSelected: আপনি এই ভাষা নির্বাচন করেছেন।
@@ -445,21 +443,24 @@ Messages:
     না।'
   wwcConfigConversationIgnoreErrorsCleared: অনুবাদক ত্রুটিগুলি উপেক্ষা করতে বাক্যাংশগুলি
     সফলভাবে সাফ করা হয়েছে
-  
-  wwcsActiveTransPrevRate: 'সক্রিয় অনুবাদক পূর্ববর্তী হারের সীমা: {0}'
-  wwcsActiveTransSaved: 'সক্রিয় অনুবাদক ডিস্কে সংরক্ষিত: {0}'
-  wwcsActiveTransIncoming: 'সক্রিয় অনুবাদক ইনকামিং চ্যাট অনুবাদ করা হচ্ছে: {0}'
-  wwcsActiveTransOutLang: 'সক্রিয় অনুবাদক আউটপুট ভাষা: {0}'
-  wwcsActiveTransInLang: 'সক্রিয় অনুবাদক ইনপুট ভাষা: {0}'
-  wwcsActiveTransBook: 'সক্রিয় অনুবাদক অনুবাদক বই: {0}'
-  wwcsActiveTransSign: 'সক্রিয় অনুবাদক অনুবাদক চিহ্ন: {0}'
-  wwcsActiveTransUUID: 'সক্রিয় অনুবাদক UUID: {0}'
-  wwcsActiveTransRateLimit: 'সক্রিয় অনুবাদকের হারের সীমা: {0}'
-  wwcsActiveTransColorWarning: 'সক্রিয় অনুবাদক প্রাপ্ত রং সতর্কবার্তা: {0}'
-  wwcsActiveTransOutgoing: 'সক্রিয় অনুবাদক, বহির্গামী চ্যাট অনুবাদ করা হচ্ছে: {0}'
-  wwcsActiveTransItem: 'সক্রিয় অনুবাদক অনুবাদক বস্তু: {0}'
-  wwcsActiveTransEntity: 'সক্রিয় অনুবাদক অনুবাদক সত্তা: {0}'
   wwcSupportedServer: '{0} এর জন্য বিশ্বব্যাপী চ্যাট আরম্ভ করা হচ্ছে...'
   wwcSupportedVersion: '{0} সংস্করণের জন্য বৈশিষ্ট্য সক্রিয় করা হচ্ছে...'
   wwcBadPerms: 'এই কমান্ডটি কার্যকর করার জন্য আপনার প্রয়োজনীয় অনুমতি নেই: {0}'
+  wwcsIsActiveTranslator: 'সক্রিয় অনুবাদক: {0}'
+  wwcsActiveTransPrevRate: 'পূর্ববর্তী হার সীমা সময়: {0}'
+  wwcsActiveTransSaved: 'ডিস্কে সংরক্ষিত: {0}'
+  wwcsActiveTransIncoming: 'ইনকামিং চ্যাট অনুবাদ: {0}'
+  wwcsActiveTransOutLang: 'আউটপুট ভাষা: {0}'
+  wwcsActiveTransInLang: 'ইনপুট ভাষা: {0}'
+  wwcsActiveTransBook: 'বইয়ের অনুবাদ: {0}'
+  wwcsActiveTransSign: 'অনুবাদ সাইন: {0}'
+  wwcsActiveTransUUID: 'ইউআইডি: {0}'
+  wwcsActiveTransRateLimit: 'রেট সীমা: {0}'
+  wwcsActiveTransColorWarning: 'প্রাপ্ত রঙ সতর্কতা: {0}'
+  wwcsActiveTransSignWarning: 'প্রাপ্ত সাইন সম্পাদনা সতর্কতা: {0}'
+  wwcsTitle: '{0} এর রেকর্ড'
+  wwcsActiveTransOutgoing: 'বহির্গামী চ্যাট অনুবাদ: {0}'
+  wwcsActiveTransItem: 'অনুবাদ আইটেম: {0}'
+  wwcsActiveTransEntity: 'অনুবাদ সত্তা: {0}'
+  wwctsWarning: আপনি চিহ্নগুলি অনুবাদ করার সময় সাইন পরিবর্তন নিষ্ক্রিয় করা হয়।
 
