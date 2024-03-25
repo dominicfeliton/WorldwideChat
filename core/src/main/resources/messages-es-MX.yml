@@ -496,4 +496,18 @@ Messages:
   wwcsActiveTransEntity: 'Entidad de Traducción: {0}'
   wwctsWarning: La modificación de signos está deshabilitada mientras está traduciendo
     letreros.
+  wwcConfigConversationAzureTranslateToggleSuccess: Se ha alterado correctamente Azure
+    Translate. Recarga para que los cambios surtan efecto.
+  wwcConfigGUIAzureTranslateButton: Traductor de Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Cambiar la clave de API de Azure Translate
+  wwcConfigGUIAzureTranslateRegionButton: Cambiar la región de Azure Translate
+  wwcConfigConversationAzureTranslateRegionSuccess: La región de Azure se configuró
+    correctamente.
+  wwcConfigConversationAzureTranslateApiKeyInput: La clave API actual es {0}. Introduzca
+    una clave de API para Azure o escriba 0 para volver atrás.
+  wwcConfigConversationAzureTranslateApiKeySuccess: La clave de la API de Azure se
+    configuró correctamente.
+  wwcConfigConversationAzureTranslateRegionInput: La región actual es {0}. Introduzca
+    una región para Azure o escriba 0 para volver atrás.
+  wwcConfigGUIToggleAzureTranslateButton: Alternar Azure Translate
 

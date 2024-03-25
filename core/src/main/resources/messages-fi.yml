@@ -460,4 +460,17 @@ Messages:
   wwcsActiveTransItem: 'Kääntäjäkohta: {0}'
   wwcsActiveTransEntity: 'Kääntämisentiteetti: {0}'
   wwctsWarning: Merkkien muokkaaminen on poistettu käytöstä, kun käännät merkkejä.
+  wwcConfigConversationAzureTranslateToggleSuccess: Azure Translate -sovelluksen vaihto
+    onnistui. Lataa uudelleen, jotta muutokset tulevat voimaan.
+  wwcConfigGUIAzureTranslateButton: Azure Käännä
+  wwcConfigGUIAzureTranslateApiKeyButton: Muuta Azure Translate API -avainta
+  wwcConfigGUIAzureTranslateRegionButton: Muuta Azure Translate -aluetta
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure-alue on määritetty onnistuneesti.
+  wwcConfigConversationAzureTranslateApiKeyInput: Nykyinen API-avain on {0}. Anna
+    API-avain Azurelle tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API -avain on määritetty
+    onnistuneesti.
+  wwcConfigConversationAzureTranslateRegionInput: Nykyinen alue on {0}. Anna Azure-alue
+    tai kirjoita 0 palataksesi takaisin.
+  wwcConfigGUIToggleAzureTranslateButton: Vaihda Azure-käännös
 

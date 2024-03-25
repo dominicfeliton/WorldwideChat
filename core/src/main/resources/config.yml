@@ -51,6 +51,9 @@ Translator:
   libreURL: libre_url_goes_here
   useDeepLTranslate: false
   deepLAPIKey: deepl_key_goes_here
+  useAzureTranslate: false
+  azureAPIKey: azure_key_goes_here
+  azureRegion: azure_region_goes_here
   translatorCacheSize: 100
   rateLimit: 0
   messageCharLimit: 255

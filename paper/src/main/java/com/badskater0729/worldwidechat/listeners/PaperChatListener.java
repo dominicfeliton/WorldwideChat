@@ -54,7 +54,6 @@ public class PaperChatListener implements Listener {
                     continue;
                 }
 
-                refs.debugMsg("Looking at " + currPlayer.getName());
                 ActiveTranslator testTranslator = main.getActiveTranslator(currPlayer);
                 String testInLang = testTranslator.getInLangCode();
                 String testOutLang = testTranslator.getOutLangCode();

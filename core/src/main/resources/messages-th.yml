@@ -414,4 +414,15 @@ Messages:
   wwcsActiveTransItem: 'รายการการแปล: {0}'
   wwcsActiveTransEntity: 'เอนทิตีการแปล: {0}'
   wwctsWarning: การแก้ไขป้ายถูกปิดใช้งานขณะที่คุณกำลังแปลเครื่องหมาย
+  wwcConfigConversationAzureTranslateToggleSuccess: สลับการแปลของ Azure สำเร็จแล้วโหลดใหม่เพื่อให้การเปลี่ยนแปลงมีผล
+  wwcConfigGUIAzureTranslateButton: แปล Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: เปลี่ยนคีย์ API การแปลของ Azure
+  wwcConfigGUIAzureTranslateRegionButton: เปลี่ยนภูมิภาคแปล Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: ตั้งค่าภูมิภาค Azure เรียบร้อยแล้ว
+  wwcConfigConversationAzureTranslateApiKeyInput: คีย์ API ปัจจุบันคือ {0}กรุณาป้อนคีย์
+    API สำหรับ Azure หรือพิมพ์ 0 เพื่อกลับไป
+  wwcConfigConversationAzureTranslateApiKeySuccess: ชุดคีย์ Azure API สำเร็จแล้ว
+  wwcConfigConversationAzureTranslateRegionInput: ภูมิภาคปัจจุบันคือ {0}กรุณาป้อนภูมิภาคสำหรับ
+    Azure หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUIToggleAzureTranslateButton: สลับการแปล Azure
 

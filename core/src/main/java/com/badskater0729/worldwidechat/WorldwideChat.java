@@ -65,7 +65,7 @@ public class WorldwideChat extends JavaPlugin {
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
 	public static int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "03242024-4"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "03252024-1"; // MMDDYYYY-revisionNumber
 
 	public static WorldwideChat instance;
 	
@@ -442,7 +442,6 @@ public class WorldwideChat extends JavaPlugin {
 		activeTranslators.clear();
 		cache.invalidateAll();
 		cache.cleanUp();
-		// TODO: Check that cache works with Chat on Paper
 		// TODO: Add a function to get various debug info, such as cache contents/clear it
 	}
 

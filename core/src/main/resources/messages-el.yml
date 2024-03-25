@@ -506,4 +506,17 @@ Messages:
   wwcsActiveTransItem: 'Αντικείμενο μετάφρασης: {0}'
   wwcsActiveTransEntity: 'Μεταφραστική οντότητα: {0}'
   wwctsWarning: Η τροποποίηση σημείων είναι απενεργοποιημένη κατά τη μετάφραση πινακίδων.
+  wwcConfigConversationAzureTranslateToggleSuccess: Ενεργοποιήθηκε επιτυχώς η Μετάφραση
+    Azure. Επαναφόρτωση για να τεθούν σε ισχύ οι αλλαγές.
+  wwcConfigGUIAzureTranslateButton: Μετάφραση Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Αλλαγή κλειδιού API μετάφρασης Azure
+  wwcConfigGUIAzureTranslateRegionButton: Αλλαγή περιοχής μετάφρασης Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Η περιοχή Azure ορίστηκε με επιτυχία.
+  wwcConfigConversationAzureTranslateApiKeyInput: Το τρέχον κλειδί API είναι {0}.
+    Εισαγάγετε ένα κλειδί API για το Azure ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Το κλειδί Azure API ορίστηκε με
+    επιτυχία.
+  wwcConfigConversationAzureTranslateRegionInput: Η τρέχουσα περιοχή είναι {0}. Εισαγάγετε
+    μια περιοχή για το Azure ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUIToggleAzureTranslateButton: Εναλλαγή μετάφρασης Azure
 

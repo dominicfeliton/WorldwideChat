@@ -475,4 +475,16 @@ Messages:
   wwcsActiveTransItem: 'Preklad položky: {0}'
   wwcsActiveTransEntity: 'Prekladajúca entita: {0}'
   wwctsWarning: Úprava znakov je zakázaná počas prekladu znakov.
+  wwcConfigConversationAzureTranslateToggleSuccess: Úspešne prepnutý Azure Translate.
+    Znovu načítajte, aby zmeny nadobudli účinnosť.
+  wwcConfigGUIAzureTranslateButton: Azure Preložiť
+  wwcConfigGUIAzureTranslateApiKeyButton: Zmena kľúča rozhrania Azure Translate API
+  wwcConfigGUIAzureTranslateRegionButton: Zmeniť oblasť prekladu Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Úspešne nastavená oblasť Azure.
+  wwcConfigConversationAzureTranslateApiKeyInput: Aktuálny kľúč API je {0}. Zadajte
+    kľúč API pre Azure alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Úspešne nastavený kľúč Azure API.
+  wwcConfigConversationAzureTranslateRegionInput: Aktuálna oblasť je {0}. Zadajte
+    oblasť pre Azure alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigGUIToggleAzureTranslateButton: Prepnúť Azure Preklad
 

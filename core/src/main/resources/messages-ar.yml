@@ -433,4 +433,17 @@ Messages:
   wwcsActiveTransItem: 'ترجمة العنصر: {0}'
   wwcsActiveTransEntity: 'الكيان المترجم: {0}'
   wwctsWarning: تم تعطيل تعديل التوقيع أثناء ترجمة العلامات.
+  wwcConfigConversationAzureTranslateToggleSuccess: تم تبديل Azure Translate بنجاح.
+    أعد التحميل لتصبح التغييرات سارية المفعول.
+  wwcConfigGUIAzureTranslateButton: ترجمة أزور
+  wwcConfigGUIAzureTranslateApiKeyButton: تغيير مفتاح واجهة برمجة تطبيقات الترجمة
+    في Azure
+  wwcConfigGUIAzureTranslateRegionButton: تغيير منطقة ترجمة Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: تم تعيين منطقة Azure بنجاح.
+  wwcConfigConversationAzureTranslateApiKeyInput: مفتاح API الحالي هو {0}. يرجى إدخال
+    مفتاح API لـ Azure، أو اكتب 0 للعودة.
+  wwcConfigConversationAzureTranslateApiKeySuccess: تم تعيين مفتاح Azure API بنجاح.
+  wwcConfigConversationAzureTranslateRegionInput: المنطقة الحالية هي {0}. يرجى إدخال
+    منطقة لـ Azure، أو اكتب 0 للعودة.
+  wwcConfigGUIToggleAzureTranslateButton: قم بتبديل ترجمة أزور
 

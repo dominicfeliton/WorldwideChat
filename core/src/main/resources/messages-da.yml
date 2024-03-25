@@ -464,4 +464,18 @@ Messages:
   wwcsActiveTransItem: 'Oversættelseselement: {0}'
   wwcsActiveTransEntity: 'Oversættelsesenhed: {0}'
   wwctsWarning: Tegnændring er deaktiveret, mens du oversætter tegn.
+  wwcConfigConversationAzureTranslateToggleSuccess: Aktiveret Azure Translate med
+    succes. Genindlæs for at ændringerne træder i kraft.
+  wwcConfigGUIAzureTranslateButton: Azure Oversæt
+  wwcConfigGUIAzureTranslateApiKeyButton: Skift Azure Translate API-nøgle
+  wwcConfigGUIAzureTranslateRegionButton: Skift Azure Translate-område
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure-området blev indstillet
+    med succes.
+  wwcConfigConversationAzureTranslateApiKeyInput: Den aktuelle API-nøgle er {0}. Indtast
+    en API-nøgle til Azure, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API-nøglen blev indstillet
+    korrekt.
+  wwcConfigConversationAzureTranslateRegionInput: Den aktuelle region er {0}. Indtast
+    et område for Azure, eller skriv 0 for at gå tilbage.
+  wwcConfigGUIToggleAzureTranslateButton: Slå Azure Translate til
 

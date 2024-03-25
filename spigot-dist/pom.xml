@@ -34,7 +34,7 @@
     <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
-      <version>1.20.2-R0.1-SNAPSHOT</version>
+      <version>1.20.4-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
@@ -64,7 +64,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.5.1</version>
+        <version>3.5.2</version>
         <configuration>
           <minimizeJar>true</minimizeJar>
           <createDependencyReducedPom>false</createDependencyReducedPom>
@@ -116,6 +116,8 @@
               <include>com.squareup.okio:okio-jvm</include>
               <include>org.mongodb:*</include>
               <include>com.deepl.api:*</include>
+              <include>io.github.brenoepics:*</include>
+              <include>org.apache.logging.log4j:*</include>
             </includes>
           </artifactSet>
           <filters>
@@ -267,6 +269,10 @@
             <relocation>
               <pattern>org.bson</pattern>
               <shadedPattern>com.badskater0729.worldwidechat.libs.org.bson</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>io.github.brenoepics</pattern>
+              <shadedPattern>com.badskater0729.worldwidechat.libs.io.github.brenoepics</shadedPattern>
             </relocation>
           </relocations>
         </configuration>

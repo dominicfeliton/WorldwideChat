@@ -458,4 +458,16 @@ Messages:
   wwcsActiveTransItem: 'Аударма тармағы: {0}'
   wwcsActiveTransEntity: 'Аударма субъектісі: {0}'
   wwctsWarning: Белгілерді аудару кезінде белгіні өзгерту өшіріледі.
+  wwcConfigConversationAzureTranslateToggleSuccess: Azure Translate бағдарламасын
+    сәтті ауыстырды. Өзгерістер күшіне енуі үшін қайта жүктеңіз.
+  wwcConfigGUIAzureTranslateButton: Azure аудармасы
+  wwcConfigGUIAzureTranslateApiKeyButton: Azure аударма API кілтін өзгертіңіз
+  wwcConfigGUIAzureTranslateRegionButton: Azure аударма аймағын өзгертіңіз
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure аймағы сәтті орнатылды.
+  wwcConfigConversationAzureTranslateApiKeyInput: Ағымдағы API кілті - {0}. Azure
+    үшін API кілтін енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API кілті сәтті орнатылды.
+  wwcConfigConversationAzureTranslateRegionInput: Қазіргі аймақ - {0}. Azure үшін
+    аймақты енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigGUIToggleAzureTranslateButton: Azure аудармасын ауыстыру
 

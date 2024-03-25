@@ -372,4 +372,15 @@ Messages:
   wwcsActiveTransItem: 翻訳アイテム:{0}
   wwcsActiveTransEntity: 翻訳中のエンティティ:{0}
   wwctsWarning: 標識を翻訳している間は、標識の変更は無効になっています。
+  wwcConfigConversationAzureTranslateToggleSuccess: Azure 翻訳が正常に切り替わりました。変更を有効にするにはリロードしてください。
+  wwcConfigGUIAzureTranslateButton: アズール翻訳
+  wwcConfigGUIAzureTranslateApiKeyButton: アズール翻訳 API キーを変更
+  wwcConfigGUIAzureTranslateRegionButton: Azure 翻訳リージョンの変更
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure リージョンが正常に設定されました。
+  wwcConfigConversationAzureTranslateApiKeyInput: 現在の API キーは {0} です。Azure の API キーを入力するか、0
+    を入力して戻ってください。
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API キーが正常に設定されました。
+  wwcConfigConversationAzureTranslateRegionInput: 現在のリージョンは {0} です。Azure のリージョンを入力するか、0
+    を入力して戻ってください。
+  wwcConfigGUIToggleAzureTranslateButton: Azure 翻訳の切り替え
 

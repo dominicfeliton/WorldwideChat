@@ -470,4 +470,18 @@ Messages:
   wwcsActiveTransItem: 'Mục dịch: {0}'
   wwcsActiveTransEntity: 'Thực thể dịch: {0}'
   wwctsWarning: Sửa đổi dấu hiệu bị vô hiệu hóa trong khi bạn đang dịch các dấu hiệu.
+  wwcConfigConversationAzureTranslateToggleSuccess: Chuyển đổi thành công Azure Translate.
+    Tải lại để các thay đổi có hiệu lực.
+  wwcConfigGUIAzureTranslateButton: Dịch Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Thay đổi khóa API dịch Azure
+  wwcConfigGUIAzureTranslateRegionButton: Thay đổi khu vực dịch Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Vùng Azure được thiết lập thành
+    công.
+  wwcConfigConversationAzureTranslateApiKeyInput: Khóa API hiện tại là {0}. Vui lòng
+    nhập khóa API cho Azure hoặc nhập 0 để quay lại.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Khóa API Azure được thiết lập
+    thành công.
+  wwcConfigConversationAzureTranslateRegionInput: Khu vực hiện tại là {0}. Vui lòng
+    nhập một vùng cho Azure hoặc nhập 0 để quay trở lại.
+  wwcConfigGUIToggleAzureTranslateButton: Chuyển đổi dịch Azure
 

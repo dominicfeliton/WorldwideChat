@@ -471,4 +471,16 @@ Messages:
   wwcsActiveTransItem: 'Перевод товара: {0}'
   wwcsActiveTransEntity: 'Объект перевода: {0}'
   wwctsWarning: Модификация знаков отключена во время перевода знаков.
+  wwcConfigConversationAzureTranslateToggleSuccess: Переводчик Azure успешно переключен.
+    Перезагрузите файл, чтобы изменения вступили в силу.
+  wwcConfigGUIAzureTranslateButton: Переводчик Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Изменить ключ API Azure Translate
+  wwcConfigGUIAzureTranslateRegionButton: Изменить регион Azure Translate
+  wwcConfigConversationAzureTranslateRegionSuccess: Регион Azure успешно установлен.
+  wwcConfigConversationAzureTranslateApiKeyInput: Текущий ключ API — {0}. Введите
+    ключ API для Azure или введите 0, чтобы вернуться назад.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Ключ Azure API успешно установлен.
+  wwcConfigConversationAzureTranslateRegionInput: Текущий регион — {0}. Введите регион
+    для Azure или введите 0, чтобы вернуться назад.
+  wwcConfigGUIToggleAzureTranslateButton: Переключить Azure Translate
 

@@ -482,4 +482,17 @@ Messages:
   wwcsActiveTransItem: 'Traduzir Item: {0}'
   wwcsActiveTransEntity: 'Entidade Tradutora: {0}'
   wwctsWarning: A modificação do sinal está desactivada enquanto traduz sinais.
+  wwcConfigConversationAzureTranslateToggleSuccess: Alternado com êxito no Azure Translate.
+    Recarregar para que as alterações tenham efeito.
+  wwcConfigGUIAzureTranslateButton: Azure Translate
+  wwcConfigGUIAzureTranslateApiKeyButton: Alterar a chave da API do Azure Translate
+  wwcConfigGUIAzureTranslateRegionButton: Alterar Região do Azure Translate
+  wwcConfigConversationAzureTranslateRegionSuccess: Região do Azure definida com êxito.
+  wwcConfigConversationAzureTranslateApiKeyInput: A chave API actual é {0}. Introduza
+    uma chave de API para o Azure ou digite 0 para voltar atrás.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Conjunto de chaves da API do Azure
+    com êxito.
+  wwcConfigConversationAzureTranslateRegionInput: A região actual é {0}. Introduza
+    uma região para o Azure ou escreva 0 para voltar atrás.
+  wwcConfigGUIToggleAzureTranslateButton: Alternar o Azure Translate
 

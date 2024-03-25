@@ -476,4 +476,18 @@ Messages:
   wwcsActiveTransItem: 'Översättningsobjekt: {0}'
   wwcsActiveTransEntity: 'Översättningsenhet: {0}'
   wwctsWarning: Teckenmodifiering är inaktiverad när du översätter tecken.
+  wwcConfigConversationAzureTranslateToggleSuccess: Lyckades växla Azure Translate.
+    Ladda om för att ändringarna ska träda i kraft.
+  wwcConfigGUIAzureTranslateButton: Azure Översätt
+  wwcConfigGUIAzureTranslateApiKeyButton: Ändra API-nyckel för Azure Translate
+  wwcConfigGUIAzureTranslateRegionButton: Ändra Azure Translate-region
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure-regionen har ställts in
+    framgångsrikt.
+  wwcConfigConversationAzureTranslateApiKeyInput: Den aktuella API-nyckeln är {0}.
+    Ange en API-nyckel för Azure, eller skriv 0 för att gå tillbaka.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API-nyckel har ställts in
+    framgångsrikt.
+  wwcConfigConversationAzureTranslateRegionInput: Den aktuella regionen är {0}. Ange
+    en region för Azure, eller skriv 0 för att gå tillbaka.
+  wwcConfigGUIToggleAzureTranslateButton: Växla mellan Azure Translate
 

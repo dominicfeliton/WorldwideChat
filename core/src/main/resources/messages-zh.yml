@@ -363,4 +363,14 @@ Messages:
   wwcsActiveTransItem: 翻译项目：{0}
   wwcsActiveTransEntity: 翻译实体：{0}
   wwctsWarning: 翻译符号时，签名修改被禁用。
+  wwcConfigConversationAzureTranslateToggleSuccess: 成功切换 Azure 翻译。重新加载以使更改生效。
+  wwcConfigGUIAzureTranslateButton: 天蓝翻译
+  wwcConfigGUIAzureTranslateApiKeyButton: 更改 Azure 翻译 API 密钥
+  wwcConfigGUIAzureTranslateRegionButton: 更改 Azure 翻译区域
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure 区域设置成功。
+  wwcConfigConversationAzureTranslateApiKeyInput: 当前 API 密钥为 {0}。请输入 Azure 的 API 密钥，或键入
+    0 返回。
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API 密钥设置成功。
+  wwcConfigConversationAzureTranslateRegionInput: 当前区域为 {0}。请输入 Azure 的区域，或键入 0 返回。
+  wwcConfigGUIToggleAzureTranslateButton: 切换 Azure 翻译
 

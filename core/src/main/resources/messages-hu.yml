@@ -476,4 +476,16 @@ Messages:
   wwcsActiveTransItem: 'Elem fordítása: {0}'
   wwcsActiveTransEntity: 'Fordító entitás: {0}'
   wwctsWarning: A jelek módosítása le van tiltva a jelek fordítása közben.
+  wwcConfigConversationAzureTranslateToggleSuccess: Sikeresen kapcsolta be az Azure
+    Translate alkalmazást. Töltse be újra, hogy a változások életbe lépjenek.
+  wwcConfigGUIAzureTranslateButton: Azure Fordítás
+  wwcConfigGUIAzureTranslateApiKeyButton: Az Azure Translate API-kulcs módosítása
+  wwcConfigGUIAzureTranslateRegionButton: Az Azure fordítási régiójának módosítása
+  wwcConfigConversationAzureTranslateRegionSuccess: Az Azure-régió sikeresen beállítható.
+  wwcConfigConversationAzureTranslateApiKeyInput: Az aktuális API kulcs {0}. Adjon
+    meg egy API-kulcsot az Azure-hoz, vagy írja be a 0 parancsot a visszatéréshez.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Az Azure API-kulcs sikeresen beállítható.
+  wwcConfigConversationAzureTranslateRegionInput: A jelenlegi régió {0}. Adjon meg
+    egy régiót az Azure-hoz, vagy írja be a 0 parancsot a visszalépéshez.
+  wwcConfigGUIToggleAzureTranslateButton: Az Azure fordítás váltása
 

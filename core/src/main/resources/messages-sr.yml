@@ -461,4 +461,16 @@ Messages:
   wwcsActiveTransItem: 'Prevodna stavka: {0}'
   wwcsActiveTransEntity: 'Prevodilački entitet: {0}'
   wwctsWarning: Izmena znakova je onemogućena dok prevodite znakove.
+  wwcConfigConversationAzureTranslateToggleSuccess: Uspešno je prebacio Azure Translate.
+    Ponovo učitajte da bi promene stupile na snagu.
+  wwcConfigGUIAzureTranslateButton: Azure Translate
+  wwcConfigGUIAzureTranslateApiKeyButton: Promenite API ključ Azure Translate
+  wwcConfigGUIAzureTranslateRegionButton: Promenite region za prevod Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure region je uspešno postavljen.
+  wwcConfigConversationAzureTranslateApiKeyInput: Trenutni API ključ je {0}. Molimo
+    unesite API ključ za Azure ili otkucajte 0 da biste se vratili nazad.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API ključ je uspešno postavljen.
+  wwcConfigConversationAzureTranslateRegionInput: Trenutni region je {0}. Unesite
+    region za Azure ili otkucajte 0 da biste se vratili nazad.
+  wwcConfigGUIToggleAzureTranslateButton: Prebaci Azure Translate
 

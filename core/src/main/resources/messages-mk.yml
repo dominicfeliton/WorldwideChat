@@ -480,4 +480,17 @@ Messages:
   wwcsActiveTransItem: 'Преведувачка ставка: {0}'
   wwcsActiveTransEntity: 'Преведувачки субјект: {0}'
   wwctsWarning: Модификацијата на знакот е оневозможена додека преведувате знаци.
+  wwcConfigConversationAzureTranslateToggleSuccess: Успешно вклучен Azure Translate.
+    Повторно вчитувајте за промените да стапат на сила.
+  wwcConfigGUIAzureTranslateButton: Азур Преведи
+  wwcConfigGUIAzureTranslateApiKeyButton: Променете го клучот за API за преведување
+    на
+  wwcConfigGUIAzureTranslateRegionButton: Променете го регионот за превод на Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Регионот Azure е успешно поставен.
+  wwcConfigConversationAzureTranslateApiKeyInput: Тековниот клуч на API е {0}. Ве
+    молиме внесете API клуч за Azure или напишете 0 за да се вратите назад.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Клучот Azure API е успешно поставен.
+  wwcConfigConversationAzureTranslateRegionInput: Моменталниот регион е {0}. Ве молиме
+    внесете регион за Azure или напишете 0 за да се вратите назад.
+  wwcConfigGUIToggleAzureTranslateButton: Вклучете го преведувањето на Azure
 

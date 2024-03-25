@@ -515,4 +515,18 @@ Messages:
   wwcsActiveTransItem: 'Pagsasalin ng Item: {0}'
   wwcsActiveTransEntity: 'Pagsasalin ng Entidad: {0}'
   wwctsWarning: Hindi pinagana ang pagbabago ng sign habang nagsasalin ka ng mga palatandaan.
+  wwcConfigConversationAzureTranslateToggleSuccess: Matagumpay na i-tolock ang Azure
+    Translate. I-load muli para maging epektibo ang mga pagbabago.
+  wwcConfigGUIAzureTranslateButton: Isalin ang Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Baguhin ang Azure Translate API Key
+  wwcConfigGUIAzureTranslateRegionButton: Baguhin ang Rehiyon ng Pagsasalin
+  wwcConfigConversationAzureTranslateRegionSuccess: Matagumpay na nakatakda ang Azure
+    region.
+  wwcConfigConversationAzureTranslateApiKeyInput: Ang kasalukuyang key ng API ay {0}.
+    Mangyaring magpasok ng isang API key para sa Azure, o i-type ang 0 upang bumalik.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Matagumpay na itinakda ang Azure
+    API key.
+  wwcConfigConversationAzureTranslateRegionInput: Ang kasalukuyang rehiyon ay {0}.
+    Mangyaring mag-input ng isang rehiyon para sa Azure, o i-type ang 0 upang bumalik.
+  wwcConfigGUIToggleAzureTranslateButton: Toggle Azure Translate
 

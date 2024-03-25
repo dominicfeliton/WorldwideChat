@@ -470,4 +470,19 @@ Messages:
   wwcsActiveTransItem: 'Przetłumacz: {0}'
   wwcsActiveTransEntity: 'Jednostka tłumaczeniowa: {0}'
   wwctsWarning: Modyfikacja znaków jest wyłączona podczas tłumaczenia znaków.
+  wwcConfigConversationAzureTranslateToggleSuccess: Pomyślnie przełączono usługę Azure
+    Translate. Przeładuj ponownie, aby zmiany zaczęły obowiązywać.
+  wwcConfigGUIAzureTranslateButton: Azure Przetłumacz
+  wwcConfigGUIAzureTranslateApiKeyButton: Zmień klucz interfejsu API usługi Azure
+    Translate
+  wwcConfigGUIAzureTranslateRegionButton: Zmień region tłumaczenia platformy Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Pomyślnie ustawiono region platformy
+    Azure.
+  wwcConfigConversationAzureTranslateApiKeyInput: Obecny klucz API to {0}. Wprowadź
+    klucz API dla platformy Azure lub wpisz 0, aby wrócić.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Pomyślnie ustawiono klucz interfejsu
+    API platformy Azure.
+  wwcConfigConversationAzureTranslateRegionInput: Obecny region to {0}. Wprowadź region
+    dla platformy Azure lub wpisz 0, aby wrócić.
+  wwcConfigGUIToggleAzureTranslateButton: Przełącz Azure Tłumaczenie
 

@@ -466,4 +466,17 @@ Messages:
   wwcsActiveTransItem: 'Елемент перекладу: {0}'
   wwcsActiveTransEntity: 'Об''єкт перекладу: {0}'
   wwctsWarning: Модифікація знаків вимкнена під час перекладу знаків.
+  wwcConfigConversationAzureTranslateToggleSuccess: Успішно переключено переклад Azure.
+    Перезавантажте, щоб зміни вступили в силу.
+  wwcConfigGUIAzureTranslateButton: Azure Перекласти
+  wwcConfigGUIAzureTranslateApiKeyButton: Змініть ключ API перекладу Azure
+  wwcConfigGUIAzureTranslateRegionButton: Змініть регіон перекладу Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Блакитний регіон встановлено успішно.
+  wwcConfigConversationAzureTranslateApiKeyInput: Поточний ключ API {0}. Будь ласка,
+    введіть ключ API для Azure або введіть 0, щоб повернутися назад.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Успішно встановлено ключ Azure
+    API.
+  wwcConfigConversationAzureTranslateRegionInput: Поточний регіон {0}. Будь ласка,
+    введіть регіон для Azure або введіть 0, щоб повернутися назад.
+  wwcConfigGUIToggleAzureTranslateButton: Увімкнути переклад Azure
 

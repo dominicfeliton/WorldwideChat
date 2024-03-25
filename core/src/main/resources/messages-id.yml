@@ -465,4 +465,16 @@ Messages:
   wwcsActiveTransItem: 'Item Terjemahan: {0}'
   wwcsActiveTransEntity: 'Entitas Menerjemahkan: {0}'
   wwctsWarning: Modifikasi tanda dinonaktifkan saat Anda menerjemahkan tanda.
+  wwcConfigConversationAzureTranslateToggleSuccess: Berhasil mengaktifkan Azure Translate.
+    Muat ulang agar perubahan berlaku.
+  wwcConfigGUIAzureTranslateButton: Terjemahkan Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Ubah Kunci API Terjemahan Azure
+  wwcConfigGUIAzureTranslateRegionButton: Ubah Wilayah Terjemahan Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Wilayah Azure berhasil disetel.
+  wwcConfigConversationAzureTranslateApiKeyInput: Kunci API saat ini adalah {0}. Harap
+    masukkan kunci API untuk Azure, atau ketik 0 untuk kembali.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Kunci Azure API berhasil disetel.
+  wwcConfigConversationAzureTranslateRegionInput: Wilayah saat ini adalah {0}. Silakan
+    masukkan wilayah untuk Azure, atau ketik 0 untuk kembali.
+  wwcConfigGUIToggleAzureTranslateButton: Alihkan Terjemahan Azure
 

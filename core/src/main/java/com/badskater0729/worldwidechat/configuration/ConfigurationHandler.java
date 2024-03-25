@@ -11,6 +11,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
+import com.badskater0729.worldwidechat.translators.*;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bson.Document;
 import org.bson.conversions.Bson;
@@ -21,13 +22,6 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.threeten.bp.Instant;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.translators.AmazonTranslation;
-import com.badskater0729.worldwidechat.translators.BasicTranslation;
-import com.badskater0729.worldwidechat.translators.DeepLTranslation;
-import com.badskater0729.worldwidechat.translators.GoogleTranslation;
-import com.badskater0729.worldwidechat.translators.LibreTranslation;
-import com.badskater0729.worldwidechat.translators.TestTranslation;
-import com.badskater0729.worldwidechat.translators.WatsonTranslation;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
 import com.badskater0729.worldwidechat.util.Metrics;
 import com.badskater0729.worldwidechat.util.PlayerRecord;
@@ -343,6 +337,13 @@ public class ConfigurationHandler {
 				} else if (mainConfig.getBoolean("Translator.useDeepLTranslate")) {
 					outName = "DeepL Translate";
 					test = new DeepLTranslation(mainConfig.getString("Translator.deepLAPIKey"), true);
+					test.useTranslator();
+					break;
+				} else if (mainConfig.getBoolean("Translator.useAzureTranslate")) {
+					outName = "Azure Translate";
+					test = new AzureTranslation(mainConfig.getString("Translator.azureAPIKey"),
+							mainConfig.getString("Translator.azureRegion"),
+							true);
 					test.useTranslator();
 					break;
 				} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {

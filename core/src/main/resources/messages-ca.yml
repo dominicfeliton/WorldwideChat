@@ -494,4 +494,18 @@ Messages:
   wwcsActiveTransEntity: 'Entitat traduïdora: {0}'
   wwctsWarning: La modificació dels signes està desactivada mentre esteu traduint
     signes.
+  wwcConfigConversationAzureTranslateToggleSuccess: S'ha alternat amb èxit l'Azure
+    Translate. Torna a carregar perquè els canvis tinguin efecte.
+  wwcConfigGUIAzureTranslateButton: Tradueix Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Canviar la clau de l'API d'Azure Translate
+  wwcConfigGUIAzureTranslateRegionButton: Canviar la regió de traducció d'Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: La regió Azure s'ha establert
+    amb èxit.
+  wwcConfigConversationAzureTranslateApiKeyInput: La clau de l'API actual és {0}.
+    Si us plau, introduïu una clau API per a Azure, o escriviu 0 per tornar enrere.
+  wwcConfigConversationAzureTranslateApiKeySuccess: S'estableix amb èxit la clau de
+    l'API d'Azure.
+  wwcConfigConversationAzureTranslateRegionInput: La regió actual és {0}. Si us plau,
+    introduïu una regió per a Azure, o escriviu 0 per tornar enrere.
+  wwcConfigGUIToggleAzureTranslateButton: Canvia la traducció d'Azure
 

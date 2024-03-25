@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.regex.Matcher;
 
+import com.badskater0729.worldwidechat.translators.*;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.apache.commons.text.StringEscapeUtils;
@@ -36,12 +37,6 @@ import org.threeten.bp.zone.ZoneRulesException;
 
 import com.amazonaws.util.StringUtils;
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.translators.AmazonTranslation;
-import com.badskater0729.worldwidechat.translators.DeepLTranslation;
-import com.badskater0729.worldwidechat.translators.GoogleTranslation;
-import com.badskater0729.worldwidechat.translators.LibreTranslation;
-import com.badskater0729.worldwidechat.translators.TestTranslation;
-import com.badskater0729.worldwidechat.translators.WatsonTranslation;
 import com.google.common.base.CharMatcher;
 
 import fr.minuskube.inv.SmartInventory;
@@ -528,6 +523,11 @@ public class CommonRefs {
 						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
 			    out = deeplTranslateInstance.useTranslator();
 			    break;
+			case "Azure Translate":
+				AzureTranslation azureTranslateInstance = new AzureTranslation(inMessage,
+						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
+				out = azureTranslateInstance.useTranslator();
+				break;
 			case "JUnit/MockBukkit Testing Translator":
 				TestTranslation testTranslator = new TestTranslation(inMessage, currActiveTranslator.getInLangCode(),
 						currActiveTranslator.getOutLangCode());

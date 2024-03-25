@@ -365,4 +365,14 @@ Messages:
   wwcsActiveTransItem: 翻譯項目：{0}
   wwcsActiveTransEntity: 翻譯實體：{0}
   wwctsWarning: 當您翻譯符號時，會停用標誌修改。
+  wwcConfigConversationAzureTranslateToggleSuccess: 成功切換 Azure 翻譯。重新載入以使變更生效。
+  wwcConfigGUIAzureTranslateButton: 藍色翻譯
+  wwcConfigGUIAzureTranslateApiKeyButton: 變更 Azure 翻譯 API 金鑰
+  wwcConfigGUIAzureTranslateRegionButton: 變更 Azure 翻譯區域
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure 區域設定成功。
+  wwcConfigConversationAzureTranslateApiKeyInput: 目前的 API 金鑰是 {0}。請輸入 Azure 的 API
+    金鑰，或輸入 0 以返回。
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API 金鑰設定成功。
+  wwcConfigConversationAzureTranslateRegionInput: 目前的區域為 {0}。請輸入 Azure 的區域，或鍵入 0 以返回。
+  wwcConfigGUIToggleAzureTranslateButton: 切換 Azure 翻譯
 

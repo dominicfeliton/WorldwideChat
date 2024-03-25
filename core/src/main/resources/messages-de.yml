@@ -512,4 +512,18 @@ Messages:
   wwcsActiveTransItem: 'Artikel wird übersetzt: {0}'
   wwcsActiveTransEntity: 'Übersetzende Entität: {0}'
   wwctsWarning: Die Zeichenänderung ist deaktiviert, während Sie Zeichen übersetzen.
+  wwcConfigConversationAzureTranslateToggleSuccess: Azure Translate wurde erfolgreich
+    umgeschaltet. Laden Sie neu, damit die Änderungen wirksam werden.
+  wwcConfigGUIAzureTranslateButton: Azure Translate
+  wwcConfigGUIAzureTranslateApiKeyButton: API-Schlüssel für Azure Translate ändern
+  wwcConfigGUIAzureTranslateRegionButton: Azure Translate-Region ändern
+  wwcConfigConversationAzureTranslateRegionSuccess: Die Azure-Region wurde erfolgreich
+    eingerichtet.
+  wwcConfigConversationAzureTranslateApiKeyInput: Der aktuelle API-Schlüssel ist {0}.
+    Bitte geben Sie einen API-Schlüssel für Azure ein, oder geben Sie 0 ein, um zurückzugehen.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Der Azure-API-Schlüssel wurde
+    erfolgreich gesetzt.
+  wwcConfigConversationAzureTranslateRegionInput: Die aktuelle Region ist {0}. Bitte
+    geben Sie eine Region für Azure ein, oder geben Sie 0 ein, um zurückzugehen.
+  wwcConfigGUIToggleAzureTranslateButton: Schalten Sie Azure Translate um
 

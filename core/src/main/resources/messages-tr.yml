@@ -460,4 +460,16 @@ Messages:
   wwcsActiveTransItem: 'Tercüme Öğesi: {0}'
   wwcsActiveTransEntity: 'Çeviri Varlığı: {0}'
   wwctsWarning: İşaretleri çevirirken işaret değişikliği devre dışı bırakılır.
+  wwcConfigConversationAzureTranslateToggleSuccess: Azure Translate'i başarıyla değiştirdi.
+    Değişikliklerin yürürlüğe girmesi için yeniden yükleyin.
+  wwcConfigGUIAzureTranslateButton: Azure Çeviri
+  wwcConfigGUIAzureTranslateApiKeyButton: Azure Translate API Anahtarını Değiştirme
+  wwcConfigGUIAzureTranslateRegionButton: Azure Çeviri Bölgesini Değiştir
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure bölgesi başarıyla ayarlandı.
+  wwcConfigConversationAzureTranslateApiKeyInput: Geçerli API anahtarı {0} 'dir. Lütfen
+    Azure için bir API anahtarı girin veya geri dönmek için 0 yazın.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API anahtarı başarıyla ayarlandı.
+  wwcConfigConversationAzureTranslateRegionInput: Geçerli bölge {0} 'dir. Lütfen Azure
+    için bir bölge girin veya geri dönmek için 0 yazın.
+  wwcConfigGUIToggleAzureTranslateButton: Azure Çeviri özelliğini aç/kapat
 

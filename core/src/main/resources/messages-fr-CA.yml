@@ -503,4 +503,16 @@ Messages:
   wwcsActiveTransEntity: 'Entité traductrice: {0}'
   wwctsWarning: La modification des panneaux est désactivée pendant que vous traduisez
     des panneaux.
+  wwcConfigConversationAzureTranslateToggleSuccess: La fonction Azure Translate a
+    été exécutée avec succès. Rechargez pour que les changements prennent effet.
+  wwcConfigGUIAzureTranslateButton: Traduire Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Modifier la clé de l'API Azure Translate
+  wwcConfigGUIAzureTranslateRegionButton: Modifier la région de traduction Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Région Azure définie avec succès.
+  wwcConfigConversationAzureTranslateApiKeyInput: La clé API actuelle est {0}. Veuillez
+    saisir une clé API pour Azure, ou tapez 0 pour revenir en arrière.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Clé API Azure définie avec succès.
+  wwcConfigConversationAzureTranslateRegionInput: La région actuelle est {0}. Veuillez
+    saisir une région pour Azure, ou tapez 0 pour revenir en arrière.
+  wwcConfigGUIToggleAzureTranslateButton: Activer Azure Traduire
 
