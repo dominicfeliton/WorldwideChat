@@ -2,6 +2,7 @@ package com.badskater0729.worldwidechat.inventory;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.UUID;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
@@ -151,7 +152,7 @@ public class WWCInventoryManager extends InventoryManager {
 		genericToggleButton(x, y, player, contents, configButtonName, messageOnChange, configValueName, new ArrayList<>());
 	}
 	
-	public void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName, ArrayList<String> configValsToDisable) {
+	public void genericToggleButton(int x, int y, Player player, InventoryContents contents, String configButtonName, String messageOnChange, String configValueName, List<String> configValsToDisable) {
 		ItemStack button = XMaterial.BEDROCK.parseItem();
 		if (main.getConfigManager().getMainConfig().getBoolean(configValueName)) {
 			button = XMaterial.EMERALD_BLOCK.parseItem();

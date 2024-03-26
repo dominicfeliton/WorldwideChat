@@ -66,17 +66,13 @@ public class UpdateChecker implements Runnable {
 		};
 		
 		/* Start Callback Process */
-		ExecutorService executor = Executors.newSingleThreadExecutor();
-		Future<Boolean> process = executor.submit(result);
+		Future<Boolean> process = main.getCallbackExecutor().submit(result);
 		try {
 			/* Get update status */
 			process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 		} catch (TimeoutException | ExecutionException | InterruptedException e) {
 			refs.debugMsg("Update Checker Timeout!! Either we are reloading or we have lost connection. Abort.");
 			if (e instanceof TimeoutException) {refs.sendTimeoutExceptionMsg(main.getServer().getConsoleSender());};
-			process.cancel(true);
-		} finally {
-			executor.shutdownNow();
 		}
 	}
 

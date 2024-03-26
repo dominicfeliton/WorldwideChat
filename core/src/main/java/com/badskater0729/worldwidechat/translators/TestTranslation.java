@@ -2,17 +2,18 @@ package com.badskater0729.worldwidechat.translators;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
 
 import com.badskater0729.worldwidechat.util.SupportedLang;
 
 public class TestTranslation extends BasicTranslation {
 
-	public TestTranslation(String textToTranslate, String inputLang, String outputLang) {
-		super(textToTranslate, inputLang, outputLang);
+	public TestTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
+		super(textToTranslate, inputLang, outputLang, callbackExecutor);
 	}
 
-	public TestTranslation(String apikey, boolean isInitializing) {
-		super(isInitializing);
+	public TestTranslation(String apikey, boolean isInitializing, ExecutorService callbackExecutor) {
+		super(isInitializing, callbackExecutor);
 		System.setProperty("FAKE_API_KEY", apikey);
 	}
 

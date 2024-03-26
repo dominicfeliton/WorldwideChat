@@ -42,30 +42,33 @@ public class CachedTranslation implements Comparable<CachedTranslation> {
 
 	@Override
 	public int compareTo(CachedTranslation o) {
-		return o.getInputLang().compareTo(inputLang) +
-				o.getOutputLang().compareTo(outputLang) +
-				o.getInputPhrase().compareTo(inputPhrase);
+		int inputLangComparison = inputLang.compareTo(o.getInputLang());
+		if (inputLangComparison != 0) {
+			return inputLangComparison;
+		}
+		int outputLangComparison = outputLang.compareTo(o.getOutputLang());
+		if (outputLangComparison != 0) {
+			return outputLangComparison;
+		}
+		return inputPhrase.compareTo(o.getInputPhrase());
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (obj == this) {
 			return true;
 		}
-		if (getClass() != obj.getClass()) {
+		if (obj == null || getClass() != obj.getClass()) {
 			return false;
 		}
-		CachedTranslation test = (CachedTranslation) obj;
-		if (test.compareTo(this) == 0) {
-			return true;
-		}
-		return false;
+		CachedTranslation other = (CachedTranslation) obj;
+		return Objects.equals(inputLang, other.inputLang) &&
+				Objects.equals(outputLang, other.outputLang) &&
+				Objects.equals(inputPhrase, other.inputPhrase);
 	}
-	
+
 	@Override
 	public int hashCode() {
-		// TODO: String references may change depending on how Java handles strings
-		//CommonRefs.debugMsg(inputLang);
 		return Objects.hash(inputLang, outputLang, inputPhrase);
 	}
 }

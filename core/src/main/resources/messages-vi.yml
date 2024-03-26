@@ -484,4 +484,14 @@ Messages:
   wwcConfigConversationAzureTranslateRegionInput: Khu vực hiện tại là {0}. Vui lòng
     nhập một vùng cho Azure hoặc nhập 0 để quay trở lại.
   wwcConfigGUIToggleAzureTranslateButton: Chuyển đổi dịch Azure
+  wwcConfigGUISystranTranslateApiKeyButton: Thay đổi khóa API Systran Translate
+  wwcConfigGUIToggleSystranTranslateButton: Bật/tắt dịch Systran
+  wwcConfigConversationSystranTranslateApiKeyInput: Khóa API hiện tại là {0}. Vui
+    lòng nhập khóa API cho Systran hoặc nhập 0 để quay trở lại.
+  wwcISOJSONFail: Không thể sửa các đối tượng ngôn ngữ với ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: Bật thành công Systran Translate.
+    Tải lại để các thay đổi có hiệu lực.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Khóa API Systran được thiết
+    lập thành công.
+  wwcConfigGUISystranTranslateButton: Dịch Systran
 

@@ -488,4 +488,13 @@ Messages:
   wwcConfigConversationAzureTranslateRegionInput: A jelenlegi régió {0}. Adjon meg
     egy régiót az Azure-hoz, vagy írja be a 0 parancsot a visszalépéshez.
   wwcConfigGUIToggleAzureTranslateButton: Az Azure fordítás váltása
+  wwcConfigGUISystranTranslateApiKeyButton: A Systran Translate API kulcs módosítása
+  wwcConfigGUIToggleSystranTranslateButton: Toggle Systran Fordítás
+  wwcConfigConversationSystranTranslateApiKeyInput: Az aktuális API kulcs {0}. Kérjük,
+    írjon be egy API kulcsot a Systran számára, vagy írja be a 0 parancsot a visszalépéshez.
+  wwcISOJSONFail: Nem sikerült kijavítani a nyelvi objektumokat az ISO JSON-val.
+  wwcConfigConversationSystranTranslateToggleSuccess: Sikeresen kapcsolta be a Systran
+    fordítást. Töltse be újra, hogy a változások életbe lépjenek.
+  wwcConfigConversationSystranTranslateApiKeySuccess: A Systran API kulcskészlet sikeresen.
+  wwcConfigGUISystranTranslateButton: Systran Fordítás
 

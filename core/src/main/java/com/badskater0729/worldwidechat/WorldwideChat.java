@@ -2,9 +2,7 @@ package com.badskater0729.worldwidechat;
 
 import java.io.File;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 import com.badskater0729.worldwidechat.util.*;
 import org.apache.commons.lang3.tuple.Pair;
@@ -65,7 +63,7 @@ public class WorldwideChat extends JavaPlugin {
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
 	public static int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "03252024-1"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "03262024-1"; // MMDDYYYY-revisionNumber
 
 	public static WorldwideChat instance;
 	
@@ -80,15 +78,17 @@ public class WorldwideChat extends JavaPlugin {
 
 	private SQLUtils sqlSession;
 
+	private ExecutorService callbackExecutor;
+
 	private ServerAdapterFactory serverFactory;
 
 	private CommonRefs refs;
 	
 	private List<SupportedLang> supportedInputLangs = new CopyOnWriteArrayList<>();
 	private List<SupportedLang> supportedOutputLangs = new CopyOnWriteArrayList<>();
-	private final List<String> playersUsingConfigGUI = new CopyOnWriteArrayList<>();
-	private final Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<>();
-	private final Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<>();
+	private List<String> playersUsingConfigGUI = new CopyOnWriteArrayList<>();
+	private Map<String, PlayerRecord> playerRecords = new ConcurrentHashMap<>();
+	private Map<String, ActiveTranslator> activeTranslators = new ConcurrentHashMap<>();
 
 	private Cache<CachedTranslation, String> cache = Caffeine.newBuilder()
 			.maximumSize(100)
@@ -122,7 +122,8 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		return adventure;
 	}
-	
+
+	public ExecutorService getCallbackExecutor() { return callbackExecutor; }
 	public WWCInventoryManager getInventoryManager() {
 		return inventoryManager;
 	}
@@ -322,11 +323,6 @@ public class WorldwideChat extends JavaPlugin {
 		refs.closeAllInvs();
 		translatorErrorCount = 0;
 
-		/* Save main config on current thread */
-		if (saveMainConfig) {
-			getConfigManager().saveMainConfig(false);
-		}
-
 		/* Send start reload message */
 		if (inSender != null) {
 			final TextComponent wwcrBegin = Component.text()
@@ -341,6 +337,12 @@ public class WorldwideChat extends JavaPlugin {
 			@Override
 			public void run() {
 				final long currentDuration = System.nanoTime();
+				/* Save main config on current thread BEFORE actual reload */
+				if (saveMainConfig) {
+					refs.debugMsg("Saving main config on async thread BEFORE actual reload...");
+					getConfigManager().saveMainConfig(false);
+				}
+
 				cancelBackgroundTasks(true, invalidState, this.getTaskId());
 				loadPluginConfigs(true);
 				
@@ -383,6 +385,9 @@ public class WorldwideChat extends JavaPlugin {
 	  * @param taskID - Task to ignore when cancelling tasks, in case this is being ran async
 	  */
 	public void cancelBackgroundTasks(boolean isReloading, boolean wasPreviouslyInvalid, int taskID) {
+		// Shut down executors
+		callbackExecutor.shutdownNow();
+
 		// Wait for completion + kill all background tasks
 		// Thanks to:
 		// https://gist.github.com/blablubbabc/e884c114484f34cae316c48290b21d8e#file-someplugin-java-L37
@@ -451,6 +456,7 @@ public class WorldwideChat extends JavaPlugin {
 	  * @param isReloading - If this function should accommodate for a plugin reload or not
 	  */
 	public void loadPluginConfigs(boolean isReloading) {
+		callbackExecutor = Executors.newCachedThreadPool();
 		setConfigManager(new ConfigurationHandler());
 
 		// Init and load configs

@@ -446,4 +446,14 @@ Messages:
   wwcConfigConversationAzureTranslateRegionInput: المنطقة الحالية هي {0}. يرجى إدخال
     منطقة لـ Azure، أو اكتب 0 للعودة.
   wwcConfigGUIToggleAzureTranslateButton: قم بتبديل ترجمة أزور
+  wwcConfigGUISystranTranslateApiKeyButton: تغيير مفتاح واجهة برمجة تطبيقات ترجمة
+    النظام
+  wwcConfigGUIToggleSystranTranslateButton: تبديل ترجمة النظام
+  wwcConfigConversationSystranTranslateApiKeyInput: مفتاح API الحالي هو {0}. يرجى
+    إدخال مفتاح API لـ Systran، أو اكتب 0 للعودة.
+  wwcISOJSONFail: غير قادر على إصلاح كائنات اللغة باستخدام ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: تم تبديل ترجمة النظام بنجاح.
+    أعد التحميل لتصبح التغييرات سارية المفعول.
+  wwcConfigConversationSystranTranslateApiKeySuccess: تم تعيين مفتاح Systran API بنجاح.
+  wwcConfigGUISystranTranslateButton: ترجمة النظام
 

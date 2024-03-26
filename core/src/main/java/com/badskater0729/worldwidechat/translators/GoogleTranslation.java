@@ -25,25 +25,22 @@ import com.google.cloud.translate.TranslateOptions;
 
 public class GoogleTranslation extends BasicTranslation {
 
-	public GoogleTranslation(String textToTranslate, String inputLang, String outputLang) {
-		super(textToTranslate, inputLang, outputLang);
+	public GoogleTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
+		super(textToTranslate, inputLang, outputLang, callbackExecutor);
 	}
 
-	public GoogleTranslation(String apikey, boolean isInitializing) {
-		super(isInitializing);
+	public GoogleTranslation(String apikey, boolean isInitializing, ExecutorService callbackExecutor) {
+		super(isInitializing, callbackExecutor);
 		System.setProperty("GOOGLE_API_KEY", apikey); // we do this because .setApi() spams console :(
 	}
 
 	@Override
 	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
-		ExecutorService executor = Executors.newSingleThreadExecutor();
-		Future<String> process = executor.submit(new translationTask());
+		Future<String> process = callbackExecutor.submit(new translationTask());
 		String finalOut = "";
 		
 		/* Get translation */
 		finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
-		process.cancel(true);
-		executor.shutdownNow();
 		
 		return finalOut;
 	}
@@ -71,8 +68,8 @@ public class GoogleTranslation extends BasicTranslation {
 				}
 
 				/* Set languages list */
-				main.setOutputLangs(outLangList);
-				main.setInputLangs(inLangList);
+				main.setOutputLangs(refs.fixLangNames(outLangList, true));
+				main.setInputLangs(refs.fixLangNames(inLangList, true));
 
 				/* Setup test translation */
 				inputLang = "en";

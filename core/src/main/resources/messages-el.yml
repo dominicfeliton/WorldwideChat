@@ -519,4 +519,14 @@ Messages:
   wwcConfigConversationAzureTranslateRegionInput: Η τρέχουσα περιοχή είναι {0}. Εισαγάγετε
     μια περιοχή για το Azure ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigGUIToggleAzureTranslateButton: Εναλλαγή μετάφρασης Azure
+  wwcConfigGUISystranTranslateApiKeyButton: Αλλαγή κλειδιού API μετάφρασης Systran
+  wwcConfigGUIToggleSystranTranslateButton: Εναλλαγή μετάφρασης Systran
+  wwcConfigConversationSystranTranslateApiKeyInput: Το τρέχον κλειδί API είναι {0}.
+    Εισαγάγετε ένα κλειδί API για το Systran ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcISOJSONFail: Δεν είναι δυνατή η διόρθωση αντικειμένων γλώσσας με ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: Ενεργοποιήθηκε επιτυχώς η Μετάφραση
+    Systran. Επαναφόρτωση για να τεθούν σε ισχύ οι αλλαγές.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Το κλειδί Systran API ορίστηκε
+    με επιτυχία.
+  wwcConfigGUISystranTranslateButton: Systran Μετάφραση
 

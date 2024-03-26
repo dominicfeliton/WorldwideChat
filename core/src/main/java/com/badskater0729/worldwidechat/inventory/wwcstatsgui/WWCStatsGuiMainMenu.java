@@ -35,7 +35,7 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 	public WWCStatsGuiMainMenu(String targetPlayerUUID) {
 		this.targetPlayerUUID = targetPlayerUUID;
 		this.targetPlayerName = main.getServer()
-				.getPlayer(UUID.fromString(targetPlayerUUID)).getName();
+				.getOfflinePlayer(UUID.fromString(targetPlayerUUID)).getName();
 	}
 	
 	public SmartInventory getStatsMainMenu() {

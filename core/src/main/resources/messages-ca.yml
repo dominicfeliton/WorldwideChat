@@ -508,4 +508,15 @@ Messages:
   wwcConfigConversationAzureTranslateRegionInput: La regió actual és {0}. Si us plau,
     introduïu una regió per a Azure, o escriviu 0 per tornar enrere.
   wwcConfigGUIToggleAzureTranslateButton: Canvia la traducció d'Azure
+  wwcConfigGUISystranTranslateApiKeyButton: Canviar la clau de l'API de Traduir de
+    Systran
+  wwcConfigGUIToggleSystranTranslateButton: Toggle Systran Traduir
+  wwcConfigConversationSystranTranslateApiKeyInput: La clau de l'API actual és {0}.
+    Si us plau, introduïu una clau API per Systran, o escriviu 0 per tornar enrere.
+  wwcISOJSONFail: No es poden arreglar objectes d'idioma amb ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: S'ha alternat amb èxit el Systran
+    Translate. Torna a carregar perquè els canvis entrin en vigor.
+  wwcConfigConversationSystranTranslateApiKeySuccess: La clau de l'API de Systran
+    s'ha establert amb èxit.
+  wwcConfigGUISystranTranslateButton: Systran Tradueix
 

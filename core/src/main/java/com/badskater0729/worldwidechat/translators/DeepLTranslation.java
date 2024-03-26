@@ -21,25 +21,22 @@ import com.deepl.api.Translator;
 
 public class DeepLTranslation extends BasicTranslation {
 
-	public DeepLTranslation(String textToTranslate, String inputLang, String outputLang) {
-		super(textToTranslate, inputLang, outputLang);
+	public DeepLTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
+		super(textToTranslate, inputLang, outputLang, callbackExecutor);
 	}
 	
-	public DeepLTranslation(String apikey, boolean isInitializing) {
-		super(isInitializing);
+	public DeepLTranslation(String apikey, boolean isInitializing, ExecutorService callbackExecutor) {
+		super(isInitializing, callbackExecutor);
 		System.setProperty("DEEPL_API_KEY", apikey);
 	}
 
 	@Override
 	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
-		ExecutorService executor = Executors.newSingleThreadExecutor();
-		Future<String> process = executor.submit(new translationTask());
+		Future<String> process = callbackExecutor.submit(new translationTask());
 		String finalOut = "";
 		
 		/* Get translation */
 		finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
-		process.cancel(true);
-		executor.shutdownNow();
 		
 		return finalOut;
 	}
@@ -63,8 +60,8 @@ public class DeepLTranslation extends BasicTranslation {
 				}
 
 				/* Set languages list */
-				main.setOutputLangs(targetLangs);
-				main.setInputLangs(sourceLangs);
+				main.setOutputLangs(refs.fixLangNames(targetLangs, true));
+				main.setInputLangs(refs.fixLangNames(sourceLangs, true));
 
 				/* Setup test translation */
 				inputLang = "en";

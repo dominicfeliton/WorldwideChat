@@ -10,6 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 import com.badskater0729.worldwidechat.translators.*;
 import org.apache.commons.lang3.exception.ExceptionUtils;
@@ -35,6 +36,7 @@ import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.ReplaceOptions;
 
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
+import org.apache.commons.lang3.tuple.Pair;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
 
@@ -308,54 +310,14 @@ public class ConfigurationHandler {
 			if (refs.serverIsStopping()) return;
 			try {
 				main.getLogger().warning(refs.getMsg("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}));
-				BasicTranslation test;
-				if (mainConfig.getBoolean("Translator.useWatsonTranslate")) {
-					outName = "Watson";
-					test = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
-							mainConfig.getString("Translator.watsonURL"), true);
-					test.useTranslator();
-					break;
-				} else if (mainConfig.getBoolean("Translator.useGoogleTranslate")) {
-					outName = "Google Translate";
-					test = new GoogleTranslation(
-							mainConfig.getString("Translator.googleTranslateAPIKey"), true);
-					test.useTranslator();
-					break;
-				} else if (mainConfig.getBoolean("Translator.useAmazonTranslate")) {
-					outName = "Amazon Translate";
-					test = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
-							mainConfig.getString("Translator.amazonSecretKey"),
-							mainConfig.getString("Translator.amazonRegion"), true);
-					test.useTranslator();
-					break;
-				} else if (mainConfig.getBoolean("Translator.useLibreTranslate")) {
-					outName = "Libre Translate";
-					test = new LibreTranslation(mainConfig.getString("Translator.libreAPIKey"),
-							mainConfig.getString("Translator.libreURL"), true);
-					test.useTranslator();
-					break;
-				} else if (mainConfig.getBoolean("Translator.useDeepLTranslate")) {
-					outName = "DeepL Translate";
-					test = new DeepLTranslation(mainConfig.getString("Translator.deepLAPIKey"), true);
-					test.useTranslator();
-					break;
-				} else if (mainConfig.getBoolean("Translator.useAzureTranslate")) {
-					outName = "Azure Translate";
-					test = new AzureTranslation(mainConfig.getString("Translator.azureAPIKey"),
-							mainConfig.getString("Translator.azureRegion"),
-							true);
-					test.useTranslator();
-					break;
-				} else if (mainConfig.getBoolean("Translator.testModeTranslator")) {
-					outName = "JUnit/MockBukkit Testing Translator";
-					test = new TestTranslation(
-							"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu", true);
-					test.useTranslator();
-					break;
-				} else {
-					outName = "Invalid";
-					break;
+				for (Pair<String, String> eaPair : CommonRefs.translatorPairs) {
+					if (mainConfig.getBoolean(eaPair.getKey())) {
+						refs.getTranslatorResult(eaPair.getValue(), true);
+						outName = eaPair.getValue();
+						break;
+					}
 				}
+				if (!outName.equals("Invalid")) break;
 			} catch (Exception e) {
 				main.getLogger().severe("(" + outName + ") " + e.getMessage());
 				e.printStackTrace();

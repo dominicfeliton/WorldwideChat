@@ -27,27 +27,24 @@ import com.ibm.watson.language_translator.v3.model.TranslationResult;
 public class WatsonTranslation extends BasicTranslation {
 
 	// For normal translation operation
-	public WatsonTranslation(String textToTranslate, String inputLang, String outputLang) {
-		super(textToTranslate, inputLang, outputLang);
+	public WatsonTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
+		super(textToTranslate, inputLang, outputLang, callbackExecutor);
 	}
 
 	// For initializeConnection
-	public WatsonTranslation(String apikey, String serviceUrl, boolean isInitializing) {
-		super(isInitializing);
+	public WatsonTranslation(String apikey, String serviceUrl, boolean isInitializing, ExecutorService callbackExecutor) {
+		super(isInitializing, callbackExecutor);
 		System.setProperty("WATSON_API_KEY", apikey);
 		System.setProperty("WATSON_SERVICE_URL", serviceUrl);
 	}
 
 	@Override
 	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
-		ExecutorService executor = Executors.newSingleThreadExecutor();
-		Future<String> process = executor.submit(new translationTask());
+		Future<String> process = callbackExecutor.submit(new translationTask());
 		String finalOut = "";
 		
 		/* Get test translation */
 		finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
-		process.cancel(true);
-		executor.shutdownNow();
 		
 		/* Return final result */
 		return finalOut;
@@ -107,13 +104,12 @@ public class WatsonTranslation extends BasicTranslation {
 					.source(inputLang.equalsIgnoreCase("None") ? "" : inputLang).target(outputLang).build();
 
 			/* Process final output */
-			// TODO: This works, but rewrite with Gson
 			TranslationResult translationResult = translatorService.translate(options).execute().getResult();
 			JsonElement jsonTree = JsonParser.parseString(translationResult.toString());
 			JsonObject jsonObject = jsonTree.getAsJsonObject();
 			JsonElement translationSection = jsonObject.getAsJsonArray("translations").get(0).getAsJsonObject()
 					.get("translation");
-			String finalOut = translationSection.toString().substring(1, translationSection.toString().length() - 1);
+			String finalOut = translationSection.getAsString();
 
 			/* Return result */
 			return finalOut;

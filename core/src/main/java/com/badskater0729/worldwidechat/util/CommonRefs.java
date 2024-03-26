@@ -1,8 +1,7 @@
 package com.badskater0729.worldwidechat.util;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.lang.reflect.Type;
 import java.text.MessageFormat;
 import java.util.*;
 import java.util.concurrent.Callable;
@@ -15,6 +14,15 @@ import java.util.concurrent.TimeoutException;
 import java.util.regex.Matcher;
 
 import com.badskater0729.worldwidechat.translators.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.google.gson.annotations.SerializedName;
+import com.google.gson.reflect.TypeToken;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.apache.commons.text.StringEscapeUtils;
@@ -60,6 +68,17 @@ public class CommonRefs {
 			"el", "gu", "ht", "ha", "he", "hi", "hu", "is", "id", "it", "ja", "kn", "kk", "ko", "lv", "lt", "mk", "mr", "ms",
 			"ml", "mt", "mn", "no", "fa", "pa", "ps", "pl", "pt", "pt-PT", "ro", "ru", "sr", "si", "sk", "sl", "so", "es", "es-MX",
 			"sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy" };
+
+	public static List<Pair<String, String>> translatorPairs = new ArrayList<>(Arrays.asList(
+			Pair.of("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator"),
+			Pair.of("Translator.useGoogleTranslate", "Google Translate"),
+			Pair.of("Translator.useAmazonTranslate", "Amazon Translate"),
+			Pair.of("Translator.useLibreTranslate", "Libre Translate"),
+			Pair.of("Translator.useDeepLTranslate", "DeepL Translate"),
+			Pair.of("Translator.useWatsonTranslate", "Watson"),
+			Pair.of("Translator.useAzureTranslate", "Azure Translate"),
+			Pair.of("Translator.useSystranTranslate", "Systran Translate")
+	));
 
 	public void runAsync(BukkitRunnable in) {
 		runAsync(true, in);
@@ -217,6 +236,43 @@ public class CommonRefs {
 			out = out.substring(0, out.lastIndexOf(","));
 		}
 		return out;
+	}
+
+	/**
+	 * Fixes a given list of SupportedLangs to include native names/language names
+	 * @param in - List of SupportedLang objs
+	 * @param nativesOnly - Whether we should add regular lang names as well as native langs
+	 * @return - The fixed list of supportedLang objs
+	 */
+	public List<SupportedLang> fixLangNames(List<SupportedLang> in, boolean nativesOnly) {
+		// Adjust the file path as necessary
+		String isoJsonFilePath = "ISO_639-2.min.json";
+		ObjectMapper objectMapper = new ObjectMapper();
+		Map<String, ISOLanguage> languageMap;
+
+		try {
+			languageMap = objectMapper.readValue(main.getResource(isoJsonFilePath), new TypeReference<Map<String, ISOLanguage>>(){});
+			for (int i = 0; i < in.size(); i++) {
+				SupportedLang currLang = in.get(i);
+				String currCode = currLang.getLangCode();
+				ISOLanguage jsonLang = languageMap.get(currCode);
+
+				if (jsonLang != null) {
+					if (nativesOnly) {
+						in.set(i, new SupportedLang(currLang.getLangCode(), currLang.getLangName(), jsonLang.getNativeName()));
+					} else {
+						in.set(i, new SupportedLang(currLang.getLangCode(), jsonLang.getIntName(), jsonLang.getNativeName()));
+					}
+				} else {
+					debugMsg("Could not find " + currCode + " in JSON!");
+				}
+			}
+		} catch (Exception e) {
+			//e.printStackTrace();
+			main.getLogger().warning(getMsg("wwcISOJSONFail"));
+		}
+
+		return in;
 	}
 
 	/**
@@ -380,7 +436,7 @@ public class CommonRefs {
 	public Component deserial(String str) {
 		return LegacyComponentSerializer.legacyAmpersand().deserialize(str);
 	}
-	
+
 	/**
 	  * Translates text using the selected translator.
 	  * @param inMessage - The original message to be translated.
@@ -426,11 +482,11 @@ public class CommonRefs {
 				sendMsg(currPlayer, charLimit);
 				return inMessage;
 			}
-			
+
 			/* Check cache */
 			CachedTranslation testTranslation = new CachedTranslation(currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), inMessage);
 			String testCache = main.getCacheTerm(testTranslation);
-			
+
 			if (testCache != null) {
 				currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
 				currPlayerRecord.setLastTranslationTime();
@@ -496,48 +552,7 @@ public class CommonRefs {
 			/* Begin actual translation, set message to output */
 			String out = inMessage;
 			debugMsg("Translating a message (in " + currActiveTranslator.getInLangCode() + ") from " + currActiveTranslator.getUUID() + " to " + currActiveTranslator.getOutLangCode() + ".");
-			switch (main.getTranslatorName()) {
-			case "Watson":
-				WatsonTranslation watsonInstance = new WatsonTranslation(inMessage,
-						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
-				// Get username + pass from config
-				out = watsonInstance.useTranslator();
-				break;
-			case "Google Translate":
-				GoogleTranslation googleTranslateInstance = new GoogleTranslation(inMessage,
-						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
-				out = googleTranslateInstance.useTranslator();
-				break;
-			case "Amazon Translate":
-				AmazonTranslation amazonTranslateInstance = new AmazonTranslation(inMessage,
-						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
-				out = amazonTranslateInstance.useTranslator();
-				break;
-			case "Libre Translate":
-				LibreTranslation libreTranslateInstance = new LibreTranslation(inMessage,
-						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
-				out = libreTranslateInstance.useTranslator();
-				break;
-			case "DeepL Translate":
-				DeepLTranslation deeplTranslateInstance = new DeepLTranslation(inMessage,
-						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
-			    out = deeplTranslateInstance.useTranslator();
-			    break;
-			case "Azure Translate":
-				AzureTranslation azureTranslateInstance = new AzureTranslation(inMessage,
-						currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode());
-				out = azureTranslateInstance.useTranslator();
-				break;
-			case "JUnit/MockBukkit Testing Translator":
-				TestTranslation testTranslator = new TestTranslation(inMessage, currActiveTranslator.getInLangCode(),
-						currActiveTranslator.getOutLangCode());
-				out = testTranslator.useTranslator();
-				break;
-			default:
-				// Get here if we are adding a new translation service
-				debugMsg("No valid translator currently in use, according to translateText(). Returning original message to " + currPlayer.getName() + "...");
-				return inMessage;
-			}
+			out = getTranslatorResult(main.getTranslatorName(), inMessage, currActiveTranslator.getInLangCode(), currActiveTranslator.getOutLangCode(), false);
 
 			/* Update stats */
 			currPlayerRecord.setSuccessfulTranslations(currPlayerRecord.getSuccessfulTranslations() + 1);
@@ -551,8 +566,7 @@ public class CommonRefs {
 		};
 		
 		/* Start Callback Process */
-		ExecutorService executor = Executors.newSingleThreadExecutor();
-		Future<String> process = executor.submit(result);
+		Future<String> process = main.getCallbackExecutor().submit(result);
 		String finalOut = inMessage;
 		try {
 			/* Get translation */
@@ -622,13 +636,116 @@ public class CommonRefs {
 					}
 				});
 			}
-			process.cancel(true);
-		} finally {
-			executor.shutdownNow();
 		}
 		
 		/* Return final result */
 		return finalOut;
+	}
+
+	public String getTranslatorResult(String translatorName, boolean isInitializing) throws ExecutionException, InterruptedException, TimeoutException {
+		return getTranslatorResult(translatorName, "", "", "", true);
+	}
+
+	public String getTranslatorResult(String translatorName, String inMessage, String inLangCode, String outLangCode, boolean isInitializing) throws ExecutionException, InterruptedException, TimeoutException {
+		String out = inMessage;
+		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
+
+		switch (translatorName) {
+			case "Watson":
+				WatsonTranslation watsonInstance;
+				if (isInitializing) {
+					watsonInstance = new WatsonTranslation(mainConfig.getString("Translator.watsonAPIKey"),
+							mainConfig.getString("Translator.watsonURL"), true, main.getCallbackExecutor());
+				} else {
+					watsonInstance = new WatsonTranslation(inMessage,
+							inLangCode, outLangCode, main.getCallbackExecutor());
+				}
+				out = watsonInstance.useTranslator();
+				break;
+			case "Google Translate":
+				GoogleTranslation googleTranslateInstance;
+				if (isInitializing) {
+					googleTranslateInstance = new GoogleTranslation(
+							mainConfig.getString("Translator.googleTranslateAPIKey"), true, main.getCallbackExecutor());
+				} else {
+					googleTranslateInstance = new GoogleTranslation(inMessage,
+							inLangCode, outLangCode, main.getCallbackExecutor());
+				}
+				out = googleTranslateInstance.useTranslator();
+				break;
+			case "Amazon Translate":
+				AmazonTranslation amazonTranslateInstance;
+				if (isInitializing) {
+					amazonTranslateInstance = new AmazonTranslation(mainConfig.getString("Translator.amazonAccessKey"),
+							mainConfig.getString("Translator.amazonSecretKey"),
+							mainConfig.getString("Translator.amazonRegion"), true, main.getCallbackExecutor());
+				} else {
+					amazonTranslateInstance = new AmazonTranslation(inMessage,
+							inLangCode, outLangCode, main.getCallbackExecutor());
+				}
+				out = amazonTranslateInstance.useTranslator();
+				break;
+			case "Libre Translate":
+				LibreTranslation libreTranslateInstance;
+				if (isInitializing) {
+					libreTranslateInstance = new LibreTranslation(mainConfig.getString("Translator.libreAPIKey"),
+							mainConfig.getString("Translator.libreURL"), true, main.getCallbackExecutor());
+				} else {
+					libreTranslateInstance = new LibreTranslation(inMessage,
+							inLangCode, outLangCode, main.getCallbackExecutor());
+				}
+				out = libreTranslateInstance.useTranslator();
+				break;
+			case "DeepL Translate":
+				DeepLTranslation deeplTranslateInstance;
+				if (isInitializing) {
+					deeplTranslateInstance = new DeepLTranslation(mainConfig.getString("Translator.deepLAPIKey"), true, main.getCallbackExecutor());
+				} else {
+					deeplTranslateInstance = new DeepLTranslation(inMessage,
+							inLangCode, outLangCode, main.getCallbackExecutor());
+				}
+				out = deeplTranslateInstance.useTranslator();
+				break;
+			case "Azure Translate":
+				AzureTranslation azureTranslateInstance;
+				if (isInitializing) {
+					azureTranslateInstance = new AzureTranslation(mainConfig.getString("Translator.azureAPIKey"),
+							mainConfig.getString("Translator.azureRegion"),
+							true, main.getCallbackExecutor());
+				} else {
+					azureTranslateInstance = new AzureTranslation(inMessage,
+							inLangCode, outLangCode, main.getCallbackExecutor());
+				}
+				out = azureTranslateInstance.useTranslator();
+				break;
+			case "Systran Translate":
+				SystranTranslation systranTranslateInstance;
+				if (isInitializing) {
+					systranTranslateInstance = new SystranTranslation(mainConfig.getString("Translator.systranAPIKey"),
+							true, main.getCallbackExecutor());
+				} else {
+					systranTranslateInstance = new SystranTranslation(inMessage,
+							inLangCode, outLangCode, main.getCallbackExecutor());
+				}
+				out = systranTranslateInstance.useTranslator();
+				break;
+			case "JUnit/MockBukkit Testing Translator":
+				TestTranslation testTranslator;
+				if (isInitializing) {
+					testTranslator = new TestTranslation(
+							"TXkgYm95ZnJpZW5kICgyMk0pIHJlZnVzZXMgdG8gZHJpbmsgd2F0ZXIgdW5sZXNzIEkgKDI0RikgZHllIGl0IGJsdWUgYW5kIGNhbGwgaXQgZ2FtZXIganVpY2Uu", true, main.getCallbackExecutor());
+				} else {
+					testTranslator = new TestTranslation(inMessage, inLangCode,
+							outLangCode, main.getCallbackExecutor());
+				}
+				out = testTranslator.useTranslator();
+				break;
+			default:
+				// Get here if we are adding a new translation service
+				debugMsg("No valid translator currently in use, according to translateText(). Returning original message...");
+				return inMessage;
+		}
+		return out;
 	}
 	
 	/**
@@ -812,5 +929,20 @@ public class CommonRefs {
 
 	public void badPermsMessage(String correctPerm, CommandSender sender) {
 		sendFancyMsg("wwcBadPerms", "&6" + correctPerm, "&c", sender);
+	}
+
+	static class ISOLanguage {
+		@JsonProperty("int")
+		private List<String> intNames;
+		@JsonProperty("native")
+		private List<String> nativeNames;
+
+		// Getters and Setters
+		public List<String> getIntNames() { return intNames; }
+		public void setIntNames(List<String> intNames) { this.intNames = intNames; }
+		public List<String> getNativeNames() { return nativeNames; }
+		public void setNativeNames(List<String> nativeNames) { this.nativeNames = nativeNames; }
+		public String getIntName() { return intNames.get(0); }
+		public String getNativeName() { return nativeNames.get(0); }
 	}
 }

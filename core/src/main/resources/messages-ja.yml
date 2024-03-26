@@ -383,4 +383,12 @@ Messages:
   wwcConfigConversationAzureTranslateRegionInput: 現在のリージョンは {0} です。Azure のリージョンを入力するか、0
     を入力して戻ってください。
   wwcConfigGUIToggleAzureTranslateButton: Azure 翻訳の切り替え
+  wwcConfigGUISystranTranslateApiKeyButton: シストラン翻訳 API キーを変更
+  wwcConfigGUIToggleSystranTranslateButton: シストラン翻訳の切り替え
+  wwcConfigConversationSystranTranslateApiKeyInput: 現在の API キーは {0} です。Systran の API
+    キーを入力するか、0 を入力して戻ってください。
+  wwcISOJSONFail: ISO JSON で言語オブジェクトを修正できません。
+  wwcConfigConversationSystranTranslateToggleSuccess: Systran 翻訳が正常に切り替わりました。リロードして変更を有効にします。
+  wwcConfigConversationSystranTranslateApiKeySuccess: Systran API キーが正常に設定されました。
+  wwcConfigGUISystranTranslateButton: シストラン翻訳
 

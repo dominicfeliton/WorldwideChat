@@ -425,4 +425,12 @@ Messages:
   wwcConfigConversationAzureTranslateRegionInput: ภูมิภาคปัจจุบันคือ {0}กรุณาป้อนภูมิภาคสำหรับ
     Azure หรือพิมพ์ 0 เพื่อย้อนกลับ
   wwcConfigGUIToggleAzureTranslateButton: สลับการแปล Azure
+  wwcConfigGUISystranTranslateApiKeyButton: เปลี่ยนคีย์ API การแปล Systran
+  wwcConfigGUIToggleSystranTranslateButton: สลับการแปล Systran
+  wwcConfigConversationSystranTranslateApiKeyInput: คีย์ API ปัจจุบันคือ {0}กรุณาป้อนคีย์
+    API สำหรับ Systran หรือพิมพ์ 0 เพื่อกลับไป
+  wwcISOJSONFail: ไม่สามารถแก้ไขวัตถุภาษาด้วย ISO JSON ได้
+  wwcConfigConversationSystranTranslateToggleSuccess: สลับการแปล Systran เรียบร้อยแล้วโหลดใหม่เพื่อให้การเปลี่ยนแปลงมีผล
+  wwcConfigConversationSystranTranslateApiKeySuccess: ชุดคีย์ API ของ Systran ประสบความสำเร็จ
+  wwcConfigGUISystranTranslateButton: แปล Systran
 

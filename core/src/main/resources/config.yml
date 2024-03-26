@@ -54,6 +54,8 @@ Translator:
   useAzureTranslate: false
   azureAPIKey: azure_key_goes_here
   azureRegion: azure_region_goes_here
+  useSystranTranslate: false
+  systranAPIKey: systran_key_goes_here
   translatorCacheSize: 100
   rateLimit: 0
   messageCharLimit: 255

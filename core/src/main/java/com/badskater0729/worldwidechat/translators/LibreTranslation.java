@@ -31,12 +31,12 @@ import com.google.gson.JsonParser;
 public class LibreTranslation extends BasicTranslation {
 
 	CommonRefs refs = main.getServerFactory().getCommonRefs();
-	public LibreTranslation(String textToTranslate, String inputLang, String outputLang) {
-		super(textToTranslate, inputLang, outputLang);
+	public LibreTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
+		super(textToTranslate, inputLang, outputLang, callbackExecutor);
 	}
 
-	public LibreTranslation(String apikey, String serviceUrl, boolean isInitializing) {
-		super(isInitializing);
+	public LibreTranslation(String apikey, String serviceUrl, boolean isInitializing, ExecutorService callbackExecutor) {
+		super(isInitializing, callbackExecutor);
 		if (apikey == null || apikey.equalsIgnoreCase("none")) {
 			System.setProperty("LIBRE_API_KEY", "");
 		} else {
@@ -47,14 +47,11 @@ public class LibreTranslation extends BasicTranslation {
 
 	@Override
 	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
-		ExecutorService executor = Executors.newSingleThreadExecutor();
-		Future<String> process = executor.submit(new translationTask());
+		Future<String> process = callbackExecutor.submit(new translationTask());
 		String finalOut;
 		
 		/* Get translation */
 		finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
-		process.cancel(true);
-		executor.shutdownNow();
 		
 		return finalOut;
 	}

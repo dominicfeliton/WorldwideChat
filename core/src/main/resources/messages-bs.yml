@@ -480,4 +480,13 @@ Messages:
   wwcConfigConversationAzureTranslateRegionInput: Trenutna regija je {0}. Molimo unesite
     regiju za Azure ili upišite 0 da biste se vratili natrag.
   wwcConfigGUIToggleAzureTranslateButton: Prebaci Azure Translate
+  wwcConfigGUISystranTranslateApiKeyButton: Promijenite API ključ Systran Translate
+  wwcConfigGUIToggleSystranTranslateButton: Prebaci Systran Prevod
+  wwcConfigConversationSystranTranslateApiKeyInput: Trenutni API ključ je {0}. Molimo
+    unesite API ključ za Systran ili upišite 0 da biste se vratili natrag.
+  wwcISOJSONFail: Nije moguće popraviti jezičke objekte pomoću ISO JSON-a.
+  wwcConfigConversationSystranTranslateToggleSuccess: Uspješno je prebacio Systran
+    Translate. Ponovno učitajte kako bi promjene stupile na snagu.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Systran API ključ uspješno postavljen.
+  wwcConfigGUISystranTranslateButton: Systran Prevedi
 

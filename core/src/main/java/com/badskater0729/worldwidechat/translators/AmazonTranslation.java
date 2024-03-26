@@ -24,12 +24,12 @@ import com.badskater0729.worldwidechat.util.SupportedLang;
 
 public class AmazonTranslation extends BasicTranslation {
 
-	public AmazonTranslation(String textToTranslate, String inputLang, String outputLang) {
-		super(textToTranslate, inputLang, outputLang);
+	public AmazonTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
+		super(textToTranslate, inputLang, outputLang, callbackExecutor);
 	}
 
-	public AmazonTranslation(String accessKeyId, String secretKeyId, String region, boolean isInitializing) {
-		super(isInitializing);
+	public AmazonTranslation(String accessKeyId, String secretKeyId, String region, boolean isInitializing, ExecutorService callbackExecutor) {
+		super(isInitializing, callbackExecutor);
 		System.setProperty("AMAZON_KEY_ID", accessKeyId);
 		System.setProperty("AMAZON_SECRET_KEY", secretKeyId);
 		System.setProperty("AMAZON_REGION", region);
@@ -37,14 +37,11 @@ public class AmazonTranslation extends BasicTranslation {
 
 	@Override
 	public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
-		ExecutorService executor = Executors.newSingleThreadExecutor();
-		Future<String> process = executor.submit(new translationTask());
+		Future<String> process = callbackExecutor.submit(new translationTask());
 		String finalOut = "";
 		
 		/* Get test translation */
 		finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
-		process.cancel(true);
-		executor.shutdownNow();
 		
 		return finalOut;
 	}
@@ -78,8 +75,8 @@ public class AmazonTranslation extends BasicTranslation {
 				}
 
 				/* Set supported translator langs */
-				main.setInputLangs(supportedLangs);
-				main.setOutputLangs(supportedLangs);
+				main.setInputLangs(refs.fixLangNames(supportedLangs, true));
+				main.setOutputLangs(refs.fixLangNames(supportedLangs, true));
 
 				/* Setup test translation */
 				textToTranslate = "Hi, how are you?";

@@ -479,4 +479,14 @@ Messages:
   wwcConfigConversationAzureTranslateRegionInput: Поточний регіон {0}. Будь ласка,
     введіть регіон для Azure або введіть 0, щоб повернутися назад.
   wwcConfigGUIToggleAzureTranslateButton: Увімкнути переклад Azure
+  wwcConfigGUISystranTranslateApiKeyButton: Змінити ключ API перекладу Systran
+  wwcConfigGUIToggleSystranTranslateButton: Переключити переклад Systran
+  wwcConfigConversationSystranTranslateApiKeyInput: Поточний ключ API {0}. Будь ласка,
+    введіть ключ API для Systran або введіть 0, щоб повернутися назад.
+  wwcISOJSONFail: Не вдається виправити мовні об'єкти за допомогою ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: Успішно переключено переклад
+    Systran. Перезавантажте, щоб зміни вступили в силу.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Успішно встановлено ключ API
+    Systran.
+  wwcConfigGUISystranTranslateButton: Систран Перекласти
 

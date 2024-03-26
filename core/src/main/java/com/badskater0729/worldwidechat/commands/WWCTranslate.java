@@ -40,6 +40,7 @@ public class WWCTranslate extends BasicCommand {
 		// TODO: Add two test-cases.
 		// 1) Add a ton of perm checks (such as making sure another user without perms cannot change/disable trans sessions
 		// 2) Make sure that when you stop a different translation session yours is not stopped as well
+		// TODO: Revamp GUI checks...this is ass
 		/* Sanitize args */
 		if ((isGlobal && args.length > 2) || (!isGlobal && args.length > 3)) {
 			// Too many args

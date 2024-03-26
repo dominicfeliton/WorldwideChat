@@ -373,4 +373,12 @@ Messages:
   wwcConfigConversationAzureTranslateApiKeySuccess: Azure API 密钥设置成功。
   wwcConfigConversationAzureTranslateRegionInput: 当前区域为 {0}。请输入 Azure 的区域，或键入 0 返回。
   wwcConfigGUIToggleAzureTranslateButton: 切换 Azure 翻译
+  wwcConfigGUISystranTranslateApiKeyButton: 更改 Systran Translate API 密钥
+  wwcConfigGUIToggleSystranTranslateButton: 切换 Systran 翻译
+  wwcConfigConversationSystranTranslateApiKeyInput: 当前 API 密钥为 {0}。请输入 Systran 的 API
+    密钥，或键入 0 返回。
+  wwcISOJSONFail: 无法使用 ISO JSON 修复语言对象。
+  wwcConfigConversationSystranTranslateToggleSuccess: 成功切换 Systran 翻译。重新加载以使更改生效。
+  wwcConfigConversationSystranTranslateApiKeySuccess: Systran API 密钥设置成功。
+  wwcConfigGUISystranTranslateButton: Systran 翻译
 

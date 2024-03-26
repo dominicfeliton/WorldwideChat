@@ -516,4 +516,14 @@ Messages:
   wwcConfigConversationAzureTranslateRegionInput: La région actuelle est {0}. Entrez
     une région pour Azure ou saisissez 0 pour revenir en arrière.
   wwcConfigGUIToggleAzureTranslateButton: Activez Azure Translate
+  wwcConfigGUISystranTranslateApiKeyButton: Modifier la clé d'API Systran Translate
+  wwcConfigGUIToggleSystranTranslateButton: Activer/désactiver Systran Translate
+  wwcConfigConversationSystranTranslateApiKeyInput: La clé d'API actuelle est {0}.
+    Entrez une clé API pour Systran ou saisissez 0 pour revenir en arrière.
+  wwcISOJSONFail: Impossible de corriger les objets de langage avec ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: Systran Translate a été activé
+    avec succès. Rechargez pour que les modifications prennent effet.
+  wwcConfigConversationSystranTranslateApiKeySuccess: La clé d'API Systran a été définie
+    avec succès.
+  wwcConfigGUISystranTranslateButton: Systran Translate
 

@@ -192,17 +192,12 @@ public class WWCStats extends BasicCommand {
 				};
 
 				/* Start Callback Process */
-				ExecutorService executor = Executors.newSingleThreadExecutor();
-				Future<?> process = executor.submit(result);
+				Future<?> process = main.getCallbackExecutor().submit(result);
 				try {
 					/* Get translation */
 					process.get(WorldwideChat.translatorFatalAbortSeconds, TimeUnit.SECONDS);
 				} catch (TimeoutException | ExecutionException | InterruptedException e) {
 					if (e instanceof TimeoutException) {refs.sendTimeoutExceptionMsg(sender);}
-					process.cancel(true);
-					this.cancel();
-				} finally {
-					executor.shutdownNow();
 				}
 			}
 		};

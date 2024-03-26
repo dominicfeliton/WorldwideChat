@@ -485,4 +485,14 @@ Messages:
   wwcConfigConversationAzureTranslateRegionInput: Obecny region to {0}. Wprowadź region
     dla platformy Azure lub wpisz 0, aby wrócić.
   wwcConfigGUIToggleAzureTranslateButton: Przełącz Azure Tłumaczenie
+  wwcConfigGUISystranTranslateApiKeyButton: Zmień klucz API Translate Systran
+  wwcConfigGUIToggleSystranTranslateButton: Toggle Systran Przetłumacz
+  wwcConfigConversationSystranTranslateApiKeyInput: Obecny klucz API to {0}. Wprowadź
+    klucz API dla Systran lub wpisz 0, aby wrócić.
+  wwcISOJSONFail: Nie można naprawić obiektów językowych za pomocą ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: Pomyślnie przełączyłem Tłumacz
+    Systran. Przeładuj ponownie, aby zmiany zaczęły obowiązywać.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Klucz API Systran został pomyślnie
+    ustawiony.
+  wwcConfigGUISystranTranslateButton: Systran Przetłumacz
 

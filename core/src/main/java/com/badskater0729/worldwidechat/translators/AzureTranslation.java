@@ -19,26 +19,23 @@ import java.util.concurrent.*;
 
 public class AzureTranslation extends BasicTranslation {
 
-    public AzureTranslation(String textToTranslate, String inputLang, String outputLang) {
-        super(textToTranslate, inputLang, outputLang);
+    public AzureTranslation(String textToTranslate, String inputLang, String outputLang, ExecutorService callbackExecutor) {
+        super(textToTranslate, inputLang, outputLang, callbackExecutor);
     }
 
-    public AzureTranslation(String key, String region, boolean isInitializing) {
-        super(isInitializing);
+    public AzureTranslation(String key, String region, boolean isInitializing, ExecutorService callbackExecutor) {
+        super(isInitializing, callbackExecutor);
         System.setProperty("AZURE_KEY", key);
         System.setProperty("AZURE_REGION", region);
     }
 
     @Override
     public String useTranslator() throws TimeoutException, ExecutionException, InterruptedException {
-        ExecutorService executor = Executors.newSingleThreadExecutor();
-        Future<String> process = executor.submit(new AzureTranslation.translationTask());
+        Future<String> process = callbackExecutor.submit(new AzureTranslation.translationTask());
         String finalOut = "";
 
         /* Get test translation */
         finalOut = process.get(WorldwideChat.translatorConnectionTimeoutSeconds, TimeUnit.SECONDS);
-        process.cancel(true);
-        executor.shutdownNow();
 
         return finalOut;
     }
