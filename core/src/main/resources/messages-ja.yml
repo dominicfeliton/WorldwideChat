@@ -391,4 +391,9 @@ Messages:
   wwcConfigConversationSystranTranslateToggleSuccess: Systran 翻訳が正常に切り替わりました。リロードして変更を有効にします。
   wwcConfigConversationSystranTranslateApiKeySuccess: Systran API キーが正常に設定されました。
   wwcConfigGUISystranTranslateButton: シストラン翻訳
+  wwcrTransFail: WorldwideChatをリロードしましたが、トランスレータを有効にできませんでした。
+  wwcdCacheCleared: 翻訳キャッシュがクリアされました。
+  wwcdCacheSize: キャッシュのサイズは現在 {0} で、制限は {1} です。
+  wwcdCacheTerm: '{0}。キャッシュされた翻訳:入力長= {1}、出力長= {2}、入力フレーズ = {3} | 出力フレーズ = {4}'
+  wwcdInvalidCmd: 引数が無効です!
 

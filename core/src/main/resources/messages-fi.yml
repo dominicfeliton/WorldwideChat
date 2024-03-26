@@ -483,4 +483,11 @@ Messages:
   wwcConfigConversationSystranTranslateApiKeySuccess: Systran API-avain asetettiin
     onnistuneesti.
   wwcConfigGUISystranTranslateButton: Systran Käännä
+  wwcrTransFail: Ladattu WorldwideChat uudelleen, mutta kääntäjän ottaminen käyttöön
+    epäonnistui.
+  wwcdCacheCleared: Käännösvälimuisti tyhjennettiin.
+  wwcdCacheSize: Välimuistin koko on tällä hetkellä {0}, rajoituksena {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, outputLang= {2}, inputPhrase=
+    {3} | outputPhrase= {4}'
+  wwcdInvalidCmd: Virheelliset argumentit!
 

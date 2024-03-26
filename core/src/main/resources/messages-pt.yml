@@ -503,4 +503,10 @@ Messages:
   wwcConfigConversationSystranTranslateApiKeySuccess: A chave da API Systran foi definida
     com sucesso.
   wwcConfigGUISystranTranslateButton: Tradução do Systran
+  wwcrTransFail: O WorldwideChat foi recarregado, mas não foi possível ativar um tradutor.
+  wwcdCacheCleared: O cache de tradução foi limpo.
+  wwcdCacheSize: O tamanho do cache atualmente é {0}, com um limite de {1}.
+  wwcdCacheTerm: '{0}. Tradução em cache: InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwcdInvalidCmd: Argumentos inválidos!
 

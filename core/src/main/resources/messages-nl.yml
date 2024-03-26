@@ -501,4 +501,10 @@ Messages:
   wwcConfigConversationSystranTranslateApiKeySuccess: Systran API-sleutel succesvol
     ingesteld.
   wwcConfigGUISystranTranslateButton: Systran Translate
+  wwcrTransFail: WorldwideChat is opnieuw geladen, maar er is geen vertaler ingeschakeld.
+  wwcdCacheCleared: De vertaalcache is gewist.
+  wwcdCacheSize: De grootte van de cache is momenteel {0}, met een limiet van {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, outputLang= {2}, InputPhrase=
+    {3} | outputPhrase= {4}'
+  wwcdInvalidCmd: Ongeldige argumenten!
 

@@ -497,4 +497,10 @@ Messages:
   wwcConfigConversationSystranTranslateApiKeySuccess: Kľúč Systran API bol úspešne
     nastavený.
   wwcConfigGUISystranTranslateButton: Systran Preložiť
+  wwcrTransFail: Znovu načítal WorldwideChat, ale nepodarilo sa povoliť prekladateľ.
+  wwcdCacheCleared: Vyrovnávacia pamäť prekladu bola vymazaná.
+  wwcdCacheSize: Veľkosť vyrovnávacej pamäte je v súčasnosti {0} s limitom {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwcdInvalidCmd: Neplatné argumenty!
 

@@ -492,4 +492,10 @@ Messages:
     Перезагрузите приложение, чтобы изменения вступили в силу.
   wwcConfigConversationSystranTranslateApiKeySuccess: Ключ Systran API успешно установлен.
   wwcConfigGUISystranTranslateButton: Системный перевод
+  wwcrTransFail: Перезагрузил WorldwideChat, но не смог включить переводчика.
+  wwcdCacheCleared: Кэш переводов был очищен.
+  wwcdCacheSize: Размер кэша в настоящее время равен {0} с ограничением {1}.
+  wwcdCacheTerm: '{0}. Кэшированный перевод: входной Lang = {1}, выходной Lang = {2},
+    входная фраза = {3} | Выходная фраза = {4}'
+  wwcdInvalidCmd: Неверные аргументы!
 

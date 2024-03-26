@@ -17,6 +17,12 @@ commands:
         usage: §4/wwcr
         permission: worldwidechat.wwcr
         permission-message: §4You do not have permission to run this command.
+    wwcd:
+        description: Debug helper for WorldwideChat.
+        aliases: [wwcdebug, translatedebug]
+        usage: §4/wwcd (debugObj) (args)
+        permission: worldwidechat.wwcd
+        permission-message: §4You do not have permission to run this command.
     wwcg:
         description: Enables chat translation to a certain language globally.
         aliases: [wwcglobal, gtranslate]
@@ -89,6 +95,7 @@ permissions:
         children:
             worldwidechat.wwc: true
             worldwidechat.wwcr: true
+            worldwidechat.wwcd: true
             worldwidechat.wwcg: true
             worldwidechat.wwct: true
             worldwidechat.wwct.otherplayers: true
@@ -115,6 +122,9 @@ permissions:
         default: true
     worldwidechat.wwcr:
         description: Gives access to /wwcr.
+        default: op
+    worldwidechat.wwcd:
+        description: Gives access to /wwcd.
         default: op
     worldwidechat.wwcg:
         description: Gives access to /wwcg.

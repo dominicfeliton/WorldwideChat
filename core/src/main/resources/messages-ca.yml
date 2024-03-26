@@ -519,4 +519,11 @@ Messages:
   wwcConfigConversationSystranTranslateApiKeySuccess: La clau de l'API de Systran
     s'ha establert amb èxit.
   wwcConfigGUISystranTranslateButton: Systran Tradueix
+  wwcrTransFail: S'ha tornat a carregar WorldwideChat però no s'ha pogut habilitar
+    un traductor.
+  wwcdCacheCleared: La memòria cau de traducció s'ha esborrat.
+  wwcdCacheSize: La mida de la memòria cau és actualment {0}, amb un límit de {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwcdInvalidCmd: Arguments no vàlids!
 

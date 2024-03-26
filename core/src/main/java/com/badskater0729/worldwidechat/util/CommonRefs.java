@@ -335,12 +335,11 @@ public class CommonRefs {
 		if (messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
 			convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
 		} else {
+			if (messagesConfig.getString("Messages." + ChatColor.stripColor(messageName)) == null) {
+				main.getLogger().severe("Bad message! Please fix your messages-XX.yml.");
+				return ChatColor.RED + "Bad message! Please fix your messages-XX.yml.";
+			}
 			convertedOriginalMessage = messagesConfig.getString("Messages." + ChatColor.stripColor(messageName));
-		}
-
-		if (convertedOriginalMessage == null) {
-			main.getLogger().severe("Bad message! Please fix your messages-XX.yml.");
-			return ChatColor.RED + "Bad message! Please fix your messages-XX.yml.";
 		}
 
 		// Translate color codes in the original message
@@ -362,12 +361,11 @@ public class CommonRefs {
 		if (messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
 			convertedOriginalMessage += ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
 		} else {
+			if (messagesConfig.getString("Messages." + ChatColor.stripColor(messageName)) == null) {
+				main.getLogger().severe("Bad message! Please fix your messages-XX.yml.");
+				return Component.text().content(ChatColor.RED + "Bad message! Please fix your messages-XX.yml.").build();
+			}
 			convertedOriginalMessage += messagesConfig.getString("Messages." + ChatColor.stripColor(messageName));
-		}
-
-		if (convertedOriginalMessage == null) {
-			main.getLogger().severe("Bad message! Please fix your messages-XX.yml.");
-			return Component.text().content(ChatColor.RED + "Bad message! Please fix your messages-XX.yml.").build();
 		}
 
 		// Translate color codes in the original message

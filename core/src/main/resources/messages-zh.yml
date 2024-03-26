@@ -381,4 +381,10 @@ Messages:
   wwcConfigConversationSystranTranslateToggleSuccess: 成功切换 Systran 翻译。重新加载以使更改生效。
   wwcConfigConversationSystranTranslateApiKeySuccess: Systran API 密钥设置成功。
   wwcConfigGUISystranTranslateButton: Systran 翻译
+  wwcrTransFail: 已重新加载全球聊天，但未能启用翻译器。
+  wwcdCacheCleared: 翻译缓存已清除。
+  wwcdCacheSize: 缓存的大小当前为 {0}，限制为 {1}。
+  wwcdCacheTerm: '{0}。CachedTranslation: inputLang= {1}，outputLang= {2}，inputPhrase=
+    {3} | outputPhrase= {4}'
+  wwcdInvalidCmd: 参数无效！
 

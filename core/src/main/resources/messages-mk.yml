@@ -504,4 +504,10 @@ Messages:
   wwcConfigConversationSystranTranslateApiKeySuccess: Клучот на Systran API е успешно
     поставен.
   wwcConfigGUISystranTranslateButton: Систран Преведи
+  wwcrTransFail: Повторно се вчита WorldwideChat, но не успеа да овозможи преведувач.
+  wwcdCacheCleared: Кешот за превод беше исчистен.
+  wwcdCacheSize: Големината на кешот моментално е {0}, со ограничување од {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:Влезна должина = {1}, излезна должина = {2},
+    влезна фраза = {3} | излезна фраза = {4}'
+  wwcdInvalidCmd: Невалидни аргументи!
 

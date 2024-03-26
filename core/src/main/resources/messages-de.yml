@@ -537,4 +537,11 @@ Messages:
   wwcConfigConversationSystranTranslateApiKeySuccess: Der Systran API-Schlüssel wurde
     erfolgreich gesetzt.
   wwcConfigGUISystranTranslateButton: Systran Übersetzen
+  wwcrTransFail: WorldwideChat wurde neu geladen, aber es konnte kein Übersetzer aktiviert
+    werden.
+  wwcdCacheCleared: Der Übersetzungscache wurde geleert.
+  wwcdCacheSize: Die Größe des Caches ist derzeit {0}, mit einem Limit von {1}.
+  wwcdCacheTerm: '{0}. Zwischengespeicherte Übersetzung: inputLang= {1}, outputLang=
+    {2}, inputPhrase= {3} | outputPhrase= {4}'
+  wwcdInvalidCmd: Ungültige Argumente!
 

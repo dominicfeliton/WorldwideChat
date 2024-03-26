@@ -260,8 +260,14 @@ Messages:
   wwcConfigConversationMongoUsernameSuccess: 'Successfully changed the MongoDB username.'
   #------------------- /wwcr Messages -------------------
   wwcrBegin: 'Reloading WorldwideChat...'
+  wwcrTransFail: 'Reloaded WorldwideChat but failed to enable a translator.'
   wwcrSuccess: 'Successfully reloaded WorldwideChat.'
   wwcrFail: 'Failed to reload WorldwideChat.'
+  #------------------- /wwcd Messages -------------------
+  wwcdCacheSize: 'The size of the cache is currently {0}, with a limit of {1}.'
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang={1},outputLang={2},inputPhrase={3} | outputPhrase={4}'
+  wwcdCacheCleared: 'The translation cache was cleared.'
+  wwcdInvalidCmd: 'Invalid arguments!'
   #------------------- /wwcs Messages -------------------
   wwcsTitle: 'Record of {0}'
   wwcsIsActiveTranslator: 'Is Active Translator: {0}'
