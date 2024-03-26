@@ -400,8 +400,7 @@ public class ConfigurationHandler {
 	/* Sync user data to storage */
 	public void syncData(boolean wasPreviouslyInvalid) {
 		/* If our translator is Invalid, do not run this code */
-		//TODO: Investigate why mockbukkit no longer works here
-		if (wasPreviouslyInvalid || main.getTranslatorName().equals("JUnit/MockBukkit Testing Translator")) {
+		if (wasPreviouslyInvalid) {
 			return;
 		}
 		if (sql != null && sql.isConnected()) {
@@ -566,6 +565,10 @@ public class ConfigurationHandler {
 			
 			// Delete any old activeTranslators
 			File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
+			if (userSettingsDir.list() == null) {
+				refs.debugMsg("Creating dir at " + userSettingsDir.toString());
+				userSettingsDir.mkdir();
+			}
 			for (String eaName : userSettingsDir.list()) {
 				File currFile = new File(userSettingsDir, eaName);
 				if (!main.isActiveTranslator(currFile.getName().substring(0, currFile.getName().indexOf(".")))) {
@@ -633,10 +636,17 @@ public class ConfigurationHandler {
 
 	/* Stats YAML File Saver */
 	public void createStatsConfig(PlayerRecord inRecord) {
+		File userStatsDir = new File(main.getDataFolder() + File.separator + "stats");
 		File userStatsFile;
 		YamlConfiguration userStatsConfig;
-		userStatsFile = new File(main.getDataFolder() + File.separator + "stats" + File.separator,
+
+		if (userStatsDir.list() == null) {
+			refs.debugMsg("Creating dir at " + userStatsDir.toString());
+			userStatsDir.mkdir();
+		}
+		userStatsFile = new File(userStatsDir + File.separator,
 				inRecord.getUUID() + ".yml");
+		//refs.debugMsg((new File(main.getDataFolder() + File.separator + "stats")).list().toString());
 
 		/* Load config */
 		userStatsConfig = YamlConfiguration.loadConfiguration(userStatsFile);

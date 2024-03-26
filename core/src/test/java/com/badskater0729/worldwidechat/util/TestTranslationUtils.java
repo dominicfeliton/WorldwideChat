@@ -6,6 +6,7 @@ import com.badskater0729.worldwidechat.WorldwideChat;
 
 import be.seeseemelk.mockbukkit.ServerMock;
 import be.seeseemelk.mockbukkit.entity.PlayerMock;
+import com.badskater0729.worldwidechat.WorldwideChatTests;
 
 public class TestTranslationUtils {
 
@@ -50,21 +51,26 @@ public class TestTranslationUtils {
 
 
 	public void testPluginDataRetention() {
-		/*
 		assertTrue(plugin.getActiveTranslator(playerMock).getOutLangCode().equals("es")
 				&& plugin.getPlayerRecord(playerMock, false).getAttemptedTranslations() > 0);
 		assertTrue(plugin.getActiveTranslator(secondPlayerMock).getOutLangCode().equals("es")
 				&& plugin.getPlayerRecord(secondPlayerMock, false)
 						.getAttemptedTranslations() > 0);
+
+		server.getLogger().info("RUNNING DATA RETENTION TEST: wwct en fr");
 		playerMock.performCommand("worldwidechat:wwct en fr");
-		secondPlayerMock.performCommand("worldwidechat:wwct es en");
+		server.getLogger().info("RUNNING DATA RETENTION TEST: wwct en es");
+		secondPlayerMock.performCommand("worldwidechat:wwct en es");
+		int beforeReloadCount = plugin.getPlayerRecord(secondPlayerMock, false).getAttemptedTranslations();
+		assertTrue(refs.translateText("Hello, how are you?", secondPlayerMock).equals("Hola, como estas?"));
+
 		WorldwideChatTests.reloadWWC();
+
 		assertTrue(plugin.getActiveTranslator(playerMock).getInLangCode().equals("en")
 				&& plugin.getActiveTranslator(playerMock).getOutLangCode().equals("fr"));
-		assertTrue(plugin.getActiveTranslator(secondPlayerMock).getInLangCode().equals("es")
-				&& plugin.getActiveTranslator(secondPlayerMock).getOutLangCode().equals("en"));
-	    */
-		
-		//TODO: Rewrite
+		assertTrue(plugin.getActiveTranslator(secondPlayerMock).getInLangCode().equals("en")
+				&& plugin.getActiveTranslator(secondPlayerMock).getOutLangCode().equals("es"));
+		assertTrue(plugin.getPlayerRecord(secondPlayerMock, false).getAttemptedTranslations() == beforeReloadCount+1);
+		assertTrue(plugin.getPlayerRecord(playerMock, false).getUUID().toString().equals(playerMock.getUniqueId().toString()));
 	}
 }

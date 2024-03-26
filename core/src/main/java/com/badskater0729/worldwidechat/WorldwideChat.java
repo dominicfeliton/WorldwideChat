@@ -150,7 +150,7 @@ public class WorldwideChat extends JavaPlugin {
 		wwcHelper.registerEventHandlers();
 
 		// We made it!
-		refs.debugMsg("Async tasks running: " + this.getActiveAsyncTasks());
+		//refs.debugMsg("Async tasks running: " + this.getActiveAsyncTasks());
 		getLogger().info(ChatColor.GREEN + refs.getMsg("wwcEnabled", getPluginVersion()));
 	}
 
@@ -386,6 +386,7 @@ public class WorldwideChat extends JavaPlugin {
     /**
 	  * Wait for and cancel background tasks 
 	  * @param isReloading - If this function should accommodate for a plugin reload or not
+	  * @param wasPreviouslyInvalid - If this plugin was previously in a soft "disabled" state (no functioning translator)
 	  * @param taskID - Task to ignore when cancelling tasks, in case this is being ran async
 	  */
 	public void cancelBackgroundTasks(boolean isReloading, boolean wasPreviouslyInvalid, int taskID) {
@@ -464,6 +465,7 @@ public class WorldwideChat extends JavaPlugin {
 		// Init and load configs
 		configurationManager.initMainConfig();
 		configurationManager.initMessagesConfig();
+
 		configurationManager.loadMainSettings();
 		configurationManager.loadStorageSettings();
 		configurationManager.loadTranslatorSettings();
@@ -471,15 +473,9 @@ public class WorldwideChat extends JavaPlugin {
 		/* Run tasks after translator loaded */
 		// Pre-generate hard coded Config UIs
 		MenuGui.genAllConfigUIs();
-		
-		// Check for updates
-		BukkitRunnable update = new BukkitRunnable() {
-			@Override
-			public void run() {
-				new UpdateChecker().run();
-			}
-		};
-		refs.runAsyncRepeating(true, 0, configurationManager.getMainConfig().getInt("General.updateCheckerDelay") * 20, update);
+			
+		// Load saved user data
+		new LoadUserData().run();
 
 		// Schedule automatic user data sync
 		BukkitRunnable sync = new BukkitRunnable() {
@@ -488,16 +484,7 @@ public class WorldwideChat extends JavaPlugin {
 				new SyncUserData().run();
 			}
 		};
-        refs.runAsyncRepeating(true, configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20,  configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20, sync);
-			
-		// Load saved user data
-		BukkitRunnable loadUserData = new BukkitRunnable() {
-			@Override
-			public void run() {
-				new LoadUserData().run();
-			}
-		};
-		refs.runSync(loadUserData);
+		refs.runAsyncRepeating(true, configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20,  configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20, sync);
 
 		// Enable tab completers
 		if (isReloading) {
@@ -511,6 +498,15 @@ public class WorldwideChat extends JavaPlugin {
 		} else {
 			registerTabCompleters();
 		}
+
+		// Check for updates
+		BukkitRunnable update = new BukkitRunnable() {
+			@Override
+			public void run() {
+				new UpdateChecker().run();
+			}
+		};
+		refs.runAsyncRepeating(true, 0, configurationManager.getMainConfig().getInt("General.updateCheckerDelay") * 20, update);
 	}
 
 	/**

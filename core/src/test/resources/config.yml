@@ -15,7 +15,7 @@ General:
   updateCheckerDelay: 86400
   syncUserDataDelay: 7200
   fatalAsyncTaskTimeout: 10
-  enableDebugMode: false
+  enableDebugMode: true
 Storage:
   useSQL: false
   sqlHostname: localhost

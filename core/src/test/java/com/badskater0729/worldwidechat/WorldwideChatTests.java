@@ -628,12 +628,14 @@ public class WorldwideChatTests {
 		resetWWC();
 
 		/* Run tests */
+		// wwct testing
 		testTranslationUtils.testTranslationFunctionSourceTarget();
 		testTranslationUtils.testTranslationFunctionSourceTargetOther();
 		testTranslationUtils.testTranslationFunctionTarget();
 		testTranslationUtils.testTranslationFunctionTargetOther();
 
-		//testTranslationUtils.testPluginDataRetention();
+		// data retention testing
+		testTranslationUtils.testPluginDataRetention();
 
 		/* Print finished message */
 		sendCompletedMessage();
