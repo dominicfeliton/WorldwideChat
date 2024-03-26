@@ -497,4 +497,7 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Nederīgi argumenti!
+  systranHttpUnknown: 'Nezināma http kļūda: {0}'
+  systranHttp400: Slikti parametri nosūtīti Systran. Varētu būt slikts valodu pāris?
+  systranHttp500: Iekšējā servera kļūda no Systran galapunkta ({0}).
 

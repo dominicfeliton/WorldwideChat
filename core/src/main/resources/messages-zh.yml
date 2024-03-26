@@ -387,4 +387,7 @@ Messages:
   wwcdCacheTerm: '{0}。CachedTranslation: inputLang= {1}，outputLang= {2}，inputPhrase=
     {3} | outputPhrase= {4}'
   wwcdInvalidCmd: 参数无效！
+  systranHttpUnknown: 未知的 http 错误：{0}
+  systranHttp400: 向 Systran 发送的参数不正确。可能是一对不好的语言对吗？
+  systranHttp500: 来自 Systran 端点 ({0}) 的内部服务器错误。
 

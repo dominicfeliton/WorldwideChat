@@ -503,4 +503,8 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Érvénytelen argumentumok!
+  systranHttpUnknown: 'Ismeretlen http hiba: {0}'
+  systranHttp400: Rossz paramétereket küldtek a Systran-nak. Lehet, hogy rossz nyelvi
+    pár?
+  systranHttp500: Belső kiszolgálóhiba a Systran végpontból ({0}).
 

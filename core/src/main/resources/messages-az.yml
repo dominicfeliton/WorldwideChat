@@ -488,4 +488,7 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:inputLang = {1}, OutputLang = {2}, inputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Yanlış arqumentlər!
+  systranHttpUnknown: 'Naməlum http xətası: {0}'
+  systranHttp400: Systrana göndərilən pis parametrlər. Pis dil cütlüyü ola bilərmi?
+  systranHttp500: Systran son nöqtəsindən daxili server xətası ({0}).
 

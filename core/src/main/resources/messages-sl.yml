@@ -501,4 +501,7 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Neveljavni argumenti!
+  systranHttpUnknown: 'Neznana napaka http: {0}'
+  systranHttp400: Slabi parametri poslani Systran. Je morda slab jezikovni par?
+  systranHttp500: Napaka notranjega strežnika iz končne točke Systran ({0}).
 

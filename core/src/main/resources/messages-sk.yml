@@ -503,4 +503,8 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Neplatné argumenty!
+  systranHttpUnknown: 'Neznáma chyba http: {0}'
+  systranHttp400: Zlé parametre odoslané spoločnosti Systran. Môže to byť zlý jazykový
+    pár?
+  systranHttp500: Interná chyba servera z koncového bodu Systran ({0}).
 

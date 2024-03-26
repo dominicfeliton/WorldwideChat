@@ -506,4 +506,7 @@ Messages:
   wwcdCacheTerm: '{0}. cachedTranslation:InputLang= {1}, outputLang= {2}, InputPhrase=
     {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Ogiltiga argument!
+  systranHttpUnknown: 'Okänt http-fel: {0}'
+  systranHttp400: Dåliga parametrar skickade till Systran. Kan vara ett dåligt språkpar?
+  systranHttp500: Internt serverfel från Systrans slutpunkt ({0}).
 

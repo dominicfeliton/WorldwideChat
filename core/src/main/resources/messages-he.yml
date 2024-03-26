@@ -448,4 +448,7 @@ Messages:
   wwcdCacheTerm: '{0}. תרגום מטמון: קלט קלט = {1}, תפוקהלנג= {2}, InputPhrase = {3}
     | תפוקPhrase = {4}'
   wwcdInvalidCmd: טיעונים לא חוקיים!
+  systranHttpUnknown: 'שגיאת http לא ידועה: {0}'
+  systranHttp400: פרמטרים רעים שנשלחו לסיסטרן. יכול להיות זוג שפות גרוע?
+  systranHttp500: שגיאת שרת פנימית מנקודת הקצה של Systran ({0}).
 

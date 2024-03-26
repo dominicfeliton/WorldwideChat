@@ -510,4 +510,7 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:Влезна должина = {1}, излезна должина = {2},
     влезна фраза = {3} | излезна фраза = {4}'
   wwcdInvalidCmd: Невалидни аргументи!
+  systranHttpUnknown: 'Непозната грешка http: {0}'
+  systranHttp400: Лоши параметри испратени до Systran. Можеби е лош јазичен пар?
+  systranHttp500: Внатрешна грешка на серверот од крајната точка на Systran ({0}).
 

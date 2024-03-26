@@ -519,4 +519,8 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, outputLang= {2}, inputPhrase=
     {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Argumente nevalide!
+  systranHttpUnknown: 'Eroare http necunoscută: {0}'
+  systranHttp400: Parametrii greșiți trimiși la Systran. Ar putea fi o pereche de
+    limbi proaste?
+  systranHttp500: Eroare internă de server de la punctul final Systran ({0}).
 

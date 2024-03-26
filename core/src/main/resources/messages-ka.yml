@@ -493,4 +493,7 @@ Messages:
   wwcdCacheTerm: '{0}. ქეშდთარლანგმანი:InputLang = {1}, OutputLang= {2}, შეყვანიფრაზა
     = {3} | გამომავალი ფრაზა = {4}'
   wwcdInvalidCmd: არასწორი არგუმენტები
+  systranHttpUnknown: 'უცნობი http შეცდომა: {0}'
+  systranHttp400: ცუდი პარამეტრები გაგზავნილია Systran— შეიძლება იყოს ცუდი ენის წყვილი?
+  systranHttp500: შიდა სერვერის შეცდომა Systran საბოლოო წერტილიდან ({0}).
 

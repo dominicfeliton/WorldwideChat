@@ -491,4 +491,8 @@ Messages:
   wwcdCacheTerm: '{0}. ترجمه ذخیره شده: ورودیلنگ = {1}، خروجی لانگ = {2}، InputPhrase=
     {3} | خروجی Phrase= {4}'
   wwcdInvalidCmd: استدلال های نامعتبر!
+  systranHttpUnknown: 'خطای ناشناخته http: {0}'
+  systranHttp400: پارامترهای بد به Systran ارسال شده است. ممکن است یک جفت زبان بد
+    باشد؟
+  systranHttp500: خطای سرور داخلی از نقطه پایانی Systran ({0}).
 

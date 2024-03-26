@@ -547,4 +547,8 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, outputLang= {2}, inputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Hindi wastong mga argumento!
+  systranHttpUnknown: 'Hindi kilalang error sa http: {0}'
+  systranHttp400: Masamang mga parameter na ipinadala sa Systran. Maaaring maging
+    isang masamang pares ng wika?
+  systranHttp500: Panloob na error sa server mula sa Systran endpoint ({0}).
 

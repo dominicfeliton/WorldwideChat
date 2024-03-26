@@ -526,4 +526,8 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Arguments no vàlids!
+  systranHttpUnknown: 'Error http desconegut: {0}'
+  systranHttp400: Paràmetres dolents enviats a Systran. Pot ser un parell d'idiomes
+    dolent?
+  systranHttp500: Error intern del servidor des del punt final de Systran ({0}).
 

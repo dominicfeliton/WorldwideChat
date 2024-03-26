@@ -544,4 +544,8 @@ Messages:
   wwcdCacheTerm: '{0}. Zwischengespeicherte Übersetzung: inputLang= {1}, outputLang=
     {2}, inputPhrase= {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Ungültige Argumente!
+  systranHttpUnknown: 'Unbekannter HTTP-Fehler: {0}'
+  systranHttp400: Schlechte Parameter wurden an Systran gesendet. Könnte es ein schlechtes
+    Sprachpaar sein?
+  systranHttp500: Interner Serverfehler vom Systran-Endpunkt ({0}).
 

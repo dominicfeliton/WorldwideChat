@@ -537,4 +537,8 @@ Messages:
   wwcdCacheTerm: '{0}. Μετάφραση προσωρινής αποθήκευσης: είσοδοςLang= {1}, έξοδοςLang=
     {2}, InputPhrase= {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Μη έγκυρα επιχειρήματα!
+  systranHttpUnknown: 'Άγνωστο σφάλμα http: {0}'
+  systranHttp400: Κακές παράμετροι στάλθηκαν στο Systran. Μπορεί να είναι ένα κακό
+    ζευγάρι γλωσσών?
+  systranHttp500: Εσωτερικό σφάλμα διακομιστή από το τελικό σημείο Systran ({0}).
 

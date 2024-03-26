@@ -450,7 +450,6 @@ public class WorldwideChat extends JavaPlugin {
 		activeTranslators.clear();
 		cache.invalidateAll();
 		cache.cleanUp();
-		// TODO: Add a function to get various debug info, such as cache contents/clear it
 	}
 
 	/* Load Plugin Configs */
@@ -732,7 +731,7 @@ public class WorldwideChat extends JavaPlugin {
 			return;
 		}
 		
-		// Exceeds max size
+		// Exceeds max size...looks like caffeine removes for us!
 		long estimatedCacheSize = getEstimatedCacheSize();
 		refs.debugMsg("Removed least used phrase in cache if at hard limit. Size after removal test: " + estimatedCacheSize);
 		
@@ -742,7 +741,6 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public void removeCacheTerm(CachedTranslation i) {
-		// TODO: Make sure cache term is removed
 		cache.cleanUp();
 		cache.invalidate(i);
 	}

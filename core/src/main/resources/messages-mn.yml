@@ -506,4 +506,8 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Хүчингүй аргументууд!
+  systranHttpUnknown: 'Үл мэдэгдэх http алдаа: {0}'
+  systranHttp400: Systran руу илгээсэн муу параметрүүд. Муу хэлний хос байж болох
+    уу?
+  systranHttp500: Systran төгсгөлийн цэгээс ({0}) дотоод серверийн алдаа.
 

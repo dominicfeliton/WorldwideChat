@@ -414,4 +414,7 @@ Messages:
   wwcdCacheSize: 현재 캐시 크기는 {0} 이며 제한은 {1} 입니다.
   wwcdCacheTerm: '{0}.캐시된 번역: 입력 랑= {1}, 출력 랭= {2}, 입력프레이즈= {3} | 출력프레이즈= {4}'
   wwcdInvalidCmd: 잘못된 인수!
+  systranHttpUnknown: '알 수 없는 http 오류: {0}'
+  systranHttp400: 잘못된 파라미터가 Systran에 전송되었습니다.언어 쌍이 잘못되었을 수도 있나요?
+  systranHttp500: Systran 엔드포인트 ({0}) 의 내부 서버 오류가 발생했습니다.
 

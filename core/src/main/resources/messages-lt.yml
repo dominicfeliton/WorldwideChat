@@ -497,4 +497,7 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, inputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Neteisingi argumentai!
+  systranHttpUnknown: 'Nežinoma http klaida: {0}'
+  systranHttp400: Blogi parametrai išsiųsti “Systran”. Ar gali būti bloga kalbų pora?
+  systranHttp500: Vidinė serverio klaida iš Systran galutinio taško ({0}).
 

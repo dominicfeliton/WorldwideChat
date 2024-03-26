@@ -134,13 +134,13 @@ public class SystranTranslation extends BasicTranslation {
     }
 
     private void checkError(int statusCode) throws Exception {
-        // TODO: Add these to msgs config
         switch (statusCode) {
             case 400:
+                throw new Exception(refs.getMsg("systranHttp400"));
             case 403:
             case 429:
             case 500:
-                throw new Exception(refs.getMsg("systranHttp" + statusCode));
+                throw new Exception(refs.getMsg("systranHttp500", statusCode + ""));
             default:
                 throw new Exception(refs.getMsg("systranHttpUnknown", statusCode + ""));
         }

@@ -507,4 +507,8 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, outputLang= {2}, InputPhrase=
     {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Ongeldige argumenten!
+  systranHttpUnknown: 'Onbekende http-fout: {0}'
+  systranHttp400: Onjuiste parameters naar Systran gestuurd. Misschien een slechte
+    talencombinatie?
+  systranHttp500: Interne serverfout vanaf het Systran-eindpunt ({0}).
 

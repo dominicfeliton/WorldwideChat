@@ -521,4 +521,8 @@ Messages:
   wwcdCacheTerm: '{0}. Traduzione memorizzata nella cache: inputLang= {1}, outputLang=
     {2}, inputPhrase= {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Argomenti non validi!
+  systranHttpUnknown: 'Errore http sconosciuto: {0}'
+  systranHttp400: Parametri errati inviati a Systran. Potrebbe essere una cattiva
+    combinazione linguistica?
+  systranHttp500: Errore interno del server dall'endpoint Systran ({0}).
 

@@ -388,4 +388,7 @@ Messages:
   wwcdCacheSize: 快取的大小目前為 {0}，限制為 {1}。
   wwcdCacheTerm: '{0}。快取轉譯:輸入長 = {1}, 輸出長度 = {2}, 輸入短語 = {3} | 輸出短語 = {4}'
   wwcdInvalidCmd: 無效的引數！
+  systranHttpUnknown: 未知的 http 錯誤：{0}
+  systranHttp400: 錯誤的參數傳送給系斯特蘭。可能是一對不好的語言對？
+  systranHttp500: 來自 Systran 端點的內部伺服器錯誤 ({0})。
 

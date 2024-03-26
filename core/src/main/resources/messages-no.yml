@@ -480,4 +480,7 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, outputLang= {2}, InputPhrase=
     {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Ugyldige argumenter!
+  systranHttpUnknown: 'Ukjent http-feil: {0}'
+  systranHttp400: Dårlige parametere sendt til Systran. Kan være et dårlig språkpar?
+  systranHttp500: Intern serverfeil fra Systran-endepunktet ({0}).
 

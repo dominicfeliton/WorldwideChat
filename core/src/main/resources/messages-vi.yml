@@ -500,4 +500,7 @@ Messages:
   wwcdCacheTerm: '{0}. cachedTranslation:inputLang= {1}, outputLang= {2}, inputPhrase=
     {3} | outputPhrase = {4}'
   wwcdInvalidCmd: Đối số không hợp lệ!
+  systranHttpUnknown: 'Lỗi http không xác định: {0}'
+  systranHttp400: Thông số xấu được gửi đến Systran. Có thể là một cặp ngôn ngữ xấu?
+  systranHttp500: Lỗi máy chủ nội bộ từ điểm cuối Systran ({0}).
 

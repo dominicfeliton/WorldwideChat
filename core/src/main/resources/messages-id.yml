@@ -492,4 +492,8 @@ Messages:
   wwcdCacheTerm: '{0}. cachedTranslation:inputLang= {1}, outputLang= {2}, inputPhrase=
     {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Argumen tidak valid!
+  systranHttpUnknown: 'Kesalahan http tidak diketahui: {0}'
+  systranHttp400: Parameter buruk dikirim ke Systran. Mungkin pasangan bahasa yang
+    buruk?
+  systranHttp500: Kesalahan server internal dari titik akhir Systran ({0}).
 

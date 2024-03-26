@@ -383,5 +383,9 @@ Messages:
   libreHttp429: 'No confidence due to rate limit from server.'
   libreHttp500: 'Your selected input and output language pair is not supported. Please choose a different language set!'
   libreHttpUnknown: 'Unknown http error: {0}'
+  #------------------- Systran Translator Message -------------------
+  systranHttp400: 'Bad parameters sent to Systran. Might be a bad language pair?'
+  systranHttp500: 'Internal server error from Systran endpoint ({0}).'
+  systranHttpUnknown: 'Unknown http error: {0}'
   #------------------- Other Messages -------------------
   wwcExampleMessage: 'This is a dummy message, and is meant to be overriden as an example.'

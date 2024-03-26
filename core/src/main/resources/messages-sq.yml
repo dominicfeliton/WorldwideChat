@@ -518,4 +518,8 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Argumente të pavlefshme!
+  systranHttpUnknown: 'Gabim http i panjohur: {0}'
+  systranHttp400: Parametrat e këqij dërguar në Systran. Mund të jetë një palë gjuhësore
+    e keqe?
+  systranHttp500: Gabim i brendshëm i serverit nga pika përfundimtare Systran ({0}).
 

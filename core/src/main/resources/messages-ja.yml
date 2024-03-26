@@ -396,4 +396,7 @@ Messages:
   wwcdCacheSize: キャッシュのサイズは現在 {0} で、制限は {1} です。
   wwcdCacheTerm: '{0}。キャッシュされた翻訳:入力長= {1}、出力長= {2}、入力フレーズ = {3} | 出力フレーズ = {4}'
   wwcdInvalidCmd: 引数が無効です!
+  systranHttpUnknown: 不明な HTTP エラー:{0}
+  systranHttp400: Systran に不正なパラメータが送信されました。言語ペアが間違っている可能性はありますか?
+  systranHttp500: Systran エンドポイント ({0}) からの内部サーバーエラー。
 

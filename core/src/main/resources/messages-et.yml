@@ -476,4 +476,7 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Kehtetu argumendid!
+  systranHttpUnknown: 'Tundmatu http viga: {0}'
+  systranHttp400: Halvad parameetrid saadeti Systranile. Võib olla halb keelepaar?
+  systranHttp500: Sisemine serveri viga Systrani lõpppunktist ({0}).
 

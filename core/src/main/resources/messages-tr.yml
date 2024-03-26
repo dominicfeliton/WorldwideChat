@@ -488,4 +488,7 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, outputLang= {2}, inputPhrase=
     {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Geçersiz argümanlar!
+  systranHttpUnknown: 'Bilinmeyen http hatası: {0}'
+  systranHttp400: Systran'a gönderilen kötü parametreler. Kötü bir dil çifti olabilir?
+  systranHttp500: Systran uç noktasından ({0}) dahili sunucu hatası.
 

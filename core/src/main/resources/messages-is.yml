@@ -500,4 +500,7 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Ógild rök!
+  systranHttpUnknown: 'Óþekkt http villa: {0}'
+  systranHttp400: Slæmar breytur sendar til Systran. Getur verið slæmt tungumálapar?
+  systranHttp500: Innri miðlara villa frá Systran endapunkti ({0}).
 

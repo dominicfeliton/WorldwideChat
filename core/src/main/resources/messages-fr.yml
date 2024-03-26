@@ -532,4 +532,9 @@ Messages:
   wwcdCacheTerm: '{0}. Traduction en cache: InputLang= {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Arguments non valides!
+  systranHttpUnknown: 'Erreur HTTP inconnue: {0}'
+  systranHttp400: Mauvais paramètres envoyés à Systran. Peut-être une mauvaise paire
+    de langues?
+  systranHttp500: Erreur interne du serveur provenant du point de terminaison Systran
+    ({0}).
 

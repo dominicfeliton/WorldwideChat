@@ -496,4 +496,7 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Nevažeći argumenti!
+  systranHttpUnknown: 'Nepoznata http pogreška: {0}'
+  systranHttp400: Loši parametri poslani Systranu. Možda je loš jezični par?
+  systranHttp500: Interna pogreška poslužitelja iz krajnje točke Systran ({0}).
 

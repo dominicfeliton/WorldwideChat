@@ -501,4 +501,7 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Nieprawidłowe argumenty!
+  systranHttpUnknown: 'Nieznany błąd http: {0}'
+  systranHttp400: Złe parametry wysłane do Systran. Może to być zła para językowa?
+  systranHttp500: Wewnętrzny błąd serwera z punktu końcowego Systran ({0}).
 

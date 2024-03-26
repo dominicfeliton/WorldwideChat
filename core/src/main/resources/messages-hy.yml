@@ -512,4 +512,8 @@ Messages:
   wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: 'Անվավեր փաստարկներ:'
+  systranHttpUnknown: 'Անհայտ http սխալ: {0}'
+  systranHttp400: 'Վատ պարամետրերը ուղարկվել են Systran- ին: Կարող է վատ լեզվական
+    զույգ լինել:'
+  systranHttp500: 'Ներքին սերվերի սխալ Systran վերջնակետից ({0}):'
 

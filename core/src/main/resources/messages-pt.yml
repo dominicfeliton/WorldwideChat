@@ -509,4 +509,8 @@ Messages:
   wwcdCacheTerm: '{0}. Tradução em cache: InputLang= {1}, OutputLang= {2}, InputPhrase=
     {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Argumentos inválidos!
+  systranHttpUnknown: 'Erro http desconhecido: {0}'
+  systranHttp400: Parâmetros incorretos enviados para o Systran. Pode ser um par linguístico
+    ruim?
+  systranHttp500: Erro interno do servidor do endpoint Systran ({0}).
 
