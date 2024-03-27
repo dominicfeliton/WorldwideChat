@@ -504,4 +504,10 @@ Messages:
   systranHttpUnknown: 'Neznana napaka http: {0}'
   systranHttp400: Slabi parametri poslani Systran. Je morda slab jezikovni par?
   systranHttp500: Napaka notranjega strežnika iz končne točke Systran ({0}).
+  wwcInvalidMongoSession: MongoDB je omogočen v vaši konfiguraciji, vendar povezava
+    ni vzpostavljena. Poskusite znova naložiti, da to popravite, vendar se obrnite
+    na razvijalca, če ste prej prejeli sporočilo o uspešni povezavi od MongoDB.
+  wwcInvalidSQLSession: SQL je omogočen v vaši konfiguraciji, vendar povezava ni vzpostavljena.
+    Če želite to popraviti, poskusite znova naložiti, vendar se obrnite na razvijalca,
+    če ste prej prejeli sporočilo o uspešni povezavi iz SQL.
 

@@ -500,4 +500,11 @@ Messages:
   systranHttpUnknown: 'Nezināma http kļūda: {0}'
   systranHttp400: Slikti parametri nosūtīti Systran. Varētu būt slikts valodu pāris?
   systranHttp500: Iekšējā servera kļūda no Systran galapunkta ({0}).
+  wwcInvalidMongoSession: MongoDB ir iespējots jūsu konfigurācijā, bet savienojums
+    nav izveidots. Lūdzu, mēģiniet atkārtoti ielādēt, lai to labotu, taču, lūdzu,
+    sazinieties ar izstrādātāju, ja iepriekš esat saņēmis veiksmīgu savienojuma ziņojumu
+    no MongoDB.
+  wwcInvalidSQLSession: SQL ir iespējots jūsu konfigurācijā, bet savienojums nav izveidots.
+    Lūdzu, mēģiniet atkārtoti ielādēt, lai to labotu, taču, lūdzu, sazinieties ar
+    izstrādātāju, ja iepriekš esat saņēmis veiksmīgu savienojuma ziņojumu no SQL.
 

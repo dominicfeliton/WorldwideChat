@@ -399,4 +399,8 @@ Messages:
   systranHttpUnknown: 不明な HTTP エラー:{0}
   systranHttp400: Systran に不正なパラメータが送信されました。言語ペアが間違っている可能性はありますか?
   systranHttp500: Systran エンドポイント ({0}) からの内部サーバーエラー。
+  wwcInvalidMongoSession: MongoDB は設定で有効になっていますが、接続が確立されていません。これを修正するにはリロードを試みてください。以前に
+    MongoDB から正常に接続されたというメッセージを受け取った場合は、開発者に連絡してください。
+  wwcInvalidSQLSession: 設定で SQL が有効になっていますが、接続が確立されていません。これを修正するにはリロードを試みてください。以前に
+    SQL から正常に接続されたというメッセージを受け取った場合は、開発者に連絡してください。
 

@@ -110,7 +110,7 @@
               <include>org.apache.maven:maven-artifact</include>
               <include>com.github.cryptomorin:XSeries</include>
               <include>com.zaxxer:HikariCP</include>
-              <include>mysql:*</include>
+              <include>com.mysql:*</include>
               <include>com.github.ben-manes.caffeine:caffeine</include>
               <include>com.squareup.okio:okio-jvm</include>
               <include>org.mongodb:*</include>
@@ -156,6 +156,12 @@
             </filter>
             <filter>
               <artifact>com.github.ben-manes.caffeine:caffeine</artifact>
+              <includes>
+                <include>**</include>
+              </includes>
+            </filter>
+            <filter>
+              <artifact>com.mysql:mysql-connector-j</artifact>
               <includes>
                 <include>**</include>
               </includes>
@@ -264,6 +270,10 @@
             <relocation>
               <pattern>io.github.brenoepics</pattern>
               <shadedPattern>com.badskater0729.worldwidechat.libs.io.github.brenoepics</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>com.mysql</pattern>
+              <shadedPattern>com.badskater0729.worldwidechat.libs.com.mysql</shadedPattern>
             </relocation>
           </relocations>
         </configuration>

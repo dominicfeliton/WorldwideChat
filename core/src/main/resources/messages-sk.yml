@@ -507,4 +507,10 @@ Messages:
   systranHttp400: Zlé parametre odoslané spoločnosti Systran. Môže to byť zlý jazykový
     pár?
   systranHttp500: Interná chyba servera z koncového bodu Systran ({0}).
+  wwcInvalidMongoSession: MongoDB je povolený vo vašej konfigurácii, ale pripojenie
+    nie je nadviazané. Skúste to znova načítať, ale ak ste predtým dostali správu
+    o úspešnom pripojení od MongoDB, kontaktujte vývojára.
+  wwcInvalidSQLSession: SQL je povolený vo vašej konfigurácii, ale pripojenie nie
+    je nadviazané. Skúste to znova načítať, ale ak ste predtým dostali správu o úspešnom
+    pripojení od SQL, obráťte sa na vývojára.
 

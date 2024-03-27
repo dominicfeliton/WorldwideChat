@@ -491,4 +491,12 @@ Messages:
   systranHttpUnknown: 'Bilinmeyen http hatası: {0}'
   systranHttp400: Systran'a gönderilen kötü parametreler. Kötü bir dil çifti olabilir?
   systranHttp500: Systran uç noktasından ({0}) dahili sunucu hatası.
+  wwcInvalidMongoSession: MongoDB yapılandırmanızda etkinleştirildi, ancak bir bağlantı
+    kurulmadı. Lütfen bunu düzeltmek için yeniden yüklemeyi deneyin, ancak daha önce
+    MongoDB'den başarılı bir bağlantı mesajı aldıysanız lütfen geliştiriciyle iletişime
+    geçin.
+  wwcInvalidSQLSession: Yapılandırmanızda SQL etkinleştirildi, ancak bir bağlantı
+    kurulmadı. Lütfen bunu düzeltmek için yeniden yüklemeyi deneyin, ancak daha önce
+    SQL'den başarılı bir bağlantı mesajı aldıysanız lütfen geliştiriciyle iletişime
+    geçin.
 

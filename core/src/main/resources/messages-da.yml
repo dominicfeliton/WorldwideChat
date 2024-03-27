@@ -497,4 +497,11 @@ Messages:
   systranHttpUnknown: 'Ukendt http fejl: {0}'
   systranHttp400: Dårlige parametre sendt til Systran. Kan være et dårligt sprogpar?
   systranHttp500: Intern serverfejl fra Systran-slutpunktet ({0}).
+  wwcInvalidMongoSession: MongoDB er aktiveret i din konfiguration, men en forbindelse
+    er ikke etableret. Prøv at genindlæse for at løse dette, men kontakt venligst
+    udvikleren, hvis du tidligere har modtaget en vellykket forbindelsesmeddelelse
+    fra MongoDB.
+  wwcInvalidSQLSession: SQL er aktiveret i din konfiguration, men en forbindelse er
+    ikke etableret. Prøv at genindlæse for at løse dette, men kontakt udvikleren,
+    hvis du tidligere har modtaget en vellykket forbindelsesmeddelelse fra SQL.
 

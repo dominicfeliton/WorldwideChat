@@ -496,4 +496,10 @@ Messages:
   systranHttp400: Parameter buruk dikirim ke Systran. Mungkin pasangan bahasa yang
     buruk?
   systranHttp500: Kesalahan server internal dari titik akhir Systran ({0}).
+  wwcInvalidMongoSession: MongoDB diaktifkan di konfigurasi Anda, tetapi koneksi tidak
+    dibuat. Silakan coba muat ulang untuk memperbaikinya, tetapi silakan hubungi pengembang
+    jika sebelumnya Anda menerima pesan koneksi yang berhasil dari MongoDB.
+  wwcInvalidSQLSession: SQL diaktifkan di konfigurasi Anda, tetapi koneksi tidak dibuat.
+    Silakan coba muat ulang untuk memperbaikinya, tetapi silakan hubungi pengembang
+    jika sebelumnya Anda menerima pesan koneksi yang berhasil dari SQL.
 

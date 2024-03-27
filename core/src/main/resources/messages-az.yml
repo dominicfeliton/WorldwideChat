@@ -491,4 +491,10 @@ Messages:
   systranHttpUnknown: 'Naməlum http xətası: {0}'
   systranHttp400: Systrana göndərilən pis parametrlər. Pis dil cütlüyü ola bilərmi?
   systranHttp500: Systran son nöqtəsindən daxili server xətası ({0}).
+  wwcInvalidMongoSession: MongoDB konfiqurasiyanızda aktivdir, lakin əlaqə qurulmayıb.
+    Zəhmət olmasa bunu düzəltmək üçün yenidən yükləməyə çalışın, ancaq əvvəllər MongoDB
+    -dən uğurlu bir əlaqə mesajı aldığınız təqdirdə tərtibatçıya əla
+  wwcInvalidSQLSession: SQL konfiqurasiyanızda aktivdir, lakin əlaqə qurulmayıb. Zəhmət
+    olmasa bunu düzəltmək üçün yenidən yükləməyə çalışın, ancaq əvvəllər SQL-dən uğurlu
+    bir əlaqə mesajı alsanız, geliştiriciyə
 

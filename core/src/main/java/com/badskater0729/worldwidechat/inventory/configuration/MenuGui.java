@@ -40,11 +40,10 @@ public class MenuGui implements InventoryProvider {
 		public SmartInventory smartInv;
 	}
 	
-	public static void genAllConfigUIs() {
+	public static void genAllConfigUIs(String transName) {
 		/* Generate inventories */
 		MongoDBUtils mongo = instance.getMongoSession();
 		SQLUtils sql = instance.getSqlSession();
-
 
 		MenuGui generalSet = new MenuGui();
 		CONFIG_GUI_TAGS.GEN_SET.smartInv = generalSet.genSmartInv("generalSettingsMenu", "wwcConfigGUIGeneralSettings");
@@ -168,7 +167,6 @@ public class MenuGui implements InventoryProvider {
 		chatSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));
 		
 		// Translator
-		String transName = instance.getTranslatorName();
 		List<String> translatorToggles = CommonRefs.translatorPairs.stream()
 				.map(Pair::getKey)
 				.toList();

@@ -492,4 +492,10 @@ Messages:
   systranHttpUnknown: 'Nepoznata http greška: {0}'
   systranHttp400: Loši parametri poslati Sistranu. Možda je loš jezički par?
   systranHttp500: Interna greška servera iz krajnje tačke Sistran ({0}).
+  wwcInvalidMongoSession: MongoDB je omogućen u vašoj konfiguraciji, ali veza nije
+    uspostavljena. Pokušajte ponovo da učitate da biste to popravili, ali kontaktirajte
+    programera ako ste prethodno dobili uspešnu poruku o povezivanju od MongoDB-a.
+  wwcInvalidSQLSession: SKL je omogućen u vašoj konfiguraciji, ali veza nije uspostavljena.
+    Pokušajte ponovo da učitate da biste to popravili, ali kontaktirajte programera
+    ako ste prethodno dobili uspešnu poruku o povezivanju od SKL-a.
 

@@ -497,4 +497,10 @@ Messages:
   systranHttpUnknown: 'Kuskuren http da ba a sani ba: {0}'
   systranHttp400: Muggun sigogi da aka aika zuwa Systran. Zai iya zama mummunan harshe?
   systranHttp500: Kuskuren uwar garken ciki daga ƙarshen Systran ({0}).
+  wwcInvalidMongoSession: An kunna MongoDB a cikin daidaitawar ku, amma ba a kafa
+    haɗin kai ba. Da fatan za a gwada sake loda don gyara wannan, amma da fatan za
+    a tuntuɓi mai haɓakawa idan a baya kun sami saƙon haɗin nasara daga MongoDB.
+  wwcInvalidSQLSession: An kunna SQL a cikin daidaitawar ku, amma ba a kafa haɗin
+    kai ba. Da fatan za a gwada sake loda don gyara wannan, amma da fatan za a tuntuɓi
+    mai haɓakawa idan a baya kun sami saƙon haɗin nasara daga SQL.
 

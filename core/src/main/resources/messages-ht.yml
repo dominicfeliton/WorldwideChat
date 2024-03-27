@@ -483,4 +483,10 @@ Messages:
   systranHttpUnknown: 'Erè http enkoni: {0}'
   systranHttp400: Move paramèt voye bay Systran. Ta ka yon pè lang move?
   systranHttp500: Erè sèvè entèn soti nan Systran endpoint ({0}).
+  wwcInvalidMongoSession: MongoDB se pèmèt nan config ou, men se yon koneksyon pa
+    etabli. Tanpri eseye rloading ranje sa a, men tanpri kontakte pwomotè a si ou
+    deja te resevwa yon mesaj koneksyon siksè soti nan MongoDB.
+  wwcInvalidSQLSession: SQL se pèmèt nan config ou, men se yon koneksyon pa etabli.
+    Tanpri eseye rloading ranje sa a, men tanpri kontakte pwomotè a si ou deja te
+    resevwa yon mesaj koneksyon siksè soti nan SQL.
 

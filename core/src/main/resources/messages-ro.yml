@@ -523,4 +523,12 @@ Messages:
   systranHttp400: Parametrii greșiți trimiși la Systran. Ar putea fi o pereche de
     limbi proaste?
   systranHttp500: Eroare internă de server de la punctul final Systran ({0}).
+  wwcInvalidMongoSession: MongoDB este activat în configurația dvs., dar o conexiune
+    nu este stabilită. Încercați să reîncărcați pentru a remedia acest lucru, dar
+    vă rugăm să contactați dezvoltatorul dacă ați primit anterior un mesaj de conectare
+    de succes de la MongoDB.
+  wwcInvalidSQLSession: SQL este activat în configurația dvs., dar o conexiune nu
+    este stabilită. Încercați să reîncărcați pentru a remedia acest lucru, dar vă
+    rugăm să contactați dezvoltatorul dacă ați primit anterior un mesaj de conectare
+    de succes de la SQL.
 

@@ -504,4 +504,10 @@ Messages:
   systranHttp400: Paramedrau gwael a anfonwyd i Systran. Efallai bod yn bâr iaith
     gwael?
   systranHttp500: Gwall gweinydd mewnol o derfyn Systran ({0}).
+  wwcInvalidMongoSession: Mae MongoDB wedi'i alluogi yn eich config, ond nid yw cysylltiad
+    wedi'i sefydlu. Rhowch gynnig ar ail-lwytho i drwsio hyn, ond cysylltwch â'r datblygwr
+    os cawsoch neges gysylltiad llwyddiannus o'r blaen gan MongoDB.
+  wwcInvalidSQLSession: Mae SQL wedi'i alluogi yn eich config, ond nid yw cysylltiad
+    wedi'i sefydlu. Rhowch gynnig ar ail-lwytho i drwsio hyn, ond cysylltwch â'r datblygwr
+    os cawsoch neges gysylltiad llwyddiannus o'r blaen gan SQL.
 

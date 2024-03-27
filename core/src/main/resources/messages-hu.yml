@@ -507,4 +507,12 @@ Messages:
   systranHttp400: Rossz paramétereket küldtek a Systran-nak. Lehet, hogy rossz nyelvi
     pár?
   systranHttp500: Belső kiszolgálóhiba a Systran végpontból ({0}).
+  wwcInvalidMongoSession: A MongoDB engedélyezve van a konfigurációban, de kapcsolat
+    nincs létrehozva. Kérjük, próbálja meg újratölteni ennek kijavításához, de kérjük,
+    vegye fel a kapcsolatot a fejlesztővel, ha korábban sikeres csatlakozási üzenetet
+    kapott a MongoDB-től.
+  wwcInvalidSQLSession: Az SQL engedélyezve van a konfigurációban, de kapcsolat nincs
+    létrehozva. Kérjük, próbálja meg újratölteni ennek kijavításához, de kérjük, vegye
+    fel a kapcsolatot a fejlesztővel, ha korábban sikeres csatlakozási üzenetet kapott
+    az SQL-től.
 

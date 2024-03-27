@@ -503,4 +503,11 @@ Messages:
   systranHttpUnknown: 'Óþekkt http villa: {0}'
   systranHttp400: Slæmar breytur sendar til Systran. Getur verið slæmt tungumálapar?
   systranHttp500: Innri miðlara villa frá Systran endapunkti ({0}).
+  wwcInvalidMongoSession: MongoDB er virkt í stillingunni þinni, en tengingu er ekki
+    komið á fót. Vinsamlegast reyndu að endurhlaða til að laga þetta, en vinsamlegast
+    hafðu samband við verktaki ef þú fékkst áður árangursrík tengingarskilaboð frá
+    MongoDB.
+  wwcInvalidSQLSession: SQL er virkt í stillingunni þinni, en tengingu er ekki komið
+    á fót. Vinsamlegast reyndu að endurhlaða til að laga þetta, en vinsamlegast hafðu
+    samband við verktaki ef þú fékkst áður árangursrík tengingarskilaboð frá SQL.
 

@@ -635,7 +635,9 @@ public class WorldwideChatTests {
 		testTranslationUtils.testTranslationFunctionTargetOther();
 
 		// data retention testing
-		testTranslationUtils.testPluginDataRetention();
+		testTranslationUtils.testPluginDataRetentionYAML();
+		testTranslationUtils.testPluginDataRetentionMongoDB();
+		testTranslationUtils.testPluginDataRetentionSQL();
 
 		/* Print finished message */
 		sendCompletedMessage();

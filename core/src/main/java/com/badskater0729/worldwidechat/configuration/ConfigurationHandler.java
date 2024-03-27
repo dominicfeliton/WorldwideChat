@@ -45,10 +45,6 @@ public class ConfigurationHandler {
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-	private MongoDBUtils mongo = main.getMongoSession();
-
-	private SQLUtils sql = main.getSqlSession();
-
 	private File messagesFile;
 	private File configFile;
 	private YamlConfiguration messagesConfig;
@@ -273,28 +269,30 @@ public class ConfigurationHandler {
 	public void loadStorageSettings() {
 		if (mainConfig.getBoolean("Storage.useSQL")) {
 			try {
-				sql = new SQLUtils(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"),
+				SQLUtils sql = new SQLUtils(mainConfig.getString("Storage.sqlHostname"), mainConfig.getString("Storage.sqlPort"),
 						mainConfig.getString("Storage.sqlDatabaseName"), mainConfig.getString("Storage.sqlUsername"), mainConfig.getString("Storage.sqlPassword"),
 						(List<String>) mainConfig.getList("Storage.sqlOptionalArgs"), mainConfig.getBoolean("Storage.sqlUseSSL"));
 				sql.connect();
+				main.setSqlSession(sql);
 				main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigConnectionSuccess", "SQL"));
 			} catch (Exception e) {
 				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "SQL"));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
-				sql.disconnect(); // Just in case
+				main.getSqlSession().disconnect(); // Just in case
 				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback"));
 			}
 		} else if (mainConfig.getBoolean("Storage.useMongoDB")) {
 			try {
-				mongo = new MongoDBUtils(mainConfig.getString("Storage.mongoHostname"), mainConfig.getString("Storage.mongoPort"),
+				MongoDBUtils mongo = new MongoDBUtils(mainConfig.getString("Storage.mongoHostname"), mainConfig.getString("Storage.mongoPort"),
 						mainConfig.getString("Storage.mongoDatabaseName"), mainConfig.getString("Storage.mongoUsername"),
 						mainConfig.getString("Storage.mongoPassword"), (List<String>) mainConfig.getList("Storage.mongoOptionalArgs"));
 				mongo.connect();
+				main.setMongoSession(mongo);
 				main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigConnectionSuccess", "MongoDB"));
 			} catch (Exception e) {
 				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "MongoDB"));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
-				mongo.disconnect();
+				main.getMongoSession().disconnect();
 				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback"));
 			}
 		} else {
@@ -303,11 +301,11 @@ public class ConfigurationHandler {
 	}
 
 	/* Translator Settings */
-	public void loadTranslatorSettings() {
+	public String loadTranslatorSettings() {
 		String outName = "Invalid";
 		final int maxTries = 3;
 		for (int tryNumber = 1; tryNumber <= maxTries; tryNumber++) {
-			if (refs.serverIsStopping()) return;
+			if (refs.serverIsStopping()) return outName;
 			try {
 				main.getLogger().warning(refs.getMsg("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}));
 				for (Pair<String, String> eaPair : CommonRefs.translatorPairs) {
@@ -330,7 +328,7 @@ public class ConfigurationHandler {
 			main.getLogger().info(ChatColor.GREEN
 					+ refs.getMsg("wwcConfigConnectionSuccess", outName));
 		}
-		main.setTranslatorName(outName);
+		return outName;
 	}
 	
 	/* Main config save method */
@@ -403,7 +401,11 @@ public class ConfigurationHandler {
 		if (wasPreviouslyInvalid) {
 			return;
 		}
-		if (sql != null && sql.isConnected()) {
+
+		SQLUtils sql = main.getSqlSession();
+		MongoDBUtils mongo = main.getMongoSession();
+		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
+		if (refs.isSQLConnValid()) {
 			// Our Generic Table Layout: 
 			// | Creation Date | Object Properties |  
 			try {
@@ -480,7 +482,7 @@ public class ConfigurationHandler {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} else if (mongo != null && mongo.isConnected()) {
+		} else if (refs.isMongoConnValid()) {
 			try {
 				/* Initialize collections */
 				MongoDatabase database = mongo.getActiveDatabase();
@@ -565,10 +567,12 @@ public class ConfigurationHandler {
 			
 			// Delete any old activeTranslators
 			File userSettingsDir = new File(main.getDataFolder() + File.separator + "data" + File.separator);
+			/*
 			if (userSettingsDir.list() == null) {
 				refs.debugMsg("Creating dir at " + userSettingsDir.toString());
 				userSettingsDir.mkdir();
 			}
+			*/
 			for (String eaName : userSettingsDir.list()) {
 				File currFile = new File(userSettingsDir, eaName);
 				if (!main.isActiveTranslator(currFile.getName().substring(0, currFile.getName().indexOf(".")))) {
@@ -640,13 +644,14 @@ public class ConfigurationHandler {
 		File userStatsFile;
 		YamlConfiguration userStatsConfig;
 
+		/*
 		if (userStatsDir.list() == null) {
 			refs.debugMsg("Creating dir at " + userStatsDir.toString());
 			userStatsDir.mkdir();
 		}
+		*/
 		userStatsFile = new File(userStatsDir + File.separator,
 				inRecord.getUUID() + ".yml");
-		//refs.debugMsg((new File(main.getDataFolder() + File.separator + "stats")).list().toString());
 
 		/* Load config */
 		userStatsConfig = YamlConfiguration.loadConfiguration(userStatsFile);

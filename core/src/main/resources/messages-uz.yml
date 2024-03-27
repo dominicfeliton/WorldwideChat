@@ -514,4 +514,12 @@ Messages:
   systranHttp400: Systranga yuborilgan yomon parametrlar. Yomon til juftligi bo'lishi
     mumkinmi?
   systranHttp500: Systran so'nggi nuqtasi ({0}) dan ichki server xatosi.
+  wwcInvalidMongoSession: Sizning config da MongoDB yoqilgan, lekin ulanish o'rnatilmagan.
+    Iltimos, buni tuzatish uchun qayta yuklashni sinab ko'ring, lekin iltimos, iltimos,
+    MongoDB dan muvaffaqiyatli ulanish xabarini olgan bo'lsangiz, ishlab chiquvchiga
+    murojaat qiling.
+  wwcInvalidSQLSession: SQL sizning configingizda yoqilgan, lekin ulanish o'rnatilmagan.
+    Iltimos, buni tuzatish uchun qayta yuklashni sinab ko'ring, lekin iltimos, iltimos,
+    SQLdan muvaffaqiyatli ulanish xabarini olgan bo'lsangiz, ishlab chiquvchiga murojaat
+    qiling.
 

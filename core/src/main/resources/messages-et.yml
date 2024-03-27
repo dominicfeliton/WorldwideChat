@@ -479,4 +479,10 @@ Messages:
   systranHttpUnknown: 'Tundmatu http viga: {0}'
   systranHttp400: Halvad parameetrid saadeti Systranile. Võib olla halb keelepaar?
   systranHttp500: Sisemine serveri viga Systrani lõpppunktist ({0}).
+  wwcInvalidMongoSession: MongoDB on teie konfiguratsioonis lubatud, kuid ühendust
+    pole loodud. Selle parandamiseks proovige uuesti laadida, kuid võtke ühendust
+    arendajaga, kui olete varem saanud MongoDB-lt eduka ühenduse teate.
+  wwcInvalidSQLSession: SQL on teie konfiguratsioonis lubatud, kuid ühendust pole
+    loodud. Selle parandamiseks proovige uuesti laadida, kuid võtke ühendust arendajaga,
+    kui olete varem SQL-ilt eduka ühenduse teate saanud.
 

@@ -53,7 +53,7 @@ public class WorldwideChat extends JavaPlugin {
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
 	public static int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "03262024-3"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "03272024-1"; // MMDDYYYY-revisionNumber
 
 	public static WorldwideChat instance;
 	
@@ -330,13 +330,16 @@ public class WorldwideChat extends JavaPlugin {
 			@Override
 			public void run() {
 				final long currentDuration = System.nanoTime();
+				/* Cancel background tasks before main config saving */
+				// TODO: Add unit test to make sure that storage config changes do not apply until next run
+				cancelBackgroundTasks(true, invalidState, this.getTaskId());
+
 				/* Save main config on current thread BEFORE actual reload */
 				if (saveMainConfig) {
 					refs.debugMsg("Saving main config on async thread BEFORE actual reload...");
 					getConfigManager().saveMainConfig(false);
 				}
 
-				cancelBackgroundTasks(true, invalidState, this.getTaskId());
 				loadPluginConfigs(true);
 				
 				/* Send successfully reloaded message */
@@ -468,16 +471,19 @@ public class WorldwideChat extends JavaPlugin {
 
 		configurationManager.loadMainSettings();
 		configurationManager.loadStorageSettings();
-		configurationManager.loadTranslatorSettings();
+		// we are storing the real translator name in tempTransName.
+		// this is to prevent the plugin from being fully accessible to all users just yet.
+		// (we are not done init'ing)
+		String tempTransName = configurationManager.loadTranslatorSettings();
 
 		/* Run tasks after translator loaded */
-		// Pre-generate hard coded Config UIs
-		MenuGui.genAllConfigUIs();
-			
 		// Load saved user data
-		new LoadUserData().run();
+		new LoadUserData(tempTransName).run();
 
-		// Schedule automatic user data sync
+		// Pre-generate hard coded Config UIs
+		MenuGui.genAllConfigUIs(tempTransName);
+
+        // Schedule automatic user data sync
 		BukkitRunnable sync = new BukkitRunnable() {
 			@Override
 			public void run() {
@@ -507,6 +513,9 @@ public class WorldwideChat extends JavaPlugin {
 			}
 		};
 		refs.runAsyncRepeating(true, 0, configurationManager.getMainConfig().getInt("General.updateCheckerDelay") * 20, update);
+
+		// Finish by setting translator name, which permits plugin usage ("Starting" does not)
+		translatorName = tempTransName;
 	}
 
 	/**

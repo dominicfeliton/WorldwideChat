@@ -417,4 +417,8 @@ Messages:
   systranHttpUnknown: '알 수 없는 http 오류: {0}'
   systranHttp400: 잘못된 파라미터가 Systran에 전송되었습니다.언어 쌍이 잘못되었을 수도 있나요?
   systranHttp500: Systran 엔드포인트 ({0}) 의 내부 서버 오류가 발생했습니다.
+  wwcInvalidMongoSession: 구성에서 MongoDB가 활성화되었지만 연결이 설정되지 않았습니다.이 문제를 해결하려면 다시 로드해
+    보세요. 하지만 이전에 MongoDB로부터 연결 성공 메시지를 받은 경우 개발자에게 문의하세요.
+  wwcInvalidSQLSession: 구성에서 SQL이 활성화되었지만 연결이 설정되지 않았습니다.이 문제를 해결하려면 다시 로드해 보십시오.
+    하지만 이전에 SQL로부터 연결 성공 메시지를 받은 경우 개발자에게 문의하세요.
 

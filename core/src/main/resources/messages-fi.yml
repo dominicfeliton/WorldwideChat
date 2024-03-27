@@ -493,4 +493,10 @@ Messages:
   systranHttpUnknown: 'Tuntematon http-virhe: {0}'
   systranHttp400: Systranille lähetetyt huonot parametrit. Voi olla huono kielipari?
   systranHttp500: Sisäinen palvelinvirhe Systran-päätepisteestä ({0}).
+  wwcInvalidMongoSession: 'MongoDB on käytössä kokoonpanossasi, mutta yhteyttä ei
+    ole muodostettu. Yritä ladata uudelleen tämän korjaamiseksi, mutta ota yhteyttä
+    kehittäjään, jos olet aiemmin saanut onnistuneen yhteysviestin MongoDB: ltä.'
+  wwcInvalidSQLSession: 'SQL on käytössä kokoonpanossasi, mutta yhteyttä ei ole muodostettu.
+    Yritä ladata uudelleen tämän korjaamiseksi, mutta ota yhteyttä kehittäjään, jos
+    olet aiemmin saanut onnistuneen yhteysviestin SQL: ltä.'
 

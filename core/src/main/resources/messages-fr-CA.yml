@@ -536,4 +536,12 @@ Messages:
     de langues?
   systranHttp500: Erreur interne du serveur à partir du point de terminage Systran
     ({0}).
+  wwcInvalidMongoSession: MongoDB est activé dans votre configuration, mais aucune
+    connexion n'est établie. Veuillez essayer de recharger pour résoudre ce problème,
+    mais veuillez contacter le développeur si vous avez déjà reçu un message de connexion
+    réussie de MongoDB.
+  wwcInvalidSQLSession: SQL est activé dans votre configuration, mais aucune connexion
+    n'est établie. Veuillez essayer de recharger pour résoudre ce problème, mais veuillez
+    contacter le développeur si vous avez déjà reçu un message de connexion réussie
+    de SQL.
 

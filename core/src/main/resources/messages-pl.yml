@@ -504,4 +504,11 @@ Messages:
   systranHttpUnknown: 'Nieznany błąd http: {0}'
   systranHttp400: Złe parametry wysłane do Systran. Może to być zła para językowa?
   systranHttp500: Wewnętrzny błąd serwera z punktu końcowego Systran ({0}).
+  wwcInvalidMongoSession: MongoDB jest włączony w konfiguracji, ale połączenie nie
+    zostało nawiązane. Spróbuj ponownie załadować, aby to naprawić, ale skontaktuj
+    się z programistą, jeśli wcześniej otrzymałeś komunikat o udanym połączeniu z
+    MongoDB.
+  wwcInvalidSQLSession: SQL jest włączony w konfiguracji, ale połączenie nie zostało
+    nawiązane. Spróbuj ponownie załadować, aby to naprawić, ale skontaktuj się z programistą,
+    jeśli wcześniej otrzymałeś komunikat o udanym połączeniu z SQL.
 

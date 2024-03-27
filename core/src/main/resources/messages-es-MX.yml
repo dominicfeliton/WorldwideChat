@@ -531,4 +531,12 @@ Messages:
   systranHttp400: Parámetros incorrectos enviados a Systran. ¿Podría ser un mal par
     de idiomas?
   systranHttp500: Error interno del servidor desde el punto de enlace de Systran ({0}).
+  wwcInvalidMongoSession: MongoDB está habilitado en su configuración, pero no se
+    establece una conexión. Intente volver a cargar para solucionar esto, pero póngase
+    en contacto con el desarrollador si anteriormente recibió un mensaje de conexión
+    exitosa de MongoDB.
+  wwcInvalidSQLSession: SQL está habilitado en su configuración, pero no se establece
+    una conexión. Intente volver a cargar para solucionar esto, pero póngase en contacto
+    con el desarrollador si anteriormente recibió un mensaje de conexión exitosa de
+    SQL.
 

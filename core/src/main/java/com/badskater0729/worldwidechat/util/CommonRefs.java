@@ -795,6 +795,22 @@ public class CommonRefs {
 		}
 		return false;
 	}
+
+	public boolean isSQLConnValid() {
+		if (main.getSqlSession() == null || !main.getSqlSession().isConnected()) {
+			main.getLogger().warning(getMsg("wwcInvalidSQLSession"));
+			return false;
+		}
+		return true;
+	}
+
+	public boolean isMongoConnValid() {
+		if (main.getMongoSession() == null || !main.getMongoSession().isConnected()) {
+			main.getLogger().warning(getMsg("wwcInvalidMongoSession"));
+			return false;
+		}
+		return true;
+	}
 	
 	/** 
 	  * Returns the generic conversation for modifying values in our config.yml using the GUI.

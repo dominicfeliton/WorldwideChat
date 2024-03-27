@@ -511,4 +511,12 @@ Messages:
   systranHttp400: Onjuiste parameters naar Systran gestuurd. Misschien een slechte
     talencombinatie?
   systranHttp500: Interne serverfout vanaf het Systran-eindpunt ({0}).
+  wwcInvalidMongoSession: MongoDB is ingeschakeld in je configuratie, maar er is geen
+    verbinding tot stand gebracht. Probeer opnieuw te laden om dit op te lossen, maar
+    neem contact op met de ontwikkelaar als je eerder een succesvol verbindingsbericht
+    van MongoDB hebt ontvangen.
+  wwcInvalidSQLSession: SQL is ingeschakeld in uw configuratie, maar er is geen verbinding
+    tot stand gebracht. Probeer opnieuw te laden om dit op te lossen, maar neem contact
+    op met de ontwikkelaar als u eerder een succesvol verbindingsbericht van SQL hebt
+    ontvangen.
 

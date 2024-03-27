@@ -500,4 +500,10 @@ Messages:
   systranHttpUnknown: 'Nežinoma http klaida: {0}'
   systranHttp400: Blogi parametrai išsiųsti “Systran”. Ar gali būti bloga kalbų pora?
   systranHttp500: Vidinė serverio klaida iš Systran galutinio taško ({0}).
+  wwcInvalidMongoSession: “MongoDB” yra įjungtas jūsų konfigūracijoje, tačiau ryšys
+    nėra užmegztas. Pabandykite iš naujo įkelti, kad tai ištaisytumėte, tačiau susisiekite
+    su kūrėju, jei anksčiau gavote sėkmingo ryšio pranešimą iš MongoDB.
+  wwcInvalidSQLSession: SQL yra įjungtas jūsų konfigūracijoje, tačiau ryšys nėra užmegztas.
+    Prašome pabandyti iš naujo įkelti, kad ištaisytumėte tai, bet prašome susisiekti
+    su kūrėju, jei anksčiau gavote sėkmingo ryšio pranešimą iš SQL.
 

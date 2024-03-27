@@ -390,4 +390,7 @@ Messages:
   systranHttpUnknown: 未知的 http 错误：{0}
   systranHttp400: 向 Systran 发送的参数不正确。可能是一对不好的语言对吗？
   systranHttp500: 来自 Systran 端点 ({0}) 的内部服务器错误。
+  wwcInvalidMongoSession: 您的配置中启用了 MongoDB，但未建立连接。请尝试重新加载以修复此问题，但如果您之前收到了来自 MongoDB
+    的成功连接消息，请联系开发人员。
+  wwcInvalidSQLSession: 您的配置中启用了 SQL，但未建立连接。请尝试重新加载以修复此问题，但如果您之前收到了来自 SQL 的成功连接消息，请联系开发人员。
 

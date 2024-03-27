@@ -21,7 +21,10 @@ jobs:
       with:
         distribution: 'adopt'
         java-version: 17
-       
+
+    - name: Start Docker Compose
+      run: bash ./dev/setup-dev-env.sh
+
     - name: Build with Maven
       run: mvn -B clean package -Dyamltranslator.skip=true --file pom.xml
       

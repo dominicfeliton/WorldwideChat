@@ -36,11 +36,19 @@ public class LoadUserData implements Runnable {
 
 	private SQLUtils sql = main.getSqlSession();
 
+	// USE LOCALLY PASSED TRANSLATOR NAME.
+	private String transName;
+
+	public LoadUserData(String transName) {
+		this.transName = transName;
+	}
+
 	@Override
 	public void run() {
 		//TODO: Sanitize for bad inputs/accommodate for obj upgrades; if data is bad, we definitely shouldn't add it
 		/* Load all saved user data */
 		refs.debugMsg("Starting LoadUserData!!!");
+		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 		File userDataFolder = new File(main.getDataFolder() + File.separator + "data" + File.separator);
 		File statsFolder = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
 		userDataFolder.mkdir();
@@ -48,7 +56,7 @@ public class LoadUserData implements Runnable {
 
 		/* Load user records (/wwcs) */
 		refs.debugMsg("Loading user records or /wwcs...");
-		if (sql != null && sql.isConnected()) {
+		if (mainConfig.getBoolean("Storage.useSQL") && refs.isSQLConnValid()) {
 			try {
 				/* Create tables if they do not exist already */
 				Connection sqlConnection = sql.getConnection();
@@ -80,7 +88,7 @@ public class LoadUserData implements Runnable {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} else if (mongo != null && mongo.isConnected()) {
+		} else if (mainConfig.getBoolean("Storage.useMongoDB") && refs.isMongoConnValid()) {
 			/* Initialize collections, create if they do not exist */
 			MongoDatabase database = mongo.getActiveDatabase();
 			try {
@@ -127,13 +135,13 @@ public class LoadUserData implements Runnable {
 		}
 
 		/* If translator settings are invalid, do not do anything else... */
-		if (main.getTranslatorName().equalsIgnoreCase("Invalid")) {
+		if (transName.equalsIgnoreCase("Invalid")) {
 			return;
 		}
 
 		/* Load user files (last translation session, etc.) */
 		refs.debugMsg("Loading user data or /wwct...");
-		if (sql != null && sql.isConnected()) {
+		if (mainConfig.getBoolean("Storage.useSQL") && refs.isSQLConnValid()) {
 			try {
 				// Load ActiveTranslator using SQL
 				ResultSet rs = sql.getConnection().createStatement().executeQuery("SELECT * FROM activeTranslators");
@@ -166,7 +174,7 @@ public class LoadUserData implements Runnable {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} else if (mongo != null && mongo.isConnected()) {
+		} else if (mainConfig.getBoolean("Storage.useMongoDB") && refs.isMongoConnValid()) {
 			// Load Active Translator using MongoDB
 			MongoDatabase database = mongo.getActiveDatabase();
 			MongoCollection<Document> activeTranslatorCol = database.getCollection("ActiveTranslators");
@@ -246,7 +254,7 @@ public class LoadUserData implements Runnable {
 	private boolean validLangCodes(String inLang, String outLang) {
 		// If inLang is invalid, or None is associated with Amazon Translate
 		if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedTranslatorLang(inLang, "in"))
-				|| (inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
+				|| (inLang.equalsIgnoreCase("None") && transName.equalsIgnoreCase("Amazon Translate"))) {
 			return false;
 		}
 		// If outLang code is not supported with current translator

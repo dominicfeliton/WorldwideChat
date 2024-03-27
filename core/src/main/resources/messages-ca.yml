@@ -530,4 +530,12 @@ Messages:
   systranHttp400: Paràmetres dolents enviats a Systran. Pot ser un parell d'idiomes
     dolent?
   systranHttp500: Error intern del servidor des del punt final de Systran ({0}).
+  wwcInvalidMongoSession: MongoDB està activat a la vostra configuració, però no s'estableix
+    una connexió. Si us plau, proveu de tornar a carregar per solucionar això, però
+    poseu-vos en contacte amb el desenvolupador si prèviament heu rebut un missatge
+    de connexió amb èxit de MongoDB.
+  wwcInvalidSQLSession: SQL està activat a la configuració, però no s'estableix una
+    connexió. Si us plau, proveu de tornar a carregar per solucionar això, però poseu-vos
+    en contacte amb el desenvolupador si prèviament heu rebut un missatge de connexió
+    amb èxit de SQL.
 

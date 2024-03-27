@@ -522,4 +522,12 @@ Messages:
   systranHttp400: Parametrat e këqij dërguar në Systran. Mund të jetë një palë gjuhësore
     e keqe?
   systranHttp500: Gabim i brendshëm i serverit nga pika përfundimtare Systran ({0}).
+  wwcInvalidMongoSession: MongoDB është aktivizuar në konfigurimin tuaj, por një lidhje
+    nuk është krijuar. Ju lutemi provoni të rimbushni për ta rregulluar këtë, por
+    ju lutemi kontaktoni zhvilluesin nëse keni marrë më parë një mesazh të suksesshëm
+    lidhjeje nga MongoDB.
+  wwcInvalidSQLSession: SQL është aktivizuar në konfigurimin tuaj, por një lidhje
+    nuk është krijuar. Ju lutemi provoni të rimbushni për ta rregulluar këtë, por
+    ju lutemi kontaktoni zhvilluesin nëse më parë keni marrë një mesazh të suksesshëm
+    të lidhjes nga SQL.
 

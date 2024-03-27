@@ -551,4 +551,12 @@ Messages:
   systranHttp400: Masamang mga parameter na ipinadala sa Systran. Maaaring maging
     isang masamang pares ng wika?
   systranHttp500: Panloob na error sa server mula sa Systran endpoint ({0}).
+  wwcInvalidMongoSession: Pinagana ang MongoDB sa iyong config, ngunit hindi itinatag
+    ang isang koneksyon. Mangyaring subukang muling mag-load upang ayusin ito, ngunit
+    mangyaring makipag-ugnay sa developer kung dati kang nakatanggap ng isang matagumpay
+    na mensahe ng koneksyon mula sa MongoDB.
+  wwcInvalidSQLSession: Pinagana ang SQL sa iyong config, ngunit hindi itinatag ang
+    isang koneksyon. Mangyaring subukang muling mag-load upang ayusin ito, ngunit
+    mangyaring makipag-ugnay sa developer kung dati kang nakatanggap ng isang matagumpay
+    na mensahe ng koneksyon mula sa SQL.
 

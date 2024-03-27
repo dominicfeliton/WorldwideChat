@@ -532,4 +532,10 @@ Messages:
   systranHttp400: Droch-pharaiméadair a seoltar chuig Systran. D'fhéadfadh a bheith
     ina droch-phéire teanga?
   systranHttp500: Earráid freastalaí inmheánach ó chríochphointe Systran ({0}).
+  wwcInvalidMongoSession: Tá MongoDB cumasaithe i do chumraíocht, ach níl nasc bunaithe.
+    Déan iarracht athluchtú chun é seo a shocrú, ach déan teagmháil leis an bhforbróir
+    má fuair tú teachtaireacht nasc rathúil ó MongoDB roimhe seo.
+  wwcInvalidSQLSession: Tá SQL cumasaithe i do chumraíocht, ach níl nasc bunaithe.
+    Déan iarracht athluchtú chun é seo a shocrú, ach déan teagmháil leis an bhforbróir
+    má fuair tú teachtaireacht nasc rathúil ó SQL roimhe seo.
 
