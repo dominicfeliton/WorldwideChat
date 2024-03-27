@@ -245,6 +245,12 @@ public class WWCTabCompleter implements TabCompleter {
 				out.add("5");
 				out.add("10");
 			}
+		} else if (commandName.equals("wwcd") && args.length > 0 && args.length < 3) {
+			if (args.length == 1 && "cache".startsWith(args[0])) {
+				out.add("cache");
+			} else if (args.length == 2 && args[0].equalsIgnoreCase("cache") && "clear".startsWith(args[1])) {
+				out.add("clear");
+			}
 		}
 		return out;
 	}
