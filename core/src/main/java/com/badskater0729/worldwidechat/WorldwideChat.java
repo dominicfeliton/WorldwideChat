@@ -332,6 +332,9 @@ public class WorldwideChat extends JavaPlugin {
 				final long currentDuration = System.nanoTime();
 				/* Cancel background tasks before main config saving */
 				// TODO: Add unit test to make sure that storage config changes do not apply until next run
+				// TODO: Add unit test to make sure that storage defaults to YAML on conn failure
+				// TODO: Add case for if connection gets interrupted?
+				// TODO: Lower mongoDB connection wait time from 25sec
 				cancelBackgroundTasks(true, invalidState, this.getTaskId());
 
 				/* Save main config on current thread BEFORE actual reload */

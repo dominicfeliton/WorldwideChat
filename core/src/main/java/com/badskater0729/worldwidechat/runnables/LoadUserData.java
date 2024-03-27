@@ -56,7 +56,7 @@ public class LoadUserData implements Runnable {
 
 		/* Load user records (/wwcs) */
 		refs.debugMsg("Loading user records or /wwcs...");
-		if (mainConfig.getBoolean("Storage.useSQL") && refs.isSQLConnValid()) {
+		if (mainConfig.getBoolean("Storage.useSQL") && refs.isSQLConnValid(false)) {
 			try {
 				/* Create tables if they do not exist already */
 				Connection sqlConnection = sql.getConnection();
@@ -88,7 +88,7 @@ public class LoadUserData implements Runnable {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} else if (mainConfig.getBoolean("Storage.useMongoDB") && refs.isMongoConnValid()) {
+		} else if (mainConfig.getBoolean("Storage.useMongoDB") && refs.isMongoConnValid(false)) {
 			/* Initialize collections, create if they do not exist */
 			MongoDatabase database = mongo.getActiveDatabase();
 			try {
@@ -141,7 +141,7 @@ public class LoadUserData implements Runnable {
 
 		/* Load user files (last translation session, etc.) */
 		refs.debugMsg("Loading user data or /wwct...");
-		if (mainConfig.getBoolean("Storage.useSQL") && refs.isSQLConnValid()) {
+		if (mainConfig.getBoolean("Storage.useSQL") && refs.isSQLConnValid(false)) {
 			try {
 				// Load ActiveTranslator using SQL
 				ResultSet rs = sql.getConnection().createStatement().executeQuery("SELECT * FROM activeTranslators");
@@ -174,7 +174,7 @@ public class LoadUserData implements Runnable {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} else if (mainConfig.getBoolean("Storage.useMongoDB") && refs.isMongoConnValid()) {
+		} else if (mainConfig.getBoolean("Storage.useMongoDB") && refs.isMongoConnValid(false)) {
 			// Load Active Translator using MongoDB
 			MongoDatabase database = mongo.getActiveDatabase();
 			MongoCollection<Document> activeTranslatorCol = database.getCollection("ActiveTranslators");

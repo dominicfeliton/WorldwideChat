@@ -796,17 +796,21 @@ public class CommonRefs {
 		return false;
 	}
 
-	public boolean isSQLConnValid() {
+	public boolean isSQLConnValid(boolean quiet) {
 		if (main.getSqlSession() == null || !main.getSqlSession().isConnected()) {
-			main.getLogger().warning(getMsg("wwcInvalidSQLSession"));
+			if (!quiet) {
+				main.getLogger().warning(getMsg("wwcInvalidSQLSession"));
+			}
 			return false;
 		}
 		return true;
 	}
 
-	public boolean isMongoConnValid() {
+	public boolean isMongoConnValid(boolean quiet) {
 		if (main.getMongoSession() == null || !main.getMongoSession().isConnected()) {
-			main.getLogger().warning(getMsg("wwcInvalidMongoSession"));
+			if (!quiet) {
+				main.getLogger().warning(getMsg("wwcInvalidMongoSession"));
+			}
 			return false;
 		}
 		return true;

@@ -405,7 +405,7 @@ public class ConfigurationHandler {
 		SQLUtils sql = main.getSqlSession();
 		MongoDBUtils mongo = main.getMongoSession();
 		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
-		if (refs.isSQLConnValid()) {
+		if (refs.isSQLConnValid(true)) {
 			// Our Generic Table Layout: 
 			// | Creation Date | Object Properties |  
 			try {
@@ -482,7 +482,7 @@ public class ConfigurationHandler {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} else if (refs.isMongoConnValid()) {
+		} else if (refs.isMongoConnValid(true)) {
 			try {
 				/* Initialize collections */
 				MongoDatabase database = mongo.getActiveDatabase();
