@@ -1,12 +1,12 @@
 package com.badskater0729.worldwidechat.util;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import com.badskater0729.worldwidechat.WorldwideChat;
 
 import be.seeseemelk.mockbukkit.ServerMock;
 import be.seeseemelk.mockbukkit.entity.PlayerMock;
 import com.badskater0729.worldwidechat.WorldwideChatTests;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestTranslationUtils {
 
@@ -51,6 +51,7 @@ public class TestTranslationUtils {
 
 
 	public void testPluginDataRetentionYAML() {
+
 		server.getLogger().info("RUNNING DATA RETENTION TEST: wwct en fr");
 		playerMock.performCommand("worldwidechat:wwct en fr");
 		server.getLogger().info("RUNNING DATA RETENTION TEST: wwct en es");
@@ -77,10 +78,18 @@ public class TestTranslationUtils {
 		WorldwideChatTests.reloadWWC();
 
 		assertTrue(main.getMongoSession() != null && main.getMongoSession().isConnected());
-		server.getLogger().info("RUNNING DATA RETENTION TEST 2: wwct en fr");
+		server.getLogger().info("RUNNING DATA RETENTION TEST: wwct en fr");
 		playerMock.performCommand("worldwidechat:wwct en fr");
-		server.getLogger().info("RUNNING DATA RETENTION TEST 2: wwct en es");
+		playerMock.performCommand("worldwidechat:wwctb");
+		playerMock.performCommand("worldwidechat:wwcti");
+		playerMock.performCommand("worldwidechat:wwcts");
+		playerMock.performCommand("worldwidechat:wwcte");
+		playerMock.performCommand("worldwidechat:wwctrl 5");
+		playerMock.performCommand("worldwidechat:wwctci");
+
+		server.getLogger().info("RUNNING DATA RETENTION TEST: wwct en es");
 		secondPlayerMock.performCommand("worldwidechat:wwct en es");
+		secondPlayerMock.performCommand("worldwidechat:wwctco");
 
 		// Get stats initialized
 		refs.translateText("Hello, how are you?", playerMock);
@@ -92,13 +101,40 @@ public class TestTranslationUtils {
 
         WorldwideChatTests.reloadWWC();
 
+		// Verify ActiveTranslators
+		ActiveTranslator activeTrans1 = plugin.getActiveTranslator(playerMock);
+		ActiveTranslator activeTrans2 = plugin.getActiveTranslator(secondPlayerMock);
 		assertTrue(main.getMongoSession() != null && main.getMongoSession().isConnected());
-		assertTrue(plugin.getActiveTranslator(playerMock).getInLangCode().equals("en")
-				&& plugin.getActiveTranslator(playerMock).getOutLangCode().equals("fr"));
-		assertTrue(plugin.getActiveTranslator(secondPlayerMock).getInLangCode().equals("en")
-				&& plugin.getActiveTranslator(secondPlayerMock).getOutLangCode().equals("es"));
-		assertTrue(plugin.getPlayerRecord(secondPlayerMock, false).getAttemptedTranslations() == beforeReloadCount+1);
-		assertTrue(plugin.getPlayerRecord(playerMock, false).getUUID().toString().equals(playerMock.getUniqueId().toString()));
+
+		assertTrue(activeTrans1.getInLangCode().equals("en")
+				&& activeTrans1.getOutLangCode().equals("fr"));
+		assertTrue(activeTrans1.getTranslatingBook());
+		assertTrue(activeTrans1.getTranslatingEntity());
+		assertTrue(activeTrans1.getTranslatingSign());
+		assertTrue(activeTrans1.getTranslatingItem());
+		assertEquals(activeTrans1.getRateLimit(), 5);
+		assertTrue(activeTrans1.getTranslatingChatOutgoing());
+		assertTrue(activeTrans1.getTranslatingChatIncoming());
+
+		assertTrue(activeTrans2.getInLangCode().equals("en")
+				&& activeTrans2.getOutLangCode().equals("es"));
+		assertFalse(activeTrans2.getTranslatingSign());
+		assertFalse(activeTrans2.getTranslatingEntity());
+		assertFalse(activeTrans2.getTranslatingSign());
+		assertFalse(activeTrans2.getTranslatingItem());
+		assertEquals(activeTrans2.getRateLimit(), 0);
+		assertFalse(activeTrans2.getTranslatingChatOutgoing());
+		assertFalse(activeTrans2.getTranslatingChatIncoming());
+
+		// Verify PlayerRecords
+		PlayerRecord playerRecord2 = plugin.getPlayerRecord(secondPlayerMock, false);
+		PlayerRecord playerRecord1 = plugin.getPlayerRecord(playerMock, false);
+
+		assertTrue(playerRecord2.getAttemptedTranslations() == beforeReloadCount+1);
+		// TODO
+
+		assertTrue(playerRecord1.getUUID().toString().equals(playerMock.getUniqueId().toString()));
+		// TODO
 	}
 
 	public void testPluginDataRetentionSQL() {
@@ -110,9 +146,9 @@ public class TestTranslationUtils {
 		WorldwideChatTests.reloadWWC();
 
 		assertTrue(main.getSqlSession() != null && main.getSqlSession().isConnected());
-		server.getLogger().info("RUNNING DATA RETENTION TEST 3: wwct en fr");
+		server.getLogger().info("RUNNING DATA RETENTION TEST: wwct en fr");
 		playerMock.performCommand("worldwidechat:wwct en fr");
-		server.getLogger().info("RUNNING DATA RETENTION TEST 3: wwct en es");
+		server.getLogger().info("RUNNING DATA RETENTION TEST: wwct en es");
 		secondPlayerMock.performCommand("worldwidechat:wwct en es");
 
 		// Get stats initialized
