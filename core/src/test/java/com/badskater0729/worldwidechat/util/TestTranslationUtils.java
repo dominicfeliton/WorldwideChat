@@ -130,17 +130,23 @@ public class TestTranslationUtils {
 		PlayerRecord playerRecord2 = plugin.getPlayerRecord(secondPlayerMock, false);
 		PlayerRecord playerRecord1 = plugin.getPlayerRecord(playerMock, false);
 
-		assertTrue(playerRecord2.getAttemptedTranslations() == beforeReloadCount+1);
-		// TODO
+        assertEquals(playerRecord2.getAttemptedTranslations(), beforeReloadCount + 1);
+		assertEquals(playerRecord2.getSuccessfulTranslations(), beforeReloadCount + 1);
+		assertEquals(playerRecord2.getUUID(), activeTrans2.getUUID());
+        assertNotEquals("None", playerRecord2.getLastTranslationTime());
+		assertTrue(playerRecord2.getHasBeenSaved());
 
-		assertTrue(playerRecord1.getUUID().toString().equals(playerMock.getUniqueId().toString()));
-		// TODO
+		assertTrue(playerRecord1.getAttemptedTranslations() > 0);
+		assertTrue(playerRecord1.getSuccessfulTranslations() > 0);
+		assertEquals(playerRecord1.getUUID(), activeTrans1.getUUID());
+		assertNotEquals("None", playerRecord1.getLastTranslationTime());
+		assertTrue(playerRecord1.getHasBeenSaved());
 	}
 
 	public void testPluginDataRetentionSQL() {
 		// Switch to SQL
-		main.getConfigManager().getMainConfig().set("Storage.useSQL", true);
 		main.getConfigManager().getMainConfig().set("Storage.useMongoDB", false);
+		main.getConfigManager().getMainConfig().set("Storage.useSQL", true);
 		main.getConfigManager().saveMainConfig(false);
 
 		WorldwideChatTests.reloadWWC();
@@ -148,25 +154,66 @@ public class TestTranslationUtils {
 		assertTrue(main.getSqlSession() != null && main.getSqlSession().isConnected());
 		server.getLogger().info("RUNNING DATA RETENTION TEST: wwct en fr");
 		playerMock.performCommand("worldwidechat:wwct en fr");
+		playerMock.performCommand("worldwidechat:wwctb");
+		playerMock.performCommand("worldwidechat:wwcti");
+		playerMock.performCommand("worldwidechat:wwcts");
+		playerMock.performCommand("worldwidechat:wwcte");
+		playerMock.performCommand("worldwidechat:wwctrl 5");
+		playerMock.performCommand("worldwidechat:wwctci");
+
 		server.getLogger().info("RUNNING DATA RETENTION TEST: wwct en es");
 		secondPlayerMock.performCommand("worldwidechat:wwct en es");
+		secondPlayerMock.performCommand("worldwidechat:wwctco");
 
 		// Get stats initialized
-		refs.translateText("Hello, how are you?", playerMock).equals("Hola, como estas?");
-		refs.translateText("Hello, how are you?", secondPlayerMock).equals("Hola, como estas?");
-		refs.translateText("Hello, how are you?", secondPlayerMock).equals("Hola, como estas?");
+		refs.translateText("Hello, how are you?", playerMock);
+		refs.translateText("Hello, how are you?", secondPlayerMock);
+		refs.translateText("Hello, how are you?", secondPlayerMock);
 
 		int beforeReloadCount = plugin.getPlayerRecord(secondPlayerMock, false).getAttemptedTranslations();
 		refs.translateText("Hello, how are you?", secondPlayerMock);
 
 		WorldwideChatTests.reloadWWC();
 
+		// Verify ActiveTranslators
+		ActiveTranslator activeTrans1 = plugin.getActiveTranslator(playerMock);
+		ActiveTranslator activeTrans2 = plugin.getActiveTranslator(secondPlayerMock);
 		assertTrue(main.getSqlSession() != null && main.getSqlSession().isConnected());
-		assertTrue(plugin.getActiveTranslator(playerMock).getInLangCode().equals("en")
-				&& plugin.getActiveTranslator(playerMock).getOutLangCode().equals("fr"));
-		assertTrue(plugin.getActiveTranslator(secondPlayerMock).getInLangCode().equals("en")
-				&& plugin.getActiveTranslator(secondPlayerMock).getOutLangCode().equals("es"));
-		assertTrue(plugin.getPlayerRecord(secondPlayerMock, false).getAttemptedTranslations() == beforeReloadCount+1);
-		assertTrue(plugin.getPlayerRecord(playerMock, false).getUUID().toString().equals(playerMock.getUniqueId().toString()));
+
+		assertTrue(activeTrans1.getInLangCode().equals("en")
+				&& activeTrans1.getOutLangCode().equals("fr"));
+		assertTrue(activeTrans1.getTranslatingBook());
+		assertTrue(activeTrans1.getTranslatingEntity());
+		assertTrue(activeTrans1.getTranslatingSign());
+		assertTrue(activeTrans1.getTranslatingItem());
+		assertEquals(activeTrans1.getRateLimit(), 5);
+		assertTrue(activeTrans1.getTranslatingChatOutgoing());
+		assertTrue(activeTrans1.getTranslatingChatIncoming());
+
+		assertTrue(activeTrans2.getInLangCode().equals("en")
+				&& activeTrans2.getOutLangCode().equals("es"));
+		assertFalse(activeTrans2.getTranslatingSign());
+		assertFalse(activeTrans2.getTranslatingEntity());
+		assertFalse(activeTrans2.getTranslatingSign());
+		assertFalse(activeTrans2.getTranslatingItem());
+		assertEquals(activeTrans2.getRateLimit(), 0);
+		assertFalse(activeTrans2.getTranslatingChatOutgoing());
+		assertFalse(activeTrans2.getTranslatingChatIncoming());
+
+		// Verify PlayerRecords
+		PlayerRecord playerRecord2 = plugin.getPlayerRecord(secondPlayerMock, false);
+		PlayerRecord playerRecord1 = plugin.getPlayerRecord(playerMock, false);
+
+		assertEquals(playerRecord2.getAttemptedTranslations(), beforeReloadCount + 1);
+		assertEquals(playerRecord2.getSuccessfulTranslations(), beforeReloadCount + 1);
+		assertEquals(playerRecord2.getUUID(), activeTrans2.getUUID());
+		assertNotEquals("None", playerRecord2.getLastTranslationTime());
+		assertTrue(playerRecord2.getHasBeenSaved());
+
+		assertTrue(playerRecord1.getAttemptedTranslations() > 0);
+		assertTrue(playerRecord1.getSuccessfulTranslations() > 0);
+		assertEquals(playerRecord1.getUUID(), activeTrans1.getUUID());
+		assertNotEquals("None", playerRecord1.getLastTranslationTime());
+		assertTrue(playerRecord1.getHasBeenSaved());
 	}
 }
