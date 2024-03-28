@@ -278,7 +278,10 @@ public class ConfigurationHandler {
 			} catch (Exception e) {
 				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "SQL"));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
-				main.getSqlSession().disconnect(); // Just in case
+				if (main.getSqlSession() != null) {
+					main.getSqlSession().disconnect();
+					main.setSqlSession(null);
+				}
 				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback"));
 			}
 		} else if (mainConfig.getBoolean("Storage.useMongoDB")) {
@@ -292,7 +295,10 @@ public class ConfigurationHandler {
 			} catch (Exception e) {
 				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "MongoDB"));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
-				main.getMongoSession().disconnect();
+				if (main.getMongoSession() != null) {
+					main.getMongoSession().disconnect();
+					main.setMongoSession(null);
+				}
 				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback"));
 			}
 		} else {
