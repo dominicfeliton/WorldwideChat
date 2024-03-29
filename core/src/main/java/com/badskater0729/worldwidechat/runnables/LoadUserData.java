@@ -146,7 +146,7 @@ public class LoadUserData implements Runnable {
 				}
 				try (PreparedStatement initPlayerRecords = postgresConnection.prepareStatement(
 						"CREATE TABLE IF NOT EXISTS playerRecords " +
-								"(creationDate VARCHAR(40),playerUUID UUID,attemptedTranslations INT,successfulTranslations INT," +
+								"(creationDate VARCHAR(40),playerUUID VARCHAR(40),attemptedTranslations INT,successfulTranslations INT," +
 								"lastTranslationTime VARCHAR(40),PRIMARY KEY (playerUUID))")) {
 					initPlayerRecords.executeUpdate();
 				}

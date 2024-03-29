@@ -81,10 +81,6 @@ public class MongoDBUtils {
 		}
 	}
 
-	public MongoClient getClient() {
-		return client;
-	}
-
 	public boolean isConnected() {
 		return client != null;
 	}
