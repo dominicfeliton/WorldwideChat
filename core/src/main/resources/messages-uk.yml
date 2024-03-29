@@ -322,7 +322,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Змінення параметрів SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Успішно переведений Watson Translate.
     Перезавантажте, щоб зміни вступили в силу.
-  wwcConfigGUISQLSettings: Конфігурація SQL
   wwcConfigGUIToggleGoogleTranslateButton: Перемкнути Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Перемкнути Watson Перекласти
   wwcConfigGUIToggleAmazonTranslateButton: Перемкнути Переклад Amazon
@@ -386,7 +385,6 @@ Messages:
   libreHttpUnknown: 'Невідома помилка http: {0}'
   wwcConfigGUILibreTranslateURLButton: Змінити Libre Перекласти URL-адресу
   wwcConfigConnectionFail: Не вдалося з' єднатися з {0}.
-  wwcConfigGUIMongoSettings: Конфігурація MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Успішно змінено ім'я бази даних MongoDB.
   wwcConfigGUIMongoHostnameButton: Змінити ім'я хоста MongoDB
   wwcConfigConversationMongoPasswordInput: Поточний пароль {0}. Введіть щось інше,
@@ -523,4 +521,43 @@ Messages:
     є, команда така: {0}'
   wwcNewSqlConvertFail: Конвертація не вдалася... будь ласка, відновіть таблиці зі
     створеної резервної копії. Відключення Всесвітнього чату...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Успішно змінено назву бази даних
+    PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Необов'язкові аргументи успішно
+    очищені.
+  wwcConfigConversationPostgresPortInput: Поточний порт {0}. Введіть щось інше, крім
+    0, щоб встановити новий порт, або введіть 0, щоб повернутися назад.
+  wwcConfigGUIPostgresUsernameButton: Змінити ім'я користувача PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Успішно змінено необов'язкові
+    аргументи PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL для PostgreSQL успішно переключено.
+  wwcConfigConversationPostgresPasswordSuccess: Успішно змінив пароль PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Успішно змінено порт PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Поточне ім'я користувача {0}. Введіть
+    щось інше, крім 0, щоб встановити нове ім'я користувача, або введіть 0, щоб повернутися
+    назад.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL успішно переключено. Перезавантажте,
+    щоб зміни вступили в силу.
+  wwcConfigGUITogglePostgresButton: Переключити PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Змінити пароль PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Зміна необов'язкових аргументів PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Зміна параметрів PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Поточний пароль {0}. Введіть щось інше,
+    крім 0, щоб встановити новий пароль, або введіть 0, щоб повернутися назад.
+  wwcConfigConversationPostgresHostnameInput: Поточне ім'я хоста {0}. Введіть щось
+    інше, крім 0, щоб встановити нове ім'я хоста, або введіть 0, щоб повернутися назад.
+  wwcConfigGUIPostgresPortButton: Зміна порту PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Успішно змінили ім'я хоста PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Змініть ім'я хоста PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Поточна назва бази даних {0}. Введіть
+    щось інше, крім 0, щоб встановити нове ім'я бази даних, або введіть 0, щоб повернутися
+    назад.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Поточні необов''язкові аргументи
+    PostgreSQL: {0}. Введіть аргументи, розділені комою (ключ=значення, ключ2=значення2),
+    або введіть clear, щоб стерти поточні аргументи, або введіть 0, щоб повернутися
+    назад.'
+  wwcConfigGUITogglePostgresSSLButton: Увімкнути протокол SSL PostgreSQL
+  wwcConfigGUIPostgresDatabaseNameButton: Змінити базу даних PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Успішно змінено ім'я користувача PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Конфігурація'
 

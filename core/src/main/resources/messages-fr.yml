@@ -341,7 +341,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Modifier les paramètres SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Watson Translate a été activé
     avec succès. Rechargez pour que la modification prenne effet.
-  wwcConfigGUISQLSettings: Configuration SQL
   wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Traduire
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Translate
@@ -411,7 +410,6 @@ Messages:
   libreHttpUnknown: 'Erreur HTTP inconnue: {0}'
   wwcConfigGUILibreTranslateURLButton: Changer l'URL de traduction libre
   wwcConfigConnectionFail: Impossible de se connecter à {0}.
-  wwcConfigGUIMongoSettings: Configuration de MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Le nom de la base de données MongoDB
     a été correctement modifié
   wwcConfigGUIMongoHostnameButton: Modifier le nom d'hôte MongoDB
@@ -565,4 +563,50 @@ Messages:
     table d''enregistrement des joueurs inefficace par rapport à une version précédente
     de WorldwideChat. Vous pouvez exécuter la commande suivante pour résoudre ce problème:
     /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Le nom de la base de données PostgreSQL
+    a été modifié avec succès.
+  wwcConfigConversationPostgresOptionalArgsCleared: Les arguments facultatifs ont
+    été effacés avec succès.
+  wwcConfigConversationPostgresPortInput: Le port actuel est {0}. Tapez autre chose
+    que 0 pour définir un nouveau port, ou tapez 0 pour revenir en arrière.
+  wwcConfigGUIPostgresUsernameButton: Modifier le nom d'utilisateur PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Les arguments facultatifs de PostgreSQL
+    ont été modifiés avec succès.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL pour PostgreSQL a été activé
+    avec succès.
+  wwcConfigConversationPostgresPasswordSuccess: Le mot de passe PostgreSQL a été modifié
+    avec succès.
+  wwcConfigConversationPostgresPortSuccess: Le port PostgreSQL a été modifié avec
+    succès.
+  wwcConfigConversationPostgresUsernameInput: Le nom d'utilisateur actuel est {0}.
+    Tapez autre chose que 0 pour définir un nouveau nom d'utilisateur, ou tapez 0
+    pour revenir en arrière.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL a été activé avec succès.
+    Rechargez pour que la modification soit prise en compte.
+  wwcConfigGUITogglePostgresButton: Activer/désactiver PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Modifier le mot de passe PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Modifier les arguments facultatifs de PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Modifier les paramètres de PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Le mot de passe actuel est {0}. Tapez
+    autre chose que 0 pour définir un nouveau mot de passe, ou tapez 0 pour revenir
+    en arrière.
+  wwcConfigConversationPostgresHostnameInput: Le nom d'hôte actuel est {0}. Tapez
+    autre chose que 0 pour définir un nouveau nom d'hôte, ou tapez 0 pour revenir
+    en arrière.
+  wwcConfigGUIPostgresPortButton: Modifier le port PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Le nom d'hôte PostgreSQL a été modifié
+    avec succès.
+  wwcConfigGUIPostgresHostnameButton: Modifier le nom d'hôte PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Le nom actuel de la base de données
+    est {0}. Tapez autre chose que 0 pour définir un nouveau nom de base de données,
+    ou tapez 0 pour revenir en arrière.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Les arguments facultatifs actuels
+    de PostgreSQL sont: {0}. Tapez les arguments séparés par une virgule (key=value,
+    key2=value2), ou tapez clear pour effacer les arguments actuels, ou tapez 0 pour
+    revenir en arrière.'
+  wwcConfigGUITogglePostgresSSLButton: Activer/désactiver le protocole SSL PostgreSQL
+  wwcConfigGUIPostgresDatabaseNameButton: Modifier la base de données PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Le nom d'utilisateur PostgreSQL a
+    été modifié avec succès.
+  wwcConfigGUIStorageTypeSettings: '{0} Configuration'
 

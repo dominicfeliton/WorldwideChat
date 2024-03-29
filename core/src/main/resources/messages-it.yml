@@ -335,7 +335,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Modificare le impostazioni SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Watson Translate è stato attivato
     con successo. Ricarica affinché la modifica abbia effetto.
-  wwcConfigGUISQLSettings: Configurazione SQL
   wwcConfigGUIToggleGoogleTranslateButton: Attiva Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Attiva Watson Traduci
   wwcConfigGUIToggleAmazonTranslateButton: Attiva Amazon Translate
@@ -403,7 +402,6 @@ Messages:
   libreHttpUnknown: 'Errore http sconosciuto: {0}'
   wwcConfigGUILibreTranslateURLButton: Cambia URL di traduzione gratuita
   wwcConfigConnectionFail: Connessione a {0} non riuscita.
-  wwcConfigGUIMongoSettings: Configurazione MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Modificato correttamente il nome
     del database MongoDB.
   wwcConfigGUIMongoHostnameButton: Cambia il nome host MongoDB
@@ -550,4 +548,48 @@ Messages:
     è: {0}'
   wwcNewSqlConvertFail: Conversione non riuscita... ripristina le tabelle dal backup
     che hai effettuato. Disattivazione di WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Il nome del database PostgreSQL
+    è stato modificato con successo.
+  wwcConfigConversationPostgresOptionalArgsCleared: Argomenti opzionali cancellati
+    correttamente.
+  wwcConfigConversationPostgresPortInput: La porta corrente è {0}. Digita un valore
+    diverso da 0 per impostare una nuova porta o digita 0 per tornare indietro.
+  wwcConfigGUIPostgresUsernameButton: Cambia il nome utente PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Sono stati modificati con successo
+    gli argomenti opzionali di PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL per PostgreSQL è stato attivato
+    correttamente.
+  wwcConfigConversationPostgresPasswordSuccess: La password di PostgreSQL è stata
+    modificata con successo.
+  wwcConfigConversationPostgresPortSuccess: La porta PostgreSQL è stata modificata
+    con successo.
+  wwcConfigConversationPostgresUsernameInput: Il nome utente corrente è {0}. Digita
+    un valore diverso da 0 per impostare un nuovo nome utente o digita 0 per tornare
+    indietro.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL è stato attivato correttamente.
+    Ricarica per rendere effettiva la modifica.
+  wwcConfigGUITogglePostgresButton: Attiva PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Cambia la password di PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Cambia gli argomenti opzionali di PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Modificare le impostazioni di PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: La password attuale è {0}. Digita un
+    valore diverso da 0 per impostare una nuova password o digita 0 per tornare indietro.
+  wwcConfigConversationPostgresHostnameInput: L'hostname corrente è {0}. Digita un
+    valore diverso da 0 per impostare un nuovo nome host o digita 0 per tornare indietro.
+  wwcConfigGUIPostgresPortButton: Cambia porta PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Il nome host PostgreSQL è stato modificato
+    con successo.
+  wwcConfigGUIPostgresHostnameButton: Cambia il nome host di PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Il nome del database corrente è
+    {0}. Digita un valore diverso da 0 per impostare un nuovo nome di database o digita
+    0 per tornare indietro.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Gli attuali argomenti opzionali
+    di PostgreSQL sono: {0}. Digita argomenti separati da una virgola (key=value,
+    key2=value2), oppure digita clear per cancellare gli argomenti correnti o digita
+    0 per tornare indietro.'
+  wwcConfigGUITogglePostgresSSLButton: Attiva PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Cambia il database PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Il nome utente PostgreSQL è stato
+    modificato con successo.
+  wwcConfigGUIStorageTypeSettings: '{0} Configurazione'
 

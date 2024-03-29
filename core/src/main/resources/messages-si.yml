@@ -322,7 +322,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL සැකසුම් වෙනස් කරන්න
   wwcConfigConversationWatsonTranslateToggleSuccess: සාර්ථකව ටොගල කළ වොට්සන් පරිවර්තනය.
     ක්රියාත්මක වන පරිදි වෙනස් කිරීම සඳහා රීලෝඩ් කරන්න.
-  wwcConfigGUISQLSettings: SQL වින්යාසය
   wwcConfigGUIToggleGoogleTranslateButton: ගූගල් පරිවර්තනය ටොගල් කරන්න
   wwcConfigGUIToggleWatsonTranslateButton: ටොගල් කරන්න වොට්සන් පරිවර්තනය
   wwcConfigGUIToggleAmazonTranslateButton: ටොගල් කරන්න ඇමේසන් පරිවර්තනය
@@ -382,7 +381,6 @@ Messages:
   libreHttpUnknown: 'නොදන්නා http දෝෂය: {0}'
   wwcConfigGUILibreTranslateURLButton: නිදහස් පරිවර්තනය URL එක වෙනස්
   wwcConfigConnectionFail: '{0} වෙත සම්බන්ධ වීමට අසමත් විය.'
-  wwcConfigGUIMongoSettings: මොන්ගෝඩ් බී වින්යාසය
   wwcConfigConversationMongoDatabaseNameSuccess: මොන්ගෝඩ්බී දත්ත සමුදා නාමය සාර්ථකව
     වෙනස් කරන ලදී.
   wwcConfigGUIMongoHostnameButton: මොන්ගොඩ් බී සත්කාරක නාමය වෙනස් කරන්න
@@ -521,4 +519,43 @@ Messages:
     {0}'
   wwcNewSqlConvertFail: පරිවර්තනය අසාර්ථක විය... කරුණාකර ඔබ සාදන ලද උපස්ථයෙන් ඔබේ
     වගු නැවත ස්ථාපිත කරන්න. වර්ල්ඩ්වයිඩ්චැට් අක්රීය කිරීම...
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL දත්ත සමුදායේ නම සාර්ථකව
+    වෙනස් කරන ලදි.
+  wwcConfigConversationPostgresOptionalArgsCleared: විකල්ප තර්ක සාර්ථකව ඉවත් කර ඇත.
+  wwcConfigConversationPostgresPortInput: වත්මන් වරාය {0} වේ. නව වරායක් සැකසීමට 0
+    හැර වෙනත් ඕනෑම දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL පරිශීලක නාමය වෙනස් කරන්න
+  wwcConfigConversationPostgresOptionalArgsSuccess: විකල්ප PostgreSQL තර්ක සාර්ථකව
+    වෙනස් කරන ලදි.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL සඳහා SSL සාර්ථකව මාරු
+    විය.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL මුරපදය සාර්ථකව වෙනස් කළේය.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL වරාය සාර්ථකව වෙනස් කරන ලදි.
+  wwcConfigConversationPostgresUsernameInput: වර්තමාන පරිශීලක නාමය {0} වේ. නව පරිශීලක
+    නාමයක් සැකසීමට 0 හැර වෙනත් ඕනෑම දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL සාර්ථකව මාරු විය. වෙනස ක්රියාත්මක
+    වීම සඳහා නැවත ලෝඩ් කරන්න.
+  wwcConfigGUITogglePostgresButton: PostgreSQL මාරු කරන්න
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL මුරපදය වෙනස් කරන්න
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL විකල්ප තර්ක වෙනස් කරන්න
+  wwcConfigGUIPostgresMenuButton: PostgreSQL සැකසුම් වෙනස් කරන්න
+  wwcConfigConversationPostgresPasswordInput: වත්මන් මුරපදය {0} වේ. නව මුරපදයක් සැකසීමට
+    0 හැර වෙනත් ඕනෑම දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
+  wwcConfigConversationPostgresHostnameInput: වර්තමාන සත්කාරක නාමය {0} වේ. නව සත්කාරක
+    නාමයක් සැකසීමට 0 හැර වෙනත් ඕනෑම දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
+  wwcConfigGUIPostgresPortButton: PostgreSQL වරාය වෙනස් කරන්න
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL සත්කාරක නාමය සාර්ථකව වෙනස්
+    කළේය.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL සත්කාරක නාමය වෙනස් කරන්න
+  wwcConfigConversationPostgresDatabaseNameInput: වර්තමාන දත්ත සමුදායේ නම {0} වේ.
+    නව දත්ත සමුදායේ නමක් සැකසීමට 0 හැර වෙනත් ඕනෑම දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු
+    යාමට 0 ටයිප් කරන්න.
+  wwcConfigConversationPostgresOptionalArgsInput: 'වර්තමාන විකල්ප PostgreSQL තර්ක
+    වන්නේ: {0}. කොමාවකින් වෙන් කරන ලද තර්ක ටයිප් කරන්න (key=value, key2=value2), නැතහොත්
+    වත්මන් ආර්ග්ස් පිස දැමීමට පැහැදිලි ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.'
+  wwcConfigGUITogglePostgresSSLButton: පෝස්ට්ග්රෙස්කියුඑල් එස්එස්එල් කරන්න
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL දත්ත සමුදාය වෙනස් කරන්න
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL පරිශීලක නාමය සාර්ථකව වෙනස්
+    කරන ලදි.
+  wwcConfigGUIStorageTypeSettings: '{0} වින්යාසය'
 

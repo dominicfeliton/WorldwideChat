@@ -326,7 +326,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL beállítások módosítása
   wwcConfigConversationWatsonTranslateToggleSuccess: Sikeresen váltotta a Watson Translate
     programot. Töltse be újra, hogy a változás életbe lépjen.
-  wwcConfigGUISQLSettings: SQL konfiguráció
   wwcConfigGUIToggleGoogleTranslateButton: A Google Fordító váltása
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson fordító
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Fordító
@@ -392,7 +391,6 @@ Messages:
   libreHttpUnknown: 'Ismeretlen http hiba: {0}'
   wwcConfigGUILibreTranslateURLButton: Change Libre Translate
   wwcConfigConnectionFail: 'Nem sikerült csatlakozni a következőhöz: {0}.'
-  wwcConfigGUIMongoSettings: MongoDB konfiguráció
   wwcConfigConversationMongoDatabaseNameSuccess: Sikeresen módosította a MongoDB adatbázis
     nevét.
   wwcConfigGUIMongoHostnameButton: MongoDB Hostname módosítása
@@ -532,4 +530,47 @@ Messages:
   wwcOldSqlStructRecords: 'Az SQL adatbázis a WorldwideChat korábbi verziójához képest
     nem hatékony lejátszórekordtábla beállítással rendelkezik. A probléma megoldásához
     futtathatja a következő parancsot: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Sikeresen megváltoztatta a PostgreSQL
+    adatbázis nevét.
+  wwcConfigConversationPostgresOptionalArgsCleared: Az opcionális argumentumok sikeresen
+    törölve.
+  wwcConfigConversationPostgresPortInput: Az aktuális port {0}. Írja be a 0-tól eltérő
+    parancsot az új port beállításához, vagy írja be a 0 parancsot a visszaállításhoz.
+  wwcConfigGUIPostgresUsernameButton: Módosítsa a PostgreSQL felhasználónevét
+  wwcConfigConversationPostgresOptionalArgsSuccess: Sikeresen módosította az opcionális
+    PostgreSQL argumentumokat.
+  wwcConfigConversationTogglePostgresSSLSuccess: A PostgreSQL SSL sikeresen bekapcsolta.
+  wwcConfigConversationPostgresPasswordSuccess: Sikeresen megváltoztatta a PostgreSQL
+    jelszót.
+  wwcConfigConversationPostgresPortSuccess: Sikeresen megváltoztatta a PostgreSQL
+    portot.
+  wwcConfigConversationPostgresUsernameInput: A jelenlegi felhasználónév {0}. Írjon
+    be bármit, mint 0, új felhasználónév beállításához, vagy írja be a 0 parancsot
+    a visszaállításhoz.
+  wwcConfigConversationTogglePostgresSuccess: A PostgreSQL sikeresen váltott. Töltse
+    be újra, hogy a változás hatályba lépjen.
+  wwcConfigGUITogglePostgresButton: PostgreSQL kapcsolása
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL jelszó módosítása
+  wwcConfigGUIPostgresOptionalArgsButton: A PostgreSQL opcionális argumentumok módosítása
+  wwcConfigGUIPostgresMenuButton: Módosítsa a PostgreSQL beállításokat
+  wwcConfigConversationPostgresPasswordInput: Az aktuális jelszó {0}. Írjon be bármit,
+    mint 0, új jelszó beállításához, vagy írja be a 0 parancsot a visszaállításhoz.
+  wwcConfigConversationPostgresHostnameInput: Az aktuális gazdnév {0}. Írja be a 0
+    kivételét az új gazdanév beállításához, vagy írja be a 0 parancsot a visszaállításhoz.
+  wwcConfigGUIPostgresPortButton: PostgreSQL port módosítása
+  wwcConfigConversationPostgresHostnameSuccess: Sikeresen megváltoztatta a PostgreSQL
+    hostnevét.
+  wwcConfigGUIPostgresHostnameButton: Módosítsa a PostgreSQL hostnevet
+  wwcConfigConversationPostgresDatabaseNameInput: Az aktuális adatbázis neve {0}.
+    Írja be a 0-on kívüli bármit az új adatbázisnév beállításához, vagy írja be a
+    0 parancsot a visszaállításhoz.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Az aktuális opcionális PostgreSQL
+    argumentumok a következők: {0}. Írja be vesszővel elválasztott argumentumokat
+    (key=value, key2=value2), vagy írja be a törlés parancsot az aktuális argok törléséhez,
+    vagy írja be a 0 parancsot a visszalépéshez.'
+  wwcConfigGUITogglePostgresSSLButton: A PostgreSQL SSL kapcsolása
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL adatbázis módosítása
+  wwcConfigConversationPostgresUsernameSuccess: Sikeresen megváltoztatta a PostgreSQL
+    felhasználónevet.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfiguráció'
 

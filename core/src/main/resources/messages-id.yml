@@ -324,7 +324,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Ubah Pengaturan SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Berhasil beralih Watson Translate.
     Reload agar perubahan berlaku.
-  wwcConfigGUISQLSettings: Konfigurasi SQL
   wwcConfigGUIToggleGoogleTranslateButton: Beralih Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Terjemahkan
   wwcConfigGUIToggleAmazonTranslateButton: Alihkan Amazon Terjemahkan
@@ -384,7 +383,6 @@ Messages:
   libreHttpUnknown: 'Galat http tidak dikenal: {0}'
   wwcConfigGUILibreTranslateURLButton: Ubah URL Terjemahkan Gratis
   wwcConfigConnectionFail: Gagal menyambung ke {0}.
-  wwcConfigGUIMongoSettings: MongoDB Konfigurasi
   wwcConfigConversationMongoDatabaseNameSuccess: Berhasil mengubah nama database MongoDB.
   wwcConfigGUIMongoHostnameButton: Ubah MongoDB Hostname
   wwcConfigConversationMongoPasswordInput: Kata sandi saat ini adalah {0}. Ketik apa
@@ -520,4 +518,39 @@ Messages:
     adalah: {0}'
   wwcNewSqlConvertFail: Konversi gagal... harap pulihkan tabel Anda dari cadangan
     yang Anda buat. Menonaktifkan WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Berhasil mengubah nama database
+    PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Argumen opsional berhasil dihapus.
+  wwcConfigConversationPostgresPortInput: Port saat ini adalah {0}. Ketik apa pun
+    selain 0 untuk mengatur port baru, atau ketik 0 untuk kembali.
+  wwcConfigGUIPostgresUsernameButton: Ubah Nama Pengguna PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Berhasil mengubah argumen PostgreSQL
+    opsional.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL untuk PostgreSQL berhasil dialihkan.
+  wwcConfigConversationPostgresPasswordSuccess: Berhasil mengubah kata sandi PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Berhasil mengubah port PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Nama pengguna saat ini adalah {0}. Ketik
+    apa pun selain 0 untuk mengatur nama pengguna baru, atau ketik 0 untuk kembali.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL berhasil dialihkan. Muat
+    ulang agar perubahan berlaku.
+  wwcConfigGUITogglePostgresButton: Alihkan PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Ubah Kata Sandi PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Ubah Argumen Opsional PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Ubah Pengaturan PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Kata sandi saat ini adalah {0}. Ketik
+    apa pun selain 0 untuk mengatur kata sandi baru, atau ketik 0 untuk kembali.
+  wwcConfigConversationPostgresHostnameInput: Nama host saat ini adalah {0}. Ketik
+    apa pun selain 0 untuk mengatur nama host baru, atau ketik 0 untuk kembali.
+  wwcConfigGUIPostgresPortButton: Ubah Port PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Berhasil mengubah nama host PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Ubah Nama Host PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Nama database saat ini adalah {0}.
+    Ketik apa pun selain 0 untuk mengatur nama database baru, atau ketik 0 untuk kembali.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Argumen PostgreSQL opsional saat
+    ini adalah: {0}. Ketik argumen yang dipisahkan oleh koma (key=value, key2=value2),
+    atau ketik clear untuk menghapus args saat ini, atau ketik 0 untuk kembali.'
+  wwcConfigGUITogglePostgresSSLButton: Alihkan SSL PostgreSQL
+  wwcConfigGUIPostgresDatabaseNameButton: Ubah Database PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Berhasil mengubah nama pengguna PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfigurasi'
 

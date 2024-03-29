@@ -347,7 +347,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Ändern der SQL-Einstellungen
   wwcConfigConversationWatsonTranslateToggleSuccess: Watson Translate wurde erfolgreich
     umgeschaltet. Laden Sie neu, damit die Änderung wirksam wird.
-  wwcConfigGUISQLSettings: SQL Konfiguration
   wwcConfigGUIToggleGoogleTranslateButton: Google Übersetzer umschalten
   wwcConfigGUIToggleWatsonTranslateButton: Watson Übersetzen umschalten
   wwcConfigGUIToggleAmazonTranslateButton: Amazon Translate umschalten
@@ -420,7 +419,6 @@ Messages:
   libreHttpUnknown: 'Unbekannter HTTP-Fehler: {0}'
   wwcConfigGUILibreTranslateURLButton: Libre Übersetzungs-URL ändern
   wwcConfigConnectionFail: Verbindung mit {0} konnte nicht hergestellt werden.
-  wwcConfigGUIMongoSettings: MongoDB-Konfiguration
   wwcConfigConversationMongoDatabaseNameSuccess: Der Name der MongoDB-Datenbank wurde
     erfolgreich geändert.
   wwcConfigGUIMongoHostnameButton: Ändern des MongoDB-Hostnamens
@@ -575,4 +573,50 @@ Messages:
   wwcOldSqlStructRecords: 'Ihre SQL-Datenbank hat eine ineffiziente Player-Datensatz-Tabelle
     aus einer früheren Version von WorldwideChat eingerichtet. Sie können den folgenden
     Befehl ausführen, um dieses Problem zu beheben: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Der PostgreSQL-Datenbankname wurde
+    erfolgreich geändert.
+  wwcConfigConversationPostgresOptionalArgsCleared: Optionale Argumente wurden erfolgreich
+    gelöscht.
+  wwcConfigConversationPostgresPortInput: Der aktuelle Port ist {0}. Geben Sie etwas
+    anderes als 0 ein, um einen neuen Port festzulegen, oder geben Sie 0 ein, um zurückzugehen.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL-Benutzernamen ändern
+  wwcConfigConversationPostgresOptionalArgsSuccess: Die optionalen PostgreSQL-Argumente
+    wurden erfolgreich geändert.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL für PostgreSQL wurde erfolgreich
+    umgeschaltet.
+  wwcConfigConversationPostgresPasswordSuccess: Das PostgreSQL-Passwort wurde erfolgreich
+    geändert.
+  wwcConfigConversationPostgresPortSuccess: Der PostgreSQL-Port wurde erfolgreich
+    geändert.
+  wwcConfigConversationPostgresUsernameInput: Der aktuelle Nutzername ist {0}. Geben
+    Sie etwas anderes als 0 ein, um einen neuen Benutzernamen festzulegen, oder geben
+    Sie 0 ein, um zurückzugehen.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL wurde erfolgreich umgeschaltet.
+    Laden Sie neu, damit die Änderung wirksam wird.
+  wwcConfigGUITogglePostgresButton: PostgreSQL umschalten
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL-Passwort ändern
+  wwcConfigGUIPostgresOptionalArgsButton: Optionale PostgreSQL-Argumente ändern
+  wwcConfigGUIPostgresMenuButton: PostgreSQL-Einstellungen ändern
+  wwcConfigConversationPostgresPasswordInput: Das aktuelle Passwort ist {0}. Geben
+    Sie etwas anderes als 0 ein, um ein neues Passwort festzulegen, oder geben Sie
+    0 ein, um zurückzukehren.
+  wwcConfigConversationPostgresHostnameInput: Der aktuelle Hostname ist {0}. Geben
+    Sie etwas anderes als 0 ein, um einen neuen Hostnamen festzulegen, oder geben
+    Sie 0 ein, um zurückzugehen.
+  wwcConfigGUIPostgresPortButton: PostgreSQL-Port ändern
+  wwcConfigConversationPostgresHostnameSuccess: Der PostgreSQL-Hostname wurde erfolgreich
+    geändert.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL-Hostnamen ändern
+  wwcConfigConversationPostgresDatabaseNameInput: Der aktuelle Datenbankname ist {0}.
+    Geben Sie etwas anderes als 0 ein, um einen neuen Datenbanknamen festzulegen,
+    oder geben Sie 0 ein, um zurückzugehen.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Die aktuellen optionalen PostgreSQL-Argumente
+    sind: {0}. Geben Sie Argumente durch ein Komma getrennt ein (key=value, key2=value2),
+    oder geben Sie clear ein, um die aktuellen Argumente zu löschen, oder geben Sie
+    0 ein, um zurückzugehen.'
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL umschalten
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL-Datenbank ändern
+  wwcConfigConversationPostgresUsernameSuccess: Der PostgreSQL-Benutzername wurde
+    erfolgreich geändert.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfiguration'
 

@@ -325,7 +325,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL sozlamalarini o'zgartirish
   wwcConfigConversationWatsonTranslateToggleSuccess: Muvaffaqiyatli Watson Tarjima.
     O'zgarish kuchga kirishi uchun qayta yuklang.
-  wwcConfigGUISQLSettings: SQL konfiguratsiyasi
   wwcConfigGUIToggleGoogleTranslateButton: Google Tarjima Toggle
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Tarjima
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Tarjima
@@ -392,7 +391,6 @@ Messages:
   libreHttpUnknown: 'Nomaʼlum http xatosi: {0}'
   wwcConfigGUILibreTranslateURLButton: Bepul Tarjima URL o'zgartirish
   wwcConfigConnectionFail: '{0} ga ulanib boʻlmadi.'
-  wwcConfigGUIMongoSettings: MongoDB konfiguratsiya
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB ma'lumotlar bazasi nomini
     muvaffaqiyatli o'zgartirdi.
   wwcConfigGUIMongoHostnameButton: MongoDB Host nomini o'zgartirish
@@ -540,4 +538,48 @@ Messages:
     ISHONCH HOSIL QILING. Agar sizda bo''lsa, buyruq: {0}'
   wwcNewSqlConvertFail: Konvertatsiya muvaffaqiyatsiz tugadi... iltimos, jadvallarni
     siz qilgan zaxiradan tiklang. WorldwideChat-ni o'chirish...
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL ma'lumotlar bazasi
+    nomini muvaffaqiyatli o'zgartirdi.
+  wwcConfigConversationPostgresOptionalArgsCleared: Ixtiyoriy argumentlar muvaffaqiyatli
+    tozalandi.
+  wwcConfigConversationPostgresPortInput: Joriy port {0}. Yangi portni o'rnatish uchun
+    0 dan boshqa har qanday narsani yozing yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL foydalanuvchi nomini o'zgartiring
+  wwcConfigConversationPostgresOptionalArgsSuccess: Ixtiyoriy PostgreSQL argumentlarini
+    muvaffaqiyatli o'zgartirdi.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL uchun SSL muvaffaqiyatli
+    almashtirildi.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL parolini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL portini muvaffaqiyatli o'zgartirdi.
+  wwcConfigConversationPostgresUsernameInput: Hozirgi foydalanuvchi nomi {0}. Yangi
+    foydalanuvchi nomini o'rnatish uchun 0 dan boshqa har qanday narsani yozing yoki
+    orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL muvaffaqiyatli almashtirildi.
+    O'zgartirish kuchga kirishi uchun qayta yuklang.
+  wwcConfigGUITogglePostgresButton: PostgreSQL-ni almashtirish
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL parolini o'zgartiring
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL ixtiyoriy argumentlarini o'zgartiring
+  wwcConfigGUIPostgresMenuButton: PostgreSQL sozlamalarini o'zgartiring
+  wwcConfigConversationPostgresPasswordInput: Joriy parol {0}. Yangi parolni o'rnatish
+    uchun 0 dan boshqa har qanday narsani yozing yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationPostgresHostnameInput: Joriy xost nomi {0}. Yangi hostname
+    ni o'rnatish uchun 0 dan boshqa har qanday narsani yozing yoki orqaga qaytish
+    uchun 0 yozing.
+  wwcConfigGUIPostgresPortButton: PostgreSQL portini o'zgartiring
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL xost nomini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL xost nomini o'zgartiring
+  wwcConfigConversationPostgresDatabaseNameInput: Joriy ma'lumotlar bazasi nomi {0}.
+    Yangi ma'lumotlar bazasi nomini o'rnatish uchun 0 dan boshqa har qanday narsani
+    yozing yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Joriy ixtiyoriy PostgreSQL argumentlari
+    quyidagilardir: {0}. Vergul bilan ajratilgan argumentlarni yozing (key=value,
+    key2=value2) yoki joriy arglarni artish uchun clear yozing yoki orqaga qaytish
+    uchun 0 yozing.'
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL-ni almashtirish
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL ma'lumotlar bazasini o'zgartiring
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL foydalanuvchi nomini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfiguratsiya'
 

@@ -315,7 +315,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Badilisha mipangilio ya SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Mafanikio kugeuza Watson Tafsiri.
     Reload kwa mabadiliko ya kuchukua athari.
-  wwcConfigGUISQLSettings: Usanidi wa SQL
   wwcConfigGUIToggleGoogleTranslateButton: Badilisha Google Kutafsiri
   wwcConfigGUIToggleWatsonTranslateButton: Kugeuza Watson kutafsiri
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Kutafsiri
@@ -378,7 +377,6 @@ Messages:
   libreHttpUnknown: 'Hitilafu isiyojulikana ya http: {0}'
   wwcConfigGUILibreTranslateURLButton: Badilisha Libre Kutafsiri URL
   wwcConfigConnectionFail: Imeshindwa kuungana na {0}.
-  wwcConfigGUIMongoSettings: Usanidi wa MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Kubadilisha kwa ufanisi jina la database
     la MongoDB.
   wwcConfigGUIMongoHostnameButton: Badilisha jina la Mwenyeji wa MongoDB
@@ -516,4 +514,46 @@ Messages:
     NAHIFADHI YA HIFADHIDATA YAKO KABLA YA KUENDESHA HII. Ikiwa una, amri ni: {0}'
   wwcNewSqlConvertFail: Ubadilishaji ulishindwa... tafadhali rudisha meza zako kutoka
     kwa chelezo uliyofanya. Kuzuia WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Kwa mafanikio ilibadilisha jina
+    la hifadhidata ya PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Hoja za hiari zilizofanikiwa.
+  wwcConfigConversationPostgresPortInput: Bandari ya sasa ni {0}. Andika chochote
+    kingine isipokuwa 0 ili kuweka bandari mpya, au andika 0 ili kurudi nyuma.
+  wwcConfigGUIPostgresUsernameButton: Badilisha Jina la Mtumiaji wa PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Kwa mafanikio ilibadilisha hoja
+    za hiari za PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL ya PostgreSQL ilibadilishwa kwa
+    mafanikio.
+  wwcConfigConversationPostgresPasswordSuccess: Kwa mafanikio kubadilisha nenosiri
+    la PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Kwa mafanikio kubadilisha bandari ya PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Jina la mtumiaji wa sasa ni {0}. Andika
+    kitu kingine chochote isipokuwa 0 ili kuweka jina la mtumiaji mpya, au andika
+    0 ili kurudi nyuma.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL ilibadilika kwa mafanikio.
+    Pakia upya ili mabadiliko yanatumika.
+  wwcConfigGUITogglePostgresButton: Badilisha PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Badilisha Nenosiri la PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Badilisha hoja za Hiari za PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Badilisha Mipangilio ya PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Nenosiri la sasa ni {0}. Andika chochote
+    kingine isipokuwa 0 ili kuweka nenosiri jipya, au andika 0 ili kurudi nyuma.
+  wwcConfigConversationPostgresHostnameInput: Jina la sasa la mwenyeji ni {0}. Andika
+    chochote kingine isipokuwa 0 ili kuweka jina jipya la mwenyeji, au andika 0 ili
+    kurudi nyuma.
+  wwcConfigGUIPostgresPortButton: Badilisha Bandari ya PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Kwa mafanikio kubadilisha jina la
+    mwenyeji la PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Badilisha jina la mwenyeji wa PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Jina la hifadhidata la sasa ni {0}.
+    Andika chochote kingine isipokuwa 0 ili kuweka jina jipya la hifadhidata, au andika
+    0 ili kurudi nyuma.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Hoja za hiari za sasa za PostgreSQL
+    ni: {0}. Andika hoja zilizotengwa na koma (ufunguo=thamani, ufungu2=thamani2),
+    au andika wazi ili kufuta args za sasa, au andika 0 ili kurudi nyuma.'
+  wwcConfigGUITogglePostgresSSLButton: Badilisha PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Badilisha Hifadhidata ya PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Kwa mafanikio kubadilisha jina la
+    mtumiaji wa PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Usanidi'
 

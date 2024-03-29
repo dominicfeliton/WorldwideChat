@@ -322,7 +322,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Promjena SQL postavki
   wwcConfigConversationWatsonTranslateToggleSuccess: Uspješno toggled Watson Translate.
     Ponovno učitajte kako bi promjena stupila na snagu.
-  wwcConfigGUISQLSettings: SQL konfiguracija
   wwcConfigGUIToggleGoogleTranslateButton: Prebaci Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Prijevod
   wwcConfigGUIToggleAmazonTranslateButton: Prebaci Amazon Prijevod
@@ -386,7 +385,6 @@ Messages:
   libreHttpUnknown: 'Nepoznata http greška: {0}'
   wwcConfigGUILibreTranslateURLButton: Promijeni URL za besplatno prevođenje
   wwcConfigConnectionFail: Povezivanje sa {0} nije uspjelo.
-  wwcConfigGUIMongoSettings: MongoDB konfiguracija
   wwcConfigConversationMongoDatabaseNameSuccess: Uspješno promijenio naziv baze podataka
     MongoDB.
   wwcConfigGUIMongoHostnameButton: Promijenite ime hosta MongoDB
@@ -521,4 +519,45 @@ Messages:
   wwcOldSqlStructRecords: 'Vaša SQL baza podataka ima neefikasnu postavku tablice
     zapisa igrača iz prethodne verzije WorldwideChat-a. Možete pokrenuti sljedeću
     naredbu da biste riješili ovaj problem: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Uspješno je promijenjen naziv
+    baze podataka PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Opcijski argumenti su uspješno
+    izbrisani.
+  wwcConfigConversationPostgresPortInput: Trenutni port je {0}. Upišite bilo šta osim
+    0 da biste postavili novi port ili upišite 0 da biste se vratili natrag.
+  wwcConfigGUIPostgresUsernameButton: Promijenite PostgreSQL korisničko ime
+  wwcConfigConversationPostgresOptionalArgsSuccess: Uspješno promijenio opcionalne
+    PostgreSQL argumente.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL za PostgreSQL uspješno je prebačen.
+  wwcConfigConversationPostgresPasswordSuccess: Uspješno promijenila PostgreSQL lozinku.
+  wwcConfigConversationPostgresPortSuccess: Uspješno promijenio PostgreSQL port.
+  wwcConfigConversationPostgresUsernameInput: Trenutno korisničko ime je {0}. Upišite
+    bilo šta osim 0 da biste postavili novo korisničko ime ili upišite 0 da biste
+    se vratili natrag.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL se uspješno prebacio. Ponovno
+    učitajte da bi promjena stupila na snagu.
+  wwcConfigGUITogglePostgresButton: Prebaci PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Promijenite PostgreSQL lozinku
+  wwcConfigGUIPostgresOptionalArgsButton: Promijenite PostgreSQL opcionalne argumente
+  wwcConfigGUIPostgresMenuButton: Promijenite PostgreSQL postavke
+  wwcConfigConversationPostgresPasswordInput: Trenutna lozinka je {0}. Upišite bilo
+    šta osim 0 da biste postavili novu lozinku ili upišite 0 da biste se vratili natrag.
+  wwcConfigConversationPostgresHostnameInput: Trenutni naziv hosta je {0}. Upišite
+    bilo šta osim 0 da biste postavili novo ime hosta ili upišite 0 da biste se vratili
+    natrag.
+  wwcConfigGUIPostgresPortButton: Promijenite PostgreSQL port
+  wwcConfigConversationPostgresHostnameSuccess: Uspješno promijenio ime hosta PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Promijenite ime hosta PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Trenutni naziv baze podataka je
+    {0}. Upišite bilo šta osim 0 da biste postavili novo ime baze podataka ili upišite
+    0 da biste se vratili natrag.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Trenutni opcioni PostgreSQL argumenti
+    su: {0}. Upišite argumente odvojene zarezom (ključ = vrijednost, ključ2 = vrijednosti2)
+    ili upišite clear da biste izbrisali trenutne oznake ili upišite 0 da biste se
+    vratili natrag.'
+  wwcConfigGUITogglePostgresSSLButton: Uključite PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Promijenite PostgreSQL bazu podataka
+  wwcConfigConversationPostgresUsernameSuccess: Uspješno promijenio PostgreSQL korisničko
+    ime.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfiguracija'
 

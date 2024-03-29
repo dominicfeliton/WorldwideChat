@@ -325,7 +325,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL सेटिंग बदलें
   wwcConfigConversationWatsonTranslateToggleSuccess: वाटसन अनुवाद को सफलतापूर्वक टॉगल
     किया गया। परिवर्तन के प्रभावी होने के लिए पुनः लोड करें।
-  wwcConfigGUISQLSettings: SQL कॉन्फ़िगरेशन
   wwcConfigGUIToggleGoogleTranslateButton: Google अनुवाद टॉगल करें
   wwcConfigGUIToggleWatsonTranslateButton: वॉटसन अनुवाद टॉगल करें
   wwcConfigGUIToggleAmazonTranslateButton: Amazon अनुवाद टॉगल करें
@@ -391,7 +390,6 @@ Messages:
   libreHttpUnknown: 'अज्ञात http त्रुटि: {0}'
   wwcConfigGUILibreTranslateURLButton: लिब्रे ट्रांसलेट URL बदलें
   wwcConfigConnectionFail: '{0} से कनेक्ट करने में विफल।'
-  wwcConfigGUIMongoSettings: MongoDB कॉन्फ़िगरेशन
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB डेटाबेस नाम को सफलतापूर्वक
     बदल दिया।
   wwcConfigGUIMongoHostnameButton: MongoDB होस्टनाम बदलें
@@ -535,4 +533,45 @@ Messages:
   wwcOldSqlStructRecords: 'आपके SQL डेटाबेस में WorldwideChat के पिछले संस्करण से
     एक अक्षम प्लेयर रिकॉर्ड तालिका सेटअप है। इस समस्या को ठीक करने के लिए आप निम्न
     कमांड चला सकते हैं: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL डेटाबेस नाम को सफलतापूर्वक
+    बदल दिया।
+  wwcConfigConversationPostgresOptionalArgsCleared: वैकल्पिक तर्क सफलतापूर्वक साफ़
+    हो गए।
+  wwcConfigConversationPostgresPortInput: मौजूदा पोर्ट {0} है। नया पोर्ट सेट करने
+    के लिए 0 के अलावा कुछ भी टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL उपयोगकर्ता नाम बदलें
+  wwcConfigConversationPostgresOptionalArgsSuccess: वैकल्पिक PostgreSQL तर्कों को
+    सफलतापूर्वक बदल दिया।
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL के लिए SSL सफलतापूर्वक
+    टॉगल किया गया।
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL पासवर्ड को सफलतापूर्वक
+    बदल दिया।
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL पोर्ट को सफलतापूर्वक बदल दिया।
+  wwcConfigConversationPostgresUsernameInput: मौजूदा उपयोगकर्ता नाम {0} है। नया उपयोगकर्ता
+    नाम सेट करने के लिए 0 के अलावा कुछ भी टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL सफलतापूर्वक टॉगल किया गया।
+    परिवर्तन प्रभावी होने के लिए फिर से लोड करें।
+  wwcConfigGUITogglePostgresButton: PostgreSQL टॉगल करें
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL पासवर्ड बदलें
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL वैकल्पिक तर्क बदलें
+  wwcConfigGUIPostgresMenuButton: PostgreSQL सेटिंग्स बदलें
+  wwcConfigConversationPostgresPasswordInput: मौजूदा पासवर्ड {0} है। नया पासवर्ड सेट
+    करने के लिए 0 के अलावा कुछ भी टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationPostgresHostnameInput: मौजूदा होस्टनाम {0} है। नया होस्टनाम
+    सेट करने के लिए 0 के अलावा कुछ भी टाइप करें, या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigGUIPostgresPortButton: PostgreSQL पोर्ट बदलें
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL होस्टनाम को सफलतापूर्वक
+    बदल दिया।
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL होस्टनाम बदलें
+  wwcConfigConversationPostgresDatabaseNameInput: मौजूदा डेटाबेस का नाम {0} है। नया
+    डेटाबेस नाम सेट करने के लिए 0 के अलावा कुछ भी टाइप करें, या वापस जाने के लिए 0
+    टाइप करें।
+  wwcConfigConversationPostgresOptionalArgsInput: 'वर्तमान वैकल्पिक PostgreSQL तर्क
+    हैं: {0}। अल्पविराम से अलग किए गए तर्क टाइप करें (key=value, key2=value2), या
+    मौजूदा तर्कों को मिटाने के लिए clear टाइप करें, या वापस जाने के लिए 0 टाइप करें।'
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL टॉगल करें
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL डेटाबेस बदलें
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL उपयोगकर्ता नाम को सफलतापूर्वक
+    बदल दिया।
+  wwcConfigGUIStorageTypeSettings: '{0} कॉन्फ़िगरेशन'
 

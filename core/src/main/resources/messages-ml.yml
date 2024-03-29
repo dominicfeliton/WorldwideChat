@@ -326,7 +326,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL ക്രമീകരണങ്ങൾ മാറ്റുക
   wwcConfigConversationWatsonTranslateToggleSuccess: വാട്സൺ വിവർത്തനം വിജയകരമായി ടോഗിൾ
     ചെയ്തു. മാറ്റം പ്രാബല്യത്തിൽ വരുത്താൻ വീണ്ടും ലോഡുചെയ്യുക.
-  wwcConfigGUISQLSettings: SQL കോൺഫിഗറേഷൻ
   wwcConfigGUIToggleGoogleTranslateButton: Google വിവർത്തനം ടോഗിൾ ചെയ്യുക
   wwcConfigGUIToggleWatsonTranslateButton: വാട്സൺ വിവർത്തനം ടോഗിൾ
   wwcConfigGUIToggleAmazonTranslateButton: ആമസോൺ വിവർത്തനം ടോഗിൾ
@@ -391,7 +390,6 @@ Messages:
   libreHttpUnknown: 'അജ്ഞാതമായ http പിശക്: {0}'
   wwcConfigGUILibreTranslateURLButton: മാറ്റുക സ്വതന്ത്ര URL വിവർത്തനം
   wwcConfigConnectionFail: '{0} ലേക്ക് കണക്റ്റുചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു.'
-  wwcConfigGUIMongoSettings: MongoDB കോൺഫിഗറേഷൻ
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB ഡാറ്റാബേസ് നാമം വിജയകരമായി
     മാറ്റി.
   wwcConfigGUIMongoHostnameButton: MongoDB ഹോസ്റ്റ്നാമം മാറ്റുക
@@ -536,4 +534,48 @@ Messages:
     നിങ്ങൾക്ക് ഉണ്ടെങ്കിൽ, കമാൻഡ് ഇതാണ്: {0}'
   wwcNewSqlConvertFail: പരിവർത്തനം പരാജയപ്പെട്ടു... ദയവായി നിങ്ങൾ ഉണ്ടാക്കിയ ബാക്കപ്പിൽ
     നിന്ന് നിങ്ങളുടെ പട്ടികകൾ പുനഃസ്ഥാപിക്കുക. വേൾഡ്വൈഡ് ചാറ്റ് പ്രവർത്തനരഹിതമാക്കുന്നു...
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL ഡാറ്റാബേസ് പേര് വിജയകരമായി
+    മാറ്റി.
+  wwcConfigConversationPostgresOptionalArgsCleared: ഓപ്ഷണൽ വാദങ്ങൾ വിജയകരമായി മായ്ച്ചു.
+  wwcConfigConversationPostgresPortInput: നിലവിലെ പോർട്ട് {0} ആണ്. ഒരു പുതിയ പോർട്ട്
+    സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റെന്തെങ്കിലും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ
+    0 എന്ന് ടൈപ്പ് ചെയ്യുക.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL ഉപയോക്തൃനാമം മാറ്റുക
+  wwcConfigConversationPostgresOptionalArgsSuccess: ഓപ്ഷണൽ PostgreSQL വാദങ്ങൾ വിജയകരമായി
+    മാറ്റി.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL- നുള്ള SSL വിജയകരമായി
+    ടോഗിൾ ചെയ്തു.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL പാസ്വേഡ് വിജയകരമായി മാറ്റി.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL പോർട്ട് വിജയകരമായി മാറ്റി.
+  wwcConfigConversationPostgresUsernameInput: നിലവിലെ ഉപയോക്തൃനാമം {0} ആണ്. ഒരു പുതിയ
+    ഉപയോക്തൃനാമം സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റെന്തെങ്കിലും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ
+    തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL വിജയകരമായി ടോഗുചെയ്തു. മാറ്റം
+    പ്രാബല്യത്തിൽ വരുന്നതിന് റീലോഡ് ചെയ്യുക.
+  wwcConfigGUITogglePostgresButton: പോസ്റ്റ്ഗ്രെസ്ക്യുഎൽ ടോഗിൾ ചെയ്യുക
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL പാസ്വേഡ് മാറ്റുക
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL ഓപ്ഷണൽ വാദങ്ങൾ മാറ്റുക
+  wwcConfigGUIPostgresMenuButton: PostgreSQL ക്രമീകരണങ്ങൾ മാറ്റുക
+  wwcConfigConversationPostgresPasswordInput: നിലവിലെ പാസ്വേഡ് {0} ആണ്. ഒരു പുതിയ
+    പാസ്വേഡ് സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റെന്തെങ്കിലും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ
+    പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
+  wwcConfigConversationPostgresHostnameInput: നിലവിലെ ഹോസ്റ്റ്നാമം {0} ആണ്. ഒരു പുതിയ
+    ഹോസ്റ്റ്നാമം സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റെന്തെങ്കിലും ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ
+    തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
+  wwcConfigGUIPostgresPortButton: PostgreSQL പോർട്ട് മാറ്റുക
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL ഹോസ്റ്റ്നാമം വിജയകരമായി
+    മാറ്റി.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL ഹോസ്റ്റ്നാമം മാറ്റുക
+  wwcConfigConversationPostgresDatabaseNameInput: നിലവിലെ ഡാറ്റാബേസിന്റെ പേര് {0}
+    ആണ്. ഒരു പുതിയ ഡാറ്റാബേസ് പേര് സജ്ജമാക്കാൻ 0 അല്ലാതെ മറ്റെന്തെങ്കിലും ടൈപ്പ് ചെയ്യുക,
+    അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.
+  wwcConfigConversationPostgresOptionalArgsInput: 'നിലവിലെ ഓപ്ഷണൽ PostgreSQL വാദങ്ങൾ
+    ഇവയാണ്: {0}. ഒരു കോമ കൊണ്ട് വേർതിരിച്ച ആർഗുമെന്റുകൾ ടൈപ്പ് ചെയ്യുക (കീ=മൂല്യം,
+    key2=value2), അല്ലെങ്കിൽ നിലവിലെ args തുടയ്ക്കാൻ ക്ലിയർ ടൈപ്പ് ചെയ്യുക, അല്ലെങ്കിൽ
+    തിരികെ പോകാൻ 0 എന്ന് ടൈപ്പ് ചെയ്യുക.'
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL ടോഗിൾ ചെയ്യുക
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL ഡാറ്റാബേസ് മാറ്റുക
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL ഉപയോക്തൃനാമം വിജയകരമായി
+    മാറ്റി.
+  wwcConfigGUIStorageTypeSettings: '{0} കോൺഫിഗറേഷൻ'
 

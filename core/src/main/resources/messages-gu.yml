@@ -317,7 +317,6 @@ Messages:
   wwcConfigGUISQLMenuButton: એસક્યુએલ સેટિંગ્સ બદલો
   wwcConfigConversationWatsonTranslateToggleSuccess: વોટસન અનુવાદને સફળતાપૂર્વક toggled.
     ફેરફારને અસર કરવા માટે ફરીથી લોડ કરો.
-  wwcConfigGUISQLSettings: એસક્યુએલ રૂપરેખાંકન
   wwcConfigGUIToggleGoogleTranslateButton: ગૂગલ અનુવાદને ટૉગલ કરો
   wwcConfigGUIToggleWatsonTranslateButton: ટૉગલ વાટ્સન અનુવાદ
   wwcConfigGUIToggleAmazonTranslateButton: એમેઝોન અનુવાદ ટૉગલ કરો
@@ -379,7 +378,6 @@ Messages:
   libreHttpUnknown: 'અજ્ઞાત HTTP ભૂલ: {0}'
   wwcConfigGUILibreTranslateURLButton: મફત URL નું ભાષાંતર બદલો
   wwcConfigConnectionFail: '{0} સાથે જોડાવા માટે નિષ્ફળ.'
-  wwcConfigGUIMongoSettings: MongoDB રૂપરેખાંકન
   wwcConfigConversationMongoDatabaseNameSuccess: સફળતાપૂર્વક MongoDB ડેટાબેઝ નામ બદલ્યું.
   wwcConfigGUIMongoHostnameButton: મોંગોડીબી હોસ્ટનામ બદલો
   wwcConfigConversationMongoPasswordInput: હાલનો પાસવર્ડ {0} છે નવો પાસવર્ડ સેટ કરવા
@@ -516,4 +514,45 @@ Messages:
   wwcOldSqlStructRecords: 'તમારા એસક્યુએલ ડેટાબેઝમાં WorldwideChatના અગાઉના સંસ્કરણમાંથી
     બિનકાર્યક્ષમ પ્લેયર રેકોર્ડ ટેબલ સેટઅપ છે. તમે આ મુદ્દાને ઠીક કરવા માટે નીચેનો
     આદેશ ચલાવી શકો છો: /wwcd કન્વર્ટ'
+  wwcConfigConversationPostgresDatabaseNameSuccess: સફળતાપૂર્વક PostgreSQL ડેટાબેઝ
+    નામ બદલ્યું.
+  wwcConfigConversationPostgresOptionalArgsCleared: વૈકલ્પિક દલીલો સફળતાપૂર્વક સાફ
+  wwcConfigConversationPostgresPortInput: વર્તમાન બંદર {0} છે. નવું પોર્ટ સેટ કરવા
+    માટે 0 સિવાયની કંઈપણ ટાઇપ કરો, અથવા પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigGUIPostgresUsernameButton: પોસ્ટગ્રેસક્યુએલ વપરાશકર્તાનામ બદલો
+  wwcConfigConversationPostgresOptionalArgsSuccess: વૈકલ્પિક PostgreSQL દલીલોને સફળતાપૂર્વક
+    બદલી.
+  wwcConfigConversationTogglePostgresSSLSuccess: પોસ્ટગ્રેસક્યુએલ માટે SSL સફળતાપૂર્વક
+    ટૉગ કરવામાં આવ્યું છે.
+  wwcConfigConversationPostgresPasswordSuccess: સફળતાપૂર્વક PostgreSQL પાસવર્ડ બદલ્યો.
+  wwcConfigConversationPostgresPortSuccess: સફળતાપૂર્વક પોસ્ટગ્રેસક્યુએલ પોર્ટ બદલ્યો.
+  wwcConfigConversationPostgresUsernameInput: વર્તમાન વપરાશકર્તા નામ {0} છે. નવું
+    વપરાશકર્તાનામ સેટ કરવા માટે 0 સિવાયની કંઈપણ ટાઇપ કરો, અથવા પાછા જવા માટે 0 ટાઇપ
+    કરો.
+  wwcConfigConversationTogglePostgresSuccess: પોસ્ટગ્રેસક્યુએલ સફળતાપૂર્વક ટૉગલ કર્યું.
+    ફેરફારને અસર કરવા માટે ફરીથી લોડ કરો.
+  wwcConfigGUITogglePostgresButton: પોસ્ટગ્રેસક્યુએલ ટૉગલ કરો
+  wwcConfigGUIPostgresPasswordButton: પોસ્ટગ્રેસક્યુએલ પાસવર્ડ બદલો
+  wwcConfigGUIPostgresOptionalArgsButton: પોસ્ટગ્રેએસક્યુએલ વૈકલ્પિક દલીલો બદલો
+  wwcConfigGUIPostgresMenuButton: પોસ્ટગ્રેસક્યુએલ સેટિંગ્સ બદલો
+  wwcConfigConversationPostgresPasswordInput: વર્તમાન પાસવર્ડ {0} છે. નવો પાસવર્ડ
+    સેટ કરવા માટે 0 સિવાય બીજું કંઈપણ લખો, અથવા પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigConversationPostgresHostnameInput: વર્તમાન હોસ્ટનામ {0} છે. નવું યજમાનનામ
+    સેટ કરવા માટે 0 સિવાયની કંઈપણ લખો, અથવા પાછા જવા માટે 0 ટાઇપ કરો.
+  wwcConfigGUIPostgresPortButton: પોસ્ટગ્રેસક્યુએલ પોર્ટ બદલો
+  wwcConfigConversationPostgresHostnameSuccess: સફળતાપૂર્વક પોસ્ટગ્રેસક્યુએલ હોસ્ટનામ
+    બદલ્યું.
+  wwcConfigGUIPostgresHostnameButton: પોસ્ટગ્રેએસક્યુએલ હોસ્ટનામ બદલો
+  wwcConfigConversationPostgresDatabaseNameInput: વર્તમાન ડેટાબેઝ નામ {0} છે. નવું
+    ડેટાબેઝ નામ સેટ કરવા માટે 0 સિવાયની કંઈપણ ટાઇપ કરો, અથવા પાછા જવા માટે 0 ટાઇપ
+    કરો.
+  wwcConfigConversationPostgresOptionalArgsInput: 'વર્તમાન વૈકલ્પિક પોસ્ટગ્રેસક્યુએલ
+    દલીલો છે: {0}. અલ્પવિરામ દ્વારા અલગ દલીલો ટાઇપ કરો (કી = મૂલ્ય, કી2 = મૂલ્ય 2),
+    અથવા વર્તમાન આર્ગ્સને સાફ કરવા માટે સ્પષ્ટ ટાઇપ કરો, અથવા પાછા જવા માટે 0 ટાઇપ
+    કરો.'
+  wwcConfigGUITogglePostgresSSLButton: પોસ્ટગ્રેસક્યુએલ એસએસએલ ટૉગલ કરો
+  wwcConfigGUIPostgresDatabaseNameButton: પોસ્ટગ્રેસક્યુએલ ડેટાબેઝ બદલો
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL વપરાશકર્તાનામ સફળતાપૂર્વક
+    બદલ્યું.
+  wwcConfigGUIStorageTypeSettings: '{0} રૂપરેખાંકન'
 

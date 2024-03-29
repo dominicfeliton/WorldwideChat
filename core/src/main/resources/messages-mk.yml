@@ -333,7 +333,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Променете ги SQL поставките
   wwcConfigConversationWatsonTranslateToggleSuccess: Успешно се префрли Вотсон Преведете.
     Вчитајте повторно за промената да стапи на сила.
-  wwcConfigGUISQLSettings: SQL конфигурација
   wwcConfigGUIToggleGoogleTranslateButton: Префрли Google Преведи
   wwcConfigGUIToggleWatsonTranslateButton: Вклучи Вотсон Преведи
   wwcConfigGUIToggleAmazonTranslateButton: Вклучи Амазон Преведи
@@ -398,7 +397,6 @@ Messages:
   libreHttpUnknown: 'Непозната http грешка: {0}'
   wwcConfigGUILibreTranslateURLButton: Промена Слободен Преведете URL
   wwcConfigConnectionFail: Не успеав да се поврзам со {0}.
-  wwcConfigGUIMongoSettings: Конфигурација на MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Успешно го смени името на базата
     на податоци MongoDB.
   wwcConfigGUIMongoHostnameButton: Променете го името на домаќинот MongoDB
@@ -539,4 +537,46 @@ Messages:
     ДА ЈА СТАРТУВАТЕ ОВАА. Ако имате, командата е: {0}'
   wwcNewSqlConvertFail: Конверзијата не успеа... ве молиме вратете ги вашите табели
     од резервната копија што ја направивте. Оневозможување на WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Успешно се промени името на базата
+    на податоци PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Факултативните аргументи успешно
+    исчистени.
+  wwcConfigConversationPostgresPortInput: Тековната порта е {0}. Напишете нешто друго
+    освен 0 за да поставите нова порта или напишете 0 за да се вратите назад.
+  wwcConfigGUIPostgresUsernameButton: Променете го корисничкото име PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Успешно се променети опционалните
+    аргументи на PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL за PostgreSQL успешно се вклучи.
+  wwcConfigConversationPostgresPasswordSuccess: Успешно ја смени лозинката PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Успешно ја смени портата PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Моменталното корисничко име е {0}. Напишете
+    нешто друго освен 0 за да поставите ново корисничко име или напишете 0 за да се
+    вратите назад.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL успешно се префрли. Повторно
+    вчитувајте за промената да стапи на сила.
+  wwcConfigGUITogglePostgresButton: Вклучете го PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Променете ја лозинката на PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Променете ги опционалните аргументи на PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Променете ги поставките на PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Моменталната лозинка е {0}. Напишете
+    нешто друго освен 0 за да поставите нова лозинка или напишете 0 за да се вратите
+    назад.
+  wwcConfigConversationPostgresHostnameInput: Тековното име на домаќинот е {0}. Внесете
+    нешто друго освен 0 за да поставите ново име на домаќинот или напишете 0 за да
+    се вратите назад.
+  wwcConfigGUIPostgresPortButton: Променете ја портата PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Успешно го смени името на хостот PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Променете го името на домаќинот PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Тековното име на базата на податоци
+    е {0}. Напишете нешто друго освен 0 за да поставите ново име на база на податоци
+    или напишете 0 за да се вратите назад.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Тековните опционални аргументи
+    на PostgreSQL се: {0}. Внесете аргументи одделени со запирка (key = value, key2
+    = value2), или напишете clear за да ги избришете тековните аргови, или напишете
+    0 за да се вратите назад.'
+  wwcConfigGUITogglePostgresSSLButton: Вклучете го PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Променете ја базата на податоци PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Успешно се промени корисничкото име
+    на PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Конфигурација'
 

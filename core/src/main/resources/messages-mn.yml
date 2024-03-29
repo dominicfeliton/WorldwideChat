@@ -325,7 +325,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL Тохиргоо өөрчлөх
   wwcConfigConversationWatsonTranslateToggleSuccess: Амжилттай ватсон орчуулах toggled.
     Өөрчлөлтийг хүчин төгөлдөр болгохын тулд дахин ачаална.
-  wwcConfigGUISQLSettings: SQL тохиргоо
   wwcConfigGUIToggleGoogleTranslateButton: Google Toggle орчуулах
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Ватсон орчуулах
   wwcConfigGUIToggleAmazonTranslateButton: Amazon Toggle орчуулах
@@ -392,7 +391,6 @@ Messages:
   libreHttpUnknown: 'Үл мэдэгдэх HTTP алдаа: {0}'
   wwcConfigGUILibreTranslateURLButton: Чөлөөт URL Translate өөрчлөх
   wwcConfigConnectionFail: '{0} руу холбогдож чадсангүй.'
-  wwcConfigGUIMongoSettings: MongoDB тохиргоо
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB өгөгдлийн сангийн нэрийг
     амжилттай өөрчилсөн.
   wwcConfigGUIMongoHostnameButton: Өөрчлөлт MongoDB Хостын нэр
@@ -534,4 +532,48 @@ Messages:
     САНГИЙН НӨӨЦЛӨЛТ ХИЙСЭН ЭСЭХИЙГ ШАЛГАНА УУ. Хэрэв танд байгаа бол команд нь: {0}'
   wwcNewSqlConvertFail: Хөрвүүлэлт амжилтгүй болсон... таны хийсэн нөөцөөс хүснэгтүүдээ
     сэргээнэ үү. WorldwideChat-ийг идэвхгүй болгох...
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL өгөгдлийн сангийн нэрийг
+    амжилттай өөрчилсөн.
+  wwcConfigConversationPostgresOptionalArgsCleared: Нэмэлт аргументууд амжилттай арилгагдсан.
+  wwcConfigConversationPostgresPortInput: Одоогийн порт нь {0} байна. Шинэ портыг
+    тохируулахын тулд 0-ээс бусад зүйлийг бичнэ үү, эсвэл буцаж очихын тулд 0 гэж
+    бичнэ үү.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL хэрэглэгчийн нэрийг өөрчлөх
+  wwcConfigConversationPostgresOptionalArgsSuccess: Нэмэлт PostgreSQL аргументуудыг
+    амжилттай өөрчилсөн.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL-д зориулсан SSL амжилттай
+    өөрчлөгдсөн.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL нууц үгийг амжилттай өөрчилсөн.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL портыг амжилттай өөрчилсөн.
+  wwcConfigConversationPostgresUsernameInput: Одоогийн хэрэглэгчийн нэр нь {0} байна.
+    Шинэ хэрэглэгчийн нэр тохируулахын тулд 0-ээс бусад зүйлийг бичнэ үү, эсвэл буцаж
+    очихын тулд 0 гэж бичнэ үү.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL амжилттай шилжигдсэн. Өөрчлөлт
+    хүчин төгөлдөр болохын тулд дахин ачаална уу.
+  wwcConfigGUITogglePostgresButton: PostgreSQL-ийг өөрчлөх
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL нууц үгийг өөрчлөх
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL нэмэлт аргументуудыг өөрчлөх
+  wwcConfigGUIPostgresMenuButton: PostgreSQL тохиргоог өөрчлөх
+  wwcConfigConversationPostgresPasswordInput: Одоогийн нууц үг нь {0} байна. Шинэ
+    нууц үгээ тохируулахын тулд 0-ээс бусад зүйлийг бичнэ үү, эсвэл буцаж очихын тулд
+    0 гэж бичнэ үү.
+  wwcConfigConversationPostgresHostnameInput: Одоогийн хостын нэр нь {0} байна. Шинэ
+    хостын нэрийг тохируулахын тулд 0-ээс бусад зүйлийг бичнэ үү, эсвэл буцаж очихын
+    тулд 0 гэж бичнэ үү.
+  wwcConfigGUIPostgresPortButton: PostgreSQL портыг өөрчлөх
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL хостын нэрийг амжилттай
+    өөрчилсөн.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL хостын нэрийг өөрчлөх
+  wwcConfigConversationPostgresDatabaseNameInput: Одоогийн өгөгдлийн сангийн нэр нь
+    {0} байна. Шинэ өгөгдлийн сангийн нэрийг тохируулахын тулд 0-ээс бусад зүйлийг
+    бичнэ үү, эсвэл буцаж очихын тулд 0 гэж бичнэ үү.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Одоогийн нэмэлт PostgreSQL аргументууд
+    нь: {0}. Таслалаар тусгаарлагдсан аргументуудыг бичнэ (түлхүүр=value, key2=value2),
+    эсвэл одоогийн аргуудыг арчихын тулд clear гэж бичнэ, эсвэл буцаж очихын тулд
+    0 гэж бичнэ.'
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL-ийг өөрчлөх
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL мэдээллийн санг өөрчлөх
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL хэрэглэгчийн нэрийг амжилттай
+    өөрчилсөн.
+  wwcConfigGUIStorageTypeSettings: '{0} Тохиргоо'
 

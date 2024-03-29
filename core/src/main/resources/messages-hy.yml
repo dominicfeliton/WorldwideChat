@@ -333,7 +333,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Փոխել SQL կարգավորումները
   wwcConfigConversationWatsonTranslateToggleSuccess: 'Հաջողությամբ toggled Watson
     Թարգմանել. Վերբեռնել փոփոխության ուժի մեջ մտնելու համար:'
-  wwcConfigGUISQLSettings: SQL կոնֆիգուրացիա
   wwcConfigGUIToggleGoogleTranslateButton: Փոխարկել Google Թարգմանել
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Թարգմանել
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Թարգմանել
@@ -395,7 +394,6 @@ Messages:
   libreHttpUnknown: 'Անհայտ http սխալ: {0}'
   wwcConfigGUILibreTranslateURLButton: Փոխել ազատ Թարգմանել URL
   wwcConfigConnectionFail: 'Չհաջողվեց միանալ {0}- ին:'
-  wwcConfigGUIMongoSettings: MongoDB կոնֆիգուրացիա
   wwcConfigConversationMongoDatabaseNameSuccess: 'Հաջողությամբ փոխեց MongoDB տվյալների
     բազայի անունը:'
   wwcConfigGUIMongoHostnameButton: Փոխել MongoDB հյուրընկալողի անունը
@@ -541,4 +539,48 @@ Messages:
   wwcOldSqlStructRecords: 'Ձեր SQL տվյալների բազան ունի անարդյունավետ խաղացողի ռեկորդային
     սեղանի կարգավորում է նախորդ տարբերակից WorldwideChat. Դուք կարող եք գործարկել
     հետեւյալ հրամանը շտկել այս հարցը: /wwcd փոխարկել'
+  wwcConfigConversationPostgresDatabaseNameSuccess: 'Հաջողությամբ փոխվեց PostgreSQL
+    տվյալների բազայի անունը:'
+  wwcConfigConversationPostgresOptionalArgsCleared: 'Ընտրովի փաստարկները հաջողությամբ
+    մաքրվել են:'
+  wwcConfigConversationPostgresPortInput: 'Ներկայիս նավահանգիստը {0} է: Մուտքագրեք
+    որևէ այլ բան, քան 0-ը, նոր նավահանգիստ սահմանելու համար, կամ մուտքագրեք 0 ՝ ետ
+    գնալու համար:'
+  wwcConfigGUIPostgresUsernameButton: Փոխել PostgreSQL օգտվողի անունը
+  wwcConfigConversationPostgresOptionalArgsSuccess: 'Հաջողությամբ փոխվեց ընտրովի PostgreSQL
+    փաստարկները:'
+  wwcConfigConversationTogglePostgresSSLSuccess: 'PostgreSQL- ի համար SSL- ը հաջողությամբ
+    միացվեց:'
+  wwcConfigConversationPostgresPasswordSuccess: 'Հաջողությամբ փոխեց PostgreSQL գաղտնաբառը:'
+  wwcConfigConversationPostgresPortSuccess: 'Հաջողությամբ փոխվեց PostgreSQL պորտը:'
+  wwcConfigConversationPostgresUsernameInput: 'Ներկայիս օգտագործողի անունը {0} է:
+    Մուտքագրեք որևէ այլ բան, քան 0-ը, նոր օգտանուն սահմանելու համար, կամ մուտքագրեք
+    0 ՝ ետ գնալու համար:'
+  wwcConfigConversationTogglePostgresSuccess: 'PostgreSQL- ը հաջողությամբ միացվեց:
+    Վերաբեռնեք, որպեսզի փոփոխությունն ուժի մեջ մտնի:'
+  wwcConfigGUITogglePostgresButton: Միացնել PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Փոխել PostgreSQL գաղտնաբառը
+  wwcConfigGUIPostgresOptionalArgsButton: Փոխեք PostgreSQL- ի ընտրովի փաստարկները
+  wwcConfigGUIPostgresMenuButton: Փոխել PostgreSQL- ի կարգավորումները
+  wwcConfigConversationPostgresPasswordInput: 'Ընթացիկ գաղտնաբառը {0} է: Նոր գաղտնաբառ
+    սահմանելու համար մուտքագրեք 0-ից այլ բան, կամ մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcConfigConversationPostgresHostnameInput: 'Ընթացիկ հյուրընկալողի անունը {0} է:
+    Մուտքագրեք որևէ այլ բան, քան 0-ը, նոր հյուրընկալողի անուն սահմանելու համար կամ
+    մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcConfigGUIPostgresPortButton: Փոխեք PostgreSQL նավահանգիստը
+  wwcConfigConversationPostgresHostnameSuccess: 'Հաջողությամբ փոխվեց PostgreSQL հոսթերի
+    անունը:'
+  wwcConfigGUIPostgresHostnameButton: Փոխել PostgreSQL հոսթերի անունը
+  wwcConfigConversationPostgresDatabaseNameInput: 'Տվյալների բազայի ներկայիս անվանումը
+    {0} է: Մուտքագրեք որևէ այլ բան, քան 0, նոր տվյալների բազայի անուն սահմանելու համար,
+    կամ մուտքագրեք 0 ՝ ետ գնալու համար:'
+  wwcConfigConversationPostgresOptionalArgsInput: 'Ընթացիկ ընտրովի PostgreSQL փաստարկներն
+    են՝ {0}: Մուտքագրեք ստորակետով առանձնացված փաստարկներ (key=value, key2 = value2),
+    կամ մուտքագրեք clear ՝ ընթացիկ արգերը սրբելու համար, կամ մուտքագրեք 0 ետ գնալու
+    համար:'
+  wwcConfigGUITogglePostgresSSLButton: Միացնել PostgreSQL SSL- ը
+  wwcConfigGUIPostgresDatabaseNameButton: Փոխել PostgreSQL տվյալների բազան
+  wwcConfigConversationPostgresUsernameSuccess: 'Հաջողությամբ փոխվեց PostgreSQL օգտագործողի
+    անունը:'
+  wwcConfigGUIStorageTypeSettings: '{0} Կազմաձեւում'
 

@@ -335,7 +335,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Ndrysho cilësimet SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Sukses toggled Watson Translate.
     Rifresko që ndryshimi të hyjë në fuqi.
-  wwcConfigGUISQLSettings: Konfigurimi SQL
   wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Përkthejeni
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Përkthejeni
@@ -402,7 +401,6 @@ Messages:
   libreHttpUnknown: 'Gabim i panjohur http: {0}'
   wwcConfigGUILibreTranslateURLButton: Ndrysho Libre Translate URL
   wwcConfigConnectionFail: Dështoi të lidhej me {0}.
-  wwcConfigGUIMongoSettings: Konfigurimi MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Ndryshuar me sukses emrin e bazës
     së të dhënave MongoDB.
   wwcConfigGUIMongoHostnameButton: Ndrysho emrin e hostit MongoDB
@@ -548,4 +546,48 @@ Messages:
     të tabelës së regjistrimit të lojtarëve nga një version i mëparshëm i WorldwideChat.
     Ju mund të ekzekutoni komandën e mëposhtme për të rregulluar këtë çështje: /wwcd
     convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Ndryshoi me sukses emrin e bazës
+    së të dhënave PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Argumentet opsionale pastruan
+    me sukses
+  wwcConfigConversationPostgresPortInput: Porti aktual është {0}. Shkruani ndonjë
+    gjë tjetër përveç 0 për të vendosur një port të ri, ose shkruani 0 për të kthyer
+    prapa.
+  wwcConfigGUIPostgresUsernameButton: Ndryshoni emrin e përdoruesit të PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Ndryshuan me sukses argumentet
+    opsionale PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL për PostgreSQL u ndërrua me sukses.
+  wwcConfigConversationPostgresPasswordSuccess: Me sukses ndryshoi fjalëkalimin PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Ndryshoi me sukses portin PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Emri i përdoruesit aktual është {0}.
+    Shkruani ndonjë gjë tjetër përveç 0 për të vendosur një emër përdoruesi të ri,
+    ose shkruani 0 për t'u kthyer prapa.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL u ndërrua me sukses. Rishikoni
+    që ndryshimi të hyjë në fuqinë.
+  wwcConfigGUITogglePostgresButton: Ndryshoni PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Ndryshoni fjalëkalimin PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Ndryshoni argumentet opsionale të PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Ndryshoni Cilësimet e PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Fjalëkalimi aktual është {0}. Shkruani
+    ndonjë gjë tjetër përveç 0 për të vendosur një fjalëkalim të ri, ose shkruani
+    0 për të kthyer prapa.
+  wwcConfigConversationPostgresHostnameInput: Emri aktual i hostit është {0}. Shkruani
+    ndonjë gjë tjetër përveç 0 për të vendosur një emër të ri të hostit, ose shkruani
+    0 për t'u kthyer prapa.
+  wwcConfigGUIPostgresPortButton: Ndryshoni Portin PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Ndryshoi me sukses emrin e hostit
+    PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Ndryshoni emrin e hostit të PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Emri aktual i bazës së të dhënave
+    është {0}. Shkruani ndonjë gjë tjetër përveç 0 për të vendosur një emër të ri
+    të bazës së të dhënave, ose shkruani 0 për të kthyer prapa.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Argumentet aktuale opsionale të
+    PostgreSQL janë: {0}. Shkruani argumente të ndara me presje (key=value, key2 =
+    value2), ose shkruani të qartë për të fshirë argjet aktuale, ose shkruani 0 për
+    të kthyer prapa.'
+  wwcConfigGUITogglePostgresSSLButton: Ndërroni PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Ndryshoni bazën e të dhënave PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Me sukses ndryshoi emrin e përdoruesit
+    PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfigurimi'
 

@@ -317,7 +317,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Keisti SQL nustatymus
   wwcConfigConversationWatsonTranslateToggleSuccess: Sėkmingai perėjo Watson Versti.
     Perkraukite, kad pakeitimas įsigaliotų.
-  wwcConfigGUISQLSettings: SQL konfigūracija
   wwcConfigGUIToggleGoogleTranslateButton: Perjungti Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Perjungti Watson Versti
   wwcConfigGUIToggleAmazonTranslateButton: Perjungti Amazon Versti
@@ -381,7 +380,6 @@ Messages:
   libreHttpUnknown: 'Nežinoma http klaida: {0}'
   wwcConfigGUILibreTranslateURLButton: Keisti Nemokamai Versti URL
   wwcConfigConnectionFail: Nepavyko prisijungti prie {0}.
-  wwcConfigGUIMongoSettings: MongoDB konfigūracija
   wwcConfigConversationMongoDatabaseNameSuccess: Sėkmingai pakeitė MongoDB duomenų
     bazės pavadinimą.
   wwcConfigGUIMongoHostnameButton: Keisti MongoDB Hostname
@@ -522,4 +520,51 @@ Messages:
     bazę padarėte atsarginę kopiją. Jei turite, komanda yra: {0}'
   wwcNewSqlConvertFail: Konversija nepavyko... prašome atkurti savo lenteles iš atsarginės
     kopijos, kurią padarėte. “WorldwideChat” išjungimas...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Sėkmingai pakeistas PostgreSQL
+    duomenų bazės pavadinimas.
+  wwcConfigConversationPostgresOptionalArgsCleared: Pasirenkamieji argumentai sėkmingai
+    pašalinti.
+  wwcConfigConversationPostgresPortInput: Dabartinis prievadas yra {0}. Įveskite ką
+    nors, išskyrus 0, kad nustatytumėte naują prievadą, arba įveskite 0, kad grįžtumėte
+    atgal.
+  wwcConfigGUIPostgresUsernameButton: Pakeiskite PostgreSQL vartotojo vardą
+  wwcConfigConversationPostgresOptionalArgsSuccess: Sėkmingai pakeisti pasirenkamieji
+    PostgreSQL argumentai.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL, skirtas PostgreSQL, sėkmingai
+    perjungtas.
+  wwcConfigConversationPostgresPasswordSuccess: Sėkmingai pakeistas “PostgreSQL” slaptažodis.
+  wwcConfigConversationPostgresPortSuccess: Sėkmingai pakeistas PostgreSQL prievadas.
+  wwcConfigConversationPostgresUsernameInput: Dabartinis vartotojo vardas yra {0}.
+    Įveskite ką nors, išskyrus 0, kad nustatytumėte naują vartotojo vardą, arba įveskite
+    0, kad grįžtumėte atgal.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL sėkmingai perjungtas. Perkraukite,
+    kad pakeitimas įsigaliotų.
+  wwcConfigGUITogglePostgresButton: Perjungti “PostgreSQL”
+  wwcConfigGUIPostgresPasswordButton: Pakeiskite “PostgreSQL” slaptažodį
+  wwcConfigGUIPostgresOptionalArgsButton: Pakeiskite “PostgreSQL” pasirenkamuosius
+    argumentus
+  wwcConfigGUIPostgresMenuButton: Pakeiskite “PostgreSQL” nustatymus
+  wwcConfigConversationPostgresPasswordInput: Dabartinis slaptažodis yra {0}. Įveskite
+    bet ką kitą nei 0, kad nustatytumėte naują slaptažodį, arba įveskite 0, kad grįžtumėte
+    atgal.
+  wwcConfigConversationPostgresHostnameInput: Dabartinis pagrindinio kompiuterio vardas
+    yra {0}. Įveskite ką nors, išskyrus 0, kad nustatytumėte naują pagrindinio kompiuterio
+    pavadinimą, arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigGUIPostgresPortButton: Pakeiskite “PostgreSQL” prievadą
+  wwcConfigConversationPostgresHostnameSuccess: Sėkmingai pakeistas “PostgreSQL” pagrindinio
+    kompiuterio vardas.
+  wwcConfigGUIPostgresHostnameButton: Pakeiskite “PostgreSQL” pagrindinio kompiuterio
+    pavadinimą
+  wwcConfigConversationPostgresDatabaseNameInput: Dabartinis duomenų bazės pavadinimas
+    yra {0}. Įveskite ką nors, išskyrus 0, kad nustatytumėte naują duomenų bazės pavadinimą,
+    arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Dabartiniai pasirenkamieji PostgreSQL
+    argumentai yra: {0}. Įveskite argumentus, atskirtus kableliu (key=value, key2
+    = value2), arba įrašykite clear, kad nuvalytumėte dabartines argas, arba įveskite
+    0, kad grįžtumėte atgal.'
+  wwcConfigGUITogglePostgresSSLButton: Perjungti “PostgreSQL” SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Pakeiskite PostgreSQL duomenų bazę
+  wwcConfigConversationPostgresUsernameSuccess: Sėkmingai pakeistas PostgreSQL vartotojo
+    vardas.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfigūracija'
 

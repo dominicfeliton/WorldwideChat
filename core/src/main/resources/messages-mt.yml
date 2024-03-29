@@ -326,7 +326,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Bidla SQL Settings
   wwcConfigConversationWatsonTranslateToggleSuccess: B'suċċess toggled Watson Ittraduċi.
     Reload biex il-bidla tidħol fis-seħħ.
-  wwcConfigGUISQLSettings: SQL Konfigurazzjoni
   wwcConfigGUIToggleGoogleTranslateButton: Ittraduċi Google Ittraduċi
   wwcConfigGUIToggleWatsonTranslateButton: Ittraduċi Toggle Watson
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Ittraduċi
@@ -387,7 +386,6 @@ Messages:
   libreHttpUnknown: 'Mhux magħruf żball http: {0}'
   wwcConfigGUILibreTranslateURLButton: Bidla Free Ittraduċi URL
   wwcConfigConnectionFail: Naqas li jikkonnettja ma {0}.
-  wwcConfigGUIMongoSettings: Konfigurazzjoni MongODB
   wwcConfigConversationMongoDatabaseNameSuccess: Biddel b'suċċess l-isem tad-database
     MongoDB.
   wwcConfigGUIMongoHostnameButton: Bidla MongoDB hostname
@@ -527,4 +525,40 @@ Messages:
     il-kmand huwa: {0}'
   wwcNewSqlConvertFail: Konverżjoni falliet... jekk jogħġbok irrestawra t-tabelli
     tiegħek mill-backup li għamilt. Id-diżattivazzjoni tal-WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Bidlet b'suċċess l-isem tad-database
+    PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Argumenti mhux obbligatorji kklerjati
+  wwcConfigConversationPostgresPortInput: Il-port kurrenti huwa {0}. Ittajpja xi ħaġa
+    oħra għajr 0 biex tissettja port ġdid, jew it-tip 0 biex tmur lura.
+  wwcConfigGUIPostgresUsernameButton: Ibdel l-Username PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Bidlet b'suċċess l-argumenti fakultattivi
+    PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL għal PostgreSQL tqabbad b'suċċess.
+  wwcConfigConversationPostgresPasswordSuccess: Bidlet b'suċċess il-password PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Bidlet b'suċċess il-port PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: L-username kurrenti huwa {0}. Ittajpja
+    xi ħaġa oħra għajr 0 biex tissettja username ġdid, jew tip 0 biex tmur lura.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL tqabbad b'suċċess. Erġa'
+    tagħbija biex il-bidla tidħol fis-seħħ.
+  wwcConfigGUITogglePostgresButton: Taqleb PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Ibdel il-Password PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Ibdel l-Argumenti Fakultattivi PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Ibdel is-Settings PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Il-password kurrenti hija {0}. Ittajpja
+    xi ħaġa oħra għajr 0 biex tissettja password ġdida, jew tip 0 biex tmur lura.
+  wwcConfigConversationPostgresHostnameInput: L-isem tal-host attwali huwa {0}. Ittajpja
+    xi ħaġa oħra għajr 0 biex tissettja hostname ġdid, jew ittajpja 0 biex tmur lura.
+  wwcConfigGUIPostgresPortButton: Ibdel il-Port PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Bidlet b'suċċess l-isem tal-host PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Ibdel l-Isem tal-Hosting PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: L-isem tad-database kurrenti huwa
+    {0}. Ittajpja xi ħaġa oħra għajr 0 biex tissettja isem ġdid tad-database, jew
+    tip 0 biex tmur lura.
+  wwcConfigConversationPostgresOptionalArgsInput: 'L-argumenti mhux obbligatorji attwali
+    tal-PostgreSQL huma: {0}. It-tip argumenti separati b''virgola (key=valur, key2
+    = value2), jew tip ċar biex timsaħ l-args kurrenti, jew tip 0 biex tmur lura.'
+  wwcConfigGUITogglePostgresSSLButton: Taqleb PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Ibdel id-Database PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Biddel b'suċċess l-username PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfigurazzjoni'
 

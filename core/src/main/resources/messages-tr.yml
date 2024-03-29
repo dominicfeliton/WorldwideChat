@@ -311,7 +311,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL Ayarlarını Değiştir
   wwcConfigConversationWatsonTranslateToggleSuccess: Watson Translate başarılı bir
     şekilde geçiş yaptı. Değişikliğin etkili olması için yeniden yükleyin.
-  wwcConfigGUISQLSettings: SQL Yapılandırma
   wwcConfigGUIToggleGoogleTranslateButton: Google Çevir'i Aç/Kapat
   wwcConfigGUIToggleWatsonTranslateButton: Watson Çevir'i Aç/Kapat
   wwcConfigGUIToggleAmazonTranslateButton: Amazon Çevir'i Aç/Kapat
@@ -375,7 +374,6 @@ Messages:
   libreHttpUnknown: 'Bilinmeyen http hatası: {0}'
   wwcConfigGUILibreTranslateURLButton: Ücretsiz Çevir URL'sini değiştir
   wwcConfigConnectionFail: '{0} öğesine bağlanılamadı.'
-  wwcConfigGUIMongoSettings: MongoDB Yapılandırması
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB veritabanı adını başarıyla
     değiştirdi.
   wwcConfigGUIMongoHostnameButton: MongoDB Ana Bilgisayar Adını Değiştir
@@ -517,4 +515,46 @@ Messages:
     komut şudur: {0}'
   wwcNewSqlConvertFail: Dönüşüm başarısız oldu... lütfen yaptığınız yedeklemeden tablolarınızı
     geri yükleyin. WorldwideChat'i devre dışı bırakma...
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL veritabanı adı başarıyla
+    değiştirildi.
+  wwcConfigConversationPostgresOptionalArgsCleared: İsteğe bağlı bağımsız değişkenler
+    başarıyla temizlendi.
+  wwcConfigConversationPostgresPortInput: Geçerli bağlantı noktası {0}. Yeni bir bağlantı
+    noktası ayarlamak için 0'dan başka bir şey yazın veya geri dönmek için 0 yazın.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL Kullanıcı Adını Değiştir
+  wwcConfigConversationPostgresOptionalArgsSuccess: İsteğe bağlı PostgreSQL bağımsız
+    değişkenleri başarıyla değiştirildi.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL için SSL başarıyla değiştirildi.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL şifresini başarıyla değiştirdi.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL bağlantı noktasını başarıyla
+    değiştirdi.
+  wwcConfigConversationPostgresUsernameInput: Geçerli kullanıcı adı {0}. Yeni bir
+    kullanıcı adı ayarlamak için 0 dışında bir şey yazın veya geri dönmek için 0 yazın.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL başarıyla değiştirildi. Değişikliğin
+    yürürlüğe girmesi için yeniden yükleyin.
+  wwcConfigGUITogglePostgresButton: PostgreSQL'i aç/kapat
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL Parolasını Değiştir
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL İsteğe Bağlı Argümanları Değiştir
+  wwcConfigGUIPostgresMenuButton: PostgreSQL Ayarlarını Değiştirme
+  wwcConfigConversationPostgresPasswordInput: Geçerli şifre {0}. Yeni bir şifre belirlemek
+    için 0 dışında bir şey yazın veya geri dönmek için 0 yazın.
+  wwcConfigConversationPostgresHostnameInput: Geçerli ana bilgisayar adı {0}. Yeni
+    bir ana bilgisayar adı ayarlamak için 0'dan başka bir şey yazın veya geri dönmek
+    için 0 yazın.
+  wwcConfigGUIPostgresPortButton: PostgreSQL Bağlantı Noktasını Değiştir
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL ana bilgisayar adını başarıyla
+    değiştirdi.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL Ana Bilgisayar Adını Değiştir
+  wwcConfigConversationPostgresDatabaseNameInput: Geçerli veritabanı adı {0} 'dir.
+    Yeni bir veritabanı adı ayarlamak için 0 dışında bir şey yazın veya geri dönmek
+    için 0 yazın.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Geçerli isteğe bağlı PostgreSQL
+    bağımsız değişkenleri şunlardır: {0}. Virgülle ayrılmış bağımsız değişkenleri
+    yazın (key=value, key2=value2) veya geçerli argsleri silmek için clear yazın veya
+    geri dönmek için 0 yazın.'
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL'yi Aç/Kapat
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL Veritabanını Değiştir
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL kullanıcı adı başarıyla
+    değiştirildi.
+  wwcConfigGUIStorageTypeSettings: '{0} Yapılandırma'
 

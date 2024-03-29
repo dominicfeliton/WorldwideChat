@@ -316,7 +316,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Muuta SQL-asetuksia
   wwcConfigConversationWatsonTranslateToggleSuccess: Onnistuneesti vaihdettu Watson
     Translate. Lataa uudelleen, jotta muutos tulee voimaan.
-  wwcConfigGUISQLSettings: SQL-kokoonpano
   wwcConfigGUIToggleGoogleTranslateButton: Vaihda Google-kääntäjä
   wwcConfigGUIToggleWatsonTranslateButton: Vaihda Watson Käännä
   wwcConfigGUIToggleAmazonTranslateButton: Vaihda Amazon Käännä
@@ -378,7 +377,6 @@ Messages:
   libreHttpUnknown: 'Tuntematon http-virhe: {0}'
   wwcConfigGUILibreTranslateURLButton: Change Libre Käännä URL
   wwcConfigConnectionFail: Yhteyden muodostaminen kohteeseen {0} epäonnistui.
-  wwcConfigGUIMongoSettings: MongoDB-kokoonpano
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB-tietokannan nimi muuttui
     onnistuneesti.
   wwcConfigGUIMongoHostnameButton: Vaihda MongoDB-isäntänimi
@@ -516,4 +514,45 @@ Messages:
   wwcOldSqlStructRecords: 'SQL-tietokannassasi on tehoton soittimen tietuetaulukon
     asetukset aiemmasta WorldwideChat-versiosta. Voit korjata ongelman suorittamalla
     seuraavan komennon: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL-tietokannan nimi on
+    muutettu onnistuneesti.
+  wwcConfigConversationPostgresOptionalArgsCleared: Valinnaiset argumentit tyhjennettiin
+    onnistuneesti.
+  wwcConfigConversationPostgresPortInput: Nykyinen portti on {0}. Määritä uusi portti
+    kirjoittamalla jokin muu kuin 0 tai palaa takaisin kirjoittamalla 0.
+  wwcConfigGUIPostgresUsernameButton: Muuta PostgreSQL-käyttäjänimi
+  wwcConfigConversationPostgresOptionalArgsSuccess: Valinnaiset PostgreSQL-argumentit
+    muutettiin onnistuneesti.
+  wwcConfigConversationTogglePostgresSSLSuccess: 'PostgreSQL: n SSL vaihdettiin onnistuneesti.'
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL-salasana on muutettu onnistuneesti.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL-portti muutettiin onnistuneesti.
+  wwcConfigConversationPostgresUsernameInput: Nykyinen käyttäjänimi on {0}. Kirjoita
+    jokin muu kuin 0 määrittääksesi uuden käyttäjänimen, tai kirjoita 0 palataksesi
+    takaisin.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL vaihdettiin onnistuneesti.
+    Lataa uudelleen, jotta muutos tulee voimaan.
+  wwcConfigGUITogglePostgresButton: Vaihda PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Vaihda PostgreSQL-salasana
+  wwcConfigGUIPostgresOptionalArgsButton: Muuta PostgreSQL-valinnaisia argumentteja
+  wwcConfigGUIPostgresMenuButton: PostgreSQL-asetusten muuttaminen
+  wwcConfigConversationPostgresPasswordInput: Nykyinen salasana on {0}. Kirjoita jokin
+    muu kuin 0 määrittääksesi uuden salasanan tai kirjoita 0 palataksesi takaisin.
+  wwcConfigConversationPostgresHostnameInput: Nykyinen isäntänimi on {0}. Kirjoita
+    jokin muu kuin 0 määrittääksesi uuden isäntänimen tai kirjoita 0 palataksesi takaisin.
+  wwcConfigGUIPostgresPortButton: Vaihda PostgreSQL-portti
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL-isäntänimi on muutettu
+    onnistuneesti.
+  wwcConfigGUIPostgresHostnameButton: Muuta PostgreSQL-isäntänimi
+  wwcConfigConversationPostgresDatabaseNameInput: Nykyinen tietokannan nimi on {0}.
+    Kirjoita jokin muu kuin 0 määrittääksesi uuden tietokannan nimen tai kirjoita
+    0 palataksesi takaisin.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Nykyiset valinnaiset PostgreSQL-argumentit
+    ovat: {0}. Kirjoita pilkulla erotetut argumentit (avain = arvo, avain2 = arvo2)
+    tai pyyhi nykyiset argumentit kirjoittamalla clear tai kirjoita 0 palataksesi
+    takaisin.'
+  wwcConfigGUITogglePostgresSSLButton: Vaihda PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Muuta PostgreSQL-tietokantaa
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL-käyttäjänimi on muutettu
+    onnistuneesti.
+  wwcConfigGUIStorageTypeSettings: '{0} Kokoonpano'
 

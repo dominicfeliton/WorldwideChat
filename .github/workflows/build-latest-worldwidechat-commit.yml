@@ -22,7 +22,7 @@ jobs:
         distribution: 'adopt'
         java-version: 17
 
-    - name: Start Docker Compose (MySQL & MongoDB)
+    - name: Start Docker Compose (MySQL/MongoDB/PostgreSQL)
       run: bash ./dev/setup-dev-env.sh
 
     - name: Build with Maven
@@ -35,5 +35,5 @@ jobs:
         name: WWC JARs
         path: staging
 
-    - name: Stop Docker Compose (MySQL & MongoDB)
+    - name: Stop Docker Compose (MySQL/MongoDB/PostgreSQL)
       run: bash ./dev/takedown-dev-env.sh

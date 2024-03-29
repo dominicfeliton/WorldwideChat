@@ -325,7 +325,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Breyta SQL stillingum
   wwcConfigConversationWatsonTranslateToggleSuccess: Tókst skipt Watson Translate.
     Endurhlaða fyrir breytinguna til að taka gildi.
-  wwcConfigGUISQLSettings: SQL stillingar
   wwcConfigGUIToggleGoogleTranslateButton: Skipta Google Þýða
   wwcConfigGUIToggleWatsonTranslateButton: Skipta Watson Þýða
   wwcConfigGUIToggleAmazonTranslateButton: Skipta Amazon Þýða
@@ -387,7 +386,6 @@ Messages:
   libreHttpUnknown: 'Óþekkt http villa: {0}'
   wwcConfigGUILibreTranslateURLButton: Breyta Libre Þýða URL
   wwcConfigConnectionFail: Mistókst að tengjast {0}.
-  wwcConfigGUIMongoSettings: MongoDB stillingar
   wwcConfigConversationMongoDatabaseNameSuccess: Tókst að breyta MongoDB gagnagrunnsheiti.
   wwcConfigGUIMongoHostnameButton: Breyta MongoDB Hostname
   wwcConfigConversationMongoPasswordInput: Núverandi aðgangsorð er {0}. Sláðu inn
@@ -528,4 +526,46 @@ Messages:
   wwcOldSqlStructRecords: 'SQL gagnagrunnurinn þinn hefur óhagkvæma uppsetningu spilara
     met borð frá fyrri útgáfu af WorldwideChat. Þú getur keyrt eftirfarandi skipun
     til að laga þetta mál: /wwcd umbreyta'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Breytti PostgreSQL gagnagrunnsnafninu
+    með góðum árangri.
+  wwcConfigConversationPostgresOptionalArgsCleared: Valfrjáls rök hreinsuð með góðum
+    árangri.
+  wwcConfigConversationPostgresPortInput: Núverandi höfn er {0}. Sláðu inn annað en
+    0 til að stilla nýja höfn, eða sláðu inn 0 til að fara aftur.
+  wwcConfigGUIPostgresUsernameButton: Breyta PostgreSQL notendanafni
+  wwcConfigConversationPostgresOptionalArgsSuccess: Með góðum árangri breytt valfrjálsu
+    PostgreSQL rökum.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL fyrir PostgreSQL var skipt með
+    góðum árangri.
+  wwcConfigConversationPostgresPasswordSuccess: Breytti PostgreSQL lykilorðinu með
+    góðum árangri.
+  wwcConfigConversationPostgresPortSuccess: Tókst var breytt PostgreSQL tenginu.
+  wwcConfigConversationPostgresUsernameInput: Núverandi notandanafn er {0}. Sláðu
+    inn annað en 0 til að stilla nýtt notendanafn, eða sláðu inn 0 til að fara aftur.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL var skipt með góðum árangri.
+    Endurhlaða til að breytingin taki gildi.
+  wwcConfigGUITogglePostgresButton: Skiptu um PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Breyta PostgreSQL lykilorði
+  wwcConfigGUIPostgresOptionalArgsButton: Breyta PostgreSQL valfrjálsum rökum
+  wwcConfigGUIPostgresMenuButton: Breyta PostgreSQL stillingum
+  wwcConfigConversationPostgresPasswordInput: Núverandi lykilorð er {0}. Sláðu inn
+    annað en 0 til að stilla nýtt lykilorð, eða sláðu inn 0 til að fara aftur.
+  wwcConfigConversationPostgresHostnameInput: Núverandi gestgjafarnafn er {0}. Sláðu
+    inn annað en 0 til að stilla nýtt gestgjafarnafn, eða sláðu inn 0 til að fara
+    aftur.
+  wwcConfigGUIPostgresPortButton: Breyta PostgreSQL höfn
+  wwcConfigConversationPostgresHostnameSuccess: Breytti PostgreSQL gestgjafarnafninu
+    með góðum árangri.
+  wwcConfigGUIPostgresHostnameButton: Breyta PostgreSQL gestgjafarnafni
+  wwcConfigConversationPostgresDatabaseNameInput: Núverandi gagnagrunnsheiti er {0}.
+    Sláðu inn annað en 0 til að stilla nýtt gagnagrunnsheiti, eða sláðu inn 0 til
+    að fara aftur.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Núverandi valfrjálsu PostgreSQL
+    rökin eru: {0}. Sláðu inn rök aðskilin með kommu (key=value, key2=value2), eða
+    sláðu skýrt til að þurrka núverandi args, eða tegund 0 til að fara aftur.'
+  wwcConfigGUITogglePostgresSSLButton: Skiptu um PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Breyta PostgreSQL gagnagrunni
+  wwcConfigConversationPostgresUsernameSuccess: Breytti PostgreSQL notendanafninu
+    með góðum árangri.
+  wwcConfigGUIStorageTypeSettings: '{0} Stillingar'
 

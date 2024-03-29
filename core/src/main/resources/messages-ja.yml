@@ -256,7 +256,6 @@ Messages:
   wwcConfigYAMLDefault: データストレージのデフォルトは YAML です。
   wwcConfigGUISQLMenuButton: SQL 設定の変更
   wwcConfigConversationWatsonTranslateToggleSuccess: ワトソン翻訳が正常に切り替わりました。リロードして変更を有効にします。
-  wwcConfigGUISQLSettings: SQL 構成
   wwcConfigGUIToggleGoogleTranslateButton: グーグル翻訳の切り替え
   wwcConfigGUIToggleWatsonTranslateButton: ワトソン翻訳の切り替え
   wwcConfigGUIToggleAmazonTranslateButton: Amazon翻訳の切り替え
@@ -307,7 +306,6 @@ Messages:
   libreHttpUnknown: '不明な http エラー: {0}'
   wwcConfigGUILibreTranslateURLButton: リブレ翻訳 URL を変更
   wwcConfigConnectionFail: '{0} に接続できませんでした。'
-  wwcConfigGUIMongoSettings: MongoDB 設定
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB データベース名を正常に変更しました。
   wwcConfigGUIMongoHostnameButton: MongoDB ホスト名の変更
   wwcConfigConversationMongoPasswordInput: 現在のパスワードは {0} です。0 以外の値を入力して新しいパスワードを設定するか、0
@@ -412,4 +410,34 @@ Messages:
   wwcOldSqlStructLongTodo: MySQLのコンソールに出力されたテーブルをドロップするか、自分で変換してgithubリポジトリの新しい構造を確認するか、コマンドを実行してライブで変換を試みることができます。これを実行する前に、必ずデータベースのバックアップを作成してください。ある場合、コマンドは
     {0} です。
   wwcNewSqlConvertFail: 変換に失敗しました。作成したバックアップからテーブルを復元してください。ワールドワイドチャットを無効にしています...
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL データベース名は正常に変更されました。
+  wwcConfigConversationPostgresOptionalArgsCleared: オプション引数は正常にクリアされました。
+  wwcConfigConversationPostgresPortInput: 現在のポートは {0} です。0 以外を入力すると新しいポートが設定され、0 を入力すると元に戻ります。
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL ユーザー名の変更
+  wwcConfigConversationPostgresOptionalArgsSuccess: オプションの PostgreSQL 引数が正常に変更されました。
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL の SSL が正常に切り替えられました。
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL パスワードが正常に変更されました。
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL ポートが正常に変更されました。
+  wwcConfigConversationPostgresUsernameInput: 現在のユーザー名は {0} です。0 以外を入力して新しいユーザー名を設定するか、0
+    を入力して戻ります。
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL は正常にトグルされました。変更を有効にするにはリロードしてください。
+  wwcConfigGUITogglePostgresButton: PostgreSQL を切り替える
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL パスワードの変更
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL オプション引数の変更
+  wwcConfigGUIPostgresMenuButton: ポスグレ SQL の設定を変更
+  wwcConfigConversationPostgresPasswordInput: 現在のパスワードは {0} です。0 以外を入力して新しいパスワードを設定するか、0
+    を入力して戻ります。
+  wwcConfigConversationPostgresHostnameInput: 現在のホスト名は {0} です。0 以外を入力すると新しいホスト名が設定され、0
+    を入力すると戻ります。
+  wwcConfigGUIPostgresPortButton: ポスグレ SQL ポートを変更
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL ホスト名は正常に変更されました。
+  wwcConfigGUIPostgresHostnameButton: ポスグレ SQL ホスト名を変更
+  wwcConfigConversationPostgresDatabaseNameInput: 現在のデータベース名は {0} です。0 以外を入力すると新しいデータベース名が設定され、0
+    を入力すると元に戻ります。
+  wwcConfigConversationPostgresOptionalArgsInput: 現在のオプションの PostgreSQL 引数は {0} です。引数をコンマで区切って入力するか
+    (key=value、key2=value2)、clear と入力して現在の引数を消去するか、0 を入力して戻ります。
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL の切り替え
+  wwcConfigGUIPostgresDatabaseNameButton: ポスグレ SQL データベースを変更
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL ユーザー名が正常に変更されました。
+  wwcConfigGUIStorageTypeSettings: '{0} 構成'
 

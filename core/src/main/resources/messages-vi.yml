@@ -327,7 +327,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Thay đổi cài đặt SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Chuyển đổi thành công Watson
     Translate. Tải lại để thay đổi có hiệu lực.
-  wwcConfigGUISQLSettings: Cấu hình SQL
   wwcConfigGUIToggleGoogleTranslateButton: Chuyển đổi Google Dịch
   wwcConfigGUIToggleWatsonTranslateButton: Chuyển đổi Watson Dịch
   wwcConfigGUIToggleAmazonTranslateButton: Chuyển đổi Amazon Translate
@@ -390,7 +389,6 @@ Messages:
   libreHttpUnknown: 'Lỗi http không xác định: {0}'
   wwcConfigGUILibreTranslateURLButton: Thay đổi URL Dịch tự do
   wwcConfigConnectionFail: Không thể kết nối với {0}.
-  wwcConfigGUIMongoSettings: Cấu hình MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Thay đổi thành công tên cơ sở dữ
     liệu MongoDB.
   wwcConfigGUIMongoHostnameButton: Thay đổi tên máy chủ MongoDB
@@ -527,4 +525,43 @@ Messages:
     liệu của bạn trước khi chạy điều này. Nếu bạn có, lệnh là: {0}'
   wwcNewSqlConvertFail: Chuyển đổi không thành công... vui lòng khôi phục bảng của
     bạn từ bản sao lưu bạn đã tạo. Vô hiệu hóa WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Thay đổi thành công tên cơ sở
+    dữ liệu PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Các đối số tùy chọn đã xóa thành
+    công.
+  wwcConfigConversationPostgresPortInput: Cổng hiện tại là {0}. Nhập bất cứ thứ gì
+    khác ngoài 0 để đặt cổng mới hoặc nhập 0 để quay trở lại.
+  wwcConfigGUIPostgresUsernameButton: Thay đổi tên người dùng PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Thay đổi thành công các đối số
+    PostgreSQL tùy chọn.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL cho PostgreSQL đã chuyển đổi
+    thành công.
+  wwcConfigConversationPostgresPasswordSuccess: Thay đổi thành công mật khẩu PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Thay đổi thành công cổng PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Tên người dùng hiện tại là {0}. Nhập
+    bất cứ thứ gì khác ngoài 0 để đặt tên người dùng mới hoặc nhập 0 để quay lại.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL đã chuyển đổi thành công.
+    Tải lại để thay đổi có hiệu lực.
+  wwcConfigGUITogglePostgresButton: Chuyển đổi PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Thay đổi mật khẩu PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Thay đổi đối số tùy chọn PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Thay đổi cài đặt PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Mật khẩu hiện tại là {0}. Nhập bất cứ
+    điều gì khác ngoài 0 để đặt mật khẩu mới hoặc nhập 0 để quay lại.
+  wwcConfigConversationPostgresHostnameInput: Tên máy chủ hiện tại là {0}. Nhập bất
+    cứ thứ gì khác ngoài 0 để đặt tên máy chủ mới hoặc nhập 0 để quay trở lại.
+  wwcConfigGUIPostgresPortButton: Thay đổi cổng PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Thay đổi thành công tên máy chủ PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Thay đổi tên máy chủ PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Tên cơ sở dữ liệu hiện tại là {0}.
+    Nhập bất cứ thứ gì khác ngoài 0 để đặt tên cơ sở dữ liệu mới hoặc nhập 0 để quay
+    trở lại.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Các đối số PostgreSQL tùy chọn
+    hiện tại là: {0}. Nhập các đối số được phân tách bằng dấu phẩy (key=value, key2=value2),
+    hoặc gõ clear để xóa các args hiện tại, hoặc nhập 0 để quay lại.'
+  wwcConfigGUITogglePostgresSSLButton: Chuyển đổi SSL PostgreSQL
+  wwcConfigGUIPostgresDatabaseNameButton: Thay đổi cơ sở dữ liệu PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Thay đổi thành công tên người dùng
+    PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Cấu hình'
 

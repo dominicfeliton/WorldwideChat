@@ -350,7 +350,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Baguhin ang Mga Setting ng SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Matagumpay na na-toggle ang Watson
     Translate. I-reload para magkabisa ang pagbabago.
-  wwcConfigGUISQLSettings: Configuration ng SQL
   wwcConfigGUIToggleGoogleTranslateButton: I-toggle ang Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: I-toggle ang Watson Translate
   wwcConfigGUIToggleAmazonTranslateButton: I-toggle ang Amazon Translate
@@ -423,7 +422,6 @@ Messages:
   libreHttpUnknown: 'Hindi kilalang http error: {0}'
   wwcConfigGUILibreTranslateURLButton: Baguhin Libre Translate URL
   wwcConfigConnectionFail: Nabigong kumonekta sa {0}.
-  wwcConfigGUIMongoSettings: Configuration ng MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Matagumpay na binago ang pangalan
     ng database ng MongoDB.
   wwcConfigGUIMongoHostnameButton: Baguhin ang MongoDB Hostname
@@ -580,4 +578,51 @@ Messages:
     ITO. Kung mayroon ka, ang utos ay: {0}'
   wwcNewSqlConvertFail: Nabigo ang conversion... mangyaring ibalik ang iyong mga talahanayan
     mula sa backup na iyong ginawa. Hindi paganahin ang WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Matagumpay na binago ang pangalan
+    ng database ng PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Matagumpay na na-clear ang mga
+    opsyonal na
+  wwcConfigConversationPostgresPortInput: Ang kasalukuyang port ay {0}. I-type ang
+    anumang bagay maliban sa 0 upang magtakda ng bagong port, o i-type ang 0 upang
+    bumalik.
+  wwcConfigGUIPostgresUsernameButton: Baguhin ang Username ng PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Matagumpay na binago ang mga opsyonal
+    na argumento ng PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: Matagumpay na naka-switch ang SSL
+    para sa PostgreSQL.
+  wwcConfigConversationPostgresPasswordSuccess: Matagumpay na binago ang password
+    ng PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Matagumpay na binago ang port ng PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Ang kasalukuyang username ay {0}. I-type
+    ang anumang bagay maliban sa 0 upang magtakda ng bagong username, o i-type ang
+    0 upang bumalik.
+  wwcConfigConversationTogglePostgresSuccess: Matagumpay na naka-switch ang PostgreSQL.
+    I-load muli para maging epektibo ang pagbabago.
+  wwcConfigGUITogglePostgresButton: Palitan ang PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Baguhin ang Password ng PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Baguhin ang Mga Opsyonal na Argumento sa
+    PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Baguhin ang Mga Setting ng PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Ang kasalukuyang password ay {0}. I-type
+    ang anumang bagay maliban sa 0 upang magtakda ng bagong password, o i-type ang
+    0 upang bumalik.
+  wwcConfigConversationPostgresHostnameInput: Ang kasalukuyang pangalan ng host ay
+    {0}. I-type ang anumang bagay maliban sa 0 upang magtakda ng bagong host name,
+    o i-type ang 0 upang bumalik.
+  wwcConfigGUIPostgresPortButton: Baguhin ang PostgreSQL Port
+  wwcConfigConversationPostgresHostnameSuccess: Matagumpay na binago ang PostgreSQL
+    hostname.
+  wwcConfigGUIPostgresHostnameButton: Baguhin ang PostgreSQL Hostname
+  wwcConfigConversationPostgresDatabaseNameInput: Ang kasalukuyang pangalan ng database
+    ay {0}. I-type ang anumang bagay maliban sa 0 upang magtakda ng bagong pangalan
+    ng database, o i-type ang 0 upang bumalik.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Ang kasalukuyang opsyonal na mga
+    argumento ng PostgreSQL ay: {0}. I-type ang mga argumento na pinaghihiwalay ng
+    isang kuwit (key=value, key2=value2), o i-type clear upang punasan ang kasalukuyang
+    args, o i-type ang 0 upang bumalik.'
+  wwcConfigGUITogglePostgresSSLButton: I-switch ang PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Baguhin ang PostgreSQL Database
+  wwcConfigConversationPostgresUsernameSuccess: Matagumpay na binago ang username
+    na PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Pagsasaayos'
 

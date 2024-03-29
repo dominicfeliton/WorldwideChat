@@ -318,7 +318,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Canja Saitunan SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: An yi nasarar toggled Watson
     Translate. Sake dawowa don canjin don yin tasiri.
-  wwcConfigGUISQLSettings: Sigar SQL
   wwcConfigGUIToggleGoogleTranslateButton: Togle Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: TGLE Watson Translate
   wwcConfigGUIToggleAmazonTranslateButton: Fassara Amazon
@@ -380,7 +379,6 @@ Messages:
   libreHttpUnknown: 'Kuskuren http wanda ba a sani ba: {0}'
   wwcConfigGUILibreTranslateURLButton: Canja adireshin fassara na Libre
   wwcConfigConnectionFail: An kasa haɗi zuwa {0}.
-  wwcConfigGUIMongoSettings: Tsarin MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: An samu nasarar canza sunan ma'adanar
     MongoDB.
   wwcConfigGUIMongoHostnameButton: Canja MongoDB Mai watsa shiri
@@ -520,4 +518,44 @@ Messages:
   wwcOldSqlStructRecords: Bayanan SQL ɗinku yana da saitin teburin rikodin ɗan wasa
     mara inganci daga sigar da ta gabata na WorldwideChat. Kuna iya gudanar da umarni
     mai zuwa don gyara wannan batun:/wwcd canza
+  wwcConfigConversationPostgresDatabaseNameSuccess: An sami nasarar canza sunan bayanan
+    PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Muhawarar zaɓi aka share su cikin
+    nasara.
+  wwcConfigConversationPostgresPortInput: Tashar tashar yanzu shine {0}. Rubuta wani
+    abu ban da 0 don saita sabon tashar jiragen ruwa, ko rubuta 0 don komawa.
+  wwcConfigGUIPostgresUsernameButton: Canja Sunan mai amfani na PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: An sami nasarar canza muhawarar
+    PostgreSQL na zaɓi.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL don PostgreSQL an canza shi cikin
+    nasara.
+  wwcConfigConversationPostgresPasswordSuccess: An sami nasarar canza kalmar sirri
+    ta PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: An sami nasarar canza tashar PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Sunan mai amfani na yanzu shine {0}.
+    Rubuta wani abu ban da 0 don saita sabon sunan mai amfani, ko rubuta 0 don komawa.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL ya canza cikin nasara. Sake
+    ladawa don canjin ya yi tasiri.
+  wwcConfigGUITogglePostgresButton: Sauya PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Canja kalmar sirri na PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Canja Muhawarar Zaɓi na PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Canja Saitunan PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Kalmar sirri na yanzu ita ce {0}. Rubuta
+    wani abu ban da 0 don saita sabon kalmar sirri, ko rubuta 0 don komawa.
+  wwcConfigConversationPostgresHostnameInput: Sunan rundunar yanzu shine {0}. Rubuta
+    wani abu ban da 0 don saita sabon sunan rundunar, ko rubuta 0 don komawa.
+  wwcConfigGUIPostgresPortButton: Canja tashar PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: An sami nasarar canza sunan ɗakin
+    majalisar PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Canja PostgreSQL Hostname
+  wwcConfigConversationPostgresDatabaseNameInput: Sunan bayanai na yanzu shine {0}.
+    Rubuta wani abu ban da 0 don saita sabon sunan bayanai, ko rubuta 0 don komawa.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Muhawarar PostgreSQL na zaɓi na
+    yanzu sune: {0}. Rubuta muhawara da aka raba da alama (key = value, key2 = value2),
+    ko rubuta bayyane don goge args na yanzu, ko rubuta 0 don komawa.'
+  wwcConfigGUITogglePostgresSSLButton: Sauya PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Canja Bayanan PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: An sami nasarar canza sunan mai amfani
+    na PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Daidaitawa'
 

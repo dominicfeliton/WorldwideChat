@@ -337,7 +337,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Modificarea setărilor SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Comutată cu succes Watson Translate.
     Reîncărcați pentru ca modificarea să aibă efect.
-  wwcConfigGUISQLSettings: Configurare SQL
   wwcConfigGUIToggleGoogleTranslateButton: Comută Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Comută Watson Traducere
   wwcConfigGUIToggleAmazonTranslateButton: Comută Amazon Translate
@@ -403,7 +402,6 @@ Messages:
   libreHttpUnknown: 'Eroare http necunoscută: {0}'
   wwcConfigGUILibreTranslateURLButton: Schimbați URL-ul Traduceți gratuit
   wwcConfigConnectionFail: Conectarea la {0} nu a reușit.
-  wwcConfigGUIMongoSettings: Configurare MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: A schimbat cu succes numele bazei
     de date MongoDB.
   wwcConfigGUIMongoHostnameButton: Schimbați numele de gazdă MongoDB
@@ -547,4 +545,46 @@ Messages:
     comanda este: {0}'
   wwcNewSqlConvertFail: Conversia a eșuat... vă rugăm să restaurați tabelele din copia
     de rezervă pe care ați făcut-o. Dezactivarea WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: A schimbat cu succes numele bazei
+    de date PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Argumentele opționale au fost
+    șterse cu succes.
+  wwcConfigConversationPostgresPortInput: Portul curent este {0}. Tastați orice altceva
+    decât 0 pentru a seta un port nou sau tastați 0 pentru a reveni.
+  wwcConfigGUIPostgresUsernameButton: Schimbați numele de utilizator PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Modificat cu succes argumentele
+    opționale PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL pentru PostgreSQL a fost comutat
+    cu succes.
+  wwcConfigConversationPostgresPasswordSuccess: A schimbat cu succes parola PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: A schimbat cu succes portul PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Numele de utilizator curent este {0}.
+    Tastați orice altceva decât 0 pentru a seta un nou nume de utilizator sau tastați
+    0 pentru a reveni.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL a comutat cu succes. Reîncărcați
+    pentru ca modificarea să intre în vigoare.
+  wwcConfigGUITogglePostgresButton: Comutați PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Schimbați parola PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Schimbați argumentele opționale PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Modificarea setărilor PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Parola curentă este {0}. Tastați orice
+    altceva decât 0 pentru a seta o nouă parolă sau tastați 0 pentru a reveni.
+  wwcConfigConversationPostgresHostnameInput: Numele gazdei curent este {0}. Tastați
+    orice altceva decât 0 pentru a seta un nou nume de gazdă sau tastați 0 pentru
+    a reveni.
+  wwcConfigGUIPostgresPortButton: Schimbați portul PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: A schimbat cu succes numele de gazdă
+    PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Schimbați numele de gazdă PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Numele curent al bazei de date este
+    {0}. Tastați orice altceva decât 0 pentru a seta un nou nume de bază de date sau
+    tastați 0 pentru a reveni.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Argumentele curente opționale PostgreSQL
+    sunt: {0}. Tastați argumente separate printr-o virgulă (cheie = valoare, tastă2=valore2)
+    sau tastați clear pentru a șterge argumentele curente sau tastați 0 pentru a reveni.'
+  wwcConfigGUITogglePostgresSSLButton: Comutați SSL PostgreSQL
+  wwcConfigGUIPostgresDatabaseNameButton: Schimbați baza de date PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: A schimbat cu succes numele de utilizator
+    PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Configurare'
 

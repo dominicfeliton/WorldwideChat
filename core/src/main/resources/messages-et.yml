@@ -308,7 +308,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL-i sätete muutmine
   wwcConfigConversationWatsonTranslateToggleSuccess: Edukalt lülitatud Watson tõlkida.
     Laadige muudatuse jõustumiseks uuesti.
-  wwcConfigGUISQLSettings: SQL konfiguratsioon
   wwcConfigGUIToggleGoogleTranslateButton: Lülita Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Lülita Watson tõlkimine
   wwcConfigGUIToggleAmazonTranslateButton: Lülita Amazon tõlkimine
@@ -369,7 +368,6 @@ Messages:
   libreHttpUnknown: 'Tundmatu http viga: {0}'
   wwcConfigGUILibreTranslateURLButton: Muuda Libre Tõlgi URL
   wwcConfigConnectionFail: Ühenduse loomine {0} nurjus.
-  wwcConfigGUIMongoSettings: MongoDB konfiguratsioon
   wwcConfigConversationMongoDatabaseNameSuccess: Edukalt muutnud MongoDB andmebaasi
     nime.
   wwcConfigGUIMongoHostnameButton: Muuda MongoDB hostinime
@@ -502,4 +500,42 @@ Messages:
   wwcOldSqlStructRecords: 'Teie SQL-andmebaasis on WorldwideChati eelmisest versioonist
     ebatõhus mängijate kirjetabeli seadistus. Selle probleemi lahendamiseks võite
     käivitada järgmise käsu: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Muudeti edukalt PostgreSQL-i andmebaasi
+    nime.
+  wwcConfigConversationPostgresOptionalArgsCleared: Valikulised argumendid kustutati
+    edukalt.
+  wwcConfigConversationPostgresPortInput: Praegune port on {0}. Uue pordi määramiseks
+    tippige midagi muud kui 0 või tagasi minemiseks tippige 0.
+  wwcConfigGUIPostgresUsernameButton: Muuda PostgreSQL-i kasutajanime
+  wwcConfigConversationPostgresOptionalArgsSuccess: Muudeti edukalt valikulisi PostgreSQL-i
+    argumente.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL-i SSL lülitati edukalt.
+  wwcConfigConversationPostgresPasswordSuccess: Muudeti edukalt PostgreSQL-i parooli.
+  wwcConfigConversationPostgresPortSuccess: Muudeti edukalt PostgreSQL-porti.
+  wwcConfigConversationPostgresUsernameInput: Praegune kasutajanimi on {0}. Uue kasutajanime
+    määramiseks sisestage midagi muud kui 0 või tippige tagasi minemiseks 0.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL lülitati edukalt. Muudatuse
+    jõustumiseks laadige uuesti.
+  wwcConfigGUITogglePostgresButton: Lülitage PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Muutke PostgreSQL-i parooli
+  wwcConfigGUIPostgresOptionalArgsButton: Muuda PostgreSQL-i valikulisi argumente
+  wwcConfigGUIPostgresMenuButton: PostgreSQL-i seadete muutmine
+  wwcConfigConversationPostgresPasswordInput: Praegune parool on {0}. Uue parooli
+    määramiseks sisestage midagi muud kui 0 või tagasi minemiseks tippige 0.
+  wwcConfigConversationPostgresHostnameInput: Praegune hostinimi on {0}. Uue hostinime
+    määramiseks tippige midagi muud kui 0 või tagasi minemiseks tippige 0.
+  wwcConfigGUIPostgresPortButton: Muuda PostgreSQL-porti
+  wwcConfigConversationPostgresHostnameSuccess: Muudeti edukalt PostgreSQL-i hostinime.
+  wwcConfigGUIPostgresHostnameButton: Muuda PostgreSQL-i hostinime
+  wwcConfigConversationPostgresDatabaseNameInput: Praegune andmebaasi nimi on {0}.
+    Uue andmebaasi nime määramiseks tippige midagi muud kui 0 või tagasi minemiseks
+    tippige 0.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Praegused valikulised PostgreSQL-i
+    argumendid on: {0}. Tippige komaga eraldatud argumendid (key = value, key2 = väärtus2)
+    või tippige praeguse argi kustutamiseks tühjendage või tippige tagasi minemiseks
+    0.'
+  wwcConfigGUITogglePostgresSSLButton: Lülitage PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Muuda PostgreSQL-i andmebaasi
+  wwcConfigConversationPostgresUsernameSuccess: Muudeti edukalt PostgreSQL-i kasutajanime.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfiguratsioon'
 

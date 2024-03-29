@@ -51,7 +51,7 @@ import static com.badskater0729.worldwidechat.util.CommonRefs.supportedMCVersion
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "03292024-1"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "03292024-2"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -449,9 +449,15 @@ public class WorldwideChat extends JavaPlugin {
 
 		// Disconnect SQL
 		if (sqlSession != null) sqlSession.disconnect();
+		sqlSession = null;
 		
 		// Disconnect MongoDB
 		if (mongoSession != null) mongoSession.disconnect();
+		mongoSession = null;
+
+		// Disconnect Postgres
+		if (postgresSession != null) postgresSession.disconnect();
+		postgresSession = null;
 		
 		// Clear all active translating users, cache, playersUsingConfigGUI
 		supportedInputLangs.clear();

@@ -315,7 +315,6 @@ Messages:
   wwcConfigGUISQLMenuButton: تغییر تنظیمات SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: موفقیت toggled واتسون ترجمه.
     بارگذاری مجدد برای تغییر به اثر.
-  wwcConfigGUISQLSettings: پیکربندی SQL
   wwcConfigGUIToggleGoogleTranslateButton: زدن ضامن گوگل ترجمه
   wwcConfigGUIToggleWatsonTranslateButton: زدن ضامن واتسون ترجمه
   wwcConfigGUIToggleAmazonTranslateButton: زدن ضامن آمازون ترجمه
@@ -378,7 +377,6 @@ Messages:
   libreHttpUnknown: 'خطای HTTP ناشناخته: {0}'
   wwcConfigGUILibreTranslateURLButton: تغییر رایگان ترجمه URL
   wwcConfigConnectionFail: اتصال به {0} شکست خورد.
-  wwcConfigGUIMongoSettings: پیکربندی مانگودی‌بی
   wwcConfigConversationMongoDatabaseNameSuccess: نام پایگاه داده MongoDB را با موفقیت
     تغییر داد.
   wwcConfigGUIMongoHostnameButton: تغییر نام میزبان مانگودیبی
@@ -519,4 +517,46 @@ Messages:
     دستور این است: {0}'
   wwcNewSqlConvertFail: تبدیل شکست خورد... لطفا جداول خود را از نسخه پشتیبان تهیه
     کرده اید بازیابی کنید. غیرفعال کردن WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: نام پایگاه داده PostgreSQL را
+    با موفقیت تغییر داد.
+  wwcConfigConversationPostgresOptionalArgsCleared: آرگومانهای اختیاری با موفقیت پاک
+    شدند.
+  wwcConfigConversationPostgresPortInput: پورت فعلی {0} است. هر چیزی غیر از 0 را برای
+    تنظیم یک پورت جدید تایپ کنید، یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigGUIPostgresUsernameButton: تغییر نام کاربری PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: آرگومانهای اختیاری PostgreSQL
+    را با موفقیت تغییر داد.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL برای PostgreSQL با موفقیت تغییر
+    یافت.
+  wwcConfigConversationPostgresPasswordSuccess: رمز عبور PostgreSQL را با موفقیت تغییر
+    داد.
+  wwcConfigConversationPostgresPortSuccess: پورت PostgreSQL را با موفقیت تغییر داد.
+  wwcConfigConversationPostgresUsernameInput: نام کاربری فعلی {0} است. هر چیزی غیر
+    از 0 را برای تنظیم نام کاربری جدید تایپ کنید، یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL با موفقیت تغییر کرد. بارگذاری
+    مجدد تا تغییر اعمال شود.
+  wwcConfigGUITogglePostgresButton: تغییر PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: رمز عبور PostgreSQL را تغییر دهید
+  wwcConfigGUIPostgresOptionalArgsButton: تغییر آرگومانهای اختیاری PostgreSQL
+  wwcConfigGUIPostgresMenuButton: تنظیمات PostgreSQL را تغییر دهید
+  wwcConfigConversationPostgresPasswordInput: رمز عبور فعلی {0} است. هر چیزی غیر از
+    0 را برای تنظیم رمز عبور جدید تایپ کنید، یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigConversationPostgresHostnameInput: نام میزبان فعلی {0} است. هر چیزی غیر
+    از 0 را برای تنظیم یک نام میزبان جدید تایپ کنید، یا 0 را برای بازگشت تایپ کنید.
+  wwcConfigGUIPostgresPortButton: تغییر پورت PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: نام میزبان PostgreSQL را با موفقیت
+    تغییر داد.
+  wwcConfigGUIPostgresHostnameButton: تغییر نام میزبان PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: نام پایگاه داده فعلی {0} است. هر
+    چیزی غیر از 0 را تایپ کنید تا نام پایگاه داده جدید تنظیم شود، یا 0 را برای بازگشت
+    تایپ کنید.
+  wwcConfigConversationPostgresOptionalArgsInput: 'آرگومانهای اختیاری PostgreSQL فعلی
+    عبارتند از: {0}. آرگومانهای جدا شده توسط کاما (key=value، key2=value2) را تایپ
+    کنید یا clear را برای پاک کردن آرگهای فعلی تایپ کنید یا 0 را برای بازگشت تایپ
+    کنید.'
+  wwcConfigGUITogglePostgresSSLButton: تغییر SSL PostgreSQL
+  wwcConfigGUIPostgresDatabaseNameButton: تغییر پایگاه داده PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: نام کاربری PostgreSQL را با موفقیت
+    تغییر داد.
+  wwcConfigGUIStorageTypeSettings: '{0} پیکربندی'
 

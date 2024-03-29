@@ -336,7 +336,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Cambiar la configuración de SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Se ha trasladado con éxito Watson
     Translate. Recarga para que el cambio surta efecto.
-  wwcConfigGUISQLSettings: Configuración SQL
   wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Traducir
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Traducir
@@ -406,7 +405,6 @@ Messages:
   libreHttpUnknown: 'Error http desconocido: {0}'
   wwcConfigGUILibreTranslateURLButton: Cambiar Libre Traducir URL
   wwcConfigConnectionFail: Error al conectarse a {0}.
-  wwcConfigGUIMongoSettings: Configuración de MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Se cambió correctamente el nombre
     de la base de datos MongoDB.
   wwcConfigGUIMongoHostnameButton: Cambiar el nombre de host de MongoDB
@@ -556,4 +554,49 @@ Messages:
     es: {0}'
   wwcNewSqlConvertFail: La conversión falló... restaure sus tablas a partir del backup
     que realizó. Deshabilitando WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Cambió correctamente el nombre
+    de la base de datos PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Argumentos opcionales borrados
+    correctamente.
+  wwcConfigConversationPostgresPortInput: El puerto actual es {0}. Escriba cualquier
+    cosa que no sea 0 para establecer un nuevo puerto, o escriba 0 para volver atrás.
+  wwcConfigGUIPostgresUsernameButton: Cambiar nombre de usuario de PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Se han cambiado correctamente
+    los argumentos opcionales de PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL para PostgreSQL se ha alternado
+    correctamente.
+  wwcConfigConversationPostgresPasswordSuccess: Cambió correctamente la contraseña
+    de PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Cambió correctamente el puerto de PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: El nombre de usuario actual es {0}.
+    Escriba cualquier cosa que no sea 0 para establecer un nuevo nombre de usuario,
+    o escriba 0 para volver.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL se ha alternado correctamente.
+    Recarga para que el cambio surta efecto.
+  wwcConfigGUITogglePostgresButton: Alternar PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Cambiar contraseña de PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Cambiar los argumentos opcionales de PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Cambiar la configuración de PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: La contraseña actual es {0}. Escriba
+    cualquier cosa que no sea 0 para establecer una nueva contraseña, o escriba 0
+    para volver atrás.
+  wwcConfigConversationPostgresHostnameInput: El nombre de host actual es {0}. Escriba
+    cualquier cosa que no sea 0 para establecer un nuevo nombre de host o escriba
+    0 para volver atrás.
+  wwcConfigGUIPostgresPortButton: Cambiar el puerto de PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Cambió correctamente el nombre de
+    host PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Cambiar el nombre de host de PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: El nombre actual de la base de datos
+    es {0}. Escriba cualquier cosa que no sea 0 para establecer un nuevo nombre de
+    base de datos, o escriba 0 para volver atrás.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Los argumentos opcionales actuales
+    de PostgreSQL son: {0}. Escriba los argumentos separados por una coma (key=value,
+    key2=valor2), o escriba clear para borrar los argumentos actuales, o escriba 0
+    para volver atrás.'
+  wwcConfigGUITogglePostgresSSLButton: Alternar PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Cambiar la base de datos PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Cambió correctamente el nombre de
+    usuario de PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Configuración'
 

@@ -318,7 +318,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL Ayarlarını dəyişdirin
   wwcConfigConversationWatsonTranslateToggleSuccess: Uğurla Watson Translate keçdi.
     Dəyişikliyin qüvvəyə minməsi üçün yenidən yüklə.
-  wwcConfigGUISQLSettings: SQL Konfiqurasiya
   wwcConfigGUIToggleGoogleTranslateButton: Google Translate keçid
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Tərcümə
   wwcConfigGUIToggleAmazonTranslateButton: Amazon Tərcümə
@@ -381,7 +380,6 @@ Messages:
   libreHttpUnknown: 'Bilinməyən http xətası: {0}'
   wwcConfigGUILibreTranslateURLButton: Pulsuz Tərcümə URL'sini dəyişdirin
   wwcConfigConnectionFail: '{0} şəbəkəsinə qoşulmaq mümkün olmadı.'
-  wwcConfigGUIMongoSettings: MongoDB Konfiqurasiyası
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB verilənlər bazası adını müvəffəqiyyətlə
     dəyişdi.
   wwcConfigGUIMongoHostnameButton: MongoDB Hostname dəyişdirin
@@ -516,4 +514,44 @@ Messages:
   wwcOldSqlStructRecords: 'SQL verilənlər bazanızda WorldwideChat-ın əvvəlki versiyasından
     səmərəsiz bir oyunçu qeyd cədvəli quruluşu var. Bu problemi həll etmək üçün aşağıdakı
     əmri işə sala bilərsiniz: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL verilənlər bazası adını
+    uğurla dəyişdirdi.
+  wwcConfigConversationPostgresOptionalArgsCleared: İsteğe bağlı arqumentlər uğurla
+  wwcConfigConversationPostgresPortInput: Cari port {0} -dir. Yeni bir port təyin
+    etmək üçün 0-dan başqa bir şey yazın və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL istifadəçi adını dəyişdirin
+  wwcConfigConversationPostgresOptionalArgsSuccess: İsteğe bağlı PostgreSQL arqumentlərini
+    uğurla dəyişdirdi.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL üçün SSL uğurla keçdi.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL şifrəsini uğurla dəyişdirdi.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL portunu uğurla dəyişdirdi.
+  wwcConfigConversationPostgresUsernameInput: Hazırkı istifadəçi adı {0} -dir. Yeni
+    bir istifadəçi adı təyin etmək üçün 0-dan başqa bir şey yazın və ya geri qayıtmaq
+    üçün 0 yazın.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL uğurla keçdi. Dəyişikliyin
+    qüvvəyə minməsi üçün yenidən yükləyin.
+  wwcConfigGUITogglePostgresButton: PostgreSQL-i dəyişdirin
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL şifrəsini dəyişdirin
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL İsteğe bağlı arqumentləri dəyişdirin
+  wwcConfigGUIPostgresMenuButton: PostgreSQL parametrlərini dəyişdirin
+  wwcConfigConversationPostgresPasswordInput: Cari şifrə {0} -dir. Yeni bir şifrə
+    təyin etmək üçün 0-dan başqa bir şey yazın və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigConversationPostgresHostnameInput: Hazırkı host adı {0} -dir. Yeni bir
+    host adı təyin etmək üçün 0-dan başqa bir şey yazın və ya geri qayıtmaq üçün 0
+    yazın.
+  wwcConfigGUIPostgresPortButton: PostgreSQL portunu dəyişdirin
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL host adını uğurla dəyişdirdi.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL Hostadını dəyişdirin
+  wwcConfigConversationPostgresDatabaseNameInput: Hazırkı verilənlər bazası adı {0}
+    -dir. Yeni verilənlər bazası adını təyin etmək üçün 0-dan başqa bir şey yazın
+    və ya geri qayıtmaq üçün 0 yazın.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Mövcud isteğe bağlı PostgreSQL
+    arqumentləri bunlardır: {0}. Vergüllə ayrılmış arqumentləri yazın (key = value,
+    key2 = value2) və ya cari arqları silmək üçün clear yazın və ya geri qayıtmaq
+    üçün 0 yazın.'
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL-ni dəyişdirin
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL verilənlər bazasını dəyişdirin
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL istifadəçi adını uğurla
+    dəyişdirdi.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfiqurasiya'
 

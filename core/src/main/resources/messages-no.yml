@@ -314,7 +314,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Endre SQL-innstillinger
   wwcConfigConversationWatsonTranslateToggleSuccess: Vellykket slått Watson Oversett.
     Last inn for at endringen skal tre i kraft.
-  wwcConfigGUISQLSettings: SQL-konfigurasjon
   wwcConfigGUIToggleGoogleTranslateButton: Veksle Google Oversett
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Oversett
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Oversett
@@ -374,7 +373,6 @@ Messages:
   libreHttpUnknown: 'Ukjent http-feil: {0}'
   wwcConfigGUILibreTranslateURLButton: Endre Libre Oversett URL
   wwcConfigConnectionFail: Kan ikke koble til {0}.
-  wwcConfigGUIMongoSettings: MongoDB-konfigurasjon
   wwcConfigConversationMongoDatabaseNameSuccess: Vellykket endret MongoDB-databasenavnet.
   wwcConfigGUIMongoHostnameButton: Endre MongoDB-vertsnavn
   wwcConfigConversationMongoPasswordInput: Gjeldende passord er {0}. Skriv inn noe
@@ -507,4 +505,41 @@ Messages:
     {0}'
   wwcNewSqlConvertFail: Konvertering mislyktes... vennligst gjenopprett tabellene
     fra sikkerhetskopien du laget. Deaktiverer WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Endret PostgreSQL-databasenavnet
+    vellykket.
+  wwcConfigConversationPostgresOptionalArgsCleared: Valgfrie argumenter fjernet med
+    hell.
+  wwcConfigConversationPostgresPortInput: Den nåværende porten er {0}. Skriv inn noe
+    annet enn 0 for å angi en ny port, eller skriv 0 for å gå tilbake.
+  wwcConfigGUIPostgresUsernameButton: Endre PostgreSQL brukernavn
+  wwcConfigConversationPostgresOptionalArgsSuccess: Vellykket endring av valgfrie
+    PostgreSQL-argumenter.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL for PostgreSQL ble slått av med
+    hell.
+  wwcConfigConversationPostgresPasswordSuccess: Vellykket endret PostgreSQL-passordet.
+  wwcConfigConversationPostgresPortSuccess: Vellykket endret PostgreSQL-porten.
+  wwcConfigConversationPostgresUsernameInput: Gjeldende brukernavn er {0}. Skriv inn
+    noe annet enn 0 for å angi et nytt brukernavn, eller skriv 0 for å gå tilbake.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL byttet vellykket. Last inn
+    på nytt for at endringen skal tre i kraft.
+  wwcConfigGUITogglePostgresButton: Bytt PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Endre PostgreSQL-passord
+  wwcConfigGUIPostgresOptionalArgsButton: Endre valgfrie argumenter for PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Endre PostgreSQL-innstillinger
+  wwcConfigConversationPostgresPasswordInput: Gjeldende passord er {0}. Skriv inn
+    noe annet enn 0 for å angi et nytt passord, eller skriv 0 for å gå tilbake.
+  wwcConfigConversationPostgresHostnameInput: Gjeldende vertsnavn er {0}. Skriv inn
+    noe annet enn 0 for å angi et nytt vertsnavn, eller skriv 0 for å gå tilbake.
+  wwcConfigGUIPostgresPortButton: Endre PostgreSQL-port
+  wwcConfigConversationPostgresHostnameSuccess: Vellykket endret PostgreSQL-vertsnavnet.
+  wwcConfigGUIPostgresHostnameButton: Endre PostgreSQL-vertsnavn
+  wwcConfigConversationPostgresDatabaseNameInput: Gjeldende databasenavn er {0}. Skriv
+    inn noe annet enn 0 for å angi et nytt databasenavn, eller skriv 0 for å gå tilbake.
+  wwcConfigConversationPostgresOptionalArgsInput: 'De gjeldende valgfrie PostgreSQL-argumentene
+    er: {0}. Skriv inn argumenter atskilt med komma (nøkkel=verdi, nøkkel2=verdi2),
+    eller skriv clear for å slette gjeldende argumenter, eller skriv 0 for å gå tilbake.'
+  wwcConfigGUITogglePostgresSSLButton: Slå på PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Endre PostgreSQL-database
+  wwcConfigConversationPostgresUsernameSuccess: Vellykket endret PostgreSQL-brukernavnet.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfigurasjon'
 

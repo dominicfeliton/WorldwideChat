@@ -330,7 +330,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL-instellingen wijzigen
   wwcConfigConversationWatsonTranslateToggleSuccess: Watson Translate met succes ingeschakeld.
     Herladen om de wijziging van kracht te laten worden.
-  wwcConfigGUISQLSettings: SQL-configuratie
   wwcConfigGUIToggleGoogleTranslateButton: Schakel Google Translate in
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Vertalen
   wwcConfigGUIToggleAmazonTranslateButton: Schakel Amazon Vertaal
@@ -395,7 +394,6 @@ Messages:
   libreHttpUnknown: 'Onbekende http-fout: {0}'
   wwcConfigGUILibreTranslateURLButton: De URL van Libre Translate wijzigen
   wwcConfigConnectionFail: Kon geen verbinding maken met {0}.
-  wwcConfigGUIMongoSettings: MongoDB-configuratie
   wwcConfigConversationMongoDatabaseNameSuccess: De naam van de MongoDB-database is
     succesvol gewijzigd.
   wwcConfigGUIMongoHostnameButton: MongoDB-hostnaam wijzigen
@@ -537,4 +535,46 @@ Messages:
   wwcOldSqlStructRecords: 'Uw SQL-database heeft een inefficiënte configuratie van
     de opnametabel voor spelers ten opzichte van een eerdere versie van WorldwideChat.
     Je kunt de volgende opdracht uitvoeren om dit probleem op te lossen: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: De naam van de PostgreSQL-database
+    is succesvol gewijzigd.
+  wwcConfigConversationPostgresOptionalArgsCleared: Optionele argumenten zijn met
+    succes gewist.
+  wwcConfigConversationPostgresPortInput: De huidige poort is {0}. Typ iets anders
+    dan 0 om een nieuwe poort in te stellen, of typ 0 om terug te gaan.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL-gebruikersnaam wijzigen
+  wwcConfigConversationPostgresOptionalArgsSuccess: De optionele PostgreSQL-argumenten
+    zijn succesvol gewijzigd.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL voor PostgreSQL is succesvol
+    omgeschakeld.
+  wwcConfigConversationPostgresPasswordSuccess: Het PostgreSQL-wachtwoord is succesvol
+    gewijzigd.
+  wwcConfigConversationPostgresPortSuccess: De PostgreSQL-poort is succesvol gewijzigd.
+  wwcConfigConversationPostgresUsernameInput: De huidige gebruikersnaam is {0}. Typ
+    iets anders dan 0 om een nieuwe gebruikersnaam in te stellen, of typ 0 om terug
+    te gaan.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL is succesvol omgeschakeld.
+    Herlaad om de wijziging door te voeren.
+  wwcConfigGUITogglePostgresButton: Schakel PostgreSQL in
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL-wachtwoord wijzigen
+  wwcConfigGUIPostgresOptionalArgsButton: Optionele argumenten voor PostgreSQL wijzigen
+  wwcConfigGUIPostgresMenuButton: PostgreSQL-instellingen wijzigen
+  wwcConfigConversationPostgresPasswordInput: Het huidige wachtwoord is {0}. Typ iets
+    anders dan 0 om een nieuw wachtwoord in te stellen, of typ 0 om terug te gaan.
+  wwcConfigConversationPostgresHostnameInput: De huidige hostnaam is {0}. Typ iets
+    anders dan 0 om een nieuwe hostnaam in te stellen, of typ 0 om terug te gaan.
+  wwcConfigGUIPostgresPortButton: PostgreSQL-poort wijzigen
+  wwcConfigConversationPostgresHostnameSuccess: De PostgreSQL-hostnaam is succesvol
+    gewijzigd.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL-hostnaam wijzigen
+  wwcConfigConversationPostgresDatabaseNameInput: De huidige databasenaam is {0}.
+    Typ iets anders dan 0 om een nieuwe databasenaam in te stellen, of typ 0 om terug
+    te gaan.
+  wwcConfigConversationPostgresOptionalArgsInput: 'De huidige optionele PostgreSQL-argumenten
+    zijn: {0}. Typ argumenten gescheiden door een komma (key=value, key2=value2),
+    of typ clear om de huidige args te wissen, of typ 0 om terug te gaan.'
+  wwcConfigGUITogglePostgresSSLButton: Schakel PostgreSQL SSL in
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL-database wijzigen
+  wwcConfigConversationPostgresUsernameSuccess: De gebruikersnaam van PostgreSQL is
+    succesvol gewijzigd.
+  wwcConfigGUIStorageTypeSettings: '{0} Configuratie'
 

@@ -336,7 +336,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Cambiar la configuración de SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Se ha cambiado correctamente
     Watson Translate. Vuelva a cargar para que el cambio surta efecto.
-  wwcConfigGUISQLSettings: Configuración de SQL
   wwcConfigGUIToggleGoogleTranslateButton: Alternar Traductor de Google
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Traducir
   wwcConfigGUIToggleAmazonTranslateButton: Alternar Amazon Translate
@@ -411,7 +410,6 @@ Messages:
   libreHttpUnknown: 'Error http desconocido: {0}'
   wwcConfigGUILibreTranslateURLButton: Cambiar URL de Libre Translate
   wwcConfigConnectionFail: No se pudo conectar a {0}.
-  wwcConfigGUIMongoSettings: Configuración de MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Se cambió correctamente el nombre
     de la base de datos MongoDB.
   wwcConfigGUIMongoHostnameButton: Cambiar el nombre de host de MongoDB
@@ -563,4 +561,49 @@ Messages:
     hecho, el comando es: {0}'
   wwcNewSqlConvertFail: La conversión ha fallado... restaure las tablas a partir de
     la copia de seguridad que ha realizado. Deshabilitando WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Se modificó correctamente el nombre
+    de la base de datos PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Los argumentos opcionales se borraron
+    correctamente.
+  wwcConfigConversationPostgresPortInput: El puerto actual es {0}. Escriba un valor
+    distinto de 0 para establecer un puerto nuevo, o escriba 0 para volver atrás.
+  wwcConfigGUIPostgresUsernameButton: Cambiar nombre de usuario de PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Se han modificado correctamente
+    los argumentos opcionales de PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL para PostgreSQL se activó correctamente.
+  wwcConfigConversationPostgresPasswordSuccess: Se modificó correctamente la contraseña
+    de PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Se modificó correctamente el puerto de
+    PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: El nombre de usuario actual es {0}.
+    Escriba cualquier cosa que no sea 0 para establecer un nombre de usuario nuevo
+    o escriba 0 para volver atrás.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL ha cambiado correctamente.
+    Vuelva a cargar para que el cambio surta efecto.
+  wwcConfigGUITogglePostgresButton: Alternar PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Cambiar la contraseña de PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Cambiar los argumentos opcionales de PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Cambiar la configuración de PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: La contraseña actual es {0}. Escriba
+    un valor distinto de 0 para establecer una contraseña nueva o escriba 0 para volver
+    atrás.
+  wwcConfigConversationPostgresHostnameInput: El nombre de host actual es {0}. Escriba
+    un valor distinto de 0 para establecer un nuevo nombre de host, o escriba 0 para
+    volver atrás.
+  wwcConfigGUIPostgresPortButton: Cambiar el puerto de PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Se cambió correctamente el nombre
+    de host de PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Cambiar el nombre de host de PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: El nombre de la base de datos actual
+    es {0}. Escriba un valor distinto de 0 para establecer un nuevo nombre de base
+    de datos, o escriba 0 para volver atrás.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Los argumentos opcionales actuales
+    de PostgreSQL son: {0}. Escriba los argumentos separados por comas (key=value,
+    key2=value2), o escriba clear para borrar los argumentos actuales, o escriba 0
+    para volver atrás.'
+  wwcConfigGUITogglePostgresSSLButton: Alternar SSL de PostgreSQL
+  wwcConfigGUIPostgresDatabaseNameButton: Cambiar la base de datos de PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Se modificó correctamente el nombre
+    de usuario de PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: Configuración {0}
 

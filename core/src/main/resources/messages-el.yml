@@ -345,7 +345,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Αλλαγή ρυθμίσεων SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Με επιτυχία εναλλαγή Watson Μετάφραση.
     Επαναφόρτωση για να τεθεί σε ισχύ η αλλαγή.
-  wwcConfigGUISQLSettings: Ρύθμιση παραμέτρων SQL
   wwcConfigGUIToggleGoogleTranslateButton: Εναλλαγή Μετάφραση Google
   wwcConfigGUIToggleWatsonTranslateButton: Εναλλαγή της μετάφρασης Watson
   wwcConfigGUIToggleAmazonTranslateButton: Εναλλαγή Μετάφραση του Amazon
@@ -418,7 +417,6 @@ Messages:
   libreHttpUnknown: 'Άγνωστο σφάλμα http: {0}'
   wwcConfigGUILibreTranslateURLButton: Αλλαγή διεύθυνσης URL μετάφρασης Libre
   wwcConfigConnectionFail: Αποτυχία σύνδεσης με το {0}.
-  wwcConfigGUIMongoSettings: Ρύθμιση παραμέτρων MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Επιτυχής αλλαγή του ονόματος της
     βάσης δεδομένων MongoDB.
   wwcConfigGUIMongoHostnameButton: Αλλαγή ονόματος κεντρικού υπολογιστή MongoDB
@@ -567,4 +565,50 @@ Messages:
   wwcOldSqlStructRecords: 'Η βάση δεδομένων SQL διαθέτει αναποτελεσματική ρύθμιση
     πίνακα εγγραφών αναπαραγωγής από προηγούμενη έκδοση του WorldwideChat. Μπορείτε
     να εκτελέσετε την ακόλουθη εντολή για να διορθώσετε αυτό το ζήτημα: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Αλλάξτε με επιτυχία το όνομα της
+    βάσης δεδομένων PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Τα προαιρετικά ορίσματα εκκαθαρίστηκαν
+    με επιτυχία.
+  wwcConfigConversationPostgresPortInput: Η τρέχουσα θύρα είναι {0}. Πληκτρολογήστε
+    οτιδήποτε άλλο από το 0 για να ορίσετε μια νέα θύρα ή πληκτρολογήστε 0 για να
+    επιστρέψετε.
+  wwcConfigGUIPostgresUsernameButton: Αλλαγή ονόματος χρήστη PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Αλλάξτε με επιτυχία τα προαιρετικά
+    ορίσματα PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: Το SSL για PostgreSQL εναλλάχθηκε
+    με επιτυχία.
+  wwcConfigConversationPostgresPasswordSuccess: Αλλάξτε με επιτυχία τον κωδικό πρόσβασης
+    PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Αλλάξτε με επιτυχία τη θύρα PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Το τρέχον όνομα χρήστη είναι {0}. Πληκτρολογήστε
+    οτιδήποτε άλλο από το 0 για να ορίσετε ένα νέο όνομα χρήστη ή πληκτρολογήστε 0
+    για να επιστρέψετε.
+  wwcConfigConversationTogglePostgresSuccess: Η PostgreSQL εναλλάχθηκε με επιτυχία.
+    Επαναφόρτωση για να τεθεί σε ισχύ η αλλαγή.
+  wwcConfigGUITogglePostgresButton: Εναλλαγή PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Αλλαγή κωδικού πρόσβασης PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Αλλαγή προαιρετικών ορισμάτων PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Αλλαγή ρυθμίσεων PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Ο τρέχων κωδικός πρόσβασης είναι {0}.
+    Πληκτρολογήστε οτιδήποτε άλλο από το 0 για να ορίσετε έναν νέο κωδικό πρόσβασης
+    ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationPostgresHostnameInput: Το τρέχον όνομα κεντρικού υπολογιστή
+    είναι {0}. Πληκτρολογήστε οτιδήποτε άλλο από το 0 για να ορίσετε ένα νέο όνομα
+    κεντρικού υπολογιστή ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigGUIPostgresPortButton: Αλλαγή θύρας PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Αλλάξτε με επιτυχία το όνομα κεντρικού
+    υπολογιστή PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Αλλαγή ονόματος κεντρικού υπολογιστή PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Το τρέχον όνομα της βάσης δεδομένων
+    είναι {0}. Πληκτρολογήστε οτιδήποτε άλλο από το 0 για να ορίσετε ένα νέο όνομα
+    βάσης δεδομένων ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Τα τρέχοντα προαιρετικά ορίσματα
+    PostgreSQL είναι: {0}. Πληκτρολογήστε ορίσματα διαχωρισμένα με κόμμα (key=value,
+    key2=value2) ή πληκτρολογήστε clear για να διαγράψετε τα τρέχοντα στοιχεία ή πληκτρολογήστε
+    0 για να επιστρέψετε.'
+  wwcConfigGUITogglePostgresSSLButton: Εναλλαγή SSL PostgreSQL
+  wwcConfigGUIPostgresDatabaseNameButton: Αλλαγή βάσης δεδομένων PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Αλλάξτε με επιτυχία το όνομα χρήστη
+    PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Διαμόρφωση'
 

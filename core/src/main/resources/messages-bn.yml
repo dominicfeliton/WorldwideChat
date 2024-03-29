@@ -319,7 +319,6 @@ Messages:
   wwcConfigGUISQLMenuButton: এসকিউএল সেটিংস পরিবর্তন করুন
   wwcConfigConversationWatsonTranslateToggleSuccess: সফলভাবে ওয়াটসন অনুবাদ টগল করেছেন।
     পরিবর্তন কার্যকর হওয়ার জন্য পুনরায় লোড করুন।
-  wwcConfigGUISQLSettings: SQL কনফিগারেশন
   wwcConfigGUIToggleGoogleTranslateButton: গুগল অনুবাদ টগল
   wwcConfigGUIToggleWatsonTranslateButton: ওয়াটসন অনুবাদ টগল করুন
   wwcConfigGUIToggleAmazonTranslateButton: আমাজন অনুবাদ টগল করুন
@@ -382,7 +381,6 @@ Messages:
   libreHttpUnknown: 'অজানা http ত্রুটি: {0}'
   wwcConfigGUILibreTranslateURLButton: বিনামূল্যে পরিবর্তন করুন URL অনুবাদ করুন
   wwcConfigConnectionFail: '{0}- র সাথে সংযোগ করতে ব্যর্থ'
-  wwcConfigGUIMongoSettings: মোঙ্গোডিবি কনফিগারেশন
   wwcConfigConversationMongoDatabaseNameSuccess: সফলভাবে MongoDB ডাটাবেস নাম পরিবর্তন।
   wwcConfigGUIMongoHostnameButton: মোঙ্গোডিবি হোস্টনাম পরিবর্তন করুন
   wwcConfigConversationMongoPasswordInput: বর্তমান পাসওয়ার্ড হল {0}। নতুন পাসওয়ার্ড
@@ -520,4 +518,46 @@ Messages:
   wwcOldSqlStructRecords: 'আপনার এসকিউএল ডাটাবেসে WorldwideChat-এর পূর্ববর্তী সংস্করণ
     থেকে একটি অকার্যকর প্লেয়ার রেকর্ড টেবিল সেটআপ রয়েছে। এই সমস্যাটি ঠিক করতে আপনি
     নিম্নলিখিত কমান্ডটি চালাতে পারেন: /wwcd রূপান্তর'
+  wwcConfigConversationPostgresDatabaseNameSuccess: সফলভাবে PostgreSQL ডাটাবেস নাম
+    পরিবর্তন করা হয়েছে।
+  wwcConfigConversationPostgresOptionalArgsCleared: ঐচ্ছিক যুক্তি সফলভাবে সাফ করা
+    হয়েছে
+  wwcConfigConversationPostgresPortInput: বর্তমান বন্দরটি {0}। নতুন পোর্ট সেট করতে
+    0 ছাড়া অন্য কিছু টাইপ করুন বা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL ব্যবহারকারীর নাম পরিবর্তন করুন
+  wwcConfigConversationPostgresOptionalArgsSuccess: ঐচ্ছিক PostgreSQL আর্গুমেন্টগুলি
+    সফলভাবে পরিবর্তন করা হয়েছে।
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL এর জন্য এসএসএল সফলভাবে
+    টগল করা হয়েছে।
+  wwcConfigConversationPostgresPasswordSuccess: সফলভাবে PostgreSQL পাসওয়ার্ড পরিবর্তন
+    করা হয়েছে।
+  wwcConfigConversationPostgresPortSuccess: সফলভাবে PostgreSQL পোর্ট পরিবর্তন করা
+    হয়েছে।
+  wwcConfigConversationPostgresUsernameInput: বর্তমান ব্যবহারকারীর নাম {0}। নতুন ব্যবহারকারীর
+    নাম সেট করতে 0 ছাড়া অন্য কিছু টাইপ করুন বা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationTogglePostgresSuccess: পোস্টগ্রেস্কিউএল সফলভাবে টগল করা হয়েছে।
+    পরিবর্তন কার্যকর হওয়ার জন্য পুনরায় লোড করুন।
+  wwcConfigGUITogglePostgresButton: পোস্টগ্রেস্কিউএল টগল করুন
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL পাসওয়ার্ড পরিবর্তন করুন
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL ঐচ্ছিক আর্গুমেন্ট পরিবর্তন করুন
+  wwcConfigGUIPostgresMenuButton: PostgreSQL সেটিংস পরিবর্তন করুন
+  wwcConfigConversationPostgresPasswordInput: বর্তমান পাসওয়ার্ড হল {0}। নতুন পাসওয়ার্ড
+    সেট করতে 0 ছাড়া অন্য কিছু টাইপ করুন বা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationPostgresHostnameInput: বর্তমান হোস্টনাম {0}। নতুন হোস্টনাম
+    সেট করতে 0 ছাড়া অন্য কিছু টাইপ করুন বা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigGUIPostgresPortButton: পোস্টগ্রেস্কিউএল পোর্ট পরিবর্তন করুন
+  wwcConfigConversationPostgresHostnameSuccess: সফলভাবে PostgreSQL হোস্টনাম পরিবর্তন
+    করা হয়েছে।
+  wwcConfigGUIPostgresHostnameButton: পোস্টগ্রেস্কিউএল হোস্টনাম পরিবর্তন করুন
+  wwcConfigConversationPostgresDatabaseNameInput: বর্তমান ডাটাবেসের নাম {0}। একটি
+    নতুন ডাটাবেস নাম সেট করতে 0 ছাড়া অন্য কিছু টাইপ করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationPostgresOptionalArgsInput: 'বর্তমান ঐচ্ছিক পোস্টগ্রেস্কিউএল
+    আর্গুমেন্টগুলি হ''ল: {0}। একটি কমা দ্বারা পৃথক আর্গুমেন্ট টাইপ করুন (কী = মান,
+    কী2 = মান 2), অথবা বর্তমান আর্গগুলি মুছে ফেলার জন্য ক্লিয়ার টাইপ করুন, অথবা ফিরে
+    যেতে 0 টাইপ করুন।'
+  wwcConfigGUITogglePostgresSSLButton: পোস্টগ্রেস্কিউএল এসএসএল টগল করুন
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL ডাটাবেস পরিবর্তন করুন
+  wwcConfigConversationPostgresUsernameSuccess: সফলভাবে PostgreSQL ব্যবহারকারীর নাম
+    পরিবর্তন করা হয়েছে।
+  wwcConfigGUIStorageTypeSettings: '{0} কনফিগারেশন'
 

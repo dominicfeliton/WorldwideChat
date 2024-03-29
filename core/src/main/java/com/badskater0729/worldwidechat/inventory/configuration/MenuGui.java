@@ -35,7 +35,7 @@ public class MenuGui implements InventoryProvider {
 	private WWCInventoryManager invManager = instance.getInventoryManager();
 
 	public static enum CONFIG_GUI_TAGS {
-		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, CHAT_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET, DEEP_TRANS_SET, AZURE_TRANS_SET, SYSTRAN_TRANS_SET;
+		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, POSTGRES_SET, CHAT_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET, DEEP_TRANS_SET, AZURE_TRANS_SET, SYSTRAN_TRANS_SET;
 		
 		public SmartInventory smartInv;
 	}
@@ -49,10 +49,13 @@ public class MenuGui implements InventoryProvider {
 		CONFIG_GUI_TAGS.STORAGE_SET.smartInv = storageSet.genSmartInv("storageSettingsMenu", "wwcConfigGUIStorageSettings");
 		
 		MenuGui sqlSet = new MenuGui();
-		CONFIG_GUI_TAGS.SQL_SET.smartInv = sqlSet.genSmartInv("sqlSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUISQLSettings");
+		CONFIG_GUI_TAGS.SQL_SET.smartInv = sqlSet.genSmartInv("sqlSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUIStorageTypeSettings", new String[] {"MySQL"});
 		
 		MenuGui mongoSet = new MenuGui();
-		CONFIG_GUI_TAGS.MONGO_SET.smartInv = mongoSet.genSmartInv("mongoSettingsMenu", 3, 9, ChatColor.BLUE, "wwcConfigGUIMongoSettings");
+		CONFIG_GUI_TAGS.MONGO_SET.smartInv = mongoSet.genSmartInv("mongoSettingsMenu", 3, 9, ChatColor.BLUE, "wwcConfigGUIStorageTypeSettings", new String[] {"MongoDB"});
+
+		MenuGui postgresSet = new MenuGui();
+		CONFIG_GUI_TAGS.POSTGRES_SET.smartInv = postgresSet.genSmartInv("postgresSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUIStorageTypeSettings", new String[] {"PostgreSQL"});
 		
 		MenuGui chatSet = new MenuGui();
 		CONFIG_GUI_TAGS.CHAT_SET.smartInv = chatSet.genSmartInv("chatSettingsMenu", "wwcConfigGUIChatSettings");
@@ -101,11 +104,12 @@ public class MenuGui implements InventoryProvider {
 		generalSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.GEN_SET.ordinal()+1 + ""}));
 		
 		// Storage
-		ArrayList<String> storageToggles = new ArrayList<>(Arrays.asList("Storage.useSQL", "Storage.useMongoDB"));
+		ArrayList<String> storageToggles = new ArrayList<>(Arrays.asList("Storage.useSQL", "Storage.useMongoDB", "Storage.usePostgreSQL"));
 
 		storageSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
 		storageSet.add(new SubMenuElement(1, 1, instance.isSQLConnValid(true), "wwcConfigGUISQLMenuButton", CONFIG_GUI_TAGS.SQL_SET.smartInv));
 		storageSet.add(new SubMenuElement(1, 2, instance.isMongoConnValid(true), "wwcConfigGUIMongoMenuButton", CONFIG_GUI_TAGS.MONGO_SET.smartInv));
+		storageSet.add(new SubMenuElement(1, 3, instance.isPostgresConnValid(true), "wwcConfigGUIPostgresMenuButton", CONFIG_GUI_TAGS.POSTGRES_SET.smartInv));
 		storageSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.GEN_SET.smartInv}));
 		storageSet.add(new CommonElement(2, 4, "Quit"));
 		storageSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
@@ -151,7 +155,28 @@ public class MenuGui implements InventoryProvider {
 		mongoSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		mongoSet.add(new CommonElement(2, 4, "Quit"));
 		mongoSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.STORAGE_SET.ordinal()+1 + ""}));
-		
+
+		// PostgreSQL
+		postgresSet.add(new BorderElement(XMaterial.GRAY_STAINED_GLASS_PANE));
+		postgresSet.add(new ToggleElement(1, 1, "wwcConfigGUITogglePostgresButton", "wwcConfigConversationTogglePostgresSuccess",
+				"Storage.usePostgreSQL", storageToggles));
+		postgresSet.add(new ConvoElement(1, 2, "wwcConfigGUIPostgresHostnameButton", XMaterial.NAME_TAG,
+				new PostgresSettingsConvos.Hostname()));
+		postgresSet.add(new ConvoElement(1, 3, "wwcConfigGUIPostgresPortButton", XMaterial.NAME_TAG,
+				new PostgresSettingsConvos.Port()));
+		postgresSet.add(new ConvoElement(1, 4, "wwcConfigGUIPostgresDatabaseNameButton", XMaterial.NAME_TAG,
+				new PostgresSettingsConvos.Database()));
+		postgresSet.add(new ConvoElement(1, 5, "wwcConfigGUIPostgresUsernameButton", XMaterial.NAME_TAG,
+				new PostgresSettingsConvos.Username()));
+		postgresSet.add(new ConvoElement(1, 6, "wwcConfigGUIPostgresPasswordButton", XMaterial.NAME_TAG,
+				new PostgresSettingsConvos.Password()));
+		postgresSet.add(new ToggleElement(1, 7, "wwcConfigGUITogglePostgresSSLButton", "wwcConfigConversationTogglePostgresSSLSuccess", "Storage.postgresSSL"));
+		postgresSet.add(new ConvoElement(2, 1, "wwcConfigGUIPostgresOptionalArgsButton", XMaterial.NAME_TAG,
+				new PostgresSettingsConvos.OptionalArgs()));
+		postgresSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
+		postgresSet.add(new CommonElement(3, 4, "Quit"));
+		postgresSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.STORAGE_SET.ordinal()+1 + ""}));
+
 		// Chat 
 		chatSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
 		chatSet.add(new ToggleElement(1, 1, "wwcConfigGUISendTranslationChatButton", "wwcConfigConversationSendTranslationChatSuccess", "Chat.sendTranslationChat"));

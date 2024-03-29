@@ -297,7 +297,6 @@ Messages:
   wwcConfigGUISQLMenuButton: تغيير إعدادات SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: نجحت في تبديل Watson Translate.
     أعد التحميل حتى يصبح التغيير ساري المفعول.
-  wwcConfigGUISQLSettings: تكوين SQL
   wwcConfigGUIToggleGoogleTranslateButton: تبديل ترجمة جوجل
   wwcConfigGUIToggleWatsonTranslateButton: تبديل ترجمة واتسون
   wwcConfigGUIToggleAmazonTranslateButton: تبديل ترجمة أمازون
@@ -356,7 +355,6 @@ Messages:
   libreHttpUnknown: 'خطأ http غير معروف: {0}'
   wwcConfigGUILibreTranslateURLButton: تغيير عنوان URL لترجمة Libre
   wwcConfigConnectionFail: فشل الاتصال بـ {0}.
-  wwcConfigGUIMongoSettings: تكوين مونغودب
   wwcConfigConversationMongoDatabaseNameSuccess: تم تغيير اسم قاعدة بيانات MongoDB
     بنجاح.
   wwcConfigGUIMongoHostnameButton: تغيير اسم مضيف MongoDB
@@ -488,4 +486,39 @@ Messages:
   wwcOldSqlStructRecords: 'تحتوي قاعدة بيانات SQL الخاصة بك على إعداد جدول تسجيل لاعب
     غير فعال من إصدار سابق من WorldwideChat. يمكنك تشغيل الأمر التالي لإصلاح هذه المشكلة:
     /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: تم تغيير اسم قاعدة بيانات PostgreSQL
+    بنجاح.
+  wwcConfigConversationPostgresOptionalArgsCleared: تم مسح الحجج الاختيارية بنجاح.
+  wwcConfigConversationPostgresPortInput: المنفذ الحالي هو {0}. اكتب أي شيء بخلاف
+    0 لتعيين منفذ جديد، أو اكتب 0 للعودة.
+  wwcConfigGUIPostgresUsernameButton: تغيير اسم مستخدم PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: تم تغيير حجج PostgreSQL الاختيارية
+    بنجاح.
+  wwcConfigConversationTogglePostgresSSLSuccess: تم تبديل SSL لـ PostgreSQL بنجاح.
+  wwcConfigConversationPostgresPasswordSuccess: تم تغيير كلمة مرور PostgreSQL بنجاح.
+  wwcConfigConversationPostgresPortSuccess: تم تغيير منفذ PostgreSQL بنجاح.
+  wwcConfigConversationPostgresUsernameInput: اسم المستخدم الحالي هو {0}. اكتب أي
+    شيء بخلاف 0 لتعيين اسم مستخدم جديد، أو اكتب 0 للرجوع.
+  wwcConfigConversationTogglePostgresSuccess: تم تبديل PostgreSQL بنجاح. أعد التحميل
+    حتى يدخل التغيير حيز التنفيذ.
+  wwcConfigGUITogglePostgresButton: تبديل بوستغريزل
+  wwcConfigGUIPostgresPasswordButton: تغيير كلمة مرور PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: تغيير الحجج الاختيارية لـ PostgreSQL
+  wwcConfigGUIPostgresMenuButton: تغيير إعدادات بوستغريزل
+  wwcConfigConversationPostgresPasswordInput: كلمة المرور الحالية هي {0}. اكتب أي
+    شيء بخلاف 0 لتعيين كلمة مرور جديدة، أو اكتب 0 للعودة.
+  wwcConfigConversationPostgresHostnameInput: اسم المضيف الحالي هو {0}. اكتب أي شيء
+    بخلاف 0 لتعيين اسم مضيف جديد، أو اكتب 0 للعودة.
+  wwcConfigGUIPostgresPortButton: تغيير منفذ بوستغريزل
+  wwcConfigConversationPostgresHostnameSuccess: تم تغيير اسم مضيف PostgreSQL بنجاح.
+  wwcConfigGUIPostgresHostnameButton: تغيير اسم مضيف بوستغريزل
+  wwcConfigConversationPostgresDatabaseNameInput: اسم قاعدة البيانات الحالية هو {0}.
+    اكتب أي شيء بخلاف 0 لتعيين اسم قاعدة بيانات جديد، أو اكتب 0 للرجوع.
+  wwcConfigConversationPostgresOptionalArgsInput: 'حجج PostgreSQL الاختيارية الحالية
+    هي: {0}. اكتب الوسيطات المفصولة بفاصلة (key=value، key2=value2)، أو اكتب clear
+    لمسح args الحالية، أو اكتب 0 للرجوع.'
+  wwcConfigGUITogglePostgresSSLButton: قم بتبديل بوستغريزل SSL
+  wwcConfigGUIPostgresDatabaseNameButton: تغيير قاعدة بيانات بوستغريزل
+  wwcConfigConversationPostgresUsernameSuccess: تم تغيير اسم مستخدم PostgreSQL بنجاح.
+  wwcConfigGUIStorageTypeSettings: '{0} التكوين'
 

@@ -326,7 +326,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Newid Gosodiadau SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Wedi toggled Watson Translate
     yn llwyddiannus. Ail-lwytho ar gyfer y newid i ddod i rym.
-  wwcConfigGUISQLSettings: Cyfluniad SQL
   wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Cyfieithu
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Cyfieithu
@@ -389,7 +388,6 @@ Messages:
   libreHttpUnknown: 'Gwall http anhysbys: {0}'
   wwcConfigGUILibreTranslateURLButton: Newid Libre Cyfieithu URL
   wwcConfigConnectionFail: Methwyd cysylltu â {0}.
-  wwcConfigGUIMongoSettings: Ffurfweddiad MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Newid enw cronfa ddata MongoDB yn
     llwyddiannus.
   wwcConfigGUIMongoHostnameButton: Newid Enw Gwesteiwr MongoDB
@@ -527,4 +525,45 @@ Messages:
     GEFN O''CH CRONFA DDATA CYN RHEDEG HYN. Os oes gennych, y gorchymyn yw: {0}'
   wwcNewSqlConvertFail: Methodd trosi... adferwch eich tablau o'r copi wrth gefn a
     wnaethoch chi. Analluogi WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Newidiodd enw'r gronfa ddata PostgreSQL
+    yn llwyddiannus.
+  wwcConfigConversationPostgresOptionalArgsCleared: Cliriwyd dadleuon dewisol yn llwyddiannus.
+  wwcConfigConversationPostgresPortInput: Y porthladd presennol yw {0}. Teipiwch unrhyw
+    beth heblaw 0 i osod porthladd newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIPostgresUsernameButton: Newid Enw Defnyddiwr PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Newidiodd y dadleuon PostgreSQL
+    dewisol yn llwyddiannus.
+  wwcConfigConversationTogglePostgresSSLSuccess: Tocliodd SSL ar gyfer PostgreSQL
+    yn llwyddiannus.
+  wwcConfigConversationPostgresPasswordSuccess: Newidiodd y cyfrinair PostgreSQL yn
+    llwyddiannus.
+  wwcConfigConversationPostgresPortSuccess: Newidiodd y porthladd PostgreSQL yn llwyddiannus.
+  wwcConfigConversationPostgresUsernameInput: Yr enw defnyddiwr presennol yw {0}.
+    Teipiwch unrhyw beth heblaw 0 i osod enw defnyddiwr newydd, neu deipiwch 0 i fynd
+    yn ôl.
+  wwcConfigConversationTogglePostgresSuccess: Toclodd PostgreSQL yn llwyddiannus.
+    Aillwytho er mwyn i'r newid ddod i rym.
+  wwcConfigGUITogglePostgresButton: Toglo PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Newid Cyfrinair PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Newid Dadleuon Dewisol PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Newid Gosodiadau PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Y cyfrinair presennol yw {0}. Teipiwch
+    unrhyw beth heblaw 0 i osod cyfrinair newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigConversationPostgresHostnameInput: Yr enw gwesteiwr cyfredol yw {0}. Teipiwch
+    unrhyw beth heblaw 0 i osod enw gwesteiwr newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcConfigGUIPostgresPortButton: Newid Porthladd PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Newidiodd enw gwesteiwr PostgreSQL
+    yn llwyddiannus.
+  wwcConfigGUIPostgresHostnameButton: Newid enw gwesteiwr PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Enw'r gronfa ddata gyfredol yw {0}.
+    Teipiwch unrhyw beth heblaw 0 i osod enw cronfa ddata newydd, neu deipiwch 0 i
+    fynd yn ôl.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Y dadleuon PostgreSQL dewisol cyfredol
+    yw: {0}. Teipiwch ddadleuon wedi''u gwahanu gan coma (key=value, key2 = value2),
+    neu deipiwch glir i sychu''r args cyfredol, neu deipiwch 0 i fynd yn ôl.'
+  wwcConfigGUITogglePostgresSSLButton: Toglo PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Newid Cronfa Ddata PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Newidiodd enw defnyddiwr PostgreSQL
+    yn llwyddiannus.
+  wwcConfigGUIStorageTypeSettings: '{0} Ffurfweddiad'
 

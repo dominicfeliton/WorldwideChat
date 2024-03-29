@@ -323,7 +323,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL iestatījumu mainīšana
   wwcConfigConversationWatsonTranslateToggleSuccess: Veiksmīgi pārslēgts Watson Translate.
     Pārlādēt, lai izmaiņas stātos spēkā.
-  wwcConfigGUISQLSettings: SQL konfigurācija
   wwcConfigGUIToggleGoogleTranslateButton: Pārslēgt Google tulkotāju
   wwcConfigGUIToggleWatsonTranslateButton: Pārslēgt Watson Translate
   wwcConfigGUIToggleAmazonTranslateButton: Pārslēgt Amazon tulkot
@@ -387,7 +386,6 @@ Messages:
   libreHttpUnknown: 'Nezināma http kļūda: {0}'
   wwcConfigGUILibreTranslateURLButton: Mainīt bezmaksas tulkošanas URL
   wwcConfigConnectionFail: Neizdevās pieslēgties {0}.
-  wwcConfigGUIMongoSettings: MongoDB konfigurācija
   wwcConfigConversationMongoDatabaseNameSuccess: Veiksmīgi mainīts MongoDB datubāzes
     nosaukums.
   wwcConfigGUIMongoHostnameButton: Mainīt MongoDB resursdatora nosaukumu
@@ -523,4 +521,45 @@ Messages:
     ir: {0}'
   wwcNewSqlConvertFail: Konvertēšana neizdevās... lūdzu, atjaunojiet tabulas no izveidotā
     dublējuma. WorldwideChat atspējošana...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Veiksmīgi mainīts PostgreSQL datu
+    bāzes nosaukums.
+  wwcConfigConversationPostgresOptionalArgsCleared: Neobligātie argumenti veiksmīgi
+    notīrīti.
+  wwcConfigConversationPostgresPortInput: Pašreizējais ports ir {0}. Ierakstiet kaut
+    ko citu, izņemot 0, lai iestatītu jaunu portu, vai ierakstiet 0, lai atgrieztos
+    atpakaļ.
+  wwcConfigGUIPostgresUsernameButton: Mainīt PostgreSQL lietotājvārdu
+  wwcConfigConversationPostgresOptionalArgsSuccess: Veiksmīgi mainīti izvēles PostgreSQL
+    argumenti.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL PostgreSQL ir veiksmīgi pārslēgts.
+  wwcConfigConversationPostgresPasswordSuccess: Veiksmīgi mainīta PostgreSQL parole.
+  wwcConfigConversationPostgresPortSuccess: Veiksmīgi mainīts PostgreSQL ports.
+  wwcConfigConversationPostgresUsernameInput: Pašreizējais lietotājvārds ir {0}. Ierakstiet
+    jebko citu kā 0, lai iestatītu jaunu lietotājvārdu, vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL veiksmīgi pārslēgts. Pārlādējiet,
+    lai izmaiņas stātos spēkā.
+  wwcConfigGUITogglePostgresButton: Pārslēgt PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Mainīt PostgreSQL paroli
+  wwcConfigGUIPostgresOptionalArgsButton: Mainīt PostgreSQL izvēles argumentus
+  wwcConfigGUIPostgresMenuButton: Mainīt PostgreSQL iestatījumus
+  wwcConfigConversationPostgresPasswordInput: Pašreizējā parole ir {0}. Ierakstiet
+    jebko citu kā 0, lai iestatītu jaunu paroli, vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationPostgresHostnameInput: Pašreizējais resursdatora nosaukums
+    ir {0}. Ierakstiet kaut ko citu, izņemot 0, lai iestatītu jaunu resursdatora nosaukumu,
+    vai ierakstiet 0, lai atgrieztos.
+  wwcConfigGUIPostgresPortButton: Mainīt PostgreSQL portu
+  wwcConfigConversationPostgresHostnameSuccess: Veiksmīgi mainīts PostgreSQL resursdatora
+    nosaukums.
+  wwcConfigGUIPostgresHostnameButton: Mainīt PostgreSQL resursdatora nosaukumu
+  wwcConfigConversationPostgresDatabaseNameInput: Pašreizējais datu bāzes nosaukums
+    ir {0}. Ierakstiet jebko citu kā 0, lai iestatītu jaunu datu bāzes nosaukumu,
+    vai ierakstiet 0, lai atgrieztos atpakaļ.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Pašreizējie izvēles PostgreSQL
+    argumenti ir: {0}. Ierakstiet argumentus, kas atdalīti ar komatu (key=value, key2
+    = value2) vai ierakstiet clear, lai notīrītu pašreizējos args, vai ierakstiet
+    0, lai atgrieztos atpakaļ.'
+  wwcConfigGUITogglePostgresSSLButton: Pārslēgt PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Mainīt PostgreSQL datu bāzi
+  wwcConfigConversationPostgresUsernameSuccess: Veiksmīgi mainīts PostgreSQL lietotājvārds.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfigurācija'
 

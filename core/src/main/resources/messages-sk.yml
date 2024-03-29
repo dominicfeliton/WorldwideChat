@@ -330,7 +330,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Zmeniť nastavenia SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Úspešne toggled Watson Preložiť.
     Znovu načítať, aby sa zmena prejavili.
-  wwcConfigGUISQLSettings: SQL konfigurácia
   wwcConfigGUIToggleGoogleTranslateButton: Prepnúť Prekladač Google
   wwcConfigGUIToggleWatsonTranslateButton: Prepnúť Watson preložiť
   wwcConfigGUIToggleAmazonTranslateButton: Prepnúť Amazon preklad
@@ -393,7 +392,6 @@ Messages:
   libreHttpUnknown: 'Neznáma chyba http: {0}'
   wwcConfigGUILibreTranslateURLButton: Zmeniť URL prekladu zadarmo
   wwcConfigConnectionFail: Nepodarilo sa pripojiť k {0}.
-  wwcConfigGUIMongoSettings: Konfigurácia MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Úspešne zmenil názov databázy MongoDB.
   wwcConfigGUIMongoHostnameButton: Zmeniť názov hostiteľa MongoDB
   wwcConfigConversationMongoPasswordInput: Aktuálne heslo je {0}. Zadajte niečo iné
@@ -530,4 +528,43 @@ Messages:
     PRED SPUSTENÍM TEJTO DATABÁZY. Ak máte, príkaz je: {0}'
   wwcNewSqlConvertFail: Konverzia zlyhala... prosím obnovte svoje tabuľky zo zálohy,
     ktorú ste vytvorili. Zakázanie WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Úspešne zmenil názov databázy
+    PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Voliteľné argumenty úspešne vymazané.
+  wwcConfigConversationPostgresPortInput: Aktuálny port je {0}. Zadajte čokoľvek iné
+    ako 0, aby ste nastavili nový port, alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigGUIPostgresUsernameButton: Zmeniť používateľské meno PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Úspešne zmenili voliteľné argumenty
+    PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL pre PostgreSQL bol úspešne prepnutý.
+  wwcConfigConversationPostgresPasswordSuccess: Úspešne zmenilo heslo PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Úspešne zmenil port PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Aktuálne používateľské meno je {0}.
+    Zadajte čokoľvek iné ako 0, aby ste nastavili nové používateľské meno, alebo zadajte
+    0, aby ste sa vrátili späť.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL bol úspešne prepnutý. Znovu
+    načítajte, aby zmena nadobudla účinnosť.
+  wwcConfigGUITogglePostgresButton: Prepnúť PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Zmena hesla PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Zmena voliteľných argumentov PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Zmena nastavení PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Aktuálne heslo je {0}. Zadajte čokoľvek
+    iné ako 0, aby ste nastavili nové heslo, alebo zadajte 0, aby ste sa vrátili späť.
+  wwcConfigConversationPostgresHostnameInput: Aktuálny názov hostiteľa je {0}. Zadajte
+    čokoľvek iné ako 0, aby ste nastavili nový názov hostiteľa, alebo zadajte 0, aby
+    ste sa vrátili späť.
+  wwcConfigGUIPostgresPortButton: Zmeniť port PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Úspešne zmenil názov hostiteľa PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Zmeniť názov hostiteľa PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Aktuálny názov databázy je {0}.
+    Zadajte čokoľvek iné ako 0, aby ste nastavili nový názov databázy, alebo zadajte
+    0, aby ste sa vrátili späť.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Aktuálne voliteľné argumenty PostgreSQL
+    sú: {0}. Zadajte argumenty oddelené čiarkou (key = value, key2 = value2) alebo
+    zadajte vymazanie aktuálnych znakov, alebo zadajte 0, aby ste sa vrátili späť.'
+  wwcConfigGUITogglePostgresSSLButton: Prepnúť PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Zmeniť databázu PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Úspešne zmenil používateľské meno
+    PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfigurácia'
 

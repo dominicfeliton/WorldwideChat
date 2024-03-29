@@ -280,7 +280,6 @@ Messages:
   wwcConfigGUISQLMenuButton: የ SQL ቅንብሮችን ይቀይሩ
   wwcConfigConversationWatsonTranslateToggleSuccess: በተሳካ ሁኔታ ዋትሰን ተርጉም ቀይረዋል። ለውጡ
     ተግባራዊ እንዲሆን ዳግም ይጫኑ።
-  wwcConfigGUISQLSettings: SQL ውቅር
   wwcConfigGUIToggleGoogleTranslateButton: ጉግል ተርጉም ቀይር
   wwcConfigGUIToggleWatsonTranslateButton: ዋትሰን ተርጉም ቀያይር
   wwcConfigGUIToggleAmazonTranslateButton: የአማዞን ተርጉም ቀያይር
@@ -339,7 +338,6 @@ Messages:
   libreHttpUnknown: 'ያልታወቀ http ስህተት: {0}'
   wwcConfigGUILibreTranslateURLButton: ሊብሬ ዩአርኤል ተርጉም ይቀይሩ
   wwcConfigConnectionFail: ከ {0} ጋር መገናኘት አልተሳካም።
-  wwcConfigGUIMongoSettings: ሞንጎዲቢ ውቅር
   wwcConfigConversationMongoDatabaseNameSuccess: የ MongoDB የውሂብ ጎታ ስም በተሳካ ሁኔታ ቀይሯል።
   wwcConfigGUIMongoHostnameButton: MongoDB አስተናጋጅ ስም ይቀይሩ
   wwcConfigConversationMongoPasswordInput: የአሁኑ የይለፍ ቃል {0} ነው። አዲስ የይለፍ ቃል ለማዘጋጀት
@@ -458,4 +456,39 @@ Messages:
   wwcNewSqlConvertFail: ልውውጥ አልተሳካም... እባክዎን ሰንጠረዥ ካደረጉት ምትኬ ያስመልሱ የዎርልድዊድካት ማሰናከል...
   wwcOldSqlStructRecords: 'የእርስዎ SQL ውሂብ ጎታ ከቀደመው የ WorldwideChat ስሪት ውጤታማ ያልሆነ የአጫዋች
     መዝገብ ጠረጴዛ ማዋቀር ይህንን ችግር ለማስተካከል የሚከተለውን ትዕዛዝ ማስኬድ ይችላሉ: /wwcd መለወጥ'
+  wwcConfigConversationPostgresDatabaseNameSuccess: የ PostgreSQL የውሂብ ጎታ ስም በተሳካ ሁኔታ
+    ቀይሯል።
+  wwcConfigConversationPostgresOptionalArgsCleared: አማራጭ ጭቅጭቆች በተሳካ ሁኔታ
+  wwcConfigConversationPostgresPortInput: የአሁኑ ወደብ {0} ነው። አዲስ ወደብ ለማዘጋጀት ከ 0 ውጭ ሌላ
+    ማንኛውንም ነገር ይተይቡ ወይም ወደ ኋላ ለመመለስ 0 ይይቡ።
+  wwcConfigGUIPostgresUsernameButton: የ PostgreSQL የተጠቃሚ ስም ይለውጡ
+  wwcConfigConversationPostgresOptionalArgsSuccess: አማራጭ የ PostgreSQL ክርክሮች በተሳካ ሁኔታ
+    ቀይሯል።
+  wwcConfigConversationTogglePostgresSSLSuccess: ለ PostgreSQL ኤስኤስኤል በተሳካ ሁኔታ ተቀይሯል።
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL የይለፍ ቃል በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigConversationPostgresPortSuccess: የ PostgreSQL ወደብ በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigConversationPostgresUsernameInput: የአሁኑ የተጠቃሚ ስም {0} ነው። አዲስ የተጠቃሚ ስም ለማዘጋጀት
+    ከ 0 ውጭ ሌላ ማንኛውንም ነገር ይተይቡ ወይም ወደ ኋላ ለመመለስ 0 ይይቡ።
+  wwcConfigConversationTogglePostgresSuccess: ፖስትግሬስክል በተሳካ ሁኔታ ተቀይሯል። ለውጡ ተግባራዊ እንዲሆን
+    እንደገና ይጫኑ።
+  wwcConfigGUITogglePostgresButton: ፖስትግሬስክዩኤልን ይቀይሩ
+  wwcConfigGUIPostgresPasswordButton: የፖስትግሬስክል የይለፍ ቃል
+  wwcConfigGUIPostgresOptionalArgsButton: የፖስትግሬስክል አማራጭ ክርክርን
+  wwcConfigGUIPostgresMenuButton: የፖስትግሬስክል ቅንብሮችን ይ
+  wwcConfigConversationPostgresPasswordInput: የአሁኑ የይለፍ ቃል {0} ነው። አዲስ የይለፍ ቃል ለማዘጋጀት
+    ከ 0 ሌላ ማንኛውንም ነገር ይተይቡ ወይም ወደ ኋላ ለመመለስ 0 ይተይቡ።
+  wwcConfigConversationPostgresHostnameInput: የአሁኑ አስተናጋጅ ስም {0} ነው። አዲስ የአስተናጋጅ ስም
+    ለማዘጋጀት ከ 0 ውጭ ሌላ ማንኛውንም ነገር ይተይቡ ወይም ወደ ኋላ ለመመለስ 0 ይይቡ።
+  wwcConfigGUIPostgresPortButton: ፖስትግሬስክል ወደብ ይለውጡ
+  wwcConfigConversationPostgresHostnameSuccess: የ PostgreSQL አስተናጋጅ ስም በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigGUIPostgresHostnameButton: የፖስትግሬስክል የአስተናጋጅ ስም ይ
+  wwcConfigConversationPostgresDatabaseNameInput: የአሁኑ የውሂብ ጎታ ስም {0} ነው። አዲስ የውሂብ
+    ጎታ ስም ለማዘጋጀት ከ 0 ሌላ ማንኛውንም ነገር ይተይቡ ወይም ወደ ኋላ ለመመለስ 0 ይይቡ።
+  wwcConfigConversationPostgresOptionalArgsInput: 'የአሁኑ አማራጭ የፖስትግሬስክል ክርክሮች የሚከተሉት
+    ናቸው: {0}። በኮማ የተለዩ ክርክቶችን ይይቡ (ቁልፍ = ዋጋ፣ ቁል2 = ዋጋ 2)፣ ወይም አሁን ያሉትን አርጎች ለማጥፋት
+    ግልጽ ይይቡ ወይም ወደ ኋላ ለመመለስ 0 ይይቡ።'
+  wwcConfigGUITogglePostgresSSLButton: ፖስትግሬስኤል ኤስኤስኤልን ይቀ
+  wwcConfigGUIPostgresDatabaseNameButton: የፖስትግሬስክል የውሂብ ጎታ
+  wwcConfigConversationPostgresUsernameSuccess: የPostgreSQL የተጠቃሚ ስም በተሳካ ሁኔታ ቀይሯል።
+  wwcConfigGUIStorageTypeSettings: '{0} ውቅር'
 

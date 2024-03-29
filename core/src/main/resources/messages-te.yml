@@ -317,7 +317,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL సెట్టింగులను మార్చండి
   wwcConfigConversationWatsonTranslateToggleSuccess: విజయవంతంగా వాట్సన్ ట్రాన్స్లేట్
     toggled. మార్పు అమలులోకి రావడానికి రీలోడ్ చేయండి.
-  wwcConfigGUISQLSettings: SQL ఆకృతీకరణ
   wwcConfigGUIToggleGoogleTranslateButton: Google Translate టోగుల్
   wwcConfigGUIToggleWatsonTranslateButton: వాట్సన్ అనువదించు టోగుల్
   wwcConfigGUIToggleAmazonTranslateButton: అమెజాన్ అనువదించు టోగుల్
@@ -380,7 +379,6 @@ Messages:
   libreHttpUnknown: 'తెలియని http దోషం: {0}'
   wwcConfigGUILibreTranslateURLButton: మార్చు ఉచిత అనువదించు URL
   wwcConfigConnectionFail: '{0} కి కనెక్ట్ చేయడంలో విఫలమైంది.'
-  wwcConfigGUIMongoSettings: MongoDB ఆకృతీకరణ
   wwcConfigConversationMongoDatabaseNameSuccess: మొంగోడిబి డేటాబేస్ పేరును విజయవంతంగా
     మార్చారు.
   wwcConfigGUIMongoHostnameButton: MongoDB హోస్ట్ పేరు మార్చండి
@@ -524,4 +522,49 @@ Messages:
     మీకు ఉంటే, ఆదేశం: {0}'
   wwcNewSqlConvertFail: మార్పిడి విఫలమైంది... దయచేసి మీరు చేసిన బ్యాకప్ నుండి మీ పట్టికలను
     పునరుద్ధరించండి. వరల్డ్వైడ్క్యాట్ను నిలిపివేయడం...
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL డేటాబేస్ పేరును విజయవంతంగా
+    మార్చబడింది.
+  wwcConfigConversationPostgresOptionalArgsCleared: ఐచ్ఛిక వాదనలు విజయవంతంగా క్లియర్
+    చేయబడ్డాయి.
+  wwcConfigConversationPostgresPortInput: ప్రస్తుత పోర్ట్ {0}. క్రొత్త పోర్ట్ను సెట్
+    చేయడానికి 0 కంటే ఇతర ఏదైనా టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL వినియోగదారు పేరును మార్చండి
+  wwcConfigConversationPostgresOptionalArgsSuccess: ఐచ్ఛిక PostgreSQL వాదనలను విజయవంతంగా
+    మార్చబడింది.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL కోసం SSL విజయవంతంగా టోగ్
+    చేయబడింది.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL పాస్వర్డ్ను విజయవంతంగా
+    మార్చబడింది.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL పోర్ట్ను విజయవంతంగా మార్చబడింది.
+  wwcConfigConversationPostgresUsernameInput: ప్రస్తుత వినియోగదారు పేరు {0}. క్రొత్త
+    వినియోగదారు పేరును సెట్ చేయడానికి 0 కాకుండా ఏదైనా టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి
+    0 అని టైప్ చేయండి.
+  wwcConfigConversationTogglePostgresSuccess: పోస్ట్గ్రెస్క్యూఎల్ విజయవంతంగా టోగల్
+    చేయబడింది. మార్పు అమలులోకి రావడానికి రీలోడ్ చేయండి.
+  wwcConfigGUITogglePostgresButton: పోస్ట్గ్రెస్క్యూఎల్ ను టోగుల్ చేయండి
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL పాస్వర్డ్ను మార్చండి
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL ఐచ్ఛిక వాదనలను మార్చండి
+  wwcConfigGUIPostgresMenuButton: PostgreSQL సెట్టింగులను మార్చండి
+  wwcConfigConversationPostgresPasswordInput: ప్రస్తుత పాస్వర్డ్ {0}. క్రొత్త పాస్వర్డ్ను
+    సెట్ చేయడానికి 0 కాకుండా ఏదైనా టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్
+    చేయండి.
+  wwcConfigConversationPostgresHostnameInput: ప్రస్తుత హోస్ట్ పేరు {0}. క్రొత్త హోస్ట్పేరును
+    సెట్ చేయడానికి 0 కాకుండా ఏదైనా టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్
+    చేయండి.
+  wwcConfigGUIPostgresPortButton: పోస్ట్గ్రెస్క్యూఎల్ పోర్ట్ను మార్చండి
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL హోస్ట్ పేరును విజయవంతంగా
+    మార్చబడింది.
+  wwcConfigGUIPostgresHostnameButton: పోస్ట్గ్రెస్క్యూఎల్ హోస్ట్ పేరును మార్చండి
+  wwcConfigConversationPostgresDatabaseNameInput: ప్రస్తుత డేటాబేస్ పేరు {0}. క్రొత్త
+    డేటాబేస్ పేరును సెట్ చేయడానికి 0 కాకుండా ఏదైనా టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి
+    0 అని టైప్ చేయండి.
+  wwcConfigConversationPostgresOptionalArgsInput: 'ప్రస్తుత ఐచ్ఛిక PostgreSQL వాదనలు:
+    {0}. కామా ద్వారా వేరు చేసిన వాదనలను టైప్ చేయండి (కీ=విలువ, కీ2 = విలువ2), లేదా
+    ప్రస్తుత ఆర్గ్లను తుడిచివేయడానికి క్లియర్ అని టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి
+    0 అని టైప్ చేయండి.'
+  wwcConfigGUITogglePostgresSSLButton: పోస్ట్గ్రెస్క్యూఎల్ SSL ను టోగుల్ చేయండి
+  wwcConfigGUIPostgresDatabaseNameButton: పోస్ట్గ్రెస్క్యూ డేటాబేస్ను మార్చండి
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL వినియోగదారు పేరును విజయవంతంగా
+    మార్చబడింది.
+  wwcConfigGUIStorageTypeSettings: '{0} కాన్ఫిగరేషన్'
 

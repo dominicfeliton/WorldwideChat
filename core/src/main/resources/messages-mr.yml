@@ -320,7 +320,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL सेटिंग्ज बदला
   wwcConfigConversationWatsonTranslateToggleSuccess: यशस्वीरित्या टॉगल वॉटसन भाषांतर.
     बदल प्रभावी होण्यासाठी रीलोड करा.
-  wwcConfigGUISQLSettings: SQL संरचना
   wwcConfigGUIToggleGoogleTranslateButton: गूगल भाषांतर टॉगल करा
   wwcConfigGUIToggleWatsonTranslateButton: टॉगल वॉटसन भाषांतर
   wwcConfigGUIToggleAmazonTranslateButton: ऍमेझॉन भाषांतर टॉगल करा
@@ -382,7 +381,6 @@ Messages:
   libreHttpUnknown: 'अपरिचीत HTTP त्रुटी: {0}'
   wwcConfigGUILibreTranslateURLButton: विनामूल्य भाषांतर URL बदला
   wwcConfigConnectionFail: '{0} शी कनेक्ट करण्यास अपयशी.'
-  wwcConfigGUIMongoSettings: मोंगोडीबी कॉन्फिगरेशन
   wwcConfigConversationMongoDatabaseNameSuccess: मोंगोडीबी डेटाबेस नाव यशस्वीरित्या
     बदलले.
   wwcConfigGUIMongoHostnameButton: मोंगोडीबी होस्टनाव बदला
@@ -514,4 +512,41 @@ Messages:
     बॅकअप बॅकअप बन आपल्याकडे असल्यास, कमांड आहे: {0}'
   wwcNewSqlConvertFail: रूपांतरण अयशस्वी... कृपया आपण तयार केलेल्या बॅकअप वर्ल्डविडचॅट
     अक्षम करणे...
+  wwcConfigConversationPostgresDatabaseNameSuccess: पोस्टग्रीएसक्यूएल डेटाबेस नाव
+    यश
+  wwcConfigConversationPostgresOptionalArgsCleared: पर्यायी युक्तिशाली साफ
+  wwcConfigConversationPostgresPortInput: वर्तमान पोर्ट {0} आहे. नवीन पोर्ट सेट करण्यासाठी
+    0 व्यतिरिक्त काहीही टाइप करा किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigGUIPostgresUsernameButton: पोस्टग्रेसक्यूएल वापरकर्ता
+  wwcConfigConversationPostgresOptionalArgsSuccess: पर्यायी पोस्टग्रीएसक्यूएल युक्तिशाली
+  wwcConfigConversationTogglePostgresSSLSuccess: पोस्टग्रेसक्यूएलसाठी SSL यशस्वीरित्या
+    टॉग
+  wwcConfigConversationPostgresPasswordSuccess: पोस्टग्रेसक्यूएल पासवर्ड यशस्वीरित
+  wwcConfigConversationPostgresPortSuccess: यशस्वीरित्या पोस्टग्रीएसीएल पोर्ट
+  wwcConfigConversationPostgresUsernameInput: सध्याचे वापरकर्तानाव {0} आहे. नवीन वापरकर्तानाव
+    सेट करण्यासाठी 0 व्यतिरिक्त काही टाइप करा किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationTogglePostgresSuccess: पोस्टग्रीएसक्यूएल यशस्वीरित्या बदल प्रभावी
+    होण्यासाठी रीलोड करा.
+  wwcConfigGUITogglePostgresButton: पोस्टग्रीक्यूएल टॉगल करा
+  wwcConfigGUIPostgresPasswordButton: पोस्टग्रेसक्यूएल पासवर्ड
+  wwcConfigGUIPostgresOptionalArgsButton: पोस्टग्रीक्यूएल पर्यायी आर्ग
+  wwcConfigGUIPostgresMenuButton: पोस्टग्रीएसीएल सेटिंग्ज
+  wwcConfigConversationPostgresPasswordInput: सध्याचा संकेतशब्द {0} आहे. नवीन पासवर्ड
+    सेट करण्यासाठी 0 व्यतिरिक्त काहीही टाइप करा किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationPostgresHostnameInput: सध्याचे होस्टनाव {0} आहे. नवीन होस्टनाव
+    सेट करण्यासाठी 0 व्यतिरिक्त काहीही टाइप करा किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigGUIPostgresPortButton: पोस्टग्रेसक्यूएल पोर्ट
+  wwcConfigConversationPostgresHostnameSuccess: पोस्टग्रीएसक्यूएल होस्टनाव यशस्वीरित्या
+  wwcConfigGUIPostgresHostnameButton: पोस्टग्रीएसक्यूएल होस्ट नाव
+  wwcConfigConversationPostgresDatabaseNameInput: सध्याचे डेटाबेस नाव {0} आहे. नवीन
+    डेटाबेस नाव सेट करण्यासाठी 0 व्यतिरिक्त काही टाइप करा किंवा परत जाण्यासाठी 0 टाइप
+    करा
+  wwcConfigConversationPostgresOptionalArgsInput: 'वर्तमान पर्यायी पोस्टग्रीएसक्यूएल
+    युक्तिवाद आहेत: {0} अल्कोमाने वेगळे केलेले आर्ग्युमेंट टाइप करा (की=मूल्य, की2
+    = मूल्य 2) किंवा वर्तमान आर्ग पुसण्यासाठी क्लीर टाइप करा किंवा परत जाण्यासाठी
+    0 टाइप करा'
+  wwcConfigGUITogglePostgresSSLButton: पोस्टग्रेसक्यूएल एसएसएल
+  wwcConfigGUIPostgresDatabaseNameButton: पोस्टग्रीएसक्यूएल डेट
+  wwcConfigConversationPostgresUsernameSuccess: पोस्टग्रीएसक्यूएल वापरकर्तानाव यशस्व
+  wwcConfigGUIStorageTypeSettings: '{0} संरचना'
 

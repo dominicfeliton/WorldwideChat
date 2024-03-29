@@ -283,7 +283,6 @@ Messages:
   wwcConfigYAMLDefault: ผิดนัดที่ YAML สำหรับการจัดเก็บข้อมูล
   wwcConfigGUISQLMenuButton: เปลี่ยนการตั้งค่า SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: ประสบความสำเร็จในการเปลี่ยนวัตสันแปลภาษาโหลดใหม่สำหรับการเปลี่ยนแปลงที่มีผล
-  wwcConfigGUISQLSettings: การกำหนดค่า SQL
   wwcConfigGUIToggleGoogleTranslateButton: สลับ กูเกิ้ล แปลภาษา
   wwcConfigGUIToggleWatsonTranslateButton: สลับวัตสันแปล
   wwcConfigGUIToggleAmazonTranslateButton: สลับอเมซอนแปล
@@ -339,7 +338,6 @@ Messages:
   libreHttpUnknown: 'ไม่ทราบข้อผิดพลาด http: {0}'
   wwcConfigGUILibreTranslateURLButton: เปลี่ยน URL แปลภาษา Libre
   wwcConfigConnectionFail: ล้มเหลวในการเชื่อมต่อกับ {0}
-  wwcConfigGUIMongoSettings: MongoDB การกำหนดค่า
   wwcConfigConversationMongoDatabaseNameSuccess: ประสบความสำเร็จในการเปลี่ยนชื่อฐานข้อมูล
     MongoDB
   wwcConfigGUIMongoHostnameButton: เปลี่ยนชื่อโฮสต์ MongoDB
@@ -461,4 +459,38 @@ Messages:
     คำสั่งคือ: {0}'
   wwcNewSqlConvertFail: การแปลงล้มเหลว... โปรดกู้คืนตารางของคุณจากการสำรองข้อมูลที่คุณทำการปิดใช้งาน
     WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: เปลี่ยนชื่อฐานข้อมูล PostgreSQL
+    สำเร็จแล้ว
+  wwcConfigConversationPostgresOptionalArgsCleared: ล้างอาร์กิวเมนต์เสริมเรียบร้อยแล้ว
+  wwcConfigConversationPostgresPortInput: พอร์ตปัจจุบันคือ {0}พิมพ์สิ่งอื่นนอกเหนือจาก
+    0 เพื่อตั้งค่าพอร์ตใหม่ หรือพิมพ์ 0 เพื่อกลับไป
+  wwcConfigGUIPostgresUsernameButton: เปลี่ยนชื่อผู้ใช้ PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: เปลี่ยนอาร์กิวเมนต์ PostgreSQL
+    ที่เป็นทางเลือกเรียบร้อยแล้ว
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL สำหรับ PostgreSQL สลับได้สำเร็จ
+  wwcConfigConversationPostgresPasswordSuccess: เปลี่ยนรหัสผ่าน PostgreSQL สำเร็จแล้ว
+  wwcConfigConversationPostgresPortSuccess: เปลี่ยนพอร์ต PostgreSQL สำเร็จแล้ว
+  wwcConfigConversationPostgresUsernameInput: ชื่อผู้ใช้ปัจจุบันคือ {0}พิมพ์สิ่งอื่นนอกเหนือจาก
+    0 เพื่อตั้งค่าชื่อผู้ใช้ใหม่ หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL สลับได้สำเร็จโหลดใหม่เพื่อให้การเปลี่ยนแปลงมีผล
+  wwcConfigGUITogglePostgresButton: สลับไปรษณีย์ PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: เปลี่ยนรหัสผ่าน PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: เปลี่ยนอาร์กิวเมนต์เสริม PostgreSQL
+  wwcConfigGUIPostgresMenuButton: เปลี่ยนการตั้งค่า PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: รหัสผ่านปัจจุบันคือ {0}พิมพ์สิ่งอื่นนอกเหนือจาก
+    0 เพื่อตั้งรหัสผ่านใหม่ หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigConversationPostgresHostnameInput: ชื่อโฮสต์ปัจจุบันคือ {0}พิมพ์สิ่งอื่นนอกเหนือจาก
+    0 เพื่อตั้งค่าชื่อโฮสต์ใหม่ หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigGUIPostgresPortButton: เปลี่ยนพอร์ต PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: เปลี่ยนชื่อโฮสต์ PostgreSQL สำเร็จแล้ว
+  wwcConfigGUIPostgresHostnameButton: เปลี่ยนชื่อโฮสต์ PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: ชื่อฐานข้อมูลปัจจุบันคือ {0}พิมพ์สิ่งอื่นนอกเหนือจาก
+    0 เพื่อตั้งค่าชื่อฐานข้อมูลใหม่ หรือพิมพ์ 0 เพื่อย้อนกลับ
+  wwcConfigConversationPostgresOptionalArgsInput: 'อาร์กิวเมนต์ PostgreSQL ที่เป็นทางเลือกปัจจุบันคือ:
+    {0}พิมพ์อาร์กิวเมนต์ที่คั่นด้วยเครื่องหมายจุลภาค (key=value, key2=value2) หรือพิมพ์clear
+    เพื่อลบ args ปัจจุบัน หรือพิมพ์ 0 เพื่อย้อนกลับ'
+  wwcConfigGUITogglePostgresSSLButton: สลับการใช้งาน PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: เปลี่ยนฐานข้อมูล PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: เปลี่ยนชื่อผู้ใช้ PostgreSQL สำเร็จแล้ว
+  wwcConfigGUIStorageTypeSettings: '{0} การกำหนดค่า'
 

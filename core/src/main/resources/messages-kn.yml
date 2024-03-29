@@ -325,7 +325,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಬದಲಾಯಿಸಿ
   wwcConfigConversationWatsonTranslateToggleSuccess: ವ್ಯಾಟ್ಸನ್ ಭಾಷಾಂತರಿಸಲು ಯಶಸ್ವಿಯಾಗಿ
     toggled. ಬದಲಾವಣೆಗೆ ಮರುಲೋಡ್ ಮಾಡಿ.
-  wwcConfigGUISQLSettings: SQL ಸಂರಚನೆ
   wwcConfigGUIToggleGoogleTranslateButton: ಗೂಗಲ್ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
   wwcConfigGUIToggleWatsonTranslateButton: ವ್ಯಾಟ್ಸನ್ ಅನುವಾದವನ್ನು ಟಾಗಲ್ ಮಾಡಿ
   wwcConfigGUIToggleAmazonTranslateButton: ಅಮೆಜಾನ್ ಭಾಷಾಂತರಿಸಲು ಟಾಗಲ್
@@ -388,7 +387,6 @@ Messages:
   libreHttpUnknown: 'ಗೊತ್ತಿಲ್ಲದ http ದೋಷ: {0}'
   wwcConfigGUILibreTranslateURLButton: ಉಚಿತ ಭಾಷಾಂತರಿಸಿ URL ಅನ್ನು ಬದಲಾಯಿಸಿ
   wwcConfigConnectionFail: '{0} ಗೆ ಸಂಪರ್ಕ ಕಲ್ಪಿಸುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ.'
-  wwcConfigGUIMongoSettings: ಮೊಂಗೊಡಿಬಿ ಸಂ
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB ಡೇಟಾಬೇಸ್ ಹೆಸರನ್ನು ಯಶಸ್ವಿಯಾಗಿ
     ಬದಲಾಯಿಸಲಾಗಿದೆ.
   wwcConfigGUIMongoHostnameButton: MongoDB ಹೋಸ್ಟ್ಹೆಸರನ್ನು ಬದಲಾಯಿಸಿ
@@ -531,4 +529,48 @@ Messages:
     ನೀವು ಹೊಂದಿದ್ದರೆ, ಆಜ್ಞೆಯು ಹೀಗಿದೆ: {0}'
   wwcNewSqlConvertFail: ಪರಿವರ್ತನೆ ವಿಫಲವಾಗಿದೆ... ದಯವಿಟ್ಟು ನೀವು ಮಾಡಿದ ಬ್ಯಾಕ್ಅಪ್ನಿಂದ
     ನಿಮ್ಮ ಕೋಷ್ಟಕಗಳನ್ನು ಮರುಸ್ಥಾಪಿಸಿ. ವರ್ಲ್ಡ್ವೈಡೆಚಾಟ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗುತ್ತಿದೆ...
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL ಡೇಟಾಬೇಸ್ ಹೆಸರನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigConversationPostgresOptionalArgsCleared: ಐಚ್ಛಿಕ ವಾದಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ತೆರವುಗೊಳಿಸಲಾಗಿದೆ
+  wwcConfigConversationPostgresPortInput: ಪ್ರಸ್ತುತ ಬಂದರು {0} ಆಗಿದೆ. ಹೊಸ ಪೋರ್ಟ್ ಹೊಂದಿಸಲು
+    0 ಹೊರತುಪಡಿಸಿ ಯಾವುದನ್ನಾದರೂ ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIPostgresUsernameButton: ಪೋಸ್ಟ್ಗ್ರೆಸ್ಕ್ಯೂಎಲ್ ಬಳಕೆದಾರಹೆಸರು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationPostgresOptionalArgsSuccess: ಐಚ್ಛಿಕ PostgreSQL ವಾದಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL ಗಾಗಿ ಎಸ್ಎಸ್ಎಲ್ ಯಶಸ್ವಿಯಾಗಿ
+    ಟ್ಯಾಗ್ ಮಾಡಲಾಗಿದೆ.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL ಪೋರ್ಟ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigConversationPostgresUsernameInput: ಪ್ರಸ್ತುತ ಬಳಕೆದಾರ ಹೆಸರು {0} ಆಗಿದೆ. ಹೊಸ
+    ಬಳಕೆದಾರಹೆಸರು ಹೊಂದಿಸಲು 0 ಹೊರತುಪಡಿಸಿ ಯಾವುದನ್ನಾದರೂ ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು
+    0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationTogglePostgresSuccess: ಪೋಸ್ಟ್ಗ್ರೆಸ್ಕ್ಯೂಎಲ್ ಯಶಸ್ವಿಯಾಗಿ ಟಾಗ್
+    ಮಾಡಲಾಗಿದೆ. ಬದಲಾವಣೆಯು ಜಾರಿಗೆ ಬರಲು ರೀಲೋಡ್ ಮಾಡಿ.
+  wwcConfigGUITogglePostgresButton: ಪೋಸ್ಟ್ಗ್ರೆಸ್ಕ್ಯೂಎಲ್ ಅನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL ಪಾಸ್ವರ್ಡ್ ಬದಲಾಯಿಸಿ
+  wwcConfigGUIPostgresOptionalArgsButton: ಪೋಸ್ಟ್ಗ್ರೆಸ್ಕ್ಯೂಎಲ್ ಐಚ್ಛಿಕ ವಾದಗಳನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigGUIPostgresMenuButton: PostgreSQL ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationPostgresPasswordInput: ಪ್ರಸ್ತುತ ಪಾಸ್ವರ್ಡ್ {0} ಆಗಿದೆ. ಹೊಸ ಪಾಸ್ವರ್ಡ್
+    ಹೊಂದಿಸಲು 0 ಹೊರತುಪಡಿಸಿ ಯಾವುದನ್ನಾದರೂ ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್
+    ಮಾಡಿ.
+  wwcConfigConversationPostgresHostnameInput: ಪ್ರಸ್ತುತ ಹೋಸ್ಟ್ ಹೆಸರು {0} ಆಗಿದೆ. ಹೊಸ
+    ಹೋಸ್ಟ್ಹೆಸರನ್ನು ಹೊಂದಿಸಲು 0 ಹೊರತುಪಡಿಸಿ ಯಾವುದನ್ನಾದರೂ ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು
+    0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigGUIPostgresPortButton: ಪೋಸ್ಟ್ಗ್ರೆಸ್ಕ್ಯೂಎಲ್ ಪೋರ್ಟ್ ಬದಲಾಯಿಸಿ
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL ಹೋಸ್ಟ್ ಹೆಸರನ್ನು ಯಶಸ್ವಿಯಾಗಿ
+    ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigGUIPostgresHostnameButton: ಪೋಸ್ಟ್ಗ್ರೆಸ್ಕ್ಯೂಎಲ್ ಹೋಸ್ಟ್ ಹೆಸರನ್ನು ಬದಲಾಯಿಸಿ
+  wwcConfigConversationPostgresDatabaseNameInput: ಪ್ರಸ್ತುತ ಡೇಟಾಬೇಸ್ ಹೆಸರು {0} ಆಗಿದೆ.
+    ಹೊಸ ಡೇಟಾಬೇಸ್ ಹೆಸರನ್ನು ಹೊಂದಿಸಲು 0 ಹೊರತುಪಡಿಸಿ ಯಾವುದನ್ನಾದರೂ ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ
+    ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationPostgresOptionalArgsInput: 'ಪ್ರಸ್ತುತ ಐಚ್ಛಿಕ ಪೋಸ್ಟ್ಗ್ರೆಸ್ಕ್ಯೂಎಲ್
+    ವಾದಗಳು ಹೀಗಿವೆ: {0}. ಅಲ್ಪವಿರಾಮದಿಂದ ಬೇರ್ಪಡಿಸಿದ ಆರ್ಗ್ಯುಮೆಂಟ್ಗಳನ್ನು ಟೈಪ್ ಮಾಡಿ (ಕೀ=ಮೌಲ್ಯ,
+    ಕೀ2=ಮೌಲ್ಯ2), ಅಥವಾ ಪ್ರಸ್ತುತ ಆರ್ಗ್ಗಳನ್ನು ತೊಡೆದುಹಾಕಲು ಕ್ಲಿಯರ್ ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂದಕ್ಕೆ
+    ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.'
+  wwcConfigGUITogglePostgresSSLButton: ಪೋಸ್ಟ್ಗ್ರೆಸ್ಕ್ಯೂಎಲ್ ಎಸ್ಎಸ್ಎಲ್ ಅನ್ನು ಟಾಗಲ್ ಮಾಡಿ
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL ಡೇಟಾಬೇಸ್ ಬದಲಾಯಿಸಿ
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL ಬಳಕೆದಾರಹೆಸರು ಯಶಸ್ವಿಯಾಗಿ
+    ಬದಲಾಯಿಸಲಾಗಿದೆ.
+  wwcConfigGUIStorageTypeSettings: '{0} ಸಂರಚನೆ'
 

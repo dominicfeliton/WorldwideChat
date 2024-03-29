@@ -319,7 +319,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Změna nastavení SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Úspěšně přepnout Watson Translate.
     Znovu načtěte, aby se změna projevila.
-  wwcConfigGUISQLSettings: Konfigurace SQL
   wwcConfigGUIToggleGoogleTranslateButton: Přepnout Překladač Google
   wwcConfigGUIToggleWatsonTranslateButton: Přepnout Watson Přeložit
   wwcConfigGUIToggleAmazonTranslateButton: Přepnout Amazon Přeložit
@@ -383,7 +382,6 @@ Messages:
   libreHttpUnknown: 'Neznámá chyba http: {0}'
   wwcConfigGUILibreTranslateURLButton: Změnit zdarma Přeložit URL
   wwcConfigConnectionFail: Připojení k {0} se nezdařilo.
-  wwcConfigGUIMongoSettings: Konfigurace MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Úspěšně změnil název databáze MongoDB.
   wwcConfigGUIMongoHostnameButton: Změnit název hostitele MongoDB
   wwcConfigConversationMongoPasswordInput: Aktuální heslo je {0}. Zadejte něco jiného
@@ -520,4 +518,45 @@ Messages:
   wwcOldSqlStructRecords: 'Vaše databáze SQL má neefektivní nastavení tabulky záznamů
     přehrávače z předchozí verze WorldwideChat. Chcete-li tento problém vyřešit, můžete
     spustit následující příkaz: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Úspěšně změnil název databáze
+    PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Volitelné argumenty byly úspěšně
+    vymazány.
+  wwcConfigConversationPostgresPortInput: Aktuální port je {0}. Zadejte cokoli jiného
+    než 0, chcete-li nastavit nový port, nebo zadejte 0 pro návrat zpět.
+  wwcConfigGUIPostgresUsernameButton: Změnit uživatelské jméno PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Úspěšně změnili volitelné argumenty
+    PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL pro PostgreSQL se úspěšně přepnul.
+  wwcConfigConversationPostgresPasswordSuccess: Úspěšně změněno heslo PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Úspěšně změnil port PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Aktuální uživatelské jméno je {0}. Zadejte
+    cokoli jiného než 0 pro nastavení nového uživatelského jména, nebo zadejte 0 pro
+    návrat zpět.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL se úspěšně přepnul. Znovu
+    načtěte, aby se změna projevila.
+  wwcConfigGUITogglePostgresButton: Přepnout PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Změna hesla PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Změna volitelných argumentů PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Změna nastavení PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Aktuální heslo je {0}. Zadejte cokoli
+    jiného než 0, chcete-li nastavit nové heslo, nebo zadejte 0 pro návrat zpět.
+  wwcConfigConversationPostgresHostnameInput: Aktuální název hostitele je {0}. Zadejte
+    cokoli jiného než 0, chcete-li nastavit nový název hostitele, nebo zadejte 0 pro
+    návrat zpět.
+  wwcConfigGUIPostgresPortButton: Změna portu PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Úspěšně změnil název hostitele PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Změna názvu hostitele PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Aktuální název databáze je {0}.
+    Zadejte cokoli jiného než 0, chcete-li nastavit nový název databáze, nebo zadejte
+    0 pro návrat zpět.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Aktuální volitelné argumenty PostgreSQL
+    jsou: {0}. Zadejte argumenty oddělené čárkou (klíč=hodnota, klíč2=hodnota2), nebo
+    zadejte clear, chcete-li vymazat aktuální argumenty, nebo zadejte 0 pro návrat
+    zpět.'
+  wwcConfigGUITogglePostgresSSLButton: Přepnout PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Změnit databázi PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Úspěšně změněno uživatelské jméno
+    PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfigurace'
 

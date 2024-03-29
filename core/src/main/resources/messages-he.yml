@@ -287,7 +287,6 @@ Messages:
   wwcConfigGUISQLMenuButton: שינוי הגדרות SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: בהצלחה לעבור ווטסון לתרגם. רענן
     כדי שהשינוי ייכנס לתוקף.
-  wwcConfigGUISQLSettings: תצורת SQL
   wwcConfigGUIToggleGoogleTranslateButton: החלפת גוגל תרגם
   wwcConfigGUIToggleWatsonTranslateButton: החלפת ווטסון תרגם
   wwcConfigGUIToggleAmazonTranslateButton: לעבור אמזון לתרגם
@@ -346,7 +345,6 @@ Messages:
   libreHttpUnknown: 'שגיאת HTTP לא ידועה: {0}'
   wwcConfigGUILibreTranslateURLButton: שינוי חינם תרגם את כתובת האתר
   wwcConfigConnectionFail: ההתחברות אל {0} נכשלה.
-  wwcConfigGUIMongoSettings: תצורת MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: שינה בהצלחה את שם מסד הנתונים MongoDB.
   wwcConfigGUIMongoHostnameButton: שינוי שם מארח MongoDB
   wwcConfigConversationMongoPasswordInput: הסיסמה הנוכחית היא {0}. הקלד כל דבר אחר
@@ -472,4 +470,39 @@ Messages:
   wwcOldSqlStructRecords: 'למסד הנתונים של SQL שלך יש הגדרת טבלת רשומות נגן לא יעילה
     מגירסה קודמת של WorldwideChat. באפשרותך להפעיל את הפקודה הבאה כדי לתקן בעיה זו:
     /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: שינתה בהצלחה את שם מסד הנתונים
+    של PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: ארגומנטים אופציונליים נמחקו בהצלחה.
+  wwcConfigConversationPostgresPortInput: היציאה הנוכחית היא {0}. הקלד כל דבר מלבד
+    0 כדי להגדיר יציאה חדשה, או הקלד 0 כדי לחזור.
+  wwcConfigGUIPostgresUsernameButton: שנה את שם המשתמש של PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: שינתה בהצלחה את הארגומנטים האופציונליים
+    של PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL עבור PostgreSQL הוחלף בהצלחה.
+  wwcConfigConversationPostgresPasswordSuccess: שינתה בהצלחה את סיסמת PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: שינה בהצלחה את יציאת PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: שם המשתמש הנוכחי הוא {0}. הקלד כל דבר
+    מלבד 0 כדי להגדיר שם משתמש חדש, או הקלד 0 כדי לחזור.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL הוחלף בהצלחה. טען מחדש כדי
+    שהשינוי ייכנס לתוקף.
+  wwcConfigGUITogglePostgresButton: החלף את PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: שינוי סיסמת PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: שינוי ארגומנטים אופציונליים של PostgreSQL
+  wwcConfigGUIPostgresMenuButton: שינוי הגדרות PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: הסיסמה הנוכחית היא {0}. הקלד כל דבר
+    מלבד 0 כדי להגדיר סיסמה חדשה, או הקלד 0 כדי לחזור אחורה.
+  wwcConfigConversationPostgresHostnameInput: שם המארח הנוכחי הוא {0}. הקלד כל דבר
+    מלבד 0 כדי להגדיר שם מארח חדש, או הקלד 0 כדי לחזור.
+  wwcConfigGUIPostgresPortButton: שינוי יציאת PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: שינה בהצלחה את שם המארח של PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: שנה את שם המארח של PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: שם מסד הנתונים הנוכחי הוא {0}. הקלד
+    כל דבר אחר מלבד 0 כדי להגדיר שם מסד נתונים חדש, או הקלד 0 כדי לחזור אחורה.
+  wwcConfigConversationPostgresOptionalArgsInput: 'הארגומנטים האופציונליים הנוכחיים
+    של PostgreSQL הם: {0}. הקלד ארגומנטים המופרדים בפסיק (key=value, key2=value2),
+    או הקלד clear כדי למחוק את הארגומנטים הנוכחיים, או הקלד 0 כדי לחזור אחורה.'
+  wwcConfigGUITogglePostgresSSLButton: החלף את ה- SSL של PostgreSQL
+  wwcConfigGUIPostgresDatabaseNameButton: שינוי מסד הנתונים של PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: שינתה בהצלחה את שם המשתמש של PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} תצורה'
 

@@ -319,7 +319,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL ਸੈਟਿੰਗ ਬਦਲੋ
   wwcConfigConversationWatsonTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਕ ਬਦਲੋ ਵਾਟਸਨ ਦਾ ਅਨੁਵਾਦ.
     ਪ੍ਰਭਾਵ ਨੂੰ ਲੈਣ ਲਈ ਤਬਦੀਲੀ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
-  wwcConfigGUISQLSettings: SQL ਸੰਰਚਨਾ
   wwcConfigGUIToggleGoogleTranslateButton: ਬਦਲੋ ਗੂਗਲ ਅਨੁਵਾਦ
   wwcConfigGUIToggleWatsonTranslateButton: ਬਦਲੋ ਵਾਟਸਨ ਦਾ ਅਨੁਵਾਦ ਕਰੋ।
   wwcConfigGUIToggleAmazonTranslateButton: ਬਦਲੋ ਐਮਾਜ਼ਾਨ ਦਾ ਅਨੁਵਾਦ ਕਰੋ
@@ -383,7 +382,6 @@ Messages:
   libreHttpUnknown: 'ਅਣਜਾਣ http ਗਲਤੀ: {0}'
   wwcConfigGUILibreTranslateURLButton: Libre ਅਨੁਵਾਦ URL ਨੂੰ ਬਦਲੋ
   wwcConfigConnectionFail: '{0} ਨਾਲ ਜੁੜਨ ਵਿੱਚ ਅਸਫਲ।'
-  wwcConfigGUIMongoSettings: ਮੰਗੋਡੀਬੀ ਕੌਨਫਿਗਰੇਸ਼ਨ
   wwcConfigConversationMongoDatabaseNameSuccess: ਮੰਗੋਡੀਬੀ ਡੇਟਾਬੇਸ ਨਾਮ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ
     ਬਦਲਿਆ.
   wwcConfigGUIMongoHostnameButton: ਮੰਗੋਡੀਬੀ ਹੋਸਟ-ਨਾਮ ਬਦਲੋ
@@ -523,4 +521,42 @@ Messages:
     ਕਮਾਂਡ ਹੈ: {0}'
   wwcNewSqlConvertFail: ਪਰਿਵਰਤਨ ਅਸਫਲ ਰਿਹਾ... ਕਿਰਪਾ ਕਰਕੇ ਤੁਹਾਡੇ ਦੁਆਰਾ ਬਣਾਏ ਬੈਕਅੱਪ ਤੋਂ
     ਆਪਣੀਆਂ ਟੇਬਲ ਰੀਸਟੋਰ ਕਰੋ ਵਰਲਡਵਾਈਡਚੈਟ ਨੂੰ ਅਸਮਰੱਥ ਬਣਾਉਣਾ...
+  wwcConfigConversationPostgresDatabaseNameSuccess: ਸਫਲਤਾਪੂਰਵਕ PostgreSQL ਡੇਟਾਬੇਸ
+    ਨਾਮ ਬਦਲਿਆ.
+  wwcConfigConversationPostgresOptionalArgsCleared: ਅਖ਼ਤਿਆਰੀ ਦਲੀਲਾਂ ਸਫਲਤਾਪੂਰ
+  wwcConfigConversationPostgresPortInput: ਮੌਜੂਦਾ ਪੋਰਟ {0} ਹੈ। ਨਵਾਂ ਪੋਰਟ ਸੈਟ ਕਰਨ ਲਈ
+    0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUIPostgresUsernameButton: ਪੋਸਟਗਰੇਸਕਿਲ ਉਪਭੋਗਤਾ ਨਾਮ ਬਦਲੋ
+  wwcConfigConversationPostgresOptionalArgsSuccess: ਵਿਕਲਪਿਕ PostgreSQL ਦਲੀਲਾਂ ਨੂੰ
+    ਸਫਲਤਾਪੂਰਵਕ ਬਦਲਿਆ.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL ਲਈ ਐਸਐਸਐਲ ਸਫਲਤਾਪੂਰਵਕ ਟੌਗਲ
+    ਕੀਤਾ ਗਿਆ.
+  wwcConfigConversationPostgresPasswordSuccess: ਸਫਲਤਾਪੂਰਵਕ PostgreSQL ਪਾਸਵਰਡ ਬਦਲਿਆ.
+  wwcConfigConversationPostgresPortSuccess: ਸਫਲਤਾਪੂਰਵਕ PostgreSQL ਪੋਰਟ ਨੂੰ ਬਦਲਿਆ.
+  wwcConfigConversationPostgresUsernameInput: ਮੌਜੂਦਾ ਉਪਭੋਗਤਾ ਨਾਮ {0} ਹੈ। ਨਵਾਂ ਉਪਭੋਗਤਾ
+    ਨਾਮ ਸੈਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL ਸਫਲਤਾਪੂਰਵਕ ਟੌਗਲ ਕੀਤਾ ਗਿਆ.
+    ਤਬਦੀਲੀ ਨੂੰ ਪ੍ਰਭਾਵਤ ਕਰਨ ਲਈ ਦੁਬਾਰਾ ਲੋਡ ਕਰੋ.
+  wwcConfigGUITogglePostgresButton: ਪੋਸਟਗਰੇਸਕਯੂਐਲ ਨੂੰ ਟੌਗਲ ਕਰੋ
+  wwcConfigGUIPostgresPasswordButton: ਪੋਸਟਗਰੇਸਕਿਲ ਪਾਸਵਰਡ ਬਦਲੋ
+  wwcConfigGUIPostgresOptionalArgsButton: ਪੋਸਟਗਰੇਸਕਿਲ ਵਿਕਲਪਿਕ ਦਲੀਲਾਂ ਬਦਲੋ
+  wwcConfigGUIPostgresMenuButton: ਪੋਸਟਗਰੇਸਕਿਲ ਸੈਟਿੰਗਜ਼ ਬਦਲੋ
+  wwcConfigConversationPostgresPasswordInput: ਮੌਜੂਦਾ ਪਾਸਵਰਡ {0} ਹੈ। ਨਵਾਂ ਪਾਸਵਰਡ ਸੈਟ
+    ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationPostgresHostnameInput: ਮੌਜੂਦਾ ਹੋਸਟਨਾਮ {0} ਹੈ। ਨਵਾਂ ਹੋਸਟਨਾਮ
+    ਸੈਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUIPostgresPortButton: ਪੋਸਟਗਰੇਸਕਿਲ ਪੋਰਟ ਬਦਲੋ
+  wwcConfigConversationPostgresHostnameSuccess: ਸਫਲਤਾਪੂਰਵਕ PostgreSQL ਹੋਸਟਨਾਮ ਬਦਲਿਆ.
+  wwcConfigGUIPostgresHostnameButton: ਪੋਸਟਗਰੇਸਕਿਲ ਹੋਸਟਨਾਮ ਬਦਲੋ
+  wwcConfigConversationPostgresDatabaseNameInput: ਮੌਜੂਦਾ ਡੇਟਾਬੇਸ ਨਾਮ {0} ਹੈ। ਇੱਕ ਨਵਾਂ
+    ਡੇਟਾਬੇਸ ਨਾਮ ਸੈਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ
+    ਕਰੋ।
+  wwcConfigConversationPostgresOptionalArgsInput: 'ਮੌਜੂਦਾ ਵਿਕਲਪਿਕ ਪੋਸਟਗਰੇਸਕਿਲ ਦਲੀਲਾਂ
+    ਹਨ: {0}. ਕਾਮਾ ਦੁਆਰਾ ਵੱਖ ਕੀਤੀਆਂ ਦਲੀਲਾਂ ਟਾਈਪ ਕਰੋ (ਕੁੰਜੀ = ਮੁੱਲ, ਕੀ2 = ਮੁੱਲ 2), ਜਾਂ
+    ਮੌਜੂਦਾ ਆਰਗਸ ਨੂੰ ਪੂੰਝਣ ਲਈ ਕਲੀਅਰ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।'
+  wwcConfigGUITogglePostgresSSLButton: ਪੋਸਟਗਰੇਸਕੁਐਲ ਐਸਐਸਐਲ ਟੌਗਲ ਕਰੋ
+  wwcConfigGUIPostgresDatabaseNameButton: ਪੋਸਟਗਰੇਸਕਿਲ ਡਾਟਾਬੇਸ ਬਦਲੋ
+  wwcConfigConversationPostgresUsernameSuccess: ਸਫਲਤਾਪੂਰਵਕ PostgreSQL ਉਪਭੋਗਤਾ ਨਾਮ
+    ਬਦਲਿਆ.
+  wwcConfigGUIStorageTypeSettings: '{0} ਕੌਂਫਿਗਰੇਸ਼ਨ'
 

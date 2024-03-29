@@ -318,7 +318,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL პარამეტრების შეცვლა
   wwcConfigConversationWatsonTranslateToggleSuccess: წარმატებით toggled Watson თარგმნა.
     ცვლილებების შეცვლა ძალაში შედის.
-  wwcConfigGUISQLSettings: SQL კონფიგურაცია
   wwcConfigGUIToggleGoogleTranslateButton: Google Translate გადართვა
   wwcConfigGUIToggleWatsonTranslateButton: უოტსონის თარგმნის გადართვა
   wwcConfigGUIToggleAmazonTranslateButton: გადართვა Amazon თარგმნა
@@ -380,7 +379,6 @@ Messages:
   libreHttpUnknown: 'უცნობი http შეცდომა: {0}'
   wwcConfigGUILibreTranslateURLButton: შეცვლა უფასო თარგმნის URL
   wwcConfigConnectionFail: '{0}- სთან დაკავშირება ვერ მოხერხდა.'
-  wwcConfigGUIMongoSettings: MongoDB კონფიგურაცია
   wwcConfigConversationMongoDatabaseNameSuccess: წარმატებით შეიცვალა MongoDB მონაცემთა
     ბაზის სახელი.
   wwcConfigGUIMongoHostnameButton: შეცვალეთ MongoDB მასპინძლის სახელი
@@ -520,4 +518,47 @@ Messages:
   wwcOldSqlStructRecords: 'თქვენს SQL მონაცემთა ბაზას აქვს არაეფექტური მოთამაშის ჩანაწერების
     მაგიდის დაყენება WorldwideChat-ის წინა ვერსიიდან. ამ პრობლემის მოსაგვარებლად შეგიძლიათ
     გაუშვოთ შემდეგი ბრძანება: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: წარმატებით შეცვალა PostgreSQL
+    მონაცემთა ბაზის სახელი.
+  wwcConfigConversationPostgresOptionalArgsCleared: არასასურველი არგუმენტები წარმატებით
+  wwcConfigConversationPostgresPortInput: ამჟამინდელი პორტია {0}. ჩაწერეთ ნებისმიერი
+    სხვა რამ, გარდა 0-ისა ახალი პორტის დასაყენებლად, ან დაბრუნებისთვის აკრიფეთ 0.
+  wwcConfigGUIPostgresUsernameButton: შეცვალეთ PostgreSQL მომხმარებლის სახელი
+  wwcConfigConversationPostgresOptionalArgsSuccess: წარმატებით შეცვალა სურვილისამებრ
+    PostgreSQL არგუმენტები.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL PostgreSQL-ისთვის წარმატებით
+    ჩართულია.
+  wwcConfigConversationPostgresPasswordSuccess: წარმატებით შეცვალა PostgreSQL პაროლი.
+  wwcConfigConversationPostgresPortSuccess: წარმატებით შეცვალა PostgreSQL პორტი.
+  wwcConfigConversationPostgresUsernameInput: ამჟამინდელი მომხმარებლის სახელი არის
+    {0}. ჩაწერეთ ნებისმიერი სხვა რამ, გარდა 0-ისა ახალი მომხმარებლის სახლის დასაყენებლად,
+    ან დაბრუნებისთვის აკრიფეთ 0
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL წარმატებით შეიცვალა. გადატვირთეთ
+    ცვლილების ძალაში შესვლისთვის.
+  wwcConfigGUITogglePostgresButton: PostgreSQL— ის ჩართვა
+  wwcConfigGUIPostgresPasswordButton: შეცვალეთ PostgreSQL პაროლი
+  wwcConfigGUIPostgresOptionalArgsButton: შეცვალეთ PostgreSQL არჩევითი არგუმენტები
+  wwcConfigGUIPostgresMenuButton: შეცვალეთ PostgreSQL პარამეტრები
+  wwcConfigConversationPostgresPasswordInput: მიმდინარე პაროლი არის {0}. ახალი პაროლის
+    დასაყენებლად ჩაწერეთ ნებისმიერი სხვა რამ, გარდა 0-ისა, ან დაბრუნებისთვის აკრიფეთ
+    0.
+  wwcConfigConversationPostgresHostnameInput: ამჟამინდელი ჰოსტის სახელია {0}. ჩაწერეთ
+    ნებისმიერი სხვა რამ, გარდა 0-ისა, რომ დააყენოთ ახალი ჰოსტის სახელი, ან დაბრუნებისთვის
+    ჩაწერეთ 0.
+  wwcConfigGUIPostgresPortButton: შეცვალეთ PostgreSQL პორტი
+  wwcConfigConversationPostgresHostnameSuccess: წარმატებით შეცვალა PostgreSQL მასპინძლის
+    სახელი.
+  wwcConfigGUIPostgresHostnameButton: შეცვალეთ PostgreSQL ჰოსტის სახელი
+  wwcConfigConversationPostgresDatabaseNameInput: მონაცემთა ბაზის მიმდინარე სახელი
+    არის {0}. ჩაწერეთ 0-ის გარდა ნებისმიერი რამ, რომ დააყენოთ ახალი მონაცემთა ბაზის
+    სახელი, ან დაბრუნებისთვის ჩაწერეთ 0
+  wwcConfigConversationPostgresOptionalArgsInput: 'მიმდინარე არასავალდებულო PostgreSQL
+    არგუმენტებია: {0}. ჩაწერეთ არგუმენტები, რომლებიც გამოყოფილია ვედრით (key = value,
+    key2 = value2), ან ჩაწერეთ Clear მიმდინარე არგების გასაწმენდად, ან დაუკან დაბრუნებისთვის
+    ჩაწერეთ 0.'
+  wwcConfigGUITogglePostgresSSLButton: შეცვალეთ PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: შეცვალეთ PostgreSQL მონაცემთა ბაზა
+  wwcConfigConversationPostgresUsernameSuccess: წარმატებით შეცვალა PostgreSQL მომხმარებლის
+    სახელი.
+  wwcConfigGUIStorageTypeSettings: '{0} კონფიგურაცია'
 

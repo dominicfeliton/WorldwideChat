@@ -253,7 +253,6 @@ Messages:
   wwcConfigYAMLDefault: 默認為 YAML 進行數據存儲。
   wwcConfigGUISQLMenuButton: 更改 SQL 設置
   wwcConfigConversationWatsonTranslateToggleSuccess: 已成功切換沃森翻譯。重新加載以使更改生效。
-  wwcConfigGUISQLSettings: SQL 配置
   wwcConfigGUIToggleGoogleTranslateButton: 切換谷歌翻譯
   wwcConfigGUIToggleWatsonTranslateButton: 切換沃森翻譯
   wwcConfigGUIToggleAmazonTranslateButton: 切換亞馬遜翻譯
@@ -301,7 +300,6 @@ Messages:
   libreHttpUnknown: 未知的錯誤： {0}
   wwcConfigGUILibreTranslateURLButton: 更改免費翻譯網址
   wwcConfigConnectionFail: 無法連線至 {0}。
-  wwcConfigGUIMongoSettings: 蒙古數據庫配置
   wwcConfigConversationMongoDatabaseNameSuccess: 成功地更改了 MongoDB 的數據庫名稱。
   wwcConfigGUIMongoHostnameButton: 更改主機名稱
   wwcConfigConversationMongoPasswordInput: 目前的密碼為 {0}。請輸入 0 以外的任何值來設定新密碼，或輸入 0 返回。
@@ -402,4 +400,34 @@ Messages:
   wwcNewSqlConvertFail: 轉換失敗... 請從您所建立的備份還原您的表格。停用全球微信...
   wwcOldSqlStructRecords: 您的 SQL 數據庫具有較舊版的 WorldwideChat 版本的播放器記錄表設置效率低。您可以運行以下命令來修復此問題：/wwcd
     轉換
+  wwcConfigConversationPostgresDatabaseNameSuccess: 成功變更 PostgreSQL 資料庫名稱。
+  wwcConfigConversationPostgresOptionalArgsCleared: 選擇性參數已成功清除。
+  wwcConfigConversationPostgresPortInput: 目前的連接埠為 {0}。輸入 0 以外的任何內容以設定新連接埠，或鍵入 0 以返回。
+  wwcConfigGUIPostgresUsernameButton: 變更 PostgreSQL 使用者名稱
+  wwcConfigConversationPostgresOptionalArgsSuccess: 成功變更可選的 PostgreSQL 引數。
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL 的 SSL 已成功切換。
+  wwcConfigConversationPostgresPasswordSuccess: 成功變更 PostgreSQL 密碼。
+  wwcConfigConversationPostgresPortSuccess: 成功變更 PostgreSQL 連接埠。
+  wwcConfigConversationPostgresUsernameInput: 目前的使用者名稱為 {0}。輸入 0 以外的任何內容以設置新的使用者名稱，或鍵入
+    0 以返回。
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL 已成功切換。重新載入以使變更生效。
+  wwcConfigGUITogglePostgresButton: 切換 PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: 更改 PostgreSQL 密碼
+  wwcConfigGUIPostgresOptionalArgsButton: 變更 PostgreSQL 選擇性參數
+  wwcConfigGUIPostgresMenuButton: 變更 PostgreSQL 設定
+  wwcConfigConversationPostgresPasswordInput: 目前的密碼為 {0}。輸入 0 以外的任何內容以設定新密碼，或鍵入 0
+    以返回。
+  wwcConfigConversationPostgresHostnameInput: 目前的主機名稱為 {0}。輸入 0 以外的任何內容以設置新的主機名稱，或鍵入
+    0 以返回。
+  wwcConfigGUIPostgresPortButton: 更改 PostgreSQL 連接埠
+  wwcConfigConversationPostgresHostnameSuccess: 成功更改 PostgreSQL 主機名稱。
+  wwcConfigGUIPostgresHostnameButton: 更改 PostgreSQL 主機名
+  wwcConfigConversationPostgresDatabaseNameInput: 目前的資料庫名稱為 {0}。輸入 0 以外的任何內容以設定新的資料庫名稱，或鍵入
+    0 以返回。
+  wwcConfigConversationPostgresOptionalArgsInput: 目前的可選 PostgreSQL 引數是：{0}。輸入以逗號分隔的參數（鍵
+    = 值，鍵 2 = 值 2），或鍵入 clear 以清除目前的參數，或鍵入 0 以返回。
+  wwcConfigGUITogglePostgresSSLButton: 切換 PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: 變更 PostgreSQL 資料庫
+  wwcConfigConversationPostgresUsernameSuccess: 成功更改 PostgreSQL 使用者名稱。
+  wwcConfigGUIStorageTypeSettings: '{0} 配置'
 

@@ -335,7 +335,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Beddel Settings SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Si guul leh toggled Watson Translate.
     Dib u cusbooneysii isbedelka si uu u dhaqan geliyo.
-  wwcConfigGUISQLSettings: Qaabeynta SQL
   wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Translate
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Translate
@@ -405,7 +404,6 @@ Messages:
   libreHttpUnknown: 'Qaladka http oo aan la garanayn: {0}'
   wwcConfigGUILibreTranslateURLButton: Beddel libre Translate URL
   wwcConfigConnectionFail: Ku guuldareysatay in ay ku xidhmaan {0}.
-  wwcConfigGUIMongoSettings: Qaabeynta MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: Si guul leh u bedelay magaca xogta
     MongoDB.
   wwcConfigGUIMongoHostnameButton: Beddel Magaca MongoDB Hostname
@@ -545,4 +543,41 @@ Messages:
     KA HORE ARRINTAAN. Haddii aad leeyahay, amarka waa: {0}'
   wwcNewSqlConvertFail: Beddelka oo fashilmay... fadlan dib u soo celiyo jadaalkaaga
     oo ka dhacay aad sameysay Disquidaysa WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Si guul la bedelay magaca databayga
+    PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Doodaha doorasho ah oo si guul
+    la soo
+  wwcConfigConversationPostgresPortInput: Dekedda hadda waa {0}. Nooca wax aan 0 aan
+    ah si aad u dhigo deket cusub, ama nooca 0 si uu dib ugu soo laabto.
+  wwcConfigGUIPostgresUsernameButton: Bedelka PostgreSQL Magacciinka
+  wwcConfigConversationPostgresOptionalArgsSuccess: Si guul la beddelay doodaha doodaha
+    doonaha PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL ee PostgreSQL oo si guul la toogay.
+  wwcConfigConversationPostgresPasswordSuccess: Si guul la bedelay kalsoorka PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Si guul u bedelay Dekedda PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Magacnimada hadda waa {0}. Nooca wax
+    aan 0 aan ah si loo dhigo magacaabo cusub, ama nooca 0 si uu dib ugu soo laabto.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL oo si guul la dhacay. Dib
+    u qabsado in isbedelka uu saameynayo.
+  wwcConfigGUITogglePostgresButton: Toggle PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Beddel Password PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Bedelka Doodaha Ixashada PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Bedelka Deegaanka PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Kalsoorka hadda waa {0}. Nooca wax aan
+    0 aan ah si aad u dhigto kaloob cusub, ama nooca 0 si aad u dib ugu soo laabto.
+  wwcConfigConversationPostgresHostnameInput: Magaca hosta hadda waa {0}. Nooca wax
+    aan ah 0 si aad u dhigto magac cusub, ama nooca 0 si uu dib ugu soo laabto.
+  wwcConfigGUIPostgresPortButton: Beddel Dekedda PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Si guul la bedelay magaca hostka PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Beddel PostgreSQL Hostname
+  wwcConfigConversationPostgresDatabaseNameInput: Magaca xidhigaarka hadda ah waa
+    {0}. Nooca wax aan 0 aan ah si loo dhigay magac cusub ee xidhibaas ah, ama nooca
+    0 si uu dib ugu soo laabto.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Doodaha xooga hadda ee PostgreSQL
+    waa: {0}. Doodaha nooca oo la kala gaaray komo (key=qiimaha, key2=qiima2), ama
+    nooca cad si aad u ribiyo args hadda, ama nooca 0 si ay dib ugu soo nocoto.'
+  wwcConfigGUITogglePostgresSSLButton: Toggle PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Beddel Database PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Si guul la bedelay magacaanka PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Sameynta'
 

@@ -313,7 +313,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL параметрлерін өзгерту
   wwcConfigConversationWatsonTranslateToggleSuccess: Уотсон Аудару сәтті болды. Өзгеріс
     күшіне ену үшін қайта жүктеңіз.
-  wwcConfigGUISQLSettings: SQL конфигурациясы
   wwcConfigGUIToggleGoogleTranslateButton: Google Аудару
   wwcConfigGUIToggleWatsonTranslateButton: Аудару
   wwcConfigGUIToggleAmazonTranslateButton: Amazon Аудару
@@ -376,7 +375,6 @@ Messages:
   libreHttpUnknown: 'Белгісіз http қатесі: {0}'
   wwcConfigGUILibreTranslateURLButton: Өзгерту Тегін Аудару URL
   wwcConfigConnectionFail: '{0} қосыла алмады.'
-  wwcConfigGUIMongoSettings: МонгДБ конфигурациясы
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB дерекқорының атауын сәтті
     өзгертті.
   wwcConfigGUIMongoHostnameButton: MongoDB хост атауын өзгерту
@@ -514,4 +512,44 @@ Messages:
     бар болса, команда: {0}'
   wwcNewSqlConvertFail: Түрлендіру сәтсіз аяқталды... кестелеріңізді сіз жасаған сақтық
     көшірмеден қалпына келтіріңіз. WorldwideChat-ті өшіру...
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL дерекқорының атауын
+    сәтті өзгертті.
+  wwcConfigConversationPostgresOptionalArgsCleared: Қосымша аргументтер сәтті жойылды.
+  wwcConfigConversationPostgresPortInput: Ағымдағы порт - {0}. Жаңа портты орнату
+    үшін 0-ден басқа кез келген нәрсені теріңіз немесе кері оралу үшін 0 деп теріңіз.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL пайдаланушы атын өзгертіңіз
+  wwcConfigConversationPostgresOptionalArgsSuccess: Қосымша PostgreSQL аргументтерін
+    сәтті өзгертті.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL үшін SSL сәтті қосылды.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL құпия сөзін сәтті өзгертті.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL портын сәтті өзгертті.
+  wwcConfigConversationPostgresUsernameInput: Ағымдағы пайдаланушы аты - {0}. Жаңа
+    пайдаланушы атын орнату үшін 0-ден басқа кез келген нәрсені теріңіз немесе кері
+    оралу үшін 0 деп теріңіз.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL сәтті қосылды. Өзгеріс күшіне
+    енуі үшін қайта жүктеңіз.
+  wwcConfigGUITogglePostgresButton: PostgreSQL функциясын ауыстыру
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL құпия сөзін өзгерту
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL қосымша аргументтерін өзгертіңіз
+  wwcConfigGUIPostgresMenuButton: PostgreSQL параметрлерін өзгерту
+  wwcConfigConversationPostgresPasswordInput: Ағымдағы құпия сөз - {0}. Жаңа құпия
+    сөзді орнату үшін 0-ден басқа кез келген нәрсені теріңіз немесе кері оралу үшін
+    0 деп теріңіз.
+  wwcConfigConversationPostgresHostnameInput: Ағымдағы хост атауы - {0}. Жаңа хост
+    атауын орнату үшін 0-ден басқа кез келген нәрсені теріңіз немесе кері оралу үшін
+    0 деп теріңіз.
+  wwcConfigGUIPostgresPortButton: PostgreSQL портын өзгертіңіз
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL хост атауын сәтті өзгертті.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL хост атауын өзгертіңіз
+  wwcConfigConversationPostgresDatabaseNameInput: Ағымдағы дерекқордың атауы - {0}.
+    Жаңа дерекқор атауын орнату үшін 0-ден басқа кез келген нәрсені теріңіз немесе
+    кері оралу үшін 0 деп теріңіз.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Ағымдағы қосымша PostgreSQL аргументтері:
+    {0}. Үтірмен бөлінген аргументтерді теріңіз (key=value, key2 = value2) немесе
+    ағымдағы args сүрту үшін clear деп теріңіз немесе кері өту үшін 0 деп теріңіз.'
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL-ді қосыңыз
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL дерекқорын өзгерту
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL пайдаланушы атын сәтті
+    өзгертті.
+  wwcConfigGUIStorageTypeSettings: '{0} Конфигурация'
 

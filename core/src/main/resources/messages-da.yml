@@ -326,7 +326,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Skift SQL-indstillinger
   wwcConfigConversationWatsonTranslateToggleSuccess: Succesfuld skikket Watson Translate.
     Genindlæs for ændringen træder i kraft.
-  wwcConfigGUISQLSettings: SQL-konfiguration
   wwcConfigGUIToggleGoogleTranslateButton: Toggle Google Oversæt
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Oversæt
   wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Oversæt
@@ -385,7 +384,6 @@ Messages:
   libreHttpUnknown: 'Ukendt http-fejl: {0}'
   wwcConfigGUILibreTranslateURLButton: Skift Libre Oversæt URL
   wwcConfigConnectionFail: Der kunne ikke oprettes forbindelse til {0}.
-  wwcConfigGUIMongoSettings: MongoDB-konfiguration
   wwcConfigConversationMongoDatabaseNameSuccess: Succesfuldt ændret MongoDB-databasenavnet.
   wwcConfigGUIMongoHostnameButton: Skift MongoDB værtsnavn
   wwcConfigConversationMongoPasswordInput: Den aktuelle adgangskode er {0}. Skriv
@@ -521,4 +519,44 @@ Messages:
   wwcOldSqlStructRecords: 'Din SQL-database har en ineffektiv opsætning af afspilningstabeller
     fra en tidligere version af WorldwideChat. Du kan køre følgende kommando for at
     løse dette problem: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Ændret PostgreSQL-databasens navn
+    med succes.
+  wwcConfigConversationPostgresOptionalArgsCleared: Valgfrie argumenter ryddet med
+    succes.
+  wwcConfigConversationPostgresPortInput: Den aktuelle port er {0}. Skriv alt andet
+    end 0 for at indstille en ny port, eller skriv 0 for at gå tilbage.
+  wwcConfigGUIPostgresUsernameButton: Skift PostgreSQL brugernavn
+  wwcConfigConversationPostgresOptionalArgsSuccess: Ændret de valgfrie PostgreSQL-argumenter
+    med succes.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL til PostgreSQL skiftede med succes.
+  wwcConfigConversationPostgresPasswordSuccess: Ændret PostgreSQL-adgangskoden med
+    succes.
+  wwcConfigConversationPostgresPortSuccess: Ændret PostgreSQL-porten med succes.
+  wwcConfigConversationPostgresUsernameInput: Det nuværende brugernavn er {0}. Skriv
+    alt andet end 0 for at angive et nyt brugernavn, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL skiftede med succes. Genindlæs
+    for at ændringen træder i kraft.
+  wwcConfigGUITogglePostgresButton: Skift PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Skift PostgreSQL-adgangskode
+  wwcConfigGUIPostgresOptionalArgsButton: Skift valgfri PostgreSQL argumenter
+  wwcConfigGUIPostgresMenuButton: Skift PostgreSQL-indstillinger
+  wwcConfigConversationPostgresPasswordInput: Den aktuelle adgangskode er {0}. Skriv
+    alt andet end 0 for at angive en ny adgangskode, eller skriv 0 for at gå tilbage.
+  wwcConfigConversationPostgresHostnameInput: Det aktuelle værtsnavn er {0}. Skriv
+    andet end 0 for at indstille et nyt værtsnavn, eller skriv 0 for at gå tilbage.
+  wwcConfigGUIPostgresPortButton: Skift PostgreSQL-port
+  wwcConfigConversationPostgresHostnameSuccess: Ændret PostgreSQL-værtsnavnet med
+    succes.
+  wwcConfigGUIPostgresHostnameButton: Skift PostgreSQL-værtsnavn
+  wwcConfigConversationPostgresDatabaseNameInput: Det aktuelle databasenavn er {0}.
+    Skriv alt andet end 0 for at angive et nyt databasenavn, eller skriv 0 for at
+    gå tilbage.
+  wwcConfigConversationPostgresOptionalArgsInput: 'De aktuelle valgfrie PostgreSQL-argumenter
+    er: {0}. Skriv argumenter adskilt af et komma (nøgle=værdi, nøgle2=værdi2), eller
+    skriv clear for at slette de aktuelle argumenter, eller skriv 0 for at gå tilbage.'
+  wwcConfigGUITogglePostgresSSLButton: Slå PostgreSQL SSL til
+  wwcConfigGUIPostgresDatabaseNameButton: Skift PostgreSQL-database
+  wwcConfigConversationPostgresUsernameSuccess: Ændret PostgreSQL-brugernavnet med
+    succes.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfiguration'
 

@@ -343,7 +343,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Athraigh Socruithe SQL
   wwcConfigConversationWatsonTranslateToggleSuccess: Go rathúil toggled Watson Translate.
     Athlódáil don athrú chun éifeacht a ghlacadh.
-  wwcConfigGUISQLSettings: Cumraíocht SQL
   wwcConfigGUIToggleGoogleTranslateButton: Scoránaigh Google Translate
   wwcConfigGUIToggleWatsonTranslateButton: Aistríonn Scoránaigh Watson
   wwcConfigGUIToggleAmazonTranslateButton: Aistríonn Scoránaigh Amazon
@@ -411,7 +410,6 @@ Messages:
   libreHttpUnknown: 'Earráid http anaithnid: {0}'
   wwcConfigGUILibreTranslateURLButton: Athraigh Saor in Aisce Aistrigh URL
   wwcConfigConnectionFail: Theip ar ceangal le {0}.
-  wwcConfigGUIMongoSettings: Cumraíocht MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: D'éirigh le hainm bunachar MongoDB
     a athrú.
   wwcConfigGUIMongoHostnameButton: Athraigh Óstainm MongoDB
@@ -556,4 +554,46 @@ Messages:
     Má tá tú, is é an t-ordú: {0}'
   wwcNewSqlConvertFail: Theip ar chomhshó... athchóirigh do tháblaí ón gcúltaca a
     rinne tú. WorldwideChat a dhíchumasú...
+  wwcConfigConversationPostgresDatabaseNameSuccess: D'athraigh sé go rathúil ainm
+    bunachar sonraí PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Glanadh argóintí roghnach go rathúil
+  wwcConfigConversationPostgresPortInput: Is é {0} an calafort reatha. Clóscríobh
+    aon rud seachas 0 chun calafort nua a shocrú, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigGUIPostgresUsernameButton: Athraigh Ainm úsáideora PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: D'athraigh sé go rathúil na hargóintí
+    roghnacha PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: Toscaíodh SSL do PostgreSQL go rathúil.
+  wwcConfigConversationPostgresPasswordSuccess: D'athraigh an pasfhocal PostgreSQL
+    go rathúil.
+  wwcConfigConversationPostgresPortSuccess: D'athraigh sé an calafort PostgreSQL go
+    rathúil.
+  wwcConfigConversationPostgresUsernameInput: Is é {0} an t-ainm úsáideora reatha.
+    Clóscríobh aon rud seachas 0 chun ainm úsáideora nua a shocrú, nó clóscríobh 0
+    chun dul ar ais.
+  wwcConfigConversationTogglePostgresSuccess: Athraíodh PostgreSQL go rathúil. Athluchtaigh
+    chun go dtiocfaidh an t-athrú i bhfeidhm.
+  wwcConfigGUITogglePostgresButton: Athraigh PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Athraigh Pasfhocal PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Athraigh Argóintí Roghnacha PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Athraigh Socruithe PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Is é {0} an focal faire reatha. Clóscríobh
+    aon rud seachas 0 chun pasfhocal nua a shocrú, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationPostgresHostnameInput: Is é {0} an t-ainm óstach reatha. Clóscríobh
+    aon rud seachas 0 chun óstainm nua a shocrú, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigGUIPostgresPortButton: Athraigh Port PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: D'athraigh sé go rathúil an t-ainm
+    óstach PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Athraigh Ainm Óstach PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Is é {0} ainm an bunachar sonraí
+    reatha. Clóscríobh aon rud seachas 0 chun ainm nua bunachar sonraí a shocrú, nó
+    clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Is iad na hargóintí roghnacha PostgreSQL
+    reatha ná: {0}. Clóscríobh argóintí scartha le camóg (eochair = luach, eochr2
+    = luach2), nó clóscríobh soiléir chun na hargaí reatha a scriosadh, nó clóscríobh
+    0 chun dul ar ais.'
+  wwcConfigGUITogglePostgresSSLButton: Athraigh PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Athraigh Bunachar Sonraí PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: D'athraigh sé an t-ainm úsáideora
+    PostgreSQL go rathúil.
+  wwcConfigGUIStorageTypeSettings: '{0} Cumraíocht'
 

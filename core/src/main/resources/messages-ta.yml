@@ -338,7 +338,6 @@ Messages:
   wwcConfigGUISQLMenuButton: SQL அமைப்புகளை மாற்றவும்
   wwcConfigConversationWatsonTranslateToggleSuccess: வெற்றிகரமாக மாற்று வாட்சன் மொழிபெயர்.
     மாற்றம் நடைமுறைக்கு ஏற்றவும்.
-  wwcConfigGUISQLSettings: SQL கட்டமைப்பு
   wwcConfigGUIToggleGoogleTranslateButton: Google மொழிபெயர் மாற்று
   wwcConfigGUIToggleWatsonTranslateButton: வாட்சன் மொழிபெயர் மாற்று
   wwcConfigGUIToggleAmazonTranslateButton: அமேசான் மொழிபெயர் மாற்று
@@ -404,7 +403,6 @@ Messages:
   libreHttpUnknown: 'தெரியாத http பிழை: {0}'
   wwcConfigGUILibreTranslateURLButton: இலவச மொழிபெயர்க்க URL ஐ மாற்றவும்
   wwcConfigConnectionFail: '{0} உடன் இணைக்கத் தவறியது.'
-  wwcConfigGUIMongoSettings: MongoDB கட்டமைப்பு
   wwcConfigConversationMongoDatabaseNameSuccess: MongoDB தரவுத்தள பெயரை வெற்றிகரமாக
     மாற்றியது.
   wwcConfigGUIMongoHostnameButton: MongoDB புரவலன் பெயரை மாற்றவும்
@@ -546,4 +544,49 @@ Messages:
     கொள்ளுங்கள். உங்களிடம் இருந்தால், கட்டளை: {0}'
   wwcNewSqlConvertFail: மாற்றம் தோல்வியுற்றது... நீங்கள் செய்த காப்புப்பிரதியிலிருந்து
     உங்கள் அட்டவணைகளை மீட்டெடுக்கவும் வேர்ல்ட்வைடேகாட்டை முடக்குகிறது...
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL தரவுத்தள பெயரை வெற்றிகரமாக
+    மாற்றியது.
+  wwcConfigConversationPostgresOptionalArgsCleared: விருப்ப வாதங்கள் வெற்றிகரமாக அழிக்க
+  wwcConfigConversationPostgresPortInput: தற்போதைய துறைமுகம் {0} ஆகும். புதிய போர்ட்டை
+    அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு
+    செய்க.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL பயனர்பெயரை மாற்றவும்
+  wwcConfigConversationPostgresOptionalArgsSuccess: விருப்ப PostgreSQL வாதங்களை வெற்றிகரமாக
+    மாற்றியது.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL க்கான SSL வெற்றிகரமாக
+    மாற்றப்பட்டது.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL கடவுச்சொல்லை வெற்றிகரமாக
+    மாற்றியது.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL போர்ட்டை வெற்றிகரமாக மாற்றியது.
+  wwcConfigConversationPostgresUsernameInput: தற்போதைய பயனர்பெயர் {0} ஆகும். புதிய
+    பயனர்பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல 0
+    ஐ தட்டச்சு செய்க.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL வெற்றிகரமாக மாற்றப்பட்டது.
+    மாற்றம் நடைமுறைக்கு வர மீண்டும் ஏற்றவும்.
+  wwcConfigGUITogglePostgresButton: PostgreSQL ஐ மாற்றவும்
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL கடவுச்சொல்லை மாற்றவும்
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL விருப்ப வாதங்களை மாற்றவும்
+  wwcConfigGUIPostgresMenuButton: PostgreSQL அமைப்புகளை மாற்றவும்
+  wwcConfigConversationPostgresPasswordInput: தற்போதைய கடவுச்சொல் {0} ஆகும். புதிய
+    கடவுச்சொல்லை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல
+    0 ஐ தட்டச்சு செய்க.
+  wwcConfigConversationPostgresHostnameInput: தற்போதைய ஹோஸ்ட் பெயர் {0} ஆகும். புதிய
+    ஹோஸ்ட் பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல
+    0 ஐ தட்டச்சு செய்க.
+  wwcConfigGUIPostgresPortButton: போஸ்ட்க்ரெஸ்க்எல் போர்ட்டை மாற்றவும்
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL ஹோஸ்ட் பெயரை வெற்றிகரமாக
+    மாற்றியது.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL ஹோஸ்ட் பெயரை மாற்றவும்
+  wwcConfigConversationPostgresDatabaseNameInput: தற்போதைய தரவுத்தள பெயர் {0} ஆகும்.
+    புதிய தரவுத்தள பெயரை அமைக்க 0 தவிர வேறு எதையும் தட்டச்சு செய்க அல்லது திரும்பிச்
+    செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigConversationPostgresOptionalArgsInput: 'தற்போதைய விருப்ப PostgreSQL வாதங்கள்:
+    {0}. காமா மூலம் பிரிக்கப்பட்ட வாதங்களை தட்டச்சு செய்க (key = value, key2 = value2),
+    அல்லது தற்போதைய ஆர்க்களை துடைக்க தெளிவாக தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல
+    0 ஐ தட்டச்சு செய்க.'
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL ஐ மாற்றவும்
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL தரவுத்தளத்தை மாற்றவும்
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL பயனர்பெயரை வெற்றிகரமாக
+    மாற்றியது.
+  wwcConfigGUIStorageTypeSettings: '{0} உள்ளமைவு'
 

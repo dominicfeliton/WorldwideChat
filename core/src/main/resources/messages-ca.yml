@@ -333,7 +333,6 @@ Messages:
   wwcConfigGUISQLMenuButton: Canviar la configuració SQ
   wwcConfigConversationWatsonTranslateToggleSuccess: S'ha completat amb èxit Watson
     Traduir. Torna a carregar perquè el canvi tingui efecte.
-  wwcConfigGUISQLSettings: Configuració SQL
   wwcConfigGUIToggleGoogleTranslateButton: Commuta Traduït per Google
   wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Traduir
   wwcConfigGUIToggleAmazonTranslateButton: Alterna Amazon Traduir
@@ -405,7 +404,6 @@ Messages:
   libreHttpUnknown: 'Error http desconegut: {0}'
   wwcConfigGUILibreTranslateURLButton: Canvia l'URL de traducció lliure
   wwcConfigConnectionFail: No s'ha pogut connectar a {0}.
-  wwcConfigGUIMongoSettings: Configuració MongoDB
   wwcConfigConversationMongoDatabaseNameSuccess: S'ha canviat correctament el nom
     de la base de dades MongoDB.
   wwcConfigGUIMongoHostnameButton: Canviar MongoDB Hostname
@@ -556,4 +554,49 @@ Messages:
   wwcOldSqlStructRecords: 'La vostra base de dades SQL té una configuració de taula
     de registres de reproductors ineficient d''una versió anterior de WorldwideChat.
     Podeu executar la següent comanda per solucionar aquest problema: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: S'ha canviat correctament el nom
+    de la base de dades PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Els arguments opcionals esborrats
+    correctament.
+  wwcConfigConversationPostgresPortInput: El port actual és {0}. Escriviu qualsevol
+    cosa que no sigui 0 per establir un port nou, o escriviu 0 per tornar enrere.
+  wwcConfigGUIPostgresUsernameButton: Canviar el nom d'usuari de PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: S'ha canviat correctament els
+    arguments opcionals de PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL per PostgreSQL es va canviar
+    correctament.
+  wwcConfigConversationPostgresPasswordSuccess: S'ha canviat correctament la contrasenya
+    PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: S'ha canviat correctament el port PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: El nom d'usuari actual és {0}. Escriviu
+    qualsevol cosa que no sigui 0 per establir un nom d'usuari nou, o escriviu 0 per
+    tornar enrere.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL es va canviar amb èxit. Torna
+    a carregar perquè el canvi tingui efecte.
+  wwcConfigGUITogglePostgresButton: Canvia PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Canviar la contrasenya de PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Canviar els arguments opcionals de PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Canviar la configuració de PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: La contrasenya actual és {0}. Escriviu
+    qualsevol cosa que no sigui 0 per establir una contrasenya nova, o escriviu 0
+    per tornar enrere.
+  wwcConfigConversationPostgresHostnameInput: El nom actual del host és {0}. Escriviu
+    qualsevol cosa que no sigui 0 per establir un nou nom d'amfitrió, o escriviu 0
+    per tornar enrere.
+  wwcConfigGUIPostgresPortButton: Canviar el port PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: S'ha canviat satisfactòriament el
+    nom d'amfitrió PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Canviar el nom d'amfitrió PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: El nom de la base de dades actual
+    és {0}. Escriviu qualsevol cosa que no sigui 0 per establir un nom de base de
+    dades nou, o escriviu 0 per tornar enrere.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Els arguments opcionals actuals
+    del PostgreSQL són: {0}. Escriviu arguments separats per una coma (key=value,
+    key2=value2), o escriviu clear per esborrar els args actuals, o escriviu 0 per
+    tornar enrere.'
+  wwcConfigGUITogglePostgresSSLButton: Canviar el SSL de PostgreSQL
+  wwcConfigGUIPostgresDatabaseNameButton: Canviar la base de dades PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: S'ha canviat correctament el nom d'usuari
+    de PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Configuració'
 

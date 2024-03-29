@@ -314,7 +314,6 @@ Messages:
   wwcConfigGUISQLMenuButton: د SQL امستنې بدلول
   wwcConfigConversationWatsonTranslateToggleSuccess: په بریالیتوب سره د واټسن ژباړل
     شوی. د بدلون لپاره بیا پورته کول ترڅو اغیزه وکړي.
-  wwcConfigGUISQLSettings: SQL سازونې
   wwcConfigGUIToggleGoogleTranslateButton: د ګوګل ژباړه
   wwcConfigGUIToggleWatsonTranslateButton: د واټسن ژباړل
   wwcConfigGUIToggleAmazonTranslateButton: د ایمیزون ژباړل
@@ -378,7 +377,6 @@ Messages:
   libreHttpUnknown: 'ناپېژندلې http تېروتنه: {0}'
   wwcConfigGUILibreTranslateURLButton: ليبر ژباړل URL بدلول
   wwcConfigConnectionFail: .په نښلولو کې پاتې راغی {0}
-  wwcConfigGUIMongoSettings: MongoDB سازونه
   wwcConfigConversationMongoDatabaseNameSuccess: په بریالیتوب سره د MongoDB ډیټابیس
     نوم بدل کړ.
   wwcConfigGUIMongoHostnameButton: د MongoDB کوربه نوم بدل کړئ
@@ -518,4 +516,43 @@ Messages:
     د خپل ډیټابیس بیک که تاسو لرئ، کمان دی: {0}'
   wwcNewSqlConvertFail: تبادل ناکامه شوی... مهرباني وکړئ خپل میزونه بیا ورکړئ له هغه
     بیک ورلډ ویډشیټ غیر فعال کول...
+  wwcConfigConversationPostgresDatabaseNameSuccess: د PostgreSQL ډیټابیس نوم په بریالیتوب
+    سره بدل کړه.
+  wwcConfigConversationPostgresOptionalArgsCleared: اختیاري دلائل په بریالیتوب سره
+  wwcConfigConversationPostgresPortInput: اوسنۍ بندر {0} دی. د 0 څخه نور څه ډول ټاکل
+    کړئ ترڅو نوی بندر ټاکل کړئ، یا بیرته لاړ شو لپاره 0 ټایپ
+  wwcConfigGUIPostgresUsernameButton: د PostgreSQL نوم نوم بدل کړئ
+  wwcConfigConversationPostgresOptionalArgsSuccess: په بریالیتوب سره اختیاري PostgreSQL
+    دلائل بدل کړی.
+  wwcConfigConversationTogglePostgresSSLSuccess: د PostgreSQL لپاره ایس ایس ایل په
+    بریالیتوب سره ټول شوی.
+  wwcConfigConversationPostgresPasswordSuccess: د PostgreSQL پاسورډ په بریالیتوب سره
+    بدل کړه.
+  wwcConfigConversationPostgresPortSuccess: د PostgreSQL بندر په کامیابۍ سره بدل کړه.
+  wwcConfigConversationPostgresUsernameInput: اوسني نوم نوم {0} دی. د 0 څخه نور څه
+    وټاکئ ترڅو د نوي نوم نوم نوم نوم نوم نوم ټاکل کړئ، یا بیرته
+  wwcConfigConversationTogglePostgresSuccess: پوسټګریسکیل په بریالیتوب سره بدل شوی.
+    د اغیزمن لپاره د بدلون لپاره بیا لوډ کړئ.
+  wwcConfigGUITogglePostgresButton: پوسټګریسکیل ټینګ کړئ
+  wwcConfigGUIPostgresPasswordButton: د پوسټګریسکیل پاسورډ بدل کړئ
+  wwcConfigGUIPostgresOptionalArgsButton: د PostgreSQL اختیاري استدلال بدل کړئ
+  wwcConfigGUIPostgresMenuButton: د پوسټګریسکیل ترتیبات بدل کړئ
+  wwcConfigConversationPostgresPasswordInput: اوسنۍ پاسورډ {0} دی. د 0 څخه نور څه
+    وټاکئ چې د نوي پاسورډ ټاکل کړئ، یا بیرته لاړ شو لپاره 0 ټایپ کړئ.
+  wwcConfigConversationPostgresHostnameInput: اوسنۍ کوربه نوم {0} دی. د 0 څخه نور
+    څه ډول ټاکل کړئ ترڅو د نوی کوربه نوم ټاکل کړئ، یا بیرته لاړ شو لپاره 0 ډول
+  wwcConfigGUIPostgresPortButton: پوسټګریسکیل پورټ بدل کړئ
+  wwcConfigConversationPostgresHostnameSuccess: د PostgreSQL کوربه نوم په کامیابۍ
+    سره بدل کړه.
+  wwcConfigGUIPostgresHostnameButton: د پوسټګریسکیل کوربه نوم بدل کړئ
+  wwcConfigConversationPostgresDatabaseNameInput: د اوسنۍ ډیټابیس نوم {0} دی. د 0
+    څخه نور څه ټاپ کړئ ترڅو د نوی ډیټابیس نوم تنظیم کړئ، یا بیرته لاړ شو لپاره 0 ډول
+  wwcConfigConversationPostgresOptionalArgsInput: 'اوسنۍ اختیاري پوسټګریسکیل دلائل
+    دي: {0}. دلائل ډول د کوم لخوا جلا شي (key = ارزښت، key2 = ارزښت 2)، یا د اوسنۍ
+    ارګونو پاکولو لپاره روښانه ډول، یا 0 ډول چې بیرته لاړ شي.'
+  wwcConfigGUITogglePostgresSSLButton: پوسټګریسکیل ایس ایس ایل ټینګ کړئ
+  wwcConfigGUIPostgresDatabaseNameButton: د PostgreSQL ډیټابیس بدل کړئ
+  wwcConfigConversationPostgresUsernameSuccess: په بریالیتوب سره د PostgreSQL نوم
+    نوم بدل کړه.
+  wwcConfigGUIStorageTypeSettings: '{0} ترتیب'
 
