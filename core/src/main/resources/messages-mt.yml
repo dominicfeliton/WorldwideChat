@@ -501,12 +501,30 @@ Messages:
   systranHttp400: Parametri ħżiena mibgħuta lil Systran. Jista 'jkun par lingwistiku
     ħażin?
   systranHttp500: Żball intern tas-server mill-endpoint ta' Systran ({0}).
-  wwcInvalidMongoSession: MongoDB huwa attivat fil-konfigurazzjoni tiegħek, iżda konnessjoni
+  wwcInvalidStorageSession: '{0} huwa attivat fil-konfigurazzjoni tiegħek, iżda konnessjoni
     mhix stabbilita. Jekk jogħġbok ipprova tagħbija mill-ġdid biex tiffissa dan, imma
-    jekk jogħġbok ikkuntattja lill-iżviluppatur jekk qabel irċevejt messaġġ ta 'konnessjoni
-    ta' suċċess minn MongoDB.
-  wwcInvalidSQLSession: SQL huwa attivat fil-konfigurazzjoni tiegħek, iżda konnessjoni
-    mhix stabbilita. Jekk jogħġbok ipprova tagħbija mill-ġdid biex tiffissa dan, imma
-    jekk jogħġbok ikkuntattja lill-iżviluppatur jekk qabel irċivejt messaġġ ta 'konnessjoni
-    ta' suċċess minn SQL
+    jekk jogħġbok ikkuntattja lill-iżviluppatur jekk qabel irċevejt messaġġ ta ''konnessjoni
+    ta'' suċċess minn {0}.'
+  wwcNewSqlConvertFinish: Lest tikkonverti t-tabelli SQL tiegħek. Tgħabbija mill-ġdid
+    WorldwideChat...
+  wwcNewSqlStruct: Id-database SQL tiegħek qed tuża l-istruttura l-ġdida u m'għandhiex
+    għalfejn tiġi kkonvertita.
+  wwcNewSqlConvertBegin: Ikkonverti t-tabelli SQL tiegħek...
+  wwcOldSqlStructRecords: 'Id-database SQL tiegħek għandha setup tabella rekord plejer
+    ineffiċjenti minn verżjoni preċedenti ta ''WorldwideChat. Tista ''tmexxi l-kmand
+    li ġej biex tiffissa din il-kwistjoni: /wwcd jikkonvertu'
+  wwcOldSqlStructLongIntro: Aħna sinċerament niskużaw għall-inkonvenjent, iżda verżjoni
+    preċedenti ta 'WorldwideChat inizjalizzat it-tabelli SQL tiegħek bi struttura
+    ineffiċjenti. Filwaqt li dan se jkompli jiffunzjona mal-plugin tagħna, jista 'jirriżulta
+    f'tnaqqis sinifikanti b'rekords tal-plejers akbar.
+  wwcOldSqlStructTrans: 'Id-database SQL tiegħek għandha setup tabella traduttur attiv
+    ineffiċjenti minn verżjoni preċedenti ta ''WorldwideChat. Tista ''tmexxi l-kmand
+    li ġej biex tiffissa din il-kwistjoni: /wwcd jikkonvertu'
+  wwcOldSqlStructLongTodo: 'Tista '': qatra t-tabelli stampati biex console fil-MySQL,
+    tikkonvertihom lilek innifsek u tħares lejn l-istruttura l-ġdida fir-repo github,
+    jew imexxi kmand biex tipprova l-konverżjoni ħajjin. Jekk jogħġbok kun żgur li
+    inti GĦAMILT BACKUP TAD-DATABASE TIEGĦEK QABEL MA TMEXXIJA DAN. Jekk għandek,
+    il-kmand huwa: {0}'
+  wwcNewSqlConvertFail: Konverżjoni falliet... jekk jogħġbok irrestawra t-tabelli
+    tiegħek mill-backup li għamilt. Id-diżattivazzjoni tal-WorldwideChat...
 

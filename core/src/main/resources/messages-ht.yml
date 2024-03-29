@@ -483,10 +483,27 @@ Messages:
   systranHttpUnknown: 'Erè http enkoni: {0}'
   systranHttp400: Move paramèt voye bay Systran. Ta ka yon pè lang move?
   systranHttp500: Erè sèvè entèn soti nan Systran endpoint ({0}).
-  wwcInvalidMongoSession: MongoDB se pèmèt nan config ou, men se yon koneksyon pa
-    etabli. Tanpri eseye rloading ranje sa a, men tanpri kontakte pwomotè a si ou
-    deja te resevwa yon mesaj koneksyon siksè soti nan MongoDB.
-  wwcInvalidSQLSession: SQL se pèmèt nan config ou, men se yon koneksyon pa etabli.
+  wwcInvalidStorageSession: Se {0} pèmèt nan config ou, men se yon koneksyon pa etabli.
     Tanpri eseye rloading ranje sa a, men tanpri kontakte pwomotè a si ou deja te
-    resevwa yon mesaj koneksyon siksè soti nan SQL.
+    resevwa yon mesaj koneksyon siksè soti nan {0}.
+  wwcNewSqlConvertFinish: Fini konvèti tab SQL ou yo. Reloading WorldwideChat...
+  wwcNewSqlStruct: Se baz done SQL ou ap itilize nouvo estrikti a epi yo pa bezwen
+    yo dwe konvèti.
+  wwcNewSqlConvertBegin: Konvèti tab SQL ou...
+  wwcOldSqlStructLongIntro: Nou sensèman eskize pou deranjman an, men yon vèsyon anvan
+    nan WorldwideChat inisyalize tab SQL ou ak yon estrikti enefikas. Pandan ke sa
+    a ap kontinye fonksyone ak Plugin nou an, li ka rezilta nan ralentisman siyifikatif
+    ak dosye jwè pi gwo.
+  wwcOldSqlStructTrans: 'Baz done SQL ou a gen yon enefikas konfigirasyon tab tradiktè
+    aktif soti nan yon vèsyon anvan nan WorldwideChat. Ou ka kouri lòd sa a pou ranje
+    pwoblèm sa a: /wwcd konvèti'
+  wwcOldSqlStructLongTodo: 'Ou ka: lage tab yo enprime nan konsole nan MySQL, konvèti
+    yo tèt ou epi gade nan estrikti a nouvo nan repo a github, oswa kouri yon lòd
+    tantativ konvèsyon an ap viv. Tanpri asire w ke ou TE FÈ YON BACKUP NAN BAZ DONE
+    OU ANVAN KOURI SA A. Si ou gen, lòd la se: {0}'
+  wwcNewSqlConvertFail: Konvèsyon echwe... tanpri retabli tab ou soti nan backup la
+    ou te fè. Enfimite WorldwideChat...
+  wwcOldSqlStructRecords: 'Baz done SQL ou a gen yon konfigirasyon tab dosye jwè inefikas
+    soti nan yon vèsyon anvan nan WorldwideChat. Ou ka kouri lòd sa a pou ranje pwoblèm
+    sa a: /wwcd konvèti'
 

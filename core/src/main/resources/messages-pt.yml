@@ -513,11 +513,29 @@ Messages:
   systranHttp400: Parâmetros incorretos enviados para o Systran. Pode ser um par linguístico
     ruim?
   systranHttp500: Erro interno do servidor do endpoint Systran ({0}).
-  wwcInvalidMongoSession: O MongoDB está habilitado em sua configuração, mas a conexão
+  wwcInvalidStorageSession: '{0} está habilitado em sua configuração, mas a conexão
     não foi estabelecida. Tente recarregar para corrigir isso, mas entre em contato
-    com o desenvolvedor se você já recebeu uma mensagem de conexão bem-sucedida do
-    MongoDB.
-  wwcInvalidSQLSession: O SQL está habilitado em sua configuração, mas a conexão não
-    foi estabelecida. Tente recarregar para corrigir isso, mas entre em contato com
-    o desenvolvedor se você já recebeu uma mensagem de conexão bem-sucedida do SQL.
+    com o desenvolvedor se você já recebeu uma mensagem de conexão bem-sucedida de
+    {0}.'
+  wwcNewSqlConvertFinish: Concluiu a conversão de suas tabelas SQL. Recarregando o
+    WorldwideChat...
+  wwcNewSqlStruct: Seu banco de dados SQL está usando a nova estrutura e não precisa
+    ser convertido.
+  wwcNewSqlConvertBegin: Convertendo suas tabelas SQL...
+  wwcOldSqlStructRecords: 'Seu banco de dados SQL tem uma configuração ineficiente
+    da tabela de registros de jogadores de uma versão anterior do WorldwideChat. Você
+    pode executar o seguinte comando para corrigir esse problema: /wwcd convert'
+  wwcOldSqlStructLongIntro: Pedimos sinceras desculpas pela inconveniência, mas uma
+    versão anterior do WorldwideChat inicializou suas tabelas SQL com uma estrutura
+    ineficiente. Embora isso continue funcionando com nosso plug-in, isso pode resultar
+    em lentidões significativas com registros maiores de jogadores.
+  wwcOldSqlStructTrans: 'Seu banco de dados SQL tem uma configuração ineficiente de
+    tabela de tradução ativa de uma versão anterior do WorldwideChat. Você pode executar
+    o seguinte comando para corrigir esse problema: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Você pode: soltar as tabelas impressas no console no MySQL,
+    convertê-las você mesmo e ver a nova estrutura no repositório do github ou executar
+    um comando para tentar a conversão ao vivo. Certifique-se de TER FEITO UM BACKUP
+    DO SEU BANCO DE DADOS ANTES DE EXECUTÁ-LO. Se você tiver, o comando é: {0}'
+  wwcNewSqlConvertFail: A conversão falhou... restaure suas tabelas a partir do backup
+    que você fez. Desativando o WorldwideChat...
 

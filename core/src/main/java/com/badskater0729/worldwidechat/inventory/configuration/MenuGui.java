@@ -42,9 +42,6 @@ public class MenuGui implements InventoryProvider {
 	
 	public static void genAllConfigUIs(String transName) {
 		/* Generate inventories */
-		MongoDBUtils mongo = instance.getMongoSession();
-		SQLUtils sql = instance.getSqlSession();
-
 		MenuGui generalSet = new MenuGui();
 		CONFIG_GUI_TAGS.GEN_SET.smartInv = generalSet.genSmartInv("generalSettingsMenu", "wwcConfigGUIGeneralSettings");
 		
@@ -107,8 +104,8 @@ public class MenuGui implements InventoryProvider {
 		ArrayList<String> storageToggles = new ArrayList<>(Arrays.asList("Storage.useSQL", "Storage.useMongoDB"));
 
 		storageSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
-		storageSet.add(new SubMenuElement(1, 1, sql != null && sql.isConnected(), "wwcConfigGUISQLMenuButton", CONFIG_GUI_TAGS.SQL_SET.smartInv));
-		storageSet.add(new SubMenuElement(1, 2, mongo != null && mongo.isConnected(), "wwcConfigGUIMongoMenuButton", CONFIG_GUI_TAGS.MONGO_SET.smartInv));
+		storageSet.add(new SubMenuElement(1, 1, instance.isSQLConnValid(true), "wwcConfigGUISQLMenuButton", CONFIG_GUI_TAGS.SQL_SET.smartInv));
+		storageSet.add(new SubMenuElement(1, 2, instance.isMongoConnValid(true), "wwcConfigGUIMongoMenuButton", CONFIG_GUI_TAGS.MONGO_SET.smartInv));
 		storageSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.GEN_SET.smartInv}));
 		storageSet.add(new CommonElement(2, 4, "Quit"));
 		storageSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));

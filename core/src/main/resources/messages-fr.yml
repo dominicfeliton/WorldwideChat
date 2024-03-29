@@ -537,12 +537,32 @@ Messages:
     de langues?
   systranHttp500: Erreur interne du serveur provenant du point de terminaison Systran
     ({0}).
-  wwcInvalidMongoSession: MongoDB est activé dans votre configuration, mais aucune
-    connexion n'est établie. Essayez de recharger pour résoudre ce problème, mais
-    contactez le développeur si vous avez déjà reçu un message de connexion réussi
-    de MongoDB.
-  wwcInvalidSQLSession: SQL est activé dans votre configuration, mais aucune connexion
-    n'est établie. Essayez de recharger pour résoudre ce problème, mais contactez
-    le développeur si vous avez déjà reçu un message de connexion réussi de la part
-    de SQL.
+  wwcInvalidStorageSession: '{0} est activé dans votre configuration, mais aucune
+    connexion n''est établie. Essayez de recharger pour résoudre ce problème, mais
+    contactez le développeur si vous avez déjà reçu un message de connexion réussie
+    de la part de {0}.'
+  wwcNewSqlConvertFinish: Vous avez terminé de convertir vos tables SQL. Rechargement
+    de WorldwideChat...
+  wwcNewSqlStruct: Votre base de données SQL utilise la nouvelle structure et n'a
+    pas besoin d'être convertie.
+  wwcNewSqlConvertBegin: Conversion de vos tables SQL...
+  wwcOldSqlStructLongIntro: Nous sommes sincèrement désolés pour la gêne occasionnée,
+    mais une version précédente de WorldwideChat initialisait vos tables SQL avec
+    une structure inefficace. Bien que cela continue de fonctionner avec notre plugin,
+    cela peut entraîner des ralentissements importants avec des records de joueurs
+    plus importants.
+  wwcOldSqlStructTrans: 'Votre base de données SQL possède une configuration de table
+    de traduction active inefficace par rapport à une version précédente de WorldwideChat.
+    Vous pouvez exécuter la commande suivante pour résoudre ce problème: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Vous pouvez: déposer les tables imprimées sur la console
+    dans MySQL, les convertir vous-même et consulter la nouvelle structure dans le
+    dépôt github, ou exécuter une commande pour tenter la conversion en direct. Assurez-vous
+    d''avoir effectué une sauvegarde de votre base de données avant de l''exécuter.
+    Si c''est le cas, la commande est la suivante: {0}'
+  wwcNewSqlConvertFail: La conversion a échoué... veuillez restaurer vos tables à
+    partir de la sauvegarde que vous avez effectuée. Désactivation de WorldwideChat...
+  wwcOldSqlStructRecords: 'Votre base de données SQL contient une configuration de
+    table d''enregistrement des joueurs inefficace par rapport à une version précédente
+    de WorldwideChat. Vous pouvez exécuter la commande suivante pour résoudre ce problème:
+    /wwcd convert'
 

@@ -530,12 +530,30 @@ Messages:
   systranHttp400: Paràmetres dolents enviats a Systran. Pot ser un parell d'idiomes
     dolent?
   systranHttp500: Error intern del servidor des del punt final de Systran ({0}).
-  wwcInvalidMongoSession: MongoDB està activat a la vostra configuració, però no s'estableix
+  wwcInvalidStorageSession: '{0} està activat a la vostra configuració, però no s''estableix
     una connexió. Si us plau, proveu de tornar a carregar per solucionar això, però
     poseu-vos en contacte amb el desenvolupador si prèviament heu rebut un missatge
-    de connexió amb èxit de MongoDB.
-  wwcInvalidSQLSession: SQL està activat a la configuració, però no s'estableix una
-    connexió. Si us plau, proveu de tornar a carregar per solucionar això, però poseu-vos
-    en contacte amb el desenvolupador si prèviament heu rebut un missatge de connexió
-    amb èxit de SQL.
+    de connexió amb èxit de {0}.'
+  wwcNewSqlConvertFinish: Acabat la conversió de les taules SQL. Recàrrega de WorldwideChat...
+  wwcNewSqlStruct: La vostra base de dades SQL està utilitzant la nova estructura
+    i no necessita ser convertida.
+  wwcNewSqlConvertBegin: Convertir les teves taules SQL...
+  wwcOldSqlStructLongIntro: Demanem sincerament disculpes per les molèsties, però
+    una versió anterior de WorldwideChat va inicialitzar les vostres taules SQL amb
+    una estructura ineficient. Si bé això continuarà funcionant amb el nostre connector,
+    pot resultar en desacceleracions significatives amb registres de jugadors més
+    grans.
+  wwcOldSqlStructTrans: 'La vostra base de dades SQL té una configuració de taula
+    de traductors activa ineficient d''una versió anterior de WorldwideChat. Podeu
+    executar la següent comanda per solucionar aquest problema: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Pots: deixar anar les taules impreses a consola en MySQL,
+    convertir-les tu mateix i mirar la nova estructura al repo github, o executar
+    una comanda per intentar la conversió en directe. Si us plau, assegureu-vos que
+    heu FET UNA CÒPIA DE SEGURETAT DE LA VOSTRA BASE DE DADES ABANS D''EXECUTAR AQUESTA.
+    Si ho tens, l''ordre és: {0}'
+  wwcNewSqlConvertFail: La conversió ha fallat... si us plau, restaura les teves taules
+    des de la còpia de seguretat que has fet. Desactivació de WorldwideChat...
+  wwcOldSqlStructRecords: 'La vostra base de dades SQL té una configuració de taula
+    de registres de reproductors ineficient d''una versió anterior de WorldwideChat.
+    Podeu executar la següent comanda per solucionar aquest problema: /wwcd convert'
 

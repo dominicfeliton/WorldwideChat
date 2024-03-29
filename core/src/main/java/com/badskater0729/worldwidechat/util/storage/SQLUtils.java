@@ -3,6 +3,7 @@ package com.badskater0729.worldwidechat.util.storage;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Properties;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.util.CommonRefs;
@@ -33,25 +34,37 @@ public class SQLUtils {
 	}
 
 	public void connect() throws SQLException {
-		HikariDataSource testSource = new HikariDataSource();
-		testSource.setDataSourceClassName("com.mysql.cj.jdbc.MysqlDataSource");
-		testSource.addDataSourceProperty("serverName", host);
-		testSource.addDataSourceProperty("port", port);
-		testSource.addDataSourceProperty("databaseName", database);
-		testSource.addDataSourceProperty("user", username);
-		testSource.addDataSourceProperty("password", password);
-		testSource.addDataSourceProperty("useSSL", useSSL);
-		testSource.setConnectionTimeout(WorldwideChat.translatorFatalAbortSeconds * 1000);
-		if (argList != null) {
-			for (String eaArg : argList) {
-				if (eaArg.indexOf("=") != -1) {
-					testSource.addDataSourceProperty(eaArg.substring(0, eaArg.indexOf("=")), eaArg.substring(eaArg.indexOf("=")+1));
-				    refs.debugMsg(eaArg.substring(0, eaArg.indexOf("=")) + ":" + eaArg.substring(eaArg.indexOf("=")+1));
-				}
-			}
+		if (hikari != null) {
+			refs.debugMsg("Already connected???");
+			return;
 		}
-		testSource.getConnection();
-		hikari = testSource;
+
+		HikariDataSource testSource = new HikariDataSource();
+		testSource.setConnectionTimeout(WorldwideChat.translatorFatalAbortSeconds * 1000);
+		testSource.setDataSourceClassName("com.mysql.cj.jdbc.MysqlDataSource");
+
+		Properties dataSourceProperties = new Properties();
+		dataSourceProperties.put("serverName", host);
+		dataSourceProperties.put("port", port);
+		dataSourceProperties.put("databaseName", database);
+		dataSourceProperties.put("user", username);
+		dataSourceProperties.put("password", password);
+		dataSourceProperties.put("useSSL", String.valueOf(useSSL));
+
+		// Custom arguments
+		if (argList != null) {
+			argList.stream()
+					.filter(arg -> arg.contains("="))
+					.forEach(arg -> {
+						String[] parts = arg.split("=", 2);
+						dataSourceProperties.put(parts[0], parts[1]);
+					});
+		}
+
+		dataSourceProperties.forEach((key, value) -> testSource.addDataSourceProperty((String) key, value));
+		try (Connection conn = testSource.getConnection()) {
+			hikari = testSource;
+		}
 	}
 	
 	public void disconnect() {

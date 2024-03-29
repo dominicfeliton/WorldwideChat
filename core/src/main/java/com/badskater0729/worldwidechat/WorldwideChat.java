@@ -6,6 +6,7 @@ import java.util.concurrent.*;
 
 import com.badskater0729.worldwidechat.commands.*;
 import com.badskater0729.worldwidechat.util.*;
+import com.badskater0729.worldwidechat.util.storage.PostgresUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -49,14 +50,14 @@ import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLan
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedMCVersions;
 
 public class WorldwideChat extends JavaPlugin {
+	public static final int bStatsID = 10562;
+	public static final String messagesConfigVersion = "03292024-1"; // MMDDYYYY-revisionNumber
+
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
 	public static int asyncTasksTimeoutSeconds = translatorConnectionTimeoutSeconds - 2;
-	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "03272024-1"; // MMDDYYYY-revisionNumber
 
 	public static WorldwideChat instance;
-	
 	private BukkitAudiences adventure;
 
 	private WorldwideChatHelper wwcHelper;
@@ -67,6 +68,8 @@ public class WorldwideChat extends JavaPlugin {
 	private MongoDBUtils mongoSession;
 
 	private SQLUtils sqlSession;
+
+	private PostgresUtils postgresSession;
 
 	private ExecutorService callbackExecutor;
 
@@ -647,6 +650,8 @@ public class WorldwideChat extends JavaPlugin {
 		sqlSession = i;
 	}
 
+	public void setPostgresSession(PostgresUtils i) { postgresSession = i; }
+
 	public void addActiveTranslator(ActiveTranslator i) {
 		activeTranslators.put(i.getUUID(), i);
 		refs.debugMsg(i.getUUID() + " has been added (or overwrriten) to the internal active translator hashmap.");
@@ -815,12 +820,46 @@ public class WorldwideChat extends JavaPlugin {
 	/* Getters */
 	public ServerAdapterFactory getServerFactory() { return serverFactory; }
 
+	public boolean isMongoConnValid(boolean quiet) {
+		if (mongoSession == null || !mongoSession.isConnected()) {
+			if (!quiet) {
+				getLogger().warning(refs.getMsg("wwcInvalidStorageSession", "MongoDB"));
+			}
+			return false;
+		}
+		return true;
+	}
+
 	public MongoDBUtils getMongoSession() {
 		return mongoSession;
 	}
 
+	public boolean isSQLConnValid(boolean quiet) {
+		if (sqlSession == null || !sqlSession.isConnected()) {
+			if (!quiet) {
+				getLogger().warning(refs.getMsg("wwcInvalidStorageSession", "SQL"));
+			}
+			return false;
+		}
+		return true;
+	}
+
 	public SQLUtils getSqlSession() {
 		return sqlSession;
+	}
+
+	public boolean isPostgresConnValid(boolean quiet) {
+		if (postgresSession == null || !postgresSession.isConnected()) {
+			if (!quiet) {
+				getLogger().warning(refs.getMsg("wwcInvalidStorageSession", "Postgres"));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	public PostgresUtils getPostgresSession() {
+		return postgresSession;
 	}
 
 	public ActiveTranslator getActiveTranslator(Player in) {

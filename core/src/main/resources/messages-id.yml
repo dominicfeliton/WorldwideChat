@@ -496,10 +496,28 @@ Messages:
   systranHttp400: Parameter buruk dikirim ke Systran. Mungkin pasangan bahasa yang
     buruk?
   systranHttp500: Kesalahan server internal dari titik akhir Systran ({0}).
-  wwcInvalidMongoSession: MongoDB diaktifkan di konfigurasi Anda, tetapi koneksi tidak
+  wwcInvalidStorageSession: '{0} diaktifkan di konfigurasi Anda, tetapi koneksi tidak
     dibuat. Silakan coba muat ulang untuk memperbaikinya, tetapi silakan hubungi pengembang
-    jika sebelumnya Anda menerima pesan koneksi yang berhasil dari MongoDB.
-  wwcInvalidSQLSession: SQL diaktifkan di konfigurasi Anda, tetapi koneksi tidak dibuat.
-    Silakan coba muat ulang untuk memperbaikinya, tetapi silakan hubungi pengembang
-    jika sebelumnya Anda menerima pesan koneksi yang berhasil dari SQL.
+    jika sebelumnya Anda menerima pesan koneksi yang berhasil dari {0}.'
+  wwcNewSqlConvertFinish: Selesai mengonversi tabel SQL Anda. Memuat ulang WorldwideChat...
+  wwcNewSqlStruct: Database SQL Anda menggunakan struktur baru dan tidak perlu dikonversi.
+  wwcNewSqlConvertBegin: Mengonversi tabel SQL Anda...
+  wwcOldSqlStructRecords: 'Basis data SQL Anda memiliki pengaturan tabel rekaman pemain
+    yang tidak efisien dari versi WorldwideChat sebelumnya. Anda dapat menjalankan
+    perintah berikut untuk memperbaiki masalah ini: /wwcd convert'
+  wwcOldSqlStructLongIntro: Kami dengan tulus meminta maaf atas ketidaknyamanan ini,
+    tetapi versi WorldwideChat sebelumnya menginisialisasi tabel SQL Anda dengan struktur
+    yang tidak efisien. Meskipun ini akan terus berfungsi dengan plugin kami, ini
+    dapat mengakibatkan perlambatan yang signifikan dengan catatan pemain yang lebih
+    besar.
+  wwcOldSqlStructTrans: 'Basis data SQL Anda memiliki pengaturan tabel penerjemah
+    aktif yang tidak efisien dari versi WorldwideChat sebelumnya. Anda dapat menjalankan
+    perintah berikut untuk memperbaiki masalah ini: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Anda dapat: jatuhkan tabel yang dicetak ke konsol di MySQL,
+    mengonversinya sendiri dan melihat struktur baru di repo github, atau jalankan
+    perintah untuk mencoba konversi secara langsung. Harap pastikan bahwa Anda TELAH
+    MEMBUAT CADANGAN DATABASE ANDA SEBELUM MENJALANKAN INI. Jika sudah, perintahnya
+    adalah: {0}'
+  wwcNewSqlConvertFail: Konversi gagal... harap pulihkan tabel Anda dari cadangan
+    yang Anda buat. Menonaktifkan WorldwideChat...
 

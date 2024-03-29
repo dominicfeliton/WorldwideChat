@@ -33,6 +33,14 @@ Storage:
   mongoPassword: password
   mongoOptionalArgs:
     - authSource=admin
+  usePostgreSQL: false
+  postgresHostname: localhost
+  postgresPort: 5432
+  postgresDatabaseName: cooldatabase
+  postgresUsername: admin
+  postgresPassword: password
+  postgresSSL: false
+  postgresOptionalArgs: []
 Chat:
   sendTranslationChat: true
   sendPluginUpdateChat: true

@@ -499,11 +499,26 @@ Messages:
   systranHttpUnknown: 'Nepoznata http pogreška: {0}'
   systranHttp400: Loši parametri poslani Systranu. Možda je loš jezični par?
   systranHttp500: Interna pogreška poslužitelja iz krajnje točke Systran ({0}).
-  wwcInvalidMongoSession: MongoDB je omogućen u vašoj konfiguraciji, ali veza nije
+  wwcInvalidStorageSession: '{0} je omogućeno u vašoj konfiguraciji, ali veza nije
     uspostavljena. Pokušajte ponovno učitati da biste to riješili, ali kontaktirajte
-    programera ako ste prethodno primili uspješnu poruku o povezivanju od MongoDB
-    -a.
-  wwcInvalidSQLSession: SQL je omogućen u vašoj konfiguraciji, ali veza nije uspostavljena.
-    Pokušajte ponovno učitati da biste to riješili, ali kontaktirajte programera ako
-    ste prethodno primili uspješnu poruku o povezivanju od SQL-a.
+    programera ako ste prethodno primili uspješnu poruku o povezivanju od {0}.'
+  wwcNewSqlConvertFinish: Završeno pretvaranje SQL tablica. Ponovno učitavanje WorldwideChat...
+  wwcNewSqlStruct: Vaša SQL baza podataka koristi novu strukturu i ne treba je pretvarati.
+  wwcNewSqlConvertBegin: Pretvaranje vaših SQL tablica...
+  wwcOldSqlStructLongIntro: Iskreno se ispričavamo zbog neugodnosti, ali prethodna
+    verzija WorldwideChat-a inicijalizirala je vaše SQL tablice s neučinkovitom strukturom.
+    Iako će ovo i dalje funkcionirati s našim dodatkom, to može rezultirati značajnim
+    usporavanjem s većim zapisima igrača.
+  wwcOldSqlStructTrans: 'Vaša SQL baza podataka ima neefikasnu postavku aktivne tablice
+    prevoditelja iz prethodne verzije WorldwideChat-a. Možete pokrenuti sljedeću naredbu
+    da biste riješili ovaj problem: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Možete: ispustiti tablice ispisane na konzolu u MySQL-u,
+    sami ih pretvoriti i pogledati novu strukturu u github repo-u ili pokrenuti naredbu
+    za pokušaj pretvorbe uživo. Provjerite jeste li napravili sigurnosnu kopiju svoje
+    baze podataka prije pokretanja ove baze podataka. Ako imate, naredba je: {0}'
+  wwcNewSqlConvertFail: Pretvorba nije uspjela... vratite tablice iz sigurnosne kopije
+    koju ste napravili. Onemogućavanje WorldwideChat...
+  wwcOldSqlStructRecords: 'Vaša SQL baza podataka ima neefikasnu postavku tablice
+    zapisa igrača iz prethodne verzije WorldwideChat-a. Možete pokrenuti sljedeću
+    naredbu da biste riješili ovaj problem: /wwcd convert'
 

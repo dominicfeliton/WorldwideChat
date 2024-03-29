@@ -479,10 +479,27 @@ Messages:
   systranHttpUnknown: 'Tundmatu http viga: {0}'
   systranHttp400: Halvad parameetrid saadeti Systranile. Võib olla halb keelepaar?
   systranHttp500: Sisemine serveri viga Systrani lõpppunktist ({0}).
-  wwcInvalidMongoSession: MongoDB on teie konfiguratsioonis lubatud, kuid ühendust
-    pole loodud. Selle parandamiseks proovige uuesti laadida, kuid võtke ühendust
-    arendajaga, kui olete varem saanud MongoDB-lt eduka ühenduse teate.
-  wwcInvalidSQLSession: SQL on teie konfiguratsioonis lubatud, kuid ühendust pole
-    loodud. Selle parandamiseks proovige uuesti laadida, kuid võtke ühendust arendajaga,
-    kui olete varem SQL-ilt eduka ühenduse teate saanud.
+  wwcInvalidStorageSession: '{0} on teie konfiguratsioonis lubatud, kuid ühendust
+    pole loodud. Proovige selle parandamiseks uuesti laadida, kuid võtke ühendust
+    arendajaga, kui olete varem saanud eduka ühenduse teate saidilt {0}.'
+  wwcNewSqlConvertFinish: Lõpetas oma SQL-tabelite teisendamine. WorldwideChati uuesti
+    laadimine...
+  wwcNewSqlStruct: Teie SQL-andmebaas kasutab uut struktuuri ja seda pole vaja teisendada.
+  wwcNewSqlConvertBegin: SQL-tabelite teisendamine...
+  wwcOldSqlStructLongIntro: Vabandame siiralt ebamugavuste pärast, kuid WorldwideChati
+    eelmine versioon initsialiseeris teie SQL-tabelid ebatõhusa struktuuriga. Kuigi
+    see töötab meie pistikprogrammiga jätkuvalt, suuremate mängijate rekorditega võib
+    see põhjustada märkimisväärset aeglustumist.
+  wwcOldSqlStructTrans: 'Teie SQL-andmebaasis on WorldwideChati eelmisest versioonist
+    ebatõhus aktiivse tõlkimistabeli seadistus. Selle probleemi lahendamiseks võite
+    käivitada järgmise käsu: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Võite: loobuda MySQL-is konsooliks trükitud tabelid, teisendada
+    need ise ja vaadata githubi repo-s uut struktuuri või käivitada käsk konversiooni
+    reaalajas proovimiseks. Enne selle käivitamist veenduge, et OLETE OMA ANDMEBAASIST
+    VARUKOOPIA TEINUD. Kui teil on, on käsk: {0}'
+  wwcNewSqlConvertFail: Teisendamine ebaõnnestus... palun taastage oma tabelid tehtud
+    varukoopiast. WorldwideChati keelamine...
+  wwcOldSqlStructRecords: 'Teie SQL-andmebaasis on WorldwideChati eelmisest versioonist
+    ebatõhus mängijate kirjetabeli seadistus. Selle probleemi lahendamiseks võite
+    käivitada järgmise käsu: /wwcd convert'
 

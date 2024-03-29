@@ -500,10 +500,26 @@ Messages:
   systranHttpUnknown: 'Nežinoma http klaida: {0}'
   systranHttp400: Blogi parametrai išsiųsti “Systran”. Ar gali būti bloga kalbų pora?
   systranHttp500: Vidinė serverio klaida iš Systran galutinio taško ({0}).
-  wwcInvalidMongoSession: “MongoDB” yra įjungtas jūsų konfigūracijoje, tačiau ryšys
-    nėra užmegztas. Pabandykite iš naujo įkelti, kad tai ištaisytumėte, tačiau susisiekite
-    su kūrėju, jei anksčiau gavote sėkmingo ryšio pranešimą iš MongoDB.
-  wwcInvalidSQLSession: SQL yra įjungtas jūsų konfigūracijoje, tačiau ryšys nėra užmegztas.
-    Prašome pabandyti iš naujo įkelti, kad ištaisytumėte tai, bet prašome susisiekti
-    su kūrėju, jei anksčiau gavote sėkmingo ryšio pranešimą iš SQL.
+  wwcInvalidStorageSession: '{0} yra įjungta jūsų konfigūracijoje, tačiau ryšys nėra
+    užmegztas. Pabandykite perkrauti, kad tai ištaisytumėte, tačiau kreipkitės į kūrėją,
+    jei anksčiau gavote sėkmingo ryšio pranešimą iš {0}.'
+  wwcNewSqlConvertFinish: Baigė konvertuoti SQL lenteles. Perkraunama WorldwideChat...
+  wwcNewSqlStruct: Jūsų SQL duomenų bazė naudoja naują struktūrą ir jos nereikia konvertuoti.
+  wwcNewSqlConvertBegin: SQL lentelių konvertavimas...
+  wwcOldSqlStructRecords: 'Jūsų SQL duomenų bazėje yra neefektyvi grotuvo įrašų lentelės
+    sąranka iš ankstesnės WorldwideChat versijos. Norėdami išspręsti šią problemą,
+    galite paleisti šią komandą: /wwcd convert'
+  wwcOldSqlStructLongIntro: Nuoširdžiai atsiprašome už nepatogumus, tačiau ankstesnė
+    “WorldwideChat” versija inicijavo jūsų SQL lenteles su neefektyvia struktūra.
+    Nors tai ir toliau veiks su mūsų įskiepiu, tai gali sukelti didelius sulėtėjimus
+    su didesniais žaidėjų įrašais.
+  wwcOldSqlStructTrans: 'Jūsų SQL duomenų bazėje yra neefektyvi aktyvi vertėjo lentelės
+    sąranka iš ankstesnės WorldwideChat versijos. Norėdami išspręsti šią problemą,
+    galite paleisti šią komandą: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Galite: numesti lenteles, atspausdintas į konsolę MySQL,
+    konvertuoti jas patys ir pažvelgti į naują struktūrą github repo, arba paleisti
+    komandą bandyti konvertuoti gyvai. Įsitikinkite, kad prieš paleisdami šią duomenų
+    bazę padarėte atsarginę kopiją. Jei turite, komanda yra: {0}'
+  wwcNewSqlConvertFail: Konversija nepavyko... prašome atkurti savo lenteles iš atsarginės
+    kopijos, kurią padarėte. “WorldwideChat” išjungimas...
 

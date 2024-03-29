@@ -491,10 +491,29 @@ Messages:
   systranHttpUnknown: 'Naməlum http xətası: {0}'
   systranHttp400: Systrana göndərilən pis parametrlər. Pis dil cütlüyü ola bilərmi?
   systranHttp500: Systran son nöqtəsindən daxili server xətası ({0}).
-  wwcInvalidMongoSession: MongoDB konfiqurasiyanızda aktivdir, lakin əlaqə qurulmayıb.
-    Zəhmət olmasa bunu düzəltmək üçün yenidən yükləməyə çalışın, ancaq əvvəllər MongoDB
-    -dən uğurlu bir əlaqə mesajı aldığınız təqdirdə tərtibatçıya əla
-  wwcInvalidSQLSession: SQL konfiqurasiyanızda aktivdir, lakin əlaqə qurulmayıb. Zəhmət
-    olmasa bunu düzəltmək üçün yenidən yükləməyə çalışın, ancaq əvvəllər SQL-dən uğurlu
-    bir əlaqə mesajı alsanız, geliştiriciyə
+  wwcInvalidStorageSession: Konfiqurasiyanızda {0} aktivdir, lakin əlaqə qurulmayıb.
+    Zəhmət olmasa bunu düzəltmək üçün yenidən yükləməyə çalışın, ancaq əvvəllər {0}
+    -dən uğurlu bir əlaqə mesajı alsanız, tərtibatçı ilə əla
+  wwcNewSqlConvertFinish: SQL cədvəllərinizi çevirməyi bitirdi. WorldwideChat-ı yenidən
+    yükləyin...
+  wwcNewSqlStruct: SQL verilənlər bazanız yeni quruluşdan istifadə edir və çevrilməsinə
+    ehtiyac yoxdur.
+  wwcNewSqlConvertBegin: SQL cədvəllərinizi çevirmək...
+  wwcOldSqlStructLongIntro: Narahatlığa görə səmimi şəkildə üzr istəyirik, lakin WorldwideChat-ın
+    əvvəlki versiyası SQL cədvəllərinizi səmərəsiz bir quruluşla başlatdı. Bu, plaginimizlə
+    işləməyə davam etsə də, daha böyük oyunçu qeydləri ilə əhəmiyyətli yavaşlamalar
+    ilə nəticələnə bilər.
+  wwcOldSqlStructTrans: 'SQL verilənlər bazanızda WorldwideChat-ın əvvəlki versiyasından
+    səmərəsiz aktiv tərcüməçi cədvəli quruluşu var. Bu problemi həll etmək üçün aşağıdakı
+    əmri işə sala bilərsiniz: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Siz: MySQL-də konsol üçün çap olunan cədvəlləri buraxın,
+    onları özünüz çevirin və github repo-dakı yeni quruluşa baxın və ya çevrilməyə
+    cəhd etmək üçün bir əmr işə salın. Xahiş edirəm bunu işə salmadan əvvəl verilənlər
+    bazanızın ehtiyat nüsxəsini hazırladığınızdan əmin olun Əgər varsa, əmr belədir:
+    {0}'
+  wwcNewSqlConvertFail: Dönüşüm uğursuz oldu... xahiş edirəm masalarınızı hazırladığınız
+    ehtiyat nüsxə WorldwideChat-ın söndürülməsi...
+  wwcOldSqlStructRecords: 'SQL verilənlər bazanızda WorldwideChat-ın əvvəlki versiyasından
+    səmərəsiz bir oyunçu qeyd cədvəli quruluşu var. Bu problemi həll etmək üçün aşağıdakı
+    əmri işə sala bilərsiniz: /wwcd convert'
 

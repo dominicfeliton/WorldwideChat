@@ -497,10 +497,28 @@ Messages:
   systranHttp400: Parameter buruk dihantar ke Systran. Mungkin pasangan bahasa yang
     buruk?
   systranHttp500: Ralat pelayan dalaman dari titik akhir Systran ({0}).
-  wwcInvalidMongoSession: MongoDB diaktifkan dalam konfigurasi anda, tetapi sambungan
+  wwcInvalidStorageSession: '{0} diaktifkan dalam konfigurasi anda, tetapi sambungan
     tidak ditubuhkan. Sila cuba muat semula untuk memperbaikinya, tetapi sila hubungi
-    pemaju jika anda sebelum ini menerima mesej sambungan yang berjaya dari MongoDB.
-  wwcInvalidSQLSession: SQL diaktifkan dalam konfigurasi anda, tetapi sambungan tidak
-    ditubuhkan. Sila cuba memuatkan semula untuk memperbaikinya, tetapi sila hubungi
-    pemaju jika anda sebelum ini menerima mesej sambungan yang berjaya dari SQL.
+    pemaju jika anda sebelum ini menerima mesej sambungan yang berjaya dari {0}.'
+  wwcNewSqlConvertFinish: Selesai menukar jadual SQL anda. Memuatkan semula WorldwideChat...
+  wwcNewSqlStruct: Pangkalan data SQL anda menggunakan struktur baru dan tidak perlu
+    ditukar.
+  wwcNewSqlConvertBegin: Menukar jadual SQL anda...
+  wwcOldSqlStructRecords: 'Pangkalan data SQL anda mempunyai persediaan jadual rekod
+    pemain yang tidak cekap daripada versi WorldwideChat sebelumnya. Anda boleh menjalankan
+    arahan berikut untuk menyelesaikan masalah ini: /wwcd convert'
+  wwcOldSqlStructLongIntro: Kami dengan tulus memohon maaf atas kesulitan, tetapi
+    versi terdahulu WorldwideChat memulakan jadual SQL anda dengan struktur yang tidak
+    cekap. Walaupun ini akan terus berfungsi dengan plugin kami, ia boleh mengakibatkan
+    perlambatan yang ketara dengan rekod pemain yang lebih besar.
+  wwcOldSqlStructTrans: 'Pangkalan data SQL anda mempunyai persediaan jadual penterjemah
+    aktif yang tidak cekap daripada versi terdahulu WorldwideChat. Anda boleh menjalankan
+    arahan berikut untuk menyelesaikan masalah ini: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Anda boleh: menjatuhkan jadual yang dicetak untuk konsol
+    di MySQL, menukarnya sendiri dan lihat struktur baru dalam repo github, atau jalankan
+    arahan untuk mencuba penukaran secara langsung. Sila pastikan anda TELAH MEMBUAT
+    SANDARAN PANGKALAN DATA ANDA SEBELUM MENJALANKANNYA. Jika anda mempunyai, perintahnya
+    ialah: {0}'
+  wwcNewSqlConvertFail: Penukaran gagal... sila pulihkan jadual anda dari sandaran
+    yang anda buat. Melumpuhkan WorldwideChat...
 

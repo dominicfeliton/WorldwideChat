@@ -8,9 +8,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.DatabaseMetaData;
 import java.util.Iterator;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
+import com.badskater0729.worldwidechat.util.storage.PostgresUtils;
 import org.bson.Document;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -36,6 +38,8 @@ public class LoadUserData implements Runnable {
 
 	private SQLUtils sql = main.getSqlSession();
 
+	private PostgresUtils postgres = main.getPostgresSession();
+
 	// USE LOCALLY PASSED TRANSLATOR NAME.
 	private String transName;
 
@@ -56,47 +60,66 @@ public class LoadUserData implements Runnable {
 
 		/* Load user records (/wwcs) */
 		refs.debugMsg("Loading user records or /wwcs...");
-		if (mainConfig.getBoolean("Storage.useSQL") && refs.isSQLConnValid(false)) {
-			try {
+		if (mainConfig.getBoolean("Storage.useSQL") && main.isSQLConnValid(false)) {
+			try (Connection sqlConnection = sql.getConnection()) {
+				// Warn about old table structs
+				refs.detectOutdatedRecordTable();
+				refs.detectOutdatedTransTable();
+
 				/* Create tables if they do not exist already */
-				Connection sqlConnection = sql.getConnection();
-				PreparedStatement initActiveTranslators = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
+				/* OLD BAD STRUCTS FOR REFERENCE
+				try (PreparedStatement initActiveTranslators = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
 						+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),inLangCode VARCHAR(12),outLangCode VARCHAR(12),rateLimit VARCHAR(256),"
 						+ "rateLimitPreviousTime VARCHAR(256),translatingChatOutgoing VARCHAR(12), translatingChatIncoming VARCHAR(12),"
-						+ "translatingBook VARCHAR(12),translatingSign VARCHAR(12),translatingItem VARCHAR(12),translatingEntity VARCHAR(12),PRIMARY KEY (playerUUID))");
-				initActiveTranslators.executeUpdate();
-				initActiveTranslators.close();
-				PreparedStatement initPlayerRecords = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS playerRecords "
+						+ "translatingBook VARCHAR(12),translatingSign VARCHAR(12),translatingItem VARCHAR(12),translatingEntity VARCHAR(12),PRIMARY KEY (playerUUID))")) {
+					initActiveTranslators.executeUpdate();
+				}
+				try (PreparedStatement initPlayerRecords = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS playerRecords "
 						+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),attemptedTranslations VARCHAR(256),successfulTranslations VARCHAR(256),"
-						+ "lastTranslationTime VARCHAR(256),PRIMARY KEY (playerUUID))");
-				initPlayerRecords.executeUpdate();
-				initPlayerRecords.close();
+						+ "lastTranslationTime VARCHAR(256),PRIMARY KEY (playerUUID))")) {
+					initPlayerRecords.executeUpdate();
+				}
+				 */
+				try (PreparedStatement initActiveTranslators = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
+						+ "(creationDate VARCHAR(40),playerUUID VARCHAR(40),inLangCode VARCHAR(6),outLangCode VARCHAR(6),rateLimit INT,"
+						+ "rateLimitPreviousTime VARCHAR(40),translatingChatOutgoing BOOLEAN, translatingChatIncoming BOOLEAN,"
+						+ "translatingBook BOOLEAN,translatingSign BOOLEAN,translatingItem BOOLEAN,translatingEntity BOOLEAN,PRIMARY KEY (playerUUID))")) {
+					initActiveTranslators.executeUpdate();
+				}
+				try (PreparedStatement initPlayerRecords = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS playerRecords "
+						+ "(creationDate VARCHAR(40),playerUUID VARCHAR(40),attemptedTranslations INT,successfulTranslations INT,"
+						+ "lastTranslationTime VARCHAR(40),PRIMARY KEY (playerUUID))")) {
+					initPlayerRecords.executeUpdate();
+				}
+
 				
 				// Load PlayerRecord using SQL
-				ResultSet rs = sql.getConnection().createStatement().executeQuery("SELECT * FROM playerRecords");
-				while (rs.next()) {
-					PlayerRecord recordToAdd = new PlayerRecord(
-							rs.getString("lastTranslationTime"),
-							rs.getString("playerUUID"),
-							rs.getInt("attemptedTranslations"),
-							rs.getInt("successfulTranslations")
-							);
-					recordToAdd.setHasBeenSaved(true);
-					main.addPlayerRecord(recordToAdd);
+				try (ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM playerRecords")) {
+					while (rs.next()) {
+						PlayerRecord recordToAdd = new PlayerRecord(
+								rs.getString("lastTranslationTime"),
+								rs.getString("playerUUID"),
+								rs.getInt("attemptedTranslations"),
+								rs.getInt("successfulTranslations")
+						);
+						recordToAdd.setHasBeenSaved(true);
+						main.addPlayerRecord(recordToAdd);
+					}
 				}
-				rs.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} else if (mainConfig.getBoolean("Storage.useMongoDB") && refs.isMongoConnValid(false)) {
+		} else if (mainConfig.getBoolean("Storage.useMongoDB") && main.isMongoConnValid(false)) {
 			/* Initialize collections, create if they do not exist */
 			MongoDatabase database = mongo.getActiveDatabase();
 			try {
 				database.createCollection("ActiveTranslators");
 				database.createCollection("PlayerRecords");
-			} catch (MongoCommandException e) {}
+			} catch (MongoCommandException e) {
+				e.printStackTrace();
+			}
 			MongoCollection<Document> playerRecordCol = database.getCollection("PlayerRecords");
-			
+
 			// Load PlayerRecord using MongoDB
 			FindIterable<Document> iterDoc = playerRecordCol.find();
 			Iterator<Document> it = iterDoc.iterator();
@@ -107,9 +130,42 @@ public class LoadUserData implements Runnable {
 						currDoc.getString("playerUUID"),
 						currDoc.getInteger("attemptedTranslations"),
 						currDoc.getInteger("successfulTranslations")
-						);
+				);
 				recordToAdd.setHasBeenSaved(true);
 				main.addPlayerRecord(recordToAdd);
+			}
+		} else if (mainConfig.getBoolean("Storage.usePostgreSQL") && main.isPostgresConnValid(false)) {
+			try (Connection postgresConnection = postgres.getConnection()) {
+				// Create tables if they do not exist already
+				try (PreparedStatement initActiveTranslators = postgresConnection.prepareStatement(
+						"CREATE TABLE IF NOT EXISTS activeTranslators " +
+								"(creationDate VARCHAR(40),playerUUID VARCHAR(40),inLangCode VARCHAR(6),outLangCode VARCHAR(6),rateLimit INT," +
+								"rateLimitPreviousTime VARCHAR(40),translatingChatOutgoing BOOLEAN, translatingChatIncoming BOOLEAN," +
+								"translatingBook BOOLEAN,translatingSign BOOLEAN,translatingItem BOOLEAN,translatingEntity BOOLEAN,PRIMARY KEY (playerUUID))")) {
+					initActiveTranslators.executeUpdate();
+				}
+				try (PreparedStatement initPlayerRecords = postgresConnection.prepareStatement(
+						"CREATE TABLE IF NOT EXISTS playerRecords " +
+								"(creationDate VARCHAR(40),playerUUID UUID,attemptedTranslations INT,successfulTranslations INT," +
+								"lastTranslationTime VARCHAR(40),PRIMARY KEY (playerUUID))")) {
+					initPlayerRecords.executeUpdate();
+				}
+
+				// Load PlayerRecord using Postgres
+				try (ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT * FROM playerRecords")) {
+					while (rs.next()) {
+						PlayerRecord recordToAdd = new PlayerRecord(
+								rs.getString("lastTranslationTime"),
+								rs.getString("playerUUID"),
+								rs.getInt("attemptedTranslations"),
+								rs.getInt("successfulTranslations")
+						);
+						recordToAdd.setHasBeenSaved(true);
+						main.addPlayerRecord(recordToAdd);
+					}
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
 			}
 		} else {
 			for (File eaFile : statsFolder.listFiles()) {
@@ -141,40 +197,40 @@ public class LoadUserData implements Runnable {
 
 		/* Load user files (last translation session, etc.) */
 		refs.debugMsg("Loading user data or /wwct...");
-		if (mainConfig.getBoolean("Storage.useSQL") && refs.isSQLConnValid(false)) {
-			try {
+		if (mainConfig.getBoolean("Storage.useSQL") && main.isSQLConnValid(false)) {
+			try (Connection sqlConnection = sql.getConnection()) {
 				// Load ActiveTranslator using SQL
-				ResultSet rs = sql.getConnection().createStatement().executeQuery("SELECT * FROM activeTranslators");
-				while (rs.next()) {
-					String inLang = rs.getString("inLangCode");
-					String outLang = rs.getString("outLangCode");
-					if (!validLangCodes(inLang, outLang)) {
-						inLang = "en";
-						outLang = "es";
+				try (ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM activeTranslators")) {
+					while (rs.next()) {
+						String inLang = rs.getString("inLangCode");
+						String outLang = rs.getString("outLangCode");
+						if (!validLangCodes(inLang, outLang)) {
+							inLang = "en";
+							outLang = "es";
+						}
+						ActiveTranslator translatorToAdd = new ActiveTranslator(
+								rs.getString("playerUUID"),
+								inLang,
+								outLang
+						);
+						if (!rs.getString("rateLimitPreviousTime").equalsIgnoreCase("None")) {
+							translatorToAdd.setRateLimitPreviousTime(Instant.parse(rs.getString("rateLimitPreviousTime")));
+						}
+						translatorToAdd.setTranslatingChatOutgoing(rs.getBoolean("translatingChatOutgoing"));
+						translatorToAdd.setTranslatingChatIncoming(rs.getBoolean("translatingChatIncoming"));
+						translatorToAdd.setTranslatingBook(rs.getBoolean("translatingBook"));
+						translatorToAdd.setTranslatingSign(rs.getBoolean("translatingSign"));
+						translatorToAdd.setTranslatingItem(rs.getBoolean("translatingItem"));
+						translatorToAdd.setTranslatingEntity(rs.getBoolean("translatingEntity"));
+						translatorToAdd.setRateLimit(rs.getInt("rateLimit"));
+						translatorToAdd.setHasBeenSaved(true);
+						main.addActiveTranslator(translatorToAdd);
 					}
-					ActiveTranslator translatorToAdd = new ActiveTranslator(
-							rs.getString("playerUUID"),
-							inLang,
-							outLang
-							);
-					if (!rs.getString("rateLimitPreviousTime").equalsIgnoreCase("None")) {
-						translatorToAdd.setRateLimitPreviousTime(Instant.parse(rs.getString("rateLimitPreviousTime")));
-					}
-					translatorToAdd.setTranslatingChatOutgoing(rs.getBoolean("translatingChatOutgoing"));
-					translatorToAdd.setTranslatingChatIncoming(rs.getBoolean("translatingChatIncoming"));
-					translatorToAdd.setTranslatingBook(rs.getBoolean("translatingBook"));
-					translatorToAdd.setTranslatingSign(rs.getBoolean("translatingSign"));
-					translatorToAdd.setTranslatingItem(rs.getBoolean("translatingItem"));
-					translatorToAdd.setTranslatingEntity(rs.getBoolean("translatingEntity"));
-					translatorToAdd.setRateLimit(rs.getInt("rateLimit"));
-					translatorToAdd.setHasBeenSaved(true);
-					main.addActiveTranslator(translatorToAdd);
 				}
-				rs.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} else if (mainConfig.getBoolean("Storage.useMongoDB") && refs.isMongoConnValid(false)) {
+		} else if (mainConfig.getBoolean("Storage.useMongoDB") && main.isMongoConnValid(false)) {
 			// Load Active Translator using MongoDB
 			MongoDatabase database = mongo.getActiveDatabase();
 			MongoCollection<Document> activeTranslatorCol = database.getCollection("ActiveTranslators");
@@ -205,6 +261,39 @@ public class LoadUserData implements Runnable {
 				translatorToAdd.setRateLimit(currDoc.getInteger("rateLimit"));
 				translatorToAdd.setHasBeenSaved(true);
 				main.addActiveTranslator(translatorToAdd);
+			}
+		} else if (mainConfig.getBoolean("Storage.usePostgreSQL") && main.isPostgresConnValid(false)) {
+			try (Connection postgresConnection = postgres.getConnection()) {
+				// Load ActiveTranslator using Postgres
+				try (ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT * FROM activeTranslators")) {
+					while (rs.next()) {
+						String inLang = rs.getString("inLangCode");
+						String outLang = rs.getString("outLangCode");
+						if (!validLangCodes(inLang, outLang)) {
+							inLang = "en";
+							outLang = "es";
+						}
+						ActiveTranslator translatorToAdd = new ActiveTranslator(
+								rs.getString("playerUUID"),
+								inLang,
+								outLang
+						);
+						if (!rs.getString("rateLimitPreviousTime").equalsIgnoreCase("None")) {
+							translatorToAdd.setRateLimitPreviousTime(Instant.parse(rs.getString("rateLimitPreviousTime")));
+						}
+						translatorToAdd.setTranslatingChatOutgoing(rs.getBoolean("translatingChatOutgoing"));
+						translatorToAdd.setTranslatingChatIncoming(rs.getBoolean("translatingChatIncoming"));
+						translatorToAdd.setTranslatingBook(rs.getBoolean("translatingBook"));
+						translatorToAdd.setTranslatingSign(rs.getBoolean("translatingSign"));
+						translatorToAdd.setTranslatingItem(rs.getBoolean("translatingItem"));
+						translatorToAdd.setTranslatingEntity(rs.getBoolean("translatingEntity"));
+						translatorToAdd.setRateLimit(rs.getInt("rateLimit"));
+						translatorToAdd.setHasBeenSaved(true);
+						main.addActiveTranslator(translatorToAdd);
+					}
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
 			}
 		} else {
 			for (File eaFile : userDataFolder.listFiles()) {

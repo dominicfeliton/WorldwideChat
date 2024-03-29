@@ -500,11 +500,27 @@ Messages:
   systranHttpUnknown: 'Nezināma http kļūda: {0}'
   systranHttp400: Slikti parametri nosūtīti Systran. Varētu būt slikts valodu pāris?
   systranHttp500: Iekšējā servera kļūda no Systran galapunkta ({0}).
-  wwcInvalidMongoSession: MongoDB ir iespējots jūsu konfigurācijā, bet savienojums
-    nav izveidots. Lūdzu, mēģiniet atkārtoti ielādēt, lai to labotu, taču, lūdzu,
-    sazinieties ar izstrādātāju, ja iepriekš esat saņēmis veiksmīgu savienojuma ziņojumu
-    no MongoDB.
-  wwcInvalidSQLSession: SQL ir iespējots jūsu konfigurācijā, bet savienojums nav izveidots.
-    Lūdzu, mēģiniet atkārtoti ielādēt, lai to labotu, taču, lūdzu, sazinieties ar
-    izstrādātāju, ja iepriekš esat saņēmis veiksmīgu savienojuma ziņojumu no SQL.
+  wwcInvalidStorageSession: Jūsu konfigurācijā ir iespējots {0}, bet savienojums nav
+    izveidots. Lūdzu, mēģiniet atkārtoti ielādēt, lai to labotu, taču, lūdzu, sazinieties
+    ar izstrādātāju, ja iepriekš esat saņēmis veiksmīgu savienojuma ziņojumu no {0}.
+  wwcNewSqlConvertFinish: Pabeidzis SQL tabulu konvertēšanu. Pārlādē WorldwideChat...
+  wwcNewSqlStruct: Jūsu SQL datu bāze izmanto jauno struktūru, un tā nav jāpārvērš.
+  wwcNewSqlConvertBegin: SQL tabulu konvertēšana...
+  wwcOldSqlStructRecords: 'Jūsu SQL datu bāzē ir neefektīva atskaņotāju ierakstu tabulas
+    iestatīšana no iepriekšējās WorldwideChat versijas. Lai novērstu šo problēmu,
+    varat palaist šādu komandu: /wwcd convert'
+  wwcOldSqlStructLongIntro: Mēs sirsnīgi atvainojamies par neērtībām, taču iepriekšējā
+    WorldwideChat versija inicializēja jūsu SQL tabulas ar neefektīvu struktūru. Lai
+    gan tas turpinās darboties ar mūsu spraudni, tas var izraisīt ievērojamu palēnināšanos
+    ar lielākiem spēlētāju ierakstiem.
+  wwcOldSqlStructTrans: 'Jūsu SQL datu bāzē ir neefektīva aktīvā tulkotāja tabulas
+    iestatīšana no iepriekšējās WorldwideChat versijas. Lai novērstu šo problēmu,
+    varat palaist šādu komandu: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Jūs varat: nomest tabulas, kas izdrukātas konsolei MySQL,
+    konvertēt tās pats un apskatīt jauno struktūru github repo vai palaist komandu,
+    lai mēģinātu veikt konvertēšanu tiešraidē. Lūdzu, pārliecinieties, vai esat izveidojis
+    savas datu bāzes dublējumu pirms šīs darbības palaišanas. Ja jums ir, komanda
+    ir: {0}'
+  wwcNewSqlConvertFail: Konvertēšana neizdevās... lūdzu, atjaunojiet tabulas no izveidotā
+    dublējuma. WorldwideChat atspējošana...
 

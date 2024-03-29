@@ -3,6 +3,7 @@ package com.badskater0729.worldwidechat.util.storage;
 import java.util.List;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
+import com.mongodb.ConnectionString;
 import org.bson.BsonDocument;
 import org.bson.BsonInt64;
 import org.bson.conversions.Bson;
@@ -12,6 +13,9 @@ import com.mongodb.MongoException;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.MongoClientSettings;
+
+import java.util.stream.Collectors;
 
 public class MongoDBUtils {
 	private String host;
@@ -43,14 +47,23 @@ public class MongoDBUtils {
 		}
 
 		/* Setup valid mongoDB URL */
-		String url = "mongodb://" + username + ":" + password + "@" + host + ":" + port + "/?connectTimeoutMS=" + WorldwideChat.translatorFatalAbortSeconds*1000 + "&serverSelectionTimeoutMS=" + WorldwideChat.translatorFatalAbortSeconds*1000;
-		if (argList != null && argList.size() > 0) {
-			for (String eaArg : argList) {
-				url += "&" + eaArg.substring(0, eaArg.indexOf("=")) + "=" + eaArg.substring(eaArg.indexOf("=")+1);
-				refs.debugMsg(eaArg.substring(0, eaArg.indexOf("=")) + ":" + eaArg.substring(eaArg.indexOf("=")+1));
-			}
+		String connectionString = "";
+		if (argList != null && !argList.isEmpty()) {
+			String args = argList.stream()
+					.collect(Collectors.joining("&"));
+
+			connectionString = String.format("mongodb://%s:%s@%s:%s/?%s",
+					username, password, host, port, args);
+		} else {
+			connectionString = String.format("mongodb://%s:%s@%s:%s",
+					username, password, host, port);
 		}
-		MongoClient testClient = MongoClients.create(url);
+
+		MongoClientSettings settings = MongoClientSettings.builder()
+				.applyConnectionString(new ConnectionString(connectionString))
+				.build();
+
+		MongoClient testClient = MongoClients.create(settings);
 		
 		/* Attempt connection, test with ping command */
 		MongoDatabase database = testClient.getDatabase(databaseName);

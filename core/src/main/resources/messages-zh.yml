@@ -390,7 +390,16 @@ Messages:
   systranHttpUnknown: 未知的 http 错误：{0}
   systranHttp400: 向 Systran 发送的参数不正确。可能是一对不好的语言对吗？
   systranHttp500: 来自 Systran 端点 ({0}) 的内部服务器错误。
-  wwcInvalidMongoSession: 您的配置中启用了 MongoDB，但未建立连接。请尝试重新加载以修复此问题，但如果您之前收到了来自 MongoDB
-    的成功连接消息，请联系开发人员。
-  wwcInvalidSQLSession: 您的配置中启用了 SQL，但未建立连接。请尝试重新加载以修复此问题，但如果您之前收到了来自 SQL 的成功连接消息，请联系开发人员。
+  wwcInvalidStorageSession: '{0} 已在您的配置中启用，但未建立连接。请尝试重新加载以修复此问题，但如果您之前收到了来自 {0} 的成功连接消息，请联系开发者。'
+  wwcNewSqlConvertFinish: 已完成您的 SQL 表的转换。正在加载 WorldwideChat...
+  wwcNewSqlStruct: 您的 SQL 数据库正在使用新结构，无需转换。
+  wwcNewSqlConvertBegin: 正在转换您的 SQL 表...
+  wwcOldSqlStructLongIntro: 对于给您带来的不便，我们深表歉意，但是 WorldwideChat 的先前版本使用低效的结构初始化了您的 SQL
+    表。虽然这将在我们的插件中继续起作用，但如果玩家记录越大，可能会导致速度明显减慢。
+  wwcOldSqlStructTrans: 您的 SQL 数据库在以前版本的 WorldwideChat 中设置的活跃翻译器表的效率低下。你可以运行以下命令来修复这个问题：/wwcd
+    转换
+  wwcOldSqlStructLongTodo: 你可以：在 MySQL 中删除打印到控制台的表，自己转换然后在 github 存储库中查看新结构，或者运行命令尝试实时转换。在运行此命令之前，请确保您已备份了数据库。如果你有，命令是：{0}
+  wwcNewSqlConvertFail: 转换失败... 请从您创建的备份中恢复您的表。禁用全球聊天...
+  wwcOldSqlStructRecords: 您的 SQL 数据库在以前版本的 WorldwideChat 中设置的玩家记录表效率低下。你可以运行以下命令来修复这个问题：/wwcd
+    转换
 

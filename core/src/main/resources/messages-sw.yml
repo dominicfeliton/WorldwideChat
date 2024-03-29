@@ -493,11 +493,27 @@ Messages:
     ya lugha?
   systranHttp500: Hitilafu ya seva ya ndani kutoka kwa ajili ya mwisho ya Systran
     ({0}).
-  wwcInvalidMongoSession: MongoDB imewezeshwa katika usanidi wako, lakini uunganisho
+  wwcInvalidStorageSession: '{0} imewezeshwa katika usanidi wako, lakini uunganisho
     haujaanzishwa. Tafadhali jaribu kupakia tena ili kurekebisha hii, lakini tafadhali
     wasiliana na msanidi programu ikiwa hapo awali ulipokea ujumbe wa unganisho uliofanikiwa
-    kutoka MongoDB
-  wwcInvalidSQLSession: SQL imewezeshwa katika usanidi wako, lakini uunganisho haujaanzishwa.
-    Tafadhali jaribu kupakia tena ili kurekebisha hii, lakini tafadhali wasiliana
-    na msanidi programu ikiwa hapo awali ulipokea ujumbe wa unganisho uliofaniki
+    kutoka {0'
+  wwcNewSqlConvertFinish: Ikimaliza kubadilisha meza zako za SQL. Inapakia upya WorldwideChat...
+  wwcNewSqlStruct: Hifadhidata yako ya SQL inatumia muundo mpya na haitaji kubadilishwa.
+  wwcNewSqlConvertBegin: Kubadilisha meza zako za SQL...
+  wwcOldSqlStructRecords: 'Hifadhidata yako ya SQL ina usanidi wa meza ya rekodi ya
+    mchezaji usio na ufanisi kutoka toleo la awali la WorldwideChat. Unaweza kuendesha
+    amri ifuatayo ili kurekebisha suala hili: /wwcd convert'
+  wwcOldSqlStructLongIntro: Tunaomba msamaha kwa dhati kwa usumbufu, lakini toleo
+    la awali la WorldwideChat lilianzisha meza zako za SQL na muundo usio na ufanisi.
+    Ingawa hii itaendelea kufanya kazi na programu-jalizi yetu, inaweza kusababisha
+    upungufu mkubwa na rekodi kubwa za wachezaji.
+  wwcOldSqlStructTrans: 'Hifadhidata yako ya SQL ina usanidi wa meza ya mtafsiri isiyo
+    na ufanisi kutoka toleo la awali la WorldwideChat. Unaweza kuendesha amri ifuatayo
+    ili kurekebisha suala hili: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Unaweza: kuacha meza zilizochapishwa ili kutolewa kwenye
+    MySQL, zibadilisha mwenyewe na uangalie muundo mpya katika repo ya github, au
+    tumia amri ili kujaribu ubadilishaji moja kwa moja. Tafadhali hakikisha kuwa UMEFANYA
+    NAHIFADHI YA HIFADHIDATA YAKO KABLA YA KUENDESHA HII. Ikiwa una, amri ni: {0}'
+  wwcNewSqlConvertFail: Ubadilishaji ulishindwa... tafadhali rudisha meza zako kutoka
+    kwa chelezo uliyofanya. Kuzuia WorldwideChat...
 

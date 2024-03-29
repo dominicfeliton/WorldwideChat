@@ -77,7 +77,7 @@ public class TestTranslationUtils {
 
 		WorldwideChatTests.reloadWWC();
 
-		assertTrue(main.getMongoSession() != null && main.getMongoSession().isConnected());
+		assertTrue(main.isMongoConnValid(true));
 		server.getLogger().info("RUNNING DATA RETENTION TEST: wwct en fr");
 		playerMock.performCommand("worldwidechat:wwct en fr");
 		playerMock.performCommand("worldwidechat:wwctb");
@@ -104,7 +104,7 @@ public class TestTranslationUtils {
 		// Verify ActiveTranslators
 		ActiveTranslator activeTrans1 = plugin.getActiveTranslator(playerMock);
 		ActiveTranslator activeTrans2 = plugin.getActiveTranslator(secondPlayerMock);
-		assertTrue(main.getMongoSession() != null && main.getMongoSession().isConnected());
+		assertTrue(main.isMongoConnValid(true));
 
 		assertTrue(activeTrans1.getInLangCode().equals("en")
 				&& activeTrans1.getOutLangCode().equals("fr"));
@@ -151,7 +151,7 @@ public class TestTranslationUtils {
 
 		WorldwideChatTests.reloadWWC();
 
-		assertTrue(main.getSqlSession() != null && main.getSqlSession().isConnected());
+		assertTrue(main.isSQLConnValid(true));
 		server.getLogger().info("RUNNING DATA RETENTION TEST: wwct en fr");
 		playerMock.performCommand("worldwidechat:wwct en fr");
 		playerMock.performCommand("worldwidechat:wwctb");
@@ -178,7 +178,7 @@ public class TestTranslationUtils {
 		// Verify ActiveTranslators
 		ActiveTranslator activeTrans1 = plugin.getActiveTranslator(playerMock);
 		ActiveTranslator activeTrans2 = plugin.getActiveTranslator(secondPlayerMock);
-		assertTrue(main.getSqlSession() != null && main.getSqlSession().isConnected());
+		assertTrue(main.isSQLConnValid(true));
 
 		assertTrue(activeTrans1.getInLangCode().equals("en")
 				&& activeTrans1.getOutLangCode().equals("fr"));

@@ -2,6 +2,10 @@ package com.badskater0729.worldwidechat.util;
 
 import java.io.*;
 import java.lang.reflect.Type;
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.text.MessageFormat;
 import java.util.*;
 import java.util.concurrent.Callable;
@@ -443,7 +447,7 @@ public class CommonRefs {
 	  */
 	public String translateText(String inMessage, Player currPlayer) {
 		/* If translator settings are invalid, do not do this... */
-		if (!(inMessage.length() > 0) || serverIsStopping()) {
+		if (!(inMessage.length() > 0) || serverIsStopping() || main.getTranslatorName().equals("Starting") || main.getTranslatorName().equals("Invalid")) {
 			return inMessage;
 		}
 		
@@ -796,24 +800,62 @@ public class CommonRefs {
 		return false;
 	}
 
-	public boolean isSQLConnValid(boolean quiet) {
-		if (main.getSqlSession() == null || !main.getSqlSession().isConnected()) {
-			if (!quiet) {
-				main.getLogger().warning(getMsg("wwcInvalidSQLSession"));
-			}
+	public boolean detectOutdatedTransTable() {
+		if (main.getSqlSession() == null) {
 			return false;
 		}
-		return true;
-	}
 
-	public boolean isMongoConnValid(boolean quiet) {
-		if (main.getMongoSession() == null || !main.getMongoSession().isConnected()) {
-			if (!quiet) {
-				main.getLogger().warning(getMsg("wwcInvalidMongoSession"));
+		try (Connection sqlConnection = main.getSqlSession().getConnection()) {
+			// Detect old table struct
+			DatabaseMetaData metaData = sqlConnection.getMetaData();
+			ResultSet columns = metaData.getColumns(null, null, "activeTranslators", null);
+			boolean hasOldStructure = true;
+			while (columns.next()) {
+				String columnName = columns.getString("COLUMN_NAME");
+				String columnType = columns.getString("TYPE_NAME");
+				if (columnName.equals("rateLimit") && columnType.equals("INT")) {
+					hasOldStructure = false;
+					break;
+				}
 			}
+			if (hasOldStructure) {
+				// Warn the user to recreate the database with the new structure
+				main.getLogger().severe(getMsg("wwcOldSqlStructTrans"));
+			}
+			return hasOldStructure;
+		} catch (SQLException e) {
+            e.printStackTrace();
+			return false; // play it safe, probably corrupted anyways...
+        }
+    }
+
+	public boolean detectOutdatedRecordTable() {
+		if (main.getSqlSession() == null) {
 			return false;
 		}
-		return true;
+
+		try (Connection sqlConnection = main.getSqlSession().getConnection()) {
+			// Detect old table struct
+			DatabaseMetaData metaData = sqlConnection.getMetaData();
+			ResultSet columns = metaData.getColumns(null, null, "playerRecords", null);
+			boolean hasOldStructure = true;
+			while (columns.next()) {
+				String columnName = columns.getString("COLUMN_NAME");
+				String columnType = columns.getString("TYPE_NAME");
+				if (columnName.equals("attemptedTranslations") && columnType.equals("INT")) {
+					hasOldStructure = false;
+					break;
+				}
+			}
+			if (hasOldStructure) {
+				// Warn the user to recreate the database with the new structure
+				main.getLogger().severe(getMsg("wwcOldSqlStructRecords"));
+			}
+			return hasOldStructure;
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return false; // play it safe, probably corrupted anyways...
+		}
 	}
 	
 	/** 

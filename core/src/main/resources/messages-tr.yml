@@ -491,12 +491,30 @@ Messages:
   systranHttpUnknown: 'Bilinmeyen http hatası: {0}'
   systranHttp400: Systran'a gönderilen kötü parametreler. Kötü bir dil çifti olabilir?
   systranHttp500: Systran uç noktasından ({0}) dahili sunucu hatası.
-  wwcInvalidMongoSession: MongoDB yapılandırmanızda etkinleştirildi, ancak bir bağlantı
+  wwcInvalidStorageSession: '{0} yapılandırmanızda etkinleştirildi, ancak bir bağlantı
     kurulmadı. Lütfen bunu düzeltmek için yeniden yüklemeyi deneyin, ancak daha önce
-    MongoDB'den başarılı bir bağlantı mesajı aldıysanız lütfen geliştiriciyle iletişime
-    geçin.
-  wwcInvalidSQLSession: Yapılandırmanızda SQL etkinleştirildi, ancak bir bağlantı
-    kurulmadı. Lütfen bunu düzeltmek için yeniden yüklemeyi deneyin, ancak daha önce
-    SQL'den başarılı bir bağlantı mesajı aldıysanız lütfen geliştiriciyle iletişime
-    geçin.
+    {0} adresinden başarılı bir bağlantı mesajı aldıysanız lütfen geliştiriciyle iletişime
+    geçin.'
+  wwcNewSqlConvertFinish: SQL tablolarınızı dönüştürme işlemi tamamlandı. WorldwideChat
+    yeniden yükleniyor...
+  wwcNewSqlStruct: SQL veritabanınız yeni yapıyı kullanıyor ve dönüştürülmesine gerek
+    yok.
+  wwcNewSqlConvertBegin: SQL tablolarınızı dönüştürme...
+  wwcOldSqlStructRecords: 'SQL veritabanınız, WorldwideChat''in önceki bir sürümünden
+    verimsiz bir oynatıcı kayıt tablosu kurulumuna sahiptir. Bu sorunu düzeltmek için
+    aşağıdaki komutu çalıştırabilirsiniz: /wwcd convert'
+  wwcOldSqlStructLongIntro: Verdiğimiz rahatsızlıktan dolayı içtenlikle özür dileriz,
+    ancak WorldwideChat'in önceki bir sürümü SQL tablolarınızı verimsiz bir yapıyla
+    başlattı. Bu eklentimizle çalışmaya devam edecek olsa da, daha büyük oyuncu kayıtlarıyla
+    önemli yavaşlamalara neden olabilir.
+  wwcOldSqlStructTrans: 'SQL veritabanınız, WorldwideChat''in önceki bir sürümünden
+    verimsiz bir etkin çevirmen tablosu kurulumuna sahiptir. Bu sorunu düzeltmek için
+    aşağıdaki komutu çalıştırabilirsiniz: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Yapabilirsiniz: MySQL''de konsola yazdırılan tabloları
+    bırakın, kendiniz dönüştürebilir ve github deposundaki yeni yapıya bakın veya
+    dönüşümü canlı olarak denemek için bir komut çalıştırabilirsiniz. Lütfen BUNU
+    ÇALIŞTIRMADAN ÖNCE VERITABANINIZIN YEDEĞINI YAPTIĞINIZDAN emin olun. Eğer varsa,
+    komut şudur: {0}'
+  wwcNewSqlConvertFail: Dönüşüm başarısız oldu... lütfen yaptığınız yedeklemeden tablolarınızı
+    geri yükleyin. WorldwideChat'i devre dışı bırakma...
 

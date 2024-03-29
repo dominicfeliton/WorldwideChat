@@ -492,10 +492,26 @@ Messages:
   systranHttpUnknown: 'Nepoznata http greška: {0}'
   systranHttp400: Loši parametri poslati Sistranu. Možda je loš jezički par?
   systranHttp500: Interna greška servera iz krajnje tačke Sistran ({0}).
-  wwcInvalidMongoSession: MongoDB je omogućen u vašoj konfiguraciji, ali veza nije
-    uspostavljena. Pokušajte ponovo da učitate da biste to popravili, ali kontaktirajte
-    programera ako ste prethodno dobili uspešnu poruku o povezivanju od MongoDB-a.
-  wwcInvalidSQLSession: SKL je omogućen u vašoj konfiguraciji, ali veza nije uspostavljena.
-    Pokušajte ponovo da učitate da biste to popravili, ali kontaktirajte programera
-    ako ste prethodno dobili uspešnu poruku o povezivanju od SKL-a.
+  wwcInvalidStorageSession: '{0} je omogućeno u vašoj konfiguraciji, ali veza nije
+    uspostavljena. Pokušajte ponovo da učitate da biste to rešili, ali kontaktirajte
+    programera ako ste prethodno dobili uspešnu poruku o povezivanju od {0}.'
+  wwcNewSqlConvertFinish: Završeno pretvaranje SKL tabela. Ponovno učitavanje VorldWideChat-a...
+  wwcNewSqlStruct: Vaša SKL baza podataka koristi novu strukturu i ne treba je konvertovati.
+  wwcNewSqlConvertBegin: Pretvaranje vaših SKL tabela...
+  wwcOldSqlStructRecords: 'Vaša SKL baza podataka ima neefikasno podešavanje tabele
+    zapisa igrača iz prethodne verzije VorldWideChat-a. Možete pokrenuti sledeću komandu
+    da biste rešili ovaj problem: /vvcd convert'
+  wwcOldSqlStructLongIntro: Iskreno se izvinjavamo zbog neugodnosti, ali prethodna
+    verzija VorldWideChat-a inicijalizovala je vaše SKL tabele sa neefikasnom strukturom.
+    Iako će ovo nastaviti da funkcioniše sa našim dodatkom, to može rezultirati značajnim
+    usporavanjem sa većim zapisima igrača.
+  wwcOldSqlStructTrans: 'Vaša SKL baza podataka ima neefikasno podešavanje aktivne
+    tabele prevodilaca iz prethodne verzije VorldWideChat-a. Možete pokrenuti sledeću
+    komandu da biste rešili ovaj problem: /vvcd convert'
+  wwcOldSqlStructLongTodo: 'Možete: ispustiti tabele odštampane na konzolu u MiSKL-u,
+    sami ih pretvoriti i pogledati novu strukturu u github repo-u ili pokrenuti komandu
+    da pokušate konverziju uživo. Uverite se da ste napravili rezervnu kopiju svoje
+    baze podataka pre nego što ovo pokrenete. Ako imate, naredba je: {0}'
+  wwcNewSqlConvertFail: Konverzija nije uspela... vratite tabele iz rezervne kopije
+    koju ste napravili. Onemogućavanje VorldWideChat-a...
 

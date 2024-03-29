@@ -511,12 +511,30 @@ Messages:
   systranHttp400: Onjuiste parameters naar Systran gestuurd. Misschien een slechte
     talencombinatie?
   systranHttp500: Interne serverfout vanaf het Systran-eindpunt ({0}).
-  wwcInvalidMongoSession: MongoDB is ingeschakeld in je configuratie, maar er is geen
+  wwcInvalidStorageSession: '{0} is ingeschakeld in je configuratie, maar er is geen
     verbinding tot stand gebracht. Probeer opnieuw te laden om dit op te lossen, maar
     neem contact op met de ontwikkelaar als je eerder een succesvol verbindingsbericht
-    van MongoDB hebt ontvangen.
-  wwcInvalidSQLSession: SQL is ingeschakeld in uw configuratie, maar er is geen verbinding
-    tot stand gebracht. Probeer opnieuw te laden om dit op te lossen, maar neem contact
-    op met de ontwikkelaar als u eerder een succesvol verbindingsbericht van SQL hebt
-    ontvangen.
+    hebt ontvangen van {0}.'
+  wwcNewSqlConvertFinish: Klaar met het converteren van je SQL-tabellen. WorldwideChat
+    opnieuw laden...
+  wwcNewSqlStruct: Uw SQL-database gebruikt de nieuwe structuur en hoeft niet te worden
+    geconverteerd.
+  wwcNewSqlConvertBegin: Uw SQL-tabellen converteren...
+  wwcOldSqlStructLongIntro: We verontschuldigen ons oprecht voor het ongemak, maar
+    een eerdere versie van WorldwideChat heeft uw SQL-tabellen geïnitialiseerd met
+    een inefficiënte structuur. Hoewel dit met onze plug-in blijft werken, kan dit
+    leiden tot aanzienlijke vertragingen bij grotere spelersrecords.
+  wwcOldSqlStructTrans: 'Uw SQL-database heeft een inefficiënte actieve vertaaltabelconfiguratie
+    van een eerdere versie van WorldwideChat. Je kunt de volgende opdracht uitvoeren
+    om dit probleem op te lossen: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Je kunt: de tabellen die zijn afgedrukt naar de console
+    in MySQL neerzetten, ze zelf converteren en de nieuwe structuur in de github-repo
+    bekijken, of een opdracht uitvoeren om de conversie live uit te voeren. Zorg ervoor
+    dat je een back-up hebt gemaakt van je database voordat je dit uitvoert. Als je
+    dat hebt, is het commando: {0}'
+  wwcNewSqlConvertFail: Conversie is mislukt... herstel alstublieft uw tabellen vanaf
+    de back-up die u hebt gemaakt. WorldwideChat uitschakelen...
+  wwcOldSqlStructRecords: 'Uw SQL-database heeft een inefficiënte configuratie van
+    de opnametabel voor spelers ten opzichte van een eerdere versie van WorldwideChat.
+    Je kunt de volgende opdracht uitvoeren om dit probleem op te lossen: /wwcd convert'
 

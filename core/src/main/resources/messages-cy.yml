@@ -504,10 +504,27 @@ Messages:
   systranHttp400: Paramedrau gwael a anfonwyd i Systran. Efallai bod yn bâr iaith
     gwael?
   systranHttp500: Gwall gweinydd mewnol o derfyn Systran ({0}).
-  wwcInvalidMongoSession: Mae MongoDB wedi'i alluogi yn eich config, ond nid yw cysylltiad
+  wwcInvalidStorageSession: Mae {0} wedi'i alluogi yn eich config, ond nid yw cysylltiad
     wedi'i sefydlu. Rhowch gynnig ar ail-lwytho i drwsio hyn, ond cysylltwch â'r datblygwr
-    os cawsoch neges gysylltiad llwyddiannus o'r blaen gan MongoDB.
-  wwcInvalidSQLSession: Mae SQL wedi'i alluogi yn eich config, ond nid yw cysylltiad
-    wedi'i sefydlu. Rhowch gynnig ar ail-lwytho i drwsio hyn, ond cysylltwch â'r datblygwr
-    os cawsoch neges gysylltiad llwyddiannus o'r blaen gan SQL.
+    os cawsoch neges gysylltiad llwyddiannus o'r blaen gan {0}.
+  wwcNewSqlConvertFinish: Gorffennodd drosi'ch tablau SQL. Aillwytho WorldwideChat...
+  wwcNewSqlStruct: Mae eich cronfa ddata SQL yn defnyddio'r strwythur newydd ac nid
+    oes angen ei drosi.
+  wwcNewSqlConvertBegin: Trosi eich tablau SQL...
+  wwcOldSqlStructRecords: 'Mae gan eich cronfa ddata SQL setup tabl cofnod chwaraewr
+    aneffeithlon o fersiwn flaenorol o WorldwideChat. Gallwch redeg y gorchymyn canlynol
+    i drwsio''r mater hwn: /wwcd trosi'
+  wwcOldSqlStructLongIntro: Rydym yn ymddiheuro yn ddiffuant am yr anghyfleustra,
+    ond fersiwn flaenorol o WorldwideChat gychwynnodd eich tablau SQL gyda strwythur
+    aneffeithlon. Er y bydd hyn yn parhau i weithredu gyda'n ategyn, gall arwain at
+    arafu sylweddol gyda chofnodion chwaraewr mwy.
+  wwcOldSqlStructTrans: 'Mae gan eich cronfa ddata SQL setup tabl cyfieithydd gweithredol
+    aneffeithlon o fersiwn flaenorol o WorldwideChat. Gallwch redeg y gorchymyn canlynol
+    i drwsio''r mater hwn: /wwcd trosi'
+  wwcOldSqlStructLongTodo: 'Gallwch: gollwng y tablau a argraffwyd i gonsol yn MySQL,
+    eu trosi eich hun ac edrych ar y strwythur newydd yn y repo github, neu redeg
+    gorchymyn i geisio trosi''n fyw. Gwnewch yn siŵr eich bod WEDI GWNEUD COPI WRTH
+    GEFN O''CH CRONFA DDATA CYN RHEDEG HYN. Os oes gennych, y gorchymyn yw: {0}'
+  wwcNewSqlConvertFail: Methodd trosi... adferwch eich tablau o'r copi wrth gefn a
+    wnaethoch chi. Analluogi WorldwideChat...
 

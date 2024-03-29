@@ -531,12 +531,29 @@ Messages:
   systranHttp400: Parámetros incorrectos enviados a Systran. ¿Podría ser un mal par
     de idiomas?
   systranHttp500: Error interno del servidor desde el punto de enlace de Systran ({0}).
-  wwcInvalidMongoSession: MongoDB está habilitado en su configuración, pero no se
-    establece una conexión. Intente volver a cargar para solucionar esto, pero póngase
-    en contacto con el desarrollador si anteriormente recibió un mensaje de conexión
-    exitosa de MongoDB.
-  wwcInvalidSQLSession: SQL está habilitado en su configuración, pero no se establece
-    una conexión. Intente volver a cargar para solucionar esto, pero póngase en contacto
-    con el desarrollador si anteriormente recibió un mensaje de conexión exitosa de
-    SQL.
+  wwcInvalidStorageSession: '{0} está habilitado en tu configuración, pero no se ha
+    establecido una conexión. Intenta volver a cargar para solucionar este problema,
+    pero ponte en contacto con el desarrollador si has recibido previamente un mensaje
+    de conexión correcta de {0}.'
+  wwcNewSqlConvertFinish: Terminó de convertir sus tablas SQL. Recargando WorldwideChat...
+  wwcNewSqlStruct: Su base de datos SQL utiliza la nueva estructura y no necesita
+    ser convertida.
+  wwcNewSqlConvertBegin: Conversión de sus tablas SQL...
+  wwcOldSqlStructRecords: 'Su base de datos SQL tiene una configuración ineficiente
+    de la tabla de registros del reproductor de una versión anterior de WorldwideChat.
+    Puede ejecutar el siguiente comando para solucionar este problema: /wwcd convert'
+  wwcOldSqlStructLongIntro: Nos disculpamos sinceramente por las molestias, pero una
+    versión anterior de WorldwideChat inicializó sus tablas SQL con una estructura
+    ineficiente. Si bien esto continuará funcionando con nuestro complemento, puede
+    resultar en ralentidades significativas con registros de jugadores más grandes.
+  wwcOldSqlStructTrans: 'Su base de datos SQL tiene una configuración ineficiente
+    de la tabla traductora activa de una versión anterior de WorldwideChat. Puede
+    ejecutar el siguiente comando para solucionar este problema: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Puedes: soltar las tablas impresas a la consola en MySQL,
+    convertirlas tú mismo y mirar la nueva estructura en el repo github, o ejecutar
+    un comando para intentar la conversión en vivo. Asegúrese de haber realizado una
+    copia de seguridad de su base de datos antes de ejecutar esto. Si tienes, el comando
+    es: {0}'
+  wwcNewSqlConvertFail: La conversión falló... restaure sus tablas a partir del backup
+    que realizó. Deshabilitando WorldwideChat...
 

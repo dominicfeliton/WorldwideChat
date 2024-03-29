@@ -497,10 +497,27 @@ Messages:
   systranHttpUnknown: 'Kuskuren http da ba a sani ba: {0}'
   systranHttp400: Muggun sigogi da aka aika zuwa Systran. Zai iya zama mummunan harshe?
   systranHttp500: Kuskuren uwar garken ciki daga ƙarshen Systran ({0}).
-  wwcInvalidMongoSession: An kunna MongoDB a cikin daidaitawar ku, amma ba a kafa
-    haɗin kai ba. Da fatan za a gwada sake loda don gyara wannan, amma da fatan za
-    a tuntuɓi mai haɓakawa idan a baya kun sami saƙon haɗin nasara daga MongoDB.
-  wwcInvalidSQLSession: An kunna SQL a cikin daidaitawar ku, amma ba a kafa haɗin
+  wwcInvalidStorageSession: An kunna {0} a cikin daidaitawar ku, amma ba a kafa haɗin
     kai ba. Da fatan za a gwada sake loda don gyara wannan, amma da fatan za a tuntuɓi
-    mai haɓakawa idan a baya kun sami saƙon haɗin nasara daga SQL.
+    mai haɓakawa idan a baya kun sami saƙon haɗin nasara daga {0}.
+  wwcNewSqlConvertFinish: Gama canza teburin SQL ɗin ku. Sake loda WorldwideChat...
+  wwcNewSqlStruct: Bayanan SQL ɗinku yana amfani da sabon tsarin kuma baya buƙatar
+    canza shi.
+  wwcNewSqlConvertBegin: Canza teburin SQL ɗinku...
+  wwcOldSqlStructLongIntro: Muna hakuri da gaske saboda rashin jin daɗi, amma sigar
+    da ta gabata na WorldwideChat ya fara teburin SQL ɗinku tare da tsari mara inganci.
+    Duk da yake wannan zai ci gaba da aiki tare da plugin ɗin mu, yana iya haifar
+    da raguwa mai mahimmanci tare da manyan bayanan ɗan wasa.
+  wwcOldSqlStructTrans: Bayanan SQL ɗinku yana da saitin teburin fassara mara inganci
+    daga sigar da ta gabata na WorldwideChat. Kuna iya gudanar da umarni mai zuwa
+    don gyara wannan batun:/wwcd canza
+  wwcOldSqlStructLongTodo: 'Kuna iya: sauke teburin da aka buga don na''ura a cikin
+    MySQL, canza su da kanku kuma duba sabon tsarin a cikin github repo, ko gudanar
+    da umarni don ƙoƙarin juyawa kai tsaye. Da fatan za a tabbatar cewa KUN YI AJIYAR
+    BAYANAN KU KAFIN GUDANAR DA WANNAN. Idan kuna da, umurnin shine: {0}'
+  wwcNewSqlConvertFail: Juyawa ya gaza... don Allah mayar da teburin ku daga madadin
+    da kuka yi. Kashe WorldwideChat...
+  wwcOldSqlStructRecords: Bayanan SQL ɗinku yana da saitin teburin rikodin ɗan wasa
+    mara inganci daga sigar da ta gabata na WorldwideChat. Kuna iya gudanar da umarni
+    mai zuwa don gyara wannan batun:/wwcd canza
 

@@ -32,9 +32,24 @@ services:
     networks:
       - backend
 
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: cooldatabase
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: always
+    networks:
+      - backend
+
 volumes:
   mysql-data:
   mongo-data:
+  postgres-data:
 
 networks:
   backend:

@@ -507,12 +507,29 @@ Messages:
   systranHttp400: Rossz paramétereket küldtek a Systran-nak. Lehet, hogy rossz nyelvi
     pár?
   systranHttp500: Belső kiszolgálóhiba a Systran végpontból ({0}).
-  wwcInvalidMongoSession: A MongoDB engedélyezve van a konfigurációban, de kapcsolat
-    nincs létrehozva. Kérjük, próbálja meg újratölteni ennek kijavításához, de kérjük,
+  wwcInvalidStorageSession: '{0} engedélyezve van a konfigurációban, de kapcsolat
+    nincs létrehozva. Kérjük, próbálja meg újratölteni ezt a megoldást, de kérjük,
     vegye fel a kapcsolatot a fejlesztővel, ha korábban sikeres csatlakozási üzenetet
-    kapott a MongoDB-től.
-  wwcInvalidSQLSession: Az SQL engedélyezve van a konfigurációban, de kapcsolat nincs
-    létrehozva. Kérjük, próbálja meg újratölteni ennek kijavításához, de kérjük, vegye
-    fel a kapcsolatot a fejlesztővel, ha korábban sikeres csatlakozási üzenetet kapott
-    az SQL-től.
+    kapott a {0} -től.'
+  wwcNewSqlConvertFinish: Befejezte az SQL táblázatok konvertálását. WorldwideChat
+    újratöltése...
+  wwcNewSqlStruct: Az SQL adatbázis az új struktúrát használja, és nem kell átalakítani.
+  wwcNewSqlConvertBegin: Az SQL táblázatok konvertálása...
+  wwcOldSqlStructLongIntro: Őszintén elnézést kérünk a kellemetlenségért, de a WorldwideChat
+    egy korábbi verziója nem hatékony struktúrával inicializálta az SQL táblákat.
+    Bár ez továbbra is működni fog a bővítményünkkel, jelentős lassulást eredményezhet
+    nagyobb játékosok rekordokkal.
+  wwcOldSqlStructTrans: 'Az SQL-adatbázis nem hatékony aktív fordítótáblát tartalmaz
+    a WorldwideChat korábbi verziójához képest. A probléma megoldásához futtathatja
+    a következő parancsot: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Lehetőség van: dobhatja le a konzolra nyomtatott táblákat
+    a MySQL-ben, konvertálhatja azokat, és megnézheti az új struktúrát a github repo-ban,
+    vagy futtathat egy parancsot az átalakítás élőben történő kipróbálásához. Kérjük,
+    győződjön meg róla, hogy biztonsági másolatot készített az adatbázisáról, mielőtt
+    ezt futtatná. Ha van, akkor a parancs a következő: {0}'
+  wwcNewSqlConvertFail: Az átalakítás sikertelen... kérjük, állítsa vissza a táblákat
+    az elkészített biztonsági másolatból. A WorldwideChat letiltása...
+  wwcOldSqlStructRecords: 'Az SQL adatbázis a WorldwideChat korábbi verziójához képest
+    nem hatékony lejátszórekordtábla beállítással rendelkezik. A probléma megoldásához
+    futtathatja a következő parancsot: /wwcd convert'
 

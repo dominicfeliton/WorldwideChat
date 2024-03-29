@@ -503,12 +503,28 @@ Messages:
   systranHttpUnknown: 'Lỗi http không xác định: {0}'
   systranHttp400: Thông số xấu được gửi đến Systran. Có thể là một cặp ngôn ngữ xấu?
   systranHttp500: Lỗi máy chủ nội bộ từ điểm cuối Systran ({0}).
-  wwcInvalidMongoSession: MongoDB được kích hoạt trong cấu hình của bạn, nhưng kết
-    nối không được thiết lập. Vui lòng thử tải lại để khắc phục điều này, nhưng vui
-    lòng liên hệ với nhà phát triển nếu trước đây bạn đã nhận được thông báo kết nối
-    thành công từ MongoDB.
-  wwcInvalidSQLSession: SQL được kích hoạt trong cấu hình của bạn, nhưng kết nối không
-    được thiết lập. Vui lòng thử tải lại để khắc phục điều này, nhưng vui lòng liên
-    hệ với nhà phát triển nếu trước đây bạn nhận được thông báo kết nối thành công
-    từ SQL.
+  wwcInvalidStorageSession: '{0} được kích hoạt trong cấu hình của bạn, nhưng kết
+    nối không được thiết lập. Vui lòng thử tải lại để khắc phục vấn đề này, nhưng
+    vui lòng liên hệ với nhà phát triển nếu trước đây bạn nhận được thông báo kết
+    nối thành công từ {0}.'
+  wwcNewSqlConvertFinish: Hoàn thành chuyển đổi bảng SQL của bạn. Đang tải lại WorldwideChat...
+  wwcNewSqlStruct: Cơ sở dữ liệu SQL của bạn đang sử dụng cấu trúc mới và không cần
+    phải chuyển đổi.
+  wwcNewSqlConvertBegin: Chuyển đổi bảng SQL của bạn...
+  wwcOldSqlStructRecords: 'Cơ sở dữ liệu SQL của bạn có thiết lập bảng bản ghi trình
+    phát không hiệu quả từ phiên bản trước của WorldwideChat. Bạn có thể chạy lệnh
+    sau để khắc phục sự cố này: /wwcd convert'
+  wwcOldSqlStructLongIntro: Chúng tôi chân thành xin lỗi vì sự bất tiện này, nhưng
+    phiên bản trước của WorldwideChat đã khởi tạo các bảng SQL của bạn với cấu trúc
+    không hiệu quả. Mặc dù điều này sẽ tiếp tục hoạt động với plugin của chúng tôi,
+    nhưng nó có thể dẫn đến sự chậm lại đáng kể với hồ sơ người chơi lớn hơn.
+  wwcOldSqlStructTrans: 'Cơ sở dữ liệu SQL của bạn có thiết lập bảng dịch hoạt động
+    không hiệu quả từ phiên bản trước của WorldwideChat. Bạn có thể chạy lệnh sau
+    để khắc phục sự cố này: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Bạn có thể: thả các bảng được in vào bảng điều khiển trong
+    MySQL, tự chuyển đổi chúng và xem cấu trúc mới trong repo github hoặc chạy lệnh
+    để thử chuyển đổi trực tiếp. Hãy chắc chắn rằng bạn đã tạo bản sao lưu cơ sở dữ
+    liệu của bạn trước khi chạy điều này. Nếu bạn có, lệnh là: {0}'
+  wwcNewSqlConvertFail: Chuyển đổi không thành công... vui lòng khôi phục bảng của
+    bạn từ bản sao lưu bạn đã tạo. Vô hiệu hóa WorldwideChat...
 

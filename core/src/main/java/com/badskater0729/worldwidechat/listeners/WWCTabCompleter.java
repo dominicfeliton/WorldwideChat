@@ -246,10 +246,20 @@ public class WWCTabCompleter implements TabCompleter {
 				out.add("10");
 			}
 		} else if (commandName.equals("wwcd") && args.length > 0 && args.length < 3) {
-			if (args.length == 1 && "cache".startsWith(args[0])) {
-				out.add("cache");
-			} else if (args.length == 2 && args[0].equalsIgnoreCase("cache") && "clear".startsWith(args[1])) {
-				out.add("clear");
+			if (args.length == 1) {
+				if ("cache".startsWith(args[0])) {
+					out.add("cache");
+				}
+				if ("convert".startsWith(args[0])) {
+					out.add("convert");
+				}
+			} else if (args.length == 2) {
+				if (args[0].equalsIgnoreCase("cache") && "clear".startsWith(args[1])) {
+					out.add("clear");
+				}
+				if (args[0].equalsIgnoreCase("convert") && "yes".startsWith(args[1])) {
+					out.add("yes");
+				}
 			}
 		}
 		return out;

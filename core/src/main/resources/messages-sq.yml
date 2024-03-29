@@ -522,12 +522,30 @@ Messages:
   systranHttp400: Parametrat e këqij dërguar në Systran. Mund të jetë një palë gjuhësore
     e keqe?
   systranHttp500: Gabim i brendshëm i serverit nga pika përfundimtare Systran ({0}).
-  wwcInvalidMongoSession: MongoDB është aktivizuar në konfigurimin tuaj, por një lidhje
-    nuk është krijuar. Ju lutemi provoni të rimbushni për ta rregulluar këtë, por
-    ju lutemi kontaktoni zhvilluesin nëse keni marrë më parë një mesazh të suksesshëm
-    lidhjeje nga MongoDB.
-  wwcInvalidSQLSession: SQL është aktivizuar në konfigurimin tuaj, por një lidhje
+  wwcInvalidStorageSession: '{0} është aktivizuar në konfigurimin tuaj, por një lidhje
     nuk është krijuar. Ju lutemi provoni të rimbushni për ta rregulluar këtë, por
     ju lutemi kontaktoni zhvilluesin nëse më parë keni marrë një mesazh të suksesshëm
-    të lidhjes nga SQL.
+    lidhjeje nga {0}.'
+  wwcNewSqlConvertFinish: Mbaroi konvertimin e tabelave tuaja SQL. Rishkarkimi i WorldwideChat...
+  wwcNewSqlStruct: Baza e të dhënave tuaja SQL po përdor strukturën e re dhe nuk ka
+    nevojë të konvertohet.
+  wwcNewSqlConvertBegin: Konvertimi i tabelave tuaja SQL...
+  wwcOldSqlStructLongIntro: Ne sinqerisht kërkojmë falje për shqetësimin, por një
+    version i mëparshëm i WorldwideChat inicializoi tabelat tuaja SQL me një strukturë
+    joefikase. Ndërsa kjo do të vazhdojë të funksionojë me shtojcën tonë, mund të
+    rezultojë në ngadalësime të konsiderueshme me rekorde më të mëdha të lojtarëve.
+  wwcOldSqlStructTrans: 'Baza e të dhënave tuaja SQL ka një konfigurim joefikase të
+    tabelës së përkthyesve aktiv nga një version i mëparshëm i WorldwideChat. Ju mund
+    të ekzekutoni komandën e mëposhtme për të rregulluar këtë çështje: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Ju mund të: hiqni tabelat e printuara për të konsoluar
+    në MySQL, t''i konvertoni ato vetë dhe të shikoni strukturën e re në repo github,
+    ose të ekzekutoni një komandë për të provuar konvertimin drejtpërdrejt. Ju lutemi
+    sigurohuni që keni bërë një kopje rezervë të bazës suaj të të dhënave para se
+    ta ekzekutoni këtë. Nëse keni, komanda është: {0}'
+  wwcNewSqlConvertFail: Konvertimi dështoi... ju lutemi rivendosni tabelat tuaja nga
+    kopja rezervë që keni bërë. Çaktivizimi i WorldwideChat...
+  wwcOldSqlStructRecords: 'Baza e të dhënave tuaja SQL ka një konfigurim joefikase
+    të tabelës së regjistrimit të lojtarëve nga një version i mëparshëm i WorldwideChat.
+    Ju mund të ekzekutoni komandën e mëposhtme për të rregulluar këtë çështje: /wwcd
+    convert'
 

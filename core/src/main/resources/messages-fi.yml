@@ -493,10 +493,27 @@ Messages:
   systranHttpUnknown: 'Tuntematon http-virhe: {0}'
   systranHttp400: Systranille lähetetyt huonot parametrit. Voi olla huono kielipari?
   systranHttp500: Sisäinen palvelinvirhe Systran-päätepisteestä ({0}).
-  wwcInvalidMongoSession: 'MongoDB on käytössä kokoonpanossasi, mutta yhteyttä ei
-    ole muodostettu. Yritä ladata uudelleen tämän korjaamiseksi, mutta ota yhteyttä
-    kehittäjään, jos olet aiemmin saanut onnistuneen yhteysviestin MongoDB: ltä.'
-  wwcInvalidSQLSession: 'SQL on käytössä kokoonpanossasi, mutta yhteyttä ei ole muodostettu.
-    Yritä ladata uudelleen tämän korjaamiseksi, mutta ota yhteyttä kehittäjään, jos
-    olet aiemmin saanut onnistuneen yhteysviestin SQL: ltä.'
+  wwcInvalidStorageSession: '{0} on käytössä kokoonpanossasi, mutta yhteyttä ei ole
+    muodostettu. Yritä ladata uudelleen korjataksesi tämän, mutta ota yhteyttä kehittäjään,
+    jos olet aiemmin saanut onnistuneen yhteysviestin osoitteesta {0}.'
+  wwcNewSqlConvertFinish: SQL-taulukoiden muuntaminen on valmis. Ladataan WorldwideChat
+    uudelleen...
+  wwcNewSqlStruct: SQL-tietokanta käyttää uutta rakennetta, eikä sitä tarvitse muuntaa.
+  wwcNewSqlConvertBegin: SQL-taulukoiden muuntaminen...
+  wwcOldSqlStructLongIntro: Pahoittelemme vilpittömästi haittaa, mutta WorldwideChatin
+    aiempi versio alusti SQL-taulukosi tehottomalla rakenteella. Vaikka tämä toimii
+    edelleen laajennuksessamme, se voi johtaa merkittäviin hidastumisiin suurempien
+    pelaajien ennätysten myötä.
+  wwcOldSqlStructTrans: 'SQL-tietokannassasi on tehoton aktiivinen kääntäjätaulukon
+    asetukset aiemmasta WorldwideChat-versiosta. Voit korjata ongelman suorittamalla
+    seuraavan komennon: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Voit: pudottaa konsoliin tulostetut taulukot MySQL:ssä,
+    muuntaa ne itse ja katsoa uutta rakennetta github-repossa tai suorittaa komennon
+    yrittääksesi muuntamista suorana. Varmista, että olet tehnyt varmuuskopion tietokannastasi
+    ennen tämän suorittamista. Jos sinulla on, komento on: {0}'
+  wwcNewSqlConvertFail: Muuntaminen epäonnistui... palauta taulukot tekemästäsi varmuuskopiosta.
+    WorldwideChatin poistaminen käytöstä...
+  wwcOldSqlStructRecords: 'SQL-tietokannassasi on tehoton soittimen tietuetaulukon
+    asetukset aiemmasta WorldwideChat-versiosta. Voit korjata ongelman suorittamalla
+    seuraavan komennon: /wwcd convert'
 

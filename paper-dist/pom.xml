@@ -117,6 +117,7 @@
               <include>com.deepl.api:*</include>
               <include>io.github.brenoepics:*</include>
               <include>org.apache.logging.log4j:*</include>
+              <include>org.postgresql:postgresql</include>
             </includes>
           </artifactSet>
           <filters>
@@ -156,6 +157,12 @@
             </filter>
             <filter>
               <artifact>com.github.ben-manes.caffeine:caffeine</artifact>
+              <includes>
+                <include>**</include>
+              </includes>
+            </filter>
+            <filter>
+              <artifact>org.postgresql:postgresql</artifact>
               <includes>
                 <include>**</include>
               </includes>
@@ -274,6 +281,10 @@
             <relocation>
               <pattern>com.mysql</pattern>
               <shadedPattern>com.badskater0729.worldwidechat.libs.com.mysql</shadedPattern>
+            </relocation>
+            <relocation>
+              <pattern>org.postgresql</pattern>
+              <shadedPattern>com.badskater0729.worldwidechat.libs.org.postgresql</shadedPattern>
             </relocation>
           </relocations>
         </configuration>

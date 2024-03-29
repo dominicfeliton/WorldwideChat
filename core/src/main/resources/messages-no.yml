@@ -483,10 +483,28 @@ Messages:
   systranHttpUnknown: 'Ukjent http-feil: {0}'
   systranHttp400: Dårlige parametere sendt til Systran. Kan være et dårlig språkpar?
   systranHttp500: Intern serverfeil fra Systran-endepunktet ({0}).
-  wwcInvalidMongoSession: MongoDB er aktivert i konfigurasjonen din, men en tilkobling
+  wwcInvalidStorageSession: '{0} er aktivert i konfigurasjonen din, men en forbindelse
     er ikke etablert. Prøv å laste inn på nytt for å fikse dette, men kontakt utvikleren
-    hvis du tidligere har mottatt en vellykket tilkoblingsmelding fra MongoDB.
-  wwcInvalidSQLSession: SQL er aktivert i konfigurasjonen din, men en tilkobling er
-    ikke etablert. Prøv å laste inn på nytt for å fikse dette, men kontakt utvikleren
-    hvis du tidligere har mottatt en vellykket tilkoblingsmelding fra SQL.
+    hvis du tidligere har mottatt en vellykket tilkoblingsmelding fra {0}.'
+  wwcNewSqlConvertFinish: Ferdig konvertering av SQL-tabellene. Laster inn WorldwideChat
+    på nytt...
+  wwcNewSqlStruct: SQL-databasen bruker den nye strukturen og trenger ikke å konverteres.
+  wwcNewSqlConvertBegin: Konvertering av SQL-tabeller...
+  wwcOldSqlStructRecords: 'SQL-databasen din har et ineffektivt oppsett av spilleropptak
+    fra en tidligere versjon av WorldwideChat. Du kan kjøre følgende kommando for
+    å løse dette problemet: /wwcd convert'
+  wwcOldSqlStructLongIntro: Vi beklager ulempen, men en tidligere versjon av WorldwideChat
+    initialiserte SQL-tabellene dine med en ineffektiv struktur. Selv om dette vil
+    fortsette å fungere med pluginet vårt, kan det føre til betydelige avmatninger
+    med større spillerposter.
+  wwcOldSqlStructTrans: 'SQL-databasen din har et ineffektivt aktivt oversettertabelloppsett
+    fra en tidligere versjon av WorldwideChat. Du kan kjøre følgende kommando for
+    å løse dette problemet: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Du kan: slippe tabellene som er skrevet ut til konsoll
+    i MySQL, konvertere dem selv og se på den nye strukturen i github-repo, eller
+    kjøre en kommando for å prøve konverteringen live. Forsikre deg om at du HAR TATT
+    EN SIKKERHETSKOPI AV DATABASEN DIN FØR DU KJØRER DETTE. Hvis du har, er kommandoen:
+    {0}'
+  wwcNewSqlConvertFail: Konvertering mislyktes... vennligst gjenopprett tabellene
+    fra sikkerhetskopien du laget. Deaktiverer WorldwideChat...
 

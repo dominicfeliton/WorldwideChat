@@ -504,11 +504,28 @@ Messages:
   systranHttpUnknown: 'Nieznany błąd http: {0}'
   systranHttp400: Złe parametry wysłane do Systran. Może to być zła para językowa?
   systranHttp500: Wewnętrzny błąd serwera z punktu końcowego Systran ({0}).
-  wwcInvalidMongoSession: MongoDB jest włączony w konfiguracji, ale połączenie nie
+  wwcInvalidStorageSession: '{0} jest włączona w konfiguracji, ale połączenie nie
     zostało nawiązane. Spróbuj ponownie załadować, aby to naprawić, ale skontaktuj
-    się z programistą, jeśli wcześniej otrzymałeś komunikat o udanym połączeniu z
-    MongoDB.
-  wwcInvalidSQLSession: SQL jest włączony w konfiguracji, ale połączenie nie zostało
-    nawiązane. Spróbuj ponownie załadować, aby to naprawić, ale skontaktuj się z programistą,
-    jeśli wcześniej otrzymałeś komunikat o udanym połączeniu z SQL.
+    się z programistą, jeśli wcześniej otrzymałeś komunikat o udanym połączeniu od
+    {0}.'
+  wwcNewSqlConvertFinish: Zakończono konwersję tabel SQL. Ponowne ładowanie WorldwideChat...
+  wwcNewSqlStruct: Twoja baza danych SQL używa nowej struktury i nie musi być konwertowana.
+  wwcNewSqlConvertBegin: Konwertowanie tabel SQL...
+  wwcOldSqlStructRecords: 'Twoja baza danych SQL ma niewydajną konfigurację tabeli
+    rekordów odtwarzacza z poprzedniej wersji WorldwideChat. Możesz uruchomić następujące
+    polecenie, aby rozwiązać ten problem: /wwcd convert'
+  wwcOldSqlStructLongIntro: Serdecznie przepraszamy za niedogodności, ale poprzednia
+    wersja WorldwideChat zainicjowała tabele SQL z niewydajną strukturą. Chociaż będzie
+    to nadal działać z naszą wtyczką, może to spowodować znaczne spowolnienie przy
+    większych rekordach graczy.
+  wwcOldSqlStructTrans: 'Twoja baza danych SQL ma niewydajną konfigurację aktywnej
+    tabeli translatora z poprzedniej wersji WorldwideChat. Możesz uruchomić następujące
+    polecenie, aby rozwiązać ten problem: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Możesz: upuścić tabele wydrukowane do konsoli w MySQL,
+    przekonwertować je samodzielnie i spojrzeć na nową strukturę w repozytorium github
+    lub uruchomić polecenie, aby spróbować konwersji na żywo. UPEWNIJ SIĘ, ŻE WYKONAŁEŚ
+    KOPIĘ ZAPASOWĄ SWOJEJ BAZY DANYCH PRZED URUCHOMIENIEM TEGO. Jeśli masz, polecenie
+    to: {0}'
+  wwcNewSqlConvertFail: Konwersja nie powiodła się... proszę przywrócić tabele z utworzonej
+    kopii zapasowej. Wyłączanie WorldwideChat...
 

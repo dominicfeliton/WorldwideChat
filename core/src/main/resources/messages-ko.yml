@@ -417,8 +417,19 @@ Messages:
   systranHttpUnknown: '알 수 없는 http 오류: {0}'
   systranHttp400: 잘못된 파라미터가 Systran에 전송되었습니다.언어 쌍이 잘못되었을 수도 있나요?
   systranHttp500: Systran 엔드포인트 ({0}) 의 내부 서버 오류가 발생했습니다.
-  wwcInvalidMongoSession: 구성에서 MongoDB가 활성화되었지만 연결이 설정되지 않았습니다.이 문제를 해결하려면 다시 로드해
-    보세요. 하지만 이전에 MongoDB로부터 연결 성공 메시지를 받은 경우 개발자에게 문의하세요.
-  wwcInvalidSQLSession: 구성에서 SQL이 활성화되었지만 연결이 설정되지 않았습니다.이 문제를 해결하려면 다시 로드해 보십시오.
-    하지만 이전에 SQL로부터 연결 성공 메시지를 받은 경우 개발자에게 문의하세요.
+  wwcInvalidStorageSession: 구성에서 {0} 이 (가) 활성화되었지만 연결이 설정되지 않았습니다.이 문제를 해결하려면 다시 로드해
+    보십시오. 하지만 이전에 {0} 에서 연결 성공 메시지를 받은 경우 개발자에게 문의하세요.
+  wwcNewSqlConvertFinish: SQL 테이블 변환을 완료했습니다.월드와이드 채팅을 다시 로드하는 중...
+  wwcNewSqlStruct: SQL 데이터베이스가 새 구조를 사용하고 있으므로 변환할 필요가 없습니다.
+  wwcNewSqlConvertBegin: SQL 테이블 변환 중...
+  wwcOldSqlStructRecords: SQL 데이터베이스가 이전 버전의 WorldwideChat에서 설정한 플레이어 레코드 테이블이 비효율적입니다.다음
+    명령을 실행하여 이 문제를 해결할 수 있습니다. /wwcd convert
+  wwcOldSqlStructLongIntro: 불편을 끼쳐 드려 대단히 죄송합니다. 이전 버전의 WorldwideChat에서는 SQL 테이블이
+    비효율적인 구조로 초기화되었습니다.이 기능은 플러그인에서도 계속 작동하지만 플레이어 레코드가 커지면 속도가 크게 느려질 수 있습니다.
+  wwcOldSqlStructTrans: SQL 데이터베이스의 활성 변환기 테이블 설정은 이전 버전의 WorldwideChat보다 비효율적입니다.다음
+    명령을 실행하여 이 문제를 해결할 수 있습니다. /wwcd convert
+  wwcOldSqlStructLongTodo: MySQL의 콘솔에 인쇄된 테이블을 드롭하거나, 직접 변환하고, github 리포지토리에서 새 구조를
+    살펴보거나, 명령을 실행하여 실시간으로 변환을 시도할 수 있습니다.이 작업을 실행하기 전에 데이터베이스를 백업했는지 확인하세요.있는 경우 명령은
+    다음과 같습니다. {0}
+  wwcNewSqlConvertFail: 변환 실패... 만든 백업에서 테이블을 복원하십시오.월드와이드챗 비활성화 중...
 

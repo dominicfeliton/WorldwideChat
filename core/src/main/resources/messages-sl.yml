@@ -504,10 +504,27 @@ Messages:
   systranHttpUnknown: 'Neznana napaka http: {0}'
   systranHttp400: Slabi parametri poslani Systran. Je morda slab jezikovni par?
   systranHttp500: Napaka notranjega strežnika iz končne točke Systran ({0}).
-  wwcInvalidMongoSession: MongoDB je omogočen v vaši konfiguraciji, vendar povezava
-    ni vzpostavljena. Poskusite znova naložiti, da to popravite, vendar se obrnite
-    na razvijalca, če ste prej prejeli sporočilo o uspešni povezavi od MongoDB.
-  wwcInvalidSQLSession: SQL je omogočen v vaši konfiguraciji, vendar povezava ni vzpostavljena.
-    Če želite to popraviti, poskusite znova naložiti, vendar se obrnite na razvijalca,
-    če ste prej prejeli sporočilo o uspešni povezavi iz SQL.
+  wwcInvalidStorageSession: '{0} je omogočeno v vaši konfiguraciji, vendar povezava
+    ni vzpostavljena. Če želite to popraviti, poskusite ponovno naložiti, vendar se
+    obrnite na razvijalca, če ste prej prejeli sporočilo o uspešni povezavi od {0}.'
+  wwcNewSqlConvertFinish: Končali smo pretvorbo tabel SQL. Ponovno nalaganje WorldwideChat...
+  wwcNewSqlStruct: Vaša zbirka podatkov SQL uporablja novo strukturo in je ni treba
+    pretvoriti.
+  wwcNewSqlConvertBegin: Pretvarjanje tabel SQL...
+  wwcOldSqlStructRecords: 'Vaša zbirka podatkov SQL ima neučinkovito nastavitev tabele
+    zapisov predvajalnika iz prejšnje različice WorldwideChat. Če želite odpraviti
+    to težavo, lahko zaženete naslednji ukaz: /wwcd convert'
+  wwcOldSqlStructLongIntro: Iskreno se opravičujemo za neprijetnosti, vendar je prejšnja
+    različica WorldwideChata inicializirala vaše tabele SQL z neučinkovito strukturo.
+    Čeprav bo to še naprej delovalo z našim vtičnikom, lahko povzroči znatne upočasnitve
+    z večjimi zapisi predvajalnikov.
+  wwcOldSqlStructTrans: 'Vaša zbirka podatkov SQL ima neučinkovito nastavitev aktivne
+    prevajalske tabele iz prejšnje različice WorldwideChat. Če želite odpraviti to
+    težavo, lahko zaženete naslednji ukaz: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Tabele, natisnjene v konzolo v MySQL, jih lahko: spustite,
+    jih sami pretvorite in si ogledate novo strukturo v repoju github ali zaženete
+    ukaz za poskus pretvorbe v živo. Pred zagonom se prepričajte, da ste naredili
+    varnostno kopijo svoje baze podatkov. Če imate, je ukaz: {0}'
+  wwcNewSqlConvertFail: Konverzija ni uspela... obnovite tabele iz varnostne kopije,
+    ki ste jo naredili. Onemogočanje WorldwideChat...
 

@@ -497,12 +497,29 @@ Messages:
   systranHttp400: Slegte parameters gestuur aan Systran. Miskien 'n slegte taalpaar
     wees?
   systranHttp500: Interne bedienerfout vanaf Systran-eindpunt ({0}).
-  wwcInvalidMongoSession: MongoDB is in jou konfigurasie geaktiveer, maar 'n verbinding
+  wwcInvalidStorageSession: '{0} is geaktiveer in jou konfigurasie, maar ''n verbinding
     word nie gevestig nie. Probeer asseblief weer laai om dit reg te stel, maar kontak
-    asseblief die ontwikkelaar as u voorheen 'n suksesvolle verbindingsboodskap van
-    MongoDB ontvang het.
-  wwcInvalidSQLSession: SQL is in jou konfigurasie geaktiveer, maar 'n verbinding
-    word nie gevestig nie. Probeer asseblief weer laai om dit reg te stel, maar kontak
-    asseblief die ontwikkelaar as u voorheen 'n suksesvolle verbindingsboodskap van
-    SQL ontvang het.
+    asseblief die ontwikkelaar as u voorheen ''n suksesvolle verbindingsboodskap van
+    {0} ontvang het.'
+  wwcNewSqlConvertFinish: Voltooi om jou SQL-tabelle om te skakel. Herlaai WorldwideChat...
+  wwcNewSqlStruct: Jou SQL-databasis gebruik die nuwe struktuur en hoef nie omgeskakel
+    te word nie.
+  wwcNewSqlConvertBegin: Omskakeling van jou SQL-tabelle...
+  wwcOldSqlStructLongIntro: Ons vra opreg om verskoning vir die ongerief, maar 'n
+    vorige weergawe van WorldwideChat het u SQL-tabelle met 'n ondoeltreffende struktuur
+    geïnisialiseer. Alhoewel dit met ons plugin sal aanhou funksioneer, kan dit aansienlike
+    verlangsamings met groter spelerrekords tot gevolg hê.
+  wwcOldSqlStructTrans: 'Jou SQL-databasis het ''n ondoeltreffende aktiewe vertalertabelopstelling
+    uit ''n vorige weergawe van WorldwideChat. U kan die volgende opdrag uitvoer om
+    hierdie probleem op te los: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'U kan: die tabelle wat in MySQL gedruk is om te konsole
+    laat val, dit self omskakel en kyk na die nuwe struktuur in die github-repo, of
+    ''n opdrag uitvoer om die omskakeling regstreeks te probeer. Maak asseblief seker
+    dat u ''n rugsteun van u databasis gemaak het voordat u dit uitvoer. As jy dit
+    het, is die opdrag: {0}'
+  wwcNewSqlConvertFail: Omskakeling het misluk... herstel asseblief u tabelle uit
+    die rugsteun wat u gemaak het. Deaktiveer WorldwideChat...
+  wwcOldSqlStructRecords: 'Jou SQL-databasis het ''n ondoeltreffende spelerrekordtafelopstelling
+    uit ''n vorige weergawe van WorldwideChat. U kan die volgende opdrag uitvoer om
+    hierdie probleem op te los: /wwcd convert'
 

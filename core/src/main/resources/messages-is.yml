@@ -503,11 +503,29 @@ Messages:
   systranHttpUnknown: 'Óþekkt http villa: {0}'
   systranHttp400: Slæmar breytur sendar til Systran. Getur verið slæmt tungumálapar?
   systranHttp500: Innri miðlara villa frá Systran endapunkti ({0}).
-  wwcInvalidMongoSession: MongoDB er virkt í stillingunni þinni, en tengingu er ekki
+  wwcInvalidStorageSession: '{0} er virkt í stillingunni þinni, en tengingu er ekki
     komið á fót. Vinsamlegast reyndu að endurhlaða til að laga þetta, en vinsamlegast
     hafðu samband við verktaki ef þú fékkst áður árangursrík tengingarskilaboð frá
-    MongoDB.
-  wwcInvalidSQLSession: SQL er virkt í stillingunni þinni, en tengingu er ekki komið
-    á fót. Vinsamlegast reyndu að endurhlaða til að laga þetta, en vinsamlegast hafðu
-    samband við verktaki ef þú fékkst áður árangursrík tengingarskilaboð frá SQL.
+    {0}.'
+  wwcNewSqlConvertFinish: Lokið að umbreyta SQL töflunum þínum. Endurhleðsla WorldwideChat...
+  wwcNewSqlStruct: SQL gagnagrunnurinn þinn notar nýja uppbygginguna og þarf ekki
+    að breyta.
+  wwcNewSqlConvertBegin: Umbreyta SQL töflunum þínum...
+  wwcOldSqlStructLongIntro: Við biðjumst innilega velvirðingar á óþægindunum, en fyrri
+    útgáfa af WorldwideChat frumstillti SQL töflurnar þínar með óhagkvæmri uppbyggingu.
+    Þó að þetta muni halda áfram að virka með tappi okkar, getur það leitt til verulegra
+    hægagangs með stærri leikmaður færslur.
+  wwcOldSqlStructTrans: 'SQL gagnagrunnurinn þinn hefur óhagkvæma virka þýðendatöflu
+    skipulag frá fyrri útgáfu af WorldwideChat. Þú getur keyrt eftirfarandi skipun
+    til að laga þetta mál: /wwcd umbreyta'
+  wwcOldSqlStructLongTodo: 'Þú getur: sleppt töflunum sem prentaðar eru til að hugga
+    í MySQL, umbreyta þeim sjálfur og skoðað nýju uppbygginguna í github repo, eða
+    keyra skipun til að reyna umbreytinguna í beinni útsendingu. Vinsamlegast vertu
+    viss um að þú hafir gert öryggisafrit af gagnagrunninum þínum áður en þú keyrir
+    þetta. Ef þú ert með þá er skipunin: {0}'
+  wwcNewSqlConvertFail: Umbreyting mistókst... vinsamlegast endurheimtu töflurnar
+    þínar úr öryggisafritinu sem þú gerðir. Slökkva á WorldwideChat...
+  wwcOldSqlStructRecords: 'SQL gagnagrunnurinn þinn hefur óhagkvæma uppsetningu spilara
+    met borð frá fyrri útgáfu af WorldwideChat. Þú getur keyrt eftirfarandi skipun
+    til að laga þetta mál: /wwcd umbreyta'
 

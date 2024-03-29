@@ -498,10 +498,26 @@ Messages:
   systranHttp400: Špatné parametry odeslány do Systran. Může to být špatný jazykový
     pár?
   systranHttp500: Interní chyba serveru z koncového bodu Systran ({0}).
-  wwcInvalidMongoSession: MongoDB je ve vaší konfiguraci povolen, ale spojení není
+  wwcInvalidStorageSession: '{0} je ve vaší konfiguraci povoleno, ale spojení není
     navázáno. Zkuste to znovu načíst, ale kontaktujte vývojáře, pokud jste dříve obdrželi
-    zprávu o úspěšném připojení od MongoDB.
-  wwcInvalidSQLSession: SQL je ve vaší konfiguraci povoleno, ale připojení není navázáno.
-    Zkuste to znovu načíst, ale kontaktujte vývojáře, pokud jste dříve obdrželi zprávu
-    o úspěšném připojení od SQL.
+    zprávu o úspěšném připojení od {0}.'
+  wwcNewSqlConvertFinish: Dokončeno převádění tabulek SQL. Načítání WorldwideChat...
+  wwcNewSqlStruct: Vaše databáze SQL používá novou strukturu a není třeba ji převádět.
+  wwcNewSqlConvertBegin: Převod tabulek SQL...
+  wwcOldSqlStructLongIntro: Upřímně se omlouváme za nepříjemnosti, ale předchozí verze
+    WorldwideChat inicializovala vaše tabulky SQL s neefektivní strukturou. I když
+    to bude i nadále fungovat s naším pluginem, může to mít za následek výrazné zpomalení
+    s většími záznamy hráčů.
+  wwcOldSqlStructTrans: 'Vaše databáze SQL má neefektivní nastavení aktivní tabulky
+    překladače z předchozí verze WorldwideChat. Chcete-li tento problém vyřešit, můžete
+    spustit následující příkaz: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Můžete: vypustit tabulky vytištěné na konzoli v MySQL,
+    převést je sami a podívat se na novou strukturu v repozitáři github, nebo spustit
+    příkaz k pokusu o převod naživo. Ujistěte se, že jste PROVEDLI ZÁLOHU VAŠÍ DATABÁZE
+    PŘED SPUŠTĚNÍM TOHOTO. Pokud ano, příkaz je: {0}'
+  wwcNewSqlConvertFail: Převod se nezdařil... obnovte tabulky ze zálohy, kterou jste
+    vytvořili. Zakázání WorldwideChat...
+  wwcOldSqlStructRecords: 'Vaše databáze SQL má neefektivní nastavení tabulky záznamů
+    přehrávače z předchozí verze WorldwideChat. Chcete-li tento problém vyřešit, můžete
+    spustit následující příkaz: /wwcd convert'
 

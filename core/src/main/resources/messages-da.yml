@@ -497,11 +497,28 @@ Messages:
   systranHttpUnknown: 'Ukendt http fejl: {0}'
   systranHttp400: Dårlige parametre sendt til Systran. Kan være et dårligt sprogpar?
   systranHttp500: Intern serverfejl fra Systran-slutpunktet ({0}).
-  wwcInvalidMongoSession: MongoDB er aktiveret i din konfiguration, men en forbindelse
+  wwcInvalidStorageSession: '{0} er aktiveret i din konfiguration, men en forbindelse
     er ikke etableret. Prøv at genindlæse for at løse dette, men kontakt venligst
     udvikleren, hvis du tidligere har modtaget en vellykket forbindelsesmeddelelse
-    fra MongoDB.
-  wwcInvalidSQLSession: SQL er aktiveret i din konfiguration, men en forbindelse er
-    ikke etableret. Prøv at genindlæse for at løse dette, men kontakt udvikleren,
-    hvis du tidligere har modtaget en vellykket forbindelsesmeddelelse fra SQL.
+    fra {0}.'
+  wwcNewSqlConvertFinish: Færdig konvertering af dine SQL-tabeller. Genindlæser WorldwideChat...
+  wwcNewSqlStruct: Din SQL-database bruger den nye struktur og behøver ikke at blive
+    konverteret.
+  wwcNewSqlConvertBegin: Konvertering af dine SQL-tabeller...
+  wwcOldSqlStructLongIntro: Vi beklager oprigtigt ulejligheden, men en tidligere version
+    af WorldwideChat initialiserede dine SQL-tabeller med en ineffektiv struktur.
+    Selvom dette fortsat vil fungere med vores plugin, kan det resultere i betydelige
+    afmatninger med større spilleroptegnelser.
+  wwcOldSqlStructTrans: 'Din SQL-database har en ineffektiv aktiv oversættertabelopsætning
+    fra en tidligere version af WorldwideChat. Du kan køre følgende kommando for at
+    løse dette problem: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Du kan: slippe tabellerne udskrevet til konsol i MySQL,
+    konvertere dem selv og se på den nye struktur i github-repo, eller køre en kommando
+    for at forsøge konverteringen live. Sørg for, at du har lavet en sikkerhedskopi
+    af din database, før du kører dette. Hvis du har, er kommandoen: {0}'
+  wwcNewSqlConvertFail: Konvertering mislykkedes... gendan venligst dine tabeller
+    fra den sikkerhedskopi, du lavede. Deaktivering af WorldwideChat...
+  wwcOldSqlStructRecords: 'Din SQL-database har en ineffektiv opsætning af afspilningstabeller
+    fra en tidligere version af WorldwideChat. Du kan køre følgende kommando for at
+    løse dette problem: /wwcd convert'
 

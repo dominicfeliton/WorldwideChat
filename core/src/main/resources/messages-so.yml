@@ -522,11 +522,27 @@ Messages:
   systranHttpUnknown: 'Khalad http la ogaan: {0}'
   systranHttp400: Qalabka xun u diray Systran. Waa noqon karaa labaar luuqad xun ah?
   systranHttp500: Khalad serverka gudaha oo ka socda Systran endpoint ({0}).
-  wwcInvalidMongoSession: MongoDB waxaa la ogolaaday config kaaga, laakiin xiriir
-    lama dhiso. Fadlan isku dayi dib u qabsado si aad ku saxiyaan tan, laakiin fadlan
-    la xiriir horumarka haddii aad horay heshay fariin xiriir guul ah oo ka socda
-    MongoDB.
-  wwcInvalidSQLSession: SQL waxaa la ogolaaday config kaaga, laakiin xidhiir lama
+  wwcInvalidStorageSession: '{0} waxaa la ogolaaday config kaaga, laakiin xiriir lama
     dhiso. Fadlan isku dayi dib u qabsado si aad ku saxiyaan tan, laakiin fadlan la
-    xiriir horumarka haddii aad horay ku helay fariin xiriir guul ah oo ka
+    xiriir horumarka haddii aad horay heshay fariin xiriir guul ah oo ka dhacay {0'
+  wwcNewSqlConvertFinish: Waxaa dhameysay bedelka midooyinka SQL. Dib u laabayay WorldwideChat...
+  wwcNewSqlStruct: Xidhibaadkaaga SQL waxaa isticmaalaya dhismaha cusub oo ma baahan
+    in la bedeeyo.
+  wwcNewSqlConvertBegin: Beddelaysa jadaalkaaga SQL...
+  wwcOldSqlStructRecords: 'Xidhibaadkaaga SQL waxay leeyihiin miiska diiwaanka laaciyaaryahanka
+    aan faafsan ah oo ka socda nooca hore ee WorldwideChat. Waxaad qaban kartaa taliska
+    soo socda si aad arrintan u saxiyo: /wwcd convert'
+  wwcOldSqlStructLongIntro: Waxaan si daacad ah uga rafiinaynaa, laakiin nooca hore
+    ee WorldwideChat ayaa bilaabsaday misaalkaaga SQL leh dhisar aan faafsan. Intaas
+    oo sii wado doono inuu la shaqeeyo pluginkeena, waxay dhalin kartaa dhacis muhiim
+    ah oo la leeyahay diiwa
+  wwcOldSqlStructTrans: 'Xidhibaadkaaga SQL waxay leeyihiin miiska tarjumaadka firqun
+    aan ah oo ka mid ah nooca hore ee WorldwideChat. Waxaad qaban kartaa taliska soo
+    socda si aad arrintan u saxiyo: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Waxaad kartaa: daax midooyinka la daabacay si loo sameeyo
+    MySQL, isaga bedelka iyo eegayso dhismaha cusub ee repo github, ama soo gudbi
+    amar si ay isku dayaan bedelka nool. Fadlan xaqiijiyay in aad sameeyey XIDHIBAADKAAGA
+    KA HORE ARRINTAAN. Haddii aad leeyahay, amarka waa: {0}'
+  wwcNewSqlConvertFail: Beddelka oo fashilmay... fadlan dib u soo celiyo jadaalkaaga
+    oo ka dhacay aad sameysay Disquidaysa WorldwideChat...
 

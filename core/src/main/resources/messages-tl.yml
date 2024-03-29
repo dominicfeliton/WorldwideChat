@@ -551,12 +551,33 @@ Messages:
   systranHttp400: Masamang mga parameter na ipinadala sa Systran. Maaaring maging
     isang masamang pares ng wika?
   systranHttp500: Panloob na error sa server mula sa Systran endpoint ({0}).
-  wwcInvalidMongoSession: Pinagana ang MongoDB sa iyong config, ngunit hindi itinatag
-    ang isang koneksyon. Mangyaring subukang muling mag-load upang ayusin ito, ngunit
-    mangyaring makipag-ugnay sa developer kung dati kang nakatanggap ng isang matagumpay
-    na mensahe ng koneksyon mula sa MongoDB.
-  wwcInvalidSQLSession: Pinagana ang SQL sa iyong config, ngunit hindi itinatag ang
-    isang koneksyon. Mangyaring subukang muling mag-load upang ayusin ito, ngunit
-    mangyaring makipag-ugnay sa developer kung dati kang nakatanggap ng isang matagumpay
-    na mensahe ng koneksyon mula sa SQL.
+  wwcInvalidStorageSession: Pinagana ang {0} sa iyong config, ngunit hindi itinatag
+    ang koneksyon. Mangyaring subukang mag-reload upang ayusin ito, ngunit mangyaring
+    makipag-ugnay sa developer kung dati kang nakatanggap ng isang matagumpay na mensahe
+    ng koneksyon mula sa {0}.
+  wwcNewSqlConvertFinish: Natapos ang pag-convert ng iyong mga talahanayan ng SQL.
+    Muling pag-load ng WorldwideChat...
+  wwcNewSqlStruct: Ang iyong SQL database ay gumagamit ng bagong istraktura at hindi
+    kailangang i-convert.
+  wwcNewSqlConvertBegin: Pag-convert ng iyong mga talahanayan ng SQL...
+  wwcOldSqlStructRecords: 'Ang iyong SQL database ay may isang hindi mahusay na setup
+    ng talahanayan ng record ng player mula sa isang nakaraang bersyon ng WorldwideChat.
+    Maaari mong patakbuhin ang sumusunod na utos upang ayusin ang isyung ito: /wwcd
+    convert'
+  wwcOldSqlStructLongIntro: Taos-puso kaming humihingi ng paumanhin para sa abala,
+    ngunit inisimula ng isang nakaraang bersyon ng WorldwideChat ang iyong mga talahanayan
+    ng SQL na may isang hindi mahusay na istraktura. Bagama't patuloy itong gumana
+    sa aming plugin, maaari itong magresulta sa makabuluhang pagbagal sa mas malaking
+    mga talaan ng manlalaro.
+  wwcOldSqlStructTrans: 'Ang iyong SQL database ay may hindi mahusay na aktibong setting
+    ng talahanayan ng tagasalin mula sa isang nakaraang bersyon ng WorldwideChat.
+    Maaari mong patakbuhin ang sumusunod na utos upang ayusin ang isyung ito: /wwcd
+    convert'
+  wwcOldSqlStructLongTodo: 'Maaari mong: i-drop ang mga talahanayan na naka-print
+    sa console sa MySQL, i-convert ang mga ito mismo at tingnan ang bagong istraktura
+    sa repo ng github, o patakbuhin ang isang command upang subukang live ang conversion.
+    Mangyaring siguraduhin na GUMAWA KA NG ISANG BACKUP NG IYONG DATABASE BAGO PATAKBUHIN
+    ITO. Kung mayroon ka, ang utos ay: {0}'
+  wwcNewSqlConvertFail: Nabigo ang conversion... mangyaring ibalik ang iyong mga talahanayan
+    mula sa backup na iyong ginawa. Hindi paganahin ang WorldwideChat...
 
