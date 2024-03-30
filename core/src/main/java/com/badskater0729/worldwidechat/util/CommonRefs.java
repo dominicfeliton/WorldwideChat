@@ -250,7 +250,7 @@ public class CommonRefs {
 	 */
 	public List<SupportedLang> fixLangNames(List<SupportedLang> in, boolean nativesOnly) {
 		// Adjust the file path as necessary
-		String isoJsonFilePath = "ISO_639-2.min.json";
+		String isoJsonFilePath = "ISO_639-WWC-Modified.json";
 		ObjectMapper objectMapper = new ObjectMapper();
 		Map<String, ISOLanguage> languageMap;
 
