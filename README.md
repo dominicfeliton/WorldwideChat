@@ -20,11 +20,13 @@ And much more to come!
 ## How to Setup
 Read the [Wiki](https://github.com/BadSkater0729/WorldwideChat/wiki). File an issue if you don't think something is working right!
 
+If you would like to develop for this plugin, please check out ```dev/COMPILE.md```.
+
 ## Installation
 Download WorldwideChat from the Releases tab. View more info about it on its [SpigotMC](https://www.spigotmc.org/resources/worldwidechat.89910/) page.
 
 ## Contributing
-Pull requests are welcome. File issues in the Issues tab; include things like version number, server software, console logs, and a detailed description.
+Pull requests are welcome. File issues in the **Issues** tab; include things like version number, server software, console logs, and a detailed description.
 
 ## Credits
 Thank you to:
