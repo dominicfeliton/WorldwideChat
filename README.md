@@ -4,16 +4,16 @@
 ### WorldwideChat is a translation plugin for Bukkit, Spigot, and PaperMC 1.13+.
 It allows you to translate various parts of Minecraft live using several Translation APIs.
 Some of its notable features include:
-- IBM Watson, Google Translate, Amazon Translate, Libre Translate, and DeepL Translate support.
+- Amazon Translate, Azure Translate, DeepL Translate, Google Translate, IBM Watson, Libre Translate, and Systran Translate support.
 - Translate incoming/outgoing chat, signs, entities, and written books with an interactive GUI.
 - Translation globally, for other players, or just you.
-- The plugin itself has been translated into more than 30 languages.
-- A cache that stores the most used phrases by players on your server, improving speed and reliability in the event of slow API response times.
-- Configurable rate limits so your players don't fill up a quota too quickly.
+- The plugin itself has been localized into more than 30 languages thanks to Amazon Translate.
+- A cache that stores the most used phrases by players on your server, improving speed/reliability/lower costs.
+- Configurable rate limits so your players don't rack up substantial translation costs.
 - Persistent translation sessions saved per player across server reboots and reloads.
 - Stat tracker to keep track of how your players use this plugin.
-- A configuration GUI to easily change your config.yml.
-- SQL (MariaDB/MySQL) + MongoDB Support.
+- A configuration GUI to easily change your config.yml + add/override custom localizations.
+- SQL (MariaDB/MySQL) + PostgreSQL + MongoDB Support.
 
 And much more to come! 
 
@@ -24,12 +24,12 @@ Read the [Wiki](https://github.com/BadSkater0729/WorldwideChat/wiki). File an is
 Download WorldwideChat from the Releases tab. View more info about it on its [SpigotMC](https://www.spigotmc.org/resources/worldwidechat.89910/) page.
 
 ## Contributing
-Pull requests are welcome. File issues in the Issues tab; include things like version number, server software, and a detailed description of the bug.
+Pull requests are welcome. File issues in the Issues tab; include things like version number, server software, console logs, and a detailed description.
 
 ## Credits
 Thank you to:
-- jedk1 for OldVersionBookTranslate.java
-- DarkBlade12 for ReflectionUtils.java
+- jedk1 for OldVersionBookTranslate.java _(no longer included as of 1.15.0)_
+- DarkBlade12 for ReflectionUtils.java _(no longer included as of 1.15.0)_
 
 ## License
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)

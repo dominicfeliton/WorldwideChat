@@ -4,7 +4,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bukkit.Location;
@@ -27,7 +26,6 @@ import org.bukkit.scheduler.BukkitRunnable;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.TempItemInventory;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import com.badskater0729.worldwidechat.util.OldVersionOpenBook;
 import com.cryptomorin.xseries.XMaterial;
 
 import net.kyori.adventure.text.Component;
@@ -134,7 +132,8 @@ public class TranslateInGameListener implements Listener {
 									Player.class.getMethod("openBook", ItemStack.class);
 									event.getPlayer().openBook(newBook);
 								} catch (Exception e) {
-									OldVersionOpenBook.openBook(newBook, event.getPlayer());
+									// OldVersionOpenBook.openBook(newBook, event.getPlayer());
+									refs.sendFancyMsg("wwctbNoMoreOldBooks", "", "&e", event.getPlayer());
 								}
 							}
 						};
