@@ -348,7 +348,6 @@ Messages:
     زیر آن برای بازگشت.
   wwcConfigConversationFatalAsyncSuccess: زمان کار Async با موفقیت تنظیم.
   wwcConfigGUIFatalAsyncAbortButton: تغییر زمان تکلیف Async
-  wwcTimeoutException: فرمان شما به پایان رسید. لطفا دوباره امتحان کنید
   libreHttp400: درخواست بد به Libre Translate ارسال شد! مگر اینکه شما در حال انجام
     کاری است که شما نباید, شما باید این را دریافت نمی. لطفا با توسعه دهنده تماس بگیرید!
   wwcConfigGUILibreTranslateApiKeyButton: تغییر رایگان ترجمه کلید API
@@ -559,4 +558,5 @@ Messages:
   wwctLangToLangStartOtherPlayer: شروع یک جلسه ترجمه جدید برای {0} از {1} به {2}
   wwcgLangToLangStart: اکنون چت جهانی را از {0} به {1} ترجمه می کنید.
   wwctrlRateLimitSetTarget: محدودیت نرخ {0} را به {1} ثانیه تنظیم کنید.
+  wwcTimeoutException: زمان درخواست شما منقضی شده است. لطفا دوباره امتحان کنید
 

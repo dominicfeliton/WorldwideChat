@@ -352,7 +352,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Sync کام کا ٹائم آؤٹ کامیابی سے متعین کیا
     گیا ہے۔
   wwcConfigGUIFatalAsyncAbortButton: ایسنک ٹاسک ٹائم آؤٹ تبدیل کریں
-  wwcTimeoutException: آپ کے حکم کا وقت ختم ہو گیا. براہ مہربانی دوبارہ کوشش کریں۔
   libreHttp400: بری درخواست Libri ترجمہ کرنے کے لئے بھیجا! جب تک آپ کچھ ایسا نہیں
     کر رہے ہیں جو آپ کو نہیں کرنا چاہئے، آپ کو یہ نہیں ملنا چاہئے. ڈویلپر سے رابطہ
     کریں!
@@ -567,4 +566,5 @@ Messages:
   wwctLangToLangStartOtherPlayer: '{1} سے {2} تک {0} کے لئے نیا ترجمہ سیشن شروع کرنا۔'
   wwcgLangToLangStart: اب عالمی چیٹ کا {0} سے {1} تک ترجمہ کریں۔
   wwctrlRateLimitSetTarget: '{0} کی شرح کی حد کو {1} سیکنڈ پر مقرر کریں۔'
+  wwcTimeoutException: آپ کی درخواست کا وقت ختم ہوگیا۔ براہ کرم دوبارہ کوشش کریں۔
 

@@ -360,7 +360,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Az aszinkron feladat időtúltolása sikeresen
     beállítva.
   wwcConfigGUIFatalAsyncAbortButton: Async Task Timeout módosítása
-  wwcTimeoutException: A parancsnoksága időtúllépés volt. Kérem, próbálja újra.
   libreHttp400: Rossz kérés elküldve a Libre Fordítónak! Hacsak nem csinálsz valamit,
     amit nem szabad, ezt nem szabad megkapnod. Kérjük, lépjen kapcsolatba a fejlesztővel!
   wwcConfigGUILibreTranslateApiKeyButton: Change Libre Fordítás API Key
@@ -573,4 +572,5 @@ Messages:
     és {2} között.
   wwcgLangToLangStart: Most fordítja a globális csevegést {0} -ról {1} -ra.
   wwctrlRateLimitSetTarget: Állítsa be a {0} sebességkorlátozást {1} másodpercre.
+  wwcTimeoutException: A kérése lejárt. Kérjük, próbálkozzon újra.
 

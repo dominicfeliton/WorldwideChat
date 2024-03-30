@@ -371,7 +371,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async temps d'espera de tasques establert
     amb èxit.
   wwcConfigGUIFatalAsyncAbortButton: Canviar el temps d'espera de la tasca async
-  wwcTimeoutException: La vostra comanda cronometrada. Torneu-ho a provar.
   libreHttp400: Mal petició enviada a Libre Translate! A menys que vostè està fent
     alguna cosa que vostè no ha, vostè no ha d'aconseguir això. Poseu-vos en contacte
     amb el desenvolupador!
@@ -599,4 +598,5 @@ Messages:
     {1} a {2}.
   wwcgLangToLangStart: Ara tradueix el xat global de {0} a {1}.
   wwctrlRateLimitSetTarget: Estableix el límit de tarifa de {0} a {1} segons.
+  wwcTimeoutException: La seva sol·licitud va extingir. Si us plau, torneu a intentar.
 

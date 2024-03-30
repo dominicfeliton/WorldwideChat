@@ -362,7 +362,6 @@ Messages:
     eller något under det för att gå tillbaka.
   wwcConfigConversationFatalAsyncSuccess: Tidsgräns för async aktivitet.
   wwcConfigGUIFatalAsyncAbortButton: Ändra tidsgräns för async aktivitet
-  wwcTimeoutException: Ditt kommando tids ut. Försök igen.
   libreHttp400: Dålig begäran skickas till Libre Translate! Om du inte gör något som
     du inte borde, borde du inte få det här. Kontakta utvecklaren!
   wwcConfigGUILibreTranslateApiKeyButton: Ändra Ledig Översätt API-nyckel
@@ -569,4 +568,5 @@ Messages:
     till {2}.
   wwcgLangToLangStart: Översätter nu global chatt från {0} till {1}.
   wwctrlRateLimitSetTarget: Ställ in hastighetsgränsen på {0} till {1} sekunder.
+  wwcTimeoutException: Din förfrågan har gått ut. Vänligen försök igen.
 

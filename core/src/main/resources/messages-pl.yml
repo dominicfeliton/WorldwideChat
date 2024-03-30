@@ -357,8 +357,6 @@ Messages:
     nowy limit czasu, lub cokolwiek poniżej niego, aby wrócić.
   wwcConfigConversationFatalAsyncSuccess: Ustawiono limit czasu zadania asynchroniczny.
   wwcConfigGUIFatalAsyncAbortButton: Zmiana limitu czasu zadania asynchronnego
-  wwcTimeoutException: Upłynnął limit czasu twojego polecenia. Proszę spróbować jeszcze
-    raz.
   libreHttp400: Zła prośba wysłana do Libre Translate! Chyba że robisz coś, czego
     nie powinieneś, nie powinieneś tego dostać. Skontaktuj się z deweloperem!
   wwcConfigGUILibreTranslateApiKeyButton: Zmień klucz API Libre Translate
@@ -565,4 +563,5 @@ Messages:
     do {2}.
   wwcgLangToLangStart: Teraz tłumaczymy globalny czat z {0} na {1}.
   wwctrlRateLimitSetTarget: Ustaw limit szybkości {0} na {1} sekund.
+  wwcTimeoutException: Twoja prośba wygasła. Spróbuj ponownie.
 

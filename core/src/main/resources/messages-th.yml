@@ -312,7 +312,6 @@ Messages:
     {0} วินาทีพิมพ์อะไรก็ได้ข้างต้น 7 เพื่อตั้งค่าการหมดเวลาใหม่ หรืออะไรก็ตามที่อยู่ด้านล่างเพื่อย้อนกลับ
   wwcConfigConversationFatalAsyncSuccess: หมดเวลางาน Async ตั้งค่าเสร็จเรียบร้อยแล้ว
   wwcConfigGUIFatalAsyncAbortButton: เปลี่ยนหมดเวลางาน Async
-  wwcTimeoutException: คำสั่งของคุณหมดเวลาโปรดลองใหม่อีกครั้ง
   libreHttp400: คำขอที่ไม่ดีส่งไปยังฟรีแปลภาษา!ถ้าคุณกำลังทำสิ่งที่คุณไม่ควร, คุณไม่ควรจะได้รับนี้.กรุณาติดต่อนักพัฒนา!
   wwcConfigGUILibreTranslateApiKeyButton: เปลี่ยนคีย์ API แปล Libre
   libreHttp403: ขาดหายไป Libre แปล API คีย์, หรือคุณถูกห้ามจากเซิร์ฟเวอร์!
@@ -493,4 +492,5 @@ Messages:
   wwctLangToLangStartOtherPlayer: เริ่มเซสชันการแปลใหม่สำหรับ {0} จาก {1} ถึง {2}
   wwcgLangToLangStart: ตอนนี้แปลแชททั่วโลกจาก {0} เป็น {1}
   wwctrlRateLimitSetTarget: กำหนดขีด จำกัด อัตรา {0} เป็น {1} วินาที
+  wwcTimeoutException: คำขอของคุณหมดเวลาโปรดลองอีกครั้ง
 

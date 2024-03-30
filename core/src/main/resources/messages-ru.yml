@@ -359,8 +359,6 @@ Messages:
     новый тайм-аут, или значение ниже, чтобы вернуться.
   wwcConfigConversationFatalAsyncSuccess: Тайм-аут асинхронной задачи установлен успешно.
   wwcConfigGUIFatalAsyncAbortButton: Изменить тайм-аут асинхронной задачи
-  wwcTimeoutException: Время ожидания вашей команды истекло. Пожалуйста, попробуйте
-    еще раз.
   libreHttp400: Неверный запрос отправлен в Libre Translate! Если вы не делаете то,
     чего не должны делать, вы не должны этого делать. Обратитесь к разработчику!
   wwcConfigGUILibreTranslateApiKeyButton: Изменить ключ API перевода Libre
@@ -566,4 +564,6 @@ Messages:
   wwctLangToLangStartOtherPlayer: Начало нового сеанса перевода {0} с {1} на {2}.
   wwcgLangToLangStart: Теперь переводим глобальный чат с {0} на {1}.
   wwctrlRateLimitSetTarget: Установите ограничение скорости {0} на {1} секунды.
+  wwcTimeoutException: Время ожидания вашего запроса истекло. Пожалуйста, попробуйте
+    еще раз.
 

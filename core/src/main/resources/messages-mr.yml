@@ -351,7 +351,6 @@ Messages:
     परत जाण्यासाठी त्याच्या खाली काहीही.
   wwcConfigConversationFatalAsyncSuccess: Async कार्य कालबाह्य यशस्वीरित्या सेट.
   wwcConfigGUIFatalAsyncAbortButton: Async कार्य कालबाह्य बदला
-  wwcTimeoutException: आपला आदेश कालबाह्य झाला. कृपया पुन्हा प्रयत्न करा.
   libreHttp400: खराब विनंती Libre भाषांतर पाठविले! आपण काहीतरी करत नाही तोपर्यंत आपण
     नये, आपण हे प्राप्त करू नये. विकसक संपर्क साधा!
   wwcConfigGUILibreTranslateApiKeyButton: मोफत भाषांतर API की बदला
@@ -548,4 +547,5 @@ Messages:
     करणे.'
   wwcgLangToLangStart: आता जागतिक चॅटचे भाषांतर {0} ते {1} पर्यंत
   wwctrlRateLimitSetTarget: '{0} ची दर मर्यादा {1} सेकंद पर्यंत सेट करा.'
+  wwcTimeoutException: आपली विनंती वेळ पूर्ण झाली. पुन्हा प्रयत्न करा.
 

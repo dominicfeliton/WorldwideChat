@@ -101,8 +101,8 @@ public class LibreTranslation extends BasicTranslation {
 				}
 				
 				/* Parse languages */
-				main.setOutputLangs(outLangList);
-				main.setInputLangs(inLangList);
+				main.setOutputLangs(refs.fixLangNames(outLangList, true));
+				main.setInputLangs(refs.fixLangNames(inLangList, true));
 
 				/* Setup test translation */
 				inputLang = "en";

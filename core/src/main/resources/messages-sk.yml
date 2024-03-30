@@ -363,7 +363,6 @@ Messages:
     nový časový rámec, alebo čokoľvek pod ním, aby ste sa vrátili späť.
   wwcConfigConversationFatalAsyncSuccess: Časový údaj úlohy Async úspešne nastavený.
   wwcConfigGUIFatalAsyncAbortButton: Zmeniť časový interval úloh Async
-  wwcTimeoutException: Čas vášho velenia vypršal. Prosím, skúste to znova.
   libreHttp400: Zlá požiadavka zaslaná Libre Translate! Ak nerobíte niečo, čo by ste
     nemali, nemali by ste to dostať. Kontaktujte vývojára!
   wwcConfigGUILibreTranslateApiKeyButton: Zmena bezplatného prekladu API kľúča
@@ -568,4 +567,5 @@ Messages:
     {1} do {2}.
   wwcgLangToLangStart: Teraz prekladá globálny chat z {0} na {1}.
   wwctrlRateLimitSetTarget: Nastavte limit rýchlosti {0} na {1} sekúnd.
+  wwcTimeoutException: Vaša požiadavka vypršala časový limit. Prosím, skúste to znova.
 

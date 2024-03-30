@@ -372,7 +372,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Timeout activitate async setat cu succes.
   wwcConfigGUIFatalAsyncAbortButton: Modificarea timpului de expirare a activității
     async
-  wwcTimeoutException: Comanda ta a expirat. Vă rugăm să încercați din nou.
   libreHttp400: Cerere greșită trimisă la Libre Translate! Dacă nu faceți ceva ce
     nu ar trebui, nu ar trebui să obțineți acest lucru. Vă rugăm să contactați dezvoltatorul!
   wwcConfigGUILibreTranslateApiKeyButton: Schimbați cheia API pentru traducerea gratuită
@@ -588,4 +587,5 @@ Messages:
     de la {1} la {2}.
   wwcgLangToLangStart: Acum traduce chat-ul global de la {0} la {1}.
   wwctrlRateLimitSetTarget: Setați limita de viteză de {0} la {1} secunde.
+  wwcTimeoutException: Solicitarea dvs. a expirat. Vă rugăm să încercați din nou.
 

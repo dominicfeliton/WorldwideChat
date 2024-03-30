@@ -361,7 +361,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Tempo limite da tarefa assíncrona definido
     com sucesso.
   wwcConfigGUIFatalAsyncAbortButton: Alterar tempo limite da tarefa assíncrona
-  wwcTimeoutException: Seu comando atingiu o tempo limite. Por favor, tente novamente.
   libreHttp400: Pedido incorreto enviado para o Libre Translate! A menos que você
     esteja fazendo algo que não deveria, você não deve entender isso. Entre em contato
     com o desenvolvedor!
@@ -579,4 +578,5 @@ Messages:
     {1} para {2}.
   wwcgLangToLangStart: Agora traduzindo o bate-papo global de {0} para {1}.
   wwctrlRateLimitSetTarget: Defina o limite de taxa de {0} a {1} segundos.
+  wwcTimeoutException: Sua solicitação atingiu o tempo limite. Por favor, tente novamente.
 

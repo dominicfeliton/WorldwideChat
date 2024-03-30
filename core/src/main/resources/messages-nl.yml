@@ -362,7 +362,6 @@ Messages:
     of iets eronder om terug te gaan.
   wwcConfigConversationFatalAsyncSuccess: Time-out voor async taken is succesvol ingesteld.
   wwcConfigGUIFatalAsyncAbortButton: Time-out voor async taken wijzigen
-  wwcTimeoutException: Je commando is een time-out geworden. Probeer het opnieuw.
   libreHttp400: Slecht verzoek verzonden naar Libre Translate! Tenzij je iets doet
     wat je niet zou moeten doen, zou je dit niet moeten krijgen. Neem dan contact
     op met de ontwikkelaar!
@@ -577,4 +576,6 @@ Messages:
     naar {2}.
   wwcgLangToLangStart: Nu wordt wereldwijde chat vertaald van {0} naar {1}.
   wwctrlRateLimitSetTarget: Stel de snelheidslimiet van {0} in op {1} seconden.
+  wwcTimeoutException: Er is een time-out opgetreden voor je aanvraag. Probeer het
+    nog eens.
 

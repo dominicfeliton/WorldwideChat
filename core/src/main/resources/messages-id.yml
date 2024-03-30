@@ -352,7 +352,6 @@ Messages:
     baru, atau apa pun di bawahnya untuk kembali.
   wwcConfigConversationFatalAsyncSuccess: Async tugas batas waktu ditetapkan berhasil.
   wwcConfigGUIFatalAsyncAbortButton: Ubah Async Task Timeout
-  wwcTimeoutException: Perintah Anda habis waktu. Silakan coba lagi.
   libreHttp400: Permintaan buruk dikirim ke Libre Translate! Kecuali Anda melakukan
     sesuatu yang seharusnya tidak Anda lakukan, Anda seharusnya tidak mendapatkan
     ini. Silahkan hubungi pengembang!
@@ -552,4 +551,5 @@ Messages:
     ke {2}.
   wwcgLangToLangStart: Sekarang menerjemahkan obrolan global dari {0} ke {1}.
   wwctrlRateLimitSetTarget: Tetapkan batas laju {0} ke {1} detik.
+  wwcTimeoutException: Permintaan Anda habis waktunya. Silakan coba lagi.
 

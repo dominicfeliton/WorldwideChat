@@ -277,7 +277,6 @@ Messages:
   wwcConfigConversationFatalAsyncAbort: 中止所有異步任務的當前超時時間為 {0} 秒。鍵入 7 以上的任何內容以設置新的超時，或者在其下方的任何內容返回。
   wwcConfigConversationFatalAsyncSuccess: 異步任務超時設置成功。
   wwcConfigGUIFatalAsyncAbortButton: 更改異步任務超時
-  wwcTimeoutException: 你的命令超時請重試。
   libreHttp400: 錯誤的請求發送到自由翻譯!除非你正在做一些你不應該做的事情，否則你不應該得到這個。請聯繫開發人員！
   wwcConfigGUILibreTranslateApiKeyButton: 更改自由翻譯 API 密鑰
   libreHttp403: 缺少免費翻譯 API 密鑰，或者您被禁止從服務器！
@@ -430,4 +429,5 @@ Messages:
   wwctLangToLangStartOtherPlayer: 開始 {0} 的新翻譯會話，從 {1} 到 {2}。
   wwcgLangToLangStart: 現在將全球聊天從 {0} 翻譯為 {1}。
   wwctrlRateLimitSetTarget: 將 {0} 的速率限制設置為 {1} 秒。
+  wwcTimeoutException: 您的請求逾時。請再試一次。
 

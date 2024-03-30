@@ -353,7 +353,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Asynchronní časový limit úloh byl úspěšně
     nastaven.
   wwcConfigGUIFatalAsyncAbortButton: Změna časového limtu asynchronních úloh
-  wwcTimeoutException: Vypršel časový limit vašeho příkazu. Prosím, zkuste to znovu.
   libreHttp400: Špatný požadavek zaslán Libre Translate! Pokud neděláte něco, co byste
     neměli, neměli byste to dostat. Kontaktujte vývojáře!
   wwcConfigGUILibreTranslateApiKeyButton: Změnit zdarma Přeložit API Key
@@ -559,4 +558,5 @@ Messages:
   wwctLangToLangStartOtherPlayer: Zahájení nové relace překladu pro {0} z {1} na {2}.
   wwcgLangToLangStart: Nyní překládá globální chat z {0} na {1}.
   wwctrlRateLimitSetTarget: Nastavte limit rychlosti {0} na {1} sekund.
+  wwcTimeoutException: Vaše žádost vypršela. Zkuste to prosím znovu.
 

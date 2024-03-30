@@ -370,7 +370,6 @@ Messages:
     të re, ose ndonjë gjë poshtë saj për t'u kthyer prapa.
   wwcConfigConversationFatalAsyncSuccess: Asinkron detyrë timeout vendosur me sukses.
   wwcConfigGUIFatalAsyncAbortButton: Ndrysho Async Task Timeout
-  wwcTimeoutException: Komanda juaj në kohën e duhur. Ju lutemi provoni përsëri.
   libreHttp400: Kërkesa e keqe dërguar Libre Translate! Nëse ju jeni duke bërë diçka
     që ju nuk duhet, ju nuk duhet të merrni këtë. Ju lutemi kontaktoni zhvilluesin!
   wwcConfigGUILibreTranslateApiKeyButton: Ndrysho Libre Translate API Key
@@ -590,4 +589,5 @@ Messages:
     {1} në {2}.
   wwcgLangToLangStart: Tani përkthej bisedën globale nga {0} në {1}.
   wwctrlRateLimitSetTarget: Vendosni kufirin e normës prej {0} në {1} sekonda.
+  wwcTimeoutException: Kërkesa juaj ka përfunduar. Ju lutemi provoni përsëri.
 

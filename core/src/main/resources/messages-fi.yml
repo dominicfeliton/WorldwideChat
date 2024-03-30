@@ -347,7 +347,6 @@ Messages:
     tai mitä tahansa sen alapuolella palataksesi takaisin.
   wwcConfigConversationFatalAsyncSuccess: Async-tehtävän aikakatkaisu asetettu onnistuneesti.
   wwcConfigGUIFatalAsyncAbortButton: Muuta Async-tehtävän aikakatkaisu
-  wwcTimeoutException: Komentosi aikakatkaistiin. Yritä uudelleen.
   libreHttp400: Huono pyyntö lähetetty Libre Translate -sivustolle! Ellet tee jotain,
     mitä sinun ei pitäisi, sinun ei pitäisi saada tätä. Ota yhteyttä kehittäjään!
   wwcConfigGUILibreTranslateApiKeyButton: Muuta Libre Käännä API-avain
@@ -554,4 +553,5 @@ Messages:
     - {2}.'
   wwcgLangToLangStart: 'Nyt käännetään globaali keskustelu {0}: sta {1}: iin.'
   wwctrlRateLimitSetTarget: Aseta nopeusrajoitukseksi {0} {1} sekuntia.
+  wwcTimeoutException: Pyyntösi aikakatkaisi. Yritä uudelleen.
 

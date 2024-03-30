@@ -339,7 +339,6 @@ Messages:
     või midagi selle alla minna tagasi.
   wwcConfigConversationFatalAsyncSuccess: Async ülesande ajalõpu seatud edukalt.
   wwcConfigGUIFatalAsyncAbortButton: Asynci ülesande ajalõpu muutmine
-  wwcTimeoutException: Teie käsk on ajastatud. Palun proovige uuesti.
   libreHttp400: Bad taotluse saadetakse Libre Tõlgi! Kui te teete midagi, mida sa
     ei peaks, sa ei tohiks seda saada. Palun võtke ühendust arendajaga!
   wwcConfigGUILibreTranslateApiKeyButton: Muuda tasuta tõlkida API võti
@@ -538,4 +537,5 @@ Messages:
     kuni {2}.'
   wwcgLangToLangStart: Nüüd tõlkige ülemaailmset vestlust {0} -st {1}.
   wwctrlRateLimitSetTarget: Määrake kiiruse piirmäär {0} -ni {1} sekundit.
+  wwcTimeoutException: Teie taotlus lõppes. Palun proovige uuesti.
 

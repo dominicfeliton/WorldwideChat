@@ -348,7 +348,6 @@ Messages:
     chochote chini yake ili kurudi nyuma.
   wwcConfigConversationFatalAsyncSuccess: Timeout kazi ya Async imewekwa kwa mafanikio.
   wwcConfigGUIFatalAsyncAbortButton: Badilisha Muda wa Kazi ya Async
-  wwcTimeoutException: Amri yako wakati muafaka nje. Tafadhali jaribu tena.
   libreHttp400: Ombi mbaya alimtuma Libre Tafsiri! Isipokuwa unafanya kitu ambacho
     haipaswi, unapaswa kupata hii. Tafadhali wasiliana developer!
   wwcConfigGUILibreTranslateApiKeyButton: Badilisha Libre Kutafsiri API muhimu
@@ -558,4 +557,5 @@ Messages:
     {1} hadi {2}.
   wwcgLangToLangStart: Sasa kutafsiri mazungumzo ya kimataifa kutoka {0} hadi {1}.
   wwctrlRateLimitSetTarget: Weka kikomo cha kiwango cha {0} hadi sekunde {1}.
+  wwcTimeoutException: Ombi lako imekwisha wakati. Tafadhali jaribu tena.
 

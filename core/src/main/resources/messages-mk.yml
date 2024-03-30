@@ -365,7 +365,6 @@ Messages:
     или нешто под него за да се вратите назад.
   wwcConfigConversationFatalAsyncSuccess: Async задача тајмаут постави успешно.
   wwcConfigGUIFatalAsyncAbortButton: Промена Async Задача тајмаут
-  wwcTimeoutException: Вашата команда темпирана. Ве молиме обидете се повторно.
   libreHttp400: Лошо барање испратено до Либре Преведете! Освен ако не правите нешто
     што не треба, не треба да го добиете ова. Ве молиме контактирајте го инвеститорот!
   wwcConfigGUILibreTranslateApiKeyButton: Промена Слободен Преведете API клуч
@@ -579,4 +578,5 @@ Messages:
   wwcgLangToLangStart: Сега преведува глобален разговор од {0} на {1}.
   wwctrlRateLimitSetTarget: Поставете го ограничувањето на стапката од {0} до {1}
     секунди.
+  wwcTimeoutException: Вашето барање истече. Ве молиме обидете се повторно.
 

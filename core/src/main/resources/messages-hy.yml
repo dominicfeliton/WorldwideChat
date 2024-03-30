@@ -365,7 +365,6 @@ Messages:
     timeout, կամ որեւէ բան ներքեւում այն վերադառնալ.'
   wwcConfigConversationFatalAsyncSuccess: Async խնդիրն timeout սահմանել հաջողությամբ.
   wwcConfigGUIFatalAsyncAbortButton: Փոխել Async Task Ժամկետը
-  wwcTimeoutException: 'Ձեր հրամանը ժամանակավրեպ դուրս. Խնդրում ենք կրկին փորձել:'
   libreHttp400: 'Վատ խնդրանքը ուղարկվել է Libre Թարգմանել! Եթե դուք անում մի բան,
     որ դուք չպետք է, Դուք չպետք է ստանալ այս. Խնդրում ենք կապնվել մշակողի հետ:'
   wwcConfigGUILibreTranslateApiKeyButton: Փոխել ազատ Թարգմանել API Key
@@ -584,4 +583,5 @@ Messages:
     -ից մինչև {2}:'
   wwcgLangToLangStart: 'Այժմ թարգմանելով գլոբալ զրույցը {0} -ից մինչև {1}:'
   wwctrlRateLimitSetTarget: 'Սահմանեք {0} դրույքաչափի սահմանը մինչև {1} վայրկյան:'
+  wwcTimeoutException: 'Ձեր հարցման ժամկետը լրացել է: Խնդրում ենք կրկին փորձել:'
 

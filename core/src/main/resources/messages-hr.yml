@@ -355,7 +355,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async vremensko ograničenje zadatka postavljen
     uspješno.
   wwcConfigGUIFatalAsyncAbortButton: Promjena vremenskog ograničenja zadatka Async
-  wwcTimeoutException: Vaša naredba je istekla. Molim te, probaj ponovo.
   libreHttp400: Loš zahtjev poslan Libre Prijevod Osim ako ne radite nešto što ne
     biste trebali, ne biste trebali dobiti ovo. Obratite se razvojnom programeru!
   wwcConfigGUILibreTranslateApiKeyButton: Promjena Besplatno Prevedi API ključ
@@ -561,4 +560,5 @@ Messages:
     {2}.
   wwcgLangToLangStart: Sada prevodi globalni chat s {0} na {1}.
   wwctrlRateLimitSetTarget: Postavite ograničenje brzine od {0} na {1} sekundi.
+  wwcTimeoutException: Vaš zahtjev je istekao. Molim pokušajte ponovo.
 

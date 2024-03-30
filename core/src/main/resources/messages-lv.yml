@@ -356,7 +356,6 @@ Messages:
     jaunu taimautu vai kaut ko zem tā, lai atgrieztos.
   wwcConfigConversationFatalAsyncSuccess: Asinc uzdevumu taimauts iestatīts veiksmīgi.
   wwcConfigGUIFatalAsyncAbortButton: Mainīt Asinc uzdevumu taimautu
-  wwcTimeoutException: Jūsu komanda taimauts. Lūdzu, mēģiniet vēlreiz.
   libreHttp400: Slikts pieprasījums nosūtīts uz Libre Translate! Ja vien jūs darāt
     kaut ko, kas jums nevajadzētu, jums nevajadzētu saņemt šo. Lūdzu, sazinieties
     ar izstrādātāju!
@@ -562,4 +561,5 @@ Messages:
   wwctLangToLangStartOtherPlayer: Sākot jaunu tulkošanas sesiju {0} no {1} līdz {2}.
   wwcgLangToLangStart: Tagad tulko globālo tērzēšanu no {0} uz {1}.
   wwctrlRateLimitSetTarget: Iestatiet ātruma ierobežojumu {0} līdz {1} sekundēm.
+  wwcTimeoutException: Jūsu pieprasījuma termiņš ir beidzies. Lūdzu, mēģiniet vēlreiz.
 

@@ -361,7 +361,6 @@ Messages:
     или нещо под него, за да се върнете.
   wwcConfigConversationFatalAsyncSuccess: Async задача изчакване настроен успешно.
   wwcConfigGUIFatalAsyncAbortButton: Промяна на изчакване на задачи за асинхрон
-  wwcTimeoutException: Командата ти е изчерпана. Моля, опитайте отново.
   libreHttp400: Лошо искане изпратено до Libre Translate! Освен ако не правите нещо,
     което не трябва, не трябва да получавате това. Моля, свържете се с разработчика!
   wwcConfigGUILibreTranslateApiKeyButton: Промяна на свободен превод на API ключ
@@ -575,4 +574,5 @@ Messages:
     до {2}.
   wwcgLangToLangStart: Сега превеждате глобален чат от {0} на {1}.
   wwctrlRateLimitSetTarget: Задайте ограничението на скоростта от {0} до {1} секунди.
+  wwcTimeoutException: Вашата заявка е изтекла. Моля, опитайте отново.
 

@@ -356,7 +356,6 @@ Messages:
     beth oddi tano i fynd yn ôl.
   wwcConfigConversationFatalAsyncSuccess: Amserlen tasg Async gosod yn llwyddiannus.
   wwcConfigGUIFatalAsyncAbortButton: Newid Amserlen Tasg Async
-  wwcTimeoutException: Eich gorchymyn wedi'i amseru allan. Ceisiwch eto.
   libreHttp400: Cais gwael wedi'i anfon i Libre Translate! Oni bai eich bod yn gwneud
     rhywbeth na ddylech, ni ddylech gael hyn. Cysylltwch â'r datblygwr!
   wwcConfigGUILibreTranslateApiKeyButton: Newid Free Cyfieithu API Allweddol
@@ -566,4 +565,5 @@ Messages:
     i {2}.
   wwcgLangToLangStart: Nawr yn cyfieithu sgwrs fyd-eang o {0} i {1}.
   wwctrlRateLimitSetTarget: Gosodwch y terfyn cyfradd o {0} i {1} eiliad.
+  wwcTimeoutException: Amserwyd eich cais allan. Rhowch gynnig eto os gwelwch yn dda.
 

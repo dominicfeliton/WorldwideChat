@@ -349,7 +349,6 @@ Messages:
     టైప్ చేయండి లేదా తిరిగి వెళ్ళడానికి దాని క్రింద ఉన్న ఏదైనా.
   wwcConfigConversationFatalAsyncSuccess: Async పని సమయం ముగిసింది విజయవంతంగా సెట్.
   wwcConfigGUIFatalAsyncAbortButton: Async టాస్క్ టైమ్అవుట్ మార్చండి
-  wwcTimeoutException: మీ ఆదేశం ముగిసింది. దయచేసి మళ్ళీ ప్రయత్నించండి.
   libreHttp400: చెడు అభ్యర్థన లిబ్రే అనువదించు పంపిన! మీరు చేయకూడని పని చేస్తుంటే
     తప్ప, మీరు దీన్ని పొందకూడదు. దయచేసి డెవలపర్ను సంప్రదించండి!
   wwcConfigGUILibreTranslateApiKeyButton: మార్చు ఉచిత అనువదించు API కీ
@@ -567,4 +566,5 @@ Messages:
     ప్రారంభిస్తోంది.'
   wwcgLangToLangStart: ఇప్పుడు గ్లోబల్ చాట్ను {0} నుండి {1} కు అనువదించడం.
   wwctrlRateLimitSetTarget: '{0} రేటు పరిమితిని {1} సెకన్లకు సెట్ చేయండి.'
+  wwcTimeoutException: మీ అభ్యర్థన సమయం ముగిసింది. దయచేసి మళ్ళీ ప్రయత్నించండి.
 

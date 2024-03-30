@@ -359,7 +359,6 @@ Messages:
     mới, hoặc bất cứ thứ gì bên dưới nó để quay trở lại.
   wwcConfigConversationFatalAsyncSuccess: Async task timeout thiết lập thành công.
   wwcConfigGUIFatalAsyncAbortButton: Thay đổi Async Task Timeout
-  wwcTimeoutException: Lệnh của bạn đã hết thời gian. Vui lòng thử lại.
   libreHttp400: Yêu cầu xấu gửi đến Libre Dịch! Trừ khi bạn đang làm điều gì đó mà
     bạn không nên, bạn không nên nhận được điều này. Vui lòng liên hệ với nhà phát
     triển!
@@ -564,4 +563,5 @@ Messages:
   wwctLangToLangStartOtherPlayer: Bắt đầu phiên dịch mới cho {0} từ {1} sang {2}.
   wwcgLangToLangStart: Bây giờ dịch trò chuyện toàn cầu từ {0} sang {1}.
   wwctrlRateLimitSetTarget: Đặt giới hạn tốc độ từ {0} đến {1} giây.
+  wwcTimeoutException: Yêu cầu của bạn đã hết thời gian. Vui lòng thử lại.
 

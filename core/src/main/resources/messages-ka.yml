@@ -351,7 +351,6 @@ Messages:
     არაფერი ქვემოთ დაბრუნებას.
   wwcConfigConversationFatalAsyncSuccess: Async ამოცანა შეყოვნება მითითებული წარმატებით.
   wwcConfigGUIFatalAsyncAbortButton: ასინკის სამუშაო დროის შეცვლა
-  wwcTimeoutException: თქვენი ბრძანება დროული out. სცადეთ კიდევ ერთხელ.
   libreHttp400: ცუდი მოთხოვნა გაიგზავნა Libre Translate! თუ არ აკეთებთ იმას, რაც არ
     უნდა, არ უნდა მიიღოთ ეს. გთხოვთ, დაუკავშირდეთ დეველოპერს!
   wwcConfigGUILibreTranslateApiKeyButton: შეცვლა უფასო თარგმნის API გასაღები
@@ -562,4 +561,5 @@ Messages:
     {2} -მდე.'
   wwcgLangToLangStart: ახლა გლობალური ჩატის თარგმნა {0} -დან {1} -ზე.
   wwctrlRateLimitSetTarget: დააყენეთ სიჩქარის ლიმიტი {0} - დან {1} წამამდე.
+  wwcTimeoutException: თქვენი მოთხოვნის დრო ამოწურდა. გთხოვთ კვლავ სცადოთ
 

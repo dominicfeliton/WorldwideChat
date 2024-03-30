@@ -358,8 +358,6 @@ Messages:
     yoki orqaga qaytish uchun uning ostidagi narsalarni kiriting.
   wwcConfigConversationFatalAsyncSuccess: Async vazifa vaqt muvaffaqiyatli belgilangan.
   wwcConfigGUIFatalAsyncAbortButton: Async Vazifa vaqtini o'zgartirish
-  wwcTimeoutException: Sizning buyrug'ingiz amalga oshirildi. Iltimos, yana urinib
-    ko'ring.
   libreHttp400: Yomon so'rov Libre Translate-ga yuborilgan! Agar siz buni qilmasligingiz
     kerak bo'lgan biror narsa qilmasangiz, buni olmasligingiz kerak. Iltimos, ishlab
     chiquvchi bilan bog'laning!
@@ -582,4 +580,5 @@ Messages:
     boshlash.'
   wwcgLangToLangStart: Endi global suhbatni {0} dan {1} ga tarjima qilish.
   wwctrlRateLimitSetTarget: '{0} tezlik chegarasini {1} soniyagacha belgilang.'
+  wwcTimeoutException: Sizning so'rovingiz muddati tugadi. Iltimos, yana urinib ko'ring.
 

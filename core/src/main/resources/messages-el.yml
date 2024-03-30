@@ -385,7 +385,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Καθορίστηκε με επιτυχία το χρονικό όριο
     ασύγχρονης εργασίας.
   wwcConfigGUIFatalAsyncAbortButton: Αλλαγή χρονικού ορίου εργασίας ασύγχρονη
-  wwcTimeoutException: Η εντολή σου έληξε. Παρακαλώ προσπαθήστε ξανά.
   libreHttp400: Κακό αίτημα εστάλη στο Libre Μετάφραση! Αν δεν κάνετε κάτι που δεν
     πρέπει, δεν πρέπει να το πάρετε αυτό. Παρακαλούμε επικοινωνήστε με τον προγραμματιστή!
   wwcConfigGUILibreTranslateApiKeyButton: Αλλάξτε το κλειδί API μετάφρασης Libre
@@ -611,4 +610,5 @@ Messages:
     {1} σε {2}.
   wwcgLangToLangStart: Τώρα μεταφράζει παγκόσμια συνομιλία από {0} σε {1}.
   wwctrlRateLimitSetTarget: Ορίστε το όριο ταχύτητας {0} σε {1} δευτερόλεπτα.
+  wwcTimeoutException: Το αίτημά σας έληξε. Παρακαλώ προσπαθήστε ξανά.
 

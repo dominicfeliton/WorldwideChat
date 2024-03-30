@@ -378,7 +378,6 @@ Messages:
     a été correctement défini
   wwcConfigGUIFatalAsyncAbortButton: Modification du délai d'expiration des tâches
     asynchrones
-  wwcTimeoutException: Votre commande a expiré. Veuillez réessayer.
   libreHttp400: Mauvaise demande envoyée à Libre Translate! À moins que vous ne fassiez
     quelque chose que vous ne devriez pas faire, vous ne devriez pas l'obtenir. Veuillez
     contacter le développeur!
@@ -608,4 +607,6 @@ Messages:
     {0} de {1} à {2}.
   wwcgLangToLangStart: Nous traduisons maintenant le chat mondial de {0} à {1}.
   wwctrlRateLimitSetTarget: Réglez la limite de fréquence de {0} à {1} secondes.
+  wwcTimeoutException: Le délai imparti pour votre demande a expiré. Réessayez, s'il
+    vous plaît.
 

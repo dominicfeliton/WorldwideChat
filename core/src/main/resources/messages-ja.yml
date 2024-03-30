@@ -282,7 +282,6 @@ Messages:
   wwcConfigConversationFatalAsyncAbort: すべての非同期タスクを中止する現在のタイムアウトは {0} 秒です。7 より大きい値を入力すると新しいタイムアウトが設定され、それより小さい値を入力すると戻ります。
   wwcConfigConversationFatalAsyncSuccess: 非同期タスクのタイムアウトが正常に設定されました。
   wwcConfigGUIFatalAsyncAbortButton: 非同期タスクタイムアウトの変更
-  wwcTimeoutException: コマンドがタイムアウトしました。もう一度お試しください。
   libreHttp400: 不正なリクエストがLibre Translateに送信されました！やるべきでないことをしているのでなければ、これを得てはいけない。開発者に連絡してください！
   wwcConfigGUILibreTranslateApiKeyButton: リブレ翻訳 API キーを変更
   libreHttp403: Libre Translate APIキーがないか、サーバーから禁止されています！
@@ -439,4 +438,5 @@ Messages:
   wwctLangToLangStartOtherPlayer: '{0} の {1} から {2} への新しい翻訳セッションを開始します。'
   wwcgLangToLangStart: 現在、グローバルチャットを {0} から {1} に翻訳しています。
   wwctrlRateLimitSetTarget: レート制限を {0} 秒から {1} 秒に設定します。
+  wwcTimeoutException: リクエストがタイムアウトしました。もう一度試してください。
 

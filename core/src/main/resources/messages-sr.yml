@@ -347,7 +347,6 @@ Messages:
     ispod njega da se vrati.
   wwcConfigConversationFatalAsyncSuccess: Asinc zadatak timeout set uspešno.
   wwcConfigGUIFatalAsyncAbortButton: Promenite Asinc Task Timeout
-  wwcTimeoutException: Vaša komanda istekla. Molim vas pokušajte ponovo.
   libreHttp400: Loš zahtev poslat Libre Translate! Osim ako ne radite nešto što ne
     biste trebali, ne biste trebali dobiti ovo. Molimo kontaktirajte programera!
   wwcConfigGUILibreTranslateApiKeyButton: Promena Free Translate API ključ
@@ -554,4 +553,5 @@ Messages:
     {2}.
   wwcgLangToLangStart: Sada prevodi globalno ćaskanje sa {0} na {1}.
   wwctrlRateLimitSetTarget: Podesite ograničenje brzine od {0} na {1} sekundi.
+  wwcTimeoutException: Vaš zahtev je istekao. Pokušajte ponovo.
 

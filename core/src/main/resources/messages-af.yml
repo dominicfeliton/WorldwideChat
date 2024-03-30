@@ -355,7 +355,6 @@ Messages:
     onder dit om terug te gaan.
   wwcConfigConversationFatalAsyncSuccess: Async taak time-out suksesvol te stel.
   wwcConfigGUIFatalAsyncAbortButton: Verander Async Taak Time-out
-  wwcTimeoutException: Jou opdrag snel uit. Probeer asseblief weer.
   libreHttp400: Slegte versoek gestuur na Libre Translate! Tensy jy iets doen wat
     jy nie moet nie, jy moet dit nie kry nie. Kontak asseblief die ontwikkelaar!
   wwcConfigGUILibreTranslateApiKeyButton: Verander Libre Translate API Sleutel
@@ -562,4 +561,5 @@ Messages:
     {2}.
   wwcgLangToLangStart: Vertaal nou wêreldwye chat van {0} na {1}.
   wwctrlRateLimitSetTarget: Stel die tarieflimiet van {0} op {1} sekondes.
+  wwcTimeoutException: Jou versoek is verby. Probeer asseblief weer.
 

@@ -913,6 +913,10 @@ public class CommonRefs {
 		// detect the source language == Watson
 		ArrayList<String> lowConfidenceDict = (ArrayList<String>) main.getConfigManager().getMainConfig().getList("Translator.errorsToIgnore");
 		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
+		if (exceptionMessage == null) {
+			// Usually just a timeout error. If a user gets this frequently they'll know something's wrong anyways
+			return true;
+		}
 
 		// This is a special character. If the user puts this character, then we ignore all errors.
 		if (lowConfidenceDict.contains("*")) return true;

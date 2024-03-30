@@ -347,8 +347,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: অ্যাসিঙ্ক টাস্ক টাইমআউট সফলভাবে সেট করা
     হয়েছে।
   wwcConfigGUIFatalAsyncAbortButton: অ্যাসিঙ্ক টাস্ক টাইম- আউট পরিবর্তন করুন
-  wwcTimeoutException: আপনার কমান্ডের সময়সীমা শেষ হয়ে গেছে। অনুগ্রহ করে পুনরায় চেষ্টা
-    করুন।
   libreHttp400: Libre অনুবাদ পাঠানো খারাপ অনুরোধ! যতক্ষণ না আপনি এমন কিছু করছেন যা
     আপনার উচিত নয়, আপনাকে এটি পাওয়া উচিত নয়। বিকাশকারীর সাথে যোগাযোগ করুন!
   wwcConfigGUILibreTranslateApiKeyButton: বিনামূল্যে অনুবাদ API কী পরিবর্তন করুন
@@ -559,4 +557,5 @@ Messages:
     সেশন শুরু করা হচ্ছে।'
   wwcgLangToLangStart: এখন {0} থেকে {1} এ গ্লোবাল চ্যাট অনুবাদ করছি।
   wwctrlRateLimitSetTarget: '{0} এর হারের সীমা {1} সেকেন্ডে সেট করুন।'
+  wwcTimeoutException: আপনার অনুরোধের সময় শেষ হয়েছে। দয়া করে আবার চেষ্টা করুন।
 

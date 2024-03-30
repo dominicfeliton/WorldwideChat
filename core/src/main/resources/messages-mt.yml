@@ -356,7 +356,6 @@ Messages:
     ġdid, jew xi ħaġa taħtha biex tmur lura.
   wwcConfigConversationFatalAsyncSuccess: Async timeout kompitu stabbiliti b'suċċess.
   wwcConfigGUIFatalAsyncAbortButton: Bidla Timeout Task Async
-  wwcTimeoutException: Il-kmand tiegħek ittajmjat. Jekk jogħġbok erġa pprova.
   libreHttp400: Talba ħażina mibgħuta lil Libre Translate! Sakemm ma tkunx qed tagħmel
     xi ħaġa li m'għandekx, m'għandekx tikseb dan. Jekk jogħġbok ikkuntattja l-iżviluppatur!
   wwcConfigGUILibreTranslateApiKeyButton: Bidla Ħieles Ittraduċi API Ewlenin
@@ -562,4 +561,5 @@ Messages:
     {1} għal {2}.
   wwcgLangToLangStart: Issa tittraduċi chat globali minn {0} għal {1}.
   wwctrlRateLimitSetTarget: Issettja l-limitu tar-rata ta' {0} għal {1} sekondi.
+  wwcTimeoutException: It-talba tiegħek waqgħet il-ħin. Jekk jogħġbok ipprova mill-ġdid.
 

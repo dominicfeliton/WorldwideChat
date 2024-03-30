@@ -360,7 +360,6 @@ Messages:
     доор нь ямар нэгэн зүйл буцааж яваарай.
   wwcConfigConversationFatalAsyncSuccess: Async ажил хугацаа амжилттай тогтоосон.
   wwcConfigGUIFatalAsyncAbortButton: Async Даалгавар Хугацааны өөрчлөлт
-  wwcTimeoutException: Таны тушаал гарч хугацаатай. Дахин оролдоно уу.
   libreHttp400: Муу хүсэлт Libre илгээсэн Translate! Хэрэв та ямар нэг зүйл хийж байгаа
     бол та байх ёстой гэж, Хэрэв та энэ авч байх ёстой. Хөгжүүлэгчтэй холбоо барина
     уу!
@@ -579,4 +578,5 @@ Messages:
   wwcgLangToLangStart: Одоо дэлхийн чатыг {0} -ээс {1} руу орчуулж байна.
   wwctrlRateLimitSetTarget: '{0} -ийн хурдны хязгаарыг {1} секунд болгон тохируулна
     уу.'
+  wwcTimeoutException: Таны хүсэлтийн хугацаа дууссан. Дахин оролдоно уу.
 

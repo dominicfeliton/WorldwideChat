@@ -355,7 +355,6 @@ Messages:
     tímamörk, eða eitthvað fyrir neðan það til að fara aftur.
   wwcConfigConversationFatalAsyncSuccess: Async verkefni timeout sett með góðum árangri.
   wwcConfigGUIFatalAsyncAbortButton: Breyta Async Task Timeout
-  wwcTimeoutException: Skipunin þín tímasett út. Vinsamlegast reyndu aftur.
   libreHttp400: Slæm beiðni send til Libre Translate! Nema þú ert að gera eitthvað
     sem þú ættir ekki, þú ættir ekki að fá þetta. Vinsamlegast hafðu samband við framkvæmdaraðila!
   wwcConfigGUILibreTranslateApiKeyButton: Breyta Libre Þýða API Key
@@ -568,4 +567,5 @@ Messages:
     til {2}.
   wwcgLangToLangStart: Nú er að þýða alþjóðlegt spjall úr {0} til {1}.
   wwctrlRateLimitSetTarget: Stilltu hraðatakmarkið {0} í {1} sekúndur.
+  wwcTimeoutException: Beiðni þín var tímasett út. Vinsamlegast reyndu aftur.
 

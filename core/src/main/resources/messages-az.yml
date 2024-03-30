@@ -349,7 +349,6 @@ Messages:
     bir şey təyin etmək üçün 7-dən yuxarı bir şey yazın.
   wwcConfigConversationFatalAsyncSuccess: Aync tapşırıq zaman aşımı uğurla müəyyən.
   wwcConfigGUIFatalAsyncAbortButton: Aync Task Timeout Change
-  wwcTimeoutException: Sizin komanda həyata vaxtı. Xahiş edirik yenidən cəhd edin.
   libreHttp400: Pulsuz Tərcümə göndərilən Bad sorğu! Siz lazım deyil ki, bir şey bunu
     halda, Bu almaq lazım deyil. Geliştirici ilə əlaqə saxlayın!
   wwcConfigGUILibreTranslateApiKeyButton: Pulsuz Tərcümə API Açarını dəyişdirin
@@ -553,4 +552,5 @@ Messages:
     başlamaq.'
   wwcgLangToLangStart: İndi qlobal söhbəti {0} -dən {1} -ə tərcümə edir.
   wwctrlRateLimitSetTarget: '{0} dərəcəsi həddini {1} saniyəyə təyin edin.'
+  wwcTimeoutException: Sorğunuzun müddəti bitdi. Xahiş edirəm yenidən cəhd edin.
 

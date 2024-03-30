@@ -359,7 +359,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Async časovna omejitev opravila je bila
     uspešno nastavljena.
   wwcConfigGUIFatalAsyncAbortButton: Spremeni časovno omejitev opravila Async
-  wwcTimeoutException: Vaš ukaz je časovno razporejen. Prosimo, poskusite znova.
   libreHttp400: Slaba zahteva, poslana Libre Translate! Razen če delaš nekaj, česar
     ne bi smeli, tega ne bi smeli dobiti. Obrnite se na razvijalca!
   wwcConfigGUILibreTranslateApiKeyButton: Spremenite brezplačno prevajanje API Key
@@ -566,4 +565,5 @@ Messages:
   wwctLangToLangStartOtherPlayer: Začetek nove prevajalske seje za {0} od {1} do {2}.
   wwcgLangToLangStart: Zdaj prevajamo globalni klepet iz {0} v {1}.
   wwctrlRateLimitSetTarget: Nastavite omejitev hitrosti {0} na {1} sekund.
+  wwcTimeoutException: Vaša zahteva je potekla. Prosimo, poskusite znova.
 

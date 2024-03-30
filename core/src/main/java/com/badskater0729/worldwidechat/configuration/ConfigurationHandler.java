@@ -327,6 +327,7 @@ public class ConfigurationHandler {
 	/* Translator Settings */
 	public String loadTranslatorSettings() {
 		String outName = "Invalid";
+		String attemptedTranslator = "";
 		final int maxTries = 3;
 		for (int tryNumber = 1; tryNumber <= maxTries; tryNumber++) {
 			if (refs.serverIsStopping()) return outName;
@@ -334,6 +335,7 @@ public class ConfigurationHandler {
 				main.getLogger().warning(refs.getMsg("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}));
 				for (Pair<String, String> eaPair : CommonRefs.translatorPairs) {
 					if (mainConfig.getBoolean(eaPair.getKey())) {
+						attemptedTranslator = eaPair.getValue();
 						refs.getTranslatorResult(eaPair.getValue(), true);
 						outName = eaPair.getValue();
 						break;
@@ -341,7 +343,7 @@ public class ConfigurationHandler {
 				}
 				if (!outName.equals("Invalid")) break;
 			} catch (Exception e) {
-				main.getLogger().severe("(" + outName + ") " + e.getMessage());
+				main.getLogger().severe("(" + attemptedTranslator + ") " + e.getMessage());
 				e.printStackTrace();
 				outName = "Invalid";
 			}

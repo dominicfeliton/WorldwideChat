@@ -354,7 +354,6 @@ Messages:
     noget under det for at gå tilbage.
   wwcConfigConversationFatalAsyncSuccess: Async opgave timeout indstillet med succes.
   wwcConfigGUIFatalAsyncAbortButton: Skift Async-opgavetimeout
-  wwcTimeoutException: Din kommando timet ud. Prøv venligst igen.
   libreHttp400: Dårlig anmodning sendt til Libre Translate! Medmindre du laver noget,
     som du ikke burde, bør du ikke få dette. Kontakt udvikleren!
   wwcConfigGUILibreTranslateApiKeyButton: Skift Libre Oversæt API Key
@@ -559,4 +558,5 @@ Messages:
     {1} til {2}.
   wwcgLangToLangStart: Oversætter nu global chat fra {0} til {1}.
   wwctrlRateLimitSetTarget: Indstil hastighedsgrænsen på {0} til {1} sekunder.
+  wwcTimeoutException: Din anmodning er udløbet. Prøv venligst igen.
 

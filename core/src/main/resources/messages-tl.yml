@@ -388,7 +388,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Matagumpay na itinakda ang timeout ng pag-sync
     ng gawain.
   wwcConfigGUIFatalAsyncAbortButton: Baguhin ang Timeout ng Async Task
-  wwcTimeoutException: Ang iyong utos ay nag-time out. Pakisubukang muli.
   libreHttp400: Masamang kahilingan ipinadala sa Libre Translate! Maliban kung ikaw
     ay gumagawa ng isang bagay na hindi mo dapat, hindi mo dapat makuha ito. Mangyaring
     makipag-ugnay sa developer!
@@ -627,4 +626,5 @@ Messages:
   wwcgLangToLangStart: Ngayon ay nagsasalin ng pandaigdigang chat mula sa {0} hanggang
     {1}.
   wwctrlRateLimitSetTarget: Itakda ang limitasyon ng rate ng {0} hanggang {1} segundo.
+  wwcTimeoutException: Naka-time ang iyong kahilingan. Mangyaring subukang muli.
 

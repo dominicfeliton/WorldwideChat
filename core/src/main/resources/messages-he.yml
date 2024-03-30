@@ -317,7 +317,6 @@ Messages:
     לחזור.
   wwcConfigConversationFatalAsyncSuccess: פסק זמן משימת Async מוגדר בהצלחה.
   wwcConfigGUIFatalAsyncAbortButton: שינוי הזמן הקצוב למשימה של Async
-  wwcTimeoutException: הפקודה שלך מתוזמנת. אנא נסה שוב.
   libreHttp400: בקשה גרועה שנשלחה ליברה תרגם! אלא אם כן אתה עושה משהו שאתה לא צריך,
     אתה לא צריך לקבל את זה. אנא צרו קשר עם היזם!
   wwcConfigGUILibreTranslateApiKeyButton: שינוי חינם תרגם את מפתח ה- API
@@ -505,4 +504,5 @@ Messages:
   wwctLangToLangStartOtherPlayer: התחלת הפעלת תרגום חדשה עבור {0} מ- {1} ל- {2}.
   wwcgLangToLangStart: כעת מתרגמים צ'אט גלובלי מ- {0} ל- {1}.
   wwctrlRateLimitSetTarget: הגדר את מגבלת התעריף של {0} ל {1} שניות.
+  wwcTimeoutException: פג הזמן לבקשתך. אנא נסה שוב.
 

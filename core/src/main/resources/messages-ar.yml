@@ -326,7 +326,6 @@ Messages:
     هي {0} ثانية. اكتب أي شيء فوق 7 لتعيين مهلة جديدة، أو أي شيء أسفله للعودة.
   wwcConfigConversationFatalAsyncSuccess: تم تعيين مهلة مهمة غير متزامنة بنجاح.
   wwcConfigGUIFatalAsyncAbortButton: تغيير مهلة المهام غير المتزامنة
-  wwcTimeoutException: انتهت مهلة الأمر الخاص بك. يرجى المحاولة مرة أخرى.
   libreHttp400: تم إرسال طلب سيء إلى Libre Translate! ما لم تكن تفعل شيئًا لا يجب
     عليك فعله، فلا يجب أن تحصل عليه. يرجى الاتصال بالمطور!
   wwcConfigGUILibreTranslateApiKeyButton: تغيير مفتاح واجهة برمجة التطبيقات لترجمة
@@ -521,4 +520,5 @@ Messages:
   wwctLangToLangStartOtherPlayer: بدء جلسة ترجمة جديدة لـ {0} من {1} إلى {2}.
   wwcgLangToLangStart: الآن نقوم بترجمة الدردشة العالمية من {0} إلى {1}.
   wwctrlRateLimitSetTarget: قم بتعيين حد المعدل من {0} إلى {1} ثانية.
+  wwcTimeoutException: انتهت مهلة طلبك. يرجى المحاولة مرة أخرى.
 

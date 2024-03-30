@@ -344,7 +344,6 @@ Messages:
     det for å gå tilbake.
   wwcConfigConversationFatalAsyncSuccess: Tidsavbrudd for async oppgave satt vellykket.
   wwcConfigGUIFatalAsyncAbortButton: Endre tidsavbrudd for async oppgave
-  wwcTimeoutException: Din kommando tidsavbrudd. Prøv igjen.
   libreHttp400: Dårlig forespørsel sendt til Libre Translate! Med mindre du gjør noe
     du ikke burde, bør du ikke få dette. Ta kontakt med utvikleren!
   wwcConfigGUILibreTranslateApiKeyButton: Endre Gratis Oversett API-nøkkel
@@ -543,4 +542,5 @@ Messages:
     {2}.
   wwcgLangToLangStart: Oversetter nå global chat fra {0} til {1}.
   wwctrlRateLimitSetTarget: Angi hastighetsgrensen på {0} til {1} sekunder.
+  wwcTimeoutException: Forespørselen din gikk ut. Vennligst prøv igjen.
 

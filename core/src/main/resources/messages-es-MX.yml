@@ -373,7 +373,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: El tiempo de espera de tarea asincrónica
     se estableció correctamente.
   wwcConfigGUIFatalAsyncAbortButton: Cambiar el tiempo de espera de tarea asincrónica
-  wwcTimeoutException: Su comando se agotó el tiempo. Por favor inténtelo de nuevo.
   libreHttp400: ¡Mala solicitud enviada a Libre Translate! A menos que estés haciendo
     algo que no deberías, no deberías conseguir esto. ¡Por favor contacte al desarrollador!
   wwcConfigGUILibreTranslateApiKeyButton: Cambiar Clave de API de Libre Translate
@@ -599,4 +598,6 @@ Messages:
     de {1} a {2}.
   wwcgLangToLangStart: Ahora traduciendo chat global de {0} a {1}.
   wwctrlRateLimitSetTarget: Establezca el límite de velocidad de {0} a {1} segundos.
+  wwcTimeoutException: Se ha agotado el tiempo de espera de tu solicitud. Por favor,
+    inténtelo de nuevo.
 

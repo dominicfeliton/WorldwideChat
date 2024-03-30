@@ -346,7 +346,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Zaman uyumsuz görev zaman aşımı başarıyla
     ayarlandı.
   wwcConfigGUIFatalAsyncAbortButton: Zaman Eşzamanzamanlama Görev Zaman Aşımı Değiştir
-  wwcTimeoutException: Komutunuz zaman aşımına uğradı Lütfen tekrar deneyin.
   libreHttp400: Libre Translate"e kötü istek gönderildi! Yapmamanız gereken bir şey
     yapmıyorsanız, bunu almamalısın. Lütfen geliştiriciyle iletişime geçin!
   wwcConfigGUILibreTranslateApiKeyButton: Değiştir Ücretsiz API Anahtarı Çevir
@@ -558,4 +557,5 @@ Messages:
     başlatılıyor.'
   wwcgLangToLangStart: Şimdi küresel sohbeti {0} 'dan {1} 'e çeviriyoruz.
   wwctrlRateLimitSetTarget: '{0} hız sınırını {1} saniye olarak ayarlayın.'
+  wwcTimeoutException: İsteğiniz zaman aşımına uğradı. Lütfen tekrar deneyin.
 

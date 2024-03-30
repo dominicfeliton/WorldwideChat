@@ -384,8 +384,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Zeitüberschreitung für asynchrone Aufgaben
     wurde erfolgreich festgelegt.
   wwcConfigGUIFatalAsyncAbortButton: Async-Aufgaben-Timeout ändern
-  wwcTimeoutException: Ihr Befehl hat das Zeitlimit überschritten. Bitte versuche
-    es erneut.
   libreHttp400: Schlechte Anfrage an Libre Translate gesendet! Sofern Sie nichts tun,
     was Sie nicht tun sollten, sollten Sie dies nicht bekommen. Bitte kontaktiere
     den Entwickler!
@@ -619,4 +617,6 @@ Messages:
     {1} nach {2}.
   wwcgLangToLangStart: Wir übersetzen jetzt den globalen Chat von {0} nach {1}.
   wwctrlRateLimitSetTarget: Stellen Sie das Ratenlimit von {0} auf {1} Sekunden ein.
+  wwcTimeoutException: Bei Ihrer Anfrage wurde das Zeitlimit überschritten. Bitte
+    versuchen Sie es erneut.
 

@@ -367,7 +367,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Tempo de espera da tarefa assincronização
     definido com sucesso.
   wwcConfigGUIFatalAsyncAbortButton: Alterar Tempo de espera de tarefas assíncronas
-  wwcTimeoutException: O seu comando foi cronometrado. Por favor tente novamente.
   libreHttp400: Pedido ruim enviado para Libre Translate! A menos que você esteja
     fazendo algo que não deveria, você não deve entender isso. Entre em contato com
     o desenvolvedor!
@@ -584,4 +583,5 @@ Messages:
     {1} para {2}.
   wwcgLangToLangStart: Agora traduzindo o chat global de {0} para {1}.
   wwctrlRateLimitSetTarget: Defina o limite de taxa de {0} para {1} segundos.
+  wwcTimeoutException: O seu pedido atingiu o tempo limite. Por favor, tente novamente.
 

@@ -371,7 +371,6 @@ Messages:
   wwcConfigConversationFatalAsyncSuccess: Timeout dell'attività asincrona impostato
     correttamente.
   wwcConfigGUIFatalAsyncAbortButton: Modifica timeout attività asincrona
-  wwcTimeoutException: Il tuo comando è scaduto. Per favore riprova.
   libreHttp400: Richiesta errata inviata a Libre Translate! A meno che tu non stia
     facendo qualcosa che non dovresti fare, non dovresti ottenerlo. Contatta lo sviluppatore!
   wwcConfigGUILibreTranslateApiKeyButton: Cambia chiave API Libre Translate
@@ -591,4 +590,5 @@ Messages:
     da {1} a {2}.
   wwcgLangToLangStart: Ora traduco la chat globale da {0} a {1}.
   wwctrlRateLimitSetTarget: Imposta il limite di velocità da {0} a {1} secondi.
+  wwcTimeoutException: La tua richiesta è scaduta. Per favore riprova.
 
