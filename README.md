@@ -20,6 +20,10 @@ And much more to come!
 ## How to Setup
 Read the [Wiki](https://github.com/BadSkater0729/WorldwideChat/wiki). File an issue if you don't think something is working right!
 
+Additionally, if you want to test this plugin out before installing, you can! 
+- Check out our **Test Server** here:
+```152.67.252.19```
+
 ## Installation
 Download WorldwideChat from the **Releases** tab. View more info about it on its [SpigotMC](https://www.spigotmc.org/resources/worldwidechat.89910/) page.
 
