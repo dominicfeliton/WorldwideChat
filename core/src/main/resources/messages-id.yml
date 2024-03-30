@@ -51,13 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: Keluar & Simpan Perubahan
   wwctPlayerNotFound: Pemain {0} tidak ditemukan.
   wwcConfigGUIAmazonTranslateRegionButton: Ubah Wilayah Amazon
-  wwcConfigConversationLangInput: 'Bahasa plugin saat ini adalah {0}. Harap masukkan
-    kode bahasa yang valid, atau ketik 0 untuk dibatalkan. Kode bahasa yang valid:
-    {0}'
   wwcConfigConversationLangInvalid: Kode bahasa tidak valid!
   wwcConfigGUIWatsonAPIKeyButton: Ubah Kunci API Watson
   wwcEnabled: Diaktifkan WorldwideChat versi {0}.
-  wwcgLangToLangStart: Sekarang menerjemahkan obrolan global dari {0} ke {1}.
   wwctbOnSender: Terjemahan buku diaktifkan. Klik kanan sambil memegang buku untuk
     menerjemahkannya!
   wwcListenersInitialized: Pendengar terinisialisasi.
@@ -108,8 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: Pilih Bahasa Target
   wwcConfigConnectionSuccess: Berhasil terhubung ke {0}!
   wwcConfigGUIGoogleTranslateButton: Google Terjemahkan
-  wwcConfigConversationPrefixInput: Awalan saat ini adalah {0}. Harap ketik yang baru,
-    atau ketik 0 untuk kembali.
   wwcConfigGUIPreviousPageButton: Halaman Sebelumnya
   wwcConfigGUITranslatorCacheButton: Ubah Batas Cache Terjemahan
   wwcConfigConversationbStatsSuccess: Berhasil beralih bStats.
@@ -157,7 +151,6 @@ Messages:
   wwctrlPlayerNotFound: Pemain {0} tidak ditemukan, atau bukan penerjemah aktif.
   wwctrlRateLimitSetSender: Atur batas tingkat Anda ke {0} detik.
   wwctrlRateLimitOffTarget: Menonaktifkan batas tingkat dari {0}.
-  wwctrlRateLimitSetTarget: Tetapkan batas tingkat dari {0} ke {1} detik.
   wwctrlNotATranslator: Anda bukan penerjemah aktif! Pastikan Anda telah mengatur
     ini dengan/wwct.
   wwctrlRateLimitAlreadyOffSender: Batas tarif Anda sudah dinonaktifkan.
@@ -273,13 +266,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Obrolan global sedang
     diterjemahkan, tetapi Anda memiliki sesi terjemahan aktif dari {0} ke {1}.
   wwctCannotTranslateConsole: Anda tidak dapat memulai sesi terjemahan untuk konsol!
-  wwctLangToLangStart: Memulai sesi terjemahan baru dari {0} ke {1}.
   wwcOnJoinTranslationNotificationSourceLang: Anda memiliki sesi terjemahan aktif
     dari {0} ke {1}.
-  wwctAutoTranslateStartOtherPlayer: Memulai sesi terjemahan baru untuk {0} ke {1}.
   wwctTranslationStopped: Sesi terjemahan Anda telah dihentikan.
-  wwctLangToLangStartOtherPlayer: Memulai sesi terjemahan baru untuk {0} dari {1}
-    ke {0}.
   wwctAutoTranslateStart: Memulai sesi terjemahan baru ke {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Anda memiliki sesi terjemahan aktif
     ke {0}.
@@ -486,9 +475,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Terjemahkan
   wwcrTransFail: Memuat ulang WorldwideChat tetapi gagal mengaktifkan penerjemah.
   wwcdCacheCleared: Cache terjemahan telah dihapus.
-  wwcdCacheSize: Ukuran cache saat ini {0}, dengan batas {1}.
-  wwcdCacheTerm: '{0}. cachedTranslation:inputLang= {1}, outputLang= {2}, inputPhrase=
-    {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Argumen tidak valid!
   systranHttpUnknown: 'Kesalahan http tidak diketahui: {0}'
   systranHttp400: Parameter buruk dikirim ke Systran. Mungkin pasangan bahasa yang
@@ -553,4 +539,17 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: Ubah Database PostgreSQL
   wwcConfigConversationPostgresUsernameSuccess: Berhasil mengubah nama pengguna PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Konfigurasi'
+  wwcConfigConversationPrefixInput: Awalan saat ini adalah {0}. Silakan ketik yang
+    baru, atau ketik 0 untuk kembali.
+  wwcConfigConversationLangInput: 'Bahasa plugin saat ini adalah {0}. Masukkan kode
+    bahasa yang valid, atau ketik 0 untuk membatalkan. Kode bahasa yang valid: {1}'
+  wwcdCacheSize: Ukuran cache saat ini {0}, dengan batas {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Memulai sesi terjemahan baru dari {0} ke {1}.
+  wwctAutoTranslateStartOtherPlayer: Memulai sesi terjemahan baru untuk {0} ke {1}.
+  wwctLangToLangStartOtherPlayer: Memulai sesi terjemahan baru untuk {0} dari {1}
+    ke {2}.
+  wwcgLangToLangStart: Sekarang menerjemahkan obrolan global dari {0} ke {1}.
+  wwctrlRateLimitSetTarget: Tetapkan batas laju {0} ke {1} detik.
 

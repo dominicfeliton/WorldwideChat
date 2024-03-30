@@ -51,13 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: Kilépés és a módosítások mentése
   wwctPlayerNotFound: A (z) {0} játékos nem található.
   wwcConfigGUIAmazonTranslateRegionButton: Az Amazon régió megváltoztatása
-  wwcConfigConversationLangInput: 'A beépülő modul jelenlegi nyelve: {0}. Adjon meg
-    egy érvényes nyelvi kódot, vagy írja be a 0 értéket a törléshez. Érvényes nyelvkódok:
-    {0}'
   wwcConfigConversationLangInvalid: Érvénytelen nyelvkód!
   wwcConfigGUIWatsonAPIKeyButton: Watson API-kulcs módosítása
   wwcEnabled: 'Engedélyezett WorldwideChat verzió: {0}.'
-  wwcgLangToLangStart: Most fordítod le a globális csevegést a {0} -ról a {1} címre.
   wwctbOnSender: Könyv fordítás engedélyezve. Kattintson a jobb gombbal, miközben
     tartja a könyvet, hogy lefordítsa!
   wwcListenersInitialized: Inicializált hallgatók.
@@ -108,8 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: Válasszon célnyelvet
   wwcConfigConnectionSuccess: 'Sikeresen csatlakozott ehhez: {0}!'
   wwcConfigGUIGoogleTranslateButton: Google Fordító
-  wwcConfigConversationPrefixInput: 'Az aktuális előtag: {0}. Írjon be egy újat, vagy
-    írja be a 0 értéket a visszatéréshez.'
   wwcConfigGUIPreviousPageButton: Előző oldal
   wwcConfigGUITranslatorCacheButton: Fordítási gyorsítótár korlát módosítása
   wwcConfigConversationbStatsSuccess: Sikeresen váltott a bStats.
@@ -161,7 +155,6 @@ Messages:
   wwctrlPlayerNotFound: A (z) {0} játékos nem található, vagy nem aktív fordító.
   wwctrlRateLimitSetSender: Állítsa be a sebességkorlátot a {0} másodpercre.
   wwctrlRateLimitOffTarget: Kikapcsolta a (z) {0} sebességhatárt.
-  wwctrlRateLimitSetTarget: Állítsa be a (z) {0} értékhatárt a {1} másodpercre.
   wwctrlNotATranslator: Ön nem aktív fordító! Győződjön meg róla, hogy ezt a /wwct.
   wwctrlRateLimitAlreadyOffSender: A díjkorlát már le van tiltva.
   wwctGUIRateButton: Korlát beállítása
@@ -276,14 +269,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: A globális csevegés lefordítása
     folyamatban van, de aktív fordítási munkamenete van a {0} és {1} között.
   wwctCannotTranslateConsole: Nem indítható el fordítási munkamenet a konzolhoz!
-  wwctLangToLangStart: 'Új fordítási munkamenet indítása innen: {0} ide: {1}.'
   wwcOnJoinTranslationNotificationSourceLang: Aktív fordítási munkamenete van a {0}
     és {0} között.
-  wwctAutoTranslateStartOtherPlayer: 'Új fordítási munkamenet indítása erre: {0} ide:
-    {0}.'
   wwctTranslationStopped: A fordítási munkamenetet leállították.
-  wwctLangToLangStartOtherPlayer: 'Új fordítási munkamenet indítása a következőre:
-    {0} ide: {1}.'
   wwctAutoTranslateStart: 'Új fordítási munkamenet indítása erre: {0}.'
   wwcOnJoinTranslationNotificationNoSourceLang: 'Aktív fordítási munkamenete van erre:
     {0}.'
@@ -497,9 +485,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Fordítás
   wwcrTransFail: Újratöltötte a WorldwideChat-t, de nem sikerült engedélyezni a fordítót.
   wwcdCacheCleared: A fordítási gyorsítótár törlődött.
-  wwcdCacheSize: A gyorsítótár mérete jelenleg {0}, korlátja {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Érvénytelen argumentumok!
   systranHttpUnknown: 'Ismeretlen http hiba: {0}'
   systranHttp400: Rossz paramétereket küldtek a Systran-nak. Lehet, hogy rossz nyelvi
@@ -573,4 +558,19 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Sikeresen megváltoztatta a PostgreSQL
     felhasználónevet.
   wwcConfigGUIStorageTypeSettings: '{0} Konfiguráció'
+  wwcConfigConversationPrefixInput: Az aktuális előtag {0}. Írjon be egy újat, vagy
+    írja be a 0 parancsot a visszalépéshez.
+  wwcConfigConversationLangInput: 'A bővítmény jelenlegi nyelve a {0}. Kérjük, írjon
+    be egy érvényes nyelvi kódot, vagy írja be a 0 parancsot a törléshez. Érvényes
+    nyelvi kódok: {1}'
+  wwcdCacheSize: A gyorsítótár mérete jelenleg {0}, {1} korlátozással.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Új fordítási munkamenet indítása {0} és {1} között.
+  wwctAutoTranslateStartOtherPlayer: Új fordítási munkamenet indítása a {0} - {1}
+    között.
+  wwctLangToLangStartOtherPlayer: Új fordítási munkamenet indítása a {0} számára {1}
+    és {2} között.
+  wwcgLangToLangStart: Most fordítja a globális csevegést {0} -ról {1} -ra.
+  wwctrlRateLimitSetTarget: Állítsa be a {0} sebességkorlátozást {1} másodpercre.
 

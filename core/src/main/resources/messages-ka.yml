@@ -3,9 +3,9 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: გლობალური სტატისტიკა თარგმნა
     {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: შეცვალეთ Amazon წვდომის გასაღები
-  wwcrFail: ვერ მოხერხდა WorldWidecHat- ის განახლება.
+  wwcrFail: ვერ მოხერხდა WorldwideChat- ის განახლება.
   wwcConfigGUIUpdateCheckerButton: შეცვლა შეამოწმეთ განახლებების დაგვიანებით
-  wwcUpdaterFailedGeneric: შეუძლებელია WorldWidecHat- ის განახლებების შემოწმება.
+  wwcUpdaterFailedGeneric: შეუძლებელია WorldwideChat- ის განახლებების შემოწმება.
   wwcConfigConversationUpdateCheckerInput: განახლების შემოწმების მიმდინარე შეფერხება
     არის {0} წამი. აკრიფეთ 10-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან
     არაფერი ნაკლებია, ვიდრე 10 დაბრუნდეს.
@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: გასვლისა და ცვლილებების შენახვა
   wwctPlayerNotFound: მოთამაშე {0} ვერ მოიძებნა.
   wwcConfigGUIAmazonTranslateRegionButton: ამაზონის რეგიონის შეცვლა
-  wwcConfigConversationLangInput: 'მიმდინარე მოდული ენა {0}. გთხოვთ შეიყვანოთ სწორი
-    ენის კოდი ან ტიპის 0 გასაუქმებლად. სწორი ენის კოდები: {0}'
   wwcConfigConversationLangInvalid: არასწორი ენის კოდი!
   wwcConfigGUIWatsonAPIKeyButton: შეცვალეთ Watson API გასაღები
-  wwcEnabled: ჩართულია WorldWidecHat ვერსია {0}.
-  wwcgLangToLangStart: ახლა გლობალური ჩეთის თარგმნა {0} დან {1}.
+  wwcEnabled: ჩართულია WorldwideChat ვერსია {0}.
   wwctbOnSender: წიგნის თარგმანი ჩართულია. მარჯვენა ღილაკით წიგნის ჩატარებისას თარგმნის
     მას!
   wwcListenersInitialized: ინიციალიზებულ მსმენელებს.
@@ -70,7 +67,7 @@ Messages:
     შეიყვანოთ API გასაღები Watson— ისთვის, ან ტიპის 0 დასაბრუნებლად.
   wwctGUIStopButton: მთარგმნელობის შეჩერება
   wwcgTranslationStopped: გლობალური სტატისტიკა თარგმანი შეწყდა.
-  wwcUpdaterFutureDate: WorldWidecHat- ის ეს მაგალითი უფრო დიდი ვერსიაა, ვიდრე უახლესი
+  wwcUpdaterFutureDate: WorldwideChat- ის ეს მაგალითი უფრო დიდი ვერსიაა, ვიდრე უახლესი
     საზოგადოება.
   wwcConfigConversationPrefixSuccess: პრეფიქსი წარმატებით შეიცვალა.
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google Translate API
@@ -90,8 +87,8 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionInput: მიმდინარე რეგიონი არის {0}. გთხოვთ,
     შეიყვანოთ რეგიონი ამაზონისთვის, ან ტიპის 0 დასაბრუნებლად.
   wwcNoConsole: ეს ბრძანება შეიძლება მხოლოდ გაიქცა მოთამაშე.
-  wwcInitializationFail: ვერ მოხერხდა WorldWideCHAT ინიციალიზაცია
-  wwcrSuccess: წარმატებით გადატვირთულია WorldWideCHAT.
+  wwcInitializationFail: ვერ მოხერხდა WorldwideChat ინიციალიზაცია
+  wwcrSuccess: წარმატებით გადატვირთულია WorldwideChat.
   wwcPlayerNotFound: მოთამაშე {0} ვერ მოიძებნა.
   wwcUpdaterOutOfDateChat: WorldwideChat მოძველებულია. გთხოვთ, განაახლოთ უახლესი ვერსია.
   wwcConfigConversationRateLimitSuccess: კურსის ლიმიტის კომპლექტი წარმატებით.
@@ -105,8 +102,6 @@ Messages:
   wwctGUINewTranslationTarget: აირჩიეთ სამიზნე ენა
   wwcConfigConnectionSuccess: წარმატებით დაკავშირებულია {0}!
   wwcConfigGUIGoogleTranslateButton: Google თარგმნა
-  wwcConfigConversationPrefixInput: მიმდინარე პრეფიქსი არის {0}. გთხოვთ აკრიფოთ ახალი
-    ან ტიპი 0, რომ დაბრუნდეთ.
   wwcConfigGUIPreviousPageButton: წინა გვერდი
   wwcConfigGUITranslatorCacheButton: შეცვლა თარგმანი Cache ლიმიტი
   wwcConfigConversationbStatsSuccess: წარმატებით toggled bStats.
@@ -131,7 +126,7 @@ Messages:
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API გასაღები
     წარმატებით
   wwcConfigGUIAmazonTranslateSecretKeyButton: შეცვალეთ Amazon საიდუმლო გასაღები
-  wwcVersion: WorldWidecHat, ვერსია
+  wwcVersion: WorldwideChat, ვერსია
   wwcsAttemptedTranslations: 'თარგმანების მცდელობა: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon საიდუმლო გასაღები კომპლექტი
     წარმატებით.
@@ -154,7 +149,6 @@ Messages:
   wwctrlPlayerNotFound: მოთამაშე {0} ან არ არის ნაპოვნი, ან არ არის აქტიური თარჯიმანი.
   wwctrlRateLimitSetSender: დააყენეთ თქვენი განაკვეთის ლიმიტი {0} წამში.
   wwctrlRateLimitOffTarget: გამორთვა {0} სიჩქარის ლიმიტი.
-  wwctrlRateLimitSetTarget: დააყენეთ განაკვეთის ლიმიტი {0} to {1} წამში.
   wwctrlNotATranslator: თქვენ არ ხართ აქტიური თარჯიმანი! დარწმუნდით, რომ თქვენ მითითებული
     ეს /wwct.
   wwctrlRateLimitAlreadyOffSender: თქვენი კურსის ლიმიტი უკვე გამორთულია.
@@ -270,12 +264,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: გლობალური სტატისტიკა თარგმნილია,
     მაგრამ თქვენ გაქვთ აქტიური მთარგმნელობითი სესია {0} to {1}.
   wwctCannotTranslateConsole: თქვენ არ შეგიძლიათ დაიწყოთ თარგმანის სესია კონსოლისთვის!
-  wwctLangToLangStart: თარგმანის ახალი სესიის დაწყება {0} to {1}.
   wwcOnJoinTranslationNotificationSourceLang: თქვენ გაქვთ აქტიური მთარგმნელობითი სესია
     {0} დან {1}.
-  wwctAutoTranslateStartOtherPlayer: თარგმანის ახალი სესიის დაწყება {0} to {1}.
   wwctTranslationStopped: თქვენი თარგმანის სესია შეჩერებულია.
-  wwctLangToLangStartOtherPlayer: თარგმანის ახალი სესიის დაწყება {0} დან {1}-მდე.
   wwctAutoTranslateStart: თარგმანის ახალი სესიის დაწყება {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: თქვენ გაქვთ მთარგმნელობითი სესია {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: გლობალური სტატისტიკა
@@ -487,9 +478,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: სისტრან თარგმანი
   wwcrTransFail: გადატვირთულია WorldwideChat, მაგრამ ვერ მოახერხა მთარგმნელის ჩართვა.
   wwcdCacheCleared: თარგმანის ქეში გაწმენდა.
-  wwcdCacheSize: ქეშის ზომა ამჟამად არის {0}, ლიმიტით {1}.
-  wwcdCacheTerm: '{0}. ქეშდთარლანგმანი:InputLang = {1}, OutputLang= {2}, შეყვანიფრაზა
-    = {3} | გამომავალი ფრაზა = {4}'
   wwcdInvalidCmd: არასწორი არგუმენტები
   systranHttpUnknown: 'უცნობი http შეცდომა: {0}'
   systranHttp400: ცუდი პარამეტრები გაგზავნილია Systran— შეიძლება იყოს ცუდი ენის წყვილი?
@@ -561,4 +549,17 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: წარმატებით შეცვალა PostgreSQL მომხმარებლის
     სახელი.
   wwcConfigGUIStorageTypeSettings: '{0} კონფიგურაცია'
+  wwcConfigConversationPrefixInput: ამჟამინდელი პრეფიქსია {0}. გთხოვთ, შეიყვანოთ ახალი,
+    ან დაბრუნებისთვის დააკრიფეთ 0.
+  wwcConfigConversationLangInput: 'მოდულის ამჟამინდელი ენაა {0}. გთხოვთ შეიყვანოთ
+    სწორი ენის კოდი, ან აწერეთ 0 გაუქმებისთვის. მოქმედი ენის კოდები: {1}'
+  wwcdCacheSize: ქეშის ზომა ამჟამად არის {0}, ლიმიტით {1}.
+  wwcdCacheTerm: '{0}. ქეშდთარგმანი:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | გამოყვანიფრაზა = {4}'
+  wwctLangToLangStart: ახალი თარგმანული სესიის დაწყება {0} -დან {1} -მდე.
+  wwctAutoTranslateStartOtherPlayer: '{0} -დან {1} -მდე ახალი თარგმანული სესიის დაწყება.'
+  wwctLangToLangStartOtherPlayer: '{0} -ის ახალი თარგმანული სესიის დაწყება {1} -დან
+    {2} -მდე.'
+  wwcgLangToLangStart: ახლა გლობალური ჩატის თარგმნა {0} -დან {1} -ზე.
+  wwctrlRateLimitSetTarget: დააყენეთ სიჩქარის ლიმიტი {0} - დან {1} წამამდე.
 

@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: Afslut og gem ændringer
   wwctPlayerNotFound: Spilleren % jeg blev ikke fundet.
   wwcConfigGUIAmazonTranslateRegionButton: Ændre Amazon-regionen
-  wwcConfigConversationLangInput: 'Det aktuelle udvidelsessprog er {0}. Indtast en
-    gyldig sprogkode, eller skriv 0 for at annullere. Gyldige sprogkoder: {0}'
   wwcConfigConversationLangInvalid: Ugyldig sprogkode!
   wwcConfigGUIWatsonAPIKeyButton: Skift Watson API-nøgle
   wwcEnabled: Aktiveret WorldwideChat version {0}.
-  wwcgLangToLangStart: Oversætter nu global chat fra {0} til {1}.
   wwctbOnSender: Bogoversættelse aktiveret. Højreklik mens du holder en bog for at
     oversætte den!
   wwcListenersInitialized: Initialiserede lyttere.
@@ -106,8 +103,6 @@ Messages:
   wwctGUINewTranslationTarget: Vælg et målsprog
   wwcConfigConnectionSuccess: Succesfuld forbindelse til {0}!
   wwcConfigGUIGoogleTranslateButton: Google Oversæt
-  wwcConfigConversationPrefixInput: Det aktuelle præfiks er {0}. Skriv et nyt, eller
-    skriv 0 for at gå tilbage.
   wwcConfigGUIPreviousPageButton: Forrige side
   wwcConfigGUITranslatorCacheButton: Skift grænse for oversættelse
   wwcConfigConversationbStatsSuccess: bStats er slået til.
@@ -156,7 +151,6 @@ Messages:
   wwctrlPlayerNotFound: Spilleren {0} findes enten ikke, eller er ikke en aktiv oversætter.
   wwctrlRateLimitSetSender: Indstil din hastighedsgrænse til {0} sekunder.
   wwctrlRateLimitOffTarget: Slåede hastighedsgrænsen på {0} fra.
-  wwctrlRateLimitSetTarget: Indstil hastighedsgrænsen på {0} til {1} sekunder.
   wwctrlNotATranslator: Du er ikke en aktiv oversætter! Sørg for at du har indstillet
     denne med /wwct.
   wwctrlRateLimitAlreadyOffSender: Din takst grænse er allerede deaktiveret.
@@ -274,14 +268,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat bliver oversat,
     men du har en aktiv oversættelsessession fra {0} til {1}.
   wwctCannotTranslateConsole: Du kan ikke starte en oversættelsessession for konsol!
-  wwctLangToLangStart: Start af en ny oversættelsessession fra {0} til {1}.
   wwcOnJoinTranslationNotificationSourceLang: Du har en aktiv oversættelsessession
     fra {0} til {1}.
-  wwctAutoTranslateStartOtherPlayer: Start af en ny oversættelsessession for {0} til
-    {0}.
   wwctTranslationStopped: Din oversættelsessession er blevet stoppet.
-  wwctLangToLangStartOtherPlayer: Starter en ny oversættelsessession for {0} fra {1}
-    til {0}.
   wwctAutoTranslateStart: Start af en ny oversættelsessession til {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Du har en aktiv oversættelsessession
     til {0}.
@@ -488,9 +477,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Oversæt
   wwcrTransFail: Genindlæst WorldwideChat, men kunne ikke aktivere en oversætter.
   wwcdCacheCleared: Oversættelsescachen blev ryddet.
-  wwcdCacheSize: Størrelsen på cachen er i øjeblikket {0}, med en grænse på {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, outputLang= {2}, inputPhrase=
-    {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Ugyldige argumenter!
   systranHttpUnknown: 'Ukendt http fejl: {0}'
   systranHttp400: Dårlige parametre sendt til Systran. Kan være et dårligt sprogpar?
@@ -559,4 +545,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Ændret PostgreSQL-brugernavnet med
     succes.
   wwcConfigGUIStorageTypeSettings: '{0} Konfiguration'
+  wwcConfigConversationPrefixInput: Det aktuelle præfiks er {0}. Skriv en ny, eller
+    skriv 0 for at gå tilbage.
+  wwcConfigConversationLangInput: 'Det nuværende plugin-sprog er {0}. Indtast en gyldig
+    sprogkode, eller skriv 0 for at annullere. Gyldige sprogkoder: {1}'
+  wwcdCacheSize: Størrelsen på cachen er i øjeblikket {0}, med en grænse på {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Start af en ny oversættelsessession fra {0} til {1}.
+  wwctAutoTranslateStartOtherPlayer: Start af en ny oversættelsessession for {0} til
+    {1}.
+  wwctLangToLangStartOtherPlayer: Start af en ny oversættelsessession for {0} fra
+    {1} til {2}.
+  wwcgLangToLangStart: Oversætter nu global chat fra {0} til {1}.
+  wwctrlRateLimitSetTarget: Indstil hastighedsgrænsen på {0} til {1} sekunder.
 

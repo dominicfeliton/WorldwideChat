@@ -52,12 +52,9 @@ Messages:
   wwcConfigGUIQuitButton: Ymadael ac Arbed Newidiadau
   wwctPlayerNotFound: Chwaraewr {0} ddim dod o hyd.
   wwcConfigGUIAmazonTranslateRegionButton: Newid Rhanbarth Amazon
-  wwcConfigConversationLangInput: 'Yr iaith ategyn gyfredol yw {0} Rhowch god iaith
-    ddilys, neu deipio 0 i ganslo. Codau iaith dilys: {0}'
   wwcConfigConversationLangInvalid: Cod iaith annilys!
   wwcConfigGUIWatsonAPIKeyButton: Newid Watson API Allweddol
   wwcEnabled: Galluogwyd fersiwn WorldwideChat {0}.
-  wwcgLangToLangStart: Nawr cyfieithu sgwrs fyd-eang o {0} i {1}.
   wwctbOnSender: Cyfieithu llyfr wedi'i alluogi. Cliciwch y botwm dde wrth ddal llyfr
     i'w gyfieithu!
   wwcListenersInitialized: Gwrandawyr ymgychwyn.
@@ -108,8 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: Dewiswch Iaith Darged
   wwcConfigConnectionSuccess: Wedi cysylltu yn llwyddiannus i {0}!
   wwcConfigGUIGoogleTranslateButton: Google Cyfieithu
-  wwcConfigConversationPrefixInput: Y rhagddodiad cyfredol yw {0} Teipiwch un newydd,
-    neu teipiwch 0 i fynd yn ôl.
   wwcConfigGUIPreviousPageButton: Tudalen Blaenorol
   wwcConfigGUITranslatorCacheButton: Newid Terfyn Cache Cyfieithu
   wwcConfigConversationbStatsSuccess: Toglu'n llwyddiannus bStats.
@@ -160,7 +155,6 @@ Messages:
     gweithredol.
   wwctrlRateLimitSetSender: Gosodwch eich terfyn cyfradd i {0} eiliad.
   wwctrlRateLimitOffTarget: Diffodd terfyn cyfradd {0}.
-  wwctrlRateLimitSetTarget: Gosodwch derfyn y gyfradd o {0} i {1} eiliad.
   wwctrlNotATranslator: Nid ydych yn gyfieithydd gweithredol! Gwnewch yn siŵr eich
     bod wedi gosod hyn gyda/wwct.
   wwctrlRateLimitAlreadyOffSender: Mae eich terfyn cyfradd eisoes wedi'i analluogi.
@@ -273,14 +267,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Mae sgwrs fyd-eang yn
     cael ei gyfieithu, ond mae gennych sesiwn gyfieithu weithredol o {0} i {1}.
   wwctCannotTranslateConsole: Ni allwch ddechrau sesiwn gyfieithu ar gyfer consol!
-  wwctLangToLangStart: Dechrau sesiwn gyfieithu newydd o {0} i {1}.
   wwcOnJoinTranslationNotificationSourceLang: Mae gennych sesiwn gyfieithu weithredol
     o {0} i {1}.
-  wwctAutoTranslateStartOtherPlayer: Dechrau sesiwn gyfieithu newydd ar gyfer {0}
-    i {0}.
   wwctTranslationStopped: Mae eich sesiwn gyfieithu wedi cael ei stopio.
-  wwctLangToLangStartOtherPlayer: Dechrau sesiwn gyfieithu newydd ar gyfer {0} o {1}
-    i {0}.
   wwctAutoTranslateStart: Dechrau sesiwn gyfieithu newydd i {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Mae gennych sesiwn gyfieithu weithredol
     i {0}.
@@ -494,9 +483,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Cyfieithu Systran
   wwcrTransFail: Aillwythwyd WorldwideChat ond methodd â galluogi cyfieithydd.
   wwcdCacheCleared: Cliriwyd y storfa cyfieithu.
-  wwcdCacheSize: Mae maint y storfa ar hyn o bryd yn {0}, gyda therfyn o {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, allbwnLang = {2}, mewnbwn
-    = {3} | allbwn = {4}'
   wwcdInvalidCmd: Dadleuon annilys!
   systranHttpUnknown: 'Gwall http anhysbys: {0}'
   systranHttp400: Paramedrau gwael a anfonwyd i Systran. Efallai bod yn bâr iaith
@@ -566,4 +552,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Newidiodd enw defnyddiwr PostgreSQL
     yn llwyddiannus.
   wwcConfigGUIStorageTypeSettings: '{0} Ffurfweddiad'
+  wwcConfigConversationPrefixInput: Y rhagddodiad cyfredol yw {0}. Teipiwch un newydd,
+    neu deipiwch 0 i fynd yn ôl.
+  wwcConfigConversationLangInput: 'Yr iaith ategyn gyfredol yw {0}. Rhowch god iaith
+    dilys, neu deipiwch 0 i ganslo. Codau iaith dilys: {1}'
+  wwcdCacheSize: Ar hyn o bryd, maint y storfa yw {0}, gyda therfyn o {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:mewnputLang= {1}, allbwnLang = {2}, mewnbwn
+    = {3} | allbwnPhrase= {4}'
+  wwctLangToLangStart: Dechrau sesiwn gyfieithu newydd o {0} i {1}.
+  wwctAutoTranslateStartOtherPlayer: Dechrau sesiwn gyfieithu newydd ar gyfer {0}
+    i {1}.
+  wwctLangToLangStartOtherPlayer: Dechrau sesiwn cyfieithu newydd ar gyfer {0} o {1}
+    i {2}.
+  wwcgLangToLangStart: Nawr yn cyfieithu sgwrs fyd-eang o {0} i {1}.
+  wwctrlRateLimitSetTarget: Gosodwch y terfyn cyfradd o {0} i {1} eiliad.
 

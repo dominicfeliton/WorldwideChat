@@ -4,7 +4,7 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: ಅಮೆಜಾನ್ ಪ್ರವೇಶ ಕೀ ಬದಲಿಸಿ
   wwcrFail: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ.
   wwcConfigGUIUpdateCheckerButton: ಅಪ್ಡೇಟ್ಗಳು ವಿಳಂಬ ಪರಿಶೀಲಿಸಿ ಬದಲಾಯಿಸಿ
-  wwcUpdaterFailedGeneric: WorldWidechat ನವೀಕರಣಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.
+  wwcUpdaterFailedGeneric: WorldwideChat ನವೀಕರಣಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ.
   wwcConfigConversationUpdateCheckerInput: ಅಪ್ಡೇಟ್ ಪರೀಕ್ಷಕದಲ್ಲಿನ ಪ್ರಸ್ತುತ ವಿಳಂಬ {0}
     ಸೆಕೆಂಡುಗಳು. ಹೊಸ ಮೌಲ್ಯವನ್ನು ಹೊಂದಿಸಲು 10 ಗಿಂತ ಹೆಚ್ಚಿನದನ್ನು ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ 10 ಗಿಂತ
     ಕಡಿಮೆ ಏನು ಹಿಂತಿರುಗಿ.
@@ -52,13 +52,9 @@ Messages:
   wwcConfigGUIQuitButton: ನಿರ್ಗಮಿಸಿ & ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ
   wwctPlayerNotFound: ಆಟಗಾರ % ನಾನು ಕಂಡುಬಂದಿಲ್ಲ.
   wwcConfigGUIAmazonTranslateRegionButton: ಅಮೆಜಾನ್ ಪ್ರದೇಶವನ್ನು ಬದಲಿಸಿ
-  wwcConfigConversationLangInput: 'ಪ್ರಸ್ತುತ ಪ್ಲಗ್ಇನ್ ಭಾಷೆ {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ
-    ಭಾಷಾ ಸಂಕೇತವನ್ನು ನಮೂದಿಸಿ, ಅಥವ 0 ಅನ್ನು ರದ್ದುಗೊಳಿಸಲು ಟೈಪ್ ಮಾಡಿ. ಮಾನ್ಯ ಭಾಷಾ ಸಂಕೇತಗಳು:
-    {0}'
   wwcConfigConversationLangInvalid: ಅಮಾನ್ಯ ಭಾಷಾ ಕೋಡ್!
   wwcConfigGUIWatsonAPIKeyButton: ವ್ಯಾಟ್ಸನ್ ಎಪಿಐ ಕೀ ಬದಲಾಯಿಸಿ
   wwcEnabled: ಸಕ್ರಿಯಗೊಳಿಸಿದ ವಿಶ್ವವೈಡೆಚಾಟ್ ಆವೃತ್ತಿ {0}.
-  wwcgLangToLangStart: ಈಗ ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು {0} ನಿಂದ {1} ಗೆ ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ.
   wwctbOnSender: ಪುಸ್ತಕ ಅನುವಾದವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ಅದನ್ನು ಭಾಷಾಂತರಿಸಲು ಪುಸ್ತಕವನ್ನು
     ಹಿಡಿದಿಟ್ಟುಕೊಳ್ಳುವಾಗ ಬಲ ಕ್ಲಿಕ್ ಮಾಡಿ!
   wwcListenersInitialized: ಪ್ರಾರಂಭಿಸಿದ ಕೇಳುಗರು.
@@ -109,8 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: ಟಾರ್ಗೆಟ್ ಭಾಷೆಯನ್ನು ಆರಿಸಿ
   wwcConfigConnectionSuccess: '{0} ಗೆ ಯಶಸ್ವಿಯಾಗಿ ಸಂಪರ್ಕಗೊಂಡಿದೆ!'
   wwcConfigGUIGoogleTranslateButton: ಗೂಗಲ್ ಭಾಷಾಂತರಿಸಿ
-  wwcConfigConversationPrefixInput: ಪ್ರಸ್ತುತ ಪೂರ್ವಪ್ರತ್ಯಯವು {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು ಹೊಸದನ್ನು
-    ಟೈಪ್ ಮಾಡಿ, ಅಥವ ಹಿಂದಕ್ಕೆ ಹೋಗಲು 0 ಅನ್ನು ಟೈಪ್ ಮಾಡಿ.
   wwcConfigGUIPreviousPageButton: ಹಿಂದಿನ ಪುಟ
   wwcConfigGUITranslatorCacheButton: ಅನುವಾದ ಸಂಗ್ರಹ ಮಿತಿ ಬದಲಾಯಿಸಿ
   wwcConfigConversationbStatsSuccess: bStats ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಟಾಗಲ್ ಮಾಡಲಾಗಿದೆ.
@@ -163,7 +157,6 @@ Messages:
   wwctrlPlayerNotFound: ಪ್ಲೇಯರ್ {0} ಕಂಡುಬಂದಿಲ್ಲ, ಅಥವ ಸಕ್ರಿಯ ಅನುವಾದಕವಲ್ಲ.
   wwctrlRateLimitSetSender: ನಿಮ್ಮ ದರ ಮಿತಿಯನ್ನು {0} ಸೆಕೆಂಡುಗಳಿಗೆ ಹೊಂದಿಸಿ.
   wwctrlRateLimitOffTarget: '{0} ನ ದರ ಮಿತಿಯನ್ನು ಆಫ್ ಮಾಡಲಾಗಿದೆ.'
-  wwctrlRateLimitSetTarget: '{0} ನ ದರ ಮಿತಿಯನ್ನು {1} ಸೆಕೆಂಡುಗಳವರೆಗೆ ಹೊಂದಿಸಿ.'
   wwctrlNotATranslator: ನೀವು ಸಕ್ರಿಯ ಅನುವಾದಕರಲ್ಲ! ನೀವು ಇದನ್ನು /wwctನೊಂದಿಗೆ ಹೊಂದಿಸಿದ್ದೀರಿ
     ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
   wwctrlRateLimitAlreadyOffSender: ನಿಮ್ಮ ದರ ಮಿತಿಯನ್ನು ಈಗಾಗಲೇ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ.
@@ -276,12 +269,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ,
     ಆದರೆ ನೀವು {0} ನಿಂದ {1} ಗೆ ಸಕ್ರಿಯ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಹೊಂದಿದ್ದೀರಿ.
   wwctCannotTranslateConsole: ಕನ್ಸೋಲ್ಗಾಗಿ ನೀವು ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಪ್ರಾರಂಭಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ!
-  wwctLangToLangStart: '{0} ನಿಂದ {1} ಗೆ ಹೊಸ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಪ್ರಾರಂಭಿಸುವುದು.'
   wwcOnJoinTranslationNotificationSourceLang: ನೀವು {0} ನಿಂದ {1} ಗೆ ಸಕ್ರಿಯ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು
     ಹೊಂದಿದ್ದೀರಿ.
-  wwctAutoTranslateStartOtherPlayer: '{0} ಗೆ {1} ಗೆ ಹೊಸ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಪ್ರಾರಂಭಿಸುವುದು.'
   wwctTranslationStopped: ನಿಮ್ಮ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ನಿಲ್ಲಿಸಲಾಗಿದೆ.
-  wwctLangToLangStartOtherPlayer: '{0} ನಿಂದ {1} ಗೆ ಹೊಸ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಪ್ರಾರಂಭಿಸುವುದು.'
   wwctAutoTranslateStart: '{0} ಗೆ ಹೊಸ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಪ್ರಾರಂಭಿಸುವುದು.'
   wwcOnJoinTranslationNotificationNoSourceLang: ನೀವು {0} ಗೆ ಸಕ್ರಿಯ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು
     ಹೊಂದಿದ್ದೀರಿ.
@@ -496,9 +486,6 @@ Messages:
   wwcrTransFail: ವರ್ಲ್ಡ್ವೈಡ್ಚಾಟ್ ಅನ್ನು ಮರುಲೋಡ್ ಮಾಡಲಾಯಿತು ಆದರೆ ಅನುವಾದಕನನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು
     ವಿಫಲವಾಯಿತು.
   wwcdCacheCleared: ಅನುವಾದ ಸಂಗ್ರಹ ತೆರವುಗೊಳಿಸಲಾಗಿದೆ.
-  wwcdCacheSize: ಸಂಗ್ರಹ ಗಾತ್ರವು ಪ್ರಸ್ತುತ {0} ಆಗಿದೆ, ಇದು {1} ಮಿತಿಯೊಂದಿಗೆ.
-  wwcdCacheTerm: '{0}. ಕ್ಯಾಚೆಡ್ಟ್ರಾನ್ಸ್ಲೇಷನ್:ಇನ್ಪುಟ್ಲ್ಯಾಂಗ್= {1}, ಔಟ್ಪುಟ್ಲ್ಯಾಂಗ್=
-    {2}, ಇನ್ಪುಟ್ಫ್ರಾಸ್= {3} | ಔಟ್ಪುಟ್ಫ್ರಾಸ್= {4}'
   wwcdInvalidCmd: ಅಮಾನ್ಯ ವಾದಗಳು!
   systranHttpUnknown: 'ಅಜ್ಞಾತ http ದೋಷ: {0}'
   systranHttp400: ಕೆಟ್ಟ ನಿಯತಾಂಕಗಳನ್ನು ಸಿಸ್ಟ್ರಾನ್ಗೆ ಕಳುಹಿಸಲಾಗಿದೆ. ಕೆಟ್ಟ ಭಾಷಾ ಜೋಡಿಯಾಗಿರಬಹುದು?
@@ -573,4 +560,17 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL ಬಳಕೆದಾರಹೆಸರು ಯಶಸ್ವಿಯಾಗಿ
     ಬದಲಾಯಿಸಲಾಗಿದೆ.
   wwcConfigGUIStorageTypeSettings: '{0} ಸಂರಚನೆ'
+  wwcConfigConversationPrefixInput: ಪ್ರಸ್ತುತ ಪೂರ್ವಪ್ರತ್ಯಯ {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು ಹೊಸದನ್ನು
+    ಟೈಪ್ ಮಾಡಿ ಅಥವಾ ಹಿಂತಿರುಗಿ ಹೋಗಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ.
+  wwcConfigConversationLangInput: 'ಪ್ರಸ್ತುತ ಪ್ಲಗಿನ್ ಭಾಷೆ {0} ಆಗಿದೆ. ದಯವಿಟ್ಟು ಮಾನ್ಯ
+    ಭಾಷಾ ಕೋಡ್ ನಮೂದಿಸಿ, ಅಥವಾ ರದ್ದುಗೊಳಿಸಲು 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ. ಮಾನ್ಯ ಭಾಷಾ ಸಂಕೇತಗಳು: {1}'
+  wwcdCacheSize: ಸಂಗ್ರಹ ಗಾತ್ರ ಪ್ರಸ್ತುತ {0} ಆಗಿದೆ, ಇದು {1} ಮಿತಿಯೊಂದಿಗೆ.
+  wwcdCacheTerm: '{0}. CachedTranslation:ಇನ್ಪುಟ್ಲಾಂಗ್= {1}, ಔಟ್ಪುಟ್ಲಾಂಗ್= {2}, ಇನ್ಪುಟ್ಫ್ರಾಸ್=
+    {3} | ಔಟ್ಪುಟ್ಫ್ರಾಸ್= {4}'
+  wwctLangToLangStart: '{0} ನಿಂದ {1} ವರೆಗೆ ಹೊಸ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಪ್ರಾರಂಭಿಸುತ್ತಿದೆ.'
+  wwctAutoTranslateStartOtherPlayer: '{0} ಗೆ {1} ಗೆ ಹೊಸ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು ಪ್ರಾರಂಭಿಸುತ್ತಿದೆ.'
+  wwctLangToLangStartOtherPlayer: '{1} ನಿಂದ {2} ವರೆಗೆ {0} ಗಾಗಿ ಹೊಸ ಅನುವಾದ ಅಧಿವೇಶನವನ್ನು
+    ಪ್ರಾರಂಭಿಸುತ್ತಿದೆ.'
+  wwcgLangToLangStart: ಈಗ ಜಾಗತಿಕ ಚಾಟ್ ಅನ್ನು {0} ನಿಂದ {1} ಗೆ ಅನುವಾದಿಸುತ್ತಿದೆ.
+  wwctrlRateLimitSetTarget: '{0} ದರದ ಮಿತಿಯನ್ನು {1} ಸೆಕೆಂಡುಗಳಿಗೆ ಹೊಂದಿಸಿ.'
 

@@ -47,12 +47,9 @@ Messages:
   wwcConfigGUIQuitButton: יציאה ושמור שינויים
   wwctPlayerNotFound: שחקן %לא מצאתי.
   wwcConfigGUIAmazonTranslateRegionButton: שינוי אזור אמזון
-  wwcConfigConversationLangInput: 'שפת התוסף הנוכחית היא {0}. הזן קוד שפה חוקי, או
-    הקלד 0 כדי לבטל. קודי שפה תקפים: {0}'
   wwcConfigConversationLangInvalid: קוד שפה לא חוקי!
   wwcConfigGUIWatsonAPIKeyButton: שינוי מפתח API של ווטסון
   wwcEnabled: גרסת WorldwideChat מופעלת. i.
-  wwcgLangToLangStart: כעת מתרגם צ'אט גלובלי מ {0} אל {1}.
   wwctbOnSender: תרגום ספרים מופעל. לחץ לחיצה ימנית תוך החזקת ספר לתרגם אותו!
   wwcListenersInitialized: מאזינים אותחלו.
   wwcConfigGUIPluginUpdateChatButton: שלח תזכורת צ'אט עבור עדכוני פלאגין
@@ -96,8 +93,6 @@ Messages:
   wwctGUINewTranslationTarget: בחר שפת יעד
   wwcConfigConnectionSuccess: מחובר בהצלחה אל {0}!
   wwcConfigGUIGoogleTranslateButton: גוגל תרגום
-  wwcConfigConversationPrefixInput: הקידומת הנוכחית היא {0}. הקלד קידומת חדשה, או
-    הקלד 0 כדי לחזור אחורה.
   wwcConfigGUIPreviousPageButton: העמוד הקודם
   wwcConfigGUITranslatorCacheButton: שינוי הגבלת מטמון התרגום
   wwcConfigConversationbStatsSuccess: בהצלחה חלפתי bStats.
@@ -140,7 +135,6 @@ Messages:
   wwctrlPlayerNotFound: השחקן {0} הוא גם לא נמצא, או אינו מתרגם פעיל.
   wwctrlRateLimitSetSender: הגדר את מגבלת התעריף {0} שניות.
   wwctrlRateLimitOffTarget: ביטל את מגבלת התעריף של {0}.
-  wwctrlRateLimitSetTarget: הגדר את מגבלת התעריף של {0} אל {1} שניות.
   wwctrlNotATranslator: אתה לא מתרגם פעיל! ודא שהגדרת את זה עם /wwct.
   wwctrlRateLimitAlreadyOffSender: מגבלת התעריף שלך כבר מושבתת.
   wwctGUIRateButton: הגדרת מגבלת קצב
@@ -245,11 +239,8 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: צ'אט גלובלי מתורגם, אבל
     יש לך הפעלת תרגום פעילה מ {0} ל {1}.
   wwctCannotTranslateConsole: לא ניתן להתחיל הפעלת תרגום עבור מסוף!
-  wwctLangToLangStart: מתחיל הפעלת תרגום חדשה מ- {0} אל {1}.
   wwcOnJoinTranslationNotificationSourceLang: יש לך הפעלת תרגום פעילה מ- {0} אל {1}.
-  wwctAutoTranslateStartOtherPlayer: מתחיל הפעלת תרגום חדשה עבור {0} אל {1}.
   wwctTranslationStopped: התרגום שלך הופסק.
-  wwctLangToLangStartOtherPlayer: מתחיל הפעלת תרגום חדשה עבור {0} מ- {1} אל {2}.
   wwctAutoTranslateStart: מתחיל הפעלת תרגום חדשה אל {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: יש לך הפעלת תרגום פעילה אל {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: צ'אט גלובלי מתורגם,
@@ -442,9 +433,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: סיסטרן תרגום
   wwcrTransFail: טען מחדש את WorldwideChat אך נכשל בהפעלת מתרגם.
   wwcdCacheCleared: מטמון התרגום נוקה.
-  wwcdCacheSize: גודל המטמון הוא כרגע {0}, עם מגבלה של {1}.
-  wwcdCacheTerm: '{0}. תרגום מטמון: קלט קלט = {1}, תפוקהלנג= {2}, InputPhrase = {3}
-    | תפוקPhrase = {4}'
   wwcdInvalidCmd: טיעונים לא חוקיים!
   systranHttpUnknown: 'שגיאת http לא ידועה: {0}'
   systranHttp400: פרמטרים רעים שנשלחו לסיסטרן. יכול להיות זוג שפות גרוע?
@@ -505,4 +493,16 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: שינוי מסד הנתונים של PostgreSQL
   wwcConfigConversationPostgresUsernameSuccess: שינתה בהצלחה את שם המשתמש של PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} תצורה'
+  wwcConfigConversationPrefixInput: הקידומת הנוכחית היא {0}. אנא הקלד אחד חדש, או
+    הקלד 0 כדי לחזור.
+  wwcConfigConversationLangInput: 'שפת התוסף הנוכחית היא {0}. הזן קוד שפה חוקי, או
+    הקלד 0 כדי לבטל. קודי שפה חוקיים: {1}'
+  wwcdCacheSize: גודל המטמון הוא כרגע {0}, עם מגבלה של {1}.
+  wwcdCacheTerm: '{0}. תרגום מטמון: קלט קלט = {1}, פלט לנג= {2}, ביטוי קלט= {3} |
+    פלטפראז= {4}'
+  wwctLangToLangStart: התחלת מפגש תרגום חדש מ- {0} ל- {1}.
+  wwctAutoTranslateStartOtherPlayer: התחלת הפעלת תרגום חדשה עבור {0} ל- {1}.
+  wwctLangToLangStartOtherPlayer: התחלת הפעלת תרגום חדשה עבור {0} מ- {1} ל- {2}.
+  wwcgLangToLangStart: כעת מתרגמים צ'אט גלובלי מ- {0} ל- {1}.
+  wwctrlRateLimitSetTarget: הגדר את מגבלת התעריף של {0} ל {1} שניות.
 

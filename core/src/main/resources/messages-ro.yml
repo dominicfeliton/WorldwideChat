@@ -53,12 +53,9 @@ Messages:
   wwcConfigGUIQuitButton: Ieșire și salvare modificări
   wwctPlayerNotFound: Jucătorul {0} am găsit.
   wwcConfigGUIAmazonTranslateRegionButton: Schimbă regiunea Amazon
-  wwcConfigConversationLangInput: 'Limba curentă a pluginului este {0}. Introduceți
-    un cod de limbă valid sau tastați 0 pentru a anula. Coduri de limbă valide: {0}'
   wwcConfigConversationLangInvalid: Cod de limbă nevalid!
   wwcConfigGUIWatsonAPIKeyButton: Modificare cheie API Watson
   wwcEnabled: Versiune WorldwideChat activată.
-  wwcgLangToLangStart: Acum traducem chatul global de la {0} la {1}.
   wwctbOnSender: Traducerea cărţii activată. Faceți clic dreapta în timp ce țineți
     o carte pentru ao traduce!
   wwcListenersInitialized: Ascultători iniţializaţi.
@@ -111,8 +108,6 @@ Messages:
   wwctGUINewTranslationTarget: Alegeți o limbă țintă
   wwcConfigConnectionSuccess: Conectat cu succes la {0}!
   wwcConfigGUIGoogleTranslateButton: Traducere în Google
-  wwcConfigConversationPrefixInput: Prefixul curent este {0}. Introduceți unul nou
-    sau tastați 0 pentru a reveni.
   wwcConfigGUIPreviousPageButton: Pagina precedentă
   wwcConfigGUITranslatorCacheButton: Modificare limită cache traducere
   wwcConfigConversationbStatsSuccess: bStats comutate cu succes.
@@ -165,7 +160,6 @@ Messages:
     activ.
   wwctrlRateLimitSetSender: Setați limita ratei la {0} secunde.
   wwctrlRateLimitOffTarget: Dezactivat limita ratei de {0}.
-  wwctrlRateLimitSetTarget: Setați limita de rată de {0} la {1} secunde.
   wwctrlNotATranslator: Nu eşti un traducător activ! Asigurați-vă că ați setat acest
     lucru cu /wwct.
   wwctrlRateLimitAlreadyOffSender: Limita tarifului dvs. este deja dezactivată.
@@ -283,14 +277,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Chat global este tradus,
     dar aveți o sesiune de traducere activă de la {0} la {1}.
   wwctCannotTranslateConsole: Nu puteți începe o sesiune de traducere pentru consola!
-  wwctLangToLangStart: Începerea unei noi sesiuni de traducere de la {0} la {1}.
   wwcOnJoinTranslationNotificationSourceLang: Aveți o sesiune de traducere activă
     de la {0} la {1}.
-  wwctAutoTranslateStartOtherPlayer: Începem o nouă sesiune de traducere pentru {0}
-    la {0}.
   wwctTranslationStopped: Sesiunea de traducere a fost oprită.
-  wwctLangToLangStartOtherPlayer: Începem o nouă sesiune de traducere pentru {0} de
-    la {0} la {1}.
   wwctAutoTranslateStart: Începem o nouă sesiune de traducere la {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Aveți o sesiune de traducere activă
     la {0}.
@@ -513,9 +502,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Traducere
   wwcrTransFail: Reîncărcat WorldwideChat, dar nu a reușit să activeze un traducător.
   wwcdCacheCleared: Cache-ul de traducere a fost șters.
-  wwcdCacheSize: Dimensiunea cache-ului este în prezent {0}, cu o limită de {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, outputLang= {2}, inputPhrase=
-    {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Argumente nevalide!
   systranHttpUnknown: 'Eroare http necunoscută: {0}'
   systranHttp400: Parametrii greșiți trimiși la Systran. Ar putea fi o pereche de
@@ -587,4 +573,19 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: A schimbat cu succes numele de utilizator
     PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Configurare'
+  wwcConfigConversationPrefixInput: Prefixul curent este {0}. Tastați unul nou sau
+    tastați 0 pentru a reveni.
+  wwcConfigConversationLangInput: 'Limba actuală a pluginului este {0}. Introduceți
+    un cod de limbă valid sau tastați 0 pentru a anula. Coduri de limbă valabile:
+    {1}'
+  wwcdCacheSize: Dimensiunea cache-ului este în prezent {0}, cu o limită de {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Începerea unei noi sesiuni de traducere de la {0} la {1}.
+  wwctAutoTranslateStartOtherPlayer: Începerea unei noi sesiuni de traducere pentru
+    {0} la {1}.
+  wwctLangToLangStartOtherPlayer: Începerea unei noi sesiuni de traducere pentru {0}
+    de la {1} la {2}.
+  wwcgLangToLangStart: Acum traduce chat-ul global de la {0} la {1}.
+  wwctrlRateLimitSetTarget: Setați limita de viteză de {0} la {1} secunde.
 

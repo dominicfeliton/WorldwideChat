@@ -53,13 +53,9 @@ Messages:
   wwcConfigGUIQuitButton: Έξοδος & αποθήκευση αλλαγών
   wwctPlayerNotFound: Παίχτης %Δεν βρέθηκε.
   wwcConfigGUIAmazonTranslateRegionButton: Αλλαγή περιοχής του Αμαζονίου
-  wwcConfigConversationLangInput: 'Η τρέχουσα γλώσσα πρόσθετου είναι {0}. Εισαγάγετε
-    έναν έγκυρο κωδικό γλώσσας ή πληκτρολογήστε 0 για ακύρωση. Κωδικοί έγκυρης γλώσσας:
-    {0}'
   wwcConfigConversationLangInvalid: Μη έγκυρος κωδικός γλώσσας!
   wwcConfigGUIWatsonAPIKeyButton: Αλλαγή κλειδιού API Watson
   wwcEnabled: Ενεργοποιημένη έκδοση {0} WorldwideChat
-  wwcgLangToLangStart: Τώρα μεταφράζεται η παγκόσμια συνομιλία από {0} σε {1}.
   wwctbOnSender: Η μετάφραση του βιβλίου είναι ενεργοποιημένη. Κάντε δεξί κλικ κρατώντας
     ένα βιβλίο για να το μεταφράσετε!
   wwcListenersInitialized: Αρχικοποιημένοι ακροατές.
@@ -114,8 +110,6 @@ Messages:
   wwctGUINewTranslationTarget: Επιλογή γλώσσας προορισμού
   wwcConfigConnectionSuccess: Επιτυχής σύνδεση στο {0}!
   wwcConfigGUIGoogleTranslateButton: Μετάφραση Google
-  wwcConfigConversationPrefixInput: Το τρέχον πρόθεμα είναι {0}. Πληκτρολογήστε ένα
-    νέο ή πληκτρολογήστε 0 για να επιστρέψετε.
   wwcConfigGUIPreviousPageButton: Προηγούμενη σελίδα
   wwcConfigGUITranslatorCacheButton: Αλλαγή του ορίου προσωρινής μνήμης μετάφρασης
   wwcConfigConversationbStatsSuccess: Επιτυχής εναλλαγή bStats.
@@ -169,7 +163,6 @@ Messages:
     μεταφραστής.
   wwctrlRateLimitSetSender: Ορίστε το όριο ταχύτητας σε {0} δευτερόλεπτα.
   wwctrlRateLimitOffTarget: Απενεργοποίησε το όριο ρυθμού του {0}.
-  wwctrlRateLimitSetTarget: Ορίστε το όριο ταχύτητας του {0} σε {1} δευτερόλεπτα.
   wwctrlNotATranslator: Δεν είσαι ενεργός μεταφραστής! Βεβαιωθείτε ότι έχετε ρυθμίσει
     αυτό με /wwct.
   wwctrlRateLimitAlreadyOffSender: Το όριο τιμών σας είναι ήδη απενεργοποιημένο.
@@ -292,14 +285,9 @@ Messages:
     μεταφράζεται, αλλά έχετε μια ενεργή συνεδρία μετάφρασης από {0} σε {1}.
   wwctCannotTranslateConsole: Δεν μπορείτε να ξεκινήσετε μια συνεδρία μετάφρασης για
     την κονσόλα!
-  wwctLangToLangStart: Έναρξη νέας περιόδου λειτουργίας μετάφρασης από {0} έως {1}.
   wwcOnJoinTranslationNotificationSourceLang: Έχετε μια ενεργή συνεδρία μετάφρασης
     από {0} έως {1}.
-  wwctAutoTranslateStartOtherPlayer: Έναρξη νέας περιόδου λειτουργίας μετάφρασης για
-    {0} σε {1}.
   wwctTranslationStopped: Η συνεδρία μετάφρασής σας έχει διακοπεί.
-  wwctLangToLangStartOtherPlayer: Έναρξη νέας περιόδου λειτουργίας μετάφρασης για
-    το {0} από {1} έως {2}.
   wwctAutoTranslateStart: Έναρξη νέας περιόδου λειτουργίας μετάφρασης σε {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Έχετε μια ενεργή συνεδρία μετάφρασης
     σε {0}.
@@ -530,10 +518,6 @@ Messages:
   wwcrTransFail: Επαναφόρτωσε το WorldwideChat αλλά απέτυχε να ενεργοποιήσει έναν
     μεταφραστή.
   wwcdCacheCleared: Η προσωρινή μνήμη μετάφρασης εκκαθαρίστηκε.
-  wwcdCacheSize: Το μέγεθος της προσωρινής μνήμης είναι αυτή τη στιγμή {0}, με όριο
-    {1}.
-  wwcdCacheTerm: '{0}. Μετάφραση προσωρινής αποθήκευσης: είσοδοςLang= {1}, έξοδοςLang=
-    {2}, InputPhrase= {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Μη έγκυρα επιχειρήματα!
   systranHttpUnknown: 'Άγνωστο σφάλμα http: {0}'
   systranHttp400: Κακές παράμετροι στάλθηκαν στο Systran. Μπορεί να είναι ένα κακό
@@ -611,4 +595,20 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Αλλάξτε με επιτυχία το όνομα χρήστη
     PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Διαμόρφωση'
+  wwcConfigConversationPrefixInput: Το τρέχον πρόθεμα είναι {0}. Πληκτρολογήστε ένα
+    νέο, ή πληκτρολογήστε 0 για να επιστρέψετε.
+  wwcConfigConversationLangInput: 'Η τρέχουσα γλώσσα προσθήκης είναι {0}. Εισαγάγετε
+    έναν έγκυρο κωδικό γλώσσας, ή πληκτρολογήστε 0 για ακύρωση. Έγκυροι κωδικοί γλώσσας:
+    {1}'
+  wwcdCacheSize: Το μέγεθος της προσωρινής μνήμης είναι αυτή τη στιγμή {0}, με όριο
+    {1}.
+  wwcdCacheTerm: '{0}. Μετάφραση προσωρινής αποθήκευσης: είσοδοςLang= {1}, έξοδοςLang=
+    {2}, Φράση εισόδου = {3} | Έξοδος Φράση= {4}'
+  wwctLangToLangStart: Έναρξη νέας συνεδρίας μετάφρασης από το {0} στο {1}.
+  wwctAutoTranslateStartOtherPlayer: Έναρξη νέας συνεδρίας μετάφρασης για {0} έως
+    {1}.
+  wwctLangToLangStartOtherPlayer: Έναρξη νέας συνεδρίας μετάφρασης για το {0} από
+    {1} σε {2}.
+  wwcgLangToLangStart: Τώρα μεταφράζει παγκόσμια συνομιλία από {0} σε {1}.
+  wwctrlRateLimitSetTarget: Ορίστε το όριο ταχύτητας {0} σε {1} δευτερόλεπτα.
 

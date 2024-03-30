@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: Zakończ i zapisz zmiany
   wwctPlayerNotFound: Gracza {0} znaleziono.
   wwcConfigGUIAmazonTranslateRegionButton: Zmień region Amazon
-  wwcConfigConversationLangInput: 'Bieżący język wtyczki to {0}. Wprowadź prawidłowy
-    kod języka lub wpisz 0, aby anulować. Prawidłowe kody językowe: {0}'
   wwcConfigConversationLangInvalid: Nieprawidłowy kod języka!
   wwcConfigGUIWatsonAPIKeyButton: Zmień klucz API Watson
   wwcEnabled: Włączona wersja WorldwideChat {0}.
-  wwcgLangToLangStart: Teraz tłumaczy globalny czat z {0} do {1}.
   wwctbOnSender: Tłumaczenie książki włączone. Kliknij prawym przyciskiem myszy trzymając
     książkę, aby ją przetłumaczyć!
   wwcListenersInitialized: Zainicjowane słuchacze.
@@ -107,8 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: Wybierz język docelowy
   wwcConfigConnectionSuccess: Pomyślnie nawiązano połączenie z {0}!
   wwcConfigGUIGoogleTranslateButton: Tłumacz Google
-  wwcConfigConversationPrefixInput: Bieżący przedrostek to {0}. Wpisz nowy lub wpisz
-    0, aby wrócić.
   wwcConfigGUIPreviousPageButton: Poprzednia strona
   wwcConfigGUITranslatorCacheButton: Zmień limit pamięci podręcznej tłumaczeń
   wwcConfigConversationbStatsSuccess: Pomyślnie przełączono bStats.
@@ -132,7 +127,7 @@ Messages:
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Zestaw kluczy API Google Translate
     pomyślnie.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Zmień klucz tajny Amazon
-  wwcVersion: WorldWidechat, wersja
+  wwcVersion: WorldwideChat, wersja
   wwcsAttemptedTranslations: 'Próba tłumaczenia: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon tajny zestaw kluczy
     pomyślnie.
@@ -158,7 +153,6 @@ Messages:
   wwctrlPlayerNotFound: Gracz {0} nie został znaleziony lub nie jest aktywnym tłumaczeniem.
   wwctrlRateLimitSetSender: Ustaw limit szybkości na {0} sekund.
   wwctrlRateLimitOffTarget: Wyłączono limit szybkości z {0}.
-  wwctrlRateLimitSetTarget: Ustaw limit szybkości na {0} do {1} sekund.
   wwctrlNotATranslator: Nie jesteś aktywnym tłumaczem! Upewnij się, że ustawiłeś to
     za pomocą /wwct.
   wwctrlRateLimitAlreadyOffSender: Twój limit stawki jest już wyłączony.
@@ -274,14 +268,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Czat globalny jest tłumaczony,
     ale masz aktywną sesję tłumaczeniową od {0} do {1}.
   wwctCannotTranslateConsole: Nie można rozpocząć sesji tłumaczenia dla konsoli!
-  wwctLangToLangStart: Rozpoczynanie nowej sesji tłumaczenia od {0} do {1}.
   wwcOnJoinTranslationNotificationSourceLang: Masz aktywną sesję tłumaczenia od {0}
     do {0}.
-  wwctAutoTranslateStartOtherPlayer: Rozpoczynanie nowej sesji tłumaczenia dla {0}
-    do {0}.
   wwctTranslationStopped: Twoja sesja tłumaczeń została zatrzymana.
-  wwctLangToLangStartOtherPlayer: Rozpoczynanie nowej sesji tłumaczenia {0} z {1}
-    do {0}.
   wwctAutoTranslateStart: Rozpoczynanie nowej sesji tłumaczenia {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Masz aktywną sesję tłumaczenia {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globalny czat jest tłumaczony,
@@ -495,9 +484,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Przetłumacz
   wwcrTransFail: Ponownie załadowano WorldwideChat, ale nie udało się włączyć tłumacza.
   wwcdCacheCleared: Pamięć podręczna tłumaczeń została wyczyszczona.
-  wwcdCacheSize: Rozmiar pamięci podręcznej wynosi obecnie {0}, z limitem {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Nieprawidłowe argumenty!
   systranHttpUnknown: 'Nieznany błąd http: {0}'
   systranHttp400: Złe parametry wysłane do Systran. Może to być zła para językowa?
@@ -565,4 +551,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Pomyślnie zmieniono nazwę użytkownika
     PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Konfiguracja'
+  wwcConfigConversationPrefixInput: Obecny prefiks to {0}. Wpisz nowy lub wpisz 0,
+    aby wrócić.
+  wwcConfigConversationLangInput: 'Obecny język wtyczki to {0}. Wprowadź prawidłowy
+    kod języka lub wpisz 0, aby anulować. Prawidłowe kody językowe: {1}'
+  wwcdCacheSize: Rozmiar pamięci podręcznej wynosi obecnie {0}, z limitem {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Rozpoczęcie nowej sesji tłumaczeń od {0} do {1}.
+  wwctAutoTranslateStartOtherPlayer: Rozpoczęcie nowej sesji tłumaczeń dla {0} do
+    {1}.
+  wwctLangToLangStartOtherPlayer: Rozpoczęcie nowej sesji tłumaczeń dla {0} od {1}
+    do {2}.
+  wwcgLangToLangStart: Teraz tłumaczymy globalny czat z {0} na {1}.
+  wwctrlRateLimitSetTarget: Ustaw limit szybkości {0} na {1} sekund.
 

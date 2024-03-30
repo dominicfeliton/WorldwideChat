@@ -50,12 +50,9 @@ Messages:
   wwcConfigGUIQuitButton: පිටවීමේ සහ සුරකින්න වෙනස්කම්
   wwctPlayerNotFound: ක්රීඩකයා සොයාගත්තේ නැත.
   wwcConfigGUIAmazonTranslateRegionButton: ඇමසන් කලාපය වෙනස් කරන්න
-  wwcConfigConversationLangInput: 'වත්මන් ප්ලගින භාෂාව {0} වේ. කරුණාකර වලංගු භාෂා
-    කේතයක් ඇතුලත් කරන්න, නැතහොත් අවලංගු කිරීමට 0 ටයිප් කරන්න. වලංගු භාෂා කේත: {0}'
   wwcConfigConversationLangInvalid: වලංගු නොවන භාෂා කේතය!
   wwcConfigGUIWatsonAPIKeyButton: වොට්සන් API කී වෙනස්
   wwcEnabled: සක්‍රීය වර්ල්වයිඩ්හාට් අනුවාදය {0}.
-  wwcgLangToLangStart: දැන් ගෝලීය කතාබස් {0} සිට {1} වෙත පරිවර්තනය කිරීම.
   wwctbOnSender: පොත් පරිවර්තනය සක්රීය කර ඇත. එය පරිවර්තනය කිරීම සඳහා පොතක් තබා ගන්නා
     අතරතුර දකුණු-ක්ලික් කරන්න!
   wwcListenersInitialized: ආරම්භකල සවන්දෙන්නන්.
@@ -107,8 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: ඉලක්කගත භාෂාවක් තෝරන්න
   wwcConfigConnectionSuccess: '{0} වෙත සාර්ථකව සම්බන්ධ විය!'
   wwcConfigGUIGoogleTranslateButton: ගූගල් පරිවර්තනය
-  wwcConfigConversationPrefixInput: වත්මන් උපසර්ගය {0} වේ. කරුණාකර අලුත් එකක් ටයිප්
-    කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
   wwcConfigGUIPreviousPageButton: පෙර පිටුව
   wwcConfigGUITranslatorCacheButton: පරිවර්තනය හැඹිලි සීමාව වෙනස් කරන්න
   wwcConfigConversationbStatsSuccess: bStats සාර්ථකව ටොගල් කළා.
@@ -159,7 +154,6 @@ Messages:
     නොවේ.'
   wwctrlRateLimitSetSender: ඔබගේ අනුපාත සීමාව තත්පරයට සකසන්න.
   wwctrlRateLimitOffTarget: '{0} අනුපාත සීමාව අක්රිය කළා.'
-  wwctrlRateLimitSetTarget: '{0} සිට තත්පරය {1} දක්වා අනුපාත සීමාව සකසන්න.'
   wwctrlNotATranslator: ඔබ ක්රියාකාරී පරිවර්තකයෙකු නොවේ! ඔබ/wwct සමඟ මෙය සකසා ඇති
     බවට වග බලා ගන්න.
   wwctrlRateLimitAlreadyOffSender: ඔබගේ අනුපාත සීමාව දැනටමත් අක්රීය කර ඇත.
@@ -272,13 +266,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ගෝලීය කතාබස් පරිවර්තනය
     වෙමින් පවතී, නමුත් ඔබට {0} සිට {1} සිට ක්රියාකාරී පරිවර්තන සැසියක් ඇත.
   wwctCannotTranslateConsole: ඔබට කොන්සෝලය සඳහා පරිවර්තන සැසියක් ආරම්භ කළ නොහැක!
-  wwctLangToLangStart: '{0} සිට {1} දක්වා නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
   wwcOnJoinTranslationNotificationSourceLang: ඔබට {0} සිට සක්‍රීය පරිවර්තන සැසියක්
     ඇත.
-  wwctAutoTranslateStartOtherPlayer: '{0} to {1} සඳහා නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
   wwctTranslationStopped: ඔබගේ පරිවර්තන සැසිය නතර කර ඇත.
-  wwctLangToLangStartOtherPlayer: '{0} සඳහා නව පරිවර්තන සැසියක් ආරම්භ කිරීම {1} සිට
-    {0}.'
   wwctAutoTranslateStart: '{0} වෙත නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
   wwcOnJoinTranslationNotificationNoSourceLang: ඔබට {0} වෙත ක්රියාකාරී පරිවර්තන සැසියක්
     ඇත.
@@ -487,9 +477,6 @@ Messages:
   wwcrTransFail: WorldwideChat නැවත ලෝඩ් කරන ලද නමුත් පරිවර්තකයෙකු සක්රීය කිරීමට අපොහොසත්
     විය.
   wwcdCacheCleared: පරිවර්තන හැඹිලි ඉවත් කරන ලදී.
-  wwcdCacheSize: හැඹිලි ප්රමාණය දැනට {0} වන අතර එය {1} සීමාවක් සහිතව ඇත.
-  wwcdCacheTerm: '{0}. cachedTranslation:inputLang= {1}, OutputLang= {2}, ඉන්පුට්ෆ්රේස්
-    = {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: අවලංගු තර්ක!
   systranHttpUnknown: 'නොදන්නා http දෝෂය: {0}'
   systranHttp400: නරක පරාමිතීන් සිස්ට්රාන් වෙත යවා ඇත. නරක භාෂා යුගලයක් විය හැකිද?
@@ -558,4 +545,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL පරිශීලක නාමය සාර්ථකව වෙනස්
     කරන ලදි.
   wwcConfigGUIStorageTypeSettings: '{0} වින්යාසය'
+  wwcConfigConversationPrefixInput: වර්තමාන උපසර්ගය {0} වේ. කරුණාකර අලුත් එකක් ටයිප්
+    කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
+  wwcConfigConversationLangInput: 'වර්තමාන ප්ලගින භාෂාව {0} වේ. කරුණාකර වලංගු භාෂා
+    කේතයක් ඇතුළත් කරන්න, නැතහොත් අවලංගු කිරීමට 0 ටයිප් කරන්න. වලංගු භාෂා කේත: {1}'
+  wwcdCacheSize: හැඹිලි ප්රමාණය දැනට {0} වන අතර එය {1} සීමාවක් සහිතව ඇත.
+  wwcdCacheTerm: '{0}. CachedTranslation:ඉන්පුට්ලෑන්ග්= {1}, OutputLang= {2}, inputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: '{0} සිට {1} දක්වා නව පරිවර්තන සැසියක් ආරම්භ කිරීම.'
+  wwctAutoTranslateStartOtherPlayer: '{0} සිට {1} දක්වා නව පරිවර්තන සැසියක් ආරම්භ
+    කිරීම.'
+  wwctLangToLangStartOtherPlayer: '{1} සිට {2} දක්වා {0} සඳහා නව පරිවර්තන සැසියක්
+    ආරම්භ කිරීම.'
+  wwcgLangToLangStart: දැන් ගෝලීය චැට් {0} සිට {1} දක්වා පරිවර්තනය කරයි.
+  wwctrlRateLimitSetTarget: '{0} හි අනුපාත සීමාව තත්පර {1} දක්වා සකසන්න.'
 

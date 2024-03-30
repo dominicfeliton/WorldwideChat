@@ -2,9 +2,9 @@ Messages:
   wwcgAutoTranslateStart: Енді жаһандық чатты аудару {0}.
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: Ғаламдық чат аударылады {0}.
   wwcConfigGUIAmazonTranslateAccessKeyButton: Amazon кіру кілтін өзгерту
-  wwcrFail: WorldWidechat қайта жүктеу сәтсіз аяқталды.
+  wwcrFail: WorldwideChat қайта жүктеу сәтсіз аяқталды.
   wwcConfigGUIUpdateCheckerButton: Жаңартулардың кешігуін тексеріңіз
-  wwcUpdaterFailedGeneric: WorldWidechat жаңартуларын тексеру мүмкін емес.
+  wwcUpdaterFailedGeneric: WorldwideChat жаңартуларын тексеру мүмкін емес.
   wwcConfigConversationUpdateCheckerInput: Жаңартуды тексергіштегі ағымдағы кідіріс
     {0} секунд болып табылады. Жаңа мәнді орнату үшін 10-нан асатын нәрсені немесе
     оралу үшін 10-нан аз нәрсені теріңіз.
@@ -41,19 +41,16 @@ Messages:
   wwcConfigRateLimitEnabled: Жаһандық мөлшерлеме лимиті қосылып, {0} секундқа орнатылды.
   wwcConfigGUILangButton: Плагин тілін өзгерту
   wwctGUISignButton: Toggle белгісі аударма
-  wwcUpdaterOutOfDate: WorldWidechat күннен тыс. Соңғы нұсқаға жаңартыңыз, {0}.
+  wwcUpdaterOutOfDate: WorldwideChat күннен тыс. Соңғы нұсқаға жаңартыңыз, {0}.
   wwcConfigGUINextPageButton: Келесі бет
   wwcConfigInvalidTranslatorSettings: Жарамсыз аудармашы параметрлері! Сіздің config.yml
     ішіндегі бір ғана аудармашыны қосыңыз.
   wwcConfigGUIQuitButton: Шығу & Өзгерістерді сақтау
   wwctPlayerNotFound: Ойыншы {0} табылған жоқ.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon аймағын өзгерту
-  wwcConfigConversationLangInput: 'Ағымдағы плагин тілі {0} болып табылады, жарамды
-    тіл кодын енгізіңіз немесе бас тарту үшін 0 теріңіз. Жарамды тіл кодтары: {0}'
   wwcConfigConversationLangInvalid: Жарамсыз тіл коды!
   wwcConfigGUIWatsonAPIKeyButton: Watson API кілтін өзгерту
-  wwcEnabled: '{0} WorldWidechat нұсқасы қосылған.'
-  wwcgLangToLangStart: Енді жаһандық чатты {0} -тан {1} дейін аудару.
+  wwcEnabled: '{0} WorldwideChat нұсқасы қосылған.'
   wwctbOnSender: Кітап аудармасы қосылған. Оны аудару үшін кітапты ұстап тұрғанда
     тінтуірдің оң жақ түймешігімен нұқыңыз!
   wwcListenersInitialized: Инициализацияланған тыңдаушылар.
@@ -68,7 +65,7 @@ Messages:
     үшін API кілтін енгізіңіз немесе кері оралу үшін 0 теріңіз.
   wwctGUIStopButton: Аударманы тоқтату
   wwcgTranslationStopped: Ғаламдық чат аудармасы тоқтатылды.
-  wwcUpdaterFutureDate: WorldWidechat бұл данасы соңғы көпшілікке қарағанда үлкен
+  wwcUpdaterFutureDate: WorldwideChat бұл данасы соңғы көпшілікке қарағанда үлкен
     нұсқаға ие.
   wwcConfigConversationPrefixSuccess: Префикс сәтті өзгерді.
   wwcConfigGUIGoogleTranslateAPIKeyButton: Google өзгерту API кілтін аудару
@@ -84,14 +81,14 @@ Messages:
   watsonColorCodeWarning: Түс кодтарын пайдалану сізге күтпеген нәтижелер беруі мүмкін.
   wwctGUITranslationButton: Аударманы бастаңыз
   wwctGUIAutoDetectButton: Көздің тілін автоматты түрде анықтау
-  wwcUpdaterUpToDate: WorldWidechat бүгінгі күнге дейін!
+  wwcUpdaterUpToDate: WorldwideChat бүгінгі күнге дейін!
   wwcConfigConversationAmazonTranslateRegionInput: Ағымдағы аймақ {0} болып табылады,
     Amazon үшін аймақты енгізіңіз немесе кері оралу үшін 0 теріңіз.
   wwcNoConsole: Бұл пәрменді тек ойыншы ғана іске қосуға болады.
-  wwcInitializationFail: WorldWidechat баптандыру сәтсіз аяқталды.
-  wwcrSuccess: Табысты WorldWidechat қайта жүктелді.
+  wwcInitializationFail: WorldwideChat баптандыру сәтсіз аяқталды.
+  wwcrSuccess: Табысты WorldwideChat қайта жүктелді.
   wwcPlayerNotFound: Ойыншы {0} табылған жоқ.
-  wwcUpdaterOutOfDateChat: WorldWidechat күннен тыс. Соңғы нұсқаға жаңартыңыз.
+  wwcUpdaterOutOfDateChat: WorldwideChat күннен тыс. Соңғы нұсқаға жаңартыңыз.
   wwcConfigConversationRateLimitSuccess: Rate лимиті сәтті орнатыңыз.
   wwcConfigConversationWatsonURLSuccess: Watson URL сәтті орнатыңыз.
   wwctbPlayerNotFound: Ойнатушы табылмады немесе белсенді аудармашы емес.
@@ -102,8 +99,6 @@ Messages:
   wwctGUINewTranslationTarget: Мақсатты тілді таңдаңыз
   wwcConfigConnectionSuccess: '{0} сәтті қосылған!'
   wwcConfigGUIGoogleTranslateButton: Google Аудару
-  wwcConfigConversationPrefixInput: Ағымдағы префикс {0} болып табылады, қайту үшін
-    жаңасын теріңіз немесе 0 теріңіз.
   wwcConfigGUIPreviousPageButton: алдыңғы бет
   wwcConfigGUITranslatorCacheButton: Аударма кэш шегі өзгерту
   wwcConfigConversationbStatsSuccess: Табысты bStats toggled.
@@ -126,7 +121,7 @@ Messages:
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google сәтті API кілті жиынтығы
     аудару.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon құпия кілтін өзгерту
-  wwcVersion: WorldWidechat, нұсқасы
+  wwcVersion: WorldwideChat, нұсқасы
   wwcsAttemptedTranslations: 'Әрекет еткен аудармалар: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon құпия негізгі сәтті
     жиынтығы.
@@ -150,7 +145,6 @@ Messages:
   wwctrlPlayerNotFound: Ойнатушы табылмады немесе белсенді аудармашы емес.
   wwctrlRateLimitSetSender: Сіздің мөлшерлеме лимитіңізді {0} секундқа орнатыңыз.
   wwctrlRateLimitOffTarget: '{0} мөлшерлеме лимитін өшірді.'
-  wwctrlRateLimitSetTarget: '{0} мөлшерлеме шегін {1} секундына орнатыңыз.'
   wwctrlNotATranslator: Сіз белсенді аудармашы емессіз! Мұны /wwct арқылы орнатқаныңызға
     көз жеткізіңіз.
   wwctrlRateLimitAlreadyOffSender: Сіздің мөлшерлеме шегі қазірдің өзінде өшірілген.
@@ -265,12 +259,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Ғаламдық чат аударылып
     жатыр, бірақ сіз {0} - {1} дейін белсенді аударма сеансы бар.
   wwctCannotTranslateConsole: Сіз консоль үшін аударма сеансын бастау мүмкін емес!
-  wwctLangToLangStart: '{0} -тен {1} дейін жаңа аударма сеансын бастау.'
   wwcOnJoinTranslationNotificationSourceLang: Сізде белсенді аударма сеансы бар {0}
     үшін {0}.
-  wwctAutoTranslateStartOtherPlayer: '{0} үшін {1} жаңа аударма сеансын бастау.'
   wwctTranslationStopped: Сіздің аударма сеансыңыз тоқтатылды.
-  wwctLangToLangStartOtherPlayer: '{0} үшін {1} үшін {2} жаңа аударма сеансын бастау.'
   wwctAutoTranslateStart: '{0} жаңа аударма сеансын бастау'
   wwcOnJoinTranslationNotificationNoSourceLang: Сізде белсенді аударма сеансы бар
     {0}.
@@ -479,9 +470,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Систран Аудармасы
   wwcrTransFail: WorldwideChat-ті қайта жүктеді, бірақ аудармашы қосылмады.
   wwcdCacheCleared: Аударма кэші тазартылды.
-  wwcdCacheSize: Қазіргі уақытта кэш өлшемі {0}, {1} шегі бар.
-  wwcdCacheTerm: '{0}. КэшедТрансляция:InputLang= {1}, OutputLang= {2}, кірістіФразе=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Жарамсыз дәлелдер!
   systranHttpUnknown: 'Белгісіз http қатесі: {0}'
   systranHttp400: Systran-ге жіберілген нашар параметрлер. Жаман тіл жұбы болуы мүмкін
@@ -552,4 +540,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL пайдаланушы атын сәтті
     өзгертті.
   wwcConfigGUIStorageTypeSettings: '{0} Конфигурация'
+  wwcConfigConversationPrefixInput: Ағымдағы префикс - {0}. Жаңасын теріңіз немесе
+    кері оралу үшін 0 деп теріңіз.
+  wwcConfigConversationLangInput: 'Ағымдағы плагин тілі - {0}. Жарамды тіл кодын енгізіңіз
+    немесе бас тарту үшін 0 деп теріңіз. Жарамды тілдік кодтар: {1}'
+  wwcdCacheSize: Қазіргі уақытта кэш өлшемі {0} болып табылады, шектеуі {1}.
+  wwcdCacheTerm: '{0}. КэшедТрансляция:inputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: '{0} -тен {1} -ге дейінгі жаңа аударма сессиясын бастау.'
+  wwctAutoTranslateStartOtherPlayer: '{0} -тен {1} -ге арналған жаңа аударма сессиясын
+    бастау.'
+  wwctLangToLangStartOtherPlayer: '{1} -ден {2} -ге дейін {0} үшін жаңа аударма сессиясын
+    бастау.'
+  wwcgLangToLangStart: Енді жаһандық чатты {0} -тен {1} -ге аудару.
+  wwctrlRateLimitSetTarget: '{0} жылдамдық шегін {1} секундқа орнатыңыз.'
 

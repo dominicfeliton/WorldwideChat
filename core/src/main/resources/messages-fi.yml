@@ -50,13 +50,9 @@ Messages:
   wwcConfigGUIQuitButton: Poistu ja tallenna muutokset
   wwctPlayerNotFound: Pelaaja {0} löytänyt.
   wwcConfigGUIAmazonTranslateRegionButton: Vaihda Amazonin alue
-  wwcConfigConversationLangInput: 'Nykyinen liitännäisen kieli on {0}. Kirjoita kelvollinen
-    kielikoodi tai kirjoita 0 peruuttaaksesi sen. Kelvolliset kielikoodit: %'
   wwcConfigConversationLangInvalid: Virheellinen kielikoodi!
   wwcConfigGUIWatsonAPIKeyButton: Watsonin API-avaimen muuttaminen
   wwcEnabled: Käytössä WorldwideChat-versio {0}.
-  wwcgLangToLangStart: 'Nyt käännetään maailmanlaajuinen keskustelu osoitteesta {0}:
-    s {0}.'
   wwctbOnSender: Kirjan käännös käytössä. Napsauta hiiren kakkospainikkeella, kun
     pidät kirjaa painettuna kääntääksesi sen!
   wwcListenersInitialized: Alustivat kuulijat.
@@ -106,8 +102,6 @@ Messages:
   wwctGUINewTranslationTarget: Valitse kohdekieli
   wwcConfigConnectionSuccess: Yhteys onnistui kohteeseen {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Nykyinen etuliite on {0}. Kirjoita uusi tai kirjoita
-    0 palataksesi takaisin.
   wwcConfigGUIPreviousPageButton: Edellinen sivu
   wwcConfigGUITranslatorCacheButton: Vaihda käännösvälimuistin raja
   wwcConfigConversationbStatsSuccess: Onnistuneesti vaihdettu bStats.
@@ -154,7 +148,6 @@ Messages:
   wwctrlPlayerNotFound: Pelaaja {0} ei joko löydy tai se ei ole aktiivinen kääntäjä.
   wwctrlRateLimitSetSender: Aseta nopeusrajasi arvoon {0} sekuntia.
   wwctrlRateLimitOffTarget: 'Kytkettiin {0}: n nopeusraja pois päältä.'
-  wwctrlRateLimitSetTarget: Aseta nopeusraja {0} arvoon {1} sekuntia.
   wwctrlNotATranslator: Et ole aktiivinen kääntäjä! Varmista, että olet asettanut
     tämän käyttämällä /wwct.
   wwctrlRateLimitAlreadyOffSender: Sinun hintaraja on jo poistettu käytöstä.
@@ -268,13 +261,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Yleistä keskustelua käännetään,
     mutta sinulla on aktiivinen käännösistunto osoitteesta {0} - {1}.
   wwctCannotTranslateConsole: Konsolin käännösistuntoa ei voi aloittaa!
-  wwctLangToLangStart: Aloitetaan uusi käännösistunto kohteesta {0}.
   wwcOnJoinTranslationNotificationSourceLang: Sinulla on aktiivinen käännösistunto
     osoitteesta {0} - {1}.
-  wwctAutoTranslateStartOtherPlayer: Aloitetaan uusi käännösistunto kohteella {0}.
   wwctTranslationStopped: Käännösistuntosi on keskeytetty.
-  wwctLangToLangStartOtherPlayer: Aloitetaan uusi käännösistunto kohteella {0} kohteella
-    {0}.
   wwctAutoTranslateStart: Aloitetaan uusi käännösistunto kohteeseen {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Sinulla on aktiivinen käännösistunto
     kohteeseen {0}.
@@ -484,9 +473,6 @@ Messages:
   wwcrTransFail: Ladattu WorldwideChat uudelleen, mutta kääntäjän ottaminen käyttöön
     epäonnistui.
   wwcdCacheCleared: Käännösvälimuisti tyhjennettiin.
-  wwcdCacheSize: Välimuistin koko on tällä hetkellä {0}, rajoituksena {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, outputLang= {2}, inputPhrase=
-    {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Virheelliset argumentit!
   systranHttpUnknown: 'Tuntematon http-virhe: {0}'
   systranHttp400: Systranille lähetetyt huonot parametrit. Voi olla huono kielipari?
@@ -555,4 +541,17 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL-käyttäjänimi on muutettu
     onnistuneesti.
   wwcConfigGUIStorageTypeSettings: '{0} Kokoonpano'
+  wwcConfigConversationPrefixInput: Nykyinen etuliite on {0}. Kirjoita uusi tai kirjoita
+    0 palataksesi takaisin.
+  wwcConfigConversationLangInput: 'Nykyinen laajennuskieli on {0}. Anna kelvollinen
+    kielikoodi, tai kirjoita 0 peruuttaaksesi. Voimassa olevat kielikoodit: {1}'
+  wwcdCacheSize: Välimuistin koko on tällä hetkellä {0}, rajoituksena {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Uuden käännösistunnon aloittaminen {0} - {1}.
+  wwctAutoTranslateStartOtherPlayer: Aloittaa uuden käännösistunnon {0} - {1}.
+  wwctLangToLangStartOtherPlayer: 'Uuden käännösistunnon aloittaminen {0}: lle {1}
+    - {2}.'
+  wwcgLangToLangStart: 'Nyt käännetään globaali keskustelu {0}: sta {1}: iin.'
+  wwctrlRateLimitSetTarget: Aseta nopeusrajoitukseksi {0} {1} sekuntia.
 

@@ -52,13 +52,9 @@ Messages:
   wwcConfigGUIQuitButton: மாற்றங்களை வெளியேறவும் சேமிக்கவும்
   wwctPlayerNotFound: வீரர் % நான் காணப்படவில்லை.
   wwcConfigGUIAmazonTranslateRegionButton: அமேசான் பிராந்தியம் மாற்ற
-  wwcConfigConversationLangInput: 'தற்போதைய சொருகி மொழியு {0} ஆகும். தயவுசெய்து செல்லுபடியாகும்
-    மொழிக் குறியீட்டை உள்ளிடவும், அல்லது ரத்து செய்ய 0 செல்லுபடியாகும் மொழி குறியீடுகள்:
-    {0}'
   wwcConfigConversationLangInvalid: செல்லுபடியாகாத மொழி குறியீடு!
   wwcConfigGUIWatsonAPIKeyButton: மாற்றம் வாட்சன் ஏபிஐ சாவி
   wwcEnabled: செயல்படுத்தப்பட்டது WorldWideSat பதிப்பு {0}.
-  wwcgLangToLangStart: இப்போது {0} இலிருந்து {1} க்கு உலகளாவிய அரட்டை மொழிபெயர்க்கிறது.
   wwctbOnSender: புத்தக மொழிபெயர்ப்பு இயக்கப்பட்டது. அதை மொழிபெயர்க்க ஒரு புத்தகம்
     வைத்திருக்கும் போது வலது கிளிக்!
   wwcListenersInitialized: கேட்போர் துவக்கினார்.
@@ -110,8 +106,6 @@ Messages:
   wwctGUINewTranslationTarget: இலக்கு மொழியைத் தேர்வுசெய்க
   wwcConfigConnectionSuccess: வெற்றிகரமாக இணைக்கப்பட்டது {0}!
   wwcConfigGUIGoogleTranslateButton: கூகிள் மொழிபெயர்ப்பு
-  wwcConfigConversationPrefixInput: தற்போதைய முன்னொட்டு {0} ஆகும். தயவுசெய்து புதிய
-    ஒன்றை தட்டச்சு செய்யவும் அல்லது திரும்பி செல்ல 0 ஐ தட்டச்சு செய்யவும்.
   wwcConfigGUIPreviousPageButton: முந்தைய பக்கம்
   wwcConfigGUITranslatorCacheButton: மொழிபெயர்ப்பு கேச் வரம்பை மாற்றவும்
   wwcConfigConversationbStatsSuccess: வெற்றிகரமாக BStATக்களை மாற்றியது.
@@ -166,7 +160,6 @@ Messages:
     அல்ல.
   wwctrlRateLimitSetSender: உங்கள் வீத வரம்பை {0} வினாடிகளில் அமைக்கவும்.
   wwctrlRateLimitOffTarget: '{0} வீத வரம்பை முடக்கியது.'
-  wwctrlRateLimitSetTarget: '{0} இன் வீத வரம்பை உள்ளது {1} வினாடிகள் வரை அமைக்கவும்.'
   wwctrlNotATranslator: நீங்கள் ஒரு செயலில் மொழிபெயர்ப்பாளர் இல்லை! உறுதி/wwct/உடன்
     இந்த அமைக்க வேண்டும்.
   wwctrlRateLimitAlreadyOffSender: உங்கள் விகிதம் வரம்பு ஏற்கனவே முடக்கப்பட்டுள்ளது.
@@ -285,13 +278,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: உலகளாவிய அரட்டை மொழிபெயர்க்கப்பட்டுள்ளது,
     ஆனால் உங்களுக்கு {0} இலிருந்து {1} க்கு செயலில் மொழிபெயர்ப்பு அமர்வு உள்ளது.
   wwctCannotTranslateConsole: நீங்கள் கன்சோல் ஒரு மொழிபெயர்ப்பு அமர்வு தொடங்க முடியாது!
-  wwctLangToLangStart: '{0} இலிருந்து ஒரு புதிய மொழிபெயர்ப்பு அமர்வைத் தொடங்குதல்.'
   wwcOnJoinTranslationNotificationSourceLang: உங்களுக்கு {0} இலிருந்து {1} இலிருந்தே
     செயலில் மொழிபெயர்ப்பு அமர்வு உள்ளது.
-  wwctAutoTranslateStartOtherPlayer: '{0} க்கு ஒரு புதிய மொழிபெயர்ப்பு அமர்வைத் தொடங்குதல்.'
   wwctTranslationStopped: உங்கள் மொழிபெயர்ப்பு அமர்வு நிறுத்தப்பட்டுள்ளது.
-  wwctLangToLangStartOtherPlayer: '{0} இலிருந்து {1} க்கு புதிய மொழிபெயர்ப்பு அமர்வைத்
-    தொடங்குதல்.'
   wwctAutoTranslateStart: '{0} க்கு ஒரு புதிய மொழிபெயர்ப்பு அமர்வைத் தொடங்குதல்.'
   wwcOnJoinTranslationNotificationNoSourceLang: உங்களுக்கு {0} க்கு செயலில் மொழிபெயர்ப்பு
     அமர்வு உள்ளது.
@@ -512,9 +501,6 @@ Messages:
   wwcrTransFail: WorldwideChat ஐ மீண்டும் ஏற்றப்பட்டது, ஆனால் ஒரு மொழிபெயர்ப்பாளரை
     இயக்கத் தவறிவிட்டது
   wwcdCacheCleared: மொழிபெயர்ப்பு கேச் அழிக்கப்பட்டது.
-  wwcdCacheSize: கேச் அளவு தற்போது {0} ஆகும், இது {1} என்ற வரம்பைக் கொண்டுள்ளது.
-  wwcdCacheTerm: '{0}. கேச் செய்யப்பட்ட மொழிபெயர்ப்பு: உள்ளீடு லாங் = {1}, அவுட்புட்லாங்
-    = {2}, உள்ளீட்டு சொற்றொடர் = {3} | வெளியீட்டு சொற்றொடர் = {4}'
   wwcdInvalidCmd: தவறான வாதங்கள்!
   systranHttpUnknown: 'அறியப்படாத http பிழை: {0}'
   systranHttp400: மோசமான அளவுருக்கள் சிஸ்ட்ரானுக்கு அனுப்ப மோசமான மொழி ஜோடியாக இருக்கலாம்?
@@ -589,4 +575,19 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL பயனர்பெயரை வெற்றிகரமாக
     மாற்றியது.
   wwcConfigGUIStorageTypeSettings: '{0} உள்ளமைவு'
+  wwcConfigConversationPrefixInput: தற்போதைய முன்னொட்டு {0} ஆகும். தயவுசெய்து புதியதை
+    தட்டச்சு செய்க அல்லது திரும்பிச் செல்ல 0 ஐ தட்டச்சு செய்க.
+  wwcConfigConversationLangInput: தற்போதைய சொருகி மொழி {0} ஆகும். தயவுசெய்து செல்லுபடியாகும்
+    மொழி குறியீட்டை உள்ளிடவும் அல்லது ரத்து செய்ய 0 ஐ தட்டச்சு செல்லுபடியாகும் மொழி
+    குறியீடுகள் {1}
+  wwcdCacheSize: கேச் அளவு தற்போது {0} ஆகும், இது {1} என்ற வரம்புடன்.
+  wwcdCacheTerm: '{0}. கேசிட்டிரான்ஸ்லேஷன்:இன்புட்லாங் = {1}, அவுட்புட்லாங்க்= {2},
+    உள்ளீடுவார்த்தை= {3} | வெளியீட்டு சொற்றொடர்= {4}'
+  wwctLangToLangStart: '{0} முதல் {1} வரை புதிய மொழிபெயர்ப்பு அமர்வைத் தொடங்குகிறது.'
+  wwctAutoTranslateStartOtherPlayer: '{0} முதல் {1} க்கு புதிய மொழிபெயர்ப்பு அமர்வைத்
+    தொடங்குகிறது.'
+  wwctLangToLangStartOtherPlayer: '{1} முதல் {2} வரை {0} க்கான புதிய மொழிபெயர்ப்பு
+    அமர்வைத் தொடங்குகிறது.'
+  wwcgLangToLangStart: இப்போது உலகளாவிய அரட்டை {0} இலிருந்து {1} க்கு மொழிபெயர்க்க
+  wwctrlRateLimitSetTarget: '{0} என்ற விகித வரம்பை {1} விநாடிகளாக அமைக்கவும்.'
 

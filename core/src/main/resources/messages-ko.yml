@@ -43,12 +43,9 @@ Messages:
   wwcConfigGUIQuitButton: 종료 및 변경 사항 저장
   wwctPlayerNotFound: 플레이어 %을 (를) 찾을 수 없습니다.
   wwcConfigGUIAmazonTranslateRegionButton: 아마존 리전 변경
-  wwcConfigConversationLangInput: '현재 플러그인 언어는 {0}입니다. 유효한 언어 코드를 입력하거나 0을 입력하여 취소하십시오.유효한
-    언어 코드: {0}'
   wwcConfigConversationLangInvalid: 언어 코드가 잘못되었습니다.
   wwcConfigGUIWatsonAPIKeyButton: 왓슨 API 키 변경
   wwcEnabled: 월드와이드 채팅 버전 {0}을 (를) 활성화했습니다.
-  wwcgLangToLangStart: 이제 글로벌 채팅을 {0}에서 {1}로 번역합니다.
   wwctbOnSender: 도서 번역이 활성화되었습니다.책을 누른 상태에서 마우스 오른쪽 버튼을 클릭하여 번역하세요!
   wwcListenersInitialized: 초기화된 리스너입니다.
   wwcConfigGUIPluginUpdateChatButton: 플러그인 업데이트를 위한 채팅 알림 보내기
@@ -91,7 +88,6 @@ Messages:
   wwctGUINewTranslationTarget: 대상 언어 선택
   wwcConfigConnectionSuccess: '{0}에 성공적으로 연결되었습니다!'
   wwcConfigGUIGoogleTranslateButton: 구글 번역
-  wwcConfigConversationPrefixInput: 현재 접두어는 {0}입니다. 새 접두어를 입력하거나 0을 입력하여 돌아가십시오.
   wwcConfigGUIPreviousPageButton: 이전 페이지
   wwcConfigGUITranslatorCacheButton: 변환 캐시 제한 변경
   wwcConfigConversationbStatsSuccess: BSTAT를 성공적으로 토글했습니다.
@@ -130,7 +126,6 @@ Messages:
   wwctrlPlayerNotFound: '{0} 플레이어를 찾을 수 없거나 활성 번역자가 아닙니다.'
   wwctrlRateLimitSetSender: 속도 제한을 {0} 초로 설정합니다.
   wwctrlRateLimitOffTarget: 비율 제한 {0}을 (를) 해제했습니다.
-  wwctrlRateLimitSetTarget: 비율 제한 {0} (으) 로 {1} 초로 설정합니다.
   wwctrlNotATranslator: 당신은 능동적 인 번역가가 아닙니다!/wwct로 설정했는지 확인하십시오.
   wwctrlRateLimitAlreadyOffSender: 속도 제한은 이미 비활성화되어 있습니다.
   wwctGUIRateButton: 속도 제한 설정
@@ -222,11 +217,8 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 글로벌 채팅이 번역 중이지만 {0}에서
     {1} (으) 로 번역 세션이 활성화되어 있습니다.
   wwctCannotTranslateConsole: 콘솔에 대한 번역 세션을 시작할 수 없습니다!
-  wwctLangToLangStart: '{0}에서 {1} (으) 로 새 번역 세션을 시작합니다.'
   wwcOnJoinTranslationNotificationSourceLang: '{0}에서 {1} (으) 로 활성 번역 세션이 있습니다.'
-  wwctAutoTranslateStartOtherPlayer: '{0}에서 {1}에 대한 새 번역 세션을 시작합니다.'
   wwctTranslationStopped: 번역 세션이 중지되었습니다.
-  wwctLangToLangStartOtherPlayer: '{0}에 대한 새 번역 세션을 {1}에서 {2} (으) 로 시작합니다.'
   wwctAutoTranslateStart: '{0}에 대한 새 번역 세션을 시작합니다.'
   wwcOnJoinTranslationNotificationNoSourceLang: '{0}에 대한 활성 번역 세션이 있습니다.'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 글로벌 채팅이 번역되고 있지만 {0}에
@@ -409,8 +401,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: 시스트란 번역
   wwcrTransFail: WorldwideChat을 다시 로드했지만 번역기를 활성화하지 못했습니다.
   wwcdCacheCleared: 번역 캐시가 지워졌습니다.
-  wwcdCacheSize: 현재 캐시 크기는 {0} 이며 제한은 {1} 입니다.
-  wwcdCacheTerm: '{0}.캐시된 번역: 입력 랑= {1}, 출력 랭= {2}, 입력프레이즈= {3} | 출력프레이즈= {4}'
   wwcdInvalidCmd: 잘못된 인수!
   systranHttpUnknown: '알 수 없는 http 오류: {0}'
   systranHttp400: 잘못된 파라미터가 Systran에 전송되었습니다.언어 쌍이 잘못되었을 수도 있나요?
@@ -462,4 +452,14 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL 데이터베이스 변경
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL 사용자 이름을 성공적으로 변경했습니다.
   wwcConfigGUIStorageTypeSettings: '{0} 구성'
+  wwcConfigConversationPrefixInput: 현재 접두사는 {0} 입니다.새 이름을 입력하거나 돌아가려면 0을 입력하십시오.
+  wwcConfigConversationLangInput: '현재 플러그인 언어는 {0} 입니다.유효한 언어 코드를 입력하거나 취소하려면 0을 입력하십시오.유효한
+    언어 코드: {1}'
+  wwcdCacheSize: 캐시의 크기는 현재 {0}, 제한은 {1} 입니다.
+  wwcdCacheTerm: '{0}.캐시된 번역: 입력 랭 = {1}, 출력 랭 = {2}, 입력 프레이즈 = {3} | 출력 프레이즈 = {4}'
+  wwctLangToLangStart: '{0} 부터 {1} 까지 새 번역 세션 시작.'
+  wwctAutoTranslateStartOtherPlayer: '{0} ~ {1} 에 대한 새 번역 세션 시작'
+  wwctLangToLangStartOtherPlayer: '{0} 관련 새 번역 세션을 {1} 에서 {2} 로 시작하는 중입니다.'
+  wwcgLangToLangStart: 이제 글로벌 채팅을 {0} 에서 {1} 으로 번역하고 있습니다.
+  wwctrlRateLimitSetTarget: 속도 제한을 {0} ~ {1} 초로 설정합니다.
 

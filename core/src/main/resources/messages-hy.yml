@@ -53,12 +53,9 @@ Messages:
   wwcConfigGUIQuitButton: Ելք եւ փրկել փոփոխությունները
   wwctPlayerNotFound: 'Խաղացող %Ես չեմ գտել:'
   wwcConfigGUIAmazonTranslateRegionButton: Փոխել Amazon Տարածաշրջան
-  wwcConfigConversationLangInput: 'Ընթացիկ plugin լեզուն է {0}: Խնդրում ենք մուտքագրել
-    վավեր լեզվի կոդը կամ մուտքագրեք 0 չեղյալ համարելու համար: Լեզվի վավեր կոդեր: {0}'
   wwcConfigConversationLangInvalid: Անվավեր լեզվի կոդը!
   wwcConfigGUIWatsonAPIKeyButton: Փոխել Watson API բանալին
   wwcEnabled: Միացված WorldwideChat տարբերակը {0}.
-  wwcgLangToLangStart: 'Այժմ թարգմանելով գլոբալ զրույցը {0} է {1}:'
   wwctbOnSender: Գիրք թարգմանությունը միացված. Աջ սեղմեք, իսկ անցկացման գիրք է թարգմանել
     այն!
   wwcListenersInitialized: Նախաձեռնված ունկնդիրները.
@@ -109,8 +106,6 @@ Messages:
   wwctGUINewTranslationTarget: Ընտրեք թիրախային լեզու
   wwcConfigConnectionSuccess: Հաջողությամբ կապված է {0}!
   wwcConfigGUIGoogleTranslateButton: Google Թարգմանել
-  wwcConfigConversationPrefixInput: 'Ընթացիկ նախածանցը է {0}: Խնդրում ենք մուտքագրել
-    նորը կամ մուտքագրեք 0 ետ վերադառնալու համար:'
   wwcConfigGUIPreviousPageButton: Նախորդ էջ
   wwcConfigGUITranslatorCacheButton: Փոխել թարգմանություն Cache Սահմանափակում
   wwcConfigConversationbStatsSuccess: Հաջողությամբ toggled bStats.
@@ -162,7 +157,6 @@ Messages:
   wwctrlPlayerNotFound: 'Նվագարկիչ {0} կամ չի հայտնաբերվել, կամ ակտիվ թարգմանիչ չէ:'
   wwctrlRateLimitSetSender: 'Սահմանեք ձեր դրույքաչափը {0} վայրկյան:'
   wwctrlRateLimitOffTarget: 'Անջատել է տոկոսադրույքը սահմանաչափը:'
-  wwctrlRateLimitSetTarget: Սահմանել տոկոսադրույքը սահմանաչափը {0} դեպքից {1} վայրկյան.
   wwctrlNotATranslator: 'Դուք ակտիվ թարգմանիչ չեք: Համոզվեք, որ դուք պետք է սահմանել
     այս /wwct.'
   wwctrlRateLimitAlreadyOffSender: Ձեր տոկոսադրույքը սահմանաչափը արդեն անջատված է.
@@ -280,13 +274,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 'Գլոբալ զրույցը թարգմանվում
     է, բայց դուք ունեք ակտիվ թարգմանության նիստ է {0} է {1}:'
   wwctCannotTranslateConsole: Դուք չեք կարող սկսել թարգմանության նիստ մխիթարել!
-  wwctLangToLangStart: 'Թարգմանության նոր նիստ սկսել {0} է {1}:'
   wwcOnJoinTranslationNotificationSourceLang: 'Դուք ունեք ակտիվ թարգմանության նիստ
     է {0} է {1}:'
-  wwctAutoTranslateStartOtherPlayer: Սկսել նոր թարգմանության նիստ համար {0} to {1}.
   wwctTranslationStopped: 'Ձեր թարգմանության նիստը դադարեցվել է:'
-  wwctLangToLangStartOtherPlayer: 'Սկսել նոր թարգմանության նիստ համար {0} համար {1}
-    {0}:'
   wwctAutoTranslateStart: Սկսել նոր թարգմանության նիստ է {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Դուք ունեք ակտիվ թարգմանության նիստ
     է {0}.
@@ -506,9 +496,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Սիստրան Թարգմանություն
   wwcrTransFail: 'Վերաբեռնվել է WorldwideChat-ը, բայց չի հաջողվել թարգմանիչ միացնել:'
   wwcdCacheCleared: 'Թարգմանության քեշը մաքրվեց:'
-  wwcdCacheSize: 'Քեշի չափը ներկայումս {0} է, {1} սահմանաչափով:'
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: 'Անվավեր փաստարկներ:'
   systranHttpUnknown: 'Անհայտ http սխալ: {0}'
   systranHttp400: 'Վատ պարամետրերը ուղարկվել են Systran- ին: Կարող է վատ լեզվական
@@ -583,4 +570,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: 'Հաջողությամբ փոխվեց PostgreSQL օգտագործողի
     անունը:'
   wwcConfigGUIStorageTypeSettings: '{0} Կազմաձեւում'
+  wwcConfigConversationPrefixInput: 'Ներկայիս նախածանցը {0} է: Խնդրում ենք մուտքագրել
+    նորը կամ մուտքագրել 0 հետ գնալու համար:'
+  wwcConfigConversationLangInput: 'Պլագինի ներկայիս լեզուն {0} է: Խնդրում ենք մուտքագրել
+    վավեր լեզվի կոդ կամ մուտքագրեք 0 չեղարկելու համար: Վավեր լեզվական կոդեր: {1}'
+  wwcdCacheSize: 'Քեշի չափը ներկայումս {0} է, {1} սահմանաչափով:'
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: 'Սկսելով նոր թարգմանչական նստաշրջան {0} -ից մինչև {1}:'
+  wwctAutoTranslateStartOtherPlayer: 'Մեկնարկում է նոր թարգմանչական նստաշրջան {0}
+    -ից {1} -ի համար:'
+  wwctLangToLangStartOtherPlayer: 'Սկսելով նոր թարգմանական սեանսը {0} -ի համար {1}
+    -ից մինչև {2}:'
+  wwcgLangToLangStart: 'Այժմ թարգմանելով գլոբալ զրույցը {0} -ից մինչև {1}:'
+  wwctrlRateLimitSetTarget: 'Սահմանեք {0} դրույքաչափի սահմանը մինչև {1} վայրկյան:'
 

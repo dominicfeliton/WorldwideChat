@@ -52,13 +52,9 @@ Messages:
   wwcConfigGUIQuitButton: నిష్క్రమించు & మార్పులు సేవ్
   wwctPlayerNotFound: ప్లేయర్ % నేను కనుగొనబడలేదు.
   wwcConfigGUIAmazonTranslateRegionButton: అమెజాన్ ప్రాంతం మార్చండి
-  wwcConfigConversationLangInput: 'ప్రస్తుత ప్లగిన్ భాష {0}. దయచేసి చెల్లుబాటు అయ్యే
-    భాషా కోడ్ను నమోదు చేయండి లేదా రద్దు చేయడానికి 0 అని టైప్ చేయండి. చెల్లుబాటు అయ్యే
-    భాషా సంకేతాలు: {0}'
   wwcConfigConversationLangInvalid: చెల్లని భాష కోడ్!
   wwcConfigGUIWatsonAPIKeyButton: వాట్సన్ API కీ మార్చండి
   wwcEnabled: ప్రారంభించబడింది ప్రపంచవ్యాప్తం చాట్ వెర్షన్ {0}.
-  wwcgLangToLangStart: ఇప్పుడు {0} నుండి {1} కు ప్రపంచ చాట్ను అనువదిస్తోంది.
   wwctbOnSender: పుస్తక అనువాదం ప్రారంభించబడింది. అనువదించడానికి ఒక పుస్తకాన్ని పట్టుకునేటప్పుడు
     కుడి-క్లిక్ చేయండి!
   wwcListenersInitialized: అక్షరాభ్యాసం శ్రోతలు.
@@ -107,8 +103,6 @@ Messages:
   wwctGUINewTranslationTarget: లక్ష్య భాషను ఎంచుకోండి
   wwcConfigConnectionSuccess: విజయవంతంగా కనెక్ట్ చేయబడి {0}!
   wwcConfigGUIGoogleTranslateButton: Google అనువదించు
-  wwcConfigConversationPrefixInput: ప్రస్తుత ఉపసర్గ {0}. దయచేసి క్రొత్తదాన్ని టైప్
-    చేయండి, లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
   wwcConfigGUIPreviousPageButton: మునుపటి పేజీ
   wwcConfigGUITranslatorCacheButton: అనువాద కాష్ పరిమితి మార్చండి
   wwcConfigConversationbStatsSuccess: విజయవంతంగా bStats toggled.
@@ -157,7 +151,6 @@ Messages:
   wwctrlPlayerNotFound: ప్లేయర్ % నేను కనుగొనబడలేదు, లేదా చురుకైన అనువాదకుడు కాదు.
   wwctrlRateLimitSetSender: మీ రేటు పరిమితిని {0} సెకన్లకు సెట్ చేయండి.
   wwctrlRateLimitOffTarget: '{0} రేటు పరిమితిని ఆపివేయబడింది.'
-  wwctrlRateLimitSetTarget: '{0} రేటు పరిమితిని {1} సెకన్లకు సెట్ చేయండి.'
   wwctrlNotATranslator: మీరు చురుకైన అనువాదకుడు కాదు! మీరు దీన్ని /wwctతో సెట్ చేశారని
     నిర్ధారించుకోండి.
   wwctrlRateLimitAlreadyOffSender: మీ రేటు పరిమితి ఇప్పటికే నిలిపివేయబడింది.
@@ -268,13 +261,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: గ్లోబల్ చాట్ అనువదించబడుతోంది,
     కాని మీరు {0} నుండి {1} వరకు చురుకైన అనువాద సెషన్ ఉంది.
   wwctCannotTranslateConsole: మీరు కన్సోల్ కోసం అనువాద సెషన్ను ప్రారంభించలేరు!
-  wwctLangToLangStart: '{0} నుండి {1} వరకు కొత్త అనువాద సెషన్ ప్రారంభిస్తోంది.'
   wwcOnJoinTranslationNotificationSourceLang: మీకు {0} నుండి {1} వరకు చురుకైన అనువాద
     సెషన్ ఉంది.
-  wwctAutoTranslateStartOtherPlayer: '{0} కు కొత్త అనువాద సెషన్ ప్రారంభిస్తోంది.'
   wwctTranslationStopped: మీ అనువాద సెషన్ నిలిపివేయబడింది.
-  wwctLangToLangStartOtherPlayer: '{0} నుండి {1} నుండి {2} కొరకు కొత్త అనువాద సెషన్
-    ప్రారంభిస్తోంది.'
   wwctAutoTranslateStart: '{0} కు కొత్త అనువాద సెషన్ ప్రారంభిస్తోంది.'
   wwcOnJoinTranslationNotificationNoSourceLang: మీరు {0} కు చురుకైన అనువాద సెషన్ ఉంది.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: గ్లోబల్ చాట్ అనువదించబడుతోంది,
@@ -489,9 +478,6 @@ Messages:
   wwcrTransFail: WorldwideChat ను రీలోడ్ చేసింది కానీ అనువాదకుడిని ప్రారంభించడంలో
     విఫలమైంది.
   wwcdCacheCleared: అనువాద కాష్ క్లియర్ చేయబడింది.
-  wwcdCacheSize: కాష్ యొక్క పరిమాణం ప్రస్తుతం {0}, {1} పరిమితితో ఉంది.
-  wwcdCacheTerm: '{0}. కాష్డ్ ట్రాన్స్లేషన్:ఇన్పుట్లాంగ్= {1}, అవుట్పుట్లాంగ్= {2},
-    ఇన్పుట్ఫ్రేజ్ = {3} | అవుట్పుట్ఫ్రేజ్ = {4}'
   wwcdInvalidCmd: చెల్లని వాదనలు!
   systranHttpUnknown: 'తెలియని http లోపం: {0}'
   systranHttp400: చెడ్డ పారామితులు సిస్ట్రాన్కు పంపబడ్డాయి. చెడ్డ భాషా జత కావచ్చు?
@@ -567,4 +553,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL వినియోగదారు పేరును విజయవంతంగా
     మార్చబడింది.
   wwcConfigGUIStorageTypeSettings: '{0} కాన్ఫిగరేషన్'
+  wwcConfigConversationPrefixInput: ప్రస్తుత ఉపసర్గ {0}. దయచేసి క్రొత్తదాన్ని టైప్
+    చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి.
+  wwcConfigConversationLangInput: 'ప్రస్తుత ప్లగ్ఇన్ భాష {0}. దయచేసి చెల్లుబాటు అయ్యే
+    భాషా కోడ్ను నమోదు చేయండి లేదా రద్దు చేయడానికి 0 అని టైప్ చేయండి. చెల్లుబాటు అయ్యే
+    భాషా కోడ్లు: {1}'
+  wwcdCacheSize: కాష్ యొక్క పరిమాణం ప్రస్తుతం {0}, {1} పరిమితితో ఉంది.
+  wwcdCacheTerm: '{0}. కాచేడ్ట్రాన్స్లేషన్:ఇన్పుట్లాంగ్= {1}, అవుట్పుట్లాంగ్= {2},
+    ఇన్పుట్ఫ్రేజ్= {3} | అవుట్పుట్లాంగ్= {4}'
+  wwctLangToLangStart: '{0} నుండి {1} వరకు కొత్త అనువాద సెషన్ను ప్రారంభిస్తోంది.'
+  wwctAutoTranslateStartOtherPlayer: '{0} నుండి {1} కోసం కొత్త అనువాద సెషన్ను ప్రారంభిస్తోంది.'
+  wwctLangToLangStartOtherPlayer: '{1} నుండి {2} వరకు {0} కోసం కొత్త అనువాద సెషన్ను
+    ప్రారంభిస్తోంది.'
+  wwcgLangToLangStart: ఇప్పుడు గ్లోబల్ చాట్ను {0} నుండి {1} కు అనువదించడం.
+  wwctrlRateLimitSetTarget: '{0} రేటు పరిమితిని {1} సెకన్లకు సెట్ చేయండి.'
 

@@ -53,13 +53,9 @@ Messages:
   wwcConfigGUIQuitButton: Dalja & Ruaj Ndryshimet
   wwctPlayerNotFound: Lojtar {0} u gjet.
   wwcConfigGUIAmazonTranslateRegionButton: Ndrysho rajonin Amazon
-  wwcConfigConversationLangInput: 'Gjuha aktuale e shtojcës është {0}. Ju lutemi,
-    futni një kod të vlefshëm gjuhësor, ose shkruani 0 që të anul Kodet e vlefshme
-    të gjuhës: {0}'
   wwcConfigConversationLangInvalid: Kodi i pavlefshëm i gjuhës!
   wwcConfigGUIWatsonAPIKeyButton: Ndrysho çelësin API Watson
   wwcEnabled: Versioni i aktivizuar WorldwideChat {0}.
-  wwcgLangToLangStart: Tani përkthimi i bisedës globale nga {0} në {1}.
   wwctbOnSender: Libri përkthim aktivizuar. Djathtas-klikoni duke mbajtur një libër
     për ta përkthyer!
   wwcListenersInitialized: Dëgjuesit e inicializuar.
@@ -112,8 +108,6 @@ Messages:
   wwctGUINewTranslationTarget: Zgjidhni një gjuhë të synuar
   wwcConfigConnectionSuccess: Lidhur me sukses në {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Prefiksi i tanishëm është {0}. Ju lutemi shkruani
-    një të re, ose shkruani 0 për t'u kthyer prapa.
   wwcConfigGUIPreviousPageButton: Faqja e mëparshme
   wwcConfigGUITranslatorCacheButton: Ndryshimi i përkthimit Cache
   wwcConfigConversationbStatsSuccess: bStats toggled sukses.
@@ -166,7 +160,6 @@ Messages:
   wwctrlPlayerNotFound: Lojtar {0} ose nuk gjendet, ose nuk është përkthyes aktiv.
   wwctrlRateLimitSetSender: Vendosni limitin tuaj të normës në {0} sekonda.
   wwctrlRateLimitOffTarget: Çaktivizuar kufirin e normës prej {0}.
-  wwctrlRateLimitSetTarget: Vendosni limitin e normës prej {0} në {1} sekonda.
   wwctrlNotATranslator: Ju nuk jeni një përkthyes aktiv! Sigurohuni që keni vendosur
     këtë me /wwct.
   wwctrlRateLimitAlreadyOffSender: Kufiri juaj i normës tashmë është i paaftë.
@@ -283,14 +276,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Biseda globale po përkthehet,
     por keni një sesion aktiv përkthimi nga {0} në {1}.
   wwctCannotTranslateConsole: Nuk mund të filloni një sesion përkthimi për tastierë!
-  wwctLangToLangStart: Fillimi i një sesioni të ri përkthimi nga {0} në {1}.
   wwcOnJoinTranslationNotificationSourceLang: Ju keni një sesion aktiv përkthimi nga
     {0} në {1}.
-  wwctAutoTranslateStartOtherPlayer: Fillimi i një sesioni të ri përkthimi për {0}
-    në {0}.
   wwctTranslationStopped: Sesioni juaj i përkthimit është ndalur.
-  wwctLangToLangStartOtherPlayer: Fillimi i një sesioni të ri përkthimi për {0} nga
-    {0} në {1}.
   wwctAutoTranslateStart: Duke filluar një sesion të ri përkthimi në {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Ju keni një sesion aktiv përkthimi
     në {0}.
@@ -512,9 +500,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Përkthejeni
   wwcrTransFail: Rilarkoi WorldwideChat por nuk arriti të mundësojë një përkthyes.
   wwcdCacheCleared: Faqja e përkthimit është pastruar.
-  wwcdCacheSize: Madhësia e cache aktualisht është {0}, me një limit prej {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, OutputLang= {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Argumente të pavlefshme!
   systranHttpUnknown: 'Gabim http i panjohur: {0}'
   systranHttp400: Parametrat e këqij dërguar në Systran. Mund të jetë një palë gjuhësore
@@ -590,4 +575,19 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Me sukses ndryshoi emrin e përdoruesit
     PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Konfigurimi'
+  wwcConfigConversationPrefixInput: Prefiksi aktual është {0}. Ju lutemi shkruani
+    një të re, ose shkruani 0 për të kthyer prapa.
+  wwcConfigConversationLangInput: 'Gjuha aktuale e shtojcës është {0}. Ju lutemi futni
+    një kod të vlefshëm të gjuhës, ose shkruani 0 për të anuluar. Kodet e vlefshme
+    gjuhësore: {1}'
+  wwcdCacheSize: Madhësia e cache aktualisht është {0}, me një kufi prej {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Fillimi i një seance të re përkthimi nga {0} në {1}.
+  wwctAutoTranslateStartOtherPlayer: Fillimi i një seance të re përkthimi për {0}
+    në {1}.
+  wwctLangToLangStartOtherPlayer: Fillimi i një seance të re përkthimi për {0} nga
+    {1} në {2}.
+  wwcgLangToLangStart: Tani përkthej bisedën globale nga {0} në {1}.
+  wwctrlRateLimitSetTarget: Vendosni kufirin e normës prej {0} në {1} sekonda.
 

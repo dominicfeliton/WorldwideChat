@@ -51,13 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: পরিবর্তন থেকে প্রস্থান করো
   wwctPlayerNotFound: খেলোয়াড় {0} পাওয়া যায়নি।
   wwcConfigGUIAmazonTranslateRegionButton: আমাজন অঞ্চল পরিবর্তন করুন
-  wwcConfigConversationLangInput: 'বর্তমান প্লাগইন ভাষা {0}। অনুগ্রহ করে একটি বৈধ
-    ভাষা কোড লিখুন, অথবা বাতিল করার জন্য 0 টাইপ করুন। বৈধ ভাষা কোড: {0}'
   wwcConfigConversationLangInvalid: ভাষা কোড অবৈধ!
   wwcConfigGUIWatsonAPIKeyButton: ওয়াটসন এপিআই কী পরিবর্তন করুন
   wwcEnabled: ওয়ার্ল্ডউইডচ্যাট সংস্করণ {0} সক্রিয় করা হয়েছে।
-  wwcgLangToLangStart: এখন {0} থেকে {1} থেকে {2} পর্যন্ত গ্লোবাল চ্যাট অনুবাদ করা
-    হচ্ছে।
   wwctbOnSender: বইয়ের অনুবাদ সক্রিয় করা হয়েছে। এটি অনুবাদ করার জন্য একটি বই ধরে রাখার
     সময় ডান-ক্লিক করুন!
   wwcListenersInitialized: আরম্ভ করা শ্রোতা।
@@ -107,8 +103,6 @@ Messages:
   wwctGUINewTranslationTarget: একটি লক্ষ্যবস্তু ভাষা বেছে নিন
   wwcConfigConnectionSuccess: '{0} এর সাথে সফলভাবে সংযুক্ত হয়েছে!'
   wwcConfigGUIGoogleTranslateButton: গুগল অনুবাদ
-  wwcConfigConversationPrefixInput: বর্তমান উপসর্গ {0}। অনুগ্রহ করে একটি নতুন টাইপ
-    করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
   wwcConfigGUIPreviousPageButton: পূর্ববর্তী পৃষ্ঠা
   wwcConfigGUITranslatorCacheButton: অনুবাদ ক্যাশে সীমা পরিবর্তন করুন
   wwcConfigConversationbStatsSuccess: সফলভাবে bStats টগল করা হয়েছে।
@@ -153,7 +147,6 @@ Messages:
   wwctrlPlayerNotFound: প্লেয়ার {0} পাওয়া যায়নি, অথবা এটি সক্রিয় অনুবাদক নয়।
   wwctrlRateLimitSetSender: আপনার রেট সীমিত {0} সেকেন্ডে সেট করুন।
   wwctrlRateLimitOffTarget: '{0} হার সীমা বন্ধ করে দিয়েছে।'
-  wwctrlRateLimitSetTarget: '{0} থেকে {1} সেকেন্ডের রেটের সীমা নির্ধারণ করুন।'
   wwctrlNotATranslator: আপনি একজন সক্রিয় অনুবাদক নন! নিশ্চিত করুন যে আপনি এটি /wwct
     দিয়ে সেট করেছেন।
   wwctrlRateLimitAlreadyOffSender: আপনার রেট সীমা ইতোমধ্যে নিষ্ক্রিয় করা হয়েছে।
@@ -269,14 +262,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: গ্লোবাল চ্যাট অনুবাদ করা
     হচ্ছে, কিন্তু আপনা {0} থেকে {1} পর্যন্ত একটি সক্রিয় অনুবাদ সেশন আছে।
   wwctCannotTranslateConsole: কনসোলের জন্য আপনি অনুবাদ সেশন শুরু করতে পারবেন না!
-  wwctLangToLangStart: '{0} থেকে {1} পর্যন্ত একটি নতুন অনুবাদ সেশন শুরু করা হচ্ছে।'
   wwcOnJoinTranslationNotificationSourceLang: আপনা {0} থেকে {1} পর্যন্ত একটি সক্রিয়
     অনুবাদ সেশন আছে।
-  wwctAutoTranslateStartOtherPlayer: '{0} থেকে {1} এর জন্য একটি নতুন অনুবাদ সেশন শুরু
-    করা হচ্ছে।'
   wwctTranslationStopped: আপনার অনুবাদ সেশন বন্ধ করা হয়েছে।
-  wwctLangToLangStartOtherPlayer: '{0} এর জন্য {1} থেকে {2} পর্যন্ত একটি নতুন অনুবাদ
-    সেশন শুরু করা হচ্ছে।'
   wwctAutoTranslateStart: '{0} তে একটি নতুন অনুবাদ সেশন আরম্ভ করা হচ্ছে।'
   wwcOnJoinTranslationNotificationNoSourceLang: '{0} তে আপনার একটি সক্রিয় অনুবাদ সেশন
     আছে।'
@@ -485,9 +473,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: সিস্ট্রান অনুবাদ
   wwcrTransFail: ওয়ার্ল্ডওয়াইডচ্যাট পুনরায় লোড করা হলেও অনুবাদক সক্ষম করতে ব্যর্থ
   wwcdCacheCleared: অনুবাদ ক্যাশে পরিষ্কার করা হয়েছে।
-  wwcdCacheSize: ক্যাশের আকার বর্তমানে {0}, {1} সীমা সহ।
-  wwcdCacheTerm: '{0}। ক্যাশডট্রান্সলেশন:ইনপুটল্যাং = {1}, আউটপুটল্যাং = {2}, ইনপুটফ্রেজ
-    = {3} | আউটপুটফ্রেজ = {4}'
   wwcdInvalidCmd: অবৈধ যুক্তি!
   systranHttpUnknown: 'অজানা এইচটিটিপি ত্রুটি: {0}'
   systranHttp400: খারাপ পরামিতি সিস্ট্রানে পাঠানো হয়েছে। খারাপ ভাষার জোড়া হতে পারে?
@@ -560,4 +545,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: সফলভাবে PostgreSQL ব্যবহারকারীর নাম
     পরিবর্তন করা হয়েছে।
   wwcConfigGUIStorageTypeSettings: '{0} কনফিগারেশন'
+  wwcConfigConversationPrefixInput: বর্তমান উপসর্গটি {0}। অনুগ্রহ করে একটি নতুন টাইপ
+    করুন, অথবা ফিরে যেতে 0 টাইপ করুন।
+  wwcConfigConversationLangInput: 'বর্তমান প্লাগইন ভাষা {0}। অনুগ্রহ করে একটি বৈধ
+    ভাষা কোড লিখুন, অথবা বাতিল করতে 0 টাইপ করুন। বৈধ ভাষা কোড: {1}'
+  wwcdCacheSize: ক্যাশের আকার বর্তমানে {0}, {1} সীমা সহ।
+  wwcdCacheTerm: '{0}। ক্যাশডট্রান্সলেশন:ইনপুটল্যাং= {1}, আউটপুটল্যাং= {2}, ইনপুটফ্রেজ=
+    {3} | আউটপুটফ্রেজ= {4}'
+  wwctLangToLangStart: '{0} থেকে {1} পর্যন্ত একটি নতুন অনুবাদ সেশন শুরু করা হচ্ছে।'
+  wwctAutoTranslateStartOtherPlayer: '{0} থেকে {1} এর জন্য একটি নতুন অনুবাদ সেশন শুরু
+    করা হচ্ছে।'
+  wwctLangToLangStartOtherPlayer: '{1} থেকে {2} পর্যন্ত {0} এর জন্য একটি নতুন অনুবাদ
+    সেশন শুরু করা হচ্ছে।'
+  wwcgLangToLangStart: এখন {0} থেকে {1} এ গ্লোবাল চ্যাট অনুবাদ করছি।
+  wwctrlRateLimitSetTarget: '{0} এর হারের সীমা {1} সেকেন্ডে সেট করুন।'
 

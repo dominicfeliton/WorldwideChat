@@ -42,12 +42,9 @@ Messages:
   wwcConfigGUIQuitButton: 終了して変更を保存
   wwctPlayerNotFound: プレイヤー {0} が見つかりません。
   wwcConfigGUIAmazonTranslateRegionButton: Amazonリージョンの変更
-  wwcConfigConversationLangInput: '現在のプラグイン言語は {0} です。有効な言語コードを入力するか、0 を入力してキャンセルしてください。有効な言語コード:
-    {0}'
   wwcConfigConversationLangInvalid: 言語コードが無効です！
   wwcConfigGUIWatsonAPIKeyButton: ワトソン API キーの変更
   wwcEnabled: WorldwideChat バージョン {0} を有効にしました。
-  wwcgLangToLangStart: グローバルチャットを {0}から {1}に翻訳しています。
   wwctbOnSender: 本の翻訳が有効になりました。本を押しながら右クリックすると翻訳できます！
   wwcListenersInitialized: 初期化されたリスナー。
   wwcConfigGUIPluginUpdateChatButton: プラグインの更新についてチャットリマインダーを送信
@@ -90,7 +87,6 @@ Messages:
   wwctGUINewTranslationTarget: ターゲット言語の選択
   wwcConfigConnectionSuccess: '{0}に正常に接続されました！'
   wwcConfigGUIGoogleTranslateButton: グーグル翻訳
-  wwcConfigConversationPrefixInput: 現在の接頭辞は {0}です。新しい接頭辞を入力するか、0を入力して戻してください。
   wwcConfigGUIPreviousPageButton: 前のページ
   wwcConfigGUITranslatorCacheButton: 変換キャッシュ制限の変更
   wwcConfigConversationbStatsSuccess: bStatsを正常に切り替えました。
@@ -129,7 +125,6 @@ Messages:
   wwctrlPlayerNotFound: Player {0} が見つからないか、アクティブなトランスレータではありません。
   wwctrlRateLimitSetSender: レート制限を {0} 秒に設定します。
   wwctrlRateLimitOffTarget: '{0} のレート制限をオフにしました。'
-  wwctrlRateLimitSetTarget: '{0} のレート制限を {1} 秒に設定します。'
   wwctrlNotATranslator: あなたはアクティブな翻訳者ではありません！/wwctでこれを設定していることを確認してください。
   wwctrlRateLimitAlreadyOffSender: レート制限は既に無効になっています。
   wwctGUIRateButton: レート制限の設定
@@ -218,11 +213,8 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: グローバルチャットは翻訳中ですが、 {0}
     から {0} のアクティブな翻訳セッションがあります。
   wwctCannotTranslateConsole: コンソールの翻訳セッションを開始できません。
-  wwctLangToLangStart: '{0} から {1} への新しい変換セッションを開始します。'
   wwcOnJoinTranslationNotificationSourceLang: '{0} から {1} までのアクティブな変換セッションがあります。'
-  wwctAutoTranslateStartOtherPlayer: '{0} から {1} の新しい変換セッションを開始しています。'
   wwctTranslationStopped: 翻訳セッションは停止されました。
-  wwctLangToLangStartOtherPlayer: '{0} の新しい変換セッションを {1} から {2} に開始しています。'
   wwctAutoTranslateStart: '{0} への新しい変換セッションを開始しています。'
   wwcOnJoinTranslationNotificationNoSourceLang: '{0} へのアクティブな翻訳セッションがあります。'
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: グローバルチャットは翻訳中ですが、 {0}
@@ -391,8 +383,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: シストラン翻訳
   wwcrTransFail: WorldwideChatをリロードしましたが、トランスレータを有効にできませんでした。
   wwcdCacheCleared: 翻訳キャッシュがクリアされました。
-  wwcdCacheSize: キャッシュのサイズは現在 {0} で、制限は {1} です。
-  wwcdCacheTerm: '{0}。キャッシュされた翻訳:入力長= {1}、出力長= {2}、入力フレーズ = {3} | 出力フレーズ = {4}'
   wwcdInvalidCmd: 引数が無効です!
   systranHttpUnknown: 不明な HTTP エラー:{0}
   systranHttp400: Systran に不正なパラメータが送信されました。言語ペアが間違っている可能性はありますか?
@@ -440,4 +430,13 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: ポスグレ SQL データベースを変更
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL ユーザー名が正常に変更されました。
   wwcConfigGUIStorageTypeSettings: '{0} 構成'
+  wwcConfigConversationPrefixInput: 現在のプレフィックスは {0} です。新しい名前を入力するか、0 を入力して戻ってください。
+  wwcConfigConversationLangInput: 現在のプラグイン言語は {0} です。有効な言語コードを入力するか、0 を入力してキャンセルしてください。有効な言語コード:{1}
+  wwcdCacheSize: 現在、キャッシュのサイズは {0} で、上限は {1} です。
+  wwcdCacheTerm: '{0}。キャッシュされた翻訳:入力長 = {1}、出力長 = {2}、入力フレーズ = {3} | 出力フレーズ = {4}'
+  wwctLangToLangStart: '{0} から {1} への新しい翻訳セッションを開始します。'
+  wwctAutoTranslateStartOtherPlayer: '{0} から {1} の新しい翻訳セッションを開始します。'
+  wwctLangToLangStartOtherPlayer: '{0} の {1} から {2} への新しい翻訳セッションを開始します。'
+  wwcgLangToLangStart: 現在、グローバルチャットを {0} から {1} に翻訳しています。
+  wwctrlRateLimitSetTarget: レート制限を {0} 秒から {1} 秒に設定します。
 

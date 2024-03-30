@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: Iziet no & Saglabāt izmaiņas
   wwctPlayerNotFound: Spēlētājs {0} neesmu atrasts.
   wwcConfigGUIAmazonTranslateRegionButton: Mainīt Amazones reģionu
-  wwcConfigConversationLangInput: 'Pašreizējā spraudņa valoda ir {0}. Lūdzu ievadiet
-    derīgu valodas kodu vai ierakstiet 0, lai atceltu. Derīgi valodas kodi: {0}'
   wwcConfigConversationLangInvalid: Nederīgs valodas kods!
   wwcConfigGUIWatsonAPIKeyButton: Mainīt Watson API atslēgu
   wwcEnabled: Iespējota WorldwideChat versija {0}.
-  wwcgLangToLangStart: Tagad tulkojot globālo tērzēšanu no {0} uz {1}.
   wwctbOnSender: Iespējota grāmatu tulkošana. Ar peles labo pogu noklikšķiniet, turot
     grāmatu, lai to tulkotu!
   wwcListenersInitialized: Inicializēti klausītāji.
@@ -106,8 +103,6 @@ Messages:
   wwctGUINewTranslationTarget: Izvēlēties mērķa valodu
   wwcConfigConnectionSuccess: Veiksmīgi savienots ar {0}!
   wwcConfigGUIGoogleTranslateButton: Google tulkot
-  wwcConfigConversationPrefixInput: Pašreizējais prefikss ir {0}. Lūdzu ierakstiet
-    jaunu vai ierakstiet 0, lai atgrieztos.
   wwcConfigGUIPreviousPageButton: Iepriekšējā lapa
   wwcConfigGUITranslatorCacheButton: Mainīt tulkošanas kešatmiņas
   wwcConfigConversationbStatsSuccess: Veiksmīgi pārslēgti bStats.
@@ -158,7 +153,6 @@ Messages:
   wwctrlPlayerNotFound: Spēlētājs {0} vai nu nav atrasts, vai nav aktīvs tulkotājs.
   wwctrlRateLimitSetSender: Iestatiet savu likmes ierobežojumu uz {0} sekundes.
   wwctrlRateLimitOffTarget: Izslēdza ātruma ierobežojumu no {0}.
-  wwctrlRateLimitSetTarget: Iestatiet ātruma ierobežojumu no {0} uz {1} sekundes.
   wwctrlNotATranslator: Jūs neesat aktīvs tulkotājs! Pārliecinieties, ka esat iestatījis
     šo ar /wwct.
   wwctrlRateLimitAlreadyOffSender: Jūsu likmes ierobežojums jau ir atspējots.
@@ -275,12 +269,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globālā tērzēšana tiek
     tulkota, bet jums ir aktīva tulkošanas sesija no {0} uz {1}.
   wwctCannotTranslateConsole: Jūs nevarat sākt tulkošanas sesiju konsolei!
-  wwctLangToLangStart: Sākot jaunu tulkošanas sesiju no {0} līdz {1}.
   wwcOnJoinTranslationNotificationSourceLang: Jums ir aktīva tulkošanas sesija no
     {0} līdz {1}.
-  wwctAutoTranslateStartOtherPlayer: Sākot jaunu tulkošanas sesiju uz {0} uz {1}.
   wwctTranslationStopped: Tulkošanas sesija ir apturēta.
-  wwctLangToLangStartOtherPlayer: Sākot jaunu tulkošanas sesiju uz {0} no {1} uz {2}.
   wwctAutoTranslateStart: Sākot jaunu tulkošanas sesiju uz {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Jums ir aktīva tulkošanas sesija uz
     {0}.
@@ -491,9 +482,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Tulkot
   wwcrTransFail: Pārlādēja WorldwideChat, bet neizdevās iespējot tulkotāju.
   wwcdCacheCleared: Tulkošanas kešatmiņa tika notīrīta.
-  wwcdCacheSize: Kešatmiņas lielums pašlaik ir {0}, ar ierobežojumu {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Nederīgi argumenti!
   systranHttpUnknown: 'Nezināma http kļūda: {0}'
   systranHttp400: Slikti parametri nosūtīti Systran. Varētu būt slikts valodu pāris?
@@ -562,4 +550,16 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: Mainīt PostgreSQL datu bāzi
   wwcConfigConversationPostgresUsernameSuccess: Veiksmīgi mainīts PostgreSQL lietotājvārds.
   wwcConfigGUIStorageTypeSettings: '{0} Konfigurācija'
+  wwcConfigConversationPrefixInput: Pašreizējais prefikss ir {0}. Lūdzu, ierakstiet
+    jaunu vai ierakstiet 0, lai atgrieztos.
+  wwcConfigConversationLangInput: 'Pašreizējā spraudņa valoda ir {0}. Lūdzu, ievadiet
+    derīgu valodas kodu vai ierakstiet 0, lai atceltu. Derīgi valodu kodi: {1}'
+  wwcdCacheSize: Kešatmiņas lielums pašlaik ir {0}, ar ierobežojumu {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Jaunas tulkošanas sesijas sākšana no {0} līdz {1}.
+  wwctAutoTranslateStartOtherPlayer: Sākot jaunu tulkošanas sesiju {0} uz {1}.
+  wwctLangToLangStartOtherPlayer: Sākot jaunu tulkošanas sesiju {0} no {1} līdz {2}.
+  wwcgLangToLangStart: Tagad tulko globālo tērzēšanu no {0} uz {1}.
+  wwctrlRateLimitSetTarget: Iestatiet ātruma ierobežojumu {0} līdz {1} sekundēm.
 

@@ -58,9 +58,6 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Tá comhrá domhanda á
     aistriú, ach tá seisiún aistriúcháin gníomhach agat go {0}.
   wwctiOffTarget: Aistriúchán Mír mhíchumas ar feadh {0}.
-  wwcConfigConversationLangInput: 'Is é an teanga breiseán atá ann faoi láthair {0}.
-    Cuir isteach cód teanga bailí, nó cineál 0 a chur ar ceal. Cóid teanga bhailí:
-    {0}'
   wwctTranslationStopped: Tá do seisiún aistriúcháin a stopadh.
   wwcEntityTranslateNoName: Níl ainm saincheaptha ag an eintiteas.
   wwcConfigGUIWatsonAPIKeyButton: Watson Athraigh API Eochair
@@ -119,8 +116,6 @@ Messages:
   wwcConfigConnectionSuccess: Go rathúil ceangailte le {0}!
   wwctGUIRateButton: Socraigh Ráta Teorainn
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Is é an réimír reatha {0}. Clóscríobh ceann nua,
-    nó cineál 0 le dul ar ais.
   wwctInvalidInputLangCode: 'Cód teanga ionchuir neamhbhailí ar fáil! Cóid lang Bailí:
     {0}'
   wwcConfigConversationbStatsSuccess: bStats éirigh toggled.
@@ -131,7 +126,6 @@ Messages:
   wwcConfigGUIWatsonURLButton: Athraigh URL Seirbhíse Watson
   wwcConfigConversationUpdateCheckerSuccess: Nuashonraigh moill seiceála a leagtar
     go rathúil.
-  wwctrlRateLimitSetTarget: Socraigh an teorainn ráta de {0} go {1} soicind.
   wwcConfigGUIMessagesOverrideCustomLabel: Teachtaireacht Nua
   wwcGUITempItem: Taispeáin Mír
   wwcConfigConversationGoogleTranslateAPIKeyInput: Is é an eochair API reatha {0}.
@@ -234,7 +228,6 @@ Messages:
     do gach aistritheoir {0}. Cineál rud ar bith níos mó ná 0 a shocrú le luach nua,
     nó cineál rud ar bith níos lú ná nó cothrom le 0 chun dul ar ais.
   wwcEnabled: Cumasaithe WorldwideChat leagan {0}.
-  wwcgLangToLangStart: Anois aistriú comhrá domhanda ó {0} go {1}.
   wwcConfigGUIPluginUpdateChatButton: Seol Meabhrúchán Comhrá le haghaidh Nuashonruithe
     Breiseán
   wwcConfigGUIErrorLimitButton: Athraigh Teorainn Earráid Aistritheoir
@@ -243,8 +236,6 @@ Messages:
   wwcgTranslationStopped: Tá aistriúchán comhrá domhanda a stopadh.
   wwcConfigConversationCharacterLimitSuccess: Teorainn charachtair atá leagtha go
     rathúil.
-  wwctAutoTranslateStartOtherPlayer: Seisiún aistriúcháin nua a thosú le haghaidh
-    {0} go {1}.
   wwcItemTranslateTitleStock: Ní féidir ainmneacha mír réamhshocraithe a aistriú.
   wwcConfigConversationSyncUserDataDelaySuccess: Sonraí úsáideora moill info leagtha
     go rathúil.
@@ -269,10 +260,7 @@ Messages:
     consól!
   wwctSameLangError: 'Ní féidir leat aistriú go dtí an teanga chéanna! Cóid lang Bailí:
     {0}'
-  wwctLangToLangStartOtherPlayer: Seisiún aistriúcháin nua a thosú le haghaidh {0}
-    ó {0} go {1}.
   wwcConfigGUICharacterLimitButton: Athraigh Teorainn Carachtair Teachtaireacht
-  wwctLangToLangStart: Seisiún aistriúcháin nua a thosú ó {0} go {1}.
   wwctGUISourceOrTargetTranslationAlreadyActive: Tá an teanga seo gníomhach cheana
     féin!
   wwcConfigGUIPreviousPageButton: Leathanach Roimhe Seo
@@ -522,9 +510,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Aistriúchán
   wwcrTransFail: Athluchtaigh WorldwideChat ach theip air aistritheoir a chumasú.
   wwcdCacheCleared: Glanadh taisce an aistriúcháin.
-  wwcdCacheSize: Is é méid an taisce {0} faoi láthair, le teorainn {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:inputLang = {1}, outputLang= {2}, inputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Argóintí míbhailí!
   systranHttpUnknown: 'Earráid http anaithnid: {0}'
   systranHttp400: Droch-pharaiméadair a seoltar chuig Systran. D'fhéadfadh a bheith
@@ -596,4 +581,17 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: D'athraigh sé an t-ainm úsáideora
     PostgreSQL go rathúil.
   wwcConfigGUIStorageTypeSettings: '{0} Cumraíocht'
+  wwcConfigConversationPrefixInput: Is é {0} an réimír reatha. Clóscríobh ceann nua
+    le do thoil, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationLangInput: 'Is é {0} an teanga breiseán reatha. Cuir isteach
+    cód bailí teanga le do thoil, nó clóscríobh 0 chun cealú. Cóid teanga bailí: {1}'
+  wwcdCacheSize: Is é méid an taisce {0} faoi láthair, le teorainn {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Ag tosú seisiún aistriúcháin nua ó {0} go {1}.
+  wwctAutoTranslateStartOtherPlayer: Ag tosú seisiún aistriúcháin nua do {0} go {1}.
+  wwctLangToLangStartOtherPlayer: Ag tosú seisiún aistriúcháin nua do {0} ó {1} go
+    {2}.
+  wwcgLangToLangStart: Anois ag aistriú comhrá domhanda ó {0} go {1}.
+  wwctrlRateLimitSetTarget: Socraigh teorainn ráta {0} go {1} soicind.
 

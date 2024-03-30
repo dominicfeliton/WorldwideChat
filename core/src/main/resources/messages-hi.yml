@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: परिवर्तन से बाहर निकलें (S)
   wwctPlayerNotFound: खिलाड़ी %मैं नहीं मिला।
   wwcConfigGUIAmazonTranslateRegionButton: अमेज़ॅन क्षेत्र बदलें
-  wwcConfigConversationLangInput: 'मौज़ूदा प्लगइन भाषा {0} है. कृपया वैध भाषा कोड
-    भरें, या रद्द करने के लिए 0 टाइप करें। वैध भाषा कोड: {0}'
   wwcConfigConversationLangInvalid: अवैध भाषा कोड!
   wwcConfigGUIWatsonAPIKeyButton: वाटसन एपीआई कुंजी बदलें
   wwcEnabled: वर्ल्डवाइडचैट संस्करण {0} सक्षम किया गया
-  wwcgLangToLangStart: अब वैश्विक चैट को {0} से {1} तक अनुवाद कर रहा है।
   wwctbOnSender: पुस्तक अनुवाद सक्षम। इसका अनुवाद करने के लिए पुस्तक पकड़े हुए राइट-क्लिक
     करें!
   wwcListenersInitialized: आरंभिक श्रोताओं।
@@ -106,8 +103,6 @@ Messages:
   wwctGUINewTranslationTarget: एक लक्ष्य भाषा चुनें
   wwcConfigConnectionSuccess: '{0} से सफलतापूर्वक जुड़ा हुआ है!'
   wwcConfigGUIGoogleTranslateButton: गूगल अनुवाद
-  wwcConfigConversationPrefixInput: वर्तमान उपसर्ग {0} है. कृपया एक नया टाइप करें,
-    या वापस जाने के लिए 0 टाइप करें।
   wwcConfigGUIPreviousPageButton: पिछला पृष्ठ
   wwcConfigGUITranslatorCacheButton: अनुवाद कैश सीमा बदलें
   wwcConfigConversationbStatsSuccess: सफलतापूर्वक bStats टॉगल किया।
@@ -156,7 +151,6 @@ Messages:
   wwctrlPlayerNotFound: खिलाड़ी {0} या तो नहीं मिला है, या सक्रिय अनुवादक नहीं है।
   wwctrlRateLimitSetSender: अपनी दर सीमा से {0} सेकेंड पर सेट करें।
   wwctrlRateLimitOffTarget: '{0} की दर सीमा को बंद कर दिया।'
-  wwctrlRateLimitSetTarget: '{0} की दर सीमा से {1} सेकेंड सेट करें।'
   wwctrlNotATranslator: आप एक सक्रिय अनुवादक नहीं हैं! सुनिश्चित करें कि आपने इसे/wwct
     के साथ सेट किया है।
   wwctrlRateLimitAlreadyOffSender: आपकी दर सीमा पहले से ही अक्षम है।
@@ -273,14 +267,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: वैश्विक चैट का अनुवाद
     किया जा रहा है, लेकिन आपके पास {0} से {1} तक एक सक्रिय अनुवाद सत्र है।
   wwctCannotTranslateConsole: आप कंसोल के लिए अनुवाद सत्र शुरू नहीं कर सकते!
-  wwctLangToLangStart: एक नया अनुवाद सत्र {0} से {1} तक प्रारंभ कर रहा है।
   wwcOnJoinTranslationNotificationSourceLang: आपके पास {0} से {1} तक एक सक्रिय अनुवाद
     सत्र है।
-  wwctAutoTranslateStartOtherPlayer: '{0} से {1} के लिए एक नया अनुवाद सत्र शुरू कर
-    रहा है।'
   wwctTranslationStopped: आपका अनुवाद सत्र रोक दिया गया है।
-  wwctLangToLangStartOtherPlayer: '{0} के लिए {1} से {2} तक एक नया अनुवाद सत्र शुरू
-    कर रहा है।'
   wwctAutoTranslateStart: एक नया अनुवाद सत्र {0} से प्रारंभ कर रहा है।
   wwcOnJoinTranslationNotificationNoSourceLang: आपके पास {0} में एक सक्रिय अनुवाद
     सत्र है।
@@ -501,9 +490,6 @@ Messages:
   wwcrTransFail: WorldwideChat को फिर से लोड किया गया लेकिन अनुवादक को सक्षम करने
     में विफल रहा।
   wwcdCacheCleared: अनुवाद कैश साफ़ कर दिया गया था।
-  wwcdCacheSize: कैश का आकार वर्तमान में {0} है, जिसकी सीमा {1} है।
-  wwcdCacheTerm: '{0}। कैश्ड अनुवाद: इनपुटलैंग = {1}, आउटपुटलैंग = {2}, इनपुटफ़्रेज़
-    = {3} | outputPhrase= {4}'
   wwcdInvalidCmd: अमान्य तर्क!
   systranHttpUnknown: 'अज्ञात http त्रुटि: {0}'
   systranHttp400: खराब पैरामीटर सिस्ट्रान को भेजे गए। एक खराब भाषा जोड़ी हो सकती है?
@@ -574,4 +560,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL उपयोगकर्ता नाम को सफलतापूर्वक
     बदल दिया।
   wwcConfigGUIStorageTypeSettings: '{0} कॉन्फ़िगरेशन'
+  wwcConfigConversationPrefixInput: मौजूदा प्रीफ़िक्स {0} है। कृपया एक नया टाइप करें,
+    या वापस जाने के लिए 0 टाइप करें।
+  wwcConfigConversationLangInput: 'वर्तमान प्लगइन भाषा {0} है। कृपया मान्य भाषा कोड
+    दर्ज करें, या रद्द करने के लिए 0 टाइप करें। मान्य भाषा कोड: {1}'
+  wwcdCacheSize: कैश का आकार वर्तमान में {0} है, जिसकी सीमा {1} है।
+  wwcdCacheTerm: '{0}। कैश्ड अनुवाद: इनपुट लैंग = {1}, आउटपुट लैंग = {2}, इनपुट वाक्यांश
+    = {3} | आउटपुट वाक्यांश = {4}'
+  wwctLangToLangStart: '{0} से {1} तक एक नया अनुवाद सत्र शुरू किया जा रहा है।'
+  wwctAutoTranslateStartOtherPlayer: '{0} से {1} के लिए एक नया अनुवाद सत्र शुरू किया
+    जा रहा है।'
+  wwctLangToLangStartOtherPlayer: '{1} से {2} तक {0} के लिए एक नया अनुवाद सत्र शुरू
+    करना।'
+  wwcgLangToLangStart: अब ग्लोबल चैट को {0} से {1} में ट्रांसलेट किया जा रहा है।
+  wwctrlRateLimitSetTarget: '{0} से {1} सेकंड की दर सीमा सेट करें।'
 

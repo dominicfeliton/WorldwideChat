@@ -46,7 +46,7 @@ Messages:
     {0} ilbiriqsi.
   wwcConfigGUILangButton: Beddel Luqadda Plugin
   wwctGUISignButton: Turjubaanka Saxiixa ee Toggle
-  wwcUpdaterOutOfDate: WorldWideCat waa mid taariikhda ka baxsan. Fadlan cusbooneysii
+  wwcUpdaterOutOfDate: WorldwideChat waa mid taariikhda ka baxsan. Fadlan cusbooneysii
     nuqulka ugu dambeeyey, {0}.
   wwcConfigGUINextPageButton: Bogga xigta
   wwcConfigInvalidTranslatorSettings: goobaha turjumaan aan sax ahayn! Fadlan awood
@@ -54,13 +54,9 @@ Messages:
   wwcConfigGUIQuitButton: Bixitaanka & Badbaadinta Isbedelada
   wwctPlayerNotFound: Ciyaartoy {0} lama helin.
   wwcConfigGUIAmazonTranslateRegionButton: Beddel Gobolka Amazon
-  wwcConfigConversationLangInput: 'Luuqada fiilinta imika waa {0}. Fadlan gali lambarka
-    luuqada oo sax ah, ama nooca 0 si aad u joojiso. Koodhadhka luuqada ee saxda ah:
-    {0}'
   wwcConfigConversationLangInvalid: Koodhka luqadda oo aan sax ahayn!
   wwcConfigGUIWatsonAPIKeyButton: Badalka Furaha Watson API
-  wwcEnabled: Noocyada WorldWideCat ee la kartiday {0}.
-  wwcgLangToLangStart: Hadda tarjumidda chat caalami ah laga bilaabo {0} ilaa {1}.
+  wwcEnabled: Noocyada WorldwideChat ee la kartiday {0}.
   wwctbOnSender: Book tarjumaad karti. Xuquuqda-riix inta aad haysato buug si aad
     u turjumto!
   wwcListenersInitialized: Dhagaystayaasha Initialized.
@@ -91,14 +87,14 @@ Messages:
     la saadaalin karin.
   wwctGUITranslationButton: Bilow Tarjumidda
   wwctGUIAutoDetectButton: Luqadda Isha ee Auto-ogaanshaha
-  wwcUpdaterUpToDate: WorldWideCat waa ilaa taariikhda!
+  wwcUpdaterUpToDate: WorldwideChat waa ilaa taariikhda!
   wwcConfigConversationAmazonTranslateRegionInput: Gobolka imika waa {0}. Fadlan gali
     gobolka Amazon, ama nooca 0 si aad dib ugu noqoto.
   wwcNoConsole: Amarkani waxa kaliya oo lagu ordi karaa by ciyaaryahan.
   wwcInitializationFail: Ku guuldareysatay in ay initialize WorldwideChat.
   wwcrSuccess: Si guul leh u reloaded WorldwideChat.
   wwcPlayerNotFound: Ciyaartoy {0} lama helin.
-  wwcUpdaterOutOfDateChat: WorldWideCat waa mid taariikhda ka baxsan. Fadlan u cusboonaysiiso
+  wwcUpdaterOutOfDateChat: WorldwideChat waa mid taariikhda ka baxsan. Fadlan u cusboonaysiiso
     version ugu dambeeyey.
   wwcConfigConversationRateLimitSuccess: xadka Rate si guul leh dhigay.
   wwcConfigConversationWatsonURLSuccess: Watson URL si guul leh u dhigay.
@@ -111,8 +107,6 @@ Messages:
   wwctGUINewTranslationTarget: Dooro Luqad Bartilmaameed
   wwcConfigConnectionSuccess: Si guul leh ugu xiran {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Horgalaha imika waa {0}. Fadlan qor mid cusub,
-    ama nooca 0 si aad dib ugu noqoto.
   wwcConfigGUIPreviousPageButton: Bogga hore
   wwcConfigGUITranslatorCacheButton: Bedelka Translation Cache Y
   wwcConfigConversationbStatsSuccess: Si guul leh u toggled bStats.
@@ -161,7 +155,6 @@ Messages:
   wwctrlPlayerNotFound: Ciyaartoy {0} midkood lama helin, ama ma aha turjumaan firfircoon.
   wwctrlRateLimitSetSender: Deji xadidaada heerka ilaa {0} ilbiriqsi.
   wwctrlRateLimitOffTarget: Demi xadka heerka of {0}.
-  wwctrlRateLimitSetTarget: Deji xadiga heerka ah {0} ilaa {1} ilbiriqsi.
   wwctrlNotATranslator: Adiguna ma waxaad tahay turjumaan firfircoon! Hubi in aad
     this dhigay la /wwct.
   wwctrlRateLimitAlreadyOffSender: Your xadka heerka hore u naafo.
@@ -280,15 +273,9 @@ Messages:
     la turjumayaa, laakiin waxaad leedahay fadhi tarjumaad firfircoon oo ka bilaaban
     {0} ilaa {1}.
   wwctCannotTranslateConsole: Ma bilaabi kartid fadhiga turjumaadda ee Console!
-  wwctLangToLangStart: Laga bilaabo fadhiga turjumaad cusub laga bilaabo {0} ilaa
-    {1}.
   wwcOnJoinTranslationNotificationSourceLang: Waxaad leedahay fadhi tarjumaad firfircoon
     oo laga bilaabay {0} ilaa {1}.
-  wwctAutoTranslateStartOtherPlayer: Bilaabidda fadhiga turjumaad cusub ee loogu talagalay
-    {0} ilaa {1}.
   wwctTranslationStopped: Kalfadhigaaga tarjumaadda ayaa la joojiyay.
-  wwctLangToLangStartOtherPlayer: Bilaabidda fadhiga turjumaad cusub ee loogu talagalay
-    {0} ka {1} ilaa {2}.
   wwctAutoTranslateStart: Bilaabidda fadhiga turjumaad cusub ilaa {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Waxaad leedahay fadhi turjumaad firfircoon
     ilaa {0}.
@@ -513,9 +500,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Translate
   wwcrTransFail: Reloaded WorldwideChat laakiin fashilmay inay u ogolaan tarjumaad.
   wwcdCacheCleared: Cashka tarjumada ayaa la saaray.
-  wwcdCacheSize: Cabbirka cache waa haatan {0}, iyadoo xadka ah {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, outputLang= {2}, inputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Doodaha aan ah!
   systranHttpUnknown: 'Khalad http la ogaan: {0}'
   systranHttp400: Qalabka xun u diray Systran. Waa noqon karaa labaar luuqad xun ah?
@@ -580,4 +564,18 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: Beddel Database PostgreSQL
   wwcConfigConversationPostgresUsernameSuccess: Si guul la bedelay magacaanka PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Sameynta'
+  wwcConfigConversationPrefixInput: Qaafka hadda waa {0}. Fadlan qorin mid cusub,
+    ama nooca 0 si aad u dib ugu soo laabto.
+  wwcConfigConversationLangInput: 'Luuqda plugin hadda waa {0}. Fadlan galo koodka
+    luuqada haboon ah, ama nooca 0 si aad u baaqsado. Koodaha luuqda xaalad ah: {1}'
+  wwcdCacheSize: Cabbirka caashada waa hadda {0}, iyadoo xadka ah {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Bilaabaya fadhiga cusub oo tarjumaad ka dhacay {0} ilaa {1}.
+  wwctAutoTranslateStartOtherPlayer: Bilaabaya fadhiga cusub oo tarjimada ah ee {0}
+    ilaa {1}.
+  wwctLangToLangStartOtherPlayer: Bilaabaya fadhiga cusub ee tarjumaad ee {0} laga
+    bilaabo {1} ilaa {2}.
+  wwcgLangToLangStart: Hadda ka tarjumaa wadada caalamka ah ee {0} ilaa {1}.
+  wwctrlRateLimitSetTarget: Soo dhigay xadka qiimka {0} ilaa {1} seqiiqo.
 

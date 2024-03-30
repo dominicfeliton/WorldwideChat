@@ -50,12 +50,9 @@ Messages:
   wwcConfigGUIQuitButton: Välju ja salvesta muudatused
   wwctPlayerNotFound: Mängija {0} ei leidnud.
   wwcConfigGUIAmazonTranslateRegionButton: Muuda Amazonase regiooni
-  wwcConfigConversationLangInput: 'Praegune plugina keel on {0}. Palun sisestage kehtiv
-    keelekood või tühjendamiseks tippige 0. Kehtivad keelekoodid: {0}'
   wwcConfigConversationLangInvalid: Kehtetu keelekood!
   wwcConfigGUIWatsonAPIKeyButton: Muuda Watsoni API võtit
   wwcEnabled: Lubatud WorldwideChat versioon {0}.
-  wwcgLangToLangStart: Nüüd tõlkides globaalse vestluse alates {0} kuni {1}.
   wwctbOnSender: Raamatu tõlkimine on lubatud. Paremklõpsake hoides raamatut tõlkida!
   wwcListenersInitialized: Algastatud kuulajad.
   wwcConfigGUIPluginUpdateChatButton: Saada vestluse meeldetuletus Plugin värskenduste
@@ -101,8 +98,6 @@ Messages:
   wwctGUINewTranslationTarget: Vali sihtkeel
   wwcConfigConnectionSuccess: Edukalt ühendatud {0}!
   wwcConfigGUIGoogleTranslateButton: Google Tõlgi
-  wwcConfigConversationPrefixInput: Praegune eesliide on {0}. Palun tippige uus või
-    tippige tagasi minemiseks 0.
   wwcConfigGUIPreviousPageButton: Eelmine lehekülg
   wwcConfigGUITranslatorCacheButton: Muuda tõlke vahemälu piirang
   wwcConfigConversationbStatsSuccess: Edukalt lülitatud bStats.
@@ -150,7 +145,6 @@ Messages:
   wwctrlPlayerNotFound: Mängija {0} kas ei leitud, või ei ole aktiivne tõlkija.
   wwctrlRateLimitSetSender: Määrake oma määra piirmäärangu {0} sekundiks.
   wwctrlRateLimitOffTarget: Lülitatud {0} määra piirmäära välja lülitatud.
-  wwctrlRateLimitSetTarget: Määrake kiiruspiirangu {0} kuni {1} sekundit.
   wwctrlNotATranslator: Sa ei ole aktiivne tõlkija! Veenduge, et olete seadnud selle
     /wwct.
   wwctrlRateLimitAlreadyOffSender: Hinnapiirang on juba keelatud.
@@ -261,13 +255,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globaalne vestlus on tõlgitud,
     kuid sul on aktiivne tõlkesessioon alates {0} kuni {1}.
   wwctCannotTranslateConsole: Konsooli tõlkeseanssi ei saa käivitada!
-  wwctLangToLangStart: Uue tõlkeseansi alustamine alates {0} kuni {1}.
   wwcOnJoinTranslationNotificationSourceLang: Teil on aktiivne tõlkeseanss alates
     {0} kuni {1}.
-  wwctAutoTranslateStartOtherPlayer: Uue tõlkeseansi alustamine jaoks {0} kuni {1}.
   wwctTranslationStopped: Teie tõlkeseanss on lõpetatud.
-  wwctLangToLangStartOtherPlayer: Uue tõlkeseansi alustamine kohta {0} alates {1}
-    kuni {0}.
   wwctAutoTranslateStart: Uue tõlkeseansi alustamine kuni {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Teil on aktiivne tõlkeseanss kuni
     {0}.
@@ -470,9 +460,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Tõlgi
   wwcrTransFail: Laadisid WorldwideChati uuesti, kuid tõlkijat ei õnnestunud lubada.
   wwcdCacheCleared: Tõlke vahemälu tühjendati.
-  wwcdCacheSize: Vahemälu suurus on praegu {0}, piiranguga {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, OutputLang= {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Kehtetu argumendid!
   systranHttpUnknown: 'Tundmatu http viga: {0}'
   systranHttp400: Halvad parameetrid saadeti Systranile. Võib olla halb keelepaar?
@@ -538,4 +525,17 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: Muuda PostgreSQL-i andmebaasi
   wwcConfigConversationPostgresUsernameSuccess: Muudeti edukalt PostgreSQL-i kasutajanime.
   wwcConfigGUIStorageTypeSettings: '{0} Konfiguratsioon'
+  wwcConfigConversationPrefixInput: Praegune eesliide on {0}. Sisestage uus, või tippige
+    tagasi minemiseks 0.
+  wwcConfigConversationLangInput: 'Praegune pistikprogrammi keel on {0}. Sisestage
+    kehtiv keelekood, või tippige tühistamiseks 0. Kehtivad keelekoodid: {1}'
+  wwcdCacheSize: Vahemälu suurus on praegu {0}, piirmääraga {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Uue tõlkesessiooni alustamine alates {0} kuni {1}.
+  wwctAutoTranslateStartOtherPlayer: '{0} kuni {1} uue tõlkesessiooni alustamine.'
+  wwctLangToLangStartOtherPlayer: '{0} uue tõlkesessiooni alustamine vahemikus {1}
+    kuni {2}.'
+  wwcgLangToLangStart: Nüüd tõlkige ülemaailmset vestlust {0} -st {1}.
+  wwctrlRateLimitSetTarget: Määrake kiiruse piirmäär {0} -ni {1} sekundit.
 

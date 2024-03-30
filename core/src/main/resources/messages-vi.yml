@@ -52,12 +52,9 @@ Messages:
   wwcConfigGUIQuitButton: Thoát & Lưu Thay đổi
   wwctPlayerNotFound: Người chơi {0}ôi không tìm thấy.
   wwcConfigGUIAmazonTranslateRegionButton: Thay đổi Vùng Amazon
-  wwcConfigConversationLangInput: 'Ngôn ngữ plugin hiện tại là {0}. Vui lòng nhập
-    mã ngôn ngữ hợp lệ, hoặc nhập 0 để hủy. Mã ngôn ngữ hợp lệ: {0}'
   wwcConfigConversationLangInvalid: Mã ngôn ngữ không hợp lệ!
   wwcConfigGUIWatsonAPIKeyButton: Thay đổi khóa API Watson
   wwcEnabled: Đã bật phiên bản WorldwideChat {0}.
-  wwcgLangToLangStart: Bây giờ dịch trò chuyện toàn cầu từ {0} đến {1}.
   wwctbOnSender: Đã bật dịch sách. Nhấp chuột phải trong khi giữ một cuốn sách để
     dịch nó!
   wwcListenersInitialized: Người nghe được khởi tạo.
@@ -107,8 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: Chọn một ngôn ngữ mục tiêu
   wwcConfigConnectionSuccess: Kết nối thành công vào {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Tiền tố hiện tại là {0}. Vui lòng nhập một tiền
-    tố mới, hoặc nhập 0 để quay lại.
   wwcConfigGUIPreviousPageButton: Trang trước
   wwcConfigGUITranslatorCacheButton: Thay đổi giới hạn bộ nhớ cache dịch
   wwcConfigConversationbStatsSuccess: Đã bật bStats thành công.
@@ -159,7 +154,6 @@ Messages:
     một dịch giả đang hoạt động.
   wwctrlRateLimitSetSender: Đặt giới hạn tỷ lệ của bạn thành {0} giây.
   wwctrlRateLimitOffTarget: Tắt giới hạn tỷ lệ của {0}.
-  wwctrlRateLimitSetTarget: Đặt giới hạn tỷ lệ của {0} đến {1} giây.
   wwctrlNotATranslator: Bạn không phải là một dịch giả tích cực! Hãy chắc chắn rằng
     bạn đã thiết lập này với /wwct.
   wwctrlRateLimitAlreadyOffSender: Giới hạn lãi suất của bạn đã bị vô hiệu hóa.
@@ -278,12 +272,9 @@ Messages:
     được dịch, nhưng bạn có phiên dịch hoạt động từ {0} đến {1}.
   wwctCannotTranslateConsole: Bạn không thể bắt đầu phiên dịch cho giao diện điều
     khiển!
-  wwctLangToLangStart: Bắt đầu phiên dịch mới từ {0} đến {1}.
   wwcOnJoinTranslationNotificationSourceLang: Bạn có một phiên dịch hoạt động từ {0}
     đến {0}.
-  wwctAutoTranslateStartOtherPlayer: Bắt đầu phiên dịch mới cho {0} đến {1}.
   wwctTranslationStopped: Phiên dịch của bạn đã bị dừng lại.
-  wwctLangToLangStartOtherPlayer: Bắt đầu phiên dịch mới cho {0} từ {1} đến {2}.
   wwctAutoTranslateStart: Bắt đầu phiên dịch mới đến {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Bạn có một phiên dịch hoạt động đến
     {0}.
@@ -494,9 +485,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Dịch Systran
   wwcrTransFail: Tải lại WorldwideChat nhưng không bật trình dịch.
   wwcdCacheCleared: Bộ nhớ cache dịch đã được xóa.
-  wwcdCacheSize: Kích thước của bộ nhớ cache hiện là {0}, với giới hạn là {1}.
-  wwcdCacheTerm: '{0}. cachedTranslation:inputLang= {1}, outputLang= {2}, inputPhrase=
-    {3} | outputPhrase = {4}'
   wwcdInvalidCmd: Đối số không hợp lệ!
   systranHttpUnknown: 'Lỗi http không xác định: {0}'
   systranHttp400: Thông số xấu được gửi đến Systran. Có thể là một cặp ngôn ngữ xấu?
@@ -564,4 +552,16 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Thay đổi thành công tên người dùng
     PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Cấu hình'
+  wwcConfigConversationPrefixInput: Tiền tố hiện tại là {0}. Vui lòng nhập một cái
+    mới, hoặc nhập 0 để quay lại.
+  wwcConfigConversationLangInput: 'Ngôn ngữ plugin hiện tại là {0}. Vui lòng nhập
+    mã ngôn ngữ hợp lệ hoặc nhập 0 để hủy. Mã ngôn ngữ hợp lệ: {1}'
+  wwcdCacheSize: Kích thước của bộ nhớ cache hiện là {0}, với giới hạn {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Bắt đầu phiên dịch mới từ {0} sang {1}.
+  wwctAutoTranslateStartOtherPlayer: Bắt đầu phiên dịch mới cho {0} sang {1}.
+  wwctLangToLangStartOtherPlayer: Bắt đầu phiên dịch mới cho {0} từ {1} sang {2}.
+  wwcgLangToLangStart: Bây giờ dịch trò chuyện toàn cầu từ {0} sang {1}.
+  wwctrlRateLimitSetTarget: Đặt giới hạn tốc độ từ {0} đến {1} giây.
 

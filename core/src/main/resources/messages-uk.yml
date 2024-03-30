@@ -52,12 +52,9 @@ Messages:
   wwcConfigGUIQuitButton: Вийти і зберегти зміни
   wwctPlayerNotFound: Гравець %я не знайдено.
   wwcConfigGUIAmazonTranslateRegionButton: Змінити регіон Амазонки
-  wwcConfigConversationLangInput: 'Поточною мовою додатка є {0}. Будь ласка, введіть
-    коректний код мови або введіть 0, щоб скасувати. Коди допустимих мов: {0}'
   wwcConfigConversationLangInvalid: Некоректний код мови!
   wwcConfigGUIWatsonAPIKeyButton: Змінити ключ API Уотсона
   wwcEnabled: Увімкнено Всесвітній чат версії {0}.
-  wwcgLangToLangStart: Тепер переклад глобального чату з {0} на {1}.
   wwctbOnSender: Переклад книг увімкнено. Клацніть правою кнопкою миші, утримуючи
     книгу, щоб перекласти її!
   wwcListenersInitialized: Ініціалізовані слухачі.
@@ -109,8 +106,6 @@ Messages:
   wwctGUINewTranslationTarget: Вибір мови призначення
   wwcConfigConnectionSuccess: Успішно з'єднано з {0}
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Поточний префікс є {0}. Будь ласка, введіть новий
-    або введіть 0, щоб повернутися назад.
   wwcConfigGUIPreviousPageButton: Попередня сторінка
   wwcConfigGUITranslatorCacheButton: Змінити обмеження кешу перекладів
   wwcConfigConversationbStatsSuccess: Успішно перемикати bStats.
@@ -158,7 +153,6 @@ Messages:
   wwctrlPlayerNotFound: Гравець {0} або не знайдено, або не є активним перекладачем.
   wwctrlRateLimitSetSender: Встановіть обмеження швидкості на {0} секунд.
   wwctrlRateLimitOffTarget: Вимкнено обмеження швидкості з {0}.
-  wwctrlRateLimitSetTarget: Встановіть обмеження швидкості з {0} на {1} секунд.
   wwctrlNotATranslator: Ви не активний перекладач! Переконайтеся, що ви встановили
     це за допомогою /wwct.
   wwctrlRateLimitAlreadyOffSender: Обмеження ставки вже вимкнено.
@@ -273,13 +267,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобальний чат наразі
     перекладається, але у вас є активний сеанс перекладу з {0} до {1}.
   wwctCannotTranslateConsole: Ви не можете розпочати сеанс перекладу для консолі!
-  wwctLangToLangStart: Запуск нового сеансу перекладу з {0} до {1}.
   wwcOnJoinTranslationNotificationSourceLang: У вас є активний сеанс перекладу з {0}
     до {0}.
-  wwctAutoTranslateStartOtherPlayer: Запуск нового сеансу перекладу для {0} до {1}.
   wwctTranslationStopped: Ваш сеанс перекладу було зупинено.
-  wwctLangToLangStartOtherPlayer: Запуск нового сеансу перекладу для {0} з {1} до
-    {2}.
   wwctAutoTranslateStart: Запуск нового сеансу перекладу до {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: У вас є активний сеанс перекладу до
     {0}.
@@ -489,9 +479,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Систран Перекласти
   wwcrTransFail: Перезавантажено WorldwideChat, але не вдалося ввімкнути перекладач.
   wwcdCacheCleared: Кеш перекладу був очищений.
-  wwcdCacheSize: Розмір кешу наразі становить {0}, з обмеженням {1}.
-  wwcdCacheTerm: '{0}. кешуваний переклад: вхідний переклад = {1}, вихідний переклад
-    = {2}, вхідна фраза = {3} | вихідна фраза = {4}'
   wwcdInvalidCmd: Невірні аргументи!
   systranHttpUnknown: 'Невідома помилка http: {0}'
   systranHttp400: Погані параметри надіслані на Systran. Може бути погана мовна пара?
@@ -560,4 +547,16 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: Змінити базу даних PostgreSQL
   wwcConfigConversationPostgresUsernameSuccess: Успішно змінено ім'я користувача PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Конфігурація'
+  wwcConfigConversationPrefixInput: Поточний префікс {0}. Будь ласка, введіть новий
+    або введіть 0, щоб повернутися назад.
+  wwcConfigConversationLangInput: 'Поточна мова плагіна - {0}. Будь ласка, введіть
+    дійсний код мови або введіть 0, щоб скасувати. Допустимі мовні коди: {1}'
+  wwcdCacheSize: Розмір кешу наразі становить {0}, з обмеженням {1}.
+  wwcdCacheTerm: '{0}. кешуваний переклад: вхідний переклад = {1}, вихідна фраза =
+    {2}, вхідна фраза = {3} | вихідна фраза = {4}'
+  wwctLangToLangStart: Початок нової сесії перекладу з {0} до {1}.
+  wwctAutoTranslateStartOtherPlayer: Початок нової сесії перекладу для {0} на {1}.
+  wwctLangToLangStartOtherPlayer: Початок нової сесії перекладу для {0} з {1} до {2}.
+  wwcgLangToLangStart: Тепер переклад глобального чату з {0} на {1}.
+  wwctrlRateLimitSetTarget: Встановіть обмеження швидкості {0} до {1} секунд.
 

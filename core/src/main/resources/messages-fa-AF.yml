@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: خروج و ذخیره تغییرات
   wwctPlayerNotFound: بازیکن {0} یافت نشد.
   wwcConfigGUIAmazonTranslateRegionButton: تغییر منطقه آمازون
-  wwcConfigConversationLangInput: 'زبان افزایش {0} است. لطفا یک کد زبان معتبر وارد
-    کنید، یا برای لغو تایپ کنید. کدهای زبان معتبر: {0}'
   wwcConfigConversationLangInvalid: کد زبان نامعتبر!
   wwcConfigGUIWatsonAPIKeyButton: تغییر کلید API واتسون
   wwcEnabled: نسخه WorldwideChat را فعال کنید {0}.
-  wwcgLangToLangStart: اکنون ترجمه چت جهانی از {0} به {1}.
   wwctbOnSender: ترجمه کتاب فعال شد. هنگام نگه داشتن یک کتاب برای ترجمه آن راست کلیک
     کنید!
   wwcListenersInitialized: شنوندگان مقداردهی اولیه
@@ -105,8 +102,6 @@ Messages:
   wwctGUINewTranslationTarget: انتخاب زبان هدف
   wwcConfigConnectionSuccess: با موفقیت به {0} وصل شد!
   wwcConfigGUIGoogleTranslateButton: گوگل ترجمه
-  wwcConfigConversationPrefixInput: پیشوند فعلی {0} است. لطفا یک پیشوند جدید تایپ
-    کنید، یا 0 را برای بازگشت تایپ کنید.
   wwcConfigGUIPreviousPageButton: صفحه قبلی
   wwcConfigGUITranslatorCacheButton: تغییر محدودیت نهانگاه ترجمه
   wwcConfigConversationbStatsSuccess: bStats با موفقیت ضبدر.
@@ -152,7 +147,6 @@ Messages:
   wwctrlPlayerNotFound: بازیکن {0} یا یافت نشد، یا مترجم فعال نیست.
   wwctrlRateLimitSetSender: محدودیت نرخ خود را روی {0} ثانیه تنظیم کنید.
   wwctrlRateLimitOffTarget: محدودیت نرخ از {0} را خاموش کرد.
-  wwctrlRateLimitSetTarget: محدودیت نرخ از {0} به {1} ثانیه را تنظیم کنید.
   wwctrlNotATranslator: شما یک مترجم فعال نیستید! اطمینان حاصل کنید که شما این را
     با تنظیم کرده اند /wwct.
   wwctrlRateLimitAlreadyOffSender: حد مجاز نرخ شما در حال حاضر غیر فعال است.
@@ -268,12 +262,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: چت جهانی در حال ترجمه
     است، اما شما یک جلسه ترجمه فعال از {0} تا {1} دارید.
   wwctCannotTranslateConsole: شما نمی توانید جلسه ترجمه را برای کنسول شروع کنید!
-  wwctLangToLangStart: شروع یک جلسه ترجمه جدید از {0} تا {1}.
   wwcOnJoinTranslationNotificationSourceLang: شما یک جلسه ترجمه فعال از {0} تا {1}
     دارید.
-  wwctAutoTranslateStartOtherPlayer: شروع یک نشست ترجمه جدید برای {0} به {1}.
   wwctTranslationStopped: جلسه ترجمه شما متوقف شده است.
-  wwctLangToLangStartOtherPlayer: شروع یک نشست ترجمه جدید برای {0} از {1} به {2}.
   wwctAutoTranslateStart: شروع یک جلسه ترجمه جدید به {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: شما یک جلسه ترجمه فعال به {0} دارید.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: چت جهانی در حال ترجمه
@@ -488,9 +479,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: ترجمه سیسترن
   wwcrTransFail: WorldwideChat را مجددا بارگذاری کرد اما موفق به فعال کردن مترجم نشد.
   wwcdCacheCleared: حافظه ترجمه پاک شد.
-  wwcdCacheSize: اندازه حافظه پنهان در حال حاضر {0} است، با محدودیت {1}.
-  wwcdCacheTerm: '{۰}. ترجمه ذخیره سازی: ورودی لانگ = {1}، خروجی لانگ = {2}، فرض ورودی
-    = {3} | فرض خروجی = {4}'
   wwcdInvalidCmd: استدلال نامعتبر!
   systranHttpUnknown: 'خطای HTTP ناشناخته: {0}'
   systranHttp400: پارامترهای بد ارسال شده به سیسترن آیا ممکن است یک جفت زبان بد باشد؟
@@ -559,4 +547,16 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: نام کاربری PostgreSQL را با موفقیت
     تغییر داد.
   wwcConfigGUIStorageTypeSettings: '{0} پیکربندی'
+  wwcConfigConversationPrefixInput: پیشوند فعلی {0} است. لطفا یک مورد جدید تایپ کنید
+    یا 0 را تایپ کنید تا برگردید.
+  wwcConfigConversationLangInput: 'زبان فعلی پلاگین {0} است. لطفا یک کد زبان معتبر
+    وارد کنید یا 0 را تایپ کنید تا لغو شود. کدهای زبان معتبر: {1}'
+  wwcdCacheSize: اندازه حافظه پنهان در حال حاضر {0} است، با محدودیت {1}.
+  wwcdCacheTerm: '{0}. ترجمه ذخیره سازی: ورودی لانگ = {1}، خروجی لانگ = {2}، فرض ورودی
+    = {3} | فرض خروجی = {4}'
+  wwctLangToLangStart: شروع یک جلسه ترجمه جدید از {0} به {1}.
+  wwctAutoTranslateStartOtherPlayer: شروع یک جلسه ترجمه جدید برای {0} به {1}.
+  wwctLangToLangStartOtherPlayer: شروع یک جلسه ترجمه جدید برای {0} از {1} به {2}.
+  wwcgLangToLangStart: اکنون چت جهانی را از {0} به {1} ترجمه می کنید.
+  wwctrlRateLimitSetTarget: محدودیت نرخ {0} را به {1} ثانیه تنظیم کنید.
 

@@ -53,13 +53,9 @@ Messages:
   wwcConfigGUIQuitButton: Lumabas at I-save ang Mga Pagbab
   wwctPlayerNotFound: Ang manlalaro ng {0} ko natagpuan.
   wwcConfigGUIAmazonTranslateRegionButton: Baguhin ang rehiyon ng Amazon
-  wwcConfigConversationLangInput: 'Ang kasalukuyang wika ng plugin ay {0} Mangyaring
-    magpasok ng wastong code ng wika, o i-type ang 0 upang kanselahin. Walid na code
-    ng wika: {0}'
   wwcConfigConversationLangInvalid: Di-wastong code ng wika!
   wwcConfigGUIWatsonAPIKeyButton: Baguhin ang Watson API Key
   wwcEnabled: Pinagana ang bersyong WorldwideChat {0}.
-  wwcgLangToLangStart: Ngayon ay nagsasalin ng global chat mula sa {0} sa {1}.
   wwctbOnSender: Pinagana ang pagsasalin ng aklat. Mag-right-click habang may hawak
     na isang libro upang isalin ito!
   wwcListenersInitialized: Pinasimulan ng mga tagapakinig.
@@ -113,8 +109,6 @@ Messages:
   wwctGUINewTranslationTarget: Pumili ng isang Target na Wika
   wwcConfigConnectionSuccess: Matagumpay na nakakonekta sa {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Ang kasalukuyang prefix ay {0}. Paki-type ang
-    bago, o i-type ang 0 upang bumalik.
   wwcConfigGUIPreviousPageButton: Nakaraang Pahina
   wwcConfigGUITranslatorCacheButton: Baguhin ang Limitasyon ng Cache
   wwcConfigConversationbStatsSuccess: Matagumpay na na-toggled ang bStats.
@@ -168,7 +162,6 @@ Messages:
     isang aktibong tagasalin.
   wwctrlRateLimitSetSender: Itakda ang limitasyon ng iyong rate sa {0} segundo.
   wwctrlRateLimitOffTarget: Naka-off ang limitasyon ng rate ng {0}.
-  wwctrlRateLimitSetTarget: Itakda ang limitasyon ng rate ng {0} sa {1} segundo.
   wwctrlNotATranslator: Ikaw ay hindi isang aktibong tagasalin! Tiyaking itinakda
     mo ito sa /wwct.
   wwctrlRateLimitAlreadyOffSender: Ang iyong limitasyon sa rate ay naka-disable na.
@@ -296,14 +289,9 @@ Messages:
     chat, ngunit mayroon kang aktibong sesyon ng pagsasalin mula sa {0} sa {1}.
   wwctCannotTranslateConsole: Hindi ka maaaring magsimula ng sesyon ng pagsasalin
     para sa console!
-  wwctLangToLangStart: Simula ng bagong sesyon ng pagsasalin mula sa {0} sa {1}.
   wwcOnJoinTranslationNotificationSourceLang: Mayroon kang aktibong sesyon ng pagsasalin
     mula sa {0} sa {1}.
-  wwctAutoTranslateStartOtherPlayer: Simula ng bagong sesyon ng pagsasalin para sa
-    {0} sa {1}.
   wwctTranslationStopped: Ang iyong sesyon ng pagsasalin ay tumigil.
-  wwctLangToLangStartOtherPlayer: Simula ng bagong sesyon ng pagsasalin para sa {0}
-    mula sa {0} sa {1}.
   wwctAutoTranslateStart: Simula ng bagong sesyon ng pagsasalin sa {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Mayroon kang aktibong sesyon ng pagsasalin
     sa {0}.
@@ -541,9 +529,6 @@ Messages:
   wwcrTransFail: Muling na-load ang WorldwideChat ngunit nabigo na paganahin ang isang
     tagasalin.
   wwcdCacheCleared: Nilinis ang cache ng pagsasalin.
-  wwcdCacheSize: Ang laki ng cache ay kasalukuyang {0}, na may limitasyon na {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, outputLang= {2}, inputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Hindi wastong mga argumento!
   systranHttpUnknown: 'Hindi kilalang error sa http: {0}'
   systranHttp400: Masamang mga parameter na ipinadala sa Systran. Maaaring maging
@@ -625,4 +610,21 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Matagumpay na binago ang username
     na PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Pagsasaayos'
+  wwcConfigConversationPrefixInput: Ang kasalukuyang prefix ay {0}. Mangyaring mag-type
+    ng bago, o i-type ang 0 upang bumalik.
+  wwcConfigConversationLangInput: 'Ang kasalukuyang wika ng plugin ay {0}. Mangyaring
+    magpasok ng isang wastong code ng wika, o i-type ang 0 upang kanselahin. Mga wastong
+    code ng wika: {1}'
+  wwcdCacheSize: Ang laki ng cache ay kasalukuyang {0}, na may limitasyon ng {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Nagsisimula ng bagong session ng pagsasalin mula sa {0} hanggang
+    {1}.
+  wwctAutoTranslateStartOtherPlayer: Nagsisimula ng bagong session ng pagsasalin para
+    sa {0} hanggang {1}.
+  wwctLangToLangStartOtherPlayer: Nagsisimula ng bagong session ng pagsasalin para
+    sa {0} mula {1} hanggang {2}.
+  wwcgLangToLangStart: Ngayon ay nagsasalin ng pandaigdigang chat mula sa {0} hanggang
+    {1}.
+  wwctrlRateLimitSetTarget: Itakda ang limitasyon ng rate ng {0} hanggang {1} segundo.
 

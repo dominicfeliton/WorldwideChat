@@ -53,13 +53,9 @@ Messages:
   wwcConfigGUIQuitButton: Salir y guardar cambios
   wwctPlayerNotFound: No se encontró el jugador {0}.
   wwcConfigGUIAmazonTranslateRegionButton: Cambiar región de Amazon
-  wwcConfigConversationLangInput: 'El idioma del complemento actual es {0}. Introduzca
-    un código de idioma válido o escriba 0 para cancelar. Códigos de idioma válidos:
-    {0}'
   wwcConfigConversationLangInvalid: Código de idioma no válido.
   wwcConfigGUIWatsonAPIKeyButton: Cambiar clave de API de Watson
   wwcEnabled: Activada la versión WorldwideChat {0}.
-  wwcgLangToLangStart: Ahora traduciendo el chat global de {0} a {1}.
   wwctbOnSender: Traducción de libros habilitada. Haga clic con el botón derecho mientras
     sostiene un libro para traducirlo!
   wwcListenersInitialized: Escuchas inicializadas.
@@ -111,8 +107,6 @@ Messages:
   wwctGUINewTranslationTarget: Elegir un idioma de destino
   wwcConfigConnectionSuccess: Conectado correctamente a {0}!
   wwcConfigGUIGoogleTranslateButton: Traducir Google
-  wwcConfigConversationPrefixInput: El prefijo actual es {0}. Escriba uno nuevo o
-    escriba 0 para volver atrás.
   wwcConfigGUIPreviousPageButton: Página anterior
   wwcConfigGUITranslatorCacheButton: Cambiar límite de caché de traducción
   wwcConfigConversationbStatsSuccess: Se ha alternado correctamente los bStats.
@@ -163,7 +157,6 @@ Messages:
   wwctrlPlayerNotFound: El reproductor {0} no se encuentra o no es un traductor activo.
   wwctrlRateLimitSetSender: Establezca el límite de velocidad a {0} segundos.
   wwctrlRateLimitOffTarget: Desactivó el límite de velocidad de {0}.
-  wwctrlRateLimitSetTarget: Establezca el límite de velocidad de {0} a {1} segundos.
   wwctrlNotATranslator: ¡No eres un traductor activo! Asegúrese de haber configurado
     esto con /wwct.
   wwctrlRateLimitAlreadyOffSender: El límite de tarifa ya está deshabilitado.
@@ -283,14 +276,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: El chat global se está
     traduciendo, pero tienes una sesión de traducción activa de {0} a {1}.
   wwctCannotTranslateConsole: No puedes iniciar una sesión de traducción para consola.
-  wwctLangToLangStart: Iniciar una nueva sesión de traducción de {0} a {1}.
   wwcOnJoinTranslationNotificationSourceLang: Tienes una sesión de traducción activa
     de {0} a {1}.
-  wwctAutoTranslateStartOtherPlayer: Iniciar una nueva sesión de traducción de {0}
-    a {0}.
   wwctTranslationStopped: Se ha detenido la sesión de traducción.
-  wwctLangToLangStartOtherPlayer: Iniciar una nueva sesión de traducción para {0}
-    de {0} a {1}.
   wwctAutoTranslateStart: Iniciar una nueva sesión de traducción a {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Tienes una sesión de traducción activa
     a {0}.
@@ -528,9 +516,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Traductor Systran
   wwcrTransFail: Se recargó WorldwideChat pero no se pudo habilitar un traductor.
   wwcdCacheCleared: Se borró la memoria caché de traducción.
-  wwcdCacheSize: El tamaño de la caché es actualmente de {0}, con un límite de {1}.
-  wwcdCacheTerm: '{0}. Traducción en caché: inputLang= {1}, outputLang= {2}, inputPhrase=
-    {3} | outputPhrase= {4}'
   wwcdInvalidCmd: ¡Argumentos no válidos!
   systranHttpUnknown: 'Error http desconocido: {0}'
   systranHttp400: Se enviaron parámetros incorrectos a Systran. ¿Podría ser una mala
@@ -606,4 +591,19 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Se modificó correctamente el nombre
     de usuario de PostgreSQL.
   wwcConfigGUIStorageTypeSettings: Configuración {0}
+  wwcConfigConversationPrefixInput: El prefijo actual es {0}. Escriba uno nuevo o
+    escriba 0 para volver.
+  wwcConfigConversationLangInput: 'El idioma actual del plugin es {0}. Introduce un
+    código de idioma válido o escribe 0 para cancelar. Códigos de idioma válidos:
+    {1}'
+  wwcdCacheSize: El tamaño de la caché es actualmente {0}, con un límite de {1}.
+  wwcdCacheTerm: '{0}. Traducción en caché: InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Iniciar una nueva sesión de traducción del {0} al {1}.
+  wwctAutoTranslateStartOtherPlayer: Inicio de una nueva sesión de traducción de {0}
+    a {1}.
+  wwctLangToLangStartOtherPlayer: Inicio de una nueva sesión de traducción para {0}
+    de {1} a {2}.
+  wwcgLangToLangStart: Ahora traduzco el chat global de {0} a {1}.
+  wwctrlRateLimitSetTarget: Establece el límite de velocidad de {0} en {1} segundos.
 

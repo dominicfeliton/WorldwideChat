@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: Wijzigingen afsluiten en opslaan
   wwctPlayerNotFound: Speler {0} heb niet gevonden.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon-regio wijzigen
-  wwcConfigConversationLangInput: 'De huidige taal van de plug-in is {0}. Voer een
-    geldige taalcode in of typ 0 om te annuleren. Geldige taalcodes: {0}'
   wwcConfigConversationLangInvalid: Ongeldige taalcode!
   wwcConfigGUIWatsonAPIKeyButton: Watson API-sleutel wijzigen
   wwcEnabled: WorldwideChat-versie {0} ingeschakeld.
-  wwcgLangToLangStart: Vertaal nu globale chat van {0} naar {1}.
   wwctbOnSender: Boekvertaling ingeschakeld. Klik met de rechtermuisknop terwijl u
     een boek vasthoudt om het te
   wwcListenersInitialized: Initialiseerde listeners.
@@ -106,8 +103,6 @@ Messages:
   wwctGUINewTranslationTarget: Kies een doeltaal
   wwcConfigConnectionSuccess: Succesvol verbonden met {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Het huidige voorvoegsel is {0}. Typ een nieuw
-    voorvoegsel of typ 0 om terug te gaan.
   wwcConfigGUIPreviousPageButton: Vorige pagina
   wwcConfigGUITranslatorCacheButton: Limiet vertaalcache wijzigen
   wwcConfigConversationbStatsSuccess: BSTAT's zijn in- en uitgeschakeld.
@@ -158,7 +153,6 @@ Messages:
   wwctrlPlayerNotFound: Speler {0} is niet gevonden of is geen actieve vertaler.
   wwctrlRateLimitSetSender: Stel uw limiet in op {0} seconden.
   wwctrlRateLimitOffTarget: De snelheidslimiet van {0} is uitgeschakeld.
-  wwctrlRateLimitSetTarget: Stel de snelheidslimiet van {0} in op {1} seconden.
   wwctrlNotATranslator: U bent geen actieve vertaler! Zorg ervoor dat je dit hebt
     ingesteld met /wwct.
   wwctrlRateLimitAlreadyOffSender: Uw tarieflimiet is al uitgeschakeld.
@@ -277,14 +271,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globale chat wordt vertaald,
     maar je hebt een actieve vertaalsessie van {0} naar {1}.
   wwctCannotTranslateConsole: U kunt geen vertaalsessie starten voor de console!
-  wwctLangToLangStart: Een nieuwe vertaalsessie starten van {0} naar {1}.
   wwcOnJoinTranslationNotificationSourceLang: U hebt een actieve vertaalsessie van
     {0} naar {1}.
-  wwctAutoTranslateStartOtherPlayer: Een nieuwe vertaalsessie starten voor {0} naar
-    {0}.
   wwctTranslationStopped: Je vertaalsessie is gestopt.
-  wwctLangToLangStartOtherPlayer: Een nieuwe vertaalsessie voor {0} starten van {1}
-    naar {0}.
   wwctAutoTranslateStart: Een nieuwe vertaalsessie starten naar {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Je hebt een actieve vertaalsessie
     naar {0}.
@@ -501,9 +490,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Translate
   wwcrTransFail: WorldwideChat is opnieuw geladen, maar er is geen vertaler ingeschakeld.
   wwcdCacheCleared: De vertaalcache is gewist.
-  wwcdCacheSize: De grootte van de cache is momenteel {0}, met een limiet van {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, outputLang= {2}, InputPhrase=
-    {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Ongeldige argumenten!
   systranHttpUnknown: 'Onbekende http-fout: {0}'
   systranHttp400: Onjuiste parameters naar Systran gestuurd. Misschien een slechte
@@ -577,4 +563,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: De gebruikersnaam van PostgreSQL is
     succesvol gewijzigd.
   wwcConfigGUIStorageTypeSettings: '{0} Configuratie'
+  wwcConfigConversationPrefixInput: Het huidige voorvoegsel is {0}. Typ een nieuwe
+    of typ 0 om terug te gaan.
+  wwcConfigConversationLangInput: 'De huidige taal van de plug-in is {0}. Voer een
+    geldige taalcode in of typ 0 om te annuleren. Geldige taalcodes: {1}'
+  wwcdCacheSize: De grootte van de cache is momenteel {0}, met een limiet van {1}.
+  wwcdCacheTerm: '{0}. Vertaling in cache: InputLang = {1}, OutputLang = {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Een nieuwe vertaalsessie starten van {0} naar {1}.
+  wwctAutoTranslateStartOtherPlayer: Een nieuwe vertaalsessie starten voor {0} naar
+    {1}.
+  wwctLangToLangStartOtherPlayer: Een nieuwe vertaalsessie starten voor {0} van {1}
+    naar {2}.
+  wwcgLangToLangStart: Nu wordt wereldwijde chat vertaald van {0} naar {1}.
+  wwctrlRateLimitSetTarget: Stel de snelheidslimiet van {0} in op {1} seconden.
 

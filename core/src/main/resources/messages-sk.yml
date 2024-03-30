@@ -52,12 +52,9 @@ Messages:
   wwcConfigGUIQuitButton: Ukončiť a uložiť zmeny
   wwctPlayerNotFound: Hráč {0}šiel som.
   wwcConfigGUIAmazonTranslateRegionButton: Zmeniť oblasť Amazon
-  wwcConfigConversationLangInput: 'Aktuálny jazyk pluginu je {0}. Prosím zadajte platný
-    kód jazyka alebo zadajte 0 pre zrušenie. Platné kódy jazykov: {0}'
   wwcConfigConversationLangInvalid: Neplatný kód jazyka!
   wwcConfigGUIWatsonAPIKeyButton: Zmeniť Watson API kľúč
   wwcEnabled: Povolená verzia WorldwideChat {0}.
-  wwcgLangToLangStart: Teraz prekladám globálny chat z {0} do {1}.
   wwctbOnSender: Preklad kníh povolený. Kliknite pravým tlačidlom myši, zatiaľ čo
     držíte knihu preložiť!
   wwcListenersInitialized: Inicializovaní poslucháči.
@@ -108,8 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: Vyberte cieľový jazyk
   wwcConfigConnectionSuccess: Úspešne pripojený k {0}!
   wwcConfigGUIGoogleTranslateButton: Prekladač Google
-  wwcConfigConversationPrefixInput: Aktuálna predpona je {0}. Prosím zadajte novú
-    alebo zadajte 0, aby ste sa vrátili späť.
   wwcConfigGUIPreviousPageButton: Predchádzajúca strana
   wwcConfigGUITranslatorCacheButton: Zmeniť limit vyrovnávacej pamäte prekladu
   wwcConfigConversationbStatsSuccess: Úspešne prepínal bStats.
@@ -161,7 +156,6 @@ Messages:
   wwctrlPlayerNotFound: Prehrávač {0} sa buď nenašiel, alebo nie je aktívny prekladateľ.
   wwctrlRateLimitSetSender: Nastavte svoj limit sadzby na {0} sekúnd.
   wwctrlRateLimitOffTarget: Vypnutý limit sadzby {0}.
-  wwctrlRateLimitSetTarget: Nastavte limit sadzby {0} na {1} sekúnd.
   wwctrlNotATranslator: Nie ste aktívny prekladateľ! Uistite sa, že ste to nastavili
     pomocou /wwct.
   wwctrlRateLimitAlreadyOffSender: Váš limit sadzby je už vypnutý.
@@ -278,13 +272,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globálny chat sa prekladá,
     ale máte aktívnu reláciu prekladu od {0} do {1}.
   wwctCannotTranslateConsole: Nie je možné spustiť reláciu prekladu pre konzolu!
-  wwctLangToLangStart: Spustenie novej relácie prekladu od {0} do {1}.
   wwcOnJoinTranslationNotificationSourceLang: Máte aktívnu reláciu prekladu od {0}
     do {0}.
-  wwctAutoTranslateStartOtherPlayer: Spustenie novej relácie prekladu pre {0} do {1}.
   wwctTranslationStopped: Vaša relácia prekladu bola zastavená.
-  wwctLangToLangStartOtherPlayer: Spustenie novej relácie prekladu pre {0} od {1}
-    do {0}.
   wwctAutoTranslateStart: Spustenie novej relácie prekladu na {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Máte aktívnu reláciu prekladu do {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globálny chat je prekladaný,
@@ -497,9 +487,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Preložiť
   wwcrTransFail: Znovu načítal WorldwideChat, ale nepodarilo sa povoliť prekladateľ.
   wwcdCacheCleared: Vyrovnávacia pamäť prekladu bola vymazaná.
-  wwcdCacheSize: Veľkosť vyrovnávacej pamäte je v súčasnosti {0} s limitom {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, OutputLang= {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Neplatné argumenty!
   systranHttpUnknown: 'Neznáma chyba http: {0}'
   systranHttp400: Zlé parametre odoslané spoločnosti Systran. Môže to byť zlý jazykový
@@ -567,4 +554,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Úspešne zmenil používateľské meno
     PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Konfigurácia'
+  wwcConfigConversationPrefixInput: Aktuálna predpona je {0}. Zadajte nový alebo napíšte
+    0, aby ste sa vrátili späť.
+  wwcConfigConversationLangInput: 'Aktuálny jazyk pluginu je {0}. Zadajte platný kód
+    jazyka alebo napíšte 0 pre zrušenie. Platné jazykové kódy: {1}'
+  wwcdCacheSize: Veľkosť vyrovnávacej pamäte je v súčasnosti {0} s limitom {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang = {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Začatie novej prekladateľskej relácie z {0} na {1}.
+  wwctAutoTranslateStartOtherPlayer: Začatie novej prekladateľskej relácie pre {0}
+    až {1}.
+  wwctLangToLangStartOtherPlayer: Začatie novej prekladateľskej relácie pre {0} od
+    {1} do {2}.
+  wwcgLangToLangStart: Teraz prekladá globálny chat z {0} na {1}.
+  wwctrlRateLimitSetTarget: Nastavte limit rýchlosti {0} na {1} sekúnd.
 

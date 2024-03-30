@@ -52,12 +52,9 @@ Messages:
   wwcConfigGUIQuitButton: Ħruġ & Save Bidliet
   wwctPlayerNotFound: Player {0} ma nstabx.
   wwcConfigGUIAmazonTranslateRegionButton: Bidla Reġjun Amazon
-  wwcConfigConversationLangInput: 'Jekk jogħġbok ikteb kodiċi tal-lingwa valida, jew
-    tip 0 biex tikkanċella. Kodiċijiet validi tal-lingwa: {0}'
   wwcConfigConversationLangInvalid: Kodiċi tal-lingwa invalidu!
   wwcConfigGUIWatsonAPIKeyButton: Bidla Watson API Ewlenin
   wwcEnabled: Enabled verżjoni WorldwideChat {0}.
-  wwcgLangToLangStart: Issa traduzzjoni chat globali minn {0} sa {1}.
   wwctbOnSender: Ktieb traduzzjoni ppermettiet. Ikklikkja lemin waqt li żżomm ktieb
     biex tittraduċih!
   wwcListenersInitialized: Semmiegħa inizjalizzati.
@@ -107,8 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: Agħżel Lingwa tal-Mira
   wwcConfigConnectionSuccess: Konnessi b'suċċess għal {0}!
   wwcConfigGUIGoogleTranslateButton: Google Ittraduċi
-  wwcConfigConversationPrefixInput: Jekk jogħġbok tip waħda ġdida, jew tip 0 li jmorru
-    lura.
   wwcConfigGUIPreviousPageButton: Paġna ta'qabel
   wwcConfigGUITranslatorCacheButton: Bidla Traduzzjoni Cache Limitu
   wwcConfigConversationbStatsSuccess: B'suċċess toggled bStats.
@@ -158,7 +153,6 @@ Messages:
   wwctrlPlayerNotFound: Player {0} jew ma jinstabx, jew mhuwiex traduttur attiv.
   wwctrlRateLimitSetSender: Issettja l-limitu tar-rata tiegħek għal {0} sekondi.
   wwctrlRateLimitOffTarget: Itfi l-limitu tar-rata ta '{0}.
-  wwctrlRateLimitSetTarget: Issettja l-limitu tar-rata ta '{0} sa {1} sekondi.
   wwctrlNotATranslator: Inti mhux traduttur attiv! Kun żgur li stabbilixxejt dan ma
     '/wwct.
   wwctrlRateLimitAlreadyOffSender: Il-limitu tar-rata tiegħek huwa diġà b'diżabilità.
@@ -274,14 +268,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Chat globali qed jiġi
     tradott, imma inti għandek sessjoni ta 'traduzzjoni attiva minn {0} sa {1}.
   wwctCannotTranslateConsole: Inti ma tistax tibda sessjoni ta 'traduzzjoni għall-console!
-  wwctLangToLangStart: Tibda sessjoni ġdida ta 'traduzzjoni minn {0} sa {1}.
   wwcOnJoinTranslationNotificationSourceLang: Għandek sessjoni ta 'traduzzjoni attiva
     minn {0} sa {1}.
-  wwctAutoTranslateStartOtherPlayer: Tibda sessjoni ġdida ta 'traduzzjoni għal {0}
-    sa {0}.
   wwctTranslationStopped: Is-sessjoni tat-traduzzjoni tiegħek twaqqfet.
-  wwctLangToLangStartOtherPlayer: Tibda sessjoni ġdida ta 'traduzzjoni għal {0} minn
-    {0} sa {1}.
   wwctAutoTranslateStart: Tibda sessjoni ġdida ta 'traduzzjoni għal {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Għandek sessjoni ta 'traduzzjoni attiva
     għal {0}.
@@ -491,9 +480,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Traduċi Systran
   wwcrTransFail: Mgħobbija mill-ġdid WorldwideChat iżda naqas milli jippermetti traduttur.
   wwcdCacheCleared: Il-cache tat-traduzzjoni ġie kklerjat.
-  wwcdCacheSize: Id-daqs tal-cache bħalissa huwa {0}, b'limitu ta' {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:inputLang = {1}, outputLang= {2}, inputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Argumenti invalidi!
   systranHttpUnknown: 'Żball http mhux magħruf: {0}'
   systranHttp400: Parametri ħżiena mibgħuta lil Systran. Jista 'jkun par lingwistiku
@@ -561,4 +547,19 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: Ibdel id-Database PostgreSQL
   wwcConfigConversationPostgresUsernameSuccess: Biddel b'suċċess l-username PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Konfigurazzjoni'
+  wwcConfigConversationPrefixInput: Il-prefiss kurrenti huwa {0}. Jekk jogħġbok ittajpja
+    waħda ġdida, jew ittajpja 0 biex tmur lura.
+  wwcConfigConversationLangInput: 'Il-lingwa tal-plugin attwali hija {0}. Jekk jogħġbok
+    daħħal kodiċi tal-lingwa validu, jew ittajpja 0 biex tikkanċella. Kodiċijiet tal-lingwa
+    validi: {1}'
+  wwcdCacheSize: Id-daqs tal-cache bħalissa huwa {0}, b'limitu ta' {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, OutputLang= {2}, inputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Tibda sessjoni ġdida ta' traduzzjoni minn {0} għal {1}.
+  wwctAutoTranslateStartOtherPlayer: Tibda sessjoni ġdida ta' traduzzjoni għal {0}
+    għal {1}.
+  wwctLangToLangStartOtherPlayer: Tibda sessjoni ġdida ta 'traduzzjoni għal {0} minn
+    {1} għal {2}.
+  wwcgLangToLangStart: Issa tittraduċi chat globali minn {0} għal {1}.
+  wwctrlRateLimitSetTarget: Issettja l-limitu tar-rata ta' {0} għal {1} sekondi.
 

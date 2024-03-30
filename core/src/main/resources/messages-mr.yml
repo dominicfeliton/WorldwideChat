@@ -55,8 +55,6 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ग्लोबल चॅटचे भाषांतर
     केले जात आहे, परंतु तुमच्याकडे {0} करीता सक्रिय भाषांतर सत्र आहे.
   wwctiOffTarget: '{0} करीता आयटम भाषांतर अकार्यान्वीत केले आहे.'
-  wwcConfigConversationLangInput: 'वर्तमान प्लगइन भाषा {0} आहे. कृपया वैध भाषा कोड
-    प्रविष्ट करा, किंवा रद्द करण्यासाठी 0 टाइप करा. वैध भाषा कोड: {0}'
   wwctTranslationStopped: तुमचे भाषांतर सत्र थांबविले गेले आहे.
   wwcEntityTranslateNoName: अस्तित्व सानुकूल नाव नाही.
   wwcConfigGUIWatsonAPIKeyButton: वॉटसन API की बदला
@@ -110,8 +108,6 @@ Messages:
   wwcConfigConnectionSuccess: '{0} शी यशस्वीपणे कनेक्ट केलेले!'
   wwctGUIRateButton: दर मर्यादा सेट करा
   wwcConfigGUIGoogleTranslateButton: गूगल भाषांतर
-  wwcConfigConversationPrefixInput: वर्तमान उपसर्ग {0} आहे. कृपया नवीन टाइप करा किंवा
-    परत जाण्यासाठी 0 टाइप करा.
   wwctInvalidInputLangCode: 'अवैध इनपुट भाषा कोड प्रदान! वैध लांब कोड: {0}'
   wwcConfigConversationbStatsSuccess: यशस्वीरित्या bStats toggled.
   wwcSignDone: यशस्वीरित्या अनुवादित साइन इन करा.
@@ -120,7 +116,6 @@ Messages:
   wwcConfigGUIChatSettings: चॅट कॉन्फिगरेशन
   wwcConfigGUIWatsonURLButton: वॉटसन सेवा URL बदला
   wwcConfigConversationUpdateCheckerSuccess: अद्यतन तपासक विलंब यशस्वीरित्या सेट.
-  wwctrlRateLimitSetTarget: '{0} ते {1} सेकंदांची दर मर्यादा निश्चित करा.'
   wwcConfigGUIMessagesOverrideCustomLabel: नवीन संदेश
   wwcGUITempItem: आयटम प्रदर्शन
   wwcConfigConversationGoogleTranslateAPIKeyInput: वर्तमान API की {0} आहे. कृपया Google
@@ -218,15 +213,12 @@ Messages:
     {0} आहे. नवीन मुल्य सेट करण्यासाठी 0 पेक्षा जास्त काहीही टाइप करा, किंवा परत जाण्यासाठी
     0 पेक्षा कमी किंवा समान काहीही टाइप करा.
   wwcEnabled: वर्ल्डवाइडचॅट आवृत्ती {0} सक्षम केले.
-  wwcgLangToLangStart: आता जागतिक गप्पांचे भाषांतर {0} पासून {1} पर्यंत केले आहे.
   wwcConfigGUIPluginUpdateChatButton: प्लगइन अद्यतनांसाठी चॅट रिमाइंडर पाठवा
   wwcConfigGUIErrorLimitButton: अनुवादक त्रुटी मर्यादा बदला
   wwcConfigConversationWatsonAPIKeyInput: वर्तमान API कि {0} आहे. कृपया वॉटसनसाठी
     API की इनपुट करा, किंवा परत जाण्यासाठी टाइप करा 0.
   wwcgTranslationStopped: ग्लोबल चॅट भाषांतर थांबविले गेले आहे.
   wwcConfigConversationCharacterLimitSuccess: अक्षर मर्यादा यशस्वीरित्या सेट.
-  wwctAutoTranslateStartOtherPlayer: '{0} ते {1} करीता नविन भाषांतर सत्र सुरू करत
-    आहे.'
   wwcItemTranslateTitleStock: मुलभूत आयटम नावे अनुवाद करण्यास असमर्थ.
   wwcConfigConversationSyncUserDataDelaySuccess: वापरकर्ता डेटा समक्रमण विलंब यशस्वीरित्या
     सेट.
@@ -249,10 +241,7 @@ Messages:
   wwctInvalidArgs: अवैध वितर्क प्रदान!
   wwctCannotTranslateConsole: कन्सोलसाठी तुम्ही भाषांतर सत्र सुरू करू शकत नाही!
   wwctSameLangError: 'आपण एकाच भाषेत अनुवाद करू शकत नाही! वैध लांब कोड: {0}'
-  wwctLangToLangStartOtherPlayer: '{0} ते {1} पासून {2} करीता नविन भाषांतर सत्र सुरू
-    करत आहे.'
   wwcConfigGUICharacterLimitButton: संदेश अक्षर मर्यादा बदला
-  wwctLangToLangStart: '{0} पासून {1} पासून नविन भाषांतर सत्र सुरू करणे.'
   wwctGUISourceOrTargetTranslationAlreadyActive: ही भाषा आधीच सक्रिय आहे!
   wwcConfigGUIPreviousPageButton: मागील पृष्ठ
   wwcConfigGUITranslatorCacheButton: भाषांतर कॅशे मर्यादा बदला
@@ -484,9 +473,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: सिस्ट्रान भाषांतर
   wwcrTransFail: वर्ल्डविडचॅट रीलोड केले गेले परंतु अनुवादक सक्षम करण्या
   wwcdCacheCleared: भाषांतर कॅशे साफ केले गेले.
-  wwcdCacheSize: कॅशेचा आकार सध्या {0} आहे, ज्याची मर्यादा {1} आहे.
-  wwcdCacheTerm: '{0}. कॅशेडट्रान्सलेशन:इनपुटलँग = {1}, आउटपुटलँग = {2}, इनपुटफ्रेस
-    = {3} | आउटपुटफ्रेस = {4}'
   wwcdInvalidCmd: अवैध वाद!
   systranHttpUnknown: 'अज्ञात HTTP त्रुटी: {0}'
   systranHttp400: सिस्ट्रान यांना पाठविलेले वाईट वाईट भाषेची जोडी असू शकते?
@@ -549,4 +535,17 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: पोस्टग्रीएसक्यूएल डेट
   wwcConfigConversationPostgresUsernameSuccess: पोस्टग्रीएसक्यूएल वापरकर्तानाव यशस्व
   wwcConfigGUIStorageTypeSettings: '{0} संरचना'
+  wwcConfigConversationPrefixInput: सध्याचा पूर्वार्ग {0} आहे. कृपया नवीन टाइप करा
+    किंवा परत जाण्यासाठी 0 टाइप करा.
+  wwcConfigConversationLangInput: 'सध्याची प्लगइन भाषा {0} आहे. कृपया वैध भाषा कोड
+    प्रविष्ट करा किंवा रद्द करण्यासाठी 0 टाइप करा वैध भाषा कोड: {1}'
+  wwcdCacheSize: कॅशेचा आकार सध्या {0} आहे, ज्याची मर्यादा {1} आहे.
+  wwcdCacheTerm: '{0}. कॅशेडट्रान्सलेशन:इनपुटलँग = {1}, आउटपुटलँग = {2}, इनपुटफ्रेस
+    = {3} | आउटपुटफ्रेस = {4}'
+  wwctLangToLangStart: '{0} ते {1} पर्यंत नवीन भाषांतर सत्र सुरू करणे.'
+  wwctAutoTranslateStartOtherPlayer: '{0} ते {1} साठी नवीन भाषांतर सत्र सुरू करणे.'
+  wwctLangToLangStartOtherPlayer: '{1} ते {2} पर्यंत {0} साठी नवीन भाषांतर सत्र सुरू
+    करणे.'
+  wwcgLangToLangStart: आता जागतिक चॅटचे भाषांतर {0} ते {1} पर्यंत
+  wwctrlRateLimitSetTarget: '{0} ची दर मर्यादा {1} सेकंद पर्यंत सेट करा.'
 

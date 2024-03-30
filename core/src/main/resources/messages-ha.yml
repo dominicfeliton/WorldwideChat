@@ -50,13 +50,9 @@ Messages:
   wwcConfigGUIQuitButton: Fita & Ajiye Canje-canje
   wwctPlayerNotFound: Mai wasa {0} samu ba.
   wwcConfigGUIAmazonTranslateRegionButton: Canja Yankin Amazon
-  wwcConfigConversationLangInput: 'Harshen plugin na yanzu shine {0}. Da fatan za
-    a shigar da lambar harshe mai inganci, ko rubuta 0 don sokewa. Lambobin harshe
-    masu inganci: {0}'
   wwcConfigConversationLangInvalid: Lambar harshe mara inganci!
   wwcConfigGUIWatsonAPIKeyButton: Canja Maɓallin Watson API
   wwcEnabled: An kunna versionWideChat na Duniya {0}.
-  wwcgLangToLangStart: Yanzu ana fassara hira ta duniya dag {0} zuwa {1}.
   wwctbOnSender: An kunna fassarar littafi. Danna-dama yayin riƙe da littafi don fassara
     shi!
   wwcListenersInitialized: Masu sauraro na fara.
@@ -105,8 +101,6 @@ Messages:
   wwctGUINewTranslationTarget: Zabi Harshen Target
   wwcConfigConnectionSuccess: An haɗa nasarar zuwa {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Shafin farko na yanzu shi ne {0}. Da fatan za
-    a rubuta sabon abu, ko rubuta 0 don komawa.
   wwcConfigGUIPreviousPageButton: Shafin baya
   wwcConfigGUITranslatorCacheButton: Canja Ƙayyadadden Fassara
   wwcConfigConversationbStatsSuccess: An samu nasarar haifar da bStats.
@@ -156,7 +150,6 @@ Messages:
     mai aiki ba ne.
   wwctrlRateLimitSetSender: Saita iyakar kuɗin ku zuwa {0} seconds.
   wwctrlRateLimitOffTarget: Kashe iyakar kuɗin na {0}.
-  wwctrlRateLimitSetTarget: Saita iyakar kudi na {0} zuwa {1} seconds.
   wwctrlNotATranslator: Kai ba mai fassara ne mai aiki ba! Tabbatar cewa kun saita
     wannan tare da /wwct.
   wwctrlRateLimitAlreadyOffSender: An riga an kashe iyakar kuɗin ku.
@@ -270,12 +263,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Ana fassara tattaunawar
     duniya, amma kuna da zaman fassara mai aiki daga {0} zuwa {1}.
   wwctCannotTranslateConsole: Ba za ku iya fara zaman fassara ba don na'ura mai kwakwalwa!
-  wwctLangToLangStart: Fara sabon zaman fassara daga {0} zuwa {1}.
   wwcOnJoinTranslationNotificationSourceLang: Kana da zaman fassara mai aiki daga
     {0} zuwa {1}.
-  wwctAutoTranslateStartOtherPlayer: Fara sabon zaman fassara na {0} zuwa {1}.
   wwctTranslationStopped: An dakatar da zaman fassararka.
-  wwctLangToLangStartOtherPlayer: Fara sabon zaman fassara na {0} daga {1} zuwa {2}.
   wwctAutoTranslateStart: Fara sabon zaman fassara zuwa {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Kana da zaman fassara mai aiki zuwa
     {0}.
@@ -488,9 +478,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Fassara Systran
   wwcrTransFail: An sake loda WorldwideChat amma ya kasa kunna mai fassara.
   wwcdCacheCleared: An share cache na fassara.
-  wwcdCacheSize: Girman cache a halin yanzu shine {0}, tare da iyakar {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, fitowLang= {2}, InputPhrase=
-    {3} | fitowarPhrase= {4}'
   wwcdInvalidCmd: Muhawara mara kyau!
   systranHttpUnknown: 'Kuskuren http da ba a sani ba: {0}'
   systranHttp400: Muggun sigogi da aka aika zuwa Systran. Zai iya zama mummunan harshe?
@@ -558,4 +545,17 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: An sami nasarar canza sunan mai amfani
     na PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Daidaitawa'
+  wwcConfigConversationPrefixInput: Gabatarwar yanzu shine {0}. Da fatan za a rubuta
+    sabon, ko rubuta 0 don komawa.
+  wwcConfigConversationLangInput: 'Harshen plugin na yanzu shine {0}. Da fatan za
+    a shigar da lambar yare mai inganci, ko rubuta 0 don soke. Lambobin yare masu
+    inganci: {1}'
+  wwcdCacheSize: Girman cache a halin yanzu shine {0}, tare da iyaka na {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Fara sabon zaman fassara daga {0} zuwa {1}.
+  wwctAutoTranslateStartOtherPlayer: Fara sabon zaman fassara don {0} zuwa {1}.
+  wwctLangToLangStartOtherPlayer: Fara sabon zaman fassara don {0} daga {1} zuwa {2}.
+  wwcgLangToLangStart: Yanzu fassara hira ta duniya daga {0} zuwa {1}.
+  wwctrlRateLimitSetTarget: Saita iyakar ƙimar {0} zuwa {1} daƙiƙa.
 

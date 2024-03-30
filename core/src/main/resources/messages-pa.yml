@@ -57,8 +57,6 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ
     ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ, ਪਰ ਤੁਹਾਡੇ ਕੋਲ {0} ਲਈ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਹੈ।
   wwctiOffTarget: ਆਈਟਮ ਅਨੁਵਾਦ {0} ਲਈ ਅਯੋਗ ਹੈ।
-  wwcConfigConversationLangInput: 'ਮੌਜੂਦਾ ਪਲੱਗਇਨ ਭਾਸ਼ਾ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਰੱਦ ਕਰਨ ਲਈ
-    ਇੱਕ ਵੈਧ ਭਾਸ਼ਾ ਕੋਡ ਦਰਜ ਕਰੋ, ਜਾਂ ਟਾਈਪ 0 ਟਾਈਪ ਕਰੋ। ਪ੍ਰਮਾਣਿਕ ਭਾਸ਼ਾ ਕੋਡ: {0}'
   wwctTranslationStopped: ਤੁਹਾਡਾ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ।
   wwcEntityTranslateNoName: ਸੰਸਥਾ ਦਾ ਕੋਈ ਕਸਟਮ ਨਾਮ ਨਹੀਂ ਹੈ
   wwcConfigGUIWatsonAPIKeyButton: ਵਾਟਸਨ API ਨੂੰ ਕੁੰਜੀ ਬਦਲੋ
@@ -112,8 +110,6 @@ Messages:
   wwcConfigConnectionSuccess: ਸਫਲਤਾਪੂਰਕ {0} ਨਾਲ ਜੁੜਿਆ!
   wwctGUIRateButton: ਸੈੱਟ ਦਰ ਸੀਮਾ
   wwcConfigGUIGoogleTranslateButton: ਗੂਗਲ ਅਨੁਵਾਦ
-  wwcConfigConversationPrefixInput: ਮੌਜੂਦਾ ਅਗੇਤਰ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਨਵਾਂ ਟਾਈਪ ਕਰੋ,
-    ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ.
   wwctInvalidInputLangCode: 'ਗਲਤ ਇੰਪੁੱਟ ਭਾਸ਼ਾ ਕੋਡ ਦਿੱਤਾ ਗਿਆ! ਵੈਧ ਲੰਬੇ ਕੋਡ: {0}'
   wwcConfigConversationbStatsSuccess: ਸਫਲਤਾਪੂਰਵਕ ਬੀਐਸਟੀਟਸ ਨੂੰ ਬਦਲ ਦਿੱਤਾ ਗਿਆ.
   wwcSignDone: ਸਾਈਨ ਸਫਲਤਾਪੂਰਕ ਅਨੁਵਾਦ ਕੀਤਾ.
@@ -122,7 +118,6 @@ Messages:
   wwcConfigGUIChatSettings: ਚੈਟ ਸੰਰਚਨਾ
   wwcConfigGUIWatsonURLButton: ਵਾਟਸਨ ਸਰਵਿਸ URL ਬਦਲੋ
   wwcConfigConversationUpdateCheckerSuccess: ਅਪਡੇਟ ਚੈਕਰ ਦੇਰੀ ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ ਕੀਤੀ ਗਈ.
-  wwctrlRateLimitSetTarget: '{0} ਤੋਂ {1} ਸਕਿੰਟ ਦੀ ਦਰ ਸੀਮਾ ਨਿਰਧਾਰਤ ਕਰੋ.'
   wwcConfigGUIMessagesOverrideCustomLabel: ਨਵਾਂ ਸੁਨੇਹਾ
   wwcGUITempItem: ਆਈਟਮ ਡਿਸਪਲੇਅ
   wwcConfigConversationGoogleTranslateAPIKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ
@@ -221,14 +216,12 @@ Messages:
     ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਜਾਂ ਇਸ
     ਦੇ ਬਰਾਬਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ।
   wwcEnabled: ਸਮਰੱਥ ਵਰਲਡਵਿਡਚੈਟ ਵਰਜਨ {0}.
-  wwcgLangToLangStart: ਹੁਣ {0} ਤੋਂ {1} ਤੱਕ ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ ਕਰ ਰਿਹਾ ਹੈ।
   wwcConfigGUIPluginUpdateChatButton: ਪਲੱਗਇਨ ਅੱਪਡੇਟ ਲਈ ਚੈਟ ਯਾਦ ਭੇਜੋ
   wwcConfigGUIErrorLimitButton: ਬਦਲੋ ਅਨੁਵਾਦਕ ਗਲਤੀ ਸੀਮਾ
   wwcConfigConversationWatsonAPIKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਵਾਟਸਨ
     ਲਈ ਇੱਕ API ਕੁੰਜੀ ਇੰਪੁੱਟ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ।
   wwcgTranslationStopped: ਗਲੋਬਲ ਚੈਟ ਅਨੁਵਾਦ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ.
   wwcConfigConversationCharacterLimitSuccess: ਅੱਖਰ ਸੀਮਾ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
-  wwctAutoTranslateStartOtherPlayer: '{0} ਤੋਂ {1} ਲਈ ਨਵਾਂ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
   wwcItemTranslateTitleStock: ਮੂਲ ਇਕਾਈ ਨੂੰ ਨਾਮ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ.
   wwcConfigConversationSyncUserDataDelaySuccess: ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਦੇਰੀ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ
     ਕੀਤਾ.
@@ -250,9 +243,7 @@ Messages:
   wwctInvalidArgs: ਗਲਤ ਦਲੀਲਾਂ ਪ੍ਰਦਾਨ ਕੀਤੀਆਂ ਗਈਆਂ!
   wwctCannotTranslateConsole: ਤੁਸੀਂ ਕੰਸੋਲ ਲਈ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਨਹੀਂ ਕਰ ਸਕਦੇ!
   wwctSameLangError: 'ਤੁਸੀਂ ਉਸੇ ਭਾਸ਼ਾ ਵਿੱਚ ਅਨੁਵਾਦ ਨਹੀਂ ਕਰ ਸਕਦੇ! ਵੈਧ ਲੰਬੇ ਕੋਡ: {0}'
-  wwctLangToLangStartOtherPlayer: '{0} ਤੋਂ {1} ਲਈ ਨਵਾਂ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
   wwcConfigGUICharacterLimitButton: ਸੁਨੇਹਾ ਅੱਖਰ ਸੀਮਾ ਬਦਲੋ
-  wwctLangToLangStart: '{0} ਤੋਂ {1} ਤੱਕ ਨਵਾਂ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
   wwctGUISourceOrTargetTranslationAlreadyActive: ਇਹ ਭਾਸ਼ਾ ਪਹਿਲਾਂ ਹੀ ਸਰਗਰਮ ਹੈ!
   wwcConfigGUIPreviousPageButton: ਪਿਛਲੇ ਸਫ਼ੇ
   wwcConfigGUITranslatorCacheButton: ਅਨੁਵਾਦ ਕੈਸ਼ ਸੀਮਾ ਬਦਲੋ
@@ -487,9 +478,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: ਸਿਸਟ੍ਰਨ ਅਨੁਵਾਦ ਕਰੋ
   wwcrTransFail: ਵਰਲਡਵਾਈਡਚੈਟ ਨੂੰ ਦੁਬਾਰਾ ਲੋਡ ਕੀਤਾ ਪਰ ਅਨੁਵਾਦਕ ਨੂੰ ਸਮਰੱਥ ਬਣਾਉਣ ਵਿੱਚ ਅਸਫਲ
   wwcdCacheCleared: ਅਨੁਵਾਦ ਕੈਸ਼ ਸਾਫ਼ ਕਰ ਦਿੱਤਾ ਗਿਆ ਸੀ।
-  wwcdCacheSize: ਕੈਸ਼ ਦਾ ਆਕਾਰ ਵਰਤਮਾਨ ਵਿੱਚ {0} ਹੈ, {1} ਦੀ ਸੀਮਾ ਦੇ ਨਾਲ।
-  wwcdCacheTerm: '{0}. ਕੈਚਡਟ੍ਰਾਂਸਲੇਸ਼ਨ: ਇਨਪੁਟਲੈਂਗ = {1}, ਆਉਟਪੁੱਟਲੈਂਗ = {2}, ਇਨਪੁਟਫਰੇਜ਼
-    = {3} | ਆਉਟਪੁੱਟਫਰੇਜ਼ = {4}'
   wwcdInvalidCmd: ਅਵੈਧ ਦਲੀਲਾਂ!
   systranHttpUnknown: 'ਅਣਜਾਣ http ਗਲਤੀ: {0}'
   systranHttp400: ਮਾੜੇ ਮਾਪਦੰਡ ਸਿਸਟ੍ਰਾਨ ਨੂੰ ਭੇਜੇ ਗਏ। ਸ਼ਾਇਦ ਇੱਕ ਮਾੜੀ ਭਾਸ਼ਾ ਦੀ ਜੋੜੀ ਹੋ
@@ -559,4 +547,17 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: ਸਫਲਤਾਪੂਰਵਕ PostgreSQL ਉਪਭੋਗਤਾ ਨਾਮ
     ਬਦਲਿਆ.
   wwcConfigGUIStorageTypeSettings: '{0} ਕੌਂਫਿਗਰੇਸ਼ਨ'
+  wwcConfigConversationPrefixInput: ਮੌਜੂਦਾ ਅਗੇਤਰ {0} ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਨਵਾਂ ਟਾਈਪ
+    ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationLangInput: 'ਮੌਜੂਦਾ ਪਲੱਗਇਨ ਭਾਸ਼ਾ {0} ਹੈ. ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਵੈਧ
+    ਭਾਸ਼ਾ ਕੋਡ ਦਾਖਲ ਕਰੋ, ਜਾਂ ਰੱਦ ਕਰਨ ਲਈ 0 ਟਾਈਪ ਕਰੋ। ਵੈਧ ਭਾਸ਼ਾ ਕੋਡ: {1}'
+  wwcdCacheSize: ਕੈਸ਼ ਦਾ ਆਕਾਰ ਵਰਤਮਾਨ ਵਿੱਚ {0} ਹੈ, {1} ਦੀ ਸੀਮਾ ਦੇ ਨਾਲ।
+  wwcdCacheTerm: '{0}. ਕੈਚਡਟ੍ਰਾਂਸਲੇਸ਼ਨ:ਇਨਪੁਟਲੈਂਗ = {1}, ਆਉਟਪੁੱਟਲੈਂਗ = {2}, ਇਨਪੁਟਫਰੇਜ਼=
+    {3} | ਆਉਟਪੁੱਟਫਰੇਜ਼= {4}'
+  wwctLangToLangStart: '{0} ਤੋਂ {1} ਤੱਕ ਇੱਕ ਨਵਾਂ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
+  wwctAutoTranslateStartOtherPlayer: '{0} ਤੋਂ {1} ਲਈ ਇੱਕ ਨਵਾਂ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
+  wwctLangToLangStartOtherPlayer: '{1} ਤੋਂ {2} ਤੱਕ {0} ਲਈ ਇੱਕ ਨਵਾਂ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਸ਼ੁਰੂ
+    ਕਰਨਾ।'
+  wwcgLangToLangStart: ਹੁਣ ਗਲੋਬਲ ਚੈਟ ਦਾ {0} ਤੋਂ {1} ਤੱਕ ਅਨੁਵਾਦ ਕਰ ਰਿਹਾ ਹੈ।
+  wwctrlRateLimitSetTarget: '{0} ਦੀ ਦਰ ਸੀਮਾ ਨੂੰ {1} ਸਕਿੰਟ ਤੱਕ ਸੈਟ ਕਰੋ।'
 

@@ -50,12 +50,9 @@ Messages:
   wwcConfigGUIQuitButton: Выход и сохранение изменений
   wwctPlayerNotFound: Игрок %Я не найден.
   wwcConfigGUIAmazonTranslateRegionButton: Изменить регион Amazon
-  wwcConfigConversationLangInput: 'Текущий язык плагина {0}. Введите допустимый код
-    языка или введите 0 для отмены. Допустимые коды языков: {0}'
   wwcConfigConversationLangInvalid: Недопустимый код языка!
   wwcConfigGUIWatsonAPIKeyButton: Изменение ключа API Watson
   wwcEnabled: 'Включена версия WorldwideChat: {0}.'
-  wwcgLangToLangStart: Теперь перевод глобального чата из {0} на {1}.
   wwctbOnSender: Перевод книг включен. Щелкните правой кнопкой мыши, удерживая книгу,
     чтобы перевести ее!
   wwcListenersInitialized: Инициализированные слушатели.
@@ -107,8 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: Выберите целевой язык
   wwcConfigConnectionSuccess: Успешно подключено к {0}!
   wwcConfigGUIGoogleTranslateButton: Google Перевести
-  wwcConfigConversationPrefixInput: 'Текущий префикс: {0}. Введите новый или введите
-    0, чтобы вернуться.'
   wwcConfigGUIPreviousPageButton: Предыдущая страница
   wwcConfigGUITranslatorCacheButton: Изменить ограничение кэша перевода
   wwcConfigConversationbStatsSuccess: bStats успешно переключен.
@@ -159,7 +154,6 @@ Messages:
   wwctrlPlayerNotFound: Игрок {0} либо не найден, либо не является активным переводчиком.
   wwctrlRateLimitSetSender: Установите ограничение скорости на {0} секунд.
   wwctrlRateLimitOffTarget: Отключен лимит тарифа {0}.
-  wwctrlRateLimitSetTarget: Установите ограничение скорости в {0} до {1} секунд.
   wwctrlNotATranslator: Вы не активный переводчик! Убедитесь, что вы установили это
     с помощью /wwct.
   wwctrlRateLimitAlreadyOffSender: Ваш лимит тарифов уже отключен.
@@ -279,12 +273,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобальный чат переводится,
     но у вас есть активный сеанс перевода с {0} на {1}.
   wwctCannotTranslateConsole: Вы не можете начать сеанс перевода для консоли!
-  wwctLangToLangStart: Начало нового сеанса перевода с {0} на {1}.
   wwcOnJoinTranslationNotificationSourceLang: У вас есть активный сеанс перевода от
     {0} до {1}.
-  wwctAutoTranslateStartOtherPlayer: Начало нового сеанса перевода для {0} в {1}.
   wwctTranslationStopped: Сеанс перевода остановлен.
-  wwctLangToLangStartOtherPlayer: Начало нового сеанса перевода для {0} с {1} на {2}.
   wwctAutoTranslateStart: Начало нового сеанса перевода в {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: У вас есть активный сеанс перевода
     на {0}.
@@ -492,9 +483,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Системный перевод
   wwcrTransFail: Перезагрузил WorldwideChat, но не смог включить переводчика.
   wwcdCacheCleared: Кэш переводов был очищен.
-  wwcdCacheSize: Размер кэша в настоящее время равен {0} с ограничением {1}.
-  wwcdCacheTerm: '{0}. Кэшированный перевод: входной Lang = {1}, выходной Lang = {2},
-    входная фраза = {3} | Выходная фраза = {4}'
   wwcdInvalidCmd: Неверные аргументы!
   systranHttpUnknown: 'Неизвестная ошибка http: {0}'
   systranHttp400: Неверные параметры отправлены в Systran. Возможно, это плохая языковая
@@ -565,4 +553,17 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Имя пользователя PostgreSQL успешно
     изменено.
   wwcConfigGUIStorageTypeSettings: '{0} Конфигурация'
+  wwcConfigConversationPrefixInput: Текущий префикс — {0}. Введите новый или 0, чтобы
+    вернуться назад.
+  wwcConfigConversationLangInput: 'Текущий язык плагинов — {0}. Пожалуйста, введите
+    действительный код языка или введите 0, чтобы отменить подписку. Допустимые языковые
+    коды: {1}'
+  wwcdCacheSize: Размер кэша в настоящее время равен {0} с ограничением {1}.
+  wwcdCacheTerm: '{0}. Кэшированный перевод: входной Lang = {1}, выходной Lang = {2},
+    входная фраза = {3} | Выходная фраза = {4}'
+  wwctLangToLangStart: Начало нового сеанса перевода с {0} на {1}.
+  wwctAutoTranslateStartOtherPlayer: Начало нового сеанса перевода для {0} на {1}.
+  wwctLangToLangStartOtherPlayer: Начало нового сеанса перевода {0} с {1} на {2}.
+  wwcgLangToLangStart: Теперь переводим глобальный чат с {0} на {1}.
+  wwctrlRateLimitSetTarget: Установите ограничение скорости {0} на {1} секунды.
 

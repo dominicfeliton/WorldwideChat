@@ -58,8 +58,6 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: O chat global está a
     ser traduzido, mas você tem uma sessão ativa de tradução para {0}.
   wwctiOffTarget: Tradução de item desativada para {0}.
-  wwcConfigConversationLangInput: 'O idioma do plugin actual é {0}. Introduza um código
-    de idioma válido ou escreva 0 para cancelar. Códigos de idioma válidos: {0}'
   wwctTranslationStopped: A sua sessão de tradução foi interrompida.
   wwcEntityTranslateNoName: A entidade não tem um nome personalizado.
   wwcConfigGUIWatsonAPIKeyButton: Alterar Chave da API de Watson
@@ -115,8 +113,6 @@ Messages:
   wwcConfigConnectionSuccess: Conectado com sucesso ao {0}!
   wwctGUIRateButton: Definir limite de taxa
   wwcConfigGUIGoogleTranslateButton: Google Traduzir
-  wwcConfigConversationPrefixInput: O prefixo atual é {0}. Digite um novo ou escreva
-    0 para voltar atrás.
   wwctInvalidInputLangCode: 'Código de linguagem de entrada inválido fornecido! Códigos
     lang válidos: {0}'
   wwcConfigConversationbStatsSuccess: bStats alternados com sucesso.
@@ -127,7 +123,6 @@ Messages:
   wwcConfigGUIWatsonURLButton: Alterar URL do serviço de Watson
   wwcConfigConversationUpdateCheckerSuccess: Atraso do verificador de actualizações
     definido com sucesso
-  wwctrlRateLimitSetTarget: Defina o limite de taxa de {0} para {1} segundos.
   wwcConfigGUIMessagesOverrideCustomLabel: Nova Mensagem
   wwcGUITempItem: Visualização de itens
   wwcConfigConversationGoogleTranslateAPIKeyInput: A chave API atual é {0}. Introduza
@@ -226,7 +221,6 @@ Messages:
     é {0}. Digite qualquer coisa superior a 0 para definir um novo valor, ou digite
     qualquer coisa inferior ou igual a 0 para voltar atrás.
   wwcEnabled: Activada versão WorldwideChat {0}.
-  wwcgLangToLangStart: Agora traduzir bate-papo global de {0} para {1}.
   wwcConfigGUIPluginUpdateChatButton: Enviar lembrete de chat para atualizações de
     plugin
   wwcConfigGUIErrorLimitButton: Alterar limite de erro do tradutor
@@ -234,8 +228,6 @@ Messages:
     chave API para o Watson ou introduza 0 para voltar atrás.
   wwcgTranslationStopped: A tradução global do chat foi interrompida.
   wwcConfigConversationCharacterLimitSuccess: Limite de caracteres definido com sucesso.
-  wwctAutoTranslateStartOtherPlayer: Início de uma nova sessão de tradução para {0}
-    para {0}.
   wwcItemTranslateTitleStock: Não é possível traduzir nomes de itens predefinidos.
   wwcConfigConversationSyncUserDataDelaySuccess: Atraso de sincronização de dados
     do utilizador definido com êxito
@@ -260,10 +252,7 @@ Messages:
     consola!
   wwctSameLangError: 'Não se pode traduzir para a mesma língua! Códigos lang válidos:
     {0}'
-  wwctLangToLangStartOtherPlayer: Iniciar uma nova sessão de tradução para {0} de
-    {1} para {0}.
   wwcConfigGUICharacterLimitButton: Alterar o limite de caracter
-  wwctLangToLangStart: Início de uma nova sessão de tradução de {0} para {1}.
   wwctGUISourceOrTargetTranslationAlreadyActive: Esta linguagem já está ativa!
   wwcConfigGUIPreviousPageButton: Página Anterior
   wwcConfigGUITranslatorCacheButton: Alterar o Limite de Cache
@@ -505,9 +494,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Tradutor
   wwcrTransFail: Recarregou o WorldwideChat mas não conseguiu activar um tradutor.
   wwcdCacheCleared: A cache de tradução foi limpa.
-  wwcdCacheSize: O tamanho da cache é atualmente {0}, com um limite de {1}.
-  wwcdCacheTerm: '{0}. Tradução em Cached:InputLang= {1}, OutputLang= {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Argumentos inválidos!
   systranHttpUnknown: 'Erro http desconhecido: {0}'
   systranHttp400: Parâmetros inválidos enviados para o Systran. Pode ser um mau par
@@ -583,4 +569,19 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Alterado com êxito o nome de utilizador
     PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Configuração'
+  wwcConfigConversationPrefixInput: O prefixo actual é {0}. Digite um novo ou digite
+    0 para voltar atrás.
+  wwcConfigConversationLangInput: 'A linguagem atual do plugin é {0}. Introduza um
+    código de idioma válido ou escreva 0 para cancelar. Códigos linguísticos válidos:
+    {1}'
+  wwcdCacheSize: O tamanho da cache é atualmente {0}, com um limite de {1}.
+  wwcdCacheTerm: '{0}. Tradução em Cache: InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Iniciar uma nova sessão de tradução de {0} para {1}.
+  wwctAutoTranslateStartOtherPlayer: Iniciar uma nova sessão de tradução de {0} para
+    {1}.
+  wwctLangToLangStartOtherPlayer: Iniciar uma nova sessão de tradução para {0} de
+    {1} para {2}.
+  wwcgLangToLangStart: Agora traduzindo o chat global de {0} para {1}.
+  wwctrlRateLimitSetTarget: Defina o limite de taxa de {0} para {1} segundos.
 

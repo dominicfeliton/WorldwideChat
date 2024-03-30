@@ -50,12 +50,9 @@ Messages:
   wwcConfigGUIQuitButton: Гарах & Save өөрчлөлтүүд
   wwctPlayerNotFound: Тоглогч % Би олж чадаагүй.
   wwcConfigGUIAmazonTranslateRegionButton: Амазоны бүсийг өөрчлөх
-  wwcConfigConversationLangInput: 'Одоогийн залгаас хэл {0} байна. хүчинтэй хэлний
-    кодыг оруулна уу, эсвэл төрөл 0 цуцлах. Хүчинтэй хэлний код: {0}'
   wwcConfigConversationLangInvalid: Хэлний код буруу байна!
   wwcConfigGUIWatsonAPIKeyButton: Ватсон API Түлхүүр өөрчлөлт
   wwcEnabled: Идэвхтэй WorldWedeChat хувилбар {0}.
-  wwcgLangToLangStart: Одоо дэлхийн чатыг {0} нь {1} руу орчуулж байна.
   wwctbOnSender: Ном орчуулга идэвхжүүлсэн. Үүнийг орчуулахын тулд ном барьж байхдаа
     баруун товшино уу!
   wwcListenersInitialized: Эхэлж сонсогчид.
@@ -107,8 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: Зорилтот хэл сонгоно уу
   wwcConfigConnectionSuccess: Амжилттай холбогдсон {0}!
   wwcConfigGUIGoogleTranslateButton: Google-ийн орчуулга
-  wwcConfigConversationPrefixInput: Одоогийн угтвар нь {0} байна. шинийг бичнэ үү,
-    эсвэл 0 бичнэ үү.
   wwcConfigGUIPreviousPageButton: өмнөх хуудас
   wwcConfigGUITranslatorCacheButton: Орчуулга Cache хязгаарыг өөрчлөх
   wwcConfigConversationbStatsSuccess: bStats амжилттай сольсон.
@@ -159,7 +154,6 @@ Messages:
     биш юм.
   wwctrlRateLimitSetSender: '{0} секунд нь таны ханшийн хязгаарыг тохируулна.'
   wwctrlRateLimitOffTarget: '{0} ханшийн хязгаарыг унтраасан.'
-  wwctrlRateLimitSetTarget: '{0} нь {1} секунд ханшийн хязгаарыг тохируулна.'
   wwctrlNotATranslator: Та бол идэвхитэй орчуулагч биш! Үүнийг /wwct-ээр тохируулсан
     эсэхээ шалгаарай.
   wwctrlRateLimitAlreadyOffSender: Таны ханшийн хязгаар нь аль хэдийн идэвхгүй болсон.
@@ -275,13 +269,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Глобал чат орчуулагдаж
     байгаа боловч тад {0} -аас {1} руу идэвхтэй орчуулгын сесс байна.
   wwctCannotTranslateConsole: Та консол нь орчуулга сесс эхлүүлж чадахгүй байна!
-  wwctLangToLangStart: '{0} -аас {1} руу шинэ орчуулгын сессийг эхлүүлэх.'
   wwcOnJoinTranslationNotificationSourceLang: Танд {0} -ээс {1} гэсэн идэвхтэй орчуулгын
     сесс байна.
-  wwctAutoTranslateStartOtherPlayer: '{0} - {1} руу шинэ орчуулгын сесс эхлүүлэх.'
   wwctTranslationStopped: Таны орчуулгын сесс зогссон байна.
-  wwctLangToLangStartOtherPlayer: '{0} гэсэн шинэ орчуулгын сессийг эхлүүлэх нь {1}
-    to {0}.'
   wwctAutoTranslateStart: Шинэ орчуулгын сесс эхлүүлэх {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Тан {0} гэсэн идэвхтэй орчуулгын сесс
     байна.
@@ -500,9 +490,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Систран орчуулга
   wwcrTransFail: WorldwideChat-ийг дахин ачаалсан боловч орчуулагчийг идэвхжүүлж чадаагүй.
   wwcdCacheCleared: Орчуулгын кэш цэвэрлэгдсэн.
-  wwcdCacheSize: Кэшийн хэмжээ нь одоогоор {0} бөгөөд {1} хязгаартай байна.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Хүчингүй аргументууд!
   systranHttpUnknown: 'Үл мэдэгдэх http алдаа: {0}'
   systranHttp400: Systran руу илгээсэн муу параметрүүд. Муу хэлний хос байж болох
@@ -576,4 +563,20 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL хэрэглэгчийн нэрийг амжилттай
     өөрчилсөн.
   wwcConfigGUIStorageTypeSettings: '{0} Тохиргоо'
+  wwcConfigConversationPrefixInput: Одоогийн угтвар нь {0} юм. Шинээр бичнэ үү, эсвэл
+    буцаж очихын тулд 0 гэж бичнэ үү.
+  wwcConfigConversationLangInput: 'Одоогийн залгаасын хэл бол {0} юм. Хүчинтэй хэлний
+    кодыг оруулна уу эсвэл хүчингүй болгохын тулд 0 гэж бичнэ үү. Хүчинтэй хэлний
+    код: {1}'
+  wwcdCacheSize: Кэшийн хэмжээ нь одоогоор {0} бөгөөд {1} хязгаартай байна.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: '{0} -ээс {1} хүртэлх шинэ орчуулгын сесс эхэлж байна.'
+  wwctAutoTranslateStartOtherPlayer: '{0} -ээс {1} хүртэлх шинэ орчуулгын сесс эхэлж
+    байна.'
+  wwctLangToLangStartOtherPlayer: '{1} -аас {2} хүртэл {0} -д зориулсан шинэ орчуулгын
+    сесс эхэлж байна.'
+  wwcgLangToLangStart: Одоо дэлхийн чатыг {0} -ээс {1} руу орчуулж байна.
+  wwctrlRateLimitSetTarget: '{0} -ийн хурдны хязгаарыг {1} секунд болгон тохируулна
+    уу.'
 

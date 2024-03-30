@@ -43,11 +43,9 @@ Messages:
   wwcConfigGUIQuitButton: 退出並儲存變更
   wwctPlayerNotFound: 玩家 % 我找不到。
   wwcConfigGUIAmazonTranslateRegionButton: 變更亞馬遜區域
-  wwcConfigConversationLangInput: '目前的外掛程式語言為 {0}。請輸入有效的語言代碼，或輸入 0 以取消。有效的語言代碼: {1}'
   wwcConfigConversationLangInvalid: 語言代碼無效！
   wwcConfigGUIWatsonAPIKeyButton: 變更沃森 API 金鑰
   wwcEnabled: 已啟用全球聊天版本 {0}。
-  wwcgLangToLangStart: 現在將全球聊天從 {0} 翻譯到 {1}。
   wwctbOnSender: 已啟用書冊翻譯。在拿著書的同時按一下滑鼠右鍵即可翻譯它！
   wwcListenersInitialized: 初始化監聽程式。
   wwcConfigGUIPluginUpdateChatButton: 傳送外掛程式更新的聊天提示
@@ -89,7 +87,6 @@ Messages:
   wwctGUINewTranslationTarget: 選擇目標語言
   wwcConfigConnectionSuccess: 成功連線到 {0}!
   wwcConfigGUIGoogleTranslateButton: 谷歌翻譯
-  wwcConfigConversationPrefixInput: 目前的前置碼是 {0}。請輸入新字首，或輸入 0 返回。
   wwcConfigGUIPreviousPageButton: 上一頁
   wwcConfigGUITranslatorCacheButton: 變更翻譯快取限制
   wwcConfigConversationbStatsSuccess: 成功切換 bStats。
@@ -128,7 +125,6 @@ Messages:
   wwctrlPlayerNotFound: 玩家 {0} 不是找不到，或者不是活躍的翻譯者。
   wwctrlRateLimitSetSender: 將匯率限制設定為 {0} 秒。
   wwctrlRateLimitOffTarget: 關閉 {0} 的速率限制。
-  wwctrlRateLimitSetTarget: 將 {0} 的速率限制設定為 {1} 秒。
   wwctrlNotATranslator: 你不是一個積極的翻譯者！確保你已經用 /wwcti 設置了這個。
   wwctrlRateLimitAlreadyOffSender: 你的費率限制已停用。
   wwctGUIRateButton: 設定速率限制
@@ -216,11 +212,8 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: 全球聊天正在翻譯，但您有一個從 {0} 到
     {1} 的正在翻譯工作階段。
   wwctCannotTranslateConsole: 您無法啟動主控台的翻譯工作階段！
-  wwctLangToLangStart: 從 {0} 到 {1} 開始新的翻譯階段作業。
   wwcOnJoinTranslationNotificationSourceLang: 您有從 {0} 到 {1} 的作用中翻譯工作階段。
-  wwctAutoTranslateStartOtherPlayer: 開始 {0} 到 {1} 的新翻譯階段作業。
   wwctTranslationStopped: 您的翻譯工作階段已停止。
-  wwctLangToLangStartOtherPlayer: 從 {0} 到 {1} 開始 {2} 的新翻譯階段作業。
   wwctAutoTranslateStart: 開始新的翻譯作業階段至 {0}。
   wwcOnJoinTranslationNotificationNoSourceLang: 您有一個有效的翻譯工作階段到 {0}。
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: 全球聊天正在翻譯，但您的翻譯工作階段為
@@ -383,8 +376,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: 西斯特蘭翻譯
   wwcrTransFail: 重新載入全球微信，但無法啟用翻譯器。
   wwcdCacheCleared: 翻譯快取已清除。
-  wwcdCacheSize: 快取的大小目前為 {0}，限制為 {1}。
-  wwcdCacheTerm: '{0}。快取轉譯:輸入長 = {1}, 輸出長度 = {2}, 輸入短語 = {3} | 輸出短語 = {4}'
   wwcdInvalidCmd: 無效的引數！
   systranHttpUnknown: 未知的 http 錯誤：{0}
   systranHttp400: 錯誤的參數傳送給系斯特蘭。可能是一對不好的語言對？
@@ -430,4 +421,13 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: 變更 PostgreSQL 資料庫
   wwcConfigConversationPostgresUsernameSuccess: 成功更改 PostgreSQL 使用者名稱。
   wwcConfigGUIStorageTypeSettings: '{0} 配置'
+  wwcConfigConversationPrefixInput: 目前的前置字首為 {0}。請輸入新的，或鍵入 0 返回。
+  wwcConfigConversationLangInput: 目前的插件語言是 {0}。請輸入有效的語言代碼，或輸入 0 以取消。有效的語言代碼：{1}
+  wwcdCacheSize: 快取的大小目前為 {0}，限制為 {1}。
+  wwcdCacheTerm: '{0}.緩存翻譯:輸入長 = {1}, 輸出長度 = {2}, 輸入短語 = {3} | 輸出短語 = {4}'
+  wwctLangToLangStart: 從 {0} 開始新的翻譯會話。{1}
+  wwctAutoTranslateStartOtherPlayer: 開始 {0} 到 {1} 的新翻譯階段。
+  wwctLangToLangStartOtherPlayer: 開始 {0} 的新翻譯會話，從 {1} 到 {2}。
+  wwcgLangToLangStart: 現在將全球聊天從 {0} 翻譯為 {1}。
+  wwctrlRateLimitSetTarget: 將 {0} 的速率限制設置為 {1} 秒。
 

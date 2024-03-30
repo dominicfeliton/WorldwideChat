@@ -51,13 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: എക്സിറ്റ് & മാറ്റങ്ങൾ സംരക്ഷിക്കുക
   wwctPlayerNotFound: കളിക്കാരന് % ഞാൻ കണ്ടെത്തിയില്ല.
   wwcConfigGUIAmazonTranslateRegionButton: ആമസോൺ റീജിയൺ മാറ്റുക
-  wwcConfigConversationLangInput: 'നിലവിലെ പ്ലഗിൻ ഭാഷ {0} ആണ്, ദയവായി ഒരു സാധുവായ
-    ഭാഷാ കോഡ് നൽകുക, അല്ലെങ്കിൽ റദ്ദാക്കാൻ 0 ടൈപ്പ് ചെയ്യുക. സാധുവായ ഭാഷാ കോഡുകൾ:
-    {0}'
   wwcConfigConversationLangInvalid: അസാധുവായ ഭാഷാ കോഡ്!
   wwcConfigGUIWatsonAPIKeyButton: വാട്സൺ എപിഐ കീ മാറ്റുക
   wwcEnabled: പ്രാപ്തമാക്കി ചാറ്റ് പതിപ്പ് {0}.
-  wwcgLangToLangStart: ഇപ്പോൾ {0} മുതൽ {1} ൽ നിന്ന് ആഗോള ചാറ്റിനെ വിവർത്തനം ചെയ്യുന്നു.
   wwctbOnSender: പുസ്തകം വിവർത്തനം പ്രവർത്തനക്ഷമമാക്കി. അത് വിവർത്തനം ഒരു പുസ്തകം
     കൈവശമുള്ള വലത്-ക്ലിക്ക്!
   wwcListenersInitialized: സമാരംഭിച്ചു ശ്രോതാക്കൾ.
@@ -106,8 +102,6 @@ Messages:
   wwctGUINewTranslationTarget: ഒരു ടാർഗെറ്റ് ഭാഷ തിരഞ്ഞെടുക്കുക
   wwcConfigConnectionSuccess: '{0} ലേക്ക് വിജയകരമായി കണക്റ്റുചെയ്തു!'
   wwcConfigGUIGoogleTranslateButton: Google വിവർത്തനം
-  wwcConfigConversationPrefixInput: നിലവിലെ പ്രിഫിക്സ് {0} ആണ്, ദയവായി പുതിയതൊന്ന്
-    ടൈപ്പുചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
   wwcConfigGUIPreviousPageButton: മുൻപത്തെ പേജ്
   wwcConfigGUITranslatorCacheButton: പരിഭാഷ മാറ്റുക കാഷെ പരിധി
   wwcConfigConversationbStatsSuccess: വിജയകരമായി ബ്സ്തത്സ് ടോഗിൾ.
@@ -159,7 +153,6 @@ Messages:
   wwctrlPlayerNotFound: കളിക്കാരന് {0} കണ്ടെത്തിയില്ല, അല്ലെങ്കിൽ ഒരു സജീവ പരിഭാഷകനല്ല.
   wwctrlRateLimitSetSender: നിങ്ങളുടെ നിരക്ക് ലിമിറ്റ് {0} സെക്കന്റിലേക്ക് സജ്ജമാക്കുക.
   wwctrlRateLimitOffTarget: '{0} ന്റെ നിരക്ക് പരിധി ഓഫാക്കി.'
-  wwctrlRateLimitSetTarget: നിരക്ക് പരിധി {0} മുതൽ {1} സെക്കൻഡ് വരെ സജ്ജമാക്കുക.
   wwctrlNotATranslator: നിങ്ങൾ ഒരു സജീവ പരിഭാഷകനല്ല! നിങ്ങൾ/wwct- നൊപ്പം ഈ സജ്ജമാക്കിയിട്ടുണ്ടെന്ന്
     ഉറപ്പാക്കുക.
   wwctrlRateLimitAlreadyOffSender: നിങ്ങളുടെ നിരക്ക് പരിധി ഇതിനകം അപ്രാപ്തമാക്കി.
@@ -273,14 +266,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ആഗോള ചാറ്റ് വിവർത്തനം
     ചെയ്യപ്പെടുന്നു, പക്ഷേ നിങ്ങൾ {0} മുതൽ {1} ൽ നിന്ന് ഒരു സജീവ വിവർത്തന സെഷൻ ഉണ്ട്.
   wwctCannotTranslateConsole: കൺസോളിനായി നിങ്ങൾക്ക് ഒരു വിവർത്തന സെഷൻ ആരംഭിക്കാൻ കഴിയില്ല!
-  wwctLangToLangStart: '{0} മുതൽ {1} മുതൽ {2} ലേക്ക് ഒരു പുതിയ പരിഭാഷാ സെഷൻ ആരംഭിക്കുന്നു.'
   wwcOnJoinTranslationNotificationSourceLang: നിങ്ങൾ {0} മുതൽ {1} ൽ നിന്ന് ഒരു സജീവ
     പരിഭാഷാ സെഷൻ ഉണ്ട്.
-  wwctAutoTranslateStartOtherPlayer: '{0} ലേക്ക് {1} ലേക്ക് ഒരു പുതിയ പരിഭാഷാ സെഷൻ
-    ആരംഭിക്കുന്നു.'
   wwctTranslationStopped: നിങ്ങളുടെ വിവർത്തന സെഷൻ നിർത്തി.
-  wwctLangToLangStartOtherPlayer: '{0} മുതൽ {1} മുതൽ {2} എന്നതിനായി ഒരു പുതിയ പരിഭാഷാ
-    സെഷൻ ആരംഭിക്കുന്നു.'
   wwctAutoTranslateStart: '{0} ലേക്ക് ഒരു പുതിയ പരിഭാഷാ സെഷൻ ആരംഭിക്കുന്നു.'
   wwcOnJoinTranslationNotificationNoSourceLang: നിങ്ങൾക്ക് {0} ലേക്ക് ഒരു സജീവ പരിഭാഷാ
     സെഷൻ ഉണ്ട്.
@@ -502,9 +490,6 @@ Messages:
   wwcrTransFail: WorldwideChat വീണ്ടും ലോഡുചെയ്തെങ്കിലും ഒരു പരിഭാഷകനെ പ്രാപ്തമാക്കുന്നതിൽ
     പരാജയപ്പെട്ടു.
   wwcdCacheCleared: വിവർത്തന കാഷെ മായ്ച്ചു.
-  wwcdCacheSize: കാഷെയുടെ വലുപ്പം നിലവിൽ {0} ആണ്, {1} എന്ന പരിധിയോടെ.
-  wwcdCacheTerm: '{0}. കാഷ്ഡ് ട്രാൻസ്ലേഷൻ:ഇൻപുട്ട്ലാംഗ്= {1}, ഔട്ട്പുട്ട്ലാംഗ്= {2},
-    ഇൻപുട്ട്ഫ്രേസ് = {3} | ഔട്ട്പുട്ട്ഫ്രേസ്= {4}'
   wwcdInvalidCmd: അസാധുവായ വാദങ്ങൾ!
   systranHttpUnknown: 'അറിയപ്പെടാത്ത http പിശക്: {0}'
   systranHttp400: മോശം പാരാമീറ്ററുകൾ സിസ്ട്രാനിലേക്ക് അയച്ചു. ഒരു മോശം ഭാഷാ ജോഡിയായിരിക്കാം?
@@ -578,4 +563,19 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL ഉപയോക്തൃനാമം വിജയകരമായി
     മാറ്റി.
   wwcConfigGUIStorageTypeSettings: '{0} കോൺഫിഗറേഷൻ'
+  wwcConfigConversationPrefixInput: നിലവിലെ പ്രിഫിക്സ് {0} ആണ്. ദയവായി പുതിയത് ടൈപ്പ്
+    ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക.
+  wwcConfigConversationLangInput: 'നിലവിലെ പ്ലഗിൻ ഭാഷ {0} ആണ്. ദയവായി ഒരു സാധുവായ
+    ഭാഷാ കോഡ് നൽകുക, അല്ലെങ്കിൽ റദ്ദാക്കുന്നതിന് 0 ടൈപ്പ് ചെയ്യുക. സാധുവായ ഭാഷാ കോഡുകൾ:
+    {1}'
+  wwcdCacheSize: കാഷെയുടെ വലുപ്പം നിലവിൽ {0} ആണ്, {1} എന്ന പരിധിയോടെ.
+  wwcdCacheTerm: '{0}. കാഷെഡ്ട്രാൻസ്ലേഷൻ:ഇൻപുട്ട്ലാങ്= {1}, ഔട്ട്പുട്ട്ലാങ്= {2},
+    ഇൻപുട്ട്ഫ്രേസ്= {3} | ഔട്ട്പുട്ട്ഫ്രേസ്= {4}'
+  wwctLangToLangStart: '{0} മുതൽ {1} വരെ ഒരു പുതിയ വിവർത്തന സെഷൻ ആരംഭിക്കുന്നു.'
+  wwctAutoTranslateStartOtherPlayer: '{0} മുതൽ {1} വരെയുള്ള ഒരു പുതിയ വിവർത്തന സെഷൻ
+    ആരംഭിക്കുന്നു.'
+  wwctLangToLangStartOtherPlayer: '{1} മുതൽ {2} വരെ {0} എന്നതിനായുള്ള ഒരു പുതിയ വിവർത്തന
+    സെഷൻ ആരംഭിക്കുന്നു.'
+  wwcgLangToLangStart: ഇപ്പോൾ ആഗോള ചാറ്റ് {0} ൽ നിന്ന് {1} ലേക്ക് വിവർത്തനം ചെയ്യുന്നു.
+  wwctrlRateLimitSetTarget: '{0} എന്ന നിരക്ക് പരിധി {1} സെക്കൻഡായി സജ്ജമാക്കുക.'
 

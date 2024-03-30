@@ -3,9 +3,9 @@ Messages:
   wwcGlobalOnJoinTranslationNotificationNoSourceLang: ګلوبل چیٹ د {0} لپاره ژباړل
     کیږي.
   wwcConfigGUIAmazonTranslateAccessKeyButton: د ایمیزون لاسرسی کلیدي بدل کړئ
-  wwcrFail: WorldWiDeChat بیا پورته کولو کې پاتې راغلی.
+  wwcrFail: WorldwideChat بیا پورته کولو کې پاتې راغلی.
   wwcConfigGUIUpdateCheckerButton: د اوسمهالونو ځنډ لپاره چیک
-  wwcUpdaterFailedGeneric: د WorldWieChat تازه معلوماتو لپاره د کتلو توان نلري.
+  wwcUpdaterFailedGeneric: د WorldwideChat تازه معلوماتو لپاره د کتلو توان نلري.
   wwcConfigConversationUpdateCheckerInput: په اوسمهالول چیکر کې اوسنی ځنډ {0} ثانیې
     دی. د نوي ارزښت ټاکلو لپاره د 10 څخه ډیر څه ولیکئ، یا د 10 څخه لږ څه چې بیرته
     لاړ شئ.
@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: بدلونونه وتل & ساتل
   wwctPlayerNotFound: . لوبغاړي ونه موندل شو
   wwcConfigGUIAmazonTranslateRegionButton: د ایمیزون سیمه بدل کړئ
-  wwcConfigConversationLangInput: 'د اوسني فلګن ژبه ده {0}. مهرباني وکړئ د اعتبار
-    وړ ژبې کوډ داخل کړئ، یا د فسخه کولو لپاره 0 ډول کړئ. د اعتبار وړ ژبې کوډونه: {0}'
   wwcConfigConversationLangInvalid: ناسم ژبه کوډ!
   wwcConfigGUIWatsonAPIKeyButton: د واټسن API کیلي بدل کړئ
-  wwcEnabled: فعال شوی WorldWieChat نسخه {0}.
-  wwcgLangToLangStart: اوس د نړېوالې خبرې له {0} څخه ژباړل.
+  wwcEnabled: فعال شوی WorldwideChat نسخه {0}.
   wwctbOnSender: د کتاب ژباړې فعال شو. د هغې د ژباړې لپاره د کتاب ساتلو په وخت کې
     ښي کلیک وکړئ!
   wwcListenersInitialized: ابتدايي اوریدونکي.
@@ -70,7 +67,7 @@ Messages:
     لپاره د API کیلي ننوځئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
   wwctGUIStopButton: ژباړل ودرول
   wwcgTranslationStopped: د ګلوبل چیٹ ژباړه ودرول شوې.
-  wwcUpdaterFutureDate: د WorldWiDeChat دا مثال د وروستي عامه خلکو په پرتله خورا لوی
+  wwcUpdaterFutureDate: د WorldwideChat دا مثال د وروستي عامه خلکو په پرتله خورا لوی
     نسخه لري.
   wwcConfigConversationPrefixSuccess: مختاړی په بریالیتوب سره بدل شو.
   wwcConfigGUIGoogleTranslateAPIKeyButton: د ګوګل ژباړن API کلیدي بدل کړئ
@@ -88,8 +85,8 @@ Messages:
   wwcConfigConversationAmazonTranslateRegionInput: اوسنی سیمه {0} ده. مهرباني وکړئ
     د ایمیزون لپاره سیمه ولیکئ، یا 0 ټایپ کړئ چې بیرته لاړ شئ.
   wwcNoConsole: دا کمانډ یوازې د یو لوبغاړي لخوا پرمخ وړل کیدی شي.
-  wwcInitializationFail: WorldWiDeChat پیل کولو کې پاتې راغلل.
-  wwcrSuccess: په بریالیتوب سره د WorldWiDeChat بیاځل
+  wwcInitializationFail: WorldwideChat پیل کولو کې پاتې راغلل.
+  wwcrSuccess: په بریالیتوب سره د WorldwideChat بیاځل
   wwcPlayerNotFound: . لوبغاړي ونه موندل شو
   wwcUpdaterOutOfDateChat: WorldwideChat له نیټې څخه بهر دی. مهرباني وکړئ وروستي نسخه
     ته تازه کړئ.
@@ -104,8 +101,6 @@ Messages:
   wwctGUINewTranslationTarget: موخه ژبه غوره کړئ
   wwcConfigConnectionSuccess: په برياليتوب سره نښلول شو {0}!
   wwcConfigGUIGoogleTranslateButton: ګوګل ژباړل
-  wwcConfigConversationPrefixInput: اوسنی مختاړی ده {0} دی. مهرباني وکړئ یو نوی ولیکئ،
-    یا 0 ډول کړئ چې بېرته لاړ شئ.
   wwcConfigGUIPreviousPageButton: مخکنی مخ
   wwcConfigGUITranslatorCacheButton: د ژباړې کیچ حد بدل کړئ
   wwcConfigConversationbStatsSuccess: په بریالیتوب سره د bStats ټګ شوي.
@@ -152,7 +147,6 @@ Messages:
   wwctrlPlayerNotFound: لوبغاړي {0} یا نه موندل شوی، یا فعال ژباړونکی نه دی.
   wwctrlRateLimitSetSender: د خپل نرخ حد وټا {0} ثانیو ته.
   wwctrlRateLimitOffTarget: .د نرخ حد بندول د {0}.
-  wwctrlRateLimitSetTarget: . {0} د نرخ حد وټا {1} ثانیو ته.
   wwctrlNotATranslator: تاسو فعال ژباړن نه یاست! ډاډ ترلاسه کړئ چې تاسو دا د /wwct
     سره ترتیب کړی دی.
   wwctrlRateLimitAlreadyOffSender: ستاسو د نرخ حد لا دمخه معلول دی.
@@ -262,17 +256,14 @@ Messages:
   wwcTranslatorErrorConsole: کومه ستونزه رامنځته شوه کله چې کارن- {0} د خپلې ژباړې
     هڅه کوله. مهرباني وکړئ د نورو جزیاتو لپاره errorLog.txt وګورئ.
   wwctGUIChatButton: د چیٹ ژباړه توګول
-  wwcrBegin: د WorldWieChat بیا ځلي کول...
+  wwcrBegin: د WorldwideChat بیا ځلي کول...
   wwctTranslationStoppedOtherPlayer: .د ژباړې ناستې لپاره درول شو {0}
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ګلوبل چیٹ ژباړل کیږي،
     مګر تاسو له {0} څخه تر {1} پورې د ژباړې فعاله ناسته لرئ.
   wwctCannotTranslateConsole: تاسو د کنسول لپاره د ژباړې ناستې نه شي پیل کولی!
-  wwctLangToLangStart: . {0} څخه تر {1} پورې د ژباړې نوې ناسته پیلول
   wwcOnJoinTranslationNotificationSourceLang: تاسو له {0} څخه تر {1} پورې د ژباړې
     فعاله ناسته لرئ.
-  wwctAutoTranslateStartOtherPlayer: . {0} ته د ژباړې نوې ناستې پیلول
   wwctTranslationStopped: ستاسو د ژباړې ناسته ودرول شوې ده.
-  wwctLangToLangStartOtherPlayer: د ژباړې نوې ناستې پیلول {0} له {1} څخه {2} ته.
   wwctAutoTranslateStart: .o ته د ژباړې نوې ناستې پیلول
   wwcOnJoinTranslationNotificationNoSourceLang: . ت {0} ته د ژباړې فعاله ناسته لرﺉ
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ګلوبل چیٹ ژباړل کیږي،
@@ -486,9 +477,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: سیسترن ژباړه
   wwcrTransFail: ورلډ ویډیکټ بیا لوډ شوی مګر د ژباړونې فعالولو کولو کې
   wwcdCacheCleared: د ژباړې کیش پاک شو.
-  wwcdCacheSize: د کیش اندازه اوس مهال {0} دی، د {1} محدودیت سره.
-  wwcdCacheTerm: '{0}. کیچډ ترجمه: انپوټلانګ = {1}، اخیستل لانګ = {2}، انپټ فراز =
-    {3} | د نېټوپټ فریز = {4}'
   wwcdInvalidCmd: بې اعتبار دلائل!
   systranHttpUnknown: 'ناپېژندل http تېروتنه: {0}'
   systranHttp400: بد پیرامیټرونه سیستران ته لیږل شوي. کیدای شي د ژبې بد جوړۍ وي؟
@@ -555,4 +543,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: په بریالیتوب سره د PostgreSQL نوم
     نوم بدل کړه.
   wwcConfigGUIStorageTypeSettings: '{0} ترتیب'
+  wwcConfigConversationPrefixInput: اوسنۍ پیکس {0} دی. مهرباني وکړئ یو نوی ټایپ کړئ،
+    یا بیرته لاړ شو لپاره 0 ټایپ کړئ.
+  wwcConfigConversationLangInput: 'اوسنۍ فلګین ژبه {0} دی. مهرباني وکړئ د ژبې اعتبار
+    کوډ داخل کړئ، یا د لغو کولو لپاره 0 ډیر د ژبې اعتبار کوډونه: {1}'
+  wwcdCacheSize: د کیش اندازه اوس مهال {0} دی، د {1} محدودیت سره.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}، OutputLang= {2}، InputPhrase=
+    {3} | Output Phrase= {4}'
+  wwctLangToLangStart: د {0} څخه {1} پورې د ژباړې نوي غونډې پیل کول.
+  wwctAutoTranslateStartOtherPlayer: د {0} لپاره د {1} لپاره د نوې ژباړې غونډې پیل
+    کول.
+  wwctLangToLangStartOtherPlayer: د {0} څخه د {1} څخه {2} پورې د لپاره د نوې ژباړې
+    غونډې پیل
+  wwcgLangToLangStart: اوس د {0} څخه {1} څخه نړیوال چیټ ژباړه کړئ.
+  wwctrlRateLimitSetTarget: د {0} د نرخ محدودیت {1} ثانیو ته تنظیم کړئ.
 

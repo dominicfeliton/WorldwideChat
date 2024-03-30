@@ -52,13 +52,9 @@ Messages:
   wwcConfigGUIQuitButton: Sortir i desar els canvis
   wwctPlayerNotFound: Jugador {0} he trobat.
   wwcConfigGUIAmazonTranslateRegionButton: Canviar la regió d'Amazon
-  wwcConfigConversationLangInput: 'L''idioma actual del connector és {0} Si us plau,
-    introduïu un codi d''idioma vàlid, o escriviu 0 per cancel·lar. Codis d''idioma
-    vàlids: {0}'
   wwcConfigConversationLangInvalid: Codi d'idioma no vàlid!
   wwcConfigGUIWatsonAPIKeyButton: Canviar la clau de l'API de Watson
   wwcEnabled: Habilitada la versió WorldwideChat {0}.
-  wwcgLangToLangStart: Ara la traducció del xat global de {0} a {1}.
   wwctbOnSender: S'ha habilitat la traducció de llibres. Feu clic amb el botó dret
     mentre manteniu un llibre per traduir-lo!
   wwcListenersInitialized: Els oients inicialitzats.
@@ -110,8 +106,6 @@ Messages:
   wwctGUINewTranslationTarget: Trieu una llengua de destinació
   wwcConfigConnectionSuccess: Connectat amb èxit a {0}!
   wwcConfigGUIGoogleTranslateButton: Traduir per Google
-  wwcConfigConversationPrefixInput: El prefix actual és {0} Si us plau, escriviu un
-    de nou, o escriviu 0 per tornar enrere.
   wwcConfigGUIPreviousPageButton: Pàgina anterior
   wwcConfigGUITranslatorCacheButton: Canviar el límit de la memòria cau
   wwcConfigConversationbStatsSuccess: S'ha modificat correctament bStats.
@@ -164,7 +158,6 @@ Messages:
   wwctrlPlayerNotFound: Jugador {0} o bé no es troba, o no és un traductor actiu.
   wwctrlRateLimitSetSender: Establiu el vostre límit de tarifa a {0} segons.
   wwctrlRateLimitOffTarget: Desactiveu el límit de taxa de {0}.
-  wwctrlRateLimitSetTarget: Estableix el límit de velocitat de {0} a {1} segons.
   wwctrlNotATranslator: No ets un traductor actiu! Assegureu-vos que heu configurat
     això amb /wwct.
   wwctrlRateLimitAlreadyOffSender: El seu límit de tarifa ja està desactivat.
@@ -282,14 +275,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: El xat global s'està traduint,
     però teniu una sessió de traducció activa de {0} a {1}.
   wwctCannotTranslateConsole: No podeu iniciar una sessió de traducció per a la consola!
-  wwctLangToLangStart: Iniciar una nova sessió de traducció des de {0} a {1}.
   wwcOnJoinTranslationNotificationSourceLang: Teniu una sessió de traducció activa
     des de {0} a {1}.
-  wwctAutoTranslateStartOtherPlayer: Iniciar una nova sessió de traducció per a {0}
-    a {0}.
   wwctTranslationStopped: La vostra sessió de traducció s'ha aturat.
-  wwctLangToLangStartOtherPlayer: Iniciar una nova sessió de traducció per {0} de
-    {1} a {0}.
   wwctAutoTranslateStart: Iniciar una nova sessió de traducció a {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Teniu una sessió de traducció activa
     a {0}.
@@ -520,9 +508,6 @@ Messages:
   wwcrTransFail: S'ha tornat a carregar WorldwideChat però no s'ha pogut habilitar
     un traductor.
   wwcdCacheCleared: La memòria cau de traducció s'ha esborrat.
-  wwcdCacheSize: La mida de la memòria cau és actualment {0}, amb un límit de {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Arguments no vàlids!
   systranHttpUnknown: 'Error http desconegut: {0}'
   systranHttp400: Paràmetres dolents enviats a Systran. Pot ser un parell d'idiomes
@@ -599,4 +584,19 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: S'ha canviat correctament el nom d'usuari
     de PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Configuració'
+  wwcConfigConversationPrefixInput: El prefix actual és {0}. Si us plau, escriviu
+    un de nou o escriviu 0 per tornar enrere.
+  wwcConfigConversationLangInput: 'L''idioma actual del connector és {0}. Si us plau,
+    introduïu un codi d''idioma vàlid o escriviu 0 per cancel·lar. Codis d''idioma
+    vàlids: {1}'
+  wwcdCacheSize: La mida de la memòria cau és actualment {0}, amb un límit de {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, OutputLang= {2}, inputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Començant una nova sessió de traducció de {0} a {1}.
+  wwctAutoTranslateStartOtherPlayer: Comença una nova sessió de traducció per {0}
+    a {1}.
+  wwctLangToLangStartOtherPlayer: Començant una nova sessió de traducció per {0} de
+    {1} a {2}.
+  wwcgLangToLangStart: Ara tradueix el xat global de {0} a {1}.
+  wwctrlRateLimitSetTarget: Estableix el límit de tarifa de {0} a {1} segons.
 

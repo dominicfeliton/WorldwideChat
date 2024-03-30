@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: Toka na Hifadhi Mabadiliko
   wwctPlayerNotFound: Mchezaji {0}.
   wwcConfigGUIAmazonTranslateRegionButton: Badilisha Mkoa wa Amazon
-  wwcConfigConversationLangInput: 'Lugha ya sasa ya Plugin ni {0}. Tafadhali ingiza
-    msimbo halali wa lugha, au weka 0 ili kughairi. Misimbo halali ya lugha: {0}'
   wwcConfigConversationLangInvalid: Msimbo wa lugha batili!
   wwcConfigGUIWatsonAPIKeyButton: Badilisha ufunguo wa API wa Watson
   wwcEnabled: Imewezeshwa toleo la WorldwideChat {0}.
-  wwcgLangToLangStart: Sasa kutafsiri mazungumzo ya kimataifa kutoka {0} hadi {1}.
   wwctbOnSender: Tafsiri ya kitabu imewezeshwa. Bonyeza-click wakati ameshika kitabu
     cha kutafsiri!
   wwcListenersInitialized: Wasikilizaji walioanzishwa.
@@ -104,8 +101,6 @@ Messages:
   wwctGUINewTranslationTarget: Chagua Lugha ya Target
   wwcConfigConnectionSuccess: Imeunganishwa kwa ufanisi na {0}!
   wwcConfigGUIGoogleTranslateButton: Google Tafsiri
-  wwcConfigConversationPrefixInput: Kiambishi awali cha sasa ni {0}. Tafadhali andika
-    mpya, au andika 0 ili urejee.
   wwcConfigGUIPreviousPageButton: Ukurasa uliopita
   wwcConfigGUITranslatorCacheButton: Badilisha Kikomo cha Cache cha
   wwcConfigConversationbStatsSuccess: Mafanikio ya kufanyiwa bStats.
@@ -153,7 +148,6 @@ Messages:
   wwctrlPlayerNotFound: Mchezaji {0} haipatikani, au si translator hai.
   wwctrlRateLimitSetSender: Weka kikomo cha kiwango chako kwa {0} sekunde.
   wwctrlRateLimitOffTarget: Ilizima kikomo cha kiwango cha {0}.
-  wwctrlRateLimitSetTarget: Weka kikomo cha kiwango cha {0} hadi {1} sekunde.
   wwctrlNotATranslator: Wewe si translator kazi! Hakikisha umeweka hii na/wwct.
   wwctrlRateLimitAlreadyOffSender: Kikomo chako cha kiwango tayari kimezimwa.
   wwctGUIRateButton: Weka Kiwango cha Limit
@@ -267,13 +261,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Mazungumzo ya kimataifa
     yanatafsiriwa, lakini una kikao cha kutafsiri cha kazi kutoka {0} hadi {1}.
   wwctCannotTranslateConsole: Huwezi kuanza kikao cha tafsiri kwa console!
-  wwctLangToLangStart: Kuanzia kikao kipya cha tafsiri kutoka {0} hadi {1}.
   wwcOnJoinTranslationNotificationSourceLang: Una kikao cha tafsiri cha kazi kutoka
     {0} hadi {1}.
-  wwctAutoTranslateStartOtherPlayer: Kuanzia kikao kipya cha tafsiri kwa {0} kwa {1}.
   wwctTranslationStopped: Kikao chako cha tafsiri kimesimamishwa.
-  wwctLangToLangStartOtherPlayer: Kuanzia kikao kipya cha tafsiri kwa {0} kutoka {1}
-    hadi {0}.
   wwctAutoTranslateStart: Kuanzia kikao kipya cha tafsiri kwa {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Una kikao cha tafsiri cha kazi kwa
     {0}.
@@ -482,9 +472,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Tafsiri
   wwcrTransFail: Imepakia upya WorldwideChat lakini ilishindwa kuwezesha mtafsiri.
   wwcdCacheCleared: Cache ya tafsiri ilifutwa.
-  wwcdCacheSize: Ukubwa wa cache kwa sasa ni {0}, na kikomo cha {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, outputLang = {2}, inputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Hoja zisizofaa!
   systranHttpUnknown: 'Hitilafu isiyojulikana ya http: {0}'
   systranHttp400: Vigezo vibaya vilivyotumwa kwa Systran. Inaweza kuwa jozi mbaya
@@ -556,4 +543,19 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Kwa mafanikio kubadilisha jina la
     mtumiaji wa PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Usanidi'
+  wwcConfigConversationPrefixInput: Kiambishi cha sasa ni {0}. Tafadhali andika mpya,
+    au andika 0 ili kurudi nyuma.
+  wwcConfigConversationLangInput: 'Lugha ya sasa ya programu-jalizi ni {0}. Tafadhali
+    ingiza nambari halali ya lugha, au andika 0 ili kughairi. Nambari halali za lugha:
+    {1}'
+  wwcdCacheSize: Ukubwa wa cache kwa sasa ni {0}, na kikomo cha {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Kuanzisha kikao kipya cha tafsiri kutoka {0} hadi {1}.
+  wwctAutoTranslateStartOtherPlayer: Kuanzisha kikao kipya cha tafsiri kwa {0} hadi
+    {1}.
+  wwctLangToLangStartOtherPlayer: Kuanzisha kikao kipya cha tafsiri kwa {0} kutoka
+    {1} hadi {2}.
+  wwcgLangToLangStart: Sasa kutafsiri mazungumzo ya kimataifa kutoka {0} hadi {1}.
+  wwctrlRateLimitSetTarget: Weka kikomo cha kiwango cha {0} hadi sekunde {1}.
 

@@ -50,12 +50,9 @@ Messages:
   wwcConfigGUIQuitButton: બહાર નીકળો અને ફેરફારો સાચવો
   wwctPlayerNotFound: ખેલાડી % મને મળ્યું નથી.
   wwcConfigGUIAmazonTranslateRegionButton: એમેઝોન પ્રદેશ બદલો
-  wwcConfigConversationLangInput: 'વર્તમાન પ્લગઇન ભાષા {0} છે કૃપા કરીને માન્ય ભાષા
-    કોડ દાખલ કરો, અથવા રદ કરવા માટે 0 લખો. માન્ય ભાષા કોડ: {0}'
   wwcConfigConversationLangInvalid: અમાન્ય ભાષા કોડ!
   wwcConfigGUIWatsonAPIKeyButton: Watson API કી બદલો
   wwcEnabled: સક્ષમ વિશ્વવ્યાપી ચેટ સંસ્કરણ {0}.
-  wwcgLangToLangStart: હવે વૈશ્વિક ચેટનું અનુવાદ {0} થી {1}.
   wwctbOnSender: પુસ્તક અનુવાદ સક્ષમ. તેનું અનુવાદ કરવા માટે કોઈ પુસ્તક રાખતી વખતે
     જમણું-ક્લિક કરો!
   wwcListenersInitialized: પ્રારંભિક શ્રોતાઓ
@@ -103,8 +100,6 @@ Messages:
   wwctGUINewTranslationTarget: લક્ષ્ય ભાષા પસંદ કરો
   wwcConfigConnectionSuccess: સફળતાપૂર્વક {0} સાથે જોડાયેલ!
   wwcConfigGUIGoogleTranslateButton: ગૂગલ ટ્રાન્સલેટ
-  wwcConfigConversationPrefixInput: વર્તમાન ઉપસર્ગ {0} છે કૃપા કરીને નવું લખો, અથવા
-    પાછા જવા માટે 0 લખો.
   wwcConfigGUIPreviousPageButton: અગાઉના પૃષ્ઠ
   wwcConfigGUITranslatorCacheButton: અનુવાદ કેશ મર્યાદા બદલો
   wwcConfigConversationbStatsSuccess: સફળતાપૂર્વક bStats ટૉગલ.
@@ -151,7 +146,6 @@ Messages:
   wwctrlPlayerNotFound: ખેલાડી {0} ક્યાં તો મળી નથી, અથવા સક્રિય અનુવાદક નથી.
   wwctrlRateLimitSetSender: તમારી દર મર્યાદા {0} સેકંડમાં સેટ કરો.
   wwctrlRateLimitOffTarget: '{0} ની દર મર્યાદા બંધ કરી.'
-  wwctrlRateLimitSetTarget: '{0} ની દર મર્યાદા {1} સેકંડમાં સેટ કરો.'
   wwctrlNotATranslator: તમે સક્રિય અનુવાદક નથી! ખાતરી કરો કે તમે આને /wwct સાથે સેટ
     કર્યું છે.
   wwctrlRateLimitAlreadyOffSender: તમારી દર મર્યાદા પહેલાથી અક્ષમ છે.
@@ -267,13 +261,8 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: વૈશ્વિક ચેટનું ભાષાંતર
     થઈ રહ્યું છે, પરંતુ તમારી પાસે {0} થી સક્રિય અનુવાદ સત્ર છે {1}.
   wwctCannotTranslateConsole: તમે કન્સોલ માટે અનુવાદ સત્ર શરૂ કરી શકતા નથી!
-  wwctLangToLangStart: '{0} થી નવું અનુવાદ સત્ર શરૂ કરી રહ્યા છીએ.'
   wwcOnJoinTranslationNotificationSourceLang: તમારા {0} થી સક્રિય અનુવાદ સત્ર છે {1}.
-  wwctAutoTranslateStartOtherPlayer: '{0} થી {1} માટે નવું અનુવાદ સત્ર શરૂ કરી રહ્યા
-    છીએ.'
   wwctTranslationStopped: તમારું અનુવાદ સત્ર બંધ કરવામાં આવ્યું છે.
-  wwctLangToLangStartOtherPlayer: '{0} માટે {1} થી {2} માટે નવું અનુવાદ સત્ર શરૂ કરી
-    રહ્યા છીએ.'
   wwctAutoTranslateStart: '{0} નું નવું અનુવાદ સત્ર શરૂ કરી રહ્યા છીએ.'
   wwcOnJoinTranslationNotificationNoSourceLang: તમારા {0} નું સક્રિય અનુવાદ સત્ર છે.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: વૈશ્વિક ચેટનું ભાષાંતર
@@ -481,9 +470,6 @@ Messages:
   wwcrTransFail: વર્લ્ડવાઇડચેટને ફરીથી લોડ કરી હતી પરંતુ અનુવાદકને સક્ષમ કરવામાં નિષ્ફળ
     ગયો.
   wwcdCacheCleared: અનુવાદ કેશ સાફ કરવામાં આવી હતી.
-  wwcdCacheSize: કેશનું કદ હાલમાં {0} છે, {1} ની મર્યાદા સાથે.
-  wwcdCacheTerm: '{0}. કેશેડટ્રાન્સલેશન:ઇનપુટલેંગ = {1}, આઉટપુટલેંગ = {2}, ઇનપુટફ્રેઝ
-    = {3} | આઉટપુટફ્રેઝ = {4}'
   wwcdInvalidCmd: અમાન્ય દલીલો!
   systranHttpUnknown: 'અજ્ઞાત http ભૂલ: {0}'
   systranHttp400: ખરાબ પરિમાણો સિસ્ટ્રાનને મોકલવામાં આવ્યા છે. ખરાબ ભાષાની જોડી હોઈ
@@ -555,4 +541,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL વપરાશકર્તાનામ સફળતાપૂર્વક
     બદલ્યું.
   wwcConfigGUIStorageTypeSettings: '{0} રૂપરેખાંકન'
+  wwcConfigConversationPrefixInput: વર્તમાન ઉપસર્ગ {0} છે. કૃપા કરીને નવું લખો, અથવા
+    પાછા જવા માટે 0 લખો.
+  wwcConfigConversationLangInput: 'વર્તમાન પ્લગઇન ભાષા {0} છે. કૃપા કરીને માન્ય ભાષા
+    કોડ દાખલ કરો, અથવા રદ કરવા માટે 0 લખો. માન્ય ભાષા કોડ: {1}'
+  wwcdCacheSize: કેશનું કદ હાલમાં {0} છે, જેમાં {1} ની મર્યાદા છે.
+  wwcdCacheTerm: '{0}. કેશેડટ્રાન્સલેશન:ઇનપુટલાંગ= {1}, આઉટપુટલેંગ= {2}, ઇનપુટફ્રેઝ=
+    {3} | આઉટપુટફ્રેઝ= {4}'
+  wwctLangToLangStart: '{0} થી {1} સુધી નવું અનુવાદ સત્ર શરૂ કરી રહ્યા છીએ.'
+  wwctAutoTranslateStartOtherPlayer: '{0} થી {1} માટે નવું અનુવાદ સત્ર શરૂ કરી રહ્યા
+    છીએ.'
+  wwctLangToLangStartOtherPlayer: '{1} થી {2} સુધી {0} માટે નવું અનુવાદ સત્ર શરૂ કરી
+    રહ્યા છીએ.'
+  wwcgLangToLangStart: હવે વૈશ્વિક ચેટનું અનુવાદ {0} થી {1} સુધી.
+  wwctrlRateLimitSetTarget: '{0} ની દરની મર્યાદા {1} સેકન્ડ સુધી સેટ કરો.'
 

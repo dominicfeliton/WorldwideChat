@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: Išeiti ir išsaugoti pakeitimus
   wwctPlayerNotFound: Žaidėjas {0}.
   wwcConfigGUIAmazonTranslateRegionButton: Keisti Amazon regioną
-  wwcConfigConversationLangInput: 'Dabartinė įskiepio kalba yra {0}. Įveskite galiojantį
-    kalbos kodą arba įveskite 0, kad atšauktumėte. Galiojantys kalbos kodai: {0}'
   wwcConfigConversationLangInvalid: Neteisingas kalbos kodas!
   wwcConfigGUIWatsonAPIKeyButton: Pakeisti Watson API raktas
   wwcEnabled: Įgalinta WorldwideChat versija {0}.
-  wwcgLangToLangStart: Dabar verčiate globalinius pokalbius iš {0} į {1}.
   wwctbOnSender: Knygų vertimas įjungtas. Dešiniuoju pelės mygtuku spustelėkite laikydami
     knygą ją išversti!
   wwcListenersInitialized: Inicijuoti klausytojai.
@@ -105,8 +102,6 @@ Messages:
   wwctGUINewTranslationTarget: Pasirinkti tikslinę kalbą
   wwcConfigConnectionSuccess: Sėkmingai prijungtas su {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Dabartinis priešdėlis yra {0}. Prašome įvesti
-    naują arba įveskite 0, kad grįžtumėte atgal.
   wwcConfigGUIPreviousPageButton: Ankstesnis puslapis
   wwcConfigGUITranslatorCacheButton: Keisti vertimo talpyklos limitą
   wwcConfigConversationbStatsSuccess: Sėkmingai perėjo bStats.
@@ -156,7 +151,6 @@ Messages:
   wwctrlPlayerNotFound: Žaidėjas % aš nerastas arba nėra aktyvus vertėjas.
   wwctrlRateLimitSetSender: Nustatykite normos limitą į {0} sekundes.
   wwctrlRateLimitOffTarget: Išjungta {0} normos ribą.
-  wwctrlRateLimitSetTarget: Nustatykite normos ribą {0} į {1} sekundes.
   wwctrlNotATranslator: Jūs nesate aktyvus vertėjas! Įsitikinkite, kad jūs turite
     nustatyti tai su /wwct.
   wwctrlRateLimitAlreadyOffSender: Jūsų normos limitas jau yra išjungtas.
@@ -271,12 +265,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat yra verčiamas,
     bet jūs turite aktyvų vertimo seansą iš {0} į {1}.
   wwctCannotTranslateConsole: Jūs negalite pradėti vertimo sesijos konsolės!
-  wwctLangToLangStart: Pradedama nauja vertimo sesija nuo {0} iki {1}.
   wwcOnJoinTranslationNotificationSourceLang: Turite aktyvų vertimo seansą iš {0}
     iki {0}.
-  wwctAutoTranslateStartOtherPlayer: Pradedama nauja vertimo sesija {0} į {1}.
   wwctTranslationStopped: Jūsų vertimo sesija buvo sustabdyta.
-  wwctLangToLangStartOtherPlayer: Pradedama nauja vertimo sesija {0} nuo {1} iki {2}.
   wwctAutoTranslateStart: Pradedama nauja vertimo sesija į {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Turite aktyvų vertimo seansą {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat yra išverstas,
@@ -491,9 +482,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Versti
   wwcrTransFail: Iš naujo įkelta WorldwideChat, tačiau nepavyko įjungti vertėjo.
   wwcdCacheCleared: Vertimo talpykla buvo išvalyta.
-  wwcdCacheSize: Šiuo metu talpyklos dydis yra {0}, o riba yra {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, inputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Neteisingi argumentai!
   systranHttpUnknown: 'Nežinoma http klaida: {0}'
   systranHttp400: Blogi parametrai išsiųsti “Systran”. Ar gali būti bloga kalbų pora?
@@ -567,4 +555,16 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Sėkmingai pakeistas PostgreSQL vartotojo
     vardas.
   wwcConfigGUIStorageTypeSettings: '{0} Konfigūracija'
+  wwcConfigConversationPrefixInput: Dabartinis priešdėlis yra {0}. Įveskite naują
+    arba įveskite 0, kad grįžtumėte atgal.
+  wwcConfigConversationLangInput: 'Dabartinė papildinio kalba yra {0}. Įveskite galiojantį
+    kalbos kodą arba įveskite 0, kad atšauktumėte. Galiojantys kalbos kodai: {1}'
+  wwcdCacheSize: Šiuo metu talpyklos dydis yra {0}, o riba yra {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, OutputLang= {2}, inputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Naujos vertimo sesijos pradžia nuo {0} iki {1}.
+  wwctAutoTranslateStartOtherPlayer: Pradedama nauja vertimo sesija {0} į {1}.
+  wwctLangToLangStartOtherPlayer: Pradedama nauja vertimo sesija {0} nuo {1} iki {2}.
+  wwcgLangToLangStart: Dabar verčiant pasaulinį pokalbį iš {0} į {1}.
+  wwctrlRateLimitSetTarget: Nustatykite greičio ribą {0} iki {1} sekundžių.
 

@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: Izlaz & Sačuvaj promene
   wwctPlayerNotFound: Player {0} pronađen.
   wwcConfigGUIAmazonTranslateRegionButton: Promenite Amazon Region
-  wwcConfigConversationLangInput: 'Trenutni jezik dodatka je {0}. Unesite važeći jezički
-    kod ili upišite 0 da biste otkazali. Važeći jezički kodovi: {0}'
   wwcConfigConversationLangInvalid: Nevažeći kod jezika!
   wwcConfigGUIWatsonAPIKeyButton: Promenite Vatson API ključ
   wwcEnabled: Omogućeno WorldwideChat verziju {0}
-  wwcgLangToLangStart: Sada prevođenje globalnog ćaskanja od {0} na {1}.
   wwctbOnSender: Omogućen je prevod knjige. Kliknite desnim tasterom miša dok držite
     knjigu da biste je preveli!
   wwcListenersInitialized: Inicijalizovani slušaoci.
@@ -104,8 +101,6 @@ Messages:
   wwctGUINewTranslationTarget: Izaberite ciljni jezik
   wwcConfigConnectionSuccess: Uspešno povezan na {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Trenutni prefiks je {0}. Ukucajte novi ili upišite
-    0 da biste se vratili.
   wwcConfigGUIPreviousPageButton: Prethodna stranica
   wwcConfigGUITranslatorCacheButton: Promeni ograničenje prevoda keša
   wwcConfigConversationbStatsSuccess: Uspešno toggled bStats.
@@ -152,7 +147,6 @@ Messages:
   wwctrlPlayerNotFound: Player {0} ili nije pronađen, ili nije aktivan prevodilac.
   wwctrlRateLimitSetSender: Podesite ograničenje stope na {0} sekundi.
   wwctrlRateLimitOffTarget: Isključio ograničenje stope od {0}.
-  wwctrlRateLimitSetTarget: Podesite ograničenje stope od {0} na {1} sekundi.
   wwctrlNotATranslator: Vie ne ste aktivni prevodilac! Uverite se da ste postavili
     ovo sa /vvct.
   wwctrlRateLimitAlreadyOffSender: Ograničenje vaše stope je već onemogućeno.
@@ -268,13 +262,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globalno ćaskanje se prevodi,
     ali imate aktivnu sesiju prevođenja od {0} do {1}.
   wwctCannotTranslateConsole: Ne možete da započnete sesiju prevoda za konzolu!
-  wwctLangToLangStart: Pokretanje nove sesije prevoda od {0} do {1}.
   wwcOnJoinTranslationNotificationSourceLang: Imate aktivnu sesiju prevoda od {0}
     do {0}.
-  wwctAutoTranslateStartOtherPlayer: Pokretanje nove sesije prevoda za {0} do {1}.
   wwctTranslationStopped: Vaša sesija prevoda je zaustavljena.
-  wwctLangToLangStartOtherPlayer: Pokretanje nove sesije prevoda za {0} od {1} do
-    {2}.
   wwctAutoTranslateStart: Pokretanje nove sesije prevoda na {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Imate aktivnu sesiju prevoda na {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globalno ćaskanje se
@@ -483,9 +473,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Sistran Prevod
   wwcrTransFail: Ponovo je učitao VorldWideChat, ali nije uspeo da omogući prevodioca.
   wwcdCacheCleared: Keš prevoda je izbrisan.
-  wwcdCacheSize: Veličina keša je trenutno {0}, sa ograničenjem od {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, OutputLang = {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Nevažeći argumenti!
   systranHttpUnknown: 'Nepoznata http greška: {0}'
   systranHttp400: Loši parametri poslati Sistranu. Možda je loš jezički par?
@@ -554,4 +541,17 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Uspešno je promenio korisničko ime
     PostgreSKL.
   wwcConfigGUIStorageTypeSettings: '{0} Konfiguracija'
+  wwcConfigConversationPrefixInput: Trenutni prefiks je {0}. Otkucajte novi ili otkucajte
+    0 da biste se vratili nazad.
+  wwcConfigConversationLangInput: 'Trenutni jezik dodatka je {0}. Unesite važeći kod
+    jezika ili otkucajte 0 da biste otkazali. Važeći jezički kodovi: {1}'
+  wwcdCacheSize: Veličina keša je trenutno {0}, sa ograničenjem od {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Počinje nova sesija prevođenja sa {0} na {1}.
+  wwctAutoTranslateStartOtherPlayer: Počinje nova sesija prevođenja za {0} do {1}.
+  wwctLangToLangStartOtherPlayer: Počinje nova sesija prevođenja za {0} od {1} do
+    {2}.
+  wwcgLangToLangStart: Sada prevodi globalno ćaskanje sa {0} na {1}.
+  wwctrlRateLimitSetTarget: Podesite ograničenje brzine od {0} na {1} sekundi.
 

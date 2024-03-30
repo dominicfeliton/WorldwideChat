@@ -45,12 +45,9 @@ Messages:
   wwcConfigGUIQuitButton: ออกจากการบันทึกการเปลี่ยนแปลง
   wwctPlayerNotFound: ไม่พบผู้เล่น %ฉันไม่พบ
   wwcConfigGUIAmazonTranslateRegionButton: เปลี่ยนภูมิภาคอเมซอน
-  wwcConfigConversationLangInput: 'ภาษาปลั๊กอินปัจจุบันคือ {0} โปรดป้อนรหัสภาษาที่ถูกต้อง
-    หรือพิมพ์ 0 เพื่อยกเลิกรหัสภาษาที่ถูกต้อง: {0}'
   wwcConfigConversationLangInvalid: รหัสภาษาไม่ถูกต้อง!
   wwcConfigGUIWatsonAPIKeyButton: เปลี่ยนคีย์ API วัตสัน
   wwcEnabled: เปิดใช้งานเวอร์ชันของ WorldwideChat {0}
-  wwcgLangToLangStart: ตอนนี้แปลแชททั่วโลกจาก {0} เพื่อ {1}
   wwctbOnSender: เปิดใช้งานการแปลหนังสือคลิกขวาขณะถือหนังสือเพื่อแปล!
   wwcListenersInitialized: ผู้ฟังที่เริ่มต้นแล้ว
   wwcConfigGUIPluginUpdateChatButton: ส่งการแจ้งเตือนการแชทสำหรับการอัปเดตปลั๊กอิน
@@ -93,8 +90,6 @@ Messages:
   wwctGUINewTranslationTarget: เลือกภาษาเป้าหมาย
   wwcConfigConnectionSuccess: เชื่อมต่อกับ {0} สำเร็จแล้ว!
   wwcConfigGUIGoogleTranslateButton: กูเกิล แปลภาษา
-  wwcConfigConversationPrefixInput: คำนำหน้าปัจจุบันคือ {0} โปรดพิมพ์คำใหม่ หรือพิมพ์
-    0 เพื่อย้อนกลับ
   wwcConfigGUIPreviousPageButton: หน้าก่อนหน้า
   wwcConfigGUITranslatorCacheButton: เปลี่ยนขีดจำกัดแคชแปล
   wwcConfigConversationbStatsSuccess: ประสบความสำเร็จในการสลับ bStats
@@ -139,7 +134,6 @@ Messages:
   wwctrlPlayerNotFound: ไม่พบผู้เล่น {0} หรือไม่พบหรือไม่ใช่ตัวแปลที่ใช้งานอยู่
   wwctrlRateLimitSetSender: ตั้งค่าขีดจำกัดอัตราเป็น {0} วินาที
   wwctrlRateLimitOffTarget: ปิดขีดจำกัดอัตราของ {0}
-  wwctrlRateLimitSetTarget: ตั้งค่าขีด จำกัด อัตราของ {0} เพื่อ {1} วินาที
   wwctrlNotATranslator: คุณไม่ใช่นักแปลที่ใช้งานอยู่!ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่านี้ด้วย
     /wwct.
   wwctrlRateLimitAlreadyOffSender: วงเงินอัตราของคุณถูกปิดใช้งานแล้ว
@@ -242,12 +236,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: การสนทนาทั่วโลกกำลังถูกแปล
     แต่คุณมีเซสชันการแปลที่ใช้งานอยู่จาก {0} ไปยัง {1}
   wwctCannotTranslateConsole: คุณไม่สามารถเริ่มเซสชันการแปลสำหรับคอนโซล!
-  wwctLangToLangStart: เริ่มเซสชันการแปลใหม่จาก {0} ไปยัง {1}
   wwcOnJoinTranslationNotificationSourceLang: คุณมีเซสชันการแปลที่ใช้งานอยู่จาก {0}
     ถึง {0}
-  wwctAutoTranslateStartOtherPlayer: เริ่มเซสชันการแปลใหม่สำหรับ {0} ไปยัง {1}
   wwctTranslationStopped: เซสชันการแปลของคุณถูกหยุดลง
-  wwctLangToLangStartOtherPlayer: เริ่มเซสชันการแปลใหม่สำหรับ {0}จาก {1} ไปยัง {2}
   wwctAutoTranslateStart: เริ่มเซสชันการแปลใหม่เป็น {0}
   wwcOnJoinTranslationNotificationNoSourceLang: คุณมีเซสชันการแปลที่ใช้งานอยู่เป็น
     {0}
@@ -433,9 +424,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: แปล Systran
   wwcrTransFail: โหลด WorldwideChat ใหม่ แต่ไม่สามารถเปิดใช้งานนักแปลได้
   wwcdCacheCleared: แคชการแปลถูกล้างแล้ว
-  wwcdCacheSize: ขนาดของแคชในปัจจุบันคือ {0} โดยมีขีด จำกัด {1}
-  wwcdCacheTerm: '{0}แคชดแปล: อินพุตลาง = {1}, เอาต์พุตลาง = {2}, อินพุทเฟซ= {3} |
-    คำขาออก = {4}'
   wwcdInvalidCmd: อาร์กิวเมนต์ไม่ถูกต้อง
   systranHttpUnknown: 'ข้อผิดพลาด http ที่ไม่รู้จัก: {0}'
   systranHttp400: พารามิเตอร์ที่ไม่ถูกส่งไปยัง Systranอาจเป็นคู่ภาษาที่ไม่ดี?
@@ -493,4 +481,16 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: เปลี่ยนฐานข้อมูล PostgreSQL
   wwcConfigConversationPostgresUsernameSuccess: เปลี่ยนชื่อผู้ใช้ PostgreSQL สำเร็จแล้ว
   wwcConfigGUIStorageTypeSettings: '{0} การกำหนดค่า'
+  wwcConfigConversationPrefixInput: คำนำหน้าปัจจุบันคือ {0}กรุณาพิมพ์ใหม่หรือพิมพ์
+    0 เพื่อกลับไป
+  wwcConfigConversationLangInput: 'ภาษาปลั๊กอินปัจจุบันคือ {0}กรุณาป้อนรหัสภาษาที่ถูกต้อง
+    หรือพิมพ์ 0 เพื่อยกเลิกรหัสภาษาที่ถูกต้อง: {1}'
+  wwcdCacheSize: ขนาดของแคชในปัจจุบันคือ {0} โดยมีขีด จำกัด {1}
+  wwcdCacheTerm: '{0}.แคชดแปล: อินพุตแลง= {1}, เอาต์พุตแลง= {2}, คำอินพุต = {3} |
+    วลีขาออก = {4}'
+  wwctLangToLangStart: เริ่มเซสชันการแปลใหม่จาก {0} ถึง {1}
+  wwctAutoTranslateStartOtherPlayer: เริ่มเซสชันการแปลใหม่สำหรับ {0} ถึง {1}
+  wwctLangToLangStartOtherPlayer: เริ่มเซสชันการแปลใหม่สำหรับ {0} จาก {1} ถึง {2}
+  wwcgLangToLangStart: ตอนนี้แปลแชททั่วโลกจาก {0} เป็น {1}
+  wwctrlRateLimitSetTarget: กำหนดขีด จำกัด อัตรา {0} เป็น {1} วินาที
 

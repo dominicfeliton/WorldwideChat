@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: Chiqish & O'zgarishlarni saqlash
   wwctPlayerNotFound: O'yinchi % Men topilmadi.
   wwcConfigGUIAmazonTranslateRegionButton: Amazon mintaqasini o'zgartirish
-  wwcConfigConversationLangInput: 'Joriy plagin tili {0}. Iltimos, tegishli til kodini
-    kiriting yoki bekor qilish uchun 0 yozing. Haqiqiy til kodlari: {0}'
   wwcConfigConversationLangInvalid: Noto'g'ri til kodi!
   wwcConfigGUIWatsonAPIKeyButton: Watson API kalitini o'zgartirish
-  wwcEnabled: '{0} WorldWidechat versiyasini yoqing.'
-  wwcgLangToLangStart: Endi global suhbatni {0} dan {1} ga tarjima qilish.
+  wwcEnabled: '{0} WorldwideChat versiyasini yoqing.'
   wwctbOnSender: Kitob tarjimasi yoqilgan. Uni tarjima qilish uchun kitobni ushlab
     turganda o'ng tugmasini bosing!
   wwcListenersInitialized: Boshlangan tinglovchilar.
@@ -93,7 +90,7 @@ Messages:
     uchun mintaqani kiriting yoki orqaga qaytish uchun 0 yozing.
   wwcNoConsole: Ushbu buyruq faqat o'yinchi tomonidan boshqarilishi mumkin.
   wwcInitializationFail: WorldwideChat-ni ishga tushirib bo'lmadi.
-  wwcrSuccess: Muvaffaqiyatli WorldWidechat qayta yuklandi.
+  wwcrSuccess: Muvaffaqiyatli WorldwideChat qayta yuklandi.
   wwcPlayerNotFound: O'yinchi % Men topilmadi.
   wwcUpdaterOutOfDateChat: WorldwideChat eskirgan. Iltimos, so'nggi versiyaga yangilang.
   wwcConfigConversationRateLimitSuccess: Rate chegarasi muvaffaqiyatli belgilangan.
@@ -107,8 +104,6 @@ Messages:
   wwctGUINewTranslationTarget: Maqsadli tilni tanlang
   wwcConfigConnectionSuccess: '{0} ga muvaffaqiyatli ulandi!'
   wwcConfigGUIGoogleTranslateButton: Google Tarjima
-  wwcConfigConversationPrefixInput: Joriy prefiks {0}. Iltimos, yangisini yozing yoki
-    orqaga qaytish uchun 0 yozing.
   wwcConfigGUIPreviousPageButton: Oldingi sahifa
   wwcConfigGUITranslatorCacheButton: Tarjima keshini o'zgartirish
   wwcConfigConversationbStatsSuccess: Muvaffaqiyatli bStats toggled.
@@ -132,7 +127,7 @@ Messages:
   wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Tarjima API kaliti muvaffaqiyatli
     o'rnatildi.
   wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon maxfiy kalitini o'zgartiring
-  wwcVersion: WorldWidechat, versiya
+  wwcVersion: WorldwideChat, versiya
   wwcsAttemptedTranslations: 'Tarjimalar: {0}'
   wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon maxfiy kaliti muvaffaqiyatli
     o'rnatildi.
@@ -158,7 +153,6 @@ Messages:
   wwctrlPlayerNotFound: '{0} o''yinchi topilmadi yoki faol tarjimon emas.'
   wwctrlRateLimitSetSender: Stavka limitini {0} sekundiga belgilang.
   wwctrlRateLimitOffTarget: '{0} stavka limiti o''chirildi.'
-  wwctrlRateLimitSetTarget: '{0} darajasi chegarasi {1} sekundgacha sozlang.'
   wwctrlNotATranslator: Siz faol tarjimon emassiz! Buni /wwct bilan o'rnatganingizga
     ishonch hosil qiling.
   wwctrlRateLimitAlreadyOffSender: Sizning stavkangiz chegarasi allaqachon o'chirilgan.
@@ -273,14 +267,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat tarjima qilinmoqda,
     ammo sizda {0} dan {1} gacha faol tarjima seansi mavjud.
   wwctCannotTranslateConsole: Konsol uchun tarjima seansini boshlamaysiz!
-  wwctLangToLangStart: '{0} dan {1} gacha yangi tarjima sessiyasini boshlash.'
   wwcOnJoinTranslationNotificationSourceLang: Sizda {0} dan {1} ga faol tarjima seansi
     mavjud.
-  wwctAutoTranslateStartOtherPlayer: '{0} uchun {1} uchun yangi tarjima sessiyasini
-    boshlash.'
   wwctTranslationStopped: Sizning tarjima sessiyasi to'xtatildi.
-  wwctLangToLangStartOtherPlayer: '{0} uchun {1} dan {2} gacha yangi tarjima sessiyasini
-    boshlash.'
   wwctAutoTranslateStart: “ {0}” ga yangi tarjima sessiyasini boshlash.
   wwcOnJoinTranslationNotificationNoSourceLang: Sizning {0} ga faol tarjima seansi
     bor.
@@ -504,9 +493,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran tarjimasi
   wwcrTransFail: WorldwideChat-ni qayta yukladi, lekin tarjimonni yoqmadi.
   wwcdCacheCleared: Tarjima keshi tozalandi.
-  wwcdCacheSize: Keshning kattaligi hozirda {0} bo'lib, {1} chegarasi bilan.
-  wwcdCacheTerm: '{0}. CachedTranslation:inputLang = {1}, outputLang= {2}, inputPhrase=
-    {3} | outputPhrase= {4}'
   wwcdInvalidCmd: Yaroqsiz dalillar!
   systranHttpUnknown: 'Noma''lum http xatosi: {0}'
   systranHttp400: Systranga yuborilgan yomon parametrlar. Yomon til juftligi bo'lishi
@@ -582,4 +568,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: PostgreSQL foydalanuvchi nomini muvaffaqiyatli
     o'zgartirdi.
   wwcConfigGUIStorageTypeSettings: '{0} Konfiguratsiya'
+  wwcConfigConversationPrefixInput: Joriy prefiks {0}. Iltimos, yangisini yozing yoki
+    orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationLangInput: 'Joriy plagin tili {0}. Iltimos, haqiqiy til kodini
+    kiriting yoki bekor qilish uchun 0 yozing. Haqiqiy til kodlari: {1}'
+  wwcdCacheSize: Keshning kattaligi hozirda {0} bo'lib, {1} chegarasi bilan.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, outputLang= {2}, inputPhrase=
+    {3} | outputPhrase= {4}'
+  wwctLangToLangStart: '{0} dan {1} gacha yangi tarjima sessiyasini boshlash.'
+  wwctAutoTranslateStartOtherPlayer: '{0} dan {1} uchun yangi tarjima sessiyasini
+    boshlash.'
+  wwctLangToLangStartOtherPlayer: '{1} dan {2} gacha {0} uchun yangi tarjima sessiyasini
+    boshlash.'
+  wwcgLangToLangStart: Endi global suhbatni {0} dan {1} ga tarjima qilish.
+  wwctrlRateLimitSetTarget: '{0} tezlik chegarasini {1} soniyagacha belgilang.'
 

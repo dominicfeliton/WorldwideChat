@@ -48,12 +48,9 @@ Messages:
   wwcConfigGUIQuitButton: الخروج من التغييرات وحفظها
   wwctPlayerNotFound: لم يتم العثور على اللاعب %.
   wwcConfigGUIAmazonTranslateRegionButton: تغيير منطقة الأمازون
-  wwcConfigConversationLangInput: 'لغة البرنامج المساعد الحالية هو {0}. الرجاء إدخال
-    رمز لغة صالح، أو اكتب 0 للإلغاء. رموز لغة صالحة: {0}'
   wwcConfigConversationLangInvalid: رمز لغة غير صالح!
   wwcConfigGUIWatsonAPIKeyButton: تغيير مفتاح واجهة برمجة التطبيقات واتسون
   wwcEnabled: تمكين نسخة ورلدويدشة {0}.
-  wwcgLangToLangStart: الآن ترجمة الدردشة العامة من {0} إلى {1}.
   wwctbOnSender: ترجمة الكتاب تمكين. انقر بزر الماوس الأيمن أثناء عقد كتاب لترجمته!
   wwcListenersInitialized: المستمعين تهيئة.
   wwcConfigGUIPluginUpdateChatButton: إرسال تذكير الدردشة للحصول على تحديثات البرنامج
@@ -99,8 +96,6 @@ Messages:
   wwctGUINewTranslationTarget: اختر لغة الهدف
   wwcConfigConnectionSuccess: تم الاتصال بنجاح بـ {0}!
   wwcConfigGUIGoogleTranslateButton: ترجمة جوجل
-  wwcConfigConversationPrefixInput: البادئة الحالية هو {0}. الرجاء كتابة واحدة جديدة،
-    أو اكتب 0 للعودة.
   wwcConfigGUIPreviousPageButton: الصفحة السابقة
   wwcConfigGUITranslatorCacheButton: تغيير حد ذاكرة التخزين المؤقت للترجمة
   wwcConfigConversationbStatsSuccess: بنجاح بتزحلق بستاتس.
@@ -147,7 +142,6 @@ Messages:
   wwctrlPlayerNotFound: لم يتم العثور على اللاعب {0}، أو أنه ليس مترجماً نشطاً.
   wwctrlRateLimitSetSender: اضبط حد السعر إلى {0} ثواني.
   wwctrlRateLimitOffTarget: أوقفت حد معدّل {0}.
-  wwctrlRateLimitSetTarget: اضبط حد المعدّل {0} إلى {1} ثانية.
   wwctrlNotATranslator: أنت لست مترجم نشط! تأكد من تعيين هذا مع/wwct.
   wwctrlRateLimitAlreadyOffSender: حد السعر الخاص بك معطل بالفعل.
   wwctGUIRateButton: تعيين حد السعر
@@ -254,11 +248,8 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: تتم ترجمة الدردشة العالمية،
     ولكن لديك جلسة ترجمة نشطة من {0} إلى {1}.
   wwctCannotTranslateConsole: لا يمكنك بدء جلسة ترجمة لوحدة التحكم!
-  wwctLangToLangStart: بدء جلسة ترجمة جديدة من {0} إلى {1}.
   wwcOnJoinTranslationNotificationSourceLang: لديك جلسة ترجمة نشطة من {0} إلى {1}.
-  wwctAutoTranslateStartOtherPlayer: بدء جلسة ترجمة جديدة لـ {0} إلى {1}.
   wwctTranslationStopped: تم إيقاف جلسة الترجمة الخاصة بك.
-  wwctLangToLangStartOtherPlayer: بدء جلسة ترجمة جديدة لـ {0} من {1} إلى {2}.
   wwctAutoTranslateStart: بدء جلسة ترجمة جديدة إلى {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: لديك جلسة ترجمة نشطة إلى {0}.
   wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: تتم ترجمة الدردشة العالمية،
@@ -456,9 +447,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: ترجمة النظام
   wwcrTransFail: تم إعادة تحميل WorldwideChat ولكنه فشل في تمكين المترجم.
   wwcdCacheCleared: تم مسح ذاكرة التخزين المؤقت للترجمة.
-  wwcdCacheSize: حجم ذاكرة التخزين المؤقت حاليًا هو {0}، بحد أقصى {1}.
-  wwcdCacheTerm: '{0}. الترجمة المخزنة مؤقتًا: نطاق الإدخال = {1}، نطاق الإخراج =
-    {2}، عبارة الإدخال = {3} | عبارة الإخراج = {4}'
   wwcdInvalidCmd: حجج غير صالحة!
   systranHttpUnknown: 'خطأ http غير معروف: {0}'
   systranHttp400: تم إرسال المعلمات السيئة إلى Systran. قد يكون زوجًا لغويًا سيئًا؟
@@ -521,4 +509,16 @@ Messages:
   wwcConfigGUIPostgresDatabaseNameButton: تغيير قاعدة بيانات بوستغريزل
   wwcConfigConversationPostgresUsernameSuccess: تم تغيير اسم مستخدم PostgreSQL بنجاح.
   wwcConfigGUIStorageTypeSettings: '{0} التكوين'
+  wwcConfigConversationPrefixInput: البادئة الحالية هي {0}. يرجى كتابة واحدة جديدة،
+    أو كتابة 0 للعودة.
+  wwcConfigConversationLangInput: 'لغة البرنامج المساعد الحالية هي {0}. يرجى إدخال
+    رمز لغة صالح، أو اكتب 0 للإلغاء. رموز اللغة الصالحة: {1}'
+  wwcdCacheSize: حجم ذاكرة التخزين المؤقت حاليًا هو {0}، بحد أقصى {1}.
+  wwcdCacheTerm: '{0}. الترجمة المخزنة مؤقتًا: وقت الإدخال = {1}، وقت الإخراج = {2}،
+    عبارة الإدخال = {3} | عبارة الإخراج = {4}'
+  wwctLangToLangStart: بدء جلسة ترجمة جديدة من {0} إلى {1}.
+  wwctAutoTranslateStartOtherPlayer: بدء جلسة ترجمة جديدة لـ {0} إلى {1}.
+  wwctLangToLangStartOtherPlayer: بدء جلسة ترجمة جديدة لـ {0} من {1} إلى {2}.
+  wwcgLangToLangStart: الآن نقوم بترجمة الدردشة العالمية من {0} إلى {1}.
+  wwctrlRateLimitSetTarget: قم بتعيين حد المعدل من {0} إلى {1} ثانية.
 

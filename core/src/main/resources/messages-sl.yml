@@ -52,12 +52,9 @@ Messages:
   wwcConfigGUIQuitButton: Izhod in shranjevanje sprememb
   wwctPlayerNotFound: Igralca {0} našel.
   wwcConfigGUIAmazonTranslateRegionButton: Spremeni regijo Amazon
-  wwcConfigConversationLangInput: 'Trenutni jezik vtičnika je {0}. vnesite veljavno
-    jezikovno kodo ali vnesite 0 za preklic. Veljavne jezikovne kode: {0}'
   wwcConfigConversationLangInvalid: Neveljavna jezikovna koda!
   wwcConfigGUIWatsonAPIKeyButton: Spremeni ključ API Watson
   wwcEnabled: Omogočena različica WorldwideChat {0}.
-  wwcgLangToLangStart: Zdaj prevajanje globalnega klepeta od {0} do {1}.
   wwctbOnSender: Prevajanje knjige je omogočeno. Z desno tipko miške, medtem ko držite
     knjigo, da jo prevedete
   wwcListenersInitialized: Inicializirani poslušalci.
@@ -108,8 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: Izberite ciljni jezik
   wwcConfigConnectionSuccess: Uspešno povezan z {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Trenutna predpona je {0}. vnesite novo ali vnesite
-    0, da se vrnete nazaj.
   wwcConfigGUIPreviousPageButton: Prejšnja stran
   wwcConfigGUITranslatorCacheButton: Spreminjanje omejitve predpomnilnika
   wwcConfigConversationbStatsSuccess: Uspešno preklapljali bStats.
@@ -160,7 +155,6 @@ Messages:
   wwctrlPlayerNotFound: Predvajalnik {0} ni mogoče najti ali ni aktiven prevajalec.
   wwctrlRateLimitSetSender: Nastavite omejitev hitrosti na {0} sekunde.
   wwctrlRateLimitOffTarget: Izklopil omejitev hitrosti od {0}.
-  wwctrlRateLimitSetTarget: Nastavite omejitev hitrosti od {0} na {1} sekund.
   wwctrlNotATranslator: Niste aktivni prevajalec! Prepričajte se, da ste to nastavili
     z /wwct.
   wwctrlRateLimitAlreadyOffSender: Omejitev stopnje je že onemogočena.
@@ -276,12 +270,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globalni klepet se prevaja,
     vendar imate aktivno prevajalsko sejo od {0} do {1}.
   wwctCannotTranslateConsole: Ne morete začeti prevajalske seje za konzolo!
-  wwctLangToLangStart: Začetek nove prevajalske seje od {0} do {1}.
   wwcOnJoinTranslationNotificationSourceLang: Imate aktivno prevajalsko sejo od {0}
     do {0}.
-  wwctAutoTranslateStartOtherPlayer: Začetek nove prevajalske seje za {0} do {1}.
   wwctTranslationStopped: Vaša prevajalska seja je bila prekinjena.
-  wwctLangToLangStartOtherPlayer: Začetek nove prevajalske seje za {0} od {1} do {2}.
   wwctAutoTranslateStart: Začetek nove prevajalske seje na {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Imate aktivno prevajalsko sejo na
     {0}.
@@ -495,9 +486,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Prevedi
   wwcrTransFail: Ponovno naložil WorldwideChat, vendar ni uspel omogočiti prevajalca.
   wwcdCacheCleared: Prevodni predpomnilnik je bil izbrisan.
-  wwcdCacheSize: Velikost predpomnilnika je trenutno {0}, z omejitvijo {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Neveljavni argumenti!
   systranHttpUnknown: 'Neznana napaka http: {0}'
   systranHttp400: Slabi parametri poslani Systran. Je morda slab jezikovni par?
@@ -566,4 +554,16 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Uspešno spremenil uporabniško ime
     PostgreSQL.
   wwcConfigGUIStorageTypeSettings: '{0} Konfiguracija'
+  wwcConfigConversationPrefixInput: Trenutna predpona je {0}. Prosimo, vnesite novo
+    ali vnesite 0, da se vrnete nazaj.
+  wwcConfigConversationLangInput: 'Trenutni jezik vtičnika je {0}. Vnesite veljavno
+    jezikovno kodo ali vnesite 0, če želite preklicati. Veljavne jezikovne kode: {1}'
+  wwcdCacheSize: Velikost predpomnilnika je trenutno {0}, z omejitvijo {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Začetek nove prevajalske seje od {0} do {1}.
+  wwctAutoTranslateStartOtherPlayer: Začetek nove prevajalske seje za {0} do {1}.
+  wwctLangToLangStartOtherPlayer: Začetek nove prevajalske seje za {0} od {1} do {2}.
+  wwcgLangToLangStart: Zdaj prevajamo globalni klepet iz {0} v {1}.
+  wwctrlRateLimitSetTarget: Nastavite omejitev hitrosti {0} na {1} sekund.
 

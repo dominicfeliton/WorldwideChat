@@ -53,13 +53,9 @@ Messages:
   wwcConfigGUIQuitButton: Hætta og vista breytingar
   wwctPlayerNotFound: Leikmaður %Ég fann ekki.
   wwcConfigGUIAmazonTranslateRegionButton: Breyta Amazon svæðinu
-  wwcConfigConversationLangInput: 'Núverandi tappi tungumál er {0}. Vinsamlegast sláðu
-    inn gilt tungumál kóða, eða tegund 0 til að hætta við. Gildir tungumálakóðar:
-    {0}'
   wwcConfigConversationLangInvalid: Ógildur tungumálakóði!
   wwcConfigGUIWatsonAPIKeyButton: Breyta Watson API Lykill
   wwcEnabled: Virkja WorldwideChat útgáfa {0}.
-  wwcgLangToLangStart: Nú þýða alþjóðlegt spjall frá {0} til {1}.
   wwctbOnSender: Bók þýðing virkt. Hægrismelltu á meðan þú heldur bók til að þýða
     það!
   wwcListenersInitialized: Frumstilla hlustendur.
@@ -109,8 +105,6 @@ Messages:
   wwctGUINewTranslationTarget: Veldu markmál
   wwcConfigConnectionSuccess: Tókst tengdur til {0}!
   wwcConfigGUIGoogleTranslateButton: Google Þýða
-  wwcConfigConversationPrefixInput: Núverandi forskeyti er {0}. Sláðu inn nýjan, eða
-    sláðu inn 0 til að fara aftur.
   wwcConfigGUIPreviousPageButton: fyrri síða
   wwcConfigGUITranslatorCacheButton: Breyta Þýðing skyndiminni Tak
   wwcConfigConversationbStatsSuccess: Tókst skipta BSTAT.
@@ -162,7 +156,6 @@ Messages:
     þýðandi.
   wwctrlRateLimitSetSender: Stilltu hlutfall takmörk til {0} sekúndur.
   wwctrlRateLimitOffTarget: Slökktu á hlutfall takmörk af {0}.
-  wwctrlRateLimitSetTarget: Stilltu hlutfall takmörk af {0} til {1} sekúndur.
   wwctrlNotATranslator: Þú ert ekki virkur þýðandi! Gakktu úr skugga um að þú hafir
     sett þetta með/wwct.
   wwctrlRateLimitAlreadyOffSender: Hlutfall þitt er nú þegar óvirkt.
@@ -276,13 +269,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global spjall er þýtt,
     en þú ert með virkan þýðing fundur frá {0} til {1}.
   wwctCannotTranslateConsole: Þú getur ekki byrjað þýðing fundur fyrir hugga!
-  wwctLangToLangStart: Byrja nýja þýðingu fundur frá {0} til {1}.
   wwcOnJoinTranslationNotificationSourceLang: Þú ert með virkan þýðing fundur frá
     {0} til {1}.
-  wwctAutoTranslateStartOtherPlayer: Byrja nýja þýðingu fundur fyrir {0} til {1}.
   wwctTranslationStopped: Þýðing fundur þinn hefur verið hætt.
-  wwctLangToLangStartOtherPlayer: Byrja nýja þýðingu fundur fyrir {0} frá {1} til
-    {2}.
   wwctAutoTranslateStart: Byrja nýja þýðingu fundur til {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Þú ert með virkan þýðing fundur til
     {0}.
@@ -494,9 +483,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Þýða
   wwcrTransFail: Endurhlaðið WorldwideChat en tókst ekki að virkja þýðanda.
   wwcdCacheCleared: Þýðingarskyndiminnið var hreinsað.
-  wwcdCacheSize: Stærð skyndiminnisins er nú {0}, með takmörkunum {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
-    {3} | OutputPhrase= {4}'
   wwcdInvalidCmd: Ógild rök!
   systranHttpUnknown: 'Óþekkt http villa: {0}'
   systranHttp400: Slæmar breytur sendar til Systran. Getur verið slæmt tungumálapar?
@@ -568,4 +554,18 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Breytti PostgreSQL notendanafninu
     með góðum árangri.
   wwcConfigGUIStorageTypeSettings: '{0} Stillingar'
+  wwcConfigConversationPrefixInput: Núverandi forskeyti er {0}. Vinsamlegast sláðu
+    inn nýjan eða sláðu inn 0 til að fara aftur.
+  wwcConfigConversationLangInput: 'Núverandi viðbótartungumál er {0}. Vinsamlegast
+    sláðu inn gilt tungumálakóða eða sláðu inn 0 til að hætta við. Gildir tungumálakóðar:
+    {1}'
+  wwcdCacheSize: Stærð skyndiminnisins er nú {0}, með takmörkunum {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Byrjað er á nýrri þýðingatíma frá {0} til {1}.
+  wwctAutoTranslateStartOtherPlayer: Byrjað er á nýrri þýðingatíma fyrir {0} til {1}.
+  wwctLangToLangStartOtherPlayer: Byrjað er á nýrri þýðingatíma fyrir {0} frá {1}
+    til {2}.
+  wwcgLangToLangStart: Nú er að þýða alþjóðlegt spjall úr {0} til {1}.
+  wwctrlRateLimitSetTarget: Stilltu hraðatakmarkið {0} í {1} sekúndur.
 

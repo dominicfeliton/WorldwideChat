@@ -51,12 +51,9 @@ Messages:
   wwcConfigGUIQuitButton: Verlaat en Stoor Veranderinge
   wwctPlayerNotFound: Speler {0} nie gevind nie.
   wwcConfigGUIAmazonTranslateRegionButton: Verander Amazon Streek
-  wwcConfigConversationLangInput: 'Die huidige inprop taal is {0}. Voer asseblief
-    ''n geldige taalkode in, of tik 0 om te kanselleer. Geldige taalkodes: {0}'
   wwcConfigConversationLangInvalid: Ongeldige taal kode!
   wwcConfigGUIWatsonAPIKeyButton: Verander Watson API Sleutel
   wwcEnabled: Geaktiveer WorldwideChat weergawe {0}.
-  wwcgLangToLangStart: Vertaal nou globale chat van {0} na {1}.
   wwctbOnSender: Boekvertaling geaktiveer. Regs-kliek terwyl jy 'n boek hou om dit
     te vertaal!
   wwcListenersInitialized: geïnisialiseer luisteraars.
@@ -106,8 +103,6 @@ Messages:
   wwctGUINewTranslationTarget: Kies 'n teikentaal
   wwcConfigConnectionSuccess: Suksesvol verbind na {0}!
   wwcConfigGUIGoogleTranslateButton: Google Translate
-  wwcConfigConversationPrefixInput: Die huidige voorvoegsel is {0}. Tik asseblief
-    'n nuwe een, of tik 0 om terug te gaan.
   wwcConfigGUIPreviousPageButton: Vorige Bladsy
   wwcConfigGUITranslatorCacheButton: Verander Vertaling Cache Limiet
   wwcConfigConversationbStatsSuccess: Suksesvol geskakel bStats.
@@ -156,7 +151,6 @@ Messages:
     nie.
   wwctrlRateLimitSetSender: Stel jou koersbeperking na {0} sekondes.
   wwctrlRateLimitOffTarget: Skakel die koersbeperking van {0} af.
-  wwctrlRateLimitSetTarget: Stel die tempogrens van {0} na {1} sekondes.
   wwctrlNotATranslator: Jy is nie 'n aktiewe vertaler nie! Maak seker dat jy hierdie
     stel met/wwct.
   wwctrlRateLimitAlreadyOffSender: Jou tarieflimiet is reeds gedeaktiveer.
@@ -272,13 +266,9 @@ Messages:
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globale chat word vertaal,
     maar jy het 'n aktiewe vertaling sessie van {0} na {1}.
   wwctCannotTranslateConsole: Jy kan nie 'n vertaling sessie vir konsole begin nie!
-  wwctLangToLangStart: Begin 'n nuwe vertaling sessie van {0} na {1}.
   wwcOnJoinTranslationNotificationSourceLang: Jy het 'n aktiewe vertaling sessie van
     {0} na {1}.
-  wwctAutoTranslateStartOtherPlayer: Begin 'n nuwe vertaling sessie vir {0} na {1}.
   wwctTranslationStopped: Jou vertaling sessie is gestop.
-  wwctLangToLangStartOtherPlayer: Begin 'n nuwe vertaling sessie vir {0} van {1} na
-    {0}.
   wwctAutoTranslateStart: Begin 'n nuwe vertaling sessie na {0}.
   wwcOnJoinTranslationNotificationNoSourceLang: Jy het 'n aktiewe vertaling sessie
     na {0}.
@@ -487,9 +477,6 @@ Messages:
   wwcConfigGUISystranTranslateButton: Systran Vertaal
   wwcrTransFail: Herlaai WorldwideChat, maar kon nie 'n vertaler moontlik gemaak nie.
   wwcdCacheCleared: Die vertaalkas is skoongemaak.
-  wwcdCacheSize: Die grootte van die kas is tans {0}, met 'n limiet van {1}.
-  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, inputPhrase=
-    {3} | UitsetPhrase= {4}'
   wwcdInvalidCmd: Ongeldige argumente!
   systranHttpUnknown: 'Onbekende http fout: {0}'
   systranHttp400: Slegte parameters gestuur aan Systran. Miskien 'n slegte taalpaar
@@ -562,4 +549,17 @@ Messages:
   wwcConfigConversationPostgresUsernameSuccess: Die PostgreSQL-gebruikersnaam suksesvol
     verander.
   wwcConfigGUIStorageTypeSettings: '{0} Konfigurasie'
+  wwcConfigConversationPrefixInput: Die huidige voorvoegsel is {0}. Tik asseblief
+    'n nuwe een, of tik 0 om terug te gaan.
+  wwcConfigConversationLangInput: 'Die huidige plugin taal is {0}. Voer asseblief
+    ''n geldige taalkode in, of tik 0 om te kanselleer. Geldige taalkodes: {1}'
+  wwcdCacheSize: Die grootte van die kas is tans {0}, met 'n limiet van {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Begin 'n nuwe vertaalsessie van {0} na {1}.
+  wwctAutoTranslateStartOtherPlayer: Begin 'n nuwe vertaalsessie vir {0} na {1}.
+  wwctLangToLangStartOtherPlayer: Begin 'n nuwe vertaalsessie vir {0} van {1} tot
+    {2}.
+  wwcgLangToLangStart: Vertaal nou wêreldwye chat van {0} na {1}.
+  wwctrlRateLimitSetTarget: Stel die tarieflimiet van {0} op {1} sekondes.
 
