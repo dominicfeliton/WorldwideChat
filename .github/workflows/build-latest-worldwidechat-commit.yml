@@ -1,0 +1,39 @@
+# This workflow will build a Java project with Maven
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: Autobuilder
+
+on:
+  push:
+    branches: [ main, development-1.x ]
+  pull_request:
+    branches: [ main, development-1.x ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'adopt'
+        java-version: 17
+
+    - name: Start Docker Compose (MySQL/MongoDB/PostgreSQL)
+      run: bash ./dev/setup-dev-env.sh
+
+    - name: Build with Maven
+      run: mvn -B clean package -Dyamltranslator.skip=true --file pom.xml
+
+    - name: Prepare final JARs
+      run: mkdir staging && cp spigot-target/WorldwideChat-spigot.jar staging/WorldwideChat-spigot.jar && cp paper-target/WorldwideChat-paper.jar staging/WorldwideChat-paper.jar
+    - uses: actions/upload-artifact@v4
+      with:
+        name: WWC JARs
+        path: staging
+
+    - name: Stop Docker Compose (MySQL/MongoDB/PostgreSQL)
+      run: bash ./dev/takedown-dev-env.sh

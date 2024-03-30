@@ -1,0 +1,567 @@
+Messages:
+  wwcgAutoTranslateStart: ახლა თარგმნის გლობალურ სტატისტიკა {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: გლობალური სტატისტიკა თარგმნა
+    {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: შეცვალეთ Amazon წვდომის გასაღები
+  wwcrFail: ვერ მოხერხდა WorldwideChat- ის განახლება.
+  wwcConfigGUIUpdateCheckerButton: შეცვლა შეამოწმეთ განახლებების დაგვიანებით
+  wwcUpdaterFailedGeneric: შეუძლებელია WorldwideChat- ის განახლებების შემოწმება.
+  wwcConfigConversationUpdateCheckerInput: განახლების შემოწმების მიმდინარე შეფერხება
+    არის {0} წამი. აკრიფეთ 10-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან
+    არაფერი ნაკლებია, ვიდრე 10 დაბრუნდეს.
+  wwctGUIMainMenuGlobal: გლობალური თარგმანის მენიუ
+  wwcConfigConversationPluginUpdateChatSuccess: მოდული განახლება სტატისტიკა შეხსენება
+    toggled წარმატებით.
+  wwctbOnTarget: წიგნის თარგმანი ჩართულია {0}.
+  wwcsNotATranslator: ჯერ არ არის ხელმისაწვდომი ჩანაწერები {0}.
+  wwcConfigGUIbStatsButton: ბსტატების გადართვა
+  wwctGUINewTranslationSource: აირჩიეთ წყარო ენა
+  wwcConfigConnectionFailed: ვერ მოხერხდა {0}- თან დაკავშირება. დარწმუნდით, რომ თქვენი
+    რწმუნებათა სიგელები და firewall სწორად არის კონფიგურირებული!
+  wwcConfigEnabledbStats: ჩართულია bStats.
+  wwctGUIMainMenuPlayer: '{0} მთარგმნელობითი მენიუ'
+  wwctGUIBookButton: წიგნის თარგმანის გადართვა
+  wwcLangDetected: აღმოჩენილი ენა {0}.
+  wwcBookTranslateStart: სამიზნე წიგნის თარგმნა...
+  wwcConfigDisabledbStats: შეზღუდული შესაძლებლობების მქონე bStats.
+  wwctsOffSender: შესვლა თარგმანი გამორთულია.
+  wwcUpdaterParserFailed: Github- ის განახლების მონაცემების გარჩევა ვერ მოხერხდა.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: მიმდინარე საიდუმლო გასაღები
+    არის {0}. გთხოვთ, შეიყვანოთ საიდუმლო გასაღები Amazon- ისთვის, ან ტიპი 0 უკან დასაბრუნებლად.
+  wwctbOffSender: წიგნის თარგმანი გამორთულია.
+  wwcConfigGUIAmazonTranslateButton: ამაზონის თარგმანი
+  wwcConfigConversationLangSuccess: მოდული ენა წარმატებით შეიცვალა.
+  wwcsSuccessfulTranslations: 'წარმატებული თარგმანები: {0}'
+  wwcConfigConversationTranslationCacheInput: მიმდინარე თარგმანის ქეშის ლიმიტი არის
+    {0} ფრაზებია. აკრიფეთ 0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან ტიპი
+    0, რათა გამორთოთ თარგმანის ქეში. ჩაწერეთ 0-ზე ნაკლები დაბრუნება.
+  wwctbOffTarget: წიგნის თარგმანი გამორთულია {0}.
+  wwcConfigGUIGeneralSettings: ზოგადი კონფიგურაცია
+  wwcInvalidLang: არასწორი ენა თქვენს config.yml. უპირობოდ en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazon რეგიონში წარმატებით.
+  wwcConfigRateLimitEnabled: გლობალური განაკვეთის ლიმიტი ჩართულია და დაყენებულია {0}
+    წამში.
+  wwcConfigGUILangButton: მოდულის ენის შეცვლა
+  wwctGUISignButton: ჟესტების თარგმანის გადართვა
+  wwcUpdaterOutOfDate: WorldwideChat მოძველებულია. გთხოვთ განაახლოთ უახლესი ვერსია,
+    {0}.
+  wwcConfigGUINextPageButton: შემდეგი გვერდი
+  wwcConfigInvalidTranslatorSettings: არასწორი თარჯიმანი პარამეტრები! გთხოვთ, ჩართოთ
+    მხოლოდ ერთი თარჯიმანი თქვენს config.yml.
+  wwcConfigGUIQuitButton: გასვლისა და ცვლილებების შენახვა
+  wwctPlayerNotFound: მოთამაშე {0} ვერ მოიძებნა.
+  wwcConfigGUIAmazonTranslateRegionButton: ამაზონის რეგიონის შეცვლა
+  wwcConfigConversationLangInvalid: არასწორი ენის კოდი!
+  wwcConfigGUIWatsonAPIKeyButton: შეცვალეთ Watson API გასაღები
+  wwcEnabled: ჩართულია WorldwideChat ვერსია {0}.
+  wwctbOnSender: წიგნის თარგმანი ჩართულია. მარჯვენა ღილაკით წიგნის ჩატარებისას თარგმნის
+    მას!
+  wwcListenersInitialized: ინიციალიზებულ მსმენელებს.
+  wwcConfigGUIPluginUpdateChatButton: პირადი ჩატის შეხსენება მოდულის განახლებებისთვის
+  wwcConfigConversationSendTranslationChatSuccess: აქტიური მთარგმნელი სტატისტიკა შეხსენება
+    toggled წარმატებით.
+  wwctsOffTarget: ხელმოწერის თარგმანი გათიშულია {0}.
+  wwcUpdaterConnectionFailed: Github- ზე უახლესი განახლებების შემოწმება შეუძლებელია.
+  watsonNotFoundExceptionNotification: შეუძლებელია თქვენი შეყვანის თარგმნა.
+  wwcConfigConversationWatsonAPIKeyInput: მიმდინარე API გასაღები არის {0}. გთხოვთ,
+    შეიყვანოთ API გასაღები Watson— ისთვის, ან ტიპის 0 დასაბრუნებლად.
+  wwctGUIStopButton: მთარგმნელობის შეჩერება
+  wwcgTranslationStopped: გლობალური სტატისტიკა თარგმანი შეწყდა.
+  wwcUpdaterFutureDate: WorldwideChat- ის ეს მაგალითი უფრო დიდი ვერსიაა, ვიდრე უახლესი
+    საზოგადოება.
+  wwcConfigConversationPrefixSuccess: პრეფიქსი წარმატებით შეიცვალა.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Google Translate API
+  wwcSignDeletedOrTooLong: 'სამიზნე ნიშანი ან წაიშალა ან თარგმანი ძალიან გრძელი იყო.
+    თარგმანი:'
+  wwctsOnTarget: ხელმოწერის თარგმანი ჩართულია {0}.
+  wwcConfigCacheDisabled: თარჯიმანი ქეში გამორთულია.
+  wwcConfigConversationWatsonURLInput: მიმდინარე URL არის {0}. გთხოვთ, შეიყვანოთ სერვისის
+    URL Watson- ისთვის, ან აკრიფეთ 0 უკან დასაბრუნებლად.
+  wwcBookDone: წიგნი წარმატებით ითარგმნა.
+  wwctsOnSender: შესვლა თარგმანი ჩართულია. მარჯვენა ღილაკით ნიშანი თარგმნა!
+  watsonColorCodeWarning: ფერადი კოდების გამოყენება შეიძლება არაპროგნოზირებადი შედეგების
+    მოგცეთ.
+  wwctGUITranslationButton: თარგმნის დაწყება
+  wwctGUIAutoDetectButton: ავტომატური გამოვლენის წყარო ენა
+  wwcUpdaterUpToDate: WorldwideChat არის დღემდე!
+  wwcConfigConversationAmazonTranslateRegionInput: მიმდინარე რეგიონი არის {0}. გთხოვთ,
+    შეიყვანოთ რეგიონი ამაზონისთვის, ან ტიპის 0 დასაბრუნებლად.
+  wwcNoConsole: ეს ბრძანება შეიძლება მხოლოდ გაიქცა მოთამაშე.
+  wwcInitializationFail: ვერ მოხერხდა WorldwideChat ინიციალიზაცია
+  wwcrSuccess: წარმატებით გადატვირთულია WorldwideChat.
+  wwcPlayerNotFound: მოთამაშე {0} ვერ მოიძებნა.
+  wwcUpdaterOutOfDateChat: WorldwideChat მოძველებულია. გთხოვთ, განაახლოთ უახლესი ვერსია.
+  wwcConfigConversationRateLimitSuccess: კურსის ლიმიტის კომპლექტი წარმატებით.
+  wwcConfigConversationWatsonURLSuccess: Watson URL წარმატებით.
+  wwctbPlayerNotFound: მოთამაშე {0} ან არ არის ნაპოვნი, ან არ არის აქტიური თარჯიმანი.
+  wwcConfigConversationTranslationCacheSuccess: თარგმანის ქეშის ლიმიტი წარმატებით
+    შეიქმნა.
+  wwctInvalidArgs: არასწორი არგუმენტები გათვალისწინებული!
+  wwcConfigGUIPrefixButton: მოდულის პრეფიქსის შეცვლა
+  wwctSameLangError: თქვენ არ შეგიძლიათ თარგმნოთ იმავე ენაზე!
+  wwctGUINewTranslationTarget: აირჩიეთ სამიზნე ენა
+  wwcConfigConnectionSuccess: წარმატებით დაკავშირებულია {0}!
+  wwcConfigGUIGoogleTranslateButton: Google თარგმნა
+  wwcConfigGUIPreviousPageButton: წინა გვერდი
+  wwcConfigGUITranslatorCacheButton: შეცვლა თარგმანი Cache ლიმიტი
+  wwcConfigConversationbStatsSuccess: წარმატებით toggled bStats.
+  wwcSignDone: ნიშანი წარმატებით ითარგმნა.
+  wwcConfigInvalidPrefixSettings: თქვენი პრეფიქსის წაკითხვა ვერ მოხერხდა. ნაგულისხმევი
+    გამოყენება...
+  wwcConfigRateLimitInvalid: ცუდი განაკვეთი ლიმიტი მითითებული config.yml. უპირობოდ
+    0 წამი...
+  wwcSignTranslateStart: სამიზნე ნიშნის თარგმნა...
+  wwcConfigGUIChatSettings: ჩატის კონფიგურაცია
+  wwcConfigGUIWatsonURLButton: შეცვალეთ Watson სერვისის URL
+  wwcConfigConversationUpdateCheckerSuccess: განახლების შემოწმება დაგვიანებით მითითებული
+    წარმატებით.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: გლობალური ჩეთი თარგმნილია {0}
+    დან {0}.
+  wwcConfigGUITranslatorSettings: მთარგმნელთა კონფიგურაცია
+  wwcConfigConversationGoogleTranslateAPIKeyInput: მიმდინარე API გასაღები არის {0}.
+    გთხოვთ, შეიყვანოთ API გასაღები Google Translate- ისთვის, ან ტიპის 0 დასაბრუნებლად.
+  wwcConfigConversationRateLimitInput: მიმდინარე გლობალური განაკვეთის ლიმიტი თითო
+    თარგმანზე არის {0} წამი. აკრიფეთ 0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა,
+    ან ტიპის 0 გამორთვა ლიმიტი. ჩაწერეთ 0-ზე ნაკლები დაბრუნება.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API გასაღები
+    წარმატებით
+  wwcConfigGUIAmazonTranslateSecretKeyButton: შეცვალეთ Amazon საიდუმლო გასაღები
+  wwcVersion: WorldwideChat, ვერსია
+  wwcsAttemptedTranslations: 'თარგმანების მცდელობა: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon საიდუმლო გასაღები კომპლექტი
+    წარმატებით.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API გასაღები კომპლექტი წარმატებით.
+  wwcRateLimit: თქვენი თარგმანი განაკვეთი შეზღუდულია. გთხოვთ დაელოდოთ სხვა {0} წამში.
+  wwcConfigCacheEnabled: თარჯიმანი ქეში ჩართულია და დაყენებულია ლიმიტი {0}.
+  wwctGUIExistingTranslationButton: მთარგმნელობითი მიმდინარე სესიის გადაწერა
+  wwcUserDataReloaded: დატვირთული ყველა შენახული მომხმარებლის მონაცემები.
+  wwcConfigGUISendTranslationChatButton: ჩაწერეთ შეხსენება აქტიურ მთარგმნელთან შესვლაზე
+  wwcsLastTranslationTime: 'ბოლო (წარმატებული) თარგმანის დრო: {0}'
+  wwctbNotATranslator: თქვენ არ ხართ აქტიური თარჯიმანი! დარწმუნდით, რომ თქვენ მითითებული
+    ეს /wwct.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: წვდომის მიმდინარე გასაღები არის
+    {0}. გთხოვთ, შეიყვანოთ Amazon- ისთვის წვდომის გასაღები, ან ჩაწერეთ 0 უკან დასაბრუნებლად.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon წვდომის გასაღები წარმატებით.
+  wwcConfigBadUpdateDelay: არასწორი განახლების დაგვიანებით მითითებული config.yml.
+    უპირობოდ 86400 წამი...
+  wwctrlRateLimitOffSender: გამორთულია თქვენი განაკვეთის ლიმიტი.
+  wwctrlRateLimitAlreadyOffTarget: '{0}- ის სიჩქარის ლიმიტი უკვე გამორთულია.'
+  wwctrlPlayerNotFound: მოთამაშე {0} ან არ არის ნაპოვნი, ან არ არის აქტიური თარჯიმანი.
+  wwctrlRateLimitSetSender: დააყენეთ თქვენი განაკვეთის ლიმიტი {0} წამში.
+  wwctrlRateLimitOffTarget: გამორთვა {0} სიჩქარის ლიმიტი.
+  wwctrlNotATranslator: თქვენ არ ხართ აქტიური თარჯიმანი! დარწმუნდით, რომ თქვენ მითითებული
+    ეს /wwct.
+  wwctrlRateLimitAlreadyOffSender: თქვენი კურსის ლიმიტი უკვე გამორთულია.
+  wwctGUIRateButton: მითითებული განაკვეთის ლიმიტი
+  wwctGUIConversationRateLimit: თარგმანის კურსის ლიმიტი მიმდინარეობა {0} წამი. აკრიფეთ
+    0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან ტიპის 0 გამორთვა ლიმიტი.
+    ჩაწერეთ 0-ზე ნაკლები დაბრუნება.
+  wwctGUITargetPlayerNull: სამიზნე მოთამაშე გათიშული სერვერიდან.
+  wwcConfigConversationSyncUserDataDelayInput: მომხმარებლის მონაცემების სინქრონიზაციის
+    მიმდინარე შეფერხება {0} წამი. აკრიფეთ 10-ზე მეტი არაფერი, რათა შეიქმნას ახალი
+    მნიშვნელობა, ან არაფერი ნაკლებია, ვიდრე 10 დაბრუნდეს.
+  wwcConfigGUISyncUserDataButton: მომხმარებლის მონაცემთა სინქრონიზაციის შეფერხების
+    შეცვლა
+  wwcConfigSyncDelayEnabled: გადადება მომხმარებლის მონაცემების სინქრონიზაცია დაყენებულია
+    {0} წამში.
+  wwcConfigConversationSyncUserDataDelaySuccess: მომხმარებლის მონაცემების სინქრონიზაციის
+    დაგვიანებით წარმატებით დაყენება.
+  wwcConfigSyncDelayInvalid: არასწორი მომხმარებლის მონაცემების სინქრონიზაციის დაგვიანებით
+    მითითებული config.yml. უპირობოდ 7200 წამი...
+  wwcConfigCacheInvalid: თარჯიმანი ქეშის ზომა არასწორია. უპირობოდ 10...
+  wwcInventoryErrorPlayer: შეცდომა გამოვლინდა თქვენი GUI. ჟურნალი გაიგზავნა კონსოლში.
+  wwcInventoryError: '{0} მომხმარებლის GUI- სთან აღმოჩენილი შეცდომა. გთხოვთ შეატყობინოთ
+    ამ საკითხს დეველოპერს.'
+  wwctiOffTarget: საქონელი თარგმანი გამორთულია {0}.
+  wwctiOffSender: საქონელი თარგმანი გამორთულია.
+  wwcItemTranslateTitleStock: შეუძლებელია ნაგულისხმევი პუნქტის სახელების თარგმნა.
+  wwctGUIItemButton: ნივთის თარგმანის გადართვა
+  wwcItemTranslateTitleDone: თარგმნილი პუნქტის სათაური წარმატებით.
+  wwcGUITempItem: ნივთის ჩვენება
+  wwcItemTranslateStart: სამიზნე ნივთის თარგმნა...
+  wwcBookTranslateTitleSuccess: 'თარგმნილი წიგნის სათაური: {0}'
+  wwctiOnSender: საქონელი თარგმანი ჩართულია. მარჯვენა ღილაკით თქვენი მთავარი ხელით
+    თარგმნა!
+  wwcItemTranslateLoreStart: თარგმნა მხარეთმცოდნეობის სამიზნე ნივთი...
+  wwcItemTranslateLoreDone: თარგმნა საქონელი მხარეთმცოდნეობის წარმატებით.
+  wwctiOnTarget: ელემენტის თარგმანი ჩართულია {0}.
+  wwcInvalidTranslator: არასწორი თარჯიმანი პარამეტრები. გთხოვთ, დააფიქსიროთ ეს თქვენი
+    config.yml ან /wwcc გამოიყენოთ ეს მოდული.
+  wwcConfigGUIEachTranslatorSettings: '{0} კონფიგურაცია'
+  wwcConfigGUIWatsonButton: უოტსონი
+  wwcServerReloadWarning: WorldwideChat არ ითვალისწინებს გამოყენების/გადატვირთვის
+    გამოყენებას. გთხოვთ გააგრძელოთ სიფრთხილით.
+  wwcConfigEnabledDebugMode: ჩართულია გამართვის რეჟიმი. თუ თქვენ არ ხართ დეველოპერი
+    ან პრობლემების მოგვარება, უნდა გამორთოთ ეს.
+  wwcTranslatorErrorThresholdReached: შეცდომა ბარიერი მიაღწია. ეს მოდული ახლა განაახლებს
+    და ყველა მთარგმნელს გამორთავს.
+  wwcConfigErrorLimitEnabled: თარჯიმანი შეცდომის ლიმიტი დაყენებულია {0}.
+  wwcTranslatorError: პრობლემა ოკუპირებული, ხოლო ცდილობს თქვენი თარგმანი. გთხოვთ კვლავ
+    სცადოთ.
+  wwcConfigErrorLimitInvalid: არასწორი თარჯიმანი შეცდომის ლიმიტი მითითებული config.yml.
+    უპირობოდ 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: გთხოვთ შეამოწმოთ errorLog.txt WorldwideChat
+    მოდულის საქაღალდეში დამატებითი ინფორმაციისთვის.
+  wwctInvalidInputLangCode: 'არასწორი შეყვანის ენის კოდი გათვალისწინებული! მოქმედი
+    lang კოდები: {0}'
+  wwctInvalidOutputLangCode: 'არასწორი გამომავალი ენის კოდი გათვალისწინებული! მოქმედი
+    lang კოდები: {0}'
+  wwctGUISourceTranslationSelected: თქვენ შეარჩიეთ ეს ენა.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: გადალახვის წაშლა
+  wwcConfigConversationOverrideTextChange: გთხოვთ აკრიფოთ ახალი გაგზავნა ამ override,
+    ან ტიპის 0 დაბრუნებას. დამახსოვრება მოიცავს ნებისმიერი ცვლადები დაწყებული პროცენტული
+    ნიშნები ხედავთ ორიგინალური გაგზავნა.
+  wwctGUISourceOrTargetTranslationAlreadyActive: ეს ენა უკვე აქტიურია!
+  wwcConfigGUIMessagesOverrideChatButton: ნაგულისხმები მოდულის შეტყობინებების გადალახვა
+  wwcConfigGUIChatMessagesPossibleOverrides: აირჩიეთ შეტყობინება
+  wwcConfigGUIChatMessagesModifyOverride: შეცვალეთ არსებული Override
+  wwcConfigConversationOverrideDeletionSuccess: საბაჟო გაგზავნა override წაიშალა.
+  wwcConfigGUIChatMessagesOverrideSettings: ნაგულისხმები შეტყობინებების გადალახვა
+  wwcConfigGUIChatMessagesDeadOverride: ეს override ან არასწორია, ან ორიგინალური გაგზავნა
+    უკვე ამოღებულია. თქვენ უნდა წაშალოთ ეს.
+  wwcConfigGUIMessagesAlreadyOverriden: თქვენ უკვე გაქვთ override ამ გაგზავნა!
+  wwcConfigGUIChatMessagesOverrideNewButton: დაამატეთ ახალი გადაფარვა
+  wwcConfigGUIMessagesOverrideCustomLabel: ახალი შეტყობინება
+  wwcConfigConversationOverrideTextChangeSuccess: ახალი გაგზავნა წარმატებით.
+  wwcConfigGUIChatMessagesOverrideChangeButton: არსებული ტექსტის შეცვლა
+  wwcExampleMessage: ეს არის dummy გაგზავნა, და იმას ნიშნავდა, რომ overriden, როგორც
+    მაგალითად.
+  wwcConfigGUIMessagesOverrideOriginalLabel: ორიგინალური შეტყობინება
+  wwcConfigGUIDebugModeButton: გამართვის რეჟიმის გადართვა
+  wwcConfigConversationDebugModeSuccess: წარმატებით გადართვა გამართვის რეჟიმი.
+  wwcConfigGUIErrorLimitButton: თარჯიმნის შეცდომის შეზღუდვა
+  wwcConfigConversationErrorLimitSuccess: შეცდომის ლიმიტის კომპლექტი წარმატებით.
+  wwcEntityTranslateStart: სამიზნე სუბიექტის თარგმნა...
+  wwcConfigGUICharacterLimitButton: შეტყობინებების სიმბოლოთა ლიმიტის შეცვლა
+  wwcConfigMessageCharLimitInvalid: არასწორი ლიმიტი თითო გაგზავნა მითითებული config.yml.
+    უპირობოდ 255 სიმბოლო...
+  wwcConfigConversationCharacterLimitSuccess: სიმბოლოთა ლიმიტის კომპლექტი წარმატებით.
+  wwcteOnTarget: ერთეულის თარგმანი ჩართულია {0}.
+  wwcEntityTranslateDone: 'ნათარგმნი ერთეულის სახელი: {0}'
+  wwcEntityTranslateNoName: სუბიექტს არ გააჩნია საბაჟო სახელი.
+  wwcConfigConversationErrorLimitInput: თითოეული მთარგმნელისთვის მიმდინარე შეცდომის
+    ლიმიტი არის {0}. აკრიფეთ 0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან
+    აკრიფოთ არაფერი ნაკლები ან ტოლი 0-ის უკან დასაბრუნებლად.
+  wwcConfigGUIGlobalRateLimitButton: გლობალური განაკვეთის ლიმიტის შეცვლა
+  wwcteOnSender: ერთეულის თარგმანი ჩართულია. მარჯვენა ღილაკით სუბიექტის თარგმნა მისი
+    სახელი!
+  wwcConfigGUIResponseLimitButton: შეცვლა თარჯიმანი რეაგირების შეყოვნება
+  wwcConfigMessageCharLimitEnabled: სიმბოლოთა ლიმიტი თითო შეტყობინება {0} სიმბოლოებზე.
+  wwcteOffTarget: ერთეულის თარგმანი გათიშულია {0}.
+  wwcCharLimit: შენი გზავნილი ძალიან გრძელია! გთხოვთ, დარწმუნდეთ, რომ თქვენი შეტყობინება
+    სიგრძე {0} სიმბოლოზე ნაკლებია.
+  wwcConfigConversationCharacterLimitInput: სიმბოლოთა მიმდინარე ლიმიტი თითო შეტყობინება
+    {0} სიმბოლოებია. აკრიფეთ 0-ზე მეტი არაფერი, რათა შეიქმნას ახალი მნიშვნელობა, ან
+    აკრიფოთ არაფერი ნაკლები ან ტოლი 0 დაბრუნდეს.
+  wwcteOffSender: პირი თარგმანი გამორთულია.
+  wwctGUIEntityButton: სუბიექტური თარგმანის გადართვა
+  wwctrlRateLimitBadInt: თქვენი კურსის ლიმიტი არ არის სწორი რიცხვი.
+  wwcTranslatorErrorConsole: პრობლემა იმართებოდა მომხმარებელი {0} მათი თარგმანის მცდელობისას.
+    გთხოვთ შეამოწმოთ errorLog.txt უფრო დეტალურად.
+  wwctGUIChatButton: ჩატის თარგმანის გადართვა
+  wwcrBegin: WorldwideChat გადატვირთვა...
+  wwctTranslationStoppedOtherPlayer: '{0} მთარგმნელობითი სესია შეჩერებულია.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: გლობალური სტატისტიკა თარგმნილია,
+    მაგრამ თქვენ გაქვთ აქტიური მთარგმნელობითი სესია {0} to {1}.
+  wwctCannotTranslateConsole: თქვენ არ შეგიძლიათ დაიწყოთ თარგმანის სესია კონსოლისთვის!
+  wwcOnJoinTranslationNotificationSourceLang: თქვენ გაქვთ აქტიური მთარგმნელობითი სესია
+    {0} დან {1}.
+  wwctTranslationStopped: თქვენი თარგმანის სესია შეჩერებულია.
+  wwctAutoTranslateStart: თარგმანის ახალი სესიის დაწყება {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: თქვენ გაქვთ მთარგმნელობითი სესია {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: გლობალური სტატისტიკა
+    თარგმნილია, მაგრამ თქვენ გაქვთ აქტიური თარგმანის სესია {0}.
+  wwcConfigGUIChangesNotSaved: თქვენი ცვლილებები ძალაში არ შედის, სანამ არ დააჭერთ
+    წითელ ბარიერს /wwccc.- ში.
+  wwctciOffSender: შემომავალი სტატისტიკა თარგმანი გამორთულია.
+  wwctGUIChatIncomingButton: შემომავალი ჩეთის თარგმანის გადართვა
+  wwctcoOffSender: გამავალი სტატისტიკა თარგმანი გამორთულია.
+  wwctcoOnSender: გამავალი სტატისტიკა თარგმანი ჩართულია. ყველაფერი რაც თქვენ ამბობთ,
+    თარგმნილია!
+  wwctciOnSender: შემომავალი სტატისტიკა თარგმანი ჩართულია. არაფერი თქვენ მიიღებთ იქნება
+    თარგმნილი!
+  wwctGUIChatMenu: ჩატის თარგმანის მენიუს გადართვა
+  wwctcoOnTarget: გამავალი ჩეთის თარგმანი ჩართულია {0}- სთვის.
+  wwctcoOffTarget: გამავალი სტატისტიკა თარგმანი გამორთულია {0}- სთვის.
+  wwctGUIChatOutgoingButton: გამავალი ჩეთის თარგმანის გადართვა
+  wwctciOnTarget: შემომავალი ჩეთის თარგმანი ჩართულია {0}- სთვის.
+  wwctciOffTarget: შემომავალი ჩეთის თარგმანი გამორთულია {0}- სთვის.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: ორიგინალური შემომავალი სტატისტიკა
+    ერთვის თარგმანი hover ტექსტი toggled წარმატებით.
+  wwcConfigGUISendIncomingHoverTextChatButton: ორიგინალური შემომავალი შეტყობინებების
+    დამატება, როგორც Hover ტექსტი
+  wwctGUIExistingChatOutgoingEnabled: 'გამავალი ჩეთის თარგმანი ჩართულია: {0}'
+  wwctGUIExistingTranslationInput: 'შეყვანის ენა: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'ჩეთის შემომავალი თარგმანი ჩართულია: {0}'
+  wwctGUIExistingTranslationOutput: 'გამოყვანის ენა: {0}'
+  wwcTranslatorAttempt: თარჯიმანთან დაკავშირების მცდელობა config.yml... (მცდელობა
+    {0}/ {1})
+  wwcTimeoutExceptionConsole: Player {0} მქონდა მათი უახლესი მოთხოვნის შეყოვნება.
+    ეს შეცდომა არ არის ფატალური, მაგრამ WorldwideChat უნდა გადატვირთული თუ ის გრძელდება.
+  wwcGUIPageNumber: 'გვერდის ნომერი: {0}'
+  wwcConfigYAMLFallback: დაცემა უკან YAML...
+  wwcConfigGUIToggleSQLButton: გადართვა SQL
+  wwcConfigConversationToggleSQLSuccess: SQL toggled წარმატებით. ცვლილებების შეცვლა
+    ძალაში შედის.
+  wwcConfigConversationGoogleTranslateToggleSuccess: წარმატებით გადაყრილი Google Translate.
+    ცვლილებების შეცვლა ძალაში შედის.
+  wwcConfigYAMLDefault: უპირობოდ YAML მონაცემთა შენახვისთვის.
+  wwcConfigGUISQLMenuButton: SQL პარამეტრების შეცვლა
+  wwcConfigConversationWatsonTranslateToggleSuccess: წარმატებით toggled Watson თარგმნა.
+    ცვლილებების შეცვლა ძალაში შედის.
+  wwcConfigGUIToggleGoogleTranslateButton: Google Translate გადართვა
+  wwcConfigGUIToggleWatsonTranslateButton: უოტსონის თარგმნის გადართვა
+  wwcConfigGUIToggleAmazonTranslateButton: გადართვა Amazon თარგმნა
+  wwcConfigGUIStorageSettings: შენახვის კონფიგურაცია
+  wwcConfigConversationAmazonTranslateToggleSuccess: წარმატებით toggled Amazon თარგმნა.
+    ცვლილებების შეცვლა ძალაში შედის.
+  wwcConfigGUISQLPortButton: SQL პორტის შეცვლა
+  wwcConfigGUISQLOptionalArgsButton: შეცვლა SQL პირობითი არგუმენტები
+  wwcConfigConversationToggleSQLSSLSuccess: SSL for SQL toggled წარმატებით.
+  wwcConfigConversationSQLPortInput: მიმდინარე პორტი არის {0}. ახალი პორტის დასაყენებლად
+    0-ის სხვა რამეს ტიპი, ან 0-ის დასაბრუნებლად.
+  wwcConfigGUISQLPasswordButton: SQL პაროლის შეცვლა
+  wwcConfigConversationSQLHostnameSuccess: წარმატებით შეიცვალა SQL ჰოსტის სახელი.
+  wwcConfigConversationSQLHostnameInput: ახლანდელი ჰოსტსახელი არის {0}. 0-ის სხვა
+    რამეს ტიპი ახალი ჰოსტის სახელის დასაყენებლად, ან 0 ტიპის დასაბრუნებლად.
+  wwcConfigGUISQLHostnameButton: SQL ჰოსტსახელის შეცვლა
+  wwcConfigConversationSQLOptionalArgsSuccess: წარმატებით შეიცვალა სურვილისამებრ SQL
+    არგუმენტები.
+  wwcConfigConversationSQLPasswordSuccess: წარმატებით შეიცვალა SQL პაროლი.
+  wwcConfigConversationSQLPasswordInput: მიმდინარე პაროლი {0}. ახალი პაროლის დასაყენებლად
+    0-ის სხვა რამეს ტიპი, ან 0-ის დასაბრუნებლად აკრიფეთ.
+  wwcConfigGUIToggleSQLSSLButton: გადართვა SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: წარმატებით შეიცვალა SQL მომხმარებლის სახელი.
+  wwcConfigConversationSQLUsernameInput: მიმდინარე მომხმარებლის სახელი {0}. შეიტანეთ
+    ყველაფერი, გარდა 0-ისა, ახალი მომხმარებლის სახელის დასაყენებლად, ან 0-ის დასაბრუნებლად.
+  wwcConfigConversationSQLPortSuccess: წარმატებით შეიცვალა SQL პორტი.
+  wwcConfigGUISQLUsernameButton: SQL მომხმარებლის სახელის შეცვლა
+  wwcConfigConversationSQLOptionalArgsCleared: პირობითი არგუმენტები გაიწმინდა წარმატებით.
+  wwcConfigConversationSQLOptionalArgsInput: 'მიმდინარე არჩევითი SQL არგუმენტებია:
+    {0}. ტიპის არგუმენტები, რომლებიც გამოყოფილია მძიმით (გასაღები = value, key2=value2),
+    ან აკრიფეთ ნათელი, რომ წაშალოთ მიმდინარე არგები, ან აკრიფოთ 0 დასაბრუნებლად.'
+  wwcConfigConversationSQLDatabaseNameInput: მონაცემთა ბაზის ამჟამინდელი სახელი {0}.
+    შეიტანეთ ყველაფერი, გარდა 0-ისა, ახალი მონაცემთა ბაზის სახელის დასაყენებლად, ან
+    0-ის დასაბრუნებლად.
+  wwcConfigGUISQLDatabaseNameButton: SQL მონაცემთა ბაზის შეცვლა
+  wwcConfigConversationSQLDatabaseNameSuccess: წარმატებით შეიცვალა SQL მონაცემთა ბაზის
+    სახელი.
+  wwcConfigConversationFatalAsyncAbort: ყველა ასინკის ამოცანის შესაწყვეტად მიმდინარე
+    შეყოვნება არის {0} წამი. შეიტანეთ არაფერი ზემოთ 7 დააყენოთ ახალი შეყოვნება, ან
+    არაფერი ქვემოთ დაბრუნებას.
+  wwcConfigConversationFatalAsyncSuccess: Async ამოცანა შეყოვნება მითითებული წარმატებით.
+  wwcConfigGUIFatalAsyncAbortButton: ასინკის სამუშაო დროის შეცვლა
+  libreHttp400: ცუდი მოთხოვნა გაიგზავნა Libre Translate! თუ არ აკეთებთ იმას, რაც არ
+    უნდა, არ უნდა მიიღოთ ეს. გთხოვთ, დაუკავშირდეთ დეველოპერს!
+  wwcConfigGUILibreTranslateApiKeyButton: შეცვლა უფასო თარგმნის API გასაღები
+  libreHttp403: დაკარგული უფასო Translate API Key, ან თქვენ აკრძალული სერვერზე!
+  wwcConfigConversationLibreURLSuccess: უფასო URL მითითებული წარმატებით.
+  wwcConfigConversationLibreTranslateApiKeyInput: მიმდინარე API გასაღები არის {0}.
+    გთხოვთ შეიყვანოთ API გასაღები Libre, ან აკრიფოთ 0 დაბრუნდეს.
+  wwcConfigGUILibreTranslateButton: უფასო თარგმნა
+  libreHttp429: ნდობის გამო განაკვეთი ლიმიტი სერვერზე.
+  wwcConfigGUIToggleLibreTranslateButton: გადართვა უფასო თარგმნა
+  wwcConfigConversationLibreTranslateToggleSuccess: წარმატებით გადართვა Libre Translate.
+    განაახლეთ ცვლილებები ძალაში.
+  wwcConfigConversationLibreTranslateApiKeySuccess: უფასო API გასაღები კომპლექტი წარმატებით.
+  wwcConfigConversationLibreURLInput: მიმდინარე URL არის {0}. გთხოვთ, შეიყვანოთ URL
+    უფასოდ, ან ჩაწერეთ 0 დასაბრუნებლად.
+  libreHttpUnknown: 'უცნობი http შეცდომა: {0}'
+  wwcConfigGUILibreTranslateURLButton: შეცვლა უფასო თარგმნის URL
+  wwcConfigConnectionFail: '{0}- სთან დაკავშირება ვერ მოხერხდა.'
+  wwcConfigConversationMongoDatabaseNameSuccess: წარმატებით შეიცვალა MongoDB მონაცემთა
+    ბაზის სახელი.
+  wwcConfigGUIMongoHostnameButton: შეცვალეთ MongoDB მასპინძლის სახელი
+  wwcConfigConversationMongoPasswordInput: მიმდინარე პაროლი არის {0}. შეიყვანეთ 0-ის
+    გარდა ახალი პაროლის დასაყენებლად, ან ჩაწერეთ 0 დასაბრუნებლად.
+  wwcConfigConversationMongoPortInput: მიმდინარე პორტი არის {0}. ახალი პორტის დასაყენებლად
+    შეიყვანეთ არაფერი 0-ის გარდა, ან აკრიფეთ 0 უკან დასაბრუნებლად.
+  wwcConfigConversationToggleMongoSuccess: MongoDB გადართვა წარმატებით. განაახლეთ
+    ცვლილება ძალაში.
+  wwcConfigConversationMongoHostnameInput: ამჟამინდელი ჰოსტის სახელია {0}. აკრიფეთ
+    0-ის გარდა ახალი ჰოსტის სახელის დასაყენებლად, ან ჩაწერეთ 0, რომ დაბრუნდეთ.
+  wwcConfigConversationMongoHostnameSuccess: წარმატებით შეიცვალა MongoDB მასპინძლის
+    სახელი.
+  wwcConfigGUIMongoMenuButton: შეცვალეთ MongoDB პარამეტრები
+  wwcConfigGUIToggleMongoButton: მონღოლეთის გადართვა
+  wwcConfigConversationMongoDatabaseNameInput: მონაცემთა ბაზის ამჟამინდელი სახელია
+    {0}. აკრიფეთ არაფერი 0-ის გარდა ახალი მონაცემთა ბაზის სახელის დასაყენებლად, ან
+    აკრიფეთ 0 უკან დასაბრუნებლად.
+  wwcConfigConversationMongoOptionalArgsInput: 'მიმდინარე არჩევითი MongoDB არგუმენტებია:
+    {0}. ტიპის არგუმენტები, რომლებიც გამოყოფილია მძიმით (გასაღები = მნიშვნელობა, key2
+    = value2), ან ჩაწერეთ ნათელი, რომ გაასუფთაოთ მიმდინარე args, ან აკრიფოთ 0 უკან
+    დასაბრუნებლად.'
+  wwcConfigGUIMongoDatabaseNameButton: მონღოლეთის მონაცემთა ბაზის შეცვლა
+  wwcConfigConversationMongoUsernameInput: მიმდინარე მომხმარებლის სახელია {0}. აკრიფეთ
+    არაფერი 0-ის გარდა ახალი მომხმარებლის სახელის დასაყენებლად, ან ჩაწერეთ 0 უკან
+    დასაბრუნებლად.
+  wwcConfigGUIMongoOptionalArgsButton: შეცვალეთ MongoDB არასავალდებულო
+  wwcConfigConversationMongoUsernameSuccess: წარმატებით შეიცვალა MongoDB მომხმარებლის
+    სახელი.
+  wwcConfigConversationMongoPasswordSuccess: წარმატებით შეიცვალა MongoDB პაროლი.
+  wwcConfigConversationMongoPortSuccess: წარმატებით შეიცვალა MongoDB პორტი.
+  wwcConfigGUIMongoUsernameButton: შეცვალეთ MongoDB მომხმარებლის სახელი
+  wwcConfigGUIMongoPasswordButton: შეცვალეთ MongoDB პაროლი
+  wwcConfigConversationMongoOptionalArgsSuccess: წარმატებით შეიცვალა სურვილისამებრ
+    MongoDB არგუმენტები.
+  wwcConfigConversationMongoOptionalArgsCleared: პირობითი არგუმენტები განბაჟებული
+    წარმატებით.
+  wwcConfigGUIMongoPortButton: შეცვალეთ მონღოლეთის პორტი
+  wwcConfigInvalidFatalAsyncTimeout: არასწორი ფატალური async შეყოვნება კომპლექტი.
+    დეფოლტირება 10 წამში...
+  libreHttp500: თქვენი შერჩეული შემავალი და გამომავალი ენის წყვილი არ არის მხარდაჭერილი.
+    გთხოვთ, აირჩიოთ სხვა ენის ნაკრები!
+  wwcConfigGUIDeepLTranslateButton: DeepL თარგმნის გადართვა
+  wwcConfigConversationDeepLTranslateToggleSuccess: წარმატებით გადართვა DeepL თარგმნა.
+    განაახლეთ ცვლილებები ძალაში.
+  wwcConfigGUIDeepLTranslateApiKeyButton: შეცვალეთ DeepL თარგმნის API გასაღები
+  wwcConfigGUIToggleDeepLTranslateButton: DeepL თარგმნის გადართვა
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API გასაღების ნაკრები წარმატებით.
+  wwcConfigConversationDeepLTranslateApiKeyInput: მიმდინარე API გასაღები არის {0}.
+    გთხოვთ შეიყვანოთ API გასაღები DeepL- სთვის, ან ჩაწერეთ 0 უკან დასაბრუნებლად.
+  wwcConfigErrorsToIgnoreSuccess: წარმატებით რეგისტრირებული თარჯიმანი შეცდომები იგნორირება.
+  wwcConfigErrorsToIgnoreInvalid: არასწორი თარჯიმანი შეცდომები იგნორირება მითითებული
+    config.yml. დეფოლტის რეგისტრაცია...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: წარმატებით შეიცვალა თარჯიმნის შეცდომები
+    ფრაზების უგულებელყოფისთვის.
+  wwcConfigGUIIgnoreErrorsButton: შეცვალეთ შეცდომები უგულებელყოფისთვის
+  wwcConfigConversationIgnoreErrorsInput: 'თარჯიმნის შეცდომების უგულებელყოფაში არსებული
+    ფრაზების ამჟამინდელი ჩამონათვალია: {0}. აკრიფეთ არგუმენტები, რომლებიც გამოყოფილია
+    მძიმით (გასაღები = მნიშვნელობა, key2 = value2), ან ჩაწერეთ გასუფთავება მიმდინარე
+    არგების გასაწმენდად, ან აკრიფეთ 0 უკან დასაბრუნებლად. გარდა ამისა, აკრეფით „*“
+    გამოიწვევს მოდული არ შეამოწმოთ ნებისმიერი თარჯიმანი შეცდომები.'
+  wwcConfigConversationIgnoreErrorsCleared: მთარგმნელი შეცდომები იგნორირება ფრაზები
+    განბაჟებული წარმატებით.
+  wwcSupportedServer: WorldwideChat— ის ინიციალიზაცია {0} — ისთვის...
+  wwcSupportedVersion: ფუნქციების ჩართვა {0} ვერსიისთვის...
+  wwcBadPerms: 'თქვენ არ გაქვთ საჭირო ნებართვები ამ ბრძანების შესასრულებლად: {0}'
+  wwcsIsActiveTranslator: 'აქტიური მთარგმნელია: {0}'
+  wwcsActiveTransPrevRate: 'წინა განაკვეთის ლიმიტის დრო: {0}'
+  wwcsActiveTransSaved: 'დისკზე შენახულია: {0}'
+  wwcsActiveTransIncoming: 'შემომავალი ჩატის თარგმნა: {0}'
+  wwcsActiveTransOutLang: 'გამომავალი ენა: {0}'
+  wwcsActiveTransInLang: 'შეყვანის ენა: {0}'
+  wwcsActiveTransBook: 'წიგნის თარგმანი: {0}'
+  wwcsActiveTransSign: 'თარგმნის ნიშანი: {0}'
+  wwcsActiveTransUUID: 'ვაიდი: {0}'
+  wwcsActiveTransRateLimit: 'განაკვეთის ლიმიტი: {0}'
+  wwcsActiveTransColorWarning: 'მიღებული ფერის გაფრთხილება: {0}'
+  wwcsActiveTransSignWarning: 'მიღებული ნიშნის რედაქტირების გაფრთხილება: {0'
+  wwcsTitle: ჩანაწერი {0}
+  wwcsActiveTransOutgoing: 'გამავალი ჩატის თარგმნა: {0}'
+  wwcsActiveTransItem: 'ნივთის თარგმნა: {0}'
+  wwcsActiveTransEntity: 'თარგმანი ერთეული: {0}'
+  wwctsWarning: ნიშნების თარგმნის დროს ნიშნების მოდიფიკაცია გამორთულია.
+  wwcConfigConversationAzureTranslateToggleSuccess: წარმატებით ჩართული Azure Translate.
+    გადატვირთეთ ცვლილებების ძალაში შესვლისთვის.
+  wwcConfigGUIAzureTranslateButton: Azure თარგმანი
+  wwcConfigGUIAzureTranslateApiKeyButton: Azure Translate API გასაღების შეცვლა
+  wwcConfigGUIAzureTranslateRegionButton: შეცვალეთ Azure თარგმნის
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure რეგიონი წარმატებით დაყენებულია.
+  wwcConfigConversationAzureTranslateApiKeyInput: მიმდინარე API გასაღები არის {0}.
+    გთხოვთ, შეიყვანოთ API გასაღები Azure-ისთვის, ან დაბრუნებისთვის დააკრიფეთ 0.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API გასაღების დაყენება წარმატებით.
+  wwcConfigConversationAzureTranslateRegionInput: ამჟამინდელი რეგიონია {0}. გთხოვთ,
+    შეიყვანოთ რეგიონი Azure-ისთვის, ან დაბრუნებისთვის აკრიფეთ 0.
+  wwcConfigGUIToggleAzureTranslateButton: Azure თარგმანის ჩართვა
+  wwcConfigGUISystranTranslateApiKeyButton: სისტრან თარგმნის API გასაღების შეც
+  wwcConfigGUIToggleSystranTranslateButton: სისტრან თარგმანის ჩართვა
+  wwcConfigConversationSystranTranslateApiKeyInput: მიმდინარე API გასაღები არის {0}.
+    გთხოვთ, შეიყვანოთ API გასაღები Systran-ისთვის, ან დაბრუნებისთვის დააკრიფეთ 0.
+  wwcISOJSONFail: ISO JSON— ით ენის ობიექტების გამოსწორება შეუძლებელია.
+  wwcConfigConversationSystranTranslateToggleSuccess: წარმატებით შეცვალა Systran Translate.
+    გადატვირთეთ ცვლილებების ძალაში შესვლისთვის.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Systran API გასაღების ნაკრები
+    წარმატებით.
+  wwcConfigGUISystranTranslateButton: სისტრან თარგმანი
+  wwcrTransFail: გადატვირთულია WorldwideChat, მაგრამ ვერ მოახერხა მთარგმნელის ჩართვა.
+  wwcdCacheCleared: თარგმანის ქეში გაწმენდა.
+  wwcdInvalidCmd: არასწორი არგუმენტები
+  systranHttpUnknown: 'უცნობი http შეცდომა: {0}'
+  systranHttp400: ცუდი პარამეტრები გაგზავნილია Systran— შეიძლება იყოს ცუდი ენის წყვილი?
+  systranHttp500: შიდა სერვერის შეცდომა Systran საბოლოო წერტილიდან ({0}).
+  wwcInvalidStorageSession: '{0} ჩართულია თქვენს კონფიგურაციაში, მაგრამ კავშირი არ
+    არის დამყარებული. გთხოვთ, სცადეთ გადატვირთვა ამის გამოსასწორებლად, მაგრამ გთხოვთ
+    დაუკავშირდეთ დეველოპერს, თუ ადრე მიიღეთ წარმატებული კავშირის შეტ'
+  wwcNewSqlConvertFinish: დასრულდა თქვენი SQL ცხრილების კონვერტაცია. WorldwideChat-ის
+    გადატვირთვა...
+  wwcNewSqlStruct: თქვენი SQL მონაცემთა ბაზა იყენებს ახალ სტრუქტურას და არ საჭიროებს
+    გარდაქმნას.
+  wwcNewSqlConvertBegin: თქვენი SQL ცხრილების კონვერტაცია...
+  wwcOldSqlStructLongIntro: გულწრფელად ბოდიშს გიხდით უხერხულობისთვის, მაგრამ WorldwideChat-ის
+    წინა ვერსიამ ინიციალიზა თქვენი SQL ცხრილები არაეფექტური სტრუქტურით. მიუხედავად
+    იმისა, რომ ეს გააგრძელებს ფუნქციონირებას ჩვენი მოდულით, ამან შეიძლება გამოიწვიოს
+    მნიშვნელოვანი შენელება მოთამაშეების
+  wwcOldSqlStructTrans: 'თქვენს SQL მონაცემთა ბაზას აქვს არაეფექტური აქტიური მთარგმნელის
+    ცხრილის დაყენება WorldwideChat-ის წინა ვერსიიდან. ამ პრობლემის გამოსასწორებლად
+    შეგიძლიათ გაუშვოთ შემდეგი ბრძანება: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'თქვენ შეგიძლიათ: ჩამოაგდოთ MySQL-ში კონსოლზე დაბეჭდილი
+    ცხრილები, თავად გადააკეთოთ ისინი და შეხედეთ ახალ სტრუქტურას github რეპოში, ან
+    გაუშვით ბრძანება კონვერტაციის პირდაპირ ეთერში. გთხოვთ, დარწმუნდეთ, რომ გააკეთეთ
+    თქვენი მონაცემთა ბაზის სარეზერვო ასლი ამის თუ გაქვთ, ბრძანებაა: {0}'
+  wwcNewSqlConvertFail: კონვერტაცია ვერ მოხერხდა... გთხოვთ აღადგინოთ თქვენი ცხრილები
+    თქვენს მიერ WorldwideChat-ის გამორთვა...
+  wwcOldSqlStructRecords: 'თქვენს SQL მონაცემთა ბაზას აქვს არაეფექტური მოთამაშის ჩანაწერების
+    მაგიდის დაყენება WorldwideChat-ის წინა ვერსიიდან. ამ პრობლემის მოსაგვარებლად შეგიძლიათ
+    გაუშვოთ შემდეგი ბრძანება: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: წარმატებით შეცვალა PostgreSQL
+    მონაცემთა ბაზის სახელი.
+  wwcConfigConversationPostgresOptionalArgsCleared: არასასურველი არგუმენტები წარმატებით
+  wwcConfigConversationPostgresPortInput: ამჟამინდელი პორტია {0}. ჩაწერეთ ნებისმიერი
+    სხვა რამ, გარდა 0-ისა ახალი პორტის დასაყენებლად, ან დაბრუნებისთვის აკრიფეთ 0.
+  wwcConfigGUIPostgresUsernameButton: შეცვალეთ PostgreSQL მომხმარებლის სახელი
+  wwcConfigConversationPostgresOptionalArgsSuccess: წარმატებით შეცვალა სურვილისამებრ
+    PostgreSQL არგუმენტები.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL PostgreSQL-ისთვის წარმატებით
+    ჩართულია.
+  wwcConfigConversationPostgresPasswordSuccess: წარმატებით შეცვალა PostgreSQL პაროლი.
+  wwcConfigConversationPostgresPortSuccess: წარმატებით შეცვალა PostgreSQL პორტი.
+  wwcConfigConversationPostgresUsernameInput: ამჟამინდელი მომხმარებლის სახელი არის
+    {0}. ჩაწერეთ ნებისმიერი სხვა რამ, გარდა 0-ისა ახალი მომხმარებლის სახლის დასაყენებლად,
+    ან დაბრუნებისთვის აკრიფეთ 0
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL წარმატებით შეიცვალა. გადატვირთეთ
+    ცვლილების ძალაში შესვლისთვის.
+  wwcConfigGUITogglePostgresButton: PostgreSQL— ის ჩართვა
+  wwcConfigGUIPostgresPasswordButton: შეცვალეთ PostgreSQL პაროლი
+  wwcConfigGUIPostgresOptionalArgsButton: შეცვალეთ PostgreSQL არჩევითი არგუმენტები
+  wwcConfigGUIPostgresMenuButton: შეცვალეთ PostgreSQL პარამეტრები
+  wwcConfigConversationPostgresPasswordInput: მიმდინარე პაროლი არის {0}. ახალი პაროლის
+    დასაყენებლად ჩაწერეთ ნებისმიერი სხვა რამ, გარდა 0-ისა, ან დაბრუნებისთვის აკრიფეთ
+    0.
+  wwcConfigConversationPostgresHostnameInput: ამჟამინდელი ჰოსტის სახელია {0}. ჩაწერეთ
+    ნებისმიერი სხვა რამ, გარდა 0-ისა, რომ დააყენოთ ახალი ჰოსტის სახელი, ან დაბრუნებისთვის
+    ჩაწერეთ 0.
+  wwcConfigGUIPostgresPortButton: შეცვალეთ PostgreSQL პორტი
+  wwcConfigConversationPostgresHostnameSuccess: წარმატებით შეცვალა PostgreSQL მასპინძლის
+    სახელი.
+  wwcConfigGUIPostgresHostnameButton: შეცვალეთ PostgreSQL ჰოსტის სახელი
+  wwcConfigConversationPostgresDatabaseNameInput: მონაცემთა ბაზის მიმდინარე სახელი
+    არის {0}. ჩაწერეთ 0-ის გარდა ნებისმიერი რამ, რომ დააყენოთ ახალი მონაცემთა ბაზის
+    სახელი, ან დაბრუნებისთვის ჩაწერეთ 0
+  wwcConfigConversationPostgresOptionalArgsInput: 'მიმდინარე არასავალდებულო PostgreSQL
+    არგუმენტებია: {0}. ჩაწერეთ არგუმენტები, რომლებიც გამოყოფილია ვედრით (key = value,
+    key2 = value2), ან ჩაწერეთ Clear მიმდინარე არგების გასაწმენდად, ან დაუკან დაბრუნებისთვის
+    ჩაწერეთ 0.'
+  wwcConfigGUITogglePostgresSSLButton: შეცვალეთ PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: შეცვალეთ PostgreSQL მონაცემთა ბაზა
+  wwcConfigConversationPostgresUsernameSuccess: წარმატებით შეცვალა PostgreSQL მომხმარებლის
+    სახელი.
+  wwcConfigGUIStorageTypeSettings: '{0} კონფიგურაცია'
+  wwcConfigConversationPrefixInput: ამჟამინდელი პრეფიქსია {0}. გთხოვთ, შეიყვანოთ ახალი,
+    ან დაბრუნებისთვის დააკრიფეთ 0.
+  wwcConfigConversationLangInput: 'მოდულის ამჟამინდელი ენაა {0}. გთხოვთ შეიყვანოთ
+    სწორი ენის კოდი, ან აწერეთ 0 გაუქმებისთვის. მოქმედი ენის კოდები: {1}'
+  wwcdCacheSize: ქეშის ზომა ამჟამად არის {0}, ლიმიტით {1}.
+  wwcdCacheTerm: '{0}. ქეშდთარგმანი:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | გამოყვანიფრაზა = {4}'
+  wwctLangToLangStart: ახალი თარგმანული სესიის დაწყება {0} -დან {1} -მდე.
+  wwctAutoTranslateStartOtherPlayer: '{0} -დან {1} -მდე ახალი თარგმანული სესიის დაწყება.'
+  wwctLangToLangStartOtherPlayer: '{0} -ის ახალი თარგმანული სესიის დაწყება {1} -დან
+    {2} -მდე.'
+  wwcgLangToLangStart: ახლა გლობალური ჩატის თარგმნა {0} -დან {1} -ზე.
+  wwctrlRateLimitSetTarget: დააყენეთ სიჩქარის ლიმიტი {0} - დან {1} წამამდე.
+  wwcTimeoutException: თქვენი მოთხოვნის დრო ამოწურდა. გთხოვთ კვლავ სცადოთ
+  wwctbNoMoreOldBooks: წიგნის თარგმანი არ ფუნქციონირებს თქვენი სერვერის ვერ თუ Minecraft-ის
+    უახლეს ვერსიაზე ხართ და მიიღებთ ამ შეცდომას, გთხოვთ, დაუკავშირდეთ დეველოპერს.
+

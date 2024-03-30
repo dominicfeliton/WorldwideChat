@@ -1,0 +1,562 @@
+Messages:
+  wwcgAutoTranslateStart: Sekarang menterjemahkan sembang global ke {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Sembang global sedang diterjemahkan
+    ke {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Tukar Kekunci Akses Amazon
+  wwcrFail: Gagal memuatkan semula WorldwideChat.
+  wwcConfigGUIUpdateCheckerButton: Ubah Periksa Kelewatan Kemas Kini
+  wwcUpdaterFailedGeneric: Tidak dapat menyemak kemaskini WorldwideChat.
+  wwcConfigConversationUpdateCheckerInput: Kelewatan semasa pada pemeriksa kemaskini
+    ialah {0} saat. Taip apa-apa yang lebih besar daripada 10 untuk menetapkan nilai
+    baru, atau apa-apa kurang daripada 10 untuk kembali.
+  wwctGUIMainMenuGlobal: Menu Terjemahan Global
+  wwcConfigConversationPluginUpdateChatSuccess: Peringatan sembang kemaskini pemalam
+    berjaya ditogolkan.
+  wwctbOnTarget: Terjemahan buku dibenarkan untuk {0}.
+  wwcsNotATranslator: Tiada rekod lagi tersedia untuk {0}.
+  wwcConfigGUIbStatsButton: Togol bStats
+  wwctGUINewTranslationSource: Pilih Bahasa Sumber
+  wwcConfigConnectionFailed: Gagal menyambung ke {0}. Pastikan kelayakan dan firewall
+    anda dikonfigur dengan betul!
+  wwcConfigEnabledbStats: Dibenarkan bStats.
+  wwctGUIMainMenuPlayer: Menu Terjemahan {0}
+  wwctGUIBookButton: Togol Terjemahan Buku
+  wwcLangDetected: Bahasa {0} dikesan.
+  wwcBookTranslateStart: Menterjemahkan buku sasaran...
+  wwcConfigDisabledbStats: bStats dilumpuhkan.
+  wwctsOffSender: Daftar terjemahan dilumpuhkan.
+  wwcUpdaterParserFailed: Gagal menghurai data kemaskini dari Github.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Kunci rahsia semasa ialah {0}.
+    Sila masukkan kunci rahsia untuk Amazon, atau taip 0 untuk kembali.
+  wwctbOffSender: Terjemahan buku dilumpuhkan.
+  wwcConfigGUIAmazonTranslateButton: Amazon menterjemah
+  wwcConfigConversationLangSuccess: Bahasa pemalam berjaya diubah.
+  wwcsSuccessfulTranslations: 'Terjemahan berjaya: {0}'
+  wwcConfigConversationTranslationCacheInput: Had cache terjemahan semasa ialah {0}
+    frasa. Taip apa-apa yang lebih besar daripada 0 untuk menetapkan nilai baru, atau
+    taip 0 untuk melumpuhkan cache terjemahan. Taip apa-apa kurang daripada 0 untuk
+    kembali.
+  wwctbOffTarget: Terjemahan buku dilumpuhkan untuk {0}.
+  wwcConfigGUIGeneralSettings: Konfigurasi Am
+  wwcInvalidLang: Bahasa tidak sah dalam config.yml anda. Defaulting to en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: Rantau Amazon berjaya ditetapkan.
+  wwcConfigRateLimitEnabled: Had kadar global dibenarkan dan ditetapkan ke {0} saat.
+  wwcConfigGUILangButton: Ubah Bahasa Pemalam
+  wwctGUISignButton: Togol Terjemahan Tanda
+  wwcUpdaterOutOfDate: WorldWidChat sudah lapuk. Sila kemaskini ke versi terkini,
+    {0}.
+  wwcConfigGUINextPageButton: Halaman Seterusnya
+  wwcConfigInvalidTranslatorSettings: Tetapan penterjemah tidak sah! Sila aktifkan
+    hanya satu penterjemah dalam config.yml anda.
+  wwcConfigGUIQuitButton: Keluar & Simpan Perubahan
+  wwctPlayerNotFound: Pemain {0} tidak ditemui.
+  wwcConfigGUIAmazonTranslateRegionButton: Ubah Wilayah Amazon
+  wwcConfigConversationLangInvalid: Kod bahasa tidak sah!
+  wwcConfigGUIWatsonAPIKeyButton: Ubah Kunci API Watson
+  wwcEnabled: Dibenarkan WorldwideChat versi {0}.
+  wwctbOnSender: Terjemahan buku dibenarkan. Klik kanan sambil memegang buku untuk
+    menterjemahkannya!
+  wwcListenersInitialized: Pendengar yang dimulakan.
+  wwcConfigGUIPluginUpdateChatButton: Hantar Peringatan Sembang untuk Kemas Kini Plugin
+  wwcConfigConversationSendTranslationChatSuccess: Peringatan sembang penterjemah
+    aktif berjaya ditogolkan.
+  wwctsOffTarget: Daftar terjemahan dilumpuhkan untuk {0}.
+  wwcUpdaterConnectionFailed: Tidak dapat menyemak kemaskini terkini di Github.
+  watsonNotFoundExceptionNotification: Tidak dapat menterjemahkan input anda lagi.
+  wwcConfigConversationWatsonAPIKeyInput: Kekunci API semasa ialah {0}. Sila masukkan
+    kunci API untuk Watson, atau taip 0 untuk kembali.
+  wwctGUIStopButton: Henti Menterjemah
+  wwcgTranslationStopped: Terjemahan sembang global telah dihentikan.
+  wwcUpdaterFutureDate: Contoh WorldwideChat ini mempunyai versi yang lebih besar
+    daripada versi awam terkini.
+  wwcConfigConversationPrefixSuccess: Awalan berjaya diubah.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Tukar Kunci Google Terjemah API
+  wwcSignDeletedOrTooLong: 'Tanda sasaran sama ada dipadam atau terjemahan terlalu
+    panjang. Terjemahan:'
+  wwctsOnTarget: Daftar terjemahan dibenarkan untuk {0}.
+  wwcConfigCacheDisabled: Cache penterjemah dilumpuhkan.
+  wwcConfigConversationWatsonURLInput: URL semasa ialah {0}. Sila masukkan URL perkhidmatan
+    untuk Watson, atau ketik 0 untuk kembali.
+  wwcBookDone: Buku berjaya diterjemahkan.
+  wwctsOnSender: Daftar terjemahan dibenarkan. Klik kanan pada tanda untuk menterjemahkannya!
+  watsonColorCodeWarning: Menggunakan kod warna boleh memberi anda hasil yang tidak
+    menentu.
+  wwctGUITranslationButton: Mula Menterjemah
+  wwctGUIAutoDetectButton: Pengesan Auto-Bahasa Sumber
+  wwcUpdaterUpToDate: WorldWidChat up to date!
+  wwcConfigConversationAmazonTranslateRegionInput: Rantau semasa ialah {0}. Sila masukkan
+    kawasan untuk Amazon, atau taip 0 untuk kembali.
+  wwcNoConsole: Perintah ini hanya boleh dijalankan oleh pemain.
+  wwcInitializationFail: Gagal awalkan WorldwideChat.
+  wwcrSuccess: Berjaya dimuat semula WorldwideChat.
+  wwcPlayerNotFound: Pemain {0} tidak ditemui.
+  wwcUpdaterOutOfDateChat: WorldWidChat sudah lapuk. Sila kemas kini kepada versi
+    terkini.
+  wwcConfigConversationRateLimitSuccess: Had kadar berjaya ditetapkan.
+  wwcConfigConversationWatsonURLSuccess: URL Watson berjaya ditetapkan.
+  wwctbPlayerNotFound: Pemain {0} sama ada tidak ditemui, atau bukan penterjemah aktif.
+  wwcConfigConversationTranslationCacheSuccess: Had cache terjemahan berjaya ditetapkan.
+  wwctInvalidArgs: Argumen tidak sah disediakan!
+  wwcConfigGUIPrefixButton: Ubah Awalan Pemalam
+  wwctSameLangError: Anda tidak boleh menterjemahkan ke bahasa yang sama!
+  wwctGUINewTranslationTarget: Pilih Bahasa Sasaran
+  wwcConfigConnectionSuccess: Berjaya disambungkan ke {0}!
+  wwcConfigGUIGoogleTranslateButton: Google Terjemah
+  wwcConfigGUIPreviousPageButton: Halaman Sebelumnya
+  wwcConfigGUITranslatorCacheButton: Ubah Had Cache Terjemahan
+  wwcConfigConversationbStatsSuccess: Berjaya togol bStats.
+  wwcSignDone: Tandatangan berjaya diterjemahkan.
+  wwcConfigInvalidPrefixSettings: Gagal membaca awalan anda. Menggunakan lalai...
+  wwcConfigRateLimitInvalid: Had kadar teruk ditetapkan dalam config.yml. Lalai ke
+    0 saat...
+  wwcSignTranslateStart: Menterjemah tanda sasaran...
+  wwcConfigGUIChatSettings: Konfigurasi Sembang
+  wwcConfigGUIWatsonURLButton: Ubah URL Layanan Watson
+  wwcConfigConversationUpdateCheckerSuccess: Kemaskini penangguhan pemeriksa berjaya
+    ditetapkan.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Sembang global sedang diterjemahkan
+    dari {0} ke {1}.
+  wwcConfigGUITranslatorSettings: Konfigurasi Penterjemah
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Kekunci API semasa ialah {0}. Sila
+    masukkan kunci API untuk Google Translate, atau taip 0 untuk kembali.
+  wwcConfigConversationRateLimitInput: Had kadar global semasa setiap terjemahan adalah
+    {0} saat. Ketik sesuatu yang lebih besar daripada 0 untuk menetapkan nilai baru,
+    atau ketik 0 untuk menonaktifkan batas. Taip apa-apa kurang daripada 0 untuk kembali.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Tetapkan kekunci Google Translate
+    API berjaya.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Ubah Kunci Rahsia Amazon
+  wwcVersion: WorldwideChat, versi
+  wwcsAttemptedTranslations: 'Percubaan Terjemahan: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Kunci rahsia Amazon berjaya
+    ditetapkan.
+  wwcConfigConversationWatsonAPIKeySuccess: Kekunci API Watson berjaya ditetapkan.
+  wwcRateLimit: Terjemahan anda adalah kadar terhad. Sila tunggu yang lain {0} saat.
+  wwcConfigCacheEnabled: Cache penterjemah dibenarkan dan tetapkan kepada had bagi
+    {0}.
+  wwctGUIExistingTranslationButton: Tulis ganti Sesi Terjemahan Semasa
+  wwcUserDataReloaded: Dimuatkan semua data pengguna yang disimpan.
+  wwcConfigGUISendTranslationChatButton: Hantar Peringatan Sembang kepada Penterjemah
+    Aktif semasa Log Masuk
+  wwcsLastTranslationTime: 'Masa Terjemahan Terakhir (Berjaya): {0}'
+  wwctbNotATranslator: Anda bukan penterjemah aktif! Pastikan anda telah menetapkan
+    ini dengan /wwct.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Kekunci capaian semasa ialah
+    {0}. Sila masukkan kekunci capaian untuk Amazon, atau taip 0 untuk kembali.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Kekunci akses Amazon berjaya
+    ditetapkan.
+  wwcConfigBadUpdateDelay: Kelewatan kemas kini tidak sah ditetapkan dalam config.yml.
+    Lalai kepada 86400 saat...
+  wwctrlRateLimitOffSender: Mematikan had kadar anda.
+  wwctrlRateLimitAlreadyOffTarget: Had kadar {0} sudah dilumpuhkan.
+  wwctrlPlayerNotFound: Pemain {0} sama ada tidak ditemui, atau bukan penterjemah
+    aktif.
+  wwctrlRateLimitSetSender: Tetapkan had kadar anda ke {0} saat.
+  wwctrlRateLimitOffTarget: Mematikan had kadar {0}.
+  wwctrlNotATranslator: Anda bukan penterjemah aktif! Pastikan anda telah menetapkan
+    ini dengan /wwct.
+  wwctrlRateLimitAlreadyOffSender: Had kadar anda telah dilumpuhkan.
+  wwctGUIRateButton: Tetapkan Had Kadar
+  wwctGUIConversationRateLimit: Had kadar setiap terjemahan adalah semasa {0} saat
+    ini. Ketik sesuatu yang lebih besar daripada 0 untuk menetapkan nilai baru, atau
+    ketik 0 untuk menonaktifkan batas. Taip apa-apa kurang daripada 0 untuk kembali.
+  wwctGUITargetPlayerNull: Pemain sasaran terputus dari pelayan.
+  wwcConfigConversationSyncUserDataDelayInput: Kelewatan semasa setiap penyegerakan
+    data pengguna adalah {0} saat. Taip apa-apa yang lebih besar daripada 10 untuk
+    menetapkan nilai baru, atau apa-apa kurang daripada 10 untuk kembali.
+  wwcConfigGUISyncUserDataButton: Ubah Keterlambatan Sinkronisasi Data Pengguna
+  wwcConfigSyncDelayEnabled: Kelewatan bagi setiap penyelarasan data pengguna ditetapkan
+    ke {0} saat.
+  wwcConfigConversationSyncUserDataDelaySuccess: Kelewatan penyegerakan data pengguna
+    berjaya ditetapkan.
+  wwcConfigSyncDelayInvalid: Set kelewatan penyegerakan data pengguna tidak sah dalam
+    config.yml. Lalai kepada 7200 saat...
+  wwcConfigCacheInvalid: Saiz cache penterjemah tidak sah. Defaulting kepada 10...
+  wwcInventoryErrorPlayer: Ralat dikesan dengan GUI anda. Log telah dihantar ke konsol.
+  wwcInventoryError: Ralat dikesan dengan GUI pengguna {0}. Sila laporkan isu ini
+    kepada pembangun.
+  wwctiOffTarget: Terjemahan item dilumpuhkan untuk {0}.
+  wwctiOffSender: Terjemahan item dilumpuhkan.
+  wwcItemTranslateTitleStock: Tidak boleh menterjemahkan nama item lalai.
+  wwctGUIItemButton: Togol Terjemahan Item
+  wwcItemTranslateTitleDone: Tajuk item yang diterjemahkan berjaya.
+  wwcGUITempItem: Paparan Item
+  wwcItemTranslateStart: Menterjemahkan item sasaran...
+  wwcBookTranslateTitleSuccess: 'Tajuk Buku Diterjemahkan: {0}'
+  wwctiOnSender: Terjemahan item dibenarkan. Klik kanan dengan item di tangan utama
+    Anda untuk menerjemahkannya!
+  wwcItemTranslateLoreStart: Menterjemahkan pengetahuan item sasaran...
+  wwcItemTranslateLoreDone: Maklumat item yang diterjemahkan berjaya.
+  wwctiOnTarget: Terjemahan item dibenarkan untuk {0}.
+  wwcInvalidTranslator: Tetapan penterjemah tidak sah. Sila betulkan ini dalam config.yml
+    anda atau dengan /wwcc untuk guna pemalam ini.
+  wwcConfigGUIEachTranslatorSettings: '{0} Konfigurasi'
+  wwcConfigGUIWatsonButton: Watson
+  wwcServerReloadWarning: WorldwideChat tidak membenarkan penggunaan /reload. Sila
+    teruskan dengan berhati-hati.
+  wwcConfigEnabledDebugMode: Mod DEBUG diaktifkan. Jika Anda bukan pengembang atau
+    pemecah masalah, Anda harus mematikannya.
+  wwcTranslatorErrorThresholdReached: Ambang ralat dicapai. Pemalam ini kini akan
+    memuatkan semula, dan melumpuhkan semua penterjemah.
+  wwcConfigErrorLimitEnabled: Had ralat penterjemah ditetapkan ke {0}.
+  wwcTranslatorError: Masalah berlaku semasa cuba terjemahan anda. Sila cuba lagi.
+  wwcConfigErrorLimitInvalid: Had ralat penterjemah tidak sah ditetapkan dalam config.yml.
+    Defaulting kepada 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Sila semak errorLog.txt dalam folder
+    plugin WorldwideChat untuk maklumat lanjut.
+  wwctInvalidInputLangCode: 'Kod bahasa input tidak sah disediakan! Kod lang sah:
+    {0}'
+  wwctInvalidOutputLangCode: 'Kod bahasa output tidak sah disediakan! Kod lang sah:
+    {0}'
+  wwctGUISourceTranslationSelected: Anda telah memilih bahasa ini.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Padam Batalkan
+  wwcConfigConversationOverrideTextChange: Sila taip mesej baru untuk mengatasi ini,
+    atau taip 0 untuk kembali. Ingat untuk menyertakan sebarang pembolehubah bermula
+    dengan tanda peratusan yang anda lihat dalam mesej asal.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Bahasa ini sudah aktif!
+  wwcConfigGUIMessagesOverrideChatButton: Batalkan Mesej Pemalam Lalai
+  wwcConfigGUIChatMessagesPossibleOverrides: Pilih Mesej
+  wwcConfigGUIChatMessagesModifyOverride: Ubahsuai Batalkan Sedia
+  wwcConfigConversationOverrideDeletionSuccess: Batalkan mesej tersuai telah dipadam.
+  wwcConfigGUIChatMessagesOverrideSettings: Batalkan Mesej Lalai
+  wwcConfigGUIChatMessagesDeadOverride: Batalkan ini sama ada tidak sah, atau mesej
+    asal telah dibuang. Anda patut padam ini.
+  wwcConfigGUIMessagesAlreadyOverriden: Anda sudah mempunyai override untuk mesej
+    ini!
+  wwcConfigGUIChatMessagesOverrideNewButton: Tambah Batalkan Baru
+  wwcConfigGUIMessagesOverrideCustomLabel: Mesej Baru
+  wwcConfigConversationOverrideTextChangeSuccess: Tetapkan mesej baru berjaya.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Tukar Teks Sedia Ada
+  wwcExampleMessage: Ini adalah mesej dummy, dan bertujuan untuk ditimpa sebagai contoh.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Mesej Asal
+  wwcConfigGUIDebugModeButton: Togol Mod Nyahpepijat
+  wwcConfigConversationDebugModeSuccess: Berjaya menogolkan mod nyahpepijat.
+  wwcConfigGUIErrorLimitButton: Ubah Had Ralat Penterjemah
+  wwcConfigConversationErrorLimitSuccess: Had ralat berjaya ditetapkan.
+  wwcEntityTranslateStart: Menterjemahkan entiti sasaran...
+  wwcConfigGUICharacterLimitButton: Tukar Had Aksara Mesej
+  wwcConfigMessageCharLimitInvalid: Had tidak sah setiap mesej ditetapkan dalam config.yml.
+    Defaulting kepada 255 aksara...
+  wwcConfigConversationCharacterLimitSuccess: Had aksara berjaya ditetapkan.
+  wwcteOnTarget: Terjemahan entiti dibenarkan untuk {0}.
+  wwcEntityTranslateDone: 'Nama Entiti Diterjemahkan: {0}'
+  wwcEntityTranslateNoName: Entiti tidak mempunyai nama tersuai.
+  wwcConfigConversationErrorLimitInput: Had ralat semasa bagi setiap penterjemah adalah
+    {0}. Taipkan apa-apa yang lebih besar daripada 0 untuk menetapkan nilai baru,
+    atau taip apa-apa yang kurang atau sama dengan 0 untuk kembali.
+  wwcConfigGUIGlobalRateLimitButton: Ubah Had Kadar Global
+  wwcteOnSender: Terjemahan entiti dibenarkan. Klik kanan pada entiti untuk menterjemahkan
+    namanya!
+  wwcConfigGUIResponseLimitButton: Ubah Masa Tamat Balas Penterjemah
+  wwcConfigMessageCharLimitEnabled: Had aksara setiap mesej ditetapkan ke {0} aksara.
+  wwcteOffTarget: Terjemahan entiti dilumpuhkan untuk {0}.
+  wwcCharLimit: Mesej anda terlalu panjang! Sila pastikan panjang mesej anda kurang
+    daripada {0} aksara.
+  wwcConfigConversationCharacterLimitInput: Had aksara semasa bagi setiap mesej adalah
+    {0} aksara. Taip apa-apa yang lebih besar daripada 0 untuk menetapkan nilai baru,
+    atau taip apa-apa yang kurang daripada atau sama dengan 0 untuk kembali.
+  wwcteOffSender: Terjemahan entiti dilumpuhkan.
+  wwctGUIEntityButton: Togol Terjemahan Entiti
+  wwctrlRateLimitBadInt: Had kadar anda bukan integer yang sah.
+  wwcTranslatorErrorConsole: Masalah berlaku semasa pengguna {0} cuba terjemahannya.
+    Sila semak errorLog.txt untuk maklumat lanjut.
+  wwctGUIChatButton: Togol Terjemahan Sembang
+  wwcrBegin: Memuat semula WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Sesi terjemahan untuk {0} telah dihentikan.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Sembang global sedang
+    diterjemahkan, tetapi anda mempunyai sesi terjemahan aktif dari {0} ke {1}.
+  wwctCannotTranslateConsole: Anda tidak boleh memulakan sesi terjemahan untuk konsol!
+  wwcOnJoinTranslationNotificationSourceLang: Anda mempunyai sesi terjemahan aktif
+    dari {0} ke {1}.
+  wwctTranslationStopped: Sesi terjemahan anda telah dihentikan.
+  wwctAutoTranslateStart: Memulakan sesi terjemahan baru ke {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Anda mempunyai sesi terjemahan aktif
+    ke {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Sembang global sedang
+    diterjemahkan, tetapi anda mempunyai sesi terjemahan aktif ke {0}.
+  wwcConfigGUIChangesNotSaved: Perubahan anda tidak akan berkuat kuasa sehingga anda
+    klik pada halangan merah di /wwcc.
+  wwctciOffSender: Terjemahan sembang masuk dilumpuhkan.
+  wwctGUIChatIncomingButton: Togol Terjemahan Sembang Masuk
+  wwctcoOffSender: Terjemahan sembang keluar dilumpuhkan.
+  wwctcoOnSender: Terjemahan sembang keluar didayakan. Apa sahaja yang anda katakan
+    akan diterjemahkan!
+  wwctciOnSender: Terjemahan sembang masuk didayakan. Apa-apa sahaja yang anda terima
+    akan diterjemahkan!
+  wwctGUIChatMenu: Togol Chat Terjemahan Menu
+  wwctcoOnTarget: Terjemahan sembang keluar didayakan untuk {0}.
+  wwctcoOffTarget: Terjemahan sembang keluar dilumpuhkan untuk {0}.
+  wwctGUIChatOutgoingButton: Togol Terjemahan Sembang Keluar
+  wwctciOnTarget: Terjemahan sembang masuk didayakan untuk {0}.
+  wwctciOffTarget: Terjemahan sembang masuk dilumpuhkan untuk {0}.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Sembang masuk asal yang dilampirkan
+    pada terjemahan sebagai teks hover berjaya ditogol.
+  wwcConfigGUISendIncomingHoverTextChatButton: Tambah Mesej Masuk Asal sebagai Teks
+    Hover
+  wwctGUIExistingChatOutgoingEnabled: 'Terjemahan Sembang Keluar Diaktifkan: {0}'
+  wwctGUIExistingTranslationInput: 'Bahasa Input: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Terjemahan Sembang Masuk Diaktifkan: {0}'
+  wwctGUIExistingTranslationOutput: 'Bahasa Output: {0}'
+  wwcTranslatorAttempt: Cuba untuk menyambung kepada penterjemah dalam config.yml...
+    (Percubaan {0}/ {1})
+  wwcTimeoutExceptionConsole: Pemain % saya mempunyai masa tamat permintaan terbaru
+    mereka. Kesalahan ini tidak membawa maut, tetapi WorldwideChat harus dimuat semula
+    jika ia terus berlaku.
+  wwcGUIPageNumber: 'Nombor Halaman: {0}'
+  wwcConfigYAMLFallback: Jatuh kembali ke YAML...
+  wwcConfigGUIToggleSQLButton: Togol SQL
+  wwcConfigConversationToggleSQLSuccess: SQL berjaya ditogol. Muat semula untuk perubahan
+    berkuatkuasa.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Berjaya menogol Google Translate.
+    Muat semula untuk perubahan berkuatkuasa.
+  wwcConfigYAMLDefault: Lalai kepada YAML untuk storan data.
+  wwcConfigGUISQLMenuButton: Tukar Tetapan SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Berjaya menogol Watson Terjemah.
+    Muat semula untuk perubahan berkuatkuasa.
+  wwcConfigGUIToggleGoogleTranslateButton: Togol Google Terjemah
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Terjemah
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Terjemah
+  wwcConfigGUIStorageSettings: Konfigurasi Storan
+  wwcConfigConversationAmazonTranslateToggleSuccess: Berjaya menogol Amazon Terjemah.
+    Muat semula untuk perubahan berkuatkuasa.
+  wwcConfigGUISQLPortButton: Tukar SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Tukar SQL Argumen Pilihan
+  wwcConfigConversationToggleSQLSSLSuccess: SSL untuk SQL berjaya ditogol.
+  wwcConfigConversationSQLPortInput: Port semasa adalah {0}. Taip apa-apa selain 0
+    untuk tetapkan port baru, atau taip 0 untuk kembali.
+  wwcConfigGUISQLPasswordButton: Tukar Kata Laluan SQL
+  wwcConfigConversationSQLHostnameSuccess: Berjaya menukar nama hos SQL.
+  wwcConfigConversationSQLHostnameInput: Nama hos semasa adalah {0}. Taip apa-apa
+    selain 0 untuk tetapkan nama hos baru, atau taip 0 untuk kembali.
+  wwcConfigGUISQLHostnameButton: Tukar Nama Hos SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: Berjaya menukar argumen SQL pilihan.
+  wwcConfigConversationSQLPasswordSuccess: Berjaya menukar kata laluan SQL.
+  wwcConfigConversationSQLPasswordInput: Kata laluan semasa adalah {0}. Taip apa-apa
+    selain 0 untuk menetapkan kata laluan baru, atau taip 0 untuk kembali.
+  wwcConfigGUIToggleSQLSSLButton: Togol SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Berjaya menukar nama pengguna SQL.
+  wwcConfigConversationSQLUsernameInput: Nama pengguna semasa adalah {0}. Taip apa-apa
+    selain 0 untuk menetapkan nama pengguna baru, atau taip 0 untuk kembali.
+  wwcConfigConversationSQLPortSuccess: Berjaya menukar port SQL.
+  wwcConfigGUISQLUsernameButton: Tukar Nama Pengguna SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Hujah pilihan berjaya dibersihkan.
+  wwcConfigConversationSQLOptionalArgsInput: 'Argumen SQL pilihan semasa ialah: {0}.
+    Argumen jenis dipisahkan oleh koma (key=value, key2=value2), atau taipkan jelas
+    untuk menghapuskan args semasa, atau taip 0 untuk kembali.'
+  wwcConfigConversationSQLDatabaseNameInput: Nama pangkalan data semasa adalah {0}.
+    Taip apa-apa selain 0 untuk tetapkan nama pangkalan data baru, atau taip 0 untuk
+    kembali.
+  wwcConfigGUISQLDatabaseNameButton: Tukar Pangkalan Data SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Berjaya menukar nama pangkalan data
+    SQL.
+  wwcConfigConversationFatalAsyncAbort: Masa tamat masa semasa untuk membatalkan semua
+    tugas async ialah {0} saat. Taip apa-apa di atas 7 untuk menetapkan tamat masa
+    baru, atau apa-apa di bawahnya untuk kembali.
+  wwcConfigConversationFatalAsyncSuccess: Async tugas tamat masa ditetapkan berjaya.
+  wwcConfigGUIFatalAsyncAbortButton: Tukar Async Task Timeout
+  libreHttp400: Permintaan buruk dihantar ke Percuma Terjemah! Kecuali anda melakukan
+    sesuatu yang anda tidak sepatutnya, anda tidak sepatutnya mendapatkannya. Sila
+    hubungi pemaju!
+  wwcConfigGUILibreTranslateApiKeyButton: Tukar Percuma Terjemah API Key
+  libreHttp403: Hilang Percuma Terjemah API Key, atau anda diharamkan daripada pelayan!
+  wwcConfigConversationLibreURLSuccess: URL Percuma berjaya ditetapkan.
+  wwcConfigConversationLibreTranslateApiKeyInput: Kunci API semasa adalah {0}. Sila
+    masukkan kunci API untuk Percuma, atau taip 0 untuk kembali.
+  wwcConfigGUILibreTranslateButton: Libre Terjemah
+  libreHttp429: Tiada keyakinan kerana had kadar dari pelayan.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Terjemah
+  wwcConfigConversationLibreTranslateToggleSuccess: Berjaya ditogol Percuma Terjemah.
+    Muat semula untuk perubahan berkuatkuasa.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Kunci API Percuma berjaya ditetapkan.
+  wwcConfigConversationLibreURLInput: URL semasa adalah {0}. Sila masukkan URL untuk
+    Percuma, atau taip 0 untuk kembali.
+  libreHttpUnknown: 'Ralat http tidak diketahui: {0}'
+  wwcConfigGUILibreTranslateURLButton: Tukar Percuma Terjemah URL
+  wwcConfigConnectionFail: Gagal menyambung ke {0}.
+  wwcConfigConversationMongoDatabaseNameSuccess: Berjaya menukar nama pangkalan data
+    MongoDB.
+  wwcConfigGUIMongoHostnameButton: Tukar Nama Hos MongoDB
+  wwcConfigConversationMongoPasswordInput: Kata laluan semasa adalah {0}. Taip apa-apa
+    selain daripada 0 untuk tetapkan kata laluan baru, atau taip 0 untuk kembali.
+  wwcConfigConversationMongoPortInput: Pelabuhan semasa adalah {0}. Taip apa-apa selain
+    daripada 0 untuk tetapkan port baru, atau taip 0 untuk kembali.
+  wwcConfigConversationToggleMongoSuccess: MongoDB berjaya ditogol. Muat semula untuk
+    perubahan untuk berkuatkuasa.
+  wwcConfigConversationMongoHostnameInput: Nama hos semasa adalah {0}. Taip apa-apa
+    selain daripada 0 untuk tetapkan nama hos baru, atau taip 0 untuk kembali.
+  wwcConfigConversationMongoHostnameSuccess: Berjaya menukar nama hos MongoDB.
+  wwcConfigGUIMongoMenuButton: Tukar Tetapan MongoDB
+  wwcConfigGUIToggleMongoButton: Togol MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Nama pangkalan data semasa adalah {0}.
+    Taip apa-apa selain daripada 0 untuk tetapkan nama pangkalan data baru, atau taip
+    0 untuk kembali.
+  wwcConfigConversationMongoOptionalArgsInput: 'Argumen MongoDB pilihan semasa ialah:
+    {0}. Argumen jenis dipisahkan dengan koma (key=value, key2=value2), atau taip
+    clear untuk lap args semasa, atau taip 0 untuk kembali.'
+  wwcConfigGUIMongoDatabaseNameButton: Tukar Pangkalan Data MongoDB
+  wwcConfigConversationMongoUsernameInput: Nama pengguna semasa adalah {0}. Taip apa-apa
+    selain daripada 0 untuk tetapkan nama pengguna baru, atau taip 0 untuk kembali.
+  wwcConfigGUIMongoOptionalArgsButton: Tukar MongoDB Argumen Pilihan
+  wwcConfigConversationMongoUsernameSuccess: Berjaya menukar nama pengguna MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Berjaya menukar kata laluan MongoDB.
+  wwcConfigConversationMongoPortSuccess: Berjaya menukar port MongoDB.
+  wwcConfigGUIMongoUsernameButton: Tukar Nama Pengguna MongoDB
+  wwcConfigGUIMongoPasswordButton: Tukar Kata Laluan MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Berjaya mengubah argumen MongoDB
+    pilihan.
+  wwcConfigConversationMongoOptionalArgsCleared: Argumen pilihan dibersihkan dengan
+    jayanya.
+  wwcConfigGUIMongoPortButton: Tukar MongoDB Port
+  wwcConfigInvalidFatalAsyncTimeout: Set tamat tempoh async maut tidak sah. Mungkir
+    ke 10 saat...
+  libreHttp500: Pasangan bahasa input dan output pilihan anda tidak disokong. Sila
+    pilih satu set bahasa yang berbeza!
+  wwcConfigGUIDeepLTranslateButton: Toggle DeepL Terjemah
+  wwcConfigConversationDeepLTranslateToggleSuccess: Berjaya bertukar-tukar DeepL Translate.
+    Muat semula untuk perubahan berkuatkuasa.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Tukar Kunci API Terjemah DeepL
+  wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Terjemah
+  wwcConfigConversationDeepLTranslateApiKeySuccess: Kunci API DeepL berjaya ditetapkan.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Kunci API semasa adalah {0}. Sila
+    masukkan kunci API untuk DeepL, atau taip 0 untuk kembali.
+  wwcConfigErrorsToIgnoreSuccess: Kesilapan penterjemah yang berjaya didaftarkan untuk
+    diabaikan.
+  wwcConfigErrorsToIgnoreInvalid: Ralat penterjemah tidak sah untuk diabaikan ditetapkan
+    dalam config.yml. Mendaftarkan lalai...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: Berjaya mengubah ralat penterjemah untuk
+    mengabaikan frasa.
+  wwcConfigGUIIgnoreErrorsButton: Ubah Ralat untuk Abaikan
+  wwcConfigConversationIgnoreErrorsInput: 'Senarai frasa semasa dalam ralat penterjemah
+    untuk diabaikan ialah: {0}. Argumen jenis dipisahkan dengan koma (key=value, key2=value2),
+    atau taip clear untuk lap args semasa, atau taip 0 untuk kembali. Selain itu,
+    menaip “*” akan menyebabkan plugin tidak memeriksa sebarang kesilapan penterjemah.'
+  wwcConfigConversationIgnoreErrorsCleared: Kesilapan penterjemah untuk mengabaikan
+    frasa dibersihkan dengan jayanya.
+  wwcSupportedServer: Memulakan WorldwideChat untuk {0}...
+  wwcSupportedVersion: Membolehkan ciri untuk versi {0}...
+  wwcBadPerms: 'Anda tidak mempunyai keizinan yang diperlukan untuk melaksanakan arahan
+    ini: {0}'
+  wwcsIsActiveTranslator: 'Adakah Penterjemah Aktif: {0}'
+  wwcsActiveTransPrevRate: 'Masa Had Kadar Sebelumnya: {0}'
+  wwcsActiveTransSaved: 'Disimpan ke cakera: {0}'
+  wwcsActiveTransIncoming: 'Menterjemahkan Sembang Masuk: {0}'
+  wwcsActiveTransOutLang: 'Bahasa Keluaran: {0}'
+  wwcsActiveTransInLang: 'Bahasa Input: {0}'
+  wwcsActiveTransBook: 'Penterjemahan Buku: {0}'
+  wwcsActiveTransSign: 'Tanda Terjemahan: {0}'
+  wwcsActiveTransUUID: 'UUE: {0}'
+  wwcsActiveTransRateLimit: 'Had Kadar: {0}'
+  wwcsActiveTransColorWarning: 'Amaran Warna yang Diterima: {0}'
+  wwcsActiveTransSignWarning: 'Amaran Suntingan Tanda Diterima: {0}'
+  wwcsTitle: Rekod {0}
+  wwcsActiveTransOutgoing: 'Menterjemahkan Sembang Keluar: {0}'
+  wwcsActiveTransItem: 'Item Terjemahan: {0}'
+  wwcsActiveTransEntity: 'Entiti menterjemah: {0}'
+  wwctsWarning: Pengubahsuaian tanda dilumpuhkan semasa anda menterjemahkan tanda.
+  wwcConfigConversationAzureTranslateToggleSuccess: Berjaya menukar Azure Translate.
+    Muat semula untuk perubahan berkuatkuasa.
+  wwcConfigGUIAzureTranslateButton: Terjemah Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Tukar Kunci API Terjemahan Azure
+  wwcConfigGUIAzureTranslateRegionButton: Tukar Wilayah Terjemahan Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Wilayah Azure berjaya ditetapkan.
+  wwcConfigConversationAzureTranslateApiKeyInput: Kunci API semasa ialah {0}. Sila
+    masukkan kunci API untuk Azure, atau ketik 0 untuk kembali.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Kekunci API Azure berjaya ditetapkan.
+  wwcConfigConversationAzureTranslateRegionInput: Kawasan semasa ialah {0}. Sila masukkan
+    rantau untuk Azure, atau ketik 0 untuk kembali.
+  wwcConfigGUIToggleAzureTranslateButton: Toggle Azure Terjemahan
+  wwcConfigGUISystranTranslateApiKeyButton: Tukar Kunci API Terjemahan Systran
+  wwcConfigGUIToggleSystranTranslateButton: Toggle Systran Terjemahan
+  wwcConfigConversationSystranTranslateApiKeyInput: Kunci API semasa ialah {0}. Sila
+    masukkan kunci API untuk Systran, atau ketik 0 untuk kembali.
+  wwcISOJSONFail: Tidak dapat memperbaiki objek bahasa dengan ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: Berjaya menukar Systran Translate.
+    Muat semula untuk perubahan berkuatkuasa.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Kunci API Systran berjaya ditetapkan.
+  wwcConfigGUISystranTranslateButton: Terjemah Systran
+  wwcrTransFail: Memuat semula WorldwideChat tetapi gagal mendayakan penterjemah.
+  wwcdCacheCleared: Cache terjemahan telah dibersihkan.
+  wwcdInvalidCmd: Hujah tidak sah!
+  systranHttpUnknown: 'Ralat http tidak diketahui: {0}'
+  systranHttp400: Parameter buruk dihantar ke Systran. Mungkin pasangan bahasa yang
+    buruk?
+  systranHttp500: Ralat pelayan dalaman dari titik akhir Systran ({0}).
+  wwcInvalidStorageSession: '{0} diaktifkan dalam konfigurasi anda, tetapi sambungan
+    tidak ditubuhkan. Sila cuba muat semula untuk memperbaikinya, tetapi sila hubungi
+    pemaju jika anda sebelum ini menerima mesej sambungan yang berjaya dari {0}.'
+  wwcNewSqlConvertFinish: Selesai menukar jadual SQL anda. Memuatkan semula WorldwideChat...
+  wwcNewSqlStruct: Pangkalan data SQL anda menggunakan struktur baru dan tidak perlu
+    ditukar.
+  wwcNewSqlConvertBegin: Menukar jadual SQL anda...
+  wwcOldSqlStructRecords: 'Pangkalan data SQL anda mempunyai persediaan jadual rekod
+    pemain yang tidak cekap daripada versi WorldwideChat sebelumnya. Anda boleh menjalankan
+    arahan berikut untuk menyelesaikan masalah ini: /wwcd convert'
+  wwcOldSqlStructLongIntro: Kami dengan tulus memohon maaf atas kesulitan, tetapi
+    versi terdahulu WorldwideChat memulakan jadual SQL anda dengan struktur yang tidak
+    cekap. Walaupun ini akan terus berfungsi dengan plugin kami, ia boleh mengakibatkan
+    perlambatan yang ketara dengan rekod pemain yang lebih besar.
+  wwcOldSqlStructTrans: 'Pangkalan data SQL anda mempunyai persediaan jadual penterjemah
+    aktif yang tidak cekap daripada versi terdahulu WorldwideChat. Anda boleh menjalankan
+    arahan berikut untuk menyelesaikan masalah ini: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Anda boleh: menjatuhkan jadual yang dicetak untuk konsol
+    di MySQL, menukarnya sendiri dan lihat struktur baru dalam repo github, atau jalankan
+    arahan untuk mencuba penukaran secara langsung. Sila pastikan anda TELAH MEMBUAT
+    SANDARAN PANGKALAN DATA ANDA SEBELUM MENJALANKANNYA. Jika anda mempunyai, perintahnya
+    ialah: {0}'
+  wwcNewSqlConvertFail: Penukaran gagal... sila pulihkan jadual anda dari sandaran
+    yang anda buat. Melumpuhkan WorldwideChat...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Berjaya menukar nama pangkalan
+    data PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Hujah pilihan berjaya dibersihkan.
+  wwcConfigConversationPostgresPortInput: Pelabuhan semasa ialah {0}. Taipkan apa-apa
+    selain 0 untuk menetapkan port baru, atau ketik 0 untuk kembali.
+  wwcConfigGUIPostgresUsernameButton: Tukar Nama Pengguna PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Berjaya menukar argumen PostgreSQL
+    pilihan.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL untuk PostgreSQL berjaya ditukar.
+  wwcConfigConversationPostgresPasswordSuccess: Berjaya menukar kata laluan PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Berjaya menukar port PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Nama pengguna semasa ialah {0}. Taipkan
+    apa-apa selain 0 untuk menetapkan nama pengguna baru, atau taip 0 untuk kembali.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL berjaya ditukar. Muat semula
+    agar perubahan itu berkuatkuasa.
+  wwcConfigGUITogglePostgresButton: Tukar PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Tukar Kata Laluan PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Tukar Argumen Pilihan PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Tukar Tetapan PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Kata laluan semasa ialah {0}. Taipkan
+    apa-apa selain 0 untuk menetapkan kata laluan baru, atau ketik 0 untuk kembali.
+  wwcConfigConversationPostgresHostnameInput: Nama hos semasa ialah {0}. Taipkan apa-apa
+    selain 0 untuk menetapkan nama hos baru, atau ketik 0 untuk kembali.
+  wwcConfigGUIPostgresPortButton: Tukar Pelabuhan PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Berjaya menukar nama hos PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Tukar nama hos PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Nama pangkalan data semasa ialah
+    {0}. Taipkan apa-apa selain 0 untuk menetapkan nama pangkalan data baru, atau
+    taipkan 0 untuk kembali.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Argumen PostgreSQL pilihan semasa
+    ialah: {0}. Taipkan argumen yang dipisahkan dengan koma (kunci = nilai, key2 =
+    value2), atau taip jelas untuk menghapuskan args semasa, atau ketik 0 untuk kembali.'
+  wwcConfigGUITogglePostgresSSLButton: Tukar PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Tukar Pangkalan Data PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Berjaya menukar nama pengguna PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfigurasi'
+  wwcConfigConversationPrefixInput: Awalan semasa ialah {0}. Sila taipkan yang baru,
+    atau ketik 0 untuk kembali.
+  wwcConfigConversationLangInput: 'Bahasa plugin semasa ialah {0}. Sila masukkan kod
+    bahasa yang sah, atau ketik 0 untuk dibatalkan. Kod bahasa yang sah: {1}'
+  wwcdCacheSize: Saiz cache pada masa ini adalah {0}, dengan had {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Memulakan sesi terjemahan baru dari {0} ke {1}.
+  wwctAutoTranslateStartOtherPlayer: Memulakan sesi terjemahan baru untuk {0} hingga
+    {1}.
+  wwctLangToLangStartOtherPlayer: Memulakan sesi terjemahan baru untuk {0} dari {1}
+    hingga {2}.
+  wwcgLangToLangStart: Sekarang menterjemahkan sembang global dari {0} ke {1}.
+  wwctrlRateLimitSetTarget: Tetapkan had kadar {0} hingga {1} saat.
+  wwcTimeoutException: Permintaan anda tamat tempoh. Sila cuba lagi.
+  wwctbNoMoreOldBooks: Terjemahan buku tidak berfungsi pada versi pelayan anda. Jika
+    anda menggunakan versi Minecraft yang lebih terkini dan anda mendapat ralat ini,
+    sila hubungi pemaju.
+

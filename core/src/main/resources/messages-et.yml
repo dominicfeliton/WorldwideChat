@@ -1,0 +1,543 @@
+Messages:
+  wwcgAutoTranslateStart: Nüüd tõlkides globaalset vestlust {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Globaalne vestlus on tõlgitud
+    {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Muuda Amazon Access Key
+  wwcrFail: WorldwideChat'i taaslaadimine nurjus.
+  wwcConfigGUIUpdateCheckerButton: Muuda värskenduste otsimise viivitus
+  wwcUpdaterFailedGeneric: WorldwideChat värskendusi ei saa kontrollida.
+  wwcConfigConversationUpdateCheckerInput: Värskenduskontrolli praegune viivitus on
+    {0} sekundit. Tippige midagi suuremat kui 10 uue väärtuse määramiseks või midagi
+    vähem kui 10, et minna tagasi.
+  wwctGUIMainMenuGlobal: Globaalne tõlke menüü
+  wwcConfigConversationPluginUpdateChatSuccess: Plugin uuendus chat meeldetuletus
+    lülitatakse edukalt.
+  wwctbOnTarget: Raamatu tõlge lubatud {0}.
+  wwcsNotATranslator: '{0} jaoks pole veel ühtegi kirjet.'
+  wwcConfigGUIbStatsButton: Lülita bStats
+  wwctGUINewTranslationSource: Vali lähtekeel
+  wwcConfigConnectionFailed: Ühendumine {0} nurjus. Veenduge, et teie mandaat ja tulemüür
+    oleksid õigesti konfigureeritud!
+  wwcConfigEnabledbStats: Lubatud bStats.
+  wwctGUIMainMenuPlayer: Tõlge menüü {0}
+  wwctGUIBookButton: Lülita raamatu tõlge
+  wwcLangDetected: Tuvastatud keele {0}.
+  wwcBookTranslateStart: Tõlkimine sihtraamat...
+  wwcConfigDisabledbStats: Keelatud bStats.
+  wwctsOffSender: Allkirjastamine keelatud.
+  wwcUpdaterParserFailed: Andmete sõelumine Githubist nurjus.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Praegune salajane võti on {0}.
+    Palun sisestage Amazoni salajane võti või tippige 0, et minna tagasi.
+  wwctbOffSender: Broneeri tõlge keelatud.
+  wwcConfigGUIAmazonTranslateButton: Amazon tõlkida
+  wwcConfigConversationLangSuccess: Plugin keel muutunud edukalt.
+  wwcsSuccessfulTranslations: 'Edukad tõlked: {0}'
+  wwcConfigConversationTranslationCacheInput: Praegune tõlkevahemälu limiit on {0}
+    laused. Uue väärtuse määramiseks tippige midagi suuremat kui 0 või tippige tõlkevahemälu
+    keelamiseks 0. Tippige midagi vähem kui 0 tagasi minna.
+  wwctbOffTarget: Broneeri tõlge keelatud jaoks {0}.
+  wwcConfigGUIGeneralSettings: Üldine konfiguratsioon
+  wwcInvalidLang: Kehtetu keel oma config.yml. Defaulting en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazonase piirkonnas seatud edukalt.
+  wwcConfigRateLimitEnabled: Globaalne piirmäär lubatud ja seadistada {0} sekundit.
+  wwcConfigGUILangButton: Muuda plugina keelt
+  wwctGUISignButton: Lülita viipetõlge
+  wwcUpdaterOutOfDate: WorldwideChat on aegunud. Palun uuenda uusimale versioonile,
+    {0}.
+  wwcConfigGUINextPageButton: Järgmine lehekülg
+  wwcConfigInvalidTranslatorSettings: Kehtetu tõlkija seaded! Palun lubage ainult
+    üks tõlkija oma config.yml.
+  wwcConfigGUIQuitButton: Välju ja salvesta muudatused
+  wwctPlayerNotFound: Mängija {0} ei leidnud.
+  wwcConfigGUIAmazonTranslateRegionButton: Muuda Amazonase regiooni
+  wwcConfigConversationLangInvalid: Kehtetu keelekood!
+  wwcConfigGUIWatsonAPIKeyButton: Muuda Watsoni API võtit
+  wwcEnabled: Lubatud WorldwideChat versioon {0}.
+  wwctbOnSender: Raamatu tõlkimine on lubatud. Paremklõpsake hoides raamatut tõlkida!
+  wwcListenersInitialized: Algastatud kuulajad.
+  wwcConfigGUIPluginUpdateChatButton: Saada vestluse meeldetuletus Plugin värskenduste
+    jaoks
+  wwcConfigConversationSendTranslationChatSuccess: Aktiivne tõlkija vestlus meeldetuletus
+    lülitatud edukalt.
+  wwctsOffTarget: Allkirjasta tõlge keelatud jaoks {0}.
+  wwcUpdaterConnectionFailed: Githubi uusimaid värskendusi ei saa otsida.
+  watsonNotFoundExceptionNotification: Ei saa tõlkida oma sisendit kaugemale.
+  wwcConfigConversationWatsonAPIKeyInput: Praegune API võti on {0}. Palun sisestage
+    Watsoni API võti või tippige 0, et minna tagasi.
+  wwctGUIStopButton: Lõpeta tõlkimine
+  wwcgTranslationStopped: Global chat tõlge on peatunud.
+  wwcUpdaterFutureDate: Sellel WorldwideChati eksemplaril on suurem versioon kui viimane
+    avalik versioon.
+  wwcConfigConversationPrefixSuccess: Eesliide on edukalt muudetud.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Muuda Google Translate API võti
+  wwcSignDeletedOrTooLong: 'Sihtmärk kustutati või tõlge oli liiga pikk. Tõlge:'
+  wwctsOnTarget: Logi tõlge lubatud {0}.
+  wwcConfigCacheDisabled: Tõlkija vahemälu on keelatud.
+  wwcConfigConversationWatsonURLInput: Praegune URL on {0}. Palun sisestage Watsoni
+    teenuse URL või tippige tagasi minemiseks 0.
+  wwcBookDone: Raamat tõlgitud edukalt.
+  wwctsOnSender: Logi tõlkimine lubatud. Paremklõpsake märk tõlkida!
+  watsonColorCodeWarning: Värvikoodide kasutamine võib anda teile ettearvamatuid tulemusi.
+  wwctGUITranslationButton: Alusta tõlkimist
+  wwctGUIAutoDetectButton: Lähtekeele automaatne tuvastamine
+  wwcUpdaterUpToDate: WorldwideChat on ajakohane!
+  wwcConfigConversationAmazonTranslateRegionInput: Praegune piirkond on {0}. Palun
+    sisestage Amazonase piirkond või tippige 0, et minna tagasi.
+  wwcNoConsole: Seda käsku saab käivitada ainult mängija.
+  wwcInitializationFail: WorldwideChat'i lähtestamine nurjus.
+  wwcrSuccess: Edukalt laaditud WorldwideChat.
+  wwcPlayerNotFound: Mängija {0} ei leidnud.
+  wwcUpdaterOutOfDateChat: WorldwideChat on aegunud. Palun uuendage uusimale versioonile.
+  wwcConfigConversationRateLimitSuccess: Määra piirmäär on edukalt seatud.
+  wwcConfigConversationWatsonURLSuccess: Watsoni URL seatud edukalt.
+  wwctbPlayerNotFound: Mängija {0} kas ei leitud, või ei ole aktiivne tõlkija.
+  wwcConfigConversationTranslationCacheSuccess: Tõlge vahemälu piirang seatud edukalt
+  wwctInvalidArgs: Kehtetu argumendid esitatud!
+  wwcConfigGUIPrefixButton: Muuda plugina eesliide
+  wwctSameLangError: Sa ei saa tõlkida samasse keelde!
+  wwctGUINewTranslationTarget: Vali sihtkeel
+  wwcConfigConnectionSuccess: Edukalt ühendatud {0}!
+  wwcConfigGUIGoogleTranslateButton: Google Tõlgi
+  wwcConfigGUIPreviousPageButton: Eelmine lehekülg
+  wwcConfigGUITranslatorCacheButton: Muuda tõlke vahemälu piirang
+  wwcConfigConversationbStatsSuccess: Edukalt lülitatud bStats.
+  wwcSignDone: Logi tõlgitud edukalt.
+  wwcConfigInvalidPrefixSettings: Eesliite lugemine nurjus. Vaikimisi kasutades...
+  wwcConfigRateLimitInvalid: Bad määr piirmäära seatud config.yml. Defaulting kuni
+    0 sekundit...
+  wwcSignTranslateStart: Sihtmärgi tõlkimine...
+  wwcConfigGUIChatSettings: vestluse konfiguratsioon
+  wwcConfigGUIWatsonURLButton: Muuda Watsoni teenuse URL-i
+  wwcConfigConversationUpdateCheckerSuccess: Värskenduse kontrollija viivitus seatud
+    edukalt.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Globaalne vestlus on tõlgitud
+    {0} kuni {1}.
+  wwcConfigGUITranslatorSettings: Tõlkija seadistus
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Praegune API võti on {0}. Palun
+    sisestage Google Translate API võti või tippige 0, et minna tagasi.
+  wwcConfigConversationRateLimitInput: Praegune globaalne piirmäär tõlke kohta on
+    {0} sekundit. Tippige uue väärtuse määramiseks midagi suuremat kui 0 või tippige
+    piirangu keelamiseks 0. Tippige midagi vähem kui 0 tagasi minna.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API võti edukalt.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Muuda Amazon salavõti
+  wwcVersion: WorldwideChat, versioon
+  wwcsAttemptedTranslations: 'Üritanud tõlked: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon salajane võti seatud
+    edukalt.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API võti edukalt.
+  wwcRateLimit: Teie tõlked on piiratud. Palun oodake teise {0} sekundit.
+  wwcConfigCacheEnabled: Tõlkija vahemälu lubatud ja seatud piir {0}.
+  wwctGUIExistingTranslationButton: Praeguse tõlke seansi üle
+  wwcUserDataReloaded: Laadisid kõik salvestatud kasutaja andmed.
+  wwcConfigGUISendTranslationChatButton: Saada vestluse meeldetuletus aktiivsele tõlkijale
+    sisselogimisel
+  wwcsLastTranslationTime: 'Viimane (Edukas) Tõlkeaeg: {0}'
+  wwctbNotATranslator: Sa ei ole aktiivne tõlkija! Veenduge, et olete seadnud selle
+    /wwct.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Praegune juurdepääsuvõti on
+    {0}. Palun sisestage Amazoni jaoks juurdepääsuvõti või tippige 0, et minna tagasi.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon juurdepääsu võti seatud
+    edukalt.
+  wwcConfigBadUpdateDelay: Kehtetu ajakohastaja viivitus seatud config.yml. Defaulting
+    kuni 86400 sekundit...
+  wwctrlRateLimitOffSender: Lülitab oma määrapiirangu välja.
+  wwctrlRateLimitAlreadyOffTarget: Määrapiir {0} on juba keelatud.
+  wwctrlPlayerNotFound: Mängija {0} kas ei leitud, või ei ole aktiivne tõlkija.
+  wwctrlRateLimitSetSender: Määrake oma määra piirmäärangu {0} sekundiks.
+  wwctrlRateLimitOffTarget: Lülitatud {0} määra piirmäära välja lülitatud.
+  wwctrlNotATranslator: Sa ei ole aktiivne tõlkija! Veenduge, et olete seadnud selle
+    /wwct.
+  wwctrlRateLimitAlreadyOffSender: Hinnapiirang on juba keelatud.
+  wwctGUIRateButton: Määra piirmäär
+  wwctGUIConversationRateLimit: Hinnapiirang tõlke kohta on praeguse {0} sekundit.
+    Tippige uue väärtuse määramiseks midagi suuremat kui 0 või tippige piirangu keelamiseks
+    0. Tippige midagi vähem kui 0 tagasi minna.
+  wwctGUITargetPlayerNull: Sihtmängija lahti serverist.
+  wwcConfigConversationSyncUserDataDelayInput: Praegune viivitus kasutaja andmete
+    sünkroonimise kohta on {0} sekundit. Tippige midagi suuremat kui 10 uue väärtuse
+    määramiseks või midagi vähem kui 10, et minna tagasi.
+  wwcConfigGUISyncUserDataButton: Kasutaja andmete sünkroonimise viivituse
+  wwcConfigSyncDelayEnabled: Viivitus kasutaja andmete sünkroonimise kohta määratud
+    {0} sekundit.
+  wwcConfigConversationSyncUserDataDelaySuccess: Kasutaja andmete sünkroonimise viivitus
+    seatud edukalt
+  wwcConfigSyncDelayInvalid: Kehtetu kasutaja andmete sünkroonimise viivitus seatud
+    config.yml. Defaulting kuni 7200 sekundit...
+  wwcConfigCacheInvalid: Tõlkija vahemälu suurus kehtetu. Defaulting kuni 10...
+  wwcInventoryErrorPlayer: Teie GUI-ga tuvastatud tõrge. Konsoolile on saadetud logi.
+  wwcInventoryError: Kasutaja GUI-ga tuvastatud tõrge. Palun teatage sellest probleemist
+    arendajale.
+  wwctiOffTarget: Üksuse tõlge keelatud {0}.
+  wwctiOffSender: Üksuse tõlkimine keelatud.
+  wwcItemTranslateTitleStock: Vaikeüksuste nimesid ei saa tõlkida.
+  wwctGUIItemButton: Lülita üksuse tõlge
+  wwcItemTranslateTitleDone: Tõlgitud objekti pealkiri edukalt.
+  wwcGUITempItem: Üksuse ekraan
+  wwcItemTranslateStart: Sihtpunkti tõlkimine...
+  wwcBookTranslateTitleSuccess: 'Tõlkinud raamatu pealkiri: {0}'
+  wwctiOnSender: Objekti tõlkimine lubatud. Paremklõpsake oma põhikäes oleval üksusel,
+    et seda tõlkida!
+  wwcItemTranslateLoreStart: Sihtpunkti pärimuse tõlkimine...
+  wwcItemTranslateLoreDone: Tõlgitud kirje pärimuse edukalt.
+  wwctiOnTarget: Objekti tõlkimine lubatud {0}.
+  wwcInvalidTranslator: Kehtetu tõlkija sätted. Palun parandage see oma config.yml
+    või /wwcc kasutada seda pluginat.
+  wwcConfigGUIEachTranslatorSettings: '{0} konfiguratsioon'
+  wwcConfigGUIWatsonButton: Watson
+  wwcServerReloadWarning: WorldwideChat ei nõustu /ümberlaadimise kasutamisega. Palun
+    jätkake ettevaatusega.
+  wwcConfigEnabledDebugMode: Lubatud silumisrežiim. Kui te pole arendaja või tõrkeotsija,
+    peaksite selle välja lülitama.
+  wwcTranslatorErrorThresholdReached: Saavutatud tõrkeläve. See plugin on nüüd uuesti
+    laadida ja keelata kõik tõlkijad.
+  wwcConfigErrorLimitEnabled: Tõlkija veapiirang seatud {0}.
+  wwcTranslatorError: Probleem ilmnes, kui püüate oma tõlke. Proovige uuesti.
+  wwcConfigErrorLimitInvalid: Kehtetu tõlkija tõrkepiirang seatud config.yml. Defaulting
+    kuni 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Palun kontrollige errorLog.txt WorldwideChat
+    plugin kaustas rohkem teavet.
+  wwctInvalidInputLangCode: 'Kehtetu sisestuskeele kood ette! Kehtivad lang koodid:
+    {0}'
+  wwctInvalidOutputLangCode: 'Kehtetu väljundi keele kood! Kehtivad lang koodid: {0}'
+  wwctGUISourceTranslationSelected: Olete valinud selle keele.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Kustuta alistamine
+  wwcConfigConversationOverrideTextChange: Palun tippige uus sõnum selle alistamise
+    või tippige 0, et minna tagasi. Pidage meeles, et kaasata kõik muutujad alates
+    protsendimärkidest, mida näete algses sõnumis.
+  wwctGUISourceOrTargetTranslationAlreadyActive: See keel on juba aktiivne!
+  wwcConfigGUIMessagesOverrideChatButton: Alistada vaikeplugina sõnumid
+  wwcConfigGUIChatMessagesPossibleOverrides: Sõnumi valimine
+  wwcConfigGUIChatMessagesModifyOverride: Muuda olemasolevat alistamise
+  wwcConfigConversationOverrideDeletionSuccess: Kohandatud sõnumi alistamine on kustutatud.
+  wwcConfigGUIChatMessagesOverrideSettings: Vaikimisi sõnumite alistamine
+  wwcConfigGUIChatMessagesDeadOverride: See alistamine on kehtetu või algne sõnum
+    on eemaldatud. Peaksite selle kustutama.
+  wwcConfigGUIMessagesAlreadyOverriden: Teil on juba selle sõnumi alistamine!
+  wwcConfigGUIChatMessagesOverrideNewButton: Uue alistamise lisamine
+  wwcConfigGUIMessagesOverrideCustomLabel: Uus sõnum
+  wwcConfigConversationOverrideTextChangeSuccess: Uus sõnum on edukalt seatud.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Muuda olemasolevat teksti
+  wwcExampleMessage: See on näiv sõnum, ja see on mõeldud alistada näitena.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Algne sõnum
+  wwcConfigGUIDebugModeButton: Lülita silumisrežiim
+  wwcConfigConversationDebugModeSuccess: Edukalt lülitatud silumisrežiim.
+  wwcConfigGUIErrorLimitButton: Muuda tõlkija tõrke piirang
+  wwcConfigConversationErrorLimitSuccess: Tõrkepiirang on seatud edukalt.
+  wwcEntityTranslateStart: Sihtelundi tõlkimine...
+  wwcConfigGUICharacterLimitButton: Sõnumi märgipiiri muutmine
+  wwcConfigMessageCharLimitInvalid: Kehtetu limiit sõnumi seatud config.yml. Defaulting
+    kuni 255 tähemärkide...
+  wwcConfigConversationCharacterLimitSuccess: Märkide piirang seatud edukalt.
+  wwcteOnTarget: Olemi tõlge lubatud {0}.
+  wwcEntityTranslateDone: 'Tõlgitud olemi nimi: {0}'
+  wwcEntityTranslateNoName: Olemil pole kohandatud nime.
+  wwcConfigConversationErrorLimitInput: Iga tõlkija praegune tõrkepiirang on {0}.
+    Uue väärtuse määramiseks tippige midagi suuremat kui 0, või tippige midagi, mis
+    on väiksem või võrdne 0, et minna tagasi.
+  wwcConfigGUIGlobalRateLimitButton: Muuda globaalse määra limiiti
+  wwcteOnSender: Olemi tõlkimine on lubatud. Paremklõpsake üksusel oma nime tõlkimiseks!
+  wwcConfigGUIResponseLimitButton: Muuda tõlkija reageerimise ajalõpp
+  wwcConfigMessageCharLimitEnabled: Märkide piirang sõnumi kohta määratud {0} tähemärki.
+  wwcteOffTarget: Olemi tõlge keelatud {0}.
+  wwcCharLimit: Teie sõnum on liiga pikk! Palun veenduge, et teie sõnum oleks väiksem
+    kui {0} tähemärki pikkuses.
+  wwcConfigConversationCharacterLimitInput: Praegune märgisepiirang sõnumi kohta on
+    {0} tähemärki. Uue väärtuse määramiseks tippige midagi suuremat kui 0 või tippige
+    midagi, mis on väiksem või võrdne 0, et minna tagasi.
+  wwcteOffSender: Olemi tõlkimine keelatud.
+  wwctGUIEntityButton: Lülita olemi tõlge
+  wwctrlRateLimitBadInt: Hinnapiirang ei ole kehtiv täisarv.
+  wwcTranslatorErrorConsole: Probleem ilmnes, kui kasutaja {0} üritas oma tõlkimist.
+    Palun kontrollige errorLog.txt rohkem üksikasju.
+  wwctGUIChatButton: Lülita vestlus tõlge
+  wwcrBegin: WorldwideChat uuesti laadimine...
+  wwctTranslationStoppedOtherPlayer: Tõlkesessioon {0} on peatatud.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globaalne vestlus on tõlgitud,
+    kuid sul on aktiivne tõlkesessioon alates {0} kuni {1}.
+  wwctCannotTranslateConsole: Konsooli tõlkeseanssi ei saa käivitada!
+  wwcOnJoinTranslationNotificationSourceLang: Teil on aktiivne tõlkeseanss alates
+    {0} kuni {1}.
+  wwctTranslationStopped: Teie tõlkeseanss on lõpetatud.
+  wwctAutoTranslateStart: Uue tõlkeseansi alustamine kuni {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Teil on aktiivne tõlkeseanss kuni
+    {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globaalne vestlus on
+    tõlgitud, kuid teil on aktiivne tõlkesessioon kuni {0}.
+  wwcConfigGUIChangesNotSaved: Teie muudatused ei jõustu enne, kui klõpsate punasel
+    tõkkel /wwcc.
+  wwctciOffSender: Sissetuleva vestluse tõlge keelatud.
+  wwctGUIChatIncomingButton: Lülita sissetuleva vestluse tõlge
+  wwctcoOffSender: Väljamineva vestluse tõlge keelatud.
+  wwctcoOnSender: Väljamineva vestluse tõlge lubatud. Midagi, mida te ütlete, tõlgitakse!
+  wwctciOnSender: Sissetuleva vestluse tõlge lubatud. Kõik, mida saate, tõlgitakse!
+  wwctGUIChatMenu: Lülita vestluse tõlkimise menüü
+  wwctcoOnTarget: Väljamineva vestluse tõlge lubatud {0}.
+  wwctcoOffTarget: Väljamineva vestluse tõlge keelatud {0}.
+  wwctGUIChatOutgoingButton: Lülita väljamineva vestluse tõlge
+  wwctciOnTarget: Sissetuleva vestluse tõlge lubatud {0}.
+  wwctciOffTarget: Sissetuleva vestluse tõlge keelatud {0}.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Tõlkele lisatud algne sissetulev
+    vestlus hõljuva tekstina lülitati edukalt.
+  wwcConfigGUISendIncomingHoverTextChatButton: Algsete sissetulevate sõnumite lisamine
+    kursori tekstina
+  wwctGUIExistingChatOutgoingEnabled: 'Väljamineva vestluse tõlge lubatud: {0}'
+  wwctGUIExistingTranslationInput: 'Sisestuskeel: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Sissetuleva vestluse tõlge lubatud: {0}'
+  wwctGUIExistingTranslationOutput: 'Väljundkeel: {0}'
+  wwcTranslatorAttempt: Üritades ühendada tõlkija config.yml... (Katse {0}/ {1})
+  wwcTimeoutExceptionConsole: Mängija {0} oli nende viimane taotluse ajalõpp. See
+    viga ei ole surmav, kuid WorldwideChat tuleks uuesti laadida, kui see jätkub.
+  wwcGUIPageNumber: 'Lehekülje number: {0}'
+  wwcConfigYAMLFallback: Langevad tagasi YAML-i...
+  wwcConfigGUIToggleSQLButton: Lülita SQL
+  wwcConfigConversationToggleSQLSuccess: SQL lülitati edukalt. Laadige muudatuse jõustumiseks
+    uuesti.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Edukalt lülitatud Google Translate.
+    Laadige muudatuse jõustumiseks uuesti.
+  wwcConfigYAMLDefault: Andmete salvestamiseks on vaikimisi YAML.
+  wwcConfigGUISQLMenuButton: SQL-i sätete muutmine
+  wwcConfigConversationWatsonTranslateToggleSuccess: Edukalt lülitatud Watson tõlkida.
+    Laadige muudatuse jõustumiseks uuesti.
+  wwcConfigGUIToggleGoogleTranslateButton: Lülita Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Lülita Watson tõlkimine
+  wwcConfigGUIToggleAmazonTranslateButton: Lülita Amazon tõlkimine
+  wwcConfigGUIStorageSettings: Salvestusruumi se
+  wwcConfigConversationAmazonTranslateToggleSuccess: Edukalt lülitatud Amazon tõlkida.
+    Laadige muudatuse jõustumiseks uuesti.
+  wwcConfigGUISQLPortButton: Muuda SQL-porti
+  wwcConfigGUISQLOptionalArgsButton: SQL-i valikuliste argumentide
+  wwcConfigConversationToggleSQLSSLSuccess: SQL-i SSL lülitati edukalt.
+  wwcConfigConversationSQLPortInput: Praegune port on {0}. Uue pordi määramiseks tippige
+    midagi muud kui 0 või tippige tagasi minemiseks 0.
+  wwcConfigGUISQLPasswordButton: Muuda SQL-i parooli
+  wwcConfigConversationSQLHostnameSuccess: SQL-i hostinime edukalt muutnud.
+  wwcConfigConversationSQLHostnameInput: Praegune hostinimi on {0}. Uue hostinime
+    määramiseks tippige midagi muud kui 0 või tippige tagasi minemiseks 0.
+  wwcConfigGUISQLHostnameButton: Muuda SQL-i hostinime
+  wwcConfigConversationSQLOptionalArgsSuccess: Muudetud edukalt valikuline SQL argumendid.
+  wwcConfigConversationSQLPasswordSuccess: SQL-i parooli edukalt muudetud.
+  wwcConfigConversationSQLPasswordInput: Praegune parool on {0}. Uue parooli määramiseks
+    tippige midagi muud kui 0 või tippige tagasi minemiseks 0.
+  wwcConfigGUIToggleSQLSSLButton: Lülita SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: SQL-i kasutajanime edukalt muutnud.
+  wwcConfigConversationSQLUsernameInput: Praegune kasutajanimi on {0}. Uue kasutajanime
+    määramiseks tippige midagi muud kui 0, või tippige tagasi minemiseks 0.
+  wwcConfigConversationSQLPortSuccess: SQL-i porti edukalt muudetud.
+  wwcConfigGUISQLUsernameButton: Muuda SQL-i kasutajanime
+  wwcConfigConversationSQLOptionalArgsCleared: Valikulised argumendid kustutatakse
+    edukalt.
+  wwcConfigConversationSQLOptionalArgsInput: 'Praegused valikulised SQL-argumendid
+    on: {0}. Tippige komaga eraldatud argumendid (võti = väärtus, klahv2 = väärtus2)
+    või tippige tühjendage praegused argid või tippige tagasi minemiseks 0.'
+  wwcConfigConversationSQLDatabaseNameInput: Praegune andmebaasi nimi on {0}. Uue
+    andmebaasi nime määramiseks tippige midagi muud kui 0 või tippige tagasi minemiseks
+    0.
+  wwcConfigGUISQLDatabaseNameButton: Muuda SQL-andmebaasi
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL-i andmebaasi nime edukalt muutnud.
+  wwcConfigConversationFatalAsyncAbort: Praegune ajalõpp kõigi asünkroonitoimingute
+    katkestamiseks on {0} sekundit. Tippige midagi eespool 7, et määrata uus ajalõpp,
+    või midagi selle alla minna tagasi.
+  wwcConfigConversationFatalAsyncSuccess: Async ülesande ajalõpu seatud edukalt.
+  wwcConfigGUIFatalAsyncAbortButton: Asynci ülesande ajalõpu muutmine
+  libreHttp400: Bad taotluse saadetakse Libre Tõlgi! Kui te teete midagi, mida sa
+    ei peaks, sa ei tohiks seda saada. Palun võtke ühendust arendajaga!
+  wwcConfigGUILibreTranslateApiKeyButton: Muuda tasuta tõlkida API võti
+  libreHttp403: Kadunud Libre Tõlgi API Key, või teil on keelatud server!
+  wwcConfigConversationLibreURLSuccess: Libre URL seatud edukalt.
+  wwcConfigConversationLibreTranslateApiKeyInput: Praegune API võti on {0}. Sisestage
+    Libre jaoks API võti või tüüp 0, et minna tagasi.
+  wwcConfigGUILibreTranslateButton: Libre Tõlkimine
+  libreHttp429: Serveri määrapiirangu tõttu pole usaldust.
+  wwcConfigGUIToggleLibreTranslateButton: Lülita Libre Tõlgi
+  wwcConfigConversationLibreTranslateToggleSuccess: Edukalt lülitatud Libre Tõlgi.
+    Muudatuste jõustumiseks laadige uuesti.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API võti seatud edukalt.
+  wwcConfigConversationLibreURLInput: Praegune URL on {0}. Sisestage Libre URL või
+    tippige 0, et minna tagasi.
+  libreHttpUnknown: 'Tundmatu http viga: {0}'
+  wwcConfigGUILibreTranslateURLButton: Muuda Libre Tõlgi URL
+  wwcConfigConnectionFail: Ühenduse loomine {0} nurjus.
+  wwcConfigConversationMongoDatabaseNameSuccess: Edukalt muutnud MongoDB andmebaasi
+    nime.
+  wwcConfigGUIMongoHostnameButton: Muuda MongoDB hostinime
+  wwcConfigConversationMongoPasswordInput: Praegune parool on {0}. Tippige uue parooli
+    määramiseks midagi muud kui 0 või tippige 0, et minna tagasi.
+  wwcConfigConversationMongoPortInput: Praegune port on {0}. Tippige midagi muud kui
+    0, et määrata uus port, või tippige 0 tagasi minna.
+  wwcConfigConversationToggleMongoSuccess: MongoDB lülitus edukalt. Muutuse jõustumiseks
+    laadige uuesti.
+  wwcConfigConversationMongoHostnameInput: Praegune hostinimi on {0}. Tippige midagi
+    muud kui 0 uue hostinime määramiseks või tippige 0, et minna tagasi.
+  wwcConfigConversationMongoHostnameSuccess: Edukalt muutnud MongoDB hostname.
+  wwcConfigGUIMongoMenuButton: MongoDB sätete muutmine
+  wwcConfigGUIToggleMongoButton: Lülita MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Praeguse andmebaasi nimi on {0}. Tippige
+    midagi muud kui 0, et määrata uus andmebaasi nimi, või tippige 0 tagasi minna.
+  wwcConfigConversationMongoOptionalArgsInput: 'Praegused valikulised MongoDB argumendid
+    on: {0}. Tippige komaga eraldatud argumendid (võti = väärtus, key2=value2) või
+    tippige praeguste argide pühkimiseks selge või tippige 0, et minna tagasi.'
+  wwcConfigGUIMongoDatabaseNameButton: Muuda MongoDB andmebaasi
+  wwcConfigConversationMongoUsernameInput: Praegune kasutajanimi on {0}. Tippige midagi
+    muud kui 0, et määrata uus kasutajanimi, või kirjuta 0 tagasi minna.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB valikuliste argumentide muutmine
+  wwcConfigConversationMongoUsernameSuccess: Edukalt muutunud MongoDB kasutajanimi.
+  wwcConfigConversationMongoPasswordSuccess: Edukalt muudetud MongoDB parooli.
+  wwcConfigConversationMongoPortSuccess: Edukalt muutunud MongoDB port.
+  wwcConfigGUIMongoUsernameButton: Muuda MongoDB kasutajanime
+  wwcConfigGUIMongoPasswordButton: Muuda MongoDB parooli
+  wwcConfigConversationMongoOptionalArgsSuccess: Edukalt muutunud valikuline MongoDB
+    argumendid.
+  wwcConfigConversationMongoOptionalArgsCleared: Valikulised argumendid kustutatakse
+    edukalt.
+  wwcConfigGUIMongoPortButton: Muuda MongoDB porti
+  wwcConfigInvalidFatalAsyncTimeout: Kehtetu surmaga lõppenud asünc ajalõpu komplekt.
+    Defaulting kuni 10 sekundit...
+  libreHttp500: Valitud sisend- ja väljundkeele paari ei toetata. Palun vali teine
+    keelekomplekt!
+  wwcConfigGUIDeepLTranslateButton: Lülita DeepL tõlkimine
+  wwcConfigConversationDeepLTranslateToggleSuccess: Edukalt lülitatud DeepL Tõlgi.
+    Muudatuste jõustumiseks laadige uuesti.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Muuda DeepL Tõlgi API võti
+  wwcConfigGUIToggleDeepLTranslateButton: Lülita DeepL tõlkimine
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API võti seatud edukalt.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Praegune API võti on {0}. Sisestage
+    DeepL-i jaoks API võti või tüüp 0, et minna tagasi.
+  wwcConfigErrorsToIgnoreSuccess: Edukalt registreeritud tõlkija vigu ignoreerida.
+  wwcConfigErrorsToIgnoreInvalid: Sobimatu tõlkija tõrked ignoreerida seatud config.yml.
+    Vaikesätete registreerimine...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: Edukalt muutnud tõlkija vigu ignoreerida
+    fraase.
+  wwcConfigGUIIgnoreErrorsButton: Muuda eiratavaid tõrkeid
+  wwcConfigConversationIgnoreErrorsInput: 'Praegune tõlkija tõrgete fraaside loend
+    on: {0}. Tippige komaga eraldatud argumendid (võti = väärtus, key2=value2) või
+    tippige praeguste argide pühkimiseks tühjendage või tippige 0, et minna tagasi.
+    Lisaks kirjutades „*” põhjustab plugin ei kontrolli tõlkija vigu.'
+  wwcConfigConversationIgnoreErrorsCleared: Tõlkija vead ignoreerida fraase kustutatud
+    edukalt.
+  wwcSupportedServer: WorldwideChat lähtestamine {0}...
+  wwcSupportedVersion: Funktsioonide lubamine versiooni {0}...
+  wwcBadPerms: 'Teil pole selle käsu täitmiseks vajalikke õigusi: {0}'
+  wwcsIsActiveTranslator: 'Kas aktiivne tõlkija: {0}'
+  wwcsActiveTransPrevRate: 'Eelmise määra piirangu aeg: {0}'
+  wwcsActiveTransSaved: 'Salvestatud kettale: {0}'
+  wwcsActiveTransIncoming: 'Sissetuleva vestluse tõlkimine: {0}'
+  wwcsActiveTransOutLang: 'Väljundkeel: {0}'
+  wwcsActiveTransInLang: 'Sisendkeel: {0}'
+  wwcsActiveTransBook: 'Raamatu tõlkimine: {0}'
+  wwcsActiveTransSign: 'Tõlkimärk: {0}'
+  wwcsActiveTransUUID: 'UUDUS: {0}'
+  wwcsActiveTransRateLimit: 'Hinnapiir: {0}'
+  wwcsActiveTransColorWarning: 'Vastuvõetud värvihoiatus: {0}'
+  wwcsActiveTransSignWarning: 'Vastuvõetud märgi redigeerimise hoiatus: {0}'
+  wwcsTitle: Kirje {0}
+  wwcsActiveTransOutgoing: 'Väljava vestluse tõlkimine: {0}'
+  wwcsActiveTransItem: 'Tõlkimine: {0}'
+  wwcsActiveTransEntity: 'Tõlkiv üksus: {0}'
+  wwctsWarning: Märkide muutmine on märkide tõlkimise ajal keelatud.
+  wwcConfigConversationAzureTranslateToggleSuccess: Azure Translate on edukalt lülitatud.
+    Muudatuste jõustumiseks laadige uuesti.
+  wwcConfigGUIAzureTranslateButton: Azure tõlge
+  wwcConfigGUIAzureTranslateApiKeyButton: Azure'i tõlke API võtme muutmine
+  wwcConfigGUIAzureTranslateRegionButton: Azure'i tõlkepiirkonna muutmine
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure'i piirkond on edukalt seatud.
+  wwcConfigConversationAzureTranslateApiKeyInput: Praegune API võti on {0}. Sisestage
+    Azure'i API-võti või tippige tagasi minemiseks 0.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure'i API võti seadistatud edukalt.
+  wwcConfigConversationAzureTranslateRegionInput: Praegune piirkond on {0}. Sisestage
+    Azure'i piirkond või tippige tagasi minemiseks 0.
+  wwcConfigGUIToggleAzureTranslateButton: Lülitage Azure'i tõlge
+  wwcConfigGUISystranTranslateApiKeyButton: Muuda Systrani tõlke API võtit
+  wwcConfigGUIToggleSystranTranslateButton: Lülitage Systran tõlge
+  wwcConfigConversationSystranTranslateApiKeyInput: Praegune API võti on {0}. Sisestage
+    Systrani API-võti või tippige tagasi minemiseks 0.
+  wwcISOJSONFail: Keeleobjekte ei saa ISO JSON-ga parandada.
+  wwcConfigConversationSystranTranslateToggleSuccess: Edukalt lülitatud Systrani tõlge.
+    Muudatuste jõustumiseks laadige uuesti.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Systran API võtmed on edukalt
+    komplekteeritud.
+  wwcConfigGUISystranTranslateButton: Systran Tõlgi
+  wwcrTransFail: Laadisid WorldwideChati uuesti, kuid tõlkijat ei õnnestunud lubada.
+  wwcdCacheCleared: Tõlke vahemälu tühjendati.
+  wwcdInvalidCmd: Kehtetu argumendid!
+  systranHttpUnknown: 'Tundmatu http viga: {0}'
+  systranHttp400: Halvad parameetrid saadeti Systranile. Võib olla halb keelepaar?
+  systranHttp500: Sisemine serveri viga Systrani lõpppunktist ({0}).
+  wwcInvalidStorageSession: '{0} on teie konfiguratsioonis lubatud, kuid ühendust
+    pole loodud. Proovige selle parandamiseks uuesti laadida, kuid võtke ühendust
+    arendajaga, kui olete varem saanud eduka ühenduse teate saidilt {0}.'
+  wwcNewSqlConvertFinish: Lõpetas oma SQL-tabelite teisendamine. WorldwideChati uuesti
+    laadimine...
+  wwcNewSqlStruct: Teie SQL-andmebaas kasutab uut struktuuri ja seda pole vaja teisendada.
+  wwcNewSqlConvertBegin: SQL-tabelite teisendamine...
+  wwcOldSqlStructLongIntro: Vabandame siiralt ebamugavuste pärast, kuid WorldwideChati
+    eelmine versioon initsialiseeris teie SQL-tabelid ebatõhusa struktuuriga. Kuigi
+    see töötab meie pistikprogrammiga jätkuvalt, suuremate mängijate rekorditega võib
+    see põhjustada märkimisväärset aeglustumist.
+  wwcOldSqlStructTrans: 'Teie SQL-andmebaasis on WorldwideChati eelmisest versioonist
+    ebatõhus aktiivse tõlkimistabeli seadistus. Selle probleemi lahendamiseks võite
+    käivitada järgmise käsu: /wwcd convert'
+  wwcOldSqlStructLongTodo: 'Võite: loobuda MySQL-is konsooliks trükitud tabelid, teisendada
+    need ise ja vaadata githubi repo-s uut struktuuri või käivitada käsk konversiooni
+    reaalajas proovimiseks. Enne selle käivitamist veenduge, et OLETE OMA ANDMEBAASIST
+    VARUKOOPIA TEINUD. Kui teil on, on käsk: {0}'
+  wwcNewSqlConvertFail: Teisendamine ebaõnnestus... palun taastage oma tabelid tehtud
+    varukoopiast. WorldwideChati keelamine...
+  wwcOldSqlStructRecords: 'Teie SQL-andmebaasis on WorldwideChati eelmisest versioonist
+    ebatõhus mängijate kirjetabeli seadistus. Selle probleemi lahendamiseks võite
+    käivitada järgmise käsu: /wwcd convert'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Muudeti edukalt PostgreSQL-i andmebaasi
+    nime.
+  wwcConfigConversationPostgresOptionalArgsCleared: Valikulised argumendid kustutati
+    edukalt.
+  wwcConfigConversationPostgresPortInput: Praegune port on {0}. Uue pordi määramiseks
+    tippige midagi muud kui 0 või tagasi minemiseks tippige 0.
+  wwcConfigGUIPostgresUsernameButton: Muuda PostgreSQL-i kasutajanime
+  wwcConfigConversationPostgresOptionalArgsSuccess: Muudeti edukalt valikulisi PostgreSQL-i
+    argumente.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL-i SSL lülitati edukalt.
+  wwcConfigConversationPostgresPasswordSuccess: Muudeti edukalt PostgreSQL-i parooli.
+  wwcConfigConversationPostgresPortSuccess: Muudeti edukalt PostgreSQL-porti.
+  wwcConfigConversationPostgresUsernameInput: Praegune kasutajanimi on {0}. Uue kasutajanime
+    määramiseks sisestage midagi muud kui 0 või tippige tagasi minemiseks 0.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL lülitati edukalt. Muudatuse
+    jõustumiseks laadige uuesti.
+  wwcConfigGUITogglePostgresButton: Lülitage PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Muutke PostgreSQL-i parooli
+  wwcConfigGUIPostgresOptionalArgsButton: Muuda PostgreSQL-i valikulisi argumente
+  wwcConfigGUIPostgresMenuButton: PostgreSQL-i seadete muutmine
+  wwcConfigConversationPostgresPasswordInput: Praegune parool on {0}. Uue parooli
+    määramiseks sisestage midagi muud kui 0 või tagasi minemiseks tippige 0.
+  wwcConfigConversationPostgresHostnameInput: Praegune hostinimi on {0}. Uue hostinime
+    määramiseks tippige midagi muud kui 0 või tagasi minemiseks tippige 0.
+  wwcConfigGUIPostgresPortButton: Muuda PostgreSQL-porti
+  wwcConfigConversationPostgresHostnameSuccess: Muudeti edukalt PostgreSQL-i hostinime.
+  wwcConfigGUIPostgresHostnameButton: Muuda PostgreSQL-i hostinime
+  wwcConfigConversationPostgresDatabaseNameInput: Praegune andmebaasi nimi on {0}.
+    Uue andmebaasi nime määramiseks tippige midagi muud kui 0 või tagasi minemiseks
+    tippige 0.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Praegused valikulised PostgreSQL-i
+    argumendid on: {0}. Tippige komaga eraldatud argumendid (key = value, key2 = väärtus2)
+    või tippige praeguse argi kustutamiseks tühjendage või tippige tagasi minemiseks
+    0.'
+  wwcConfigGUITogglePostgresSSLButton: Lülitage PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Muuda PostgreSQL-i andmebaasi
+  wwcConfigConversationPostgresUsernameSuccess: Muudeti edukalt PostgreSQL-i kasutajanime.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfiguratsioon'
+  wwcConfigConversationPrefixInput: Praegune eesliide on {0}. Sisestage uus, või tippige
+    tagasi minemiseks 0.
+  wwcConfigConversationLangInput: 'Praegune pistikprogrammi keel on {0}. Sisestage
+    kehtiv keelekood, või tippige tühistamiseks 0. Kehtivad keelekoodid: {1}'
+  wwcdCacheSize: Vahemälu suurus on praegu {0}, piirmääraga {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Uue tõlkesessiooni alustamine alates {0} kuni {1}.
+  wwctAutoTranslateStartOtherPlayer: '{0} kuni {1} uue tõlkesessiooni alustamine.'
+  wwctLangToLangStartOtherPlayer: '{0} uue tõlkesessiooni alustamine vahemikus {1}
+    kuni {2}.'
+  wwcgLangToLangStart: Nüüd tõlkige ülemaailmset vestlust {0} -st {1}.
+  wwctrlRateLimitSetTarget: Määrake kiiruse piirmäär {0} -ni {1} sekundit.
+  wwcTimeoutException: Teie taotlus lõppes. Palun proovige uuesti.
+  wwctbNoMoreOldBooks: Raamatutõlge ei tööta teie serveri versioonis. Kui kasutate
+    Minecrafti uuemat versiooni ja saate selle vea, võtke ühendust arendajaga.
+

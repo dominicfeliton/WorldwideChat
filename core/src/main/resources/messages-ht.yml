@@ -1,0 +1,547 @@
+Messages:
+  wwcgAutoTranslateStart: Koulye a, tradui chat mondyal nan {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Global chat se ke yo te tradui
+    nan {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Chanje Amazon Aksè kle
+  wwcrFail: Echwe pou pou Reload WorldwideChat.
+  wwcConfigGUIUpdateCheckerButton: Chanje Tcheke pou Updates Reta
+  wwcUpdaterFailedGeneric: Kapab tcheke pou dènye WorldwideChat.
+  wwcConfigConversationUpdateCheckerInput: Reta aktyèl la sou korektè a aktyalizasyon
+    se % mwen segonn. Tape anyen ki pi konsekan pase 10 yo mete yon nouvo valè, oswa
+    anyen mwens pase 10 ale tounen.
+  wwctGUIMainMenuGlobal: Meni tradiksyon mondyal
+  wwcConfigConversationPluginUpdateChatSuccess: Plugin aktyalizasyon chat rapèl baskile
+    avèk siksè.
+  wwctbOnTarget: Tradiksyon liv pèmèt pou % mwen.
+  wwcsNotATranslator: Pa gen okenn dosye ankò disponib pou % mwen.
+  wwcConfigGUIbStatsButton: BStat baskil
+  wwctGUINewTranslationSource: Chwazi yon lang Sous
+  wwcConfigConnectionFailed: Echwe pou pou konekte nan {0}. asire w ke kalifikasyon
+    ou ak firewall yo configuré kòrèkteman!
+  wwcConfigEnabledbStats: Pèmèt BStat.
+  wwctGUIMainMenuPlayer: Meni tradiksyon nan % mwen
+  wwctGUIBookButton: Baskile Tradiksyon Liv
+  wwcLangDetected: Detekte lang {0}.
+  wwcBookTranslateStart: Tradwi liv sib...
+  wwcConfigDisabledbStats: BStat ki andikape.
+  wwctsOffSender: Siyen tradiksyon andikape.
+  wwcUpdaterParserFailed: Echwe pou pou analizan done aktyalizasyon ki sòti nan Github.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Kle a sekrè aktyèl se % mwen
+    % Tanpri opinyon yon kle sekrè pou Amazon, oswa kalite 0 ale tounen.
+  wwctbOffSender: Tradiksyon liv andikape.
+  wwcConfigGUIAmazonTranslateButton: Amazon Translate
+  wwcConfigConversationLangSuccess: Plugin lang chanje avèk siksè.
+  wwcsSuccessfulTranslations: 'Tradiksyon siksè: % mwen'
+  wwcConfigConversationTranslationCacheInput: Limit la kachèt tradiksyon aktyèl se
+    % mwen fraz. Tape anyen ki pi gran pase 0 yo mete yon nouvo valè, oswa kalite
+    0 a enfim kachèt la tradiksyon. Tape anyen mwens pase 0 ale tounen.
+  wwctbOffTarget: Tradiksyon liv andikape pou % mwen.
+  wwcConfigGUIGeneralSettings: Jeneral konfigirasyon
+  wwcInvalidLang: Envalid lang nan config.yml ou. Défauting pou en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazon rejyon mete avèk siksè.
+  wwcConfigRateLimitEnabled: Limit pousantaj Global pèmèt, li mete nan % mwen segonn.
+  wwcConfigGUILangButton: Chanje Plugin lang
+  wwctGUISignButton: Baskile Siyen Tradiksyon
+  wwcUpdaterOutOfDate: WorldwideChat se soti nan dat. Tanpri mete ajou vèsyon an dènye,
+    % mwen.
+  wwcConfigGUINextPageButton: Pwochen paj
+  wwcConfigInvalidTranslatorSettings: Anviwònman tradiktè envalid! Tanpri pèmèt yon
+    sèl tradiktè nan config.yml ou.
+  wwcConfigGUIQuitButton: Sòti & Save Chanjman
+  wwctPlayerNotFound: Jwè mwen pa jwenn.
+  wwcConfigGUIAmazonTranslateRegionButton: Chanje Amazon Rejyon
+  wwcConfigConversationLangInvalid: Envalid kòd lang!
+  wwcConfigGUIWatsonAPIKeyButton: Chanje Watson API kle
+  wwcEnabled: Pèmèt WorldwideChat vèsyon % mwen.
+  wwctbOnSender: Tradiksyon liv pèmèt. Dwa-klike sou pandan y ap kenbe yon liv tradui
+    li!
+  wwcListenersInitialized: Koute inisyalizèd.
+  wwcConfigGUIPluginUpdateChatButton: Voye Rapèl Chat pou Updates Plugin
+  wwcConfigConversationSendTranslationChatSuccess: Aktif tradiktè chat rapèl baskile
+    avèk siksè.
+  wwctsOffTarget: Siyen tradiksyon andikape pou % mwen.
+  wwcUpdaterConnectionFailed: Kapab tcheke pou dènye dènye nouvèl sou Github.
+  watsonNotFoundExceptionNotification: Kapab tradui opinyon ou nenpòt ki pi lwen.
+  wwcConfigConversationWatsonAPIKeyInput: Kle API aktyèl la se % mwen % Tanpri D 'yon
+    kle API pou Watson, oswa kalite 0 ale tounen.
+  wwctGUIStopButton: One Stop tradui
+  wwcgTranslationStopped: Tradiksyon chat Global te sispann.
+  wwcUpdaterFutureDate: Egzanp sa a nan WorldwideChat gen yon vèsyon pi gwo pase yon
+    sèl piblik la dènye.
+  wwcConfigConversationPrefixSuccess: Prefiks chanje avèk siksè.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Chanje Google Translate API kle
+  wwcSignDeletedOrTooLong: 'Siy sib te swa efase oswa tradiksyon an te twò lontan.
+    Tradiksyon:'
+  wwctsOnTarget: Siyen tradiksyon pèmèt pou % mwen.
+  wwcConfigCacheDisabled: Kachèt tradiktè enfim.
+  wwcConfigConversationWatsonURLInput: URL aktyèl la se % mwen % Tanpri opinyon yon
+    URL sèvis pou Watson, oswa kalite 0 ale tounen.
+  wwcBookDone: Liv tradui avèk siksè.
+  wwctsOnSender: Siyen tradiksyon pèmèt. Dwa-klike sou yon siy tradui li!
+  watsonColorCodeWarning: Lè l sèvi avèk kòd koulè ka ba ou rezilta enprevizib.
+  wwctGUITranslationButton: Kòmanse tradui
+  wwctGUIAutoDetectButton: Auto-detekte Sous Lang
+  wwcUpdaterUpToDate: WorldwideChat se jiska dat!
+  wwcConfigConversationAmazonTranslateRegionInput: Rejyon aktyèl la se % mwen % Tanpri
+    opinyon yon yon rejyon pou Amazon, oswa kalite 0 ale tounen.
+  wwcNoConsole: Ka lòd sa a sèlman dwe kouri pa yon jwè.
+  wwcInitializationFail: Echwe pou pou inisyalize WorldwideChat.
+  wwcrSuccess: Siksè rechargé WorldwideChat.
+  wwcPlayerNotFound: Jwè mwen pa jwenn.
+  wwcUpdaterOutOfDateChat: WorldwideChat se soti nan dat. Tanpri mete ajou vèsyon
+    an dènye.
+  wwcConfigConversationRateLimitSuccess: Limit pousantaj mete avèk siksè.
+  wwcConfigConversationWatsonURLSuccess: Watson URL mete avèk siksè.
+  wwctbPlayerNotFound: Jwè mwen swa pa jwenn, oswa se pa yon tradiktè aktif.
+  wwcConfigConversationTranslationCacheSuccess: Tradiksyon limit kachèt mete avèk
+    siksè.
+  wwctInvalidArgs: Agiman valab bay!
+  wwcConfigGUIPrefixButton: Chanje Plugin Prefiks
+  wwctSameLangError: Ou pa ka tradui nan menm lang lan!
+  wwctGUINewTranslationTarget: Chwazi yon lang sib
+  wwcConfigConnectionSuccess: Siksè konekte nan {0}!
+  wwcConfigGUIGoogleTranslateButton: Google Translate
+  wwcConfigGUIPreviousPageButton: anvan paj
+  wwcConfigGUITranslatorCacheButton: Chanje Tradiksyon Cache Limite
+  wwcConfigConversationbStatsSuccess: Avèk siksè baskile BStat.
+  wwcSignDone: Siyen tradui avèk siksè.
+  wwcConfigInvalidPrefixSettings: Echwe pou pou li prefiks ou. Sèvi ak default la...
+  wwcConfigRateLimitInvalid: Move limit pousantaj mete nan config.yml. Défauting pou
+    segonn 0...
+  wwcSignTranslateStart: Tradwi siy sib...
+  wwcConfigGUIChatSettings: Chat konfigirasyon
+  wwcConfigGUIWatsonURLButton: Chanje Watson Sèvis URL
+  wwcConfigConversationUpdateCheckerSuccess: Mete ajou reta korektè mete avèk siksè.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Global chat se ke yo te tradui
+    soti nan % mwen nan {0}.
+  wwcConfigGUITranslatorSettings: Konfigirasyon tradiktè
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Kle API aktyèl la se % mwen % Tanpri
+    D 'yon kle API pou Google Translate, oswa kalite 0 ale tounen.
+  wwcConfigConversationRateLimitInput: Limit aktyèl pousantaj mondyal la pou chak
+    tradiksyon se % mwen segonn. Tape anyen ki pi konsekan pase 0 yo mete yon nouvo
+    valè, oswa kalite 0 a enfim limit la. Tape anyen mwens pase 0 ale tounen.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API kle mete
+    avèk siksè.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Chanje Amazon sekrè kle
+  wwcVersion: WorldwideChat, vèsyon
+  wwcsAttemptedTranslations: 'Tradiksyon eseye: % mwen'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon sekrè kle mete avèk
+    siksè.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API kle mete avèk siksè.
+  wwcRateLimit: Tradiksyon ou yo pousantaj limite. Tanpri rete tann yon lòt % mwen
+    segonn.
+  wwcConfigCacheEnabled: Cachèt tradiktè pèmèt, li mete nan yon limit nan % mwen.
+  wwctGUIExistingTranslationButton: Replase sesyon tradiksyon aktyèl la
+  wwcUserDataReloaded: Chaje tout done itilizatè sove.
+  wwcConfigGUISendTranslationChatButton: Voye Chat Rapèl tradiktè aktif sou Login
+  wwcsLastTranslationTime: 'Dènye (Siksè) Tan Tradiksyon: % mwen'
+  wwctbNotATranslator: Ou pa yon tradiktè aktif! Asire ou ke ou te mete sa a ak/wwct.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Kle aksè aktyèl la se % mwen
+    % Tanpri opinyon yon kle aksè pou Amazon, oswa kalite 0 ale tounen.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon aksè kle mete avèk
+    siksè.
+  wwcConfigBadUpdateDelay: Envalid reta updater mete nan config.yml. Dépar 86400 segonn...
+  wwctrlRateLimitOffSender: Etenn limit pousantaj ou.
+  wwctrlRateLimitAlreadyOffTarget: Limit pousantaj nan % mwen deja andikape.
+  wwctrlPlayerNotFound: Jwè mwen swa pa jwenn, oswa se pa yon tradiktè aktif.
+  wwctrlRateLimitSetSender: Mete limit pousantaj ou a % mwen segonn.
+  wwctrlRateLimitOffTarget: Etenn limit la pousantaj nan % mwen.
+  wwctrlNotATranslator: Ou pa yon tradiktè aktif! Asire ou ke ou te mete sa a ak/wwct.
+  wwctrlRateLimitAlreadyOffSender: Limit pousantaj ou deja enfim.
+  wwctGUIRateButton: Mete Limite pousantaj
+  wwctGUIConversationRateLimit: Limit pousantaj la pou chak tradiksyon se aktyèl %
+    mwen segonn. Tape anyen ki pi konsekan pase 0 yo mete yon nouvo valè, oswa kalite
+    0 a enfim limit la. Tape anyen mwens pase 0 ale tounen.
+  wwctGUITargetPlayerNull: Jwè a sib dekonekte soti nan sèvè a.
+  wwcConfigConversationSyncUserDataDelayInput: Reta aktyèl la pou chak senk nan done
+    itilizatè se % mwen segonn. Tape anyen ki pi konsekan pase 10 yo mete yon nouvo
+    valè, oswa anyen mwens pase 10 ale tounen.
+  wwcConfigGUISyncUserDataButton: Chanje itilizatè Done senkro Reta
+  wwcConfigSyncDelayEnabled: Reta pou chak itilizatè done senk mete nan % mwen segonn.
+  wwcConfigConversationSyncUserDataDelaySuccess: Itilizatè done senk reta mete avèk
+    siksè.
+  wwcConfigSyncDelayInvalid: Envalid itilizatè done senk reta mete nan config.yml.
+    Défauting 7200 segonn...
+  wwcConfigCacheInvalid: Tradiktè kachèt gwosè valab. Défauting pou 10...
+  wwcInventoryErrorPlayer: Erè detekte ak entèfas ou. Yon boutèy demi lit te voye
+    bay konsole a.
+  wwcInventoryError: Erè detekte ak entèfas nan itilizatè % mwen % Tanpri rapòte pwoblèm
+    sa a nan pwomotè
+  wwctiOffTarget: Tradiksyon atik andikape pou % mwen.
+  wwctiOffSender: Tradiksyon atik andikape.
+  wwcItemTranslateTitleStock: Kapab tradui non atik default.
+  wwctGUIItemButton: Tradiksyon atik activer
+  wwcItemTranslateTitleDone: Tradwi atik tit avèk siksè.
+  wwcGUITempItem: atik ekspozisyon
+  wwcItemTranslateStart: Tradwi atik sib...
+  wwcBookTranslateTitleSuccess: 'Tradwi Tit Liv: {0}'
+  wwctiOnSender: Tradiksyon atik pèmèt. Dwa-klike sou ak yon atik nan men prensipal
+    ou a tradui li!
+  wwcItemTranslateLoreStart: Tradwi lore nan atik sib...
+  wwcItemTranslateLoreDone: Tradui atik fè lò avèk siksè.
+  wwctiOnTarget: Tradiksyon atik pèmèt pou % mwen.
+  wwcInvalidTranslator: Anviwònman tradiktè envalid. Tanpri ranje sa a nan config.yml
+    ou oswa ak/wwcc yo sèvi ak sa a Plugin.
+  wwcConfigGUIEachTranslatorSettings: '% mwen konfigirasyon'
+  wwcConfigGUIWatsonButton: Watson
+  wwcServerReloadWarning: WorldwideChat pa fèmen l 'a nan/Reload. Tanpri kontinye
+    avèk prekosyon.
+  wwcConfigEnabledDebugMode: Pèmèt mòd dbug. Si ou pa yon pwomotè oswa depanaj, ou
+    ta dwe fèmen sa a la.
+  wwcTranslatorErrorThresholdReached: Erè papòt rive jwenn. Plugin sa a pral kounye
+    a Reload, ak enfim tout tradiktè.
+  wwcConfigErrorLimitEnabled: Limit erè tradiktè mete nan % mwen.
+  wwcTranslatorError: Yon pwoblèm ki te fèt pandan y ap eseye tradiksyon ou. Tanpri
+    eseye ankò.
+  wwcConfigErrorLimitInvalid: Envalid tradiktè erè limit mete nan config.yml. Défauting
+    pou 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Tanpri tcheke errorLog.txt nan folder
+    nan Plugin WorldwideChat pou plis enfòmasyon.
+  wwctInvalidInputLangCode: 'Envalid kòd lang opinyon bay! kòd lang valab: {0}'
+  wwctInvalidOutputLangCode: 'Envalid kòd lang pwodiksyon bay! kòd lang valab: {0}'
+  wwctGUISourceTranslationSelected: Ou te chwazi lang sa a.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Efase pase sou desizyon
+  wwcConfigConversationOverrideTextChange: Tanpri tape yon nouvo mesaj pou sa a pase
+    sou desizyon, oswa tape 0 ale tounen. Sonje genyen ladan yo nenpòt varyab kòmanse
+    ak siy pousantaj ou wè nan mesaj orijinal la.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Lang sa a deja aktif!
+  wwcConfigGUIMessagesOverrideChatButton: Pase sou desizyon Default Plugin mesaj
+  wwcConfigGUIChatMessagesPossibleOverrides: Chwazi yon mesaj
+  wwcConfigGUIChatMessagesModifyOverride: Modifye pase desizyon ki egziste
+  wwcConfigConversationOverrideDeletionSuccess: Te Custom pase sou desizyon mesaj
+    te efase.
+  wwcConfigGUIChatMessagesOverrideSettings: Pase sou desizyon mesaj Default
+  wwcConfigGUIChatMessagesDeadOverride: Sa a pase sou desizyon se swa valab, oswa
+    mesaj orijinal la te retire. Ou ta dwe efase sa a.
+  wwcConfigGUIMessagesAlreadyOverriden: Ou deja gen yon pase sou desizyon pou mesaj
+    sa a!
+  wwcConfigGUIChatMessagesOverrideNewButton: Ajoute yon nouvo pase sou desizyon
+  wwcConfigGUIMessagesOverrideCustomLabel: Nouvo mesaj
+  wwcConfigConversationOverrideTextChangeSuccess: Nouvo mesaj mete avèk siksè.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Chanje Tèks ki egziste
+  wwcExampleMessage: Sa a se yon mesaj egare, epi li vle di ke yo dwe overriden kòm
+    yon egzanp.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Mesaj orijinal
+  wwcConfigGUIDebugModeButton: Baskile Debug Mode
+  wwcConfigConversationDebugModeSuccess: Avèk siksè baskile mòd dbug.
+  wwcConfigGUIErrorLimitButton: Chanje tradiktè Erè Limite
+  wwcConfigConversationErrorLimitSuccess: Limit erè mete avèk siksè.
+  wwcEntityTranslateStart: Tradwi antite sib...
+  wwcConfigGUICharacterLimitButton: Chanje mesaj Limite karaktè
+  wwcConfigMessageCharLimitInvalid: Envalid limit pou chak mesaj mete nan config.yml.
+    Défauting 255 charaktèr...
+  wwcConfigConversationCharacterLimitSuccess: Limit karaktè mete avèk siksè.
+  wwcteOnTarget: Tradiksyon antite pèmèt pou % mwen.
+  wwcEntityTranslateDone: 'Tradwi Non Antite: % mwen'
+  wwcEntityTranslateNoName: Antite pa gen yon non koutim.
+  wwcConfigConversationErrorLimitInput: Limit la erè aktyèl pou chak tradiktè se %
+    mwen % Kalite anyen pi gran pase 0 yo mete yon nouvo valè, oswa tape anyen mwens
+    pase oswa egal a 0 ale tounen.
+  wwcConfigGUIGlobalRateLimitButton: Chanje limit pousantaj mondyal
+  wwcteOnSender: Tradiksyon antite pèmèt. Dwa-klike sou yon antite tradui non li!
+  wwcConfigGUIResponseLimitButton: Chanje tradiktè repons poz
+  wwcConfigMessageCharLimitEnabled: Limit karaktè pou chak mesaj mete nan % mwen karaktè.
+  wwcteOffTarget: Tradiksyon antite andikape pou % mwen.
+  wwcCharLimit: Mesaj ou a twò lontan! Tanpri asire w ke mesaj ou a se mwens pase
+    % mwen karaktè nan longè.
+  wwcConfigConversationCharacterLimitInput: Limit karaktè aktyèl la pou chak mesaj
+    se % mwen karaktè. Tape anyen ki pi konsekan pase 0 yo mete yon nouvo valè, oswa
+    tape anyen mwens pase oswa egal a 0 ale tounen.
+  wwcteOffSender: Tradiksyon antite enfim.
+  wwctGUIEntityButton: Tradiksyon antite baskil
+  wwctrlRateLimitBadInt: Limit pousantaj ou a se pa yon nonb antye relatif ki valab.
+  wwcTranslatorErrorConsole: Yon pwoblèm ki te fèt pandan y ap itilizatè % mwen te
+    eseye tradiksyon yo. Tanpri tcheke errorLog.txt pou plis detay.
+  wwctGUIChatButton: Tradiksyon chat baskil
+  wwcrBegin: Reloading WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Tradiksyon sesyon pou % mwen te sispann.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat se ke yo te
+    tradui, men ou gen yon sesyon tradiksyon aktif soti nan % mwen nan {0}.
+  wwctCannotTranslateConsole: Ou pa ka kòmanse yon sesyon tradiksyon pou konsole!
+  wwcOnJoinTranslationNotificationSourceLang: Ou gen yon sesyon tradiksyon aktif soti
+    nan % mwen nan {0}.
+  wwctTranslationStopped: Te sesyon tradiksyon ou te sispann.
+  wwctAutoTranslateStart: Kòmanse yon sesyon tradiksyon nouvo nan {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Ou gen yon sesyon tradiksyon aktif
+    nan {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat ke yo te
+    tradui, men ou gen yon sesyon tradiksyon aktif nan {0}.
+  wwcConfigGUIChangesNotSaved: Chanjman ou yo pa pral pran efè jiskaske ou klike sou
+    baryè wouj la nan/wwcc.
+  wwctciOffSender: Fèk ap rantre tradiksyon chat enfim.
+  wwctGUIChatIncomingButton: Baskile fèk ap rantre Chat tradiksyon
+  wwctcoOffSender: Sortan chat tradiksyon enfim.
+  wwctcoOnSender: Sortan chat tradiksyon pèmèt. Nenpòt bagay ou di yo pral tradui!
+  wwctciOnSender: Fèk ap rantre tradiksyon chat pèmèt. Nenpòt bagay ou resevwa yo
+    pral tradui!
+  wwctGUIChatMenu: Baskile Chat Tradiksyon Menu
+  wwctcoOnTarget: Sortan chat tradiksyon pèmèt pou % mwen.
+  wwctcoOffTarget: Sortan chat tradiksyon enfim pou % mwen.
+  wwctGUIChatOutgoingButton: Baskile sortan Chat Tradiksyon
+  wwctciOnTarget: Fèk ap rantre tradiksyon chat pèmèt pou % mwen.
+  wwctciOffTarget: Fèk ap rantre tradiksyon chat andikape pou % mwen.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Original chat fèk ap rantre
+    tache ak tradiksyon kòm hover tèks baskile avèk siksè.
+  wwcConfigGUISendIncomingHoverTextChatButton: Ajoute orijinal mesaj fèk ap rantre
+    kòm Hover Tèks
+  wwctGUIExistingChatOutgoingEnabled: 'Sortan Chat Tradiksyon pèmèt: % mwen'
+  wwctGUIExistingTranslationInput: 'Antre Lang: % mwen'
+  wwctGUIExistingChatIncomingEnabled: 'Fèk ap rantre Tradiksyon Chat pèmèt: % mwen'
+  wwctGUIExistingTranslationOutput: 'Sòti Lang: % mwen'
+  wwcTranslatorAttempt: Eseye pou konekte avèk tradiktè nan config.yml... (Tantativ
+    mwen/ {0})
+  wwcTimeoutExceptionConsole: Jwe Mwen te gen poz demann ki pi resan yo. Erè sa a
+    se pa fatal, men WorldwideChat yo ta dwe rechargé si li kontinye ap rive.
+  wwcGUIPageNumber: 'Nimewo Paj: {0}'
+  wwcConfigYAMLFallback: Tonbe tounen nan YAML...
+  wwcConfigGUIToggleSQLButton: SQL baskil
+  wwcConfigConversationToggleSQLSuccess: SQL baskile avèk siksè. Reload pou chanjman
+    an yo pran efè.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Avèk siksè baskile Google Translate.
+    Reload pou chanjman an yo pran efè.
+  wwcConfigYAMLDefault: Default YAML pou depo done.
+  wwcConfigGUISQLMenuButton: Chanje SQL Anviwònman
+  wwcConfigConversationWatsonTranslateToggleSuccess: Avèk siksè baskule Watson Translate.
+    Reload pou chanjman an yo pran efè.
+  wwcConfigGUIToggleGoogleTranslateButton: Baskile Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Baskile Watson tradui
+  wwcConfigGUIToggleAmazonTranslateButton: Amazon tradui baskil
+  wwcConfigGUIStorageSettings: Depo konte genyen
+  wwcConfigConversationAmazonTranslateToggleSuccess: Avèk siksè baskile Amazon Translate.
+    Reload pou chanjman an yo pran efè.
+  wwcConfigGUISQLPortButton: Chanje SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Chanje SQL Si ou vle agiman
+  wwcConfigConversationToggleSQLSSLSuccess: SSL pou SQL baskile avèk siksè.
+  wwcConfigConversationSQLPortInput: Pò a kounye a se % mwen. tape anyen lòt pase
+    0 yo mete yon pò nouvo, oswa kalite 0 ale tounen.
+  wwcConfigGUISQLPasswordButton: Chanje SQL Modpas
+  wwcConfigConversationSQLHostnameSuccess: Avèk siksè chanje hostname a SQL.
+  wwcConfigConversationSQLHostnameInput: Hostname aktyèl la se % mwen. tape anyen
+    lòt pase 0 yo mete yon hostname nouvo, oswa kalite 0 ale tounen.
+  wwcConfigGUISQLHostnameButton: Chanje SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Avèk siksè chanje agiman yo SQL si
+    ou vle.
+  wwcConfigConversationSQLPasswordSuccess: Avèk siksè chanje modpas la SQL.
+  wwcConfigConversationSQLPasswordInput: Modpas ki la kounye a se % mwen. tape anyen
+    lòt pase 0 yo mete yon nouvo modpas, oswa kalite 0 ale tounen.
+  wwcConfigGUIToggleSQLSSLButton: Baskile SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Avèk siksè chanje non itilizatè a SQL.
+  wwcConfigConversationSQLUsernameInput: Non itilizatè aktyèl la se % mwen. tape anyen
+    lòt pase 0 yo mete yon nouvo non itilizatè, oswa kalite 0 ale tounen.
+  wwcConfigConversationSQLPortSuccess: Avèk siksè chanje pò a SQL.
+  wwcConfigGUISQLUsernameButton: Chanje SQL Username
+  wwcConfigConversationSQLOptionalArgsCleared: Si ou vle agiman otorize avèk siksè.
+  wwcConfigConversationSQLOptionalArgsInput: 'Aktyèl si ou vle SQL agiman yo se: %
+    mwen. agiman Kalite separe pa yon vigil (kle = valè, key2 = value2), oswa tape
+    klè li siye args yo kounye a, oswa kalite 0 ale tounen.'
+  wwcConfigConversationSQLDatabaseNameInput: Non baz done aktyèl la se % mwen. tape
+    anyen lòt pase 0 yo mete yon non baz done nouvo, oswa kalite 0 ale tounen.
+  wwcConfigGUISQLDatabaseNameButton: Chanje baz done SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: Avèk siksè chanje non an baz done SQL.
+  wwcConfigConversationFatalAsyncAbort: Timeout aktyèl la pou avòtman tout travay
+    async se % mwen segonn. Tape anyen pi wo a 7 yo mete yon nouvo poz, oswa nenpòt
+    bagay ki anba a li yo ale tounen.
+  wwcConfigConversationFatalAsyncSuccess: Async delè travay mete avèk siksè.
+  wwcConfigGUIFatalAsyncAbortButton: Chanje Async Objektif Travay la Timeout
+  libreHttp400: Move demann voye nan Libre Translate! Sòf si w ap fè yon bagay ke
+    ou pa ta dwe, ou pa ta dwe jwenn sa a. Tanpri kontakte pwomotè a!
+  wwcConfigGUILibreTranslateApiKeyButton: Chanje gratis Translate API kle
+  libreHttp403: Ki manke Libre Translate API kle, oswa w ap entèdi nan sèvè a!
+  wwcConfigConversationLibreURLSuccess: Gratis URL mete avèk siksè.
+  wwcConfigConversationLibreTranslateApiKeyInput: Kle API aktyèl la se % mwen. tanpri
+    D 'yon kle API pou gratis, oswa tape 0 yo ale tounen.
+  wwcConfigGUILibreTranslateButton: Libre Translate
+  libreHttp429: Pa gen konfyans akòz pousantaj limit soti nan sèvè.
+  wwcConfigGUIToggleLibreTranslateButton: Baskile gratis tradwir
+  wwcConfigConversationLibreTranslateToggleSuccess: Avèk siksè baskile Libre Translate.
+    Reload pou chanjman yo pran efè.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API kle mete avèk siksè.
+  wwcConfigConversationLibreURLInput: URL la kounye a se % mwen. tanpri D 'yon URL
+    pou gratis, oswa tape 0 yo ale tounen.
+  libreHttpUnknown: 'Unknown http erè: % mwen'
+  wwcConfigGUILibreTranslateURLButton: Chanje gratis Translate URL
+  wwcConfigConnectionFail: Echwe pou pou konekte pou % mwen.
+  wwcConfigConversationMongoDatabaseNameSuccess: Avèk siksè chanje non an baz done
+    MongoDB.
+  wwcConfigGUIMongoHostnameButton: Chanje MongoDB Hostname
+  wwcConfigConversationMongoPasswordInput: Modpas la kounye a se % mwen. tape anyen
+    lòt pase 0 yo mete yon nouvo modpas, oswa tape 0 yo ale tounen.
+  wwcConfigConversationMongoPortInput: Pò a kounye a se % mwen. tape anyen lòt pase
+    0 yo mete yon pò nouvo, oswa tape 0 yo ale tounen.
+  wwcConfigConversationToggleMongoSuccess: MongoDB baskile avèk siksè. Reload pou
+    chanjman an yo pran efè.
+  wwcConfigConversationMongoHostnameInput: Hostname aktyèl la se % mwen. tape anyen
+    lòt pase 0 yo mete yon nouvo hostname, oswa tape 0 yo ale tounen.
+  wwcConfigConversationMongoHostnameSuccess: Avèk siksè chanje hostname a MongoDB.
+  wwcConfigGUIMongoMenuButton: Chanje MongoDB Anviwònman
+  wwcConfigGUIToggleMongoButton: Baskile MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Non a baz done kounye a se % mwen.
+    tape anyen lòt pase 0 yo mete yon non baz done nouvo, oswa tape 0 yo ale tounen.
+  wwcConfigConversationMongoOptionalArgsInput: 'Aktyèl si ou vle MongoDB agiman yo
+    se: % mwen. agiman Kalite separe pa yon vigil (kle = valè, key2 = value2), oswa
+    tape klè li siye args yo kounye a, oswa tape 0 yo ale tounen.'
+  wwcConfigGUIMongoDatabaseNameButton: Chanje baz done MongoDB
+  wwcConfigConversationMongoUsernameInput: Non itilizatè a kounye a se % mwen. tape
+    anyen lòt pase 0 yo mete yon nouvo non itilizatè, oswa tape 0 yo ale tounen.
+  wwcConfigGUIMongoOptionalArgsButton: Chanje MongoDB Si ou vle agiman
+  wwcConfigConversationMongoUsernameSuccess: Avèk siksè chanje non itilizatè MongoDB
+    la.
+  wwcConfigConversationMongoPasswordSuccess: Avèk siksè chanje modpas la MongoDB.
+  wwcConfigConversationMongoPortSuccess: Avèk siksè chanje pò a MongoDB.
+  wwcConfigGUIMongoUsernameButton: Chanje MongoDB non itilizatè
+  wwcConfigGUIMongoPasswordButton: Chanje MongoDB Modpas
+  wwcConfigConversationMongoOptionalArgsSuccess: Avèk siksè chanje agiman yo si ou
+    vle MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Si ou vle agiman otorize avèk siksè.
+  wwcConfigGUIMongoPortButton: Chanje MongoDB Port
+  wwcConfigInvalidFatalAsyncTimeout: Envalid fatal async poz mete. Defaulting a 10
+    segonn...
+  libreHttp500: D 'chwazi ou ak pè lang pwodiksyon pa sipòte. Tanpri chwazi yon seri
+    lang diferan!
+  wwcConfigGUIDeepLTranslateButton: Translate DeepL baskil
+  wwcConfigConversationDeepLTranslateToggleSuccess: Avèk siksè baskile DeepL Translate.
+    Reload pou chanjman yo pran efè.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Chanje DeepL Translate API kle
+  wwcConfigGUIToggleDeepLTranslateButton: Translate DeepL baskil
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API kle mete avèk siksè.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Kle API aktyèl la se % mwen.Tanpri
+    antre yon kle API pou DeepL, oswa tape 0 pou tounen.
+  wwcConfigErrorsToIgnoreSuccess: Avèk siksè anrejistre erè tradiktè ki inyore.
+  wwcConfigErrorsToIgnoreInvalid: Envalid erè tradiktè ki inyore mete nan config.yml.
+    Enskri défaut...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: Avèk siksè chanje erè yo ki tradiktè inyore
+    fraz.
+  wwcConfigGUIIgnoreErrorsButton: Chanje Erè pou inyore
+  wwcConfigConversationIgnoreErrorsInput: 'Lis aktyèl la nan fraz nan erè tradiktè
+    ki inyore yo se: % mwen. agiman Kalite separe pa yon vigil (kle = valè, key2 =
+    value2), oswa tape klè li siye args yo kounye a, oswa tape 0 yo ale tounen. Anplis
+    de sa, sezisman “*” ap lakòz Plugin a pa tcheke nenpòt ki erè tradiktè.'
+  wwcConfigConversationIgnoreErrorsCleared: Erè tradiktè inyore fraz otorize avèk
+    siksè.
+  wwcSupportedServer: Inisyalize WorldwideChat pou {0}...
+  wwcSupportedVersion: Pèmèt karakteristik pou vèsyon {0}...
+  wwcBadPerms: 'Ou pa gen autorisations yo mande pou egzekite lòd sa a: {0}'
+  wwcsIsActiveTranslator: 'Èske tradiktè aktif: {0}'
+  wwcsActiveTransPrevRate: 'Tan limit pousantaj anvan: {0}'
+  wwcsActiveTransSaved: 'Sove nan Disk: {0}'
+  wwcsActiveTransIncoming: 'Tradui Chat fèk ap rantre: {0}'
+  wwcsActiveTransOutLang: 'Lang pwodiksyon: {0}'
+  wwcsActiveTransInLang: 'Lang Antre: {0}'
+  wwcsActiveTransBook: 'Tradui liv: {0}'
+  wwcsActiveTransSign: 'Siy tradui: {0}'
+  wwcsActiveTransUUID: 'NOUVÈL: {0}'
+  wwcsActiveTransRateLimit: 'Limit pousantaj: {0}'
+  wwcsActiveTransColorWarning: 'Avètisman Koulè Resevwa: {0}'
+  wwcsActiveTransSignWarning: 'Resevwa Siy Edite Avètisman: {0}'
+  wwcsTitle: Dosye nan {0}
+  wwcsActiveTransOutgoing: 'Tradui Sòtan Chat: {0}'
+  wwcsActiveTransItem: 'Tradui atik: {0}'
+  wwcsActiveTransEntity: 'Tradui antite: {0}'
+  wwctsWarning: Modifikasyon siy ki enfim pandan w ap tradui siy.
+  wwcConfigConversationAzureTranslateToggleSuccess: Siksè toggle Azure Translate.
+    Reload pou chanjman yo pran efè.
+  wwcConfigGUIAzureTranslateButton: Azure Tradui
+  wwcConfigGUIAzureTranslateApiKeyButton: Chanje Azure Translate API key
+  wwcConfigGUIAzureTranslateRegionButton: Chanje rejyon Translate Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure rejyon mete avèk siksè.
+  wwcConfigConversationAzureTranslateApiKeyInput: Kle API aktyèl la se {0}. Tanpri
+    opinyon yon kle API pou Azure, oswa tape 0 pou ale tounen.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API kle mete avèk siksè.
+  wwcConfigConversationAzureTranslateRegionInput: Rejyon aktyèl la se {0}. Tanpri
+    opinyon yon rejyon pou Azure, oswa tape 0 pou ale tounen.
+  wwcConfigGUIToggleAzureTranslateButton: Toggle Azure Translate
+  wwcConfigGUISystranTranslateApiKeyButton: Chanje Systran Translate API kle
+  wwcConfigGUIToggleSystranTranslateButton: Toggle Systran Translate
+  wwcConfigConversationSystranTranslateApiKeyInput: Kle API aktyèl la se {0}. Tanpri
+    opinyon yon kle API pou Systran, oswa tape 0 pou ale tounen.
+  wwcISOJSONFail: Pa kapab ranje objè lang ak ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: Siksè toggle Systran Translate.
+    Reload pou chanjman yo pran efè.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Systran API kle mete avèk siksè.
+  wwcConfigGUISystranTranslateButton: Systran Tradui
+  wwcrTransFail: Reloaded WorldwideChat men echwe pou pèmèt yon tradiktè.
+  wwcdCacheCleared: Kachèt tradiksyon an te netwaye.
+  wwcdInvalidCmd: Agiman envalid!
+  systranHttpUnknown: 'Erè http enkoni: {0}'
+  systranHttp400: Move paramèt voye bay Systran. Ta ka yon pè lang move?
+  systranHttp500: Erè sèvè entèn soti nan Systran endpoint ({0}).
+  wwcInvalidStorageSession: Se {0} pèmèt nan config ou, men se yon koneksyon pa etabli.
+    Tanpri eseye rloading ranje sa a, men tanpri kontakte pwomotè a si ou deja te
+    resevwa yon mesaj koneksyon siksè soti nan {0}.
+  wwcNewSqlConvertFinish: Fini konvèti tab SQL ou yo. Reloading WorldwideChat...
+  wwcNewSqlStruct: Se baz done SQL ou ap itilize nouvo estrikti a epi yo pa bezwen
+    yo dwe konvèti.
+  wwcNewSqlConvertBegin: Konvèti tab SQL ou...
+  wwcOldSqlStructLongIntro: Nou sensèman eskize pou deranjman an, men yon vèsyon anvan
+    nan WorldwideChat inisyalize tab SQL ou ak yon estrikti enefikas. Pandan ke sa
+    a ap kontinye fonksyone ak Plugin nou an, li ka rezilta nan ralentisman siyifikatif
+    ak dosye jwè pi gwo.
+  wwcOldSqlStructTrans: 'Baz done SQL ou a gen yon enefikas konfigirasyon tab tradiktè
+    aktif soti nan yon vèsyon anvan nan WorldwideChat. Ou ka kouri lòd sa a pou ranje
+    pwoblèm sa a: /wwcd konvèti'
+  wwcOldSqlStructLongTodo: 'Ou ka: lage tab yo enprime nan konsole nan MySQL, konvèti
+    yo tèt ou epi gade nan estrikti a nouvo nan repo a github, oswa kouri yon lòd
+    tantativ konvèsyon an ap viv. Tanpri asire w ke ou TE FÈ YON BACKUP NAN BAZ DONE
+    OU ANVAN KOURI SA A. Si ou gen, lòd la se: {0}'
+  wwcNewSqlConvertFail: Konvèsyon echwe... tanpri retabli tab ou soti nan backup la
+    ou te fè. Enfimite WorldwideChat...
+  wwcOldSqlStructRecords: 'Baz done SQL ou a gen yon konfigirasyon tab dosye jwè inefikas
+    soti nan yon vèsyon anvan nan WorldwideChat. Ou ka kouri lòd sa a pou ranje pwoblèm
+    sa a: /wwcd konvèti'
+  wwcConfigConversationPostgresDatabaseNameSuccess: Aksè chanje non baz done PostgreSQL
+    la.
+  wwcConfigConversationPostgresOptionalArgsCleared: Agiman si ou vle netwaye avèk
+    siksè.
+  wwcConfigConversationPostgresPortInput: Pò aktyèl la se {0}. Tape nenpòt lòt bagay
+    pase 0 pou mete yon nouvo pò, oswa tape 0 pou tounen.
+  wwcConfigGUIPostgresUsernameButton: Chanje non itilizatè PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Aksè chanje agiman yo PostgreSQL
+    si ou vle.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL pou PostgreSQL toggle avèk siksè.
+  wwcConfigConversationPostgresPasswordSuccess: Aksè chanje modpas PostgreSQL la.
+  wwcConfigConversationPostgresPortSuccess: Aksè chanje pò PostgreSQL a.
+  wwcConfigConversationPostgresUsernameInput: Non itilizatè aktyèl la se {0}. Tape
+    anyen lòt pase 0 pou mete yon nouvo non itilizatè, oswa tape 0 pou tounen.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL toggle avèk siksè. Reload
+    pou chanjman an pran efè.
+  wwcConfigGUITogglePostgresButton: Toggle PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Chanje modpas PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Chanje PostgreSQL agiman opsyonèl
+  wwcConfigGUIPostgresMenuButton: Chanje Anviwònman PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Modpas aktyèl la se {0}. Tape nenpòt
+    lòt bagay pase 0 pou mete yon modpas nouvo, oswa tape 0 pou tounen.
+  wwcConfigConversationPostgresHostnameInput: Hostname aktyèl la se {0}. Tape nenpòt
+    lòt bagay pase 0 yo mete yon nouvo hostname, oswa tape 0 pou tounen.
+  wwcConfigGUIPostgresPortButton: Chanje Pò PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: Aksè chanje postgreSQL hostname la.
+  wwcConfigGUIPostgresHostnameButton: Chanje PostgreSQL Hostname
+  wwcConfigConversationPostgresDatabaseNameInput: Non baz done aktyèl la se {0}. Tape
+    nenpòt lòt bagay pase 0 yo mete yon nouvo non baz done, oswa tape 0 pou tounen.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Agiman aktyèl yo opsyonèl PostgreSQL
+    se: {0}. Kalite agiman separe pa yon vigil (kle = valè, kle 2 = valè2), oswa tape
+    klè siye args aktyèl yo, oswa tape 0 pou tounen.'
+  wwcConfigGUITogglePostgresSSLButton: Aktifye PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Chanje baz done PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: Aksè chanje non itilizatè PostgreSQL
+    la.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfigirasyon'
+  wwcConfigConversationPrefixInput: Prefiks aktyèl la se {0}. Tanpri tape yon nouvo,
+    oswa tape 0 pou tounen.
+  wwcConfigConversationLangInput: 'Lang Plugin aktyèl la se {0}. Tanpri antre nan
+    yon kòd lang ki valab, oswa tape 0 pou anile. Kòd lang valab: {1}'
+  wwcdCacheSize: Gwosè a nan kachèt la se kounye a {0}, ak yon limit nan {1}.
+  wwcdCacheTerm: '{0}. cachedTranslation:InputLang= {1}, outputLang= {2}, anputPhrase=
+    {3} | outputPhrase= {4}'
+  wwctLangToLangStart: Kòmanse yon nouvo sesyon tradiksyon soti nan {0} a {1}.
+  wwctAutoTranslateStartOtherPlayer: Kòmanse yon nouvo sesyon tradiksyon pou {0} a
+    {1}.
+  wwctLangToLangStartOtherPlayer: Kòmanse yon nouvo sesyon tradiksyon pou {0} soti
+    nan {1} nan {2}.
+  wwcgLangToLangStart: Koulye a, tradui chat mondyal soti nan {0} a {1}.
+  wwctrlRateLimitSetTarget: Mete limit pousantaj la nan {0} a {1} segonn.
+  wwcTimeoutException: Demann ou kwantite soti. Tanpri eseye ankò.
+  wwctbNoMoreOldBooks: Tradiksyon liv se pa fonksyonèl sou vèsyon sèvè ou. Si ou se
+    sou yon vèsyon ki pi resan nan Minecraft epi ou jwenn erè sa a, tanpri kontakte
+    pwomotè a.
+

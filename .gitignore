@@ -4,6 +4,7 @@ bin/
 .metadata/
 .classpath
 .project
+.vscode
 .DS_Store
 
 # IDEA Files
@@ -13,6 +14,9 @@ bin/
 # Other Files
 .DS_Store
 target/
+paper-target/
+spigot-target/
 bin/
 *.bak
 yt-settings.yml
+.vscode/settings.json

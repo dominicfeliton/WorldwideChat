@@ -1,0 +1,559 @@
+Messages:
+  wwcgAutoTranslateStart: Sada prevođenje globalnog ćaskanja na {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Globalno ćaskanje se prevodi
+    na {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Promenite Amazon Access Kei
+  wwcrFail: Nije uspelo ponovo učitati WorldwideChat.
+  wwcConfigGUIUpdateCheckerButton: Promena Proverite za ispravke kašnjenja
+  wwcUpdaterFailedGeneric: Nije moguće proveriti WorldwideChat ažuriranja.
+  wwcConfigConversationUpdateCheckerInput: Trenutni kašnjenje na kontroleru ažuriranja
+    je {0} sekundi. Ukucajte nešto veće od 10 da biste postavili novu vrednost, ili
+    nešto manje od 10 da biste se vratili.
+  wwctGUIMainMenuGlobal: Globalni meni za prevođenje
+  wwcConfigConversationPluginUpdateChatSuccess: Plugin update chat podsetnik toggled
+    uspešno.
+  wwctbOnTarget: Prevod knjige omogućen za {0}.
+  wwcsNotATranslator: Još uvek ne postoje zapisi za {0}.
+  wwcConfigGUIbStatsButton: Prebaci bStats
+  wwctGUINewTranslationSource: Izaberite izvorni jezik
+  wwcConfigConnectionFailed: Nije uspjelo povezivanje na {0}. Uverite se da su vaši
+    akreditivi i zaštitni zid ispravno konfigurisani!
+  wwcConfigEnabledbStats: Omogućeno bStats.
+  wwctGUIMainMenuPlayer: Meni za prevod od {0}
+  wwctGUIBookButton: Prebacite prevod knjige
+  wwcLangDetected: Otkriven jezik {0}.
+  wwcBookTranslateStart: Prevođenje ciljne knjige...
+  wwcConfigDisabledbStats: Onemogućeno bStats.
+  wwctsOffSender: Prevod potpisa onemogućen.
+  wwcUpdaterParserFailed: Nije uspjelo analizirati podatke o ažuriranju iz Gituba.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Trenutni tajni ključ je {0}.
+    Unesite tajni ključ za Amazon ili upišite 0 da biste se vratili.
+  wwctbOffSender: Knjiga prevod onemogućen.
+  wwcConfigGUIAmazonTranslateButton: Amazon Prevod
+  wwcConfigConversationLangSuccess: Plugin jezik se uspešno promenio.
+  wwcsSuccessfulTranslations: 'Uspešni prevodi: {0}'
+  wwcConfigConversationTranslationCacheInput: Trenutni limit keša prevoda je {0} fraze.
+    Ukucajte nešto veće od 0 da biste postavili novu vrednost ili upišite 0 da biste
+    onemogućili keš prevoda. Upišite ništa manje od 0 da se vratite.
+  wwctbOffTarget: Prevod knjige onemogućen za {0}.
+  wwcConfigGUIGeneralSettings: Opšta konfiguracija
+  wwcInvalidLang: Nevažeći jezik u konfiguraciju.iml. Defaulting da sr...
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazon region uspešno postavljen.
+  wwcConfigRateLimitEnabled: Ograničenje globalnog stopa omogućeno i postavljeno na
+    {0} sekundi.
+  wwcConfigGUILangButton: Promenite jezik plugina
+  wwctGUISignButton: Prevod na znak
+  wwcUpdaterOutOfDate: VorldVideChat je zastario. Molimo vas da ažurirate na najnoviju
+    verziju, {0}.
+  wwcConfigGUINextPageButton: Sledeća stranica
+  wwcConfigInvalidTranslatorSettings: Nevažeća podešavanja prevodioca! Molimo vas
+    da omogućite samo jedan prevodilac u vašem config.iml.
+  wwcConfigGUIQuitButton: Izlaz & Sačuvaj promene
+  wwctPlayerNotFound: Player {0} pronađen.
+  wwcConfigGUIAmazonTranslateRegionButton: Promenite Amazon Region
+  wwcConfigConversationLangInvalid: Nevažeći kod jezika!
+  wwcConfigGUIWatsonAPIKeyButton: Promenite Vatson API ključ
+  wwcEnabled: Omogućeno WorldwideChat verziju {0}
+  wwctbOnSender: Omogućen je prevod knjige. Kliknite desnim tasterom miša dok držite
+    knjigu da biste je preveli!
+  wwcListenersInitialized: Inicijalizovani slušaoci.
+  wwcConfigGUIPluginUpdateChatButton: Pošalji podsetnik za dodatke za ažuriranja
+  wwcConfigConversationSendTranslationChatSuccess: Aktivni prevodilac chat podsetnik
+    toggled uspešno.
+  wwctsOffTarget: Potpišite prevod onemogućen za {0}.
+  wwcUpdaterConnectionFailed: Nije moguće proveriti najnovije ispravke na Github.
+  watsonNotFoundExceptionNotification: Nije moguće da prevedete svoj ulaz dalje.
+  wwcConfigConversationWatsonAPIKeyInput: Trenutni API taster je {0}. Unesite API
+    ključ za Vatson ili upišite 0 da biste se vratili.
+  wwctGUIStopButton: Stop prevođenje
+  wwcgTranslationStopped: Globalni prevod za ćaskanje je zaustavljen.
+  wwcUpdaterFutureDate: Ova instanca WorldwideChat ima veću verziju od najnovije javne.
+  wwcConfigConversationPrefixSuccess: Prefiks se uspešno promenio.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Promenite Google prevodilac API ključ
+  wwcSignDeletedOrTooLong: 'Ciljni znak je ili izbrisan ili je prevod bio predugačak.
+    Prevod:'
+  wwctsOnTarget: Potpisni prevod omogućen za {0}.
+  wwcConfigCacheDisabled: Prevodilac keš onemogućen.
+  wwcConfigConversationWatsonURLInput: Trenutni URL je {0}. Unesite URL usluge za
+    Vatson ili upišite 0 da biste se vratili.
+  wwcBookDone: Knjiga uspešno prevedena.
+  wwctsOnSender: Potpisni prevod omogućen. Kliknite desnim tasterom miša na znak da
+    ga prevede!
+  watsonColorCodeWarning: Korišćenje kodova boja može vam dati nepredvidive rezultate.
+  wwctGUITranslationButton: Počnite prevođenje
+  wwctGUIAutoDetectButton: Auto-otkrivanje izvornog jezika
+  wwcUpdaterUpToDate: VorldVideChat je ažuriran!
+  wwcConfigConversationAmazonTranslateRegionInput: Trenutni region je {0}. Unesite
+    region za Amazon ili upišite 0 da biste se vratili.
+  wwcNoConsole: Ovu komandu može voditi samo igrač.
+  wwcInitializationFail: Nije uspelo da inicijalizuje WorldwideChat
+  wwcrSuccess: Uspešno reloaded VorldVideChat
+  wwcPlayerNotFound: Player {0} pronađen.
+  wwcUpdaterOutOfDateChat: VorldVideChat je zastario. Molimo vas da ažurirate na najnoviju
+    verziju.
+  wwcConfigConversationRateLimitSuccess: Ograničenje stopa uspešno postavljen.
+  wwcConfigConversationWatsonURLSuccess: Vatson URL set uspešno.
+  wwctbPlayerNotFound: Player {0} ili nije pronađen, ili nije aktivan prevodilac.
+  wwcConfigConversationTranslationCacheSuccess: Prevod keš limit set uspešno.
+  wwctInvalidArgs: Nevažeći argumenti pod uslovom!
+  wwcConfigGUIPrefixButton: Promenite prefiks dodatka
+  wwctSameLangError: Ne možete prevesti na isti jezik!
+  wwctGUINewTranslationTarget: Izaberite ciljni jezik
+  wwcConfigConnectionSuccess: Uspešno povezan na {0}!
+  wwcConfigGUIGoogleTranslateButton: Google Translate
+  wwcConfigGUIPreviousPageButton: Prethodna stranica
+  wwcConfigGUITranslatorCacheButton: Promeni ograničenje prevoda keša
+  wwcConfigConversationbStatsSuccess: Uspešno toggled bStats.
+  wwcSignDone: Prijavite uspešno prevedeno.
+  wwcConfigInvalidPrefixSettings: Nije uspelo da pročita prefiks. Korišćenje podrazumevane...
+  wwcConfigRateLimitInvalid: Loša granica stopa postavljena u config.iml. Defaulting
+    do 0 sekundi...
+  wwcSignTranslateStart: Prevođenje ciljnog znaka...
+  wwcConfigGUIChatSettings: Konfiguracija chat
+  wwcConfigGUIWatsonURLButton: Promenite URL usluge Vatson
+  wwcConfigConversationUpdateCheckerSuccess: Update Checker kašnjenje postavljen uspešno.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Globalno ćaskanje se prevodi iz
+    {0} na {1}.
+  wwcConfigGUITranslatorSettings: Konfiguracija prevoditelja
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Trenutni API ključ je {0}. Unesite
+    API ključ za Google Translate ili upišite 0 da biste se vratili.
+  wwcConfigConversationRateLimitInput: Trenutni globalni limit stopa po prevodu je
+    {0} sekundi. Ukucajte nešto veće od 0 da biste postavili novu vrednost ili upišite
+    0 da biste onemogućili ograničenje. Upišite ništa manje od 0 da se vratite.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API ključ uspešno
+    postavljen.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Promena Amazon Secret Kei
+  wwcVersion: VorldVideChat, verzija
+  wwcsAttemptedTranslations: 'Pokušaj prevoda: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon tajni ključ set uspešno.
+  wwcConfigConversationWatsonAPIKeySuccess: Vatson API ključ set uspešno.
+  wwcRateLimit: Vaši prevodi su ograničeni na stopu. Molimo sačekajte drugo {0} sekundi.
+  wwcConfigCacheEnabled: Prevodilac keš omogućen i podešen na ograničenje {0}.
+  wwctGUIExistingTranslationButton: Prepišite trenutnu sesiju prevođenja
+  wwcUserDataReloaded: Učitao sve sačuvane korisničke podatke.
+  wwcConfigGUISendTranslationChatButton: Pošalji podsetnik za razgovor aktivnom prevodiocu
+    na prijavu
+  wwcsLastTranslationTime: 'Poslednje (uspešno) vreme prevoda: {0}'
+  wwctbNotATranslator: Vie ne ste aktivni prevodilac! Uverite se da ste postavili
+    ovo sa /vvct.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Trenutni pristupni taster je
+    {0}. Unesite pristupni taster za Amazon ili upišite 0 da biste se vratili.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon pristupni ključ postavljen
+    uspešno.
+  wwcConfigBadUpdateDelay: Nevažeći updater kašnjenje postavljen u config.iml. Defaulting
+    do 86400 sekundi...
+  wwctrlRateLimitOffSender: Isključio ograničenje stope.
+  wwctrlRateLimitAlreadyOffTarget: Ograničenje stope od {0} je već onemogućeno.
+  wwctrlPlayerNotFound: Player {0} ili nije pronađen, ili nije aktivan prevodilac.
+  wwctrlRateLimitSetSender: Podesite ograničenje stope na {0} sekundi.
+  wwctrlRateLimitOffTarget: Isključio ograničenje stope od {0}.
+  wwctrlNotATranslator: Vie ne ste aktivni prevodilac! Uverite se da ste postavili
+    ovo sa /vvct.
+  wwctrlRateLimitAlreadyOffSender: Ograničenje vaše stope je već onemogućeno.
+  wwctGUIRateButton: Postavi ograničenje stope
+  wwctGUIConversationRateLimit: Ograničenje stope po prevodu je trenutno {0} sekundi.
+    Ukucajte nešto veće od 0 da biste postavili novu vrednost ili upišite 0 da biste
+    onemogućili ograničenje. Upišite ništa manje od 0 da se vratite.
+  wwctGUITargetPlayerNull: Ciljni igrač isključen sa servera.
+  wwcConfigConversationSyncUserDataDelayInput: Trenutni kašnjenje po sinhronizaciji
+    korisničkih podataka je {0} sekundi. Ukucajte nešto veće od 10 da biste postavili
+    novu vrednost, ili nešto manje od 10 da biste se vratili.
+  wwcConfigGUISyncUserDataButton: Promena kašnjenja sinhronizacije korisničkih podataka
+  wwcConfigSyncDelayEnabled: Kašnjenje po sinhronizaciji korisničkih podataka postavljeno
+    na {0} sekundi.
+  wwcConfigConversationSyncUserDataDelaySuccess: Odlaganje sinhronizacije korisničkih
+    podataka je uspešno postavljen.
+  wwcConfigSyncDelayInvalid: Nevažeće kašnjenje sinhronizacije korisničkih podataka
+    postavljeno u config.iml. Defaulting do 7200 sekundi...
+  wwcConfigCacheInvalid: Prevodilac keš veličina nevažeći. Defaulting do 10...
+  wwcInventoryErrorPlayer: Greška otkrivena sa GUI. Dnevnik je poslat na konzolu.
+  wwcInventoryError: Greška otkrivena sa GUI korisnika {0}. Molimo prijavite ovaj
+    problem programeru.
+  wwctiOffTarget: Prevod stavke onemogućen za {0}.
+  wwctiOffSender: Stavka prevod onemogućen.
+  wwcItemTranslateTitleStock: Nije moguće prevesti podrazumevane imena stavki.
+  wwctGUIItemButton: Prevod stavke Prevod
+  wwcItemTranslateTitleDone: Prevedena stavka naslov uspešno.
+  wwcGUITempItem: Prikaz stavke
+  wwcItemTranslateStart: Prevođenje ciljne stavke...
+  wwcBookTranslateTitleSuccess: 'Prevedeni naslov knjige: {0}'
+  wwctiOnSender: Prevod stavke omogućen. Kliknite desnim tasterom miša sa stavkom
+    u glavnoj ruci da ga prevedete!
+  wwcItemTranslateLoreStart: Prevođenje predavanja ciljne stavke...
+  wwcItemTranslateLoreDone: Prevedena stavka Lore uspešno.
+  wwctiOnTarget: Prevod stavke omogućen za {0}.
+  wwcInvalidTranslator: Nevažeća podešavanja prevodioca. Molimo vas da popravite ovo
+    u konfiguraciju.iml ili sa /vvcc da koristite ovaj dodatak.
+  wwcConfigGUIEachTranslatorSettings: '{0} Konfiguracija'
+  wwcConfigGUIWatsonButton: Votson
+  wwcServerReloadWarning: VorldVideChat ne odobrava korišćenje /reload. Molimo vas
+    da nastavite sa oprezom.
+  wwcConfigEnabledDebugMode: Omogućeno DEBUG režim. Ako niste programer ili rešavanje
+    problema, trebalo bi da isključite ovo.
+  wwcTranslatorErrorThresholdReached: Greška prag dostignut. Ovaj dodatak će se sada
+    ponovo učitati i onemogućiti sve prevodioce.
+  wwcConfigErrorLimitEnabled: Prevodilac greška granica postavljena na {0}.
+  wwcTranslatorError: Problem se pojavio prilikom pokušaja prevoda. Molim vas pokušajte
+    ponovo.
+  wwcConfigErrorLimitInvalid: Nevažeći prevodilac greška granica postavljena u config.iml.
+    Defaulting do 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Molimo vas da proverite errorLog.txt
+    u WorldwideChat plugin folderu za više informacija.
+  wwctInvalidInputLangCode: 'Nevažeći unos jezik kod pod uslovom! Važeći lang kodovi:
+    {0}'
+  wwctInvalidOutputLangCode: 'Nevažeći izlazni jezički kod pod uslovom! Važeći lang
+    kodovi: {0}'
+  wwctGUISourceTranslationSelected: Odabrali ste ovaj jezik.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Obriši premostiti
+  wwcConfigConversationOverrideTextChange: Ukucajte novu poruku za ovu premošćivanje
+    ili upišite 0 da biste se vratili. Ne zaboravite da uključite sve promenljive
+    počevši od procentnih znakova koje vidite u originalnoj poruci.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Ovaj jezik je već aktivan!
+  wwcConfigGUIMessagesOverrideChatButton: Premostiti podrazumevane plugin poruke
+  wwcConfigGUIChatMessagesPossibleOverrides: Izaberite poruku
+  wwcConfigGUIChatMessagesModifyOverride: Izmenite postojeće premošćivanje
+  wwcConfigConversationOverrideDeletionSuccess: Prilagođeno premošćenje poruke je
+    izbrisano.
+  wwcConfigGUIChatMessagesOverrideSettings: Premostiti podrazumevane poruke
+  wwcConfigGUIChatMessagesDeadOverride: Ovo premošćivanje je bilo nevažeće ili je
+    originalna poruka uklonjena. Trebalo bi da izbrišete ovo.
+  wwcConfigGUIMessagesAlreadyOverriden: Već imate premošću za ovu poruku!
+  wwcConfigGUIChatMessagesOverrideNewButton: Dodajte novu premošćivanje
+  wwcConfigGUIMessagesOverrideCustomLabel: Nova poruka
+  wwcConfigConversationOverrideTextChangeSuccess: Nova poruka je uspešno postavljena.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Promenite postojeći tekst
+  wwcExampleMessage: Ovo je lažna poruka, i treba da bude preopterećena kao primer.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Originalna poruka
+  wwcConfigGUIDebugModeButton: Prebaci režim za ispravljanje grešaka
+  wwcConfigConversationDebugModeSuccess: Uspešno isključen režim za debug.
+  wwcConfigGUIErrorLimitButton: Promenite ograničenje greške prevoditelja
+  wwcConfigConversationErrorLimitSuccess: Greška granica postavljena uspešno.
+  wwcEntityTranslateStart: Prevođenje ciljnog entiteta...
+  wwcConfigGUICharacterLimitButton: Promenite ograničenje znaka poruke
+  wwcConfigMessageCharLimitInvalid: Nevažeće ograničenje po poruci postavljenoj u
+    config.iml. Defaulting do 255 znakova...
+  wwcConfigConversationCharacterLimitSuccess: Limit karaktera je uspešno postavljen.
+  wwcteOnTarget: Prevod entiteta omogućen za {0}.
+  wwcEntityTranslateDone: 'Prevedeno ime entiteta: {0}'
+  wwcEntityTranslateNoName: Entitet nema prilagođeno ime.
+  wwcConfigConversationErrorLimitInput: Trenutno ograničenje greške za svakog prevodioca
+    je {0}. Ukucajte bilo što veće od 0 da biste postavili novu vrednost, ili upišite
+    nešto manje od ili jednako 0 da biste se vratili.
+  wwcConfigGUIGlobalRateLimitButton: Promenite ograničenje globalne stope
+  wwcteOnSender: Entitetski prevod omogućen. Desnim tasterom miša kliknite na entitet
+    da prevede svoje ime!
+  wwcConfigGUIResponseLimitButton: Promena Prevodilac Odziv Timeout
+  wwcConfigMessageCharLimitEnabled: Ograničenje karaktera po poruci postavljenim na
+    {0} znakova.
+  wwcteOffTarget: Prevod entiteta onemogućen za {0}.
+  wwcCharLimit: Vaša poruka je preduga! Molimo vas da budete sigurni da je vaša poruka
+    manja od {0} znakova u dužini.
+  wwcConfigConversationCharacterLimitInput: Trenutni ograničenje karaktera po poruci
+    je {0} znakova. Ukucajte bilo što veće od 0 da biste postavili novu vrednost,
+    ili upišite nešto manje od ili jednako 0 da biste se vratili.
+  wwcteOffSender: Entitetski prevod onemogućen.
+  wwctGUIEntityButton: Prebacivanje entitetskog prevoda
+  wwctrlRateLimitBadInt: Vaša stopa ograničenje nije važeći ceo broj.
+  wwcTranslatorErrorConsole: Problem se pojavio dok je korisnik {0} pokušavao njihov
+    prevod. Molimo vas da proverite errorLog.txt za više detalja.
+  wwctGUIChatButton: Prevod na čet
+  wwcrBegin: Preopterećenje VorldVideChat...
+  wwctTranslationStoppedOtherPlayer: Sesija prevođenja za {0} je zaustavljena.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Globalno ćaskanje se prevodi,
+    ali imate aktivnu sesiju prevođenja od {0} do {1}.
+  wwctCannotTranslateConsole: Ne možete da započnete sesiju prevoda za konzolu!
+  wwcOnJoinTranslationNotificationSourceLang: Imate aktivnu sesiju prevoda od {0}
+    do {0}.
+  wwctTranslationStopped: Vaša sesija prevoda je zaustavljena.
+  wwctAutoTranslateStart: Pokretanje nove sesije prevoda na {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Imate aktivnu sesiju prevoda na {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Globalno ćaskanje se
+    prevodi, ali imate aktivnu sesiju prevođenja na {0}.
+  wwcConfigGUIChangesNotSaved: Vaše promene neće stupiti na snagu dok ne kliknete
+    na crvenu barijeru u/vvcc.
+  wwctciOffSender: Dolazni chat prevod onemogućen.
+  wwctGUIChatIncomingButton: Prebaci Dolazni Chat Prevod
+  wwctcoOffSender: Odlazni chat prevod onemogućen.
+  wwctcoOnSender: Odlazni chat prevod omogućen. Sve što kažete biće prevedeno!
+  wwctciOnSender: Dolazni chat prevod omogućen. Sve što primite biće prevedeno!
+  wwctGUIChatMenu: Toggle Chat Prevod Meni
+  wwctcoOnTarget: Odlazni chat prevod omogućen za {0}.
+  wwctcoOffTarget: Odlazni chat prevod onemogućen za {0}.
+  wwctGUIChatOutgoingButton: Prebaci Odlazni Chat Prevod
+  wwctciOnTarget: Dolazni chat prevod omogućen za {0}.
+  wwctciOffTarget: Dolazni chat prevod onemogućen za {0}.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Originalni dolazni chat vezan
+    za prevod kao hover tekst toggled uspešno.
+  wwcConfigGUISendIncomingHoverTextChatButton: Dodajte originalne dolazne poruke kao
+    tekst hover
+  wwctGUIExistingChatOutgoingEnabled: 'Omogućeno prevođenje odlazne chat: {0}'
+  wwctGUIExistingTranslationInput: 'Jezik unosa: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Omogućeno prevođenje dolaznog ćaskanja: {0}'
+  wwctGUIExistingTranslationOutput: 'Izlazni jezik: {0}'
+  wwcTranslatorAttempt: Pokušaj da se poveže sa prevodiocem u config.iml... (Pokušaj
+    {0}/ {1})
+  wwcTimeoutExceptionConsole: Igrač {0} sam svoj najnoviji zahtev timeout. Ova greška
+    nije fatalna, ali širom svetaChat treba ponovo učitati ako se nastavi da se desi.
+  wwcGUIPageNumber: 'Broj stranice: {0}'
+  wwcConfigYAMLFallback: Padajući nazad u IAML...
+  wwcConfigGUIToggleSQLButton: Toggle SKL
+  wwcConfigConversationToggleSQLSuccess: SKL uspešno toggled. Reload za promenu da
+    stupi na snagu.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Uspešno toggled Google Translate.
+    Reload za promenu da stupi na snagu.
+  wwcConfigYAMLDefault: Defaulted IAML za skladištenje podataka.
+  wwcConfigGUISQLMenuButton: Promenite SKL podešavanja
+  wwcConfigConversationWatsonTranslateToggleSuccess: Uspešno toggled Vatson Translate.
+    Reload za promenu da stupi na snagu.
+  wwcConfigGUIToggleGoogleTranslateButton: Prebaci Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Vatson Prevod
+  wwcConfigGUIToggleAmazonTranslateButton: Prebaci Amazon Prevod
+  wwcConfigGUIStorageSettings: Konfiguracija skladištenje
+  wwcConfigConversationAmazonTranslateToggleSuccess: Uspešno toggled Amazon Translate.
+    Reload za promenu da stupi na snagu.
+  wwcConfigGUISQLPortButton: Promenite SKL Port
+  wwcConfigGUISQLOptionalArgsButton: Promenite SKL Opcioni argumenti
+  wwcConfigConversationToggleSQLSSLSuccess: SSL za SKL toggled uspešno.
+  wwcConfigConversationSQLPortInput: Trenutni port je {0}. Upišite bilo šta drugo
+    osim 0 da biste postavili novi port, ili tip 0 da se vratite nazad.
+  wwcConfigGUISQLPasswordButton: Promenite SKL lozinku
+  wwcConfigConversationSQLHostnameSuccess: Uspešno je promenio naziv SKL hosta.
+  wwcConfigConversationSQLHostnameInput: Trenutno ime hosta je {0}. Ukucajte bilo
+    šta drugo osim 0 da biste postavili novo ime hosta ili tip 0 da biste se vratili.
+  wwcConfigGUISQLHostnameButton: Promenite SKL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Uspešno promenio opcione SKL argumente.
+  wwcConfigConversationSQLPasswordSuccess: Uspešno promenio SKL lozinku.
+  wwcConfigConversationSQLPasswordInput: Trenutna lozinka je {0}. Upišite bilo šta
+    drugo osim 0 da biste postavili novu lozinku ili tip 0 da biste se vratili.
+  wwcConfigGUIToggleSQLSSLButton: Toggle SKL SSL
+  wwcConfigConversationSQLUsernameSuccess: Uspešno je promenio SKL korisničko ime.
+  wwcConfigConversationSQLUsernameInput: Trenutno korisničko ime je {0}. Upišite bilo
+    šta drugo osim 0 da biste postavili novo korisničko ime ili tip 0 da biste se
+    vratili.
+  wwcConfigConversationSQLPortSuccess: Uspešno promenio SKL port.
+  wwcConfigGUISQLUsernameButton: Promenite SKL korisničko ime
+  wwcConfigConversationSQLOptionalArgsCleared: Opcioni argumenti uspešno izbrisani.
+  wwcConfigConversationSQLOptionalArgsInput: 'Trenutni opcioni SKL argumenti su: {0}.
+    Argumenti tipa odvojeni zarezom (ključ = vrednost, ključ2=value2), ili tip jasno
+    da obriše trenutne args, ili tip 0 da se vrati nazad.'
+  wwcConfigConversationSQLDatabaseNameInput: Trenutno ime baze podataka je {0}. Upišite
+    bilo šta drugo osim 0 da biste postavili novo ime baze podataka ili tip 0 da biste
+    se vratili.
+  wwcConfigGUISQLDatabaseNameButton: Promenite SKL bazu podataka
+  wwcConfigConversationSQLDatabaseNameSuccess: Uspešno je promenio naziv SKL baze
+    podataka.
+  wwcConfigConversationFatalAsyncAbort: Trenutni timeout za prekid svih asinc zadataka
+    je {0} sekundi. Ukucajte bilo šta iznad 7 da podesite novi timeout, ili bilo šta
+    ispod njega da se vrati.
+  wwcConfigConversationFatalAsyncSuccess: Asinc zadatak timeout set uspešno.
+  wwcConfigGUIFatalAsyncAbortButton: Promenite Asinc Task Timeout
+  libreHttp400: Loš zahtev poslat Libre Translate! Osim ako ne radite nešto što ne
+    biste trebali, ne biste trebali dobiti ovo. Molimo kontaktirajte programera!
+  wwcConfigGUILibreTranslateApiKeyButton: Promena Free Translate API ključ
+  libreHttp403: Nedostaje Libre Translate API ključ, ili ste zabranjeni sa servera!
+  wwcConfigConversationLibreURLSuccess: Free URL uspešno postavljen.
+  wwcConfigConversationLibreTranslateApiKeyInput: Trenutni API ključ je {0}. Molimo
+    unesite API ključ za Libre, ili unesite 0 da biste se vratili.
+  wwcConfigGUILibreTranslateButton: Libre Prevod
+  libreHttp429: Nema poverenja zbog ograničenja stope sa servera.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Uspešno toggled Libre Translate.
+    Ponovo učitajte da promene stupe na snagu.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Besplatno API ključ je uspešno
+    postavljen.
+  wwcConfigConversationLibreURLInput: Trenutni URL je {0}. Molimo unesite URL za Libre,
+    ili unesite 0 da biste se vratili nazad.
+  libreHttpUnknown: 'Nepoznata http greška: {0}'
+  wwcConfigGUILibreTranslateURLButton: Promena Besplatno Prevod URL
+  wwcConfigConnectionFail: Neuspešno povezivanje sa {0}.
+  wwcConfigConversationMongoDatabaseNameSuccess: Uspešno promenio ime MongoDB baze
+    podataka.
+  wwcConfigGUIMongoHostnameButton: Promenite ime hosta MongoDB
+  wwcConfigConversationMongoPasswordInput: Trenutna lozinka je {0}. Upišite bilo šta
+    drugo osim 0 da biste postavili novu lozinku ili upišite 0 da biste se vratili
+    nazad.
+  wwcConfigConversationMongoPortInput: Trenutni port je {0}. Ukucajte bilo šta drugo
+    osim 0 da biste postavili novi port ili otkucajte 0 da biste se vratili nazad.
+  wwcConfigConversationToggleMongoSuccess: MongoDB se uspešno prebacio. Ponovo učitajte
+    da bi promena stupila na snagu.
+  wwcConfigConversationMongoHostnameInput: Trenutno ime hosta je {0}. Ukucajte bilo
+    šta drugo osim 0 da biste postavili novo ime hosta ili otkucajte 0 da biste se
+    vratili nazad.
+  wwcConfigConversationMongoHostnameSuccess: Uspešno promenio ime domaćina MongoDB.
+  wwcConfigGUIMongoMenuButton: Promenite MongoDB podešavanja
+  wwcConfigGUIToggleMongoButton: Toggle MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Trenutno ime baze podataka je {0}.
+    Ukucajte bilo šta drugo osim 0 da biste postavili novo ime baze podataka ili upišite
+    0 da biste se vratili nazad.
+  wwcConfigConversationMongoOptionalArgsInput: 'Trenutni opcioni MongoDB argumenti
+    su: {0}. argumenti ukucajte odvojene zarezom (key=value, key2=value2), ili unesite
+    jasno da obrišete trenutne argove, ili upišite 0 da biste se vratili nazad.'
+  wwcConfigGUIMongoDatabaseNameButton: Promenite MongoDB bazu podataka
+  wwcConfigConversationMongoUsernameInput: Trenutno korisničko ime je {0}. Upišite
+    bilo šta drugo osim 0 da biste postavili novo korisničko ime ili upišite 0 da
+    biste se vratili.
+  wwcConfigGUIMongoOptionalArgsButton: Promenite MongoDB opcione argumente
+  wwcConfigConversationMongoUsernameSuccess: Uspešno promenio MongoDB korisničko ime.
+  wwcConfigConversationMongoPasswordSuccess: Uspešno promenio MongoDB lozinku.
+  wwcConfigConversationMongoPortSuccess: Uspešno je promenio MongoDB port.
+  wwcConfigGUIMongoUsernameButton: Promenite MongoDB korisničko ime
+  wwcConfigGUIMongoPasswordButton: Promenite MongoDB lozinku
+  wwcConfigConversationMongoOptionalArgsSuccess: Uspešno promenio opcione MongoDB
+    argumente.
+  wwcConfigConversationMongoOptionalArgsCleared: Opcioni argumenti uspešno izbrisani.
+  wwcConfigGUIMongoPortButton: Promenite MongoDB Port
+  wwcConfigInvalidFatalAsyncTimeout: Nevažeći fatalna asinc timeout set. Defaulting
+    do 10 sekundi...
+  libreHttp500: Izabrani ulazni i izlazni jezički par nije podržan. Izaberite drugi
+    jezički skup!
+  wwcConfigGUIDeepLTranslateButton: Toggle DeepL Translate
+  wwcConfigConversationDeepLTranslateToggleSuccess: Uspešno je prebacio DeepL Translate.
+    Ponovo učitajte da promene stupe na snagu.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Promena DeepL Translate API ključ
+  wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Translate
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API ključ je uspešno postavljen.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Trenutni API ključ je {0}. Molimo
+    unesite API ključ za DeepL, ili unesite 0 da biste se vratili.
+  wwcConfigErrorsToIgnoreSuccess: Uspešno registrovani prevodilac greške ignorisati.
+  wwcConfigErrorsToIgnoreInvalid: Nevažeći prevodilac greške ignorisati set in config.iml.
+    Registrovanje podrazumevanih vrednosti...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: Uspešno promenio greške prevodioca da
+    ignoriše fraze.
+  wwcConfigGUIIgnoreErrorsButton: Promenite greške da biste ignorisali
+  wwcConfigConversationIgnoreErrorsInput: 'Trenutna lista fraza u prevodilačkim greškama
+    koje treba ignorisati je: {0}. Upišite argumente odvojene zarezom (key=value,
+    key2=value2), ili ukucajte jasno da obrišete trenutne argove, ili unesite 0 da
+    biste se vratili nazad. Pored toga, kucanje „*“ će dovesti do toga da dodatak
+    ne proverava greške prevodioca.'
+  wwcConfigConversationIgnoreErrorsCleared: Prevodilac greške ignorisati fraze uspešno
+    izbrisani.
+  wwcSupportedServer: Inicijalizacija VorldVideChat za {0}...
+  wwcSupportedVersion: Omogućavanje funkcija za verziju {0}...
+  wwcBadPerms: 'Nemate potrebne dozvole za izvršavanje ove naredbe: {0}'
+  wwcsIsActiveTranslator: 'Aktivan je prevodilac: {0}'
+  wwcsActiveTransPrevRate: 'Vreme ograničenja prethodne stope: {0}'
+  wwcsActiveTransSaved: 'Sačuvano na disku: {0}'
+  wwcsActiveTransIncoming: 'Prevođenje dolaznog ćaskanja: {0}'
+  wwcsActiveTransOutLang: 'Izlazni jezik: {0}'
+  wwcsActiveTransInLang: 'Jezik unosa: {0}'
+  wwcsActiveTransBook: 'Knjiga za prevod: {0}'
+  wwcsActiveTransSign: 'Znak za prevođenje: {0}'
+  wwcsActiveTransUUID: 'UUID: {0}'
+  wwcsActiveTransRateLimit: 'Ograničenje stope: {0}'
+  wwcsActiveTransColorWarning: 'Primljeno upozorenje u boji: {0}'
+  wwcsActiveTransSignWarning: 'Upozorenje o uređivanju primljenog znaka: {0}'
+  wwcsTitle: Zapis od {0}
+  wwcsActiveTransOutgoing: 'Prevođenje odlaznog ćaskanja: {0}'
+  wwcsActiveTransItem: 'Prevodna stavka: {0}'
+  wwcsActiveTransEntity: 'Prevodilački entitet: {0}'
+  wwctsWarning: Izmena znakova je onemogućena dok prevodite znakove.
+  wwcConfigConversationAzureTranslateToggleSuccess: Uspešno je prebacio Azure Translate.
+    Ponovo učitajte da bi promene stupile na snagu.
+  wwcConfigGUIAzureTranslateButton: Azure Translate
+  wwcConfigGUIAzureTranslateApiKeyButton: Promenite API ključ Azure Translate
+  wwcConfigGUIAzureTranslateRegionButton: Promenite region za prevod Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure region je uspešno postavljen.
+  wwcConfigConversationAzureTranslateApiKeyInput: Trenutni API ključ je {0}. Molimo
+    unesite API ključ za Azure ili otkucajte 0 da biste se vratili nazad.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API ključ je uspešno postavljen.
+  wwcConfigConversationAzureTranslateRegionInput: Trenutni region je {0}. Unesite
+    region za Azure ili otkucajte 0 da biste se vratili nazad.
+  wwcConfigGUIToggleAzureTranslateButton: Prebaci Azure Translate
+  wwcConfigGUISystranTranslateApiKeyButton: Promenite API ključ Sistran Translate
+  wwcConfigGUIToggleSystranTranslateButton: Toggle Sistran Translate
+  wwcConfigConversationSystranTranslateApiKeyInput: Trenutni API ključ je {0}. Molimo
+    unesite API ključ za Sistran ili otkucajte 0 da biste se vratili nazad.
+  wwcISOJSONFail: Nije moguće popraviti jezičke objekte pomoću ISO JSON-a.
+  wwcConfigConversationSystranTranslateToggleSuccess: Uspešno je prebacio Sistran
+    Translate. Ponovo učitajte da bi promene stupile na snagu.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Sistran API ključ je uspešno
+    postavljen.
+  wwcConfigGUISystranTranslateButton: Sistran Prevod
+  wwcrTransFail: Ponovo je učitao VorldWideChat, ali nije uspeo da omogući prevodioca.
+  wwcdCacheCleared: Keš prevoda je izbrisan.
+  wwcdInvalidCmd: Nevažeći argumenti!
+  systranHttpUnknown: 'Nepoznata http greška: {0}'
+  systranHttp400: Loši parametri poslati Sistranu. Možda je loš jezički par?
+  systranHttp500: Interna greška servera iz krajnje tačke Sistran ({0}).
+  wwcInvalidStorageSession: '{0} je omogućeno u vašoj konfiguraciji, ali veza nije
+    uspostavljena. Pokušajte ponovo da učitate da biste to rešili, ali kontaktirajte
+    programera ako ste prethodno dobili uspešnu poruku o povezivanju od {0}.'
+  wwcNewSqlConvertFinish: Završeno pretvaranje SKL tabela. Ponovno učitavanje VorldWideChat-a...
+  wwcNewSqlStruct: Vaša SKL baza podataka koristi novu strukturu i ne treba je konvertovati.
+  wwcNewSqlConvertBegin: Pretvaranje vaših SKL tabela...
+  wwcOldSqlStructRecords: 'Vaša SKL baza podataka ima neefikasno podešavanje tabele
+    zapisa igrača iz prethodne verzije VorldWideChat-a. Možete pokrenuti sledeću komandu
+    da biste rešili ovaj problem: /vvcd convert'
+  wwcOldSqlStructLongIntro: Iskreno se izvinjavamo zbog neugodnosti, ali prethodna
+    verzija VorldWideChat-a inicijalizovala je vaše SKL tabele sa neefikasnom strukturom.
+    Iako će ovo nastaviti da funkcioniše sa našim dodatkom, to može rezultirati značajnim
+    usporavanjem sa većim zapisima igrača.
+  wwcOldSqlStructTrans: 'Vaša SKL baza podataka ima neefikasno podešavanje aktivne
+    tabele prevodilaca iz prethodne verzije VorldWideChat-a. Možete pokrenuti sledeću
+    komandu da biste rešili ovaj problem: /vvcd convert'
+  wwcOldSqlStructLongTodo: 'Možete: ispustiti tabele odštampane na konzolu u MiSKL-u,
+    sami ih pretvoriti i pogledati novu strukturu u github repo-u ili pokrenuti komandu
+    da pokušate konverziju uživo. Uverite se da ste napravili rezervnu kopiju svoje
+    baze podataka pre nego što ovo pokrenete. Ako imate, naredba je: {0}'
+  wwcNewSqlConvertFail: Konverzija nije uspela... vratite tabele iz rezervne kopije
+    koju ste napravili. Onemogućavanje VorldWideChat-a...
+  wwcConfigConversationPostgresDatabaseNameSuccess: Uspešno je promenio ime baze podataka
+    PostgreSKL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Opcioni argumenti su uspešno izbrisani.
+  wwcConfigConversationPostgresPortInput: Trenutni port je {0}. Ukucajte bilo šta
+    drugo osim 0 da biste postavili novi port ili otkucajte 0 da biste se vratili
+    nazad.
+  wwcConfigGUIPostgresUsernameButton: Promenite PostgreSKL korisničko ime
+  wwcConfigConversationPostgresOptionalArgsSuccess: Uspešno je promenjen opcioni PostgreSKL
+    argumenti.
+  wwcConfigConversationTogglePostgresSSLSuccess: SSL za PostgreSKL je uspešno prebacio.
+  wwcConfigConversationPostgresPasswordSuccess: Uspešno je promenila PostgreSKL lozinku.
+  wwcConfigConversationPostgresPortSuccess: Uspešno je promenio PostgreSKL port.
+  wwcConfigConversationPostgresUsernameInput: Trenutno korisničko ime je {0}. Ukucajte
+    bilo šta drugo osim 0 da biste postavili novo korisničko ime ili otkucajte 0 da
+    biste se vratili nazad.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSKL se uspešno prebacio. Ponovo
+    učitajte da bi promena stupila na snagu.
+  wwcConfigGUITogglePostgresButton: Uključite PostgreSKL
+  wwcConfigGUIPostgresPasswordButton: Promenite PostgreSKL lozinku
+  wwcConfigGUIPostgresOptionalArgsButton: Promenite PostgreSKL opcionalne argumente
+  wwcConfigGUIPostgresMenuButton: Promenite PostgreSKL podešavanja
+  wwcConfigConversationPostgresPasswordInput: Trenutna lozinka je {0}. Ukucajte bilo
+    šta drugo osim 0 da biste postavili novu lozinku ili otkucajte 0 da biste se vratili
+    nazad.
+  wwcConfigConversationPostgresHostnameInput: Trenutno ime hosta je {0}. Ukucajte
+    bilo šta drugo osim 0 da biste postavili novo ime hosta ili otkucajte 0 da biste
+    se vratili nazad.
+  wwcConfigGUIPostgresPortButton: Promenite PostgreSKL port
+  wwcConfigConversationPostgresHostnameSuccess: Uspešno je promenio ime hosta PostgreSKL.
+  wwcConfigGUIPostgresHostnameButton: Promenite ime hosta PostgreSKL
+  wwcConfigConversationPostgresDatabaseNameInput: Trenutno ime baze podataka je {0}.
+    Ukucajte bilo šta drugo osim 0 da biste postavili novo ime baze podataka ili otkucajte
+    0 da biste se vratili nazad.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Trenutni opcioni PostgreSQL argumenti
+    su: {0}. Otkucajte argumente odvojene zarezom (ključ = vrednost, key2 = vrednost2)
+    ili otkucajte clear da biste izbrisali trenutne arge ili otkucajte 0 da biste
+    se vratili nazad.'
+  wwcConfigGUITogglePostgresSSLButton: Uključite PostgreSKL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Promenite PostgreSKL bazu podataka
+  wwcConfigConversationPostgresUsernameSuccess: Uspešno je promenio korisničko ime
+    PostgreSKL.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfiguracija'
+  wwcConfigConversationPrefixInput: Trenutni prefiks je {0}. Otkucajte novi ili otkucajte
+    0 da biste se vratili nazad.
+  wwcConfigConversationLangInput: 'Trenutni jezik dodatka je {0}. Unesite važeći kod
+    jezika ili otkucajte 0 da biste otkazali. Važeći jezički kodovi: {1}'
+  wwcdCacheSize: Veličina keša je trenutno {0}, sa ograničenjem od {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang = {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Počinje nova sesija prevođenja sa {0} na {1}.
+  wwctAutoTranslateStartOtherPlayer: Počinje nova sesija prevođenja za {0} do {1}.
+  wwctLangToLangStartOtherPlayer: Počinje nova sesija prevođenja za {0} od {1} do
+    {2}.
+  wwcgLangToLangStart: Sada prevodi globalno ćaskanje sa {0} na {1}.
+  wwctrlRateLimitSetTarget: Podesite ograničenje brzine od {0} na {1} sekundi.
+  wwcTimeoutException: Vaš zahtev je istekao. Pokušajte ponovo.
+  wwctbNoMoreOldBooks: Prevod knjiga nije funkcionalan na verziji vašeg servera. Ako
+    ste na novijoj verziji Minecraft-a i dobijete ovu grešku, kontaktirajte programera.
+
