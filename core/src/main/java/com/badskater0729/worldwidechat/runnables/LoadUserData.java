@@ -81,7 +81,7 @@ public class LoadUserData implements Runnable {
 				}
 				 */
 				try (PreparedStatement initActiveTranslators = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
-						+ "(creationDate VARCHAR(40),playerUUID VARCHAR(40),inLangCode VARCHAR(6),outLangCode VARCHAR(6),rateLimit INT,"
+						+ "(creationDate VARCHAR(40),playerUUID VARCHAR(40),inLangCode VARCHAR(10),outLangCode VARCHAR(10),rateLimit INT,"
 						+ "rateLimitPreviousTime VARCHAR(40),translatingChatOutgoing BOOLEAN, translatingChatIncoming BOOLEAN,"
 						+ "translatingBook BOOLEAN,translatingSign BOOLEAN,translatingItem BOOLEAN,translatingEntity BOOLEAN,PRIMARY KEY (playerUUID))")) {
 					initActiveTranslators.executeUpdate();
@@ -139,7 +139,7 @@ public class LoadUserData implements Runnable {
 				// Create tables if they do not exist already
 				try (PreparedStatement initActiveTranslators = postgresConnection.prepareStatement(
 						"CREATE TABLE IF NOT EXISTS activeTranslators " +
-								"(creationDate VARCHAR(40),playerUUID VARCHAR(40),inLangCode VARCHAR(6),outLangCode VARCHAR(6),rateLimit INT," +
+								"(creationDate VARCHAR(40),playerUUID VARCHAR(40),inLangCode VARCHAR(10),outLangCode VARCHAR(10),rateLimit INT," +
 								"rateLimitPreviousTime VARCHAR(40),translatingChatOutgoing BOOLEAN, translatingChatIncoming BOOLEAN," +
 								"translatingBook BOOLEAN,translatingSign BOOLEAN,translatingItem BOOLEAN,translatingEntity BOOLEAN,PRIMARY KEY (playerUUID))")) {
 					initActiveTranslators.executeUpdate();

@@ -87,8 +87,8 @@ public class WWCDebug extends BasicCommand {
                                 "ALTER TABLE activeTranslators " +
                                         "MODIFY creationDate VARCHAR(40), " +
                                         "MODIFY playerUUID VARCHAR(40), " +
-                                        "MODIFY inLangCode VARCHAR(6), " +
-                                        "MODIFY outLangCode VARCHAR(6), " +
+                                        "MODIFY inLangCode VARCHAR(10), " +
+                                        "MODIFY outLangCode VARCHAR(10), " +
                                         "MODIFY rateLimit INT, " +
                                         "MODIFY rateLimitPreviousTime VARCHAR(40), " +
                                         "MODIFY translatingChatOutgoing BOOLEAN, " +
