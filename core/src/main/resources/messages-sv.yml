@@ -498,16 +498,10 @@ Messages:
   wwcNewSqlConvertFinish: Färdig konvertering av dina SQL-tabeller. Laddar om WorldwideChat...
   wwcNewSqlStruct: SQL-databasen använder den nya strukturen och behöver inte konverteras.
   wwcNewSqlConvertBegin: Konvertera dina SQL-tabeller...
-  wwcOldSqlStructRecords: 'Din SQL-databas har en ineffektiv spelarinspelningstabellinställning
-    från en tidigare version av WorldwideChat. Du kan köra följande kommando för att
-    åtgärda problemet: /wwcd convert'
   wwcOldSqlStructLongIntro: Vi ber om ursäkt för besväret, men en tidigare version
     av WorldwideChat initierade dina SQL-tabeller med en ineffektiv struktur. Även
     om detta kommer att fortsätta att fungera med vårt plugin, det kan leda till betydande
     avmattningar med större spelarrekord.
-  wwcOldSqlStructTrans: 'Din SQL-databas har en ineffektiv aktiv översättartabellinställning
-    från en tidigare version av WorldwideChat. Du kan köra följande kommando för att
-    åtgärda problemet: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Du kan: släppa tabellerna som skrivs ut till konsol i
     MySQL, konvertera dem själv och titta på den nya strukturen i github-repo, eller
     kör ett kommando för att försöka konverteringen live. Se till att du HAR GJORT
@@ -571,4 +565,7 @@ Messages:
   wwcTimeoutException: Din förfrågan har gått ut. Vänligen försök igen.
   wwctbNoMoreOldBooks: Boköversättning fungerar inte på din serverversion. Om du använder
     en nyare version av Minecraft och du får det här felet, vänligen kontakta utvecklaren.
+  wwcOldDatabaseStruct: 'Din valda databas har en ineffektiv installation från en
+    tidigare version av WorldwideChat. Du kan köra följande kommando för att åtgärda
+    problemet: /wwcd convert'
 

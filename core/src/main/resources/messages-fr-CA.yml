@@ -533,9 +533,6 @@ Messages:
     une structure inefficace. Bien que cela continue de fonctionner avec notre module
     d'extension, cela peut entraîner des ralentissements importants avec des enregistrements
     de joueurs plus importants.
-  wwcOldSqlStructTrans: 'Votre base de données SQL a une configuration de table de
-    traducteur active inefficace à partir d''une version précédente de WorldwideChat.
-    Vous pouvez exécuter la commande suivante pour résoudre ce problème: /wwcd convert/'
   wwcOldSqlStructLongTodo: 'Vous pouvez: déposer les tables imprimées sur la console
     dans MySQL, les convertir vous-même et regarder la nouvelle structure dans le
     dépôt github, ou exécuter une commande pour tenter la conversion en direct. ASSUREZ-VOUS
@@ -543,10 +540,6 @@ Messages:
     c''est le cas, la commande est: {0}'
   wwcNewSqlConvertFail: Échec de la conversion... veuillez restaurer vos tables à
     partir de la sauvegarde que vous avez effectuée. Désactiver WorldwideChat...
-  wwcOldSqlStructRecords: 'Votre base de données SQL a une configuration de table
-    d''enregistrement des joueurs inefficace à partir d''une version précédente de
-    WorldwideChat. Vous pouvez exécuter la commande suivante pour résoudre ce problème:
-    /wwcd converti'
   wwcConfigConversationPostgresDatabaseNameSuccess: Modifie avec succès le nom de
     la base de données PostreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Arguments facultatifs effacés
@@ -609,4 +602,7 @@ Messages:
   wwctbNoMoreOldBooks: La traduction de livres n'est pas fonctionnelle sur votre version
     serveur. Si vous utilisez une version plus récente de Minecraft et que vous obtenez
     cette erreur, veuillez contacter le développeur.
+  wwcOldDatabaseStruct: 'La base de données que vous avez choisie a une configuration
+    inefficace par rapport à une version précédente de WorldwideChat. Vous pouvez
+    exécuter la commande suivante pour résoudre ce problème : /wwcd convert/'
 

@@ -484,16 +484,10 @@ Messages:
   wwcNewSqlConvertFinish: Ikimaliza kubadilisha meza zako za SQL. Inapakia upya WorldwideChat...
   wwcNewSqlStruct: Hifadhidata yako ya SQL inatumia muundo mpya na haitaji kubadilishwa.
   wwcNewSqlConvertBegin: Kubadilisha meza zako za SQL...
-  wwcOldSqlStructRecords: 'Hifadhidata yako ya SQL ina usanidi wa meza ya rekodi ya
-    mchezaji usio na ufanisi kutoka toleo la awali la WorldwideChat. Unaweza kuendesha
-    amri ifuatayo ili kurekebisha suala hili: /wwcd convert'
   wwcOldSqlStructLongIntro: Tunaomba msamaha kwa dhati kwa usumbufu, lakini toleo
     la awali la WorldwideChat lilianzisha meza zako za SQL na muundo usio na ufanisi.
     Ingawa hii itaendelea kufanya kazi na programu-jalizi yetu, inaweza kusababisha
     upungufu mkubwa na rekodi kubwa za wachezaji.
-  wwcOldSqlStructTrans: 'Hifadhidata yako ya SQL ina usanidi wa meza ya mtafsiri isiyo
-    na ufanisi kutoka toleo la awali la WorldwideChat. Unaweza kuendesha amri ifuatayo
-    ili kurekebisha suala hili: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Unaweza: kuacha meza zilizochapishwa ili kutolewa kwenye
     MySQL, zibadilisha mwenyewe na uangalie muundo mpya katika repo ya github, au
     tumia amri ili kujaribu ubadilishaji moja kwa moja. Tafadhali hakikisha kuwa UMEFANYA
@@ -561,4 +555,7 @@ Messages:
   wwctbNoMoreOldBooks: Tafsiri ya kitabu haifanyi kazi kwenye toleo lako la seva.
     Ikiwa uko kwenye toleo la hivi karibuni la Minecraft na unapata kosa hili, tafadhali
     wasiliana na msanidi programu.
+  wwcOldDatabaseStruct: 'Hifadhidata yako iliyochagua ina usanidi usio na ufanisi
+    kutoka toleo la awali la WorldwideChat. Unaweza kuendesha amri ifuatayo ili kurekebisha
+    suala hili: /wwcd convert'
 

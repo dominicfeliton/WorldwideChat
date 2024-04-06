@@ -435,14 +435,10 @@ Messages:
   wwcOldSqlStructLongIntro: ለችግሩ ከልብ ይቅርታ እንጠይቃለን፣ ግን የቀድሞው የ WorldwideChat ስሪት የ
     SQL ሰንጠረቤዎችዎን ውጤታማ ያልሆነ መዋቅር ይጀምራል። ይህ በእኛ ተሰኪ ጋር መስራቱን ቢቀጥልም፣ በትላልቅ ተጫዋች መዝገቦች
     ከፍተኛ መቀነስ ሊያስከትል ይችላል።
-  wwcOldSqlStructTrans: 'የ SQL ውሂብ ጎታዎ ከቀደመው የ WorldwideChat ስሪት ውጤታማ ያልሆነ ንቁ ተርጓሚ
-    ሰንጠረዥ ማዋቀር አለው። ይህንን ችግር ለማስተካከል የሚከተለውን ትዕዛዝ ማስኬድ ይችላሉ: /wwcd መለወጥ'
   wwcOldSqlStructLongTodo: 'እርስዎ ይችላሉ: በ MySQL ውስጥ ለመኮንሶል የታተሙትን ሰንጠረዥ መውጣት፣ እራስዎ
     መለወጥ እና በgithub ሪፖው ውስጥ ያለውን አዲሱ መዋቅር ይመልከቱ ወይም ለውውጡን በቀጥታ ለመሞከር ትዕዛዝ ያስኬዱ። እባክዎ
     ይህንን ከማስኬድዎ በፊት የውሂብ ጎታዎን ምትኬ መጠባበቂያዎን ያረጋግጡ ካለዎት ትዕዛዙ የሚከተለው ነው: {0}'
   wwcNewSqlConvertFail: ልውውጥ አልተሳካም... እባክዎን ሰንጠረዥ ካደረጉት ምትኬ ያስመልሱ የዎርልድዊድካት ማሰናከል...
-  wwcOldSqlStructRecords: 'የእርስዎ SQL ውሂብ ጎታ ከቀደመው የ WorldwideChat ስሪት ውጤታማ ያልሆነ የአጫዋች
-    መዝገብ ጠረጴዛ ማዋቀር ይህንን ችግር ለማስተካከል የሚከተለውን ትዕዛዝ ማስኬድ ይችላሉ: /wwcd መለወጥ'
   wwcConfigConversationPostgresDatabaseNameSuccess: የ PostgreSQL የውሂብ ጎታ ስም በተሳካ ሁኔታ
     ቀይሯል።
   wwcConfigConversationPostgresOptionalArgsCleared: አማራጭ ጭቅጭቆች በተሳካ ሁኔታ
@@ -493,4 +489,6 @@ Messages:
   wwcTimeoutException: የእርስዎ ጥያቄ ጊዜው ቆይቷል። እባክዎን እንደገና ሞክሩ።
   wwctbNoMoreOldBooks: የመጽሐፍ ትርጉም በአገልጋዩ ስሪት ላይ ተግባራዊ አይደለም። የቅርብ ጊዜ የ Minecraft ስሪት
     ላይ ከሆኑ እና ይህንን ስህተት ካገኙ እባክዎን ገንቢውን ያነጋግሩ።
+  wwcOldDatabaseStruct: 'የተመረጠው የውሂብ ጎታ ከቀደመው የ WorldwideChat ስሪት ውጤታማ ያልሆነ ማዋቀር አለው።
+    ይህንን ችግር ለማስተካከል የሚከተለውን ትዕዛዝ ማስኬድ ይችላሉ: /wwcd መለወጥ'
 

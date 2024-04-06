@@ -445,18 +445,12 @@ Messages:
   wwcOldSqlStructLongIntro: אנו מתנצלים בכנות על אי הנוחות, אך גרסה קודמת של WorldwideChat
     איתלה את טבלאות ה- SQL שלך במבנה לא יעיל. למרות שזה ימשיך לתפקד עם התוסף שלנו,
     זה עלול לגרום להאטות משמעותיות עם רשומות שחקנים גדולות יותר.
-  wwcOldSqlStructTrans: 'למסד הנתונים של SQL יש הגדרת טבלת מתרגמים פעילה לא יעילה
-    מגירסה קודמת של WorldwideChat. באפשרותך להפעיל את הפקודה הבאה כדי לתקן בעיה זו:
-    /wwcd convert'
   wwcOldSqlStructLongTodo: 'אתה יכול: לשחרר את הטבלאות המודפסות לקונסולה ב- MySQL,
     להמיר אותן בעצמך ולהסתכל על המבנה החדש ב- github repo, או להפעיל פקודה כדי לנסות
     את ההמרה בשידור חי. אנא ודא שביצעת גיבוי של מסד הנתונים שלך לפני הפעלת זה. אם
     יש לך, הפקודה היא: {0}'
   wwcNewSqlConvertFail: ההמרה נכשלה... אנא שחזר את הטבלאות מהגיבוי שביצעת. השבתת צ'אט
     עולמי...
-  wwcOldSqlStructRecords: 'למסד הנתונים של SQL שלך יש הגדרת טבלת רשומות נגן לא יעילה
-    מגירסה קודמת של WorldwideChat. באפשרותך להפעיל את הפקודה הבאה כדי לתקן בעיה זו:
-    /wwcd convert'
   wwcConfigConversationPostgresDatabaseNameSuccess: שינתה בהצלחה את שם מסד הנתונים
     של PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: ארגומנטים אופציונליים נמחקו בהצלחה.
@@ -507,4 +501,6 @@ Messages:
   wwcTimeoutException: פג הזמן לבקשתך. אנא נסה שוב.
   wwctbNoMoreOldBooks: תרגום ספרים אינו מתפקד בגרסת השרת שלך. אם אתה משתמש בגרסה עדכנית
     יותר של Minecraft ואתה מקבל שגיאה זו, אנא צור קשר עם המפתח.
+  wwcOldDatabaseStruct: 'למסד הנתונים שבחרת יש הגדרה לא יעילה מגירסה קודמת של WorldwideChat.
+    באפשרותך להפעיל את הפקודה הבאה כדי לתקן בעיה זו: /wwcd convert'
 

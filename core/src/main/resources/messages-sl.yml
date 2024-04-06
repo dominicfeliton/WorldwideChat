@@ -496,16 +496,10 @@ Messages:
   wwcNewSqlStruct: Vaša zbirka podatkov SQL uporablja novo strukturo in je ni treba
     pretvoriti.
   wwcNewSqlConvertBegin: Pretvarjanje tabel SQL...
-  wwcOldSqlStructRecords: 'Vaša zbirka podatkov SQL ima neučinkovito nastavitev tabele
-    zapisov predvajalnika iz prejšnje različice WorldwideChat. Če želite odpraviti
-    to težavo, lahko zaženete naslednji ukaz: /wwcd convert'
   wwcOldSqlStructLongIntro: Iskreno se opravičujemo za neprijetnosti, vendar je prejšnja
     različica WorldwideChata inicializirala vaše tabele SQL z neučinkovito strukturo.
     Čeprav bo to še naprej delovalo z našim vtičnikom, lahko povzroči znatne upočasnitve
     z večjimi zapisi predvajalnikov.
-  wwcOldSqlStructTrans: 'Vaša zbirka podatkov SQL ima neučinkovito nastavitev aktivne
-    prevajalske tabele iz prejšnje različice WorldwideChat. Če želite odpraviti to
-    težavo, lahko zaženete naslednji ukaz: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Tabele, natisnjene v konzolo v MySQL, jih lahko: spustite,
     jih sami pretvorite in si ogledate novo strukturo v repoju github ali zaženete
     ukaz za poskus pretvorbe v živo. Pred zagonom se prepričajte, da ste naredili
@@ -568,4 +562,7 @@ Messages:
   wwcTimeoutException: Vaša zahteva je potekla. Prosimo, poskusite znova.
   wwctbNoMoreOldBooks: Prevajanje knjig v vaši različici strežnika ne deluje. Če uporabljate
     novejšo različico Minecrafta in se pojavi ta napaka, se obrnite na razvijalca.
+  wwcOldDatabaseStruct: 'Vaša izbrana zbirka podatkov ima neučinkovito nastavitev
+    iz prejšnje različice WorldwideChat. Če želite odpraviti to težavo, lahko zaženete
+    naslednji ukaz: /wwcd convert'
 

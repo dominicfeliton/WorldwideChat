@@ -474,18 +474,12 @@ Messages:
     eelmine versioon initsialiseeris teie SQL-tabelid ebatõhusa struktuuriga. Kuigi
     see töötab meie pistikprogrammiga jätkuvalt, suuremate mängijate rekorditega võib
     see põhjustada märkimisväärset aeglustumist.
-  wwcOldSqlStructTrans: 'Teie SQL-andmebaasis on WorldwideChati eelmisest versioonist
-    ebatõhus aktiivse tõlkimistabeli seadistus. Selle probleemi lahendamiseks võite
-    käivitada järgmise käsu: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Võite: loobuda MySQL-is konsooliks trükitud tabelid, teisendada
     need ise ja vaadata githubi repo-s uut struktuuri või käivitada käsk konversiooni
     reaalajas proovimiseks. Enne selle käivitamist veenduge, et OLETE OMA ANDMEBAASIST
     VARUKOOPIA TEINUD. Kui teil on, on käsk: {0}'
   wwcNewSqlConvertFail: Teisendamine ebaõnnestus... palun taastage oma tabelid tehtud
     varukoopiast. WorldwideChati keelamine...
-  wwcOldSqlStructRecords: 'Teie SQL-andmebaasis on WorldwideChati eelmisest versioonist
-    ebatõhus mängijate kirjetabeli seadistus. Selle probleemi lahendamiseks võite
-    käivitada järgmise käsu: /wwcd convert'
   wwcConfigConversationPostgresDatabaseNameSuccess: Muudeti edukalt PostgreSQL-i andmebaasi
     nime.
   wwcConfigConversationPostgresOptionalArgsCleared: Valikulised argumendid kustutati
@@ -540,4 +534,7 @@ Messages:
   wwcTimeoutException: Teie taotlus lõppes. Palun proovige uuesti.
   wwctbNoMoreOldBooks: Raamatutõlge ei tööta teie serveri versioonis. Kui kasutate
     Minecrafti uuemat versiooni ja saate selle vea, võtke ühendust arendajaga.
+  wwcOldDatabaseStruct: 'Teie valitud andmebaasis on ebatõhus seadistus võrreldes
+    WorldwideChati eelmisest versioonist. Selle probleemi lahendamiseks võite käivitada
+    järgmise käsu: /wwcd convert'
 

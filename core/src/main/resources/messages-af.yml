@@ -493,9 +493,6 @@ Messages:
     vorige weergawe van WorldwideChat het u SQL-tabelle met 'n ondoeltreffende struktuur
     geïnisialiseer. Alhoewel dit met ons plugin sal aanhou funksioneer, kan dit aansienlike
     verlangsamings met groter spelerrekords tot gevolg hê.
-  wwcOldSqlStructTrans: 'Jou SQL-databasis het ''n ondoeltreffende aktiewe vertalertabelopstelling
-    uit ''n vorige weergawe van WorldwideChat. U kan die volgende opdrag uitvoer om
-    hierdie probleem op te los: /wwcd convert'
   wwcOldSqlStructLongTodo: 'U kan: die tabelle wat in MySQL gedruk is om te konsole
     laat val, dit self omskakel en kyk na die nuwe struktuur in die github-repo, of
     ''n opdrag uitvoer om die omskakeling regstreeks te probeer. Maak asseblief seker
@@ -503,9 +500,6 @@ Messages:
     het, is die opdrag: {0}'
   wwcNewSqlConvertFail: Omskakeling het misluk... herstel asseblief u tabelle uit
     die rugsteun wat u gemaak het. Deaktiveer WorldwideChat...
-  wwcOldSqlStructRecords: 'Jou SQL-databasis het ''n ondoeltreffende spelerrekordtafelopstelling
-    uit ''n vorige weergawe van WorldwideChat. U kan die volgende opdrag uitvoer om
-    hierdie probleem op te los: /wwcd convert'
   wwcConfigConversationPostgresDatabaseNameSuccess: Die PostgreSQL-databasisnaam suksesvol
     verander.
   wwcConfigConversationPostgresOptionalArgsCleared: Opsionele argumente suksesvol
@@ -565,4 +559,7 @@ Messages:
   wwctbNoMoreOldBooks: Boekvertaling is nie funksioneel op u bedienerweergawe nie.
     As u op 'n meer onlangse weergawe van Minecraft is en u hierdie fout kry, kontak
     asseblief die ontwikkelaar.
+  wwcOldDatabaseStruct: 'U gekose databasis het ''n ondoeltreffende opstelling uit
+    ''n vorige weergawe van WorldwideChat. U kan die volgende opdrag uitvoer om hierdie
+    probleem op te los: /wwcd convert'
 

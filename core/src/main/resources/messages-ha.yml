@@ -492,18 +492,12 @@ Messages:
     da ta gabata na WorldwideChat ya fara teburin SQL ɗinku tare da tsari mara inganci.
     Duk da yake wannan zai ci gaba da aiki tare da plugin ɗin mu, yana iya haifar
     da raguwa mai mahimmanci tare da manyan bayanan ɗan wasa.
-  wwcOldSqlStructTrans: Bayanan SQL ɗinku yana da saitin teburin fassara mara inganci
-    daga sigar da ta gabata na WorldwideChat. Kuna iya gudanar da umarni mai zuwa
-    don gyara wannan batun:/wwcd canza
   wwcOldSqlStructLongTodo: 'Kuna iya: sauke teburin da aka buga don na''ura a cikin
     MySQL, canza su da kanku kuma duba sabon tsarin a cikin github repo, ko gudanar
     da umarni don ƙoƙarin juyawa kai tsaye. Da fatan za a tabbatar cewa KUN YI AJIYAR
     BAYANAN KU KAFIN GUDANAR DA WANNAN. Idan kuna da, umurnin shine: {0}'
   wwcNewSqlConvertFail: Juyawa ya gaza... don Allah mayar da teburin ku daga madadin
     da kuka yi. Kashe WorldwideChat...
-  wwcOldSqlStructRecords: Bayanan SQL ɗinku yana da saitin teburin rikodin ɗan wasa
-    mara inganci daga sigar da ta gabata na WorldwideChat. Kuna iya gudanar da umarni
-    mai zuwa don gyara wannan batun:/wwcd canza
   wwcConfigConversationPostgresDatabaseNameSuccess: An sami nasarar canza sunan bayanan
     PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Muhawarar zaɓi aka share su cikin
@@ -561,4 +555,7 @@ Messages:
   wwctbNoMoreOldBooks: Fassarar littafi baya aiki akan sigar uwar garken ku. Idan
     kuna kan sigar Minecraft na kwanan nan kuma kun sami wannan kuskuren, da fatan
     za a tuntuɓi mai haɓakawa.
+  wwcOldDatabaseStruct: Bayanan da kuka zaɓa yana da saiti mara inganci daga sigar
+    WorldwideChat da ta gabata. Kuna iya gudanar da umarni mai zuwa don gyara wannan
+    batun:/wwcd canza
 

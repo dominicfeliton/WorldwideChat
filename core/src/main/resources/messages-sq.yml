@@ -516,9 +516,6 @@ Messages:
     version i mëparshëm i WorldwideChat inicializoi tabelat tuaja SQL me një strukturë
     joefikase. Ndërsa kjo do të vazhdojë të funksionojë me shtojcën tonë, mund të
     rezultojë në ngadalësime të konsiderueshme me rekorde më të mëdha të lojtarëve.
-  wwcOldSqlStructTrans: 'Baza e të dhënave tuaja SQL ka një konfigurim joefikase të
-    tabelës së përkthyesve aktiv nga një version i mëparshëm i WorldwideChat. Ju mund
-    të ekzekutoni komandën e mëposhtme për të rregulluar këtë çështje: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Ju mund të: hiqni tabelat e printuara për të konsoluar
     në MySQL, t''i konvertoni ato vetë dhe të shikoni strukturën e re në repo github,
     ose të ekzekutoni një komandë për të provuar konvertimin drejtpërdrejt. Ju lutemi
@@ -526,10 +523,6 @@ Messages:
     ta ekzekutoni këtë. Nëse keni, komanda është: {0}'
   wwcNewSqlConvertFail: Konvertimi dështoi... ju lutemi rivendosni tabelat tuaja nga
     kopja rezervë që keni bërë. Çaktivizimi i WorldwideChat...
-  wwcOldSqlStructRecords: 'Baza e të dhënave tuaja SQL ka një konfigurim joefikase
-    të tabelës së regjistrimit të lojtarëve nga një version i mëparshëm i WorldwideChat.
-    Ju mund të ekzekutoni komandën e mëposhtme për të rregulluar këtë çështje: /wwcd
-    convert'
   wwcConfigConversationPostgresDatabaseNameSuccess: Ndryshoi me sukses emrin e bazës
     së të dhënave PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Argumentet opsionale pastruan
@@ -593,4 +586,7 @@ Messages:
   wwctbNoMoreOldBooks: Përkthimi i librit nuk është funksional në versionin tuaj të
     serverit. Nëse jeni në një version më të fundit të Minecraft dhe merrni këtë gabim,
     ju lutemi kontaktoni zhvilluesin.
+  wwcOldDatabaseStruct: 'Baza e të dhënave tuaja e zgjedhur ka një konfigurim joefikase
+    nga një version i mëparshëm i WorldwideChat. Ju mund të ekzekutoni komandën e
+    mëposhtme për të rregulluar këtë çështje: /wwcd convert'
 

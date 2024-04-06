@@ -485,17 +485,11 @@ Messages:
   wwcNewSqlConvertFinish: Selesai mengonversi tabel SQL Anda. Memuat ulang WorldwideChat...
   wwcNewSqlStruct: Database SQL Anda menggunakan struktur baru dan tidak perlu dikonversi.
   wwcNewSqlConvertBegin: Mengonversi tabel SQL Anda...
-  wwcOldSqlStructRecords: 'Basis data SQL Anda memiliki pengaturan tabel rekaman pemain
-    yang tidak efisien dari versi WorldwideChat sebelumnya. Anda dapat menjalankan
-    perintah berikut untuk memperbaiki masalah ini: /wwcd convert'
   wwcOldSqlStructLongIntro: Kami dengan tulus meminta maaf atas ketidaknyamanan ini,
     tetapi versi WorldwideChat sebelumnya menginisialisasi tabel SQL Anda dengan struktur
     yang tidak efisien. Meskipun ini akan terus berfungsi dengan plugin kami, ini
     dapat mengakibatkan perlambatan yang signifikan dengan catatan pemain yang lebih
     besar.
-  wwcOldSqlStructTrans: 'Basis data SQL Anda memiliki pengaturan tabel penerjemah
-    aktif yang tidak efisien dari versi WorldwideChat sebelumnya. Anda dapat menjalankan
-    perintah berikut untuk memperbaiki masalah ini: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Anda dapat: jatuhkan tabel yang dicetak ke konsol di MySQL,
     mengonversinya sendiri dan melihat struktur baru di repo github, atau jalankan
     perintah untuk mencoba konversi secara langsung. Harap pastikan bahwa Anda TELAH
@@ -555,4 +549,7 @@ Messages:
   wwctbNoMoreOldBooks: Terjemahan buku tidak berfungsi pada versi server Anda. Jika
     Anda menggunakan versi Minecraft yang lebih baru dan Anda mendapatkan kesalahan
     ini, silakan hubungi pengembang.
+  wwcOldDatabaseStruct: 'Basis data yang Anda pilih memiliki pengaturan yang tidak
+    efisien dari versi WorldwideChat sebelumnya. Anda dapat menjalankan perintah berikut
+    untuk memperbaiki masalah ini: /wwcd convert'
 

@@ -477,18 +477,12 @@ Messages:
     nan WorldwideChat inisyalize tab SQL ou ak yon estrikti enefikas. Pandan ke sa
     a ap kontinye fonksyone ak Plugin nou an, li ka rezilta nan ralentisman siyifikatif
     ak dosye jwè pi gwo.
-  wwcOldSqlStructTrans: 'Baz done SQL ou a gen yon enefikas konfigirasyon tab tradiktè
-    aktif soti nan yon vèsyon anvan nan WorldwideChat. Ou ka kouri lòd sa a pou ranje
-    pwoblèm sa a: /wwcd konvèti'
   wwcOldSqlStructLongTodo: 'Ou ka: lage tab yo enprime nan konsole nan MySQL, konvèti
     yo tèt ou epi gade nan estrikti a nouvo nan repo a github, oswa kouri yon lòd
     tantativ konvèsyon an ap viv. Tanpri asire w ke ou TE FÈ YON BACKUP NAN BAZ DONE
     OU ANVAN KOURI SA A. Si ou gen, lòd la se: {0}'
   wwcNewSqlConvertFail: Konvèsyon echwe... tanpri retabli tab ou soti nan backup la
     ou te fè. Enfimite WorldwideChat...
-  wwcOldSqlStructRecords: 'Baz done SQL ou a gen yon konfigirasyon tab dosye jwè inefikas
-    soti nan yon vèsyon anvan nan WorldwideChat. Ou ka kouri lòd sa a pou ranje pwoblèm
-    sa a: /wwcd konvèti'
   wwcConfigConversationPostgresDatabaseNameSuccess: Aksè chanje non baz done PostgreSQL
     la.
   wwcConfigConversationPostgresOptionalArgsCleared: Agiman si ou vle netwaye avèk
@@ -544,4 +538,7 @@ Messages:
   wwctbNoMoreOldBooks: Tradiksyon liv se pa fonksyonèl sou vèsyon sèvè ou. Si ou se
     sou yon vèsyon ki pi resan nan Minecraft epi ou jwenn erè sa a, tanpri kontakte
     pwomotè a.
+  wwcOldDatabaseStruct: 'Baz done chwazi ou a gen yon konfigirasyon enefikas soti
+    nan yon vèsyon anvan nan WorldwideChat. Ou ka kouri lòd sa a pou ranje pwoblèm
+    sa a: /wwcd konvèti'
 

@@ -498,9 +498,6 @@ Messages:
     útgáfa af WorldwideChat frumstillti SQL töflurnar þínar með óhagkvæmri uppbyggingu.
     Þó að þetta muni halda áfram að virka með tappi okkar, getur það leitt til verulegra
     hægagangs með stærri leikmaður færslur.
-  wwcOldSqlStructTrans: 'SQL gagnagrunnurinn þinn hefur óhagkvæma virka þýðendatöflu
-    skipulag frá fyrri útgáfu af WorldwideChat. Þú getur keyrt eftirfarandi skipun
-    til að laga þetta mál: /wwcd umbreyta'
   wwcOldSqlStructLongTodo: 'Þú getur: sleppt töflunum sem prentaðar eru til að hugga
     í MySQL, umbreyta þeim sjálfur og skoðað nýju uppbygginguna í github repo, eða
     keyra skipun til að reyna umbreytinguna í beinni útsendingu. Vinsamlegast vertu
@@ -508,9 +505,6 @@ Messages:
     þetta. Ef þú ert með þá er skipunin: {0}'
   wwcNewSqlConvertFail: Umbreyting mistókst... vinsamlegast endurheimtu töflurnar
     þínar úr öryggisafritinu sem þú gerðir. Slökkva á WorldwideChat...
-  wwcOldSqlStructRecords: 'SQL gagnagrunnurinn þinn hefur óhagkvæma uppsetningu spilara
-    met borð frá fyrri útgáfu af WorldwideChat. Þú getur keyrt eftirfarandi skipun
-    til að laga þetta mál: /wwcd umbreyta'
   wwcConfigConversationPostgresDatabaseNameSuccess: Breytti PostgreSQL gagnagrunnsnafninu
     með góðum árangri.
   wwcConfigConversationPostgresOptionalArgsCleared: Valfrjáls rök hreinsuð með góðum
@@ -570,4 +564,7 @@ Messages:
   wwcTimeoutException: Beiðni þín var tímasett út. Vinsamlegast reyndu aftur.
   wwctbNoMoreOldBooks: Bókaþýðing er ekki virk á netþjónsútgáfunni þinni. Ef þú ert
     á nýlegri útgáfu af Minecraft og þú færð þessa villu skaltu hafa samband við verktaki.
+  wwcOldDatabaseStruct: 'Gagnagrunnurinn sem valinn er með óhagkvæma uppsetningu frá
+    fyrri útgáfu af WorldwideChat. Þú getur keyrt eftirfarandi skipun til að laga
+    þetta mál: /wwcd umbreyta'
 

@@ -384,12 +384,8 @@ Messages:
   wwcNewSqlStruct: 您的 SQL 資料庫正在使用新結構，不需要轉換。
   wwcNewSqlConvertBegin: 轉換您的 SQL 表格...
   wwcOldSqlStructLongIntro: 對於給您帶來的不便，我們深表歉意，但舊版的 WorldwideChat 使您的 SQL 表格以低效率的結構初始化了。雖然這將繼續與我們的插件一起運作，但它可能會導致玩家記錄更大的情況下顯著放緩。
-  wwcOldSqlStructTrans: 您的 SQL 資料庫具有較舊版的 WorldwideChat 的作用中轉譯器表設置效率低。您可以運行以下命令來修復此問題：/wwcd
-    轉換
   wwcOldSqlStructLongTodo: 您可以：在 MySQL 中將打印到控制台的表格放置，自己轉換它們並查看 github 存儲庫中的新結構，或運行命令以嘗試實時轉換。請在執行此操作之前，請確保您已備份您的數據庫。如果有，命令是：{0}
   wwcNewSqlConvertFail: 轉換失敗... 請從您所建立的備份還原您的表格。停用全球微信...
-  wwcOldSqlStructRecords: 您的 SQL 數據庫具有較舊版的 WorldwideChat 版本的播放器記錄表設置效率低。您可以運行以下命令來修復此問題：/wwcd
-    轉換
   wwcConfigConversationPostgresDatabaseNameSuccess: 成功變更 PostgreSQL 資料庫名稱。
   wwcConfigConversationPostgresOptionalArgsCleared: 選擇性參數已成功清除。
   wwcConfigConversationPostgresPortInput: 目前的連接埠為 {0}。輸入 0 以外的任何內容以設定新連接埠，或鍵入 0 以返回。
@@ -431,4 +427,6 @@ Messages:
   wwctrlRateLimitSetTarget: 將 {0} 的速率限制設置為 {1} 秒。
   wwcTimeoutException: 您的請求逾時。請再試一次。
   wwctbNoMoreOldBooks: 書籍翻譯無法在您的服務器版本上運行。如果您使用的是更新版本的 Minecraft 並且收到此錯誤，請聯繫開發人員。
+  wwcOldDatabaseStruct: 您選擇的數據庫的設置比以前版本的 WorldwideChat 的設置效率不高。您可以運行以下命令來修復此問題：/wwcd
+    轉換
 

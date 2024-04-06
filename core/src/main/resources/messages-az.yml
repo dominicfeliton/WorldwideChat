@@ -486,9 +486,6 @@ Messages:
     əvvəlki versiyası SQL cədvəllərinizi səmərəsiz bir quruluşla başlatdı. Bu, plaginimizlə
     işləməyə davam etsə də, daha böyük oyunçu qeydləri ilə əhəmiyyətli yavaşlamalar
     ilə nəticələnə bilər.
-  wwcOldSqlStructTrans: 'SQL verilənlər bazanızda WorldwideChat-ın əvvəlki versiyasından
-    səmərəsiz aktiv tərcüməçi cədvəli quruluşu var. Bu problemi həll etmək üçün aşağıdakı
-    əmri işə sala bilərsiniz: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Siz: MySQL-də konsol üçün çap olunan cədvəlləri buraxın,
     onları özünüz çevirin və github repo-dakı yeni quruluşa baxın və ya çevrilməyə
     cəhd etmək üçün bir əmr işə salın. Xahiş edirəm bunu işə salmadan əvvəl verilənlər
@@ -496,9 +493,6 @@ Messages:
     {0}'
   wwcNewSqlConvertFail: Dönüşüm uğursuz oldu... xahiş edirəm masalarınızı hazırladığınız
     ehtiyat nüsxə WorldwideChat-ın söndürülməsi...
-  wwcOldSqlStructRecords: 'SQL verilənlər bazanızda WorldwideChat-ın əvvəlki versiyasından
-    səmərəsiz bir oyunçu qeyd cədvəli quruluşu var. Bu problemi həll etmək üçün aşağıdakı
-    əmri işə sala bilərsiniz: /wwcd convert'
   wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL verilənlər bazası adını
     uğurla dəyişdirdi.
   wwcConfigConversationPostgresOptionalArgsCleared: İsteğe bağlı arqumentlər uğurla
@@ -555,4 +549,7 @@ Messages:
   wwcTimeoutException: Sorğunuzun müddəti bitdi. Xahiş edirəm yenidən cəhd edin.
   wwctbNoMoreOldBooks: Kitab tərcüməsi server versiyasında işləmir. Minecraft-ın daha
     yeni versiyasınızdırsınızsa və bu səhvi alırsınızsa, geliştirici ilə əlaqə saxlayın.
+  wwcOldDatabaseStruct: 'Seçdiyiniz verilənlər bazası WorldwideChat-ın əvvəlki versiyasından
+    səmərəsiz bir quraşdırmaya malikdir. Bu problemi həll etmək üçün aşağıdakı əmri
+    işə sala bilərsiniz: /wwcd convert'
 

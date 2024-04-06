@@ -47,7 +47,7 @@ public class WWCDebug extends BasicCommand {
 
             if (args[0].equalsIgnoreCase("convert")) {
                 // convert shitty struct in SQL
-                if (refs.detectOutdatedTransTable() || refs.detectOutdatedRecordTable()) {
+                if (refs.detectOutdatedTable("activeTranslators") || refs.detectOutdatedTable("playerRecords")) {
                     refs.sendFancyMsg("wwcOldSqlStructLongIntro", "", "&e", sender);
                     refs.sendFancyMsg("wwcOldSqlStructLongTodo", "&c/wwcd convert yes", "&e", sender);
                 } else {
@@ -69,7 +69,7 @@ public class WWCDebug extends BasicCommand {
             }
             if (args[0].equalsIgnoreCase("convert")) {
                 if (args[1].equalsIgnoreCase("yes")) {
-                    if (!refs.detectOutdatedTransTable() && !refs.detectOutdatedRecordTable()) {
+                    if (!refs.detectOutdatedTable("activeTranslators") && !refs.detectOutdatedTable("playerRecords")) {
                         refs.sendFancyMsg("wwcNewSqlStruct", sender);
                         return true;
                     }
@@ -83,6 +83,9 @@ public class WWCDebug extends BasicCommand {
 
                     try (Connection sqlConnection = main.getSqlSession().getConnection()) {
                         /* Adjusting the `activeTranslators` table */
+                        // TODO: Use CommonRefs + new method, this is horribly outdated
+                        // TODO: Perhaps move table creation/update method in LoadUserData to CommonRefs, and add a flag to update existing columns?
+                        // TODO: Also prune old columns
                         try (PreparedStatement alterActiveTranslators = sqlConnection.prepareStatement(
                                 "ALTER TABLE activeTranslators " +
                                         "MODIFY creationDate VARCHAR(40), " +

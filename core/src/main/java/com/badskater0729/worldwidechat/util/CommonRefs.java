@@ -84,6 +84,32 @@ public class CommonRefs {
 			Pair.of("Translator.useSystranTranslate", "Systran Translate")
 	));
 
+	public static final Map<String, Map<String, String>> tableSchemas = new HashMap<>();
+	static {
+		HashMap<String, String> activeTranslatorsSchema = new HashMap<>();
+		activeTranslatorsSchema.put("creationDate", "VARCHAR(40)");
+		activeTranslatorsSchema.put("playerUUID", "VARCHAR(40)");
+		activeTranslatorsSchema.put("inLangCode", "VARCHAR(10)");
+		activeTranslatorsSchema.put("outLangCode", "VARCHAR(10)");
+		activeTranslatorsSchema.put("rateLimit", "INT");
+		activeTranslatorsSchema.put("rateLimitPreviousTime", "VARCHAR(40)");
+		activeTranslatorsSchema.put("translatingChatOutgoing", "BOOLEAN");
+		activeTranslatorsSchema.put("translatingChatIncoming", "BOOLEAN");
+		activeTranslatorsSchema.put("translatingBook", "BOOLEAN");
+		activeTranslatorsSchema.put("translatingSign", "BOOLEAN");
+		activeTranslatorsSchema.put("translatingItem", "BOOLEAN");
+		activeTranslatorsSchema.put("translatingEntity", "BOOLEAN");
+		tableSchemas.put("activeTranslators", activeTranslatorsSchema);
+
+		Map<String, String> playerRecordsSchema = new HashMap<>();
+		playerRecordsSchema.put("creationDate", "VARCHAR(40)");
+		playerRecordsSchema.put("playerUUID", "VARCHAR(40)");
+		playerRecordsSchema.put("attemptedTranslations", "INT");
+		playerRecordsSchema.put("successfulTranslations", "INT");
+		playerRecordsSchema.put("lastTranslationTime", "VARCHAR(40)");
+		tableSchemas.put("playerRecords", playerRecordsSchema);
+	}
+
 	public void runAsync(BukkitRunnable in) {
 		runAsync(true, in);
 	}
@@ -748,7 +774,7 @@ public class CommonRefs {
 				break;
 			default:
 				// Get here if we are adding a new translation service
-				debugMsg("No valid translator currently in use, according to translateText(). Returning original message...");
+				debugMsg("No valid translator currently in use, according to getTranslatorResult(). Returning original message...");
 				return inMessage;
 		}
 		return out;
@@ -804,61 +830,69 @@ public class CommonRefs {
 		return false;
 	}
 
-	public boolean detectOutdatedTransTable() {
+	public boolean detectOutdatedTable(String tableName) {
+		Map<String, String> tableSchema = CommonRefs.tableSchemas.get(tableName);
+		if (tableSchema == null) {
+			main.getLogger().severe("Invalid table??? ( + " + tableName + " ) Contact the developer!");
+			return false;
+		}
+
 		if (main.getSqlSession() == null) {
 			return false;
 		}
 
 		try (Connection sqlConnection = main.getSqlSession().getConnection()) {
-			// Detect old table struct
 			DatabaseMetaData metaData = sqlConnection.getMetaData();
-			ResultSet columns = metaData.getColumns(null, null, "activeTranslators", null);
-			boolean hasOldStructure = true;
+			ResultSet columns = metaData.getColumns(null, null, tableName, null);
+
+			Map<String, String> existingColumns = new HashMap<>();
 			while (columns.next()) {
 				String columnName = columns.getString("COLUMN_NAME");
 				String columnType = columns.getString("TYPE_NAME");
-				if (columnName.equals("rateLimit") && columnType.equals("INT")) {
-					hasOldStructure = false;
-					break;
+				existingColumns.put(columnName, columnType);
+			}
+
+			for (Map.Entry<String, String> column : tableSchema.entrySet()) {
+				String columnName = column.getKey();
+				String expectedColumnType = column.getValue();
+				String actualColumnType = existingColumns.get(columnName);
+
+				if (actualColumnType == null) {
+					// Column is missing
+					debugMsg(String.format("Column '%s' is missing in table '%s'", columnName, tableName));
+					main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+					return true;
+				}
+
+				// Add case exceptions here
+				if (actualColumnType.equals("BIT") && expectedColumnType.equals("BOOLEAN")) {
+					actualColumnType = "BOOLEAN";
+				}
+
+				if (!expectedColumnType.contains(actualColumnType)) {
+					// Column type doesn't match the expected type
+					debugMsg(String.format("Column '%s' in table '%s' has type '%s' but expected type '%s'",
+							columnName, tableName, actualColumnType, expectedColumnType));
+					main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+					return true;
 				}
 			}
-			if (hasOldStructure) {
-				// Warn the user to recreate the database with the new structure
-				main.getLogger().severe(getMsg("wwcOldSqlStructTrans"));
-			}
-			return hasOldStructure;
-		} catch (SQLException e) {
-            e.printStackTrace();
-			return false; // play it safe, probably corrupted anyways...
-        }
-    }
 
-	public boolean detectOutdatedRecordTable() {
-		if (main.getSqlSession() == null) {
-			return false;
-		}
-
-		try (Connection sqlConnection = main.getSqlSession().getConnection()) {
-			// Detect old table struct
-			DatabaseMetaData metaData = sqlConnection.getMetaData();
-			ResultSet columns = metaData.getColumns(null, null, "playerRecords", null);
-			boolean hasOldStructure = true;
-			while (columns.next()) {
-				String columnName = columns.getString("COLUMN_NAME");
-				String columnType = columns.getString("TYPE_NAME");
-				if (columnName.equals("attemptedTranslations") && columnType.equals("INT")) {
-					hasOldStructure = false;
-					break;
+			// Check for extra columns in the table that are not defined in the schema
+			for (String columnName : existingColumns.keySet()) {
+				if (!tableSchema.containsKey(columnName)) {
+					debugMsg(String.format("Extra column '%s' found in table '%s' that is not defined in the schema",
+							columnName, tableName));
+					main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+					return true;
 				}
 			}
-			if (hasOldStructure) {
-				// Warn the user to recreate the database with the new structure
-				main.getLogger().severe(getMsg("wwcOldSqlStructRecords"));
-			}
-			return hasOldStructure;
+
+			debugMsg("SQL table ( " + tableName + " ) is the correct format.");
+			return false; // Table structure matches the schema
 		} catch (SQLException e) {
 			e.printStackTrace();
-			return false; // play it safe, probably corrupted anyways...
+			return false; // Play it safe, probably corrupted anyway
 		}
 	}
 	
@@ -941,9 +975,18 @@ public class CommonRefs {
 	  * @param currPlayer - Player that sent the message
 	  */
 	private void detectColorCodes(String inMessage, Player currPlayer) {
-		if ((inMessage.contains("&") && !main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"))
-				&& !(main.getActiveTranslator(currPlayer)
-						.getCCWarning())) // check if user has already been sent CC warning
+		if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED")) {
+			// Too much
+			return;
+		}
+
+		if (!main.isActiveTranslator(currPlayer) || main.getActiveTranslator(currPlayer).getCCWarning()) {
+			// if player is not an active translator, or they already saw the CC warning
+			return;
+		}
+
+		if ((inMessage.contains("&") && main.isActiveTranslator(currPlayer) && !(main.getActiveTranslator(currPlayer)
+						.getCCWarning()))) // check if user has already been sent CC warning
 		{
 			sendFancyMsg("watsonColorCodeWarning", "", "&d&o", currPlayer);
 			main.getActiveTranslator(currPlayer)

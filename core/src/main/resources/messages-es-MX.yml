@@ -520,16 +520,10 @@ Messages:
   wwcNewSqlStruct: Su base de datos SQL utiliza la nueva estructura y no necesita
     ser convertida.
   wwcNewSqlConvertBegin: Conversión de sus tablas SQL...
-  wwcOldSqlStructRecords: 'Su base de datos SQL tiene una configuración ineficiente
-    de la tabla de registros del reproductor de una versión anterior de WorldwideChat.
-    Puede ejecutar el siguiente comando para solucionar este problema: /wwcd convert'
   wwcOldSqlStructLongIntro: Nos disculpamos sinceramente por las molestias, pero una
     versión anterior de WorldwideChat inicializó sus tablas SQL con una estructura
     ineficiente. Si bien esto continuará funcionando con nuestro complemento, puede
     resultar en ralentidades significativas con registros de jugadores más grandes.
-  wwcOldSqlStructTrans: 'Su base de datos SQL tiene una configuración ineficiente
-    de la tabla traductora activa de una versión anterior de WorldwideChat. Puede
-    ejecutar el siguiente comando para solucionar este problema: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Puedes: soltar las tablas impresas a la consola en MySQL,
     convertirlas tú mismo y mirar la nueva estructura en el repo github, o ejecutar
     un comando para intentar la conversión en vivo. Asegúrese de haber realizado una
@@ -603,4 +597,7 @@ Messages:
   wwctbNoMoreOldBooks: La traducción de libros no funciona en la versión del servidor.
     Si estás en una versión más reciente de Minecraft y recibes este error, comunícate
     con el desarrollador.
+  wwcOldDatabaseStruct: 'La base de datos elegida tiene una configuración ineficiente
+    de una versión anterior de WorldwideChat. Puede ejecutar el siguiente comando
+    para solucionar este problema: /wwcd convert'
 

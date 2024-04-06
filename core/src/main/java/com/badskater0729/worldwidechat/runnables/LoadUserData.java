@@ -9,7 +9,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.DatabaseMetaData;
-import java.util.Iterator;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import com.badskater0729.worldwidechat.util.storage.PostgresUtils;
@@ -63,34 +64,11 @@ public class LoadUserData implements Runnable {
 		if (mainConfig.getBoolean("Storage.useSQL") && main.isSQLConnValid(false)) {
 			try (Connection sqlConnection = sql.getConnection()) {
 				/* Create tables if they do not exist already */
-				/* OLD BAD STRUCTS FOR REFERENCE
-				try (PreparedStatement initActiveTranslators = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
-						+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),inLangCode VARCHAR(12),outLangCode VARCHAR(12),rateLimit VARCHAR(256),"
-						+ "rateLimitPreviousTime VARCHAR(256),translatingChatOutgoing VARCHAR(12), translatingChatIncoming VARCHAR(12),"
-						+ "translatingBook VARCHAR(12),translatingSign VARCHAR(12),translatingItem VARCHAR(12),translatingEntity VARCHAR(12),PRIMARY KEY (playerUUID))")) {
-					initActiveTranslators.executeUpdate();
-				}
-				try (PreparedStatement initPlayerRecords = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS playerRecords "
-						+ "(creationDate VARCHAR(256),playerUUID VARCHAR(100),attemptedTranslations VARCHAR(256),successfulTranslations VARCHAR(256),"
-						+ "lastTranslationTime VARCHAR(256),PRIMARY KEY (playerUUID))")) {
-					initPlayerRecords.executeUpdate();
-				}
-				 */
-				try (PreparedStatement initActiveTranslators = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
-						+ "(creationDate VARCHAR(40),playerUUID VARCHAR(40),inLangCode VARCHAR(10),outLangCode VARCHAR(10),rateLimit INT,"
-						+ "rateLimitPreviousTime VARCHAR(40),translatingChatOutgoing BOOLEAN, translatingChatIncoming BOOLEAN,"
-						+ "translatingBook BOOLEAN,translatingSign BOOLEAN,translatingItem BOOLEAN,translatingEntity BOOLEAN,PRIMARY KEY (playerUUID))")) {
-					initActiveTranslators.executeUpdate();
-				}
-				try (PreparedStatement initPlayerRecords = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS playerRecords "
-						+ "(creationDate VARCHAR(40),playerUUID VARCHAR(40),attemptedTranslations INT,successfulTranslations INT,"
-						+ "lastTranslationTime VARCHAR(40),PRIMARY KEY (playerUUID))")) {
-					initPlayerRecords.executeUpdate();
-				}
+				setupSQLTables();
 
 				// Warn about old table structs
-				refs.detectOutdatedRecordTable();
-				refs.detectOutdatedTransTable();
+				refs.detectOutdatedTable("activeTranslators");
+				refs.detectOutdatedTable("playerRecords");
 				
 				// Load PlayerRecord using SQL
 				try (ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM playerRecords")) {
@@ -135,6 +113,8 @@ public class LoadUserData implements Runnable {
 			}
 		} else if (mainConfig.getBoolean("Storage.usePostgreSQL") && main.isPostgresConnValid(false)) {
 			try (Connection postgresConnection = postgres.getConnection()) {
+				// TODO: Convert to SQL methods, they are identical...
+
 				// Create tables if they do not exist already
 				try (PreparedStatement initActiveTranslators = postgresConnection.prepareStatement(
 						"CREATE TABLE IF NOT EXISTS activeTranslators " +
@@ -355,5 +335,55 @@ public class LoadUserData implements Runnable {
 			return false;
 		}
 		return true;
+	}
+
+	private void setupSQLTables() throws SQLException {
+		for (Map.Entry<String, Map<String, String>> entry : CommonRefs.tableSchemas.entrySet()) {
+			String tableName = entry.getKey();
+			Map<String, String> tableSchema = entry.getValue();
+			createOrUpdateTable(tableName, tableSchema);
+		}
+	}
+
+	private void createOrUpdateTable(String tableName, Map<String, String> tableSchema) throws SQLException {
+		try (Connection sqlConnection = sql.getConnection()) {
+			String createTableQuery = "CREATE TABLE IF NOT EXISTS " + tableName + " (";
+			createTableQuery += tableSchema.entrySet().stream()
+					.map(column -> column.getKey() + " " + column.getValue())
+					.collect(Collectors.joining(", "));
+			createTableQuery += ", PRIMARY KEY (playerUUID))"; // Assuming 'playerUUID' is your intended primary key
+			refs.debugMsg(createTableQuery);
+
+			try (PreparedStatement createTable = sqlConnection.prepareStatement(createTableQuery)) {
+				createTable.executeUpdate();
+			}
+
+			// TODO: Test HEAVILY
+			String getColumnsQuery = "SELECT COLUMN_NAME " +
+					"FROM INFORMATION_SCHEMA.COLUMNS " +
+					"WHERE TABLE_SCHEMA = (SELECT DATABASE()) AND TABLE_NAME = ?";
+			try (PreparedStatement getColumns = sqlConnection.prepareStatement(getColumnsQuery)) {
+				getColumns.setString(1, tableName);
+				ResultSet columnsResult = getColumns.executeQuery();
+
+				Set<String> existingColumns = new HashSet<>();
+				while (columnsResult.next()) {
+					existingColumns.add(columnsResult.getString("COLUMN_NAME"));
+				}
+
+				for (Map.Entry<String, String> column : tableSchema.entrySet()) {
+					String columnName = column.getKey();
+					String columnType = column.getValue();
+					if (!existingColumns.contains(columnName)) {
+						refs.debugMsg("Adding column " + columnName);
+						String addColumnQuery = "ALTER TABLE " + tableName + " ADD COLUMN " + columnName + " " + columnType;
+						try (PreparedStatement addColumn = sqlConnection.prepareStatement(addColumnQuery)) {
+							addColumn.executeUpdate();
+						}
+					}
+				}
+			}
+			refs.debugMsg("Done with initial table creation/modification...");
+		}
 	}
 }

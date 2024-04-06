@@ -391,11 +391,7 @@ Messages:
   wwcNewSqlConvertFinish: SQL テーブルの変換が終了しました。ワールドワイドチャットをリロード中...
   wwcNewSqlStruct: SQL データベースは新しい構造を使用しているため、変換する必要はありません。
   wwcNewSqlConvertBegin: SQL テーブルを変換中...
-  wwcOldSqlStructRecords: SQL データベースには、以前のバージョンの WorldwideChat のプレイヤーレコードテーブルの設定が非効率的です。この問題を解決するには、/wwcd
-    convert コマンドを実行してください。
   wwcOldSqlStructLongIntro: ご不便をおかけして申し訳ありませんが、WorldwideChatの以前のバージョンでは、SQLテーブルが非効率的な構造で初期化されていました。これはプラグインでも引き続き機能しますが、プレイヤーの記録が大きいほど速度が大幅に低下する可能性があります。
-  wwcOldSqlStructTrans: SQL データベースには、以前のバージョンの WorldwideChat で使われていた非効率的なアクティブトランスレータテーブル設定があります。この問題を解決するには、/wwcd
-    convert コマンドを実行してください。
   wwcOldSqlStructLongTodo: MySQLのコンソールに出力されたテーブルをドロップするか、自分で変換してgithubリポジトリの新しい構造を確認するか、コマンドを実行してライブで変換を試みることができます。これを実行する前に、必ずデータベースのバックアップを作成してください。ある場合、コマンドは
     {0} です。
   wwcNewSqlConvertFail: 変換に失敗しました。作成したバックアップからテーブルを復元してください。ワールドワイドチャットを無効にしています...
@@ -440,4 +436,6 @@ Messages:
   wwctrlRateLimitSetTarget: レート制限を {0} 秒から {1} 秒に設定します。
   wwcTimeoutException: リクエストがタイムアウトしました。もう一度試してください。
   wwctbNoMoreOldBooks: ご使用のサーバーバージョンでは、本の翻訳は機能しません。Minecraft の最新バージョンを使用していて、このエラーが表示される場合は、開発者に問い合わせてください。
+  wwcOldDatabaseStruct: 選択したデータベースは、以前のバージョンの WorldwideChat の設定では効率が悪いです。この問題を解決するには、/wwcd
+    convert コマンドを実行してください。
 

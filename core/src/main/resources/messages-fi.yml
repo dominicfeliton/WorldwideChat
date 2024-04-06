@@ -487,18 +487,12 @@ Messages:
     aiempi versio alusti SQL-taulukosi tehottomalla rakenteella. Vaikka tämä toimii
     edelleen laajennuksessamme, se voi johtaa merkittäviin hidastumisiin suurempien
     pelaajien ennätysten myötä.
-  wwcOldSqlStructTrans: 'SQL-tietokannassasi on tehoton aktiivinen kääntäjätaulukon
-    asetukset aiemmasta WorldwideChat-versiosta. Voit korjata ongelman suorittamalla
-    seuraavan komennon: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Voit: pudottaa konsoliin tulostetut taulukot MySQL:ssä,
     muuntaa ne itse ja katsoa uutta rakennetta github-repossa tai suorittaa komennon
     yrittääksesi muuntamista suorana. Varmista, että olet tehnyt varmuuskopion tietokannastasi
     ennen tämän suorittamista. Jos sinulla on, komento on: {0}'
   wwcNewSqlConvertFail: Muuntaminen epäonnistui... palauta taulukot tekemästäsi varmuuskopiosta.
     WorldwideChatin poistaminen käytöstä...
-  wwcOldSqlStructRecords: 'SQL-tietokannassasi on tehoton soittimen tietuetaulukon
-    asetukset aiemmasta WorldwideChat-versiosta. Voit korjata ongelman suorittamalla
-    seuraavan komennon: /wwcd convert'
   wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL-tietokannan nimi on
     muutettu onnistuneesti.
   wwcConfigConversationPostgresOptionalArgsCleared: Valinnaiset argumentit tyhjennettiin
@@ -556,4 +550,7 @@ Messages:
   wwcTimeoutException: Pyyntösi aikakatkaisi. Yritä uudelleen.
   wwctbNoMoreOldBooks: Kirjan käännös ei toimi palvelinversiossasi. Jos käytät uudempaa
     Minecraft-versiota ja saat tämän virheen, ota yhteyttä kehittäjään.
+  wwcOldDatabaseStruct: 'Valitsemallasi tietokannalla on tehoton asennus aiemmasta
+    WorldwideChat-versiosta. Voit korjata ongelman suorittamalla seuraavan komennon:
+    /wwcd convert'
 

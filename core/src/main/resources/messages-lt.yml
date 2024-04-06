@@ -491,16 +491,10 @@ Messages:
   wwcNewSqlConvertFinish: Baigė konvertuoti SQL lenteles. Perkraunama WorldwideChat...
   wwcNewSqlStruct: Jūsų SQL duomenų bazė naudoja naują struktūrą ir jos nereikia konvertuoti.
   wwcNewSqlConvertBegin: SQL lentelių konvertavimas...
-  wwcOldSqlStructRecords: 'Jūsų SQL duomenų bazėje yra neefektyvi grotuvo įrašų lentelės
-    sąranka iš ankstesnės WorldwideChat versijos. Norėdami išspręsti šią problemą,
-    galite paleisti šią komandą: /wwcd convert'
   wwcOldSqlStructLongIntro: Nuoširdžiai atsiprašome už nepatogumus, tačiau ankstesnė
     “WorldwideChat” versija inicijavo jūsų SQL lenteles su neefektyvia struktūra.
     Nors tai ir toliau veiks su mūsų įskiepiu, tai gali sukelti didelius sulėtėjimus
     su didesniais žaidėjų įrašais.
-  wwcOldSqlStructTrans: 'Jūsų SQL duomenų bazėje yra neefektyvi aktyvi vertėjo lentelės
-    sąranka iš ankstesnės WorldwideChat versijos. Norėdami išspręsti šią problemą,
-    galite paleisti šią komandą: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Galite: numesti lenteles, atspausdintas į konsolę MySQL,
     konvertuoti jas patys ir pažvelgti į naują struktūrą github repo, arba paleisti
     komandą bandyti konvertuoti gyvai. Įsitikinkite, kad prieš paleisdami šią duomenų
@@ -569,4 +563,7 @@ Messages:
   wwcTimeoutException: Jūsų prašymo laikas baigėsi. Prašome pabandyti dar kartą.
   wwctbNoMoreOldBooks: Knygų vertimas neveikia jūsų serverio versijoje. Jei naudojate
     naujesnę “Minecraft” versiją ir gausite šią klaidą, susisiekite su kūrėju.
+  wwcOldDatabaseStruct: 'Jūsų pasirinkta duomenų bazė turi neefektyvią sąranką iš
+    ankstesnės “WorldwideChat” versijos. Norėdami išspręsti šią problemą, galite paleisti
+    šią komandą: /wwcd convert'
 

@@ -492,18 +492,12 @@ Messages:
     af WorldwideChat initialiserede dine SQL-tabeller med en ineffektiv struktur.
     Selvom dette fortsat vil fungere med vores plugin, kan det resultere i betydelige
     afmatninger med større spilleroptegnelser.
-  wwcOldSqlStructTrans: 'Din SQL-database har en ineffektiv aktiv oversættertabelopsætning
-    fra en tidligere version af WorldwideChat. Du kan køre følgende kommando for at
-    løse dette problem: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Du kan: slippe tabellerne udskrevet til konsol i MySQL,
     konvertere dem selv og se på den nye struktur i github-repo, eller køre en kommando
     for at forsøge konverteringen live. Sørg for, at du har lavet en sikkerhedskopi
     af din database, før du kører dette. Hvis du har, er kommandoen: {0}'
   wwcNewSqlConvertFail: Konvertering mislykkedes... gendan venligst dine tabeller
     fra den sikkerhedskopi, du lavede. Deaktivering af WorldwideChat...
-  wwcOldSqlStructRecords: 'Din SQL-database har en ineffektiv opsætning af afspilningstabeller
-    fra en tidligere version af WorldwideChat. Du kan køre følgende kommando for at
-    løse dette problem: /wwcd convert'
   wwcConfigConversationPostgresDatabaseNameSuccess: Ændret PostgreSQL-databasens navn
     med succes.
   wwcConfigConversationPostgresOptionalArgsCleared: Valgfrie argumenter ryddet med
@@ -562,4 +556,7 @@ Messages:
   wwctbNoMoreOldBooks: Bogoversættelse fungerer ikke på din serverversion. Hvis du
     bruger en nyere version af Minecraft, og du får denne fejl, bedes du kontakte
     udvikleren.
+  wwcOldDatabaseStruct: 'Din valgte database har en ineffektiv opsætning fra en tidligere
+    version af WorldwideChat. Du kan køre følgende kommando for at løse dette problem:
+    /wwcd convert'
 

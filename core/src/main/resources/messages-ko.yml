@@ -409,12 +409,8 @@ Messages:
   wwcNewSqlConvertFinish: SQL 테이블 변환을 완료했습니다.월드와이드 채팅을 다시 로드하는 중...
   wwcNewSqlStruct: SQL 데이터베이스가 새 구조를 사용하고 있으므로 변환할 필요가 없습니다.
   wwcNewSqlConvertBegin: SQL 테이블 변환 중...
-  wwcOldSqlStructRecords: SQL 데이터베이스가 이전 버전의 WorldwideChat에서 설정한 플레이어 레코드 테이블이 비효율적입니다.다음
-    명령을 실행하여 이 문제를 해결할 수 있습니다. /wwcd convert
   wwcOldSqlStructLongIntro: 불편을 끼쳐 드려 대단히 죄송합니다. 이전 버전의 WorldwideChat에서는 SQL 테이블이
     비효율적인 구조로 초기화되었습니다.이 기능은 플러그인에서도 계속 작동하지만 플레이어 레코드가 커지면 속도가 크게 느려질 수 있습니다.
-  wwcOldSqlStructTrans: SQL 데이터베이스의 활성 변환기 테이블 설정은 이전 버전의 WorldwideChat보다 비효율적입니다.다음
-    명령을 실행하여 이 문제를 해결할 수 있습니다. /wwcd convert
   wwcOldSqlStructLongTodo: MySQL의 콘솔에 인쇄된 테이블을 드롭하거나, 직접 변환하고, github 리포지토리에서 새 구조를
     살펴보거나, 명령을 실행하여 실시간으로 변환을 시도할 수 있습니다.이 작업을 실행하기 전에 데이터베이스를 백업했는지 확인하세요.있는 경우 명령은
     다음과 같습니다. {0}
@@ -464,4 +460,6 @@ Messages:
   wwcTimeoutException: 요청 시간이 초과되었습니다.다시 시도해 주세요.
   wwctbNoMoreOldBooks: 사용 중인 서버 버전에서는 책 번역이 작동하지 않습니다.최신 버전의 Minecraft를 사용 중인데 이 오류가
     발생하면 개발자에게 문의하세요.
+  wwcOldDatabaseStruct: 선택한 데이터베이스가 이전 버전의 WorldwideChat보다 비효율적으로 설정되었습니다.다음 명령을 실행하여
+    이 문제를 해결할 수 있습니다. /wwcd convert
 

@@ -482,16 +482,10 @@ Messages:
   wwcNewSqlConvertFinish: Završeno pretvaranje SKL tabela. Ponovno učitavanje VorldWideChat-a...
   wwcNewSqlStruct: Vaša SKL baza podataka koristi novu strukturu i ne treba je konvertovati.
   wwcNewSqlConvertBegin: Pretvaranje vaših SKL tabela...
-  wwcOldSqlStructRecords: 'Vaša SKL baza podataka ima neefikasno podešavanje tabele
-    zapisa igrača iz prethodne verzije VorldWideChat-a. Možete pokrenuti sledeću komandu
-    da biste rešili ovaj problem: /vvcd convert'
   wwcOldSqlStructLongIntro: Iskreno se izvinjavamo zbog neugodnosti, ali prethodna
     verzija VorldWideChat-a inicijalizovala je vaše SKL tabele sa neefikasnom strukturom.
     Iako će ovo nastaviti da funkcioniše sa našim dodatkom, to može rezultirati značajnim
     usporavanjem sa većim zapisima igrača.
-  wwcOldSqlStructTrans: 'Vaša SKL baza podataka ima neefikasno podešavanje aktivne
-    tabele prevodilaca iz prethodne verzije VorldWideChat-a. Možete pokrenuti sledeću
-    komandu da biste rešili ovaj problem: /vvcd convert'
   wwcOldSqlStructLongTodo: 'Možete: ispustiti tabele odštampane na konzolu u MiSKL-u,
     sami ih pretvoriti i pogledati novu strukturu u github repo-u ili pokrenuti komandu
     da pokušate konverziju uživo. Uverite se da ste napravili rezervnu kopiju svoje
@@ -556,4 +550,7 @@ Messages:
   wwcTimeoutException: Vaš zahtev je istekao. Pokušajte ponovo.
   wwctbNoMoreOldBooks: Prevod knjiga nije funkcionalan na verziji vašeg servera. Ako
     ste na novijoj verziji Minecraft-a i dobijete ovu grešku, kontaktirajte programera.
+  wwcOldDatabaseStruct: 'Vaša izabrana baza podataka ima neefikasno podešavanje iz
+    prethodne verzije VorldWideChat-a. Možete pokrenuti sledeću komandu da biste rešili
+    ovaj problem: /vvcd convert'
 

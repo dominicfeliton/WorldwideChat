@@ -501,9 +501,6 @@ Messages:
     egy korábbi verziója nem hatékony struktúrával inicializálta az SQL táblákat.
     Bár ez továbbra is működni fog a bővítményünkkel, jelentős lassulást eredményezhet
     nagyobb játékosok rekordokkal.
-  wwcOldSqlStructTrans: 'Az SQL-adatbázis nem hatékony aktív fordítótáblát tartalmaz
-    a WorldwideChat korábbi verziójához képest. A probléma megoldásához futtathatja
-    a következő parancsot: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Lehetőség van: dobhatja le a konzolra nyomtatott táblákat
     a MySQL-ben, konvertálhatja azokat, és megnézheti az új struktúrát a github repo-ban,
     vagy futtathat egy parancsot az átalakítás élőben történő kipróbálásához. Kérjük,
@@ -511,9 +508,6 @@ Messages:
     ezt futtatná. Ha van, akkor a parancs a következő: {0}'
   wwcNewSqlConvertFail: Az átalakítás sikertelen... kérjük, állítsa vissza a táblákat
     az elkészített biztonsági másolatból. A WorldwideChat letiltása...
-  wwcOldSqlStructRecords: 'Az SQL adatbázis a WorldwideChat korábbi verziójához képest
-    nem hatékony lejátszórekordtábla beállítással rendelkezik. A probléma megoldásához
-    futtathatja a következő parancsot: /wwcd convert'
   wwcConfigConversationPostgresDatabaseNameSuccess: Sikeresen megváltoztatta a PostgreSQL
     adatbázis nevét.
   wwcConfigConversationPostgresOptionalArgsCleared: Az opcionális argumentumok sikeresen
@@ -576,4 +570,7 @@ Messages:
   wwctbNoMoreOldBooks: A könyvfordítás nem működik a szerver verzióján. Ha a Minecraft
     újabb verzióját használja, és ezt a hibát kapja, kérjük, lépjen kapcsolatba a
     fejlesztővel.
+  wwcOldDatabaseStruct: 'A választott adatbázis nem hatékony beállítással rendelkezik
+    a WorldwideChat korábbi verziójához képest. A probléma megoldásához futtathatja
+    a következő parancsot: /wwcd convert'
 

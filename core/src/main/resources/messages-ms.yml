@@ -488,16 +488,10 @@ Messages:
   wwcNewSqlStruct: Pangkalan data SQL anda menggunakan struktur baru dan tidak perlu
     ditukar.
   wwcNewSqlConvertBegin: Menukar jadual SQL anda...
-  wwcOldSqlStructRecords: 'Pangkalan data SQL anda mempunyai persediaan jadual rekod
-    pemain yang tidak cekap daripada versi WorldwideChat sebelumnya. Anda boleh menjalankan
-    arahan berikut untuk menyelesaikan masalah ini: /wwcd convert'
   wwcOldSqlStructLongIntro: Kami dengan tulus memohon maaf atas kesulitan, tetapi
     versi terdahulu WorldwideChat memulakan jadual SQL anda dengan struktur yang tidak
     cekap. Walaupun ini akan terus berfungsi dengan plugin kami, ia boleh mengakibatkan
     perlambatan yang ketara dengan rekod pemain yang lebih besar.
-  wwcOldSqlStructTrans: 'Pangkalan data SQL anda mempunyai persediaan jadual penterjemah
-    aktif yang tidak cekap daripada versi terdahulu WorldwideChat. Anda boleh menjalankan
-    arahan berikut untuk menyelesaikan masalah ini: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Anda boleh: menjatuhkan jadual yang dicetak untuk konsol
     di MySQL, menukarnya sendiri dan lihat struktur baru dalam repo github, atau jalankan
     arahan untuk mencuba penukaran secara langsung. Sila pastikan anda TELAH MEMBUAT
@@ -559,4 +553,7 @@ Messages:
   wwctbNoMoreOldBooks: Terjemahan buku tidak berfungsi pada versi pelayan anda. Jika
     anda menggunakan versi Minecraft yang lebih terkini dan anda mendapat ralat ini,
     sila hubungi pemaju.
+  wwcOldDatabaseStruct: 'Pangkalan data pilihan anda mempunyai persediaan yang tidak
+    cekap daripada versi WorldwideChat sebelumnya. Anda boleh menjalankan arahan berikut
+    untuk menyelesaikan masalah ini: /wwcd convert'
 

@@ -498,16 +498,10 @@ Messages:
     WorldwideChat...
   wwcNewSqlStruct: Vaša databáza SQL používa novú štruktúru a nemusí byť konvertovaná.
   wwcNewSqlConvertBegin: Konverzia vašich tabuliek SQL...
-  wwcOldSqlStructRecords: 'Vaša databáza SQL má neefektívne nastavenie tabuľky záznamov
-    hráča z predchádzajúcej verzie WorldwideChat. Na vyriešenie tohto problému môžete
-    spustiť nasledujúci príkaz: /wwcd convert'
   wwcOldSqlStructLongIntro: Úprimne sa ospravedlňujeme za nepríjemnosti, ale predchádzajúca
     verzia WorldwideChat inicializovala vaše SQL tabuľky s neefektívnou štruktúrou.
     Aj keď to bude naďalej fungovať s naším pluginom, môže to mať za následok výrazné
     spomalenie pri väčších záznamoch hráčov.
-  wwcOldSqlStructTrans: 'Vaša databáza SQL má neefektívne nastavenie aktívnej tabuľky
-    prekladača z predchádzajúcej verzie WorldwideChat. Na vyriešenie tohto problému
-    môžete spustiť nasledujúci príkaz: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Môžete: pustiť tabuľky vytlačené do konzoly v MySQL, previesť
     ich sami a pozrieť sa na novú štruktúru v repo github alebo spustiť príkaz na
     pokus o konverziu naživo. Uistite sa, že ste si urobili ZÁLOHU SVOJEJ DATABÁZY
@@ -570,4 +564,7 @@ Messages:
   wwcTimeoutException: Vaša požiadavka vypršala časový limit. Prosím, skúste to znova.
   wwctbNoMoreOldBooks: Preklad knihy vo vašej serverovej verzii nie je funkčný. Ak
     používate novšiu verziu Minecraftu a zobrazí sa táto chyba, kontaktujte vývojára.
+  wwcOldDatabaseStruct: 'Vaša vybraná databáza má neefektívne nastavenie z predchádzajúcej
+    verzie WorldwideChat. Na vyriešenie tohto problému môžete spustiť nasledujúci
+    príkaz: /wwcd convert'
 

@@ -493,16 +493,10 @@ Messages:
   wwcNewSqlConvertFinish: Zakończono konwersję tabel SQL. Ponowne ładowanie WorldwideChat...
   wwcNewSqlStruct: Twoja baza danych SQL używa nowej struktury i nie musi być konwertowana.
   wwcNewSqlConvertBegin: Konwertowanie tabel SQL...
-  wwcOldSqlStructRecords: 'Twoja baza danych SQL ma niewydajną konfigurację tabeli
-    rekordów odtwarzacza z poprzedniej wersji WorldwideChat. Możesz uruchomić następujące
-    polecenie, aby rozwiązać ten problem: /wwcd convert'
   wwcOldSqlStructLongIntro: Serdecznie przepraszamy za niedogodności, ale poprzednia
     wersja WorldwideChat zainicjowała tabele SQL z niewydajną strukturą. Chociaż będzie
     to nadal działać z naszą wtyczką, może to spowodować znaczne spowolnienie przy
     większych rekordach graczy.
-  wwcOldSqlStructTrans: 'Twoja baza danych SQL ma niewydajną konfigurację aktywnej
-    tabeli translatora z poprzedniej wersji WorldwideChat. Możesz uruchomić następujące
-    polecenie, aby rozwiązać ten problem: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Możesz: upuścić tabele wydrukowane do konsoli w MySQL,
     przekonwertować je samodzielnie i spojrzeć na nową strukturę w repozytorium github
     lub uruchomić polecenie, aby spróbować konwersji na żywo. UPEWNIJ SIĘ, ŻE WYKONAŁEŚ
@@ -566,4 +560,7 @@ Messages:
   wwcTimeoutException: Twoja prośba wygasła. Spróbuj ponownie.
   wwctbNoMoreOldBooks: Tłumaczenie książek nie działa w wersji serwera. Jeśli korzystasz
     z nowszej wersji Minecraft i pojawi się ten błąd, skontaktuj się z programistą.
+  wwcOldDatabaseStruct: 'Wybrana baza danych ma nieefektywną konfigurację z poprzedniej
+    wersji WorldwideChat. Możesz uruchomić następujące polecenie, aby rozwiązać ten
+    problem: /wwcd convert'
 

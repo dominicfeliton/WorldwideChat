@@ -485,16 +485,10 @@ Messages:
   wwcNewSqlStruct: SQL veritabanınız yeni yapıyı kullanıyor ve dönüştürülmesine gerek
     yok.
   wwcNewSqlConvertBegin: SQL tablolarınızı dönüştürme...
-  wwcOldSqlStructRecords: 'SQL veritabanınız, WorldwideChat''in önceki bir sürümünden
-    verimsiz bir oynatıcı kayıt tablosu kurulumuna sahiptir. Bu sorunu düzeltmek için
-    aşağıdaki komutu çalıştırabilirsiniz: /wwcd convert'
   wwcOldSqlStructLongIntro: Verdiğimiz rahatsızlıktan dolayı içtenlikle özür dileriz,
     ancak WorldwideChat'in önceki bir sürümü SQL tablolarınızı verimsiz bir yapıyla
     başlattı. Bu eklentimizle çalışmaya devam edecek olsa da, daha büyük oyuncu kayıtlarıyla
     önemli yavaşlamalara neden olabilir.
-  wwcOldSqlStructTrans: 'SQL veritabanınız, WorldwideChat''in önceki bir sürümünden
-    verimsiz bir etkin çevirmen tablosu kurulumuna sahiptir. Bu sorunu düzeltmek için
-    aşağıdaki komutu çalıştırabilirsiniz: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Yapabilirsiniz: MySQL''de konsola yazdırılan tabloları
     bırakın, kendiniz dönüştürebilir ve github deposundaki yeni yapıya bakın veya
     dönüşümü canlı olarak denemek için bir komut çalıştırabilirsiniz. Lütfen BUNU
@@ -561,4 +555,7 @@ Messages:
   wwctbNoMoreOldBooks: Kitap çevirisi sunucu sürümünüzde işlevsel değildir. Minecraft'ın
     daha yeni bir sürümünü kullanıyorsanız ve bu hatayı alıyorsanız, lütfen geliştiriciyle
     iletişime geçin.
+  wwcOldDatabaseStruct: 'Seçtiğiniz veritabanı, WorldwideChat"in önceki bir sürümünden
+    verimsiz bir kuruluma sahiptir. Bu sorunu düzeltmek için aşağıdaki komutu çalıştırabilirsiniz:
+    /wwcd convert'
 

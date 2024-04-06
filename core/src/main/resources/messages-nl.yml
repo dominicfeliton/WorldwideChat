@@ -507,9 +507,6 @@ Messages:
     een eerdere versie van WorldwideChat heeft uw SQL-tabellen geïnitialiseerd met
     een inefficiënte structuur. Hoewel dit met onze plug-in blijft werken, kan dit
     leiden tot aanzienlijke vertragingen bij grotere spelersrecords.
-  wwcOldSqlStructTrans: 'Uw SQL-database heeft een inefficiënte actieve vertaaltabelconfiguratie
-    van een eerdere versie van WorldwideChat. Je kunt de volgende opdracht uitvoeren
-    om dit probleem op te lossen: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Je kunt: de tabellen die zijn afgedrukt naar de console
     in MySQL neerzetten, ze zelf converteren en de nieuwe structuur in de github-repo
     bekijken, of een opdracht uitvoeren om de conversie live uit te voeren. Zorg ervoor
@@ -517,9 +514,6 @@ Messages:
     dat hebt, is het commando: {0}'
   wwcNewSqlConvertFail: Conversie is mislukt... herstel alstublieft uw tabellen vanaf
     de back-up die u hebt gemaakt. WorldwideChat uitschakelen...
-  wwcOldSqlStructRecords: 'Uw SQL-database heeft een inefficiënte configuratie van
-    de opnametabel voor spelers ten opzichte van een eerdere versie van WorldwideChat.
-    Je kunt de volgende opdracht uitvoeren om dit probleem op te lossen: /wwcd convert'
   wwcConfigConversationPostgresDatabaseNameSuccess: De naam van de PostgreSQL-database
     is succesvol gewijzigd.
   wwcConfigConversationPostgresOptionalArgsCleared: Optionele argumenten zijn met
@@ -581,4 +575,7 @@ Messages:
   wwctbNoMoreOldBooks: Boekvertaling werkt niet op je serverversie. Als je een recentere
     versie van Minecraft gebruikt en je krijgt deze foutmelding, neem dan contact
     op met de ontwikkelaar.
+  wwcOldDatabaseStruct: 'De door u gekozen database heeft een inefficiënte configuratie
+    ten opzichte van een eerdere versie van WorldwideChat. Je kunt de volgende opdracht
+    uitvoeren om dit probleem op te lossen: /wwcd convert'
 

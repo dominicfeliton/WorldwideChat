@@ -493,18 +493,12 @@ Messages:
     verzija WorldwideChat-a inicijalizirala je vaše SQL tablice neefikasnom strukturom.
     Iako će ovo nastaviti funkcionirati s našim dodatkom, to može rezultirati značajnim
     usporavanjem s većim zapisima igrača.
-  wwcOldSqlStructTrans: 'Vaša SQL baza podataka ima neefikasnu postavku aktivne tablice
-    prevoditelja iz prethodne verzije WorldwideChat-a. Možete pokrenuti sljedeću naredbu
-    da biste riješili ovaj problem: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Možete: ispustiti tablice ispisane na konzolu u MySQL-u,
     sami ih pretvoriti i pogledati novu strukturu u github repo-u ili pokrenuti naredbu
     za pokušaj konverzije uživo. Uvjerite se da ste napravili sigurnosnu kopiju svoje
     baze podataka prije pokretanja ove baze podataka. Ako imate, naredba je: {0}'
   wwcNewSqlConvertFail: Konverzija nije uspjela... vratite tablice iz sigurnosne kopije
     koju ste napravili. Onemogućavanje WorldwideChat...
-  wwcOldSqlStructRecords: 'Vaša SQL baza podataka ima neefikasnu postavku tablice
-    zapisa igrača iz prethodne verzije WorldwideChat-a. Možete pokrenuti sljedeću
-    naredbu da biste riješili ovaj problem: /wwcd convert'
   wwcConfigConversationPostgresDatabaseNameSuccess: Uspješno je promijenjen naziv
     baze podataka PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Opcijski argumenti su uspješno
@@ -562,4 +556,7 @@ Messages:
   wwcTimeoutException: Vaš zahtjev je istekao. Molimo pokušajte ponovo.
   wwctbNoMoreOldBooks: Prijevod knjiga nije funkcionalan na vašoj verziji servera.
     Ako ste na novijoj verziji Minecrafta i dobijete ovu grešku, kontaktirajte programera.
+  wwcOldDatabaseStruct: 'Vaša odabrana baza podataka ima neefikasno postavljanje iz
+    prethodne verzije WorldwideChat-a. Možete pokrenuti sljedeću naredbu da biste
+    riješili ovaj problem: /wwcd convert'
 

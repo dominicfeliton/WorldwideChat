@@ -521,16 +521,10 @@ Messages:
   wwcNewSqlStruct: Tá do bhunachar sonraí SQL ag úsáid an struchtúr nua agus ní gá
     é a thiontú.
   wwcNewSqlConvertBegin: Do tháblaí SQL a thiontú...
-  wwcOldSqlStructRecords: 'Tá socrú tábla taifead imreoirí neamhéifeachtach ag do
-    bhunachar sonraí SQL ó leagan roimhe seo de WorldwideChat. Is féidir leat an t-ordú
-    seo a leanas a reáchtáil chun an cheist seo a shocrú: /wwcd convert'
   wwcOldSqlStructLongIntro: Táimid leithscéal ó chroí as an míchaoithiúlacht, ach
     chuir leagan roimhe seo de WorldwideChat tús le do tháblaí SQL le struchtúr neamhéifeachtach.
     Cé go leanfaidh sé seo ag feidhmiú lenár mbreiseán, d'fhéadfadh moilliú suntasacha
     a bheith mar thoradh air le taifid imreoirí níos mó.
-  wwcOldSqlStructTrans: 'Tá socrú tábla aistritheora gníomhach neamhéifeachtach ag
-    do bhunachar sonraí SQL ó leagan roimhe seo de WorldwideChat. Is féidir leat an
-    t-ordú seo a leanas a reáchtáil chun an cheist seo a shocrú: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Is féidir leat: na táblaí atá clóite le consól i MySQL
     a scaoileadh, iad a thiontú tú féin agus féachaint ar an struchtúr nua sa repo
     github, nó ordú a reáchtáil chun iarracht a dhéanamh ar an tiontú beo. Déan cinnte
@@ -597,4 +591,7 @@ Messages:
   wwctbNoMoreOldBooks: Níl aistriúchán leabhar feidhmiúil ar do leagan freastalaí.
     Má tá tú ar leagan níos déanaí de Minecraft agus go bhfaigheann tú an earráid
     seo, déan teagmháil leis an bhforbróir le do thoil.
+  wwcOldDatabaseStruct: 'Tá socrú neamhéifeachtach ag do bhunachar sonraí roghnaithe
+    ó leagan roimhe seo de WorldwideChat. Is féidir leat an t-ordú seo a leanas a
+    reáchtáil chun an cheist seo a shocrú: /wwcd convert'
 

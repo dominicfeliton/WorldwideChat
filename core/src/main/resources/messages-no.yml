@@ -473,16 +473,10 @@ Messages:
     på nytt...
   wwcNewSqlStruct: SQL-databasen bruker den nye strukturen og trenger ikke å konverteres.
   wwcNewSqlConvertBegin: Konvertering av SQL-tabeller...
-  wwcOldSqlStructRecords: 'SQL-databasen din har et ineffektivt oppsett av spilleropptak
-    fra en tidligere versjon av WorldwideChat. Du kan kjøre følgende kommando for
-    å løse dette problemet: /wwcd convert'
   wwcOldSqlStructLongIntro: Vi beklager ulempen, men en tidligere versjon av WorldwideChat
     initialiserte SQL-tabellene dine med en ineffektiv struktur. Selv om dette vil
     fortsette å fungere med pluginet vårt, kan det føre til betydelige avmatninger
     med større spillerposter.
-  wwcOldSqlStructTrans: 'SQL-databasen din har et ineffektivt aktivt oversettertabelloppsett
-    fra en tidligere versjon av WorldwideChat. Du kan kjøre følgende kommando for
-    å løse dette problemet: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Du kan: slippe tabellene som er skrevet ut til konsoll
     i MySQL, konvertere dem selv og se på den nye strukturen i github-repo, eller
     kjøre en kommando for å prøve konverteringen live. Forsikre deg om at du HAR TATT
@@ -546,4 +540,7 @@ Messages:
   wwctbNoMoreOldBooks: Bokoversettelse er ikke funksjonell på serverversjonen din.
     Hvis du bruker en nyere versjon av Minecraft og du får denne feilen, vennligst
     kontakt utvikleren.
+  wwcOldDatabaseStruct: 'Den valgte databasen har et ineffektivt oppsett fra en tidligere
+    versjon av WorldwideChat. Du kan kjøre følgende kommando for å løse dette problemet:
+    /wwcd convert'
 

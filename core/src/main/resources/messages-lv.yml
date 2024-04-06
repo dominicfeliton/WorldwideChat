@@ -491,16 +491,10 @@ Messages:
   wwcNewSqlConvertFinish: Pabeidzis SQL tabulu konvertēšanu. Pārlādē WorldwideChat...
   wwcNewSqlStruct: Jūsu SQL datu bāze izmanto jauno struktūru, un tā nav jāpārvērš.
   wwcNewSqlConvertBegin: SQL tabulu konvertēšana...
-  wwcOldSqlStructRecords: 'Jūsu SQL datu bāzē ir neefektīva atskaņotāju ierakstu tabulas
-    iestatīšana no iepriekšējās WorldwideChat versijas. Lai novērstu šo problēmu,
-    varat palaist šādu komandu: /wwcd convert'
   wwcOldSqlStructLongIntro: Mēs sirsnīgi atvainojamies par neērtībām, taču iepriekšējā
     WorldwideChat versija inicializēja jūsu SQL tabulas ar neefektīvu struktūru. Lai
     gan tas turpinās darboties ar mūsu spraudni, tas var izraisīt ievērojamu palēnināšanos
     ar lielākiem spēlētāju ierakstiem.
-  wwcOldSqlStructTrans: 'Jūsu SQL datu bāzē ir neefektīva aktīvā tulkotāja tabulas
-    iestatīšana no iepriekšējās WorldwideChat versijas. Lai novērstu šo problēmu,
-    varat palaist šādu komandu: /wwcd convert'
   wwcOldSqlStructLongTodo: 'Jūs varat: nomest tabulas, kas izdrukātas konsolei MySQL,
     konvertēt tās pats un apskatīt jauno struktūru github repo vai palaist komandu,
     lai mēģinātu veikt konvertēšanu tiešraidē. Lūdzu, pārliecinieties, vai esat izveidojis
@@ -564,4 +558,7 @@ Messages:
   wwcTimeoutException: Jūsu pieprasījuma termiņš ir beidzies. Lūdzu, mēģiniet vēlreiz.
   wwctbNoMoreOldBooks: Grāmatu tulkošana jūsu servera versijā nedarbojas. Ja izmantojat
     jaunāku Minecraft versiju un rodas šī kļūda, lūdzu, sazinieties ar izstrādātāju.
+  wwcOldDatabaseStruct: 'Jūsu izvēlētajā datu bāzē ir neefektīva iestatīšana no iepriekšējās
+    WorldwideChat versijas. Lai novērstu šo problēmu, varat palaist šādu komandu:
+    /wwcd convert'
 
