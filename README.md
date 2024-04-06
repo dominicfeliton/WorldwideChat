@@ -4,7 +4,7 @@
 
 #### PSA: If you are on 1.13-1.15, please use our Spigot jar regardless if you are using Paper or not. The adventure API + additional Paper components are not available before 1.16.
 
-### WorldwideChat is a translation plugin for Bukkit, Spigot, and PaperMC 1.13+.
+### WorldwideChat is a translation plugin for Bukkit, Spigot, and PaperMC 1.13+ on JDK 11+.
 It allows you to translate various parts of Minecraft using several Translation APIs on-the-fly.
 Some of its notable features include:
 - Amazon Translate, Azure Translate, DeepL Translate, Google Translate, IBM Watson, Libre Translate, and Systran Translate support.
