@@ -48,11 +48,12 @@ public class PaperChatListener implements Listener {
             List<Audience> unmodifiedMessageRecipients = new ArrayList<Audience>();
             for (Audience eaRecipient : event.viewers()) {
                 // Do not handle non-players
-                if (!(eaRecipient instanceof Player currPlayer)) {
+                if (!(eaRecipient instanceof Player)) {
                     refs.debugMsg("Ignoring Console");
                     unmodifiedMessageRecipients.add(eaRecipient);
                     continue;
                 }
+                Player currPlayer = (Player) eaRecipient;
 
                 ActiveTranslator testTranslator = main.getActiveTranslator(currPlayer);
                 String testInLang = testTranslator.getInLangCode();

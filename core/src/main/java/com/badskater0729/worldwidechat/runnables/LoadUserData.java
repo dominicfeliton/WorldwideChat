@@ -62,10 +62,6 @@ public class LoadUserData implements Runnable {
 		refs.debugMsg("Loading user records or /wwcs...");
 		if (mainConfig.getBoolean("Storage.useSQL") && main.isSQLConnValid(false)) {
 			try (Connection sqlConnection = sql.getConnection()) {
-				// Warn about old table structs
-				refs.detectOutdatedRecordTable();
-				refs.detectOutdatedTransTable();
-
 				/* Create tables if they do not exist already */
 				/* OLD BAD STRUCTS FOR REFERENCE
 				try (PreparedStatement initActiveTranslators = sqlConnection.prepareStatement("CREATE TABLE IF NOT EXISTS activeTranslators "
@@ -92,6 +88,9 @@ public class LoadUserData implements Runnable {
 					initPlayerRecords.executeUpdate();
 				}
 
+				// Warn about old table structs
+				refs.detectOutdatedRecordTable();
+				refs.detectOutdatedTransTable();
 				
 				// Load PlayerRecord using SQL
 				try (ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM playerRecords")) {

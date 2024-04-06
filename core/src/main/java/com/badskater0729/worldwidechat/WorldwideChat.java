@@ -185,7 +185,7 @@ public class WorldwideChat extends JavaPlugin {
 		/* Commands that run regardless of translator settings, but not during restarts */
 		if (!translatorName.equals("Starting")) {
             switch (command.getName()) {
-                case "wwc" -> {
+				case "wwc":
                     // WWC version
                     final TextComponent versionNotice = Component.text()
                             .content(refs.getMsg("wwcVersion")).color(NamedTextColor.RED)
@@ -195,82 +195,68 @@ public class WorldwideChat extends JavaPlugin {
                             .append((Component.text().content(")").resetStyle()).color(NamedTextColor.GOLD)).build();
                     refs.sendMsg(sender, versionNotice);
                     return true;
-                }
-                case "wwcr" -> {
+				case "wwcr":
                     // Reload command
                     reload(sender);
                     return true;
-                }
-                case "wwcs" -> {
+				case "wwcs":
                     // Stats for translator
                     WWCStats wwcs = new WWCStats(sender, command, label, args);
                     return wwcs.processCommand();
-                }
             }
 		}
 		/* Commands that run if translator settings are valid */
 		if (hasValidTranslatorSettings(sender)) {
             switch (command.getName()) {
-                case "wwcg" -> {
+				case "wwcg":
                     // Global translation
                     WWCTranslate wwcg = new WWCGlobal(sender, command, label, args);
                     return wwcg.processCommand();
-                }
-                case "wwct" -> {
+				case "wwct":
                     // Per player translation
                     WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
                     return wwct.processCommand();
-                }
-				case "wwcd" -> {
+				case "wwcd":
 					WWCDebug wwcd = new WWCDebug(sender, command, label, args);
 					return wwcd.processCommand();
-				}
-                case "wwctb" -> {
+				case "wwctb":
                     // Book translation
                     WWCTranslateBook wwctb = new WWCTranslateBook(sender, command, label, args);
                     return wwctb.processCommand();
-                }
-                case "wwcts" -> {
+				case "wwcts":
                     // Sign translation
                     WWCTranslateSign wwcts = new WWCTranslateSign(sender, command, label, args);
                     return wwcts.processCommand();
-                }
-                case "wwcti" -> {
+				case "wwcti":
                     // Item translation
                     WWCTranslateItem wwcti = new WWCTranslateItem(sender, command, label, args);
                     return wwcti.processCommand();
-                }
-                case "wwcte" -> {
+				case "wwcte":
                     // Entity translation
                     WWCTranslateEntity wwcte = new WWCTranslateEntity(sender, command, label, args);
                     return wwcte.processCommand();
-                }
-                case "wwctco" -> {
+				case "wwctco":
                     // Outgoing chat translation
                     WWCTranslateChatOutgoing wwctco = new WWCTranslateChatOutgoing(sender, command, label, args);
                     return wwctco.processCommand();
-                }
-                case "wwctci" -> {
+				case "wwctci":
                     // Incoming chat translation
                     WWCTranslateChatIncoming wwctci = new WWCTranslateChatIncoming(sender, command, label, args);
                     return wwctci.processCommand();
-                }
-                case "wwctrl" -> {
+		        case "wwctrl":
                     // Rate Limit Command
                     WWCTranslateRateLimit wwctrl = new WWCTranslateRateLimit(sender, command, label, args);
                     return wwctrl.processCommand();
-                }
             }
 		}
 		/* Commands that run regardless of translator settings, but not during restarts or as console */
 		/* Keep these commands down here, otherwise checkSenderIdentity() will send a message when we don't want it to */
 		if (checkSenderIdentity(sender) && !translatorName.equals("Starting")) {
 			switch (command.getName()) {
-				case "wwcc" -> {
+				case "wwcc":
 					// Configuration GUI
 					WWCConfiguration wwcc = new WWCConfiguration(sender, command, label, args);
 					return wwcc.processCommand();
-				}
 			}
 		}
 		return true;
@@ -569,12 +555,15 @@ public class WorldwideChat extends JavaPlugin {
 		// Get adapter class name
 		String outputVersion = "";
 		switch (type) {
-			case "Bukkit", "Spigot", "Paper" -> {
-				// Raw Bukkit (not spigot) is not *explicitly* supported but should work
+			case "Bukkit":
+			case "Spigot":
+			case "Paper":
+			// Raw Bukkit (not spigot) is not *explicitly* supported but should work
 				getLogger().info("##### Detected supported platform: " + type + " #####");
-			}
-
-			default -> getLogger().warning("##### You are running an unsupported server platform. Defaulting to Bukkit... #####");
+				break;
+			default:
+				getLogger().warning("##### You are running an unsupported server platform. Defaulting to Bukkit... #####");
+				break;
 		}
 
 		for (String eaVer: supportedMCVersions) {

@@ -88,27 +88,28 @@ public class TranslateInGameListener implements Listener {
 					@Override
 					public void run() {
 						/* Init vars */
+						Player currPlayer = event.getPlayer();
 						BookMeta meta = (BookMeta) currentBook.getItemMeta();
 						String outTitle = meta.getTitle();
 						List<String> pages = meta.getPages();
 						List<String> translatedPages = new ArrayList<String>();
 
 						/* Send message */
-						refs.sendFancyMsg("wwcBookTranslateStart", "", "&d&l", event.getPlayer());
+						refs.sendFancyMsg("wwcBookTranslateStart", "", "&d&l", currPlayer);
 
 						/* Translate title */
-						outTitle = refs.translateText(meta.getTitle(), event.getPlayer());
-						refs.sendFancyMsg("wwcBookTranslateTitleSuccess", "&a&o" + outTitle, "&2&l", event.getPlayer());
+						outTitle = refs.translateText(meta.getTitle(), currPlayer);
+						refs.sendFancyMsg("wwcBookTranslateTitleSuccess", "&a&o" + outTitle, "&2&l", currPlayer);
 
 						/* Translate pages */
 						for (String eaPage : pages) {
-							String out = refs.translateText(eaPage, event.getPlayer());
+							String out = refs.translateText(eaPage, currPlayer);
 							translatedPages.add(out);
 						}
 
 						if (currentBook != null) {
 							/* Set completed message */
-							refs.sendFancyMsg("wwcBookDone", "", "&a&o", event.getPlayer());
+							refs.sendFancyMsg("wwcBookDone", "", "&a&o", currPlayer);
 						}
 
 						/* Create the modified book */
@@ -130,10 +131,19 @@ public class TranslateInGameListener implements Listener {
 								/* Version Check: For 1.13 and below compatibility */
 								try {
 									Player.class.getMethod("openBook", ItemStack.class);
-									event.getPlayer().openBook(newBook);
+									currPlayer.openBook(newBook);
 								} catch (Exception e) {
-									// OldVersionOpenBook.openBook(newBook, event.getPlayer());
-									refs.sendFancyMsg("wwctbNoMoreOldBooks", "", "&e", event.getPlayer());
+									// Old version
+									int page = 1;
+									String dashes = "---------------------";
+									int middleIndex = dashes.length() / 2;
+									for (String eachPage: translatedPages) {
+										String result = dashes.substring(0, middleIndex) + " &2&l(&a&l" + page + "&2&l)&r&6 " + dashes.substring(middleIndex);
+										refs.sendMsg(currPlayer, "&6" + result);
+										refs.sendMsg(currPlayer, eachPage);
+										page++;
+									}
+									refs.sendMsg(currPlayer, "&6" + dashes + "----");
 								}
 							}
 						};
