@@ -1,7 +1,10 @@
 # WorldwideChat 
 ![](https://github.com/BadSkater0729/WorldwideChat/blob/main/resources/Banner.png)
 ## ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/BadSkater0729/WorldwideChat/build-latest-worldwidechat-commit.yml?style=for-the-badge) ![Repo Size](https://img.shields.io/github/repo-size/BadSkater0729/WorldwideChat?style=for-the-badge) ![Pizza rolls](https://img.shields.io/badge/Mom%20brought%20pizza%20rolls-That's%20awesome-brightgreen?style=for-the-badge)
-### WorldwideChat is a translation plugin for Bukkit, Spigot, and PaperMC 1.13+.
+
+#### PSA: If you are on 1.13-1.15, please use our Spigot jar regardless if you are using Paper or not. The adventure API + additional Paper components are not available before 1.16.
+
+### WorldwideChat is a translation plugin for Bukkit, Spigot, and PaperMC 1.13+ on JDK 11+.
 It allows you to translate various parts of Minecraft using several Translation APIs on-the-fly.
 Some of its notable features include:
 - Amazon Translate, Azure Translate, DeepL Translate, Google Translate, IBM Watson, Libre Translate, and Systran Translate support.
