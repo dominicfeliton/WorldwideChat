@@ -421,6 +421,10 @@ public class CommonRefs {
 		} catch (IllegalStateException e) {}
 	}
 
+	public void sendMsg(CommandSender sender, String originalMessage) {
+		sendMsg(sender, Component.text(ChatColor.translateAlternateColorCodes('&', originalMessage)));
+	}
+
 	/**
 	 * Shorthand for component to str
 	 * @param comp - TextComponent

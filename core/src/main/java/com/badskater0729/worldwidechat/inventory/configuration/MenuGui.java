@@ -189,11 +189,13 @@ public class MenuGui implements InventoryProvider {
 		chatSet.add(new CommonElement(2, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));
 		
 		// Translator
-		List<String> translatorToggles = CommonRefs.translatorPairs.stream()
-				.map(Pair::getKey)
-				.toList();
+        List<String> translatorToggles = new ArrayList<>();
+        for (Pair<String, String> translatorPair : CommonRefs.translatorPairs) {
+            String key = translatorPair.getKey();
+            translatorToggles.add(key);
+        }
 
-		transSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
+        transSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
 	    transSet.add(new SubMenuElement(1, 1, transName.equals("Amazon Translate"), "wwcConfigGUIAmazonTranslateButton", CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv));
 	    transSet.add(new SubMenuElement(1, 2, transName.equals("Azure Translate"), "wwcConfigGUIAzureTranslateButton", CONFIG_GUI_TAGS.AZURE_TRANS_SET.smartInv));
 		transSet.add(new SubMenuElement(1, 3, transName.equals("DeepL Translate"), "wwcConfigGUIDeepLTranslateButton", CONFIG_GUI_TAGS.DEEP_TRANS_SET.smartInv));

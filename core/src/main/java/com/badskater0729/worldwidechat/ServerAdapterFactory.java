@@ -65,6 +65,13 @@ public class ServerAdapterFactory {
                 break;
         }
 
+        /* Additional checks */
+        if (serverPlatform.equals("Paper") && (serverVersion.contains("1.13") || serverVersion.contains("1.14") || serverVersion.contains("1.15"))) {
+            // These versions are so old that they lack much of what we take for granted in later versions of Paper.
+            // Paper on these versions is unsupported. Use the spigot version of the plugin instead.
+            serverPlatform = "Spigot";
+        }
+
         return Pair.of(serverPlatform, serverVersion);
     }
 
