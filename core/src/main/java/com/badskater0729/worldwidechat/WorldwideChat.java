@@ -323,7 +323,6 @@ public class WorldwideChat extends JavaPlugin {
 				// TODO: Add unit test to make sure that storage config changes do not apply until next run
 				// TODO: Add unit test to make sure that storage defaults to YAML on conn failure
 				// TODO: Add case for if connection gets interrupted?
-				// TODO: Lower mongoDB connection wait time from 25sec
 				cancelBackgroundTasks(true, invalidState, this.getTaskId());
 
 				/* Save main config on current thread BEFORE actual reload */
@@ -336,6 +335,7 @@ public class WorldwideChat extends JavaPlugin {
 				
 				/* Send successfully reloaded message */
 				if (inSender != null) {
+					// TODO: Look into adding failed storage alongside this?
 					if (translatorName.equals("Invalid")) {
 						final TextComponent wwcrTransFail = Component.text()
 								.content(refs.getMsg("wwcrTransFail"))

@@ -199,38 +199,6 @@ public class LoadUserData implements Runnable {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		} else if (mainConfig.getBoolean("Storage.useMongoDB") && main.isMongoConnValid(false)) {
-			// Load Active Translator using MongoDB
-			MongoDatabase database = mongo.getActiveDatabase();
-			MongoCollection<Document> activeTranslatorCol = database.getCollection("ActiveTranslators");
-			FindIterable<Document> iterDoc = activeTranslatorCol.find();
-			Iterator<Document> it = iterDoc.iterator();
-			while (it.hasNext()) {
-				Document currDoc = it.next();
-				String inLang = currDoc.getString("inLangCode");
-				String outLang = currDoc.getString("outLangCode");
-				if (!validLangCodes(inLang, outLang)) {
-					inLang = "en";
-					outLang = "es";
-				}
-				ActiveTranslator translatorToAdd = new ActiveTranslator(
-						currDoc.getString("playerUUID"),
-						inLang,
-						outLang
-						);
-				if (!currDoc.getString("rateLimitPreviousTime").equalsIgnoreCase("None")) {
-					translatorToAdd.setRateLimitPreviousTime(Instant.parse(currDoc.getString("rateLimitPreviousTime")));
-				}
-				translatorToAdd.setTranslatingChatOutgoing(currDoc.getBoolean("translatingChatOutgoing"));
-				translatorToAdd.setTranslatingChatIncoming(currDoc.getBoolean("translatingChatIncoming"));
-				translatorToAdd.setTranslatingBook(currDoc.getBoolean("translatingBook"));
-				translatorToAdd.setTranslatingSign(currDoc.getBoolean("translatingSign"));
-				translatorToAdd.setTranslatingItem(currDoc.getBoolean("translatingItem"));
-				translatorToAdd.setTranslatingEntity(currDoc.getBoolean("translatingEntity"));
-				translatorToAdd.setRateLimit(currDoc.getInteger("rateLimit"));
-				translatorToAdd.setHasBeenSaved(true);
-				main.addActiveTranslator(translatorToAdd);
-			}
 		} else if (mainConfig.getBoolean("Storage.usePostgreSQL") && main.isPostgresConnValid(false)) {
 			try (Connection postgresConnection = postgres.getConnection()) {
 				// Load ActiveTranslator using Postgres
@@ -263,6 +231,38 @@ public class LoadUserData implements Runnable {
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();
+			}
+		} else if (mainConfig.getBoolean("Storage.useMongoDB") && main.isMongoConnValid(false)) {
+			// Load Active Translator using MongoDB
+			MongoDatabase database = mongo.getActiveDatabase();
+			MongoCollection<Document> activeTranslatorCol = database.getCollection("ActiveTranslators");
+			FindIterable<Document> iterDoc = activeTranslatorCol.find();
+			Iterator<Document> it = iterDoc.iterator();
+			while (it.hasNext()) {
+				Document currDoc = it.next();
+				String inLang = currDoc.getString("inLangCode");
+				String outLang = currDoc.getString("outLangCode");
+				if (!validLangCodes(inLang, outLang)) {
+					inLang = "en";
+					outLang = "es";
+				}
+				ActiveTranslator translatorToAdd = new ActiveTranslator(
+						currDoc.getString("playerUUID"),
+						inLang,
+						outLang
+				);
+				if (!currDoc.getString("rateLimitPreviousTime").equalsIgnoreCase("None")) {
+					translatorToAdd.setRateLimitPreviousTime(Instant.parse(currDoc.getString("rateLimitPreviousTime")));
+				}
+				translatorToAdd.setTranslatingChatOutgoing(currDoc.getBoolean("translatingChatOutgoing"));
+				translatorToAdd.setTranslatingChatIncoming(currDoc.getBoolean("translatingChatIncoming"));
+				translatorToAdd.setTranslatingBook(currDoc.getBoolean("translatingBook"));
+				translatorToAdd.setTranslatingSign(currDoc.getBoolean("translatingSign"));
+				translatorToAdd.setTranslatingItem(currDoc.getBoolean("translatingItem"));
+				translatorToAdd.setTranslatingEntity(currDoc.getBoolean("translatingEntity"));
+				translatorToAdd.setRateLimit(currDoc.getInteger("rateLimit"));
+				translatorToAdd.setHasBeenSaved(true);
+				main.addActiveTranslator(translatorToAdd);
 			}
 		} else {
 			for (File eaFile : userDataFolder.listFiles()) {

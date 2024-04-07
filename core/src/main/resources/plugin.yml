@@ -89,6 +89,10 @@ commands:
         usage: §4/wwctrl (delay) or /wwctrl (playerName) (delay)
         permission: worldwidechat.wwctrl
         permission-message: §4You do not have permission to run this command.
+    wwcl:
+        description: Sets a localization for a user.
+        aliases: [wwclocalization, localize]
+        usage: §4/wwcl (localization) or /wwcl (playerName) (localization)
 permissions:
     worldwidechat.*:
         description: Gives access to all WorldwideChat commands.
@@ -99,6 +103,8 @@ permissions:
             worldwidechat.wwcg: true
             worldwidechat.wwct: true
             worldwidechat.wwct.otherplayers: true
+            worldwidechat.wwcl: true
+            worldwidechat.wwcl.otherplayers: true
             worldwidechat.chatupdate: true
             worldwidechat.wwctb: true
             worldwidechat.wwctb.otherplayers: true
@@ -185,4 +191,10 @@ permissions:
         default: op
     worldwidechat.wwctrl:
         description: Gives access to /wwctrl.
+        default: op
+    worldwidechat.wwcl:
+        description: Gives access to /wwcl.
+        default: true
+    worldwidechat.wwcl.otherplayers:
+        description: Gives access to /wwcl on other players.
         default: op

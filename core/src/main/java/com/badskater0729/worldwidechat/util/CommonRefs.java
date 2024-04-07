@@ -87,7 +87,8 @@ public class CommonRefs {
 
 	public static final Map<String, Map<String, String>> tableSchemas = new HashMap<>();
 	static {
-		HashMap<String, String> activeTranslatorsSchema = new HashMap<>();
+		// Linked hashmaps to preserve order
+		HashMap<String, String> activeTranslatorsSchema = new LinkedHashMap<>();
 		activeTranslatorsSchema.put("creationDate", "VARCHAR(40)");
 		activeTranslatorsSchema.put("playerUUID", "VARCHAR(40)");
 		activeTranslatorsSchema.put("inLangCode", "VARCHAR(10)");
@@ -102,7 +103,7 @@ public class CommonRefs {
 		activeTranslatorsSchema.put("translatingEntity", "BOOLEAN");
 		tableSchemas.put("activeTranslators", activeTranslatorsSchema);
 
-		Map<String, String> playerRecordsSchema = new HashMap<>();
+		Map<String, String> playerRecordsSchema = new LinkedHashMap<>();
 		playerRecordsSchema.put("creationDate", "VARCHAR(40)");
 		playerRecordsSchema.put("playerUUID", "VARCHAR(40)");
 		playerRecordsSchema.put("attemptedTranslations", "INT");

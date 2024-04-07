@@ -11,6 +11,8 @@ public class ActiveTranslator {
 	private String outLangCode = "";
 	private String rateLimitPreviousTime = "None";
 
+	private String personalLangCode = "";
+
 	private boolean hasBeenShownColorCodeWarning = false;
 
 	private boolean hasBeenShownSignEditWarning = false;
@@ -47,6 +49,11 @@ public class ActiveTranslator {
 	public void setOutLangCode(String i) {
 		hasBeenSaved = false;
 		outLangCode = i;
+	}
+
+	public void setPersonalLangCode(String i) {
+		hasBeenSaved = false;
+		personalLangCode = i;
 	}
 
 	public void setSignWarning(boolean i) { hasBeenShownSignEditWarning = i; }
@@ -109,6 +116,10 @@ public class ActiveTranslator {
 
 	public String getOutLangCode() {
 		return outLangCode;
+	}
+
+	public String getPersonalLangCode() {
+		return personalLangCode;
 	}
 
 	public boolean getCCWarning() {
