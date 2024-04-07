@@ -59,6 +59,7 @@ import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
+import org.yaml.snakeyaml.Yaml;
 
 public class CommonRefs {
 
@@ -831,69 +832,139 @@ public class CommonRefs {
 	}
 
 	public boolean detectOutdatedTable(String tableName) {
+		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 		Map<String, String> tableSchema = CommonRefs.tableSchemas.get(tableName);
 		if (tableSchema == null) {
 			main.getLogger().severe("Invalid table??? ( + " + tableName + " ) Contact the developer!");
 			return false;
 		}
 
-		if (main.getSqlSession() == null) {
-			return false;
+		if (mainConfig.getBoolean("Storage.useSQL") && main.isSQLConnValid(false)) {
+			try (Connection sqlConnection = main.getSqlSession().getConnection()) {
+				DatabaseMetaData metaData = sqlConnection.getMetaData();
+				ResultSet columns = metaData.getColumns(null, null, tableName, null);
+
+				Map<String, String> existingColumns = new HashMap<>();
+				while (columns.next()) {
+					String columnName = columns.getString("COLUMN_NAME");
+					String columnType = columns.getString("TYPE_NAME");
+					existingColumns.put(columnName, columnType);
+				}
+
+				for (Map.Entry<String, String> column : tableSchema.entrySet()) {
+					String columnName = column.getKey();
+					String expectedColumnType = column.getValue();
+					String actualColumnType = existingColumns.get(columnName);
+
+					if (actualColumnType == null) {
+						// Column is missing
+						debugMsg(String.format("Column '%s' is missing in table '%s'", columnName, tableName));
+						main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+						return true;
+					}
+
+					// Add case exceptions here
+					if (actualColumnType.equals("BIT") && expectedColumnType.equals("BOOLEAN")) {
+						actualColumnType = "BOOLEAN";
+					}
+
+					if (!expectedColumnType.contains(actualColumnType)) {
+						// Column type doesn't match the expected type
+						debugMsg(String.format("Column '%s' in table '%s' has type '%s' but expected type '%s'",
+								columnName, tableName, actualColumnType, expectedColumnType));
+						main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+						return true;
+					}
+				}
+
+				// Check for extra columns in the table that are not defined in the schema
+				for (String columnName : existingColumns.keySet()) {
+					if (!tableSchema.containsKey(columnName)) {
+						debugMsg(String.format("Extra column '%s' found in table '%s' that is not defined in the schema",
+								columnName, tableName));
+						main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+						return true;
+					}
+				}
+
+				debugMsg("SQL table ( " + tableName + " ) is the correct format.");
+				return false; // Table structure matches the schema
+			} catch (SQLException e) {
+				e.printStackTrace();
+				return false; // Play it safe, probably corrupted anyway
+			}
+        } else if (mainConfig.getBoolean("Storage.usePostgreSQL") && main.isPostgresConnValid(false)) {
+			try (Connection postgresConnection = main.getPostgresSession().getConnection()) {
+				DatabaseMetaData metaData = postgresConnection.getMetaData();
+				// PostgreSQL converts unquoted identifiers to lowercase
+				String adjustedTableName = tableName.toLowerCase();
+				ResultSet columns = metaData.getColumns(null, null, adjustedTableName, null);
+
+				Map<String, String> existingColumns = new HashMap<>();
+				while (columns.next()) {
+					String columnName = columns.getString("COLUMN_NAME");
+					String columnType = columns.getString("TYPE_NAME").toUpperCase(); // Normalize the type name to uppercase for comparison.
+					existingColumns.put(columnName, columnType);
+				}
+
+				for (Map.Entry<String, String> column : tableSchema.entrySet()) {
+					String columnName = column.getKey().toLowerCase(); // Adjust for PostgreSQL's default behavior.
+					String expectedColumnType = column.getValue().toUpperCase();
+					String actualColumnType = existingColumns.get(columnName);
+
+					if (actualColumnType == null) {
+						// Column is missing
+						debugMsg(String.format("Column '%s' is missing in table '%s'", columnName, tableName));
+						main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+						return true;
+					}
+
+					// Add case exceptions here
+					if ("BIT".equals(actualColumnType) && "BOOLEAN".equals(expectedColumnType)) {
+						actualColumnType = "BOOLEAN";
+					}
+
+					if ("INT4".equals(actualColumnType) && "INT".equals(expectedColumnType)) {
+						actualColumnType = "INT";
+					}
+
+					if (!expectedColumnType.contains(actualColumnType)) {
+						// Column type doesn't match the expected type
+						debugMsg(String.format("Column '%s' in table '%s' has type '%s' but expected type '%s'",
+								columnName, tableName, actualColumnType, expectedColumnType));
+						main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+						return true;
+					}
+				}
+
+				// Check for extra columns in the table that are not defined in the schema
+				for (String columnName : existingColumns.keySet()) {
+					// Gross O(n)^2, but shouldn't matter too much...
+					boolean colExists = false;
+					for (String eachName : tableSchema.keySet()) {
+						if (columnName.equals(eachName.toLowerCase()))
+							colExists = true;
+
+					}
+					if (!colExists) {
+						debugMsg(String.format("Extra column '%s' found in table '%s' that is not defined in the schema",
+								columnName, tableName));
+						main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+						return true;
+					}
+				}
+
+				debugMsg("PostgreSQL table ( " + tableName + " ) is the correct format.");
+				return false; // Table structure matches the schema
+			} catch (SQLException e) {
+				e.printStackTrace();
+				return false; // Play it safe, probably corrupted anyway
+			}
+
+		} else {
+			main.getLogger().severe("Current storage method is not properly detected outdated tables!");
 		}
-
-		try (Connection sqlConnection = main.getSqlSession().getConnection()) {
-			DatabaseMetaData metaData = sqlConnection.getMetaData();
-			ResultSet columns = metaData.getColumns(null, null, tableName, null);
-
-			Map<String, String> existingColumns = new HashMap<>();
-			while (columns.next()) {
-				String columnName = columns.getString("COLUMN_NAME");
-				String columnType = columns.getString("TYPE_NAME");
-				existingColumns.put(columnName, columnType);
-			}
-
-			for (Map.Entry<String, String> column : tableSchema.entrySet()) {
-				String columnName = column.getKey();
-				String expectedColumnType = column.getValue();
-				String actualColumnType = existingColumns.get(columnName);
-
-				if (actualColumnType == null) {
-					// Column is missing
-					debugMsg(String.format("Column '%s' is missing in table '%s'", columnName, tableName));
-					main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
-					return true;
-				}
-
-				// Add case exceptions here
-				if (actualColumnType.equals("BIT") && expectedColumnType.equals("BOOLEAN")) {
-					actualColumnType = "BOOLEAN";
-				}
-
-				if (!expectedColumnType.contains(actualColumnType)) {
-					// Column type doesn't match the expected type
-					debugMsg(String.format("Column '%s' in table '%s' has type '%s' but expected type '%s'",
-							columnName, tableName, actualColumnType, expectedColumnType));
-					main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
-					return true;
-				}
-			}
-
-			// Check for extra columns in the table that are not defined in the schema
-			for (String columnName : existingColumns.keySet()) {
-				if (!tableSchema.containsKey(columnName)) {
-					debugMsg(String.format("Extra column '%s' found in table '%s' that is not defined in the schema",
-							columnName, tableName));
-					main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
-					return true;
-				}
-			}
-
-			debugMsg("SQL table ( " + tableName + " ) is the correct format.");
-			return false; // Table structure matches the schema
-		} catch (SQLException e) {
-			e.printStackTrace();
-			return false; // Play it safe, probably corrupted anyway
-		}
+		return true;
 	}
 	
 	/** 

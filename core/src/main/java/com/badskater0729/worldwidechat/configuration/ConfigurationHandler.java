@@ -424,6 +424,7 @@ public class ConfigurationHandler {
 	/* Sync user data to storage */
 	public void syncData(boolean wasPreviouslyInvalid) {
 		/* If our translator is Invalid, do not run this code */
+		// TODO: For SQL/Postgres, use CommonRefs definitions instead...dataclass-esque thing?
 		if (wasPreviouslyInvalid) {
 			return;
 		}
