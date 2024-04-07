@@ -21,8 +21,9 @@ public class LibreSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationLibreTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.libreAPIKey"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationLibreTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.libreAPIKey"), currPlayer);
 		}
 
 		@Override
@@ -38,8 +39,9 @@ public class LibreSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationLibreURLInput", main.getConfigManager().getMainConfig().getString("Translator.libreURL"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationLibreURLInput", main.getConfigManager().getMainConfig().getString("Translator.libreURL"), currPlayer);
 		}
 
 		@Override

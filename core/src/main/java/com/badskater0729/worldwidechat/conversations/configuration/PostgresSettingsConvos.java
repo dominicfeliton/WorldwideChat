@@ -22,8 +22,9 @@ public class PostgresSettingsConvos {
         public String getPromptText(ConversationContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
-            ((Player) context.getForWhom()).closeInventory();
-            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationPostgresDatabaseNameInput", main.getConfigManager().getMainConfig().getString("Storage.postgresDatabaseName"));
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationPostgresDatabaseNameInput", main.getConfigManager().getMainConfig().getString("Storage.postgresDatabaseName"), currPlayer);
         }
 
         @Override
@@ -39,8 +40,9 @@ public class PostgresSettingsConvos {
         public String getPromptText(ConversationContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
-            ((Player) context.getForWhom()).closeInventory();
-            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationPostgresHostnameInput", main.getConfigManager().getMainConfig().getString("Storage.postgresHostname"));
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationPostgresHostnameInput", main.getConfigManager().getMainConfig().getString("Storage.postgresHostname"), currPlayer);
         }
 
         @Override
@@ -56,20 +58,22 @@ public class PostgresSettingsConvos {
         public String getPromptText(ConversationContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
-            ((Player) context.getForWhom()).closeInventory();
-            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationPostgresOptionalArgsInput", main.getConfigManager().getMainConfig().getList("Storage.postgresOptionalArgs") != null ? main.getConfigManager().getMainConfig().getList("Storage.postgresOptionalArgs").toString() : "empty");
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationPostgresOptionalArgsInput", (main.getConfigManager().getMainConfig().getList("Storage.postgresOptionalArgs") != null ? main.getConfigManager().getMainConfig().getList("Storage.postgresOptionalArgs").toString() : "empty"), currPlayer);
         }
 
         @Override
         public Prompt acceptInput(ConversationContext context, String input) {
             CommonRefs refs = main.getServerFactory().getCommonRefs();
             if (input.equalsIgnoreCase("clear")) {
+                Player currPlayer = ((Player) context.getForWhom());
                 main.getConfigManager().getMainConfig().set("Storage.postgresOptionalArgs", new String[0]);
                 final TextComponent badChange = Component.text()
-                        .content(refs.getMsg("wwcConfigConversationPostgresOptionalArgsCleared"))
+                        .content(refs.getMsg("wwcConfigConversationPostgresOptionalArgsCleared", currPlayer))
                         .color(NamedTextColor.YELLOW)
                         .build();
-                refs.sendMsg((Player)context.getForWhom(), badChange);
+                refs.sendMsg(currPlayer, badChange);
                 return this;
             } else {
                 return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationPostgresOptionalArgsSuccess",
@@ -83,8 +87,9 @@ public class PostgresSettingsConvos {
         public String getPromptText(ConversationContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
-            ((Player) context.getForWhom()).closeInventory();
-            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationPostgresPasswordInput", main.getConfigManager().getMainConfig().getString("Storage.postgresPassword"));
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationPostgresPasswordInput", main.getConfigManager().getMainConfig().getString("Storage.postgresPassword"), currPlayer);
         }
 
         @Override
@@ -101,8 +106,9 @@ public class PostgresSettingsConvos {
         public String getPromptText(ConversationContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
-            ((Player) context.getForWhom()).closeInventory();
-            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationPostgresPortInput", main.getConfigManager().getMainConfig().getString("Storage.postgresPort"));
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationPostgresPortInput", main.getConfigManager().getMainConfig().getString("Storage.postgresPort"), currPlayer);
         }
 
         @Override
@@ -119,8 +125,9 @@ public class PostgresSettingsConvos {
         public String getPromptText(ConversationContext context) {
             /* Close any open inventories */
             CommonRefs refs = main.getServerFactory().getCommonRefs();
-            ((Player) context.getForWhom()).closeInventory();
-            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationPostgresUsernameInput", main.getConfigManager().getMainConfig().getString("Storage.postgresUsername"));
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationPostgresUsernameInput", main.getConfigManager().getMainConfig().getString("Storage.postgresUsername"), currPlayer);
         }
 
         @Override

@@ -33,10 +33,12 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
 	private String targetPlayerUUID = "";
 	private String targetPlayerName = "";
 
+	// TODO: Rewrite for being able to switch between localizations??
+	// TODO: Also fix getMsg calls to respect user's localization
 	public WWCTranslateGuiChatMenu(String targetPlayerUUID) {
 		this.targetPlayerUUID = targetPlayerUUID;
 		this.targetPlayerName = ChatColor.BLUE + refs.getMsg("wwctGUIChatMenu", main.getServer()
-				.getPlayer(UUID.fromString(targetPlayerUUID)).getName());
+				.getPlayer(UUID.fromString(targetPlayerUUID)).getName(), null);
 	}
 
 	/* Get translation info */
@@ -64,10 +66,10 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
 				if (targetTranslator.getTranslatingChatOutgoing()) {
 					invManager.addGlowEffect(outgoingChatMeta);
 					outgoingChatMeta.setDisplayName(ChatColor.GREEN
-							+ refs.getMsg("wwctGUIChatOutgoingButton"));
+							+ refs.getMsg("wwctGUIChatOutgoingButton", null));
 				} else {
 					outgoingChatMeta.setDisplayName(ChatColor.YELLOW
-							+ refs.getMsg("wwctGUIChatOutgoingButton"));
+							+ refs.getMsg("wwctGUIChatOutgoingButton", null));
 				}
 				outgoingChatButton.setItemMeta(outgoingChatMeta);
 				contents.set(1, 3, ClickableItem.of(outgoingChatButton, e -> {
@@ -85,10 +87,10 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
     			if (targetTranslator.getTranslatingChatIncoming()) {
     				invManager.addGlowEffect(incomingChatMeta);
     				incomingChatMeta.setDisplayName(ChatColor.GREEN
-    						+ refs.getMsg("wwctGUIChatIncomingButton"));
+    						+ refs.getMsg("wwctGUIChatIncomingButton", null));
     			} else {
     				incomingChatMeta.setDisplayName(ChatColor.YELLOW
-    						+ refs.getMsg("wwctGUIChatIncomingButton"));
+    						+ refs.getMsg("wwctGUIChatIncomingButton", null));
     			}
     			incomingChatButton.setItemMeta(incomingChatMeta);
     			contents.set(1, 5, ClickableItem.of(incomingChatButton, e -> {

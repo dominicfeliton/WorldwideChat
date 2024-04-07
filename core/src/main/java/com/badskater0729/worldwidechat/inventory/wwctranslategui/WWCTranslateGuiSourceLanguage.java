@@ -32,6 +32,9 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 	private String selectedSourceLanguage = "";
 	private String targetPlayerUUID = "";
 
+
+	// TODO: Rewrite for being able to switch between localizations??
+	// TODO: Also fix getMsg calls to respect user's localization
 	public WWCTranslateGuiSourceLanguage(String selectedSourceLanguage, String targetPlayerUUID) {
 		this.selectedSourceLanguage = selectedSourceLanguage;
 		this.targetPlayerUUID = targetPlayerUUID;
@@ -41,7 +44,7 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 		return SmartInventory.builder().id("translateSourceLanguage")
 				.provider(new WWCTranslateGuiSourceLanguage(selectedSourceLanguage, targetPlayerUUID)).size(6, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + refs.getMsg("wwctGUINewTranslationSource"))
+				.title(ChatColor.BLUE + refs.getMsg("wwctGUINewTranslationSource", null))
 				.build();
 	}
 
@@ -72,10 +75,10 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 				ArrayList<String> lore = new ArrayList<>();
 				if (selectedSourceLanguage.equalsIgnoreCase(currLang.getLangCode()) || selectedSourceLanguage.equalsIgnoreCase(currLang.getLangName())) {
 					invManager.addGlowEffect(itemForLangMeta);
-					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceTranslationSelected"));
+					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceTranslationSelected", null));
 				} else if (userLang.getLangCode().equalsIgnoreCase(currLang.getLangCode()) || userLang.getLangName().equalsIgnoreCase(currLang.getLangName())) {
 					invManager.addGlowEffect(itemForLangMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive", null));
 				}
 				itemForLangMeta.setDisplayName(currLang.getLangName());
 				if (!currLang.getNativeLangName().equals("")) {
@@ -102,16 +105,16 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 				ItemStack skipSourceButton = XMaterial.BOOKSHELF.parseItem();
 				ItemMeta skipSourceMeta = skipSourceButton.getItemMeta();
 				skipSourceMeta.setDisplayName(ChatColor.YELLOW
-						+ refs.getMsg("wwctGUIAutoDetectButton"));
+						+ refs.getMsg("wwctGUIAutoDetectButton", null));
 				
 				/* Add Glow Effect */
 				ArrayList<String> lore = new ArrayList<>();
 				if ((currTranslator.getInLangCode().equals("None"))) {
 					invManager.addGlowEffect(skipSourceMeta);
-					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceTranslationSelected"));
+					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceTranslationSelected", null));
 				} else if (selectedSourceLanguage.equalsIgnoreCase("None")) {
 					invManager.addGlowEffect(skipSourceMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive", null));
 				}
 				skipSourceButton.setItemMeta(skipSourceMeta);
 				contents.set(5, 4, ClickableItem.of(skipSourceButton, e -> new WWCTranslateGuiTargetLanguage("None", targetPlayerUUID)

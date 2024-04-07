@@ -25,8 +25,9 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationMongoDatabaseNameInput", main.getConfigManager().getMainConfig().getString("Storage.mongoDatabaseName"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationMongoDatabaseNameInput", main.getConfigManager().getMainConfig().getString("Storage.mongoDatabaseName"), currPlayer);
 		}
 
 		@Override
@@ -42,8 +43,9 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationMongoHostnameInput", main.getConfigManager().getMainConfig().getString("Storage.mongoHostname"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationMongoHostnameInput", main.getConfigManager().getMainConfig().getString("Storage.mongoHostname"), currPlayer);
 		}
 
 		@Override
@@ -59,20 +61,22 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationMongoOptionalArgsInput", main.getConfigManager().getMainConfig().getList("Storage.mongoOptionalArgs") != null ? main.getConfigManager().getMainConfig().getList("Storage.mongoOptionalArgs").toString() : "empty");
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationMongoOptionalArgsInput", (main.getConfigManager().getMainConfig().getList("Storage.mongoOptionalArgs") != null ? main.getConfigManager().getMainConfig().getList("Storage.mongoOptionalArgs").toString() : "empty"), currPlayer);
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			if (input.equalsIgnoreCase("clear")) {
+				Player currPlayer = ((Player) context.getForWhom());
 				main.getConfigManager().getMainConfig().set("Storage.mongoOptionalArgs", new String[0]);
 				final TextComponent badChange = Component.text()
-								.content(refs.getMsg("wwcConfigConversationMongoOptionalArgsCleared"))
+								.content(refs.getMsg("wwcConfigConversationMongoOptionalArgsCleared", currPlayer))
 								.color(NamedTextColor.YELLOW)
 						.build();
-				refs.sendMsg((Player)context.getForWhom(), badChange);
+				refs.sendMsg(currPlayer, badChange);
 				return this;
 			} else {
 				return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationMongoOptionalArgsSuccess",
@@ -86,8 +90,9 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationMongoPasswordInput", main.getConfigManager().getMainConfig().getString("Storage.mongoPassword"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationMongoPasswordInput", main.getConfigManager().getMainConfig().getString("Storage.mongoPassword"), currPlayer);
 		}
 
 		@Override
@@ -104,8 +109,9 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationMongoPortInput", main.getConfigManager().getMainConfig().getString("Storage.mongoPort"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationMongoPortInput", main.getConfigManager().getMainConfig().getString("Storage.mongoPort"), currPlayer);
 		}
 
 		@Override
@@ -122,8 +128,9 @@ private static WorldwideChat main = WorldwideChat.instance;
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationMongoUsernameInput", main.getConfigManager().getMainConfig().getString("Storage.mongoUsername"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationMongoUsernameInput", main.getConfigManager().getMainConfig().getString("Storage.mongoUsername"), currPlayer);
 		}
 
 		@Override

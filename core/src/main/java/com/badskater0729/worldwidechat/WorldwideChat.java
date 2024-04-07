@@ -154,7 +154,7 @@ public class WorldwideChat extends JavaPlugin {
 
 		// We made it!
 		//refs.debugMsg("Async tasks running: " + this.getActiveAsyncTasks());
-		getLogger().info(ChatColor.GREEN + refs.getMsg("wwcEnabled", getPluginVersion()));
+		getLogger().info(ChatColor.GREEN + refs.getMsg("wwcEnabled", getPluginVersion(), null));
 	}
 
 	@Override
@@ -188,7 +188,7 @@ public class WorldwideChat extends JavaPlugin {
 				case "wwc":
                     // WWC version
                     final TextComponent versionNotice = Component.text()
-                            .content(refs.getMsg("wwcVersion")).color(NamedTextColor.RED)
+                            .content(refs.getMsg("wwcVersion", sender)).color(NamedTextColor.RED)
                             .append((Component.text().content(" " + getPluginVersion())).color(NamedTextColor.LIGHT_PURPLE))
                             .append((Component.text().content(" (Made with love by ")).color(NamedTextColor.GOLD))
                             .append((Component.text().content("BadSkater0729")).color(NamedTextColor.GOLD).decorate(TextDecoration.BOLD))
@@ -216,6 +216,10 @@ public class WorldwideChat extends JavaPlugin {
                     // Per player translation
                     WWCTranslate wwct = new WWCTranslate(sender, command, label, args);
                     return wwct.processCommand();
+				case "wwcl":
+					// Per player localization
+					WWCLocalize wwcl = new WWCLocalize(sender, command, label, args);
+					return wwcl.processCommand();
 				case "wwcd":
 					WWCDebug wwcd = new WWCDebug(sender, command, label, args);
 					return wwcd.processCommand();
@@ -308,7 +312,7 @@ public class WorldwideChat extends JavaPlugin {
 		/* Send start reload message */
 		if (inSender != null) {
 			final TextComponent wwcrBegin = Component.text()
-							.content(refs.getMsg("wwcrBegin"))
+							.content(refs.getMsg("wwcrBegin", inSender))
 							.color(NamedTextColor.YELLOW)
 					.build();
 			refs.sendMsg(inSender, wwcrBegin);
@@ -338,7 +342,7 @@ public class WorldwideChat extends JavaPlugin {
 					// TODO: Look into adding failed storage alongside this?
 					if (translatorName.equals("Invalid")) {
 						final TextComponent wwcrTransFail = Component.text()
-								.content(refs.getMsg("wwcrTransFail"))
+								.content(refs.getMsg("wwcrTransFail", inSender))
 								.color(NamedTextColor.RED)
 								.append(Component.text()
 										.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
@@ -347,7 +351,7 @@ public class WorldwideChat extends JavaPlugin {
 						refs.sendMsg(inSender, wwcrTransFail);
 					} else {
 						final TextComponent wwcrSuccess = Component.text()
-								.content(refs.getMsg("wwcrSuccess"))
+								.content(refs.getMsg("wwcrSuccess", inSender))
 								.color(NamedTextColor.GREEN)
 								.append(Component.text()
 										.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
@@ -592,7 +596,7 @@ public class WorldwideChat extends JavaPlugin {
 	private boolean checkSenderIdentity(CommandSender sender) {
 		if (!(sender instanceof Player)) {
 			final TextComponent consoleNotice = Component.text()
-							.content(refs.getMsg("wwcNoConsole"))
+							.content(refs.getMsg("wwcNoConsole", null))
 							.color(NamedTextColor.RED)
 					.build();
 			refs.sendMsg(sender, consoleNotice);
@@ -616,7 +620,7 @@ public class WorldwideChat extends JavaPlugin {
 			return false;
 		} else if (getTranslatorName().equals("Invalid")) {
 			final TextComponent invalid = Component.text()
-							.content(refs.getMsg("wwcInvalidTranslator"))
+							.content(refs.getMsg("wwcInvalidTranslator", sender))
 							.color(NamedTextColor.RED)
 					.build();
 			refs.sendMsg(sender, invalid);
@@ -818,7 +822,7 @@ public class WorldwideChat extends JavaPlugin {
 	public boolean isMongoConnValid(boolean quiet) {
 		if (mongoSession == null || !mongoSession.isConnected()) {
 			if (!quiet) {
-				getLogger().warning(refs.getMsg("wwcInvalidStorageSession", "MongoDB"));
+				getLogger().warning(refs.getMsg("wwcInvalidStorageSession", "MongoDB", null));
 			}
 			return false;
 		}
@@ -832,7 +836,7 @@ public class WorldwideChat extends JavaPlugin {
 	public boolean isSQLConnValid(boolean quiet) {
 		if (sqlSession == null || !sqlSession.isConnected()) {
 			if (!quiet) {
-				getLogger().warning(refs.getMsg("wwcInvalidStorageSession", "SQL"));
+				getLogger().warning(refs.getMsg("wwcInvalidStorageSession", "SQL", null));
 			}
 			return false;
 		}
@@ -846,7 +850,7 @@ public class WorldwideChat extends JavaPlugin {
 	public boolean isPostgresConnValid(boolean quiet) {
 		if (postgresSession == null || !postgresSession.isConnected()) {
 			if (!quiet) {
-				getLogger().warning(refs.getMsg("wwcInvalidStorageSession", "Postgres"));
+				getLogger().warning(refs.getMsg("wwcInvalidStorageSession", "Postgres", null));
 			}
 			return false;
 		}

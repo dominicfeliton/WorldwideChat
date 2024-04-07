@@ -30,8 +30,9 @@ public class GeneralSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationFatalAsyncAbort", main.getConfigManager().getMainConfig().getString("General.fatalAsyncTaskTimeout"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationFatalAsyncAbort", main.getConfigManager().getMainConfig().getString("General.fatalAsyncTaskTimeout"), currPlayer);
 		}
 
 		@Override
@@ -48,8 +49,9 @@ public class GeneralSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationLangInput", new String[] {main.getConfigManager().getMainConfig().getString("General.pluginLang"), Arrays.toString(supportedPluginLangCodes)});
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationLangInput", new String[] {main.getConfigManager().getMainConfig().getString("General.pluginLang"), Arrays.toString(supportedPluginLangCodes)}, currPlayer);
 		}
 
 		@Override
@@ -60,11 +62,12 @@ public class GeneralSettingsConvos {
 					return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLangSuccess", "General.pluginLang", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
 				}
 			}
+			Player currPlayer = ((Player) context.getForWhom());
 			final TextComponent badChange = Component.text()
-							.content(refs.getMsg("wwcConfigConversationLangInvalid"))
+							.content(refs.getMsg("wwcConfigConversationLangInvalid", currPlayer))
 							.color(NamedTextColor.RED)
 					.build();
-			refs.sendMsg((Player)context.getForWhom(), badChange);
+			refs.sendMsg(currPlayer, badChange);
 			return this;
 		}
 		
@@ -75,9 +78,10 @@ public class GeneralSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
 			return ChatColor.AQUA
-					+ refs.getMsg("wwcConfigConversationPrefixInput", LegacyComponentSerializer.legacyAmpersand().serialize(main.getPluginPrefix()));
+					+ refs.getMsg("wwcConfigConversationPrefixInput", LegacyComponentSerializer.legacyAmpersand().serialize(main.getPluginPrefix()), currPlayer);
 		}
 
 		@Override
@@ -92,8 +96,9 @@ public class GeneralSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSyncUserDataDelayInput", "" + main.getConfigManager().getMainConfig().getInt("General.syncUserDataDelay"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSyncUserDataDelayInput", "" + main.getConfigManager().getMainConfig().getInt("General.syncUserDataDelay"), currPlayer);
 		}
 
 		@Override
@@ -108,8 +113,9 @@ public class GeneralSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationUpdateCheckerInput", main.getConfigManager().getMainConfig().getInt("General.updateCheckerDelay") + "");
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationUpdateCheckerInput", main.getConfigManager().getMainConfig().getInt("General.updateCheckerDelay") + "", currPlayer);
 		}
 
 		@Override

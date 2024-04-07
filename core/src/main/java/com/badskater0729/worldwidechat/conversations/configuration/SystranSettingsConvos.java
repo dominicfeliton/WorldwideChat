@@ -19,8 +19,9 @@ public class SystranSettingsConvos {
         @Override
         public String getPromptText(ConversationContext context) {
             /* Close any open inventories */
-            ((Player) context.getForWhom()).closeInventory();
-            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSystranTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.systranAPIKey"));
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSystranTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.systranAPIKey"), currPlayer);
         }
 
         @Override

@@ -35,11 +35,13 @@ public class WWCLocalize extends BasicCommand {
         if (args.length == 1) {
             if (!(sender instanceof Player)) {
                 //refs.send NO CONSOLE SUPPORT
+                refs.debugMsg("Not a player");
                 return false;
             }
 
             if (!main.isActiveTranslator((Player)sender)) {
                 // refs.send NOT AN ACTIVE TRANS
+                refs.debugMsg("Not active trans");
                 return false;
             }
 
@@ -47,9 +49,12 @@ public class WWCLocalize extends BasicCommand {
             if (checkIfValidLang(args[0])) {
                 configHandler.generateMessagesConfig(args[0]);
                 currTranslator.setPersonalLangCode(args[0]);
+                //refs.send DONE
+                refs.debugMsg("Finished...");
                 return true;
             }
             // TODO: send wwclInvalidLang
+            refs.debugMsg("Invalid lang...");
             return false;
 
             // Check if is a valid localization

@@ -22,8 +22,9 @@ public class AmazonSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAmazonTranslateAccessKeyInput", main.getConfigManager().getMainConfig().getString("Translator.amazonAccessKey"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAmazonTranslateAccessKeyInput", main.getConfigManager().getMainConfig().getString("Translator.amazonAccessKey"), currPlayer);
 		}
 
 		@Override
@@ -38,8 +39,9 @@ public class AmazonSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAmazonTranslateRegionInput", main.getConfigManager().getMainConfig().getString("Translator.amazonRegion"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAmazonTranslateRegionInput", main.getConfigManager().getMainConfig().getString("Translator.amazonRegion"), currPlayer);
 		}
 
 		@Override
@@ -54,8 +56,9 @@ public class AmazonSettingsConvos {
 		@Override
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAmazonTranslateSecretKeyInput", main.getConfigManager().getMainConfig().getString("Translator.amazonSecretKey"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAmazonTranslateSecretKeyInput", main.getConfigManager().getMainConfig().getString("Translator.amazonSecretKey"), currPlayer);
 		}
 
 		@Override

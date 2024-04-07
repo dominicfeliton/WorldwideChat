@@ -306,7 +306,7 @@ public class LoadUserData implements Runnable {
 			}
 		}
 		main.getLogger().info(ChatColor.LIGHT_PURPLE
-				+ refs.getMsg("wwcUserDataReloaded"));
+				+ refs.getMsg("wwcUserDataReloaded", null));
 	}
 	
 	private boolean validLangCodes(String inLang, String outLang) {

@@ -19,8 +19,9 @@ public class AzureSettingsConvos {
         @Override
         public String getPromptText(ConversationContext context) {
             /* Close any open inventories */
-            ((Player) context.getForWhom()).closeInventory();
-            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAzureTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.azureAPIKey"));
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAzureTranslateApiKeyInput", main.getConfigManager().getMainConfig().getString("Translator.azureAPIKey"), currPlayer);
         }
 
         @Override
@@ -35,8 +36,9 @@ public class AzureSettingsConvos {
         @Override
         public String getPromptText(ConversationContext context) {
             /* Close any open inventories */
-            ((Player) context.getForWhom()).closeInventory();
-            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAzureTranslateRegionInput", main.getConfigManager().getMainConfig().getString("Translator.azureRegion"));
+            Player currPlayer = ((Player) context.getForWhom());
+            currPlayer.closeInventory();
+            return ChatColor.AQUA + refs.getMsg("wwcConfigConversationAzureTranslateRegionInput", main.getConfigManager().getMainConfig().getString("Translator.azureRegion"), currPlayer);
         }
 
         @Override

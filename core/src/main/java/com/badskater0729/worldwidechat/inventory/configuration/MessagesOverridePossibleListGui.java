@@ -36,7 +36,7 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
 	public SmartInventory overrideNewMessageSettings = SmartInventory.builder().id("overridePossibilitiesMenu")
 			.provider(this).size(6, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
-			.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesPossibleOverrides"))
+			.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesPossibleOverrides", null))
 	        .build();
 	
 	@Override
@@ -66,10 +66,10 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
 				currentEntryMeta.setDisplayName(entry.getKey());
 				ArrayList<String> lore = new ArrayList<>();
 				if (messagesConfig.getString("Overrides." + entry.getKey()) != null) {
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwcConfigGUIMessagesAlreadyOverriden"));
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwcConfigGUIMessagesAlreadyOverriden", null));
 					invManager.addGlowEffect(currentEntryMeta);
 				}
-				lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideOriginalLabel") + ": " + messagesConfig.getString("Messages." + entry.getKey()));
+				lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideOriginalLabel", null) + ": " + messagesConfig.getString("Messages." + entry.getKey()));
 				currentEntryMeta.setLore(lore);
 				currentEntry.setItemMeta(currentEntryMeta);
 				currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {

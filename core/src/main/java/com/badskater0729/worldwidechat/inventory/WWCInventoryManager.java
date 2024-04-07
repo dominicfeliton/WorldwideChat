@@ -43,7 +43,7 @@ public class WWCInventoryManager extends InventoryManager {
 			// Target player no longer online
 			player.closeInventory();
 			final TextComponent targetPlayerDC = Component.text()
-							.content(refs.getMsg("wwctGUITargetPlayerNull"))
+							.content(refs.getMsg("wwctGUITargetPlayerNull", player))
 							.color(NamedTextColor.RED).decorate(TextDecoration.ITALIC)
 					.build();
 			refs.sendMsg(player, targetPlayerDC);
@@ -52,11 +52,11 @@ public class WWCInventoryManager extends InventoryManager {
 	
 	public void inventoryError(Player player, Exception e) {
 		final TextComponent inventoryError = Component.text()
-						.content(refs.getMsg("wwcInventoryErrorPlayer"))
+						.content(refs.getMsg("wwcInventoryErrorPlayer", player))
 						.color(NamedTextColor.RED)
 				.build();
 		refs. sendMsg(player, inventoryError);
-		main.getLogger().severe(refs.getMsg("wwcInventoryError", player.getName()));
+		main.getLogger().severe(refs.getMsg("wwcInventoryError", player.getName(), player));
 		e.printStackTrace();
 		player.closeInventory();
 	}
@@ -71,7 +71,7 @@ public class WWCInventoryManager extends InventoryManager {
 		if (buttonType.equalsIgnoreCase("Previous")) {
 			pageButton = XMaterial.RED_STAINED_GLASS.parseItem();
 			pageMeta.setDisplayName(ChatColor.RED
-					+ refs.getMsg("wwcConfigGUIPreviousPageButton"));
+					+ refs.getMsg("wwcConfigGUIPreviousPageButton", player));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
 				if (!contents.pagination().isFirst()) {
@@ -83,7 +83,7 @@ public class WWCInventoryManager extends InventoryManager {
 		} else if (buttonType.equalsIgnoreCase("Next")) {
 			pageButton = XMaterial.GREEN_STAINED_GLASS.parseItem();
 			pageMeta.setDisplayName(ChatColor.GREEN
-					+ refs.getMsg("wwcConfigGUINextPageButton"));
+					+ refs.getMsg("wwcConfigGUINextPageButton", player));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
 				if (!contents.pagination().isLast()) {
@@ -95,7 +95,7 @@ public class WWCInventoryManager extends InventoryManager {
 		} else if (buttonType.equalsIgnoreCase("Page Number")) {
 			pageButton = XMaterial.LILY_PAD.parseItem();
 			pageMeta.setDisplayName(ChatColor.AQUA
-					+ refs.getMsg("wwcGUIPageNumber", (Arrays.copyOf(args, args.length, String[].class))));
+					+ refs.getMsg("wwcGUIPageNumber", (Arrays.copyOf(args, args.length, String[].class)), player));
 			if (args[0].equals("1")) {
 				addGlowEffect(pageMeta);
 			}
@@ -105,7 +105,7 @@ public class WWCInventoryManager extends InventoryManager {
 			pageButton = XMaterial.BARRIER.parseItem();
 			pageMeta = pageButton.getItemMeta();
 			pageMeta.setDisplayName(ChatColor.RED
-					+ refs.getMsg("wwcConfigGUIQuitButton"));
+					+ refs.getMsg("wwcConfigGUIQuitButton", player));
 			pageButton.setItemMeta(pageMeta);
 			contents.set(x, y, ClickableItem.of(pageButton, e -> {
 				main.reload(player, true);
@@ -141,7 +141,7 @@ public class WWCInventoryManager extends InventoryManager {
 		}
 		ItemMeta buttonMeta = button.getItemMeta();
 		buttonMeta.setDisplayName(ChatColor.GOLD
-				+ refs.getMsg(buttonName));
+				+ refs.getMsg(buttonName, player));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			invToOpen.open(player);
@@ -160,7 +160,7 @@ public class WWCInventoryManager extends InventoryManager {
 			button = XMaterial.REDSTONE_BLOCK.parseItem();
 		}
 		ItemMeta buttonMeta = button.getItemMeta();
-		buttonMeta.setDisplayName(ChatColor.GOLD + refs.getMsg(configButtonName));
+		buttonMeta.setDisplayName(ChatColor.GOLD + refs.getMsg(configButtonName, player));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			main.addPlayerUsingConfigurationGUI(player);
@@ -172,7 +172,7 @@ public class WWCInventoryManager extends InventoryManager {
                 main.getConfigManager().getMainConfig().set(eaKey, false);
             }
             final TextComponent successfulChange = Component.text()
-							.content(refs.getMsg(messageOnChange))
+							.content(refs.getMsg(messageOnChange, player))
 							.color(NamedTextColor.GREEN)
 					.build();
 			refs.sendMsg(player, successfulChange);
@@ -186,7 +186,7 @@ public class WWCInventoryManager extends InventoryManager {
 		ItemStack button = inMaterial.parseItem();
 		ItemMeta buttonMeta = button.getItemMeta();
 		buttonMeta.setDisplayName(ChatColor.GOLD
-				+ refs.getMsg(buttonName));
+				+ refs.getMsg(buttonName, player));
 		button.setItemMeta(buttonMeta);
 		contents.set(x, y, ClickableItem.of(button, e -> {
 			genericConversation.buildConversation(player).begin();

@@ -25,8 +25,9 @@ public class SQLSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSQLDatabaseNameInput", main.getConfigManager().getMainConfig().getString("Storage.sqlDatabaseName"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSQLDatabaseNameInput", main.getConfigManager().getMainConfig().getString("Storage.sqlDatabaseName"), currPlayer);
 		}
 
 		@Override
@@ -42,8 +43,9 @@ public class SQLSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSQLHostnameInput", main.getConfigManager().getMainConfig().getString("Storage.sqlHostname"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSQLHostnameInput", main.getConfigManager().getMainConfig().getString("Storage.sqlHostname"), currPlayer);
 		}
 
 		@Override
@@ -59,20 +61,22 @@ public class SQLSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSQLOptionalArgsInput", main.getConfigManager().getMainConfig().getList("Storage.sqlOptionalArgs") != null ? main.getConfigManager().getMainConfig().getList("Storage.sqlOptionalArgs").toString() : "empty");
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSQLOptionalArgsInput", (main.getConfigManager().getMainConfig().getList("Storage.sqlOptionalArgs") != null ? main.getConfigManager().getMainConfig().getList("Storage.sqlOptionalArgs").toString() : "empty"), currPlayer);
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			if (input.equalsIgnoreCase("clear")) {
+				Player currPlayer = ((Player) context.getForWhom());
 				main.getConfigManager().getMainConfig().set("Storage.sqlOptionalArgs", new String[0]);
 				final TextComponent badChange = Component.text()
-								.content(refs.getMsg("wwcConfigConversationSQLOptionalArgsCleared"))
+								.content(refs.getMsg("wwcConfigConversationSQLOptionalArgsCleared", currPlayer))
 								.color(NamedTextColor.YELLOW)
 						.build();
-				refs.sendMsg((Player)context.getForWhom(), badChange);
+				refs.sendMsg(currPlayer, badChange);
 				return this;
 			} else {
 				return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationSQLOptionalArgsSuccess",
@@ -86,8 +90,9 @@ public class SQLSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSQLPasswordInput", main.getConfigManager().getMainConfig().getString("Storage.sqlPassword"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSQLPasswordInput", main.getConfigManager().getMainConfig().getString("Storage.sqlPassword"), currPlayer);
 		}
 
 		@Override
@@ -104,8 +109,9 @@ public class SQLSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSQLPortInput", main.getConfigManager().getMainConfig().getString("Storage.sqlPort"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSQLPortInput", main.getConfigManager().getMainConfig().getString("Storage.sqlPort"), currPlayer);
 		}
 
 		@Override
@@ -122,8 +128,9 @@ public class SQLSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSQLUsernameInput", main.getConfigManager().getMainConfig().getString("Storage.sqlUsername"));
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSQLUsernameInput", main.getConfigManager().getMainConfig().getString("Storage.sqlUsername"), currPlayer);
 		}
 
 		@Override

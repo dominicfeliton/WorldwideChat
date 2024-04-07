@@ -39,7 +39,7 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 		return SmartInventory.builder().id("overrideModifyMenu")
 				.provider(new MessagesOverrideModifyGui(currentOverrideName)).size(3, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesModifyOverride"))
+				.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesModifyOverride", null))
 				.build();
 	}
 	
@@ -56,7 +56,7 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 			ItemStack deleteOverrideButton = XMaterial.BARRIER.parseItem();
 			ItemMeta deleteOverrideMeta = deleteOverrideButton.getItemMeta();
 			deleteOverrideMeta.setDisplayName(ChatColor.RED
-					+ refs.getMsg("wwcConfigGUIChatMessagesOverrideDeleteButton"));
+					+ refs.getMsg("wwcConfigGUIChatMessagesOverrideDeleteButton", null));
 			deleteOverrideButton.setItemMeta(deleteOverrideMeta);
 			contents.set(1, 6, ClickableItem.of(deleteOverrideButton, e -> {
 				BukkitRunnable saveMessages = new BukkitRunnable() {
@@ -65,7 +65,7 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 						main.getConfigManager().getMsgsConfig().set("Overrides." + currentOverrideName, null);
 						main.getConfigManager().saveMessagesConfig(false);
 						final TextComponent successfulChange = Component.text()
-										.content(refs.getMsg("wwcConfigConversationOverrideDeletionSuccess"))
+										.content(refs.getMsg("wwcConfigConversationOverrideDeletionSuccess", null))
 										.color(NamedTextColor.GREEN)
 								.build();
 						refs.sendMsg(player, successfulChange);

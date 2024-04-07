@@ -301,7 +301,7 @@ public class CommonRefs {
 			}
 		} catch (Exception e) {
 			//e.printStackTrace();
-			main.getLogger().warning(getMsg("wwcISOJSONFail"));
+			main.getLogger().warning(getMsg("wwcISOJSONFail", null));
 		}
 
 		return in;
@@ -336,14 +336,30 @@ public class CommonRefs {
 			main.getLogger().warning("DEBUG: " + inMessage);
 		}
 	}
-	
+
+	public String getMsg(String messageName, CommandSender sender) {
+		if (sender instanceof Player) {
+			return getMsg(messageName, (Player) sender);
+		} else {
+			return getMsg(messageName, null);
+		}
+	}
+
 	/**
 	 * Gets a message (with no replacements) from the currently selected messages-XX.yml.
 	 * @param messageName - The name of the message from messages-XX.yml.
 	 * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
 	 */
-	public String getMsg(String messageName) {
-		return getMsg(messageName, new String[0]);
+	public String getMsg(String messageName, Player currPlayer) {
+		return getMsg(messageName, new String[0], currPlayer);
+	}
+
+	public String getMsg(String messageName, String replacement, CommandSender sender) {
+		if (sender instanceof Player) {
+			return getMsg(messageName, replacement, (Player) sender);
+		} else {
+			return getMsg(messageName, replacement, null);
+		}
 	}
 
 	/**
@@ -352,7 +368,15 @@ public class CommonRefs {
 	 * @param replacement - The replacement value for the selected message.
 	 * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
 	 */
-	public String getMsg(String messageName, String replacement) { return getMsg(messageName, new String[] {replacement}); }
+	public String getMsg(String messageName, String replacement, Player currPlayer) { return getMsg(messageName, new String[] {replacement}, currPlayer); }
+
+	public String getMsg(String messageName, String[] replacements, CommandSender sender) {
+		if (sender instanceof Player) {
+			return getMsg(messageName, replacements, (Player) sender);
+		} else {
+			return getMsg(messageName, replacements, null);
+		}
+	}
 
 	/**
 	  * Gets a message from the currently selected messages-XX.yml.
@@ -360,10 +384,15 @@ public class CommonRefs {
 	  * @param replacements - The list of replacement values that replace variables in the selected message. There is no sorting system; the list must be already sorted.
 	  * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
 	  */
-	public String getMsg(String messageName, String[] replacements) {
+	public String getMsg(String messageName, String[] replacements, Player currPlayer) {
+		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
+		if (main.isActiveTranslator(currPlayer) && !main.getActiveTranslator(currPlayer).getPersonalLangCode().isEmpty()) {
+			debugMsg("Using user's lang: " + main.getActiveTranslator(currPlayer).getPersonalLangCode());
+			messagesConfig = main.getConfigManager().getCustomMessagesConfig(main.getActiveTranslator(currPlayer).getPersonalLangCode());
+		}
+
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
-		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
 		if (messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
 			convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
 		} else {
@@ -381,7 +410,13 @@ public class CommonRefs {
 		return MessageFormat.format(convertedOriginalMessage, (Object[]) replacements);
 	}
 
-	public TextComponent getFancyMsg(String messageName, String[] replacements, String resetCode) {
+	public TextComponent getFancyMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
+		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
+		if (sender instanceof Player && main.isActiveTranslator((Player)sender) && !main.getActiveTranslator((Player) sender).getPersonalLangCode().isEmpty()) {
+			debugMsg("Using user's lang: " + main.getActiveTranslator((Player)sender).getPersonalLangCode());
+			messagesConfig = main.getConfigManager().getCustomMessagesConfig(main.getActiveTranslator((Player) sender).getPersonalLangCode());
+		}
+
 		for (int i = 0; i < replacements.length; i++) {
 			// Translate color codes in replacements
 			replacements[i] = ChatColor.translateAlternateColorCodes('&', replacements[i] + resetCode);
@@ -389,7 +424,6 @@ public class CommonRefs {
 
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = resetCode;
-		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
 		if (messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
 			convertedOriginalMessage += ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
 		} else {
@@ -408,24 +442,24 @@ public class CommonRefs {
 	}
 
 	public void sendFancyMsg(String messageName, CommandSender sender) {
-		sendMsg(sender, getFancyMsg(messageName, new String[]{}, "&r&d"));
+		sendMsg(sender, getFancyMsg(messageName, new String[]{}, "&r&d", sender));
 	}
 
 	public void sendFancyMsg(String messageName, String[] replacements, CommandSender sender) {
 		// Default WWC color is usually LIGHT_PURPLE (&d)
-		sendMsg(sender, getFancyMsg(messageName, replacements, "&r&d"));
+		sendMsg(sender, getFancyMsg(messageName, replacements, "&r&d", sender));
 	}
 
 	public void sendFancyMsg(String messageName, String replacement, CommandSender sender) {
-		sendMsg(sender, getFancyMsg(messageName, new String[] {replacement}, "&r&d"));
+		sendMsg(sender, getFancyMsg(messageName, new String[] {replacement}, "&r&d", sender));
 	}
 
 	public void sendFancyMsg(String messageName, String replacement, String resetCode, CommandSender sender) {
-		sendMsg(sender, getFancyMsg(messageName, new String[] {replacement}, "&r"+resetCode));
+		sendMsg(sender, getFancyMsg(messageName, new String[] {replacement}, "&r"+resetCode, sender));
 	}
 
 	public void sendFancyMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
-		sendMsg(sender, getFancyMsg(messageName, replacements, "&r"+resetCode));
+		sendMsg(sender, getFancyMsg(messageName, replacements, "&r"+resetCode, sender));
 	}
 	
 	/**
@@ -510,7 +544,7 @@ public class CommonRefs {
 			int limit = mainConfig.getInt("Translator.messageCharLimit");
 			if (inMessage.length() > limit) {
 				final TextComponent charLimit = Component.text()
-								.content(getMsg("wwcCharLimit", "" + limit))
+								.content(getMsg("wwcCharLimit", "" + limit, currPlayer))
 								.color(NamedTextColor.YELLOW)
 						.build();
 				sendMsg(currPlayer, charLimit);
@@ -624,12 +658,12 @@ public class CommonRefs {
 			/* Add 1 to error count */
 			main.setTranslatorErrorCount(main.getTranslatorErrorCount() + 1);
 			final TextComponent playerError = Component.text()
-							.content(getMsg("wwcTranslatorError"))
+							.content(getMsg("wwcTranslatorError", currPlayer))
 							.color(NamedTextColor.RED)
 					.build();
 			sendMsg(currPlayer, playerError);
 			main.getLogger()
-					.severe(getMsg("wwcTranslatorErrorConsole", currPlayer.getName()));
+					.severe(getMsg("wwcTranslatorErrorConsole", currPlayer.getName(), null));
 			debugMsg(ExceptionUtils.getStackTrace(e));
 
 			/* Write to log file */
@@ -661,8 +695,8 @@ public class CommonRefs {
 			
 			/* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
 			if (main.getTranslatorErrorCount() >= mainConfig.getInt("Translator.errorLimit")) {
-				main.getLogger().severe(getMsg("wwcTranslatorErrorThresholdReached"));
-				main.getLogger().severe(getMsg("wwcTranslatorErrorThresholdReachedCheckLogs"));
+				main.getLogger().severe(getMsg("wwcTranslatorErrorThresholdReached", null));
+				main.getLogger().severe(getMsg("wwcTranslatorErrorThresholdReachedCheckLogs", null));
 				runSync(new BukkitRunnable() {
 					@Override
 					public void run() {
@@ -789,7 +823,7 @@ public class CommonRefs {
 	 */
 	public boolean sendNoConsoleChatMsg(CommandSender sender) {
 		final TextComponent noConsoleChat = Component.text() // Cannot translate console chat
-						.content(getMsg("wwctCannotTranslateConsole", new String[0]))
+						.content(getMsg("wwctCannotTranslateConsole", new String[0], null))
 						.color(NamedTextColor.RED)
 				.build();
 		sendMsg(sender, noConsoleChat);
@@ -803,10 +837,10 @@ public class CommonRefs {
 	 */
 	public boolean sendTimeoutExceptionMsg(CommandSender sender) {
 		if (sender instanceof Player) {
-			main.getLogger().warning(getMsg("wwcTimeoutExceptionConsole", sender.getName()));
+			main.getLogger().warning(getMsg("wwcTimeoutExceptionConsole", sender.getName(), (Player)sender));
 		}
 		final TextComponent timeoutException = Component.text()
-						.content(getMsg("wwcTimeoutException"))
+						.content(getMsg("wwcTimeoutException", null))
 						.color(NamedTextColor.YELLOW)
 				.build();
 		sendMsg(sender, timeoutException);
@@ -860,7 +894,7 @@ public class CommonRefs {
 					if (actualColumnType == null) {
 						// Column is missing
 						debugMsg(String.format("Column '%s' is missing in table '%s'", columnName, tableName));
-						main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
 						return true;
 					}
 
@@ -873,7 +907,7 @@ public class CommonRefs {
 						// Column type doesn't match the expected type
 						debugMsg(String.format("Column '%s' in table '%s' has type '%s' but expected type '%s'",
 								columnName, tableName, actualColumnType, expectedColumnType));
-						main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
 						return true;
 					}
 				}
@@ -883,7 +917,7 @@ public class CommonRefs {
 					if (!tableSchema.containsKey(columnName)) {
 						debugMsg(String.format("Extra column '%s' found in table '%s' that is not defined in the schema",
 								columnName, tableName));
-						main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
 						return true;
 					}
 				}
@@ -916,7 +950,7 @@ public class CommonRefs {
 					if (actualColumnType == null) {
 						// Column is missing
 						debugMsg(String.format("Column '%s' is missing in table '%s'", columnName, tableName));
-						main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
 						return true;
 					}
 
@@ -933,7 +967,7 @@ public class CommonRefs {
 						// Column type doesn't match the expected type
 						debugMsg(String.format("Column '%s' in table '%s' has type '%s' but expected type '%s'",
 								columnName, tableName, actualColumnType, expectedColumnType));
-						main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
 						return true;
 					}
 				}
@@ -950,7 +984,7 @@ public class CommonRefs {
 					if (!colExists) {
 						debugMsg(String.format("Extra column '%s' found in table '%s' that is not defined in the schema",
 								columnName, tableName));
-						main.getLogger().severe(getMsg("wwcOldDatabaseStruct"));
+						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
 						return true;
 					}
 				}
@@ -967,7 +1001,8 @@ public class CommonRefs {
 		}
 		return true;
 	}
-	
+
+	//TODO: Move to invManager?
 	/** 
 	  * Returns the generic conversation for modifying values in our config.yml using the GUI.
 	  * @param preCheck - The boolean that needs to be true for the change to proceed
@@ -979,6 +1014,7 @@ public class CommonRefs {
 	  * @return Prompt.END_OF_CONVERSATION - This will ultimately be returned to end the conversation. If the length of configValName != the length of configVal, then null is returned.
 	  */
 	public Prompt genericConfigConvo(boolean preCheck, ConversationContext context, String successfulChangeMsg, String[] configValName, Object[] configVal, SmartInventory prevInventory) {
+		Player currPlayer = ((Player)context.getForWhom());
 		if (configValName.length != configVal.length) {
 			return null;
 		}
@@ -986,12 +1022,12 @@ public class CommonRefs {
 			for (int i = 0; i < configValName.length; i++) {
 				main.getConfigManager().getMainConfig().set(configValName[i], configVal[i]);
 			}
-			main.addPlayerUsingConfigurationGUI(((Player)context.getForWhom()).getUniqueId());
+			main.addPlayerUsingConfigurationGUI((currPlayer.getUniqueId()));
 			final TextComponent successfulChange = Component.text()
-							.content(getMsg(successfulChangeMsg))
+							.content(getMsg(successfulChangeMsg, currPlayer))
 							.color(NamedTextColor.GREEN)
 					.build();
-			sendMsg((Player)context.getForWhom(), successfulChange);
+			sendMsg(currPlayer, successfulChange);
 		}
 		/* Re-open previous GUI */
 		prevInventory.open((Player)context.getForWhom());
@@ -1081,7 +1117,7 @@ public class CommonRefs {
 			if (currTime.compareTo(previous.plus(delay, ChronoUnit.SECONDS)) < 0) {
 				final TextComponent rateLimit = Component.text()
 						.content(getMsg("wwcRateLimit", "" + ChronoUnit.SECONDS.between(currTime,
-								previous.plus(delay, ChronoUnit.SECONDS))))
+								previous.plus(delay, ChronoUnit.SECONDS)), (Player)sender))
 								.color(NamedTextColor.YELLOW)
 						.build();
 				sendMsg(sender, rateLimit);

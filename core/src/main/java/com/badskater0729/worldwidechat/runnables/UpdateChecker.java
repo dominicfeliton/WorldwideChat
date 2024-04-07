@@ -42,25 +42,25 @@ public class UpdateChecker implements Runnable {
 			} catch (MalformedURLException e) {
 				latest = main.getPluginVersion() + ""; // Just set latest to the current plugin version, since we can't find
 														// a newer one
-				log.warning(refs.getMsg("wwcUpdaterConnectionFailed"));
+				log.warning(refs.getMsg("wwcUpdaterConnectionFailed", null));
 			} catch (IOException e) {
 				latest = main.getPluginVersion() + "";
-				log.warning(refs.getMsg("wwcUpdaterParserFailed"));
+				log.warning(refs.getMsg("wwcUpdaterParserFailed", null));
 			}
 
 			try {
 				if (main.getPluginVersion().equals(latest)) {
 					log.info(ChatColor.LIGHT_PURPLE
-							+ refs.getMsg("wwcUpdaterUpToDate"));
+							+ refs.getMsg("wwcUpdaterUpToDate", null));
 				} else if (new ComparableVersion(main.getPluginVersion()).compareTo(new ComparableVersion(latest)) > 0) {
-					log.warning(refs.getMsg("wwcUpdaterFutureDate", latest));
+					log.warning(refs.getMsg("wwcUpdaterFutureDate", latest, null));
 				} else {
-					log.warning(refs.getMsg("wwcUpdaterOutOfDate", latest));
+					log.warning(refs.getMsg("wwcUpdaterOutOfDate", latest, null));
 					log.warning("https://github.com/BadSkater0729/WorldwideChat/releases");
 					main.setOutOfDate(true);
 				}
 			} catch (Exception e) {
-				log.warning(refs.getMsg("wwcUpdaterFailedGeneric"));
+				log.warning(refs.getMsg("wwcUpdaterFailedGeneric", null));
 			}
 			return true;
 		};

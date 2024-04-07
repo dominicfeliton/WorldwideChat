@@ -87,6 +87,8 @@ public class ConfigurationHandler {
 
 	/* Init Messages Method */
 	public void initMessagesConfig() {
+		// TODO: Upgrade other existing messages files so that user messages are not out-of-date
+
 		/* Init config file */
 		messagesFile = new File(main.getDataFolder(), "messages-" + mainConfig.getString("General.pluginLang") + ".yml");
 
@@ -193,12 +195,17 @@ public class ConfigurationHandler {
 		}
 	}
 
+	public YamlConfiguration getCustomMessagesConfig(String inLocalLang) {
+		File msgFile = new File(main.getDataFolder(), "messages-" + inLocalLang + ".yml");
+		return YamlConfiguration.loadConfiguration(msgFile);
+	}
+
 	/* Load Main Settings Method */
 	public void loadMainSettings() {
 		/* Get rest of General Settings */
 		// Debug Mode
 		if (mainConfig.getBoolean("General.enableDebugMode")) {
-			main.getLogger().warning(refs.getMsg("wwcConfigEnabledDebugMode"));
+			main.getLogger().warning(refs.getMsg("wwcConfigEnabledDebugMode", null));
 		}
 		// Prefix
 		try {
@@ -210,7 +217,7 @@ public class ConfigurationHandler {
 			}
 		} catch (Exception e) {
 			main.setPrefixName("WWC");
-			main.getLogger().warning(refs.getMsg("wwcConfigInvalidPrefixSettings"));
+			main.getLogger().warning(refs.getMsg("wwcConfigInvalidPrefixSettings", null));
 		}
 		// Fatal Async Timeout Delay
 		try {
@@ -219,105 +226,105 @@ public class ConfigurationHandler {
 				WorldwideChat.translatorConnectionTimeoutSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout") - 2;
 				WorldwideChat.asyncTasksTimeoutSeconds = mainConfig.getInt("General.fatalAsyncTaskTimeout") - 2;
 			} else {
-				main.getLogger().warning(refs.getMsg("wwcConfigInvalidFatalAsyncTimeout"));
+				main.getLogger().warning(refs.getMsg("wwcConfigInvalidFatalAsyncTimeout", null));
 			}
 		} catch (Exception e) {
-			main.getLogger().warning(refs.getMsg("wwcConfigInvalidFatalAsyncTimeout"));
+			main.getLogger().warning(refs.getMsg("wwcConfigInvalidFatalAsyncTimeout", null));
 		}
 		// bStats
 		if (mainConfig.getBoolean("General.enablebStats")) {
 			@SuppressWarnings("unused")
 			Metrics metrics = new Metrics(WorldwideChat.instance, WorldwideChat.bStatsID);
 			main.getLogger()
-					.info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigEnabledbStats"));
+					.info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigEnabledbStats", null));
 		} else {
-			main.getLogger().warning(refs.getMsg("wwcConfigDisabledbStats"));
+			main.getLogger().warning(refs.getMsg("wwcConfigDisabledbStats", null));
 		}
 		// Update Checker Delay
 		try {
 			if (!(mainConfig.getInt("General.updateCheckerDelay") > 10)) {
 				mainConfig.set("General.updateCheckerDelay", 86400);
-				main.getLogger().warning(refs.getMsg("wwcConfigBadUpdateDelay"));
+				main.getLogger().warning(refs.getMsg("wwcConfigBadUpdateDelay", null));
 			}
 		} catch (Exception e) {
 			mainConfig.set("General.updateCheckerDelay", 86400);
-			main.getLogger().warning(refs.getMsg("wwcConfigBadUpdateDelay"));
+			main.getLogger().warning(refs.getMsg("wwcConfigBadUpdateDelay", null));
 		}
 		// Sync User Data Delay
 		try {
 			if ((mainConfig.getInt("General.syncUserDataDelay") > 10)) {
 				main.getLogger().info(
-						ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigSyncDelayEnabled", mainConfig.getInt("General.syncUserDataDelay") + ""));
+						ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigSyncDelayEnabled", mainConfig.getInt("General.syncUserDataDelay") + "", null));
 			} else {
 				mainConfig.set("General.syncUserDataDelay", 7200);
-				main.getLogger().warning(refs.getMsg("wwcConfigSyncDelayInvalid"));
+				main.getLogger().warning(refs.getMsg("wwcConfigSyncDelayInvalid", null));
 			}
 		} catch (Exception e) {
 			mainConfig.set("General.syncUserDataDelay", 7200);
-			main.getLogger().warning(refs.getMsg("wwcConfigSyncDelayInvalid"));
+			main.getLogger().warning(refs.getMsg("wwcConfigSyncDelayInvalid", null));
 		}
 		// Rate limit Settings
 		try {
 			if (mainConfig.getInt("Translator.rateLimit") >= 0) {
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigRateLimitEnabled", "" + mainConfig.getInt("Translator.rateLimit")));
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigRateLimitEnabled", "" + mainConfig.getInt("Translator.rateLimit"), null));
 			} else {
 				mainConfig.set("Translator.rateLimit", 0);
-				main.getLogger().warning(refs.getMsg("wwcConfigRateLimitInvalid"));
+				main.getLogger().warning(refs.getMsg("wwcConfigRateLimitInvalid", null));
 			}
 		} catch (Exception e) {
 			mainConfig.set("Translator.rateLimit", 0);
-			main.getLogger().warning(refs.getMsg("wwcConfigRateLimitInvalid"));
+			main.getLogger().warning(refs.getMsg("wwcConfigRateLimitInvalid", null));
 		}
 		// Per-message char limit Settings
 		try {
 			if (mainConfig.getInt("Translator.messageCharLimit") >= 0) {
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigMessageCharLimitEnabled", "" + mainConfig.getInt("Translator.messageCharLimit")));
+				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigMessageCharLimitEnabled", "" + mainConfig.getInt("Translator.messageCharLimit"), null));
 			} else {
 				mainConfig.set("Translator.messageCharLimit", 255);
-				main.getLogger().warning(refs.getMsg("wwcConfigMessageCharLimitInvalid"));
+				main.getLogger().warning(refs.getMsg("wwcConfigMessageCharLimitInvalid", null));
 			}
 		} catch (Exception e) {
 			mainConfig.set("Translator.messageCharLimit", 255);
-			main.getLogger().warning(refs.getMsg("wwcConfigMessageCharLimitInvalid"));
+			main.getLogger().warning(refs.getMsg("wwcConfigMessageCharLimitInvalid", null));
 		}
 		// Cache Settings
 		try {
 			if (mainConfig.getInt("Translator.translatorCacheSize") > 0) {
 				main.getLogger()
-						.info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigCacheEnabled", mainConfig.getInt("Translator.translatorCacheSize") + ""));
+						.info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigCacheEnabled", mainConfig.getInt("Translator.translatorCacheSize") + "", null));
 			    // Set cache to size beforehand, so we can avoid expandCapacity :)
 				main.setCacheProperties(mainConfig.getInt("Translator.translatorCacheSize"));
 			} else {
 				mainConfig.set("Translator.translatorCacheSize", 0);
 				main.setCacheProperties(0);
-				main.getLogger().warning(refs.getMsg("wwcConfigCacheDisabled"));
+				main.getLogger().warning(refs.getMsg("wwcConfigCacheDisabled", null));
 			}
 		} catch (Exception e) {
 			mainConfig.set("Translator.translatorCacheSize", 100);
 			main.setCacheProperties(100);
-			main.getLogger().warning(refs.getMsg("wwcConfigCacheInvalid"));
+			main.getLogger().warning(refs.getMsg("wwcConfigCacheInvalid", null));
 		}
 		// Error Limit Settings
 		try {
 			if (mainConfig.getInt("Translator.errorLimit") > 0) {
 				main.getLogger().info(
-						ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigErrorLimitEnabled", mainConfig.getInt("Translator.errorLimit") + ""));
+						ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigErrorLimitEnabled", mainConfig.getInt("Translator.errorLimit") + "", null));
 			} else {
 				mainConfig.set("Translator.errorLimit", 5);
-				main.getLogger().warning(refs.getMsg("wwcConfigErrorLimitInvalid"));
+				main.getLogger().warning(refs.getMsg("wwcConfigErrorLimitInvalid", null));
 			}
 		} catch (Exception e) {
 			mainConfig.set("Translator.errorLimit", 5);
-			main.getLogger().warning(refs.getMsg("wwcConfigErrorLimitInvalid"));
+			main.getLogger().warning(refs.getMsg("wwcConfigErrorLimitInvalid", null));
 		}
 		// List of Errors to Ignore Settings
 		try {
 			ArrayList<String> errorsToIgnore = (ArrayList<String>) mainConfig.getList("Storage.errorsToIgnore");
 			main.getLogger().info(
-					ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigErrorsToIgnoreSuccess"));
+					ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigErrorsToIgnoreSuccess", null));
 		} catch (Exception e) {
 			mainConfig.set("Storage.errorsToIgnore", Arrays.asList("confidence", "same as target", "detect the source language"));
-			main.getLogger().warning(refs.getMsg("wwcConfigErrorsToIgnoreInvalid"));
+			main.getLogger().warning(refs.getMsg("wwcConfigErrorsToIgnoreInvalid", null));
 		}
 	}
 	
@@ -330,15 +337,15 @@ public class ConfigurationHandler {
 						(List<String>) mainConfig.getList("Storage.sqlOptionalArgs"), mainConfig.getBoolean("Storage.sqlUseSSL"));
 				sql.connect();
 				main.setSqlSession(sql);
-				main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigConnectionSuccess", "SQL"));
+				main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigConnectionSuccess", "SQL", null));
 			} catch (Exception e) {
-				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "SQL"));
+				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "SQL", null));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
 				if (main.getSqlSession() != null) {
 					main.getSqlSession().disconnect();
 					main.setSqlSession(null);
 				}
-				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback"));
+				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback", null));
 			}
 		} else if (mainConfig.getBoolean("Storage.useMongoDB")) {
 			try {
@@ -347,15 +354,15 @@ public class ConfigurationHandler {
 						mainConfig.getString("Storage.mongoPassword"), (List<String>) mainConfig.getList("Storage.mongoOptionalArgs"));
 				mongo.connect();
 				main.setMongoSession(mongo);
-				main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigConnectionSuccess", "MongoDB"));
+				main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigConnectionSuccess", "MongoDB", null));
 			} catch (Exception e) {
-				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "MongoDB"));
+				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "MongoDB", null));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
 				if (main.getMongoSession() != null) {
 					main.getMongoSession().disconnect();
 					main.setMongoSession(null);
 				}
-				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback"));
+				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback", null));
 			}
 		} else if (mainConfig.getBoolean("Storage.usePostgreSQL")) {
 			try {
@@ -364,18 +371,18 @@ public class ConfigurationHandler {
 						(List<String>) mainConfig.getList("Storage.postgresOptionalArgs"), mainConfig.getBoolean("Storage.postgresSSL"));
 				postgres.connect();
 				main.setPostgresSession(postgres);
-				main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigConnectionSuccess", "Postgres"));
+				main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigConnectionSuccess", "Postgres", null));
 			} catch (Exception e) {
-				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "Postgres"));
+				main.getLogger().severe(refs.getMsg("wwcConfigConnectionFail", "Postgres", null));
 				main.getLogger().warning(ExceptionUtils.getMessage(e));
 				if (main.getPostgresSession() != null) {
 					main.getPostgresSession().disconnect();
 					main.setPostgresSession(null);
 				}
-				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback"));
+				main.getLogger().severe(refs.getMsg("wwcConfigYAMLFallback", null));
 			}
 		} else {
-			main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigYAMLDefault"));
+			main.getLogger().info(ChatColor.GREEN + refs.getMsg("wwcConfigYAMLDefault", null));
 		}
 	}
 
@@ -387,7 +394,7 @@ public class ConfigurationHandler {
 		for (int tryNumber = 1; tryNumber <= maxTries; tryNumber++) {
 			if (refs.serverIsStopping()) return outName;
 			try {
-				main.getLogger().warning(refs.getMsg("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}));
+				main.getLogger().warning(refs.getMsg("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}, null));
 				for (Pair<String, String> eaPair : CommonRefs.translatorPairs) {
 					if (mainConfig.getBoolean(eaPair.getKey())) {
 						attemptedTranslator = eaPair.getValue();
@@ -404,10 +411,10 @@ public class ConfigurationHandler {
 			}
 		}
 		if (outName.equals("Invalid")) {
-			main.getLogger().severe(refs.getMsg("wwcInvalidTranslator"));
+			main.getLogger().severe(refs.getMsg("wwcInvalidTranslator", null));
 		} else {
 			main.getLogger().info(ChatColor.GREEN
-					+ refs.getMsg("wwcConfigConnectionSuccess", outName));
+					+ refs.getMsg("wwcConfigConnectionSuccess", outName, null));
 		}
 		return outName;
 	}
@@ -479,7 +486,6 @@ public class ConfigurationHandler {
 	/* Sync user data to storage */
 	public void syncData(boolean wasPreviouslyInvalid) {
 		/* If our translator is Invalid, do not run this code */
-		// TODO: For SQL/Postgres, use CommonRefs definitions instead...dataclass-esque thing?
 		if (wasPreviouslyInvalid) {
 			return;
 		}

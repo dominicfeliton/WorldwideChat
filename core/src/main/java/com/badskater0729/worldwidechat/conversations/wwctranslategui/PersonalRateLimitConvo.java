@@ -32,8 +32,9 @@ public class PersonalRateLimitConvo extends NumericPrompt {
 	public String getPromptText(ConversationContext context) {
 		/* Close any open inventories */
 		CommonRefs refs = main.getServerFactory().getCommonRefs();
-		((Player) context.getForWhom()).closeInventory();
-		return ChatColor.AQUA + refs.getMsg("wwctGUIConversationRateLimit", currTranslator.getRateLimit() + "");
+		Player currPlayer = ((Player) context.getForWhom());
+		currPlayer.closeInventory();
+		return ChatColor.AQUA + refs.getMsg("wwctGUIConversationRateLimit", currTranslator.getRateLimit() + "", currPlayer);
 	}
 
 	@Override

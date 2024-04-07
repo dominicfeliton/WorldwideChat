@@ -35,8 +35,11 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 	public final SmartInventory overrideMessagesSettings = SmartInventory.builder().id("overrideMessagesMenu")
 			.provider(this).size(6, 9)
 			.manager(invManager)
-			.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettings"))
+			.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettings", null))
 	        .build();
+
+	// TODO: Rewrite for being able to switch between localizations??
+	// TODO: Also fix getMsg calls to respect user's localization
 	
 	@Override
 	public void init(Player player, InventoryContents contents) {
@@ -66,8 +69,8 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 					
 					currentEntryMeta.setDisplayName(entry.getKey());
 					ArrayList<String> lore = new ArrayList<>();
-					lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideOriginalLabel") + ": " + (messagesConfig.getString("Messages." + entry.getKey()) != null ? messagesConfig.getString("Messages." + entry.getKey()) : refs.getMsg("wwcConfigGUIChatMessagesDeadOverride")));
-					lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideCustomLabel") + ": " + entry.getValue());
+					lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideOriginalLabel", null) + ": " + (messagesConfig.getString("Messages." + entry.getKey()) != null ? messagesConfig.getString("Messages." + entry.getKey()) : refs.getMsg("wwcConfigGUIChatMessagesDeadOverride", null)));
+					lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideCustomLabel", null) + ": " + entry.getValue());
 					currentEntryMeta.setLore(lore);
 					currentEntry.setItemMeta(currentEntryMeta);
 					currentOverrides[currSpot] = ClickableItem.of(currentEntry, e -> {

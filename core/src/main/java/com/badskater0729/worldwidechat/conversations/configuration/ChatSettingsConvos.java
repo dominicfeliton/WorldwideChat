@@ -33,8 +33,9 @@ public class ChatSettingsConvos {
 		public String getPromptText(ConversationContext context) {
 			/* Close any open inventories */
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			((Player) context.getForWhom()).closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationOverrideTextChange");
+			Player currPlayer = ((Player) context.getForWhom());
+			currPlayer.closeInventory();
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationOverrideTextChange", currPlayer);
 		}
 
 		@Override
@@ -42,10 +43,11 @@ public class ChatSettingsConvos {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 			if (!input.equals("0")) {
+				Player currPlayer = ((Player) context.getForWhom());
 				main.getConfigManager().getMsgsConfig().set("Overrides." + currentOverrideName, input);
-				main.addPlayerUsingConfigurationGUI(((Player) context.getForWhom()).getUniqueId());
+				main.addPlayerUsingConfigurationGUI(currPlayer.getUniqueId());
 				final TextComponent successfulChange = Component.text()
-								.content(refs.getMsg("wwcConfigConversationOverrideTextChangeSuccess"))
+								.content(refs.getMsg("wwcConfigConversationOverrideTextChangeSuccess", currPlayer))
 								.color(NamedTextColor.GREEN)
 						.build();
 				refs.sendMsg((Player)context.getForWhom(), successfulChange);

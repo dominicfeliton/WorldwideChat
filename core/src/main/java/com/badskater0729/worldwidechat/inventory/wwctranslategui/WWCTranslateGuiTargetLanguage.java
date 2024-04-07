@@ -41,11 +41,14 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 		this.targetPlayerUUID = targetPlayerUUID;
 	}
 
+
+	// TODO: Rewrite for being able to switch between localizations??
+	// TODO: Also fix getMsg calls to respect user's localization
 	public SmartInventory getTargetLanguageInventory() {
 		return SmartInventory.builder().id("translateTargetLanguage")
 				.provider(new WWCTranslateGuiTargetLanguage(selectedSourceLanguage, targetPlayerUUID)).size(6, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + refs.getMsg("wwctGUINewTranslationTarget"))
+				.title(ChatColor.BLUE + refs.getMsg("wwctGUINewTranslationTarget", null))
 				.build();
 	}
 
@@ -79,7 +82,7 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 				/* Add Glow Effect */
 				if (userLang.getLangCode().equals(currLang.getLangCode()) || userLang.getLangName().equals(currLang.getLangName())) {
 					invManager.addGlowEffect(itemForLangMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive"));
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive", null));
 				}
 				itemForLangMeta.setDisplayName(currLang.getLangName());
 				if (!currLang.getNativeLangName().equals("")) {

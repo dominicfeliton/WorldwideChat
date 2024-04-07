@@ -211,7 +211,7 @@ public class TranslateInGameListener implements Listener {
 
 							/* If we are here, sign is too long or deleted msg */
 							final TextComponent translationNoticeMsg = Component.text()
-									.content(refs.getMsg("wwcSignDeletedOrTooLong"))
+									.content(refs.getMsg("wwcSignDeletedOrTooLong", event.getPlayer()))
 									.color(NamedTextColor.LIGHT_PURPLE)
 									.decoration(TextDecoration.ITALIC, true)
 									.append(Component.text().content("\n" + "---------------")

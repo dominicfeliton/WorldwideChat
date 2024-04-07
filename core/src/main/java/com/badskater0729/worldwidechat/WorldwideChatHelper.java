@@ -22,7 +22,7 @@ public class WorldwideChatHelper {
         pluginManager.registerEvents(new TranslateInGameListener(), main);
         pluginManager.registerEvents(new InventoryListener(), main);
         main.getLogger().info(ChatColor.LIGHT_PURPLE
-                + refs.getMsg("wwcListenersInitialized"));
+                + refs.getMsg("wwcListenersInitialized", null));
     }
 
 }
