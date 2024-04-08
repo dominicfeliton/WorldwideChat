@@ -407,6 +407,9 @@ public class CommonRefs {
 		// Translate color codes in the original message
 		convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', convertedOriginalMessage);
 
+		// Escape single quotes for MessageFormat
+		convertedOriginalMessage = convertedOriginalMessage.replace("'", "''");
+
 		// Return fixedMessage with replaced vars
 		return MessageFormat.format(convertedOriginalMessage, (Object[]) replacements);
 	}
@@ -438,6 +441,9 @@ public class CommonRefs {
 
 		// Translate color codes in the original message
 		convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', convertedOriginalMessage);
+
+		// Escape single quotes for MessageFormat
+		convertedOriginalMessage = convertedOriginalMessage.replace("'", "''");
 
 		// Return fixedMessage with replaced vars
 		return Component.text().content(MessageFormat.format(convertedOriginalMessage, (Object[]) replacements)).build();
