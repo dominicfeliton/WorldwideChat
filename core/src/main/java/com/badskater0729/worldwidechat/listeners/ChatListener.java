@@ -1,7 +1,9 @@
 package com.badskater0729.worldwidechat.listeners;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -44,7 +46,7 @@ public class ChatListener implements Listener {
 			}
 			
 			// New WWC functionality/Translate Incoming Messages
-			List<Player> unmodifiedMessageRecipients = new ArrayList<Player>();
+			Set<Player> unmodifiedMessageRecipients = new HashSet<Player>();
 			for (Player eaRecipient : event.getRecipients()) {
 				ActiveTranslator testTranslator = main.getActiveTranslator(eaRecipient.getUniqueId());
 				String testInLang = testTranslator.getInLangCode();
@@ -75,8 +77,7 @@ public class ChatListener implements Listener {
 					unmodifiedMessageRecipients.add(eaRecipient);
 				}
 			}
-			event.getRecipients().clear();
-			event.getRecipients().addAll(unmodifiedMessageRecipients);
+			event.getRecipients().retainAll(unmodifiedMessageRecipients);
 		} catch (Exception e) {
 			if (!refs.serverIsStopping()) {
 				throw e;

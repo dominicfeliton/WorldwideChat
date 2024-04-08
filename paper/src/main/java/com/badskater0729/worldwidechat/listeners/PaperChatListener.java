@@ -19,7 +19,9 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.eclipse.sisu.inject.Legacy;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class PaperChatListener implements Listener {
 
@@ -45,7 +47,7 @@ public class PaperChatListener implements Listener {
             }
 
             /* New WWC functionality/Translate Incoming Messages */
-            List<Audience> unmodifiedMessageRecipients = new ArrayList<Audience>();
+            Set<Audience> unmodifiedMessageRecipients = new HashSet<Audience>();
             for (Audience eaRecipient : event.viewers()) {
                 // Do not handle non-players
                 if (!(eaRecipient instanceof Player)) {
@@ -82,8 +84,7 @@ public class PaperChatListener implements Listener {
                     unmodifiedMessageRecipients.add(eaRecipient);
                 }
             }
-            event.viewers().clear();
-            event.viewers().addAll(unmodifiedMessageRecipients);
+            event.viewers().retainAll(unmodifiedMessageRecipients);
         } catch (Exception e) {
             if (!refs.serverIsStopping()) {
                 throw e;
