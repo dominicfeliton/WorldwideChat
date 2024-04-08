@@ -10,6 +10,7 @@ public class PlayerRecord {
 
 	private String lastTranslationTime = "";
 	private String playerUUID = "";
+	private String localizationCode = "";
 	
 	private boolean hasBeenSaved = false;
 
@@ -37,6 +38,8 @@ public class PlayerRecord {
 	public String getUUID() {
 		return playerUUID;
 	}
+
+	public String getLocalizationCode() { return localizationCode; }
 	
 	public boolean getHasBeenSaved() {
 		return hasBeenSaved;
@@ -63,6 +66,11 @@ public class PlayerRecord {
 	public void setUUID(String i) {
 		hasBeenSaved = false;
 		playerUUID = i;
+	}
+
+	public void setLocalizationCode(String s) {
+		hasBeenSaved = false;
+		localizationCode = s;
 	}
 	
 	public void setHasBeenSaved(boolean i) {

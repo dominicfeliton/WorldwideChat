@@ -384,11 +384,12 @@ public class CommonRefs {
 	  * @param replacements - The list of replacement values that replace variables in the selected message. There is no sorting system; the list must be already sorted.
 	  * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
 	  */
+	// TODO: Do not constantly load messagesConfig(), load it once in dict
 	public String getMsg(String messageName, String[] replacements, Player currPlayer) {
 		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
-		if (main.isActiveTranslator(currPlayer) && !main.getActiveTranslator(currPlayer).getPersonalLangCode().isEmpty()) {
-			debugMsg("Using user's lang: " + main.getActiveTranslator(currPlayer).getPersonalLangCode());
-			messagesConfig = main.getConfigManager().getCustomMessagesConfig(main.getActiveTranslator(currPlayer).getPersonalLangCode());
+		if (currPlayer != null && main.isPlayerRecord(currPlayer) && !main.getPlayerRecord(currPlayer, false).getLocalizationCode().isEmpty()) {
+			debugMsg("Using user's lang getFancyMsg(): " + main.getPlayerRecord(currPlayer, false).getLocalizationCode());
+			messagesConfig = main.getConfigManager().getCustomMessagesConfig(main.getPlayerRecord(currPlayer, false).getLocalizationCode());
 		}
 
 		/* Get message from messages.yml */
@@ -410,11 +411,12 @@ public class CommonRefs {
 		return MessageFormat.format(convertedOriginalMessage, (Object[]) replacements);
 	}
 
+	// TODO: Do not constantly load messagesConfig(), load it once in dict
 	public TextComponent getFancyMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
 		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
-		if (sender instanceof Player && main.isActiveTranslator((Player)sender) && !main.getActiveTranslator((Player) sender).getPersonalLangCode().isEmpty()) {
-			debugMsg("Using user's lang: " + main.getActiveTranslator((Player)sender).getPersonalLangCode());
-			messagesConfig = main.getConfigManager().getCustomMessagesConfig(main.getActiveTranslator((Player) sender).getPersonalLangCode());
+		if (sender instanceof Player && main.isPlayerRecord((Player)sender) && !main.getPlayerRecord((Player) sender, false).getLocalizationCode().isEmpty()) {
+			debugMsg("Using user's lang getFancyMsg(): " + main.getPlayerRecord((Player)sender, false).getLocalizationCode());
+			messagesConfig = main.getConfigManager().getCustomMessagesConfig(main.getPlayerRecord((Player) sender, false).getLocalizationCode());
 		}
 
 		for (int i = 0; i < replacements.length; i++) {
@@ -831,7 +833,7 @@ public class CommonRefs {
 	}
 	
 	/**
-	 * Sends a message to console and a sender that a timeout exception has occured.
+	 * Sends a message to console and a sender that a timeout exception has occurred.
 	 * @param sender - Who will receive the message besides console.
 	 * @return Returns true, so that a command can return this method.
 	 */

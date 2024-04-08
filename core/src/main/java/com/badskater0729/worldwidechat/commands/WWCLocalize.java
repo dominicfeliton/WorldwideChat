@@ -4,6 +4,7 @@ import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.configuration.ConfigurationHandler;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
 import com.badskater0729.worldwidechat.util.CommonRefs;
+import com.badskater0729.worldwidechat.util.PlayerRecord;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -39,16 +40,16 @@ public class WWCLocalize extends BasicCommand {
                 return false;
             }
 
-            if (!main.isActiveTranslator((Player)sender)) {
-                // refs.send NOT AN ACTIVE TRANS
-                refs.debugMsg("Not active trans");
+            if (!main.isPlayerRecord((Player)sender)) {
+                // refs.send NOT A PLAYER RECORD
+                refs.debugMsg("Not player record");
                 return false;
             }
 
-            ActiveTranslator currTranslator = main.getActiveTranslator((Player)sender);
+            PlayerRecord currRecord = main.getPlayerRecord((Player)sender, false);
             if (checkIfValidLang(args[0])) {
                 configHandler.generateMessagesConfig(args[0]);
-                currTranslator.setPersonalLangCode(args[0]);
+                currRecord.setLocalizationCode(args[0]);
                 //refs.send DONE
                 refs.debugMsg("Finished...");
                 return true;
