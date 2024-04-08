@@ -408,7 +408,7 @@ public class CommonRefs {
 		convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', convertedOriginalMessage);
 
 		// Escape single quotes for MessageFormat
-		convertedOriginalMessage = convertedOriginalMessage.replace("'", "''");
+		convertedOriginalMessage = convertedOriginalMessage.replace("'", "''").trim();
 
 		// Return fixedMessage with replaced vars
 		return MessageFormat.format(convertedOriginalMessage, (Object[]) replacements);
@@ -443,7 +443,7 @@ public class CommonRefs {
 		convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', convertedOriginalMessage);
 
 		// Escape single quotes for MessageFormat
-		convertedOriginalMessage = convertedOriginalMessage.replace("'", "''");
+		convertedOriginalMessage = convertedOriginalMessage.replace("'", "''").trim();
 
 		// Return fixedMessage with replaced vars
 		return Component.text().content(MessageFormat.format(convertedOriginalMessage, (Object[]) replacements)).build();

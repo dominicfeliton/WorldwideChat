@@ -67,26 +67,26 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 				ActiveTranslator currTrans = main.getActiveTranslator(targetPlayerUUID);
 				isActiveTranslator = XMaterial.GREEN_CONCRETE.parseItem();
 				ItemMeta isActiveTranslatorMeta = isActiveTranslator.getItemMeta();
-				isActiveTranslatorMeta.setDisplayName(refs.getMsg("wwcsIsActiveTranslator", ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713", null));
+				isActiveTranslatorMeta.setDisplayName(refs.getMsg("wwcsIsActiveTranslator", ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713", player));
 
 				List<String> lore = new ArrayList<>();
-				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransUUID", ChatColor.GOLD + currTrans.getUUID(), null));
-				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransRateLimit", ChatColor.GOLD + "" + currTrans.getRateLimit(), null));
-				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransInLang", ChatColor.GOLD + currTrans.getInLangCode(), null));
-				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransOutLang", ChatColor.GOLD + currTrans.getOutLangCode(), null));
-				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransOutgoing", ChatColor.GOLD + "" + currTrans.getTranslatingChatOutgoing(), null));
-				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransIncoming", ChatColor.GOLD + "" + currTrans.getTranslatingChatIncoming(), null));
-				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransBook", ChatColor.GOLD + "" + currTrans.getTranslatingBook(), null));
-				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransSign", ChatColor.GOLD + "" + currTrans.getTranslatingSign(), null));
-				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransItem", ChatColor.GOLD + "" + currTrans.getTranslatingItem(), null));
-				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransEntity", ChatColor.GOLD + "" + currTrans.getTranslatingEntity(), null));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransUUID", ChatColor.GOLD + currTrans.getUUID(), player));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransRateLimit", ChatColor.GOLD + "" + currTrans.getRateLimit(), player));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransInLang", ChatColor.GOLD + currTrans.getInLangCode(), player));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransOutLang", ChatColor.GOLD + currTrans.getOutLangCode(), player));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransOutgoing", ChatColor.GOLD + "" + currTrans.getTranslatingChatOutgoing(), player));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransIncoming", ChatColor.GOLD + "" + currTrans.getTranslatingChatIncoming(), player));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransBook", ChatColor.GOLD + "" + currTrans.getTranslatingBook(), player));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransSign", ChatColor.GOLD + "" + currTrans.getTranslatingSign(), player));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransItem", ChatColor.GOLD + "" + currTrans.getTranslatingItem(), player));
+				lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransEntity", ChatColor.GOLD + "" + currTrans.getTranslatingEntity(), player));
 
-// If debug, append extra vars
+				// If debug, append extra vars
 				if (main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
-					lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransColorWarning", ChatColor.GOLD + "" + currTrans.getCCWarning(), null));
-					lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransSignWarning", ChatColor.GOLD + "" + currTrans.getSignWarning(), null));
-					lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransSaved", ChatColor.GOLD + "" + currTrans.getHasBeenSaved(), null));
-					lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransPrevRate", ChatColor.GOLD + currTrans.getRateLimitPreviousTime(), null));
+					lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransColorWarning", ChatColor.GOLD + "" + currTrans.getCCWarning(), player));
+					lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransSignWarning", ChatColor.GOLD + "" + currTrans.getSignWarning(), player));
+					lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransSaved", ChatColor.GOLD + "" + currTrans.getHasBeenSaved(), player));
+					lore.add(ChatColor.LIGHT_PURPLE + "  - " + refs.getMsg("wwcsActiveTransPrevRate", ChatColor.GOLD + currTrans.getRateLimitPreviousTime(), player));
 				}
 				isActiveTranslatorMeta.setLore(lore);
 
@@ -94,7 +94,7 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 			} else {
 				isActiveTranslator = XMaterial.RED_CONCRETE.parseItem();
 				ItemMeta isActiveTranslatorMeta = isActiveTranslator.getItemMeta();
-				isActiveTranslatorMeta.setDisplayName(refs.getMsg("wwcsIsActiveTranslator", ChatColor.BOLD + "" + ChatColor.RED + "\u2717", null));
+				isActiveTranslatorMeta.setDisplayName(refs.getMsg("wwcsIsActiveTranslator", ChatColor.BOLD + "" + ChatColor.RED + "\u2717", player));
 				isActiveTranslator.setItemMeta(isActiveTranslatorMeta);
 			}
 			contents.set(2, 1, ClickableItem.empty(isActiveTranslator));
@@ -102,21 +102,21 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 			/* Attempted translations button */
 			ItemStack attemptedTranslations = XMaterial.WRITABLE_BOOK.parseItem();
 			ItemMeta attemptedTranslationsMeta = attemptedTranslations.getItemMeta();
-			attemptedTranslationsMeta.setDisplayName(refs.getMsg("wwcsAttemptedTranslations", ChatColor.AQUA + "" + currRecord.getAttemptedTranslations(), null));
+			attemptedTranslationsMeta.setDisplayName(refs.getMsg("wwcsAttemptedTranslations", ChatColor.AQUA + "" + currRecord.getAttemptedTranslations(), player));
 			attemptedTranslations.setItemMeta(attemptedTranslationsMeta);
 			contents.set(2, 3, ClickableItem.empty(attemptedTranslations));
 			
 			/* Successful translations button */
 			ItemStack successfulTranslations = XMaterial.WRITTEN_BOOK.parseItem();
 			ItemMeta successfulTranslationsMeta = successfulTranslations.getItemMeta();
-			successfulTranslationsMeta.setDisplayName(refs.getMsg("wwcsSuccessfulTranslations", ChatColor.AQUA + "" + currRecord.getSuccessfulTranslations(), null));
+			successfulTranslationsMeta.setDisplayName(refs.getMsg("wwcsSuccessfulTranslations", ChatColor.AQUA + "" + currRecord.getSuccessfulTranslations(), player));
 			successfulTranslations.setItemMeta(successfulTranslationsMeta);
 			contents.set(2, 5, ClickableItem.empty(successfulTranslations));
 			
 			/* Last translation time button */
 			ItemStack lastTranslationTime = XMaterial.CLOCK.parseItem();
 			ItemMeta lastTranslationTimeMeta = lastTranslationTime.getItemMeta();
-			lastTranslationTimeMeta.setDisplayName(refs.getMsg("wwcsLastTranslationTime", ChatColor.AQUA + "" + currRecord.getLastTranslationTime(), null));
+			lastTranslationTimeMeta.setDisplayName(refs.getMsg("wwcsLastTranslationTime", ChatColor.AQUA + "" + currRecord.getLastTranslationTime(), player));
 			lastTranslationTime.setItemMeta(lastTranslationTimeMeta);
 			contents.set(2, 7, ClickableItem.empty(lastTranslationTime));
 

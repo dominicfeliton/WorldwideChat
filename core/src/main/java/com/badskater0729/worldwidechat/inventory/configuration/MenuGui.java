@@ -457,7 +457,7 @@ public class MenuGui implements InventoryProvider {
 		return SmartInventory.builder().id(id)
 				.provider(this).size(x, y)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(col + refs.getMsg(titleTag, null))
+				.title(col + refs.getMsg(titleTag, args,null))
 				.build();
 	}
 	
