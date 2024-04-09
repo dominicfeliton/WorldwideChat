@@ -209,11 +209,9 @@ Messages:
     বার্তা টাইপ করুন, অথবা ফিরে যেতে 0 টাইপ করুন। আপনি মূল বার্তায় দেখতে শতাংশ লক্ষণ
     দিয়ে শুরু যে কোনো ভেরিয়েবল অন্তর্ভুক্ত মনে রাখবেন।
   wwctGUISourceOrTargetTranslationAlreadyActive: এই ভাষা ইতিমধ্যে সক্রিয়!
-  wwcConfigGUIMessagesOverrideChatButton: ডিফল্ট প্লাগইন বার্তা ওভাররাইড করুন
   wwcConfigGUIChatMessagesPossibleOverrides: একটি বার্তা নির্বাচন করুন
   wwcConfigGUIChatMessagesModifyOverride: বিদ্যমান ওভাররাইড পরিবর্তন করুন
   wwcConfigConversationOverrideDeletionSuccess: কাস্টম বার্তা ওভাররাইড মুছে ফেলা হয়েছে।
-  wwcConfigGUIChatMessagesOverrideSettings: ডিফল্ট বার্তা ওভাররাইড করুন
   wwcConfigGUIChatMessagesDeadOverride: এই ওভাররাইড হয় অবৈধ, অথবা মূল বার্তাটি মুছে
     ফেলা হয়েছে। আপনি এটি মুছে ফেলা উচিত।
   wwcConfigGUIMessagesAlreadyOverriden: আপনি ইতিমধ্যে এই বার্তার জন্য একটি ওভাররাইড
@@ -558,4 +556,8 @@ Messages:
   wwcOldDatabaseStruct: 'আপনার নির্বাচিত ডাটাবেসে WorldwideChat-এর পূর্ববর্তী সংস্করণ
     থেকে একটি অকার্যকর সেটআপ রয়েছে। এই সমস্যাটি ঠিক করতে আপনি নিম্নলিখিত কমান্ডটি
     চালাতে পারেন: /wwcd রূপান্তর'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: স্থানীয়করণ চয়ন করুন
+  wwcConfigGUIMessagesOverridePickChatButton: ডিফল্ট প্লাগইন বার্তাগুলি ওভাররা
+  wwcConfigGUIChatMessagesOverrideSettings: ডিফল্ট বার্তাগুলি ওভাররাইড করুন ({0})
+  wwcConfigGUIMessagesServerLang: এটি config.yml এ প্লাগইনের ডিফল্ট ভাষা।
 

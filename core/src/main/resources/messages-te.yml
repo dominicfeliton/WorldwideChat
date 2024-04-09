@@ -212,11 +212,9 @@ Messages:
     చేయండి లేదా తిరిగి వెళ్ళడానికి 0 అని టైప్ చేయండి. అసలు సందేశంలో మీరు చూసే శాతం
     సంకేతాలతో ప్రారంభమయ్యే ఏదైనా వేరియబుల్స్ను చేర్చాలని గుర్తుంచుకోండి.
   wwctGUISourceOrTargetTranslationAlreadyActive: ఈ భాష ఇప్పటికే చురుకుగా ఉంది!
-  wwcConfigGUIMessagesOverrideChatButton: డిఫాల్ట్ ప్లగిన్ సందేశాలు భర్తీ
   wwcConfigGUIChatMessagesPossibleOverrides: సందేశాన్ని ఎంచుకోండి
   wwcConfigGUIChatMessagesModifyOverride: ఇప్పటికే ఉన్న భర్తీ సవరించు
   wwcConfigConversationOverrideDeletionSuccess: కస్టమ్ సందేశం భర్తీ తొలగించబడింది.
-  wwcConfigGUIChatMessagesOverrideSettings: డిఫాల్ట్ సందేశాలను భర్తీ చేయండి
   wwcConfigGUIChatMessagesDeadOverride: ఈ భర్తీ చెల్లదు గాని, లేదా అసలు సందేశం తొలగించబడింది.
     మీరు దీన్ని తొలగించాలి.
   wwcConfigGUIMessagesAlreadyOverriden: మీరు ఇప్పటికే ఈ సందేశం కోసం ఒక ఓవర్రైడ్ కలిగి!
@@ -566,4 +564,8 @@ Messages:
   wwcOldDatabaseStruct: 'మీ ఎంచుకున్న డేటాబేస్ WorldwideChat యొక్క మునుపటి వెర్షన్
     నుండి అసమర్థమైన సెటప్ను కలిగి ఉంది. ఈ సమస్యను పరిష్కరించడానికి మీరు క్రింది ఆదేశాన్ని
     అమలు చేయవచ్చు: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: స్థానికీకరణను ఎంచుకోండి
+  wwcConfigGUIMessagesOverridePickChatButton: డిఫాల్ట్ ప్లగిన్ సందేశాలను ఓవర్రైడ్
+  wwcConfigGUIChatMessagesOverrideSettings: డిఫాల్ట్ సందేశాలను ఓవర్రైడ్ చేయండి ({0})
+  wwcConfigGUIMessagesServerLang: ఇది config.yml లో ప్లగ్ఇన్ యొక్క డిఫాల్ట్ భాష.
 

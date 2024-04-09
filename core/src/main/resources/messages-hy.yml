@@ -220,12 +220,10 @@ Messages:
     այս անտեսման համար, կամ մուտքագրեք 0 ետ վերադառնալու համար: Հիշեք, որ ներառել
     ցանկացած փոփոխականներ սկսած տոկոսային նշանների դուք տեսնում եք բնօրինակը հաղորդագրության.'
   wwctGUISourceOrTargetTranslationAlreadyActive: 'Այս լեզուն արդեն ակտիվ է:'
-  wwcConfigGUIMessagesOverrideChatButton: Անտեսեն Default Plugin հաղորդագրությունները
   wwcConfigGUIChatMessagesPossibleOverrides: Ընտրեք հաղորդագրություն
   wwcConfigGUIChatMessagesModifyOverride: Փոփոխել գոյություն ունեցող անտեսում
   wwcConfigConversationOverrideDeletionSuccess: 'Պատվերով հաղորդագրության անտեսումը
     ջնջվել է:'
-  wwcConfigGUIChatMessagesOverrideSettings: Անտեսեն Default հաղորդագրությունները
   wwcConfigGUIChatMessagesDeadOverride: 'Այս անտեսումը կամ անվավեր է, կամ բնօրինակը
     հաղորդագրությունը հեռացվել է: Դուք պետք է ջնջել այս.'
   wwcConfigGUIMessagesAlreadyOverriden: 'Դուք արդեն ունեք անտեսեն այս հաղորդագրության
@@ -584,4 +582,9 @@ Messages:
   wwcOldDatabaseStruct: 'Ձեր ընտրած տվյալների բազան ունի WorldwideChat- ի նախորդ տարբերակից
     անարդյունավետ կարգավորում: Դուք կարող եք գործարկել հետեւյալ հրամանը շտկել այս
     հարցը: /wwcd փոխարկել'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Ընտրեք տեղայնացում
+  wwcConfigGUIMessagesOverridePickChatButton: Վերանայել լռելյայն պլագինի հաղորդագրությունները
+  wwcConfigGUIChatMessagesOverrideSettings: Վերանայել կանխադրված հաղորդագրությունները
+    ({0})
+  wwcConfigGUIMessagesServerLang: 'Սա plugin- ի լռելյայն լեզուն է config.yml- ում:'
 

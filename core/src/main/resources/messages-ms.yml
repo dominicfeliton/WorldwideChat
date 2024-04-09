@@ -213,11 +213,9 @@ Messages:
     atau taip 0 untuk kembali. Ingat untuk menyertakan sebarang pembolehubah bermula
     dengan tanda peratusan yang anda lihat dalam mesej asal.
   wwctGUISourceOrTargetTranslationAlreadyActive: Bahasa ini sudah aktif!
-  wwcConfigGUIMessagesOverrideChatButton: Batalkan Mesej Pemalam Lalai
   wwcConfigGUIChatMessagesPossibleOverrides: Pilih Mesej
   wwcConfigGUIChatMessagesModifyOverride: Ubahsuai Batalkan Sedia
   wwcConfigConversationOverrideDeletionSuccess: Batalkan mesej tersuai telah dipadam.
-  wwcConfigGUIChatMessagesOverrideSettings: Batalkan Mesej Lalai
   wwcConfigGUIChatMessagesDeadOverride: Batalkan ini sama ada tidak sah, atau mesej
     asal telah dibuang. Anda patut padam ini.
   wwcConfigGUIMessagesAlreadyOverriden: Anda sudah mempunyai override untuk mesej
@@ -556,4 +554,8 @@ Messages:
   wwcOldDatabaseStruct: 'Pangkalan data pilihan anda mempunyai persediaan yang tidak
     cekap daripada versi WorldwideChat sebelumnya. Anda boleh menjalankan arahan berikut
     untuk menyelesaikan masalah ini: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Pilih Penyetempatan
+  wwcConfigGUIMessagesOverridePickChatButton: Menggantikan Mesej Plugin Lalai
+  wwcConfigGUIChatMessagesOverrideSettings: Menggantikan Mesej Lalai ({0})
+  wwcConfigGUIMessagesServerLang: Ini adalah bahasa lalai plugin dalam config.yml.
 

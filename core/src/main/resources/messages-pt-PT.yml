@@ -159,7 +159,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Alterar chave de acesso da Amazon
   wwcrFail: Falha ao carregar o WorldwideChat.
   wwcUpdaterFailedGeneric: Não é possível verificar as actualizações do WorldwideChat.
-  wwcConfigGUIChatMessagesOverrideSettings: Ignorar Mensagens Predefinidas
   wwctGUIMainMenuGlobal: Menu Tradução Global
   wwcItemTranslateTitleDone: Título do item traduzido com sucesso.
   wwcConfigGUIWatsonButton: Watson
@@ -216,7 +215,6 @@ Messages:
   wwctGUISourceTranslationSelected: Seleccionou este idioma.
   wwcConfigGUIAmazonTranslateRegionButton: Alterar a Região Amaz
   wwcConfigConversationLangInvalid: Código de idioma inválido!
-  wwcConfigGUIMessagesOverrideChatButton: Ignorar mensagens de plug-in predefinidas
   wwcConfigConversationErrorLimitInput: O limite de erro atual para cada tradutor
     é {0}. Digite qualquer coisa superior a 0 para definir um novo valor, ou digite
     qualquer coisa inferior ou igual a 0 para voltar atrás.
@@ -584,4 +582,9 @@ Messages:
   wwcOldDatabaseStruct: 'A base de dados escolhida tem uma configuração ineficiente
     de uma versão anterior do WorldwideChat. Pode executar o seguinte comando para
     corrigir este problema: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Escolher Localização
+  wwcConfigGUIMessagesOverridePickChatButton: Sobrespor Mensagens Predefinidas do
+    Plugin
+  wwcConfigGUIChatMessagesOverrideSettings: Sobrespor Mensagens Predefinidas ({0})
+  wwcConfigGUIMessagesServerLang: Esta é a linguagem predefinida do plugin em config.yml.
 

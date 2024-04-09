@@ -215,11 +215,9 @@ Messages:
     xabarni yozing yoki orqaga qaytish uchun 0 yozing. Asl xabarda ko'rgan foiz belgilaridan
     boshlab har qanday o'zgaruvchilarni qo'shishni unutmang.
   wwctGUISourceOrTargetTranslationAlreadyActive: Bu til allaqachon faol!
-  wwcConfigGUIMessagesOverrideChatButton: Standart plagin xabarlarini bekor qilish
   wwcConfigGUIChatMessagesPossibleOverrides: Xabarni tanlang
   wwcConfigGUIChatMessagesModifyOverride: Mavjud bekor o'zgartirish
   wwcConfigConversationOverrideDeletionSuccess: Maxsus xabarni bekor qilish o'chirildi.
-  wwcConfigGUIChatMessagesOverrideSettings: Standart xabarlarni bekor qilish
   wwcConfigGUIChatMessagesDeadOverride: Ushbu bekor qilish haqiqiy emas yoki asl xabar
     o'chirildi. Buni o'chirib tashlashingiz kerak.
   wwcConfigGUIMessagesAlreadyOverriden: Siz allaqachon bu xabar uchun bekor bor!
@@ -581,4 +579,8 @@ Messages:
   wwcOldDatabaseStruct: 'Sizning tanlagan ma''lumotlar bazangiz WorldwideChat-ning
     oldingi versiyasidan samarasiz sozlamaga ega. Ushbu masalani tuzatish uchun quyidagi
     buyruqni ishga tushirishingiz mumkin: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Lokalizatsiyani tanlang
+  wwcConfigGUIMessagesOverridePickChatButton: Standart plagin xabarlarini bekor qilish
+  wwcConfigGUIChatMessagesOverrideSettings: Standart xabarlarni bekor qilish ({0})
+  wwcConfigGUIMessagesServerLang: Bu config.yml da plaginning standart tilidir.
 

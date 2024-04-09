@@ -215,12 +215,9 @@ Messages:
     төрөл 0 буцаж явах. Хэрэв та анхны мэдээнд харж хувь тэмдэг эхлэн ямар нэгэн хувьсагчийг
     оруулах сана.
   wwctGUISourceOrTargetTranslationAlreadyActive: Энэ хэл аль хэдийн идэвхтэй байна!
-  wwcConfigGUIMessagesOverrideChatButton: Анхдагч залгаас зурвасуудыг хэрэгсэхгүй
-    болгож
   wwcConfigGUIChatMessagesPossibleOverrides: Зурвас сонгоно уу
   wwcConfigGUIChatMessagesModifyOverride: Одоо байгаа үл ойшоох өөрчлөх
   wwcConfigConversationOverrideDeletionSuccess: Custom зурвас үл ойшоох устгасан байна.
-  wwcConfigGUIChatMessagesOverrideSettings: Анхдагч Мессеж дарж
   wwcConfigGUIChatMessagesDeadOverride: Энэ нь үл ойшоох бас хүчин төгөлдөр бус байна,
     эсвэл анхны зурвас хасагдсан байна. Та үүнийг устгах хэрэгтэй.
   wwcConfigGUIMessagesAlreadyOverriden: Та аль хэдийн энэ зурваст нь үл тоомсорлож
@@ -579,4 +576,8 @@ Messages:
   wwcOldDatabaseStruct: 'Таны сонгосон мэдээллийн сан нь WorldwideChat-ийн өмнөх хувилбараас
     үр ашиггүй тохиргоотой. Та энэ асуудлыг засахын тулд дараах тушаалыг ажиллуулж
     болно: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Нутралчлал сонгоно
+  wwcConfigGUIMessagesOverridePickChatButton: Анхдагч залгаасын мессежийг халж
+  wwcConfigGUIChatMessagesOverrideSettings: Анхдагч мессежийг хүчингүй болгох ({0})
+  wwcConfigGUIMessagesServerLang: Энэ бол config.yml дахь залгаасын анхдагч хэл юм.
 

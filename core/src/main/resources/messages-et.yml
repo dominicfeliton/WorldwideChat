@@ -205,11 +205,9 @@ Messages:
     või tippige 0, et minna tagasi. Pidage meeles, et kaasata kõik muutujad alates
     protsendimärkidest, mida näete algses sõnumis.
   wwctGUISourceOrTargetTranslationAlreadyActive: See keel on juba aktiivne!
-  wwcConfigGUIMessagesOverrideChatButton: Alistada vaikeplugina sõnumid
   wwcConfigGUIChatMessagesPossibleOverrides: Sõnumi valimine
   wwcConfigGUIChatMessagesModifyOverride: Muuda olemasolevat alistamise
   wwcConfigConversationOverrideDeletionSuccess: Kohandatud sõnumi alistamine on kustutatud.
-  wwcConfigGUIChatMessagesOverrideSettings: Vaikimisi sõnumite alistamine
   wwcConfigGUIChatMessagesDeadOverride: See alistamine on kehtetu või algne sõnum
     on eemaldatud. Peaksite selle kustutama.
   wwcConfigGUIMessagesAlreadyOverriden: Teil on juba selle sõnumi alistamine!
@@ -537,4 +535,8 @@ Messages:
   wwcOldDatabaseStruct: 'Teie valitud andmebaasis on ebatõhus seadistus võrreldes
     WorldwideChati eelmisest versioonist. Selle probleemi lahendamiseks võite käivitada
     järgmise käsu: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Valige lokaliseerimine
+  wwcConfigGUIMessagesOverridePickChatButton: Vaikimisi pistikprogrammi sõnumite tühistamine
+  wwcConfigGUIChatMessagesOverrideSettings: Vaikesõnumite tühistamine ({0})
+  wwcConfigGUIMessagesServerLang: See on pistikprogrammi vaikekeel jaotises config.yml.
 

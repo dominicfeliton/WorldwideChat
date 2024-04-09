@@ -222,12 +222,10 @@ Messages:
     или напишете 0 за да се вратите назад. Не заборавајте да ги вклучите сите променливи
     почнувајќи со процентни знаци што ги гледате во оригиналната порака.
   wwctGUISourceOrTargetTranslationAlreadyActive: Овој јазик е веќе активен!
-  wwcConfigGUIMessagesOverrideChatButton: Заменете ги стандардните пораки за приклучок
   wwcConfigGUIChatMessagesPossibleOverrides: Изберете порака
   wwcConfigGUIChatMessagesModifyOverride: Измени постоечки прескокнување
   wwcConfigConversationOverrideDeletionSuccess: Прилагодено отфрлањето на пораките
     е избришано.
-  wwcConfigGUIChatMessagesOverrideSettings: Заменете ги стандардните пораки
   wwcConfigGUIChatMessagesDeadOverride: Ова отфрлање е или неважечко, или оригиналната
     порака е отстранета. Треба да го избришете ова.
   wwcConfigGUIMessagesAlreadyOverriden: Веќе имате превртување за оваа порака!
@@ -579,4 +577,8 @@ Messages:
   wwcOldDatabaseStruct: 'Вашата избрана база на податоци има неефикасно поставување
     од претходната верзија на WorldwideChat. Можете да ја извршите следната команда
     за да го поправите ова прашање: /wwcd конвертирате'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Изберете локализација
+  wwcConfigGUIMessagesOverridePickChatButton: Префрли ги стандардните пораки на приклучокот
+  wwcConfigGUIChatMessagesOverrideSettings: Префрли ги стандардните пораки ({0})
+  wwcConfigGUIMessagesServerLang: Ова е стандардниот јазик на приклучокот во config.yml.
 

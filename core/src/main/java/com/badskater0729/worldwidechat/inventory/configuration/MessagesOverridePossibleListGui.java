@@ -32,11 +32,20 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 	private WWCInventoryManager invManager = main.getInventoryManager();
-	
+
+	String inLang = "";
+
+	Player inPlayer;
+
+	public MessagesOverridePossibleListGui(String inLang, Player inPlayer) {
+		this.inLang = inLang;
+		this.inPlayer = inPlayer;
+	}
+
 	public SmartInventory overrideNewMessageSettings = SmartInventory.builder().id("overridePossibilitiesMenu")
 			.provider(this).size(6, 9)
 			.manager(WorldwideChat.instance.getInventoryManager())
-			.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesPossibleOverrides", null))
+			.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesPossibleOverrides", inPlayer))
 	        .build();
 	
 	@Override
@@ -49,7 +58,7 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
 			Pagination pagination = contents.pagination();
 			HashMap<String, String> messagesFromConfig = new HashMap<String, String>();
 			ClickableItem[] currentMessages = new ClickableItem[0];
-			FileConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
+			FileConfiguration messagesConfig = main.getConfigManager().getCustomMessagesConfig(inLang);
 			
 			for (String eaKey : messagesConfig.getConfigurationSection("Messages").getKeys(true)) {
 				messagesFromConfig.put(eaKey, messagesConfig.getString("Messages." + eaKey));
@@ -75,7 +84,7 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
 				currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {
 					// Start conversation
 					ConversationFactory textConvo = new ConversationFactory(main).withModality(true)
-							.withFirstPrompt(new ChatSettingsConvos.ModifyOverrideText(new MessagesOverridePossibleListGui().overrideNewMessageSettings, entry.getKey()));
+							.withFirstPrompt(new ChatSettingsConvos.ModifyOverrideText(new MessagesOverridePossibleListGui(inLang, inPlayer).overrideNewMessageSettings, entry.getKey()));
 				    textConvo.buildConversation(player).begin();
 				});
 				currSpot++;
@@ -90,7 +99,7 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
 			if (!pagination.isFirst()) {
 				invManager.setCommonButton(5, 2, player, contents, "Previous");
 			} else {
-				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {new MessagesOverrideCurrentListGui().overrideMessagesSettings});
+				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {new MessagesOverrideCurrentListGui(inLang, inPlayer).overrideMessagesSettings});
 			}
 			
 			/* Bottom Right Option: Next Page */

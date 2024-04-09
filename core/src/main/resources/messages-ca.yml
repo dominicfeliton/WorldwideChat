@@ -221,12 +221,10 @@ Messages:
     a aquesta anul·lació, o escriviu 0 per tornar enrere. Recordeu que heu d'incloure
     les variables que comencin amb signes de percentatge que veieu al missatge original.
   wwctGUISourceOrTargetTranslationAlreadyActive: Aquest idioma ja està actiu!
-  wwcConfigGUIMessagesOverrideChatButton: Anul·la els missatges predeterminats Plugin
   wwcConfigGUIChatMessagesPossibleOverrides: Escull un missatge
   wwcConfigGUIChatMessagesModifyOverride: Modifica Anul·lació existent
   wwcConfigConversationOverrideDeletionSuccess: S'ha suprimit la substitució de missatges
     personalitzats.
-  wwcConfigGUIChatMessagesOverrideSettings: Anul·la els missatges predeterminats
   wwcConfigGUIChatMessagesDeadOverride: Aquesta anul·lació no és vàlida o s'ha suprimit
     el missatge original. Hauríeu d'esborrar això.
   wwcConfigGUIMessagesAlreadyOverriden: Ja teniu una anul·lació per a aquest missatge!
@@ -599,4 +597,10 @@ Messages:
   wwcOldDatabaseStruct: 'La vostra base de dades escollida té una configuració ineficient
     d''una versió anterior de WorldwideChat. Podeu executar la següent comanda per
     solucionar aquest problema: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Trieu Localització
+  wwcConfigGUIMessagesOverridePickChatButton: Anul·lar els missatges per defecte del
+    connector
+  wwcConfigGUIChatMessagesOverrideSettings: Anul·lar missatges predeterminats ({0})
+  wwcConfigGUIMessagesServerLang: Aquest és l'idioma predeterminat del connector en
+    config.yml.
 

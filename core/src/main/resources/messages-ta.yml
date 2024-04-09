@@ -224,11 +224,9 @@ Messages:
     செய்யவும் அல்லது திரும்பி செல்ல 0 ஐ தட்டச்சு செய்யவும். நீங்கள் அசல் செய்தியில்
     பார்க்க சதவீதம் அறிகுறிகள் தொடங்கி எந்த மாறிகள் சேர்க்க நினைவில்.
   wwctGUISourceOrTargetTranslationAlreadyActive: இந்த மொழி ஏற்கனவே செயலில் உள்ளது!
-  wwcConfigGUIMessagesOverrideChatButton: இயல்புநிலை செருகுநிரல் செய்திகளை
   wwcConfigGUIChatMessagesPossibleOverrides: செய்தியைத் தேர்வு செய்க
   wwcConfigGUIChatMessagesModifyOverride: தற்போதுள்ள மேலெழுதலை மாற்றவும்
   wwcConfigConversationOverrideDeletionSuccess: விருப்ப செய்தி மேலெழுதி நீக்கப்பட்டது.
-  wwcConfigGUIChatMessagesOverrideSettings: இயல்புநிலை செய்திகளை மீறி
   wwcConfigGUIChatMessagesDeadOverride: இந்த மேலெழுதி தவறானது, அல்லது அசல் செய்தி
     நீக்கப்பட்டது. இதை நீக்க வேண்டும்.
   wwcConfigGUIMessagesAlreadyOverriden: நீங்கள் ஏற்கனவே இந்த செய்தியை ஒரு மேலெழுதி
@@ -590,4 +588,8 @@ Messages:
   wwcOldDatabaseStruct: 'நீங்கள் தேர்ந்தெடுத்த தரவுத்தளம் WorldwideChat இன் முந்தைய
     பதிப்பிலிருந்து திறமையற்ற அமைப்பைக் கொண்டுள்ளது. இந்த சிக்கலை சரிசெய்ய பின்வரும்
     கட்டளையை இயக்கலாம்: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: உள்ளூர்மயமாக்க
+  wwcConfigGUIMessagesOverridePickChatButton: இயல்புநிலை சொருகி செய்திகளை மீற
+  wwcConfigGUIChatMessagesOverrideSettings: இயல்புநிலை செய்திகளை மீறவும் ({0})
+  wwcConfigGUIMessagesServerLang: இது config.yml இல் சொருகியின் இயல்புநிலை மொழி.
 

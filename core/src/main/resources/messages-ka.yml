@@ -212,11 +212,9 @@ Messages:
     ან ტიპის 0 დაბრუნებას. დამახსოვრება მოიცავს ნებისმიერი ცვლადები დაწყებული პროცენტული
     ნიშნები ხედავთ ორიგინალური გაგზავნა.
   wwctGUISourceOrTargetTranslationAlreadyActive: ეს ენა უკვე აქტიურია!
-  wwcConfigGUIMessagesOverrideChatButton: ნაგულისხმები მოდულის შეტყობინებების გადალახვა
   wwcConfigGUIChatMessagesPossibleOverrides: აირჩიეთ შეტყობინება
   wwcConfigGUIChatMessagesModifyOverride: შეცვალეთ არსებული Override
   wwcConfigConversationOverrideDeletionSuccess: საბაჟო გაგზავნა override წაიშალა.
-  wwcConfigGUIChatMessagesOverrideSettings: ნაგულისხმები შეტყობინებების გადალახვა
   wwcConfigGUIChatMessagesDeadOverride: ეს override ან არასწორია, ან ორიგინალური გაგზავნა
     უკვე ამოღებულია. თქვენ უნდა წაშალოთ ეს.
   wwcConfigGUIMessagesAlreadyOverriden: თქვენ უკვე გაქვთ override ამ გაგზავნა!
@@ -561,4 +559,8 @@ Messages:
   wwcOldDatabaseStruct: 'თქვენს არჩეულ მონაცემთა ბაზას აქვს არაეფექტური კონფიგურაცია
     WorldwideChat-ის წინა ვერსიისგან. ამ პრობლემის გამოსასწორებლად შეგიძლიათ გაუშვოთ
     შემდეგი ბრძანება: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: აირჩიეთ ლოკ
+  wwcConfigGUIMessagesOverridePickChatButton: დანამატის ნაგულისხმევი შე
+  wwcConfigGUIChatMessagesOverrideSettings: სტანდარტული შეტყობინებების გაუქმება ({0}
+  wwcConfigGUIMessagesServerLang: ეს არის მოდულის ნაგულისხმევი ენა config.yml— ში.
 

@@ -230,12 +230,10 @@ Messages:
     την παράκαμψη ή πληκτρολογήστε 0 για να επιστρέψετε. Θυμηθείτε να συμπεριλάβετε
     τυχόν μεταβλητές που ξεκινούν με σύμβολα ποσοστού που βλέπετε στο αρχικό μήνυμα.
   wwctGUISourceOrTargetTranslationAlreadyActive: Αυτή η γλώσσα είναι ήδη ενεργή!
-  wwcConfigGUIMessagesOverrideChatButton: Παράκαμψη προεπιλεγμένων μηνυμάτων προσθέτου
   wwcConfigGUIChatMessagesPossibleOverrides: Επιλέξτε ένα μήνυμα
   wwcConfigGUIChatMessagesModifyOverride: Τροποποίηση υπάρχουσας παράκαμψης
   wwcConfigConversationOverrideDeletionSuccess: Η παράκαμψη προσαρμοσμένου μηνύματος
     έχει διαγραφεί.
-  wwcConfigGUIChatMessagesOverrideSettings: Παράκαμψη προεπιλεγμένων μηνυμάτων
   wwcConfigGUIChatMessagesDeadOverride: Αυτή η παράκαμψη δεν είναι έγκυρη ή το αρχικό
     μήνυμα έχει καταργηθεί. Πρέπει να το διαγράψεις αυτό.
   wwcConfigGUIMessagesAlreadyOverriden: Έχετε ήδη μια παράκαμψη για αυτό το μήνυμα!
@@ -611,4 +609,9 @@ Messages:
   wwcOldDatabaseStruct: 'Η επιλεγμένη βάση δεδομένων έχει αναποτελεσματική ρύθμιση
     από προηγούμενη έκδοση του WorldwideChat. Μπορείτε να εκτελέσετε την ακόλουθη
     εντολή για να διορθώσετε αυτό το ζήτημα: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Επιλέξτε Τοπικοποίηση
+  wwcConfigGUIMessagesOverridePickChatButton: Παράκαμψη προεπιλεγμένων μηνυμάτων προσθήκης
+  wwcConfigGUIChatMessagesOverrideSettings: Παράκαμψη προεπιλεγμένων μηνυμάτων ({0})
+  wwcConfigGUIMessagesServerLang: Αυτή είναι η προεπιλεγμένη γλώσσα του πρόσθετου
+    στο config.yml.
 

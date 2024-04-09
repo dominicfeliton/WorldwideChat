@@ -213,12 +213,10 @@ Messages:
     arba įveskite 0, kad grįžtumėte. Nepamirškite įtraukti bet kokius kintamuosius,
     pradedant procentiniais ženklais, kuriuos matote pradiniame pranešime.
   wwctGUISourceOrTargetTranslationAlreadyActive: Ši kalba jau aktyvi!
-  wwcConfigGUIMessagesOverrideChatButton: Nepaisyti numatytųjų įskiepių pranešimų
   wwcConfigGUIChatMessagesPossibleOverrides: Pasirinkite pranešimą
   wwcConfigGUIChatMessagesModifyOverride: Keisti esamą nepaisyti
   wwcConfigConversationOverrideDeletionSuccess: Pasirinktinis laiško nepaisymas buvo
     ištrintas.
-  wwcConfigGUIChatMessagesOverrideSettings: Nepaisyti numatytųjų pranešimų
   wwcConfigGUIChatMessagesDeadOverride: Šis nepaisymas yra neteisingas arba originalus
     pranešimas buvo pašalintas. Turėtumėte tai ištrinti.
   wwcConfigGUIMessagesAlreadyOverriden: Jūs jau turite šio pranešimo nepaisymą!
@@ -566,4 +564,8 @@ Messages:
   wwcOldDatabaseStruct: 'Jūsų pasirinkta duomenų bazė turi neefektyvią sąranką iš
     ankstesnės “WorldwideChat” versijos. Norėdami išspręsti šią problemą, galite paleisti
     šią komandą: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Pasirinkite lokalizaciją
+  wwcConfigGUIMessagesOverridePickChatButton: Numatytųjų papildinių pranešimų nepaisymas
+  wwcConfigGUIChatMessagesOverrideSettings: Numatytųjų pranešimų nepaisymas ({0})
+  wwcConfigGUIMessagesServerLang: Tai yra numatytoji papildinio kalba config.yml.
 

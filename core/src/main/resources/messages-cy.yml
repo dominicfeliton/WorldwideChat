@@ -215,12 +215,10 @@ Messages:
     hwn, neu teipiwch 0 i fynd yn ôl. Cofiwch gynnwys unrhyw newidynnau sy'n dechrau
     gydag arwyddion canrannol a welwch yn y neges wreiddiol.
   wwctGUISourceOrTargetTranslationAlreadyActive: Mae'r iaith hon eisoes yn weithredol!
-  wwcConfigGUIMessagesOverrideChatButton: Gwrthwneud Negeseuon Plugin Diofyn
   wwcConfigGUIChatMessagesPossibleOverrides: Dewiswch Neges
   wwcConfigGUIChatMessagesModifyOverride: Addasu Gwrthwneud Presennol
   wwcConfigConversationOverrideDeletionSuccess: Mae gwrthwneud neges Custom wedi cael
     ei ddileu.
-  wwcConfigGUIChatMessagesOverrideSettings: Gwrthwneud Negeseuon Diofyn
   wwcConfigGUIChatMessagesDeadOverride: Mae'r gwrthwneud hwn naill ai'n annilys, neu
     mae'r neges wreiddiol wedi'i dileu. Dylech ddileu hyn.
   wwcConfigGUIMessagesAlreadyOverriden: Mae gennych eisoes wrthwneud ar gyfer y neges
@@ -566,4 +564,8 @@ Messages:
   wwcOldDatabaseStruct: 'Mae gan eich cronfa ddata a ddewiswyd setup aneffeithlon
     o fersiwn flaenorol o WorldwideChat. Gallwch redeg y gorchymyn canlynol i drwsio''r
     mater hwn: /wwcd trosi'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Dewiswch Lleoleiddio
+  wwcConfigGUIMessagesOverridePickChatButton: Diystyru Negeseuon Ategyn Diofyn
+  wwcConfigGUIChatMessagesOverrideSettings: Diystyru Negeseuon Diofyn ({0})
+  wwcConfigGUIMessagesServerLang: Dyma iaith ddiofyn yr ategyn yn config.yml.
 

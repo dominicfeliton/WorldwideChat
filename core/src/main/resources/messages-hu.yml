@@ -217,12 +217,10 @@ Messages:
     vagy írja be a 0 értéket a visszatéréshez. Ne felejtse el feltüntetni az eredeti
     üzenetben látható százalékos jelekkel kezdődő változókat.
   wwctGUISourceOrTargetTranslationAlreadyActive: Ez a nyelv már aktív!
-  wwcConfigGUIMessagesOverrideChatButton: Alapértelmezett beépülő modulok üzeneteinek
   wwcConfigGUIChatMessagesPossibleOverrides: Üzenet kiválasztása
   wwcConfigGUIChatMessagesModifyOverride: Meglévő felülírás módosítása
   wwcConfigConversationOverrideDeletionSuccess: Az egyéni üzenetek felülírása törölve
     lett.
-  wwcConfigGUIChatMessagesOverrideSettings: Alapértelmezett üzenetek felülbírálása
   wwcConfigGUIChatMessagesDeadOverride: Ez a felülírás érvénytelen, vagy az eredeti
     üzenet eltávolításra került. Törölnöd kéne ezt.
   wwcConfigGUIMessagesAlreadyOverriden: Már van felülírása ehhez az üzenethez!
@@ -573,4 +571,9 @@ Messages:
   wwcOldDatabaseStruct: 'A választott adatbázis nem hatékony beállítással rendelkezik
     a WorldwideChat korábbi verziójához képest. A probléma megoldásához futtathatja
     a következő parancsot: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Válassza ki a Lokalizációt
+  wwcConfigGUIMessagesOverridePickChatButton: Alapértelmezett beépülő modul üzenetek
+    fel
+  wwcConfigGUIChatMessagesOverrideSettings: Alapértelmezett üzenetek felülírása ({0})
+  wwcConfigGUIMessagesServerLang: Ez a plugin alapértelmezett nyelve a config.yml-ben.
 

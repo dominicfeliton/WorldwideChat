@@ -206,11 +206,9 @@ Messages:
     немесе кері оралу үшін 0 теріңіз. Бастапқы хабарда көрген пайыздық белгілерден
     басталатын кез келген айнымалыларды қосуды ұмытпаңыз.
   wwctGUISourceOrTargetTranslationAlreadyActive: Бұл тіл қазірдің өзінде белсенді!
-  wwcConfigGUIMessagesOverrideChatButton: Әдепкі плагин хабарларын қайта анықтайды
   wwcConfigGUIChatMessagesPossibleOverrides: Хабарды таңдаңыз
   wwcConfigGUIChatMessagesModifyOverride: Қолданыстағы Override өзгерту
   wwcConfigConversationOverrideDeletionSuccess: Custom хабар қайта айдау жойылды.
-  wwcConfigGUIChatMessagesOverrideSettings: Әдепкі хабарларды қайта жіберу
   wwcConfigGUIChatMessagesDeadOverride: Бұл қайта белгілеу жарамсыз немесе бастапқы
     хабар жойылған. Мұны жою керек.
   wwcConfigGUIMessagesAlreadyOverriden: Сізде бұл хабарлама үшін қайта айдау бар!
@@ -554,4 +552,8 @@ Messages:
   wwcOldDatabaseStruct: 'Сіздің таңдаған дерекқорыңызда WorldwideChat-тің алдыңғы
     нұсқасынан тиімсіз орнату бар. Бұл мәселені түзету үшін келесі пәрменді іске қосуға
     болады: /wwcd түрлендіру'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Локализацияны таңдаңыз
+  wwcConfigGUIMessagesOverridePickChatButton: Әдепкі плагин хабарларын ауыстыру
+  wwcConfigGUIChatMessagesOverrideSettings: Әдепкі хабарламаларды жоққа шығару ({0})
+  wwcConfigGUIMessagesServerLang: Бұл config.yml ішіндегі плагиннің әдепкі тілі.
 

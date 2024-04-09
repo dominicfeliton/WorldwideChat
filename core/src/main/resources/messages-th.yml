@@ -187,11 +187,9 @@ Messages:
   wwcConfigConversationOverrideTextChange: โปรดพิมพ์ข้อความใหม่สำหรับการแทนที่นี้
     หรือพิมพ์ 0 เพื่อย้อนกลับอย่าลืมรวมตัวแปรใด ๆ ที่เริ่มต้นด้วยสัญญาณร้อยละที่คุณเห็นในข้อความเดิม
   wwctGUISourceOrTargetTranslationAlreadyActive: ภาษานี้มีการใช้งานอยู่แล้ว!
-  wwcConfigGUIMessagesOverrideChatButton: แทนที่ข้อความปลั๊กอินเริ่มต้น
   wwcConfigGUIChatMessagesPossibleOverrides: เลือกข้อความ
   wwcConfigGUIChatMessagesModifyOverride: แก้ไขการแทนที่ที่มีอยู่
   wwcConfigConversationOverrideDeletionSuccess: ลบการแทนที่ข้อความแบบกำหนดเอง
-  wwcConfigGUIChatMessagesOverrideSettings: แทนที่ข้อความเริ่มต้น
   wwcConfigGUIChatMessagesDeadOverride: การแทนที่นี้ไม่ถูกต้อง หรือข้อความต้นฉบับถูกลบออกคุณควรจะลบนี้
   wwcConfigGUIMessagesAlreadyOverriden: คุณได้แทนที่ข้อความนี้แล้ว!
   wwcConfigGUIChatMessagesOverrideNewButton: เพิ่มการแทนที่ใหม่
@@ -491,4 +489,8 @@ Messages:
     Minecraft เวอร์ชันล่าสุดและคุณได้รับข้อผิดพลาดนี้โปรดติดต่อนักพัฒนา
   wwcOldDatabaseStruct: 'ฐานข้อมูลที่คุณเลือกมีการตั้งค่าที่ไม่มีประสิทธิภาพจาก WorldwideChat
     เวอร์ชันก่อนหน้าคุณสามารถเรียกใช้คำสั่งต่อไปนี้เพื่อแก้ไขปัญหานี้: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: เลือกการแปลภาษา
+  wwcConfigGUIMessagesOverridePickChatButton: แทนที่ข้อความปลั๊กอินเริ่มต้น
+  wwcConfigGUIChatMessagesOverrideSettings: แทนที่ข้อความเริ่มต้น ({0})
+  wwcConfigGUIMessagesServerLang: นี่คือภาษาเริ่มต้นของปลั๊กอินใน config.yml
 

@@ -218,12 +218,10 @@ Messages:
     eller skriv 0 för att gå tillbaka. Kom ihåg att inkludera alla variabler som börjar
     med procenttecken som du ser i det ursprungliga meddelandet.
   wwctGUISourceOrTargetTranslationAlreadyActive: Detta språk är redan aktivt!
-  wwcConfigGUIMessagesOverrideChatButton: Åsidosätt standardinsticksprogram
   wwcConfigGUIChatMessagesPossibleOverrides: Välj ett meddelande
   wwcConfigGUIChatMessagesModifyOverride: Ändra befintlig åsidosättning
   wwcConfigConversationOverrideDeletionSuccess: Anpassad meddelandeåsidosättning har
     tagits bort.
-  wwcConfigGUIChatMessagesOverrideSettings: Åsidosätt standardmeddelanden
   wwcConfigGUIChatMessagesDeadOverride: Den här åsidosättningen är antingen ogiltig
     eller så har det ursprungliga meddelandet tagits bort. Du borde ta bort det här.
   wwcConfigGUIMessagesAlreadyOverriden: Du har redan en åsidosättning för det här
@@ -568,4 +566,8 @@ Messages:
   wwcOldDatabaseStruct: 'Din valda databas har en ineffektiv installation från en
     tidigare version av WorldwideChat. Du kan köra följande kommando för att åtgärda
     problemet: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Välj lokalisering
+  wwcConfigGUIMessagesOverridePickChatButton: Åsidosätt standardmeddelanden för insticksprogram
+  wwcConfigGUIChatMessagesOverrideSettings: Åsidosätt standardmeddelanden ({0})
+  wwcConfigGUIMessagesServerLang: Detta är insticksprogrammets standardspråk i config.yml.
 

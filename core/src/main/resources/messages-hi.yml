@@ -213,11 +213,9 @@ Messages:
     करें, या वापस जाने के लिए 0 टाइप करें। मूल संदेश में दिखाई देने वाले प्रतिशत संकेतों
     से शुरू होने वाले किसी भी चर को शामिल करना याद रखें।
   wwctGUISourceOrTargetTranslationAlreadyActive: यह भाषा पहले से ही सक्रिय है!
-  wwcConfigGUIMessagesOverrideChatButton: डिफ़ॉल्ट प्लगइन संदेशों को ओवरराइड करें
   wwcConfigGUIChatMessagesPossibleOverrides: एक सन्देश चुनें
   wwcConfigGUIChatMessagesModifyOverride: मौजूदा ओवरराइड संशोधित करें
   wwcConfigConversationOverrideDeletionSuccess: कस्टम संदेश ओवरराइड हटा दिया गया है।
-  wwcConfigGUIChatMessagesOverrideSettings: तयशुदा संदेश ओवरराइड करें
   wwcConfigGUIChatMessagesDeadOverride: यह ओवरराइड या तो अमान्य है, या मूल संदेश हटा
     दिया गया है। आपको इसे हटा देना चाहिए।
   wwcConfigGUIMessagesAlreadyOverriden: इस संदेश के लिए आपके पास पहले से ही एक ओवरराइड
@@ -574,4 +572,8 @@ Messages:
   wwcOldDatabaseStruct: 'आपके चुने हुए डेटाबेस में WorldwideChat के पिछले संस्करण
     से अक्षम सेटअप है। इस समस्या को ठीक करने के लिए आप निम्न कमांड चला सकते हैं: /wwcd
     convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: स्थानीयकरण चुनें
+  wwcConfigGUIMessagesOverridePickChatButton: डिफ़ॉल्ट प्लगइन संदेशों को ओवरराइड करें
+  wwcConfigGUIChatMessagesOverrideSettings: डिफ़ॉल्ट संदेशों को ओवरराइड करें ({0})
+  wwcConfigGUIMessagesServerLang: यह config.yml में प्लगइन की डिफ़ॉल्ट भाषा है।
 

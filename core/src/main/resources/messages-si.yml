@@ -215,11 +215,9 @@ Messages:
     ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න. මුල් පණිවිඩයේ ඔබ දකින ප්රතිශත සං
     signs ා වලින් ආරම්භ වන ඕනෑම විචල්යයන් ඇතුළත් කිරීමට මතක තබා ගන්න.
   wwctGUISourceOrTargetTranslationAlreadyActive: මෙම භාෂාව දැනටමත් සක්රීයයි!
-  wwcConfigGUIMessagesOverrideChatButton: පෙරනිමි ප්ලගින පණිවිඩ අභිබවා යන්න
   wwcConfigGUIChatMessagesPossibleOverrides: පණිවිඩයක් තෝරන්න
   wwcConfigGUIChatMessagesModifyOverride: පවතින අභිබවා වෙනස් කරන්න
   wwcConfigConversationOverrideDeletionSuccess: අභිරුචි පණිවිඩය අභිබවා මකා දමා ඇත.
-  wwcConfigGUIChatMessagesOverrideSettings: පෙරනිමි පණිවිඩ අභිබවා යන්න
   wwcConfigGUIChatMessagesDeadOverride: මෙම අභිබවා යාම එක්කෝ වලංගු නැත, නැතහොත් මුල්
     පණිවිඩය ඉවත් කර ඇත. ඔබ මෙය මකා දැමිය යුතුය.
   wwcConfigGUIMessagesAlreadyOverriden: මෙම පණිවිඩය සඳහා ඔබට දැනටමත් අභිබවා ගොස් ඇත!
@@ -558,4 +556,8 @@ Messages:
   wwcOldDatabaseStruct: 'ඔබ තෝරාගත් දත්ත ගබඩාව WorldwideChat හි පෙර අනුවාදයකින් අකාර්යක්ෂම
     සැකසුමක් ඇත. මෙම ගැටළුව නිවැරදි කිරීම සඳහා ඔබට පහත විධානය ක්රියාත්මක කළ හැකිය:
     /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: දේශීයකරණය තෝරන්න
+  wwcConfigGUIMessagesOverridePickChatButton: පෙරනිමි ප්ලගින පණිවිඩ ඉක්මවා
+  wwcConfigGUIChatMessagesOverrideSettings: පෙරනිමි පණිවිඩ අහෝසි කරන්න ({0})
+  wwcConfigGUIMessagesServerLang: මෙය config.yml හි ප්ලගිනයේ පෙරනිමි භාෂාවයි.
 

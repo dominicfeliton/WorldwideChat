@@ -221,11 +221,9 @@ Messages:
     alebo zadajte hodnotu 0, aby ste sa vrátili späť. Nezabudnite zahrnúť všetky premenné
     začínajúce znakmi percentuálneho podielu, ktoré sa zobrazujú v pôvodnej správe.
   wwctGUISourceOrTargetTranslationAlreadyActive: Tento jazyk je už aktívny!
-  wwcConfigGUIMessagesOverrideChatButton: Prepísať predvolené správy zásuvných modulov
   wwcConfigGUIChatMessagesPossibleOverrides: Vybrať správu
   wwcConfigGUIChatMessagesModifyOverride: Upraviť existujúce prepísanie
   wwcConfigConversationOverrideDeletionSuccess: Vlastné prepísanie správy bolo odstránené.
-  wwcConfigGUIChatMessagesOverrideSettings: Prepísať predvolené správy
   wwcConfigGUIChatMessagesDeadOverride: Toto prepísanie je buď neplatné, alebo pôvodná
     správa bola odstránená. Mali by ste to vymazať.
   wwcConfigGUIMessagesAlreadyOverriden: Už máte prepísanie tejto správy!
@@ -567,4 +565,8 @@ Messages:
   wwcOldDatabaseStruct: 'Vaša vybraná databáza má neefektívne nastavenie z predchádzajúcej
     verzie WorldwideChat. Na vyriešenie tohto problému môžete spustiť nasledujúci
     príkaz: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Vyberte Lokalizáciu
+  wwcConfigGUIMessagesOverridePickChatButton: Prepísať predvolené správy doplnku
+  wwcConfigGUIChatMessagesOverrideSettings: Prepísať predvolené správy ({0})
+  wwcConfigGUIMessagesServerLang: Toto je predvolený jazyk doplnku v config.yml.
 

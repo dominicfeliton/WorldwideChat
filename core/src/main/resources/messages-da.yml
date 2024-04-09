@@ -213,12 +213,10 @@ Messages:
     eller skriv 0 for at gå tilbage. Husk at medtage eventuelle variabler, der starter
     med procenttegn, du ser i den oprindelige meddelelse.
   wwctGUISourceOrTargetTranslationAlreadyActive: Dette sprog er allerede aktivt!
-  wwcConfigGUIMessagesOverrideChatButton: Tilsidesæt standard- udvidelsesmeddelelser
   wwcConfigGUIChatMessagesPossibleOverrides: Vælg en meddelelse
   wwcConfigGUIChatMessagesModifyOverride: Ændr eksisterende tilsidesættelse
   wwcConfigConversationOverrideDeletionSuccess: Tilpasset tilsidesættelse af meddelelser
     er blevet slettet.
-  wwcConfigGUIChatMessagesOverrideSettings: Tilsidesæt standardmeddelelser
   wwcConfigGUIChatMessagesDeadOverride: Denne tilsidesættelse er enten ugyldig, eller
     den oprindelige meddelelse er blevet fjernet. Du burde slette dette.
   wwcConfigGUIMessagesAlreadyOverriden: Du har allerede en tilsidesættelse for denne
@@ -559,4 +557,8 @@ Messages:
   wwcOldDatabaseStruct: 'Din valgte database har en ineffektiv opsætning fra en tidligere
     version af WorldwideChat. Du kan køre følgende kommando for at løse dette problem:
     /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Vælg lokalisering
+  wwcConfigGUIMessagesOverridePickChatButton: Tilsidesæt standardplugin-meddelelser
+  wwcConfigGUIChatMessagesOverrideSettings: Tilsidesæt standardmeddelelser ({0})
+  wwcConfigGUIMessagesServerLang: Dette er plugin'ens standardsprog i config.yml.
 

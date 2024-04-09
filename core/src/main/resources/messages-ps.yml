@@ -209,11 +209,9 @@ Messages:
     یا 0 ټایپ کړئ چې بیرته لاړ شئ. په یاد ولرئ چې هر ډول متغیر شامل کړئ چې د فیصده
     نښانو سره پیل کیږي چې تاسو په اصلي پیغام کې وګورئ
   wwctGUISourceOrTargetTranslationAlreadyActive: دا ژبه لا دمخه فعاله ده!
-  wwcConfigGUIMessagesOverrideChatButton: تلواله لګن استوزې ړنګول
   wwcConfigGUIChatMessagesPossibleOverrides: يوه استوزه غوره کړئ
   wwcConfigGUIChatMessagesModifyOverride: شته ړنولو بدلول
   wwcConfigConversationOverrideDeletionSuccess: . دوديزه استوزه واړنګول شوه
-  wwcConfigGUIChatMessagesOverrideSettings: تلواله پیغامونه ړنګول
   wwcConfigGUIChatMessagesDeadOverride: دا ړنګول يا ناسمه ده، يا اصلي پيغام لرې شو.
     تاسو باید دا ړنګول کړئ.
   wwcConfigGUIMessagesAlreadyOverriden: تاسو لا دمخه د دې پیغام لپاره یو ځای لرئ!
@@ -556,4 +554,8 @@ Messages:
     سره اړیکه
   wwcOldDatabaseStruct: ستاسو غوره شوي ډیټابیس د WorldwideChat د پخواني نسخه څخه ناکاره
     تنظیم لري. تاسو کولی شئ د دې مسله د حل کولو لپاره لاندې حکم چلوئ:/wwcd تبدیل
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: لوکیشن غوره کړئ
+  wwcConfigGUIMessagesOverridePickChatButton: ډیفالټ پلګ پیغامونه اوور
+  wwcConfigGUIChatMessagesOverrideSettings: ډیفالټ پیغامونه اوورډ کړئ ({0})
+  wwcConfigGUIMessagesServerLang: دا په config.yml کې د فلګین ډیفالټ ژبه دی.
 

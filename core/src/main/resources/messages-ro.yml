@@ -223,12 +223,10 @@ Messages:
     această suprascriere sau tastați 0 pentru a reveni. Nu uitați să includeți orice
     variabile începând cu semnele procentuale pe care le vedeți în mesajul original.
   wwctGUISourceOrTargetTranslationAlreadyActive: Această limbă este deja activă!
-  wwcConfigGUIMessagesOverrideChatButton: Suprascrie mesajele plugin-ului implicit
   wwcConfigGUIChatMessagesPossibleOverrides: Alegeţi un mesaj
   wwcConfigGUIChatMessagesModifyOverride: Modifică suprascrierea existentă
   wwcConfigConversationOverrideDeletionSuccess: Suprascrierea mesajului personalizat
     a fost șters.
-  wwcConfigGUIChatMessagesOverrideSettings: Suprascrie mesajele implicite
   wwcConfigGUIChatMessagesDeadOverride: Această suprascriere este fie nevalidă, fie
     mesajul original a fost eliminat. Ar trebui să ştergi asta.
   wwcConfigGUIMessagesAlreadyOverriden: Ai deja o suprascriere pentru acest mesaj!
@@ -588,4 +586,8 @@ Messages:
   wwcOldDatabaseStruct: 'Baza de date aleasă are o configurare ineficientă dintr-o
     versiune anterioară a WorldwideChat. Puteți rula următoarea comandă pentru a remedia
     această problemă: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Alegeți localizarea
+  wwcConfigGUIMessagesOverridePickChatButton: Suprascrie mesajele implicite ale pluginului
+  wwcConfigGUIChatMessagesOverrideSettings: Suprascrie mesajele implicite ({0})
+  wwcConfigGUIMessagesServerLang: Aceasta este limba implicită a pluginului în config.yml.
 

@@ -68,11 +68,9 @@ public class CommonRefs {
 	
 	public static String[] supportedMCVersions = { "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13" };
 
-	public static String[] supportedPluginLangCodes = { "af", "sq", "am", "ar", "hy", "az", "bn", "bs", "bg", "ca",
-			"zh", "zh-TW", "hr", "cs", "da", "fa-AF", "ga", "nl", "en", "et", "fa", "tl", "fi", "fr", "fr-CA", "ka", "de",
-			"el", "gu", "ht", "ha", "he", "hi", "hu", "is", "id", "it", "ja", "kn", "kk", "ko", "lv", "lt", "mk", "mr", "ms",
-			"ml", "mt", "mn", "no", "fa", "pa", "ps", "pl", "pt", "pt-PT", "ro", "ru", "sr", "si", "sk", "sl", "so", "es", "es-MX",
-			"sw", "sv", "tl", "ta", "te", "th", "tr", "uk", "ur", "uz", "vi", "cy" };
+	public static String[] supportedPluginLangCodes = {"af", "am", "ar", "az", "bg", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "en", "es", "es-MX", "et", "fa", "fa-AF", "fi", "fr", "fr-CA",
+			"ga", "gu", "ha", "he", "hi", "hr", "ht", "hu", "hy", "id", "is", "it", "ja", "ka", "kk", "kn", "ko", "lt", "lv", "mk", "ml", "mn", "mr", "ms", "mt", "nl", "no", "pa", "pl", "ps", "pt",
+			"pt-PT", "ro", "ru", "si", "sk", "sl", "so", "sq", "sr", "sv", "sw", "ta", "te", "th", "tl", "tr", "uk", "ur", "uz", "vi", "zh", "zh-TW"};
 
 	public static List<Pair<String, String>> translatorPairs = new ArrayList<>(Arrays.asList(
 			Pair.of("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator"),
@@ -388,7 +386,7 @@ public class CommonRefs {
 	public String getMsg(String messageName, String[] replacements, Player currPlayer) {
 		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
 		if (currPlayer != null && main.isPlayerRecord(currPlayer) && !main.getPlayerRecord(currPlayer, false).getLocalizationCode().isEmpty()) {
-			debugMsg("Using user's lang getFancyMsg(): " + main.getPlayerRecord(currPlayer, false).getLocalizationCode());
+			debugMsg("Using user's lang getMsg(): " + main.getPlayerRecord(currPlayer, false).getLocalizationCode());
 			messagesConfig = main.getConfigManager().getCustomMessagesConfig(main.getPlayerRecord(currPlayer, false).getLocalizationCode());
 		}
 

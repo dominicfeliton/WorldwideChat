@@ -212,11 +212,9 @@ Messages:
     ya geri dönmək üçün 0 yazın. Orijinal mesajda gördüyünüz faiz əlamətləri ilə başlayan
     hər hansı dəyişənləri daxil etməyi unutmayın.
   wwctGUISourceOrTargetTranslationAlreadyActive: Bu dil artıq aktivdir!
-  wwcConfigGUIMessagesOverrideChatButton: Varsayılan Plugin Mesajlarını yalnış
   wwcConfigGUIChatMessagesPossibleOverrides: Mesaj seçin
   wwcConfigGUIChatMessagesModifyOverride: Mövcud yalnış dəyişiklik
   wwcConfigConversationOverrideDeletionSuccess: Xüsusi mesaj yalnış silindi.
-  wwcConfigGUIChatMessagesOverrideSettings: Varsayılan Mesajları yalnış et
   wwcConfigGUIChatMessagesDeadOverride: Bu yalnış ya etibarsızdır, ya da orijinal
     mesaj silindi. Bunu silmək lazımdır.
   wwcConfigGUIMessagesAlreadyOverriden: Bu mesaj üçün artıq bir yalnış var!
@@ -552,4 +550,8 @@ Messages:
   wwcOldDatabaseStruct: 'Seçdiyiniz verilənlər bazası WorldwideChat-ın əvvəlki versiyasından
     səmərəsiz bir quraşdırmaya malikdir. Bu problemi həll etmək üçün aşağıdakı əmri
     işə sala bilərsiniz: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Lokalizasiyanı seçin
+  wwcConfigGUIMessagesOverridePickChatButton: Varsayılan Plugin Mesajlarını ləğv edin
+  wwcConfigGUIChatMessagesOverrideSettings: Varsayılan Mesajları ləğv edin ({0})
+  wwcConfigGUIMessagesServerLang: Bu, config.yml-də plaginin standart dilidir.
 

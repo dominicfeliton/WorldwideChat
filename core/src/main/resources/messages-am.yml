@@ -184,11 +184,9 @@ Messages:
   wwcConfigConversationOverrideTextChange: ይህ መሻር አዲስ መልዕክት ይተይቡ, ወይም ተይብ 0 ወደ ኋላ
     ለመመለስ። በመጀመሪያው መልዕክት ውስጥ ከሚያዩዋቸው መቶኛ ምልክቶች የሚጀምሩ ማንኛውንም ተለዋዋጭ ማካተት ያስታውሱ።
   wwctGUISourceOrTargetTranslationAlreadyActive: ይህ ቋንቋ ቀድሞውኑ ንቁ ነው!
-  wwcConfigGUIMessagesOverrideChatButton: ነባሪ ፕለጊን መልዕክቶችን ይሻሩ
   wwcConfigGUIChatMessagesPossibleOverrides: መልዕክት ይምረጡ
   wwcConfigGUIChatMessagesModifyOverride: ነባሩን ሽር ማስተካከል
   wwcConfigConversationOverrideDeletionSuccess: ብጁ መልዕክት መሻር ተሰርዟል።
-  wwcConfigGUIChatMessagesOverrideSettings: ነባር መልዕክቶችን ይሻሩ
   wwcConfigGUIChatMessagesDeadOverride: ይህ መሻር ልክ ያልሆነ ነው፣ ወይም የመጀመሪያው መልዕክት ተወግዷል።
     ይህንን መሰረዝ ይኖርብዎታል።
   wwcConfigGUIMessagesAlreadyOverriden: አስቀድመው ለዚህ መልዕክት መሻር አላቸው!
@@ -491,4 +489,8 @@ Messages:
     ላይ ከሆኑ እና ይህንን ስህተት ካገኙ እባክዎን ገንቢውን ያነጋግሩ።
   wwcOldDatabaseStruct: 'የተመረጠው የውሂብ ጎታ ከቀደመው የ WorldwideChat ስሪት ውጤታማ ያልሆነ ማዋቀር አለው።
     ይህንን ችግር ለማስተካከል የሚከተለውን ትዕዛዝ ማስኬድ ይችላሉ: /wwcd መለወጥ'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: አካባቢያዊነትን
+  wwcConfigGUIMessagesOverridePickChatButton: ነባሪ የፕለጊን መልዕክቶችን
+  wwcConfigGUIChatMessagesOverrideSettings: ነባሪ መልዕክቶችን ይልቅ ({0})
+  wwcConfigGUIMessagesServerLang: ይህ በ config.yml ውስጥ የፕለጊኑ ነባሪ ቋንቋ ነው።
 

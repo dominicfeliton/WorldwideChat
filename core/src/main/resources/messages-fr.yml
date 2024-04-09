@@ -178,7 +178,6 @@ Messages:
     pour que la modification soit prise en compte.
   wwctcoOffSender: La traduction du chat sortant est désactivée.
   wwcUpdaterFailedGeneric: Impossible de vérifier les mises à jour de WorldwideChat.
-  wwcConfigGUIChatMessagesOverrideSettings: Ignorer les messages par défaut
   wwcItemTranslateTitleDone: Titre de l'article traduit avec succès.
   wwcConfigConversationLibreTranslateApiKeySuccess: La clé API libre a été définie
     avec succès.
@@ -235,7 +234,6 @@ Messages:
   libreHttp403: La clé API Libre Translate est manquante, ou vous êtes banni du serveur !
   wwcConfigConversationLangInvalid: Code de langue non valide !
   wwcConfigGUIToggleMongoButton: Activer/désactiver MongoDB
-  wwcConfigGUIMessagesOverrideChatButton: Ignorer les messages du plug-in par défaut
   wwcConfigGUIPostgresPortButton: Modifier le port PostgreSQL
   wwcEnabled: La version {0} de WorldwideChat a été activée.
   wwcConfigGUIPluginUpdateChatButton: Envoyer un rappel par chat pour les mises à
@@ -607,3 +605,9 @@ Messages:
   wwcConfigConversationAmazonTranslateAccessKeySuccess: La clé d'accès Amazon a été
     définie avec succès.
   wwcConfigGUISQLUsernameButton: Modifier le nom d'utilisateur SQL
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Choisissez la localisation
+  wwcConfigGUIMessagesOverridePickChatButton: Ignorer les messages du plug-in par
+    défaut
+  wwcConfigGUIChatMessagesOverrideSettings: Ignorer les messages par défaut ({0})
+  wwcConfigGUIMessagesServerLang: Il s'agit de la langue par défaut du plugin dans
+    config.yml.

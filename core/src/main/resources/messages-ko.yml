@@ -172,11 +172,9 @@ Messages:
   wwcConfigConversationOverrideTextChange: 이 재정의에 대한 새 메시지를 입력하거나 0을 입력하여 돌아가십시오.원본
     메시지에 표시된 백분율 기호로 시작하는 변수를 포함해야 합니다.
   wwctGUISourceOrTargetTranslationAlreadyActive: 이 언어는 이미 활성화되어 있습니다!
-  wwcConfigGUIMessagesOverrideChatButton: 기본 플러그인 메시지 덮어쓰기
   wwcConfigGUIChatMessagesPossibleOverrides: 메시지 선택
   wwcConfigGUIChatMessagesModifyOverride: 기존 재정의 수정
   wwcConfigConversationOverrideDeletionSuccess: 사용자 지정 메시지 재정의가 삭제되었습니다.
-  wwcConfigGUIChatMessagesOverrideSettings: 기본 메시지 재정의
   wwcConfigGUIChatMessagesDeadOverride: 이 재정의가 잘못되었거나 원래 메시지가 제거되었습니다.이 항목을 삭제해야 합니다.
   wwcConfigGUIMessagesAlreadyOverriden: 이 메시지에 대한 재정의가 이미 있습니다!
   wwcConfigGUIChatMessagesOverrideNewButton: 새 재정의 추가
@@ -462,4 +460,8 @@ Messages:
     발생하면 개발자에게 문의하세요.
   wwcOldDatabaseStruct: 선택한 데이터베이스가 이전 버전의 WorldwideChat보다 비효율적으로 설정되었습니다.다음 명령을 실행하여
     이 문제를 해결할 수 있습니다. /wwcd convert
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: 현지화 선택
+  wwcConfigGUIMessagesOverridePickChatButton: 기본 플러그인 메시지 무시
+  wwcConfigGUIChatMessagesOverrideSettings: 기본 메시지 무시 ({0})
+  wwcConfigGUIMessagesServerLang: 이 언어는 config.yml에 있는 플러그인의 기본 언어입니다.
 

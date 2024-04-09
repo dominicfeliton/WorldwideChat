@@ -208,12 +208,10 @@ Messages:
     کریں، یا واپس جانے کے لئے 0 ٹائپ کریں۔ کسی بھی متغیرات کو شامل کرنا یاد رکھیں
     جو آپ اصل پیغام میں دیکھتے ہیں فی صد علامات سے شروع ہوتا ہے۔
   wwctGUISourceOrTargetTranslationAlreadyActive: یہ زبان پہلے ہی فعال ہے!
-  wwcConfigGUIMessagesOverrideChatButton: ڈیفالٹ پلگ ان پیغامات کو ختم
   wwcConfigGUIChatMessagesPossibleOverrides: پیغام کا انتخاب کریں
   wwcConfigGUIChatMessagesModifyOverride: موجودہ اووررائڈ میں ترمیم
   wwcConfigConversationOverrideDeletionSuccess: حسب ضرورت پیغام اوور رائڈ حذف کر دیا
     گیا
-  wwcConfigGUIChatMessagesOverrideSettings: ڈیفالٹ پیغامات کو زیر کریں
   wwcConfigGUIChatMessagesDeadOverride: یہ اووررائڈ یا تو غلط ہے، یا اصل پیغام ہٹا
     دیا گیا ہے۔ آپ کو یہ حذف کرنا چاہئے.
   wwcConfigGUIMessagesAlreadyOverriden: آپ کے پاس پہلے سے ہی اس پیغام کے لئے ایک اووررائڈ
@@ -567,4 +565,9 @@ Messages:
   wwcOldDatabaseStruct: 'آپ کے منتخب کردہ ڈیٹا بیس میں WorldwideChat کے پچھلے ورژن
     سے ناموثر سیٹ اپ ہے۔ آپ اس مسئلے کو ٹھیک کرنے کے لئے درج ذیل کمانڈ چلا سکتے ہیں:
     /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: مقامی منتخب کریں
+  wwcConfigGUIMessagesOverridePickChatButton: پہلے سے طے شدہ پلگ ان پیغامات کو
+  wwcConfigGUIChatMessagesOverrideSettings: ڈیفالٹ پیغامات کو اوور رائڈ کریں ({0})
+  wwcConfigGUIMessagesServerLang: یہ config.yml میں پلگ ان کی پہلے سے طے شدہ زبان
+    ہے۔
 

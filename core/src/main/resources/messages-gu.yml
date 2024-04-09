@@ -208,12 +208,10 @@ Messages:
     અથવા પાછા જવા માટે 0 લખો. તમે મૂળ સંદેશમાં જુઓ છો તે ટકાવારી ચિહ્નોથી શરૂ થતા
     કોઈપણ ચલોને શામેલ કરવાનું યાદ રાખો.
   wwctGUISourceOrTargetTranslationAlreadyActive: આ ભાષા પહેલેથી સક્રિય છે!
-  wwcConfigGUIMessagesOverrideChatButton: ડિફૉલ્ટ પ્લગઇન સંદેશાઓને ઓવરરાઇડ કરો
   wwcConfigGUIChatMessagesPossibleOverrides: સંદેશ પસંદ કરો
   wwcConfigGUIChatMessagesModifyOverride: હાલની ઓવરરાઇડ સંશોધિત
   wwcConfigConversationOverrideDeletionSuccess: કસ્ટમ સંદેશ ઓવરરાઇડ કાઢી નાખવામાં
     આવ્યો છે.
-  wwcConfigGUIChatMessagesOverrideSettings: ડિફૉલ્ટ સંદેશાઓ પર ઓવરરાઇડ કરો
   wwcConfigGUIChatMessagesDeadOverride: આ ઓવરરાઇડ ક્યાં તો અમાન્ય છે, અથવા મૂળ સંદેશ
     દૂર કરવામાં આવ્યો છે. તમારે આ કાઢી નાખવું જોઈએ.
   wwcConfigGUIMessagesAlreadyOverriden: તમારી પાસે પહેલેથી જ આ સંદેશ માટે ઓવરરાઇડ
@@ -555,4 +553,8 @@ Messages:
   wwcOldDatabaseStruct: 'તમારા પસંદ કરેલા ડેટાબેઝમાં વર્લ્ડવાઇડચેટના અગાઉના સંસ્કરણમાંથી
     બિનકાર્યક્ષમ સેટઅપ છે. તમે આ મુદ્દાને ઠીક કરવા માટે નીચેનો આદેશ ચલાવી શકો છો:
     /wwcd કન્વર્ટ'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: સ્થાનિકીકરણ પસંદ કરો
+  wwcConfigGUIMessagesOverridePickChatButton: ડિફોલ્ટ પ્લગઇન સંદેશાઓ ઓવરરા
+  wwcConfigGUIChatMessagesOverrideSettings: ડિફોલ્ટ સંદેશાઓ ઓવરરાઇડ કરો ({0})
+  wwcConfigGUIMessagesServerLang: આ config.yml માં પ્લગઇનની ડિફૉલ્ટ ભાષા છે.
 

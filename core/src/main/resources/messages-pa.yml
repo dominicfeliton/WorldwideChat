@@ -155,7 +155,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: ਐਮਾਜ਼ਾਨ ਐਕਸੈਸ ਕੁੰਜੀ ਬਦਲੋ
   wwcrFail: ਵਰਲਡਵਿਡਚੈਟ ਨੂੰ ਮੁੜ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ.
   wwcUpdaterFailedGeneric: WorldwideChat ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ.
-  wwcConfigGUIChatMessagesOverrideSettings: ਮੂਲ ਸੁਨੇਹੇ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰੋ
   wwctGUIMainMenuGlobal: ਗਲੋਬਲ ਅਨੁਵਾਦ ਮੇਨੂ
   wwcItemTranslateTitleDone: ਅਨੁਵਾਦ ਇਕਾਈ ਨੂੰ ਸਿਰਲੇਖ ਨੂੰ ਸਫਲਤਾਪੂਰਕ.
   wwcConfigGUIWatsonButton: ਵਾਟਸਨ
@@ -211,7 +210,6 @@ Messages:
   wwctGUISourceTranslationSelected: ਤੁਸੀਂ ਇਸ ਭਾਸ਼ਾ ਦੀ ਚੋਣ ਕੀਤੀ ਹੈ.
   wwcConfigGUIAmazonTranslateRegionButton: ਐਮਾਜ਼ਾਨ ਖੇਤਰ ਬਦਲੋ
   wwcConfigConversationLangInvalid: ਗਲਤ ਭਾਸ਼ਾ ਕੋਡ!
-  wwcConfigGUIMessagesOverrideChatButton: ਮੂਲ ਪਲੱਗਇਨ ਸੁਨੇਹੇ ਨੂੰ ਅਣਡਿੱਠਾ
   wwcConfigConversationErrorLimitInput: ਹਰੇਕ ਅਨੁਵਾਦਕ ਲਈ ਮੌਜੂਦਾ ਗਲਤੀ ਸੀਮਾ {0} ਹੈ ਨਵਾਂ
     ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਜਾਂ ਇਸ
     ਦੇ ਬਰਾਬਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ।
@@ -561,4 +559,8 @@ Messages:
   wwcOldDatabaseStruct: 'ਤੁਹਾਡੇ ਚੁਣੇ ਹੋਏ ਡੇਟਾਬੇਸ ਵਿੱਚ ਵਰਲਡਵਾਈਡਚੈਟ ਦੇ ਪਿਛਲੇ ਸੰਸਕਰਣ
     ਤੋਂ ਇੱਕ ਅਕੁਸ਼ਲ ਸੈਟਅਪ ਹੈ। ਤੁਸੀਂ ਇਸ ਮੁੱਦੇ ਨੂੰ ਠੀਕ ਕਰਨ ਲਈ ਹੇਠ ਲਿਖੀ ਕਮਾਂਡ ਚਲਾ ਸਕਦੇ
     ਹੋ: /wwcd ਕਨਵਰਟ'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: ਸਥਾਨਕਕਰਨ ਚੁਣੋ
+  wwcConfigGUIMessagesOverridePickChatButton: ਡਿਫੌਲਟ ਪਲੱਗਇਨ ਸੁਨੇਹੇ
+  wwcConfigGUIChatMessagesOverrideSettings: ਮੂਲ ਸੰਦੇਸ਼ਾਂ ਨੂੰ ਓਵਰਰਾਈਡ ਕਰੋ ({0})
+  wwcConfigGUIMessagesServerLang: ਇਹ config.yml ਵਿੱਚ ਪਲੱਗਇਨ ਦੀ ਡਿਫੌਲਟ ਭਾਸ਼ਾ ਹੈ.
 

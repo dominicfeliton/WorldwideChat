@@ -211,11 +211,9 @@ Messages:
     یا برای بازگشت تایپ کنید 0. به یاد داشته باشید که هر متغیری را که با علائم درصد
     شروع می کنید در پیام اصلی وارد کنید.
   wwctGUISourceOrTargetTranslationAlreadyActive: این زبان در حال حاضر فعال است!
-  wwcConfigGUIMessagesOverrideChatButton: لغو پیام های پلاگین پیش فرض
   wwcConfigGUIChatMessagesPossibleOverrides: یک پیام را انتخاب کنید
   wwcConfigGUIChatMessagesModifyOverride: تغییر لغو موجود
   wwcConfigConversationOverrideDeletionSuccess: لغو پیام سفارشی حذف شده است.
-  wwcConfigGUIChatMessagesOverrideSettings: لغو پیام های پیش فرض
   wwcConfigGUIChatMessagesDeadOverride: این لغو یا نامعتبر است یا پیام اصلی حذف شده
     است. شما باید این را حذف کنید.
   wwcConfigGUIMessagesAlreadyOverriden: شما در حال حاضر یک لغو برای این پیام!
@@ -557,4 +555,8 @@ Messages:
     Minecraft هستید و این خطا را دریافت می کنید، لطفاً با توسعه دهنده تماس بگیرید.
   wwcOldDatabaseStruct: 'پایگاه داده انتخابی شما دارای تنظیمات ناکارآمد از نسخه قبلی
     WorldwideChat است. برای رفع این مشکل می توانید دستور زیر را اجرا کنید: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: محلی سازی را انتخاب کنید
+  wwcConfigGUIMessagesOverridePickChatButton: پیامهای پلاگین پیش فرض را حذف کنید
+  wwcConfigGUIChatMessagesOverrideSettings: پیامهای پیش فرض را لغو کنید ({0})
+  wwcConfigGUIMessagesServerLang: این زبان پیش فرض پلاگین در config.yml است.
 

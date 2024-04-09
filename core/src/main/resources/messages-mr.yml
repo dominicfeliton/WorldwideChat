@@ -153,7 +153,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: ऍमेझॉन प्रवेश की बदला
   wwcrFail: WorldwideChat रीलोड करण्यात अयशस्वी.
   wwcUpdaterFailedGeneric: WorldwideChat अद्यतने तपासण्यात अक्षम.
-  wwcConfigGUIChatMessagesOverrideSettings: डीफॉल्ट संदेश अधिलिखित
   wwctGUIMainMenuGlobal: ग्लोबल भाषांतर मेनू
   wwcItemTranslateTitleDone: अनुवादित आयटम शीर्षक यशस्वीरित्या.
   wwcConfigGUIWatsonButton: वॉटसन
@@ -208,7 +207,6 @@ Messages:
   wwctGUISourceTranslationSelected: तुम्ही ही भाषा निवडली आहे.
   wwcConfigGUIAmazonTranslateRegionButton: ऍमेझॉन क्षेत्र बदला
   wwcConfigConversationLangInvalid: अवैध भाषा कोड!
-  wwcConfigGUIMessagesOverrideChatButton: डीफॉल्ट प्लगइन संदेश अधिलिखित
   wwcConfigConversationErrorLimitInput: प्रत्येक अनुवादकाचे वर्तमान त्रुटी मर्यादा
     {0} आहे. नवीन मुल्य सेट करण्यासाठी 0 पेक्षा जास्त काहीही टाइप करा, किंवा परत जाण्यासाठी
     0 पेक्षा कमी किंवा समान काहीही टाइप करा.
@@ -546,4 +544,8 @@ Messages:
     अधिक अलीकडील आवृत्तीवर असाल आणि आपल्याला ही त्रुटी मिळाली तर कृपया
   wwcOldDatabaseStruct: 'आपल्या निवडलेल्या डेटाबेसमध्ये वर्ल्डविडचॅटच्या मागील आवृत्तीमधील
     अकार्यक्षम या समस्येचे निराकरण करण्यासाठी आपण खालील कमांड चालवू शकता: /wwcd कन्'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: स्थानिकीकरण
+  wwcConfigGUIMessagesOverridePickChatButton: ओव्हरराइड डीफॉल्ट प्
+  wwcConfigGUIChatMessagesOverrideSettings: डीफॉल्ट संदेश ओव्हरराइड करणे {0}
+  wwcConfigGUIMessagesServerLang: ही config.yml मधील प्लगइनची डीफॉल्ट भाषा आहे.
 

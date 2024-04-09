@@ -227,12 +227,10 @@ Messages:
     na ito, o i-type ang 0 upang bumalik. Tandaan na isama ang anumang mga variable
     na nagsisimula sa mga palatandaan ng porsyento na nakikita mo sa orihinal na mensahe.
   wwctGUISourceOrTargetTranslationAlreadyActive: Ang wikang ito ay aktibo na!
-  wwcConfigGUIMessagesOverrideChatButton: I-override ang Default na Mensahe ng Plugin
   wwcConfigGUIChatMessagesPossibleOverrides: Pumili ng Mensahe
   wwcConfigGUIChatMessagesModifyOverride: Baguhin ang Umiiral na Pag
   wwcConfigConversationOverrideDeletionSuccess: Tinanggal na ang override ng custom
     na mensahe.
-  wwcConfigGUIChatMessagesOverrideSettings: I-override ang Mga Default na Mensahe
   wwcConfigGUIChatMessagesDeadOverride: Ang override na ito ay alinman sa hindi wasto,
     o ang orihinal na mensahe ay inalis. Dapat mong tanggalin ito.
   wwcConfigGUIMessagesAlreadyOverriden: Mayroon ka nang override para sa mensaheng
@@ -625,4 +623,10 @@ Messages:
   wwcOldDatabaseStruct: 'Ang iyong napiling database ay may hindi mahusay na pag-setup
     mula sa isang nakaraang bersyon ng WorldwideChat. Maaari mong patakbuhin ang sumusunod
     na utos upang ayusin ang isyung ito: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Piliin ang Lokalisasyon
+  wwcConfigGUIMessagesOverridePickChatButton: I-override ang mga default na mensahe
+    ng Plugin
+  wwcConfigGUIChatMessagesOverrideSettings: I-override ang mga default na mensahe
+    ({0})
+  wwcConfigGUIMessagesServerLang: Ito ang default na wika ng plugin sa config.yml.
 

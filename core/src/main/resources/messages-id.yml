@@ -214,11 +214,9 @@ Messages:
     ini, atau ketik 0 untuk kembali. Ingatlah untuk menyertakan variabel apapun yang
     dimulai dengan tanda persentase yang Anda lihat di pesan asli.
   wwctGUISourceOrTargetTranslationAlreadyActive: Bahasa ini sudah aktif!
-  wwcConfigGUIMessagesOverrideChatButton: Timpa Pesan Plugin Default
   wwcConfigGUIChatMessagesPossibleOverrides: Pilih Pesan
   wwcConfigGUIChatMessagesModifyOverride: Memodifikasi Override yang ada
   wwcConfigConversationOverrideDeletionSuccess: Menimpa pesan kustom telah dihapus.
-  wwcConfigGUIChatMessagesOverrideSettings: Timpa Pesan Default
   wwcConfigGUIChatMessagesDeadOverride: Penimpa ini tidak valid, atau pesan asli telah
     dihapus. Anda harus menghapus ini.
   wwcConfigGUIMessagesAlreadyOverriden: Anda sudah memiliki override untuk pesan ini!
@@ -552,4 +550,8 @@ Messages:
   wwcOldDatabaseStruct: 'Basis data yang Anda pilih memiliki pengaturan yang tidak
     efisien dari versi WorldwideChat sebelumnya. Anda dapat menjalankan perintah berikut
     untuk memperbaiki masalah ini: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Pilih Lokalisasi
+  wwcConfigGUIMessagesOverridePickChatButton: Mengganti Pesan Plugin Default
+  wwcConfigGUIChatMessagesOverrideSettings: Mengganti Pesan Default ({0})
+  wwcConfigGUIMessagesServerLang: Ini adalah bahasa default plugin di config.yml.
 

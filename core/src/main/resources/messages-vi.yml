@@ -218,11 +218,9 @@ Messages:
     nhập 0 để quay trở lại. Hãy nhớ bao gồm bất kỳ biến nào bắt đầu bằng dấu hiệu
     phần trăm mà bạn thấy trong thư gốc.
   wwctGUISourceOrTargetTranslationAlreadyActive: Ngôn ngữ này đã hoạt động!
-  wwcConfigGUIMessagesOverrideChatButton: Ghi đè lên tin nhắn Plugin mặc định
   wwcConfigGUIChatMessagesPossibleOverrides: Chọn một tin nhắn
   wwcConfigGUIChatMessagesModifyOverride: Sửa đổi ghi đè hiện có
   wwcConfigConversationOverrideDeletionSuccess: Ghi đè thư tùy chỉnh đã bị xóa.
-  wwcConfigGUIChatMessagesOverrideSettings: Ghi đè lên thư mặc định
   wwcConfigGUIChatMessagesDeadOverride: Ghi đè này là không hợp lệ, hoặc thư gốc đã
     bị loại bỏ. Bạn nên xóa cái này đi.
   wwcConfigGUIMessagesAlreadyOverriden: Bạn đã có một ghi đè cho tin nhắn này!
@@ -564,4 +562,8 @@ Messages:
   wwcOldDatabaseStruct: 'Cơ sở dữ liệu bạn đã chọn có thiết lập không hiệu quả từ
     phiên bản trước của WorldwideChat. Bạn có thể chạy lệnh sau để khắc phục sự cố
     này: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Chọn bản địa hóa
+  wwcConfigGUIMessagesOverridePickChatButton: Ghi đè thư Plugin mặc định
+  wwcConfigGUIChatMessagesOverrideSettings: Ghi đè tin nhắn mặc định ({0})
+  wwcConfigGUIMessagesServerLang: Đây là ngôn ngữ mặc định của plugin trong config.yml.
 

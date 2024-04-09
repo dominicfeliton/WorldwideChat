@@ -209,11 +209,9 @@ Messages:
     ya ubatilishaji huu, au aina 0 kurudi nyuma. Kumbuka ni pamoja na vigezo yoyote
     kuanzia na ishara asilimia unaweza kuona katika ujumbe wa awali.
   wwctGUISourceOrTargetTranslationAlreadyActive: Lugha hii tayari inafanya kazi!
-  wwcConfigGUIMessagesOverrideChatButton: Batilisha Default Plugin
   wwcConfigGUIChatMessagesPossibleOverrides: Chagua Ujumbe
   wwcConfigGUIChatMessagesModifyOverride: Badilisha Uhangishaji uliopo
   wwcConfigConversationOverrideDeletionSuccess: Custom ujumbe ubatilishaji imefutwa.
-  wwcConfigGUIChatMessagesOverrideSettings: Batilisha Ujumbe Default
   wwcConfigGUIChatMessagesDeadOverride: Override hii ni ama batili, au ujumbe wa awali
     umeondolewa. Unapaswa kufuta hii.
   wwcConfigGUIMessagesAlreadyOverriden: Tayari una ubatilishaji wa ujumbe huu!
@@ -558,4 +556,10 @@ Messages:
   wwcOldDatabaseStruct: 'Hifadhidata yako iliyochagua ina usanidi usio na ufanisi
     kutoka toleo la awali la WorldwideChat. Unaweza kuendesha amri ifuatayo ili kurekebisha
     suala hili: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Chagua Ujenaji
+  wwcConfigGUIMessagesOverridePickChatButton: Badilisha Ujumbe wa Programu-jalizi
+    Default
+  wwcConfigGUIChatMessagesOverrideSettings: Kubadilisha Ujumbe wa Default ({0})
+  wwcConfigGUIMessagesServerLang: Hii ni lugha ya default ya programu-jalizi katika
+    config.yml.
 

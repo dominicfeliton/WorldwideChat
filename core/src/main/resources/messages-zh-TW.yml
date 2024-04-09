@@ -168,11 +168,9 @@ Messages:
   wwcConfigGUIChatMessagesOverrideDeleteButton: 刪除覆寫
   wwcConfigConversationOverrideTextChange: 請輸入此覆寫的新訊息，或輸入 0 返回。請記得包含任何以原始郵件中看到的百分比符號開頭的變數。
   wwctGUISourceOrTargetTranslationAlreadyActive: 這種語言已經活躍了！
-  wwcConfigGUIMessagesOverrideChatButton: 覆寫預設外掛程式訊息
   wwcConfigGUIChatMessagesPossibleOverrides: 選擇訊息
   wwcConfigGUIChatMessagesModifyOverride: 修改既有取代
   wwcConfigConversationOverrideDeletionSuccess: 已刪除自訂訊息覆寫。
-  wwcConfigGUIChatMessagesOverrideSettings: 覆寫預設訊息
   wwcConfigGUIChatMessagesDeadOverride: 此覆寫無效，或原始郵件已移除。你應該刪除這個。
   wwcConfigGUIMessagesAlreadyOverriden: 您已經有這個訊息的覆寫！
   wwcConfigGUIChatMessagesOverrideNewButton: 加入新取代
@@ -429,4 +427,8 @@ Messages:
   wwctbNoMoreOldBooks: 書籍翻譯無法在您的服務器版本上運行。如果您使用的是更新版本的 Minecraft 並且收到此錯誤，請聯繫開發人員。
   wwcOldDatabaseStruct: 您選擇的數據庫的設置比以前版本的 WorldwideChat 的設置效率不高。您可以運行以下命令來修復此問題：/wwcd
     轉換
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: 選擇本地化
+  wwcConfigGUIMessagesOverridePickChatButton: 覆寫預設外掛程式訊息
+  wwcConfigGUIChatMessagesOverrideSettings: 覆寫預設訊息 ({0})
+  wwcConfigGUIMessagesServerLang: 這是外掛程式在 config.yml 中的預設語言。
 

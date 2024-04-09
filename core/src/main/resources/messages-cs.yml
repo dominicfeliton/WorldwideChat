@@ -214,11 +214,9 @@ Messages:
     nebo zadejte 0 pro návrat. Nezapomeňte zahrnout všechny proměnné začínající znaménkem
     procentuálního podílu, které vidíte v původní zprávě.
   wwctGUISourceOrTargetTranslationAlreadyActive: Tento jazyk je již aktivní!
-  wwcConfigGUIMessagesOverrideChatButton: Přepsat výchozí zprávy modulu plugin
   wwcConfigGUIChatMessagesPossibleOverrides: Zvolte zprávu
   wwcConfigGUIChatMessagesModifyOverride: Upravit existující přepsání
   wwcConfigConversationOverrideDeletionSuccess: Vlastní přepsání zprávy bylo odstraněno.
-  wwcConfigGUIChatMessagesOverrideSettings: Přepsat výchozí zprávy
   wwcConfigGUIChatMessagesDeadOverride: Toto přepsání je buď neplatné, nebo původní
     zpráva byla odebrána. Měl bys to smazat.
   wwcConfigGUIMessagesAlreadyOverriden: Pro tuto zprávu už máte přepsání!
@@ -558,4 +556,8 @@ Messages:
   wwcOldDatabaseStruct: 'Vámi vybraná databáze má neefektivní nastavení z předchozí
     verze WorldwideChat. Chcete-li tento problém vyřešit, můžete spustit následující
     příkaz: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Zvolte lokalizaci
+  wwcConfigGUIMessagesOverridePickChatButton: Přepsat výchozí zprávy pluginu
+  wwcConfigGUIChatMessagesOverrideSettings: Přepsat výchozí zprávy ({0})
+  wwcConfigGUIMessagesServerLang: Toto je výchozí jazyk pluginu v config.yml.
 

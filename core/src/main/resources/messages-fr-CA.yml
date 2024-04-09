@@ -228,12 +228,10 @@ Messages:
     les variables commençant par des signes de pourcentage que vous voyez dans le
     message d'origine.
   wwctGUISourceOrTargetTranslationAlreadyActive: Cette langue est déjà active!
-  wwcConfigGUIMessagesOverrideChatButton: Remplacer les messages du plugin par défaut
   wwcConfigGUIChatMessagesPossibleOverrides: Choisir un message
   wwcConfigGUIChatMessagesModifyOverride: Modifier le remplacement existant
   wwcConfigConversationOverrideDeletionSuccess: Le remplacement de message personnalisé
     a été supprimé.
-  wwcConfigGUIChatMessagesOverrideSettings: Remplacer les messages par défaut
   wwcConfigGUIChatMessagesDeadOverride: Ce remplacement n'est pas valide ou le message
     d'origine a été supprimé. Vous devez supprimer ceci.
   wwcConfigGUIMessagesAlreadyOverriden: Vous avez déjà un remplacement pour ce message!
@@ -605,4 +603,10 @@ Messages:
   wwcOldDatabaseStruct: 'La base de données que vous avez choisie a une configuration
     inefficace par rapport à une version précédente de WorldwideChat. Vous pouvez
     exécuter la commande suivante pour résoudre ce problème : /wwcd convert/'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Choisissez la localisation
+  wwcConfigGUIMessagesOverridePickChatButton: Remplacer les messages de plug-in par
+    défaut
+  wwcConfigGUIChatMessagesOverrideSettings: Remplacer les messages par défaut ({0})
+  wwcConfigGUIMessagesServerLang: Il s'agit de la langue par défaut du plugin dans
+    config.yml.
 

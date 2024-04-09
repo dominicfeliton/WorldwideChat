@@ -182,7 +182,7 @@ public class MenuGui implements InventoryProvider {
 		chatSet.add(new ToggleElement(1, 1, "wwcConfigGUISendTranslationChatButton", "wwcConfigConversationSendTranslationChatSuccess", "Chat.sendTranslationChat"));
 		chatSet.add(new ToggleElement(1, 2, "wwcConfigGUIPluginUpdateChatButton", "wwcConfigConversationPluginUpdateChatSuccess", "Chat.sendPluginUpdateChat"));
 		chatSet.add(new ToggleElement(1, 3, "wwcConfigGUISendIncomingHoverTextChatButton", "wwcConfigConversationSendIncomingHoverTextChatSuccess", "Chat.sendIncomingHoverTextChat"));
-		chatSet.add(new SubMenuElement(1, 4, "wwcConfigGUIMessagesOverrideChatButton", new MessagesOverrideCurrentListGui().overrideMessagesSettings));
+		chatSet.add(new SubMenuElement(1, 4, "wwcConfigGUIMessagesOverridePickChatButton", new MessagesOverridePickLangGui().overrideMessagesSettingsPicker));
 		chatSet.add(new CommonElement(2, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
 		chatSet.add(new CommonElement(2, 4, "Quit"));
 		chatSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.TRANS_SET.smartInv}));

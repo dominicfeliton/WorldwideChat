@@ -169,11 +169,9 @@ Messages:
   wwcConfigGUIChatMessagesOverrideDeleteButton: オーバーライドを削除
   wwcConfigConversationOverrideTextChange: この上書きの新しいメッセージを入力するか、0 を入力して戻ってください。元のメッセージに表示されているパーセンテージ記号で始まる変数を必ず含めてください。
   wwctGUISourceOrTargetTranslationAlreadyActive: この言語は既にアクティブです！
-  wwcConfigGUIMessagesOverrideChatButton: デフォルトのプラグインメッセージをオーバーライド
   wwcConfigGUIChatMessagesPossibleOverrides: メッセージを選ぶ
   wwcConfigGUIChatMessagesModifyOverride: 既存のオーバーライドを修正
   wwcConfigConversationOverrideDeletionSuccess: カスタムメッセージオーバーライドが削除されました。
-  wwcConfigGUIChatMessagesOverrideSettings: デフォルトメッセージの上書き
   wwcConfigGUIChatMessagesDeadOverride: この上書きは無効であるか、元のメッセージは削除されています。これは削除したほうがいいよ
   wwcConfigGUIMessagesAlreadyOverriden: このメッセージの上書きは既に存在します。
   wwcConfigGUIChatMessagesOverrideNewButton: 新しいオーバーライドを追加
@@ -438,4 +436,8 @@ Messages:
   wwctbNoMoreOldBooks: ご使用のサーバーバージョンでは、本の翻訳は機能しません。Minecraft の最新バージョンを使用していて、このエラーが表示される場合は、開発者に問い合わせてください。
   wwcOldDatabaseStruct: 選択したデータベースは、以前のバージョンの WorldwideChat の設定では効率が悪いです。この問題を解決するには、/wwcd
     convert コマンドを実行してください。
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: ローカリゼーションを選択
+  wwcConfigGUIMessagesOverridePickChatButton: デフォルトプラグインメッセージの上書き
+  wwcConfigGUIChatMessagesOverrideSettings: デフォルトメッセージの上書き ({0})
+  wwcConfigGUIMessagesServerLang: これは config.yml のプラグインのデフォルト言語です。
 

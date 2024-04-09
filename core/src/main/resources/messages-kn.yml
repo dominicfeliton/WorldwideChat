@@ -218,11 +218,9 @@ Messages:
     ಟೈಪ್ ಮಾಡಿ, ಅಥವಾ ಹಿಂತಿರುಗಿ 0 ಎಂದು ಟೈಪ್ ಮಾಡಿ. ಮೂಲ ಸಂದೇಶದಲ್ಲಿ ನೀವು ನೋಡುವ ಶೇಕಡಾವಾರು
     ಚಿಹ್ನೆಗಳೊಂದಿಗೆ ಪ್ರಾರಂಭವಾಗುವ ಯಾವುದೇ ಅಸ್ಥಿರಗಳನ್ನು ಸೇರಿಸಲು ನೆನಪಿಡಿ.
   wwctGUISourceOrTargetTranslationAlreadyActive: ಈ ಭಾಷೆ ಈಗಾಗಲೇ ಸಕ್ರಿಯವಾಗಿದೆ!
-  wwcConfigGUIMessagesOverrideChatButton: ಡೀಫಾಲ್ಟ್ ಪ್ಲಗಿನ್ ಸಂದೇಶಗಳನ್ನು ಅತಿಕ್ರಮಿಸಿ
   wwcConfigGUIChatMessagesPossibleOverrides: ಒಂದು ಸಂದೇಶವನ್ನು ಆರಿಸಿ
   wwcConfigGUIChatMessagesModifyOverride: ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಅತಿಕ್ರಮಣವನ್ನು ಮಾರ್ಪಡಿಸಿ
   wwcConfigConversationOverrideDeletionSuccess: ಕಸ್ಟಮ್ ಸಂದೇಶವನ್ನು ಅತಿಕ್ರಮಣವನ್ನು ಅಳಿಸಲಾಗಿದೆ.
-  wwcConfigGUIChatMessagesOverrideSettings: ಡೀಫಾಲ್ಟ್ ಸಂದೇಶಗಳನ್ನು ಅತಿಕ್ರಮಿಸಿ
   wwcConfigGUIChatMessagesDeadOverride: ಈ ಅತಿಕ್ರಮಣವು ಅಮಾನ್ಯವಾಗಿದೆ, ಅಥವಾ ಮೂಲ ಸಂದೇಶವನ್ನು
     ತೆಗೆದುಹಾಕಲಾಗಿದೆ. ನೀವು ಇದನ್ನು ಅಳಿಸಬೇಕು.
   wwcConfigGUIMessagesAlreadyOverriden: ಈ ಸಂದೇಶಕ್ಕಾಗಿ ನೀವು ಈಗಾಗಲೇ ಅತಿಕ್ರಮಣವನ್ನು ಹೊಂದಿದ್ದೀರಿ!
@@ -573,4 +571,8 @@ Messages:
   wwcOldDatabaseStruct: 'ನಿಮ್ಮ ಆಯ್ಕೆಮಾಡಿದ ಡೇಟಾಬೇಸ್ WorldwideChat ನ ಹಿಂದಿನ ಆವೃತ್ತಿಯಿಂದ
     ಅಸಮರ್ಥ ಸೆಟಪ್ ಹೊಂದಿದೆ. ಈ ಸಮಸ್ಯೆಯನ್ನು ಸರಿಪಡಿಸಲು ನೀವು ಕೆಳಗಿನ ಆಜ್ಞೆಯನ್ನು ಚಲಾಯಿಸಬಹುದು:
     /wwcd ಪರಿವರ್ತಿಸಿ'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: ಸ್ಥಳೀಕರಣವನ್ನು ಆರಿಸಿ
+  wwcConfigGUIMessagesOverridePickChatButton: ಡೀಫಾಲ್ಟ್ ಪ್ಲಗಿನ್ ಸಂದೇಶಗಳನ್ನು ಅತ
+  wwcConfigGUIChatMessagesOverrideSettings: ಡೀಫಾಲ್ಟ್ ಸಂದೇಶಗಳನ್ನು ಅತಿಕ್ರಮಿಸಿ ({0})
+  wwcConfigGUIMessagesServerLang: ಇದು config.yml ನಲ್ಲಿ ಪ್ಲಗಿನ್ನ ಡೀಫಾಲ್ಟ್ ಭಾಷೆಯಾಗಿದೆ.
 

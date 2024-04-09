@@ -214,11 +214,9 @@ Messages:
     ചെയ്യുക, അല്ലെങ്കിൽ തിരികെ പോകാൻ 0 ടൈപ്പ് ചെയ്യുക. യഥാർത്ഥ സന്ദേശത്തിൽ നിങ്ങൾ
     കാണുന്ന ശതമാനം അടയാളങ്ങൾ തുടങ്ങുന്ന ഏതെങ്കിലും വേരിയബിളുകൾ ഉൾപ്പെടുത്താൻ ഓർക്കുക.
   wwctGUISourceOrTargetTranslationAlreadyActive: ഈ ഭാഷ ഇതിനകം സജീവമാണ്!
-  wwcConfigGUIMessagesOverrideChatButton: സ്ഥിരസ്ഥിതി പ്ലഗിൻ സന്ദേശങ്ങൾ അസാധുവാക്കുക
   wwcConfigGUIChatMessagesPossibleOverrides: ഒരു സന്ദേശം തിരഞ്ഞെടുക്കുക
   wwcConfigGUIChatMessagesModifyOverride: നിലവിലുള്ള അസാധുവാക്കുക പരിഷ്ക്കരിക്കുക
   wwcConfigConversationOverrideDeletionSuccess: ഇഷ്ടാനുസൃത സന്ദേശ അസാധുവാക്കൽ ഇല്ലാതാക്കി.
-  wwcConfigGUIChatMessagesOverrideSettings: സ്ഥിരസ്ഥിതി സന്ദേശങ്ങൾ അസാധുവാക്കുക
   wwcConfigGUIChatMessagesDeadOverride: ഈ അസാധുവാണ്, അല്ലെങ്കിൽ യഥാർത്ഥ സന്ദേശം നീക്കംചെയ്തു.
     നിങ്ങൾ ഇത് ഇല്ലാതാക്കണം.
   wwcConfigGUIMessagesAlreadyOverriden: നിങ്ങൾ ഇതിനകം ഈ സന്ദേശം ഒരു മറികടക്കൽ ഉണ്ട്!
@@ -578,4 +576,8 @@ Messages:
   wwcOldDatabaseStruct: 'നിങ്ങൾ തിരഞ്ഞെടുത്ത ഡാറ്റാബേസിന് WorldwideChat-ന്റെ മുമ്പത്തെ
     പതിപ്പിൽ നിന്ന് കാര്യക്ഷമമല്ലാത്ത സജ്ജീകരണം ഉണ്ട്. ഈ പ്രശ്നം പരിഹരിക്കാൻ നിങ്ങൾക്ക്
     ഇനിപ്പറയുന്ന കമാൻഡ് പ്രവർത്തിപ്പിക്കാൻ കഴിയും: /wwcd പരിവർത്തനം'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: ലോക്കലൈസേഷൻ തിരഞ്ഞെടുക്കുക
+  wwcConfigGUIMessagesOverridePickChatButton: സ്ഥിരസ്ഥിതി പ്ലഗിൻ സന്ദേശങ്ങൾ അസാധുവാക്കുക
+  wwcConfigGUIChatMessagesOverrideSettings: സ്ഥിരസ്ഥിതി സന്ദേശങ്ങൾ അസാധുവാക്കുക ({0})
+  wwcConfigGUIMessagesServerLang: config.yml- ൽ പ്ലഗിൻ ന്റെ സ്ഥിരസ്ഥിതി ഭാഷയാണിത്.
 

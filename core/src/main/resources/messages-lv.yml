@@ -216,11 +216,9 @@ Messages:
     ignorēšanu, vai ierakstiet 0, lai atgrieztos. Atcerieties iekļaut visus mainīgos
     lielumus, sākot ar procentuālajām zīmēm, kuras redzat sākotnējā ziņojumā.
   wwctGUISourceOrTargetTranslationAlreadyActive: Šī valoda jau ir aktīva!
-  wwcConfigGUIMessagesOverrideChatButton: Ignorēt noklusējuma spraudņa ziņas
   wwcConfigGUIChatMessagesPossibleOverrides: Izvēlēties ziņojumu
   wwcConfigGUIChatMessagesModifyOverride: Modificēt esošo ignorēšanu
   wwcConfigConversationOverrideDeletionSuccess: Pielāgota ziņojuma ignorēšana ir dzēsta.
-  wwcConfigGUIChatMessagesOverrideSettings: Ignorēt noklusējuma ziņojumus
   wwcConfigGUIChatMessagesDeadOverride: Šis ignorēšana ir nederīgs vai sākotnējais
     ziņojums ir noņemts. Jums vajadzētu izdzēst šo.
   wwcConfigGUIMessagesAlreadyOverriden: Jums jau ir ignorēt šo ziņojumu!
@@ -561,4 +559,8 @@ Messages:
   wwcOldDatabaseStruct: 'Jūsu izvēlētajā datu bāzē ir neefektīva iestatīšana no iepriekšējās
     WorldwideChat versijas. Lai novērstu šo problēmu, varat palaist šādu komandu:
     /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Izvēlieties lokalizāciju
+  wwcConfigGUIMessagesOverridePickChatButton: Aizstāt noklusējuma spraudņa ziņojumus
+  wwcConfigGUIChatMessagesOverrideSettings: Aizstāt noklusējuma ziņojumus ({0})
+  wwcConfigGUIMessagesServerLang: Šī ir spraudņa noklusējuma valoda programmā config.yml.
 

@@ -214,12 +214,10 @@ Messages:
     цього заміщення, або введіть 0, щоб повернутися назад. Не забудьте включити будь-які
     змінні, починаючи зі знаків відсотка, які ви бачите у вихідному повідомленні.
   wwctGUISourceOrTargetTranslationAlreadyActive: Ця мова вже активна!
-  wwcConfigGUIMessagesOverrideChatButton: Перевизначити типові повідомлення додатка
   wwcConfigGUIChatMessagesPossibleOverrides: Виберіть повідомлення
   wwcConfigGUIChatMessagesModifyOverride: Змінити існуюче заміщення
   wwcConfigConversationOverrideDeletionSuccess: Нетипове перевизначення повідомлення
     було видалено.
-  wwcConfigGUIChatMessagesOverrideSettings: Перевизначити типові повідомлення
   wwcConfigGUIChatMessagesDeadOverride: Це перевизначення є або некоректним, або вихідне
     повідомлення було вилучено. Ви повинні видалити це.
   wwcConfigGUIMessagesAlreadyOverriden: У вас вже є перевизначення цього повідомлення!
@@ -559,4 +557,10 @@ Messages:
   wwcOldDatabaseStruct: 'Обрана вами база даних має неефективне налаштування з попередньої
     версії WorldwideChat. Ви можете виконати наступну команду, щоб виправити цю проблему:
     /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Виберіть локалізацію
+  wwcConfigGUIMessagesOverridePickChatButton: Перевизначення повідомлень плагінів
+    за замовчуванням
+  wwcConfigGUIChatMessagesOverrideSettings: Перевизначення повідомлень за замовчуванням
+    ({0})
+  wwcConfigGUIMessagesServerLang: Це типова мова плагіна в config.yml.
 

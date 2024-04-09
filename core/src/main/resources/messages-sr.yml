@@ -209,12 +209,10 @@ Messages:
     ili upišite 0 da biste se vratili. Ne zaboravite da uključite sve promenljive
     počevši od procentnih znakova koje vidite u originalnoj poruci.
   wwctGUISourceOrTargetTranslationAlreadyActive: Ovaj jezik je već aktivan!
-  wwcConfigGUIMessagesOverrideChatButton: Premostiti podrazumevane plugin poruke
   wwcConfigGUIChatMessagesPossibleOverrides: Izaberite poruku
   wwcConfigGUIChatMessagesModifyOverride: Izmenite postojeće premošćivanje
   wwcConfigConversationOverrideDeletionSuccess: Prilagođeno premošćenje poruke je
     izbrisano.
-  wwcConfigGUIChatMessagesOverrideSettings: Premostiti podrazumevane poruke
   wwcConfigGUIChatMessagesDeadOverride: Ovo premošćivanje je bilo nevažeće ili je
     originalna poruka uklonjena. Trebalo bi da izbrišete ovo.
   wwcConfigGUIMessagesAlreadyOverriden: Već imate premošću za ovu poruku!
@@ -553,4 +551,8 @@ Messages:
   wwcOldDatabaseStruct: 'Vaša izabrana baza podataka ima neefikasno podešavanje iz
     prethodne verzije VorldWideChat-a. Možete pokrenuti sledeću komandu da biste rešili
     ovaj problem: /vvcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Izaberite Lokalizaciju
+  wwcConfigGUIMessagesOverridePickChatButton: Poništite podrazumevane poruke dodataka
+  wwcConfigGUIChatMessagesOverrideSettings: Poništi podrazumevane poruke ({0})
+  wwcConfigGUIMessagesServerLang: Ovo je podrazumevani jezik dodatka u config.iml.
 

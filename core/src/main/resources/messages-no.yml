@@ -207,11 +207,9 @@ Messages:
     eller skriv 0 for å gå tilbake. Husk å inkludere eventuelle variabler som starter
     med prosentvise tegn du ser i den opprinnelige meldingen.
   wwctGUISourceOrTargetTranslationAlreadyActive: Dette språket er allerede aktivt!
-  wwcConfigGUIMessagesOverrideChatButton: Overstyr standard plugin-meldinger
   wwcConfigGUIChatMessagesPossibleOverrides: Velg en melding
   wwcConfigGUIChatMessagesModifyOverride: Endre eksisterende overstyring
   wwcConfigConversationOverrideDeletionSuccess: Tilpasset meldingsoverstyring er slettet.
-  wwcConfigGUIChatMessagesOverrideSettings: Overstyr standardmeldinger
   wwcConfigGUIChatMessagesDeadOverride: Denne overstyringen er enten ugyldig, eller
     den opprinnelige meldingen er fjernet. Du bør slette dette.
   wwcConfigGUIMessagesAlreadyOverriden: Du har allerede en overstyring for denne meldingen!
@@ -543,4 +541,8 @@ Messages:
   wwcOldDatabaseStruct: 'Den valgte databasen har et ineffektivt oppsett fra en tidligere
     versjon av WorldwideChat. Du kan kjøre følgende kommando for å løse dette problemet:
     /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Velg lokalisering
+  wwcConfigGUIMessagesOverridePickChatButton: Overstyr standard plugin-meldinger
+  wwcConfigGUIChatMessagesOverrideSettings: Overstyre standardmeldinger ({0})
+  wwcConfigGUIMessagesServerLang: Dette er pluginens standardspråk i config.yml.
 

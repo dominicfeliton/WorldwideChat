@@ -205,12 +205,9 @@ Messages:
     ileti yazın veya geri dönmek için 0 yazın. Orijinal iletide gördüğünüz yüzde işaretleriyle
     başlayan değişkenleri eklemeyi unutmayın.
   wwctGUISourceOrTargetTranslationAlreadyActive: Bu dil zaten aktif!
-  wwcConfigGUIMessagesOverrideChatButton: Varsayılan Eklenti İletilerini Geçersiz
-    Kıl
   wwcConfigGUIChatMessagesPossibleOverrides: Bir Mesaj Seçin
   wwcConfigGUIChatMessagesModifyOverride: Varolan Geçersiz Kılmayı Değiştir
   wwcConfigConversationOverrideDeletionSuccess: Özel ileti geçersiz kılma silindi.
-  wwcConfigGUIChatMessagesOverrideSettings: Varsayılan İletileri Geçersiz Kıl
   wwcConfigGUIChatMessagesDeadOverride: Bu geçersiz kılma geçersiz veya özgün ileti
     kaldırıldı. Bunu silmelisin.
   wwcConfigGUIMessagesAlreadyOverriden: Bu mesaj için zaten bir geçersiz kılma var!
@@ -558,4 +555,9 @@ Messages:
   wwcOldDatabaseStruct: 'Seçtiğiniz veritabanı, WorldwideChat"in önceki bir sürümünden
     verimsiz bir kuruluma sahiptir. Bu sorunu düzeltmek için aşağıdaki komutu çalıştırabilirsiniz:
     /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Yerelleştirmeyi Seçin
+  wwcConfigGUIMessagesOverridePickChatButton: Varsayılan eklenti mesajlarını geçersiz
+    kıl
+  wwcConfigGUIChatMessagesOverrideSettings: Varsayılan Mesajları Geçersiz Kıl ({0})
+  wwcConfigGUIMessagesServerLang: Bu, eklentinin config.yml içindeki varsayılan dilidir.
 

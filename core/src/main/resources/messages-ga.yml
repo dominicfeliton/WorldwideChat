@@ -164,7 +164,6 @@ Messages:
   wwcConfigGUIAmazonTranslateAccessKeyButton: Athraigh Amazon Eochair Rochtain
   wwcrFail: Theip ar WorldwideChat a athlódáil.
   wwcUpdaterFailedGeneric: Ní féidir nuashonruithe WorldwideChat a sheiceáil.
-  wwcConfigGUIChatMessagesOverrideSettings: Sáraigh Teachtaireachtaí Réamhshocraithe
   wwctGUIMainMenuGlobal: Roghchlár Aistriúcháin Domhanda
   wwcItemTranslateTitleDone: Teideal mír aistrithe go rathúil.
   wwcConfigGUIWatsonButton: Watson
@@ -223,7 +222,6 @@ Messages:
   wwctGUISourceTranslationSelected: Roghnaigh tú an teanga seo.
   wwcConfigGUIAmazonTranslateRegionButton: Athraigh Réigiún Amazon
   wwcConfigConversationLangInvalid: Cód teanga neamhbhailí!
-  wwcConfigGUIMessagesOverrideChatButton: Sháraigh Teachtaireachtaí Plugin Réamhshocrú
   wwcConfigConversationErrorLimitInput: Is é an teorainn earráide atá ann faoi láthair
     do gach aistritheoir {0}. Cineál rud ar bith níos mó ná 0 a shocrú le luach nua,
     nó cineál rud ar bith níos lú ná nó cothrom le 0 chun dul ar ais.
@@ -594,4 +592,10 @@ Messages:
   wwcOldDatabaseStruct: 'Tá socrú neamhéifeachtach ag do bhunachar sonraí roghnaithe
     ó leagan roimhe seo de WorldwideChat. Is féidir leat an t-ordú seo a leanas a
     reáchtáil chun an cheist seo a shocrú: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Roghnaigh Logánú
+  wwcConfigGUIMessagesOverridePickChatButton: Teachtaireachtaí Breiseán Réamhshocraithe
+  wwcConfigGUIChatMessagesOverrideSettings: Teachtaireachtaí Réamhshocraithe a chur
+    ar ais ({0})
+  wwcConfigGUIMessagesServerLang: Is é seo teanga réamhshocraithe an bhreiseáin i
+    config.yml.
 

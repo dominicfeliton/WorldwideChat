@@ -438,12 +438,17 @@ public class ConfigurationHandler {
 	
 	/* Messages config save method */
 	public void saveMessagesConfig(boolean async) {
+		saveMessagesConfig(mainConfig.getString("General.pluginLang"), async);
+	}
+
+	/* Specific message config save method */
+	public void saveMessagesConfig(String inLang, boolean async) {
 		if (async) {
 			refs.debugMsg("Saving messages config async!");
 			BukkitRunnable out = new BukkitRunnable() {
 				@Override
 				public void run() {
-					saveMessagesConfig(false);
+					saveMessagesConfig(inLang, false);
 				}
 			};
 			refs.runAsync(out);
@@ -452,7 +457,7 @@ public class ConfigurationHandler {
 		refs.debugMsg("Saving messages config sync!");
 		saveCustomConfig(messagesConfig, messagesFile, false);
 	}
-	
+
 	/* Custom config save method */
 	public synchronized void saveCustomConfig(YamlConfiguration inConfig, File dest, boolean async) {
 		if (async && main.isEnabled()) {

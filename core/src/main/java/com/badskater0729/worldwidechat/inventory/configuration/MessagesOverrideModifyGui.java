@@ -2,6 +2,7 @@ package com.badskater0729.worldwidechat.inventory.configuration;
 
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import org.bukkit.ChatColor;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -30,16 +31,21 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 	private WWCInventoryManager invManager = main.getInventoryManager();
 	
 	private String currentOverrideName = "";
+	private String inLang = "";
+
+	private Player inPlayer;
 	
-	public MessagesOverrideModifyGui(String currentOverrideName) {
+	public MessagesOverrideModifyGui(String currentOverrideName, String inLang, Player inPlayer) {
 		this.currentOverrideName = currentOverrideName;
+		this.inLang = inLang;
+		this.inPlayer = inPlayer;
 	}
 	
 	public SmartInventory getModifyCurrentOverride() {
 		return SmartInventory.builder().id("overrideModifyMenu")
-				.provider(new MessagesOverrideModifyGui(currentOverrideName)).size(3, 9)
+				.provider(this).size(3, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesModifyOverride", null))
+				.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesModifyOverride", inPlayer))
 				.build();
 	}
 	
@@ -56,23 +62,24 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 			ItemStack deleteOverrideButton = XMaterial.BARRIER.parseItem();
 			ItemMeta deleteOverrideMeta = deleteOverrideButton.getItemMeta();
 			deleteOverrideMeta.setDisplayName(ChatColor.RED
-					+ refs.getMsg("wwcConfigGUIChatMessagesOverrideDeleteButton", null));
+					+ refs.getMsg("wwcConfigGUIChatMessagesOverrideDeleteButton", inPlayer));
 			deleteOverrideButton.setItemMeta(deleteOverrideMeta);
 			contents.set(1, 6, ClickableItem.of(deleteOverrideButton, e -> {
 				BukkitRunnable saveMessages = new BukkitRunnable() {
 					@Override
 					public void run() {
-						main.getConfigManager().getMsgsConfig().set("Overrides." + currentOverrideName, null);
-						main.getConfigManager().saveMessagesConfig(false);
+						YamlConfiguration msgConfigCustom = main.getConfigManager().getCustomMessagesConfig(inLang);
+						msgConfigCustom.set("Overrides." + currentOverrideName, null);
+						main.getConfigManager().saveMessagesConfig(inLang, false);
 						final TextComponent successfulChange = Component.text()
-										.content(refs.getMsg("wwcConfigConversationOverrideDeletionSuccess", null))
+										.content(refs.getMsg("wwcConfigConversationOverrideDeletionSuccess", inPlayer))
 										.color(NamedTextColor.GREEN)
 								.build();
 						refs.sendMsg(player, successfulChange);
 						BukkitRunnable out = new BukkitRunnable() {
 							@Override
 							public void run() {
-								new MessagesOverrideCurrentListGui().overrideMessagesSettings.open(player);
+								new MessagesOverrideCurrentListGui(inLang, inPlayer).overrideMessagesSettings.open(player);
 							}
 						};
 						refs.runSync(out);
@@ -83,7 +90,7 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 			
 			
 			/* Left Option: Previous Page */
-			invManager.setCommonButton(1, 2, player, contents, "Previous", new Object[] {new MessagesOverrideCurrentListGui().overrideMessagesSettings});
+			invManager.setCommonButton(1, 2, player, contents, "Previous", new Object[] {new MessagesOverrideCurrentListGui(inLang, inPlayer).overrideMessagesSettings});
 		} catch (Exception e) {
 			invManager.inventoryError(player, e);
 		}

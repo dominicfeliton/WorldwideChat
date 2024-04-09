@@ -201,11 +201,9 @@ Messages:
     اكتب 0 للعودة. تذكر تضمين أي متغيرات تبدأ بعلامات النسبة المئوية التي تراها في
     الرسالة الأصلية.
   wwctGUISourceOrTargetTranslationAlreadyActive: هذه اللغة نشطة بالفعل!
-  wwcConfigGUIMessagesOverrideChatButton: تجاوز رسائل البرنامج المساعد الافتراضية
   wwcConfigGUIChatMessagesPossibleOverrides: اختر رسالة
   wwcConfigGUIChatMessagesModifyOverride: تعديل التجاوز الحالي
   wwcConfigConversationOverrideDeletionSuccess: تم حذف تجاوز الرسالة المخصصة.
-  wwcConfigGUIChatMessagesOverrideSettings: تجاوز الرسائل الافتراضية
   wwcConfigGUIChatMessagesDeadOverride: هذا التجاوز إما غير صالح، أو تمت إزالة الرسالة
     الأصلية. يجب عليك حذف هذا.
   wwcConfigGUIMessagesAlreadyOverriden: لديك بالفعل تجاوز لهذه الرسالة!
@@ -519,4 +517,8 @@ Messages:
     إصدارًا أحدث من Minecraft وظهرت لك هذا الخطأ، فيرجى الاتصال بالمطور.
   wwcOldDatabaseStruct: 'تحتوي قاعدة البيانات التي اخترتها على إعداد غير فعال من إصدار
     سابق من WorldwideChat. يمكنك تشغيل الأمر التالي لإصلاح هذه المشكلة: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: اختر التعريب
+  wwcConfigGUIMessagesOverridePickChatButton: تجاوز رسائل البرنامج المساعد الافتراضية
+  wwcConfigGUIChatMessagesOverrideSettings: تجاوز الرسائل الافتراضية ({0})
+  wwcConfigGUIMessagesServerLang: هذه هي اللغة الافتراضية للمكوِّن الإضافي في config.yml.
 

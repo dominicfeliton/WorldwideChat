@@ -31,11 +31,20 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
 	private WWCInventoryManager invManager = main.getInventoryManager();
-	
+
+	private String inLang;
+	private Player inPlayer;
+
+	public MessagesOverrideCurrentListGui(String inLang, Player inPlayer) {
+		this.inLang = inLang;
+		this.inPlayer = inPlayer;
+	}
+
 	public final SmartInventory overrideMessagesSettings = SmartInventory.builder().id("overrideMessagesMenu")
 			.provider(this).size(6, 9)
 			.manager(invManager)
-			.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettings", null))
+			// TODO: Fix null here
+			.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettings", inLang, inPlayer))
 	        .build();
 
 	// TODO: Rewrite for being able to switch between localizations??
@@ -51,7 +60,7 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 			Pagination pagination = contents.pagination();
 			HashMap<String, String> overridesFromConfig = new HashMap<>();
 			ClickableItem[] currentOverrides = new ClickableItem[0];
-			FileConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
+			FileConfiguration messagesConfig = main.getConfigManager().getCustomMessagesConfig(inLang);
 			
 			if (messagesConfig.getConfigurationSection("Overrides") != null) {
 				for (String eaKey : messagesConfig.getConfigurationSection("Overrides").getKeys(true)) {
@@ -69,13 +78,13 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 					
 					currentEntryMeta.setDisplayName(entry.getKey());
 					ArrayList<String> lore = new ArrayList<>();
-					lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideOriginalLabel", null) + ": " + (messagesConfig.getString("Messages." + entry.getKey()) != null ? messagesConfig.getString("Messages." + entry.getKey()) : refs.getMsg("wwcConfigGUIChatMessagesDeadOverride", null)));
-					lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideCustomLabel", null) + ": " + entry.getValue());
+					lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideOriginalLabel", inPlayer) + ": " + (messagesConfig.getString("Messages." + entry.getKey()) != null ? messagesConfig.getString("Messages." + entry.getKey()) : refs.getMsg("wwcConfigGUIChatMessagesDeadOverride", inPlayer)));
+					lore.add(refs.getMsg("wwcConfigGUIMessagesOverrideCustomLabel", inPlayer) + ": " + entry.getValue());
 					currentEntryMeta.setLore(lore);
 					currentEntry.setItemMeta(currentEntryMeta);
 					currentOverrides[currSpot] = ClickableItem.of(currentEntry, e -> {
 						// Open Specific Override GUI
-						new MessagesOverrideModifyGui(entry.getKey()).getModifyCurrentOverride().open(player);
+						new MessagesOverrideModifyGui(entry.getKey(), inLang, inPlayer).getModifyCurrentOverride().open(player);
 					});
 					currSpot++;
 				}
@@ -90,11 +99,11 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 			if (!pagination.isFirst()) {
 				invManager.setCommonButton(5, 2, player, contents, "Previous");
 			} else {
-				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv});
+				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[]{new MessagesOverridePickLangGui().overrideMessagesSettingsPicker});
 			}
 			
 			/* Bottom Middle Option: Add new override */
-			invManager.genericOpenSubmenuButton(5, 4, player, contents, "wwcConfigGUIChatMessagesOverrideNewButton", new MessagesOverridePossibleListGui().overrideNewMessageSettings);
+			invManager.genericOpenSubmenuButton(5, 4, player, contents, "wwcConfigGUIChatMessagesOverrideNewButton", new MessagesOverridePossibleListGui(inLang, inPlayer).overrideNewMessageSettings);
 			
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {

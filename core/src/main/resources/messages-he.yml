@@ -190,11 +190,9 @@ Messages:
   wwcConfigConversationOverrideTextChange: אנא הקלד הודעה חדשה עבור עקיפה זו, או הקלד
     0 כדי לחזור. זכור לכלול משתנים החל מסימני אחוז שתראה בהודעה המקורית.
   wwctGUISourceOrTargetTranslationAlreadyActive: שפה זו כבר פעילה!
-  wwcConfigGUIMessagesOverrideChatButton: עקיפה של הודעות תוסף ברירת מחדל
   wwcConfigGUIChatMessagesPossibleOverrides: בחר הודעה
   wwcConfigGUIChatMessagesModifyOverride: שינוי דריסה קיימת
   wwcConfigConversationOverrideDeletionSuccess: עקיפת הודעה מותאמת אישית נמחקה.
-  wwcConfigGUIChatMessagesOverrideSettings: עקיפה של הודעות ברירת מחדל
   wwcConfigGUIChatMessagesDeadOverride: עקיפה זו אינה חוקית, או שההודעה המקורית הוסרה.
     אתה צריך למחוק את זה.
   wwcConfigGUIMessagesAlreadyOverriden: כבר יש לך לעקוף את ההודעה הזאת!
@@ -503,4 +501,8 @@ Messages:
     יותר של Minecraft ואתה מקבל שגיאה זו, אנא צור קשר עם המפתח.
   wwcOldDatabaseStruct: 'למסד הנתונים שבחרת יש הגדרה לא יעילה מגירסה קודמת של WorldwideChat.
     באפשרותך להפעיל את הפקודה הבאה כדי לתקן בעיה זו: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: בחר לוקליזציה
+  wwcConfigGUIMessagesOverridePickChatButton: לעקוף הודעות ברירת מחדל של תוסף
+  wwcConfigGUIChatMessagesOverrideSettings: לעקוף הודעות ברירת מחדל ({0})
+  wwcConfigGUIMessagesServerLang: זוהי שפת ברירת המחדל של התוסף ב- config.yml.
 

@@ -222,12 +222,10 @@ Messages:
     o escriba 0 para volver atrás. Recuerda incluir cualquier variable que comience
     con signos de porcentaje que veas en el mensaje original.
   wwctGUISourceOrTargetTranslationAlreadyActive: ¡Este idioma ya está activo!
-  wwcConfigGUIMessagesOverrideChatButton: Anular mensajes de plugin predeterminados
   wwcConfigGUIChatMessagesPossibleOverrides: Elegir un Mensaje
   wwcConfigGUIChatMessagesModifyOverride: Modificar Anulación Existente
   wwcConfigConversationOverrideDeletionSuccess: Se ha eliminado la anulación de mensajes
     personalizados.
-  wwcConfigGUIChatMessagesOverrideSettings: Anular mensajes predeterminados
   wwcConfigGUIChatMessagesDeadOverride: Esta anulación no es válida o se ha eliminado
     el mensaje original. Deberían borrar esto.
   wwcConfigGUIMessagesAlreadyOverriden: ¡Ya tienes una anulación para este mensaje!
@@ -600,4 +598,9 @@ Messages:
   wwcOldDatabaseStruct: 'La base de datos elegida tiene una configuración ineficiente
     de una versión anterior de WorldwideChat. Puede ejecutar el siguiente comando
     para solucionar este problema: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Elegir localización
+  wwcConfigGUIMessagesOverridePickChatButton: Anular los mensajes predeterminados
+    del plugin
+  wwcConfigGUIChatMessagesOverrideSettings: Anular mensajes predeterminados ({0})
+  wwcConfigGUIMessagesServerLang: Este es el idioma predeterminado del plugin en config.yml.
 

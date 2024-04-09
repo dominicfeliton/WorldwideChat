@@ -218,12 +218,10 @@ Messages:
     eða sláðu inn 0 til að fara aftur. Mundu að innihalda allar breytur sem byrja
     á prósentuskiltum sem þú sérð í upphaflegu skeytinu.
   wwctGUISourceOrTargetTranslationAlreadyActive: Þetta tungumál er nú þegar virkt!
-  wwcConfigGUIMessagesOverrideChatButton: Hnekkja sjálfgefna tappi skilaboð
   wwcConfigGUIChatMessagesPossibleOverrides: Veldu skilaboð
   wwcConfigGUIChatMessagesModifyOverride: Breyta núverandi hnekkja
   wwcConfigConversationOverrideDeletionSuccess: Sérsniðin skilaboð hnekkja hefur verið
     eytt.
-  wwcConfigGUIChatMessagesOverrideSettings: Hnekkja sjálfgefin skilaboð
   wwcConfigGUIChatMessagesDeadOverride: Þessi hnekkja er annað hvort ógild eða upprunalega
     skeytið hefur verið fjarlægt. Þú ættir að eyða þessu.
   wwcConfigGUIMessagesAlreadyOverriden: Þú hefur nú þegar hnekkja fyrir þessi skilaboð!
@@ -567,4 +565,8 @@ Messages:
   wwcOldDatabaseStruct: 'Gagnagrunnurinn sem valinn er með óhagkvæma uppsetningu frá
     fyrri útgáfu af WorldwideChat. Þú getur keyrt eftirfarandi skipun til að laga
     þetta mál: /wwcd umbreyta'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Veldu staðsetningu
+  wwcConfigGUIMessagesOverridePickChatButton: Hnekktu sjálfgefnum viðbótarskilaboðum
+  wwcConfigGUIChatMessagesOverrideSettings: Hnekka sjálfgefnum skilaboðum ({0})
+  wwcConfigGUIMessagesServerLang: Þetta er sjálfgefið tungumál viðbótarinnar í config.yml.
 

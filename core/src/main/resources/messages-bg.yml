@@ -215,13 +215,10 @@ Messages:
     или въведете 0, за да се върнете. Не забравяйте да включите всички променливи,
     започващи с процентни знаци, които виждате в първоначалното съобщение.
   wwctGUISourceOrTargetTranslationAlreadyActive: Този език вече е активен!
-  wwcConfigGUIMessagesOverrideChatButton: Отмяна на съобщенията на приставките по
-    подразбиране
   wwcConfigGUIChatMessagesPossibleOverrides: Избор на съобщение
   wwcConfigGUIChatMessagesModifyOverride: Промяна на съществуващо отмяна
   wwcConfigConversationOverrideDeletionSuccess: Потребителско заменяне на съобщения
     е изтрито.
-  wwcConfigGUIChatMessagesOverrideSettings: Отмяна на съобщенията по подразбиране
   wwcConfigGUIChatMessagesDeadOverride: Това отменяне е или невалидно, или оригиналното
     съобщение е премахнато. Трябва да изтриеш това.
   wwcConfigGUIMessagesAlreadyOverriden: Вече имате отмяна на това съобщение!
@@ -575,4 +572,9 @@ Messages:
   wwcOldDatabaseStruct: 'Избраната от вас база данни има неефективна настройка от
     предишна версия на WorldwideChat. Можете да изпълните следната команда, за да
     отстраните този проблем: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Изберете локализация
+  wwcConfigGUIMessagesOverridePickChatButton: Отмяна на съобщенията по подразбиране
+    на плъгини
+  wwcConfigGUIChatMessagesOverrideSettings: Отмяна на съобщения по подразбиране ({0})
+  wwcConfigGUIMessagesServerLang: Това е езикът по подразбиране на приставката в config.yml.
 

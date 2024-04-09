@@ -216,12 +216,10 @@ Messages:
     lub wpisz 0, aby wrócić. Pamiętaj, aby uwzględnić wszelkie zmienne zaczynające
     się od znaków procentowych widocznych w oryginalnej wiadomości.
   wwctGUISourceOrTargetTranslationAlreadyActive: Ten język jest już aktywny!
-  wwcConfigGUIMessagesOverrideChatButton: Zastąp domyślne komunikaty wtyczek
   wwcConfigGUIChatMessagesPossibleOverrides: Wybierz wiadomość
   wwcConfigGUIChatMessagesModifyOverride: Modyfikuj istniejące nadpisanie
   wwcConfigConversationOverrideDeletionSuccess: Usunięto niestandardowe nadpisanie
     wiadomości.
-  wwcConfigGUIChatMessagesOverrideSettings: Zastąp domyślne komunikaty
   wwcConfigGUIChatMessagesDeadOverride: To nadpisanie jest nieprawidłowe lub oryginalna
     wiadomość została usunięta. Powinieneś to usunąć.
   wwcConfigGUIMessagesAlreadyOverriden: Masz już nadpisanie tej wiadomości!
@@ -563,4 +561,8 @@ Messages:
   wwcOldDatabaseStruct: 'Wybrana baza danych ma nieefektywną konfigurację z poprzedniej
     wersji WorldwideChat. Możesz uruchomić następujące polecenie, aby rozwiązać ten
     problem: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Wybierz lokalizację
+  wwcConfigGUIMessagesOverridePickChatButton: Zastąp domyślne wiadomości wtyczki
+  wwcConfigGUIChatMessagesOverrideSettings: Zastąp domyślne wiadomości ({0})
+  wwcConfigGUIMessagesServerLang: Jest to domyślny język wtyczki w config.yml.
 

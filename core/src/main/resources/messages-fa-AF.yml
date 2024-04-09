@@ -210,11 +210,9 @@ Messages:
     کنید، یا 0 را برای بازگشت تایپ کنید. به یاد داشته باشید که هر متغیر را با نشانه
     های درصد که در پیام اصلی مشاهده می کنید، وارد کنید.
   wwctGUISourceOrTargetTranslationAlreadyActive: این زبان در حال حاضر فعال است!
-  wwcConfigGUIMessagesOverrideChatButton: رونویسی پیام‌های افزایه پیش فرض
   wwcConfigGUIChatMessagesPossibleOverrides: انتخاب یک پیام
   wwcConfigGUIChatMessagesModifyOverride: تغییر لغو موجود
   wwcConfigConversationOverrideDeletionSuccess: لغو پیام سفارشی حذف شده است.
-  wwcConfigGUIChatMessagesOverrideSettings: رونویسی پیام های پیش فرض
   wwcConfigGUIChatMessagesDeadOverride: این لغو یا نامعتبر است، یا پیام اصلی حذف شده
     است. شما باید این را حذف کنید.
   wwcConfigGUIMessagesAlreadyOverriden: شما در حال حاضر یک لغو برای این پیام!
@@ -559,4 +557,8 @@ Messages:
   wwcOldDatabaseStruct: 'پایگاه داده انتخاب شده شما دارای تنظیمات ناکارآمد نسبت به
     نسخه قبلی WorldwideChat است. برای رفع این مشکل می توانید دستور زیر را اجرا کنید:
     /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: محلی سازی را انتخاب کنید
+  wwcConfigGUIMessagesOverridePickChatButton: پیام های پیش فرض پلاگین را عوض
+  wwcConfigGUIChatMessagesOverrideSettings: لغو کردن پیام های پیش فرض ({0})
+  wwcConfigGUIMessagesServerLang: این زبان پیش فرض پلاگین در config.yml است.
 

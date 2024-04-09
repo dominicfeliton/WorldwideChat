@@ -230,12 +230,10 @@ Messages:
     alle Variablen einzuschließen, die mit Prozentzeichen beginnen, die Sie in der
     ursprünglichen Nachricht sehen.
   wwctGUISourceOrTargetTranslationAlreadyActive: Diese Sprache ist bereits aktiv!
-  wwcConfigGUIMessagesOverrideChatButton: Überschreiben von Standard-Plugin-Nachrichten
   wwcConfigGUIChatMessagesPossibleOverrides: Wähle eine Nachricht
   wwcConfigGUIChatMessagesModifyOverride: Bestehende Überschreibung ändern
   wwcConfigConversationOverrideDeletionSuccess: Benutzerdefinierte Nachrichtenüberschreibung
     wurde gelöscht.
-  wwcConfigGUIChatMessagesOverrideSettings: Standardnachrichten außer Kraft setzen
   wwcConfigGUIChatMessagesDeadOverride: Diese Überschreibung ist entweder ungültig
     oder die ursprüngliche Nachricht wurde entfernt. Das solltest du löschen.
   wwcConfigGUIMessagesAlreadyOverriden: Sie haben bereits eine Überschreibung für
@@ -619,4 +617,8 @@ Messages:
   wwcOldDatabaseStruct: 'Die von Ihnen gewählte Datenbank hat ein ineffizientes Setup
     aus einer früheren Version von WorldwideChat. Sie können den folgenden Befehl
     ausführen, um dieses Problem zu beheben: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Wählen Sie Lokalisation
+  wwcConfigGUIMessagesOverridePickChatButton: Standard-Plugin-Nachrichten überschreiben
+  wwcConfigGUIChatMessagesOverrideSettings: Standardnachrichten überschreiben ({0})
+  wwcConfigGUIMessagesServerLang: Dies ist die Standardsprache des Plugins in config.yml.
 

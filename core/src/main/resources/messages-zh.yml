@@ -168,11 +168,9 @@ Messages:
   wwcConfigGUIChatMessagesOverrideDeleteButton: 删除覆盖
   wwcConfigConversationOverrideTextChange: 请为此覆盖输入新消息，或者输入 0 返回。记得包括任何以原始消息中看到的百分号开头的变量。
   wwctGUISourceOrTargetTranslationAlreadyActive: 这种语言已经活跃了！
-  wwcConfigGUIMessagesOverrideChatButton: 覆盖默认插件消息
   wwcConfigGUIChatMessagesPossibleOverrides: 选择消息
   wwcConfigGUIChatMessagesModifyOverride: 修改现有覆盖
   wwcConfigConversationOverrideDeletionSuccess: 自定义消息覆盖已被删除。
-  wwcConfigGUIChatMessagesOverrideSettings: 覆盖默认消息
   wwcConfigGUIChatMessagesDeadOverride: 此覆盖要么无效，或者原始邮件已被删除。你应该删除这个。
   wwcConfigGUIMessagesAlreadyOverriden: 你已经有这条消息的覆盖了！
   wwcConfigGUIChatMessagesOverrideNewButton: 添加新覆盖
@@ -428,4 +426,8 @@ Messages:
   wwctbNoMoreOldBooks: 您的服务器版本无法进行图书翻译。如果你使用的是最新版本的 Minecraft 并出现此错误，请联系开发者。
   wwcOldDatabaseStruct: 与之前版本的WorldwideChat相比，您选择的数据库的设置效率低下。你可以运行以下命令来修复这个问题：/wwcd
     转换
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: 选择本地化
+  wwcConfigGUIMessagesOverridePickChatButton: 覆盖默认插件消息
+  wwcConfigGUIChatMessagesOverrideSettings: 覆盖默认消息 ({0})
+  wwcConfigGUIMessagesServerLang: 这是 config.yml 中插件的默认语言。
 

@@ -215,11 +215,9 @@ Messages:
     dan il-override, jew ittajpja 0 biex tmur lura. Ftakar li tinkludi kwalunkwe varjabbli
     li jibdew b'sinjali perċentwali li tara fil-messaġġ oriġinali.
   wwctGUISourceOrTargetTranslationAlreadyActive: Din il-lingwa hija diġà attiva!
-  wwcConfigGUIMessagesOverrideChatButton: Messaġġi override Default plugin
   wwcConfigGUIChatMessagesPossibleOverrides: Agħżel Messaġġ
   wwcConfigGUIChatMessagesModifyOverride: Tibdel Override Eżistenti
   wwcConfigConversationOverrideDeletionSuccess: Messaġġ ta 'override Custom ġie mħassar.
-  wwcConfigGUIChatMessagesOverrideSettings: Messaġġi Override Default
   wwcConfigGUIChatMessagesDeadOverride: Dan il-qbiż huwa jew invalidu, jew inkella
     l-messaġġ oriġinali jkun tneħħa. Għandek tħassar dan.
   wwcConfigGUIMessagesAlreadyOverriden: Diġà għandek override għal dan il-messaġġ!
@@ -562,4 +560,8 @@ Messages:
   wwcOldDatabaseStruct: 'Id-database magħżula tiegħek għandha setup ineffiċjenti minn
     verżjoni preċedenti ta ''WorldwideChat. Tista ''tmexxi l-kmand li ġej biex tiffissa
     din il-kwistjoni: /wwcd jikkonvertu'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Agħżel Lokalizzazzjoni
+  wwcConfigGUIMessagesOverridePickChatButton: Imwaħħal Messaġġi tal-Plugin Default
+  wwcConfigGUIChatMessagesOverrideSettings: Override Messaġġi Default ({0})
+  wwcConfigGUIMessagesServerLang: Din hija l-lingwa default tal-plugin f'config.yml.
 

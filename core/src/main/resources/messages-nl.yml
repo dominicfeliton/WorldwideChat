@@ -217,12 +217,10 @@ Messages:
     of typ 0 om terug te gaan. Vergeet niet om variabelen op te nemen die beginnen
     met procentuele tekens die je in het oorspronkelijke bericht ziet.
   wwctGUISourceOrTargetTranslationAlreadyActive: Deze taal is al actief!
-  wwcConfigGUIMessagesOverrideChatButton: Standaard plug-in-berichten overschrijven
   wwcConfigGUIChatMessagesPossibleOverrides: Kies een bericht
   wwcConfigGUIChatMessagesModifyOverride: Bestaande override wijzigen
   wwcConfigConversationOverrideDeletionSuccess: Aangepaste berichtoverschrijving is
     verwijderd.
-  wwcConfigGUIChatMessagesOverrideSettings: Standaardberichten overschrijven
   wwcConfigGUIChatMessagesDeadOverride: Deze overschrijving is ongeldig of het oorspronkelijke
     bericht is verwijderd. Je zou dit moeten verwijderen.
   wwcConfigGUIMessagesAlreadyOverriden: Je hebt al een override voor dit bericht!
@@ -578,4 +576,8 @@ Messages:
   wwcOldDatabaseStruct: 'De door u gekozen database heeft een inefficiënte configuratie
     ten opzichte van een eerdere versie van WorldwideChat. Je kunt de volgende opdracht
     uitvoeren om dit probleem op te lossen: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Kies Lokalisatie
+  wwcConfigGUIMessagesOverridePickChatButton: Standaard plugin-berichten overschrijven
+  wwcConfigGUIChatMessagesOverrideSettings: Standaardberichten overschrijven ({0})
+  wwcConfigGUIMessagesServerLang: Dit is de standaardtaal van de plugin in config.yml.
 

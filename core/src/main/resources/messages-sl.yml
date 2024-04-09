@@ -217,12 +217,10 @@ Messages:
     ali vnesite 0, da se vrnete nazaj. Ne pozabite vključiti spremenljivk, ki se začnejo
     z znaki za odstotek, ki jih vidite v izvirnem sporočilu.
   wwctGUISourceOrTargetTranslationAlreadyActive: Ta jezik je že aktiven!
-  wwcConfigGUIMessagesOverrideChatButton: Preglasitev privzetih sporočil vtičnika
   wwcConfigGUIChatMessagesPossibleOverrides: Izberite sporočilo
   wwcConfigGUIChatMessagesModifyOverride: Spremeni obstoječo preglasitev
   wwcConfigConversationOverrideDeletionSuccess: Preglasitev sporočila po meri je bila
     izbrisana.
-  wwcConfigGUIChatMessagesOverrideSettings: Preglasi privzeta sporočila
   wwcConfigGUIChatMessagesDeadOverride: Ta preglasitev je neveljavna ali pa je bilo
     izvirno sporočilo odstranjeno. To morate izbrisati.
   wwcConfigGUIMessagesAlreadyOverriden: Za to sporočilo že imate preglasitev!
@@ -565,4 +563,8 @@ Messages:
   wwcOldDatabaseStruct: 'Vaša izbrana zbirka podatkov ima neučinkovito nastavitev
     iz prejšnje različice WorldwideChat. Če želite odpraviti to težavo, lahko zaženete
     naslednji ukaz: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Izberite Lokalizacijo
+  wwcConfigGUIMessagesOverridePickChatButton: Preglasitev privzetih sporočil vtičnikov
+  wwcConfigGUIChatMessagesOverrideSettings: Preglasitev privzetih sporočil ({0})
+  wwcConfigGUIMessagesServerLang: To je privzeti jezik vtičnika v config.yml.
 

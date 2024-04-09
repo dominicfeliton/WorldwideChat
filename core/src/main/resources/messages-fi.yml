@@ -210,11 +210,9 @@ Messages:
     tai palaa takaisin kirjoittamalla 0. Muista sisällyttää kaikki muuttujat, jotka
     alkavat alkuperäisessä viestissä näkyvillä prosenttimerkeillä.
   wwctGUISourceOrTargetTranslationAlreadyActive: Tämä kieli on jo aktiivinen!
-  wwcConfigGUIMessagesOverrideChatButton: Ohita oletusliitännäisen viestit
   wwcConfigGUIChatMessagesPossibleOverrides: Valitse viesti
   wwcConfigGUIChatMessagesModifyOverride: Nykyisen ohituksen muokkaaminen
   wwcConfigConversationOverrideDeletionSuccess: Mukautettu viestien ohitus on poistettu.
-  wwcConfigGUIChatMessagesOverrideSettings: Oletusviestien ohittaminen
   wwcConfigGUIChatMessagesDeadOverride: Tämä ohitus on joko virheellinen tai alkuperäinen
     viesti on poistettu. Sinun pitäisi poistaa tämä.
   wwcConfigGUIMessagesAlreadyOverriden: Sinulla on jo ohitus tälle viestille!
@@ -553,4 +551,8 @@ Messages:
   wwcOldDatabaseStruct: 'Valitsemallasi tietokannalla on tehoton asennus aiemmasta
     WorldwideChat-versiosta. Voit korjata ongelman suorittamalla seuraavan komennon:
     /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Valitse lokalisointi
+  wwcConfigGUIMessagesOverridePickChatButton: Ohittaa oletusliitännäisviestit
+  wwcConfigGUIChatMessagesOverrideSettings: Oletusviestien ohittaminen ({0})
+  wwcConfigGUIMessagesServerLang: 'Tämä on laajennuksen oletuskieli config.yml: ssä.'
 

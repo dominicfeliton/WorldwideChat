@@ -214,11 +214,9 @@ Messages:
     ignoreer, of tik 0 om terug te gaan. Onthou om enige veranderlikes in te sluit
     wat begin met persentasietekens wat jy in die oorspronklike boodskap sien.
   wwctGUISourceOrTargetTranslationAlreadyActive: Hierdie taal is reeds aktief!
-  wwcConfigGUIMessagesOverrideChatButton: Oorskryf Verstek Plugin Boodskappe
   wwcConfigGUIChatMessagesPossibleOverrides: Kies 'n boodskap
   wwcConfigGUIChatMessagesModifyOverride: Verander bestaande Ignoreer
   wwcConfigConversationOverrideDeletionSuccess: Pasgemaakte boodskap ignoreer is geskrap.
-  wwcConfigGUIChatMessagesOverrideSettings: Oorskryf Verstek Boodskappe
   wwcConfigGUIChatMessagesDeadOverride: Hierdie ignoreer is óf ongeldig, of die oorspronklike
     boodskap is verwyder. Jy moet hierdie uitvee.
   wwcConfigGUIMessagesAlreadyOverriden: Jy het reeds 'n ignoreer vir hierdie boodskap!
@@ -562,4 +560,8 @@ Messages:
   wwcOldDatabaseStruct: 'U gekose databasis het ''n ondoeltreffende opstelling uit
     ''n vorige weergawe van WorldwideChat. U kan die volgende opdrag uitvoer om hierdie
     probleem op te los: /wwcd convert'
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Kies lokalisering
+  wwcConfigGUIMessagesOverridePickChatButton: Oorskakel standaard inpropboodskappe
+  wwcConfigGUIChatMessagesOverrideSettings: Oorskakel standaardboodskappe ({0})
+  wwcConfigGUIMessagesServerLang: Dit is die standaardtaal van die plugin in config.yml.
 
