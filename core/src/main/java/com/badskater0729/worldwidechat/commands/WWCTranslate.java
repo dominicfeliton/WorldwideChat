@@ -50,16 +50,16 @@ public class WWCTranslate extends BasicCommand {
 
 		/* GUI Checks */
 		if (args.length == 0 && isGlobal && !isConsoleSender) {
-			new WWCTranslateGuiMainMenu("GLOBAL-TRANSLATE-ENABLED").getTranslateMainMenu().open((Player) sender);
+			new WWCTranslateGuiMainMenu("GLOBAL-TRANSLATE-ENABLED", (Player)sender).getTranslateMainMenu().open((Player) sender);
 			return true;
 		} else if (!isConsoleSender) {
 			if ((args.length == 0 && !isGlobal) || (args.length == 1 && !isGlobal && args[0].equalsIgnoreCase(sender.getName()))) { /* User wants to see their own translation session */
-				new WWCTranslateGuiMainMenu(((Player)sender).getUniqueId().toString()).getTranslateMainMenu().open((Player) sender);
+				new WWCTranslateGuiMainMenu(((Player)sender).getUniqueId().toString(), (Player)sender).getTranslateMainMenu().open((Player) sender);
 				return true;
 			} else if (args.length == 1 && !isGlobal
 					&& main.getServer().getPlayerExact(args[0]) != null) {
 				if (sender.hasPermission("worldwidechat.wwct.otherplayers")) {
-					new WWCTranslateGuiMainMenu(main.getServer().getPlayerExact(args[0]).getUniqueId().toString())
+					new WWCTranslateGuiMainMenu(main.getServer().getPlayerExact(args[0]).getUniqueId().toString(), (Player)sender)
 							.getTranslateMainMenu().open((Player) sender);
 					return true;
 				} else {

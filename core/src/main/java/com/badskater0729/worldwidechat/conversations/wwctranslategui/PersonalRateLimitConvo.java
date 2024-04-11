@@ -49,7 +49,7 @@ public class PersonalRateLimitConvo extends NumericPrompt {
 					null, new String[] {Bukkit.getPlayer(UUID.fromString(currTranslator.getUUID())).getName()});
 			rateCommand.processCommand();
 		} // Go back
-		new WWCTranslateGuiMainMenu(currTranslator.getUUID()).getTranslateMainMenu().open((Player) context.getForWhom());
+		new WWCTranslateGuiMainMenu(currTranslator.getUUID(), (Player)context.getForWhom()).getTranslateMainMenu().open((Player) context.getForWhom());
 		return END_OF_CONVERSATION;
 	}
 

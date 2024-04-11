@@ -35,10 +35,13 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 
 	private String selectedSourceLanguage = "";
 	private String targetPlayerUUID = "";
+
+	private Player inPlayer;
 	
-	public WWCTranslateGuiTargetLanguage(String selectedSourceLanguage, String targetPlayerUUID) {
+	public WWCTranslateGuiTargetLanguage(String selectedSourceLanguage, String targetPlayerUUID, Player inPlayer) {
 		this.selectedSourceLanguage = selectedSourceLanguage;
 		this.targetPlayerUUID = targetPlayerUUID;
+		this.inPlayer = inPlayer;
 	}
 
 
@@ -46,9 +49,9 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 	// TODO: Also fix getMsg calls to respect user's localization
 	public SmartInventory getTargetLanguageInventory() {
 		return SmartInventory.builder().id("translateTargetLanguage")
-				.provider(new WWCTranslateGuiTargetLanguage(selectedSourceLanguage, targetPlayerUUID)).size(6, 9)
+				.provider(this).size(6, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + refs.getMsg("wwctGUINewTranslationTarget", null))
+				.title(ChatColor.BLUE + refs.getMsg("wwctGUINewTranslationTarget", inPlayer))
 				.build();
 	}
 
@@ -82,7 +85,7 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 				/* Add Glow Effect */
 				if (userLang.getLangCode().equals(currLang.getLangCode()) || userLang.getLangName().equals(currLang.getLangName())) {
 					invManager.addGlowEffect(itemForLangMeta);
-					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive", null));
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive", inPlayer));
 				}
 				itemForLangMeta.setDisplayName(currLang.getLangName());
 				if (!currLang.getNativeLangName().equals("")) {
@@ -115,7 +118,7 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 			if (!pagination.isFirst()) {
 				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {getTargetLanguageInventory()});
 			} else {
-				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {new WWCTranslateGuiSourceLanguage(selectedSourceLanguage, targetPlayerUUID).getSourceLanguageInventory()});
+				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {new WWCTranslateGuiSourceLanguage(selectedSourceLanguage, targetPlayerUUID, inPlayer).getSourceLanguageInventory()});
 			}
 
 			/* Bottom Right Option: Next Page */

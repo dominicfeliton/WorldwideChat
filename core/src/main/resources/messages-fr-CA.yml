@@ -461,8 +461,8 @@ Messages:
   wwcConfigConversationIgnoreErrorsInput: 'La liste actuelle des phrases dans les
     erreurs du traducteur à ignorer est: {0}. Tapez les arguments séparés par une
     virgule (clé=valeur, clé2=valeur2), ou tapez clear pour effacer les arguments
-    actuels, ou tapez 0 pour revenir en arrière. De plus, si vous tapez « * », le
-    plugiciel ne vérifiera pas les erreurs du traducteur.'
+    actuels, ou tapez 0 pour revenir en arrière. De plus, si vous tapez «*», le plugiciel
+    ne vérifiera pas les erreurs du traducteur.'
   wwcConfigConversationIgnoreErrorsCleared: Les erreurs du traducteur pour ignorer
     les phrases ont été effacées avec succès.
   wwcSupportedServer: Initialisation de WorldwideChat pour {0}...
@@ -585,9 +585,9 @@ Messages:
   wwcConfigConversationPrefixInput: Le préfixe actuel est {0}. Veuillez en taper un
     nouveau, ou tapez 0 pour revenir en arrière.
   wwcConfigConversationLangInput: 'Le langage actuel du plugin est {0}. Veuillez saisir
-    un code de langue valide, ou tapez 0 pour annuler. Codes de langue valides : {1}'
+    un code de langue valide, ou tapez 0 pour annuler. Codes de langue valides: {1}'
   wwcdCacheSize: La taille du cache est actuellement {0}, avec une limite de {1}.
-  wwcdCacheTerm: '{0}. Traduction en cache : InputLang= {1}, OutputLang= {2}, PhraseInputPhrase=
+  wwcdCacheTerm: '{0}. Traduction en cache: InputLang= {1}, OutputLang= {2}, PhraseInputPhrase=
     {3} | Phrase-sortie = {4}'
   wwctLangToLangStart: Démarrage d'une nouvelle session de traduction de {0} à {1}.
   wwctAutoTranslateStartOtherPlayer: Démarrage d'une nouvelle session de traduction
@@ -602,7 +602,7 @@ Messages:
     cette erreur, veuillez contacter le développeur.
   wwcOldDatabaseStruct: 'La base de données que vous avez choisie a une configuration
     inefficace par rapport à une version précédente de WorldwideChat. Vous pouvez
-    exécuter la commande suivante pour résoudre ce problème : /wwcd convert/'
+    exécuter la commande suivante pour résoudre ce problème: /wwcd convert/'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Choisissez la localisation
   wwcConfigGUIMessagesOverridePickChatButton: Remplacer les messages de plug-in par
     défaut

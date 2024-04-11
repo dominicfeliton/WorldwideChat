@@ -104,7 +104,7 @@ public class WWCStats extends BasicCommand {
 						BukkitRunnable out = new BukkitRunnable() {
 							@Override
 							public void run() {
-								new WWCStatsGuiMainMenu(targetUUID).getStatsMainMenu().open((Player)sender);
+								new WWCStatsGuiMainMenu(targetUUID, (Player)sender).getStatsMainMenu().open((Player)sender);
 							}
 						};
 						refs.runSync(out);

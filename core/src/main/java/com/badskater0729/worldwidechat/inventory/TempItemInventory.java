@@ -20,15 +20,18 @@ public class TempItemInventory implements InventoryProvider {
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
+	private Player inPLayer;
+
 	// TODO: Rewrite for being able to switch between localizations??
 	// TODO: Also fix getMsg calls to respect user's localization
-	public TempItemInventory(ItemStack displayedItem) {
+	public TempItemInventory(ItemStack displayedItem, Player inPlayer) {
 		this.displayedItem = displayedItem;
+		this.inPLayer = inPlayer;
 	}
 
 	public SmartInventory getTempItemInventory() {
-		return SmartInventory.builder().id("tempItemMenu").provider(new TempItemInventory(displayedItem)).size(5, 9)
-				.manager(WorldwideChat.instance.getInventoryManager()).title(ChatColor.DARK_BLUE + refs.getMsg("wwcGUITempItem", null))
+		return SmartInventory.builder().id("tempItemMenu").provider(this).size(5, 9)
+				.manager(WorldwideChat.instance.getInventoryManager()).title(ChatColor.DARK_BLUE + refs.getMsg("wwcGUITempItem", inPLayer))
 				.build();
 	}
 

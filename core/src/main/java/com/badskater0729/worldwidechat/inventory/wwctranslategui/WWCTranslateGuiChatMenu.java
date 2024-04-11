@@ -32,18 +32,20 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
 
 	private String targetPlayerUUID = "";
 	private String targetPlayerName = "";
+	private Player inPlayer;
 
 	// TODO: Rewrite for being able to switch between localizations??
 	// TODO: Also fix getMsg calls to respect user's localization
-	public WWCTranslateGuiChatMenu(String targetPlayerUUID) {
+	public WWCTranslateGuiChatMenu(String targetPlayerUUID, Player inPlayer) {
+		this.inPlayer = inPlayer;
 		this.targetPlayerUUID = targetPlayerUUID;
 		this.targetPlayerName = ChatColor.BLUE + refs.getMsg("wwctGUIChatMenu", main.getServer()
-				.getPlayer(UUID.fromString(targetPlayerUUID)).getName(), null);
+				.getPlayer(UUID.fromString(targetPlayerUUID)).getName(), inPlayer);
 	}
 
 	/* Get translation info */
 	public SmartInventory getTranslateChatMenu() {
-		return SmartInventory.builder().id("translateChatMenu").provider(new WWCTranslateGuiChatMenu(targetPlayerUUID))
+		return SmartInventory.builder().id("translateChatMenu").provider(this)
 				.size(4, 9).manager(main.getInventoryManager()).title(targetPlayerName).build();
 	}
 
@@ -60,16 +62,17 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
 			}
 			
 			/* Outgoing Chat Button */
-			if ((player.getUniqueId().toString().equals(targetPlayerUUID) && player.hasPermission("worldwidechat.wwctco")) || (!player.getUniqueId().toString().equals(targetPlayerUUID)) && player.hasPermission("worldwidechat.wwctco.otherplayers")) {
+			if ((player.getUniqueId().toString().equals(targetPlayerUUID) && player.hasPermission("worldwidechat.wwctco"))
+					|| (!player.getUniqueId().toString().equals(targetPlayerUUID)) && player.hasPermission("worldwidechat.wwctco.otherplayers")) {
 				ItemStack outgoingChatButton = XMaterial.CHEST_MINECART.parseItem();
 				ItemMeta outgoingChatMeta = outgoingChatButton.getItemMeta();
 				if (targetTranslator.getTranslatingChatOutgoing()) {
 					invManager.addGlowEffect(outgoingChatMeta);
 					outgoingChatMeta.setDisplayName(ChatColor.GREEN
-							+ refs.getMsg("wwctGUIChatOutgoingButton", null));
+							+ refs.getMsg("wwctGUIChatOutgoingButton", inPlayer));
 				} else {
 					outgoingChatMeta.setDisplayName(ChatColor.YELLOW
-							+ refs.getMsg("wwctGUIChatOutgoingButton", null));
+							+ refs.getMsg("wwctGUIChatOutgoingButton", inPlayer));
 				}
 				outgoingChatButton.setItemMeta(outgoingChatMeta);
 				contents.set(1, 3, ClickableItem.of(outgoingChatButton, e -> {
@@ -81,16 +84,17 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
 			}
 			
 			/* Incoming Chat Button */
-			if ((player.getUniqueId().toString().equals(targetPlayerUUID) && player.hasPermission("worldwidechat.wwctci")) || (!player.getUniqueId().toString().equals(targetPlayerUUID)) && player.hasPermission("worldwidechat.wwctci.otherplayers")) {
+			if ((player.getUniqueId().toString().equals(targetPlayerUUID) && player.hasPermission("worldwidechat.wwctci"))
+					|| (!player.getUniqueId().toString().equals(targetPlayerUUID)) && player.hasPermission("worldwidechat.wwctci.otherplayers")) {
             	ItemStack incomingChatButton = XMaterial.ANVIL.parseItem();
     			ItemMeta incomingChatMeta = incomingChatButton.getItemMeta();
     			if (targetTranslator.getTranslatingChatIncoming()) {
     				invManager.addGlowEffect(incomingChatMeta);
     				incomingChatMeta.setDisplayName(ChatColor.GREEN
-    						+ refs.getMsg("wwctGUIChatIncomingButton", null));
+    						+ refs.getMsg("wwctGUIChatIncomingButton", inPlayer));
     			} else {
     				incomingChatMeta.setDisplayName(ChatColor.YELLOW
-    						+ refs.getMsg("wwctGUIChatIncomingButton", null));
+    						+ refs.getMsg("wwctGUIChatIncomingButton", inPlayer));
     			}
     			incomingChatButton.setItemMeta(incomingChatMeta);
     			contents.set(1, 5, ClickableItem.of(incomingChatButton, e -> {
@@ -102,7 +106,7 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
 			}
 			
 			/* Bottom Left Option: Previous Page */
-			invManager.setCommonButton(2, 4, player, contents, "Previous", new Object[] {new WWCTranslateGuiMainMenu(targetPlayerUUID).getTranslateMainMenu()});
+			invManager.setCommonButton(2, 4, player, contents, "Previous", new Object[] {new WWCTranslateGuiMainMenu(targetPlayerUUID, inPlayer).getTranslateMainMenu()});
 		} catch (Exception e) {
 			invManager.inventoryError(player, e);
 		}

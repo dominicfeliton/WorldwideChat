@@ -294,7 +294,7 @@ public class TranslateInGameListener implements Listener {
 							BukkitRunnable open = new BukkitRunnable() {
 								@Override
 								public void run() {
-									new TempItemInventory(translatedItem).getTempItemInventory().open(event.getPlayer());
+									new TempItemInventory(translatedItem, event.getPlayer()).getTempItemInventory().open(event.getPlayer());
 								}
 							};
 							refs.runSync(open);

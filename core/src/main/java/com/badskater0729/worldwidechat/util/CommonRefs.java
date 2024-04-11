@@ -383,12 +383,13 @@ public class CommonRefs {
 	public String getMsg(String messageName, String[] replacements, Player currPlayer) {
 		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
 		if (currPlayer != null && main.isPlayerRecord(currPlayer) && !main.getPlayerRecord(currPlayer, false).getLocalizationCode().isEmpty()) {
-			debugMsg("Using user's lang getMsg(): " + main.getPlayerRecord(currPlayer, false).getLocalizationCode());
+			debugMsg("Using user's lang getMsg() for " + messageName + ": " + main.getPlayerRecord(currPlayer, false).getLocalizationCode());
 			messagesConfig = main.getConfigManager().getCustomMessagesConfig(main.getPlayerRecord(currPlayer, false).getLocalizationCode());
 		}
 
 		/* Get message from messages.yml */
 		String convertedOriginalMessage = "";
+		// TODO: Replace -XX.yml with user's currently naguage
 		if (messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
 			convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
 		} else {
