@@ -28,7 +28,8 @@ public class PaperChatListener implements Listener {
     private WorldwideChat main = WorldwideChat.instance;
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-    @EventHandler(priority = EventPriority.HIGHEST)
+    // TODO: Make sure LOWEST is okay
+    @EventHandler(priority = EventPriority.LOWEST)
     public void onPlayerChat(AsyncChatEvent event) {
         try {
             if (!event.isAsynchronous()) {

@@ -27,7 +27,9 @@ public class ChatListener implements Listener {
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 	
-	@EventHandler(priority = EventPriority.HIGHEST)
+	//@EventHandler(priority = EventPriority.HIGHEST)
+	// TODO: Make sure LOWEST is okay
+	@EventHandler(priority = EventPriority.LOWEST)
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
 
 		try {
@@ -42,7 +44,9 @@ public class ChatListener implements Listener {
 			String currOutLang = currTranslator.getOutLangCode();
 			if ((main.isActiveTranslator(event.getPlayer()) && currTranslator.getTranslatingChatOutgoing())
 					|| (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getTranslatingChatOutgoing())) {
-				event.setMessage(refs.translateText(event.getMessage(), event.getPlayer()));
+				String eventText = refs.translateText(event.getMessage(), event.getPlayer());
+				event.setMessage(eventText);
+				refs.debugMsg("Setting message to \"" + eventText + "\"...");
 			}
 			
 			// New WWC functionality/Translate Incoming Messages
