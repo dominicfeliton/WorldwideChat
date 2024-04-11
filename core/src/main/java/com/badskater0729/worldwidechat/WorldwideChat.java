@@ -48,10 +48,11 @@ import com.badskater0729.worldwidechat.util.CommonRefs;
 
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedMCVersions;
+import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "04092024-1"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "04112024-1"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -173,6 +174,7 @@ public class WorldwideChat extends JavaPlugin {
 		instance = null;
 		supportedMCVersions = null;
 		supportedPluginLangCodes = null;
+		pluginLangConfigs = null;
 		serverFactory = null;
 
 		// All done.
@@ -469,7 +471,7 @@ public class WorldwideChat extends JavaPlugin {
 
 		// Init and load configs
 		configurationManager.initMainConfig();
-		configurationManager.initMessagesConfig();
+		configurationManager.initMessagesConfigs();
 
 		configurationManager.loadMainSettings();
 		configurationManager.loadStorageSettings();

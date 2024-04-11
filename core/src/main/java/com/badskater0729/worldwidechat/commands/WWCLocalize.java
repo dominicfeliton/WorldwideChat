@@ -19,7 +19,6 @@ public class WWCLocalize extends BasicCommand {
     private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
     //private YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
-    private ConfigurationHandler configHandler = main.getConfigManager();
 
     public WWCLocalize(CommandSender sender, Command command, String label, String[] args) {
         super(sender, command, label, args);
@@ -42,13 +41,19 @@ public class WWCLocalize extends BasicCommand {
 
             if (!main.isPlayerRecord((Player)sender)) {
                 // refs.send NOT A PLAYER RECORD
-                refs.debugMsg("Not player record");
-                return false;
+                refs.debugMsg("Not player record, creating...");
             }
 
-            PlayerRecord currRecord = main.getPlayerRecord((Player)sender, false);
+            PlayerRecord currRecord = main.getPlayerRecord((Player)sender, true);
+            if (args[0].equalsIgnoreCase("stop") && !currRecord.getLocalizationCode().isEmpty()) {
+                refs.debugMsg("Resetting lang code...");
+                //refs.send resetting lang code
+                currRecord.setLocalizationCode("");
+                return true;
+            }
+
             if (checkIfValidLang(args[0])) {
-                configHandler.generateMessagesConfig(args[0]);
+                //configHandler.generateMessagesConfig(args[0]);
                 currRecord.setLocalizationCode(args[0]);
                 //refs.send DONE
                 refs.debugMsg("Finished...");

@@ -51,6 +51,7 @@ public class LoadUserData implements Runnable {
 	@Override
 	public void run() {
 		//TODO: Sanitize for bad inputs/accommodate for obj upgrades; if data is bad, we definitely shouldn't add it
+		// TODO: Common method for SQL/Postgres
 		/* Load all saved user data */
 		refs.debugMsg("Starting LoadUserData!!!");
 		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
@@ -79,6 +80,10 @@ public class LoadUserData implements Runnable {
 								rs.getInt("attemptedTranslations"),
 								rs.getInt("successfulTranslations")
 						);
+						recordToAdd.setLocalizationCode("");
+						if (rs.getString("localizationCode") != null && !rs.getString("localizationCode").isEmpty()) {
+							recordToAdd.setLocalizationCode(rs.getString("localizationCode"));
+						}
 						recordToAdd.setHasBeenSaved(true);
 						main.addPlayerRecord(recordToAdd);
 					}
@@ -108,6 +113,10 @@ public class LoadUserData implements Runnable {
 						currDoc.getInteger("attemptedTranslations"),
 						currDoc.getInteger("successfulTranslations")
 				);
+				recordToAdd.setLocalizationCode("");
+				if (currDoc.getString("localizationCode") != null && !currDoc.getString("localizationCode").isEmpty()) {
+					recordToAdd.setLocalizationCode(currDoc.getString("localizationCode"));
+				}
 				recordToAdd.setHasBeenSaved(true);
 				main.addPlayerRecord(recordToAdd);
 			}
@@ -129,6 +138,10 @@ public class LoadUserData implements Runnable {
 								rs.getInt("attemptedTranslations"),
 								rs.getInt("successfulTranslations")
 						);
+						recordToAdd.setLocalizationCode("");
+						if (rs.getString("localizationCode") != null && !rs.getString("localizationCode").isEmpty()) {
+							recordToAdd.setLocalizationCode(rs.getString("localizationCode"));
+						}
 						recordToAdd.setHasBeenSaved(true);
 						main.addPlayerRecord(recordToAdd);
 					}
@@ -154,6 +167,10 @@ public class LoadUserData implements Runnable {
 						eaFile.getName().substring(0, eaFile.getName().indexOf(".")),
 						currFileConfig.getInt("attemptedTranslations"),
 						currFileConfig.getInt("successfulTranslations"));
+				currRecord.setLocalizationCode("");
+				if (currFileConfig.getString("localizationCode") != null && !currFileConfig.getString("localizationCode").isEmpty()) {
+					currRecord.setLocalizationCode(currFileConfig.getString("localizationCode"));
+				}
 				currRecord.setHasBeenSaved(true);
 				main.addPlayerRecord(currRecord);
 			}

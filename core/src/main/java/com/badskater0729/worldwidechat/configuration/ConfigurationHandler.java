@@ -37,19 +37,19 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.ReplaceOptions;
 
+import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
 import org.apache.commons.lang3.tuple.Pair;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
+import org.yaml.snakeyaml.Yaml;
 
 public class ConfigurationHandler {
 
 	private WorldwideChat main = WorldwideChat.instance;
 	private CommonRefs refs = main.getServerFactory().getCommonRefs();
 
-	private File messagesFile;
 	private File configFile;
-	private YamlConfiguration messagesConfig;
 	private YamlConfiguration mainConfig;
 
 	/* Init Main Config Method */
@@ -86,62 +86,15 @@ public class ConfigurationHandler {
 	}
 
 	/* Init Messages Method */
-	public void initMessagesConfig() {
-		// TODO: Upgrade other existing messages files so that user messages are not out-of-date
-
-		/* Init config file */
-		messagesFile = new File(main.getDataFolder(), "messages-" + mainConfig.getString("General.pluginLang") + ".yml");
-
-		/* Save default messages file if it does not exist */
-		if (!messagesFile.exists()) {
-			main.saveResource("messages-" + mainConfig.getString("General.pluginLang") + ".yml", true);
-
-			YamlConfiguration tempConfig = YamlConfiguration.loadConfiguration(messagesFile);
-
-			tempConfig.set("DoNotTouchThis.Version", WorldwideChat.messagesConfigVersion);
-
-			saveCustomConfig(tempConfig, messagesFile, false);
-		}
-
-		/* Load config */
-		messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
-
-		/* Check if version value is out of date...*/
-		if (messagesConfig.getString("DoNotTouchThis.Version") == null || !messagesConfig.getString("DoNotTouchThis.Version").equals(WorldwideChat.messagesConfigVersion)) {
-			main.getLogger().warning("Upgrading out-of-date messages config!");
-			HashMap<String, String> oldOverrides = new HashMap<>();
-
-			/* Copy overrides section */
-			if (messagesConfig.getConfigurationSection("Overrides") != null) {
-				for (String eaKey : messagesConfig.getConfigurationSection("Overrides").getKeys(true)) {
-					oldOverrides.put(eaKey, messagesConfig.getString("Overrides." + eaKey));
-				}
-			}
-
-			/* Delete old config */
-			messagesFile.delete();
-
-			/* Copy newest config */
-			main.saveResource("messages-" + mainConfig.getString("General.pluginLang") + ".yml", true);
-			messagesConfig = YamlConfiguration.loadConfiguration(messagesFile);
-			messagesConfig.set("DoNotTouchThis.Version", WorldwideChat.messagesConfigVersion);
-
-			/* Paste overrides section */
-			if (!oldOverrides.isEmpty()) {
-				for (Map.Entry<String, String> entry : oldOverrides.entrySet()) {
-					messagesConfig.set("Overrides." + entry.getKey(), entry.getValue());
-				}
-			}
-
-			/* Save messages config */
-			saveMessagesConfig(false);
-
-			/* Success :) */
-			main.getLogger().warning("Upgrade successful.");
+	public void initMessagesConfigs() {
+		// Init ALL message configs
+		for (String eaStr : supportedPluginLangCodes) {
+			refs.debugMsg("Checking " + eaStr + "...");
+			pluginLangConfigs.put(eaStr, generateMessagesConfig(eaStr));
 		}
 	}
 
-	public void generateMessagesConfig(String inLocalLang) {
+	public YamlConfiguration generateMessagesConfig(String inLocalLang) {
 		/* Init config file */
 		File msgFile = new File(main.getDataFolder(), "messages-" + inLocalLang + ".yml");
 
@@ -193,11 +146,12 @@ public class ConfigurationHandler {
 			/* Success :) */
 			main.getLogger().warning("Upgrade successful.");
 		}
+
+		return msgConfig;
 	}
 
 	public YamlConfiguration getCustomMessagesConfig(String inLocalLang) {
-		File msgFile = new File(main.getDataFolder(), "messages-" + inLocalLang + ".yml");
-		return YamlConfiguration.loadConfiguration(msgFile);
+		return pluginLangConfigs.get(inLocalLang);
 	}
 
 	/* Load Main Settings Method */
@@ -455,7 +409,7 @@ public class ConfigurationHandler {
 			return;
 		}
 		refs.debugMsg("Saving messages config sync!");
-		saveCustomConfig(messagesConfig, messagesFile, false);
+		saveCustomConfig(pluginLangConfigs.get(inLang), new File(main.getDataFolder(), "messages-" + inLang + ".yml"), false);
 	}
 
 	/* Custom config save method */
@@ -592,6 +546,7 @@ public class ConfigurationHandler {
                     		newPlayerRecord.setInt(i++, val.getAttemptedTranslations());
                     		newPlayerRecord.setInt(i++, val.getSuccessfulTranslations());
                     		newPlayerRecord.setString(i++, val.getLastTranslationTime());
+							newPlayerRecord.setString(i++, val.getLocalizationCode());
                     		newPlayerRecord.executeUpdate();
                     	} catch (SQLException e) {
                     		e.printStackTrace();
@@ -697,6 +652,7 @@ public class ConfigurationHandler {
 							newPlayerRecord.setInt(i++, val.getAttemptedTranslations());
 							newPlayerRecord.setInt(i++, val.getSuccessfulTranslations());
 							newPlayerRecord.setString(i++, val.getLastTranslationTime());
+							newPlayerRecord.setString(i++, val.getLocalizationCode());
 							newPlayerRecord.executeUpdate();
 						} catch (SQLException e) {
 							e.printStackTrace();
@@ -766,7 +722,8 @@ public class ConfigurationHandler {
 								.append("playerUUID", val.getUUID())
 								.append("attemptedTranslations", val.getAttemptedTranslations())
 								.append("successfulTranslations", val.getSuccessfulTranslations())
-								.append("lastTranslationTime", val.getLastTranslationTime());
+								.append("lastTranslationTime", val.getLastTranslationTime())
+								.append("localizationCode", val.getLocalizationCode());
 
 						ReplaceOptions opts = new ReplaceOptions().upsert(true);
 						Bson filter = Filters.eq("playerUUID", val.getUUID());
@@ -866,12 +823,6 @@ public class ConfigurationHandler {
 		File userStatsFile;
 		YamlConfiguration userStatsConfig;
 
-		/*
-		if (userStatsDir.list() == null) {
-			refs.debugMsg("Creating dir at " + userStatsDir.toString());
-			userStatsDir.mkdir();
-		}
-		*/
 		userStatsFile = new File(userStatsDir + File.separator,
 				inRecord.getUUID() + ".yml");
 
@@ -888,6 +839,9 @@ public class ConfigurationHandler {
 		userStatsConfig.createSection("successfulTranslations");
 		userStatsConfig.set("successfulTranslations", inRecord.getSuccessfulTranslations());
 
+		userStatsConfig.createSection("localizationCode");
+		userStatsConfig.set("localizationCode", inRecord.getLocalizationCode());
+
 		saveCustomConfig(userStatsConfig, userStatsFile, false);
 	}
 
@@ -897,14 +851,11 @@ public class ConfigurationHandler {
 	}
 
 	public YamlConfiguration getMsgsConfig() {
-		return messagesConfig;
+		return pluginLangConfigs.get(mainConfig.getString("General.pluginLang"));
 	}
 
 	public File getConfigFile() {
 		return configFile;
 	}
 
-	public File getMsgsFile() {
-		return messagesFile;
-	}
 }

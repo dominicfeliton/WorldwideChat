@@ -8,13 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.MessageFormat;
 import java.util.*;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import java.util.concurrent.*;
 import java.util.regex.Matcher;
 
 import com.badskater0729.worldwidechat.translators.*;
@@ -72,6 +66,8 @@ public class CommonRefs {
 			"ga", "gu", "ha", "he", "hi", "hr", "ht", "hu", "hy", "id", "is", "it", "ja", "ka", "kk", "kn", "ko", "lt", "lv", "mk", "ml", "mn", "mr", "ms", "mt", "nl", "no", "pa", "pl", "ps", "pt",
 			"pt-PT", "ro", "ru", "si", "sk", "sl", "so", "sq", "sr", "sv", "sw", "ta", "te", "th", "tl", "tr", "uk", "ur", "uz", "vi", "zh", "zh-TW"};
 
+	public static ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
+
 	public static List<Pair<String, String>> translatorPairs = new ArrayList<>(Arrays.asList(
 			Pair.of("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator"),
 			Pair.of("Translator.useGoogleTranslate", "Google Translate"),
@@ -107,6 +103,7 @@ public class CommonRefs {
 		playerRecordsSchema.put("attemptedTranslations", "INT");
 		playerRecordsSchema.put("successfulTranslations", "INT");
 		playerRecordsSchema.put("lastTranslationTime", "VARCHAR(40)");
+		playerRecordsSchema.put("localizationCode", "VARCHAR(10)");
 		tableSchemas.put("playerRecords", playerRecordsSchema);
 	}
 
