@@ -409,12 +409,10 @@ public class CommonRefs {
 		// Return fixedMessage with replaced vars
 		return MessageFormat.format(convertedOriginalMessage, (Object[]) replacements);
 	}
-
-	// TODO: Do not constantly load messagesConfig(), load it once in dict
 	public TextComponent getFancyMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
 		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
 		if (sender instanceof Player && main.isPlayerRecord((Player)sender) && !main.getPlayerRecord((Player) sender, false).getLocalizationCode().isEmpty()) {
-			debugMsg("Using user's lang getFancyMsg(): " + main.getPlayerRecord((Player)sender, false).getLocalizationCode());
+			debugMsg("Using user's lang getFancyMsg() for " + messageName + ":" + main.getPlayerRecord((Player)sender, false).getLocalizationCode());
 			messagesConfig = main.getConfigManager().getCustomMessagesConfig(main.getPlayerRecord((Player) sender, false).getLocalizationCode());
 		}
 
