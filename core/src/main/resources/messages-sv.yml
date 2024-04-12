@@ -570,4 +570,12 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Åsidosätt standardmeddelanden för insticksprogram
   wwcConfigGUIChatMessagesOverrideSettings: Åsidosätt standardmeddelanden ({0})
   wwcConfigGUIMessagesServerLang: Detta är insticksprogrammets standardspråk i config.yml.
+  wwclLangStopped: Din lokalisering återställdes till serverns standard.
+  wwclLangInvalid: '{0} är inte en giltig lokalisering. Lokaliseringar som stöds:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: Återställ lokaliseringen av {0} till serverns
+    standard.
+  wwclLangPlayerNotValid: '{0} är inte en giltig spelare.'
+  wwclLangChangedOtherPlayerSender: Ändrade lokaliseringen av {0} till {1}.
+  wwclLangChanged: Din lokalisering ändrades till {0}.
 

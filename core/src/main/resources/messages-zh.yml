@@ -430,4 +430,10 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: 覆盖默认插件消息
   wwcConfigGUIChatMessagesOverrideSettings: 覆盖默认消息 ({0})
   wwcConfigGUIMessagesServerLang: 这是 config.yml 中插件的默认语言。
+  wwclLangStopped: 您的本地化已重置为服务器默认值。
+  wwclLangInvalid: '{0} 不是有效的本地化。支持的本地化：{1}'
+  wwclLangStoppedOtherPlayerSender: 将 {0} 的本地化重置为服务器默认值。
+  wwclLangPlayerNotValid: '{0} 不是有效的玩家。'
+  wwclLangChangedOtherPlayerSender: 将 {0} 的本地化更改为 {1}。
+  wwclLangChanged: 您的本地化已更改为 {0}。
 

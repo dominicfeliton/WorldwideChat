@@ -560,4 +560,10 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Přepsat výchozí zprávy pluginu
   wwcConfigGUIChatMessagesOverrideSettings: Přepsat výchozí zprávy ({0})
   wwcConfigGUIMessagesServerLang: Toto je výchozí jazyk pluginu v config.yml.
+  wwclLangStopped: Vaše lokalizace byla resetována na výchozí server.
+  wwclLangInvalid: '{0} není platná lokalizace. Podporované lokalizace: {1}'
+  wwclLangStoppedOtherPlayerSender: Obnovte lokalizaci {0} na výchozí server.
+  wwclLangPlayerNotValid: '{0} není platný hráč.'
+  wwclLangChangedOtherPlayerSender: Změnila se lokalizace {0} na {1}.
+  wwclLangChanged: Vaše lokalizace byla změněna na {0}.
 

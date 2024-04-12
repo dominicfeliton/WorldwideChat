@@ -5,11 +5,14 @@ import com.badskater0729.worldwidechat.configuration.ConfigurationHandler;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import com.badskater0729.worldwidechat.util.PlayerRecord;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
+
+import java.util.Arrays;
 
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
 
@@ -28,58 +31,64 @@ public class WWCLocalize extends BasicCommand {
     public boolean processCommand() {
         // Simple command to set yours or a user's localization.
         if (args.length == 0 || args.length > 2) {
-            refs.sendFancyMsg("wwctInvalidArgs", new String[] {}, "&c", sender);
+            refs.sendFancyMsg("wwctInvalidArgs", "", "&c", sender);
             return false;
         }
 
+        // TODO: Fix to be formatted like /wwctrl
         if (args.length == 1) {
             if (!(sender instanceof Player)) {
-                //refs.send NO CONSOLE SUPPORT
-                refs.debugMsg("Not a player");
-                return false;
-            }
-
-            if (!main.isPlayerRecord((Player)sender)) {
-                // refs.send NOT A PLAYER RECORD
-                refs.debugMsg("Not player record, creating...");
+                return refs.sendNoConsoleChatMsg(sender);
             }
 
             PlayerRecord currRecord = main.getPlayerRecord((Player)sender, true);
             if (args[0].equalsIgnoreCase("stop") && !currRecord.getLocalizationCode().isEmpty()) {
-                refs.debugMsg("Resetting lang code...");
-                //refs.send resetting lang code
+                refs.sendFancyMsg("wwclLangStopped", sender);
                 currRecord.setLocalizationCode("");
                 return true;
             }
 
-            if (checkIfValidLang(args[0])) {
+            if (checkIfValidLocalLang(args[0])) {
                 //configHandler.generateMessagesConfig(args[0]);
                 currRecord.setLocalizationCode(args[0]);
-                //refs.send DONE
-                refs.debugMsg("Finished...");
+                refs.sendFancyMsg("wwclLangChanged", new String[] {"&6"+args[0]}, sender);
                 return true;
             }
-            // TODO: send wwclInvalidLang
-            refs.debugMsg("Invalid lang...");
+            // TODO: Better formatting for supportedPluginLangCodes?
+            refs.sendFancyMsg("wwclLangInvalid", new String[] {"&6"+args[0], "&6"+ Arrays.toString(supportedPluginLangCodes)}, sender);
             return false;
-
-            // Check if is a valid localization
-            // Copy+Upgrade the localization if necessary to data dir
-            // Set activeTranslator's localization
-            // TODO: Add logic to getMsg since it is used everywhere
         } else if (args.length == 2) {
             // First check if arg[0] is a player
+            // TODO: perhaps convert to OfflinePlayer? Probably not...
+            Player currPlayer = Bukkit.getPlayer(args[0]);
+            if (currPlayer == null) {
+                refs.sendFancyMsg("wwclLangPlayerNotValid", new String[] {"&6"+args[0]}, "&c", sender);
+                return false;
+            }
 
+            PlayerRecord currRecord = main.getPlayerRecord(currPlayer, true);
+            if (args[1].equalsIgnoreCase("stop") && !currRecord.getLocalizationCode().isEmpty()) {
+                currRecord.setLocalizationCode("");
+                refs.sendFancyMsg("wwclLangStoppedOtherPlayerSender", "&6"+args[0], sender);
+                refs.sendFancyMsg("wwclLangStopped", sender);
+                return true;
+            }
 
-            // Then check if arg[1] is a valid LOCALIZATION LANG
-            // Set activeTranslator's localization
-            // TODO: Add logic to getMsg since it is used everywhere
+            if (checkIfValidLocalLang(args[1])) {
+                currRecord.setLocalizationCode(args[1]);
+                refs.sendFancyMsg("wwclLangChangedOtherPlayerSender", new String[] {"&6"+args[0], "&6"+args[1]}, sender);
+                refs.sendFancyMsg("wwclLangChanged", new String[] {"&6"+args[1]}, sender);
+                return true;
+            }
+
+            // TODO: Better formatting for supportedPluginLangCodes?
+            refs.sendFancyMsg("wwclLangInvalid", new String[] {"&6"+args[0], "&6"+ Arrays.toString(supportedPluginLangCodes)}, sender);
+            return false;
         }
-
         return false;
     }
 
-    public boolean checkIfValidLang(String in) {
+    public boolean checkIfValidLocalLang(String in) {
         for (String supportedPluginLangCode : supportedPluginLangCodes) {
             if (supportedPluginLangCode
                     .equalsIgnoreCase(in)) {

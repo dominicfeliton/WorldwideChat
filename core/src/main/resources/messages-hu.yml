@@ -576,4 +576,11 @@ Messages:
     fel
   wwcConfigGUIChatMessagesOverrideSettings: Alapértelmezett üzenetek felülírása ({0})
   wwcConfigGUIMessagesServerLang: Ez a plugin alapértelmezett nyelve a config.yml-ben.
+  wwclLangStopped: A lokalizáció visszaállította a kiszolgáló alapértelmezett értékét.
+  wwclLangInvalid: 'A {0} nem érvényes lokalizáció. Támogatott lokalizációk: {1}'
+  wwclLangStoppedOtherPlayerSender: Állítsa vissza a {0} lokalizációját a kiszolgáló
+    alapértelmezett értékére.
+  wwclLangPlayerNotValid: A {0} nem érvényes játékos.
+  wwclLangChangedOtherPlayerSender: Megváltoztatta a {0} lokalizációját {1} -ra.
+  wwclLangChanged: A lokalizációja {0} -ra változott.
 

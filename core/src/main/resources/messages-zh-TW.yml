@@ -431,4 +431,10 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: 覆寫預設外掛程式訊息
   wwcConfigGUIChatMessagesOverrideSettings: 覆寫預設訊息 ({0})
   wwcConfigGUIMessagesServerLang: 這是外掛程式在 config.yml 中的預設語言。
+  wwclLangStopped: 您的本地化已重設為伺服器預設值。
+  wwclLangInvalid: '{0} 不是有效的本地化。支持的本地化：{1}'
+  wwclLangStoppedOtherPlayerSender: 將 {0} 的本地化重設為伺服器預設值。
+  wwclLangPlayerNotValid: '{0} 不是有效的玩家。'
+  wwclLangChangedOtherPlayerSender: 將 {0} 的本地化變更為 {1}。
+  wwclLangChanged: 您的本地化已更改為 {0}。
 

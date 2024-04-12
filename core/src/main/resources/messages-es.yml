@@ -611,4 +611,13 @@ Messages:
   wwcConfigGUIChatMessagesOverrideSettings: Anular los mensajes predeterminados ({0})
   wwcConfigGUIMessagesServerLang: Este es el idioma predeterminado del complemento
     en config.yml.
+  wwclLangStopped: Su localización se restableció a los valores predeterminados del
+    servidor.
+  wwclLangInvalid: '{0} no es una localización válida. Localizaciones compatibles:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: Restablezca la localización de {0} a los valores
+    predeterminados del servidor.
+  wwclLangPlayerNotValid: '{0} no es un jugador válido.'
+  wwclLangChangedOtherPlayerSender: Se cambió la localización de {0} a {1}.
+  wwclLangChanged: Tu localización se cambió a {0}.
 

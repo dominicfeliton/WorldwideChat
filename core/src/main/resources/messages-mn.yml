@@ -580,4 +580,12 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Анхдагч залгаасын мессежийг халж
   wwcConfigGUIChatMessagesOverrideSettings: Анхдагч мессежийг хүчингүй болгох ({0})
   wwcConfigGUIMessagesServerLang: Энэ бол config.yml дахь залгаасын анхдагч хэл юм.
+  wwclLangStopped: Таны нутагшуулалтыг серверийн анхдагч болгон дахин тохируулсан.
+  wwclLangInvalid: '{0} бол хүчинтэй нутагшуулалт биш юм. Дэмжигдсэн байршуулалт:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: '{0} -ийн нутагшуулалтыг серверийн анхдагч болгон
+    дахин тохируулна уу.'
+  wwclLangPlayerNotValid: '{0} бол хүчин төгөлдөр тоглогч биш юм.'
+  wwclLangChangedOtherPlayerSender: '{0} -ийн нутагшуулалтыг {1} болгон өөрчилсөн.'
+  wwclLangChanged: Таны нутагшуулалтыг {0} болгон өөрчилсөн.
 

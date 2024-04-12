@@ -566,4 +566,12 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Ghi đè thư Plugin mặc định
   wwcConfigGUIChatMessagesOverrideSettings: Ghi đè tin nhắn mặc định ({0})
   wwcConfigGUIMessagesServerLang: Đây là ngôn ngữ mặc định của plugin trong config.yml.
+  wwclLangStopped: Bản địa hóa của bạn đã được đặt lại về mặc định của máy chủ.
+  wwclLangInvalid: '{0} không phải là bản địa hóa hợp lệ. Bản địa hóa được hỗ trợ:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: Đặt lại bản địa hóa của {0} về mặc định của máy
+    chủ.
+  wwclLangPlayerNotValid: '{0} không phải là một cầu thủ hợp lệ.'
+  wwclLangChangedOtherPlayerSender: Thay đổi bản địa hóa của {0} thành {1}.
+  wwclLangChanged: Bản địa hóa của bạn đã được thay đổi thành {0}.
 

@@ -603,4 +603,12 @@ Messages:
   wwcConfigGUIChatMessagesOverrideSettings: Anul·lar missatges predeterminats ({0})
   wwcConfigGUIMessagesServerLang: Aquest és l'idioma predeterminat del connector en
     config.yml.
+  wwclLangStopped: La localització es va restablir al servidor per defecte.
+  wwclLangInvalid: '{0} no és una localització vàlida. Localitzacions suportades:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: Restablir la localització de {0} a la predeterminada
+    del servidor.
+  wwclLangPlayerNotValid: '{0} no és un jugador vàlid.'
+  wwclLangChangedOtherPlayerSender: S'ha canviat la localització de {0} a {1}.
+  wwclLangChanged: La seva localització s'ha canviat a {0}.
 

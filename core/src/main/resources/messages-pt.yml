@@ -581,4 +581,11 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Substituir mensagens padrão do plug-in
   wwcConfigGUIChatMessagesOverrideSettings: Substituir mensagens padrão ({0})
   wwcConfigGUIMessagesServerLang: Esse é o idioma padrão do plugin em config.yml.
+  wwclLangStopped: Sua localização foi redefinida para o padrão do servidor.
+  wwclLangInvalid: '{0} não é uma localização válida. Localizações suportadas: {1}'
+  wwclLangStoppedOtherPlayerSender: Redefina a localização de {0} para o padrão do
+    servidor.
+  wwclLangPlayerNotValid: '{0} não é um jogador válido.'
+  wwclLangChangedOtherPlayerSender: Mudou a localização de {0} para {1}.
+  wwclLangChanged: Sua localização foi alterada para {0}.
 

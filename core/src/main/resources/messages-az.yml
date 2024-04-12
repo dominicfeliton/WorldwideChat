@@ -554,4 +554,12 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Varsayılan Plugin Mesajlarını ləğv edin
   wwcConfigGUIChatMessagesOverrideSettings: Varsayılan Mesajları ləğv edin ({0})
   wwcConfigGUIMessagesServerLang: Bu, config.yml-də plaginin standart dilidir.
+  wwclLangStopped: Lokalizasiyanız serverin standart vəziyyətinə sıfırlandı.
+  wwclLangInvalid: '{0} etibarlı lokalizasiya deyil. Dəstəklənən lokallaşdırmalar:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: '{0} lokalizasiyasını serverin standart vəziyyətinə
+    qaytarın.'
+  wwclLangPlayerNotValid: '{0} etibarlı oyunçu deyil.'
+  wwclLangChangedOtherPlayerSender: '{0} -nin lokalizasiyasını {1} olaraq dəyişdirdi.'
+  wwclLangChanged: Lokalizasiyanız {0} olaraq dəyişdirildi.
 

@@ -360,6 +360,13 @@ Messages:
   wwctGUIAutoDetectButton: 'Auto-detect Source Language'
   wwctGUINewTranslationTarget: 'Choose a Target Language'
   wwctGUIConversationRateLimit: 'The rate limit per translation is currently {0} seconds. Type anything greater than 0 to set a new value, or type 0 to disable the limit. Type anything less than 0 to go back.'
+  #------------------- /wwcl Messages -------------------
+  wwclLangStopped: 'Your localization was reset to the server default.'
+  wwclLangChanged: 'Your localization was changed to {0}.'
+  wwclLangInvalid: '{0} is not a valid localization. Supported localizations: {1}'
+  wwclLangPlayerNotValid: '{0} is not a valid player.'
+  wwclLangStoppedOtherPlayerSender: 'Reset the localization of {0} to the server default.'
+  wwclLangChangedOtherPlayerSender: 'Changed the localization of {0} to {1}.'
   #------------------- /wwctb Messages ------------------
   wwctbPlayerNotFound: 'Player {0} is either not found, or is not an active translator.'
   wwctbNotATranslator: 'You are not an active translator! Make sure you have set this with /wwct.'

@@ -590,4 +590,10 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Suprascrie mesajele implicite ale pluginului
   wwcConfigGUIChatMessagesOverrideSettings: Suprascrie mesajele implicite ({0})
   wwcConfigGUIMessagesServerLang: Aceasta este limba implicită a pluginului în config.yml.
+  wwclLangStopped: Localizarea dvs. a fost resetată la serverul implicit.
+  wwclLangInvalid: '{0} nu este o localizare validă. Localizări acceptate: {1}'
+  wwclLangStoppedOtherPlayerSender: Resetați localizarea {0} la serverul implicit.
+  wwclLangPlayerNotValid: '{0} nu este un jucător valid.'
+  wwclLangChangedOtherPlayerSender: S-a schimbat localizarea {0} în {1}.
+  wwclLangChanged: Localizarea dvs. a fost schimbată în {0}.
 

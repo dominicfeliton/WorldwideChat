@@ -539,4 +539,11 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Vaikimisi pistikprogrammi sõnumite tühistamine
   wwcConfigGUIChatMessagesOverrideSettings: Vaikesõnumite tühistamine ({0})
   wwcConfigGUIMessagesServerLang: See on pistikprogrammi vaikekeel jaotises config.yml.
+  wwclLangStopped: Teie lokaliseerimine lähtestati serveri vaikimisi.
+  wwclLangInvalid: '{0} ei ole kehtiv lokaliseerimine. Toetatud lokaliseerimised:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: Lähtestage {0} lokaliseerimine serveri vaikimisi.
+  wwclLangPlayerNotValid: '{0} ei ole kehtiv mängija.'
+  wwclLangChangedOtherPlayerSender: Muutis {0} lokaliseerimist {1} -ks.
+  wwclLangChanged: Teie lokaliseerimine muudeti väärtuseks {0}.
 

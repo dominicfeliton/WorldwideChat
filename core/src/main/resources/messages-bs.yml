@@ -561,4 +561,10 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Poništite zadane poruke dodataka
   wwcConfigGUIChatMessagesOverrideSettings: Poništi zadane poruke ({0})
   wwcConfigGUIMessagesServerLang: Ovo je zadani jezik dodatka u config.yml.
+  wwclLangStopped: Vaša lokalizacija je vraćena na zadanu postavku poslužitelja.
+  wwclLangInvalid: '{0} nije valjana lokalizacija. Podržane lokalizacije: {1}'
+  wwclLangStoppedOtherPlayerSender: Vratite lokalizaciju {0} na zadanu postavku poslužitelja.
+  wwclLangPlayerNotValid: '{0} nije valjan igrač.'
+  wwclLangChangedOtherPlayerSender: Promijenio je lokalizaciju {0} u {1}.
+  wwclLangChanged: Vaša lokalizacija je promijenjena u {0}.
 

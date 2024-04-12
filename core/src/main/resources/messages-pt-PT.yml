@@ -587,4 +587,11 @@ Messages:
     Plugin
   wwcConfigGUIChatMessagesOverrideSettings: Sobrespor Mensagens Predefinidas ({0})
   wwcConfigGUIMessagesServerLang: Esta é a linguagem predefinida do plugin em config.yml.
+  wwclLangStopped: A sua localização foi redefinida para o servidor predefinido.
+  wwclLangInvalid: '{0} não é uma localização válida. Localizações suportadas: {1}'
+  wwclLangStoppedOtherPlayerSender: Redefina a localização de {0} para o padrão do
+    servidor.
+  wwclLangPlayerNotValid: '{0} não é um jogador válido.'
+  wwclLangChangedOtherPlayerSender: Alterada a localização de {0} para {1}.
+  wwclLangChanged: A sua localização foi alterada para {0}.
 

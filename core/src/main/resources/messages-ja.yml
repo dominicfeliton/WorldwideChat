@@ -440,4 +440,10 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: デフォルトプラグインメッセージの上書き
   wwcConfigGUIChatMessagesOverrideSettings: デフォルトメッセージの上書き ({0})
   wwcConfigGUIMessagesServerLang: これは config.yml のプラグインのデフォルト言語です。
+  wwclLangStopped: ローカリゼーションがサーバーのデフォルトにリセットされました。
+  wwclLangInvalid: '{0} は有効なローカライズではありません。対応しているローカリゼーション:{1}'
+  wwclLangStoppedOtherPlayerSender: '{0} のローカライズをサーバーのデフォルトにリセットします。'
+  wwclLangPlayerNotValid: '{0} は有効なプレイヤーではありません。'
+  wwclLangChangedOtherPlayerSender: '{0} のローカライズを {1} に変更しました。'
+  wwclLangChanged: ローカライズが {0} に変更されました。
 

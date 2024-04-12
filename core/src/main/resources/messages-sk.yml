@@ -569,4 +569,11 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Prepísať predvolené správy doplnku
   wwcConfigGUIChatMessagesOverrideSettings: Prepísať predvolené správy ({0})
   wwcConfigGUIMessagesServerLang: Toto je predvolený jazyk doplnku v config.yml.
+  wwclLangStopped: Vaša lokalizácia bola obnovená na predvolené nastavenie servera.
+  wwclLangInvalid: '{0} nie je platná lokalizácia. Podporované lokalizácie: {1}'
+  wwclLangStoppedOtherPlayerSender: Obnovte lokalizáciu {0} na predvolenú hodnotu
+    servera.
+  wwclLangPlayerNotValid: '{0} nie je platný hráč.'
+  wwclLangChangedOtherPlayerSender: Zmenila sa lokalizácia {0} na {1}.
+  wwclLangChanged: Vaša lokalizácia bola zmenená na {0}.
 

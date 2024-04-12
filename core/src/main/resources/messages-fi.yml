@@ -555,4 +555,10 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Ohittaa oletusliitännäisviestit
   wwcConfigGUIChatMessagesOverrideSettings: Oletusviestien ohittaminen ({0})
   wwcConfigGUIMessagesServerLang: 'Tämä on laajennuksen oletuskieli config.yml: ssä.'
+  wwclLangStopped: Lokalisointi palautettiin palvelimen oletusarvoiseksi.
+  wwclLangInvalid: '{0} ei ole kelvollinen lokalisointi. Tuetut lokalisaatiot: {1}'
+  wwclLangStoppedOtherPlayerSender: Palauta {0} -lokalisointi palvelimen oletusarvoiseksi.
+  wwclLangPlayerNotValid: '{0} ei ole kelvollinen pelaaja.'
+  wwclLangChangedOtherPlayerSender: 'Vaihdettiin {0}: n lokalisointi {1}: ksi.'
+  wwclLangChanged: Lokalisointisi muutettiin muotoon {0}.
 

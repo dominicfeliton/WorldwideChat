@@ -493,4 +493,10 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: แทนที่ข้อความปลั๊กอินเริ่มต้น
   wwcConfigGUIChatMessagesOverrideSettings: แทนที่ข้อความเริ่มต้น ({0})
   wwcConfigGUIMessagesServerLang: นี่คือภาษาเริ่มต้นของปลั๊กอินใน config.yml
+  wwclLangStopped: การแปลภาษาของคุณถูกรีเซ็ตเป็นค่าเริ่มต้นของเซิร์ฟเวอร์
+  wwclLangInvalid: '{0} ไม่ใช่การแปลที่ถูกต้องการปรับตำแหน่งที่รองรับ: {1}'
+  wwclLangStoppedOtherPlayerSender: รีเซ็ตการแปลของ {0} เป็นค่าเริ่มต้นของเซิร์ฟเวอร์
+  wwclLangPlayerNotValid: '{0} ไม่ใช่ผู้เล่นที่ถูกต้อง'
+  wwclLangChangedOtherPlayerSender: เปลี่ยนการแปลภาษาของ {0} เป็น {1}
+  wwclLangChanged: การแปลภาษาของคุณถูกเปลี่ยนเป็น {0}
 

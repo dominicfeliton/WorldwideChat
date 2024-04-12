@@ -581,4 +581,11 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Префрли ги стандардните пораки на приклучокот
   wwcConfigGUIChatMessagesOverrideSettings: Префрли ги стандардните пораки ({0})
   wwcConfigGUIMessagesServerLang: Ова е стандардниот јазик на приклучокот во config.yml.
+  wwclLangStopped: Вашата локализација беше ресетирана на стандардниот сервер.
+  wwclLangInvalid: '{0} не е валидна локализација. Поддржани локализации: {1}'
+  wwclLangStoppedOtherPlayerSender: Ресетирајте ја локализацијата на {0} на стандардниот
+    сервер.
+  wwclLangPlayerNotValid: '{0} не е валиден играч.'
+  wwclLangChangedOtherPlayerSender: Промена на локализацијата на {0} во {1}.
+  wwclLangChanged: Вашата локализација е променета на {0}.
 

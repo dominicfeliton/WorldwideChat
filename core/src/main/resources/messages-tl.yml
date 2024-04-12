@@ -629,4 +629,12 @@ Messages:
   wwcConfigGUIChatMessagesOverrideSettings: I-override ang mga default na mensahe
     ({0})
   wwcConfigGUIMessagesServerLang: Ito ang default na wika ng plugin sa config.yml.
+  wwclLangStopped: Ang iyong lokalisasyon ay na-reset sa default na server.
+  wwclLangInvalid: 'Ang {0} ay hindi isang wastong lokalisasyon. Mga sinusuportahang
+    lokalisasyon: {1}'
+  wwclLangStoppedOtherPlayerSender: I-reset ang lokalisasyon ng {0} sa default na
+    server.
+  wwclLangPlayerNotValid: Ang {0} ay hindi isang wastong manlalaro.
+  wwclLangChangedOtherPlayerSender: Binago ang lokalisasyon ng {0} sa {1}.
+  wwclLangChanged: Ang iyong lokalisasyon ay binago sa {0}.
 

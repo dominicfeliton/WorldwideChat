@@ -464,4 +464,10 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: 기본 플러그인 메시지 무시
   wwcConfigGUIChatMessagesOverrideSettings: 기본 메시지 무시 ({0})
   wwcConfigGUIMessagesServerLang: 이 언어는 config.yml에 있는 플러그인의 기본 언어입니다.
+  wwclLangStopped: 현지화가 서버 기본값으로 재설정되었습니다.
+  wwclLangInvalid: '{0} 은 (는) 유효한 현지화가 아닙니다.지원되는 현지화: {1}'
+  wwclLangStoppedOtherPlayerSender: '{0} 현지화를 서버 기본값으로 재설정합니다.'
+  wwclLangPlayerNotValid: '{0} 님은 유효한 플레이어가 아닙니다.'
+  wwclLangChangedOtherPlayerSender: '{0} 현지화를 {1} 로 변경했습니다.'
+  wwclLangChanged: 현지화가 {0} (으로) 변경되었습니다.
 

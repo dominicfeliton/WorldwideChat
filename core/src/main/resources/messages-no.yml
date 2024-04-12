@@ -545,4 +545,10 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Overstyr standard plugin-meldinger
   wwcConfigGUIChatMessagesOverrideSettings: Overstyre standardmeldinger ({0})
   wwcConfigGUIMessagesServerLang: Dette er pluginens standardspråk i config.yml.
+  wwclLangStopped: Lokaliseringen din ble tilbakestilt til serverstandard.
+  wwclLangInvalid: '{0} er ikke en gyldig lokalisering. Støttede lokaliseringer: {1}'
+  wwclLangStoppedOtherPlayerSender: Tilbakestill lokaliseringen av {0} til serverstandard.
+  wwclLangPlayerNotValid: '{0} er ikke en gyldig spiller.'
+  wwclLangChangedOtherPlayerSender: Endret lokaliseringen av {0} til {1}.
+  wwclLangChanged: Lokaliseringen din ble endret til {0}.
 

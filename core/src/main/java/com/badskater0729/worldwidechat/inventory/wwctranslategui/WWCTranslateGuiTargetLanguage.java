@@ -44,9 +44,6 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 		this.inPlayer = inPlayer;
 	}
 
-
-	// TODO: Rewrite for being able to switch between localizations??
-	// TODO: Also fix getMsg calls to respect user's localization
 	public SmartInventory getTargetLanguageInventory() {
 		return SmartInventory.builder().id("translateTargetLanguage")
 				.provider(this).size(6, 9)

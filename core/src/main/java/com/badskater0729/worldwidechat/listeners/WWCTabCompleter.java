@@ -220,6 +220,7 @@ public class WWCTabCompleter implements TabCompleter {
 			}
 		
 		/* Commands: /wwctrl */
+		// TODO: FIX WITH startsWith()
 		} else if (commandName.equals("wwctrl") && args.length > 0 && args.length < 3) {
 			if (args[args.length - 1].isEmpty() && args.length == 1) {
 				for (String eaTranslatorUUID : main.getActiveTranslators().keySet()) {

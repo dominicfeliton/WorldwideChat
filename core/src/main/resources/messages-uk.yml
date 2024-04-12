@@ -563,4 +563,10 @@ Messages:
   wwcConfigGUIChatMessagesOverrideSettings: Перевизначення повідомлень за замовчуванням
     ({0})
   wwcConfigGUIMessagesServerLang: Це типова мова плагіна в config.yml.
+  wwclLangStopped: Ваша локалізація була скинута до сервера за замовчуванням.
+  wwclLangInvalid: '{0} не є дійсною локалізацією. Підтримувані локалізації: {1}'
+  wwclLangStoppedOtherPlayerSender: Скинути локалізацію {0} до сервера за замовчуванням.
+  wwclLangPlayerNotValid: '{0} не є дійсним гравцем.'
+  wwclLangChangedOtherPlayerSender: Змінено локалізацію {0} на {1}.
+  wwclLangChanged: Вашу локалізацію було змінено на {0}.
 

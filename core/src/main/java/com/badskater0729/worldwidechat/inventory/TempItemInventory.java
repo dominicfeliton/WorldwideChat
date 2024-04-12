@@ -22,8 +22,6 @@ public class TempItemInventory implements InventoryProvider {
 
 	private Player inPLayer;
 
-	// TODO: Rewrite for being able to switch between localizations??
-	// TODO: Also fix getMsg calls to respect user's localization
 	public TempItemInventory(ItemStack displayedItem, Player inPlayer) {
 		this.displayedItem = displayedItem;
 		this.inPLayer = inPlayer;

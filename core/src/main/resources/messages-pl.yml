@@ -565,4 +565,11 @@ Messages:
   wwcConfigGUIMessagesOverridePickChatButton: Zastąp domyślne wiadomości wtyczki
   wwcConfigGUIChatMessagesOverrideSettings: Zastąp domyślne wiadomości ({0})
   wwcConfigGUIMessagesServerLang: Jest to domyślny język wtyczki w config.yml.
+  wwclLangStopped: Twoja lokalizacja została zresetowana do domyślnej serwera.
+  wwclLangInvalid: '{0} nie jest prawidłową lokalizacją. Obsługiwane lokalizacje:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: Zresetuj lokalizację {0} do domyślnej serwera.
+  wwclLangPlayerNotValid: '{0} nie jest ważnym graczem.'
+  wwclLangChangedOtherPlayerSender: Zmieniono lokalizację {0} na {1}.
+  wwclLangChanged: Twoja lokalizacja została zmieniona na {0}.
 

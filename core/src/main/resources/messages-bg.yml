@@ -577,4 +577,11 @@ Messages:
     на плъгини
   wwcConfigGUIChatMessagesOverrideSettings: Отмяна на съобщения по подразбиране ({0})
   wwcConfigGUIMessagesServerLang: Това е езикът по подразбиране на приставката в config.yml.
+  wwclLangStopped: Локализацията ви беше нулирана на сървъра по подразбиране.
+  wwclLangInvalid: '{0} не е валидна локализация. Поддържани локализации: {1}'
+  wwclLangStoppedOtherPlayerSender: Нулирайте локализацията на {0} към сървъра по
+    подразбиране.
+  wwclLangPlayerNotValid: '{0} не е валиден играч.'
+  wwclLangChangedOtherPlayerSender: Променена е локализацията на {0} на {1}.
+  wwclLangChanged: Локализацията ви беше променена на {0}.
 

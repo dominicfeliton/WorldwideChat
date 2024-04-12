@@ -570,4 +570,11 @@ Messages:
   wwcConfigGUIChatMessagesOverrideSettings: Переопределить сообщения по умолчанию
     ({0})
   wwcConfigGUIMessagesServerLang: Это язык плагина по умолчанию в config.yml.
+  wwclLangStopped: Ваша локализация была восстановлена на серверную настройку по умолчанию.
+  wwclLangInvalid: '{0} не является допустимой локализацией. Поддерживаемые локализации:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: Сбросьте локализацию {0} на сервер по умолчанию.
+  wwclLangPlayerNotValid: '{0} не является действительным игроком.'
+  wwclLangChangedOtherPlayerSender: Изменена локализация {0} на {1}.
+  wwclLangChanged: Ваша локализация была изменена на {0}.
 
