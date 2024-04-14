@@ -20,12 +20,6 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.github.seeseemelk</groupId>
-      <artifactId>MockBukkit-v1.20</artifactId>
-      <version>3.80.0</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
       <version>1.20.4-R0.1-SNAPSHOT</version>
@@ -108,7 +102,8 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.2.5</version>
         <configuration>
-          <skipTests>false</skipTests>
+          <skipTests>true</skipTests>
+          <!-- TODO: Add core tests, platform INDEPENDENT -->
         </configuration>
       </plugin>
       <plugin>

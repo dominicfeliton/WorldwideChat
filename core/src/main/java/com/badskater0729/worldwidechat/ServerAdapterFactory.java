@@ -7,6 +7,7 @@ import org.bukkit.Bukkit;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -69,7 +70,18 @@ public class ServerAdapterFactory {
         if (serverPlatform.equals("Paper") && (serverVersion.contains("1.13") || serverVersion.contains("1.14") || serverVersion.contains("1.15"))) {
             // These versions are so old that they lack much of what we take for granted in later versions of Paper.
             // Paper on these versions is unsupported. Use the spigot version of the plugin instead.
+            // sendmsg(?) paper too old, default to spig
             serverPlatform = "Spigot";
+        }
+
+        if (serverPlatform.equals("Paper")) {
+            try {
+                Class.forName("com.badskater0729.worldwidechat.PaperWorldwideChatHelper");
+            } catch (ClassNotFoundException e) {
+                // On paper but using the spigot JAR
+                // sendmsg(?) using spigot on paper, you are missing out on features...
+                serverPlatform = "Spigot";
+            }
         }
 
         return Pair.of(serverPlatform, serverVersion);
@@ -86,8 +98,8 @@ public class ServerAdapterFactory {
 
     public WorldwideChatHelper getWWCHelper() {
         HashMap<String, String> wwcHelperDefs = new HashMap<String, String>();
-        wwcHelperDefs.put("Spigot","com.badskater0729.worldwidechat.WorldwideChatHelper");
-        wwcHelperDefs.put("Bukkit","com.badskater0729.worldwidechat.WorldwideChatHelper");
+        wwcHelperDefs.put("Spigot","com.badskater0729.worldwidechat.SpigotWorldwideChatHelper");
+        wwcHelperDefs.put("Bukkit","com.badskater0729.worldwidechat.SpigotWorldwideChatHelper");
         wwcHelperDefs.put("Paper","com.badskater0729.worldwidechat.PaperWorldwideChatHelper");
 
         return (WorldwideChatHelper) getInstance(wwcHelperDefs);

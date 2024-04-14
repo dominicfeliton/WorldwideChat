@@ -551,8 +551,6 @@ public class WorldwideChat extends JavaPlugin {
 	 * Initialize adapters and check MC version/platform
 	 */
 	private void checkAndInitAdapters() {
-		// TODO: Move this to WWCHelper
-
 		// Init vars
 		Pair<String, String> serverInfo = serverFactory.getServerInfo();
 		String type = serverInfo.getKey();

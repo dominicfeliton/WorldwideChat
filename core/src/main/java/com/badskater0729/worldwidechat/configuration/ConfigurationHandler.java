@@ -88,10 +88,12 @@ public class ConfigurationHandler {
 	/* Init Messages Method */
 	public void initMessagesConfigs() {
 		// Init ALL message configs
+		main.getLogger().warning("Importing/upgrading localization files...");
 		for (String eaStr : supportedPluginLangCodes) {
 			refs.debugMsg("Checking " + eaStr + "...");
 			pluginLangConfigs.put(eaStr, generateMessagesConfig(eaStr));
 		}
+		main.getLogger().warning("Done.");
 	}
 
 	public YamlConfiguration generateMessagesConfig(String inLocalLang) {
@@ -114,7 +116,7 @@ public class ConfigurationHandler {
 
 		/* Check if version value is out of date...*/
 		if (msgConfig.getString("DoNotTouchThis.Version") == null || !msgConfig.getString("DoNotTouchThis.Version").equals(WorldwideChat.messagesConfigVersion)) {
-			main.getLogger().warning("Upgrading out-of-date messages config!");
+			refs.debugMsg("Upgrading out-of-date messages config!");
 			HashMap<String, String> oldOverrides = new HashMap<>();
 
 			/* Copy overrides section */
@@ -144,7 +146,7 @@ public class ConfigurationHandler {
 			saveCustomConfig(msgConfig, msgFile, false);
 
 			/* Success :) */
-			main.getLogger().warning("Upgrade successful.");
+			refs.debugMsg("Upgrade successful.");
 		}
 
 		return msgConfig;
