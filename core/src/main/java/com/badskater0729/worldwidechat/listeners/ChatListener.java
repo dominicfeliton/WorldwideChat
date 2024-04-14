@@ -29,6 +29,7 @@ public class ChatListener implements Listener {
 	
 	//@EventHandler(priority = EventPriority.HIGHEST)
 	// TODO: Make sure LOWEST is okay
+	// TODO: We probably have to keep at HIGHEST? Figure it out
 	@EventHandler(priority = EventPriority.LOWEST)
 	public void onPlayerChat(AsyncPlayerChatEvent event) {
 

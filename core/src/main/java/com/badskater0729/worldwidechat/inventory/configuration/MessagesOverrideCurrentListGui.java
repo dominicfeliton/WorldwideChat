@@ -40,16 +40,15 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 		this.inPlayer = inPlayer;
 	}
 
-	public final SmartInventory overrideMessagesSettings = SmartInventory.builder().id("overrideMessagesMenu")
-			.provider(this).size(6, 9)
-			.manager(invManager)
-			// TODO: Fix null here
-			.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettings", inLang, inPlayer))
-	        .build();
+	// TODO: make a getter
+	public SmartInventory getOverrideMessagesSettings() {
+		return SmartInventory.builder().id("overrideMessagesMenu")
+				.provider(this).size(6, 9)
+				.manager(invManager)
+				.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettings", new String[] {inLang}, inPlayer))
+				.build();
+	}
 
-	// TODO: Rewrite for being able to switch between localizations??
-	// TODO: Also fix getMsg calls to respect user's localization
-	
 	@Override
 	public void init(Player player, InventoryContents contents) {
 		try {
@@ -99,11 +98,11 @@ public class MessagesOverrideCurrentListGui implements InventoryProvider {
 			if (!pagination.isFirst()) {
 				invManager.setCommonButton(5, 2, player, contents, "Previous");
 			} else {
-				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[]{new MessagesOverridePickLangGui().overrideMessagesSettingsPicker});
+				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[]{new MessagesOverridePickLangGui().getMessagesOverridePickLangGui()});
 			}
 			
 			/* Bottom Middle Option: Add new override */
-			invManager.genericOpenSubmenuButton(5, 4, player, contents, "wwcConfigGUIChatMessagesOverrideNewButton", new MessagesOverridePossibleListGui(inLang, inPlayer).overrideNewMessageSettings);
+			invManager.genericOpenSubmenuButton(5, 4, player, contents, "wwcConfigGUIChatMessagesOverrideNewButton", new MessagesOverridePossibleListGui(inLang, inPlayer).getOverrideNewMessageSettings());
 			
 			/* Bottom Right Option: Next Page */
 			if (!pagination.isLast()) {

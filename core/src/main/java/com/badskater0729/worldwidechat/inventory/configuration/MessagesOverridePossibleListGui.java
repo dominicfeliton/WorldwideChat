@@ -42,11 +42,13 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
 		this.inPlayer = inPlayer;
 	}
 
-	public SmartInventory overrideNewMessageSettings = SmartInventory.builder().id("overridePossibilitiesMenu")
-			.provider(this).size(6, 9)
-			.manager(WorldwideChat.instance.getInventoryManager())
-			.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesPossibleOverrides", inPlayer))
-	        .build();
+	public SmartInventory getOverrideNewMessageSettings() {
+		return SmartInventory.builder().id("overridePossibilitiesMenu")
+				.provider(this).size(6, 9)
+				.manager(WorldwideChat.instance.getInventoryManager())
+				.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesPossibleOverrides", inPlayer))
+				.build();
+	}
 	
 	@Override
 	public void init(Player player, InventoryContents contents) {
@@ -84,7 +86,7 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
 				currentMessages[currSpot] = ClickableItem.of(currentEntry, e -> {
 					// Start conversation
 					ConversationFactory textConvo = new ConversationFactory(main).withModality(true)
-							.withFirstPrompt(new ChatSettingsConvos.ModifyOverrideText(new MessagesOverridePossibleListGui(inLang, inPlayer).overrideNewMessageSettings, entry.getKey()));
+							.withFirstPrompt(new ChatSettingsConvos.ModifyOverrideText(new MessagesOverridePossibleListGui(inLang, inPlayer).getOverrideNewMessageSettings(), entry.getKey()));
 				    textConvo.buildConversation(player).begin();
 				});
 				currSpot++;
@@ -99,7 +101,7 @@ public class MessagesOverridePossibleListGui implements InventoryProvider {
 			if (!pagination.isFirst()) {
 				invManager.setCommonButton(5, 2, player, contents, "Previous");
 			} else {
-				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {new MessagesOverrideCurrentListGui(inLang, inPlayer).overrideMessagesSettings});
+				invManager.setCommonButton(5, 2, player, contents, "Previous", new Object[] {new MessagesOverrideCurrentListGui(inLang, inPlayer).getOverrideMessagesSettings()});
 			}
 			
 			/* Bottom Right Option: Next Page */

@@ -121,12 +121,15 @@ public class WWCStats extends BasicCommand {
 										.content("\n- " + refs.getMsg("wwcsSuccessfulTranslations", record.getSuccessfulTranslations() + "", sender))
 										.color(NamedTextColor.AQUA))
 								.append(Component.text()
+										.content("\n- " + refs.getMsg("wwcsLocalization", record.getLocalizationCode().isEmpty() ? refs.checkOrX(false) : record.getLocalizationCode(), sender))
+										.color(NamedTextColor.AQUA))
+								.append(Component.text()
 										.content("\n- " + refs.getMsg("wwcsLastTranslationTime", record.getLastTranslationTime(), sender))
 										.color(NamedTextColor.AQUA))
 								.build();
 						// Add current translator stats if user is ActiveTranslator
 						TextComponent isActiveTranslator = Component.text()
-								.content("\n- " + refs.getMsg("wwcsIsActiveTranslator", ChatColor.BOLD + "" + ChatColor.RED + "\u2717", sender))
+								.content("\n- " + refs.getMsg("wwcsIsActiveTranslator", refs.checkOrX(false), sender))
 								.color(NamedTextColor.AQUA)
 								.build();
 						if (main.isActiveTranslator(inPlayer.getUniqueId())) {
@@ -134,7 +137,7 @@ public class WWCStats extends BasicCommand {
 							// Therefore, append active translator stats
 							ActiveTranslator currTrans = main.getActiveTranslator(inPlayer.getUniqueId());
 							isActiveTranslator = Component.text()
-									.content("\n- " + refs.getMsg("wwcsIsActiveTranslator", ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713", sender))
+									.content("\n- " + refs.getMsg("wwcsIsActiveTranslator", refs.checkOrX(true), sender))
 									.color(NamedTextColor.AQUA)
 									.append(Component.text()
 											.content("\n  - " + refs.getMsg("wwcsActiveTransUUID", ChatColor.GOLD + currTrans.getUUID(), sender))
@@ -149,34 +152,34 @@ public class WWCStats extends BasicCommand {
 											.content("\n  - " + refs.getMsg("wwcsActiveTransOutLang", ChatColor.GOLD + currTrans.getOutLangCode(), sender))
 											.color(NamedTextColor.LIGHT_PURPLE))
 									.append(Component.text()
-											.content("\n  - " + refs.getMsg("wwcsActiveTransOutgoing", ChatColor.GOLD + "" + currTrans.getTranslatingChatOutgoing(), sender))
+											.content("\n  - " + refs.getMsg("wwcsActiveTransOutgoing", refs.checkOrX(currTrans.getTranslatingChatOutgoing()), sender))
 											.color(NamedTextColor.LIGHT_PURPLE))
 									.append(Component.text()
-											.content("\n  - " + refs.getMsg("wwcsActiveTransIncoming", ChatColor.GOLD + "" + currTrans.getTranslatingChatIncoming(), sender))
+											.content("\n  - " + refs.getMsg("wwcsActiveTransIncoming", refs.checkOrX(currTrans.getTranslatingChatIncoming()), sender))
 											.color(NamedTextColor.LIGHT_PURPLE))
 									.append(Component.text()
-											.content("\n  - " + refs.getMsg("wwcsActiveTransBook", ChatColor.GOLD + "" + currTrans.getTranslatingBook(), sender))
+											.content("\n  - " + refs.getMsg("wwcsActiveTransBook", refs.checkOrX(currTrans.getTranslatingBook()), sender))
 											.color(NamedTextColor.LIGHT_PURPLE))
 									.append(Component.text()
-											.content("\n  - " + refs.getMsg("wwcsActiveTransSign", ChatColor.GOLD + "" + currTrans.getTranslatingSign(), sender))
+											.content("\n  - " + refs.getMsg("wwcsActiveTransSign", refs.checkOrX(currTrans.getTranslatingSign()), sender))
 											.color(NamedTextColor.LIGHT_PURPLE))
 									.append(Component.text()
-											.content("\n  - " + refs.getMsg("wwcsActiveTransItem", ChatColor.GOLD + "" + currTrans.getTranslatingItem(), sender))
+											.content("\n  - " + refs.getMsg("wwcsActiveTransItem", refs.checkOrX(currTrans.getTranslatingItem()), sender))
 											.color(NamedTextColor.LIGHT_PURPLE))
 									.append(Component.text()
-											.content("\n  - " + refs.getMsg("wwcsActiveTransEntity", ChatColor.GOLD + "" + currTrans.getTranslatingEntity(), sender))
+											.content("\n  - " + refs.getMsg("wwcsActiveTransEntity", refs.checkOrX(currTrans.getTranslatingEntity()), sender))
 											.color(NamedTextColor.LIGHT_PURPLE))
 									.build();
 							// If debug, append extra vars
 							if (main.getConfigManager().getMainConfig().getBoolean("General.enableDebugMode")) {
 								TextComponent debugInfo = Component.text()
-										.content("\n  - " + refs.getMsg("wwcsActiveTransColorWarning", ChatColor.GOLD + "" + currTrans.getCCWarning(), sender))
+										.content("\n  - " + refs.getMsg("wwcsActiveTransColorWarning", refs.checkOrX(currTrans.getCCWarning()), sender))
 										.color(NamedTextColor.LIGHT_PURPLE)
 										.append(Component.text()
-												.content("\n  - " + refs.getMsg("wwcsActiveTransSignWarning", ChatColor.GOLD + "" + currTrans.getSignWarning(), sender))
+												.content("\n  - " + refs.getMsg("wwcsActiveTransSignWarning", refs.checkOrX(currTrans.getSignWarning()), sender))
 												.color(NamedTextColor.LIGHT_PURPLE))
 										.append(Component.text()
-												.content("\n  - " + refs.getMsg("wwcsActiveTransSaved", ChatColor.GOLD + "" + currTrans.getHasBeenSaved(), sender))
+												.content("\n  - " + refs.getMsg("wwcsActiveTransSaved", refs.checkOrX(currTrans.getHasBeenSaved()), sender))
 												.color(NamedTextColor.LIGHT_PURPLE))
 										.append(Component.text()
 												.content("\n  - " + refs.getMsg("wwcsActiveTransPrevRate", ChatColor.GOLD + currTrans.getRateLimitPreviousTime(), sender))
@@ -208,5 +211,4 @@ public class WWCStats extends BasicCommand {
 		refs.sendFancyMsg("wwcsNotATranslator", "&6" + name, "&c", sender);
 		return true;
 	}
-
 }

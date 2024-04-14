@@ -377,43 +377,30 @@ public class CommonRefs {
 	  * Gets a message from the currently selected messages-XX.yml.
 	  * @param messageName - The name of the message from messages-XX.yml.
 	  * @param replacements - The list of replacement values that replace variables in the selected message. There is no sorting system; the list must be already sorted.
+	  * @param currPlayer - The current player to be targetted.
 	  * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
 	  */
-	// TODO: Do not constantly load messagesConfig(), load it once in dict
 	public String getMsg(String messageName, String[] replacements, Player currPlayer) {
-		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
-		if (currPlayer != null && main.isPlayerRecord(currPlayer) && !main.getPlayerRecord(currPlayer, false).getLocalizationCode().isEmpty()) {
-			debugMsg("Using user's lang getMsg() for " + messageName + ": " + main.getPlayerRecord(currPlayer, false).getLocalizationCode());
-			messagesConfig = main.getConfigManager().getCustomMessagesConfig(main.getPlayerRecord(currPlayer, false).getLocalizationCode());
-		}
-
-		/* Get message from messages.yml */
-		String convertedOriginalMessage = "";
-		// TODO: Replace -XX.yml with user's currently naguage
-		if (messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)) != null) {
-			convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
-		} else {
-			if (messagesConfig.getString("Messages." + ChatColor.stripColor(messageName)) == null) {
-				main.getLogger().severe("Bad message (" + messageName + ")! Please fix your messages-XX.yml.");
-				return ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-XX.yml.";
-			}
-			convertedOriginalMessage = messagesConfig.getString("Messages." + ChatColor.stripColor(messageName));
-		}
-
-		// Translate color codes in the original message
-		convertedOriginalMessage = ChatColor.translateAlternateColorCodes('&', convertedOriginalMessage);
-
-		// Escape single quotes for MessageFormat
-		convertedOriginalMessage = convertedOriginalMessage.replace("'", "''").trim();
-
-		// Return fixedMessage with replaced vars
-		return MessageFormat.format(convertedOriginalMessage, (Object[]) replacements);
+		return serial(getFancyMsg(messageName, replacements, "", currPlayer));
 	}
+
+	/**
+	 * Gets a message from the currently selected messages-XX.yml.
+	 * @param messageName - The name of the message from messages-XX.yml.
+	 * @param replacements - The list of replacement values that replace variables in the selected message. There is no sorting system; the list must be already sorted.
+	 * @param resetCode - The color code sequence (&4&l, etc.) that the rest of the message should use besides the replacement values.
+	 * @param sender - The person/entity to be sent this message. Can be null for nobody in particular.
+	 * @return String - The formatted message from messages-XX.yml. A warning will be returned instead if messageName is missing from messages-XX.yml.
+	 */
 	public TextComponent getFancyMsg(String messageName, String[] replacements, String resetCode, CommandSender sender) {
 		YamlConfiguration messagesConfig = main.getConfigManager().getMsgsConfig();
-		if (sender instanceof Player && main.isPlayerRecord((Player)sender) && !main.getPlayerRecord((Player) sender, false).getLocalizationCode().isEmpty()) {
-			debugMsg("Using user's lang getFancyMsg() for " + messageName + ":" + main.getPlayerRecord((Player)sender, false).getLocalizationCode());
-			messagesConfig = main.getConfigManager().getCustomMessagesConfig(main.getPlayerRecord((Player) sender, false).getLocalizationCode());
+		String code = "";
+		String globalCode = main.getConfigManager().getMainConfig().getString("General.pluginLang");
+		if (sender instanceof Player && main.isPlayerRecord((Player)sender)) {
+			code = main.getPlayerRecord((Player) sender, false).getLocalizationCode();
+			if (!code.isEmpty()) {
+				messagesConfig = main.getConfigManager().getCustomMessagesConfig(code);
+			}
 		}
 
 		for (int i = 0; i < replacements.length; i++) {
@@ -427,8 +414,13 @@ public class CommonRefs {
 			convertedOriginalMessage += ChatColor.translateAlternateColorCodes('&', messagesConfig.getString("Overrides." + ChatColor.stripColor(messageName)));
 		} else {
 			if (messagesConfig.getString("Messages." + ChatColor.stripColor(messageName)) == null) {
-				main.getLogger().severe("Bad message (" + messageName + ")! Please fix your messages-XX.yml.");
-				return Component.text().content(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-XX.yml.").build();
+				if (code.isEmpty()) {
+					main.getLogger().severe("Bad message (" + messageName + ")! Please fix your messages-" + globalCode + ".yml.");
+					return Component.text().content(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-" + globalCode + ".yml.").build();
+				} else {
+					main.getLogger().severe("Bad message (" + messageName + ")! Please fix your messages-" + code + ".yml.");
+					return Component.text().content(ChatColor.RED + "Bad message (" + messageName + ")! Please fix your messages-" + code + ".yml.").build();
+				}
 			}
 			convertedOriginalMessage += messagesConfig.getString("Messages." + ChatColor.stripColor(messageName));
 		}
@@ -866,6 +858,18 @@ public class CommonRefs {
 			return true;
 		}
 		return false;
+	}
+
+	/**
+	 * Returns a check or an X if true/false with RED/GREEN/BOLD coloring.
+	 * @param inBool
+	 * @return X or check mark
+	 */
+	public String checkOrX(boolean inBool) {
+		if (inBool) {
+			return ChatColor.BOLD + "" + ChatColor.GREEN + "\u2713";
+		}
+		return ChatColor.BOLD + "" + ChatColor.RED + "\u2717";
 	}
 
 	public boolean detectOutdatedTable(String tableName) {

@@ -45,7 +45,7 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 		return SmartInventory.builder().id("overrideModifyMenu")
 				.provider(this).size(3, 9)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesModifyOverride", inPlayer))
+					.title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesModifyOverride", inPlayer))
 				.build();
 	}
 	
@@ -79,7 +79,7 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 						BukkitRunnable out = new BukkitRunnable() {
 							@Override
 							public void run() {
-								new MessagesOverrideCurrentListGui(inLang, inPlayer).overrideMessagesSettings.open(player);
+								new MessagesOverrideCurrentListGui(inLang, inPlayer).getOverrideMessagesSettings().open(player);
 							}
 						};
 						refs.runSync(out);
@@ -90,7 +90,7 @@ public class MessagesOverrideModifyGui implements InventoryProvider {
 			
 			
 			/* Left Option: Previous Page */
-			invManager.setCommonButton(1, 2, player, contents, "Previous", new Object[] {new MessagesOverrideCurrentListGui(inLang, inPlayer).overrideMessagesSettings});
+			invManager.setCommonButton(1, 2, player, contents, "Previous", new Object[] {new MessagesOverrideCurrentListGui(inLang, inPlayer).getOverrideMessagesSettings()});
 		} catch (Exception e) {
 			invManager.inventoryError(player, e);
 		}

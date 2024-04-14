@@ -27,11 +27,13 @@ public class MessagesOverridePickLangGui implements InventoryProvider {
 
     private WWCInventoryManager invManager = main.getInventoryManager();
 
-    public final SmartInventory overrideMessagesSettingsPicker = SmartInventory.builder().id("overrideMessagesMenuPicker")
-            .provider(this).size(6, 9)
-            .manager(invManager)
-            .title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettingsPicker", null))
-            .build();
+    public SmartInventory getMessagesOverridePickLangGui() {
+        return SmartInventory.builder().id("overrideMessagesMenuPicker")
+                .provider(this).size(6, 9)
+                .manager(invManager)
+                .title(ChatColor.BLUE + refs.getMsg("wwcConfigGUIChatMessagesOverrideSettingsPicker", null))
+                .build();
+    }
 
     @Override
     public void init(Player player, InventoryContents contents) {
@@ -62,7 +64,7 @@ public class MessagesOverridePickLangGui implements InventoryProvider {
 
                 langsFormatted[currSpot] = ClickableItem.of(currentEntry, e -> {
                     // Open Specific Override GUI
-                    new MessagesOverrideCurrentListGui(eaLang, player).overrideMessagesSettings.open(player);
+                    new MessagesOverrideCurrentListGui(eaLang, player).getOverrideMessagesSettings().open(player);
                 });
                 currSpot++;
             }
