@@ -107,6 +107,17 @@ public class CommonRefs {
 		tableSchemas.put("playerRecords", playerRecordsSchema);
 	}
 
+	public boolean checkIfValidLocalLang(String in) {
+		for (String supportedPluginLangCode : supportedPluginLangCodes) {
+			if (supportedPluginLangCode
+					.equalsIgnoreCase(in)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
 	public void runAsync(BukkitRunnable in) {
 		runAsync(true, in);
 	}

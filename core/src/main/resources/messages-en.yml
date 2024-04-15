@@ -366,8 +366,10 @@ Messages:
   wwclLangChanged: 'Your localization was changed to {0}.'
   wwclLangInvalid: '{0} is not a valid localization. Supported localizations: {1}'
   wwclLangPlayerNotValid: '{0} is not a valid player.'
+  wwclLangAlreadyStopped: 'You do not have a localization set.'
   wwclLangStoppedOtherPlayerSender: 'Reset the localization of {0} to the server default.'
   wwclLangChangedOtherPlayerSender: 'Changed the localization of {0} to {1}.'
+  wwclLangAlreadyStoppedOtherPlayerSender: '{0} does not have a localization set.'
   #------------------- /wwctb Messages ------------------
   wwctbPlayerNotFound: 'Player {0} is either not found, or is not an active translator.'
   wwctbNotATranslator: 'You are not an active translator! Make sure you have set this with /wwct.'

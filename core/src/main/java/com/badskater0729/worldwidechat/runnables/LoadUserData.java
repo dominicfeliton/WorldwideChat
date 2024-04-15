@@ -81,7 +81,7 @@ public class LoadUserData implements Runnable {
 								rs.getInt("successfulTranslations")
 						);
 						recordToAdd.setLocalizationCode("");
-						if (rs.getString("localizationCode") != null && !rs.getString("localizationCode").isEmpty()) {
+						if (rs.getString("localizationCode") != null && !rs.getString("localizationCode").isEmpty() && refs.checkIfValidLocalLang(rs.getString("localizationCode"))) {
 							recordToAdd.setLocalizationCode(rs.getString("localizationCode"));
 						}
 						recordToAdd.setHasBeenSaved(true);
@@ -139,7 +139,7 @@ public class LoadUserData implements Runnable {
 								rs.getInt("successfulTranslations")
 						);
 						recordToAdd.setLocalizationCode("");
-						if (rs.getString("localizationCode") != null && !rs.getString("localizationCode").isEmpty()) {
+						if (rs.getString("localizationCode") != null && !rs.getString("localizationCode").isEmpty() && refs.checkIfValidLocalLang(rs.getString("localizationCode"))) {
 							recordToAdd.setLocalizationCode(rs.getString("localizationCode"));
 						}
 						recordToAdd.setHasBeenSaved(true);
@@ -168,7 +168,7 @@ public class LoadUserData implements Runnable {
 						currFileConfig.getInt("attemptedTranslations"),
 						currFileConfig.getInt("successfulTranslations"));
 				currRecord.setLocalizationCode("");
-				if (currFileConfig.getString("localizationCode") != null && !currFileConfig.getString("localizationCode").isEmpty()) {
+				if (currFileConfig.getString("localizationCode") != null && !currFileConfig.getString("localizationCode").isEmpty() && refs.checkIfValidLocalLang(currFileConfig.getString("localizationCode"))) {
 					currRecord.setLocalizationCode(currFileConfig.getString("localizationCode"));
 				}
 				currRecord.setHasBeenSaved(true);
