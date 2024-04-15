@@ -29,6 +29,8 @@ public class WWCTranslateRateLimit extends BasicCommand {
 
 	@Override
 	public boolean processCommand() {
+		// TODO: Add stop as well as 0 to disable
+
 		/* Sanitize args */
 		if (args.length > 2) {
 			// Not enough/too many args
@@ -38,7 +40,8 @@ public class WWCTranslateRateLimit extends BasicCommand {
 
 		/* Disable existing personal rate limit */
 		if (args.length == 0 && isConsoleSender) {
-			return refs.sendNoConsoleChatMsg(sender);
+			refs.sendFancyMsg("wwctInvalidArgs", "", "&c", null);
+			return false;
 		} else if ((args.length == 0 || (args.length == 1 && args[0].equalsIgnoreCase(sender.getName())))) {
 			return changeRateLimit(sender.getName(), 0);
 		}

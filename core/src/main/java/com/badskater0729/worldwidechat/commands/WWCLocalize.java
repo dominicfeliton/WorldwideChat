@@ -32,12 +32,24 @@ public class WWCLocalize extends BasicCommand {
     @Override
     public boolean processCommand() {
         // Simple command to set yours or a user's localization.
-        if (args.length == 0 || args.length > 2) {
+        if (args.length > 2) {
             refs.sendFancyMsg("wwctInvalidArgs", "", "&c", sender);
             return false;
         }
 
-        if (args.length == 1) {
+        if (args.length == 0) {
+            if (isConsoleSender) {
+                refs.sendFancyMsg("wwctInvalidArgs", "", "&c", sender);
+                return false;
+            }
+            return changeLocalization(sender.getName(), "stop");
+        } else if (args.length == 1) {
+            if (isConsoleSender) {
+                return changeLocalization(args[0], "stop");
+            }
+            if (Bukkit.getPlayerExact(args[0]) != null) {
+                return changeLocalization(args[0], "stop");
+            }
             return changeLocalization(sender.getName(), args[0]);
         } else if (args.length == 2) {
             return changeLocalization(args[0], args[1]);

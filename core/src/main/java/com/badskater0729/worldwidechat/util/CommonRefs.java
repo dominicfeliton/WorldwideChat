@@ -469,7 +469,7 @@ public class CommonRefs {
 	
 	/**
 	  * Sends the user a properly formatted message through our adventure instance.
-	  * @param sender - The target sender. Can be any entity that can receive messages.
+	  * @param sender - The target sender. Can be any entity that can receive messages. CANNOT BE NULL.
 	  * @param originalMessage - The unformatted TextComponent that should be sent to sender.
 	  * @return
 	  */
