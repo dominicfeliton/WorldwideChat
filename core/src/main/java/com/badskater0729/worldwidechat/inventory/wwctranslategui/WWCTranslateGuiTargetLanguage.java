@@ -71,23 +71,29 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 			/* Add each supported language from each respective translator */
 			for (int i = 0; i < main.getSupportedOutputLangs().size(); i++) {
 				SupportedLang currLang = main.getSupportedOutputLangs().get(i);
+				boolean unsupported;
 
-				if (selectedSourceLanguage.equalsIgnoreCase(currLang.getLangCode())) {
-					// TODO: Maybe just make it non-clickable?
-					refs.debugMsg("Skipping " + currLang.getLangCode() + " as it is source lang...");
-					continue;
-				}
-
-				ItemStack itemForLang = XMaterial.ARROW.parseItem();
+				// Change item depending on version + condition
+                ItemStack itemForLang = XMaterial.ARROW.parseItem();
 				if (XMaterial.TARGET.parseItem() != null) {
 					itemForLang = XMaterial.TARGET.parseItem();
+				}
+				if (selectedSourceLanguage.equalsIgnoreCase(currLang.getLangCode())) {
+					refs.debugMsg("Skipping " + currLang.getLangCode() + " as it is source lang...");
+					itemForLang = XMaterial.BARRIER.parseItem();
+					unsupported = true;
+				} else {
+					unsupported = false;
 				}
 				ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 				ArrayList<String> lore = new ArrayList<>();
 				SupportedLang userLang = refs.getSupportedTranslatorLang(currTranslator.getOutLangCode(), "out");
-				
+
 				/* Add Glow Effect */
-				if (userLang.getLangCode().equals(currLang.getLangCode()) || userLang.getLangName().equals(currLang.getLangName())) {
+				if (unsupported) {
+					lore.add(ChatColor.RED + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceSameLang", inPlayer));
+				}
+				if (!unsupported && (userLang.getLangCode().equals(currLang.getLangCode()) || userLang.getLangName().equals(currLang.getLangName()))) {
 					invManager.addGlowEffect(itemForLangMeta);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive", inPlayer));
 				}
@@ -102,6 +108,10 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 				
 				listOfAvailableLangs[i] = ClickableItem.of(itemForLang, e -> {
 					/* Send to /wwct */
+					if (unsupported) {
+						return;
+					}
+
 					WWCTranslate translateCommand;
 					if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {
 						translateCommand = new WWCTranslate((CommandSender)player, null, null, new String[] {main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName(), selectedSourceLanguage, outLang});
