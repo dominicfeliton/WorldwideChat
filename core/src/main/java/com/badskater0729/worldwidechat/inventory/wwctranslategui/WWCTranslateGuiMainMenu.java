@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.UUID;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
+import com.badskater0729.worldwidechat.util.PlayerRecord;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.conversations.ConversationFactory;
@@ -78,6 +79,30 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 			contents.set(2, 4, ClickableItem.of(translationButton, e -> {
 				new WWCTranslateGuiSourceLanguage("", targetPlayerUUID, inPlayer).getSourceLanguageInventory().open(player);
 			}));
+
+			/* Localization button */
+			if (!targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED") && player.hasPermission("worldwidechat.wwcl")
+					&& (player.hasPermission("worldwidechat.wwcl.otherplayers") || player.getUniqueId().toString().equals(targetPlayerUUID))) {
+				PlayerRecord currRecord = main.getPlayerRecord(targetPlayerUUID, true);
+
+				ItemStack localizationButton = XMaterial.PAPER.parseItem();
+				ItemMeta localizationMeta = localizationButton.getItemMeta();
+				List<String> outLore = new ArrayList<>();
+				if (!currRecord.getLocalizationCode().isEmpty()) {
+					localizationMeta.setDisplayName(ChatColor.GREEN +
+							refs.getMsg("wwctGUILocalizationButton", inPlayer));
+					outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUILocalizeExistingValue", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + currRecord.getLocalizationCode(), inPlayer));
+					invManager.addGlowEffect(localizationMeta);
+				} else {
+					localizationMeta.setDisplayName(ChatColor.YELLOW +
+							refs.getMsg("wwctGUILocalizationButton", inPlayer));
+				}
+				localizationMeta.setLore(outLore);
+				localizationButton.setItemMeta(localizationMeta);
+				contents.set(3, 4, ClickableItem.of(localizationButton, e -> {
+					new WWCTranslateGuiLocalizationMenu(targetPlayerUUID, inPlayer).getLocalizationInventory().open(player);
+				}));
+			}
 
 			/* Set active translator to our current target */
 			ActiveTranslator targetTranslator = main.getActiveTranslator(targetPlayerUUID);
@@ -196,7 +221,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 								+ refs.getMsg("wwctGUIItemButton", inPlayer));
 					}
 					itemButton.setItemMeta(itemMeta);
-					contents.set(2, 6, ClickableItem.of(itemButton, e -> {
+					contents.set(1, 7, ClickableItem.of(itemButton, e -> {
 						String[] args = { main.getServer().getPlayer(UUID.fromString(targetPlayerUUID)).getName() };
 						WWCTranslateItem translateItem = new WWCTranslateItem((CommandSender) player, null, null, args);
 						translateItem.processCommand();
@@ -235,9 +260,8 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 					if (targetTranslator.getTranslatingChatOutgoing() || targetTranslator.getTranslatingChatIncoming()) {
 						invManager.addGlowEffect(chatMeta);
 						List<String> outLoreChat = new ArrayList<>();
-						// TODO: Change to check mark/X mark
-						outLoreChat.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingChatIncomingEnabled", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getTranslatingChatIncoming(), inPlayer));
-						outLoreChat.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingChatOutgoingEnabled", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getTranslatingChatOutgoing(), inPlayer));
+						outLoreChat.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingChatIncomingEnabled", refs.checkOrX(targetTranslator.getTranslatingChatIncoming()), inPlayer));
+						outLoreChat.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingChatOutgoingEnabled", refs.checkOrX(targetTranslator.getTranslatingChatOutgoing()), inPlayer));
 						chatMeta.setLore(outLoreChat);
 						chatMeta.setDisplayName(ChatColor.GREEN
 								+ refs.getMsg("wwctGUIChatButton", inPlayer));
@@ -246,7 +270,7 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 								+ refs.getMsg("wwctGUIChatButton", inPlayer));
 					}
 					chatButton.setItemMeta(chatMeta);
-					contents.set(3, 4, ClickableItem.of(chatButton, e -> {
+					contents.set(2, 6, ClickableItem.of(chatButton, e -> {
 						new WWCTranslateGuiChatMenu(targetPlayerUUID, inPlayer).getTranslateChatMenu().open(player);
 					}));
 				}

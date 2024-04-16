@@ -29,8 +29,6 @@ public class WWCTranslateRateLimit extends BasicCommand {
 
 	@Override
 	public boolean processCommand() {
-		// TODO: Add stop as well as 0 to disable
-
 		/* Sanitize args */
 		if (args.length > 2) {
 			// Not enough/too many args

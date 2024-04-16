@@ -70,13 +70,20 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 
 			/* Add each supported language from each respective translator */
 			for (int i = 0; i < main.getSupportedOutputLangs().size(); i++) {
+				SupportedLang currLang = main.getSupportedOutputLangs().get(i);
+
+				if (selectedSourceLanguage.equalsIgnoreCase(currLang.getLangCode())) {
+					// TODO: Maybe just make it non-clickable?
+					refs.debugMsg("Skipping " + currLang.getLangCode() + " as it is source lang...");
+					continue;
+				}
+
 				ItemStack itemForLang = XMaterial.ARROW.parseItem();
 				if (XMaterial.TARGET.parseItem() != null) {
 					itemForLang = XMaterial.TARGET.parseItem();
 				}
 				ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 				ArrayList<String> lore = new ArrayList<>();
-				SupportedLang currLang = main.getSupportedOutputLangs().get(i);
 				SupportedLang userLang = refs.getSupportedTranslatorLang(currTranslator.getOutLangCode(), "out");
 				
 				/* Add Glow Effect */

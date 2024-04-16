@@ -34,54 +34,63 @@ public class MenuGui implements InventoryProvider {
 
 	private WWCInventoryManager invManager = instance.getInventoryManager();
 
-	public static enum CONFIG_GUI_TAGS {
+	private Player inPlayer;
+
+	private String transName;
+
+	public MenuGui(Player inPlayer, String transName) {
+		this.inPlayer = inPlayer;
+		this.transName = transName;
+	}
+
+	public enum CONFIG_GUI_TAGS {
 		GEN_SET, STORAGE_SET, SQL_SET, MONGO_SET, POSTGRES_SET, CHAT_SET, TRANS_SET, WATSON_TRANS_SET, GOOGLE_TRANS_SET, AMAZON_TRANS_SET, LIBRE_TRANS_SET, DEEP_TRANS_SET, AZURE_TRANS_SET, SYSTRAN_TRANS_SET;
 		
 		public SmartInventory smartInv;
 	}
-	
-	public static void genAllConfigUIs(String transName) {
+
+	public void genAllConfigUIs() {
 		/* Generate inventories */
-		MenuGui generalSet = new MenuGui();
+		MenuGui generalSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.GEN_SET.smartInv = generalSet.genSmartInv("generalSettingsMenu", "wwcConfigGUIGeneralSettings");
 		
-		MenuGui storageSet = new MenuGui();
+		MenuGui storageSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.STORAGE_SET.smartInv = storageSet.genSmartInv("storageSettingsMenu", "wwcConfigGUIStorageSettings");
 		
-		MenuGui sqlSet = new MenuGui();
+		MenuGui sqlSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.SQL_SET.smartInv = sqlSet.genSmartInv("sqlSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUIStorageTypeSettings", new String[] {"MySQL"});
 		
-		MenuGui mongoSet = new MenuGui();
+		MenuGui mongoSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.MONGO_SET.smartInv = mongoSet.genSmartInv("mongoSettingsMenu", 3, 9, ChatColor.BLUE, "wwcConfigGUIStorageTypeSettings", new String[] {"MongoDB"});
 
-		MenuGui postgresSet = new MenuGui();
+		MenuGui postgresSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.POSTGRES_SET.smartInv = postgresSet.genSmartInv("postgresSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUIStorageTypeSettings", new String[] {"PostgreSQL"});
 		
-		MenuGui chatSet = new MenuGui();
+		MenuGui chatSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.CHAT_SET.smartInv = chatSet.genSmartInv("chatSettingsMenu", "wwcConfigGUIChatSettings");
 		
-		MenuGui transSet = new MenuGui();
+		MenuGui transSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.TRANS_SET.smartInv = transSet.genSmartInv("translatorSettingsMenu", 4, 9, ChatColor.BLUE, "wwcConfigGUITranslatorSettings");
 		
-		MenuGui transWatsonSet = new MenuGui();
+		MenuGui transWatsonSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.WATSON_TRANS_SET.smartInv = transWatsonSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Watson"});
 		
-		MenuGui transGoogleSet = new MenuGui();
+		MenuGui transGoogleSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.GOOGLE_TRANS_SET.smartInv = transGoogleSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Google"});
 		
-		MenuGui transAmazonSet = new MenuGui();
+		MenuGui transAmazonSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.AMAZON_TRANS_SET.smartInv = transAmazonSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Amazon"});
 		
-		MenuGui transLibreSet = new MenuGui();
+		MenuGui transLibreSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.LIBRE_TRANS_SET.smartInv = transLibreSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Libre"});
 		
-		MenuGui transDeepSet = new MenuGui();
+		MenuGui transDeepSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.DEEP_TRANS_SET.smartInv = transDeepSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"DeepL"});
 
-		MenuGui transAzureSet = new MenuGui();
+		MenuGui transAzureSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.AZURE_TRANS_SET.smartInv = transAzureSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Azure"});
 
-		MenuGui transSystranSet = new MenuGui();
+		MenuGui transSystranSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.SYSTRAN_TRANS_SET.smartInv = transSystranSet.genSmartInv("eachTranslatorSettings", "wwcConfigGUIEachTranslatorSettings", new String[] {"Systran"});
 
 		/* Generate inventory contents */
@@ -457,7 +466,7 @@ public class MenuGui implements InventoryProvider {
 		return SmartInventory.builder().id(id)
 				.provider(this).size(x, y)
 				.manager(WorldwideChat.instance.getInventoryManager())
-				.title(col + refs.getMsg(titleTag, args,null))
+				.title(col + refs.getMsg(titleTag, args,inPlayer))
 				.build();
 	}
 	
@@ -466,7 +475,7 @@ public class MenuGui implements InventoryProvider {
 		return SmartInventory.builder().id(id)
 		.provider(this).size(x, y)
 		.manager(WorldwideChat.instance.getInventoryManager())
-		.title(col + refs.getMsg(titleTag, null))
+		.title(col + refs.getMsg(titleTag, inPlayer))
 		.build();
 	}
 	

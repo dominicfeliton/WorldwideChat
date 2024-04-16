@@ -1,11 +1,9 @@
 package com.badskater0729.worldwidechat.listeners;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
+import com.badskater0729.worldwidechat.util.PlayerRecord;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -189,41 +187,26 @@ public class WWCTabCompleter implements TabCompleter {
 		} else if ((commandName.equals("wwcts") || commandName.equals("wwctb")
 				|| commandName.equals("wwcti") || commandName.equals("wwcte")
 				|| commandName.equals("wwctci") || commandName.equals("wwctco")) && args.length == 1 && sender.hasPermission("worldwidechat.wwct.otherplayers")) {
-			if (args[0].isEmpty()) {
-				for (String eaTranslatorUUID : main.getActiveTranslators().keySet()) {
-					if (!eaTranslatorUUID.equals("GLOBAL-TRANSLATE-ENABLED")
-							&& Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)) != null) {
-						out.add(Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)).getName());
-					}
-				}
-			} else {
-				for (String eaTranslatorUUID : main.getActiveTranslators().keySet()) {
-					if (!eaTranslatorUUID.equals("GLOBAL-TRANSLATE-ENABLED")
-							&& Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)) != null
-							&& (Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)).getName()).toLowerCase()
-									.startsWith(args[0].toLowerCase())) {
-						out.add(Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)).getName());
-					}
+			for (String eaTranslatorUUID : main.getActiveTranslators().keySet()) {
+				if (!eaTranslatorUUID.equals("GLOBAL-TRANSLATE-ENABLED")
+						&& Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)) != null
+						&& (Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)).getName()).toLowerCase()
+						.startsWith(args[0].toLowerCase())) {
+					out.add(Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)).getName());
 				}
 			}
 		
 		/* Commands: /wwcs */
 		} else if (commandName.equals("wwcs") && args.length == 1) {
-			if (args[0].isEmpty()) {
-				for (Player eaPlayer : Bukkit.getServer().getOnlinePlayers()) {
+			for (Player eaPlayer : Bukkit.getServer().getOnlinePlayers()) {
+				if (eaPlayer.getName().toLowerCase().startsWith(args[0].toLowerCase())) {
 					out.add(eaPlayer.getName());
-				}
-			} else {
-				for (Player eaPlayer : Bukkit.getServer().getOnlinePlayers()) {
-					if (eaPlayer.getName().toLowerCase().startsWith(args[0].toLowerCase())) {
-						out.add(eaPlayer.getName());
-					}
 				}
 			}
 		
 		/* Commands: /wwctrl */
 		} else if (commandName.equals("wwctrl") && args.length > 0 && args.length < 3) {
-			String[] suggestedSeconds = new String[] {"0", "3", "5", "10"};
+			String[] suggestedSeconds = new String[]{"0", "3", "5", "10"};
 
 			if (args[0].isEmpty()) {
 				for (String eaTranslatorUUID : main.getActiveTranslators().keySet()) {
@@ -232,11 +215,11 @@ public class WWCTabCompleter implements TabCompleter {
 						out.add(Bukkit.getPlayer(UUID.fromString(eaTranslatorUUID)).getName());
 					}
 				}
-				if (main.isActiveTranslator((Player)sender)) {
-                    out.addAll(Arrays.asList(suggestedSeconds));
+				if (main.isActiveTranslator((Player) sender)) {
+					out.addAll(Arrays.asList(suggestedSeconds));
 				}
 			} else if (args.length == 1) {
-				if (StringUtils.isNumeric(args[0]) && main.isActiveTranslator((Player)sender)) {
+				if (StringUtils.isNumeric(args[0]) && main.isActiveTranslator((Player) sender)) {
 					for (String eaStr : suggestedSeconds) {
 						if (eaStr.startsWith(args[0])) {
 							out.add(eaStr);
@@ -261,6 +244,36 @@ public class WWCTabCompleter implements TabCompleter {
 					}
 				}
 			}
+		/* Commands: /wwcl */
+		} else if (commandName.equals("wwcl") && args.length > 0 && args.length < 3) {
+			if (args.length == 1) {
+				for (PlayerRecord eaRecord : main.getPlayerRecords().values()) {
+					if (!eaRecord.getUUID().equals("GLOBAL-TRANSLATE-ENABLED")
+					&& Bukkit.getPlayer(UUID.fromString(eaRecord.getUUID())) != null
+					&& (Bukkit.getPlayer(UUID.fromString(eaRecord.getUUID())).getName())
+							.toLowerCase().startsWith(args[0].toLowerCase())) {
+						out.add(Bukkit.getPlayer(UUID.fromString(eaRecord.getUUID())).getName());
+					}
+				}
+				for (String supportedLangCode : CommonRefs.supportedPluginLangCodes) {
+					if (supportedLangCode.startsWith(args[0])) {
+						out.add(supportedLangCode);
+					}
+				}
+				if ("stop".startsWith(args[0]) && main.isPlayerRecord((Player)sender) && !main.getPlayerRecord((Player)sender, false).getLocalizationCode().isEmpty()) {
+					out.add("stop");
+				}
+			} else if (args.length == 2) {
+				for (String supportedLangCode : CommonRefs.supportedPluginLangCodes) {
+					if (supportedLangCode.startsWith(args[1]) && Bukkit.getPlayerExact(args[0]) != null) {
+						out.add(supportedLangCode);
+					}
+				}
+				if (Bukkit.getPlayerExact(args[0]) != null && "stop".startsWith(args[1]) && main.isPlayerRecord(Bukkit.getPlayerExact(args[0])) && !main.getPlayerRecord(Bukkit.getPlayerExact(args[0]), false).getLocalizationCode().isEmpty()) {
+					out.add("stop");
+				}
+			}
+		/* Commands: /wwcd */
 		} else if (commandName.equals("wwcd") && args.length > 0 && args.length < 3) {
 			if (args.length == 1) {
 				if ("cache".startsWith(args[0])) {

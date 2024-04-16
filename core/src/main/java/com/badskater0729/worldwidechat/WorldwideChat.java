@@ -52,7 +52,7 @@ import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "04152024-1"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "04162024-2"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -483,9 +483,6 @@ public class WorldwideChat extends JavaPlugin {
 		/* Run tasks after translator loaded */
 		// Load saved user data
 		new LoadUserData(tempTransName).run();
-
-		// Pre-generate hard coded Config UIs
-		MenuGui.genAllConfigUIs(tempTransName);
 
         // Schedule automatic user data sync
 		BukkitRunnable sync = new BukkitRunnable() {
