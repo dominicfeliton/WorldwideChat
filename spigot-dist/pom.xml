@@ -21,7 +21,7 @@
   <dependencies>
     <dependency>
       <groupId>com.badskater0729.worldwidechat</groupId>
-      <artifactId>WorldwideChat-core</artifactId>
+      <artifactId>WorldwideChat-bukkit-core</artifactId>
       <version>1.16.0</version>
       <scope>compile</scope>
     </dependency>
@@ -46,7 +46,7 @@
       <resource>
         <targetPath>.</targetPath>
         <filtering>true</filtering>
-        <directory>${basedir}/../core/src/main/resources/</directory>
+        <directory>../bukkit-core/src/main/resources/</directory>
         <includes>
           <include>*.yml</include>
         </includes>
@@ -308,7 +308,7 @@
       </plugin>
 
     </plugins>
-    <sourceDirectory>${basedir}/../core/src/main/java</sourceDirectory>
+    <sourceDirectory>../bukkit-core/src/main/java</sourceDirectory>
   </build>
 
 </project>
