@@ -137,7 +137,10 @@ public class WorldwideChat extends JavaPlugin {
 		serverFactory = new ServerAdapterFactory();
 
 		// Check current server version + set adapters
-		checkAndInitAdapters();
+		if (!checkAndInitAdapters()) {
+			getServer().getPluginManager().disablePlugin(this);
+			return;
+		}
 
 		// TODO: Move BukkitAudiences to Adapters (therefore all of this)
 		String currPlatform = serverFactory.getServerInfo().getKey();
@@ -391,6 +394,12 @@ public class WorldwideChat extends JavaPlugin {
 	  * @param taskID - Task to ignore when cancelling tasks, in case this is being ran async
 	  */
 	public void cancelBackgroundTasks(boolean isReloading, boolean wasPreviouslyInvalid, int taskID) {
+		// Do not do any of this if CommonRefs/WWCHelper/ServerFactory are null!
+		if (refs == null || wwcHelper == null || serverFactory == null) {
+			return;
+		}
+		refs.debugMsg("Cancel background tasks!");
+
 		// Shut down executors
 		callbackExecutor.shutdownNow();
 
@@ -431,7 +440,9 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		
 		// Close all inventories
-		if (!isReloading) refs.closeAllInvs();
+		if (!isReloading) {
+			refs.closeAllInvs();
+		}
 
 		// Cancel + remove all tasks
 		this.getServer().getScheduler().cancelTasks(this);
@@ -547,7 +558,7 @@ public class WorldwideChat extends JavaPlugin {
 	/**
 	 * Initialize adapters and check MC version/platform
 	 */
-	private void checkAndInitAdapters() {
+	private boolean checkAndInitAdapters() {
 		// Init vars
 		Pair<String, String> serverInfo = serverFactory.getServerInfo();
 		String type = serverInfo.getKey();
@@ -583,6 +594,11 @@ public class WorldwideChat extends JavaPlugin {
 		// Load methods
 		refs = serverFactory.getCommonRefs();
 		wwcHelper = serverFactory.getWWCHelper();
+
+		if (refs == null || wwcHelper == null) {
+			return false;
+		}
+		return true;
 	}
 
 	/**
