@@ -548,9 +548,6 @@ Messages:
   wwcTimeoutException: Pyyntösi aikakatkaisi. Yritä uudelleen.
   wwctbNoMoreOldBooks: Kirjan käännös ei toimi palvelinversiossasi. Jos käytät uudempaa
     Minecraft-versiota ja saat tämän virheen, ota yhteyttä kehittäjään.
-  wwcOldDatabaseStruct: 'Valitsemallasi tietokannalla on tehoton asennus aiemmasta
-    WorldwideChat-versiosta. Voit korjata ongelman suorittamalla seuraavan komennon:
-    /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Valitse lokalisointi
   wwcConfigGUIMessagesOverridePickChatButton: Ohittaa oletusliitännäisviestit
   wwcConfigGUIChatMessagesOverrideSettings: Oletusviestien ohittaminen ({0})
@@ -570,4 +567,7 @@ Messages:
   wwctGUILocalizeStopButton: Palauta lokalisointi palvelimen oletusarvoon
   wwctGUILocalizeTitle: Lokalisointivalikko
   wwctGUISourceSameLang: Tämä kieli olisi sama kuin lähdekielesi.
+  wwcOldDatabaseStruct: 'Valitsemallasi tietokannalla on tehoton asennus aiemmasta
+    WorldwideChat-versiosta. Voit joko ottaa virheenkorjaustilan käyttöön ja korjata
+    ongelman itse, korjaa tämä ongelma suorittamalla seuraavan komennon: /wwcd convert'
 

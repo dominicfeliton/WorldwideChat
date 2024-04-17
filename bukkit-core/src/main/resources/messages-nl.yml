@@ -573,9 +573,6 @@ Messages:
   wwctbNoMoreOldBooks: Boekvertaling werkt niet op je serverversie. Als je een recentere
     versie van Minecraft gebruikt en je krijgt deze foutmelding, neem dan contact
     op met de ontwikkelaar.
-  wwcOldDatabaseStruct: 'De door u gekozen database heeft een inefficiënte configuratie
-    ten opzichte van een eerdere versie van WorldwideChat. Je kunt de volgende opdracht
-    uitvoeren om dit probleem op te lossen: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Kies Lokalisatie
   wwcConfigGUIMessagesOverridePickChatButton: Standaard plugin-berichten overschrijven
   wwcConfigGUIChatMessagesOverrideSettings: Standaardberichten overschrijven ({0})
@@ -598,4 +595,8 @@ Messages:
     de server
   wwctGUILocalizeTitle: Lokalisatiemenu
   wwctGUISourceSameLang: Deze taal zou dezelfde zijn als je brontaal.
+  wwcOldDatabaseStruct: 'De door u gekozen database heeft een inefficiënte configuratie
+    ten opzichte van een eerdere versie van WorldwideChat. U kunt de foutopsporingsmodus
+    inschakelen en het probleem zelf oplossen. Voer de volgende opdracht uit om dit
+    probleem op te lossen: /wwcd convert'
 

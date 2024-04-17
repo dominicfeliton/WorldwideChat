@@ -434,8 +434,6 @@ Messages:
   wwctrlRateLimitSetTarget: レート制限を {0} 秒から {1} 秒に設定します。
   wwcTimeoutException: リクエストがタイムアウトしました。もう一度試してください。
   wwctbNoMoreOldBooks: ご使用のサーバーバージョンでは、本の翻訳は機能しません。Minecraft の最新バージョンを使用していて、このエラーが表示される場合は、開発者に問い合わせてください。
-  wwcOldDatabaseStruct: 選択したデータベースは、以前のバージョンの WorldwideChat の設定では効率が悪いです。この問題を解決するには、/wwcd
-    convert コマンドを実行してください。
   wwcConfigGUIChatMessagesOverrideSettingsPicker: ローカリゼーションを選択
   wwcConfigGUIMessagesOverridePickChatButton: デフォルトプラグインメッセージの上書き
   wwcConfigGUIChatMessagesOverrideSettings: デフォルトメッセージの上書き ({0})
@@ -455,4 +453,6 @@ Messages:
   wwctGUILocalizeStopButton: ローカライズをサーバーのデフォルトにリセット
   wwctGUILocalizeTitle: ローカリゼーションメニュー
   wwctGUISourceSameLang: この言語はソース言語と同じになります。
+  wwcOldDatabaseStruct: 選択したデータベースは、以前のバージョンの WorldwideChat の設定では効率が悪いです。デバッグモードをオンにして問題を自分で修正するか、次のコマンドを実行して問題を解決することができます。/wwcd
+    convert
 

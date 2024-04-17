@@ -550,9 +550,6 @@ Messages:
   wwctbNoMoreOldBooks: પુસ્તક અનુવાદ તમારા સર્વર સંસ્કરણ પર કાર્યરત નથી. જો તમે Minecraft
     ના વધુ તાજેતરના સંસ્કરણ પર છો અને તમને આ ભૂલ મળે છે, તો કૃપા કરીને વિકાસકર્તાનો
     સંપર્ક કરો.
-  wwcOldDatabaseStruct: 'તમારા પસંદ કરેલા ડેટાબેઝમાં વર્લ્ડવાઇડચેટના અગાઉના સંસ્કરણમાંથી
-    બિનકાર્યક્ષમ સેટઅપ છે. તમે આ મુદ્દાને ઠીક કરવા માટે નીચેનો આદેશ ચલાવી શકો છો:
-    /wwcd કન્વર્ટ'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: સ્થાનિકીકરણ પસંદ કરો
   wwcConfigGUIMessagesOverridePickChatButton: ડિફોલ્ટ પ્લગઇન સંદેશાઓ ઓવરરા
   wwcConfigGUIChatMessagesOverrideSettings: ડિફોલ્ટ સંદેશાઓ ઓવરરાઇડ કરો ({0})
@@ -573,4 +570,7 @@ Messages:
   wwctGUILocalizeStopButton: સર્વર ડિફોલ્ટ પર સ્થાનિકીકરણ ફરીથી સેટ કરો
   wwctGUILocalizeTitle: સ્થાનિકીકરણ મેનૂ
   wwctGUISourceSameLang: આ ભાષા તમારી સ્રોત ભાષા જેવી જ હશે.
+  wwcOldDatabaseStruct: 'તમારા પસંદ કરેલા ડેટાબેઝમાં વર્લ્ડવાઇડચેટના અગાઉના સંસ્કરણમાંથી
+    બિનકાર્યક્ષમ સેટઅપ છે. તમે ક્યાં તો ડિબગ મોડ ચાલુ અને મુદ્દો જાતે ઠીક કરી શકો
+    છો, આ મુદ્દો ઠીક કરવા માટે નીચેના આદેશ ચલાવો: /wwcd કન્વર્ટ'
 

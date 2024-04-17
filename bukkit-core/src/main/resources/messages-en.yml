@@ -33,7 +33,7 @@ Messages:
   wwcSupportedServer: 'Initializing WorldwideChat for {0}...'
   wwcSupportedVersion: 'Enabling features for version {0}...'
   wwcInvalidStorageSession: '{0} is enabled in your config, but a connection is not established. Please try reloading to fix this, but please contact the developer if you previously received a successful connection message from {0}.'
-  wwcOldDatabaseStruct: 'Your chosen database has an inefficient setup from a previous version of WorldwideChat. You can run the following command to fix this issue: /wwcd convert'
+  wwcOldDatabaseStruct: 'Your chosen database has an inefficient setup from a previous version of WorldwideChat. You can either turn on debug mode and fix the issue yourself, run the following command to fix this issue: /wwcd convert'
   #------------------- Listener Messages -------------------
   wwcOnJoinTranslationNotificationSourceLang: 'You have an active translation session from {0} to {1}.'
   wwcOnJoinTranslationNotificationNoSourceLang: 'You have an active translation session to {0}.'

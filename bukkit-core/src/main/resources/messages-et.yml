@@ -532,9 +532,6 @@ Messages:
   wwcTimeoutException: Teie taotlus lõppes. Palun proovige uuesti.
   wwctbNoMoreOldBooks: Raamatutõlge ei tööta teie serveri versioonis. Kui kasutate
     Minecrafti uuemat versiooni ja saate selle vea, võtke ühendust arendajaga.
-  wwcOldDatabaseStruct: 'Teie valitud andmebaasis on ebatõhus seadistus võrreldes
-    WorldwideChati eelmisest versioonist. Selle probleemi lahendamiseks võite käivitada
-    järgmise käsu: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Valige lokaliseerimine
   wwcConfigGUIMessagesOverridePickChatButton: Vaikimisi pistikprogrammi sõnumite tühistamine
   wwcConfigGUIChatMessagesOverrideSettings: Vaikesõnumite tühistamine ({0})
@@ -555,4 +552,7 @@ Messages:
   wwctGUILocalizeStopButton: Lähtesta lokaliseerimine serveri vaikeolekusse
   wwctGUILocalizeTitle: Lokaliseerimismenüü
   wwctGUISourceSameLang: See keel oleks sama, mis teie lähtekeel.
+  wwcOldDatabaseStruct: 'Teie valitud andmebaasis on ebatõhus seadistus võrreldes
+    WorldwideChati eelmisest versioonist. Võite silumisrežiimi sisse lülitada ja probleemi
+    ise lahendada, selle probleemi lahendamiseks käivitage järgmine käsk: /wwcd convert'
 

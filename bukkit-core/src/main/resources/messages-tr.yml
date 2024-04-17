@@ -552,9 +552,6 @@ Messages:
   wwctbNoMoreOldBooks: Kitap çevirisi sunucu sürümünüzde işlevsel değildir. Minecraft'ın
     daha yeni bir sürümünü kullanıyorsanız ve bu hatayı alıyorsanız, lütfen geliştiriciyle
     iletişime geçin.
-  wwcOldDatabaseStruct: 'Seçtiğiniz veritabanı, WorldwideChat"in önceki bir sürümünden
-    verimsiz bir kuruluma sahiptir. Bu sorunu düzeltmek için aşağıdaki komutu çalıştırabilirsiniz:
-    /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Yerelleştirmeyi Seçin
   wwcConfigGUIMessagesOverridePickChatButton: Varsayılan eklenti mesajlarını geçersiz
     kıl
@@ -576,4 +573,8 @@ Messages:
   wwctGUILocalizeStopButton: Yerelleştirmeyi Sunucu Varsayılanına Sıfırla
   wwctGUILocalizeTitle: Yerelleştirme Menüsü
   wwctGUISourceSameLang: Bu dil, kaynak dilinizle aynı olacaktır.
+  wwcOldDatabaseStruct: 'Seçtiğiniz veritabanı, WorldwideChat"in önceki bir sürümünden
+    verimsiz bir kuruluma sahiptir. Hata ayıklama modunu açabilir ve sorunu kendiniz
+    düzeltebilirsiniz, bu sorunu düzeltmek için aşağıdaki komutu çalıştırabilirsiniz:
+    /wwcd convert'
 

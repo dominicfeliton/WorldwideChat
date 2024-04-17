@@ -554,9 +554,6 @@ Messages:
   wwctbNoMoreOldBooks: Bogoversættelse fungerer ikke på din serverversion. Hvis du
     bruger en nyere version af Minecraft, og du får denne fejl, bedes du kontakte
     udvikleren.
-  wwcOldDatabaseStruct: 'Din valgte database har en ineffektiv opsætning fra en tidligere
-    version af WorldwideChat. Du kan køre følgende kommando for at løse dette problem:
-    /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Vælg lokalisering
   wwcConfigGUIMessagesOverridePickChatButton: Tilsidesæt standardplugin-meddelelser
   wwcConfigGUIChatMessagesOverrideSettings: Tilsidesæt standardmeddelelser ({0})
@@ -577,4 +574,7 @@ Messages:
   wwctGUILocalizeStopButton: Nulstil lokalisering til serverstandard
   wwctGUILocalizeTitle: Lokaliseringsmenu
   wwctGUISourceSameLang: Dette sprog ville være det samme som dit kildesprog.
+  wwcOldDatabaseStruct: 'Din valgte database har en ineffektiv opsætning fra en tidligere
+    version af WorldwideChat. Du kan enten aktivere fejlfindingstilstand og løse problemet
+    selv, kør følgende kommando for at løse dette problem: /wwcd convert'
 

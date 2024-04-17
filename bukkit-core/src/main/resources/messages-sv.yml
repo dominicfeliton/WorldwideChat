@@ -563,9 +563,6 @@ Messages:
   wwcTimeoutException: Din förfrågan har gått ut. Vänligen försök igen.
   wwctbNoMoreOldBooks: Boköversättning fungerar inte på din serverversion. Om du använder
     en nyare version av Minecraft och du får det här felet, vänligen kontakta utvecklaren.
-  wwcOldDatabaseStruct: 'Din valda databas har en ineffektiv installation från en
-    tidigare version av WorldwideChat. Du kan köra följande kommando för att åtgärda
-    problemet: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Välj lokalisering
   wwcConfigGUIMessagesOverridePickChatButton: Åsidosätt standardmeddelanden för insticksprogram
   wwcConfigGUIChatMessagesOverrideSettings: Åsidosätt standardmeddelanden ({0})
@@ -587,4 +584,8 @@ Messages:
   wwctGUILocalizeStopButton: Återställ lokalisering till serverstandard
   wwctGUILocalizeTitle: Lokaliseringsmeny
   wwctGUISourceSameLang: Detta språk skulle vara detsamma som ditt källspråk.
+  wwcOldDatabaseStruct: 'Din valda databas har en ineffektiv installation från en
+    tidigare version av WorldwideChat. Du kan antingen aktivera felsökningsläge och
+    åtgärda problemet själv, kör följande kommando för att åtgärda problemet: /wwcd
+    convert'
 

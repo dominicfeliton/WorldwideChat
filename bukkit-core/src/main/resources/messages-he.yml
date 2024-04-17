@@ -499,8 +499,6 @@ Messages:
   wwcTimeoutException: פג הזמן לבקשתך. אנא נסה שוב.
   wwctbNoMoreOldBooks: תרגום ספרים אינו מתפקד בגרסת השרת שלך. אם אתה משתמש בגרסה עדכנית
     יותר של Minecraft ואתה מקבל שגיאה זו, אנא צור קשר עם המפתח.
-  wwcOldDatabaseStruct: 'למסד הנתונים שבחרת יש הגדרה לא יעילה מגירסה קודמת של WorldwideChat.
-    באפשרותך להפעיל את הפקודה הבאה כדי לתקן בעיה זו: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: בחר לוקליזציה
   wwcConfigGUIMessagesOverridePickChatButton: לעקוף הודעות ברירת מחדל של תוסף
   wwcConfigGUIChatMessagesOverrideSettings: לעקוף הודעות ברירת מחדל ({0})
@@ -520,4 +518,7 @@ Messages:
   wwctGUILocalizeStopButton: איפוס לוקליזציה לברירת המחדל של השרת
   wwctGUILocalizeTitle: תפריט לוקליזציה
   wwctGUISourceSameLang: שפה זו תהיה זהה לשפת המקור שלך.
+  wwcOldDatabaseStruct: 'למסד הנתונים שבחרת יש הגדרה לא יעילה מגירסה קודמת של WorldwideChat.
+    באפשרותך להפעיל מצב ניפוי באגים ולתקן את הבעיה בעצמך, הפעל את הפקודה הבאה כדי
+    לתקן בעיה זו: /wwcd convert'
 

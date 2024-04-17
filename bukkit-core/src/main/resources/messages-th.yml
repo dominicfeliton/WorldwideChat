@@ -487,8 +487,6 @@ Messages:
   wwcTimeoutException: คำขอของคุณหมดเวลาโปรดลองอีกครั้ง
   wwctbNoMoreOldBooks: การแปลหนังสือไม่สามารถใช้งานได้ในเวอร์ชันเซิร์ฟเวอร์ของคุณหากคุณใช้
     Minecraft เวอร์ชันล่าสุดและคุณได้รับข้อผิดพลาดนี้โปรดติดต่อนักพัฒนา
-  wwcOldDatabaseStruct: 'ฐานข้อมูลที่คุณเลือกมีการตั้งค่าที่ไม่มีประสิทธิภาพจาก WorldwideChat
-    เวอร์ชันก่อนหน้าคุณสามารถเรียกใช้คำสั่งต่อไปนี้เพื่อแก้ไขปัญหานี้: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: เลือกการแปลภาษา
   wwcConfigGUIMessagesOverridePickChatButton: แทนที่ข้อความปลั๊กอินเริ่มต้น
   wwcConfigGUIChatMessagesOverrideSettings: แทนที่ข้อความเริ่มต้น ({0})
@@ -508,4 +506,7 @@ Messages:
   wwctGUILocalizeStopButton: รีเซ็ตการแปลเป็นค่าเริ่มต้นเซิร์ฟเวอร์
   wwctGUILocalizeTitle: เมนูการแปลภาษา
   wwctGUISourceSameLang: ภาษานี้จะเหมือนกับภาษาต้นฉบับของคุณ
+  wwcOldDatabaseStruct: 'ฐานข้อมูลที่คุณเลือกมีการตั้งค่าที่ไม่มีประสิทธิภาพจาก WorldwideChat
+    เวอร์ชันก่อนหน้าคุณสามารถเปิดโหมดแก้ไขข้อบกพร่องและแก้ไขปัญหาด้วยตัวเองเรียกใช้คำสั่งต่อไปนี้เพื่อแก้ไขปัญหานี้:
+    /wwcd convert'
 

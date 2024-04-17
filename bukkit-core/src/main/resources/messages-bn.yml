@@ -553,9 +553,6 @@ Messages:
   wwctbNoMoreOldBooks: আপনার সার্ভার সংস্করণে বইয়ের অনুবাদ কার্যকরী নয়। আপনি যদি
     মাইনক্রাফ্টের আরও সাম্প্রতিক সংস্করণে থাকেন এবং আপনি এই ত্রুটিটি পান তবে দয়া
     করে বিকাশকারীর সাথে যোগাযোগ করুন।
-  wwcOldDatabaseStruct: 'আপনার নির্বাচিত ডাটাবেসে WorldwideChat-এর পূর্ববর্তী সংস্করণ
-    থেকে একটি অকার্যকর সেটআপ রয়েছে। এই সমস্যাটি ঠিক করতে আপনি নিম্নলিখিত কমান্ডটি
-    চালাতে পারেন: /wwcd রূপান্তর'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: স্থানীয়করণ চয়ন করুন
   wwcConfigGUIMessagesOverridePickChatButton: ডিফল্ট প্লাগইন বার্তাগুলি ওভাররা
   wwcConfigGUIChatMessagesOverrideSettings: ডিফল্ট বার্তাগুলি ওভাররাইড করুন ({0})
@@ -576,4 +573,8 @@ Messages:
   wwctGUILocalizeStopButton: সার্ভার ডিফল্টটিতে স্থানীয়করণ
   wwctGUILocalizeTitle: স্থানীয়করণ মেনু
   wwctGUISourceSameLang: এই ভাষা আপনার উৎস ভাষার মতোই হবে।
+  wwcOldDatabaseStruct: 'আপনার নির্বাচিত ডাটাবেসে WorldwideChat-এর পূর্ববর্তী সংস্করণ
+    থেকে একটি অকার্যকর সেটআপ রয়েছে। আপনি হয় ডিবাগ মোড চালু করতে পারেন এবং নিজেই
+    সমস্যাটি ঠিক করতে পারেন, এই সমস্যাটি ঠিক করতে নিম্নলিখিত কমান্ডটি চালান: /wwcd
+    রূপান্তর'
 

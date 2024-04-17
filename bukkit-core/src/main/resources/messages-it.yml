@@ -586,9 +586,6 @@ Messages:
   wwctbNoMoreOldBooks: La traduzione del libro non funziona sulla tua versione server.
     Se utilizzi una versione più recente di Minecraft e ricevi questo errore, contatta
     lo sviluppatore.
-  wwcOldDatabaseStruct: 'Il database scelto ha una configurazione inefficiente rispetto
-    a una versione precedente di WorldwideChat. È possibile eseguire il seguente comando
-    per risolvere il problema: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Scegli la localizzazione
   wwcConfigGUIMessagesOverridePickChatButton: Sostituisci i messaggi predefiniti del
     plugin
@@ -613,4 +610,8 @@ Messages:
     del server
   wwctGUILocalizeTitle: Menu di localizzazione
   wwctGUISourceSameLang: Questa lingua sarà la stessa della tua lingua di partenza.
+  wwcOldDatabaseStruct: 'Il database scelto ha una configurazione inefficiente rispetto
+    a una versione precedente di WorldwideChat. Puoi attivare la modalità di debug
+    e risolvere il problema da solo, esegui il seguente comando per risolvere il problema:
+    /wwcd convert'
 

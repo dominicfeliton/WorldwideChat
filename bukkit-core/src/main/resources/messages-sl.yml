@@ -560,9 +560,6 @@ Messages:
   wwcTimeoutException: Vaša zahteva je potekla. Prosimo, poskusite znova.
   wwctbNoMoreOldBooks: Prevajanje knjig v vaši različici strežnika ne deluje. Če uporabljate
     novejšo različico Minecrafta in se pojavi ta napaka, se obrnite na razvijalca.
-  wwcOldDatabaseStruct: 'Vaša izbrana zbirka podatkov ima neučinkovito nastavitev
-    iz prejšnje različice WorldwideChat. Če želite odpraviti to težavo, lahko zaženete
-    naslednji ukaz: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Izberite Lokalizacijo
   wwcConfigGUIMessagesOverridePickChatButton: Preglasitev privzetih sporočil vtičnikov
   wwcConfigGUIChatMessagesOverrideSettings: Preglasitev privzetih sporočil ({0})
@@ -582,4 +579,8 @@ Messages:
   wwctGUILocalizeStopButton: Ponastavi lokalizacijo na privzeto strežnik
   wwctGUILocalizeTitle: Meni za lokalizacijo
   wwctGUISourceSameLang: Ta jezik bi bil enak vašemu izvornemu jeziku.
+  wwcOldDatabaseStruct: 'Vaša izbrana zbirka podatkov ima neučinkovito nastavitev
+    iz prejšnje različice WorldwideChat. Lahko vklopite način odpravljanja napak in
+    težavo odpravite sami, zaženite naslednji ukaz, da odpravite to težavo: /wwcd
+    convert'
 

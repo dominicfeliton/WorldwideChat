@@ -542,8 +542,6 @@ Messages:
   wwcTimeoutException: आपली विनंती वेळ पूर्ण झाली. पुन्हा प्रयत्न करा.
   wwctbNoMoreOldBooks: आपल्या सर्व्हर आवृत्तीवर पुस्तक भाषांतर कार्यरत नाही आपण माइनक्राफ्टच्या
     अधिक अलीकडील आवृत्तीवर असाल आणि आपल्याला ही त्रुटी मिळाली तर कृपया
-  wwcOldDatabaseStruct: 'आपल्या निवडलेल्या डेटाबेसमध्ये वर्ल्डविडचॅटच्या मागील आवृत्तीमधील
-    अकार्यक्षम या समस्येचे निराकरण करण्यासाठी आपण खालील कमांड चालवू शकता: /wwcd कन्'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: स्थानिकीकरण
   wwcConfigGUIMessagesOverridePickChatButton: ओव्हरराइड डीफॉल्ट प्
   wwcConfigGUIChatMessagesOverrideSettings: डीफॉल्ट संदेश ओव्हरराइड करणे {0}
@@ -563,4 +561,7 @@ Messages:
   wwctGUILocalizeStopButton: सर्व्हर डीफॉल्टवर लोकला
   wwctGUILocalizeTitle: स्थानिकीकरण
   wwctGUISourceSameLang: ही भाषा आपल्या स्रोत भाषेप्रमाणेच असेल.
+  wwcOldDatabaseStruct: आपल्या निवडलेल्या डेटाबेसमध्ये वर्ल्डविडचॅटच्या मागील आवृत्तीमधील
+    अकार्यक्षम आपण एकतर डीबग मोड चालू करू शकता आणि समस्येचे स्वतःच निराकरण करू शकता,
+    या समस्येचे निराकरण करण्यासाठी खालील कमांड
 

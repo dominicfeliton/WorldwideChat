@@ -547,9 +547,6 @@ Messages:
   wwctbNoMoreOldBooks: Terjemahan buku tidak berfungsi pada versi server Anda. Jika
     Anda menggunakan versi Minecraft yang lebih baru dan Anda mendapatkan kesalahan
     ini, silakan hubungi pengembang.
-  wwcOldDatabaseStruct: 'Basis data yang Anda pilih memiliki pengaturan yang tidak
-    efisien dari versi WorldwideChat sebelumnya. Anda dapat menjalankan perintah berikut
-    untuk memperbaiki masalah ini: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Pilih Lokalisasi
   wwcConfigGUIMessagesOverridePickChatButton: Mengganti Pesan Plugin Default
   wwcConfigGUIChatMessagesOverrideSettings: Mengganti Pesan Default ({0})
@@ -569,4 +566,8 @@ Messages:
   wwctGUILocalizeStopButton: Setel ulang Lokalisasi ke Server Default
   wwctGUILocalizeTitle: Menu Lokalisasi
   wwctGUISourceSameLang: Bahasa ini akan sama dengan bahasa sumber Anda.
+  wwcOldDatabaseStruct: 'Basis data yang Anda pilih memiliki pengaturan yang tidak
+    efisien dari versi WorldwideChat sebelumnya. Anda dapat mengaktifkan mode debug
+    dan memperbaiki masalah sendiri, jalankan perintah berikut untuk memperbaiki masalah
+    ini: /wwcd convert'
 

@@ -92,9 +92,6 @@ Messages:
     à la dernière version publique.
   wwcConfigGUIGlobalRateLimitButton: Modifier la limite tarifaire globale
   wwctsOnTarget: Traduction des signes activée pour {0}.
-  wwcOldDatabaseStruct: 'La base de données que vous avez choisie présente une configuration
-    inefficace par rapport à une version précédente de WorldwideChat. Vous pouvez
-    exécuter la commande suivante pour résoudre ce problème: /wwcd convert'
   wwcConfigCacheDisabled: Le cache du traducteur est désactivé.
   wwcNewSqlStruct: Votre base de données SQL utilise la nouvelle structure et n'a
     pas besoin d'être convertie.
@@ -630,3 +627,7 @@ Messages:
     du serveur
   wwctGUILocalizeTitle: Menu de localisation
   wwctGUISourceSameLang: Cette langue serait la même que votre langue source.
+  wwcOldDatabaseStruct: 'La base de données que vous avez choisie présente une configuration
+    inefficace par rapport à une version précédente de WorldwideChat. Vous pouvez
+    soit activer le mode débogage et résoudre le problème vous-même, soit exécuter
+    la commande suivante pour résoudre ce problème: /wwcd convert'

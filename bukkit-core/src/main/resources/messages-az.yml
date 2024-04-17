@@ -547,9 +547,6 @@ Messages:
   wwcTimeoutException: Sorğunuzun müddəti bitdi. Xahiş edirəm yenidən cəhd edin.
   wwctbNoMoreOldBooks: Kitab tərcüməsi server versiyasında işləmir. Minecraft-ın daha
     yeni versiyasınızdırsınızsa və bu səhvi alırsınızsa, geliştirici ilə əlaqə saxlayın.
-  wwcOldDatabaseStruct: 'Seçdiyiniz verilənlər bazası WorldwideChat-ın əvvəlki versiyasından
-    səmərəsiz bir quraşdırmaya malikdir. Bu problemi həll etmək üçün aşağıdakı əmri
-    işə sala bilərsiniz: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Lokalizasiyanı seçin
   wwcConfigGUIMessagesOverridePickChatButton: Varsayılan Plugin Mesajlarını ləğv edin
   wwcConfigGUIChatMessagesOverrideSettings: Varsayılan Mesajları ləğv edin ({0})
@@ -571,4 +568,8 @@ Messages:
   wwctGUILocalizeStopButton: Lokalizasiyanı Server Default olaraq yenidən qurun
   wwctGUILocalizeTitle: Lokalizasiya menyusu
   wwctGUISourceSameLang: Bu dil mənbə dilinizlə eyni olardı.
+  wwcOldDatabaseStruct: 'Seçdiyiniz verilənlər bazası WorldwideChat-ın əvvəlki versiyasından
+    səmərəsiz bir quraşdırmaya malikdir. Siz ya ayıklama rejimini açaraq problemi
+    özünüz həll edə bilərsiniz, bu problemi həll etmək üçün aşağıdakı əmri işə salın:
+    /wwcd convert'
 

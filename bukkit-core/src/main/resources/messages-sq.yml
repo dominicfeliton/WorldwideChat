@@ -584,9 +584,6 @@ Messages:
   wwctbNoMoreOldBooks: Përkthimi i librit nuk është funksional në versionin tuaj të
     serverit. Nëse jeni në një version më të fundit të Minecraft dhe merrni këtë gabim,
     ju lutemi kontaktoni zhvilluesin.
-  wwcOldDatabaseStruct: 'Baza e të dhënave tuaja e zgjedhur ka një konfigurim joefikase
-    nga një version i mëparshëm i WorldwideChat. Ju mund të ekzekutoni komandën e
-    mëposhtme për të rregulluar këtë çështje: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Zgjidhni Lokalizimin
   wwcConfigGUIMessagesOverridePickChatButton: Anashkaloni Mesazhet e Parazgjedhura
   wwcConfigGUIChatMessagesOverrideSettings: Anashkaloni Mesazhet e Paracaktuara ({0})
@@ -608,4 +605,8 @@ Messages:
   wwctGUILocalizeStopButton: Rivendosni lokalizimin në serverin Default
   wwctGUILocalizeTitle: Menuja e lokalizimit
   wwctGUISourceSameLang: Kjo gjuhë do të ishte e njëjtë me gjuhën tuaj burimore.
+  wwcOldDatabaseStruct: 'Baza e të dhënave tuaja e zgjedhur ka një konfigurim joefikase
+    nga një version i mëparshëm i WorldwideChat. Ju ose mund të aktivizoni modalitetin
+    e korrigjimit të gabimit dhe ta rregulloni vetë problemin, ekzekutoni komandën
+    e mëposhtme për të rregulluar këtë çështje: /wwcd convert'
 

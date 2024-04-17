@@ -568,9 +568,6 @@ Messages:
   wwctbNoMoreOldBooks: ನಿಮ್ಮ ಸರ್ವರ್ ಆವೃತ್ತಿಯಲ್ಲಿ ಪುಸ್ತಕ ಅನುವಾದ ಕ್ರಿಯಾತ್ಮಕವಾಗಿಲ್ಲ.
     ನೀವು Minecraft ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯಲ್ಲಿದ್ದರೆ ಮತ್ತು ನೀವು ಈ ದೋಷವನ್ನು ಪಡೆಯುತ್ತಿದ್ದರೆ,
     ದಯವಿಟ್ಟು ಡೆವಲಪರ್ ಅನ್ನು ಸಂಪರ್ಕಿಸಿ.
-  wwcOldDatabaseStruct: 'ನಿಮ್ಮ ಆಯ್ಕೆಮಾಡಿದ ಡೇಟಾಬೇಸ್ WorldwideChat ನ ಹಿಂದಿನ ಆವೃತ್ತಿಯಿಂದ
-    ಅಸಮರ್ಥ ಸೆಟಪ್ ಹೊಂದಿದೆ. ಈ ಸಮಸ್ಯೆಯನ್ನು ಸರಿಪಡಿಸಲು ನೀವು ಕೆಳಗಿನ ಆಜ್ಞೆಯನ್ನು ಚಲಾಯಿಸಬಹುದು:
-    /wwcd ಪರಿವರ್ತಿಸಿ'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: ಸ್ಥಳೀಕರಣವನ್ನು ಆರಿಸಿ
   wwcConfigGUIMessagesOverridePickChatButton: ಡೀಫಾಲ್ಟ್ ಪ್ಲಗಿನ್ ಸಂದೇಶಗಳನ್ನು ಅತ
   wwcConfigGUIChatMessagesOverrideSettings: ಡೀಫಾಲ್ಟ್ ಸಂದೇಶಗಳನ್ನು ಅತಿಕ್ರಮಿಸಿ ({0})
@@ -590,4 +587,7 @@ Messages:
   wwctGUILocalizeStopButton: ಸ್ಥಳೀಕರಣವನ್ನು ಸರ್ವರ್ ಡೀಫಾಲ್ಟ್ಗೆ ಮರು
   wwctGUILocalizeTitle: ಸ್ಥಳೀಕರಣ ಮೆನು
   wwctGUISourceSameLang: ಈ ಭಾಷೆ ನಿಮ್ಮ ಮೂಲ ಭಾಷೆಯಂತೆಯೇ ಇರುತ್ತದೆ.
+  wwcOldDatabaseStruct: 'ನಿಮ್ಮ ಆಯ್ಕೆ ಡೇಟಾಬೇಸ್ WorldwideChat ನ ಹಿಂದಿನ ಆವೃತ್ತಿಯಿಂದ ಅಸಮರ್ಥ
+    ಸೆಟಪ್ ಹೊಂದಿದೆ. ನೀವು ಎರಡೂ ಡೀಬಗ್ ಮೋಡ್ ಆನ್ ಮತ್ತು ಸಮಸ್ಯೆಯನ್ನು ನೀವೇ ಸರಿಪಡಿಸಲು, ಈ ಸಮಸ್ಯೆಯನ್ನು
+    ಸರಿಪಡಿಸಲು ಕೆಳಗಿನ ಆಜ್ಞೆಯನ್ನು ರನ್ ಮಾಡಬಹುದು: /wwcd ಪರಿವರ್ತಿಸಿ'
 

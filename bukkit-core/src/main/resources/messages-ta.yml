@@ -585,9 +585,6 @@ Messages:
   wwctbNoMoreOldBooks: உங்கள் சேவையக பதிப்பில் புத்தக மொழிபெயர்ப்பு செயல்படாது. நீங்கள்
     Minecraft இன் சமீபத்திய பதிப்பில் இருந்தால், இந்த பிழையைப் பெற்றால், தயவுசெய்து
     டெவலப்பரைத் தொடர்பு கொள்ளவும்.
-  wwcOldDatabaseStruct: 'நீங்கள் தேர்ந்தெடுத்த தரவுத்தளம் WorldwideChat இன் முந்தைய
-    பதிப்பிலிருந்து திறமையற்ற அமைப்பைக் கொண்டுள்ளது. இந்த சிக்கலை சரிசெய்ய பின்வரும்
-    கட்டளையை இயக்கலாம்: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: உள்ளூர்மயமாக்க
   wwcConfigGUIMessagesOverridePickChatButton: இயல்புநிலை சொருகி செய்திகளை மீற
   wwcConfigGUIChatMessagesOverrideSettings: இயல்புநிலை செய்திகளை மீறவும் ({0})
@@ -608,4 +605,8 @@ Messages:
   wwctGUILocalizeStopButton: சேவையக இயல்புநிலைக்கு உள்ளமைவு
   wwctGUILocalizeTitle: உள்ளமைவு மெனு
   wwctGUISourceSameLang: இந்த மொழி உங்கள் மூல மொழியைப் போலவே இருக்கும்.
+  wwcOldDatabaseStruct: 'நீங்கள் தேர்ந்தெடுத்த தரவுத்தளம் WorldwideChat இன் முந்தைய
+    பதிப்பிலிருந்து திறமையற்ற அமைப்பைக் கொண்டுள்ளது. பிழைத்திருத்தம் பயன்முறையை இயக்கி
+    சிக்கலை நீங்களே சரிசெய்யலாம், இந்த சிக்கலை சரிசெய்ய பின்வரும் கட்டளையை இயக்கவும்:
+    /wwcd convert'
 

@@ -548,9 +548,6 @@ Messages:
   wwcTimeoutException: Vaš zahtev je istekao. Pokušajte ponovo.
   wwctbNoMoreOldBooks: Prevod knjiga nije funkcionalan na verziji vašeg servera. Ako
     ste na novijoj verziji Minecraft-a i dobijete ovu grešku, kontaktirajte programera.
-  wwcOldDatabaseStruct: 'Vaša izabrana baza podataka ima neefikasno podešavanje iz
-    prethodne verzije VorldWideChat-a. Možete pokrenuti sledeću komandu da biste rešili
-    ovaj problem: /vvcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Izaberite Lokalizaciju
   wwcConfigGUIMessagesOverridePickChatButton: Poništite podrazumevane poruke dodataka
   wwcConfigGUIChatMessagesOverrideSettings: Poništi podrazumevane poruke ({0})
@@ -570,4 +567,8 @@ Messages:
   wwctGUILocalizeStopButton: Resetujte lokalizaciju na podrazumevano servera
   wwctGUILocalizeTitle: Meni za lokalizaciju
   wwctGUISourceSameLang: Ovaj jezik bi bio isti kao i vaš izvorni jezik.
+  wwcOldDatabaseStruct: 'Vaša izabrana baza podataka ima neefikasno podešavanje iz
+    prethodne verzije VorldWideChat-a. Možete uključiti režim otklanjanja grešaka
+    i sami rešiti problem, pokrenite sledeću naredbu da biste rešili ovaj problem:
+    /vvcd convert'
 

@@ -549,9 +549,6 @@ Messages:
   wwctbNoMoreOldBooks: Кітап аудармасы сіздің сервер нұсқаңызда жұмыс істемейді. Егер
     сіз Minecraft-тың неғұрлым соңғы нұсқасында болсаңыз және осы қатені алсаңыз,
     әзірлеушіге хабарласыңыз.
-  wwcOldDatabaseStruct: 'Сіздің таңдаған дерекқорыңызда WorldwideChat-тің алдыңғы
-    нұсқасынан тиімсіз орнату бар. Бұл мәселені түзету үшін келесі пәрменді іске қосуға
-    болады: /wwcd түрлендіру'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Локализацияны таңдаңыз
   wwcConfigGUIMessagesOverridePickChatButton: Әдепкі плагин хабарларын ауыстыру
   wwcConfigGUIChatMessagesOverrideSettings: Әдепкі хабарламаларды жоққа шығару ({0})
@@ -573,4 +570,7 @@ Messages:
   wwctGUILocalizeStopButton: Локализацияны сервер әдепкісіне қалпына келтіріңіз
   wwctGUILocalizeTitle: Локализация мәзірі
   wwctGUISourceSameLang: Бұл тіл сіздің бастапқы тіліңізбен бірдей болар еді.
+  wwcOldDatabaseStruct: 'Сіздің таңдаған дерекқорыңызда WorldwideChat-тің алдыңғы
+    нұсқасынан тиімсіз орнату бар. Сіз отладка режимін қосып, мәселені өзіңіз түзете
+    аласыз, бұл мәселені түзету үшін келесі пәрменді іске қосыңыз: /wwcd түрлендіру'
 

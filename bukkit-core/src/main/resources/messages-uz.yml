@@ -576,9 +576,6 @@ Messages:
   wwctbNoMoreOldBooks: Kitob tarjimasi server versiyasida ishlamaydi. Agar siz Minecraft-ning
     so'nggi versiyasida bo'lsangiz va ushbu xatoni olsangiz, iltimos, ishlab chiquvchiga
     murojaat qiling.
-  wwcOldDatabaseStruct: 'Sizning tanlagan ma''lumotlar bazangiz WorldwideChat-ning
-    oldingi versiyasidan samarasiz sozlamaga ega. Ushbu masalani tuzatish uchun quyidagi
-    buyruqni ishga tushirishingiz mumkin: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Lokalizatsiyani tanlang
   wwcConfigGUIMessagesOverridePickChatButton: Standart plagin xabarlarini bekor qilish
   wwcConfigGUIChatMessagesOverrideSettings: Standart xabarlarni bekor qilish ({0})
@@ -601,4 +598,8 @@ Messages:
   wwctGUILocalizeStopButton: Lokalizatsiyani server standart holatiga qaytaring
   wwctGUILocalizeTitle: Mahalliylashtirish menyusi
   wwctGUISourceSameLang: Bu til sizning manba tilingiz bilan bir xil bo'ladi.
+  wwcOldDatabaseStruct: 'Sizning tanlagan ma''lumotlar bazangiz WorldwideChat-ning
+    oldingi versiyasidan samarasiz sozlamaga ega. Siz ham disk raskadrovka rejimini
+    yoqishingiz va masalani o''zingiz tuzatishingiz mumkin, bu masalani tuzatish uchun
+    quyidagi buyruqni bajaring: /wwcd convert'
 

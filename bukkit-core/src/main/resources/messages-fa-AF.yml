@@ -554,9 +554,6 @@ Messages:
   wwctbNoMoreOldBooks: ترجمه کتاب در نسخه سرور شما کاربردی نیست. اگر در نسخه جدیدتر
     Minecraft استفاده می کنید و این خطا را دریافت کرده اید، لطفاً با توسعه دهنده تماس
     بگیرید.
-  wwcOldDatabaseStruct: 'پایگاه داده انتخاب شده شما دارای تنظیمات ناکارآمد نسبت به
-    نسخه قبلی WorldwideChat است. برای رفع این مشکل می توانید دستور زیر را اجرا کنید:
-    /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: محلی سازی را انتخاب کنید
   wwcConfigGUIMessagesOverridePickChatButton: پیام های پیش فرض پلاگین را عوض
   wwcConfigGUIChatMessagesOverrideSettings: لغو کردن پیام های پیش فرض ({0})
@@ -576,4 +573,7 @@ Messages:
   wwctGUILocalizeStopButton: تنظیم مجدد محلی سازی به پیش فرض سرور
   wwctGUILocalizeTitle: منوی محلی سازی
   wwctGUISourceSameLang: این زبان همان زبان منبع شما خواهد بود.
+  wwcOldDatabaseStruct: 'پایگاه داده انتخاب شده شما دارای تنظیمات ناکارآمد نسبت به
+    نسخه قبلی WorldwideChat است. شما می توانید حالت اشکال زدایی را روشن کرده و مشکل
+    را خودتان برطرف کنید، دستور زیر را برای رفع این مشکل اجرا کنید: /wwcd convert'
 

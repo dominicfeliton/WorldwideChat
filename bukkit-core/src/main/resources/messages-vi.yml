@@ -559,9 +559,6 @@ Messages:
   wwctbNoMoreOldBooks: Dịch sách không hoạt động trên phiên bản máy chủ của bạn. Nếu
     bạn đang sử dụng phiên bản Minecraft mới hơn và bạn gặp lỗi này, vui lòng liên
     hệ với nhà phát triển.
-  wwcOldDatabaseStruct: 'Cơ sở dữ liệu bạn đã chọn có thiết lập không hiệu quả từ
-    phiên bản trước của WorldwideChat. Bạn có thể chạy lệnh sau để khắc phục sự cố
-    này: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Chọn bản địa hóa
   wwcConfigGUIMessagesOverridePickChatButton: Ghi đè thư Plugin mặc định
   wwcConfigGUIChatMessagesOverrideSettings: Ghi đè tin nhắn mặc định ({0})
@@ -583,4 +580,7 @@ Messages:
   wwctGUILocalizeStopButton: Đặt lại bản địa hóa về mặc định của máy chủ
   wwctGUILocalizeTitle: Menu bản địa hóa
   wwctGUISourceSameLang: Ngôn ngữ này sẽ giống với ngôn ngữ nguồn của bạn.
+  wwcOldDatabaseStruct: 'Cơ sở dữ liệu bạn đã chọn có thiết lập không hiệu quả từ
+    phiên bản trước của WorldwideChat. Bạn có thể bật chế độ gỡ lỗi và tự khắc phục
+    sự cố, chạy lệnh sau để khắc phục sự cố này: /wwcd convert'
 

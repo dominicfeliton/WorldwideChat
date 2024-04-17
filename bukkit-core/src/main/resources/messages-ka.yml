@@ -556,9 +556,6 @@ Messages:
   wwcTimeoutException: თქვენი მოთხოვნის დრო ამოწურდა. გთხოვთ კვლავ სცადოთ
   wwctbNoMoreOldBooks: წიგნის თარგმანი არ ფუნქციონირებს თქვენი სერვერის ვერ თუ Minecraft-ის
     უახლეს ვერსიაზე ხართ და მიიღებთ ამ შეცდომას, გთხოვთ, დაუკავშირდეთ დეველოპერს.
-  wwcOldDatabaseStruct: 'თქვენს არჩეულ მონაცემთა ბაზას აქვს არაეფექტური კონფიგურაცია
-    WorldwideChat-ის წინა ვერსიისგან. ამ პრობლემის გამოსასწორებლად შეგიძლიათ გაუშვოთ
-    შემდეგი ბრძანება: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: აირჩიეთ ლოკ
   wwcConfigGUIMessagesOverridePickChatButton: დანამატის ნაგულისხმევი შე
   wwcConfigGUIChatMessagesOverrideSettings: სტანდარტული შეტყობინებების გაუქმება ({0}
@@ -578,4 +575,8 @@ Messages:
   wwctGUILocalizeStopButton: ლოკალიზაციის გადატვირთვა სერვერ
   wwctGUILocalizeTitle: ლოკალიზაციის მენი
   wwctGUISourceSameLang: ეს ენა იგივე იქნება, რაც თქვენი წყაროს ენა.
+  wwcOldDatabaseStruct: 'თქვენს არჩეულ მონაცემთა ბაზას აქვს არაეფექტური კონფიგურაცია
+    WorldwideChat-ის წინა ვერსიისგან. შეგიძლიათ ჩართოთ შეცვალების რეჟიმი და თავად
+    მოაგვაროთ პრობლემა, გაუშვით შემდეგი ბრძანება ამ პრობლემის მოსაგვარებლად: /wwcd
+    convert'
 

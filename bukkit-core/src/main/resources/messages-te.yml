@@ -561,9 +561,6 @@ Messages:
   wwcTimeoutException: మీ అభ్యర్థన సమయం ముగిసింది. దయచేసి మళ్ళీ ప్రయత్నించండి.
   wwctbNoMoreOldBooks: మీ సర్వర్ వెర్షన్లో పుస్తక అనువాదం పనిచేయదు. మీరు Minecraft
     యొక్క మరింత ఇటీవలి వెర్షన్లో ఉంటే మరియు మీకు ఈ లోపం వస్తే, దయచేసి డెవలపర్ను సంప్రదించండి.
-  wwcOldDatabaseStruct: 'మీ ఎంచుకున్న డేటాబేస్ WorldwideChat యొక్క మునుపటి వెర్షన్
-    నుండి అసమర్థమైన సెటప్ను కలిగి ఉంది. ఈ సమస్యను పరిష్కరించడానికి మీరు క్రింది ఆదేశాన్ని
-    అమలు చేయవచ్చు: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: స్థానికీకరణను ఎంచుకోండి
   wwcConfigGUIMessagesOverridePickChatButton: డిఫాల్ట్ ప్లగిన్ సందేశాలను ఓవర్రైడ్
   wwcConfigGUIChatMessagesOverrideSettings: డిఫాల్ట్ సందేశాలను ఓవర్రైడ్ చేయండి ({0})
@@ -585,4 +582,8 @@ Messages:
   wwctGUILocalizeStopButton: సర్వర్ డిఫాల్ట్ గా స్థానికీకరణను రీసెట్ చేయండి
   wwctGUILocalizeTitle: స్థానికీకరణ మెను
   wwctGUISourceSameLang: ఈ భాష మీ మూల భాష మాదిరిగానే ఉంటుంది.
+  wwcOldDatabaseStruct: 'మీ ఎంచుకున్న డేటాబేస్ WorldwideChat యొక్క మునుపటి వెర్షన్
+    నుండి అసమర్థమైన సెటప్ను కలిగి ఉంది. మీరు గాని డీబగ్ మోడ్ ఆన్ మరియు సమస్యను మీరే
+    పరిష్కరించడానికి, ఈ సమస్యను పరిష్కరించడానికి క్రింది ఆదేశాన్ని అమలు చేయవచ్చు:
+    /wwcd convert'
 

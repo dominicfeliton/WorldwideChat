@@ -569,9 +569,6 @@ Messages:
   wwctbNoMoreOldBooks: पुस्तक अनुवाद आपके सर्वर संस्करण पर काम नहीं कर रहा है। यदि
     आप Minecraft के हाल के संस्करण पर हैं और आपको यह त्रुटि मिलती है, तो कृपया डेवलपर
     से संपर्क करें।
-  wwcOldDatabaseStruct: 'आपके चुने हुए डेटाबेस में WorldwideChat के पिछले संस्करण
-    से अक्षम सेटअप है। इस समस्या को ठीक करने के लिए आप निम्न कमांड चला सकते हैं: /wwcd
-    convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: स्थानीयकरण चुनें
   wwcConfigGUIMessagesOverridePickChatButton: डिफ़ॉल्ट प्लगइन संदेशों को ओवरराइड करें
   wwcConfigGUIChatMessagesOverrideSettings: डिफ़ॉल्ट संदेशों को ओवरराइड करें ({0})
@@ -592,4 +589,7 @@ Messages:
   wwctGUILocalizeStopButton: स्थानीयकरण को सर्वर डिफ़ॉल्ट पर रीसेट करें
   wwctGUILocalizeTitle: स्थानीयकरण मेनू
   wwctGUISourceSameLang: यह भाषा आपकी स्रोत भाषा के समान होगी।
+  wwcOldDatabaseStruct: 'आपके चुने हुए डेटाबेस में WorldwideChat के पिछले संस्करण
+    से अक्षम सेटअप है। आप या तो डिबग मोड चालू कर सकते हैं और समस्या को स्वयं ठीक कर
+    सकते हैं, इस समस्या को ठीक करने के लिए निम्न कमांड चलाएँ: /wwcd convert'
 

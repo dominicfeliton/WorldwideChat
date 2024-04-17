@@ -425,8 +425,6 @@ Messages:
   wwctrlRateLimitSetTarget: 將 {0} 的速率限制設置為 {1} 秒。
   wwcTimeoutException: 您的請求逾時。請再試一次。
   wwctbNoMoreOldBooks: 書籍翻譯無法在您的服務器版本上運行。如果您使用的是更新版本的 Minecraft 並且收到此錯誤，請聯繫開發人員。
-  wwcOldDatabaseStruct: 您選擇的數據庫的設置比以前版本的 WorldwideChat 的設置效率不高。您可以運行以下命令來修復此問題：/wwcd
-    轉換
   wwcConfigGUIChatMessagesOverrideSettingsPicker: 選擇本地化
   wwcConfigGUIMessagesOverridePickChatButton: 覆寫預設外掛程式訊息
   wwcConfigGUIChatMessagesOverrideSettings: 覆寫預設訊息 ({0})
@@ -446,4 +444,6 @@ Messages:
   wwctGUILocalizeStopButton: 將本地化重設為伺服器預設值
   wwctGUILocalizeTitle: 本地化功能表
   wwctGUISourceSameLang: 此語言將與您的源語言相同。
+  wwcOldDatabaseStruct: 您選擇的數據庫的設置比以前版本的 WorldwideChat 的設置效率不高。您可以打開調試模式並自行修復問題，運行以下命令來修復此問題：/wwcd
+    convert
 

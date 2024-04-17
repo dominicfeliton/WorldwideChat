@@ -620,9 +620,6 @@ Messages:
   wwctbNoMoreOldBooks: Hindi gumagana ang pagsasalin ng libro sa iyong bersyon ng
     server. Kung nasa mas kamakailang bersyon ng Minecraft at nakuha mo ang error
     na ito, mangyaring makipag-ugnay sa developer.
-  wwcOldDatabaseStruct: 'Ang iyong napiling database ay may hindi mahusay na pag-setup
-    mula sa isang nakaraang bersyon ng WorldwideChat. Maaari mong patakbuhin ang sumusunod
-    na utos upang ayusin ang isyung ito: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Piliin ang Lokalisasyon
   wwcConfigGUIMessagesOverridePickChatButton: I-override ang mga default na mensahe
     ng Plugin
@@ -647,4 +644,8 @@ Messages:
   wwctGUILocalizeTitle: Menu ng Lokalisasyon
   wwctGUISourceSameLang: Ang wikang ito ay magiging katulad ng iyong pinagmulan na
     wika.
+  wwcOldDatabaseStruct: 'Ang iyong napiling database ay may hindi mahusay na pag-setup
+    mula sa isang nakaraang bersyon ng WorldwideChat. Maaari mong buksan ang debug
+    mode at ayusin ang isyu mismo, patakbuhin ang sumusunod na utos upang ayusin ang
+    isyung ito: /wwcd convert'
 

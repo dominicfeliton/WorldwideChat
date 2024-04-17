@@ -553,9 +553,6 @@ Messages:
   wwcTimeoutException: Vaše žádost vypršela. Zkuste to prosím znovu.
   wwctbNoMoreOldBooks: Překlad knihy není funkční na vaší verzi serveru. Pokud používáte
     novější verzi Minecraftu a zobrazí se vám tato chyba, kontaktujte vývojáře.
-  wwcOldDatabaseStruct: 'Vámi vybraná databáze má neefektivní nastavení z předchozí
-    verze WorldwideChat. Chcete-li tento problém vyřešit, můžete spustit následující
-    příkaz: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Zvolte lokalizaci
   wwcConfigGUIMessagesOverridePickChatButton: Přepsat výchozí zprávy pluginu
   wwcConfigGUIChatMessagesOverrideSettings: Přepsat výchozí zprávy ({0})
@@ -575,4 +572,7 @@ Messages:
   wwctGUILocalizeStopButton: Obnovit lokalizaci na výchozí server
   wwctGUILocalizeTitle: Lokalizační menu
   wwctGUISourceSameLang: Tento jazyk by byl stejný jako váš zdrojový jazyk.
+  wwcOldDatabaseStruct: 'Vámi vybraná databáze má neefektivní nastavení z předchozí
+    verze WorldwideChat. Můžete buď zapnout režim ladění a opravit problém sami, spusťte
+    následující příkaz k opravě tohoto problému: /wwcd convert'
 

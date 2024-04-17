@@ -561,9 +561,6 @@ Messages:
   wwcTimeoutException: Jūsų prašymo laikas baigėsi. Prašome pabandyti dar kartą.
   wwctbNoMoreOldBooks: Knygų vertimas neveikia jūsų serverio versijoje. Jei naudojate
     naujesnę “Minecraft” versiją ir gausite šią klaidą, susisiekite su kūrėju.
-  wwcOldDatabaseStruct: 'Jūsų pasirinkta duomenų bazė turi neefektyvią sąranką iš
-    ankstesnės “WorldwideChat” versijos. Norėdami išspręsti šią problemą, galite paleisti
-    šią komandą: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Pasirinkite lokalizaciją
   wwcConfigGUIMessagesOverridePickChatButton: Numatytųjų papildinių pranešimų nepaisymas
   wwcConfigGUIChatMessagesOverrideSettings: Numatytųjų pranešimų nepaisymas ({0})
@@ -584,4 +581,7 @@ Messages:
   wwctGUILocalizeStopButton: Iš naujo nustatyti lokalizaciją į serverio numatytąją
   wwctGUILocalizeTitle: Lokalizacijos meniu
   wwctGUISourceSameLang: Ši kalba būtų tokia pati kaip ir jūsų šaltinio kalba.
+  wwcOldDatabaseStruct: 'Jūsų pasirinkta duomenų bazė turi neefektyvią sąranką iš
+    ankstesnės “WorldwideChat” versijos. Galite arba įjungti derinimo režimą ir išspręsti
+    problemą patys, paleiskite šią komandą išspręsti šią problemą: /wwcd konvertuoti'
 

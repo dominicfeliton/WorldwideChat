@@ -568,9 +568,6 @@ Messages:
   wwctbNoMoreOldBooks: A könyvfordítás nem működik a szerver verzióján. Ha a Minecraft
     újabb verzióját használja, és ezt a hibát kapja, kérjük, lépjen kapcsolatba a
     fejlesztővel.
-  wwcOldDatabaseStruct: 'A választott adatbázis nem hatékony beállítással rendelkezik
-    a WorldwideChat korábbi verziójához képest. A probléma megoldásához futtathatja
-    a következő parancsot: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Válassza ki a Lokalizációt
   wwcConfigGUIMessagesOverridePickChatButton: Alapértelmezett beépülő modul üzenetek
     fel
@@ -592,4 +589,8 @@ Messages:
   wwctGUILocalizeStopButton: Helyreállítás alapértelmezett kiszolgálóra
   wwctGUILocalizeTitle: Lokalizációs menü
   wwctGUISourceSameLang: Ez a nyelv megegyezik a forrásnyelvével.
+  wwcOldDatabaseStruct: 'A választott adatbázis nem hatékony beállítással rendelkezik
+    a WorldwideChat korábbi verziójához képest. Bekapcsolhatja a hibakeresési módot,
+    és saját maga javíthatja a problémát, futtassa a következő parancsot a probléma
+    megoldásához: /wwcd convert'
 

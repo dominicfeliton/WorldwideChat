@@ -515,8 +515,6 @@ Messages:
   wwcTimeoutException: انتهت مهلة طلبك. يرجى المحاولة مرة أخرى.
   wwctbNoMoreOldBooks: ترجمة الكتب لا تعمل على إصدار الخادم الخاص بك. إذا كنت تستخدم
     إصدارًا أحدث من Minecraft وظهرت لك هذا الخطأ، فيرجى الاتصال بالمطور.
-  wwcOldDatabaseStruct: 'تحتوي قاعدة البيانات التي اخترتها على إعداد غير فعال من إصدار
-    سابق من WorldwideChat. يمكنك تشغيل الأمر التالي لإصلاح هذه المشكلة: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: اختر التعريب
   wwcConfigGUIMessagesOverridePickChatButton: تجاوز رسائل البرنامج المساعد الافتراضية
   wwcConfigGUIChatMessagesOverrideSettings: تجاوز الرسائل الافتراضية ({0})
@@ -536,4 +534,7 @@ Messages:
   wwctGUILocalizeStopButton: إعادة تعيين الترجمة إلى الخادم الافتراضي
   wwctGUILocalizeTitle: قائمة التعريب
   wwctGUISourceSameLang: ستكون هذه اللغة هي نفس لغة المصدر الخاصة بك.
+  wwcOldDatabaseStruct: 'تحتوي قاعدة البيانات التي اخترتها على إعداد غير فعال من إصدار
+    سابق من WorldwideChat. يمكنك إما تشغيل وضع التصحيح وإصلاح المشكلة بنفسك، قم بتشغيل
+    الأمر التالي لإصلاح هذه المشكلة: /wwcd convert'
 

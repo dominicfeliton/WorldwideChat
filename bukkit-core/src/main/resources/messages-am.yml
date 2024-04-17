@@ -487,8 +487,6 @@ Messages:
   wwcTimeoutException: የእርስዎ ጥያቄ ጊዜው ቆይቷል። እባክዎን እንደገና ሞክሩ።
   wwctbNoMoreOldBooks: የመጽሐፍ ትርጉም በአገልጋዩ ስሪት ላይ ተግባራዊ አይደለም። የቅርብ ጊዜ የ Minecraft ስሪት
     ላይ ከሆኑ እና ይህንን ስህተት ካገኙ እባክዎን ገንቢውን ያነጋግሩ።
-  wwcOldDatabaseStruct: 'የተመረጠው የውሂብ ጎታ ከቀደመው የ WorldwideChat ስሪት ውጤታማ ያልሆነ ማዋቀር አለው።
-    ይህንን ችግር ለማስተካከል የሚከተለውን ትዕዛዝ ማስኬድ ይችላሉ: /wwcd መለወጥ'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: አካባቢያዊነትን
   wwcConfigGUIMessagesOverridePickChatButton: ነባሪ የፕለጊን መልዕክቶችን
   wwcConfigGUIChatMessagesOverrideSettings: ነባሪ መልዕክቶችን ይልቅ ({0})
@@ -508,4 +506,7 @@ Messages:
   wwctGUILocalizeStopButton: አካባቢን ወደ አገልጋይ ነባሪ እንደ
   wwctGUILocalizeTitle: የአካባቢ ምናሌ
   wwctGUISourceSameLang: ይህ ቋንቋ ከምንጭ ቋንቋዎ ጋር ተመሳሳይ ይሆናል።
+  wwcOldDatabaseStruct: 'የተመረጠው የውሂብ ጎታ ከቀደመው የ WorldwideChat ስሪት ውጤታማ ያልሆነ ማዋቀር አለው።
+    የማረም ሁነታን ማብራት እና ችግሩን ራስዎ ማስተካከል ይችላሉ፣ ይህንን ችግር ለማስተካከል የሚከተለውን ትዕዛዝ ያስኬዱ: /wwcd
+    convert'
 

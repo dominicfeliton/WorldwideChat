@@ -569,9 +569,6 @@ Messages:
   wwctbNoMoreOldBooks: Преводът на книги не функционира във вашата версия на сървъра.
     Ако използвате по-нова версия на Minecraft и получите тази грешка, моля, свържете
     се с разработчика.
-  wwcOldDatabaseStruct: 'Избраната от вас база данни има неефективна настройка от
-    предишна версия на WorldwideChat. Можете да изпълните следната команда, за да
-    отстраните този проблем: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Изберете локализация
   wwcConfigGUIMessagesOverridePickChatButton: Отмяна на съобщенията по подразбиране
     на плъгини
@@ -593,4 +590,8 @@ Messages:
   wwctGUILocalizeStopButton: Нулиране на локализацията по подразбиране на
   wwctGUILocalizeTitle: Меню за локализация
   wwctGUISourceSameLang: Този език ще бъде същият като вашия изходен език.
+  wwcOldDatabaseStruct: 'Избраната от вас база данни има неефективна настройка от
+    предишна версия на WorldwideChat. Можете или да включите режима за отстраняване
+    на грешки и сами да отстраните проблема, изпълнете следната команда, за да отстраните
+    този проблем: /wwcd convert'
 

@@ -583,9 +583,6 @@ Messages:
   wwctbNoMoreOldBooks: Traducerea cărților nu este funcțională pe versiunea dvs. de
     server. Dacă vă aflați pe o versiune mai recentă de Minecraft și primiți această
     eroare, vă rugăm să contactați dezvoltatorul.
-  wwcOldDatabaseStruct: 'Baza de date aleasă are o configurare ineficientă dintr-o
-    versiune anterioară a WorldwideChat. Puteți rula următoarea comandă pentru a remedia
-    această problemă: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Alegeți localizarea
   wwcConfigGUIMessagesOverridePickChatButton: Suprascrie mesajele implicite ale pluginului
   wwcConfigGUIChatMessagesOverrideSettings: Suprascrie mesajele implicite ({0})
@@ -605,4 +602,8 @@ Messages:
   wwctGUILocalizeStopButton: Resetați localizarea la serverul implicit
   wwctGUILocalizeTitle: Meniu de localizare
   wwctGUISourceSameLang: Această limbă ar fi aceeași cu limba sursă.
+  wwcOldDatabaseStruct: 'Baza de date aleasă are o configurare ineficientă dintr-o
+    versiune anterioară a WorldwideChat. Puteți fie să activați modul de depanare
+    și să remediați singur problema, executați următoarea comandă pentru a remedia
+    această problemă: /wwcd convert'
 

@@ -573,9 +573,6 @@ Messages:
   wwctbNoMoreOldBooks: Номын орчуулга таны серверийн хувилбар дээр ажиллахгүй байна.
     Хэрэв та Minecraft-ийн илүү сүүлийн үеийн хувилбар дээр байгаа бөгөөд та энэ алдааг
     авдаг бол хөгжүүлэгчтэй холбоо барина уу.
-  wwcOldDatabaseStruct: 'Таны сонгосон мэдээллийн сан нь WorldwideChat-ийн өмнөх хувилбараас
-    үр ашиггүй тохиргоотой. Та энэ асуудлыг засахын тулд дараах тушаалыг ажиллуулж
-    болно: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Нутралчлал сонгоно
   wwcConfigGUIMessagesOverridePickChatButton: Анхдагч залгаасын мессежийг халж
   wwcConfigGUIChatMessagesOverrideSettings: Анхдагч мессежийг хүчингүй болгох ({0})
@@ -597,4 +594,7 @@ Messages:
   wwctGUILocalizeStopButton: Нутагшуулалтыг серверийн анхдагч болгон
   wwctGUILocalizeTitle: Нутагшуулах цэс
   wwctGUISourceSameLang: Энэ хэл нь таны эх хэлтэй адил байх болно.
+  wwcOldDatabaseStruct: 'Таны сонгосон мэдээллийн сан нь WorldwideChat-ийн өмнөх хувилбараас
+    үр ашиггүй тохиргоотой байдаг. Та аль нэг дибаг горимыг асааж, асуудлыг өөрөө
+    засах боломжтой, энэ асуудлыг засахын тулд дараах тушаалыг ажиллуулах: /wwcd convert'
 

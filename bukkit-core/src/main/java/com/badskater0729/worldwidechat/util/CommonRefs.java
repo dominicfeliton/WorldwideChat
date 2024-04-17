@@ -938,6 +938,7 @@ public class CommonRefs {
 				}
 
 				// Check for extra columns in the table that are not defined in the schema
+				/* who cares...
 				for (String columnName : existingColumns.keySet()) {
 					if (!tableSchema.containsKey(columnName)) {
 						debugMsg(String.format("Extra column '%s' found in table '%s' that is not defined in the schema",
@@ -946,6 +947,7 @@ public class CommonRefs {
 						return true;
 					}
 				}
+				*/
 
 				debugMsg("SQL table ( " + tableName + " ) is the correct format.");
 				return false; // Table structure matches the schema
@@ -998,6 +1000,7 @@ public class CommonRefs {
 				}
 
 				// Check for extra columns in the table that are not defined in the schema
+				/* who cares...
 				for (String columnName : existingColumns.keySet()) {
 					// Gross O(n)^2, but shouldn't matter too much...
 					boolean colExists = false;
@@ -1013,6 +1016,7 @@ public class CommonRefs {
 						return true;
 					}
 				}
+				 */
 
 				debugMsg("PostgreSQL table ( " + tableName + " ) is the correct format.");
 				return false; // Table structure matches the schema

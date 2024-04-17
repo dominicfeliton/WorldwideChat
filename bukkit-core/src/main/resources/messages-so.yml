@@ -572,9 +572,6 @@ Messages:
   wwcTimeoutException: Codsiinkaaga waqtiga soo saaray. Fadlan mar kale isku dayo.
   wwctbNoMoreOldBooks: Tarjumada Buugga ma shaqeyn nooca serverkaaga. Haddii aad ku
     sugan nooca dheeraad ah ee Minecraft oo aad helaan qaladkan, fadlan xiriir horumarka.
-  wwcOldDatabaseStruct: 'Xidhibaadkaaga la doortay waxa uu leeyahay dib u saabsan
-    oo ka mid ah nooca hore ee WorldwideChat. Waxaad qaban kartaa taliska soo socda
-    si aad arrintan u saxiyo: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Dooro Deegaanka
   wwcConfigGUIMessagesOverridePickChatButton: Fariimaha Plugin Default
   wwcConfigGUIChatMessagesOverrideSettings: Fariimaha Default ({0})
@@ -594,4 +591,8 @@ Messages:
   wwctGUILocalizeStopButton: Dib u dib u dhigay deegaanka Server Default
   wwctGUILocalizeTitle: Menu Deegaalinta
   wwctGUISourceSameLang: Afkaan waxay noqon lahaayeen luuqada ilkaaga.
+  wwcOldDatabaseStruct: 'Xidhibaadkaaga la doortay waxa uu leeyahay dib u saabsan
+    oo ka mid ah nooca hore ee WorldwideChat. Waxaad walba la socodho kartaa mooyinka
+    debug oo arrinta iskiisa ku saari kartaa, madaxda taliska soo socda si aad u saxiyo
+    arrintan: /wwcd convert'
 

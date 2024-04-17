@@ -556,9 +556,6 @@ Messages:
   wwcTimeoutException: Jūsu pieprasījuma termiņš ir beidzies. Lūdzu, mēģiniet vēlreiz.
   wwctbNoMoreOldBooks: Grāmatu tulkošana jūsu servera versijā nedarbojas. Ja izmantojat
     jaunāku Minecraft versiju un rodas šī kļūda, lūdzu, sazinieties ar izstrādātāju.
-  wwcOldDatabaseStruct: 'Jūsu izvēlētajā datu bāzē ir neefektīva iestatīšana no iepriekšējās
-    WorldwideChat versijas. Lai novērstu šo problēmu, varat palaist šādu komandu:
-    /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Izvēlieties lokalizāciju
   wwcConfigGUIMessagesOverridePickChatButton: Aizstāt noklusējuma spraudņa ziņojumus
   wwcConfigGUIChatMessagesOverrideSettings: Aizstāt noklusējuma ziņojumus ({0})
@@ -578,4 +575,7 @@ Messages:
   wwctGUILocalizeStopButton: Atjaunot lokalizāciju uz servera noklusējumu
   wwctGUILocalizeTitle: Lokalizācijas izvēlne
   wwctGUISourceSameLang: Šī valoda būtu tāda pati kā jūsu avota valoda.
+  wwcOldDatabaseStruct: 'Jūsu izvēlētajā datu bāzē ir neefektīva iestatīšana no iepriekšējās
+    WorldwideChat versijas. Varat vai nu ieslēgt atkļūdošanas režīmu un pats novērst
+    problēmu, lai novērstu šo problēmu, palaidiet šādu komandu: /wwcd convert'
 

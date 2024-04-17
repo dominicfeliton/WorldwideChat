@@ -553,8 +553,6 @@ Messages:
   wwcTimeoutException: زمان درخواست شما منقضی شده است. لطفا دوباره امتحان کنید
   wwctbNoMoreOldBooks: ترجمه کتاب در نسخه سرور شما کاربردی ندارد. اگر در نسخه جدیدتر
     Minecraft هستید و این خطا را دریافت می کنید، لطفاً با توسعه دهنده تماس بگیرید.
-  wwcOldDatabaseStruct: 'پایگاه داده انتخابی شما دارای تنظیمات ناکارآمد از نسخه قبلی
-    WorldwideChat است. برای رفع این مشکل می توانید دستور زیر را اجرا کنید: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: محلی سازی را انتخاب کنید
   wwcConfigGUIMessagesOverridePickChatButton: پیامهای پلاگین پیش فرض را حذف کنید
   wwcConfigGUIChatMessagesOverrideSettings: پیامهای پیش فرض را لغو کنید ({0})
@@ -574,4 +572,7 @@ Messages:
   wwctGUILocalizeStopButton: تنظیم مجدد محلی سازی به پیش فرض سرور
   wwctGUILocalizeTitle: منوی محلی سازی
   wwctGUISourceSameLang: این زبان همانند زبان منبع شما خواهد بود.
+  wwcOldDatabaseStruct: 'پایگاه داده انتخابی شما دارای تنظیمات ناکارآمد از نسخه قبلی
+    WorldwideChat است. شما می توانید حالت اشکال زدایی را روشن کنید و خودتان مشکل را
+    برطرف کنید، برای رفع این مشکل دستور زیر را اجرا کنید: /wwcd convert'
 

@@ -70,6 +70,7 @@ public class WWCLocalize extends BasicCommand {
             return false;
         }
 
+        if (!inName.equalsIgnoreCase(sender.getName()) && !sender.hasPermission("worldwidechat.wwcl.otherplayers")) {
             refs.badPermsMessage("worldwidechat.wwcl.otherplayers", sender);
             return false;
         }

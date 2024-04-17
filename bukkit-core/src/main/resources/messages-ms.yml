@@ -551,9 +551,6 @@ Messages:
   wwctbNoMoreOldBooks: Terjemahan buku tidak berfungsi pada versi pelayan anda. Jika
     anda menggunakan versi Minecraft yang lebih terkini dan anda mendapat ralat ini,
     sila hubungi pemaju.
-  wwcOldDatabaseStruct: 'Pangkalan data pilihan anda mempunyai persediaan yang tidak
-    cekap daripada versi WorldwideChat sebelumnya. Anda boleh menjalankan arahan berikut
-    untuk menyelesaikan masalah ini: /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: Pilih Penyetempatan
   wwcConfigGUIMessagesOverridePickChatButton: Menggantikan Mesej Plugin Lalai
   wwcConfigGUIChatMessagesOverrideSettings: Menggantikan Mesej Lalai ({0})
@@ -573,4 +570,8 @@ Messages:
   wwctGUILocalizeStopButton: Tetapkan semula Penyetempatan ke Lalai Pelayan
   wwctGUILocalizeTitle: Menu Penyetempatan
   wwctGUISourceSameLang: Bahasa ini akan sama dengan bahasa sumber anda.
+  wwcOldDatabaseStruct: 'Pangkalan data pilihan anda mempunyai persediaan yang tidak
+    cekap daripada versi WorldwideChat sebelumnya. Anda boleh menghidupkan mod debug
+    dan membetulkan masalah itu sendiri, jalankan arahan berikut untuk menyelesaikan
+    masalah ini: /wwcd convert'
 

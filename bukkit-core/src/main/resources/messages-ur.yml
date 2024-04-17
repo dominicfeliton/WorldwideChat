@@ -562,9 +562,6 @@ Messages:
   wwctbNoMoreOldBooks: آپ کے سرور ورژن پر کتاب کا ترجمہ فعال نہیں ہے۔ اگر آپ مائن
     کرافٹ کے حالیہ ورژن پر ہیں اور آپ کو یہ غلطی ملتی ہے تو، براہ کرم ڈویلپر سے رابطہ
     کریں۔
-  wwcOldDatabaseStruct: 'آپ کے منتخب کردہ ڈیٹا بیس میں WorldwideChat کے پچھلے ورژن
-    سے ناموثر سیٹ اپ ہے۔ آپ اس مسئلے کو ٹھیک کرنے کے لئے درج ذیل کمانڈ چلا سکتے ہیں:
-    /wwcd convert'
   wwcConfigGUIChatMessagesOverrideSettingsPicker: مقامی منتخب کریں
   wwcConfigGUIMessagesOverridePickChatButton: پہلے سے طے شدہ پلگ ان پیغامات کو
   wwcConfigGUIChatMessagesOverrideSettings: ڈیفالٹ پیغامات کو اوور رائڈ کریں ({0})
@@ -586,4 +583,7 @@ Messages:
   wwctGUILocalizeStopButton: لوکلائزیشن کو سرور ڈیفالٹ میں
   wwctGUILocalizeTitle: لوکلائزیشن مینو
   wwctGUISourceSameLang: یہ زبان آپ کی ماخذ زبان کی طرح ہوگی۔
+  wwcOldDatabaseStruct: 'آپ کے منتخب کردہ ڈیٹا بیس میں WorldwideChat کے پچھلے ورژن
+    سے ناموثر سیٹ اپ ہے۔ آپ یا تو ڈیبگ موڈ کو آن کرسکتے ہیں اور خود مسئلے کو ٹھیک
+    کرسکتے ہیں، اس مسئلے کو ٹھیک کرنے کے لئے درج ذیل کمانڈ چلائیں: /wwcd convert'
 
