@@ -20,6 +20,7 @@ public class WWCTabCompleter implements TabCompleter {
 
 	@Override
 	public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
+		// TODO: Factor in permissions otherplayers for all commands
 		// Init out list
 		List<String> out = new ArrayList<String>();
 		String commandName = command.getName();

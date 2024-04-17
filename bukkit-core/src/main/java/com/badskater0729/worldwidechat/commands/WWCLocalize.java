@@ -70,6 +70,10 @@ public class WWCLocalize extends BasicCommand {
             return false;
         }
 
+            refs.badPermsMessage("worldwidechat.wwcl.otherplayers", sender);
+            return false;
+        }
+
         PlayerRecord currRecord = main.getPlayerRecord(inPlayer, true);
         if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
             // Changing our own localization
