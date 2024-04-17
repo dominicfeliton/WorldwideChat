@@ -91,7 +91,7 @@ commands:
         permission-message: §4You do not have permission to run this command.
     wwcl:
         description: Sets a localization for a user.
-        aliases: [wwclocalization, localize]
+        aliases: [wwclocalize, translatelocalize]
         usage: §4/wwcl (localization) or /wwcl (playerName) (localization)
 permissions:
     worldwidechat.*:
