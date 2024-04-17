@@ -20,7 +20,7 @@ commands:
     wwcd:
         description: Debug helper for WorldwideChat.
         aliases: [wwcdebug, translatedebug]
-        usage: §4/wwcd (debugObj) (args)
+        usage: §4/wwcd (cache) (args)
         permission: worldwidechat.wwcd
         permission-message: §4You do not have permission to run this command.
     wwcg:

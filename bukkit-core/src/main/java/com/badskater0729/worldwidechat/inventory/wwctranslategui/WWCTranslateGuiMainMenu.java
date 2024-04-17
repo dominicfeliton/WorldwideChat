@@ -47,8 +47,6 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 	}
 
 	/* Get translation info */
-	// TODO: Rewrite for being able to switch between localizations??
-	// TODO: Also fix getMsg calls to respect user's localization
 	public SmartInventory getTranslateMainMenu() {
 		String playerTitle = "";
 		if (targetPlayerUUID.equals("GLOBAL-TRANSLATE-ENABLED")) {

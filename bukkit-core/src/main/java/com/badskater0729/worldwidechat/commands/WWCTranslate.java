@@ -161,10 +161,10 @@ public class WWCTranslate extends BasicCommand {
 		}
 		// Check if valid outLang
 		if (!refs.isSupportedTranslatorLang(outLang, "out")) {
-			// TODO: Replace getFormattedValidLangCodes() with something cleaner?
 			refs.sendFancyMsg("wwctInvalidOutputLangCode", refs.getFormattedValidLangCodes("out"), "&c", sender);
 			return false;
 		}
+
 		// Check if target is valid player (if not global)
 		// Set UUID if valid, else exit
 		String inUUID = "";
@@ -218,7 +218,17 @@ public class WWCTranslate extends BasicCommand {
 				refs.sendFancyMsg("wwcgLangToLangStart", new String[] {"&6"+inLang, "&6"+outLang}, main.getServer().getConsoleSender());
 			}
 		}
+
+		// Convert codes
+		refs.debugMsg("Converting langs to langCodes...");
+		if (!inLang.equals("None")) {
+			inLang = refs.getSupportedTranslatorLang(inLang, "in").getLangCode();
+		}
+		outLang = refs.getSupportedTranslatorLang(outLang, "out").getLangCode();
+
+		// Add ActiveTranslator
 		ActiveTranslator newTranslator = new ActiveTranslator(inUUID, "None", outLang);
+
 		if (!inLang.equalsIgnoreCase("None")) {
 			newTranslator.setInLangCode(inLang);
 		}

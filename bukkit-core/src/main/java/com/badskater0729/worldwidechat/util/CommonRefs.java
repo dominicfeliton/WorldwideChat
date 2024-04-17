@@ -224,7 +224,7 @@ public class CommonRefs {
 		
 		/* Check selected list for lang */
 		for (SupportedLang eaLang : langList) {
-			if ((eaLang.getLangCode().equalsIgnoreCase(langName) || eaLang.getLangName().equalsIgnoreCase(langName))) {
+			if ((eaLang.getLangCode().equalsIgnoreCase(langName) || eaLang.getLangName().equalsIgnoreCase(langName) || eaLang.getNativeLangName().equalsIgnoreCase(langName))) {
 				return eaLang;
 			}
 		}
@@ -255,8 +255,8 @@ public class CommonRefs {
 	public String getFormattedValidLangCodes(String langType) {
 		/* Setup vars */
 		List<SupportedLang> langList;
-		String out = "\n";
-		
+		StringBuilder out = new StringBuilder("\n");
+
 		/* Check langType */
 		if (langType.equalsIgnoreCase("in")) {
 			langList = main.getSupportedInputLangs();
@@ -264,17 +264,25 @@ public class CommonRefs {
 			langList = main.getSupportedOutputLangs();
 		} else {
 			debugMsg("Invalid langType for getFormattedValidLangCodes()! langType: " + langType + " ...returning invalid, not checking language. Fix this!!!");
-		    return out;
+			return "&cInvalid language type specified";
 		}
-		
+
+		/* Format the output nicely */
 		for (SupportedLang eaLang : langList) {
-			out += "(" + eaLang.getLangCode() + " - " + eaLang.getLangName() + "), ";
+			out.append("&b").append(eaLang.getLangCode())
+					.append(" &f- ")
+					.append("&e").append(eaLang.getLangName()).append("&6/&e").append(eaLang.getNativeLangName())
+					.append("&r, ");
 		}
-		if (out.indexOf(",") != -1) {
-			out = out.substring(0, out.lastIndexOf(","));
+
+		// Remove the last comma and space if present
+		if (out.length() > 2) {
+			out.setLength(out.length() - 2);
 		}
-		return out;
+
+		return out.toString();
 	}
+
 
 	/**
 	 * Fixes a given list of SupportedLangs to include native names/language names

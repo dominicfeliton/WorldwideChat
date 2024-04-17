@@ -9,14 +9,14 @@ public class SupportedLang implements Comparable<SupportedLang> {
 
 	public SupportedLang(String langCode, String langName, String nativeLangName) {
 		this.langCode = langCode;
-		this.langName = langName;
-		this.nativeLangName = nativeLangName;
+		setLangName(langName);
+		setNativeLangName(nativeLangName);
 	}
 	
 	public SupportedLang(String langCode, String langName) {
 		this.langCode = langCode;
-		this.langName = langName;
-		this.nativeLangName = "";
+		setLangName(langName);
+		setNativeLangName("");
 	}
 
 	/* Getters */
@@ -38,11 +38,13 @@ public class SupportedLang implements Comparable<SupportedLang> {
 	}
 
 	public void setLangName(String i) {
-		langName = i;
+		// Remove blank space for commands
+		langName = i.replaceAll("\\s+", "-");;
 	}
 
 	public void setNativeLangName(String i) {
-		nativeLangName = i;
+		// Remove blank space for commands
+		nativeLangName = i.replaceAll("\\s+", "-");;
 	}
 
 	@Override

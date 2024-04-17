@@ -51,21 +51,27 @@ public class WWCTabCompleter implements TabCompleter {
 				for (SupportedLang eaLang : main.getSupportedInputLangs()) {
 					String langName = eaLang.getLangName();
 					String langCode = eaLang.getLangCode();
+					String nativeName = eaLang.getNativeLangName();
 					if ((prevEmptyArg || 
 							langName.startsWith(args[args.length - 1]) ||
-							langCode.startsWith(args[args.length - 1]))) {
+							langCode.startsWith(args[args.length - 1]) ||
+							nativeName.startsWith(args[args.length -1]))) {
 						out.add(langName);
 						out.add(langCode);
+						out.add(nativeName);
 					}
 				}
 				for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
 					String langName = eaLang.getLangName();
 					String langCode = eaLang.getLangCode();
+					String nativeName = eaLang.getNativeLangName();
 					if ((prevEmptyArg || 
 							langName.startsWith(args[args.length - 1]) ||
-							langCode.startsWith(args[args.length - 1]))) {
+							langCode.startsWith(args[args.length - 1]) ||
+							nativeName.startsWith(args[args.length - 1]))) {
 						out.add(langName);
 						out.add(langCode);
+						out.add(nativeName);
 					}
 				}
 			    break;
@@ -89,21 +95,27 @@ public class WWCTabCompleter implements TabCompleter {
 				for (SupportedLang eaLang : main.getSupportedInputLangs()) {
 					String langName = eaLang.getLangName();
 					String langCode = eaLang.getLangCode();
+					String nativeName = eaLang.getNativeLangName();
 					if ((prevEmptyArg || 
 							langName.startsWith(args[args.length - 1]) ||
-							langCode.startsWith(args[args.length - 1]))) {
+							langCode.startsWith(args[args.length - 1]) ||
+							nativeName.startsWith(args[args.length -1]))) {
 						out.add(langName);
 						out.add(langCode);
+						out.add(nativeName);
 					}
 				}
 				for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
 					String langName = eaLang.getLangName();
 					String langCode = eaLang.getLangCode();
+					String nativeName = eaLang.getNativeLangName();
 					if ((prevEmptyArg || 
 							langName.startsWith(args[args.length - 1]) ||
-							langCode.startsWith(args[args.length - 1]))) {
+							langCode.startsWith(args[args.length - 1]) ||
+							nativeName.startsWith(args[args.length -1]))) {
 						out.add(langName);
 						out.add(langCode);
+						out.add(nativeName);
 					}
 				}
 				break;
@@ -118,11 +130,14 @@ public class WWCTabCompleter implements TabCompleter {
 				for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
 					String langName = eaLang.getLangName();
 					String langCode = eaLang.getLangCode();
+					String nativeName = eaLang.getNativeLangName();
 					if ((prevEmptyArg || 
 							langName.startsWith(args[args.length - 1]) ||
-							langCode.startsWith(args[args.length - 1]))) {
+							langCode.startsWith(args[args.length - 1]) ||
+							nativeName.startsWith(args[args.length -1]))) {
 						out.add(langName);
 						out.add(langCode);
+						out.add(nativeName);
 					}
 				}
 				break;
@@ -145,21 +160,27 @@ public class WWCTabCompleter implements TabCompleter {
 				for (SupportedLang eaLang : main.getSupportedInputLangs()) {
 					String langName = eaLang.getLangName();
 					String langCode = eaLang.getLangCode();
+					String nativeName = eaLang.getNativeLangName();
 					if ((prevEmptyArg || 
 							langName.startsWith(args[args.length - 1]) ||
-							langCode.startsWith(args[args.length - 1]))) {
+							langCode.startsWith(args[args.length - 1]) ||
+							nativeName.startsWith(args[args.length -1]))) {
 						out.add(langName);
 						out.add(langCode);
+						out.add(nativeName);
 					}
 				}
 				for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
 					String langName = eaLang.getLangName();
 					String langCode = eaLang.getLangCode();
+					String nativeName = eaLang.getNativeLangName();
 					if ((prevEmptyArg || 
 							langName.startsWith(args[args.length - 1]) ||
-							langCode.startsWith(args[args.length - 1]))) {
+							langCode.startsWith(args[args.length - 1]) ||
+							nativeName.startsWith(args[args.length -1]))) {
 						out.add(langName);
 						out.add(langCode);
+						out.add(nativeName);
 					}
 				}
 				break;
@@ -173,11 +194,14 @@ public class WWCTabCompleter implements TabCompleter {
 				for (SupportedLang eaLang : main.getSupportedOutputLangs()) {
 					String langName = eaLang.getLangName();
 					String langCode = eaLang.getLangCode();
+					String nativeName = eaLang.getNativeLangName();
 					if ((prevEmptyArg || 
 							langName.startsWith(args[args.length - 1]) ||
-							langCode.startsWith(args[args.length - 1]))) {
+							langCode.startsWith(args[args.length - 1]) ||
+							nativeName.startsWith(args[args.length -1]))) {
 						out.add(langName);
 						out.add(langCode);
+						out.add(nativeName);
 					}
 				}
 				break;

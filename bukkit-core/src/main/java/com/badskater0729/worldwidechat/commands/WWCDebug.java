@@ -45,6 +45,7 @@ public class WWCDebug extends BasicCommand {
                 return true;
             }
 
+            /*
             if (args[0].equalsIgnoreCase("convert")) {
                 // convert shitty struct in SQL
                 if (refs.detectOutdatedTable("activeTranslators") || refs.detectOutdatedTable("playerRecords")) {
@@ -55,6 +56,7 @@ public class WWCDebug extends BasicCommand {
                 }
                 return true;
             }
+            */
         }
 
         if (args.length == 2) {
@@ -67,6 +69,10 @@ public class WWCDebug extends BasicCommand {
                 }
                 return false;
             }
+
+
+
+            /*
             if (args[0].equalsIgnoreCase("convert")) {
                 if (args[1].equalsIgnoreCase("yes")) {
                     if (!refs.detectOutdatedTable("activeTranslators") && !refs.detectOutdatedTable("playerRecords")) {
@@ -82,7 +88,7 @@ public class WWCDebug extends BasicCommand {
                     refs.closeAllInvs();
 
                     try (Connection sqlConnection = main.getSqlSession().getConnection()) {
-                        /* Adjusting the `activeTranslators` table */
+                        // Adjusting the `activeTranslators` table
                         // TODO: Use CommonRefs + new method, this is horribly outdated
                         // TODO: Perhaps move table creation/update method in LoadUserData to CommonRefs, and add a flag to update existing columns?
                         // TODO: Also prune old columns
@@ -103,7 +109,7 @@ public class WWCDebug extends BasicCommand {
                             alterActiveTranslators.executeUpdate();
                         }
 
-                        /* Adjusting the `playerRecords` table */
+                        // Adjusting the `playerRecords` table
                         try (PreparedStatement alterPlayerRecords = sqlConnection.prepareStatement(
                                 "ALTER TABLE playerRecords " +
                                         "MODIFY creationDate VARCHAR(40), " +
@@ -129,6 +135,7 @@ public class WWCDebug extends BasicCommand {
                 }
                 return false;
             }
+            */
             return false;
         }
 

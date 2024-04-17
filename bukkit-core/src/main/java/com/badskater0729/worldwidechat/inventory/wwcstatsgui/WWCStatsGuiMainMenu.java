@@ -41,8 +41,6 @@ public class WWCStatsGuiMainMenu implements InventoryProvider {
 		this.inPlayer = inPlayer;
 	}
 
-	// TODO: Rewrite for being able to switch between localizations??
-	// TODO: Also fix getMsg calls to respect user's localization
 	public SmartInventory getStatsMainMenu() {
 		return SmartInventory.builder().id("statsMainMenu")
 				.provider(this).size(5, 9)
