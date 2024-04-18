@@ -6,6 +6,7 @@ import java.util.UUID;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import com.badskater0729.worldwidechat.util.PlayerRecord;
+import com.badskater0729.worldwidechat.util.SupportedLang;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.conversations.ConversationFactory;
@@ -110,8 +111,14 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 				invManager.addGlowEffect(translationMeta);
 				translationMeta.setDisplayName(refs.getMsg("wwctGUIExistingTranslationButton", inPlayer));
 				List<String> outLore = new ArrayList<>();
-				outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationInput", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getInLangCode(), inPlayer));
-				outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationOutput", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + targetTranslator.getOutLangCode(), inPlayer));
+				SupportedLang inLang = refs.getSupportedTranslatorLang(targetTranslator.getInLangCode(), "in");
+				SupportedLang outLang = refs.getSupportedTranslatorLang(targetTranslator.getOutLangCode(), "out");
+				if (!targetTranslator.getInLangCode().equalsIgnoreCase("None")) {
+					outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationInput", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + inLang.getLangCode() + "/" + inLang.getNativeLangName(), inPlayer));
+				} else {
+					outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationInput", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "auto/None", inPlayer));
+				}
+				outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationOutput", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + outLang.getLangCode() + "/" + outLang.getNativeLangName(), inPlayer));
 				translationMeta.setLore(outLore);
 				translationButton.setItemMeta(translationMeta);
 

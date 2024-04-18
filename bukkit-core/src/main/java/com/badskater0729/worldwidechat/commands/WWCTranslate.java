@@ -12,10 +12,6 @@ import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.inventory.wwctranslategui.WWCTranslateGuiMainMenu;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
 
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextComponent;
-import net.kyori.adventure.text.format.NamedTextColor;
-
 import com.badskater0729.worldwidechat.util.CommonRefs;
 
 public class WWCTranslate extends BasicCommand {
@@ -147,7 +143,7 @@ public class WWCTranslate extends BasicCommand {
 	private boolean startNewTranslationSession(String inName, String inLang, String outLang) {
 		// Check if inLang/outLang are the same
 		if (inLang.equalsIgnoreCase(outLang) || refs.isSameTranslatorLang(inLang, outLang, "all")) {
-			refs.sendFancyMsg("wwctSameLangError", refs.getFormattedValidLangCodes("in"), "&c", sender);
+			refs.sendFancyMsg("wwctSameLangError", refs.getFormattedTranslatorLangCodes("in"), "&c", sender);
 			return false;
 		}
 		/* NOTICE:
@@ -156,15 +152,15 @@ public class WWCTranslate extends BasicCommand {
 		// Check if valid inLang
 		if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedTranslatorLang(inLang, "in")) || 
 				(inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
-			refs.sendFancyMsg("wwctInvalidInputLangCode", refs.getFormattedValidLangCodes("in"), "&c", sender);
+			refs.sendFancyMsg("wwctInvalidInputLangCode", refs.getFormattedTranslatorLangCodes("in"), "&c", sender);
 			return false;
 		}
 		// Check if valid outLang
 		if (!refs.isSupportedTranslatorLang(outLang, "out")) {
-			refs.sendFancyMsg("wwctInvalidOutputLangCode", refs.getFormattedValidLangCodes("out"), "&c", sender);
+			// TODO: Replace getFormattedValidLangCodes() with something cleaner?
+			refs.sendFancyMsg("wwctInvalidOutputLangCode", refs.getFormattedTranslatorLangCodes("out"), "&c", sender);
 			return false;
 		}
-
 		// Check if target is valid player (if not global)
 		// Set UUID if valid, else exit
 		String inUUID = "";
@@ -218,17 +214,7 @@ public class WWCTranslate extends BasicCommand {
 				refs.sendFancyMsg("wwcgLangToLangStart", new String[] {"&6"+inLang, "&6"+outLang}, main.getServer().getConsoleSender());
 			}
 		}
-
-		// Convert codes
-		refs.debugMsg("Converting langs to langCodes...");
-		if (!inLang.equals("None")) {
-			inLang = refs.getSupportedTranslatorLang(inLang, "in").getLangCode();
-		}
-		outLang = refs.getSupportedTranslatorLang(outLang, "out").getLangCode();
-
-		// Add ActiveTranslator
 		ActiveTranslator newTranslator = new ActiveTranslator(inUUID, "None", outLang);
-
 		if (!inLang.equalsIgnoreCase("None")) {
 			newTranslator.setInLangCode(inLang);
 		}

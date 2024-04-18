@@ -62,22 +62,27 @@ public class CommonRefs {
 	
 	public static String[] supportedMCVersions = { "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13" };
 
-	public static String[] supportedPluginLangCodes = {"af", "am", "ar", "az", "bg", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "en", "es", "es-MX", "et", "fa", "fa-AF", "fi", "fr", "fr-CA",
-			"ga", "gu", "ha", "he", "hi", "hr", "ht", "hu", "hy", "id", "is", "it", "ja", "ka", "kk", "kn", "ko", "lt", "lv", "mk", "ml", "mn", "mr", "ms", "mt", "nl", "no", "pa", "pl", "ps", "pt",
-			"pt-PT", "ro", "ru", "si", "sk", "sl", "so", "sq", "sr", "sv", "sw", "ta", "te", "th", "tl", "tr", "uk", "ur", "uz", "vi", "zh", "zh-TW"};
+	public static Map<String, String> supportedPluginLangCodes = new HashMap<>();
+	static {
+		String[] raw = {"af", "am", "ar", "az", "bg", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "en", "es", "es-MX", "et", "fa", "fa-AF", "fi", "fr", "fr-CA",
+				"ga", "gu", "ha", "he", "hi", "hr", "ht", "hu", "hy", "id", "is", "it", "ja", "ka", "kk", "kn", "ko", "lt", "lv", "mk", "ml", "mn", "mr", "ms", "mt", "nl", "no", "pa", "pl", "ps", "pt",
+				"pt-PT", "ro", "ru", "si", "sk", "sl", "so", "sq", "sr", "sv", "sw", "ta", "te", "th", "tl", "tr", "uk", "ur", "uz", "vi", "zh", "zh-TW"};
+		for (String eaStr : raw) {
+			supportedPluginLangCodes.put(eaStr, eaStr);
+		}
+	}
 
-	public static ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
-
-	public static List<Pair<String, String>> translatorPairs = new ArrayList<>(Arrays.asList(
-			Pair.of("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator"),
-			Pair.of("Translator.useGoogleTranslate", "Google Translate"),
-			Pair.of("Translator.useAmazonTranslate", "Amazon Translate"),
-			Pair.of("Translator.useLibreTranslate", "Libre Translate"),
-			Pair.of("Translator.useDeepLTranslate", "DeepL Translate"),
-			Pair.of("Translator.useWatsonTranslate", "Watson"),
-			Pair.of("Translator.useAzureTranslate", "Azure Translate"),
-			Pair.of("Translator.useSystranTranslate", "Systran Translate")
-	));
+	public static final Map<String, String> translatorPairs = new HashMap<>();
+	static {
+		translatorPairs.put("Translator.testModeTranslator", "JUnit/MockBukkit Testing Translator");
+		translatorPairs.put("Translator.useGoogleTranslate", "Google Translate");
+		translatorPairs.put("Translator.useAmazonTranslate", "Amazon Translate");
+		translatorPairs.put("Translator.useLibreTranslate", "Libre Translate");
+		translatorPairs.put("Translator.useDeepLTranslate", "DeepL Translate");
+		translatorPairs.put("Translator.useWatsonTranslate", "Watson");
+		translatorPairs.put("Translator.useAzureTranslate", "Azure Translate");
+		translatorPairs.put("Translator.useSystranTranslate", "Systran Translate");
+	}
 
 	public static final Map<String, Map<String, String>> tableSchemas = new HashMap<>();
 	static {
@@ -106,6 +111,8 @@ public class CommonRefs {
 		playerRecordsSchema.put("localizationCode", "VARCHAR(10)");
 		tableSchemas.put("playerRecords", playerRecordsSchema);
 	}
+
+	public static ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
 
 	public boolean checkIfValidLocalLang(String in) {
 		for (String supportedPluginLangCode : supportedPluginLangCodes) {
@@ -210,6 +217,7 @@ public class CommonRefs {
 		SupportedLang invalidLang = new SupportedLang("","","");
 		
 		/* Check langType */
+
 		if (langType.equalsIgnoreCase("in")) {
 			langList.addAll(main.getSupportedInputLangs());
 		} else if (langType.equalsIgnoreCase("out")) {
@@ -246,13 +254,17 @@ public class CommonRefs {
 	}
 
 	/**
+	 *
+	 */
+
+	/**
 	  * Gets a list of properly formatted, supported language codes.
 	  * @param langType - 'out' or 'in' are two valid inputs for this;
 	  * 'out' will check if in is a valid output lang, 'in' will check the input lang list
 	  * @return String - Formatted language codes
 	  * 
 	  */
-	public String getFormattedValidLangCodes(String langType) {
+	public String getFormattedTranslatorLangCodes(String langType) {
 		/* Setup vars */
 		List<SupportedLang> langList;
 		StringBuilder out = new StringBuilder("\n");
