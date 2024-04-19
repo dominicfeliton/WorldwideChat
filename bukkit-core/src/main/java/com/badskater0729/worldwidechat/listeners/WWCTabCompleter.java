@@ -280,18 +280,30 @@ public class WWCTabCompleter implements TabCompleter {
 						out.add(Bukkit.getPlayer(UUID.fromString(eaRecord.getUUID())).getName());
 					}
 				}
-				for (String supportedLangCode : CommonRefs.supportedPluginLangCodes) {
-					if (supportedLangCode.startsWith(args[0])) {
-						out.add(supportedLangCode);
+				for (SupportedLang lang : CommonRefs.supportedPluginLangCodes.values()) {
+					if (lang.getLangCode().startsWith(args[0])) {
+						out.add(lang.getLangCode());
+					}
+					if (lang.getLangName().startsWith(args[0])) {
+						out.add(lang.getLangName());
+					}
+					if (lang.getNativeLangName().startsWith(args[0])) {
+						out.add(lang.getNativeLangName());
 					}
 				}
 				if ("stop".startsWith(args[0]) && main.isPlayerRecord((Player)sender) && !main.getPlayerRecord((Player)sender, false).getLocalizationCode().isEmpty()) {
 					out.add("stop");
 				}
 			} else if (args.length == 2) {
-				for (String supportedLangCode : CommonRefs.supportedPluginLangCodes) {
-					if (supportedLangCode.startsWith(args[1]) && Bukkit.getPlayerExact(args[0]) != null) {
-						out.add(supportedLangCode);
+				for (SupportedLang lang : CommonRefs.supportedPluginLangCodes.values()) {
+					if (lang.getLangCode().startsWith(args[1]) && Bukkit.getPlayerExact(args[0]) != null) {
+						out.add(lang.getLangCode());
+					}
+					if (lang.getLangName().startsWith(args[1]) && Bukkit.getPlayerExact(args[0]) != null) {
+						out.add(lang.getLangName());
+					}
+					if (lang.getNativeLangName().startsWith(args[1]) && Bukkit.getPlayerExact(args[0]) != null) {
+						out.add(lang.getNativeLangName());
 					}
 				}
 				if (Bukkit.getPlayerExact(args[0]) != null && "stop".startsWith(args[1]) && main.isPlayerRecord(Bukkit.getPlayerExact(args[0])) && !main.getPlayerRecord(Bukkit.getPlayerExact(args[0]), false).getLocalizationCode().isEmpty()) {

@@ -61,11 +61,13 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
 
             /* Pagination: Lets you generate pages rather than set defined ones */
             Pagination pagination = contents.pagination();
-            ClickableItem[] listOfAvailableLangs = new ClickableItem[CommonRefs.supportedPluginLangCodes.length];
+            ClickableItem[] listOfAvailableLangs = new ClickableItem[CommonRefs.supportedPluginLangCodes.size()];
 
             /* Add each supported language from each respective translator */
-            for (int i = 0; i < CommonRefs.supportedPluginLangCodes.length; i++) {
-                String currLang = CommonRefs.supportedPluginLangCodes[i];
+            // TODO: Convert to /wwct
+            int i = 0;
+            for (SupportedLang eaLang : CommonRefs.supportedPluginLangCodes.values()) {
+                String currLang = eaLang.getLangCode();
                 ItemStack itemForLang = XMaterial.BOOK.parseItem();
                 ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 
@@ -83,6 +85,7 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
                     localize.processCommand();
                     new WWCTranslateGuiMainMenu(targetPlayerUUID, inPlayer).getTranslateMainMenu().open(player);
                 });
+                i += 1;
             }
 
             /* 28 langs per page, start at 1, 1 */

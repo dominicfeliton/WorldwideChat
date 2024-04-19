@@ -51,16 +51,15 @@ public class GeneralSettingsConvos {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			Player currPlayer = ((Player) context.getForWhom());
 			currPlayer.closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationLangInput", new String[] {main.getConfigManager().getMainConfig().getString("General.pluginLang"), Arrays.toString(supportedPluginLangCodes)}, currPlayer);
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationLangInput", new String[] {main.getConfigManager().getMainConfig().getString("General.pluginLang"), refs.getFormattedLangCodes("local")}, currPlayer);
 		}
 
 		@Override
 		public Prompt acceptInput(ConversationContext context, String input) {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			for (String eaLangCode : supportedPluginLangCodes) {
-				if (eaLangCode.equalsIgnoreCase(input) || input.equals("0")) {
-					return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLangSuccess", "General.pluginLang", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
-				}
+			if (refs.isSupportedLang(input, "local") || input.equals("0")) {
+				input = refs.getSupportedLang(input, "local").getLangCode();
+				return refs.genericConfigConvo(!input.equals("0"), context, "wwcConfigConversationLangSuccess", "General.pluginLang", input, CONFIG_GUI_TAGS.GEN_SET.smartInv);
 			}
 			Player currPlayer = ((Player) context.getForWhom());
 			final TextComponent badChange = Component.text()

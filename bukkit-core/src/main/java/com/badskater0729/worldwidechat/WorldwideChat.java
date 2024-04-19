@@ -23,11 +23,6 @@ import org.jetbrains.annotations.NotNull;
 
 import com.badskater0729.worldwidechat.configuration.ConfigurationHandler;
 import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
-import com.badskater0729.worldwidechat.inventory.configuration.MenuGui;
-import com.badskater0729.worldwidechat.listeners.ChatListener;
-import com.badskater0729.worldwidechat.listeners.InventoryListener;
-import com.badskater0729.worldwidechat.listeners.OnPlayerJoinListener;
-import com.badskater0729.worldwidechat.listeners.TranslateInGameListener;
 import com.badskater0729.worldwidechat.listeners.WWCTabCompleter;
 import com.badskater0729.worldwidechat.runnables.LoadUserData;
 import com.badskater0729.worldwidechat.runnables.SyncUserData;
@@ -150,8 +145,8 @@ public class WorldwideChat extends JavaPlugin {
 		inventoryManager = new WWCInventoryManager(); // InventoryManager for SmartInvs API
 		inventoryManager.init(); // Init InventoryManager
 
-		// Load plugin configs, check if they successfully initialized
-		loadPluginConfigs(false);
+		// Load "secondary" services + plugin configs, check if they successfully initialized
+		doStartupTasks(false);
 
 		// Register event handlers
 		wwcHelper.registerEventHandlers();
@@ -340,7 +335,7 @@ public class WorldwideChat extends JavaPlugin {
 					getConfigManager().saveMainConfig(false);
 				}
 
-				loadPluginConfigs(true);
+				doStartupTasks(true);
 				
 				/* Send successfully reloaded message */
 				if (inSender != null) {
@@ -471,18 +466,27 @@ public class WorldwideChat extends JavaPlugin {
 		cache.cleanUp();
 	}
 
-	/* Load Plugin Configs */
+	/* Do Startup Tasks */
 	/**
-	  * (Re)load all plugin configs 
+	  * Platform-exclusive tasks, such as (re)loading all plugin configs
 	  * @param isReloading - If this function should accommodate for a plugin reload or not
 	  */
-	public void loadPluginConfigs(boolean isReloading) {
+	public void doStartupTasks(boolean isReloading) {
+		// Start thread executor
 		callbackExecutor = Executors.newCachedThreadPool();
+
+		// Set config manager
 		setConfigManager(new ConfigurationHandler());
 
 		// Init and load configs
 		configurationManager.initMainConfig();
 		configurationManager.initMessagesConfigs();
+
+		// Fix localizations to include full name + native name
+		List<SupportedLang> tempCodes = refs.fixLangNames(new ArrayList<>(supportedPluginLangCodes.values()), false);
+		for (SupportedLang supportedLang : tempCodes) {
+			supportedPluginLangCodes.put(supportedLang.getLangCode(), supportedLang);
+		}
 
 		configurationManager.loadMainSettings();
 		configurationManager.loadStorageSettings();

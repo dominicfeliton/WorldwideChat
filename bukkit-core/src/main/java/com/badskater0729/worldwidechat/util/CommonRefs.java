@@ -1,7 +1,6 @@
 package com.badskater0729.worldwidechat.util;
 
 import java.io.*;
-import java.lang.reflect.Type;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
@@ -9,20 +8,12 @@ import java.sql.SQLException;
 import java.text.MessageFormat;
 import java.util.*;
 import java.util.concurrent.*;
-import java.util.regex.Matcher;
 
 import com.badskater0729.worldwidechat.translators.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.google.gson.annotations.SerializedName;
-import com.google.gson.reflect.TypeToken;
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.apache.commons.lang3.tuple.Pair;
 import org.apache.commons.text.StringEscapeUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
@@ -50,10 +41,8 @@ import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
-import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.md_5.bungee.api.ChatColor;
-import org.yaml.snakeyaml.Yaml;
 
 public class CommonRefs {
 
@@ -62,13 +51,14 @@ public class CommonRefs {
 	
 	public static String[] supportedMCVersions = { "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13" };
 
-	public static Map<String, String> supportedPluginLangCodes = new HashMap<>();
+	public static Map<String, SupportedLang> supportedPluginLangCodes = new HashMap<>();
 	static {
 		String[] raw = {"af", "am", "ar", "az", "bg", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "en", "es", "es-MX", "et", "fa", "fa-AF", "fi", "fr", "fr-CA",
 				"ga", "gu", "ha", "he", "hi", "hr", "ht", "hu", "hy", "id", "is", "it", "ja", "ka", "kk", "kn", "ko", "lt", "lv", "mk", "ml", "mn", "mr", "ms", "mt", "nl", "no", "pa", "pl", "ps", "pt",
 				"pt-PT", "ro", "ru", "si", "sk", "sl", "so", "sq", "sr", "sv", "sw", "ta", "te", "th", "tl", "tr", "uk", "ur", "uz", "vi", "zh", "zh-TW"};
 		for (String eaStr : raw) {
-			supportedPluginLangCodes.put(eaStr, eaStr);
+			// TODO: Fix ISO Codes on init
+			supportedPluginLangCodes.put(eaStr, new SupportedLang(eaStr, "", ""));
 		}
 	}
 
@@ -113,17 +103,6 @@ public class CommonRefs {
 	}
 
 	public static ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();
-
-	public boolean checkIfValidLocalLang(String in) {
-		for (String supportedPluginLangCode : supportedPluginLangCodes) {
-			if (supportedPluginLangCode
-					.equalsIgnoreCase(in)) {
-				return true;
-			}
-		}
-
-		return false;
-	}
 
 	public void runAsync(BukkitRunnable in) {
 		runAsync(true, in);
@@ -199,21 +178,23 @@ public class CommonRefs {
 	  * @return Boolean - Whether languages are the same or not
 	  */
 	public boolean isSameTranslatorLang(String first, String second, String langType) {
-		return isSupportedTranslatorLang(first, langType) && isSupportedTranslatorLang(second, langType) 
-				&& getSupportedTranslatorLang(first, langType).getLangCode().equals(getSupportedTranslatorLang(second, langType).getLangCode());
+		return isSupportedLang(first, langType) && isSupportedLang(second, langType)
+				&& getSupportedLang(first, langType).getLangCode().equals(getSupportedLang(second, langType).getLangCode());
 	}
 
 	/**
 	  * Gets a supported language under the current translator.
 	  * @param langName - A valid language name
-	  * @param langType - 'out' or 'in' are two valid inputs for this;
+	  * @param langType - 'out' or 'in' or 'local' are three valid inputs for this;
 	  * 'out' will check if in is a valid output lang, 'in' will check the input lang list
 	  * 'all' will check both lists
+	  * 'local' will check local lang list
 	  * @return SupportedLanguageObject - Will be completely empty if the language is invalid
 	  */
-	public SupportedLang getSupportedTranslatorLang(String langName, String langType) {
+	public SupportedLang getSupportedLang(String langName, String langType) {
 		/* Setup vars */
-		List<SupportedLang> langList = new ArrayList<SupportedLang>();
+		// TODO: Make this better...make each list a MAP, then GET the requested lang?
+		Set<SupportedLang> langList = new HashSet<SupportedLang>();
 		SupportedLang invalidLang = new SupportedLang("","","");
 		
 		/* Check langType */
@@ -225,6 +206,9 @@ public class CommonRefs {
 		} else if (langType.equalsIgnoreCase("all")) { 
 			langList.addAll(main.getSupportedInputLangs());
 			langList.addAll(main.getSupportedOutputLangs());
+		} else if (langType.equalsIgnoreCase("local")) {
+			if (supportedPluginLangCodes.containsKey(langName)) return supportedPluginLangCodes.get(langName);
+			langList.addAll(CommonRefs.supportedPluginLangCodes.values());
 		} else {
 			debugMsg("Invalid langType for getSupportedTranslatorLang()! langType: " + langType + " ...returning invalid, not checking language. Fix this!!!");
 		    return invalidLang;
@@ -232,6 +216,10 @@ public class CommonRefs {
 		
 		/* Check selected list for lang */
 		for (SupportedLang eaLang : langList) {
+			if (eaLang == null) {
+				debugMsg("Could not determine language equality...eaLang is NULL for " + langType + "! FIXME, returning INVALID");
+				return invalidLang;
+			}
 			if ((eaLang.getLangCode().equalsIgnoreCase(langName) || eaLang.getLangName().equalsIgnoreCase(langName) || eaLang.getNativeLangName().equalsIgnoreCase(langName))) {
 				return eaLang;
 			}
@@ -249,8 +237,8 @@ public class CommonRefs {
 	 * 'all' will check both lists
 	 * @return true if supported, false otherwise
 	 */
-	public boolean isSupportedTranslatorLang(String in, String langType) {
-		return !getSupportedTranslatorLang(in, langType).getLangCode().isEmpty();
+	public boolean isSupportedLang(String in, String langType) {
+		return !getSupportedLang(in, langType).getLangCode().isEmpty();
 	}
 
 	/**
@@ -264,16 +252,18 @@ public class CommonRefs {
 	  * @return String - Formatted language codes
 	  * 
 	  */
-	public String getFormattedTranslatorLangCodes(String langType) {
+	public String getFormattedLangCodes(String langType) {
 		/* Setup vars */
-		List<SupportedLang> langList;
+		Set<SupportedLang> langList = new HashSet<>();
 		StringBuilder out = new StringBuilder("\n");
 
 		/* Check langType */
 		if (langType.equalsIgnoreCase("in")) {
-			langList = main.getSupportedInputLangs();
+			langList.addAll(main.getSupportedInputLangs());
 		} else if (langType.equalsIgnoreCase("out")) {
-			langList = main.getSupportedOutputLangs();
+			langList.addAll(main.getSupportedOutputLangs());
+		} else if (langType.equalsIgnoreCase("local")) {
+			langList.addAll(CommonRefs.supportedPluginLangCodes.values());
 		} else {
 			debugMsg("Invalid langType for getFormattedValidLangCodes()! langType: " + langType + " ...returning invalid, not checking language. Fix this!!!");
 			return "&cInvalid language type specified";
@@ -281,6 +271,11 @@ public class CommonRefs {
 
 		/* Format the output nicely */
 		for (SupportedLang eaLang : langList) {
+			if (eaLang == null) {
+				debugMsg("Lang codes not set for " + langType + "! FIX THIS");
+				out.append("N/A");
+				break;
+			}
 			out.append("&b").append(eaLang.getLangCode())
 					.append(" &f- ")
 					.append("&e").append(eaLang.getLangName()).append("&6/&e").append(eaLang.getNativeLangName())
@@ -293,44 +288,6 @@ public class CommonRefs {
 		}
 
 		return out.toString();
-	}
-
-
-	/**
-	 * Fixes a given list of SupportedLangs to include native names/language names
-	 * @param in - List of SupportedLang objs
-	 * @param nativesOnly - Whether we should add regular lang names as well as native langs
-	 * @return - The fixed list of supportedLang objs
-	 */
-	public List<SupportedLang> fixLangNames(List<SupportedLang> in, boolean nativesOnly) {
-		// Adjust the file path as necessary
-		String isoJsonFilePath = "ISO_639-WWC-Modified.json";
-		ObjectMapper objectMapper = new ObjectMapper();
-		Map<String, ISOLanguage> languageMap;
-
-		try {
-			languageMap = objectMapper.readValue(main.getResource(isoJsonFilePath), new TypeReference<Map<String, ISOLanguage>>(){});
-			for (int i = 0; i < in.size(); i++) {
-				SupportedLang currLang = in.get(i);
-				String currCode = currLang.getLangCode();
-				ISOLanguage jsonLang = languageMap.get(currCode);
-
-				if (jsonLang != null) {
-					if (nativesOnly) {
-						in.set(i, new SupportedLang(currLang.getLangCode(), currLang.getLangName(), jsonLang.getNativeName()));
-					} else {
-						in.set(i, new SupportedLang(currLang.getLangCode(), jsonLang.getIntName(), jsonLang.getNativeName()));
-					}
-				} else {
-					debugMsg("Could not find " + currCode + " in JSON!");
-				}
-			}
-		} catch (Exception e) {
-			//e.printStackTrace();
-			main.getLogger().warning(getMsg("wwcISOJSONFail", null));
-		}
-
-		return in;
 	}
 
 	/**
@@ -1189,6 +1146,43 @@ public class CommonRefs {
 
 	public void badPermsMessage(String correctPerm, CommandSender sender) {
 		sendFancyMsg("wwcBadPerms", "&6" + correctPerm, "&c", sender);
+	}
+
+	/**
+	 * Fixes a given list of SupportedLangs to include native names/language names
+	 * @param in - List of SupportedLang objs
+	 * @param nativesOnly - Whether we should add regular lang names as well as native langs
+	 * @return - The fixed list of supportedLang objs
+	 */
+	public List<SupportedLang> fixLangNames(List<SupportedLang> in, boolean nativesOnly) {
+		// Adjust the file path as necessary
+		String isoJsonFilePath = "ISO_639-WWC-Modified.json";
+		ObjectMapper objectMapper = new ObjectMapper();
+		Map<String, ISOLanguage> languageMap;
+
+		try {
+			languageMap = objectMapper.readValue(main.getResource(isoJsonFilePath), new TypeReference<Map<String, ISOLanguage>>(){});
+			for (int i = 0; i < in.size(); i++) {
+				SupportedLang currLang = in.get(i);
+				String currCode = currLang.getLangCode();
+				ISOLanguage jsonLang = languageMap.get(currCode);
+
+				if (jsonLang != null) {
+					if (nativesOnly) {
+						in.set(i, new SupportedLang(currLang.getLangCode(), currLang.getLangName(), jsonLang.getNativeName()));
+					} else {
+						in.set(i, new SupportedLang(currLang.getLangCode(), jsonLang.getIntName(), jsonLang.getNativeName()));
+					}
+				} else {
+					debugMsg("Could not find " + currCode + " in JSON!");
+				}
+			}
+		} catch (Exception e) {
+			//e.printStackTrace();
+			main.getLogger().warning(getMsg("wwcISOJSONFail", null));
+		}
+
+		return in;
 	}
 
 	static class ISOLanguage {

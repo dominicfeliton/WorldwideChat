@@ -14,7 +14,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 import com.badskater0729.worldwidechat.WorldwideChat;
 import com.badskater0729.worldwidechat.commands.WWCGlobal;
 import com.badskater0729.worldwidechat.commands.WWCTranslate;
-import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
 import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.cryptomorin.xseries.XMaterial;
@@ -87,7 +86,7 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 				}
 				ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 				ArrayList<String> lore = new ArrayList<>();
-				SupportedLang userLang = refs.getSupportedTranslatorLang(currTranslator.getOutLangCode(), "out");
+				SupportedLang userLang = refs.getSupportedLang(currTranslator.getOutLangCode(), "out");
 
 				/* Add Glow Effect */
 				if (unsupported) {

@@ -1,21 +1,13 @@
 package com.badskater0729.worldwidechat.commands;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.configuration.ConfigurationHandler;
-import com.badskater0729.worldwidechat.util.ActiveTranslator;
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import com.badskater0729.worldwidechat.util.PlayerRecord;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
-import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
-
-import java.util.Arrays;
-
-import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
 
 public class WWCLocalize extends BasicCommand {
 
@@ -65,8 +57,8 @@ public class WWCLocalize extends BasicCommand {
             return false;
         }
 
-        if (!refs.checkIfValidLocalLang(locale) && !locale.equalsIgnoreCase("stop")) {
-            refs.sendFancyMsg("wwclLangInvalid", new String[] {"&6"+locale, "&6"+ Arrays.toString(supportedPluginLangCodes)}, sender);
+        if (!refs.isSupportedLang(locale, "local") && !locale.equalsIgnoreCase("stop")) {
+            refs.sendFancyMsg("wwclLangInvalid", new String[] {"&6"+locale, "&6"+ refs.getFormattedLangCodes("local")}, sender);
             return false;
         }
 
@@ -79,34 +71,34 @@ public class WWCLocalize extends BasicCommand {
         if (!isConsoleSender && inPlayer.getName().equalsIgnoreCase(sender.getName())) {
             // Changing our own localization
             if (!locale.equalsIgnoreCase("stop")) {
-                currRecord.setLocalizationCode(locale);
                 changeLangMsg(sender, inName, locale);
             } else {
                 if (!currRecord.getLocalizationCode().isEmpty()) {
                     stopLangMsg(sender);
-                    currRecord.setLocalizationCode("");
                 } else {
                     alreadyStoppedMsg(sender);
                 }
             }
-            return true;
         } else {
             // Changing someone else's
             if (!locale.equalsIgnoreCase("stop")) {
-                currRecord.setLocalizationCode(args[1]);
                 refs.sendFancyMsg("wwclLangChangedOtherPlayerSender", new String[] {"&6"+inName, "&6"+locale}, sender);
                 changeLangMsg(inPlayer, inName, locale);
             } else {
                 if (!currRecord.getLocalizationCode().isEmpty()) {
-                    currRecord.setLocalizationCode("");
                     refs.sendFancyMsg("wwclLangStoppedOtherPlayerSender", "&6"+inName, sender);
                     stopLangMsg(inPlayer);
                 } else {
                     refs.sendFancyMsg("wwclLangAlreadyStoppedOtherPlayerSender", "&6"+inName, sender);
                 }
             }
-            return true;
         }
+
+        // Convert to lang code
+        locale = !locale.equalsIgnoreCase("stop") ? refs.getSupportedLang(locale, "local").getLangCode() : "";
+        currRecord.setLocalizationCode(locale);
+
+        return true;
     }
 
     private void playerNotFoundMsg(CommandSender sender, String inName) {

@@ -72,9 +72,9 @@ public class AzureTranslation extends BasicTranslation {
              * instead of full names (English, Spanish) */
             if (!isInitializing) {
                 if (!inputLang.equals("None")) {
-                    inputLang = refs.getSupportedTranslatorLang(inputLang, "in").getLangCode();
+                    inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
                 }
-                outputLang = refs.getSupportedTranslatorLang(outputLang, "out").getLangCode();
+                outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
             }
 
             // Detect if None

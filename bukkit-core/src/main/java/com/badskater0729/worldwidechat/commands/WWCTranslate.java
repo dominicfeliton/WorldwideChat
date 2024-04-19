@@ -143,22 +143,22 @@ public class WWCTranslate extends BasicCommand {
 	private boolean startNewTranslationSession(String inName, String inLang, String outLang) {
 		// Check if inLang/outLang are the same
 		if (inLang.equalsIgnoreCase(outLang) || refs.isSameTranslatorLang(inLang, outLang, "all")) {
-			refs.sendFancyMsg("wwctSameLangError", refs.getFormattedTranslatorLangCodes("in"), "&c", sender);
+			refs.sendFancyMsg("wwctSameLangError", refs.getFormattedLangCodes("in"), "&c", sender);
 			return false;
 		}
 		/* NOTICE:
 		 * Do not let users use None inputLang with Amazon Translate. 
 		 * Remove this if we ever find a workaround for each. */
 		// Check if valid inLang
-		if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedTranslatorLang(inLang, "in")) || 
+		if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedLang(inLang, "in")) ||
 				(inLang.equalsIgnoreCase("None") && main.getTranslatorName().equalsIgnoreCase("Amazon Translate"))) {
-			refs.sendFancyMsg("wwctInvalidInputLangCode", refs.getFormattedTranslatorLangCodes("in"), "&c", sender);
+			refs.sendFancyMsg("wwctInvalidInputLangCode", refs.getFormattedLangCodes("in"), "&c", sender);
 			return false;
 		}
 		// Check if valid outLang
-		if (!refs.isSupportedTranslatorLang(outLang, "out")) {
+		if (!refs.isSupportedLang(outLang, "out")) {
 			// TODO: Replace getFormattedValidLangCodes() with something cleaner?
-			refs.sendFancyMsg("wwctInvalidOutputLangCode", refs.getFormattedTranslatorLangCodes("out"), "&c", sender);
+			refs.sendFancyMsg("wwctInvalidOutputLangCode", refs.getFormattedLangCodes("out"), "&c", sender);
 			return false;
 		}
 		// Check if target is valid player (if not global)

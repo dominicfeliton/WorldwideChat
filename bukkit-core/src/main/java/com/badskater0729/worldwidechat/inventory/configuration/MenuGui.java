@@ -3,6 +3,7 @@ package com.badskater0729.worldwidechat.inventory.configuration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 import com.badskater0729.worldwidechat.conversations.configuration.*;
@@ -199,7 +200,7 @@ public class MenuGui implements InventoryProvider {
 		
 		// Translator
         List<String> translatorToggles = new ArrayList<>();
-        for (Pair<String, String> translatorPair : CommonRefs.translatorPairs) {
+        for (Map.Entry<String, String> translatorPair : CommonRefs.translatorPairs.entrySet()) {
             String key = translatorPair.getKey();
             translatorToggles.add(key);
         }

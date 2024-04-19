@@ -38,12 +38,14 @@ public class MessagesOverridePickLangGui implements InventoryProvider {
     @Override
     public void init(Player player, InventoryContents contents) {
         try {
+            // TODO: Change to formatted langs like /wwct?
+
             /* Yellow stained glass borders */
             invManager.setBorders(contents, XMaterial.YELLOW_STAINED_GLASS_PANE);
 
             /* Pagination */
             Pagination pagination = contents.pagination();
-            String[] langs = CommonRefs.supportedPluginLangCodes;
+            String[] langs = CommonRefs.supportedPluginLangCodes.keySet().toArray(String[]::new);
             ClickableItem[] langsFormatted = new ClickableItem[langs.length];
 
             refs.debugMsg("Adding all supported langs! Amount of langs: " + langs.length);

@@ -10,7 +10,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.inventory.WWCInventoryManager;
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
 import com.badskater0729.worldwidechat.util.SupportedLang;
 import com.cryptomorin.xseries.XMaterial;
@@ -71,7 +70,7 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 				ItemStack itemForLang = XMaterial.BOOK.parseItem();
 				ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 				SupportedLang currLang = main.getSupportedInputLangs().get(i);
-				SupportedLang userLang = refs.getSupportedTranslatorLang(currTranslator.getInLangCode(), "in");
+				SupportedLang userLang = refs.getSupportedLang(currTranslator.getInLangCode(), "in");
 				
 				/* Add Glow Effect */
 				ArrayList<String> lore = new ArrayList<>();

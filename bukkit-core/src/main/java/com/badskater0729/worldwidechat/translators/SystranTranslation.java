@@ -95,9 +95,9 @@ public class SystranTranslation extends BasicTranslation {
             /* Get language code of current input/output language */
             if (!isInitializing) {
                 if (!inputLang.equals("None")) {
-                    inputLang = refs.getSupportedTranslatorLang(inputLang, "in").getLangCode();
+                    inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
                 }
-                outputLang = refs.getSupportedTranslatorLang(outputLang, "out").getLangCode();
+                outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
             }
 
             /* Actual translation */

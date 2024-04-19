@@ -8,7 +8,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.DatabaseMetaData;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -81,7 +80,7 @@ public class LoadUserData implements Runnable {
 								rs.getInt("successfulTranslations")
 						);
 						recordToAdd.setLocalizationCode("");
-						if (rs.getString("localizationCode") != null && !rs.getString("localizationCode").isEmpty() && refs.checkIfValidLocalLang(rs.getString("localizationCode"))) {
+						if (rs.getString("localizationCode") != null && !rs.getString("localizationCode").isEmpty() && refs.isSupportedLang(rs.getString("localizationCode"), "local")) {
 							recordToAdd.setLocalizationCode(rs.getString("localizationCode"));
 						}
 						recordToAdd.setHasBeenSaved(true);
@@ -139,7 +138,7 @@ public class LoadUserData implements Runnable {
 								rs.getInt("successfulTranslations")
 						);
 						recordToAdd.setLocalizationCode("");
-						if (rs.getString("localizationCode") != null && !rs.getString("localizationCode").isEmpty() && refs.checkIfValidLocalLang(rs.getString("localizationCode"))) {
+						if (rs.getString("localizationCode") != null && !rs.getString("localizationCode").isEmpty() && refs.isSupportedLang(rs.getString("localizationCode"), "local")) {
 							recordToAdd.setLocalizationCode(rs.getString("localizationCode"));
 						}
 						recordToAdd.setHasBeenSaved(true);
@@ -168,7 +167,7 @@ public class LoadUserData implements Runnable {
 						currFileConfig.getInt("attemptedTranslations"),
 						currFileConfig.getInt("successfulTranslations"));
 				currRecord.setLocalizationCode("");
-				if (currFileConfig.getString("localizationCode") != null && !currFileConfig.getString("localizationCode").isEmpty() && refs.checkIfValidLocalLang(currFileConfig.getString("localizationCode"))) {
+				if (currFileConfig.getString("localizationCode") != null && !currFileConfig.getString("localizationCode").isEmpty() && refs.isSupportedLang(currFileConfig.getString("localizationCode"), "local")) {
 					currRecord.setLocalizationCode(currFileConfig.getString("localizationCode"));
 				}
 				currRecord.setHasBeenSaved(true);
@@ -328,16 +327,16 @@ public class LoadUserData implements Runnable {
 	
 	private boolean validLangCodes(String inLang, String outLang) {
 		// If inLang is invalid, or None is associated with Amazon Translate
-		if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedTranslatorLang(inLang, "in"))
+		if ((!inLang.equalsIgnoreCase("None") && !refs.isSupportedLang(inLang, "in"))
 				|| (inLang.equalsIgnoreCase("None") && transName.equalsIgnoreCase("Amazon Translate"))) {
 			return false;
 		}
 		// If outLang code is not supported with current translator
-		if (!refs.isSupportedTranslatorLang(outLang, "out")) {
+		if (!refs.isSupportedLang(outLang, "out")) {
 			return false;
 		}
 		// If inLang and outLang codes are equal
-		if (refs.getSupportedTranslatorLang(outLang, "out").getLangCode().equals(refs.getSupportedTranslatorLang(inLang, "in").getLangCode())) {
+		if (refs.getSupportedLang(outLang, "out").getLangCode().equals(refs.getSupportedLang(inLang, "in").getLangCode())) {
 		    refs.debugMsg("Langs are the same?");
 			return false;
 		}

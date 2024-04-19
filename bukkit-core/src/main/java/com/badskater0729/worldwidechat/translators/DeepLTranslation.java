@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
@@ -74,9 +73,9 @@ public class DeepLTranslation extends BasicTranslation {
 			 * instead of full names (English, Spanish) */
 			if (!isInitializing) {
 				if (!inputLang.equals("None")) {
-					inputLang = refs.getSupportedTranslatorLang(inputLang, "in").getLangCode();
+					inputLang = refs.getSupportedLang(inputLang, "in").getLangCode();
 				}
-				outputLang = refs.getSupportedTranslatorLang(outputLang, "out").getLangCode();
+				outputLang = refs.getSupportedLang(outputLang, "out").getLangCode();
 			}
 
 			/* If inputLang set to None, set as null for translateText() */

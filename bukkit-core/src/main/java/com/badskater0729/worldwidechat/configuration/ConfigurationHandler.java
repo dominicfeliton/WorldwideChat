@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.lang.reflect.Field;
 import java.nio.charset.StandardCharsets;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,7 +12,6 @@ import java.sql.SQLException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import com.badskater0729.worldwidechat.translators.*;
 import com.badskater0729.worldwidechat.util.storage.PostgresUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bson.Document;
@@ -39,10 +37,8 @@ import com.mongodb.client.model.ReplaceOptions;
 
 import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
-import org.apache.commons.lang3.tuple.Pair;
 
 import com.badskater0729.worldwidechat.util.CommonRefs;
-import org.yaml.snakeyaml.Yaml;
 
 public class ConfigurationHandler {
 
@@ -73,12 +69,9 @@ public class ConfigurationHandler {
 		saveMainConfig(false);
 
 		/* Get plugin lang */
-		for (String supportedPluginLangCode : supportedPluginLangCodes) {
-			if (supportedPluginLangCode
-					.equalsIgnoreCase(mainConfig.getString("General.pluginLang"))) {
-				main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + mainConfig.getString("General.pluginLang") + ".");
-				return;
-			}
+		if (refs.isSupportedLang(mainConfig.getString("General.pluginLang"), "local")) {
+			main.getLogger().info(ChatColor.LIGHT_PURPLE + "Detected language " + mainConfig.getString("General.pluginLang") + ".");
+			return;
 		}
 
 		mainConfig.set("General.pluginLang", "en");
@@ -89,7 +82,7 @@ public class ConfigurationHandler {
 	public void initMessagesConfigs() {
 		// Init ALL message configs
 		main.getLogger().warning("Importing/upgrading localization files...");
-		for (String eaStr : supportedPluginLangCodes) {
+		for (String eaStr : supportedPluginLangCodes.keySet()) {
 			refs.debugMsg("Checking " + eaStr + "...");
 			pluginLangConfigs.put(eaStr, generateMessagesConfig(eaStr));
 		}
@@ -351,7 +344,7 @@ public class ConfigurationHandler {
 			if (refs.serverIsStopping()) return outName;
 			try {
 				main.getLogger().warning(refs.getMsg("wwcTranslatorAttempt", new String[] {tryNumber + "", maxTries + ""}, null));
-				for (Pair<String, String> eaPair : CommonRefs.translatorPairs) {
+				for (Map.Entry<String, String> eaPair : CommonRefs.translatorPairs.entrySet()) {
 					if (mainConfig.getBoolean(eaPair.getKey())) {
 						attemptedTranslator = eaPair.getValue();
 						refs.getTranslatorResult(eaPair.getValue(), true);
