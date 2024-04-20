@@ -626,4 +626,8 @@ Messages:
   wwctGUILocalizationSameAsServer: Esta es la localización predeterminada para WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: ¡Este idioma ya está activo a nivel
     mundial!
+  wwcrStorageTranslatorFail: Se recargó WorldwideChat pero no se pudo habilitar un
+    traductor ni conectarse con su configuración de almacenamiento de información.
+  wwcrStorageFail: Se recargó WorldwideChat y se habilitó correctamente un traductor,
+    pero su configuración de almacenamiento no pudo conectarse.
 

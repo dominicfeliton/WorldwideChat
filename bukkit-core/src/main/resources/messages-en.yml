@@ -290,6 +290,8 @@ Messages:
   wwcrBegin: 'Reloading WorldwideChat...'
   wwcrTransFail: 'Reloaded WorldwideChat but failed to enable a translator.'
   wwcrSuccess: 'Successfully reloaded WorldwideChat.'
+  wwcrStorageFail: 'Reloaded WorldwideChat and successfully enabled a translator, but your storage configuration failed to connect.'
+  wwcrStorageTranslatorFail: 'Reloaded WorldwideChat but failed to enable a translator and connect with your storage configuration.'
   wwcrFail: 'Failed to reload WorldwideChat.'
   #------------------- /wwcd Messages -------------------
   wwcdCacheSize: 'The size of the cache is currently {0}, with a limit of {1}.'

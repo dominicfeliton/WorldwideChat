@@ -600,4 +600,8 @@ Messages:
   wwcConfigGUICurrentPlayerLang: Essa é sua localização atual.
   wwctGUILocalizationSameAsServer: Essa é a localização padrão para o WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Esse idioma já está ativo globalmente!
+  wwcrStorageTranslatorFail: Recarregou o WorldwideChat, mas não conseguiu habilitar
+    um tradutor e conectar-se à sua configuração de armazenamento.
+  wwcrStorageFail: Recarregou o WorldwideChat e habilitou com sucesso um tradutor,
+    mas sua configuração de armazenamento falhou ao se conectar.
 

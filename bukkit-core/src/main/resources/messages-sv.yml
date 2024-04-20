@@ -590,4 +590,8 @@ Messages:
   wwcConfigGUICurrentPlayerLang: Detta är din nuvarande lokalisering.
   wwctGUILocalizationSameAsServer: Detta är standardlokaliseringen för WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Detta språk är redan aktivt globalt!
+  wwcrStorageTranslatorFail: Laddade om WorldwideChat men misslyckades med att aktivera
+    en översättare och ansluta till din lagringskonfiguration.
+  wwcrStorageFail: Laddade om WorldwideChat och aktiverade framgångsrikt en översättare,
+    men din lagringskonfiguration kunde inte anslutas.
 

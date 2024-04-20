@@ -91,7 +91,6 @@ public class WWCDebug extends BasicCommand {
                         // Adjusting the `activeTranslators` table
                         // TODO: Use CommonRefs + new method, this is horribly outdated
                         // TODO: Perhaps move table creation/update method in LoadUserData to CommonRefs, and add a flag to update existing columns?
-                        // TODO: Also prune old columns
                         try (PreparedStatement alterActiveTranslators = sqlConnection.prepareStatement(
                                 "ALTER TABLE activeTranslators " +
                                         "MODIFY creationDate VARCHAR(40), " +

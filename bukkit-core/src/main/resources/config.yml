@@ -65,6 +65,7 @@ Translator:
   useSystranTranslate: false
   systranAPIKey: systran_key_goes_here
   translatorCacheSize: 100
+  enablePersistentCache: false
   rateLimit: 0
   messageCharLimit: 255
   errorLimit: 5

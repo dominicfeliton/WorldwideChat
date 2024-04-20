@@ -47,7 +47,7 @@ import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "04192024-2"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "04202024-1"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -339,8 +339,29 @@ public class WorldwideChat extends JavaPlugin {
 				
 				/* Send successfully reloaded message */
 				if (inSender != null) {
-					// TODO: Look into adding failed storage alongside this?
-					if (translatorName.equals("Invalid")) {
+					if ((getConfigManager().getMainConfig().getBoolean("Storage.useSQL") && !isSQLConnValid(true)) ||
+									(getConfigManager().getMainConfig().getBoolean("Storage.usePostgreSQL") && !isPostgresConnValid((true))) ||
+									(getConfigManager().getMainConfig().getBoolean("Storage.useMongoDB") && !isMongoConnValid(true))) {
+						if (!translatorName.equals("Invalid")) {
+							final TextComponent wwcrStorageFail = Component.text()
+									.content(refs.getMsg("wwcrStorageFail", inSender))
+									.color(NamedTextColor.RED)
+									.append(Component.text()
+											.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
+											.color(NamedTextColor.YELLOW))
+									.build();
+							refs.sendMsg(inSender, wwcrStorageFail);
+						} else {
+							final TextComponent wwcrStorageTranslatorFail = Component.text()
+									.content(refs.getMsg("wwcrStorageTranslatorFail", inSender))
+									.color(NamedTextColor.RED)
+									.append(Component.text()
+											.content(" (" + TimeUnit.MILLISECONDS.convert((System.nanoTime() - currentDuration), TimeUnit.NANOSECONDS) + "ms)")
+											.color(NamedTextColor.YELLOW))
+									.build();
+							refs.sendMsg(inSender, wwcrStorageTranslatorFail);
+						}
+					} else if (translatorName.equals("Invalid")) {
 						final TextComponent wwcrTransFail = Component.text()
 								.content(refs.getMsg("wwcrTransFail", inSender))
 								.color(NamedTextColor.RED)
@@ -896,6 +917,13 @@ public class WorldwideChat extends JavaPlugin {
 		refs.debugMsg("Cache lookup outcome: " + out);
 		
 		return out;
+	}
+
+	public boolean hasCacheTerm(CachedTranslation in) {
+		if (configurationManager.getMainConfig().getInt("Translator.translatorCacheSize") <= 0)
+			return false;
+
+		return cache.getIfPresent(in) != null;
 	}
 	
 	public long getEstimatedCacheSize() {

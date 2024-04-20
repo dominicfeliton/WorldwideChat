@@ -12,6 +12,7 @@ import java.sql.SQLException;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import com.badskater0729.worldwidechat.util.*;
 import com.badskater0729.worldwidechat.util.storage.PostgresUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bson.Document;
@@ -23,9 +24,6 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.threeten.bp.Instant;
 
 import com.badskater0729.worldwidechat.WorldwideChat;
-import com.badskater0729.worldwidechat.util.ActiveTranslator;
-import com.badskater0729.worldwidechat.util.Metrics;
-import com.badskater0729.worldwidechat.util.PlayerRecord;
 import com.badskater0729.worldwidechat.util.storage.MongoDBUtils;
 import com.badskater0729.worldwidechat.util.storage.SQLUtils;
 import com.mongodb.MongoException;
@@ -37,8 +35,6 @@ import com.mongodb.client.model.ReplaceOptions;
 
 import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
-
-import com.badskater0729.worldwidechat.util.CommonRefs;
 
 public class ConfigurationHandler {
 
@@ -765,6 +761,34 @@ public class ConfigurationHandler {
 					createStatsConfig(entry.getValue());
 				}
 			});
+
+			/* Sync cache to disk */
+			// TODO: Make sure cache still saves when turning it on/off live
+			// TODO: Everything besides YAML
+			if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+				//main.getLogger().warning(refs.getMsg("wwcPersistentCacheLoad", null));
+				main.getCache().asMap().entrySet().forEach((eaCache) -> {
+					if (!eaCache.getKey().hasBeenSaved()) {
+						refs.debugMsg("(YAML) Created/updated cache term " + eaCache.getValue());
+						eaCache.getKey().setHasBeenSaved(true);
+						createCacheConfig(eaCache.getKey(), eaCache.getValue());
+					}
+				});
+			}
+
+			// Delete any old cache files
+			if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+				File cacheDir = new File(main.getDataFolder() + File.separator + "cache" + File.separator);
+				for (String eaName : cacheDir.list()) {
+					File currFile = new File(cacheDir, eaName);
+					YamlConfiguration conf = YamlConfiguration.loadConfiguration(currFile);
+					CachedTranslation test = new CachedTranslation(conf.getString("inputLang"), conf.getString("outputLang"), conf.getString("inputPhrase"));
+					if (!main.hasCacheTerm(test)) {
+						refs.debugMsg("(YAML) Deleted cache term.");
+						currFile.delete();
+					}
+				}
+			}
 		}
 	}
 	
@@ -838,6 +862,33 @@ public class ConfigurationHandler {
 		userStatsConfig.set("localizationCode", inRecord.getLocalizationCode());
 
 		saveCustomConfig(userStatsConfig, userStatsFile, false);
+	}
+
+	/* Cache YAML File Saver */
+    public void createCacheConfig(CachedTranslation trans, String out) {
+		File cacheDir = new File(main.getDataFolder() + File.separator + "cache");
+		File cacheFile;
+		YamlConfiguration cacheConfig;
+
+		cacheFile = new File(cacheDir + File.separator,
+				UUID.randomUUID() + ".yml");
+
+		cacheConfig = YamlConfiguration.loadConfiguration(cacheFile);
+
+		/* Set data */
+		cacheConfig.createSection("inputLang");
+		cacheConfig.set("inputLang", trans.getInputLang());
+
+		cacheConfig.createSection("outputLang");
+		cacheConfig.set("outputLang", trans.getOutputLang());
+
+		cacheConfig.createSection("inputPhrase");
+		cacheConfig.set("inputPhrase", trans.getInputPhrase());
+
+		cacheConfig.createSection("outputPhrase");
+		cacheConfig.set("outputPhrase", out);
+
+		saveCustomConfig(cacheConfig, cacheFile, false);
 	}
 
 	/* Getters */

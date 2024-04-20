@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import com.badskater0729.worldwidechat.util.CachedTranslation;
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import com.badskater0729.worldwidechat.util.storage.PostgresUtils;
 import org.bson.Document;
@@ -56,8 +57,10 @@ public class LoadUserData implements Runnable {
 		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 		File userDataFolder = new File(main.getDataFolder() + File.separator + "data" + File.separator);
 		File statsFolder = new File(main.getDataFolder() + File.separator + "stats" + File.separator);
+		File cacheFolder = new File(main.getDataFolder() + File.separator + "cache" + File.separator);
 		userDataFolder.mkdir();
 		statsFolder.mkdir();
+		cacheFolder.mkdir();
 
 		/* Load user records (/wwcs) */
 		refs.debugMsg("Loading user records or /wwcs...");
@@ -321,6 +324,41 @@ public class LoadUserData implements Runnable {
 				main.addActiveTranslator(currentTranslator);
 			}
 		}
+
+		/* Load Persistent Cache (if enabled) */
+		// TODO: Everything besides YAML
+		if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+			refs.debugMsg("Loading persistent cache data...");
+			for (File eaFile : cacheFolder.listFiles()) {
+				// Load current user translation file
+				YamlConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
+				try {
+					Reader currConfigStream = new InputStreamReader(main.getResource("default-persistent-cache.yml"), "UTF-8");
+					currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
+				} catch (UnsupportedEncodingException e) {
+					e.printStackTrace();
+				}
+				currFileConfig.options().copyDefaults(true);
+
+				/* Sanity checks on inLang and outLang */
+				String inLang = currFileConfig.getString("inputLang");
+				String outLang = currFileConfig.getString("outputLang");
+				if (!validLangCodes(inLang, outLang)) {
+					// TODO: Check that this gets deleted?
+					continue;
+				}
+				String inputPhrase = currFileConfig.getString("inputPhrase");
+				String outputPhrase = currFileConfig.getString("outputPhrase");
+
+				// Create new CachedTranslation with current file data
+				CachedTranslation currCache = new CachedTranslation(
+					inLang, outLang, inputPhrase
+				);
+				currCache.setHasBeenSaved(true);
+				main.addCacheTerm(currCache, outputPhrase);
+			}
+		}
+
 		main.getLogger().info(ChatColor.LIGHT_PURPLE
 				+ refs.getMsg("wwcUserDataReloaded", null));
 	}

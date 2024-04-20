@@ -7,11 +7,13 @@ public class CachedTranslation implements Comparable<CachedTranslation> {
 	private String inputLang;
 	private String outputLang;
 	private String inputPhrase;
+	private boolean hasBeenSaved;
 	
 	public CachedTranslation(String inputLang, String outputLang, String inputPhrase) {
 		this.inputLang = inputLang;
 		this.outputLang = outputLang;
 		this.inputPhrase = inputPhrase;
+		hasBeenSaved = false;
 	}
 
 	/* Getters */
@@ -27,6 +29,8 @@ public class CachedTranslation implements Comparable<CachedTranslation> {
 		return inputPhrase;
 	}
 
+	public boolean hasBeenSaved() { return hasBeenSaved; }
+
 	/* Setters */
 	public void setInputLang(String i) {
 		inputLang = i;
@@ -39,6 +43,8 @@ public class CachedTranslation implements Comparable<CachedTranslation> {
 	public void setInputPhrase(String i) {
 		inputPhrase = i;
 	}
+
+	public void setHasBeenSaved(boolean b) { hasBeenSaved = b; }
 
 	@Override
 	public int compareTo(CachedTranslation o) {

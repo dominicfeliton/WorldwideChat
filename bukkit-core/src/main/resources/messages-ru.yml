@@ -589,4 +589,8 @@ Messages:
   wwcConfigGUICurrentPlayerLang: Это ваша текущая локализация.
   wwctGUILocalizationSameAsServer: Это локализация по умолчанию для WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Этот язык уже активен во всем мире!
+  wwcrStorageTranslatorFail: Перезагрузил WorldwideChat, но не смог включить переводчик
+    и подключиться к конфигурации хранилища.
+  wwcrStorageFail: Перезагрузил WorldwideChat и успешно включил переводчик, но конфигурация
+    хранилища не смогла подключиться.
 
