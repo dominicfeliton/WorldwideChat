@@ -546,7 +546,6 @@ Messages:
   wwcsLocalization: 'Lokaliseerimine: {0}'
   wwclLangAlreadyStopped: Teil pole lokaliseerimiskomplekti.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} ei ole lokaliseerimiskomplekti.'
-  wwctGUILocalizationSelected: See lokaliseerimine on juba seatud!
   wwctGUILocalizeExistingValue: 'Praegune lokaliseerimine: {0}'
   wwctGUILocalizationButton: Määra lokaliseerimine
   wwctGUILocalizeStopButton: Lähtesta lokaliseerimine serveri vaikeolekusse
@@ -555,4 +554,7 @@ Messages:
   wwcOldDatabaseStruct: 'Teie valitud andmebaasis on ebatõhus seadistus võrreldes
     WorldwideChati eelmisest versioonist. Võite silumisrežiimi sisse lülitada ja probleemi
     ise lahendada, selle probleemi lahendamiseks käivitage järgmine käsk: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: See on teie praegune lokaliseerimine.
+  wwctGUILocalizationSameAsServer: See on WorldwideChati vaikimisi lokaliseerimine.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: See keel on juba kogu maailmas aktiivne!
 

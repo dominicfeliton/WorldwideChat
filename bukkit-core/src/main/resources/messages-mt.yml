@@ -572,7 +572,6 @@ Messages:
   wwcsLocalization: 'Lokalizzazzjoni: {0}'
   wwclLangAlreadyStopped: M'għandekx sett ta' lokalizzazzjoni.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} m''għandux sett ta'' lokalizzazzjoni.'
-  wwctGUILocalizationSelected: Din il-lokalizzazzjoni hija diġà stabbilita!
   wwctGUILocalizeExistingValue: 'Lokalizzazzjoni kurrenti: {0}'
   wwctGUILocalizationButton: Issettja Lokalizzazzjoni
   wwctGUILocalizeStopButton: Irrisettja l-Lokalizzazzjoni għal Server Default
@@ -582,4 +581,7 @@ Messages:
     verżjoni preċedenti ta ''WorldwideChat. Tista ''jew tixgħel modalità debug u tiffissa
     l-kwistjoni lilek innifsek, imexxi l-kmand li ġej biex tiffissa din il-kwistjoni:
     /wwcd jikkonvertu'
+  wwcConfigGUICurrentPlayerLang: Din hija l-lokalizzazzjoni attwali tiegħek.
+  wwctGUILocalizationSameAsServer: Din hija l-lokalizzazzjoni default għal WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Din il-lingwa hija diġà attiva globalment!
 

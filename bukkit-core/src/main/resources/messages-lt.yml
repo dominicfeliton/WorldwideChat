@@ -575,7 +575,6 @@ Messages:
   wwcsLocalization: 'Lokalizacija: {0}'
   wwclLangAlreadyStopped: Jūs neturite lokalizacijos rinkinio.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} neturi lokalizacijos rinkinio.'
-  wwctGUILocalizationSelected: Ši lokalizacija jau nustatyta!
   wwctGUILocalizeExistingValue: 'Dabartinė lokalizacija: {0}'
   wwctGUILocalizationButton: Nustatyti lokalizaciją
   wwctGUILocalizeStopButton: Iš naujo nustatyti lokalizaciją į serverio numatytąją
@@ -584,4 +583,7 @@ Messages:
   wwcOldDatabaseStruct: 'Jūsų pasirinkta duomenų bazė turi neefektyvią sąranką iš
     ankstesnės “WorldwideChat” versijos. Galite arba įjungti derinimo režimą ir išspręsti
     problemą patys, paleiskite šią komandą išspręsti šią problemą: /wwcd konvertuoti'
+  wwcConfigGUICurrentPlayerLang: Tai yra jūsų dabartinė lokalizacija.
+  wwctGUILocalizationSameAsServer: Tai yra numatytoji “WorldwideChat” lokalizacija.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Ši kalba jau veikia visame pasaulyje!
 

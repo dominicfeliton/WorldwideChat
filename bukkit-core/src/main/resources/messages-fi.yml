@@ -561,7 +561,6 @@ Messages:
   wwcsLocalization: 'Lokalisointi: {0}'
   wwclLangAlreadyStopped: Sinulla ei ole lokalisointiasetusta.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0}: lla ei ole lokalisointiasetusta.'
-  wwctGUILocalizationSelected: Tämä lokalisointi on jo asetettu!
   wwctGUILocalizeExistingValue: 'Nykyinen lokalisointi: {0}'
   wwctGUILocalizationButton: Aseta lokalisointi
   wwctGUILocalizeStopButton: Palauta lokalisointi palvelimen oletusarvoon
@@ -570,4 +569,7 @@ Messages:
   wwcOldDatabaseStruct: 'Valitsemallasi tietokannalla on tehoton asennus aiemmasta
     WorldwideChat-versiosta. Voit joko ottaa virheenkorjaustilan käyttöön ja korjata
     ongelman itse, korjaa tämä ongelma suorittamalla seuraavan komennon: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Tämä on nykyinen lokalisointisi.
+  wwctGUILocalizationSameAsServer: Tämä on WorldwideChatin oletuslokalisointi.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Tämä kieli on jo aktiivinen maailmanlaajuisesti!
 

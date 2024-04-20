@@ -593,7 +593,6 @@ Messages:
   wwcsLocalization: 'Տեղայնացում: {0}'
   wwclLangAlreadyStopped: 'Դուք տեղայնացման հավաքածու չունեք:'
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} -ը տեղայնացման հավաքածու չունի:'
-  wwctGUILocalizationSelected: 'Այս տեղայնացումը արդեն սահմանված է:'
   wwctGUILocalizeExistingValue: 'Ընթացիկ տեղայնացում: {0}'
   wwctGUILocalizationButton: Սահմանել տեղայնացում
   wwctGUILocalizeStopButton: Վերականգնել տեղայնացումը սերվերի կանխադրյալին
@@ -602,4 +601,8 @@ Messages:
   wwcOldDatabaseStruct: 'Ձեր ընտրած տվյալների բազան ունի WorldwideChat- ի նախորդ տարբերակից
     անարդյունավետ կարգավորում: Դուք կարող եք կամ միացնել կարգաբերում ռեժիմում եւ ամրագրել
     հարցը ինքներդ, գործարկել հետեւյալ հրամանը շտկել այս հարցը: /wwcd փոխարկել'
+  wwcConfigGUICurrentPlayerLang: 'Սա ձեր ներկայիս տեղայնացումն է:'
+  wwctGUILocalizationSameAsServer: 'Սա WorldwideChat- ի լռելյայն տեղայնացումն է:'
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: 'Այս լեզուն արդեն ակտիվ է ամբողջ
+    աշխարհում:'
 

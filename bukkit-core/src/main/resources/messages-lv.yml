@@ -569,7 +569,6 @@ Messages:
   wwcsLocalization: 'Lokalizācija: {0}'
   wwclLangAlreadyStopped: Jums nav lokalizācijas komplekta.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} nav lokalizācijas kopas.'
-  wwctGUILocalizationSelected: Šī lokalizācija jau ir iestatīta!
   wwctGUILocalizeExistingValue: 'Pašreizējā lokalizācija: {0}'
   wwctGUILocalizationButton: Iestatīt lokalizāciju
   wwctGUILocalizeStopButton: Atjaunot lokalizāciju uz servera noklusējumu
@@ -578,4 +577,7 @@ Messages:
   wwcOldDatabaseStruct: 'Jūsu izvēlētajā datu bāzē ir neefektīva iestatīšana no iepriekšējās
     WorldwideChat versijas. Varat vai nu ieslēgt atkļūdošanas režīmu un pats novērst
     problēmu, lai novērstu šo problēmu, palaidiet šādu komandu: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Šī ir jūsu pašreizējā lokalizācija.
+  wwctGUILocalizationSameAsServer: Šī ir WorldwideChat noklusējuma lokalizācija.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Šī valoda jau ir aktīva visā pasaulē!
 

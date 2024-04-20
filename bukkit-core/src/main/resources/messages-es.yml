@@ -620,7 +620,6 @@ Messages:
   wwcsLocalization: 'Localización: {0}'
   wwclLangAlreadyStopped: No tiene un conjunto de localización.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} no tiene un conjunto de localización.'
-  wwctGUILocalizationSelected: ¡Esta localización ya está configurada!
   wwctGUILocalizeExistingValue: 'Localización actual: {0}'
   wwctGUILocalizationButton: Definir localización
   wwctGUILocalizeStopButton: Restablecer la localización a los valores predeterminados
@@ -631,4 +630,8 @@ Messages:
     respecto a una versión anterior de WorldwideChat. Puedes activar el modo de depuración
     y solucionar el problema tú mismo. Para solucionarlo, ejecuta el siguiente comando:
     /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Esta es su localización actual.
+  wwctGUILocalizationSameAsServer: Esta es la localización predeterminada de WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: ¡Este idioma ya está activo en todo
+    el mundo!
 

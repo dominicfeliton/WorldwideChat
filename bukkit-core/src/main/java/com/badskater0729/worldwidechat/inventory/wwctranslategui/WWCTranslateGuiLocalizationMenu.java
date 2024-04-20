@@ -64,19 +64,26 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
             ClickableItem[] listOfAvailableLangs = new ClickableItem[CommonRefs.supportedPluginLangCodes.size()];
 
             /* Add each supported language from each respective translator */
-            // TODO: Convert to /wwct
             int i = 0;
             for (SupportedLang eaLang : CommonRefs.supportedPluginLangCodes.values()) {
                 String currLang = eaLang.getLangCode();
                 ItemStack itemForLang = XMaterial.BOOK.parseItem();
                 ItemMeta itemForLangMeta = itemForLang.getItemMeta();
 
-                /* Add Glow Effect */
+                /* Add Glow Effects */
                 ArrayList<String> lore = new ArrayList<>();
                 if (userLang.equalsIgnoreCase(currLang)) {
                     invManager.addGlowEffect(itemForLangMeta);
-                    lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUILocalizationSelected", inPlayer));
+                    lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwcConfigGUICurrentPlayerLang", inPlayer));
                 }
+                if (refs.isSameLang(currLang, main.getConfigManager().getMainConfig().getString("General.pluginLang"), "local")) {
+                    lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUILocalizationSameAsServer", player));
+                    invManager.addGlowEffect(itemForLangMeta);
+                }
+                if (!eaLang.getNativeLangName().isEmpty() && !eaLang.getNativeLangName().equalsIgnoreCase(eaLang.getLangName())) {
+                    lore.add(eaLang.getNativeLangName());
+                }
+                lore.add(eaLang.getLangName());
                 itemForLangMeta.setDisplayName(currLang);
                 itemForLangMeta.setLore(lore);
                 itemForLang.setItemMeta(itemForLangMeta);

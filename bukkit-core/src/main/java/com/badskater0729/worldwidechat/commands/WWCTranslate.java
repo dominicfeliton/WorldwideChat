@@ -142,7 +142,7 @@ public class WWCTranslate extends BasicCommand {
 	
 	private boolean startNewTranslationSession(String inName, String inLang, String outLang) {
 		// Check if inLang/outLang are the same
-		if (inLang.equalsIgnoreCase(outLang) || refs.isSameTranslatorLang(inLang, outLang, "all")) {
+		if (inLang.equalsIgnoreCase(outLang) || refs.isSameLang(inLang, outLang, "all")) {
 			refs.sendFancyMsg("wwctSameLangError", refs.getFormattedLangCodes("in"), "&c", sender);
 			return false;
 		}

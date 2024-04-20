@@ -569,7 +569,6 @@ Messages:
   wwcsLocalization: 'Локалізація: {0}'
   wwclLangAlreadyStopped: У вас немає набору локалізації.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} не має встановленого локалізації.'
-  wwctGUILocalizationSelected: Ця локалізація вже встановлена!
   wwctGUILocalizeExistingValue: 'Поточна локалізація: {0}'
   wwctGUILocalizationButton: Встановити локалізацію
   wwctGUILocalizeStopButton: Скинути локалізацію до сервера за замовчуванням
@@ -578,4 +577,7 @@ Messages:
   wwcOldDatabaseStruct: 'Обрана вами база даних має неефективне налаштування з попередньої
     версії WorldwideChat. Ви можете або увімкнути режим налагодження і вирішити проблему
     самостійно, запустіть таку команду, щоб виправити цю проблему: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Це ваша поточна локалізація.
+  wwctGUILocalizationSameAsServer: Це типова локалізація для WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Ця мова вже активна в усьому світі!
 

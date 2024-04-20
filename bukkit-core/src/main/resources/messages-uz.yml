@@ -592,7 +592,6 @@ Messages:
   wwclLangAlreadyStopped: Sizda lokalizatsiya to'plami yo'q.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} mahalliylashtirish to''plamiga ega
     emas.'
-  wwctGUILocalizationSelected: Ushbu lokalizatsiya allaqachon o'rnatilgan!
   wwctGUILocalizeExistingValue: 'Hozirgi mahalliylashtirish: {0}'
   wwctGUILocalizationButton: Lokalizatsiyani sozlang
   wwctGUILocalizeStopButton: Lokalizatsiyani server standart holatiga qaytaring
@@ -602,4 +601,8 @@ Messages:
     oldingi versiyasidan samarasiz sozlamaga ega. Siz ham disk raskadrovka rejimini
     yoqishingiz va masalani o''zingiz tuzatishingiz mumkin, bu masalani tuzatish uchun
     quyidagi buyruqni bajaring: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Bu sizning hozirgi lokalizatsiyangiz.
+  wwctGUILocalizationSameAsServer: Bu WorldwideChat uchun standart lokalizatsiya.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Ushbu til allaqachon global miqyosda
+    faol!
 

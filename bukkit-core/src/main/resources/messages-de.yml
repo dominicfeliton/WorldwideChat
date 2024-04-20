@@ -629,7 +629,6 @@ Messages:
   wwcsLocalization: 'Lokalisierung: {0}'
   wwclLangAlreadyStopped: Sie haben kein Lokalisierungssatz.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} hat kein Lokalisierungssatz.'
-  wwctGUILocalizationSelected: Diese Lokalisierung ist bereits festgelegt!
   wwctGUILocalizeExistingValue: 'Aktuelle Lokalisierung: {0}'
   wwctGUILocalizationButton: Lokalisation festlegen
   wwctGUILocalizeStopButton: Lokalisation auf Serverstandard zurücksetzen
@@ -639,4 +638,8 @@ Messages:
     aus einer früheren Version von WorldwideChat. Sie können entweder den Debug-Modus
     einschalten und das Problem selbst beheben. Führen Sie den folgenden Befehl aus,
     um das Problem zu beheben: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Dies ist Ihre aktuelle Lokalisierung.
+  wwctGUILocalizationSameAsServer: Dies ist die Standardlokalisierung für WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Diese Sprache ist bereits weltweit
+    aktiv!
 

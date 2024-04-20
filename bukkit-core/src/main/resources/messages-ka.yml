@@ -569,7 +569,6 @@ Messages:
   wwcsLocalization: 'ლოკალიზაცია: {0}'
   wwclLangAlreadyStopped: თქვენ არ გაქვთ ლოკალიზაციის ნაკრები.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} არ გააჩნია ლოკალიზაციის ნაკრები.'
-  wwctGUILocalizationSelected: ეს ლოკალიზაცია უკვე დადგენილია!
   wwctGUILocalizeExistingValue: 'მიმდინარე ლოკალიზაცია: {0}'
   wwctGUILocalizationButton: დააყენეთ ლოკალ
   wwctGUILocalizeStopButton: ლოკალიზაციის გადატვირთვა სერვერ
@@ -579,4 +578,7 @@ Messages:
     WorldwideChat-ის წინა ვერსიისგან. შეგიძლიათ ჩართოთ შეცვალების რეჟიმი და თავად
     მოაგვაროთ პრობლემა, გაუშვით შემდეგი ბრძანება ამ პრობლემის მოსაგვარებლად: /wwcd
     convert'
+  wwcConfigGUICurrentPlayerLang: ეს არის თქვენი ამჟამინდელი ლოკალიზაცია.
+  wwctGUILocalizationSameAsServer: ეს არის WorldwideChat-ის ნაგულისხმევი ლოკალიზაცია.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: ეს ენა უკვე აქტიურია გლობალურად!
 

@@ -599,7 +599,6 @@ Messages:
   wwcsLocalization: 'Lokalizimi: {0}'
   wwclLangAlreadyStopped: Ju nuk keni një grup lokalizimi.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} nuk ka një grup lokalizimi.'
-  wwctGUILocalizationSelected: Ky lokalizim është vendosur tashmë!
   wwctGUILocalizeExistingValue: 'Lokalizimi aktual: {0}'
   wwctGUILocalizationButton: Vendosni lokalizimin
   wwctGUILocalizeStopButton: Rivendosni lokalizimin në serverin Default
@@ -609,4 +608,7 @@ Messages:
     nga një version i mëparshëm i WorldwideChat. Ju ose mund të aktivizoni modalitetin
     e korrigjimit të gabimit dhe ta rregulloni vetë problemin, ekzekutoni komandën
     e mëposhtme për të rregulluar këtë çështje: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Ky është lokalizimi juaj aktual.
+  wwctGUILocalizationSameAsServer: Ky është lokalizimi i parazgjedhur për WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Kjo gjuhë tashmë është aktive globalisht!
 

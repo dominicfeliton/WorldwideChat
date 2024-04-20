@@ -576,7 +576,6 @@ Messages:
   wwcsLocalization: 'స్థానికీకరణ: {0}'
   wwclLangAlreadyStopped: మీకు స్థానికీకరణ సెట్ లేదు.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} లో స్థానికీకరణ సమితి లేదు.'
-  wwctGUILocalizationSelected: ఈ స్థానికీకరణ ఇప్పటికే సెట్ చేయబడింది!
   wwctGUILocalizeExistingValue: 'ప్రస్తుత స్థానికీకరణ: {0}'
   wwctGUILocalizationButton: స్థానికీకరణను సెట్ చేయండి
   wwctGUILocalizeStopButton: సర్వర్ డిఫాల్ట్ గా స్థానికీకరణను రీసెట్ చేయండి
@@ -586,4 +585,8 @@ Messages:
     నుండి అసమర్థమైన సెటప్ను కలిగి ఉంది. మీరు గాని డీబగ్ మోడ్ ఆన్ మరియు సమస్యను మీరే
     పరిష్కరించడానికి, ఈ సమస్యను పరిష్కరించడానికి క్రింది ఆదేశాన్ని అమలు చేయవచ్చు:
     /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: ఇది మీ ప్రస్తుత స్థానికీకరణ.
+  wwctGUILocalizationSameAsServer: ఇది WorldwideChat కోసం డిఫాల్ట్ స్థానికీకరణ.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: ఈ భాష ఇప్పటికే ప్రపంచవ్యాప్తంగా చురుకుగా
+    ఉంది!
 

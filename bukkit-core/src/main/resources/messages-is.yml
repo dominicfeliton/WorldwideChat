@@ -575,7 +575,6 @@ Messages:
   wwcsLocalization: 'Staðsetning: {0}'
   wwclLangAlreadyStopped: Þú ert ekki með staðsetningarsett.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} er ekki með staðsetningarsett.'
-  wwctGUILocalizationSelected: Þessi staðsetning er þegar sett!
   wwctGUILocalizeExistingValue: 'Núverandi staðsetning: {0}'
   wwctGUILocalizationButton: Setja staðsetningu
   wwctGUILocalizeStopButton: Endurstilla staðsetningu á sjálfgefinn þjón
@@ -584,4 +583,8 @@ Messages:
   wwcOldDatabaseStruct: 'Gagnagrunnurinn sem valinn er með óhagkvæma uppsetningu frá
     fyrri útgáfu af WorldwideChat. Þú getur annaðhvort kveikt á kembiforrit ham og
     laga málið sjálfur, keyra eftirfarandi skipun til að laga þetta mál: /wwcd umbreyta'
+  wwcConfigGUICurrentPlayerLang: Þetta er núverandi staðsetning þín.
+  wwctGUILocalizationSameAsServer: Þetta er sjálfgefin staðsetning fyrir WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Þetta tungumál er nú þegar virkt
+    á heimsvísu!
 

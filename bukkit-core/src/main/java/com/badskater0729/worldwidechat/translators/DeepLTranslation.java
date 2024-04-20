@@ -59,8 +59,8 @@ public class DeepLTranslation extends BasicTranslation {
 				}
 
 				/* Set languages list */
-				main.setOutputLangs(refs.fixLangNames(targetLangs, true));
-				main.setInputLangs(refs.fixLangNames(sourceLangs, true));
+				main.setOutputLangs(refs.fixLangNames(targetLangs, true, false));
+				main.setInputLangs(refs.fixLangNames(sourceLangs, true, false));
 
 				/* Setup test translation */
 				inputLang = "en";

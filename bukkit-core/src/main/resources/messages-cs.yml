@@ -566,7 +566,6 @@ Messages:
   wwcsLocalization: 'Lokalizace: {0}'
   wwclLangAlreadyStopped: Nemáte lokalizační sadu.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} nemá lokalizační sadu.'
-  wwctGUILocalizationSelected: Tato lokalizace je již nastavena!
   wwctGUILocalizeExistingValue: 'Aktuální lokalizace: {0}'
   wwctGUILocalizationButton: Nastavit lokalizaci
   wwctGUILocalizeStopButton: Obnovit lokalizaci na výchozí server
@@ -575,4 +574,8 @@ Messages:
   wwcOldDatabaseStruct: 'Vámi vybraná databáze má neefektivní nastavení z předchozí
     verze WorldwideChat. Můžete buď zapnout režim ladění a opravit problém sami, spusťte
     následující příkaz k opravě tohoto problému: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Toto je vaše aktuální lokalizace.
+  wwctGUILocalizationSameAsServer: Toto je výchozí lokalizace pro WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Tento jazyk je již aktivní po celém
+    světě!
 

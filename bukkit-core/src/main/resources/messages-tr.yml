@@ -567,7 +567,6 @@ Messages:
   wwcsLocalization: 'Yerelleştirme: {0}'
   wwclLangAlreadyStopped: Yerelleştirme setiniz yok.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} yerelleştirme kümesine sahip değil.'
-  wwctGUILocalizationSelected: Bu yerelleştirme zaten ayarlandı!
   wwctGUILocalizeExistingValue: 'Geçerli Yerelleştirme: {0}'
   wwctGUILocalizationButton: Yerelleştirmeyi Ayarla
   wwctGUILocalizeStopButton: Yerelleştirmeyi Sunucu Varsayılanına Sıfırla
@@ -577,4 +576,7 @@ Messages:
     verimsiz bir kuruluma sahiptir. Hata ayıklama modunu açabilir ve sorunu kendiniz
     düzeltebilirsiniz, bu sorunu düzeltmek için aşağıdaki komutu çalıştırabilirsiniz:
     /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Bu sizin mevcut yerelleştirmenizdir.
+  wwctGUILocalizationSameAsServer: Bu, WorldwideChat için varsayılan yerelleştirmedir.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Bu dil zaten küresel olarak aktif!
 

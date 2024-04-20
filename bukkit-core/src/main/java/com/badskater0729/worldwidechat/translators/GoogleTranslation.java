@@ -67,8 +67,8 @@ public class GoogleTranslation extends BasicTranslation {
 				}
 
 				/* Set languages list */
-				main.setOutputLangs(refs.fixLangNames(outLangList, true));
-				main.setInputLangs(refs.fixLangNames(inLangList, true));
+				main.setOutputLangs(refs.fixLangNames(outLangList, true, false));
+				main.setInputLangs(refs.fixLangNames(inLangList, true, false));
 
 				/* Setup test translation */
 				inputLang = "en";

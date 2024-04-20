@@ -561,7 +561,6 @@ Messages:
   wwcsLocalization: 'Lokalizacija: {0}'
   wwclLangAlreadyStopped: Nemate set lokalizacije.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} nema skup za lokalizaciju.'
-  wwctGUILocalizationSelected: Ova lokalizacija je već postavljena!
   wwctGUILocalizeExistingValue: 'Trenutna lokalizacija: {0}'
   wwctGUILocalizationButton: Podesite lokalizaciju
   wwctGUILocalizeStopButton: Resetujte lokalizaciju na podrazumevano servera
@@ -571,4 +570,7 @@ Messages:
     prethodne verzije VorldWideChat-a. Možete uključiti režim otklanjanja grešaka
     i sami rešiti problem, pokrenite sledeću naredbu da biste rešili ovaj problem:
     /vvcd convert'
+  wwcConfigGUICurrentPlayerLang: Ovo je vaša trenutna lokalizacija.
+  wwctGUILocalizationSameAsServer: Ovo je podrazumevana lokalizacija za VorldWideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Ovaj jezik je već aktivan globalno!
 

@@ -637,7 +637,6 @@ Messages:
   wwcsLocalization: 'Lokalisasyon: {0}'
   wwclLangAlreadyStopped: Wala kang isang hanay ng lokalisasyon.
   wwclLangAlreadyStoppedOtherPlayerSender: Ang {0} ay walang hanay ng lokalisasyon.
-  wwctGUILocalizationSelected: Nakatakda na ang lokalisasyon na ito!
   wwctGUILocalizeExistingValue: 'Kasalukuyang Lokalisasyon: {0}'
   wwctGUILocalizationButton: Itakda ang Lokalisasyon
   wwctGUILocalizeStopButton: I-reset ang Lokalisasyon sa Default ng Server
@@ -648,4 +647,8 @@ Messages:
     mula sa isang nakaraang bersyon ng WorldwideChat. Maaari mong buksan ang debug
     mode at ayusin ang isyu mismo, patakbuhin ang sumusunod na utos upang ayusin ang
     isyung ito: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Ito ang iyong kasalukuyang lokalisasyon.
+  wwctGUILocalizationSameAsServer: Ito ang default na lokalisasyon para sa WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Ang wikang ito ay aktibo na sa buong
+    mundo!
 

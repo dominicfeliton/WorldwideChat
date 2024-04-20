@@ -583,7 +583,6 @@ Messages:
   wwcsLocalization: 'स्थानीयकरण: {0}'
   wwclLangAlreadyStopped: आपके पास स्थानीयकरण सेट नहीं है।
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} में स्थानीयकरण सेट नहीं है।'
-  wwctGUILocalizationSelected: यह स्थानीयकरण पहले से ही सेट है!
   wwctGUILocalizeExistingValue: 'वर्तमान स्थानीयकरण: {0}'
   wwctGUILocalizationButton: स्थानीयकरण सेट करें
   wwctGUILocalizeStopButton: स्थानीयकरण को सर्वर डिफ़ॉल्ट पर रीसेट करें
@@ -592,4 +591,8 @@ Messages:
   wwcOldDatabaseStruct: 'आपके चुने हुए डेटाबेस में WorldwideChat के पिछले संस्करण
     से अक्षम सेटअप है। आप या तो डिबग मोड चालू कर सकते हैं और समस्या को स्वयं ठीक कर
     सकते हैं, इस समस्या को ठीक करने के लिए निम्न कमांड चलाएँ: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: यह आपका वर्तमान स्थानीयकरण है।
+  wwctGUILocalizationSameAsServer: यह WorldwideChat के लिए डिफ़ॉल्ट स्थानीयकरण है।
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: यह भाषा पहले से ही विश्व स्तर पर
+    सक्रिय है!
 

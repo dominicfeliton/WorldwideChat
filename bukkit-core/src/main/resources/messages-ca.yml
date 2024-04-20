@@ -611,7 +611,6 @@ Messages:
   wwcsLocalization: 'Localització: {0}'
   wwclLangAlreadyStopped: No teniu un conjunt de localització.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} no té un conjunt de localització.'
-  wwctGUILocalizationSelected: Aquesta localització ja està establerta!
   wwctGUILocalizeExistingValue: 'Localització actual: {0}'
   wwctGUILocalizationButton: Estableix la localització
   wwctGUILocalizeStopButton: Restablir la localització a predeterminat del servidor
@@ -621,4 +620,8 @@ Messages:
     d''una versió anterior de WorldwideChat. Podeu activar el mode de depuració i
     solucionar el problema vosaltres mateixos, executeu l''ordre següent per solucionar
     aquest problema: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Aquesta és la teva localització actual.
+  wwctGUILocalizationSameAsServer: Aquesta és la localització predeterminada per WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Aquest idioma ja està actiu a nivell
+    mundial!
 

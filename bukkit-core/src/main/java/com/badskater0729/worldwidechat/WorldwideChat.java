@@ -47,7 +47,7 @@ import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "04162024-3"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "04192024-2"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -171,7 +171,7 @@ public class WorldwideChat extends JavaPlugin {
 		}
 		instance = null;
 		supportedMCVersions = null;
-		supportedPluginLangCodes = null;
+		//supportedPluginLangCodes = null;
 		pluginLangConfigs = null;
 		serverFactory = null;
 
@@ -481,12 +481,6 @@ public class WorldwideChat extends JavaPlugin {
 		// Init and load configs
 		configurationManager.initMainConfig();
 		configurationManager.initMessagesConfigs();
-
-		// Fix localizations to include full name + native name
-		List<SupportedLang> tempCodes = refs.fixLangNames(new ArrayList<>(supportedPluginLangCodes.values()), false);
-		for (SupportedLang supportedLang : tempCodes) {
-			supportedPluginLangCodes.put(supportedLang.getLangCode(), supportedLang);
-		}
 
 		configurationManager.loadMainSettings();
 		configurationManager.loadStorageSettings();

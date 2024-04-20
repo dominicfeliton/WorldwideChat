@@ -500,7 +500,6 @@ Messages:
   wwcsLocalization: 'การแปลภาษาท้องถิ่น: {0}'
   wwclLangAlreadyStopped: คุณไม่มีชุดการแปลภาษาท้องถิ่น
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} ไม่มีชุดการแปลภาษาท้องถิ่น'
-  wwctGUILocalizationSelected: การแปลนี้ได้รับการตั้งค่าแล้ว!
   wwctGUILocalizeExistingValue: 'การแปลในปัจจุบัน: {0}'
   wwctGUILocalizationButton: ตั้งค่าการแปลภาษา
   wwctGUILocalizeStopButton: รีเซ็ตการแปลเป็นค่าเริ่มต้นเซิร์ฟเวอร์
@@ -509,4 +508,7 @@ Messages:
   wwcOldDatabaseStruct: 'ฐานข้อมูลที่คุณเลือกมีการตั้งค่าที่ไม่มีประสิทธิภาพจาก WorldwideChat
     เวอร์ชันก่อนหน้าคุณสามารถเปิดโหมดแก้ไขข้อบกพร่องและแก้ไขปัญหาด้วยตัวเองเรียกใช้คำสั่งต่อไปนี้เพื่อแก้ไขปัญหานี้:
     /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: นี่คือการแปลในปัจจุบันของคุณ
+  wwctGUILocalizationSameAsServer: นี่คือการแปลภาษาท้องถิ่นเริ่มต้นสำหรับ WorldwideChat
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: ภาษานี้ใช้งานได้ทั่วโลกแล้ว!
 

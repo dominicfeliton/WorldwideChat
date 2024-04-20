@@ -437,7 +437,6 @@ Messages:
   wwcsLocalization: 本地化：{0}
   wwclLangAlreadyStopped: 您没有本地化设置。
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} 没有本地化设置。'
-  wwctGUILocalizationSelected: 这个本地化已经设置好了！
   wwctGUILocalizeExistingValue: 当前本地化：{0}
   wwctGUILocalizationButton: 设置本地化
   wwctGUILocalizeStopButton: 将本地化重置为服务器默认值
@@ -445,4 +444,7 @@ Messages:
   wwctGUISourceSameLang: 此语言将与您的源语言相同。
   wwcOldDatabaseStruct: 与之前版本的WorldwideChat相比，您选择的数据库的设置效率低下。你可以打开调试模式自己修复问题，运行以下命令来修复这个问题：/wwcd
     convert
+  wwcConfigGUICurrentPlayerLang: 这是你当前的本地化。
+  wwctGUILocalizationSameAsServer: 这是全球聊天的默认本地化。
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: 这种语言已经在全球范围内活跃了！
 

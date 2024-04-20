@@ -95,9 +95,13 @@ public class WWCTranslateGuiTargetLanguage implements InventoryProvider {
 				if (!unsupported && (userLang.getLangCode().equals(currLang.getLangCode()) || userLang.getLangName().equals(currLang.getLangName()))) {
 					invManager.addGlowEffect(itemForLangMeta);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive", inPlayer));
+				} else if (!unsupported && main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getOutLangCode().equalsIgnoreCase(currLang.getLangCode())) {
+					// If global translate is already using this as an outLang...
+					invManager.addGlowEffect(itemForLangMeta);
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyGlobal", inPlayer));
 				}
 				itemForLangMeta.setDisplayName(currLang.getLangName());
-				if (!currLang.getNativeLangName().equals("")) {
+				if (!currLang.getNativeLangName().isEmpty() && !currLang.getNativeLangName().equalsIgnoreCase(currLang.getLangName())) {
 					lore.add(currLang.getNativeLangName());
 				}
 				lore.add(currLang.getLangCode());

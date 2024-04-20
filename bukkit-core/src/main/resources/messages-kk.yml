@@ -564,7 +564,6 @@ Messages:
   wwcsLocalization: 'Локализация: {0}'
   wwclLangAlreadyStopped: Сізде локализация жиынтығы жоқ.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} -де оқшаулау жиынтығы жоқ.'
-  wwctGUILocalizationSelected: Бұл оқшаулау қазірдің өзінде орнатылған!
   wwctGUILocalizeExistingValue: 'Ағымдағы локализация: {0}'
   wwctGUILocalizationButton: Локализацияны орнатыңыз
   wwctGUILocalizeStopButton: Локализацияны сервер әдепкісіне қалпына келтіріңіз
@@ -573,4 +572,8 @@ Messages:
   wwcOldDatabaseStruct: 'Сіздің таңдаған дерекқорыңызда WorldwideChat-тің алдыңғы
     нұсқасынан тиімсіз орнату бар. Сіз отладка режимін қосып, мәселені өзіңіз түзете
     аласыз, бұл мәселені түзету үшін келесі пәрменді іске қосыңыз: /wwcd түрлендіру'
+  wwcConfigGUICurrentPlayerLang: Бұл сіздің қазіргі локализацияңыз.
+  wwctGUILocalizationSameAsServer: Бұл WorldwideChat үшін әдепкі локализация.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Бұл тіл қазірдің өзінде жаһандық
+    деңгейде белсенді!
 

@@ -564,7 +564,6 @@ Messages:
   wwcsLocalization: 'સ્થાનિકીકરણ: {0}'
   wwclLangAlreadyStopped: તમારી પાસે સ્થાનિકીકરણ સેટ નથી.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} પાસે સ્થાનિકીકરણ સેટ નથી.'
-  wwctGUILocalizationSelected: આ સ્થાનિકીકરણ પહેલેથી જ સેટ કરેલું છે!
   wwctGUILocalizeExistingValue: 'વર્તમાન સ્થાનિકીકરણ: {0}'
   wwctGUILocalizationButton: સ્થાનિકીકરણ સેટ કરો
   wwctGUILocalizeStopButton: સર્વર ડિફોલ્ટ પર સ્થાનિકીકરણ ફરીથી સેટ કરો
@@ -573,4 +572,8 @@ Messages:
   wwcOldDatabaseStruct: 'તમારા પસંદ કરેલા ડેટાબેઝમાં વર્લ્ડવાઇડચેટના અગાઉના સંસ્કરણમાંથી
     બિનકાર્યક્ષમ સેટઅપ છે. તમે ક્યાં તો ડિબગ મોડ ચાલુ અને મુદ્દો જાતે ઠીક કરી શકો
     છો, આ મુદ્દો ઠીક કરવા માટે નીચેના આદેશ ચલાવો: /wwcd કન્વર્ટ'
+  wwcConfigGUICurrentPlayerLang: આ તમારું વર્તમાન સ્થાનિકીકરણ છે.
+  wwctGUILocalizationSameAsServer: આ વર્લ્ડવાઇડચેટ માટે ડિફૉલ્ટ સ્થાનિકીકરણ છે.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: આ ભાષા પહેલેથી જ વૈશ્વિક સ્તરે સક્રિય
+    છે!
 

@@ -568,7 +568,6 @@ Messages:
   wwcsLocalization: 'Lokalizacija: {0}'
   wwclLangAlreadyStopped: Nemate set lokalizacije.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} nema skup lokalizacije.'
-  wwctGUILocalizationSelected: Ova lokalizacija je već postavljena!
   wwctGUILocalizeExistingValue: 'Trenutna lokalizacija: {0}'
   wwctGUILocalizationButton: Postavi lokalizaciju
   wwctGUILocalizeStopButton: Vratite lokalizaciju na zadanu postavku poslužitelja
@@ -578,4 +577,7 @@ Messages:
     verzije WorldwideChat-a. Možete uključiti način ispravljanja pogrešaka i sami
     riješiti problem, pokrenite sljedeću naredbu da biste riješili ovaj problem: /wwcd
     convert'
+  wwcConfigGUICurrentPlayerLang: Ovo je vaša trenutna lokalizacija.
+  wwctGUILocalizationSameAsServer: Ovo je zadana lokalizacija za WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Ovaj jezik je već aktivan globalno!
 

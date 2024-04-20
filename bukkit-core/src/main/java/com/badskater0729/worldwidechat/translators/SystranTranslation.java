@@ -80,8 +80,8 @@ public class SystranTranslation extends BasicTranslation {
                     }
 
                     // Systran does not include native or regular lang names.
-                    main.setOutputLangs(refs.fixLangNames(outLangList, false));
-                    main.setInputLangs(refs.fixLangNames(inLangList, false));
+                    main.setOutputLangs(refs.fixLangNames(outLangList, false, false));
+                    main.setInputLangs(refs.fixLangNames(inLangList, false, false));
 
                     /* Setup test translation */
                     inputLang = "en";

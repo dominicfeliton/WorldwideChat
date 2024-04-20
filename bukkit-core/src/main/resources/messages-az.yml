@@ -562,7 +562,6 @@ Messages:
   wwcsLocalization: 'Lokalizasiya: {0}'
   wwclLangAlreadyStopped: Lokalizasiya dəstiniz yoxdur.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} -də lokalizasiya dəsti yoxdur.'
-  wwctGUILocalizationSelected: Bu lokalizasiya artıq təyin edilmişdir!
   wwctGUILocalizeExistingValue: 'Cari Lokalizasiya: {0}'
   wwctGUILocalizationButton: Lokalizasiya təyin edin
   wwctGUILocalizeStopButton: Lokalizasiyanı Server Default olaraq yenidən qurun
@@ -572,4 +571,7 @@ Messages:
     səmərəsiz bir quraşdırmaya malikdir. Siz ya ayıklama rejimini açaraq problemi
     özünüz həll edə bilərsiniz, bu problemi həll etmək üçün aşağıdakı əmri işə salın:
     /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Bu sizin hazırkı lokalizasiyanızdır.
+  wwctGUILocalizationSameAsServer: Bu WorldwideChat üçün standart lokalizasiyadır.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Bu dil artıq qlobal miqyasda aktivdir!
 

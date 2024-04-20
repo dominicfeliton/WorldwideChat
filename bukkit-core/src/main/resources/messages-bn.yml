@@ -567,7 +567,6 @@ Messages:
   wwcsLocalization: 'স্থানীয়করণ: {0}'
   wwclLangAlreadyStopped: আপনার কাছে স্থানীয়করণ সেট নেই।
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} এর কোনও স্থানীয়করণ সেট নেই।'
-  wwctGUILocalizationSelected: এই স্থানীয়করণ ইতিমধ্যে সেট করা হয়েছে!
   wwctGUILocalizeExistingValue: 'বর্তমান স্থানীয়করণ: {0}'
   wwctGUILocalizationButton: স্থানীয়করণ সেট করুন
   wwctGUILocalizeStopButton: সার্ভার ডিফল্টটিতে স্থানীয়করণ
@@ -577,4 +576,7 @@ Messages:
     থেকে একটি অকার্যকর সেটআপ রয়েছে। আপনি হয় ডিবাগ মোড চালু করতে পারেন এবং নিজেই
     সমস্যাটি ঠিক করতে পারেন, এই সমস্যাটি ঠিক করতে নিম্নলিখিত কমান্ডটি চালান: /wwcd
     রূপান্তর'
+  wwcConfigGUICurrentPlayerLang: এটি আপনার বর্তমান স্থানীয়করণ।
+  wwctGUILocalizationSameAsServer: এটি ওয়ার্ল্ডওয়াইডচ্যাটের জন্য ডিফল্ট স্থানীয়করণ।
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: এই ভাষা ইতিমধ্যে বিশ্বব্যাপী সক্রিয়!
 

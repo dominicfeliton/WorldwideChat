@@ -471,7 +471,6 @@ Messages:
   wwcsLocalization: '현지화: {0}'
   wwclLangAlreadyStopped: 로컬리제이션 세트가 없습니다.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} 에는 현지화 세트가 없습니다.'
-  wwctGUILocalizationSelected: 이 현지화는 이미 설정되었습니다!
   wwctGUILocalizeExistingValue: '현재 현지화: {0}'
   wwctGUILocalizationButton: 현지화 설정
   wwctGUILocalizeStopButton: 현지화를 서버 기본값으로 재설정
@@ -479,4 +478,7 @@ Messages:
   wwctGUISourceSameLang: 이 언어는 소스 언어와 동일합니다.
   wwcOldDatabaseStruct: 선택한 데이터베이스가 이전 버전의 WorldwideChat보다 비효율적으로 설정되었습니다.디버그 모드를
     켜고 직접 문제를 해결한 후 다음 명령을 실행하여 이 문제를 해결할 수 있습니다. /wwcd convert
+  wwcConfigGUICurrentPlayerLang: 현재 현지화입니다.
+  wwctGUILocalizationSameAsServer: 이는 월드와이드챗의 기본 현지화입니다.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: 이 언어는 이미 전 세계적으로 활성화되어 있습니다!
 

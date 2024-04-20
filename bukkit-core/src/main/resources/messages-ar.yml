@@ -528,7 +528,6 @@ Messages:
   wwcsLocalization: 'التعريب: {0}'
   wwclLangAlreadyStopped: ليس لديك مجموعة تعريب.
   wwclLangAlreadyStoppedOtherPlayerSender: لا يحتوي {0} على مجموعة تعريب.
-  wwctGUILocalizationSelected: تم تعيين هذا التعريب بالفعل!
   wwctGUILocalizeExistingValue: 'التعريب الحالي: {0}'
   wwctGUILocalizationButton: تعيين التعريب
   wwctGUILocalizeStopButton: إعادة تعيين الترجمة إلى الخادم الافتراضي
@@ -537,4 +536,7 @@ Messages:
   wwcOldDatabaseStruct: 'تحتوي قاعدة البيانات التي اخترتها على إعداد غير فعال من إصدار
     سابق من WorldwideChat. يمكنك إما تشغيل وضع التصحيح وإصلاح المشكلة بنفسك، قم بتشغيل
     الأمر التالي لإصلاح هذه المشكلة: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: هذه هي الترجمة الحالية الخاصة بك.
+  wwctGUILocalizationSameAsServer: هذه هي الترجمة الافتراضية لـ WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: هذه اللغة نشطة بالفعل على مستوى العالم!
 

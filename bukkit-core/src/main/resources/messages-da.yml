@@ -568,7 +568,6 @@ Messages:
   wwcsLocalization: 'Tegnlayout: {0}'
   wwclLangAlreadyStopped: Du har ikke et lokaliseringssæt.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} har ikke et lokaliseringssæt.'
-  wwctGUILocalizationSelected: Denne lokalisering er allerede indstillet!
   wwctGUILocalizeExistingValue: 'Nuværende lokalisering: {0}'
   wwctGUILocalizationButton: Indstil lokalisering
   wwctGUILocalizeStopButton: Nulstil lokalisering til serverstandard
@@ -577,4 +576,7 @@ Messages:
   wwcOldDatabaseStruct: 'Din valgte database har en ineffektiv opsætning fra en tidligere
     version af WorldwideChat. Du kan enten aktivere fejlfindingstilstand og løse problemet
     selv, kør følgende kommando for at løse dette problem: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Dette er din nuværende lokalisering.
+  wwctGUILocalizationSameAsServer: Dette er standardlokaliseringen for WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Dette sprog er allerede aktivt globalt!
 

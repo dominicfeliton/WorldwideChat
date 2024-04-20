@@ -574,7 +574,6 @@ Messages:
   wwcsLocalization: 'Nội địa hóa: {0}'
   wwclLangAlreadyStopped: Bạn không có một bộ bản địa hóa.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} không có bộ bản địa hóa.'
-  wwctGUILocalizationSelected: Bản địa hóa này đã được thiết lập!
   wwctGUILocalizeExistingValue: 'Bản địa hóa hiện tại: {0}'
   wwctGUILocalizationButton: Đặt bản địa hóa
   wwctGUILocalizeStopButton: Đặt lại bản địa hóa về mặc định của máy chủ
@@ -583,4 +582,8 @@ Messages:
   wwcOldDatabaseStruct: 'Cơ sở dữ liệu bạn đã chọn có thiết lập không hiệu quả từ
     phiên bản trước của WorldwideChat. Bạn có thể bật chế độ gỡ lỗi và tự khắc phục
     sự cố, chạy lệnh sau để khắc phục sự cố này: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Đây là bản địa hóa hiện tại của bạn.
+  wwctGUILocalizationSameAsServer: Đây là bản địa hóa mặc định cho WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Ngôn ngữ này đã hoạt động trên toàn
+    cầu!
 

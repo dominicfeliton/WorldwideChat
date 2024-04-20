@@ -583,7 +583,6 @@ Messages:
   wwcsLocalization: 'Lokalizáció: {0}'
   wwclLangAlreadyStopped: Nincs lokalizációs készlete.
   wwclLangAlreadyStoppedOtherPlayerSender: A {0} nem rendelkezik lokalizációs készlettel.
-  wwctGUILocalizationSelected: Ez a lokalizáció már beállítva van!
   wwctGUILocalizeExistingValue: 'Jelenlegi lokalizáció: {0}'
   wwctGUILocalizationButton: Helymeghatározás beállítása
   wwctGUILocalizeStopButton: Helyreállítás alapértelmezett kiszolgálóra
@@ -593,4 +592,7 @@ Messages:
     a WorldwideChat korábbi verziójához képest. Bekapcsolhatja a hibakeresési módot,
     és saját maga javíthatja a problémát, futtassa a következő parancsot a probléma
     megoldásához: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Ez a jelenlegi lokalizációja.
+  wwctGUILocalizationSameAsServer: Ez a WorldwideChat alapértelmezett lokalizációja.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Ez a nyelv világszerte már aktív!
 

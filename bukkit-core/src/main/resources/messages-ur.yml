@@ -577,7 +577,6 @@ Messages:
   wwcsLocalization: 'لوکلائزیشن: {0}'
   wwclLangAlreadyStopped: آپ کے پاس لوکلائزیشن سیٹ نہیں ہے۔
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} میں لوکلائزیشن سیٹ نہیں ہے۔'
-  wwctGUILocalizationSelected: یہ لوکلائزیشن پہلے ہی طے ہوچکی ہے!
   wwctGUILocalizeExistingValue: 'موجودہ لوکلائزیشن: {0}'
   wwctGUILocalizationButton: لوکلائزیشن سیٹ
   wwctGUILocalizeStopButton: لوکلائزیشن کو سرور ڈیفالٹ میں
@@ -586,4 +585,9 @@ Messages:
   wwcOldDatabaseStruct: 'آپ کے منتخب کردہ ڈیٹا بیس میں WorldwideChat کے پچھلے ورژن
     سے ناموثر سیٹ اپ ہے۔ آپ یا تو ڈیبگ موڈ کو آن کرسکتے ہیں اور خود مسئلے کو ٹھیک
     کرسکتے ہیں، اس مسئلے کو ٹھیک کرنے کے لئے درج ذیل کمانڈ چلائیں: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: یہ آپ کی موجودہ لوکلائزیشن ہے۔
+  wwctGUILocalizationSameAsServer: یہ ورلڈ وائڈ چیٹ کے لئے پہلے سے طے شدہ لوکلائزیشن
+    ہے۔
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: یہ زبان پہلے ہی عالمی سطح پر فعال
+    ہے!
 

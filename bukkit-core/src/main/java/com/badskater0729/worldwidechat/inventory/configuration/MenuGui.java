@@ -52,6 +52,7 @@ public class MenuGui implements InventoryProvider {
 
 	public void genAllConfigUIs() {
 		/* Generate inventories */
+		refs.debugMsg("Generating config GUIs!");
 		MenuGui generalSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.GEN_SET.smartInv = generalSet.genSmartInv("generalSettingsMenu", "wwcConfigGUIGeneralSettings");
 		

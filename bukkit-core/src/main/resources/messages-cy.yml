@@ -574,7 +574,6 @@ Messages:
   wwcsLocalization: 'Lleoleiddio: {0}'
   wwclLangAlreadyStopped: Nid oes gennych set lleoleiddio.
   wwclLangAlreadyStoppedOtherPlayerSender: Nid oes gan {0} set lleoleiddio.
-  wwctGUILocalizationSelected: Mae'r lleoleiddio hwn eisoes wedi'i osod!
   wwctGUILocalizeExistingValue: 'Lleoleiddio Cyfredol: {0}'
   wwctGUILocalizationButton: Gosod Lleoleiddio
   wwctGUILocalizeStopButton: Ailosod Lleoleiddio i Diofyn Gweinydd
@@ -583,4 +582,8 @@ Messages:
   wwcOldDatabaseStruct: 'Mae gan eich cronfa ddata a ddewiswyd setup aneffeithlon
     o fersiwn flaenorol o WorldwideChat. Gallwch naill ai droi ar ddull debug ac atgyweiria
     y mater eich hun, rhedeg y gorchymyn canlynol i drwsio''r mater hwn: /wwcd trosi'
+  wwcConfigGUICurrentPlayerLang: Dyma eich lleoleiddio cyfredol.
+  wwctGUILocalizationSameAsServer: Dyma'r lleoleiddio diofyn ar gyfer WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Mae'r iaith hon eisoes yn weithredol
+    yn fyd-eang!
 

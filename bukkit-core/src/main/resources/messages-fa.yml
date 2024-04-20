@@ -566,7 +566,6 @@ Messages:
   wwcsLocalization: 'محلی سازی: {0}'
   wwclLangAlreadyStopped: شما مجموعه محلی سازی ندارید.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} مجموعه محلی سازی ندارد.'
-  wwctGUILocalizationSelected: این محلی سازی قبلاً تنظیم شده است!
   wwctGUILocalizeExistingValue: 'محلی سازی فعلی: {0}'
   wwctGUILocalizationButton: تنظیم محلی سازی
   wwctGUILocalizeStopButton: تنظیم مجدد محلی سازی به پیش فرض سرور
@@ -575,4 +574,8 @@ Messages:
   wwcOldDatabaseStruct: 'پایگاه داده انتخابی شما دارای تنظیمات ناکارآمد از نسخه قبلی
     WorldwideChat است. شما می توانید حالت اشکال زدایی را روشن کنید و خودتان مشکل را
     برطرف کنید، برای رفع این مشکل دستور زیر را اجرا کنید: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: این محلی سازی فعلی شماست.
+  wwctGUILocalizationSameAsServer: این محلی سازی پیش فرض برای WorldwideChat است.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: این زبان در حال حاضر در سطح جهانی
+    فعال است!
 

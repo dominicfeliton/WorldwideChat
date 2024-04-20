@@ -596,7 +596,6 @@ Messages:
   wwcsLocalization: 'Localizare: {0}'
   wwclLangAlreadyStopped: Nu aveți un set de localizare.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} nu are un set de localizare.'
-  wwctGUILocalizationSelected: Această localizare este deja setată!
   wwctGUILocalizeExistingValue: 'Localizare curentă: {0}'
   wwctGUILocalizationButton: Setați localizarea
   wwctGUILocalizeStopButton: Resetați localizarea la serverul implicit
@@ -606,4 +605,8 @@ Messages:
     versiune anterioară a WorldwideChat. Puteți fie să activați modul de depanare
     și să remediați singur problema, executați următoarea comandă pentru a remedia
     această problemă: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Aceasta este localizarea dvs. actuală.
+  wwctGUILocalizationSameAsServer: Aceasta este localizarea implicită pentru WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Această limbă este deja activă la
+    nivel global!
 

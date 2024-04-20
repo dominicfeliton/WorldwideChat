@@ -550,7 +550,6 @@ Messages:
   wwcsLocalization: 'Lokalizasyon: {0}'
   wwclLangAlreadyStopped: Ou pa gen yon seri lokalizasyon.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} pa gen yon seri lokalizasyon.'
-  wwctGUILocalizationSelected: Lokalizasyon sa a deja mete!
   wwctGUILocalizeExistingValue: 'Lokalizasyon aktyèl: {0}'
   wwctGUILocalizationButton: Mete Lokalizasyon
   wwctGUILocalizeStopButton: Reyajiste Lokalizasyon nan sèvè Default
@@ -559,4 +558,7 @@ Messages:
   wwcOldDatabaseStruct: 'Baz done chwazi ou a gen yon konfigirasyon enefikas soti
     nan yon vèsyon anvan nan WorldwideChat. Ou ka swa vire sou mòd debug ak ranje
     pwoblèm nan tèt ou, kouri lòd sa a ranje pwoblèm sa a: /wwcd konvèti'
+  wwcConfigGUICurrentPlayerLang: Sa a se lokalizasyon aktyèl ou.
+  wwctGUILocalizationSameAsServer: Sa a se lokalizasyon an default pou WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Lang sa a deja aktif globalman!
 

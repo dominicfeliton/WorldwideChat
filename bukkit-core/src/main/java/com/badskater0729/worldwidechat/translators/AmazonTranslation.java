@@ -74,8 +74,8 @@ public class AmazonTranslation extends BasicTranslation {
 				}
 
 				/* Set supported translator langs */
-				main.setInputLangs(refs.fixLangNames(supportedLangs, true));
-				main.setOutputLangs(refs.fixLangNames(supportedLangs, true));
+				main.setInputLangs(refs.fixLangNames(supportedLangs, true, false));
+				main.setOutputLangs(refs.fixLangNames(supportedLangs, true, false));
 
 				/* Setup test translation */
 				textToTranslate = "Hi, how are you?";

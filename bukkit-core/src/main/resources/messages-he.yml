@@ -512,7 +512,6 @@ Messages:
   wwcsLocalization: 'לוקליזציה: {0}'
   wwclLangAlreadyStopped: אין לך ערכת לוקליזציה.
   wwclLangAlreadyStoppedOtherPlayerSender: ל- {0} אין ערכת לוקליזציה.
-  wwctGUILocalizationSelected: לוקליזציה זו כבר מוגדרת!
   wwctGUILocalizeExistingValue: 'לוקליזציה נוכחית: {0}'
   wwctGUILocalizationButton: הגדר לוקליזציה
   wwctGUILocalizeStopButton: איפוס לוקליזציה לברירת המחדל של השרת
@@ -521,4 +520,7 @@ Messages:
   wwcOldDatabaseStruct: 'למסד הנתונים שבחרת יש הגדרה לא יעילה מגירסה קודמת של WorldwideChat.
     באפשרותך להפעיל מצב ניפוי באגים ולתקן את הבעיה בעצמך, הפעל את הפקודה הבאה כדי
     לתקן בעיה זו: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: זוהי הלוקליזציה הנוכחית שלך.
+  wwctGUILocalizationSameAsServer: זוהי לוקליזציה ברירת המחדל עבור WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: שפה זו כבר פעילה ברחבי העולם!
 

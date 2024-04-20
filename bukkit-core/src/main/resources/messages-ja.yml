@@ -447,7 +447,6 @@ Messages:
   wwcsLocalization: ローカリゼーション:{0}
   wwclLangAlreadyStopped: ローカリゼーションセットはありません。
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} にはローカライズセットがありません。'
-  wwctGUILocalizationSelected: このローカライズは既に設定されています！
   wwctGUILocalizeExistingValue: 現在のローカライズ:{0}
   wwctGUILocalizationButton: ローカライズを設定
   wwctGUILocalizeStopButton: ローカライズをサーバーのデフォルトにリセット
@@ -455,4 +454,7 @@ Messages:
   wwctGUISourceSameLang: この言語はソース言語と同じになります。
   wwcOldDatabaseStruct: 選択したデータベースは、以前のバージョンの WorldwideChat の設定では効率が悪いです。デバッグモードをオンにして問題を自分で修正するか、次のコマンドを実行して問題を解決することができます。/wwcd
     convert
+  wwcConfigGUICurrentPlayerLang: これが現在のローカリゼーションです。
+  wwctGUILocalizationSameAsServer: これはワールドワイドチャットのデフォルトのローカリゼーションです。
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: この言語はすでに世界中で使われています！
 

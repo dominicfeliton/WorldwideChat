@@ -588,7 +588,6 @@ Messages:
   wwcsLocalization: 'Lokalisatie: {0}'
   wwclLangAlreadyStopped: Je hebt geen lokalisatieset.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} heeft geen lokalisatieset.'
-  wwctGUILocalizationSelected: Deze lokalisatie is al ingesteld!
   wwctGUILocalizeExistingValue: 'Huidige lokalisatie: {0}'
   wwctGUILocalizationButton: Lokalisatie instellen
   wwctGUILocalizeStopButton: Lokalisatie terugzetten naar de standaardinstelling van
@@ -599,4 +598,7 @@ Messages:
     ten opzichte van een eerdere versie van WorldwideChat. U kunt de foutopsporingsmodus
     inschakelen en het probleem zelf oplossen. Voer de volgende opdracht uit om dit
     probleem op te lossen: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: Dit is je huidige lokalisatie.
+  wwctGUILocalizationSameAsServer: Dit is de standaardlokalisatie voor WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Deze taal is al wereldwijd actief!
 

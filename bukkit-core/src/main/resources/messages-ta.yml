@@ -599,7 +599,6 @@ Messages:
   wwcsLocalization: 'உள்ளூர்மயமாக்கம்: {0}'
   wwclLangAlreadyStopped: உங்களிடம் உள்ளூர்மயமாக்கல் தொகுப்பு இல்லை.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} உள்ளூர்மயமாக்கல் தொகுப்பு இல்லை.'
-  wwctGUILocalizationSelected: இந்த உள்ளூர்வாக்கம் ஏற்கனவே அமைக்கப்பட்டுள்ளது!
   wwctGUILocalizeExistingValue: 'தற்போதைய உள்ளடக்கம்: {0}'
   wwctGUILocalizationButton: உள்ளூர்மயமாக்க
   wwctGUILocalizeStopButton: சேவையக இயல்புநிலைக்கு உள்ளமைவு
@@ -609,4 +608,8 @@ Messages:
     பதிப்பிலிருந்து திறமையற்ற அமைப்பைக் கொண்டுள்ளது. பிழைத்திருத்தம் பயன்முறையை இயக்கி
     சிக்கலை நீங்களே சரிசெய்யலாம், இந்த சிக்கலை சரிசெய்ய பின்வரும் கட்டளையை இயக்கவும்:
     /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: இது உங்கள் தற்போதைய உள்ளூர்மயமாக்கம்.
+  wwctGUILocalizationSameAsServer: இது WorldwideChat க்கான இயல்புநிலை உள்ளூர்மயமாக்கல்
+    ஆகும்.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: இந்த மொழி ஏற்கனவே உலகளவில் செயல்படுகிறது!
 

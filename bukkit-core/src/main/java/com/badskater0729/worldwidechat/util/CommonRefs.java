@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.text.MessageFormat;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.stream.Collectors;
 
 import com.badskater0729.worldwidechat.translators.*;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -51,15 +52,18 @@ public class CommonRefs {
 	
 	public static String[] supportedMCVersions = { "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13" };
 
-	public static Map<String, SupportedLang> supportedPluginLangCodes = new HashMap<>();
+	public static final Map<String, SupportedLang> supportedPluginLangCodes = new LinkedHashMap<>();
 	static {
-		String[] raw = {"af", "am", "ar", "az", "bg", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "en", "es", "es-MX", "et", "fa", "fa-AF", "fi", "fr", "fr-CA",
+		List<String> raw = List.of("af", "am", "ar", "az", "bg", "bn", "bs", "ca", "cs", "cy", "da", "de", "el", "en", "es", "es-MX", "et", "fa", "fa-AF", "fi", "fr", "fr-CA",
 				"ga", "gu", "ha", "he", "hi", "hr", "ht", "hu", "hy", "id", "is", "it", "ja", "ka", "kk", "kn", "ko", "lt", "lv", "mk", "ml", "mn", "mr", "ms", "mt", "nl", "no", "pa", "pl", "ps", "pt",
-				"pt-PT", "ro", "ru", "si", "sk", "sl", "so", "sq", "sr", "sv", "sw", "ta", "te", "th", "tl", "tr", "uk", "ur", "uz", "vi", "zh", "zh-TW"};
-		for (String eaStr : raw) {
-			// TODO: Fix ISO Codes on init
-			supportedPluginLangCodes.put(eaStr, new SupportedLang(eaStr, "", ""));
-		}
+				"pt-PT", "ro", "ru", "si", "sk", "sl", "so", "sq", "sr", "sv", "sw", "ta", "te", "th", "tl", "tr", "uk", "ur", "uz", "vi", "zh", "zh-TW");
+		List<SupportedLang> supportedLangs = raw.stream()
+				.map(eaStr -> new SupportedLang(eaStr, "", ""))
+				.collect(Collectors.toList());
+
+		List<SupportedLang> fixedLangs = new CommonRefs().fixLangNames(supportedLangs, false, true);
+
+		fixedLangs.forEach(lang -> supportedPluginLangCodes.put(lang.getLangCode(), lang));
 	}
 
 	public static final Map<String, String> translatorPairs = new HashMap<>();
@@ -172,12 +176,10 @@ public class CommonRefs {
 	  * Compares two strings to check if they are the same language under the current translator.
 	  * @param first - A valid language name
 	  * @param second - A valid language name
-	  * @param langType - 'out' or 'in' are two valid inputs for this;
-	  * 'out' will check if in is a valid output lang, 'in' will check the input lang list
-	  * 'all' will check both lists
+	  * @param langType - 'out' or 'in' or 'local' are three valid inputs for this
 	  * @return Boolean - Whether languages are the same or not
 	  */
-	public boolean isSameTranslatorLang(String first, String second, String langType) {
+	public boolean isSameLang(String first, String second, String langType) {
 		return isSupportedLang(first, langType) && isSupportedLang(second, langType)
 				&& getSupportedLang(first, langType).getLangCode().equals(getSupportedLang(second, langType).getLangCode());
 	}
@@ -1152,9 +1154,10 @@ public class CommonRefs {
 	 * Fixes a given list of SupportedLangs to include native names/language names
 	 * @param in - List of SupportedLang objs
 	 * @param nativesOnly - Whether we should add regular lang names as well as native langs
+	 * @param preInit - Whether we are initializing or not (if not, do not send ANY messages; will not work in this state)
 	 * @return - The fixed list of supportedLang objs
 	 */
-	public List<SupportedLang> fixLangNames(List<SupportedLang> in, boolean nativesOnly) {
+	public List<SupportedLang> fixLangNames(List<SupportedLang> in, boolean nativesOnly, boolean preInit) {
 		// Adjust the file path as necessary
 		String isoJsonFilePath = "ISO_639-WWC-Modified.json";
 		ObjectMapper objectMapper = new ObjectMapper();
@@ -1174,12 +1177,12 @@ public class CommonRefs {
 						in.set(i, new SupportedLang(currLang.getLangCode(), jsonLang.getIntName(), jsonLang.getNativeName()));
 					}
 				} else {
-					debugMsg("Could not find " + currCode + " in JSON!");
+					if (!preInit) debugMsg("Could not find " + currCode + " in JSON!");
 				}
 			}
 		} catch (Exception e) {
 			//e.printStackTrace();
-			main.getLogger().warning(getMsg("wwcISOJSONFail", null));
+			if (!preInit) main.getLogger().warning(getMsg("wwcISOJSONFail", null));
 		}
 
 		return in;

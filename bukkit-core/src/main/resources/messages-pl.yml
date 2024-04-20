@@ -572,7 +572,6 @@ Messages:
   wwcsLocalization: 'Lokalizacja: {0}'
   wwclLangAlreadyStopped: Nie masz zestawu lokalizacji.
   wwclLangAlreadyStoppedOtherPlayerSender: '{0} nie ma zestawu lokalizacji.'
-  wwctGUILocalizationSelected: Ta lokalizacja jest już ustawiona!
   wwctGUILocalizeExistingValue: 'Aktualna lokalizacja: {0}'
   wwctGUILocalizationButton: Ustaw lokalizację
   wwctGUILocalizeStopButton: Zresetuj lokalizację do domyślnej serwera
@@ -581,4 +580,8 @@ Messages:
   wwcOldDatabaseStruct: 'Wybrana baza danych ma nieefektywną konfigurację z poprzedniej
     wersji WorldwideChat. Możesz włączyć tryb debugowania i samodzielnie rozwiązać
     problem, uruchom następujące polecenie, aby rozwiązać ten problem: /wwcd convert'
+  wwcConfigGUICurrentPlayerLang: To jest twoja obecna lokalizacja.
+  wwctGUILocalizationSameAsServer: Jest to domyślna lokalizacja dla WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Język ten jest już aktywny na całym
+    świecie!
 
