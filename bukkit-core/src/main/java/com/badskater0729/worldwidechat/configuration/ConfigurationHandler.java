@@ -10,11 +10,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 import com.badskater0729.worldwidechat.util.*;
 import com.badskater0729.worldwidechat.util.storage.PostgresUtils;
 import com.github.benmanes.caffeine.cache.Cache;
+import com.mongodb.Block;
+import com.mongodb.client.model.*;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bson.Document;
 import org.bson.conversions.Bson;
@@ -31,8 +34,6 @@ import com.mongodb.MongoException;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.model.Filters;
-import com.mongodb.client.model.ReplaceOptions;
 
 import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
 import static com.badskater0729.worldwidechat.util.CommonRefs.supportedPluginLangCodes;
@@ -452,332 +453,407 @@ public class ConfigurationHandler {
 			// | Creation Date | Object Properties |  
 			try (Connection sqlConnection = sql.getConnection()) {
 				/* Sync ActiveTranslator data to corresponding table */
-				main.getActiveTranslators().entrySet().forEach((entry) -> {
-					refs.debugMsg("(SQL) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
-				    if (!entry.getValue().getHasBeenSaved()) {
-						// Dynamically construct the SQL statement based on the schema
-						String tableName = "activeTranslators";
-						Map<String, String> schema = CommonRefs.tableSchemas.get(tableName);
+				// Dynamically construct the SQL statement based on the schema
+				String tableName = "activeTranslators";
+				Map<String, String> schema = CommonRefs.tableSchemas.get(tableName);
 
-						// Columns and placeholders for the INSERT part
-						String columns = String.join(",", schema.keySet());
-						String placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
+				// Columns and placeholders for the INSERT part
+				String columns = String.join(",", schema.keySet());
+				String placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
 
-						// Dynamically create the ON DUPLICATE KEY UPDATE part
-						String onUpdate = schema.keySet().stream()
-								.map(column -> String.format("%s = VALUES(%s)", column, column))
-								.collect(Collectors.joining(", "));
+				// Dynamically create the ON DUPLICATE KEY UPDATE part
+				String onUpdate = schema.keySet().stream()
+						.map(column -> String.format("%s = VALUES(%s)", column, column))
+						.collect(Collectors.joining(", "));
 
-						String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
-								tableName, columns, placeholders, onUpdate);
+				String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
+						tableName, columns, placeholders, onUpdate);
 
-						// Log the final SQL statement for debugging purposes
-				    	try (PreparedStatement newActiveTranslator = sqlConnection.prepareStatement(sqlStatement)) {
-				    		ActiveTranslator val = entry.getValue();
-							int i = 1;
-					    	newActiveTranslator.setString(i++, Instant.now().toString());
-					    	newActiveTranslator.setString(i++, val.getUUID());
-					    	newActiveTranslator.setString(i++, val.getInLangCode());
-					    	newActiveTranslator.setString(i++, val.getOutLangCode());
-					    	newActiveTranslator.setInt(i++, val.getRateLimit());
-					    	newActiveTranslator.setString(i++, val.getRateLimitPreviousTime());
-					    	newActiveTranslator.setBoolean(i++, val.getTranslatingChatOutgoing());
-					    	newActiveTranslator.setBoolean(i++, val.getTranslatingChatIncoming());
-					    	newActiveTranslator.setBoolean(i++, val.getTranslatingBook());
-					    	newActiveTranslator.setBoolean(i++, val.getTranslatingSign());
-					    	newActiveTranslator.setBoolean(i++, val.getTranslatingItem());
-					    	newActiveTranslator.setBoolean(i++, val.getTranslatingEntity());
-					    	newActiveTranslator.executeUpdate();
-				    	} catch (SQLException e) {
-							e.printStackTrace();
-							return;
-						}
-				    	refs.debugMsg("(SQL) Created/updated unsaved user data config of " + entry.getKey() + ".");
-				    	entry.getValue().setHasBeenSaved(true);
-				    }
-				});
+				try (PreparedStatement newActiveTranslator = sqlConnection.prepareStatement(sqlStatement)) {
+					main.getActiveTranslators().forEach((key, val) -> {
+                        if (!val.getHasBeenSaved()) {
+                            int i = 1;
+                            try {
+                                newActiveTranslator.setString(i++, Instant.now().toString());
+                                newActiveTranslator.setString(i++, val.getUUID());
+                                newActiveTranslator.setString(i++, val.getInLangCode());
+                                newActiveTranslator.setString(i++, val.getOutLangCode());
+                                newActiveTranslator.setInt(i++, val.getRateLimit());
+                                newActiveTranslator.setString(i++, val.getRateLimitPreviousTime());
+                                newActiveTranslator.setBoolean(i++, val.getTranslatingChatOutgoing());
+                                newActiveTranslator.setBoolean(i++, val.getTranslatingChatIncoming());
+                                newActiveTranslator.setBoolean(i++, val.getTranslatingBook());
+                                newActiveTranslator.setBoolean(i++, val.getTranslatingSign());
+                                newActiveTranslator.setBoolean(i++, val.getTranslatingItem());
+                                newActiveTranslator.setBoolean(i++, val.getTranslatingEntity());
+
+                                // Add to batch
+                                newActiveTranslator.addBatch();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                                return;
+                            }
+                            refs.debugMsg("(SQL) Prepared batch entry for " + key + ".");
+                            val.setHasBeenSaved(true);
+                        }
+                    });
+
+					// Execute the batch
+					newActiveTranslator.executeBatch();
+					refs.debugMsg("(SQL) Batch executed, data saved or updated.");
+				} catch (SQLException e) {
+					e.printStackTrace();
+					return;
+				}
 
 				/* Delete any old ActiveTranslators */
-				try (ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM activeTranslators")) {
+				String deleteSql = "DELETE FROM activeTranslators WHERE playerUUID = ?";
+				try (PreparedStatement deleteOldItem = sqlConnection.prepareStatement(deleteSql);
+					 ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM activeTranslators")) {
 					while (rs.next()) {
-						if (!main.isActiveTranslator(rs.getString("playerUUID"))) {
-							try (PreparedStatement deleteOldItem = sqlConnection.prepareStatement("DELETE FROM activeTranslators WHERE playerUUID = ?")) {
-								String uuid = rs.getString("playerUUID");
-								deleteOldItem.setString(1, uuid);
-								deleteOldItem.executeUpdate();
-								refs.debugMsg("(SQL) Deleted user data config of " + uuid + ".");
-							}
+						String uuid = rs.getString("playerUUID");
+						if (!main.isActiveTranslator(uuid)) {
+							deleteOldItem.setString(1, uuid);
+							deleteOldItem.addBatch();
+							refs.debugMsg("(SQL) Prepared delete batch entry for " + uuid + ".");
 						}
 					}
+
+					// Execute all deletions in a single batch
+					deleteOldItem.executeBatch();
+					refs.debugMsg("(SQL) Batch delete executed, old active translators removed.");
+				} catch (SQLException e) {
+					e.printStackTrace();
+					return;
 				}
-				
+
+
 				/* Sync PlayerRecord data to corresponding table */
-                main.getPlayerRecords().entrySet().forEach((entry) -> {
-                	refs.debugMsg("(SQL) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
-                    if (!entry.getValue().getHasBeenSaved()) {
-						// Dynamically construct the SQL statement based on the schema
-						String tableName = "playerRecords";
-						Map<String, String> schema = CommonRefs.tableSchemas.get(tableName);
+				// Dynamically construct the SQL statement based on the schema
+				tableName = "playerRecords";
+				schema = CommonRefs.tableSchemas.get(tableName);
 
-						// Columns and placeholders for the INSERT part
-						String columns = String.join(",", schema.keySet());
-						String placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
+				// Columns and placeholders for the INSERT part
+				columns = String.join(",", schema.keySet());
+				placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
 
-						// Dynamically create the ON DUPLICATE KEY UPDATE part
-						String onUpdate = schema.keySet().stream()
-								.map(column -> String.format("%s = VALUES(%s)", column, column))
-								.collect(Collectors.joining(", "));
+				// Dynamically create the ON DUPLICATE KEY UPDATE part
+				onUpdate = schema.keySet().stream()
+						.map(column -> String.format("%s = VALUES(%s)", column, column))
+						.collect(Collectors.joining(", "));
 
-						String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
-								tableName, columns, placeholders, onUpdate);
+				sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
+						tableName, columns, placeholders, onUpdate);
 
-                    	try (PreparedStatement newPlayerRecord = sqlConnection.prepareStatement(sqlStatement)) {
-                    		PlayerRecord val = entry.getValue();
-							int i = 1;
-                    		newPlayerRecord.setString(i++, Instant.now().toString());
-                    		newPlayerRecord.setString(i++, val.getUUID());
-                    		newPlayerRecord.setInt(i++, val.getAttemptedTranslations());
-                    		newPlayerRecord.setInt(i++, val.getSuccessfulTranslations());
-                    		newPlayerRecord.setString(i++, val.getLastTranslationTime());
-							newPlayerRecord.setString(i++, val.getLocalizationCode());
-                    		newPlayerRecord.executeUpdate();
-                    	} catch (SQLException e) {
-                    		e.printStackTrace();
-                    		return;
-                    	}
-                    	refs.debugMsg("(SQL) Created/updated unsaved user record of " + entry.getKey() + ".");
-                    	entry.getValue().setHasBeenSaved(true);
-				    }
-				});
+				try (PreparedStatement newPlayerRecord = sqlConnection.prepareStatement(sqlStatement)) {
+					main.getPlayerRecords().forEach((key, val) -> {
+                        if (!val.getHasBeenSaved()) {
+                            int i = 1;
+                            try {
+                                newPlayerRecord.setString(i++, Instant.now().toString());
+                                newPlayerRecord.setString(i++, val.getUUID());
+                                newPlayerRecord.setInt(i++, val.getAttemptedTranslations());
+                                newPlayerRecord.setInt(i++, val.getSuccessfulTranslations());
+                                newPlayerRecord.setString(i++, val.getLastTranslationTime());
+                                newPlayerRecord.setString(i++, val.getLocalizationCode());
+
+                                // Add to batch
+                                newPlayerRecord.addBatch();
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                                return;
+                            }
+                            refs.debugMsg("(SQL) Prepared batch entry for " + key + ".");
+                            val.setHasBeenSaved(true);
+                        }
+                    });
+
+					// Execute the batch
+					newPlayerRecord.executeBatch();
+					refs.debugMsg("(SQL) Batch executed, player records saved or updated.");
+				} catch (SQLException e) {
+					e.printStackTrace();
+					return;
+				}
 
 				/* Sync Cache data to corresponding table */
-				if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
-					main.getCache().asMap().entrySet().forEach((entry) -> {
-						refs.debugMsg("(SQL) Cache data of " + entry.getValue() + " save status: " + entry.getKey().hasBeenSaved());
-						if (!entry.getKey().hasBeenSaved()) {
-							String tableName = "persistentCache";
-							Map<String, String> schema = CommonRefs.tableSchemas.get(tableName);
+				if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+					/* Add Cache Terms */
+					tableName = "persistentCache";
+					schema = CommonRefs.tableSchemas.get(tableName);
 
-							// Columns and placeholders for the INSERT part
-							String columns = String.join(",", schema.keySet());
-							String placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
+					columns = String.join(",", schema.keySet());
+					placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
 
-							// Dynamically create the ON DUPLICATE KEY UPDATE part
-							String onUpdate = schema.keySet().stream()
-									.map(column -> String.format("%s = VALUES(%s)", column, column))
-									.collect(Collectors.joining(", "));
+					onUpdate = schema.keySet().stream()
+							.map(column -> String.format("%s = VALUES(%s)", column, column))
+							.collect(Collectors.joining(", "));
 
-							String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
-									tableName, columns, placeholders, onUpdate);
+					sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
+							tableName, columns, placeholders, onUpdate);
 
-							// Log the final SQL statement for debugging purposes
-							try (PreparedStatement newCacheTerm = sqlConnection.prepareStatement(sqlStatement)) {
-								CachedTranslation val = entry.getKey();
-								int i = 1;
-								newCacheTerm.setString(i++, UUID.randomUUID().toString());
-								newCacheTerm.setString(i++, val.getInputLang());
-								newCacheTerm.setString(i++, val.getOutputLang());
-								newCacheTerm.setString(i++, val.getInputPhrase());
-								newCacheTerm.setString(i++, entry.getValue());
-								newCacheTerm.executeUpdate();
-							} catch (SQLException e) {
-								e.printStackTrace();
-								return;
-							}
-							refs.debugMsg("(SQL) Created/updated unsaved cache term.");
-							entry.getKey().setHasBeenSaved(true);
-						}
-					});
+					try (PreparedStatement newCacheTerm = sqlConnection.prepareStatement(sqlStatement)) {
+						main.getCache().asMap().forEach((val, value) -> {
+                            if (!val.hasBeenSaved()) {
+                                int i = 1;
+                                try {
+                                    newCacheTerm.setString(i++, UUID.randomUUID().toString());
+                                    newCacheTerm.setString(i++, val.getInputLang());
+                                    newCacheTerm.setString(i++, val.getOutputLang());
+                                    newCacheTerm.setString(i++, val.getInputPhrase());
+                                    newCacheTerm.setString(i++, value);
 
-					/* Delete old cache entries */
-					try (PreparedStatement deleteOldItems = sqlConnection.prepareStatement(
-							"DELETE FROM persistentCache WHERE inputLang = ? AND outputLang = ? AND inputPhrase = ?")) {
-						try (ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM persistentCache")) {
-							while (rs.next()) {
-								String inputLang = rs.getString("inputLang");
-								String outputLang = rs.getString("outputLang");
-								String inputPhrase = rs.getString("inputPhrase");
+                                    newCacheTerm.addBatch();
+                                } catch (SQLException e) {
+                                    e.printStackTrace();
+                                    return;
+                                }
+                                refs.debugMsg("(SQL) Prepared batch entry for cache data.");
+                                val.setHasBeenSaved(true);
+                            }
+                        });
 
-								if (!main.hasCacheTerm(new CachedTranslation(inputLang, outputLang, inputPhrase))) {
-									deleteOldItems.setString(1, inputLang);
-									deleteOldItems.setString(2, outputLang);
-									deleteOldItems.setString(3, inputPhrase);
-									deleteOldItems.executeUpdate();
-									refs.debugMsg("(SQL) Deleted cache entry.");
-								}
-							}
-						}
+						// Execute all updates/inserts in a single batch
+						newCacheTerm.executeBatch();
+						refs.debugMsg("(SQL) Batch executed, cache data saved or updated.");
+					} catch (SQLException e) {
+						e.printStackTrace();
+						return;
 					}
+				}
+
+				/* Delete Old Cache Terms */
+				deleteSql = "DELETE FROM persistentCache WHERE inputLang = ? AND outputLang = ? AND inputPhrase = ?";
+				try (PreparedStatement deleteOldItems = sqlConnection.prepareStatement(deleteSql);
+					 ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM persistentCache")) {
+					 while (rs.next()) {
+						 String inputLang = rs.getString("inputLang");
+						 String outputLang = rs.getString("outputLang");
+						 String inputPhrase = rs.getString("inputPhrase");
+
+						 if (!main.hasCacheTerm(new CachedTranslation(inputLang, outputLang, inputPhrase))) {
+							 deleteOldItems.setString(1, inputLang);
+							 deleteOldItems.setString(2, outputLang);
+							 deleteOldItems.setString(3, inputPhrase);
+							 deleteOldItems.addBatch();
+							 refs.debugMsg("(SQL) Prepared delete batch entry for cache entry.");
+						 }
+					 }
+
+					// Execute all deletions in a single batch
+					deleteOldItems.executeBatch();
+					refs.debugMsg("(SQL) Batch delete executed, old cache entries removed.");
+				} catch (SQLException e) {
+					e.printStackTrace();
+					return;
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();
+				return;
 			}
 		} else if (main.isPostgresConnValid(true)) {
 			// Our Generic Table Layout:
 			// | Creation Date | Object Properties |
 			try (Connection postgresConnection = postgres.getConnection()) {
 				/* Sync ActiveTranslator data to corresponding table */
-				main.getActiveTranslators().entrySet().forEach((entry) -> {
-					refs.debugMsg("(Postgres) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
-					if (!entry.getValue().getHasBeenSaved()) {
-						String tableName = "activeTranslators";
-						Map<String, String> schema = CommonRefs.tableSchemas.get(tableName);
+				String tableName = "activeTranslators";
+				Map<String, String> schema = CommonRefs.tableSchemas.get(tableName);
 
-						// Columns and placeholders for the INSERT part
-						String columns = String.join(",", schema.keySet());
-						String placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
+				// Columns and placeholders for the INSERT part
+				String columns = String.join(",", schema.keySet());
+				String placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
 
-						// Dynamically create the ON CONFLICT DO UPDATE part
-						String onConflictUpdate = schema.keySet().stream()
-								.filter(column -> !column.equals("playerUUID")) // Exclude the conflict target column
-								.map(column -> String.format("%s = EXCLUDED.%s", column, column))
-								.collect(Collectors.joining(", "));
+				// Dynamically create the ON CONFLICT DO UPDATE part
+				String onConflictUpdate = schema.keySet().stream()
+						.filter(column -> !column.equals("playerUUID")) // Exclude the conflict target column
+						.map(column -> String.format("%s = EXCLUDED.%s", column, column))
+						.collect(Collectors.joining(", "));
 
-						String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (playerUUID) DO UPDATE SET %s",
-								tableName, columns, placeholders, onConflictUpdate);
+				String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (playerUUID) DO UPDATE SET %s",
+						tableName, columns, placeholders, onConflictUpdate);
 
-						// Log the final SQL statement for debugging purposes
-						try (PreparedStatement newActiveTranslator = postgresConnection.prepareStatement(sqlStatement)) {
-							ActiveTranslator val = entry.getValue();
-							int i = 1;
-							newActiveTranslator.setString(i++, Instant.now().toString());
-							newActiveTranslator.setString(i++, val.getUUID());
-							newActiveTranslator.setString(i++, val.getInLangCode());
-							newActiveTranslator.setString(i++, val.getOutLangCode());
-							newActiveTranslator.setInt(i++, val.getRateLimit());
-							newActiveTranslator.setString(i++, val.getRateLimitPreviousTime());
-							newActiveTranslator.setBoolean(i++, val.getTranslatingChatOutgoing());
-							newActiveTranslator.setBoolean(i++, val.getTranslatingChatIncoming());
-							newActiveTranslator.setBoolean(i++, val.getTranslatingBook());
-							newActiveTranslator.setBoolean(i++, val.getTranslatingSign());
-							newActiveTranslator.setBoolean(i++, val.getTranslatingItem());
-							newActiveTranslator.setBoolean(i++, val.getTranslatingEntity());
-							newActiveTranslator.executeUpdate();
-						} catch (SQLException e) {
-							e.printStackTrace();
-							return;
-						}
-						refs.debugMsg("(Postgres) Created/updated unsaved user data config of " + entry.getKey() + ".");
-						entry.getValue().setHasBeenSaved(true);
-					}
-				});
+				try (PreparedStatement newActiveTranslator = postgresConnection.prepareStatement(sqlStatement)) {
+					main.getActiveTranslators().forEach((key, val) -> {
+                        if (!val.getHasBeenSaved()) {
+                            int i = 1;
+                            try {
+                                newActiveTranslator.setString(i++, Instant.now().toString());
+                                newActiveTranslator.setString(i++, val.getUUID());
+                                newActiveTranslator.setString(i++, val.getInLangCode());
+                                newActiveTranslator.setString(i++, val.getOutLangCode());
+                                newActiveTranslator.setInt(i++, val.getRateLimit());
+                                newActiveTranslator.setString(i++, val.getRateLimitPreviousTime());
+                                newActiveTranslator.setBoolean(i++, val.getTranslatingChatOutgoing());
+                                newActiveTranslator.setBoolean(i++, val.getTranslatingChatIncoming());
+                                newActiveTranslator.setBoolean(i++, val.getTranslatingBook());
+                                newActiveTranslator.setBoolean(i++, val.getTranslatingSign());
+                                newActiveTranslator.setBoolean(i++, val.getTranslatingItem());
+                                newActiveTranslator.setBoolean(i++, val.getTranslatingEntity());
+
+                                // Add to batch
+                                newActiveTranslator.addBatch();
+                                refs.debugMsg("(Postgres) Prepared batch entry for " + key + ".");
+                                val.setHasBeenSaved(true);
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                                return;
+                            }
+                        }
+                    });
+
+					// Execute the batch
+					newActiveTranslator.executeBatch();
+					refs.debugMsg("(Postgres) Batch executed, data saved or updated.");
+				} catch (SQLException e) {
+					e.printStackTrace();
+					return;
+				}
 
 				/* Delete any old ActiveTranslators */
-				try (ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT playerUUID FROM activeTranslators")) {
+				try (PreparedStatement deleteOldItem = postgresConnection.prepareStatement("DELETE FROM activeTranslators WHERE playerUUID = ?");
+					 ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT playerUUID FROM activeTranslators")) {
 					while (rs.next()) {
 						if (!main.isActiveTranslator(rs.getString("playerUUID"))) {
-							try (PreparedStatement deleteOldItem = postgresConnection.prepareStatement("DELETE FROM activeTranslators WHERE playerUUID = ?")) {
-								String uuid = rs.getString("playerUUID");
-								deleteOldItem.setString(1, uuid);
-								deleteOldItem.executeUpdate();
-								refs.debugMsg("(Postgres) Deleted user data config of " + uuid + ".");
-							}
+							String uuid = rs.getString("playerUUID");
+							deleteOldItem.setString(1, uuid);
+							deleteOldItem.addBatch();
+							refs.debugMsg("(Postgres) Prepared delete batch entry for " + uuid + ".");
 						}
 					}
+					// Execute all deletions in a single batch
+					deleteOldItem.executeBatch();
+					refs.debugMsg("(Postgres) Batch delete executed, old active translators removed.");
+				} catch (SQLException e) {
+					e.printStackTrace();
+					return;
 				}
 
 				/* Sync PlayerRecord data to corresponding table */
-				main.getPlayerRecords().entrySet().forEach((entry) -> {
-					refs.debugMsg("(Postgres) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
-					if (!entry.getValue().getHasBeenSaved()) {
-						String tableName = "playerRecords";
-						Map<String, String> schema = CommonRefs.tableSchemas.get(tableName);
+				tableName = "playerRecords";
+				schema = CommonRefs.tableSchemas.get(tableName);
 
-						// Columns and placeholders for the INSERT part
-						String columns = String.join(",", schema.keySet());
-						String placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
+				// Columns and placeholders for the INSERT part
+				columns = String.join(",", schema.keySet());
+				placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
 
-						// Dynamically create the ON CONFLICT DO UPDATE part
-						String onConflictUpdate = schema.keySet().stream()
-								.filter(column -> !column.equals("playerUUID")) // Exclude the conflict target column
-								.map(column -> String.format("%s = EXCLUDED.%s", column, column))
-								.collect(Collectors.joining(", "));
+				// Dynamically create the ON CONFLICT DO UPDATE part
+				onConflictUpdate = schema.keySet().stream()
+						.filter(column -> !column.equals("playerUUID")) // Exclude the conflict target column
+						.map(column -> String.format("%s = EXCLUDED.%s", column, column))
+						.collect(Collectors.joining(", "));
 
-						String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (playerUUID) DO UPDATE SET %s",
-								tableName, columns, placeholders, onConflictUpdate);
+				sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (playerUUID) DO UPDATE SET %s",
+						tableName, columns, placeholders, onConflictUpdate);
 
-						// Log the final SQL statement for debugging purposes
-						try (PreparedStatement newPlayerRecord = postgresConnection.prepareStatement(sqlStatement)) {
-							PlayerRecord val = entry.getValue();
-							int i = 1;
-							newPlayerRecord.setString(i++, Instant.now().toString());
-							newPlayerRecord.setString(i++, val.getUUID());
-							newPlayerRecord.setInt(i++, val.getAttemptedTranslations());
-							newPlayerRecord.setInt(i++, val.getSuccessfulTranslations());
-							newPlayerRecord.setString(i++, val.getLastTranslationTime());
-							newPlayerRecord.setString(i++, val.getLocalizationCode());
-							newPlayerRecord.executeUpdate();
-						} catch (SQLException e) {
-							e.printStackTrace();
-							return;
-						}
-						refs.debugMsg("(Postgres) Created/updated unsaved user record of " + entry.getKey() + ".");
-						entry.getValue().setHasBeenSaved(true);
-					}
-				});
+				try (PreparedStatement newPlayerRecord = postgresConnection.prepareStatement(sqlStatement)) {
+					main.getPlayerRecords().forEach((key, val) -> {
+                        if (!val.getHasBeenSaved()) {
+                            int i = 1;
+                            try {
+                                newPlayerRecord.setString(i++, Instant.now().toString());
+                                newPlayerRecord.setString(i++, val.getUUID());
+                                newPlayerRecord.setInt(i++, val.getAttemptedTranslations());
+                                newPlayerRecord.setInt(i++, val.getSuccessfulTranslations());
+                                newPlayerRecord.setString(i++, val.getLastTranslationTime());
+                                newPlayerRecord.setString(i++, val.getLocalizationCode());
+
+                                // Add to batch
+                                newPlayerRecord.addBatch();
+                                refs.debugMsg("(Postgres) Prepared batch entry for " + key + ".");
+                                val.setHasBeenSaved(true);
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                                return;
+                            }
+                        }
+                    });
+
+					// Execute the batch
+					newPlayerRecord.executeBatch();
+					refs.debugMsg("(Postgres) Batch executed, player records saved or updated.");
+				} catch (SQLException e) {
+					e.printStackTrace();
+					return;
+				}
+
 
 				/* Sync Cache data to corresponding table */
 				if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
-					main.getCache().asMap().entrySet().forEach((entry) -> {
-						refs.debugMsg("(Postgres) Cache data of " + entry.getValue() + " save status: " + entry.getKey().hasBeenSaved());
-						if (!entry.getKey().hasBeenSaved()) {
-							String tableName = "persistentCache";
-							Map<String, String> schema = CommonRefs.tableSchemas.get(tableName);
+					tableName = "persistentCache";
+					schema = CommonRefs.tableSchemas.get(tableName);
 
-							// Columns and placeholders for the INSERT part
-							String columns = String.join(",", schema.keySet());
-							String placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
+					// Columns and placeholders for the INSERT part
+					columns = String.join(",", schema.keySet());
+					placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
 
-							// Dynamically create the ON CONFLICT DO UPDATE part
-							String onConflictUpdate = schema.keySet().stream()
-									.filter(column -> !column.equals("randomUUID")) // Exclude the conflict target column
-									.map(column -> String.format("%s = EXCLUDED.%s", column, column))
-									.collect(Collectors.joining(", "));
+					// Dynamically create the ON CONFLICT DO UPDATE part
+					 onConflictUpdate = schema.keySet().stream()
+							.filter(column -> !column.equals("randomUUID")) // Exclude the conflict target column
+							.map(column -> String.format("%s = EXCLUDED.%s", column, column))
+							.collect(Collectors.joining(", "));
 
-							String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (randomUUID) DO UPDATE SET %s",
-									tableName, columns, placeholders, onConflictUpdate);
+					sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (randomUUID) DO UPDATE SET %s",
+							tableName, columns, placeholders, onConflictUpdate);
 
-							// Log the final SQL statement for debugging purposes
-							try (PreparedStatement newCacheTerm = postgresConnection.prepareStatement(sqlStatement)) {
-								CachedTranslation val = entry.getKey();
-								int i = 1;
-								newCacheTerm.setString(i++, UUID.randomUUID().toString());
-								newCacheTerm.setString(i++, val.getInputLang());
-								newCacheTerm.setString(i++, val.getOutputLang());
-								newCacheTerm.setString(i++, val.getInputPhrase());
-								newCacheTerm.setString(i++, entry.getValue());
-								newCacheTerm.executeUpdate();
-							} catch (SQLException e) {
-								e.printStackTrace();
-								return;
-							}
-							refs.debugMsg("(Postgres) Created/updated unsaved cache term.");
-							entry.getKey().setHasBeenSaved(true);
-						}
-					});
+					try (PreparedStatement newCacheTerm = postgresConnection.prepareStatement(sqlStatement)) {
+						main.getCache().asMap().forEach((val, value) -> {
+                            if (!val.hasBeenSaved()) {
+                                int i = 1;
+                                try {
+                                    newCacheTerm.setString(i++, UUID.randomUUID().toString());
+                                    newCacheTerm.setString(i++, val.getInputLang());
+                                    newCacheTerm.setString(i++, val.getOutputLang());
+                                    newCacheTerm.setString(i++, val.getInputPhrase());
+                                    newCacheTerm.setString(i++, value);
 
-					/* Delete old cache entries */
+                                    // Add to batch
+                                    newCacheTerm.addBatch();
+                                    refs.debugMsg("(Postgres) Prepared batch entry for cache data.");
+                                    val.setHasBeenSaved(true);
+                                } catch (SQLException e) {
+                                    e.printStackTrace();
+                                    return;
+                                }
+                            }
+                        });
+
+						// Execute all updates/inserts in a single batch
+						newCacheTerm.executeBatch();
+						refs.debugMsg("(Postgres) Batch executed, cache data saved or updated.");
+					} catch (SQLException e) {
+						e.printStackTrace();
+						return;
+					}
+
+					/* Delete Old Cache Terms */
 					try (PreparedStatement deleteOldItems = postgresConnection.prepareStatement(
 							"DELETE FROM persistentCache WHERE inputLang = ? AND outputLang = ? AND inputPhrase = ?")) {
-						try (ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT * FROM persistentCache")) {
-							while (rs.next()) {
-								String inputLang = rs.getString("inputLang");
-								String outputLang = rs.getString("outputLang");
-								String inputPhrase = rs.getString("inputPhrase");
+						ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT * FROM persistentCache");
+						while (rs.next()) {
+							String inputLang = rs.getString("inputLang");
+							String outputLang = rs.getString("outputLang");
+							String inputPhrase = rs.getString("inputPhrase");
 
-								if (!main.hasCacheTerm(new CachedTranslation(inputLang, outputLang, inputPhrase))) {
-									deleteOldItems.setString(1, inputLang);
-									deleteOldItems.setString(2, outputLang);
-									deleteOldItems.setString(3, inputPhrase);
-									deleteOldItems.executeUpdate();
-									refs.debugMsg("(Postgres) Deleted cache entry.");
-								}
+							if (!main.hasCacheTerm(new CachedTranslation(inputLang, outputLang, inputPhrase))) {
+								deleteOldItems.setString(1, inputLang);
+								deleteOldItems.setString(2, outputLang);
+								deleteOldItems.setString(3, inputPhrase);
+								deleteOldItems.addBatch();
+								refs.debugMsg("(Postgres) Prepared delete batch entry for cache entry.");
 							}
 						}
+
+						// Execute all deletions in a single batch
+						deleteOldItems.executeBatch();
+						refs.debugMsg("(Postgres) Batch delete executed, old cache entries removed.");
+					} catch (SQLException e) {
+						e.printStackTrace();
+						return;
 					}
 				}
 			} catch (SQLException e) {
 				e.printStackTrace();
+				return;
 			}
 		} else if (main.isMongoConnValid(true)) {
 			try {
@@ -787,71 +863,91 @@ public class ConfigurationHandler {
 				MongoCollection<Document> playerRecordCol = database.getCollection("PlayerRecords");
 				MongoCollection<Document> cacheCol = database.getCollection("PersistentCache");
 
-				/* Write ActiveTranslators to DB */
-				main.getActiveTranslators().entrySet().forEach((entry) -> {
-					refs.debugMsg("(MongoDB) Translation data of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
-					if (!entry.getValue().getHasBeenSaved()) {
-						ActiveTranslator val = entry.getValue();
-						Document currTranslator = new Document()
-								.append("creationDate", Instant.now().toString())
-								.append("playerUUID", val.getUUID())
-								.append("inLangCode", val.getInLangCode())
-								.append("outLangCode", val.getOutLangCode())
-								.append("rateLimit", val.getRateLimit())
-								.append("rateLimitPreviousTime", val.getRateLimitPreviousTime())
-								.append("translatingChatOutgoing", val.getTranslatingChatOutgoing())
-								.append("translatingChatIncoming", val.getTranslatingChatIncoming())
-								.append("translatingBook", val.getTranslatingBook())
-								.append("translatingSign", val.getTranslatingSign())
-								.append("translatingItem", val.getTranslatingItem())
-								.append("translatingEntity", val.getTranslatingEntity());
+				// Preparing bulk operations
+				final List<WriteModel<Document>> writes = new ArrayList<>();
 
-						ReplaceOptions opts = new ReplaceOptions().upsert(true);
-						Bson filter = Filters.eq("playerUUID", val.getUUID());
-						activeTranslatorCol.replaceOne(filter, currTranslator, opts);
+				/* Add New Active Translators */
+				main.getActiveTranslators().forEach((key, val) -> {
+                    refs.debugMsg("(MongoDB) Translation data of " + key + " save status: " + val.getHasBeenSaved());
+                    if (!val.getHasBeenSaved()) {
+                        Document currTranslator = new Document()
+                                .append("creationDate", Instant.now().toString())
+                                .append("playerUUID", val.getUUID())
+                                .append("inLangCode", val.getInLangCode())
+                                .append("outLangCode", val.getOutLangCode())
+                                .append("rateLimit", val.getRateLimit())
+                                .append("rateLimitPreviousTime", val.getRateLimitPreviousTime())
+                                .append("translatingChatOutgoing", val.getTranslatingChatOutgoing())
+                                .append("translatingChatIncoming", val.getTranslatingChatIncoming())
+                                .append("translatingBook", val.getTranslatingBook())
+                                .append("translatingSign", val.getTranslatingSign())
+                                .append("translatingItem", val.getTranslatingItem())
+                                .append("translatingEntity", val.getTranslatingEntity());
 
-						entry.getValue().setHasBeenSaved(true);
-					}
-				});
+                        Bson filter = Filters.eq("playerUUID", val.getUUID());
+                        ReplaceOptions replaceOptions = new ReplaceOptions().upsert(true);
+                        writes.add(new ReplaceOneModel<>(filter, currTranslator, replaceOptions));
 
-				/* Delete old ActiveTranslators from MongoDB */
+                        val.setHasBeenSaved(true);
+                    }
+                });
+
+				if (!writes.isEmpty()) {
+					activeTranslatorCol.bulkWrite(writes);
+					refs.debugMsg("(MongoDB) Bulk operation executed, data saved or updated.");
+				}
+
+				/* Delete Old Active Translators */
 				FindIterable<Document> iterDoc = activeTranslatorCol.find();
-				Iterator<Document> it = iterDoc.iterator();
-				while (it.hasNext()) {
-					Document currDoc = it.next();
-					if (!main.isActiveTranslator(currDoc.getString("playerUUID"))) {
-						String uuid = currDoc.getString("playerUUID");
-						Bson query = Filters.eq("playerUUID", uuid);
-						activeTranslatorCol.deleteOne(query);
-						refs.debugMsg("(MongoDB) Deleted user data config of " + uuid + ".");
-					}
+				final List<WriteModel<Document>> deleteWrites = new ArrayList<>();
+				Consumer<Document> action = currDoc -> {
+                    String uuid = currDoc.getString("playerUUID");
+                    if (!main.isActiveTranslator(uuid)) {
+                        Bson query = Filters.eq("playerUUID", uuid);
+                        deleteWrites.add(new DeleteOneModel<>(query));
+                        refs.debugMsg("(MongoDB) Prepared delete batch entry for " + uuid + ".");
+                    }
+                };
+
+				iterDoc.forEach(action);
+
+				if (!deleteWrites.isEmpty()) {
+					activeTranslatorCol.bulkWrite(deleteWrites);
+					refs.debugMsg("(MongoDB) Bulk delete executed, old active translators removed.");
 				}
 
 				/* Write PlayerRecords to DB */
-				main.getPlayerRecords().entrySet().forEach((entry) -> {
-					refs.debugMsg("(MongoDB) Record of " + entry.getKey() + " save status: " + entry.getValue().getHasBeenSaved());
-					if (!entry.getValue().getHasBeenSaved()) {
-						PlayerRecord val = entry.getValue();
-						Document currPlayerRecord = new Document()
-								.append("creationDate", Instant.now().toString())
-								.append("playerUUID", val.getUUID())
-								.append("attemptedTranslations", val.getAttemptedTranslations())
-								.append("successfulTranslations", val.getSuccessfulTranslations())
-								.append("lastTranslationTime", val.getLastTranslationTime())
-								.append("localizationCode", val.getLocalizationCode());
+				final List<WriteModel<Document>> recordWrites = new ArrayList<>();
+				main.getPlayerRecords().forEach((key, val) -> {
+                    refs.debugMsg("(MongoDB) Record of " + key + " save status: " + val.getHasBeenSaved());
+                    if (!val.getHasBeenSaved()) {
+                        Document currPlayerRecord = new Document()
+                                .append("creationDate", Instant.now().toString())
+                                .append("playerUUID", val.getUUID())
+                                .append("attemptedTranslations", val.getAttemptedTranslations())
+                                .append("successfulTranslations", val.getSuccessfulTranslations())
+                                .append("lastTranslationTime", val.getLastTranslationTime())
+                                .append("localizationCode", val.getLocalizationCode());
 
-						ReplaceOptions opts = new ReplaceOptions().upsert(true);
-						Bson filter = Filters.eq("playerUUID", val.getUUID());
-						playerRecordCol.replaceOne(filter, currPlayerRecord, opts);
+                        Bson filter = Filters.eq("playerUUID", val.getUUID());
+                        ReplaceOptions replaceOptions = new ReplaceOptions().upsert(true);
+                        recordWrites.add(new ReplaceOneModel<>(filter, currPlayerRecord, replaceOptions));
 
-						entry.getValue().setHasBeenSaved(true);
-						refs.debugMsg("(MongoDB) Created/updated unsaved user record of " + entry.getKey() + ".");
-					}
-				});
+                        val.setHasBeenSaved(true);
+                    }
+                });
+
+				if (!recordWrites.isEmpty()) {
+					playerRecordCol.bulkWrite(recordWrites);
+					refs.debugMsg("(MongoDB) Bulk operation executed, player records saved or updated.");
+				}
 
 				/* Write Cache to DB */
 				if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
-					main.getCache().asMap().entrySet().forEach((entry) -> {
+					final List<WriteModel<Document>> cacheWrites = new ArrayList<>();
+
+					/* Add New Cache Terms */
+					main.getCache().asMap().entrySet().forEach(entry -> {
 						refs.debugMsg("(MongoDB) Cached entry " + entry.getValue() + " save status: " + entry.getKey().hasBeenSaved());
 						if (!entry.getKey().hasBeenSaved()) {
 							CachedTranslation val = entry.getKey();
@@ -863,31 +959,44 @@ public class ConfigurationHandler {
 									.append("inputPhrase", val.getInputPhrase())
 									.append("outputPhrase", entry.getValue());
 
-							ReplaceOptions opts = new ReplaceOptions().upsert(true);
 							Bson filter = Filters.eq("randomUUID", random.toString());
-							cacheCol.replaceOne(filter, currCache, opts);
+							ReplaceOptions replaceOptions = new ReplaceOptions().upsert(true);
+							cacheWrites.add(new ReplaceOneModel<>(filter, currCache, replaceOptions));
 
 							entry.getKey().setHasBeenSaved(true);
 						}
 					});
 
+					// Execute all updates/inserts in a single batch if there are entries to write
+					if (!cacheWrites.isEmpty()) {
+						cacheCol.bulkWrite(cacheWrites);
+						refs.debugMsg("(MongoDB) Bulk operation executed, cache data saved or updated.");
+					}
+
 					/* Delete old Cache from DB */
+					final List<WriteModel<Document>> deleteCacheWrites = new ArrayList<>();
+
 					FindIterable<Document> cacheIterDoc = cacheCol.find();
-					Iterator<Document> cacheIt = cacheIterDoc.iterator();
-					while (cacheIt.hasNext()) {
-						Document currDoc = cacheIt.next();
-						CachedTranslation temp = new CachedTranslation(currDoc.getString("inputLang"), currDoc.getString("outputLang"), currDoc.getString("inputPhrase"));
+					cacheIterDoc.forEach(document -> {
+						CachedTranslation temp = new CachedTranslation(document.getString("inputLang"), document.getString("outputLang"), document.getString("inputPhrase"));
 						if (!main.hasCacheTerm(temp)) {
-							String uuid = currDoc.getString("randomUUID");
+							String uuid = document.getString("randomUUID");
 							Bson query = Filters.eq("randomUUID", uuid);
-							cacheCol.deleteOne(query);
-							refs.debugMsg("(MongoDB) Deleted cache term.");
+							deleteCacheWrites.add(new DeleteOneModel<>(query));
+							refs.debugMsg("(MongoDB) Prepared delete batch entry for cache term.");
 						}
+					});
+
+					// Execute all deletions in a single batch if there are entries to delete
+					if (!deleteCacheWrites.isEmpty()) {
+						cacheCol.bulkWrite(deleteCacheWrites);
+						refs.debugMsg("(MongoDB) Bulk delete executed, old cache entries removed.");
 					}
 				}
 
 			} catch (MongoException e) {
 				e.printStackTrace();
+				return;
 			}
 		} else {
 			/* Last resort, sync activeTranslators to disk via YAML */
