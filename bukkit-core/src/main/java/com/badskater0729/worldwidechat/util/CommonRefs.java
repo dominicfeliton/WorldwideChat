@@ -81,6 +81,8 @@ public class CommonRefs {
 	public static final Map<String, Map<String, String>> tableSchemas = new HashMap<>();
 	static {
 		// Linked hashmaps to preserve order
+		// PRIMARY KEY == playerUUID, randomUUID on persistentCache
+		// TODO: Move create table method over here, make different primary keys more clear?
 		HashMap<String, String> activeTranslatorsSchema = new LinkedHashMap<>();
 		activeTranslatorsSchema.put("creationDate", "VARCHAR(40)");
 		activeTranslatorsSchema.put("playerUUID", "VARCHAR(40)");
@@ -104,6 +106,14 @@ public class CommonRefs {
 		playerRecordsSchema.put("lastTranslationTime", "VARCHAR(40)");
 		playerRecordsSchema.put("localizationCode", "VARCHAR(10)");
 		tableSchemas.put("playerRecords", playerRecordsSchema);
+
+		Map<String, String> cachedTermsSchema = new LinkedHashMap<>();
+		cachedTermsSchema.put("randomUUID", "VARCHAR(40)");
+		cachedTermsSchema.put("inputLang", "VARCHAR(10)");
+		cachedTermsSchema.put("outputLang", "VARCHAR(10)");
+		cachedTermsSchema.put("inputPhrase", "VARCHAR(260)");
+		cachedTermsSchema.put("outputPhrase", "VARCHAR(260)");
+		tableSchemas.put("persistentCache", cachedTermsSchema);
 	}
 
 	public static ConcurrentHashMap<String, YamlConfiguration> pluginLangConfigs = new ConcurrentHashMap<>();

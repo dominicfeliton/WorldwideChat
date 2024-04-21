@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
 
 import com.badskater0729.worldwidechat.util.*;
 import com.badskater0729.worldwidechat.util.storage.PostgresUtils;
+import com.github.benmanes.caffeine.cache.Cache;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.bson.Document;
 import org.bson.conversions.Bson;
@@ -436,6 +437,7 @@ public class ConfigurationHandler {
 	/* Sync user data to storage */
 	public void syncData(boolean wasPreviouslyInvalid) {
 		/* If our translator is Invalid, do not run this code */
+		// TODO: Convert to batch delete + add for databases
 		if (wasPreviouslyInvalid) {
 			return;
 		}
@@ -547,6 +549,66 @@ public class ConfigurationHandler {
                     	entry.getValue().setHasBeenSaved(true);
 				    }
 				});
+
+				/* Sync Cache data to corresponding table */
+				if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+					main.getCache().asMap().entrySet().forEach((entry) -> {
+						refs.debugMsg("(SQL) Cache data of " + entry.getValue() + " save status: " + entry.getKey().hasBeenSaved());
+						if (!entry.getKey().hasBeenSaved()) {
+							String tableName = "persistentCache";
+							Map<String, String> schema = CommonRefs.tableSchemas.get(tableName);
+
+							// Columns and placeholders for the INSERT part
+							String columns = String.join(",", schema.keySet());
+							String placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
+
+							// Dynamically create the ON DUPLICATE KEY UPDATE part
+							String onUpdate = schema.keySet().stream()
+									.map(column -> String.format("%s = VALUES(%s)", column, column))
+									.collect(Collectors.joining(", "));
+
+							String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON DUPLICATE KEY UPDATE %s",
+									tableName, columns, placeholders, onUpdate);
+
+							// Log the final SQL statement for debugging purposes
+							try (PreparedStatement newCacheTerm = sqlConnection.prepareStatement(sqlStatement)) {
+								CachedTranslation val = entry.getKey();
+								int i = 1;
+								newCacheTerm.setString(i++, UUID.randomUUID().toString());
+								newCacheTerm.setString(i++, val.getInputLang());
+								newCacheTerm.setString(i++, val.getOutputLang());
+								newCacheTerm.setString(i++, val.getInputPhrase());
+								newCacheTerm.setString(i++, entry.getValue());
+								newCacheTerm.executeUpdate();
+							} catch (SQLException e) {
+								e.printStackTrace();
+								return;
+							}
+							refs.debugMsg("(SQL) Created/updated unsaved cache term.");
+							entry.getKey().setHasBeenSaved(true);
+						}
+					});
+
+					/* Delete old cache entries */
+					try (PreparedStatement deleteOldItems = sqlConnection.prepareStatement(
+							"DELETE FROM persistentCache WHERE inputLang = ? AND outputLang = ? AND inputPhrase = ?")) {
+						try (ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM persistentCache")) {
+							while (rs.next()) {
+								String inputLang = rs.getString("inputLang");
+								String outputLang = rs.getString("outputLang");
+								String inputPhrase = rs.getString("inputPhrase");
+
+								if (!main.hasCacheTerm(new CachedTranslation(inputLang, outputLang, inputPhrase))) {
+									deleteOldItems.setString(1, inputLang);
+									deleteOldItems.setString(2, outputLang);
+									deleteOldItems.setString(3, inputPhrase);
+									deleteOldItems.executeUpdate();
+									refs.debugMsg("(SQL) Deleted cache entry.");
+								}
+							}
+						}
+					}
+				}
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -653,6 +715,67 @@ public class ConfigurationHandler {
 						entry.getValue().setHasBeenSaved(true);
 					}
 				});
+
+				/* Sync Cache data to corresponding table */
+				if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+					main.getCache().asMap().entrySet().forEach((entry) -> {
+						refs.debugMsg("(Postgres) Cache data of " + entry.getValue() + " save status: " + entry.getKey().hasBeenSaved());
+						if (!entry.getKey().hasBeenSaved()) {
+							String tableName = "persistentCache";
+							Map<String, String> schema = CommonRefs.tableSchemas.get(tableName);
+
+							// Columns and placeholders for the INSERT part
+							String columns = String.join(",", schema.keySet());
+							String placeholders = schema.keySet().stream().map(k -> "?").collect(Collectors.joining(","));
+
+							// Dynamically create the ON CONFLICT DO UPDATE part
+							String onConflictUpdate = schema.keySet().stream()
+									.filter(column -> !column.equals("randomUUID")) // Exclude the conflict target column
+									.map(column -> String.format("%s = EXCLUDED.%s", column, column))
+									.collect(Collectors.joining(", "));
+
+							String sqlStatement = String.format("INSERT INTO %s (%s) VALUES (%s) ON CONFLICT (randomUUID) DO UPDATE SET %s",
+									tableName, columns, placeholders, onConflictUpdate);
+
+							// Log the final SQL statement for debugging purposes
+							try (PreparedStatement newCacheTerm = postgresConnection.prepareStatement(sqlStatement)) {
+								CachedTranslation val = entry.getKey();
+								int i = 1;
+								newCacheTerm.setString(i++, UUID.randomUUID().toString());
+								newCacheTerm.setString(i++, val.getInputLang());
+								newCacheTerm.setString(i++, val.getOutputLang());
+								newCacheTerm.setString(i++, val.getInputPhrase());
+								newCacheTerm.setString(i++, entry.getValue());
+								newCacheTerm.executeUpdate();
+							} catch (SQLException e) {
+								e.printStackTrace();
+								return;
+							}
+							refs.debugMsg("(Postgres) Created/updated unsaved cache term.");
+							entry.getKey().setHasBeenSaved(true);
+						}
+					});
+
+					/* Delete old cache entries */
+					try (PreparedStatement deleteOldItems = postgresConnection.prepareStatement(
+							"DELETE FROM persistentCache WHERE inputLang = ? AND outputLang = ? AND inputPhrase = ?")) {
+						try (ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT * FROM persistentCache")) {
+							while (rs.next()) {
+								String inputLang = rs.getString("inputLang");
+								String outputLang = rs.getString("outputLang");
+								String inputPhrase = rs.getString("inputPhrase");
+
+								if (!main.hasCacheTerm(new CachedTranslation(inputLang, outputLang, inputPhrase))) {
+									deleteOldItems.setString(1, inputLang);
+									deleteOldItems.setString(2, outputLang);
+									deleteOldItems.setString(3, inputPhrase);
+									deleteOldItems.executeUpdate();
+									refs.debugMsg("(Postgres) Deleted cache entry.");
+								}
+							}
+						}
+					}
+				}
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
@@ -662,6 +785,7 @@ public class ConfigurationHandler {
 				MongoDatabase database = mongo.getActiveDatabase();
 				MongoCollection<Document> activeTranslatorCol = database.getCollection("ActiveTranslators");
 				MongoCollection<Document> playerRecordCol = database.getCollection("PlayerRecords");
+				MongoCollection<Document> cacheCol = database.getCollection("PersistentCache");
 
 				/* Write ActiveTranslators to DB */
 				main.getActiveTranslators().entrySet().forEach((entry) -> {
@@ -725,6 +849,43 @@ public class ConfigurationHandler {
 					}
 				});
 
+				/* Write Cache to DB */
+				if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+					main.getCache().asMap().entrySet().forEach((entry) -> {
+						refs.debugMsg("(MongoDB) Cached entry " + entry.getValue() + " save status: " + entry.getKey().hasBeenSaved());
+						if (!entry.getKey().hasBeenSaved()) {
+							CachedTranslation val = entry.getKey();
+							UUID random = UUID.randomUUID();
+							Document currCache = new Document()
+									.append("randomUUID", random.toString())
+									.append("inputLang", val.getInputLang())
+									.append("outputLang", val.getOutputLang())
+									.append("inputPhrase", val.getInputPhrase())
+									.append("outputPhrase", entry.getValue());
+
+							ReplaceOptions opts = new ReplaceOptions().upsert(true);
+							Bson filter = Filters.eq("randomUUID", random.toString());
+							cacheCol.replaceOne(filter, currCache, opts);
+
+							entry.getKey().setHasBeenSaved(true);
+						}
+					});
+
+					/* Delete old Cache from DB */
+					FindIterable<Document> cacheIterDoc = cacheCol.find();
+					Iterator<Document> cacheIt = cacheIterDoc.iterator();
+					while (cacheIt.hasNext()) {
+						Document currDoc = cacheIt.next();
+						CachedTranslation temp = new CachedTranslation(currDoc.getString("inputLang"), currDoc.getString("outputLang"), currDoc.getString("inputPhrase"));
+						if (!main.hasCacheTerm(temp)) {
+							String uuid = currDoc.getString("randomUUID");
+							Bson query = Filters.eq("randomUUID", uuid);
+							cacheCol.deleteOne(query);
+							refs.debugMsg("(MongoDB) Deleted cache term.");
+						}
+					}
+				}
+
 			} catch (MongoException e) {
 				e.printStackTrace();
 			}
@@ -762,10 +923,10 @@ public class ConfigurationHandler {
 				}
 			});
 
-			/* Sync cache to disk */
 			// TODO: Make sure cache still saves when turning it on/off live
 			// TODO: Everything besides YAML
 			if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+				/* Sync cache to disk */
 				//main.getLogger().warning(refs.getMsg("wwcPersistentCacheLoad", null));
 				main.getCache().asMap().entrySet().forEach((eaCache) -> {
 					if (!eaCache.getKey().hasBeenSaved()) {
@@ -774,10 +935,8 @@ public class ConfigurationHandler {
 						createCacheConfig(eaCache.getKey(), eaCache.getValue());
 					}
 				});
-			}
 
-			// Delete any old cache files
-			if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+				/* Delete any old cache files */
 				File cacheDir = new File(main.getDataFolder() + File.separator + "cache" + File.separator);
 				for (String eaName : cacheDir.list()) {
 					File currFile = new File(cacheDir, eaName);

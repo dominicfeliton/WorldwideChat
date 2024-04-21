@@ -68,10 +68,6 @@ public class LoadUserData implements Runnable {
 			try (Connection sqlConnection = sql.getConnection()) {
 				/* Create tables if they do not exist already */
 				setupTables();
-
-				// Warn about old table structs
-				refs.detectOutdatedTable("activeTranslators");
-				refs.detectOutdatedTable("playerRecords");
 				
 				// Load PlayerRecord using SQL
 				try (ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM playerRecords")) {
@@ -126,10 +122,6 @@ public class LoadUserData implements Runnable {
 			try (Connection postgresConnection = postgres.getConnection()) {
 				/* Create tables if they do not exist already */
 				setupTables();
-
-				// Warn about old table structs
-				refs.detectOutdatedTable("activeTranslators");
-				refs.detectOutdatedTable("playerRecords");
 
 				// Load PlayerRecord using Postgres
 				try (ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT * FROM playerRecords")) {
@@ -326,36 +318,105 @@ public class LoadUserData implements Runnable {
 		}
 
 		/* Load Persistent Cache (if enabled) */
-		// TODO: Everything besides YAML
 		if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
 			refs.debugMsg("Loading persistent cache data...");
-			for (File eaFile : cacheFolder.listFiles()) {
-				// Load current user translation file
-				YamlConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
-				try {
-					Reader currConfigStream = new InputStreamReader(main.getResource("default-persistent-cache.yml"), "UTF-8");
-					currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
-				} catch (UnsupportedEncodingException e) {
+			if (mainConfig.getBoolean("Storage.useSQL") && main.isSQLConnValid(false)) {
+				// Load Cached Terms using SQL
+				try (Connection sqlConnection = sql.getConnection()) {
+					try (ResultSet rs = sqlConnection.createStatement().executeQuery("SELECT * FROM persistentCache")) {
+						while (rs.next()) {
+							String inLang = rs.getString("inputLang");
+							String outLang = rs.getString("outputLang");
+							if (!validLangCodes(inLang, outLang)) {
+								// TODO: Check that this gets deleted?
+								continue;
+							}
+							CachedTranslation cacheTmp = new CachedTranslation(
+									inLang,
+									outLang,
+									rs.getString("inputPhrase")
+							);
+							cacheTmp.setHasBeenSaved(true);
+							main.addCacheTerm(cacheTmp, rs.getString("outputPhrase"));
+						}
+					}
+				} catch (SQLException e) {
 					e.printStackTrace();
 				}
-				currFileConfig.options().copyDefaults(true);
-
-				/* Sanity checks on inLang and outLang */
-				String inLang = currFileConfig.getString("inputLang");
-				String outLang = currFileConfig.getString("outputLang");
-				if (!validLangCodes(inLang, outLang)) {
-					// TODO: Check that this gets deleted?
-					continue;
+			} else if (mainConfig.getBoolean("Storage.usePostgreSQL") && main.isPostgresConnValid(false)) {
+				try (Connection postgresConnection = postgres.getConnection()) {
+					// Load Cached Terms using Postgres
+					try (ResultSet rs = postgresConnection.createStatement().executeQuery("SELECT * FROM persistentCache")) {
+						while (rs.next()) {
+							String inLang = rs.getString("inputLang");
+							String outLang = rs.getString("outputLang");
+							if (!validLangCodes(inLang, outLang)) {
+								// TODO: Check that this gets deleted?
+								continue;
+							}
+							CachedTranslation cacheTmp = new CachedTranslation(
+									inLang,
+									outLang,
+									rs.getString("inputPhrase")
+							);
+							cacheTmp.setHasBeenSaved(true);
+							main.addCacheTerm(cacheTmp, rs.getString("outputPhrase"));
+						}
+					}
+				} catch (SQLException e) {
+					e.printStackTrace();
 				}
-				String inputPhrase = currFileConfig.getString("inputPhrase");
-				String outputPhrase = currFileConfig.getString("outputPhrase");
+			} else if (mainConfig.getBoolean("Storage.useMongoDB") && main.isMongoConnValid(false)) {
+				// Load Cached Terms using MongoDB
+				MongoDatabase database = mongo.getActiveDatabase();
+				MongoCollection<Document> cacheCol = database.getCollection("PersistentCache");
+				FindIterable<Document> iterDoc = cacheCol.find();
+				Iterator<Document> it = iterDoc.iterator();
+				while (it.hasNext()) {
+					Document currDoc = it.next();
+					String inLang = currDoc.getString("inputLang");
+					String outLang = currDoc.getString("outputLang");
+					if (!validLangCodes(inLang, outLang)) {
+						// TODO: Check that this gets deleted?
+						continue;
+					}
+					CachedTranslation cacheTmp = new CachedTranslation(
+							inLang,
+							outLang,
+							currDoc.getString("inputPhrase")
+					);
+					cacheTmp.setHasBeenSaved(true);
+					main.addCacheTerm(cacheTmp, currDoc.getString("outputPhrase"));
+				}
+			} else {
+				for (File eaFile : cacheFolder.listFiles()) {
+					// Load current user translation file
+					YamlConfiguration currFileConfig = YamlConfiguration.loadConfiguration(eaFile);
+					try {
+						Reader currConfigStream = new InputStreamReader(main.getResource("default-persistent-cache.yml"), "UTF-8");
+						currFileConfig.setDefaults(YamlConfiguration.loadConfiguration(currConfigStream));
+					} catch (UnsupportedEncodingException e) {
+						e.printStackTrace();
+					}
+					currFileConfig.options().copyDefaults(true);
 
-				// Create new CachedTranslation with current file data
-				CachedTranslation currCache = new CachedTranslation(
-					inLang, outLang, inputPhrase
-				);
-				currCache.setHasBeenSaved(true);
-				main.addCacheTerm(currCache, outputPhrase);
+					/* Sanity checks on inLang and outLang */
+					String inLang = currFileConfig.getString("inputLang");
+					String outLang = currFileConfig.getString("outputLang");
+					if (!validLangCodes(inLang, outLang)) {
+						// TODO: Check that this gets deleted?
+						continue;
+					}
+					String inputPhrase = currFileConfig.getString("inputPhrase");
+					String outputPhrase = currFileConfig.getString("outputPhrase");
+
+					// Create new CachedTranslation with current file data
+					CachedTranslation currCache = new CachedTranslation(
+							inLang, outLang, inputPhrase
+					);
+					currCache.setHasBeenSaved(true);
+					main.addCacheTerm(currCache, outputPhrase);
+				}
 			}
 		}
 
@@ -386,12 +447,18 @@ public class LoadUserData implements Runnable {
 			String tableName = entry.getKey();
 			Map<String, String> tableSchema = entry.getValue();
 			createOrUpdateTable(tableName, tableSchema);
+
+			// If creation did not succeed/bad state after attempted creation
+			refs.detectOutdatedTable(tableName);
 		}
 	}
 
 	private void createOrUpdateTable(String tableName, Map<String, String> tableSchema) throws SQLException {
-		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 		// TODO: Check case-sensitivity on MySql on WINDOWS
+		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
+		// TODO: Make this more configurable/clear, do not have magic values as primary keys
+		String primaryKey = "playerUUID";
+		if (tableName.equals("persistentCache")) primaryKey = "randomUUID";
 
 		if (mainConfig.getBoolean("Storage.useSQL") && main.isSQLConnValid(false)) {
 			try (Connection conn = sql.getConnection()) {
@@ -399,7 +466,7 @@ public class LoadUserData implements Runnable {
 				createTableQuery += tableSchema.entrySet().stream()
 						.map(column -> column.getKey() + " " + column.getValue())
 						.collect(Collectors.joining(", "));
-				createTableQuery += ", PRIMARY KEY (playerUUID))";
+				createTableQuery += String.format(", PRIMARY KEY (%s))", primaryKey);
 				refs.debugMsg(createTableQuery);
 
 				try (PreparedStatement createTable = conn.prepareStatement(createTableQuery)) {
@@ -439,7 +506,7 @@ public class LoadUserData implements Runnable {
 				createTableQuery += tableSchema.entrySet().stream()
 						.map(column -> column.getKey() + " " + column.getValue())
 						.collect(Collectors.joining(", "));
-				createTableQuery += ", PRIMARY KEY (playerUUID))";
+				createTableQuery += String.format(", PRIMARY KEY (%s))", primaryKey);
 				refs.debugMsg(createTableQuery);
 
 				try (PreparedStatement createTable = conn.prepareStatement(createTableQuery)) {
