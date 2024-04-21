@@ -114,13 +114,14 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 				
 				/* Add Glow Effect */
 				ArrayList<String> lore = new ArrayList<>();
-				if ((currTranslator.getInLangCode().equals("None"))) {
+				if (selectedSourceLanguage.equalsIgnoreCase("None")) {
 					invManager.addGlowEffect(skipSourceMeta);
 					lore.add(ChatColor.GREEN + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceTranslationSelected", inPlayer));
-				} else if (selectedSourceLanguage.equalsIgnoreCase("None")) {
+				} else if (currTranslator.getInLangCode().equals("None")) {
 					invManager.addGlowEffect(skipSourceMeta);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive", inPlayer));
 				}
+				skipSourceMeta.setLore(lore);
 				skipSourceButton.setItemMeta(skipSourceMeta);
 				contents.set(5, 4, ClickableItem.of(skipSourceButton, e -> new WWCTranslateGuiTargetLanguage("None", targetPlayerUUID, inPlayer)
 						.getTargetLanguageInventory().open(player)));
