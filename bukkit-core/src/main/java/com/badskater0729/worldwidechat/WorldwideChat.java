@@ -464,7 +464,12 @@ public class WorldwideChat extends JavaPlugin {
 		this.getServer().getScheduler().cancelTasks(this);
 
 		// Sync activeTranslators, playerRecords to disk
-		configurationManager.syncData(wasPreviouslyInvalid);
+		try {
+			configurationManager.syncData(wasPreviouslyInvalid);
+		} catch (Exception e) {
+			// TODO: Better error handling here?
+			e.printStackTrace();
+		}
 
 		// Disconnect SQL
 		if (sqlSession != null) sqlSession.disconnect();

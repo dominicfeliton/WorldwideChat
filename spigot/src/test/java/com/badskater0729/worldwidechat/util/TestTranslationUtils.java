@@ -66,6 +66,7 @@ public class TestTranslationUtils {
 		playerMock.performCommand("worldwidechat:wwctrl 5");
 		playerMock.performCommand("worldwidechat:wwctci");
 		playerMock.performCommand("worldwidechat:wwcl az");
+		main.addCacheTerm(new CachedTranslation("en", "es", "test!"), "prueba!");
 
 		server.getLogger().info("(YAML) RUNNING DATA RETENTION TEST: wwct en es");
 		secondPlayerMock.performCommand("worldwidechat:wwct en es");
@@ -121,6 +122,10 @@ public class TestTranslationUtils {
 		assertNotEquals("None", playerRecord1.getLastTranslationTime());
 		assertTrue(playerRecord1.getLocalizationCode().equals("az"));
 		assertTrue(playerRecord1.getHasBeenSaved());
+
+		// Verify Cache
+		assertTrue(main.getCache().estimatedSize() > 1);
+		assertTrue(main.getCacheTerm(new CachedTranslation("en", "es", "test!")).equals("prueba!"));
 	}
 
 	public void testPluginDataRetentionMongoDB() {
@@ -142,6 +147,7 @@ public class TestTranslationUtils {
 		playerMock.performCommand("worldwidechat:wwctrl 5");
 		playerMock.performCommand("worldwidechat:wwctci");
 		playerMock.performCommand("worldwidechat:wwcl az");
+		main.addCacheTerm(new CachedTranslation("en", "es", "test!"), "prueba!");
 
 		server.getLogger().info("(MongoDB) RUNNING DATA RETENTION TEST: wwct en es");
 		secondPlayerMock.performCommand("worldwidechat:wwct en es");
@@ -198,6 +204,10 @@ public class TestTranslationUtils {
 		assertNotEquals("None", playerRecord1.getLastTranslationTime());
 		assertTrue(playerRecord1.getLocalizationCode().equals("az"));
 		assertTrue(playerRecord1.getHasBeenSaved());
+
+		// Verify Cache
+		assertTrue(main.getCache().estimatedSize() > 1);
+		assertTrue(main.getCacheTerm(new CachedTranslation("en", "es", "test!")).equals("prueba!"));
 	}
 
 	public void testPluginDataRetentionSQL() {
@@ -219,6 +229,7 @@ public class TestTranslationUtils {
 		playerMock.performCommand("worldwidechat:wwctrl 5");
 		playerMock.performCommand("worldwidechat:wwctci");
 		playerMock.performCommand("worldwidechat:wwcl az");
+		main.addCacheTerm(new CachedTranslation("en", "es", "test!"), "prueba!");
 
 		server.getLogger().info("(SQL) RUNNING DATA RETENTION TEST: wwct en es");
 		secondPlayerMock.performCommand("worldwidechat:wwct en es");
@@ -275,6 +286,10 @@ public class TestTranslationUtils {
 		assertNotEquals("None", playerRecord1.getLastTranslationTime());
 		assertTrue(playerRecord1.getLocalizationCode().equals("az"));
 		assertTrue(playerRecord1.getHasBeenSaved());
+
+		// Verify Cache
+		assertTrue(main.getCache().estimatedSize() > 1);
+		assertTrue(main.getCacheTerm(new CachedTranslation("en", "es", "test!")).equals("prueba!"));
 	}
 
 	public void testPluginDataRetentionPostgres() {
@@ -296,6 +311,7 @@ public class TestTranslationUtils {
 		playerMock.performCommand("worldwidechat:wwctrl 5");
 		playerMock.performCommand("worldwidechat:wwctci");
 		playerMock.performCommand("worldwidechat:wwcl az");
+		main.addCacheTerm(new CachedTranslation("en", "es", "test!"), "prueba!");
 
 		server.getLogger().info("(Postgres) RUNNING DATA RETENTION TEST: wwct en es");
 		secondPlayerMock.performCommand("worldwidechat:wwct en es");
@@ -352,5 +368,9 @@ public class TestTranslationUtils {
 		assertNotEquals("None", playerRecord1.getLastTranslationTime());
 		assertTrue(playerRecord1.getLocalizationCode().equals("az"));
 		assertTrue(playerRecord1.getHasBeenSaved());
+
+		// Verify Cache
+		assertTrue(main.getCache().estimatedSize() > 1);
+		assertTrue(main.getCacheTerm(new CachedTranslation("en", "es", "test!")).equals("prueba!"));
 	}
 }
