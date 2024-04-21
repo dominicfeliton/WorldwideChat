@@ -120,6 +120,9 @@ public class WWCTranslateGuiSourceLanguage implements InventoryProvider {
 				} else if (currTranslator.getInLangCode().equals("None")) {
 					invManager.addGlowEffect(skipSourceMeta);
 					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyActive", inPlayer));
+				} else if (main.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED") && main.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED").getInLangCode().equalsIgnoreCase("None")) {
+					invManager.addGlowEffect(skipSourceMeta);
+					lore.add(ChatColor.YELLOW + "" + ChatColor.ITALIC + refs.getMsg("wwctGUISourceOrTargetTranslationAlreadyGlobal", inPlayer));
 				}
 				skipSourceMeta.setLore(lore);
 				skipSourceButton.setItemMeta(skipSourceMeta);
