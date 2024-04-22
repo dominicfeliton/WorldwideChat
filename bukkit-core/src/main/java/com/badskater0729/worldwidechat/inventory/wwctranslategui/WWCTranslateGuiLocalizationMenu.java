@@ -14,6 +14,7 @@ import fr.minuskube.inv.content.InventoryContents;
 import fr.minuskube.inv.content.InventoryProvider;
 import fr.minuskube.inv.content.Pagination;
 import fr.minuskube.inv.content.SlotIterator;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -21,6 +22,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
 
@@ -49,6 +51,8 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
     @Override
     public void init(Player player, InventoryContents contents) {
         try {
+            Player targetPlayer = Bukkit.getPlayer(UUID.fromString(targetPlayerUUID));
+
             /* Default white stained glass borders for inactive, yellow if player has existing translation session */
             invManager.setBorders(contents, XMaterial.WHITE_STAINED_GLASS_PANE);
             if (main.isPlayerRecord(targetPlayerUUID) && !main.getPlayerRecord(targetPlayerUUID, true).getLocalizationCode().isEmpty()) {
@@ -88,7 +92,7 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
                 itemForLangMeta.setLore(lore);
                 itemForLang.setItemMeta(itemForLangMeta);
                 listOfAvailableLangs[i] = ClickableItem.of(itemForLang, e -> {
-                    WWCLocalize localize = new WWCLocalize((CommandSender) player, null, null, new String[] {player.getName(), currLang});
+                    WWCLocalize localize = new WWCLocalize((CommandSender) player, null, null, new String[] {targetPlayer.getName(), currLang});
                     localize.processCommand();
                     new WWCTranslateGuiMainMenu(targetPlayerUUID, inPlayer).getTranslateMainMenu().open(player);
                 });
@@ -115,7 +119,7 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
                         + refs.getMsg("wwctGUILocalizeStopButton", inPlayer));
                 stopButton.setItemMeta(stopMeta);
                 contents.set(5, 4, ClickableItem.of(stopButton, e -> {
-                    WWCLocalize localize = new WWCLocalize((CommandSender) player, null, null, new String[] {player.getName(), "stop"});
+                    WWCLocalize localize = new WWCLocalize((CommandSender) player, null, null, new String[] {targetPlayer.getName(), "stop"});
                     localize.processCommand();
                     new WWCTranslateGuiMainMenu(targetPlayerUUID, inPlayer).getTranslateMainMenu().open(player);
                 }));
@@ -135,6 +139,6 @@ public class WWCTranslateGuiLocalizationMenu implements InventoryProvider {
 
     @Override
     public void update(Player player, InventoryContents inventoryContents) {
-
+        invManager.checkIfPlayerIsMissing(player, targetPlayerUUID);
     }
 }
