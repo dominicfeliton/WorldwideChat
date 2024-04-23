@@ -250,9 +250,6 @@ Messages:
   wwcteOffTarget: Entiteitsvertaling gedeaktiveer vir {0}.
   wwcCharLimit: Jou boodskap is te lank! Maak asseblief seker dat jou boodskap minder
     as {0} karakters in lengte is.
-  wwcConfigConversationCharacterLimitInput: Die huidige karakterlimiet per boodskap
-    is {0} karakters. Tik enigiets groter as 0 om 'n nuwe waarde in te stel, of tik
-    enigiets minder as of gelyk aan 0 om terug te gaan.
   wwcteOffSender: Entiteit vertaling gedeaktiveer.
   wwctGUIEntityButton: Wissel Entiteit Vertaling
   wwctrlRateLimitBadInt: Jou koersbeperking is nie 'n geldige heelgetal nie.
@@ -588,4 +585,12 @@ Messages:
     gemaak en met u bergingskonfigurasie verbind nie.
   wwcrStorageFail: Herlaai WorldwideChat en 'n vertaler suksesvol geaktiveer, maar
     u stoorkonfigurasie kon nie verbind nie.
+  wwcConfigPersistentCacheInvalid: Ongeldige aanhoudende kasinskrywing in config.yml.
+    Standaard tot vals...
+  wwcConfigGUIPersistentCacheButton: Skakel aanhoudende kas
+  wwcConfigConversationPersistentCacheSuccess: Aanhoudende kas het suksesvol aangeskakel.
+  wwcConfigPersistentCacheEnabled: Kasdata sal oor herlaai voortduur.
+  wwcConfigConversationCharacterLimitInput: Die huidige karakterlimiet per boodskap
+    is {0} karakters. Tik enigiets groter as 0 (maar minder as 256) om 'n nuwe waarde
+    in te stel, of tik 0 om terug te gaan.
 

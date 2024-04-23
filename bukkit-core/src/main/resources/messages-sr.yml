@@ -246,9 +246,6 @@ Messages:
   wwcteOffTarget: Prevod entiteta onemogućen za {0}.
   wwcCharLimit: Vaša poruka je preduga! Molimo vas da budete sigurni da je vaša poruka
     manja od {0} znakova u dužini.
-  wwcConfigConversationCharacterLimitInput: Trenutni ograničenje karaktera po poruci
-    je {0} znakova. Ukucajte bilo što veće od 0 da biste postavili novu vrednost,
-    ili upišite nešto manje od ili jednako 0 da biste se vratili.
   wwcteOffSender: Entitetski prevod onemogućen.
   wwctGUIEntityButton: Prebacivanje entitetskog prevoda
   wwctrlRateLimitBadInt: Vaša stopa ograničenje nije važeći ceo broj.
@@ -577,4 +574,12 @@ Messages:
     prevodilac i poveže se sa vašom konfiguracijom skladišta.
   wwcrStorageFail: Ponovo je učitao VorldWideChat i uspešno omogućio prevodilac, ali
     konfiguracija skladištenja nije uspela da se poveže.
+  wwcConfigPersistentCacheInvalid: Nevažeći postojani unos keša u config.iml. Podrazumevano
+    na lažno...
+  wwcConfigGUIPersistentCacheButton: Uključite trajnu keš memoriju
+  wwcConfigConversationPersistentCacheSuccess: Trajna keš memorija uspešno se prebacuje.
+  wwcConfigPersistentCacheEnabled: Podaci keša će trajati tokom ponovnog učitavanja.
+  wwcConfigConversationCharacterLimitInput: Trenutno ograničenje znakova po poruci
+    je {0} znakova. Unesite nešto veće od 0 (ali manje od 256) da biste postavili
+    novu vrednost ili otkucajte 0 da biste se vratili nazad.
 

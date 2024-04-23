@@ -72,6 +72,7 @@ public class ConfigurationHandler {
 			return;
 		}
 
+		// TODO: convert this to a value stored in WorldwideChat class (default en)
 		mainConfig.set("General.pluginLang", "en");
 		main.getLogger().warning("Unable to detect a valid language in your config.yml. Defaulting to en...");
 	}
@@ -133,7 +134,6 @@ public class ConfigurationHandler {
 			}
 
 			/* Save messages config */
-			// TODO: Perhaps make sure this method is ran async in /wwcl
 			saveCustomConfig(msgConfig, msgFile, false);
 
 			/* Success :) */
@@ -151,6 +151,7 @@ public class ConfigurationHandler {
 	public void loadMainSettings() {
 		/* Get rest of General Settings */
 		// Debug Mode
+		// Not stored in main, since we want debug MSGs ASAP
 		if (mainConfig.getBoolean("General.enableDebugMode")) {
 			main.getLogger().warning(refs.getMsg("wwcConfigEnabledDebugMode", null));
 		}
@@ -180,7 +181,6 @@ public class ConfigurationHandler {
 		}
 		// bStats
 		if (mainConfig.getBoolean("General.enablebStats")) {
-			@SuppressWarnings("unused")
 			Metrics metrics = new Metrics(WorldwideChat.instance, WorldwideChat.bStatsID);
 			main.getLogger()
 					.info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigEnabledbStats", null));
@@ -190,11 +190,13 @@ public class ConfigurationHandler {
 		// Update Checker Delay
 		try {
 			if (!(mainConfig.getInt("General.updateCheckerDelay") > 10)) {
-				mainConfig.set("General.updateCheckerDelay", 86400);
+				main.setUpdateCheckerDelay(86400);
 				main.getLogger().warning(refs.getMsg("wwcConfigBadUpdateDelay", null));
+			} else {
+				main.setUpdateCheckerDelay(mainConfig.getInt("General.updateCheckerDelay"));
 			}
 		} catch (Exception e) {
-			mainConfig.set("General.updateCheckerDelay", 86400);
+			main.setUpdateCheckerDelay(86400);
 			main.getLogger().warning(refs.getMsg("wwcConfigBadUpdateDelay", null));
 		}
 		// Sync User Data Delay
@@ -202,36 +204,39 @@ public class ConfigurationHandler {
 			if ((mainConfig.getInt("General.syncUserDataDelay") > 10)) {
 				main.getLogger().info(
 						ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigSyncDelayEnabled", mainConfig.getInt("General.syncUserDataDelay") + "", null));
+				main.setSyncUserDataDelay(mainConfig.getInt("General.syncUserDataDelay"));
 			} else {
-				mainConfig.set("General.syncUserDataDelay", 7200);
+				main.setSyncUserDataDelay(7200);
 				main.getLogger().warning(refs.getMsg("wwcConfigSyncDelayInvalid", null));
 			}
 		} catch (Exception e) {
-			mainConfig.set("General.syncUserDataDelay", 7200);
+			main.setSyncUserDataDelay(7200);
 			main.getLogger().warning(refs.getMsg("wwcConfigSyncDelayInvalid", null));
 		}
 		// Rate limit Settings
 		try {
 			if (mainConfig.getInt("Translator.rateLimit") >= 0) {
 				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigRateLimitEnabled", "" + mainConfig.getInt("Translator.rateLimit"), null));
+				main.setGlobalRateLimit(mainConfig.getInt("Translator.rateLimit"));
 			} else {
-				mainConfig.set("Translator.rateLimit", 0);
+				main.setGlobalRateLimit(0);
 				main.getLogger().warning(refs.getMsg("wwcConfigRateLimitInvalid", null));
 			}
 		} catch (Exception e) {
-			mainConfig.set("Translator.rateLimit", 0);
+			main.setGlobalRateLimit(0);
 			main.getLogger().warning(refs.getMsg("wwcConfigRateLimitInvalid", null));
 		}
 		// Per-message char limit Settings
 		try {
-			if (mainConfig.getInt("Translator.messageCharLimit") >= 0) {
+			if (mainConfig.getInt("Translator.messageCharLimit") >= 0 && mainConfig.getInt("Translator.messageCharLimit") <= 255) {
+				main.setMessageCharLimit(mainConfig.getInt("Translator.messageCharLimit"));
 				main.getLogger().info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigMessageCharLimitEnabled", "" + mainConfig.getInt("Translator.messageCharLimit"), null));
 			} else {
-				mainConfig.set("Translator.messageCharLimit", 255);
+				main.setMessageCharLimit(255);
 				main.getLogger().warning(refs.getMsg("wwcConfigMessageCharLimitInvalid", null));
 			}
 		} catch (Exception e) {
-			mainConfig.set("Translator.messageCharLimit", 255);
+			main.setMessageCharLimit(255);
 			main.getLogger().warning(refs.getMsg("wwcConfigMessageCharLimitInvalid", null));
 		}
 		// Cache Settings
@@ -242,35 +247,48 @@ public class ConfigurationHandler {
 			    // Set cache to size beforehand, so we can avoid expandCapacity :)
 				main.setCacheProperties(mainConfig.getInt("Translator.translatorCacheSize"));
 			} else {
-				mainConfig.set("Translator.translatorCacheSize", 0);
 				main.setCacheProperties(0);
 				main.getLogger().warning(refs.getMsg("wwcConfigCacheDisabled", null));
 			}
 		} catch (Exception e) {
-			mainConfig.set("Translator.translatorCacheSize", 100);
 			main.setCacheProperties(100);
 			main.getLogger().warning(refs.getMsg("wwcConfigCacheInvalid", null));
+		}
+		// Persistent Cache Settings
+		try {
+			if (mainConfig.getBoolean("Translator.enablePersistentCache")) {
+				main.getLogger()
+						.info(ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigPersistentCacheEnabled", null));
+				main.setPersistentCache(true);
+			} else {
+				main.setPersistentCache(false);
+			}
+		} catch (Exception e) {
+			main.setPersistentCache(false);
+			main.getLogger().warning(refs.getMsg("wwcConfigPersistentCacheInvalid", null));
 		}
 		// Error Limit Settings
 		try {
 			if (mainConfig.getInt("Translator.errorLimit") > 0) {
 				main.getLogger().info(
 						ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigErrorLimitEnabled", mainConfig.getInt("Translator.errorLimit") + "", null));
+				main.setErrorLimit(mainConfig.getInt("Translator.errorLimit"));
 			} else {
-				mainConfig.set("Translator.errorLimit", 5);
+				main.setErrorLimit(5);
 				main.getLogger().warning(refs.getMsg("wwcConfigErrorLimitInvalid", null));
 			}
 		} catch (Exception e) {
-			mainConfig.set("Translator.errorLimit", 5);
+			main.setErrorLimit(5);
 			main.getLogger().warning(refs.getMsg("wwcConfigErrorLimitInvalid", null));
 		}
 		// List of Errors to Ignore Settings
 		try {
-			ArrayList<String> errorsToIgnore = (ArrayList<String>) mainConfig.getList("Storage.errorsToIgnore");
+			main.setErrorsToIgnore((ArrayList<String>) mainConfig.getList("Storage.errorsToIgnore"));
 			main.getLogger().info(
 					ChatColor.LIGHT_PURPLE + refs.getMsg("wwcConfigErrorsToIgnoreSuccess", null));
 		} catch (Exception e) {
-			mainConfig.set("Storage.errorsToIgnore", Arrays.asList("confidence", "same as target", "detect the source language"));
+			ArrayList<String> defaultArr = new ArrayList<>(Arrays.asList(new String[] {"confidence", "same as target", "detect the source language", "Unable to find model for specified languages"}));
+			main.setErrorsToIgnore(defaultArr);
 			main.getLogger().warning(refs.getMsg("wwcConfigErrorsToIgnoreInvalid", null));
 		}
 	}
@@ -561,7 +579,7 @@ public class ConfigurationHandler {
 				}
 
 				/* Sync Cache data to corresponding table */
-				if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+				if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
 					/* Add Cache Terms */
 					tableName = "persistentCache";
 					schema = CommonRefs.tableSchemas.get(tableName);
@@ -735,7 +753,7 @@ public class ConfigurationHandler {
 
 
 				/* Sync Cache data to corresponding table */
-				if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+				if (mainConfig.getInt("Translator.translatorCacheSize") >0 && main.isPersistentCache()) {
 					tableName = "persistentCache";
 					schema = CommonRefs.tableSchemas.get(tableName);
 
@@ -887,7 +905,7 @@ public class ConfigurationHandler {
 			}
 
 			/* Write Cache to DB */
-			if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+			if (mainConfig.getInt("Translator.translatorCacheSize") >0 && main.isPersistentCache()) {
 				final List<WriteModel<Document>> cacheWrites = new ArrayList<>();
 
 				/* Add New Cache Terms */
@@ -973,7 +991,7 @@ public class ConfigurationHandler {
 
 			// TODO: Make sure cache still saves when turning it on/off live
 			// TODO: Everything besides YAML
-			if (mainConfig.getInt("Translator.translatorCacheSize") >0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+			if (mainConfig.getInt("Translator.translatorCacheSize") >0 && main.isPersistentCache()) {
 				/* Sync cache to disk */
 				//main.getLogger().warning(refs.getMsg("wwcPersistentCacheLoad", null));
 				main.getCache().asMap().entrySet().forEach((eaCache) -> {

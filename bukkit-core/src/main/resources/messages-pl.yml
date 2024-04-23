@@ -252,9 +252,6 @@ Messages:
   wwcteOffTarget: Tłumaczenie encji wyłączone dla {0}.
   wwcCharLimit: Twoja wiadomość jest za długa! Upewnij się, że Twoja wiadomość jest
     mniejsza niż {0} znaków.
-  wwcConfigConversationCharacterLimitInput: Bieżący limit znaków na wiadomość to {0}
-    znaków. Wpisz wartość większą niż 0, aby ustawić nową wartość, lub wpisz wartość
-    mniejszą lub równą 0, aby wrócić.
   wwcteOffSender: Tłumaczenie encji wyłączone.
   wwctGUIEntityButton: Przełącz translację encji
   wwctrlRateLimitBadInt: Twój limit szybkości nie jest prawidłową liczbą całkowitą.
@@ -588,4 +585,14 @@ Messages:
     włączyć tłumacza i połączyć się z konfiguracją pamięci masowej.
   wwcrStorageFail: Ponownie załadowałem WorldwideChat i pomyślnie włączyłem tłumacza,
     ale konfiguracja pamięci masowej nie powiodła się połączenia.
+  wwcConfigPersistentCacheInvalid: Nieprawidłowy wpis trwałej pamięci podręcznej w
+    config.yml. Domyślnie fałszywe...
+  wwcConfigGUIPersistentCacheButton: Przełącz trwałą pamięć podręczną
+  wwcConfigConversationPersistentCacheSuccess: Trwała pamięć podręczna została pomyślnie
+    przełączona.
+  wwcConfigPersistentCacheEnabled: Dane pamięci podręcznej będą utrzymywane podczas
+    przeładowania.
+  wwcConfigConversationCharacterLimitInput: Bieżący limit znaków na wiadomość to {0}
+    znaków. Wpisz coś większego niż 0 (ale mniej niż 256), aby ustawić nową wartość,
+    lub wpisz 0, aby powrócić.
 

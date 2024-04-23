@@ -239,9 +239,6 @@ Messages:
   wwcteOffTarget: Olemi tõlge keelatud {0}.
   wwcCharLimit: Teie sõnum on liiga pikk! Palun veenduge, et teie sõnum oleks väiksem
     kui {0} tähemärki pikkuses.
-  wwcConfigConversationCharacterLimitInput: Praegune märgisepiirang sõnumi kohta on
-    {0} tähemärki. Uue väärtuse määramiseks tippige midagi suuremat kui 0 või tippige
-    midagi, mis on väiksem või võrdne 0, et minna tagasi.
   wwcteOffSender: Olemi tõlkimine keelatud.
   wwctGUIEntityButton: Lülita olemi tõlge
   wwctrlRateLimitBadInt: Hinnapiirang ei ole kehtiv täisarv.
@@ -561,4 +558,12 @@ Messages:
     ja salvestuskonfiguratsiooniga ühendust luua ei õnnestunud.
   wwcrStorageFail: Laadisid WorldwideChati uuesti üles ja lubas tõlkija edukalt, kuid
     teie salvestuskonfiguratsiooni ei õnnestunud ühendada.
+  wwcConfigPersistentCacheInvalid: Vale püsiv vahemälu kirje programmis config.yml.
+    Vaikimisi väärtuseks vale...
+  wwcConfigGUIPersistentCacheButton: Lülitage püsiv vahemälu
+  wwcConfigConversationPersistentCacheSuccess: Püsiv vahemälu lülitati edukalt.
+  wwcConfigPersistentCacheEnabled: Vahemälu andmed püsivad uuesti laadimise ajal.
+  wwcConfigConversationCharacterLimitInput: Praegune märkide piirang sõnumi kohta
+    on {0} tähemärki. Uue väärtuse määramiseks tippige midagi, mis on suurem kui 0
+    (kuid väiksem kui 256), või tippige tagasi minemiseks 0.
 

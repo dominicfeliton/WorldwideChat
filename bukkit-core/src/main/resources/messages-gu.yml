@@ -245,9 +245,6 @@ Messages:
   wwcteOffTarget: એન્ટિટી અનુવાદ {0} માટે અક્ષમ છે.
   wwcCharLimit: તમારો સંદેશ ખૂબ લાંબો છે! કૃપા કરીને ખાતરી કરો કે તમારો સંદેશ લંબાઈ
     {0} અક્ષરો કરતા ઓછો છે.
-  wwcConfigConversationCharacterLimitInput: સંદેશ દીઠ વર્તમાન અક્ષર મર્યાદા {0} અક્ષરો
-    છે. નવું મૂલ્ય સેટ કરવા માટે 0 કરતા વધારે કંઈપણ લખો, અથવા પાછા જવા માટે 0 કરતા
-    ઓછું અથવા બરાબર કંઈપણ લખો.
   wwcteOffSender: એન્ટિટી અનુવાદ અક્ષમ.
   wwctGUIEntityButton: ટૉગલ અનુવાદ એન્ટિટી
   wwctrlRateLimitBadInt: તમારી દર મર્યાદા માન્ય પૂર્ણાંક નથી.
@@ -580,4 +577,12 @@ Messages:
     તમારા સ્ટોરેજ રૂપરેખાંકન સાથે કનેક્ટ કરવામાં નિષ્ફળ ગયો.
   wwcrStorageFail: વર્લ્ડવાઇડચેટને ફરીથી લોડ કરી અને સફળતાપૂર્વક અનુવાદકને સક્ષમ કર્યું,
     પરંતુ તમારી સ્ટોરેજ રૂપરેખાંકન કનેક્ટ કરવામાં નિષ્ફળ ગઈ.
+  wwcConfigPersistentCacheInvalid: config.yml માં અમાન્ય સતત કેશ એન્ટ્રી. ખોટાને ડિફોલ્ટ
+    કરી રહ્યું છે...
+  wwcConfigGUIPersistentCacheButton: સતત કેશ ટૉગલ કરો
+  wwcConfigConversationPersistentCacheSuccess: સતત કેશ સફળતાપૂર્વક ટૉગલ થયું.
+  wwcConfigPersistentCacheEnabled: રિલોડ્સમાં કેશ ડેટા ચાલુ રહેશે.
+  wwcConfigConversationCharacterLimitInput: સંદેશ દીઠ વર્તમાન અક્ષરની મર્યાદા {0}
+    અક્ષરો છે. નવું મૂલ્ય સેટ કરવા માટે 0 (પરંતુ 256 કરતા ઓછું) કરતાં વધુ કંઈપણ ટાઇપ
+    કરો, અથવા પાછા જવા માટે 0 ટાઇપ કરો.
 

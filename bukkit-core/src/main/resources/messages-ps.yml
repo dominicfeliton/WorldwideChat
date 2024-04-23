@@ -245,9 +245,6 @@ Messages:
   wwcteOffTarget: .د بنسټ ژباړه ناتوانول شو {0} لپاره
   wwcCharLimit: ستاسو پیغام ډیر اوږد دی! مهرباني وکړئ ډاډ ترلاسه کړئ چې ستاسو پیغام
     په اوږدوالي کې له {0} څخه کم دی.
-  wwcConfigConversationCharacterLimitInput: .په پیغام کې د اوسني کرکټر حد {0} حروفونه
-    دي د نوي ارزښت ټاکلو لپاره د 0 څخه ډیر څه ولیکئ، یا د 0 څخه کم یا مساوي څه ولیکئ
-    چې بیرته لاړ شئ.
   wwcteOffSender: د بنسټ ژباړه معلول.
   wwctGUIEntityButton: د بنسټ ژباړه توګول
   wwctrlRateLimitBadInt: ستاسو د نرخ حد یو باوري عدد نه دی.
@@ -581,4 +578,12 @@ Messages:
     فعالول او ستاسو د ذخیرې ترتیب سره
   wwcrStorageFail: ورلډ ویډیکټ بیا لوډ شوی او په بریالیتوب سره یو مترجمان فعال کړی،
     مګر ستاسو د ذخیرې تنظیم
+  wwcConfigPersistentCacheInvalid: په config.yml کې د بې اعتبار دوامداره کیش ننوتنه.
+    غلط ته غلط کول...
+  wwcConfigGUIPersistentCacheButton: دوامداره کیش بدل کړئ
+  wwcConfigConversationPersistentCacheSuccess: دوامداره کیش په بریالیتوب سره بدل شو
+  wwcConfigPersistentCacheEnabled: د کیش ډاټا به په بیا لوډونو کې دوام و
+  wwcConfigConversationCharacterLimitInput: په هر پیغام کې د اوسنۍ کرکټر حد {0} حروف
+    دی. د 0 څخه لوی څه ډول وټاکئ (مګر د 256 څخه کم) د نوي ارزښت تنظیم کولو لپاره،
+    یا بیرته لاړ شي 0 ډول.
 

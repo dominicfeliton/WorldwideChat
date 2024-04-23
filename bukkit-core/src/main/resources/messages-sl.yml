@@ -254,9 +254,6 @@ Messages:
   wwcteOffTarget: Prevod entitete onemogočen za {0}.
   wwcCharLimit: Vaše sporočilo je predolgo! Prosimo, poskrbite, da je vaše sporočilo
     manjše od {0} znakov v dolžino.
-  wwcConfigConversationCharacterLimitInput: Trenutna omejitev znakov na sporočilo
-    je {0} znakov. Vnesite karkoli večje od 0, če želite nastaviti novo vrednost,
-    ali pa vnesite karkoli, ki je manjša ali enaka 0, da se vrnete nazaj.
   wwcteOffSender: Prevod entitete onemogočen.
   wwctGUIEntityButton: Preklop prevodov entitete
   wwctrlRateLimitBadInt: Vaša omejitev stopnje ni veljavno celo število.
@@ -589,4 +586,14 @@ Messages:
     prevajalca in se povezati s konfiguracijo pomnilnika.
   wwcrStorageFail: Ponovno naložil WorldwideChat in uspešno omogočil prevajalca, vendar
     konfiguracija pomnilnika ni uspela povezati.
+  wwcConfigPersistentCacheInvalid: Neveljaven vztrajni vnos predpomnilnika v config.yml.
+    Privzeta vrednost false...
+  wwcConfigGUIPersistentCacheButton: Preklopi trajni predpomnilnik
+  wwcConfigConversationPersistentCacheSuccess: Trajni predpomnilnik se je uspešno
+    preklopil.
+  wwcConfigPersistentCacheEnabled: Podatki predpomnilnika bodo ohranjeni med ponovnimi
+    nalaganji.
+  wwcConfigConversationCharacterLimitInput: Trenutna omejitev znakov na sporočilo
+    je {0} znaki. Vnesite vse, kar je večje od 0 (vendar manj kot 256), če želite
+    nastaviti novo vrednost, ali vnesite 0, da se vrnete nazaj.
 

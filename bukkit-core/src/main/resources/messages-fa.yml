@@ -247,9 +247,6 @@ Messages:
   wwcteOffTarget: ترجمه موجودیت برای {0} غیرفعال شد.
   wwcCharLimit: پیام شما بیش از حد طولانی است! لطفا اطمینان حاصل کنید که پیام شما
     کمتر از {0} کاراکترها باشد.
-  wwcConfigConversationCharacterLimitInput: محدودیت کاراکتر فعلی در هر پیام، {0} نویسه
-    است. برای تنظیم مقدار جدید، هر چیزی بزرگتر از ۰ تایپ کنید، یا هر چیزی کمتر یا
-    مساوی ۰ را تایپ کنید تا به عقب برگردید.
   wwcteOffSender: ترجمه موجودیت غیرفعال شد.
   wwctGUIEntityButton: ضامن ترجمه موجودیت
   wwctrlRateLimitBadInt: محدودیت نرخ شما یک عدد صحیح معتبر نیست.
@@ -582,4 +579,13 @@ Messages:
     را فعال کند و با پیکربندی ذخیره سازی شما ارتباط برقرار کند.
   wwcrStorageFail: WorldwideChat را دوباره بارگیری کرد و مترجم را با موفقیت فعال کرد،
     اما پیکربندی ذخیره سازی شما نتوانست متصل شود.
+  wwcConfigPersistentCacheInvalid: ورودی حافظه پنهان ماندگار نامعتبر در config.yml.
+    پیش فرض به اشتباه...
+  wwcConfigGUIPersistentCacheButton: تغییر حافظه پنهان ماندگار
+  wwcConfigConversationPersistentCacheSuccess: حافظه پنهان ماندگار با موفقیت تغییر
+    کرد.
+  wwcConfigPersistentCacheEnabled: داده های حافظه پنهان در بارگذاری مجدد باقی می مانند.
+  wwcConfigConversationCharacterLimitInput: محدودیت کاراکتر فعلی در هر پیام {0} کاراکتر
+    است. هر چیزی بزرگتر از 0 (اما کمتر از 256) را تایپ کنید تا مقدار جدید تنظیم شود،
+    یا 0 را برای بازگشت تایپ کنید.
 

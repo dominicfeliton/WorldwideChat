@@ -249,9 +249,6 @@ Messages:
   wwcteOffTarget: Terjemahan entiti dilumpuhkan untuk {0}.
   wwcCharLimit: Mesej anda terlalu panjang! Sila pastikan panjang mesej anda kurang
     daripada {0} aksara.
-  wwcConfigConversationCharacterLimitInput: Had aksara semasa bagi setiap mesej adalah
-    {0} aksara. Taip apa-apa yang lebih besar daripada 0 untuk menetapkan nilai baru,
-    atau taip apa-apa yang kurang daripada atau sama dengan 0 untuk kembali.
   wwcteOffSender: Terjemahan entiti dilumpuhkan.
   wwctGUIEntityButton: Togol Terjemahan Entiti
   wwctrlRateLimitBadInt: Had kadar anda bukan integer yang sah.
@@ -581,4 +578,12 @@ Messages:
     dan menyambung dengan konfigurasi storan anda.
   wwcrStorageFail: Memuat semula WorldwideChat dan berjaya mendayakan penterjemah,
     tetapi konfigurasi storan anda gagal disambungkan.
+  wwcConfigPersistentCacheInvalid: Entri cache berterusan tidak sah dalam config.yml.
+    Lagi menjadi palsu...
+  wwcConfigGUIPersistentCacheButton: Tukar Cache Berterusan
+  wwcConfigConversationPersistentCacheSuccess: Cache berterusan berjaya ditukar.
+  wwcConfigPersistentCacheEnabled: Data cache akan berterusan di seluruh muatan semula.
+  wwcConfigConversationCharacterLimitInput: Had aksara semasa setiap mesej ialah aksara
+    {0}. Taipkan apa-apa yang lebih besar daripada 0 (tetapi kurang daripada 256)
+    untuk menetapkan nilai baru, atau ketik 0 untuk kembali.
 

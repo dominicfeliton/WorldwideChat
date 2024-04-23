@@ -259,9 +259,6 @@ Messages:
   wwcteOffTarget: Traducció d'entitats desactivada per {0}.
   wwcCharLimit: El teu missatge és massa llarg! Si us plau, assegureu-vos que el missatge
     té menys de {0} caràcters de longitud.
-  wwcConfigConversationCharacterLimitInput: El límit de caràcters actual per missatge
-    és {0} caràcters. Escriviu qualsevol cosa més gran que 0 per establir un valor
-    nou, o escriviu res menys que o igual a 0 per tornar enrere.
   wwcteOffSender: Entitat de traducció desactivada.
   wwctGUIEntityButton: Commuta la traducció de l'entitat
   wwctrlRateLimitBadInt: El seu límit de tarifa no és un nombre enter vàlid.
@@ -628,4 +625,14 @@ Messages:
     un traductor i connectar-se amb la configuració d'emmagatzematge.
   wwcrStorageFail: Es va tornar a carregar WorldwideChat i va activar amb èxit un
     traductor, però la configuració d'emmagatzematge no va fallar a connectar-se.
+  wwcConfigPersistentCacheInvalid: Entrada de memòria cau persistent no vàlida a config.yml.
+    Per defecte de fals...
+  wwcConfigGUIPersistentCacheButton: Canvia la memòria cau persistent
+  wwcConfigConversationPersistentCacheSuccess: La memòria cau persistent es va canviar
+    amb èxit.
+  wwcConfigPersistentCacheEnabled: Les dades de la memòria cau persistiran en totes
+    les recàrregues.
+  wwcConfigConversationCharacterLimitInput: El límit actual de caràcters per missatge
+    és de caràcters {0}. Escriviu qualsevol cosa superior a 0 (però inferior a 256)
+    per establir un valor nou, o escriviu 0 per tornar enrere.
 

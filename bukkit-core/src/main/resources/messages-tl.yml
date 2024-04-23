@@ -270,10 +270,6 @@ Messages:
   wwcteOffTarget: Hindi pinagana ang pagsasalin ng entity para sa {0}.
   wwcCharLimit: Masyadong mahaba ang iyong mensahe! Mangyaring siguraduhin na ang
     iyong mensahe ay mas mababa sa {0} character sa haba.
-  wwcConfigConversationCharacterLimitInput: Ang kasalukuyang limitasyon ng character
-    sa bawat mensahe ay {0} character. I-type ang anumang mas malaki kaysa sa 0 upang
-    magtakda ng bagong halaga, o i-type ang anumang mas mababa sa o katumbas ng 0
-    upang bumalik.
   wwcteOffSender: Hindi pinagana ang pagsasalin ng entity.
   wwctGUIEntityButton: I-toggle ang Entity Translation
   wwctrlRateLimitBadInt: Ang iyong limitasyon sa rate ay hindi wastong integer.
@@ -655,4 +651,14 @@ Messages:
     ang isang tagasalin at kumonekta sa iyong pagsasaayos ng imbakan.
   wwcrStorageFail: Na-load muli ang WorldwideChat at matagumpay na pinagana ang isang
     tagasalin, ngunit nabigo na kumonekta ang iyong pagsasaayos ng storage.
+  wwcConfigPersistentCacheInvalid: Hindi wastong patuloy na entry sa cache sa config.yml.
+    Ang default sa maling...
+  wwcConfigGUIPersistentCacheButton: I-switch ang Patuloy na Cache
+  wwcConfigConversationPersistentCacheSuccess: Matagumpay na naka-switch ang patuloy
+    na cache.
+  wwcConfigPersistentCacheEnabled: Magpapatuloy ang data ng cache sa buong mga reload.
+  wwcConfigConversationCharacterLimitInput: Ang kasalukuyang limitasyon ng character
+    bawat mensahe ay {0} character. I-type ang anumang bagay na mas malaki kaysa sa
+    0 (ngunit mas mababa sa 256) upang magtakda ng bagong halaga, o i-type ang 0 upang
+    bumalik.
 

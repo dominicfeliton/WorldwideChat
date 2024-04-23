@@ -223,9 +223,6 @@ Messages:
   wwcConfigMessageCharLimitEnabled: מגבלת תווים לכל הודעה שהוגדרה לתווי {0}.
   wwcteOffTarget: תרגום היישות מושבת עבור {0}.
   wwcCharLimit: המסר שלך ארוך מדי! אנא ודא שההודעה שלך היא פחות מ- {0} תווים באורך.
-  wwcConfigConversationCharacterLimitInput: מגבלת התווים הנוכחית לכל הודעה היא תווי
-    {0}. הקלד כל דבר גדול מ- 0 כדי להגדיר ערך חדש, או הקלד כל דבר קטן מ- 0 או שווה
-    ל- 0 כדי לחזור אחורה.
   wwcteOffSender: תרגום הישות מושבת.
   wwctGUIEntityButton: החלפת תרגום ישות
   wwctrlRateLimitBadInt: מגבלת התעריף אינה מספר שלם חוקי.
@@ -527,4 +524,12 @@ Messages:
     לתצורת האחסון שלך.
   wwcrStorageFail: טען מחדש את WorldwideChat והפעיל בהצלחה מתרגם, אך תצורת האחסון
     שלך לא הצליחה להתחבר.
+  wwcConfigPersistentCacheInvalid: ערך מטמון מתמשך לא חוקי ב- config.yml. ברירת מחדל
+    לשקר...
+  wwcConfigGUIPersistentCacheButton: החלף מטמון מתמשך
+  wwcConfigConversationPersistentCacheSuccess: מטמון מתמשך הוחלף בהצלחה.
+  wwcConfigPersistentCacheEnabled: נתוני המטמון יימשכו לאורך טעינות מחדש.
+  wwcConfigConversationCharacterLimitInput: מגבלת התווים הנוכחית להודעה היא תווים
+    {0}. הקלד כל דבר גדול מ- 0 (אך פחות מ- 256) כדי להגדיר ערך חדש, או הקלד 0 כדי
+    לחזור אחורה.
 

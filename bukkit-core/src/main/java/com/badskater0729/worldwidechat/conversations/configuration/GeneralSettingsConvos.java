@@ -97,7 +97,7 @@ public class GeneralSettingsConvos {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			Player currPlayer = ((Player) context.getForWhom());
 			currPlayer.closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSyncUserDataDelayInput", "" + main.getConfigManager().getMainConfig().getInt("General.syncUserDataDelay"), currPlayer);
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationSyncUserDataDelayInput", "" + main.getSyncUserDataDelay(), currPlayer);
 		}
 
 		@Override
@@ -114,7 +114,7 @@ public class GeneralSettingsConvos {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			Player currPlayer = ((Player) context.getForWhom());
 			currPlayer.closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationUpdateCheckerInput", main.getConfigManager().getMainConfig().getInt("General.updateCheckerDelay") + "", currPlayer);
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationUpdateCheckerInput", main.getUpdateCheckerDelay() + "", currPlayer);
 		}
 
 		@Override

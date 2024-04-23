@@ -488,9 +488,6 @@ Messages:
   wwcConfigMessageCharLimitEnabled: Limite de caractères par message fixée à {0} caractères.
   wwcConfigGUIMessagesAlreadyOverriden: Vous avez déjà une dérogation pour ce message!
   wwctGUIItemButton: Basculer la traduction des éléments
-  wwcConfigConversationCharacterLimitInput: La limite actuelle de caractères par message
-    est de {0} caractères. Tapez une valeur supérieure à 0 pour définir une nouvelle
-    valeur, ou une valeur inférieure ou égale à 0 pour revenir en arrière.
   wwcConfigGUIChatMessagesOverrideChangeButton: Modifier le texte existant
   wwcConfigConversationAmazonTranslateSecretKeyInput: La clé secrète actuelle est
     {0}. Entrez une clé secrète pour Amazon ou saisissez 0 pour revenir en arrière.
@@ -638,3 +635,13 @@ Messages:
     un traducteur et de vous connecter à votre configuration de stockage.
   wwcrStorageFail: WorldwideChat a été rechargé et activé avec succès un traducteur,
     mais votre configuration de stockage n'a pas pu se connecter.
+  wwcConfigPersistentCacheInvalid: Entrée de cache persistante non valide dans config.yml.
+    La valeur par défaut est false...
+  wwcConfigGUIPersistentCacheButton: Activer/désactiver le cache persistant
+  wwcConfigConversationPersistentCacheSuccess: Le cache persistant a été activé avec
+    succès.
+  wwcConfigPersistentCacheEnabled: Les données du cache seront conservées lors des
+    rechargements.
+  wwcConfigConversationCharacterLimitInput: La limite actuelle de caractères par message
+    est de {0} caractères. Tapez une valeur supérieure à 0 (mais inférieure à 256)
+    pour définir une nouvelle valeur, ou tapez 0 pour revenir en arrière.

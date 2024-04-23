@@ -199,8 +199,6 @@ Messages:
   wwcConfigMessageCharLimitEnabled: メッセージあたりの文字数の制限は {0} 文字に設定されています。
   wwcteOffTarget: '{0} のエンティティ変換は無効です。'
   wwcCharLimit: あなたのメッセージは長すぎます！メッセージの長さが {0} 文字未満であることを確認してください。
-  wwcConfigConversationCharacterLimitInput: 現在のメッセージあたりの文字数の制限は {0} 文字です。0 より大きい値を入力して新しい値を設定するか、0
-    以下の値を入力して戻ります。
   wwcteOffSender: エンティティ変換が無効になっています。
   wwctGUIEntityButton: エンティティ変換の切り替え
   wwctrlRateLimitBadInt: レートリミットは有効な整数ではありません。
@@ -459,4 +457,10 @@ Messages:
   wwctGUISourceOrTargetTranslationAlreadyGlobal: この言語はすでに世界中で使われています！
   wwcrStorageTranslatorFail: WorldwideChatをリロードしましたが、トランスレータを有効にできず、ストレージ構成に接続できませんでした。
   wwcrStorageFail: WorldwideChatをリロードしてトランスレータを正常に有効にしましたが、ストレージ構成が接続できませんでした。
+  wwcConfigPersistentCacheInvalid: config.yml の永続キャッシュエントリが無効です。デフォルトは false...
+  wwcConfigGUIPersistentCacheButton: 永続キャッシュの切り替え
+  wwcConfigConversationPersistentCacheSuccess: 永続キャッシュが正常に切り替わりました。
+  wwcConfigPersistentCacheEnabled: キャッシュデータはリロード後も保持されます。
+  wwcConfigConversationCharacterLimitInput: 現在のメッセージあたりの文字数制限は {0} 文字です。0 より大きい (256
+    未満) を入力して新しい値を設定するか、0 を入力して戻ります。
 

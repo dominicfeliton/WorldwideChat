@@ -216,9 +216,6 @@ Messages:
   wwcConfigMessageCharLimitEnabled: የቁምፊ ገደብ በአንድ መልዕክት ተዘጋጅቷል ወደ {0} ቁምፊዎች
   wwcteOffTarget: የአካል ትርጉም ተሰናክሏል ለ {0}።
   wwcCharLimit: መልዕክትዎ በጣም ረጅም ነው! እባክዎ መልዕክትዎ ርዝመት {0} ቁምፊዎች ያነሰ መሆኑን ያረጋግጡ።
-  wwcConfigConversationCharacterLimitInput: አሁን ያለው የቁምፊ ገደብ በአንድ መልዕክት {0} ቁምፊዎች
-    ነው። አዲስ እሴት ለማዘጋጀት ከ 0 በላይ የሆነ ነገር ይተይቡ, ወይም ወደ ኋላ ለመመለስ ከ 0 ያነሰ ወይም እኩል የሆነ ነገር
-    ይተይቡ።
   wwcteOffSender: የአካል ትርጉም ተሰናክሏል።
   wwctGUIEntityButton: የመቀያየሪያ አካል ትርጉም
   wwctrlRateLimitBadInt: የእርስዎ ተመን ገደብ ትክክለኛ ኢንቲጀር አይደለም።
@@ -515,4 +512,11 @@ Messages:
     ውቅረትዎ ጋር መገናኘት አልተ
   wwcrStorageFail: WorldwideChat ን እንደገና ተጫነ እና ተርጓሚውን በተሳካ ሁኔታ ያነቃል፣ ነገር ግን የማከማቻ
     ውቅረትዎ መገናኘት አል
+  wwcConfigPersistentCacheInvalid: በ config.yml ውስጥ ልክ ያልሆነ የማያቋርጥ መሸጫ ማስገባት። ወደ ሀሰት
+    መቀበል...
+  wwcConfigGUIPersistentCacheButton: ቋሚ መሸጎጫን ይቀይሩ
+  wwcConfigConversationPersistentCacheSuccess: ቋሚ መሸጫ በተሳካ ሁኔታ ተቀየረ።
+  wwcConfigPersistentCacheEnabled: የመሸጫ ውሂብ በዳግም ጭነቶች ላይ ይቆያል።
+  wwcConfigConversationCharacterLimitInput: በአሁኑ መልእክት የአሁኑ ቁምፊዎች ገደብ {0} ቁምፊዎች ናቸው
+    አዲስ እሴት ለማዘጋጀት ከ 0 (ግን ከ 256 በታች) የበለጠ ማንኛውንም ነገር ይተይቡ ወይም ወደ ኋላ ለመመለስ 0 ይይቡ።
 

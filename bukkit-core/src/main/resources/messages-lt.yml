@@ -249,9 +249,6 @@ Messages:
   wwcteOffTarget: Subjekto vertimas išjungtas {0}.
   wwcCharLimit: Jūsų žinutė yra per ilga! Įsitikinkite, kad jūsų žinutė yra mažesnė
     nei {0} simbolių ilgio.
-  wwcConfigConversationCharacterLimitInput: Dabartinis simbolių limitas vienam pranešimui
-    yra {0} simboliai. Įveskite viską, kas yra didesnė nei 0, kad nustatytumėte naują
-    vertę, arba įveskite viską, kas yra mažesnė arba lygi 0, kad grįžtumėte atgal.
   wwcteOffSender: Subjekto vertimas išjungtas.
   wwctGUIEntityButton: Perjungti subjekto vertimą
   wwctrlRateLimitBadInt: Jūsų normos limitas nėra tinkamas sveikasis skaičius.
@@ -590,4 +587,12 @@ Messages:
     vertėjo ir prisijungti prie jūsų saugyklos konfigūracijos.
   wwcrStorageFail: Iš naujo įkrovė WorldwideChat ir sėkmingai įjungė vertėją, tačiau
     jūsų saugyklos konfigūracijos nepavyko prisijungti.
+  wwcConfigPersistentCacheInvalid: Neteisingas nuolatinis talpyklos įrašas config.yml.
+    Numatytasis nustatymas klaidingas...
+  wwcConfigGUIPersistentCacheButton: Perjungti nuolatinę talpyklą
+  wwcConfigConversationPersistentCacheSuccess: Nuolatinė talpykla sėkmingai perjungta.
+  wwcConfigPersistentCacheEnabled: Talpyklos duomenys išliks perkrovimuose.
+  wwcConfigConversationCharacterLimitInput: Dabartinis simbolių limitas vienam pranešimui
+    yra {0} simboliai. Įveskite bet ką didesnį nei 0 (bet mažiau nei 256), kad nustatytumėte
+    naują reikšmę, arba įveskite 0, kad grįžtumėte atgal.
 

@@ -261,9 +261,6 @@ Messages:
   wwcteOffTarget: Traducerea entității dezactivată pentru {0}.
   wwcCharLimit: Mesajul tău e prea lung! Vă rugăm să vă asigurați că mesajul dvs.
     este mai mic de {0} caracterele.
-  wwcConfigConversationCharacterLimitInput: Limita curentă de caractere pentru fiecare
-    mesaj este {0} caractere. Tastați ceva mai mare decât 0 pentru a seta o valoare
-    nouă sau tastați ceva mai mic sau egal cu 0 pentru a reveni.
   wwcteOffSender: Entitate traducere dezactivată.
   wwctGUIEntityButton: Comută traducerea entității
   wwctrlRateLimitBadInt: Limita dvs. de rată nu este un număr întreg valid.
@@ -613,4 +610,13 @@ Messages:
     un traducător și să vă conectați la configurația dvs. de stocare.
   wwcrStorageFail: A reîncărcat WorldwideChat și a activat cu succes un traducător,
     dar configurația dvs. de stocare nu a reușit să se conecteze.
+  wwcConfigPersistentCacheInvalid: Intrare cache persistentă nevalidă în config.yml.
+    Implicit la fals...
+  wwcConfigGUIPersistentCacheButton: Comutați memoria cache persistentă
+  wwcConfigConversationPersistentCacheSuccess: Cache-ul persistent a fost comutat
+    cu succes.
+  wwcConfigPersistentCacheEnabled: Datele cache vor persista în timpul reîncărcărilor.
+  wwcConfigConversationCharacterLimitInput: Limita curentă de caractere per mesaj
+    este de caractere {0}. Tastați ceva mai mare de 0 (dar mai mic de 256) pentru
+    a seta o valoare nouă sau tastați 0 pentru a reveni.
 

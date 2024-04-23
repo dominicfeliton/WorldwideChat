@@ -255,9 +255,6 @@ Messages:
   wwcteOffTarget: Dịch thực thể bị tắt cho {0}.
   wwcCharLimit: Tin nhắn của bạn quá dài! Hãy chắc chắn rằng tin nhắn của bạn có độ
     dài nhỏ hơn {0} ký tự.
-  wwcConfigConversationCharacterLimitInput: Giới hạn ký tự hiện tại cho mỗi thư là
-    {0} ký tự. Nhập bất cứ điều gì lớn hơn 0 để đặt một giá trị mới, hoặc nhập bất
-    cứ điều gì nhỏ hơn hoặc bằng 0 để quay lại.
   wwcteOffSender: Tắt dịch thực thể.
   wwctGUIEntityButton: Chuyển đổi Dịch thực thể
   wwctrlRateLimitBadInt: Giới hạn tỷ lệ của bạn không phải là số nguyên hợp lệ.
@@ -590,4 +587,14 @@ Messages:
     nối với cấu hình lưu trữ của bạn.
   wwcrStorageFail: Tải lại WorldwideChat và kích hoạt thành công trình dịch, nhưng
     cấu hình bộ nhớ của bạn không kết nối được.
+  wwcConfigPersistentCacheInvalid: Mục nhập bộ nhớ cache liên tục không hợp lệ trong
+    config.yml. Mặc định là false...
+  wwcConfigGUIPersistentCacheButton: Chuyển đổi bộ nhớ cache liên tục
+  wwcConfigConversationPersistentCacheSuccess: Bộ nhớ cache liên tục được chuyển đổi
+    thành công.
+  wwcConfigPersistentCacheEnabled: Dữ liệu bộ nhớ cache sẽ tồn tại trong quá trình
+    tải lại.
+  wwcConfigConversationCharacterLimitInput: Giới hạn ký tự hiện tại cho mỗi tin nhắn
+    là {0} ký tự. Nhập bất cứ thứ gì lớn hơn 0 (nhưng nhỏ hơn 256) để đặt giá trị
+    mới hoặc nhập 0 để quay trở lại.
 

@@ -251,9 +251,6 @@ Messages:
   wwcteOffTarget: '{0} uchun oʻchirilgan shaxs tarjimasi.'
   wwcCharLimit: Sizning xabaringiz juda uzun! Iltimos, xabaringiz uzunligi {0} belgilaridan
     kamroq ekanligiga ishonch hosil qiling.
-  wwcConfigConversationCharacterLimitInput: Har bir xabar uchun joriy belgilar chegarasi
-    {0} belgilaridir. Yangi qiymatni belgilash uchun 0 dan katta narsani yozing yoki
-    orqaga qaytish uchun 0 dan kam yoki teng narsani yozing.
   wwcteOffSender: O'chirilgan shaxs tarjimasi.
   wwctGUIEntityButton: Toggle shaxs tarjimasi
   wwctrlRateLimitBadInt: Sizning stavkangiz cheklovi haqiqiy emas.
@@ -609,4 +606,12 @@ Messages:
     va saqlash konfiguratsiyangiz bilan ulanish muvaffaqiyatsiz tugadi.
   wwcrStorageFail: WorldwideChat-ni qayta yukladi va tarjimonni muvaffaqiyatli yoqdi,
     ammo saqlash konfiguratsiyangiz ulanishi muvaffaqiyatsiz tugadi.
+  wwcConfigPersistentCacheInvalid: Config.yml da doimiy kesh yozuvi yaroqsiz. False
+    deb belgilash...
+  wwcConfigGUIPersistentCacheButton: Doimiy keshni o'tish
+  wwcConfigConversationPersistentCacheSuccess: Doimiy kesh muvaffaqiyatli almashtirildi.
+  wwcConfigPersistentCacheEnabled: Kesh ma'lumotlari qayta yuklashda davom etadi.
+  wwcConfigConversationCharacterLimitInput: Har bir xabar uchun joriy belgilar chegarasi
+    {0} belgidir. Yangi qiymatni belgilash uchun 0 dan katta (lekin 256 dan kam) har
+    qanday narsani yozing yoki orqaga qaytish uchun 0 yozing.
 

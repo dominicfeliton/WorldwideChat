@@ -253,9 +253,6 @@ Messages:
   wwcteOffTarget: Entity þýðing óvirk fyrir {0}.
   wwcCharLimit: Skilaboðin þín eru of löng! Gakktu úr skugga um að skilaboðin þín
     séu minna en {0} stafir að lengd.
-  wwcConfigConversationCharacterLimitInput: Núverandi stafatakmörk á skeyti er {0}
-    stafir. Sláðu eitthvað sem er stærra en 0 til að setja nýtt gildi, eða sláðu inn
-    neitt minna en eða jafnt og 0 til að fara aftur.
   wwcteOffSender: Entity þýðingar óvirk.
   wwctGUIEntityButton: Skipta Entity Þýðing
   wwctrlRateLimitBadInt: Hlutfall þitt er ekki gild heiltala.
@@ -591,4 +588,13 @@ Messages:
     og tengja við geymslustillinguna þína.
   wwcrStorageFail: Endurhlaðið WorldwideChat og virkt þýðanda með góðum árangri, en
     geymslustillingin þín tókst ekki að tengja.
+  wwcConfigPersistentCacheInvalid: Ógild viðvarandi skyndiminni færsla í config.yml.
+    Sjálfgefið að ósatt...
+  wwcConfigGUIPersistentCacheButton: Skiptu um viðvarandi skyndiminni
+  wwcConfigConversationPersistentCacheSuccess: Viðvarandi skyndiminni var skipt með
+    góðum árangri.
+  wwcConfigPersistentCacheEnabled: Skyndiminni gögn verða viðvarandi yfir endurhleðslur.
+  wwcConfigConversationCharacterLimitInput: Núverandi stafamörk fyrir hvert skeyti
+    er {0} stafir. Sláðu inn eitthvað sem er stærra en 0 (en minna en 256) til að
+    stilla nýtt gildi, eða sláðu inn 0 til að fara aftur.
 

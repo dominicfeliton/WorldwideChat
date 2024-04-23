@@ -47,7 +47,7 @@ import static com.badskater0729.worldwidechat.util.CommonRefs.pluginLangConfigs;
 
 public class WorldwideChat extends JavaPlugin {
 	public static final int bStatsID = 10562;
-	public static final String messagesConfigVersion = "04202024-1"; // MMDDYYYY-revisionNumber
+	public static final String messagesConfigVersion = "04212024-3"; // MMDDYYYY-revisionNumber
 
 	public static int translatorFatalAbortSeconds = 10;
 	public static int translatorConnectionTimeoutSeconds = translatorFatalAbortSeconds - 2;
@@ -89,10 +89,25 @@ public class WorldwideChat extends JavaPlugin {
 
 	private volatile String translatorName = "Starting";
 
+	/* Config values */
 	private TextComponent pluginPrefix = Component.text().content("[").color(NamedTextColor.DARK_RED)
 			.append(Component.text().content("WWC").color(NamedTextColor.BLUE).decoration(TextDecoration.BOLD, true))
 			.append(Component.text().content("]").color(NamedTextColor.DARK_RED))
 			.build();
+
+	private int updateCheckerDelay = 86400;
+
+	private int syncUserDataDelay = 7200;
+
+	private int globalRateLimit = 0;
+
+	private int messageCharLimit = 255;
+
+	private boolean persistentCache = false;
+
+	private int errorLimit = 5;
+
+	private ArrayList<String> errorsToIgnore = new ArrayList<>(Arrays.asList("confidence", "same as target", "detect the source language", "Unable to find model for specified languages"));
 	
 	/* Default constructor */
 	public WorldwideChat() {
@@ -526,7 +541,7 @@ public class WorldwideChat extends JavaPlugin {
 				new SyncUserData().run();
 			}
 		};
-		refs.runAsyncRepeating(true, configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20,  configurationManager.getMainConfig().getInt("General.syncUserDataDelay") * 20, sync);
+		refs.runAsyncRepeating(true, syncUserDataDelay * 20,  syncUserDataDelay * 20, sync);
 
 		// Enable tab completers
 		if (isReloading) {
@@ -548,7 +563,7 @@ public class WorldwideChat extends JavaPlugin {
 				new UpdateChecker().run();
 			}
 		};
-		refs.runAsyncRepeating(true, 0, configurationManager.getMainConfig().getInt("General.updateCheckerDelay") * 20, update);
+		refs.runAsyncRepeating(true, 0, updateCheckerDelay * 20, update);
 
 		// Finish by setting translator name, which permits plugin usage ("Starting" does not)
 		translatorName = tempTransName;
@@ -852,6 +867,34 @@ public class WorldwideChat extends JavaPlugin {
 	public void setTranslatorErrorCount(int i) {
 		translatorErrorCount = i;
 	}
+
+	public void setUpdateCheckerDelay(int i) {
+		updateCheckerDelay = i;
+	}
+
+	public void setSyncUserDataDelay(int i) {
+		syncUserDataDelay = i;
+	}
+
+	public void setGlobalRateLimit(int i) {
+		globalRateLimit = i;
+	}
+
+	public void setMessageCharLimit(int i) {
+		messageCharLimit = i;
+	}
+
+	public void setPersistentCache(boolean i) {
+		persistentCache = i;
+	}
+
+	public void setErrorLimit(int i) {
+		errorLimit = i;
+	}
+
+	public void setErrorsToIgnore(ArrayList<String> in) {
+		errorsToIgnore = in;
+	}
 	
 	/* Getters */
 	public ServerAdapterFactory getServerFactory() { return serverFactory; }
@@ -997,4 +1040,32 @@ public class WorldwideChat extends JavaPlugin {
 	}
 
 	public String getPluginVersion() { return this.getDescription().getVersion(); }
+
+	public int getUpdateCheckerDelay() {
+		return updateCheckerDelay;
+	}
+
+	public int getSyncUserDataDelay() {
+		return syncUserDataDelay;
+	}
+
+	public int getGlobalRateLimit() {
+		return globalRateLimit;
+	}
+
+	public int getMessageCharLimit() {
+		return messageCharLimit;
+	}
+
+	public boolean isPersistentCache() {
+		return persistentCache;
+	}
+
+	public int getErrorLimit() {
+		return errorLimit;
+	}
+
+	public ArrayList<String> getErrorsToIgnore() {
+		return errorsToIgnore;
+	}
 }

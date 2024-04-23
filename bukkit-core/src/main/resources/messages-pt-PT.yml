@@ -180,9 +180,6 @@ Messages:
   wwctGUIItemButton: Alternar Tradução de Item
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: O chat global está a ser
     traduzido, mas você tem uma sessão ativa de tradução de {0} para {1}.
-  wwcConfigConversationCharacterLimitInput: O limite de caracteres actual por mensagem
-    é {0} caracteres. Digite qualquer coisa superior a 0 para definir um novo valor,
-    ou escreva qualquer coisa inferior ou igual a 0 para voltar atrás.
   wwctrlRateLimitBadInt: O limite de tarifa não é um número inteiro válido.
   wwcConfigGUIChatMessagesOverrideChangeButton: Alterar Texto existente
   wwcConfigConversationAmazonTranslateSecretKeyInput: A chave secreta atual é {0}.
@@ -611,4 +608,13 @@ Messages:
     um tradutor e estabelecer ligação com a sua configuração de armazenamento.
   wwcrStorageFail: Recarregou o WorldwideChat e activou com êxito um tradutor, mas
     a sua configuração de armazenamento não conseguiu ligar.
+  wwcConfigPersistentCacheInvalid: Entrada de cache persistente inválida em config.yml.
+    A predefinição é false...
+  wwcConfigGUIPersistentCacheButton: Alternar Cache Persistente
+  wwcConfigConversationPersistentCacheSuccess: A cache persistente foi alternada com
+    êxito.
+  wwcConfigPersistentCacheEnabled: Os dados de cache persistirão nas recargas.
+  wwcConfigConversationCharacterLimitInput: O limite de caracteres actual por mensagem
+    é {0} caracteres. Digite qualquer coisa maior que 0 (mas inferior a 256) para
+    definir um novo valor ou digite 0 para voltar atrás.
 

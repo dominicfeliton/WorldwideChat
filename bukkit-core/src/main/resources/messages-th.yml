@@ -220,9 +220,6 @@ Messages:
   wwcteOffTarget: การแปลเอนทิตีปิดใช้งานสำหรับ {0}
   wwcCharLimit: ข้อความของคุณยาวเกินไป!โปรดตรวจสอบให้แน่ใจว่าข้อความของคุณมีความยาวน้อยกว่า
     {0}
-  wwcConfigConversationCharacterLimitInput: ขีด จำกัด ตัวอักษรปัจจุบันต่อข้อความเป็นตัวละคร
-    {0}พิมพ์อะไรที่มากกว่า 0 เพื่อตั้งค่าใหม่หรือพิมพ์อะไรที่น้อยกว่าหรือเท่ากับ 0
-    เพื่อย้อนกลับ
   wwcteOffSender: การแปลนิติบุคคลถูกปิดใช้งาน
   wwctGUIEntityButton: สลับการแปลเอนทิตี
   wwctrlRateLimitBadInt: ขีด จำกัด อัตราของคุณไม่ได้เป็นจำนวนเต็มที่ถูกต้อง.
@@ -513,4 +510,10 @@ Messages:
   wwctGUISourceOrTargetTranslationAlreadyGlobal: ภาษานี้ใช้งานได้ทั่วโลกแล้ว!
   wwcrStorageTranslatorFail: โหลด WorldwideChat ใหม่ แต่ล้มเหลวในการเปิดใช้งานนักแปลและเชื่อมต่อกับการกำหนดค่าพื้นที่เก็บข้อมูลของคุณ
   wwcrStorageFail: โหลด WorldwideChat ใหม่และเปิดใช้งานนักแปลเรียบร้อยแล้ว แต่การกำหนดค่าที่เก็บข้อมูลของคุณไม่สามารถเชื่อมต่อได้
+  wwcConfigPersistentCacheInvalid: รายการแคชถาวรไม่ถูกต้องใน config.ymlค่าเริ่มต้นเป็นเท็จ...
+  wwcConfigGUIPersistentCacheButton: สลับแคชถาวร
+  wwcConfigConversationPersistentCacheSuccess: สลับแคชถาวรเรียบร้อยสำเร็จ
+  wwcConfigPersistentCacheEnabled: ข้อมูลแคชจะยังคงอยู่ตลอดการโหลดใหม่
+  wwcConfigConversationCharacterLimitInput: ขีดจำกัดอักขระปัจจุบันต่อข้อความคือ {0}
+    อักขระพิมพ์สิ่งใดมากกว่า 0 (แต่น้อยกว่า 256) เพื่อตั้งค่าใหม่ หรือพิมพ์ 0 เพื่อย้อนกลับ
 

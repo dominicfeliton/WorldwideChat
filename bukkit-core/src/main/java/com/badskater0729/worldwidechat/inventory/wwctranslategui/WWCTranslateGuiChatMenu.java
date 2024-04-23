@@ -34,8 +34,6 @@ public class WWCTranslateGuiChatMenu implements InventoryProvider {
 	private String targetPlayerName = "";
 	private Player inPlayer;
 
-	// TODO: Rewrite for being able to switch between localizations??
-	// TODO: Also fix getMsg calls to respect user's localization
 	public WWCTranslateGuiChatMenu(String targetPlayerUUID, Player inPlayer) {
 		this.inPlayer = inPlayer;
 		this.targetPlayerUUID = targetPlayerUUID;

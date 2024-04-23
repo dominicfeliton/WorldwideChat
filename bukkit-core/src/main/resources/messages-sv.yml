@@ -256,9 +256,6 @@ Messages:
   wwcteOffTarget: Entitetsöversättning inaktiverad för {0}.
   wwcCharLimit: Ditt meddelande är för långt! Se till att ditt meddelande är mindre
     än {0} tecken.
-  wwcConfigConversationCharacterLimitInput: Den aktuella teckengränsen per meddelande
-    är {0}-tecken. Skriv något större än 0 om du vill ange ett nytt värde, eller skriv
-    något mindre än eller lika med 0 för att gå tillbaka.
   wwcteOffSender: Entitetsöversättning inaktiverad
   wwctGUIEntityButton: Växla entitetsöversättning
   wwctrlRateLimitBadInt: Din prisgräns är inte ett giltigt heltal.
@@ -594,4 +591,12 @@ Messages:
     en översättare och ansluta till din lagringskonfiguration.
   wwcrStorageFail: Laddade om WorldwideChat och aktiverade framgångsrikt en översättare,
     men din lagringskonfiguration kunde inte anslutas.
+  wwcConfigPersistentCacheInvalid: Ogiltig permanent cache-post i config.yml. Standardinställt
+    till false...
+  wwcConfigGUIPersistentCacheButton: Växla ihållande cache
+  wwcConfigConversationPersistentCacheSuccess: Ihållande cache växlades framgångsrikt.
+  wwcConfigPersistentCacheEnabled: Cache-data kvarstår vid omladdningar.
+  wwcConfigConversationCharacterLimitInput: Den nuvarande teckengränsen per meddelande
+    är {0} tecken. Skriv något större än 0 (men mindre än 256) för att ange ett nytt
+    värde, eller skriv 0 för att gå tillbaka.
 

@@ -251,9 +251,6 @@ Messages:
   wwcteOffTarget: Oversættelse af enheder deaktiveret for {0}.
   wwcCharLimit: Din besked er for lang! Sørg for, at din besked er mindre end {0}
     tegn i længden.
-  wwcConfigConversationCharacterLimitInput: Den aktuelle tegngrænse pr. meddelelse
-    er {0} tegn. Skriv noget større end 0 for at angive en ny værdi, eller skriv noget
-    mindre end eller lig med 0 for at gå tilbage.
   wwcteOffSender: Oversættelse af enheder deaktiveret.
   wwctGUIEntityButton: Skift objektoversættelse til/ fra
   wwctrlRateLimitBadInt: Din takst grænse er ikke et gyldigt heltal.
@@ -583,4 +580,12 @@ Messages:
     oversætter og oprette forbindelse til din lagerkonfiguration.
   wwcrStorageFail: Genindlæste WorldwideChat og aktiverede en oversætter med succes,
     men din lagerkonfiguration kunne ikke oprette forbindelse.
+  wwcConfigPersistentCacheInvalid: Ugyldig vedvarende cache-post i config.yml. Standardindstilling
+    til falsk...
+  wwcConfigGUIPersistentCacheButton: Skift til vedvarende cache
+  wwcConfigConversationPersistentCacheSuccess: Vedvarende cache skiftede med succes.
+  wwcConfigPersistentCacheEnabled: Cache-data fortsætter på tværs af genindlæsninger.
+  wwcConfigConversationCharacterLimitInput: Den aktuelle tegngrænse pr. meddelelse
+    er {0} tegn. Skriv noget større end 0 (men mindre end 256) for at angive en ny
+    værdi, eller skriv 0 for at gå tilbage.
 

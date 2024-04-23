@@ -243,9 +243,6 @@ Messages:
   wwcteOffTarget: Субъект аудармасы {0} өшірілген.
   wwcCharLimit: Сіздің хабарламаңыз тым ұзақ! Хабарламаңыздың ұзындығы {0} таңбаларынан
     аз екеніне көз жеткізіңіз.
-  wwcConfigConversationCharacterLimitInput: Бір хабардың ағымдағы таңбалар шегі {0}
-    таңбалары болып табылады. Жаңа мәнді орнату үшін 0-ден асатын нәрсені теріңіз
-    немесе кері оралу үшін 0-ден аз немесе тең нәрсені теріңіз.
   wwcteOffSender: Субъект аударма өшірілген.
   wwctGUIEntityButton: Toggle субъектінің аудармасы
   wwctrlRateLimitBadInt: Сіздің мөлшерлеме шегі жарамды бүтін сан емес.
@@ -580,4 +577,12 @@ Messages:
     сақтау конфигурациясымен қосыла алмады.
   wwcrStorageFail: WorldwideChat-ді қайта жүктеп, аудармашыға сәтті қосылды, бірақ
     сақтау конфигурацияңыз қосыла алмады.
+  wwcConfigPersistentCacheInvalid: Config.yml ішіндегі тұрақты кэш жазбасы жарамсыз.
+    Жалған дегенге дефолт...
+  wwcConfigGUIPersistentCacheButton: Тұрақты кэшті ауыстыру
+  wwcConfigConversationPersistentCacheSuccess: Тұрақты кэш сәтті қосылды.
+  wwcConfigPersistentCacheEnabled: Кэш деректері қайта жүктеу кезінде сақталады.
+  wwcConfigConversationCharacterLimitInput: Бір хабардың ағымдағы таңбалар шегі -
+    {0} таңбалары. Жаңа мәнді орнату үшін 0-ден үлкен (бірақ 256-дан аз) кез келген
+    нәрсені теріңіз немесе кері оралу үшін 0 деп теріңіз.
 

@@ -318,7 +318,7 @@ public class LoadUserData implements Runnable {
 		}
 
 		/* Load Persistent Cache (if enabled) */
-		if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && mainConfig.getBoolean("Translator.enablePersistentCache")) {
+		if (mainConfig.getInt("Translator.translatorCacheSize") > 0 && main.isPersistentCache()) {
 			refs.debugMsg("Loading persistent cache data...");
 			if (mainConfig.getBoolean("Storage.useSQL") && main.isSQLConnValid(false)) {
 				// Load Cached Terms using SQL

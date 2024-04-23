@@ -157,7 +157,6 @@ public class WWCTranslate extends BasicCommand {
 		}
 		// Check if valid outLang
 		if (!refs.isSupportedLang(outLang, "out")) {
-			// TODO: Replace getFormattedValidLangCodes() with something cleaner?
 			refs.sendFancyMsg("wwctInvalidOutputLangCode", refs.getFormattedLangCodes("out"), "&c", sender);
 			return false;
 		}

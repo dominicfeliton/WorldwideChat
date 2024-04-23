@@ -261,9 +261,6 @@ Messages:
   wwcteOffTarget: Traducción de entidad desactivada para {0}.
   wwcCharLimit: ¡Tu mensaje es demasiado largo! Por favor, asegúrate de que tu mensaje
     tenga menos de {0} caracteres de longitud.
-  wwcConfigConversationCharacterLimitInput: El límite de caracteres actual por mensaje
-    es {0} caracteres. Escriba algo mayor que 0 para establecer un nuevo valor, o
-    escriba algo menor o igual a 0 para volver atrás.
   wwcteOffSender: Traducción de entidad desactivada.
   wwctGUIEntityButton: Alternar Entidad Traducción
   wwctrlRateLimitBadInt: Tu límite de tasa no es un entero válido.
@@ -630,4 +627,13 @@ Messages:
     traductor ni conectarse con su configuración de almacenamiento de información.
   wwcrStorageFail: Se recargó WorldwideChat y se habilitó correctamente un traductor,
     pero su configuración de almacenamiento no pudo conectarse.
+  wwcConfigPersistentCacheInvalid: Entrada de caché persistente no válida en config.yml.
+    El valor predeterminado es falso...
+  wwcConfigGUIPersistentCacheButton: Alternar caché persistente
+  wwcConfigConversationPersistentCacheSuccess: La memoria caché persistente se ha
+    alternado correctamente.
+  wwcConfigPersistentCacheEnabled: Los datos de la caché persistirán durante las recargas.
+  wwcConfigConversationCharacterLimitInput: El límite actual de caracteres por mensaje
+    es {0} caracteres. Escriba cualquier cosa mayor que 0 (pero menor que 256) para
+    establecer un nuevo valor, o escriba 0 para volver atrás.
 

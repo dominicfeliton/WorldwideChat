@@ -233,8 +233,6 @@ Messages:
   wwcConfigMessageCharLimitEnabled: تم تعيين حد الأحرف لكل رسالة إلى أحرف {0}.
   wwcteOffTarget: تم تعطيل ترجمة الكيان لـ {0}.
   wwcCharLimit: رسالتك طويلة جدًا! يرجى التأكد من أن رسالتك أقل من {0} حرف في الطول.
-  wwcConfigConversationCharacterLimitInput: الحد الحالي للحرف لكل رسالة هو {0} حرف.
-    اكتب أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب أي شيء أقل من أو يساوي 0 للعودة.
   wwcteOffSender: تم تعطيل ترجمة الكيان.
   wwctGUIEntityButton: تبديل ترجمة الكيان
   wwctrlRateLimitBadInt: حد السعر الخاص بك ليس عددًا صحيحًا صالحًا.
@@ -543,4 +541,13 @@ Messages:
     والاتصال بتكوين التخزين الخاص بك.
   wwcrStorageFail: تم إعادة تحميل WorldwideChat وتمكين المترجم بنجاح، ولكن تكوين التخزين
     الخاص بك فشل في الاتصال.
+  wwcConfigPersistentCacheInvalid: إدخال ذاكرة التخزين المؤقت الدائم غير صالح في config.yml.
+    يتم التعثر في الخطأ...
+  wwcConfigGUIPersistentCacheButton: تبديل ذاكرة التخزين المؤقت الدائمة
+  wwcConfigConversationPersistentCacheSuccess: تم تبديل ذاكرة التخزين المؤقت الدائمة
+    بنجاح.
+  wwcConfigPersistentCacheEnabled: ستستمر بيانات ذاكرة التخزين المؤقت عبر عمليات إعادة
+    التحميل.
+  wwcConfigConversationCharacterLimitInput: الحد الحالي لعدد الأحرف لكل رسالة هو {0}
+    حرفًا. اكتب أي شيء أكبر من 0 (ولكن أقل من 256) لتعيين قيمة جديدة، أو اكتب 0 للعودة.
 

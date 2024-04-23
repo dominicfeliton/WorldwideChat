@@ -54,7 +54,7 @@ public class MenuGui implements InventoryProvider {
 		/* Generate inventories */
 		refs.debugMsg("Generating config GUIs!");
 		MenuGui generalSet = new MenuGui(inPlayer, transName);
-		CONFIG_GUI_TAGS.GEN_SET.smartInv = generalSet.genSmartInv("generalSettingsMenu", "wwcConfigGUIGeneralSettings");
+		CONFIG_GUI_TAGS.GEN_SET.smartInv = generalSet.genSmartInv("generalSettingsMenu", 3, 9, ChatColor.BLUE, "wwcConfigGUIGeneralSettings");
 		
 		MenuGui storageSet = new MenuGui(inPlayer, transName);
 		CONFIG_GUI_TAGS.STORAGE_SET.smartInv = storageSet.genSmartInv("storageSettingsMenu", "wwcConfigGUIStorageSettings");
@@ -100,15 +100,15 @@ public class MenuGui implements InventoryProvider {
 		generalSet.add(new BorderElement(XMaterial.WHITE_STAINED_GLASS_PANE));
 		generalSet.add(new ConvoElement(1, 1, "wwcConfigGUIPrefixButton", XMaterial.NAME_TAG,
 				new GeneralSettingsConvos.Prefix()));
-		generalSet.add(new ToggleElement(1, 2, "wwcConfigGUIbStatsButton", "wwcConfigConversationbStatsSuccess", "General.enablebStats"));
+		generalSet.add(new ConvoElement(1, 2, "wwcConfigGUIFatalAsyncAbortButton", XMaterial.NAME_TAG,
+				new GeneralSettingsConvos.UpdateChecker()));
 		generalSet.add(new ConvoElement(1, 3, "wwcConfigGUILangButton", XMaterial.NAME_TAG,
 				new GeneralSettingsConvos.Lang()));
 		generalSet.add(new ConvoElement(1, 4, "wwcConfigGUIUpdateCheckerButton", XMaterial.NAME_TAG,
 				new GeneralSettingsConvos.UpdateChecker()));
 		generalSet.add(new ConvoElement(1, 5, "wwcConfigGUISyncUserDataButton", XMaterial.NAME_TAG,
 				new GeneralSettingsConvos.SyncUserData()));
-		generalSet.add(new ConvoElement(1, 6, "wwcConfigGUIFatalAsyncAbortButton", XMaterial.NAME_TAG,
-				new GeneralSettingsConvos.UpdateChecker()));
+		generalSet.add(new ToggleElement(1, 6, "wwcConfigGUIbStatsButton", "wwcConfigConversationbStatsSuccess", "General.enablebStats"));
 		generalSet.add(new ToggleElement(1, 7, "wwcConfigGUIDebugModeButton", "wwcConfigConversationDebugModeSuccess", "General.enableDebugMode"));
 		generalSet.add(new CommonElement(2, 4, "Quit"));
 		generalSet.add(new CommonElement(2, 6, "Next", new Object[] {CONFIG_GUI_TAGS.STORAGE_SET.smartInv}));
@@ -224,6 +224,7 @@ public class MenuGui implements InventoryProvider {
 	    		new TranslatorSettingsConvos.CharacterLimit()));
 		transSet.add(new ConvoElement(2, 5, "wwcConfigGUIIgnoreErrorsButton", XMaterial.NAME_TAG,
 						new TranslatorSettingsConvos.IgnoreErrors()));
+		transSet.add(new ToggleElement(2, 6, "wwcConfigGUIPersistentCacheButton", "wwcConfigConversationPersistentCacheSuccess", "Translator.enablePersistentCache"));
 	    transSet.add(new CommonElement(3, 2, "Previous", new Object[] {CONFIG_GUI_TAGS.CHAT_SET.smartInv}));
 		transSet.add(new CommonElement(3, 4, "Quit"));
 		transSet.add(new CommonElement(3, 8, "Page Number", new String[] {CONFIG_GUI_TAGS.CHAT_SET.ordinal()+1 + ""}));

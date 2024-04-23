@@ -246,9 +246,6 @@ Messages:
   wwcteOffTarget: ہستی ترجمہ {0} کے لئے غیر فعال.
   wwcCharLimit: آپ کا پیغام بہت طویل ہے! براہ کرم اس بات کو یقینی بنائیں کہ آپ کا
     پیغام {0} حروف سے بھی کم ہے۔
-  wwcConfigConversationCharacterLimitInput: فی پیغام موجودہ حرف کی حد {0} حروف ہے۔
-    0 سے زیادہ کچھ بھی ٹائپ کرنے کے لئے ایک نئی قدر مقرر کریں، یا واپس جانے کے لئے
-    0 سے کم یا برابر کچھ بھی ٹائپ کریں.
   wwcteOffSender: ادارہ ترجمہ معذور.
   wwctGUIEntityButton: انسٹی ٹیٹی ترجمہ ٹوگل کریں
   wwctrlRateLimitBadInt: آپ کی شرح کی حد ایک درست عددی نہیں ہے.
@@ -594,4 +591,12 @@ Messages:
     کرنے اور آپ کی اسٹوریج کنفیگریشن سے رابطہ کرنے میں
   wwcrStorageFail: ورلڈ وائڈ چیٹ کو دوبارہ لوڈ کیا اور کامیابی کے ساتھ مترجم کو فعال
     کیا، لیکن آپ کی اسٹوریج کنفیگریشن رابطہ
+  wwcConfigPersistentCacheInvalid: config.yml میں مستقل کیشے اندراج غلط جھوٹی سے ڈیفالٹ
+    کرنا...
+  wwcConfigGUIPersistentCacheButton: مستقل کیشے کو ٹوگل کریں
+  wwcConfigConversationPersistentCacheSuccess: مستقل کیشے کامیابی کے ساتھ ٹاپ ہوگیا۔
+  wwcConfigPersistentCacheEnabled: کیشے ڈیٹا ری لوڈز کے دوران برقرار رہے گا۔
+  wwcConfigConversationCharacterLimitInput: فی پیغام کی موجودہ حرف کی حد {0} حروف
+    ہے۔ نئی قدر مقرر کرنے کے لئے 0 سے زیادہ (لیکن 256 سے کم) کچھ بھی ٹائپ کریں، یا
+    واپس جانے کے لئے 0 ٹائپ کریں۔
 

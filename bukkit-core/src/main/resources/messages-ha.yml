@@ -247,9 +247,6 @@ Messages:
   wwcteOffTarget: Fassarar mahalli da aka kashe domin {0}.
   wwcCharLimit: Sakonka ya yi tsawo! Don Allah ka tabbata sakonka ya kasa da haruffan
     {0} a tsawon.
-  wwcConfigConversationCharacterLimitInput: Iyakar hali na yanzu a kowane saƙo shi
-    ne haruffan {0}. Rubuta wani abu mafi girma fiye da 0 don saita sabon darajar,
-    ko rubuta wani abu kasa da ko daidai da 0 don komawa.
   wwcteOffSender: An kashe fassarar haɗin kai.
   wwctGUIEntityButton: Fassarar Kunshiya
   wwctrlRateLimitBadInt: Iyakar kuɗin ku ba wata lamba mai inganci ba ce.
@@ -582,4 +579,12 @@ Messages:
     kuma haɗi tare da tsarin ajiyar ku.
   wwcrStorageFail: An sake loda WorldwideChat kuma ya sami nasarar kunna mai fassara,
     amma tsarin ajiyar ku ya kasa haɗawa.
+  wwcConfigPersistentCacheInvalid: Shigar da cache mai ɗorewa mara kyau a cikin config.yml.
+    Rashin ƙarya ga ƙarya...
+  wwcConfigGUIPersistentCacheButton: Sauya Cache mai ɗorewa
+  wwcConfigConversationPersistentCacheSuccess: An canza cache mai ci gaba da nasara.
+  wwcConfigPersistentCacheEnabled: Bayanan cache za su ci gaba a duk faɗin sake saukewa.
+  wwcConfigConversationCharacterLimitInput: Iyakar haruffa na yanzu a kowane saƙo
+    shine haruffa {0}. Rubuta wani abu mafi girma fiye da 0 (amma ƙasa da 256) don
+    saita sabon ƙima, ko rubuta 0 don komawa.
 

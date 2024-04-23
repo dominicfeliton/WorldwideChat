@@ -249,9 +249,6 @@ Messages:
   wwcteOffTarget: Překlad entit zakázán pro {0}.
   wwcCharLimit: Vaše zpráva je příliš dlouhá! Ujistěte se, že vaše zpráva má menší
     než {0} znaků.
-  wwcConfigConversationCharacterLimitInput: Aktuální limit znaků na zprávu je {0}
-    znaků. Zadejte něco většího než 0 pro nastavení nové hodnoty nebo zadejte něco
-    menší než nebo rovno 0 a vraťte se zpět.
   wwcteOffSender: Převod entit zakázán.
   wwctGUIEntityButton: Přepnout překlad entit
   wwctrlRateLimitBadInt: Váš limit sazeb není platné celé číslo.
@@ -582,4 +579,13 @@ Messages:
     překladač a připojit se k konfiguraci úložiště.
   wwcrStorageFail: Znovu načetl WorldwideChat a úspěšně povolil překladač, ale konfigurace
     úložiště se nepodařilo připojit.
+  wwcConfigPersistentCacheInvalid: Neplatná položka trvalé mezipaměti v config.yml.
+    Výchozí hodnota je false...
+  wwcConfigGUIPersistentCacheButton: Přepnout trvalou mezipaměť
+  wwcConfigConversationPersistentCacheSuccess: Trvalá mezipaměť byla úspěšně přepnuta.
+  wwcConfigPersistentCacheEnabled: Data mezipaměti budou přetrvávat i při opětovném
+    načtení.
+  wwcConfigConversationCharacterLimitInput: Aktuální limit znaků na zprávu je {0}
+    znaků. Zadejte cokoli větší než 0 (ale menší než 256), chcete-li nastavit novou
+    hodnotu, nebo zadejte 0 pro návrat zpět.
 

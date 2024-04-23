@@ -245,9 +245,6 @@ Messages:
   wwcteOffTarget: Tafsiri ya chombo imezimwa kwa {0}.
   wwcCharLimit: Ujumbe wako ni mrefu sana! Tafadhali hakikisha ujumbe wako uko chini
     ya herufi ya {0} kwa urefu.
-  wwcConfigConversationCharacterLimitInput: Kikomo cha tabia ya sasa kwa kila ujumbe
-    ni {0} herufi. Andika kitu chochote zaidi kuliko 0 kuweka thamani mpya, au aina
-    kitu chochote chini ya au sawa na 0 kurudi nyuma.
   wwcteOffSender: Chombo tafsiri walemavu.
   wwctGUIEntityButton: Badilisha Tafsiri ya Chombo
   wwctrlRateLimitBadInt: Kiwango chako cha kikomo si integer halali.
@@ -584,4 +581,13 @@ Messages:
     mtafsiri na kuunganisha na usanidi wako wa kuhifadhi.
   wwcrStorageFail: Imepakia upya WorldwideChat na kufanikiwa kuwezesha mtafsiri, lakini
     usanidi wako wa kuhifadhi ulishindwa kuunganisha.
+  wwcConfigPersistentCacheInvalid: Ingizo halali ya cache inayoendelea katika config.yml.
+    Kubadilisha kuwa uwongo...
+  wwcConfigGUIPersistentCacheButton: Badilisha Cache inayoendelea
+  wwcConfigConversationPersistentCacheSuccess: Cache inayoendelea ilibadilika kwa
+    mafaniki
+  wwcConfigPersistentCacheEnabled: Takwimu za cache itaendelea katika upakiaji upya.
+  wwcConfigConversationCharacterLimitInput: Kikomo cha sasa cha tabia kwa kila ujumbe
+    ni herufi za {0}. Andika chochote kubwa kuliko 0 (lakini chini ya 256) ili kuweka
+    thamani mpya, au andika 0 ili kurudi nyuma.
 

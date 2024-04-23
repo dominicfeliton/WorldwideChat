@@ -28,13 +28,13 @@ public class TranslatorSettingsConvos {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			Player currPlayer = ((Player) context.getForWhom());
 			currPlayer.closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationCharacterLimitInput", "" + main.getConfigManager().getMainConfig().getInt("Translator.messageCharLimit"), currPlayer);
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationCharacterLimitInput", "" + main.getMessageCharLimit(), currPlayer);
 		}
 
 		@Override
 		protected Prompt acceptValidatedInput(ConversationContext context, Number input) {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
-			return refs.genericConfigConvo(input.intValue() > 0, context, "wwcConfigConversationCharacterLimitSuccess",
+			return refs.genericConfigConvo(input.intValue() > 0 && input.intValue() <= 255, context, "wwcConfigConversationCharacterLimitSuccess",
 					"Translator.messageCharLimit", input.intValue(), CONFIG_GUI_TAGS.TRANS_SET.smartInv);
 		}
 	}
@@ -46,7 +46,7 @@ public class TranslatorSettingsConvos {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			Player currPlayer = ((Player) context.getForWhom());
 			currPlayer.closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationErrorLimitInput", "" + main.getConfigManager().getMainConfig().getInt("Translator.errorLimit"), currPlayer);
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationErrorLimitInput", "" + main.getErrorLimit(), currPlayer);
 		}
 
 		@Override
@@ -64,7 +64,7 @@ public class TranslatorSettingsConvos {
 			CommonRefs refs = main.getServerFactory().getCommonRefs();
 			Player currPlayer = ((Player) context.getForWhom());
 			currPlayer.closeInventory();
-			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationRateLimitInput", "" + main.getConfigManager().getMainConfig().getInt("Translator.rateLimit"), currPlayer);
+			return ChatColor.AQUA + refs.getMsg("wwcConfigConversationRateLimitInput", "" + main.getGlobalRateLimit(), currPlayer);
 		}
 
 		@Override

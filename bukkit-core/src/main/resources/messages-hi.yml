@@ -251,9 +251,6 @@ Messages:
   wwcteOffTarget: '{0} के लिए इकाई अनुवाद अक्षम किया गया।'
   wwcCharLimit: आपका संदेश बहुत लंबा है! कृपया सुनिश्चित करें कि आपका संदेश लंबाई
     में {0} वर्णों से कम है।
-  wwcConfigConversationCharacterLimitInput: प्रति संदेश वर्तमान वर्ण सीमा {0} अक्षर
-    है। एक नया मान सेट करने के लिए 0 से अधिक कुछ भी टाइप करें, या वापस जाने के लिए
-    0 से कम या बराबर कुछ भी टाइप करें।
   wwcteOffSender: इकाई अनुवाद अक्षम किया गया।
   wwctGUIEntityButton: एंटिटी ट्रांसलेशन टॉगल करें
   wwctrlRateLimitBadInt: आपकी दर सीमा वैध पूर्णांक नहीं है।
@@ -599,4 +596,13 @@ Messages:
     सक्षम करने और अपने स्टोरेज कॉन्फ़िगरेशन से कनेक्ट करने में विफल रहा।
   wwcrStorageFail: WorldwideChat को फिर से लोड किया गया और एक अनुवादक को सफलतापूर्वक
     सक्षम किया गया, लेकिन आपका स्टोरेज कॉन्फ़िगरेशन कनेक्ट करने में विफल रहा।
+  wwcConfigPersistentCacheInvalid: config.yml में अवैध स्थायी कैश प्रविष्टि। डिफ़ॉल्ट
+    रूप से गलत माना जा रहा है...
+  wwcConfigGUIPersistentCacheButton: परसिस्टेंट कैश टॉगल करें
+  wwcConfigConversationPersistentCacheSuccess: परसिस्टेंट कैश सफलतापूर्वक टॉगल किया
+    गया।
+  wwcConfigPersistentCacheEnabled: कैश डेटा रीलोड के दौरान बना रहेगा।
+  wwcConfigConversationCharacterLimitInput: प्रति संदेश वर्तमान वर्ण सीमा {0} वर्ण
+    है। नया मान सेट करने के लिए 0 से अधिक (लेकिन 256 से कम) कुछ भी टाइप करें, या वापस
+    जाने के लिए 0 टाइप करें।
 

@@ -253,9 +253,6 @@ Messages:
   wwcteOffTarget: Entītijas tulkojums atspējots uz {0}.
   wwcCharLimit: Jūsu ziņa ir pārāk gara! Lūdzu, pārliecinieties, ka jūsu ziņojums
     ir mazāks par {0} rakstzīmes garumā.
-  wwcConfigConversationCharacterLimitInput: Pašreizējais rakstzīmju ierobežojums vienam
-    ziņojumam ir {0} rakstzīmes. Ierakstiet visu, kas lielāks par 0, lai iestatītu
-    jaunu vērtību, vai ierakstiet kaut ko, kas mazāks par vai vienāds ar 0, lai atgrieztos.
   wwcteOffSender: Entītiju tulkošana ir
   wwctGUIEntityButton: Pārslēgt entītijas tulkošanu
   wwctrlRateLimitBadInt: Jūsu likmes ierobežojums nav derīgs vesels skaitlis.
@@ -584,4 +581,13 @@ Messages:
     un izveidot savienojumu ar jūsu krātuves konfigurāciju.
   wwcrStorageFail: Pārlādēja WorldwideChat un veiksmīgi iespējoja tulkotāju, taču
     jūsu krātuves konfigurācijai neizdevās izveidot savienojumu.
+  wwcConfigPersistentCacheInvalid: Nederīgs pastāvīgais kešatmiņas ieraksts programmā
+    config.yml. Noklusējuma vērtība nepatiesa...
+  wwcConfigGUIPersistentCacheButton: Pārslēgt pastāvīgo kešatmiņu
+  wwcConfigConversationPersistentCacheSuccess: Pastāvīgā kešatmiņa tika veiksmīgi
+    pārslēgta.
+  wwcConfigPersistentCacheEnabled: Kešatmiņas dati saglabāsies atkārtotas ielādēs.
+  wwcConfigConversationCharacterLimitInput: Pašreizējais rakstzīmju ierobežojums vienam
+    ziņojumam ir {0} rakstzīmes. Ierakstiet visu, kas ir lielāks par 0 (bet mazāks
+    par 256), lai iestatītu jaunu vērtību, vai ierakstiet 0, lai atgrieztos atpakaļ.
 

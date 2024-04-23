@@ -535,7 +535,7 @@ public class CommonRefs {
 			}
 
 			/* Char limit check */
-			int limit = mainConfig.getInt("Translator.messageCharLimit");
+			int limit = main.getMessageCharLimit();
 			if (inMessage.length() > limit) {
 				final TextComponent charLimit = Component.text()
 								.content(getMsg("wwcCharLimit", "" + limit, currPlayer))
@@ -605,8 +605,8 @@ public class CommonRefs {
 					return inMessage;
 				}
 			// Global Limits
-			} else if (!isExempt && mainConfig.getInt("Translator.rateLimit") > 0) {
-				if (!checkForRateLimits(mainConfig.getInt("Translator.rateLimit"), currActiveTranslator, currPlayer)) {
+			} else if (!isExempt && main.getGlobalRateLimit() > 0) {
+				if (!checkForRateLimits(main.getGlobalRateLimit(), currActiveTranslator, currPlayer)) {
 					return inMessage;
 				}
 			}
@@ -688,7 +688,7 @@ public class CommonRefs {
 			debugMsg("Error Count: " + main.getTranslatorErrorCount());
 			
 			/* If error count is greater than threshold set in config.yml, reload on this thread (we are already async) */
-			if (main.getTranslatorErrorCount() >= mainConfig.getInt("Translator.errorLimit")) {
+			if (main.getTranslatorErrorCount() >= main.getErrorLimit()) {
 				main.getLogger().severe(getMsg("wwcTranslatorErrorThresholdReached", null));
 				main.getLogger().severe(getMsg("wwcTranslatorErrorThresholdReachedCheckLogs", null));
 				runSync(new BukkitRunnable() {
@@ -1028,6 +1028,7 @@ public class CommonRefs {
 		if (configValName.length != configVal.length) {
 			return null;
 		}
+		// TODO: Add a fail message potentially if the precheck fails?
 		if (preCheck) {
 			for (int i = 0; i < configValName.length; i++) {
 				main.getConfigManager().getMainConfig().set(configValName[i], configVal[i]);
@@ -1064,10 +1065,8 @@ public class CommonRefs {
 	  * @return Boolean - If exception is no confidence, true; false otherwise
 	  */
 	private boolean isErrorToIgnore(Throwable throwable) {
-		//String[] lowConfidenceDict = {"confidence", "same as target", "detect the source language"};
 		// same as target == Watson
 		// detect the source language == Watson
-		ArrayList<String> lowConfidenceDict = (ArrayList<String>) main.getConfigManager().getMainConfig().getList("Translator.errorsToIgnore");
 		String exceptionMessage = StringUtils.lowerCase(throwable.getMessage());
 		if (exceptionMessage == null) {
 			// Usually just a timeout error. If a user gets this frequently they'll know something's wrong anyways
@@ -1075,10 +1074,10 @@ public class CommonRefs {
 		}
 
 		// This is a special character. If the user puts this character, then we ignore all errors.
-		if (lowConfidenceDict.contains("*")) return true;
+		if (main.getErrorsToIgnore().contains("*")) return true;
 
 		// Check if the exception message contains any of the strings in our low confidence dictionary
-		for (String eaStr : lowConfidenceDict) {
+		for (String eaStr : main.getErrorsToIgnore()) {
 			if (exceptionMessage.contains(eaStr)) {
 				debugMsg("Ignoring error thrown by translator: " + exceptionMessage);
 				return true;

@@ -243,9 +243,6 @@ Messages:
   wwcteOffTarget: Enhetsoversettelse deaktivert for {0}.
   wwcCharLimit: Meldingen din er for lang! Kontroller at meldingen din er mindre enn
     {0} tegn i lengde.
-  wwcConfigConversationCharacterLimitInput: Gjeldende tegngrense per melding er {0}
-    tegn. Skriv inn noe større enn 0 for å angi en ny verdi, eller skriv inn noe mindre
-    enn eller lik 0 for å gå tilbake.
   wwcteOffSender: Enhetsoversettelse deaktivert.
   wwctGUIEntityButton: Veksle enhetsoversettelse
   wwctrlRateLimitBadInt: Din satsgrense er ikke et gyldig heltall.
@@ -567,4 +564,12 @@ Messages:
     en oversetter og koble til lagringskonfigurasjonen.
   wwcrStorageFail: Lastet WorldwideChat på nytt og aktiverte en oversetter, men lagringskonfigurasjonen
     din klarte ikke å koble til.
+  wwcConfigPersistentCacheInvalid: Ugyldig vedvarende hurtigbufferoppføring i config.yml.
+    Standardiserer til falsk...
+  wwcConfigGUIPersistentCacheButton: Slå på vedvarende hurtigbuffer
+  wwcConfigConversationPersistentCacheSuccess: Vedvarende hurtigbuffer ble slått på.
+  wwcConfigPersistentCacheEnabled: Cache-data vil vedvare på tvers av omlastinger.
+  wwcConfigConversationCharacterLimitInput: Gjeldende tegngrense per melding er {0}
+    tegn. Skriv inn noe som er større enn 0 (men mindre enn 256) for å angi en ny
+    verdi, eller skriv inn 0 for å gå tilbake.
 

@@ -250,9 +250,6 @@ Messages:
   wwcteOffTarget: ආයතන පරිවර්ථනය {0} සඳහා අක්‍රීය විය.
   wwcCharLimit: ඔබේ පණිවිඩය දිගු වේ! කරුණාකර ඔබගේ පණිවිඩය {0} අක්ෂරවලට වඩා අඩුවෙන්
     ඇති බවට වග බලා ගන්න.
-  wwcConfigConversationCharacterLimitInput: පණිවිඩයකට වර්තමාන අක්ෂර සීමාව {0} අක්ෂර
-    වේ. නව වටිනාකමක් සැකසීමට 0 ට වඩා වැඩි දෙයක් ටයිප් කරන්න, නැතහොත් ආපසු යාමට 0 ට
-    වඩා අඩු හෝ සමාන දෙයක් ටයිප් කරන්න.
   wwcteOffSender: ආයතන පරිවර්තනය අක්රීය කර ඇත.
   wwctGUIEntityButton: ටොගල් කරන්න ආයතනය පරිවර්තනය
   wwctrlRateLimitBadInt: ඔබගේ අනුපාත සීමාව වලංගු නිඛිලයක් නොවේ.
@@ -582,4 +579,12 @@ Messages:
     කිරීමට සහ ඔබේ ගබඩා වින්යාසය සමඟ සම්බන්ධ වීමට අසමත් විය.
   wwcrStorageFail: WorldwideChat නැවත ලෝඩ් කර පරිවර්තකයෙකු සාර්ථකව සක්රීය කළ නමුත්
     ඔබේ ගබඩා වින්යාසය සම්බන්ධ වීමට අසමත් විය.
+  wwcConfigPersistentCacheInvalid: config.yml හි අවලංගු නොනැවතී හැඹිලි ඇතුළත් කිරීම.
+    අසත්ය බවට පැහැර හැරීම...
+  wwcConfigGUIPersistentCacheButton: නොනවත්වන හැඹිලි මාරු කරන්න
+  wwcConfigConversationPersistentCacheSuccess: නිරන්තර හැඹිලි සාර්ථකව මාරු විය.
+  wwcConfigPersistentCacheEnabled: නැවත පැටවීම හරහා හැඹිලි දත්ත දිගටම පවතිනු ඇත.
+  wwcConfigConversationCharacterLimitInput: එක් පණිවිඩයකට වර්තමාන අක්ෂර සීමාව {0}
+    අක්ෂර වේ. නව අගයක් සැකසීමට 0 ට වඩා විශාල ඕනෑම දෙයක් (නමුත් 256 ට අඩු) ටයිප් කරන්න,
+    නැතහොත් ආපසු යාමට 0 ටයිප් කරන්න.
 

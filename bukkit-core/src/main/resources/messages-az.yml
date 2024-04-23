@@ -248,9 +248,6 @@ Messages:
   wwcteOffTarget: Cəmiyyət tərcümə {0} üçün əlil.
   wwcCharLimit: Mesajınız çox uzun! Lütfən mesajınızın uzunluğunda {0} simvollarından
     az olduğundan əmin olun.
-  wwcConfigConversationCharacterLimitInput: Mesaj başına mövcud xarakter limiti {0}
-    simvoldur. Yeni bir dəyər təyin etmək üçün 0-dan daha böyük bir şey yazın və ya
-    geri qayıtmaq üçün 0-dan az və ya bərabər bir şey yazın.
   wwcteOffSender: Cəmiyyət tərcüməsi əlil.
   wwctGUIEntityButton: Toggle Entity Tərcümə
   wwctrlRateLimitBadInt: Dərəcəsi limitiniz etibarlı tam ədəd deyil.
@@ -578,4 +575,13 @@ Messages:
     bilmədi və yaddaş konfiqurasiyanızla əlaqə saxlaya bilmədi.
   wwcrStorageFail: WorldwideChat-ı yenidən yüklədi və tərcüməçini uğurla aktivləşdirdi,
     lakin yaddaş konfiqurasiyanız qoşula bilmədi.
+  wwcConfigPersistentCacheInvalid: Config.yml-də etibarsız davamlı önbellek girişi.
+    Yanlış deyilik...
+  wwcConfigGUIPersistentCacheButton: Davamlı önbelleği dəyişdirin
+  wwcConfigConversationPersistentCacheSuccess: Davamlı önbellek uğurla keçdi.
+  wwcConfigPersistentCacheEnabled: Önbellek məlumatları yenidən yüklənmələr zamanı
+    davam edəcək.
+  wwcConfigConversationCharacterLimitInput: Hər mesaj başına mövcud simvol həddi {0}
+    simvollarıdır. Yeni bir dəyər təyin etmək üçün 0-dan böyük (lakin 256-dan az)
+    bir şey yazın və ya geri qayıtmaq üçün 0 yazın.
 

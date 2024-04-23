@@ -256,9 +256,6 @@ Messages:
   wwcteOffTarget: Preklad entít vypnutý pre {0}.
   wwcCharLimit: Vaša správa je príliš dlhá! Uistite sa, že vaša správa je menšia ako
     {0} znakov.
-  wwcConfigConversationCharacterLimitInput: Aktuálny limit znakov na správu je {0}
-    znakov. Zadajte čokoľvek väčšie ako 0, ak chcete nastaviť novú hodnotu, alebo
-    zadajte niečo menšie alebo rovnajúce sa 0 a vráťte sa späť.
   wwcteOffSender: Preklad entít vypnutý.
   wwctGUIEntityButton: Prepnúť preklad entity
   wwctrlRateLimitBadInt: Váš limit sadzby nie je platné celé číslo.
@@ -591,4 +588,13 @@ Messages:
     prekladač a pripojiť sa k konfigurácii úložiska.
   wwcrStorageFail: Znovu načítal WorldwideChat a úspešne aktivoval prekladač, ale
     konfigurácia úložiska sa nepodarilo pripojiť.
+  wwcConfigPersistentCacheInvalid: Neplatný záznam trvalej vyrovnávacej pamäte v config.yml.
+    Predvolená hodnota false...
+  wwcConfigGUIPersistentCacheButton: Prepnúť trvalú vyrovnávaciu
+  wwcConfigConversationPersistentCacheSuccess: Trvalá cache bola úspešne prepnutá.
+  wwcConfigPersistentCacheEnabled: Údaje vyrovnávacej pamäte budú pretrvávať počas
+    načítania.
+  wwcConfigConversationCharacterLimitInput: Aktuálny limit znakov na správu je {0}
+    znakov. Zadajte čokoľvek väčšie ako 0 (ale menšie ako 256), aby ste nastavili
+    novú hodnotu, alebo zadajte 0, aby ste sa vrátili späť.
 

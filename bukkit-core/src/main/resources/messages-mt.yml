@@ -252,9 +252,6 @@ Messages:
   wwcteOffTarget: Entità traduzzjoni b'diżabilità għal {0}.
   wwcCharLimit: Il-messaġġ tiegħek huwa twil wisq! Jekk jogħġbok kun żgur messaġġ
     tiegħek huwa inqas minn % karattri i fit-tul.
-  wwcConfigConversationCharacterLimitInput: Il-limitu attwali tal-karattru għal kull
-    messaġġ hija {0} karattri. Tip xejn akbar minn 0 biex tistabbilixxi valur ġdid,
-    jew tip xejn inqas minn jew ugwali għal 0 li jmorru lura.
   wwcteOffSender: Entità traduzzjoni b'diżabilità.
   wwctGUIEntityButton: Traduzzjoni ta 'Entità
   wwctrlRateLimitBadInt: Il-limitu tar-rata tiegħek mhuwiex numru sħiħ validu.
@@ -588,4 +585,13 @@ Messages:
     u jgħaqqdu mal-konfigurazzjoni tal-ħażna tiegħek.
   wwcrStorageFail: Mgħobbija mill-ġdid WorldwideChat u ppermettiet b'suċċess traduttur,
     iżda l-konfigurazzjoni tal-ħażna tiegħek naqset milli tikkonnettja.
+  wwcConfigPersistentCacheInvalid: Dħul tal-cache persistenti invalidu f'config.yml.
+    Insuffiċjenza għal falza...
+  wwcConfigGUIPersistentCacheButton: Taqleb il-Cache Persistenti
+  wwcConfigConversationPersistentCacheSuccess: Il-cache persistenti tqabbad b'suċċess.
+  wwcConfigPersistentCacheEnabled: Id-dejta tal-cache se tippersisti matul it-tagħbijiet
+    mill-ġdid.
+  wwcConfigConversationCharacterLimitInput: Il-limitu kurrenti tal-karattri għal kull
+    messaġġ huwa karattri {0}. Ittajpja xi ħaġa akbar minn 0 (iżda inqas minn 256)
+    biex tistabbilixxi valur ġdid, jew tip 0 biex tmur lura.
 

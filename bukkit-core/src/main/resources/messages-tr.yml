@@ -239,9 +239,6 @@ Messages:
   wwcteOffTarget: '{0} için varlık çevirisi devre dışı bırakıldı.'
   wwcCharLimit: Mesajın çok uzun! Lütfen mesajınızın uzunluğu {0} karakterden daha
     az olduğundan emin olun.
-  wwcConfigConversationCharacterLimitInput: İleti başına geçerli karakter sınırı {0}
-    karakterdir. Yeni bir değer ayarlamak için 0'dan büyük bir şey yazın veya geri
-    dönmek için 0'dan küçük veya eşit bir şey yazın.
   wwcteOffSender: Varlık çevirisi devre dışı.
   wwctGUIEntityButton: Varlık Çevirisi Aç/Kapat
   wwctrlRateLimitBadInt: Hız limitiniz geçerli bir tamsayı değil.
@@ -583,4 +580,13 @@ Messages:
     ve depolama yapılandırmanıza bağlanamadı.
   wwcrStorageFail: WorldwideChat'i yeniden yükledi ve bir çevirmeni başarıyla etkinleştirdi,
     ancak depolama yapılandırmanız bağlanamadı.
+  wwcConfigPersistentCacheInvalid: config.yml içinde geçersiz kalıcı önbellek girişi.
+    Varsayılan olarak false...
+  wwcConfigGUIPersistentCacheButton: Kalıcı Önbelleği Değiştir
+  wwcConfigConversationPersistentCacheSuccess: Kalıcı önbellek başarıyla değiştirildi.
+  wwcConfigPersistentCacheEnabled: Önbellek verileri yeniden yüklemeler boyunca devam
+    eder.
+  wwcConfigConversationCharacterLimitInput: Mesaj başına geçerli karakter sınırı {0}
+    karakterdir. Yeni bir değer ayarlamak için 0'dan büyük (ancak 256'dan küçük) herhangi
+    bir şey yazın veya geri dönmek için 0 yazın.
 

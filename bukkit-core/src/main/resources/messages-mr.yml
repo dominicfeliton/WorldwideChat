@@ -174,9 +174,6 @@ Messages:
   wwctGUIItemButton: आयटम अनुवाद टॉगल करा
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ग्लोबल चॅटचे भाषांतर केले
     जात आहे, परंतु तुमच्याकडे {0} ते {1} पर्यंत सक्रिय भाषांतर सत्र आहे.
-  wwcConfigConversationCharacterLimitInput: प्रति संदेश वर्तमान वर्ण मर्यादा {0} वर्ण
-    आहे. नवीन मूल्य सेट करण्यासाठी 0 पेक्षा जास्त काहीही टाइप करा, किंवा परत जाण्यासाठी
-    0 पेक्षा कमी किंवा समान काहीही टाइप करा.
   wwctrlRateLimitBadInt: आपली दर मर्यादा वैध पूर्णांक नाही.
   wwcConfigGUIChatMessagesOverrideChangeButton: विद्यमान पाठ्य बदला
   wwcConfigConversationAmazonTranslateSecretKeyInput: सध्याची गुप्त किल्ली {0} आहे.
@@ -570,4 +567,12 @@ Messages:
     आणि आपल्या स्टोरेज कॉन्फ
   wwcrStorageFail: वर्ल्डविडचॅट रीलोड केले आणि एक अनुवादक यशस्वीरित्या सक्षम केले,
     परंतु आपली स्टोरेज
+  wwcConfigPersistentCacheInvalid: config.yml मध्ये अवैध सतत कॅशे एंट्री. खोटे म्हणून
+    डीफॉल्ट करणे...
+  wwcConfigGUIPersistentCacheButton: स्थिर कॅशे टॉगल करा
+  wwcConfigConversationPersistentCacheSuccess: सतत कॅश यशस्वीरित्या टॉग
+  wwcConfigPersistentCacheEnabled: रीलोडमध्ये कॅशे डेटा कायम राहणार आहे
+  wwcConfigConversationCharacterLimitInput: प्रति संदेश वर्तमान अक्षर मर्यादा {0}
+    वर्ण आहे. नवीन मूल्य सेट करण्यासाठी 0 पेक्षा जास्त (परंतु 256 पेक्षा कमी) काहीही
+    टाइप करा किंवा परत जाण्यासाठी 0 टाइप करा
 

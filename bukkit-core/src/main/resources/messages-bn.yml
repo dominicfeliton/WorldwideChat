@@ -246,9 +246,6 @@ Messages:
   wwcteOffTarget: '{0} এর জন্য সত্তা অনুবাদ নিষ্ক্রিয় করা হয়েছে'
   wwcCharLimit: আপনার বার্তা অনেক দীর্ঘ! অনুগ্রহ করে নিশ্চিত করুন যে আপনার বার্তা
     {0} অক্ষরের দৈর্ঘ্যের কম।
-  wwcConfigConversationCharacterLimitInput: প্রতি বার্তার বর্তমান অক্ষর সীমা হল {0}
-    অক্ষর। একটি নতুন মান সেট করার জন্য 0 এর চেয়ে বড় কিছু টাইপ করুন, অথবা ফিরে যাওয়ার
-    জন্য 0 এর চেয়ে কম বা সমান কিছু টাইপ করুন।
   wwcteOffSender: সত্তা অনুবাদ নিষ্ক্রিয়।
   wwctGUIEntityButton: সত্তা অনুবাদ টগল করুন
   wwctrlRateLimitBadInt: আপনার হার সীমা একটি বৈধ পূর্ণসংখ্যা নয়।
@@ -583,4 +580,12 @@ Messages:
     করতে এবং আপনার স্টোরেজ কনফিগারেশনের সাথে সংযোগ করতে ব্যর্থ হয়েছে।
   wwcrStorageFail: WorldwideChat পুনরায় লোড হয়েছে এবং সফলভাবে একটি অনুবাদক সক্ষম
     করেছে, তবে আপনার স্টোরেজ কনফিগারেশন সংযোগ করতে ব্যর্থ
+  wwcConfigPersistentCacheInvalid: config.yml এ অবৈধ ক্রমাগত ক্যাশে এন্ট্রি। মিথ্যা
+    থেকে ডিফল্ট করা হচ্ছে...
+  wwcConfigGUIPersistentCacheButton: স্থায়ী ক্যাশে টগল করুন
+  wwcConfigConversationPersistentCacheSuccess: ক্রমাগত ক্যাশে সফলভাবে টগল করা হয়েছে
+  wwcConfigPersistentCacheEnabled: ক্যাশে ডেটা পুনরায় লোড জুড়ে স্থায়ী থাকবে।
+  wwcConfigConversationCharacterLimitInput: প্রতি বার্তায় বর্তমান অক্ষরের সীমা {0}
+    অক্ষর। একটি নতুন মান সেট করতে 0 এর চেয়ে বেশি (কিন্তু 256 এর কম) কিছু টাইপ করুন,
+    অথবা ফিরে যেতে 0 টাইপ করুন।
 

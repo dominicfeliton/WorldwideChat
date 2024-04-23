@@ -176,9 +176,6 @@ Messages:
   wwctGUIItemButton: ਬਦਲੋ ਆਈਟਮ ਅਨੁਵਾਦ
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ ਕੀਤਾ
     ਜਾ ਰਿਹਾ ਹੈ, ਪਰ ਤੁਹਾਡੇ ਕੋਲ {0} ਤੋਂ {1} ਤੱਕ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਹੈ।
-  wwcConfigConversationCharacterLimitInput: ਮੌਜੂਦਾ ਅੱਖਰ ਸੀਮਾ ਪ੍ਰਤੀ ਸੁਨੇਹਾ {0} ਅੱਖਰ
-    ਹੈ। ਇੱਕ ਨਵਾਂ ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0
-    ਤੋਂ ਘੱਟ ਜਾਂ ਇਸ ਦੇ ਬਰਾਬਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ.
   wwctrlRateLimitBadInt: ਤੁਹਾਡੀ ਦਰ ਸੀਮਾ ਇੱਕ ਵੈਧ ਪੂਰਨ ਅੰਕ ਨਹੀਂ ਹੈ.
   wwcConfigGUIChatMessagesOverrideChangeButton: ਮੌਜੂਦਾ ਪਾਠ ਬਦਲੋ
   wwcConfigConversationAmazonTranslateSecretKeyInput: ਮੌਜੂਦਾ ਗੁਪਤ ਕੁੰਜੀ {0} ਹੈ ਕਿਰਪਾ
@@ -585,4 +582,12 @@ Messages:
     ਬਣਾਉਣ ਅਤੇ ਤੁਹਾਡੀ ਸਟੋਰੇਜ ਕੌਂਫਿਗਰੇਸ਼ਨ ਨਾਲ ਜੁੜਨ
   wwcrStorageFail: ਵਰਲਡਵਾਈਡਚੈਟ ਨੂੰ ਦੁਬਾਰਾ ਲੋਡ ਕੀਤਾ ਅਤੇ ਇੱਕ ਅਨੁਵਾਦਕ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ
     ਸਮਰੱਥ ਬਣਾਇਆ, ਪਰ ਤੁਹਾਡੀ ਸਟੋਰੇਜ ਕੌਨ
+  wwcConfigPersistentCacheInvalid: config.yml ਵਿੱਚ ਅਵੈਧ ਨਿਰੰਤਰ ਕੈਸ਼ ਐਂਟਰੀ. ਗਲਤ ਨੂੰ
+    ਡਿਫੌਲਟ ਕਰਨਾ...
+  wwcConfigGUIPersistentCacheButton: ਸਥਾਈ ਕੈਸ਼ ਨੂੰ ਟੌਗਲ ਕਰੋ
+  wwcConfigConversationPersistentCacheSuccess: ਸਥਾਈ ਕੈਸ਼ ਸਫਲਤਾਪੂਰਵਕ ਟੌਗਲ
+  wwcConfigPersistentCacheEnabled: ਕੈਸ਼ ਡੇਟਾ ਰੀਲੋਡਸ ਦੌਰਾਨ ਕਾਇਮ ਰਹੇਗਾ.
+  wwcConfigConversationCharacterLimitInput: ਪ੍ਰਤੀ ਸੁਨੇਹਾ ਮੌਜੂਦਾ ਅੱਖਰ ਸੀਮਾ {0} ਅੱਖਰ
+    ਹੈ। ਨਵਾਂ ਮੁੱਲ ਸੈਟ ਕਰਨ ਲਈ 0 (ਪਰ 256 ਤੋਂ ਘੱਟ) ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ
+    ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
 

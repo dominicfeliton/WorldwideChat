@@ -251,9 +251,6 @@ Messages:
   wwcteOffTarget: Cyfieithu endid wedi'i analluogi am {0}.
   wwcCharLimit: Mae eich neges yn rhy hir! Gwnewch yn siŵr bod eich neges yn llai
     na {0} nodau o hyd.
-  wwcConfigConversationCharacterLimitInput: Y terfyn nod cyfredol fesul neges yw cymeriadau
-    {0}. Teipiwch unrhyw beth mwy na 0 i osod gwerth newydd, neu deipio unrhyw beth
-    llai na neu'n hafal i 0 i fynd yn ôl.
   wwcteOffSender: Analluogwyd cyfieithu endid.
   wwctGUIEntityButton: Toggle Endid Cyfieithu
   wwctrlRateLimitBadInt: Nid yw eich terfyn cyfradd yn gyfanrif dilys.
@@ -590,4 +587,12 @@ Messages:
     a chysylltu â'ch cyfluniad storio.
   wwcrStorageFail: Aillwytho WorldwideChat a galluogi cyfieithydd yn llwyddiannus,
     ond methodd eich cyfluniad storio â chysylltu.
+  wwcConfigPersistentCacheInvalid: Cofnod storfa parhaus annilys yn config.yml. Rhagosodiad
+    i ffug...
+  wwcConfigGUIPersistentCacheButton: Toglo Cache Parhaus
+  wwcConfigConversationPersistentCacheSuccess: Tocliodd storfa barhaus yn llwyddiannus.
+  wwcConfigPersistentCacheEnabled: Bydd data storfa yn parhau ar draws aillwythi.
+  wwcConfigConversationCharacterLimitInput: Y terfyn cymeriad cyfredol fesul neges
+    yw cymeriadau {0}. Teipiwch unrhyw beth sy'n fwy na 0 (ond llai na 256) i osod
+    gwerth newydd, neu deipiwch 0 i fynd yn ôl.
 

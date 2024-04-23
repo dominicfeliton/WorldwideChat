@@ -255,9 +255,6 @@ Messages:
   wwcteOffTarget: Turjubaanka cidda naafada {0}.
   wwcCharLimit: Your fariin waa mid aad u dheer! Fadlan hubi in fariintaada ay ka
     yartahay xarfaha {0} oo dherer ah.
-  wwcConfigConversationCharacterLimitInput: Xadka dabeecadda hadda ee fariin kasta
-    waa {0} jilayaal. Ku qor wax ka weyn 0 si aad u dejiso qiime cusub, ama ku qor
-    wax ka yar ama u dhigma 0 si aad dib ugu noqoto.
   wwcteOffSender: Turjumaad hay'ad naafo.
   wwctGUIEntityButton: Turjubaan Hay'adda Toggle
   wwctrlRateLimitBadInt: Xadka heerka Your ma aha abyoonaha ansax ah.
@@ -602,4 +599,12 @@ Messages:
     tarjimaadka oo la xiriirta qaabkaaga kaydhiga.
   wwcrStorageFail: Dib u soo qaaday WorldwideChat oo si guul la ogolaaday tarjimaadka,
     laakiin qaabkaadkaaga oo ku fashilmay inay xid
+  wwcConfigPersistentCacheInvalid: Galinta cache joogta ah oo ah ee config.yml. Deegaanta
+    in been...
+  wwcConfigGUIPersistentCacheButton: Toggle Cache Persistent
+  wwcConfigConversationPersistentCacheSuccess: Cache joogta ah oo si guul la toogay.
+  wwcConfigPersistentCacheEnabled: Xogta Cache ayaa sii joogto doonaa dib u qabsaday
+  wwcConfigConversationCharacterLimitInput: Xadduudda tabaqada hadda ee fariin walba
+    waa xarakada {0}. Nooca wax ka badan 0 (laakiin ka yar 256) si aad u dhigo qiimo
+    cusub, ama nooca 0 si ay dib u dib ugu soo laabto.
 

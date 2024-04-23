@@ -198,8 +198,6 @@ Messages:
   wwcConfigMessageCharLimitEnabled: 每封郵件設定為 {0} 個字元的字元限制。
   wwcteOffTarget: '{0} 已停用實體轉譯。'
   wwcCharLimit: 您的訊息太長了！請確認您的訊息長度少於 {0} 個字元。
-  wwcConfigConversationCharacterLimitInput: 每封郵件目前的字元限制為 {0} 個字元。輸入大於 0 的任何值以設定新值，或輸入小於或等於
-    0 的任何值以返回。
   wwcteOffSender: 已停用實體轉換。
   wwctGUIEntityButton: 切換實體轉換
   wwctrlRateLimitBadInt: 你的費率限制不是有效的整數。
@@ -450,4 +448,10 @@ Messages:
   wwctGUISourceOrTargetTranslationAlreadyGlobal: 該語言已經在全球範圍內活躍！
   wwcrStorageTranslatorFail: 重新載入全球微信，但無法啟用翻譯器並與您的儲存設定連線。
   wwcrStorageFail: 重新載入全球通訊並成功啟用翻譯器，但您的儲存設定無法連線。
+  wwcConfigPersistentCacheInvalid: config.yml 中無效的持續快取項目。預設為 false...
+  wwcConfigGUIPersistentCacheButton: 切換持續快取
+  wwcConfigConversationPersistentCacheSuccess: 永久快取已成功切換。
+  wwcConfigPersistentCacheEnabled: 快取資料將持續在重新載入過程中。
+  wwcConfigConversationCharacterLimitInput: 每個訊息目前的字元限制為 {0} 字元。輸入大於 0（但小於 256）的任何值以設置新值，或鍵入
+    0 以返回。
 

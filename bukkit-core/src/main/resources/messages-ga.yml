@@ -186,10 +186,6 @@ Messages:
   wwctGUIItemButton: Aistriúchán Mír Scoránaigh
   wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Tá comhrá domhanda á aistriú,
     ach tá seisiún aistriúcháin gníomhach agat ó {0} go {1}.
-  wwcConfigConversationCharacterLimitInput: Is é an teorainn charachtair reatha in
-    aghaidh an teachtaireacht ná carachtair {0}. Cineál rud ar bith níos mó ná 0 a
-    shocrú le luach nua, nó cineál rud ar bith níos lú ná nó cothrom le 0 chun dul
-    ar ais.
   wwctrlRateLimitBadInt: Níl do teorainn ráta slánuimhir bailí.
   wwcConfigGUIChatMessagesOverrideChangeButton: Athraigh an Téacs atá ann cheana
   wwcConfigConversationAmazonTranslateSecretKeyInput: Is é an eochair rúnda atá ann
@@ -622,4 +618,12 @@ Messages:
     chumasú agus nascadh le do chumraíocht stórála.
   wwcrStorageFail: Athluchtaigh WorldwideChat agus chuir sé ar chumas aistritheoir
     a chumasú go rathúil, ach theip ar do chumraíocht stórála nascadh.
+  wwcConfigPersistentCacheInvalid: Iontráil taisce leanúnach neamhbhailí i config.yml.
+    Ag réamhshocrú go bréagach...
+  wwcConfigGUIPersistentCacheButton: Athraigh taisce leanúnach
+  wwcConfigConversationPersistentCacheSuccess: Athraíodh taisce leanúnach go rathúil.
+  wwcConfigPersistentCacheEnabled: Leanfaidh sonraí taisce ar fud athluchtaithe.
+  wwcConfigConversationCharacterLimitInput: Is é carachtair {0} an teorainn carachtair
+    reatha in aghaidh an teachtaireachta. Clóscríobh aon rud níos mó ná 0 (ach níos
+    lú ná 256) chun luach nua a shocrú, nó clóscríobh 0 chun dul ar ais.
 

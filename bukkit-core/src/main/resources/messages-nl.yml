@@ -255,9 +255,6 @@ Messages:
   wwcteOffTarget: Entiteitvertaling uitgeschakeld voor {0}.
   wwcCharLimit: Je boodschap is te lang! Zorg ervoor dat je bericht minder dan {0}
     tekens lang is.
-  wwcConfigConversationCharacterLimitInput: De huidige tekenlimiet per bericht is
-    {0} tekens. Typ iets groter dan 0 om een nieuwe waarde in te stellen, of typ iets
-    kleiner dan of gelijk aan 0 om terug te gaan.
   wwcteOffSender: Vertaling van entiteit is uitgeschakeld.
   wwctGUIEntityButton: Toggle Enty Translation
   wwctrlRateLimitBadInt: Je tarieflimiet is geen geldig geheel getal.
@@ -605,4 +602,14 @@ Messages:
     inschakelen en verbinding maken met uw opslagconfiguratie.
   wwcrStorageFail: WorldwideChat opnieuw geladen en met succes een vertaler ingeschakeld,
     maar je opslagconfiguratie kon geen verbinding maken.
+  wwcConfigPersistentCacheInvalid: Ongeldige permanente cache-invoer in config.yml.
+    Standaard ingesteld op false...
+  wwcConfigGUIPersistentCacheButton: Persistent Cache inschakelen
+  wwcConfigConversationPersistentCacheSuccess: Persistent cachegeheugen is succesvol
+    omgeschakeld.
+  wwcConfigPersistentCacheEnabled: De cachegegevens blijven tijdens het opnieuw laden
+    behouden.
+  wwcConfigConversationCharacterLimitInput: De huidige tekenlimiet per bericht is
+    {0} tekens. Typ iets groter dan 0 (maar kleiner dan 256) om een nieuwe waarde
+    in te stellen, of typ 0 om terug te gaan.
 

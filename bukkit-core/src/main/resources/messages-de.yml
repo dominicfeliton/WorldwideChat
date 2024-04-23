@@ -271,9 +271,6 @@ Messages:
   wwcteOffTarget: Die Entitätsübersetzung wurde für {0} deaktiviert.
   wwcCharLimit: Ihre Nachricht ist zu lang! Bitte stellen Sie sicher, dass Ihre Nachricht
     weniger als {0} Zeichen lang ist.
-  wwcConfigConversationCharacterLimitInput: Die aktuelle Zeichenbeschränkung pro Nachricht
-    beträgt {0} Zeichen. Geben Sie etwas größer als 0 ein, um einen neuen Wert festzulegen,
-    oder geben Sie etwas kleiner oder gleich 0 ein, um zurückzukehren.
   wwcteOffSender: Entitätsübersetzung ist deaktiviert
   wwctGUIEntityButton: Entitätsübersetzung umschalten
   wwctrlRateLimitBadInt: Ihr Ratenlimit ist keine gültige Ganzzahl.
@@ -647,4 +644,13 @@ Messages:
     werden.
   wwcrStorageFail: WorldwideChat wurde neu geladen und erfolgreich ein Übersetzer
     aktiviert, aber Ihre Speicherkonfiguration konnte keine Verbindung herstellen.
+  wwcConfigPersistentCacheInvalid: Ungültiger persistenter Cache-Eintrag in config.yml.
+    Die Standardeinstellung ist falsch...
+  wwcConfigGUIPersistentCacheButton: Persistenten Cache umschalten
+  wwcConfigConversationPersistentCacheSuccess: Der persistente Cache wurde erfolgreich
+    umgeschaltet.
+  wwcConfigPersistentCacheEnabled: Cache-Daten bleiben auch beim erneuten Laden erhalten.
+  wwcConfigConversationCharacterLimitInput: Die aktuelle Zeichenbeschränkung pro Nachricht
+    beträgt {0} Zeichen. Geben Sie einen Wert größer als 0 (aber weniger als 256)
+    ein, um einen neuen Wert festzulegen, oder geben Sie 0 ein, um zurückzugehen.
 

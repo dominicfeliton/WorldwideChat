@@ -260,9 +260,6 @@ Messages:
   wwcteOffTarget: Përkthimi i subjektit i paaftë për {0}.
   wwcCharLimit: Mesazhi juaj është shumë i gjatë! Ju lutemi sigurohuni që mesazhi
     juaj të jetë më i vogël se {0} karaktere në gjatësi.
-  wwcConfigConversationCharacterLimitInput: Kufiri aktual i karakterit për mesazh
-    është {0} karaktere. Shkruani ndonjë gjë më të madhe se 0 për të vendosur një
-    vlerë të re, ose shkruani ndonjë gjë më pak se ose të barabartë me 0 për t'u kthyer.
   wwcteOffSender: Përkthimi subjekt me aftësi
   wwctGUIEntityButton: Toggle Enti Përkthimi
   wwctrlRateLimitBadInt: Kufiri juaj i normës nuk është një numër i plotë i vlefshëm.
@@ -615,4 +612,13 @@ Messages:
     përkthyes dhe të lidhet me konfigurimin tuaj të ruajtjes.
   wwcrStorageFail: Rimarkoi WorldwideChat dhe aktivizoi me sukses një përkthyes, por
     konfigurimi juaj i ruajtjes dështoi të lidhet.
+  wwcConfigPersistentCacheInvalid: Regjistrimi i pavlefshëm i përhershëm i cache në
+    config.yml. Parashikimi i rremë...
+  wwcConfigGUIPersistentCacheButton: Ndryshoni memorien e vazhdueshme
+  wwcConfigConversationPersistentCacheSuccess: Cache e vazhdueshme u ndërrua me sukses.
+  wwcConfigPersistentCacheEnabled: Të dhënat e cache do të vazhdojnë në të gjithë
+    rimbushjet.
+  wwcConfigConversationCharacterLimitInput: Kufiri aktual i karakterit për mesazh
+    është {0} karakteret. Shkruani diçka më të madhe se 0 (por më pak se 256) për
+    të vendosur një vlerë të re, ose shkruani 0 për të kthyer prapa.
 

@@ -198,8 +198,6 @@ Messages:
   wwcConfigMessageCharLimitEnabled: 每封邮件的字符数限制设置为 {0} 个字符。
   wwcteOffTarget: 已为 {0} 禁用实体转换。
   wwcCharLimit: 你的留言太长了！请确保您的消息长度少于 {0} 个字符。
-  wwcConfigConversationCharacterLimitInput: 每封邮件的当前字符数限制为 {0} 个字符。键入大于 0 的任何内容以设置新值，或键入小于或等于
-    0 的任何值以返回。
   wwcteOffSender: 实体翻译已禁用。
   wwctGUIEntityButton: 切换实体翻译
   wwctrlRateLimitBadInt: 您的速率限制不是有效的整数。
@@ -449,4 +447,10 @@ Messages:
   wwctGUISourceOrTargetTranslationAlreadyGlobal: 这种语言已经在全球范围内活跃了！
   wwcrStorageTranslatorFail: 已重新加载WorldwideChat，但未能启用转换器并连接您的存储配置。
   wwcrStorageFail: 已重新加载WorldwideChat并成功启用翻译器，但您的存储配置无法连接。
+  wwcConfigPersistentCacheInvalid: config.yml 中的永久缓存条目无效。默认为 false...
+  wwcConfigGUIPersistentCacheButton: 切换永久缓存
+  wwcConfigConversationPersistentCacheSuccess: 永久缓存已成功切换。
+  wwcConfigPersistentCacheEnabled: 缓存数据将在重新加载后保持不变。
+  wwcConfigConversationCharacterLimitInput: 每条消息的当前字符限制为 {0} 个字符。键入任何大于 0（但小于 256）的值以设置新值，或键入
+    0 返回。
 

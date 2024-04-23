@@ -242,9 +242,6 @@ Messages:
   wwcteOffTarget: Tradiksyon antite andikape pou % mwen.
   wwcCharLimit: Mesaj ou a twò lontan! Tanpri asire w ke mesaj ou a se mwens pase
     % mwen karaktè nan longè.
-  wwcConfigConversationCharacterLimitInput: Limit karaktè aktyèl la pou chak mesaj
-    se % mwen karaktè. Tape anyen ki pi konsekan pase 0 yo mete yon nouvo valè, oswa
-    tape anyen mwens pase oswa egal a 0 ale tounen.
   wwcteOffSender: Tradiksyon antite enfim.
   wwctGUIEntityButton: Tradiksyon antite baskil
   wwctrlRateLimitBadInt: Limit pousantaj ou a se pa yon nonb antye relatif ki valab.
@@ -565,4 +562,12 @@ Messages:
     ak konekte ak konfigirasyon depo ou.
   wwcrStorageFail: Reloaded WorldwideChat ak avèk siksè pèmèt yon tradiktè, men konfigirasyon
     depo ou echwe konekte.
+  wwcConfigPersistentCacheInvalid: Envalid antre kachèt pèsistan nan config.yml. Defaulting
+    nan fo...
+  wwcConfigGUIPersistentCacheButton: Aktifye kachèt ki pèsistan
+  wwcConfigConversationPersistentCacheSuccess: Kachèt ki pèsistan toggle avèk siksè.
+  wwcConfigPersistentCacheEnabled: Done kachèt ap pèsiste atravè rcharj.
+  wwcConfigConversationCharacterLimitInput: Limit aktyèl la karaktè pou chak mesaj
+    se {0} karaktè. Tape anyen pi gran pase 0 (men mwens pase 256) yo mete yon valè
+    nouvo, oswa tape 0 pou tounen.
 

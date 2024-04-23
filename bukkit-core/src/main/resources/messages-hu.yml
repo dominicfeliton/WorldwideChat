@@ -253,9 +253,6 @@ Messages:
   wwcteOffTarget: 'Entitásfordítás letiltva: {0}.'
   wwcCharLimit: Túl hosszú az üzeneted! Győződjön meg arról, hogy az üzenet hossza
     kevesebb, mint a {0} karakter.
-  wwcConfigConversationCharacterLimitInput: Az üzenetenkénti aktuális karakterkorlát
-    {0} karakter. Ha új értéket szeretne beállítani, írjon be egy 0-nál nagyobb értéket,
-    vagy írjon be egy nullánál kisebb vagy egyenlő értéket a visszatéréshez.
   wwcteOffSender: Az entitásfordítás letiltva
   wwctGUIEntityButton: Entitásfordítás be-
   wwctrlRateLimitBadInt: A díjkorlát nem érvényes egész szám.
@@ -599,4 +596,12 @@ Messages:
     a fordítót és csatlakozni a tárolókonfigurációhoz.
   wwcrStorageFail: Újratöltötte a WorldwideChat-t, és sikeresen engedélyezte a fordítót,
     de a tárolókonfiguráció nem sikerült csatlakoztatni.
+  wwcConfigPersistentCacheInvalid: Érvénytelen állandó gyorsítótár bejegyzés a config.yml-ben.
+    Alapértelmezés szerint hamis...
+  wwcConfigGUIPersistentCacheButton: Állandó gyorsítótár váltása
+  wwcConfigConversationPersistentCacheSuccess: Az állandó gyorsítótár sikeresen bekapcsolta.
+  wwcConfigPersistentCacheEnabled: A gyorsítótár adatai az újratöltések során megmaradnak.
+  wwcConfigConversationCharacterLimitInput: Az üzenetenkénti aktuális karakterkorlát
+    {0} karakter. Írja be a 0-nál nagyobb (de 256-nál kisebb) értéket az új érték
+    beállításához, vagy írja be a 0 parancsot a visszaállításhoz.
 

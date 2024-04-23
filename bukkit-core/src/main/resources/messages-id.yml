@@ -250,9 +250,6 @@ Messages:
   wwcteOffTarget: Terjemahan entitas dinonaktifkan untuk {0}.
   wwcCharLimit: Pesan Anda terlalu panjang! Pastikan pesan Anda kurang dari {0} karakter
     panjangnya.
-  wwcConfigConversationCharacterLimitInput: Batas karakter saat ini per pesan adalah
-    {0} karakter. Ketik sesuatu yang lebih besar dari 0 untuk menetapkan nilai baru,
-    atau ketik sesuatu yang kurang dari atau sama dengan 0 untuk kembali.
   wwcteOffSender: Terjemahan entitas dinonaktifkan.
   wwctGUIEntityButton: Alihkan Terjemahan Entitas
   wwctrlRateLimitBadInt: Batas tingkat Anda bukan bilangan bulat yang valid.
@@ -576,4 +573,12 @@ Messages:
     dan terhubung dengan konfigurasi penyimpanan Anda.
   wwcrStorageFail: Memuat ulang WorldwideChat dan berhasil mengaktifkan penerjemah,
     tetapi konfigurasi penyimpanan Anda gagal terhubung.
+  wwcConfigPersistentCacheInvalid: Entri cache persisten tidak valid di config.yml.
+    Default menjadi false...
+  wwcConfigGUIPersistentCacheButton: Alihkan Cache Persisten
+  wwcConfigConversationPersistentCacheSuccess: Cache persisten berhasil dialihkan.
+  wwcConfigPersistentCacheEnabled: Data cache akan bertahan selama pemuatan ulang.
+  wwcConfigConversationCharacterLimitInput: Batas karakter per pesan saat ini adalah
+    karakter {0}. Ketik sesuatu yang lebih besar dari 0 (tetapi kurang dari 256) untuk
+    menetapkan nilai baru, atau ketik 0 untuk kembali.
 

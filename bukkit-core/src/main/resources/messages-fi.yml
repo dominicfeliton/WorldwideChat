@@ -245,9 +245,6 @@ Messages:
   wwcteOffTarget: Entiteetin käännös käytöstä kohteella %
   wwcCharLimit: Viestisi on liian pitkä! Varmista, että viestisi on pituudeltaan alle
     {0} merkkiä.
-  wwcConfigConversationCharacterLimitInput: Viestin nykyinen merkkiraja on {0}-merkkiä.
-    Kirjoita jokin suurempi kuin 0, jos haluat asettaa uuden arvon, tai kirjoita jotain
-    vähemmän tai yhtä suuri kuin 0, jos haluat palata takaisin.
   wwcteOffSender: Yksikön käännös käytöstä
   wwctGUIEntityButton: Vaihda entiteetin käännös
   wwctrlRateLimitBadInt: Korkorajoituksesi ei ole kelvollinen kokonaisluku.
@@ -576,4 +573,13 @@ Messages:
     käyttöön ja yhteyden muodostaminen tallennuskokoonpanoon epäonnistui.
   wwcrStorageFail: Ladattu WorldwideChat uudelleen ja kääntäjä otettiin onnistuneesti
     käyttöön, mutta tallennuskokoonpanosi ei muodostanut yhteyttä.
+  wwcConfigPersistentCacheInvalid: 'Virheellinen pysyvä välimuistin merkintä config.yml:
+    ssä. Oletuksena väärä...'
+  wwcConfigGUIPersistentCacheButton: Vaihda pysyvä välimuisti
+  wwcConfigConversationPersistentCacheSuccess: Pysyvä välimuisti vaihdettiin onnistuneesti.
+  wwcConfigPersistentCacheEnabled: Välimuistin tiedot säilyvät uudelleenlatausten
+    aikana.
+  wwcConfigConversationCharacterLimitInput: Nykyinen merkkirajoitus viestiä kohden
+    on {0} merkkiä. Aseta uusi arvo kirjoittamalla mikä tahansa suurempi kuin 0 (mutta
+    pienempi kuin 256) tai kirjoita 0 palataksesi takaisin.
 
