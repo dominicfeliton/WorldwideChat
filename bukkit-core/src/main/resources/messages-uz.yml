@@ -599,7 +599,13 @@ Messages:
     masala haqida ko'proq verbose ma'lumot sizning konsolingizga chop etildi; siz
     buni qo'lda tuzatishingiz mumkin.
   wwcdSQLAllSet: Sizning MySQL/PostgreSQL jadvallaringiz to'g'ri formatlangan.
-  wwcOldDatabaseStruct: 'Sizning tanlagan ma''lumotlar bazangiz WorldwideChat-ning
-    oldingi versiyasidan samarasiz sozlamaga ega. Qo''shimcha ma''lumot olish uchun
-    quyidagi buyruqni yozing: /wwcd checkdb'
+  wwcdColumnBadType: '{1} jadvalidagi {0} ustuni {2} turiga ega, lekin kutilgan {3}
+    turiga ega.'
+  wwcdColumnMissing: '{0} ustuni {1} jadvalida etishmayapti.'
+  wwcdGoodTable: '{0} jadvali ({1}) to''g''ri formatdir.'
+  wwcdBadTable: Jadval {0} ichki ta'riflarda topilmadi. Iltimos, ishlab chiquvchiga
+    murojaat qiling.
+  wwcOldDatabaseStruct: 'Sizning tanlagan ma''lumotlar bazangiz noto''g''ri jadval
+    sozlamasiga ega. Qo''shimcha ma''lumot olish uchun quyidagi buyruqni yozing: /wwcd
+    checkdb'
 

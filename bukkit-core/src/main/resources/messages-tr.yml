@@ -573,7 +573,12 @@ Messages:
     veya daha fazlasının yanlış/modası geçmiş bir biçime sahip. Bu sorunla ilgili
     daha ayrıntılı bilgi konsolunuza yazdırılmıştır; bunu manuel olarak düzeltebilirsiniz.
   wwcdSQLAllSet: MySQL/PostgreSQL tablolarınız düzgün biçimde biçimlendirilmiştir.
-  wwcOldDatabaseStruct: 'Seçtiğiniz veritabanı, WorldwideChat"in önceki bir sürümünden
-    verimsiz bir kuruluma sahiptir. Daha fazla bilgi için aşağıdaki komutu yazın:
-    /wwcd checkdb'
+  wwcdColumnBadType: Tablo {1} içindeki {0} sütunu {2} tipinde ancak beklenen {3}
+    türüne sahiptir.
+  wwcdColumnMissing: Tablo {1} 'de sütun {0} eksik.
+  wwcdGoodTable: '{0} tablosu ({1}) doğru biçimdir.'
+  wwcdBadTable: Tablo {0} dahili tanımlarda bulunamadı. Lütfen geliştirici ile iletişime
+    geçin.
+  wwcOldDatabaseStruct: 'Seçtiğiniz veritabanında yanlış bir tablo kurulumu var. Daha
+    fazla bilgi için aşağıdaki komutu yazın: /wwcd checkdb'
 

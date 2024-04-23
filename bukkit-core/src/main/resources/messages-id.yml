@@ -566,7 +566,12 @@ Messages:
     memiliki format yang salah/ketinggalan zaman. Informasi lebih lanjut tentang masalah
     ini telah dicetak ke konsol Anda; Anda mungkin dapat memperbaikinya secara manual.
   wwcdSQLAllSet: Tabel MySQL/PostgreSQL Anda diformat dengan benar.
-  wwcOldDatabaseStruct: 'Basis data pilihan Anda memiliki pengaturan yang tidak efisien
-    dari versi WorldwideChat sebelumnya. Ketik perintah berikut untuk informasi lebih
-    lanjut: /wwcd checkdb'
+  wwcdColumnBadType: Kolom {0} pada tabel {1} memiliki tipe {2} tetapi tipe yang diharapkan
+    {3}.
+  wwcdColumnMissing: Kolom {0} tidak ada di tabel {1}.
+  wwcdGoodTable: Tabel {0} ({1}) adalah format yang benar.
+  wwcdBadTable: Tabel {0} tidak ditemukan dalam definisi internal. Silakan hubungi
+    pengembang.
+  wwcOldDatabaseStruct: 'Database yang Anda pilih memiliki pengaturan tabel yang salah.
+    Ketik perintah berikut untuk informasi lebih lanjut: /wwcd checkdb'
 

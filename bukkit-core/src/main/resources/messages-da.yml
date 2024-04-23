@@ -575,7 +575,10 @@ Messages:
     har et forkert/forældet format. Flere detaljerede oplysninger om dette problem
     er blevet udskrevet på din konsol; du kan muligvis løse dette manuelt.
   wwcdSQLAllSet: Dine MySQL/PostgreSQL-tabeller er korrekt formateret.
-  wwcOldDatabaseStruct: 'Din valgte database har en ineffektiv opsætning fra en tidligere
-    version af WorldwideChat. Skriv følgende kommando for at få flere oplysninger:
-    /wwcd checkdb'
+  wwcdColumnBadType: Kolonne {0} i tabel {1} har type {2}, men forventet type {3}.
+  wwcdColumnMissing: Kolonne {0} mangler i tabel {1}.
+  wwcdGoodTable: '{0} tabel ({1}) er det korrekte format.'
+  wwcdBadTable: Tabel {0} findes ikke i interne definitioner. Kontakt venligst udvikleren.
+  wwcOldDatabaseStruct: 'Den valgte database har en forkert tabelopsætning. Skriv
+    følgende kommando for at få flere oplysninger: /wwcd checkdb'
 

@@ -582,7 +582,11 @@ Messages:
     obliko. Več podrobnih informacij o tej težavi je bilo natisnjenih na vašo konzolo;
     to boste morda lahko odpravili ročno.
   wwcdSQLAllSet: Vaše tabele MySQL/PostgreSQL so pravilno oblikovane.
-  wwcOldDatabaseStruct: 'Vaša izbrana zbirka podatkov ima neučinkovito nastavitev
-    iz prejšnje različice WorldwideChat. Za več informacij vnesite naslednji ukaz:
-    /wwcd checkdb'
+  wwcdColumnBadType: Stolpec {0} v tabeli {1} ima vrsto {2}, vendar pričakovani tip
+    {3}.
+  wwcdColumnMissing: V tabeli {1} manjka stolpec {0}.
+  wwcdGoodTable: '{0} tabela ({1}) je pravilna oblika.'
+  wwcdBadTable: Tabela {0} ni najdena v notranjih definicijah. Obrnite se na razvijalca.
+  wwcOldDatabaseStruct: 'Izbrana zbirka podatkov ima napačno nastavitev tabele. Za
+    več informacij vnesite naslednji ukaz: /wwcd checkdb'
 

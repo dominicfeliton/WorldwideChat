@@ -583,7 +583,11 @@ Messages:
     töflunum þínum hafi rangt/gamaldags snið. Frekari upplýsingar um þetta mál hafa
     verið prentaðar á vélinni þinni; þú gætir verið fær um að laga þetta handvirkt.
   wwcdSQLAllSet: MySQL/PostgreSQL töflurnar þínar eru rétt sniðnar.
-  wwcOldDatabaseStruct: 'Gagnagrunnurinn sem valinn er með óhagkvæma uppsetningu frá
-    fyrri útgáfu af WorldwideChat. Sláðu inn eftirfarandi skipun til að fá frekari
-    upplýsingar: /wwcd checkdb'
+  wwcdColumnBadType: Dálkur {0} í töflu {1} er með tegund {2} en væntanlega gerð {3}.
+  wwcdColumnMissing: Dálkur {0} vantar í töflu {1}.
+  wwcdGoodTable: '{0} tafla ({1}) er rétt snið.'
+  wwcdBadTable: Tafla {0} er ekki að finna í innri skilgreiningum. Vinsamlegast hafðu
+    samband við framkvæmdaraðila.
+  wwcOldDatabaseStruct: 'Gagnagrunnurinn sem valinn er með ranga töfluuppsetningu.
+    Sláðu inn eftirfarandi skipun til að fá frekari upplýsingar: /wwcd checkdb'
 

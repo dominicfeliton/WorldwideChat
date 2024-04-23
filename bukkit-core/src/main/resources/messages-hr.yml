@@ -577,6 +577,11 @@ Messages:
     ima netačan/zastarjeli format. Više detaljnih informacija o ovom problemu ispisano
     je na vašoj konzoli; možda ćete to moći riješiti ručno.
   wwcdSQLAllSet: Vaše MySQL/PostgreSQL tablice su pravilno formatirane.
-  wwcOldDatabaseStruct: 'Vaša odabrana baza podataka ima neefikasnu postavku iz prethodne
-    verzije WorldwideChat-a. Upišite sljedeću naredbu za više informacija: /wwcd checkdb'
+  wwcdColumnBadType: Stupac {0} u tablici {1} ima tip {2}, ali očekivani tip {3}.
+  wwcdColumnMissing: Stupac {0} nedostaje u tablici {1}.
+  wwcdGoodTable: '{0} tablica ({1}) je ispravan format.'
+  wwcdBadTable: Tablica {0} nije pronađena u internim definicijama. Molimo kontaktirajte
+    programera.
+  wwcOldDatabaseStruct: 'Odabrana baza podataka ima pogrešnu postavku tablice. Upišite
+    sljedeću naredbu za više informacija: /wwcd checkdb'
 

@@ -619,7 +619,12 @@ Messages:
     tenen un format incorrecte/obsolet. S'ha imprès més informació verbosa sobre aquest
     problema a la vostra consola; és possible que pugueu solucionar-ho manualment.
   wwcdSQLAllSet: Les vostres taules MySQL/PostgreSQL estan correctament formatades.
-  wwcOldDatabaseStruct: 'La vostra base de dades escollida té una configuració ineficient
-    d''una versió anterior de WorldwideChat. Escriviu l''ordre següent per obtenir
-    més informació: /wwcd checkdb'
+  wwcdColumnBadType: La columna {0} de la taula {1} té tipus {2} però s'espera el
+    tipus {3}.
+  wwcdColumnMissing: Falta la columna {0} a la taula {1}.
+  wwcdGoodTable: La taula {0} ({1}) és el format correcte.
+  wwcdBadTable: La taula {0} no es troba a les definicions internes. Poseu-vos en
+    contacte amb el desenvolupador.
+  wwcOldDatabaseStruct: 'La base de dades escollida té una configuració incorrecta
+    de la taula. Escriviu l''ordre següent per obtenir més informació: /wwcd checkdb'
 

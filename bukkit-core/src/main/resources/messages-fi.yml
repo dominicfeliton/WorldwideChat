@@ -569,7 +569,11 @@ Messages:
     on väärän/vanhentunut muoto. Konsoliin on tulostettu yksityiskohtaisempia tietoja
     tästä ongelmasta; saatat pystyä korjaamaan tämän manuaalisesti.
   wwcdSQLAllSet: MySQL/PostgreSQL-taulukot on muotoiltu oikein.
-  wwcOldDatabaseStruct: 'Valitsemallasi tietokannalla on tehoton asennus aiemmasta
-    WorldwideChat-versiosta. Kirjoita seuraava komento saadaksesi lisätietoja: /wwcd
-    checkdb'
+  wwcdColumnBadType: Taulukon {1} sarakkeessa {0} on tyyppi {2}, mutta odotettu tyyppi
+    {3}.
+  wwcdColumnMissing: Sarake {0} puuttuu taulukosta {1}.
+  wwcdGoodTable: '{0} -taulukko ({1}) on oikea muoto.'
+  wwcdBadTable: Taulukkoa {0} ei löydy sisäisistä määritelmistä. Ota yhteyttä kehittäjään.
+  wwcOldDatabaseStruct: 'Valitsemassasi tietokannassa on virheellinen taulukon asetukset.
+    Kirjoita seuraava komento saadaksesi lisätietoja: /wwcd checkdb'
 

@@ -612,7 +612,12 @@ Messages:
     gceist seo clóite chuig do chonsól; b'fhéidir go mbeidh tú in ann é seo a shocrú
     de láimh.
   wwcdSQLAllSet: Tá do tháblaí MySQL/PostgreSQL formáidithe i gceart.
-  wwcOldDatabaseStruct: 'Tá socrú neamhéifeachtach ag do bhunachar sonraí roghnaithe
-    ó leagan roimhe seo de WorldwideChat. Clóscríobh an t-ordú seo a leanas le haghaidh
-    tuilleadh faisnéise: /wwcd checkdb'
+  wwcdColumnBadType: Tá cineál {2} ag colún {0} i dtábla {1} ach tá cineál {3} ag
+    súil leis.
+  wwcdColumnMissing: Tá colún {0} ar iarraidh i dtábla {1}.
+  wwcdGoodTable: Is é tábla {0} ({1}) an fhormáid cheart.
+  wwcdBadTable: Tábla {0} nach bhfuil le fáil i sainmhínithe inmheánacha. Déan teagmháil
+    leis an bhforbróir.
+  wwcOldDatabaseStruct: 'Tá socrú tábla mícheart ag do bhunachar sonraí roghnaithe.
+    Clóscríobh an t-ordú seo a leanas le haghaidh tuilleadh faisnéise: /wwcd checkdb'
 

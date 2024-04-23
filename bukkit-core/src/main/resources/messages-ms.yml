@@ -572,7 +572,11 @@ Messages:
     mengenai isu ini telah dicetak ke konsol anda; anda mungkin dapat memperbaikinya
     secara manual.
   wwcdSQLAllSet: Jadual MySQL/PostgreSQL anda diformat dengan betul.
-  wwcOldDatabaseStruct: 'Pangkalan data pilihan anda mempunyai persediaan yang tidak
-    cekap daripada versi WorldwideChat sebelumnya. Taipkan arahan berikut untuk maklumat
-    lanjut: /wwcd checkdb'
+  wwcdColumnBadType: Lajur {0} dalam jadual {1} mempunyai jenis {2} tetapi dijangkakan
+    jenis {3}.
+  wwcdColumnMissing: Lajur {0} hilang dalam jadual {1}.
+  wwcdGoodTable: Jadual {0} ({1}) adalah format yang betul.
+  wwcdBadTable: Jadual {0} tidak terdapat dalam definisi dalaman. Sila hubungi pemaju.
+  wwcOldDatabaseStruct: 'Pangkalan data yang anda pilih mempunyai persediaan jadual
+    yang salah. Taipkan arahan berikut untuk maklumat lanjut: /wwcd checkdb'
 

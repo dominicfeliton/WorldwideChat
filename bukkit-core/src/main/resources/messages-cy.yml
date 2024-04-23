@@ -582,7 +582,10 @@ Messages:
     PostgreSQL fformat anghywir/hen ffasiwn. Mae mwy o wybodaeth dyddorol am y mater
     hwn wedi'i hargraffu i'ch consol; efallai y gallwch drwsio hyn â llaw.
   wwcdSQLAllSet: Mae eich tablau MySQL/PostgreSQL wedi'u fformatio'n iawn.
-  wwcOldDatabaseStruct: 'Mae gan eich cronfa ddata a ddewiswyd setup aneffeithlon
-    o fersiwn flaenorol o WorldwideChat. Teipiwch y gorchymyn canlynol am fwy o wybodaeth:
-    /wwcd checkdb'
+  wwcdColumnBadType: Mae gan golofn {0} yn nhabl {1} fath {2} ond math {3} disgwyliedig.
+  wwcdColumnMissing: Mae colofn {0} ar goll yn nhabl {1}.
+  wwcdGoodTable: Tabl {0} ({1}) yw'r fformat cywir.
+  wwcdBadTable: Ni cheir Tabl {0} mewn diffiniadau mewnol. Cysylltwch â'r datblygwr.
+  wwcOldDatabaseStruct: 'Mae gan eich cronfa ddata ddewisol setup tabl anghywir. Teipiwch
+    y gorchymyn canlynol am fwy o wybodaeth: /wwcd checkdb'
 

@@ -479,6 +479,10 @@ Messages:
   wwcdOutdatedSQLStruct: MySQL 또는 PostgreSQL 테이블 중 하나 이상의 형식이 올바르지 않거나 오래된 것 같습니다.이
     문제에 대한 보다 자세한 정보가 콘솔에 인쇄되었으므로 수동으로 해결할 수도 있습니다.
   wwcdSQLAllSet: MySQL/PostgreSQL 테이블의 형식이 올바르게 지정되었습니다.
-  wwcOldDatabaseStruct: 선택한 데이터베이스가 이전 버전의 WorldwideChat보다 비효율적으로 설정되었습니다.자세한 내용을
-    보려면 다음 명령을 입력하십시오. /wwcd checkdb
+  wwcdColumnBadType: 테이블 {1} 의 {0} 열 유형은 {2} 이지만 예상 유형은 {3} 입니다.
+  wwcdColumnMissing: 테이블 {1} 에 {0} 열이 없습니다.
+  wwcdGoodTable: '{0} 표 ({1}) 가 올바른 형식입니다.'
+  wwcdBadTable: 내부 정의에는 표 {0} 가 없습니다.개발자에게 문의하세요.
+  wwcOldDatabaseStruct: 선택한 데이터베이스의 테이블 설정이 잘못되었습니다.자세한 내용을 보려면 다음 명령을 입력하십시오. /wwcd
+    checkdb
 

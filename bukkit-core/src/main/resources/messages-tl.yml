@@ -645,7 +645,12 @@ Messages:
     impormasyon tungkol sa isyung ito ay naka-print sa iyong console; maaari mong
     ayusin ito nang manu-mano.
   wwcdSQLAllSet: Ang iyong mga talahanayan ng MySQL/PostgreSQL ay maayos na na-format.
-  wwcOldDatabaseStruct: 'Ang iyong napiling database ay may hindi mahusay na pag-setup
-    mula sa isang nakaraang bersyon ng WorldwideChat. I-type ang sumusunod na utos
-    para sa karagdagang impormasyon: /wwcd checkdb'
+  wwcdColumnBadType: Ang haligi {0} sa talahanayan {1} ay may uri {2} ngunit inaasahang
+    uri {3}.
+  wwcdColumnMissing: Nawawala ang haligi {0} sa talahanayan {1}.
+  wwcdGoodTable: Ang {0} table ({1}) ay ang tamang format.
+  wwcdBadTable: Talahanayan {0} hindi matatagpuan sa mga panloob na kahulugan Mangyaring
+    makipag-ugnay sa developer.
+  wwcOldDatabaseStruct: 'Ang iyong napiling database ay may maling pag-setup ng talahanayan.
+    I-type ang sumusunod na utos para sa karagdagang impormasyon: /wwcd checkdb'
 

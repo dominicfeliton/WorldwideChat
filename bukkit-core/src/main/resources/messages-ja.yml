@@ -456,6 +456,9 @@ Messages:
     未満) を入力して新しい値を設定するか、0 を入力して戻ります。
   wwcdOutdatedSQLStruct: MySQL または PostgreSQL テーブルの 1 つまたは複数の形式が正しくないか古いようです。この問題に関する詳細な情報がコンソールに出力されました。手動で修正できる場合があります。
   wwcdSQLAllSet: MySQL/PostgreSQL テーブルは正しくフォーマットされています。
-  wwcOldDatabaseStruct: 選択したデータベースは、以前のバージョンの WorldwideChat の設定では効率が悪いです。詳細については、次のコマンドを入力してください。/wwcd
-    checkdb
+  wwcdColumnBadType: テーブル {1} の列 {0} はタイプ {2} ですが、タイプ {3} が必要です。
+  wwcdColumnMissing: 列 {0} がテーブル {1} にありません。
+  wwcdGoodTable: '{0} テーブル ({1}) が正しい形式です。'
+  wwcdBadTable: テーブル {0} が内部定義に見つかりません。開発者に問い合わせてください。
+  wwcOldDatabaseStruct: 選択したデータベースのテーブル設定が正しくありません。詳細については、次のコマンドを入力してください。/wwcd checkdb
 

@@ -578,7 +578,11 @@ Messages:
     'n onkorrekte/verouderde formaat het. Meer uiteenlopende inligting oor hierdie
     probleem is op u konsole gedruk; u kan dit dalk handmatig oplos.
   wwcdSQLAllSet: Jou MySQL/PostgreSQL-tabelle is behoorlik geformateer.
-  wwcOldDatabaseStruct: 'U gekose databasis het ''n ondoeltreffende opstelling uit
-    ''n vorige weergawe van WorldwideChat. Tik die volgende opdrag vir meer inligting:
-    /wwcd checkdb'
+  wwcdColumnBadType: Kolom {0} in tabel {1} het tipe {2} maar verwagte tipe {3}.
+  wwcdColumnMissing: Kolom {0} ontbreek in tabel {1}.
+  wwcdGoodTable: '{0} tabel ({1}) is die korrekte formaat.'
+  wwcdBadTable: Tabel {0} word nie in interne definisies gevind nie. Kontak asseblief
+    die ontwikkelaar.
+  wwcOldDatabaseStruct: 'U gekose databasis het ''n verkeerde tabelopstelling. Tik
+    die volgende opdrag vir meer inligting: /wwcd checkdb'
 

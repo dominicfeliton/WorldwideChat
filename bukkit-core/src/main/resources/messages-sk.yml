@@ -584,6 +584,11 @@ Messages:
     PostgreSQL má nesprávny/zastaraný formát. Viac podrobných informácií o tomto probléme
     boli vytlačené v konzole; možno budete môcť opraviť manuálne.
   wwcdSQLAllSet: Vaše tabuľky MySQL/PostgreSQL sú správne naformátované.
-  wwcOldDatabaseStruct: 'Vaša vybraná databáza má neefektívne nastavenie z predchádzajúcej
-    verzie WorldwideChat. Pre viac informácií zadajte nasledujúci príkaz: /wwcd checkdb'
+  wwcdColumnBadType: Stĺpec {0} v tabuľke {1} má typ {2}, ale očakáva sa typ {3}.
+  wwcdColumnMissing: Stĺpec {0} chýba v tabuľke {1}.
+  wwcdGoodTable: '{0} tabuľka ({1}) je správny formát.'
+  wwcdBadTable: Tabuľka {0} sa nenachádza vo vnútorných definíciách. Obráťte sa prosím
+    na vývojára.
+  wwcOldDatabaseStruct: 'Zvolená databáza má nesprávne nastavenie tabuľky. Pre viac
+    informácií zadajte nasledujúci príkaz: /wwcd checkdb'
 

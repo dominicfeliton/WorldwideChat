@@ -448,6 +448,9 @@ Messages:
     0 以返回。
   wwcdOutdatedSQLStruct: 看起來一個或多個 MySQL 或 PostgreSQL 表格式不正確/過時。有關此問題的更多詳細資訊已列印到您的主機上，您可以手動修正此問題。
   wwcdSQLAllSet: 您的 MySQL/PostgreSQL 表格已正確格式化。
-  wwcOldDatabaseStruct: 您選擇的數據庫的設置比以前版本的 WorldwideChat 的設置效率不高。鍵入下列命令以取得更多資訊：/wwcd
-    checkdb
+  wwcdColumnBadType: 表 {1} 中的 {0} 欄具有類型 {2}，但預期的類型為 {3}。
+  wwcdColumnMissing: 表 {1} 中缺少列 {0}。
+  wwcdGoodTable: '{0} 表格 ({1}) 是正確的格式。'
+  wwcdBadTable: 內部定義中找不到表 {0}。請聯繫開發人員。
+  wwcOldDatabaseStruct: 您選擇的資料庫的資料表設定不正確。鍵入下列命令以取得更多資訊：/wwcd checkdb
 

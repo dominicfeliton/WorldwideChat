@@ -630,7 +630,12 @@ Messages:
     tienen un formato incorrecto o desactualizado. Se ha impreso información más detallada
     sobre este problema en su consola; es posible que pueda solucionarlo manualmente.
   wwcdSQLAllSet: Sus tablas de MySQL/PostgreSQL tienen el formato correcto.
-  wwcOldDatabaseStruct: 'La base de datos elegida tiene una configuración ineficiente
-    respecto a una versión anterior de WorldwideChat. Escriba el siguiente comando
-    para obtener más información: /wwcd checkdb'
+  wwcdColumnBadType: La columna {0} de la tabla {1} tiene el tipo {2} pero se espera
+    el tipo {3}.
+  wwcdColumnMissing: Falta la columna {0} en la tabla {1}.
+  wwcdGoodTable: La tabla {0} ({1}) tiene el formato correcto.
+  wwcdBadTable: La tabla {0} no se encuentra en las definiciones internas. Ponte en
+    contacto con el desarrollador.
+  wwcOldDatabaseStruct: 'La base de datos elegida tiene una configuración de tabla
+    incorrecta. Escriba el siguiente comando para obtener más información: /wwcd checkdb'
 

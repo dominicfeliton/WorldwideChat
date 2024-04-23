@@ -577,7 +577,11 @@ Messages:
     tabulām ir nepareizs/novecojis formāts. Plašāka informācija par šo problēmu ir
     izdrukāta jūsu konsolē; iespējams, varēsit to novērst manuāli.
   wwcdSQLAllSet: Jūsu MySQL/PostgreSQL tabulas ir pareizi formatētas.
-  wwcOldDatabaseStruct: 'Jūsu izvēlētajā datu bāzē ir neefektīva iestatīšana no iepriekšējās
-    WorldwideChat versijas. Lai iegūtu papildinformāciju, ierakstiet šādu komandu:
-    /wwcd checkdb'
+  wwcdColumnBadType: '{0} kolonnai tabulā {1} ir tips {2}, bet paredzamais tips {3}.'
+  wwcdColumnMissing: Tabulā {1} trūkst slejas {0}.
+  wwcdGoodTable: '{0} tabula ({1}) ir pareizais formāts.'
+  wwcdBadTable: Tabula {0} nav atrodama iekšējās definīcijās. Lūdzu, sazinieties ar
+    izstrādātāju.
+  wwcOldDatabaseStruct: 'Jūsu izvēlētajā datu bāzē ir nepareiza tabulas iestatīšana.
+    Lai iegūtu papildinformāciju, ierakstiet šādu komandu: /wwcd checkdb'
 

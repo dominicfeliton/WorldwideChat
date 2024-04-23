@@ -568,7 +568,11 @@ Messages:
     və ya bir neçəsinin səhv/köhnəlmiş bir formatı var. Bu problem haqqında daha ətraflı
     məlumat konsolunuza çap edildi; bunu əl ilə düzəldə bilərsiniz.
   wwcdSQLAllSet: MySQL/PostgreSQL cədvəlləriniz düzgün formatlaşdırılmışdır.
-  wwcOldDatabaseStruct: 'Seçdiyiniz verilənlər bazası WorldwideChat-ın əvvəlki versiyasından
-    səmərəsiz bir quraşdırmaya malikdir. Əlavə məlumat üçün aşağıdakı əmri yazın:
-    /wwcd checkdb'
+  wwcdColumnBadType: Cədvəl {1} -dəki sütun {0} tipinə {2}, lakin gözlənilən {3} növünə
+    malikdir.
+  wwcdColumnMissing: Cədvəl {1} -də sütun {0} yoxdur.
+  wwcdGoodTable: '{0} cədvəli ({1}) düzgün formatdır.'
+  wwcdBadTable: Cədvəl {0} daxili təriflərdə tapılmadı. Geliştirici ilə əlaqə saxlayın.
+  wwcOldDatabaseStruct: 'Seçdiyiniz verilənlər bazası səhv cədvəl quruluşuna malikdir.
+    Əlavə məlumat üçün aşağıdakı əmri yazın: /wwcd checkdb'
 

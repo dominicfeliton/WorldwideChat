@@ -577,7 +577,11 @@ Messages:
     zina muundo usio sahihi/imepitwa na wakati. Habari zaidi juu ya suala hili imechapishwa
     kwenye console yako; unaweza kurekebisha hii kwa mikono.
   wwcdSQLAllSet: Meza zako za MySQL/PostgreSQL zimeundwa vizuri.
-  wwcOldDatabaseStruct: 'Hifadhidata yako iliyochagua ina usanidi usio na ufanisi
-    kutoka toleo la awali la WorldwideChat. Andika amri ifuatayo kwa habari zaidi:
-    /wwcd checkdb'
+  wwcdColumnBadType: Safu {0} katika jedwali {1} ina aina {2} lakini aina {3} inatarajiwa.
+  wwcdColumnMissing: Safu {0} haikosekana katika jedwali {1}.
+  wwcdGoodTable: Jedwali la {0} ({1}) ni muundo sahihi.
+  wwcdBadTable: Jedwali {0} haipatikani katika ufafanuzi wa ndani. Tafadhali wasiliana
+    na msanidi programu.
+  wwcOldDatabaseStruct: 'Hifadhidata yako iliyochagua ina usanidi sahihi wa meza.
+    Andika amri ifuatayo kwa habari zaidi: /wwcd checkdb'
 

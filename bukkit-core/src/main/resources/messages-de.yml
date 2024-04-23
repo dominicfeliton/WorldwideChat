@@ -637,7 +637,13 @@ Messages:
     zu diesem Problem wurden auf Ihre Konsole gedruckt. Möglicherweise können Sie
     das Problem manuell beheben.
   wwcdSQLAllSet: Ihre MySQL/PostgreSQL-Tabellen sind richtig formatiert.
-  wwcOldDatabaseStruct: 'Die von Ihnen gewählte Datenbank hat ein ineffizientes Setup
-    aus einer früheren Version von WorldwideChat. Geben Sie den folgenden Befehl ein,
-    um weitere Informationen zu erhalten: /wwcd checkdb'
+  wwcdColumnBadType: Spalte {0} in Tabelle {1} hat den Typ {2}, aber den erwarteten
+    Typ {3}.
+  wwcdColumnMissing: Spalte {0} fehlt in Tabelle {1}.
+  wwcdGoodTable: Die {0} -Tabelle ({1}) hat das richtige Format.
+  wwcdBadTable: Tabelle {0} wurde in internen Definitionen nicht gefunden. Bitte kontaktieren
+    Sie den Entwickler.
+  wwcOldDatabaseStruct: 'Die von Ihnen gewählte Datenbank hat eine falsche Tabelleneinrichtung.
+    Geben Sie den folgenden Befehl ein, um weitere Informationen zu erhalten: /wwcd
+    checkdb'
 

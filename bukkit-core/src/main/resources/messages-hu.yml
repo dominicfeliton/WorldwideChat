@@ -589,7 +589,12 @@ Messages:
     helytelen/elavult formátumú. A problémával kapcsolatos további részleteket nyomtattak
     ki a konzolra; előfordulhat, hogy ezt manuálisan meg tudja javítani.
   wwcdSQLAllSet: A MySQL/PostgreSQL táblák megfelelően vannak formázva.
-  wwcOldDatabaseStruct: 'A választott adatbázis nem hatékony beállítással rendelkezik
-    a WorldwideChat korábbi verziójához képest. További információkért írja be a következő
-    parancsot: /wwcd checkdb'
+  wwcdColumnBadType: A {1} táblázat {0} oszlopának {2} típusa van, de várható {3}
+    típusa.
+  wwcdColumnMissing: A {0} oszlop hiányzik a {1} táblázatból.
+  wwcdGoodTable: A {0} táblázat ({1}) a megfelelő formátum.
+  wwcdBadTable: A {0} táblázat nem található a belső definíciókban. Kérjük, lépjen
+    kapcsolatba a fejlesztővel.
+  wwcOldDatabaseStruct: 'A kiválasztott adatbázis helytelen táblázatbeállítással rendelkezik.
+    További információkért írja be a következő parancsot: /wwcd checkdb'
 

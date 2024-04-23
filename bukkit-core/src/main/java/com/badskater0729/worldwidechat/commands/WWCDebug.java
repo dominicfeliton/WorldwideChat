@@ -34,6 +34,7 @@ public class WWCDebug extends BasicCommand {
         if (args.length == 1) {
             if (args[0].equalsIgnoreCase("checkdb")) {
                 YamlConfiguration conf = main.getConfigManager().getMainConfig();
+                // Preserve original debug val
                 boolean debugBool = conf.getBoolean("General.debugModeEnabled");
 
                 conf.set("General.enableDebugMode", true);

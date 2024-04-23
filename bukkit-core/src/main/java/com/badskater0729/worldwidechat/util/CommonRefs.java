@@ -876,7 +876,7 @@ public class CommonRefs {
 		YamlConfiguration mainConfig = main.getConfigManager().getMainConfig();
 		Map<String, String> tableSchema = CommonRefs.tableSchemas.get(tableName);
 		if (tableSchema == null) {
-			main.getLogger().severe("Invalid table??? ( + " + tableName + " ) Contact the developer!");
+			main.getLogger().severe(getMsg("wwcdBadTable", new String[] {tableName}, null));
 			return false;
 		}
 
@@ -899,7 +899,7 @@ public class CommonRefs {
 
 					if (actualColumnType == null) {
 						// Column is missing
-						debugMsg(String.format("Column '%s' is missing in table '%s'", columnName, tableName));
+						debugMsg(serial(getFancyMsg("wwcdColumnMissing", new String[] {"&b" + columnName, "&b" + tableName}, "&e", null)));
 						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
 						return true;
 					}
@@ -911,8 +911,7 @@ public class CommonRefs {
 
 					if (!expectedColumnType.contains(actualColumnType)) {
 						// Column type doesn't match the expected type
-						debugMsg(String.format("Column '%s' in table '%s' has type '%s' but expected type '%s'",
-								columnName, tableName, actualColumnType, expectedColumnType));
+						debugMsg(serial(getFancyMsg("wwcdColumnBadType", new String[] {"&b" + columnName, "&b" + tableName, "&b" + actualColumnType, "&b"+expectedColumnType}, "&e", null)));
 						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
 						return true;
 					}
@@ -930,7 +929,7 @@ public class CommonRefs {
 				}
 				*/
 
-				debugMsg("SQL table ( " + tableName + " ) is the correct format.");
+				debugMsg(serial(getFancyMsg("wwcdGoodTable", new String[] {"&6MySQL", "&6"+tableName}, "&a", null)));
 				return false; // Table structure matches the schema
 			} catch (SQLException e) {
 				e.printStackTrace();
@@ -957,7 +956,7 @@ public class CommonRefs {
 
 					if (actualColumnType == null) {
 						// Column is missing
-						debugMsg(String.format("Column '%s' is missing in table '%s'", columnName, tableName));
+						debugMsg(serial(getFancyMsg("wwcdColumnMissing", new String[] {"&b"+columnName, "&b"+tableName}, "&e", null)));
 						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
 						return true;
 					}
@@ -973,8 +972,7 @@ public class CommonRefs {
 
 					if (!expectedColumnType.contains(actualColumnType)) {
 						// Column type doesn't match the expected type
-						debugMsg(String.format("Column '%s' in table '%s' has type '%s' but expected type '%s'",
-								columnName, tableName, actualColumnType, expectedColumnType));
+						debugMsg(serial(getFancyMsg("wwcdColumnBadType", new String[] {"&b"+columnName, "&b"+tableName, "&b"+actualColumnType, "&b"+expectedColumnType}, "&e", null)));
 						main.getLogger().severe(getMsg("wwcOldDatabaseStruct", null));
 						return true;
 					}
@@ -999,7 +997,7 @@ public class CommonRefs {
 				}
 				 */
 
-				debugMsg("PostgreSQL table ( " + tableName + " ) is the correct format.");
+				debugMsg(serial(getFancyMsg("wwcdGoodTable", new String[] {"&6PostgreSQL", "&6"+tableName}, "&a", null)));
 				return false; // Table structure matches the schema
 			} catch (SQLException e) {
 				e.printStackTrace();

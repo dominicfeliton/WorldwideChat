@@ -583,7 +583,11 @@ Messages:
     problemu zostało wydrukowanych na konsoli; być może będziesz w stanie naprawić
     to ręcznie.
   wwcdSQLAllSet: Twoje tabele MySQL/PostgreSQL są poprawnie sformatowane.
-  wwcOldDatabaseStruct: 'Wybrana baza danych ma nieefektywną konfigurację z poprzedniej
-    wersji WorldwideChat. Wpisz następujące polecenie, aby uzyskać więcej informacji:
-    /wwcd checkdb'
+  wwcdColumnBadType: Kolumna {0} w tabeli {1} ma typ {2}, ale oczekiwany typ {3}.
+  wwcdColumnMissing: W tabeli {1} brakuje kolumny {0}.
+  wwcdGoodTable: Tabela {0} ({1}) jest prawidłowym formatem.
+  wwcdBadTable: Tabela {0} nie znajduje się w definicjach wewnętrznych. Skontaktuj
+    się z deweloperem.
+  wwcOldDatabaseStruct: 'Wybrana baza danych ma nieprawidłową konfigurację tabeli.
+    Wpisz następujące polecenie, aby uzyskać więcej informacji: /wwcd checkdb'
 

@@ -579,7 +579,12 @@ Messages:
     il-kwistjoni ġiet stampata għall-console tiegħek; inti tista 'tkun kapaċi tiffissa
     dan manwalment.
   wwcdSQLAllSet: It-tabelli MySQL/PostgreSQL tiegħek huma ifformattjati kif suppost.
-  wwcOldDatabaseStruct: 'Id-database magħżula tiegħek għandha setup ineffiċjenti minn
-    verżjoni preċedenti ta ''WorldwideChat. Ittajpja l-kmand li ġej għal aktar informazzjoni:
-    /wwcd checkdb'
+  wwcdColumnBadType: Il-kolonna {0} fit-tabella {1} għandha tip {2} iżda mistenni
+    tip {3}.
+  wwcdColumnMissing: Il-kolonna {0} hija nieqsa fit-tabella {1}.
+  wwcdGoodTable: It-tabella {0} ({1}) hija l-format korrett.
+  wwcdBadTable: Tabella {0} ma nstabx fid-definizzjonijiet interni. Jekk jogħġbok
+    ikkuntattja lill-iżvilup
+  wwcOldDatabaseStruct: 'Id-database magħżula tiegħek għandha setup mhux korrett tat-tabella.
+    Ittajpja l-kmand li ġej għal aktar informazzjoni: /wwcd checkdb'
 

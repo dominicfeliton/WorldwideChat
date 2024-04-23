@@ -574,6 +574,12 @@ Messages:
     yana da tsarin da ba daidaita/tsoho. An buga ƙarin bayani game da wannan batun
     zuwa na'urar wasan bidiyo; ƙila zaku iya gyara wannan da hannu.
   wwcdSQLAllSet: Teburin MySQL/PostgreSQL ɗinku an tsara su yadda ya kamata.
-  wwcOldDatabaseStruct: Bayanan da kuka zaɓa yana da saiti mara inganci daga sigar
-    WorldwideChat da ta gabata. Rubuta umarni mai zuwa don ƙarin bayani:/wwcd checkdb
+  wwcdColumnBadType: Shafin {0} a cikin tebur {1} yana da nau'in {2} amma ana tsammanin
+    nau'in {3}.
+  wwcdColumnMissing: Shafin {0} ya ɓace a cikin tebur {1}.
+  wwcdGoodTable: '{0} tebur ({1}) shine tsarin daidai.'
+  wwcdBadTable: Tebur {0} ba a samu a cikin ma'anar ciki ba. Da fatan za a tuntube
+    mai haɓakawa.
+  wwcOldDatabaseStruct: Bayanan da kuka zaɓa yana da saitin tebur mara kyau. Rubuta
+    umarni mai zuwa don ƙarin bayani:/wwcd checkdb
 

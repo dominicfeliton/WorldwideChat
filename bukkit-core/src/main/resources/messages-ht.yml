@@ -557,7 +557,11 @@ Messages:
     gen yon fòma enkòrèk/demode. Plis enfòmasyon verbose sou pwoblèm sa a te enprime
     nan konsole ou; ou ka kapab ranje sa a manyèlman.
   wwcdSQLAllSet: Tab MySQL/PostgreSQL ou yo byen fòma.
-  wwcOldDatabaseStruct: 'Baz done chwazi ou a gen yon konfigirasyon enefikas soti
-    nan yon vèsyon anvan nan WorldwideChat. Tape lòd sa a pou plis enfòmasyon: /wwcd
-    checkdb'
+  wwcdColumnBadType: Kolòn {0} nan tab {1} gen kalite {2} men espere kalite {3}.
+  wwcdColumnMissing: Kolòn {0} manke nan tablo {1}.
+  wwcdGoodTable: '{0} tab ({1}) se fòma ki kòrèk la.'
+  wwcdBadTable: Tablo {0} pa jwenn nan definisyon entèn yo. Tanpri kontakte pwomotè
+    a.
+  wwcOldDatabaseStruct: 'Baz done chwazi ou a gen yon konfigirasyon tab ki kòrèk.
+    Tape lòd sa a pou plis enfòmasyon: /wwcd checkdb'
 

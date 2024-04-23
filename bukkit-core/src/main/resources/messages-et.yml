@@ -553,7 +553,11 @@ Messages:
     on vale/vananenud vorming. Selle probleemi kohta on teie konsooli trükitud rohkem
     üksikasjalikku teavet; võib-olla saate selle käsitsi parandada.
   wwcdSQLAllSet: Teie MySQL/PostgreSQL-i tabelid on korralikult vormindatud.
-  wwcOldDatabaseStruct: 'Teie valitud andmebaasis on ebatõhus seadistus võrreldes
-    WorldwideChati eelmisest versioonist. Lisateabe saamiseks tippige järgmine käsk:
-    /wwcd checkdb'
+  wwcdColumnBadType: Tabeli {1} veerus {0} on tüüp {2}, kuid eeldatav tüüp {3}.
+  wwcdColumnMissing: Tabelis {1} puudub veerg {0}.
+  wwcdGoodTable: '{0} tabel ({1}) on õige formaat.'
+  wwcdBadTable: Tabelit {0} ei leitud sisemistest definitsioonidest. Palun võtke ühendust
+    arendajaga.
+  wwcOldDatabaseStruct: 'Teie valitud andmebaasis on vale tabeli seadistus. Lisateabe
+    saamiseks tippige järgmine käsk: /wwcd checkdb'
 

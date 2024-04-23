@@ -569,7 +569,11 @@ Messages:
     ima netačan/zastareli format. Više detaljnih informacija o ovom problemu je odštampano
     na vašoj konzoli; možda ćete moći da rešite ovo ručno.
   wwcdSQLAllSet: Vaše Miskl/PostgreSQL tabele su pravilno formatirane.
-  wwcOldDatabaseStruct: 'Vaša izabrana baza podataka ima neefikasno podešavanje iz
-    prethodne verzije VorldWideChat-a. Otkucajte sledeću komandu za više informacija:
-    /vvcd checkdb'
+  wwcdColumnBadType: Kolona {0} u tabeli {1} ima tip {2} ali očekivani tip {3}.
+  wwcdColumnMissing: Kolona {0} nedostaje u tabeli {1}.
+  wwcdGoodTable: Tabela {0} ({1}) je ispravan format.
+  wwcdBadTable: Tabela {0} nije pronađena u unutrašnjim definicijama. Molimo kontaktirajte
+    programera.
+  wwcOldDatabaseStruct: 'Vaša izabrana baza podataka ima pogrešno podešavanje tabele.
+    Otkucajte sledeću komandu za više informacija: /vvcd checkdb'
 

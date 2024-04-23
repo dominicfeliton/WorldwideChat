@@ -584,7 +584,12 @@ Messages:
     šią problemą buvo atspausdinta jūsų konsolėje; galbūt galėsite tai išspręsti rankiniu
     būdu.
   wwcdSQLAllSet: Jūsų MySQL/PostgreSQL lentelės yra tinkamai suformatuotos.
-  wwcOldDatabaseStruct: 'Jūsų pasirinkta duomenų bazė turi neefektyvią sąranką iš
-    ankstesnės “WorldwideChat” versijos. Norėdami gauti daugiau informacijos, įveskite
-    šią komandą: /wwcd checkdb'
+  wwcdColumnBadType: Stulpelis {0} lentelėje {1} turi tipą {2}, bet tikėtinas tipas
+    {3}.
+  wwcdColumnMissing: Lentelėje {1} trūksta stulpelio {0}.
+  wwcdGoodTable: '{0} lentelė ({1}) yra teisingas formatas.'
+  wwcdBadTable: Lentelė {0} nerasta vidiniuose apibrėžimuose. Prašome susisiekti su
+    kūrėju.
+  wwcOldDatabaseStruct: 'Jūsų pasirinktoje duomenų bazėje yra neteisinga lentelės
+    sąranka. Norėdami gauti daugiau informacijos, įveskite šią komandą: /wwcd checkdb'
 

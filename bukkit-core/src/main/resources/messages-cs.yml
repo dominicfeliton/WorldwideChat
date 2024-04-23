@@ -576,6 +576,11 @@ Messages:
     má nesprávný/zastaralý formát. Podrobnější informace o tomto problému byly vytištěny
     na konzoli; možná to budete moci opravit ručně.
   wwcdSQLAllSet: Vaše tabulky MySQL/PostgreSQL jsou správně naformátovány.
-  wwcOldDatabaseStruct: 'Vámi vybraná databáze má neefektivní nastavení z předchozí
-    verze WorldwideChat. Pro více informací zadejte následující příkaz: /wwcd checkdb'
+  wwcdColumnBadType: Sloupec {0} v tabulce {1} má typ {2}, ale očekávaný typ {3}.
+  wwcdColumnMissing: V tabulce {1} chybí sloupec {0}.
+  wwcdGoodTable: Tabulka {0} ({1}) je správný formát.
+  wwcdBadTable: Tabulka {0} nebyla nalezena ve interních definicích. Obraťte se prosím
+    na vývojáře.
+  wwcOldDatabaseStruct: 'Zvolená databáze má nesprávné nastavení tabulky. Pro více
+    informací zadejte následující příkaz: /wwcd checkdb'
 

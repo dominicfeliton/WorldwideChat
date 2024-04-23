@@ -596,7 +596,11 @@ Messages:
     een onjuist/verouderd formaat hebben. Meer uitgebreide informatie over dit probleem
     is op je console afgedrukt; je kunt dit mogelijk handmatig oplossen.
   wwcdSQLAllSet: Uw MySQL/PostgreSQL-tabellen zijn correct geformatteerd.
-  wwcOldDatabaseStruct: 'De door u gekozen database heeft een inefficiënte configuratie
-    ten opzichte van een eerdere versie van WorldwideChat. Typ de volgende opdracht
-    voor meer informatie: /wwcd checkdb'
+  wwcdColumnBadType: Kolom {0} in tabel {1} heeft type {2} maar verwacht type {3}.
+  wwcdColumnMissing: Kolom {0} ontbreekt in tabel {1}.
+  wwcdGoodTable: Tabel {0} ({1}) is het juiste formaat.
+  wwcdBadTable: Tabel {0} is niet gevonden in interne definities. Neem contact op
+    met de ontwikkelaar.
+  wwcOldDatabaseStruct: 'De door u gekozen database heeft een onjuiste tabelconfiguratie.
+    Typ de volgende opdracht voor meer informatie: /wwcd checkdb'
 

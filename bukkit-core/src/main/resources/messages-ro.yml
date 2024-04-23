@@ -606,7 +606,12 @@ Messages:
     problemă au fost tipărite pe consola dvs.; este posibil să puteți remedia acest
     lucru manual.
   wwcdSQLAllSet: Tabelele dvs. MySQL/PostgreSQL sunt formatate corespunzător.
-  wwcOldDatabaseStruct: 'Baza de date aleasă are o configurare ineficientă dintr-o
-    versiune anterioară a WorldwideChat. Tastați următoarea comandă pentru mai multe
-    informații: /wwcd checkdb'
+  wwcdColumnBadType: Coloana {0} din tabelul {1} are tipul {2}, dar tipul așteptat
+    {3}.
+  wwcdColumnMissing: Coloana {0} lipsește în tabelul {1}.
+  wwcdGoodTable: Tabelul {0} ({1}) este formatul corect.
+  wwcdBadTable: Tabelul {0} nu a fost găsit în definițiile interne. Vă rugăm să contactați
+    dezvoltatorul.
+  wwcOldDatabaseStruct: 'Baza de date aleasă are o configurare incorectă a tabelului.
+    Tastați următoarea comandă pentru mai multe informații: /wwcd checkdb'
 

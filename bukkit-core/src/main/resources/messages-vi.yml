@@ -584,7 +584,11 @@ Messages:
     có định dạng sai hoặc lỗi thời. Thông tin chi tiết hơn về vấn đề này đã được in
     vào bảng điều khiển của bạn; bạn có thể khắc phục điều này theo cách thủ công.
   wwcdSQLAllSet: Các bảng MySQL/PostgreSQL của bạn được định dạng đúng.
-  wwcOldDatabaseStruct: 'Cơ sở dữ liệu bạn đã chọn có thiết lập không hiệu quả từ
-    phiên bản trước của WorldwideChat. Nhập lệnh sau để biết thêm thông tin: /wwcd
-    checkdb'
+  wwcdColumnBadType: Cột {0} trong bảng {1} có kiểu {2} nhưng loại dự kiến là {3}.
+  wwcdColumnMissing: Cột {0} bị thiếu trong bảng {1}.
+  wwcdGoodTable: Bảng {0} ({1}) là định dạng chính xác.
+  wwcdBadTable: Bảng {0} không tìm thấy trong các định nghĩa nội bộ. Vui lòng liên
+    hệ với nhà phát triển.
+  wwcOldDatabaseStruct: 'Cơ sở dữ liệu bạn đã chọn có thiết lập bảng không chính xác.
+    Nhập lệnh sau để biết thêm thông tin: /wwcd checkdb'
 

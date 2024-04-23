@@ -510,6 +510,10 @@ Messages:
     ያለፈበት ቅርጸት አለው ይመስላል። ስለዚህ ጉዳይ ተጨማሪ ተጨማሪ ዝርዝር መረጃ በእርስዎ ኮንሶል ታትሟል። ይህንን በእጅ ማስተካከል
     ይችላሉ።
   wwcdSQLAllSet: የእርስዎ MySQL/PostgreSQL ሰንጠረዥ በትክክል ቅርጸት ተሰጥተዋል።
-  wwcOldDatabaseStruct: 'የተመረጠው የውሂብ ጎታ ከቀደመው የ WorldwideChat ስሪት ውጤታማ ያልሆነ ማዋቀር አለው።
-    ለተጨማሪ መረጃ የሚከተለውን ትዕዛዝ ይፃፉ: /wwcd checkdb'
+  wwcdColumnBadType: በሰንጠረዥ {1} ውስጥ ያለው አምድ {0} ዓይነት {2} ግን የሚጠበቅ ዓይነት {3} አለው።
+  wwcdColumnMissing: አምድ {0} በሠንጠረዥ {1} ውስጥ ጠፍቷል።
+  wwcdGoodTable: '{0} ሰንጠረዥ ({1}) ትክክለኛው ቅርጸት ነው።'
+  wwcdBadTable: ሰንጠረዥ {0} በውስጥ ትርጓሜዎች ውስጥ አልተገኘም እባክዎን ገንቢውን ያነጋግሩ
+  wwcOldDatabaseStruct: 'የተመረጠዎት የውሂብ ጎታ የተሳሳተ የሠንጠረዥ ለተጨማሪ መረጃ የሚከተለውን ትዕዛዝ ይፃፉ:
+    /wwcd checkdb'
 
