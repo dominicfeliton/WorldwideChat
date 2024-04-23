@@ -187,6 +187,7 @@ public class TranslateInGameListener implements Listener {
 						try {
 							Player.class.getMethod("sendSignChange", Location.class, String[].class);
 						} catch (Exception e) {
+							refs.debugMsg("No sendSignChange method found!");
 							textLimit = true;
 							// Always send the user the result via chat. sendSignChange() does not exist in Player.class before 1.14.
 						}
@@ -233,7 +234,7 @@ public class TranslateInGameListener implements Listener {
 										event.getPlayer().sendSignChange(currLoc, finalText);
 									} catch (Exception e) {
 										// This might happen sometimes, send message until this is fixed.
-										refs.debugMsg("sendSignChange is broken?? cringe, currently broken on 1.20.5 spigot");
+										refs.debugMsg("sendSignChange is broken?? cringe, fixme");
 										refs.sendMsg(event.getPlayer(), translationNoticeMsg);
 									}
 								}

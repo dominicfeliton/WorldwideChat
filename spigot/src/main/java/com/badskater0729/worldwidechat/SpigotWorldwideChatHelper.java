@@ -17,7 +17,9 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         // EventHandlers + check for plugins
         PluginManager pluginManager = main.getServer().getPluginManager();
         pluginManager.registerEvents(new ChatListener(), main);
-        pluginManager.registerEvents(new SignListener(), main);
+        if (adapter.getServerInfo().getValue().contains("1.2")) {
+            pluginManager.registerEvents(new SignListener(), main);
+        }
         pluginManager.registerEvents(new OnPlayerJoinListener(), main);
         pluginManager.registerEvents(new TranslateInGameListener(), main);
         pluginManager.registerEvents(new InventoryListener(), main);
