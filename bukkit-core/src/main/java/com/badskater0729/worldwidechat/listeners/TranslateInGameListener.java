@@ -195,32 +195,30 @@ public class TranslateInGameListener implements Listener {
 						 * Change sign for this user only, if translationNotTooLong and sign still
 						 * exists
 						 */
-						if (!textLimit && currentSign.getLocation() != null) {
+						Location currLoc = currentSign.getLocation();
+
+						// Prep message if sign is too long
+						String out = "\n";
+						for (String eaLine : changedSignText) {
+							if (eaLine.length() > 1)
+								out += eaLine + "\n";
+						}
+						final TextComponent translationNoticeMsg = Component.text()
+								.content(refs.getMsg("wwcSignDeletedOrTooLong", event.getPlayer()))
+								.color(NamedTextColor.LIGHT_PURPLE)
+								.decoration(TextDecoration.ITALIC, true)
+								.append(Component.text().content("\n" + "---------------")
+										.color(NamedTextColor.GOLD)
+										.append(Component.text().content(out).color(NamedTextColor.WHITE))
+										.append(Component.text().content("---------------")
+												.color(NamedTextColor.GOLD)))
+								.build();
+
+						if (!textLimit && currLoc != null) {
 							/* Set completed message */
 							refs.sendFancyMsg("wwcSignDone", "", "&a&o", event.getPlayer());
 						} else {
-							/*
-							 * Format sign for chat, if translation exceeds 15 chars or sign was already
-							 * deleted
-							 */
-							String out = "\n";
-							for (String eaLine : changedSignText) {
-								if (eaLine.length() > 1)
-									out += eaLine + "\n";
-							}
-
 							/* If we are here, sign is too long or deleted msg */
-							final TextComponent translationNoticeMsg = Component.text()
-									.content(refs.getMsg("wwcSignDeletedOrTooLong", event.getPlayer()))
-									.color(NamedTextColor.LIGHT_PURPLE)
-									.decoration(TextDecoration.ITALIC, true)
-									.append(Component.text().content("\n" + "---------------")
-											.color(NamedTextColor.GOLD)
-											.append(Component.text().content(out).color(NamedTextColor.WHITE))
-											.append(Component.text().content("---------------")
-													.color(NamedTextColor.GOLD)))
-									.build();
-
 							refs.sendMsg(event.getPlayer(), translationNoticeMsg);
 							changedSignText = null;
 						}
@@ -231,7 +229,13 @@ public class TranslateInGameListener implements Listener {
 							BukkitRunnable sign = new BukkitRunnable() {
 								@Override
 								public void run() {
-									event.getPlayer().sendSignChange(currentSign.getLocation(), finalText);
+									try {
+										event.getPlayer().sendSignChange(currLoc, finalText);
+									} catch (Exception e) {
+										// This might happen sometimes, send message until this is fixed.
+										refs.debugMsg("sendSignChange is broken?? cringe, currently broken on 1.20.5 spigot");
+										refs.sendMsg(event.getPlayer(), translationNoticeMsg);
+									}
 								}
 							};
 							refs.runSync(sign);
