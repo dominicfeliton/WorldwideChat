@@ -114,11 +114,11 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 				SupportedLang inLang = refs.getSupportedLang(targetTranslator.getInLangCode(), "in");
 				SupportedLang outLang = refs.getSupportedLang(targetTranslator.getOutLangCode(), "out");
 				if (!targetTranslator.getInLangCode().equalsIgnoreCase("None")) {
-					outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationInput", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + inLang.getLangCode() + "/" + inLang.getNativeLangName(), inPlayer));
+					outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationInput", ChatColor.GOLD + "" + ChatColor.BOLD + inLang.getLangCode() + "/" + inLang.getNativeLangName(), inPlayer));
 				} else {
-					outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationInput", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + "auto/None", inPlayer));
+					outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationInput", ChatColor.GOLD + "" + ChatColor.BOLD + "auto/None", inPlayer));
 				}
-				outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationOutput", ChatColor.LIGHT_PURPLE + "" + ChatColor.BOLD + outLang.getLangCode() + "/" + outLang.getNativeLangName(), inPlayer));
+				outLore.add(ChatColor.LIGHT_PURPLE + refs.getMsg("wwctGUIExistingTranslationOutput", ChatColor.GOLD + "" + ChatColor.BOLD + outLang.getLangCode() + "/" + outLang.getNativeLangName(), inPlayer));
 				translationMeta.setLore(outLore);
 				translationButton.setItemMeta(translationMeta);
 
@@ -153,14 +153,17 @@ public class WWCTranslateGuiMainMenu implements InventoryProvider {
 							.withFirstPrompt(new PersonalRateLimitConvo(targetTranslator));
 					ItemStack rateButton = XMaterial.SLIME_BLOCK.parseItem();
 					ItemMeta rateMeta = rateButton.getItemMeta();
+					ArrayList<String> lore = new ArrayList<>();
 					if (targetTranslator.getRateLimit() > 0) {
 						invManager.addGlowEffect(rateMeta);
+						lore.add(refs.serial(refs.getFancyMsg("wwctGUIRateButtonLore", new String[] {"&6&l" + targetTranslator.getRateLimit()}, "&d", inPlayer)));
 						rateMeta.setDisplayName(ChatColor.GREEN
 								+ refs.getMsg("wwctGUIRateButton", inPlayer));
 					} else {
 						rateMeta.setDisplayName(ChatColor.YELLOW
 								+ refs.getMsg("wwctGUIRateButton", inPlayer));
 					}
+					rateMeta.setLore(lore);
 					rateButton.setItemMeta(rateMeta);
 					contents.set(1, 1, ClickableItem.of(rateButton, e -> {
 						rateConvo.buildConversation(player).begin();
