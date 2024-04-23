@@ -424,16 +424,6 @@ Messages:
   systranHttp500: ውስጣዊ አገልጋይ ስህተት ከሲስትራን የመጨረሻ ነጥብ ({0})።
   wwcInvalidStorageSession: '{0} በእርስዎ መዋቅር ውስጥ ነቃቷል፣ ነገር ግን ግንኙነት አልተቋቋም። እባክዎ ይህንን
     ለማስተካከል እንደገና መጫን ይሞክሩ፣ ነገር ግን ከዚህ ቀደም ከ {0} የተሳካ የግንኙነት መልእክት ከተቀበሉ እባክዎ ገንቢውን'
-  wwcNewSqlConvertFinish: የ SQL ሰንጠረዥ መለወጥ ጨርሷል። የዎርልድዊድካት እንደገና ይጫናል...
-  wwcNewSqlStruct: የእርስዎ SQL ውሂብ ጎታ አዲሱን መዋቅር እየተጠቀመ ነው እና መቀየር አያስፈልግም።
-  wwcNewSqlConvertBegin: የ SQL ሰንጠረዥ መለወጥ...
-  wwcOldSqlStructLongIntro: ለችግሩ ከልብ ይቅርታ እንጠይቃለን፣ ግን የቀድሞው የ WorldwideChat ስሪት የ
-    SQL ሰንጠረቤዎችዎን ውጤታማ ያልሆነ መዋቅር ይጀምራል። ይህ በእኛ ተሰኪ ጋር መስራቱን ቢቀጥልም፣ በትላልቅ ተጫዋች መዝገቦች
-    ከፍተኛ መቀነስ ሊያስከትል ይችላል።
-  wwcOldSqlStructLongTodo: 'እርስዎ ይችላሉ: በ MySQL ውስጥ ለመኮንሶል የታተሙትን ሰንጠረዥ መውጣት፣ እራስዎ
-    መለወጥ እና በgithub ሪፖው ውስጥ ያለውን አዲሱ መዋቅር ይመልከቱ ወይም ለውውጡን በቀጥታ ለመሞከር ትዕዛዝ ያስኬዱ። እባክዎ
-    ይህንን ከማስኬድዎ በፊት የውሂብ ጎታዎን ምትኬ መጠባበቂያዎን ያረጋግጡ ካለዎት ትዕዛዙ የሚከተለው ነው: {0}'
-  wwcNewSqlConvertFail: ልውውጥ አልተሳካም... እባክዎን ሰንጠረዥ ካደረጉት ምትኬ ያስመልሱ የዎርልድዊድካት ማሰናከል...
   wwcConfigConversationPostgresDatabaseNameSuccess: የ PostgreSQL የውሂብ ጎታ ስም በተሳካ ሁኔታ
     ቀይሯል።
   wwcConfigConversationPostgresOptionalArgsCleared: አማራጭ ጭቅጭቆች በተሳካ ሁኔታ
@@ -502,9 +492,6 @@ Messages:
   wwctGUILocalizeStopButton: አካባቢን ወደ አገልጋይ ነባሪ እንደ
   wwctGUILocalizeTitle: የአካባቢ ምናሌ
   wwctGUISourceSameLang: ይህ ቋንቋ ከምንጭ ቋንቋዎ ጋር ተመሳሳይ ይሆናል።
-  wwcOldDatabaseStruct: 'የተመረጠው የውሂብ ጎታ ከቀደመው የ WorldwideChat ስሪት ውጤታማ ያልሆነ ማዋቀር አለው።
-    የማረም ሁነታን ማብራት እና ችግሩን ራስዎ ማስተካከል ይችላሉ፣ ይህንን ችግር ለማስተካከል የሚከተለውን ትዕዛዝ ያስኬዱ: /wwcd
-    convert'
   wwcConfigGUICurrentPlayerLang: ይህ የአሁኑ አካባቢያዎ ነው።
   wwctGUILocalizationSameAsServer: ይህ ለWorldwideChat ነባሪ አቀማመጥ ነው።
   wwctGUISourceOrTargetTranslationAlreadyGlobal: ይህ ቋንቋ ቀድሞውኑ በዓለም ዙሪያ ንቁ ነው!
@@ -519,4 +506,10 @@ Messages:
   wwcConfigPersistentCacheEnabled: የመሸጫ ውሂብ በዳግም ጭነቶች ላይ ይቆያል።
   wwcConfigConversationCharacterLimitInput: በአሁኑ መልእክት የአሁኑ ቁምፊዎች ገደብ {0} ቁምፊዎች ናቸው
     አዲስ እሴት ለማዘጋጀት ከ 0 (ግን ከ 256 በታች) የበለጠ ማንኛውንም ነገር ይተይቡ ወይም ወደ ኋላ ለመመለስ 0 ይይቡ።
+  wwcdOutdatedSQLStruct: አንድ ወይም ከዚያ በላይ የእርስዎ MySQL ወይም PostgreSQL ሰንጠረዥ ትክክለኛ/ጊዜው
+    ያለፈበት ቅርጸት አለው ይመስላል። ስለዚህ ጉዳይ ተጨማሪ ተጨማሪ ዝርዝር መረጃ በእርስዎ ኮንሶል ታትሟል። ይህንን በእጅ ማስተካከል
+    ይችላሉ።
+  wwcdSQLAllSet: የእርስዎ MySQL/PostgreSQL ሰንጠረዥ በትክክል ቅርጸት ተሰጥተዋል።
+  wwcOldDatabaseStruct: 'የተመረጠው የውሂብ ጎታ ከቀደመው የ WorldwideChat ስሪት ውጤታማ ያልሆነ ማዋቀር አለው።
+    ለተጨማሪ መረጃ የሚከተለውን ትዕዛዝ ይፃፉ: /wwcd checkdb'
 

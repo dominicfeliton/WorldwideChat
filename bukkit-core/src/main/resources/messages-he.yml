@@ -434,18 +434,6 @@ Messages:
   wwcInvalidStorageSession: '{0} מופעל בתצורה שלך, אך חיבור לא נוצר. אנא נסה לטעון
     מחדש כדי לתקן זאת, אך אנא צור קשר עם המפתח אם קיבלת בעבר הודעת חיבור מוצלחת מ-
     {0}.'
-  wwcNewSqlConvertFinish: סיימת להמיר טבלאות SQL שלך. טוען מחדש את צ'אט עולמי...
-  wwcNewSqlStruct: מסד הנתונים של SQL שלך משתמש במבנה החדש ואינו צריך להמיר אותו.
-  wwcNewSqlConvertBegin: המרת טבלאות SQL שלך...
-  wwcOldSqlStructLongIntro: אנו מתנצלים בכנות על אי הנוחות, אך גרסה קודמת של WorldwideChat
-    איתלה את טבלאות ה- SQL שלך במבנה לא יעיל. למרות שזה ימשיך לתפקד עם התוסף שלנו,
-    זה עלול לגרום להאטות משמעותיות עם רשומות שחקנים גדולות יותר.
-  wwcOldSqlStructLongTodo: 'אתה יכול: לשחרר את הטבלאות המודפסות לקונסולה ב- MySQL,
-    להמיר אותן בעצמך ולהסתכל על המבנה החדש ב- github repo, או להפעיל פקודה כדי לנסות
-    את ההמרה בשידור חי. אנא ודא שביצעת גיבוי של מסד הנתונים שלך לפני הפעלת זה. אם
-    יש לך, הפקודה היא: {0}'
-  wwcNewSqlConvertFail: ההמרה נכשלה... אנא שחזר את הטבלאות מהגיבוי שביצעת. השבתת צ'אט
-    עולמי...
   wwcConfigConversationPostgresDatabaseNameSuccess: שינתה בהצלחה את שם מסד הנתונים
     של PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: ארגומנטים אופציונליים נמחקו בהצלחה.
@@ -514,9 +502,6 @@ Messages:
   wwctGUILocalizeStopButton: איפוס לוקליזציה לברירת המחדל של השרת
   wwctGUILocalizeTitle: תפריט לוקליזציה
   wwctGUISourceSameLang: שפה זו תהיה זהה לשפת המקור שלך.
-  wwcOldDatabaseStruct: 'למסד הנתונים שבחרת יש הגדרה לא יעילה מגירסה קודמת של WorldwideChat.
-    באפשרותך להפעיל מצב ניפוי באגים ולתקן את הבעיה בעצמך, הפעל את הפקודה הבאה כדי
-    לתקן בעיה זו: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: זוהי הלוקליזציה הנוכחית שלך.
   wwctGUILocalizationSameAsServer: זוהי לוקליזציה ברירת המחדל עבור WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: שפה זו כבר פעילה ברחבי העולם!
@@ -532,4 +517,10 @@ Messages:
   wwcConfigConversationCharacterLimitInput: מגבלת התווים הנוכחית להודעה היא תווים
     {0}. הקלד כל דבר גדול מ- 0 (אך פחות מ- 256) כדי להגדיר ערך חדש, או הקלד 0 כדי
     לחזור אחורה.
+  wwcdOutdatedSQLStruct: נראה שלאחת או יותר מטבלאות MySQL או PostgreSQL שלך יש פורמט
+    שגוי/מיושן. מידע מפורט יותר על בעיה זו הודפס במסוף שלך; ייתכן שתוכל לתקן זאת באופן
+    ידני.
+  wwcdSQLAllSet: טבלאות MySQL/PostgreSQL שלך מעוצבות כראוי.
+  wwcOldDatabaseStruct: 'למסד הנתונים שבחרת יש הגדרה לא יעילה מגירסה קודמת של WorldwideChat.
+    הקלד את הפקודה הבאה לקבלת מידע נוסף: /wwcd checkdb'
 

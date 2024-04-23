@@ -490,20 +490,6 @@ Messages:
   wwcInvalidStorageSession: '{0} är aktiverat i din konfiguration, men en anslutning
     är inte etablerad. Försök ladda om för att åtgärda detta, men kontakta utvecklaren
     om du tidigare fått ett lyckat anslutningsmeddelande från {0}.'
-  wwcNewSqlConvertFinish: Färdig konvertering av dina SQL-tabeller. Laddar om WorldwideChat...
-  wwcNewSqlStruct: SQL-databasen använder den nya strukturen och behöver inte konverteras.
-  wwcNewSqlConvertBegin: Konvertera dina SQL-tabeller...
-  wwcOldSqlStructLongIntro: Vi ber om ursäkt för besväret, men en tidigare version
-    av WorldwideChat initierade dina SQL-tabeller med en ineffektiv struktur. Även
-    om detta kommer att fortsätta att fungera med vårt plugin, det kan leda till betydande
-    avmattningar med större spelarrekord.
-  wwcOldSqlStructLongTodo: 'Du kan: släppa tabellerna som skrivs ut till konsol i
-    MySQL, konvertera dem själv och titta på den nya strukturen i github-repo, eller
-    kör ett kommando för att försöka konverteringen live. Se till att du HAR GJORT
-    EN SÄKERHETSKOPIA AV DIN DATABAS INNAN DU KÖR DETTA. Om du har, är kommandot:
-    {0}'
-  wwcNewSqlConvertFail: Konverteringen misslyckades... återställ dina tabeller från
-    säkerhetskopian du gjorde. Inaktiverar WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Ändrade PostgreSQL-databasnamnet
     framgångsrikt.
   wwcConfigConversationPostgresOptionalArgsCleared: Valfria argument rensade framgångsrikt.
@@ -580,10 +566,6 @@ Messages:
   wwctGUILocalizeStopButton: Återställ lokalisering till serverstandard
   wwctGUILocalizeTitle: Lokaliseringsmeny
   wwctGUISourceSameLang: Detta språk skulle vara detsamma som ditt källspråk.
-  wwcOldDatabaseStruct: 'Din valda databas har en ineffektiv installation från en
-    tidigare version av WorldwideChat. Du kan antingen aktivera felsökningsläge och
-    åtgärda problemet själv, kör följande kommando för att åtgärda problemet: /wwcd
-    convert'
   wwcConfigGUICurrentPlayerLang: Detta är din nuvarande lokalisering.
   wwctGUILocalizationSameAsServer: Detta är standardlokaliseringen för WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Detta språk är redan aktivt globalt!
@@ -599,4 +581,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Den nuvarande teckengränsen per meddelande
     är {0} tecken. Skriv något större än 0 (men mindre än 256) för att ange ett nytt
     värde, eller skriv 0 för att gå tillbaka.
+  wwcdOutdatedSQLStruct: Det ser ut som att en eller flera av dina MySQL- eller PostgreSQL-tabeller
+    har ett felakt/föråldrat format. Mer detaljerad information om problemet har skrivits
+    ut på din konsol; du kanske kan åtgärda det manuellt.
+  wwcdSQLAllSet: Dina MySQL/PostgreSQL-tabeller är korrekt formaterade.
+  wwcOldDatabaseStruct: 'Din valda databas har en ineffektiv installation från en
+    tidigare version av WorldwideChat. Skriv följande kommando för mer information:
+    /wwcd checkdb'
 

@@ -485,20 +485,6 @@ Messages:
     zostało nawiązane. Spróbuj ponownie załadować, aby to naprawić, ale skontaktuj
     się z programistą, jeśli wcześniej otrzymałeś komunikat o udanym połączeniu od
     {0}.'
-  wwcNewSqlConvertFinish: Zakończono konwersję tabel SQL. Ponowne ładowanie WorldwideChat...
-  wwcNewSqlStruct: Twoja baza danych SQL używa nowej struktury i nie musi być konwertowana.
-  wwcNewSqlConvertBegin: Konwertowanie tabel SQL...
-  wwcOldSqlStructLongIntro: Serdecznie przepraszamy za niedogodności, ale poprzednia
-    wersja WorldwideChat zainicjowała tabele SQL z niewydajną strukturą. Chociaż będzie
-    to nadal działać z naszą wtyczką, może to spowodować znaczne spowolnienie przy
-    większych rekordach graczy.
-  wwcOldSqlStructLongTodo: 'Możesz: upuścić tabele wydrukowane do konsoli w MySQL,
-    przekonwertować je samodzielnie i spojrzeć na nową strukturę w repozytorium github
-    lub uruchomić polecenie, aby spróbować konwersji na żywo. UPEWNIJ SIĘ, ŻE WYKONAŁEŚ
-    KOPIĘ ZAPASOWĄ SWOJEJ BAZY DANYCH PRZED URUCHOMIENIEM TEGO. Jeśli masz, polecenie
-    to: {0}'
-  wwcNewSqlConvertFail: Konwersja nie powiodła się... proszę przywrócić tabele z utworzonej
-    kopii zapasowej. Wyłączanie WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Pomyślnie zmieniono nazwę bazy
     danych PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Opcjonalne argumenty zostały pomyślnie
@@ -574,9 +560,6 @@ Messages:
   wwctGUILocalizeStopButton: Zresetuj lokalizację do domyślnej serwera
   wwctGUILocalizeTitle: Menu lokalizacji
   wwctGUISourceSameLang: Ten język byłby taki sam jak język źródłowy.
-  wwcOldDatabaseStruct: 'Wybrana baza danych ma nieefektywną konfigurację z poprzedniej
-    wersji WorldwideChat. Możesz włączyć tryb debugowania i samodzielnie rozwiązać
-    problem, uruchom następujące polecenie, aby rozwiązać ten problem: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: To jest twoja obecna lokalizacja.
   wwctGUILocalizationSameAsServer: Jest to domyślna lokalizacja dla WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Język ten jest już aktywny na całym
@@ -595,4 +578,12 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Bieżący limit znaków na wiadomość to {0}
     znaków. Wpisz coś większego niż 0 (ale mniej niż 256), aby ustawić nową wartość,
     lub wpisz 0, aby powrócić.
+  wwcdOutdatedSQLStruct: Wygląda na to, że jedna lub więcej tabel MySQL lub PostgreSQL
+    ma niepoprawny/przestarzały format. Więcej szczegółowych informacji na temat tego
+    problemu zostało wydrukowanych na konsoli; być może będziesz w stanie naprawić
+    to ręcznie.
+  wwcdSQLAllSet: Twoje tabele MySQL/PostgreSQL są poprawnie sformatowane.
+  wwcOldDatabaseStruct: 'Wybrana baza danych ma nieefektywną konfigurację z poprzedniej
+    wersji WorldwideChat. Wpisz następujące polecenie, aby uzyskać więcej informacji:
+    /wwcd checkdb'
 

@@ -488,21 +488,6 @@ Messages:
     nincs létrehozva. Kérjük, próbálja meg újratölteni ezt a megoldást, de kérjük,
     vegye fel a kapcsolatot a fejlesztővel, ha korábban sikeres csatlakozási üzenetet
     kapott a {0} -től.'
-  wwcNewSqlConvertFinish: Befejezte az SQL táblázatok konvertálását. WorldwideChat
-    újratöltése...
-  wwcNewSqlStruct: Az SQL adatbázis az új struktúrát használja, és nem kell átalakítani.
-  wwcNewSqlConvertBegin: Az SQL táblázatok konvertálása...
-  wwcOldSqlStructLongIntro: Őszintén elnézést kérünk a kellemetlenségért, de a WorldwideChat
-    egy korábbi verziója nem hatékony struktúrával inicializálta az SQL táblákat.
-    Bár ez továbbra is működni fog a bővítményünkkel, jelentős lassulást eredményezhet
-    nagyobb játékosok rekordokkal.
-  wwcOldSqlStructLongTodo: 'Lehetőség van: dobhatja le a konzolra nyomtatott táblákat
-    a MySQL-ben, konvertálhatja azokat, és megnézheti az új struktúrát a github repo-ban,
-    vagy futtathat egy parancsot az átalakítás élőben történő kipróbálásához. Kérjük,
-    győződjön meg róla, hogy biztonsági másolatot készített az adatbázisáról, mielőtt
-    ezt futtatná. Ha van, akkor a parancs a következő: {0}'
-  wwcNewSqlConvertFail: Az átalakítás sikertelen... kérjük, állítsa vissza a táblákat
-    az elkészített biztonsági másolatból. A WorldwideChat letiltása...
   wwcConfigConversationPostgresDatabaseNameSuccess: Sikeresen megváltoztatta a PostgreSQL
     adatbázis nevét.
   wwcConfigConversationPostgresOptionalArgsCleared: Az opcionális argumentumok sikeresen
@@ -585,10 +570,6 @@ Messages:
   wwctGUILocalizeStopButton: Helyreállítás alapértelmezett kiszolgálóra
   wwctGUILocalizeTitle: Lokalizációs menü
   wwctGUISourceSameLang: Ez a nyelv megegyezik a forrásnyelvével.
-  wwcOldDatabaseStruct: 'A választott adatbázis nem hatékony beállítással rendelkezik
-    a WorldwideChat korábbi verziójához képest. Bekapcsolhatja a hibakeresési módot,
-    és saját maga javíthatja a problémát, futtassa a következő parancsot a probléma
-    megoldásához: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: Ez a jelenlegi lokalizációja.
   wwctGUILocalizationSameAsServer: Ez a WorldwideChat alapértelmezett lokalizációja.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Ez a nyelv világszerte már aktív!
@@ -604,4 +585,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Az üzenetenkénti aktuális karakterkorlát
     {0} karakter. Írja be a 0-nál nagyobb (de 256-nál kisebb) értéket az új érték
     beállításához, vagy írja be a 0 parancsot a visszaállításhoz.
+  wwcdOutdatedSQLStruct: Úgy tűnik, hogy egy vagy több MySQL vagy PostgreSQL táblázat
+    helytelen/elavult formátumú. A problémával kapcsolatos további részleteket nyomtattak
+    ki a konzolra; előfordulhat, hogy ezt manuálisan meg tudja javítani.
+  wwcdSQLAllSet: A MySQL/PostgreSQL táblák megfelelően vannak formázva.
+  wwcOldDatabaseStruct: 'A választott adatbázis nem hatékony beállítással rendelkezik
+    a WorldwideChat korábbi verziójához képest. További információkért írja be a következő
+    parancsot: /wwcd checkdb'
 

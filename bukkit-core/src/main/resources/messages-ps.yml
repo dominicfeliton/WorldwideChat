@@ -478,20 +478,6 @@ Messages:
   wwcInvalidStorageSession: '{0} ستاسو په کنفیګریشن کې فعال شوی، مګر یو اړیکه نه رامنځته
     شوی. مهرباني وکړئ د دې د اصلاح کولو لپاره بیا لوډ کولو هڅه وکړئ، مګر مهرباني وکړئ
     له پرمختګ سره اړیکه ونیسئ که تاسو مخکې له {0}'
-  wwcNewSqlConvertFinish: خپل SQL میزونو تبدیل کولو پای ته ورکړه. ورلډ ویډشیټ بیا
-    لوډ کول...
-  wwcNewSqlStruct: ستاسو د SQL ډیټابیس د نوي جوړښت کاروي او اړتیا نلري چې بدل شي.
-  wwcNewSqlConvertBegin: ستاسو د SQL میزونو بدل کول...
-  wwcOldSqlStructLongIntro: موږ د ناراحتی لپاره په صمیمانه توګه بخښتنه کوو، مګر د
-    WorldwideChat پخوانی نسخه ستاسو د SQL میزونه د غیر موثر جوړښت سره پیل کړل. پداسې
-    حال کې چې دا به زموږ د فلګن سره کار ته دوام ورکړي، دا ممکن د لوی لوبغاړو ریکارډونو
-    سره د پام وړ سست
-  wwcOldSqlStructLongTodo: 'تاسو کولی شئ: په MySQL کې د کنسول لپاره چاپ شوي میزونه
-    واټوئ، دوی ځان بدل کړئ او په ګیټهب ریپو کې نوي جوړښت ته وګورئ، یا د تبادلې ژوندی
-    هڅه کولو لپاره یو کمانډ چلوئ. مهرباني وکړئ ډاډ ترلاسه کړئ چې تاسو د دې چلولو مخکې
-    د خپل ډیټابیس بیک که تاسو لرئ، کمان دی: {0}'
-  wwcNewSqlConvertFail: تبادل ناکامه شوی... مهرباني وکړئ خپل میزونه بیا ورکړئ له هغه
-    بیک ورلډ ویډشیټ غیر فعال کول...
   wwcConfigConversationPostgresDatabaseNameSuccess: د PostgreSQL ډیټابیس نوم په بریالیتوب
     سره بدل کړه.
   wwcConfigConversationPostgresOptionalArgsCleared: اختیاري دلائل په بریالیتوب سره
@@ -567,9 +553,6 @@ Messages:
   wwctGUILocalizeStopButton: د سرور ډیفالټ ته لوکیلیزه
   wwctGUILocalizeTitle: لوکالیزیشن مینو
   wwctGUISourceSameLang: دا ژبه به ستاسو د سرچینې ژبه په څیر ورته وي.
-  wwcOldDatabaseStruct: ستاسو غوره شوي ډیټابیس د WorldwideChat د پخواني نسخه څخه ناکاره
-    تنظیم لري. تاسو کولی شئ یا د ډیبګ حالت بند کړئ او مسئله خپل ځان حل کړئ، د دې مسله
-    د حل کولو لپاره لاندې حکم چلوئ:/wwcd تبدیل کړئ
   wwcConfigGUICurrentPlayerLang: دا ستاسو اوسنۍ ځای کول دی.
   wwctGUILocalizationSameAsServer: دا د WorldwideChat لپاره ډیفالټ لوکاسیون دی.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: دا ژبه د مخکې په نړیواله ډول فعال
@@ -586,4 +569,10 @@ Messages:
   wwcConfigConversationCharacterLimitInput: په هر پیغام کې د اوسنۍ کرکټر حد {0} حروف
     دی. د 0 څخه لوی څه ډول وټاکئ (مګر د 256 څخه کم) د نوي ارزښت تنظیم کولو لپاره،
     یا بیرته لاړ شي 0 ډول.
+  wwcdOutdatedSQLStruct: دا په څیر ښکاري چې ستاسو د MySQL یا PostgreSQL میزونه یو
+    غلط/پرې شوی بڼه لري. د دې مسلو په اړه نور اړیکې معلومات ستاسو کنسول ته چاپ شوي
+    دي؛ تاسو ممکن کولی شئ چې دا په لاسي ډول حل کړئ.
+  wwcdSQLAllSet: ستاسو MySQL/PostgreSQL میزونه په سمه توګه فارمیټ شوي دي.
+  wwcOldDatabaseStruct: ستاسو غوره شوي ډیټابیس د WorldwideChat د پخواني نسخه څخه ناکاره
+    تنظیم لري. د نورو معلوماتو لپاره لاندې حکم وکړئ:/wwcd checkdb
 

@@ -483,19 +483,6 @@ Messages:
   wwcInvalidStorageSession: '{0} yra įjungta jūsų konfigūracijoje, tačiau ryšys nėra
     užmegztas. Pabandykite perkrauti, kad tai ištaisytumėte, tačiau kreipkitės į kūrėją,
     jei anksčiau gavote sėkmingo ryšio pranešimą iš {0}.'
-  wwcNewSqlConvertFinish: Baigė konvertuoti SQL lenteles. Perkraunama WorldwideChat...
-  wwcNewSqlStruct: Jūsų SQL duomenų bazė naudoja naują struktūrą ir jos nereikia konvertuoti.
-  wwcNewSqlConvertBegin: SQL lentelių konvertavimas...
-  wwcOldSqlStructLongIntro: Nuoširdžiai atsiprašome už nepatogumus, tačiau ankstesnė
-    “WorldwideChat” versija inicijavo jūsų SQL lenteles su neefektyvia struktūra.
-    Nors tai ir toliau veiks su mūsų įskiepiu, tai gali sukelti didelius sulėtėjimus
-    su didesniais žaidėjų įrašais.
-  wwcOldSqlStructLongTodo: 'Galite: numesti lenteles, atspausdintas į konsolę MySQL,
-    konvertuoti jas patys ir pažvelgti į naują struktūrą github repo, arba paleisti
-    komandą bandyti konvertuoti gyvai. Įsitikinkite, kad prieš paleisdami šią duomenų
-    bazę padarėte atsarginę kopiją. Jei turite, komanda yra: {0}'
-  wwcNewSqlConvertFail: Konversija nepavyko... prašome atkurti savo lenteles iš atsarginės
-    kopijos, kurią padarėte. “WorldwideChat” išjungimas...
   wwcConfigConversationPostgresDatabaseNameSuccess: Sėkmingai pakeistas PostgreSQL
     duomenų bazės pavadinimas.
   wwcConfigConversationPostgresOptionalArgsCleared: Pasirenkamieji argumentai sėkmingai
@@ -577,9 +564,6 @@ Messages:
   wwctGUILocalizeStopButton: Iš naujo nustatyti lokalizaciją į serverio numatytąją
   wwctGUILocalizeTitle: Lokalizacijos meniu
   wwctGUISourceSameLang: Ši kalba būtų tokia pati kaip ir jūsų šaltinio kalba.
-  wwcOldDatabaseStruct: 'Jūsų pasirinkta duomenų bazė turi neefektyvią sąranką iš
-    ankstesnės “WorldwideChat” versijos. Galite arba įjungti derinimo režimą ir išspręsti
-    problemą patys, paleiskite šią komandą išspręsti šią problemą: /wwcd konvertuoti'
   wwcConfigGUICurrentPlayerLang: Tai yra jūsų dabartinė lokalizacija.
   wwctGUILocalizationSameAsServer: Tai yra numatytoji “WorldwideChat” lokalizacija.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Ši kalba jau veikia visame pasaulyje!
@@ -595,4 +579,12 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Dabartinis simbolių limitas vienam pranešimui
     yra {0} simboliai. Įveskite bet ką didesnį nei 0 (bet mažiau nei 256), kad nustatytumėte
     naują reikšmę, arba įveskite 0, kad grįžtumėte atgal.
+  wwcdOutdatedSQLStruct: Panašu, kad viena ar daugiau jūsų “MySQL” ar “PostgreSQL”
+    lentelių turi neteisingą/pasenusį formatą. Daugiau išsamios informacijos apie
+    šią problemą buvo atspausdinta jūsų konsolėje; galbūt galėsite tai išspręsti rankiniu
+    būdu.
+  wwcdSQLAllSet: Jūsų MySQL/PostgreSQL lentelės yra tinkamai suformatuotos.
+  wwcOldDatabaseStruct: 'Jūsų pasirinkta duomenų bazė turi neefektyvią sąranką iš
+    ankstesnės “WorldwideChat” versijos. Norėdami gauti daugiau informacijos, įveskite
+    šią komandą: /wwcd checkdb'
 

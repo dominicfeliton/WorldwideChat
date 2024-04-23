@@ -464,20 +464,6 @@ Messages:
   wwcInvalidStorageSession: Se {0} pèmèt nan config ou, men se yon koneksyon pa etabli.
     Tanpri eseye rloading ranje sa a, men tanpri kontakte pwomotè a si ou deja te
     resevwa yon mesaj koneksyon siksè soti nan {0}.
-  wwcNewSqlConvertFinish: Fini konvèti tab SQL ou yo. Reloading WorldwideChat...
-  wwcNewSqlStruct: Se baz done SQL ou ap itilize nouvo estrikti a epi yo pa bezwen
-    yo dwe konvèti.
-  wwcNewSqlConvertBegin: Konvèti tab SQL ou...
-  wwcOldSqlStructLongIntro: Nou sensèman eskize pou deranjman an, men yon vèsyon anvan
-    nan WorldwideChat inisyalize tab SQL ou ak yon estrikti enefikas. Pandan ke sa
-    a ap kontinye fonksyone ak Plugin nou an, li ka rezilta nan ralentisman siyifikatif
-    ak dosye jwè pi gwo.
-  wwcOldSqlStructLongTodo: 'Ou ka: lage tab yo enprime nan konsole nan MySQL, konvèti
-    yo tèt ou epi gade nan estrikti a nouvo nan repo a github, oswa kouri yon lòd
-    tantativ konvèsyon an ap viv. Tanpri asire w ke ou TE FÈ YON BACKUP NAN BAZ DONE
-    OU ANVAN KOURI SA A. Si ou gen, lòd la se: {0}'
-  wwcNewSqlConvertFail: Konvèsyon echwe... tanpri retabli tab ou soti nan backup la
-    ou te fè. Enfimite WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Aksè chanje non baz done PostgreSQL
     la.
   wwcConfigConversationPostgresOptionalArgsCleared: Agiman si ou vle netwaye avèk
@@ -552,9 +538,6 @@ Messages:
   wwctGUILocalizeStopButton: Reyajiste Lokalizasyon nan sèvè Default
   wwctGUILocalizeTitle: Meni Lokalizasyon
   wwctGUISourceSameLang: Lang sa a ta menm jan ak lang sous ou.
-  wwcOldDatabaseStruct: 'Baz done chwazi ou a gen yon konfigirasyon enefikas soti
-    nan yon vèsyon anvan nan WorldwideChat. Ou ka swa vire sou mòd debug ak ranje
-    pwoblèm nan tèt ou, kouri lòd sa a ranje pwoblèm sa a: /wwcd konvèti'
   wwcConfigGUICurrentPlayerLang: Sa a se lokalizasyon aktyèl ou.
   wwctGUILocalizationSameAsServer: Sa a se lokalizasyon an default pou WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Lang sa a deja aktif globalman!
@@ -570,4 +553,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Limit aktyèl la karaktè pou chak mesaj
     se {0} karaktè. Tape anyen pi gran pase 0 (men mwens pase 256) yo mete yon valè
     nouvo, oswa tape 0 pou tounen.
+  wwcdOutdatedSQLStruct: Li sanble youn oswa plis nan tab MySQL oswa PostgreSQL ou
+    gen yon fòma enkòrèk/demode. Plis enfòmasyon verbose sou pwoblèm sa a te enprime
+    nan konsole ou; ou ka kapab ranje sa a manyèlman.
+  wwcdSQLAllSet: Tab MySQL/PostgreSQL ou yo byen fòma.
+  wwcOldDatabaseStruct: 'Baz done chwazi ou a gen yon konfigirasyon enefikas soti
+    nan yon vèsyon anvan nan WorldwideChat. Tape lòd sa a pou plis enfòmasyon: /wwcd
+    checkdb'
 

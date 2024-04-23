@@ -480,21 +480,6 @@ Messages:
   wwcInvalidStorageSession: '{0} در پیکربندی شما فعال است، اما اتصال ایجاد نشده است.
     لطفا برای رفع این موضوع دوباره بارگذاری کنید، اما اگر قبلاً پیام اتصال موفقیت
     آمیز از {0} دریافت کرده اید، لطفاً با توسعه دهنده تماس بگیرید.'
-  wwcNewSqlConvertFinish: تبدیل جداول SQL خود را به پایان رسانید. بارگیری مجدد ورلدویدچات...
-  wwcNewSqlStruct: پایگاه داده SQL شما از ساختار جدید استفاده می کند و نیازی به تبدیل
-    ندارد.
-  wwcNewSqlConvertBegin: تبدیل جداول SQL شما...
-  wwcOldSqlStructLongIntro: ما صمیمانه برای ناراحتی عذرخواهی می کنیم، اما نسخه قبلی
-    WorldwideChat جداول SQL شما را با یک ساختار ناکارآمد آغاز کرد. در حالی که این
-    کار با افزونه ما همچنان کار خواهد کرد، اما ممکن است منجر به کندی های قابل توجهی
-    با رکورد های بزرگتر پخش کننده شود.
-  wwcOldSqlStructLongTodo: 'شما می توانید: جداول چاپ شده برای کنسول در MySQL را رها
-    کنید، خودتان آنها را تبدیل کرده و به ساختار جدید در repo github نگاه کنید، یا
-    یک دستور اجرا برای تلاش برای تبدیل زنده اجرا کنید. لطفا قبل از اجرای این مطمئن
-    شوید که از پایگاه داده خود نسخه پشتیبان تهیه کرده اید. اگر دارید، دستور این است:
-    {0}'
-  wwcNewSqlConvertFail: تبدیل شکست خورد... لطفا جداول خود را از پشتیبان گیری که ساخته
-    اید بازگردانید. غیرفعال کردن WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: با موفقیت نام پایگاه داده PostgreSQL
     را تغییر داد.
   wwcConfigConversationPostgresOptionalArgsCleared: آرگوهای اختیاری با موفقیت پاک
@@ -569,9 +554,6 @@ Messages:
   wwctGUILocalizeStopButton: تنظیم مجدد محلی سازی به پیش فرض سرور
   wwctGUILocalizeTitle: منوی محلی سازی
   wwctGUISourceSameLang: این زبان همان زبان منبع شما خواهد بود.
-  wwcOldDatabaseStruct: 'پایگاه داده انتخاب شده شما دارای تنظیمات ناکارآمد نسبت به
-    نسخه قبلی WorldwideChat است. شما می توانید حالت اشکال زدایی را روشن کرده و مشکل
-    را خودتان برطرف کنید، دستور زیر را برای رفع این مشکل اجرا کنید: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: این محلی سازی فعلی شماست.
   wwctGUILocalizationSameAsServer: این محلی سازی پیش فرض برای WorldwideChat است.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: این زبان در حال حاضر در سطح جهانی
@@ -588,4 +570,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: محدودیت کاراکتر فعلی در هر پیام {0} کاراکتر
     است. برای تنظیم مقدار جدید هر چیزی بزرگتر از 0 (اما کمتر از 256) تایپ کنید یا
     0 را برای بازگشت تایپ کنید.
+  wwcdOutdatedSQLStruct: به نظر می رسد که یک یا چند جداول MySQL یا PostgreSQL شما
+    دارای فرمت نادر/قدیمی است. اطلاعات بیشتر در مورد این مشکل در کنسول شما چاپ شده
+    است. ممکن است بتوانید این موضوع را به صورت دستی برطرف کنید.
+  wwcdSQLAllSet: جداول MySQL/PostgreSQL شما به درستی قالب بندی شده اند.
+  wwcOldDatabaseStruct: 'پایگاه داده انتخاب شده شما دارای تنظیمات ناکارآمد نسبت به
+    نسخه قبلی WorldwideChat است. دستور زیر را برای اطلاعات بیشتر تایپ کنید: /wwcd
+    checkdb'
 

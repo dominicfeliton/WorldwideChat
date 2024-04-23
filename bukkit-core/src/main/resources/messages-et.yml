@@ -461,20 +461,6 @@ Messages:
   wwcInvalidStorageSession: '{0} on teie konfiguratsioonis lubatud, kuid ühendust
     pole loodud. Proovige selle parandamiseks uuesti laadida, kuid võtke ühendust
     arendajaga, kui olete varem saanud eduka ühenduse teate saidilt {0}.'
-  wwcNewSqlConvertFinish: Lõpetas oma SQL-tabelite teisendamine. WorldwideChati uuesti
-    laadimine...
-  wwcNewSqlStruct: Teie SQL-andmebaas kasutab uut struktuuri ja seda pole vaja teisendada.
-  wwcNewSqlConvertBegin: SQL-tabelite teisendamine...
-  wwcOldSqlStructLongIntro: Vabandame siiralt ebamugavuste pärast, kuid WorldwideChati
-    eelmine versioon initsialiseeris teie SQL-tabelid ebatõhusa struktuuriga. Kuigi
-    see töötab meie pistikprogrammiga jätkuvalt, suuremate mängijate rekorditega võib
-    see põhjustada märkimisväärset aeglustumist.
-  wwcOldSqlStructLongTodo: 'Võite: loobuda MySQL-is konsooliks trükitud tabelid, teisendada
-    need ise ja vaadata githubi repo-s uut struktuuri või käivitada käsk konversiooni
-    reaalajas proovimiseks. Enne selle käivitamist veenduge, et OLETE OMA ANDMEBAASIST
-    VARUKOOPIA TEINUD. Kui teil on, on käsk: {0}'
-  wwcNewSqlConvertFail: Teisendamine ebaõnnestus... palun taastage oma tabelid tehtud
-    varukoopiast. WorldwideChati keelamine...
   wwcConfigConversationPostgresDatabaseNameSuccess: Muudeti edukalt PostgreSQL-i andmebaasi
     nime.
   wwcConfigConversationPostgresOptionalArgsCleared: Valikulised argumendid kustutati
@@ -548,9 +534,6 @@ Messages:
   wwctGUILocalizeStopButton: Lähtesta lokaliseerimine serveri vaikeolekusse
   wwctGUILocalizeTitle: Lokaliseerimismenüü
   wwctGUISourceSameLang: See keel oleks sama, mis teie lähtekeel.
-  wwcOldDatabaseStruct: 'Teie valitud andmebaasis on ebatõhus seadistus võrreldes
-    WorldwideChati eelmisest versioonist. Võite silumisrežiimi sisse lülitada ja probleemi
-    ise lahendada, selle probleemi lahendamiseks käivitage järgmine käsk: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: See on teie praegune lokaliseerimine.
   wwctGUILocalizationSameAsServer: See on WorldwideChati vaikimisi lokaliseerimine.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: See keel on juba kogu maailmas aktiivne!
@@ -566,4 +549,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Praegune märkide piirang sõnumi kohta
     on {0} tähemärki. Uue väärtuse määramiseks tippige midagi, mis on suurem kui 0
     (kuid väiksem kui 256), või tippige tagasi minemiseks 0.
+  wwcdOutdatedSQLStruct: Tundub, et ühel või mitmel teie MySQL või PostgreSQL-i tabelil
+    on vale/vananenud vorming. Selle probleemi kohta on teie konsooli trükitud rohkem
+    üksikasjalikku teavet; võib-olla saate selle käsitsi parandada.
+  wwcdSQLAllSet: Teie MySQL/PostgreSQL-i tabelid on korralikult vormindatud.
+  wwcOldDatabaseStruct: 'Teie valitud andmebaasis on ebatõhus seadistus võrreldes
+    WorldwideChati eelmisest versioonist. Lisateabe saamiseks tippige järgmine käsk:
+    /wwcd checkdb'
 

@@ -479,20 +479,6 @@ Messages:
   wwcInvalidStorageSession: An kunna {0} a cikin daidaitawar ku, amma ba a kafa haɗin
     kai ba. Da fatan za a gwada sake loda don gyara wannan, amma da fatan za a tuntuɓi
     mai haɓakawa idan a baya kun sami saƙon haɗin nasara daga {0}.
-  wwcNewSqlConvertFinish: Gama canza teburin SQL ɗin ku. Sake loda WorldwideChat...
-  wwcNewSqlStruct: Bayanan SQL ɗinku yana amfani da sabon tsarin kuma baya buƙatar
-    canza shi.
-  wwcNewSqlConvertBegin: Canza teburin SQL ɗinku...
-  wwcOldSqlStructLongIntro: Muna hakuri da gaske saboda rashin jin daɗi, amma sigar
-    da ta gabata na WorldwideChat ya fara teburin SQL ɗinku tare da tsari mara inganci.
-    Duk da yake wannan zai ci gaba da aiki tare da plugin ɗin mu, yana iya haifar
-    da raguwa mai mahimmanci tare da manyan bayanan ɗan wasa.
-  wwcOldSqlStructLongTodo: 'Kuna iya: sauke teburin da aka buga don na''ura a cikin
-    MySQL, canza su da kanku kuma duba sabon tsarin a cikin github repo, ko gudanar
-    da umarni don ƙoƙarin juyawa kai tsaye. Da fatan za a tabbatar cewa KUN YI AJIYAR
-    BAYANAN KU KAFIN GUDANAR DA WANNAN. Idan kuna da, umurnin shine: {0}'
-  wwcNewSqlConvertFail: Juyawa ya gaza... don Allah mayar da teburin ku daga madadin
-    da kuka yi. Kashe WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: An sami nasarar canza sunan bayanan
     PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Muhawarar zaɓi aka share su cikin
@@ -568,9 +554,6 @@ Messages:
   wwctGUILocalizeStopButton: Sake saita Yankewa zuwa Tsarin Server
   wwctGUILocalizeTitle: Menu na Yankewa
   wwctGUISourceSameLang: Wannan yaren zai zama daidai da yaren asalin ku.
-  wwcOldDatabaseStruct: Bayanan da kuka zaɓa yana da saiti mara inganci daga sigar
-    WorldwideChat da ta gabata. Kuna iya kunna yanayin debug kuma ku gyara batun da
-    kanku, gudanar da umarni mai zuwa don gyara wannan batun:/wwcd canza
   wwcConfigGUICurrentPlayerLang: Wannan shi ne yanayin ku na yanzu.
   wwctGUILocalizationSameAsServer: Wannan shine tsoho yanayin wuri don WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Wannan yaren ya riga yana aiki a
@@ -587,4 +570,10 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Iyakar haruffa na yanzu a kowane saƙo
     shine haruffa {0}. Rubuta wani abu mafi girma fiye da 0 (amma ƙasa da 256) don
     saita sabon ƙima, ko rubuta 0 don komawa.
+  wwcdOutdatedSQLStruct: Yana kama da ɗaya ko fiye daga cikin teburin MySQL ko PostgreSQL
+    yana da tsarin da ba daidaita/tsoho. An buga ƙarin bayani game da wannan batun
+    zuwa na'urar wasan bidiyo; ƙila zaku iya gyara wannan da hannu.
+  wwcdSQLAllSet: Teburin MySQL/PostgreSQL ɗinku an tsara su yadda ya kamata.
+  wwcOldDatabaseStruct: Bayanan da kuka zaɓa yana da saiti mara inganci daga sigar
+    WorldwideChat da ta gabata. Rubuta umarni mai zuwa don ƙarin bayani:/wwcd checkdb
 

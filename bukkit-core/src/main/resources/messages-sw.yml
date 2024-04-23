@@ -476,19 +476,6 @@ Messages:
     haujaanzishwa. Tafadhali jaribu kupakia tena ili kurekebisha hii, lakini tafadhali
     wasiliana na msanidi programu ikiwa hapo awali ulipokea ujumbe wa unganisho uliofanikiwa
     kutoka {0'
-  wwcNewSqlConvertFinish: Ikimaliza kubadilisha meza zako za SQL. Inapakia upya WorldwideChat...
-  wwcNewSqlStruct: Hifadhidata yako ya SQL inatumia muundo mpya na haitaji kubadilishwa.
-  wwcNewSqlConvertBegin: Kubadilisha meza zako za SQL...
-  wwcOldSqlStructLongIntro: Tunaomba msamaha kwa dhati kwa usumbufu, lakini toleo
-    la awali la WorldwideChat lilianzisha meza zako za SQL na muundo usio na ufanisi.
-    Ingawa hii itaendelea kufanya kazi na programu-jalizi yetu, inaweza kusababisha
-    upungufu mkubwa na rekodi kubwa za wachezaji.
-  wwcOldSqlStructLongTodo: 'Unaweza: kuacha meza zilizochapishwa ili kutolewa kwenye
-    MySQL, zibadilisha mwenyewe na uangalie muundo mpya katika repo ya github, au
-    tumia amri ili kujaribu ubadilishaji moja kwa moja. Tafadhali hakikisha kuwa UMEFANYA
-    NAHIFADHI YA HIFADHIDATA YAKO KABLA YA KUENDESHA HII. Ikiwa una, amri ni: {0}'
-  wwcNewSqlConvertFail: Ubadilishaji ulishindwa... tafadhali rudisha meza zako kutoka
-    kwa chelezo uliyofanya. Kuzuia WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Kwa mafanikio ilibadilisha jina
     la hifadhidata ya PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Hoja za hiari zilizofanikiwa.
@@ -570,10 +557,6 @@ Messages:
   wwctGUILocalizeStopButton: Weka upya Ukajiaji kwa Seva Default
   wwctGUILocalizeTitle: Menyu ya Ujanifu
   wwctGUISourceSameLang: Lugha hii itakuwa sawa na lugha yako ya chanzo.
-  wwcOldDatabaseStruct: 'Hifadhidata yako iliyochagua ina usanidi usio na ufanisi
-    kutoka toleo la awali la WorldwideChat. Unaweza ama kuwasha hali ya kufuta na
-    kurekebisha suala mwenyewe, tumia amri ifuatayo ili kurekebisha suala hili: /wwcd
-    convert'
   wwcConfigGUICurrentPlayerLang: Huu ndio ujanibishaji wako wa sasa.
   wwctGUILocalizationSameAsServer: Hii ndio ujanibishaji wa default kwa WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Lugha hii tayari inafanya kazi ulimwenguni!
@@ -590,4 +573,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Kikomo cha sasa cha tabia kwa kila ujumbe
     ni herufi za {0}. Andika chochote kubwa kuliko 0 (lakini chini ya 256) ili kuweka
     thamani mpya, au andika 0 ili kurudi nyuma.
+  wwcdOutdatedSQLStruct: Inaonekana kama moja au zaidi ya meza zako za MySQL au PostgreSQL
+    zina muundo usio sahihi/imepitwa na wakati. Habari zaidi juu ya suala hili imechapishwa
+    kwenye console yako; unaweza kurekebisha hii kwa mikono.
+  wwcdSQLAllSet: Meza zako za MySQL/PostgreSQL zimeundwa vizuri.
+  wwcOldDatabaseStruct: 'Hifadhidata yako iliyochagua ina usanidi usio na ufanisi
+    kutoka toleo la awali la WorldwideChat. Andika amri ifuatayo kwa habari zaidi:
+    /wwcd checkdb'
 

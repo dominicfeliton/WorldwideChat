@@ -449,20 +449,6 @@ Messages:
   wwcInvalidStorageSession: تم تمكين {0} في التكوين الخاص بك، ولكن لم يتم إنشاء اتصال.
     يرجى محاولة إعادة التحميل لإصلاح هذا، ولكن يرجى الاتصال بالمطور إذا كنت قد تلقيت
     سابقًا رسالة اتصال ناجحة من {0}.
-  wwcNewSqlConvertFinish: تم الانتهاء من تحويل جداول SQL الخاصة بك. جاري إعادة تحميل
-    الدردشة العالمية...
-  wwcNewSqlStruct: تستخدم قاعدة بيانات SQL البنية الجديدة ولا تحتاج إلى تحويل.
-  wwcNewSqlConvertBegin: جاري تحويل جداول SQL الخاصة بك...
-  wwcOldSqlStructLongIntro: نعتذر بصدق عن الإزعاج، لكن إصدارًا سابقًا من WorldwideChat
-    قام بتهيئة جداول SQL الخاصة بك بهيكل غير فعال. على الرغم من أن هذا سيستمر في العمل
-    مع المكون الإضافي الخاص بنا، إلا أنه قد يؤدي إلى تباطؤ كبير في سجلات اللاعبين
-    الأكبر.
-  wwcOldSqlStructLongTodo: 'يمكنك: إسقاط الجداول المطبوعة على وحدة التحكم في MySQL،
-    وتحويلها بنفسك وإلقاء نظرة على البنية الجديدة في github repo، أو تشغيل أمر لمحاولة
-    التحويل مباشرة. يرجى التأكد من عمل نسخة احتياطية من قاعدة البيانات الخاصة بك قبل
-    تشغيل هذا. إذا كان لديك، فإن الأمر هو: {0}'
-  wwcNewSqlConvertFail: فشلت عملية التحويل... الرجاء استعادة الجداول من النسخة الاحتياطية
-    التي قمت بإنشائها. تعطيل الدردشة العالمية...
   wwcConfigConversationPostgresDatabaseNameSuccess: تم تغيير اسم قاعدة بيانات PostgreSQL
     بنجاح.
   wwcConfigConversationPostgresOptionalArgsCleared: تم مسح الحجج الاختيارية بنجاح.
@@ -531,9 +517,6 @@ Messages:
   wwctGUILocalizeStopButton: إعادة تعيين الترجمة إلى الخادم الافتراضي
   wwctGUILocalizeTitle: قائمة التعريب
   wwctGUISourceSameLang: ستكون هذه اللغة هي نفس لغة المصدر الخاصة بك.
-  wwcOldDatabaseStruct: 'تحتوي قاعدة البيانات التي اخترتها على إعداد غير فعال من إصدار
-    سابق من WorldwideChat. يمكنك إما تشغيل وضع التصحيح وإصلاح المشكلة بنفسك، قم بتشغيل
-    الأمر التالي لإصلاح هذه المشكلة: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: هذه هي الترجمة الحالية الخاصة بك.
   wwctGUILocalizationSameAsServer: هذه هي الترجمة الافتراضية لـ WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: هذه اللغة نشطة بالفعل على مستوى العالم!
@@ -550,4 +533,10 @@ Messages:
     التحميل.
   wwcConfigConversationCharacterLimitInput: الحد الحالي لعدد الأحرف لكل رسالة هو {0}
     حرفًا. اكتب أي شيء أكبر من 0 (ولكن أقل من 256) لتعيين قيمة جديدة، أو اكتب 0 للعودة.
+  wwcdOutdatedSQLStruct: يبدو أن واحدًا أو أكثر من جداول MySQL أو PostgreSQL يحتوي
+    على تنسيق غير صحيح/قديم. تمت طباعة المزيد من المعلومات المفصلة حول هذه المشكلة
+    على وحدة التحكم الخاصة بك؛ قد تتمكن من إصلاح هذا يدويًا.
+  wwcdSQLAllSet: يتم تنسيق جداول MySQL/PostgreSQL الخاصة بك بشكل صحيح.
+  wwcOldDatabaseStruct: 'تحتوي قاعدة البيانات التي اخترتها على إعداد غير فعال من إصدار
+    سابق من WorldwideChat. اكتب الأمر التالي لمزيد من المعلومات: /wwcd checkdb'
 

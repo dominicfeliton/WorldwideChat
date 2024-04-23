@@ -487,20 +487,6 @@ Messages:
     nối không được thiết lập. Vui lòng thử tải lại để khắc phục vấn đề này, nhưng
     vui lòng liên hệ với nhà phát triển nếu trước đây bạn nhận được thông báo kết
     nối thành công từ {0}.'
-  wwcNewSqlConvertFinish: Hoàn thành chuyển đổi bảng SQL của bạn. Đang tải lại WorldwideChat...
-  wwcNewSqlStruct: Cơ sở dữ liệu SQL của bạn đang sử dụng cấu trúc mới và không cần
-    phải chuyển đổi.
-  wwcNewSqlConvertBegin: Chuyển đổi bảng SQL của bạn...
-  wwcOldSqlStructLongIntro: Chúng tôi chân thành xin lỗi vì sự bất tiện này, nhưng
-    phiên bản trước của WorldwideChat đã khởi tạo các bảng SQL của bạn với cấu trúc
-    không hiệu quả. Mặc dù điều này sẽ tiếp tục hoạt động với plugin của chúng tôi,
-    nhưng nó có thể dẫn đến sự chậm lại đáng kể với hồ sơ người chơi lớn hơn.
-  wwcOldSqlStructLongTodo: 'Bạn có thể: thả các bảng được in vào bảng điều khiển trong
-    MySQL, tự chuyển đổi chúng và xem cấu trúc mới trong repo github hoặc chạy lệnh
-    để thử chuyển đổi trực tiếp. Hãy chắc chắn rằng bạn đã tạo bản sao lưu cơ sở dữ
-    liệu của bạn trước khi chạy điều này. Nếu bạn có, lệnh là: {0}'
-  wwcNewSqlConvertFail: Chuyển đổi không thành công... vui lòng khôi phục bảng của
-    bạn từ bản sao lưu bạn đã tạo. Vô hiệu hóa WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Thay đổi thành công tên cơ sở
     dữ liệu PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Các đối số tùy chọn đã xóa thành
@@ -576,9 +562,6 @@ Messages:
   wwctGUILocalizeStopButton: Đặt lại bản địa hóa về mặc định của máy chủ
   wwctGUILocalizeTitle: Menu bản địa hóa
   wwctGUISourceSameLang: Ngôn ngữ này sẽ giống với ngôn ngữ nguồn của bạn.
-  wwcOldDatabaseStruct: 'Cơ sở dữ liệu bạn đã chọn có thiết lập không hiệu quả từ
-    phiên bản trước của WorldwideChat. Bạn có thể bật chế độ gỡ lỗi và tự khắc phục
-    sự cố, chạy lệnh sau để khắc phục sự cố này: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: Đây là bản địa hóa hiện tại của bạn.
   wwctGUILocalizationSameAsServer: Đây là bản địa hóa mặc định cho WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Ngôn ngữ này đã hoạt động trên toàn
@@ -597,4 +580,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Giới hạn ký tự hiện tại cho mỗi tin nhắn
     là {0} ký tự. Nhập bất cứ thứ gì lớn hơn 0 (nhưng nhỏ hơn 256) để đặt giá trị
     mới hoặc nhập 0 để quay trở lại.
+  wwcdOutdatedSQLStruct: Có vẻ như một hoặc nhiều bảng MySQL hoặc PostgreSQL của bạn
+    có định dạng sai hoặc lỗi thời. Thông tin chi tiết hơn về vấn đề này đã được in
+    vào bảng điều khiển của bạn; bạn có thể khắc phục điều này theo cách thủ công.
+  wwcdSQLAllSet: Các bảng MySQL/PostgreSQL của bạn được định dạng đúng.
+  wwcOldDatabaseStruct: 'Cơ sở dữ liệu bạn đã chọn có thiết lập không hiệu quả từ
+    phiên bản trước của WorldwideChat. Nhập lệnh sau để biết thêm thông tin: /wwcd
+    checkdb'
 

@@ -480,19 +480,6 @@ Messages:
   wwcInvalidStorageSession: '{0} je ve vaší konfiguraci povoleno, ale spojení není
     navázáno. Zkuste to znovu načíst, ale kontaktujte vývojáře, pokud jste dříve obdrželi
     zprávu o úspěšném připojení od {0}.'
-  wwcNewSqlConvertFinish: Dokončeno převádění tabulek SQL. Načítání WorldwideChat...
-  wwcNewSqlStruct: Vaše databáze SQL používá novou strukturu a není třeba ji převádět.
-  wwcNewSqlConvertBegin: Převod tabulek SQL...
-  wwcOldSqlStructLongIntro: Upřímně se omlouváme za nepříjemnosti, ale předchozí verze
-    WorldwideChat inicializovala vaše tabulky SQL s neefektivní strukturou. I když
-    to bude i nadále fungovat s naším pluginem, může to mít za následek výrazné zpomalení
-    s většími záznamy hráčů.
-  wwcOldSqlStructLongTodo: 'Můžete: vypustit tabulky vytištěné na konzoli v MySQL,
-    převést je sami a podívat se na novou strukturu v repozitáři github, nebo spustit
-    příkaz k pokusu o převod naživo. Ujistěte se, že jste PROVEDLI ZÁLOHU VAŠÍ DATABÁZE
-    PŘED SPUŠTĚNÍM TOHOTO. Pokud ano, příkaz je: {0}'
-  wwcNewSqlConvertFail: Převod se nezdařil... obnovte tabulky ze zálohy, kterou jste
-    vytvořili. Zakázání WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Úspěšně změnil název databáze
     PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Volitelné argumenty byly úspěšně
@@ -568,9 +555,6 @@ Messages:
   wwctGUILocalizeStopButton: Obnovit lokalizaci na výchozí server
   wwctGUILocalizeTitle: Lokalizační menu
   wwctGUISourceSameLang: Tento jazyk by byl stejný jako váš zdrojový jazyk.
-  wwcOldDatabaseStruct: 'Vámi vybraná databáze má neefektivní nastavení z předchozí
-    verze WorldwideChat. Můžete buď zapnout režim ladění a opravit problém sami, spusťte
-    následující příkaz k opravě tohoto problému: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: Toto je vaše aktuální lokalizace.
   wwctGUILocalizationSameAsServer: Toto je výchozí lokalizace pro WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Tento jazyk je již aktivní po celém
@@ -588,4 +572,10 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Aktuální limit znaků na zprávu je {0}
     znaků. Zadejte cokoli větší než 0 (ale menší než 256), chcete-li nastavit novou
     hodnotu, nebo zadejte 0 pro návrat zpět.
+  wwcdOutdatedSQLStruct: Vypadá to, že jedna nebo více vašich tabulek MySQL nebo PostgreSQL
+    má nesprávný/zastaralý formát. Podrobnější informace o tomto problému byly vytištěny
+    na konzoli; možná to budete moci opravit ručně.
+  wwcdSQLAllSet: Vaše tabulky MySQL/PostgreSQL jsou správně naformátovány.
+  wwcOldDatabaseStruct: 'Vámi vybraná databáze má neefektivní nastavení z předchozí
+    verze WorldwideChat. Pro více informací zadejte následující příkaz: /wwcd checkdb'
 

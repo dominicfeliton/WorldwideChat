@@ -485,21 +485,6 @@ Messages:
     komið á fót. Vinsamlegast reyndu að endurhlaða til að laga þetta, en vinsamlegast
     hafðu samband við verktaki ef þú fékkst áður árangursrík tengingarskilaboð frá
     {0}.'
-  wwcNewSqlConvertFinish: Lokið að umbreyta SQL töflunum þínum. Endurhleðsla WorldwideChat...
-  wwcNewSqlStruct: SQL gagnagrunnurinn þinn notar nýja uppbygginguna og þarf ekki
-    að breyta.
-  wwcNewSqlConvertBegin: Umbreyta SQL töflunum þínum...
-  wwcOldSqlStructLongIntro: Við biðjumst innilega velvirðingar á óþægindunum, en fyrri
-    útgáfa af WorldwideChat frumstillti SQL töflurnar þínar með óhagkvæmri uppbyggingu.
-    Þó að þetta muni halda áfram að virka með tappi okkar, getur það leitt til verulegra
-    hægagangs með stærri leikmaður færslur.
-  wwcOldSqlStructLongTodo: 'Þú getur: sleppt töflunum sem prentaðar eru til að hugga
-    í MySQL, umbreyta þeim sjálfur og skoðað nýju uppbygginguna í github repo, eða
-    keyra skipun til að reyna umbreytinguna í beinni útsendingu. Vinsamlegast vertu
-    viss um að þú hafir gert öryggisafrit af gagnagrunninum þínum áður en þú keyrir
-    þetta. Ef þú ert með þá er skipunin: {0}'
-  wwcNewSqlConvertFail: Umbreyting mistókst... vinsamlegast endurheimtu töflurnar
-    þínar úr öryggisafritinu sem þú gerðir. Slökkva á WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Breytti PostgreSQL gagnagrunnsnafninu
     með góðum árangri.
   wwcConfigConversationPostgresOptionalArgsCleared: Valfrjáls rök hreinsuð með góðum
@@ -577,9 +562,6 @@ Messages:
   wwctGUILocalizeStopButton: Endurstilla staðsetningu á sjálfgefinn þjón
   wwctGUILocalizeTitle: Staðsetningarvalmynd
   wwctGUISourceSameLang: Þetta tungumál væri það sama og upprunamálið þitt.
-  wwcOldDatabaseStruct: 'Gagnagrunnurinn sem valinn er með óhagkvæma uppsetningu frá
-    fyrri útgáfu af WorldwideChat. Þú getur annaðhvort kveikt á kembiforrit ham og
-    laga málið sjálfur, keyra eftirfarandi skipun til að laga þetta mál: /wwcd umbreyta'
   wwcConfigGUICurrentPlayerLang: Þetta er núverandi staðsetning þín.
   wwctGUILocalizationSameAsServer: Þetta er sjálfgefin staðsetning fyrir WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Þetta tungumál er nú þegar virkt
@@ -597,4 +579,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Núverandi stafamörk fyrir hvert skeyti
     er {0} stafir. Sláðu inn eitthvað sem er stærra en 0 (en minna en 256) til að
     stilla nýtt gildi, eða sláðu inn 0 til að fara aftur.
+  wwcdOutdatedSQLStruct: Það lítur út fyrir að eitt eða fleiri af MySQL eða PostgreSQL
+    töflunum þínum hafi rangt/gamaldags snið. Frekari upplýsingar um þetta mál hafa
+    verið prentaðar á vélinni þinni; þú gætir verið fær um að laga þetta handvirkt.
+  wwcdSQLAllSet: MySQL/PostgreSQL töflurnar þínar eru rétt sniðnar.
+  wwcOldDatabaseStruct: 'Gagnagrunnurinn sem valinn er með óhagkvæma uppsetningu frá
+    fyrri útgáfu af WorldwideChat. Sláðu inn eftirfarandi skipun til að fá frekari
+    upplýsingar: /wwcd checkdb'
 

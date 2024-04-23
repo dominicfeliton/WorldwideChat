@@ -374,13 +374,6 @@ Messages:
   systranHttp400: 向 Systran 发送的参数不正确。可能是一对不好的语言对吗？
   systranHttp500: 来自 Systran 端点 ({0}) 的内部服务器错误。
   wwcInvalidStorageSession: '{0} 已在您的配置中启用，但未建立连接。请尝试重新加载以修复此问题，但如果您之前收到了来自 {0} 的成功连接消息，请联系开发者。'
-  wwcNewSqlConvertFinish: 已完成您的 SQL 表的转换。正在加载 WorldwideChat...
-  wwcNewSqlStruct: 您的 SQL 数据库正在使用新结构，无需转换。
-  wwcNewSqlConvertBegin: 正在转换您的 SQL 表...
-  wwcOldSqlStructLongIntro: 对于给您带来的不便，我们深表歉意，但是 WorldwideChat 的先前版本使用低效的结构初始化了您的 SQL
-    表。虽然这将在我们的插件中继续起作用，但如果玩家记录越大，可能会导致速度明显减慢。
-  wwcOldSqlStructLongTodo: 你可以：在 MySQL 中删除打印到控制台的表，自己转换然后在 github 存储库中查看新结构，或者运行命令尝试实时转换。在运行此命令之前，请确保您已备份了数据库。如果你有，命令是：{0}
-  wwcNewSqlConvertFail: 转换失败... 请从您创建的备份中恢复您的表。禁用全球聊天...
   wwcConfigConversationPostgresDatabaseNameSuccess: 成功更改了 PostgreSQL 数据库名称。
   wwcConfigConversationPostgresOptionalArgsCleared: 已成功清除可选参数。
   wwcConfigConversationPostgresPortInput: 当前端口为 {0}。键入 0 以外的任何内容来设置新端口，或键入 0 返回。
@@ -440,8 +433,6 @@ Messages:
   wwctGUILocalizeStopButton: 将本地化重置为服务器默认值
   wwctGUILocalizeTitle: 本地化菜单
   wwctGUISourceSameLang: 此语言将与您的源语言相同。
-  wwcOldDatabaseStruct: 与之前版本的WorldwideChat相比，您选择的数据库的设置效率低下。你可以打开调试模式自己修复问题，运行以下命令来修复这个问题：/wwcd
-    convert
   wwcConfigGUICurrentPlayerLang: 这是你当前的本地化。
   wwctGUILocalizationSameAsServer: 这是全球聊天的默认本地化。
   wwctGUISourceOrTargetTranslationAlreadyGlobal: 这种语言已经在全球范围内活跃了！
@@ -453,4 +444,7 @@ Messages:
   wwcConfigPersistentCacheEnabled: 缓存数据将在重新加载后保持不变。
   wwcConfigConversationCharacterLimitInput: 每条消息的当前字符限制为 {0} 个字符。键入任何大于 0（但小于 256）的值以设置新值，或键入
     0 返回。
+  wwcdOutdatedSQLStruct: 看来你的一个或多个 MySQL 或 PostgreSQL 表的格式不正确/过时。有关此问题的更多详细信息已打印到您的主机；您可以手动修复此问题。
+  wwcdSQLAllSet: 您的 MySQL/PostgreSQL 表格式正确。
+  wwcOldDatabaseStruct: 与之前版本的WorldwideChat相比，您选择的数据库的设置效率低下。键入以下命令以获取更多信息：/wwcd checkdb
 

@@ -531,23 +531,6 @@ Messages:
     ang koneksyon. Mangyaring subukang mag-reload upang ayusin ito, ngunit mangyaring
     makipag-ugnay sa developer kung dati kang nakatanggap ng isang matagumpay na mensahe
     ng koneksyon mula sa {0}.
-  wwcNewSqlConvertFinish: Natapos ang pag-convert ng iyong mga talahanayan ng SQL.
-    Muling pag-load ng WorldwideChat...
-  wwcNewSqlStruct: Ang iyong SQL database ay gumagamit ng bagong istraktura at hindi
-    kailangang i-convert.
-  wwcNewSqlConvertBegin: Pag-convert ng iyong mga talahanayan ng SQL...
-  wwcOldSqlStructLongIntro: Taos-puso kaming humihingi ng paumanhin para sa abala,
-    ngunit inisimula ng isang nakaraang bersyon ng WorldwideChat ang iyong mga talahanayan
-    ng SQL na may isang hindi mahusay na istraktura. Bagama't patuloy itong gumana
-    sa aming plugin, maaari itong magresulta sa makabuluhang pagbagal sa mas malaking
-    mga talaan ng manlalaro.
-  wwcOldSqlStructLongTodo: 'Maaari mong: i-drop ang mga talahanayan na naka-print
-    sa console sa MySQL, i-convert ang mga ito mismo at tingnan ang bagong istraktura
-    sa repo ng github, o patakbuhin ang isang command upang subukang live ang conversion.
-    Mangyaring siguraduhin na GUMAWA KA NG ISANG BACKUP NG IYONG DATABASE BAGO PATAKBUHIN
-    ITO. Kung mayroon ka, ang utos ay: {0}'
-  wwcNewSqlConvertFail: Nabigo ang conversion... mangyaring ibalik ang iyong mga talahanayan
-    mula sa backup na iyong ginawa. Hindi paganahin ang WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Matagumpay na binago ang pangalan
     ng database ng PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Matagumpay na na-clear ang mga
@@ -639,10 +622,6 @@ Messages:
   wwctGUILocalizeTitle: Menu ng Lokalisasyon
   wwctGUISourceSameLang: Ang wikang ito ay magiging katulad ng iyong pinagmulan na
     wika.
-  wwcOldDatabaseStruct: 'Ang iyong napiling database ay may hindi mahusay na pag-setup
-    mula sa isang nakaraang bersyon ng WorldwideChat. Maaari mong buksan ang debug
-    mode at ayusin ang isyu mismo, patakbuhin ang sumusunod na utos upang ayusin ang
-    isyung ito: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: Ito ang iyong kasalukuyang lokalisasyon.
   wwctGUILocalizationSameAsServer: Ito ang default na lokalisasyon para sa WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Ang wikang ito ay aktibo na sa buong
@@ -661,4 +640,12 @@ Messages:
     bawat mensahe ay {0} character. I-type ang anumang bagay na mas malaki kaysa sa
     0 (ngunit mas mababa sa 256) upang magtakda ng bagong halaga, o i-type ang 0 upang
     bumalik.
+  wwcdOutdatedSQLStruct: Mukhang isa o higit pa sa iyong mga talahanayan ng MySQL
+    o PostgreSQL ay may hindi tama/hindi napapanahong format. Higit pang malalaking
+    impormasyon tungkol sa isyung ito ay naka-print sa iyong console; maaari mong
+    ayusin ito nang manu-mano.
+  wwcdSQLAllSet: Ang iyong mga talahanayan ng MySQL/PostgreSQL ay maayos na na-format.
+  wwcOldDatabaseStruct: 'Ang iyong napiling database ay may hindi mahusay na pag-setup
+    mula sa isang nakaraang bersyon ng WorldwideChat. I-type ang sumusunod na utos
+    para sa karagdagang impormasyon: /wwcd checkdb'
 

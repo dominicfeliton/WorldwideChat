@@ -384,13 +384,6 @@ Messages:
   systranHttp500: Systran エンドポイント ({0}) からの内部サーバーエラー。
   wwcInvalidStorageSession: '{0} は設定で有効になっていますが、接続は確立されていません。これを修正するにはリロードを試みてください。ただし、以前に
     {0} から正常に接続されたというメッセージを受け取っている場合は、開発者に連絡してください。'
-  wwcNewSqlConvertFinish: SQL テーブルの変換が終了しました。ワールドワイドチャットをリロード中...
-  wwcNewSqlStruct: SQL データベースは新しい構造を使用しているため、変換する必要はありません。
-  wwcNewSqlConvertBegin: SQL テーブルを変換中...
-  wwcOldSqlStructLongIntro: ご不便をおかけして申し訳ありませんが、WorldwideChatの以前のバージョンでは、SQLテーブルが非効率的な構造で初期化されていました。これはプラグインでも引き続き機能しますが、プレイヤーの記録が大きいほど速度が大幅に低下する可能性があります。
-  wwcOldSqlStructLongTodo: MySQLのコンソールに出力されたテーブルをドロップするか、自分で変換してgithubリポジトリの新しい構造を確認するか、コマンドを実行してライブで変換を試みることができます。これを実行する前に、必ずデータベースのバックアップを作成してください。ある場合、コマンドは
-    {0} です。
-  wwcNewSqlConvertFail: 変換に失敗しました。作成したバックアップからテーブルを復元してください。ワールドワイドチャットを無効にしています...
   wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL データベース名は正常に変更されました。
   wwcConfigConversationPostgresOptionalArgsCleared: オプション引数は正常にクリアされました。
   wwcConfigConversationPostgresPortInput: 現在のポートは {0} です。0 以外を入力すると新しいポートが設定され、0 を入力すると元に戻ります。
@@ -450,8 +443,6 @@ Messages:
   wwctGUILocalizeStopButton: ローカライズをサーバーのデフォルトにリセット
   wwctGUILocalizeTitle: ローカリゼーションメニュー
   wwctGUISourceSameLang: この言語はソース言語と同じになります。
-  wwcOldDatabaseStruct: 選択したデータベースは、以前のバージョンの WorldwideChat の設定では効率が悪いです。デバッグモードをオンにして問題を自分で修正するか、次のコマンドを実行して問題を解決することができます。/wwcd
-    convert
   wwcConfigGUICurrentPlayerLang: これが現在のローカリゼーションです。
   wwctGUILocalizationSameAsServer: これはワールドワイドチャットのデフォルトのローカリゼーションです。
   wwctGUISourceOrTargetTranslationAlreadyGlobal: この言語はすでに世界中で使われています！
@@ -463,4 +454,8 @@ Messages:
   wwcConfigPersistentCacheEnabled: キャッシュデータはリロード後も保持されます。
   wwcConfigConversationCharacterLimitInput: 現在のメッセージあたりの文字数制限は {0} 文字です。0 より大きい (256
     未満) を入力して新しい値を設定するか、0 を入力して戻ります。
+  wwcdOutdatedSQLStruct: MySQL または PostgreSQL テーブルの 1 つまたは複数の形式が正しくないか古いようです。この問題に関する詳細な情報がコンソールに出力されました。手動で修正できる場合があります。
+  wwcdSQLAllSet: MySQL/PostgreSQL テーブルは正しくフォーマットされています。
+  wwcOldDatabaseStruct: 選択したデータベースは、以前のバージョンの WorldwideChat の設定では効率が悪いです。詳細については、次のコマンドを入力してください。/wwcd
+    checkdb
 

@@ -485,20 +485,6 @@ Messages:
   wwcInvalidStorageSession: Mae {0} wedi'i alluogi yn eich config, ond nid yw cysylltiad
     wedi'i sefydlu. Rhowch gynnig ar ail-lwytho i drwsio hyn, ond cysylltwch â'r datblygwr
     os cawsoch neges gysylltiad llwyddiannus o'r blaen gan {0}.
-  wwcNewSqlConvertFinish: Gorffennodd drosi'ch tablau SQL. Aillwytho WorldwideChat...
-  wwcNewSqlStruct: Mae eich cronfa ddata SQL yn defnyddio'r strwythur newydd ac nid
-    oes angen ei drosi.
-  wwcNewSqlConvertBegin: Trosi eich tablau SQL...
-  wwcOldSqlStructLongIntro: Rydym yn ymddiheuro yn ddiffuant am yr anghyfleustra,
-    ond fersiwn flaenorol o WorldwideChat gychwynnodd eich tablau SQL gyda strwythur
-    aneffeithlon. Er y bydd hyn yn parhau i weithredu gyda'n ategyn, gall arwain at
-    arafu sylweddol gyda chofnodion chwaraewr mwy.
-  wwcOldSqlStructLongTodo: 'Gallwch: gollwng y tablau a argraffwyd i gonsol yn MySQL,
-    eu trosi eich hun ac edrych ar y strwythur newydd yn y repo github, neu redeg
-    gorchymyn i geisio trosi''n fyw. Gwnewch yn siŵr eich bod WEDI GWNEUD COPI WRTH
-    GEFN O''CH CRONFA DDATA CYN RHEDEG HYN. Os oes gennych, y gorchymyn yw: {0}'
-  wwcNewSqlConvertFail: Methodd trosi... adferwch eich tablau o'r copi wrth gefn a
-    wnaethoch chi. Analluogi WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Newidiodd enw'r gronfa ddata PostgreSQL
     yn llwyddiannus.
   wwcConfigConversationPostgresOptionalArgsCleared: Cliriwyd dadleuon dewisol yn llwyddiannus.
@@ -576,9 +562,6 @@ Messages:
   wwctGUILocalizeStopButton: Ailosod Lleoleiddio i Diofyn Gweinydd
   wwctGUILocalizeTitle: Dewislen Lleoleiddio
   wwctGUISourceSameLang: Byddai'r iaith hon yr un fath â'ch iaith ffynhonnell.
-  wwcOldDatabaseStruct: 'Mae gan eich cronfa ddata a ddewiswyd setup aneffeithlon
-    o fersiwn flaenorol o WorldwideChat. Gallwch naill ai droi ar ddull debug ac atgyweiria
-    y mater eich hun, rhedeg y gorchymyn canlynol i drwsio''r mater hwn: /wwcd trosi'
   wwcConfigGUICurrentPlayerLang: Dyma eich lleoleiddio cyfredol.
   wwctGUILocalizationSameAsServer: Dyma'r lleoleiddio diofyn ar gyfer WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Mae'r iaith hon eisoes yn weithredol
@@ -595,4 +578,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Y terfyn cymeriad cyfredol fesul neges
     yw cymeriadau {0}. Teipiwch unrhyw beth sy'n fwy na 0 (ond llai na 256) i osod
     gwerth newydd, neu deipiwch 0 i fynd yn ôl.
+  wwcdOutdatedSQLStruct: Mae'n edrych fel bod gan un neu fwy o'ch tablau MySQL neu
+    PostgreSQL fformat anghywir/hen ffasiwn. Mae mwy o wybodaeth dyddorol am y mater
+    hwn wedi'i hargraffu i'ch consol; efallai y gallwch drwsio hyn â llaw.
+  wwcdSQLAllSet: Mae eich tablau MySQL/PostgreSQL wedi'u fformatio'n iawn.
+  wwcOldDatabaseStruct: 'Mae gan eich cronfa ddata a ddewiswyd setup aneffeithlon
+    o fersiwn flaenorol o WorldwideChat. Teipiwch y gorchymyn canlynol am fwy o wybodaeth:
+    /wwcd checkdb'
 

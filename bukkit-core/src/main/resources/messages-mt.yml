@@ -483,22 +483,6 @@ Messages:
     mhix stabbilita. Jekk jogħġbok ipprova tagħbija mill-ġdid biex tiffissa dan, imma
     jekk jogħġbok ikkuntattja lill-iżviluppatur jekk qabel irċevejt messaġġ ta ''konnessjoni
     ta'' suċċess minn {0}.'
-  wwcNewSqlConvertFinish: Lest tikkonverti t-tabelli SQL tiegħek. Tgħabbija mill-ġdid
-    WorldwideChat...
-  wwcNewSqlStruct: Id-database SQL tiegħek qed tuża l-istruttura l-ġdida u m'għandhiex
-    għalfejn tiġi kkonvertita.
-  wwcNewSqlConvertBegin: Ikkonverti t-tabelli SQL tiegħek...
-  wwcOldSqlStructLongIntro: Aħna sinċerament niskużaw għall-inkonvenjent, iżda verżjoni
-    preċedenti ta 'WorldwideChat inizjalizzat it-tabelli SQL tiegħek bi struttura
-    ineffiċjenti. Filwaqt li dan se jkompli jiffunzjona mal-plugin tagħna, jista 'jirriżulta
-    f'tnaqqis sinifikanti b'rekords tal-plejers akbar.
-  wwcOldSqlStructLongTodo: 'Tista '': qatra t-tabelli stampati biex console fil-MySQL,
-    tikkonvertihom lilek innifsek u tħares lejn l-istruttura l-ġdida fir-repo github,
-    jew imexxi kmand biex tipprova l-konverżjoni ħajjin. Jekk jogħġbok kun żgur li
-    inti GĦAMILT BACKUP TAD-DATABASE TIEGĦEK QABEL MA TMEXXIJA DAN. Jekk għandek,
-    il-kmand huwa: {0}'
-  wwcNewSqlConvertFail: Konverżjoni falliet... jekk jogħġbok irrestawra t-tabelli
-    tiegħek mill-backup li għamilt. Id-diżattivazzjoni tal-WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Bidlet b'suċċess l-isem tad-database
     PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Argumenti mhux obbligatorji kklerjati
@@ -574,10 +558,6 @@ Messages:
   wwctGUILocalizeStopButton: Irrisettja l-Lokalizzazzjoni għal Server Default
   wwctGUILocalizeTitle: Menu tal-Lokalizzazzjoni
   wwctGUISourceSameLang: Din il-lingwa tkun l-istess bħall-lingwa tas-sors tiegħek.
-  wwcOldDatabaseStruct: 'Id-database magħżula tiegħek għandha setup ineffiċjenti minn
-    verżjoni preċedenti ta ''WorldwideChat. Tista ''jew tixgħel modalità debug u tiffissa
-    l-kwistjoni lilek innifsek, imexxi l-kmand li ġej biex tiffissa din il-kwistjoni:
-    /wwcd jikkonvertu'
   wwcConfigGUICurrentPlayerLang: Din hija l-lokalizzazzjoni attwali tiegħek.
   wwctGUILocalizationSameAsServer: Din hija l-lokalizzazzjoni default għal WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Din il-lingwa hija diġà attiva globalment!
@@ -594,4 +574,12 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Il-limitu kurrenti tal-karattri għal kull
     messaġġ huwa karattri {0}. Ittajpja xi ħaġa akbar minn 0 (iżda inqas minn 256)
     biex tistabbilixxi valur ġdid, jew tip 0 biex tmur lura.
+  wwcdOutdatedSQLStruct: Jidher qisu waħda jew aktar mit-tabelli MySQL jew PostgreSQL
+    tiegħek għandha format inkorrett/skadut. Aktar informazzjoni verbose dwar din
+    il-kwistjoni ġiet stampata għall-console tiegħek; inti tista 'tkun kapaċi tiffissa
+    dan manwalment.
+  wwcdSQLAllSet: It-tabelli MySQL/PostgreSQL tiegħek huma ifformattjati kif suppost.
+  wwcOldDatabaseStruct: 'Id-database magħżula tiegħek għandha setup ineffiċjenti minn
+    verżjoni preċedenti ta ''WorldwideChat. Ittajpja l-kmand li ġej għal aktar informazzjoni:
+    /wwcd checkdb'
 

@@ -1006,8 +1006,6 @@ public class CommonRefs {
 				return false; // Play it safe, probably corrupted anyway
 			}
 
-		} else {
-			main.getLogger().severe("Current storage method is not properly detected outdated tables!");
 		}
 		return true;
 	}

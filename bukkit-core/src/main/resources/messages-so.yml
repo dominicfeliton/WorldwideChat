@@ -501,20 +501,6 @@ Messages:
   wwcInvalidStorageSession: '{0} waxaa la ogolaaday config kaaga, laakiin xiriir lama
     dhiso. Fadlan isku dayi dib u qabsado si aad ku saxiyaan tan, laakiin fadlan la
     xiriir horumarka haddii aad horay heshay fariin xiriir guul ah oo ka dhacay {0'
-  wwcNewSqlConvertFinish: Waxaa dhameysay bedelka midooyinka SQL. Dib u laabayay WorldwideChat...
-  wwcNewSqlStruct: Xidhibaadkaaga SQL waxaa isticmaalaya dhismaha cusub oo ma baahan
-    in la bedeeyo.
-  wwcNewSqlConvertBegin: Beddelaysa jadaalkaaga SQL...
-  wwcOldSqlStructLongIntro: Waxaan si daacad ah uga rafiinaynaa, laakiin nooca hore
-    ee WorldwideChat ayaa bilaabsaday misaalkaaga SQL leh dhisar aan faafsan. Intaas
-    oo sii wado doono inuu la shaqeeyo pluginkeena, waxay dhalin kartaa dhacis muhiim
-    ah oo la leeyahay diiwa
-  wwcOldSqlStructLongTodo: 'Waxaad kartaa: daax midooyinka la daabacay si loo sameeyo
-    MySQL, isaga bedelka iyo eegayso dhismaha cusub ee repo github, ama soo gudbi
-    amar si ay isku dayaan bedelka nool. Fadlan xaqiijiyay in aad sameeyey XIDHIBAADKAAGA
-    KA HORE ARRINTAAN. Haddii aad leeyahay, amarka waa: {0}'
-  wwcNewSqlConvertFail: Beddelka oo fashilmay... fadlan dib u soo celiyo jadaalkaaga
-    oo ka dhacay aad sameysay Disquidaysa WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Si guul la bedelay magaca databayga
     PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Doodaha doorasho ah oo si guul
@@ -587,10 +573,6 @@ Messages:
   wwctGUILocalizeStopButton: Dib u dib u dhigay deegaanka Server Default
   wwctGUILocalizeTitle: Menu Deegaalinta
   wwctGUISourceSameLang: Afkaan waxay noqon lahaayeen luuqada ilkaaga.
-  wwcOldDatabaseStruct: 'Xidhibaadkaaga la doortay waxa uu leeyahay dib u saabsan
-    oo ka mid ah nooca hore ee WorldwideChat. Waxaad walba la socodho kartaa mooyinka
-    debug oo arrinta iskiisa ku saari kartaa, madaxda taliska soo socda si aad u saxiyo
-    arrintan: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: Tani waa deegaankaaga hadda.
   wwctGUILocalizationSameAsServer: Tani waa deegaankii hore ee WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Luuqadan ayaa durba waxaa dunida
@@ -607,4 +589,12 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Xadduudda tabaqada hadda ee fariin walba
     waa xarakada {0}. Nooca wax ka badan 0 (laakiin ka yar 256) si aad u dhigo qiimo
     cusub, ama nooca 0 si ay dib u dib ugu soo laabto.
+  wwcdOutdatedSQLStruct: Waxaa muuqata mid mid mid ah misaalkaaga MySQL ama PostgreSQL
+    waxa uu leeyahay qaab aan sax ah/dhaafay. Macluumaad dheeraad ah oo ku saabsan
+    arrintan ayaa la daabacay konsoolkaaga; waxaad kartaa awood kartaa inay si gaar
+    ah u saxiyo.
+  wwcdSQLAllSet: Miiskaaga MySQL/PostgreSQL waxaa si saxaan la qaaday.
+  wwcOldDatabaseStruct: 'Xidhibaadkaaga la doortay waxa uu leeyahay dib u saabsan
+    oo ka mid ah nooca hore ee WorldwideChat. Nooca taliska soo socda ee macluumaad
+    dheeraad ah: /wwcd checkdb'
 

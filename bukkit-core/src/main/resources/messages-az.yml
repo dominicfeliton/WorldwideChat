@@ -472,22 +472,6 @@ Messages:
   wwcInvalidStorageSession: Konfiqurasiyanızda {0} aktivdir, lakin əlaqə qurulmayıb.
     Zəhmət olmasa bunu düzəltmək üçün yenidən yükləməyə çalışın, ancaq əvvəllər {0}
     -dən uğurlu bir əlaqə mesajı alsanız, tərtibatçı ilə əla
-  wwcNewSqlConvertFinish: SQL cədvəllərinizi çevirməyi bitirdi. WorldwideChat-ı yenidən
-    yükləyin...
-  wwcNewSqlStruct: SQL verilənlər bazanız yeni quruluşdan istifadə edir və çevrilməsinə
-    ehtiyac yoxdur.
-  wwcNewSqlConvertBegin: SQL cədvəllərinizi çevirmək...
-  wwcOldSqlStructLongIntro: Narahatlığa görə səmimi şəkildə üzr istəyirik, lakin WorldwideChat-ın
-    əvvəlki versiyası SQL cədvəllərinizi səmərəsiz bir quruluşla başlatdı. Bu, plaginimizlə
-    işləməyə davam etsə də, daha böyük oyunçu qeydləri ilə əhəmiyyətli yavaşlamalar
-    ilə nəticələnə bilər.
-  wwcOldSqlStructLongTodo: 'Siz: MySQL-də konsol üçün çap olunan cədvəlləri buraxın,
-    onları özünüz çevirin və github repo-dakı yeni quruluşa baxın və ya çevrilməyə
-    cəhd etmək üçün bir əmr işə salın. Xahiş edirəm bunu işə salmadan əvvəl verilənlər
-    bazanızın ehtiyat nüsxəsini hazırladığınızdan əmin olun Əgər varsa, əmr belədir:
-    {0}'
-  wwcNewSqlConvertFail: Dönüşüm uğursuz oldu... xahiş edirəm masalarınızı hazırladığınız
-    ehtiyat nüsxə WorldwideChat-ın söndürülməsi...
   wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL verilənlər bazası adını
     uğurla dəyişdirdi.
   wwcConfigConversationPostgresOptionalArgsCleared: İsteğe bağlı arqumentlər uğurla
@@ -564,10 +548,6 @@ Messages:
   wwctGUILocalizeStopButton: Lokalizasiyanı Server Default olaraq yenidən qurun
   wwctGUILocalizeTitle: Lokalizasiya menyusu
   wwctGUISourceSameLang: Bu dil mənbə dilinizlə eyni olardı.
-  wwcOldDatabaseStruct: 'Seçdiyiniz verilənlər bazası WorldwideChat-ın əvvəlki versiyasından
-    səmərəsiz bir quraşdırmaya malikdir. Siz ya ayıklama rejimini açaraq problemi
-    özünüz həll edə bilərsiniz, bu problemi həll etmək üçün aşağıdakı əmri işə salın:
-    /wwcd convert'
   wwcConfigGUICurrentPlayerLang: Bu sizin hazırkı lokalizasiyanızdır.
   wwctGUILocalizationSameAsServer: Bu WorldwideChat üçün standart lokalizasiyadır.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Bu dil artıq qlobal miqyasda aktivdir!
@@ -584,4 +564,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Hər mesaj başına mövcud simvol həddi {0}
     simvollarıdır. Yeni bir dəyər təyin etmək üçün 0-dan böyük (lakin 256-dan az)
     bir şey yazın və ya geri qayıtmaq üçün 0 yazın.
+  wwcdOutdatedSQLStruct: Görünür, MySQL və ya PostgreSQL cədvəllərinizdən birinin
+    və ya bir neçəsinin səhv/köhnəlmiş bir formatı var. Bu problem haqqında daha ətraflı
+    məlumat konsolunuza çap edildi; bunu əl ilə düzəldə bilərsiniz.
+  wwcdSQLAllSet: MySQL/PostgreSQL cədvəlləriniz düzgün formatlaşdırılmışdır.
+  wwcOldDatabaseStruct: 'Seçdiyiniz verilənlər bazası WorldwideChat-ın əvvəlki versiyasından
+    səmərəsiz bir quraşdırmaya malikdir. Əlavə məlumat üçün aşağıdakı əmri yazın:
+    /wwcd checkdb'
 

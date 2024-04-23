@@ -477,21 +477,6 @@ Messages:
   wwcInvalidStorageSession: '{0} diaktifkan di konfigurasi Anda, tetapi koneksi tidak
     dibuat. Silakan coba muat ulang untuk memperbaikinya, tetapi silakan hubungi pengembang
     jika sebelumnya Anda menerima pesan koneksi yang berhasil dari {0}.'
-  wwcNewSqlConvertFinish: Selesai mengonversi tabel SQL Anda. Memuat ulang WorldwideChat...
-  wwcNewSqlStruct: Database SQL Anda menggunakan struktur baru dan tidak perlu dikonversi.
-  wwcNewSqlConvertBegin: Mengonversi tabel SQL Anda...
-  wwcOldSqlStructLongIntro: Kami dengan tulus meminta maaf atas ketidaknyamanan ini,
-    tetapi versi WorldwideChat sebelumnya menginisialisasi tabel SQL Anda dengan struktur
-    yang tidak efisien. Meskipun ini akan terus berfungsi dengan plugin kami, ini
-    dapat mengakibatkan perlambatan yang signifikan dengan catatan pemain yang lebih
-    besar.
-  wwcOldSqlStructLongTodo: 'Anda dapat: jatuhkan tabel yang dicetak ke konsol di MySQL,
-    mengonversinya sendiri dan melihat struktur baru di repo github, atau jalankan
-    perintah untuk mencoba konversi secara langsung. Harap pastikan bahwa Anda TELAH
-    MEMBUAT CADANGAN DATABASE ANDA SEBELUM MENJALANKAN INI. Jika sudah, perintahnya
-    adalah: {0}'
-  wwcNewSqlConvertFail: Konversi gagal... harap pulihkan tabel Anda dari cadangan
-    yang Anda buat. Menonaktifkan WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Berhasil mengubah nama database
     PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Argumen opsional berhasil dihapus.
@@ -562,10 +547,6 @@ Messages:
   wwctGUILocalizeStopButton: Setel ulang Lokalisasi ke Server Default
   wwctGUILocalizeTitle: Menu Lokalisasi
   wwctGUISourceSameLang: Bahasa ini akan sama dengan bahasa sumber Anda.
-  wwcOldDatabaseStruct: 'Basis data yang Anda pilih memiliki pengaturan yang tidak
-    efisien dari versi WorldwideChat sebelumnya. Anda dapat mengaktifkan mode debug
-    dan memperbaiki masalah sendiri, jalankan perintah berikut untuk memperbaiki masalah
-    ini: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: Ini adalah lokalisasi Anda saat ini.
   wwctGUILocalizationSameAsServer: Ini adalah pelokalan default untuk WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Bahasa ini sudah aktif secara global!
@@ -581,4 +562,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Batas karakter per pesan saat ini adalah
     karakter {0}. Ketik sesuatu yang lebih besar dari 0 (tetapi kurang dari 256) untuk
     menetapkan nilai baru, atau ketik 0 untuk kembali.
+  wwcdOutdatedSQLStruct: Sepertinya satu atau lebih tabel MySQL atau PostgreSQL Anda
+    memiliki format yang salah/ketinggalan zaman. Informasi lebih lanjut tentang masalah
+    ini telah dicetak ke konsol Anda; Anda mungkin dapat memperbaikinya secara manual.
+  wwcdSQLAllSet: Tabel MySQL/PostgreSQL Anda diformat dengan benar.
+  wwcOldDatabaseStruct: 'Basis data pilihan Anda memiliki pengaturan yang tidak efisien
+    dari versi WorldwideChat sebelumnya. Ketik perintah berikut untuk informasi lebih
+    lanjut: /wwcd checkdb'
 

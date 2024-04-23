@@ -495,22 +495,6 @@ Messages:
     Iltimos, buni tuzatish uchun qayta yuklashni sinab ko'ring, lekin iltimos, iltimos,
     {0} dan muvaffaqiyatli ulanish xabarini olgan bo'lsangiz, ishlab chiquvchiga murojaat
     qiling.
-  wwcNewSqlConvertFinish: SQL jadvallaringizni konvertatsiya qilishni tugatdi. WorldwideChat-ni
-    qayta yuklash...
-  wwcNewSqlStruct: Sizning SQL ma'lumotlar bazangiz yangi tuzilishdan foydalanmoqda
-    va aylantirilishi shart emas.
-  wwcNewSqlConvertBegin: SQL jadvallaringizni konvertatsiya qilish...
-  wwcOldSqlStructLongIntro: Noqulayliklar uchun chin dildan uzr so'raymiz, lekin WorldwideChatning
-    oldingi versiyasi SQL jadvallaringizni samarasiz tuzilishga ega bo'lgan ishga
-    tushirdi. Bu bizning plagin bilan ishlashni davom ettiradigan bo'lsa-da, kattaroq
-    o'yinchi yozuvlari bilan sezilarli sekinlashuvlarga olib kelishi mumkin.
-  wwcOldSqlStructLongTodo: 'Siz: MySQL-da konsol uchun chop etilgan jadvallarni tushirishingiz,
-    ularni o''zingiz aylantirishingiz va github repo-da yangi tuzilishga qarashingiz
-    yoki konvertatsiyani jonli ravishda urinish uchun buyruqni ishga tushirishingiz
-    mumkin. Iltimos, BUNI ISHGA TUSHIRISHDAN OLDIN MA''LUMOTLAR BAZASINI ZAXIRA QILGANINGIZGA
-    ISHONCH HOSIL QILING. Agar sizda bo''lsa, buyruq: {0}'
-  wwcNewSqlConvertFail: Konvertatsiya muvaffaqiyatsiz tugadi... iltimos, jadvallarni
-    siz qilgan zaxiradan tiklang. WorldwideChat-ni o'chirish...
   wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL ma'lumotlar bazasi
     nomini muvaffaqiyatli o'zgartirdi.
   wwcConfigConversationPostgresOptionalArgsCleared: Ixtiyoriy argumentlar muvaffaqiyatli
@@ -594,10 +578,6 @@ Messages:
   wwctGUILocalizeStopButton: Lokalizatsiyani server standart holatiga qaytaring
   wwctGUILocalizeTitle: Mahalliylashtirish menyusi
   wwctGUISourceSameLang: Bu til sizning manba tilingiz bilan bir xil bo'ladi.
-  wwcOldDatabaseStruct: 'Sizning tanlagan ma''lumotlar bazangiz WorldwideChat-ning
-    oldingi versiyasidan samarasiz sozlamaga ega. Siz ham disk raskadrovka rejimini
-    yoqishingiz va masalani o''zingiz tuzatishingiz mumkin, bu masalani tuzatish uchun
-    quyidagi buyruqni bajaring: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: Bu sizning hozirgi lokalizatsiyangiz.
   wwctGUILocalizationSameAsServer: Bu WorldwideChat uchun standart lokalizatsiya.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Ushbu til allaqachon global miqyosda
@@ -614,4 +594,12 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Har bir xabar uchun joriy belgilar chegarasi
     {0} belgidir. Yangi qiymatni belgilash uchun 0 dan katta (lekin 256 dan kam) har
     qanday narsani yozing yoki orqaga qaytish uchun 0 yozing.
+  wwcdOutdatedSQLStruct: Sizning MySQL yoki PostgreSQL jadvallaringizdan bir yoki
+    bir nechtasining noto'g'ri/eskirgan formatga ega bo'lgani kabi ko'rinadi. Ushbu
+    masala haqida ko'proq verbose ma'lumot sizning konsolingizga chop etildi; siz
+    buni qo'lda tuzatishingiz mumkin.
+  wwcdSQLAllSet: Sizning MySQL/PostgreSQL jadvallaringiz to'g'ri formatlangan.
+  wwcOldDatabaseStruct: 'Sizning tanlagan ma''lumotlar bazangiz WorldwideChat-ning
+    oldingi versiyasidan samarasiz sozlamaga ega. Qo''shimcha ma''lumot olish uchun
+    quyidagi buyruqni yozing: /wwcd checkdb'
 

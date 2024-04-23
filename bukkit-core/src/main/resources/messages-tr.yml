@@ -474,22 +474,6 @@ Messages:
     kurulmadı. Lütfen bunu düzeltmek için yeniden yüklemeyi deneyin, ancak daha önce
     {0} adresinden başarılı bir bağlantı mesajı aldıysanız lütfen geliştiriciyle iletişime
     geçin.'
-  wwcNewSqlConvertFinish: SQL tablolarınızı dönüştürme işlemi tamamlandı. WorldwideChat
-    yeniden yükleniyor...
-  wwcNewSqlStruct: SQL veritabanınız yeni yapıyı kullanıyor ve dönüştürülmesine gerek
-    yok.
-  wwcNewSqlConvertBegin: SQL tablolarınızı dönüştürme...
-  wwcOldSqlStructLongIntro: Verdiğimiz rahatsızlıktan dolayı içtenlikle özür dileriz,
-    ancak WorldwideChat'in önceki bir sürümü SQL tablolarınızı verimsiz bir yapıyla
-    başlattı. Bu eklentimizle çalışmaya devam edecek olsa da, daha büyük oyuncu kayıtlarıyla
-    önemli yavaşlamalara neden olabilir.
-  wwcOldSqlStructLongTodo: 'Yapabilirsiniz: MySQL''de konsola yazdırılan tabloları
-    bırakın, kendiniz dönüştürebilir ve github deposundaki yeni yapıya bakın veya
-    dönüşümü canlı olarak denemek için bir komut çalıştırabilirsiniz. Lütfen BUNU
-    ÇALIŞTIRMADAN ÖNCE VERITABANINIZIN YEDEĞINI YAPTIĞINIZDAN emin olun. Eğer varsa,
-    komut şudur: {0}'
-  wwcNewSqlConvertFail: Dönüşüm başarısız oldu... lütfen yaptığınız yedeklemeden tablolarınızı
-    geri yükleyin. WorldwideChat'i devre dışı bırakma...
   wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL veritabanı adı başarıyla
     değiştirildi.
   wwcConfigConversationPostgresOptionalArgsCleared: İsteğe bağlı bağımsız değişkenler
@@ -569,10 +553,6 @@ Messages:
   wwctGUILocalizeStopButton: Yerelleştirmeyi Sunucu Varsayılanına Sıfırla
   wwctGUILocalizeTitle: Yerelleştirme Menüsü
   wwctGUISourceSameLang: Bu dil, kaynak dilinizle aynı olacaktır.
-  wwcOldDatabaseStruct: 'Seçtiğiniz veritabanı, WorldwideChat"in önceki bir sürümünden
-    verimsiz bir kuruluma sahiptir. Hata ayıklama modunu açabilir ve sorunu kendiniz
-    düzeltebilirsiniz, bu sorunu düzeltmek için aşağıdaki komutu çalıştırabilirsiniz:
-    /wwcd convert'
   wwcConfigGUICurrentPlayerLang: Bu sizin mevcut yerelleştirmenizdir.
   wwctGUILocalizationSameAsServer: Bu, WorldwideChat için varsayılan yerelleştirmedir.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Bu dil zaten küresel olarak aktif!
@@ -589,4 +569,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Mesaj başına geçerli karakter sınırı {0}
     karakterdir. Yeni bir değer ayarlamak için 0'dan büyük (ancak 256'dan küçük) herhangi
     bir şey yazın veya geri dönmek için 0 yazın.
+  wwcdOutdatedSQLStruct: Görünüşe göre MySQL veya PostgreSQL tablolarınızdan biri
+    veya daha fazlasının yanlış/modası geçmiş bir biçime sahip. Bu sorunla ilgili
+    daha ayrıntılı bilgi konsolunuza yazdırılmıştır; bunu manuel olarak düzeltebilirsiniz.
+  wwcdSQLAllSet: MySQL/PostgreSQL tablolarınız düzgün biçimde biçimlendirilmiştir.
+  wwcOldDatabaseStruct: 'Seçtiğiniz veritabanı, WorldwideChat"in önceki bir sürümünden
+    verimsiz bir kuruluma sahiptir. Daha fazla bilgi için aşağıdaki komutu yazın:
+    /wwcd checkdb'
 

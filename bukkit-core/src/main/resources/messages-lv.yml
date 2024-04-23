@@ -483,20 +483,6 @@ Messages:
   wwcInvalidStorageSession: Jūsu konfigurācijā ir iespējots {0}, bet savienojums nav
     izveidots. Lūdzu, mēģiniet atkārtoti ielādēt, lai to labotu, taču, lūdzu, sazinieties
     ar izstrādātāju, ja iepriekš esat saņēmis veiksmīgu savienojuma ziņojumu no {0}.
-  wwcNewSqlConvertFinish: Pabeidzis SQL tabulu konvertēšanu. Pārlādē WorldwideChat...
-  wwcNewSqlStruct: Jūsu SQL datu bāze izmanto jauno struktūru, un tā nav jāpārvērš.
-  wwcNewSqlConvertBegin: SQL tabulu konvertēšana...
-  wwcOldSqlStructLongIntro: Mēs sirsnīgi atvainojamies par neērtībām, taču iepriekšējā
-    WorldwideChat versija inicializēja jūsu SQL tabulas ar neefektīvu struktūru. Lai
-    gan tas turpinās darboties ar mūsu spraudni, tas var izraisīt ievērojamu palēnināšanos
-    ar lielākiem spēlētāju ierakstiem.
-  wwcOldSqlStructLongTodo: 'Jūs varat: nomest tabulas, kas izdrukātas konsolei MySQL,
-    konvertēt tās pats un apskatīt jauno struktūru github repo vai palaist komandu,
-    lai mēģinātu veikt konvertēšanu tiešraidē. Lūdzu, pārliecinieties, vai esat izveidojis
-    savas datu bāzes dublējumu pirms šīs darbības palaišanas. Ja jums ir, komanda
-    ir: {0}'
-  wwcNewSqlConvertFail: Konvertēšana neizdevās... lūdzu, atjaunojiet tabulas no izveidotā
-    dublējuma. WorldwideChat atspējošana...
   wwcConfigConversationPostgresDatabaseNameSuccess: Veiksmīgi mainīts PostgreSQL datu
     bāzes nosaukums.
   wwcConfigConversationPostgresOptionalArgsCleared: Neobligātie argumenti veiksmīgi
@@ -571,9 +557,6 @@ Messages:
   wwctGUILocalizeStopButton: Atjaunot lokalizāciju uz servera noklusējumu
   wwctGUILocalizeTitle: Lokalizācijas izvēlne
   wwctGUISourceSameLang: Šī valoda būtu tāda pati kā jūsu avota valoda.
-  wwcOldDatabaseStruct: 'Jūsu izvēlētajā datu bāzē ir neefektīva iestatīšana no iepriekšējās
-    WorldwideChat versijas. Varat vai nu ieslēgt atkļūdošanas režīmu un pats novērst
-    problēmu, lai novērstu šo problēmu, palaidiet šādu komandu: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: Šī ir jūsu pašreizējā lokalizācija.
   wwctGUILocalizationSameAsServer: Šī ir WorldwideChat noklusējuma lokalizācija.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Šī valoda jau ir aktīva visā pasaulē!
@@ -590,4 +573,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Pašreizējais rakstzīmju ierobežojums vienam
     ziņojumam ir {0} rakstzīmes. Ierakstiet visu, kas ir lielāks par 0 (bet mazāks
     par 256), lai iestatītu jaunu vērtību, vai ierakstiet 0, lai atgrieztos atpakaļ.
+  wwcdOutdatedSQLStruct: Izskatās, ka vienai vai vairākām jūsu MySQL vai PostgreSQL
+    tabulām ir nepareizs/novecojis formāts. Plašāka informācija par šo problēmu ir
+    izdrukāta jūsu konsolē; iespējams, varēsit to novērst manuāli.
+  wwcdSQLAllSet: Jūsu MySQL/PostgreSQL tabulas ir pareizi formatētas.
+  wwcOldDatabaseStruct: 'Jūsu izvēlētajā datu bāzē ir neefektīva iestatīšana no iepriekšējās
+    WorldwideChat versijas. Lai iegūtu papildinformāciju, ierakstiet šādu komandu:
+    /wwcd checkdb'
 

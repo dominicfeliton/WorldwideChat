@@ -480,20 +480,6 @@ Messages:
   wwcInvalidStorageSession: '{0} je omogućeno u vašoj konfiguraciji, ali veza nije
     uspostavljena. Pokušajte ponovo učitati da biste to riješili, ali kontaktirajte
     programera ako ste prethodno primili uspješnu poruku o povezivanju od {0}.'
-  wwcNewSqlConvertFinish: Završeno pretvaranje vaših SQL tablica. Ponovno učitavanje
-    WorldwideChat...
-  wwcNewSqlStruct: Vaša SQL baza podataka koristi novu strukturu i ne treba je pretvarati.
-  wwcNewSqlConvertBegin: Pretvaranje vaših SQL tablica...
-  wwcOldSqlStructLongIntro: Iskreno se izvinjavamo zbog neugodnosti, ali prethodna
-    verzija WorldwideChat-a inicijalizirala je vaše SQL tablice neefikasnom strukturom.
-    Iako će ovo nastaviti funkcionirati s našim dodatkom, to može rezultirati značajnim
-    usporavanjem s većim zapisima igrača.
-  wwcOldSqlStructLongTodo: 'Možete: ispustiti tablice ispisane na konzolu u MySQL-u,
-    sami ih pretvoriti i pogledati novu strukturu u github repo-u ili pokrenuti naredbu
-    za pokušaj konverzije uživo. Uvjerite se da ste napravili sigurnosnu kopiju svoje
-    baze podataka prije pokretanja ove baze podataka. Ako imate, naredba je: {0}'
-  wwcNewSqlConvertFail: Konverzija nije uspjela... vratite tablice iz sigurnosne kopije
-    koju ste napravili. Onemogućavanje WorldwideChat...
   wwcConfigConversationPostgresDatabaseNameSuccess: Uspješno je promijenjen naziv
     baze podataka PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Opcijski argumenti su uspješno
@@ -569,10 +555,6 @@ Messages:
   wwctGUILocalizeStopButton: Vratite lokalizaciju na zadanu postavku poslužitelja
   wwctGUILocalizeTitle: Izbornik lokalizacije
   wwctGUISourceSameLang: Ovaj jezik bi bio isti kao i vaš izvorni jezik.
-  wwcOldDatabaseStruct: 'Vaša odabrana baza podataka ima neefikasno postavljanje iz
-    prethodne verzije WorldwideChat-a. Možete uključiti način uklanjanja pogrešaka
-    i sami riješiti problem, pokrenite sljedeću naredbu da biste riješili ovaj problem:
-    /wwcd convert'
   wwcConfigGUICurrentPlayerLang: Ovo je vaša trenutna lokalizacija.
   wwctGUILocalizationSameAsServer: Ovo je zadana lokalizacija za WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Ovaj jezik je već aktivan globalno!
@@ -589,4 +571,11 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Trenutno ograničenje znakova po poruci
     je {0} znakova. Upišite nešto veće od 0 (ali manje od 256) da biste postavili
     novu vrijednost ili upišite 0 da biste se vratili natrag.
+  wwcdOutdatedSQLStruct: Izgleda da jedna ili više vaših MySQL ili PostgreSQL tablica
+    ima netačan/zastarjeli format. Više detaljnih informacija o ovom problemu ispisano
+    je na vašoj konzoli; možda ćete to moći popraviti ručno.
+  wwcdSQLAllSet: Vaše MySQL/PostgreSQL tablice su pravilno formatirane.
+  wwcOldDatabaseStruct: 'Vaša odabrana baza podataka ima neefikasno postavljanje iz
+    prethodne verzije WorldwideChat-a. Upišite sljedeću naredbu za više informacija:
+    /wwcd checkdb'
 

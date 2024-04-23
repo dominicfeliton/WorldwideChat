@@ -511,21 +511,6 @@ Messages:
   wwcInvalidStorageSession: Tá {0} cumasaithe i do chumraíocht, ach níl nasc bunaithe.
     Déan iarracht athluchtú chun é seo a shocrú, ach déan teagmháil leis an bhforbróir
     má fuair tú teachtaireacht nasc rathúil ó {0} roimhe seo.
-  wwcNewSqlConvertFinish: Críochnaithe ag tiontú do tháblaí SQL. Athlódáil WorldwideChat...
-  wwcNewSqlStruct: Tá do bhunachar sonraí SQL ag úsáid an struchtúr nua agus ní gá
-    é a thiontú.
-  wwcNewSqlConvertBegin: Do tháblaí SQL a thiontú...
-  wwcOldSqlStructLongIntro: Táimid leithscéal ó chroí as an míchaoithiúlacht, ach
-    chuir leagan roimhe seo de WorldwideChat tús le do tháblaí SQL le struchtúr neamhéifeachtach.
-    Cé go leanfaidh sé seo ag feidhmiú lenár mbreiseán, d'fhéadfadh moilliú suntasacha
-    a bheith mar thoradh air le taifid imreoirí níos mó.
-  wwcOldSqlStructLongTodo: 'Is féidir leat: na táblaí atá clóite le consól i MySQL
-    a scaoileadh, iad a thiontú tú féin agus féachaint ar an struchtúr nua sa repo
-    github, nó ordú a reáchtáil chun iarracht a dhéanamh ar an tiontú beo. Déan cinnte
-    le do thoil go bhfuil CÚLTACA DÉANTA AGAT DE DO BHUNACHAR SONRAÍ SULA RITH É SEO.
-    Má tá tú, is é an t-ordú: {0}'
-  wwcNewSqlConvertFail: Theip ar chomhshó... athchóirigh do tháblaí ón gcúltaca a
-    rinne tú. WorldwideChat a dhíchumasú...
   wwcConfigConversationPostgresDatabaseNameSuccess: D'athraigh sé go rathúil ainm
     bunachar sonraí PostgreSQL.
   wwcConfigConversationPostgresOptionalArgsCleared: Glanadh argóintí roghnach go rathúil
@@ -606,10 +591,6 @@ Messages:
   wwctGUILocalizeStopButton: Athshocraigh Logánú go Réamhshocraithe
   wwctGUILocalizeTitle: Roghchlár Logánú
   wwctGUISourceSameLang: Bheadh an teanga seo mar an gcéanna le do theanga foinse.
-  wwcOldDatabaseStruct: 'Tá socrú neamhéifeachtach ag do bhunachar sonraí roghnaithe
-    ó leagan roimhe seo de WorldwideChat. Is féidir leat modh dífhabhtú a chasadh
-    air agus an tsaincheist a shocrú tú féin, an t-ordú seo a leanas a reáchtáil chun
-    an cheist seo a shocrú: /wwcd convert'
   wwcConfigGUICurrentPlayerLang: Is é seo do logánú reatha.
   wwctGUILocalizationSameAsServer: Is é seo an logánú réamhshocraithe do WorldwideChat.
   wwctGUISourceOrTargetTranslationAlreadyGlobal: Tá an teanga seo gníomhach go domhanda
@@ -626,4 +607,12 @@ Messages:
   wwcConfigConversationCharacterLimitInput: Is é carachtair {0} an teorainn carachtair
     reatha in aghaidh an teachtaireachta. Clóscríobh aon rud níos mó ná 0 (ach níos
     lú ná 256) chun luach nua a shocrú, nó clóscríobh 0 chun dul ar ais.
+  wwcdOutdatedSQLStruct: Is cosúil go bhfuil formáid míchearta/dáta ag ceann amháin
+    nó níos mó de do tháblaí MySQL nó PostgreSQL. Tá tuilleadh faisnéise eolais faoin
+    gceist seo clóite chuig do chonsól; b'fhéidir go mbeidh tú in ann é seo a shocrú
+    de láimh.
+  wwcdSQLAllSet: Tá do tháblaí MySQL/PostgreSQL formáidithe i gceart.
+  wwcOldDatabaseStruct: 'Tá socrú neamhéifeachtach ag do bhunachar sonraí roghnaithe
+    ó leagan roimhe seo de WorldwideChat. Clóscríobh an t-ordú seo a leanas le haghaidh
+    tuilleadh faisnéise: /wwcd checkdb'
 
