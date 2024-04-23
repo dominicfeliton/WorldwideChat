@@ -1,9 +1,6 @@
 package com.badskater0729.worldwidechat;
 
-import com.badskater0729.worldwidechat.listeners.ChatListener;
-import com.badskater0729.worldwidechat.listeners.InventoryListener;
-import com.badskater0729.worldwidechat.listeners.OnPlayerJoinListener;
-import com.badskater0729.worldwidechat.listeners.TranslateInGameListener;
+import com.badskater0729.worldwidechat.listeners.*;
 import com.badskater0729.worldwidechat.util.CommonRefs;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginManager;
@@ -20,6 +17,7 @@ public class SpigotWorldwideChatHelper extends WorldwideChatHelper {
         // EventHandlers + check for plugins
         PluginManager pluginManager = main.getServer().getPluginManager();
         pluginManager.registerEvents(new ChatListener(), main);
+        pluginManager.registerEvents(new SignListener(), main);
         pluginManager.registerEvents(new OnPlayerJoinListener(), main);
         pluginManager.registerEvents(new TranslateInGameListener(), main);
         pluginManager.registerEvents(new InventoryListener(), main);
