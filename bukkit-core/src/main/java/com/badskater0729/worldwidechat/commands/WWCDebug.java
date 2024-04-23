@@ -36,13 +36,13 @@ public class WWCDebug extends BasicCommand {
                 YamlConfiguration conf = main.getConfigManager().getMainConfig();
                 boolean debugBool = conf.getBoolean("General.debugModeEnabled");
 
-                conf.set("General.debugModeEnabled", true);
+                conf.set("General.enableDebugMode", true);
                 if (refs.detectOutdatedTable("activeTranslators") || refs.detectOutdatedTable("playerRecords") || refs.detectOutdatedTable("persistentCache")) {
                     refs.sendFancyMsg("wwcdOutdatedSQLStruct", new String[] {}, "&e", sender);
                 } else {
                     refs.sendFancyMsg("wwcdSQLAllSet", new String[] {}, "&a", sender);
                 }
-                conf.set("General.debugModeEnabled", debugBool);
+                conf.set("General.enableDebugMode", debugBool);
                 return true;
             }
             if (args[0].equalsIgnoreCase("cache")) {
