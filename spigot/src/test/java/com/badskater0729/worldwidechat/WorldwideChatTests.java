@@ -1,6 +1,7 @@
 package com.badskater0729.worldwidechat;
 
 import com.badskater0729.worldwidechat.util.ActiveTranslator;
+import com.badskater0729.worldwidechat.util.PlayerRecord;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.MethodOrderer;
@@ -498,6 +499,16 @@ public class WorldwideChatTests {
 		testCommands.runConsoleTest("wwcg", new String[] {"English", "en"});
 		currTranslator = plugin.getActiveTranslator("GLOBAL-TRANSLATE-ENABLED");
 		assertFalse(plugin.isActiveTranslator("GLOBAL-TRANSLATE-ENABLED"));
+
+		// Console - /wwcl player1 en
+		testCommands.runConsoleTest("wwcl", new String[] {"player1", "en"});
+		PlayerRecord currStat = plugin.getPlayerRecord(player1, false);
+		assertEquals("en", currStat.getLocalizationCode());
+
+		// Console - /wwcl player1 stop
+		testCommands.runConsoleTest("wwcl", new String[] {"player1", "stop"});
+		currStat = plugin.getPlayerRecord(player1, false);
+		assertEquals("", currStat.getLocalizationCode());
 		
 		/* Print finished message */
 		sendCompletedMessage();
