@@ -1,0 +1,68 @@
+# WorldwideChat Configuration
+#       _    _            _     _          _     _      _____ _           _   
+#      | |  | |          | |   | |        (_)   | |    /  __ \ |         | |  
+#      | |  | | ___  _ __| | __| |_      ___  __| | ___| /  \/ |__   __ _| |_ 
+#      | |/\| |/ _ \| '__| |/ _` \ \ /\ / / |/ _` |/ _ \ |   | '_ \ / _` | __|    - by BadSkater0729
+#      \  /\  / (_) | |  | | (_| |\ V  V /| | (_| |  __/ \__/\ | | | (_| | |_ 
+#       \/  \/ \___/|_|  |_|\__,_| \_/\_/ |_|\__,_|\___|\____/_| |_|\__,_|\__|
+#
+# HOW TO SETUP: https://github.com/BadSkater0729/WorldwideChat/wiki/Default-Explained-config.yml
+#
+General:
+  prefixName: WWC
+  enablebStats: true
+  pluginLang: en
+  updateCheckerDelay: 86400
+  syncUserDataDelay: 7200
+  fatalAsyncTaskTimeout: 10
+  enableDebugMode: true
+Storage:
+  useSQL: false
+  sqlHostname: localhost
+  sqlPort: 3306
+  sqlDatabaseName: cooldatabase
+  sqlUsername: root
+  sqlPassword: password
+  sqlUseSSL: false
+  sqlOptionalArgs: []
+  useMongoDB: false
+  mongoHostname: localhost
+  mongoPort: 27017
+  mongoDatabaseName: cooldatabase
+  mongoUsername: admin
+  mongoPassword: password
+  mongoOptionalArgs:
+    - authSource=admin
+  usePostgreSQL: false
+  postgresHostname: localhost
+  postgresPort: 5432
+  postgresDatabaseName: cooldatabase
+  postgresUsername: admin
+  postgresPassword: password
+  postgresSSL: false
+  postgresOptionalArgs: []
+Chat:
+  sendTranslationChat: true
+  sendPluginUpdateChat: true
+  sendIncomingHoverTextChat: true
+Translator:
+  testModeTranslator: true
+  useWatsonTranslate: false
+  watsonAPIKey: watson_key_goes_here
+  watsonURL: watson_site_goes_here
+  useGoogleTranslate: false
+  googleTranslateAPIKey: google_translate_key_goes_here
+  useAmazonTranslate: false
+  amazonAccessKey: amazon_translate_key_goes_here
+  amazonSecretKey: amazon_translate_secret_goes_here
+  amazonRegion: amazon_region_goes_here
+  useLibreTranslate: false
+  libreAPIKey: none
+  libreURL: libre_url_goes_here
+  useDeepLTranslate: false
+  deepLAPIKey: deepl_api_key_goes_here
+  translatorCacheSize: 100
+  rateLimit: 0
+  messageCharLimit: 255
+  errorLimit: 5
+  enablePersistentCache: true

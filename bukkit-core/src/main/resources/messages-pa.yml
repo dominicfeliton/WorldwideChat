@@ -1,0 +1,594 @@
+Messages:
+  wwcInventoryErrorPlayer: ਤੁਹਾਡੇ GUI ਨਾਲ ਲੱਭੀ ਗਲਤੀ ਹੈ ਇੱਕ ਲਾਗ ਕੰਸੋਲ ਨੂੰ ਭੇਜਿਆ ਗਿਆ
+    ਹੈ.
+  wwctGUITargetPlayerNull: ਟੀਚੇ ਦਾ ਖਿਡਾਰੀ ਸਰਵਰ ਤੋਂ ਡਿਸਕਨੈਕਟ ਹੋਇਆ ਹੈ.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ {0} ਵਿੱਚ
+    ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।
+  wwcConfigErrorLimitInvalid: ਗਲਤ ਅਨੁਵਾਦਕ ਗਲਤੀ ਸੀਮਾ config.yml ਵਿੱਚ ਸੈੱਟ ਕੀਤੀ. 5 ਨੂੰ
+    ਡਿਫਾਲਟ ਕਰਨਾ...
+  wwcConfigGUIUpdateCheckerButton: ਅੱਪਡੇਟ ਦੇਰੀ ਲਈ ਚੈੱਕ ਬਦਲੋ
+  wwctInvalidOutputLangCode: 'ਗਲਤ ਆਉਟਪੁੱਟ ਭਾਸ਼ਾ ਕੋਡ ਪ੍ਰਦਾਨ ਕੀਤਾ ਗਿਆ! ਵੈਧ ਲੰਬੇ ਕੋਡ:
+    {0}'
+  wwcConfigConversationUpdateCheckerInput: ਅੱਪਡੇਟ ਜਾਂਚਕਰਤਾ ਉੱਤੇ ਮੌਜੂਦਾ ਦੇਰੀ {0} ਸਕਿੰਟ
+    ਹੈ। ਇੱਕ ਨਵਾਂ ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 10 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 10
+    ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ.
+  wwcCharLimit: ਤੁਹਾਡਾ ਸੁਨੇਹਾ ਬਹੁਤ ਲੰਮਾ ਹੈ! ਕਿਰਪਾ ਕਰਕੇ ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਤੁਹਾਡਾ
+    ਸੁਨੇਹਾ {0} ਤੋਂ ਘੱਟ ਅੱਖਰ ਲੰਬਾਈ ਵਿੱਚ ਹੈ।
+  wwcInventoryError: ਯੂਜ਼ਰ {0} ਦੇ GUI ਨਾਲ ਲੱਭੀ ਗਲਤੀ ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਮੁੱਦੇ ਨੂੰ ਡਿਵੈਲਪਰ
+    ਨੂੰ ਰਿਪੋਰਟ ਕਰੋ।
+  wwctbOnTarget: '{0} ਲਈ ਬੁੱਕ ਅਨੁਵਾਦ ਯੋਗ ਹੈ।'
+  wwctrlRateLimitAlreadyOffTarget: '{0} ਦੀ ਦਰ ਸੀਮਾ ਪਹਿਲਾਂ ਹੀ ਅਯੋਗ ਹੋ ਗਈ ਹੈ।'
+  wwcConfigConnectionFailed: '{0} ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਇਹ ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ
+    ਕ੍ਰੇਡੇੰਸ਼ਿਅਲ ਅਤੇ ਫਾਇਰਵਾਲ ਸਹੀ ਢੰਗ ਨਾਲ ਸੰਰਚਿਤ ਕੀਤੇ ਗਏ ਹਨ!'
+  wwcConfigEnabledbStats: ਸਮਰਥਿਤ ਬੀਐਸਟੀਟਸ.
+  wwctGUIConversationRateLimit: ਅਨੁਵਾਦ ਪ੍ਰਤੀ ਰੇਟ ਸੀਮਾ ਇਸ ਸਮੇਂ {0} ਸਕਿੰਟ ਹੈ। ਇੱਕ ਨਵਾਂ
+    ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਸੀਮਾ ਨੂੰ ਅਯੋਗ ਕਰਨ ਲਈ 0 ਟਾਈਪ
+    ਕਰੋ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ.
+  wwcteOnTarget: ਇਕਾਈ ਦਾ ਅਨੁਵਾਦ {0} ਲਈ ਯੋਗ ਹੈ।
+  wwcBookTranslateStart: ਟੀਚੇ ਦੀ ਕਿਤਾਬ ਦਾ ਅਨੁਵਾਦ...
+  wwcEntityTranslateDone: 'ਅਨੁਵਾਦਿਤ ਇਕਾਈ ਦਾ ਨਾਮ: {0}'
+  wwctsOffSender: ਸਾਈਨ ਅਨੁਵਾਦ ਅਯੋਗ.
+  wwcConfigGUIChatMessagesDeadOverride: ਇਹ ਓਵਰਰਾਈਡ ਜਾਂ ਤਾਂ ਗਲਤ ਹੈ, ਜਾਂ ਅਸਲ ਸੰਦੇਸ਼
+    ਹਟਾ ਦਿੱਤਾ ਗਿਆ ਹੈ. ਤੁਹਾਨੂੰ ਇਸ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੀਦਾ ਹੈ.
+  wwcUpdaterParserFailed: GitHub ਤੱਕ ਅੱਪਡੇਟ ਡਾਟਾ ਪਾਰਸ ਕਰਨ ਵਿੱਚ ਅਸਫਲ.
+  wwctAutoTranslateStart: '{0} ਲਈ ਨਵਾਂ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
+  wwctbOffSender: ਕਿਤਾਬ ਦਾ ਅਨੁਵਾਦ ਅਯੋਗ.
+  wwcsSuccessfulTranslations: 'ਸਫਲ ਅਨੁਵਾਦ: {0}'
+  wwctTranslationStoppedOtherPlayer: '{0} ਲਈ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ।'
+  wwcrBegin: ਵਿਸ਼ਵਵਿਡਚੈਟ ਨੂੰ ਮੁੜ ਲੋਡ ਕਰਨਾ...
+  wwctiOffSender: ਆਈਟਮ ਅਨੁਵਾਦ ਅਯੋਗ.
+  wwctbOffTarget: '{0} ਲਈ ਪੁਸਤਕ ਅਨੁਵਾਦ ਆਯੋਗ ਹੈ।'
+  wwcConfigGUIGeneralSettings: ਜਨਰਲ ਸੰਰਚਨਾ
+  wwcConfigCacheInvalid: ਅਨੁਵਾਦਕ ਕੈਚੇ ਦਾ ਆਕਾਰ ਗਲਤ ਹੈ. 10 ਨੂੰ ਡਿਫਾਲਟ ਕਰਨਾ...
+  wwcInvalidLang: ਤੁਹਾਡੀ config.yml ਵਿੱਚ ਅਵੈਧ ਭਾਸ਼ਾ. en ਨੂੰ ਮੂਲ...
+  wwcteOnSender: ਇਕਾਈ ਦਾ ਅਨੁਵਾਦ ਯੋਗ ਹੈ। ਇਸ ਦੇ ਨਾਮ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਕਿਸੇ ਇਕਾਈ 'ਤੇ ਸੱਜਾ-ਕਲਿੱਕ
+    ਕਰੋ!
+  wwcConfigGUILangButton: ਪਲੱਗਇਨ ਭਾਸ਼ਾ ਬਦਲੋ
+  wwctGUISignButton: ਬਦਲੋ ਦਾਖ਼ਲਾ ਅਨੁਵਾਦ
+  wwcTranslatorErrorThresholdReached: ਗਲਤੀ ਥਰੈਸ਼ਹੋਲਡ ਪਹੁੰਚ ਗਿਆ. ਇਹ ਪਲੱਗਇਨ ਹੁਣ ਮੁੜ
+    ਲੋਡ ਹੋ ਜਾਵੇਗੀ, ਅਤੇ ਸਾਰੇ ਅਨੁਵਾਦਕਾਂ ਨੂੰ ਅਯੋਗ ਕਰ ਦੇਵੇਗੀ।
+  wwctrlRateLimitOffTarget: '{0} ਦੀ ਦਰ ਸੀਮਾ ਨੂੰ ਅਯੋਗ ਕਰ ਦਿੱਤਾ ਹੈ।'
+  wwcConfigInvalidTranslatorSettings: ਗਲਤ ਅਨੁਵਾਦਕ ਸੈਟਿੰਗ! ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੀ config.yml
+    ਵਿੱਚ ਸਿਰਫ ਇੱਕ ਅਨੁਵਾਦਕ ਨੂੰ ਯੋਗ ਕਰੋ.
+  wwcTranslatorErrorThresholdReachedCheckLogs: ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ WorldwideChat ਪਲੱਗਇਨ
+    ਫੋਲਡਰ ਵਿੱਚ errorLog.txt ਚੈੱਕ ਕਰੋ ਜੀ.
+  wwcConfigGUIQuitButton: ਬੰਦ ਕਰੋ ਅਤੇ ਬਦਲਾਅ ਸੰਭਾਲੋ
+  wwctPlayerNotFound: ਪਲੇਅਰ {0} ਨਹੀਂ ਮਿਲਿਆ।
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ
+    ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ, ਪਰ ਤੁਹਾਡੇ ਕੋਲ {0} ਲਈ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਹੈ।
+  wwctiOffTarget: ਆਈਟਮ ਅਨੁਵਾਦ {0} ਲਈ ਅਯੋਗ ਹੈ।
+  wwctTranslationStopped: ਤੁਹਾਡਾ ਅਨੁਵਾਦ ਸ਼ੈਸ਼ਨ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ।
+  wwcEntityTranslateNoName: ਸੰਸਥਾ ਦਾ ਕੋਈ ਕਸਟਮ ਨਾਮ ਨਹੀਂ ਹੈ
+  wwcConfigGUIWatsonAPIKeyButton: ਵਾਟਸਨ API ਨੂੰ ਕੁੰਜੀ ਬਦਲੋ
+  wwctrlRateLimitOffSender: ਤੁਹਾਡੀ ਦਰ ਸੀਮਾ ਨੂੰ ਅਯੋਗ ਕਰ ਦਿੱਤਾ.
+  wwctbOnSender: ਕਿਤਾਬ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਇਸ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਇੱਕ ਕਿਤਾਬ ਰੱਖਣ ਦੌਰਾਨ ਸੱਜਾ-ਕਲਿੱਕ
+    ਕਰੋ!
+  wwctrlRateLimitAlreadyOffSender: ਤੁਹਾਡੀ ਦਰ ਸੀਮਾ ਪਹਿਲਾਂ ਹੀ ਅਯੋਗ ਹੋ ਗਈ ਹੈ.
+  wwcConfigSyncDelayEnabled: ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਨੂੰ {0} ਸਕਿੰਟ ਲਈ ਸੈੱਟ ਦੇਰੀ.
+  wwcConfigGUIEachTranslatorSettings: '{0} ਸੰਰਚਨਾ'
+  wwctGUIEntityButton: ਟੌਗਲ ਐਂਟੀਟੀ ਅਨੁਵਾਦ
+  wwcListenersInitialized: ਸ਼ੁਰੂਆਤੀ ਸੁਣਨ ਵਾਲੇ.
+  wwcConfigConversationSendTranslationChatSuccess: ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਚੈਟ ਰੀਮਾਈਂਡਰ ਸਫਲਤਾਪੂਰਵਕ
+    ਬਦਲ ਗਿਆ.
+  wwctsOffTarget: '{0} ਲਈ ਅਨੁਵਾਦ ਆਯੋਗ ਸਾਈਨ ਕਰੋ।'
+  wwcUpdaterConnectionFailed: GitHub 'ਤੇ ਤਾਜ਼ਾ ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ.
+  watsonNotFoundExceptionNotification: ਆਪਣੇ ਇੰਪੁੱਟ ਦਾ ਕੋਈ ਹੋਰ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਅਸਮਰੱਥ
+    ਹੈ.
+  wwcConfigConversationErrorLimitSuccess: ਗਲਤੀ ਸੀਮਾ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwctGUIStopButton: ਅਨੁਵਾਦ ਕਰਨਾ ਬੰਦ ਕਰੋ
+  wwcEntityTranslateStart: ਟੀਚੇ ਦੀ ਇਕਾਈ ਦਾ ਅਨੁਵਾਦ...
+  wwcUpdaterFutureDate: ਵਰਲਡਵਿਡਚੈਟ ਦੀ ਇਸ ਉਦਾਹਰਣ ਦਾ ਨਵੀਨਤਮ ਜਨਤਕ ਨਾਲੋਂ ਵੱਡਾ ਸੰਸਕਰਣ ਹੈ.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: ਗੂਗਲ ਅਨੁਵਾਦ API ਕੁੰਜੀ ਬਦਲੋ
+  wwcConfigGUIGlobalRateLimitButton: ਗਲੋਬਲ ਰੇਟ ਸੀਮਾ ਬਦਲੋ
+  wwctsOnTarget: '{0} ਲਈ ਸਿੰਨ ਅਨੁਵਾਦ ਯੋਗ ਹੈ।'
+  wwcConfigCacheDisabled: ਅਨੁਵਾਦਕ ਕੈਸ਼ ਅਯੋਗ.
+  wwcConfigConversationWatsonURLInput: ਮੌਜੂਦਾ URL {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਵਾਟਸਨ ਲਈ ਇੱਕ ਸਰਵਿਸ
+    URL ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
+  wwcBookDone: ਕਿਤਾਬ ਦਾ ਸਫਲਤਾਪੂਰਵਕ ਅਨੁਵਾਦ ਕੀਤਾ ਗਿਆ.
+  watsonColorCodeWarning: ਰੰਗ ਕੋਡ ਦਾ ਇਸਤੇਮਾਲ ਤੁਹਾਨੂੰ ਅਣਹੋਣੀ ਨਤੀਜੇ ਦੇ ਸਕਦਾ ਹੈ.
+  wwctGUITranslationButton: ਅਨੁਵਾਦ ਸ਼ੁਰੂ
+  wwcItemTranslateLoreStart: ਟੀਚੇ ਦਾ ਇਕਾਈ ਨੂੰ ਦੇ lore ਦਾ ਅਨੁਵਾਦ...
+  wwcUpdaterUpToDate: ਵਰਲਡਵਿਡਚੈਟ ਅਪ ਟੂ ਡੇਟ ਹੈ!
+  wwcConfigConversationAmazonTranslateRegionInput: ਮੌਜੂਦਾ ਖੇਤਰ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਐਮਾਜ਼ਾਨ
+    ਲਈ ਇੱਕ ਖੇਤਰ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ.
+  wwcConfigConversationOverrideTextChange: ਇਸ ਓਵਰਰਾਈਡ ਲਈ ਇੱਕ ਨਵ ਸੁਨੇਹਾ ਟਾਈਪ ਕਰੋ ਜੀ,
+    ਜ ਟਾਈਪ 0 ਵਾਪਸ ਜਾਣ ਲਈ. ਯਾਦ ਰੱਖੋ ਕਿ ਤੁਸੀਂ ਅਸਲ ਸੰਦੇਸ਼ ਵਿੱਚ ਵੇਖਦੇ ਹੋ ਪ੍ਰਤੀਸ਼ਤ ਸੰਕੇਤਾਂ
+    ਨਾਲ ਸ਼ੁਰੂ ਹੋਣ ਵਾਲੇ ਕਿਸੇ ਵੀ ਵੇਰੀਏਬਲ ਨੂੰ ਸ਼ਾਮਲ ਕਰਨਾ ਯਾਦ ਰੱਖੋ.
+  wwcInitializationFail: ਵਿਸ਼ਵਵਿਡਚੈਟ ਦੀ ਸ਼ੁਰੂਆਤ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ.
+  wwcrSuccess: ਵਿਸ਼ਵਵਿਆਪੀ ਵਿੱਡਚੈਟ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਮੁੜ ਲੋਡ ਕੀਤਾ.
+  wwcConfigGUIChatMessagesPossibleOverrides: ਇੱਕ ਸੁਨੇਹਾ ਚੁਣੋ
+  wwcPlayerNotFound: ਪਲੇਅਰ {0} ਨਹੀਂ ਮਿਲਿਆ।
+  wwcUpdaterOutOfDateChat: ਵਰਲਡਵਿਡਚੈਟ ਤਾਰੀਖ ਤੋਂ ਬਾਹਰ ਹੈ. ਨਵੀਨਤਮ ਵਰਜਨ ਲਈ ਅੱਪਡੇਟ ਕਰੋ
+    ਜੀ.
+  wwcConfigConversationRateLimitSuccess: ਰੇਟ ਸੀਮਾ ਸਫਲਤਾਪੂਰਵਕ ਨਿਰਧਾਰਤ ਕੀਤੀ ਗਈ.
+  wwctrlPlayerNotFound: ਪਲੇਅਰ {0} ਜਾਂ ਤਾਂ ਨਹੀਂ ਮਿਲਿਆ, ਜਾਂ ਕੋਈ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨਹੀਂ ਹੈ।
+  wwcConfigConversationWatsonURLSuccess: ਵਾਟਸਨ URL ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwctbPlayerNotFound: ਪਲੇਅਰ {0} ਜਾਂ ਤਾਂ ਨਹੀਂ ਮਿਲਿਆ, ਜਾਂ ਕੋਈ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨਹੀਂ ਹੈ।
+  wwcConfigGUIResponseLimitButton: ਬਦਲੋ ਅਨੁਵਾਦਕ ਜਵਾਬ ਟਾਈਮਆਉਟ
+  wwcConfigGUIPrefixButton: ਪਲੱਗਇਨ ਬਦਲੋ ਅਗੇਤਰ
+  wwctGUINewTranslationTarget: ਇੱਕ ਨਿਸ਼ਾਨਾ ਭਾਸ਼ਾ ਚੁਣੋ
+  wwcConfigConnectionSuccess: ਸਫਲਤਾਪੂਰਕ {0} ਨਾਲ ਜੁੜਿਆ!
+  wwctGUIRateButton: ਸੈੱਟ ਦਰ ਸੀਮਾ
+  wwcConfigGUIGoogleTranslateButton: ਗੂਗਲ ਅਨੁਵਾਦ
+  wwctInvalidInputLangCode: 'ਗਲਤ ਇੰਪੁੱਟ ਭਾਸ਼ਾ ਕੋਡ ਦਿੱਤਾ ਗਿਆ! ਵੈਧ ਲੰਬੇ ਕੋਡ: {0}'
+  wwcConfigConversationbStatsSuccess: ਸਫਲਤਾਪੂਰਵਕ ਬੀਐਸਟੀਟਸ ਨੂੰ ਬਦਲ ਦਿੱਤਾ ਗਿਆ.
+  wwcSignDone: ਸਾਈਨ ਸਫਲਤਾਪੂਰਕ ਅਨੁਵਾਦ ਕੀਤਾ.
+  wwctrlNotATranslator: ਤੁਸੀਂ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨਹੀਂ ਹੋ! ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਤੁਸੀਂ
+    ਇਸ ਨੂੰ /wwc ਨਾਲ ਸੈਟ ਕੀਤਾ ਹੈ.
+  wwcConfigGUIChatSettings: ਚੈਟ ਸੰਰਚਨਾ
+  wwcConfigGUIWatsonURLButton: ਵਾਟਸਨ ਸਰਵਿਸ URL ਬਦਲੋ
+  wwcConfigConversationUpdateCheckerSuccess: ਅਪਡੇਟ ਚੈਕਰ ਦੇਰੀ ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ ਕੀਤੀ ਗਈ.
+  wwcConfigGUIMessagesOverrideCustomLabel: ਨਵਾਂ ਸੁਨੇਹਾ
+  wwcGUITempItem: ਆਈਟਮ ਡਿਸਪਲੇਅ
+  wwcConfigConversationGoogleTranslateAPIKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ
+    Google ਅਨੁਵਾਦ ਲਈ API ਕੁੰਜੀ ਇੰਪੁੱਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationRateLimitInput: ਅਨੁਵਾਦ ਪ੍ਰਤੀ ਮੌਜੂਦਾ ਗਲੋਬਲ ਦਰ ਸੀਮਾ {0} ਸਕਿੰਟ
+    ਹੈ। ਇੱਕ ਨਵਾਂ ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਸੀਮਾ ਨੂੰ ਅਯੋਗ
+    ਕਰਨ ਲਈ 0 ਟਾਈਪ ਕਰੋ. ਵਾਪਸ ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google API ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ
+    ਸੈੱਟ ਕੀਤਾ ਅਨੁਵਾਦ ਕਰੋ।
+  wwcConfigGUIAmazonTranslateSecretKeyButton: ਐਮਾਜ਼ਾਨ ਗੁਪਤ ਕੁੰਜੀ ਬਦਲੋ
+  wwcInvalidTranslator: ਗਲਤ ਅਨੁਵਾਦਕ ਸੈਟਿੰਗ. ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਪਲੱਗਇਨ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਆਪਣੀ
+    config.yml ਜਾਂ /wwcc ਨਾਲ ਇਸ ਨੂੰ ਠੀਕ ਕਰੋ.
+  wwcConfigConversationWatsonAPIKeySuccess: ਵਾਟਸਨ API ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwcConfigCacheEnabled: ਅਨੁਵਾਦਕ ਕੈਚੇ ਨੂੰ ਯੋਗ ਕੀਤਾ ਗਿਆ ਹੈ ਅਤੇ {0} ਦੀ ਸੀਮਾ ਤੱਕ ਸੈੱਟ
+    ਕੀਤਾ ਗਿਆ ਹੈ।
+  wwcConfigConversationOverrideDeletionSuccess: ਕਸਟਮ ਸੁਨੇਹਾ ਓਵਰਰਾਈਡ ਨੂੰ ਹਟਾ ਦਿੱਤਾ
+    ਗਿਆ ਹੈ.
+  wwctGUIChatButton: ਬਦਲੋ ਚੈਟ ਅਨੁਵਾਦ
+  wwcOnJoinTranslationNotificationNoSourceLang: ਤੁਹਾਡੇ ਕੋਲ {0} ਲਈ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦ
+    ਸੈਸ਼ਨ ਹੈ।
+  wwcTranslatorError: ਤੁਹਾਡੇ ਅਨੁਵਾਦ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਸਮੇਂ ਇੱਕ ਸਮੱਸਿਆ ਆਈ. ਕਿਰਪਾ ਕਰਕੇ
+    ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.
+  wwcUserDataReloaded: ਸਾਰੇ ਸੇਵ ਕੀਤੇ ਉਪਭੋਗਤਾ ਡੇਟਾ ਨੂੰ ਲੋਡ ਕੀਤਾ.
+  wwcteOffSender: ਸੰਸਥਾ ਦਾ ਅਨੁਵਾਦ ਅਯੋਗ ਹੈ।
+  wwcsLastTranslationTime: 'ਆਖਰੀ (ਸਫਲ) ਅਨੁਵਾਦ ਸਮਾਂ: {0}'
+  wwctbNotATranslator: ਤੁਸੀਂ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨਹੀਂ ਹੋ! ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਤੁਸੀਂ
+    ਇਸ ਨੂੰ /wwc ਨਾਲ ਸੈਟ ਕੀਤਾ ਹੈ.
+  wwcItemTranslateLoreDone: ਅਨੁਵਾਦ ਕੀਤਾ ਇਕਾਈ ਨੂੰ ਸਫਲਤਾਪੂਰਕ lore.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: ਮੌਜੂਦਾ ਪਹੁੰਚ ਕੁੰਜੀ {0} ਹੈ ਕਿਰਪਾ
+    ਕਰਕੇ ਐਮਾਜ਼ਾਨ ਲਈ ਐਕਸੈਸ ਕੁੰਜੀ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
+  wwcConfigConversationSyncUserDataDelayInput: ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਪ੍ਰਤੀ ਮੌਜੂਦਾ ਦੇਰੀ {0}
+    ਸਕਿੰਟ ਹੈ। ਇੱਕ ਨਵਾਂ ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 10 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ
+    ਲਈ 10 ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ.
+  wwcgAutoTranslateStart: ਹੁਣ ਗਲੋਬਲ ਚੈਟ ਦਾ {0} ਵਿੱਚ ਅਨੁਵਾਦ ਕਰ ਰਿਹਾ ਹੈ।
+  wwcConfigGUIAmazonTranslateAccessKeyButton: ਐਮਾਜ਼ਾਨ ਐਕਸੈਸ ਕੁੰਜੀ ਬਦਲੋ
+  wwcrFail: ਵਰਲਡਵਿਡਚੈਟ ਨੂੰ ਮੁੜ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ ਰਿਹਾ.
+  wwcUpdaterFailedGeneric: WorldwideChat ਅੱਪਡੇਟ ਲਈ ਚੈੱਕ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ.
+  wwctGUIMainMenuGlobal: ਗਲੋਬਲ ਅਨੁਵਾਦ ਮੇਨੂ
+  wwcItemTranslateTitleDone: ਅਨੁਵਾਦ ਇਕਾਈ ਨੂੰ ਸਿਰਲੇਖ ਨੂੰ ਸਫਲਤਾਪੂਰਕ.
+  wwcConfigGUIWatsonButton: ਵਾਟਸਨ
+  wwcConfigConversationPluginUpdateChatSuccess: ਪਲੱਗਇਨ ਅੱਪਡੇਟ ਚੈਟ ਯਾਦ ਸਫਲਤਾਪੂਰਕ ਬਦਲ.
+  wwcsNotATranslator: '{0} ਲਈ ਅਜੇ ਤੱਕ ਕੋਈ ਰਿਕਾਰਡ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।'
+  wwcConfigGUIbStatsButton: ਟੌਗਲ ਬੀਸਟੈਟਸ
+  wwctGUINewTranslationSource: ਇੱਕ ਸਰੋਤ ਭਾਸ਼ਾ ਚੁਣੋ
+  wwctGUIMainMenuPlayer: '{0} ਦਾ ਅਨੁਵਾਦ ਮੀਨੂੰ'
+  wwctGUIBookButton: ਟੌਗਲ ਕਿਤਾਬ ਅਨੁਵਾਦ
+  wwcConfigGUIDebugModeButton: ਡੀਬੱਗ ਮੋਡ ਬਦਲੋ
+  wwcConfigMessageCharLimitInvalid: config.yml ਵਿੱਚ ਸੈੱਟ ਪ੍ਰਤੀ ਸੁਨੇਹਾ ਅਵੈਧ ਸੀਮਾ। 255
+    ਰਿੱਛ ਨੂੰ ਮੂਲ...
+  wwcLangDetected: ਖੋਜਿਆ ਭਾਸ਼ਾ {0}.
+  wwcConfigDisabledbStats: ਅਯੋਗ ਬੀਸਟੈਟਸ.
+  wwcConfigMessageCharLimitEnabled: ਅੱਖਰ ਸੀਮਾ ਪ੍ਰਤੀ ਸੁਨੇਹਾ {0} ਅੱਖਰਾਂ ਲਈ ਸੈੱਟ ਕੀਤਾ
+    ਗਿਆ ਹੈ।
+  wwcConfigGUIMessagesAlreadyOverriden: ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਇਸ ਸੰਦੇਸ਼ ਲਈ ਇੱਕ ਓਵਰਰਾਈਡ
+    ਹੈ!
+  wwctGUIItemButton: ਬਦਲੋ ਆਈਟਮ ਅਨੁਵਾਦ
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ ਕੀਤਾ
+    ਜਾ ਰਿਹਾ ਹੈ, ਪਰ ਤੁਹਾਡੇ ਕੋਲ {0} ਤੋਂ {1} ਤੱਕ ਇੱਕ ਸਰਗਰਮ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਹੈ।
+  wwctrlRateLimitBadInt: ਤੁਹਾਡੀ ਦਰ ਸੀਮਾ ਇੱਕ ਵੈਧ ਪੂਰਨ ਅੰਕ ਨਹੀਂ ਹੈ.
+  wwcConfigGUIChatMessagesOverrideChangeButton: ਮੌਜੂਦਾ ਪਾਠ ਬਦਲੋ
+  wwcConfigConversationAmazonTranslateSecretKeyInput: ਮੌਜੂਦਾ ਗੁਪਤ ਕੁੰਜੀ {0} ਹੈ ਕਿਰਪਾ
+    ਕਰਕੇ ਐਮਾਜ਼ਾਨ ਲਈ ਇੱਕ ਗੁਪਤ ਕੁੰਜੀ ਇੰਪੁੱਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
+  wwctiOnTarget: ਆਈਟਮ ਅਨੁਵਾਦ {0} ਲਈ ਯੋਗ ਹੈ।
+  wwcConfigGUIAmazonTranslateButton: Amazon ਅਨੁਵਾਦ
+  wwcConfigConversationLangSuccess: ਪਲੱਗਇਨ ਭਾਸ਼ਾ ਸਫਲਤਾਪੂਰਕ ਬਦਲ ਗਈ.
+  wwcConfigConversationTranslationCacheInput: ਮੌਜੂਦਾ ਅਨੁਵਾਦ ਕੈਚੇ ਸੀਮਾ {0} ਵਾਕ ਹੈ।
+    ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ 0 ਇੱਕ ਨਵ ਮੁੱਲ ਸੈੱਟ ਕਰਨ ਲਈ, ਜ ਟਾਈਪ 0 ਅਨੁਵਾਦ ਕੈਸ਼ ਨੂੰ ਆਯੋਗ ਕਰਨ ਲਈ.
+    ਵਾਪਸ ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ.
+  wwcConfigGUIChatMessagesModifyOverride: ਮੌਜੂਦਾ ਓਵਰਰਾਈਡ ਨੂੰ ਸੰਸ਼ੋਧਿਤ ਕਰੋ
+  wwcConfigConversationAmazonTranslateRegionSuccess: ਐਮਾਜ਼ਾਨ ਖੇਤਰ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ
+    ਕੀਤਾ.
+  wwcConfigRateLimitEnabled: ਗਲੋਬਲ ਰੇਟ ਸੀਮਾ ਯੋਗ ਹੈ ਅਤੇ {0} ਸਕਿੰਟ ਤੱਕ ਸੈੱਟ ਕੀਤੀ ਗਈ
+    ਹੈ।
+  wwcConfigGUIChatMessagesOverrideNewButton: ਇੱਕ ਨਵਾਂ ਓਵਰਰਾਈਡ ਸ਼ਾਮਲ ਕਰੋ
+  wwcUpdaterOutOfDate: ਵਰਲਡਵਿਡਚੈਟ ਤਾਰੀਖ ਤੋਂ ਬਾਹਰ ਹੈ. ਕਿਰਪਾ ਕਰਕੇ ਨਵੀਨਤਮ ਵਰਜਨ, {0} ਲਈ
+    ਅੱਪਡੇਟ ਕਰੋ।
+  wwcTranslatorErrorConsole: ਉਪਭੋਗੀ ਨੂੰ {0} ਆਪਣੇ ਅਨੁਵਾਦ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਸੀ, ਜਦਕਿ
+    ਇੱਕ ਸਮੱਸਿਆ ਆਈ ਹੈ। ਹੋਰ ਜਾਣਕਾਰੀ ਲਈ ਕਿਰਪਾ ਕਰਕੇ errorLog.txt ਚੈੱਕ ਕਰੋ.
+  wwcConfigGUIChangesNotSaved: ਤੁਹਾਡੀਆਂ ਤਬਦੀਲੀਆਂ ਉਦੋਂ ਤੱਕ ਲਾਗੂ ਨਹੀਂ ਹੋਣਗੀਆਂ ਜਦੋਂ ਤੱਕ
+    ਤੁਸੀਂ /wwcc ਵਿੱਚ ਲਾਲ ਰੁਕਾਵਟ ਤੇ ਕਲਿਕ ਨਹੀਂ ਕਰਦੇ.
+  wwcBookTranslateTitleSuccess: 'ਅਨੁਵਾਦਿਤ ਕਿਤਾਬ ਦਾ ਸਿਰਲੇਖ: {0}'
+  wwcConfigGUINextPageButton: ਅਗਲੇ ਸਫ਼ੇ
+  wwctiOnSender: ਆਈਟਮ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਇਸ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਆਪਣੇ ਮੁੱਖ ਹੱਥ ਵਿੱਚ ਇੱਕ ਆਈਟਮ
+    ਨਾਲ ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ!
+  wwcConfigGUIMessagesOverrideOriginalLabel: ਅਸਲੀ ਸੁਨੇਹਾ
+  wwcConfigGUISyncUserDataButton: ਬਦਲੋ ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਦੇਰੀ
+  wwctGUISourceTranslationSelected: ਤੁਸੀਂ ਇਸ ਭਾਸ਼ਾ ਦੀ ਚੋਣ ਕੀਤੀ ਹੈ.
+  wwcConfigGUIAmazonTranslateRegionButton: ਐਮਾਜ਼ਾਨ ਖੇਤਰ ਬਦਲੋ
+  wwcConfigConversationLangInvalid: ਗਲਤ ਭਾਸ਼ਾ ਕੋਡ!
+  wwcConfigConversationErrorLimitInput: ਹਰੇਕ ਅਨੁਵਾਦਕ ਲਈ ਮੌਜੂਦਾ ਗਲਤੀ ਸੀਮਾ {0} ਹੈ ਨਵਾਂ
+    ਮੁੱਲ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਤੋਂ ਘੱਟ ਜਾਂ ਇਸ
+    ਦੇ ਬਰਾਬਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ।
+  wwcEnabled: ਸਮਰੱਥ ਵਰਲਡਵਿਡਚੈਟ ਵਰਜਨ {0}.
+  wwcConfigGUIPluginUpdateChatButton: ਪਲੱਗਇਨ ਅੱਪਡੇਟ ਲਈ ਚੈਟ ਯਾਦ ਭੇਜੋ
+  wwcConfigGUIErrorLimitButton: ਬਦਲੋ ਅਨੁਵਾਦਕ ਗਲਤੀ ਸੀਮਾ
+  wwcConfigConversationWatsonAPIKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਵਾਟਸਨ
+    ਲਈ ਇੱਕ API ਕੁੰਜੀ ਇੰਪੁੱਟ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ।
+  wwcgTranslationStopped: ਗਲੋਬਲ ਚੈਟ ਅਨੁਵਾਦ ਬੰਦ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ.
+  wwcConfigConversationCharacterLimitSuccess: ਅੱਖਰ ਸੀਮਾ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwcItemTranslateTitleStock: ਮੂਲ ਇਕਾਈ ਨੂੰ ਨਾਮ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ.
+  wwcConfigConversationSyncUserDataDelaySuccess: ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਦੇਰੀ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ
+    ਕੀਤਾ.
+  wwcConfigConversationPrefixSuccess: ਅਗੇਤਰ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲ ਗਿਆ.
+  wwcSignDeletedOrTooLong: 'ਟੀਚੇ ਦਾ ਚਿੰਨ੍ਹ ਜਾਂ ਤਾਂ ਹਟਾਇਆ ਗਿਆ ਸੀ ਜਾਂ ਅਨੁਵਾਦ ਬਹੁਤ ਲੰਮਾ
+    ਸੀ. ਅਨੁਵਾਦ:'
+  wwcItemTranslateStart: ਟੀਚੇ ਦਾ ਆਈਟਮ ਅਨੁਵਾਦ...
+  wwcOnJoinTranslationNotificationSourceLang: ਤੁਹਾਡੇ ਕੋਲ {0} ਤੋਂ {1} ਤੱਕ ਇੱਕ ਸਰਗਰਮ
+    ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਹੈ।
+  wwcConfigEnabledDebugMode: ਯੋਗ ਡੀਬੱਗ ਮੋਡ. ਜੇ ਤੁਸੀਂ ਡਿਵੈਲਪਰ ਜਾਂ ਸਮੱਸਿਆ ਨਿਪਟਾਰੇ ਨਹੀਂ
+    ਹੋ, ਤਾਂ ਤੁਹਾਨੂੰ ਇਸ ਨੂੰ ਬੰਦ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ.
+  wwctsOnSender: ਸਾਈਨ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਇਸ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਲਈ ਸਾਈਨ 'ਤੇ ਸੱਜਾ-ਕਲਿੱਕ ਕਰੋ!
+  wwctGUIAutoDetectButton: ਆਟੋ-ਖੋਜ ਸਰੋਤ ਭਾਸ਼ਾ
+  wwcConfigConversationDebugModeSuccess: ਡੀਬੱਗ ਮੋਡ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਬਦਲ ਦਿੱਤਾ ਗਿਆ ਹੈ।
+  wwcConfigGUIChatMessagesOverrideDeleteButton: ਓਵਰਰਾਈਡ ਮਿਟਾਓ
+  wwcNoConsole: ਇਹ ਕਮਾਂਡ ਸਿਰਫ ਇੱਕ ਖਿਡਾਰੀ ਦੁਆਰਾ ਚਲਾਇਆ ਜਾ ਸਕਦਾ ਹੈ.
+  wwcConfigConversationTranslationCacheSuccess: ਅਨੁਵਾਦ ਕੈਸ਼ ਸੀਮਾ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ
+    ਕੀਤਾ.
+  wwctInvalidArgs: ਗਲਤ ਦਲੀਲਾਂ ਪ੍ਰਦਾਨ ਕੀਤੀਆਂ ਗਈਆਂ!
+  wwctCannotTranslateConsole: ਤੁਸੀਂ ਕੰਸੋਲ ਲਈ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਨਹੀਂ ਕਰ ਸਕਦੇ!
+  wwctSameLangError: 'ਤੁਸੀਂ ਉਸੇ ਭਾਸ਼ਾ ਵਿੱਚ ਅਨੁਵਾਦ ਨਹੀਂ ਕਰ ਸਕਦੇ! ਵੈਧ ਲੰਬੇ ਕੋਡ: {0}'
+  wwcConfigGUICharacterLimitButton: ਸੁਨੇਹਾ ਅੱਖਰ ਸੀਮਾ ਬਦਲੋ
+  wwctGUISourceOrTargetTranslationAlreadyActive: ਇਹ ਭਾਸ਼ਾ ਪਹਿਲਾਂ ਹੀ ਸਰਗਰਮ ਹੈ!
+  wwcConfigGUIPreviousPageButton: ਪਿਛਲੇ ਸਫ਼ੇ
+  wwcConfigGUITranslatorCacheButton: ਅਨੁਵਾਦ ਕੈਸ਼ ਸੀਮਾ ਬਦਲੋ
+  wwcConfigInvalidPrefixSettings: ਆਪਣੇ ਅਗੇਤਰ ਨੂੰ ਪੜ੍ਹਨ ਵਿੱਚ ਅਸਫਲ. ਮੂਲ ਦਾ ਇਸਤੇਮਾਲ ਕਰਕੇ...
+  wwcConfigRateLimitInvalid: ਗਲਤ ਦਰ ਸੀਮਾ config.yml ਵਿੱਚ ਸੈੱਟ ਕੀਤੀ. 0 ਸਕਿੰਟ ਲਈ ਡਿਫਾਲਟ...
+  wwcSignTranslateStart: ਟੀਚੇ ਦਾ ਨਿਸ਼ਾਨ ਅਨੁਵਾਦ...
+  wwcteOffTarget: '{0} ਲਈ ਇਕਾਈ ਦਾ ਅਨੁਵਾਦ ਆਯੋਗ ਹੈ।'
+  wwcGlobalOnJoinTranslationNotificationSourceLang: ਗਲੋਬਲ ਚੈਟ ਦਾ ਅਨੁਵਾਦ {0} ਤੋਂ {1}
+    ਤੱਕ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ।
+  wwcConfigGUITranslatorSettings: ਅਨੁਵਾਦਕ ਸੰਰਚਨਾ
+  wwcExampleMessage: ਇਹ ਇੱਕ ਨਕਲੀ ਸੁਨੇਹਾ ਹੈ, ਅਤੇ ਇੱਕ ਉਦਾਹਰਣ ਦੇ ਤੌਰ ਤੇ overriden ਹੋਣ
+    ਦਾ ਮਤਲਬ ਹੈ.
+  wwcVersion: ਵਰਲਡਵਿਡਚੈਟ, ਸੰਸਕਰਣ
+  wwcServerReloadWarning: ਵਰਲਡਵਾਈਡਚੈਟ /ਰੀਲੋਡ/ਰੀਲੋਡ/ਦੀ ਵਰਤੋਂ ਨੂੰ ਰੱਦ ਨਹੀਂ ਕਰਦਾ. ਕਿਰਪਾ
+    ਕਰਕੇ ਸਾਵਧਾਨੀ ਨਾਲ ਅੱਗੇ ਵਧੋ.
+  wwcsAttemptedTranslations: 'ਕੋਸ਼ਿਸ਼ ਕੀਤੇ ਅਨੁਵਾਦ: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: ਐਮਾਜ਼ਾਨ ਗੁਪਤ ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ
+    ਸੈੱਟ ਕੀਤਾ.
+  wwctrlRateLimitSetSender: ਆਪਣੀ ਦਰ ਸੀਮਾ {0} ਸਕਿੰਟ ਤੱਕ ਨਿਰਧਾਰਤ ਕਰੋ।
+  wwcRateLimit: ਤੁਹਾਡੇ ਅਨੁਵਾਦ ਦੀ ਦਰ ਸੀਮਿਤ ਹਨ. ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ {0} ਸਕਿੰਟ ਉਡੀਕ ਕਰੋ.
+  wwctGUIExistingTranslationButton: ਮੌਜੂਦਾ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਨੂੰ ਓਵਰਰਾਈਟ ਕਰੋ
+  wwcConfigErrorLimitEnabled: ਅਨੁਵਾਦਕ ਗਲਤੀ ਸੀਮਾ {0} ਤੱਕ ਸੈੱਟ ਕੀਤੀ ਗਈ ਹੈ।
+  wwcConfigConversationOverrideTextChangeSuccess: ਨਿਊ ਸੁਨੇਹੇ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwcConfigGUISendTranslationChatButton: ਲਾਗਇਨ 'ਤੇ ਸਰਗਰਮ ਅਨੁਵਾਦਕ ਨੂੰ ਚੈਟ ਯਾਦ ਭੇਜੋ
+  wwcConfigSyncDelayInvalid: ਗਲਤ ਯੂਜ਼ਰ ਡਾਟਾ ਸਿੰਕ ਦੇਰੀ config.yml ਵਿੱਚ ਸੈੱਟ ਕੀਤਾ. 7200
+    ਸਕਿੰਟ ਲਈ ਡਿਫਾਲਟ...
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: ਐਮਾਜ਼ਾਨ ਪਹੁੰਚ ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ
+    ਸੈੱਟ ਕੀਤਾ.
+  wwcConfigBadUpdateDelay: ਗਲਤ ਅਪਡੇਟਰ ਦੇਰੀ config.yml ਵਿੱਚ ਸੈੱਟ ਕੀਤੀ. 86400 ਸਕਿੰਟ
+    ਲਈ ਡਿਫਾਲਟ...
+  wwctciOffSender: ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ ਅਯੋਗ.
+  wwctGUIChatIncomingButton: ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ ਬਦਲੋ
+  wwctcoOffSender: ਬਾਹਰ ਜਾਣ ਚੈਟ ਅਨੁਵਾਦ ਅਯੋਗ.
+  wwctcoOnSender: ਬਾਹਰ ਜਾਣ ਵਾਲੀ ਚੈਟ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਕੋਈ ਵੀ ਚੀਜ਼ ਤੁਹਾਨੂੰ ਕਹਿਣਾ ਅਨੁਵਾਦ
+    ਕੀਤਾ ਜਾਵੇਗਾ!
+  wwctciOnSender: ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ ਯੋਗ ਹੈ. ਜੋ ਵੀ ਤੁਹਾਨੂੰ ਪ੍ਰਾਪਤ ਅਨੁਵਾਦ ਕੀਤਾ ਜਾਵੇਗਾ!
+  wwctGUIChatMenu: ਬਦਲੋ ਚੈਟ ਅਨੁਵਾਦ ਮੇਨੂ
+  wwctcoOnTarget: ਆਊਟਗੋਇੰਗ ਚੈਟ ਅਨੁਵਾਦ {0} ਲਈ ਯੋਗ ਹੈ।
+  wwctcoOffTarget: ਆਊਟਗੋਇੰਗ ਚੈਟ ਅਨੁਵਾਦ {0} ਲਈ ਅਯੋਗ ਹੈ।
+  wwctGUIChatOutgoingButton: ਬਾਹਰ ਜਾਣ ਵਾਲੇ ਚੈਟ ਅਨੁਵਾਦ ਨੂੰ ਟੌਗਲ ਕਰੋ
+  wwctciOnTarget: ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ {0} ਲਈ ਯੋਗ ਹੈ।
+  wwctciOffTarget: ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ {0} ਲਈ ਅਯੋਗ ਹੈ।
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: ਹੋਵਰ ਟੈਕਸਟ ਦੇ ਤੌਰ ਤੇ ਅਨੁਵਾਦ
+    ਨਾਲ ਜੁੜੇ ਅਸਲੀ ਆਉਣ ਚੈਟ ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਬਦਲੋ.
+  wwcConfigGUISendIncomingHoverTextChatButton: ਹੋਵਰ ਟੈਕਸਟ ਦੇ ਤੌਰ ਤੇ ਅਸਲੀ ਆਉਣ ਵਾਲੇ
+    ਸੁਨੇਹੇ ਸ਼ਾਮਲ ਕਰੋ
+  wwctGUIExistingChatOutgoingEnabled: 'ਬਾਹਰ ਜਾਣ ਵਾਲੇ ਚੈਟ ਅਨੁਵਾਦ ਸਮਰਥਿਤ: {0}'
+  wwctGUIExistingTranslationInput: 'ਇੰਪੁੱਟ ਭਾਸ਼ਾ: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'ਆਉਣ ਚੈਟ ਅਨੁਵਾਦ ਯੋਗ: {0}'
+  wwctGUIExistingTranslationOutput: 'ਆਉਟਪੁੱਟ ਭਾਸ਼ਾ: {0}'
+  wwcTranslatorAttempt: config.yml ਵਿੱਚ ਅਨੁਵਾਦਕ ਨਾਲ ਜੁੜਨ ਦੀ ਕੋਸ਼ਿਸ਼... ( %// {0} ਦੀ
+    ਕੋਸ਼ਿਸ਼ ਕਰੋ)
+  wwcTimeoutExceptionConsole: ਪਲੇਅਰ {0} ਦੀ ਸਭ ਤੋਂ ਤਾਜ਼ਾ ਬੇਨਤੀ ਸਮਾਂ ਸੀ. ਇਹ ਗਲਤੀ ਘਾਤਕ
+    ਨਹੀਂ ਹੈ, ਪਰ ਜੇ ਇਹ ਵਾਪਰਨਾ ਜਾਰੀ ਹੈ ਤਾਂ ਵਰਲਡ ਵਿਡਚੈਟ ਨੂੰ ਮੁੜ ਲੋਡ ਕੀਤਾ ਜਾਣਾ ਚਾਹੀਦਾ
+    ਹੈ.
+  wwcGUIPageNumber: 'ਪੰਨਾ ਨੰਬਰ: {0}'
+  wwcConfigYAMLFallback: YML ਨੂੰ ਵਾਪਸ ਡਿੱਗਣ...
+  wwcConfigGUIToggleSQLButton: SQL ਬਦਲੋ
+  wwcConfigConversationToggleSQLSuccess: SQL ਸਫਲਤਾਪੂਰਕ ਬਦਲ ਗਿਆ. ਪ੍ਰਭਾਵ ਨੂੰ ਲੈਣ ਲਈ
+    ਤਬਦੀਲੀ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigConversationGoogleTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਕ Google ਅਨੁਵਾਦ ਨੂੰ ਬਦਲ.
+    ਪ੍ਰਭਾਵ ਨੂੰ ਲੈਣ ਲਈ ਤਬਦੀਲੀ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigYAMLDefault: ਡਾਟਾ ਸਟੋਰੇਜ਼ ਲਈ YML ਨੂੰ ਮੂਲ.
+  wwcConfigGUISQLMenuButton: SQL ਸੈਟਿੰਗ ਬਦਲੋ
+  wwcConfigConversationWatsonTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਕ ਬਦਲੋ ਵਾਟਸਨ ਦਾ ਅਨੁਵਾਦ.
+    ਪ੍ਰਭਾਵ ਨੂੰ ਲੈਣ ਲਈ ਤਬਦੀਲੀ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigGUIToggleGoogleTranslateButton: ਬਦਲੋ ਗੂਗਲ ਅਨੁਵਾਦ
+  wwcConfigGUIToggleWatsonTranslateButton: ਬਦਲੋ ਵਾਟਸਨ ਦਾ ਅਨੁਵਾਦ ਕਰੋ।
+  wwcConfigGUIToggleAmazonTranslateButton: ਬਦਲੋ ਐਮਾਜ਼ਾਨ ਦਾ ਅਨੁਵਾਦ ਕਰੋ
+  wwcConfigGUIStorageSettings: ਸਟੋਰੇਜ਼ ਸੰਰਚਨਾ
+  wwcConfigConversationAmazonTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਕ ਐਮਾਜ਼ਾਨ ਅਨੁਵਾਦ ਨੂੰ
+    ਬਦਲ. ਪ੍ਰਭਾਵ ਨੂੰ ਲੈਣ ਲਈ ਤਬਦੀਲੀ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigGUISQLPortButton: SQL ਪੋਰਟ ਬਦਲੋ
+  wwcConfigGUISQLOptionalArgsButton: SQL ਵਿਕਲਪਿਕ ਆਰਗੂਮੈਂਟਸ ਬਦਲੋ
+  wwcConfigConversationToggleSQLSSLSuccess: SQL ਲਈ SSL ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਬਦਲ ਦਿੱਤਾ.
+  wwcConfigConversationSQLPortInput: ਮੌਜੂਦਾ ਪੋਰਟ {0} ਹੈ ਇੱਕ ਨਵਾਂ ਪੋਰਟ ਸੈਟ ਕਰਨ ਲਈ 0
+    ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ.
+  wwcConfigGUISQLPasswordButton: SQL ਪਾਸਵਰਡ ਬਦਲੋ
+  wwcConfigConversationSQLHostnameSuccess: ਸਫਲਤਾਪੂਰਵਕ SQL ਹੋਸਟਨਾਂ ਨੂੰ ਬਦਲ ਦਿੱਤਾ.
+  wwcConfigConversationSQLHostnameInput: ਮੌਜੂਦਾ ਮੇਜ਼ਬਾਨ ਨਾਂ {0} ਹੈ ਨਵਾਂ ਮੇਜ਼ਬਾਨ ਨਾਂ
+    ਸੈੱਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ।
+  wwcConfigGUISQLHostnameButton: SQL ਹੋਸਟਨਾਮ ਬਦਲੋ
+  wwcConfigConversationSQLOptionalArgsSuccess: ਸਫਲਤਾਪੂਰਵਕ ਵਿਕਲਪਿਕ SQL ਦਲੀਲਾਂ ਨੂੰ ਬਦਲ
+    ਦਿੱਤਾ.
+  wwcConfigConversationSQLPasswordSuccess: ਸਫਲਤਾਪੂਰਵਕ SQL ਪਾਸਵਰਡ ਬਦਲ ਗਿਆ.
+  wwcConfigConversationSQLPasswordInput: ਮੌਜੂਦਾ ਪਾਸਵਰਡ {0} ਹੈ ਨਵਾਂ ਪਾਸਵਰਡ ਸੈੱਟ ਕਰਨ
+    ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ।
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL ਨੂੰ ਬਦਲੋ
+  wwcConfigConversationSQLUsernameSuccess: ਸਫਲਤਾਪੂਰਵਕ SQL ਉਪਭੋਗਤਾ ਨਾਮ ਬਦਲ ਗਿਆ.
+  wwcConfigConversationSQLUsernameInput: ਮੌਜੂਦਾ ਯੂਜ਼ਰਨੇਮ {0} ਹੈ ਵਾਪਸ ਜਾਣ ਲਈ ਇੱਕ ਨਵਾਂ
+    ਯੂਜ਼ਰਨਾਮ ਸੈਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ.
+  wwcConfigConversationSQLPortSuccess: ਸਫਲਤਾਪੂਰਵਕ SQL ਪੋਰਟ ਬਦਲ ਗਿਆ.
+  wwcConfigGUISQLUsernameButton: ਬਦਲੋ SQL ਯੂਜ਼ਰ
+  wwcConfigConversationSQLOptionalArgsCleared: ਅਖ਼ਤਿਆਰੀ ਦਲੀਲਾਂ ਸਫਲਤਾਪੂਰਵਕ ਸਾਫ਼ ਹੋ
+    ਗਈਆਂ.
+  wwcConfigConversationSQLOptionalArgsInput: 'ਮੌਜੂਦਾ ਵਿਕਲਪਿਕ SQL ਦਲੀਲਾਂ ਹਨ: {0} ਕਾਮੇ
+    (ਕੁੰਜੀ = ਮੁੱਲ, key2 = value2) ਦੁਆਰਾ ਵੱਖ ਕੀਤੀਆਂ ਆਰਗੂਮੈਂਟਾਂ, ਜਾਂ ਮੌਜੂਦਾ ਆਰਗਾਂ ਨੂੰ
+    ਪੂੰਝਣ ਲਈ ਸਪੱਸ਼ਟ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.'
+  wwcConfigConversationSQLDatabaseNameInput: ਮੌਜੂਦਾ ਡਾਟਾਬੇਸ ਨਾਂ {0} ਹੈ ਨਵਾਂ ਡਾਟਾਬੇਸ
+    ਨਾਂ ਸੈੱਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ 0 ਟਾਈਪ ਕਰੋ ਵਾਪਸ ਜਾਣ ਲਈ।
+  wwcConfigGUISQLDatabaseNameButton: SQL ਡਾਟਾਬੇਸ ਬਦਲੋ
+  wwcConfigConversationSQLDatabaseNameSuccess: ਸਫਲਤਾਪੂਰਵਕ SQL ਡਾਟਾਬੇਸ ਨਾਮ ਬਦਲ ਦਿੱਤਾ.
+  wwcConfigConversationFatalAsyncAbort: ਸਾਰੇ async ਕਾਰਜਾਂ ਨੂੰ ਖਤਮ ਕਰਨ ਦਾ ਮੌਜੂਦਾ ਸਮਾਂ
+    ਆ. ਟ {0} ਸਕਿੰਟ ਹੈ. ਇੱਕ ਨਵਾਂ ਸਮਾਂ ਨਿਰਧਾਰਤ ਕਰਨ ਲਈ 7 ਤੋਂ ਉੱਪਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ
+    ਇਸ ਤੋਂ ਹੇਠਾਂ ਕੁਝ ਵੀ ਵਾਪਸ ਜਾਣ ਲਈ.
+  wwcConfigConversationFatalAsyncSuccess: ਅਸਿੰਕ ਟਾਸਕ ਟਾਈਮਆਉਟ ਸਫਲਤਾਪੂਰਵਕ ਸੈੱਟ ਕੀਤਾ
+    ਗਿਆ.
+  wwcConfigGUIFatalAsyncAbortButton: ਅਸਿੰਕ ਟਾਸਕ ਟਾਈਮਆਉਟ ਬਦਲੋ
+  libreHttp400: Libre ਅਨੁਵਾਦ ਨੂੰ ਭੇਜੀ ਗਈ ਮਾੜੀ ਬੇਨਤੀ! ਜਦ ਤੱਕ ਤੁਸੀਂ ਕੁਝ ਨਹੀਂ ਕਰ ਰਹੇ
+    ਹੋ ਜੋ ਤੁਹਾਨੂੰ ਨਹੀਂ ਕਰਨਾ ਚਾਹੀਦਾ, ਤੁਹਾਨੂੰ ਇਹ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕਰਨਾ ਚਾਹੀਦਾ. ਕਿਰਪਾ ਕਰਕੇ
+    ਡਿਵੈਲਪਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ!
+  wwcConfigGUILibreTranslateApiKeyButton: ਮੁਫਤ ਬਦਲੋ ਅਨੁਵਾਦ API ਕੁੰਜੀ
+  libreHttp403: ਗੁੰਮ Libre ਅਨੁਵਾਦ API ਕੁੰਜੀ, ਜ ਤੁਹਾਨੂੰ ਸਰਵਰ ਤੇ ਪਾਬੰਦੀ ਰਹੇ ਹਨ!
+  wwcConfigConversationLibreURLSuccess: ਮੁਫ਼ਤ URL ਨੂੰ ਸਫਲਤਾਪੂਰਕ ਸੈੱਟ ਕੀਤਾ.
+  wwcConfigConversationLibreTranslateApiKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ
+    Libre ਲਈ ਇੱਕ API ਕੁੰਜੀ ਦਿਓ, ਜਾਂ 0 ਨੂੰ ਵਾਪਸ ਜਾਣ ਲਈ ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUILibreTranslateButton: Libre ਅਨੁਵਾਦ
+  libreHttp429: ਸਰਵਰ ਤੋਂ ਰੇਟ ਸੀਮਾ ਦੇ ਕਾਰਨ ਕੋਈ ਵਿਸ਼ਵਾਸ ਨਹੀਂ.
+  wwcConfigGUIToggleLibreTranslateButton: Libre ਅਨੁਵਾਦ ਬਦਲੋ
+  wwcConfigConversationLibreTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਵਕ Libre ਅਨੁਵਾਦ ਨੂੰ ਚਾਲੂ
+    ਕਰ ਦਿੱਤਾ। ਤਬਦੀਲੀਆਂ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigConversationLibreTranslateApiKeySuccess: ਮੁਫ਼ਤ API ਕੁੰਜੀ ਨੂੰ ਸਫਲਤਾਪੂਰਕ
+    ਸੈੱਟ ਕੀਤਾ.
+  wwcConfigConversationLibreURLInput: ਮੌਜੂਦਾ URL {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ ਲਿਬਰੇ ਲਈ ਇੱਕ URL
+    ਦਿਓ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
+  libreHttpUnknown: 'ਅਣਜਾਣ http ਗਲਤੀ: {0}'
+  wwcConfigGUILibreTranslateURLButton: Libre ਅਨੁਵਾਦ URL ਨੂੰ ਬਦਲੋ
+  wwcConfigConnectionFail: '{0} ਨਾਲ ਜੁੜਨ ਵਿੱਚ ਅਸਫਲ।'
+  wwcConfigConversationMongoDatabaseNameSuccess: ਮੰਗੋਡੀਬੀ ਡੇਟਾਬੇਸ ਨਾਮ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ
+    ਬਦਲਿਆ.
+  wwcConfigGUIMongoHostnameButton: ਮੰਗੋਡੀਬੀ ਹੋਸਟ-ਨਾਮ ਬਦਲੋ
+  wwcConfigConversationMongoPasswordInput: ਮੌਜੂਦਾ ਪਾਸਵਰਡ {0} ਹੈ ਨਵਾਂ ਪਾਸਵਰਡ ਸੈੱਟ ਕਰਨ
+    ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationMongoPortInput: ਮੌਜੂਦਾ ਪੋਰਟ {0} ਹੈ ਨਵੀਂ ਪੋਰਟ ਸੈਟ ਕਰਨ ਲਈ 0 ਤੋਂ
+    ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
+  wwcConfigConversationToggleMongoSuccess: ਮੰਗੋਡੀਬੀ ਸਫਲਤਾਪੂਰਵਕ ਚਾਲੂ ਹੋਇਆ. ਤਬਦੀਲੀ ਨੂੰ
+    ਲਾਗੂ ਕਰਨ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigConversationMongoHostnameInput: ਮੌਜੂਦਾ ਹੋਸਟ-ਨਾਂ {0} ਹੈ ਨਵਾਂ ਹੋਸਟ-ਨਾਂ ਸੈੱਟ
+    ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationMongoHostnameSuccess: ਸਫਲਤਾਪੂਰਵਕ ਮੰਗੋਡੀਬੀ ਹੋਸਟ-ਨਾਮ ਬਦਲਿਆ.
+  wwcConfigGUIMongoMenuButton: ਮੰਗੋਡੀਬੀ ਸੈਟਿੰਗਜ਼ ਬਦਲੋ
+  wwcConfigGUIToggleMongoButton: ਮੰਗੋਡੀ ਬੀ ਨੂੰ ਬਦਲੋ
+  wwcConfigConversationMongoDatabaseNameInput: ਮੌਜੂਦਾ ਡਾਟਾਬੇਸ ਨਾਂ {0} ਹੈ ਨਵਾਂ ਡਾਟਾਬੇਸ
+    ਨਾਂ ਸੈੱਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationMongoOptionalArgsInput: 'ਮੌਜੂਦਾ ਵਿਕਲਪਿਕ ਮੰਗੋਡੀਬੀ ਦਲੀਲਾਂ ਹਨ:
+    {0} ਕਾਮੇ ਦੁਆਰਾ ਵੱਖ ਕੀਤੀਆਂ ਦਲੀਲਾਂ ਟਾਈਪ ਕਰੋ (ਕੁੰਜੀ = ਮੁੱਲ, key2 = value2), ਜਾਂ ਮੌਜੂਦਾ
+    ਆਰਗਜ਼ ਨੂੰ ਪੂੰਝਣ ਲਈ ਸਾਫ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.'
+  wwcConfigGUIMongoDatabaseNameButton: ਮੰਗੋਡੀਬੀ ਡਾਟਾਬੇਸ ਬਦਲੋ
+  wwcConfigConversationMongoUsernameInput: ਮੌਜੂਦਾ ਯੂਜ਼ਰਨੇਮ {0} ਹੈ ਨਵਾਂ ਯੂਜ਼ਰਨੇਮ ਸੈੱਟ
+    ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ.
+  wwcConfigGUIMongoOptionalArgsButton: ਮੰਗੋਡੀਬੀ ਵਿਕਲਪਿਕ ਆਰਗੂਮੈਂਟ ਬਦਲੋ
+  wwcConfigConversationMongoUsernameSuccess: ਸਫਲਤਾਪੂਰਵਕ ਮੰਗੋਡੀਬੀ ਉਪਭੋਗਤਾ ਨਾਮ ਬਦਲਿਆ.
+  wwcConfigConversationMongoPasswordSuccess: ਸਫਲਤਾਪੂਰਵਕ ਮੰਗੋਡੀਬੀ ਪਾਸਵਰਡ ਬਦਲਿਆ.
+  wwcConfigConversationMongoPortSuccess: ਸਫਲਤਾਪੂਰਵਕ ਮੰਗੋਡੀਬੀ ਪੋਰਟ ਨੂੰ ਬਦਲਿਆ.
+  wwcConfigGUIMongoUsernameButton: ਮੰਗੋਡੀਬੀ ਯੂਜ਼ਰ ਨਾਂ ਬਦਲੋ
+  wwcConfigGUIMongoPasswordButton: ਮੰਗੋਡੀਬੀ ਪਾਸਵਰਡ ਬਦਲੋ
+  wwcConfigConversationMongoOptionalArgsSuccess: ਸਫਲਤਾਪੂਰਵਕ ਵਿਕਲਪਿਕ ਮੰਗੋਡੀਬੀ ਦਲੀਲਾਂ
+    ਨੂੰ ਬਦਲਿਆ.
+  wwcConfigConversationMongoOptionalArgsCleared: ਵਿਕਲਪਿਕ ਦਲੀਲਾਂ ਸਫਲਤਾਪੂਰਵਕ ਸਾਫ ਹੋ
+    ਗਈਆਂ.
+  wwcConfigGUIMongoPortButton: ਮੰਗੋਡੀਬੀ ਪੋਰਟ ਬਦਲੋ
+  wwcConfigInvalidFatalAsyncTimeout: ਗਲਤ ਘਾਤਕ ਅਸਿੰਕ ਟਾਈਮਆਉਟ ਸੈਟ. 10 ਸਕਿੰਟ ਤੱਕ ਡਿਫੌਲਟ
+    ਕਰਨਾ...
+  libreHttp500: ਤੁਹਾਡਾ ਚੁਣਿਆ ਇੰਪੁੱਟ ਅਤੇ ਆਉਟਪੁੱਟ ਭਾਸ਼ਾ ਜੋੜਾ ਸਹਿਯੋਗੀ ਨਹੀਂ ਹੈ. ਕਿਰਪਾ
+    ਕਰਕੇ ਇੱਕ ਵੱਖਰੀ ਭਾਸ਼ਾ ਸੈੱਟ ਚੁਣੋ!
+  wwcConfigGUIDeepLTranslateButton: ਬਦਲੋ DeepL ਅਨੁਵਾਦ
+  wwcConfigConversationDeepLTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਵਕ ਡੀਪੋਲ ਅਨੁਵਾਦ ਨੂੰ ਚਾਲੂ
+    ਕੀਤਾ. ਤਬਦੀਲੀਆਂ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਮੁੜ ਲੋਡ ਕਰੋ.
+  wwcConfigGUIDeepLTranslateApiKeyButton: ਦੀਪਐਲ ਦਾ ਅਨੁਵਾਦ API ਕੁੰਜੀ ਬਦਲੋ
+  wwcConfigGUIToggleDeepLTranslateButton: ਬਦਲੋ DeepL ਅਨੁਵਾਦ
+  wwcConfigConversationDeepLTranslateApiKeySuccess: ਡੀਪੋਲ ਏਪੀਆਈ ਕੁੰਜੀ ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ
+    ਕੀਤੀ ਗਈ.
+  wwcConfigConversationDeepLTranslateApiKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ ਕਿਰਪਾ ਕਰਕੇ
+    DepL ਲਈ ਇੱਕ API ਕੁੰਜੀ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigErrorsToIgnoreSuccess: ਸਫਲਤਾਪੂਰਕ ਰਜਿਸਟਰ ਅਨੁਵਾਦਕ ਗਲਤੀ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼ ਕਰਨ
+    ਲਈ.
+  wwcConfigErrorsToIgnoreInvalid: ਗਲਤ ਅਨੁਵਾਦਕ ਗਲਤੀ config.yml ਵਿੱਚ ਸੈੱਟ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼
+    ਕਰਨ ਲਈ. ਡਿਫੌਲਟਸ ਰਜਿਸਟਰ ਕਰਨਾ...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: ਸਫਲਤਾਪੂਰਵਕ ਅਨੁਵਾਦਕ ਦੀਆਂ ਗਲਤੀਆਂ ਨੂੰ ਵਾਕਾਂਸ਼ਾਂ
+    ਨੂੰ ਨਜ਼ਰ ਅੰਦਾਜ਼ ਕਰਨ ਲਈ ਬਦਲ ਦਿੱਤਾ.
+  wwcConfigGUIIgnoreErrorsButton: ਅਣਡਿੱਠ ਕਰਨ ਲਈ ਗਲਤੀਆਂ ਬਦਲੋ
+  wwcConfigConversationIgnoreErrorsInput: 'ਅਣਡਿੱਠ ਕਰਨ ਲਈ ਅਨੁਵਾਦਕ ਗਲਤੀਆਂ ਵਿੱਚ ਵਾਕਾਂਸ਼ਾਂ
+    ਦੀ ਮੌਜੂਦਾ ਸੂਚੀ ਇਹ ਹਨ: {0} ਇੱਕ ਕਾਮੇ (ਕੁੰਜੀ = ਮੁੱਲ, key2 = value2) ਦੁਆਰਾ ਵੱਖ ਕੀਤੇ
+    ਦਲੀਲਾਂ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਮੌਜੂਦਾ args ਨੂੰ ਪੂੰਝਣ ਲਈ ਸਾਫ ਟਾਈਪ ਕਰੋ, ਜਾਂ 0 ਵਾਪਸ ਜਾਣ ਲਈ
+    ਟਾਈਪ ਕਰੋ. ਇਸ ਤੋਂ ਇਲਾਵਾ, “*” ਟਾਈਪ ਕਰਨ ਨਾਲ ਪਲੱਗਇਨ ਕਿਸੇ ਅਨੁਵਾਦਕ ਦੀਆਂ ਗਲਤੀਆਂ ਦੀ ਜਾਂਚ
+    ਨਹੀਂ ਕਰੇਗੀ.'
+  wwcConfigConversationIgnoreErrorsCleared: ਵਾਕਾਂਸ਼ਾਂ ਨੂੰ ਨਜ਼ਰ ਅੰਦਾਜ਼ ਕਰਨ ਲਈ ਅਨੁਵਾਦਕ
+    ਗਲਤੀਆਂ ਸਫਲਤਾਪੂਰਵਕ ਸਾਫ ਹੋ ਗਈਆਂ.
+  wwcSupportedServer: '{0} ਲਈ ਵਰਲਡਵਾਈਡਚੈਟ ਸ਼ੁਰੂ ਕਰ ਰਿਹਾ ਹੈ...'
+  wwcSupportedVersion: ਵਰਜਨ ਲਈ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਨੂੰ ਸਮਰੱਥ ਕਰਨਾ {0}...
+  wwcBadPerms: 'ਇਸ ਕਮਾਂਡ ਨੂੰ ਚਲਾਉਣ ਲਈ ਤੁਹਾਡੇ ਕੋਲ ਲੋੜੀਂਦੀਆਂ ਇਜਾਜ਼ਤਾਂ ਨਹੀਂ ਹਨ: {0}'
+  wwcsIsActiveTranslator: 'ਕਿਰਿਆਸ਼ੀਲ ਅਨੁਵਾਦਕ ਹੈ: {0}'
+  wwcsActiveTransPrevRate: 'ਪਿਛਲੀ ਰੇਟ ਸੀਮਾ ਸਮਾਂ: {0}'
+  wwcsActiveTransSaved: 'ਡਿਸਕ ਤੇ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ: {0}'
+  wwcsActiveTransIncoming: 'ਆਉਣ ਵਾਲੀ ਚੈਟ ਦਾ ਅਨੁਵਾਦ ਕਰਨਾ: {0}'
+  wwcsActiveTransOutLang: 'ਆਉਟਪੁੱਟ ਭਾਸ਼ਾ: {0}'
+  wwcsActiveTransInLang: 'ਇੰਪੁੱਟ ਭਾਸ਼ਾ: {0}'
+  wwcsActiveTransBook: 'ਕਿਤਾਬ ਦਾ ਅਨੁਵਾਦ: {0}'
+  wwcsActiveTransSign: 'ਅਨੁਵਾਦ ਕਰਨ ਵਾਲਾ ਚਿੰਨ੍ਹ: {0}'
+  wwcsActiveTransUUID: 'ਨਵੀਨਤਾ: {0}'
+  wwcsActiveTransRateLimit: 'ਰੇਟ ਸੀਮਾ: {0}'
+  wwcsActiveTransColorWarning: 'ਪ੍ਰਾਪਤ ਕੀਤਾ ਰੰਗ ਚੇਤਾਵਨੀ: {0}'
+  wwcsActiveTransSignWarning: 'ਪ੍ਰਾਪਤ ਚਿੰਨ੍ਹ ਸੰਪਾਦਨ ਚੇਤਾਵਨੀ: {0}'
+  wwcsTitle: '{0} ਦਾ ਰਿਕਾਰਡ'
+  wwcsActiveTransOutgoing: 'ਆਉਟਗੋਇੰਗ ਚੈਟ ਦਾ ਅਨੁਵਾਦ ਕਰਨਾ: {0}'
+  wwcsActiveTransItem: 'ਆਈਟਮ ਦਾ ਅਨੁਵਾਦ ਕਰਨਾ: {0}'
+  wwcsActiveTransEntity: 'ਅਨੁਵਾਦਕ ਹਸਤੀ: {0}'
+  wwctsWarning: ਜਦੋਂ ਤੁਸੀਂ ਚਿੰਨ੍ਹ ਦਾ ਅਨੁਵਾਦ ਕਰ ਰਹੇ ਹੋ ਤਾਂ ਸਾਈਨ ਸੋਧ ਅਯੋਗ ਹੈ।
+  wwcConfigConversationAzureTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਵਕ ਅਜ਼ੂਰ ਟੌਗਲ ਤਬਦੀਲੀਆਂ
+    ਨੂੰ ਪ੍ਰਭਾਵਤ ਕਰਨ ਲਈ ਦੁਬਾਰਾ ਲੋਡ ਕਰੋ।
+  wwcConfigGUIAzureTranslateButton: ਅਜ਼ੂਰ ਅਨੁਵਾਦ
+  wwcConfigGUIAzureTranslateApiKeyButton: ਅਜ਼ੂਰ ਅਨੁਵਾਦ API ਕੁੰਜੀ ਬਦਲੋ
+  wwcConfigGUIAzureTranslateRegionButton: ਅਜ਼ੂਰ ਅਨੁਵਾਦ ਖੇਤਰ ਬਦਲੋ
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure ਖੇਤਰ ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ ਕੀਤਾ
+  wwcConfigConversationAzureTranslateApiKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ। ਕਿਰਪਾ ਕਰਕੇ
+    ਅਜ਼ੂਰ ਲਈ ਇੱਕ API ਕੁੰਜੀ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API ਕੁੰਜੀ ਸਫਲਤਾਪੂਰਵਕ ਸੈਟ
+  wwcConfigConversationAzureTranslateRegionInput: ਮੌਜੂਦਾ ਖੇਤਰ {0} ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਅਜ਼ੂਰ
+    ਲਈ ਇੱਕ ਖੇਤਰ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUIToggleAzureTranslateButton: ਅਜ਼ੂਰ ਅਨੁਵਾਦ ਨੂੰ ਬਦਲੋ
+  wwcConfigGUISystranTranslateApiKeyButton: ਸਿਸਟ੍ਰਾਨ ਅਨੁਵਾਦ ਏਪੀਆਈ ਕੁੰਜੀ ਬਦਲੋ
+  wwcConfigGUIToggleSystranTranslateButton: ਸਿਸਟ੍ਰਨ ਅਨੁਵਾਦ ਨੂੰ ਟੌਗਲ ਕਰੋ
+  wwcConfigConversationSystranTranslateApiKeyInput: ਮੌਜੂਦਾ API ਕੁੰਜੀ {0} ਹੈ। ਕਿਰਪਾ
+    ਕਰਕੇ ਸਿਸਟ੍ਰਾਨ ਲਈ ਇੱਕ API ਕੁੰਜੀ ਇਨਪੁਟ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcISOJSONFail: ISO JSON ਨਾਲ ਭਾਸ਼ਾ ਵਸਤੂਆਂ ਨੂੰ ਠੀਕ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ।
+  wwcConfigConversationSystranTranslateToggleSuccess: ਸਫਲਤਾਪੂਰਵਕ ਸਿਸਟ੍ਰਨ ਟੌਗਲ ਕੀਤਾ
+    ਗਿਆ ਤਬਦੀਲੀਆਂ ਨੂੰ ਪ੍ਰਭਾਵਤ ਕਰਨ ਲਈ ਦੁਬਾਰਾ ਲੋਡ ਕਰੋ।
+  wwcConfigConversationSystranTranslateApiKeySuccess: ਸਿਸਟ੍ਰਾਨ API ਕੁੰਜੀ ਸਫਲਤਾਪੂਰਵਕ
+    ਸੈਟ
+  wwcConfigGUISystranTranslateButton: ਸਿਸਟ੍ਰਨ ਅਨੁਵਾਦ ਕਰੋ
+  wwcrTransFail: ਵਰਲਡਵਾਈਡਚੈਟ ਨੂੰ ਦੁਬਾਰਾ ਲੋਡ ਕੀਤਾ ਪਰ ਅਨੁਵਾਦਕ ਨੂੰ ਸਮਰੱਥ ਬਣਾਉਣ ਵਿੱਚ ਅਸਫਲ
+  wwcdCacheCleared: ਅਨੁਵਾਦ ਕੈਸ਼ ਸਾਫ਼ ਕਰ ਦਿੱਤਾ ਗਿਆ ਸੀ।
+  wwcdInvalidCmd: ਅਵੈਧ ਦਲੀਲਾਂ!
+  systranHttpUnknown: 'ਅਣਜਾਣ http ਗਲਤੀ: {0}'
+  systranHttp400: ਮਾੜੇ ਮਾਪਦੰਡ ਸਿਸਟ੍ਰਾਨ ਨੂੰ ਭੇਜੇ ਗਏ। ਸ਼ਾਇਦ ਇੱਕ ਮਾੜੀ ਭਾਸ਼ਾ ਦੀ ਜੋੜੀ ਹੋ
+    ਸਕਦੀ ਹੈ?
+  systranHttp500: ਸਿਸਟ੍ਰਾਨ ਐਂਡਪੁਆਇੰਟ ({0}) ਤੋਂ ਅੰਦਰੂਨੀ ਸਰਵਰ ਗਲਤੀ.
+  wwcInvalidStorageSession: '{0} ਤੁਹਾਡੀ ਕੌਂਫਿਗਰੇਸ਼ਨ ਵਿੱਚ ਸਮਰੱਥ ਹੈ, ਪਰ ਇੱਕ ਕੁਨੈਕਸ਼ਨ
+    ਸਥਾਪਤ ਨਹੀਂ ਕੀਤਾ ਗਿਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਠੀਕ ਕਰਨ ਲਈ ਦੁਬਾਰਾ ਲੋਡ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼
+    ਕਰੋ, ਪਰ ਕਿਰਪਾ ਕਰਕੇ ਡਿਵੈਲਪਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ ਜੇਕਰ ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ {0} ਤੋਂ ਇੱਕ ਸਫਲ ਕੁਨੈਕਸ਼ਨ
+    ਸੁਨੇਹਾ ਮਿਲਿਆ ਹੈ।'
+  wwcConfigConversationPostgresDatabaseNameSuccess: ਸਫਲਤਾਪੂਰਵਕ PostgreSQL ਡੇਟਾਬੇਸ
+    ਨਾਮ ਬਦਲਿਆ.
+  wwcConfigConversationPostgresOptionalArgsCleared: ਅਖ਼ਤਿਆਰੀ ਦਲੀਲਾਂ ਸਫਲਤਾਪੂਰ
+  wwcConfigConversationPostgresPortInput: ਮੌਜੂਦਾ ਪੋਰਟ {0} ਹੈ। ਨਵਾਂ ਪੋਰਟ ਸੈਟ ਕਰਨ ਲਈ
+    0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUIPostgresUsernameButton: ਪੋਸਟਗਰੇਸਕਿਲ ਉਪਭੋਗਤਾ ਨਾਮ ਬਦਲੋ
+  wwcConfigConversationPostgresOptionalArgsSuccess: ਵਿਕਲਪਿਕ PostgreSQL ਦਲੀਲਾਂ ਨੂੰ
+    ਸਫਲਤਾਪੂਰਵਕ ਬਦਲਿਆ.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL ਲਈ ਐਸਐਸਐਲ ਸਫਲਤਾਪੂਰਵਕ ਟੌਗਲ
+    ਕੀਤਾ ਗਿਆ.
+  wwcConfigConversationPostgresPasswordSuccess: ਸਫਲਤਾਪੂਰਵਕ PostgreSQL ਪਾਸਵਰਡ ਬਦਲਿਆ.
+  wwcConfigConversationPostgresPortSuccess: ਸਫਲਤਾਪੂਰਵਕ PostgreSQL ਪੋਰਟ ਨੂੰ ਬਦਲਿਆ.
+  wwcConfigConversationPostgresUsernameInput: ਮੌਜੂਦਾ ਉਪਭੋਗਤਾ ਨਾਮ {0} ਹੈ। ਨਵਾਂ ਉਪਭੋਗਤਾ
+    ਨਾਮ ਸੈਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL ਸਫਲਤਾਪੂਰਵਕ ਟੌਗਲ ਕੀਤਾ ਗਿਆ.
+    ਤਬਦੀਲੀ ਨੂੰ ਪ੍ਰਭਾਵਤ ਕਰਨ ਲਈ ਦੁਬਾਰਾ ਲੋਡ ਕਰੋ.
+  wwcConfigGUITogglePostgresButton: ਪੋਸਟਗਰੇਸਕਯੂਐਲ ਨੂੰ ਟੌਗਲ ਕਰੋ
+  wwcConfigGUIPostgresPasswordButton: ਪੋਸਟਗਰੇਸਕਿਲ ਪਾਸਵਰਡ ਬਦਲੋ
+  wwcConfigGUIPostgresOptionalArgsButton: ਪੋਸਟਗਰੇਸਕਿਲ ਵਿਕਲਪਿਕ ਦਲੀਲਾਂ ਬਦਲੋ
+  wwcConfigGUIPostgresMenuButton: ਪੋਸਟਗਰੇਸਕਿਲ ਸੈਟਿੰਗਜ਼ ਬਦਲੋ
+  wwcConfigConversationPostgresPasswordInput: ਮੌਜੂਦਾ ਪਾਸਵਰਡ {0} ਹੈ। ਨਵਾਂ ਪਾਸਵਰਡ ਸੈਟ
+    ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationPostgresHostnameInput: ਮੌਜੂਦਾ ਹੋਸਟਨਾਮ {0} ਹੈ। ਨਵਾਂ ਹੋਸਟਨਾਮ
+    ਸੈਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigGUIPostgresPortButton: ਪੋਸਟਗਰੇਸਕਿਲ ਪੋਰਟ ਬਦਲੋ
+  wwcConfigConversationPostgresHostnameSuccess: ਸਫਲਤਾਪੂਰਵਕ PostgreSQL ਹੋਸਟਨਾਮ ਬਦਲਿਆ.
+  wwcConfigGUIPostgresHostnameButton: ਪੋਸਟਗਰੇਸਕਿਲ ਹੋਸਟਨਾਮ ਬਦਲੋ
+  wwcConfigConversationPostgresDatabaseNameInput: ਮੌਜੂਦਾ ਡੇਟਾਬੇਸ ਨਾਮ {0} ਹੈ। ਇੱਕ ਨਵਾਂ
+    ਡੇਟਾਬੇਸ ਨਾਮ ਸੈਟ ਕਰਨ ਲਈ 0 ਤੋਂ ਇਲਾਵਾ ਹੋਰ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ
+    ਕਰੋ।
+  wwcConfigConversationPostgresOptionalArgsInput: 'ਮੌਜੂਦਾ ਵਿਕਲਪਿਕ ਪੋਸਟਗਰੇਸਕਿਲ ਦਲੀਲਾਂ
+    ਹਨ: {0}. ਕਾਮਾ ਦੁਆਰਾ ਵੱਖ ਕੀਤੀਆਂ ਦਲੀਲਾਂ ਟਾਈਪ ਕਰੋ (ਕੁੰਜੀ = ਮੁੱਲ, ਕੀ2 = ਮੁੱਲ 2), ਜਾਂ
+    ਮੌਜੂਦਾ ਆਰਗਸ ਨੂੰ ਪੂੰਝਣ ਲਈ ਕਲੀਅਰ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।'
+  wwcConfigGUITogglePostgresSSLButton: ਪੋਸਟਗਰੇਸਕੁਐਲ ਐਸਐਸਐਲ ਟੌਗਲ ਕਰੋ
+  wwcConfigGUIPostgresDatabaseNameButton: ਪੋਸਟਗਰੇਸਕਿਲ ਡਾਟਾਬੇਸ ਬਦਲੋ
+  wwcConfigConversationPostgresUsernameSuccess: ਸਫਲਤਾਪੂਰਵਕ PostgreSQL ਉਪਭੋਗਤਾ ਨਾਮ
+    ਬਦਲਿਆ.
+  wwcConfigGUIStorageTypeSettings: '{0} ਕੌਂਫਿਗਰੇਸ਼ਨ'
+  wwcConfigConversationPrefixInput: ਮੌਜੂਦਾ ਅਗੇਤਰ {0} ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਨਵਾਂ ਟਾਈਪ
+    ਕਰੋ, ਜਾਂ ਵਾਪਸ ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcConfigConversationLangInput: 'ਮੌਜੂਦਾ ਪਲੱਗਇਨ ਭਾਸ਼ਾ {0} ਹੈ. ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਵੈਧ
+    ਭਾਸ਼ਾ ਕੋਡ ਦਾਖਲ ਕਰੋ, ਜਾਂ ਰੱਦ ਕਰਨ ਲਈ 0 ਟਾਈਪ ਕਰੋ। ਵੈਧ ਭਾਸ਼ਾ ਕੋਡ: {1}'
+  wwcdCacheSize: ਕੈਸ਼ ਦਾ ਆਕਾਰ ਵਰਤਮਾਨ ਵਿੱਚ {0} ਹੈ, {1} ਦੀ ਸੀਮਾ ਦੇ ਨਾਲ।
+  wwcdCacheTerm: '{0}. ਕੈਚਡਟ੍ਰਾਂਸਲੇਸ਼ਨ:ਇਨਪੁਟਲੈਂਗ = {1}, ਆਉਟਪੁੱਟਲੈਂਗ = {2}, ਇਨਪੁਟਫਰੇਜ਼=
+    {3} | ਆਉਟਪੁੱਟਫਰੇਜ਼= {4}'
+  wwctLangToLangStart: '{0} ਤੋਂ {1} ਤੱਕ ਇੱਕ ਨਵਾਂ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
+  wwctAutoTranslateStartOtherPlayer: '{0} ਤੋਂ {1} ਲਈ ਇੱਕ ਨਵਾਂ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨਾ।'
+  wwctLangToLangStartOtherPlayer: '{1} ਤੋਂ {2} ਤੱਕ {0} ਲਈ ਇੱਕ ਨਵਾਂ ਅਨੁਵਾਦ ਸੈਸ਼ਨ ਸ਼ੁਰੂ
+    ਕਰਨਾ।'
+  wwcgLangToLangStart: ਹੁਣ ਗਲੋਬਲ ਚੈਟ ਦਾ {0} ਤੋਂ {1} ਤੱਕ ਅਨੁਵਾਦ ਕਰ ਰਿਹਾ ਹੈ।
+  wwctrlRateLimitSetTarget: '{0} ਦੀ ਦਰ ਸੀਮਾ ਨੂੰ {1} ਸਕਿੰਟ ਤੱਕ ਸੈਟ ਕਰੋ।'
+  wwcTimeoutException: ਤੁਹਾਡੀ ਬੇਨਤੀ ਦਾ ਸਮਾਂ ਖਤਮ ਹੋ ਗਿਆ. ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼
+    ਕਰੋ।
+  wwctbNoMoreOldBooks: ਕਿਤਾਬ ਦਾ ਅਨੁਵਾਦ ਤੁਹਾਡੇ ਸਰਵਰ ਸੰਸਕਰਣ ਤੇ ਕਾਰਜਸ਼ੀਲ ਨਹੀਂ ਹੈ. ਜੇਕਰ
+    ਤੁਸੀਂ ਮਾਇਨਕਰਾਫਟ ਦੇ ਇੱਕ ਹੋਰ ਤਾਜ਼ਾ ਸੰਸਕਰਣ 'ਤੇ ਹੋ ਅਤੇ ਤੁਹਾਨੂੰ ਇਹ ਗਲਤੀ ਮਿਲਦੀ ਹੈ, ਤਾਂ
+    ਕਿਰਪਾ ਕਰਕੇ ਡਿਵੈਲਪਰ ਨਾਲ ਸੰਪਰਕ ਕਰੋ।
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: ਸਥਾਨਕਕਰਨ ਚੁਣੋ
+  wwcConfigGUIMessagesOverridePickChatButton: ਡਿਫੌਲਟ ਪਲੱਗਇਨ ਸੁਨੇਹੇ
+  wwcConfigGUIChatMessagesOverrideSettings: ਮੂਲ ਸੰਦੇਸ਼ਾਂ ਨੂੰ ਓਵਰਰਾਈਡ ਕਰੋ ({0})
+  wwcConfigGUIMessagesServerLang: ਇਹ config.yml ਵਿੱਚ ਪਲੱਗਇਨ ਦੀ ਡਿਫੌਲਟ ਭਾਸ਼ਾ ਹੈ.
+  wwclLangStopped: ਤੁਹਾਡਾ ਸਥਾਨਕਕਰਨ ਸਰਵਰ ਡਿਫੌਲਟ ਤੇ ਰੀਸੈਟ ਕੀਤਾ ਗਿਆ ਸੀ.
+  wwclLangInvalid: '{0} ਇੱਕ ਵੈਧ ਸਥਾਨਕਕਰਨ ਨਹੀਂ ਹੈ। ਸਹਿਯੋਗੀ ਸਥਾਨਕਕਰਨ: {1}'
+  wwclLangStoppedOtherPlayerSender: '{0} ਦੇ ਸਥਾਨਕਕਰਨ ਨੂੰ ਸਰਵਰ ਡਿਫੌਲਟ ਤੇ ਰੀਸੈਟ ਕਰੋ.'
+  wwclLangPlayerNotValid: '{0} ਕੋਈ ਵੈਧ ਖਿਡਾਰੀ ਨਹੀਂ ਹੈ.'
+  wwclLangChangedOtherPlayerSender: '{0} ਦੇ ਸਥਾਨਕਕਰਨ ਨੂੰ {1} ਵਿੱਚ ਬਦਲ ਦਿੱਤਾ।'
+  wwclLangChanged: ਤੁਹਾਡਾ ਸਥਾਨਕਕਰਨ {0} ਵਿੱਚ ਬਦਲ ਦਿੱਤਾ ਗਿਆ ਸੀ।
+  wwcsLocalization: 'ਸਥਾਨਕਕਰਨ: {0}'
+  wwclLangAlreadyStopped: ਤੁਹਾਡੇ ਕੋਲ ਸਥਾਨਕਕਰਨ ਸੈੱਟ ਨਹੀਂ ਹੈ.
+  wwclLangAlreadyStoppedOtherPlayerSender: '{0} ਕੋਲ ਸਥਾਨਕਕਰਨ ਸੈੱਟ ਨਹੀਂ ਹੈ।'
+  wwctGUILocalizeExistingValue: 'ਮੌਜੂਦਾ ਸਥਾਨਕਕਰਨ: {0}'
+  wwctGUILocalizationButton: ਸਥਾਨਕਕਰਨ ਸੈਟ ਕਰੋ
+  wwctGUILocalizeStopButton: ਸਰਵਰ ਡਿਫੌਲਟ ਤੇ ਸਥਾਨਕਕਰਨ ਨੂੰ
+  wwctGUILocalizeTitle: ਸਥਾਨਕਕਰਨ ਮੀਨੂ
+  wwctGUISourceSameLang: ਇਹ ਭਾਸ਼ਾ ਤੁਹਾਡੀ ਸਰੋਤ ਭਾਸ਼ਾ ਵਾਂਗ ਹੀ ਹੋਵੇਗੀ।
+  wwcConfigGUICurrentPlayerLang: ਇਹ ਤੁਹਾਡਾ ਮੌਜੂਦਾ ਸਥਾਨਕਕਰਨ ਹੈ।
+  wwctGUILocalizationSameAsServer: ਇਹ ਵਰਲਡਵਾਈਡਚੈਟ ਲਈ ਡਿਫੌਲਟ ਸਥਾਨਕਕਰਨ ਹੈ.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: ਇਹ ਭਾਸ਼ਾ ਪਹਿਲਾਂ ਹੀ ਵਿਸ਼ਵ ਪੱਧਰ 'ਤੇ
+    ਕਿਰਿਆਸ਼ੀਲ ਹੈ!
+  wwcrStorageTranslatorFail: ਵਰਲਡਵਾਈਡਚੈਟ ਨੂੰ ਦੁਬਾਰਾ ਲੋਡ ਕੀਤਾ ਪਰ ਅਨੁਵਾਦਕ ਨੂੰ ਸਮਰੱਥ
+    ਬਣਾਉਣ ਅਤੇ ਤੁਹਾਡੀ ਸਟੋਰੇਜ ਕੌਂਫਿਗਰੇਸ਼ਨ ਨਾਲ ਜੁੜਨ
+  wwcrStorageFail: ਵਰਲਡਵਾਈਡਚੈਟ ਨੂੰ ਦੁਬਾਰਾ ਲੋਡ ਕੀਤਾ ਅਤੇ ਇੱਕ ਅਨੁਵਾਦਕ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ
+    ਸਮਰੱਥ ਬਣਾਇਆ, ਪਰ ਤੁਹਾਡੀ ਸਟੋਰੇਜ ਕੌਨ
+  wwcConfigPersistentCacheInvalid: config.yml ਵਿੱਚ ਅਵੈਧ ਨਿਰੰਤਰ ਕੈਸ਼ ਐਂਟਰੀ. ਗਲਤ ਨੂੰ
+    ਡਿਫੌਲਟ ਕਰਨਾ...
+  wwcConfigGUIPersistentCacheButton: ਸਥਾਈ ਕੈਸ਼ ਨੂੰ ਟੌਗਲ ਕਰੋ
+  wwcConfigConversationPersistentCacheSuccess: ਸਥਾਈ ਕੈਸ਼ ਸਫਲਤਾਪੂਰਵਕ ਟੌਗਲ
+  wwcConfigPersistentCacheEnabled: ਕੈਸ਼ ਡੇਟਾ ਰੀਲੋਡਸ ਦੌਰਾਨ ਕਾਇਮ ਰਹੇਗਾ.
+  wwcConfigConversationCharacterLimitInput: ਪ੍ਰਤੀ ਸੁਨੇਹਾ ਮੌਜੂਦਾ ਅੱਖਰ ਸੀਮਾ {0} ਅੱਖਰ
+    ਹੈ। ਨਵਾਂ ਮੁੱਲ ਸੈਟ ਕਰਨ ਲਈ 0 (ਪਰ 256 ਤੋਂ ਘੱਟ) ਤੋਂ ਵੱਧ ਕੁਝ ਵੀ ਟਾਈਪ ਕਰੋ, ਜਾਂ ਵਾਪਸ
+    ਜਾਣ ਲਈ 0 ਟਾਈਪ ਕਰੋ।
+  wwcdOutdatedSQLStruct: ਅਜਿਹਾ ਲਗਦਾ ਹੈ ਕਿ ਤੁਹਾਡੇ MySQL ਜਾਂ PostgreSQL ਟੇਬਲਾਂ ਵਿੱਚੋਂ
+    ਇੱਕ ਜਾਂ ਵਧੇਰੇ ਗਲਤ/ਪੁਰਾਣਾ ਫਾਰਮੈਟ ਹੈ. ਇਸ ਮੁੱਦੇ ਬਾਰੇ ਵਧੇਰੇ ਵਰਬੋਸ ਜਾਣਕਾਰੀ ਤੁਹਾਡੇ ਕੰਸੋਲ
+    ਤੇ ਛਾਪੀ ਗਈ ਹੈ; ਤੁਸੀਂ ਇਸ ਨੂੰ ਹੱਥੀਂ ਠੀਕ ਕਰਨ ਦੇ ਯੋਗ ਹੋ ਸਕਦੇ ਹੋ.
+  wwcdSQLAllSet: ਤੁਹਾਡੀਆਂ MySQL/PostgreSQL ਟੇਬਲ ਸਹੀ ਢੰਗ ਨਾਲ ਫਾਰਮੈਟ ਕੀਤੀਆਂ ਗਈਆਂ ਹਨ।
+  wwcdColumnBadType: ਸਾਰਣੀ {1} ਵਿੱਚ ਕਾਲਮ {0} ਦੀ ਕਿਸਮ {2} ਹੈ ਪਰ ਉਮੀਦ ਕੀਤੀ ਕਿਸਮ {3}
+    ਹੈ।
+  wwcdColumnMissing: ਸਾਰਣੀ {1} ਵਿੱਚ ਕਾਲਮ {0} ਗੁੰਮ ਹੈ।
+  wwcdGoodTable: '{0} ਟੇਬਲ ({1}) ਸਹੀ ਫਾਰਮੈਟ ਹੈ.'
+  wwcdBadTable: ਸਾਰਣੀ {0} ਅੰਦਰੂਨੀ ਪਰਿਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਨਹੀਂ ਪਾਇਆ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਡਿਵੈਲਪਰ
+    ਨਾਲ ਸੰਪਰਕ ਕਰੋ
+  wwcOldDatabaseStruct: 'ਤੁਹਾਡੇ ਚੁਣੇ ਹੋਏ ਡੇਟਾਬੇਸ ਵਿੱਚ ਇੱਕ ਗਲਤ ਟੇਬਲ ਸੈਟਅਪ ਹੈ। ਵਧੇਰੇ
+    ਜਾਣਕਾਰੀ ਲਈ ਹੇਠ ਲਿਖੀ ਕਮਾਂਡ ਟਾਈਪ ਕਰੋ: /wwcd checkdb'
+  wwctGUIRateButtonLore: 'ਮੌਜੂਦਾ ਦਰ ਸੀਮਾ: {0} ਸਕਿੰਟ'
+  wwcConfigGUIVaultSupportButton: ਵਾਲਟ ਸਹਾਇਤਾ ਨੂੰ ਟੌਗਲ ਕਰੋ
+  wwcConfigConversationVaultSupportSuccess: ਵਾਲਟ ਸਹਾਇਤਾ ਸਫਲਤਾਪੂਰਵਕ ਟੌਗਲ
+  wwcVaultEnabled: ਵਾਲਟ ਸਹਾਇਤਾ ਸਮਰੱਥ ਕੀਤੀ ਗਈ ਹੈ.
+  wwcVaultFoundButDisabled: ਵਾਲਟ ਮਿਲਿਆ, ਪਰ ਕੋਈ ਮੌਜੂਦਾ ਚੈਟ ਪਲੱਗਇਨ ਰਜਿਸਟਰ ਨਹੀਂ ਕੀਤਾ
+    ਗਿਆ ਹੈ. ਵਾਲਟ ਸਹਾਇਤਾ ਨੂੰ ਅਸਮਰੱਥ ਬਣਾਉਣਾ...
+  wwcConfigGUIToggleRestartRequired: ਇਸ ਸੈਟਿੰਗ ਨੂੰ ਲਾਗੂ ਕਰਨ ਲਈ ਇੱਕ ਪੂਰਾ ਸਰਵਰ ਰੀਸਟਾਰਟ
+    ਦੀ ਲੋੜ ਹੈ।
+

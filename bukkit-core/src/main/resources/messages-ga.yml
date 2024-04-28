@@ -1,0 +1,631 @@
+Messages:
+  wwcInventoryErrorPlayer: Earráid braitheadh le do GUI. Cuireadh logáil isteach chuig
+    an gconsól.
+  wwctGUITargetPlayerNull: An t-imreoir sprioc dícheangailte ón bhfreastalaí.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Tá comhrá domhanda á aistriú
+    chuig {0}.
+  wwcConfigErrorLimitInvalid: Teorainn earráide aistritheoir neamhbhailí atá leagtha
+    síos i config.yml. Réamhshocraithe go 5...
+  wwcConfigGUIUpdateCheckerButton: Athraigh Seiceáil do Nuashonruithe Moill
+  wwctInvalidOutputLangCode: 'Cód teanga aschuir neamhbhailí ar fáil! Cóid lang Bailí:
+    {0}'
+  wwcConfigConversationUpdateCheckerInput: Is é an mhoill atá ann faoi láthair ar
+    an seiceálaí cothrom le dáta {0} soicind. Cineál rud ar bith níos mó ná 10 a shocrú
+    le luach nua, nó rud ar bith níos lú ná 10 chun dul ar ais.
+  wwcCharLimit: Tá do theachtaireacht ró-fhada! Déan cinnte go bhfuil do theachtaireacht
+    níos lú ná carachtair {0} fad.
+  wwcInventoryError: Earráid braitheadh le GUI úsáide {0}. Tabhair tuairisc ar an
+    gceist seo don bhforbróir.
+  wwctbOnTarget: Aistriúchán leabhar cumasaithe le h {0}.
+  wwctrlRateLimitAlreadyOffTarget: Tá teorainn ráta {0} faoi mhíchumas cheana féin.
+  wwcConfigConnectionFailed: Theip ar ceangal le {0}. Bí cinnte go bhfuil do dintiúir
+    agus balla dóiteáin cumraithe i gceart!
+  wwcConfigEnabledbStats: bStats Cumasaithe.
+  wwctGUIConversationRateLimit: Is é an teorainn ráta in aghaidh an aistriúcháin faoi
+    láthair {0} soicind. Cineál rud ar bith níos mó ná 0 a shocrú le luach nua, nó
+    cineál 0 a chur ar ceal an teorainn. Cineál rud ar bith níos lú ná 0 chun dul
+    ar ais.
+  wwcteOnTarget: Aistriúchán aonáin cumasaithe le h {0}.
+  wwcBookTranslateStart: Aistriú leabhar sprioc...
+  wwcEntityTranslateDone: 'Aistrithe Ainm an Aonáin: {0}'
+  wwctsOffSender: Sínigh aistriúchán faoi mhíchumas.
+  wwcConfigGUIChatMessagesDeadOverride: Tá an sárú seo neamhbhailí, nó baineadh an
+    teachtaireacht bhunaidh. Ba chóir duit é seo a scriosadh.
+  wwcUpdaterParserFailed: Theip ar pharsáil sonraí cothrom le dáta ó Github.
+  wwctAutoTranslateStart: Seisiún nua aistriúcháin a thosú chuig {0}.
+  wwctbOffSender: Aistriúchán leabhar faoi mhíchumas.
+  wwcsSuccessfulTranslations: 'Aistriúcháin Rathúil: {0}'
+  wwctTranslationStoppedOtherPlayer: Stopadh seisiún aistriúcháin le haghaidh {0}.
+  wwcrBegin: Athlódáil WorldwideChat...
+  wwctiOffSender: Aistriúchán Mír faoi mhíchumas.
+  wwctbOffTarget: Aistriúchán leabhar faoi mhíchumas ar feadh {0}.
+  wwcConfigGUIGeneralSettings: Cumraíocht Ghinearálta
+  wwcConfigCacheInvalid: Méid taisce aistritheoir neamhbhailí. Mainneachtain go 10...
+  wwcInvalidLang: Teanga neamhbhailí i do config.yml. Mainneachtain a en...
+  wwcteOnSender: Aistriúchán Aonán cumasaithe. Deaschliceáil ar aonán chun a ainm
+    a aistriú!
+  wwcConfigGUILangButton: Athraigh Teanga Plugin
+  wwctGUISignButton: Aistriúchán Sínigh Scoránaigh
+  wwcTranslatorErrorThresholdReached: Tairseach earráide bainte amach. Beidh an mbreiseán
+    seo athlódáil anois, agus díchumasaigh gach aistritheoir.
+  wwctrlRateLimitOffTarget: Mhíchumas an teorainn ráta de {0}.
+  wwcConfigInvalidTranslatorSettings: Suíomhanna aistritheora neamhbhailí! Cuir ar
+    chumas ach aistritheoir amháin i do config.yml.
+  wwcTranslatorErrorThresholdReachedCheckLogs: Seiceáil le do thoil errorLog.txt i
+    bhfillteán breiseán WorldwideChat le haghaidh tuilleadh eolais.
+  wwcConfigGUIQuitButton: Scoir & Sábháil Athruithe
+  wwctPlayerNotFound: Imreoir % nach bhfuair mé.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Tá comhrá domhanda á
+    aistriú, ach tá seisiún aistriúcháin gníomhach agat go {0}.
+  wwctiOffTarget: Aistriúchán Mír mhíchumas ar feadh {0}.
+  wwctTranslationStopped: Tá do seisiún aistriúcháin a stopadh.
+  wwcEntityTranslateNoName: Níl ainm saincheaptha ag an eintiteas.
+  wwcConfigGUIWatsonAPIKeyButton: Watson Athraigh API Eochair
+  wwctrlRateLimitOffSender: Mhíchumas do teorainn ráta.
+  wwctbOnSender: Aistriúchán leabhar cumasaithe. Right-click agus a bhfuil leabhar
+    a aistriú é!
+  wwctrlRateLimitAlreadyOffSender: Tá do theorainn ráta faoi mhíchumas cheana féin.
+  wwcConfigSyncDelayEnabled: Moill in aghaidh an úsáideora info sonraí a leagtar a
+    {0} soicindí.
+  wwcConfigGUIEachTranslatorSettings: '{0} Cumraíocht'
+  wwctGUIEntityButton: Aistriúchán Aonáin Scoránaigh
+  wwcListenersInitialized: Éisteoirí initialized.
+  wwcConfigConversationSendTranslationChatSuccess: Meabhrúchán comhrá aistritheoir
+    gníomhach toggled go rathúil.
+  wwctsOffTarget: Sínigh aistriúchán faoi mhíchumas ar feadh {0}.
+  wwcUpdaterConnectionFailed: Ní féidir seiceáil a dhéanamh ar na nuashonruithe is
+    déanaí ar Github.
+  watsonNotFoundExceptionNotification: Ní féidir a aistriú do ionchur ar bith eile.
+  wwcConfigConversationErrorLimitSuccess: Teorainn Earráid leagtha go rathúil.
+  wwctGUIStopButton: Stop Aistriú
+  wwcEntityTranslateStart: Aistriú sprioceintiteas...
+  wwcUpdaterFutureDate: Tá leagan níos mó ag an gcás seo de WorldwideChat ná an ceann
+    poiblí is déanaí.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Google Translate Athraigh API Eochair
+  wwcConfigGUIGlobalRateLimitButton: Athraigh Teorainn Ráta Domhanda
+  wwctsOnTarget: Aistriúchán Sínigh cumasaithe le h {0}.
+  wwcConfigCacheDisabled: Taisce Aistritheoir faoi mhíchumas.
+  wwcConfigConversationWatsonURLInput: Is é an URL reatha {0}. Cuir ionchur URL seirbhíse
+    do Watson, nó cineál 0 chun dul ar ais.
+  wwcBookDone: Leabhar aistrithe go rathúil.
+  watsonColorCodeWarning: D'fhéadfadh baint úsáide as cóid datha torthaí intuartha
+    a thabhairt duit.
+  wwctGUITranslationButton: Tosaigh Ag Aistriú
+  wwcItemTranslateLoreStart: Aistriúchán seanchas na hítime sprioc...
+  wwcUpdaterUpToDate: Tá WorldwideChat cothrom le dáta!
+  wwcConfigConversationAmazonTranslateRegionInput: Is é an réigiún atá ann faoi láthair
+    {0}. Cuir ionchur réigiún do Amazon, nó cineál 0 chun dul ar ais.
+  wwcConfigConversationOverrideTextChange: Clóscríobh teachtaireacht nua don sáraíocht
+    seo, nó cineál 0 chun dul ar ais. Cuimhnigh aon athróg a chur san áireamh ag tosú
+    le comharthaí céatadáin a fheiceann tú sa teachtaireacht bhunaidh.
+  wwcInitializationFail: Theip ar WorldwideChat a thúsú.
+  wwcrSuccess: Athlódáil go rathúil WorldwideChat.
+  wwcConfigGUIChatMessagesPossibleOverrides: Roghnaigh Teachtaireacht
+  wwcPlayerNotFound: Imreoir % nach bhfuair mé.
+  wwcUpdaterOutOfDateChat: Tá WorldwideChat as dáta. Tabhair cothrom le dáta leis
+    an leagan is déanaí.
+  wwcConfigConversationRateLimitSuccess: Teorainn ráta atá leagtha go rathúil.
+  wwctrlPlayerNotFound: Imreoir {0} nach bhfuil ceachtar le fáil, nó nach bhfuil aistritheoir
+    gníomhach.
+  wwcConfigConversationWatsonURLSuccess: Watson URL leagtha go rathúil.
+  wwctbPlayerNotFound: Imreoir {0} nach bhfuil ceachtar le fáil, nó nach bhfuil aistritheoir
+    gníomhach.
+  wwcConfigGUIResponseLimitButton: Athraigh Aistritheoir Freagra Teorainn Ama
+  wwcConfigGUIPrefixButton: Athraigh Réimír Breiseán
+  wwctGUINewTranslationTarget: Roghnaigh Sprioctheanga
+  wwcConfigConnectionSuccess: Go rathúil ceangailte le {0}!
+  wwctGUIRateButton: Socraigh Ráta Teorainn
+  wwcConfigGUIGoogleTranslateButton: Google Translate
+  wwctInvalidInputLangCode: 'Cód teanga ionchuir neamhbhailí ar fáil! Cóid lang Bailí:
+    {0}'
+  wwcConfigConversationbStatsSuccess: bStats éirigh toggled.
+  wwcSignDone: Sínigh aistrithe go rathúil.
+  wwctrlNotATranslator: Ní aistritheoir gníomhach thú! Bí cinnte go bhfuil tú a leagtar
+    seo le/wwct.
+  wwcConfigGUIChatSettings: Cumraíocht Comhrá
+  wwcConfigGUIWatsonURLButton: Athraigh URL Seirbhíse Watson
+  wwcConfigConversationUpdateCheckerSuccess: Nuashonraigh moill seiceála a leagtar
+    go rathúil.
+  wwcConfigGUIMessagesOverrideCustomLabel: Teachtaireacht Nua
+  wwcGUITempItem: Taispeáin Mír
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Is é an eochair API reatha {0}.
+    Cuir isteach eochair API do Google Translate, nó cineál 0 chun dul ar ais.
+  wwcConfigConversationRateLimitInput: Is é an teorainn ráta reatha domhanda in aghaidh
+    an aistriúcháin {0} soicind. Cineál rud ar bith níos mó ná 0 a shocrú le luach
+    nua, nó cineál 0 a chur ar ceal an teorainn. Cineál rud ar bith níos lú ná 0 chun
+    dul ar ais.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Translate API leagtha
+    eochair go rathúil.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Athraigh Amazon Eochair Rúnda
+  wwcInvalidTranslator: Suíomhanna aistritheora neamhbhailí. Le do thoil a shocrú
+    seo i do config.yml nó le/wwcc a bhaint as an mbreiseán seo.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API eochair leagtha go rathúil.
+  wwcConfigCacheEnabled: Taisce Aistritheoir cumasaithe agus a leagtar chun teorainn
+    de {0}.
+  wwcConfigConversationOverrideDeletionSuccess: Scriosadh sárú teachtaireachta saincheaptha.
+  wwctGUIChatButton: Aistriúchán Comhrá Scoránaigh
+  wwcOnJoinTranslationNotificationNoSourceLang: Tá tú seisiún aistriúcháin gníomhach
+    a {0}.
+  wwcTranslatorError: Fadhb a tharla agus tú ag iarraidh d'aistriúchán. Bain triail
+    eile as.
+  wwcUserDataReloaded: Luchtaithe na sonraí úsáideora a shábháil.
+  wwcteOffSender: Aistriúchán Aonán faoi mhíchumas.
+  wwcsLastTranslationTime: 'Am Aistriúcháin Last (Rathúil): {0}'
+  wwctbNotATranslator: Ní aistritheoir gníomhach thú! Bí cinnte go bhfuil tú a leagtar
+    seo le/wwct.
+  wwcItemTranslateLoreDone: Aistrithe lore mír go rathúil.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Is é an eochair rochtana atá
+    ann faoi láthair {0}. Cuir ionchur eochair rochtana do Amazon, nó cineál 0 chun
+    dul ar ais.
+  wwcConfigConversationSyncUserDataDelayInput: Is é an mhoill atá ann faoi láthair
+    in aghaidh info na sonraí úsáideora {0} soicind. Cineál rud ar bith níos mó ná
+    10 a shocrú le luach nua, nó rud ar bith níos lú ná 10 chun dul ar ais.
+  wwcgAutoTranslateStart: Anois aistriú comhrá domhanda a {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Athraigh Amazon Eochair Rochtain
+  wwcrFail: Theip ar WorldwideChat a athlódáil.
+  wwcUpdaterFailedGeneric: Ní féidir nuashonruithe WorldwideChat a sheiceáil.
+  wwctGUIMainMenuGlobal: Roghchlár Aistriúcháin Domhanda
+  wwcItemTranslateTitleDone: Teideal mír aistrithe go rathúil.
+  wwcConfigGUIWatsonButton: Watson
+  wwcConfigConversationPluginUpdateChatSuccess: Breiseán meabhrúchán comhrá cothrom
+    le dáta toggled go rathúil.
+  wwcsNotATranslator: Níl aon taifid ar fáil go fóill le h {0}.
+  wwcConfigGUIbStatsButton: bStats Scoránaigh
+  wwctGUINewTranslationSource: Roghnaigh Teanga Foinse
+  wwctGUIMainMenuPlayer: Aistriúchán Menu de {0}
+  wwctGUIBookButton: Aistriúchán Leabhar Scoránaigh
+  wwcConfigGUIDebugModeButton: Mód Debug Scoránaigh
+  wwcConfigMessageCharLimitInvalid: Teorainn neamhbhailí in aghaidh an teachtaireacht
+    atá leagtha síos i config.yml. Réamhshocraithe a 255 chars...
+  wwcLangDetected: '{0} teanga braitheadh.'
+  wwcConfigDisabledbStats: bStats Mhíchumas.
+  wwcConfigMessageCharLimitEnabled: Teorainn charachtair in aghaidh an teachtaireacht
+    a leagtar a {0} carachtair.
+  wwcConfigGUIMessagesAlreadyOverriden: Tá sáraíocht agat cheana féin don teachtaireacht
+    seo!
+  wwctGUIItemButton: Aistriúchán Mír Scoránaigh
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Tá comhrá domhanda á aistriú,
+    ach tá seisiún aistriúcháin gníomhach agat ó {0} go {1}.
+  wwctrlRateLimitBadInt: Níl do teorainn ráta slánuimhir bailí.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Athraigh an Téacs atá ann cheana
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Is é an eochair rúnda atá ann
+    faoi láthair {0}. Cuir ionchur eochair rúnda do Amazon, nó cineál 0 chun dul ar
+    ais.
+  wwctiOnTarget: Aistriúchán Mír cumasaithe ar feadh {0}.
+  wwcConfigGUIAmazonTranslateButton: Aistrigh Amazon
+  wwcConfigConversationLangSuccess: D'athraigh teanga an bhreiseáin go rathúil.
+  wwcConfigConversationTranslationCacheInput: Is é an teorainn taisce aistriúcháin
+    atá ann faoi láthair {0} frásaí. Cineál rud ar bith níos mó ná 0 a shocrú le luach
+    nua, nó cineál 0 a chur ar ceal an taisce aistriúcháin. Cineál rud ar bith níos
+    lú ná 0 chun dul ar ais.
+  wwcConfigGUIChatMessagesModifyOverride: Athraigh an Sáraíocht atá ann cheana
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazon réigiún leagtha go rathúil.
+  wwcConfigRateLimitEnabled: Teorainn ráta domhanda cumasaithe agus a leagtar a {0}
+    soicindí.
+  wwcConfigGUIChatMessagesOverrideNewButton: Cuir Sáraíocht Nua leis
+  wwcUpdaterOutOfDate: Tá WorldwideChat as dáta. Tabhair cothrom le dáta leis an leagan
+    is déanaí, {0}.
+  wwcTranslatorErrorConsole: Fadhb a tharla nuair a bhí úsáide {0} ag iarraidh a n-aistriúchán.
+    Seiceáil le do thoil errorLog.txt le haghaidh tuilleadh sonraí.
+  wwcConfigGUIChangesNotSaved: Ní bheidh do chuid athruithe i bhfeidhm go dtí go chliceálann
+    tú ar an mbacainn dhearg i/wwcc.
+  wwcBookTranslateTitleSuccess: 'Teideal Leabhar Aistrithe: {0}'
+  wwcConfigGUINextPageButton: An Chéad Leathanach Eile
+  wwctiOnSender: aistriúchán Mír cumasaithe. Right-click le mír i do lámh is mó a
+    aistriú é!
+  wwcConfigGUIMessagesOverrideOriginalLabel: Teachtaireacht Bunaidh
+  wwcConfigGUISyncUserDataButton: Athraigh Úsáideoir Sonraí Sync Moill
+  wwctGUISourceTranslationSelected: Roghnaigh tú an teanga seo.
+  wwcConfigGUIAmazonTranslateRegionButton: Athraigh Réigiún Amazon
+  wwcConfigConversationLangInvalid: Cód teanga neamhbhailí!
+  wwcConfigConversationErrorLimitInput: Is é an teorainn earráide atá ann faoi láthair
+    do gach aistritheoir {0}. Cineál rud ar bith níos mó ná 0 a shocrú le luach nua,
+    nó cineál rud ar bith níos lú ná nó cothrom le 0 chun dul ar ais.
+  wwcEnabled: Cumasaithe WorldwideChat leagan {0}.
+  wwcConfigGUIPluginUpdateChatButton: Seol Meabhrúchán Comhrá le haghaidh Nuashonruithe
+    Breiseán
+  wwcConfigGUIErrorLimitButton: Athraigh Teorainn Earráid Aistritheoir
+  wwcConfigConversationWatsonAPIKeyInput: Is é an eochair API atá ann faoi láthair
+    {0}. Cuir isteach eochair API do Watson, nó cineál 0 chun dul ar ais.
+  wwcgTranslationStopped: Tá aistriúchán comhrá domhanda a stopadh.
+  wwcConfigConversationCharacterLimitSuccess: Teorainn charachtair atá leagtha go
+    rathúil.
+  wwcItemTranslateTitleStock: Ní féidir ainmneacha mír réamhshocraithe a aistriú.
+  wwcConfigConversationSyncUserDataDelaySuccess: Sonraí úsáideora moill info leagtha
+    go rathúil.
+  wwcConfigConversationPrefixSuccess: D'athraigh réimír go rathúil.
+  wwcSignDeletedOrTooLong: 'Scriosadh an comhartha sprice nó bhí an t-aistriúchán
+    ró-fhada. Aistriúchán:'
+  wwcItemTranslateStart: Aistriú mír sprioc...
+  wwcOnJoinTranslationNotificationSourceLang: Tá tú seisiún aistriúcháin gníomhach
+    ó {0} go {1}.
+  wwcConfigEnabledDebugMode: Cumasaithe mód DEBUG. Mura bhfuil tú forbróir nó troubleshooter,
+    ba chóir duit dul seo amach.
+  wwctsOnSender: Sínigh aistriúchán cumasaithe. Deaschliceáil ar chomhartha chun é
+    a aistriú!
+  wwctGUIAutoDetectButton: Auto-bhrath Teanga Foinse
+  wwcConfigConversationDebugModeSuccess: Go rathúil toggled mód debug.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Scrios Sáraigh
+  wwcNoConsole: Is féidir an t-ordú a bheith ar siúl ach amháin ag imreoir.
+  wwcConfigConversationTranslationCacheSuccess: Teorainn taisce Aistriúchán leagtha
+    go rathúil.
+  wwctInvalidArgs: Argóintí neamhbhailí ar fáil!
+  wwctCannotTranslateConsole: Ní féidir leat seisiún aistriúcháin a thosú le haghaidh
+    consól!
+  wwctSameLangError: 'Ní féidir leat aistriú go dtí an teanga chéanna! Cóid lang Bailí:
+    {0}'
+  wwcConfigGUICharacterLimitButton: Athraigh Teorainn Carachtair Teachtaireacht
+  wwctGUISourceOrTargetTranslationAlreadyActive: Tá an teanga seo gníomhach cheana
+    féin!
+  wwcConfigGUIPreviousPageButton: Leathanach Roimhe Seo
+  wwcConfigGUITranslatorCacheButton: Athraigh Teorainn Cache Aistriúchán
+  wwcConfigInvalidPrefixSettings: Theip ar do réimír a léamh. Ag baint úsáide as an
+    réamhshocraithe...
+  wwcConfigRateLimitInvalid: Teorainn ráta Droch-socraithe i config.yml. Réamhshocraithe
+    go 0 soicind...
+  wwcSignTranslateStart: Aistriú comhartha sprioc...
+  wwcteOffTarget: Aistriúchán aonáin faoi mhíchumas ar feadh {0}.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Tá comhrá domhanda á aistriú ó
+    {0} go {1}.
+  wwcConfigGUITranslatorSettings: Cumraíocht Aistritheora
+  wwcExampleMessage: Is é seo an teachtaireacht Caochadán, agus tá sé i gceist a shárú
+    mar shampla.
+  wwcVersion: WorldwideChat, leagan
+  wwcServerReloadWarning: Ní chuireann WorldwideChat úsáid /athlódáil. Lean ar aghaidh
+    le rabhadh.
+  wwcsAttemptedTranslations: 'Aistriúcháin Iarracht: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon eochair rúnda leagtha
+    go rathúil.
+  wwctrlRateLimitSetSender: Socraigh do teorainn ráta a {0} soicindí.
+  wwcRateLimit: Tá do aistriúcháin ráta teoranta. Fan eile le do thoil {0} soicind.
+  wwctGUIExistingTranslationButton: Seisiún Aistriúcháin Reatha a Athscríobh
+  wwcConfigErrorLimitEnabled: Teorainn earráide Aistritheoir a leagtar a {0}.
+  wwcConfigConversationOverrideTextChangeSuccess: Teachtaireacht nua leagtha go rathúil.
+  wwcConfigGUISendTranslationChatButton: Seol Meabhrúchán Comhrá chuig Aistritheoir
+    Gníomhach ar Logáil isteach
+  wwcConfigSyncDelayInvalid: Moill info sonraí úsáideora neamhbhailí atá leagtha síos
+    i config.yml. Réamhshocraithe go 7200 soicind...
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon eochair rochtana leagtha
+    go rathúil.
+  wwcConfigBadUpdateDelay: Moill updater neamhbhailí atá leagtha síos i config.yml.
+    Réamhshocraithe go 86400 soicind...
+  wwctciOffSender: Aistriúchán comhrá Isteach faoi mhíchumas.
+  wwctGUIChatIncomingButton: Aistriúchán Comhrá Isteach
+  wwctcoOffSender: Aistriúchán comhrá amach faoi mhíchumas.
+  wwctcoOnSender: Aistriúchán comhrá amach cumasaithe. Aistreofar aon rud a deir tú!
+  wwctciOnSender: Aistriúchán comhrá Isteach cumasaithe. Aistreofar aon rud a fhaigheann
+    tú!
+  wwctGUIChatMenu: Toggle Comhrá Aistriúchán Menu
+  wwctcoOnTarget: Aistriúchán comhrá amach ar chumas ar {0}.
+  wwctcoOffTarget: Aistriúchán comhrá amach faoi mhíchumas ar feadh {0}.
+  wwctGUIChatOutgoingButton: Aistriúchán Comhrá Amach
+  wwctciOnTarget: Aistriúchán comhrá Isteach ar chumas ar {0}.
+  wwctciOffTarget: Aistriúchán comhrá Isteach faoi mhíchumas ar feadh {0}.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Comhrá bunaidh ag teacht
+    isteach ag gabháil leis an aistriúchán mar téacs hover toggled go rathúil.
+  wwcConfigGUISendIncomingHoverTextChatButton: Cuir Teachtaireachtaí Isteach Bunaidh
+    mar Téacs Hover
+  wwctGUIExistingChatOutgoingEnabled: 'Amach Comhrá Aistriúchán Cumasaithe: {0}'
+  wwctGUIExistingTranslationInput: 'Teanga Ionchur: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Isteach Comhrá Aistriúchán Cumasaithe: {0}'
+  wwctGUIExistingTranslationOutput: 'Teanga Aschuir: {0}'
+  wwcTranslatorAttempt: Ag iarraidh ceangal a dhéanamh leis an aistritheoir i config.yml...
+    (Iarracht {0}/ {1})
+  wwcTimeoutExceptionConsole: Bhí an t-amchlár iarratais is déanaí ag an imreoir {0}.
+    Níl an earráid seo marfach, ach ba chóir WorldwideChat a athlódáil má leanann
+    sé ag tarlú.
+  wwcGUIPageNumber: 'Uimhir Leathanach: {0}'
+  wwcConfigYAMLFallback: Ag titim ar ais go YAML...
+  wwcConfigGUIToggleSQLButton: SQL Scoránaigh
+  wwcConfigConversationToggleSQLSuccess: SQL toggled go rathúil. Athlódáil don athrú
+    chun éifeacht a ghlacadh.
+  wwcConfigConversationGoogleTranslateToggleSuccess: D'éirigh le Google Translate
+    a toggled. Athlódáil don athrú chun éifeacht a ghlacadh.
+  wwcConfigYAMLDefault: Mainníodh chuig YAML le haghaidh stórála sonraí.
+  wwcConfigGUISQLMenuButton: Athraigh Socruithe SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Go rathúil toggled Watson Translate.
+    Athlódáil don athrú chun éifeacht a ghlacadh.
+  wwcConfigGUIToggleGoogleTranslateButton: Scoránaigh Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: Aistríonn Scoránaigh Watson
+  wwcConfigGUIToggleAmazonTranslateButton: Aistríonn Scoránaigh Amazon
+  wwcConfigGUIStorageSettings: Cumraíocht stóráil
+  wwcConfigConversationAmazonTranslateToggleSuccess: D'éirigh le toggled Amazon Translate.
+    Athlódáil don athrú chun éifeacht a ghlacadh.
+  wwcConfigGUISQLPortButton: Athraigh SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Athrú QL Roghnach Argóintí
+  wwcConfigConversationToggleSQLSSLSuccess: SSL do SQL toggled go rathúil.
+  wwcConfigConversationSQLPortInput: Is é an calafort atá ann faoi láthair {0} Cineál
+    rud ar bith eile seachas 0 a shocrú le port nua, nó cineál 0 chun dul ar ais.
+  wwcConfigGUISQLPasswordButton: Athraigh SQL Pasfhocal
+  wwcConfigConversationSQLHostnameSuccess: D'éirigh leis an óstainm SQL a athrú.
+  wwcConfigConversationSQLHostnameInput: Is é an óstainm atá ann faoi láthair {0}
+    Cineál rud ar bith eile seachas 0 a shocrú óstainm nua, nó cineál 0 chun dul ar
+    ais.
+  wwcConfigGUISQLHostnameButton: Athraigh SQL Óstainm
+  wwcConfigConversationSQLOptionalArgsSuccess: D'éirigh leis na hargóintí SQL roghnach
+    a athrú.
+  wwcConfigConversationSQLPasswordSuccess: D'éirigh leis an focal faire SQL a athrú.
+  wwcConfigConversationSQLPasswordInput: Is é an focal faire atá ann faoi láthair
+    {0} Cineál rud ar bith eile seachas 0 a shocrú focal faire nua, nó cineál 0 chun
+    dul ar ais.
+  wwcConfigGUIToggleSQLSSLButton: Scoránaigh SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: D'éirigh leis an ainm úsáideora SQL a athrú.
+  wwcConfigConversationSQLUsernameInput: Is é an t-ainm úsáideora atá ann faoi láthair
+    {0} Cineál rud ar bith eile seachas 0 a shocrú le ainm úsáideora nua, nó cineál
+    0 chun dul ar ais.
+  wwcConfigConversationSQLPortSuccess: D'éirigh leis an gcalafort SQL a athrú.
+  wwcConfigGUISQLUsernameButton: Athraigh SQL Ainm Úsáideora
+  wwcConfigConversationSQLOptionalArgsCleared: Argóintí Roghnach glanta go rathúil.
+  wwcConfigConversationSQLOptionalArgsInput: 'Is iad na hargóintí SQL roghnach atá
+    ann faoi láthair: {0}. argóintí Cineál scartha le camóg (eochair = luach, key2
+    = value2), nó cineál soiléir a wipe an args atá ann faoi láthair, nó cineál 0
+    chun dul ar ais.'
+  wwcConfigConversationSQLDatabaseNameInput: Is é an t-ainm bunachar sonraí atá ann
+    faoi láthair {0} Cineál rud ar bith eile seachas 0 a shocrú le ainm bunachar sonraí
+    nua, nó cineál 0 chun dul ar ais.
+  wwcConfigGUISQLDatabaseNameButton: Athraigh Bunachar Sonraí SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: D'athraigh sé ainm bunachar sonraí
+    SQL go rathúil.
+  wwcConfigConversationFatalAsyncAbort: Is é {0} soicind an t-am reatha chun gach
+    tasc async a chur ar ceal. Cineál rud ar bith os cionn 7 a shocrú Teorainn ama
+    nua, nó aon rud thíos é chun dul ar ais.
+  wwcConfigConversationFatalAsyncSuccess: Async Teorainn ama tasc atá leagtha go rathúil.
+  wwcConfigGUIFatalAsyncAbortButton: Athrú Asynchronc Tasc Teorainn Ama
+  libreHttp400: Droch iarraidh a sheoladh chuig Libre Translate! Mura bhfuil rud éigin
+    á dhéanamh agat nár cheart duit, níor cheart duit é seo a fháil. Téigh i dteagmháil
+    leis an bhforbróir!
+  wwcConfigGUILibreTranslateApiKeyButton: Athraigh Free Translate API Key
+  libreHttp403: Missing Libre Translate API Key, nó má tá tú cosc ar an bhfreastalaí!
+  wwcConfigConversationLibreURLSuccess: URL saor in aisce a leagtar go rathúil.
+  wwcConfigConversationLibreTranslateApiKeyInput: Is é an eochair API atá ann faoi
+    láthair {0}. ionchur eochair API do Libre, nó cineál 0 chun dul ar ais.
+  wwcConfigGUILibreTranslateButton: Aistrigh Saor
+  libreHttp429: Gan aon mhuinín mar gheall ar theorainn rátaí ón bhfreastalaí.
+  wwcConfigGUIToggleLibreTranslateButton: Scoránaigh Saor Aistrigh
+  wwcConfigConversationLibreTranslateToggleSuccess: D'éirigh toggled Libre Translate.
+    Athlódáil chun na hathruithe a chur i bhfeidhm.
+  wwcConfigConversationLibreTranslateApiKeySuccess: API saor in aisce eochair leagtha
+    go rathúil.
+  wwcConfigConversationLibreURLInput: Is é an URL atá ann faoi láthair {0}. le do
+    thoil ionchur URL do Libre, nó cineál 0 chun dul ar ais.
+  libreHttpUnknown: 'Earráid http anaithnid: {0}'
+  wwcConfigGUILibreTranslateURLButton: Athraigh Saor in Aisce Aistrigh URL
+  wwcConfigConnectionFail: Theip ar ceangal le {0}.
+  wwcConfigConversationMongoDatabaseNameSuccess: D'éirigh le hainm bunachar MongoDB
+    a athrú.
+  wwcConfigGUIMongoHostnameButton: Athraigh Óstainm MongoDB
+  wwcConfigConversationMongoPasswordInput: Is é an focal faire atá ann faoi láthair
+    {0}. rud ar bith Cineál eile seachas 0 a shocrú focal faire nua, nó cineál 0 chun
+    dul ar ais.
+  wwcConfigConversationMongoPortInput: Is é an port atá ann faoi láthair {0}. rud
+    ar bith Cineál eile seachas 0 a shocrú le port nua, nó cineál 0 chun dul ar ais.
+  wwcConfigConversationToggleMongoSuccess: MongoDB toggled go rathúil. Athlódáil chun
+    go dtiocfaidh an t-athrú i bhfeidhm.
+  wwcConfigConversationMongoHostnameInput: Is é an óstainm atá ann faoi láthair {0}.
+    rud ar bith Cineál eile seachas 0 a shocrú óstainm nua, nó cineál 0 chun dul ar
+    ais.
+  wwcConfigConversationMongoHostnameSuccess: D'éirigh leis an óstainm MongoDB a athrú.
+  wwcConfigGUIMongoMenuButton: Athraigh Socruithe MongoDB
+  wwcConfigGUIToggleMongoButton: Scoránaigh MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Is é an t-ainm bunachar reatha {0}.
+    rud ar bith Cineál eile seachas 0 a shocrú le ainm bunachar sonraí nua, nó cineál
+    0 chun dul ar ais.
+  wwcConfigConversationMongoOptionalArgsInput: 'Is iad na hargóintí MongoDB roghnach
+    atá ann faoi láthair: {0}. argóintí Cineál scartha le camóg (eochair = luach,
+    eochair 2 = value2), nó cineál soiléir a wipe an argóintí atá ann faoi láthair,
+    nó cineál 0 chun dul ar ais.'
+  wwcConfigGUIMongoDatabaseNameButton: Athraigh Bunachar Sonraí MongoDB
+  wwcConfigConversationMongoUsernameInput: Is é an t-ainm úsáideora atá ann faoi láthair
+    {0}. rud ar bith eile seachas 0 a shocrú le ainm úsáideora nua, nó cineál 0 chun
+    dul ar ais.
+  wwcConfigGUIMongoOptionalArgsButton: Athraigh Argóintí Roghnach MongoDB
+  wwcConfigConversationMongoUsernameSuccess: D'éirigh leis an ainm úsáideora MongoDB
+    a athrú.
+  wwcConfigConversationMongoPasswordSuccess: D'éirigh leis an focal faire MongoDB
+    a athrú.
+  wwcConfigConversationMongoPortSuccess: D'éirigh le calafort MongoDB a athrú.
+  wwcConfigGUIMongoUsernameButton: Athraigh Ainm Úsáideora MongoDB
+  wwcConfigGUIMongoPasswordButton: Athraigh Pasfhocal MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: D'éirigh le hargóintí roghnacha MongoDB
+    a athrú.
+  wwcConfigConversationMongoOptionalArgsCleared: Argóintí roghnacha glanta go rathúil.
+  wwcConfigGUIMongoPortButton: Athraigh Port MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: Neamhbhailí marfach leagtha Teorainn ama async.
+    Mainneachtana go 10 soicind...
+  libreHttp500: Ní thacaítear le do phéire teanga ionchuir agus aschuir roghnaithe.
+    Roghnaigh tacar teanga difriúil le do thoil!
+  wwcConfigGUIDeepLTranslateButton: Scoránaigh DeepL Aistrigh
+  wwcConfigConversationDeepLTranslateToggleSuccess: D'éirigh le DeepL Translate a
+    scoráil. Athlódáil chun na hathruithe a chur i bhfeidhm.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Athraigh Eochair API Translate DeepL
+  wwcConfigGUIToggleDeepLTranslateButton: Scoránaigh DeepL Aistrigh
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API eochair leagtha go rathúil.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Is é an eochair API atá ann faoi
+    láthair {0}. ionchur eochair API do DeepL, nó cineál 0 chun dul ar ais.
+  wwcConfigErrorsToIgnoreSuccess: Earráidí aistritheoir cláraithe go rathúil neamhaird
+    a dhéanamh.
+  wwcConfigErrorsToIgnoreInvalid: Earráidí aistritheoir neamhbhailí neamhaird a leagan
+    síos i config.yml. mainneachtainí Clárú...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: D'éirigh le hearráidí an aistritheora
+    a athrú chun neamhaird a dhéanamh ar fhrásaí.
+  wwcConfigGUIIgnoreErrorsButton: Athraigh Earráidí chun Neamhaird a dhéanamh
+  wwcConfigConversationIgnoreErrorsInput: 'Tá an liosta atá ann faoi láthair de frásaí
+    i earráidí aistritheoir neamhaird a dhéanamh: {0}. argóintí Cineál scartha le
+    camóg (eochair = luach, eochair 2 = value2), nó cineál soiléir a wipe an args
+    atá ann faoi láthair, nó cineál 0 chun dul ar ais. Ina theannta sin, clóscríobh
+    “*” a chur faoi deara nach bhfuil an breiseán a sheiceáil aon earráidí aistritheoir.'
+  wwcConfigConversationIgnoreErrorsCleared: Earráidí aistritheora chun neamhaird a
+    dhéanamh ar fhrásaí glanta go rathúil.
+  wwcSupportedServer: Initializing WorldwideChat do {0}...
+  wwcSupportedVersion: Cumasú gnéithe le haghaidh leagan {0}...
+  wwcBadPerms: 'Níl na ceadanna riachtanacha agat chun an t-ordú seo a fhorghníomhú:
+    {0}'
+  wwcsIsActiveTranslator: 'An bhfuil Aistritheoir Gníomhach: {0}'
+  wwcsActiveTransPrevRate: 'Am Teorainn Ráta Roimhe Seo: {0}'
+  wwcsActiveTransSaved: 'Sábháilte ar an Diosca: {0}'
+  wwcsActiveTransIncoming: 'Aistriú Comhrá Isteach: {0}'
+  wwcsActiveTransOutLang: 'Teanga Aschur: {0}'
+  wwcsActiveTransInLang: 'Teanga Ionchuir: {0}'
+  wwcsActiveTransBook: 'Leabhar Aistriúcháin: {0}'
+  wwcsActiveTransSign: 'Comhartha Aistriúcháin: {0}'
+  wwcsActiveTransUUID: 'UID: {0}'
+  wwcsActiveTransRateLimit: 'Teorainn Ráta: {0}'
+  wwcsActiveTransColorWarning: 'Rabhadh Dath Faighte: {0}'
+  wwcsActiveTransSignWarning: 'Rabhadh Eagarthóireachta Comhartha Fuarthas: {0}'
+  wwcsTitle: Taifead de {0}
+  wwcsActiveTransOutgoing: 'Aistriú Comhrá Easghabhálach: {0}'
+  wwcsActiveTransItem: 'Mír Aistriúcháin: {0}'
+  wwcsActiveTransEntity: 'Aonán Aistriúcháin: {0}'
+  wwctsWarning: Tá modhnú comharthaí díchumasaithe agus tú ag aistriú comharthaí.
+  wwcConfigConversationAzureTranslateToggleSuccess: Athraíodh Azure Translate go rathúil.
+    Athluchtaigh chun go dtiocfaidh na hathruithe i bhfeidhm.
+  wwcConfigGUIAzureTranslateButton: Aistriúchán Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Athraigh Eochair API Translate Azure
+  wwcConfigGUIAzureTranslateRegionButton: Athraigh Réigiún Aistritheora
+  wwcConfigConversationAzureTranslateRegionSuccess: Réigiún Azure socraithe go rathúil.
+  wwcConfigConversationAzureTranslateApiKeyInput: Is é {0} an eochair API reatha.
+    Cuir isteach eochair API le haghaidh Azure, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Socraítear eochair API Azure go
+    rathúil.
+  wwcConfigConversationAzureTranslateRegionInput: Is é an réigiún reatha {0}. Cuir
+    isteach réigiún le haghaidh Azure, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigGUIToggleAzureTranslateButton: Toggle Azure Translate
+  wwcConfigGUISystranTranslateApiKeyButton: Athraigh Eochair API Aistrigh Systran
+  wwcConfigGUIToggleSystranTranslateButton: Toggle Systran Aistriúchán
+  wwcConfigConversationSystranTranslateApiKeyInput: Is é {0} an eochair API reatha.
+    Cuir isteach eochair API le haghaidh Systran, nó clóscríobh 0 chun dul ar ais.
+  wwcISOJSONFail: Ní féidir rudaí teanga a shocrú le ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: Athraíodh Systran Translate
+    go rathúil. Athluchtaigh chun go dtiocfaidh na hathruithe i bhfeidhm.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Socraítear eochair API Systran
+    go rathúil.
+  wwcConfigGUISystranTranslateButton: Systran Aistriúchán
+  wwcrTransFail: Athluchtaigh WorldwideChat ach theip air aistritheoir a chumasú.
+  wwcdCacheCleared: Glanadh taisce an aistriúcháin.
+  wwcdInvalidCmd: Argóintí míbhailí!
+  systranHttpUnknown: 'Earráid http anaithnid: {0}'
+  systranHttp400: Droch-pharaiméadair a seoltar chuig Systran. D'fhéadfadh a bheith
+    ina droch-phéire teanga?
+  systranHttp500: Earráid freastalaí inmheánach ó chríochphointe Systran ({0}).
+  wwcInvalidStorageSession: Tá {0} cumasaithe i do chumraíocht, ach níl nasc bunaithe.
+    Déan iarracht athluchtú chun é seo a shocrú, ach déan teagmháil leis an bhforbróir
+    má fuair tú teachtaireacht nasc rathúil ó {0} roimhe seo.
+  wwcConfigConversationPostgresDatabaseNameSuccess: D'athraigh sé go rathúil ainm
+    bunachar sonraí PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Glanadh argóintí roghnach go rathúil
+  wwcConfigConversationPostgresPortInput: Is é {0} an calafort reatha. Clóscríobh
+    aon rud seachas 0 chun calafort nua a shocrú, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigGUIPostgresUsernameButton: Athraigh Ainm úsáideora PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: D'athraigh sé go rathúil na hargóintí
+    roghnacha PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: Toscaíodh SSL do PostgreSQL go rathúil.
+  wwcConfigConversationPostgresPasswordSuccess: D'athraigh an pasfhocal PostgreSQL
+    go rathúil.
+  wwcConfigConversationPostgresPortSuccess: D'athraigh sé an calafort PostgreSQL go
+    rathúil.
+  wwcConfigConversationPostgresUsernameInput: Is é {0} an t-ainm úsáideora reatha.
+    Clóscríobh aon rud seachas 0 chun ainm úsáideora nua a shocrú, nó clóscríobh 0
+    chun dul ar ais.
+  wwcConfigConversationTogglePostgresSuccess: Athraíodh PostgreSQL go rathúil. Athluchtaigh
+    chun go dtiocfaidh an t-athrú i bhfeidhm.
+  wwcConfigGUITogglePostgresButton: Athraigh PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Athraigh Pasfhocal PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Athraigh Argóintí Roghnacha PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Athraigh Socruithe PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Is é {0} an focal faire reatha. Clóscríobh
+    aon rud seachas 0 chun pasfhocal nua a shocrú, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationPostgresHostnameInput: Is é {0} an t-ainm óstach reatha. Clóscríobh
+    aon rud seachas 0 chun óstainm nua a shocrú, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigGUIPostgresPortButton: Athraigh Port PostgreSQL
+  wwcConfigConversationPostgresHostnameSuccess: D'athraigh sé go rathúil an t-ainm
+    óstach PostgreSQL.
+  wwcConfigGUIPostgresHostnameButton: Athraigh Ainm Óstach PostgreSQL
+  wwcConfigConversationPostgresDatabaseNameInput: Is é {0} ainm an bunachar sonraí
+    reatha. Clóscríobh aon rud seachas 0 chun ainm nua bunachar sonraí a shocrú, nó
+    clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Is iad na hargóintí roghnacha PostgreSQL
+    reatha ná: {0}. Clóscríobh argóintí scartha le camóg (eochair = luach, eochr2
+    = luach2), nó clóscríobh soiléir chun na hargaí reatha a scriosadh, nó clóscríobh
+    0 chun dul ar ais.'
+  wwcConfigGUITogglePostgresSSLButton: Athraigh PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Athraigh Bunachar Sonraí PostgreSQL
+  wwcConfigConversationPostgresUsernameSuccess: D'athraigh sé an t-ainm úsáideora
+    PostgreSQL go rathúil.
+  wwcConfigGUIStorageTypeSettings: '{0} Cumraíocht'
+  wwcConfigConversationPrefixInput: Is é {0} an réimír reatha. Clóscríobh ceann nua
+    le do thoil, nó clóscríobh 0 chun dul ar ais.
+  wwcConfigConversationLangInput: 'Is é {0} an teanga breiseán reatha. Cuir isteach
+    cód bailí teanga le do thoil, nó clóscríobh 0 chun cealú. Cóid teanga bailí: {1}'
+  wwcdCacheSize: Is é méid an taisce {0} faoi láthair, le teorainn {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Ag tosú seisiún aistriúcháin nua ó {0} go {1}.
+  wwctAutoTranslateStartOtherPlayer: Ag tosú seisiún aistriúcháin nua do {0} go {1}.
+  wwctLangToLangStartOtherPlayer: Ag tosú seisiún aistriúcháin nua do {0} ó {1} go
+    {2}.
+  wwcgLangToLangStart: Anois ag aistriú comhrá domhanda ó {0} go {1}.
+  wwctrlRateLimitSetTarget: Socraigh teorainn ráta {0} go {1} soicind.
+  wwcTimeoutException: Tháinig d'iarratas amach. Bain triail as arís.
+  wwctbNoMoreOldBooks: Níl aistriúchán leabhar feidhmiúil ar do leagan freastalaí.
+    Má tá tú ar leagan níos déanaí de Minecraft agus go bhfaigheann tú an earráid
+    seo, déan teagmháil leis an bhforbróir le do thoil.
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Roghnaigh Logánú
+  wwcConfigGUIMessagesOverridePickChatButton: Teachtaireachtaí Breiseán Réamhshocraithe
+  wwcConfigGUIChatMessagesOverrideSettings: Teachtaireachtaí Réamhshocraithe a chur
+    ar ais ({0})
+  wwcConfigGUIMessagesServerLang: Is é seo teanga réamhshocraithe an bhreiseáin i
+    config.yml.
+  wwclLangStopped: Athshocraíodh do logánú go réamhshocrú an fhreastalaí.
+  wwclLangInvalid: 'Ní logánú bailí é {0}. Logánú tacaithe: {1}'
+  wwclLangStoppedOtherPlayerSender: Athshocraigh logánú {0} go réamhshocraithe an
+    fhreastalaí.
+  wwclLangPlayerNotValid: Ní imreoir bailí é {0}.
+  wwclLangChangedOtherPlayerSender: Athraigh logánú {0} go {1}.
+  wwclLangChanged: Athraíodh do logánú go {0}.
+  wwcsLocalization: 'Logánú: {0}'
+  wwclLangAlreadyStopped: Níl tacar logánaithe agat.
+  wwclLangAlreadyStoppedOtherPlayerSender: Níl tacar logánaithe ag {0}.
+  wwctGUILocalizeExistingValue: 'Logánú Reatha: {0}'
+  wwctGUILocalizationButton: Socraigh Logánú
+  wwctGUILocalizeStopButton: Athshocraigh Logánú go Réamhshocraithe
+  wwctGUILocalizeTitle: Roghchlár Logánú
+  wwctGUISourceSameLang: Bheadh an teanga seo mar an gcéanna le do theanga foinse.
+  wwcConfigGUICurrentPlayerLang: Is é seo do logánú reatha.
+  wwctGUILocalizationSameAsServer: Is é seo an logánú réamhshocraithe do WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Tá an teanga seo gníomhach go domhanda
+    cheana féin!
+  wwcrStorageTranslatorFail: Athlódáil WorldwideChat ach theip air aistritheoir a
+    chumasú agus nascadh le do chumraíocht stórála.
+  wwcrStorageFail: Athluchtaigh WorldwideChat agus chuir sé ar chumas aistritheoir
+    a chumasú go rathúil, ach theip ar do chumraíocht stórála nascadh.
+  wwcConfigPersistentCacheInvalid: Iontráil taisce leanúnach neamhbhailí i config.yml.
+    Ag réamhshocrú go bréagach...
+  wwcConfigGUIPersistentCacheButton: Athraigh taisce leanúnach
+  wwcConfigConversationPersistentCacheSuccess: Athraíodh taisce leanúnach go rathúil.
+  wwcConfigPersistentCacheEnabled: Leanfaidh sonraí taisce ar fud athluchtaithe.
+  wwcConfigConversationCharacterLimitInput: Is é carachtair {0} an teorainn carachtair
+    reatha in aghaidh an teachtaireachta. Clóscríobh aon rud níos mó ná 0 (ach níos
+    lú ná 256) chun luach nua a shocrú, nó clóscríobh 0 chun dul ar ais.
+  wwcdOutdatedSQLStruct: Is cosúil go bhfuil formáid míchearta/dáta ag ceann amháin
+    nó níos mó de do tháblaí MySQL nó PostgreSQL. Tá tuilleadh faisnéise eolais faoin
+    gceist seo clóite chuig do chonsól; b'fhéidir go mbeidh tú in ann é seo a shocrú
+    de láimh.
+  wwcdSQLAllSet: Tá do tháblaí MySQL/PostgreSQL formáidithe i gceart.
+  wwcdColumnBadType: Tá cineál {2} ag colún {0} i dtábla {1} ach tá cineál {3} ag
+    súil leis.
+  wwcdColumnMissing: Tá colún {0} ar iarraidh i dtábla {1}.
+  wwcdGoodTable: Is é tábla {0} ({1}) an fhormáid cheart.
+  wwcdBadTable: Tábla {0} nach bhfuil le fáil i sainmhínithe inmheánacha. Déan teagmháil
+    leis an bhforbróir.
+  wwcOldDatabaseStruct: 'Tá socrú tábla mícheart ag do bhunachar sonraí roghnaithe.
+    Clóscríobh an t-ordú seo a leanas le haghaidh tuilleadh faisnéise: /wwcd checkdb'
+  wwctGUIRateButtonLore: 'Teorainn Ráta Reatha: {0} Soicind'
+  wwcConfigGUIVaultSupportButton: Tacaíocht Toggle Vault
+  wwcConfigConversationVaultSupportSuccess: Athraíodh tacaíocht Vault go rathúil.
+  wwcVaultEnabled: Cumasaíodh tacaíocht Vault.
+  wwcVaultFoundButDisabled: Fuarthas Vault, ach níor cláraíodh aon bhreiseán comhrá
+    atá ann cheana. Tacaíocht Vault a dhíchumasú...
+  wwcConfigGUIToggleRestartRequired: Teastaíonn atosú freastalaí iomlán chun an suíomh
+    seo a chur i bhfeidhm.
+

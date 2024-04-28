@@ -1,0 +1,619 @@
+Messages:
+  wwcgAutoTranslateStart: Endi global suhbatni {0} ga tarjima qilish.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Global chat “ {0}” ga tarjima
+    qilinmoqda.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Amazon kirish kalitini o'zgartirish
+  wwcrFail: WorldwideChat-ni qayta yuklab bo'lmadi.
+  wwcConfigGUIUpdateCheckerButton: Yangilanishlarni kechiktirishni tekshiring
+  wwcUpdaterFailedGeneric: WorldwideChat yangilanishlarini tekshirib bo'lmadi.
+  wwcConfigConversationUpdateCheckerInput: Yangilanish tekshirgichidagi joriy kechikish
+    {0} sekunddir. Yangi qiymatni belgilash uchun 10 dan katta narsani yoki orqaga
+    qaytish uchun 10 dan kam narsani kiriting.
+  wwctGUIMainMenuGlobal: Global tarjima menyusi
+  wwcConfigConversationPluginUpdateChatSuccess: Plaginni yangilash chat eslatmasi
+    muvaffaqiyatli yakunlandi.
+  wwctbOnTarget: '{0} uchun kitob tarjimasi yoqilgan.'
+  wwcsNotATranslator: '{0} uchun hali hech qanday yozuvlar mavjud emas.'
+  wwcConfigGUIbStatsButton: Toggle bStats
+  wwctGUINewTranslationSource: Manba tilini tanlang
+  wwcConfigConnectionFailed: '{0} ga ulanib boʻlmadi. Hisob ma''lumotlaringiz va xavfsizlik
+    devoringiz toʻgʻri sozlanganligiga ishonch hosil qiling!'
+  wwcConfigEnabledbStats: bStats yoqilgan.
+  wwctGUIMainMenuPlayer: '{0} Tarjima menyusi'
+  wwctGUIBookButton: Toggle Kitob tarjimasi
+  wwcLangDetected: Aniqlangan til {0}.
+  wwcBookTranslateStart: Tarjima maqsadli kitob...
+  wwcConfigDisabledbStats: Nogironlar bStats.
+  wwctsOffSender: Imzo tarjimasi o'chirilgan.
+  wwcUpdaterParserFailed: Github ma'lumotlarni yangilash ajralish bo'lmadi.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Joriy maxfiy kalit {0}. Iltimos,
+    Amazon uchun maxfiy kalitni kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwctbOffSender: Kitob tarjimasi o'chirib qo'yildi.
+  wwcConfigGUIAmazonTranslateButton: Amazon Tarjima
+  wwcConfigConversationLangSuccess: Plagin tili muvaffaqiyatli o'zgardi.
+  wwcsSuccessfulTranslations: 'Muvaffaqiyatli tarjimalar: {0}'
+  wwcConfigConversationTranslationCacheInput: Joriy tarjima keshi chegarasi {0} iboralari.
+    Yangi qiymatni belgilash uchun 0 dan katta narsa yozing yoki tarjima keshini o'chirish
+    uchun 0 yozing. Orqaga qaytish uchun 0 dan kamroq narsa yozing.
+  wwctbOffTarget: '{0} uchun kitob tarjimasi oʻchirildi.'
+  wwcConfigGUIGeneralSettings: Umumiy konfiguratsiya
+  wwcInvalidLang: Sizning config.yml noto'g'ri til. En uchun standart...
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazon viloyati muvaffaqiyatli
+    belgilangan.
+  wwcConfigRateLimitEnabled: Global stavka limiti yoqilgan va {0} sekundiga belgilangan.
+  wwcConfigGUILangButton: Plagin tilini o'zgartirish
+  wwctGUISignButton: Toggle belgisi tarjimasi
+  wwcUpdaterOutOfDate: WorldwideChat eskirgan. Iltimos, eng soʻnggi versiyasini yangilang,
+    {0}.
+  wwcConfigGUINextPageButton: Keyingi sahifa
+  wwcConfigInvalidTranslatorSettings: Tarjimon sozlamalari noto'g'ri! Iltimos, config.yml-da
+    faqat bitta tarjimonni yoqing.
+  wwcConfigGUIQuitButton: Chiqish & O'zgarishlarni saqlash
+  wwctPlayerNotFound: O'yinchi % Men topilmadi.
+  wwcConfigGUIAmazonTranslateRegionButton: Amazon mintaqasini o'zgartirish
+  wwcConfigConversationLangInvalid: Noto'g'ri til kodi!
+  wwcConfigGUIWatsonAPIKeyButton: Watson API kalitini o'zgartirish
+  wwcEnabled: '{0} WorldwideChat versiyasini yoqing.'
+  wwctbOnSender: Kitob tarjimasi yoqilgan. Uni tarjima qilish uchun kitobni ushlab
+    turganda o'ng tugmasini bosing!
+  wwcListenersInitialized: Boshlangan tinglovchilar.
+  wwcConfigGUIPluginUpdateChatButton: Plagin yangilanishlari uchun Chat eslatmani
+    yuboring
+  wwcConfigConversationSendTranslationChatSuccess: Faol tarjimon chat eslatmasi muvaffaqiyatli
+    o'tdi.
+  wwctsOffTarget: '{0} uchun oʻchirilgan imzo tarjimasi.'
+  wwcUpdaterConnectionFailed: Github bo'yicha so'nggi yangilanishlarni tekshirib bo'lmadi.
+  watsonNotFoundExceptionNotification: Kiritishingizni yanada tarjima qilib bo'lmadi.
+  wwcConfigConversationWatsonAPIKeyInput: Joriy API kaliti {0}. Iltimos Watson uchun
+    API kalitini kiriting yoki orqaga qaytish uchun 0 kiriting.
+  wwctGUIStopButton: Tarjimani to'xtatish
+  wwcgTranslationStopped: Global chat tarjimasi to'xtatildi.
+  wwcUpdaterFutureDate: WorldwideChat-ning ushbu misoli eng so'nggi jamoatchilikka
+    qaraganda ko'proq versiyaga ega.
+  wwcConfigConversationPrefixSuccess: Prefiks muvaffaqiyatli o'zgardi.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Google API kalitini tarjima qilish
+  wwcSignDeletedOrTooLong: 'Nishon belgisi o''chirildi yoki tarjima juda uzun edi.
+    Tarjima:'
+  wwctsOnTarget: '{0} uchun imzo tarjimasi yoqilgan.'
+  wwcConfigCacheDisabled: Tarjimon keshi o'chirilgan.
+  wwcConfigConversationWatsonURLInput: Joriy URL manzili {0}. Iltimos Watson uchun
+    xizmat URL manzilini kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcBookDone: Kitob muvaffaqiyatli tarjima.
+  wwctsOnSender: Sign tarjimasi yoqilgan. Uni tarjima qilish uchun belgini o'ng tugmasini
+    bosing!
+  watsonColorCodeWarning: Rang kodlarini ishlatish sizga oldindan aytib bo'lmaydigan
+    natijalarni berishi mumkin.
+  wwctGUITranslationButton: Tarjimani boshlash
+  wwctGUIAutoDetectButton: Manba tilini avtomatik aniqlash
+  wwcUpdaterUpToDate: WorldwideChat dolzarb!
+  wwcConfigConversationAmazonTranslateRegionInput: Joriy mintaqa {0}. Iltimos, Amazon
+    uchun mintaqani kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcNoConsole: Ushbu buyruq faqat o'yinchi tomonidan boshqarilishi mumkin.
+  wwcInitializationFail: WorldwideChat-ni ishga tushirib bo'lmadi.
+  wwcrSuccess: Muvaffaqiyatli WorldwideChat qayta yuklandi.
+  wwcPlayerNotFound: O'yinchi % Men topilmadi.
+  wwcUpdaterOutOfDateChat: WorldwideChat eskirgan. Iltimos, so'nggi versiyaga yangilang.
+  wwcConfigConversationRateLimitSuccess: Rate chegarasi muvaffaqiyatli belgilangan.
+  wwcConfigConversationWatsonURLSuccess: Watson URL muvaffaqiyatli o'rnatildi.
+  wwctbPlayerNotFound: '{0} o''yinchi topilmadi yoki faol tarjimon emas.'
+  wwcConfigConversationTranslationCacheSuccess: Tarjima kesh chegarasi muvaffaqiyatli
+    o'rnatildi.
+  wwctInvalidArgs: Noto'g'ri vajlar taqdim!
+  wwcConfigGUIPrefixButton: Prefiks plaginini o'zgartirish
+  wwctSameLangError: Siz bir xil tilga tarjima qila olmaysiz!
+  wwctGUINewTranslationTarget: Maqsadli tilni tanlang
+  wwcConfigConnectionSuccess: '{0} ga muvaffaqiyatli ulandi!'
+  wwcConfigGUIGoogleTranslateButton: Google Tarjima
+  wwcConfigGUIPreviousPageButton: Oldingi sahifa
+  wwcConfigGUITranslatorCacheButton: Tarjima keshini o'zgartirish
+  wwcConfigConversationbStatsSuccess: Muvaffaqiyatli bStats toggled.
+  wwcSignDone: Sign muvaffaqiyatli tarjima.
+  wwcConfigInvalidPrefixSettings: Prefiksingizni o'qib bo'lmadi. Standart foydalanish...
+  wwcConfigRateLimitInvalid: config.yml o'rnatilgan yomon darajasi chegarasi. 0 soniyagacha
+    sukut qilish...
+  wwcSignTranslateStart: Tarjima maqsad belgisi...
+  wwcConfigGUIChatSettings: Chat konfiguratsiyasi
+  wwcConfigGUIWatsonURLButton: Watson xizmati URL manzilini o'zgartirish
+  wwcConfigConversationUpdateCheckerSuccess: Tekshiruvchining kechikishini yangilash
+    muvaffaqiyatli o'rnatildi.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Global chat {0} dan {1} ga tarjima
+    qilinmoqda.
+  wwcConfigGUITranslatorSettings: Translator konfiguratsiyasi
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Joriy API kaliti {0}. Iltimos,
+    Google Translate uchun API kalitini kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationRateLimitInput: Tarjima bo'yicha joriy global stavka chegarasi
+    {0} sekunddir. Yangi qiymatni belgilash uchun 0 dan katta narsani kiriting yoki
+    cheklovni o'chirish uchun 0 yozing. Orqaga qaytish uchun 0 dan kamroq narsa yozing.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google Tarjima API kaliti muvaffaqiyatli
+    o'rnatildi.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon maxfiy kalitini o'zgartiring
+  wwcVersion: WorldwideChat, versiya
+  wwcsAttemptedTranslations: 'Tarjimalar: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon maxfiy kaliti muvaffaqiyatli
+    o'rnatildi.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API kaliti muvaffaqiyatli o'rnatildi.
+  wwcRateLimit: Sizning tarjimalaringiz darajasi cheklangan. Iltimos, boshqa {0} soniya
+    kuting.
+  wwcConfigCacheEnabled: Tarjimon keshi yoqilgan va {0} limiti oʻrnatilgan.
+  wwctGUIExistingTranslationButton: Joriy tarjima sessiyasi ustiga yozish
+  wwcUserDataReloaded: Barcha saqlangan foydalanuvchi ma'lumotlarini yukladi.
+  wwcConfigGUISendTranslationChatButton: Kirish bo'yicha faol tarjimonga suhbat eslatmasini
+    yuboring
+  wwcsLastTranslationTime: 'Oxirgi (muvaffaqiyatli) Tarjima vaqti: {0}'
+  wwctbNotATranslator: Siz faol tarjimon emassiz! Buni /wwct bilan o'rnatganingizga
+    ishonch hosil qiling.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Joriy kirish kaliti {0}. Iltimos,
+    Amazon uchun kirish kalitini kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon kirish kaliti muvaffaqiyatli
+    o'rnatildi.
+  wwcConfigBadUpdateDelay: config.yml o'rnatilgan noto'g'ri yangilash kechikish. 86400
+    soniya uchun standart...
+  wwctrlRateLimitOffSender: Sizning darajasi chegarasi o'chirilgan.
+  wwctrlRateLimitAlreadyOffTarget: '{0} darajasi chegarasi allaqachon o''chirilgan.'
+  wwctrlPlayerNotFound: '{0} o''yinchi topilmadi yoki faol tarjimon emas.'
+  wwctrlRateLimitSetSender: Stavka limitini {0} sekundiga belgilang.
+  wwctrlRateLimitOffTarget: '{0} stavka limiti o''chirildi.'
+  wwctrlNotATranslator: Siz faol tarjimon emassiz! Buni /wwct bilan o'rnatganingizga
+    ishonch hosil qiling.
+  wwctrlRateLimitAlreadyOffSender: Sizning stavkangiz chegarasi allaqachon o'chirilgan.
+  wwctGUIRateButton: Rate chegarasi o'rnatish
+  wwctGUIConversationRateLimit: Tarjima uchun stavka chegarasi joriy {0} sekund. Yangi
+    qiymatni belgilash uchun 0 dan katta narsani kiriting yoki cheklovni o'chirish
+    uchun 0 yozing. Orqaga qaytish uchun 0 dan kamroq narsa yozing.
+  wwctGUITargetPlayerNull: Nishon o'yinchi serverdan uzilgan.
+  wwcConfigConversationSyncUserDataDelayInput: Foydalanuvchi maʼlumotlarini sinxronlash
+    uchun joriy kechikish {0} sekunddir. Yangi qiymatni belgilash uchun 10 dan katta
+    narsani yoki orqaga qaytish uchun 10 dan kam narsani kiriting.
+  wwcConfigGUISyncUserDataButton: Foydalanuvchi ma'lumotlarini sinxronlashni kechiktirishni
+    o'zgartirish
+  wwcConfigSyncDelayEnabled: Foydalanuvchi maʼlumotlarini sinxronlash uchun kechiktirish
+    {0} sekundiga oʻrnatilgan.
+  wwcConfigConversationSyncUserDataDelaySuccess: Foydalanuvchi ma'lumotlarini sinxronlashni
+    kechiktirish muvaffaqiyatli o'rnatildi.
+  wwcConfigSyncDelayInvalid: Konfig.yml-da o'rnatilgan foydalanuvchi ma'lumotlarini
+    sinxronlash kechiktirilishi noto'g'ri. 7200 soniyagacha defaulting...
+  wwcConfigCacheInvalid: Tarjimon kesh hajmi yaroqsiz. 10 uchun standart...
+  wwcInventoryErrorPlayer: Xato GUI bilan aniqlandi. Konsolga jurnal yuborildi.
+  wwcInventoryError: '{0} foydalanuvchi GUI bilan aniqlangan xato. Iltimos, ushbu
+    masalani ishlab chiquvchiga xabar bering.'
+  wwctiOffTarget: '{0} uchun oʻchirilgan element tarjimasi.'
+  wwctiOffSender: Ob'ektni tarjima qilish o'chirib qo'yilgan.
+  wwcItemTranslateTitleStock: Standart element nomlarini tarjima qilib bo'lmadi.
+  wwctGUIItemButton: Toggle Mahsulot Tarjima
+  wwcItemTranslateTitleDone: Tarjima element nomi muvaffaqiyatli.
+  wwcGUITempItem: Item ko'rsatish
+  wwcItemTranslateStart: Maqsadli elementni tarjima qilish...
+  wwcBookTranslateTitleSuccess: 'Tarjima qilingan kitob nomi: {0}'
+  wwctiOnSender: Elementni tarjima qilish yoqilgan. Uni tarjima qilish uchun asosiy
+    qo'lingizdagi element bilan o'ng tugmasini bosing!
+  wwcItemTranslateLoreStart: Maqsadli elementni tarjima qilish...
+  wwcItemTranslateLoreDone: Tarjima element muvaffaqiyatli.
+  wwctiOnTarget: '{0} uchun mahsulot tarjimasi yoqilgan.'
+  wwcInvalidTranslator: Tarjimon sozlamalari noto'g'ri. Iltimos, ushbu plaginni ishlatish
+    uchun config.yml yoki /wwcc bilan tuzating.
+  wwcConfigGUIEachTranslatorSettings: '{0} Konfiguratsiya'
+  wwcConfigGUIWatsonButton: Uotson
+  wwcServerReloadWarning: WorldwideChat /qayta yuklashdan foydalanishni cheklamaydi.
+    Iltimos, ehtiyotkorlik bilan davom eting.
+  wwcConfigEnabledDebugMode: DEBUG rejimi yoqilgan. Agar siz ishlab chiquvchi yoki
+    muammo bartaraf etuvchi bo'lmasangiz, buni o'chirib qo'yishingiz kerak.
+  wwcTranslatorErrorThresholdReached: Xato ostona yetdi. Ushbu plagin endi qayta yuklanadi
+    va barcha tarjimonlarni o'chirib qo'yadi.
+  wwcConfigErrorLimitEnabled: Tarjimon xatosi limiti {0} ga o'rnatildi.
+  wwcTranslatorError: Tarjima qilishda muammo yuzaga keldi. Iltimos, qayta urinib
+    ko'ring.
+  wwcConfigErrorLimitInvalid: Config.yml da o'rnatilgan noto'g'ri tarjimon xatosi
+    chegarasi. 5ga standart...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Qo'shimcha ma'lumot olish uchun WorldwideChat
+    plagin papkasida errorLog.txt tekshiring.
+  wwctInvalidInputLangCode: 'Kirish tili kodi noto''g''ri! Amaldagi uzoq kodlar: {0}'
+  wwctInvalidOutputLangCode: 'Yaroqsiz chiqish tili kodi taqdim! Amaldagi uzoq kodlar:
+    {0}'
+  wwctGUISourceTranslationSelected: Siz bu tilni tanladingiz.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Delete bekor
+  wwcConfigConversationOverrideTextChange: Iltimos, ushbu bekor qilish uchun yangi
+    xabarni yozing yoki orqaga qaytish uchun 0 yozing. Asl xabarda ko'rgan foiz belgilaridan
+    boshlab har qanday o'zgaruvchilarni qo'shishni unutmang.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Bu til allaqachon faol!
+  wwcConfigGUIChatMessagesPossibleOverrides: Xabarni tanlang
+  wwcConfigGUIChatMessagesModifyOverride: Mavjud bekor o'zgartirish
+  wwcConfigConversationOverrideDeletionSuccess: Maxsus xabarni bekor qilish o'chirildi.
+  wwcConfigGUIChatMessagesDeadOverride: Ushbu bekor qilish haqiqiy emas yoki asl xabar
+    o'chirildi. Buni o'chirib tashlashingiz kerak.
+  wwcConfigGUIMessagesAlreadyOverriden: Siz allaqachon bu xabar uchun bekor bor!
+  wwcConfigGUIChatMessagesOverrideNewButton: Yangi Override qo'shish
+  wwcConfigGUIMessagesOverrideCustomLabel: Yangi xabar
+  wwcConfigConversationOverrideTextChangeSuccess: Yangi xabar muvaffaqiyatli o'rnatildi.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Mavjud matnni oʻzgartirish
+  wwcExampleMessage: Bu qo'g'irchoqli xabar va misol sifatida bekor qilinishi kerak.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Original Xabar
+  wwcConfigGUIDebugModeButton: Toggle disk raskadrovka rejimi
+  wwcConfigConversationDebugModeSuccess: Muvaffaqiyatli disk raskadrovka rejimi.
+  wwcConfigGUIErrorLimitButton: Translator xato limitini o'zgartirish
+  wwcConfigConversationErrorLimitSuccess: Xato chegarasi muvaffaqiyatli o'rnatildi.
+  wwcEntityTranslateStart: Tarjima maqsadli shaxs...
+  wwcConfigGUICharacterLimitButton: Xabar belgilar limitini o'zgartirish
+  wwcConfigMessageCharLimitInvalid: Config.yml da o'rnatilgan xabar uchun noto'g'ri
+    limit. 255 chars uchun standart...
+  wwcConfigConversationCharacterLimitSuccess: Belgilar chegarasi muvaffaqiyatli o'rnatildi.
+  wwcteOnTarget: '{0} uchun shaxs tarjimasi yoqilgan.'
+  wwcEntityTranslateDone: 'Tarjima qilingan shaxs nomi: {0}'
+  wwcEntityTranslateNoName: Entity maxsus nomga ega emas.
+  wwcConfigConversationErrorLimitInput: Har bir tarjimon uchun joriy xato chegarasi
+    {0}. 0 dan katta narsani yangi qiymatni belgilash uchun kiriting yoki orqaga qaytish
+    uchun 0 dan kam yoki teng narsani yozing.
+  wwcConfigGUIGlobalRateLimitButton: Global stavka limitini o'zgartirish
+  wwcteOnSender: Yuridik shaxs tarjimasi yoqilgan. Uning nomini tarjima qilish uchun
+    biror shaxs ustiga o'ng tugmasini bosing!
+  wwcConfigGUIResponseLimitButton: Translator Response Timeout
+  wwcConfigMessageCharLimitEnabled: '{0} belgilariga oʻrnatilgan xabar uchun belgilar
+    chegarasi.'
+  wwcteOffTarget: '{0} uchun oʻchirilgan shaxs tarjimasi.'
+  wwcCharLimit: Sizning xabaringiz juda uzun! Iltimos, xabaringiz uzunligi {0} belgilaridan
+    kamroq ekanligiga ishonch hosil qiling.
+  wwcteOffSender: O'chirilgan shaxs tarjimasi.
+  wwctGUIEntityButton: Toggle shaxs tarjimasi
+  wwctrlRateLimitBadInt: Sizning stavkangiz cheklovi haqiqiy emas.
+  wwcTranslatorErrorConsole: '{0} foydalanuvchisi ularning tarjimasiga urinayotganda
+    muammo yuzaga keldi. Qo''shimcha ma''lumot olish uchun errorLog.txt tekshiring.'
+  wwctGUIChatButton: Toggle chat Tarjima
+  wwcrBegin: WorldwideChat qayta yuklash...
+  wwctTranslationStoppedOtherPlayer: '{0} uchun tarjima sessiyasi to''xtatildi.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Global chat tarjima qilinmoqda,
+    ammo sizda {0} dan {1} gacha faol tarjima seansi mavjud.
+  wwctCannotTranslateConsole: Konsol uchun tarjima seansini boshlamaysiz!
+  wwcOnJoinTranslationNotificationSourceLang: Sizda {0} dan {1} ga faol tarjima seansi
+    mavjud.
+  wwctTranslationStopped: Sizning tarjima sessiyasi to'xtatildi.
+  wwctAutoTranslateStart: “ {0}” ga yangi tarjima sessiyasini boshlash.
+  wwcOnJoinTranslationNotificationNoSourceLang: Sizning {0} ga faol tarjima seansi
+    bor.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Global chat tarjima
+    qilinmoqda, ammo sizda {0} ga faol tarjima seansi mavjud.
+  wwcConfigGUIChangesNotSaved: /wwcc-da qizil to'siqni bosmaguningizcha o'zgarishlaringiz
+    kuchga kirmaydi.
+  wwctciOffSender: Kiruvchi chat tarjimasi o'chirilgan.
+  wwctGUIChatIncomingButton: Toggle kiruvchi Chat tarjimasi
+  wwctcoOffSender: Chiquvchi chat tarjimasi o'chirilgan.
+  wwctcoOnSender: Chiquvchi chat tarjimasi yoqilgan. Siz aytayotgan har qanday narsa
+    tarjima qilinadi!
+  wwctciOnSender: Kiruvchi chat tarjimasi yoqilgan. Siz olgan har qanday narsa tarjima
+    qilinadi!
+  wwctGUIChatMenu: Toggle Chat tarjima menyusi
+  wwctcoOnTarget: '{0} uchun chiquvchi chat tarjimasi yoqilgan.'
+  wwctcoOffTarget: Chiquvchi chat tarjimasi {0} uchun o'chirib qo'yildi.
+  wwctGUIChatOutgoingButton: Toggle Chiquvchi Chat tarjimasi
+  wwctciOnTarget: '{0} uchun kiruvchi chat tarjimasi yoqilgan.'
+  wwctciOffTarget: '{0} uchun kiruvchi chat tarjimasi o''chirib qo''yildi.'
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Hover matn sifatida tarjima
+    biriktirilgan Original kiruvchi chat muvaffaqiyatli o'zgartirildi.
+  wwcConfigGUISendIncomingHoverTextChatButton: Original kiruvchi xabarlarni Hover
+    Text sifatida qo'shish
+  wwctGUIExistingChatOutgoingEnabled: 'Chiquvchi chat tarjimasi yoqilgan: {0}'
+  wwctGUIExistingTranslationInput: 'Kirish tili: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Kiruvchi chat tarjimasi yoqilgan: {0}'
+  wwctGUIExistingTranslationOutput: 'Chiqish tili: {0}'
+  wwcTranslatorAttempt: Config.yml da tarjimonga ulanishga harakat qilish... ( {0}/
+    {0} urinishi)
+  wwcTimeoutExceptionConsole: O'yinchi % Men ularning eng so'nggi so'rovlar vaqti
+    bor edi. Bu xato halokatli emas, lekin agar u davom etsa WorldwideChat qayta yuklanishi
+    kerak.
+  wwcGUIPageNumber: 'Sahifa raqami: {0}'
+  wwcConfigYAMLFallback: YAML qaytib tushib...
+  wwcConfigGUIToggleSQLButton: Toggle SQL
+  wwcConfigConversationToggleSQLSuccess: SQL muvaffaqiyatli harakat qildi. O'zgarish
+    kuchga kirishi uchun qayta yuklang.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Muvaffaqiyatli Google Tarjima.
+    O'zgarish kuchga kirishi uchun qayta yuklang.
+  wwcConfigYAMLDefault: Ma'lumotlarni saqlash uchun YAMLga defaulted.
+  wwcConfigGUISQLMenuButton: SQL sozlamalarini o'zgartirish
+  wwcConfigConversationWatsonTranslateToggleSuccess: Muvaffaqiyatli Watson Tarjima.
+    O'zgarish kuchga kirishi uchun qayta yuklang.
+  wwcConfigGUIToggleGoogleTranslateButton: Google Tarjima Toggle
+  wwcConfigGUIToggleWatsonTranslateButton: Toggle Watson Tarjima
+  wwcConfigGUIToggleAmazonTranslateButton: Toggle Amazon Tarjima
+  wwcConfigGUIStorageSettings: Saqlash konfiguratsiyasi
+  wwcConfigConversationAmazonTranslateToggleSuccess: Muvaffaqiyatli Amazon Tarjima.
+    O'zgarish kuchga kirishi uchun qayta yuklang.
+  wwcConfigGUISQLPortButton: SQL portini o'zgartirish
+  wwcConfigGUISQLOptionalArgsButton: SQL ixtiyoriy argumentlarni o'zgartirish
+  wwcConfigConversationToggleSQLSSLSuccess: SQL uchun SSL muvaffaqiyatli o'tdi.
+  wwcConfigConversationSQLPortInput: Joriy porti {0}. 0 dan boshqa har qanday narsani
+    kiriting yangi portni o'rnatish yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUISQLPasswordButton: SQL parolini o'zgartirish
+  wwcConfigConversationSQLHostnameSuccess: SQL hostname-ni muvaffaqiyatli o'zgartirdi.
+  wwcConfigConversationSQLHostnameInput: Joriy hostname {0}. 0 dan boshqa hech narsa
+    yozing yangi hostname o'rnatish yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUISQLHostnameButton: SQL Hostname-ni o'zgartirish
+  wwcConfigConversationSQLOptionalArgsSuccess: Ixtiyoriy SQL argumentlarini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigConversationSQLPasswordSuccess: SQL parolini muvaffaqiyatli o'zgartirdi.
+  wwcConfigConversationSQLPasswordInput: Joriy parol {0}. Yangi parolni o'rnatish
+    uchun 0 dan boshqa hech narsa yozing yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL Toggle
+  wwcConfigConversationSQLUsernameSuccess: SQL foydalanuvchi nomini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigConversationSQLUsernameInput: Joriy foydalanuvchi nomi {0}. 0 dan boshqa
+    hech narsa yozing yangi foydalanuvchi nomini o'rnatish yoki orqaga qaytish uchun
+    0 yozing.
+  wwcConfigConversationSQLPortSuccess: SQL portini muvaffaqiyatli o'zgartirdi.
+  wwcConfigGUISQLUsernameButton: SQL foydalanuvchi nomini o'zgartirish
+  wwcConfigConversationSQLOptionalArgsCleared: Ixtiyoriy dalillar muvaffaqiyatli tozalanadi.
+  wwcConfigConversationSQLOptionalArgsInput: 'Joriy ixtiyoriy SQL argumentlari quyidagilardir:
+    {0}. vergul bilan ajratilgan argumentlarni yozing (kalit = qiymat, key2=value2)
+    yoki joriy argsni o''chirish uchun aniq yozing yoki orqaga qaytish uchun 0 yozing.'
+  wwcConfigConversationSQLDatabaseNameInput: Joriy ma'lumotlar bazasi nomi {0}. 0
+    dan boshqa hech narsa yozing yangi ma'lumotlar bazasi nomini o'rnatish yoki orqaga
+    qaytish uchun 0 yozing.
+  wwcConfigGUISQLDatabaseNameButton: SQL ma'lumotlar bazasini o'zgartirish
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL ma'lumotlar bazasi nomini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigConversationFatalAsyncAbort: Barcha async vazifalarni bekor qilish uchun
+    joriy vaqt belgisi {0} soniya. Yangi vaqtni belgilash uchun 7 dan yuqori narsani
+    yoki orqaga qaytish uchun uning ostidagi narsalarni kiriting.
+  wwcConfigConversationFatalAsyncSuccess: Async vazifa vaqt muvaffaqiyatli belgilangan.
+  wwcConfigGUIFatalAsyncAbortButton: Async Vazifa vaqtini o'zgartirish
+  libreHttp400: Yomon so'rov Libre Translate-ga yuborilgan! Agar siz buni qilmasligingiz
+    kerak bo'lgan biror narsa qilmasangiz, buni olmasligingiz kerak. Iltimos, ishlab
+    chiquvchi bilan bog'laning!
+  wwcConfigGUILibreTranslateApiKeyButton: O'zgartirish Bepul API Kalit Tarjima
+  libreHttp403: Libre Tarjima API kalitini etishmayotgan yoki siz serverdan taqiqlangan!
+  wwcConfigConversationLibreURLSuccess: Libre URL muvaffaqiyatli o'rnatildi.
+  wwcConfigConversationLibreTranslateApiKeyInput: Joriy API kaliti {0}. Iltimos, Libre
+    uchun API kalitini kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUILibreTranslateButton: Free Tarjima
+  libreHttp429: Serverdan stavka cheklovi tufayli ishonch yo'q.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Bepul Tarjima
+  wwcConfigConversationLibreTranslateToggleSuccess: Libre Translate-ni muvaffaqiyatli
+    almashtirdi. O'zgarishlar kuchga kirishi uchun qayta yuklang.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Libre API kaliti muvaffaqiyatli
+    o'rnatildi.
+  wwcConfigConversationLibreURLInput: Joriy URL {0}. Iltimos, Libre uchun URL manzilini
+    kiriting yoki orqaga qaytish uchun 0 yozing.
+  libreHttpUnknown: 'Nomaʼlum http xatosi: {0}'
+  wwcConfigGUILibreTranslateURLButton: Bepul Tarjima URL o'zgartirish
+  wwcConfigConnectionFail: '{0} ga ulanib boʻlmadi.'
+  wwcConfigConversationMongoDatabaseNameSuccess: MongoDB ma'lumotlar bazasi nomini
+    muvaffaqiyatli o'zgartirdi.
+  wwcConfigGUIMongoHostnameButton: MongoDB Host nomini o'zgartirish
+  wwcConfigConversationMongoPasswordInput: Joriy parol {0}. Yangi parol oʻrnatish
+    uchun 0 dan boshqa biror narsani kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationMongoPortInput: Joriy port {0}. 0 dan boshqa biror narsani
+    yozing yangi portni oʻrnatish yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationToggleMongoSuccess: MongoDB muvaffaqiyatli o'tdi. O'zgarish
+    kuchga kirishi uchun qayta yuklang.
+  wwcConfigConversationMongoHostnameInput: Joriy xost nomi {0}. 0 dan boshqa hech
+    narsa yozing yangi xost nomini belgilash yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationMongoHostnameSuccess: MongoDB hostname nomini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigGUIMongoMenuButton: MongoDB sozlamalarini o'zgartiring
+  wwcConfigGUIToggleMongoButton: Toggle MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Joriy ma'lumotlar bazasi nomi {0}.
+    0 dan boshqa hech narsa yozing yangi ma'lumotlar bazasi nomini belgilash yoki
+    orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationMongoOptionalArgsInput: 'Joriy ixtiyoriy MongoDB argumentlari
+    quyidagilardir: {0}. vergul bilan ajratilgan argumentlarni kiriting (kalit = qiymat,
+    key2 = value2) yoki joriy argsni artish uchun aniq yozing yoki orqaga qaytish
+    uchun 0 yozing.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB ma'lumotlar bazasini o'zgartirish
+  wwcConfigConversationMongoUsernameInput: Joriy foydalanuvchi nomi {0}. Yangi foydalanuvchi
+    nomini belgilash uchun 0 dan boshqa hech narsa yozing yoki orqaga qaytish uchun
+    0 yozing.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB ixtiyoriy argumentlarini o'zgartiring
+  wwcConfigConversationMongoUsernameSuccess: MongoDB foydalanuvchi nomini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigConversationMongoPasswordSuccess: MongoDB parolini muvaffaqiyatli o'zgartirdi.
+  wwcConfigConversationMongoPortSuccess: MongoDB portini muvaffaqiyatli o'zgartirdi.
+  wwcConfigGUIMongoUsernameButton: MongoDB foydalanuvchi nomini o'zgartiring
+  wwcConfigGUIMongoPasswordButton: MongoDB parolini o'zgartiring
+  wwcConfigConversationMongoOptionalArgsSuccess: Muvaffaqiyatli ixtiyoriy MongoDB
+    argumentlarni o'zgartirdi.
+  wwcConfigConversationMongoOptionalArgsCleared: Ixtiyoriy vajlari muvaffaqiyatli
+    tozalandi.
+  wwcConfigGUIMongoPortButton: MongoDB portini o'zgartiring
+  wwcConfigInvalidFatalAsyncTimeout: Noto'g'ri halokatli async vaqt tugashi to'plami.
+    10 soniyagacha defolt...
+  libreHttp500: Tanlangan kirish va chiqish tili juftligi qo'llab-quvvatlanmaydi.
+    Iltimos, boshqa til to'plamini tanlang!
+  wwcConfigGUIDeepLTranslateButton: Toggle DeepL Tarjimani
+  wwcConfigConversationDeepLTranslateToggleSuccess: DeepL Translate-ni muvaffaqiyatli
+    almashtirdi. O'zgarishlar kuchga kirishi uchun qayta yuklang.
+  wwcConfigGUIDeepLTranslateApiKeyButton: DeepL Translave API kalitini o'zgartiring
+  wwcConfigGUIToggleDeepLTranslateButton: Toggle DeepL Tarjimani
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API kaliti muvaffaqiyatli
+    o'rnatildi.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Joriy API kaliti {0}. Iltimos, DeepL
+    uchun API kalitini kiriting yoki orqaga qaytish uchun 0 kiriting.
+  wwcConfigErrorsToIgnoreSuccess: Muvaffaqiyatli ro'yxatdan tarjimon xatolar e'tiborsizlik
+    uchun.
+  wwcConfigErrorsToIgnoreInvalid: Config.yml da o'rnatilgan e'tiborsizlik uchun noto'g'ri
+    tarjimon xatolar. Standartni ro'yxatdan o'tkazish...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: Tarjimon xatolarini iboralarni e'tiborsiz
+    qoldirish uchun muvaffaqiyatli o'zgartirdi.
+  wwcConfigGUIIgnoreErrorsButton: Xatolarni e'tiborsiz qoldirish uchun o'zgartiring
+  wwcConfigConversationIgnoreErrorsInput: 'E''tibor bermaslik uchun tarjimon xatolaridagi
+    iboralarning joriy ro''yxati quyidagilardir: {0}. vergul bilan ajratilgan argumentlarni
+    kiriting (kalit = qiymat, key2 = value2) yoki joriy args artib aniq yozing, yoki
+    orqaga qaytish uchun 0 kiriting. Bundan tashqari, “*” ni yozish plaginning tarjimon
+    xatolarini tekshirmasligiga olib keladi.'
+  wwcConfigConversationIgnoreErrorsCleared: Tarjimon xatolar muvaffaqiyatli tozalandi
+    iboralar e'tiborsizlik uchun.
+  wwcSupportedServer: WorldwideChat-ni {0} uchun ishga tushirish...
+  wwcSupportedVersion: '{0} versiyasi uchun funksiyalarni yoqish...'
+  wwcBadPerms: 'Ushbu buyruqni bajarish uchun kerakli ruxsatnomangiz yo''q: {0}'
+  wwcsIsActiveTranslator: 'Faol tarjimon: {0}'
+  wwcsActiveTransPrevRate: 'Oldingi stavkani cheklash vaqti: {0}'
+  wwcsActiveTransSaved: 'Diskda saqlangan: {0}'
+  wwcsActiveTransIncoming: 'Kiruvchi suhbatni tarjima qilish: {0}'
+  wwcsActiveTransOutLang: 'Chiqish tili: {0}'
+  wwcsActiveTransInLang: 'Kirish tili: {0}'
+  wwcsActiveTransBook: 'Kitobni tarjima qilish: {0}'
+  wwcsActiveTransSign: 'Tarjima belgisi: {0}'
+  wwcsActiveTransUUID: 'QIYMATI: {0}'
+  wwcsActiveTransRateLimit: 'Qiymat chegarasi: {0}'
+  wwcsActiveTransColorWarning: 'Qabul qilingan rangli ogohlantirish: {0}'
+  wwcsActiveTransSignWarning: 'Qabul qilingan belgini tahrirlash haqida ogohlantirish:
+    {0}'
+  wwcsTitle: '{0} yozuvi'
+  wwcsActiveTransOutgoing: 'Chiquvchi suhbatni tarjima qilish: {0}'
+  wwcsActiveTransItem: 'Tarjima qilingan element: {0}'
+  wwcsActiveTransEntity: 'Tarjima qiluvchi shaxs: {0}'
+  wwctsWarning: Belgilarni tarjima qilayotganda belgini o'zgartirish o'chirib qo'yiladi.
+  wwcConfigConversationAzureTranslateToggleSuccess: Azure Tarjimasini muvaffaqiyatli
+    almashtirildi. O'zgartirishlar kuchga kirishi uchun qayta yuklang.
+  wwcConfigGUIAzureTranslateButton: Azure tarjimasi
+  wwcConfigGUIAzureTranslateApiKeyButton: Azure tarjima API kalitini o'zgartiring
+  wwcConfigGUIAzureTranslateRegionButton: Azure tarjima mintaqasini o'zgartiring
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure mintaqasi muvaffaqiyatli
+    o'rnatildi.
+  wwcConfigConversationAzureTranslateApiKeyInput: Joriy API kaliti {0}. Iltimos, Azure
+    uchun API kalitini kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API kalitlari muvaffaqiyatli
+    o'rnatildi.
+  wwcConfigConversationAzureTranslateRegionInput: Hozirgi mintaqa {0}. Iltimos, Azure
+    uchun mintaqani kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUIToggleAzureTranslateButton: Azure tarjimasini almashtirish
+  wwcConfigGUISystranTranslateApiKeyButton: Systran tarjima API kalitini o'zgartiring
+  wwcConfigGUIToggleSystranTranslateButton: Systran tarjimasini almashtirish
+  wwcConfigConversationSystranTranslateApiKeyInput: Joriy API kaliti {0}. Iltimos,
+    Systran uchun API kalitini kiriting yoki orqaga qaytish uchun 0 yozing.
+  wwcISOJSONFail: ISO JSON bilan til moslamalarini tuzatish mumkin emas.
+  wwcConfigConversationSystranTranslateToggleSuccess: Systran tarjimasini muvaffaqiyatli
+    almashtirildi. O'zgartirishlar kuchga kirishi uchun qayta yuklang.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Systran API kalitlari muvaffaqiyatli
+    o'rnatildi.
+  wwcConfigGUISystranTranslateButton: Systran tarjimasi
+  wwcrTransFail: WorldwideChat-ni qayta yukladi, lekin tarjimonni yoqmadi.
+  wwcdCacheCleared: Tarjima keshi tozalandi.
+  wwcdInvalidCmd: Yaroqsiz dalillar!
+  systranHttpUnknown: 'Noma''lum http xatosi: {0}'
+  systranHttp400: Systranga yuborilgan yomon parametrlar. Yomon til juftligi bo'lishi
+    mumkinmi?
+  systranHttp500: Systran so'nggi nuqtasi ({0}) dan ichki server xatosi.
+  wwcInvalidStorageSession: Sizning config da {0} yoqilgan, lekin ulanish o'rnatilmagan.
+    Iltimos, buni tuzatish uchun qayta yuklashni sinab ko'ring, lekin iltimos, iltimos,
+    {0} dan muvaffaqiyatli ulanish xabarini olgan bo'lsangiz, ishlab chiquvchiga murojaat
+    qiling.
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL ma'lumotlar bazasi
+    nomini muvaffaqiyatli o'zgartirdi.
+  wwcConfigConversationPostgresOptionalArgsCleared: Ixtiyoriy argumentlar muvaffaqiyatli
+    tozalandi.
+  wwcConfigConversationPostgresPortInput: Joriy port {0}. Yangi portni o'rnatish uchun
+    0 dan boshqa har qanday narsani yozing yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL foydalanuvchi nomini o'zgartiring
+  wwcConfigConversationPostgresOptionalArgsSuccess: Ixtiyoriy PostgreSQL argumentlarini
+    muvaffaqiyatli o'zgartirdi.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL uchun SSL muvaffaqiyatli
+    almashtirildi.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL parolini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL portini muvaffaqiyatli o'zgartirdi.
+  wwcConfigConversationPostgresUsernameInput: Hozirgi foydalanuvchi nomi {0}. Yangi
+    foydalanuvchi nomini o'rnatish uchun 0 dan boshqa har qanday narsani yozing yoki
+    orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL muvaffaqiyatli almashtirildi.
+    O'zgartirish kuchga kirishi uchun qayta yuklang.
+  wwcConfigGUITogglePostgresButton: PostgreSQL-ni almashtirish
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL parolini o'zgartiring
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL ixtiyoriy argumentlarini o'zgartiring
+  wwcConfigGUIPostgresMenuButton: PostgreSQL sozlamalarini o'zgartiring
+  wwcConfigConversationPostgresPasswordInput: Joriy parol {0}. Yangi parolni o'rnatish
+    uchun 0 dan boshqa har qanday narsani yozing yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationPostgresHostnameInput: Joriy xost nomi {0}. Yangi hostname
+    ni o'rnatish uchun 0 dan boshqa har qanday narsani yozing yoki orqaga qaytish
+    uchun 0 yozing.
+  wwcConfigGUIPostgresPortButton: PostgreSQL portini o'zgartiring
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL xost nomini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL xost nomini o'zgartiring
+  wwcConfigConversationPostgresDatabaseNameInput: Joriy ma'lumotlar bazasi nomi {0}.
+    Yangi ma'lumotlar bazasi nomini o'rnatish uchun 0 dan boshqa har qanday narsani
+    yozing yoki orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Joriy ixtiyoriy PostgreSQL argumentlari
+    quyidagilardir: {0}. Vergul bilan ajratilgan argumentlarni yozing (key=value,
+    key2=value2) yoki joriy arglarni artish uchun clear yozing yoki orqaga qaytish
+    uchun 0 yozing.'
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL-ni almashtirish
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL ma'lumotlar bazasini o'zgartiring
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL foydalanuvchi nomini muvaffaqiyatli
+    o'zgartirdi.
+  wwcConfigGUIStorageTypeSettings: '{0} Konfiguratsiya'
+  wwcConfigConversationPrefixInput: Joriy prefiks {0}. Iltimos, yangisini yozing yoki
+    orqaga qaytish uchun 0 yozing.
+  wwcConfigConversationLangInput: 'Joriy plagin tili {0}. Iltimos, haqiqiy til kodini
+    kiriting yoki bekor qilish uchun 0 yozing. Haqiqiy til kodlari: {1}'
+  wwcdCacheSize: Keshning kattaligi hozirda {0} bo'lib, {1} chegarasi bilan.
+  wwcdCacheTerm: '{0}. CachedTranslation:inputLang= {1}, outputLang= {2}, inputPhrase=
+    {3} | outputPhrase= {4}'
+  wwctLangToLangStart: '{0} dan {1} gacha yangi tarjima sessiyasini boshlash.'
+  wwctAutoTranslateStartOtherPlayer: '{0} dan {1} uchun yangi tarjima sessiyasini
+    boshlash.'
+  wwctLangToLangStartOtherPlayer: '{1} dan {2} gacha {0} uchun yangi tarjima sessiyasini
+    boshlash.'
+  wwcgLangToLangStart: Endi global suhbatni {0} dan {1} ga tarjima qilish.
+  wwctrlRateLimitSetTarget: '{0} tezlik chegarasini {1} soniyagacha belgilang.'
+  wwcTimeoutException: Sizning so'rovingiz muddati tugadi. Iltimos, yana urinib ko'ring.
+  wwctbNoMoreOldBooks: Kitob tarjimasi server versiyasida ishlamaydi. Agar siz Minecraft-ning
+    so'nggi versiyasida bo'lsangiz va ushbu xatoni olsangiz, iltimos, ishlab chiquvchiga
+    murojaat qiling.
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Lokalizatsiyani tanlang
+  wwcConfigGUIMessagesOverridePickChatButton: Standart plagin xabarlarini bekor qilish
+  wwcConfigGUIChatMessagesOverrideSettings: Standart xabarlarni bekor qilish ({0})
+  wwcConfigGUIMessagesServerLang: Bu config.yml da plaginning standart tilidir.
+  wwclLangStopped: Mahalliylashtirishingiz server standart holatiga qaytarildi.
+  wwclLangInvalid: '{0} haqiqiy lokalizatsiya emas. Qo''llab-quvvatlanadigan lokalizatsiyalar:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: '{0} lokalizatsiyasini server standart holatiga
+    qaytaring.'
+  wwclLangPlayerNotValid: '{0} haqiqiy o''yinchi emas.'
+  wwclLangChangedOtherPlayerSender: '{0} ning lokalizatsiyasini {1} ga o''zgartirdi.'
+  wwclLangChanged: Sizning lokalizatsiyangiz {0} ga o'zgartirildi.
+  wwcsLocalization: 'Mahalliylashtirish: {0}'
+  wwclLangAlreadyStopped: Sizda lokalizatsiya to'plami yo'q.
+  wwclLangAlreadyStoppedOtherPlayerSender: '{0} mahalliylashtirish to''plamiga ega
+    emas.'
+  wwctGUILocalizeExistingValue: 'Hozirgi mahalliylashtirish: {0}'
+  wwctGUILocalizationButton: Lokalizatsiyani sozlang
+  wwctGUILocalizeStopButton: Lokalizatsiyani server standart holatiga qaytaring
+  wwctGUILocalizeTitle: Mahalliylashtirish menyusi
+  wwctGUISourceSameLang: Bu til sizning manba tilingiz bilan bir xil bo'ladi.
+  wwcConfigGUICurrentPlayerLang: Bu sizning hozirgi lokalizatsiyangiz.
+  wwctGUILocalizationSameAsServer: Bu WorldwideChat uchun standart lokalizatsiya.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Ushbu til allaqachon global miqyosda
+    faol!
+  wwcrStorageTranslatorFail: WorldwideChat-ni qayta yukladi, lekin tarjimonni yoqish
+    va saqlash konfiguratsiyangiz bilan ulanish muvaffaqiyatsiz tugadi.
+  wwcrStorageFail: WorldwideChat-ni qayta yukladi va tarjimonni muvaffaqiyatli yoqdi,
+    ammo saqlash konfiguratsiyangiz ulanishi muvaffaqiyatsiz tugadi.
+  wwcConfigPersistentCacheInvalid: Config.yml da doimiy kesh yozuvi yaroqsiz. False
+    deb belgilash...
+  wwcConfigGUIPersistentCacheButton: Doimiy keshni o'tish
+  wwcConfigConversationPersistentCacheSuccess: Doimiy kesh muvaffaqiyatli almashtirildi.
+  wwcConfigPersistentCacheEnabled: Kesh ma'lumotlari qayta yuklashda davom etadi.
+  wwcConfigConversationCharacterLimitInput: Har bir xabar uchun joriy belgilar chegarasi
+    {0} belgidir. Yangi qiymatni belgilash uchun 0 dan katta (lekin 256 dan kam) har
+    qanday narsani yozing yoki orqaga qaytish uchun 0 yozing.
+  wwcdOutdatedSQLStruct: Sizning MySQL yoki PostgreSQL jadvallaringizdan bir yoki
+    bir nechtasining noto'g'ri/eskirgan formatga ega bo'lgani kabi ko'rinadi. Ushbu
+    masala haqida ko'proq verbose ma'lumot sizning konsolingizga chop etildi; siz
+    buni qo'lda tuzatishingiz mumkin.
+  wwcdSQLAllSet: Sizning MySQL/PostgreSQL jadvallaringiz to'g'ri formatlangan.
+  wwcdColumnBadType: '{1} jadvalidagi {0} ustuni {2} turiga ega, lekin kutilgan {3}
+    turiga ega.'
+  wwcdColumnMissing: '{0} ustuni {1} jadvalida etishmayapti.'
+  wwcdGoodTable: '{0} jadvali ({1}) to''g''ri formatdir.'
+  wwcdBadTable: Jadval {0} ichki ta'riflarda topilmadi. Iltimos, ishlab chiquvchiga
+    murojaat qiling.
+  wwcOldDatabaseStruct: 'Sizning tanlagan ma''lumotlar bazangiz noto''g''ri jadval
+    sozlamasiga ega. Qo''shimcha ma''lumot olish uchun quyidagi buyruqni yozing: /wwcd
+    checkdb'
+  wwctGUIRateButtonLore: 'Joriy tezlik chegarasi: {0} soniya'
+  wwcConfigGUIVaultSupportButton: Vault-ni qo'llab-quvvatlashni almashtirish
+  wwcConfigConversationVaultSupportSuccess: Vault yordami muvaffaqiyatli o'chirildi.
+  wwcVaultEnabled: Vaultni qo'llab-quvvatlash yoqilgan.
+  wwcVaultFoundButDisabled: Vault topildi, ammo mavjud bo'lgan suhbat plaginlari ro'yxatdan
+    o'tkazilmagan. Vault-ni qo'llab-quvvatlashni o'chirib qo'yish...
+  wwcConfigGUIToggleRestartRequired: Ushbu sozlamani qo'llash uchun serverni to'liq
+    qayta ishga tushirish talab qilinadi.
+

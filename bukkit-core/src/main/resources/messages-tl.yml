@@ -1,0 +1,665 @@
+Messages:
+  wwcgAutoTranslateStart: Ngayon isinasalin ang global chat sa {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Ang pandaigdigang chat ay isinalin
+    sa {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Baguhin ang Key ng Access sa Amazon
+  wwcrFail: Nabigong i-reload ang WorldwideChat.
+  wwcConfigGUIUpdateCheckerButton: Baguhin ang Suriin para sa Mga Update
+  wwcUpdaterFailedGeneric: Hindi masuri ang mga update sa WorldwideChat.
+  wwcConfigConversationUpdateCheckerInput: Ang kasalukuyang pagkaantala sa update
+    checker ay {0} segundo. I-type ang anumang mas malaki kaysa sa 10 upang magtakda
+    ng bagong halaga, o anumang mas mababa sa 10 upang bumalik.
+  wwctGUIMainMenuGlobal: Pandaigdigang menu ng pagsasalin
+  wwcConfigConversationPluginUpdateChatSuccess: Ang paalala ng pag-update ng plugin
+    ng chat ay matagumpay na na-toggled.
+  wwctbOnTarget: Pinagana ang pagsasalin ng libro para sa {0}.
+  wwcsNotATranslator: Wala pang mga record na magagamit para sa {0}.
+  wwcConfigGUIbStatsButton: I-toggle ang bStats
+  wwctGUINewTranslationSource: Pumili ng Pinagmulang Wika
+  wwcConfigConnectionFailed: Nabigong kumonekta sa {0}. Tiyaking tama ang pagkakaayos
+    ng iyong mga kredensyal at firewall!
+  wwcConfigEnabledbStats: Pinagana ang bStats.
+  wwctGUIMainMenuPlayer: Pagsasalin Menu ng {0}
+  wwctGUIBookButton: I-toggle ang Book Translation
+  wwcLangDetected: Natukoy na wika {0}.
+  wwcBookTranslateStart: Pagsasalin ng target na aklat...
+  wwcConfigDisabledbStats: Hindi Pinagana ang bStats.
+  wwctsOffSender: Hindi pinagana ang pagsasalin ng pag-sign.
+  wwcUpdaterParserFailed: Nabigong i-parse ang data ng pag-update mula sa Github.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Ang kasalukuyang sikretong susi
+    ay {0}. Pakipasok ang isang lihim na susi para sa Amazon, o i-type ang 0 upang
+    bumalik.
+  wwctbOffSender: Hindi pinagana ang pagsasalin ng libro.
+  wwcConfigGUIAmazonTranslateButton: Isalin
+  wwcConfigConversationLangSuccess: Matagumpay na nagbago ang wika ng plugin.
+  wwcsSuccessfulTranslations: 'Mga Matagumpay na Pagsasalin: {0}'
+  wwcConfigConversationTranslationCacheInput: Ang kasalukuyang limitasyon ng cache
+    ng pagsasalin ay {0} parirala. I-type ang anumang mas malaki kaysa sa 0 upang
+    magtakda ng bagong halaga, o i-type ang 0 upang huwag paganahin ang cache ng pagsasalin.
+    I-type ang anumang mas mababa sa 0 upang bumalik.
+  wwctbOffTarget: Hindi pinagana ang pagsasalin ng libro para sa {0}.
+  wwcConfigGUIGeneralSettings: Pangkalahatang Configuration
+  wwcInvalidLang: Di-wastong wika sa iyong config.yml. Defaulting to en...
+  wwcConfigConversationAmazonTranslateRegionSuccess: Matagumpay na naitakda ang rehiyon
+  wwcConfigRateLimitEnabled: Pinagana ang limitasyon ng global rate at nakatakda sa
+    {0} segundo.
+  wwcConfigGUILangButton: Baguhin ang Plugin Wika
+  wwctGUISignButton: I-toggle ang Sign Translation
+  wwcUpdaterOutOfDate: Ang WorldwideChat ay wala na sa petsa. Paki-update sa pinakabagong
+    bersiyon, {0}.
+  wwcConfigGUINextPageButton: Susunod na Pahina
+  wwcConfigInvalidTranslatorSettings: Di-wastong mga setting ng tagasalin! Mangyaring
+    paganahin lamang ang isang tagasalin sa iyong config.yml.
+  wwcConfigGUIQuitButton: Lumabas at I-save ang Mga Pagbab
+  wwctPlayerNotFound: Ang manlalaro ng {0} ko natagpuan.
+  wwcConfigGUIAmazonTranslateRegionButton: Baguhin ang rehiyon ng Amazon
+  wwcConfigConversationLangInvalid: Di-wastong code ng wika!
+  wwcConfigGUIWatsonAPIKeyButton: Baguhin ang Watson API Key
+  wwcEnabled: Pinagana ang bersyong WorldwideChat {0}.
+  wwctbOnSender: Pinagana ang pagsasalin ng aklat. Mag-right-click habang may hawak
+    na isang libro upang isalin ito!
+  wwcListenersInitialized: Pinasimulan ng mga tagapakinig.
+  wwcConfigGUIPluginUpdateChatButton: Magpadala ng Paalala para sa Mga Update ng Plugin
+  wwcConfigConversationSendTranslationChatSuccess: Aktibong tagasalin chat paalala
+    toggled matagumpay.
+  wwctsOffTarget: Hindi pinagana ang pagsasalin ng pag-sign para sa {0}.
+  wwcUpdaterConnectionFailed: Hindi masuri ang mga pinakabagong update sa Github.
+  watsonNotFoundExceptionNotification: Hindi na ma-translate ang iyong input sa anumang
+    karagdagang.
+  wwcConfigConversationWatsonAPIKeyInput: Ang kasalukuyang API key ay {0}. Pakipasok
+    ang API key para sa Watson, o i-type ang 0 upang bumalik.
+  wwctGUIStopButton: Itigil ang Pagsasalin
+  wwcgTranslationStopped: Ang pagsasalin ng pandaigdigang chat ay tumigil.
+  wwcUpdaterFutureDate: Ang halimbawang ito ng WorldwideChat ay may mas malaking bersyon
+    kaysa sa pinakabagong pampublikong isa.
+  wwcConfigConversationPrefixSuccess: Matagumpay na nagbago ang prefix.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Baguhin ang Google Translate API Key
+  wwcSignDeletedOrTooLong: 'Target sign ay alinman sa tinanggal o ang pagsasalin ay
+    masyadong mahaba. Pagsasalin:'
+  wwctsOnTarget: Pinagana ang pagsasalin ng pag-sign para sa {0}.
+  wwcConfigCacheDisabled: Hindi pinagana ang cache ng tagasalin.
+  wwcConfigConversationWatsonURLInput: Ang kasalukuyang URL ay {0}. Pakipasok ang
+    URL ng serbisyo para sa Watson, o i-type ang 0 upang bumalik.
+  wwcBookDone: Book matagumpay na isinalin.
+  wwctsOnSender: Pinagana ang pagsasalin ng pag-sign. Mag-right-click sa isang senyas
+    upang isalin ito!
+  watsonColorCodeWarning: Ang paggamit ng mga code ng kulay ay maaaring magbigay sa
+    iyo ng mga hindi inaasahang resulta.
+  wwctGUITranslationButton: Simulan ang Pagsasalin
+  wwctGUIAutoDetectButton: Auto-detect Pinagmulan ng Wika
+  wwcUpdaterUpToDate: Ang WorldwideChat ay napapanahon!
+  wwcConfigConversationAmazonTranslateRegionInput: Ang kasalukuyang rehiyon ay {0}.
+    Pakipasok ang isang rehiyon para sa Amazon, o i-type ang 0 upang bumalik.
+  wwcNoConsole: Ang utos na ito ay maaari lamang patakbuhin ng isang manlalaro.
+  wwcInitializationFail: Nabigong magpasimula ng WorldwideChat.
+  wwcrSuccess: Matagumpay na na-reload ang WorldwideChat.
+  wwcPlayerNotFound: Ang manlalaro ng {0} ko natagpuan.
+  wwcUpdaterOutOfDateChat: Ang WorldwideChat ay wala na sa petsa. Mangyaring i-update
+    sa pinakabagong bersyon.
+  wwcConfigConversationRateLimitSuccess: Matagumpay na itinakda ang limitasyon ng
+    rate
+  wwcConfigConversationWatsonURLSuccess: Matagumpay na itinakda ang URL ng Watson.
+  wwctbPlayerNotFound: Ang manlalarong {0} ay alinman sa hindi natagpuan, o hindi
+    isang aktibong tagasalin.
+  wwcConfigConversationTranslationCacheSuccess: Matagumpay na itinakda ang limitasyon
+    ng cache ng pagsasalin
+  wwctInvalidArgs: Di-wastong argumento na ibinigay!
+  wwcConfigGUIPrefixButton: Baguhin ang Prefix ng Plugin
+  wwctSameLangError: Hindi ka maaaring isalin sa parehong wika!
+  wwctGUINewTranslationTarget: Pumili ng isang Target na Wika
+  wwcConfigConnectionSuccess: Matagumpay na nakakonekta sa {0}!
+  wwcConfigGUIGoogleTranslateButton: Google Translate
+  wwcConfigGUIPreviousPageButton: Nakaraang Pahina
+  wwcConfigGUITranslatorCacheButton: Baguhin ang Limitasyon ng Cache
+  wwcConfigConversationbStatsSuccess: Matagumpay na na-toggled ang bStats.
+  wwcSignDone: Mag-sign isinalin matagumpay.
+  wwcConfigInvalidPrefixSettings: Nabigong basahin ang iyong prefix. Gamit ang default...
+  wwcConfigRateLimitInvalid: Ang limitasyon ng masamang rate ay itinakda sa config.yml.
+    Default sa 0 segundo...
+  wwcSignTranslateStart: Pagsasalin ng target sign...
+  wwcConfigGUIChatSettings: Pagsasaayos ng Chat
+  wwcConfigGUIWatsonURLButton: Baguhin ang URL ng Serbisyo ng Watson
+  wwcConfigConversationUpdateCheckerSuccess: Matagumpay na itinakda ang pagkaantala
+    ng checker.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Ang pandaigdigang chat ay isinalin
+    mula sa {0} sa {1}.
+  wwcConfigGUITranslatorSettings: Pagsasaayos ng Tagasalin
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Ang kasalukuyang API key ay {0}.
+    Pakipasok ang API key para sa Google Translate, o i-type ang 0 upang bumalik.
+  wwcConfigConversationRateLimitInput: Ang kasalukuyang pandaigdigang limitasyon ng
+    rate sa bawat pagsasalin ay {0} segundo. I-type ang anumang mas malaki kaysa sa
+    0 upang magtakda ng bagong halaga, o i-type ang 0 upang huwag paganahin ang limitasyon.
+    I-type ang anumang mas mababa sa 0 upang bumalik.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Matagumpay na itinakda ang key
+    ng Google Translate API.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Baguhin ang Amazon Secret Key
+  wwcVersion: WorldwideChat, bersyon
+  wwcsAttemptedTranslations: 'Tinangkang Pagsasalin: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Matagumpay na naka-set ang
+    lihim na key ng Amazon.
+  wwcConfigConversationWatsonAPIKeySuccess: Matagumpay na itinakda ang key ng Watson
+    API.
+  wwcRateLimit: Limitado ang rate ng iyong mga pagsasalin. Mangyaring maghintay ng
+    isa pang segundo ang {0}.
+  wwcConfigCacheEnabled: Pinagana ang cache ng tagasalin at nakatakda sa limitasyon
+    ng {0}.
+  wwctGUIExistingTranslationButton: Patungan ang Kasalukuyang Session ng pagsasalin
+  wwcUserDataReloaded: Na-load ang lahat ng naka-save na data ng user.
+  wwcConfigGUISendTranslationChatButton: Magpadala ng Paalala sa Chat sa Aktibong
+    Tagasalin sa Pag-login
+  wwcsLastTranslationTime: 'Huling (Matagumpay) Oras ng Pagsasalin: {0}'
+  wwctbNotATranslator: Ikaw ay hindi isang aktibong tagasalin! Tiyaking itinakda mo
+    ito sa /wwct.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Ang kasalukuyang access key
+    ay {0}. Pakipasok ang access key para sa Amazon, o i-type ang 0 upang bumalik.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Matagumpay na naka-set ang
+    key ng pag-access ng Amazon.
+  wwcConfigBadUpdateDelay: Hindi wastong pag-antala ng pag-updater na itinakda sa
+    config.yml. Default sa 86400 segundo...
+  wwctrlRateLimitOffSender: Naka-off ang iyong limitasyon sa rate.
+  wwctrlRateLimitAlreadyOffTarget: Ang limitasyon ng rate ng {0} ay naka-disable na.
+  wwctrlPlayerNotFound: Ang manlalarong {0} ay alinman sa hindi natagpuan, o hindi
+    isang aktibong tagasalin.
+  wwctrlRateLimitSetSender: Itakda ang limitasyon ng iyong rate sa {0} segundo.
+  wwctrlRateLimitOffTarget: Naka-off ang limitasyon ng rate ng {0}.
+  wwctrlNotATranslator: Ikaw ay hindi isang aktibong tagasalin! Tiyaking itinakda
+    mo ito sa /wwct.
+  wwctrlRateLimitAlreadyOffSender: Ang iyong limitasyon sa rate ay naka-disable na.
+  wwctGUIRateButton: Itakda ang limitasyon ng Rate
+  wwctGUIConversationRateLimit: Ang limitasyon ng rate sa bawat pagsasalin ay kasalukuyang
+    {0} segundo. I-type ang anumang mas malaki kaysa sa 0 upang magtakda ng bagong
+    halaga, o i-type ang 0 upang huwag paganahin ang limitasyon. I-type ang anumang
+    mas mababa sa 0 upang bumalik.
+  wwctGUITargetPlayerNull: Ang target player ay naka-disconnect mula sa server.
+  wwcConfigConversationSyncUserDataDelayInput: Ang kasalukuyang pagkaantala sa bawat
+    pag-sync ng data ng user ay {0} segundo. I-type ang anumang mas malaki kaysa sa
+    10 upang magtakda ng bagong halaga, o anumang mas mababa sa 10 upang bumalik.
+  wwcConfigGUISyncUserDataButton: Baguhin ang Pag-sync ng Data ng User
+  wwcConfigSyncDelayEnabled: Nakatakda ang pagkaantala sa bawat pag-sync ng data ng
+    user sa {0} segundo.
+  wwcConfigConversationSyncUserDataDelaySuccess: Matagumpay na naitakda ang pag-sync
+    ng data ng user.
+  wwcConfigSyncDelayInvalid: Itinatakda ang hindi wastong pagkaantala sa pag-sync
+    ng data ng user sa config.yml. Default sa 7200 segundo...
+  wwcConfigCacheInvalid: Hindi wasto ang laki ng cache ng tagasalin. Default sa 10...
+  wwcInventoryErrorPlayer: Nakita ang error sa iyong GUI. Ang isang log ay naipadala
+    sa console.
+  wwcInventoryError: Error na nakita sa GUI ng tagagamit na {0}. Pakiulat ang isyung
+    ito sa developer.
+  wwctiOffTarget: Hindi pinagana ang pagsasalin ng item para sa {0}.
+  wwctiOffSender: Hindi pinagana ang pagsasalin ng item.
+  wwcItemTranslateTitleStock: Hindi ma-translate ang mga default na pangalan ng item.
+  wwctGUIItemButton: I-toggle ang Pagsasalin ng Item
+  wwcItemTranslateTitleDone: Matagumpay na isinalin item pamagat.
+  wwcGUITempItem: Item Display
+  wwcItemTranslateStart: Pagsasalin ng target na item...
+  wwcBookTranslateTitleSuccess: 'Isinalin Pamagat ng Aklat: {0}'
+  wwctiOnSender: Pinagana ang pagsasalin ng item. Mag-right-click sa isang item sa
+    iyong pangunahing kamay upang isalin ito!
+  wwcItemTranslateLoreStart: Pagsasalin ng tradisyonal na kaalaman ng target na item...
+  wwcItemTranslateLoreDone: Matagumpay na isinalin item tradisyonal na kaalaman
+  wwctiOnTarget: Pinagana ang pagsasalin ng item para sa {0}.
+  wwcInvalidTranslator: Di-wastong mga setting ng tagasalin. Mangyaring ayusin ito
+    sa iyong config.yml o sa /wwcc upang magamit ang plugin na ito.
+  wwcConfigGUIEachTranslatorSettings: '{0} Pagsasaayos'
+  wwcConfigGUIWatsonButton: Watson
+  wwcServerReloadWarning: Ang WorldwideChat ay hindi nagpapahintulot sa paggamit ng/reload.
+    Mangyaring magpatuloy nang may pag-iingat.
+  wwcConfigEnabledDebugMode: Pinagana ang DEBUG mode. Kung ikaw ay hindi isang developer
+    o troubleshooter, dapat mong i-off ito.
+  wwcTranslatorErrorThresholdReached: Naabot ang threshold ng error. Ang plugin na
+    ito ay i-reload na ngayon, at huwag paganahin ang lahat ng mga tagasalin.
+  wwcConfigErrorLimitEnabled: Ang limitasyon ng error sa tagasalin ay nakatakda sa
+    {0}.
+  wwcTranslatorError: Isang problema ang nagkaroon habang sinusubukan ang iyong pagsasalin.
+    Mangyaring subukan muli.
+  wwcConfigErrorLimitInvalid: Hindi wastong limitasyon ng error sa tagasalin na itinakda
+    sa config.yml. Default sa 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Mangyaring suriin ang errorLog.txt
+    sa folder ng WorldwideChat plugin para sa karagdagang impormasyon.
+  wwctInvalidInputLangCode: 'Di-wastong input code ng wika na ibinigay! Valid lang
+    mga code: {0}'
+  wwctInvalidOutputLangCode: 'Di-wastong code ng wika ng output na ibinigay! Valid
+    lang mga code: {0}'
+  wwctGUISourceTranslationSelected: Pinili mo ang wikang ito.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: I-delete ang I-override
+  wwcConfigConversationOverrideTextChange: Paki-type ang bagong mensahe para sa override
+    na ito, o i-type ang 0 upang bumalik. Tandaan na isama ang anumang mga variable
+    na nagsisimula sa mga palatandaan ng porsyento na nakikita mo sa orihinal na mensahe.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Ang wikang ito ay aktibo na!
+  wwcConfigGUIChatMessagesPossibleOverrides: Pumili ng Mensahe
+  wwcConfigGUIChatMessagesModifyOverride: Baguhin ang Umiiral na Pag
+  wwcConfigConversationOverrideDeletionSuccess: Tinanggal na ang override ng custom
+    na mensahe.
+  wwcConfigGUIChatMessagesDeadOverride: Ang override na ito ay alinman sa hindi wasto,
+    o ang orihinal na mensahe ay inalis. Dapat mong tanggalin ito.
+  wwcConfigGUIMessagesAlreadyOverriden: Mayroon ka nang override para sa mensaheng
+    ito!
+  wwcConfigGUIChatMessagesOverrideNewButton: Magdagdag ng Bagong Override
+  wwcConfigGUIMessagesOverrideCustomLabel: Bagong Mensahe
+  wwcConfigConversationOverrideTextChangeSuccess: Matagumpay na itinakda ang bagong
+    mensahe
+  wwcConfigGUIChatMessagesOverrideChangeButton: Baguhin ang Umiiral na
+  wwcExampleMessage: Ito ay isang dummy na mensahe, at sinadya upang ma-overriden
+    bilang isang halimbawa.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Orihinal na Mensahe
+  wwcConfigGUIDebugModeButton: I-toggle ang Debug Mode
+  wwcConfigConversationDebugModeSuccess: Matagumpay na na-toggled debug mode.
+  wwcConfigGUIErrorLimitButton: Baguhin ang Limitasyon ng Error sa Translator
+  wwcConfigConversationErrorLimitSuccess: Matagumpay na naka-set ang limitasyon ng
+    error.
+  wwcEntityTranslateStart: Pagsasalin ng target na entity...
+  wwcConfigGUICharacterLimitButton: Palitan ang Limitasyon ng Character
+  wwcConfigMessageCharLimitInvalid: Di-wastong limitasyon sa bawat mensahe na itinakda
+    sa config.yml. Default sa 255 chars...
+  wwcConfigConversationCharacterLimitSuccess: Matagumpay na itinakda ang limitasyon
+    ng character
+  wwcteOnTarget: Pinagana ang pagsasalin ng entity para sa {0}.
+  wwcEntityTranslateDone: 'Isinalin Pangalan ng Entity: {0}'
+  wwcEntityTranslateNoName: Ang entity ay walang pasadyang pangalan.
+  wwcConfigConversationErrorLimitInput: Ang kasalukuyang limitasyon ng error para
+    sa bawat tagasalin ay {0}. I-type ang anumang mas malaki kaysa sa 0 upang magtakda
+    ng bagong halaga, o mag-type ng kahit anong mas mababa sa o katumbas ng 0 upang
+    bumalik.
+  wwcConfigGUIGlobalRateLimitButton: Baguhin ang Global Rate Limitasyon
+  wwcteOnSender: Pinagana ang pagsasalin ng entity. Mag-right-click sa isang entity
+    upang isalin ang pangalan nito!
+  wwcConfigGUIResponseLimitButton: Baguhin ang Tagasalin Tugon Timeout
+  wwcConfigMessageCharLimitEnabled: Limitasyon ng character sa bawat mensahe na nakatakda
+    sa {0} character.
+  wwcteOffTarget: Hindi pinagana ang pagsasalin ng entity para sa {0}.
+  wwcCharLimit: Masyadong mahaba ang iyong mensahe! Mangyaring siguraduhin na ang
+    iyong mensahe ay mas mababa sa {0} character sa haba.
+  wwcteOffSender: Hindi pinagana ang pagsasalin ng entity.
+  wwctGUIEntityButton: I-toggle ang Entity Translation
+  wwctrlRateLimitBadInt: Ang iyong limitasyon sa rate ay hindi wastong integer.
+  wwcTranslatorErrorConsole: Nagkaroon ng problema habang tinatangka ng gumagamit
+    {0} ang kanilang pagsasalin. Mangyaring suriin errorLog.txt para sa higit pang
+    mga detalye.
+  wwctGUIChatButton: I-toggle ang Pagsasalin ng Chat
+  wwcrBegin: I-reload ang WorldwideChat...
+  wwctTranslationStoppedOtherPlayer: Ang sesyon ng pagsasalin para sa {0} ay tumigil.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Isinasalin ang pandaigdigang
+    chat, ngunit mayroon kang aktibong sesyon ng pagsasalin mula sa {0} sa {1}.
+  wwctCannotTranslateConsole: Hindi ka maaaring magsimula ng sesyon ng pagsasalin
+    para sa console!
+  wwcOnJoinTranslationNotificationSourceLang: Mayroon kang aktibong sesyon ng pagsasalin
+    mula sa {0} sa {1}.
+  wwctTranslationStopped: Ang iyong sesyon ng pagsasalin ay tumigil.
+  wwctAutoTranslateStart: Simula ng bagong sesyon ng pagsasalin sa {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: Mayroon kang aktibong sesyon ng pagsasalin
+    sa {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Isinasalin ang pandaigdigang
+    chat, ngunit mayroon kang aktibong sesyon ng pagsasalin sa {0}.
+  wwcConfigGUIChangesNotSaved: Ang iyong mga pagbabago ay hindi magkakabisa hanggang
+    sa mag-click ka sa pulang hadlang sa /wwcc.
+  wwctciOffSender: Hindi pinagana ang pagsasalin ng papasok na chat.
+  wwctGUIChatIncomingButton: I-toggle ang Incoming Chat Translation
+  wwctcoOffSender: Hindi pinagana ang pagsasalin ng papalabas na chat.
+  wwctcoOnSender: Pinagana ang pagsasalin ng papalabas na chat. Ang anumang sasabihin
+    mo ay isasalin!
+  wwctciOnSender: Pinagana ang pagsasalin ng papasok na chat. Ang anumang natatanggap
+    mo ay isasalin!
+  wwctGUIChatMenu: I-toggle ang Pagsasalin ng Chat Menu
+  wwctcoOnTarget: Pinagana ang pagsasalin ng papalabas na chat para sa {0}.
+  wwctcoOffTarget: Hindi pinagana ang pagsasalin ng papalabas na chat para sa {0}.
+  wwctGUIChatOutgoingButton: I-toggle ang Papalabas na Pagsasalin ng Chat
+  wwctciOnTarget: Pinagana ang papasok na pagsasalin ng chat para sa {0}.
+  wwctciOffTarget: Hindi pinagana ang pagsasalin ng papasok na chat para sa {0}.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Orihinal na papasok na chat
+    na naka-attach sa pagsasalin bilang hover text toggled matagumpay.
+  wwcConfigGUISendIncomingHoverTextChatButton: Magdagdag ng Orihinal na Mga Papasok
+    na Mensahe bilang Hover Text
+  wwctGUIExistingChatOutgoingEnabled: 'Pinagana ang Pagsalin ng Papalabas na Chat:
+    {0}'
+  wwctGUIExistingTranslationInput: 'Wika ng Input: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Pinagana ang pagsasalin ng papasok na Chat:
+    {0}'
+  wwctGUIExistingTranslationOutput: 'Wika ng Output: {0}'
+  wwcTranslatorAttempt: Sinusubukang kumonekta sa tagasalin sa config.yml... (Pagtangka
+    {0}/ {1})
+  wwcTimeoutExceptionConsole: Ang manlalarong {0} ay nagkaroon ng kanilang pinakahuling
+    timeout ng kahilingan. Ang error na ito ay hindi nakamamatay, ngunit dapat i-reload
+    ang WorldwideChat kung patuloy itong mangyayari.
+  wwcGUIPageNumber: 'Numero ng Pahina: {0}'
+  wwcConfigYAMLFallback: Bumabagsak pabalik sa YAML...
+  wwcConfigGUIToggleSQLButton: I-toggle ang SQL
+  wwcConfigConversationToggleSQLSuccess: Matagumpay na toggled ang SQL. I-reload para
+    magkabisa ang pagbabago.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Matagumpay na na-toggle ang Google
+    Translate. I-reload para magkabisa ang pagbabago.
+  wwcConfigYAMLDefault: Defaulted sa YAML para sa imbakan ng data.
+  wwcConfigGUISQLMenuButton: Baguhin ang Mga Setting ng SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: Matagumpay na na-toggle ang Watson
+    Translate. I-reload para magkabisa ang pagbabago.
+  wwcConfigGUIToggleGoogleTranslateButton: I-toggle ang Google Translate
+  wwcConfigGUIToggleWatsonTranslateButton: I-toggle ang Watson Translate
+  wwcConfigGUIToggleAmazonTranslateButton: I-toggle ang Amazon Translate
+  wwcConfigGUIStorageSettings: Configuration ng Imbakan
+  wwcConfigConversationAmazonTranslateToggleSuccess: Matagumpay na na-toggle ang Amazon
+    Translate. I-reload para magkabisa ang pagbabago.
+  wwcConfigGUISQLPortButton: Baguhin ang SQL Port
+  wwcConfigGUISQLOptionalArgsButton: Baguhin ang SQL Opsyonal na Argumento
+  wwcConfigConversationToggleSQLSSLSuccess: Matagumpay na na-toggled ang SSL para
+    sa SQL.
+  wwcConfigConversationSQLPortInput: Ang kasalukuyang port ay {0} I-type ang anumang
+    bagay maliban sa 0 upang magtakda ng bagong port, o i-type ang 0 upang bumalik.
+  wwcConfigGUISQLPasswordButton: Baguhin ang SQL Password
+  wwcConfigConversationSQLHostnameSuccess: Matagumpay na binago ang SQL hostname.
+  wwcConfigConversationSQLHostnameInput: Ang kasalukuyang hostname ay {0} I-type ang
+    anumang bagay maliban sa 0 upang magtakda ng bagong hostname, o i-type ang 0 upang
+    bumalik.
+  wwcConfigGUISQLHostnameButton: Baguhin ang SQL Hostname
+  wwcConfigConversationSQLOptionalArgsSuccess: Matagumpay na binago ang opsyonal na
+    mga argumento ng SQL.
+  wwcConfigConversationSQLPasswordSuccess: Matagumpay na binago ang SQL password.
+  wwcConfigConversationSQLPasswordInput: Ang kasalukuyang password ay {0} I-type ang
+    anumang bagay maliban sa 0 upang magtakda ng bagong password, o i-type ang 0 upang
+    bumalik.
+  wwcConfigGUIToggleSQLSSLButton: I-toggle ang SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: Matagumpay na binago ang SQL username.
+  wwcConfigConversationSQLUsernameInput: Ang kasalukuyang username ay {0} I-type ang
+    anumang bagay maliban sa 0 upang magtakda ng bagong username, o i-type ang 0 upang
+    bumalik.
+  wwcConfigConversationSQLPortSuccess: Matagumpay na binago ang SQL port.
+  wwcConfigGUISQLUsernameButton: Baguhin ang Username ng SQL
+  wwcConfigConversationSQLOptionalArgsCleared: Ang mga opsyonal na argumento ay matagumpay
+    na na-clear.
+  wwcConfigConversationSQLOptionalArgsInput: 'Ang kasalukuyang opsyonal na mga argumento
+    ng SQL ay: {0} Uri ng mga argumento na pinaghihiwalay ng kuwit (key=value, key2=value2),
+    o i-type ang malinaw upang punasan ang kasalukuyang mga arg, o i-type ang 0 upang
+    bumalik.'
+  wwcConfigConversationSQLDatabaseNameInput: Ang kasalukuyang pangalan ng database
+    ay {0} I-type ang anumang bagay maliban sa 0 upang magtakda ng bagong pangalan
+    ng database, o i-type ang 0 upang bumalik.
+  wwcConfigGUISQLDatabaseNameButton: Baguhin ang SQL Database
+  wwcConfigConversationSQLDatabaseNameSuccess: Matagumpay na binago ang pangalan ng
+    SQL database.
+  wwcConfigConversationFatalAsyncAbort: Ang kasalukuyang timeout upang i-abort ang
+    lahat ng mga gawain ng async ay {0} seconds. I-type ang anumang bagay sa itaas
+    7 upang magtakda ng isang bagong timeout, o anumang bagay sa ibaba nito upang
+    bumalik.
+  wwcConfigConversationFatalAsyncSuccess: Matagumpay na itinakda ang timeout ng pag-sync
+    ng gawain.
+  wwcConfigGUIFatalAsyncAbortButton: Baguhin ang Timeout ng Async Task
+  libreHttp400: Masamang kahilingan ipinadala sa Libre Translate! Maliban kung ikaw
+    ay gumagawa ng isang bagay na hindi mo dapat, hindi mo dapat makuha ito. Mangyaring
+    makipag-ugnay sa developer!
+  wwcConfigGUILibreTranslateApiKeyButton: Baguhin ang Libre Isalin API Key
+  libreHttp403: Nawawalang Libre Translate API Key, o ikaw ay pinagbawalan mula sa
+    server!
+  wwcConfigConversationLibreURLSuccess: Matagumpay na itinakda ang Libreng URL.
+  wwcConfigConversationLibreTranslateApiKeyInput: Ang kasalukuyang API key ay {0}.
+    Pakipasok ang API key para sa Libre, o i-type ang 0 upang bumalik.
+  wwcConfigGUILibreTranslateButton: Libre Translate
+  libreHttp429: Walang kumpiyansa dahil sa limitasyon ng rate mula sa server.
+  wwcConfigGUIToggleLibreTranslateButton: I-toggle Libre Translate
+  wwcConfigConversationLibreTranslateToggleSuccess: Matagumpay na toggled Libre Translate.
+    I-reload para magkabisa ang mga pagbabago.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Matagumpay na itinakda ang Libreng
+    API key.
+  wwcConfigConversationLibreURLInput: Ang kasalukuyang URL ay {0}. Pakipasok ang URL
+    para sa Libre, o i-type ang 0 upang bumalik.
+  libreHttpUnknown: 'Hindi kilalang http error: {0}'
+  wwcConfigGUILibreTranslateURLButton: Baguhin Libre Translate URL
+  wwcConfigConnectionFail: Nabigong kumonekta sa {0}.
+  wwcConfigConversationMongoDatabaseNameSuccess: Matagumpay na binago ang pangalan
+    ng database ng MongoDB.
+  wwcConfigGUIMongoHostnameButton: Baguhin ang MongoDB Hostname
+  wwcConfigConversationMongoPasswordInput: Ang kasalukuyang password ay {0}. I-type
+    ang anumang bagay maliban sa 0 upang magtakda ng bagong password, o i-type ang
+    0 upang bumalik.
+  wwcConfigConversationMongoPortInput: Ang kasalukuyang port ay {0}. I-type ang anumang
+    bagay maliban sa 0 upang magtakda ng bagong port, o i-type ang 0 upang bumalik.
+  wwcConfigConversationToggleMongoSuccess: Matagumpay na nag-toggle ang MongoDB. I-reload
+    para magkabisa ang pagbabago.
+  wwcConfigConversationMongoHostnameInput: Ang kasalukuyang hostname ay {0}. I-type
+    ang anumang bagay maliban sa 0 upang magtakda ng bagong hostname, o i-type ang
+    0 upang bumalik.
+  wwcConfigConversationMongoHostnameSuccess: Matagumpay na binago ang hostname ng
+    MongoDB.
+  wwcConfigGUIMongoMenuButton: Baguhin ang Mga Setting ng MongoDB
+  wwcConfigGUIToggleMongoButton: I-toggle ang MongoDB
+  wwcConfigConversationMongoDatabaseNameInput: Ang kasalukuyang pangalan ng database
+    ay {0}. I-type ang anumang bagay maliban sa 0 upang magtakda ng bagong pangalan
+    ng database, o i-type ang 0 upang bumalik.
+  wwcConfigConversationMongoOptionalArgsInput: 'Ang kasalukuyang opsyonal na argumento
+    ng MongoDB ay: {0} Mag-type ng mga argumento na pinaghihiwalay ng isang kuwit
+    (key=value, key2=value2), o i-type ang malinaw upang punasan ang kasalukuyang
+    mga arg, o i-type ang 0 upang bumalik.'
+  wwcConfigGUIMongoDatabaseNameButton: Baguhin ang MongoDB Database
+  wwcConfigConversationMongoUsernameInput: Ang kasalukuyang username ay {0}. I-type
+    ang anumang bagay maliban sa 0 upang magtakda ng bagong username, o i-type ang
+    0 upang bumalik.
+  wwcConfigGUIMongoOptionalArgsButton: Baguhin ang Mga Opsyonal na Argumento ng MongoDB
+  wwcConfigConversationMongoUsernameSuccess: Matagumpay na binago ang username ng
+    MongoDB.
+  wwcConfigConversationMongoPasswordSuccess: Matagumpay na binago ang password ng
+    MongoDB.
+  wwcConfigConversationMongoPortSuccess: Matagumpay na binago ang MongoDB port.
+  wwcConfigGUIMongoUsernameButton: Baguhin ang Username ng MongoDB
+  wwcConfigGUIMongoPasswordButton: Baguhin ang Password ng MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: Matagumpay na binago ang opsyonal
+    na argumento ng MongoDB.
+  wwcConfigConversationMongoOptionalArgsCleared: Matagumpay na na-clear ang mga opsyonal
+    na argumento.
+  wwcConfigGUIMongoPortButton: Baguhin ang MongoDB Port
+  wwcConfigInvalidFatalAsyncTimeout: Di-wastong nakamamatay na hanay ng timeout ng
+    async. Pag-default sa 10 segundo...
+  libreHttp500: Ang iyong napiling input at output na pares ng wika ay hindi suportado.
+    Mangyaring pumili ng ibang hanay ng wika!
+  wwcConfigGUIDeepLTranslateButton: I-toggle ang DeepL Translate
+  wwcConfigConversationDeepLTranslateToggleSuccess: Matagumpay na na-toggle ang DeepL
+    Translate. I-reload para magkabisa ang mga pagbabago.
+  wwcConfigGUIDeepLTranslateApiKeyButton: Baguhin ang DeepL Translate API Key
+  wwcConfigGUIToggleDeepLTranslateButton: I-toggle ang DeepL Translate
+  wwcConfigConversationDeepLTranslateApiKeySuccess: Matagumpay na itinakda ang key
+    ng DeepL API.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Ang kasalukuyang API key ay {0}.
+    Mangyaring mag-input ng API key para sa DeepL, o i-type ang 0 upang bumalik.
+  wwcConfigErrorsToIgnoreSuccess: Matagumpay na nakarehistro ang mga error sa tagasalin
+    upang huwag pansinin.
+  wwcConfigErrorsToIgnoreInvalid: Di-wastong mga error sa tagasalin upang huwag pansinin
+    ang itinakda sa config.yml. Pagrerehistro ng mga default...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: Matagumpay na binago ang mga error sa
+    tagasalin upang huwag pansinin ang mga parirala
+  wwcConfigGUIIgnoreErrorsButton: Baguhin ang Mga Error upang Huwag pansinin
+  wwcConfigConversationIgnoreErrorsInput: 'Ang kasalukuyang listahan ng mga parirala
+    sa mga error sa tagasalin na huwag pansinin ay: {0}. I-type ang mga argumento
+    na pinaghihiwalay ng isang kuwit (key = halaga, key2 = value2), o i-type ang malinaw
+    upang punasan ang kasalukuyang args, o i-type ang 0 upang bumalik. Bukod pa rito,
+    ang pag-type ng “*” ay magiging sanhi ng plugin na hindi suriin ang anumang mga
+    error sa tagasalin.'
+  wwcConfigConversationIgnoreErrorsCleared: Mga error sa tagasalin upang huwag pansinin
+    ang mga parirala na matagumpay na nabura.
+  wwcSupportedServer: Pagsisimula ng WorldwideChat para sa {0}...
+  wwcSupportedVersion: Pagpapagana ng mga tampok para sa bersyon {0}...
+  wwcBadPerms: 'Wala kang mga kinakailangang pahintulot upang maisagawa ang utos na
+    ito: {0}'
+  wwcsIsActiveTranslator: 'Aktibong Tagasalin: {0}'
+  wwcsActiveTransPrevRate: 'Nakaraang Oras ng Limitasyon ng Rate: {0}'
+  wwcsActiveTransSaved: 'Naka-save sa Disk: {0}'
+  wwcsActiveTransIncoming: 'Pagsasalin ng Papasok na Chat: {0}'
+  wwcsActiveTransOutLang: 'Output Wika: {0}'
+  wwcsActiveTransInLang: 'Wika ng Pag-input: {0}'
+  wwcsActiveTransBook: 'Pagsasalin ng Aklat: {0}'
+  wwcsActiveTransSign: 'Pagsasalin ng Sign: {0}'
+  wwcsActiveTransUUID: 'UUDIO: {0}'
+  wwcsActiveTransRateLimit: 'Limitasyon ng Rate: {0}'
+  wwcsActiveTransColorWarning: 'Natanggap na Babala ng Kulay: {0}'
+  wwcsActiveTransSignWarning: 'Natanggap na Babala sa Pag-edit ng Signa: {0}'
+  wwcsTitle: Talaan ng {0}
+  wwcsActiveTransOutgoing: 'Pagsasalin ng Outgoing Chat: {0}'
+  wwcsActiveTransItem: 'Pagsasalin ng Item: {0}'
+  wwcsActiveTransEntity: 'Pagsasalin ng Entidad: {0}'
+  wwctsWarning: Hindi pinagana ang pagbabago ng sign habang nagsasalin ka ng mga palatandaan.
+  wwcConfigConversationAzureTranslateToggleSuccess: Matagumpay na i-tolock ang Azure
+    Translate. I-load muli para maging epektibo ang mga pagbabago.
+  wwcConfigGUIAzureTranslateButton: Isalin ang Azure
+  wwcConfigGUIAzureTranslateApiKeyButton: Baguhin ang Azure Translate API Key
+  wwcConfigGUIAzureTranslateRegionButton: Baguhin ang Rehiyon ng Pagsasalin
+  wwcConfigConversationAzureTranslateRegionSuccess: Matagumpay na nakatakda ang Azure
+    region.
+  wwcConfigConversationAzureTranslateApiKeyInput: Ang kasalukuyang key ng API ay {0}.
+    Mangyaring magpasok ng isang API key para sa Azure, o i-type ang 0 upang bumalik.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Matagumpay na itinakda ang Azure
+    API key.
+  wwcConfigConversationAzureTranslateRegionInput: Ang kasalukuyang rehiyon ay {0}.
+    Mangyaring mag-input ng isang rehiyon para sa Azure, o i-type ang 0 upang bumalik.
+  wwcConfigGUIToggleAzureTranslateButton: Toggle Azure Translate
+  wwcConfigGUISystranTranslateApiKeyButton: Baguhin ang Systran Translate API Key
+  wwcConfigGUIToggleSystranTranslateButton: Toggle Systran Isalin
+  wwcConfigConversationSystranTranslateApiKeyInput: Ang kasalukuyang key ng API ay
+    {0}. Mangyaring magpasok ng isang API key para sa Systran, o i-type ang 0 upang
+    bumalik.
+  wwcISOJSONFail: Hindi maaaring ayusin ang mga bagay sa wika gamit ang ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: Matagumpay na i-tolock ang Systran
+    Translate. I-load muli para maging epektibo ang mga pagbabago.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Matagumpay na itinakda ng Systran
+    API key.
+  wwcConfigGUISystranTranslateButton: Systran Isalin
+  wwcrTransFail: Muling na-load ang WorldwideChat ngunit nabigo na paganahin ang isang
+    tagasalin.
+  wwcdCacheCleared: Nilinis ang cache ng pagsasalin.
+  wwcdInvalidCmd: Hindi wastong mga argumento!
+  systranHttpUnknown: 'Hindi kilalang error sa http: {0}'
+  systranHttp400: Masamang mga parameter na ipinadala sa Systran. Maaaring maging
+    isang masamang pares ng wika?
+  systranHttp500: Panloob na error sa server mula sa Systran endpoint ({0}).
+  wwcInvalidStorageSession: Pinagana ang {0} sa iyong config, ngunit hindi itinatag
+    ang koneksyon. Mangyaring subukang mag-reload upang ayusin ito, ngunit mangyaring
+    makipag-ugnay sa developer kung dati kang nakatanggap ng isang matagumpay na mensahe
+    ng koneksyon mula sa {0}.
+  wwcConfigConversationPostgresDatabaseNameSuccess: Matagumpay na binago ang pangalan
+    ng database ng PostgreSQL.
+  wwcConfigConversationPostgresOptionalArgsCleared: Matagumpay na na-clear ang mga
+    opsyonal na
+  wwcConfigConversationPostgresPortInput: Ang kasalukuyang port ay {0}. I-type ang
+    anumang bagay maliban sa 0 upang magtakda ng bagong port, o i-type ang 0 upang
+    bumalik.
+  wwcConfigGUIPostgresUsernameButton: Baguhin ang Username ng PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: Matagumpay na binago ang mga opsyonal
+    na argumento ng PostgreSQL.
+  wwcConfigConversationTogglePostgresSSLSuccess: Matagumpay na naka-switch ang SSL
+    para sa PostgreSQL.
+  wwcConfigConversationPostgresPasswordSuccess: Matagumpay na binago ang password
+    ng PostgreSQL.
+  wwcConfigConversationPostgresPortSuccess: Matagumpay na binago ang port ng PostgreSQL.
+  wwcConfigConversationPostgresUsernameInput: Ang kasalukuyang username ay {0}. I-type
+    ang anumang bagay maliban sa 0 upang magtakda ng bagong username, o i-type ang
+    0 upang bumalik.
+  wwcConfigConversationTogglePostgresSuccess: Matagumpay na naka-switch ang PostgreSQL.
+    I-load muli para maging epektibo ang pagbabago.
+  wwcConfigGUITogglePostgresButton: Palitan ang PostgreSQL
+  wwcConfigGUIPostgresPasswordButton: Baguhin ang Password ng PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: Baguhin ang Mga Opsyonal na Argumento sa
+    PostgreSQL
+  wwcConfigGUIPostgresMenuButton: Baguhin ang Mga Setting ng PostgreSQL
+  wwcConfigConversationPostgresPasswordInput: Ang kasalukuyang password ay {0}. I-type
+    ang anumang bagay maliban sa 0 upang magtakda ng bagong password, o i-type ang
+    0 upang bumalik.
+  wwcConfigConversationPostgresHostnameInput: Ang kasalukuyang pangalan ng host ay
+    {0}. I-type ang anumang bagay maliban sa 0 upang magtakda ng bagong host name,
+    o i-type ang 0 upang bumalik.
+  wwcConfigGUIPostgresPortButton: Baguhin ang PostgreSQL Port
+  wwcConfigConversationPostgresHostnameSuccess: Matagumpay na binago ang PostgreSQL
+    hostname.
+  wwcConfigGUIPostgresHostnameButton: Baguhin ang PostgreSQL Hostname
+  wwcConfigConversationPostgresDatabaseNameInput: Ang kasalukuyang pangalan ng database
+    ay {0}. I-type ang anumang bagay maliban sa 0 upang magtakda ng bagong pangalan
+    ng database, o i-type ang 0 upang bumalik.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Ang kasalukuyang opsyonal na mga
+    argumento ng PostgreSQL ay: {0}. I-type ang mga argumento na pinaghihiwalay ng
+    isang kuwit (key=value, key2=value2), o i-type clear upang punasan ang kasalukuyang
+    args, o i-type ang 0 upang bumalik.'
+  wwcConfigGUITogglePostgresSSLButton: I-switch ang PostgreSQL SSL
+  wwcConfigGUIPostgresDatabaseNameButton: Baguhin ang PostgreSQL Database
+  wwcConfigConversationPostgresUsernameSuccess: Matagumpay na binago ang username
+    na PostgreSQL.
+  wwcConfigGUIStorageTypeSettings: '{0} Pagsasaayos'
+  wwcConfigConversationPrefixInput: Ang kasalukuyang prefix ay {0}. Mangyaring mag-type
+    ng bago, o i-type ang 0 upang bumalik.
+  wwcConfigConversationLangInput: 'Ang kasalukuyang wika ng plugin ay {0}. Mangyaring
+    magpasok ng isang wastong code ng wika, o i-type ang 0 upang kanselahin. Mga wastong
+    code ng wika: {1}'
+  wwcdCacheSize: Ang laki ng cache ay kasalukuyang {0}, na may limitasyon ng {1}.
+  wwcdCacheTerm: '{0}. CachedTranslation:InputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: Nagsisimula ng bagong session ng pagsasalin mula sa {0} hanggang
+    {1}.
+  wwctAutoTranslateStartOtherPlayer: Nagsisimula ng bagong session ng pagsasalin para
+    sa {0} hanggang {1}.
+  wwctLangToLangStartOtherPlayer: Nagsisimula ng bagong session ng pagsasalin para
+    sa {0} mula {1} hanggang {2}.
+  wwcgLangToLangStart: Ngayon ay nagsasalin ng pandaigdigang chat mula sa {0} hanggang
+    {1}.
+  wwctrlRateLimitSetTarget: Itakda ang limitasyon ng rate ng {0} hanggang {1} segundo.
+  wwcTimeoutException: Naka-time ang iyong kahilingan. Mangyaring subukang muli.
+  wwctbNoMoreOldBooks: Hindi gumagana ang pagsasalin ng libro sa iyong bersyon ng
+    server. Kung nasa mas kamakailang bersyon ng Minecraft at nakuha mo ang error
+    na ito, mangyaring makipag-ugnay sa developer.
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Piliin ang Lokalisasyon
+  wwcConfigGUIMessagesOverridePickChatButton: I-override ang mga default na mensahe
+    ng Plugin
+  wwcConfigGUIChatMessagesOverrideSettings: I-override ang mga default na mensahe
+    ({0})
+  wwcConfigGUIMessagesServerLang: Ito ang default na wika ng plugin sa config.yml.
+  wwclLangStopped: Ang iyong lokalisasyon ay na-reset sa default na server.
+  wwclLangInvalid: 'Ang {0} ay hindi isang wastong lokalisasyon. Mga sinusuportahang
+    lokalisasyon: {1}'
+  wwclLangStoppedOtherPlayerSender: I-reset ang lokalisasyon ng {0} sa default na
+    server.
+  wwclLangPlayerNotValid: Ang {0} ay hindi isang wastong manlalaro.
+  wwclLangChangedOtherPlayerSender: Binago ang lokalisasyon ng {0} sa {1}.
+  wwclLangChanged: Ang iyong lokalisasyon ay binago sa {0}.
+  wwcsLocalization: 'Lokalisasyon: {0}'
+  wwclLangAlreadyStopped: Wala kang isang hanay ng lokalisasyon.
+  wwclLangAlreadyStoppedOtherPlayerSender: Ang {0} ay walang hanay ng lokalisasyon.
+  wwctGUILocalizeExistingValue: 'Kasalukuyang Lokalisasyon: {0}'
+  wwctGUILocalizationButton: Itakda ang Lokalisasyon
+  wwctGUILocalizeStopButton: I-reset ang Lokalisasyon sa Default ng Server
+  wwctGUILocalizeTitle: Menu ng Lokalisasyon
+  wwctGUISourceSameLang: Ang wikang ito ay magiging katulad ng iyong pinagmulan na
+    wika.
+  wwcConfigGUICurrentPlayerLang: Ito ang iyong kasalukuyang lokalisasyon.
+  wwctGUILocalizationSameAsServer: Ito ang default na lokalisasyon para sa WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Ang wikang ito ay aktibo na sa buong
+    mundo!
+  wwcrStorageTranslatorFail: Muling na-load ang WorldwideChat ngunit nabigo na paganahin
+    ang isang tagasalin at kumonekta sa iyong pagsasaayos ng imbakan.
+  wwcrStorageFail: Na-load muli ang WorldwideChat at matagumpay na pinagana ang isang
+    tagasalin, ngunit nabigo na kumonekta ang iyong pagsasaayos ng storage.
+  wwcConfigPersistentCacheInvalid: Hindi wastong patuloy na entry sa cache sa config.yml.
+    Ang default sa maling...
+  wwcConfigGUIPersistentCacheButton: I-switch ang Patuloy na Cache
+  wwcConfigConversationPersistentCacheSuccess: Matagumpay na naka-switch ang patuloy
+    na cache.
+  wwcConfigPersistentCacheEnabled: Magpapatuloy ang data ng cache sa buong mga reload.
+  wwcConfigConversationCharacterLimitInput: Ang kasalukuyang limitasyon ng character
+    bawat mensahe ay {0} character. I-type ang anumang bagay na mas malaki kaysa sa
+    0 (ngunit mas mababa sa 256) upang magtakda ng bagong halaga, o i-type ang 0 upang
+    bumalik.
+  wwcdOutdatedSQLStruct: Mukhang isa o higit pa sa iyong mga talahanayan ng MySQL
+    o PostgreSQL ay may hindi tama/hindi napapanahong format. Higit pang malalaking
+    impormasyon tungkol sa isyung ito ay naka-print sa iyong console; maaari mong
+    ayusin ito nang manu-mano.
+  wwcdSQLAllSet: Ang iyong mga talahanayan ng MySQL/PostgreSQL ay maayos na na-format.
+  wwcdColumnBadType: Ang haligi {0} sa talahanayan {1} ay may uri {2} ngunit inaasahang
+    uri {3}.
+  wwcdColumnMissing: Nawawala ang haligi {0} sa talahanayan {1}.
+  wwcdGoodTable: Ang {0} table ({1}) ay ang tamang format.
+  wwcdBadTable: Talahanayan {0} hindi matatagpuan sa mga panloob na kahulugan Mangyaring
+    makipag-ugnay sa developer.
+  wwcOldDatabaseStruct: 'Ang iyong napiling database ay may maling pag-setup ng talahanayan.
+    I-type ang sumusunod na utos para sa karagdagang impormasyon: /wwcd checkdb'
+  wwctGUIRateButtonLore: 'Kasalukuyang Limitasyon ng Rate: {0} Segundo'
+  wwcConfigGUIVaultSupportButton: Toggle Vault Support
+  wwcConfigConversationVaultSupportSuccess: Matagumpay na naka-switch ang suporta
+    ng Vault.
+  wwcVaultEnabled: Pinagana ang suporta sa Vault.
+  wwcVaultFoundButDisabled: Natagpuan ang Vault, ngunit walang umiiral na plugin ng
+    chat ang nakarehistro. Hindi paganahin ang suporta sa Vault...
+  wwcConfigGUIToggleRestartRequired: Kinakailangan ang isang buong pag-restart ng
+    server upang ilapat ang setting na ito.
+

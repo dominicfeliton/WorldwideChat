@@ -1,0 +1,554 @@
+Messages:
+  wwcgAutoTranslateStart: الآن ترجمة الدردشة العالمية إلى {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: تتم ترجمة الدردشة العامة إلى
+    {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: تغيير مفتاح الوصول الأمازون
+  wwcrFail: فشل في إعادة تحميل وورلدويدتشات.
+  wwcConfigGUIUpdateCheckerButton: تغيير التحقق من تأخر التحديثات
+  wwcUpdaterFailedGeneric: غير قادر على التحقق من وجود تحديثات وورلدويدتشات.
+  wwcConfigConversationUpdateCheckerInput: التأخير الحالي على مدقق التحديث هو {0}
+    ثانية. اكتب أي شيء أكبر من 10 لتعيين قيمة جديدة، أو أي شيء أقل من 10 للعودة.
+  wwctGUIMainMenuGlobal: قائمة الترجمة العالمية
+  wwcConfigConversationPluginUpdateChatSuccess: البرنامج المساعد تحديث الدردشة تذكير
+    مثبت بنجاح.
+  wwctbOnTarget: تم تمكين ترجمة الكتاب لـ {0}.
+  wwcsNotATranslator: لا توجد سجلات متاحة حتى الآن لـ {0}.
+  wwcConfigGUIbStatsButton: تبديل بستاتس
+  wwctGUINewTranslationSource: اختر لغة المصدر
+  wwcConfigConnectionFailed: فشل الاتصال بـ {0}. تأكد من تكوين بيانات الاعتماد وجدار
+    الحماية بشكل صحيح!
+  wwcConfigEnabledbStats: تمكين بستاتس.
+  wwctGUIMainMenuPlayer: قائمة الترجمة من {0}
+  wwctGUIBookButton: تبديل ترجمة الكتاب
+  wwcLangDetected: اللغة المكتشفة {0}.
+  wwcBookTranslateStart: ترجمة الكتاب المستهدف...
+  wwcConfigDisabledbStats: بستاتس المعوقين.
+  wwctsOffSender: تسجيل الترجمة تعطيل.
+  wwcUpdaterParserFailed: فشل تحليل بيانات التحديث من جيثب.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: المفتاح السري الحالي هو {0}.
+    الرجاء إدخال مفتاح سري لـ Amazon، أو اكتب 0 للعودة.
+  wwctbOffSender: ترجمة الكتاب تعطيل.
+  wwcConfigGUIAmazonTranslateButton: الأمازون ترجمة
+  wwcConfigConversationLangSuccess: تغيرت لغة البرنامج المساعد بنجاح.
+  wwcsSuccessfulTranslations: 'الترجمات الناجحة: {0}'
+  wwcConfigConversationTranslationCacheInput: الحد الحالي لذاكرة التخزين المؤقت للترجمة
+    هو {0} العبارات. اكتب أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب 0 لتعطيل ذاكرة
+    التخزين المؤقت للترجمة. اكتب أي شيء أقل من 0 للعودة.
+  wwctbOffTarget: تم تعطيل ترجمة الكتاب لـ {0}.
+  wwcConfigGUIGeneralSettings: التكوين العام
+  wwcInvalidLang: لغة غير صالحة في config.yml الخاص بك. التخلف عن أون...
+  wwcConfigConversationAmazonTranslateRegionSuccess: تم تعيين منطقة الأمازون بنجاح.
+  wwcConfigRateLimitEnabled: تم تمكين حد المعدل العام وتعيينه إلى {0} ثواني.
+  wwcConfigGUILangButton: تغيير لغة البرنامج المساعد
+  wwctGUISignButton: تبديل تسجيل الترجمة
+  wwcUpdaterOutOfDate: وورلدويدتشات هو قديما. الرجاء التحديث إلى أحدث إصدار، {0}.
+  wwcConfigGUINextPageButton: الصفحة التالية
+  wwcConfigInvalidTranslatorSettings: إعدادات مترجم غير صالحة! يرجى تمكين مترجم واحد
+    فقط في config.yml الخاص بك.
+  wwcConfigGUIQuitButton: الخروج من التغييرات وحفظها
+  wwctPlayerNotFound: لم يتم العثور على اللاعب %.
+  wwcConfigGUIAmazonTranslateRegionButton: تغيير منطقة الأمازون
+  wwcConfigConversationLangInvalid: رمز لغة غير صالح!
+  wwcConfigGUIWatsonAPIKeyButton: تغيير مفتاح واجهة برمجة التطبيقات واتسون
+  wwcEnabled: تمكين نسخة ورلدويدشة {0}.
+  wwctbOnSender: ترجمة الكتاب تمكين. انقر بزر الماوس الأيمن أثناء عقد كتاب لترجمته!
+  wwcListenersInitialized: المستمعين تهيئة.
+  wwcConfigGUIPluginUpdateChatButton: إرسال تذكير الدردشة للحصول على تحديثات البرنامج
+    المساعد
+  wwcConfigConversationSendTranslationChatSuccess: نشط مترجم دردشة تذكير مثبت بنجاح.
+  wwctsOffTarget: تم تعطيل ترجمة التوقيع لـ {0}.
+  wwcUpdaterConnectionFailed: تعذر التحقق من وجود آخر التحديثات على Github.
+  watsonNotFoundExceptionNotification: غير قادر على ترجمة المدخلات الخاصة بك إلى أبعد
+    من ذلك.
+  wwcConfigConversationWatsonAPIKeyInput: مفتاح واجهة برمجة التطبيقات الحالي هو {0}.
+    الرجاء إدخال مفتاح API لـ Watson، أو اكتب 0 للعودة.
+  wwctGUIStopButton: توقف عن الترجمة
+  wwcgTranslationStopped: تم إيقاف ترجمة الدردشة العالمية.
+  wwcUpdaterFutureDate: هذا المثال من WorldwideChat لديه نسخة أكبر من أحدث واحد عام.
+  wwcConfigConversationPrefixSuccess: تغيرت البادئة بنجاح.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: تغيير جوجل ترجمة أبي مفتاح
+  wwcSignDeletedOrTooLong: 'تم حذف علامة الهدف أو كانت الترجمة طويلة جدًا. الترجمة:'
+  wwctsOnTarget: تم تمكين ترجمة التوقيع لـ {0}.
+  wwcConfigCacheDisabled: تعطيل ذاكرة التخزين المؤقت المترجم.
+  wwcConfigConversationWatsonURLInput: عنوان URL الحالي هو {0}. الرجاء إدخال عنوان
+    URL لخدمة Watson، أو اكتب 0 للعودة.
+  wwcBookDone: كتاب ترجمت بنجاح.
+  wwctsOnSender: تم تمكين ترجمة التوقيع. انقر بزر الماوس الأيمن على علامة لترجمتها!
+  watsonColorCodeWarning: استخدام رموز الألوان قد تعطيك نتائج لا يمكن التنبؤ بها.
+  wwctGUITranslationButton: بدء الترجمة
+  wwctGUIAutoDetectButton: لصناعة السيارات في الكشف عن لغة المصدر
+  wwcUpdaterUpToDate: وورلدويدتشات هو ما يصل إلى الآن!
+  wwcConfigConversationAmazonTranslateRegionInput: المنطقة الحالية هو {0}. الرجاء
+    إدخال منطقة لـ Amazon، أو اكتب 0 للعودة.
+  wwcNoConsole: لا يمكن تشغيل هذا الأمر إلا من قبل لاعب.
+  wwcInitializationFail: فشل في تهيئة ورلدويدتشات.
+  wwcrSuccess: إعادة تحميل وورلدويدتشات بنجاح.
+  wwcPlayerNotFound: لم يتم العثور على اللاعب %.
+  wwcUpdaterOutOfDateChat: وورلدويدتشات هو قديما. يرجى التحديث إلى أحدث إصدار.
+  wwcConfigConversationRateLimitSuccess: تعيين الحد الأقصى للمعدل بنجاح.
+  wwcConfigConversationWatsonURLSuccess: تم تعيين عنوان URL واتسون بنجاح.
+  wwctbPlayerNotFound: لم يتم العثور على اللاعب {0}، أو أنه ليس مترجماً نشطاً.
+  wwcConfigConversationTranslationCacheSuccess: تعيين حد ذاكرة التخزين المؤقت للترجمة
+    بنجاح.
+  wwctInvalidArgs: الوسيطات غير الصالحة المقدمة!
+  wwcConfigGUIPrefixButton: تغيير بادئة البرنامج المساعد
+  wwctSameLangError: لا يمكنك الترجمة إلى نفس اللغة!
+  wwctGUINewTranslationTarget: اختر لغة الهدف
+  wwcConfigConnectionSuccess: تم الاتصال بنجاح بـ {0}!
+  wwcConfigGUIGoogleTranslateButton: ترجمة جوجل
+  wwcConfigGUIPreviousPageButton: الصفحة السابقة
+  wwcConfigGUITranslatorCacheButton: تغيير حد ذاكرة التخزين المؤقت للترجمة
+  wwcConfigConversationbStatsSuccess: بنجاح بتزحلق بستاتس.
+  wwcSignDone: علامة ترجمت بنجاح.
+  wwcConfigInvalidPrefixSettings: فشل قراءة البادئة الخاصة بك. باستخدام الافتراضي...
+  wwcConfigRateLimitInvalid: الحد المعدل السيئ المحدد في config.yml. التخلف عن السداد
+    إلى 0 ثانية...
+  wwcSignTranslateStart: ترجمة علامة الهدف...
+  wwcConfigGUIChatSettings: تكوين الدردشة
+  wwcConfigGUIWatsonURLButton: تغيير عنوان URL لخدمة واتسون
+  wwcConfigConversationUpdateCheckerSuccess: تم تعيين تأخير مدقق التحديث بنجاح.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: تتم ترجمة الدردشة العامة من {0}
+    إلى {0}.
+  wwcConfigGUITranslatorSettings: تكوين المترجم
+  wwcConfigConversationGoogleTranslateAPIKeyInput: مفتاح واجهة برمجة التطبيقات الحالي
+    هو {0}. الرجاء إدخال مفتاح API لترجمة Google، أو اكتب 0 للعودة.
+  wwcConfigConversationRateLimitInput: حد المعدل العام الحالي لكل ترجمة هو {0} ثواني.
+    اكتب أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب 0 لتعطيل الحد. اكتب أي شيء أقل
+    من 0 للعودة.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: جوجل ترجمة أبي مجموعة مفاتيح
+    بنجاح.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: تغيير مفتاح الأمازون السري
+  wwcVersion: وورلدويدتشات، الإصدار
+  wwcsAttemptedTranslations: 'محاولات الترجمات: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: الأمازون مجموعة المفاتيح السرية
+    بنجاح.
+  wwcConfigConversationWatsonAPIKeySuccess: مجموعة مفاتيح واتسون API بنجاح.
+  wwcRateLimit: الترجمات الخاصة بك محدودة معدل. الرجاء الانتظار لثواني أخرى {0}.
+  wwcConfigCacheEnabled: تم تمكين ذاكرة التخزين المؤقت للمترجم وتعيينها إلى حد {0}.
+  wwctGUIExistingTranslationButton: الكتابة فوق جلسة الترجمة الحالية
+  wwcUserDataReloaded: تحميل جميع بيانات المستخدم المحفوظة.
+  wwcConfigGUISendTranslationChatButton: إرسال تذكير الدردشة إلى المترجم النشط عند
+    تسجيل الدخول
+  wwcsLastTranslationTime: 'آخر (ناجح) وقت الترجمة: {0}'
+  wwctbNotATranslator: أنت لست مترجم نشط! تأكد من تعيين هذا مع/wwct.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: مفتاح الوصول الحالي هو {0}.
+    الرجاء إدخال مفتاح وصول لـ Amazon، أو اكتب 0 للعودة.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: تعيين مفتاح الوصول الأمازون
+    بنجاح.
+  wwcConfigBadUpdateDelay: تم تعيين تأخير تحديث غير صالح في config.yml. التخلف عن
+    86400 ثانية...
+  wwctrlRateLimitOffSender: إيقاف حد السعر الخاص بك.
+  wwctrlRateLimitAlreadyOffTarget: حد المعدّل لـ {0} معطل مسبقاً.
+  wwctrlPlayerNotFound: لم يتم العثور على اللاعب {0}، أو أنه ليس مترجماً نشطاً.
+  wwctrlRateLimitSetSender: اضبط حد السعر إلى {0} ثواني.
+  wwctrlRateLimitOffTarget: أوقفت حد معدّل {0}.
+  wwctrlNotATranslator: أنت لست مترجم نشط! تأكد من تعيين هذا مع/wwct.
+  wwctrlRateLimitAlreadyOffSender: حد السعر الخاص بك معطل بالفعل.
+  wwctGUIRateButton: تعيين حد السعر
+  wwctGUIConversationRateLimit: الحد الأقصى للمعدل لكل ترجمة هو حاليا {0} ثانية. اكتب
+    أي شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب 0 لتعطيل الحد. اكتب أي شيء أقل من
+    0 للعودة.
+  wwctGUITargetPlayerNull: لاعب الهدف قطع الاتصال من الخادم.
+  wwcConfigConversationSyncUserDataDelayInput: التأخير الحالي لكل مزامنة لبيانات المستخدم
+    هو {0} ثانية. اكتب أي شيء أكبر من 10 لتعيين قيمة جديدة، أو أي شيء أقل من 10 للعودة.
+  wwcConfigGUISyncUserDataButton: تغيير تأخير مزامنة بيانات المستخدم
+  wwcConfigSyncDelayEnabled: تم تعيين تأخير مزامنة بيانات المستخدم إلى {0} ثانية.
+  wwcConfigConversationSyncUserDataDelaySuccess: تعيين تأخير مزامنة بيانات المستخدم
+    بنجاح.
+  wwcConfigSyncDelayInvalid: تم تعيين تأخير مزامنة بيانات المستخدم غير صالح في config.yml.
+    التخلف عن 7200 ثانية...
+  wwcConfigCacheInvalid: حجم مخبأ المترجم غير صالح. التخلف عن السداد إلى 10...
+  wwcInventoryErrorPlayer: تم اكتشاف خطأ باستخدام واجهة المستخدم الرسومية. تم إرسال
+    سجل إلى وحدة التحكم.
+  wwcInventoryError: تم اكتشاف خطأ باستخدام واجهة المستخدم الرسومية للمستخدم {0}.
+    الرجاء إبلاغ المطور عن هذه المشكلة.
+  wwctiOffTarget: تم تعطيل ترجمة العنصر لـ {0}.
+  wwctiOffSender: تم تعطيل ترجمة العنصر.
+  wwcItemTranslateTitleStock: غير قادر على ترجمة أسماء العناصر الافتراضية.
+  wwctGUIItemButton: تبديل ترجمة العنصر
+  wwcItemTranslateTitleDone: عنوان العنصر المترجم بنجاح.
+  wwcGUITempItem: عرض السلعة
+  wwcItemTranslateStart: ترجمة العنصر المستهدف...
+  wwcBookTranslateTitleSuccess: 'عنوان الكتاب المترجمة: {0}'
+  wwctiOnSender: تم تمكين ترجمة العنصر. انقر بزر الماوس الأيمن مع عنصر في يدك الرئيسية
+    لترجمته!
+  wwcItemTranslateLoreStart: ترجمة تقاليد العنصر المستهدف...
+  wwcItemTranslateLoreDone: تقاليد العنصر المترجم بنجاح.
+  wwctiOnTarget: تم تمكين ترجمة العنصر لـ {0}.
+  wwcInvalidTranslator: إعدادات المترجم غير صالحة. يرجى إصلاح هذا في config.yml الخاص
+    بك أو مع/wwcc لاستخدام هذا البرنامج المساعد.
+  wwcConfigGUIEachTranslatorSettings: تكوين {0}
+  wwcConfigGUIWatsonButton: واتسون
+  wwcServerReloadWarning: لا تتغاضى WorldwideChat عن استخدام/إعادة التحميل. يرجى المتابعة
+    بحذر.
+  wwcConfigEnabledDebugMode: وضع تصحيح الأخطاء الممكّن. إذا لم تكن مطور أو مستكشف
+    الأخطاء ومصلحها، فيجب إيقاف تشغيل هذا.
+  wwcTranslatorErrorThresholdReached: تم الوصول إلى عتبة الخطأ. سيتم الآن إعادة تحميل
+    هذا المكون الإضافي وتعطيل جميع المترجمين.
+  wwcConfigErrorLimitEnabled: تعيين حد خطأ المترجم إلى {0}.
+  wwcTranslatorError: حدثت مشكلة أثناء محاولة الترجمة. يرجى المحاولة مرة أخرى.
+  wwcConfigErrorLimitInvalid: تعيين حد خطأ مترجم غير صالح في config.yml. التخلف عن
+    العمل إلى 5...
+  wwcTranslatorErrorThresholdReachedCheckLogs: يرجى التحقق من errorLog.txt في مجلد
+    البرنامج المساعد WorldwideChat لمزيد من المعلومات.
+  wwctInvalidInputLangCode: 'تم توفير رمز لغة الإدخال غير صالح! رموز اللغة الصالحة:
+    {0}'
+  wwctInvalidOutputLangCode: 'تم توفير رمز لغة الإخراج غير صالح! رموز اللغة الصالحة:
+    {0}'
+  wwctGUISourceTranslationSelected: لقد حددت هذه اللغة.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: حذف التجاوز
+  wwcConfigConversationOverrideTextChange: يرجى كتابة رسالة جديدة لهذا التجاوز، أو
+    اكتب 0 للعودة. تذكر تضمين أي متغيرات تبدأ بعلامات النسبة المئوية التي تراها في
+    الرسالة الأصلية.
+  wwctGUISourceOrTargetTranslationAlreadyActive: هذه اللغة نشطة بالفعل!
+  wwcConfigGUIChatMessagesPossibleOverrides: اختر رسالة
+  wwcConfigGUIChatMessagesModifyOverride: تعديل التجاوز الحالي
+  wwcConfigConversationOverrideDeletionSuccess: تم حذف تجاوز الرسالة المخصصة.
+  wwcConfigGUIChatMessagesDeadOverride: هذا التجاوز إما غير صالح، أو تمت إزالة الرسالة
+    الأصلية. يجب عليك حذف هذا.
+  wwcConfigGUIMessagesAlreadyOverriden: لديك بالفعل تجاوز لهذه الرسالة!
+  wwcConfigGUIChatMessagesOverrideNewButton: إضافة تجاوز جديد
+  wwcConfigGUIMessagesOverrideCustomLabel: رسالة جديدة
+  wwcConfigConversationOverrideTextChangeSuccess: تم تعيين رسالة جديدة بنجاح.
+  wwcConfigGUIChatMessagesOverrideChangeButton: تغيير النص الحالي
+  wwcExampleMessage: هذه رسالة وهمية، ومن المفترض أن يتم تجاوزها كمثال.
+  wwcConfigGUIMessagesOverrideOriginalLabel: الرسالة الأصلية
+  wwcConfigGUIDebugModeButton: تبديل وضع التصحيح
+  wwcConfigConversationDebugModeSuccess: تم تبديل وضع التصحيح بنجاح.
+  wwcConfigGUIErrorLimitButton: تغيير حد خطأ المترجم
+  wwcConfigConversationErrorLimitSuccess: تم تعيين حد الخطأ بنجاح.
+  wwcEntityTranslateStart: ترجمة الكيان المستهدف...
+  wwcConfigGUICharacterLimitButton: تغيير حد أحرف الرسالة
+  wwcConfigMessageCharLimitInvalid: حد غير صالح لكل رسالة تم تعيينها في config.yml.
+    افتراضيًا إلى 255 حرفًا...
+  wwcConfigConversationCharacterLimitSuccess: تم تعيين حد الأحرف بنجاح.
+  wwcteOnTarget: تم تمكين ترجمة الكيان لـ {0}.
+  wwcEntityTranslateDone: 'اسم الكيان المترجم: {0}'
+  wwcEntityTranslateNoName: لا يحتوي الكيان على اسم مخصص.
+  wwcConfigConversationErrorLimitInput: حد الخطأ الحالي لكل مترجم هو {0}. اكتب أي
+    شيء أكبر من 0 لتعيين قيمة جديدة، أو اكتب أي شيء أقل من أو يساوي 0 للعودة.
+  wwcConfigGUIGlobalRateLimitButton: تغيير حد السعر العالمي
+  wwcteOnSender: تم تمكين ترجمة الكيان. انقر بزر الماوس الأيمن على كيان لترجمة اسمه!
+  wwcConfigGUIResponseLimitButton: تغيير مهلة استجابة المترجم
+  wwcConfigMessageCharLimitEnabled: تم تعيين حد الأحرف لكل رسالة إلى أحرف {0}.
+  wwcteOffTarget: تم تعطيل ترجمة الكيان لـ {0}.
+  wwcCharLimit: رسالتك طويلة جدًا! يرجى التأكد من أن رسالتك أقل من {0} حرف في الطول.
+  wwcteOffSender: تم تعطيل ترجمة الكيان.
+  wwctGUIEntityButton: تبديل ترجمة الكيان
+  wwctrlRateLimitBadInt: حد السعر الخاص بك ليس عددًا صحيحًا صالحًا.
+  wwcTranslatorErrorConsole: حدثت مشكلة أثناء محاولة المستخدم {0} ترجمته. يرجى التحقق
+    من errorLog.txt لمزيد من التفاصيل.
+  wwctGUIChatButton: تبديل ترجمة الدردشة
+  wwcrBegin: إعادة تحميل الدردشة في جميع أنحاء العالم...
+  wwctTranslationStoppedOtherPlayer: تم إيقاف جلسة الترجمة لـ {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: تتم ترجمة الدردشة العالمية،
+    ولكن لديك جلسة ترجمة نشطة من {0} إلى {1}.
+  wwctCannotTranslateConsole: لا يمكنك بدء جلسة ترجمة لوحدة التحكم!
+  wwcOnJoinTranslationNotificationSourceLang: لديك جلسة ترجمة نشطة من {0} إلى {1}.
+  wwctTranslationStopped: تم إيقاف جلسة الترجمة الخاصة بك.
+  wwctAutoTranslateStart: بدء جلسة ترجمة جديدة إلى {0}.
+  wwcOnJoinTranslationNotificationNoSourceLang: لديك جلسة ترجمة نشطة إلى {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: تتم ترجمة الدردشة العالمية،
+    ولكن لديك جلسة ترجمة نشطة إلى {0}.
+  wwcConfigGUIChangesNotSaved: لن تسري التغييرات الخاصة بك حتى تنقر على الحاجز الأحمر
+    في/wwcc.
+  wwctciOffSender: تم تعطيل ترجمة الدردشة الواردة.
+  wwctGUIChatIncomingButton: تبديل ترجمة الدردشة الواردة
+  wwctcoOffSender: تم تعطيل ترجمة الدردشة الصادرة.
+  wwctcoOnSender: تم تمكين ترجمة الدردشة الصادرة. سيتم ترجمة أي شيء تقوله!
+  wwctciOnSender: تم تمكين ترجمة الدردشة الواردة. سيتم ترجمة أي شيء تتلقاه!
+  wwctGUIChatMenu: تبديل قائمة ترجمة الدردشة
+  wwctcoOnTarget: تم تمكين ترجمة الدردشة الصادرة لـ {0}.
+  wwctcoOffTarget: تم تعطيل ترجمة الدردشة الصادرة لـ {0}.
+  wwctGUIChatOutgoingButton: تبديل ترجمة الدردشة الصادرة
+  wwctciOnTarget: تم تمكين ترجمة الدردشة الواردة لـ {0}.
+  wwctciOffTarget: تم تعطيل ترجمة الدردشة الواردة لـ {0}.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: الدردشة الواردة الأصلية المرفقة
+    بالترجمة كنص تحوم تم تبديل النص بنجاح.
+  wwcConfigGUISendIncomingHoverTextChatButton: إضافة رسائل واردة أصلية كنص تحوم
+  wwctGUIExistingChatOutgoingEnabled: 'تمكين ترجمة الدردشة الصادرة: {0}'
+  wwctGUIExistingTranslationInput: 'لغة الإدخال: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'تمكين ترجمة الدردشة الواردة: {0}'
+  wwctGUIExistingTranslationOutput: 'لغة الإخراج: {0}'
+  wwcTranslatorAttempt: محاولة الاتصال بالمترجم في config.yml... (محاولة {0}/ {1})
+  wwcTimeoutExceptionConsole: كان لدى اللاعب {0} أحدث مهلة طلب. هذا الخطأ ليس قاتلاً،
+    ولكن يجب إعادة تحميل WorldwideChat إذا استمر حدوثه.
+  wwcGUIPageNumber: 'رقم الصفحة: {0}'
+  wwcConfigYAMLFallback: العودة إلى YAML...
+  wwcConfigGUIToggleSQLButton: تبديل SQL
+  wwcConfigConversationToggleSQLSuccess: تم تبديل SQL بنجاح. أعد التحميل حتى يصبح
+    التغيير ساري المفعول.
+  wwcConfigConversationGoogleTranslateToggleSuccess: تم تبديل ترجمة Google بنجاح.
+    أعد التحميل حتى يصبح التغيير ساري المفعول.
+  wwcConfigYAMLDefault: افتراضيًا إلى YAML لتخزين البيانات.
+  wwcConfigGUISQLMenuButton: تغيير إعدادات SQL
+  wwcConfigConversationWatsonTranslateToggleSuccess: نجحت في تبديل Watson Translate.
+    أعد التحميل حتى يصبح التغيير ساري المفعول.
+  wwcConfigGUIToggleGoogleTranslateButton: تبديل ترجمة جوجل
+  wwcConfigGUIToggleWatsonTranslateButton: تبديل ترجمة واتسون
+  wwcConfigGUIToggleAmazonTranslateButton: تبديل ترجمة أمازون
+  wwcConfigGUIStorageSettings: تكوين التخزين
+  wwcConfigConversationAmazonTranslateToggleSuccess: تم تبديل ترجمة أمازون بنجاح.
+    أعد التحميل حتى يصبح التغيير ساري المفعول.
+  wwcConfigGUISQLPortButton: تغيير منفذ SQL
+  wwcConfigGUISQLOptionalArgsButton: تغيير الوسيطات الاختيارية SQL
+  wwcConfigConversationToggleSQLSSLSuccess: SSL لـ SQL تبديل بنجاح.
+  wwcConfigConversationSQLPortInput: المنفذ الحالي هو {0}. اكتب أي شيء آخر غير 0 لتعيين
+    منفذ جديد، أو اكتب 0 للعودة.
+  wwcConfigGUISQLPasswordButton: تغيير كلمة مرور SQL
+  wwcConfigConversationSQLHostnameSuccess: تم تغيير اسم مضيف SQL بنجاح.
+  wwcConfigConversationSQLHostnameInput: اسم المضيف الحالي هو {0}. اكتب أي شيء آخر
+    غير 0 لتعيين اسم مضيف جديد، أو اكتب 0 للعودة.
+  wwcConfigGUISQLHostnameButton: تغيير اسم مضيف SQL
+  wwcConfigConversationSQLOptionalArgsSuccess: تم تغيير وسيطات SQL الاختيارية بنجاح.
+  wwcConfigConversationSQLPasswordSuccess: تم تغيير كلمة مرور SQL بنجاح.
+  wwcConfigConversationSQLPasswordInput: كلمة المرور الحالية هي {0}. اكتب أي شيء بخلاف
+    0 لتعيين كلمة مرور جديدة، أو اكتب 0 للرجوع إليها.
+  wwcConfigGUIToggleSQLSSLButton: تبديل SQL SSL
+  wwcConfigConversationSQLUsernameSuccess: تم تغيير اسم مستخدم SQL بنجاح.
+  wwcConfigConversationSQLUsernameInput: اسم المستخدم الحالي هو {0}. اكتب أي شيء آخر
+    غير 0 لتعيين اسم مستخدم جديد، أو اكتب 0 للرجوع إليه.
+  wwcConfigConversationSQLPortSuccess: تم تغيير منفذ SQL بنجاح.
+  wwcConfigGUISQLUsernameButton: تغيير اسم مستخدم SQL
+  wwcConfigConversationSQLOptionalArgsCleared: تم مسح الوسيطات الاختيارية بنجاح.
+  wwcConfigConversationSQLOptionalArgsInput: 'وسيطات SQL الاختيارية الحالية هي: {0}.
+    اكتب وسيطات مفصولة بفاصلة (key=value، key2=value2)، أو اكتب clear لمسح args الحالية،
+    أو اكتب 0 للعودة.'
+  wwcConfigConversationSQLDatabaseNameInput: اسم قاعدة البيانات الحالي هو {0}. اكتب
+    أي شيء آخر غير 0 لتعيين اسم قاعدة بيانات جديد، أو اكتب 0 للرجوع إليه.
+  wwcConfigGUISQLDatabaseNameButton: تغيير قاعدة بيانات SQL
+  wwcConfigConversationSQLDatabaseNameSuccess: تم تغيير اسم قاعدة بيانات SQL بنجاح.
+  wwcConfigConversationFatalAsyncAbort: المهلة الحالية لإجهاض جميع المهام غير المتزامنة
+    هي {0} ثانية. اكتب أي شيء فوق 7 لتعيين مهلة جديدة، أو أي شيء أسفله للعودة.
+  wwcConfigConversationFatalAsyncSuccess: تم تعيين مهلة مهمة غير متزامنة بنجاح.
+  wwcConfigGUIFatalAsyncAbortButton: تغيير مهلة المهام غير المتزامنة
+  libreHttp400: تم إرسال طلب سيء إلى Libre Translate! ما لم تكن تفعل شيئًا لا يجب
+    عليك فعله، فلا يجب أن تحصل عليه. يرجى الاتصال بالمطور!
+  wwcConfigGUILibreTranslateApiKeyButton: تغيير مفتاح واجهة برمجة التطبيقات لترجمة
+    Libre
+  libreHttp403: مفتاح واجهة برمجة تطبيقات Libre Translate مفقود، أو تم حظرك من الخادم!
+  wwcConfigConversationLibreURLSuccess: تم تعيين عنوان URL Libre بنجاح.
+  wwcConfigConversationLibreTranslateApiKeyInput: مفتاح API الحالي هو {0}. الرجاء
+    إدخال مفتاح API لـ Libre، أو اكتب 0 للرجوع إليه.
+  wwcConfigGUILibreTranslateButton: ترجمة ليبر
+  libreHttp429: عدم الثقة بسبب حد المعدل من الخادم.
+  wwcConfigGUIToggleLibreTranslateButton: تبديل ليبر ترجمة
+  wwcConfigConversationLibreTranslateToggleSuccess: تم تبديل ترجمة Libre بنجاح. أعد
+    تحميل التغييرات لتصبح نافذة المفعول.
+  wwcConfigConversationLibreTranslateApiKeySuccess: تم تعيين مفتاح Libre API بنجاح.
+  wwcConfigConversationLibreURLInput: عنوان URL الحالي هو {0}. الرجاء إدخال عنوان
+    URL لـ Libre، أو اكتب 0 للرجوع إليه.
+  libreHttpUnknown: 'خطأ http غير معروف: {0}'
+  wwcConfigGUILibreTranslateURLButton: تغيير عنوان URL لترجمة Libre
+  wwcConfigConnectionFail: فشل الاتصال بـ {0}.
+  wwcConfigConversationMongoDatabaseNameSuccess: تم تغيير اسم قاعدة بيانات MongoDB
+    بنجاح.
+  wwcConfigGUIMongoHostnameButton: تغيير اسم مضيف MongoDB
+  wwcConfigConversationMongoPasswordInput: كلمة المرور الحالية هي {0}. اكتب أي شيء
+    آخر غير 0 لتعيين كلمة مرور جديدة، أو اكتب 0 للرجوع.
+  wwcConfigConversationMongoPortInput: المنفذ الحالي هو {0}. اكتب أي شيء آخر غير 0
+    لتعيين منفذ جديد، أو اكتب 0 للرجوع إليه.
+  wwcConfigConversationToggleMongoSuccess: تم تبديل MongoDB بنجاح. أعد التحميل حتى
+    يصبح التغيير ساري المفعول.
+  wwcConfigConversationMongoHostnameInput: اسم المضيف الحالي هو {0}. اكتب أي شيء آخر
+    غير 0 لتعيين اسم مضيف جديد، أو اكتب 0 للرجوع إليه.
+  wwcConfigConversationMongoHostnameSuccess: تم تغيير اسم مضيف MongoDB بنجاح.
+  wwcConfigGUIMongoMenuButton: تغيير إعدادات MongoDB
+  wwcConfigGUIToggleMongoButton: تبديل مونغودب
+  wwcConfigConversationMongoDatabaseNameInput: اسم قاعدة البيانات الحالي هو {0}. اكتب
+    أي شيء آخر غير 0 لتعيين اسم قاعدة بيانات جديد، أو اكتب 0 للرجوع إليه.
+  wwcConfigConversationMongoOptionalArgsInput: 'وسيطات MongoDB الاختيارية الحالية
+    هي: {0}. اكتب وسيطات مفصولة بفاصلة (key=value, key2=value2)، أو اكتب clear لمسح
+    الوسيطات الحالية، أو اكتب 0 للرجوع.'
+  wwcConfigGUIMongoDatabaseNameButton: تغيير قاعدة بيانات MongoDB
+  wwcConfigConversationMongoUsernameInput: اسم المستخدم الحالي هو {0}. اكتب أي شيء
+    آخر غير 0 لتعيين اسم مستخدم جديد، أو اكتب 0 للرجوع إليه.
+  wwcConfigGUIMongoOptionalArgsButton: تغيير الوسائط الاختيارية MongoDB
+  wwcConfigConversationMongoUsernameSuccess: تم تغيير اسم مستخدم MongoDB بنجاح.
+  wwcConfigConversationMongoPasswordSuccess: تم تغيير كلمة مرور MongoDB بنجاح.
+  wwcConfigConversationMongoPortSuccess: تم تغيير منفذ MongoDB بنجاح.
+  wwcConfigGUIMongoUsernameButton: تغيير اسم مستخدم MongoDB
+  wwcConfigGUIMongoPasswordButton: تغيير كلمة مرور MongoDB
+  wwcConfigConversationMongoOptionalArgsSuccess: تم تغيير وسيطات MongoDB الاختيارية
+    بنجاح.
+  wwcConfigConversationMongoOptionalArgsCleared: تم مسح الوسيطات الاختيارية بنجاح.
+  wwcConfigGUIMongoPortButton: تغيير منفذ MongoDB
+  wwcConfigInvalidFatalAsyncTimeout: تم تعيين مهلة غير متزامنة قاتلة غير صالحة. الإعداد
+    الافتراضي هو 10 ثوانٍ...
+  libreHttp500: زوج لغات الإدخال والإخراج المحدد غير مدعوم. يرجى اختيار مجموعة لغات
+    مختلفة!
+  wwcConfigGUIDeepLTranslateButton: تبديل ترجمة DeepL
+  wwcConfigConversationDeepLTranslateToggleSuccess: تم تبديل ترجمة DeepL بنجاح. أعد
+    التحميل لتصبح التغييرات نافذة المفعول.
+  wwcConfigGUIDeepLTranslateApiKeyButton: تغيير مفتاح واجهة برمجة تطبيقات الترجمة
+    DeepL
+  wwcConfigGUIToggleDeepLTranslateButton: تبديل ترجمة DeepL
+  wwcConfigConversationDeepLTranslateApiKeySuccess: تم تعيين مفتاح DeepL API بنجاح.
+  wwcConfigConversationDeepLTranslateApiKeyInput: مفتاح API الحالي هو {0}. الرجاء
+    إدخال مفتاح API لـ DeepL، أو اكتب 0 للعودة.
+  wwcConfigErrorsToIgnoreSuccess: تم تسجيل أخطاء المترجم بنجاح لتجاهلها.
+  wwcConfigErrorsToIgnoreInvalid: أخطاء مترجم غير صالحة لتجاهل المجموعة في config.yml.
+    جاري تسجيل الإعدادات الافتراضية...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: تم تغيير أخطاء المترجم بنجاح لتجاهل العبارات.
+  wwcConfigGUIIgnoreErrorsButton: تغيير الأخطاء لتجاهلها
+  wwcConfigConversationIgnoreErrorsInput: 'قائمة العبارات الحالية في أخطاء المترجم
+    التي يجب تجاهلها هي: {0}. اكتب وسيطات مفصولة بفاصلة (key=value، key2=value2)،
+    أو اكتب clear لمسح args الحالية، أو اكتب 0 للرجوع. بالإضافة إلى ذلك، ستؤدي كتابة
+    «*» إلى عدم تحقق المكون الإضافي من أي أخطاء في المترجم.'
+  wwcConfigConversationIgnoreErrorsCleared: تم مسح أخطاء المترجم لتجاهل العبارات بنجاح.
+  wwcSupportedServer: بدء تشغيل WorldwideChat لـ {0}...
+  wwcSupportedVersion: تمكين الميزات للإصدار {0}...
+  wwcBadPerms: 'ليس لديك الأذونات المطلوبة لتنفيذ هذا الأمر: {0}'
+  wwcsIsActiveTranslator: 'هل المترجم النشط: {0}'
+  wwcsActiveTransPrevRate: 'الوقت المحدد للمعدل السابق: {0}'
+  wwcsActiveTransSaved: 'تم الحفظ على القرص: {0}'
+  wwcsActiveTransIncoming: 'ترجمة الدردشة الواردة: {0}'
+  wwcsActiveTransOutLang: 'لغة الإخراج: {0}'
+  wwcsActiveTransInLang: 'لغة الإدخال: {0}'
+  wwcsActiveTransBook: 'كتاب الترجمة: {0}'
+  wwcsActiveTransSign: 'علامة الترجمة: {0}'
+  wwcsActiveTransUUID: 'اسم المستخدم: {0}'
+  wwcsActiveTransRateLimit: 'حد السعر: {0}'
+  wwcsActiveTransColorWarning: 'تحذير اللون المستلم: {0}'
+  wwcsActiveTransSignWarning: 'تحذير تحرير التوقيع المستلم: {0}'
+  wwcsTitle: سجل {0}
+  wwcsActiveTransOutgoing: 'ترجمة الدردشة الصادرة: {0}'
+  wwcsActiveTransItem: 'ترجمة العنصر: {0}'
+  wwcsActiveTransEntity: 'الكيان المترجم: {0}'
+  wwctsWarning: تم تعطيل تعديل التوقيع أثناء ترجمة العلامات.
+  wwcConfigConversationAzureTranslateToggleSuccess: تم تبديل Azure Translate بنجاح.
+    أعد التحميل لتصبح التغييرات سارية المفعول.
+  wwcConfigGUIAzureTranslateButton: ترجمة أزور
+  wwcConfigGUIAzureTranslateApiKeyButton: تغيير مفتاح واجهة برمجة تطبيقات الترجمة
+    في Azure
+  wwcConfigGUIAzureTranslateRegionButton: تغيير منطقة ترجمة Azure
+  wwcConfigConversationAzureTranslateRegionSuccess: تم تعيين منطقة Azure بنجاح.
+  wwcConfigConversationAzureTranslateApiKeyInput: مفتاح API الحالي هو {0}. يرجى إدخال
+    مفتاح API لـ Azure، أو اكتب 0 للعودة.
+  wwcConfigConversationAzureTranslateApiKeySuccess: تم تعيين مفتاح Azure API بنجاح.
+  wwcConfigConversationAzureTranslateRegionInput: المنطقة الحالية هي {0}. يرجى إدخال
+    منطقة لـ Azure، أو اكتب 0 للعودة.
+  wwcConfigGUIToggleAzureTranslateButton: قم بتبديل ترجمة أزور
+  wwcConfigGUISystranTranslateApiKeyButton: تغيير مفتاح واجهة برمجة تطبيقات ترجمة
+    النظام
+  wwcConfigGUIToggleSystranTranslateButton: تبديل ترجمة النظام
+  wwcConfigConversationSystranTranslateApiKeyInput: مفتاح API الحالي هو {0}. يرجى
+    إدخال مفتاح API لـ Systran، أو اكتب 0 للعودة.
+  wwcISOJSONFail: غير قادر على إصلاح كائنات اللغة باستخدام ISO JSON.
+  wwcConfigConversationSystranTranslateToggleSuccess: تم تبديل ترجمة النظام بنجاح.
+    أعد التحميل لتصبح التغييرات سارية المفعول.
+  wwcConfigConversationSystranTranslateApiKeySuccess: تم تعيين مفتاح Systran API بنجاح.
+  wwcConfigGUISystranTranslateButton: ترجمة النظام
+  wwcrTransFail: تم إعادة تحميل WorldwideChat ولكنه فشل في تمكين المترجم.
+  wwcdCacheCleared: تم مسح ذاكرة التخزين المؤقت للترجمة.
+  wwcdInvalidCmd: حجج غير صالحة!
+  systranHttpUnknown: 'خطأ http غير معروف: {0}'
+  systranHttp400: تم إرسال المعلمات السيئة إلى Systran. قد يكون زوجًا لغويًا سيئًا؟
+  systranHttp500: خطأ خادم داخلي من نقطة نهاية النظام ({0}).
+  wwcInvalidStorageSession: تم تمكين {0} في التكوين الخاص بك، ولكن لم يتم إنشاء اتصال.
+    يرجى محاولة إعادة التحميل لإصلاح هذا، ولكن يرجى الاتصال بالمطور إذا كنت قد تلقيت
+    سابقًا رسالة اتصال ناجحة من {0}.
+  wwcConfigConversationPostgresDatabaseNameSuccess: تم تغيير اسم قاعدة بيانات PostgreSQL
+    بنجاح.
+  wwcConfigConversationPostgresOptionalArgsCleared: تم مسح الحجج الاختيارية بنجاح.
+  wwcConfigConversationPostgresPortInput: المنفذ الحالي هو {0}. اكتب أي شيء بخلاف
+    0 لتعيين منفذ جديد، أو اكتب 0 للعودة.
+  wwcConfigGUIPostgresUsernameButton: تغيير اسم مستخدم PostgreSQL
+  wwcConfigConversationPostgresOptionalArgsSuccess: تم تغيير حجج PostgreSQL الاختيارية
+    بنجاح.
+  wwcConfigConversationTogglePostgresSSLSuccess: تم تبديل SSL لـ PostgreSQL بنجاح.
+  wwcConfigConversationPostgresPasswordSuccess: تم تغيير كلمة مرور PostgreSQL بنجاح.
+  wwcConfigConversationPostgresPortSuccess: تم تغيير منفذ PostgreSQL بنجاح.
+  wwcConfigConversationPostgresUsernameInput: اسم المستخدم الحالي هو {0}. اكتب أي
+    شيء بخلاف 0 لتعيين اسم مستخدم جديد، أو اكتب 0 للرجوع.
+  wwcConfigConversationTogglePostgresSuccess: تم تبديل PostgreSQL بنجاح. أعد التحميل
+    حتى يدخل التغيير حيز التنفيذ.
+  wwcConfigGUITogglePostgresButton: تبديل بوستغريزل
+  wwcConfigGUIPostgresPasswordButton: تغيير كلمة مرور PostgreSQL
+  wwcConfigGUIPostgresOptionalArgsButton: تغيير الحجج الاختيارية لـ PostgreSQL
+  wwcConfigGUIPostgresMenuButton: تغيير إعدادات بوستغريزل
+  wwcConfigConversationPostgresPasswordInput: كلمة المرور الحالية هي {0}. اكتب أي
+    شيء بخلاف 0 لتعيين كلمة مرور جديدة، أو اكتب 0 للعودة.
+  wwcConfigConversationPostgresHostnameInput: اسم المضيف الحالي هو {0}. اكتب أي شيء
+    بخلاف 0 لتعيين اسم مضيف جديد، أو اكتب 0 للعودة.
+  wwcConfigGUIPostgresPortButton: تغيير منفذ بوستغريزل
+  wwcConfigConversationPostgresHostnameSuccess: تم تغيير اسم مضيف PostgreSQL بنجاح.
+  wwcConfigGUIPostgresHostnameButton: تغيير اسم مضيف بوستغريزل
+  wwcConfigConversationPostgresDatabaseNameInput: اسم قاعدة البيانات الحالية هو {0}.
+    اكتب أي شيء بخلاف 0 لتعيين اسم قاعدة بيانات جديد، أو اكتب 0 للرجوع.
+  wwcConfigConversationPostgresOptionalArgsInput: 'حجج PostgreSQL الاختيارية الحالية
+    هي: {0}. اكتب الوسيطات المفصولة بفاصلة (key=value، key2=value2)، أو اكتب clear
+    لمسح args الحالية، أو اكتب 0 للرجوع.'
+  wwcConfigGUITogglePostgresSSLButton: قم بتبديل بوستغريزل SSL
+  wwcConfigGUIPostgresDatabaseNameButton: تغيير قاعدة بيانات بوستغريزل
+  wwcConfigConversationPostgresUsernameSuccess: تم تغيير اسم مستخدم PostgreSQL بنجاح.
+  wwcConfigGUIStorageTypeSettings: '{0} التكوين'
+  wwcConfigConversationPrefixInput: البادئة الحالية هي {0}. يرجى كتابة واحدة جديدة،
+    أو كتابة 0 للعودة.
+  wwcConfigConversationLangInput: 'لغة البرنامج المساعد الحالية هي {0}. يرجى إدخال
+    رمز لغة صالح، أو اكتب 0 للإلغاء. رموز اللغة الصالحة: {1}'
+  wwcdCacheSize: حجم ذاكرة التخزين المؤقت حاليًا هو {0}، بحد أقصى {1}.
+  wwcdCacheTerm: '{0}. الترجمة المخزنة مؤقتًا: وقت الإدخال = {1}، وقت الإخراج = {2}،
+    عبارة الإدخال = {3} | عبارة الإخراج = {4}'
+  wwctLangToLangStart: بدء جلسة ترجمة جديدة من {0} إلى {1}.
+  wwctAutoTranslateStartOtherPlayer: بدء جلسة ترجمة جديدة لـ {0} إلى {1}.
+  wwctLangToLangStartOtherPlayer: بدء جلسة ترجمة جديدة لـ {0} من {1} إلى {2}.
+  wwcgLangToLangStart: الآن نقوم بترجمة الدردشة العالمية من {0} إلى {1}.
+  wwctrlRateLimitSetTarget: قم بتعيين حد المعدل من {0} إلى {1} ثانية.
+  wwcTimeoutException: انتهت مهلة طلبك. يرجى المحاولة مرة أخرى.
+  wwctbNoMoreOldBooks: ترجمة الكتب لا تعمل على إصدار الخادم الخاص بك. إذا كنت تستخدم
+    إصدارًا أحدث من Minecraft وظهرت لك هذا الخطأ، فيرجى الاتصال بالمطور.
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: اختر التعريب
+  wwcConfigGUIMessagesOverridePickChatButton: تجاوز رسائل البرنامج المساعد الافتراضية
+  wwcConfigGUIChatMessagesOverrideSettings: تجاوز الرسائل الافتراضية ({0})
+  wwcConfigGUIMessagesServerLang: هذه هي اللغة الافتراضية للمكوِّن الإضافي في config.yml.
+  wwclLangStopped: تمت إعادة تعيين الترجمة الخاصة بك إلى الخادم الافتراضي.
+  wwclLangInvalid: '{0} ليست ترجمة صالحة. الترجمات المدعومة: {1}'
+  wwclLangStoppedOtherPlayerSender: أعد تعيين تعريب {0} إلى الخادم الافتراضي.
+  wwclLangPlayerNotValid: '{0} ليس لاعبًا صالحًا.'
+  wwclLangChangedOtherPlayerSender: تم تغيير تعريب {0} إلى {1}.
+  wwclLangChanged: تم تغيير الترجمة الخاصة بك إلى {0}.
+  wwcsLocalization: 'التعريب: {0}'
+  wwclLangAlreadyStopped: ليس لديك مجموعة تعريب.
+  wwclLangAlreadyStoppedOtherPlayerSender: لا يحتوي {0} على مجموعة تعريب.
+  wwctGUILocalizeExistingValue: 'التعريب الحالي: {0}'
+  wwctGUILocalizationButton: تعيين التعريب
+  wwctGUILocalizeStopButton: إعادة تعيين الترجمة إلى الخادم الافتراضي
+  wwctGUILocalizeTitle: قائمة التعريب
+  wwctGUISourceSameLang: ستكون هذه اللغة هي نفس لغة المصدر الخاصة بك.
+  wwcConfigGUICurrentPlayerLang: هذه هي الترجمة الحالية الخاصة بك.
+  wwctGUILocalizationSameAsServer: هذه هي الترجمة الافتراضية لـ WorldwideChat.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: هذه اللغة نشطة بالفعل على مستوى العالم!
+  wwcrStorageTranslatorFail: تم إعادة تحميل WorldwideChat ولكنه فشل في تمكين المترجم
+    والاتصال بتكوين التخزين الخاص بك.
+  wwcrStorageFail: تم إعادة تحميل WorldwideChat وتمكين المترجم بنجاح، ولكن تكوين التخزين
+    الخاص بك فشل في الاتصال.
+  wwcConfigPersistentCacheInvalid: إدخال ذاكرة التخزين المؤقت الدائم غير صالح في config.yml.
+    يتم التعثر في الخطأ...
+  wwcConfigGUIPersistentCacheButton: تبديل ذاكرة التخزين المؤقت الدائمة
+  wwcConfigConversationPersistentCacheSuccess: تم تبديل ذاكرة التخزين المؤقت الدائمة
+    بنجاح.
+  wwcConfigPersistentCacheEnabled: ستستمر بيانات ذاكرة التخزين المؤقت عبر عمليات إعادة
+    التحميل.
+  wwcConfigConversationCharacterLimitInput: الحد الحالي لعدد الأحرف لكل رسالة هو {0}
+    حرفًا. اكتب أي شيء أكبر من 0 (ولكن أقل من 256) لتعيين قيمة جديدة، أو اكتب 0 للعودة.
+  wwcdOutdatedSQLStruct: يبدو أن واحدًا أو أكثر من جداول MySQL أو PostgreSQL يحتوي
+    على تنسيق غير صحيح/قديم. تمت طباعة المزيد من المعلومات المفصلة حول هذه المشكلة
+    على وحدة التحكم الخاصة بك؛ قد تتمكن من إصلاح هذا يدويًا.
+  wwcdSQLAllSet: يتم تنسيق جداول MySQL/PostgreSQL الخاصة بك بشكل صحيح.
+  wwcdColumnBadType: يحتوي العمود {0} في الجدول {1} على النوع {2} ولكن النوع المتوقع
+    {3}.
+  wwcdColumnMissing: العمود {0} مفقود في الجدول {1}.
+  wwcdGoodTable: الجدول {0} ({1}) هو التنسيق الصحيح.
+  wwcdBadTable: لم يتم العثور على الجدول {0} في التعريفات الداخلية. يرجى الاتصال بالمطور.
+  wwcOldDatabaseStruct: 'تحتوي قاعدة البيانات التي اخترتها على إعداد جدول غير صحيح.
+    اكتب الأمر التالي لمزيد من المعلومات: /wwcd checkdb'
+  wwctGUIRateButtonLore: 'حد المعدل الحالي: {0} ثانية'
+  wwcConfigGUIVaultSupportButton: دعم تبديل Vault
+  wwcConfigConversationVaultSupportSuccess: تم تبديل دعم Vault بنجاح.
+  wwcVaultEnabled: تم تمكين دعم Vault.
+  wwcVaultFoundButDisabled: تم العثور على Vault، ولكن لم يتم تسجيل أي مكون إضافي للدردشة.
+    تعطيل دعم Vault...
+  wwcConfigGUIToggleRestartRequired: يلزم إعادة تشغيل الخادم بالكامل لتطبيق هذا الإعداد.
+

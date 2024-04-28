@@ -11,6 +11,7 @@ import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.event.HoverEvent;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
+import net.milkbowl.vault.chat.Chat;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -19,7 +20,9 @@ import org.bukkit.scheduler.BukkitRunnable;
 import org.eclipse.sisu.inject.Legacy;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class PaperChatListener implements Listener {
 
@@ -45,7 +48,7 @@ public class PaperChatListener implements Listener {
             }
 
             /* New WWC functionality/Translate Incoming Messages */
-            List<Audience> unmodifiedMessageRecipients = new ArrayList<Audience>();
+            Set<Audience> unmodifiedMessageRecipients = new HashSet<Audience>();
             for (Audience eaRecipient : event.viewers()) {
                 // Do not handle non-players
                 if (!(eaRecipient instanceof Player)) {
@@ -68,7 +71,6 @@ public class PaperChatListener implements Listener {
                     String translation = refs.translateText(originalText + " (Translated)", currPlayer);
                     Component hoverOutMessage = LegacyComponentSerializer.legacyAmpersand().deserialize(translation);
 
-                    // TODO: Make this a translator feature alongside a config option
                     // Add hover text w/original message
                     if (main.getConfigManager().getMainConfig().getBoolean("Chat.sendIncomingHoverTextChat")) {
                         hoverOutMessage = hoverOutMessage
@@ -78,12 +80,18 @@ public class PaperChatListener implements Listener {
                     // Re-render original message but with new text.
                     Component outMsg = event.renderer().render(event.getPlayer(), event.getPlayer().displayName(), hoverOutMessage, Audience.audience(event.viewers()));
                     currPlayer.sendMessage(outMsg);
+
+                    // Render original message? (dumb)
+                    // TODO: Currently there is a bug where event.renderer().render permanently overwrites.
+                    // Anyone with /wwctci auto overwrites anyone with /wwctco.
+                    // Fix later
+                    event.renderer().render(event.getPlayer(), event.getPlayer().displayName(), event.message(), Audience.audience(event.viewers()));
                 } else {
+                    refs.debugMsg("Ignoring " + currPlayer.getName());
                     unmodifiedMessageRecipients.add(eaRecipient);
                 }
             }
-            event.viewers().clear();
-            event.viewers().addAll(unmodifiedMessageRecipients);
+            event.viewers().retainAll(unmodifiedMessageRecipients);
         } catch (Exception e) {
             if (!refs.serverIsStopping()) {
                 throw e;

@@ -24,12 +24,14 @@ public class PaperWorldwideChatHelper extends WorldwideChatHelper {
             // 1.2x supports sign editing
             pluginManager.registerEvents(new PaperSignListener(), main);
         }
-        pluginManager.registerEvents(new PaperChatListener(), main);
+        // TODO: FIX
+        //pluginManager.registerEvents(new PaperChatListener(), main);
+        pluginManager.registerEvents(new ChatListener(), main);
         pluginManager.registerEvents(new OnPlayerJoinListener(), main);
         pluginManager.registerEvents(new TranslateInGameListener(), main);
         pluginManager.registerEvents(new InventoryListener(), main);
         main.getLogger().info(ChatColor.LIGHT_PURPLE
-                + refs.getMsg("wwcListenersInitialized"));
+                + refs.getMsg("wwcListenersInitialized", null));
     }
 
 }

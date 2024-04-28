@@ -1,0 +1,588 @@
+Messages:
+  wwcgAutoTranslateStart: Енді жаһандық чатты аудару {0}.
+  wwcGlobalOnJoinTranslationNotificationNoSourceLang: Ғаламдық чат аударылады {0}.
+  wwcConfigGUIAmazonTranslateAccessKeyButton: Amazon кіру кілтін өзгерту
+  wwcrFail: WorldwideChat қайта жүктеу сәтсіз аяқталды.
+  wwcConfigGUIUpdateCheckerButton: Жаңартулардың кешігуін тексеріңіз
+  wwcUpdaterFailedGeneric: WorldwideChat жаңартуларын тексеру мүмкін емес.
+  wwcConfigConversationUpdateCheckerInput: Жаңартуды тексергіштегі ағымдағы кідіріс
+    {0} секунд болып табылады. Жаңа мәнді орнату үшін 10-нан асатын нәрсені немесе
+    оралу үшін 10-нан аз нәрсені теріңіз.
+  wwctGUIMainMenuGlobal: Жаһандық аударма мәзірі
+  wwcConfigConversationPluginUpdateChatSuccess: Плагин жаңарту чат еске салғыш сәтті
+    toggled.
+  wwctbOnTarget: Кітап аудармасы {0} үшін қосылған.
+  wwcsNotATranslator: '{0} үшін әлі қол жетімді жазбалар жоқ.'
+  wwcConfigGUIbStatsButton: Toggle bStats
+  wwctGUINewTranslationSource: Бастапқы тілді таңдаңыз
+  wwcConfigConnectionFailed: '{0} жүйесіне қосыла алмады. тіркелгі деректері мен брандмауэр
+    дұрыс конфигурацияланғанына көз жеткізіңіз!'
+  wwcConfigEnabledbStats: Қосылған bStats.
+  wwctGUIMainMenuPlayer: '{0} аударма мәзірі'
+  wwctGUIBookButton: Toggle кітап аудармасы
+  wwcLangDetected: Анықталған тілі {0}.
+  wwcBookTranslateStart: Мақсатты кітапты аудару...
+  wwcConfigDisabledbStats: Мүгедек bStats.
+  wwctsOffSender: Суретті аударма өшірілген.
+  wwcUpdaterParserFailed: Github бағдарламасынан жаңарту деректерін парс сәтсіз аяқталды.
+  wwcConfigConversationAmazonTranslateSecretKeyInput: Ағымдағы құпия кілт {0} болып
+    табылады, Amazon үшін құпия кілтті енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwctbOffSender: Кітап аудармасы өшірілген.
+  wwcConfigGUIAmazonTranslateButton: Amazon аудару
+  wwcConfigConversationLangSuccess: Плагин тілі сәтті өзгерді.
+  wwcsSuccessfulTranslations: 'Табысты аудармалар: {0}'
+  wwcConfigConversationTranslationCacheInput: Ағымдағы аударма кэш шектеуі {0} тіркестер
+    болып табылады. Жаңа мәнді орнату үшін 0-ден асатын нәрсені теріңіз немесе аударма
+    кэшін өшіру үшін 0 теріңіз. Қайта оралу үшін 0-ден аз нәрсені теріңіз.
+  wwctbOffTarget: Кітап аудармасы {0} өшірілген.
+  wwcConfigGUIGeneralSettings: Жалпы конфигурация
+  wwcInvalidLang: Сіздің config.yml ішіндегі жарамсыз тіл. EN үшін дефолт...
+  wwcConfigConversationAmazonTranslateRegionSuccess: Amazon облысы сәтті орнату.
+  wwcConfigRateLimitEnabled: Жаһандық мөлшерлеме лимиті қосылып, {0} секундқа орнатылды.
+  wwcConfigGUILangButton: Плагин тілін өзгерту
+  wwctGUISignButton: Toggle белгісі аударма
+  wwcUpdaterOutOfDate: WorldwideChat күннен тыс. Соңғы нұсқаға жаңартыңыз, {0}.
+  wwcConfigGUINextPageButton: Келесі бет
+  wwcConfigInvalidTranslatorSettings: Жарамсыз аудармашы параметрлері! Сіздің config.yml
+    ішіндегі бір ғана аудармашыны қосыңыз.
+  wwcConfigGUIQuitButton: Шығу & Өзгерістерді сақтау
+  wwctPlayerNotFound: Ойыншы {0} табылған жоқ.
+  wwcConfigGUIAmazonTranslateRegionButton: Amazon аймағын өзгерту
+  wwcConfigConversationLangInvalid: Жарамсыз тіл коды!
+  wwcConfigGUIWatsonAPIKeyButton: Watson API кілтін өзгерту
+  wwcEnabled: '{0} WorldwideChat нұсқасы қосылған.'
+  wwctbOnSender: Кітап аудармасы қосылған. Оны аудару үшін кітапты ұстап тұрғанда
+    тінтуірдің оң жақ түймешігімен нұқыңыз!
+  wwcListenersInitialized: Инициализацияланған тыңдаушылар.
+  wwcConfigGUIPluginUpdateChatButton: Плагин жаңартулары үшін чат еске салғышты
+  wwcConfigConversationSendTranslationChatSuccess: Белсенді аудармашы чат еске салғыш
+    сәтті шықты.
+  wwctsOffTarget: Сымдау аудармасы {0} өшірілген.
+  wwcUpdaterConnectionFailed: Github туралы соңғы жаңартуларды тексеру мүмкін емес.
+  watsonNotFoundExceptionNotification: Егер кіріс кез келген әрі қарай аудару мүмкін
+    емес.
+  wwcConfigConversationWatsonAPIKeyInput: Ағымдағы API кілті {0} болып табылады, Watson
+    үшін API кілтін енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwctGUIStopButton: Аударманы тоқтату
+  wwcgTranslationStopped: Ғаламдық чат аудармасы тоқтатылды.
+  wwcUpdaterFutureDate: WorldwideChat бұл данасы соңғы көпшілікке қарағанда үлкен
+    нұсқаға ие.
+  wwcConfigConversationPrefixSuccess: Префикс сәтті өзгерді.
+  wwcConfigGUIGoogleTranslateAPIKeyButton: Google өзгерту API кілтін аудару
+  wwcSignDeletedOrTooLong: 'Мақсатты белгі жойылған немесе аударма тым ұзақ болды,
+    не. Аударма:'
+  wwctsOnTarget: Белгілеу аудармасы {0} үшін қосылған.
+  wwcConfigCacheDisabled: Аудармашы кэш мүгедек
+  wwcConfigConversationWatsonURLInput: Ағымдағы URL мекенжайы {0} болып табылады,
+    Watson үшін қызмет URL мекенжайын енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwcBookDone: Кітап сәтті аударылған.
+  wwctsOnSender: Сымдау аудармасы қосылған. Оны аудару үшін белгіні тінтуірдің оң
+    жақ түймешігімен нұқыңыз!
+  watsonColorCodeWarning: Түс кодтарын пайдалану сізге күтпеген нәтижелер беруі мүмкін.
+  wwctGUITranslationButton: Аударманы бастаңыз
+  wwctGUIAutoDetectButton: Көздің тілін автоматты түрде анықтау
+  wwcUpdaterUpToDate: WorldwideChat бүгінгі күнге дейін!
+  wwcConfigConversationAmazonTranslateRegionInput: Ағымдағы аймақ {0} болып табылады,
+    Amazon үшін аймақты енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwcNoConsole: Бұл пәрменді тек ойыншы ғана іске қосуға болады.
+  wwcInitializationFail: WorldwideChat баптандыру сәтсіз аяқталды.
+  wwcrSuccess: Табысты WorldwideChat қайта жүктелді.
+  wwcPlayerNotFound: Ойыншы {0} табылған жоқ.
+  wwcUpdaterOutOfDateChat: WorldwideChat күннен тыс. Соңғы нұсқаға жаңартыңыз.
+  wwcConfigConversationRateLimitSuccess: Rate лимиті сәтті орнатыңыз.
+  wwcConfigConversationWatsonURLSuccess: Watson URL сәтті орнатыңыз.
+  wwctbPlayerNotFound: Ойнатушы табылмады немесе белсенді аудармашы емес.
+  wwcConfigConversationTranslationCacheSuccess: Аударма кэш шегі сәтті орнатыңыз.
+  wwctInvalidArgs: Ұсынылған дәлелдер жарамсыз!
+  wwcConfigGUIPrefixButton: Плагин префикс өзгерту
+  wwctSameLangError: Сіз бір тілге аудара алмайсыз!
+  wwctGUINewTranslationTarget: Мақсатты тілді таңдаңыз
+  wwcConfigConnectionSuccess: '{0} сәтті қосылған!'
+  wwcConfigGUIGoogleTranslateButton: Google Аудару
+  wwcConfigGUIPreviousPageButton: алдыңғы бет
+  wwcConfigGUITranslatorCacheButton: Аударма кэш шегі өзгерту
+  wwcConfigConversationbStatsSuccess: Табысты bStats toggled.
+  wwcSignDone: Кіру сәтті аударылған.
+  wwcConfigInvalidPrefixSettings: Сіздің префиксіңізді оқи алмады. Әдепкі пайдалану...
+  wwcConfigRateLimitInvalid: config.yml орнатылған Bad жылдамдығы шегі. 0 секундқа
+    дефолт...
+  wwcSignTranslateStart: Мақсатты белгіні аудару...
+  wwcConfigGUIChatSettings: Чат конфигурациясы
+  wwcConfigGUIWatsonURLButton: Watson қызмет URL мекенжайын өзгерту
+  wwcConfigConversationUpdateCheckerSuccess: Жаңарту тексеру кешігу сәтті орнатыңыз.
+  wwcGlobalOnJoinTranslationNotificationSourceLang: Ғаламдық чат {0} дегенмен {1}
+    дейін аударылады.
+  wwcConfigGUITranslatorSettings: аудармашы Конфигурация
+  wwcConfigConversationGoogleTranslateAPIKeyInput: Ағымдағы API кілті {0} болып табылады,
+    Google Translate үшін API кілтін енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigConversationRateLimitInput: Аударма үшін ағымдағы жаһандық бағамның лимиті
+    {0} секундты құрайды. Жаңа мәнді орнату үшін 0-ден асатын нәрсені теріңіз немесе
+    шектеуді өшіру үшін 0 теріңіз. Қайта оралу үшін 0-ден аз нәрсені теріңіз.
+  wwcConfigConversationGoogleTranslateAPIKeySuccess: Google сәтті API кілті жиынтығы
+    аудару.
+  wwcConfigGUIAmazonTranslateSecretKeyButton: Amazon құпия кілтін өзгерту
+  wwcVersion: WorldwideChat, нұсқасы
+  wwcsAttemptedTranslations: 'Әрекет еткен аудармалар: {0}'
+  wwcConfigConversationAmazonTranslateSecretKeySuccess: Amazon құпия негізгі сәтті
+    жиынтығы.
+  wwcConfigConversationWatsonAPIKeySuccess: Watson API кілті сәтті орнатыңыз.
+  wwcRateLimit: Сіздің аудармаларыңыз шектеулі. {0} секунд күтіңіз.
+  wwcConfigCacheEnabled: Аудармашы кэш қосылып, {0} шегіне орнатылды.
+  wwctGUIExistingTranslationButton: Ағымдағы аударма сессиясын қайта жазу
+  wwcUserDataReloaded: Барлық сақталған пайдаланушы деректерін жүктеді.
+  wwcConfigGUISendTranslationChatButton: Кіру бойынша белсенді аудармашыға чат еске
+    салғышты жіберу
+  wwcsLastTranslationTime: 'Соңғы (сәтті) аударма уақыты: {0}'
+  wwctbNotATranslator: Сіз белсенді аудармашы емессіз! Мұны /wwct арқылы орнатқаныңызға
+    көз жеткізіңіз.
+  wwcConfigConversationAmazonTranslateAccessKeyInput: Ағымдағы кіру кілті {0} болып
+    табылады, Amazon үшін кіру кілтін енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigConversationAmazonTranslateAccessKeySuccess: Amazon қол кілті сәтті орнатыңыз.
+  wwcConfigBadUpdateDelay: config.yml орнатылған жарамсыз updater кідіріс. 86400 секундқа
+    дефолт...
+  wwctrlRateLimitOffSender: Сіздің мөлшерлеме лимитін өшірді.
+  wwctrlRateLimitAlreadyOffTarget: '{0} мөлшерлеме лимиті қазірдің өзінде өшірілген.'
+  wwctrlPlayerNotFound: Ойнатушы табылмады немесе белсенді аудармашы емес.
+  wwctrlRateLimitSetSender: Сіздің мөлшерлеме лимитіңізді {0} секундқа орнатыңыз.
+  wwctrlRateLimitOffTarget: '{0} мөлшерлеме лимитін өшірді.'
+  wwctrlNotATranslator: Сіз белсенді аудармашы емессіз! Мұны /wwct арқылы орнатқаныңызға
+    көз жеткізіңіз.
+  wwctrlRateLimitAlreadyOffSender: Сіздің мөлшерлеме шегі қазірдің өзінде өшірілген.
+  wwctGUIRateButton: Шектеу жылдамдығын орнату
+  wwctGUIConversationRateLimit: Аударма үшін мөлшерлеме лимиті {0} секундты құрайды.
+    Жаңа мәнді орнату үшін 0-ден асатын нәрсені теріңіз немесе шектеуді өшіру үшін
+    0 теріңіз. Қайта оралу үшін 0-ден аз нәрсені теріңіз.
+  wwctGUITargetPlayerNull: мақсатты ойыншы серверден ажыратылған.
+  wwcConfigConversationSyncUserDataDelayInput: Пайдаланушы деректерін синхрондаудың
+    ағымдағы кідірісті {0} секунд құрайды. Жаңа мәнді орнату үшін 10-нан асатын нәрсені
+    немесе оралу үшін 10-нан аз нәрсені теріңіз.
+  wwcConfigGUISyncUserDataButton: Пайдаланушы деректерін синхрондау кешігуін өзгерту
+  wwcConfigSyncDelayEnabled: '{0} секундқа орнатылған пайдаланушы деректерін синхрондауды
+    кешіктіру.'
+  wwcConfigConversationSyncUserDataDelaySuccess: Пайдаланушы деректерін синхрондау
+    кідірісі сәтті орнатылады.
+  wwcConfigSyncDelayInvalid: config.yml ішінде орнатылған жарамсыз пайдаланушы деректерін
+    синхрондау кідірісі. 7200 секундқа дефолт...
+  wwcConfigCacheInvalid: Аударма кэш мөлшері жарамсыз. 10-ға дефолт жасау...
+  wwcInventoryErrorPlayer: GUI-мен анықталған қате. Консольге журнал жіберілді.
+  wwcInventoryError: '{0} пайдаланушысының GUI көмегімен анықталған қате, бұл мәселені
+    әзірлеушіге хабарлаңыз.'
+  wwctiOffTarget: Элемент аудармасы {0} өшірілген.
+  wwctiOffSender: Элемент аударма өшірілген.
+  wwcItemTranslateTitleStock: Әдепкі элемент атауларын аудару мүмкін емес.
+  wwctGUIItemButton: Toggle тармақ Аударма
+  wwcItemTranslateTitleDone: сәтті аударылған элемент атауы.
+  wwcGUITempItem: Дисплей элемент
+  wwcItemTranslateStart: Мақсатты элементті аудару...
+  wwcBookTranslateTitleSuccess: 'Аударылған кітап атауы: {0}'
+  wwctiOnSender: Элемент аудармасы қосылған. Оны аудару үшін басты қолыңыздағы элементпен
+    тінтуірдің оң жақ түймешігімен нұқыңыз!
+  wwcItemTranslateLoreStart: Мақсатты элементтің аудармасы...
+  wwcItemTranslateLoreDone: Аударылған тармақ сәтті.
+  wwctiOnTarget: Элемент аудармасы {0} үшін қосылған.
+  wwcInvalidTranslator: Жарамсыз аудармашы параметрлері. Бұл плагинді пайдалану үшін
+    config.yml немесе /wwcc көмегімен түзетіңіз.
+  wwcConfigGUIEachTranslatorSettings: '{0} Конфигурация'
+  wwcConfigGUIWatsonButton: Уотсон
+  wwcServerReloadWarning: WorldwideChat пайдалану/қайта жүктеуді шектемейді. Сақтықпен
+    жалғастырыңыз.
+  wwcConfigEnabledDebugMode: DEBUG режимі қосылған. Егер сіз әзірлеуші немесе ақаулықтарды
+    жоюшы болмасаңыз, оны өшіруіңіз керек.
+  wwcTranslatorErrorThresholdReached: Қате шегі жетті. Бұл плагин енді қайта жүктеледі
+    және барлық аудармашыларды өшіреді.
+  wwcConfigErrorLimitEnabled: Аудармашының қате шегі {0} мәніне орнатылады.
+  wwcTranslatorError: Аудармаға әрекет ету кезінде проблема туындады. Қайтадан көріңіз.
+  wwcConfigErrorLimitInvalid: config.yml орнатылған жарамсыз аудармашы қате шегі.
+    5 дефолт...
+  wwcTranslatorErrorThresholdReachedCheckLogs: Қосымша ақпарат алу үшін WorldwideChat
+    плагин қалтасында errorLog.txt тексеріңіз.
+  wwctInvalidInputLangCode: 'Жарамсыз енгізу тілінің коды берілген! Жарамды кодтары:
+    {0}'
+  wwctInvalidOutputLangCode: 'Жарамсыз шығыс тілінің коды берілген! Жарамды кодтары:
+    {0}'
+  wwctGUISourceTranslationSelected: Сіз бұл тілді таңдадыңыз.
+  wwcConfigGUIChatMessagesOverrideDeleteButton: Override жою
+  wwcConfigConversationOverrideTextChange: Осы қайта қараудың жаңа хабарын теріңіз
+    немесе кері оралу үшін 0 теріңіз. Бастапқы хабарда көрген пайыздық белгілерден
+    басталатын кез келген айнымалыларды қосуды ұмытпаңыз.
+  wwctGUISourceOrTargetTranslationAlreadyActive: Бұл тіл қазірдің өзінде белсенді!
+  wwcConfigGUIChatMessagesPossibleOverrides: Хабарды таңдаңыз
+  wwcConfigGUIChatMessagesModifyOverride: Қолданыстағы Override өзгерту
+  wwcConfigConversationOverrideDeletionSuccess: Custom хабар қайта айдау жойылды.
+  wwcConfigGUIChatMessagesDeadOverride: Бұл қайта белгілеу жарамсыз немесе бастапқы
+    хабар жойылған. Мұны жою керек.
+  wwcConfigGUIMessagesAlreadyOverriden: Сізде бұл хабарлама үшін қайта айдау бар!
+  wwcConfigGUIChatMessagesOverrideNewButton: Жаңа Override қосу
+  wwcConfigGUIMessagesOverrideCustomLabel: Жаңа хабарлама
+  wwcConfigConversationOverrideTextChangeSuccess: Жаңа хабар сәтті орнатылады.
+  wwcConfigGUIChatMessagesOverrideChangeButton: Қолданыстағы мәтінді өзгерту
+  wwcExampleMessage: Бұл манекен хабар болып табылады, және мысал ретінде артық болуы
+    білдіреді.
+  wwcConfigGUIMessagesOverrideOriginalLabel: Түпнұсқа хабарлама
+  wwcConfigGUIDebugModeButton: Toggle күйін келтіру режимі
+  wwcConfigConversationDebugModeSuccess: Табысты отладка режимін toggled.
+  wwcConfigGUIErrorLimitButton: Аудармашы қате шегін өзгерту
+  wwcConfigConversationErrorLimitSuccess: Қате шегі сәтті орнатыңыз.
+  wwcEntityTranslateStart: Мақсатты тұлғаны аудару...
+  wwcConfigGUICharacterLimitButton: Хабар таңбасының лимитін өзгерту
+  wwcConfigMessageCharLimitInvalid: config.yml ішінде орнатылған хабарға жарамсыз
+    шектеу. 255 чарға дефолт...
+  wwcConfigConversationCharacterLimitSuccess: Таңба шегі сәтті орнатыңыз.
+  wwcteOnTarget: Субъект аудармасы {0} үшін қосылған.
+  wwcEntityTranslateDone: 'Аударылған субъект атауы: {0}'
+  wwcEntityTranslateNoName: Субъектінің теңшелетін атауы жоқ.
+  wwcConfigConversationErrorLimitInput: Әрбір аудармашы үшін ағымдағы қате шектеуі
+    {0} болып табылады. жаңа мәнді орнату үшін 0-ден артық нәрсені теріңіз немесе
+    кері қайту үшін 0-ден кем немесе тең нәрсені теріңіз.
+  wwcConfigGUIGlobalRateLimitButton: Әлемдік мөлшерлеме лимитін
+  wwcteOnSender: Субъект аудармасы қосылған. Өз атын аудару үшін ұйымды тінтуірдің
+    оң жақ түймешігімен нұқыңыз!
+  wwcConfigGUIResponseLimitButton: Аудармашы жауап уақытын өзгерту
+  wwcConfigMessageCharLimitEnabled: '{0} таңбаларына орнатылған хабарға арналған таңба
+    шегі.'
+  wwcteOffTarget: Субъект аудармасы {0} өшірілген.
+  wwcCharLimit: Сіздің хабарламаңыз тым ұзақ! Хабарламаңыздың ұзындығы {0} таңбаларынан
+    аз екеніне көз жеткізіңіз.
+  wwcteOffSender: Субъект аударма өшірілген.
+  wwctGUIEntityButton: Toggle субъектінің аудармасы
+  wwctrlRateLimitBadInt: Сіздің мөлшерлеме шегі жарамды бүтін сан емес.
+  wwcTranslatorErrorConsole: '{0} қолдануда олардың аудармасын жасау кезінде проблема
+    туындады. Қосымша ақпарат алу үшін errorLog.txt тексеріңіз.'
+  wwctGUIChatButton: Toggle чат аудармасы
+  wwcrBegin: Әлемді қайта жүктеу WidecHat...
+  wwctTranslationStoppedOtherPlayer: '{0} үшін аударма сессиясы тоқтатылды.'
+  wwcOverrideGlobalOnJoinTranslationNotificationSourceLang: Ғаламдық чат аударылып
+    жатыр, бірақ сіз {0} - {1} дейін белсенді аударма сеансы бар.
+  wwctCannotTranslateConsole: Сіз консоль үшін аударма сеансын бастау мүмкін емес!
+  wwcOnJoinTranslationNotificationSourceLang: Сізде белсенді аударма сеансы бар {0}
+    үшін {0}.
+  wwctTranslationStopped: Сіздің аударма сеансыңыз тоқтатылды.
+  wwctAutoTranslateStart: '{0} жаңа аударма сеансын бастау'
+  wwcOnJoinTranslationNotificationNoSourceLang: Сізде белсенді аударма сеансы бар
+    {0}.
+  wwcOverrideGlobalOnJoinTranslationNotificationNoSourceLang: Ғаламдық чат аударылып
+    жатыр, бірақ сіздің {0} үшін белсенді аударма сеансы бар.
+  wwcConfigGUIChangesNotSaved: /wwcc-дегі қызыл тосқауылды басқанша сіздің өзгертулеріңіз
+    күшіне енеді.
+  wwctciOffSender: Кіріс чат аударма өшірілген.
+  wwctGUIChatIncomingButton: Toggle Кіріс чат аударма
+  wwctcoOffSender: Шығыс чат аудармасы өшірілген.
+  wwctcoOnSender: Шығыс чат аудармасы қосылған. Сіз айтқан кез келген нәрсе аударылады!
+  wwctciOnSender: Кіріс чат аудармасы қосылған. Сіз алған кез келген нәрсе аударылады!
+  wwctGUIChatMenu: Toggle чат аударма мәзірі
+  wwctcoOnTarget: '{0} үшін шығыс чат аудармасы қосылған.'
+  wwctcoOffTarget: '{0} үшін шығыс чат аудармасы өшірілген.'
+  wwctGUIChatOutgoingButton: Шығыс чат аудармасы
+  wwctciOnTarget: Кіріс чат аудармасы {0} үшін қосылған.
+  wwctciOffTarget: Кіріс чат аудармасы өшірілген {0}.
+  wwcConfigConversationSendIncomingHoverTextChatSuccess: Түпнұсқа кіріс чат аударманы
+    сәтті ауыстырған мәтін ретінде аударуға қоса беріледі.
+  wwcConfigGUISendIncomingHoverTextChatButton: Бастапқы кіріс хабарларын Hover мәтіні
+    ретінде қосу
+  wwctGUIExistingChatOutgoingEnabled: 'Шығыс чат аудармасы қосылған: {0}'
+  wwctGUIExistingTranslationInput: 'Кіріс тілі: {0}'
+  wwctGUIExistingChatIncomingEnabled: 'Кіріс чат аудармасы қосылған: {0}'
+  wwctGUIExistingTranslationOutput: 'Шығу тілі: {0}'
+  wwcTranslatorAttempt: Config.yml ішіндегі аудармашыға қосылуға әрекет... ( {0}/
+    {1} әрекеті)
+  wwcTimeoutExceptionConsole: Player % Мен олардың ең соңғы сұрау уақыты болды. Бұл
+    қате өлімге ұшырамайды, бірақ WorldwideChat оны жалғастыра берсе, қайта жүктеу
+    керек.
+  wwcGUIPageNumber: 'Бет нөмірі: {0}'
+  wwcConfigYAMLFallback: YAML кері құлап...
+  wwcConfigGUIToggleSQLButton: SQL ауыстыру
+  wwcConfigConversationToggleSQLSuccess: SQL сәтті болды. Өзгеріс күшіне ену үшін
+    қайта жүктеңіз.
+  wwcConfigConversationGoogleTranslateToggleSuccess: Google Translate сәтті болды.
+    Өзгеріс күшіне ену үшін қайта жүктеңіз.
+  wwcConfigYAMLDefault: Деректерді сақтау үшін YAML-ге дефолтқа жол берілді.
+  wwcConfigGUISQLMenuButton: SQL параметрлерін өзгерту
+  wwcConfigConversationWatsonTranslateToggleSuccess: Уотсон Аудару сәтті болды. Өзгеріс
+    күшіне ену үшін қайта жүктеңіз.
+  wwcConfigGUIToggleGoogleTranslateButton: Google Аудару
+  wwcConfigGUIToggleWatsonTranslateButton: Аудару
+  wwcConfigGUIToggleAmazonTranslateButton: Amazon Аудару
+  wwcConfigGUIStorageSettings: Сақтау конфигурациясы
+  wwcConfigConversationAmazonTranslateToggleSuccess: Сәтті түрде Amazon Аудару. Өзгеріс
+    күшіне ену үшін қайта жүктеңіз.
+  wwcConfigGUISQLPortButton: SQL портын өзгерту
+  wwcConfigGUISQLOptionalArgsButton: SQL Қосымша аргументтерді өзгерту
+  wwcConfigConversationToggleSQLSSLSuccess: SQL үшін SSL сәтті ауыстырылды.
+  wwcConfigConversationSQLPortInput: Ағымдағы порт {0} болып табылады. 0 жаңа портты
+    орнату үшін 0-ден басқа нәрсені теріңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigGUISQLPasswordButton: SQL паролін өзгерту
+  wwcConfigConversationSQLHostnameSuccess: SQL хост атауын сәтті өзгертті.
+  wwcConfigConversationSQLHostnameInput: Ағымдағы хост атауы {0} болып табылады. 0
+    жаңа хост атауын орнату үшін 0-ден басқа нәрсені теріңіз немесе кері оралу үшін
+    0 теріңіз.
+  wwcConfigGUISQLHostnameButton: SQL хост атауын өзгерту
+  wwcConfigConversationSQLOptionalArgsSuccess: Қосымша SQL дәлелдерін сәтті өзгертті.
+  wwcConfigConversationSQLPasswordSuccess: SQL құпия сөзін сәтті өзгертті.
+  wwcConfigConversationSQLPasswordInput: Ағымдағы құпиясөз {0} болып табылады. 0-ден
+    басқа кез келген нәрсені теріңіз жаңа құпия сөзді орнату үшін немесе кері оралу
+    үшін 0 теріңіз.
+  wwcConfigGUIToggleSQLSSLButton: SQL SSL қосқыш
+  wwcConfigConversationSQLUsernameSuccess: SQL пайдаланушы атын сәтті өзгертті.
+  wwcConfigConversationSQLUsernameInput: Ағымдағы пайдаланушы аты {0} болып табылады.
+    0-ден басқа кез келген нәрсені теріңіз жаңа пайдаланушы атын орнату үшін немесе
+    кері оралу үшін 0 теріңіз.
+  wwcConfigConversationSQLPortSuccess: SQL портын сәтті өзгертті.
+  wwcConfigGUISQLUsernameButton: SQL пайдаланушы атын өзгерту
+  wwcConfigConversationSQLOptionalArgsCleared: Қосымша дәлелдер сәтті тазартылды.
+  wwcConfigConversationSQLOptionalArgsInput: 'Ағымдағы қосымша SQL аргументтері: {0}.
+    үтірмен бөлінген аргументтерді теріңіз (key=value, key2=value2) немесе ағымдағы
+    арқандарды сүрту үшін анық теріңіз немесе кері оралу үшін 0 теріңіз.'
+  wwcConfigConversationSQLDatabaseNameInput: Ағымдағы дерекқор атауы {0} болып табылады.
+    0-ден басқа кез келген нәрсені теріңіз жаңа дерекқор атауын орнату үшін немесе
+    кері оралу үшін 0 теріңіз.
+  wwcConfigGUISQLDatabaseNameButton: SQL дерекқорын өзгерту
+  wwcConfigConversationSQLDatabaseNameSuccess: SQL дерекқорының атауын сәтті өзгертті.
+  wwcConfigConversationFatalAsyncAbort: Барлық async тапсырмаларын орындау үшін ағымдағы
+    уақыт - {0} секунд. Жаңа таймаут орнату үшін 7-ден жоғары нәрсені немесе кері
+    оралу үшін төмендегі нәрсені теріңіз.
+  wwcConfigConversationFatalAsyncSuccess: Async тапсырма уақыты сәтті орнатылған.
+  wwcConfigGUIFatalAsyncAbortButton: Async тапсырмасының уақытын өзгерту
+  libreHttp400: Жаман сұрау Libre Translate жіберілді! Егер сіз қажет емес нәрсе жасамасаңыз,
+    мұны алмауыңыз керек. Әзірлеушіге хабарласыңыз!
+  wwcConfigGUILibreTranslateApiKeyButton: Өзгерту Тегін API кілт аудару
+  libreHttp403: Missing Libre API кілті Translate, немесе сіз серверден тыйым салынған!
+  wwcConfigConversationLibreURLSuccess: Тегін URL сәтті орнатылған.
+  wwcConfigConversationLibreTranslateApiKeyInput: Ағымдағы API кілті {0} болып табылады.
+    Libre үшін API кілтін енгізіңіз сұраймыз, немесе кері қайту үшін 0 теріңіз.
+  wwcConfigGUILibreTranslateButton: Тегін Аударма
+  libreHttp429: Серверден мөлшерлеме лимитіне байланысты сенімділік жоқ.
+  wwcConfigGUIToggleLibreTranslateButton: Toggle Тегін Аударма
+  wwcConfigConversationLibreTranslateToggleSuccess: Табысты Toggled Libre Аударма.
+    Өзгерістердің күшіне енуі үшін қайта жүктеңіз.
+  wwcConfigConversationLibreTranslateApiKeySuccess: Табысты орнату Тегін API кілті.
+  wwcConfigConversationLibreURLInput: Ағымдағы URL {0} болып табылады. Libre үшін
+    URL енгізіңіз сұраймыз, немесе кері қайту үшін 0 теріңіз.
+  libreHttpUnknown: 'Белгісіз http қатесі: {0}'
+  wwcConfigGUILibreTranslateURLButton: Өзгерту Тегін Аудару URL
+  wwcConfigConnectionFail: '{0} қосыла алмады.'
+  wwcConfigConversationMongoDatabaseNameSuccess: MongoDB дерекқорының атауын сәтті
+    өзгертті.
+  wwcConfigGUIMongoHostnameButton: MongoDB хост атауын өзгерту
+  wwcConfigConversationMongoPasswordInput: Ағымдағы құпия сөз {0}. 0-ден басқа ештеңені
+    жаңа құпия сөзді орнату үшін теріңіз немесе кері қайту үшін 0 деп теріңіз.
+  wwcConfigConversationMongoPortInput: Ағымдағы порт {0} болып табылады. 0-ден басқа
+    жаңа портты орнату үшін кез келген нәрсені теріңіз немесе кері қайту үшін 0 теріңіз.
+  wwcConfigConversationToggleMongoSuccess: MongoDB сәтті аяқталды. Өзгеріс күшіне
+    енуі үшін қайта жүктеңіз.
+  wwcConfigConversationMongoHostnameInput: Ағымдағы хост аты {0} болып табылады. 0-ден
+    басқа жаңа хост атауын орнату үшін кез келген нәрсені теріңіз немесе кері қайту
+    үшін 0 теріңіз.
+  wwcConfigConversationMongoHostnameSuccess: MongoDB хост атауын сәтті өзгертті.
+  wwcConfigGUIMongoMenuButton: MongoDB параметрлерін өзгерту
+  wwcConfigGUIToggleMongoButton: MongoDB ауыстырып қосу
+  wwcConfigConversationMongoDatabaseNameInput: Ағымдағы дерекқор атауы {0}. 0-ден
+    басқа жаңа дерекқор атауын орнату үшін кез келген нәрсені теріңіз немесе кері
+    қайту үшін 0 деп теріңіз.
+  wwcConfigConversationMongoOptionalArgsInput: 'Ағымдағы қосымша MongoDB аргументтері:
+    {0}. үтірмен бөлінген аргументтерді теріңіз (кілт = мән, кілт2 = мән2) немесе
+    ағымдағы аргаларды сүрту үшін анық теріңіз немесе кері қайту үшін 0 теріңіз.'
+  wwcConfigGUIMongoDatabaseNameButton: MongoDB дерекқорын
+  wwcConfigConversationMongoUsernameInput: Ағымдағы пайдаланушы аты {0}. 0-ден басқа
+    жаңа пайдаланушы атын орнату үшін кез келген нәрсені теріңіз немесе кері қайту
+    үшін 0 деп теріңіз.
+  wwcConfigGUIMongoOptionalArgsButton: MongoDB қосымша дәлелдерін
+  wwcConfigConversationMongoUsernameSuccess: MongoDB пайдаланушы атын сәтті өзгертті.
+  wwcConfigConversationMongoPasswordSuccess: MongoDB құпия сөзін сәтті өзгертті.
+  wwcConfigConversationMongoPortSuccess: MongoDB портын сәтті өзгертті.
+  wwcConfigGUIMongoUsernameButton: MongoDB пайдаланушы атын өзгерту
+  wwcConfigGUIMongoPasswordButton: MongoDB құпия сөзін
+  wwcConfigConversationMongoOptionalArgsSuccess: Қосымша MongoDB дәлелдерін сәтті
+    өзгертті.
+  wwcConfigConversationMongoOptionalArgsCleared: Қосымша дәлелдер сәтті тазартылды.
+  wwcConfigGUIMongoPortButton: MongoDB порты
+  wwcConfigInvalidFatalAsyncTimeout: Жарамсыз өлімге async тайм-аут жиынтығы. 10 секундқа
+    дейін дефолт...
+  libreHttp500: Таңдалған кіріс және шығыс тіл жұбына қолдау көрсетілмейді. Басқа
+    тіл жиынтығын таңдаңыз!
+  wwcConfigGUIDeepLTranslateButton: DeepL аудармасын ауыстырыңыз
+  wwcConfigConversationDeepLTranslateToggleSuccess: DeepL аудармасын сәтті ауыстырды.
+    Өзгерістердің күшіне енуі үшін қайта жүктеңіз.
+  wwcConfigGUIDeepLTranslateApiKeyButton: DeepL аудару API кілтін өзгерту
+  wwcConfigGUIToggleDeepLTranslateButton: DeepL аудармасын ауыстырыңыз
+  wwcConfigConversationDeepLTranslateApiKeySuccess: DeepL API кілті сәтті орнатылды.
+  wwcConfigConversationDeepLTranslateApiKeyInput: Ағымдағы API кілті {0} болып табылады.
+    DeepL үшін API кілтін енгізіңіз немесе кері қайту үшін 0 теріңіз.
+  wwcConfigErrorsToIgnoreSuccess: Елемеу үшін сәтті тіркелген аудармашы қателері.
+  wwcConfigErrorsToIgnoreInvalid: Config.yml орнатылған елемеу үшін жарамсыз аудармашы
+    қателер. Дефолттарды тіркеу...
+  
+  wwcConfigConversationIgnoreErrorsSuccess: Фразаларды елемеу үшін аудармашы қателерін
+    сәтті өзгертті.
+  wwcConfigGUIIgnoreErrorsButton: Қателерді елемеу үшін өзгертіңіз
+  wwcConfigConversationIgnoreErrorsInput: 'елемеуге аудармашы қателер сөз тіркестерінің
+    ағымдағы тізімі болып табылады: {0}. үтірмен бөлінген түрі аргументтер (кілт =
+    мән, key2 = value2), немесе ағымдағы args сүртіңіз анық теріңіз, немесе кері қайту
+    үшін 0 теріңіз. Сонымен қатар, “*” теру плагиннің аудармашы қателерін тексермеуіне
+    әкеледі.'
+  wwcConfigConversationIgnoreErrorsCleared: Аудармашы қателер сәтті тазартылды фразаларды
+    елемеуге.
+  wwcSupportedServer: WorldwideChat-ты {0} үшін инициализациялау...
+  wwcSupportedVersion: '{0} нұсқасының мүмкіндіктерін қосу...'
+  wwcBadPerms: 'Сізде осы пәрменді орындау үшін қажетті рұқсаттар жоқ: {0}'
+  wwcsIsActiveTranslator: 'Белсенді аудармашы ма: {0}'
+  wwcsActiveTransPrevRate: 'Алдыңғы тарифтік шектеу уақыты: {0}'
+  wwcsActiveTransSaved: 'Дискіге сақталған: {0}'
+  wwcsActiveTransIncoming: 'Кіріс чатын аудару: {0}'
+  wwcsActiveTransOutLang: 'Шығару тілі: {0}'
+  wwcsActiveTransInLang: 'Кіріс тілі: {0}'
+  wwcsActiveTransBook: 'Кітапты аудару: {0}'
+  wwcsActiveTransSign: 'Аударма белгісі: {0}'
+  wwcsActiveTransUUID: 'АУД: {0}'
+  wwcsActiveTransRateLimit: 'Тарифтің шегі: {0}'
+  wwcsActiveTransColorWarning: 'Алынған түс туралы ескерту: {0}'
+  wwcsActiveTransSignWarning: 'Алынған белгіні өңдеу туралы ескерту: {0}'
+  wwcsTitle: '{0} жазбасы'
+  wwcsActiveTransOutgoing: 'Шығу чатын аудару: {0}'
+  wwcsActiveTransItem: 'Аударма тармағы: {0}'
+  wwcsActiveTransEntity: 'Аударма субъектісі: {0}'
+  wwctsWarning: Белгілерді аудару кезінде белгіні өзгерту өшіріледі.
+  wwcConfigConversationAzureTranslateToggleSuccess: Azure Translate бағдарламасын
+    сәтті ауыстырды. Өзгерістер күшіне енуі үшін қайта жүктеңіз.
+  wwcConfigGUIAzureTranslateButton: Azure аудармасы
+  wwcConfigGUIAzureTranslateApiKeyButton: Azure аударма API кілтін өзгертіңіз
+  wwcConfigGUIAzureTranslateRegionButton: Azure аударма аймағын өзгертіңіз
+  wwcConfigConversationAzureTranslateRegionSuccess: Azure аймағы сәтті орнатылды.
+  wwcConfigConversationAzureTranslateApiKeyInput: Ағымдағы API кілті - {0}. Azure
+    үшін API кілтін енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigConversationAzureTranslateApiKeySuccess: Azure API кілті сәтті орнатылды.
+  wwcConfigConversationAzureTranslateRegionInput: Қазіргі аймақ - {0}. Azure үшін
+    аймақты енгізіңіз немесе кері оралу үшін 0 теріңіз.
+  wwcConfigGUIToggleAzureTranslateButton: Azure аудармасын ауыстыру
+  wwcConfigGUISystranTranslateApiKeyButton: Systran аудармасының API кілтін өзгертіңіз
+  wwcConfigGUIToggleSystranTranslateButton: Систран аудармасын ауыстыру
+  wwcConfigConversationSystranTranslateApiKeyInput: Ағымдағы API кілті - {0}. Systran
+    үшін API кілтін енгізіңіз немесе кері оралу үшін 0 деп теріңіз.
+  wwcISOJSONFail: ISO JSON көмегімен тіл нысандарын түзету мүмкін емес.
+  wwcConfigConversationSystranTranslateToggleSuccess: Systran аудармасын сәтті ауыстырды.
+    Өзгерістер күшіне енуі үшін қайта жүктеңіз.
+  wwcConfigConversationSystranTranslateApiKeySuccess: Systran API кілті сәтті орнатылды.
+  wwcConfigGUISystranTranslateButton: Систран Аудармасы
+  wwcrTransFail: WorldwideChat-ті қайта жүктеді, бірақ аудармашы қосылмады.
+  wwcdCacheCleared: Аударма кэші тазартылды.
+  wwcdInvalidCmd: Жарамсыз дәлелдер!
+  systranHttpUnknown: 'Белгісіз http қатесі: {0}'
+  systranHttp400: Systran-ге жіберілген нашар параметрлер. Жаман тіл жұбы болуы мүмкін
+    бе?
+  systranHttp500: Systran соңғы нүктесінен ({0}) ішкі сервер қатесі.
+  wwcInvalidStorageSession: '{0} сіздің конфигурацияңызда қосулы, бірақ байланыс орнатылмаған.
+    Пожалуйста, мұны түзету үшін қайта жүктеп көріңіз, бірақ егер сіз бұрын {0} -дан
+    сәтті қосылым туралы хабарды алған болсаңыз, әзірлеушіге хабарласыңыз.'
+  wwcConfigConversationPostgresDatabaseNameSuccess: PostgreSQL дерекқорының атауын
+    сәтті өзгертті.
+  wwcConfigConversationPostgresOptionalArgsCleared: Қосымша аргументтер сәтті жойылды.
+  wwcConfigConversationPostgresPortInput: Ағымдағы порт - {0}. Жаңа портты орнату
+    үшін 0-ден басқа кез келген нәрсені теріңіз немесе кері оралу үшін 0 деп теріңіз.
+  wwcConfigGUIPostgresUsernameButton: PostgreSQL пайдаланушы атын өзгертіңіз
+  wwcConfigConversationPostgresOptionalArgsSuccess: Қосымша PostgreSQL аргументтерін
+    сәтті өзгертті.
+  wwcConfigConversationTogglePostgresSSLSuccess: PostgreSQL үшін SSL сәтті қосылды.
+  wwcConfigConversationPostgresPasswordSuccess: PostgreSQL құпия сөзін сәтті өзгертті.
+  wwcConfigConversationPostgresPortSuccess: PostgreSQL портын сәтті өзгертті.
+  wwcConfigConversationPostgresUsernameInput: Ағымдағы пайдаланушы аты - {0}. Жаңа
+    пайдаланушы атын орнату үшін 0-ден басқа кез келген нәрсені теріңіз немесе кері
+    оралу үшін 0 деп теріңіз.
+  wwcConfigConversationTogglePostgresSuccess: PostgreSQL сәтті қосылды. Өзгеріс күшіне
+    енуі үшін қайта жүктеңіз.
+  wwcConfigGUITogglePostgresButton: PostgreSQL функциясын ауыстыру
+  wwcConfigGUIPostgresPasswordButton: PostgreSQL құпия сөзін өзгерту
+  wwcConfigGUIPostgresOptionalArgsButton: PostgreSQL қосымша аргументтерін өзгертіңіз
+  wwcConfigGUIPostgresMenuButton: PostgreSQL параметрлерін өзгерту
+  wwcConfigConversationPostgresPasswordInput: Ағымдағы құпия сөз - {0}. Жаңа құпия
+    сөзді орнату үшін 0-ден басқа кез келген нәрсені теріңіз немесе кері оралу үшін
+    0 деп теріңіз.
+  wwcConfigConversationPostgresHostnameInput: Ағымдағы хост атауы - {0}. Жаңа хост
+    атауын орнату үшін 0-ден басқа кез келген нәрсені теріңіз немесе кері оралу үшін
+    0 деп теріңіз.
+  wwcConfigGUIPostgresPortButton: PostgreSQL портын өзгертіңіз
+  wwcConfigConversationPostgresHostnameSuccess: PostgreSQL хост атауын сәтті өзгертті.
+  wwcConfigGUIPostgresHostnameButton: PostgreSQL хост атауын өзгертіңіз
+  wwcConfigConversationPostgresDatabaseNameInput: Ағымдағы дерекқордың атауы - {0}.
+    Жаңа дерекқор атауын орнату үшін 0-ден басқа кез келген нәрсені теріңіз немесе
+    кері оралу үшін 0 деп теріңіз.
+  wwcConfigConversationPostgresOptionalArgsInput: 'Ағымдағы қосымша PostgreSQL аргументтері:
+    {0}. Үтірмен бөлінген аргументтерді теріңіз (key=value, key2 = value2) немесе
+    ағымдағы args сүрту үшін clear деп теріңіз немесе кері өту үшін 0 деп теріңіз.'
+  wwcConfigGUITogglePostgresSSLButton: PostgreSQL SSL-ді қосыңыз
+  wwcConfigGUIPostgresDatabaseNameButton: PostgreSQL дерекқорын өзгерту
+  wwcConfigConversationPostgresUsernameSuccess: PostgreSQL пайдаланушы атын сәтті
+    өзгертті.
+  wwcConfigGUIStorageTypeSettings: '{0} Конфигурация'
+  wwcConfigConversationPrefixInput: Ағымдағы префикс - {0}. Жаңасын теріңіз немесе
+    кері оралу үшін 0 деп теріңіз.
+  wwcConfigConversationLangInput: 'Ағымдағы плагин тілі - {0}. Жарамды тіл кодын енгізіңіз
+    немесе бас тарту үшін 0 деп теріңіз. Жарамды тілдік кодтар: {1}'
+  wwcdCacheSize: Қазіргі уақытта кэш өлшемі {0} болып табылады, шектеуі {1}.
+  wwcdCacheTerm: '{0}. КэшедТрансляция:inputLang= {1}, OutputLang= {2}, InputPhrase=
+    {3} | OutputPhrase= {4}'
+  wwctLangToLangStart: '{0} -тен {1} -ге дейінгі жаңа аударма сессиясын бастау.'
+  wwctAutoTranslateStartOtherPlayer: '{0} -тен {1} -ге арналған жаңа аударма сессиясын
+    бастау.'
+  wwctLangToLangStartOtherPlayer: '{1} -ден {2} -ге дейін {0} үшін жаңа аударма сессиясын
+    бастау.'
+  wwcgLangToLangStart: Енді жаһандық чатты {0} -тен {1} -ге аудару.
+  wwctrlRateLimitSetTarget: '{0} жылдамдық шегін {1} секундқа орнатыңыз.'
+  wwcTimeoutException: Сіздің сұрауыңыздың уақыты аяқталды. Қайта көріңіз.
+  wwctbNoMoreOldBooks: Кітап аудармасы сіздің сервер нұсқаңызда жұмыс істемейді. Егер
+    сіз Minecraft-тың неғұрлым соңғы нұсқасында болсаңыз және осы қатені алсаңыз,
+    әзірлеушіге хабарласыңыз.
+  wwcConfigGUIChatMessagesOverrideSettingsPicker: Локализацияны таңдаңыз
+  wwcConfigGUIMessagesOverridePickChatButton: Әдепкі плагин хабарларын ауыстыру
+  wwcConfigGUIChatMessagesOverrideSettings: Әдепкі хабарламаларды жоққа шығару ({0})
+  wwcConfigGUIMessagesServerLang: Бұл config.yml ішіндегі плагиннің әдепкі тілі.
+  wwclLangStopped: Сіздің локализацияңыз сервер әдепкі күйіне қалпына келтірілді.
+  wwclLangInvalid: '{0} жарамды локализация емес. Қолдау көрсетілетін локализациялар:
+    {1}'
+  wwclLangStoppedOtherPlayerSender: '{0} локализациясын сервер әдепкісіне қалпына
+    келтіріңіз.'
+  wwclLangPlayerNotValid: '{0} жарамды ойыншы емес.'
+  wwclLangChangedOtherPlayerSender: '{0} локализациясын {1} деп өзгертті.'
+  wwclLangChanged: Сіздің локализацияңыз {0} болып өзгертілді.
+  wwcsLocalization: 'Локализация: {0}'
+  wwclLangAlreadyStopped: Сізде локализация жиынтығы жоқ.
+  wwclLangAlreadyStoppedOtherPlayerSender: '{0} -де оқшаулау жиынтығы жоқ.'
+  wwctGUILocalizeExistingValue: 'Ағымдағы локализация: {0}'
+  wwctGUILocalizationButton: Локализацияны орнатыңыз
+  wwctGUILocalizeStopButton: Локализацияны сервер әдепкісіне қалпына келтіріңіз
+  wwctGUILocalizeTitle: Локализация мәзірі
+  wwctGUISourceSameLang: Бұл тіл сіздің бастапқы тіліңізбен бірдей болар еді.
+  wwcConfigGUICurrentPlayerLang: Бұл сіздің қазіргі локализацияңыз.
+  wwctGUILocalizationSameAsServer: Бұл WorldwideChat үшін әдепкі локализация.
+  wwctGUISourceOrTargetTranslationAlreadyGlobal: Бұл тіл қазірдің өзінде жаһандық
+    деңгейде белсенді!
+  wwcrStorageTranslatorFail: WorldwideChat-ті қайта жүктеді, бірақ аудармашы қосылып,
+    сақтау конфигурациясымен қосыла алмады.
+  wwcrStorageFail: WorldwideChat-ді қайта жүктеп, аудармашыға сәтті қосылды, бірақ
+    сақтау конфигурацияңыз қосыла алмады.
+  wwcConfigPersistentCacheInvalid: Config.yml ішіндегі тұрақты кэш жазбасы жарамсыз.
+    Жалған дегенге дефолт...
+  wwcConfigGUIPersistentCacheButton: Тұрақты кэшті ауыстыру
+  wwcConfigConversationPersistentCacheSuccess: Тұрақты кэш сәтті қосылды.
+  wwcConfigPersistentCacheEnabled: Кэш деректері қайта жүктеу кезінде сақталады.
+  wwcConfigConversationCharacterLimitInput: Бір хабардың ағымдағы таңбалар шегі -
+    {0} таңбалары. Жаңа мәнді орнату үшін 0-ден үлкен (бірақ 256-дан аз) кез келген
+    нәрсені теріңіз немесе кері оралу үшін 0 деп теріңіз.
+  wwcdOutdatedSQLStruct: MySQL немесе PostgreSQL кестелеріңіздің біреуі немесе бірнешеуі
+    дұрыс емес/ескірген пішімге ие сияқты көрінеді. Бұл мәселе туралы қосымша егжей-тегжейлі
+    ақпарат сіздің консоліңізге басып шығарылды; сіз мұны қолмен түзете алуыңыз мүмкін.
+  wwcdSQLAllSet: Сіздің MySQL/PostgreSQL кестелеріңіз дұрыс пішімделген.
+  wwcdColumnBadType: '{1} кестесіндегі {0} бағанында {2} түрі бар, бірақ күтілетін
+    {3} түрі бар.'
+  wwcdColumnMissing: '{0} бағаны {1} кестесінде жоқ.'
+  wwcdGoodTable: '{0} кестесі ({1}) дұрыс формат болып табылады.'
+  wwcdBadTable: '{0} кесте ішкі анықтамаларда кездеспеген. Әзірлеушіге хабарласыңыз.'
+  wwcOldDatabaseStruct: 'Таңдаған дерекқорыңызда кесте орнатылмауы дұрыс емес. Қосымша
+    ақпарат алу үшін келесі пәрменді теріңіз: /wwcd checkdb'
+  wwctGUIRateButtonLore: 'Ағымдағы жылдамдық шегі: {0} секунд'
+  wwcConfigGUIVaultSupportButton: Vault қолдауын ауыстыру
+  wwcConfigConversationVaultSupportSuccess: Vault қолдауы сәтті қосылды.
+  wwcVaultEnabled: Vault қолдауы қосылды.
+  wwcVaultFoundButDisabled: Возет табылды, бірақ қолданыстағы сөйлесу плагині тіркелмеді.
+    Vault қолдауын өшіру...
+  wwcConfigGUIToggleRestartRequired: Бұл параметрді қолдану үшін серверді толық қайта
+    іске қосу қажет.
+
